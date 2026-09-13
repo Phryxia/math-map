@@ -214,6 +214,6 @@ for clauses in tests:
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [근사 알고리즘](approximation-algorithms.md)
 
 #complexity #computation
