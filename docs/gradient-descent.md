@@ -183,6 +183,6 @@ print(gradient_descent(grad, [1.0, 1.0], L=10.0, steps=200))
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [변분 오토인코더](variational-autoencoder.md)
 
 #optimization

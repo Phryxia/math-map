@@ -227,6 +227,6 @@ for t in (0.5, 0.6, 0.7, 0.8):
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [변분 오토인코더](variational-autoencoder.md)
 
 #information_theory
