@@ -145,5 +145,6 @@ print(sum(1 for _ in linear_extensions([1, 2, 3, 4, 6, 12], divides)))  # 5
 - [서수와 초한귀납법](ordinals.md)
 - [Heyting algebra](heyting-algebras.md)
 - [Boolean algebra](boolean-algebras.md)
+- [Galois 연결과 완비 격자](galois-connections.md)
 
 #order_theory #set_theory
