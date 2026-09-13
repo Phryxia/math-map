@@ -270,5 +270,6 @@ print(max(abs(math.sqrt(sum(c * c for c in p)) - 1) for p in path))  # 약 2e-16
 ## 더 알아보기
 
 - [Gauss–Bonnet 정리](gauss-bonnet.md)
+- [Hodge 이론과 조화형식](hodge-theory.md)
 
 #differential_geometry

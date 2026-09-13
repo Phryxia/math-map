@@ -174,6 +174,6 @@ de Rham 복합체는 상수층의 분해라고 읽을 수 있고, 그러면 코�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hodge 이론과 조화형식](hodge-theory.md)
 
 #algebraic_topology #differential_geometry #analysis
