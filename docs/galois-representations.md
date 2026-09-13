@@ -219,5 +219,6 @@ for n in (1, 2, 3):
 ## 더 알아보기
 
 - [Dwork 의 유리성 정리와 지수합](dwork-rationality.md)
+- [p 진 Hodge 이론과 Fontaine 주기환](p-adic-hodge-theory.md)
 
 #number_theory #algebraic_topology #group_theory
