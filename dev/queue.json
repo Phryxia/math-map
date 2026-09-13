@@ -1,63 +1,31 @@
 {
   "version": 1,
-  "savedAt": "2026-09-13T13:34:50.478Z",
-  "nextSeq": 48,
+  "savedAt": "2026-09-13T14:35:51.295Z",
+  "nextSeq": 59,
   "items": [
     {
-      "id": "1edff536",
-      "title": "Riemann 가설과 L 함수",
+      "id": "765760d6",
+      "title": "유체론 개관",
       "priority": 10,
-      "note": "prime-number-theorem 아래. Dirichlet 지표, 산술수열의 소수 정리, 함수체 경우",
-      "createdAt": "2026-09-13T13:27:24.711Z",
-      "seq": 39
+      "note": "algebraic-number-fields 와 quadratic-reciprocity 아래. Artin 상호법칙, 이데알류군과 아벨 확대의 대응, Langlands 로 가는 길",
+      "createdAt": "2026-09-13T14:35:38.233Z",
+      "seq": 56
     },
     {
-      "id": "282e98aa",
-      "title": "반정부호 계획법과 최대 절단",
-      "priority": 10,
-      "note": "lp-rounding 아래. 무작위 초평면 반올림, 0.878 근사, 선형 완화로는 못 얻는 근사비",
-      "createdAt": "2026-09-13T13:27:25.119Z",
-      "seq": 42
-    },
-    {
-      "id": "66138754",
-      "title": "Hodge 별작용소와 Laplace-Beltrami",
-      "priority": 10,
-      "note": "de-rham-cohomology 와 riemannian-metrics 를 부모로. 조화형식, Hodge 분해, Poincare 쌍대성",
-      "createdAt": "2026-09-13T13:32:22.975Z",
-      "seq": 45
-    },
-    {
-      "id": "c27c9b0c",
-      "title": "격자 기반 후양자 암호",
-      "priority": 10,
-      "note": "LWE 와 SVP. discrete-logarithm 과 elliptic-curves 가 양자에 깨진다는 서술의 후속. 부모 후보는 lattices 문서가 없으므로 먼저 만들어야 한다",
-      "createdAt": "2026-09-13T13:34:38.581Z",
-      "seq": 47
-    },
-    {
-      "id": "9b7d5335",
-      "title": "변분 오토인코더",
+      "id": "fcb3cf45",
+      "title": "흐름 정합과 최적 수송",
       "priority": 8,
-      "note": "probabilistic-pca 아래. 선형 잠재변수 모형을 신경망으로, ELBO 와 변분 근사, kl-divergence 와 연결",
-      "createdAt": "2026-09-13T13:27:24.978Z",
-      "seq": 41
+      "note": "diffusion-models 아래. 확률흐름 ODE 의 일반화, 직선 경로, Wasserstein 거리 문서가 없으므로 함께 고려",
+      "createdAt": "2026-09-13T14:35:38.349Z",
+      "seq": 57
     },
     {
-      "id": "651d997b",
-      "title": "반정부호 계획법 후속: Lovász 세타 함수",
+      "id": "410c19f3",
+      "title": "지표 정리 개관",
       "priority": 8,
-      "note": "semidefinite-programming 아래. 샌드위치 정리, 완전그래프에서의 정확성, Shannon 용량",
-      "createdAt": "2026-09-13T13:32:22.848Z",
-      "seq": 44
-    },
-    {
-      "id": "0258a657",
-      "title": "Weil 쌍과 쌍선형 암호",
-      "priority": 8,
-      "note": "elliptic-curves 아래. MOV 공격에서 신원 기반 암호까지, DDH 가 쉽고 CDH 가 어려운 군",
-      "createdAt": "2026-09-13T13:34:38.443Z",
-      "seq": 46
+      "note": "hodge-theory 아래. 타원 작용소의 해석적 지표와 위상적 지표, Gauss-Bonnet 과 Riemann-Roch 를 특수 사례로",
+      "createdAt": "2026-09-13T14:35:38.470Z",
+      "seq": 58
     }
   ]
 }
