@@ -125,6 +125,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [최적 수송과 Wasserstein 거리](optimal-transport.md)
 
 #optimization
