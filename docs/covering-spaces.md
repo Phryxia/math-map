@@ -161,6 +161,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lie 군과 지수사상](lie-groups.md)
 
 #algebraic_topology #topology #group_theory
