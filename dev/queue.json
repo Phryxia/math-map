@@ -1,6 +1,63 @@
 {
   "version": 1,
-  "savedAt": "2026-09-13T10:08:47.250Z",
-  "nextSeq": 1,
-  "items": []
+  "savedAt": "2026-09-13T11:41:25.369Z",
+  "nextSeq": 20,
+  "items": [
+    {
+      "id": "fb8fc601",
+      "title": "구형 문서 신형 전환: relations, partial-orders, probability, topology",
+      "priority": 50,
+      "note": "proofs, sets, functions, groups, category, graphs, limits, measure, continuity, derivative, linear-maps, vector-spaces, entropy, functors, natural-transformations 완료. 자식 많은 허브부터",
+      "createdAt": "2026-09-13T11:41:16.656Z",
+      "seq": 17
+    },
+    {
+      "id": "d1efabe2",
+      "title": "채널 부호화 정리",
+      "priority": 10,
+      "note": "source-coding과 error-correcting-codes를 잇는다. 채널 용량, 무작위 부호화 논증",
+      "createdAt": "2026-09-13T11:26:25.205Z",
+      "seq": 9
+    },
+    {
+      "id": "a8f5a7a9",
+      "title": "Poincaré–Hopf 정리",
+      "priority": 10,
+      "note": "gauss-bonnet 아래. 벡터장 지표의 합 = Euler 지표, 털난 공 정리",
+      "createdAt": "2026-09-13T11:26:25.316Z",
+      "seq": 10
+    },
+    {
+      "id": "7a2a2c6a",
+      "title": "Girsanov 정리와 Feynman–Kac",
+      "priority": 10,
+      "note": "ito-calculus 아래. change-of-measure의 연속시간 판",
+      "createdAt": "2026-09-13T11:26:25.425Z",
+      "seq": 11
+    },
+    {
+      "id": "4a4d772b",
+      "title": "LP 완화와 반올림",
+      "priority": 10,
+      "note": "approximation-algorithms와 linear-programming을 부모로. 적분성 간극",
+      "createdAt": "2026-09-13T11:26:25.538Z",
+      "seq": 12
+    },
+    {
+      "id": "9f43e360",
+      "title": "확률적 PCA와 커널 PCA",
+      "priority": 10,
+      "note": "principal-component-analysis 아래. 잠재변수 모형과 비선형 확장",
+      "createdAt": "2026-09-13T11:41:16.769Z",
+      "seq": 18
+    },
+    {
+      "id": "e8e752af",
+      "title": "Kleisli 범주와 Eilenberg–Moore 범주",
+      "priority": 10,
+      "note": "monads 아래. 두 분해의 보편성, 프로그래밍의 do 표기",
+      "createdAt": "2026-09-13T11:41:16.879Z",
+      "seq": 19
+    }
+  ]
 }
