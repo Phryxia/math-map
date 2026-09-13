@@ -243,6 +243,6 @@ Gauss 잡음 채널에서 격자 부호가 용량에 접근하며, `E_8` 과 Lee
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [격자 기반 후양자 암호](post-quantum-cryptography.md)
 
 #number_theory #linear_algebra #cryptography

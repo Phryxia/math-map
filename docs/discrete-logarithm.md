@@ -187,5 +187,6 @@ ElGamal 암호와 DSA, ECDSA 서명이 같은 가정 위에 서 있다. 서명�
 ## 더 알아보기
 
 - [타원곡선과 군 구성](elliptic-curves.md)
+- [격자 기반 후양자 암호](post-quantum-cryptography.md)
 
 #cryptography #number_theory #group_theory
