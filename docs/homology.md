@@ -168,5 +168,6 @@ print(b0, b1)                              # 1 1  -> 원과 같은 Betti 수
 ## 더 알아보기
 
 - [Euler 지표](euler-characteristic.md)
+- [de Rham 코호몰로지](de-rham-cohomology.md)
 
 #algebraic_topology

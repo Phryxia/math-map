@@ -195,6 +195,6 @@ Hamilton 역학의 무대가 닫힌 비퇴화 2-형식을 가진 다양체다. H
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [de Rham 코호몰로지](de-rham-cohomology.md)
 
 #differential_geometry #analysis #topology
