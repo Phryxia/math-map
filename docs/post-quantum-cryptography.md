@@ -212,6 +212,6 @@ NIST 가 2024 년에 세 표준을 확정했다. 키 교환용 ML-KEM(CRYSTALS-K
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [완전동형암호](homomorphic-encryption.md)
 
 #cryptography #computation #linear_algebra
