@@ -205,6 +205,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [기본 보조정리와 대각합 공식의 안정화](fundamental-lemma.md)
 
 #number_theory #analysis #differential_geometry #theorem
