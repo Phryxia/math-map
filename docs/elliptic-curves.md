@@ -212,6 +212,6 @@ Shor 알고리즘은 타원곡선 이산로그도 다항시간에 푼다. 오히
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Weil 쌍과 쌍선형 암호](pairing-based-cryptography.md)
 
 #number_theory #cryptography #group_theory
