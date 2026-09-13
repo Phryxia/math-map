@@ -155,5 +155,6 @@ Klein 의 관점에서 기하학은 "어떤 변환군 아래 불변인 성질의
 - [Galois 이론](galois-theory.md)
 - [Sylow 정리](sylow-theorems.md)
 - [군의 표현과 지표](group-representations.md)
+- [덮개공간](covering-spaces.md)
 
 #group_theory
