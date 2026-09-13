@@ -300,5 +300,6 @@ Ramanujan 의 합동 `p(5n+4)\equiv0\pmod5`, `p(7n+5)\equiv0\pmod7`, `p(11n+6)\e
 ## 더 알아보기
 
 - [Langlands 강령](langlands-program.md)
+- [분할수와 원법](partitions.md)
 
 #number_theory #complex_analysis #group_theory
