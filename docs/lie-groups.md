@@ -228,6 +228,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Peter–Weyl 정리](peter-weyl.md)
 
 #differential_geometry #group_theory #linear_algebra

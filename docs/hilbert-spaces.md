@@ -228,6 +228,7 @@ for K in (1, 5, 25, 200):
 
 - [Fourier 급수](fourier-series.md)
 - [유계 작용소와 스펙트럼](bounded-operators.md)
+- [Peter–Weyl 정리](peter-weyl.md)
 - [구면조화함수와 SO(3) 의 표현](spherical-harmonics.md)
 
 #functional_analysis
