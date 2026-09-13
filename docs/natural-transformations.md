@@ -46,5 +46,6 @@ $$
 
 - [Yoneda lemma](yoneda-lemma.md)
 - [Adjunction](adjunctions.md)
+- [제한과 쌍대제한](limits-colimits.md)
 
 #category_theory
