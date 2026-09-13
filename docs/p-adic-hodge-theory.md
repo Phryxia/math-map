@@ -364,6 +364,6 @@ Fontaine–Wintenberger 의 노름체 대응은 "`p` 진 탑을 충분히 올라
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Sen 이론과 Hodge–Tate 무게](sen-theory.md)
 
 #number_theory #field_theory #algebraic_topology
