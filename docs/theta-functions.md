@@ -259,6 +259,6 @@ print("  계수 0..20 :", prod_[:21])
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [괴물 달빛 추측](monstrous-moonshine.md)
 
 #number_theory #combinatorics #complex_analysis
