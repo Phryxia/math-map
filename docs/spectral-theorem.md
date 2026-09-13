@@ -146,6 +146,7 @@ print(np.allclose(Q.T @ Q, np.eye(2)))
 ## 더 알아보기
 
 - [특이값 분해](singular-value-decomposition.md)
+- [Hecke 작용소와 새형식](hecke-operators.md)
 - [유계 작용소와 스펙트럼](bounded-operators.md)
 
 #linear_algebra #theorem
