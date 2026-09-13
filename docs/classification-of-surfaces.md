@@ -276,6 +276,7 @@ $$
 
 - [Euler 지표](euler-characteristic.md)
 - [기본군](fundamental-group.md)
+- [Compactness](compactness.md)
 
 ## 더 알아보기
 
