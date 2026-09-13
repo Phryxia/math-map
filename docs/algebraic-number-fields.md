@@ -251,5 +251,6 @@ Kummer 자신이 대안을 내놓았다. `p` 가 유수를 나누지 않는 정�
 ## 더 알아보기
 
 - [유체론](class-field-theory.md)
+- [아델과 이델](adeles.md)
 
 #number_theory #ring_theory #field_theory

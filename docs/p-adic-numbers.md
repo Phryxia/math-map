@@ -261,6 +261,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [아델과 이델](adeles.md)
 
 #number_theory #analysis #field_theory
