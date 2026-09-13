@@ -250,6 +250,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dirichlet 지표와 L 함수](dirichlet-l-functions.md)
 
 #group_theory #linear_algebra
