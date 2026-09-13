@@ -465,6 +465,7 @@ print("비교 : exp(x) 의 1/5! = 1/120 은 분모에 5 가 있다")
 
 - [Galois 표현과 에탈 코호몰로지](galois-representations.md)
 - [Gauss 합과 국소 근 수](gauss-sums.md)
+- [Newton 다각형](newton-polygon.md)
 
 ## 더 알아보기
 

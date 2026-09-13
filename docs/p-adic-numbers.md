@@ -263,5 +263,6 @@ $$
 
 - [아델과 이델](adeles.md)
 - [국소 유체론과 Lubin–Tate 형식군](local-class-field-theory.md)
+- [Newton 다각형](newton-polygon.md)
 
 #number_theory #analysis #field_theory
