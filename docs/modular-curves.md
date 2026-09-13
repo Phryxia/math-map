@@ -250,5 +250,6 @@ for N in (1, 11, 14, 15, 17, 19, 20, 21, 24, 32, 37, 49, 50):
 ## 더 알아보기
 
 - [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md)
+- [모듈러 기호](modular-symbols.md)
 
 #number_theory #complex_analysis #algebraic_topology
