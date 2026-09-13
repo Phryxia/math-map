@@ -227,5 +227,6 @@ for K in (1, 5, 25, 200):
 ## 더 알아보기
 
 - [Fourier 급수](fourier-series.md)
+- [유계 작용소와 스펙트럼](bounded-operators.md)
 
 #functional_analysis
