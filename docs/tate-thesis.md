@@ -268,6 +268,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gauss 합과 국소 근 수](gauss-sums.md)
 
 #number_theory #analysis #paper
