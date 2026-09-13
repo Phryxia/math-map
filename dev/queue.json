@@ -1,31 +1,15 @@
 {
   "version": 1,
-  "savedAt": "2026-09-13T11:41:25.369Z",
-  "nextSeq": 20,
+  "savedAt": "2026-09-13T11:44:50.557Z",
+  "nextSeq": 21,
   "items": [
     {
-      "id": "fb8fc601",
-      "title": "구형 문서 신형 전환: relations, partial-orders, probability, topology",
+      "id": "99af4fa8",
+      "title": "구형 문서 신형 전환: partial-orders, computability, modular-arithmetic, metric-spaces",
       "priority": 50,
-      "note": "proofs, sets, functions, groups, category, graphs, limits, measure, continuity, derivative, linear-maps, vector-spaces, entropy, functors, natural-transformations 완료. 자식 많은 허브부터",
-      "createdAt": "2026-09-13T11:41:16.656Z",
-      "seq": 17
-    },
-    {
-      "id": "d1efabe2",
-      "title": "채널 부호화 정리",
-      "priority": 10,
-      "note": "source-coding과 error-correcting-codes를 잇는다. 채널 용량, 무작위 부호화 논증",
-      "createdAt": "2026-09-13T11:26:25.205Z",
-      "seq": 9
-    },
-    {
-      "id": "a8f5a7a9",
-      "title": "Poincaré–Hopf 정리",
-      "priority": 10,
-      "note": "gauss-bonnet 아래. 벡터장 지표의 합 = Euler 지표, 털난 공 정리",
-      "createdAt": "2026-09-13T11:26:25.316Z",
-      "seq": 10
+      "note": "완료: proofs, sets, functions, relations, groups, category, graphs, limits, measure, continuity, derivative, linear-maps, vector-spaces, probability, topology, entropy, functors, natural-transformations. 남은 구형 문서는 약 45개이고 자식 많은 허브부터 옮긴다",
+      "createdAt": "2026-09-13T11:44:43.863Z",
+      "seq": 20
     },
     {
       "id": "7a2a2c6a",
