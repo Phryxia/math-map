@@ -328,6 +328,6 @@ Peter–Weyl 이 준 `L^2(G)` 의 분해에서 각 조각의 크기가 `(\dim V_
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schur 다항식과 대칭함수](schur-polynomials.md)
 
 #algebra #group_theory #combinatorics #theorem
