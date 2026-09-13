@@ -1,55 +1,23 @@
 {
   "version": 1,
-  "savedAt": "2026-09-13T21:17:16.621Z",
-  "nextSeq": 146,
+  "savedAt": "2026-09-13T22:21:03.573Z",
+  "nextSeq": 158,
   "items": [
     {
-      "id": "03ef6aa2",
-      "title": "Mock 모듈러 형식과 Zwegers 이론",
-      "priority": 7,
-      "note": "umbral-moonshine 아래 혹은 modular-forms 아래. Ramanujan mock theta, shadow 와 비정칙 완성, Hurwitz 계급수, Appell-Lerch 합",
-      "createdAt": "2026-09-13T21:01:04.292Z",
-      "seq": 138
+      "id": "a3e08f40",
+      "title": "Reshetikhin-Turaev 불변량과 3 차원 TQFT 구성",
+      "priority": 6,
+      "note": "modular-tensor-categories 와 knot-invariants 아래. 색칠된 땋임의 자취, 수술로 3 다양체 불변량, Jones 를 sl2 준위 1 특수화로 되찾기. MTC 리프도 해소",
+      "createdAt": "2026-09-13T22:04:10.058Z",
+      "seq": 150
     },
     {
-      "id": "2475aa14",
-      "title": "Borel-Weil-Bott 정리와 깃발다양체",
+      "id": "e21568a3",
+      "title": "expander 그래프와 스펙트럼 간극",
       "priority": 6,
-      "note": "weyl-character-formula 아래. G/B 위 직선다발의 코호몰로지, rho 이동 작용, Schubert 셀 분해와 Bruhat 순서",
-      "createdAt": "2026-09-13T20:56:08.524Z",
-      "seq": 135
-    },
-    {
-      "id": "35385c1a",
-      "title": "Jones 다항식과 매듭 불변량",
-      "priority": 6,
-      "note": "modular-tensor-categories 아래. Kauffman 괄호, skein 관계, Reshetikhin-Turaev 구성의 가장 작은 예, 매듭 이론 문서가 아직 없음",
-      "createdAt": "2026-09-13T21:10:53.653Z",
-      "seq": 140
-    },
-    {
-      "id": "8ac88d85",
-      "title": "Galois 연결과 완비 격자",
-      "priority": 6,
-      "note": "order_theory 태그가 3 개뿐. partial-orders 아래. 갈루아 연결, Knaster-Tarski 고정점, 형식 개념 분석, adjunction 의 순서론 판본",
-      "createdAt": "2026-09-13T21:17:04.245Z",
-      "seq": 142
-    },
-    {
-      "id": "56ebddbc",
-      "title": "PCP 정리와 근사 불가능성",
-      "priority": 6,
-      "note": "complexity 태그가 5 개뿐. approximation-algorithms 아래. 검증자 모형, 간극 문제, Hastad 최적 비근사, 유일게임 추측",
-      "createdAt": "2026-09-13T21:17:04.362Z",
-      "seq": 143
-    },
-    {
-      "id": "a04bde06",
-      "title": "Schur-Weyl 쌍대성",
-      "priority": 6,
-      "note": "schur-polynomials 아래. GL_n 과 S_n 이 텐서공간에서 서로의 중심화대수, 이중가군 분해, 양자군으로의 확장",
-      "createdAt": "2026-09-13T21:17:04.480Z",
-      "seq": 144
+      "note": "pcp-theorem 이 Dinur 증명에서 쓰는 도구. eigenvalues 와 graphs 아래. Cheeger 부등식, 무작위 걷기 혼합, Ramanujan 그래프. 여러 문서가 expander 를 본문에서만 언급한다",
+      "createdAt": "2026-09-13T22:09:56.167Z",
+      "seq": 155
     },
     {
       "id": "de1bc563",
@@ -132,6 +100,30 @@
       "seq": 145
     },
     {
+      "id": "623fbe8e",
+      "title": "땋임군과 Alexander-Markov 정리",
+      "priority": 5,
+      "note": "knot-invariants 아래. B_n 표시, 닫힘이 링크를 준다, Markov 이동, Temperley-Lieb 대수와 Jones 자취",
+      "createdAt": "2026-09-13T22:04:10.203Z",
+      "seq": 151
+    },
+    {
+      "id": "14d49dde",
+      "title": "추상해석과 정적 분석의 건전성",
+      "priority": 5,
+      "note": "galois-connections 아래. alpha/gamma 쌍, 전이함수 최소 고정점, 위드닝과 내로잉, 구간 영역 예제",
+      "createdAt": "2026-09-13T22:07:13.743Z",
+      "seq": 152
+    },
+    {
+      "id": "88f7472a",
+      "title": "유일게임 추측과 2-to-2 정리",
+      "priority": 5,
+      "note": "pcp-theorem 과 semidefinite-programming 아래. 기본 SDP 가 최적 근사라는 통일 정리, 잡음 안정성과 Majority is Stablest, 2022 년 부분 해결",
+      "createdAt": "2026-09-13T22:09:56.048Z",
+      "seq": 154
+    },
+    {
       "id": "2b9ec335",
       "title": "Gan-Gross-Prasad 추측",
       "priority": 4,
@@ -194,6 +186,46 @@
       "note": "modular-tensor-categories 아래. Fibonacci 애니온의 조밀성, Ising 과 Clifford 군, 분수 양자 홀 효과",
       "createdAt": "2026-09-13T21:10:53.776Z",
       "seq": 141
+    },
+    {
+      "id": "4f172ecb",
+      "title": "조화 Maass 형식과 Borcherds 승법",
+      "priority": 4,
+      "note": "mock-modular-forms 아래. Borcherds 곱의 지수가 약정칙 형식 계수, theta 올림, Gross-Kohnen-Zagier",
+      "createdAt": "2026-09-13T21:56:19.313Z",
+      "seq": 147
+    },
+    {
+      "id": "bdcf9bc3",
+      "title": "Beilinson-Bernstein 국소화",
+      "priority": 4,
+      "note": "borel-weil-bott 아래. 깃발다양체 위 D 가군과 g 가군 범주의 동치, BWB 의 층론적 일반화, 범주 O",
+      "createdAt": "2026-09-13T21:59:22.345Z",
+      "seq": 149
+    },
+    {
+      "id": "86c27741",
+      "title": "Kleene 고정점 정리와 영역 이론",
+      "priority": 4,
+      "note": "galois-connections 아래. cpo, 스콧 연속성, 유한 반복 도달, 재귀 프로그램의 의미론과 최소 고정점",
+      "createdAt": "2026-09-13T22:07:13.871Z",
+      "seq": 153
+    },
+    {
+      "id": "7d22b0e4",
+      "title": "Brauer 대수와 직교군 쌍대성",
+      "priority": 4,
+      "note": "schur-weyl-duality 아래. O_n, Sp_n 의 텐서공간 중심화대수, 도형 대수와 자취, 제 1 기본정리",
+      "createdAt": "2026-09-13T22:12:22.913Z",
+      "seq": 156
+    },
+    {
+      "id": "faa8bd0b",
+      "title": "Ramanujan 그래프의 명시적 구성",
+      "priority": 4,
+      "note": "expander-graphs 아래. LPS 구성과 사원수 대수, Deligne 경계의 사용, MSS 의 교대 다항식과 이분 Ramanujan 족",
+      "createdAt": "2026-09-13T22:20:36.338Z",
+      "seq": 157
     },
     {
       "id": "c512345c",
