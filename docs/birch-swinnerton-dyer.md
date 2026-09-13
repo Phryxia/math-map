@@ -181,6 +181,6 @@ BSD 가 참이면 순위 계산이 유한 시간에 끝나는 알고리즘이 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Heegner 점과 Gross–Zagier 공식](heegner-points.md)
 
 #number_theory #complex_analysis #theorem
