@@ -155,5 +155,6 @@ for p in range(3, 8):
 
 - [평면 그래프](planar-graphs.md)
 - [곡면의 분류](classification-of-surfaces.md)
+- [Gauss–Bonnet 정리](gauss-bonnet.md)
 
 #topology
