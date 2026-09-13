@@ -64,5 +64,6 @@ V의 부분집합 W가 영벡터를 포함하고 덧셈과 실수배에 닫혀 �
 - [체의 확대](field-extensions.md)
 - [내적 공간](inner-product-spaces.md)
 - [가군](modules.md)
+- [오류정정부호](error-correcting-codes.md)
 
 #linear_algebra
