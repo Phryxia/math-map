@@ -145,5 +145,6 @@ Kirchhoff의 matrix-tree 정리는 연결 그래프의 신장트리 개수가 [�
 ## 더 알아보기
 
 - [고윳값과 고유벡터](eigenvalues.md)
+- [격자와 최단벡터 문제](lattices.md)
 
 #linear_algebra
