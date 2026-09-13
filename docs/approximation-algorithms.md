@@ -160,5 +160,6 @@ print(len(sc_greedy(U, S)), len(sc_opt(U, S)), round(math.log(16), 3))
 ## 더 알아보기
 
 - [LP 완화와 반올림](lp-rounding.md)
+- [PCP 정리와 근사 불가능성](pcp-theorem.md)
 
 #complexity #algorithms
