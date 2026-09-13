@@ -1,15 +1,23 @@
 {
   "version": 1,
-  "savedAt": "2026-09-13T11:44:50.557Z",
-  "nextSeq": 21,
+  "savedAt": "2026-09-13T12:40:24.940Z",
+  "nextSeq": 32,
   "items": [
     {
-      "id": "99af4fa8",
-      "title": "구형 문서 신형 전환: partial-orders, computability, modular-arithmetic, metric-spaces",
+      "id": "0e343202",
+      "title": "구형 문서 신형 전환 마무리: color-refinement, mathematical-intuitionism, mathematical-structuralism, effective-resistance",
       "priority": 50,
-      "note": "완료: proofs, sets, functions, relations, groups, category, graphs, limits, measure, continuity, derivative, linear-maps, vector-spaces, probability, topology, entropy, functors, natural-transformations. 남은 구형 문서는 약 45개이고 자식 많은 허브부터 옮긴다",
-      "createdAt": "2026-09-13T11:44:43.863Z",
-      "seq": 20
+      "note": "이번 회차 32개 전환. 남은 구형 문서 7개뿐: color-refinement, dynamic-connectivity, effective-resistance, gnn-expressivity, mathematical-intuitionism, mathematical-structuralism, spectral-sparsification. 다음 회차에 전부 끝낼 수 있다",
+      "createdAt": "2026-09-13T12:40:10.214Z",
+      "seq": 30
+    },
+    {
+      "id": "cf7f84ee",
+      "title": "구형 문서 신형 전환 마무리 2: dynamic-connectivity, gnn-expressivity, spectral-sparsification",
+      "priority": 45,
+      "note": "논문 요약 문서(gnn-expressivity, spectral-sparsification)는 신형 5절 구조에 맞추기 까다로우니 #paper 태그 문서의 규격을 어떻게 잡을지 먼저 정한다",
+      "createdAt": "2026-09-13T12:40:10.360Z",
+      "seq": 31
     },
     {
       "id": "7a2a2c6a",
@@ -42,6 +50,14 @@
       "note": "monads 아래. 두 분해의 보편성, 프로그래밍의 do 표기",
       "createdAt": "2026-09-13T11:41:16.879Z",
       "seq": 19
+    },
+    {
+      "id": "7f6aef0d",
+      "title": "FFT와 합성곱",
+      "priority": 10,
+      "note": "fourier 가 리프다. Cooley-Tukey 분할정복, 순환 합성곱, 다항식/큰정수 곱셈, 수론 변환을 자식 문서로 분리하면 fourier 의 후속이 생긴다",
+      "createdAt": "2026-09-13T12:34:25.458Z",
+      "seq": 29
     }
   ]
 }
