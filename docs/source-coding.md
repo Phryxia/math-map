@@ -164,6 +164,6 @@ for n in (1, 2, 4, 8):
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [채널 부호화 정리](channel-coding.md)
 
 #information_theory #theorem

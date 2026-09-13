@@ -150,6 +150,6 @@ Shannon 의 채널 부호화 정리는 채널 용량보다 낮은 부호율이�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [채널 부호화 정리](channel-coding.md)
 
 #field_theory #linear_algebra #computation
