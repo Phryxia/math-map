@@ -1,64 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-13T22:21:03.573Z",
-  "nextSeq": 158,
+  "savedAt": "2026-09-13T23:17:30.299Z",
+  "nextSeq": 166,
   "items": [
-    {
-      "id": "a3e08f40",
-      "title": "Reshetikhin-Turaev 불변량과 3 차원 TQFT 구성",
-      "priority": 6,
-      "note": "modular-tensor-categories 와 knot-invariants 아래. 색칠된 땋임의 자취, 수술로 3 다양체 불변량, Jones 를 sl2 준위 1 특수화로 되찾기. MTC 리프도 해소",
-      "createdAt": "2026-09-13T22:04:10.058Z",
-      "seq": 150
-    },
-    {
-      "id": "e21568a3",
-      "title": "expander 그래프와 스펙트럼 간극",
-      "priority": 6,
-      "note": "pcp-theorem 이 Dinur 증명에서 쓰는 도구. eigenvalues 와 graphs 아래. Cheeger 부등식, 무작위 걷기 혼합, Ramanujan 그래프. 여러 문서가 expander 를 본문에서만 언급한다",
-      "createdAt": "2026-09-13T22:09:56.167Z",
-      "seq": 155
-    },
-    {
-      "id": "de1bc563",
-      "title": "기본 보조정리와 Arthur-Selberg 대각합 공식",
-      "priority": 5,
-      "note": "satake-isomorphism 아래. 내시 군, 궤도적분 맞추기, Satake 동형으로 정의되는 기본 사상 b, Ngo 의 Hitchin 올뭉치 증명 개요",
-      "createdAt": "2026-09-13T17:57:38.245Z",
-      "seq": 100
-    },
-    {
-      "id": "f7984716",
-      "title": "Maass 형식과 Laplace 스펙트럼",
-      "priority": 5,
-      "note": "eisenstein-series 아래. 무게 0 실해석적 고유형식, Selberg 1/4 추측, Ramanujan 의 아르키메데스 판",
-      "createdAt": "2026-09-13T18:08:04.140Z",
-      "seq": 104
-    },
-    {
-      "id": "2ea4d8a4",
-      "title": "Casselman-Shalika 공식과 Schur 다항식",
-      "priority": 5,
-      "note": "whittaker-models 아래. 비분기 Whittaker 값이 Schur 다항식, Cauchy 항등식이 국소 L 인자를 주는 계산, Gelfand-Tsetlin 쪽 결합론",
-      "createdAt": "2026-09-13T18:11:47.241Z",
-      "seq": 105
-    },
-    {
-      "id": "fb0e4674",
-      "title": "MV 순환과 결정 기저",
-      "priority": 5,
-      "note": "geometric-satake 아래. 반무한 낟가리, MV 다면체, Kostant 분할 함수와 Littelmann 경로의 기하적 실현",
-      "createdAt": "2026-09-13T18:14:58.292Z",
-      "seq": 107
-    },
-    {
-      "id": "85fa147d",
-      "title": "Sen 이론과 C_p 위의 작용소",
-      "priority": 5,
-      "note": "p-adic-hodge-theory 아래. C_p 반선형 표현의 분해, Sen 작용소의 고유값이 Hodge-Tate 무게, 무한소 Galois 작용",
-      "createdAt": "2026-09-13T18:56:40.260Z",
-      "seq": 109
-    },
     {
       "id": "dc38c3d2",
       "title": "Fontaine-Mazur 추측과 기하적 Galois 표현",
@@ -124,6 +68,14 @@
       "seq": 154
     },
     {
+      "id": "49150223",
+      "title": "Khovanov 호몰로지와 매듭 불변량의 범주화",
+      "priority": 5,
+      "note": "knot-invariants 와 reshetikhin-turaev 아래. 정육면체 분해, Jones 를 Euler 지표로, Rasmussen s 불변량과 매끄러운 4 차원 기하",
+      "createdAt": "2026-09-13T22:57:49.584Z",
+      "seq": 158
+    },
+    {
       "id": "2b9ec335",
       "title": "Gan-Gross-Prasad 추측",
       "priority": 4,
@@ -146,14 +98,6 @@
       "note": "supersingular-isogeny-graphs 아래. 극대차수와 곡선의 사전, KLPT 알고리즘, SQIsign 서명의 뼈대",
       "createdAt": "2026-09-13T19:09:32.859Z",
       "seq": 114
-    },
-    {
-      "id": "3a2503af",
-      "title": "Selberg 1/4 추측과 스펙트럼 간극",
-      "priority": 4,
-      "note": "selberg-trace-formula 아래. Ramanujan 의 아르키메데스 자리, Kim-Sarnak 경계, 산술 곡면의 expander 성질과 응용",
-      "createdAt": "2026-09-13T19:12:19.560Z",
-      "seq": 115
     },
     {
       "id": "48c7d7eb",
@@ -228,12 +172,68 @@
       "seq": 157
     },
     {
+      "id": "17ea12f7",
+      "title": "Witten 점근 추측과 Ohtsuki 급수",
+      "priority": 4,
+      "note": "reshetikhin-turaev 아래. k 무한대 점근에서 평탄 접속 기여, Chern-Simons 작용과 Reidemeister 비틀림, 1 차 보정의 Casson 불변량",
+      "createdAt": "2026-09-13T22:57:49.736Z",
+      "seq": 159
+    },
+    {
+      "id": "50f81215",
+      "title": "Kirby 계산법과 4 차원 손잡이 분해",
+      "priority": 4,
+      "note": "reshetikhin-turaev 의 선수지식 후보. Lickorish-Wallace, Kirby I/II 이동, 이음수 행렬과 교차형식, 4 다양체 쪽 연결",
+      "createdAt": "2026-09-13T22:57:49.893Z",
+      "seq": 160
+    },
+    {
+      "id": "08170aab",
+      "title": "Arthur 의 고전군 내시 분류",
+      "priority": 4,
+      "note": "fundamental-lemma 아래. 자기쌍대 GL_N 첨점 표현으로 매개, A 매개변수와 중복도 공식, L 꾸러미와 성분군",
+      "createdAt": "2026-09-13T23:03:21.247Z",
+      "seq": 161
+    },
+    {
+      "id": "c273dff9",
+      "title": "Hitchin 올뭉치와 가환 적분계",
+      "priority": 4,
+      "note": "fundamental-lemma 가 본문에서 쓰는 도구인데 문서가 없다. Higgs 다발, 스펙트럼 곡선, Hitchin 사상의 올이 Prym 다양체, geometric-langlands 와도 이어진다",
+      "createdAt": "2026-09-13T23:03:21.429Z",
+      "seq": 162
+    },
+    {
+      "id": "fb74846f",
+      "title": "Kuznetsov 공식과 Kloosterman 합",
+      "priority": 4,
+      "note": "maass-forms 아래. 스펙트럼 쪽과 Kloosterman 쪽의 쌍대성, 대각합 공식과 대비되는 비대각 판, 예외 고윳값이 어디서 문제가 되는지",
+      "createdAt": "2026-09-13T23:07:03.275Z",
+      "seq": 163
+    },
+    {
+      "id": "8585373a",
+      "title": "Coleman-Mazur 고윳값 곡선",
+      "priority": 4,
+      "note": "sen-theory 와 p-adic-hodge-theory 아래. 과수렴 형식의 p 진 족, 기울기와 Hodge-Tate 무게의 변동, Sen 작용소가 족 위에서 해석적",
+      "createdAt": "2026-09-13T23:16:45.466Z",
+      "seq": 165
+    },
+    {
       "id": "c512345c",
       "title": "양자 혼돈과 고윳값 통계",
       "priority": 3,
       "note": "selberg-trace-formula 아래. GOE/GUE 대 Poisson, 산술 곡면의 예외, Montgomery-Odlyzko 와 zeta 영점 간격",
       "createdAt": "2026-09-13T19:12:19.670Z",
       "seq": 116
+    },
+    {
+      "id": "340146bb",
+      "title": "Weyl 군 다중 Dirichlet 급수",
+      "priority": 3,
+      "note": "casselman-shalika 아래. 메타플렉틱 덮개에서 Whittaker 유일성이 깨질 때 나오는 대체물, Gelfand-Tsetlin 패턴의 가중 세기, 결정 기저와의 관계",
+      "createdAt": "2026-09-13T23:10:25.787Z",
+      "seq": 164
     }
   ]
 }
