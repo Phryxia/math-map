@@ -244,6 +244,6 @@ Kolyvagin 의 방법은 `Ш` 를 위에서 누르는 유일하게 알려진 일�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)
 
 #number_theory #group_theory #theorem
