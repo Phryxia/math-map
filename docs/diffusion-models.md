@@ -216,6 +216,6 @@ for name, v in [("생성 표본", x), ("참 분포", true)]:
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [흐름 정합](flow-matching.md)
 
 #machine_learning #probability #analysis

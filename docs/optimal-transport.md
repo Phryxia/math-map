@@ -254,6 +254,6 @@ WGAN 은 판별자를 1-Lipschitz 로 제한해 `W_1` 의 쌍대해를 근사하
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [흐름 정합](flow-matching.md)
 
 #optimization #probability #measure_theory #machine_learning
