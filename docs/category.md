@@ -123,5 +123,6 @@ print("mono = 단사")
 ## 더 알아보기
 
 - [Functor](functors.md)
+- [구조적 집합론과 동형 불변성](structural-set-theory.md)
 
 #category_theory

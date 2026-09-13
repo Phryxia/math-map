@@ -119,6 +119,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [구조적 집합론과 동형 불변성](structural-set-theory.md)
 
 #philosophy_of_math #foundations
