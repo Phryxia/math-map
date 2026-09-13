@@ -1,63 +1,63 @@
 {
   "version": 1,
-  "savedAt": "2026-09-13T12:40:24.940Z",
-  "nextSeq": 32,
+  "savedAt": "2026-09-13T13:34:50.478Z",
+  "nextSeq": 48,
   "items": [
     {
-      "id": "0e343202",
-      "title": "구형 문서 신형 전환 마무리: color-refinement, mathematical-intuitionism, mathematical-structuralism, effective-resistance",
-      "priority": 50,
-      "note": "이번 회차 32개 전환. 남은 구형 문서 7개뿐: color-refinement, dynamic-connectivity, effective-resistance, gnn-expressivity, mathematical-intuitionism, mathematical-structuralism, spectral-sparsification. 다음 회차에 전부 끝낼 수 있다",
-      "createdAt": "2026-09-13T12:40:10.214Z",
-      "seq": 30
-    },
-    {
-      "id": "cf7f84ee",
-      "title": "구형 문서 신형 전환 마무리 2: dynamic-connectivity, gnn-expressivity, spectral-sparsification",
-      "priority": 45,
-      "note": "논문 요약 문서(gnn-expressivity, spectral-sparsification)는 신형 5절 구조에 맞추기 까다로우니 #paper 태그 문서의 규격을 어떻게 잡을지 먼저 정한다",
-      "createdAt": "2026-09-13T12:40:10.360Z",
-      "seq": 31
-    },
-    {
-      "id": "7a2a2c6a",
-      "title": "Girsanov 정리와 Feynman–Kac",
+      "id": "1edff536",
+      "title": "Riemann 가설과 L 함수",
       "priority": 10,
-      "note": "ito-calculus 아래. change-of-measure의 연속시간 판",
-      "createdAt": "2026-09-13T11:26:25.425Z",
-      "seq": 11
+      "note": "prime-number-theorem 아래. Dirichlet 지표, 산술수열의 소수 정리, 함수체 경우",
+      "createdAt": "2026-09-13T13:27:24.711Z",
+      "seq": 39
     },
     {
-      "id": "4a4d772b",
-      "title": "LP 완화와 반올림",
+      "id": "282e98aa",
+      "title": "반정부호 계획법과 최대 절단",
       "priority": 10,
-      "note": "approximation-algorithms와 linear-programming을 부모로. 적분성 간극",
-      "createdAt": "2026-09-13T11:26:25.538Z",
-      "seq": 12
+      "note": "lp-rounding 아래. 무작위 초평면 반올림, 0.878 근사, 선형 완화로는 못 얻는 근사비",
+      "createdAt": "2026-09-13T13:27:25.119Z",
+      "seq": 42
     },
     {
-      "id": "9f43e360",
-      "title": "확률적 PCA와 커널 PCA",
+      "id": "66138754",
+      "title": "Hodge 별작용소와 Laplace-Beltrami",
       "priority": 10,
-      "note": "principal-component-analysis 아래. 잠재변수 모형과 비선형 확장",
-      "createdAt": "2026-09-13T11:41:16.769Z",
-      "seq": 18
+      "note": "de-rham-cohomology 와 riemannian-metrics 를 부모로. 조화형식, Hodge 분해, Poincare 쌍대성",
+      "createdAt": "2026-09-13T13:32:22.975Z",
+      "seq": 45
     },
     {
-      "id": "e8e752af",
-      "title": "Kleisli 범주와 Eilenberg–Moore 범주",
+      "id": "c27c9b0c",
+      "title": "격자 기반 후양자 암호",
       "priority": 10,
-      "note": "monads 아래. 두 분해의 보편성, 프로그래밍의 do 표기",
-      "createdAt": "2026-09-13T11:41:16.879Z",
-      "seq": 19
+      "note": "LWE 와 SVP. discrete-logarithm 과 elliptic-curves 가 양자에 깨진다는 서술의 후속. 부모 후보는 lattices 문서가 없으므로 먼저 만들어야 한다",
+      "createdAt": "2026-09-13T13:34:38.581Z",
+      "seq": 47
     },
     {
-      "id": "7f6aef0d",
-      "title": "FFT와 합성곱",
-      "priority": 10,
-      "note": "fourier 가 리프다. Cooley-Tukey 분할정복, 순환 합성곱, 다항식/큰정수 곱셈, 수론 변환을 자식 문서로 분리하면 fourier 의 후속이 생긴다",
-      "createdAt": "2026-09-13T12:34:25.458Z",
-      "seq": 29
+      "id": "9b7d5335",
+      "title": "변분 오토인코더",
+      "priority": 8,
+      "note": "probabilistic-pca 아래. 선형 잠재변수 모형을 신경망으로, ELBO 와 변분 근사, kl-divergence 와 연결",
+      "createdAt": "2026-09-13T13:27:24.978Z",
+      "seq": 41
+    },
+    {
+      "id": "651d997b",
+      "title": "반정부호 계획법 후속: Lovász 세타 함수",
+      "priority": 8,
+      "note": "semidefinite-programming 아래. 샌드위치 정리, 완전그래프에서의 정확성, Shannon 용량",
+      "createdAt": "2026-09-13T13:32:22.848Z",
+      "seq": 44
+    },
+    {
+      "id": "0258a657",
+      "title": "Weil 쌍과 쌍선형 암호",
+      "priority": 8,
+      "note": "elliptic-curves 아래. MOV 공격에서 신원 기반 암호까지, DDH 가 쉽고 CDH 가 어려운 군",
+      "createdAt": "2026-09-13T13:34:38.443Z",
+      "seq": 46
     }
   ]
 }
