@@ -208,5 +208,6 @@ print(all(frozenset(compose(compose(g, h), inv[g]) for h in R) == frozenset(R)
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)
 - [기본군](fundamental-group.md)
 - [단체 호몰로지](homology.md)
+- [이산로그와 Diffie–Hellman](discrete-logarithm.md)
 
 #group_theory
