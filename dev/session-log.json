@@ -1,0 +1,420 @@
+{
+  "schemaVersion": 1,
+  "sessions": [
+    {
+      "id": "session-20260912T163836Z",
+      "startedAt": "2026-09-12T16:38:36Z",
+      "startClockSource": "container date -Iseconds observed 2026-09-12T16:38:36+00:00",
+      "explorationDeadline": "2026-09-12T17:18:36Z",
+      "hardDeadline": "2026-09-12T17:23:36Z",
+      "timezone": "Asia/Seoul",
+      "baseRevision": 41,
+      "baseVertexCount": 40,
+      "baseEdgeCount": 61,
+      "status": "interrupted",
+      "createdVertexIds": [],
+      "modifiedVertexIds": [],
+      "documentCreates": 0,
+      "documentModifies": 0,
+      "lockFileId": "1rMH3JNUdldKsxFsp3xeePn9lShQz0j1W",
+      "checks": [
+        {
+          "label": "manual-clock",
+          "at": "2026-09-12T16:45:57.371Z",
+          "explorationDeadline": "2026-09-12T17:18:36Z",
+          "hardDeadline": "2026-09-12T17:23:36Z"
+        },
+        {
+          "label": "manual-clock",
+          "at": "2026-09-12T16:47:58.850Z",
+          "explorationDeadline": "2026-09-12T17:18:36Z",
+          "hardDeadline": "2026-09-12T17:23:36Z"
+        }
+      ],
+      "endedAt": "2026-09-12T17:23:36Z",
+      "endReason": "previous run left state after revision 50; recovered by next session"
+    },
+    {
+      "id": "session-20260913T020514Z",
+      "startedAt": "2026-09-13T02:05:14.000Z",
+      "startClockSource": "automation provided local time cross-checked with system clock",
+      "explorationDeadline": "2026-09-13T02:45:14.000Z",
+      "hardDeadline": "2026-09-13T02:50:14.000Z",
+      "timezone": "Asia/Seoul",
+      "baseRevision": 50,
+      "baseVertexCount": 49,
+      "baseEdgeCount": 77,
+      "status": "completed",
+      "createdVertexIds": [
+        "natural-transformations",
+        "ideals-quotient-rings",
+        "monotone-convergence",
+        "union-find",
+        "intuitionistic-logic",
+        "pushforward-measure",
+        "yoneda-lemma",
+        "prime-ideals",
+        "dominated-convergence",
+        "dynamic-connectivity",
+        "kripke-semantics",
+        "radon-nikodym"
+      ],
+      "modifiedVertexIds": [
+        "functors",
+        "rings",
+        "lebesgue-integral",
+        "graphs",
+        "relations",
+        "minimum-spanning-tree",
+        "proofs",
+        "mathematical-intuitionism",
+        "measure",
+        "measurable-functions",
+        "natural-transformations",
+        "ideals-quotient-rings",
+        "monotone-convergence",
+        "union-find",
+        "intuitionistic-logic",
+        "partial-orders"
+      ],
+      "documentCreates": 12,
+      "documentModifies": 19,
+      "lockFileId": "1SHl67_VR3ZdwOY2T1_1KDLDHYXieInNV",
+      "checks": [
+        {
+          "label": "recovery-complete",
+          "at": "2026-09-13T02:15:06.144Z"
+        },
+        {
+          "label": "manual-clock",
+          "at": "2026-09-13T02:16:56.202Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "before-vertex",
+          "at": "2026-09-13T02:17:18.817Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "after-vertex-stage",
+          "at": "2026-09-13T02:17:19.119Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "manual-clock",
+          "at": "2026-09-13T02:18:47.770Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "before-vertex",
+          "at": "2026-09-13T02:19:43.269Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "after-vertex-stage",
+          "at": "2026-09-13T02:19:43.483Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "manual-clock",
+          "at": "2026-09-13T02:21:07.270Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "before-vertex",
+          "at": "2026-09-13T02:22:02.734Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "after-vertex-stage",
+          "at": "2026-09-13T02:22:02.961Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "before-vertex",
+          "at": "2026-09-13T02:24:14.274Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "manual-clock",
+          "at": "2026-09-13T02:24:14.494Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "manual-clock",
+          "at": "2026-09-13T02:25:41.225Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "before-vertex",
+          "at": "2026-09-13T02:26:24.876Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "after-vertex-stage",
+          "at": "2026-09-13T02:26:25.124Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "manual-clock",
+          "at": "2026-09-13T02:27:52.138Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "before-vertex",
+          "at": "2026-09-13T02:30:15.985Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "before-vertex",
+          "at": "2026-09-13T02:30:35.844Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "after-vertex-stage",
+          "at": "2026-09-13T02:30:36.067Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "before-vertex",
+          "at": "2026-09-13T02:32:42.238Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "after-vertex-stage",
+          "at": "2026-09-13T02:32:42.480Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "before-vertex",
+          "at": "2026-09-13T02:34:39.131Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "after-vertex-stage",
+          "at": "2026-09-13T02:34:39.363Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "before-vertex",
+          "at": "2026-09-13T02:36:06.810Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "after-vertex-stage",
+          "at": "2026-09-13T02:36:07.040Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "before-vertex",
+          "at": "2026-09-13T02:37:35.644Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "after-vertex-stage",
+          "at": "2026-09-13T02:37:35.879Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "before-vertex",
+          "at": "2026-09-13T02:39:06.407Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "after-vertex-stage",
+          "at": "2026-09-13T02:39:06.649Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "before-vertex",
+          "at": "2026-09-13T02:40:49.854Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "after-vertex-stage",
+          "at": "2026-09-13T02:40:50.098Z",
+          "explorationDeadline": "2026-09-13T02:45:14.000Z",
+          "hardDeadline": "2026-09-13T02:50:14.000Z"
+        },
+        {
+          "label": "final-validation",
+          "at": "2026-09-13T02:43:00.758Z",
+          "revision": 62,
+          "vertexCount": 61,
+          "edgeCount": 96,
+          "valid": true
+        }
+      ],
+      "endedAt": "2026-09-13T02:43:00.956Z",
+      "endReason": "exploration stopped with finalization time reserved; all staged revisions were persisted and verified",
+      "finalRevision": 62,
+      "finalVertexCount": 61,
+      "finalEdgeCount": 96,
+      "pendingSync": null,
+      "nextTopic": {
+        "id": "adjunctions",
+        "title": "Adjunction",
+        "field": "범주론",
+        "depth": 4,
+        "reason": "Yoneda lemma와 자연변환을 보편 사상의 쌍으로 확장"
+      }
+    },
+    {
+      "id": "session-20260913T034058Z",
+      "startedAt": "2026-09-13T03:40:58.173Z",
+      "startClockSource": "container system clock",
+      "explorationDeadline": "2026-09-13T07:40:58.173Z",
+      "hardDeadline": "2026-09-13T08:40:58.173Z",
+      "timezone": "Asia/Seoul",
+      "baseRevision": 62,
+      "baseVertexCount": 61,
+      "baseEdgeCount": 96,
+      "status": "completed",
+      "agent": "Claude Fable 5.1 orchestrator + Opus 5 sub-agents",
+      "createdVertexIds": [
+        "random-variables",
+        "law-of-large-numbers",
+        "central-limit-theorem",
+        "maximum-likelihood",
+        "hypothesis-testing",
+        "counting-principles",
+        "inclusion-exclusion",
+        "pigeonhole-principle",
+        "generating-functions",
+        "ramsey-theory",
+        "determinants",
+        "eigenvalues",
+        "inner-product-spaces",
+        "spectral-theorem",
+        "singular-value-decomposition",
+        "fields",
+        "polynomial-rings",
+        "field-extensions",
+        "finite-fields",
+        "galois-theory",
+        "first-order-logic",
+        "zfc-axioms",
+        "ordinals",
+        "axiom-of-choice",
+        "godel-incompleteness",
+        "manifolds",
+        "curvature",
+        "fundamental-group",
+        "homology",
+        "euler-characteristic",
+        "linear-programming",
+        "lagrange-duality",
+        "gradient-descent",
+        "ordinary-differential-equations",
+        "holomorphic-functions",
+        "mathematical-platonism",
+        "formalism-hilbert-program",
+        "chinese-remainder-theorem",
+        "fermat-euler-theorem",
+        "markov-chains"
+      ],
+      "modifiedVertexIds": [
+        "proofs",
+        "graphs",
+        "vector-spaces",
+        "limits",
+        "probability",
+        "groups",
+        "metric-spaces",
+        "computability",
+        "partial-orders",
+        "linear-maps",
+        "topology",
+        "banach-fixed-point",
+        "group-actions",
+        "sets",
+        "functions",
+        "convexity",
+        "modular-arithmetic",
+        "derivative",
+        "primes",
+        "fundamental-calculus",
+        "rings",
+        "lebesgue-integral",
+        "ideals-quotient-rings",
+        "pushforward-measure",
+        "prime-ideals",
+        "galois-theory",
+        "inclusion-exclusion"
+      ],
+      "documentCreates": 40,
+      "documentModifies": 27,
+      "checks": [
+        {
+          "label": "before-batch",
+          "at": "2026-09-13T03:57:50.680Z",
+          "explorationDeadline": "2026-09-13T07:40:58.173Z",
+          "hardDeadline": "2026-09-13T08:40:58.173Z"
+        },
+        {
+          "label": "after-batch-stage",
+          "at": "2026-09-13T03:57:51.135Z",
+          "explorationDeadline": "2026-09-13T07:40:58.173Z",
+          "hardDeadline": "2026-09-13T08:40:58.173Z"
+        },
+        {
+          "label": "final-validation",
+          "at": "2026-09-13T04:17:41.164Z",
+          "revision": 64,
+          "vertexCount": 101,
+          "edgeCount": 178,
+          "valid": true
+        }
+      ],
+      "relationOnlyModifies": 25,
+      "contentFixes": [
+        "galois-theory",
+        "inclusion-exclusion"
+      ],
+      "revisions": [
+        63,
+        64
+      ],
+      "finalRevision": 64,
+      "finalVertexCount": 101,
+      "finalEdgeCount": 178,
+      "endedAt": "2026-09-13T04:17:41.163Z",
+      "endReason": "stop condition reached: 40 documents created in one batch; revision 63 persisted and acknowledged, revision 64 fixes persisted in final round",
+      "notes": [
+        "document schema changed to H1 sections 개요/직관/정의/성질/활용 (legacy 61 docs still in old ## format)",
+        "topology.json no longer stores bodies; docs/*.md is the body store",
+        "Drive connector lacks content update; replaced files were trashed and recreated",
+        "sub-agent base64 mirroring proved unreliable; local docs regenerated from topology instead"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+# Galois 이론
+
+# 개요
+
+Galois 이론은 [체의 확대](field-extensions.md)를 [군](groups.md)으로 번역한다. 확대 K/k의 대칭, 즉 k를 고정하는 K의 자기동형들을 모으면 유한군 G가 되고, 적절한 조건(Galois 확대) 아래 K와 k 사이의 중간체들과 G의 부분군들이 서로 일대일로 대응한다. 이 대응은 포함관계를 뒤집으며 차수와 지수를 맞바꾼다.
+
+이 번역이 강력한 이유는 체의 격자가 일반적으로 다루기 어려운 반면 유한군의 부분군 격자는 계산 가능하기 때문이다. 대표적인 결론이 방정식의 가해성이다. 다항식이 거듭제곱근으로 풀린다는 것은 그 Galois 군이 가해군(solvable group)이라는 것과 동치이고, 5차 이상의 일반 방정식은 대칭군이 가해가 아니므로 근의 공식이 없다.
+
+# 직관
+
+Q(√2)의 원소 a+b√2에서 √2를 -√2로 바꾸는 사상은 덧셈과 곱셈을 보존한다. x^2-2의 두 근을 맞바꾸는 이 조작이 확대의 유일한 비자명 대칭이고, 따라서 Galois 군은 위수 2다. 중간체가 없다는 사실이 부분군이 두 개뿐이라는 사실과 짝을 이룬다.
+
+Q(√2,√3)에서는 √2와 √3의 부호를 독립적으로 뒤집을 수 있어 대칭이 네 개다. 부분군 격자와 중간체 격자는 위아래가 뒤집힌 같은 그림이다.
+
+```mermaid
+graph TD
+  subgraph SG["부분군 (위수)"]
+    G4["G, 4"] --> H1["⟨σ⟩, 2"]
+    G4 --> H2["⟨τ⟩, 2"]
+    G4 --> H3["⟨στ⟩, 2"]
+    H1 --> E["1, 1"]
+    H2 --> E
+    H3 --> E
+  end
+  subgraph SF["중간체 (Q 위 차수)"]
+    Q["Q, 1"] --> A["Q(√3), 2"]
+    Q --> B["Q(√2), 2"]
+    Q --> C["Q(√6), 2"]
+    A --> K["Q(√2,√3), 4"]
+    B --> K
+    C --> K
+  end
+```
+
+σ는 √2의 부호만 뒤집는 사상이다. σ가 고정하는 원소는 √3을 포함하므로 σ가 생성하는 부분군의 고정체는 Q(√3)이다. 큰 부분군이 작은 체에 대응한다.
+
+# 정의
+
+K/k를 유한 확대라 하자. k의 모든 원소를 고정하는 K의 체 자기동형 전체는 합성에 대해 군을 이루며, 이를 Aut(K/k)로 쓴다. 부분군 H의 고정체(fixed field)는 H가 움직이지 않는 원소들의 모임이다.
+
+$$
+K^{H}=\{a\in K:\ \sigma(a)=a\ \ \text{for all } \sigma\in H\}
+$$
+
+K/k가 Galois 확대라는 것은 전체 자기동형군의 고정체가 정확히 k라는 뜻이며, 이때 Aut(K/k)를 Galois 군이라 하고 Gal(K/k)로 쓴다.
+
+$$
+K/k \text{ Galois} \iff K^{\operatorname{Aut}(K/k)}=k \iff \lvert\operatorname{Aut}(K/k)\rvert=[K:k]
+$$
+
+동치인 조건은 K가 k 위 어떤 separable 다항식의 분해체라는 것이다. 다항식이 separable이라는 것은 각 기약인수가 중근을 갖지 않는다는 뜻이고, 표수 0이거나 [유한체](finite-fields.md)에서는 기약다항식이 항상 separable이므로 분해체는 곧 Galois 확대다. 표수 p에서 F_p(t) 위의 x^p-t 같은 예는 separable이 아니다.
+
+거듭제곱근 확대(radical extension)는 각 층이 어떤 원소의 n제곱근을 추가해 얻어지는 확대의 탑이다.
+
+$$
+k=K_0\subseteq K_1\subseteq\cdots\subseteq K_r,\qquad K_{i+1}=K_i(\alpha_i),\ \ \alpha_i^{\,n_i}\in K_i
+$$
+
+# 성질
+
+## Galois 군의 작용
+
+Gal(K/k)는 K에 [군 작용](group-actions.md)으로 작용하고, 이 작용은 k[x]에 속한 다항식의 근 집합을 보존한다. σ가 k-자기동형이면 f(σα)=σ(f(α))=0이기 때문이다. 따라서 f의 분해체에 대해 Gal은 근들의 집합에 충실하게 작용하여 대칭군에 단사로 들어간다.
+
+$$
+\operatorname{Gal}(K/k)\hookrightarrow S_n,\qquad n=\deg f
+$$
+
+이 작용이 추이적(transitive)인 것과 f가 k 위 기약인 것이 동치다. 또 α와 β가 같은 기약다항식의 근이면 두 원소는 같은 orbit에 있다. 즉 최소다항식이 orbit의 불변량이다.
+
+## 기본 정리
+
+K/k를 유한 Galois 확대, G=Gal(K/k)라 하자. 다음 두 대응은 서로 역이며, 부분군과 중간체 사이에 포함관계를 뒤집는 일대일 대응을 준다[^1].
+
+$$
+H\longmapsto K^{H},\qquad L\longmapsto \operatorname{Gal}(K/L)
+$$
+
+$$
+[K:K^{H}]=\lvert H\rvert,\qquad [K^{H}:k]=[G:H]
+$$
+
+나아가 부분군 H가 정규부분군인 것과 대응하는 중간체가 k 위 Galois인 것이 동치이고, 이때 자기동형을 그 중간체로 제한하는 사상이 다음 동형을 준다[^1].
+
+$$
+H\trianglelefteq G\iff K^{H}/k \text{ Galois},\qquad \operatorname{Gal}(K^{H}/k)\cong G/H
+$$
+
+증명 개요: 차수 등식은 Artin의 보조정리(유한군 H가 작용하는 체 K에서 K의 H-고정체 위 차수가 |H| 이하)와 선형독립성 논증으로 얻는다. 두 대응이 서로 역임을 보이려면 H의 고정체의 Galois 군이 다시 H라는 것과, 중간체 L의 Galois 군의 고정체가 다시 L이라는 것을 확인하면 된다. 정규성 부분은 H의 켤레 부분군이 고정체의 상에 대응한다는 관찰에서 나온다.
+
+## 예제
+
+Q(√2,√3)/Q는 (x^2-2)(x^2-3)의 분해체이므로 Galois이고 차수가 4다. Galois 군은 부호 뒤집기 두 개가 생성하는 Klein 4-군이다.
+
+$$
+\operatorname{Gal}(\mathbb{Q}(\sqrt2,\sqrt3)/\mathbb{Q})\cong \mathbb{Z}/2\mathbb{Z}\times\mathbb{Z}/2\mathbb{Z}
+$$
+
+부분군이 5개(자명군, 위수 2가 세 개, 전체)이므로 중간체도 정확히 5개다. 진짜 중간체는 Q(√2), Q(√3), Q(√6)뿐이다. abelian 군이므로 모든 부분군이 정규이고, 따라서 모든 중간체가 Q 위 Galois다.
+
+유한체의 경우 Galois 군이 Frobenius가 생성하는 순환군이므로 대응이 특히 단순하다.
+
+$$
+\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)\cong\mathbb{Z}/n\mathbb{Z}
+$$
+
+부분군은 n의 약수 m에 대응하고 그 고정체가 부분체 F_(p^m)이다.
+
+## 가해성
+
+표수 0의 체 k 위 다항식 f가 거듭제곱근으로 풀린다는 것은 f의 분해체의 Galois 군이 가해군이라는 것과 동치다[^2]. 가해군이란 각 몫이 abelian인 정규열을 갖는 군이다.
+
+$$
+1=G_0\trianglelefteq G_1\trianglelefteq\cdots\trianglelefteq G_r=G,\qquad G_{i+1}/G_i \text{ abelian}
+$$
+
+번역의 방향은 명확하다. 거듭제곱근 확대의 탑은 부분군의 사슬을 주고, n제곱근을 추가하는 층이 abelian 몫에 대응한다. 반대 방향은 abelian 몫을 근호로 실현하는 것이며, 이때 1의 원시 n제곱근을 미리 추가해 둔다.
+
+## Abel–Ruffini
+
+S_n은 n ≥ 5에서 가해가 아니다. A_n이 n ≥ 5에서 비가환 단순군이기 때문이다. Galois 군이 S_5인 5차 다항식이 존재하므로(예: x^5-6x+3) 5차 일반 방정식에는 근의 공식이 없다[^2]. 반면 S_4는 가해이므로 4차 이하의 모든 다항식은 근호로 풀린다. 이것이 2·3·4차 근의 공식은 있고 5차부터 없는 이유다.
+
+주의할 점은 이 정리가 "5차 방정식은 풀 수 없다"가 아니라 "계수의 사칙연산과 거듭제곱근만으로 쓴 일반 공식이 없다"라는 진술이라는 것이다. 개별 5차 방정식은 Galois 군이 가해이면 근호로 풀리고, 수치해는 언제나 존재한다.
+
+# 활용
+
+## 작도 문제의 마무리
+
+정n각형이 컴퍼스와 직선자로 작도 가능한 것과 n이 2의 거듭제곱과 서로 다른 Fermat 소수들의 곱인 것이 동치다(Gauss–Wantzel). 1의 n제곱근이 생성하는 원분체의 Galois 군이 Z/nZ의 곱셈군과 동형이라는 사실과, 작도 가능성이 2차 확대 탑과 동치라는 사실을 결합해 얻는다.
+
+## 대수적 수론
+
+Q의 Galois 확대에서 [소수](primes.md)의 분해 양상이 Galois 군의 부분군으로 기술된다. 각 소수에 Frobenius 켤레류가 대응하며, 이것이 class field theory와 Chebotarev 밀도 정리의 출발점이다.
+
+## 계산과 코드
+
+작은 차수 다항식의 Galois 군은 판별식과 resolvent 다항식으로 판정한다. 기약 3차 다항식의 경우 판별식이 유리수체에서 완전제곱인지가 군이 위수 3의 순환군인지 S_3인지를 가른다.
+
+```python
+from sympy import Poly, discriminant
+from sympy.abc import x
+
+for f in [x**3 - 2, x**3 - 3*x - 1]:
+    print(f, discriminant(Poly(f, x)))
+# x**3 - 2        -108  제곱수 아님 -> S_3, 차수 6 분해체
+# x**3 - 3*x - 1    81  제곱수     -> Z/3Z, 차수 3 순환 확대
+```
+
+## 다른 분야로의 이식
+
+"대칭군과 부분대상 격자의 대응"이라는 형태는 위상수학의 피복공간과 [기본군](fundamental-group.md)의 대응, 미분방정식의 미분 Galois 이론 등으로 반복된다. 이 대응들을 한 언어로 묶는 관점이 [범주](category.md)와 Galois 범주다.
+
+[^1]: MathWorld, "Fundamental Theorem of Galois Theory" — 유한 Galois 확대에서 부분군과 중간체의 일대일 대응, 차수와 지수의 관계, 정규부분군과 Galois 중간체의 대응. https://mathworld.wolfram.com/FundamentalTheoremofGaloisTheory.html
+[^2]: M. Mrinal, "Galois theory and the Abel–Ruffini theorem", University of Chicago REU 2019 — 근호 가해성과 Galois 군 가해성의 동치, S_n이 n ≥ 5에서 비가해임, Galois 군이 S_5인 5차 다항식(x^5-6x+3) 예. https://math.uchicago.edu/~may/REU2019/REUPapers/Mrinal.pdf
+
+# 연관 문서
+
+## 선수지식
+
+- [체의 확대](field-extensions.md)
+- [군 작용](group-actions.md)
+
+## 더 알아보기
+
+아직 연결한 문서가 없다.
