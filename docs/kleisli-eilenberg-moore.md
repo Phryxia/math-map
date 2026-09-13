@@ -132,8 +132,6 @@ Beck 의 monadicity 정리가 판정 기준을 준다. `G` 가 left adjoint 를 
 리스트 monad 에서 Kleisli 합성의 법칙과 `T`-대수의 법칙을 각각 확인한다.
 
 ```python
-from itertools import product
-
 # List monad: T(X) = X 의 유한 리스트
 eta = lambda x: [x]
 mu  = lambda xss: [x for xs in xss for x in xs]
