@@ -218,6 +218,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schur 곱셈자와 보편 중심확대](schur-multipliers.md)
 
 #group_theory #algebra
