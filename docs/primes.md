@@ -159,5 +159,6 @@ Diophantus 방정식의 해 존재, 제곱수 판정, 약수 함수의 계산이
 ## 더 알아보기
 
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)
+- [소수 정리와 Riemann zeta 함수](prime-number-theorem.md)
 
 #number_theory
