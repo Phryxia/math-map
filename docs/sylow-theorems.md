@@ -202,6 +202,6 @@ Sylow 정리는 유한군을 소수별 조각으로 나누어 보는 첫 단계�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [유한 단순군 분류](finite-simple-groups.md)
 
 #group_theory #theorem

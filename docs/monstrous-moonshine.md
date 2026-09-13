@@ -2,7 +2,7 @@
 
 # 개요
 
-유한 단순군 분류의 끝에 26 개의 **산재군**(sporadic group)이 남는다. 어떤 무한 계열에도 속하지 않는 예외들이고, 그 중 가장 큰 것이 **괴물군**(Monster) `\mathbb M` 이다. 위수가
+[유한 단순군 분류](finite-simple-groups.md)의 끝에 26 개의 **산재군**(sporadic group)이 남는다. 어떤 무한 계열에도 속하지 않는 예외들이고, 그 중 가장 큰 것이 **괴물군**(Monster) `\mathbb M` 이다. 위수가
 
 $$
 |\mathbb M|=2^{46}3^{20}5^97^611^213^3\cdot17\cdot19\cdot23\cdot29\cdot31\cdot41\cdot47\cdot59\cdot71\approx8\times10^{53}
@@ -270,7 +270,7 @@ Borcherds 의 증명은 이것을 재현 공식을 거쳐 간접적으로 확인
 ## 선수지식
 
 - [theta 급수와 Dedekind eta](theta-functions.md)
-- [군의 표현과 지표](group-representations.md)
+- [유한 단순군 분류](finite-simple-groups.md)
 - [정점작용소대수](vertex-operator-algebras.md)
 
 ## 더 알아보기

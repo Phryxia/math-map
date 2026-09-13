@@ -252,7 +252,7 @@ $$
 
 - [Dirichlet 지표와 L 함수](dirichlet-l-functions.md)
 - [Langlands 강령](langlands-program.md)
-- [괴물 달빛 추측](monstrous-moonshine.md)
+- [유한 단순군 분류](finite-simple-groups.md)
 - [구면조화함수와 SO(3) 의 표현](spherical-harmonics.md)
 
 #group_theory #linear_algebra
