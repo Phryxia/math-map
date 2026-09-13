@@ -181,6 +181,6 @@ for name, dim, g, degK in (("P¹ (g=0)", dim_P1, 0, -2),
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Borel–Weil–Bott 정리와 깃발다양체](borel-weil-bott.md)
 
 #differential_geometry #complex_analysis #theorem
