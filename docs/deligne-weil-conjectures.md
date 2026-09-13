@@ -296,6 +296,6 @@ for i in range(6):
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Sato–Tate 분포](sato-tate.md)
 
 #number_theory #algebraic_topology #theorem #complex_analysis
