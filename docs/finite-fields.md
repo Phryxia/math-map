@@ -158,5 +158,6 @@ F_q 위의 사영평면은 위수 q의 유한사영평면을 주고, 이는 조�
 ## 더 알아보기
 
 - [오류정정부호](error-correcting-codes.md)
+- [타원곡선과 군 구성](elliptic-curves.md)
 
 #field_theory
