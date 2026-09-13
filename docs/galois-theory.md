@@ -162,6 +162,6 @@ for f in [x**3 - 2, x**3 - 3*x - 1]:
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [대수적 수체와 정수환](algebraic-number-fields.md)
 
 #field_theory #group_theory

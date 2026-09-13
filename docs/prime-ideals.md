@@ -155,5 +155,6 @@ for g in range(n):
 
 - [체](fields.md)
 - [환의 국소화](localization-rings.md)
+- [대수적 수체와 정수환](algebraic-number-fields.md)
 
 #ring_theory
