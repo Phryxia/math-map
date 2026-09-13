@@ -262,6 +262,6 @@ print("\n검증 통과")
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schubert 계산과 Grassmann 다양체](schubert-calculus.md)
 
 #algebra #group_theory #differential_geometry #theorem
