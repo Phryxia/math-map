@@ -157,5 +157,6 @@ print(A @ x - b)              # 잔차는 A의 열공간과 직교한다
 - [Hilbert 공간](hilbert-spaces.md)
 - [선형회귀와 최소제곱법](linear-regression.md)
 - [격자와 최단벡터 문제](lattices.md)
+- [근계와 Weyl 군](root-systems.md)
 
 #linear_algebra

@@ -307,6 +307,7 @@ Lie 가 애초에 이 이론을 만든 동기다. 대수방정식의 대칭을 [
 ## 더 알아보기
 
 - [Lie 군과 지수사상](lie-groups.md)
+- [근계와 Weyl 군](root-systems.md)
 - [정점작용소대수](vertex-operator-algebras.md)
 
 #algebra #linear_algebra #group_theory
