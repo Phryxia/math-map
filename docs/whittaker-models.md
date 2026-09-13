@@ -280,6 +280,6 @@ Maass 형식과 `\mathrm{GL}_3` 자기동형 형식의 수치 계산은 Whittake
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Casselman–Shalika 공식](casselman-shalika.md)
 
 #number_theory #group_theory #computation
