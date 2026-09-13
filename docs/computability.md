@@ -117,6 +117,7 @@ Turing machine 의 자원을 제한하면 계산력이 줄어든다. 테이프 �
 
 - [함수](functions.md)
 - [명제와 증명](proofs.md)
+- [가산성과 비가산성](cardinality.md)
 
 ## 더 알아보기
 
