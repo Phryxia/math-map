@@ -292,5 +292,6 @@ for i, b in enumerate(buckets):
 ## 더 알아보기
 
 - [Galois 표현과 에탈 코호몰로지](galois-representations.md)
+- [Godement–Jacquet 적분](godement-jacquet.md)
 
 #number_theory #group_theory #field_theory

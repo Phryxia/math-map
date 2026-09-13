@@ -269,5 +269,6 @@ $$
 ## 더 알아보기
 
 - [Gauss 합과 국소 근 수](gauss-sums.md)
+- [Godement–Jacquet 적분](godement-jacquet.md)
 
 #number_theory #analysis #paper
