@@ -104,6 +104,7 @@ $$
 - [Functor](functors.md)
 - [행렬식](determinants.md)
 - [고윳값과 고유벡터](eigenvalues.md)
+- [Lie 대수](lie-algebras.md)
 - [선형계획법](linear-programming.md)
 - [Markov 연쇄](markov-chains.md)
 - [텐서곱](tensor-products.md)
