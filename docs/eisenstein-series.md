@@ -316,5 +316,6 @@ Eisenstein 급수는 이 구도의 자기동형 형식판이고, Langlands 강�
 ## 더 알아보기
 
 - [Rankin–Selberg 적분](rankin-selberg.md)
+- [Selberg 대각합 공식](selberg-trace-formula.md)
 
 #number_theory #complex_analysis #analysis #computation
