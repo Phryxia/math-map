@@ -240,6 +240,6 @@ MCMC 와 대비하면 성격이 분명해진다. MCMC 는 충분히 오래 돌�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [확산모형](diffusion-models.md)
 
 #machine_learning #statistics #information_theory
