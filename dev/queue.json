@@ -1,24 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-13T17:32:45.918Z",
-  "nextSeq": 99,
+  "savedAt": "2026-09-13T18:15:23.884Z",
+  "nextSeq": 109,
   "items": [
-    {
-      "id": "a53df4e7",
-      "title": "Satake 동형과 비분기 Hecke 대수",
-      "priority": 8,
-      "note": "godement-jacquet 과 hecke-operators 아래. 구형 Hecke 대수가 쌍대군의 표현환과 동형, Satake 매개변수가 나오는 자리. godement-jacquet 이 이것을 쓰는데 문서가 없다",
-      "createdAt": "2026-09-13T17:32:31.519Z",
-      "seq": 97
-    },
-    {
-      "id": "20d1c548",
-      "title": "Rankin-Selberg 적분",
-      "priority": 7,
-      "note": "godement-jacquet 아래. GL_n x GL_m L 함수, Whittaker 모형과 전개, 함수성 판정과 Ramanujan 형 추정의 도구",
-      "createdAt": "2026-09-13T17:32:31.394Z",
-      "seq": 96
-    },
     {
       "id": "4286ed8c",
       "title": "p 진 Hodge 이론 입문",
@@ -52,12 +36,68 @@
       "seq": 98
     },
     {
+      "id": "e620f88a",
+      "title": "Selberg 대각합 공식",
+      "priority": 6,
+      "note": "eisenstein-series 아래. 스펙트럼 쪽과 측지선 쪽, 연속 스펙트럼 기여 phi'/phi, Weyl 법칙과 Maass 형식 세기",
+      "createdAt": "2026-09-13T18:08:04.018Z",
+      "seq": 103
+    },
+    {
+      "id": "485ebe0d",
+      "title": "기하학적 Langlands 강령",
+      "priority": 6,
+      "note": "geometric-satake 아래. Bun_G 위의 층, Hecke 고유층, 국소계와의 대응, Gaitsgory 등의 2024 증명 구조",
+      "createdAt": "2026-09-13T18:14:58.408Z",
+      "seq": 108
+    },
+    {
       "id": "171eb3e6",
       "title": "괴물 달빛 추측",
       "priority": 5,
       "note": "theta-functions 와 group-representations 아래. j 함수의 계수와 Monster 의 기약표현 차원, 정점작용소대수",
       "createdAt": "2026-09-13T16:26:52.046Z",
       "seq": 87
+    },
+    {
+      "id": "de1bc563",
+      "title": "기본 보조정리와 Arthur-Selberg 대각합 공식",
+      "priority": 5,
+      "note": "satake-isomorphism 아래. 내시 군, 궤도적분 맞추기, Satake 동형으로 정의되는 기본 사상 b, Ngo 의 Hitchin 올뭉치 증명 개요",
+      "createdAt": "2026-09-13T17:57:38.245Z",
+      "seq": 100
+    },
+    {
+      "id": "f7984716",
+      "title": "Maass 형식과 Laplace 스펙트럼",
+      "priority": 5,
+      "note": "eisenstein-series 아래. 무게 0 실해석적 고유형식, Selberg 1/4 추측, Ramanujan 의 아르키메데스 판",
+      "createdAt": "2026-09-13T18:08:04.140Z",
+      "seq": 104
+    },
+    {
+      "id": "2ea4d8a4",
+      "title": "Casselman-Shalika 공식과 Schur 다항식",
+      "priority": 5,
+      "note": "whittaker-models 아래. 비분기 Whittaker 값이 Schur 다항식, Cauchy 항등식이 국소 L 인자를 주는 계산, Gelfand-Tsetlin 쪽 결합론",
+      "createdAt": "2026-09-13T18:11:47.241Z",
+      "seq": 105
+    },
+    {
+      "id": "fb0e4674",
+      "title": "MV 순환과 결정 기저",
+      "priority": 5,
+      "note": "geometric-satake 아래. 반무한 낟가리, MV 다면체, Kostant 분할 함수와 Littelmann 경로의 기하적 실현",
+      "createdAt": "2026-09-13T18:14:58.292Z",
+      "seq": 107
+    },
+    {
+      "id": "2b9ec335",
+      "title": "Gan-Gross-Prasad 추측",
+      "priority": 4,
+      "note": "whittaker-models 아래. 고전군의 중복도 1 현상, 분지 법칙과 주기, L 매개변수로 기술되는 중복도 공식",
+      "createdAt": "2026-09-13T18:11:47.369Z",
+      "seq": 106
     }
   ]
 }
