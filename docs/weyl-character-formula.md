@@ -330,5 +330,6 @@ Peter–Weyl 이 준 `L^2(G)` 의 분해에서 각 조각의 크기가 `(\dim V_
 
 - [Borel–Weil–Bott 정리와 깃발다양체](borel-weil-bott.md)
 - [Schur 다항식과 대칭함수](schur-polynomials.md)
+- [MV 순환과 무게 기저의 기하](mv-cycles.md)
 
 #algebra #group_theory #combinatorics #theorem
