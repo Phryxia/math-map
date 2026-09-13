@@ -163,5 +163,6 @@ Feynman–Kac 공식은 포물형 편미분방정식의 해를 확산 과정의 
 
 - [Girsanov 정리](girsanov.md)
 - [확산모형](diffusion-models.md)
+- [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)
 
 #probability #analysis

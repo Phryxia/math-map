@@ -256,5 +256,6 @@ WGAN 은 판별자를 1-Lipschitz 로 제한해 `W_1` 의 쌍대해를 근사하
 
 - [흐름 정합](flow-matching.md)
 - [Sinkhorn 알고리즘과 엔트로피 정규화](sinkhorn.md)
+- [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)
 
 #optimization #probability #measure_theory #machine_learning
