@@ -4,6 +4,7 @@
 
 ## 0. 원칙
 
+- 사고 과정과 아이겐에게 보이는 응답을 모두 한국어로 쓴다. 저장소가 한국어 지식 그래프이므로 생각도 한국어로 한다.
 - 문서는 git으로 관리한다. `docs/` 아래 문서를 삽입, 수정, 삭제할 수 있다. git commit과 push를 해야 반영된다.
 - 작업 브랜치는 항상 `claude/math` 다. 다른 브랜치로 push 하지 않는다.
 - 아이겐(저장소 주인)이 언제든 문서를 고쳐 커밋할 수 있다. 세션 시작 시 pull 하고, push 직전에 다시 pull 한 뒤 push 한다.
@@ -16,7 +17,7 @@
 
 ```bash
 git fetch origin claude/math && git checkout claude/math && git pull origin claude/math
-node dev/timer.mjs start            # 60분 타이머
+node dev/timer.mjs start --minutes 40   # 40분 타이머. 회차가 겹치지 않게 짧게 잡는다
 node dev/queue.mjs list             # 큐 서버 자동 기동 + 지난 회차 큐 복원
 node dev/graph.mjs validate         # 깨진 링크, 비대칭 간선, 파싱 문제
 node dev/graph.mjs tags             # 태그 분포
