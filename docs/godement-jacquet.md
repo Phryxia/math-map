@@ -309,6 +309,6 @@ for p in PR[:4]:
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Satake 동형과 비분기 Hecke 대수](satake-isomorphism.md)
 
 #number_theory #analysis #group_theory #computation

@@ -295,6 +295,6 @@ print(f"U_2 의 특성다항식 : X^2 - ({a[2]})X + 2  →  판별식 {a[2]**2 -
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Satake 동형과 비분기 Hecke 대수](satake-isomorphism.md)
 
 #number_theory #complex_analysis #linear_algebra
