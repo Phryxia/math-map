@@ -159,6 +159,6 @@ print(len(sc_greedy(U, S)), len(sc_opt(U, S)), round(math.log(16), 3))
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [LP 완화와 반올림](lp-rounding.md)
 
 #complexity #algorithms
