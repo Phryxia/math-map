@@ -264,6 +264,6 @@ for N in (2**3 * 3**2 * 5, 2**4 * 3**2 * 5 * 7):
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [논문: Fourier Analysis in Number Fields and Hecke's Zeta-Functions](tate-thesis.md)
 
 #number_theory #field_theory #analysis

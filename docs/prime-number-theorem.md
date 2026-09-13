@@ -235,5 +235,6 @@ Dirichlet 지표로 `L` 함수를 만들면 같은 방법이 산술수열의 소
 ## 더 알아보기
 
 - [Dirichlet 지표와 L 함수](dirichlet-l-functions.md)
+- [논문: Fourier Analysis in Number Fields and Hecke's Zeta-Functions](tate-thesis.md)
 
 #number_theory #complex_analysis #theorem
