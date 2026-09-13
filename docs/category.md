@@ -124,5 +124,6 @@ print("mono = 단사")
 
 - [Functor](functors.md)
 - [구조적 집합론과 동형 불변성](structural-set-theory.md)
+- [기하학적 Satake 대응](geometric-satake.md)
 
 #category_theory

@@ -441,5 +441,6 @@ LMFDB 의 자기동형 형식 표가 저장하는 것은 사실상 Satake 매개
 ## 더 알아보기
 
 - [Rankin–Selberg 적분](rankin-selberg.md)
+- [기하학적 Satake 대응](geometric-satake.md)
 
 #number_theory #group_theory #algebra #computation
