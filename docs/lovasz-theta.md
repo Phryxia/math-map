@@ -206,6 +206,6 @@ Bell 부등식의 고전 한계가 `\alpha`, 양자 한계가 `\vartheta`, 상�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [완전그래프와 강한 완전그래프 정리](perfect-graphs.md)
 
 #optimization #graph_theory #information_theory
