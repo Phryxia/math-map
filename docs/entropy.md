@@ -54,5 +54,6 @@ entropy는 메시지의 의미나 중요도를 직접 재지 않는다. 무엇�
 ## 더 알아보기
 
 - [KL divergence와 상호정보량](kl-divergence.md)
+- [무손실 부호화 정리](source-coding.md)
 
 #information_theory
