@@ -285,6 +285,6 @@ for eps in (0.1, 0.01, 0.005, 0.002, 0.001):
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [불균형 최적 수송](unbalanced-optimal-transport.md)
 
 #optimization #machine_learning #information_theory
