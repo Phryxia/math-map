@@ -161,6 +161,6 @@ Feynman–Kac 공식은 포물형 편미분방정식의 해를 확산 과정의 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Girsanov 정리](girsanov.md)
 
 #probability #analysis
