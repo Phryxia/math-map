@@ -220,6 +220,7 @@ Ramanujan 의 mock theta 함수는 오랫동안 고립된 호기심이었다. Zw
 
 - [괴물 달빛 추측](monstrous-moonshine.md)
 - [Mathieu 군과 Golay 부호](mathieu-groups.md)
+- [Niemeier 격자와 24 차원 분류](niemeier-lattices.md)
 
 ## 더 알아보기
 
