@@ -169,5 +169,6 @@ print(b0, b1)                              # 1 1  -> 원과 같은 Betti 수
 
 - [Euler 지표](euler-characteristic.md)
 - [de Rham 코호몰로지](de-rham-cohomology.md)
+- [Galois 표현과 에탈 코호몰로지](galois-representations.md)
 
 #algebraic_topology

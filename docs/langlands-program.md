@@ -289,6 +289,6 @@ for i, b in enumerate(buckets):
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Galois 표현과 에탈 코호몰로지](galois-representations.md)
 
 #number_theory #group_theory #field_theory
