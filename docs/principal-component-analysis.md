@@ -168,5 +168,6 @@ print(round(lam1 / (lam1 + lam2), 4))          # 0.959  첫 성분이 설명하�
 ## 더 알아보기
 
 - [커널 PCA](kernel-pca.md)
+- [확률적 PCA](probabilistic-pca.md)
 
 #linear_algebra #statistics
