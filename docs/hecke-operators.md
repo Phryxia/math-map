@@ -295,6 +295,7 @@ print(f"U_2 의 특성다항식 : X^2 - ({a[2]})X + 2  →  판별식 {a[2]**2 -
 
 ## 더 알아보기
 
+- [Maass 형식과 Laplace 스펙트럼](maass-forms.md)
 - [Satake 동형과 비분기 Hecke 대수](satake-isomorphism.md)
 - [모듈러 기호](modular-symbols.md)
 
