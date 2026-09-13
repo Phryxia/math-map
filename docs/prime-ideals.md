@@ -155,6 +155,6 @@ for g in range(n):
 
 - [체](fields.md)
 - [환의 국소화](localization-rings.md)
-- [대수적 수체와 정수환](algebraic-number-fields.md)
+- [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md)
 
 #ring_theory

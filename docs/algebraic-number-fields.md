@@ -245,7 +245,7 @@ Kummer 자신이 대안을 내놓았다. `p` 가 유수를 나누지 않는 정�
 
 ## 선수지식
 
-- [소 아이디얼과 극대 아이디얼](prime-ideals.md)
+- [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md)
 - [Galois 이론](galois-theory.md)
 
 ## 더 알아보기
