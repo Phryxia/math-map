@@ -265,5 +265,6 @@ for N in (2**3 * 3**2 * 5, 2**4 * 3**2 * 5 * 7):
 ## 더 알아보기
 
 - [논문: Fourier Analysis in Number Fields and Hecke's Zeta-Functions](tate-thesis.md)
+- [Brauer 군과 Hasse 원리](brauer-groups.md)
 
 #number_theory #field_theory #analysis

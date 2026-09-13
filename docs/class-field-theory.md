@@ -302,5 +302,6 @@ Langlands 강령은 `n\ge2` 에서도 같은 일이 일어난다고 예측한다
 - [Langlands 강령](langlands-program.md)
 - [Chebotarev 밀도 정리](chebotarev.md)
 - [국소 유체론과 Lubin–Tate 형식군](local-class-field-theory.md)
+- [Brauer 군과 Hasse 원리](brauer-groups.md)
 
 #number_theory #field_theory #theorem
