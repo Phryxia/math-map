@@ -275,6 +275,6 @@ Borcherds 의 증명은 이것을 재현 공식을 거쳐 간접적으로 확인
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Umbral moonshine 과 Mathieu 달빛](umbral-moonshine.md)
 
 #number_theory #group_theory #complex_analysis

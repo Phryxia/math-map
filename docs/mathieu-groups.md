@@ -186,6 +186,6 @@ Leech 격자의 자기동형군이 Conway 군 `\mathrm{Co}_0` 이고, 그 몫과
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Umbral moonshine 과 Mathieu 달빛](umbral-moonshine.md)
 
 #group_theory #combinatorics #information_theory
