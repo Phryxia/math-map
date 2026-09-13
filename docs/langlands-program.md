@@ -284,6 +284,7 @@ for i, b in enumerate(buckets):
 
 - [유체론](class-field-theory.md)
 - [군의 표현과 지표](group-representations.md)
+- [모듈러 형식](modular-forms.md)
 - [타원곡선과 군 구성](elliptic-curves.md)
 
 ## 더 알아보기

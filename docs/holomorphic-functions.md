@@ -148,6 +148,7 @@ print(np.sum(dz / z))  # 약 6.2832j
 ## 더 알아보기
 
 - [Laurent 급수와 유수 정리](residue-theorem.md)
+- [모듈러 형식](modular-forms.md)
 - [Kähler 다양체와 Hodge 분해](kahler-manifolds.md)
 
 #complex_analysis
