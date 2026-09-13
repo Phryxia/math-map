@@ -203,5 +203,6 @@ print(mean_var(sample))
 - [조건부 기댓값](conditional-expectation.md)
 - [집중부등식](concentration-inequalities.md)
 - [Bayes 추론과 사후분포](bayesian-inference.md)
+- [주성분 분석](principal-component-analysis.md)
 
 #probability

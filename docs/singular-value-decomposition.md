@@ -150,6 +150,6 @@ print(np.sqrt((s[k:] ** 2).sum()))
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [주성분 분석](principal-component-analysis.md)
 
 #linear_algebra
