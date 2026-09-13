@@ -220,6 +220,7 @@ show("정육면체  ", VC, FC)
 ## 선수지식
 
 - [Hodge 이론과 조화형식](hodge-theory.md)
+- [Fredholm 작용소와 지표](fredholm-operators.md)
 - [Gauss–Bonnet 정리](gauss-bonnet.md)
 
 ## 더 알아보기
