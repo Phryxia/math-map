@@ -1,87 +1,63 @@
 {
   "version": 1,
-  "savedAt": "2026-09-13T15:34:26.432Z",
-  "nextSeq": 80,
+  "savedAt": "2026-09-13T16:36:28.839Z",
+  "nextSeq": 90,
   "items": [
     {
-      "id": "40bbdfb4",
-      "title": "langlands-program 부모 4개 검토",
-      "priority": 40,
-      "note": "modular-forms 추가로 부모가 넷(class-field-theory/group-representations/modular-forms/elliptic-curves). 넷이 서로 조상 관계가 아니라 규칙상 뺄 것이 없고 넷 다 본문에서 쓰임. 아이겐 판단 필요 — 내가 임의로 줄이지 않음",
-      "createdAt": "2026-09-13T15:08:42.597Z",
-      "seq": 68
-    },
-    {
-      "id": "ffdf6390",
-      "title": "Tate 논문과 zeta 적분",
-      "priority": 10,
-      "note": "adeles 아래. 아델 Fourier 해석, Poisson 합공식, ζ_K 의 함수방정식을 이델 위 적분으로",
-      "createdAt": "2026-09-13T15:29:45.769Z",
-      "seq": 69
-    },
-    {
-      "id": "2c913df6",
-      "title": "국소 유체론과 Lubin-Tate",
-      "priority": 10,
-      "note": "p-adic-numbers 와 class-field-theory 아래. K_v^× → Gal(K_v^ab/K_v), 형식군으로 명시적 구성",
-      "createdAt": "2026-09-13T15:29:45.892Z",
-      "seq": 70
-    },
-    {
-      "id": "569dceba",
-      "title": "Hecke 작용소와 모듈러 곡선",
+      "id": "a5b5b18e",
+      "title": "Weil 추측 : Dwork 의 유리성과 지수합",
       "priority": 8,
-      "note": "modular-forms 아래. X_0(N), 이중 잉여류, Petersson 내적, 새형식 이론",
-      "createdAt": "2026-09-13T15:29:46.168Z",
-      "seq": 72
+      "note": "galois-representations 와 p-adic-numbers 아래. galois-representations 문서가 추측의 진술과 곡선 사례를 이미 다루므로, 새 문서는 Dwork 의 p 진 해석적 유리성 증명과 Kloosterman/Gauss 지수합 추정에 범위를 한정할 것",
+      "createdAt": "2026-09-13T16:30:08.525Z",
+      "seq": 88
     },
     {
-      "id": "827687dc",
-      "title": "Sinkhorn 알고리즘과 엔트로피 정규화",
-      "priority": 8,
-      "note": "optimal-transport 아래. 볼록쌍대, 수렴 증명, 로그영역 구현, Sinkhorn 발산",
-      "createdAt": "2026-09-13T15:29:46.287Z",
-      "seq": 73
+      "id": "68b4b615",
+      "title": "Godement–Jacquet 적분",
+      "priority": 6,
+      "note": "tate-thesis 와 langlands-program 아래. GL_n 행렬 계수 zeta 적분, 표준 L 함수의 해석적 접속",
+      "createdAt": "2026-09-13T15:56:57.138Z",
+      "seq": 81
     },
     {
-      "id": "14d963d7",
-      "title": "Wasserstein 기울기 흐름",
-      "priority": 8,
-      "note": "optimal-transport 와 diffusion-models 아래. Otto 미적분, JKO 스킴, Fokker-Planck 를 자유에너지 경사하강으로",
-      "createdAt": "2026-09-13T15:29:46.406Z",
-      "seq": 74
+      "id": "4286ed8c",
+      "title": "p 진 Hodge 이론 입문",
+      "priority": 6,
+      "note": "local-class-field-theory 아래. Fontaine 주기환 B_dR/B_cris, 결정/반안정 표현, Lubin-Tate 탑 위의 φ-가군",
+      "createdAt": "2026-09-13T16:01:30.860Z",
+      "seq": 82
     },
     {
-      "id": "3feb179d",
-      "title": "Brauer 군과 Hasse 원리",
-      "priority": 8,
-      "note": "class-field-theory 와 adeles 아래. 중심단순대수, 국소 불변량의 합이 0, Brauer-Manin 장애",
-      "createdAt": "2026-09-13T15:29:46.527Z",
-      "seq": 75
+      "id": "b2615792",
+      "title": "불균형 최적 수송",
+      "priority": 6,
+      "note": "sinkhorn 아래. 주변분포 제약을 KL 벌점으로 완화, 스케일링 반복의 일반형, Hellinger-Kantorovich",
+      "createdAt": "2026-09-13T16:14:24.509Z",
+      "seq": 84
     },
     {
-      "id": "d664574b",
-      "title": "Weil 추측과 유한체 위의 다양체",
-      "priority": 8,
-      "note": "galois-representations 아래. Dwork 의 유리성, Deligne 의 Riemann 가설, 지수합 추정",
-      "createdAt": "2026-09-13T15:29:46.670Z",
-      "seq": 76
+      "id": "db3ca761",
+      "title": "Selmer 군과 Tate-Shafarevich 군",
+      "priority": 6,
+      "note": "brauer-groups 와 elliptic-curves 아래. 하강, 주동차공간, Sha 의 원소가 Hasse 원리를 깨는 곡선",
+      "createdAt": "2026-09-13T16:20:54.960Z",
+      "seq": 85
     },
     {
-      "id": "5f33a368",
-      "title": "Dedekind eta 와 theta 함수",
-      "priority": 8,
-      "note": "modular-forms 와 partitions 아래. 변환식, 격자의 theta 급수, E8 과 Leech",
-      "createdAt": "2026-09-13T15:29:46.804Z",
-      "seq": 77
+      "id": "59a47a55",
+      "title": "모듈러 기호",
+      "priority": 6,
+      "note": "modular-curves 아래. 첨점 경로의 호몰로지류, Manin 기호와 삼항관계, Hecke 행렬의 정수 계산, 새형식 열거",
+      "createdAt": "2026-09-13T16:36:19.898Z",
+      "seq": 89
     },
     {
-      "id": "cbb598a3",
-      "title": "Fredholm 작용소와 지표",
-      "priority": 8,
-      "note": "index-theorem 과 bounded-operators 아래. Fredholm 대체정리, 지표의 호모토피 불변성, Toeplitz 작용소",
-      "createdAt": "2026-09-13T15:29:46.930Z",
-      "seq": 78
+      "id": "171eb3e6",
+      "title": "괴물 달빛 추측",
+      "priority": 5,
+      "note": "theta-functions 와 group-representations 아래. j 함수의 계수와 Monster 의 기약표현 차원, 정점작용소대수",
+      "createdAt": "2026-09-13T16:26:52.046Z",
+      "seq": 87
     }
   ]
 }
