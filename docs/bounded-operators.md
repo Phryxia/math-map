@@ -181,6 +181,6 @@ Sturm–Liouville 문제의 고유함수 전개가 이 구조의 고전적 사�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [비유계 작용소와 Stone 정리](unbounded-operators.md)
 
 #functional_analysis #analysis #linear_algebra
