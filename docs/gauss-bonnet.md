@@ -163,5 +163,6 @@ print(round(defect_sum(W), 10))                                # 12.5663706144 �
 ## 더 알아보기
 
 - [Poincaré–Hopf 정리](poincare-hopf.md)
+- [지표 정리](index-theorem.md)
 
 #differential_geometry #topology #theorem
