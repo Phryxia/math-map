@@ -237,6 +237,6 @@ Hardy–Ramanujan 점근식의 비율이 `n=400` 에서도 `1.02` 다. 수렴이
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dyson 의 rank 와 crank](dyson-rank-crank.md)
 
 #combinatorics #number_theory #complex_analysis
