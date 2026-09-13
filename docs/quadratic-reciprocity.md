@@ -235,5 +235,6 @@ Jacobi 기호가 쉽게 계산되는데 제곱잉여인지는 인수분해 없�
 ## 더 알아보기
 
 - [Dirichlet 지표와 L 함수](dirichlet-l-functions.md)
+- [유체론](class-field-theory.md)
 
 #number_theory #theorem #field_theory
