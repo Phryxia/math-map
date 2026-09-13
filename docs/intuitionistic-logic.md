@@ -57,5 +57,6 @@ $$
 ## 더 알아보기
 
 - [직관주의 논리의 Kripke 의미론](kripke-semantics.md)
+- [Curry–Howard 대응](curry-howard.md)
 
 #logic

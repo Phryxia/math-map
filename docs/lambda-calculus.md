@@ -231,6 +231,6 @@ print(to_int(Z(church_fact_body)(of_int(5))))
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Curry–Howard 대응](curry-howard.md)
 
 #computation #logic
