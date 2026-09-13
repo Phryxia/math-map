@@ -224,6 +224,6 @@ show("정육면체  ", VC, FC)
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Riemann–Roch 정리](riemann-roch.md)
 
 #differential_geometry #algebraic_topology #theorem
