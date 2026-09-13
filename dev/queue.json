@@ -1,15 +1,55 @@
 {
   "version": 1,
-  "savedAt": "2026-09-13T19:19:53.550Z",
-  "nextSeq": 120,
+  "savedAt": "2026-09-13T20:18:51.995Z",
+  "nextSeq": 134,
   "items": [
     {
-      "id": "171eb3e6",
-      "title": "괴물 달빛 추측",
-      "priority": 5,
-      "note": "theta-functions 와 group-representations 아래. j 함수의 계수와 Monster 의 기약표현 차원, 정점작용소대수",
-      "createdAt": "2026-09-13T16:26:52.046Z",
-      "seq": 87
+      "id": "c2691282",
+      "title": "Weyl 지표 공식과 최고무게 이론",
+      "priority": 9,
+      "note": "root-systems 와 peter-weyl 아래. 지배적 정수 무게로 기약표현 분류, 교대합 공식, Weyl 차원 공식, Kostant 중복도",
+      "createdAt": "2026-09-13T20:18:36.707Z",
+      "seq": 132
+    },
+    {
+      "id": "d714e813",
+      "title": "Mathieu 달빛과 umbral moonshine",
+      "priority": 8,
+      "note": "monstrous-moonshine 아래. K3 타원 종수, M_24, 23 개 Niemeier 격자로의 확장, Duncan-Griffin-Ono 존재 증명",
+      "createdAt": "2026-09-13T19:55:58.017Z",
+      "seq": 122
+    },
+    {
+      "id": "1d489f2c",
+      "title": "Niemeier 격자와 24 차원 분류",
+      "priority": 8,
+      "note": "theta-functions 와 sphere-packing 아래. 24 개 짝수 유니모듈러 격자, 근계로 붙인 이름, umbral moonshine 의 색인",
+      "createdAt": "2026-09-13T19:55:58.113Z",
+      "seq": 123
+    },
+    {
+      "id": "29fb11e9",
+      "title": "Zhu 대수와 모듈러 불변성 증명",
+      "priority": 8,
+      "note": "vertex-operator-algebras 아래. C_2-여유한 조건, Zhu 대수 A(V) 와 기약가군 분류, 지표의 SL_2(Z) 표현 증명 개요",
+      "createdAt": "2026-09-13T20:03:15.022Z",
+      "seq": 127
+    },
+    {
+      "id": "fc36dc5f",
+      "title": "모듈러 텐서범주와 3차원 TQFT",
+      "priority": 8,
+      "note": "vertex-operator-algebras 와 category-theory 계열 아래. 꼬임과 S 행렬, Verlinde 공식, Chern-Simons 와 매듭 불변량",
+      "createdAt": "2026-09-13T20:03:15.133Z",
+      "seq": 128
+    },
+    {
+      "id": "e0f10499",
+      "title": "Schur 곱셈자와 보편 중심확대",
+      "priority": 7,
+      "note": "group-extensions 아래. 완전군의 보편 중심확대, H_2(G,Z), ATLAS 의 2.A_n 표기, 산재군 덮개",
+      "createdAt": "2026-09-13T20:18:36.796Z",
+      "seq": 133
     },
     {
       "id": "de1bc563",
