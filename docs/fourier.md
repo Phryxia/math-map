@@ -167,6 +167,6 @@ DFT 는 순환군 `ℤ/Nℤ` 위의 Fourier 변환이다. 지수함수 `t ↦ ω
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [고속 Fourier 변환과 합성곱](fft.md)
 
 #analysis #algorithms
