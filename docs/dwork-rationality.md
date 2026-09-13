@@ -470,5 +470,6 @@ print("비교 : exp(x) 의 1/5! = 1/120 은 분모에 5 가 있다")
 ## 더 알아보기
 
 - [Kedlaya 알고리즘과 p 진 점 세기](kedlaya-algorithm.md)
+- [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)
 
 #number_theory #analysis #theorem #computation
