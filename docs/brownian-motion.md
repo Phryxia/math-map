@@ -180,6 +180,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Itô 적분과 확률미분방정식](ito-calculus.md)
 
 #probability #construction
