@@ -154,5 +154,6 @@ $$
 - [중국인의 나머지 정리](chinese-remainder-theorem.md)
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)
 - [유한체](finite-fields.md)
+- [p 진수와 부치](p-adic-numbers.md)
 
 #number_theory
