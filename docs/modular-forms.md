@@ -304,6 +304,7 @@ Ramanujan 의 합동 `p(5n+4)\equiv0\pmod5`, `p(7n+5)\equiv0\pmod7`, `p(11n+6)\e
 - [Hecke 작용소와 새형식](hecke-operators.md)
 - [theta 급수와 Dedekind eta](theta-functions.md)
 - [모듈러 곡선 X_0(N)](modular-curves.md)
+- [정점작용소대수](vertex-operator-algebras.md)
 - [Eisenstein 급수와 스펙트럼 분해](eisenstein-series.md)
 
 #number_theory #complex_analysis #group_theory

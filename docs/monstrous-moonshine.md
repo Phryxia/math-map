@@ -22,7 +22,7 @@ $$
 21493760=1+196883+21296876
 $$
 
-우연이 아니었다. **괴물 달빛**(monstrous moonshine)은 이 대응이 `\mathbb M` 의 원소 전체로 확장된다는 Conway–Norton (1979) 의 추측이고, Borcherds 가 1992 년에 증명했다. 다리를 놓은 것은 [theta 급수](theta-functions.md)에서 예고한 대로 Leech 격자에서 만든 **정점작용소대수** `V^\natural` 다. 이 무한차원 등급 벡터공간은 `\mathbb M` 의 표현이면서 동시에 등급 차원의 생성함수가 `j-744` 다. 증명의 결정적 도구는 여기서 만든 무한차원 [Lie 대수](lie-algebras.md)이고, 그 분모 공식이 `j` 의 계수들을 서로 묶는다.
+우연이 아니었다. **괴물 달빛**(monstrous moonshine)은 이 대응이 `\mathbb M` 의 원소 전체로 확장된다는 Conway–Norton (1979) 의 추측이고, Borcherds 가 1992 년에 증명했다. 다리를 놓은 것은 [theta 급수](theta-functions.md)에서 예고한 대로 Leech 격자에서 만든 [정점작용소대수](vertex-operator-algebras.md) `V^\natural` 다. 이 무한차원 등급 벡터공간은 `\mathbb M` 의 표현이면서 동시에 등급 차원의 생성함수가 `j-744` 다. 증명의 결정적 도구는 여기서 만든 무한차원 Lie 대수이고, 그 분모 공식이 `j` 의 계수들을 서로 묶는다.
 
 `moonshine` 은 Conway 가 고른 단어다. 밀주라는 뜻과 달빛이라는 뜻이 겹쳐 있고, "달빛에 홀린 헛소리처럼 보이지만 실체가 있다" 는 당시의 분위기를 그대로 담았다.
 
@@ -271,7 +271,7 @@ Borcherds 의 증명은 이것을 재현 공식을 거쳐 간접적으로 확인
 
 - [theta 급수와 Dedekind eta](theta-functions.md)
 - [군의 표현과 지표](group-representations.md)
-- [Lie 대수](lie-algebras.md)
+- [정점작용소대수](vertex-operator-algebras.md)
 
 ## 더 알아보기
 
