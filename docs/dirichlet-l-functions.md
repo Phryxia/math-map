@@ -253,6 +253,6 @@ Langlands 강령은 이 모든 `L` 함수가 자기동형 표현에서 오는 `L
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Chebotarev 밀도 정리](chebotarev.md)
 
 #number_theory #complex_analysis #group_theory

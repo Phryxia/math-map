@@ -300,5 +300,6 @@ Langlands 강령은 `n\ge2` 에서도 같은 일이 일어난다고 예측한다
 ## 더 알아보기
 
 - [Langlands 강령](langlands-program.md)
+- [Chebotarev 밀도 정리](chebotarev.md)
 
 #number_theory #field_theory #theorem
