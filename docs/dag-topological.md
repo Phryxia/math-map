@@ -54,6 +54,6 @@ DAG에서 같거나 경로로 도달 가능하다는 관계는 부분순서다. 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [동적 계획법](dynamic-programming.md)
 
 #graph_theory #algorithms
