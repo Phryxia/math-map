@@ -299,6 +299,6 @@ Langlands 강령은 `n\ge2` 에서도 같은 일이 일어난다고 예측한다
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Langlands 강령](langlands-program.md)
 
 #number_theory #field_theory #theorem

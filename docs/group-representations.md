@@ -251,5 +251,6 @@ $$
 ## 더 알아보기
 
 - [Dirichlet 지표와 L 함수](dirichlet-l-functions.md)
+- [Langlands 강령](langlands-program.md)
 
 #group_theory #linear_algebra
