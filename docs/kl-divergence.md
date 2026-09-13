@@ -228,5 +228,6 @@ for t in (0.5, 0.6, 0.7, 0.8):
 ## 더 알아보기
 
 - [변분 오토인코더](variational-autoencoder.md)
+- [Sinkhorn 알고리즘과 엔트로피 정규화](sinkhorn.md)
 
 #information_theory
