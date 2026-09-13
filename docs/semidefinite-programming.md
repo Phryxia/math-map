@@ -159,6 +159,6 @@ SDP 는 LP 보다 훨씬 비싸다. 변수 개수가 `n^2` 규모이고 내점�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lovász 세타 함수](lovasz-theta.md)
 
 #optimization #algorithms #complexity

@@ -285,6 +285,6 @@ print(chromatic_polynomial(4, [(0, 1), (1, 2), (2, 3), (0, 3)]))
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lovász 세타 함수](lovasz-theta.md)
 
 #graph_theory
