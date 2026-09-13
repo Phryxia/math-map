@@ -148,6 +148,6 @@ assert bind([4, 6], divisors) == [1, 2, 4, 1, 2, 3, 6]
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kleisli 범주와 Eilenberg–Moore 범주](kleisli-eilenberg-moore.md)
 
 #category_theory #construction
