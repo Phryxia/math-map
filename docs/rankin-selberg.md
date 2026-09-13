@@ -359,6 +359,6 @@ Kim 과 Shahidi 가 2002 년에 `\mathrm{Sym}^3`, Kim 이 `\mathrm{Sym}^4` 의 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Whittaker 모형과 중복도 1](whittaker-models.md)
 
 #number_theory #analysis #group_theory #computation
