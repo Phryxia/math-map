@@ -130,7 +130,6 @@ print(pre(set()), pre({"a"}) & pre(set()))   # set() set()   역상은 보존한
 - [군](groups.md)
 - [거리 공간](metric-spaces.md)
 - [계산 가능성과 정지 문제](computability.md)
-- [그래프 동형](graph-isomorphism.md)
 - [범주](category.md)
 - [가산성과 비가산성](cardinality.md)
 - [셈의 기본 원리](counting-principles.md)
