@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "savedAt": "2026-09-13T16:36:28.839Z",
-  "nextSeq": 90,
+  "savedAt": "2026-09-13T17:32:45.918Z",
+  "nextSeq": 99,
   "items": [
     {
-      "id": "a5b5b18e",
-      "title": "Weil 추측 : Dwork 의 유리성과 지수합",
+      "id": "a53df4e7",
+      "title": "Satake 동형과 비분기 Hecke 대수",
       "priority": 8,
-      "note": "galois-representations 와 p-adic-numbers 아래. galois-representations 문서가 추측의 진술과 곡선 사례를 이미 다루므로, 새 문서는 Dwork 의 p 진 해석적 유리성 증명과 Kloosterman/Gauss 지수합 추정에 범위를 한정할 것",
-      "createdAt": "2026-09-13T16:30:08.525Z",
-      "seq": 88
+      "note": "godement-jacquet 과 hecke-operators 아래. 구형 Hecke 대수가 쌍대군의 표현환과 동형, Satake 매개변수가 나오는 자리. godement-jacquet 이 이것을 쓰는데 문서가 없다",
+      "createdAt": "2026-09-13T17:32:31.519Z",
+      "seq": 97
     },
     {
-      "id": "68b4b615",
-      "title": "Godement–Jacquet 적분",
-      "priority": 6,
-      "note": "tate-thesis 와 langlands-program 아래. GL_n 행렬 계수 zeta 적분, 표준 L 함수의 해석적 접속",
-      "createdAt": "2026-09-13T15:56:57.138Z",
-      "seq": 81
+      "id": "20d1c548",
+      "title": "Rankin-Selberg 적분",
+      "priority": 7,
+      "note": "godement-jacquet 아래. GL_n x GL_m L 함수, Whittaker 모형과 전개, 함수성 판정과 Ramanujan 형 추정의 도구",
+      "createdAt": "2026-09-13T17:32:31.394Z",
+      "seq": 96
     },
     {
       "id": "4286ed8c",
@@ -26,14 +26,6 @@
       "note": "local-class-field-theory 아래. Fontaine 주기환 B_dR/B_cris, 결정/반안정 표현, Lubin-Tate 탑 위의 φ-가군",
       "createdAt": "2026-09-13T16:01:30.860Z",
       "seq": 82
-    },
-    {
-      "id": "b2615792",
-      "title": "불균형 최적 수송",
-      "priority": 6,
-      "note": "sinkhorn 아래. 주변분포 제약을 KL 벌점으로 완화, 스케일링 반복의 일반형, Hellinger-Kantorovich",
-      "createdAt": "2026-09-13T16:14:24.509Z",
-      "seq": 84
     },
     {
       "id": "db3ca761",
@@ -50,6 +42,14 @@
       "note": "modular-curves 아래. 첨점 경로의 호몰로지류, Manin 기호와 삼항관계, Hecke 행렬의 정수 계산, 새형식 열거",
       "createdAt": "2026-09-13T16:36:19.898Z",
       "seq": 89
+    },
+    {
+      "id": "d3ba942f",
+      "title": "초특이 동종사상 그래프와 SIDH",
+      "priority": 6,
+      "note": "lang-trotter 와 elliptic-curves 아래. F_{p^2} 위 초특이 j 불변량 약 p/12 개, l 동종사상 Ramanujan 그래프, SIKE 가 깨진 경위(Castryck-Decru)",
+      "createdAt": "2026-09-13T17:32:31.643Z",
+      "seq": 98
     },
     {
       "id": "171eb3e6",
