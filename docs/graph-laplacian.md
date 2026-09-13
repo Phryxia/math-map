@@ -190,5 +190,6 @@ $$
 ## 더 알아보기
 
 - [유효저항](effective-resistance.md)
+- [Expander 그래프와 스펙트럼 간극](expander-graphs.md)
 
 #graph_theory #linear_algebra
