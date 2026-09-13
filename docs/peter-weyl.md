@@ -199,6 +199,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Weyl 지표 공식과 최고무게 이론](weyl-character-formula.md)
 
 #functional_analysis #group_theory #analysis
