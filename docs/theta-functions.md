@@ -260,6 +260,7 @@ print("  계수 0..20 :", prod_[:21])
 ## 더 알아보기
 
 - [괴물 달빛 추측](monstrous-moonshine.md)
+- [Mock 모듈러 형식과 Zwegers 이론](mock-modular-forms.md)
 - [Niemeier 격자와 24 차원 분류](niemeier-lattices.md)
 
 #number_theory #combinatorics #complex_analysis
