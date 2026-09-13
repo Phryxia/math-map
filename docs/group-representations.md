@@ -254,5 +254,6 @@ $$
 - [Langlands 강령](langlands-program.md)
 - [유한 단순군 분류](finite-simple-groups.md)
 - [구면조화함수와 SO(3) 의 표현](spherical-harmonics.md)
+- [Schur–Weyl 쌍대성](schur-weyl-duality.md)
 
 #group_theory #linear_algebra

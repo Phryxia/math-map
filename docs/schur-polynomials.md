@@ -270,6 +270,6 @@ Schur 다항식을 한 방향으로 변형한 것들이 각각 다른 이론을 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schur–Weyl 쌍대성](schur-weyl-duality.md)
 
 #combinatorics #algebra #linear_algebra
