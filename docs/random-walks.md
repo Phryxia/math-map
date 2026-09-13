@@ -213,6 +213,6 @@ print(f"시뮬 {commute_path(n):.1f} / 이론 {2 * (n - 1) ** 2}")
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md)
 
 #probability #graph_theory

@@ -264,6 +264,6 @@ print(f"  점 a_p = 0        : {len(ss)}/{len(good)} = {len(ss)/len(good):.5f}")
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md)
 
 #number_theory #probability #cryptography #computation
