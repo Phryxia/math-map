@@ -245,6 +245,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [기하학적 Langlands 강령](geometric-langlands.md)
 
 #number_theory #category_theory #algebraic_topology #group_theory
