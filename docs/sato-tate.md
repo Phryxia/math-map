@@ -306,6 +306,6 @@ report("남은 각을 균등분포와 비교 (이쪽이 맞아야 한다)", nz, 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lang–Trotter 추측과 초특이 소수](lang-trotter.md)
 
 #number_theory #probability #analysis #computation
