@@ -205,6 +205,6 @@ LP 쌍대해는 하한의 증명서다. 정점 덮개 LP 의 쌍대는 분수 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [반정부호 계획법과 최대 절단](semidefinite-programming.md)
 
 #algorithms #optimization #complexity
