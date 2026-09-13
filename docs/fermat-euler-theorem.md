@@ -185,5 +185,6 @@ def miller_rabin(n, bases=(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37)):
 ## 더 알아보기
 
 - [RSA 암호](rsa-cryptosystem.md)
+- [이차 상호법칙](quadratic-reciprocity.md)
 
 #number_theory #theorem

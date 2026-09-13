@@ -249,6 +249,7 @@ Langlands 강령은 이 모든 `L` 함수가 자기동형 표현에서 오는 `L
 
 - [소수 정리와 Riemann zeta 함수](prime-number-theorem.md)
 - [군의 표현과 지표](group-representations.md)
+- [이차 상호법칙](quadratic-reciprocity.md)
 
 ## 더 알아보기
 
