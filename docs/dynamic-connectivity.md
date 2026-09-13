@@ -40,3 +40,5 @@ incremental 문제는 서로소 집합 자료구조로 처리할 수 있다. 간
 ## 더 알아보기
 
 - [Link-cut tree](link-cut-trees.md)
+
+#algorithms #data_structures

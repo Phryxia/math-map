@@ -168,3 +168,5 @@ for n in (100, 10_000, 1_000_000):
 
 - [가설검정과 p-값](hypothesis-testing.md)
 - [신뢰구간](confidence-intervals.md)
+
+#probability #theorem

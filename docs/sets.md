@@ -73,3 +73,5 @@ $$
 - [수학적 플라톤주의](mathematical-platonism.md)
 - [ZFC 공리계](zfc-axioms.md)
 - [Boolean algebra](boolean-algebras.md)
+
+#set_theory

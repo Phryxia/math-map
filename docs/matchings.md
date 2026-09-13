@@ -235,3 +235,5 @@ print(len(bipartite_matching(bad, list(bad)))) # 2 < 3
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
+
+#graph_theory #combinatorics

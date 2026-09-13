@@ -202,3 +202,5 @@ assert [partitions(n) for n in range(10)] == [1, 1, 2, 3, 5, 7, 11, 15, 22, 30]
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
+
+#combinatorics

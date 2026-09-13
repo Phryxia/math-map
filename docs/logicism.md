@@ -194,3 +194,5 @@ Peano 공리 중 셋은 그대로 확인되지만 마지막이 실패한다. 유
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
+
+#philosophy_of_math #foundations

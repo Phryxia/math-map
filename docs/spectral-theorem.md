@@ -146,3 +146,5 @@ print(np.allclose(Q.T @ Q, np.eye(2)))
 ## 더 알아보기
 
 - [특이값 분해](singular-value-decomposition.md)
+
+#linear_algebra #theorem

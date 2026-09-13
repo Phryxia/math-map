@@ -56,3 +56,5 @@ $$
 
 - [논문: Graph Sparsification by Effective Resistances](spectral-sparsification.md)
 - [Random walk와 전기 네트워크](random-walks.md)
+
+#graph_theory

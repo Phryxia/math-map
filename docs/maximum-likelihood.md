@@ -188,3 +188,5 @@ def newton_logistic(xs, ys, iters=20):
 - [가설검정과 p-값](hypothesis-testing.md)
 - [선형회귀와 최소제곱법](linear-regression.md)
 - [지수족과 충분통계량](exponential-families.md)
+
+#statistics

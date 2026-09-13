@@ -246,3 +246,5 @@ print("leverage 최대 =", round(np.diag(H).max(), 3))
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
+
+#statistics

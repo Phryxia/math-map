@@ -173,3 +173,5 @@ def provable_witness(T, sentence, bound):
 ## 더 알아보기
 
 - [형식주의와 Hilbert 프로그램](formalism-hilbert-program.md)
+
+#logic #foundations #theorem

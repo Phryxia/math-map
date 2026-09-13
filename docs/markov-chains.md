@@ -194,3 +194,5 @@ $$
 ## 더 알아보기
 
 - [Random walk와 전기 네트워크](random-walks.md)
+
+#probability

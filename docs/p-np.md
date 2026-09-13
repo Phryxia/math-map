@@ -53,3 +53,5 @@ NP-complete 문제 하나에 다항시간 알고리즘이 있으면 P와 NP가 �
 ## 더 알아보기
 
 - [NP-완전성과 Cook–Levin 정리](np-completeness.md)
+
+#complexity

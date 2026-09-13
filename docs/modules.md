@@ -233,3 +233,5 @@ print("자유 계수:", rank, "/ torsion:", torsion)
 ## 더 알아보기
 
 - [텐서곱](tensor-products.md)
+
+#ring_theory #algebra

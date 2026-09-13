@@ -141,3 +141,5 @@ print(vecs[:, 0])      # (1,1) 방향의 단위벡터
 
 - [스펙트럼 정리](spectral-theorem.md)
 - [군의 표현과 지표](group-representations.md)
+
+#linear_algebra

@@ -65,3 +65,5 @@ m≥2를 정수 법, a를 m과 서로소인 정수로 정하자. 정수 s, t에 
 ## 더 알아보기
 
 - [소수와 유일분해](primes.md)
+
+#number_theory #algorithms

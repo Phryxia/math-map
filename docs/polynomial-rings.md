@@ -132,3 +132,5 @@ print(bin(poly_gcd_F2(0b1011, 0b110)))  # x^3+x+1 과 x^2+x 는 서로소 -> 0b1
 ## 더 알아보기
 
 - [체의 확대](field-extensions.md)
+
+#ring_theory

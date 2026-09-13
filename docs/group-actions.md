@@ -57,3 +57,5 @@ x를 같은 점으로 보내는 군 원소들은 안정자와 같은 개수씩 �
 - [Galois 이론](galois-theory.md)
 - [Sylow 정리](sylow-theorems.md)
 - [군의 표현과 지표](group-representations.md)
+
+#group_theory

@@ -140,3 +140,5 @@ print((1 / r**2) * 4 * np.pi, 2 * np.pi * 2)
 ## 더 알아보기
 
 - [Riemann 계량과 측지선](riemannian-metrics.md)
+
+#differential_geometry

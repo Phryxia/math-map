@@ -180,3 +180,5 @@ $$
 ## 더 알아보기
 
 - [신뢰구간](confidence-intervals.md)
+
+#statistics

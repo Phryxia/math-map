@@ -199,3 +199,5 @@ Boolean algebra 는 격자 이론의 여러 계층 중 가장 강한 조건을 �
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
+
+#order_theory #logic

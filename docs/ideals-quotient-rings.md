@@ -56,3 +56,5 @@ $$
 
 - [소 아이디얼과 극대 아이디얼](prime-ideals.md)
 - [중국인의 나머지 정리](chinese-remainder-theorem.md)
+
+#ring_theory

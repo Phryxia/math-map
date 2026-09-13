@@ -52,3 +52,5 @@ $$
 
 - [확률변수와 기댓값](random-variables.md)
 - [측도변환과 우도비](change-of-measure.md)
+
+#measure_theory #probability

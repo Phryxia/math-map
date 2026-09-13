@@ -143,3 +143,5 @@ goal:
 - [ZFC 공리계](zfc-axioms.md)
 - [Compactness 정리와 Löwenheim–Skolem 정리](lowenheim-skolem.md)
 - [논리주의와 Frege 프로그램](logicism.md)
+
+#logic

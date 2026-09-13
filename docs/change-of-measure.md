@@ -207,3 +207,5 @@ print(f"impsmp = {imp:.3e}  se={w.std(ddof=1)/n**0.5:.1e}  ESS={ess:.0f}")
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
+
+#measure_theory #probability

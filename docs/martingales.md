@@ -204,3 +204,5 @@ print(f"E[T]    : 시뮬 {t_hat:.2f} / 이론 {k*(N-k)}")
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
+
+#probability

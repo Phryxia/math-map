@@ -48,3 +48,5 @@ Kruskal 알고리즘에서 가중치가 작은 순서로 간선 {u,v}를 볼 때
 
 - [최소 신장트리](minimum-spanning-tree.md)
 - [동적 연결성](dynamic-connectivity.md)
+
+#data_structures #algorithms

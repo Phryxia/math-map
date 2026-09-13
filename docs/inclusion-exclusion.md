@@ -186,3 +186,5 @@ print(D / factorial(n), prod([1]))   # 0.3678... ≈ 1/e
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
+
+#combinatorics

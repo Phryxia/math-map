@@ -44,3 +44,5 @@ ID는 서로 다른 입력 쌍에 서로 다른 새 색을 배정한다. 비교�
 ## 더 알아보기
 
 - [논문: How Powerful are Graph Neural Networks?](gnn-expressivity.md)
+
+#graph_theory #algorithms

@@ -200,3 +200,5 @@ for k in range(6):
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
+
+#optimization #analysis

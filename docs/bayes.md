@@ -58,3 +58,5 @@ $$
 ## 더 알아보기
 
 - [Bayes 추론과 사후분포](bayesian-inference.md)
+
+#probability #theorem

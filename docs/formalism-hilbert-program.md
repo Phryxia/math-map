@@ -106,3 +106,5 @@ PRA에 epsilon_0까지의 초한귀납법을 더한 체계는 PA의 무모순성
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
+
+#philosophy_of_math #foundations

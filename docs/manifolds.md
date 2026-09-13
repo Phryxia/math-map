@@ -134,3 +134,5 @@ print(np.linalg.matrix_rank(dF(x)))  # 1 = dim N, 따라서 전사
 ## 더 알아보기
 
 - [Riemann 계량과 측지선](riemannian-metrics.md)
+
+#differential_geometry #topology

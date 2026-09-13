@@ -132,3 +132,5 @@ $$
 
 - [체의 확대](field-extensions.md)
 - [다항식환](polynomial-rings.md)
+
+#field_theory #algebra

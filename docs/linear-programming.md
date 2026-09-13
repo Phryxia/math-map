@@ -137,3 +137,5 @@ print(res.x, -res.fun)  # [1. 1.5] 2.5
 ## 더 알아보기
 
 - [네트워크 흐름과 최대유량 최소절단 정리](network-flow.md)
+
+#optimization

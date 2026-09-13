@@ -142,3 +142,5 @@ print(mul((1, 1), (1, -1)))  # (1+√2)(1-√2) = -1  ->  (-1, 0)
 
 - [유한체](finite-fields.md)
 - [Galois 이론](galois-theory.md)
+
+#field_theory

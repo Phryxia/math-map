@@ -46,3 +46,5 @@ $$
 
 - [Yoneda lemma](yoneda-lemma.md)
 - [Adjunction](adjunctions.md)
+
+#category_theory

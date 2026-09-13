@@ -66,3 +66,5 @@ $$
 - [선형계획법](linear-programming.md)
 - [Markov 연쇄](markov-chains.md)
 - [텐서곱](tensor-products.md)
+
+#linear_algebra

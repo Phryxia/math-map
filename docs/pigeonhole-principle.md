@@ -161,3 +161,5 @@ print(subset[i], subset[j])            # 3 6  (3이 6을 나눈다)
 
 - [Ramsey 이론](ramsey-theory.md)
 - [그래프 색칠](graph-coloring.md)
+
+#combinatorics

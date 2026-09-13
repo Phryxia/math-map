@@ -180,3 +180,5 @@ assert all(binom(n, k) == comb(n, k) for n in range(40) for k in range(-1, n + 2
 - [포함배제 원리](inclusion-exclusion.md)
 - [비둘기집 원리](pigeonhole-principle.md)
 - [매칭과 Hall 정리](matchings.md)
+
+#combinatorics

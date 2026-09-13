@@ -228,3 +228,5 @@ print("공통 모듈러스 공격으로 평문 복원:", recovered == m)
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
+
+#cryptography #number_theory

@@ -53,3 +53,5 @@ $$
 ## 더 알아보기
 
 - [Adjunction](adjunctions.md)
+
+#category_theory #theorem

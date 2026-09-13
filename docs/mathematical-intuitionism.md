@@ -45,3 +45,5 @@ BHK 해석은 ‘구성’의 뜻을 완전히 형식화한 정의는 아니다.
 ## 더 알아보기
 
 - [직관주의 논리](intuitionistic-logic.md)
+
+#philosophy_of_math

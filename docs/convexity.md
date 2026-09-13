@@ -58,3 +58,5 @@ $$
 - [경사하강법](gradient-descent.md)
 - [Lagrange 쌍대성과 KKT 조건](lagrange-duality.md)
 - [선형계획법](linear-programming.md)
+
+#optimization #analysis

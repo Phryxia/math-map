@@ -47,3 +47,5 @@ $$
 ## 더 알아보기
 
 - [최소 신장트리](minimum-spanning-tree.md)
+
+#combinatorics

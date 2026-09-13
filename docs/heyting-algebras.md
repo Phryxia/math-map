@@ -240,3 +240,5 @@ Heyting algebra 는 배중률을 부정하는 것이 아니라 가정하지 않�
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
+
+#order_theory #logic

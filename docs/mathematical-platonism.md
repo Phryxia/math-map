@@ -102,3 +102,5 @@ $$
 ## 더 알아보기
 
 - [논리주의와 Frege 프로그램](logicism.md)
+
+#philosophy_of_math

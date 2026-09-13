@@ -43,3 +43,5 @@ b는 목록의 n번째 수열과 n번째 자리에서 다르다. 어느 항목�
 - [측도](measure.md)
 - [Compactness 정리와 Löwenheim–Skolem 정리](lowenheim-skolem.md)
 - [연속체 가설과 독립성](continuum-hypothesis.md)
+
+#set_theory

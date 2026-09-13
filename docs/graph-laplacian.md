@@ -59,3 +59,5 @@ normalized Laplacian은 차수에 따른 정규화를 추가한 다른 행렬이
 ## 더 알아보기
 
 - [유효저항](effective-resistance.md)
+
+#graph_theory #linear_algebra

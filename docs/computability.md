@@ -53,3 +53,5 @@ $$
 - [Gödel 불완전성 정리](godel-incompleteness.md)
 - [유한 오토마타와 정규언어](finite-automata.md)
 - [Lambda calculus](lambda-calculus.md)
+
+#computation #logic

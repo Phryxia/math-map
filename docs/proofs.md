@@ -71,3 +71,5 @@ $$
 - [1차 논리](first-order-logic.md)
 - [수학적 플라톤주의](mathematical-platonism.md)
 - [비둘기집 원리](pigeonhole-principle.md)
+
+#logic #foundations

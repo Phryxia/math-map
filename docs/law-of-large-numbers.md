@@ -152,3 +152,5 @@ for n in (10**3, 10**5, 10**7):
 
 - [중심극한정리](central-limit-theorem.md)
 - [집중부등식](concentration-inequalities.md)
+
+#probability #theorem

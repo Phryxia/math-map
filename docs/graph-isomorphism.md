@@ -51,3 +51,5 @@ canonical labeling은 동형인 입력들이 동일한 대표 표현을 얻도�
 ## 더 알아보기
 
 - [Color refinement](color-refinement.md)
+
+#graph_theory

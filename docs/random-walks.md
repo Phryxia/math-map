@@ -214,3 +214,5 @@ print(f"시뮬 {commute_path(n):.1f} / 이론 {2 * (n - 1) ** 2}")
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
+
+#probability #graph_theory

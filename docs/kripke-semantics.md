@@ -50,3 +50,5 @@ $$
 ## 더 알아보기
 
 - [Heyting algebra](heyting-algebras.md)
+
+#logic
