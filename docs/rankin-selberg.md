@@ -355,6 +355,7 @@ Kim 과 Shahidi 가 2002 년에 `\mathrm{Sym}^3`, Kim 이 `\mathrm{Sym}^4` 의 �
 
 - [Godement–Jacquet 적분](godement-jacquet.md)
 - [Satake 동형과 비분기 Hecke 대수](satake-isomorphism.md)
+- [Eisenstein 급수와 스펙트럼 분해](eisenstein-series.md)
 
 ## 더 알아보기
 
