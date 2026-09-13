@@ -105,6 +105,7 @@ $$
 - [체의 확대](field-extensions.md)
 - [내적 공간](inner-product-spaces.md)
 - [가군](modules.md)
+- [Banach 공간과 세 기본정리](banach-spaces.md)
 - [오류정정부호](error-correcting-codes.md)
 
 #linear_algebra

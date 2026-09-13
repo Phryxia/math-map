@@ -147,5 +147,6 @@ for N in (10, 100, 1000):
 
 - [축약사상 고정점 정리](banach-fixed-point.md)
 - [Hilbert 공간](hilbert-spaces.md)
+- [Banach 공간과 세 기본정리](banach-spaces.md)
 
 #analysis
