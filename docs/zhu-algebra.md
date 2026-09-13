@@ -218,6 +218,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [모듈러 텐서범주와 3 차원 TQFT](modular-tensor-categories.md)
 
 #algebra #complex_analysis #theorem
