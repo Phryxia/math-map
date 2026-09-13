@@ -276,6 +276,6 @@ for a, b in [(-1, -1), (2, 3), (-1, 3), (5, 7), (-6, -11)]:
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
 
 #number_theory #ring_theory #algebra
