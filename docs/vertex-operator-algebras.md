@@ -235,5 +235,6 @@ VOA 는 2 차원 등각장론의 손지기(chiral) 부분을 수학적으로 정
 ## 더 알아보기
 
 - [괴물 달빛 추측](monstrous-moonshine.md)
+- [Zhu 대수와 모듈러 불변성](zhu-algebra.md)
 
 #algebra #complex_analysis #construction
