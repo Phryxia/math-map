@@ -256,6 +256,6 @@ for k, c in enumerate(chars_mod_p(7)):
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dwork 의 유리성 정리와 지수합](dwork-rationality.md)
 
 #number_theory #complex_analysis #analysis

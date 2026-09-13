@@ -218,6 +218,6 @@ for n in (1, 2, 3):
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dwork 의 유리성 정리와 지수합](dwork-rationality.md)
 
 #number_theory #algebraic_topology #group_theory
