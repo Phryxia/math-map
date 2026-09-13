@@ -217,6 +217,6 @@ for name, adj, d in [("C_12", cycle(12), 2), ("K_8", complete(8), 7),
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [PCP 정리와 근사 불가능성](pcp-theorem.md)
 
 #graph_theory #linear_algebra #algorithms #complexity

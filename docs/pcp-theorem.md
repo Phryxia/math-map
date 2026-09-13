@@ -217,6 +217,7 @@ print(f"\n항상 7m/8 이상. 최적 대비 최악 비율 {worst:.3f}")
 ## 선수지식
 
 - [근사 알고리즘](approximation-algorithms.md)
+- [Expander 그래프와 스펙트럼 간극](expander-graphs.md)
 
 ## 더 알아보기
 
