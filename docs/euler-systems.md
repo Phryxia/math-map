@@ -302,6 +302,6 @@ Kolyvagin 계의 형식화는 타원곡선을 벗어나서도 쓰인다. 변형�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Iwasawa 주추측과 순환체 단수](iwasawa-main-conjecture.md)
 
 #number_theory #theorem #algebra
