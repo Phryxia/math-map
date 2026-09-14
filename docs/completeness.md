@@ -37,7 +37,7 @@ graph LR
 
 ## Cauchy 수열
 
-거리 공간 `(X, d)` 의 수열 `xₙ` 이 다음을 만족하면 Cauchy 수열이다.
+거리 공간 $(X, d)$ 의 수열 $x_n$ 이 다음을 만족하면 Cauchy 수열이다.
 
 $$
 \forall\varepsilon>0\;\exists N\in\mathbb N\;\forall m,n\ge N:\ d(x_m,x_n)<\varepsilon
