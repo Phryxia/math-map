@@ -253,6 +253,6 @@ print("합집합 그대로는 개념이 아닐 수 있다 :",
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [추상해석과 정적 분석의 건전성](abstract-interpretation.md)
 
 #order_theory #logic #computation
