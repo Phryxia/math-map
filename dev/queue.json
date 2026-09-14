@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-09-14T09:03:35.321Z",
-  "nextSeq": 222,
+  "savedAt": "2026-09-14T13:04:59.460Z",
+  "nextSeq": 224,
   "items": [
     {
       "id": "0b2e3ee3",
@@ -12,12 +12,12 @@
       "seq": 220
     },
     {
-      "id": "4ddb0b17",
-      "title": "백틱 수식 정리: 남은 36개 문서",
+      "id": "ffc90ffb",
+      "title": "백틱 수식 정리: 남은 17개 문서",
       "priority": 85,
-      "note": "297개 중 261개 완료(2026-09-14 회차에서 20개 문서, 567건 처리: 1767 -> 1200). 남은 36개는 스크립트로 다시 집계하는 것이 정확하다. 코드펜스 밖 백틱 중 유니코드 수학기호가 든 것만 문서별로 세면 된다. 큰 것부터 conditional-expectation 60, martingales 59, tensor-products 48, measurable-functions 48, exponential-families 48, radon-nikodym 47, monads 46, concentration-inequalities 46, lambda-calculus 45, heyting-algebras 43, ideals-quotient-rings 42. 나머지는 20~36건대. functors 113 행의 map 계열은 진짜 코드라 백틱을 남겼으므로 집계에서 제외하고 넘어갈 것",
-      "createdAt": "2026-09-14T09:03:22.605Z",
-      "seq": 221
+      "note": "2026-09-14 두 번째 회차에서 28개 문서를 처리해 297개 중 280개 완료(1245건 -> 429건). 남은 17개는 스크립트로 다시 집계하는 것이 정확하다. 코드펜스 밖 백틱 중 유니코드 수학기호가 든 것만 문서별로 센다. 큰 것부터 lebesgue-integral 30, matchings 29, natural-transformations 29, network-flow 29, dominated-convergence 28, ito-calculus 28, limits-colimits 27, linear-regression 27, mathematical-intuitionism 27, localization-rings 26, random-walks 26, rsa-cryptosystem 26, yoneda-lemma 26, bayesian-inference 25, adjunctions 23, brownian-motion 22, functors 1(113행 map 계열은 진짜 코드라 제외). 이번 회차에서 확립한 추가 규칙: 시그마 대수의 그리스 문자는 백틱을 벗겨 평문으로 두고 대수 기호만 mathcal 로 쓴다. 닫는 달러 뒤에 쉼표나 괄호가 오면 문장을 나눠 공백이 오게 고친다. List, Maybe, gzip, return, bind 같은 프로그래밍 이름은 백틱을 남긴다. 표 안에서는 절댓값을 lvert rvert 로 쓴다",
+      "createdAt": "2026-09-14T13:04:42.994Z",
+      "seq": 223
     },
     {
       "id": "1c247183",
