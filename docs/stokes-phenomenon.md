@@ -170,5 +170,6 @@ for z in (0.1, 0.2, 0.3):
 
 - [Airy 함수와 회전점](airy-functions.md)
 - [Resurgence 와 alien 미분](resurgence.md)
+- [Padé 근사와 Borel 재합산](borel-pade.md)
 
 #analysis #complex_analysis #computation
