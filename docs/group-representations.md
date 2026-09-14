@@ -44,34 +44,34 @@ $$
 - 자명표현: `V = k`, 모든 `g` 가 항등사상.
 - 순열표현: `G` 가 유한집합 `X` 에 작용할 때 `V = k^X` 에 좌표 치환으로 작용.
 - 정규표현: `X = G` 에 왼쪽 곱으로 작용시킨 순열표현. 차수는 `|G|` 다.
-- 1차원 표현: 준동형 `G -> k^×`. 아벨군에서는 이것이 전부다.
+- 1차원 표현: 준동형 $G \to k^{\times}$ 다. 아벨군에서는 이것이 전부다.
 
 ## 부분표현과 기약표현
 
-부분공간 `W ⊆ V` 가 모든 `g` 에 대해 `ρ(g)W ⊆ W` 를 만족하면 부분표현이다. `V ≠ 0` 이고 자명한 부분표현 `0`, `V` 밖에 없으면 `V` 를 기약(irreducible)이라 한다.
+부분공간 $W \subseteq V$ 가 모든 $g$ 에 대해 $\rho(g)W \subseteq W$ 를 만족하면 부분표현이다. $V \neq 0$ 이고 자명한 부분표현 $0$ 과 $V$ 밖에 없으면 $V$ 를 기약(irreducible)이라 한다.
 
-두 표현 `(ρ, V)`, `(σ, W)` 사이의 얽힘사상(intertwiner)은
+두 표현 $(\rho, V)$ 와 $(\sigma, W)$ 사이의 얽힘사상(intertwiner)은
 
 $$
 f \circ \rho(g) = \sigma(g) \circ f \quad (\forall g \in G)
 $$
 
-를 만족하는 선형사상 `f : V -> W` 다. 그 전체를 `Hom_G(V, W)` 로 쓴다.
+를 만족하는 선형사상 $f : V \to W$ 다. 그 전체를 $\operatorname{Hom}_G(V, W)$ 로 쓴다.
 
 ## 지표
 
-표현 `(ρ, V)` 의 지표는
+표현 $(\rho, V)$ 의 지표는
 
 $$
 \chi_V(g) = \operatorname{tr} \rho(g)
 $$
 
-로 정의되는 함수 `χ_V : G -> C` 다. 다음이 즉시 따라온다.
+로 정의되는 함수 $\chi_V : G \to \mathbb C$ 다. 다음이 즉시 따라온다.
 
-- `χ_V(1) = dim V`.
-- `χ_V(hgh^{-1}) = χ_V(g)`. 즉 지표는 켤레류 함수(class function)다.
-- `χ_{V ⊕ W} = χ_V + χ_W`, `χ_{V ⊗ W} = χ_V · χ_W`. 두 번째는 [텐서곱](tensor-products.md)의 성질이다.
-- `ρ(g)` 는 `g^{|G|} = 1` 때문에 대각화 가능하고 고윳값이 1의 거듭제곱근이므로 $χ_V(g^{-1}) = \overline{χ_V(g)}$.
+- $\chi_V(1) = \dim V$ 다.
+- $\chi_V(hgh^{-1}) = \chi_V(g)$ 다. 즉 지표는 켤레류 함수(class function)다.
+- $\chi_{V \oplus W} = \chi_V + \chi_W$ 와 $\chi_{V \otimes W} = \chi_V \cdot \chi_W$ 가 성립한다. 두 번째는 [텐서곱](tensor-products.md)의 성질이다.
+- $\rho(g)$ 는 $g^{\lvert G \rvert} = 1$ 때문에 대각화 가능하고 고윳값이 1의 거듭제곱근이므로 $\chi_V(g^{-1}) = \overline{\chi_V(g)}$ 다.
 
 류함수 공간에 내적을 준다.
 
@@ -83,21 +83,21 @@ $$
 
 ## Maschke 정리
 
-**정리.** `G` 가 유한군이고 `char k` 가 `|G|` 를 나누지 않으면, `G` 의 모든 유한차원 표현은 기약표현의 직합이다.[^2]
+**정리.** $G$ 가 유한군이고 $\operatorname{char} k$ 가 $\lvert G \rvert$ 를 나누지 않으면, $G$ 의 모든 유한차원 표현은 기약표현의 직합이다.[^2]
 
-*증명 스케치.* 부분표현 `W ⊆ V` 를 잡고 임의의 사영 `π : V -> W` 를 고른 뒤 평균을 낸다.
+*증명 스케치.* 부분표현 $W \subseteq V$ 를 잡고 임의의 사영 $\pi : V \to W$ 를 고른 뒤 평균을 낸다.
 
 $$
 \pi_0 = \frac{1}{|G|} \sum_{g \in G} \rho(g)\, \pi\, \rho(g)^{-1}
 $$
 
-`π_0` 은 여전히 `W` 위에서 항등이고 상이 `W` 이며, 구성상 모든 `ρ(h)` 와 교환한다. 따라서 `ker π_0` 이 부분표현이 되어 `V = W ⊕ ker π_0` 이다. 차원에 대한 귀납으로 완전 분해를 얻는다. ∎
+$\pi_0$ 은 여전히 $W$ 위에서 항등이고 상이 $W$ 이며, 구성상 모든 $\rho(h)$ 와 교환한다. 따라서 $\ker \pi_0$ 이 부분표현이 되어 $V = W \oplus \ker \pi_0$ 이다. 차원에 대한 귀납으로 완전 분해를 얻는다. ∎
 
-`1/|G|` 를 쓸 수 없는 경우, 즉 `char k` 가 `|G|` 를 나누는 modular 상황에서는 정리가 실패한다. `Z/p` 의 `F_p` 위 2차원 표현 중 분해되지 않는 것이 있다.
+$1/\lvert G \rvert$ 를 쓸 수 없는 경우, 즉 $\operatorname{char} k$ 가 $\lvert G \rvert$ 를 나누는 modular 상황에서는 정리가 실패한다. $\mathbb Z/p$ 의 $\mathbb F_p$ 위 2차원 표현 중 분해되지 않는 것이 있다.
 
 ## Schur 보조정리
 
-**보조정리.** `V`, `W` 가 기약표현이면
+**보조정리.** $V$ 와 $W$ 가 기약표현이면
 
 $$
 \operatorname{Hom}_G(V, W) = \begin{cases} 0 & (V \not\cong W) \\ \mathbb{C}\cdot \mathrm{id} & (V \cong W) \end{cases}
@@ -105,9 +105,9 @@ $$
 
 이다.
 
-*증명 스케치.* `f ≠ 0` 이면 `ker f` 와 `im f` 가 부분표현이므로 기약성에 의해 `ker f = 0`, `im f = W`, 즉 `f` 는 동형이다. `V = W` 인 경우 `C` 가 대수적으로 닫혀 있으므로 `f` 는 고윳값 `λ` 를 가지고, `f - λ·id` 역시 얽힘사상이면서 가역이 아니므로 `0` 이다. ∎
+*증명 스케치.* $f \neq 0$ 이면 $\ker f$ 와 $\operatorname{im} f$ 가 부분표현이므로 기약성에 의해 $\ker f = 0$ 이고 $\operatorname{im} f = W$ 이며, 즉 $f$ 는 동형이다. $V = W$ 인 경우 $\mathbb C$ 가 대수적으로 닫혀 있으므로 $f$ 는 고윳값 $\lambda$ 를 가지고, $f - \lambda \cdot \mathrm{id}$ 역시 얽힘사상이면서 가역이 아니므로 $0$ 이다. ∎
 
-따라서 기약표현 위에서 `G` 와 교환하는 연산자는 스칼라뿐이다. 이 사실이 아래 직교관계와 물리에서의 선택 규칙을 동시에 낳는다.
+따라서 기약표현 위에서 $G$ 와 교환하는 연산자는 스칼라뿐이다. 이 사실이 아래 직교관계와 물리에서의 선택 규칙을 동시에 낳는다.
 
 ## 직교관계
 
@@ -117,22 +117,22 @@ $$
 \langle \chi_i, \chi_j \rangle = \delta_{ij}
 $$
 
-*증명 스케치.* `Hom(V, W)` 에 `g · f = σ(g) f ρ(g)^{-1}` 로 표현 구조를 주면 그 지표는 $χ_W \overline{χ_V}$ 이고, 불변원소의 공간은 `Hom_G(V, W)` 다. 한편 평균 연산자
+*증명 스케치.* $\operatorname{Hom}(V, W)$ 에 $g \cdot f = \sigma(g) f \rho(g)^{-1}$ 로 표현 구조를 주면 그 지표는 $\chi_W \overline{\chi_V}$ 이고, 불변원소의 공간은 $\operatorname{Hom}_G(V, W)$ 다. 한편 평균 연산자
 
 $$
 P = \frac{1}{|G|}\sum_{g} \rho(g)
 $$
 
-는 불변부분공간 위로의 사영이므로 `tr P` 가 불변부분공간의 차원과 같다. 두 계산을 결합하면 `⟨χ_W, χ_V⟩ = dim Hom_G(V, W)` 이고, Schur 보조정리가 우변을 `0` 또는 `1` 로 만든다. ∎
+는 불변부분공간 위로의 사영이므로 $\operatorname{tr} P$ 가 불변부분공간의 차원과 같다. 두 계산을 결합하면 $\langle \chi_W, \chi_V \rangle = \dim \operatorname{Hom}_G(V, W)$ 이고, Schur 보조정리가 우변을 $0$ 또는 $1$ 로 만든다. ∎
 
 따름정리가 줄줄이 따라온다.
 
-- 표현 `V` 의 기약 분해 `V ≅ ⊕ V_i^{⊕ m_i}` 에서 중복도는 `m_i = ⟨χ_V, χ_i⟩` 다.
-- `V` 가 기약일 필요충분조건은 `⟨χ_V, χ_V⟩ = 1` 이다.
+- 표현 $V$ 의 기약 분해 $V \cong \bigoplus V_i^{\oplus m_i}$ 에서 중복도는 $m_i = \langle \chi_V, \chi_i \rangle$ 다.
+- $V$ 가 기약일 필요충분조건은 $\langle \chi_V, \chi_V \rangle = 1$ 이다.
 - 지표가 같으면 표현이 동형이다.
 - 기약표현의 개수는 켤레류의 개수와 같다. 류함수 공간의 차원이 켤레류 수이기 때문이다.
 
-**제2 직교관계.** 지표표의 열에 대해서도 직교성이 성립한다. 켤레류 대표 `g`, `h` 에 대해
+**제2 직교관계.** 지표표의 열에 대해서도 직교성이 성립한다. 켤레류 대표 $g$ 와 $h$ 에 대해
 
 $$
 \sum_{i} \chi_i(g) \overline{\chi_i(h)} = \begin{cases} |C_G(g)| & (g \sim h) \\ 0 & (\text{그 외}) \end{cases}
@@ -140,7 +140,7 @@ $$
 
 ## 정규표현의 분해
 
-정규표현의 지표는 `χ_{reg}(1) = |G|` 이고 `g ≠ 1` 에서 `0` 이다. 따라서
+정규표현의 지표는 $\chi_{\mathrm{reg}}(1) = \lvert G \rvert$ 이고 $g \neq 1$ 에서 $0$ 이다. 따라서
 
 $$
 \langle \chi_{\mathrm{reg}}, \chi_i \rangle = \frac{1}{|G|}\, |G| \cdot \overline{\chi_i(1)} = \dim V_i
@@ -222,7 +222,7 @@ $$
 
 ## 군 위의 Fourier 해석
 
-`G` 가 유한 아벨군이면 모든 기약표현이 1차원이고, 지표들은 군 준동형 `G -> C^×` 다. 이들이 `C[G]` 의 정규직교 기저를 이루므로 임의의 함수가
+$G$ 가 유한 아벨군이면 모든 기약표현이 1차원이고, 지표들은 군 준동형 $G \to \mathbb C^{\times}$ 다. 이들이 $\mathbb C[G]$ 의 정규직교 기저를 이루므로 임의의 함수가
 
 $$
 f(g) = \sum_{\chi} \hat{f}(\chi)\, \chi(g), \qquad \hat{f}(\chi) = \frac{1}{|G|}\sum_{g} f(g) \overline{\chi(g)}
@@ -236,7 +236,7 @@ $$
 
 - 기약표현의 차수는 `|G|` 를 나눈다. 이 사실과 [Sylow 정리](sylow-theorems.md)의 세기를 결합하면 작은 위수 군의 단순성 판정이 강해진다.
 - Burnside의 `p^a q^b` 정리, 즉 두 소수만으로 이루어진 위수의 군은 가해군이라는 결과는 지표 이론 없이는 알려진 증명이 길다.
-- 정규부분군은 지표표에서 읽힌다. 기약 지표 하나를 고정하고 `χ(g)` 가 `χ(1)` 과 같아지는 원소들을 모으면 그 표현의 핵이 되고, 이런 핵들의 교집합으로 모든 정규부분군을 얻는다. 따라서 지표표만 보고 단순군 여부를 판정할 수 있다.
+- 정규부분군은 지표표에서 읽힌다. 기약 지표 하나를 고정하고 $\chi(g)$ 가 $\chi(1)$ 과 같아지는 원소들을 모으면 그 표현의 핵이 되고, 이런 핵들의 교집합으로 모든 정규부분군을 얻는다. 따라서 지표표만 보고 단순군 여부를 판정할 수 있다.
 
 [^1]: Wikipedia, Character theory, https://en.wikipedia.org/wiki/Character_theory
 [^2]: Wikipedia, Maschke's theorem, https://en.wikipedia.org/wiki/Maschke%27s_theorem
