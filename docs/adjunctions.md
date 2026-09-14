@@ -76,7 +76,7 @@ $$
 \eta : \mathrm{id}_{\mathcal{C}} \Rightarrow GF, \qquad \varepsilon : FG \Rightarrow \mathrm{id}_{\mathcal{D}}
 $$
 
-이 정해진다. `η_c = φ(id_{Fc})`, `ε_d = φ^{-1}(id_{Gd})` 로 두면 된다. 이들은 triangle identity를 만족한다.
+이 정해진다. $\eta_c = \varphi(\mathrm{id}_{Fc})$ 와 $\varepsilon_d = \varphi^{-1}(\mathrm{id}_{Gd})$ 로 두면 된다. 이들은 triangle identity를 만족한다.
 
 $$
 (\varepsilon F) \circ (F \eta) = \mathrm{id}_F, \qquad (G \varepsilon) \circ (\eta G) = \mathrm{id}_G
@@ -96,28 +96,28 @@ graph LR
   d -. "G" .-> Gd
 ```
 
-그림의 아래쪽 경로가 전단사 `φ` 그 자체다. `f : Fc -> d` 를 `G` 로 옮긴 뒤 unit과 합성하면 `g : c -> Gd` 가 되고, 반대로 `g` 에서 `f = ε_d ∘ Fg` 를 복원한다.
+그림의 아래쪽 경로가 전단사 $\varphi$ 그 자체다. $f : Fc \to d$ 를 $G$ 로 옮긴 뒤 unit과 합성하면 $g : c \to Gd$ 가 되고, 반대로 $g$ 에서 $f = \varepsilon_d \circ Fg$ 를 복원한다.
 
 ## 두 정의의 동치
 
 **정리.** functor `F`, `G` 에 대해 다음은 동치다.
 
-1. triangle identity를 만족하는 자연변환 쌍 `(η, ε)` 이 존재한다.
-2. `c`, `d` 에 대해 자연스러운 전단사 `Hom(Fc, d) ≅ Hom(c, Gd)` 가 존재한다.
+1. triangle identity를 만족하는 자연변환 쌍 $(\eta, \varepsilon)$ 이 존재한다.
+2. $c$ 와 $d$ 에 대해 자연스러운 전단사 $\operatorname{Hom}(Fc, d) \cong \operatorname{Hom}(c, Gd)$ 가 존재한다.
 
-*증명 스케치.* (1) → (2): `f : Fc -> d` 에 `Gf ∘ η_c` 를 대응시키고, `g : c -> Gd` 에 `ε_d ∘ Fg` 를 대응시킨다. 한쪽 합성을 계산하면
+*증명 스케치.* (1) → (2): $f : Fc \to d$ 에 $Gf \circ \eta_c$ 를 대응시키고, $g : c \to Gd$ 에 $\varepsilon_d \circ Fg$ 를 대응시킨다. 한쪽 합성을 계산하면
 
 $$
 \varepsilon_d \circ F(Gf \circ \eta_c) = \varepsilon_d \circ FGf \circ F\eta_c = f \circ \varepsilon_{Fc} \circ F\eta_c = f
 $$
 
-이고 여기서 두 번째 등호는 `ε` 의 자연성, 세 번째는 triangle identity다. 반대 방향도 대칭이다. 자연성은 `F`, `G` 가 functor이고 `η`, `ε` 이 자연변환이라는 데서 곧바로 나온다.
+이고 여기서 두 번째 등호는 $\varepsilon$ 의 자연성이며 세 번째는 triangle identity다. 반대 방향도 대칭이다. 자연성은 $F$ 와 $G$ 가 functor이고 $\eta$ 와 $\varepsilon$ 이 자연변환이라는 데서 곧바로 나온다.
 
-(2) → (1): 위에서처럼 항등사상의 상으로 `η`, `ε` 을 정의하면 전단사의 자연성이 곧 triangle identity가 된다. ∎
+(2) → (1): 위에서처럼 항등사상의 상으로 $\eta$ 와 $\varepsilon$ 을 정의하면 전단사의 자연성이 곧 triangle identity가 된다. ∎
 
 ## 보편성질로서의 unit
 
-`η_c : c -> GFc` 는 다음 의미에서 보편적이다. 임의의 `d` 와 `g : c -> Gd` 에 대해
+$\eta_c : c \to GFc$ 는 다음 의미에서 보편적이다. 임의의 $d$ 와 $g : c \to Gd$ 에 대해
 
 $$
 g = G\tilde{g} \circ \eta_c
@@ -135,7 +135,7 @@ $$
 \operatorname{Hom}_{\mathcal{C}}(c, Gd) \cong \operatorname{Hom}_{\mathcal{D}}(Fc, d) \cong \operatorname{Hom}_{\mathcal{C}}(c, G'd)
 $$
 
-가 `c` 에 대해 자연스러우므로 [Yoneda lemma](yoneda-lemma.md)의 따름정리(Yoneda 매장의 충실충만성)에 의해 `Gd ≅ G'd` 이고, 이 동형은 `d` 에 대해 자연스럽다. Left adjoint도 같은 이유로 유일하다.
+가 $c$ 에 대해 자연스러우므로 [Yoneda lemma](yoneda-lemma.md)의 따름정리(Yoneda 매장의 충실충만성)에 의해 $Gd \cong G'd$ 이고, 이 동형은 $d$ 에 대해 자연스럽다. Left adjoint도 같은 이유로 유일하다.
 
 ## Yoneda lemma와의 관계
 
@@ -156,7 +156,7 @@ $$
 \operatorname{Hom}_{\mathcal{C}}(c, G(\lim_i d_i)) \cong \operatorname{Hom}_{\mathcal{D}}(Fc, \lim_i d_i) \cong \lim_i \operatorname{Hom}_{\mathcal{D}}(Fc, d_i) \cong \lim_i \operatorname{Hom}_{\mathcal{C}}(c, G d_i)
 $$
 
-이다. 가운데 등호는 hom-functor가 두 번째 변수에서 극한을 보존한다는 사실이고, 나머지는 adjunction이다. 오른쪽 끝은 `Hom(c, lim G d_i)` 와 같으므로 Yoneda에 의해 `G(lim d_i) ≅ lim G d_i` 다. 여극한 쪽은 반대 범주에서 같은 논증을 한다. ∎
+이다. 가운데 등호는 hom-functor가 두 번째 변수에서 극한을 보존한다는 사실이고, 나머지는 adjunction이다. 오른쪽 끝은 $\operatorname{Hom}(c, \lim G d_i)$ 와 같으므로 Yoneda에 의해 $G(\lim d_i) \cong \lim G d_i$ 다. 여극한 쪽은 반대 범주에서 같은 논증을 한다. ∎
 
 이 정리는 실전에서 부정 판정에 특히 강하다. 어떤 구성이 여극한(몫, 직합)을 깨뜨리면 그것은 right adjoint일 수 없다. 예를 들어 [가군](modules.md)에서 텐서곱은 직합을 보존하므로 left adjoint 후보이고, 실제로 Hom의 left adjoint다.
 
@@ -182,7 +182,7 @@ $$
 \eta : \mathrm{id} \Rightarrow T, \qquad \mu = G \varepsilon F : T^2 \Rightarrow T
 $$
 
-가 결합법칙과 단위법칙을 만족한다. 이 데이터 `(T, η, μ)` 가 monad다. 자유군 adjunction의 monad는 "집합에 형식적 낱말을 붙이는" 연산이고, 자유가군 adjunction의 monad는 "형식적 선형결합을 취하는" 연산이다.
+가 결합법칙과 단위법칙을 만족한다. 이 데이터 $(T, \eta, \mu)$ 가 monad다. 자유군 adjunction의 monad는 "집합에 형식적 낱말을 붙이는" 연산이고, 자유가군 adjunction의 monad는 "형식적 선형결합을 취하는" 연산이다.
 
 역으로 모든 monad는 적어도 두 가지 adjunction에서 나온다. Eilenberg–Moore 범주(대수의 범주)와 Kleisli 범주가 각각 그 분해의 끝과 시작을 준다. 프로그래밍 언어에서 쓰는 monad는 후자 쪽 그림이다.
 
@@ -210,7 +210,7 @@ $$
 \operatorname{Hom}(X \times A, Y) \cong \operatorname{Hom}(X, Y^A)
 $$
 
-가 성립한다. 즉 `- × A ⊣ (-)^A` 다. 이 성질을 가지는 범주를 cartesian closed category라 하고, 이것이 단순 타입 람다 계산의 의미론적 골격이다. 다음 코드가 전단사를 그대로 구현한다.
+가 성립한다. 즉 $- \times A \dashv (-)^A$ 다. 이 성질을 가지는 범주를 cartesian closed category라 하고, 이것이 단순 타입 람다 계산의 의미론적 골격이다. 다음 코드가 전단사를 그대로 구현한다.
 
 ```python
 def curry(f):
@@ -226,14 +226,14 @@ assert uncurry(curry(f))((3, 4)) == f((3, 4))     # 왕복하면 제자리
 assert curry(uncurry(curry(f)))(3)(4) == 81       # 반대 방향도 동일
 ```
 
-Unit `η_X : X -> (X × A)^A` 는 `x` 를 `a ↦ (x, a)` 로 보내는 사상이고, counit `ε_Y : Y^A × A -> Y` 는 평가 사상이다. Triangle identity는 "평가한 뒤 다시 묶으면 원래 함수" 라는 익숙한 등식이다.
+Unit $\eta_X : X \to (X \times A)^A$ 는 $x$ 를 $a \mapsto (x, a)$ 로 보내는 사상이고, counit $\varepsilon_Y : Y^A \times A \to Y$ 는 평가 사상이다. Triangle identity는 "평가한 뒤 다시 묶으면 원래 함수" 라는 익숙한 등식이다.
 
 ## 확장과 제한
 
 환 준동형 `f : R -> S` 는 두 방향의 functor를 만든다.
 
-- 제한(restriction) `f^* : S`-가군 `-> R`-가군: 스칼라 곱을 `f` 로 끌어온다.
-- 확장(extension) `f_! = S ⊗_R -` : `R`-가군 `-> S`-가군.
+- 제한(restriction) $f^*$ 는 $S$-가군을 $R$-가군으로 보낸다. 스칼라 곱을 $f$ 로 끌어온다.
+- 확장(extension) $f_! = S \otimes_R -$ 는 $R$-가군을 $S$-가군으로 보낸다.
 
 이때
 
@@ -241,7 +241,7 @@ $$
 \operatorname{Hom}_{S}(S \otimes_R M, N) \cong \operatorname{Hom}_{R}(M, f^{*}N)
 $$
 
-이 성립하여 `S ⊗_R - ⊣ f^*` 다. 여기서 나오는 일반형이 tensor-hom adjunction
+이 성립하여 $S \otimes_R - \dashv f^*$ 다. 여기서 나오는 일반형이 tensor-hom adjunction
 
 $$
 \operatorname{Hom}_{S}(M \otimes_R N, P) \cong \operatorname{Hom}_{R}(M, \operatorname{Hom}_{S}(N, P))
