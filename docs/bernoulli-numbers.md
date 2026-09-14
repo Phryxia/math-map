@@ -219,7 +219,7 @@ $$
 \sum_{a=M}^{N}f(a)=\int_M^{N}f+\frac{f(M)+f(N)}2+\sum_{k=1}^{K}\frac{B_{2k}}{(2k)!}\Big(f^{(2k-1)}(N)-f^{(2k-1)}(M)\Big)+R_K
 $$
 
-합과 적분의 차이를 Bernoulli 수로 전개하는 공식이다. `\zeta(s)` 와 `\Gamma(s)` 의 고정밀 계산, Stirling 급수가 모두 여기서 나온다. `B_{2k}` 가 발산하므로 급수는 점근급수일 뿐이고, `K` 를 최적점에서 끊어야 한다.
+합과 적분의 차이를 Bernoulli 수로 전개하는 공식이다. `\zeta(s)` 와 `\Gamma(s)` 의 고정밀 계산, Stirling 급수가 모두 여기서 나온다. `B_{2k}` 가 발산하므로 급수는 점근급수일 뿐이고, `K` 를 최적점에서 끊어야 한다. 자세한 것은 [Euler–Maclaurin 공식과 점근급수](euler-maclaurin.md)에 있다.
 
 ## 조합론과 위상
 
@@ -237,5 +237,6 @@ $$
 ## 더 알아보기
 
 - [Stickelberger 원소와 Gauss 합](stickelberger.md)
+- [Euler–Maclaurin 공식과 점근급수](euler-maclaurin.md)
 
 #number_theory #analysis #computation
