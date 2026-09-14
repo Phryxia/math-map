@@ -198,8 +198,7 @@ print("           TW_1:  -1.2065     1.2680")
 
 ## 선수지식
 
-- [고윳값과 고유벡터](eigenvalues.md)
-- [중심극한정리](central-limit-theorem.md)
+- [Wigner 반원법칙](wigner-semicircle.md)
 - [Airy 함수와 회전점](airy-functions.md)
 
 ## 더 알아보기
