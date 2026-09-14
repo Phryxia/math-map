@@ -1,0 +1,161 @@
+# 대수적 K 이론과 Quillen–Lichtenbaum
+
+# 개요
+
+환 $R$ 에 아벨군의 열 $K_0(R),K_1(R),K_2(R),\dots$ 을 붙이는 이론이다. 낮은 차수의 뜻은 고전적이다.
+
+$$
+K_0(R)=\text{사영가군의 Grothendieck 군},\quad
+K_1(R)=GL(R)^{\mathrm{ab}},\quad
+K_2(R)=\text{Steinberg 군의 중심 확대}
+$$
+
+$R=\mathbb Z$ 면 $K_0=\mathbb Z$(계수), $K_1=\mathbb Z/2$(단수 $\pm1$), $K_2=\mathbb Z/2$ 로 전부 산술적인 양이다. 그런데 차수를 올리면 사정이 달라진다. $K_3(\mathbb Z)=\mathbb Z/48$ 이고, 이 48 은 **구면의 안정 호모토피군에 나타나는 바로 그 수**다.
+
+$$
+\text{대수}\ \longleftrightarrow\ \text{위상}\ \longleftrightarrow\ \text{수론}
+$$
+
+세 방향이 한 대상에서 만난다는 것이 이 이론의 성격이다. Quillen 이 $K_n$ 을 분류공간의 호모토피군으로 정의하면서 [호몰로지](homology.md)의 기법이 전부 들어왔고, Quillen–Lichtenbaum 추측(이제 정리)이 $K_n(\mathbb Z)$ 를 **에탈 코호몰로지로 계산 가능하게** 만들면서 [Galois 표현](galois-representations.md)과 순환체의 산술이 들어왔다. 그 결과 $K_{4k}(\mathbb Z)$ 의 소멸이 [Vandiver 추측](vandiver-conjecture.md)과 동치가 된다. 위상수학의 계산 문제와 19 세기 수론의 미해결 문제가 같은 문제였다는 것이다.
+
+# 직관
+
+## 왜 군을 하나가 아니라 열로 만드는가
+
+$K_0$ 은 가군을 분류하고 $K_1$ 은 가군의 자기동형을 분류한다. 자기동형 사이의 관계, 그 관계 사이의 관계로 올라가면 자연스럽게 열이 생긴다. 이것을 정리하는 방법이 **공간을 만들어 호모토피군을 보는 것**이다.
+
+$$
+K_n(R)=\pi_n\big(BGL(R)^{+}\times K_0(R)\big)\qquad(n\ge1)
+$$
+
+Quillen 의 plus 구성은 분류공간 $BGL(R)$ 에 세포를 붙여 기본군을 아벨화하되 **호몰로지는 바꾸지 않는** 공간을 만든다. 호몰로지를 보존하면서 호모토피만 손보는 이 조작이 가능한 이유는 $GL(R)$ 의 교환자 부분군이 완전군이기 때문이다. 정의가 기교적으로 보이지만, 결과로 나오는 열은 예상되는 모든 성질(국소화 완전열, 곱 구조, 함자성)을 만족한다.
+
+## 왜 위상의 수가 나오는가
+
+$K_3(\mathbb Z)=\mathbb Z/48$ 의 48, $K_7(\mathbb Z)=\mathbb Z/240$ 의 240 은 Bernoulli 수의 분모에서 온다. $\zeta(-1)=-\tfrac1{12}$, $\zeta(-3)=\tfrac1{120}$ 이고 여기에 2 를 곱한 값이다. 같은 수가 구면의 안정 호모토피군의 im $J$ 부분에도 나타난다.
+
+이 일치는 우연이 아니다. **$\mathbb Z$ 의 $K$ 군은 $\zeta$ 의 특수값을 재고 있다**는 것이 현대적 설명이고, 그 설명을 정확한 정리로 만든 것이 Quillen–Lichtenbaum 이다. 분모는 [Bernoulli 수](bernoulli-numbers.md)의 von Staudt–Clausen 이 결정하고, 분자는 순환체의 류군이 결정한다.
+
+## 에탈 코호몰로지로 내려가기
+
+$K$ 군을 직접 계산하는 것은 어렵다. 대신 $K$ 이론에서 에탈 코호몰로지로 가는 사상을 만들고, 그것이 **차수가 충분히 높으면 동형**임을 보이는 것이 전략이다.
+
+$$
+K_n(\mathcal O_F;\mathbb Z_p)\ \longrightarrow\ K^{\text{ét}}_n(\mathcal O_F;\mathbb Z_p)
+$$
+
+우변은 Galois 코호몰로지로 계산되고, 수체의 경우 그것은 곧 류군과 단수군의 정보다. 이 사상이 동형이라는 것이 Quillen–Lichtenbaum 추측이고, Voevodsky 의 노름 잉여 동형 정리(Bloch–Kato 추측) 이후 정리가 되었다. **계산 불가능한 쪽을 계산 가능한 쪽으로 옮기는 다리**가 완성된 것이다.
+
+```mermaid
+flowchart TD
+  RING["환 R"] --> K0["K_0: 사영가군"]
+  RING --> K1["K_1: GL 의 아벨화"]
+  RING --> QUILLEN["Quillen: BGL(R)^+ 의 호모토피군"]
+  QUILLEN --> KN["K_n(R), n >= 0"]
+  KN --> QL["Quillen-Lichtenbaum<br/>에탈 코호몰로지와 비교"]
+  QL --> ET["Galois 코호몰로지<br/>류군과 단수군"]
+  ET --> ZETA["zeta 의 특수값"]
+  ET --> VAND["K_{4k}(Z) = 0 <-> Vandiver"]
+  KN --> TOP["구면의 안정 호모토피<br/>im J 와 같은 분모"]
+```
+
+# 정의
+
+## 낮은 차수
+
+- $K_0(R)$: 유한생성 사영 $R$ 가군의 동형류가 직합에 대해 만드는 Grothendieck 군. $R$ 이 Dedekind 정역이면 $K_0(R)\cong\mathbb Z\oplus\mathrm{Cl}(R)$ 이다.
+- $K_1(R)=GL(R)/E(R)$. 가환환이면 $\det$ 이 $R^{\times}$ 로의 분해를 주고, $\mathcal O_F$ 에서는 $K_1=\mathcal O_F^{\times}$ 다.
+- $K_2(R)$: Steinberg 군 $St(R)\to E(R)$ 의 핵. 체에서는 Matsumoto 정리로 기호 $\{a,b\}$ 와 $\{a,1-a\}=1$ 이라는 관계만으로 제시된다.
+
+$K_0$ 이 류군을, $K_1$ 이 단수군을 담는다는 점에서 **$K$ 이론은 대수적 수론의 두 기본 불변량을 한 열로 묶는 틀**이다.
+
+## Quillen 의 정의
+
+$n\ge1$ 에 대해 $K_n(R)=\pi_n\big(BGL(R)^{+}\big)$ 로 두고 $K_0$ 을 따로 붙인다. 정확계열, 국소화열, 곱 구조 같은 형식적 성질이 모두 이 정의에서 나온다. 대표적인 것이 Dedekind 정역 $\mathcal O_F$ 와 그 분수체 $F$ 를 잇는 국소화 완전열이다.
+
+$$
+\cdots\to\bigoplus_{\mathfrak p}K_n(\mathcal O/\mathfrak p)\to K_n(\mathcal O_F)\to K_n(F)\to\bigoplus_{\mathfrak p}K_{n-1}(\mathcal O/\mathfrak p)\to\cdots
+$$
+
+유한체의 $K$ 군은 Quillen 이 완전히 계산했으므로($K_{2i-1}(\mathbb F_q)=\mathbb Z/(q^{i}-1)$, 짝수 차수는 0), 이 열이 수체 쪽 계산의 출발점이 된다.
+
+## Quillen–Lichtenbaum
+
+**정리(Voevodsky, Rost, Suslin 등).** $F$ 가 수체, $p$ 가 소수일 때 $n\ge2$ 이면 $K$ 이론에서 에탈 $K$ 이론으로 가는 사상
+
+$$
+K_n(\mathcal O_F[1/p];\mathbb Z_p)\ \xrightarrow{\ \sim\ }\ K^{\text{ét}}_n(\mathcal O_F[1/p];\mathbb Z_p)
+$$
+
+는 동형이다. 우변은 $H^{i}_{\text{ét}}(\mathcal O_F[1/p],\mathbb Z_p(j))$ 를 항으로 갖는 스펙트럼열로 계산된다.
+
+# 성질
+
+## $\mathbb Z$ 의 $K$ 군
+
+확실히 알려진 낮은 차수는 다음과 같다.
+
+| $n$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| $K_n(\mathbb Z)$ | $\mathbb Z$ | $\mathbb Z/2$ | $\mathbb Z/2$ | $\mathbb Z/48$ | $0$ | $\mathbb Z$ | $0$ | $\mathbb Z/240$ |
+
+$K_5(\mathbb Z)=\mathbb Z$ 의 계수 1 은 Borel 이 계산한 것으로, 일반적으로 $K_{2i+1}(\mathcal O_F)$ 의 계수는 $\zeta_F$ 의 $s=-i$ 에서의 소멸 차수와 같다. **유리계수 부분은 Borel 이 해석적으로, 비틀림 부분은 Quillen–Lichtenbaum 이 산술적으로 답한다**는 분업이다.
+
+## Vandiver 와의 동치
+
+$K_{4k}(\mathbb Z)$ 는 순환체 $\mathbb Q(\mu_p)$ 의 류군의 짝수 지표 성분으로 표현되고, 그 결과
+
+$$
+K_{4k}(\mathbb Z)=0\ \text{(모든 }k\ge1)\quad\Longleftrightarrow\quad \text{Vandiver 추측}
+$$
+
+이 성립한다. 표의 $K_4(\mathbb Z)=0$ 은 Rognes 가 Vandiver 와 독립적으로 증명했고, 더 높은 $K_{4k}$ 는 소수 범위마다 Vandiver 의 검증에 기대고 있다. **위상수학의 계산이 수론의 미해결 추측에 걸려 있는 드문 예**이고, 거꾸로 $K$ 이론 쪽의 어떤 소멸 정리가 나오면 Vandiver 가 따라온다는 뜻이기도 하다. 같은 사정이 [Greenberg 추측](greenberg-conjecture.md)의 $\lambda^{+}=0$ 과도 이어진다.
+
+## $\zeta$ 특수값과의 관계
+
+$F$ 가 총실수체면 Lichtenbaum 예상은 다음 꼴이다.
+
+$$
+\big|\zeta_F(1-2k)\big|\ \doteq\ \frac{\big|K_{4k-2}(\mathcal O_F)\big|}{\big|K_{4k-1}(\mathcal O_F)\big|}
+$$
+
+(2 를 법으로 하는 애매함을 제외하고.) 좌변은 해석, 우변은 위상이다. 이 등식은 Mazur–Wiles 의 [주추측](iwasawa-main-conjecture.md) 증명에 의해 홀수 부분에서 알려져 있고, 2 부분은 따로 처리되었다. **류수 공식의 고차 판본**이라 부를 만한 진술이며, 이런 형태의 예상이 Beilinson 예상으로 일반화된다.
+
+## 계산이 어려운 이유
+
+$K_n(\mathbb Z)$ 는 $n$ 이 커질수록 손으로 계산할 수 없다. 정의가 호모토피군이라 직접 접근이 막혀 있고, 에탈 쪽으로 옮겨도 순환체의 류군이 필요해진다. 그래서 **완전한 답은 Vandiver 를 가정해야 나오고**, 가정 없이 아는 것은 주기적 구조의 일부뿐이다. 이 상황이 대수적 $K$ 이론을 "구조는 아름답고 계산은 잔인한" 이론으로 만든다.
+
+# 활용
+
+## 위상수학: 수술 이론과 Whitehead 군
+
+$K_1(\mathbb Z[\pi])$ 의 몫인 Whitehead 군 $\mathrm{Wh}(\pi)$ 가 $h$ 코보르디즘의 분류를 지배한다. $\mathrm{Wh}(\pi)=0$ 이면 $h$ 코보르디즘이 곱과 같아져 고차원 Poincaré 추측의 증명이 작동한다. 군환의 $K$ 이론이 다양체의 기하를 통제한다는 이 사실이 $K$ 이론이 위상수학에서 필수 도구가 된 계기다.
+
+## 수론: 정규화자와 특수값
+
+$K$ 군의 유리계수 부분에서 정의되는 Borel 정규화자가 $\zeta_F$ 의 특수값을 준다. Dirichlet 단수 정리가 $K_1$ 단계의 진술이라면, Borel 의 정리는 그 모든 차수 판본이다. **단수 정규화자의 고차 유비**라는 관점이 Beilinson 예상의 출발점이고, 여기서 다시 $L$ 함수의 특수값이라는 주제로 이어진다.
+
+## 동기 코호몰로지와의 연결
+
+Quillen–Lichtenbaum 의 증명은 $K$ 이론을 동기 코호몰로지로 번역하고 거기서 노름 잉여 동형 정리를 쓰는 경로를 거친다. 그 결과로 Milnor $K$ 이론과 Galois 코호몰로지 사이의 동형
+
+$$
+K^{M}_{n}(F)/m\ \xrightarrow{\ \sim\ }\ H^{n}_{\text{ét}}\big(F,\mu_m^{\otimes n}\big)
+$$
+
+이 확립되었다. $n=1$ 은 Kummer 이론, $n=2$ 는 Merkurjev–Suslin 이며 [Brauer 군](brauer-groups.md)의 구조 정리를 포함한다. **고전 산술의 여러 정리가 하나의 정리의 낮은 차수였다**는 것이 이 결과의 의미다.[^1]
+
+[^1]: D. Quillen, *Higher algebraic K-theory I*, Lecture Notes in Math. 341 (1973). 표준 교과서는 C. Weibel, *The K-book: An Introduction to Algebraic K-theory* (2013) 이며 $K_n(\mathbb Z)$ 의 표와 Vandiver 와의 동치가 6 장에 정리되어 있다. Quillen–Lichtenbaum 의 증명 경로는 V. Voevodsky, *On motivic cohomology with Z/l coefficients*, Ann. of Math. 174 (2011).
+
+# 연관 문서
+
+## 선수지식
+
+- [단체 호몰로지](homology.md)
+- [Galois 표현과 에탈 코호몰로지](galois-representations.md)
+
+## 더 알아보기
+
+- 아직 연결한 문서가 없다.
+
+#algebra #algebraic_topology #number_theory

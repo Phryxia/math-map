@@ -171,5 +171,6 @@ print(b0, b1)                              # 1 1  -> 원과 같은 Betti 수
 - [de Rham 코호몰로지](de-rham-cohomology.md)
 - [Galois 표현과 에탈 코호몰로지](galois-representations.md)
 - [Khovanov 호몰로지](khovanov-homology.md)
+- [대수적 K 이론과 Quillen–Lichtenbaum](algebraic-k-theory.md)
 
 #algebraic_topology
