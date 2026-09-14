@@ -190,6 +190,6 @@ print("\n최소 고정점만이 프로그램이 실제로 계산하는 것을 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [최단경로와 Bellman 방정식](shortest-paths.md)
 
 #order_theory #computation #logic
