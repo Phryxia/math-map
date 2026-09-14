@@ -267,6 +267,6 @@ print("\n매끄러운 변형환은 계수환을 키우면 점이 늘고, 관계�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
 
 #number_theory #group_theory #ring_theory #construction
