@@ -186,5 +186,6 @@ $$
 ## 더 알아보기
 
 - [분할수와 원법](partitions.md)
+- [Stokes 현상과 재합산](stokes-phenomenon.md)
 
 #analysis #combinatorics #computation
