@@ -8,17 +8,17 @@ $$
 s_\lambda s_\mu=\sum_\nu c^\nu_{\lambda\mu}\,s_\nu
 $$
 
-가 격자 낱말을 세는 규칙으로 주어진다고 했다. 규칙이 있으니 계산은 된다. 그런데 규칙은 답을 세어 줄 뿐 구조를 보여 주지 않는다. 가장 답답한 예가 대칭성이다. 표현론에서 `V_\lambda\otimes V_\mu\cong V_\mu\otimes V_\lambda` 이므로
+가 격자 낱말을 세는 규칙으로 주어진다고 했다. 규칙이 있으니 계산은 된다. 그런데 규칙은 답을 세어 줄 뿐 구조를 보여 주지 않는다. 가장 답답한 예가 대칭성이다. 표현론에서 $V_\lambda\otimes V_\mu\cong V_\mu\otimes V_\lambda$ 이므로
 
 $$
 c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}
 $$
 
-가 당연한데, 격자 낱말 쪽에서는 `\lambda` 와 `\mu` 가 완전히 다른 역할(모양과 내용)을 맡아 이 등식이 전혀 보이지 않는다. 두 집합 사이의 전단사를 손으로 만드는 것은 어려운 문제다.
+가 당연한데, 격자 낱말 쪽에서는 $\lambda$ 와 $\mu$ 가 완전히 다른 역할(모양과 내용)을 맡아 이 등식이 전혀 보이지 않는다. 두 집합 사이의 전단사를 손으로 만드는 것은 어려운 문제다.
 
-Knutson 과 Tao 는 계수를 **볼록 다면체의 정수점 개수**로 다시 쓰는 모형을 도입해 이 문제를 정리했다.[^1] `\mathrm{hive}` 는 삼각형 격자 위의 수 배열이고 조건은 부등식뿐이라, 대칭성이 다면체의 대칭으로 눈에 보인다. 더 중요한 결과가 따라 나왔다.
+Knutson 과 Tao 는 계수를 **볼록 다면체의 정수점 개수**로 다시 쓰는 모형을 도입해 이 문제를 정리했다.[^1] $\mathrm{hive}$ 는 삼각형 격자 위의 수 배열이고 조건은 부등식뿐이라, 대칭성이 다면체의 대칭으로 눈에 보인다. 더 중요한 결과가 따라 나왔다.
 
-> **Saturation 정리.** `c^{N\nu}_{N\lambda,N\mu}\ne0` 인 `N\ge1` 이 있으면 `c^\nu_{\lambda\mu}\ne0` 이다.
+> **Saturation 정리.** $c^{N\nu}_{N\lambda,N\mu}\ne0$ 인 $N\ge1$ 이 있으면 $c^\nu_{\lambda\mu}\ne0$ 이다.
 
 이 한 줄이 Horn 추측을 해결한다. 두 에르미트 행렬의 합의 고유값이 어떤 값을 가질 수 있는가라는 선형대수 문제가, LR 수가 `0` 이 아닌 조건과 정확히 같은 것이었기 때문이다.
 
@@ -29,8 +29,8 @@ Knutson 과 Tao 는 계수를 **볼록 다면체의 정수점 개수**로 다시
 조합적 규칙은 대상을 하나씩 열거한다. 다면체 모형은 대상을 부등식 계로 기술한다. 후자에는 조합론에 없는 도구가 붙는다.
 
 - 부등식의 대칭이 곧 계수의 대칭이다.
-- `c\ne0` 판정이 "다면체가 정수점을 갖는가" 이고, 정수 조건을 풀면 선형계획법으로 다항시간에 풀린다.
-- `\lambda,\mu,\nu` 를 `N` 배 하면 다면체가 `N` 배 팽창한다. 팽창과 정수점의 관계가 곧 saturation 이다.
+- $c\ne0$ 판정이 "다면체가 정수점을 갖는가" 이고, 정수 조건을 풀면 선형계획법으로 다항시간에 풀린다.
+- $\lambda,\mu,\nu$ 를 `N` 배 하면 다면체가 `N` 배 팽창한다. 팽창과 정수점의 관계가 곧 saturation 이다.
 
 마지막 항목이 핵심이다. 일반적으로 다면체가 유리점을 가져도 정수점을 갖는다는 보장이 없다. hive 다면체는 그 보장이 성립하는 특별한 다면체이며, 그 사실을 증명하는 것이 Knutson–Tao 작업의 어려운 부분이다.
 
@@ -42,13 +42,13 @@ $$
 (\text{짧은 대각선 양 끝의 합})\;\ge\;(\text{긴 대각선 양 끝의 합})
 $$
 
-이 성립한다는 것, 즉 배열이 **오목**하다는 것이다. 세 변의 값 증분을 `\lambda`, `\mu`, `\nu` 로 지정하면 그런 hive 의 개수가 정확히 `c^\nu_{\lambda\mu}` 다.
+이 성립한다는 것, 즉 배열이 **오목**하다는 것이다. 세 변의 값 증분을 $\lambda$, $\mu$, $\nu$ 로 지정하면 그런 hive 의 개수가 정확히 $c^\nu_{\lambda\mu}$ 다.
 
-세 변이 대칭적으로 등장하므로 `\lambda\leftrightarrow\mu` 교환은 삼각형을 뒤집는 것에 불과하다. 규칙 쪽에서 보이지 않던 대칭이 그림에서 자명해진다.
+세 변이 대칭적으로 등장하므로 $\lambda\leftrightarrow\mu$ 교환은 삼각형을 뒤집는 것에 불과하다. 규칙 쪽에서 보이지 않던 대칭이 그림에서 자명해진다.
 
 ## honeycomb: hive 의 쌍대
 
-hive 의 오목성 조건을 쌍대로 옮기면 평면 위 세 방향(`0^\circ,120^\circ,240^\circ`) 선분들의 그래프가 된다. 각 삼중점에서 세 선분이 만나고 **장력이 균형**을 이룬다. 바깥으로 뻗는 반직선의 좌표가 `\lambda,\mu,\nu` 를 준다.
+hive 의 오목성 조건을 쌍대로 옮기면 평면 위 세 방향($0^\circ,120^\circ,240^\circ$) 선분들의 그래프가 된다. 각 삼중점에서 세 선분이 만나고 **장력이 균형**을 이룬다. 바깥으로 뻗는 반직선의 좌표가 $\lambda,\mu,\nu$ 를 준다.
 
 ```mermaid
 graph LR
@@ -63,7 +63,7 @@ honeycomb 이 유용한 이유는 **극점을 손으로 다룰 수 있다**는 �
 
 ## Horn 문제와의 만남
 
-에르미트 행렬 `A,B` 의 고유값을 내림차순으로 `\alpha,\beta` 라 하고 `C=A+B` 의 고유값을 `\gamma` 라 하자. `\gamma` 는 대각합 조건 `\sum\gamma=\sum\alpha+\sum\beta` 말고 어떤 제약을 받는가. `n=2` 에서는 부등식 몇 개로 끝나지만 일반 `n` 에서는 답이 오래 열려 있었다. Horn 은 1962 년에 재귀적으로 정의되는 부등식 계
+에르미트 행렬 `A,B` 의 고유값을 내림차순으로 $\alpha,\beta$ 라 하고 `C=A+B` 의 고유값을 $\gamma$ 라 하자. $\gamma$ 는 대각합 조건 $\sum\gamma=\sum\alpha+\sum\beta$ 말고 어떤 제약을 받는가. `n=2` 에서는 부등식 몇 개로 끝나지만 일반 `n` 에서는 답이 오래 열려 있었다. Horn 은 1962 년에 재귀적으로 정의되는 부등식 계
 
 $$
 \sum_{k\in K}\gamma_k\le\sum_{i\in I}\alpha_i+\sum_{j\in J}\beta_j
@@ -71,7 +71,7 @@ $$
 
 를 제시하고 이것이 완전하리라 추측했다. 여기서 `(I,J,K)` 는 더 작은 크기의 Horn 문제에서 나오는 삼중항이다.
 
-Klyachko 가 이 문제를 기하 불변식론으로 옮겨 "`\gamma` 가 가능하다 `\iff` `c^{N\gamma}_{N\alpha,N\beta}\ne0` 인 `N` 이 있다" 를 증명했다. 남은 것은 `N` 을 없애는 일이었고, 그것이 saturation 정리다. 두 결과가 맞물려 Horn 추측이 정리가 되었다. **선형대수의 스펙트럼 문제와 표현론의 텐서곱 분해가 같은 다면체를 보고 있었다.**
+Klyachko 가 이 문제를 기하 불변식론으로 옮겨 "$\gamma$ 가 가능하다 $\iff$ $c^{N\gamma}_{N\alpha,N\beta}\ne0$ 인 `N` 이 있다" 를 증명했다. 남은 것은 `N` 을 없애는 일이었고, 그것이 saturation 정리다. 두 결과가 맞물려 Horn 추측이 정리가 되었다. **선형대수의 스펙트럼 문제와 표현론의 텐서곱 분해가 같은 다면체를 보고 있었다.**
 
 ## 규칙으로 직접 세어 보기
 
@@ -127,13 +127,13 @@ for (const lam of parts(3, 3)) for (const mu of parts(3, 3)) for (const nu of pa
 console.log(`saturation 확인: ${tested} 쌍, 어긋남 ${bad}`);   // 99 쌍, 어긋남 0
 ```
 
-값 자체는 `c^{2\nu}_{2\lambda,2\mu}\ge c^\nu_{\lambda\mu}` 로 커지지만 **`0` 인지 아닌지**는 정확히 보존된다. 이 현상이 정리로 증명된 것이 saturation 이다.
+값 자체는 $c^{2\nu}_{2\lambda,2\mu}\ge c^\nu_{\lambda\mu}$ 로 커지지만 **`0` 인지 아닌지**는 정확히 보존된다. 이 현상이 정리로 증명된 것이 saturation 이다.
 
 # 정의
 
 ## hive
 
-`\Delta_n` 을 한 변에 `n+1` 개의 격자점이 놓인 삼각형이라 하자. 함수 `h\colon\Delta_n\cap\mathbb Z^2\to\mathbb R` 가 **hive** 라 함은, 인접한 두 작은 삼각형이 이루는 모든 마름모 `(a,b,c,d)`(`b,c` 가 짧은 대각선)에 대해
+$\Delta_n$ 을 한 변에 `n+1` 개의 격자점이 놓인 삼각형이라 하자. 함수 $h\colon\Delta_n\cap\mathbb Z^2\to\mathbb R$ 가 **hive** 라 함은, 인접한 두 작은 삼각형이 이루는 모든 마름모 `(a,b,c,d)`(`b,c` 가 짧은 대각선)에 대해
 
 $$
 h(b)+h(c)\;\ge\;h(a)+h(d)
@@ -141,7 +141,7 @@ $$
 
 가 성립하는 것이다. 세 종류의 마름모가 있으므로 부등식도 세 묶음이다.
 
-경계 조건은 이렇게 준다. 세 변을 따라가며 이웃한 값의 차를 읽으면 각각 `\lambda`, `\mu`, `\nu` 의 성분이 되도록 `h` 를 규격화한다. 그러면
+경계 조건은 이렇게 준다. 세 변을 따라가며 이웃한 값의 차를 읽으면 각각 $\lambda$, $\mu$, $\nu$ 의 성분이 되도록 `h` 를 규격화한다. 그러면
 
 $$
 c^\nu_{\lambda\mu}=\#\bigl\{\text{경계가 }(\lambda,\mu,\nu)\text{ 인 정수 hive}\bigr\}
@@ -149,7 +149,7 @@ $$
 
 ## honeycomb
 
-honeycomb 은 평면 위의 선분과 반직선으로 이루어진 그래프로, 모든 변이 세 방향 중 하나이고 각 꼭짓점에서 만나는 세 변의 방향 벡터 합이 `0` 이다. 세 방향의 반직선 좌표가 `\lambda,\mu,\nu` 를 준다. hive 의 오목 함수와 honeycomb 은 Legendre 변환으로 대응하며, 이 쌍대성 아래 hive 의 부등식이 honeycomb 의 변 길이가 음이 아니라는 조건이 된다.
+honeycomb 은 평면 위의 선분과 반직선으로 이루어진 그래프로, 모든 변이 세 방향 중 하나이고 각 꼭짓점에서 만나는 세 변의 방향 벡터 합이 `0` 이다. 세 방향의 반직선 좌표가 $\lambda,\mu,\nu$ 를 준다. hive 의 오목 함수와 honeycomb 은 Legendre 변환으로 대응하며, 이 쌍대성 아래 hive 의 부등식이 honeycomb 의 변 길이가 음이 아니라는 조건이 된다.
 
 ## Horn 부등식
 
@@ -159,7 +159,7 @@ $$
 \sum_{i\in I}i+\sum_{j\in J}j=\sum_{k\in K}k+\binom{r+1}{2}
 $$
 
-이고, 모든 `s<r` 과 `(F,G,H)\in T^r_s` 에 대해
+이고, 모든 `s<r` 과 $(F,G,H)\in T^r_s$ 에 대해
 
 $$
 \sum_{f\in F}i_f+\sum_{g\in G}j_g\le\sum_{h\in H}k_h+\binom{s+1}{2}
@@ -169,33 +169,33 @@ $$
 
 ## Horn 문제의 답
 
-`\alpha,\beta,\gamma` 가 `n` 개씩의 내림차순 실수열이라 하자. `A+B=C` 이고 고유값이 각각 `\alpha,\beta,\gamma` 인 에르미트 행렬이 존재할 필요충분조건은
+$\alpha,\beta,\gamma$ 가 `n` 개씩의 내림차순 실수열이라 하자. `A+B=C` 이고 고유값이 각각 $\alpha,\beta,\gamma$ 인 에르미트 행렬이 존재할 필요충분조건은
 
 $$
 \sum\gamma_k=\sum\alpha_i+\sum\beta_j\quad\text{이고}\quad
 \sum_{k\in K}\gamma_k\le\sum_{i\in I}\alpha_i+\sum_{j\in J}\beta_j\ \ \bigl(\forall(I,J,K)\in T^n_r,\ \forall r<n\bigr)
 $$
 
-이다. 그리고 정수열인 경우 이 조건은 `c^\gamma_{\alpha\beta}\ne0` 과 동치다.
+이다. 그리고 정수열인 경우 이 조건은 $c^\gamma_{\alpha\beta}\ne0$ 과 동치다.
 
 # 성질
 
 ## Saturation 정리의 위치
 
-정리는 "hive 다면체가 비어 있지 않으면 정수점을 갖는다" 는 진술이다. 유사한 다면체에서 이런 성질은 흔하지 않다. 예를 들어 `\mathrm{GL}_n` 대신 다른 군의 텐서곱 중복도를 세는 다면체는 saturation 을 만족하지 않고, 실제로 `\mathrm{Sp}_{2n}` 에서는 반례가 있다. `\mathrm{GL}_n` 에서만 성립하는 이 특수성이 honeycomb 의 극점 구조에서 나온다.
+정리는 "hive 다면체가 비어 있지 않으면 정수점을 갖는다" 는 진술이다. 유사한 다면체에서 이런 성질은 흔하지 않다. 예를 들어 $\mathrm{GL}_n$ 대신 다른 군의 텐서곱 중복도를 세는 다면체는 saturation 을 만족하지 않고, 실제로 $\mathrm{Sp}_{2n}$ 에서는 반례가 있다. $\mathrm{GL}_n$ 에서만 성립하는 이 특수성이 honeycomb 의 극점 구조에서 나온다.
 
 ## 복잡도의 갈림
 
 | 문제 | 복잡도 |
 |---|---|
-| `c^\nu_{\lambda\mu}` 의 값 계산 | `\#\mathrm P`-완전 |
-| `c^\nu_{\lambda\mu}>0` 인지 판정 | 다항시간 |
+| $c^\nu_{\lambda\mu}$ 의 값 계산 | $\#\mathrm P$-완전 |
+| $c^\nu_{\lambda\mu}>0$ 인지 판정 | 다항시간 |
 
-값을 세는 것은 어렵지만 `0` 인지 아닌지는 쉽다. 판정이 쉬운 이유가 saturation 이다. 정수점의 존재를 유리점의 존재로 바꾸면 선형계획법이 되고, 부등식의 개수가 다항적이므로 다항시간에 끝난다. **어떤 조합적 양이 세기는 어려워도 소멸 여부는 쉬울 수 있다**는 이 대비가 기하학적 복잡도 이론(GCT)이 `\mathrm{VP}` 대 `\mathrm{VNP}` 를 공략할 때 기대는 현상이다. Mulmuley 와 Sohoni 의 계획은 Kronecker 계수 같은 더 어려운 중복도에도 비슷한 구조가 있기를 바라는데, 그쪽은 아직 saturation 조차 알려져 있지 않다.
+값을 세는 것은 어렵지만 `0` 인지 아닌지는 쉽다. 판정이 쉬운 이유가 saturation 이다. 정수점의 존재를 유리점의 존재로 바꾸면 선형계획법이 되고, 부등식의 개수가 다항적이므로 다항시간에 끝난다. **어떤 조합적 양이 세기는 어려워도 소멸 여부는 쉬울 수 있다**는 이 대비가 기하학적 복잡도 이론(GCT)이 $\mathrm{VP}$ 대 $\mathrm{VNP}$ 를 공략할 때 기대는 현상이다. Mulmuley 와 Sohoni 의 계획은 Kronecker 계수 같은 더 어려운 중복도에도 비슷한 구조가 있기를 바라는데, 그쪽은 아직 saturation 조차 알려져 있지 않다.
 
 ## 왜 대칭성이 보이게 되었나
 
-hive 삼각형의 세 변은 대등하다. `\lambda,\mu,\nu` 를 순환시키거나 뒤집는 조작이 삼각형의 대칭군 `S_3` 작용에 해당하고, 부등식 계는 그 작용에 불변이다. 따라서
+hive 삼각형의 세 변은 대등하다. $\lambda,\mu,\nu$ 를 순환시키거나 뒤집는 조작이 삼각형의 대칭군 `S_3` 작용에 해당하고, 부등식 계는 그 작용에 불변이다. 따라서
 
 $$
 c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}=c^{\nu^{\!*}}_{\lambda^{\!*}\mu^{\!*}}
@@ -215,13 +215,13 @@ Berenstein–Zelevinsky 다면체, Gelfand–Tsetlin 패턴, puzzle 규칙이 �
 
 ## Schubert 셈법의 구조상수
 
-`\mathrm{Gr}(k,n)` 의 코호몰로지 곱셈 구조상수가 LR 수이므로, hive 모형은 Schubert 순환의 교차수를 다면체의 정수점으로 세는 방법이 된다. 교차수가 음이 아니라는 기하적 사실이 부등식 계의 해 개수라는 형태로 다시 나타난다.
+$\mathrm{Gr}(k,n)$ 의 코호몰로지 곱셈 구조상수가 LR 수이므로, hive 모형은 Schubert 순환의 교차수를 다면체의 정수점으로 세는 방법이 된다. 교차수가 음이 아니라는 기하적 사실이 부등식 계의 해 개수라는 형태로 다시 나타난다.
 
 ## 표현론의 포화 현상
 
-`c^{N\nu}_{N\lambda,N\mu}` 를 `N` 의 함수로 보면 다면체의 Ehrhart 준다항식이 된다. 곧 텐서곱 중복도의 점근 거동이 다면체의 부피로 읽힌다. 이 관점이 반군 `\{(\lambda,\mu,\nu):c^\nu_{\lambda\mu}\ne0\}` 의 유한생성성(Klyachko, Belkale)과 그 반군의 면 구조를 다루는 이론으로 이어진다.
+$c^{N\nu}_{N\lambda,N\mu}$ 를 `N` 의 함수로 보면 다면체의 Ehrhart 준다항식이 된다. 곧 텐서곱 중복도의 점근 거동이 다면체의 부피로 읽힌다. 이 관점이 반군 $\{(\lambda,\mu,\nu):c^\nu_{\lambda\mu}\ne0\}$ 의 유한생성성(Klyachko, Belkale)과 그 반군의 면 구조를 다루는 이론으로 이어진다.
 
-[^1]: A. Knutson, T. Tao, *The honeycomb model of* `\mathrm{GL}_n(\mathbb C)` *tensor products I: proof of the saturation conjecture*, J. Amer. Math. Soc. **12** (1999), 1055–1090. 대칭성과 다면체 구조는 같은 저자와 C. Woodward 의 후속 논문에 있다. Horn 문제 전체의 개관은 W. Fulton, *Eigenvalues, invariant factors, highest weights, and Schubert calculus*, Bull. Amer. Math. Soc. **37** (2000). 본문의 LR 계수 계산과 saturation 실험은 직접 한 것이다.
+[^1]: A. Knutson, T. Tao, *The honeycomb model of* $\mathrm{GL}_n(\mathbb C)$ *tensor products I: proof of the saturation conjecture*, J. Amer. Math. Soc. **12** (1999), 1055–1090. 대칭성과 다면체 구조는 같은 저자와 C. Woodward 의 후속 논문에 있다. Horn 문제 전체의 개관은 W. Fulton, *Eigenvalues, invariant factors, highest weights, and Schubert calculus*, Bull. Amer. Math. Soc. **37** (2000). 본문의 LR 계수 계산과 saturation 실험은 직접 한 것이다.
 
 # 연관 문서
 

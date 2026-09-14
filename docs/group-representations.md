@@ -71,7 +71,7 @@ $$
 - `χ_V(1) = dim V`.
 - `χ_V(hgh^{-1}) = χ_V(g)`. 즉 지표는 켤레류 함수(class function)다.
 - `χ_{V ⊕ W} = χ_V + χ_W`, `χ_{V ⊗ W} = χ_V · χ_W`. 두 번째는 [텐서곱](tensor-products.md)의 성질이다.
-- `ρ(g)` 는 `g^{|G|} = 1` 때문에 대각화 가능하고 고윳값이 1의 거듭제곱근이므로 `χ_V(g^{-1}) = \overline{χ_V(g)}`.
+- `ρ(g)` 는 `g^{|G|} = 1` 때문에 대각화 가능하고 고윳값이 1의 거듭제곱근이므로 $χ_V(g^{-1}) = \overline{χ_V(g)}$.
 
 류함수 공간에 내적을 준다.
 
@@ -117,7 +117,7 @@ $$
 \langle \chi_i, \chi_j \rangle = \delta_{ij}
 $$
 
-*증명 스케치.* `Hom(V, W)` 에 `g · f = σ(g) f ρ(g)^{-1}` 로 표현 구조를 주면 그 지표는 `χ_W \overline{χ_V}` 이고, 불변원소의 공간은 `Hom_G(V, W)` 다. 한편 평균 연산자
+*증명 스케치.* `Hom(V, W)` 에 `g · f = σ(g) f ρ(g)^{-1}` 로 표현 구조를 주면 그 지표는 $χ_W \overline{χ_V}$ 이고, 불변원소의 공간은 `Hom_G(V, W)` 다. 한편 평균 연산자
 
 $$
 P = \frac{1}{|G|}\sum_{g} \rho(g)
@@ -228,7 +228,7 @@ $$
 f(g) = \sum_{\chi} \hat{f}(\chi)\, \chi(g), \qquad \hat{f}(\chi) = \frac{1}{|G|}\sum_{g} f(g) \overline{\chi(g)}
 $$
 
-로 전개된다. `G = Z/n` 인 경우 지표가 `χ_k(j) = e^{2\pi i jk/n}` 이고 위 식이 정확히 [이산 Fourier 변환](fourier.md)이다. 즉 DFT는 순환군의 표현론이고, 비아벨군으로 확장하면 행렬 값을 갖는 Fourier 변환이 된다.[^1]
+로 전개된다. `G = Z/n` 인 경우 지표가 $χ_k(j) = e^{2\pi i jk/n}$ 이고 위 식이 정확히 [이산 Fourier 변환](fourier.md)이다. 즉 DFT는 순환군의 표현론이고, 비아벨군으로 확장하면 행렬 값을 갖는 Fourier 변환이 된다.[^1]
 
 ## 군론 자체로의 되먹임
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-[Monad](monads.md)는 수반에서 나온다. `F \dashv G` 가 있으면 `T = GF` 가 monad 가 되고, 이것은 계산 한 번으로 끝난다. 반대 방향은 그렇지 않다. monad `T` 가 주어졌을 때 `T = GF` 가 되는 수반은 하나가 아니라 여럿이며, 이들 전체가 하나의 범주를 이룬다.
+[Monad](monads.md)는 수반에서 나온다. $F \dashv G$ 가 있으면 `T = GF` 가 monad 가 되고, 이것은 계산 한 번으로 끝난다. 반대 방향은 그렇지 않다. monad `T` 가 주어졌을 때 `T = GF` 가 되는 수반은 하나가 아니라 여럿이며, 이들 전체가 하나의 범주를 이룬다.
 
 그 범주에 양 끝이 있다는 것이 이 문서의 내용이다. Kleisli 범주가 시작대상이고 Eilenberg–Moore 범주가 종단대상이다. 즉 `T` 를 낳는 가장 작은 분해와 가장 큰 분해가 존재하며, 다른 모든 분해가 그 사이에 낀다.
 
@@ -14,7 +14,7 @@
 
 `T` 가 리스트 monad 라 하자. `T`-대수는 리스트를 하나의 값으로 접는 방법이고, 법칙을 붙이면 정확히 monoid 다.
 
-이때 두 종류의 monoid 가 있다. 집합 `X` 위의 자유 monoid `X^*` 처럼 `T` 가 만들어 낸 것과, `(\mathbb Z, +)` 처럼 원래 있던 것이다. 둘 다 `T`-대수지만 전자는 아무 집합에서나 자동으로 생기고 후자는 그렇지 않다.
+이때 두 종류의 monoid 가 있다. 집합 `X` 위의 자유 monoid `X^*` 처럼 `T` 가 만들어 낸 것과, $(\mathbb Z, +)$ 처럼 원래 있던 것이다. 둘 다 `T`-대수지만 전자는 아무 집합에서나 자동으로 생기고 후자는 그렇지 않다.
 
 Kleisli 범주는 자유대수만 모은 것이고, Eilenberg–Moore 범주는 모든 대수를 모은 것이다. 전자가 후자의 충만한 부분범주가 되는 이유가 이것이다.
 
@@ -29,9 +29,9 @@ graph LR
 
 ## Kleisli 사상은 효과를 가진 함수다
 
-`X` 에서 `Y` 로 가는 Kleisli 사상은 `C` 의 사상 `X \to T(Y)` 다. `T` 가 "실패할 수 있음" 이면 부분함수이고, "여럿을 반환함" 이면 비결정적 함수이며, "로그를 남김" 이면 부작용이 있는 함수다.
+`X` 에서 `Y` 로 가는 Kleisli 사상은 `C` 의 사상 $X \to T(Y)$ 다. `T` 가 "실패할 수 있음" 이면 부분함수이고, "여럿을 반환함" 이면 비결정적 함수이며, "로그를 남김" 이면 부작용이 있는 함수다.
 
-이런 함수들을 그냥 이어 붙일 수 없다. `f : X \to T(Y)` 와 `g : Y \to T(Z)` 의 치역과 정의역이 맞지 않기 때문이다. monad 의 `\mu` 가 정확히 이 어긋남을 메워 합성을 만들어 주고, 그 결과가 하나의 범주가 된다는 것이 Kleisli 구성의 전부다.
+이런 함수들을 그냥 이어 붙일 수 없다. $f : X \to T(Y)$ 와 $g : Y \to T(Z)$ 의 치역과 정의역이 맞지 않기 때문이다. monad 의 $\mu$ 가 정확히 이 어긋남을 메워 합성을 만들어 주고, 그 결과가 하나의 범주가 된다는 것이 Kleisli 구성의 전부다.
 
 프로그래밍의 `bind` 가 이 합성이고, do 표기는 Kleisli 범주에서의 합성을 보통 함수 합성처럼 보이게 쓰는 문법이다.
 
@@ -43,85 +43,85 @@ graph LR
 
 ## 분해의 범주
 
-monad `T` 를 고정한다. 대상은 `T = GF` 이고 unit 과 `\mu` 가 monad 의 것과 일치하는 수반 `F \dashv G : \mathcal D \to \mathcal C` 이다.
+monad `T` 를 고정한다. 대상은 `T = GF` 이고 unit 과 $\mu$ 가 monad 의 것과 일치하는 수반 $F \dashv G : \mathcal D \to \mathcal C$ 이다.
 
-사상 `(\mathcal D, F, G) \to (\mathcal D', F', G')` 은 functor `K : \mathcal D \to \mathcal D'` 로 `KF = F'` 와 `G'K = G` 를 만족하는 것이다. 이 범주를 `\mathrm{Adj}(T)` 라 쓴다.
+사상 $(\mathcal D, F, G) \to (\mathcal D', F', G')$ 은 functor $K : \mathcal D \to \mathcal D'$ 로 `KF = F'` 와 `G'K = G` 를 만족하는 것이다. 이 범주를 $\mathrm{Adj}(T)$ 라 쓴다.
 
 ## Kleisli 범주
 
-`\mathcal C_T` 의 대상은 `\mathcal C` 의 대상과 같다. 사상은 다음이다.
+$\mathcal C_T$ 의 대상은 $\mathcal C$ 의 대상과 같다. 사상은 다음이다.
 
 $$
 \mathcal C_T(X,Y)=\mathcal C(X,T(Y))
 $$
 
-항등사상은 `\eta_X` 이고, `f : X \to T(Y)` 와 `g : Y \to T(Z)` 의 합성은 다음이다.
+항등사상은 $\eta_X$ 이고, $f : X \to T(Y)$ 와 $g : Y \to T(Z)$ 의 합성은 다음이다.
 
 $$
 g\odot f=\mu_Z\circ T(g)\circ f
 $$
 
-monad 법칙이 정확히 이 합성의 결합법칙과 단위법칙이 된다. 자유 functor `F_T : \mathcal C \to \mathcal C_T` 는 대상에 항등이고 사상 `f` 를 `\eta\circ f` 로 보내며, 망각 functor `G_T` 는 `X \mapsto T(X)` 다.
+monad 법칙이 정확히 이 합성의 결합법칙과 단위법칙이 된다. 자유 functor $F_T : \mathcal C \to \mathcal C_T$ 는 대상에 항등이고 사상 `f` 를 $\eta\circ f$ 로 보내며, 망각 functor `G_T` 는 $X \mapsto T(X)$ 다.
 
 ## Eilenberg–Moore 범주
 
-`\mathcal C^T` 의 대상은 `T`-대수 `(A, a: T(A)\to A)` 로 다음 두 법칙을 만족하는 것이다.
+$\mathcal C^T$ 의 대상은 `T`-대수 $(A, a: T(A)\to A)$ 로 다음 두 법칙을 만족하는 것이다.
 
 $$
 a\circ\eta_A=\mathrm{id}_A,\qquad a\circ\mu_A=a\circ T(a)
 $$
 
-사상 `(A,a) \to (B,b)` 는 `h : A \to B` 로 `h\circ a = b\circ T(h)` 를 만족하는 것이다. 망각 functor `G^T : \mathcal C^T \to \mathcal C` 는 `(A,a)\mapsto A` 이고, 그 left adjoint 는 자유대수 `X \mapsto (T(X), \mu_X)` 다.
+사상 $(A,a) \to (B,b)$ 는 $h : A \to B$ 로 $h\circ a = b\circ T(h)$ 를 만족하는 것이다. 망각 functor $G^T : \mathcal C^T \to \mathcal C$ 는 $(A,a)\mapsto A$ 이고, 그 left adjoint 는 자유대수 $X \mapsto (T(X), \mu_X)$ 다.
 
 ## 비교 functor
 
-임의의 분해 `F \dashv G : \mathcal D \to \mathcal C` 에 대해 다음이 `\mathrm{Adj}(T)` 의 사상이다.
+임의의 분해 $F \dashv G : \mathcal D \to \mathcal C$ 에 대해 다음이 $\mathrm{Adj}(T)$ 의 사상이다.
 
 $$
 K:\mathcal D\to\mathcal C^T,\qquad D\mapsto\big(G(D),\ G(\varepsilon_D)\big)
 $$
 
-`\varepsilon` 은 counit 이다. 이 `K` 를 비교 functor 라 한다.
+$\varepsilon$ 은 counit 이다. 이 `K` 를 비교 functor 라 한다.
 
 # 성질
 
 ## 양 끝이다
 
-`\mathcal C_T` 는 `\mathrm{Adj}(T)` 의 시작대상이고 `\mathcal C^T` 는 종단대상이다.
+$\mathcal C_T$ 는 $\mathrm{Adj}(T)$ 의 시작대상이고 $\mathcal C^T$ 는 종단대상이다.
 
 종단성은 위의 `K` 가 존재하고 유일함을 보이면 된다. 조건 `G^TK = G` 가 `K` 의 밑바탕 대상을 `G(D)` 로 강제하고, `KF = F^T` 가 자유대수 위에서의 값을 강제하며, 나머지는 자연성으로 결정된다.
 
-시작성은 대칭적이다. `L : \mathcal C_T \to \mathcal D` 를 `X \mapsto F(X)` 로 두면 조건이 이 정의를 강제한다. Kleisli 사상 `f : X \to T(Y)` 는 `F(X) \to F(Y)` 로 `\varepsilon_{F(Y)}\circ F(f)` 를 통해 옮겨진다.
+시작성은 대칭적이다. $L : \mathcal C_T \to \mathcal D$ 를 $X \mapsto F(X)$ 로 두면 조건이 이 정의를 강제한다. Kleisli 사상 $f : X \to T(Y)$ 는 $F(X) \to F(Y)$ 로 $\varepsilon_{F(Y)}\circ F(f)$ 를 통해 옮겨진다.
 
 ## Kleisli 는 자유대수들이다
 
-`\mathcal C^T` 로 가는 비교 functor 를 `\mathcal C_T` 에 적용하면 `X \mapsto (T(X),\mu_X)` 이고, 이것은 충만하고 충실하다. 즉 `\mathcal C_T` 는 자유대수들이 이루는 `\mathcal C^T` 의 충만한 부분범주와 동치다.
+$\mathcal C^T$ 로 가는 비교 functor 를 $\mathcal C_T$ 에 적용하면 $X \mapsto (T(X),\mu_X)$ 이고, 이것은 충만하고 충실하다. 즉 $\mathcal C_T$ 는 자유대수들이 이루는 $\mathcal C^T$ 의 충만한 부분범주와 동치다.
 
 $$
 \mathcal C^T\big((T(X),\mu_X),(T(Y),\mu_Y)\big)\cong\mathcal C(X,T(Y))=\mathcal C_T(X,Y)
 $$
 
-왼쪽에서 오른쪽은 `\eta_X` 와 합성하는 것이고, 오른쪽에서 왼쪽은 확장 연산 `(-)^*` 다. 두 구성이 서로 역이다.
+왼쪽에서 오른쪽은 $\eta_X$ 와 합성하는 것이고, 오른쪽에서 왼쪽은 확장 연산 `(-)^*` 다. 두 구성이 서로 역이다.
 
 ## 극한과 쌍대극한
 
-`\mathcal C^T` 는 `\mathcal C` 가 가진 모든 극한을 가지며, 망각 functor 가 그것을 보존하고 반사한다. 대수의 곱은 밑바탕 대상의 곱에 성분별 구조를 준 것이다. 쌍대극한은 훨씬 까다로워서 일반적으로 존재가 보장되지 않는다. 군의 자유곱이 집합의 합집합과 전혀 다른 것이 그 예다.
+$\mathcal C^T$ 는 $\mathcal C$ 가 가진 모든 극한을 가지며, 망각 functor 가 그것을 보존하고 반사한다. 대수의 곱은 밑바탕 대상의 곱에 성분별 구조를 준 것이다. 쌍대극한은 훨씬 까다로워서 일반적으로 존재가 보장되지 않는다. 군의 자유곱이 집합의 합집합과 전혀 다른 것이 그 예다.
 
-`\mathcal C_T` 는 대조적이다. `\mathcal C` 의 쌍대극한을 물려받지만 극한은 대개 갖지 못한다. 두 범주가 서로 다른 방향으로 편향되어 있다.
+$\mathcal C_T$ 는 대조적이다. $\mathcal C$ 의 쌍대극한을 물려받지만 극한은 대개 갖지 못한다. 두 범주가 서로 다른 방향으로 편향되어 있다.
 
 ## Monadicity
 
-비교 functor `K` 가 동치일 때 `G` 를 monadic 하다고 한다. 이 경우 `\mathcal D` 는 `\mathcal C` 위의 대수 범주로 완전히 재구성된다.
+비교 functor `K` 가 동치일 때 `G` 를 monadic 하다고 한다. 이 경우 $\mathcal D$ 는 $\mathcal C$ 위의 대수 범주로 완전히 재구성된다.
 
 Beck 의 monadicity 정리가 판정 기준을 준다. `G` 가 left adjoint 를 가지고, 동형을 반사하며, `G` 가 분할 쌍대평행쌍을 가지는 평행쌍의 여핵을 만들고 보존하면 monadic 이다.
 
 | 망각 functor | monadic 인가 |
 |---|---|
-| `\mathbf{Grp}\to\mathbf{Set}` | 예 |
-| `\mathbf{Ring}\to\mathbf{Set}` | 예 |
-| `R\text{-}\mathbf{Mod}\to\mathbf{Set}` | 예 |
-| `\mathbf{Top}\to\mathbf{Set}` | 아니오 |
-| `\mathbf{Field}\to\mathbf{Set}` | 아니오 |
+| $\mathbf{Grp}\to\mathbf{Set}$ | 예 |
+| $\mathbf{Ring}\to\mathbf{Set}$ | 예 |
+| $R\text{-}\mathbf{Mod}\to\mathbf{Set}$ | 예 |
+| $\mathbf{Top}\to\mathbf{Set}$ | 아니오 |
+| $\mathbf{Field}\to\mathbf{Set}$ | 아니오 |
 
 위상공간이 걸리는 이유가 분명하다. 같은 밑바탕 집합에 서로 다른 위상이 있고 연속 전단사가 동형이 아닐 수 있으므로 동형을 반사하지 못한다. 체는 애초에 left adjoint 가 없다.
 
@@ -167,13 +167,13 @@ print("자유대수도 대수:", law3)
 # 자유대수도 대수: True
 ```
 
-`(\mathbb Z,+)` 는 `\mathcal C^T` 의 대상이지만 어떤 집합의 자유 monoid 도 아니므로 `\mathcal C_T` 에는 대응물이 없다. 두 범주의 크기 차이가 이 한 예에서 드러난다. 반면 `\mu_X` 를 구조사상으로 하는 자유대수는 양쪽에 다 있다.
+$(\mathbb Z,+)$ 는 $\mathcal C^T$ 의 대상이지만 어떤 집합의 자유 monoid 도 아니므로 $\mathcal C_T$ 에는 대응물이 없다. 두 범주의 크기 차이가 이 한 예에서 드러난다. 반면 $\mu_X$ 를 구조사상으로 하는 자유대수는 양쪽에 다 있다.
 
 # 활용
 
 ## 프로그래밍의 do 표기
 
-Kleisli 범주는 효과를 가진 계산의 범주다. `return` 이 `\eta` 이고 `>>=` 가 확장 연산이며, do 표기는 Kleisli 합성의 연쇄를 명령형처럼 보이게 쓴 문법이다.
+Kleisli 범주는 효과를 가진 계산의 범주다. `return` 이 $\eta$ 이고 `>>=` 가 확장 연산이며, do 표기는 Kleisli 합성의 연쇄를 명령형처럼 보이게 쓴 문법이다.
 
 monad 법칙이 곧 이 표기의 정당성이다. 결합법칙이 do 블록을 어디서 끊어 함수로 빼내도 의미가 같음을 보장하고, 단위법칙이 `return` 을 넣고 빼도 같음을 보장한다. 리팩터링이 안전한 이유가 범주 구조에서 나온다.
 

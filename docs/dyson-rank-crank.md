@@ -38,7 +38,7 @@ rank 를 계산하면 순서대로 `4-1=3`, `3-2=1`, `2-2=0`, `2-3=-1`, `1-4=-3`
 
 ## crank 는 왜 더 복잡한가
 
-rank 가 `11` 에서 실패하는 것을 보면 정의를 손봐야 한다는 것을 알 수 있다. Andrews–Garvan 의 답은 `1` 을 특별 취급하는 것이다. 분할 `\lambda` 에서 `1` 의 개수를 `\omega`, `\omega` 보다 큰 부분의 개수를 `\mu` 라 하면
+rank 가 `11` 에서 실패하는 것을 보면 정의를 손봐야 한다는 것을 알 수 있다. Andrews–Garvan 의 답은 `1` 을 특별 취급하는 것이다. 분할 $\lambda$ 에서 `1` 의 개수를 $\omega$, $\omega$ 보다 큰 부분의 개수를 $\mu$ 라 하면
 
 $$
 \mathrm{crank}(\lambda)=\begin{cases}\text{가장 큰 부분}&\omega=0\\ \mu-\omega&\omega>0\end{cases}
@@ -79,13 +79,13 @@ Dyson 이 rank 를 정의했을 때 그 생성함수가 Ramanujan 의 유작과 
 
 ## rank 와 그 개수 함수
 
-분할 `\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_\ell)` 에 대해
+분할 $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_\ell)$ 에 대해
 
 $$
 \mathrm{rank}(\lambda)=\lambda_1-\ell
 $$
 
-`N(m,n)` 을 `n` 의 분할 가운데 rank 가 `m` 인 것의 개수, `N(r,t,n)` 을 rank 가 `r\pmod t` 인 것의 개수라 한다. 켤레 분할이 rank 의 부호를 뒤집으므로 `N(m,n)=N(-m,n)` 이다.
+`N(m,n)` 을 `n` 의 분할 가운데 rank 가 `m` 인 것의 개수, `N(r,t,n)` 을 rank 가 $r\pmod t$ 인 것의 개수라 한다. 켤레 분할이 rank 의 부호를 뒤집으므로 `N(m,n)=N(-m,n)` 이다.
 
 **정리 (Atkin–Swinnerton-Dyer, 1954)**
 
@@ -97,7 +97,7 @@ $$
 
 ## crank 와 세 합동식
 
-`\omega(\lambda)` 를 `1` 인 부분의 개수, `\mu(\lambda)` 를 `\omega(\lambda)` 보다 큰 부분의 개수라 하고
+$\omega(\lambda)$ 를 `1` 인 부분의 개수, $\mu(\lambda)$ 를 $\omega(\lambda)$ 보다 큰 부분의 개수라 하고
 
 $$
 \mathrm{crank}(\lambda)=\begin{cases}\lambda_1&\omega(\lambda)=0\\[2pt]\mu(\lambda)-\omega(\lambda)&\omega(\lambda)>0\end{cases}
@@ -119,7 +119,7 @@ $$
 C(z;q)=\sum_{n\ge0}\sum_m M(m,n)z^mq^n=\prod_{n\ge1}\frac{1-q^n}{(1-zq^n)(1-z^{-1}q^n)}
 $$
 
-여기서 `(a;q)_n=\prod_{j=0}^{n-1}(1-aq^j)` 다. `z=1` 을 넣으면 둘 다 `\sum p(n)q^n` 으로 돌아온다.
+여기서 $(a;q)_n=\prod_{j=0}^{n-1}(1-aq^j)$ 다. `z=1` 을 넣으면 둘 다 $\sum p(n)q^n$ 으로 돌아온다.
 
 `z=-1` 에서 `R(-1;q)` 가 Ramanujan 의 세 번째 차수 mock theta 함수 `f(q)` 다. 이것이 rank 를 mock 모듈러 형식에 연결하는 지점이고, 일반적으로 `z` 가 `1` 의 `k` 제곱근이면 `R(z;q)` 가 무게 `1/2` 의 mock 모듈러 형식이 된다. shadow 는 그 `k` 에 따른 theta 급수다.
 
@@ -127,19 +127,19 @@ $$
 
 ## 균등 분포가 주는 것
 
-균등 분포는 합동식보다 강하다. `N(r,5,5n+4)` 가 `r` 에 무관하다는 것은 `p(5n+4)\equiv0\pmod5` 를 함의하지만 역은 아니다. 나아가 균등 분포의 증명 자체가 생성함수의 `1` 의 거듭제곱근에서의 거동을 요구하고, 그 거동이 mock 모듈러성과 직결된다.
+균등 분포는 합동식보다 강하다. `N(r,5,5n+4)` 가 `r` 에 무관하다는 것은 $p(5n+4)\equiv0\pmod5$ 를 함의하지만 역은 아니다. 나아가 균등 분포의 증명 자체가 생성함수의 `1` 의 거듭제곱근에서의 거동을 요구하고, 그 거동이 mock 모듈러성과 직결된다.
 
 ## `11` 에서 rank 가 실패하는 이유
 
-`R(z;q)` 를 `z=\zeta_{11}` 에서 보면 `\Gamma_0(11)` 관련 준위에서 shadow 가 `0` 이 아닌 mock 형식이 되고, 균등 분포에 필요한 소멸이 일어나지 않는다. 반면 `C(z;q)` 는 `z` 가 어떤 `1` 의 거듭제곱근이어도 eta 몫으로 표현되어 순수 모듈러성을 유지한다. 실패의 원인이 "정칙성을 얼마나 포기했는가" 에 있다는 점에서, `11` 에서의 실패는 결함이 아니라 rank 가 더 깊은 대상이라는 신호였다.
+`R(z;q)` 를 $z=\zeta_{11}$ 에서 보면 $\Gamma_0(11)$ 관련 준위에서 shadow 가 `0` 이 아닌 mock 형식이 되고, 균등 분포에 필요한 소멸이 일어나지 않는다. 반면 `C(z;q)` 는 `z` 가 어떤 `1` 의 거듭제곱근이어도 eta 몫으로 표현되어 순수 모듈러성을 유지한다. 실패의 원인이 "정칙성을 얼마나 포기했는가" 에 있다는 점에서, `11` 에서의 실패는 결함이 아니라 rank 가 더 깊은 대상이라는 신호였다.
 
 ## 더 큰 합동식과 Atkin, Ono
 
-Ramanujan 합동식은 고립된 세 개가 아니다. `p(n)` 은 `5^a7^b11^c` 꼴의 법에서 합동식 족을 갖고(Watson, Atkin), 나아가 Ono 는 `5` 이상의 모든 소수 `\ell` 에 대해 `p(An+B)\equiv0\pmod\ell` 인 산술급수가 존재함을 보였다. 증명은 분할 생성함수를 반정수 무게 모듈러 형식으로 보고 Galois 표현과 Serre 의 소멸 정리를 쓰는 것이다. 조합적 설명이 있는 것은 여전히 작은 법뿐이다.
+Ramanujan 합동식은 고립된 세 개가 아니다. `p(n)` 은 `5^a7^b11^c` 꼴의 법에서 합동식 족을 갖고(Watson, Atkin), 나아가 Ono 는 `5` 이상의 모든 소수 $\ell$ 에 대해 $p(An+B)\equiv0\pmod\ell$ 인 산술급수가 존재함을 보였다. 증명은 분할 생성함수를 반정수 무게 모듈러 형식으로 보고 Galois 표현과 Serre 의 소멸 정리를 쓰는 것이다. 조합적 설명이 있는 것은 여전히 작은 법뿐이다.
 
 ## crank 쪽의 후속
 
-crank 의 모멘트 `\sum_m m^{2k}M(m,n)` 과 rank 의 모멘트 차이가 양수라는 것이 Andrews 의 정리이고, 그 차이가 또 다른 조합적 대상(`k`-marked Durfee 기호)을 센다. 두 통계량의 차이 자체가 셀 만한 것을 세고 있다는 뜻이며, 이 방향의 연구가 지금도 이어진다.
+crank 의 모멘트 $\sum_m m^{2k}M(m,n)$ 과 rank 의 모멘트 차이가 양수라는 것이 Andrews 의 정리이고, 그 차이가 또 다른 조합적 대상(`k`-marked Durfee 기호)을 센다. 두 통계량의 차이 자체가 셀 만한 것을 세고 있다는 뜻이며, 이 방향의 연구가 지금도 이어진다.
 
 # 활용
 
@@ -222,7 +222,7 @@ crank : 같은 세 경우 모두
 
 - **합동식의 조합적 증명**: 생성함수 항등식 대신 분할들을 실제로 짝지어 합동식을 증명한다. 같은 전략이 다른 조합 수열의 합동식에도 적용된다.
 - **mock 모듈러 형식의 원천**: `R(z;q)` 가 `1` 의 거듭제곱근에서 mock 이 되는 현상이 Ramanujan 의 mock theta 함수를 조합적으로 설명한다. 두 이야기가 만나는 자리다.
-- **점근 공식**: Bringmann–Ono 는 조화 Maass 형식의 원법으로 `N(m,n)` 의 정확 공식을 세웠고, 그로부터 rank 가 `n\to\infty` 에서 어떤 분포로 수렴하는지가 나온다.
+- **점근 공식**: Bringmann–Ono 는 조화 Maass 형식의 원법으로 `N(m,n)` 의 정확 공식을 세웠고, 그로부터 rank 가 $n\to\infty$ 에서 어떤 분포로 수렴하는지가 나온다.
 - **통계물리**: crank 생성함수의 무한곱은 자유 보손 분배함수와 같은 꼴이고, rank/crank 통계가 격자 모형의 관측량으로 재해석된다.
 
 [^1]: F. J. Dyson, *Some guesses in the theory of partitions*, Eureka 8 (1944). rank 의 도입과 crank 라는 이름의 예언.

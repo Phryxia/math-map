@@ -10,7 +10,7 @@ $$
 
 동치가 있으면 양쪽의 모든 것이 옮겨진다. 그러면 자연히 묻게 된다. **표현의 무게 공간은 층 쪽에서 무엇인가.**
 
-Mirković–Vilonen 의 답이 이 문서의 주제다. 반무한 낟가리라 부르는 궤도와 층을 자르면, 무게 공간 `V_\lambda(\mu)` 의 기저가 어떤 대수적 순환들의 집합으로 나온다.
+Mirković–Vilonen 의 답이 이 문서의 주제다. 반무한 낟가리라 부르는 궤도와 층을 자르면, 무게 공간 $V_\lambda(\mu)$ 의 기저가 어떤 대수적 순환들의 집합으로 나온다.
 
 $$
 \dim V_\lambda(\mu)=\#\{\text{무게 }\mu\text{ 의 MV 순환}\}
@@ -24,9 +24,9 @@ $$
 
 ## 무게 공간을 어떻게 자르는가
 
-`\mathrm{Gr}_G` 위에서 `G(\mathcal O)` 궤도는 지배적 여무게 `\lambda` 로 매겨지고, 그 궤도의 닫힘 위의 교차 코호몰로지 층 `\mathcal{IC}_\lambda` 가 기약표현 `V_\lambda` 에 대응한다. 여기까지가 기하학적 Satake다.
+$\mathrm{Gr}_G$ 위에서 $G(\mathcal O)$ 궤도는 지배적 여무게 $\lambda$ 로 매겨지고, 그 궤도의 닫힘 위의 교차 코호몰로지 층 $\mathcal{IC}_\lambda$ 가 기약표현 $V_\lambda$ 에 대응한다. 여기까지가 기하학적 Satake다.
 
-무게 분해를 얻으려면 표현을 쌍대 토러스 `\widehat T` 로 제한해야 하고, 층 쪽에서 그것에 해당하는 조작이 **다른 부분군의 궤도로 자르는 것**이다. `N` 을 멱단 부분군이라 할 때 그 궤도 `S_\mu=N(F)\cdot t^\mu` 를 **반무한 낟가리**(semi-infinite cell)라 한다. 이름 그대로 무한차원이면서 여차원도 무한이다.
+무게 분해를 얻으려면 표현을 쌍대 토러스 $\widehat T$ 로 제한해야 하고, 층 쪽에서 그것에 해당하는 조작이 **다른 부분군의 궤도로 자르는 것**이다. `N` 을 멱단 부분군이라 할 때 그 궤도 $S_\mu=N(F)\cdot t^\mu$ 를 **반무한 낟가리**(semi-infinite cell)라 한다. 이름 그대로 무한차원이면서 여차원도 무한이다.
 
 $$
 V_\lambda(\mu)\ \cong\ H^{\bullet}_c\bigl(S_\mu\cap\overline{\mathrm{Gr}^\lambda},\ \mathcal{IC}_\lambda\bigr)
@@ -54,7 +54,7 @@ $$
 m_\lambda(\mu)=\sum_{w\in W}(-1)^{\ell(w)}\,\mathcal P\bigl(w(\lambda+\rho)-(\mu+\rho)\bigr)
 $$
 
-`\mathcal P` 는 Kostant 분할 함수다. Weyl 군의 크기만큼 항이 있고 부호가 엇갈린다. `A_2` 면 항이 여섯 개이고, 큰 군에서는 항 수가 폭발하면서 각 항이 답보다 훨씬 커진다. 답이 3 인데 항들이 수백 단위로 오가며 상쇄되는 일이 예사다.
+$\mathcal P$ 는 Kostant 분할 함수다. Weyl 군의 크기만큼 항이 있고 부호가 엇갈린다. `A_2` 면 항이 여섯 개이고, 큰 군에서는 항 수가 폭발하면서 각 항이 답보다 훨씬 커진다. 답이 3 인데 항들이 수백 단위로 오가며 상쇄되는 일이 예사다.
 
 **상쇄가 일어난다는 것은 잘못된 것을 세고 있다는 신호다.** 올바른 대상을 세면 상쇄가 없어야 한다. MV 순환은 그 올바른 대상이고, 기하가 그것이 실제로 존재함을 보증한다. 조합론 쪽의 대각표나 Littelmann 경로도 같은 역할을 하지만, 그것들은 손으로 만든 규칙이라 왜 맞는지가 따로 증명되어야 한다. MV 순환은 정의부터 표현론적이다.
 
@@ -66,15 +66,15 @@ $$
 \{\text{MV 순환}\}\ \longleftrightarrow\ \{\text{MV 다면체}\}
 $$
 
-MV 다면체는 꼭짓점이 `W\lambda` 의 부분집합이고 면의 위치가 부등식 자료(Berenstein–Zelevinsky 자료)로 주어지는 볼록다면체다. 곧 무한차원 다양체의 기하가 **유한한 볼록기하**로 압축된다. 계산이 가능해지는 지점이고, 결정 기저의 조합론과 맞물리는 지점이기도 하다.
+MV 다면체는 꼭짓점이 $W\lambda$ 의 부분집합이고 면의 위치가 부등식 자료(Berenstein–Zelevinsky 자료)로 주어지는 볼록다면체다. 곧 무한차원 다양체의 기하가 **유한한 볼록기하**로 압축된다. 계산이 가능해지는 지점이고, 결정 기저의 조합론과 맞물리는 지점이기도 하다.
 
 # 정의
 
 ## 설정
 
-`G` 를 복소 환원군, `F=\mathbb C((t))`, `\mathcal O=\mathbb C[[t]]` 라 하고 아핀 Grassmann 다양체를 `\mathrm{Gr}_G=G(F)/G(\mathcal O)` 라 한다. `T\subset B=TN` 을 극대 토러스와 Borel 이라 하자.
+`G` 를 복소 환원군, $F=\mathbb C((t))$, $\mathcal O=\mathbb C[[t]]$ 라 하고 아핀 Grassmann 다양체를 $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 라 한다. $T\subset B=TN$ 을 극대 토러스와 Borel 이라 하자.
 
-여무게 `\mu\in X_*(T)` 에 대해 `t^\mu\in\mathrm{Gr}_G` 를 대응하는 점이라 하고 두 종류의 궤도를 둔다.
+여무게 $\mu\in X_*(T)$ 에 대해 $t^\mu\in\mathrm{Gr}_G$ 를 대응하는 점이라 하고 두 종류의 궤도를 둔다.
 
 $$
 \mathrm{Gr}^\lambda=G(\mathcal O)\cdot t^\lambda\ (\lambda\ \text{지배적}),\qquad
@@ -85,13 +85,13 @@ $$
 
 ## MV 순환
 
-> **정리 (Mirković–Vilonen).** `\lambda` 가 지배적이고 `\mu\le\lambda` 이면
+> **정리 (Mirković–Vilonen).** $\lambda$ 가 지배적이고 $\mu\le\lambda$ 이면
 > $$
 > \dim\bigl(S_\mu\cap\overline{\mathrm{Gr}^\lambda}\bigr)=\langle\rho,\lambda+\mu\rangle
 > $$
 > 이고, 이 교차는 순수 차원이다. 그 최고차원 기약성분들의 닫힘을 **MV 순환**이라 한다.
 
-> **따름정리.** 무게 `\mu` 의 MV 순환들의 기본류가 `V_\lambda(\mu)` 의 기저를 이룬다. 특히
+> **따름정리.** 무게 $\mu$ 의 MV 순환들의 기본류가 $V_\lambda(\mu)$ 의 기저를 이룬다. 특히
 > $$
 > \dim V_\lambda(\mu)=\#\{\lambda\ \text{에 대한 무게 }\mu\text{ 의 MV 순환}\}
 > $$
@@ -100,13 +100,13 @@ $$
 
 ## MV 다면체
 
-`T` 작용의 모멘트 사상 `\Phi:\mathrm{Gr}_G\to X_*(T)\otimes\mathbb R` 를 MV 순환 `Z` 에 제한해 상의 볼록포를 취한 것이 **MV 다면체** `\mathrm{Pol}(Z)` 다. 대응 `Z\mapsto\mathrm{Pol}(Z)` 는 단사이고, 상이 Berenstein–Zelevinsky 부등식으로 기술된다.
+`T` 작용의 모멘트 사상 $\Phi:\mathrm{Gr}_G\to X_*(T)\otimes\mathbb R$ 를 MV 순환 `Z` 에 제한해 상의 볼록포를 취한 것이 **MV 다면체** $\mathrm{Pol}(Z)$ 다. 대응 $Z\mapsto\mathrm{Pol}(Z)$ 는 단사이고, 상이 Berenstein–Zelevinsky 부등식으로 기술된다.
 
 # 성질
 
 ## 중복도를 두 방식으로 센다
 
-MV 순환의 개수는 조합론적으로 Gelfand–Tsetlin 패턴의 개수와 같다(`\mathrm{GL}_n` 의 경우). 그것이 Kostant 의 교대합과 실제로 같은지 `\mathfrak{gl}_3` 에서 확인한다.
+MV 순환의 개수는 조합론적으로 Gelfand–Tsetlin 패턴의 개수와 같다($\mathrm{GL}_n$ 의 경우). 그것이 Kostant 의 교대합과 실제로 같은지 $\mathfrak{gl}_3$ 에서 확인한다.
 
 ```python
 from collections import Counter
@@ -169,19 +169,19 @@ for mu, m in sorted(gt_weights(lam).items(), reverse=True)[:6]:
 #   lam=(4, 2, 0)  mu=(3, 1, 2):  GT 패턴 2 개 = MV 순환 2 개 = Kostant 2
 ```
 
-차원이 전부 맞는다. `\lambda=(2,1,0)` 은 `\mathfrak{sl}_3` 의 수반표현이라 8, `(4,2,0)` 은 27, `(5,2,0)` 은 42 다. 그리고 모든 무게에서 두 계산이 일치한다.
+차원이 전부 맞는다. $\lambda=(2,1,0)$ 은 $\mathfrak{sl}_3$ 의 수반표현이라 8, `(4,2,0)` 은 27, `(5,2,0)` 은 42 다. 그리고 모든 무게에서 두 계산이 일치한다.
 
 두 계산의 성격이 전혀 다르다. **GT 쪽은 세 겹 반복문으로 조건을 만족하는 패턴을 하나씩 세고, Kostant 쪽은 여섯 항을 부호와 함께 더한다.** 앞의 것은 음수가 나올 수 없는 구조이고 뒤의 것은 상쇄로만 음이 아닌 값에 도달한다. MV 순환의 존재가 보증하는 것이 앞쪽 구조이며, 개수는 같더라도 **이유가 다르다**는 것이 요점이다.
 
-`\lambda` 가 커질수록 차이가 벌어진다. `\lambda=(5,2,0)` 에서 최대 중복도가 3 인데, Kostant 공식은 그 3 을 얻으려고 여섯 항을 오간다. 세는 대상으로 바꾸면 그냥 세 개의 순환이 있다.
+$\lambda$ 가 커질수록 차이가 벌어진다. $\lambda=(5,2,0)$ 에서 최대 중복도가 3 인데, Kostant 공식은 그 3 을 얻으려고 여섯 항을 오간다. 세는 대상으로 바꾸면 그냥 세 개의 순환이 있다.
 
 ## 결정 기저와의 관계
 
-MV 순환들의 집합에 결정(crystal) 구조가 들어간다. 곧 `\tilde e_i,\tilde f_i` 연산자가 순환들 사이에서 정의되고, 그 결과가 Kashiwara–Lusztig 의 결정 기저와 동형이다.
+MV 순환들의 집합에 결정(crystal) 구조가 들어간다. 곧 $\tilde e_i,\tilde f_i$ 연산자가 순환들 사이에서 정의되고, 그 결과가 Kashiwara–Lusztig 의 결정 기저와 동형이다.
 
-> **정리 (Braverman–Gaitsgory, Kamnitzer).** MV 순환의 결정은 `B(\lambda)` 와 동형이다.
+> **정리 (Braverman–Gaitsgory, Kamnitzer).** MV 순환의 결정은 $B(\lambda)$ 와 동형이다.
 
-이것이 왜 대각표, Littelmann 경로, Lusztig 의 표준 단항식들이 모두 같은 수를 세는지를 설명한다. 셋 다 같은 결정의 다른 실현이고, MV 순환이 그 결정의 기하적 실현이다. 결정 기저는 원래 양자군의 `q\to0` 극한에서 나온 대수적 대상인데, 기하가 그것을 독립적으로 재발견한 셈이다.
+이것이 왜 대각표, Littelmann 경로, Lusztig 의 표준 단항식들이 모두 같은 수를 세는지를 설명한다. 셋 다 같은 결정의 다른 실현이고, MV 순환이 그 결정의 기하적 실현이다. 결정 기저는 원래 양자군의 $q\to0$ 극한에서 나온 대수적 대상인데, 기하가 그것을 독립적으로 재발견한 셈이다.
 
 한 가지 주의할 점이 있다. MV 순환이 주는 것은 **기저**이지 표준적인 하나의 기저가 아니다. 기본류를 쓰려면 각 순환에 방향을 주어야 하고, 그 선택에 모호성이 있다. 결정 구조는 그 모호성에 영향받지 않는 층위의 자료다.
 
@@ -189,17 +189,17 @@ MV 순환들의 집합에 결정(crystal) 구조가 들어간다. 곧 `\tilde e_
 
 ## 기하학적 Satake 의 정련
 
-기하학적 Satake 는 범주 동치를 준다. MV 이론은 그 동치를 **무게 수준까지 내려** 준다. 곧 `\mathrm{Rep}(\widehat G)` 의 대상뿐 아니라 그 대상의 무게 분해까지 층 쪽에서 읽을 수 있다. 텐서곱의 분해(Littlewood–Richardson 계수)도 MV 순환들의 교차 자료로 표현되고, saturation 정리의 기하적 증명이 여기서 나온다.
+기하학적 Satake 는 범주 동치를 준다. MV 이론은 그 동치를 **무게 수준까지 내려** 준다. 곧 $\mathrm{Rep}(\widehat G)$ 의 대상뿐 아니라 그 대상의 무게 분해까지 층 쪽에서 읽을 수 있다. 텐서곱의 분해(Littlewood–Richardson 계수)도 MV 순환들의 교차 자료로 표현되고, saturation 정리의 기하적 증명이 여기서 나온다.
 
 ## 아핀 Grassmann 다양체의 특이점
 
-`\overline{\mathrm{Gr}^\lambda}` 는 일반적으로 특이점을 갖고, 그 특이점의 성격이 표현론의 자료로 읽힌다. `\mathcal{IC}` 층의 국소 코호몰로지 차원이 Kazhdan–Lusztig 다항식(아핀판)으로 주어지고, MV 순환은 그 층을 자른 조각이다. 특이점을 푸는 문제와 무게 중복도를 세는 문제가 같은 대상의 두 면이다.
+$\overline{\mathrm{Gr}^\lambda}$ 는 일반적으로 특이점을 갖고, 그 특이점의 성격이 표현론의 자료로 읽힌다. $\mathcal{IC}$ 층의 국소 코호몰로지 차원이 Kazhdan–Lusztig 다항식(아핀판)으로 주어지고, MV 순환은 그 층을 자른 조각이다. 특이점을 푸는 문제와 무게 중복도를 세는 문제가 같은 대상의 두 면이다.
 
 ## 다른 방향으로의 파급
 
-- **Coulomb 가지와 대칭 쌍대성**: 물리에서 나온 3 차원 게이지 이론의 Coulomb 가지가 `\mathrm{Gr}_G` 의 변종으로 구성되고, MV 이론의 기법이 그대로 쓰인다.
+- **Coulomb 가지와 대칭 쌍대성**: 물리에서 나온 3 차원 게이지 이론의 Coulomb 가지가 $\mathrm{Gr}_G$ 의 변종으로 구성되고, MV 이론의 기법이 그대로 쓰인다.
 - **적분가능계**: MV 다면체의 조합론이 Berenstein–Zelevinsky 의 tropical 자료, 나아가 cluster 대수와 이어진다.
-- **산술 쪽으로의 되돌림**: Casselman–Shalika 공식처럼 함수 수준에서 계산되던 것들이 층 수준 진술의 점 개수 그림자로 이해된다. `\mathbb F_q` 점을 세면 다시 `p` 진 적분이 나온다.
+- **산술 쪽으로의 되돌림**: Casselman–Shalika 공식처럼 함수 수준에서 계산되던 것들이 층 수준 진술의 점 개수 그림자로 이해된다. $\mathbb F_q$ 점을 세면 다시 `p` 진 적분이 나온다.
 
 마지막 항목이 이 문서가 [기하학적 Satake](geometric-satake.md) 아래에 놓이는 이유를 다시 말해 준다. 함수에서 층으로 올라간 다음 무게까지 내려오면, 처음에 교대합으로만 알던 수가 세는 대상을 얻는다. **올라갔다 내려오는 동안 얻은 것이 그 세는 대상이다.**
 

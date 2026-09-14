@@ -2,12 +2,12 @@
 
 # 개요
 
-[PCP 정리](pcp-theorem.md)는 근사 불가능성의 문을 열었다. 어떤 문제는 특정 비율보다 잘 근사하는 것 자체가 `\mathrm{NP}`-난해다. 그러나 PCP 가 주는 한계선과 [반정부호 계획법](semidefinite-programming.md)이 주는 알고리즘의 성능 사이에는 대체로 간극이 있다. 최대 절단이 대표적이다.
+[PCP 정리](pcp-theorem.md)는 근사 불가능성의 문을 열었다. 어떤 문제는 특정 비율보다 잘 근사하는 것 자체가 $\mathrm{NP}$-난해다. 그러나 PCP 가 주는 한계선과 [반정부호 계획법](semidefinite-programming.md)이 주는 알고리즘의 성능 사이에는 대체로 간극이 있다. 최대 절단이 대표적이다.
 
 | 방향 | 값 |
 |---|---|
-| Goemans–Williamson 알고리즘이 보장하는 근사비 | `\alpha_{\mathrm{GW}}\approx0.87856` |
-| PCP 로 증명된 난해성 한계 | `16/17\approx0.94118` |
+| Goemans–Williamson 알고리즘이 보장하는 근사비 | $\alpha_{\mathrm{GW}}\approx0.87856$ |
+| PCP 로 증명된 난해성 한계 | $16/17\approx0.94118$ |
 
 이 사이 어디가 진짜 경계인가. Khot 은 2002 년에 하나의 문제를 난해하다고 가정하면 이 간극이 닫힌다고 제안했다.[^1] 그 문제가 **유일게임**(unique games)이다.
 
@@ -18,7 +18,7 @@ $$
 \text{"}1-\varepsilon\text{ 이상 만족 가능" 과 "}\varepsilon\text{ 이하만 만족 가능" 을 구별하는 것이 }\mathrm{NP}\text{-난해}
 $$
 
-추측의 위력은 그 결론에 있다. UGC 가 참이면 최대 절단의 최적 근사비가 정확히 `\alpha_{\mathrm{GW}}` 이고, 더 나아가 **모든 제약 충족 문제에 대해 기본 SDP 완화가 최적 알고리즘**이다. 하나의 알고리즘 틀이 넓은 문제군에서 더 개선될 수 없음을 한꺼번에 말하는 통일 정리가 된다.
+추측의 위력은 그 결론에 있다. UGC 가 참이면 최대 절단의 최적 근사비가 정확히 $\alpha_{\mathrm{GW}}$ 이고, 더 나아가 **모든 제약 충족 문제에 대해 기본 SDP 완화가 최적 알고리즘**이다. 하나의 알고리즘 틀이 넓은 문제군에서 더 개선될 수 없음을 한꺼번에 말하는 통일 정리가 된다.
 
 2018 년에 Khot–Minzer–Safra 등이 **2-to-2 게임 정리**를 증명해 추측의 절반에 해당하는 형태를 확립했다. 완전한 UGC 는 여전히 열려 있다.
 
@@ -26,7 +26,7 @@ $$
 
 ## 유일게임이란 무엇인가
 
-변수 집합 위의 2 항 제약 충족 문제인데, 제약이 특별하다. 변수 `u,v` 를 잇는 각 간선에 순열 `\pi_{uv}\colon[k]\to[k]` 가 붙고, 제약은
+변수 집합 위의 2 항 제약 충족 문제인데, 제약이 특별하다. 변수 `u,v` 를 잇는 각 간선에 순열 $\pi_{uv}\colon[k]\to[k]$ 가 붙고, 제약은
 
 $$
 x_v=\pi_{uv}(x_u)
@@ -50,11 +50,11 @@ $$
 
 을 생각하자. 어떤 함수가 가장 안정적인가. 좌표 하나에만 의존하는 독재자 함수 `f(x)=x_i` 가 가장 안정적이지만, 그런 함수를 배제하면(모든 좌표의 영향력이 작으면) 답이 **다수결**이다. 이것이 Mossel–O'Donnell–Oleszkiewicz 의 Majority is Stablest 정리다.
 
-이 정리가 UGC 를 근사 난해성으로 번역하는 장치다. 유일게임 사례에서 정점마다 함수를 하나씩 두고 절단 문제로 옮기면, "좋은 배정이 있다" 는 독재자 함수의 존재로, "나쁜 배정뿐이다" 는 영향력이 작은 함수만 있는 상황으로 바뀐다. 두 경우의 절단 값 차이가 정확히 `\alpha_{\mathrm{GW}}` 만큼 벌어진다.
+이 정리가 UGC 를 근사 난해성으로 번역하는 장치다. 유일게임 사례에서 정점마다 함수를 하나씩 두고 절단 문제로 옮기면, "좋은 배정이 있다" 는 독재자 함수의 존재로, "나쁜 배정뿐이다" 는 영향력이 작은 함수만 있는 상황으로 바뀐다. 두 경우의 절단 값 차이가 정확히 $\alpha_{\mathrm{GW}}$ 만큼 벌어진다.
 
-## `\alpha_{\mathrm{GW}}` 는 어디서 오는가
+## $\alpha_{\mathrm{GW}}$ 는 어디서 오는가
 
-GW 알고리즘은 절단 문제를 단위구 위 벡터 배치로 완화하고, 무작위 초평면으로 자른다. 두 벡터의 각이 `\theta` 면 잘릴 확률이 `\theta/\pi` 인 반면 SDP 목적값 기여는 `(1-\cos\theta)/2` 다. 비율의 최솟값이 근사비다.
+GW 알고리즘은 절단 문제를 단위구 위 벡터 배치로 완화하고, 무작위 초평면으로 자른다. 두 벡터의 각이 $\theta$ 면 잘릴 확률이 $\theta/\pi$ 인 반면 SDP 목적값 기여는 $(1-\cos\theta)/2$ 다. 비율의 최솟값이 근사비다.
 
 ```javascript
 // α_GW = min_{0<θ≤π} (θ/π) / ((1-cos θ)/2)
@@ -69,7 +69,7 @@ console.log('α_GW =', best[0].toFixed(6), 'at θ* =', (best[1] * 180 / Math.PI)
 console.log('PCP 로 알려진 한계 16/17 =', (16 / 17).toFixed(6));   // 0.941176
 ```
 
-`0.878567` 과 `0.941176` 사이가 비어 있었다. UGC 가 참이면 아래쪽 값이 정답이다. 최솟값이 `133.6^\circ` 라는 특정 각에서 나오고, 그 각이 Majority is Stablest 의 극단 함수에서 다시 나타난다. 알고리즘의 손실과 난해성의 구성이 같은 지점을 가리키는 것이 이 이론의 핵심 대응이다.
+`0.878567` 과 `0.941176` 사이가 비어 있었다. UGC 가 참이면 아래쪽 값이 정답이다. 최솟값이 $133.6^\circ$ 라는 특정 각에서 나오고, 그 각이 Majority is Stablest 의 극단 함수에서 다시 나타난다. 알고리즘의 손실과 난해성의 구성이 같은 지점을 가리키는 것이 이 이론의 핵심 대응이다.
 
 ## 추측의 지형
 
@@ -87,17 +87,17 @@ graph TD
 
 ## 유일게임
 
-사례는 `(G=(V,E),[k],\{\pi_e\}_{e\in E})` 로 주어진다. `\pi_{uv}` 는 `[k]` 의 순열이고, 배정 `x\colon V\to[k]` 의 값은 `x_v=\pi_{uv}(x_u)` 를 만족하는 간선의 비율이다. 최댓값을 `\mathrm{opt}(I)` 라 한다.
+사례는 $(G=(V,E),[k],\{\pi_e\}_{e\in E})$ 로 주어진다. $\pi_{uv}$ 는 `[k]` 의 순열이고, 배정 $x\colon V\to[k]$ 의 값은 $x_v=\pi_{uv}(x_u)$ 를 만족하는 간선의 비율이다. 최댓값을 $\mathrm{opt}(I)$ 라 한다.
 
 ## 추측의 진술
 
-**유일게임 추측.** 모든 `\varepsilon>0` 에 대해 `k=k(\varepsilon)` 이 존재해, 라벨 크기 `k` 의 유일게임 사례에서 `\mathrm{opt}\ge1-\varepsilon` 인 경우와 `\mathrm{opt}\le\varepsilon` 인 경우를 구별하는 문제가 `\mathrm{NP}`-난해다.
+**유일게임 추측.** 모든 $\varepsilon>0$ 에 대해 $k=k(\varepsilon)$ 이 존재해, 라벨 크기 `k` 의 유일게임 사례에서 $\mathrm{opt}\ge1-\varepsilon$ 인 경우와 $\mathrm{opt}\le\varepsilon$ 인 경우를 구별하는 문제가 $\mathrm{NP}$-난해다.
 
-완전성(`1-\varepsilon`)이 `1` 에 가깝다는 점이 결정적이다. PCP 정리의 표준 형태는 완전성 `1` (완전 만족 가능)에서 출발하는데, 유일게임에서 완전성 `1` 인 경우는 앞서 보았듯 다항시간에 풀린다. 그래서 `1-\varepsilon` 이라는 미묘한 위치가 필요하다.
+완전성($1-\varepsilon$)이 `1` 에 가깝다는 점이 결정적이다. PCP 정리의 표준 형태는 완전성 `1` (완전 만족 가능)에서 출발하는데, 유일게임에서 완전성 `1` 인 경우는 앞서 보았듯 다항시간에 풀린다. 그래서 $1-\varepsilon$ 이라는 미묘한 위치가 필요하다.
 
 ## 2-to-2 게임
 
-제약이 순열이 아니라 각 값이 정확히 두 값에 대응하는 2-to-2 사상인 게임이다. **2-to-2 정리**(Khot–Minzer–Safra, Dinur–Khot–Kindler–Minzer–Safra)는 완전성 `1/2-\varepsilon` 판본의 난해성을 증명한다. 완전성이 `1` 에 가깝지 않으므로 UGC 를 직접 주지는 않지만, 무조건적인 새 난해성 결과들을 낳았다. 정점 덮개를 `\sqrt2-\varepsilon` 보다 잘 근사하는 것이 `\mathrm{NP}`-난해라는 결과가 대표적이다.
+제약이 순열이 아니라 각 값이 정확히 두 값에 대응하는 2-to-2 사상인 게임이다. **2-to-2 정리**(Khot–Minzer–Safra, Dinur–Khot–Kindler–Minzer–Safra)는 완전성 $1/2-\varepsilon$ 판본의 난해성을 증명한다. 완전성이 `1` 에 가깝지 않으므로 UGC 를 직접 주지는 않지만, 무조건적인 새 난해성 결과들을 낳았다. 정점 덮개를 $\sqrt2-\varepsilon$ 보다 잘 근사하는 것이 $\mathrm{NP}$-난해라는 결과가 대표적이다.
 
 증명의 핵심은 Grassmann 그래프의 확장성 분석이다. 작은 집합에서 확장성이 깨지는 방식을 완전히 분류하는 조합 정리(Grassmann 그래프 추측)가 필요했고, 그것이 2018 년에 해결되면서 정리가 완성되었다.
 
@@ -105,15 +105,15 @@ graph TD
 
 ## UGC 가 참이라면
 
-- **최대 절단.** 최적 근사비가 `\alpha_{\mathrm{GW}}`. GW 알고리즘이 최적이다.
-- **정점 덮개.** `2-\varepsilon` 근사가 난해. 자명한 `2` 근사가 최적이다.
+- **최대 절단.** 최적 근사비가 $\alpha_{\mathrm{GW}}$. GW 알고리즘이 최적이다.
+- **정점 덮개.** $2-\varepsilon$ 근사가 난해. 자명한 `2` 근사가 최적이다.
 - **모든 CSP.** Raghavendra 의 정리에 의해, 임의의 제약 충족 문제에서 기본 SDP 완화의 적분 간극과 근사 난해성 한계가 일치한다. 문제마다 알고리즘을 새로 설계할 이유가 없어진다.
 
 마지막 항목이 UGC 가 널리 연구되는 이유다. 하나의 추측이 무한히 많은 문제의 최적 알고리즘을 한꺼번에 결정한다.
 
 ## 반대 방향의 증거
 
-UGC 가 거짓일 가능성도 진지하게 다뤄진다. Arora–Barak–Steurer 는 유일게임을 `2^{n^{\varepsilon}}` 시간에 푸는 알고리즘을 주었다. 이는 UGC 를 반증하지 않지만, 만약 UGC 가 참이라면 그 난해성이 `3\mathrm{SAT}` 같은 문제보다 훨씬 약한 형태여야 함을 뜻한다. 지수시간 가설과의 정합성이 미묘해지는 지점이다.
+UGC 가 거짓일 가능성도 진지하게 다뤄진다. Arora–Barak–Steurer 는 유일게임을 $2^{n^{\varepsilon}}$ 시간에 푸는 알고리즘을 주었다. 이는 UGC 를 반증하지 않지만, 만약 UGC 가 참이라면 그 난해성이 $3\mathrm{SAT}$ 같은 문제보다 훨씬 약한 형태여야 함을 뜻한다. 지수시간 가설과의 정합성이 미묘해지는 지점이다.
 
 Sum-of-Squares 위계도 주요 반증 경로로 검토되었다. 낮은 차수의 SoS 완화가 유일게임의 알려진 어려운 사례들을 모두 푼다는 결과가 여럿 있어, 더 강한 완화가 UGC 를 무너뜨릴 수 있으리라는 기대가 있었다. 지금까지는 결정적인 결과가 나오지 않았다.
 
@@ -133,9 +133,9 @@ UGC 를 둘러싼 작업은 이론 전산학에 부울 함수 해석학을 정�
 
 ## 무조건적 결과들
 
-2-to-2 정리 이후 UGC 를 가정하지 않고도 얻어진 난해성 결과가 여럿 있다. 정점 덮개의 `\sqrt2-\varepsilon` 난해성, 특정 유일게임 사례에 대한 부분적 난해성이 그렇다. 추측을 향해 가는 과정에서 무조건적 정리가 떨어지는 것은 PCP 정리가 확립되던 시기와 같은 양상이다.
+2-to-2 정리 이후 UGC 를 가정하지 않고도 얻어진 난해성 결과가 여럿 있다. 정점 덮개의 $\sqrt2-\varepsilon$ 난해성, 특정 유일게임 사례에 대한 부분적 난해성이 그렇다. 추측을 향해 가는 과정에서 무조건적 정리가 떨어지는 것은 PCP 정리가 확립되던 시기와 같은 양상이다.
 
-[^1]: S. Khot, *On the power of unique 2-prover 1-round games*, STOC (2002), 767–775. Majority is Stablest 는 E. Mossel, R. O'Donnell, K. Oleszkiewicz, Ann. of Math. **171** (2010). 통일 정리는 P. Raghavendra, *Optimal algorithms and inapproximability results for every CSP?*, STOC (2008). 2-to-2 정리는 S. Khot, D. Minzer, M. Safra, *Pseudorandom sets in Grassmann graph have near-perfect expansion*, FOCS (2018). 준지수 알고리즘은 S. Arora, B. Barak, D. Steurer, FOCS (2010). 본문의 `\alpha_{\mathrm{GW}}` 계산은 직접 한 것이다.
+[^1]: S. Khot, *On the power of unique 2-prover 1-round games*, STOC (2002), 767–775. Majority is Stablest 는 E. Mossel, R. O'Donnell, K. Oleszkiewicz, Ann. of Math. **171** (2010). 통일 정리는 P. Raghavendra, *Optimal algorithms and inapproximability results for every CSP?*, STOC (2008). 2-to-2 정리는 S. Khot, D. Minzer, M. Safra, *Pseudorandom sets in Grassmann graph have near-perfect expansion*, FOCS (2018). 준지수 알고리즘은 S. Arora, B. Barak, D. Steurer, FOCS (2010). 본문의 $\alpha_{\mathrm{GW}}$ 계산은 직접 한 것이다.
 
 # 연관 문서
 

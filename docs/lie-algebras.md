@@ -2,7 +2,7 @@
 
 # 개요
 
-회전군 `\mathrm{SO}(3)`, 유니터리군 `\mathrm{U}(n)`, 가역행렬군 `\mathrm{GL}_n` 같은 연속 대칭군은 [다양체](manifolds.md)이면서 군이다. 이런 대상을 직접 다루면 곡률과 위상이 섞여 들어와 곤란한데, 항등원 근처만 보면 이야기가 완전히 달라진다. 항등원의 접공간은 그냥 벡터공간이고, 군 곱셈의 비가환성이 그 위의 쌍선형 연산 하나로 압축된다.
+회전군 $\mathrm{SO}(3)$, 유니터리군 $\mathrm{U}(n)$, 가역행렬군 $\mathrm{GL}_n$ 같은 연속 대칭군은 [다양체](manifolds.md)이면서 군이다. 이런 대상을 직접 다루면 곡률과 위상이 섞여 들어와 곤란한데, 항등원 근처만 보면 이야기가 완전히 달라진다. 항등원의 접공간은 그냥 벡터공간이고, 군 곱셈의 비가환성이 그 위의 쌍선형 연산 하나로 압축된다.
 
 $$
 [X,Y]=XY-YX
@@ -26,7 +26,7 @@ $$
 e^{tX}e^{tY}e^{-tX}e^{-tY}=e^{t^2[X,Y]+O(t^3)}
 $$
 
-`[X,Y]` 는 "군이 얼마나 비가환인가" 를 무한소 수준에서 재는 양이다. 회전을 예로 들면 `x` 축 회전과 `y` 축 회전을 번갈아 하면 `z` 축 회전이 남고, 이것이 `\mathfrak{so}(3)` 의 괄호가 벡터곱인 이유다.
+`[X,Y]` 는 "군이 얼마나 비가환인가" 를 무한소 수준에서 재는 양이다. 회전을 예로 들면 `x` 축 회전과 `y` 축 회전을 번갈아 하면 `z` 축 회전이 남고, 이것이 $\mathfrak{so}(3)$ 의 괄호가 벡터곱인 이유다.
 
 $$
 [e_1,e_2]=e_3,\quad [e_2,e_3]=e_1,\quad [e_3,e_1]=e_2
@@ -48,17 +48,17 @@ $$
 [X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0
 $$
 
-이고, 다시 쓰면 의미가 분명해진다. `\operatorname{ad}_X(Y)=[X,Y]` 로 두면 Jacobi 항등식은
+이고, 다시 쓰면 의미가 분명해진다. $\operatorname{ad}_X(Y)=[X,Y]$ 로 두면 Jacobi 항등식은
 
 $$
 \operatorname{ad}_X([Y,Z])=[\operatorname{ad}_XY,Z]+[Y,\operatorname{ad}_XZ]
 $$
 
-곧 **`\operatorname{ad}_X` 가 곱셈에 대한 도함수(Leibniz 규칙)** 라는 말이다. 미분이 곱을 다루는 방식 그대로다. 대칭이 무한소로 작용하는 방식이 미분이라는 관점에서 보면 Jacobi 항등식은 공리라기보다 필연이다.
+곧 **$\operatorname{ad}_X$ 가 곱셈에 대한 도함수(Leibniz 규칙)** 라는 말이다. 미분이 곱을 다루는 방식 그대로다. 대칭이 무한소로 작용하는 방식이 미분이라는 관점에서 보면 Jacobi 항등식은 공리라기보다 필연이다.
 
-## `\mathfrak{sl}_2` 의 사다리
+## $\mathfrak{sl}_2$ 의 사다리
 
-`\mathfrak{sl}_2` 는 대각합이 0 인 `2\times2` 행렬들이고, 기저와 괄호가 다음과 같다.
+$\mathfrak{sl}_2$ 는 대각합이 0 인 $2\times2$ 행렬들이고, 기저와 괄호가 다음과 같다.
 
 $$
 H=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\quad
@@ -70,7 +70,7 @@ $$
 [H,E]=2E,\qquad [H,F]=-2F,\qquad [E,F]=H
 $$
 
-표현 `V` 에서 `H` 의 [고유벡터](eigenvalues.md) `v` 를 잡고 고유값을 `\lambda` 라 하면
+표현 `V` 에서 `H` 의 [고유벡터](eigenvalues.md) `v` 를 잡고 고유값을 $\lambda$ 라 하면
 
 $$
 H(Ev)=EHv+[H,E]v=(\lambda+2)Ev
@@ -78,24 +78,24 @@ $$
 
 이므로 `E` 는 고유값을 `2` 올리고 `F` 는 `2` 내린다. 유한차원이면 올리다가 멈춰야 하므로 최고무게 벡터가 있고, 거기서 `F` 를 반복 적용해 얻는 사다리가 표현 전체다. 결론은 각 차원마다 기약표현이 정확히 하나씩이라는 것이다.
 
-이 사다리 논법이 양자역학의 각운동량 올림·내림 연산자이고, 반단순 Lie 대수 표현론 전체의 축소판이다. 일반 경우는 `\mathfrak{sl}_2` 부분대수 여러 개를 근계를 따라 붙여 놓은 것으로 본다.
+이 사다리 논법이 양자역학의 각운동량 올림·내림 연산자이고, 반단순 Lie 대수 표현론 전체의 축소판이다. 일반 경우는 $\mathfrak{sl}_2$ 부분대수 여러 개를 근계를 따라 붙여 놓은 것으로 본다.
 
 # 정의
 
 ## Lie 대수
 
-체 `k` 위의 벡터공간 `\mathfrak g` 와 쌍선형 사상 `[\cdot,\cdot]:\mathfrak g\times\mathfrak g\to\mathfrak g` 가 다음을 만족하면 **Lie 대수**라 한다.
+체 `k` 위의 벡터공간 $\mathfrak g$ 와 쌍선형 사상 $[\cdot,\cdot]:\mathfrak g\times\mathfrak g\to\mathfrak g$ 가 다음을 만족하면 **Lie 대수**라 한다.
 
 - 교대성: 모든 `X` 에 대해 `[X,X]=0`. 따라서 `[X,Y]=-[Y,X]`.
 - Jacobi 항등식: `[X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0`.
 
-결합대수 `A` 가 있으면 `[a,b]=ab-ba` 로 Lie 대수가 된다. `\mathfrak{gl}_n=M_n(k)` 가 이렇게 얻어지고, Ado 정리에 의해 모든 유한차원 Lie 대수는 어떤 `\mathfrak{gl}_n` 의 부분대수다.
+결합대수 `A` 가 있으면 `[a,b]=ab-ba` 로 Lie 대수가 된다. $\mathfrak{gl}_n=M_n(k)$ 가 이렇게 얻어지고, Ado 정리에 의해 모든 유한차원 Lie 대수는 어떤 $\mathfrak{gl}_n$ 의 부분대수다.
 
-**부분대수**는 괄호에 닫힌 부분공간, **아이디얼** `\mathfrak a` 는 `[\mathfrak g,\mathfrak a]\subset\mathfrak a` 인 부분공간이다. 아이디얼로 몫 `\mathfrak g/\mathfrak a` 를 만들 수 있고, 군의 정규부분군에 대응한다.
+**부분대수**는 괄호에 닫힌 부분공간, **아이디얼** $\mathfrak a$ 는 $[\mathfrak g,\mathfrak a]\subset\mathfrak a$ 인 부분공간이다. 아이디얼로 몫 $\mathfrak g/\mathfrak a$ 를 만들 수 있고, 군의 정규부분군에 대응한다.
 
 ## 딸림표현과 Killing 형식
 
-`\operatorname{ad}:\mathfrak g\to\mathfrak{gl}(\mathfrak g)`, `\operatorname{ad}_X(Y)=[X,Y]` 를 **딸림표현**이라 한다. Jacobi 항등식이 이것이 Lie 대수 준동형임을 보장한다. 핵은 중심 `Z(\mathfrak g)` 다.
+$\operatorname{ad}:\mathfrak g\to\mathfrak{gl}(\mathfrak g)$, $\operatorname{ad}_X(Y)=[X,Y]$ 를 **딸림표현**이라 한다. Jacobi 항등식이 이것이 Lie 대수 준동형임을 보장한다. 핵은 중심 $Z(\mathfrak g)$ 다.
 
 딸림표현에서 대칭 쌍선형형식을 만든 것이 **Killing 형식**이다.
 
@@ -103,7 +103,7 @@ $$
 \kappa(X,Y)=\operatorname{tr}\left(\operatorname{ad}_X\circ\operatorname{ad}_Y\right)
 $$
 
-구조상수만으로 계산되는 내재적 형식이고, 불변성 `\kappa([X,Y],Z)=\kappa(X,[Y,Z])` 을 만족한다.
+구조상수만으로 계산되는 내재적 형식이고, 불변성 $\kappa([X,Y],Z)=\kappa(X,[Y,Z])$ 을 만족한다.
 
 ## 가해, 멱영, 반단순
 
@@ -117,9 +117,9 @@ $$
 \mathfrak g^{1}=\mathfrak g,\quad \mathfrak g^{k+1}=[\mathfrak g,\mathfrak g^{k}]
 $$
 
-어떤 `k` 에서 `\mathfrak g^{(k)}=0` 이면 **가해**, `\mathfrak g^{k}=0` 이면 **멱영**이다. 멱영이면 가해다. 상삼각행렬이 가해의 표준 예이고, 대각성분이 0 인 엄격 상삼각행렬이 멱영의 예다.
+어떤 `k` 에서 $\mathfrak g^{(k)}=0$ 이면 **가해**, $\mathfrak g^{k}=0$ 이면 **멱영**이다. 멱영이면 가해다. 상삼각행렬이 가해의 표준 예이고, 대각성분이 0 인 엄격 상삼각행렬이 멱영의 예다.
 
-가해 아이디얼 중 최대인 것을 **근기** `\operatorname{rad}\mathfrak g` 라 한다. `\operatorname{rad}\mathfrak g=0` 이면 **반단순**, 게다가 진아이디얼이 `0` 뿐이고 가환이 아니면 **단순**이라 한다.
+가해 아이디얼 중 최대인 것을 **근기** $\operatorname{rad}\mathfrak g$ 라 한다. $\operatorname{rad}\mathfrak g=0$ 이면 **반단순**, 게다가 진아이디얼이 `0` 뿐이고 가환이 아니면 **단순**이라 한다.
 
 # 성질
 
@@ -141,17 +141,17 @@ $$
 \mathfrak g=\mathfrak g_1\oplus\cdots\oplus\mathfrak g_r
 $$
 
-일반 Lie 대수는 Levi 분해 `\mathfrak g=\operatorname{rad}\mathfrak g\rtimes\mathfrak s` 로 가해 부분과 반단순 부분으로 나뉜다. 가해 쪽은 분류가 사실상 불가능하지만 반단순 쪽은 완전히 알려져 있고, 그래서 대부분의 이론이 반단순에 집중된다.
+일반 Lie 대수는 Levi 분해 $\mathfrak g=\operatorname{rad}\mathfrak g\rtimes\mathfrak s$ 로 가해 부분과 반단순 부분으로 나뉜다. 가해 쪽은 분류가 사실상 불가능하지만 반단순 쪽은 완전히 알려져 있고, 그래서 대부분의 이론이 반단순에 집중된다.
 
 ## 근계와 Dynkin 도표
 
-복소 반단순 `\mathfrak g` 에서 극대 가환 부분대수 `\mathfrak h`(Cartan 부분대수)를 잡으면 `\operatorname{ad}\mathfrak h` 가 동시대각화되어 근공간 분해가 나온다.
+복소 반단순 $\mathfrak g$ 에서 극대 가환 부분대수 $\mathfrak h$ (Cartan 부분대수)를 잡으면 $\operatorname{ad}\mathfrak h$ 가 동시대각화되어 근공간 분해가 나온다.
 
 $$
 \mathfrak g=\mathfrak h\oplus\bigoplus_{\alpha\in\Phi}\mathfrak g_\alpha,\qquad \mathfrak g_\alpha=\{X:[H,X]=\alpha(H)X\ \forall H\in\mathfrak h\}
 $$
 
-`\Phi\subset\mathfrak h^*` 가 **근계**이고 각 `\dim\mathfrak g_\alpha=1` 이다. 근계는 유한 반사군(Weyl 군)이 작용하는 조합적 대상이라 순전히 조합론으로 분류되고, 단순근 사이의 각도를 그래프로 그린 것이 **Dynkin 도표**다.
+$\Phi\subset\mathfrak h^*$ 가 **근계**이고 각 $\dim\mathfrak g_\alpha=1$ 이다. 근계는 유한 반사군(Weyl 군)이 작용하는 조합적 대상이라 순전히 조합론으로 분류되고, 단순근 사이의 각도를 그래프로 그린 것이 **Dynkin 도표**다.
 
 ```mermaid
 graph TD
@@ -167,11 +167,11 @@ graph TD
   E --> G2["G_2"]
 ```
 
-`E_8` 은 248 차원이고 근이 240 개다. 그 240 개의 근이 이루는 [격자](lattices.md)가 8 차원 [구 채우기](sphere-packing.md)의 최적 격자이며, [theta 급수](theta-functions.md)에서 `\Theta_{E_8}=E_4` 로 나타난 바로 그 대상이다. 대수적 분류의 예외가 기하의 최적해로 다시 나온다.
+`E_8` 은 248 차원이고 근이 240 개다. 그 240 개의 근이 이루는 [격자](lattices.md)가 8 차원 [구 채우기](sphere-packing.md)의 최적 격자이며, [theta 급수](theta-functions.md)에서 $\Theta_{E_8}=E_4$ 로 나타난 바로 그 대상이다. 대수적 분류의 예외가 기하의 최적해로 다시 나온다.
 
 ## 계산으로 확인하기
 
-`\mathfrak{sl}_2` 와 상삼각 Lie 대수에서 Jacobi 항등식, Killing 형식, Cartan 판정법을 직접 확인한다.
+$\mathfrak{sl}_2$ 와 상삼각 Lie 대수에서 Jacobi 항등식, Killing 형식, Cartan 판정법을 직접 확인한다.
 
 ```python
 import itertools
@@ -264,26 +264,26 @@ print(show(Kb), det(Kb))         # [[4, 0], [0, 0]] 0  → 퇴화
 print(all(Kb[a][1] == 0 for a in range(2)))           # True
 ```
 
-`\mathfrak{sl}_2` 에서 `\kappa` 의 행렬식이 `-128\ne0` 이라 반단순이고, 상삼각 부분대수에서는 `\kappa(\mathfrak b,[\mathfrak b,\mathfrak b])=0` 이라 가해다. Cartan 판정법이 실제로 유한한 행렬 계산으로 끝난다는 것을 보여 준다.
+$\mathfrak{sl}_2$ 에서 $\kappa$ 의 행렬식이 $-128\ne0$ 이라 반단순이고, 상삼각 부분대수에서는 $\kappa(\mathfrak b,[\mathfrak b,\mathfrak b])=0$ 이라 가해다. Cartan 판정법이 실제로 유한한 행렬 계산으로 끝난다는 것을 보여 준다.
 
 ## 무한차원으로 나가기
 
 유한차원 분류가 끝난 뒤 자연스러운 다음 질문은 무한차원이다. 두 방향이 중요하다.
 
-- **affine Kac–Moody 대수.** 유한차원 `\mathfrak g` 에 Laurent 다항식환을 텐서하고 중심 확대를 붙인 `\hat{\mathfrak g}=\mathfrak g\otimes\mathbb C[t,t^{-1}]\oplus\mathbb Cc` 다. Dynkin 도표를 확장한 형태로 분류되며 표현의 지표가 [모듈러 형식](modular-forms.md)이 된다.
+- **affine Kac–Moody 대수.** 유한차원 $\mathfrak g$ 에 Laurent 다항식환을 텐서하고 중심 확대를 붙인 $\hat{\mathfrak g}=\mathfrak g\otimes\mathbb C[t,t^{-1}]\oplus\mathbb Cc$ 다. Dynkin 도표를 확장한 형태로 분류되며 표현의 지표가 [모듈러 형식](modular-forms.md)이 된다.
 - **Virasoro 대수.** 원 위의 벡터장 대수의 중심 확대다.
 
 $$
 [L_m,L_n]=(m-n)L_{m+n}+\frac{c}{12}m(m^2-1)\delta_{m+n,0}
 $$
 
-중심원소 `c` 를 **중심전하**라 한다. 이 두 대수가 2 차원 등각장론의 대칭이고, 그 표현론을 대수 구조로 공리화한 것이 정점작용소대수다. [괴물 달빛](monstrous-moonshine.md)에서 `\mathbb M` 이 작용하는 `V^\natural` 이 중심전하 24 의 그런 대수이며, Borcherds 가 쓴 일반화된 Kac–Moody 대수도 이 계보에 있다.
+중심원소 `c` 를 **중심전하**라 한다. 이 두 대수가 2 차원 등각장론의 대칭이고, 그 표현론을 대수 구조로 공리화한 것이 정점작용소대수다. [괴물 달빛](monstrous-moonshine.md)에서 $\mathbb M$ 이 작용하는 $V^\natural$ 이 중심전하 24 의 그런 대수이며, Borcherds 가 쓴 일반화된 Kac–Moody 대수도 이 계보에 있다.
 
 # 활용
 
 ## 물리의 대칭
 
-각운동량 대수가 `\mathfrak{su}(2)\cong\mathfrak{sl}_2` 이고, 스핀 `j` 표현이 `2j+1` 차원 기약표현이다. 사다리 연산자가 그대로 `E,F` 다. 게이지 이론에서는 `\mathfrak{su}(3)\times\mathfrak{su}(2)\times\mathfrak u(1)` 이 표준모형의 대칭이고, 힘을 매개하는 입자의 개수가 대수의 차원이다. `\mathfrak{su}(3)` 이 8 차원이라 글루온이 8 개다.
+각운동량 대수가 $\mathfrak{su}(2)\cong\mathfrak{sl}_2$ 이고, 스핀 `j` 표현이 `2j+1` 차원 기약표현이다. 사다리 연산자가 그대로 `E,F` 다. 게이지 이론에서는 $\mathfrak{su}(3)\times\mathfrak{su}(2)\times\mathfrak u(1)$ 이 표준모형의 대칭이고, 힘을 매개하는 입자의 개수가 대수의 차원이다. $\mathfrak{su}(3)$ 이 8 차원이라 글루온이 8 개다.
 
 ## 미분방정식의 대칭
 
@@ -291,7 +291,7 @@ Lie 가 애초에 이 이론을 만든 동기다. 대수방정식의 대칭을 [
 
 ## 표현론과 정수론
 
-- **조화해석.** `\mathrm{SO}(3)` 의 기약표현 분해가 [구면조화함수](spherical-harmonics.md)이고, 각 표현의 차원 `2\ell+1` 이 Lie 대수의 사다리에서 나온다.
+- **조화해석.** $\mathrm{SO}(3)$ 의 기약표현 분해가 [구면조화함수](spherical-harmonics.md)이고, 각 표현의 차원 $2\ell+1$ 이 Lie 대수의 사다리에서 나온다.
 - **Langlands 강령.** [Langlands 강령](langlands-program.md)의 쌍대군 `{}^L\!G` 는 근계의 근과 쌍대근을 맞바꿔 얻는다. 근계라는 조합적 대상 없이는 진술 자체가 서술되지 않는다.
 - **대수기하.** 반단순군의 깃발다양체, Schubert 셈법, 기하학적 표현론이 모두 근계 조합론 위에서 돌아간다.
 

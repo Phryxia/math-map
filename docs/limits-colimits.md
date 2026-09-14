@@ -89,7 +89,7 @@ $$
 
 ## Hom functor 는 극한을 보존한다
 
-극한의 정의를 `\operatorname{Hom}` 으로 읽으면 다음 자연동형이 된다.
+극한의 정의를 $\operatorname{Hom}$ 으로 읽으면 다음 자연동형이 된다.
 
 $$
 \operatorname{Hom}_C(c,\lim D)\cong\lim_j\operatorname{Hom}_C(c,D(j))
