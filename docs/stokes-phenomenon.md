@@ -168,6 +168,6 @@ for z in (0.1, 0.2, 0.3):
 
 ## 더 알아보기
 
-- [WKB 근사와 연결 공식](wkb-approximation.md)
+- [Airy 함수와 회전점](airy-functions.md)
 
 #analysis #complex_analysis #computation

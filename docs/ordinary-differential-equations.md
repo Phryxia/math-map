@@ -169,5 +169,6 @@ print(euler(lambda t, x: x * (1 - x), 0.0, 0.1, 0.01, 500)[-1])
 ## 더 알아보기
 
 - [WKB 근사와 연결 공식](wkb-approximation.md)
+- [Airy 함수와 회전점](airy-functions.md)
 
 #analysis
