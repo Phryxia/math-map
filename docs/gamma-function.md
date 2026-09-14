@@ -232,5 +232,6 @@ Stirling 을 세 번 써서 얻는 이 식이 [확률](probability.md)의 거의
 ## 더 알아보기
 
 - [Laplace 방법과 안장점](laplace-method.md)
+- [Mellin 변환과 Perron 공식](mellin-transform.md)
 
 #analysis #complex_analysis #computation

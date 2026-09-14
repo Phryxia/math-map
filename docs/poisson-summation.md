@@ -183,5 +183,6 @@ $\mathbb R/\mathbb Z$ 위의 Laplace 작용소를 보면, 좌변은 고윳값 �
 ## 더 알아보기
 
 - [theta 급수와 Dedekind eta](theta-functions.md)
+- [Mellin 변환과 Perron 공식](mellin-transform.md)
 
 #analysis #number_theory #theorem
