@@ -169,5 +169,6 @@ for z in (0.1, 0.2, 0.3):
 ## 더 알아보기
 
 - [Airy 함수와 회전점](airy-functions.md)
+- [Resurgence 와 alien 미분](resurgence.md)
 
 #analysis #complex_analysis #computation
