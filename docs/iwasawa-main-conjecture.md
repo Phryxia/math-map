@@ -273,6 +273,7 @@ Vandiver 추측은 주추측에서 따라 나오지 않는다. 주추측은 홀�
 ## 선수지식
 
 - [Euler 계와 Kolyvagin 유도류](euler-systems.md)
+- [Stickelberger 원소와 Gauss 합](stickelberger.md)
 
 ## 더 알아보기
 

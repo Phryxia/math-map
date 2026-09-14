@@ -257,5 +257,6 @@ for k, c in enumerate(chars_mod_p(7)):
 ## 더 알아보기
 
 - [Dwork 의 유리성 정리와 지수합](dwork-rationality.md)
+- [Stickelberger 원소와 Gauss 합](stickelberger.md)
 
 #number_theory #complex_analysis #analysis
