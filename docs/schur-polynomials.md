@@ -273,5 +273,6 @@ Schur 다항식을 한 방향으로 변형한 것들이 각각 다른 이론을 
 - [Casselman–Shalika 공식](casselman-shalika.md)
 - [Schubert 계산과 Grassmann 다양체](schubert-calculus.md)
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md)
+- [Littlewood–Richardson 규칙과 hive 모형](littlewood-richardson.md)
 
 #combinatorics #algebra #linear_algebra
