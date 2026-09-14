@@ -226,5 +226,6 @@ Gauss 합의 분해는 Jacobi 합 `J(\chi,\psi)=g(\chi)g(\psi)/g(\chi\psi)` 의 
 ## 더 알아보기
 
 - [Iwasawa 주추측과 순환체 단수](iwasawa-main-conjecture.md)
+- [Herbrand–Ribet 정리와 Eisenstein 합동](herbrand-ribet.md)
 
 #number_theory #theorem #algebra
