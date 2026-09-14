@@ -191,5 +191,6 @@ Skinner–Urban 은 `\mathrm{GL}_2` 의 Eisenstein 급수를 `\mathrm{GSp}_4` �
 ## 더 알아보기
 
 - [Eisenstein 아이디얼과 Mazur 의 비틀림점 정리](eisenstein-ideal.md)
+- [Vandiver 추측과 순환체의 짝수 성분](vandiver-conjecture.md)
 
 #number_theory #theorem #complex_analysis

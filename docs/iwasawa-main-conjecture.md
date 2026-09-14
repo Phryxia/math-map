@@ -277,6 +277,6 @@ Vandiver 추측은 주추측에서 따라 나오지 않는다. 주추측은 홀�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Vandiver 추측과 순환체의 짝수 성분](vandiver-conjecture.md)
 
 #number_theory #theorem #algebra
