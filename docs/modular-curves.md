@@ -250,6 +250,7 @@ for N in (1, 11, 14, 15, 17, 19, 20, 21, 24, 32, 37, 49, 50):
 ## 더 알아보기
 
 - [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md)
+- [Eisenstein 아이디얼과 Mazur 의 비틀림점 정리](eisenstein-ideal.md)
 - [모듈러 기호](modular-symbols.md)
 - [Fontaine–Mazur 추측](fontaine-mazur.md)
 - [Heegner 점과 Gross–Zagier 공식](heegner-points.md)
