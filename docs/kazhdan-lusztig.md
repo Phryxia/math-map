@@ -209,6 +209,6 @@ Williamson 은 `\mathrm{SL}_n` 에서 반례의 무한족을 만들어 이 기�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [범주 O 와 BGG 상반성](category-o.md)
 
 #algebra #combinatorics #group_theory #construction
