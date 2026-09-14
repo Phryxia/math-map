@@ -247,5 +247,6 @@ print("\n삼엽매듭은 거울상과 다르다. 특히 풀리지 않는다.")
 
 - [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)
 - [땋임군과 Alexander–Markov 정리](braid-groups.md)
+- [Khovanov 호몰로지](khovanov-homology.md)
 
 #topology #algebraic_topology #combinatorics #computation
