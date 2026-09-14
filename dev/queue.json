@@ -1,47 +1,23 @@
 {
   "version": 1,
-  "savedAt": "2026-09-14T03:19:32.406Z",
-  "nextSeq": 205,
+  "savedAt": "2026-09-14T04:17:10.190Z",
+  "nextSeq": 213,
   "items": [
     {
-      "id": "9dc3cc0c",
-      "title": "Euler-Maclaurin 공식과 점근급수",
-      "priority": 20,
-      "note": "bernoulli-numbers 아래. 합과 적분의 차이, Stirling 급수, 점근급수를 어디서 끊을지, zeta 의 고정밀 계산",
-      "createdAt": "2026-09-14T03:13:46.701Z",
-      "seq": 199
-    },
-    {
-      "id": "b3e3387b",
-      "title": "Greenberg 추측과 총실체의 Iwasawa 불변량",
-      "priority": 20,
-      "note": "vandiver-conjecture 아래. lambda^+ = mu^+ = 0 예측, Vandiver 와의 관계, 수치 증거",
-      "createdAt": "2026-09-14T03:19:21.228Z",
-      "seq": 203
-    },
-    {
-      "id": "cf46f198",
-      "title": "Merel 의 일양 유계성 정리",
-      "priority": 18,
-      "note": "eisenstein-ideal 아래. Kamienny 의 사상, Q 위가 아닌 차수 d 수체에서의 비틀림 유계, 겨냥 사영과 Hecke 작용소",
-      "createdAt": "2026-09-14T03:17:32.965Z",
-      "seq": 202
-    },
-    {
-      "id": "b3238df0",
-      "title": "대수적 K 이론과 Quillen-Lichtenbaum",
-      "priority": 15,
-      "note": "vandiver-conjecture 가 K_{4k}(Z) 소멸로 번역되는 통로. K_n(Z) 의 계산, 에탈 코호몰로지와의 비교, homology 와 galois-representations 아래",
-      "createdAt": "2026-09-14T03:19:21.352Z",
-      "seq": 204
-    },
-    {
-      "id": "b012ead6",
+      "id": "76dc8c69",
       "title": "Kolyvagin 계와 핵심계수",
       "priority": 12,
-      "note": "euler-systems 의 성질 절에서 이미 개괄했다. 별도 문서로 쓰려면 Selmer 구조 변형의 정확한 계산과 core rank 의 예시가 더 필요하다. 중복을 피해 우선순위를 낮춘다",
-      "createdAt": "2026-09-14T03:11:28.234Z",
-      "seq": 197
+      "note": "euler-systems 의 성질 절에서 이미 개괄했다. 별도 문서로 쓰려면 Selmer 구조 변형의 정확한 계산과 core rank 의 예시가 더 필요하다. 회차 끝에 꺼냈으나 시간이 모자라 되돌린다",
+      "createdAt": "2026-09-14T04:15:05.569Z",
+      "seq": 212
+    },
+    {
+      "id": "1c247183",
+      "title": "Stokes 현상과 재합산",
+      "priority": 8,
+      "note": "laplace-method 아래. Borel 합, resurgence, 지수적으로 작은 항이 안장점 교체로 나타나는 기구. euler-maclaurin 의 미해결 부분을 메운다",
+      "createdAt": "2026-09-14T04:04:47.498Z",
+      "seq": 209
     },
     {
       "id": "2b9ec335",
