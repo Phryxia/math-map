@@ -218,5 +218,6 @@ $$
 ## 더 알아보기
 
 - [Umbral moonshine 과 Mathieu 달빛](umbral-moonshine.md)
+- [Schellekens 목록과 홀로모픽 c=24 VOA 분류](schellekens-list.md)
 
 #number_theory #linear_algebra #combinatorics
