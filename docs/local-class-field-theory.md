@@ -305,5 +305,6 @@ $$
 ## 더 알아보기
 
 - [p 진 Hodge 이론과 Fontaine 주기환](p-adic-hodge-theory.md)
+- [Poitou–Tate 완전열과 대역 상호법칙](poitou-tate.md)
 
 #number_theory #field_theory #construction

@@ -297,8 +297,8 @@ Kolyvagin 계의 형식화는 타원곡선을 벗어나서도 쓰인다. 변형�
 
 ## 선수지식
 
-- [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
 - [Heegner 점과 Gross–Zagier 공식](heegner-points.md)
+- [Poitou–Tate 완전열과 대역 상호법칙](poitou-tate.md)
 
 ## 더 알아보기
 

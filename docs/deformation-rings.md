@@ -264,6 +264,7 @@ print("\n매끄러운 변형환은 계수환을 키우면 점이 늘고, 관계�
 
 - [Fontaine–Mazur 추측](fontaine-mazur.md)
 - [군 확대와 Jordan–Hölder 정리](group-extensions.md)
+- [Poitou–Tate 완전열과 대역 상호법칙](poitou-tate.md)
 
 ## 더 알아보기
 
