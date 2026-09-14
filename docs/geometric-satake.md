@@ -20,7 +20,7 @@ $$
 
 왼쪽은 **아핀 Grassmann 다양체** $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 위의 $G(\mathcal O)$ 동변 퍼버스 층들의 범주이고, 오른쪽은 쌍대군의 유한차원 표현 범주다. 단순한 범주 동치가 아니라 **텐서 범주의 동치**다. 층의 합성곱이 표현의 텐서곱에 대응한다.
 
-이 진술의 무게는 방향에 있다. 왼쪽은 `G` 만으로 정의되고 $\widehat G$ 를 전혀 쓰지 않는다. 그러니 오른쪽을 Tannaka 형식주의로 **복원**하면, 쌍대군이 근계를 뒤집어 만든 인위적 구성이 아니라 `G` 의 고리 공간의 기하에서 저절로 나오는 대상이 된다.
+이 진술의 무게는 방향에 있다. 왼쪽은 $G$ 만으로 정의되고 $\widehat G$ 를 전혀 쓰지 않는다. 그러니 오른쪽을 Tannaka 형식주의로 **복원**하면, 쌍대군이 근계를 뒤집어 만든 인위적 구성이 아니라 $G$ 의 고리 공간의 기하에서 저절로 나오는 대상이 된다.
 
 $$
 \widehat G=\mathrm{Aut}^{\otimes}\bigl(\text{올림자 } H^*\bigr)
@@ -54,7 +54,7 @@ $$
 
 ## 아핀 Grassmann 다양체
 
-$F=\mathbb C((t))$, $\mathcal O=\mathbb C[[t]]$ 라 하자. $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 는 무한차원이지만 유한차원 사영다양체들의 증가 합집합(ind-다양체)이다. $G=\mathrm{GL}_n$ 이면 $\mathrm{Gr}_G$ 의 점은 `F^n` 안의 $\mathcal O$ 격자다.
+$F=\mathbb C((t))$, $\mathcal O=\mathbb C[[t]]$ 라 하자. $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 는 무한차원이지만 유한차원 사영다양체들의 증가 합집합(ind-다양체)이다. $G=\mathrm{GL}_n$ 이면 $\mathrm{Gr}_G$ 의 점은 $F^n$ 안의 $\mathcal O$ 격자다.
 
 Cartan 분해가 $G(\mathcal O)$ 궤도를 분류한다.
 
@@ -96,7 +96,7 @@ $$
 
 문제는 이 곱이 교환적으로 보이지 않는다는 점이다. 표현의 텐서곱은 교환적이어야 하므로 교환 제약을 어디선가 얻어야 한다.
 
-**융합**(fusion) 해석이 그것을 준다. 곡선 `X` 위의 두 점 `x_1,x_2` 에 층을 하나씩 놓고 두 점을 충돌시키는 족(Beilinson–Drinfeld Grassmann 다양체)을 만들면, 두 점이 떨어져 있을 때는 곱이 명백히 교환적이고 충돌 극한에서 합성곱이 나온다. 점을 맞바꾸는 경로가 교환 제약을 준다. 대칭성이 기하에서 나온다.
+**융합**(fusion) 해석이 그것을 준다. 곡선 $X$ 위의 두 점 $x_1,x_2$ 에 층을 하나씩 놓고 두 점을 충돌시키는 족(Beilinson–Drinfeld Grassmann 다양체)을 만들면, 두 점이 떨어져 있을 때는 곱이 명백히 교환적이고 충돌 극한에서 합성곱이 나온다. 점을 맞바꾸는 경로가 교환 제약을 준다. 대칭성이 기하에서 나온다.
 
 ## Tannaka 재구성
 
@@ -132,15 +132,15 @@ graph TD
 
 ## 아핀 Grassmann 다양체
 
-`k` 를 체, `F=k((t))`, $\mathcal O=k[[t]]$ 라 하고 `G` 를 `k` 위의 연결 환원군이라 하자. **아핀 Grassmann 다양체**는 함자
+$k$ 를 체, $F=k((t))$, $\mathcal O=k[[t]]$ 라 하고 $G$ 를 $k$ 위의 연결 환원군이라 하자. **아핀 Grassmann 다양체**는 함자
 
 $$
 \mathrm{Gr}_G(R)=\bigl\{(\mathcal E,\beta)\bigr\}/\cong
 $$
 
-로 정의된다. $\mathcal E$ 는 $\mathrm{Spec}\,R[[t]]$ 위의 `G` 다발, $\beta$ 는 $\mathrm{Spec}\,R((t))$ 위에서의 자명화다. 이 함자가 ind-사영 ind-스킴으로 표현되고, `k` 점은 $G(F)/G(\mathcal O)$ 다.
+로 정의된다. $\mathcal E$ 는 $\mathrm{Spec}\,R[[t]]$ 위의 $G$ 다발, $\beta$ 는 $\mathrm{Spec}\,R((t))$ 위에서의 자명화다. 이 함자가 ind-사영 ind-스킴으로 표현되고, $k$ 점은 $G(F)/G(\mathcal O)$ 다.
 
-$G=\mathrm{GL}_n$ 이면 $\mathrm{Gr}_G$ 는 `F^n` 안의 $\mathcal O$ 격자 전체와 같다.
+$G=\mathrm{GL}_n$ 이면 $\mathrm{Gr}_G$ 는 $F^n$ 안의 $\mathcal O$ 격자 전체와 같다.
 
 ## 궤도와 IC 층
 
@@ -156,7 +156,7 @@ $$
 
 $\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)$ 를 $G(\mathcal O)$ 동변 퍼버스 층들의 범주라 하고, 합성곱을 위와 같이 정의한다.
 
-> **정리 (Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 $\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)$ 는 대칭 텐서 범주이고, 전체 코호몰로지 `H^*` 를 올림자로 하는 Tannaka 쌍대성에 의해
+> **정리 (Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 $\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)$ 는 대칭 텐서 범주이고, 전체 코호몰로지 $H^*$ 를 올림자로 하는 Tannaka 쌍대성에 의해
 > $$
 > \mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\;\simeq\;\mathrm{Rep}(\widehat G)
 > $$
@@ -168,7 +168,7 @@ Mirković–Vilonen 은 이것을 임의의 가환환 계수에서 증명했고,
 
 ## MV 순환과 무게 공간
 
-표현 $V_\lambda$ 는 무게 공간으로 분해된다. 기하 쪽에서 그 분해를 실현하는 것이 **반무한 낟가리**(semi-infinite cell)다. 멱단군 `N(F)` 궤도로 자르면
+표현 $V_\lambda$ 는 무게 공간으로 분해된다. 기하 쪽에서 그 분해를 실현하는 것이 **반무한 낟가리**(semi-infinite cell)다. 멱단군 $N(F)$ 궤도로 자르면
 
 $$
 H^*\bigl(\mathrm{Gr}_G,\mathcal{IC}_\lambda\bigr)
@@ -189,7 +189,7 @@ $$
 
 유한체 $\mathbb F_q$ 위에서 함수-층 사전을 적용하면 $\mathcal{IC}_\lambda$ 의 Frobenius 자취 함수가 나온다. 그것이 $\mathcal H(G,K)$ 의 원소이고, 그 Satake 상이 기약지표 $\chi_\lambda$ 다.
 
-곧 고전적 Satake 동형에서 $1_{K t^\lambda K}$ 의 상이 $\chi_\lambda$ 가 아니라 낮은 항이 `q^{-1}` 배로 섞인 꼴이었던 이유가 설명된다. $1_{Kt^\lambda K}$ 는 궤도 $\mathrm{Gr}^\lambda$ 의 상수층에 대응하고, $\chi_\lambda$ 는 폐포의 $\mathcal{IC}$ 층에 대응한다. 둘의 차이가 **교차 코호몰로지 줄기의 차원**, 곧 Kazhdan–Lusztig 다항식이다.
+곧 고전적 Satake 동형에서 $1_{K t^\lambda K}$ 의 상이 $\chi_\lambda$ 가 아니라 낮은 항이 $q^{-1}$ 배로 섞인 꼴이었던 이유가 설명된다. $1_{Kt^\lambda K}$ 는 궤도 $\mathrm{Gr}^\lambda$ 의 상수층에 대응하고, $\chi_\lambda$ 는 폐포의 $\mathcal{IC}$ 층에 대응한다. 둘의 차이가 **교차 코호몰로지 줄기의 차원**, 곧 Kazhdan–Lusztig 다항식이다.
 
 $$
 \chi_\lambda=\sum_{\mu\le\lambda}P_{\mu\lambda}(q^{-1})\cdot\bigl[1_{Kt^\mu K}\bigr]
@@ -200,7 +200,7 @@ $$
 ## 얼마나 많은 것이 이 그림에 들어오는가
 
 - $G=\mathrm{GL}_n$ 이면 $\mathrm{Gr}_G$ 의 궤도 폐포가 아핀 Schubert 다양체이고, MV 순환의 조합이 Young 표와 Littlewood–Richardson 규칙을 재현한다.
-- 계수를 $\mathbb Z$ 나 표수 `p` 체로 바꾸면 대응하는 것은 $\widehat G$ 의 **대수적 표현** 범주다. 표수 `p` 의 표현론(Lusztig 추측 등)이 기하 문제로 번역된다.
+- 계수를 $\mathbb Z$ 나 표수 $p$ 체로 바꾸면 대응하는 것은 $\widehat G$ 의 **대수적 표현** 범주다. 표수 $p$ 의 표현론(Lusztig 추측 등)이 기하 문제로 번역된다.
 - $\mathrm{Gr}_G$ 대신 아핀 깃발 다양체를 쓰면 반복 Hecke 범주가 나오고, 그것이 아핀 Hecke 대수의 범주화다.
 
 # 활용
@@ -209,7 +209,7 @@ $$
 
 Langlands 쌍대군은 원래 근 자료 $(X^*,\Phi,X_*,\Phi^\vee)$ 에서 $X^*\leftrightarrow X_*$, $\Phi\leftrightarrow\Phi^\vee$ 를 맞바꿔 정의한다. 정확하지만 왜 그런 대상이 자기동형 형식을 지배하는지는 설명하지 못한다.
 
-기하학적 Satake 는 $\widehat G$ 를 `G` 의 고리 공간의 코호몰로지의 자기동형군으로 준다. 정의가 개념적이고, 근 자료를 뒤집는 일이 정리의 결론으로 나온다. 이 관점에서 쌍대군은 선택이 아니라 필연이다.
+기하학적 Satake 는 $\widehat G$ 를 $G$ 의 고리 공간의 코호몰로지의 자기동형군으로 준다. 정의가 개념적이고, 근 자료를 뒤집는 일이 정리의 결론으로 나온다. 이 관점에서 쌍대군은 선택이 아니라 필연이다.
 
 ## 기하학적 Langlands 강령
 
@@ -231,7 +231,7 @@ $$
 기하 쪽에서 얻은 것이 순수한 표현론 정리를 준다.
 
 - MV 순환이 결정 기저의 기하적 실현을 주고, 텐서곱 중복도의 새로운 조합적 모형이 나온다.
-- 표수 `p` 계수의 기하학적 Satake 가 Lusztig 추측과 Williamson 의 반례로 이어졌다. 기하가 답을 주는 동시에 기대를 깨는 사례다.
+- 표수 $p$ 계수의 기하학적 Satake 가 Lusztig 추측과 Williamson 의 반례로 이어졌다. 기하가 답을 주는 동시에 기대를 깨는 사례다.
 - 대칭공간과 상대적 Langlands 강령에서 "상대적 Satake" 가 같은 방식으로 연구된다.
 
 [^1]: G. Lusztig, *Singularities, character formulas, and a q-analog of weight multiplicities*, Astérisque **101–102** (1983). V. Ginzburg, *Perverse sheaves on a loop group and Langlands duality*, arXiv:alg-geom/9511007. I. Mirković, K. Vilonen, *Geometric Langlands duality and representations of algebraic groups over commutative rings*, Ann. of Math. **166** (2007), 95–143. 융합 해석은 A. Beilinson, V. Drinfeld, *Quantization of Hitchin's integrable system and Hecke eigensheaves* (미출간). 해설로는 X. Zhu, *An introduction to affine Grassmannians and the geometric Satake equivalence*, IAS/Park City 강의록 (2016).

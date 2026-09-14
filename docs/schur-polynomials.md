@@ -63,7 +63,7 @@ graph LR
 
 ## 분할과 대각표
 
-$\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_\ell>0)$ 을 **분할**이라 하고, `i` 번째 행에 $\lambda_i$ 개의 칸을 왼쪽 정렬한 그림을 Young 도형이라 한다. 그 칸에 $\{1,\dots,n\}$ 의 값을 채워
+$\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_\ell>0)$ 을 **분할**이라 하고, $i$ 번째 행에 $\lambda_i$ 개의 칸을 왼쪽 정렬한 그림을 Young 도형이라 한다. 그 칸에 $\{1,\dots,n\}$ 의 값을 채워
 
 - 각 행이 왼쪽에서 오른쪽으로 약증가
 - 각 열이 위에서 아래로 강증가
@@ -78,7 +78,7 @@ s_\lambda(x_1,\dots,x_n)=\frac{\det\big(x_i^{\lambda_j+n-j}\big)}{\det\big(x_i^{
 =\det\big(h_{\lambda_i-i+j}\big)_{1\le i,j\le\ell}
 $$
 
-여기서 `h_k` 는 완전 동차 대칭다항식(차수 `k` 의 모든 단항식의 합, `h_0=1`, `h_{k<0}=0`)이다. 마지막 등식이 **Jacobi–Trudi 항등식**이다. 기본 대칭다항식 `e_k` 로 쓰는 쌍대 판본도 있다.
+여기서 $h_k$ 는 완전 동차 대칭다항식(차수 $k$ 의 모든 단항식의 합, $h_0=1$, $h_{k<0}=0$)이다. 마지막 등식이 **Jacobi–Trudi 항등식**이다. 기본 대칭다항식 $e_k$ 로 쓰는 쌍대 판본도 있다.
 
 $$
 s_\lambda=\det\big(e_{\lambda'_i-i+j}\big),\qquad \lambda'=\text{전치 분할}
@@ -163,21 +163,21 @@ for lam in [(2,1), (3,1), (2,2), (1,1,1), (3,2,1)]:
 # λ=(3, 2, 1)  세 계산 일치,  SSYT 개수 = 8
 ```
 
-마지막 열의 숫자가 `n=3` 일 때의 차원이고, [Weyl 차원 공식으로 계산한 값](weyl-character-formula.md)과 정확히 맞는다. Dynkin 라벨로 옮겨 보면 대응이 보인다.
+마지막 열의 숫자가 $n=3$ 일 때의 차원이고, [Weyl 차원 공식으로 계산한 값](weyl-character-formula.md)과 정확히 맞는다. Dynkin 라벨로 옮겨 보면 대응이 보인다.
 
 | $\lambda$ | Dynkin 라벨 | $\dim$ |
 |---|---|---|
-| `(2,1)` | `(1,1)` | 8 (수반표현) |
-| `(3,1)` | `(2,1)` | 15 |
-| `(2,2)` | `(0,2)` | 6 |
-| `(1,1,1)` | `(0,0)` | 1 (행렬식) |
-| `(3,2,1)` | `(1,1)` | 8 |
+| $(2,1)$ | $(1,1)$ | 8 (수반표현) |
+| $(3,1)$ | $(2,1)$ | 15 |
+| $(2,2)$ | $(0,2)$ | 6 |
+| $(1,1,1)$ | $(0,0)$ | 1 (행렬식) |
+| $(3,2,1)$ | $(1,1)$ | 8 |
 
-`(1,1,1)` 이 1 차원인 것은 $\mathfrak{sl}_3$ 에서 그 표현이 행렬식, 곧 자명표현이기 때문이다. `(3,2,1)` 과 `(2,1)` 이 같은 차원인 것도 같은 이유로, 두 분할이 `(1,1,1)` 만큼 차이 나므로 $\mathrm{GL}_3$ 에서는 행렬식 배만큼 다르고 $\mathrm{SL}_3$ 에서는 같은 표현이다. 사영의 이 효과가 차원 목록에 그대로 보인다.
+$(1,1,1)$ 이 1 차원인 것은 $\mathfrak{sl}_3$ 에서 그 표현이 행렬식, 곧 자명표현이기 때문이다. $(3,2,1)$ 과 $(2,1)$ 이 같은 차원인 것도 같은 이유로, 두 분할이 $(1,1,1)$ 만큼 차이 나므로 $\mathrm{GL}_3$ 에서는 행렬식 배만큼 다르고 $\mathrm{SL}_3$ 에서는 같은 표현이다. 사영의 이 효과가 차원 목록에 그대로 보인다.
 
 ## 대칭함수 공간의 기저
 
-차수 `d` 의 대칭다항식 공간은 분할의 개수 `p(d)` 만큼의 차원을 갖고, 여러 자연스러운 기저가 있다.
+차수 $d$ 의 대칭다항식 공간은 분할의 개수 $p(d)$ 만큼의 차원을 갖고, 여러 자연스러운 기저가 있다.
 
 $$
 m_\lambda\ (\text{단항식}),\quad e_\lambda\ (\text{기본}),\quad h_\lambda\ (\text{완전 동차}),\quad p_\lambda\ (\text{거듭제곱합}),\quad s_\lambda
@@ -195,7 +195,7 @@ $$
 \operatorname{ch}:\bigoplus_n R(S_n)\ \xrightarrow{\ \sim\ }\ \Lambda,\qquad [S^\lambda]\mapsto s_\lambda
 $$
 
-$\mathrm{GL}_n$ 의 표현론과 `S_n` 의 표현론이 같은 대상 위에서 만나는 이 현상이 **Schur–Weyl 쌍대성**의 대칭함수 판본이다.
+$\mathrm{GL}_n$ 의 표현론과 $S_n$ 의 표현론이 같은 대상 위에서 만나는 이 현상이 **Schur–Weyl 쌍대성**의 대칭함수 판본이다.
 
 ## Littlewood–Richardson 규칙
 
@@ -209,9 +209,9 @@ $$
 
 > $c^\nu_{\lambda\mu}$ 는 모양 $\nu/\lambda$, 내용 $\mu$ 인 반표준 대각표 중 그 읽기 낱말이 **격자 낱말**인 것의 개수다.
 
-격자 낱말이란 오른쪽부터 읽을 때 항상 `i` 의 개수가 `i+1` 의 개수 이상인 낱말이다. 규칙이 유한 열거로 끝나므로 계산이 가능해진다. $c^\nu_{\lambda\mu}$ 가 음이 아니라는 사실이 규칙에서 자명하지만, 대수적 정의에서는 전혀 자명하지 않다. 이 양성이 기하학적으로는 Schubert 순환의 교차수가 실제 교점 개수라는 사실이다.
+격자 낱말이란 오른쪽부터 읽을 때 항상 $i$ 의 개수가 $i+1$ 의 개수 이상인 낱말이다. 규칙이 유한 열거로 끝나므로 계산이 가능해진다. $c^\nu_{\lambda\mu}$ 가 음이 아니라는 사실이 규칙에서 자명하지만, 대수적 정의에서는 전혀 자명하지 않다. 이 양성이 기하학적으로는 Schubert 순환의 교차수가 실제 교점 개수라는 사실이다.
 
-LR 수의 계산 복잡도는 `\#P`-완전이고, 그것이 0 이 아닌지를 판정하는 문제는 다항시간에 가능하다(Knutson–Tao 의 hive 모형과 saturation 정리). 조합론적 대상의 복잡도가 이렇게 갈리는 것이 기하학적 복잡도 이론의 출발점 중 하나다.[^1]
+LR 수의 계산 복잡도는 $\#P$-완전이고, 그것이 0 이 아닌지를 판정하는 문제는 다항시간에 가능하다(Knutson–Tao 의 hive 모형과 saturation 정리). 조합론적 대상의 복잡도가 이렇게 갈리는 것이 기하학적 복잡도 이론의 출발점 중 하나다.[^1]
 
 ## RSK 대응
 
@@ -235,7 +235,7 @@ $$
 H^*(\mathrm{Gr}(k,n))\cong\Lambda/(s_\lambda:\lambda\not\subseteq k\times(n-k))
 $$
 
-그래서 "일반 위치의 선 넷과 만나는 직선은 몇 개인가" 같은 고전적 셈 문제가 `s_1^4` 를 전개하는 계산이 된다. LR 수가 곧 교차수다.
+그래서 "일반 위치의 선 넷과 만나는 직선은 몇 개인가" 같은 고전적 셈 문제가 $s_1^4$ 를 전개하는 계산이 된다. LR 수가 곧 교차수다.
 
 ## 확률과 적분가능 모형
 
@@ -253,12 +253,12 @@ Schur 다항식을 한 방향으로 변형한 것들이 각각 다른 이론을 
 
 | 대상 | 매개변수 | 연결 |
 |---|---|---|
-| Hall–Littlewood | `t` | `p`진 군의 구면함수, Satake 동형 |
+| Hall–Littlewood | $t$ | $p$ 진 군의 구면함수, Satake 동형 |
 | Jack | $\alpha$ | 랜덤 행렬의 $\beta$ 앙상블 |
-| Macdonald | `q,t` | 이중 아핀 Hecke 대수, `n!` 정리 |
+| Macdonald | $q,t$ | 이중 아핀 Hecke 대수, $n!$ 정리 |
 | LLT, 비대칭 Macdonald | 여럿 | 아핀 결정 기저, 대각조화함수 |
 
-모두 `q,t` 를 특수화하면 $s_\lambda$ 로 돌아오고, 위의 세 정의가 각각 대응물을 갖는다. Macdonald 다항식의 전개 계수가 음이 아닌 정수라는 추측(Macdonald 양성 추측)이 Haiman 의 Hilbert 스킴 기하로 증명된 것이 이 방향의 대표적 성과다.
+모두 $q,t$ 를 특수화하면 $s_\lambda$ 로 돌아오고, 위의 세 정의가 각각 대응물을 갖는다. Macdonald 다항식의 전개 계수가 음이 아닌 정수라는 추측(Macdonald 양성 추측)이 Haiman 의 Hilbert 스킴 기하로 증명된 것이 이 방향의 대표적 성과다.
 
 [^1]: 표준 참고서는 I. Macdonald, *Symmetric Functions and Hall Polynomials* (2판, 1995) 1 장과 R. Stanley, *Enumerative Combinatorics II* (1999) 7 장. LR 규칙의 현대적 증명과 hive 모형은 A. Knutson–T. Tao, *The honeycomb model of $\mathrm{GL}_n(\mathbb C)$ tensor products I*, J. Amer. Math. Soc. 12 (1999). RSK 와 가장 긴 증가 부분열의 점근은 J. Baik–P. Deift–K. Johansson, J. Amer. Math. Soc. 12 (1999). Macdonald 양성은 M. Haiman, J. Amer. Math. Soc. 14 (2001). 본문의 계산은 직접 한 것이다.
 

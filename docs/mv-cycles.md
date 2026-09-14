@@ -26,7 +26,7 @@ $$
 
 $\mathrm{Gr}_G$ 위에서 $G(\mathcal O)$ 궤도는 지배적 여무게 $\lambda$ 로 매겨지고, 그 궤도의 닫힘 위의 교차 코호몰로지 층 $\mathcal{IC}_\lambda$ 가 기약표현 $V_\lambda$ 에 대응한다. 여기까지가 기하학적 Satake다.
 
-무게 분해를 얻으려면 표현을 쌍대 토러스 $\widehat T$ 로 제한해야 하고, 층 쪽에서 그것에 해당하는 조작이 **다른 부분군의 궤도로 자르는 것**이다. `N` 을 멱단 부분군이라 할 때 그 궤도 $S_\mu=N(F)\cdot t^\mu$ 를 **반무한 낟가리**(semi-infinite cell)라 한다. 이름 그대로 무한차원이면서 여차원도 무한이다.
+무게 분해를 얻으려면 표현을 쌍대 토러스 $\widehat T$ 로 제한해야 하고, 층 쪽에서 그것에 해당하는 조작이 **다른 부분군의 궤도로 자르는 것**이다. $N$ 을 멱단 부분군이라 할 때 그 궤도 $S_\mu=N(F)\cdot t^\mu$ 를 **반무한 낟가리**(semi-infinite cell)라 한다. 이름 그대로 무한차원이면서 여차원도 무한이다.
 
 $$
 V_\lambda(\mu)\ \cong\ H^{\bullet}_c\bigl(S_\mu\cap\overline{\mathrm{Gr}^\lambda},\ \mathcal{IC}_\lambda\bigr)
@@ -54,7 +54,7 @@ $$
 m_\lambda(\mu)=\sum_{w\in W}(-1)^{\ell(w)}\,\mathcal P\bigl(w(\lambda+\rho)-(\mu+\rho)\bigr)
 $$
 
-$\mathcal P$ 는 Kostant 분할 함수다. Weyl 군의 크기만큼 항이 있고 부호가 엇갈린다. `A_2` 면 항이 여섯 개이고, 큰 군에서는 항 수가 폭발하면서 각 항이 답보다 훨씬 커진다. 답이 3 인데 항들이 수백 단위로 오가며 상쇄되는 일이 예사다.
+$\mathcal P$ 는 Kostant 분할 함수다. Weyl 군의 크기만큼 항이 있고 부호가 엇갈린다. $A_2$ 면 항이 여섯 개이고, 큰 군에서는 항 수가 폭발하면서 각 항이 답보다 훨씬 커진다. 답이 3 인데 항들이 수백 단위로 오가며 상쇄되는 일이 예사다.
 
 **상쇄가 일어난다는 것은 잘못된 것을 세고 있다는 신호다.** 올바른 대상을 세면 상쇄가 없어야 한다. MV 순환은 그 올바른 대상이고, 기하가 그것이 실제로 존재함을 보증한다. 조합론 쪽의 대각표나 Littelmann 경로도 같은 역할을 하지만, 그것들은 손으로 만든 규칙이라 왜 맞는지가 따로 증명되어야 한다. MV 순환은 정의부터 표현론적이다.
 
@@ -72,7 +72,7 @@ MV 다면체는 꼭짓점이 $W\lambda$ 의 부분집합이고 면의 위치가 
 
 ## 설정
 
-`G` 를 복소 환원군, $F=\mathbb C((t))$, $\mathcal O=\mathbb C[[t]]$ 라 하고 아핀 Grassmann 다양체를 $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 라 한다. $T\subset B=TN$ 을 극대 토러스와 Borel 이라 하자.
+$G$ 를 복소 환원군, $F=\mathbb C((t))$, $\mathcal O=\mathbb C[[t]]$ 라 하고 아핀 Grassmann 다양체를 $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 라 한다. $T\subset B=TN$ 을 극대 토러스와 Borel 이라 하자.
 
 여무게 $\mu\in X_*(T)$ 에 대해 $t^\mu\in\mathrm{Gr}_G$ 를 대응하는 점이라 하고 두 종류의 궤도를 둔다.
 
@@ -100,7 +100,7 @@ $$
 
 ## MV 다면체
 
-`T` 작용의 모멘트 사상 $\Phi:\mathrm{Gr}_G\to X_*(T)\otimes\mathbb R$ 를 MV 순환 `Z` 에 제한해 상의 볼록포를 취한 것이 **MV 다면체** $\mathrm{Pol}(Z)$ 다. 대응 $Z\mapsto\mathrm{Pol}(Z)$ 는 단사이고, 상이 Berenstein–Zelevinsky 부등식으로 기술된다.
+$T$ 작용의 모멘트 사상 $\Phi:\mathrm{Gr}_G\to X_*(T)\otimes\mathbb R$ 를 MV 순환 $Z$ 에 제한해 상의 볼록포를 취한 것이 **MV 다면체** $\mathrm{Pol}(Z)$ 다. 대응 $Z\mapsto\mathrm{Pol}(Z)$ 는 단사이고, 상이 Berenstein–Zelevinsky 부등식으로 기술된다.
 
 # 성질
 
@@ -169,7 +169,7 @@ for mu, m in sorted(gt_weights(lam).items(), reverse=True)[:6]:
 #   lam=(4, 2, 0)  mu=(3, 1, 2):  GT 패턴 2 개 = MV 순환 2 개 = Kostant 2
 ```
 
-차원이 전부 맞는다. $\lambda=(2,1,0)$ 은 $\mathfrak{sl}_3$ 의 수반표현이라 8, `(4,2,0)` 은 27, `(5,2,0)` 은 42 다. 그리고 모든 무게에서 두 계산이 일치한다.
+차원이 전부 맞는다. $\lambda=(2,1,0)$ 은 $\mathfrak{sl}_3$ 의 수반표현이라 8, $(4,2,0)$ 은 27, $(5,2,0)$ 은 42 다. 그리고 모든 무게에서 두 계산이 일치한다.
 
 두 계산의 성격이 전혀 다르다. **GT 쪽은 세 겹 반복문으로 조건을 만족하는 패턴을 하나씩 세고, Kostant 쪽은 여섯 항을 부호와 함께 더한다.** 앞의 것은 음수가 나올 수 없는 구조이고 뒤의 것은 상쇄로만 음이 아닌 값에 도달한다. MV 순환의 존재가 보증하는 것이 앞쪽 구조이며, 개수는 같더라도 **이유가 다르다**는 것이 요점이다.
 
@@ -199,7 +199,7 @@ $\overline{\mathrm{Gr}^\lambda}$ 는 일반적으로 특이점을 갖고, 그 �
 
 - **Coulomb 가지와 대칭 쌍대성**: 물리에서 나온 3 차원 게이지 이론의 Coulomb 가지가 $\mathrm{Gr}_G$ 의 변종으로 구성되고, MV 이론의 기법이 그대로 쓰인다.
 - **적분가능계**: MV 다면체의 조합론이 Berenstein–Zelevinsky 의 tropical 자료, 나아가 cluster 대수와 이어진다.
-- **산술 쪽으로의 되돌림**: Casselman–Shalika 공식처럼 함수 수준에서 계산되던 것들이 층 수준 진술의 점 개수 그림자로 이해된다. $\mathbb F_q$ 점을 세면 다시 `p` 진 적분이 나온다.
+- **산술 쪽으로의 되돌림**: Casselman–Shalika 공식처럼 함수 수준에서 계산되던 것들이 층 수준 진술의 점 개수 그림자로 이해된다. $\mathbb F_q$ 점을 세면 다시 $p$ 진 적분이 나온다.
 
 마지막 항목이 이 문서가 [기하학적 Satake](geometric-satake.md) 아래에 놓이는 이유를 다시 말해 준다. 함수에서 층으로 올라간 다음 무게까지 내려오면, 처음에 교대합으로만 알던 수가 세는 대상을 얻는다. **올라갔다 내려오는 동안 얻은 것이 그 세는 대상이다.**
 

@@ -6,7 +6,7 @@
 
 Girsanov 정리는 표류를 지우는 방법을 준다. 과정 자체를 바꾸는 것이 아니라 확률측도를 바꾼다. 같은 경로들에 다른 확률을 배정하면, 원래 측도에서 위로 흐르던 과정이 새 측도에서는 순수한 Brown 운동이 된다. 표류가 사라지는 것이 아니라 확률의 무게가 옮겨 가는 것이다.
 
-이것은 [측도변환과 우도비](change-of-measure.md)에서 본 밀도 바꾸기를 연속시간으로 옮긴 것이다. 이산 시간에서 동전의 앞면 확률을 `p` 에서 `q` 로 기울인 것에 해당하며, 밀도 역할을 하는 것이 [Itô 적분](ito-calculus.md)으로 쓰인 지수 martingale 이다. 금융의 위험중립 가격결정, 통계의 연속시간 우도비 검정, 필터링 이론의 참조측도 기법이 전부 이 정리 하나에서 나온다.
+이것은 [측도변환과 우도비](change-of-measure.md)에서 본 밀도 바꾸기를 연속시간으로 옮긴 것이다. 이산 시간에서 동전의 앞면 확률을 $p$ 에서 $q$ 로 기울인 것에 해당하며, 밀도 역할을 하는 것이 [Itô 적분](ito-calculus.md)으로 쓰인 지수 martingale 이다. 금융의 위험중립 가격결정, 통계의 연속시간 우도비 검정, 필터링 이론의 참조측도 기법이 전부 이 정리 하나에서 나온다.
 
 # 직관
 
@@ -34,7 +34,7 @@ $$
 
 이므로, 모든 눈금에 대해 곱하면 지수의 안이 합이 되어 $\theta B_t - \theta^2 t/2$ 가 된다. 이차항 $-\theta^2t/2$ 는 정규화에서 오는 것이고, 이것이 있어야 평균이 1 로 유지된다.
 
-이 보정항의 정체는 Itô 공식이다. `L_t = e^{Y_t}` 에서 `Y` 가 이차변동을 가지면 $dL = L\,dY + \tfrac12 L\,d\langle Y\rangle$ 이므로, `dL` 에 `dt` 항이 남지 않으려면 `Y` 의 표류가 정확히 $-\tfrac12 d\langle Y\rangle$ 여야 한다.
+이 보정항의 정체는 Itô 공식이다. $L_t = e^{Y_t}$ 에서 $Y$ 가 이차변동을 가지면 $dL = L\,dY + \tfrac12 L\,d\langle Y\rangle$ 이므로, $dL$ 에 $dt$ 항이 남지 않으려면 $Y$ 의 표류가 정확히 $-\tfrac12 d\langle Y\rangle$ 여야 한다.
 
 ## 무엇을 얻는가
 
@@ -44,37 +44,37 @@ $$
 
 ## 지수 martingale
 
-`B` 를 $(\Omega,\mathcal F,(\mathcal F_t),P)$ 위의 `d` 차원 표준 Brown 운동, $\theta = (\theta_t)$ 를 적합한 가측 과정이라 한다. 다음을 정의한다.
+$B$ 를 $(\Omega,\mathcal F,(\mathcal F_t),P)$ 위의 $d$ 차원 표준 Brown 운동, $\theta = (\theta_t)$ 를 적합한 가측 과정이라 한다. 다음을 정의한다.
 
 $$
 L_t=\exp\left(-\int_0^t\theta_s^{\mathsf T}\,dB_s-\frac12\int_0^t\lVert\theta_s\rVert^2\,ds\right)
 $$
 
-Itô 공식에서 $dL_t = -L_t\theta_t^{\mathsf T}dB_t$ 이므로 `L` 은 국소 martingale 이고 `L_0 = 1` 이다.
+Itô 공식에서 $dL_t = -L_t\theta_t^{\mathsf T}dB_t$ 이므로 $L$ 은 국소 martingale 이고 $L_0 = 1$ 이다.
 
 ## Novikov 조건
 
-`L` 이 진짜 martingale 임을 보장하는 충분조건이다.
+$L$ 이 진짜 martingale 임을 보장하는 충분조건이다.
 
 $$
 \mathbb E_P\left[\exp\left(\frac12\int_0^T\lVert\theta_s\rVert^2\,ds\right)\right]<\infty
 $$
 
-이 조건이 성립하면 $\mathbb E_P[L_T] = 1$ 이므로 `dQ = L_T\,dP` 가 확률측도를 정의한다. 조건이 없으면 `L` 이 순수한 국소 martingale 이 되어 $\mathbb E_P[L_T] < 1$ 일 수 있고, 그러면 `Q` 는 전체 질량이 1 이 아니다.
+이 조건이 성립하면 $\mathbb E_P[L_T] = 1$ 이므로 $dQ = L_T\,dP$ 가 확률측도를 정의한다. 조건이 없으면 $L$ 이 순수한 국소 martingale 이 되어 $\mathbb E_P[L_T] < 1$ 일 수 있고, 그러면 $Q$ 는 전체 질량이 1 이 아니다.
 
 ## 정리
 
-Novikov 조건 아래에서 `dQ = L_T\,dP` 로 정의된 `Q` 는 `P` 와 동치이고, 다음 과정은 `Q` 아래에서 표준 Brown 운동이다.
+Novikov 조건 아래에서 $dQ = L_T\,dP$ 로 정의된 $Q$ 는 $P$ 와 동치이고, 다음 과정은 $Q$ 아래에서 표준 Brown 운동이다.
 
 $$
 \tilde B_t=B_t+\int_0^t\theta_s\,ds,\qquad 0\le t\le T
 $$
 
-즉 `P`-Brown 운동에 표류 $\theta$ 를 더한 것이 `Q`-Brown 운동이 된다. 뒤집어 읽으면, `Q` 아래에서 보면 원래 있던 표류가 사라진 셈이다.
+즉 $P$-Brown 운동에 표류 $\theta$ 를 더한 것이 $Q$-Brown 운동이 된다. 뒤집어 읽으면, $Q$ 아래에서 보면 원래 있던 표류가 사라진 셈이다.
 
 ## SDE 의 표류 바꾸기
 
-$dX_t = b_t\,dt + \sigma_t\,dB_t$ 에서 표류를 $\tilde b$ 로 바꾸고 싶다면 $\sigma_t\theta_t = b_t - \tilde b_t$ 를 풀어 $\theta$ 를 정하면 된다. 그러면 `Q` 아래에서
+$dX_t = b_t\,dt + \sigma_t\,dB_t$ 에서 표류를 $\tilde b$ 로 바꾸고 싶다면 $\sigma_t\theta_t = b_t - \tilde b_t$ 를 풀어 $\theta$ 를 정하면 된다. 그러면 $Q$ 아래에서
 
 $$
 dX_t=\tilde b_t\,dt+\sigma_t\,d\tilde B_t
@@ -92,7 +92,7 @@ $$
 
 ## 절대연속이 깨지는 경우
 
-$\sigma$ 가 다른 두 확산은 서로 특이하다. 위 논증이 보여 주듯 이차변동이 다르면 한쪽에서 확률 1 인 사건이 다른 쪽에서 확률 0 이 된다. 마찬가지로 무한 구간 $[0,\infty)$ 에서는 대수의 법칙으로 표류를 식별할 수 있으므로 절대연속성이 깨진다. Girsanov 정리가 유한한 시평 `T` 에 대한 진술인 이유다.
+$\sigma$ 가 다른 두 확산은 서로 특이하다. 위 논증이 보여 주듯 이차변동이 다르면 한쪽에서 확률 1 인 사건이 다른 쪽에서 확률 0 이 된다. 마찬가지로 무한 구간 $[0,\infty)$ 에서는 대수의 법칙으로 표류를 식별할 수 있으므로 절대연속성이 깨진다. Girsanov 정리가 유한한 시평 $T$ 에 대한 진술인 이유다.
 
 ## 되돌리기
 
@@ -108,11 +108,11 @@ $$
 \mathbb E_Q[Z\mid\mathcal F_s]=\frac{\mathbb E_P[Z\,L_t\mid\mathcal F_s]}{L_s}
 $$
 
-이며, `L` 이 `P`-martingale 이라는 사실이 분모를 정당화한다.
+이며, $L$ 이 $P$-martingale 이라는 사실이 분모를 정당화한다.
 
 ## 수치로 확인
 
-표류 $\theta$ 를 가진 Brown 운동의 경로를 뽑고, 밀도 `L_T` 로 가중해 표준 Brown 운동의 기댓값을 재현한다.
+표류 $\theta$ 를 가진 Brown 운동의 경로를 뽑고, 밀도 $L_T$ 로 가중해 표준 Brown 운동의 기댓값을 재현한다.
 
 ```python
 import math, random
@@ -139,15 +139,15 @@ print(round(den / trials, 4), round(num / trials, 4))
 # 0.998 0.9987
 ```
 
-가중치의 평균이 1 이고, `X_T` 의 이차 적률이 `Q` 아래에서 `T = 1` 로 나온다. `Q` 에서 `X` 가 표준 Brown 운동이라는 진술의 수치적 확인이다. 가중치를 빼고 계산하면 $\mathbb E_P[X_T^2] = T + \theta^2T^2 = 1.64$ 가 나와야 한다.
+가중치의 평균이 1 이고, $X_T$ 의 이차 적률이 $Q$ 아래에서 $T = 1$ 로 나온다. $Q$ 에서 $X$ 가 표준 Brown 운동이라는 진술의 수치적 확인이다. 가중치를 빼고 계산하면 $\mathbb E_P[X_T^2] = T + \theta^2T^2 = 1.64$ 가 나와야 한다.
 
 ## 이산 시간과의 대응
 
 | 이산 | 연속 |
 |---|---|
 | 동전 확률 $p \to q$ | 표류 $b \to \tilde b$ |
-| 우도비의 곱 | 지수 martingale `L_t` |
-| 모든 $p\in(0,1)$ 이 동치 | 유한 `T` 에서 모든 표류가 동치 |
+| 우도비의 곱 | 지수 martingale $L_t$ |
+| 모든 $p\in(0,1)$ 이 동치 | 유한 $T$ 에서 모든 표류가 동치 |
 | 앞면 확률은 관측으로 추정 | 표류는 유한 구간에서 식별 불가 |
 | 동전의 개수는 불변 | 확산계수 $\sigma$ 는 불변 |
 
@@ -155,7 +155,7 @@ print(round(den / trials, 4), round(num / trials, 4))
 
 ## 위험중립 가격결정
 
-주가가 $dS = \mu S\,dt + \sigma S\,dB$ 를 따르고 무위험 이자율이 `r` 이라 하자. $\theta = (\mu - r)/\sigma$ 로 잡으면 `Q` 아래에서 $dS = rS\,dt + \sigma S\,d\tilde B$ 가 되고, 할인된 주가 `e^{-rt}S_t` 가 martingale 이 된다. 이 `Q` 를 위험중립측도라 한다.
+주가가 $dS = \mu S\,dt + \sigma S\,dB$ 를 따르고 무위험 이자율이 $r$ 이라 하자. $\theta = (\mu - r)/\sigma$ 로 잡으면 $Q$ 아래에서 $dS = rS\,dt + \sigma S\,d\tilde B$ 가 되고, 할인된 주가 $e^{-rt}S_t$ 가 martingale 이 된다. 이 $Q$ 를 위험중립측도라 한다.
 
 그러면 만기 지급 $\Phi(S_T)$ 의 가격이 할인된 기댓값으로 쓰인다.
 
@@ -169,13 +169,13 @@ $\Phi$ 가 유럽형 콜의 지급이면 위 기댓값이 닫힌 꼴로 계산�
 
 ## 우도비 검정과 필터링
 
-두 표류 가설 아래의 확산 과정을 구별하는 문제에서 우도비가 정확히 `L_T` 다. Neyman–Pearson 보조정리를 연속시간 관측에 적용할 수 있게 해 준다.
+두 표류 가설 아래의 확산 과정을 구별하는 문제에서 우도비가 정확히 $L_T$ 다. Neyman–Pearson 보조정리를 연속시간 관측에 적용할 수 있게 해 준다.
 
 비선형 필터링에서는 관측 과정이 Brown 운동이 되도록 참조측도를 잡는다. 그러면 조건부 분포가 밀도 과정에 대한 선형 방정식, 곧 Zakai 방정식을 만족하고, 비선형 문제가 선형 문제로 바뀐다.
 
 ## Monte Carlo 의 분산 감소
 
-희귀사건의 확률을 추정할 때 표류를 사건 쪽으로 기울여 표본을 뽑고 `L_T` 로 보정한다. 연속시간 importance sampling 이며, 어떤 $\theta$ 를 고를지가 분산을 좌우한다. 큰 편차 이론이 최적의 기울이기를 알려 준다.
+희귀사건의 확률을 추정할 때 표류를 사건 쪽으로 기울여 표본을 뽑고 $L_T$ 로 보정한다. 연속시간 importance sampling 이며, 어떤 $\theta$ 를 고를지가 분산을 좌우한다. 큰 편차 이론이 최적의 기울이기를 알려 준다.
 
 ## 편미분방정식으로 가는 길
 

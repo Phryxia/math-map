@@ -12,9 +12,9 @@
 
 ## 류 안에서 가장 짧은 형식
 
-콤팩트 다양체 위의 `k`-형식들에 `L^2` 내적이 있다고 하자. 코호몰로지류 $[\omega]$ 안에서 노름 $\|\omega+d\eta\|$ 를 최소화하는 문제를 생각한다.
+콤팩트 다양체 위의 $k$-형식들에 $L^2$ 내적이 있다고 하자. 코호몰로지류 $[\omega]$ 안에서 노름 $\|\omega+d\eta\|$ 를 최소화하는 문제를 생각한다.
 
-이것은 유한차원 최소제곱과 같은 그림이다. 아핀 부분공간 $\omega+d\Omega^{k-1}$ 에 원점에서 수선의 발을 내리는 것이고, 최소점은 $d\Omega^{k-1}$ 에 수직인 점이다. 수직 조건을 풀어 쓰면 모든 $\eta$ 에 대해 $\langle\omega,d\eta\rangle=0$ 이고, `d` 의 딸림작용소를 $\delta$ 라 하면 $\delta\omega=0$ 이다.
+이것은 유한차원 최소제곱과 같은 그림이다. 아핀 부분공간 $\omega+d\Omega^{k-1}$ 에 원점에서 수선의 발을 내리는 것이고, 최소점은 $d\Omega^{k-1}$ 에 수직인 점이다. 수직 조건을 풀어 쓰면 모든 $\eta$ 에 대해 $\langle\omega,d\eta\rangle=0$ 이고, $d$ 의 딸림작용소를 $\delta$ 라 하면 $\delta\omega=0$ 이다.
 
 닫힘형식이면서 $\delta$ 로도 죽는 형식이 최소점이다. 이 두 조건이 $\Delta\omega=0$ 과 같다.
 
@@ -46,13 +46,13 @@ $$
 
 ## 별작용소가 쌍대성을 준다
 
-`n` 차원 공간에서 `k`-형식을 지정하는 것은 `k` 차원 방향을 고르는 것이고, 계량과 방향이 있으면 그 직교여공간인 `n-k` 차원 방향이 따라온다. $\star$ 가 그 대응이다.
+$n$ 차원 공간에서 $k$-형식을 지정하는 것은 $k$ 차원 방향을 고르는 것이고, 계량과 방향이 있으면 그 직교여공간인 $n-k$ 차원 방향이 따라온다. $\star$ 가 그 대응이다.
 
-$\star$ 가 조화형식을 조화형식으로 보내므로 $\mathcal H^k\cong\mathcal H^{n-k}$, 곧 `b_k=b_{n-k}` 가 나온다. 위상적으로는 Poincaré 쌍대성이라 불리는 정리가 여기서는 선형대수 한 줄이다.
+$\star$ 가 조화형식을 조화형식으로 보내므로 $\mathcal H^k\cong\mathcal H^{n-k}$, 곧 $b_k=b_{n-k}$ 가 나온다. 위상적으로는 Poincaré 쌍대성이라 불리는 정리가 여기서는 선형대수 한 줄이다.
 
 # 정의
 
-다음에서 `M` 은 방향지어진 `n` 차원 Riemann 다양체이고, 정리를 말할 때는 콤팩트이고 경계가 없다고 가정한다.
+다음에서 $M$ 은 방향지어진 $n$ 차원 Riemann 다양체이고, 정리를 말할 때는 콤팩트이고 경계가 없다고 가정한다.
 
 ## 형식의 내적과 부피형식
 
@@ -62,7 +62,7 @@ $\star$ 가 조화형식을 조화형식으로 보내므로 $\mathcal H^k\cong\m
 
 ## Hodge 별작용소
 
-$\star:\Omega^k\to\Omega^{n-k}$ 를 다음 성질로 정의한다. 모든 `k`-형식 $\alpha,\beta$ 에 대해
+$\star:\Omega^k\to\Omega^{n-k}$ 를 다음 성질로 정의한다. 모든 $k$-형식 $\alpha,\beta$ 에 대해
 
 $$
 \alpha\wedge\star\beta=\langle\alpha,\beta\rangle\,\mathrm{vol}
@@ -74,9 +74,9 @@ $$
 \star\,dx=dy\wedge dz,\qquad \star(dx\wedge dy)=dz,\qquad\star1=dx\wedge dy\wedge dz
 $$
 
-이며, 이것이 벡터 해석의 회전과 발산이 같은 `d` 의 다른 얼굴이라는 사실의 근원이다. Riemann 계량에서 $\star\star=(-1)^{k(n-k)}$ 다.
+이며, 이것이 벡터 해석의 회전과 발산이 같은 $d$ 의 다른 얼굴이라는 사실의 근원이다. Riemann 계량에서 $\star\star=(-1)^{k(n-k)}$ 다.
 
-## `L^2` 내적과 딸림미분
+## $L^2$ 내적과 딸림미분
 
 $$
 \langle\!\langle\alpha,\beta\rangle\!\rangle=\int_M\alpha\wedge\star\beta=\int_M\langle\alpha,\beta\rangle\,\mathrm{vol}
@@ -96,7 +96,7 @@ $$
 \Delta=d\delta+\delta d:\Omega^k\to\Omega^k
 $$
 
-$\Delta\omega=0$ 인 형식을 조화형식이라 하고 그 공간을 $\mathcal H^k$ 로 쓴다. 함수(`k=0`)에서는 $\delta=0$ 이므로 $\Delta f=\delta df$ 이고, 이것이 부호 규약을 빼면 Laplace–Beltrami 작용소다. 국소좌표로는
+$\Delta\omega=0$ 인 형식을 조화형식이라 하고 그 공간을 $\mathcal H^k$ 로 쓴다. 함수($k=0$)에서는 $\delta=0$ 이므로 $\Delta f=\delta df$ 이고, 이것이 부호 규약을 빼면 Laplace–Beltrami 작용소다. 국소좌표로는
 
 $$
 \Delta f=-\frac1{\sqrt{|g|}}\partial_i\big(\sqrt{|g|}\,g^{ij}\partial_j f\big)
@@ -128,7 +128,7 @@ $$
 \Omega^k(M)=\mathcal H^k\ \oplus\ d\,\Omega^{k-1}\ \oplus\ \delta\,\Omega^{k+1}
 $$
 
-세 조각이 `L^2` 내적에 대해 서로 직교하는 직합이다. 직교성은 계산으로 바로 나오고($\langle\!\langle d\alpha,\delta\beta\rangle\!\rangle=\langle\!\langle dd\alpha,\beta\rangle\!\rangle=0$), 어려운 부분은 이 셋이 전체를 덮는다는 것이다. 그 증명이 $\Delta$ 의 타원성과 Fredholm 이론이다.
+세 조각이 $L^2$ 내적에 대해 서로 직교하는 직합이다. 직교성은 계산으로 바로 나오고($\langle\!\langle d\alpha,\delta\beta\rangle\!\rangle=\langle\!\langle dd\alpha,\beta\rangle\!\rangle=0$), 어려운 부분은 이 셋이 전체를 덮는다는 것이다. 그 증명이 $\Delta$ 의 타원성과 Fredholm 이론이다.
 
 $\mathbb R^3$ 의 벡터장으로 번역하면 "임의의 벡터장은 조화 성분, 기울기 성분, 회전 성분의 합" 이라는 Helmholtz 분해다. 유체역학과 전자기학에서 오래 쓰이던 사실이 일반 다양체로 확장된 것이다.
 
@@ -152,7 +152,7 @@ $$
 
 $\star^2=\pm\mathrm{id}$ 이므로 전단사이고, 역은 부호를 붙인 $\star$ 다. 위상적 증명보다 훨씬 짧다. 대신 방향지어진 콤팩트 다양체라는 가정이 $\mathrm{vol}$ 과 경계항 소거에 쓰이며, 방향이 없으면 실계수에서도 성립하지 않는다.
 
-`4k` 차원에서는 $\star$ 가 $\mathcal H^{2k}$ 를 자기 자신으로 보내고 $\star^2=\mathrm{id}$ 이므로 고유공간 $\mathcal H^\pm$ 로 쪼개진다. 그 차원의 차 `b^+-b^-` 가 부호수이고, 4 차원 다양체 이론과 Yang–Mills 이론의 자기쌍대 방정식이 이 분해 위에서 전개된다.
+$4k$ 차원에서는 $\star$ 가 $\mathcal H^{2k}$ 를 자기 자신으로 보내고 $\star^2=\mathrm{id}$ 이므로 고유공간 $\mathcal H^\pm$ 로 쪼개진다. 그 차원의 차 $b^+-b^-$ 가 부호수이고, 4 차원 다양체 이론과 Yang–Mills 이론의 자기쌍대 방정식이 이 분해 위에서 전개된다.
 
 ## Bochner 소멸 정리
 
@@ -172,7 +172,7 @@ $$
 
 ## 이산판으로 확인
 
-단체 복합체 위에서 `d` 를 경계사상의 전치로 두면 같은 이야기가 유한차원 선형대수가 된다. $\Delta_k=\partial_{k+1}\partial_{k+1}^{\mathsf T}+\partial_k^{\mathsf T}\partial_k$ 의 핵의 차원이 Betti 수여야 한다.
+단체 복합체 위에서 $d$ 를 경계사상의 전치로 두면 같은 이야기가 유한차원 선형대수가 된다. $\Delta_k=\partial_{k+1}\partial_{k+1}^{\mathsf T}+\partial_k^{\mathsf T}\partial_k$ 의 핵의 차원이 Betti 수여야 한다.
 
 ```python
 import numpy as np
@@ -219,7 +219,7 @@ for name, K in [("S^1", circle), ("원판", disk), ("S^2", sphere)]:
 # S^2: dim ker Delta_k = [1, 0, 1]
 ```
 
-`S^1` 은 구멍 하나라 `b_1=1`, 삼각형을 메운 원판은 `b_1=0`, 구는 `b_0=b_2=1` 이고 `b_1=0` 이다. `S^2` 의 결과에서 `b_0=b_2` 가 보이는데 이것이 Poincaré 쌍대성의 이산판이며, $\star$ 에 해당하는 것이 삼각분할의 쌍대 복합체다.
+$S^1$ 은 구멍 하나라 $b_1=1$, 삼각형을 메운 원판은 $b_1=0$, 구는 $b_0=b_2=1$ 이고 $b_1=0$ 이다. $S^2$ 의 결과에서 $b_0=b_2$ 가 보이는데 이것이 Poincaré 쌍대성의 이산판이며, $\star$ 에 해당하는 것이 삼각분할의 쌍대 복합체다.
 
 이산판에서는 타원 정칙성이 필요 없다. 유한차원이라 $\ker\Delta=\ker\partial^{\mathsf T}\cap\ker\partial$ 와 직교분해가 선형대수로 끝난다. 매끄러운 경우의 모든 어려움이 무한차원이라는 점 하나에서 온다는 것을 이 대비가 보여 준다.
 
@@ -227,7 +227,7 @@ for name, K in [("S^1", circle), ("원판", disk), ("S^2", sphere)]:
 
 ## 스펙트럼 기하
 
-$\Delta$ 의 고윳값 전체가 다양체의 스펙트럼이다. 고윳값 0 의 중복도가 `b_k` 이고, 0 이 아닌 고윳값들은 계량에 의존한다.
+$\Delta$ 의 고윳값 전체가 다양체의 스펙트럼이다. 고윳값 0 의 중복도가 $b_k$ 이고, 0 이 아닌 고윳값들은 계량에 의존한다.
 
 함수에 대한 첫 번째 비영 고윳값 $\lambda_1$ 은 다양체가 얼마나 "잘록한지" 를 잰다. 잘록한 목이 있으면 $\lambda_1$ 이 작고, 둥글면 크다. 이 관계를 정량화한 Cheeger 부등식이 [그래프 Laplacian](graph-laplacian.md)의 스펙트럼 군집화에서 그대로 다시 등장한다. 이산과 연속에서 같은 정리가 성립하는 것은 우연이 아니라 둘 다 같은 변분 문제이기 때문이다.
 
@@ -235,15 +235,15 @@ $\Delta$ 의 고윳값 전체가 다양체의 스펙트럼이다. 고윳값 0 �
 
 ## 조화 1-형식과 사상
 
-`b_1(M)=r` 이면 조화 1-형식이 `r` 차원만큼 있다. 각각을 적분하면 `M` 에서 원환면 $\mathbb R^r/\Lambda$ 로 가는 사상이 나오며, 이것이 Albanese 사상이다.
+$b_1(M)=r$ 이면 조화 1-형식이 $r$ 차원만큼 있다. 각각을 적분하면 $M$ 에서 원환면 $\mathbb R^r/\Lambda$ 로 가는 사상이 나오며, 이것이 Albanese 사상이다.
 
-복소 다양체에서는 이 구성이 훨씬 강해진다. $\Delta$ 가 $\partial$ 과 $\bar\partial$ 에 대해 같은 값을 주는 Kähler 항등식 덕분에 조화형식 공간이 `(p,q)` 형으로 쪼개지고, Hodge 분해 $H^k=\bigoplus_{p+q=k}H^{p,q}$ 와 `h^{p,q}=h^{q,p}` 가 나온다. 따라서 Kähler 다양체에서는 홀수 Betti 수가 짝수다. 어떤 다양체가 복소구조를 가질 수 없는지를 이 한 줄로 판정할 수 있다.
+복소 다양체에서는 이 구성이 훨씬 강해진다. $\Delta$ 가 $\partial$ 과 $\bar\partial$ 에 대해 같은 값을 주는 Kähler 항등식 덕분에 조화형식 공간이 $(p,q)$ 형으로 쪼개지고, Hodge 분해 $H^k=\bigoplus_{p+q=k}H^{p,q}$ 와 $h^{p,q}=h^{q,p}$ 가 나온다. 따라서 Kähler 다양체에서는 홀수 Betti 수가 짝수다. 어떤 다양체가 복소구조를 가질 수 없는지를 이 한 줄로 판정할 수 있다.
 
 ## 물리의 장방정식
 
-진공의 Maxwell 방정식은 전자기장 2-형식 `F` 에 대해 `dF=0` 과 $\delta F=0$ 이다. 곧 `F` 가 조화형식이라는 진술이며, $\star$ 가 전기장과 자기장을 맞바꾸는 쌍대성이 된다.
+진공의 Maxwell 방정식은 전자기장 2-형식 $F$ 에 대해 $dF=0$ 과 $\delta F=0$ 이다. 곧 $F$ 가 조화형식이라는 진술이며, $\star$ 가 전기장과 자기장을 맞바꾸는 쌍대성이 된다.
 
-Hodge 분해는 게이지 고정의 기하적 정체이기도 하다. 퍼텐셜 `A` 의 $d\Omega^0$ 성분은 게이지 변환으로 바꿀 수 있는 부분이고, Lorenz 게이지 $\delta A=0$ 이 그 성분을 제거해 물리적 자유도만 남긴다. 남는 조화 성분이 위상적 자유도이며, 이것이 [de Rham 코호몰로지](de-rham-cohomology.md)에서 본 Aharonov–Bohm 효과의 정체다.
+Hodge 분해는 게이지 고정의 기하적 정체이기도 하다. 퍼텐셜 $A$ 의 $d\Omega^0$ 성분은 게이지 변환으로 바꿀 수 있는 부분이고, Lorenz 게이지 $\delta A=0$ 이 그 성분을 제거해 물리적 자유도만 남긴다. 남는 조화 성분이 위상적 자유도이며, 이것이 [de Rham 코호몰로지](de-rham-cohomology.md)에서 본 Aharonov–Bohm 효과의 정체다.
 
 ## 계산기하와 데이터
 

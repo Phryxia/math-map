@@ -10,7 +10,7 @@ $$
 \exp:\mathfrak g\to G,\qquad \exp(X)=\sum_{k\ge0}\frac{X^k}{k!}
 $$
 
-이 사상은 `0` 의 근방에서 미분동형이라 국소적으로는 완전한 사전이 된다. 그러나 전역적으로는 그렇지 않고, 어긋나는 방식이 흥미롭다.
+이 사상은 $0$ 의 근방에서 미분동형이라 국소적으로는 완전한 사전이 된다. 그러나 전역적으로는 그렇지 않고, 어긋나는 방식이 흥미롭다.
 
 - $\exp$ 가 전사가 아닐 수 있다. $\mathrm{SL}_2(\mathbb R)$ 이 그렇다.
 - 같은 Lie 대수를 갖는 서로 다른 군이 있다. $\mathrm{SU}(2)$ 와 $\mathrm{SO}(3)$ 이 그렇다.
@@ -27,7 +27,7 @@ $$
 
 ## 지수사상은 흐름이다
 
-$X\in\mathfrak g$ 를 왼쪽불변 벡터장으로 보면 `G` 위의 흐름이 생긴다. 항등원에서 출발해 그 흐름을 시간 `t` 만큼 따라간 점이 $\exp(tX)$ 다. 정의하는 성질은 이것이다.
+$X\in\mathfrak g$ 를 왼쪽불변 벡터장으로 보면 $G$ 위의 흐름이 생긴다. 항등원에서 출발해 그 흐름을 시간 $t$ 만큼 따라간 점이 $\exp(tX)$ 다. 정의하는 성질은 이것이다.
 
 $$
 \gamma(0)=e,\quad \gamma'(t)=\gamma(t)X,\quad \gamma(s+t)=\gamma(s)\gamma(t)
@@ -35,7 +35,7 @@ $$
 
 곧 $t\mapsto\exp(tX)$ 는 유일한 **1-매개변수 부분군**이다. 행렬군에서는 급수가 그대로 이 미분방정식의 해이므로 두 정의가 일치한다.
 
-$\exp$ 의 `0` 에서의 미분이 항등사상이므로 역함수 정리에 의해 `0` 의 어떤 근방에서 미분동형이다. 이것이 "국소적으로는 군과 대수가 같다" 는 말의 정확한 내용이고, BCH 공식이 그 근방에서 곱셈을 괄호로 복원한다.
+$\exp$ 의 $0$ 에서의 미분이 항등사상이므로 역함수 정리에 의해 $0$ 의 어떤 근방에서 미분동형이다. 이것이 "국소적으로는 군과 대수가 같다" 는 말의 정확한 내용이고, BCH 공식이 그 근방에서 곱셈을 괄호로 복원한다.
 
 ## 같은 대수, 다른 군
 
@@ -45,15 +45,15 @@ $$
 \mathfrak{su}(2)\cong\mathfrak{so}(3)
 $$
 
-그런데 군으로는 다르다. $\mathrm{SU}(2)$ 는 `S^3` 이라 단연결이고, $\mathrm{SO}(3)$ 은 $\mathbb{RP}^3$ 이라 $\pi_1=\mathbb Z/2$ 다. 둘을 잇는 것이 이중덮개다.
+그런데 군으로는 다르다. $\mathrm{SU}(2)$ 는 $S^3$ 이라 단연결이고, $\mathrm{SO}(3)$ 은 $\mathbb{RP}^3$ 이라 $\pi_1=\mathbb Z/2$ 다. 둘을 잇는 것이 이중덮개다.
 
 $$
 1\to\{\pm I\}\to\mathrm{SU}(2)\to\mathrm{SO}(3)\to1
 $$
 
-물리에서 이 $\pm$ 가 스핀 `1/2` 이다. 공간에서 한 바퀴 돌린 회전($\theta=2\pi$)은 $\mathrm{SO}(3)$ 에서 항등이지만 $\mathrm{SU}(2)$ 에서는 `-I` 라, 전자의 파동함수는 부호가 뒤집힌다. 두 바퀴를 돌아야 제자리로 온다.
+물리에서 이 $\pm$ 가 스핀 $1/2$ 이다. 공간에서 한 바퀴 돌린 회전($\theta=2\pi$)은 $\mathrm{SO}(3)$ 에서 항등이지만 $\mathrm{SU}(2)$ 에서는 $-I$ 라, 전자의 파동함수는 부호가 뒤집힌다. 두 바퀴를 돌아야 제자리로 온다.
 
-일반 원리는 이렇다. 연결 Lie 군 `G` 의 보편덮개를 $\tilde G$ 라 하면 $\tilde G$ 도 Lie 군이고 같은 Lie 대수를 가지며
+일반 원리는 이렇다. 연결 Lie 군 $G$ 의 보편덮개를 $\tilde G$ 라 하면 $\tilde G$ 도 Lie 군이고 같은 Lie 대수를 가지며
 
 $$
 G\cong\tilde G/\Gamma,\qquad \Gamma\subset Z(\tilde G)\ \text{이산}
@@ -63,7 +63,7 @@ $$
 
 ## 지수사상이 전사가 아닌 이유
 
-$\mathrm{SL}_2(\mathbb R)$ 에서 `X` 는 대각합이 0 이므로 고유값이 $\pm\lambda$ 다. $\lambda$ 가 실수면 $\exp X$ 의 대각합이 $2\cosh\lambda\ge2$ 이고, $\lambda=i\mu$ 가 순허수면 $2\cos\mu\in[-2,2]$ 이며, `X` 가 멱영이면 대각합이 `2` 다. 어느 경우든
+$\mathrm{SL}_2(\mathbb R)$ 에서 $X$ 는 대각합이 0 이므로 고유값이 $\pm\lambda$ 다. $\lambda$ 가 실수면 $\exp X$ 의 대각합이 $2\cosh\lambda\ge2$ 이고, $\lambda=i\mu$ 가 순허수면 $2\cos\mu\in[-2,2]$ 이며, $X$ 가 멱영이면 대각합이 $2$ 다. 어느 경우든
 
 $$
 \operatorname{tr}(\exp X)\ge-2
@@ -77,9 +77,9 @@ $$
 
 ## Lie 군
 
-**Lie 군**은 매끄러운 [다양체](manifolds.md) `G` 이면서 군이고, 곱셈 $G\times G\to G$ 와 역원 $G\to G$ 가 매끄러운 것이다.
+**Lie 군**은 매끄러운 [다양체](manifolds.md) $G$ 이면서 군이고, 곱셈 $G\times G\to G$ 와 역원 $G\to G$ 가 매끄러운 것이다.
 
-$\mathfrak g=T_eG$ 에 괄호를 주는 방법은 왼쪽불변 벡터장을 거친다. $X\in T_eG$ 에 대해 `X^L_g=(dL_g)_eX` 로 벡터장을 만들면, 벡터장의 Lie 괄호가 다시 왼쪽불변이므로 `T_eG` 위의 괄호가 유도된다. 이것이 $\operatorname{Lie}(G)=\mathfrak g$ 다. 행렬군에서는 교환자 `XY-YX` 와 일치한다.
+$\mathfrak g=T_eG$ 에 괄호를 주는 방법은 왼쪽불변 벡터장을 거친다. $X\in T_eG$ 에 대해 $X^L_g=(dL_g)_eX$ 로 벡터장을 만들면, 벡터장의 Lie 괄호가 다시 왼쪽불변이므로 $T_eG$ 위의 괄호가 유도된다. 이것이 $\operatorname{Lie}(G)=\mathfrak g$ 다. 행렬군에서는 교환자 $XY-YX$ 와 일치한다.
 
 ## 지수사상과 딸림표현
 
@@ -110,8 +110,8 @@ $$
 Lie 이론의 기본 정리들이다.
 
 - **함자성.** Lie 군 준동형 $\varphi:G\to H$ 는 Lie 대수 준동형 $d\varphi:\mathfrak g\to\mathfrak h$ 를 유도하고, $\varphi(\exp X)=\exp(d\varphi\,X)$ 가 성립한다.
-- **단연결에서의 역방향.** `G` 가 단연결이면 임의의 Lie 대수 준동형 $\psi:\mathfrak g\to\mathfrak h$ 에 대해 $d\varphi=\psi$ 인 군 준동형 $\varphi:G\to H$ 가 유일하게 존재한다.
-- **부분대수 대응.** $\mathfrak h\subset\mathfrak g$ 부분대수마다 $\operatorname{Lie}(H)=\mathfrak h$ 인 연결 부분군 $H\subset G$ 가 유일하게 대응한다. `H` 가 닫힌 부분군일 필요는 없다(비합리 기울기의 원환면 감기가 반례다).
+- **단연결에서의 역방향.** $G$ 가 단연결이면 임의의 Lie 대수 준동형 $\psi:\mathfrak g\to\mathfrak h$ 에 대해 $d\varphi=\psi$ 인 군 준동형 $\varphi:G\to H$ 가 유일하게 존재한다.
+- **부분대수 대응.** $\mathfrak h\subset\mathfrak g$ 부분대수마다 $\operatorname{Lie}(H)=\mathfrak h$ 인 연결 부분군 $H\subset G$ 가 유일하게 대응한다. $H$ 가 닫힌 부분군일 필요는 없다(비합리 기울기의 원환면 감기가 반례다).
 - **Lie 세 번째 정리.** 모든 유한차원 실 Lie 대수는 어떤 Lie 군의 Lie 대수다. Ado 정리로 행렬대수에 넣은 뒤 부분대수 대응을 쓰면 된다.
 - **Cartan 닫힌 부분군 정리.** 위상적으로 닫힌 부분군은 자동으로 매끄러운 부분다양체, 곧 Lie 부분군이다. 매끄러움을 가정하지 않아도 따라온다는 것이 이 정리의 힘이다.
 
@@ -180,9 +180,9 @@ Um = [[-x for x in row] for row in U]
 print(adjoint_rot(U) == adjoint_rot(Um))   # True
 ```
 
-$\theta=2\pi$ 에서 `U=-I` 인데 대응하는 회전은 항등이다. 그리고 `U` 와 `-U` 가 언제나 같은 회전을 준다. 핵이 $\{\pm I\}$ 인 이중덮개가 숫자로 드러난다.
+$\theta=2\pi$ 에서 $U=-I$ 인데 대응하는 회전은 항등이다. 그리고 $U$ 와 $-U$ 가 언제나 같은 회전을 준다. 핵이 $\{\pm I\}$ 인 이중덮개가 숫자로 드러난다.
 
-$\mathrm{SU}(2)$ 쪽에서는 $\theta$ 가 `0` 에서 $4\pi$ 까지 가야 닫힌 고리가 되고, $\mathrm{SO}(3)$ 쪽에서는 $2\pi$ 면 닫힌다. $\pi_1(\mathrm{SO}(3))=\mathbb Z/2$ 가 이 차이다.
+$\mathrm{SU}(2)$ 쪽에서는 $\theta$ 가 $0$ 에서 $4\pi$ 까지 가야 닫힌 고리가 되고, $\mathrm{SO}(3)$ 쪽에서는 $2\pi$ 면 닫힌다. $\pi_1(\mathrm{SO}(3))=\mathbb Z/2$ 가 이 차이다.
 
 ## 콤팩트 군의 좋은 성질
 
@@ -190,10 +190,10 @@ $\mathrm{SU}(2)$ 쪽에서는 $\theta$ 가 `0` 에서 $4\pi$ 까지 가야 닫�
 
 - Haar 측도로 평균을 낼 수 있어 모든 유한차원 표현이 완전가약이다(Weyl 의 유니터리 트릭).
 - 기약표현이 전부 유한차원이고 가산개다.
-- Peter–Weyl 정리에 의해 `L^2(G)` 가 기약표현들의 행렬계수로 분해된다.
-- 극대 원환면 $T\subset G$ 가 있고 모든 원소가 어떤 극대 원환면의 켤레에 들어간다. 표현은 `T` 의 무게로 분류된다.
+- Peter–Weyl 정리에 의해 $L^2(G)$ 가 기약표현들의 행렬계수로 분해된다.
+- 극대 원환면 $T\subset G$ 가 있고 모든 원소가 어떤 극대 원환면의 켤레에 들어간다. 표현은 $T$ 의 무게로 분류된다.
 
-$G=\mathrm{SO}(3)$ 에서 이 분해가 [구면조화함수](spherical-harmonics.md)이고, `G=S^1` 에서는 [Fourier 급수](fourier-series.md)다. 고전적인 조화해석이 콤팩트 군 위의 Peter–Weyl 의 특수한 경우로 통합된다.
+$G=\mathrm{SO}(3)$ 에서 이 분해가 [구면조화함수](spherical-harmonics.md)이고, $G=S^1$ 에서는 [Fourier 급수](fourier-series.md)다. 고전적인 조화해석이 콤팩트 군 위의 Peter–Weyl 의 특수한 경우로 통합된다.
 
 # 활용
 
