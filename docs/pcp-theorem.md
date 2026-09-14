@@ -221,6 +221,6 @@ print(f"\n항상 7m/8 이상. 최적 대비 최악 비율 {worst:.3f}")
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [유일게임 추측과 2-to-2 정리](unique-games.md)
 
 #complexity #algorithms #theorem
