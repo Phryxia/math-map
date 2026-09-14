@@ -1,72 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-13T23:17:30.299Z",
-  "nextSeq": 166,
+  "savedAt": "2026-09-14T00:22:20.260Z",
+  "nextSeq": 179,
   "items": [
-    {
-      "id": "dc38c3d2",
-      "title": "Fontaine-Mazur 추측과 기하적 Galois 표현",
-      "priority": 5,
-      "note": "p-adic-hodge-theory 아래. 비분기 + de Rham 조건, 2차원 홀수 경우의 Kisin-Emerton 해결, p진 Langlands 와의 연결",
-      "createdAt": "2026-09-13T18:56:40.382Z",
-      "seq": 110
-    },
-    {
-      "id": "2674cd06",
-      "title": "Heegner 점과 Gross-Zagier 공식",
-      "priority": 5,
-      "note": "selmer-groups 와 modular-curves 아래. CM 점의 내림, 높이와 L'(E,1) 의 등식, Kolyvagin Euler 계의 출발점",
-      "createdAt": "2026-09-13T19:02:35.904Z",
-      "seq": 112
-    },
-    {
-      "id": "dd8baead",
-      "title": "Kazhdan-Lusztig 다항식",
-      "priority": 5,
-      "note": "weyl-character-formula 아래. Hecke 대수의 KL 기저, Bruhat 구간의 교차 코호몰로지, Lusztig 추측과 Williamson 반례",
-      "createdAt": "2026-09-13T20:56:08.648Z",
-      "seq": 136
-    },
-    {
-      "id": "f0a59554",
-      "title": "Schellekens 목록과 홀로모픽 c=24 VOA 분류",
-      "priority": 5,
-      "note": "zhu-algebra 아래. 71 개 목록, Niemeier 격자와의 평행, orbifold 구성, 지표로 후보를 제한하는 논법",
-      "createdAt": "2026-09-13T21:07:41.819Z",
-      "seq": 139
-    },
-    {
-      "id": "4d5c873b",
-      "title": "Littlewood-Richardson 규칙과 hive 모형",
-      "priority": 5,
-      "note": "schur-polynomials 아래. 격자 낱말, hive 와 honeycomb, saturation 정리, Horn 문제",
-      "createdAt": "2026-09-13T21:17:04.601Z",
-      "seq": 145
-    },
-    {
-      "id": "623fbe8e",
-      "title": "땋임군과 Alexander-Markov 정리",
-      "priority": 5,
-      "note": "knot-invariants 아래. B_n 표시, 닫힘이 링크를 준다, Markov 이동, Temperley-Lieb 대수와 Jones 자취",
-      "createdAt": "2026-09-13T22:04:10.203Z",
-      "seq": 151
-    },
-    {
-      "id": "14d49dde",
-      "title": "추상해석과 정적 분석의 건전성",
-      "priority": 5,
-      "note": "galois-connections 아래. alpha/gamma 쌍, 전이함수 최소 고정점, 위드닝과 내로잉, 구간 영역 예제",
-      "createdAt": "2026-09-13T22:07:13.743Z",
-      "seq": 152
-    },
-    {
-      "id": "88f7472a",
-      "title": "유일게임 추측과 2-to-2 정리",
-      "priority": 5,
-      "note": "pcp-theorem 과 semidefinite-programming 아래. 기본 SDP 가 최적 근사라는 통일 정리, 잡음 안정성과 Majority is Stablest, 2022 년 부분 해결",
-      "createdAt": "2026-09-13T22:09:56.048Z",
-      "seq": 154
-    },
     {
       "id": "49150223",
       "title": "Khovanov 호몰로지와 매듭 불변량의 범주화",
@@ -74,6 +10,46 @@
       "note": "knot-invariants 와 reshetikhin-turaev 아래. 정육면체 분해, Jones 를 Euler 지표로, Rasmussen s 불변량과 매끄러운 4 차원 기하",
       "createdAt": "2026-09-13T22:57:49.584Z",
       "seq": 158
+    },
+    {
+      "id": "349d76a3",
+      "title": "Galois 표현의 변형이론과 보편 변형환",
+      "priority": 5,
+      "note": "fontaine-mazur 아래. Mazur 변형 함자의 표현가능성, 접공간이 H^1, 국소 조건을 단 변형환, R=T 의 R 쪽",
+      "createdAt": "2026-09-13T23:56:31.742Z",
+      "seq": 166
+    },
+    {
+      "id": "9e2c71a4",
+      "title": "Serre 추측과 Khare-Wintenberger 정리",
+      "priority": 5,
+      "note": "modular-forms 와 galois-representations 아래. mod p 표현의 무게와 도체 공식, 올림 정리로 이어지는 귀납 구조, fontaine-mazur 의 입력",
+      "createdAt": "2026-09-13T23:56:31.865Z",
+      "seq": 167
+    },
+    {
+      "id": "e7d47f7c",
+      "title": "Euler 계와 Kolyvagin 유도류",
+      "priority": 5,
+      "note": "heegner-points 와 selmer-groups 아래. 자취 정합적 코호몰로지류, 유도류 구성, 국소 조건 하나씩 죽여 Selmer 를 누르는 논법, Kato Euler 계와 비교",
+      "createdAt": "2026-09-14T00:00:10.438Z",
+      "seq": 170
+    },
+    {
+      "id": "3eb6a682",
+      "title": "범주 O 와 BGG 상반성",
+      "priority": 5,
+      "note": "kazhdan-lusztig 아래. Verma 가군, 블록 분해, 사영가군의 Verma 여과, KL 지표 공식이 실제로 사는 곳",
+      "createdAt": "2026-09-14T00:07:37.713Z",
+      "seq": 171
+    },
+    {
+      "id": "9340cf7d",
+      "title": "부울 함수의 Fourier 해석",
+      "priority": 5,
+      "note": "unique-games 의 빠진 선수지식. 초입방체 위 Fourier 전개, 영향력과 잡음 안정성, 초축약성, Majority is Stablest 의 무대",
+      "createdAt": "2026-09-14T00:22:00.155Z",
+      "seq": 178
     },
     {
       "id": "2b9ec335",
@@ -220,6 +196,54 @@
       "seq": 165
     },
     {
+      "id": "f69dfd16",
+      "title": "Hida 족과 고유다양체",
+      "priority": 4,
+      "note": "fontaine-mazur 와 modular-symbols 아래. 순종 사영자, p 진 무게 공간, 고전점의 조밀성, de Rham 점이 고전점이라는 문제",
+      "createdAt": "2026-09-13T23:56:31.987Z",
+      "seq": 168
+    },
+    {
+      "id": "4ef9f72d",
+      "title": "Soergel 쌍가군과 Hodge 이론",
+      "priority": 4,
+      "note": "kazhdan-lusztig 아래. 불변식환의 쌍가군, 범주화된 Hecke 대수, 강한 Lefschetz 로 양수성 증명",
+      "createdAt": "2026-09-14T00:07:37.838Z",
+      "seq": 172
+    },
+    {
+      "id": "f9f8bfe8",
+      "title": "격자 VOA 와 오비폴드 구성",
+      "priority": 4,
+      "note": "schellekens-list 아래. V_L 의 구성, 꼬인 가군, Z/n 오비폴드가 홀로모픽을 보존한다는 정리, 달빛 가군을 실제로 만드는 절차",
+      "createdAt": "2026-09-14T00:10:54.421Z",
+      "seq": 173
+    },
+    {
+      "id": "2de49d51",
+      "title": "Temperley-Lieb 대수와 부분인자",
+      "priority": 4,
+      "note": "braid-groups 아래. TL_n(delta) 의 도형 기저, Jones 자취, II_1 인자의 지표가 4cos^2(pi/n) 로 양자화되는 정리",
+      "createdAt": "2026-09-14T00:16:58.049Z",
+      "seq": 174
+    },
+    {
+      "id": "33e35baf",
+      "title": "Kleene 고정점 정리와 영역 이론",
+      "priority": 4,
+      "note": "abstract-interpretation 아래 또는 galois-connections 아래. cpo 와 스콧 연속성, 최소 고정점의 구성적 계산, 재귀 프로그램의 표시적 의미론",
+      "createdAt": "2026-09-14T00:19:34.132Z",
+      "seq": 176
+    },
+    {
+      "id": "794351e5",
+      "title": "Sum-of-Squares 위계와 증명 복잡도",
+      "priority": 4,
+      "note": "unique-games 와 semidefinite-programming 아래. 다항식 증명계로서의 SoS, 차수와 라운드, 평면화 값과 하계, UGC 반증 시도",
+      "createdAt": "2026-09-14T00:22:00.030Z",
+      "seq": 177
+    },
+    {
       "id": "c512345c",
       "title": "양자 혼돈과 고윳값 통계",
       "priority": 3,
@@ -234,6 +258,14 @@
       "note": "casselman-shalika 아래. 메타플렉틱 덮개에서 Whittaker 유일성이 깨질 때 나오는 대체물, Gelfand-Tsetlin 패턴의 가중 세기, 결정 기저와의 관계",
       "createdAt": "2026-09-13T23:10:25.787Z",
       "seq": 164
+    },
+    {
+      "id": "70bc06a7",
+      "title": "Garside 구조와 땋임군의 알고리즘",
+      "priority": 3,
+      "note": "braid-groups 아래. 기본 땋임 Delta, 왼쪽 정규형, 낱말/켤레 문제의 알고리즘과 복잡도",
+      "createdAt": "2026-09-14T00:16:58.172Z",
+      "seq": 175
     }
   ]
 }
