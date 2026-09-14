@@ -200,7 +200,7 @@ print("           TW_1:  -1.2065     1.2680")
 
 - [Wigner 반원법칙](wigner-semicircle.md)
 - [Painlevé 방정식과 등모노드로미 변형](painleve-equations.md)
-- [Airy 함수와 회전점](airy-functions.md)
+- [결정점과정](determinantal-point-process.md)
 
 ## 더 알아보기
 

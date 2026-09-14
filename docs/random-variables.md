@@ -204,5 +204,6 @@ print(mean_var(sample))
 - [집중부등식](concentration-inequalities.md)
 - [Bayes 추론과 사후분포](bayesian-inference.md)
 - [주성분 분석](principal-component-analysis.md)
+- [결정점과정](determinantal-point-process.md)
 
 #probability
