@@ -77,7 +77,7 @@ for (const N of [11, 37, 389]) {
 
 ## 복소해석으로 만든 점이 왜 대수적인가
 
-위 구성은 순전히 복소해석적이다. 격자를 잡고 몫을 취했을 뿐이다. 그런데 나온 점은 대수적수 체 위에서 정의된다. 이유는 허수이차 곱셈론이다. `\mathbb C/\mathfrak a` 의 `j` 불변량은 대수적 정수이고, 더 정확히는 `K` 의 **힐베르트 유체** `H`(최대 비분기 아벨확대) 를 생성한다.
+위 구성은 순전히 복소해석적이다. 격자를 잡고 몫을 취했을 뿐이다. 그런데 나온 점은 대수적수 체 위에서 정의된다. 이유는 [복소 곱셈론](complex-multiplication.md)이다. `\mathbb C/\mathfrak a` 의 `j` 불변량은 대수적 정수이고, 더 정확히는 `K` 의 **힐베르트 유체** `H`(최대 비분기 아벨확대) 를 생성한다.
 
 $$
 H=K\bigl(j(\mathcal O_K)\bigr),\qquad \mathrm{Gal}(H/K)\cong \mathrm{Cl}(K)
@@ -245,6 +245,7 @@ Heegner 점은 "특수값을 대수적 순환류로 실현한다" 는 도식의 
 
 - [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)
 - [모듈러 곡선 X_0(N)](modular-curves.md)
+- [복소 곱셈과 허수이차체의 유체론](complex-multiplication.md)
 
 ## 더 알아보기
 
