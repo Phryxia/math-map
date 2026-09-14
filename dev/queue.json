@@ -1,31 +1,31 @@
 {
   "version": 1,
-  "savedAt": "2026-09-14T13:04:59.460Z",
-  "nextSeq": 224,
+  "savedAt": "2026-09-14T17:03:53.675Z",
+  "nextSeq": 228,
   "items": [
     {
-      "id": "0b2e3ee3",
-      "title": "유니코드 수식 전환: 손으로 고치는 절차",
-      "priority": 90,
-      "note": "기계 치환은 실패한다(앞 회차 기록: exists+변수 붙음, 중괄호 그룹, 연산자 이름, 쉼표로 쪼개진 백틱). 2026-09-14 회차에서 확립한 절차: (1) docs 전체를 훑어 코드펜스 밖 백틱 중 유니코드 수학기호가 든 것만 문서별로 집계하고 라인을 그대로 출력한다. (2) 라인 하나를 통째로 Edit 로 교체한다. 한 라인의 수식 백틱은 유니코드가 없는 것까지 전부 같이 바꿔야 문서가 섞이지 않는다. (3) 닫는 달러 뒤 공백 1개는 필수. 'F-성분' 처럼 수식에 조사나 접미가 붙으면 문장을 다시 쓴다. (4) 마크다운 표 안에서는 세로줄이 셀 구분자로 먹히므로 절댓값과 노름을 \\lvert \\rvert 로 쓴다. (5) 연산자 이름(Stab, Hom, Spec, Syl, lcm, epi, At, ID, sym, rw, SAT, Huffman)은 \\mathrm 으로 감싼다. (6) 진짜 코드(map, call/cc, I = S(K)(K(K)), dev/graph.mjs)는 백틱을 남긴다. 유니코드 합성기호가 섞인 코드 표현은 그대로 두고 넘어간다. (7) 검증은 코드펜스 밖 홀수 달러 줄 0 + validate + cycles + node --test. 한 회차에 18개 문서가 가능했다",
-      "createdAt": "2026-09-14T09:00:42.822Z",
-      "seq": 220
+      "id": "f660ac21",
+      "title": "Airy 함수와 회전점",
+      "priority": 7,
+      "note": "wkb-approximation 아래. Ai/Bi 의 적분 표현, 두 안장점의 합류, 영점의 점근과 Stokes 선 배치. stokes-phenomenon 과 wkb-approximation 이 둘 다 Airy 를 표준 예로 쓰는데 문서가 없다",
+      "createdAt": "2026-09-14T17:03:36.963Z",
+      "seq": 226
     },
     {
-      "id": "ffc90ffb",
-      "title": "백틱 수식 정리: 남은 17개 문서",
-      "priority": 85,
-      "note": "2026-09-14 두 번째 회차에서 28개 문서를 처리해 297개 중 280개 완료(1245건 -> 429건). 남은 17개는 스크립트로 다시 집계하는 것이 정확하다. 코드펜스 밖 백틱 중 유니코드 수학기호가 든 것만 문서별로 센다. 큰 것부터 lebesgue-integral 30, matchings 29, natural-transformations 29, network-flow 29, dominated-convergence 28, ito-calculus 28, limits-colimits 27, linear-regression 27, mathematical-intuitionism 27, localization-rings 26, random-walks 26, rsa-cryptosystem 26, yoneda-lemma 26, bayesian-inference 25, adjunctions 23, brownian-motion 22, functors 1(113행 map 계열은 진짜 코드라 제외). 이번 회차에서 확립한 추가 규칙: 시그마 대수의 그리스 문자는 백틱을 벗겨 평문으로 두고 대수 기호만 mathcal 로 쓴다. 닫는 달러 뒤에 쉼표나 괄호가 오면 문장을 나눠 공백이 오게 고친다. List, Maybe, gzip, return, bind 같은 프로그래밍 이름은 백틱을 남긴다. 표 안에서는 절댓값을 lvert rvert 로 쓴다",
-      "createdAt": "2026-09-14T13:04:42.994Z",
-      "seq": 223
+      "id": "6a824846",
+      "title": "Resurgence 와 transseries 의 대수 구조",
+      "priority": 6,
+      "note": "stokes-phenomenon 아래. Écalle 의 alien derivation, bridge equation, 미분방정식 형식해의 transseries 해. stokes-phenomenon 이 개념만 소개하고 구조는 비워 두었다",
+      "createdAt": "2026-09-14T16:59:40.664Z",
+      "seq": 224
     },
     {
-      "id": "1c247183",
-      "title": "Stokes 현상과 재합산",
-      "priority": 8,
-      "note": "laplace-method 아래. Borel 합, resurgence, 지수적으로 작은 항이 안장점 교체로 나타나는 기구. euler-maclaurin 의 미해결 부분을 메운다",
-      "createdAt": "2026-09-14T04:04:47.498Z",
-      "seq": 209
+      "id": "41e065f9",
+      "title": "Borel-Pade 재합산의 수치",
+      "priority": 5,
+      "note": "stokes-phenomenon 아래 또는 보강. 계수에서 특이점 위치를 역산하는 절차, Pade 근사의 극점이 절단선을 흉내내는 방식, conformal map 재합산",
+      "createdAt": "2026-09-14T17:03:37.052Z",
+      "seq": 227
     },
     {
       "id": "2b9ec335",
