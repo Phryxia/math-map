@@ -219,5 +219,6 @@ $$
 ## 더 알아보기
 
 - [Schur 곱셈자와 보편 중심확대](schur-multipliers.md)
+- [Galois 표현의 변형과 보편 변형환](deformation-rings.md)
 
 #group_theory #algebra
