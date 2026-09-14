@@ -245,5 +245,6 @@ Kolyvagin 의 방법은 `Ш` 를 위에서 누르는 유일하게 알려진 일�
 ## 더 알아보기
 
 - [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)
+- [Euler 계와 Kolyvagin 유도류](euler-systems.md)
 
 #number_theory #group_theory #theorem

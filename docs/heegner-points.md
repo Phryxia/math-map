@@ -249,6 +249,6 @@ Heegner 점은 "특수값을 대수적 순환류로 실현한다" 는 도식의 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Euler 계와 Kolyvagin 유도류](euler-systems.md)
 
 #number_theory #theorem #complex_analysis
