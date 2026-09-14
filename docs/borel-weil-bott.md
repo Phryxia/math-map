@@ -263,5 +263,6 @@ print("\n검증 통과")
 ## 더 알아보기
 
 - [Schubert 계산과 Grassmann 다양체](schubert-calculus.md)
+- [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)
 
 #algebra #group_theory #differential_geometry #theorem
