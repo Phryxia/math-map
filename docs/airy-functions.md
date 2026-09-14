@@ -273,5 +273,6 @@ Airy 는 1838년 무지개의 **과잉 아치**(supernumerary arc)를 설명하�
 
 - [WKB 근사와 연결 공식](wkb-approximation.md)
 - [Tracy–Widom 분포와 Airy 핵](tracy-widom.md)
+- [Painlevé 방정식과 등모노드로미 변형](painleve-equations.md)
 
 #analysis #complex_analysis #computation
