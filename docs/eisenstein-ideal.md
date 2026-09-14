@@ -156,7 +156,7 @@ Mazur 의 계산은 Eisenstein 극대 아이디얼에서의 완비화 `\mathbb T
 |---|---|
 | `\mathbb Q` 위 비틀림 | 해결 (Mazur) |
 | 이차체 위 비틀림 | 해결 (Kamienny, Kenku–Momose) |
-| 차수 `d` 수체 위 일양 유계성 | 해결 (Merel) |
+| 차수 `d` 수체 위 일양 유계성 | 해결 ([Merel](merel-theorem.md)) |
 | 명시적 목록 (`d\ge3`) | 부분적으로만 |
 | 아벨 다양체의 비틀림 | 대부분 열림 |
 
@@ -187,6 +187,6 @@ Frey 곡선의 `\bmod\ p` 표현이 기약임을 보이는 단계에서 Mazur �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Merel 의 일양 유계성 정리](merel-theorem.md)
 
 #number_theory #theorem #algebraic_topology
