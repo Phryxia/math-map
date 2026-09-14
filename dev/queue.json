@@ -1,31 +1,39 @@
 {
   "version": 1,
-  "savedAt": "2026-09-14T17:03:53.675Z",
-  "nextSeq": 228,
+  "savedAt": "2026-09-14T21:01:09.602Z",
+  "nextSeq": 238,
   "items": [
     {
-      "id": "f660ac21",
-      "title": "Airy 함수와 회전점",
-      "priority": 7,
-      "note": "wkb-approximation 아래. Ai/Bi 의 적분 표현, 두 안장점의 합류, 영점의 점근과 Stokes 선 배치. stokes-phenomenon 과 wkb-approximation 이 둘 다 Airy 를 표준 예로 쓰는데 문서가 없다",
-      "createdAt": "2026-09-14T17:03:36.963Z",
-      "seq": 226
-    },
-    {
-      "id": "6a824846",
-      "title": "Resurgence 와 transseries 의 대수 구조",
-      "priority": 6,
-      "note": "stokes-phenomenon 아래. Écalle 의 alien derivation, bridge equation, 미분방정식 형식해의 transseries 해. stokes-phenomenon 이 개념만 소개하고 구조는 비워 두었다",
-      "createdAt": "2026-09-14T16:59:40.664Z",
-      "seq": 224
-    },
-    {
-      "id": "41e065f9",
-      "title": "Borel-Pade 재합산의 수치",
+      "id": "f2059eca",
+      "title": "결정점과정",
       "priority": 5,
-      "note": "stokes-phenomenon 아래 또는 보강. 계수에서 특이점 위치를 역산하는 절차, Pade 근사의 극점이 절단선을 흉내내는 방식, conformal map 재합산",
-      "createdAt": "2026-09-14T17:03:37.052Z",
-      "seq": 227
+      "note": "tracy-widom 아래 또는 부모. 상관함수가 핵의 행렬식, 음의 상관과 반발, sine 핵과 Airy 핵, 무작위 행렬 밖의 예(균등생성수형도, 비교차 경로)",
+      "createdAt": "2026-09-14T20:52:11.132Z",
+      "seq": 231
+    },
+    {
+      "id": "5a39ded6",
+      "title": "정확한 WKB 와 Voros 기호",
+      "priority": 5,
+      "note": "wkb-approximation, resurgence, borel-pade 아래. WKB 급수의 Borel 합, Voros 기호와 그 Stokes 자동사상, 연결 공식이 특정 자동사상으로 환원, 스펙트럼 결정 문제",
+      "createdAt": "2026-09-14T21:00:54.430Z",
+      "seq": 233
+    },
+    {
+      "id": "725ed7b7",
+      "title": "Fredholm 행렬식",
+      "priority": 5,
+      "note": "determinantal-point-process 의 부모 후보. 자취류 작용소, det(I+K) 의 정의와 수렴, Fredholm 대안정리, 수치적 Bornemann 구적. tracy-widom 과 dpp 가 둘 다 쓰는데 문서가 없다",
+      "createdAt": "2026-09-14T21:00:54.567Z",
+      "seq": 234
+    },
+    {
+      "id": "e790616e",
+      "title": "Marchenko-Pastur 법칙과 표본공분산",
+      "priority": 5,
+      "note": "wigner-semicircle 아래. 종횡비 gamma 의 역할, 받침의 끝, BBP 전이와 주성분의 유의성 판정, principal-component-analysis 와 이어진다",
+      "createdAt": "2026-09-14T21:00:54.699Z",
+      "seq": 235
     },
     {
       "id": "2b9ec335",
@@ -274,6 +282,30 @@
       "note": "kolyvagin-systems 아래. 핵심계수 1 을 확인해도 생성원을 실제로 만드는 문제는 남는다. Rubin-Stark 추측, Kato 의 zeta 원소 구성, 어떤 동기에 Euler 계가 있는지가 열린 문제라는 지점",
       "createdAt": "2026-09-14T05:09:45.032Z",
       "seq": 216
+    },
+    {
+      "id": "75c457d6",
+      "title": "KPZ 보편성류",
+      "priority": 4,
+      "note": "tracy-widom 아래. 1:2:3 스케일링, 모서리 성장과 ASEP, 방향성 중합체, KPZ 방정식과 고정점",
+      "createdAt": "2026-09-14T20:52:11.260Z",
+      "seq": 232
+    },
+    {
+      "id": "5b243b14",
+      "title": "Bessel 함수",
+      "priority": 4,
+      "note": "airy-functions 의 형제. 원통 대칭 분리변수, 적분표현과 안장점, 영점과 고유진동, P_III 의 특수해로도 나온다",
+      "createdAt": "2026-09-14T21:00:54.826Z",
+      "seq": 236
+    },
+    {
+      "id": "bc8a216a",
+      "title": "RSK 대응과 최장증가부분수열",
+      "priority": 4,
+      "note": "tracy-widom 아래 또는 조합론 쪽. Robinson-Schensted 삽입, Young 도형과 Plancherel 측도, BDJ 정리의 조합적 뼈대",
+      "createdAt": "2026-09-14T21:00:54.957Z",
+      "seq": 237
     },
     {
       "id": "c512345c",
