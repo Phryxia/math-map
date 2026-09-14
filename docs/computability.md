@@ -123,6 +123,7 @@ Turing machine 의 자원을 제한하면 계산력이 줄어든다. 테이프 �
 
 - [P 대 NP 문제](p-np.md)
 - [Rice 정리](rice-theorem.md)
+- [영역 이론과 Kleene 고정점 정리](domain-theory.md)
 - [Gödel 불완전성 정리](godel-incompleteness.md)
 - [유한 오토마타와 정규언어](finite-automata.md)
 - [Lambda calculus](lambda-calculus.md)

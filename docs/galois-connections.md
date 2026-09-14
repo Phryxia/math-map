@@ -254,5 +254,6 @@ print("합집합 그대로는 개념이 아닐 수 있다 :",
 ## 더 알아보기
 
 - [추상해석과 정적 분석의 건전성](abstract-interpretation.md)
+- [영역 이론과 Kleene 고정점 정리](domain-theory.md)
 
 #order_theory #logic #computation
