@@ -8,9 +8,9 @@ $$
 \mathcal H(G,K)\;\cong\;R(\widehat G)\otimes\mathbb C
 $$
 
-그런데 표현환은 표현 범주의 **그림자**다. 표현환은 Grothendieck 군이라 `V\oplus W` 와 `V'\oplus W'` 이 같은 원소를 줄 수 있고, 텐서곱이 어떻게 분해되는지는 기억하지만 분해를 실현하는 사상은 잊는다. 그러면 원래 질문이 생긴다. **환이 아니라 범주 수준에서 성립하는가.**
+그런데 표현환은 표현 범주의 **그림자**다. 표현환은 Grothendieck 군이라 $V\oplus W$ 와 $V'\oplus W'$ 이 같은 원소를 줄 수 있고, 텐서곱이 어떻게 분해되는지는 기억하지만 분해를 실현하는 사상은 잊는다. 그러면 원래 질문이 생긴다. **환이 아니라 범주 수준에서 성립하는가.**
 
-기하학적 Satake 대응이 그렇다고 답한다. `\mathcal H(G,K)` 의 원소인 함수 자리에 **층**을 놓는다.
+기하학적 Satake 대응이 그렇다고 답한다. $\mathcal H(G,K)$ 의 원소인 함수 자리에 **층**을 놓는다.
 
 $$
 \mathrm{Perv}_{G(\mathcal O)}\bigl(\mathrm{Gr}_G\bigr)
@@ -18,9 +18,9 @@ $$
 \mathrm{Rep}(\widehat G)
 $$
 
-왼쪽은 **아핀 Grassmann 다양체** `\mathrm{Gr}_G=G(F)/G(\mathcal O)` 위의 `G(\mathcal O)` 동변 퍼버스 층들의 범주이고, 오른쪽은 쌍대군의 유한차원 표현 범주다. 단순한 범주 동치가 아니라 **텐서 범주의 동치**다. 층의 합성곱이 표현의 텐서곱에 대응한다.
+왼쪽은 **아핀 Grassmann 다양체** $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 위의 $G(\mathcal O)$ 동변 퍼버스 층들의 범주이고, 오른쪽은 쌍대군의 유한차원 표현 범주다. 단순한 범주 동치가 아니라 **텐서 범주의 동치**다. 층의 합성곱이 표현의 텐서곱에 대응한다.
 
-이 진술의 무게는 방향에 있다. 왼쪽은 `G` 만으로 정의되고 `\widehat G` 를 전혀 쓰지 않는다. 그러니 오른쪽을 Tannaka 형식주의로 **복원**하면, 쌍대군이 근계를 뒤집어 만든 인위적 구성이 아니라 `G` 의 고리 공간의 기하에서 저절로 나오는 대상이 된다.
+이 진술의 무게는 방향에 있다. 왼쪽은 `G` 만으로 정의되고 $\widehat G$ 를 전혀 쓰지 않는다. 그러니 오른쪽을 Tannaka 형식주의로 **복원**하면, 쌍대군이 근계를 뒤집어 만든 인위적 구성이 아니라 `G` 의 고리 공간의 기하에서 저절로 나오는 대상이 된다.
 
 $$
 \widehat G=\mathrm{Aut}^{\otimes}\bigl(\text{올림자 } H^*\bigr)
@@ -32,7 +32,7 @@ Langlands 강령에서 쌍대군이 왜 등장하는가라는 질문에 대한 �
 
 ## 함수에서 층으로
 
-유한체 위의 다양체에서 함수와 층은 서로 오간다. `\ell` 진 층 `\mathcal F` 가 있으면 각 유리점에서 Frobenius 자취를 재어 함수를 얻는다.
+유한체 위의 다양체에서 함수와 층은 서로 오간다. $\ell$ 진 층 $\mathcal F$ 가 있으면 각 유리점에서 Frobenius 자취를 재어 함수를 얻는다.
 
 $$
 f_{\mathcal F}(x)=\mathrm{tr}\bigl(\mathrm{Frob}_x,\mathcal F_{\bar x}\bigr)
@@ -40,7 +40,7 @@ $$
 
 이것이 **함수-층 사전**(Grothendieck)이다. 층의 합성곱은 함수의 합성곱으로, 층의 직합은 함수의 합으로 간다. 그러므로 층 수준의 진술은 함수 수준 진술의 정련이고, 정보가 더 많다.
 
-Satake 동형의 좌변 `\mathcal H(G,K)` 는 `K\backslash G/K` 위의 함수 공간이다. 이것을 층으로 들어 올리면 `\mathrm{Gr}_G` 위의 `G(\mathcal O)` 동변 층이 된다. 우변의 `R(\widehat G)` 는 표현의 지표들이 이루는 환이므로, 층으로 들어 올린 것이 표현 자체다.
+Satake 동형의 좌변 $\mathcal H(G,K)$ 는 $K\backslash G/K$ 위의 함수 공간이다. 이것을 층으로 들어 올리면 $\mathrm{Gr}_G$ 위의 $G(\mathcal O)$ 동변 층이 된다. 우변의 $R(\widehat G)$ 는 표현의 지표들이 이루는 환이므로, 층으로 들어 올린 것이 표현 자체다.
 
 $$
 \begin{array}{ccc}
@@ -54,9 +54,9 @@ $$
 
 ## 아핀 Grassmann 다양체
 
-`F=\mathbb C((t))`, `\mathcal O=\mathbb C[[t]]` 라 하자. `\mathrm{Gr}_G=G(F)/G(\mathcal O)` 는 무한차원이지만 유한차원 사영다양체들의 증가 합집합(ind-다양체)이다. `G=\mathrm{GL}_n` 이면 `\mathrm{Gr}_G` 의 점은 `F^n` 안의 `\mathcal O` 격자다.
+$F=\mathbb C((t))$, $\mathcal O=\mathbb C[[t]]$ 라 하자. $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 는 무한차원이지만 유한차원 사영다양체들의 증가 합집합(ind-다양체)이다. $G=\mathrm{GL}_n$ 이면 $\mathrm{Gr}_G$ 의 점은 `F^n` 안의 $\mathcal O$ 격자다.
 
-Cartan 분해가 `G(\mathcal O)` 궤도를 분류한다.
+Cartan 분해가 $G(\mathcal O)$ 궤도를 분류한다.
 
 $$
 \mathrm{Gr}_G=\bigsqcup_{\lambda\in X_*(T)^+}\mathrm{Gr}^\lambda,
@@ -64,31 +64,31 @@ $$
 \mathrm{Gr}^\lambda=G(\mathcal O)\cdot t^\lambda
 $$
 
-궤도가 지배적 쌍대지표로 매겨진다. 그런데 `\widehat G` 의 기약표현도 같은 집합으로 매겨졌다. 이 일치가 대응의 골격이다.
+궤도가 지배적 쌍대지표로 매겨진다. 그런데 $\widehat G$ 의 기약표현도 같은 집합으로 매겨졌다. 이 일치가 대응의 골격이다.
 
-| | `\mathrm{Gr}_G` 쪽 | `\mathrm{Rep}(\widehat G)` 쪽 |
+| | $\mathrm{Gr}_G$ 쪽 | $\mathrm{Rep}(\widehat G)$ 쪽 |
 |---|---|---|
-| 매개변수 | 궤도 `\mathrm{Gr}^\lambda` | 기약표현 `V_\lambda` |
-| 대상 | 교차 코호몰로지 층 `\mathcal{IC}_\lambda` | `V_\lambda` |
-| 차원 | `\dim\mathrm{Gr}^\lambda=\langle\lambda,2\rho\rangle` | 최고무게 `\lambda` |
-| 곱 | 합성곱 `\ast` | 텐서곱 `\otimes` |
-| 전체 코호몰로지 | `H^*(\mathrm{Gr}_G,\mathcal{IC}_\lambda)` | 기저가 있는 벡터공간 `V_\lambda` |
+| 매개변수 | 궤도 $\mathrm{Gr}^\lambda$ | 기약표현 $V_\lambda$ |
+| 대상 | 교차 코호몰로지 층 $\mathcal{IC}_\lambda$ | $V_\lambda$ |
+| 차원 | $\dim\mathrm{Gr}^\lambda=\langle\lambda,2\rho\rangle$ | 최고무게 $\lambda$ |
+| 곱 | 합성곱 $\ast$ | 텐서곱 $\otimes$ |
+| 전체 코호몰로지 | $H^*(\mathrm{Gr}_G,\mathcal{IC}_\lambda)$ | 기저가 있는 벡터공간 $V_\lambda$ |
 
 ## 왜 퍼버스인가
 
-`\mathrm{Gr}^\lambda` 는 열린 궤도이고 닫히지 않았다. 궤도의 폐포는 특이점을 가진다. 특이한 공간 위에서 "단순한 층" 을 고르는 올바른 방법이 **교차 코호몰로지 층** `\mathcal{IC}_\lambda` 이고, 그것을 대상으로 하는 아벨 범주가 퍼버스 층의 범주다.
+$\mathrm{Gr}^\lambda$ 는 열린 궤도이고 닫히지 않았다. 궤도의 폐포는 특이점을 가진다. 특이한 공간 위에서 "단순한 층" 을 고르는 올바른 방법이 **교차 코호몰로지 층** $\mathcal{IC}_\lambda$ 이고, 그것을 대상으로 하는 아벨 범주가 퍼버스 층의 범주다.
 
 퍼버스 층을 쓰면 세 가지가 한꺼번에 좋아진다.
 
-- 단순 대상이 정확히 `\mathcal{IC}_\lambda` 들이라 기약표현과 짝이 맞는다.
-- 합성곱이 퍼버스 범주 안에 머문다(**완전성**). 이것이 정리의 가장 어려운 부분이고, `\mathrm{Gr}_G` 의 궤도 차원의 홀짝성 같은 특별한 기하가 필요하다.
-- 분해 정리에 의해 합성곱이 `\mathcal{IC}` 들의 직합으로 쪼개지고, 그 중복도가 텐서곱 분해의 중복도가 된다.
+- 단순 대상이 정확히 $\mathcal{IC}_\lambda$ 들이라 기약표현과 짝이 맞는다.
+- 합성곱이 퍼버스 범주 안에 머문다(**완전성**). 이것이 정리의 가장 어려운 부분이고, $\mathrm{Gr}_G$ 의 궤도 차원의 홀짝성 같은 특별한 기하가 필요하다.
+- 분해 정리에 의해 합성곱이 $\mathcal{IC}$ 들의 직합으로 쪼개지고, 그 중복도가 텐서곱 분해의 중복도가 된다.
 
 일반적인 층으로는 합성곱이 아벨 범주 밖으로 나가 텐서 범주 구조를 얻지 못한다. 퍼버스 조건이 정확한 선택이다.
 
 ## 합성곱과 융합
 
-층의 합성곱은 함수의 합성곱을 흉내 낸다. 곱사상 `m:G(F)\times^{G(\mathcal O)}\mathrm{Gr}_G\to\mathrm{Gr}_G` 을 따라 밀어내는 것이다.
+층의 합성곱은 함수의 합성곱을 흉내 낸다. 곱사상 $m:G(F)\times^{G(\mathcal O)}\mathrm{Gr}_G\to\mathrm{Gr}_G$ 을 따라 밀어내는 것이다.
 
 $$
 \mathcal F\ast\mathcal G=m_*\bigl(\mathcal F\,\widetilde\boxtimes\,\mathcal G\bigr)
@@ -108,7 +108,7 @@ H^*:\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\to\mathrm{Vect},
 \mathcal F\mapsto\bigoplus_kH^k(\mathrm{Gr}_G,\mathcal F)
 $$
 
-Künneth 공식이 `H^*(\mathcal F\ast\mathcal G)\cong H^*(\mathcal F)\otimes H^*(\mathcal G)` 를 주므로 텐서 함자다. 그 텐서 자기동형군이 `\widehat G` 다. 곧 **쌍대군은 아핀 Grassmann 다양체의 코호몰로지의 대칭군**이다.
+Künneth 공식이 $H^*(\mathcal F\ast\mathcal G)\cong H^*(\mathcal F)\otimes H^*(\mathcal G)$ 를 주므로 텐서 함자다. 그 텐서 자기동형군이 $\widehat G$ 다. 곧 **쌍대군은 아핀 Grassmann 다양체의 코호몰로지의 대칭군**이다.
 
 ```mermaid
 graph TD
@@ -132,43 +132,43 @@ graph TD
 
 ## 아핀 Grassmann 다양체
 
-`k` 를 체, `F=k((t))`, `\mathcal O=k[[t]]` 라 하고 `G` 를 `k` 위의 연결 환원군이라 하자. **아핀 Grassmann 다양체**는 함자
+`k` 를 체, `F=k((t))`, $\mathcal O=k[[t]]$ 라 하고 `G` 를 `k` 위의 연결 환원군이라 하자. **아핀 Grassmann 다양체**는 함자
 
 $$
 \mathrm{Gr}_G(R)=\bigl\{(\mathcal E,\beta)\bigr\}/\cong
 $$
 
-로 정의된다. `\mathcal E` 는 `\mathrm{Spec}\,R[[t]]` 위의 `G` 다발, `\beta` 는 `\mathrm{Spec}\,R((t))` 위에서의 자명화다. 이 함자가 ind-사영 ind-스킴으로 표현되고, `k` 점은 `G(F)/G(\mathcal O)` 다.
+로 정의된다. $\mathcal E$ 는 $\mathrm{Spec}\,R[[t]]$ 위의 `G` 다발, $\beta$ 는 $\mathrm{Spec}\,R((t))$ 위에서의 자명화다. 이 함자가 ind-사영 ind-스킴으로 표현되고, `k` 점은 $G(F)/G(\mathcal O)$ 다.
 
-`G=\mathrm{GL}_n` 이면 `\mathrm{Gr}_G` 는 `F^n` 안의 `\mathcal O` 격자 전체와 같다.
+$G=\mathrm{GL}_n$ 이면 $\mathrm{Gr}_G$ 는 `F^n` 안의 $\mathcal O$ 격자 전체와 같다.
 
 ## 궤도와 IC 층
 
-`\lambda\in X_*(T)^+` 에 대해 `\mathrm{Gr}^\lambda=G(\mathcal O)t^\lambda G(\mathcal O)/G(\mathcal O)` 는 차원 `\langle\lambda,2\rho\rangle` 의 매끄러운 준사영 다양체이고, 폐포는
+$\lambda\in X_*(T)^+$ 에 대해 $\mathrm{Gr}^\lambda=G(\mathcal O)t^\lambda G(\mathcal O)/G(\mathcal O)$ 는 차원 $\langle\lambda,2\rho\rangle$ 의 매끄러운 준사영 다양체이고, 폐포는
 
 $$
 \overline{\mathrm{Gr}^\lambda}=\bigsqcup_{\mu\le\lambda}\mathrm{Gr}^\mu
 $$
 
-다. `\mu\le\lambda` 는 `\lambda-\mu` 가 양의 쌍대근의 음이 아닌 정수 결합이라는 지배 순서다. `\mathcal{IC}_\lambda` 를 `\overline{\mathrm{Gr}^\lambda}` 의 교차 코호몰로지 층으로 둔다.
+다. $\mu\le\lambda$ 는 $\lambda-\mu$ 가 양의 쌍대근의 음이 아닌 정수 결합이라는 지배 순서다. $\mathcal{IC}_\lambda$ 를 $\overline{\mathrm{Gr}^\lambda}$ 의 교차 코호몰로지 층으로 둔다.
 
 ## 합성곱과 정리
 
-`\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)` 를 `G(\mathcal O)` 동변 퍼버스 층들의 범주라 하고, 합성곱을 위와 같이 정의한다.
+$\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)$ 를 $G(\mathcal O)$ 동변 퍼버스 층들의 범주라 하고, 합성곱을 위와 같이 정의한다.
 
-> **정리 (Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 `\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)` 는 대칭 텐서 범주이고, 전체 코호몰로지 `H^*` 를 올림자로 하는 Tannaka 쌍대성에 의해
+> **정리 (Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 $\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)$ 는 대칭 텐서 범주이고, 전체 코호몰로지 `H^*` 를 올림자로 하는 Tannaka 쌍대성에 의해
 > $$
 > \mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\;\simeq\;\mathrm{Rep}(\widehat G)
 > $$
-> 가 텐서 범주의 동치로 성립한다. `\mathcal{IC}_\lambda` 가 최고무게 `\lambda` 의 기약표현 `V_\lambda` 에 대응한다.[^1]
+> 가 텐서 범주의 동치로 성립한다. $\mathcal{IC}_\lambda$ 가 최고무게 $\lambda$ 의 기약표현 $V_\lambda$ 에 대응한다.[^1]
 
-Mirković–Vilonen 은 이것을 임의의 가환환 계수에서 증명했고, 그래서 `\widehat G` 가 `\mathbb Z` 위의 군 스킴으로 나온다.
+Mirković–Vilonen 은 이것을 임의의 가환환 계수에서 증명했고, 그래서 $\widehat G$ 가 $\mathbb Z$ 위의 군 스킴으로 나온다.
 
 # 성질
 
 ## MV 순환과 무게 공간
 
-표현 `V_\lambda` 는 무게 공간으로 분해된다. 기하 쪽에서 그 분해를 실현하는 것이 **반무한 낟가리**(semi-infinite cell)다. 멱단군 `N(F)` 궤도로 자르면
+표현 $V_\lambda$ 는 무게 공간으로 분해된다. 기하 쪽에서 그 분해를 실현하는 것이 **반무한 낟가리**(semi-infinite cell)다. 멱단군 `N(F)` 궤도로 자르면
 
 $$
 H^*\bigl(\mathrm{Gr}_G,\mathcal{IC}_\lambda\bigr)
@@ -177,7 +177,7 @@ H^*\bigl(\mathrm{Gr}_G,\mathcal{IC}_\lambda\bigr)
 S_\mu=N(F)\cdot t^\mu
 $$
 
-이고 오른쪽 `\mu` 항이 무게 `\mu` 의 무게 공간이다. 그 차원을 세는 것이 `\overline{\mathrm{Gr}^\lambda}\cap\overline{S_\mu}` 의 기약성분들, 곧 **MV 순환**이다.
+이고 오른쪽 $\mu$ 항이 무게 $\mu$ 의 무게 공간이다. 그 차원을 세는 것이 $\overline{\mathrm{Gr}^\lambda}\cap\overline{S_\mu}$ 의 기약성분들, 곧 **MV 순환**이다.
 
 $$
 \dim V_\lambda(\mu)=\#\bigl\{\text{MV 순환}\bigr\}
@@ -187,9 +187,9 @@ $$
 
 ## 고전적 Satake 를 되찾는다
 
-유한체 `\mathbb F_q` 위에서 함수-층 사전을 적용하면 `\mathcal{IC}_\lambda` 의 Frobenius 자취 함수가 나온다. 그것이 `\mathcal H(G,K)` 의 원소이고, 그 Satake 상이 기약지표 `\chi_\lambda` 다.
+유한체 $\mathbb F_q$ 위에서 함수-층 사전을 적용하면 $\mathcal{IC}_\lambda$ 의 Frobenius 자취 함수가 나온다. 그것이 $\mathcal H(G,K)$ 의 원소이고, 그 Satake 상이 기약지표 $\chi_\lambda$ 다.
 
-곧 고전적 Satake 동형에서 `1_{K t^\lambda K}` 의 상이 `\chi_\lambda` 가 아니라 낮은 항이 `q^{-1}` 배로 섞인 꼴이었던 이유가 설명된다. `1_{Kt^\lambda K}` 는 궤도 `\mathrm{Gr}^\lambda` 의 상수층에 대응하고, `\chi_\lambda` 는 폐포의 `\mathcal{IC}` 층에 대응한다. 둘의 차이가 **교차 코호몰로지 줄기의 차원**, 곧 Kazhdan–Lusztig 다항식이다.
+곧 고전적 Satake 동형에서 $1_{K t^\lambda K}$ 의 상이 $\chi_\lambda$ 가 아니라 낮은 항이 `q^{-1}` 배로 섞인 꼴이었던 이유가 설명된다. $1_{Kt^\lambda K}$ 는 궤도 $\mathrm{Gr}^\lambda$ 의 상수층에 대응하고, $\chi_\lambda$ 는 폐포의 $\mathcal{IC}$ 층에 대응한다. 둘의 차이가 **교차 코호몰로지 줄기의 차원**, 곧 Kazhdan–Lusztig 다항식이다.
 
 $$
 \chi_\lambda=\sum_{\mu\le\lambda}P_{\mu\lambda}(q^{-1})\cdot\bigl[1_{Kt^\mu K}\bigr]
@@ -199,32 +199,32 @@ $$
 
 ## 얼마나 많은 것이 이 그림에 들어오는가
 
-- `G=\mathrm{GL}_n` 이면 `\mathrm{Gr}_G` 의 궤도 폐포가 아핀 Schubert 다양체이고, MV 순환의 조합이 Young 표와 Littlewood–Richardson 규칙을 재현한다.
-- 계수를 `\mathbb Z` 나 표수 `p` 체로 바꾸면 대응하는 것은 `\widehat G` 의 **대수적 표현** 범주다. 표수 `p` 의 표현론(Lusztig 추측 등)이 기하 문제로 번역된다.
-- `\mathrm{Gr}_G` 대신 아핀 깃발 다양체를 쓰면 반복 Hecke 범주가 나오고, 그것이 아핀 Hecke 대수의 범주화다.
+- $G=\mathrm{GL}_n$ 이면 $\mathrm{Gr}_G$ 의 궤도 폐포가 아핀 Schubert 다양체이고, MV 순환의 조합이 Young 표와 Littlewood–Richardson 규칙을 재현한다.
+- 계수를 $\mathbb Z$ 나 표수 `p` 체로 바꾸면 대응하는 것은 $\widehat G$ 의 **대수적 표현** 범주다. 표수 `p` 의 표현론(Lusztig 추측 등)이 기하 문제로 번역된다.
+- $\mathrm{Gr}_G$ 대신 아핀 깃발 다양체를 쓰면 반복 Hecke 범주가 나오고, 그것이 아핀 Hecke 대수의 범주화다.
 
 # 활용
 
 ## 쌍대군의 개념적 정의
 
-Langlands 쌍대군은 원래 근 자료 `(X^*,\Phi,X_*,\Phi^\vee)` 에서 `X^*\leftrightarrow X_*`, `\Phi\leftrightarrow\Phi^\vee` 를 맞바꿔 정의한다. 정확하지만 왜 그런 대상이 자기동형 형식을 지배하는지는 설명하지 못한다.
+Langlands 쌍대군은 원래 근 자료 $(X^*,\Phi,X_*,\Phi^\vee)$ 에서 $X^*\leftrightarrow X_*$, $\Phi\leftrightarrow\Phi^\vee$ 를 맞바꿔 정의한다. 정확하지만 왜 그런 대상이 자기동형 형식을 지배하는지는 설명하지 못한다.
 
-기하학적 Satake 는 `\widehat G` 를 `G` 의 고리 공간의 코호몰로지의 자기동형군으로 준다. 정의가 개념적이고, 근 자료를 뒤집는 일이 정리의 결론으로 나온다. 이 관점에서 쌍대군은 선택이 아니라 필연이다.
+기하학적 Satake 는 $\widehat G$ 를 `G` 의 고리 공간의 코호몰로지의 자기동형군으로 준다. 정의가 개념적이고, 근 자료를 뒤집는 일이 정리의 결론으로 나온다. 이 관점에서 쌍대군은 선택이 아니라 필연이다.
 
 ## 기하학적 Langlands 강령
 
-고전적 Langlands 강령에서 자기동형 형식은 `\mathrm{Bun}_G` 위의 함수이고, 기하학적 판에서는 `\mathrm{Bun}_G` 위의 층이다. Hecke 작용소 자리에는 **Hecke 함자**가 오는데, 그 함자를 `\widehat G` 의 표현으로 매개하는 것이 정확히 기하학적 Satake 다.
+고전적 Langlands 강령에서 자기동형 형식은 $\mathrm{Bun}_G$ 위의 함수이고, 기하학적 판에서는 $\mathrm{Bun}_G$ 위의 층이다. Hecke 작용소 자리에는 **Hecke 함자**가 오는데, 그 함자를 $\widehat G$ 의 표현으로 매개하는 것이 정확히 기하학적 Satake 다.
 
 $$
 \mathrm{Hecke}_V:\mathrm{D}(\mathrm{Bun}_G)\to\mathrm{D}(\mathrm{Bun}_G\times X),
 \qquad V\in\mathrm{Rep}(\widehat G)
 $$
 
-기하학적 Langlands 추측은 이 함자들의 동시 고유층(Hecke 고유층)과 `\widehat G` 국소계의 대응을 말한다. 기하학적 Satake 없이는 추측의 진술 자체가 적히지 않는다. Gaitsgory 와 공저자들이 2024 년에 이 추측의 증명을 발표했다.
+기하학적 Langlands 추측은 이 함자들의 동시 고유층(Hecke 고유층)과 $\widehat G$ 국소계의 대응을 말한다. 기하학적 Satake 없이는 추측의 진술 자체가 적히지 않는다. Gaitsgory 와 공저자들이 2024 년에 이 추측의 증명을 발표했다.
 
 ## 함수성과 기본 보조정리
 
-쌍대군 준동형 `\widehat H\to\widehat G` 가 표현 범주 사이의 함자를 주고, 그것이 층 범주 사이의 함자로 번역된다. 함수성을 기하적으로 실현하려는 시도(Braverman–Kazhdan, L. Lafforgue 의 제안)가 이 구도를 쓴다. Ngô 의 기본 보조정리 증명도 Hitchin 올뭉치의 기하로 궤도적분을 다루는 같은 철학이다.
+쌍대군 준동형 $\widehat H\to\widehat G$ 가 표현 범주 사이의 함자를 주고, 그것이 층 범주 사이의 함자로 번역된다. 함수성을 기하적으로 실현하려는 시도(Braverman–Kazhdan, L. Lafforgue 의 제안)가 이 구도를 쓴다. Ngô 의 기본 보조정리 증명도 Hitchin 올뭉치의 기하로 궤도적분을 다루는 같은 철학이다.
 
 ## 표현론으로 되돌아오기
 
