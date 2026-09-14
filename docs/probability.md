@@ -116,5 +116,6 @@ $$
 - [측도](measure.md)
 - [확률변수와 기댓값](random-variables.md)
 - [확률적 방법](probabilistic-method.md)
+- [부울 함수의 Fourier 해석](boolean-fourier.md)
 
 #probability

@@ -143,6 +143,7 @@ UGC 를 둘러싼 작업은 이론 전산학에 부울 함수 해석학을 정�
 
 - [PCP 정리와 근사 불가능성](pcp-theorem.md)
 - [반정부호 계획법과 최대 절단](semidefinite-programming.md)
+- [부울 함수의 Fourier 해석](boolean-fourier.md)
 
 ## 더 알아보기
 
