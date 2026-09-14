@@ -263,15 +263,15 @@ Kato 의 Euler 계는 모듈러 곡선의 `K_2` 안의 Beilinson 원소에서 �
 
 ## Kolyvagin 계로의 추상화
 
-Mazur 와 Rubin 은 유도류만 남기고 원래의 Euler 계를 지워 버리는 형식화를 제안했다. **Kolyvagin 계**란 `\kappa=\{\kappa_n\}` 의 족으로, 각 `\kappa_n` 이 `n` 에서 변형된 Selmer 군에 속하고 위의 제 2 상호법칙에 해당하는 관계를 공리로 만족하는 것이다.
+Mazur 와 Rubin 은 유도류만 남기고 원래의 Euler 계를 지워 버리는 형식화를 제안했다. **Kolyvagin 계**란 $\kappa=\{\kappa_n\}$ 의 족으로, 각 $\kappa_n$ 이 $n$ 에서 변형된 Selmer 군에 속하고 위의 제 2 상호법칙에 해당하는 관계를 공리로 만족하는 것이다.
 
-이 관점에서 정리의 형태가 깔끔해진다. Selmer 구조 `\mathcal F` 에 **핵심계수**(core rank)라는 정수가 붙고, 핵심계수가 1 이면 Kolyvagin 계의 모듈이 자유 순위 1 이며 그 생성원이 Selmer 군의 구조를 완전히 결정한다. 곧
+이 관점에서 정리의 형태가 깔끔해진다. Selmer 구조 $\mathcal F$ 에 **핵심계수**(core rank) $\chi(\mathcal F)$ 라는 정수가 붙고, 이 수 하나가 Kolyvagin 계 전체가 이루는 가군을 결정한다. $\chi=1$ 이면 그 가군이 자유 순위 $1$ 이고 생성원 하나가 Selmer 군의 구조를 완전히 결정한다. 곧
 
 $$
-\text{핵심계수}=1\ \Longrightarrow\ \text{Kolyvagin 계}\ \leftrightarrow\ \text{Selmer 군의 크기}
+\chi(\mathcal F)=1\ \Longrightarrow\ \text{Kolyvagin 계}\ \leftrightarrow\ \text{Selmer 군의 크기}
 $$
 
-가 일대일 대응이 된다. "Euler 계가 있으면 Selmer 가 작다" 가 아니라 "충분히 좋은 Kolyvagin 계는 Selmer 를 **정확히** 계산한다" 로 진술이 강해지는 것이다. 남은 어려움은 여전히 존재성 쪽에 있다.
+가 일대일 대응이 된다. "Euler 계가 있으면 Selmer 가 작다" 가 아니라 "충분히 좋은 Kolyvagin 계는 Selmer 를 **정확히** 계산한다" 로 진술이 강해지는 것이다. 핵심계수가 국소 데이터만으로 계산된다는 점, 그래서 "이 상황에서 논법이 통하는가" 가 유한한 선형대수가 된다는 점이 이 형식화의 실질적 이득이다. 자세한 내용은 [Kolyvagin 계와 핵심계수](kolyvagin-systems.md)에 있다. 남은 어려움은 여전히 존재성 쪽에 있다.
 
 # 활용
 
@@ -303,6 +303,7 @@ Kolyvagin 계의 형식화는 타원곡선을 벗어나서도 쓰인다. 변형�
 ## 더 알아보기
 
 - [Iwasawa 주추측과 순환체 단수](iwasawa-main-conjecture.md)
+- [Kolyvagin 계와 핵심계수](kolyvagin-systems.md)
 - [Kolyvagin–Logachev 정리와 겨냥 몫](kolyvagin-logachev.md)
 
 #number_theory #theorem #algebra
