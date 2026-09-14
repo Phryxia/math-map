@@ -1,15 +1,47 @@
 {
   "version": 1,
-  "savedAt": "2026-09-14T01:18:59.212Z",
-  "nextSeq": 192,
+  "savedAt": "2026-09-14T03:19:32.406Z",
+  "nextSeq": 205,
   "items": [
     {
-      "id": "e7d47f7c",
-      "title": "Euler 계와 Kolyvagin 유도류",
-      "priority": 5,
-      "note": "heegner-points 와 selmer-groups 아래. 자취 정합적 코호몰로지류, 유도류 구성, 국소 조건 하나씩 죽여 Selmer 를 누르는 논법, Kato Euler 계와 비교",
-      "createdAt": "2026-09-14T00:00:10.438Z",
-      "seq": 170
+      "id": "9dc3cc0c",
+      "title": "Euler-Maclaurin 공식과 점근급수",
+      "priority": 20,
+      "note": "bernoulli-numbers 아래. 합과 적분의 차이, Stirling 급수, 점근급수를 어디서 끊을지, zeta 의 고정밀 계산",
+      "createdAt": "2026-09-14T03:13:46.701Z",
+      "seq": 199
+    },
+    {
+      "id": "b3e3387b",
+      "title": "Greenberg 추측과 총실체의 Iwasawa 불변량",
+      "priority": 20,
+      "note": "vandiver-conjecture 아래. lambda^+ = mu^+ = 0 예측, Vandiver 와의 관계, 수치 증거",
+      "createdAt": "2026-09-14T03:19:21.228Z",
+      "seq": 203
+    },
+    {
+      "id": "cf46f198",
+      "title": "Merel 의 일양 유계성 정리",
+      "priority": 18,
+      "note": "eisenstein-ideal 아래. Kamienny 의 사상, Q 위가 아닌 차수 d 수체에서의 비틀림 유계, 겨냥 사영과 Hecke 작용소",
+      "createdAt": "2026-09-14T03:17:32.965Z",
+      "seq": 202
+    },
+    {
+      "id": "b3238df0",
+      "title": "대수적 K 이론과 Quillen-Lichtenbaum",
+      "priority": 15,
+      "note": "vandiver-conjecture 가 K_{4k}(Z) 소멸로 번역되는 통로. K_n(Z) 의 계산, 에탈 코호몰로지와의 비교, homology 와 galois-representations 아래",
+      "createdAt": "2026-09-14T03:19:21.352Z",
+      "seq": 204
+    },
+    {
+      "id": "b012ead6",
+      "title": "Kolyvagin 계와 핵심계수",
+      "priority": 12,
+      "note": "euler-systems 의 성질 절에서 이미 개괄했다. 별도 문서로 쓰려면 Selmer 구조 변형의 정확한 계산과 core rank 의 예시가 더 필요하다. 중복을 피해 우선순위를 낮춘다",
+      "createdAt": "2026-09-14T03:11:28.234Z",
+      "seq": 197
     },
     {
       "id": "2b9ec335",
@@ -218,14 +250,6 @@
       "note": "deformation-rings 아래. 보조 소수로 쌍대 Selmer 를 죽이는 이유, 패칭 극한, 완전교차 판정, Calegari-Geraghty 의 유도 판본",
       "createdAt": "2026-09-14T01:01:59.588Z",
       "seq": 182
-    },
-    {
-      "id": "f2db42a4",
-      "title": "Poitou-Tate 완전열과 Selmer 군의 쌍대성",
-      "priority": 4,
-      "note": "deformation-rings 가 접공간 계산에서 쓰는데 문서가 없다. 9 항 완전열, 국소 조건과 쌍대 조건, selmer-groups 와 이어진다",
-      "createdAt": "2026-09-14T01:01:59.698Z",
-      "seq": 183
     },
     {
       "id": "64488c1c",
