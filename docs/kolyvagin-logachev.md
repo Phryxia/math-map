@@ -1,0 +1,122 @@
+# Kolyvagin–Logachev 정리와 겨냥 몫
+
+# 개요
+
+[Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)은 $L$ 함수의 $s=1$ 에서의 소멸 차수가 Mordell–Weil 군의 계수와 같다고 말한다. 이 추측에서 실제로 증명된 것은 **해석 순위가 0 이나 1 인 경우의 한쪽 방향**뿐이고, 그 증명이 Kolyvagin 의 정리다.
+
+> **정리(Kolyvagin).** $E/\mathbb Q$ 가 타원곡선이고 $L(E,1)\ne0$ 이면 $E(\mathbb Q)$ 가 유한하고 $Ш(E/\mathbb Q)$ 도 유한하다. $L(E,1)=0$, $L'(E,1)\ne0$ 이면 $\operatorname{rank}E(\mathbb Q)=1$ 이고 Heegner 점이 유한 지표의 부분군을 생성한다.
+
+Kolyvagin–Logachev 는 이것을 모듈러 형식에서 만들어지는 **아벨 다양체** $A_f$ 로 확장한다. 차원이 1 보다 커도 $L(f,1)\ne0$ 이면 $A_f(\mathbb Q)$ 가 유한하다는 것이다. 이 일반화가 결정적인 이유는, 모듈러 곡선의 Jacobian 을 다룰 때 **유리점이 유한한 몫을 만들어 낼 수 있게** 해 주기 때문이다.
+
+그 몫이 겨냥 몫이다. $J_0(N)$ 에서 $L(f,1)\ne0$ 인 성분만 남긴 것이므로 정의상 Mordell–Weil 군이 유한하고, 그래서 모듈러 곡선 위의 점을 가두는 그물로 쓸 수 있다. [Merel 의 일양 유계성 정리](merel-theorem.md)가 이 그물을 쓴 대표적인 예다. **해석적 비소멸이 기하적 유한성으로 바뀌고, 그 유한성이 다시 산술적 유계를 낳는다**는 사슬이 이 문서의 주제다.
+
+# 직관
+
+## Euler 계가 Selmer 군을 누른다
+
+$E(\mathbb Q)$ 가 유한함을 보이려면 Selmer 군이 작음을 보이면 된다. [Euler 계](euler-systems.md)는 그 일을 하는 기계다. 서로 다른 준위에서 정의된 코호몰로지류들이 노름 관계로 묶여 있고, 그 관계를 이용해 **각 소수마다 국소 조건을 하나씩 죽이면** Selmer 군의 크기가 차례로 줄어든다.
+
+Kolyvagin 이 쓴 Euler 계는 허수이차체 위의 [Heegner 점](heegner-points.md)이다. 이 점들이 만드는 유도류가 소수를 하나씩 추가하며 얻어지고, 그 각각이 Selmer 군에 하나의 제약을 건다. 제약을 충분히 모으면 Selmer 군이 유한임이 나온다.
+
+## 시작점이 0 이 아니어야 한다
+
+Euler 계가 정보를 주려면 **첫 번째 원소가 0 이 아니어야 한다**. 이 비소멸이 해석적 조건에서 온다.
+
+- 해석 순위 0: $L(E,1)\ne0$. 겨냥 원소의 성분이 0 이 아니라는 모듈러 기호 쪽 사실과 같은 이야기다.
+- 해석 순위 1: Gross–Zagier 공식이 Heegner 점의 정준 높이를 $L'(E,1)$ 로 계산해 준다. $L'\ne0$ 이면 높이가 0 이 아니므로 그 점이 무한위수다.
+
+곧 **$L$ 함수가 Euler 계의 시동을 걸고, Euler 계가 Selmer 군을 누른다**. 두 단계를 잇는 것이 Gross–Zagier 와 모듈러 기호의 계산이다.
+
+## 왜 순위 2 에서는 막히는가
+
+Heegner 점은 한 점밖에 주지 않는다. 계수가 2 이상이면 독립인 점을 두 개 이상 만들어야 하는데, 그런 점을 만드는 구성이 알려져 있지 않다. **재료가 하나뿐이라는 것**이 현재 BSD 가 순위 1 에서 멈춰 있는 이유다.
+
+```mermaid
+flowchart TD
+  L["L(f,1) != 0"] --> NONZ["Euler 계의 첫 원소 != 0"]
+  GZ["Gross-Zagier<br/>L'(E,1) = 높이"] --> NONZ
+  NONZ --> EU["Kolyvagin 유도류"]
+  EU --> SEL["Selmer 군 유한"]
+  SEL --> MW["Mordell-Weil 유한 / 순위 1"]
+  SEL --> SHA["Sha 유한"]
+  MW --> JE["겨냥 몫 J_e(Q) 유한"]
+  JE --> MEREL["Merel: 차수 d 점의 배제"]
+```
+
+# 정의
+
+## 겨냥 몫
+
+$X_0(N)$ 의 모듈러 기호 $e=\{0,\infty\}$ 가 정하는 Hecke 아이디얼 $I_e=\operatorname{Ann}_{\mathbb T}(e)$ 로 몫을 취한 아벨 다양체
+
+$$
+J_e=J_0(N)\big/I_eJ_0(N)
+$$
+
+를 **겨냥 몫**이라 한다. 새형식 $f$ 가 $J_e$ 에 나타날 필요충분조건은 $L(f,1)\ne0$ 이다. 모듈러 기호의 성분 크기가 $L(f,1)$ 에 비례하기 때문이다.
+
+## Kolyvagin–Logachev 정리
+
+$f$ 가 준위 $N$ 의 새형식이고 $A_f$ 가 대응하는 모듈러 아벨 다양체일 때
+
+$$
+L(f,1)\ne0\ \Longrightarrow\ A_f(\mathbb Q)\ \text{유한},\quad Ш(A_f/\mathbb Q)\ \text{유한}
+$$
+
+$J_e$ 는 그런 $A_f$ 들로만 이루어지므로 **$J_e(\mathbb Q)$ 가 유한**이라는 따름정리가 나온다. 이 한 줄이 뒤의 모든 응용을 떠받친다.
+
+# 성질
+
+## 증명의 구조
+
+1. 허수이차체 $K$ 를 Heegner 가설을 만족하도록 고른다.
+2. $X_0(N)$ 의 Heegner 점들을 $K$ 의 류체 탑 위에서 모아 Euler 계를 만든다.
+3. 유도류를 만들어 Selmer 군의 각 국소 조건을 제어한다.
+4. 첫 원소의 비소멸을 Gross–Zagier 또는 $L(f,1)\ne0$ 에서 확보한다.
+5. Selmer 군의 유한성에서 Mordell–Weil 과 $Ш$ 의 유한성을 읽는다.
+
+각 단계가 서로 다른 이론에 의존한다는 점이 특징이다. 모듈러성, 복소곱셈, 류체론, Galois 코호몰로지가 한 증명 안에서 차례로 쓰인다.
+
+## 무엇이 증명되고 무엇이 남았는가
+
+| 해석 순위 | 결과 |
+| --- | --- |
+| 0 | 대수 순위 0, $Ш$ 유한 (Kolyvagin) |
+| 1 | 대수 순위 1, $Ш$ 유한, Heegner 점이 생성 |
+| $\ge2$ | 열림 |
+| BSD 공식의 정확한 등식 | 순위 0, 1 에서도 부분적 |
+
+순위와 계수가 같다는 것까지가 알려진 범위이고, **$Ш$ 의 위수와 주기, 조절자를 포함한 정확한 공식**은 특정 상황에서만 증명되어 있다. 반대 방향—대수 순위가 0 이면 $L(E,1)\ne0$—은 일반적으로 열려 있다.
+
+## 계산적 의미
+
+$L(E,1)$ 은 수치적으로 계산할 수 있고 0 인지 아닌지도 판정할 수 있으므로, Kolyvagin 의 정리는 **순위를 계산으로 확정하는 도구**가 된다. 순위 0 판정이 하강 계산보다 빠른 경우가 많고, $Ш$ 의 유한성이 보장되므로 하강이 반드시 끝난다는 것도 알 수 있다. 타원곡선 데이터베이스의 순위 항목 상당수가 이 경로로 확정된 것이다.
+
+# 활용
+
+## 모듈러 곡선의 유리점
+
+겨냥 몫의 유리점이 유한하다는 사실은 모듈러 곡선 위의 점을 가두는 데 쓰인다. 곡선(또는 그 대칭곱)에서 $J_e$ 로 보낸 뒤 상이 유한집합에 들어감을 보이고, 그 유한집합을 명시적으로 조사하면 점의 목록이 나온다. **해석적 조건 하나가 기하적 유한성으로 바뀌는 이 통로**가 없으면 Mazur 이후의 유리점 연구 대부분이 성립하지 않는다.
+
+## 일양 유계성
+
+Merel 의 증명은 위 사실을 차수 $d$ 점에 적용한 것이다. 대칭곱 $X_1(p)^{(d)}$ 에서 겨냥 몫으로 보내고, Hecke 작용소로 단사성을 판정한 뒤, 유리점의 유한성에서 모순을 끌어낸다. 여기서 겨냥 몫이 $\mathbb Q$ 위에 있다는 점이 중요하다. **체를 바꾸지 않고도 모든 차수 $d$ 체를 한꺼번에 다루는** 구조가 이 선택에서 나온다.
+
+## Iwasawa 이론과의 대조
+
+Kolyvagin 의 Euler 계가 Selmer 군의 **크기**를 위에서 누른다면, [Iwasawa 주추측](iwasawa-main-conjecture.md)은 특성 아이디얼이라는 더 정밀한 등식을 준다. 두 접근은 같은 재료(Euler 계, $L$ 값)를 쓰지만 목표가 다르고, 실제로 타원곡선의 Iwasawa 주추측 증명에서 Kolyvagin 의 방법이 한쪽 포함관계를 담당한다. **부등식 두 개를 양쪽에서 만나게 하는 전략**이 이 분야의 표준 형태다.[^1]
+
+[^1]: V. A. Kolyvagin, *Finiteness of $E(\mathbb Q)$ and $Ш(E,\mathbb Q)$ for a subclass of Weil curves*, Izv. Akad. Nauk SSSR (1988), 그리고 V. A. Kolyvagin, D. Yu. Logachev, *Finiteness of the Shafarevich–Tate group and the group of rational points for some modular abelian varieties*, Leningrad Math. J. 1 (1990). 해설은 B. Gross, *Kolyvagin's work on modular elliptic curves* (1991) 와 K. Rubin, *Euler Systems* (2000). 겨냥 몫의 정의와 성질은 L. Merel 의 1996 년 논문 2 절에 있다.
+
+# 연관 문서
+
+## 선수지식
+
+- [Euler 계와 Kolyvagin 유도류](euler-systems.md)
+- [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)
+
+## 더 알아보기
+
+- [Merel 의 일양 유계성 정리](merel-theorem.md)
+
+#number_theory #theorem
