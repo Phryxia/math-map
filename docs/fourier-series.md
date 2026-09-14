@@ -217,6 +217,6 @@ for N in (5, 25, 101, 501):
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Poisson 합 공식](poisson-summation.md)
 
 #analysis
