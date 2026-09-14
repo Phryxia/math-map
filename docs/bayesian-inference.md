@@ -31,23 +31,23 @@ flowchart LR
 
 ## 통계모형과 사전분포
 
-모수 공간을 `Θ`, 표본 공간을 `X` 라 하자. Bayes 모형은 두 조각으로 이루어진다.
+모수 공간을 $\Theta$ 라 하고 표본 공간을 $\mathcal{X}$ 라 하자. Bayes 모형은 두 조각으로 이루어진다.
 
 $$
 \theta \sim \pi(\theta), \qquad X \mid \theta \sim p(x \mid \theta).
 $$
 
-앞의 것이 사전분포, 뒤의 것이 표집분포다. 고정된 관측값 `x` 에 대해 `θ` 의 함수로 본 `p(x | θ)` 가 가능도 `L(θ)` 다.
+앞의 것이 사전분포, 뒤의 것이 표집분포다. 고정된 관측값 $x$ 에 대해 $\theta$ 의 함수로 본 $p(x \mid \theta)$ 가 가능도 $L(\theta)$ 다.
 
 ## 사후분포
 
-두 조각은 `(θ, X)` 의 결합분포를 정하고, 조건부밀도가 사후분포다.
+두 조각은 $(\theta, X)$ 의 결합분포를 정하고, 조건부밀도가 사후분포다.
 
 $$
 \pi(\theta \mid x) \;=\; \frac{p(x \mid \theta)\,\pi(\theta)}{m(x)}, \qquad m(x) \;=\; \int_{\Theta} p(x \mid \theta)\,\pi(\theta)\, d\theta .
 $$
 
-분모 `m(x)` 는 주변가능도(marginal likelihood) 또는 evidence 라 하며 `θ` 에 의존하지 않는다. 그래서 실무에서는 비례식만 쓴다.
+분모 $m(x)$ 는 주변가능도(marginal likelihood) 또는 evidence 라 하며 $\theta$ 에 의존하지 않는다. 그래서 실무에서는 비례식만 쓴다.
 
 $$
 \pi(\theta \mid x) \;\propto\; L(\theta)\,\pi(\theta).
@@ -65,13 +65,13 @@ $$
 \hat\theta_{\mathrm{MAP}} = \arg\max_{\theta} \pi(\theta \mid x).
 $$
 
-제곱손실의 Bayes 규칙이 사후평균, 절대손실이 사후중앙값, 0–1 손실의 극한이 MAP 다. 수준 `1 - α` 의 신용구간은 사후확률이 그만큼인 집합이다.
+제곱손실의 Bayes 규칙이 사후평균, 절대손실이 사후중앙값, 0–1 손실의 극한이 MAP 다. 수준 $1 - \alpha$ 의 신용구간은 사후확률이 그만큼인 집합이다.
 
 $$
 \Pr(\theta \in C \mid x) = 1 - \alpha .
 $$
 
-이런 집합은 유일하지 않다. 관례는 양쪽 꼬리를 `α/2` 씩 자른 등꼬리 구간이거나, 밀도가 높은 점만 모은 HPD(highest posterior density) 집합이다.
+이런 집합은 유일하지 않다. 관례는 양쪽 꼬리를 $\alpha/2$ 씩 자른 등꼬리 구간이거나, 밀도가 높은 점만 모은 HPD(highest posterior density) 집합이다.
 
 $$
 C_{\mathrm{HPD}} = \{\theta : \pi(\theta \mid x) \ge c\}, \quad c \text{ 는 } \Pr(C_{\mathrm{HPD}} \mid x) = 1-\alpha \text{ 가 되도록 잡는다.}
@@ -85,17 +85,17 @@ $$
 p(x' \mid x) = \int_{\Theta} p(x' \mid \theta)\, \pi(\theta \mid x)\, d\theta .
 $$
 
-플러그인 예측 `p(x' | θ̂)` 과 달리 모수의 불확실성까지 퍼뜨린다.
+플러그인 예측 $p(x' \mid \hat\theta)$ 과 달리 모수의 불확실성까지 퍼뜨린다.
 
 ## 켤레사전분포
 
-사전분포족 `P` 가 가능도 `p(x | θ)` 에 대해 켤레(conjugate)라는 것은, 사전분포가 `P` 에 속하면 사후분포도 `P` 에 속한다는 뜻이다. 켤레족은 [지수족과 충분통계량](exponential-families.md)에서 자연스럽게 나온다. 가능도가 자연모수 `η` 의 지수족이면
+사전분포족 $\mathcal{P}$ 가 가능도 $p(x \mid \theta)$ 에 대해 켤레(conjugate)라는 것은, 사전분포가 $\mathcal{P}$ 에 속하면 사후분포도 $\mathcal{P}$ 에 속한다는 뜻이다. 켤레족은 [지수족과 충분통계량](exponential-families.md)에서 자연스럽게 나온다. 가능도가 자연모수 $\eta$ 의 지수족이면
 
 $$
 \pi(\eta \mid \tau, n_0) \;\propto\; \exp\!\big(\eta^{\top}\tau - n_0 A(\eta)\big)
 $$
 
-꼴의 족이 켤레이고, 갱신은 `τ ← τ + T(x)`, `n_0 ← n_0 + 1` 이라는 덧셈이 된다.
+꼴의 족이 켤레이고, 갱신은 $\tau \leftarrow \tau + T(x)$ 와 $n_0 \leftarrow n_0 + 1$ 이라는 덧셈이 된다.
 
 # 성질
 
@@ -113,18 +113,18 @@ $$
 \mathbb{E}[p \mid x] = \frac{a + x}{a + b + n} = \underbrace{\frac{a+b}{a+b+n}}_{w}\cdot \frac{a}{a+b} \;+\; (1-w)\cdot\frac{x}{n}.
 $$
 
-사전평균과 표본비율의 볼록결합이고, 가중치는 "사전표본크기" `a + b` 대 실제 표본크기 `n` 의 비다. `n → ∞` 이면 최대가능도추정값 `x/n` 으로 간다. MAP 는 `(a + x - 1)/(a + b + n - 2)` 로 사후평균과 일반적으로 다르다.
+사전평균과 표본비율의 볼록결합이고, 가중치는 "사전표본크기" $a + b$ 대 실제 표본크기 $n$ 의 비다. $n \to \infty$ 이면 최대가능도추정값 $x/n$ 으로 간다. MAP 는 $(a + x - 1)/(a + b + n - 2)$ 로 사후평균과 일반적으로 다르다.
 
 ## Normal–Normal
 
-분산 `σ²` 를 아는 정규표본 `x_1, …, x_n` 에 평균의 사전분포를 `N(μ_0, τ_0²)` 로 주면, 정밀도(precision) `λ = 1/분산` 로 쓸 때 사후분포는 정규분포이고
+분산 $\sigma^2$ 을 아는 정규표본 $x_1, \dots, x_n$ 에 평균의 사전분포를 $N(\mu_0, \tau_0^2)$ 로 주면, 정밀도(precision)를 $\lambda = 1/\text{분산}$ 으로 쓸 때 사후분포는 정규분포이고
 
 $$
 \lambda_n = \lambda_0 + n\lambda, \qquad
 \mu_n = \frac{\lambda_0 \mu_0 + n \lambda \bar{x}}{\lambda_0 + n\lambda}.
 $$
 
-정밀도는 더해지고 평균은 정밀도로 가중평균된다. 여기서도 `n → ∞` 면 사후평균이 표본평균으로, 사후분산이 `σ²/n` 로 수렴한다. 이 축소(shrinkage) 구조는 ridge 회귀의 벌점항과 같은 형태이며, [선형회귀와 최소제곱법](linear-regression.md)에서 정규 사전분포를 놓은 결과로 다시 나온다.
+정밀도는 더해지고 평균은 정밀도로 가중평균된다. 여기서도 $n \to \infty$ 면 사후평균이 표본평균으로, 사후분산이 $\sigma^2/n$ 으로 수렴한다. 이 축소(shrinkage) 구조는 ridge 회귀의 벌점항과 같은 형태이며, [선형회귀와 최소제곱법](linear-regression.md)에서 정규 사전분포를 놓은 결과로 다시 나온다.
 
 ## 순차 갱신과 충분통계량
 
@@ -134,11 +134,11 @@ $$
 \pi(\theta \mid x_1, \dots, x_n) \;\propto\; \pi(\theta)\prod_{i=1}^{n} p(x_i \mid \theta)
 $$
 
-이고, 이를 한 항씩 곱해 나가는 것과 한꺼번에 곱하는 것이 같다. 따라서 `k` 번째 단계의 사후분포를 `k+1` 번째의 사전분포로 쓰면 되고, 최종 결과는 관측 순서에 무관하다. 또한 `T` 가 충분통계량이면 가능도가 `g(T(x), θ)h(x)` 로 인수분해되어 사후분포는 `T(x)` 에만 의존한다. Beta–Binomial 에서 앞면 횟수만 필요했던 이유가 이것이다.
+이고, 이를 한 항씩 곱해 나가는 것과 한꺼번에 곱하는 것이 같다. 따라서 $k$ 번째 단계의 사후분포를 $k+1$ 번째의 사전분포로 쓰면 되고, 최종 결과는 관측 순서에 무관하다. 또한 $T$ 가 충분통계량이면 가능도가 $g(T(x), \theta)h(x)$ 로 인수분해되어 사후분포는 $T(x)$ 에만 의존한다. Beta–Binomial 에서 앞면 횟수만 필요했던 이유가 이것이다.
 
 ## 사전분포의 영향과 점근
 
-정칙 조건 아래에서 Bernstein–von Mises 정리는 사후분포가 참값 `θ_0` 근방에서 점근적으로 정규분포임을 말한다.
+정칙 조건 아래에서 Bernstein–von Mises 정리는 사후분포가 참값 $\theta_0$ 근방에서 점근적으로 정규분포임을 말한다.
 
 $$
 \pi(\theta \mid x_{1:n}) \;\approx\; N\!\left(\hat\theta_{\mathrm{MLE}}, \; \frac{1}{n I(\theta_0)}\right),
@@ -152,7 +152,7 @@ $$
 | --- | --- | --- |
 | 모수 | 고정된 미지수 | 확률변수 |
 | 확률의 대상 | 반복표집에서의 절차 | 모수에 대한 믿음 |
-| 구간 해석 | 피복확률 `1-α` 의 절차 | 이 데이터 아래 사후확률 `1-α` |
+| 구간 해석 | 피복확률 $1-\alpha$ 의 절차 | 이 데이터 아래 사후확률 $1-\alpha$ |
 | 사전정보 | 모형 선택에 암묵적으로만 | 사전분포로 명시 |
 | 다중비교 | 별도 보정 필요 | 계층모형의 축소로 흡수 |
 
@@ -206,7 +206,7 @@ print("등꼬리 95%% 신용구간", np.round(post.ppf([0.025, 0.975]), 4))
 print("사후예측 P(다음=앞면) %.4f" % post.mean())
 ```
 
-출력에서 사후평균은 `(2+9)/(4+10) ≈ 0.7857`, MAP 는 `10/12 ≈ 0.8333` 으로 갈리고, 최대가능도추정값 `0.9` 보다 둘 다 사전분포 쪽으로 당겨져 있다.
+출력에서 사후평균은 $(2+9)/(4+10) \approx 0.7857$ 이고 MAP 는 $10/12 \approx 0.8333$ 으로 갈리며, 최대가능도추정값 $0.9$ 보다 둘 다 사전분포 쪽으로 당겨져 있다.
 
 ## 응용
 
