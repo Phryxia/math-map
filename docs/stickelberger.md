@@ -221,6 +221,7 @@ Gauss 합의 분해는 Jacobi 합 `J(\chi,\psi)=g(\chi)g(\psi)/g(\chi\psi)` 의 
 ## 선수지식
 
 - [Gauss 합과 국소 근 수](gauss-sums.md)
+- [Bernoulli 수와 von Staudt–Clausen 정리](bernoulli-numbers.md)
 
 ## 더 알아보기
 

@@ -237,5 +237,6 @@ Dirichlet 지표로 `L` 함수를 만들면 같은 방법이 산술수열의 소
 - [Dirichlet 지표와 L 함수](dirichlet-l-functions.md)
 - [논문: Fourier Analysis in Number Fields and Hecke's Zeta-Functions](tate-thesis.md)
 - [Eisenstein 급수와 스펙트럼 분해](eisenstein-series.md)
+- [Bernoulli 수와 von Staudt–Clausen 정리](bernoulli-numbers.md)
 
 #number_theory #complex_analysis #theorem

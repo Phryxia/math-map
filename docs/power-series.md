@@ -203,5 +203,6 @@ for name, a in [("1/(1-x)", lambda n: 1.0),
 ## 더 알아보기
 
 - [Laurent 급수와 유수 정리](residue-theorem.md)
+- [Bernoulli 수와 von Staudt–Clausen 정리](bernoulli-numbers.md)
 
 #analysis
