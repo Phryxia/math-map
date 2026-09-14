@@ -110,7 +110,7 @@ flowchart TD
 
 - `p` 가 정칙이면 `h` 전체가 `p` 로 나뉘지 않으므로 Vandiver 는 자명하다.
 - 비정칙 `p` 에 대해서도 대규모 수치 검증이 이루어졌다. 검증은 `B_k` 를 `\bmod p^{2}` 로 계산하고 짝수 성분의 소멸을 Iwasawa 불변량으로 확인하는 방식이다.
-- `\lambda^{+}=0` 을 일반적으로 증명하는 것은 Greenberg 추측(총실체의 Iwasawa 불변량이 소멸)의 특수한 경우이고, 그쪽도 열려 있다.
+- `\lambda^{+}=0` 을 일반적으로 증명하는 것은 [Greenberg 추측](greenberg-conjecture.md)(총실수체의 Iwasawa 불변량이 소멸)의 특수한 경우이고, 그쪽도 열려 있다.
 
 ## 왜 어려운가
 
@@ -147,6 +147,6 @@ Vandiver 검증은 대규모 Bernoulli 수 계산의 표준 시험대다. `B_k \
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Greenberg 추측과 총실수체의 Iwasawa 불변량](greenberg-conjecture.md)
 
 #number_theory #computation #algebra
