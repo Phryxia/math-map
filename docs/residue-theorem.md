@@ -150,5 +150,6 @@ Laplace 변환과 z-변환의 역변환은 유수의 합으로 계산된다. 선
 ## 더 알아보기
 
 - [소수 정리와 Riemann zeta 함수](prime-number-theorem.md)
+- [감마 함수와 Stirling 근사](gamma-function.md)
 
 #complex_analysis #theorem

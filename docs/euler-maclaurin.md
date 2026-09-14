@@ -219,7 +219,7 @@ for K in range(1, 20):              # N=4 고정, K 를 늘리면 최소를 찍�
 
 ## Stirling 급수
 
-$f=\log x$ 에 공식을 적용하면 $\log n!$ 의 전개가 나온다. 정수를 벗어나 $\Gamma$ 로 쓰면
+$f=\log x$ 에 공식을 적용하면 $\log n!$ 의 전개가 나온다. 정수를 벗어나 [감마 함수](gamma-function.md)로 쓰면
 
 $$
 \log\Gamma(x)=\Big(x-\tfrac12\Big)\log x-x+\tfrac12\log2\pi
@@ -252,6 +252,6 @@ $\gamma$ 는 공식이 만들어 내는 적분상수이고, 이 식이 곧 $\gam
 
 ## 더 알아보기
 
-- 아직 연결한 문서가 없다.
+- [감마 함수와 Stirling 근사](gamma-function.md)
 
 #analysis #computation #number_theory
