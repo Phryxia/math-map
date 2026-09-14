@@ -111,6 +111,13 @@ rebase 충돌이 나면 문서 내용은 원격(아이겐) 쪽을 우선하고 �
 - 각주 `[^n]` 은 본문에서 참조한 것만 정의한다.
 - 간결하고 가독성이 좋아야 한다. 한 문서는 1000줄을 넘기지 않는다. 넘으면 개념을 나눠 새 문서로 분할하고 간선으로 잇는다.
 - 본문 안의 링크는 간선이 아니다. 간선은 `# 연관 문서` 절에만 있다.
+- 읽기 어려운 인라인 코드보다 인라인 LaTeX를 선호하라. 주의할 점으로 깨짐 방지를 위해 닫는 `$` 뒤에 공백 1개가 반드시 따라와야 한다.
+
+## 위에 속하지 않는 연결
+
+- 선수 지식과 더 알아보기와 독립으로, 문서 본문에서 다른 문서에 있을 법한 내용들, 혹은 우선순위 큐에 넣어둔 내용들은, 문서 내에서 최초 1회에 한해 링크한다.
+- 이 링크들은 DAG 간선으로 간주하지 않는다.
+- 예시) 콤팩트 위의 연속함수가 자동으로 균등연속이 되는 것(Heine–Cantor)이 특히 유용하다. 에서 균드연속, Heine-Cantor 등은 별도 문서를 두고 연결할 가치가 있음.
 
 ## 5. 간선 규칙
 
@@ -129,19 +136,19 @@ rebase 충돌이 나면 문서 내용은 원격(아이겐) 쪽을 우선하고 �
 
 ## 7. 스크립트 요약
 
-| 명령 | 용도 |
-|---|---|
-| `node dev/graph.mjs node <id>` | 문서의 제목, 태그, 부모, 자식 |
-| `node dev/graph.mjs check-cycle <parent> <child> [--allow-new]` | 간선 추가 시 순환 검사 |
-| `node dev/graph.mjs validate` | 깨진 링크, 비대칭 간선, 파싱 문제 |
-| `node dev/graph.mjs cycles` / `topo` | 순환 목록 / 위상순 |
-| `node dev/graph.mjs roots` / `leaves` / `isolated` | 구조 파악 |
-| `node dev/graph.mjs ancestors <id>` / `descendants <id>` | 조상 / 후손 |
-| `node dev/graph.mjs tags [untagged \| <tag>]` | 태그 통계 |
-| `node dev/queue.mjs push "<title>" -p N -n "<note>"` | 탐사 대기열에 추가 |
-| `node dev/queue.mjs pop` / `peek` / `list` / `remove <id>` | 대기열 조작 |
-| `node dev/queue.mjs stop` | 큐 저장, 커밋, 서버 종료 |
-| `node dev/timer.mjs start` / `check` | 회차 타이머 |
-| `node --test dev/*.test.mjs` | 스크립트 자체 테스트 |
+| 명령                                                            | 용도                              |
+| --------------------------------------------------------------- | --------------------------------- |
+| `node dev/graph.mjs node <id>`                                  | 문서의 제목, 태그, 부모, 자식     |
+| `node dev/graph.mjs check-cycle <parent> <child> [--allow-new]` | 간선 추가 시 순환 검사            |
+| `node dev/graph.mjs validate`                                   | 깨진 링크, 비대칭 간선, 파싱 문제 |
+| `node dev/graph.mjs cycles` / `topo`                            | 순환 목록 / 위상순                |
+| `node dev/graph.mjs roots` / `leaves` / `isolated`              | 구조 파악                         |
+| `node dev/graph.mjs ancestors <id>` / `descendants <id>`        | 조상 / 후손                       |
+| `node dev/graph.mjs tags [untagged \| <tag>]`                   | 태그 통계                         |
+| `node dev/queue.mjs push "<title>" -p N -n "<note>"`            | 탐사 대기열에 추가                |
+| `node dev/queue.mjs pop` / `peek` / `list` / `remove <id>`      | 대기열 조작                       |
+| `node dev/queue.mjs stop`                                       | 큐 저장, 커밋, 서버 종료          |
+| `node dev/timer.mjs start` / `check`                            | 회차 타이머                       |
+| `node --test dev/*.test.mjs`                                    | 스크립트 자체 테스트              |
 
 모든 명령은 `--json` 을 받는다. `node dev/graph.mjs help`, `node dev/queue.mjs help` 로 전체 목록을 볼 수 있다.
