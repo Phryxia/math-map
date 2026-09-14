@@ -234,6 +234,7 @@ Hardy–Ramanujan 점근식의 비율이 `n=400` 에서도 `1.02` 다. 수렴이
 
 - [생성함수](generating-functions.md)
 - [모듈러 형식](modular-forms.md)
+- [Laplace 방법과 안장점](laplace-method.md)
 
 ## 더 알아보기
 

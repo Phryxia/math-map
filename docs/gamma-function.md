@@ -231,6 +231,6 @@ Stirling 을 세 번 써서 얻는 이 식이 [확률](probability.md)의 거의
 
 ## 더 알아보기
 
-- 아직 연결한 문서가 없다.
+- [Laplace 방법과 안장점](laplace-method.md)
 
 #analysis #complex_analysis #computation
