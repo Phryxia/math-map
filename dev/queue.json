@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "savedAt": "2026-09-14T05:18:39.723Z",
-  "nextSeq": 219,
+  "savedAt": "2026-09-14T09:03:35.321Z",
+  "nextSeq": 222,
   "items": [
     {
-      "id": "98b7582c",
-      "title": "유니코드 수식 문서: 치환표만으로는 안 된다",
+      "id": "0b2e3ee3",
+      "title": "유니코드 수식 전환: 손으로 고치는 절차",
       "priority": 90,
-      "note": "localization-rings 에 유니코드-LaTeX 치환표를 시험했다가 되돌렸다. 실패 원인 네 가지를 기록한다. (1) 기호 뒤에 변수가 바로 붙으면 ∃u 가 \\existsu 로 붙어 명령이 깨진다. 치환 후 명령과 문자 사이에 공백이 필요하다. (2) 백틱 안 {a : ax = 0} 의 중괄호가 LaTeX 그룹 기호로 먹히므로 \\{ \\} 로 이스케이프해야 한다. (3) Frac, Ann, Spec 같은 연산자 이름이 이탤릭 낱글자로 렌더링되므로 \\mathrm 으로 감싸야 한다. (4) 한 수식이 쉼표 때문에 백틱 두 개로 쪼개진 곳(핵은 {a : ua = 0 과 } 가 따로)은 문장째 다시 써야 한다. 결론: 기계 치환이 아니라 문서 하나씩 손으로 고친다. 한 회차에 한두 문서가 적당하다",
-      "createdAt": "2026-09-14T05:12:13.830Z",
-      "seq": 217
+      "note": "기계 치환은 실패한다(앞 회차 기록: exists+변수 붙음, 중괄호 그룹, 연산자 이름, 쉼표로 쪼개진 백틱). 2026-09-14 회차에서 확립한 절차: (1) docs 전체를 훑어 코드펜스 밖 백틱 중 유니코드 수학기호가 든 것만 문서별로 집계하고 라인을 그대로 출력한다. (2) 라인 하나를 통째로 Edit 로 교체한다. 한 라인의 수식 백틱은 유니코드가 없는 것까지 전부 같이 바꿔야 문서가 섞이지 않는다. (3) 닫는 달러 뒤 공백 1개는 필수. 'F-성분' 처럼 수식에 조사나 접미가 붙으면 문장을 다시 쓴다. (4) 마크다운 표 안에서는 세로줄이 셀 구분자로 먹히므로 절댓값과 노름을 \\lvert \\rvert 로 쓴다. (5) 연산자 이름(Stab, Hom, Spec, Syl, lcm, epi, At, ID, sym, rw, SAT, Huffman)은 \\mathrm 으로 감싼다. (6) 진짜 코드(map, call/cc, I = S(K)(K(K)), dev/graph.mjs)는 백틱을 남긴다. 유니코드 합성기호가 섞인 코드 표현은 그대로 두고 넘어간다. (7) 검증은 코드펜스 밖 홀수 달러 줄 0 + validate + cycles + node --test. 한 회차에 18개 문서가 가능했다",
+      "createdAt": "2026-09-14T09:00:42.822Z",
+      "seq": 220
     },
     {
-      "id": "80441dad",
-      "title": "백틱 수식 정리: 남은 97개 문서",
+      "id": "4ddb0b17",
+      "title": "백틱 수식 정리: 남은 36개 문서",
       "priority": 85,
-      "note": "297개 중 200개 완료. 남은 97개는 모두 유니코드나 화살표가 섞인 것이라 문서별 매핑을 손으로 적어야 한다. 이번 회차에서 쓴 방식: 문서의 백틱 내용을 전수로 뽑아 눈으로 확인하고, 백틱 내용 전체를 키로 하는 매핑표를 만든 뒤 코드펜스를 건너뛰며 치환한다. 진짜 코드(bind, return, dict, while, count, dev/graph.mjs)는 보류 목록에 넣어 백틱을 남긴다. 검증은 홀수 달러 줄 0, 신규 '$ **' 0, validate/cycles/test 통과. 다음 후보는 작은 것부터: linear-maps 계열은 끝났고 poincare-hopf 도 끝, 남은 최소 문서는 dev/graph.mjs 로 다시 집계할 것. 가장 큰 것은 localization-rings 221건",
-      "createdAt": "2026-09-14T05:17:10.364Z",
-      "seq": 218
+      "note": "297개 중 261개 완료(2026-09-14 회차에서 20개 문서, 567건 처리: 1767 -> 1200). 남은 36개는 스크립트로 다시 집계하는 것이 정확하다. 코드펜스 밖 백틱 중 유니코드 수학기호가 든 것만 문서별로 세면 된다. 큰 것부터 conditional-expectation 60, martingales 59, tensor-products 48, measurable-functions 48, exponential-families 48, radon-nikodym 47, monads 46, concentration-inequalities 46, lambda-calculus 45, heyting-algebras 43, ideals-quotient-rings 42. 나머지는 20~36건대. functors 113 행의 map 계열은 진짜 코드라 백틱을 남겼으므로 집계에서 제외하고 넘어갈 것",
+      "createdAt": "2026-09-14T09:03:22.605Z",
+      "seq": 221
     },
     {
       "id": "1c247183",
