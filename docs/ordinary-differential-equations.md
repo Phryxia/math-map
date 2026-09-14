@@ -168,6 +168,6 @@ print(euler(lambda t, x: x * (1 - x), 0.0, 0.1, 0.01, 500)[-1])
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [WKB 근사와 연결 공식](wkb-approximation.md)
 
 #analysis
