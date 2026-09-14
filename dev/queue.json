@@ -1,32 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-14T00:22:20.260Z",
-  "nextSeq": 179,
+  "savedAt": "2026-09-14T01:18:59.212Z",
+  "nextSeq": 192,
   "items": [
-    {
-      "id": "49150223",
-      "title": "Khovanov 호몰로지와 매듭 불변량의 범주화",
-      "priority": 5,
-      "note": "knot-invariants 와 reshetikhin-turaev 아래. 정육면체 분해, Jones 를 Euler 지표로, Rasmussen s 불변량과 매끄러운 4 차원 기하",
-      "createdAt": "2026-09-13T22:57:49.584Z",
-      "seq": 158
-    },
-    {
-      "id": "349d76a3",
-      "title": "Galois 표현의 변형이론과 보편 변형환",
-      "priority": 5,
-      "note": "fontaine-mazur 아래. Mazur 변형 함자의 표현가능성, 접공간이 H^1, 국소 조건을 단 변형환, R=T 의 R 쪽",
-      "createdAt": "2026-09-13T23:56:31.742Z",
-      "seq": 166
-    },
-    {
-      "id": "9e2c71a4",
-      "title": "Serre 추측과 Khare-Wintenberger 정리",
-      "priority": 5,
-      "note": "modular-forms 와 galois-representations 아래. mod p 표현의 무게와 도체 공식, 올림 정리로 이어지는 귀납 구조, fontaine-mazur 의 입력",
-      "createdAt": "2026-09-13T23:56:31.865Z",
-      "seq": 167
-    },
     {
       "id": "e7d47f7c",
       "title": "Euler 계와 Kolyvagin 유도류",
@@ -34,22 +10,6 @@
       "note": "heegner-points 와 selmer-groups 아래. 자취 정합적 코호몰로지류, 유도류 구성, 국소 조건 하나씩 죽여 Selmer 를 누르는 논법, Kato Euler 계와 비교",
       "createdAt": "2026-09-14T00:00:10.438Z",
       "seq": 170
-    },
-    {
-      "id": "3eb6a682",
-      "title": "범주 O 와 BGG 상반성",
-      "priority": 5,
-      "note": "kazhdan-lusztig 아래. Verma 가군, 블록 분해, 사영가군의 Verma 여과, KL 지표 공식이 실제로 사는 곳",
-      "createdAt": "2026-09-14T00:07:37.713Z",
-      "seq": 171
-    },
-    {
-      "id": "9340cf7d",
-      "title": "부울 함수의 Fourier 해석",
-      "priority": 5,
-      "note": "unique-games 의 빠진 선수지식. 초입방체 위 Fourier 전개, 영향력과 잡음 안정성, 초축약성, Majority is Stablest 의 무대",
-      "createdAt": "2026-09-14T00:22:00.155Z",
-      "seq": 178
     },
     {
       "id": "2b9ec335",
@@ -122,14 +82,6 @@
       "note": "borel-weil-bott 아래. 깃발다양체 위 D 가군과 g 가군 범주의 동치, BWB 의 층론적 일반화, 범주 O",
       "createdAt": "2026-09-13T21:59:22.345Z",
       "seq": 149
-    },
-    {
-      "id": "86c27741",
-      "title": "Kleene 고정점 정리와 영역 이론",
-      "priority": 4,
-      "note": "galois-connections 아래. cpo, 스콧 연속성, 유한 반복 도달, 재귀 프로그램의 의미론과 최소 고정점",
-      "createdAt": "2026-09-13T22:07:13.871Z",
-      "seq": 153
     },
     {
       "id": "7d22b0e4",
@@ -244,6 +196,70 @@
       "seq": 177
     },
     {
+      "id": "1a7c2c5c",
+      "title": "Lee 호몰로지와 Rasmussen s 불변량",
+      "priority": 4,
+      "note": "khovanov-homology 아래. X^2=1 변형, 2^l 정리, q 여과와 s 의 정의, 슬라이스 종수 하한과 Milnor 추측의 조합적 증명",
+      "createdAt": "2026-09-14T00:56:46.213Z",
+      "seq": 179
+    },
+    {
+      "id": "25d5e4c9",
+      "title": "1+1 차원 TQFT 와 Frobenius 대수",
+      "priority": 4,
+      "note": "khovanov-homology 가 원 하나에 2 차원 공간을 붙이는 근거인데 문서가 없다. cobordism 범주의 생성원과 관계, 가환 Frobenius 대수와의 동치, monads/modular-tensor-categories 와 이어진다",
+      "createdAt": "2026-09-14T00:56:46.328Z",
+      "seq": 180
+    },
+    {
+      "id": "460b3891",
+      "title": "Taylor-Wiles 패칭과 R=T",
+      "priority": 4,
+      "note": "deformation-rings 아래. 보조 소수로 쌍대 Selmer 를 죽이는 이유, 패칭 극한, 완전교차 판정, Calegari-Geraghty 의 유도 판본",
+      "createdAt": "2026-09-14T01:01:59.588Z",
+      "seq": 182
+    },
+    {
+      "id": "f2db42a4",
+      "title": "Poitou-Tate 완전열과 Selmer 군의 쌍대성",
+      "priority": 4,
+      "note": "deformation-rings 가 접공간 계산에서 쓰는데 문서가 없다. 9 항 완전열, 국소 조건과 쌍대 조건, selmer-groups 와 이어진다",
+      "createdAt": "2026-09-14T01:01:59.698Z",
+      "seq": 183
+    },
+    {
+      "id": "64488c1c",
+      "title": "Ribet 의 레벨 낮추기와 Frey 곡선",
+      "priority": 4,
+      "note": "serre-conjecture 아래. epsilon 추측, Mazur 원리, Frey 곡선의 mod p 표현이 레벨 2 로 내려가 모순, FLT 의 최종 조립",
+      "createdAt": "2026-09-14T01:06:12.331Z",
+      "seq": 184
+    },
+    {
+      "id": "37b52d8a",
+      "title": "초축약성과 KKL 정리",
+      "priority": 4,
+      "note": "boolean-fourier 아래. Bonami-Beckner 부등식의 증명, 준위 k 이하에서 ||f||_4 <= 3^{k/2} ||f||_2, KKL 의 log n / n 하한과 임계현상",
+      "createdAt": "2026-09-14T01:09:53.511Z",
+      "seq": 185
+    },
+    {
+      "id": "9c13738c",
+      "title": "불변 원리와 Borell 등주부등식",
+      "priority": 4,
+      "note": "boolean-fourier 의 Majority is Stablest 증명 뼈대. Lindeberg 치환, Gauss 공간으로의 이전, Borell 의 등주부등식이 답을 아는 이유",
+      "createdAt": "2026-09-14T01:09:53.626Z",
+      "seq": 186
+    },
+    {
+      "id": "79314045",
+      "title": "Soergel 쌍가군과 Hecke 대수의 범주화",
+      "priority": 4,
+      "note": "category-o 아래. 벽 넘기 함자, 쌍가군의 등급 순위, Soergel 추측과 Elias-Williamson 의 대수적 증명",
+      "createdAt": "2026-09-14T01:13:18.668Z",
+      "seq": 187
+    },
+    {
       "id": "c512345c",
       "title": "양자 혼돈과 고윳값 통계",
       "priority": 3,
@@ -266,6 +282,46 @@
       "note": "braid-groups 아래. 기본 땋임 Delta, 왼쪽 정규형, 낱말/켤레 문제의 알고리즘과 복잡도",
       "createdAt": "2026-09-14T00:16:58.172Z",
       "seq": 175
+    },
+    {
+      "id": "ecf45219",
+      "title": "콩코던스 군과 슬라이스 매듭",
+      "priority": 3,
+      "note": "khovanov-homology 의 s 불변량이 실제로 사는 곳. 매끄러운 것과 위상적인 것의 갈림, Fox-Milnor 조건, 4 차원 매끄러운 Poincare 추측 후보와의 관계",
+      "createdAt": "2026-09-14T00:56:46.445Z",
+      "seq": 181
+    },
+    {
+      "id": "7d1c9a4a",
+      "title": "Jantzen 여과와 합 공식",
+      "priority": 3,
+      "note": "category-o 보강. Verma 의 축약 가능성 판정, 합 공식의 닫힌 꼴, Jantzen 추측과 KL 다항식 계수의 관계",
+      "createdAt": "2026-09-14T01:13:18.790Z",
+      "seq": 188
+    },
+    {
+      "id": "cd44aa28",
+      "title": "Scott 위상과 D = D^D 의 구성",
+      "priority": 3,
+      "note": "domain-theory 아래. 역극한 구성, 사영쌍, lambda-calculus 의 최초 모형, 위상으로 본 관측 가능성",
+      "createdAt": "2026-09-14T01:15:47.027Z",
+      "seq": 189
+    },
+    {
+      "id": "b176a720",
+      "title": "균형잡힌 이진탐색트리와 평활 분석",
+      "priority": 3,
+      "note": "#data_structures 가 3 개뿐이다. union-find, link-cut-trees 와 함께 묶을 자리. 회전, 잠재함수 논법, splay 의 평활 O(log n)",
+      "createdAt": "2026-09-14T01:18:50.187Z",
+      "seq": 190
+    },
+    {
+      "id": "bb58ad2a",
+      "title": "Rademacher 복잡도와 일반화 오차",
+      "priority": 3,
+      "note": "#machine_learning 이 9 개로 적다. concentration-inequalities 와 probabilistic-method 아래. 대칭화 논법, VC 차원과의 비교, boolean-fourier 와도 닿는다",
+      "createdAt": "2026-09-14T01:18:50.295Z",
+      "seq": 191
     }
   ]
 }
