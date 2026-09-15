@@ -1,55 +1,87 @@
 {
   "version": 1,
-  "savedAt": "2026-09-15T13:01:08.011Z",
-  "nextSeq": 284,
+  "savedAt": "2026-09-15T16:57:10.638Z",
+  "nextSeq": 295,
   "items": [
     {
-      "id": "75c68b5d",
-      "title": "쌍곡 3 다양체와 Mostow 강직성",
-      "priority": 12,
-      "note": "volume-conjecture 가 기대는 사실인데 문서가 없다. 완비 쌍곡 계량의 유일성, 부피가 위상 불변량이 되는 이유, 사면체 분할과 붙임 방정식",
-      "createdAt": "2026-09-15T12:57:54.752Z",
-      "seq": 282
+      "id": "1532991a",
+      "title": "수식 뒤 공백 규칙 위반 일괄 정리",
+      "priority": 80,
+      "note": "CLAUDE.md 4절 규칙(닫는 $ 뒤 공백 1개)을 어긴 곳이 211 문서 1101 군데. 대부분 수식 바로 뒤 쉼표/마침표/괄호. 문맥에 맞게 조사나 접속으로 풀어 써야 해서 기계적 치환은 위험하다. 회차마다 상위 문서 몇 개씩 처리",
+      "createdAt": "2026-09-15T16:56:29.813Z",
+      "seq": 294
     },
     {
-      "id": "b53f4c8d",
-      "title": "Airy 함수와 화선",
-      "priority": 11,
-      "note": "stationary-phase 아래. 퇴화 정상점의 표준형, lam^{-1/3} 스케일, 전향점에서 WKB 가 깨지는 이유, Stokes 현상과의 관계",
-      "createdAt": "2026-09-15T12:46:08.096Z",
-      "seq": 277
+      "id": "e9d2c46d",
+      "title": "Teichmuller 공간과 곡면의 모듈라이",
+      "priority": 6,
+      "note": "classification-of-surfaces 아래. 6g-6 차원, 바지 분해와 Fenchel-Nielsen 좌표, 3 차원 강직성과의 대비가 hyperbolic-3-manifolds 에서 필요했다",
+      "createdAt": "2026-09-15T16:39:31.025Z",
+      "seq": 285
     },
     {
-      "id": "6bae9623",
-      "title": "WKB 근사와 Maslov 지표",
-      "priority": 11,
-      "note": "stationary-phase 아래. 반고전 극한, 고전 궤도의 합, Morse 지표가 Maslov 지표가 되는 과정, Bohr-Sommerfeld 양자화",
-      "createdAt": "2026-09-15T12:46:08.228Z",
-      "seq": 278
+      "id": "b1f43504",
+      "title": "아핀 Lie 대수와 Kac-Moody 분류",
+      "priority": 6,
+      "note": "lie-algebras 와 root-systems 아래. 일반화 Cartan 행렬, 아핀 근계와 허근, 중심확대와 미분작용소, wess-zumino-witten 이 선수로 기대는 내용",
+      "createdAt": "2026-09-15T16:48:10.985Z",
+      "seq": 288
     },
     {
-      "id": "15ff4344",
-      "title": "Wess-Zumino-Witten 모형과 벌크-경계 대응",
-      "priority": 10,
-      "note": "chern-simons 아래. 경계항이 남는 문제, 아핀 Lie 대수의 레벨 k 표현이 유한개인 이유, MTC 의 단순대상과의 사전",
-      "createdAt": "2026-09-15T12:49:52.713Z",
-      "seq": 279
+      "id": "bb5c14a1",
+      "title": "공형장론과 Virasoro 대수",
+      "priority": 6,
+      "note": "wess-zumino-witten 이 Sugawara 로 만들어 쓰는 구조인데 문서가 없다. 중심전하, 1 차 장, OPE, 최소모형, 모듈러 불변 분배함수",
+      "createdAt": "2026-09-15T16:48:11.132Z",
+      "seq": 289
     },
     {
-      "id": "3a2e581f",
-      "title": "s-코보디즘 정리와 고차원 Poincare 추측",
-      "priority": 10,
-      "note": "reidemeister-torsion 아래. Whitehead 비틀림의 소멸이 곱 구조를 주는 조건, 차원 5 이상에서의 증명, 4 차원이 왜 다른가",
-      "createdAt": "2026-09-15T12:52:41.802Z",
-      "seq": 280
+      "id": "a18bfa4f",
+      "title": "Bloch 군과 Borel 조절자",
+      "priority": 5,
+      "note": "hyperbolic-3-manifolds 와 algebraic-k-theory 아래. 이중로그 항등식, K_3(C) 와의 관계, 쌍곡 부피가 조절자 값이 되는 구조",
+      "createdAt": "2026-09-15T16:39:31.179Z",
+      "seq": 286
     },
     {
-      "id": "dfa4f9e8",
-      "title": "순간자 Floer 호몰로지",
-      "priority": 10,
-      "note": "casson-invariant 아래. Casson 불변량이 Euler 지표가 되는 범주화, 평탄 접속을 생성원으로 순간자를 미분으로, 등급이 Z/8",
-      "createdAt": "2026-09-15T12:55:14.650Z",
-      "seq": 281
+      "id": "0fa48047",
+      "title": "Dehn 수술과 3 다양체 구성",
+      "priority": 5,
+      "note": "hyperbolic-3-manifolds 아래. 기울기와 채움, Lickorish-Wallace 정리, 예외 수술과 6 정리, Kirby 계산법 항목과 이어진다",
+      "createdAt": "2026-09-15T16:39:31.344Z",
+      "seq": 287
+    },
+    {
+      "id": "c661b591",
+      "title": "수술 이론과 Browder-Novikov-Sullivan-Wall",
+      "priority": 5,
+      "note": "s-cobordism 아래. 정상 불변량, 수술 장애군 L_n(Z pi), 수술 완전열, 고차원 다양체 분류의 뼈대",
+      "createdAt": "2026-09-15T16:50:41.857Z",
+      "seq": 290
+    },
+    {
+      "id": "96ba0f25",
+      "title": "이색 구면과 Kervaire-Milnor",
+      "priority": 5,
+      "note": "s-cobordism 아래. Theta_n 군, S^7 의 28 개 구조, 평행화 가능 구면과 Kervaire 불변량 1 문제",
+      "createdAt": "2026-09-15T16:50:42.003Z",
+      "seq": 291
+    },
+    {
+      "id": "947ce369",
+      "title": "Heegaard Floer 호몰로지",
+      "priority": 5,
+      "note": "instanton-floer-homology 아래. Heegaard 도식과 대칭곱, 정칙 원판, d 불변량, 순간자 판본과의 동치",
+      "createdAt": "2026-09-15T16:53:44.816Z",
+      "seq": 292
+    },
+    {
+      "id": "c422fd89",
+      "title": "Donaldson 불변량과 4 다양체의 교차형식",
+      "priority": 5,
+      "note": "chern-simons 와 instanton-floer-homology 아래. ASD 모듈라이, 대각화 정리, 이색 R^4, Seiberg-Witten 과의 대비",
+      "createdAt": "2026-09-15T16:53:44.968Z",
+      "seq": 293
     },
     {
       "id": "50f81215",
