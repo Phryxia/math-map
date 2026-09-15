@@ -258,5 +258,6 @@ for k, c in enumerate(chars_mod_p(7)):
 
 - [Dwork 의 유리성 정리와 지수합](dwork-rationality.md)
 - [Stickelberger 원소와 Gauss 합](stickelberger.md)
+- [Witten 점근 추측과 Ohtsuki 급수](witten-asymptotics.md)
 
 #number_theory #complex_analysis #analysis

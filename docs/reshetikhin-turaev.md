@@ -315,6 +315,6 @@ $\tau$ 를 정확히 계산하는 것은 어렵다. $\mathrm{SU}(2)_k$ 에서 $k
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Witten 점근 추측과 Ohtsuki 급수](witten-asymptotics.md)
 
 #topology #algebraic_topology #category_theory #construction
