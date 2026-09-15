@@ -238,5 +238,6 @@ $B_n$ 은 Todd 류의 계수로 나타나 Hirzebruch–Riemann–Roch 공식에 
 
 - [Stickelberger 원소와 Gauss 합](stickelberger.md)
 - [Euler–Maclaurin 공식과 점근급수](euler-maclaurin.md)
+- [질량 공식과 격자의 류](mass-formula.md)
 
 #number_theory #analysis #computation

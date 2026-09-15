@@ -193,6 +193,6 @@ $m\ge4$ 인 양정치 형식에서 "$Q$ 가 $n$ 을 표현하는가"는 유한 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [질량 공식과 격자의 류](mass-formula.md)
 
 #number_theory #analysis #combinatorics
