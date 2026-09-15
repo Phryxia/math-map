@@ -166,6 +166,7 @@ $N = 120$, 표본 네 개로 $1, 2, 5$ 까지는 1% 안쪽으로 맞고 $14$ 부
 
 ## 더 알아보기
 
+- [Marchenko–Pastur 법칙](marchenko-pastur.md)
 - [Tracy–Widom 분포와 Airy 핵](tracy-widom.md)
 
 #probability #linear_algebra #theorem
