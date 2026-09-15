@@ -274,6 +274,6 @@ Kottwitz 의 계획은 Shimura 다양체의 Hasse–Weil zeta 함수를 자기�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gan–Gross–Prasad 추측](gan-gross-prasad.md)
 
 #number_theory #group_theory #algebra #theorem
