@@ -27,7 +27,7 @@ graph LR
 
 ## 공리
 
-범주 $C$ 는 대상들의 모임, 각 대상 쌍 $(A, B)$ 에 대한 사상들의 모임 $\mathrm{Hom}(A, B)$, 합성 $\mathrm{Hom}(B,C) \times \mathrm{Hom}(A,B) \to \mathrm{Hom}(A,C)$, 그리고 각 대상의 항등사상으로 이루어지고 다음을 만족한다.
+범주 $C$ 는 대상들의 모임과 각 대상 쌍 $(A, B)$ 에 대한 사상들의 모임 $\mathrm{Hom}(A, B)$ 와 합성 $\mathrm{Hom}(B,C) \times \mathrm{Hom}(A,B) \to \mathrm{Hom}(A,C)$ 와 각 대상의 항등사상으로 이루어지고 다음을 만족한다.
 
 $$
 h\circ(g\circ f)=(h\circ g)\circ f,\qquad f\circ\mathrm{id}_A=f=\mathrm{id}_B\circ f
@@ -40,7 +40,7 @@ $$
 | 범주 | 대상 | 사상 |
 |---|---|---|
 | $\mathbf{Set}$ | 집합 | 함수 |
-| $\mathbf{Grp}$, $\mathbf{Vect}$, $\mathbf{Top}$ | 군, 벡터 공간, 위상공간 | 준동형, 선형사상, 연속함수 |
+| $\mathbf{Grp},\ \mathbf{Vect},\ \mathbf{Top}$ | 군, 벡터 공간, 위상공간 | 준동형, 선형사상, 연속함수 |
 | 부분순서 집합 | 원소 | $A \le B$ 일 때 사상 하나 |
 | 군 | 대상 하나 | 군의 원소, 합성은 군의 곱 |
 | $C^{\mathrm{op}}$ | $C$ 의 대상 | $C$ 의 사상을 뒤집은 것 |
@@ -49,9 +49,9 @@ $$
 
 ## 사상으로 정의되는 개념
 
-- **동형사상.** $g \circ f = \mathrm{id}_A$, $f \circ g = \mathrm{id}_B$ 인 $g$ 가 있는 $f$.
-- **단사사상(mono).** $f \circ g = f \circ h \Rightarrow g = h$. 왼쪽에서 소거할 수 있다는 뜻이다.
-- **전사사상(epi).** $g \circ f = h \circ f \Rightarrow g = h$.
+- **동형사상.** $g \circ f = \mathrm{id}_A$ 와 $f \circ g = \mathrm{id}_B$ 를 만족하는 $g$ 가 있는 $f$ 다.
+- **단사사상(mono).** $f \circ g = f \circ h \Rightarrow g = h$ 가 성립한다. 왼쪽에서 소거할 수 있다는 뜻이다.
+- **전사사상(epi).** $g \circ f = h \circ f \Rightarrow g = h$ 가 성립한다.
 - **시작대상.** 모든 대상으로 가는 사상이 정확히 하나인 대상. 종단대상은 화살표를 뒤집은 것이다.
 
 $\mathbf{Set}$ 에서 mono 는 단사함수, epi 는 전사함수와 일치하지만 모든 범주에서 그런 것은 아니다. 가환환의 범주에서 정수환에서 유리수체로 가는 포함사상은 전사가 아닌데도 epi 다.

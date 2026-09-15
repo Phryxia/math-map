@@ -24,7 +24,7 @@ $$
 (a,b)_K=K\langle i,j\rangle/(i^2=a,\ j^2=b,\ ij=-ji)
 $$
 
-$K=\mathbb R$, $a=b=-1$ 이면 Hamilton 의 사원수다. 이 4 차원 대수는 두 가지 중 하나다. $2\times2$ 행렬대수 $M_2(K)$ 와 동형이거나(**분해**), 나눗셈대수이거나다.
+$K=\mathbb R$ 이고 $a=b=-1$ 이면 Hamilton 의 사원수다. 이 4 차원 대수는 두 가지 중 하나다. $2\times2$ 행렬대수 $M_2(K)$ 와 동형이거나(**분해**), 나눗셈대수이거나다.
 
 어느 쪽인지가 기하 문제로 번역된다.
 
@@ -96,14 +96,14 @@ $$
 (a,b)_v=\begin{cases}+1&ax^2+by^2=z^2\ \text{가 }K_v\ \text{에서 자명하지 않게 풀린다}\\-1&\text{그렇지 않다}\end{cases}
 $$
 
-$\mathbb Q$ 위에서는 명시적 공식이 있다. $a=p^\alpha u$, $b=p^\beta v$ 로 쓰면 홀수 소수 $p$ 에서
+$\mathbb Q$ 위에서는 명시적 공식이 있다. $a=p^\alpha u$ 와 $b=p^\beta v$ 로 쓰면 홀수 소수 $p$ 에서
 
 $$
 (a,b)_p=(-1)^{\alpha\beta\varepsilon(p)}\left(\frac up\right)^{\!\beta}\left(\frac vp\right)^{\!\alpha},\qquad
 \varepsilon(p)=\frac{p-1}2\bmod2
 $$
 
-이고, $p=2$ 에서는 $\varepsilon(u)=\frac{u-1}2$, $\omega(u)=\frac{u^2-1}8$ 로 $(a,b)_2=(-1)^{\varepsilon(u)\varepsilon(v)+\alpha\omega(v)+\beta\omega(u)}$ 다. 실수 자리에서는 $a,b$ 가 둘 다 음수일 때만 $-1$ 이다.
+이고, $p=2$ 에서는 $\varepsilon(u)=\frac{u-1}2$ 와 $\omega(u)=\frac{u^2-1}8$ 로 $(a,b)_2=(-1)^{\varepsilon(u)\varepsilon(v)+\alpha\omega(v)+\beta\omega(u)}$ 다. 실수 자리에서는 $a,b$ 가 둘 다 음수일 때만 $-1$ 이다.
 
 ## 불변량 사상과 기본 완전열
 
@@ -120,9 +120,9 @@ $$
 
 > **Hasse–Minkowski.** $K$ 위의 이차형식 $q$ 가 $q=0$ 의 자명하지 않은 해를 $K$ 에서 갖는 것과 모든 $K_v$ 에서 갖는 것이 동치다.
 
-세 변수 대각형식 $ax^2+by^2+cz^2=0$ 으로 좁히면 이것이 곧 사원수대수 $(-ac,-bc)$ 의 Hasse 원리다. 실제 판정은 Hilbert 기호 계산이고, 이 계산은 유한하다. $a,b,c$ 를 나누는 소수와 $2$, 그리고 실수 자리만 보면 되기 때문이다.
+세 변수 대각형식 $ax^2+by^2+cz^2=0$ 으로 좁히면 이것이 곧 사원수대수 $(-ac,-bc)$ 의 Hasse 원리다. 실제 판정은 Hilbert 기호 계산이고, 이 계산은 유한하다. $a,b,c$ 를 나누는 소수와 $2$ 와 실수 자리만 보면 되기 때문이다.
 
-Legendre 의 고전적 판정법도 같은 내용이다. $a,b,c$ 가 제곱인자가 없고 서로소이면, 해가 있을 필요충분조건은 부호가 모두 같지 않고 $-bc$, $-ac$, $-ab$ 가 각각 $|a|,|b|,|c|$ 를 법으로 이차잉여인 것이다.
+Legendre 의 고전적 판정법도 같은 내용이다. $a,b,c$ 가 제곱인자가 없고 서로소이면, 해가 있을 필요충분조건은 부호가 모두 같지 않고 $-bc$ 와 $-ac$ 와 $-ab$ 가 각각 $|a|,|b|,|c|$ 를 법으로 이차잉여인 것이다.
 
 ## 노름 정리와의 관계
 
@@ -154,7 +154,7 @@ $X(K)\subset X(\mathbb A_K)^{\mathrm{Br}}\subset X(\mathbb A_K)$ 가 항상 성�
 
 세 가지를 확인한다. Hilbert 기호의 곱 공식, Hasse–Minkowski 정리, 그리고 사원수대수의 분기 자리가 항상 짝수 개라는 사실이다. 마지막이 곧 불변량의 합이 $0$ 이라는 진술의 위수 2 판이다.
 
-Hasse–Minkowski 의 확인에는 완전한 전수탐색이 필요한데, Holzer 의 정리가 그것을 유한하게 만들어 준다. $ax^2+by^2+cz^2=0$ 에 해가 있으면 $|x|\le\sqrt{|bc|}$, $|y|\le\sqrt{|ac|}$, $|z|\le\sqrt{|ab|}$ 를 만족하는 해가 있다는 정리다.
+Hasse–Minkowski 의 확인에는 완전한 전수탐색이 필요한데, Holzer 의 정리가 그것을 유한하게 만들어 준다. $ax^2+by^2+cz^2=0$ 에 해가 있으면 $|x|\le\sqrt{|bc|}$ 와 $|y|\le\sqrt{|ac|}$ 와 $|z|\le\sqrt{|ab|}$ 를 만족하는 해가 있다는 정리다.
 
 ```python
 from math import gcd, isqrt
