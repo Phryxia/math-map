@@ -70,7 +70,7 @@ $$
 G_{\mathbb Q}^{\mathrm{ab}}\cong\widehat{\mathbb Z}^\times\cong\prod_\ell\mathbb Z_\ell^\times
 $$
 
-이고, 거의 모든 곳 비분기인 연속 지표 $\eta\colon G_{\mathbb Q}\to\mathbb Q_p^\times$ 는 $\mathbb Z_p^\times$ 성분과 유한 성분으로 갈린다. $p$ 자리에서 de Rham 이라는 조건이 $\mathbb Z_p^\times$ 성분을 $\chi^m$ ($m\in\mathbb Z$) 로 고정하고, 남는 것은
+이고, 거의 모든 곳 비분기인 연속 지표 $\eta\colon G_{\mathbb Q}\to\mathbb Q_p^\times$ 는 $\mathbb Z_p^\times$ 성분과 유한 성분으로 갈린다. $p$ 자리에서 de Rham 이라는 조건이 $\mathbb Z_p^\times$ 성분을 $m\in\mathbb Z$ 인 $\chi^m$ 으로 고정하고, 남는 것은
 
 $$
 \eta=\varepsilon\cdot\chi^{m},\qquad \varepsilon\ \text{는 유한위수 Dirichlet 지표}
@@ -82,7 +82,7 @@ $$
 
 한쪽만으로는 안 된다는 것을 각각 확인해 두면 추측의 모양이 분명해진다.
 
-- **비분기만**: 위에서 본 $\chi^s$, $s\notin\mathbb Z$. $p$ 밖 어디서도 분기하지 않지만 기하적이지 않다. $p$ 자리의 야생 자유도가 통제되지 않는다.
+- **비분기만**: 위에서 본 $s\notin\mathbb Z$ 인 $\chi^s$ 다. $p$ 밖 어디서도 분기하지 않지만 기하적이지 않다. $p$ 자리의 야생 자유도가 통제되지 않는다.
 - **de Rham 만**: 무한히 많은 소수에서 분기하도록 표현을 억지로 만들 수 있다. $\mathbb Q$ 의 절대 Galois 군은 그만큼 크다. 그런 표현은 도체가 정의되지 않아 자기동형 형식과 짝지을 대상이 없다.
 
 두 조건은 각각 무한 자유도를 하나씩 죽인다. 조건 1 은 유한 개 소수의 분기만 허용해 **가로 방향**을, 조건 2 는 $p$ 자리에서 여과·Frobenius 자료를 정수 무게로 묶어 **세로 방향**을 잘라낸다.
@@ -126,7 +126,7 @@ $\rho|_{G_{\mathbb Q_p}}$ 가 de Rham 이라 함은 $D_{\mathrm{dR}}(\rho)=\bigl
 
 ## 추측의 정밀한 형태
 
-$n=2$ 에서는 Hodge–Tate 무게와 홀짝성까지 지정한 형태로 적는다. $\rho\colon G_{\mathbb Q}\to\mathrm{GL}_2(\mathbb Q_p)$ 가 기약, 거의 모든 곳 비분기, $p$ 에서 de Rham 이고 Hodge–Tate 무게가 $\{0,k-1\}$ ($k\ge2$) 로 **서로 다르다**고 하자. 그러면
+$n=2$ 에서는 Hodge–Tate 무게와 홀짝성까지 지정한 형태로 적는다. $\rho\colon G_{\mathbb Q}\to\mathrm{GL}_2(\mathbb Q_p)$ 가 기약, 거의 모든 곳 비분기, $p$ 에서 de Rham 이고 Hodge–Tate 무게가 $k\ge2$ 인 $\{0,k-1\}$ 로 **서로 다르다**고 하자. 그러면
 
 $$
 \det\rho(c)=-1\quad(c\ \text{는 복소켤레}) \;\Longrightarrow\; \rho\cong\rho_f\ \text{ (어떤 무게 } k \text{ 첨점 고유형식 } f)
@@ -153,9 +153,9 @@ $$
 | 상황 | 결과 |
 |---|---|
 | $n=1$ | 정리. 유체론과 Kronecker–Weber |
-| $n=2$, 홀수, 서로 다른 HT 무게, $\bar\rho|_{\mathbb Q(\zeta_p)}$ 기약 | Kisin, Emerton (대체로 해결)[^2] |
-| $n=2$, HT 무게 같음 | 미해결. Artin 추측과 얽힘 |
-| $n=2$, 짝수 | 결론이 "그런 것은 없다" 쪽. 부분 결과만 |
+| $n=2$ 이고 홀수, 서로 다른 HT 무게, $\bar\rho|_{\mathbb Q(\zeta_p)}$ 기약 | Kisin, Emerton (대체로 해결)[^2] |
+| $n=2$ 이고 HT 무게 같음 | 미해결. Artin 추측과 얽힘 |
+| $n=2$ 이고 짝수 | 결론이 "그런 것은 없다" 쪽. 부분 결과만 |
 | $n\ge3$ | 열려 있음. 자기쌍대 경우에 부분 결과 |
 
 $n=2$ 증명의 뼈대는 두 단계다. 먼저 [Serre 추측](modular-forms.md)(Khare–Wintenberger 정리)이 잔여표현 $\bar\rho$ 가 모듈러임을 준다. 그 다음 모듈러성 올림 정리가 "잔여적으로 모듈러 + $p$ 에서 de Rham" 을 "모듈러" 로 올린다. Kisin 은 이 올림 단계에서 $p$ 진 국소 Langlands 대응을 써서, 그전까지 필요했던 국소 조건의 제약을 크게 걷어냈다.
@@ -186,7 +186,7 @@ $$
 
 ## 국소–전역 원리로서
 
-이 추측은 형태상 국소–전역 원리다. 그런데 방향이 특이하다. Hasse 원리류의 진술은 모든 자리에서의 정보를 모아 전역 결론을 얻는데, Fontaine–Mazur 는 **한 자리($p$)의 정보와 나머지 자리에서의 소극적 조건(비분기)** 만으로 전역 결론을 얻는다. 그것이 가능한 이유는 $p$ 진 표현이 $\ell$ 진 표현과 달리 $p$ 자리에서 기하의 정보를 통째로 지고 있기 때문이다. $p$ 진 Hodge 이론이 이 비대칭을 만들었고, 추측은 그 비대칭을 끝까지 쓴다.
+이 추측은 형태상 국소–전역 원리다. 그런데 방향이 특이하다. Hasse 원리류의 진술은 모든 자리에서의 정보를 모아 전역 결론을 얻는데, Fontaine–Mazur 는 **한 자리 $p$ 에서의 정보와 나머지 자리에서의 소극적 조건(비분기)** 만으로 전역 결론을 얻는다. 그것이 가능한 이유는 $p$ 진 표현이 $\ell$ 진 표현과 달리 $p$ 자리에서 기하의 정보를 통째로 지고 있기 때문이다. $p$ 진 Hodge 이론이 이 비대칭을 만들었고, 추측은 그 비대칭을 끝까지 쓴다.
 
 # 활용
 
@@ -211,13 +211,13 @@ Wiles 의 반안정 타원곡선 모듈러성, Breuil–Conrad–Diamond–Taylo
 
 ## 남은 방향
 
-- **일반 $n$**: 자기쌍대 조건 아래 Taylor 등의 potential automorphy 기법이 부분 결과를 준다. 자기쌍대성을 벗어나면 [Langlands 강령](langlands-program.md)의 일반 함자성이 필요해진다.
+- **일반 차원**: 자기쌍대 조건 아래 Taylor 등의 potential automorphy 기법이 부분 결과를 준다. 자기쌍대성을 벗어나면 [Langlands 강령](langlands-program.md)의 일반 함자성이 필요해진다.
 - **기하화**: Fargues–Scholze 는 $p$ 진 국소 Langlands 를 $\mathrm{Bun}_G$ 위의 층으로 재구성했다. 이 틀에서 de Rham 조건은 매개변수 공간의 어떤 부분대상으로 번역되고, Kisin–Emerton 논법의 국소 부분이 개념적으로 다시 쓰인다.
-- **무게 $\{0,0\}$**: 홀수 2 차원 Artin 표현의 모듈러성은 Buzzard–Taylor 이후 상당히 진전되었지만, "상이 유한하다" 를 국소 조건에서 끌어내는 부분은 여전히 별개의 난점이다.
+- **무게가 $\{0,0\}$ 인 경우**: 홀수 2 차원 Artin 표현의 모듈러성은 Buzzard–Taylor 이후 상당히 진전되었지만, "상이 유한하다" 를 국소 조건에서 끌어내는 부분은 여전히 별개의 난점이다.
 
 [^1]: J.-M. Fontaine, B. Mazur, *Geometric Galois representations*, Elliptic Curves, Modular Forms, and Fermat's Last Theorem (1995), 41–78. 본문의 조건 1, 2 와 기하적 표현의 정의가 이 논문의 §1 이다.
 
-[^2]: M. Kisin, *The Fontaine–Mazur conjecture for* $\mathrm{GL}_2$, J. Amer. Math. Soc. **22** (2009), 641–690. M. Emerton, *Local-global compatibility in the p-adic Langlands programme for* $\mathrm{GL}_{2/\mathbb Q}$ (preprint, 2011). 잔여표현 쪽 입력인 Serre 추측은 C. Khare, J.-P. Wintenberger, *Serre's modularity conjecture I, II*, Invent. Math. **178** (2009).
+[^2]: M. Kisin, *The Fontaine–Mazur conjecture for GL(2)*, J. Amer. Math. Soc. **22** (2009), 641–690. M. Emerton, *Local-global compatibility in the p-adic Langlands programme for GL(2)* (preprint, 2011). 잔여표현 쪽 입력인 Serre 추측은 C. Khare, J.-P. Wintenberger, *Serre's modularity conjecture I, II*, Invent. Math. **178** (2009).
 
 # 연관 문서
 

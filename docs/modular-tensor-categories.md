@@ -7,7 +7,7 @@
 이 자료를 정점작용소대수에서 떼어내 공리로 세운 것이 **모듈러 텐서범주**(modular tensor category, MTC)다. [범주](category.md) 하나에 다음이 얹힌다.
 
 - 대상의 [텐서곱](tensor-products.md)과 유한개의 단순대상. 곱이 단순대상의 직합으로 분해된다.
-- **꼬임**(braiding) $c_{X,Y}:X\otimes Y\to Y\otimes X$. 대칭이 아니어도 된다. 두 번 꼬으면 제자리로 돌아오지 않아도 된다.
+- **꼬임**(braiding) $c_{X,Y}:X\otimes Y\to Y\otimes X$ 는 대칭이 아니어도 된다. 두 번 꼬으면 제자리로 돌아오지 않아도 된다.
 - 그 꼬임이 **비퇴화**하다는 조건. 동치로 $S$ 행렬이 가역이다.
 
 마지막 조건이 이름의 $modular$ 를 설명한다. $S$ 와 $T$ 가 $\mathrm{SL}_2(\mathbb Z)$ 의 표현을 이루기 때문이다.
@@ -73,8 +73,8 @@ graph LR
 
 $\mathbb C$ 위의 범주 $\mathcal C$ 가 다음을 만족하면 **융합범주**다.
 
-- $\mathbb C$ 선형, 반단순, 유한개의 단순대상 $X_0=\mathbf1,X_1,\dots,X_{n-1}$.
-- 결합적 텐서곱과 단위대상, 각 대상의 쌍대 $X^*$.
+- $\mathbb C$ 선형이고 반단순이며 유한개의 단순대상 $X_0=\mathbf1,X_1,\dots,X_{n-1}$ 을 갖는다.
+- 결합적 텐서곱과 단위대상이 있고 각 대상의 쌍대 $X^*$ 가 있다.
 
 단순대상의 곱을 분해한 계수를 **융합 규칙**이라 한다.
 
@@ -112,7 +112,7 @@ $$
 
 ## Verlinde 공식을 직접 확인하기
 
-가장 익숙한 예가 $\mathrm{SU}(2)_k$, 곧 레벨 $k$ 의 아핀 $\mathfrak{sl}_2$ 에서 나오는 MTC 다. 단순대상은 $k+1$ 개이고 라벨 $i=0,\dots,k$ 는 스핀의 두 배다. $S$ 행렬이 사인으로 주어진다.
+가장 익숙한 예가 $\mathrm{SU}(2)_k$ 곧 레벨 $k$ 의 아핀 $\mathfrak{sl}_2$ 에서 나오는 MTC 다. 단순대상은 $k+1$ 개이고 라벨 $i=0,\dots,k$ 는 스핀의 두 배다. $S$ 행렬이 사인으로 주어진다.
 
 $$
 S_{ij}=\sqrt{\frac2{k+2}}\,\sin\!\frac{\pi(i+1)(j+1)}{k+2}
@@ -174,12 +174,12 @@ $k=3$ 의 $N_{1,1}^l=[1,0,1,0]$ 은 $X_1\otimes X_1=\mathbf1\oplus X_2$ 를 뜻�
 | MTC | 단순대상 수 | 비고 |
 |---|---|---|
 | $\mathrm{Vec}$ | 1 | 자명 |
-| 준-Ising ($\mathrm{SU}(2)_2$) | 3 | $\mathbf1,\sigma,\psi$, $\sigma^2=\mathbf1\oplus\psi$ |
-| Fibonacci ($\mathrm{SU}(2)_3$ 의 부분) | 2 | $\tau^2=\mathbf1\oplus\tau$, $d_\tau=\varphi$ 황금비 |
+| 준-Ising 곧 $\mathrm{SU}(2)_2$ | 3 | $\mathbf1,\sigma,\psi$ 이고 $\sigma^2=\mathbf1\oplus\psi$ |
+| Fibonacci ($\mathrm{SU}(2)_3$ 의 부분) | 2 | $\tau^2=\mathbf1\oplus\tau$ 이고 $d_\tau=\varphi$ 는 황금비 |
 | $\mathrm{SU}(2)_k$ | $k+1$ | 위의 예 |
 | $\mathcal Z(\mathrm{Vec}_G)$ | $G$ 의 켤레류 자료 | 유한군 $G$ 의 Drinfeld 중심 |
 
-Fibonacci 범주에서 $d_\tau$ 가 황금비라는 것은 $d_\tau^2=1+d_\tau$ 에서 나온다. 양자 차원이 정수가 아니어도 된다는 점이 보통의 표현론과 갈리는 지점이고, 애니온 하나가 "차원 $\varphi$" 를 갖는다는 물리적 진술이 된다.
+Fibonacci 범주에서 $d_\tau$ 가 황금비라는 것은 $d_\tau^2=1+d_\tau$ 에서 나온다. 양자 차원이 정수가 아니어도 된다는 점이 보통의 표현론과 갈리는 지점이고, 애니온 하나가 차원 $\varphi$ 를 갖는다는 물리적 진술이 된다.
 
 분류 문제에서 중요한 결과가 하나 있다.
 
@@ -191,8 +191,8 @@ Fibonacci 범주에서 $d_\tau$ 가 황금비라는 것은 $d_\tau^2=1+d_\tau$ �
 
 Reshetikhin–Turaev 구성은 MTC 에서 다음을 만든다.
 
-- 닫힌 곡면 $\Sigma$ 에 벡터공간 $Z(\Sigma)$. 원환면이면 차원이 단순대상 개수다.
-- 3 차원 다양체 $M$ 에 수 $Z(M)\in\mathbb C$. 경계가 있으면 $Z(\partial M)$ 의 벡터.
+- 닫힌 곡면 $\Sigma$ 에 벡터공간 $Z(\Sigma)$ 가 붙는다. 원환면이면 차원이 단순대상 개수다.
+- 3 차원 다양체 $M$ 에 수 $Z(M)\in\mathbb C$ 가 붙는다. 경계가 있으면 $Z(\partial M)$ 의 벡터가 된다.
 - $M$ 안의 라벨 붙은 매듭에 수.
 
 3 차원 다양체가 매듭을 따라 수술하면 얻어진다는 사실(Lickorish–Wallace)과, 수술 표현이 Kirby 이동으로 연결된다는 사실을 쓴다. 매듭 불변량을 정의한 뒤 Kirby 이동에 불변임을 확인하면 다양체 불변량이 되고, 그 확인에 필요한 것이 정확히 $S$ 의 가역성이다. **모듈러 조건이 없으면 매듭 불변량은 만들어도 3 차원 다양체 불변량으로 올라가지 못한다.**
@@ -201,7 +201,7 @@ Reshetikhin–Turaev 구성은 MTC 에서 다음을 만든다.
 
 ## 매듭 불변량
 
-$\mathrm{SU}(2)_k$ 에서 라벨 1(스핀 $1/2$)을 단 매듭의 불변량이 Jones 다항식을 $q=e^{2\pi i/(k+2)}$ 에서 평가한 값이다. Jones 가 1984 년에 작용소 대수에서 발견한 다항식이 왜 매듭을 구별하는지에 대해, Witten 이 3 차원 Chern–Simons 이론의 Wilson 고리 기댓값이라는 물리적 설명을 주었고, Reshetikhin–Turaev 가 그것을 수학적으로 구성했다. MTC 는 그 구성의 대수적 입력이다.
+$\mathrm{SU}(2)_k$ 에서 라벨 1 곧 스핀 $1/2$ 를 단 매듭의 불변량이 Jones 다항식을 $q=e^{2\pi i/(k+2)}$ 에서 평가한 값이다. Jones 가 1984 년에 작용소 대수에서 발견한 다항식이 왜 매듭을 구별하는지에 대해, Witten 이 3 차원 Chern–Simons 이론의 Wilson 고리 기댓값이라는 물리적 설명을 주었고, Reshetikhin–Turaev 가 그것을 수학적으로 구성했다. MTC 는 그 구성의 대수적 입력이다.
 
 라벨을 바꾸면 색 Jones 다항식이 나오고, 다른 Lie 군을 쓰면 HOMFLY 나 Kauffman 다항식이 나온다. 매듭 다항식의 동물원이 MTC 의 목록으로 정리된다.
 

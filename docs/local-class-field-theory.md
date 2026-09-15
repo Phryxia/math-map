@@ -79,7 +79,7 @@ graph TD
 
 ## 국소체와 비분기 확대
 
-**국소체**는 이산 부치를 갖는 완비 체로 잔여체가 유한한 것이다. 표수 0 이면 $\mathbb Q_p$ 의 유한 확대, 표수 $p$ 면 $\mathbb F_q((T))$ 다. 정수환 $\mathcal O$, 극대 아이디얼 $\mathfrak m=(\pi)$, 잔여체 $k=\mathbb F_q$ 를 쓴다.
+**국소체**는 이산 부치를 갖는 완비 체로 잔여체가 유한한 것이다. 표수 0 이면 $\mathbb Q_p$ 의 유한 확대, 표수 $p$ 면 $\mathbb F_q((T))$ 다. 정수환 $\mathcal O$ 와 극대 아이디얼 $\mathfrak m=(\pi)$ 와 잔여체 $k=\mathbb F_q$ 를 쓴다.
 
 각 $n$ 에 대해 차수 $n$ 의 **비분기 확대**가 유일하게 존재한다. $k$ 의 차수 $n$ 확대 $\mathbb F_{q^n}$ 을 올린 것이고, 그 Galois 군이 잔여체의 Galois 군과 같다.
 
@@ -122,9 +122,9 @@ $$
 
 ## Lubin–Tate 형식군
 
-$\mathcal F_\pi$ 를 위 두 조건 $f\equiv\pi X\ (\deg2)$, $f\equiv X^q\ (\mathfrak m)$ 을 만족하는 $f\in\mathcal O[[X]]$ 의 집합이라 하자.
+$\mathcal F_\pi$ 를 위 두 조건 $f\equiv\pi X\ (\deg2)$ 와 $f\equiv X^q\ (\mathfrak m)$ 을 만족하는 $f\in\mathcal O[[X]]$ 의 집합이라 하자.
 
-> **Lubin–Tate.** $f\in\mathcal F_\pi$ 마다 형식군 법칙 $F_f$ 가 유일하게 존재해 $f$ 가 $F_f$ 의 자기준동형이 된다. 나아가 환 준동형 $\mathcal O\to\mathrm{End}(F_f)$, $a\mapsto[a]_f$ 가 유일하게 있어 $[a]_f(X)\equiv aX\ (\deg2)$ 이고 $[\pi]_f=f$ 다.
+> **Lubin–Tate.** $f\in\mathcal F_\pi$ 마다 형식군 법칙 $F_f$ 가 유일하게 존재해 $f$ 가 $F_f$ 의 자기준동형이 된다. 나아가 환 준동형 $\mathcal O\to\mathrm{End}(F_f)$ 곧 $a\mapsto[a]_f$ 가 유일하게 있어 $[a]_f(X)\equiv aX\ (\deg2)$ 이고 $[\pi]_f=f$ 다.
 
 구성은 차수에 대한 귀납이다. $F\equiv X+Y$ 에서 시작해, $\Delta=f(F)-F(f(X),f(Y))$ 의 $n$ 차 동차부분을 $\pi^n-\pi$ 로 나눈 것을 더한다. 이 나눗셈이 $\mathcal O$ 안에서 되는 이유가 $f\equiv X^q\ (\mathfrak m)$ 이다. 잔여체에서 $f$ 가 Frobenius 이므로 $\Delta\equiv0\ (\mathfrak m)$ 이고, $\pi^n-\pi=\pi(\pi^{n-1}-1)$ 의 $\pi$ 가 정확히 그 만큼 상쇄된다.
 
@@ -151,11 +151,11 @@ $K_{\pi,n}=K(\Lambda_n)$ 으로 두고 $K_\pi=\bigcup_nK_{\pi,n}$ 이라 쓴다.
 
 ## 원분체와의 비교
 
-$K=\mathbb Q_p$, $\pi=p$, $f(X)=(1+X)^p-1$ 을 넣으면 모든 것이 익숙한 대상으로 돌아온다.
+$K=\mathbb Q_p$ 와 $\pi=p$ 와 $f(X)=(1+X)^p-1$ 을 넣으면 모든 것이 익숙한 대상으로 돌아온다.
 
-| Lubin–Tate | $K=\mathbb Q_p$, $f=(1+X)^p-1$ |
+| Lubin–Tate | $K=\mathbb Q_p,\ f=(1+X)^p-1$ |
 |---|---|
-| $F_f(X,Y)$ | $X+Y+XY$ (형식 곱군 $\hat{\mathbb G}_m$) |
+| $F_f(X,Y)$ | 형식 곱군 $\hat{\mathbb G}_m$ 의 $X+Y+XY$ |
 | $[a]_f(X)$ | $(1+X)^a-1$ |
 | $\Lambda_n$ | $\{\zeta-1:\zeta^{p^n}=1\}$ |
 | $K_{\pi,n}$ | $\mathbb Q_p(\mu_{p^n})$ |
@@ -191,7 +191,7 @@ $$
 
 ## 형식군을 직접 만들어 본다
 
-$K=\mathbb Q_3$, $\pi=3$, $q=3$ 에서 $F_f$ 를 차수 $6$ 미만까지 귀납으로 구성한다. 확인할 것은 네 가지다. 군법칙의 공리, 함수방정식 $f(F(X,Y))=F(f(X),f(Y))$, 계수가 $\mathbb Z_3$ 안에 있다는 것, 그리고 $f=(1+X)^3-1$ 을 넣으면 $X+Y+XY$ 가 그대로 나온다는 것이다.
+$K=\mathbb Q_3$ 와 $\pi=3$ 과 $q=3$ 에서 $F_f$ 를 차수 $6$ 미만까지 귀납으로 구성한다. 확인할 것은 네 가지다. 군법칙의 공리, 함수방정식 $f(F(X,Y))=F(f(X),f(Y))$ 가 성립하는 것, 계수가 $\mathbb Z_3$ 안에 있다는 것, 그리고 $f=(1+X)^3-1$ 을 넣으면 $X+Y+XY$ 가 그대로 나온다는 것이다.
 
 ```python
 from fractions import Fraction as Q
