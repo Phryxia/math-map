@@ -103,7 +103,7 @@ $$
 \frac1{\sqrt n}<\varepsilon<1,\qquad q=\left\lceil\frac{Cn\log n}{\varepsilon^2}\right\rceil
 $$
 
-이면 위 절차로 얻은 `H` 가 `G` 의 $\epsilon$-spectral sparsifier 일 확률이 적어도 `1/2` 다.
+이면 위 절차로 얻은 `H` 가 `G` 의 $\epsilon$ spectral sparsifier 일 확률이 적어도 `1/2` 다.
 
 이것은 이 판본의 정리 조건이다. 더 작은 오차 범위나 더 높은 성공 확률에 대한 변형을 같은 문장에 섞지 않는다. 성공 확률은 독립 반복과 검증으로 올릴 수 있다.
 

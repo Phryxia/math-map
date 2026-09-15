@@ -156,7 +156,7 @@ print([round(weyl_ip(f, lambda t: chi(n, t)), 6) for n in range(4)])
 | $\mathrm{SO}(3)$ | 정수 스핀 $\ell$, $(2\ell+1)$ 차원 | 구면조화함수 전개 |
 | 유한군 $G$ | $V_i$ | 정칙표현 분해 |
 
-$\mathrm{SO}(3)$ 의 경우 $L^2(S^2)=L^2(\mathrm{SO}(3)/\mathrm{SO}(2))$ 이므로 $\mathrm{SO}(2)$-불변 벡터만 남고, 각 $\ell$ 에서 1 차원씩 기여해 $\bigoplus_\ell V_\ell$ 이 된다. 구면조화함수 $Y_\ell^m$ 이 정확히 그 기저다.
+$\mathrm{SO}(3)$ 의 경우 $L^2(S^2)=L^2(\mathrm{SO}(3)/\mathrm{SO}(2))$ 이므로 $\mathrm{SO}(2)$ 불변 벡터만 남고, 각 $\ell$ 에서 1 차원씩 기여해 $\bigoplus_\ell V_\ell$ 이 된다. 구면조화함수 $Y_\ell^m$ 이 정확히 그 기저다.
 
 ## 콤팩트를 벗어나면
 

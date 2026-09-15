@@ -14,7 +14,7 @@ $$
 H^0(G/B,\mathcal L_\lambda)\cong V_\lambda^{*}
 $$
 
-가 $G$-가군으로 성립한다. 표현론의 대상이 대수기하의 대상으로 옮겨졌고, 차원 계산은 [Riemann–Roch](riemann-roch.md) 유형의 코호몰로지 계산이 된다.
+가 $G$ 가군으로 성립한다. 표현론의 대상이 대수기하의 대상으로 옮겨졌고, 차원 계산은 [Riemann–Roch](riemann-roch.md) 유형의 코호몰로지 계산이 된다.
 
 Bott 가 1957 년에 붙인 나머지 절반은 $\lambda$ 가 지배적이지 **않을** 때 무슨 일이 생기는가에 답한다. 답이 놀랍다. 코호몰로지가 전부 사라지거나, 아니면 정확히 한 차수에서만 살아남되 그 차수와 나타나는 표현이 $\lambda$ 를 **$\rho$ 이동한 Weyl 군 작용**으로 결정된다. 지표 공식에서 $\rho$ 이동이 왜 필요한지에 대한 가장 명확한 설명이 여기서 나온다. 이동은 계산 편의가 아니라 코호몰로지 차수를 세는 기하적 양이다.
 
@@ -94,7 +94,7 @@ $$
 \mathcal L_\lambda=G\times^B\mathbb C_{-\lambda}=(G\times\mathbb C)/\{(g,z)\sim(gb,\lambda(b)z)\}
 $$
 
-가 $G/B$ 위의 $G$-등변 직선다발이다. 부호 규약이 문헌마다 갈리는데, 여기서는 $\lambda$ 지배적일 때 $\mathcal L_\lambda$ 가 매우 풍부(very ample)해지도록 잡았다. 그러면 $\mathcal L_\lambda$ 의 단면이 $\mathbb P(V_\lambda)$ 로의 매장을 준다.
+가 $G/B$ 위의 $G$ 등변 직선다발이다. 부호 규약이 문헌마다 갈리는데, 여기서는 $\lambda$ 지배적일 때 $\mathcal L_\lambda$ 가 매우 풍부(very ample)해지도록 잡았다. 그러면 $\mathcal L_\lambda$ 의 단면이 $\mathbb P(V_\lambda)$ 로의 매장을 준다.
 
 ## Schubert 세포와 Bruhat 순서
 
@@ -122,7 +122,7 @@ $$
 \sum_k \dim H^{2k}(G/B)\,q^{k}=\sum_{w\in W}q^{\ell(w)}=\prod_{i=1}^{r}\frac{1-q^{d_i}}{1-q}
 $$
 
-$d_i$ 는 $W$ 의 기본 불변식 차수다. $\mathrm{SL}_n$ 에서 $W=S_n$ 이고 우변은 $q$-계승 $[n]_q!$ 이다.
+$d_i$ 는 $W$ 의 기본 불변식 차수다. $\mathrm{SL}_n$ 에서 $W=S_n$ 이고 우변은 $q$ 계승 $[n]_q!$ 이다.
 
 # 성질
 

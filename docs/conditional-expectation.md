@@ -8,9 +8,9 @@ $$
 E[X \mid B] = \frac{E[X \mathbf{1}_B]}{P(B)}, \qquad P(B) > 0
 $$
 
-로 정의하지만, 이 정의는 $P(B) = 0$ 인 사건에 대해 무력하고, "관측할 정보 전체"를 하나의 대상으로 다루지 못한다. 현대적인 정의는 조건을 거는 대상을 사건이 아니라 **σ-대수** $\mathcal G$ 로 잡고, 조건부 기댓값을 $\mathcal G$-가측 확률변수로 정의한다.
+로 정의하지만, 이 정의는 $P(B) = 0$ 인 사건에 대해 무력하고, "관측할 정보 전체"를 하나의 대상으로 다루지 못한다. 현대적인 정의는 조건을 거는 대상을 사건이 아니라 **σ-대수** $\mathcal G$ 로 잡고, 조건부 기댓값을 $\mathcal G$ 가측 확률변수로 정의한다.
 
-핵심은 두 줄로 요약된다. 조건부 기댓값 $E[X \mid \mathcal G]$ 는 (1) $\mathcal G$-가측이며 (2) $\mathcal G$ 안의 모든 사건 위에서 $X$ 와 같은 적분값을 갖는 확률변수다. 존재성과 거의 확실한 유일성은 [Radon–Nikodym 정리](radon-nikodym.md)가 보장한다. 이 정의가 있어야 [Markov 연쇄](markov-chains.md)의 연속시간·일반상태 버전, [Martingale](martingales.md), 그리고 [상측도와 확률분포](pushforward-measure.md) 위의 조건부 분포 이론이 성립한다.
+핵심은 두 줄로 요약된다. 조건부 기댓값 $E[X \mid \mathcal G]$ 는 (1) $\mathcal G$ 가측이며 (2) $\mathcal G$ 안의 모든 사건 위에서 $X$ 와 같은 적분값을 갖는 확률변수다. 존재성과 거의 확실한 유일성은 [Radon–Nikodym 정리](radon-nikodym.md)가 보장한다. 이 정의가 있어야 [Markov 연쇄](markov-chains.md)의 연속시간·일반상태 버전, [Martingale](martingales.md), 그리고 [상측도와 확률분포](pushforward-measure.md) 위의 조건부 분포 이론이 성립한다.
 
 # 직관
 
@@ -22,9 +22,9 @@ $$
 E[X \mid \mathcal{G}](\omega) \;=\; \sum_{k} \frac{E[X \mathbf{1}_{B_k}]}{P(B_k)} \, \mathbf{1}_{B_k}(\omega).
 $$
 
-"조각 위에서 상수"가 곧 $\mathcal G$-가측성이고, "조각 위의 평균"이 곧 적분 일치 조건이다. 일반적인 $\mathcal G$ 에는 분할이 없지만 두 조건은 그대로 살아남는다. 그래서 정의는 공식이 아니라 **특성화**의 형태를 띤다.
+"조각 위에서 상수"가 곧 $\mathcal G$ 가측성이고, "조각 위의 평균"이 곧 적분 일치 조건이다. 일반적인 $\mathcal G$ 에는 분할이 없지만 두 조건은 그대로 살아남는다. 그래서 정의는 공식이 아니라 **특성화**의 형태를 띤다.
 
-두 번째 직관은 기하다. 제곱적분 가능한 확률변수들의 공간은 [내적 공간](inner-product-spaces.md)이고 사실 완비, 즉 [Hilbert 공간](hilbert-spaces.md)이다. $\mathcal G$-가측 원소들은 닫힌 부분공간을 이루고, $E[X \mid \mathcal G]$ 는 $X$ 를 그 부분공간 위로 내린 **정사영**이다. 오차 $X - E[X \mid \mathcal G]$ 가 모든 $\mathcal G$-가측 변수와 직교한다는 사실이 적분 일치 조건과 같은 말이다.
+두 번째 직관은 기하다. 제곱적분 가능한 확률변수들의 공간은 [내적 공간](inner-product-spaces.md)이고 사실 완비, 즉 [Hilbert 공간](hilbert-spaces.md)이다. $\mathcal G$ 가측 원소들은 닫힌 부분공간을 이루고, $E[X \mid \mathcal G]$ 는 $X$ 를 그 부분공간 위로 내린 **정사영**이다. 오차 $X - E[X \mid \mathcal G]$ 가 모든 $\mathcal G$ 가측 변수와 직교한다는 사실이 적분 일치 조건과 같은 말이다.
 
 ```mermaid
 graph LR
@@ -34,7 +34,7 @@ graph LR
   CE -->|"오차 X - E[X|G]"| ORT["G-가측 변수 전체와 직교"]
 ```
 
-세 번째 직관은 예측이다. 제곱오차를 최소화하는 $\mathcal G$-가측 예측기가 정확히 $E[X \mid \mathcal G]$ 이다. [최대가능도 추정](maximum-likelihood.md)이나 [선형회귀](linear-regression.md)에서 "회귀함수"라고 부르는 대상이 바로 이것이다.
+세 번째 직관은 예측이다. 제곱오차를 최소화하는 $\mathcal G$ 가측 예측기가 정확히 $E[X \mid \mathcal G]$ 이다. [최대가능도 추정](maximum-likelihood.md)이나 [선형회귀](linear-regression.md)에서 "회귀함수"라고 부르는 대상이 바로 이것이다.
 
 # 정의
 
@@ -57,7 +57,7 @@ $$
 E[X \mid Z] \;:=\; E[X \mid \sigma(Z)], \qquad \sigma(Z) = \{Z^{-1}(B) : B \in \mathcal{B}(\mathbb{R})\}.
 $$
 
-Doob–Dynkin 보조정리에 의해 $\sigma(Z)$-가측 확률변수는 어떤 Borel 함수 $g$ 에 대해 $g(Z)$ 의 꼴이므로, $E[X \mid Z] = g(Z)$ 인 함수 $g$ 가 존재한다. 이 $g$ 를 회귀함수라 부른다.
+Doob–Dynkin 보조정리에 의해 $\sigma(Z)$ 가측 확률변수는 어떤 Borel 함수 $g$ 에 대해 $g(Z)$ 의 꼴이므로, $E[X \mid Z] = g(Z)$ 인 함수 $g$ 가 존재한다. 이 $g$ 를 회귀함수라 부른다.
 
 조건부 확률은 지시함수의 조건부 기댓값으로 정의한다.
 
@@ -77,7 +77,7 @@ $$
 \nu(A) \;=\; \int_A X \, dP, \qquad A \in \mathcal{G}
 $$
 
-를 정의한다. $P(A) = 0$ 이면 $\nu(A) = 0$ 이므로 $\nu \ll P\rvert_{\mathcal G}$ 이고, [Radon–Nikodym 정리](radon-nikodym.md)에 의해 $\mathcal G$-가측 밀도 $Y = d\nu / d(P\rvert_{\mathcal G})$ 가 존재한다. 이 $Y$ 가 정의의 두 조건을 그대로 만족한다. 일반적인 $X$ 는 $X = X^+ - X^-$ 로 분해하고 선형으로 결합한다. 존재성 증명의 전부가 Radon–Nikodym 이라는 점이 이 개념의 측도론적 위치를 말해 준다.
+를 정의한다. $P(A) = 0$ 이면 $\nu(A) = 0$ 이므로 $\nu \ll P\rvert_{\mathcal G}$ 이고, [Radon–Nikodym 정리](radon-nikodym.md)에 의해 $\mathcal G$ 가측 밀도 $Y = d\nu / d(P\rvert_{\mathcal G})$ 가 존재한다. 이 $Y$ 가 정의의 두 조건을 그대로 만족한다. 일반적인 $X$ 는 $X = X^+ - X^-$ 로 분해하고 선형으로 결합한다. 존재성 증명의 전부가 Radon–Nikodym 이라는 점이 이 개념의 측도론적 위치를 말해 준다.
 
 ## L2 정사영으로서의 정의
 
@@ -97,7 +97,7 @@ $$
 
 ## 이산 경우와의 일치
 
-$\mathcal G = \sigma(B_1, B_2, \dots)$ 가 양의 확률을 갖는 가산 분할로 생성되면, $\mathcal G$-가측 변수는 각 $B_k$ 위에서 상수다. $Y = \sum_k c_k \mathbf 1_{B_k}$ 를 $A = B_k$ 에 대한 부분적분 등식에 넣으면 $c_k P(B_k) = E[X \mathbf 1_{B_k}]$ 이므로
+$\mathcal G = \sigma(B_1, B_2, \dots)$ 가 양의 확률을 갖는 가산 분할로 생성되면, $\mathcal G$ 가측 변수는 각 $B_k$ 위에서 상수다. $Y = \sum_k c_k \mathbf 1_{B_k}$ 를 $A = B_k$ 에 대한 부분적분 등식에 넣으면 $c_k P(B_k) = E[X \mathbf 1_{B_k}]$ 이므로
 
 $$
 c_k \;=\; \frac{E[X \mathbf{1}_{B_k}]}{P(B_k)} \;=\; E[X \mid B_k]
@@ -117,7 +117,7 @@ $$
 E[aX + bY \mid \mathcal{G}] \;=\; a\,E[X \mid \mathcal{G}] + b\,E[Y \mid \mathcal{G}].
 $$
 
-증명은 우변이 $\mathcal G$-가측이고 부분적분 등식을 만족함을 확인한 뒤 유일성을 쓰면 끝난다. 이후 성질들도 대부분 같은 전략을 따른다.
+증명은 우변이 $\mathcal G$ 가측이고 부분적분 등식을 만족함을 확인한 뒤 유일성을 쓰면 끝난다. 이후 성질들도 대부분 같은 전략을 따른다.
 
 **단조성.** $X \le Y$ 이면 $E[X \mid \mathcal G] \le E[Y \mid \mathcal G]$ 다. 실제로 $A = \{E[X \mid \mathcal G] - E[Y \mid \mathcal G] > \varepsilon\}$ 위에서 적분하면 모순이 나온다. 따름정리로 $\lvert E[X \mid \mathcal G] \rvert \le E[\lvert X \rvert \mid \mathcal G]$ 가 성립하고, 따라서 조건부 기댓값은 $L^1$ 위의 수축이다.
 
@@ -131,9 +131,9 @@ $$
 E\big[\,E[X \mid \mathcal{G}] \,\big|\, \mathcal{H}\,\big] \;=\; E[X \mid \mathcal{H}].
 $$
 
-증명: 좌변은 $\mathcal H$-가측이다. $A \in \mathcal H \subseteq \mathcal G$ 에 대해 $\int_A E[E[X \mid \mathcal G] \mid \mathcal H] \, dP = \int_A E[X \mid \mathcal G] \, dP = \int_A X \, dP$ 이며, 첫 등식은 $\mathcal H$ 에 대한 정의, 둘째 등식은 $A \in \mathcal G$ 이므로 $\mathcal G$ 에 대한 정의다. 유일성으로 결론이 난다. "정보를 적게 가진 쪽이 이긴다"는 이 성질이 [Martingale](martingales.md) 이론 전체의 계산 엔진이다.
+증명: 좌변은 $\mathcal H$ 가측이다. $A \in \mathcal H \subseteq \mathcal G$ 에 대해 $\int_A E[E[X \mid \mathcal G] \mid \mathcal H] \, dP = \int_A E[X \mid \mathcal G] \, dP = \int_A X \, dP$ 이며, 첫 등식은 $\mathcal H$ 에 대한 정의, 둘째 등식은 $A \in \mathcal G$ 이므로 $\mathcal G$ 에 대한 정의다. 유일성으로 결론이 난다. "정보를 적게 가진 쪽이 이긴다"는 이 성질이 [Martingale](martingales.md) 이론 전체의 계산 엔진이다.
 
-**끌어내기 (taking out what is known).** $W$ 가 $\mathcal G$-가측이고 $XW$ 가 적분 가능하면
+**끌어내기 (taking out what is known).** $W$ 가 $\mathcal G$ 가측이고 $XW$ 가 적분 가능하면
 
 $$
 E[XW \mid \mathcal{G}] \;=\; W \, E[X \mid \mathcal{G}].
@@ -141,7 +141,7 @@ $$
 
 $B \in \mathcal G$ 인 지시함수 $W = \mathbf 1_B$ 에 대해 직접 확인한 뒤 단순함수, 단조극한([단조 수렴 정리](monotone-convergence.md))의 순서로 확장한다.
 
-**독립성.** $X$ 가 $\mathcal G$ 와 독립이면 $E[X \mid \mathcal G] = E[X]$ 다. 상수는 $\mathcal G$-가측이고, $A \in \mathcal G$ 에 대해 $E[X \mathbf 1_A] = E[X] P(A)$ 이기 때문이다. 반대 극단으로 $X$ 가 $\mathcal G$-가측이면 $E[X \mid \mathcal G] = X$ 다.
+**독립성.** $X$ 가 $\mathcal G$ 와 독립이면 $E[X \mid \mathcal G] = E[X]$ 다. 상수는 $\mathcal G$ 가측이고, $A \in \mathcal G$ 에 대해 $E[X \mathbf 1_A] = E[X] P(A)$ 이기 때문이다. 반대 극단으로 $X$ 가 $\mathcal G$ 가측이면 $E[X \mid \mathcal G] = X$ 다.
 
 ## 수렴 정리와 Jensen
 
@@ -165,7 +165,7 @@ $$
 \operatorname{Var}(X) \;=\; E\big[\operatorname{Var}(X \mid \mathcal{G})\big] \;+\; \operatorname{Var}\big(E[X \mid \mathcal{G}]\big).
 $$
 
-Pythagoras 정리의 확률적 표현이다. 또한 임의의 $\mathcal G$-가측 제곱적분 가능 $W$ 에 대해
+Pythagoras 정리의 확률적 표현이다. 또한 임의의 $\mathcal G$ 가측 제곱적분 가능 $W$ 에 대해
 
 $$
 E\big[(X - W)^2\big] \;=\; E\big[(X - E[X \mid \mathcal{G}])^2\big] + E\big[(E[X \mid \mathcal{G}] - W)^2\big]

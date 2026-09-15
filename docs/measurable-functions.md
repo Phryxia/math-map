@@ -36,7 +36,7 @@ $$
 B\in\mathcal T\quad\Longrightarrow\quad f^{-1}(B)\in\Sigma
 $$
 
-를 뜻한다. 실수값 함수에서는 $Y$ 의 σ-대수로 열린집합들이 생성하는 Borel σ-대수를 쓰고, 이때 $\Sigma$-가측 또는 Borel 가측이라 부른다. 음이 아닌 확장실수값 함수도 $\{+\infty\}$ 를 Borel 집합에 포함시켜 같게 정의한다.
+를 뜻한다. 실수값 함수에서는 $Y$ 의 σ-대수로 열린집합들이 생성하는 Borel σ-대수를 쓰고, 이때 $\Sigma$ 가측 또는 Borel 가측이라 부른다. 음이 아닌 확장실수값 함수도 $\{+\infty\}$ 를 Borel 집합에 포함시켜 같게 정의한다.
 
 $X$ 가 $\mathbb R$ 이고 $\Sigma$ 가 Lebesgue 가측집합이면 Lebesgue 가측함수이고, $\Sigma$ 가 Borel 집합이면 Borel 가측함수다. 전자가 더 넓고, 두 개념을 섞으면 "Lebesgue 가측함수의 합성이 Lebesgue 가측이 아닐 수 있다" 같은 함정이 생긴다.
 
@@ -119,7 +119,7 @@ $$
 
 확률공간에서 가측함수가 곧 [확률변수](random-variables.md)다. 가측성 덕분에 $P(X \in B) = P(X^{-1}(B))$ 가 정의되고, 이 대응이 $\mathbb R$ 위에 새 측도를 만든 것이 [상측도](pushforward-measure.md), 즉 분포다. 분포만 알면 원래 확률공간을 잊어도 되는 이유가 여기 있다.
 
-$\sigma(X) = \{X^{-1}(B) : B \text{ Borel}\}$ 은 $X$ 를 가측으로 만드는 가장 작은 σ-대수이며 "$X$ 가 담고 있는 정보" 를 뜻한다. $Y$ 가 $\sigma(X)$-가측인 것과 $Y = g(X)$ 인 Borel 함수 $g$ 가 존재하는 것이 동치라는 Doob–Dynkin 보조정리가 이 해석을 정당화한다.
+$\sigma(X) = \{X^{-1}(B) : B \text{ Borel}\}$ 은 $X$ 를 가측으로 만드는 가장 작은 σ-대수이며 "$X$ 가 담고 있는 정보" 를 뜻한다. $Y$ 가 $\sigma(X)$ 가측인 것과 $Y = g(X)$ 인 Borel 함수 $g$ 가 존재하는 것이 동치라는 Doob–Dynkin 보조정리가 이 해석을 정당화한다.
 
 ## 적분의 전제 조건
 

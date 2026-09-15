@@ -38,15 +38,15 @@ $\mathbb Z/2\mathbb Z$ 에서는 $3x = x$ 이므로 임의의 단순텐서에 �
 
 ## 보편성질
 
-$R$ 을 가환환이라 하고 $M$ 과 $N$ 과 $P$ 를 $R$-가군이라 하자. 사상 $\beta : M \times N \to P$ 가 각 변수에서 선형이면 쌍선형이라 한다.
+$R$ 을 가환환이라 하고 $M$ 과 $N$ 과 $P$ 를 $R$ 가군이라 하자. 사상 $\beta : M \times N \to P$ 가 각 변수에서 선형이면 쌍선형이라 한다.
 
-**정의.** $R$-가군 $M \otimes_R N$ 과 쌍선형 사상 $\otimes : M \times N \to M \otimes_R N$ 의 쌍이 텐서곱이라는 것은, 임의의 쌍선형 $\beta : M \times N \to P$ 에 대해
+**정의.** $R$ 가군 $M \otimes_R N$ 과 쌍선형 사상 $\otimes : M \times N \to M \otimes_R N$ 의 쌍이 텐서곱이라는 것은, 임의의 쌍선형 $\beta : M \times N \to P$ 에 대해
 
 $$
 \beta = \tilde{\beta} \circ \otimes
 $$
 
-를 만족하는 $R$-선형사상 $\tilde\beta : M \otimes_R N \to P$ 가 유일하게 존재한다는 뜻이다.
+를 만족하는 $R$ 선형사상 $\tilde\beta : M \otimes_R N \to P$ 가 유일하게 존재한다는 뜻이다.
 
 ```mermaid
 graph LR
@@ -59,7 +59,7 @@ graph LR
 
 ## 존재 구성
 
-집합 $M \times N$ 이 자유롭게 생성하는 자유 $R$-가군 $F$ 를 잡는다. 즉 기호 $e_{(m,n)}$ 들이 기저다. 부분가군 $K$ 를 다음 원소들이 생성하도록 둔다.
+집합 $M \times N$ 이 자유롭게 생성하는 자유 $R$ 가군 $F$ 를 잡는다. 즉 기호 $e_{(m,n)}$ 들이 기저다. 부분가군 $K$ 를 다음 원소들이 생성하도록 둔다.
 
 $$
 e_{(m+m',\,n)} - e_{(m,n)} - e_{(m',n)}, \qquad e_{(m,\,n+n')} - e_{(m,n)} - e_{(m,n')}
@@ -159,13 +159,13 @@ $$
 
 ## 스칼라 확장
 
-환 준동형 $f : R \to S$ 가 있으면 $S$ 는 $R$-가군이므로
+환 준동형 $f : R \to S$ 가 있으면 $S$ 는 $R$ 가군이므로
 
 $$
 M \;\longmapsto\; S \otimes_R M
 $$
 
-가 $R$-가군을 $S$-가군으로 보낸다. 이를 스칼라 확장이라 하고, 스칼라를 잊는 제한 functor의 left adjoint다.
+가 $R$ 가군을 $S$ 가군으로 보낸다. 이를 스칼라 확장이라 하고, 스칼라를 잊는 제한 functor의 left adjoint다.
 
 $$
 \operatorname{Hom}_S(S \otimes_R M, N) \cong \operatorname{Hom}_R(M, N)
@@ -243,7 +243,7 @@ $$
 
 ## 대수와 기하
 
-- 두 $R$-대수 $A$ 와 $B$ 의 텐서곱 $A \otimes_R B$ 는 다시 대수이고, 기하적으로는 두 스킴의 올곱에 해당한다. [체의 확대](field-extensions.md)에서 $K \otimes_k L$ 을 계산하면 두 확대가 얼마나 독립적인지가 드러난다.
+- 두 $R$ 대수 $A$ 와 $B$ 의 텐서곱 $A \otimes_R B$ 는 다시 대수이고, 기하적으로는 두 스킴의 올곱에 해당한다. [체의 확대](field-extensions.md)에서 $K \otimes_k L$ 을 계산하면 두 확대가 얼마나 독립적인지가 드러난다.
 - 다항식환끼리의 관계 $k[x] \otimes_k k[y] \cong k[x, y]$ 는 [다항식환](polynomial-rings.md)의 변수 추가가 텐서곱임을 말한다.
 - 기계학습과 수치계산에서 고차원 배열의 분해(CP 분해, Tucker 분해)는 텐서곱 공간의 낮은 랭크 근사이며, 행렬에서의 [특이값 분해](singular-value-decomposition.md)를 다중선형으로 밀어 올린 것이다.[^2]
 

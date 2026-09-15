@@ -2,7 +2,7 @@
 
 # 개요
 
-[Lie 대수](lie-algebras.md)의 유한차원 표현은 완전가약이라 분류가 최고무게 하나로 끝난다. 그러나 무한차원 표현까지 보면 이야기가 달라진다. 아무 제한 없는 $\mathfrak g$-가군의 범주는 손댈 수 없을 만큼 거칠다.
+[Lie 대수](lie-algebras.md)의 유한차원 표현은 완전가약이라 분류가 최고무게 하나로 끝난다. 그러나 무한차원 표현까지 보면 이야기가 달라진다. 아무 제한 없는 $\mathfrak g$ 가군의 범주는 손댈 수 없을 만큼 거칠다.
 
 Bernstein–Gelfand–Gelfand 는 1976 년에 그 중간 지대를 잘라냈다.[^1] **범주 $\mathcal O$** 는 다음 셋을 요구한다. Cartan 부분대수에 대해 무게 분해가 되고, 무게 공간이 유한차원이고, Borel 부분대수의 작용이 국소적으로 유한할 것. 이 세 조건이 범주를 다루기 좋게 만든다.
 
@@ -75,10 +75,10 @@ $\mathrm{ch}\,L(0)=\mathrm{ch}\,M(0)-\mathrm{ch}\,M(-2)$ 도 여기서 읽힌다
 
 ## 범주 $\mathcal O$
 
-$\mathfrak g$ 를 복소 반단순 Lie 대수, $\mathfrak h\subset\mathfrak b\subset\mathfrak g$ 를 Cartan 과 Borel 이라 하자. $\mathcal O$ 의 대상은 $U(\mathfrak g)$-가군 $M$ 으로 다음 셋을 만족하는 것이다.
+$\mathfrak g$ 를 복소 반단순 Lie 대수, $\mathfrak h\subset\mathfrak b\subset\mathfrak g$ 를 Cartan 과 Borel 이라 하자. $\mathcal O$ 의 대상은 $U(\mathfrak g)$ 가군 $M$ 으로 다음 셋을 만족하는 것이다.
 
 1. $M$ 은 유한생성이다.
-2. $M=\bigoplus_{\mu\in\mathfrak h^*}M_\mu$ 로 $\mathfrak h$-무게 분해가 되고 각 $M_\mu$ 는 유한차원이다.
+2. $M=\bigoplus_{\mu\in\mathfrak h^*}M_\mu$ 로 $\mathfrak h$ 무게 분해가 되고 각 $M_\mu$ 는 유한차원이다.
 3. 모든 $v\in M$ 에 대해 $U(\mathfrak n^+)v$ 가 유한차원이다(국소 유한성).
 
 $\mathcal O$ 는 아벨 범주이고, 부분가군과 몫가군과 유한 직합에 닫혀 있으며, 모든 대상이 유한 길이다.
@@ -158,7 +158,7 @@ $A_3$ 부터 $1$ 이 아닌 KL 다항식이 나타나고, 그때부터 중복도
 
 - **Beilinson–Bernstein 국소화.** $\mathcal O$ 의 블록이 깃발다양체 위 $D$ 가군의 범주와 동치다. KL 추측의 증명이 이 동치를 타고 위상수학으로 건너간다.
 - **범주화.** $\mathcal O$ 의 사영가군과 번역 함자가 Hecke 대수의 작용을 실현하고, 이것이 Soergel 쌍가군과 범주화 계열 연구의 출발점이 되었다.
-- **아핀과 모듈러 판본.** 아핀 Lie 대수의 범주 $\mathcal O$ 는 정점작용소대수와 등각장론에 닿고, 양의 표수에서는 Lusztig 추측과 그 반례 이후의 $p$-KL 다항식으로 이어진다.
+- **아핀과 모듈러 판본.** 아핀 Lie 대수의 범주 $\mathcal O$ 는 정점작용소대수와 등각장론에 닿고, 양의 표수에서는 Lusztig 추측과 그 반례 이후의 $p$ KL 다항식으로 이어진다.
 
 # 활용
 

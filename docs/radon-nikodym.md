@@ -51,7 +51,7 @@ $$
 \nu(E)=\int_E f\,d\mu
 $$
 
-가 성립한다. $f$ 는 $\mu$-거의 모든 곳에서 유일하며 Radon–Nikodym 도함수라 하고
+가 성립한다. $f$ 는 $\mu$ 거의 모든 곳에서 유일하며 Radon–Nikodym 도함수라 하고
 
 $$
 f=\frac{d\nu}{d\mu}

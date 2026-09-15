@@ -70,7 +70,7 @@ $$
 \tilde B_t=B_t+\int_0^t\theta_s\,ds,\qquad 0\le t\le T
 $$
 
-즉 $P$-Brown 운동에 표류 $\theta$ 를 더한 것이 $Q$-Brown 운동이 된다. 뒤집어 읽으면, $Q$ 아래에서 보면 원래 있던 표류가 사라진 셈이다.
+즉 $P$ Brown 운동에 표류 $\theta$ 를 더한 것이 $Q$ Brown 운동이 된다. 뒤집어 읽으면, $Q$ 아래에서 보면 원래 있던 표류가 사라진 셈이다.
 
 ## SDE 의 표류 바꾸기
 
@@ -108,7 +108,7 @@ $$
 \mathbb E_Q[Z\mid\mathcal F_s]=\frac{\mathbb E_P[Z\,L_t\mid\mathcal F_s]}{L_s}
 $$
 
-이며, $L$ 이 $P$-martingale 이라는 사실이 분모를 정당화한다.
+이며, $L$ 이 $P$ martingale 이라는 사실이 분모를 정당화한다.
 
 ## 수치로 확인
 

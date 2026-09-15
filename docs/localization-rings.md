@@ -76,7 +76,7 @@ $$
 
 ## 가군의 국소화
 
-$R$-가군 $M$ 에 대해서도 같은 구성을 한다. $M \times S$ 를 $(m,s) \sim (n,t) \iff \exists u \in S,\ u(tm - sn) = 0$ 으로 나눈 것을 $S^{-1}M$ 이라 하며 $S^{-1}R$-가군이 된다. 자연스러운 동형
+$R$ 가군 $M$ 에 대해서도 같은 구성을 한다. $M \times S$ 를 $(m,s) \sim (n,t) \iff \exists u \in S,\ u(tm - sn) = 0$ 으로 나눈 것을 $S^{-1}M$ 이라 하며 $S^{-1}R$ 가군이 된다. 자연스러운 동형
 
 $$
 S^{-1}M \;\cong\; S^{-1}R \otimes_R M

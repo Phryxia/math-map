@@ -12,9 +12,9 @@
 
 ## 자유대수만 vs 모든 대수
 
-$T$ 가 리스트 monad 라 하자. $T$-대수는 리스트를 하나의 값으로 접는 방법이고, 법칙을 붙이면 정확히 monoid 다.
+$T$ 가 리스트 monad 라 하자. $T$ 대수는 리스트를 하나의 값으로 접는 방법이고, 법칙을 붙이면 정확히 monoid 다.
 
-이때 두 종류의 monoid 가 있다. 집합 $X$ 위의 자유 monoid $X^*$ 처럼 $T$ 가 만들어 낸 것과, $(\mathbb Z, +)$ 처럼 원래 있던 것이다. 둘 다 $T$-대수지만 전자는 아무 집합에서나 자동으로 생기고 후자는 그렇지 않다.
+이때 두 종류의 monoid 가 있다. 집합 $X$ 위의 자유 monoid $X^*$ 처럼 $T$ 가 만들어 낸 것과, $(\mathbb Z, +)$ 처럼 원래 있던 것이다. 둘 다 $T$ 대수지만 전자는 아무 집합에서나 자동으로 생기고 후자는 그렇지 않다.
 
 Kleisli 범주는 자유대수만 모은 것이고, Eilenberg–Moore 범주는 모든 대수를 모은 것이다. 전자가 후자의 충만한 부분범주가 되는 이유가 이것이다.
 
@@ -65,7 +65,7 @@ monad 법칙이 정확히 이 합성의 결합법칙과 단위법칙이 된다. 
 
 ## Eilenberg–Moore 범주
 
-$\mathcal C^T$ 의 대상은 $T$-대수 $(A, a: T(A)\to A)$ 로 다음 두 법칙을 만족하는 것이다.
+$\mathcal C^T$ 의 대상은 $T$ 대수 $(A, a: T(A)\to A)$ 로 다음 두 법칙을 만족하는 것이다.
 
 $$
 a\circ\eta_A=\mathrm{id}_A,\qquad a\circ\mu_A=a\circ T(a)
@@ -129,7 +129,7 @@ Beck 의 monadicity 정리가 판정 기준을 준다. $G$ 가 left adjoint 를 
 
 ## 수치로 확인
 
-리스트 monad 에서 Kleisli 합성의 법칙과 $T$-대수의 법칙을 각각 확인한다.
+리스트 monad 에서 Kleisli 합성의 법칙과 $T$ 대수의 법칙을 각각 확인한다.
 
 ```python
 # List monad: T(X) = X 의 유한 리스트

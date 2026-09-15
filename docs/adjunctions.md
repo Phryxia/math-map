@@ -232,8 +232,8 @@ Unit $\eta_X : X \to (X \times A)^A$ 는 $x$ 를 $a \mapsto (x, a)$ 로 보내�
 
 환 준동형 `f : R -> S` 는 두 방향의 functor를 만든다.
 
-- 제한(restriction) $f^*$ 는 $S$-가군을 $R$-가군으로 보낸다. 스칼라 곱을 $f$ 로 끌어온다.
-- 확장(extension) $f_! = S \otimes_R -$ 는 $R$-가군을 $S$-가군으로 보낸다.
+- 제한(restriction) $f^*$ 는 $S$ 가군을 $R$ 가군으로 보낸다. 스칼라 곱을 $f$ 로 끌어온다.
+- 확장(extension) $f_! = S \otimes_R -$ 는 $R$ 가군을 $S$ 가군으로 보낸다.
 
 이때
 

@@ -70,7 +70,7 @@ $$
 a\circ\eta_A=\operatorname{id}_A,\qquad a\circ\mu_A=a\circ T(a)
 $$
 
-"형식적으로 쌓아 둔 것을 실제로 계산해 내는 방법" 이 대수이고, 두 조건은 그 계산이 $\eta$ 와 $\mu$ 에 모순되지 않는다는 뜻이다. $T$ 가 자유 monoid monad 인 `List` 이면 $T$-대수는 정확히 monoid 다. 리스트를 하나의 값으로 접는 방법이 곧 결합적 곱과 항등원이기 때문이다. $T$-대수와 그 사이의 사상들이 이루는 범주를 Eilenberg–Moore 범주 $\mathcal C^T$ 라 한다.
+"형식적으로 쌓아 둔 것을 실제로 계산해 내는 방법" 이 대수이고, 두 조건은 그 계산이 $\eta$ 와 $\mu$ 에 모순되지 않는다는 뜻이다. $T$ 가 자유 monoid monad 인 `List` 이면 $T$ 대수는 정확히 monoid 다. 리스트를 하나의 값으로 접는 방법이 곧 결합적 곱과 항등원이기 때문이다. $T$ 대수와 그 사이의 사상들이 이루는 범주를 Eilenberg–Moore 범주 $\mathcal C^T$ 라 한다.
 
 # 성질
 
@@ -83,7 +83,7 @@ $F \dashv G$ 에 unit $\eta$ 와 counit $\varepsilon$ 이 있으면 $T = GF$ 와
 역방향은 유일하지 않고, 분해의 양 끝이 존재한다.
 
 - **Kleisli 범주 $\mathcal C_T$**: 대상은 $\mathcal C$ 와 같고, $X$ 에서 $Y$ 로 가는 사상은 $\mathcal C$ 의 사상 $X \to T(Y)$ 다. 합성은 위의 $g^* \circ f$ 다. 자유 functor $\mathcal C \to \mathcal C_T$ 와 망각 functor가 이루는 수반이 $T$ 를 준다.
-- **Eilenberg–Moore 범주 $\mathcal C^T$**: 위의 $T$-대수 범주다. 망각 functor $\mathcal C^T \to \mathcal C$ 는 자유대수 functor의 right adjoint이고, 이 수반도 $T$ 를 준다.
+- **Eilenberg–Moore 범주 $\mathcal C^T$**: 위의 $T$ 대수 범주다. 망각 functor $\mathcal C^T \to \mathcal C$ 는 자유대수 functor의 right adjoint이고, 이 수반도 $T$ 를 준다.
 
 $T$ 를 주는 모든 수반의 범주에서 Kleisli는 시작대상, Eilenberg–Moore는 종단대상이다. Kleisli 범주는 $\mathcal C^T$ 의 충만한 부분범주로서 자유대수들만 모은 것과 동치다.
 

@@ -77,7 +77,7 @@ Schur 조건이라 부른다. 이것이 있으면 Schlessinger 의 판정이 통
 
 ## 계수환의 범주
 
-$\Lambda$ 를 잉여체 $k=\mathbb F_p$ 인 완비 이산부치환(보통 $\mathbb Z_p$)이라 하자. 범주 $\mathcal C_\Lambda$ 의 대상은 잉여체가 $k$ 인 완비 국소 Noether $\Lambda$-대수이고, 사상은 국소 $\Lambda$-대수 준동형이다. 유한 길이 대상만 모은 부분범주에서 함자를 정의하고 극한으로 넘긴다.
+$\Lambda$ 를 잉여체 $k=\mathbb F_p$ 인 완비 이산부치환(보통 $\mathbb Z_p$)이라 하자. 범주 $\mathcal C_\Lambda$ 의 대상은 잉여체가 $k$ 인 완비 국소 Noether $\Lambda$ 대수이고, 사상은 국소 $\Lambda$ 대수 준동형이다. 유한 길이 대상만 모은 부분범주에서 함자를 정의하고 극한으로 넘긴다.
 
 ## 변형 함자
 

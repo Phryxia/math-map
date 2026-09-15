@@ -30,7 +30,7 @@ $moonshine$ 은 Conway 가 고른 단어다. 밀주라는 뜻과 달빛이라는
 
 ## 계수가 차원의 합이라는 말의 뜻
 
-수열 $\{c(n)\}$ 의 각 항이 어떤 군 $G$ 의 기약표현 차원들의 음이 아닌 정수 조합으로 쓰인다는 것은, 사실 **등급 표현**이 하나 있다는 말과 같다. $G$-표현 $V_n$ 들을 모아
+수열 $\{c(n)\}$ 의 각 항이 어떤 군 $G$ 의 기약표현 차원들의 음이 아닌 정수 조합으로 쓰인다는 것은, 사실 **등급 표현**이 하나 있다는 말과 같다. $G$ 표현 $V_n$ 들을 모아
 
 $$
 V=\bigoplus_{n\ge-1}V_n,\qquad \dim V_n=c(n)
@@ -86,7 +86,7 @@ $$
 
 ## McKay–Thompson 급수
 
-$\mathbb M$-등급 가군 $V=\bigoplus_{n\ge-1}V_n$ 이 주어졌을 때 각 $g\in\mathbb M$ 에 대해
+$\mathbb M$ 등급 가군 $V=\bigoplus_{n\ge-1}V_n$ 이 주어졌을 때 각 $g\in\mathbb M$ 에 대해
 
 $$
 T_g(\tau)=\sum_{n\ge-1}\operatorname{tr}\!\left(g\mid V_n\right)q^n,\qquad q=e^{2\pi i\tau}
@@ -148,7 +148,7 @@ $$
 
 ## 재현 공식과 증명의 마무리
 
-$g\in\mathbb M$ 에 대해 $\mathfrak m$ 의 $g$-뒤틀린 분모 공식을 쓰면 $T_g$ 의 계수에 대한 같은 형태의 관계식이 나온다. 이것을 **재현 공식**(replication formula)이라 한다. 결론은
+$g\in\mathbb M$ 에 대해 $\mathfrak m$ 의 $g$ 뒤틀린 분모 공식을 쓰면 $T_g$ 의 계수에 대한 같은 형태의 관계식이 나온다. 이것을 **재현 공식**(replication formula)이라 한다. 결론은
 
 > $T_g$ 는 재현 가능(replicable)하다. 곧 처음 몇 개의 계수가 함수 전체를 결정한다.
 
@@ -239,7 +239,7 @@ $n=4$ 에서 $\chi_5=18538750076$ 은 쓰이지 않고 $\chi_6=19360062527$ 이 
 
 추측의 핵심이자 가장 설명하기 어려운 부분이 genus 0 이다. 모듈러 함수가 나오는 것까지는 VOA 의 모듈러 불변성으로 이해되지만, 나오는 군이 하필 전부 genus 0 이라는 사실은 그것만으로 따라오지 않는다.
 
-Borcherds 의 증명은 이것을 재현 공식을 거쳐 간접적으로 확인한다. 곧 "genus 0 이 되는 이유" 를 개념적으로 설명하지 않고, 두 목록이 같음을 보인다. 개념적 설명은 그 뒤에 끈 이론 쪽에서 나왔다. Duncan–Frenkel 은 $\mathfrak m$ 의 Rademacher 합 표현을 통해, Paquette–Persson–Volpato 는 $\mathbb M$-궤도체 끈 이론의 물리적 스펙트럼에서 genus 0 을 유도했다. 여전히 순수 대수적인 설명은 없다.
+Borcherds 의 증명은 이것을 재현 공식을 거쳐 간접적으로 확인한다. 곧 "genus 0 이 되는 이유" 를 개념적으로 설명하지 않고, 두 목록이 같음을 보인다. 개념적 설명은 그 뒤에 끈 이론 쪽에서 나왔다. Duncan–Frenkel 은 $\mathfrak m$ 의 Rademacher 합 표현을 통해, Paquette–Persson–Volpato 는 $\mathbb M$ 궤도체 끈 이론의 물리적 스펙트럼에서 genus 0 을 유도했다. 여전히 순수 대수적인 설명은 없다.
 
 # 활용
 
@@ -249,7 +249,7 @@ Borcherds 의 증명은 이것을 재현 공식을 거쳐 간접적으로 확인
 
 ## 일반화된 달빛과 umbral moonshine
 
-- **일반화된 달빛.** Norton 은 켤레류 하나가 아니라 교환하는 쌍 $(g,h)$ 에 모듈러 함수를 대응시키는 확장을 제안했고, Carnahan 이 증명했다. $V^\natural$ 의 $g$-뒤틀린 가군 위에서 $h$ 의 지표를 보는 것이다.
+- **일반화된 달빛.** Norton 은 켤레류 하나가 아니라 교환하는 쌍 $(g,h)$ 에 모듈러 함수를 대응시키는 확장을 제안했고, Carnahan 이 증명했다. $V^\natural$ 의 $g$ 뒤틀린 가군 위에서 $h$ 의 지표를 보는 것이다.
 - **Mathieu 달빛.** Eguchi–Ooguri–Tachikawa (2010) 가 K3 곡면의 타원 종수를 $\mathcal N=4$ 지표로 분해하면서, 계수가 산재군 $M_{24}$ 의 기약표현 차원으로 분해됨을 관찰했다.
 - **umbral moonshine.** Cheng–Duncan–Harvey 가 Mathieu 달빛을 23 개의 Niemeier 격자 각각에 대한 사례로 확장했다. $M_{24}$ 는 Leech 를 뺀 24 차원 짝수 유니모듈러 격자 중 하나에 딸린 경우다. Duncan–Griffin–Ono 가 존재를 증명했다.
 

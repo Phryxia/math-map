@@ -41,7 +41,7 @@ graph TD
 
 ## 근사비
 
-최소화 문제의 알고리즘이 모든 입력에서 $\mathrm{ALG} \le \rho\cdot\mathrm{OPT}$ 를 만족하면 $\rho$-근사라 한다. 최대화 문제에서는 $\mathrm{ALG} \ge \mathrm{OPT}/\rho$ 로 쓰거나 $\rho \le 1$ 인 비율로 쓴다. $\rho$ 는 상수일 수도 있고 입력 크기에 따라 커질 수도 있다.
+최소화 문제의 알고리즘이 모든 입력에서 $\mathrm{ALG} \le \rho\cdot\mathrm{OPT}$ 를 만족하면 $\rho$ 근사라 한다. 최대화 문제에서는 $\mathrm{ALG} \ge \mathrm{OPT}/\rho$ 로 쓰거나 $\rho \le 1$ 인 비율로 쓴다. $\rho$ 는 상수일 수도 있고 입력 크기에 따라 커질 수도 있다.
 
 ## 근사 가능성의 단계
 

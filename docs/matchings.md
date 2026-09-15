@@ -36,11 +36,11 @@ graph LR
 - $M$ 에 간선을 더 넣을 수 없으면 **극대 매칭**(maximal matching)이다. 극대라고 최대인 것은 아니다.
 - 모든 정점이 덮이면 **완전 매칭**(perfect matching)이다. 이 경우 $\lvert M \rvert = \lvert V \rvert / 2$ 다.
 
-이분 그래프 $G = (X \cup Y, E)$ 에서 $X$ 의 모든 정점이 덮이는 매칭을 $X$-포화 매칭이라 한다.
+이분 그래프 $G = (X \cup Y, E)$ 에서 $X$ 의 모든 정점이 덮이는 매칭을 $X$ 포화 매칭이라 한다.
 
 ## 교대 경로와 증가 경로
 
-매칭 $M$ 이 주어졌을 때, 간선이 $M$ 에 속하는 것과 속하지 않는 것으로 번갈아 나타나는 경로를 **교대 경로**(alternating path)라 한다. 양 끝점이 모두 $M$ 에 덮이지 않은 교대 경로를 **$M$-증가 경로**라 한다.
+매칭 $M$ 이 주어졌을 때, 간선이 $M$ 에 속하는 것과 속하지 않는 것으로 번갈아 나타나는 경로를 **교대 경로**(alternating path)라 한다. 양 끝점이 모두 $M$ 에 덮이지 않은 교대 경로를 **$M$ 증가 경로**라 한다.
 
 증가 경로 $P$ 의 간선 수는 홀수이고, 대칭차 $M \triangle E(P)$ 는 다시 매칭이며 크기가 $\lvert M \rvert + 1$ 이다.
 
@@ -71,7 +71,7 @@ $$
 
 ## Hall 결혼 정리
 
-**정리 (Hall, 1935[^1]).** 이분 그래프 $G = (X \cup Y, E)$ 가 $X$-포화 매칭을 가질 필요충분조건은
+**정리 (Hall, 1935[^1]).** 이분 그래프 $G = (X \cup Y, E)$ 가 $X$ 포화 매칭을 가질 필요충분조건은
 
 $$
 \forall S \subseteq X : \ |N(S)| \ge |S|
@@ -79,13 +79,13 @@ $$
 
 이다.
 
-**증명 (필요성).** $X$-포화 매칭 $M$ 이 있으면 $S$ 의 각 원소는 $M$ 을 통해 서로 다른 $Y$ 의 정점으로 가므로 $\lvert N(S) \rvert \ge \lvert S \rvert$ 다.
+**증명 (필요성).** $X$ 포화 매칭 $M$ 이 있으면 $S$ 의 각 원소는 $M$ 을 통해 서로 다른 $Y$ 의 정점으로 가므로 $\lvert N(S) \rvert \ge \lvert S \rvert$ 다.
 
 **증명 (충분성, `|X|` 에 대한 귀납).** `|X| = 1` 이면 자명하다. 두 경우로 나눈다.
 
 *경우 1: 모든 공집합 아닌 진부분집합 $S \subsetneq X$ 에 대해 $\lvert N(S) \rvert \ge \lvert S \rvert + 1$ (여유가 있음).* 임의의 간선 $xy$ 를 고르고 $G' = G - x - y$ 를 본다. $S \subseteq X \setminus \{x\}$ 에 대해 $y$ 하나만 잃으므로 $\lvert N_{G'}(S) \rvert \ge \lvert N_G(S) \rvert - 1 \ge \lvert S \rvert$ 다. 귀납 가정으로 $G'$ 에 포화 매칭이 있고 거기에 $xy$ 를 더한다.
 
-*경우 2: 어떤 공집합 아닌 $S \subsetneq X$ 가 $\lvert N(S) \rvert = \lvert S \rvert$ 를 만족(빡빡함).* $S$ 와 $N(S)$ 가 이루는 부분그래프는 Hall 조건을 물려받으므로 귀납 가정으로 $S$-포화 매칭 $M_1$ 을 가진다. 이제 $X \setminus S$ 와 $Y \setminus N(S)$ 가 이루는 부분그래프를 보자. $T \subseteq X \setminus S$ 에 대해 $\lvert N(S \cup T) \rvert \ge \lvert S \cup T \rvert = \lvert S \rvert + \lvert T \rvert$ 이고 $N(S \cup T) = N(S) \cup N(T)$ 이므로 $Y \setminus N(S)$ 안에서 $T$ 의 이웃은 최소 $\lvert T \rvert$ 개다. 귀납 가정으로 매칭 $M_2$ 를 얻고, $M_1 \cup M_2$ 가 $X$-포화 매칭이다. ∎
+*경우 2: 어떤 공집합 아닌 $S \subsetneq X$ 가 $\lvert N(S) \rvert = \lvert S \rvert$ 를 만족(빡빡함).* $S$ 와 $N(S)$ 가 이루는 부분그래프는 Hall 조건을 물려받으므로 귀납 가정으로 $S$ 포화 매칭 $M_1$ 을 가진다. 이제 $X \setminus S$ 와 $Y \setminus N(S)$ 가 이루는 부분그래프를 보자. $T \subseteq X \setminus S$ 에 대해 $\lvert N(S \cup T) \rvert \ge \lvert S \cup T \rvert = \lvert S \rvert + \lvert T \rvert$ 이고 $N(S \cup T) = N(S) \cup N(T)$ 이므로 $Y \setminus N(S)$ 안에서 $T$ 의 이웃은 최소 $\lvert T \rvert$ 개다. 귀납 가정으로 매칭 $M_2$ 를 얻고, $M_1 \cup M_2$ 가 $X$ 포화 매칭이다. ∎
 
 **따름정리.** 이분 그래프에서 `|X| = |Y|` 이고 모든 정점의 차수가 같은 `k`-정규 그래프라면 완전 매칭이 존재한다. (간선 세기로 Hall 조건을 확인한다. 이로부터 정규 이분 그래프의 간선 집합이 `k`개의 완전 매칭으로 분해되고, König의 간선 색칠 정리가 따라온다.)
 
@@ -99,7 +99,7 @@ $$
 
 즉 최대 매칭의 크기와 최소 정점 덮개의 크기가 같다.
 
-**증명 스케치.** $\nu \le \tau$ 는 자명하다. 매칭의 각 간선은 덮개의 서로 다른 정점을 필요로 한다. 반대 방향은 최대 매칭 $M$ 에서 덮개를 구성한다. $U \subseteq X$ 를 $M$ 에 덮이지 않은 $X$ 의 정점들이라 하고, $Z$ 를 $U$ 에서 출발하는 $M$-교대 경로로 도달 가능한 정점 전체라 하자. Berge 정리에 의해 증가 경로가 없으므로 $Z \cap Y$ 의 모든 정점은 $M$ 에 덮여 있다. 이제
+**증명 스케치.** $\nu \le \tau$ 는 자명하다. 매칭의 각 간선은 덮개의 서로 다른 정점을 필요로 한다. 반대 방향은 최대 매칭 $M$ 에서 덮개를 구성한다. $U \subseteq X$ 를 $M$ 에 덮이지 않은 $X$ 의 정점들이라 하고, $Z$ 를 $U$ 에서 출발하는 $M$ 교대 경로로 도달 가능한 정점 전체라 하자. Berge 정리에 의해 증가 경로가 없으므로 $Z \cap Y$ 의 모든 정점은 $M$ 에 덮여 있다. 이제
 
 $$
 C = (X \setminus Z) \cup (Y \cap Z)

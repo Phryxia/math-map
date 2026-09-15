@@ -99,7 +99,7 @@ $$
 \sum_i\dim H^{2i}(\mathrm{Gr}(k,n))\,q^{i}=\sum_{\lambda\subseteq k\times(n-k)}q^{|\lambda|}=\binom{n}{k}_q
 $$
 
-우변은 $q$-이항계수다. $q=1$ 을 넣으면 $\binom{n}{k}$ 로 기저의 개수가 나온다.
+우변은 $q$ 이항계수다. $q=1$ 을 넣으면 $\binom{n}{k}$ 로 기저의 개수가 나온다.
 
 ## 쌍대성과 적분
 

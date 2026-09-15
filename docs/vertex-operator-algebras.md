@@ -80,7 +80,7 @@ $\omega$ 를 빼면 그냥 **정점대수**다. Virasoro 원소가 등급과 모
 
 ## 가군과 지표
 
-$V$-가군 $M$ 은 상태-장 대응 $Y_M:V\to\operatorname{End}(M)[[z,z^{-1}]]$ 를 갖고 같은 항등식을 만족하는 공간이다. $L_0$ 의 고유값은 일반적으로 정수가 아니라 $h+\mathbb Z_{\ge0}$ 꼴이며, $h$ 를 **등각무게**라 한다.
+$V$ 가군 $M$ 은 상태-장 대응 $Y_M:V\to\operatorname{End}(M)[[z,z^{-1}]]$ 를 갖고 같은 항등식을 만족하는 공간이다. $L_0$ 의 고유값은 일반적으로 정수가 아니라 $h+\mathbb Z_{\ge0}$ 꼴이며, $h$ 를 **등각무게**라 한다.
 
 $$
 \operatorname{ch}M(\tau)=\operatorname{tr}_Mq^{L_0-c/24}=q^{h-c/24}\sum_{n\ge0}(\dim M_{h+n})q^n
@@ -181,7 +181,7 @@ $\mathbb Z/2$ 궤도체가 하는 일이 정확히 이 $24$ 를 지우는 것이
 VOA 에 두 가지 유한성 조건을 걸면 지표가 모듈러가 된다.
 
 - **유리성**: 모든 가군이 기약가군의 직합으로 완전분해된다.
-- **$C_2$-여유한**: $C_2(V)=\operatorname{span}\{a_{(-2)}b\}$ 에 대해 $\dim V/C_2(V)<\infty$.
+- **$C_2$ 여유한**: $C_2(V)=\operatorname{span}\{a_{(-2)}b\}$ 에 대해 $\dim V/C_2(V)<\infty$.
 
 Zhu 정리는 이런 $V$ 의 기약가군 $M_1,\dots,M_r$ 의 지표들이 $\mathrm{SL}_2(\mathbb Z)$ 의 작용에 닫혀 있다고 말한다.
 
