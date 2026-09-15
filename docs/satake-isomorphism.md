@@ -4,7 +4,7 @@
 
 [Hecke 작용소](hecke-operators.md)는 이중 잉여류로 정의된다. $T_p$ 는 $\mathrm{SL}_2(\mathbb Z)\begin{pmatrix}1&0\\0&p\end{pmatrix}\mathrm{SL}_2(\mathbb Z)$ 를 잘라 만든 것이고, 정의만 보면 왜 그런 것을 만드는지, 왜 서로 가환인지, 왜 고유값이 $L$ 함수의 Euler 인자가 되는지가 전혀 보이지 않는다.
 
-[아델](adeles.md) 위로 올리면 이 셋이 한꺼번에 해명된다. 자리 $p$ 를 하나 고정하고, $G=\mathrm{GL}_n(\mathbb Q_p)$, $K=\mathrm{GL}_n(\mathbb Z_p)$ 라 하자. 콤팩트 받침을 갖는 양쪽 $K$ 불변 함수들이 합성곱으로 이루는 대수
+[아델](adeles.md) 위로 올리면 이 셋이 한꺼번에 해명된다. 자리 $p$ 를 하나 고정하고, $G=\mathrm{GL}_n(\mathbb Q_p)$ 와 $K=\mathrm{GL}_n(\mathbb Z_p)$ 라 하자. 콤팩트 받침을 갖는 양쪽 $K$ 불변 함수들이 합성곱으로 이루는 대수
 
 $$
 \mathcal H(G,K)=C_c^\infty(K\backslash G/K)
@@ -22,7 +22,7 @@ $$
 이 동형이 주는 것은 두 가지다.
 
 - **가환성.** 오른쪽이 가환이므로 왼쪽도 가환이다. $T_mT_n=T_nT_m$ 이 증명 없이 따라 나온다.
-- **Satake 매개변수.** 가환 대수의 1 차원 지표는 점이다. 비분기 표현 $\pi_p$ 가 $\mathcal H(G,K)$ 에 스칼라로 작용하면, 그 스칼라들의 모임은 $(\mathbb C^\times)^n/S_n$, 곧 $\widehat G$ 의 **반단순 켤레류** $A_{\pi_p}$ 하나다. 그래서 $L$ 인자를 쌍대군의 표현으로 쓸 수 있다.
+- **Satake 매개변수.** 가환 대수의 1 차원 지표는 점이다. 비분기 표현 $\pi_p$ 가 $\mathcal H(G,K)$ 에 스칼라로 작용하면, 그 스칼라들의 모임은 $(\mathbb C^\times)^n/S_n$ 곧 $\widehat G$ 의 **반단순 켤레류** $A_{\pi_p}$ 하나다. 그래서 $L$ 인자를 쌍대군의 표현으로 쓸 수 있다.
 
 $$
 L(s,\pi_p)=\det\bigl(1-q^{-s}A_{\pi_p}\bigr)^{-1}
@@ -155,7 +155,7 @@ $$
 \mathbb C[X_*(T)]^W=\mathbb C[X^*(\widehat T)]^W=R(\widehat G)\otimes\mathbb C
 $$
 
-$G=\mathrm{GL}_n$ 이면 $X_*(T)=\mathbb Z^n$, $W=S_n$, $\widehat G=\mathrm{GL}_n(\mathbb C)$ 이므로
+$G=\mathrm{GL}_n$ 이면 $X_*(T)=\mathbb Z^n$ 과 $W=S_n$ 과 $\widehat G=\mathrm{GL}_n(\mathbb C)$ 이므로
 
 $$
 \mathcal H\bigl(\mathrm{GL}_n(F),\mathrm{GL}_n(\mathcal O)\bigr)\;\cong\;
@@ -190,7 +190,7 @@ $r$ 이 표준표현이면 표준 $L$ 인자 $\prod_i(1-\alpha_iq^{-s})^{-1}$ �
 
 ## GL_2 의 명시적 상
 
-$G=\mathrm{GL}_2(\mathbb Q_p)$, $K=\mathrm{GL}_2(\mathbb Z_p)$ 에서 기저를 $T(p^b,p^{a+b})=1_{K\,\mathrm{diag}(p^b,p^{a+b})K}$ $(a\ge0)$ 로 쓰면
+$G=\mathrm{GL}_2(\mathbb Q_p)$ 와 $K=\mathrm{GL}_2(\mathbb Z_p)$ 에서 기저를 $a\ge0$ 에 대한 $T(p^b,p^{a+b})=1_{K\,\mathrm{diag}(p^b,p^{a+b})K}$ 로 쓰면
 
 $$
 \mathcal S\bigl(T(p^b,p^{a+b})\bigr)
@@ -223,7 +223,7 @@ $$
 
 이다. $m=1$ 에서만 계수가 $p+1$ 이고 그 뒤로는 $p$ 인 것이 고전적 Hecke 관계식 $T_pT_{p^m}=T_{p^{m+1}}+p^{k-1}T_{p^{m-1}}$ 의 무게 정규화와 맞물리는 자리다.
 
-아래 코드는 이 구조상수를 격자를 직접 세어 구하고, 위의 $\mathcal S$ 가 정말 환 준동형인지 검증한다. $\mathbb Z_p^2$ 의 지표 $p^n$ 부분격자는 Hermite 꼴 $\begin{pmatrix}p^i&b\\0&p^{n-i}\end{pmatrix}$, $0\le b<p^i$ 로 전부 열거되므로 유한 계산이다.
+아래 코드는 이 구조상수를 격자를 직접 세어 구하고, 위의 $\mathcal S$ 가 정말 환 준동형인지 검증한다. $\mathbb Z_p^2$ 의 지표 $p^n$ 부분격자는 Hermite 꼴 $\begin{pmatrix}p^i&b\\0&p^{n-i}\end{pmatrix}$ 와 $0\le b<p^i$ 로 전부 열거되므로 유한 계산이다.
 
 ```python
 from fractions import Fraction
@@ -335,7 +335,7 @@ $c$ 인자는 Harish-Chandra 의 $c$ 함수의 $p$ 진 판이고, Eisenstein 급
 
 $\pi$ 가 **온도적**(tempered)이라 함은 행렬 계수가 $L^{2+\epsilon}$ 인 것이고, 비분기 표현에서는 $\lvert\alpha_i\rvert=1$ 과 동치다. 곧 $A_\pi$ 가 $\widehat G$ 의 콤팩트 형 $\widehat K$ 안에 켤레로 들어간다.
 
-$\mathrm{GL}_n$ 의 첨점 자기동형 표현이 모든 자리에서 온도적이라는 것이 **Ramanujan–Petersson 추측**이고, 일반적으로는 미해결이다. 무게 $k$ 의 정칙 첨점형식에 대해서는 Deligne 이 Weil 추측으로 증명했다. 이때 Satake 매개변수는 단위원 위에 있고 $\alpha_p\beta_p=1$ 이라 $\alpha_p=e^{i\theta_p}$, $\beta_p=e^{-i\theta_p}$ 로 쓸 수 있다. 이 각 $\theta_p$ 의 분포를 묻는 것이 [Sato–Tate](sato-tate.md) 문제다.
+$\mathrm{GL}_n$ 의 첨점 자기동형 표현이 모든 자리에서 온도적이라는 것이 **Ramanujan–Petersson 추측**이고, 일반적으로는 미해결이다. 무게 $k$ 의 정칙 첨점형식에 대해서는 Deligne 이 Weil 추측으로 증명했다. 이때 Satake 매개변수는 단위원 위에 있고 $\alpha_p\beta_p=1$ 이라 $\alpha_p=e^{i\theta_p}$ 와 $\beta_p=e^{-i\theta_p}$ 로 쓸 수 있다. 이 각 $\theta_p$ 의 분포를 묻는 것이 [Sato–Tate](sato-tate.md) 문제다.
 
 ## 국소 L 인자가 Euler 인자다
 
