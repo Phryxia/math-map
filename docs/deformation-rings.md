@@ -18,7 +18,7 @@ $$
 
 가 모든 $A$ 에서 자연스럽게 성립한다. $\bar\rho$ 의 모든 올림이 $R_{\bar\rho}$ 위의 **보편 변형** 하나에서 특수화로 나온다는 뜻이다. 표현들의 모임이 환 하나가 되고, 표현론의 질문이 가환대수의 질문으로 바뀐다.
 
-환의 모양은 코호몰로지가 정한다. 접공간은 $H^1(G,\mathrm{ad}\,\bar\rho)$, 관계식의 장애는 $H^2(G,\mathrm{ad}\,\bar\rho)$ 에 산다. [군 확대](group-extensions.md)에서 확대가 $H^2$ 로 분류되고 $H^1$ 이 자기동형을 쟀던 것과 같은 기계가, 여기서는 계수환을 $\mathbb Z/p^m$ 으로 한 층씩 올리는 데 쓰인다. 한 층 올리는 문제가 곧 작은 확대 문제이기 때문이다.
+환의 모양은 코호몰로지가 정한다. 접공간은 $H^1(G,\mathrm{ad}\,\bar\rho)$ 이고 관계식의 장애는 $H^2(G,\mathrm{ad}\,\bar\rho)$ 에 산다. [군 확대](group-extensions.md)에서 확대가 $H^2$ 로 분류되고 $H^1$ 이 자기동형을 쟀던 것과 같은 기계가, 여기서는 계수환을 $\mathbb Z/p^m$ 으로 한 층씩 올리는 데 쓰인다. 한 층 올리는 문제가 곧 작은 확대 문제이기 때문이다.
 
 # 직관
 
@@ -77,7 +77,7 @@ Schur 조건이라 부른다. 이것이 있으면 Schlessinger 의 판정이 통
 
 ## 계수환의 범주
 
-$\Lambda$ 를 잉여체 $k=\mathbb F_p$ 인 완비 이산부치환(보통 $\mathbb Z_p$)이라 하자. 범주 $\mathcal C_\Lambda$ 의 대상은 잉여체가 $k$ 인 완비 국소 Noether $\Lambda$ 대수이고, 사상은 국소 $\Lambda$ 대수 준동형이다. 유한 길이 대상만 모은 부분범주에서 함자를 정의하고 극한으로 넘긴다.
+$\Lambda$ 를 잉여체 $k=\mathbb F_p$ 인 완비 이산부치환이라 하자. 보통 $\mathbb Z_p$ 를 쓴다. 범주 $\mathcal C_\Lambda$ 의 대상은 잉여체가 $k$ 인 완비 국소 Noether $\Lambda$ 대수이고, 사상은 국소 $\Lambda$ 대수 준동형이다. 유한 길이 대상만 모은 부분범주에서 함자를 정의하고 극한으로 넘긴다.
 
 ## 변형 함자
 
@@ -89,7 +89,7 @@ $$
 
 로 둔다. 켤레를 나누지 않은 것이 **틀 붙인 변형 함자** $D^{\square}_{\bar\rho}$ 다.
 
-수론에서 $G$ 는 유한집합 $S$ 밖에서 비분기인 최대 확대의 Galois 군 $G_{\mathbb Q,S}$ 를 쓴다. 이 군이 $p$ 유한성 조건(Mazur 의 $\Phi_p$)을 만족하므로 코호몰로지가 유한 차원이고 아래 정리가 돌아간다.
+수론에서 $G$ 는 유한집합 $S$ 밖에서 비분기인 최대 확대의 Galois 군 $G_{\mathbb Q,S}$ 를 쓴다. 이 군이 Mazur 의 $\Phi_p$ 라는 $p$ 유한성 조건을 만족하므로 코호몰로지가 유한 차원이고 아래 정리가 돌아간다.
 
 ## 보편 변형환
 
@@ -164,9 +164,9 @@ $H^2(G_{\mathbb Q,S},\mathrm{ad}^0\bar\rho)=0$ 이면 변형 문제가 **장애 
 
 ## 가장 작은 변형환을 손으로 만든다
 
-$n=1$, $\bar\rho$ 는 자명한 지표라 하자. 그러면 $\mathrm{ad}\,\bar\rho$ 는 자명 계수 $\mathbb F_p$ 이고, $A$ 계수 변형은 $\rho\colon G\to 1+\mathfrak m_A$ 하나다. 켤레가 자명하므로 틀 문제도 없다. $G$ 두 개를 비교한다.
+$n=1$ 이고 $\bar\rho$ 는 자명한 지표라 하자. 그러면 $\mathrm{ad}\,\bar\rho$ 는 자명 계수 $\mathbb F_p$ 이고, $A$ 계수 변형은 $\rho\colon G\to 1+\mathfrak m_A$ 하나다. 켤레가 자명하므로 틀 문제도 없다. $G$ 두 개를 비교한다.
 
-**$G=\mathbb Z_p$** (procyclic, 생성원 $\gamma$). 변형은 $\gamma\mapsto 1+t$, $t\in\mathfrak m_A$ 를 아무렇게나 고르면 되므로
+**$G=\mathbb Z_p$ 인 경우.** procyclic 이고 생성원을 $\gamma$ 라 한다. 변형은 $t\in\mathfrak m_A$ 를 아무렇게나 골라 $\gamma\mapsto 1+t$ 로 두면 되므로
 
 $$
 R=\mathbb Z_p[[T]],\qquad \rho^{\mathrm{univ}}(\gamma)=1+T
@@ -174,7 +174,7 @@ $$
 
 이고 매끄럽다. $H^2(\mathbb Z_p,\mathbb F_p)=0$ 이라 장애가 없기 때문이다.
 
-**$G=\mathbb Z/p$**. 이번에는 $\gamma^p=1$ 이라는 관계가 있으므로 $(1+t)^p=1$ 이어야 한다.
+**$G=\mathbb Z/p$ 인 경우.** 이번에는 $\gamma^p=1$ 이라는 관계가 있으므로 $(1+t)^p=1$ 이어야 한다.
 
 $$
 R=\mathbb Z_p[[T]]\big/\bigl((1+T)^p-1\bigr)

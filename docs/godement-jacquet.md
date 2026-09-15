@@ -41,13 +41,13 @@ $$
 2. $\chi$ : 군 $\mathbb A^\times$ 의 지표. 곧 1 차원 표현.
 3. $\lvert x\rvert^s$ : 군에서 $\mathbb C^\times$ 로 가는 매개변수족.
 
-함수방정식은 $f\leftrightarrow\hat f$, $\chi\leftrightarrow\chi^{-1}$, $s\leftrightarrow1-s$ 의 대칭에서 나온다. 증명은 Poisson 합공식 한 줄이다.
+함수방정식은 $f\leftrightarrow\hat f$ 와 $\chi\leftrightarrow\chi^{-1}$ 과 $s\leftrightarrow1-s$ 의 대칭에서 나온다. 증명은 Poisson 합공식 한 줄이다.
 
 ## 지표 대신 행렬 계수
 
 $n\ge2$ 에서 $\pi$ 는 1 차원이 아니다. 그러면 $\chi(x)$ 자리에 무엇을 넣는가.
 
-표현 $\pi$ 의 **행렬 계수**를 넣는다. $v\in V_\pi$, $\tilde v\in V_{\tilde\pi}$ (반대표현)에 대해
+표현 $\pi$ 의 **행렬 계수**를 넣는다. $v\in V_\pi$ 와 반대표현의 $\tilde v\in V_{\tilde\pi}$ 에 대해
 
 $$
 \varphi(g)=\langle\pi(g)v,\tilde v\rangle
@@ -145,7 +145,7 @@ $n=1$ 에서 $\zeta$ 함수에 극점이 생기는 것은 자명한 지표의 �
 
 ## Tate 와의 대응
 
-| Tate ($\mathrm{GL}_1$) | Godement–Jacquet ($\mathrm{GL}_n$) |
+| $\mathrm{GL}_1$ 의 Tate | $\mathrm{GL}_n$ 의 Godement–Jacquet |
 |---|---|
 | 벡터공간 $\mathbb A$ | 행렬대수 $M_n(\mathbb A)$ |
 | 군 $\mathbb A^\times$ | $\mathrm{GL}_n(\mathbb A)$ |
@@ -172,7 +172,7 @@ $$
 L(s,\pi_f)=\prod_p\big(1-a_pp^{-s}+p^{k-1-2s}\big)^{-1}=\sum_{n\ge1}\frac{a_n}{n^s}
 $$
 
-이다. **오일러 곱과 Dirichlet 급수가 같다**는 이 등식이 Hecke 작용소의 곱셈성이고, 동시에 국소 인자가 $2\times2$ 행렬의 특성다항식이라는 진술이다. 아래에서 $f=\Delta$ ($k=12$)로 이것을 직접 확인한다.
+이다. **오일러 곱과 Dirichlet 급수가 같다**는 이 등식이 Hecke 작용소의 곱셈성이고, 동시에 국소 인자가 $2\times2$ 행렬의 특성다항식이라는 진술이다. 아래에서 $k=12$ 인 $f=\Delta$ 로 이것을 직접 확인한다.
 
 # 활용
 
@@ -262,7 +262,7 @@ for p in PR[:6]:
 #   13      -577738      -577738.0    1792160394037.0      1792160394037  True
 ```
 
-$1-\tau(p)X+p^{11}X^2=\det(1-X\,A_{\pi_p})$ 에서 $A_{\pi_p}$ 의 고윳값이 $\alpha_p,\beta_p$ 다. 대각합이 $\tau(p)$, 행렬식이 $p^{11}$ 이다. 이것이 Satake 매개변수이고, $\mathrm{GL}_n$ 에서는 $n\times n$ 행렬로 커진다.
+$1-\tau(p)X+p^{11}X^2=\det(1-X\,A_{\pi_p})$ 에서 $A_{\pi_p}$ 의 고윳값이 $\alpha_p,\beta_p$ 다. 대각합이 $\tau(p)$ 이고 행렬식이 $p^{11}$ 이다. 이것이 Satake 매개변수이고, $\mathrm{GL}_n$ 에서는 $n\times n$ 행렬로 커진다.
 
 ## 계수가 대칭곱의 지표다
 
@@ -288,7 +288,7 @@ for p in PR[:4]:
 
 $c_{p^m}=\sum_{k=0}^m\alpha^k\beta^{m-k}$ 다. 이것은 $\mathrm{GL}_2(\mathbb C)$ 의 $m$ 번째 **대칭곱 표현의 지표**를 $A_{\pi_p}$ 에서 평가한 값이다. 곧 $\tau(p^m)$ 이 Satake 매개변수의 대칭곱 지표다.
 
-여기서 [Sato–Tate](sato-tate.md)와의 연결이 보인다. 등분포를 보이려면 모든 대칭곱의 평균이 사라져야 했고, 그 평균을 통제하는 것이 $L(s,\mathrm{Sym}^m\pi)$ 였다. Godement–Jacquet 은 $m=1$, 곧 표준표현만 준다. 나머지가 어려운 부분으로 남는다.
+여기서 [Sato–Tate](sato-tate.md)와의 연결이 보인다. 등분포를 보이려면 모든 대칭곱의 평균이 사라져야 했고, 그 평균을 통제하는 것이 $L(s,\mathrm{Sym}^m\pi)$ 였다. Godement–Jacquet 은 $m=1$ 곧 표준표현만 준다. 나머지가 어려운 부분으로 남는다.
 
 ## 어디로 이어지는가
 
