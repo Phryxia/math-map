@@ -1,15 +1,23 @@
 {
   "version": 1,
-  "savedAt": "2026-09-15T00:59:04.038Z",
-  "nextSeq": 249,
+  "savedAt": "2026-09-15T05:01:40.394Z",
+  "nextSeq": 259,
   "items": [
     {
-      "id": "2b9ec335",
-      "title": "Gan-Gross-Prasad 추측",
-      "priority": 4,
-      "note": "whittaker-models 아래. 고전군의 중복도 1 현상, 분지 법칙과 주기, L 매개변수로 기술되는 중복도 공식",
-      "createdAt": "2026-09-13T18:11:47.369Z",
-      "seq": 106
+      "id": "aa0cb897",
+      "title": "질량 공식과 격자의 류",
+      "priority": 10,
+      "note": "siegel-weil 아래 또는 lattices 아래. Minkowski-Siegel 질량 공식, 류와 스피너 류, Niemeier 분류를 세는 데 쓰인 방식",
+      "createdAt": "2026-09-15T04:55:27.550Z",
+      "seq": 257
+    },
+    {
+      "id": "5ec3a69e",
+      "title": "Speh 표현과 잔여 스펙트럼",
+      "priority": 10,
+      "note": "arthur-parameters 아래. Moeglin-Waldspurger 의 GL_n 이산 스펙트럼 분류, 잔여 Eisenstein 급수, CAP 표현과 Saito-Kurokawa",
+      "createdAt": "2026-09-15T05:01:21.900Z",
+      "seq": 258
     },
     {
       "id": "3f2b3e4a",
@@ -42,14 +50,6 @@
       "note": "birch-swinnerton-dyer 아래. 정준 높이의 이차성, 조절자 계산, Mordell-Weil 증명의 높이 부분",
       "createdAt": "2026-09-13T19:19:39.233Z",
       "seq": 118
-    },
-    {
-      "id": "1d060dde",
-      "title": "Tunnell 정리와 합동수",
-      "priority": 4,
-      "note": "birch-swinnerton-dyer 아래. 무게 3/2 형식, Shimura 대응, 삼항이차형식 표현수로 판정",
-      "createdAt": "2026-09-13T19:19:39.349Z",
-      "seq": 119
     },
     {
       "id": "41294605",
