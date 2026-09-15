@@ -260,6 +260,7 @@ $n=1$ 의 Waldspurger 정리와 Gross–Zagier 를 합치면 타원곡선 $E/\ma
 
 - [Whittaker 모형과 중복도 1](whittaker-models.md)
 - [기본 보조정리와 대각합 공식의 안정화](fundamental-lemma.md)
+- [Vogan L 꾸러미와 순수 내부형식](vogan-packets.md)
 
 ## 더 알아보기
 

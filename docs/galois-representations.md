@@ -222,5 +222,6 @@ $|\alpha|=\sqrt5$ 도 정확히 맞는다. 곡선에 대한 Riemann 가설이며
 - [p 진 Hodge 이론과 Fontaine 주기환](p-adic-hodge-theory.md)
 - [Herbrand–Ribet 정리와 Eisenstein 합동](herbrand-ribet.md)
 - [대수적 K 이론과 Quillen–Lichtenbaum](algebraic-k-theory.md)
+- [Vogan L 꾸러미와 순수 내부형식](vogan-packets.md)
 
 #number_theory #algebraic_topology #group_theory
