@@ -4,9 +4,9 @@
 
 [Hodge 이론](hodge-theory.md)은 Riemann 계량 하나를 주고 코호몰로지류마다 조화 대표원을 얻었다. 복소 다양체에서는 구조가 하나 더 있다. 각 접공간에 $i$ 를 곱하는 연산이 있고, 그 결과 미분형식이 [정칙](holomorphic-functions.md) 방향과 반정칙 방향으로 쪼개진다.
 
-세 구조가 동시에 놓인다. 계량 $g$, 복소구조 $J$, 그리고 둘이 만드는 2-형식 $\omega$. 셋이 서로 정합적이고 $\omega$ 가 닫혀 있으면 Kähler 다양체라 한다. 조건은 한 줄 $d\omega=0$ 뿐인데 결과가 압도적이다.
+세 구조가 동시에 놓인다. 계량 $g$ 와 복소구조 $J$ 와 둘이 만드는 2-형식 $\omega$ 다. 셋이 서로 정합적이고 $\omega$ 가 닫혀 있으면 Kähler 다양체라 한다. 조건은 한 줄 $d\omega=0$ 뿐인데 결과가 압도적이다.
 
-Laplace 작용소가 세 종류($\Delta_d$, $\Delta_\partial$, $\Delta_{\bar\partial}$)로 정의되는데 Kähler 조건이 이들을 하나로 만든다. 그러면 조화형식 공간이 $(p,q)$ 성분으로 쪼개지고, 위상 불변량인 Betti 수가 복소구조를 아는 더 세밀한 수들로 분해된다. $b_1$ 이 반드시 짝수라든가, 복소 다양체가 언제 사영공간에 들어가는가 같은 질문의 답이 여기서 나온다.
+Laplace 작용소가 $\Delta_d$ 와 $\Delta_\partial$ 과 $\Delta_{\bar\partial}$ 세 종류로 정의되는데 Kähler 조건이 이들을 하나로 만든다. 그러면 조화형식 공간이 $(p,q)$ 성분으로 쪼개지고, 위상 불변량인 Betti 수가 복소구조를 아는 더 세밀한 수들로 분해된다. $b_1$ 이 반드시 짝수라든가, 복소 다양체가 언제 사영공간에 들어가는가 같은 질문의 답이 여기서 나온다.
 
 복소 사영공간의 닫힌 부분다양체는 모두 Kähler 다. 곧 모든 사영 대수다양체가 이 이론의 대상이며, 이것이 Hodge 이론이 대수기하의 기본 도구가 된 이유다.
 
@@ -14,7 +14,7 @@ Laplace 작용소가 세 종류($\Delta_d$, $\Delta_\partial$, $\Delta_{\bar\par
 
 ## 형식이 두 방향으로 쪼개진다
 
-복소좌표 $z_j=x_j+iy_j$ 에서 $dz_j=dx_j+i\,dy_j$, $d\bar z_j=dx_j-i\,dy_j$ 를 쓰면, 복소값 $k$ 형식이 $dz$ 를 $p$ 개, $d\bar z$ 를 $q$ 개 쓴 항들의 합으로 유일하게 쓰인다. 이것이 $(p,q)$ 분해이고 $p+q=k$ 다.
+복소좌표 $z_j=x_j+iy_j$ 에서 $dz_j=dx_j+i\,dy_j$ 와 $d\bar z_j=dx_j-i\,dy_j$ 를 쓰면, 복소값 $k$ 형식이 $dz$ 를 $p$ 개, $d\bar z$ 를 $q$ 개 쓴 항들의 합으로 유일하게 쓰인다. 이것이 $(p,q)$ 분해이고 $p+q=k$ 다.
 
 외미분도 따라서 쪼개진다. $d=\partial+\bar\partial$ 에서 $\partial$ 이 $p$ 를 1 올리고 $\bar\partial$ 가 $q$ 를 1 올린다. $d^2=0$ 을 전개하면 $\partial^2=\bar\partial^2=0$ 과 $\partial\bar\partial+\bar\partial\partial=0$ 이 나온다.
 
@@ -76,7 +76,7 @@ $$
 
 $d\omega=0$ 이면 Kähler 다양체라 한다. 동치인 조건이 여럿 있다.
 
-- $\nabla J=0$: Levi-Civita 접속이 복소구조를 보존한다.
+- $\nabla J=0$ 이다. 곧 Levi-Civita 접속이 복소구조를 보존한다.
 - 각 점 근처에서 계량이 유클리드 계량과 2 차까지 일치한다(정칙 정규좌표의 존재).
 - 국소적으로 $\omega=i\partial\bar\partial\varphi$ 인 실함수 $\varphi$ 가 존재한다(Kähler 퍼텐셜).
 
@@ -84,9 +84,9 @@ $d\omega=0$ 이면 Kähler 다양체라 한다. 동치인 조건이 여럿 있�
 
 ## 주요 예
 
-- $\mathbb C^n$: 표준 계량이 Kähler 다. $\omega=\frac i2\sum dz_j\wedge d\bar z_j$.
-- 복소 원환면 $\mathbb C^n/\Lambda$: 평탄한 계량이 내려온다.
-- 복소 사영공간 $\mathbb{CP}^n$: Fubini–Study 계량이 $\omega_{FS}=\frac i2\partial\bar\partial\log\|Z\|^2$ 로 주어진다.
+- $\mathbb C^n$ 에서는 표준 계량이 Kähler 이고 $\omega=\frac i2\sum dz_j\wedge d\bar z_j$ 다.
+- 복소 원환면 $\mathbb C^n/\Lambda$ 에는 평탄한 계량이 내려온다.
+- 복소 사영공간 $\mathbb{CP}^n$ 에서는 Fubini–Study 계량이 $\omega_{FS}=\frac i2\partial\bar\partial\log\|Z\|^2$ 로 주어진다.
 - 위의 것들의 복소 부분다양체: $\omega$ 의 제한이 다시 닫혀 있으므로 Kähler 다. 따라서 모든 사영 대수다양체가 Kähler 다.
 
 ## Dolbeault 코호몰로지와 Hodge 수
@@ -143,7 +143,7 @@ $$
 
 특히 $b_{n-k}=b_{n+k}$ 이고, $k\le n$ 인 범위에서 $b_{k-2}\le b_k$ 로 Betti 수가 가운데까지 단조증가한다. 위상만으로는 결코 나오지 않는 제약이며, 어떤 다양체가 사영 대수다양체가 될 수 있는지를 걸러 내는 첫 번째 검사다.
 
-증명은 $L$, $\Lambda$, 그리고 등급에서 오는 작용소가 $\mathfrak{sl}_2$ 를 이룬다는 관찰이다. 코호몰로지 전체가 $\mathfrak{sl}_2$ 의 표현이 되고, 표현론의 표준 결과가 정리를 준다.
+증명은 $L$ 과 $\Lambda$ 와 등급에서 오는 작용소가 $\mathfrak{sl}_2$ 를 이룬다는 관찰이다. 코호몰로지 전체가 $\mathfrak{sl}_2$ 의 표현이 되고, 표현론의 표준 결과가 정리를 준다.
 
 ## Hodge 다이아몬드 계산
 
@@ -203,7 +203,7 @@ $\mathbb{CP}^n$ 에서는 홀수 Betti 수가 모두 0 이고 짝수 자리에 1
 
 복소구조는 있으나 Kähler 계량이 없는 예가 여럿 있다.
 
-- Hopf 곡면 $(\mathbb C^2\setminus0)/(z\sim2z)\cong S^1\times S^3$: $b_1=1$ 이라 홀수다.
+- Hopf 곡면 $(\mathbb C^2\setminus0)/(z\sim2z)\cong S^1\times S^3$ 은 $b_1=1$ 이라 홀수다.
 - Iwasawa 다양체: $d\omega=0$ 인 계량이 없고, 위상적 코호몰로지와 Dolbeault 코호몰로지의 관계가 깨진다.
 
 이 예들이 Kähler 조건이 실질적 제약임을 보인다. 반대로 Kodaira 매장 정리는 $[\omega]$ 가 정수 코호몰로지류로 잡히면 그 다양체가 사영공간에 매장됨을 말한다. 곧 "정수 Kähler 류를 가진다" 와 "사영 대수다양체다" 가 동치다. 기하적 조건이 대수적 결론을 주는 정리다.
@@ -232,7 +232,7 @@ $c_1=0$ 인 콤팩트 Kähler 다양체에 Ricci 평탄한 Kähler 계량이 유
 
 기본군의 표현과 다양체 위의 정칙 대상을 대응시키는 이론이 Simpson 등에 의해 세워졌다. 평탄한 접속, Higgs 다발, 조화 사상이 같은 대상의 세 얼굴이라는 내용이며, 조화형식의 존재 정리가 여기서도 다리 역할을 한다.
 
-Kähler 다양체의 기본군에 강한 제약이 따라 나온다. 예를 들어 자유군 $F_n$ ($n\ge2$)은 콤팩트 Kähler 다양체의 기본군이 될 수 없다. 어떤 군이 Kähler 군인가라는 질문이 이 이론의 주요 주제다.
+Kähler 다양체의 기본군에 강한 제약이 따라 나온다. 예를 들어 자유군 $F_n$ 은 $n\ge2$ 이면 콤팩트 Kähler 다양체의 기본군이 될 수 없다. 어떤 군이 Kähler 군인가라는 질문이 이 이론의 주요 주제다.
 
 # 연관 문서
 

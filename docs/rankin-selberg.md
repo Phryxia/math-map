@@ -46,7 +46,7 @@ $$
 =\int_{\Gamma_\infty\backslash\mathbb H}F(z)\,y^s\,d\mu
 $$
 
-가 된다. 합이 영역을 넓히는 데 쓰이고 사라진다. $\Gamma_\infty$ 는 $z\mapsto z+1$ 이 생성하므로 오른쪽 영역은 그냥 띠 $0\le x<1$, $y>0$ 이고, $x$ 적분은 Fourier 계수의 직교성
+가 된다. 합이 영역을 넓히는 데 쓰이고 사라진다. $\Gamma_\infty$ 는 $z\mapsto z+1$ 이 생성하므로 오른쪽 영역은 그냥 $0\le x<1$ 이고 $y>0$ 인 띠이고, $x$ 적분은 Fourier 계수의 직교성
 
 $$
 \int_0^1e^{2\pi i(n-m)x}\,dx=\delta_{nm}
@@ -121,7 +121,7 @@ graph TD
 
 ## 고전적 적분
 
-$f\in S_k(\mathrm{SL}_2(\mathbb Z))$, $g\in S_l(\mathrm{SL}_2(\mathbb Z))$ 의 Fourier 전개를 $f=\sum a_nq^n$, $g=\sum b_nq^n$ 이라 하자. 실해석적 Eisenstein 급수는
+$f\in S_k(\mathrm{SL}_2(\mathbb Z))$ 와 $g\in S_l(\mathrm{SL}_2(\mathbb Z))$ 의 Fourier 전개를 각각 $f=\sum a_nq^n$ 과 $g=\sum b_nq^n$ 이라 하자. 실해석적 Eisenstein 급수는
 
 $$
 E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\mathrm{SL}_2(\mathbb Z)}\mathrm{Im}(\gamma z)^s
@@ -149,7 +149,7 @@ $$
 
 ## GL_n × GL_m 적분
 
-$m<n$ 이고 $\pi$, $\pi'$ 가 각각 $\mathrm{GL}_n(\mathbb A)$, $\mathrm{GL}_m(\mathbb A)$ 의 첨점 표현이라 하자. $m=n-1$ 이면
+$m<n$ 이고 $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}_n(\mathbb A)$ 와 $\mathrm{GL}_m(\mathbb A)$ 의 첨점 표현이라 하자. $m=n-1$ 이면
 
 $$
 \Psi(s,W,W')=\int_{N_m(\mathbb A)\backslash\mathrm{GL}_m(\mathbb A)}
@@ -170,7 +170,7 @@ $$
 
 ## 국소 인자와 전역 L 함수
 
-각 자리에서 $\Psi_v(s,W_v,W'_v)$ 는 $q_v^{-s}$ 의 유리함수이고, 이들이 생성하는 분수 아이디얼의 생성원으로 국소 $L$ 인자 $L(s,\pi_v\times\pi'_v)$ 를 정의한다. 비분기 자리에서는 Satake 매개변수 $(\alpha_i)$, $(\beta_j)$ 로
+각 자리에서 $\Psi_v(s,W_v,W'_v)$ 는 $q_v^{-s}$ 의 유리함수이고, 이들이 생성하는 분수 아이디얼의 생성원으로 국소 $L$ 인자 $L(s,\pi_v\times\pi'_v)$ 를 정의한다. 비분기 자리에서는 Satake 매개변수 $(\alpha_i)$ 와 $(\beta_j)$ 로
 
 $$
 L(s,\pi_v\times\pi'_v)=\prod_{i,j}\bigl(1-\alpha_i\beta_jq_v^{-s}\bigr)^{-1}
@@ -180,7 +180,7 @@ $$
 
 # 성질
 
-> **정리 (Jacquet–Piatetski-Shapiro–Shalika, 1983).** $\pi$, $\pi'$ 가 $\mathrm{GL}_n$, $\mathrm{GL}_m$ 의 첨점 자기동형 표현이면 $L(s,\pi\times\pi')$ 는 $\mathbb C$ 전체로 유리형 접속되고, 완비 $L$ 함수가
+> **정리 (Jacquet–Piatetski-Shapiro–Shalika, 1983).** $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}_n$ 과 $\mathrm{GL}_m$ 의 첨점 자기동형 표현이면 $L(s,\pi\times\pi')$ 는 $\mathbb C$ 전체로 유리형 접속되고, 완비 $L$ 함수가
 > $$
 > \Lambda(s,\pi\times\pi')=\varepsilon(s,\pi\times\pi')\,\Lambda(1-s,\tilde\pi\times\tilde\pi')
 > $$
@@ -329,7 +329,7 @@ $$
 \mathrm{Sym}^4:\mathrm{GL}_2(\mathbb C)\to\mathrm{GL}_5(\mathbb C)
 $$
 
-Kim 과 Shahidi 가 2002 년에 $\mathrm{Sym}^3$, Kim 이 $\mathrm{Sym}^4$ 의 자기동형성을 역정리로 증명했다. [Sato–Tate](sato-tate.md)의 초기 부분 결과와 Ramanujan 추측을 향한 최선의 추정 $\lvert\alpha_p\rvert\le p^{7/64}$ 가 여기서 나온다. 모든 $m$ 에 대한 $\mathrm{Sym}^m$ 은 훨씬 뒤에 Newton–Thorne 이 전혀 다른 방법(모듈러성 올리기)으로 해결했다.
+Kim 과 Shahidi 가 2002 년에 $\mathrm{Sym}^3$ 의 자기동형성을, Kim 이 $\mathrm{Sym}^4$ 의 자기동형성을 역정리로 증명했다. [Sato–Tate](sato-tate.md)의 초기 부분 결과와 Ramanujan 추측을 향한 최선의 추정 $\lvert\alpha_p\rvert\le p^{7/64}$ 가 여기서 나온다. 모든 $m$ 에 대한 $\mathrm{Sym}^m$ 은 훨씬 뒤에 Newton–Thorne 이 전혀 다른 방법(모듈러성 올리기)으로 해결했다.
 
 ## 해석적 정수론의 도구
 
@@ -345,9 +345,9 @@ $\mathrm{GL}_n\times\mathrm{GL}_m$ 의 $L$ 함수는 자기동형 형식의 해�
 - **더 일반적인 군.** $\mathrm{GL}_n$ 바깥에서는 Whittaker 모형의 유일성이 깨지기도 하고 적절한 적분을 찾는 것 자체가 연구 주제다. Bump–Friedberg, Ginzburg–Rallis–Soudry 의 적분들이 고전군의 $L$ 함수와 내림 사상을 다룬다.
 - **주기와 특수값.** 적분이 주는 것은 $L$ 함수뿐 아니라 특수값의 주기 해석이다. Deligne 추측과 Beilinson 추측이 이 값들의 초월성을 예측한다.
 
-[^1]: H. Jacquet, I. I. Piatetski-Shapiro, J. A. Shalika, *Rankin–Selberg convolutions*, Amer. J. Math. **105** (1983), 367–464. 고전적 원형은 R. A. Rankin, *Contributions to the theory of Ramanujan's function $\tau(n)$*, Proc. Cambridge Philos. Soc. **35** (1939), 351–372 와 A. Selberg, *Bemerkungen über eine Dirichletsche Reihe*, Arch. Math. Naturvid. **43** (1940). Whittaker 모형의 유일성은 J. Shalika, *The multiplicity one theorem for $\mathrm{GL}_n$*, Ann. of Math. **100** (1974). 해설로는 J. Cogdell, *$L$ functions and converse theorems for $\mathrm{GL}_n$*, IAS/Park City 강의록 (2002). 본문의 두 계산은 직접 한 것이다.
+[^1]: H. Jacquet, I. I. Piatetski-Shapiro, J. A. Shalika, *Rankin–Selberg convolutions*, Amer. J. Math. **105** (1983), 367–464. 고전적 원형은 R. A. Rankin, *Contributions to the theory of Ramanujan's function τ(n)*, Proc. Cambridge Philos. Soc. **35** (1939), 351–372 와 A. Selberg, *Bemerkungen über eine Dirichletsche Reihe*, Arch. Math. Naturvid. **43** (1940). Whittaker 모형의 유일성은 J. Shalika, *The multiplicity one theorem for GL(n)*, Ann. of Math. **100** (1974). 해설로는 J. Cogdell, *L functions and converse theorems for GL(n)*, IAS/Park City 강의록 (2002). 본문의 두 계산은 직접 한 것이다.
 
-[^2]: J. Cogdell, I. I. Piatetski-Shapiro, *Converse theorems for $\mathrm{GL}_n$*, Publ. Math. IHÉS **79** (1994), 157–214. $\mathrm{Sym}^3$, $\mathrm{Sym}^4$ 올림은 H. Kim, F. Shahidi, *Functorial products for $\mathrm{GL}_2\times\mathrm{GL}_3$*, Ann. of Math. **155** (2002) 와 H. Kim, *Functoriality for the exterior square of $\mathrm{GL}_4$*, J. Amer. Math. Soc. **16** (2003).
+[^2]: J. Cogdell, I. I. Piatetski-Shapiro, *Converse theorems for GL(n)*, Publ. Math. IHÉS **79** (1994), 157–214. $\mathrm{Sym}^3$ 과 $\mathrm{Sym}^4$ 올림은 H. Kim, F. Shahidi, *Functorial products for GL(2)×GL(3)*, Ann. of Math. **155** (2002) 와 H. Kim, *Functoriality for the exterior square of GL(4)*, J. Amer. Math. Soc. **16** (2003).
 
 # 연관 문서
 
