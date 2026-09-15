@@ -1,40 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-14T21:01:09.602Z",
-  "nextSeq": 238,
+  "savedAt": "2026-09-15T00:59:04.038Z",
+  "nextSeq": 249,
   "items": [
-    {
-      "id": "f2059eca",
-      "title": "결정점과정",
-      "priority": 5,
-      "note": "tracy-widom 아래 또는 부모. 상관함수가 핵의 행렬식, 음의 상관과 반발, sine 핵과 Airy 핵, 무작위 행렬 밖의 예(균등생성수형도, 비교차 경로)",
-      "createdAt": "2026-09-14T20:52:11.132Z",
-      "seq": 231
-    },
-    {
-      "id": "5a39ded6",
-      "title": "정확한 WKB 와 Voros 기호",
-      "priority": 5,
-      "note": "wkb-approximation, resurgence, borel-pade 아래. WKB 급수의 Borel 합, Voros 기호와 그 Stokes 자동사상, 연결 공식이 특정 자동사상으로 환원, 스펙트럼 결정 문제",
-      "createdAt": "2026-09-14T21:00:54.430Z",
-      "seq": 233
-    },
-    {
-      "id": "725ed7b7",
-      "title": "Fredholm 행렬식",
-      "priority": 5,
-      "note": "determinantal-point-process 의 부모 후보. 자취류 작용소, det(I+K) 의 정의와 수렴, Fredholm 대안정리, 수치적 Bornemann 구적. tracy-widom 과 dpp 가 둘 다 쓰는데 문서가 없다",
-      "createdAt": "2026-09-14T21:00:54.567Z",
-      "seq": 234
-    },
-    {
-      "id": "e790616e",
-      "title": "Marchenko-Pastur 법칙과 표본공분산",
-      "priority": 5,
-      "note": "wigner-semicircle 아래. 종횡비 gamma 의 역할, 받침의 끝, BBP 전이와 주성분의 유의성 판정, principal-component-analysis 와 이어진다",
-      "createdAt": "2026-09-14T21:00:54.699Z",
-      "seq": 235
-    },
     {
       "id": "2b9ec335",
       "title": "Gan-Gross-Prasad 추측",
@@ -308,6 +276,46 @@
       "seq": 237
     },
     {
+      "id": "3f7be672",
+      "title": "스펙트럼 네트워크와 Stokes 그래프",
+      "priority": 4,
+      "note": "exact-wkb 아래. Stokes 그래프의 위상 변화와 안장 연결, 클러스터 좌표의 뒤집기, BPS 상태 세기와의 대응",
+      "createdAt": "2026-09-15T00:44:50.824Z",
+      "seq": 238
+    },
+    {
+      "id": "acb0dceb",
+      "title": "ODE-IM 대응",
+      "priority": 4,
+      "note": "exact-wkb 아래. Voros 기호의 함수방정식이 Bethe 방정식과 같은 꼴, Y 계와 T 계, 무게 x^{2M} 퍼텐셜",
+      "createdAt": "2026-09-15T00:44:50.976Z",
+      "seq": 239
+    },
+    {
+      "id": "4376db6b",
+      "title": "이중우물과 instanton 계산",
+      "priority": 4,
+      "note": "exact-wkb 와 resurgence 아래. 장벽 사이클 V_gammaB 가 준위 분열을 주는 것, 섭동급수의 애매성 상쇄를 기호 항등식으로",
+      "createdAt": "2026-09-15T00:44:51.161Z",
+      "seq": 240
+    },
+    {
+      "id": "933dfc0c",
+      "title": "Schatten 아이디얼과 특이값",
+      "priority": 4,
+      "note": "fredholm-determinant 의 선수지식 후보이자 bounded-operators 아래. S_p 노름, Weyl 부등식, 자취류와 Hilbert-Schmidt 의 구별, det_p 정규화의 근거",
+      "createdAt": "2026-09-15T00:49:34.089Z",
+      "seq": 242
+    },
+    {
+      "id": "70be3f0a",
+      "title": "자유확률과 자유 합성곱",
+      "priority": 4,
+      "note": "wigner-semicircle 과 marchenko-pastur 가 둘 다 쓰는 구조인데 문서가 없다. 자유 독립성, R 변환과 S 변환, 반원이 자유 CLT 라는 것",
+      "createdAt": "2026-09-15T00:58:41.579Z",
+      "seq": 248
+    },
+    {
       "id": "c512345c",
       "title": "양자 혼돈과 고윳값 통계",
       "priority": 3,
@@ -370,6 +378,46 @@
       "note": "#machine_learning 이 9 개로 적다. concentration-inequalities 와 probabilistic-method 아래. 대칭화 논법, VC 차원과의 비교, boolean-fourier 와도 닿는다",
       "createdAt": "2026-09-14T01:18:50.295Z",
       "seq": 191
+    },
+    {
+      "id": "aaceded4",
+      "title": "클러스터 대수와 뒤집기",
+      "priority": 3,
+      "note": "DDP 공식, 스펙트럼 네트워크, 삼각분할이 모두 쓰는 구조인데 문서가 없다. 교환 관계, Laurent 현상, 유한형 분류",
+      "createdAt": "2026-09-15T00:44:51.309Z",
+      "seq": 241
+    },
+    {
+      "id": "8610ee3c",
+      "title": "제타 정규화 행렬식과 해석적 비틀림",
+      "priority": 3,
+      "note": "fredholm-determinant 아래. exp(-zeta'(0)) 의 정의, 열핵 전개, Ray-Singer 비틀림, 자취류가 아닌 대상의 행렬식",
+      "createdAt": "2026-09-15T00:49:34.214Z",
+      "seq": 243
+    },
+    {
+      "id": "9f904ab0",
+      "title": "Airy 핵의 적분 표현과 양의 준정부호성",
+      "priority": 3,
+      "note": "tracy-widom 과 fredholm-determinant 사이. int_0^inf Ai(x+t)Ai(y+t)dt 가 왜 같은 핵인지, 사영작용소로서의 해석, 고유값이 [0,1] 에 드는 이유",
+      "createdAt": "2026-09-15T00:55:11.182Z",
+      "seq": 245
+    },
+    {
+      "id": "365ca162",
+      "title": "Nystrom 법과 적분방정식의 이산화",
+      "priority": 3,
+      "note": "fredholm-determinant 의 구적이 쓰는 방법. 수렴 정리, 해석적 핵에서의 지수수렴, Galerkin 과의 비교",
+      "createdAt": "2026-09-15T00:55:11.306Z",
+      "seq": 246
+    },
+    {
+      "id": "1b7a084c",
+      "title": "축소 추정과 스펙트럼 역산",
+      "priority": 3,
+      "note": "marchenko-pastur 아래. Ledoit-Wolf 축소, 관측 스펙트럼에서 참 스펙트럼을 Stieltjes 변환으로 역산, 역행렬이 필요한 응용에서 왜 중요한지",
+      "createdAt": "2026-09-15T00:58:41.457Z",
+      "seq": 247
     }
   ]
 }
