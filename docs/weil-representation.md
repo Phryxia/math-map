@@ -225,5 +225,6 @@ Stone–von Neumann 정리는 물리에서 **양자화의 유일성** 정리로 
 ## 더 알아보기
 
 - [Siegel–Weil 공식과 이차형식의 표현수](siegel-weil.md)
+- [Shimura 대응과 반정수 무게 형식](shimura-correspondence.md)
 
 #number_theory #group_theory #complex_analysis

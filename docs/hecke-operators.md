@@ -299,5 +299,6 @@ $a_{11}=1$ 도 정리와 맞는다. $11\,\|\,11$ 이므로 $a_{11}=\pm11^{k/2-1}
 - [Satake 동형과 비분기 Hecke 대수](satake-isomorphism.md)
 - [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
 - [모듈러 기호](modular-symbols.md)
+- [Shimura 대응과 반정수 무게 형식](shimura-correspondence.md)
 
 #number_theory #complex_analysis #linear_algebra
