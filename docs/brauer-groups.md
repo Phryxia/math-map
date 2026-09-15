@@ -277,5 +277,6 @@ for a, b in [(-1, -1), (2, 3), (-1, 3), (5, 7), (-6, -11)]:
 ## 더 알아보기
 
 - [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
+- [Deuring 대응과 사원수 알고리즘](deuring-correspondence.md)
 
 #number_theory #ring_theory #algebra

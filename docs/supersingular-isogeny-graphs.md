@@ -252,6 +252,6 @@ SIDH 의 붕괴가 남긴 것은 이 분야가 아직 젊고, 무엇을 공개�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Deuring 대응과 사원수 알고리즘](deuring-correspondence.md)
 
 #number_theory #cryptography #graph_theory #computation
