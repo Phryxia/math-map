@@ -235,6 +235,6 @@ $n=2,k=3$ 행이 더 흥미롭다. 분할 $(2,1)$ 에서 $f^{(2,1)}=2$ 이므로
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Brauer 대수와 직교군 쌍대성](brauer-algebras.md)
 
 #algebra #group_theory #combinatorics #linear_algebra
