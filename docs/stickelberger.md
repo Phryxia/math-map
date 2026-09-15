@@ -102,7 +102,7 @@ flowchart TD
 
 ## Stickelberger 원소와 아이디얼
 
-$K=\mathbb Q(\mu_m)$, $G=\mathrm{Gal}(K/\mathbb Q)\cong(\mathbb Z/m)^{\times}$, $\sigma_a(\zeta_m)=\zeta_m^{a}$ 라 하자.
+$K=\mathbb Q(\mu_m)$ 과 $G=\mathrm{Gal}(K/\mathbb Q)\cong(\mathbb Z/m)^{\times}$ 를 두고 $\sigma_a(\zeta_m)=\zeta_m^{a}$ 라 하자.
 
 $$
 \theta_m=\sum_{a\in(\mathbb Z/m)^{\times}}\Big\{\frac{a}{m}\Big\}\sigma_a^{-1}\in\mathbb Q[G],
@@ -120,7 +120,7 @@ $$
 \big(g(\chi)\big)=\mathfrak P^{\,(p-1)\theta}
 $$
 
-꼴로 쓸 수 있고, 지수에 나타나는 유리수들이 위의 $\{a/m\}$ 이다. 소수체가 아닌 $\mathbb F_q$, $q=p^{f}$ 로 가면 지수가 $k$ 의 $p$ 진 자릿수의 합 $s_p(k)$ 로 대체된다.
+꼴로 쓸 수 있고, 지수에 나타나는 유리수들이 위의 $\{a/m\}$ 이다. 소수체가 아닌 $q=p^{f}$ 의 $\mathbb F_q$ 로 가면 지수가 $k$ 의 $p$ 진 자릿수의 합 $s_p(k)$ 로 대체된다.
 
 ## Stickelberger 의 정리
 
@@ -167,8 +167,8 @@ $h^{-}$ 은 상대류수 $h/h^{+}$ 다. 이 공식이 [Iwasawa 주추측](iwasaw
 
 | 쪽 | 대상 | 지표 공식 | $L$ 값 |
 |---|---|---|---|
-| 홀수 ($-$) | Stickelberger 아이디얼 | $[\mathbb Z[G]^{-}:I^{-}]=h^{-}$ | $L(0,\chi)$, $\chi$ 홀 |
-| 짝수 ($+$) | 순환체 단수 | $[E:C]=h^{+}$ | $L'(0,\chi)$, $\chi$ 짝 |
+| 홀수 ($-$) | Stickelberger 아이디얼 | $[\mathbb Z[G]^{-}:I^{-}]=h^{-}$ | $\chi$ 가 홀일 때의 $L(0,\chi)$ |
+| 짝수 ($+$) | 순환체 단수 | $[E:C]=h^{+}$ | $\chi$ 가 짝일 때의 $L'(0,\chi)$ |
 
 $\theta$ 가 홀수 쪽만 보는 이유와 단수가 짝수 쪽만 보는 이유가 같은 뿌리(복소켤레의 작용)에서 나온다.
 
@@ -204,7 +204,7 @@ $$
 
 ## 정칙소수 판정
 
-Kummer 의 기준 "$p\nmid B_2B_4\cdots B_{p-3}$ 이면 $p\nmid h$" 의 홀수 쪽 절반이 Herbrand 방향에서 바로 나온다. 짝수 쪽은 Vandiver 추측이 필요해 아직 일반적으로 증명되지 않았고, 대신 대규모 수치 검증이 이루어져 있다.
+Kummer 의 기준, 곧 $p\nmid B_2B_4\cdots B_{p-3}$ 이면 $p\nmid h$ 라는 것의 홀수 쪽 절반이 Herbrand 방향에서 바로 나온다. 짝수 쪽은 Vandiver 추측이 필요해 아직 일반적으로 증명되지 않았고, 대신 대규모 수치 검증이 이루어져 있다.
 
 ## Jacobi 합과 곡선의 점 개수
 
