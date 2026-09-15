@@ -137,22 +137,22 @@ $\ell^2-1$ 개의 비자명 $\ell$ 등분점이 $\pm$ 로 짝지어져 $x$ 좌�
 
 ## 모듈러 다항식
 
-$\Phi_\ell(X,Y)\in\mathbb Z[X,Y]$ 는 $X_0(\ell)$ 의 평면 모델을 주는 다항식으로, $j(\tau)$ 와 $j(\ell\tau)$ 가 만족하는 대수관계다. $X$, $Y$ 각각에 대해 차수가 $\ell+1$ 이다.
+$\Phi_\ell(X,Y)\in\mathbb Z[X,Y]$ 는 $X_0(\ell)$ 의 평면 모델을 주는 다항식으로, $j(\tau)$ 와 $j(\ell\tau)$ 가 만족하는 대수관계다. $X$ 와 $Y$ 각각에 대해 차수가 $\ell+1$ 이다.
 
-> $\Phi_\ell(j_1,j_2)=0\iff$ $j$ 불변량이 $j_1$, $j_2$ 인 두 타원곡선 사이에 차수 $\ell$ 의 순환 동종사상이 있다.
+> $\Phi_\ell(j_1,j_2)=0$ 인 것은 $j$ 불변량이 $j_1,j_2$ 인 두 타원곡선 사이에 차수 $\ell$ 의 순환 동종사상이 있다는 것과 동치다.
 
-$\mathbb F_p$ 에서 $\Phi_\ell(j(E),Y)$ 의 근의 개수가 $0$, $1$, $2$, $\ell+1$ 중 하나이고, 그 개수가 $\varphi$ 의 $E[\ell]$ 위 작용의 꼴을 분류한다. 근이 있으면 Elkies 소수다.
+$\mathbb F_p$ 에서 $\Phi_\ell(j(E),Y)$ 의 근의 개수가 $0,1,2,\ell+1$ 중 하나이고, 그 개수가 $\varphi$ 의 $E[\ell]$ 위 작용의 꼴을 분류한다. 근이 있으면 Elkies 소수다.
 
 ## 알고리즘
 
-1. $\prod_{\ell\in S}\ell>4\sqrt p$ 가 되도록 작은 소수 집합 $S$ 를 잡는다($p\notin S$).
+1. $\prod_{\ell\in S}\ell>4\sqrt p$ 가 되도록 작은 소수 집합 $S$ 를 잡는다. 이때 $p\notin S$ 다.
 2. 각 $\ell\in S$ 에서 $t_\ell=a_p\bmod\ell$ 을 구한다.
    - **Schoof.** $R=\mathbb F_p[x,y]/(\psi_\ell,y^2-f)$ 에서 $(x^{p^2},y^{p^2})+p(x,y)=t(x^p,y^p)$ 를 $t$ 마다 시험한다.
    - **Elkies.** $\Phi_\ell(j(E),Y)$ 에 근이 있으면 차수 $(\ell-1)/2$ 의 인수 $g_\ell$ 을 만들고, $\mathbb F_p[x]/(g_\ell)$ 에서 고윳값 $\lambda$ 를 찾아 $t_\ell\equiv\lambda+p/\lambda$ 로 얻는다.
    - **Atkin.** 근이 없으면 $\ell$ 차 확대에서의 위수 정보로 $t_\ell$ 의 후보 집합을 얻고, 마지막에 baby-step giant-step 으로 조합을 고른다.
 3. CRT 로 $a_p\bmod\prod\ell$ 을 얻고 Hasse 한계로 정수를 확정한다.
 
-Schoof 원본은 $\tilde O(\log^5p)$, Elkies–Atkin 개선으로 $\tilde O(\log^4p)$ 다.
+Schoof 원본은 $\tilde O(\log^5p)$ 이고 Elkies–Atkin 개선으로 $\tilde O(\log^4p)$ 다.
 
 # 성질
 
@@ -161,7 +161,7 @@ Schoof 원본은 $\tilde O(\log^5p)$, Elkies–Atkin 개선으로 $\tilde O(\log
 > $\ell\ne p$ 인 소수에 대해 $\varphi$ 는 $E[\ell]\cong(\mathbb Z/\ell)^2$ 위의 $\mathbb F_\ell$ 선형사상이고
 > $$\mathrm{tr}\equiv a_p\pmod\ell,\qquad\det\equiv p\pmod\ell$$
 
-$\ell=p$ 를 뺀 이유는 $E[p]$ 가 $(\mathbb Z/p)^2$ 가 아니기 때문이다. 보통 곡선이면 $\mathbb Z/p$, 초특이면 자명군이다. 이 퇴화가 [Newton 다각형](newton-polygon.md)에서 본 보통/초특이 구분의 다른 얼굴이다.
+$\ell=p$ 를 뺀 이유는 $E[p]$ 가 $(\mathbb Z/p)^2$ 가 아니기 때문이다. 보통 곡선이면 $\mathbb Z/p$ 이고 초특이면 자명군이다. 이 퇴화가 [Newton 다각형](newton-polygon.md)에서 본 보통/초특이 구분의 다른 얼굴이다.
 
 ## 필요한 소수의 개수
 
@@ -180,7 +180,7 @@ $$
 | 정보를 모으는 축 | 여러 소수 $\ell$ 의 잉여 | 하나의 소수 $p$ 의 정밀도 |
 | 쓰는 코호몰로지 | $\ell$ 진 (등분점) | $p$ 진 (Monsky–Washnitzer) |
 | 비용 | $\log p$ 의 다항식 | $p$ 에 선형 |
-| 잘하는 영역 | 큰 $p$, 종수 1 | 작은 $p$, 큰 확대, 임의 종수 |
+| 잘하는 영역 | 종수 1 과 큰 $p$ | 임의 종수와 작은 $p$ 와 큰 확대 |
 | 확정하는 근거 | CRT + Hasse 한계 | $p$ 진 정밀도 + Weil 한계 |
 
 마지막 줄이 같은 논법의 두 판본이다. 답이 정수이고 크기를 안다면, 충분한 잉여 정보가 답을 확정한다. 어디서 잉여를 얻느냐만 다르다.
@@ -286,9 +286,9 @@ for l in [2, 3, 7]:
 #   7   —  n<=4 에서 E[l] 이 모두 정의되지 않는다
 ```
 
-$\ell=2$ 에서 행렬식이 $1\cdot0-1\cdot1=-1\equiv1$, $\ell=3$ 에서 $2\cdot1-0=2$ 다. 각각 $p=5\bmod2=1$, $5\bmod3=2$ 와 맞는다. $\det\equiv p$ 도 성립한다.
+$\ell=2$ 에서 행렬식이 $1\cdot0-1\cdot1=-1\equiv1$ 이고 $\ell=3$ 에서 $2\cdot1-0=2$ 다. 각각 $p=5\bmod2=1$ 과 $5\bmod3=2$ 에 맞는다. $\det\equiv p$ 도 성립한다.
 
-$\ell=7$ 은 실패했다. $E[7]$ 이 $\mathbb F_{5^n}$ ($n\le4$) 안에 다 들어오지 않기 때문이다. 이것이 바로 Schoof 가 등분점을 **직접 구하지 않는** 이유다. 등분점의 정의체는 커질 수 있지만, 나눗셈 다항식의 몫환에서 형식적으로 계산하면 그 체로 올라갈 필요가 없다.
+$\ell=7$ 은 실패했다. $E[7]$ 이 $n\le4$ 인 $\mathbb F_{5^n}$ 안에 다 들어오지 않기 때문이다. 이것이 바로 Schoof 가 등분점을 **직접 구하지 않는** 이유다. 등분점의 정의체는 커질 수 있지만, 나눗셈 다항식의 몫환에서 형식적으로 계산하면 그 체로 올라갈 필요가 없다.
 
 ## CRT 가 언제 끝나는가
 
