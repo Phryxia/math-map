@@ -59,7 +59,7 @@ $\lambda$ 가 지배적이 아닐 때 합이 통째로 상쇄되어 0 이 되는
 
 ## 설정
 
-$F$ 를 비아르키메데스 국소체, $\mathcal O$ 를 정수환, $\varpi$ 를 소원, $q=|\mathcal O/\varpi|$ 라 하자. $G=\mathrm{GL}_n(F)$, $K=\mathrm{GL}_n(\mathcal O)$, $B=TN$ 을 Borel 부분군이라 한다.
+$F$ 를 비아르키메데스 국소체, $\mathcal O$ 를 정수환, $\varpi$ 를 소원, $q=|\mathcal O/\varpi|$ 라 하자. $G=\mathrm{GL}_n(F)$ 와 $K=\mathrm{GL}_n(\mathcal O)$ 를 두고 $B=TN$ 을 Borel 부분군이라 한다.
 
 $\pi$ 를 비분기 기약 허용가능 표현이라 하고, 그 Satake 매개변수를 $A_\pi=\mathrm{diag}(\alpha_1,\dots,\alpha_n)$ 이라 한다. $\psi$ 를 $\mathcal O$ 에서 자명하고 $\varpi^{-1}\mathcal O$ 에서 자명하지 않은 가법 지표로 두고(등급 0), $\psi_N$ 을 그로부터 만든 비퇴화 지표라 하자.
 
@@ -84,7 +84,7 @@ $$
 
 $s_\lambda$ 는 Schur 다항식이고, $\lambda_n<0$ 이어도 무방하다($\det$ 로 나누는 정의가 Laurent 다항식을 준다).
 
-$n=2$, $\lambda=(m,0)$ 이면 $\delta_B^{1/2}=q^{-m/2}$ 이고
+$n=2$ 이고 $\lambda=(m,0)$ 이면 $\delta_B^{1/2}=q^{-m/2}$ 이고
 
 $$
 W^\circ\begin{pmatrix}\varpi^m&\\&1\end{pmatrix}=q^{-m/2}\,\frac{\alpha^{m+1}-\beta^{m+1}}{\alpha-\beta}
@@ -108,7 +108,7 @@ $$
 \sum_\lambda s_\lambda(x)s_\lambda(y)=\prod_{i,j}\frac1{1-x_iy_j}
 $$
 
-$x_i=\alpha_it$, $y_j=\beta_j$ 로 놓으면 왼쪽이 위의 합이고 오른쪽이
+$x_i=\alpha_it$ 와 $y_j=\beta_j$ 로 놓으면 왼쪽이 위의 합이고 오른쪽이
 
 $$
 \prod_{i,j}\frac1{1-\alpha_i\beta_jq^{-s}}=\det\bigl(1-(A_\pi\otimes A_{\pi'})q^{-s}\bigr)^{-1}=L(s,\pi\times\pi')
@@ -180,7 +180,7 @@ for n in [2, 3]:
 # n=3  t=0.3  |lam|<=20:  Whittaker 합 = +0.824263257-0.172873255i   L 인자 = +0.824263257-0.172873255i   차이 1.2e-12
 ```
 
-두 계산이 쓰는 자료가 완전히 다르다. 왼쪽은 **분할 하나하나에 대한 행렬식 두 개**이고, 오른쪽은 **$n^2$ 개의 일차 인자의 곱**이다. $n=3$, $N=20$ 이면 왼쪽은 분할 수백 개의 합이고 오른쪽은 인자 아홉 개의 곱인데, 소수점 열다섯 자리까지 같은 수가 나온다.
+두 계산이 쓰는 자료가 완전히 다르다. 왼쪽은 **분할 하나하나에 대한 행렬식 두 개**이고, 오른쪽은 **$n^2$ 개의 일차 인자의 곱**이다. $n=3$ 이고 $N=20$ 이면 왼쪽은 분할 수백 개의 합이고 오른쪽은 인자 아홉 개의 곱인데, 소수점 열다섯 자리까지 같은 수가 나온다.
 
 수렴 속도도 읽을 것이 있다. $t$ 가 작을수록, 곧 $\mathrm{Re}(s)$ 가 클수록 빨리 수렴한다. $t=0.1$ 에서는 $|\lambda|\le12$ 로 이미 기계정밀도에 닿고, $t=0.3$ 에서는 $|\lambda|\le20$ 이 필요하다. 이것이 Rankin–Selberg 적분이 $\mathrm{Re}(s)$ 가 클 때만 수렴하고 나머지 영역은 해석적 접속으로 얻어야 하는 이유의 산술적 그림자다.
 
@@ -216,7 +216,7 @@ $$
 
 Langlands 강령의 적분 표현들은 거의 전부 이 공식을 거친다. 국소 적분을 세우고, 비분기 자리에서 값을 계산하고, 그 결과가 예상한 $L$ 인자인지 확인하는 것이 표준 절차이기 때문이다. 확인이 되면 나머지 유한개의 분기 자리는 따로 다루면 되고, 전역 $L$ 함수의 해석적 성질이 적분에서 나온다.
 
-- Rankin–Selberg $L$ 함수 $L(s,\pi\times\pi')$: 위의 Cauchy 항등식.
+- Rankin–Selberg $L$ 함수 $L(s,\pi\times\pi')$ 는 위의 Cauchy 항등식에서 나온다.
 - [Godement–Jacquet 적분](godement-jacquet.md)의 표준 $L$ 함수: 같은 계산의 더 단순한 판.
 - 외부 제곱, 대칭 제곱 $L$ 함수: 대응하는 대칭함수 항등식(Littlewood 항등식)이 나온다.
 

@@ -70,7 +70,7 @@ $$
 Z_X(\tau,z)=\operatorname{tr}_{\mathcal H_{RR}}\left((-1)^Fy^{J_0}q^{L_0-c/24}\bar q^{\bar L_0-c/24}\right),\qquad q=e^{2\pi i\tau},\ y=e^{2\pi iz}
 $$
 
-우변은 물리적 표현이지만 결과는 순수하게 위상적이고, $X$ 의 변형에 불변이다. K3 곡면에 대해 이것은 무게 $0$, 지표 $1$ 의 약한 Jacobi 형식이고 그런 형식의 공간이 1 차원이라 정규화 하나로 결정된다.
+우변은 물리적 표현이지만 결과는 순수하게 위상적이고, $X$ 의 변형에 불변이다. K3 곡면에 대해 이것은 무게 $0$ 과 지표 $1$ 의 약한 Jacobi 형식이고 그런 형식의 공간이 1 차원이라 정규화 하나로 결정된다.
 
 $$
 Z_{K3}(\tau,z)=8\left[\left(\frac{\theta_2(\tau,z)}{\theta_2(\tau,0)}\right)^2+\left(\frac{\theta_3(\tau,z)}{\theta_3(\tau,0)}\right)^2+\left(\frac{\theta_4(\tau,z)}{\theta_4(\tau,0)}\right)^2\right]
@@ -94,7 +94,7 @@ $$
 
 > **Mathieu 달빛 관찰 (EOT 2010).** $H$ 의 계수가 $M_{24}$ 의 기약표현 차원의 음이 아닌 정수 조합이고, 더 나아가 각 $g\in M_{24}$ 마다 적절한 mock 모듈러 형식 $H_g$ 가 있어 $H_e=H$ 이고 계수가 $g$ 에서의 지표값이 된다.
 
-$H$ 는 무게 $1/2$, 지표 2 의 mock 모듈러 형식이고 shadow 는 $24\,\theta(\tau)$ 꼴의 무게 $3/2$ 단항 theta 급수다.
+$H$ 는 무게 $1/2$ 와 지표 2 의 mock 모듈러 형식이고 shadow 는 $24\,\theta(\tau)$ 꼴의 무게 $3/2$ 단항 theta 급수다.
 
 ## Umbral moonshine 의 일반형
 
@@ -104,17 +104,17 @@ $$
 G^X=\operatorname{Aut}(N^X)/W^X
 $$
 
-를 **umbral 군**이라 한다. $m=h(X)$ 를 $X$ 의 공통 Coxeter 수라 할 때, 각 $g\in G^X$ 에 대응하는 무게 $1/2$, 지표 $m$ 의 벡터값 mock 모듈러 형식 $H^X_g=(H^X_{g,r})_{r\bmod 2m}$ 이 정해지고 그 shadow 는 $X$ 의 근계 theta 급수에 $g$ 의 작용을 얹은 것이다.
+를 **umbral 군**이라 한다. $m=h(X)$ 를 $X$ 의 공통 Coxeter 수라 할 때, 각 $g\in G^X$ 에 대응하는 무게 $1/2$ 와 지표 $m$ 의 벡터값 mock 모듈러 형식 $H^X_g=(H^X_{g,r})_{r\bmod 2m}$ 이 정해지고 그 shadow 는 $X$ 의 근계 theta 급수에 $g$ 의 작용을 얹은 것이다.
 
 > **Umbral moonshine 추측 (CDH 2012).** 각 $X$ 마다 무한차원 등급 $G^X$ 가군 $K^X$ 가 있어, 그 등급 지표의 생성함수가 정확히 $H^X_g$ 다.
 
-$X=A_1^{24}$ 이면 $m=2$, $G^X=M_{24}$ 이고 앞의 Mathieu 달빛이 된다.
+$X=A_1^{24}$ 이면 $m=2$ 이고 $G^X=M_{24}$ 이며 앞의 Mathieu 달빛이 된다.
 
 # 성질
 
 ## 23 개를 직접 세기
 
-Niemeier 근계가 만족하는 두 조건, 곧 **랭크 합이 24** 이고 **모든 기약 성분의 Coxeter 수가 같다**는 것만으로 후보를 전부 열거한다. $A_n$ 의 Coxeter 수는 $n+1$, $D_n$ 은 $2n-2$, $E_6,E_7,E_8$ 은 각각 $12,18,30$ 이다.
+Niemeier 근계가 만족하는 두 조건, 곧 **랭크 합이 24** 이고 **모든 기약 성분의 Coxeter 수가 같다**는 것만으로 후보를 전부 열거한다. $A_n$ 의 Coxeter 수는 $n+1$ 이고, $D_n$ 은 $2n-2$ 이며, $E_6,E_7,E_8$ 은 각각 $12,18,30$ 이다.
 
 ```python
 def components(h):
@@ -208,7 +208,7 @@ Ramanujan 의 mock theta 함수는 오랫동안 고립된 호기심이었다. Zw
 
 ## 산재군을 보는 새로운 창
 
-괴물 달빛이 끝났을 때 남은 질문은 "다른 산재군에도 비슷한 것이 있는가" 였다. umbral moonshine 은 $M_{24}$, $M_{12}$ 를 포함한 여러 군에 대해 그렇다고 답했고, 이후 Conway 군 $\mathrm{Co}_0$ 에 대한 달빛, Thompson 군 달빛, $O'Nan$ 군 달빛이 이어졌다. 마지막 것은 특히 흥미로운데, $O'Nan$ 달빛의 계수가 [타원곡선](elliptic-curves.md)의 계급수와 Selmer 군 정보를 담고 있어 산재군이 산술적 대상과 연결된다.
+괴물 달빛이 끝났을 때 남은 질문은 "다른 산재군에도 비슷한 것이 있는가" 였다. umbral moonshine 은 $M_{24}$ 와 $M_{12}$ 를 포함한 여러 군에 대해 그렇다고 답했고, 이후 Conway 군 $\mathrm{Co}_0$ 에 대한 달빛, Thompson 군 달빛, $O'Nan$ 군 달빛이 이어졌다. 마지막 것은 특히 흥미로운데, $O'Nan$ 달빛의 계수가 [타원곡선](elliptic-curves.md)의 계급수와 Selmer 군 정보를 담고 있어 산재군이 산술적 대상과 연결된다.
 
 [유한 단순군 분류](finite-simple-groups.md)가 26 개의 산재군을 예외로 남긴 뒤, 그 예외들이 왜 존재하는지는 여전히 설명되지 않았다. 달빛 현상들은 그 설명이 군론 바깥, 모듈러 형식과 등각장론 쪽에 있으리라는 가장 강한 증거다.
 

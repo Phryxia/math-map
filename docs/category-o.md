@@ -4,7 +4,7 @@
 
 [Lie 대수](lie-algebras.md)의 유한차원 표현은 완전가약이라 분류가 최고무게 하나로 끝난다. 그러나 무한차원 표현까지 보면 이야기가 달라진다. 아무 제한 없는 $\mathfrak g$ 가군의 범주는 손댈 수 없을 만큼 거칠다.
 
-Bernstein–Gelfand–Gelfand 는 1976 년에 그 중간 지대를 잘라냈다.[^1] **범주 $\mathcal O$** 는 다음 셋을 요구한다. Cartan 부분대수에 대해 무게 분해가 되고, 무게 공간이 유한차원이고, Borel 부분대수의 작용이 국소적으로 유한할 것. 이 세 조건이 범주를 다루기 좋게 만든다.
+Bernstein–Gelfand–Gelfand 는 1976 년에 그 중간 지대를 잘라냈다.[^1] 범주 $\mathcal O$ 는 다음 셋을 요구한다. Cartan 부분대수에 대해 무게 분해가 되고, 무게 공간이 유한차원이고, Borel 부분대수의 작용이 국소적으로 유한할 것. 이 세 조건이 범주를 다루기 좋게 만든다.
 
 - 대상의 길이가 유한하므로 Jordan–Hölder 중복도를 말할 수 있다.
 - 단순 대상 $L(\lambda)$ 가 최고무게 $\lambda$ 로 남김없이 분류된다.
@@ -63,8 +63,8 @@ flowchart TD
 가장 작은 경우가 구조를 다 보여 준다. $\lambda=0$ 의 블록에는 무게가 둘 있다. $e\cdot0=0$ 과 $s\cdot0=-2$ 다.
 
 - $M(0)$ 은 길이 $2$ 이고 $L(0)$ (자명한 1 차원 가군)과 $L(-2)$ 를 조성인자로 갖는다.
-- $M(-2)$ 는 이미 단순하다. $M(-2)=L(-2)$.
-- $P(0)=M(0)$ 이다. Verma 여과 길이 $1$.
+- $M(-2)$ 는 이미 단순하다. 곧 $M(-2)=L(-2)$ 다.
+- $P(0)=M(0)$ 이다. Verma 여과 길이는 $1$ 이다.
 - $P(-2)$ 는 길이 $2$ 의 Verma 여과를 갖는다. $M(-2)$ 와 $M(0)$ 이 한 번씩 들어가고, 조성인자로는 $L(-2)$ 가 두 번, $L(0)$ 이 한 번 나온다.
 
 여기서 상반성을 눈으로 확인할 수 있다. $\bigl(P(-2):M(0)\bigr)=1$ 이고 $\bigl[M(0):L(-2)\bigr]=1$ 이다. 두 수가 같다.
@@ -237,11 +237,11 @@ $A_3$ 부터는 이 표를 Bruhat 순서만으로 채울 수 없다. 어떤 자�
 - **기하적 표현론의 시험장.** 국소화 정리, 교차 코호몰로지, Koszul 쌍대성이 모두 이 범주에서 먼저 확인되고 다른 곳으로 옮겨진다.
 - **다른 범주의 본보기.** 최고무게 범주라는 개념 자체가 $\mathcal O$ 를 추상화한 것이고, 대수군의 유리 표현이나 양자군의 표현이 같은 틀로 다루어진다.
 
-[^1]: I. N. Bernstein, I. M. Gelfand, S. I. Gelfand, *A certain category of* $\mathfrak g$-*modules*, Funkcional. Anal. i Priložen. **10** (1976), 1–8. 범주의 정의, 사영 대상의 존재, 상반성.
+[^1]: I. N. Bernstein, I. M. Gelfand, S. I. Gelfand, *A certain category of g-modules*, Funkcional. Anal. i Priložen. **10** (1976), 1–8. 범주의 정의, 사영 대상의 존재, 상반성.
 
-[^2]: J. E. Humphreys, *Representations of Semisimple Lie Algebras in the BGG Category* $\mathcal O$, GSM 94, AMS (2008). 이 문서의 정의와 정리 진술은 이 책의 1–8 장을 따른다.
+[^2]: J. E. Humphreys, *Representations of Semisimple Lie Algebras in the BGG Category O*, GSM 94, AMS (2008). 이 문서의 정의와 정리 진술은 이 책의 1–8 장을 따른다.
 
-[^3]: A. Beilinson, J. Bernstein, *Localisation de* $\mathfrak g$-*modules*, C. R. Acad. Sci. Paris **292** (1981), 15–18; J.-L. Brylinski, M. Kashiwara, *Kazhdan–Lusztig conjecture and holonomic systems*, Invent. Math. **64** (1981), 387–410. KL 추측의 증명.
+[^3]: A. Beilinson, J. Bernstein, *Localisation de g-modules*, C. R. Acad. Sci. Paris **292** (1981), 15–18; J.-L. Brylinski, M. Kashiwara, *Kazhdan–Lusztig conjecture and holonomic systems*, Invent. Math. **64** (1981), 387–410. KL 추측의 증명.
 
 # 연관 문서
 
