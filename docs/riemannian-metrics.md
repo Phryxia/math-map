@@ -272,5 +272,6 @@ print(max(abs(math.sqrt(sum(c * c for c in p)) - 1) for p in path))  # 약 2e-16
 - [Gauss–Bonnet 정리](gauss-bonnet.md)
 - [Hodge 이론과 조화형식](hodge-theory.md)
 - [Selberg 대각합 공식](selberg-trace-formula.md)
+- [쌍곡 3 다양체와 Mostow 강직성](hyperbolic-3-manifolds.md)
 
 #differential_geometry

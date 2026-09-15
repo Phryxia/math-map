@@ -162,5 +162,6 @@ $\log z$ 나 $\sqrt z$ 처럼 여러 값을 가지는 함수는 정의역을 덮
 ## 더 알아보기
 
 - [Lie 군과 지수사상](lie-groups.md)
+- [쌍곡 3 다양체와 Mostow 강직성](hyperbolic-3-manifolds.md)
 
 #algebraic_topology #topology #group_theory
