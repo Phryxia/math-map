@@ -46,7 +46,7 @@ $H^2$ 의 영원소가 **분할 확대**, 곧 반직접곱 $G=A\rtimes Q$ 다. �
 
 ## 같은 조각, 다른 군
 
-$\mathbb Z/4$ 에서 $A=\{0,2\}\cong\mathbb Z/2$ 를 잡으면 몫이 $\mathbb Z/2$ 다. 대표원으로 $s(0)=0$, $s(1)=1$ 을 고르면
+$\mathbb Z/4$ 에서 $A=\{0,2\}\cong\mathbb Z/2$ 를 잡으면 몫이 $\mathbb Z/2$ 다. 대표원으로 $s(0)=0$ 과 $s(1)=1$ 을 고르면
 
 $$
 s(1)+s(1)=2=f(1,1)+s(0)
@@ -58,7 +58,7 @@ $H^2(\mathbb Z/2,\mathbb Z/2)$ 의 원소가 두 개이고, 그 둘이 정확히
 
 ## Jordan–Hölder 는 세분에서 나온다
 
-합성열의 유일성은 Zassenhaus 의 **나비 보조정리**에서 나온다. 두 부분군 쌍 $(A\triangleleft A^*)$, $(B\triangleleft B^*)$ 에 대해
+합성열의 유일성은 Zassenhaus 의 **나비 보조정리**에서 나온다. 두 부분군 쌍 $(A\triangleleft A^*)$ 와 $(B\triangleleft B^*)$ 에 대해
 
 $$
 \frac{A(A^*\cap B^*)}{A(A^*\cap B)}\ \cong\ \frac{B(A^*\cap B^*)}{B(A\cap B^*)}
@@ -101,7 +101,7 @@ $$
 
 | 차수 | 뜻 |
 |---|---|
-| $H^0(Q,A)$ | $A^Q$, 곧 불변원소 |
+| $H^0(Q,A)$ | $A^Q$ 곧 불변원소 |
 | $H^1(Q,A)$ | 꼬인 준동형 / 주 꼬인 준동형. 분할 확대에서 보충군의 켤레류 |
 | $H^2(Q,A)$ | $A$ 에 의한 $Q$ 의 확대의 동치류 |
 | $H^3(Q,A)$ | 비가환 핵을 갖는 확대의 장애 |
@@ -174,13 +174,13 @@ $|H^2|=\gcd(m,n)$ 이 모든 경우에 맞는다. $\gcd=1$ 인 $(2,3)$ 에서 $H
 
 ## Schur 곱셈자와 완전 중심확대
 
-$Q$ 가 완전군($Q=[Q,Q]$)이면 중심확대 중 가장 큰 것이 유일하게 존재한다. 그 핵 $H_2(Q,\mathbb Z)$ 를 **Schur 곱셈자**라 하고, 대응하는 확대 $\tilde Q$ 를 **보편 중심확대**라 한다.
+$Q$ 가 완전군 곧 $Q=[Q,Q]$ 이면 중심확대 중 가장 큰 것이 유일하게 존재한다. 그 핵 $H_2(Q,\mathbb Z)$ 를 **Schur 곱셈자**라 하고, 대응하는 확대 $\tilde Q$ 를 **보편 중심확대**라 한다.
 
 $$
 1\to H_2(Q,\mathbb Z)\to\tilde Q\to Q\to1
 $$
 
-$A_n$ ($n\ge8$)의 Schur 곱셈자는 $\mathbb Z/2$ 이고, 그 이중덮개가 $2.A_n$ 이다. 산재군에도 같은 표기가 쓰인다. $2.\mathrm{Co}_1$, $6.\mathrm{Suz}$, $3.\mathrm{Fi}_{24}'$ 처럼 앞에 붙는 숫자가 Schur 곱셈자의 위수다.
+$n\ge8$ 인 $A_n$ 의 Schur 곱셈자는 $\mathbb Z/2$ 이고, 그 이중덮개가 $2.A_n$ 이다. 산재군에도 같은 표기가 쓰인다. $2.\mathrm{Co}_1$ 과 $6.\mathrm{Suz}$ 와 $3.\mathrm{Fi}_{24}'$ 처럼 앞에 붙는 숫자가 Schur 곱셈자의 위수다.
 
 [괴물군](monstrous-moonshine.md)의 Schur 곱셈자는 자명해서 $\mathbb M$ 자신이 보편 중심확대다. 반면 $2.\mathrm{B}$ (아기 괴물의 이중덮개)가 $\mathbb M$ 의 중심화군으로 나타나므로, 중심확대는 산재군을 서로 잇는 배선 역할을 한다.
 

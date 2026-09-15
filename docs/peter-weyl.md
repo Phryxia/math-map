@@ -48,7 +48,7 @@ $$
 \rho_{ij}(g)=\big(\rho(g)\big)_{ij}
 $$
 
-이것을 **행렬계수**라 한다. $G=S^1$, $\rho_n(\theta)=e^{in\theta}$ 이면 행렬계수가 $e^{in\theta}$ 자신이고, Fourier 급수가 "모든 $L^2$ 함수는 행렬계수의 급수" 라는 진술이 된다.
+이것을 **행렬계수**라 한다. $G=S^1$ 이고 $\rho_n(\theta)=e^{in\theta}$ 이면 행렬계수가 $e^{in\theta}$ 자신이고, Fourier 급수가 모든 $L^2$ 함수는 행렬계수의 급수라는 진술이 된다.
 
 Peter–Weyl 정리의 첫 형태가 바로 이 일반화다. 모든 기약표현의 행렬계수를 모으면 $L^2(G)$ 에서 조밀하고, 적절히 정규화하면 정규직교기저가 된다.
 
@@ -145,15 +145,15 @@ print([round(weyl_ip(f, lambda t: chi(n, t)), 6) for n in range(4)])
 # [1.0, 0.0, 1.0, 0.0]
 ```
 
-지표 행렬이 단위행렬로 나온다. 마지막 줄은 $\chi_1^2=\chi_0+\chi_2$, 곧 스핀 $\tfrac12$ 두 개의 텐서곱이 스핀 $0$ 과 스핀 $1$ 로 쪼개진다는 Clebsch–Gordan 분해다. 무한차원 함수공간의 적분 계산이 유한한 정수 계수를 내놓는다.
+지표 행렬이 단위행렬로 나온다. 마지막 줄은 $\chi_1^2=\chi_0+\chi_2$ 곧 스핀 $\tfrac12$ 두 개의 텐서곱이 스핀 $0$ 과 스핀 $1$ 로 쪼개진다는 Clebsch–Gordan 분해다. 무한차원 함수공간의 적분 계산이 유한한 정수 계수를 내놓는다.
 
 ## 고전적 특수 경우
 
 | $G$ | 기약표현 | Peter–Weyl 분해 |
 |---|---|---|
-| $S^1$ | $e^{in\theta}$, 1 차원 | Fourier 급수 |
-| $\mathrm{SU}(2)$ | 스핀 $j$, $(2j+1)$ 차원 | Wigner $D$ 함수 전개 |
-| $\mathrm{SO}(3)$ | 정수 스핀 $\ell$, $(2\ell+1)$ 차원 | 구면조화함수 전개 |
+| $S^1$ | 1 차원의 $e^{in\theta}$ | Fourier 급수 |
+| $\mathrm{SU}(2)$ | 스핀 $j$ 의 $(2j+1)$ 차원 | Wigner $D$ 함수 전개 |
+| $\mathrm{SO}(3)$ | 정수 스핀 $\ell$ 의 $(2\ell+1)$ 차원 | 구면조화함수 전개 |
 | 유한군 $G$ | $V_i$ | 정칙표현 분해 |
 
 $\mathrm{SO}(3)$ 의 경우 $L^2(S^2)=L^2(\mathrm{SO}(3)/\mathrm{SO}(2))$ 이므로 $\mathrm{SO}(2)$ 불변 벡터만 남고, 각 $\ell$ 에서 1 차원씩 기여해 $\bigoplus_\ell V_\ell$ 이 된다. 구면조화함수 $Y_\ell^m$ 이 정확히 그 기저다.
@@ -162,9 +162,9 @@ $\mathrm{SO}(3)$ 의 경우 $L^2(S^2)=L^2(\mathrm{SO}(3)/\mathrm{SO}(2))$ 이므
 
 콤팩트성을 버리면 결론이 크게 바뀐다.
 
-- $\mathbb R$ 이나 $\mathbb R^n$: 기약표현이 1 차원 지표 $e^{i\xi x}$ 이지만 $L^2$ 분해가 직합이 아니라 직적분이다. 이것이 Fourier 변환이다.
+- $\mathbb R$ 이나 $\mathbb R^n$ 에서는 기약표현이 1 차원 지표 $e^{i\xi x}$ 이지만 $L^2$ 분해가 직합이 아니라 직적분이다. 이것이 Fourier 변환이다.
 - 반단순 실 Lie 군: 기약 유니터리 표현이 무한차원이고, Plancherel 측도로 직적분 분해가 주어진다. Harish-Chandra 의 이론이 이것을 다룬다.
-- 산술 몫 $\Gamma\backslash G$: 이산 스펙트럼과 연속 스펙트럼으로 나뉘고, 이산 부분이 자기동형 형식이다. [Langlands 강령](langlands-program.md)이 여기서 시작한다.
+- 산술 몫 $\Gamma\backslash G$ 에서는 이산 스펙트럼과 연속 스펙트럼으로 나뉘고, 이산 부분이 자기동형 형식이다. [Langlands 강령](langlands-program.md)이 여기서 시작한다.
 
 콤팩트 군이 전부 이산 스펙트럼인 것은 $L^2(G)$ 에 작용하는 합성곱 작용소가 콤팩트 작용소라 스펙트럼 정리가 깔끔하게 적용되기 때문이다.
 
