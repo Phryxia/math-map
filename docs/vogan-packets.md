@@ -172,5 +172,6 @@ GGP 뿐 아니라 주기 적분의 비소멸 문제 일반이 이 틀에서 진�
 ## 더 알아보기
 
 - [Gan–Gross–Prasad 추측](gan-gross-prasad.md)
+- [Arthur 매개변수와 비템퍼드 표현](arthur-parameters.md)
 
 #number_theory #group_theory #field_theory
