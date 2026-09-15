@@ -83,9 +83,9 @@ flowchart TD
 
 ## 1 차원
 
-> **정리 (정상위상법).** $g\in C_c^\infty(\mathbb R)$, $\varphi$ 가 $\operatorname{supp}g$ 위에서 매끄럽다고 하자.
+> **정리 (정상위상법).** $g\in C_c^\infty(\mathbb R)$ 이고 $\varphi$ 가 $\operatorname{supp}g$ 위에서 매끄럽다고 하자.
 >
-> 1. $\varphi'\ne0$ 이면 모든 $N$ 에 대해 $I(\lambda)=O(\lambda^{-N})$.
+> 1. $\varphi'\ne0$ 이면 모든 $N$ 에 대해 $I(\lambda)=O(\lambda^{-N})$ 이다.
 > 2. $\varphi$ 가 유일한 정상점 $x_0$ 를 갖고 $\varphi''(x_0)\ne0$ 이면
 > $$
 > I(\lambda)=g(x_0)\,e^{i\lambda\varphi(x_0)}\sqrt{\frac{2\pi}{\lambda|\varphi''(x_0)|}}\;e^{i\pi\operatorname{sgn}\varphi''(x_0)/4}\Big(1+O(\lambda^{-1})\Big)
@@ -108,7 +108,7 @@ $\sigma(H)$ 는 $H$ 의 부호수(양의 고윳값 개수 빼기 음의 고윳�
 
 ## 퇴화하면 달라진다
 
-$\varphi''(x_0)=0$ 이면 폭이 $\lambda^{-1/2}$ 가 아니다. $\varphi-\varphi(x_0)\sim c(x-x_0)^k$ 이면 폭이 $\lambda^{-1/k}$ 이고 기여가 $\lambda^{-1/k}$ 이다. 가장 흔한 경우인 $k=3$ 에서 나오는 것이 Airy 함수다.
+$\varphi''(x_0)=0$ 이면 폭이 $\lambda^{-1/2}$ 가 아니다. $\varphi-\varphi(x_0)\sim c(x-x_0)^k$ 이면 폭이 $\lambda^{-1/k}$ 이고 기여가 $\lambda^{-1/k}$ 이다. 가장 흔한 경우인 $k=3$ 에서 나오는 것이 [Airy 함수](airy-functions.md)다.
 
 $$
 \mathrm{Ai}(t)=\frac1{2\pi}\int_{-\infty}^{\infty}e^{i(s^3/3+ts)}ds
@@ -229,5 +229,6 @@ for lam in [20, 50, 100, 200, 400]:
 ## 더 알아보기
 
 - [Witten 점근 추측과 Ohtsuki 급수](witten-asymptotics.md)
+- [Airy 함수와 회전점](airy-functions.md)
 
 #analysis #complex_analysis #computation
