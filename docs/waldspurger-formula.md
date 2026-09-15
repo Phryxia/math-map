@@ -190,6 +190,6 @@ $L(E,1)\ne0$ 이면 Mordell–Weil 계수가 0 이라는 [BSD](birch-swinnerton-
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Tunnell–Saito 국소 부호 공식](tunnell-saito.md)
 
 #number_theory #group_theory #theorem
