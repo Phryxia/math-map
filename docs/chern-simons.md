@@ -251,6 +251,7 @@ for name, a, b in [("Hopf 링크", hopf_a, hopf_b), ("떨어진 두 원", un_a, 
 ## 더 알아보기
 
 - [Witten 점근 추측과 Ohtsuki 급수](witten-asymptotics.md)
+- [Wess–Zumino–Witten 모형과 벌크–경계 대응](wess-zumino-witten.md)
 - [Casson 불변량](casson-invariant.md)
 
 #differential_geometry #algebraic_topology #topology
