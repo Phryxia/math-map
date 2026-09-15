@@ -1,23 +1,39 @@
 {
   "version": 1,
-  "savedAt": "2026-09-15T16:57:10.638Z",
-  "nextSeq": 295,
+  "savedAt": "2026-09-15T21:00:20.682Z",
+  "nextSeq": 303,
   "items": [
     {
-      "id": "1532991a",
+      "id": "3327a1f0",
       "title": "수식 뒤 공백 규칙 위반 일괄 정리",
       "priority": 80,
-      "note": "CLAUDE.md 4절 규칙(닫는 $ 뒤 공백 1개)을 어긴 곳이 211 문서 1101 군데. 대부분 수식 바로 뒤 쉼표/마침표/괄호. 문맥에 맞게 조사나 접속으로 풀어 써야 해서 기계적 치환은 위험하다. 회차마다 상위 문서 몇 개씩 처리",
-      "createdAt": "2026-09-15T16:56:29.813Z",
-      "seq": 294
+      "note": "CLAUDE.md 4절(닫는 $ 뒤 공백 1개) 위반이 143 문서 447 군데 남았다(2026-09-15 회차 시작 시 211 문서 1101 군데). 하이픈 유형은 전부 처리했고 남은 것은 쉼표, 괄호, 마침표, 콜론, 볼드 별표 등 문맥 재작성이 필요한 유형이다. dev 스크립트에는 이 검사가 없으니 회차마다 인라인 수식 파서로 위반이 많은 문서를 뽑아 몇 개씩 처리",
+      "createdAt": "2026-09-15T21:00:02.022Z",
+      "seq": 301
     },
     {
-      "id": "e9d2c46d",
-      "title": "Teichmuller 공간과 곡면의 모듈라이",
-      "priority": 6,
-      "note": "classification-of-surfaces 아래. 6g-6 차원, 바지 분해와 Fenchel-Nielsen 좌표, 3 차원 강직성과의 대비가 hyperbolic-3-manifolds 에서 필요했다",
-      "createdAt": "2026-09-15T16:39:31.025Z",
-      "seq": 285
+      "id": "7ae3ae1f",
+      "title": "인라인 코드블록에 든 수식 정리",
+      "priority": 70,
+      "note": "CLAUDE.md 4절은 인라인 코드에 수식을 넣지 말라고 한다. galois-connections 가 P,Q 와 f,g 와 x=y 를 백틱으로 쓰고 있다. 전체 문서에서 백틱 안 수식 기호를 찾아 인라인 LaTeX 로 옮길 것",
+      "createdAt": "2026-09-15T20:54:11.704Z",
+      "seq": 300
+    },
+    {
+      "id": "f5e32679",
+      "title": "dev/graph.mjs 에 수식 표기 검사 추가 요청",
+      "priority": 30,
+      "note": "아이겐에게 요청. validate 가 링크와 대칭만 보고 CLAUDE.md 4절의 수식 표기 규칙(닫는 $ 뒤 공백 1개, 인라인 코드 안 수식 금지)은 검사하지 않는다. 회차마다 임시 파서를 새로 짜야 해서 낭비가 크다. 코드블록과 $$ 블록을 건너뛰는 인라인 수식 파서를 validate 에 넣어 달라",
+      "createdAt": "2026-09-15T21:00:10.588Z",
+      "seq": 302
+    },
+    {
+      "id": "7b667f23",
+      "title": "Riemann 곡면과 균일화 정리",
+      "priority": 8,
+      "note": "teichmuller-space 와 modular-curves 가 모두 전제하는데 문서가 없다. 복소구조와 쌍곡 계량의 동일시, 단순연결 곡면 세 종류, 곡면분류와 복소해석을 잇는 자리",
+      "createdAt": "2026-09-15T20:49:23.125Z",
+      "seq": 299
     },
     {
       "id": "b1f43504",
@@ -34,6 +50,14 @@
       "note": "wess-zumino-witten 이 Sugawara 로 만들어 쓰는 구조인데 문서가 없다. 중심전하, 1 차 장, OPE, 최소모형, 모듈러 불변 분배함수",
       "createdAt": "2026-09-15T16:48:11.132Z",
       "seq": 289
+    },
+    {
+      "id": "8f7d693e",
+      "title": "사상류군과 Nielsen-Thurston 분류",
+      "priority": 6,
+      "note": "teichmuller-space 아래. Dehn 비틀림 생성, 곡선복합체, 유사 Anosov 와 팽창률, 사상원환면이 쌍곡 3 다양체가 되는 정리",
+      "createdAt": "2026-09-15T20:49:22.903Z",
+      "seq": 297
     },
     {
       "id": "a18bfa4f",
@@ -82,6 +106,14 @@
       "note": "chern-simons 와 instanton-floer-homology 아래. ASD 모듈라이, 대각화 정리, 이색 R^4, Seiberg-Witten 과의 대비",
       "createdAt": "2026-09-15T16:53:44.968Z",
       "seq": 293
+    },
+    {
+      "id": "1a689607",
+      "title": "준등각 사상과 Beltrami 방정식",
+      "priority": 5,
+      "note": "teichmuller-space 가 Teichmuller 거리 정의에 쓰는 도구인데 문서가 없다. 팽창률, 가측 Riemann 사상 정리, Bers 매장",
+      "createdAt": "2026-09-15T20:49:23.016Z",
+      "seq": 298
     },
     {
       "id": "50f81215",
