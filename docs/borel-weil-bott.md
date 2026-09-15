@@ -264,5 +264,6 @@ print("\n검증 통과")
 
 - [Schubert 계산과 Grassmann 다양체](schubert-calculus.md)
 - [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)
+- [Beilinson–Bernstein 국소화](beilinson-bernstein.md)
 
 #algebra #group_theory #differential_geometry #theorem
