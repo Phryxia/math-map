@@ -200,5 +200,6 @@ $$
 ## 더 알아보기
 
 - [Weyl 지표 공식과 최고무게 이론](weyl-character-formula.md)
+- [Weil 표현과 theta 대응](weil-representation.md)
 
 #functional_analysis #group_theory #analysis
