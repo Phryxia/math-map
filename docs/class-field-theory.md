@@ -18,13 +18,13 @@ $$
 
 ## 분해법칙을 합동조건으로 읽는다
 
-원분체가 출발점이다. $K=\mathbb Q$, $L=\mathbb Q(\zeta_m)$ 일 때
+원분체가 출발점이다. $K=\mathbb Q$ 이고 $L=\mathbb Q(\zeta_m)$ 일 때
 
 $$
 \mathrm{Gal}(L/\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times,\qquad \mathrm{Frob}_p\longmapsto p\bmod m
 $$
 
-이고, $p$ 가 완전분해할 조건은 $\mathrm{Frob}_p=1$, 곧 $p\equiv1\pmod m$ 이다. 소수의 분해라는 대수적 질문이 나머지 계산이라는 산술 질문으로 완전히 번역되었다.
+이고, $p$ 가 완전분해할 조건은 $\mathrm{Frob}_p=1$ 곧 $p\equiv1\pmod m$ 이다. 소수의 분해라는 대수적 질문이 나머지 계산이라는 산술 질문으로 완전히 번역되었다.
 
 유체론의 주장은 이것이 원분체만의 우연이 아니라는 것이다. $K$ 의 **모든** 아벨 확대에서 분해법칙이 이런 합동조건으로 서술된다. 무대가 $\mathbb Q$ 가 아니면 "법 $m$ 의 나머지" 자리에 광선유군의 원소가 들어간다.
 
@@ -58,7 +58,7 @@ graph TD
 
 유수군만으로는 부족하다. 유수군에 대응하는 확대는 분기가 전혀 없는 것뿐인데, $\mathbb Q(i)/\mathbb Q$ 처럼 유용한 아벨 확대는 대개 어딘가에서 분기한다. $\mathbb Q$ 의 유수는 1 이므로 유수군만 보면 $\mathbb Q$ 에 아벨 확대가 없다는 결론이 나오고, 이는 명백히 틀렸다.
 
-해결책은 "어디까지 분기를 허용할지" 를 미리 정해 주는 것이다. 그 지정이 모듈러스 $\mathfrak m$ 이고, $\mathfrak m$ 을 크게 잡을수록 더 많은 아벨 확대가 시야에 들어온다. $K=\mathbb Q$, $\mathfrak m=(m)\infty$ 로 두면 광선유군이 $(\mathbb Z/m\mathbb Z)^\times$ 가 되어 원분체 이야기가 그대로 복원된다.
+해결책은 "어디까지 분기를 허용할지" 를 미리 정해 주는 것이다. 그 지정이 모듈러스 $\mathfrak m$ 이고, $\mathfrak m$ 을 크게 잡을수록 더 많은 아벨 확대가 시야에 들어온다. $K=\mathbb Q$ 이고 $\mathfrak m=(m)\infty$ 로 두면 광선유군이 $(\mathbb Z/m\mathbb Z)^\times$ 가 되어 원분체 이야기가 그대로 복원된다.
 
 모든 $\mathfrak m$ 을 한꺼번에 다루려면 극한을 취해야 하는데, 그 극한을 깔끔하게 담는 그릇이 이델류군이다. 아래에서 다시 본다.
 
@@ -83,7 +83,7 @@ $$
 1\to\frac{\mathcal O_K^\times}{\mathcal O_{K,\mathfrak m}^\times}\to\frac{(\mathcal O_K/\mathfrak m_0)^\times\times\{\pm1\}^{\mathfrak m_\infty}}{1}\to\mathrm{Cl}_{\mathfrak m}(K)\to\mathrm{Cl}(K)\to1
 $$
 
-$K=\mathbb Q$, $\mathfrak m=(m)\infty$ 인 경우를 확인해 두자. $\mathrm{Cl}(\mathbb Q)=1$ 이고 $\mathbb Z^\times=\{\pm1\}$ 인데 $\mathfrak m_\infty$ 조건이 양수만 남기므로
+$K=\mathbb Q$ 이고 $\mathfrak m=(m)\infty$ 인 경우를 확인해 두자. $\mathrm{Cl}(\mathbb Q)=1$ 이고 $\mathbb Z^\times=\{\pm1\}$ 인데 $\mathfrak m_\infty$ 조건이 양수만 남기므로
 
 $$
 \mathrm{Cl}_{(m)\infty}(\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times
@@ -151,7 +151,7 @@ $\mathfrak m=1$ 인 경우다. 대응하는 확대 $H$ 를 **힐베르트 유체
 
 - $H/K$ 는 유한 소수와 무한 소수 모두에서 불분기인 최대 아벨 확대다.
 - $\mathrm{Gal}(H/K)\cong\mathrm{Cl}(K)$ 이므로 $[H:K]=h_K$ 다.
-- $\mathfrak p$ 가 $H$ 에서 완전분해할 조건은 $\psi(\mathfrak p)=1$, 곧 **$\mathfrak p$ 가 주 아이디얼인 것**이다.
+- $\mathfrak p$ 가 $H$ 에서 완전분해할 조건은 $\psi(\mathfrak p)=1$ 곧 **$\mathfrak p$ 가 주 아이디얼인 것**이다.
 
 마지막 항목이 특히 강력하다. "이 아이디얼이 주 아이디얼인가" 라는 질문이 "이 소수가 어떤 체에서 완전분해하는가" 로 바뀌었고, 후자는 다항식이 법 $\mathfrak p$ 에서 근을 갖는지로 판정된다.
 
@@ -257,8 +257,8 @@ print("모든 p<500 에서  p=x²+27y²  ⟺  p≡1 (3) 이고 2 가 법 p 의 �
 
 정리의 서술은 깔끔하지만 증명은 길다. 큰 줄기는 두 개의 부등식이다.
 
-- **제1 부등식**($\le$): $\zeta_K(s)$ 의 $s=1$ 에서의 극을 비교하는 해석적 논증. 노름군의 지표가 $[L:K]$ 이상임을 준다.
-- **제2 부등식**($\ge$): Herbrand 몫과 단원 계산을 쓰는 대수적 논증. 반대 방향을 준다.
+- **제1 부등식**, 곧 $\le$ 쪽은 $\zeta_K(s)$ 의 $s=1$ 에서의 극을 비교하는 해석적 논증이다. 노름군의 지표가 $[L:K]$ 이상임을 준다.
+- **제2 부등식**, 곧 $\ge$ 쪽은 Herbrand 몫과 단원 계산을 쓰는 대수적 논증이다. 반대 방향을 준다.
 
 둘을 합치면 지표가 정확히 $[L:K]$ 이고, 남은 일은 그 몫이 Artin 사상으로 실현됨을 보이는 것이다. 현대적 서술은 이 과정을 군 코호몰로지로 정리해 $H^2(\mathrm{Gal}(L/K),C_L)\cong\frac1{[L:K]}\mathbb Z/\mathbb Z$ 라는 한 줄로 압축한다. 이 군의 표준 생성원이 주는 컵곱이 바로 Artin 동형이다.
 

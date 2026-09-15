@@ -34,7 +34,7 @@ $G/B$ 를 **깃발다양체**라 부르는 것은 $G=\mathrm{GL}_n$ 에서 $G/B$
 
 ## Bott 의 이동 규칙
 
-$\lambda$ 가 지배적이지 않으면 단면이 없다($H^0=0$). 그런데 높은 차수 코호몰로지는 살아 있을 수 있고, 규칙은 다음과 같다. Weyl 군의 **점 작용**
+$\lambda$ 가 지배적이지 않으면 단면이 없어서 $H^0=0$ 이다. 그런데 높은 차수 코호몰로지는 살아 있을 수 있고, 규칙은 다음과 같다. Weyl 군의 **점 작용**
 
 $$
 w\cdot\lambda=w(\lambda+\rho)-\rho
@@ -42,7 +42,7 @@ $$
 
 을 쓴다. $\rho$ 는 양근 합의 절반이다.
 
-- $\lambda+\rho$ 가 어떤 벽 위에 놓이면(즉 어떤 근 $\alpha$ 에 대해 $\langle\lambda+\rho,\alpha^\vee\rangle=0$) 모든 차수의 코호몰로지가 $0$ 이다.
+- $\lambda+\rho$ 가 어떤 벽 위에 놓이면, 곧 어떤 근 $\alpha$ 에 대해 $\langle\lambda+\rho,\alpha^\vee\rangle=0$ 이면, 모든 차수의 코호몰로지가 $0$ 이다.
 - 그렇지 않으면 $w(\lambda+\rho)$ 를 지배적으로 만드는 $w\in W$ 가 유일하게 있고,
 
 $$
@@ -51,7 +51,7 @@ $$
 
 여기서 $\ell(w)$ 는 $w$ 의 길이, 곧 단순반사로 쓴 최단 단어의 길이다.
 
-읽는 법은 이렇다. $\lambda+\rho$ 를 Weyl 방(chamber)들 사이에서 지배적 방으로 밀어 넣는 데 **벽을 몇 번 넘었는가**가 코호몰로지가 사는 차수다. 벽 위에 걸리면 밀어 넣을 수 없고 답은 $0$ 이다. $\lambda$ 가 이미 지배적이면 $w=e$, $\ell(e)=0$ 이고 Borel–Weil 로 되돌아온다.
+읽는 법은 이렇다. $\lambda+\rho$ 를 Weyl 방(chamber)들 사이에서 지배적 방으로 밀어 넣는 데 **벽을 몇 번 넘었는가**가 코호몰로지가 사는 차수다. 벽 위에 걸리면 밀어 넣을 수 없고 답은 $0$ 이다. $\lambda$ 가 이미 지배적이면 $w=e$ 이고 $\ell(e)=0$ 이며 Borel–Weil 로 되돌아온다.
 
 ```mermaid
 graph TD
@@ -84,7 +84,7 @@ $$
 \dim_{\mathbb C}G/B=|\Phi^+|=\frac{\dim G-\operatorname{rank}G}{2}
 $$
 
-$G=\mathrm{SL}_2$ 면 $G/B=\mathbb P^1$, $G=\mathrm{SL}_3$ 면 $G/B$ 는 $\mathbb P^2$ 안의 깃발들이 이루는 3 차원 다양체다.
+$G=\mathrm{SL}_2$ 면 $G/B=\mathbb P^1$ 이고, $G=\mathrm{SL}_3$ 면 $G/B$ 는 $\mathbb P^2$ 안의 깃발들이 이루는 3 차원 다양체다.
 
 ## 직선다발 $\mathcal L_\lambda$
 
@@ -130,8 +130,8 @@ $d_i$ 는 $W$ 의 기본 불변식 차수다. $\mathrm{SL}_n$ 에서 $W=S_n$ 이
 
 $\lambda\in X^*(T)$ 에 대해 다음이 성립한다.
 
-1. $\langle\lambda+\rho,\alpha^\vee\rangle=0$ 인 양근 $\alpha$ 가 있으면 모든 $i$ 에 대해 $H^i(G/B,\mathcal L_\lambda)=0$.
-2. 아니면 $w(\lambda+\rho)$ 가 지배적 정칙이 되는 $w\in W$ 가 유일하게 존재하고, $H^{\ell(w)}(G/B,\mathcal L_\lambda)\cong V_{w\cdot\lambda}^{*}$ 이며 나머지 차수는 $0$.
+1. $\langle\lambda+\rho,\alpha^\vee\rangle=0$ 인 양근 $\alpha$ 가 있으면 모든 $i$ 에 대해 $H^i(G/B,\mathcal L_\lambda)=0$ 이다.
+2. 아니면 $w(\lambda+\rho)$ 가 지배적 정칙이 되는 $w\in W$ 가 유일하게 존재하고, $H^{\ell(w)}(G/B,\mathcal L_\lambda)\cong V_{w\cdot\lambda}^{*}$ 이며 나머지 차수는 $0$ 이다.
 
 증명의 뼈대는 $\mathrm{SL}_2$ 로 환원하는 것이다. 단순반사 $s_\alpha$ 하나에 대응하는 포물형 부분군 $P_\alpha$ 를 잡으면 $G/B\to G/P_\alpha$ 가 $\mathbb P^1$ 다발이고, 이 다발을 따라 Leray 스펙트럼열을 쓰면 $\mathbb P^1$ 위 $\mathcal O(n)$ 의 코호몰로지만 알면 된다. 거기서는 답이 초등적이다. $n\ge0$ 이면 $H^0$ 만, $n\le-2$ 이면 $H^1$ 만, $n=-1$ 이면 둘 다 $0$ 이다. 마지막 경우가 "벽 위" 조건의 국소 판본이고, $\ell(w)$ 가 하나씩 오르는 것이 다발을 하나씩 통과할 때마다 차수가 하나씩 밀리는 것이다.
 
@@ -143,7 +143,7 @@ Borel–Weil 의 $H^0$ 부분은 표수 $p$ 인 체 위에서도 성립한다. $
 
 ## 포물형 판본
 
-$B$ 대신 포물형 부분군 $P$ 를 쓰면 $G/P$ 도 사영다양체이고 같은 정리가 $W$ 를 $W_P$ 로 나눈 잉여류 대표들로 성립한다. $G=\mathrm{GL}_n$, $P$ 가 $k$ 차원 부분공간의 안정자이면 $G/P$ 는 Grassmann 다양체 $\mathrm{Gr}(k,n)$ 이고, Schubert 세포 분해는 고전적인 Schubert 계산이 된다. 이 경우 코호몰로지환의 구조상수가 Littlewood–Richardson 계수이고, [Schur 다항식](schur-polynomials.md) 쪽 조합론과 정확히 같은 표를 만든다.
+$B$ 대신 포물형 부분군 $P$ 를 쓰면 $G/P$ 도 사영다양체이고 같은 정리가 $W$ 를 $W_P$ 로 나눈 잉여류 대표들로 성립한다. $G=\mathrm{GL}_n$ 이고 $P$ 가 $k$ 차원 부분공간의 안정자이면 $G/P$ 는 Grassmann 다양체 $\mathrm{Gr}(k,n)$ 이고, Schubert 세포 분해는 고전적인 Schubert 계산이 된다. 이 경우 코호몰로지환의 구조상수가 Littlewood–Richardson 계수이고, [Schur 다항식](schur-polynomials.md) 쪽 조합론과 정확히 같은 표를 만든다.
 
 ## 무한차원 확장
 
