@@ -229,5 +229,6 @@ $$
 ## 더 알아보기
 
 - [Peter–Weyl 정리](peter-weyl.md)
+- [Chern–Simons 이론과 레벨 양자화](chern-simons.md)
 
 #differential_geometry #group_theory #linear_algebra
