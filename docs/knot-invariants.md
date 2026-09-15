@@ -248,5 +248,6 @@ $V\ne1$ 이므로 삼엽매듭은 풀린 매듭이 아니고, $V(t)\ne V(t^{-1})
 - [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)
 - [땋임군과 Alexander–Markov 정리](braid-groups.md)
 - [Khovanov 호몰로지](khovanov-homology.md)
+- [볼륨 추측과 색 Jones 다항식](volume-conjecture.md)
 
 #topology #algebraic_topology #combinatorics #computation
