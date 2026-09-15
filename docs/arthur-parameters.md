@@ -160,6 +160,6 @@ Saito–Kurokawa, Ikeda, Miyawaki 올림처럼 한 군의 형식에서 다른 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Speh 표현과 잔여 스펙트럼](speh-representations.md)
 
 #number_theory #group_theory #field_theory
