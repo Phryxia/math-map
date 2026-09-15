@@ -121,7 +121,7 @@ $\pi\in\mathbb C_p$ 는 $\pi^{p-1}=-p$ 의 근이고, $\theta(x)=\exp(\pi(x-x^p)
 - $\theta$ 는 $|x|_p<p^{(p-1)/p^2}$ 에서 수렴한다. 이 반경은 $1$ 보다 크다.
 - $\theta(1)=\zeta_p$ 는 원시 $p$ 제곱근이고, Teichmüller 대표원 $\hat a$ 에 대해 $\psi(a)=\theta(\hat a)$ 가 $\mathbb F_p$ 의 덧셈 지표가 된다.
 
-$\mathbb F_q$ ($q=p^s$) 로 올릴 때는 $\Theta(x)=\prod_{i=0}^{s-1}\theta(x^{p^i})$ 를 쓴다. 그러면 $\Theta(\hat a)=\psi(\mathrm{Tr}_{\mathbb F_q/\mathbb F_p}a)$ 다.
+$q=p^s$ 인 $\mathbb F_q$ 로 올릴 때는 $\Theta(x)=\prod_{i=0}^{s-1}\theta(x^{p^i})$ 를 쓴다. 그러면 $\Theta(\hat a)=\psi(\mathrm{Tr}_{\mathbb F_q/\mathbb F_p}a)$ 다.
 
 ## 완전연속 작용소와 Fredholm 행렬식
 
@@ -161,7 +161,7 @@ $$
 
 ## Borel–Dwork 유리성 판정
 
-> $f(T)=\sum a_nT^n$, $a_n\in\mathbb Z$ 라 하자. $f$ 가 복소해석적으로 $|T|<r$ 에서 수렴하고 $p$ 진 해석적으로 $|T|_p<R$ 에서 유리형이며 $rR>1$ 이면 $f\in\mathbb Q(T)$ 다.
+> $f(T)=\sum a_nT^n$ 이고 $a_n\in\mathbb Z$ 라 하자. $f$ 가 복소해석적으로 $|T|<r$ 에서 수렴하고 $p$ 진 해석적으로 $|T|_p<R$ 에서 유리형이며 $rR>1$ 이면 $f\in\mathbb Q(T)$ 다.
 
 Dwork 의 경우 $R=\infty$ 이므로 $r>0$ 이기만 하면 된다. 정수 계수라는 것이 두 절댓값을 한 판정에 묶는 접착제다. 유리수는 곱공식 때문에 모든 자리에서 동시에 작을 수 없고, 그 긴장이 계수를 유한한 점화식에 가둔다.
 
@@ -219,7 +219,7 @@ $$
 
 ## 점 개수에서 zeta 함수를 복원한다
 
-$E:y^2=x^3+x+1$ 을 $\mathbb F_5$ 위에서 놓고 $\mathbb F_{5^n}$ ($n=1,\dots,6$) 의 유리점을 전부 센다. 그 수열만 가지고 $Z(T)$ 의 계수를 정확한 유리수로 만든 다음, 유리함수인지, 분모가 무엇인지를 확인한다. 답을 미리 넣지 않는다.
+$E:y^2=x^3+x+1$ 을 $\mathbb F_5$ 위에서 놓고 $n=1,\dots,6$ 인 $\mathbb F_{5^n}$ 의 유리점을 전부 센다. 그 수열만 가지고 $Z(T)$ 의 계수를 정확한 유리수로 만든 다음, 유리함수인지, 분모가 무엇인지를 확인한다. 답을 미리 넣지 않는다.
 
 ```python
 from fractions import Fraction
@@ -341,13 +341,13 @@ for s in (0, 1):
 
 - $Z(T)$ 의 계수가 전부 정수다. 곱 표현이 예언한 대로다.
 - $(1-T)(1-5T)$ 를 곱하면 차수 $2$ 에서 정확히 끊긴다. 곧 $Z(T)=\frac{1+3T+5T^2}{(1-T)(1-5T)}$ 이고, 분자의 최고차 계수가 $q=5$ 인 것이 함수방정식이다. $a_p=-3$ 은 $N_1=5+1-(-3)=9$ 와 맞는다.
-- Hankel 행렬식이 $s\ge1$, $m\ge2$ 에서 $0$ 이 된다. Kronecker 판정이 말하는 분모 차수 $2$ 다. $s=0$ 에서 $H_2\ne0$ 인 것은 분자 차수가 분모 차수와 같아서 생기는 자리밀림이고, 판정은 큰 $s$ 에서의 소멸을 요구한다.
+- Hankel 행렬식이 $s\ge1$ 이고 $m\ge2$ 에서 $0$ 이 된다. Kronecker 판정이 말하는 분모 차수 $2$ 다. $s=0$ 에서 $H_2\ne0$ 인 것은 분자 차수가 분모 차수와 같아서 생기는 자리밀림이고, 판정은 큰 $s$ 에서의 소멸을 요구한다.
 
 무한히 많은 $N_n$ 을 여섯 개가 결정했다. 이것이 유리성의 실질적 의미다.
 
 ## Kloosterman 합의 두 절댓값
 
-같은 정의를 그대로 써서 지수합 쪽을 확인한다. $\mathrm{Kl}_1$ 만 계산한 뒤 $\alpha+\beta=-\mathrm{Kl}_1$, $\alpha\beta=p$ 로 $\alpha,\beta$ 를 정하고, 확대체에서 직접 센 값과 $-(\alpha^n+\beta^n)$ 을 비교한다.
+같은 정의를 그대로 써서 지수합 쪽을 확인한다. $\mathrm{Kl}_1$ 만 계산한 뒤 $\alpha+\beta=-\mathrm{Kl}_1$ 과 $\alpha\beta=p$ 로 $\alpha,\beta$ 를 정하고, 확대체에서 직접 센 값과 $-(\alpha^n+\beta^n)$ 을 비교한다.
 
 ```python
 from cmath import exp as cexp, pi
@@ -451,7 +451,7 @@ $p=5$ 에서 $x^5$ 의 계수가 $1/120$ 이 아니라 $5/24$ 다. $x^5/5$ 를 �
 
 ## 어디로 이어지는가
 
-- **점 세기 알고리즘.** Dwork 의 방법을 Monsky–Washnitzer 코호몰로지로 다듬은 것이 Kedlaya 알고리즘(2001)이다. 초타원곡선의 zeta 함수를 $p$ 진 정밀도로 계산하며, 비용이 $p$ 에 선형이고 확대차수에 다항식이라 **작은 $p$, 큰 $n$** 영역을 맡는다. 큰 $p$ 를 맡는 Schoof–Elkies–Atkin 과 정확히 상보적이다. Lauder–Wan 은 일반 다양체로 확장했다.
+- **점 세기 알고리즘.** Dwork 의 방법을 Monsky–Washnitzer 코호몰로지로 다듬은 것이 Kedlaya 알고리즘(2001)이다. 초타원곡선의 zeta 함수를 $p$ 진 정밀도로 계산하며, 비용이 $p$ 에 선형이고 확대차수에 다항식이라 **작은 $p$ 와 큰 $n$** 영역을 맡는다. 큰 $p$ 를 맡는 Schoof–Elkies–Atkin 과 정확히 상보적이다. Lauder–Wan 은 일반 다양체로 확장했다.
 - **암호.** 위 알고리즘이 곡선 암호의 군 위수를 정하는 실무 도구다. [타원곡선](elliptic-curves.md) 위수를 모르면 안전성을 논할 수 없다.
 - **해석적 정수론.** Kloosterman 합은 Kloosterman 자신이 사원 이차형식의 표현수를 다루려고 원법에 넣으면서 나왔다. Weil 한계 $2\sqrt q$ 가 원법의 오차항을 결정하고, Kuznetsov 공식을 거쳐 모듈러 형식의 해석적 이론으로 들어간다.
 - **Newton 다각형의 기하.** 지수합의 $p$ 진 부치를 다면체로 예측하는 Adolphson–Sperber 이론, 그리고 Katz 가 제기한 Newton 다각형의 도약 문제가 이 줄기에서 이어진다.
