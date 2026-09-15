@@ -280,6 +280,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Teichmüller 공간과 곡면의 모듈라이](teichmuller-space.md)
 
 #topology #theorem
