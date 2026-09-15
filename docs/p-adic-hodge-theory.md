@@ -180,7 +180,7 @@ $$
 B_{\mathrm{cris}}=\Big(A_{\mathrm{inf}}\big[\tfrac{\xi^n}{n!}\big]^\wedge_p[1/p]\Big)[1/t]\ \subset\ B_{\mathrm{dR}}
 $$
 
-$W(R)$ 의 Frobenius 가 여기로 내려와 $\varphi$ 를 주고 $\varphi(t)=pt$ 다. 불변부분체는 $K_0=W(k)[1/p]$, 즉 $K$ 의 최대 비분기 부분체다. 여기에 $p$ 의 $p^n$ 제곱근 계 $\tilde p\in R$ 를 골라 초월원소 $u=\log[\tilde p]$ 를 형식적으로 붙이면
+$W(R)$ 의 Frobenius 가 여기로 내려와 $\varphi$ 를 주고 $\varphi(t)=pt$ 다. 불변부분체는 $K_0=W(k)[1/p]$ 곧 $K$ 의 최대 비분기 부분체다. 여기에 $p$ 의 $p^n$ 제곱근 계 $\tilde p\in R$ 를 골라 초월원소 $u=\log[\tilde p]$ 를 형식적으로 붙이면
 
 $$
 B_{\mathrm{st}}=B_{\mathrm{cris}}[u],\qquad
@@ -226,7 +226,7 @@ $$
 
 세 화살표 모두 역이 성립하지 않는다.
 
-- 반안정이지만 결정적이 아닌 예: Tate 곡선 $E_q$ 의 $V_p(E_q)$. $N\ne0$ 이다.
+- 반안정이지만 결정적이 아닌 예: Tate 곡선 $E_q$ 의 $V_p(E_q)$ 가 있고 $N\ne0$ 이다.
 - de Rham 이지만 반안정이 아닌 예: 잠재적으로만 좋은 환원을 갖는 곡선. $K$ 의 유한확대로 올라가면 반안정이 된다.
 - Hodge–Tate 이지만 de Rham 이 아닌 예: $\mathbb Q_p\oplus\mathbb Q_p(1)$ 의 비자명한 확대 가운데 $H^1_g$ 밖에 놓인 것. $\mathbb C_p$ 로 올리면 분해되지만 $B_{\mathrm{dR}}$ 로 올려도 분해되지 않는다. $H^1(G_K,\mathbb Q_p(1))$ 이 $K^\times$ 의 완비화이므로 이런 확대는 실제로 많다.
 
@@ -248,7 +248,7 @@ $$
 B_{\mathrm{st}}\otimes_{K_0}H^n_{\mathrm{log-cris}}(X_k)\;\cong\;B_{\mathrm{st}}\otimes_{\mathbb Q_p}H^n_{\mathrm{et}}(X_{\bar K},\mathbb Q_p)
 $$
 
-가 $\varphi$, $N$, $G_K$, 여과를 모두 보존하며 성립한다. 좋은 환원이면 $N=0$ 이고 결정적이 되며, 이때 $D_{\mathrm{cris}}(H^n_{\mathrm{et}})=H^n_{\mathrm{cris}}(X_k/W)[1/p]$ 다. $\ell$ 진 코호몰로지가 관성 자명 여부만 말하는 자리에서 $p$ 진 코호몰로지는 특수 올의 결정 코호몰로지 전체를 복원한다.
+가 $\varphi$ 와 $N$ 과 $G_K$ 와 여과를 모두 보존하며 성립한다. 좋은 환원이면 $N=0$ 이고 결정적이 되며, 이때 $D_{\mathrm{cris}}(H^n_{\mathrm{et}})=H^n_{\mathrm{cris}}(X_k/W)[1/p]$ 다. $\ell$ 진 코호몰로지가 관성 자명 여부만 말하는 자리에서 $p$ 진 코호몰로지는 특수 올의 결정 코호몰로지 전체를 복원한다.
 
 또한 Hodge–Tate 분해
 
@@ -268,9 +268,9 @@ $$
 
 즉 어떤 유한확대 $L/K$ 위에서 $V|_{G_L}$ 가 반안정이다. Berger 가 이를 $p$ 진 미분방정식의 Crew 추측(André, Kedlaya, Mebkhout 이 독립적으로 증명)으로 환원해 해결했다. 이 정리 덕분에 de Rham 표현에서도 Weil–Deligne 표현을 뽑아낼 수 있고, $p$ 에서의 국소 Langlands 대응을 $\ell\ne p$ 와 같은 언어로 쓸 수 있게 된다.
 
-## $\varphi$–$\Gamma$ 가군
+## $(\varphi,\Gamma)$ 가군
 
-허용성 이론이 좋은 표현만 다루는 반면, **모든** $p$ 진 표현을 선형대수로 옮기는 길도 Fontaine 이 열었다. $K_\infty=K(\mu_{p^\infty})$, $\Gamma=\mathrm{Gal}(K_\infty/K)$ 로 두면 Fontaine–Wintenberger 의 노름체 정리가
+허용성 이론이 좋은 표현만 다루는 반면, **모든** $p$ 진 표현을 선형대수로 옮기는 길도 Fontaine 이 열었다. $K_\infty=K(\mu_{p^\infty})$ 와 $\Gamma=\mathrm{Gal}(K_\infty/K)$ 로 두면 Fontaine–Wintenberger 의 노름체 정리가
 
 $$
 \mathrm{Gal}(\bar K/K_\infty)\;\cong\;\mathrm{Gal}\big(\overline{\mathbb F_q((\pi))}/\mathbb F_q((\pi))\big)
@@ -290,8 +290,8 @@ $E/K$ 가 타원곡선이고 $V=V_p(E)^\ast\cong H^1_{\mathrm{et}}$ 라 하자. 
 
 | 환원 | $V$ | $D_{\mathrm{cris}}$ 의 Frobenius 부치 |
 |---|---|---|
-| 좋은 환원, 초특이 | 결정적 | $\{1/2,1/2\}$, $K_0$ 위 고유값 없음 |
-| 좋은 환원, 보통 | 결정적 | $\{0,1\}$, 단위근 방향이 $\mathrm{Fil}^1$ 밖 |
+| 좋은 환원, 초특이 | 결정적 | $\{1/2,1/2\}$ 이고 $K_0$ 위 고유값 없음 |
+| 좋은 환원, 보통 | 결정적 | $\{0,1\}$ 이고 단위근 방향이 $\mathrm{Fil}^1$ 밖 |
 | 곱셈 환원 | 반안정, $N\ne0$ | $\{0,1\}$ |
 | 잠재적 좋은 환원 | 잠재적 결정적 | 유한확대 후 위와 같음 |
 
@@ -351,7 +351,7 @@ $\rho\colon G_{\mathbb Q}\to\mathrm{GL}_n(\bar{\mathbb Q}_p)$ 가 기약이고
 
 Fontaine–Wintenberger 의 노름체 대응은 "$p$ 진 탑을 충분히 올라가면 표수 $p$ 가 보인다" 는 현상이었다. Scholze 는 이를 공간 차원으로 끌어올려 perfectoid 공간을 정의했고, 틸팅 $X\mapsto X^\flat$ 이 에탈 위치를 보존한다는 정리로 이 이론 전체를 기하화했다. $A_{\mathrm{inf}}$ 와 $\theta$ 는 그 틀에서 프리즘(prism) $(A_{\mathrm{inf}},(\xi))$ 의 원형 예가 되고, Bhatt–Scholze 의 프리즘 코호몰로지는 결정 코호몰로지, de Rham 코호몰로지, 에탈 코호몰로지를 하나의 대상에서 특수화로 얻는다. 이 문서에서 손으로 만든 비교동형들이 그 이론에서는 한 코호몰로지의 여러 올로 설명된다.
 
-[^1]: 무게의 부호 관례는 문헌마다 다르다. 여기서는 $\mathbb C_p\otimes V\cong\bigoplus\mathbb C_p(-h_i)$ 로 $h_i$ 를 정해 $\mathbb Q_p(1)$ 의 무게가 $-1$ 이고 $D_{\mathrm{dR}}$ 의 여과 점프와 부호가 맞도록 했다. 모듈러성 쪽 문헌은 반대 부호를 써서 순환지표의 무게를 $1$, 무게 $k$ 형식의 무게를 $\{0,k-1\}$ 로 적는 경우가 많다.
+[^1]: 무게의 부호 관례는 문헌마다 다르다. 여기서는 $\mathbb C_p\otimes V\cong\bigoplus\mathbb C_p(-h_i)$ 로 $h_i$ 를 정해 $\mathbb Q_p(1)$ 의 무게가 $-1$ 이고 $D_{\mathrm{dR}}$ 의 여과 점프와 부호가 맞도록 했다. 모듈러성 쪽 문헌은 반대 부호를 써서 순환지표의 무게를 $1$ 로 하고 무게 $k$ 형식의 무게를 $\{0,k-1\}$ 로 적는 경우가 많다.
 
 [^2]: Colmez, Fontaine, *Construction des représentations p-adiques semi-stables*, Invent. Math. 140 (2000). 약허용 여과 $\varphi$ 가군이 모두 허용임을 보인 논문이다. Fontaine 의 주기환 구성 자체는 *Le corps des périodes p-adiques*, Astérisque 223 (1994) 에 정리되어 있다.
 

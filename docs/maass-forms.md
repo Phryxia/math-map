@@ -28,7 +28,7 @@ $\mathrm{SL}_2(\mathbb R)$ 의 작용에서 보면 이유가 분명해진다. �
 | 표현 계열 | 대응하는 자기동형 형식 |
 |---|---|
 | 이산계열 $D_k$ | 무게 $k$ 의 정칙 첨점형식 |
-| 주계열 $\pi_{ir}$ | Maass 첨점형식 ($\lambda=\tfrac14+r^2$) |
+| 주계열 $\pi_{ir}$ | $\lambda=\tfrac14+r^2$ 인 Maass 첨점형식 |
 | 여계열 | $\lambda<\tfrac14$ 인 예외 형식 |
 | 자명 표현 | 상수함수 |
 
@@ -38,8 +38,8 @@ $\mathrm{SL}_2(\mathbb R)$ 의 작용에서 보면 이유가 분명해진다. �
 
 고윳값을 $\lambda=s(1-s)$ 로 쓰면 $s=\tfrac12+ir$ 이고 $\lambda=\tfrac14+r^2$ 이다. 두 경우가 갈린다.
 
-- $\lambda\ge\tfrac14$: $r$ 이 실수. 표현이 주계열(**온도적**)이다.
-- $\lambda<\tfrac14$: $r$ 이 순허수. 표현이 여계열(**예외적**)이다.
+- $\lambda\ge\tfrac14$ 이면 $r$ 이 실수이고 표현이 주계열(**온도적**)이다.
+- $\lambda<\tfrac14$ 이면 $r$ 이 순허수이고 표현이 여계열(**예외적**)이다.
 
 $\tfrac14$ 는 쌍곡평면 $\mathbb H$ 자체의 Laplace 스펙트럼의 바닥이다. $\Gamma\backslash\mathbb H$ 의 고윳값이 그 아래로 내려간다는 것은 곡면이 "너무 좁은" 곳을 갖는다는 뜻이고, 산술적으로는 Ramanujan 추측이 깨진다는 뜻이다.
 
@@ -74,8 +74,8 @@ $$
 
 $\Gamma\subset\mathrm{SL}_2(\mathbb Z)$ 를 유한 지표 부분군이라 하자. 함수 $u:\mathbb H\to\mathbb C$ 가 다음 셋을 만족하면 **Maass 형식**이다.
 
-1. $\Gamma$ 불변: 모든 $\gamma\in\Gamma$ 에 대해 $u(\gamma z)=u(z)$.
-2. Laplace 고유함수: $\Delta u=\lambda u$, $\Delta=-y^2(\partial_x^2+\partial_y^2)$.
+1. $\Gamma$ 불변: 모든 $\gamma\in\Gamma$ 에 대해 $u(\gamma z)=u(z)$ 다.
+2. Laplace 고유함수: $\Delta=-y^2(\partial_x^2+\partial_y^2)$ 에 대해 $\Delta u=\lambda u$ 다.
 3. 다항 증가.
 
 첨점에서 상수항까지 사라지면 **첨점형식**이라 하고, 이때 $u\in L^2(\Gamma\backslash\mathbb H)$ 다. $\Delta$ 가 쌍곡 계량에 대한 Laplace–Beltrami 작용소이고 $\mathrm{SL}_2(\mathbb R)$ 작용과 가환이라는 점이 1 과 2 를 양립시킨다.
@@ -96,7 +96,7 @@ $$
 
 $y\to\infty$ 에서 $K_{ir}(y)\sim\sqrt{\pi/2y}\,e^{-y}$ 로 지수적으로 감소하므로 첨점 조건이 자동으로 붙는다. 정칙 형식의 $q^n=e^{2\pi inz}$ 자리에 이 Bessel 인자가 들어온 것이고, 지수적 감소라는 성질만 같고 함수 자체는 훨씬 다루기 어렵다.
 
-$z\mapsto-\bar z$ 에 대한 대칭으로 **짝**($a_{-n}=a_n$)과 **홀**($a_{-n}=-a_n$)로 나뉜다.
+$z\mapsto-\bar z$ 에 대한 대칭으로 $a_{-n}=a_n$ 인 **짝**과 $a_{-n}=-a_n$ 인 **홀**로 나뉜다.
 
 ## Hecke 작용소와 $L$ 함수
 
@@ -216,8 +216,8 @@ $\Gamma\backslash\mathbb H$ 는 음곡률 곡면이므로 측지선 흐름이 �
 
 2 차원 Galois 표현 $\rho:\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\to\mathrm{GL}_2(\mathbb C)$ 를 자기동형 형식에 대응시킬 때, $\rho(c)$ 의 행렬식으로 두 경우가 갈린다.
 
-- **홀수** ($\det\rho(c)=-1$): 무게 1 의 정칙 첨점형식에 대응. Khare–Wintenberger 의 Serre 추측 증명으로 해결되었다.
-- **짝수** ($\det\rho(c)=+1$): **고윳값 $\lambda=\tfrac14$ 인 Maass 형식**에 대응.
+- **홀수** 곧 $\det\rho(c)=-1$ 인 경우는 무게 1 의 정칙 첨점형식에 대응한다. Khare–Wintenberger 의 Serre 추측 증명으로 해결되었다.
+- **짝수** 곧 $\det\rho(c)=+1$ 인 경우는 **고윳값 $\lambda=\tfrac14$ 인 Maass 형식**에 대응한다.
 
 짝수 경우가 정확히 $\tfrac14$ 라는 문턱 위에 앉는다. 대응하는 Maass 형식이 $r=0$ 이어서 온도적이면서 경계에 있는 것이다. 이 경우는 부분적으로만 알려져 있고(Langlands, Tunnell 의 가해 경우), 일반적으로는 열려 있다. **정칙 형식으로는 절대 잡을 수 없는 Galois 표현이 있다**는 점이 Maass 형식을 빠뜨릴 수 없게 만든다.
 
