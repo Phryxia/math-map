@@ -11,7 +11,7 @@ $$
 여기 나오는 유리수 $B_j$ 가 Bernoulli 수다. 정의는 초등적이지만 이 수열이 나타나는 자리는 초등적이지 않다.
 
 - $\zeta(2k)$ 의 값. $\zeta(2)=\pi^2/6$ 부터 모든 짝수 zeta 값이 $B_{2k}$ 로 쓰인다.
-- $\zeta(1-k)=-B_k/k$. 함수방정식으로 옮기면 **음의 정수에서의 zeta 값이 곧 Bernoulli 수**다.
+- $\zeta(1-k)=-B_k/k$ 다. 함수방정식으로 옮기면 **음의 정수에서의 zeta 값이 곧 Bernoulli 수**다.
 - $p$ 가 $B_2,\dots,B_{p-3}$ 중 하나를 나누는지가 순환체의 류수가 $p$ 로 나뉘는지를 결정한다(Kummer 의 기준).
 
 세 번째 항목이 이 문서가 그래프에서 차지하는 자리다. [Stickelberger](stickelberger.md) 원소의 계수도, Kubota–Leopoldt $p$ 진 $L$ 함수의 보간값도, [Iwasawa 주추측](iwasawa-main-conjecture.md)의 해석적 변도 전부 $B_{n,\chi}$ 로 쓰인다. 그 모든 것의 바닥에 두 개의 고전 정리가 있다. 분모를 완전히 결정하는 **von Staudt–Clausen** 정리와, 분자를 $p$ 진적으로 이어 붙이는 **Kummer 합동**이다. 앞의 것이 $B_n$ 의 $p$ 진 극점을 통제하고, 뒤의 것이 $p$ 진 보간을 가능하게 한다.
@@ -40,13 +40,13 @@ $$
 B_2=\tfrac16,\quad B_4=-\tfrac1{30},\quad B_6=\tfrac1{42},\quad B_8=-\tfrac1{30},\quad B_{10}=\tfrac5{66}
 $$
 
-$6=2\cdot3$, $30=2\cdot3\cdot5$, $42=2\cdot3\cdot7$. **von Staudt–Clausen 정리**가 규칙을 말해 준다. $p-1$ 이 $n$ 을 나누는 소수 $p$ 가 정확히 분모에 한 번씩 나타난다.
+$6=2\cdot3$ 과 $30=2\cdot3\cdot5$ 와 $42=2\cdot3\cdot7$ 에 대해 **von Staudt–Clausen 정리**가 규칙을 말해 준다. $p-1$ 이 $n$ 을 나누는 소수 $p$ 가 정확히 분모에 한 번씩 나타난다.
 
 $$
 B_{n}+\sum_{(p-1)\mid n}\frac1p\ \in\ \mathbb Z\qquad(n\ \text{짝수})
 $$
 
-$p$ 진으로 읽으면 이 정리는 "$(p-1)\mid n$ 이면 $B_n$ 의 $p$ 부치가 정확히 $-1$, 아니면 $0$ 이상" 이라는 말이다. 곧 $B_n$ 은 $p$ 진 정수이거나 기껏해야 1 차 극점을 갖는다. 극점의 위치가 $n\bmod(p-1)$ 로만 결정된다는 사실이 $p$ 진 해석의 문을 연다.
+$p$ 진으로 읽으면 이 정리는 "$(p-1)\mid n$ 이면 $B_n$ 의 $p$ 부치가 정확히 $-1$ 이고, 아니면 $0$ 이상" 이라는 말이다. 곧 $B_n$ 은 $p$ 진 정수이거나 기껏해야 1 차 극점을 갖는다. 극점의 위치가 $n\bmod(p-1)$ 로만 결정된다는 사실이 $p$ 진 해석의 문을 연다.
 
 ## 분자는 이어 붙는다
 
@@ -115,7 +115,7 @@ $$
 \frac{t\,e^{xt}}{e^{t}-1}=\sum_{n\ge0}B_n(x)\frac{t^{n}}{n!}
 $$
 
-$B_n=B_n(0)$ 이다. 점화식은 $\sum_{k=0}^{n}\binom{n+1}{k}B_k=0$ ($n\ge1$)이고 위 코드가 쓰는 것이 이 식이다. $B_1=-\tfrac12$ 이며 $n\ge3$ 이 홀수면 $B_n=0$ 이다.
+$B_n=B_n(0)$ 이다. 점화식은 $n\ge1$ 에서 $\sum_{k=0}^{n}\binom{n+1}{k}B_k=0$ 이고 위 코드가 쓰는 것이 이 식이다. $B_1=-\tfrac12$ 이며 $n\ge3$ 이 홀수면 $B_n=0$ 이다.
 
 ## 일반화 Bernoulli 수
 
@@ -207,7 +207,7 @@ $$
 
 ## Kummer 의 Fermat 정리
 
-$p$ 가 정칙이면 $x^{p}+y^{p}=z^{p}$ 에 $p\nmid xyz$ 인 해가 없다. 증명의 핵심은 $\mathbb Q(\mu_p)$ 에서 좌변을 인수분해한 뒤, 유일분해가 깨지는 정도를 류군으로 재고 $p\nmid h$ 를 써서 각 인자가 주 아이디얼이 되게 만드는 것이다. Bernoulli 수는 "$p\nmid h$" 를 **계산 가능한 조건으로 번역**하는 역할을 한다. 류수를 직접 계산하는 것은 어렵지만 $B_k$ 를 $\bmod p$ 로 보는 것은 쉽다.
+$p$ 가 정칙이면 $x^{p}+y^{p}=z^{p}$ 에 $p\nmid xyz$ 인 해가 없다. 증명의 핵심은 $\mathbb Q(\mu_p)$ 에서 좌변을 인수분해한 뒤, 유일분해가 깨지는 정도를 류군으로 재고 $p\nmid h$ 를 써서 각 인자가 주 아이디얼이 되게 만드는 것이다. Bernoulli 수는 $p\nmid h$ 를 **계산 가능한 조건으로 번역**하는 역할을 한다. 류수를 직접 계산하는 것은 어렵지만 $B_k$ 를 $\bmod p$ 로 보는 것은 쉽다.
 
 ## $p$ 진 $L$ 함수와 Iwasawa 이론
 
@@ -223,7 +223,7 @@ $$
 
 ## 조합론과 위상
 
-$B_n$ 은 Todd 류의 계수로 나타나 Hirzebruch–Riemann–Roch 공식에 들어가고, $\zeta(1-n)=-B_n/n$ 을 통해 구면의 안정 호모토피군의 위수(Adams 의 $\mathrm{im}\,J$)에도 나타난다. 초등적 점화식으로 정의된 수열이 왜 이렇게 멀리까지 가는지는, 결국 모두 $\zeta$ 의 특수값을 계산하고 있기 때문이라고 답할 수 있다.
+$B_n$ 은 Todd 류의 계수로 나타나 Hirzebruch–Riemann–Roch 공식에 들어가고, $\zeta(1-n)=-B_n/n$ 을 통해 구면의 안정 호모토피군의 위수, 곧 Adams 의 $\mathrm{im}\,J$ 부분에도 나타난다. 초등적 점화식으로 정의된 수열이 왜 이렇게 멀리까지 가는지는, 결국 모두 $\zeta$ 의 특수값을 계산하고 있기 때문이라고 답할 수 있다.
 
 [^1]: 표준 참고는 K. Ireland, M. Rosen, *A Classical Introduction to Modern Number Theory* (2판) 15 장과 L. Washington, *Introduction to Cyclotomic Fields* (2판) 5 장. 비정칙 소수의 밀도 추정은 C. L. Siegel 의 발상이며, 비정칙 소수의 무한성은 K. L. Jensen (1915). 본문의 수치 확인은 직접 계산한 것이다.
 

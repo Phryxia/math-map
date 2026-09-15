@@ -107,19 +107,19 @@ $$
 
 모듈러 텐서범주 $\mathcal C$ 하나가 애니온 모형이다.
 
-- 단순대상 $\{a\}$: 애니온의 종류. 유한 개.
-- 융합 규칙 $a\otimes b\cong\bigoplus_c N_{ab}^c\,c$.
+- 단순대상 $\{a\}$ 는 애니온의 종류이고 유한 개다.
+- 융합 규칙은 $a\otimes b\cong\bigoplus_c N_{ab}^c\,c$ 다.
 - $F$ 행렬: 결합자. 융합 순서를 바꾸는 기저 변환.
 - $R$ 행렬: 땋임. 두 애니온을 맞바꾸는 연산.
-- $S,T$: 원환면 위 상태공간에 대한 $\mathrm{SL}_2(\mathbb Z)$ 작용.
+- $S,T$ 는 원환면 위 상태공간에 대한 $\mathrm{SL}_2(\mathbb Z)$ 작용이다.
 
 $F$ 와 $R$ 이 오각형 항등식과 육각형 항등식을 만족해야 하고, 이 방정식들의 해가 유한 개라 애니온 모형의 분류가 가능하다.
 
 ## 두 모형
 
-**Fibonacci**: 대상 $\{\mathbf 1,\tau\}$, 융합 $\tau\otimes\tau=\mathbf 1\oplus\tau$.
+**Fibonacci**: 대상이 $\{\mathbf 1,\tau\}$ 이고 융합이 $\tau\otimes\tau=\mathbf 1\oplus\tau$ 다.
 
-**Ising**: 대상 $\{\mathbf 1,\sigma,\psi\}$, 융합
+**Ising**: 대상이 $\{\mathbf 1,\sigma,\psi\}$ 이고 융합은
 
 $$
 \sigma\otimes\sigma=\mathbf 1\oplus\psi,\qquad
@@ -151,7 +151,7 @@ $\sigma$ 애니온의 땋임은 **Clifford 군**만 생성한다. Gottesman–Kn
 | --- | --- | --- | --- |
 | Fibonacci | $\varphi$ | $SU(V)$ 에서 조밀 | 땋기만으로 보편 |
 | Ising | $\sqrt2$ | Clifford 군 | 마법 상태 필요 |
-| 아벨 ($\mathbb Z_n$) | $1$ | 위상 인자뿐 | 계산 불가 |
+| 아벨 곧 $\mathbb Z_n$ | $1$ | 위상 인자뿐 | 계산 불가 |
 
 ## 총 양자 차원
 
@@ -159,7 +159,7 @@ $$
 \mathcal D=\sqrt{\sum_a d_a^2}
 $$
 
-를 총 양자 차원이라 한다. Fibonacci 는 $\mathcal D^2=1+\varphi^2$, Ising 은 $\mathcal D^2=1+2+1=4$ 다. 이 양은 물리적으로 관측 가능하다. 위상적으로 정렬된 2 차원 계의 얽힘 엔트로피가 경계 길이에 비례하는 항에 더해 $-\log\mathcal D$ 라는 보정을 갖고, 이를 **위상적 얽힘 엔트로피**라 한다. 범주의 불변량이 실험에서 측정되는 드문 예다.
+를 총 양자 차원이라 한다. Fibonacci 는 $\mathcal D^2=1+\varphi^2$ 이고 Ising 은 $\mathcal D^2=1+2+1=4$ 다. 이 양은 물리적으로 관측 가능하다. 위상적으로 정렬된 2 차원 계의 얽힘 엔트로피가 경계 길이에 비례하는 항에 더해 $-\log\mathcal D$ 라는 보정을 갖고, 이를 **위상적 얽힘 엔트로피**라 한다. 범주의 불변량이 실험에서 측정되는 드문 예다.
 
 # 활용
 

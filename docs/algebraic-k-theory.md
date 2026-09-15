@@ -10,7 +10,7 @@ K_1(R)=GL(R)^{\mathrm{ab}},\quad
 K_2(R)=\text{Steinberg 군의 중심 확대}
 $$
 
-$R=\mathbb Z$ 면 $K_0=\mathbb Z$(계수), $K_1=\mathbb Z/2$(단수 $\pm1$), $K_2=\mathbb Z/2$ 로 전부 산술적인 양이다. 그런데 차수를 올리면 사정이 달라진다. $K_3(\mathbb Z)=\mathbb Z/48$ 이고, 이 48 은 **구면의 안정 호모토피군에 나타나는 바로 그 수**다.
+$R=\mathbb Z$ 면 계수를 재는 $K_0=\mathbb Z$ 와 단수 $\pm1$ 을 재는 $K_1=\mathbb Z/2$ 와 $K_2=\mathbb Z/2$ 로 전부 산술적인 양이다. 그런데 차수를 올리면 사정이 달라진다. $K_3(\mathbb Z)=\mathbb Z/48$ 이고, 이 48 은 **구면의 안정 호모토피군에 나타나는 바로 그 수**다.
 
 $$
 \text{대수}\ \longleftrightarrow\ \text{위상}\ \longleftrightarrow\ \text{수론}
@@ -32,7 +32,7 @@ Quillen 의 plus 구성은 분류공간 $BGL(R)$ 에 세포를 붙여 기본군�
 
 ## 왜 위상의 수가 나오는가
 
-$K_3(\mathbb Z)=\mathbb Z/48$ 의 48, $K_7(\mathbb Z)=\mathbb Z/240$ 의 240 은 Bernoulli 수의 분모에서 온다. $\zeta(-1)=-\tfrac1{12}$, $\zeta(-3)=\tfrac1{120}$ 이고 여기에 2 를 곱한 값이다. 같은 수가 구면의 안정 호모토피군의 im $J$ 부분에도 나타난다.
+$K_3(\mathbb Z)=\mathbb Z/48$ 의 48, $K_7(\mathbb Z)=\mathbb Z/240$ 의 240 은 Bernoulli 수의 분모에서 온다. $\zeta(-1)=-\tfrac1{12}$ 과 $\zeta(-3)=\tfrac1{120}$ 이고 여기에 2 를 곱한 값이다. 같은 수가 구면의 안정 호모토피군의 im $J$ 부분에도 나타난다.
 
 이 일치는 우연이 아니다. **$\mathbb Z$ 의 $K$ 군은 $\zeta$ 의 특수값을 재고 있다**는 것이 현대적 설명이고, 그 설명을 정확한 정리로 만든 것이 Quillen–Lichtenbaum 이다. 분모는 [Bernoulli 수](bernoulli-numbers.md)의 von Staudt–Clausen 이 결정하고, 분자는 순환체의 류군이 결정한다.
 
@@ -63,9 +63,9 @@ flowchart TD
 
 ## 낮은 차수
 
-- $K_0(R)$: 유한생성 사영 $R$ 가군의 동형류가 직합에 대해 만드는 Grothendieck 군. $R$ 이 Dedekind 정역이면 $K_0(R)\cong\mathbb Z\oplus\mathrm{Cl}(R)$ 이다.
-- $K_1(R)=GL(R)/E(R)$. 가환환이면 $\det$ 이 $R^{\times}$ 로의 분해를 주고, $\mathcal O_F$ 에서는 $K_1=\mathcal O_F^{\times}$ 다.
-- $K_2(R)$: Steinberg 군 $St(R)\to E(R)$ 의 핵. 체에서는 Matsumoto 정리로 기호 $\{a,b\}$ 와 $\{a,1-a\}=1$ 이라는 관계만으로 제시된다.
+- $K_0(R)$ 은 유한생성 사영 $R$ 가군의 동형류가 직합에 대해 만드는 Grothendieck 군이다. $R$ 이 Dedekind 정역이면 $K_0(R)\cong\mathbb Z\oplus\mathrm{Cl}(R)$ 이다.
+- $K_1(R)=GL(R)/E(R)$ 이다. 가환환이면 $\det$ 이 $R^{\times}$ 로의 분해를 주고, $\mathcal O_F$ 에서는 $K_1=\mathcal O_F^{\times}$ 다.
+- $K_2(R)$ 은 Steinberg 군 $St(R)\to E(R)$ 의 핵이다. 체에서는 Matsumoto 정리로 기호 $\{a,b\}$ 와 $\{a,1-a\}=1$ 이라는 관계만으로 제시된다.
 
 $K_0$ 이 류군을, $K_1$ 이 단수군을 담는다는 점에서 **$K$ 이론은 대수적 수론의 두 기본 불변량을 한 열로 묶는 틀**이다.
 
@@ -77,7 +77,7 @@ $$
 \cdots\to\bigoplus_{\mathfrak p}K_n(\mathcal O/\mathfrak p)\to K_n(\mathcal O_F)\to K_n(F)\to\bigoplus_{\mathfrak p}K_{n-1}(\mathcal O/\mathfrak p)\to\cdots
 $$
 
-유한체의 $K$ 군은 Quillen 이 완전히 계산했으므로($K_{2i-1}(\mathbb F_q)=\mathbb Z/(q^{i}-1)$, 짝수 차수는 0), 이 열이 수체 쪽 계산의 출발점이 된다.
+유한체의 $K$ 군은 Quillen 이 완전히 계산했으므로, 곧 $K_{2i-1}(\mathbb F_q)=\mathbb Z/(q^{i}-1)$ 이고 짝수 차수는 0 이므로, 이 열이 수체 쪽 계산의 출발점이 된다.
 
 ## Quillen–Lichtenbaum
 
