@@ -241,6 +241,7 @@ $(z-1/2)/z$ 의 감음수가 $0$ 인 것도 같은 구조다. 분자가 $+1$, �
 
 ## 더 알아보기
 
+- [Fredholm 행렬식](fredholm-determinant.md)
 - [지표 정리](index-theorem.md)
 
 #functional_analysis #analysis #topology
