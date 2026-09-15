@@ -186,6 +186,85 @@ print("           TW_1:  -1.2065     1.2680")
 
 평균이 $N = 10, 20, 40$ 에서 $-1.58, -1.45, -1.24$ 로 참값 $-1.2065$ 에 다가간다. 유한크기 보정이 $N^{-2/3}$ 규모라 수렴이 느리지만 방향은 분명하다. 표준편차는 $1.19$ 에서 $1.44$ 사이를 오가는데, 표본이 수백 개뿐일 때의 통계오차가 $0.06$ 규모이고 작은 $N$ 에서 분포 자체가 아직 넓으므로 이 정도 어긋남은 예상 범위다. 흥미로운 것은 $N = 10$ 이라는 아주 작은 행렬에서도 이미 값이 맞는 자리 근처에 있다는 점이다. 무작위 행렬 이론의 점근 공식이 실무에서 널리 쓰이는 이유가 이 빠른 수렴이다.
 
+## 행렬식을 직접 계산한다
+
+표본을 뽑는 대신 정의를 그대로 계산할 수도 있다. [Fredholm 행렬식](fredholm-determinant.md) 문서의 Nyström 구적을 Airy 핵에 적용하면 되고, 무한구간 $(s,\infty)$ 은 $x = s + L\tan(\pi u/4)$ 로 옮긴다. 필요한 것은 $\operatorname{Ai}$ 와 $\operatorname{Ai}'$ 뿐이며, 작은 $\lvert x\rvert$ 에서는 전평면 수렴 급수를, 큰 $x$ 에서는 점근급수를 쓴다.
+
+```python
+import math
+# gauss_legendre, det_dense 는 fredholm-determinant 문서의 것을 그대로 쓴다
+
+C1, C2 = 0.355028053887817239, 0.258819403792806798
+
+def airy_taylor(x):
+    """Ai, Ai' 를 전평면 수렴 급수로. 항과 그 도함수를 함께 갱신해 0 나눗셈을 피한다."""
+    f = fp = g = gp = 0.0
+    T, Tp, G, Gp = 1.0, 0.0, x, 1.0
+    for k in range(80):
+        f += T; fp += Tp; g += G; gp += Gp
+        T, Tp = T * x ** 3 / ((3*k+2) * (3*k+3)), T * x * x / (3*k+2)
+        G, Gp = G * x ** 3 / ((3*k+3) * (3*k+4)), G * x * x / (3*k+3)
+    return C1 * f - C2 * g, C1 * fp - C2 * gp
+
+def airy_asym(x):
+    """큰 x 에서의 점근급수. 최소항에서 끊는다."""
+    z, s, sp, u = 2 / 3 * x ** 1.5, 1.0, 1.0, 1.0
+    for k in range(1, 30):
+        u *= -(6*k-5) * (6*k-3) * (6*k-1) / (216 * k * (2*k-1)) / z
+        if abs(u) < 1e-17:
+            break
+        s += u
+        sp += u * (6*k+1) / (1-6*k)
+    pre = math.exp(-z) / (2 * math.sqrt(math.pi) * x ** 0.25)
+    return pre * s, -pre * math.sqrt(x) * sp
+
+def airy(x):
+    return airy_asym(x) if x >= 6 else airy_taylor(x)
+
+def K_airy(x, y):
+    a, ap = airy(x)
+    b, bp = airy(y)
+    if abs(x - y) < 1e-7:
+        return ap * ap - x * a * a          # Wronskian 의 x -> y 극한
+    return (a * bp - ap * b) / (x - y)
+
+def F2(s, n=30, L=10.0):
+    """det(I - K_Ai) on L^2(s, inf).  x = s + L tan(pi u / 4) 로 무한구간을 옮긴다."""
+    u, w = gauss_legendre(n, 0.0, 1.0)
+    c = math.pi / 4
+    x = [s + L * math.tan(c * ui) for ui in u]
+    dx = [L * c / math.cos(c * ui) ** 2 for ui in u]
+    sq = [math.sqrt(wi * di) for wi, di in zip(w, dx)]
+    M = [[(1.0 if i == j else 0.0) - sq[i] * sq[j] * K_airy(x[i], x[j])
+          for j in range(n)] for i in range(n)]
+    return det_dense(M)
+
+print("  s        F2(s)       (n=20 / n=30 / n=50)")
+for s in (-6.0, -4.0, -2.0, 0.0, 2.0):
+    print(f" {s:5.1f}  " + "  ".join(f"{F2(s, n):.12f}" for n in (20, 30, 50)))
+
+def moments(a=-9.0, b=6.0, n=60):
+    """E[X] = int_0^b (1-F) - int_a^0 F.  피적분함수가 0 에서 끊기므로 갈라 적분한다."""
+    m1 = m2 = 0.0
+    for lo, hi, sign in ((a, 0.0, -1), (0.0, b, +1)):
+        x, w = gauss_legendre(n, lo, hi)
+        for xi, wi in zip(x, w):
+            t = (1 - F2(xi)) if sign > 0 else -F2(xi)
+            m1 += wi * t
+            m2 += wi * 2 * xi * t
+    return m1, m2 - m1 * m1
+
+m, v = moments()
+print(f"\n 평균 {m:.10f}   (표의 값 -1.7710868074)")
+print(f" 분산 {v:.10f}   (표의 값  0.8131947928)")
+```
+
+마디 스무 개로 $F_2$ 가 열두 자리까지 안정된다. 무한차원 행렬식을 $20 \times 20$ 행렬식 하나로 그 정확도까지 얻는 것인데, 핵이 해석적일 때 Nyström 근사가 지수적으로 수렴하기 때문이다. 앞 절의 몬테카를로가 표본 수백 개로 소수점 한 자리를 다투던 것과 대비된다. 분포를 **정의로부터** 계산할 수 있다는 것이 Fredholm 행렬식 표현의 실질적 가치다.
+
+평균과 분산은 위 표의 $-1.7710868074$ 와 $0.8131947928$ 을 열 자리 전부 재현한다. 여기서 쓴 것은 $\operatorname{Ai}$ 의 급수와 Gauss 구적, 그리고 LU 분해뿐이다. Painlevé II 를 풀지도, 무작위 행렬을 하나도 만들지 않았다.
+
+한 가지 함정을 적어 둔다. 비대각 성분의 분모를 $y - x$ 로 잘못 쓰면 대각 성분과 부호가 어긋나는데, 그래도 행렬식은 그럴듯한 값을 내놓는다. $F_2(0)$ 이 $0.9694$ 로 참값과 소수점 넷째 자리까지 같아 눈으로는 걸러지지 않는다. 드러나는 곳은 수렴이다. 부호가 맞으면 $n = 20$ 에서 값이 멈추지만, 틀리면 $n$ 을 키울수록 값이 계속 움직인다. 구적의 수렴을 확인하는 습관이 이런 오류를 잡는다.
+
 ## 어디에 쓰이는가
 
 주성분분석에서 "이 고윳값이 잡음인가 신호인가" 를 판정할 때가 대표적이다. 자료가 순수한 잡음이라면 표본공분산행렬의 최대 고윳값은 Tracy–Widom 을 따르므로, 관측값이 그 분포의 상위 백분위를 넘는지로 유의성을 판단한다. 정규분포 대신 이 분포를 써야 하는 것은 고윳값 사이의 반발 때문이며, 정규근사를 쓰면 신호를 과대검출한다.
