@@ -186,6 +186,7 @@ $L(E,1)\ne0$ 이면 Mordell–Weil 계수가 0 이라는 [BSD](birch-swinnerton-
 
 - [Gan–Gross–Prasad 추측](gan-gross-prasad.md)
 - [Heegner 점과 Gross–Zagier 공식](heegner-points.md)
+- [Jacquet–Langlands 대응과 사원수 대수 위의 형식](jacquet-langlands.md)
 
 ## 더 알아보기
 

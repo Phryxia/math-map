@@ -207,5 +207,6 @@ $\sinh(k\ell_\gamma/2)$ 라는 분모는 길이가 긴 측지선의 기여가 �
 ## 더 알아보기
 
 - [기본 보조정리와 대각합 공식의 안정화](fundamental-lemma.md)
+- [Jacquet–Langlands 대응과 사원수 대수 위의 형식](jacquet-langlands.md)
 
 #number_theory #analysis #differential_geometry #theorem

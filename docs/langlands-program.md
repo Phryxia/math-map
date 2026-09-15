@@ -294,5 +294,6 @@ for i, b in enumerate(buckets):
 - [Galois 표현과 에탈 코호몰로지](galois-representations.md)
 - [Godement–Jacquet 적분](godement-jacquet.md)
 - [Vogan L 꾸러미와 순수 내부형식](vogan-packets.md)
+- [Jacquet–Langlands 대응과 사원수 대수 위의 형식](jacquet-langlands.md)
 
 #number_theory #group_theory #field_theory
