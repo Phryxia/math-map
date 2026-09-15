@@ -175,6 +175,6 @@ show("", [(-1) ** k * u[k] / math.gamma(k + 1) for k in range(N)], [6, 10, 14])
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [정확한 WKB 와 Voros 기호](exact-wkb.md)
 
 #analysis #complex_analysis #computation

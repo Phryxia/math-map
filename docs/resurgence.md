@@ -191,6 +191,6 @@ M=1, 즉 주도항만 쓰면 $k=25$ 에서 상대오차가 $5.6\times10^{-3}$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [정확한 WKB 와 Voros 기호](exact-wkb.md)
 
 #analysis #complex_analysis #computation
