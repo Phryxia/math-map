@@ -116,17 +116,17 @@ $L(s,\pi)$ 쪽의 해석적 성질은 자기동형 표현론에서 증명되어 
 
 | 경우 | 상태 |
 |---|---|
-| $n=1$, 모든 수체 | 증명 (유체론) |
-| $n=2$, $K=\mathbb Q$, 홀수 기약 | 대부분 증명 (Serre 추측, Khare–Wintenberger 2009) |
+| 모든 수체의 $n=1$ | 증명 (유체론) |
+| $n=2$ 이고 $K=\mathbb Q$ 인 홀수 기약 | 대부분 증명 (Serre 추측, Khare–Wintenberger 2009) |
 | $\mathbb Q$ 위 타원곡선 | 증명 (Wiles–Taylor 1995, Breuil–Conrad–Diamond–Taylor 2001) |
-| 함수체 $\mathbb F_q(X)$, 모든 $n$ | 증명 (Drinfeld $n=2$, L. Lafforgue 일반 $n$) |
+| 함수체 $\mathbb F_q(X)$ 의 모든 $n$ | 증명 (Drinfeld 가 $n=2$ 를, L. Lafforgue 가 일반 $n$ 을) |
 | 일반 수체, $n\ge2$ | 열림 |
 
 함수체에서 먼저 풀린 것이 우연이 아니다. 함수체의 Galois 군은 곡선의 기본군이라 기하학적 대상이고, 모듈라이 공간 위에서 논증을 펼 수 있다. 이 기하적 관점을 복소 곡선으로 옮긴 것이 기하적 Langlands 강령이며, 물리의 게이지 이론과의 연결로도 연구된다.
 
 ## 모듈러 형식과 $\mathrm{GL}_2$
 
-$K=\mathbb Q$, $n=2$ 의 자기동형 표현은 고전적인 모듈러 형식으로 번역된다. 무게 $k$, 레벨 $N$ 의 첨점형식은 상반평면 위의 정칙함수 $f$ 로
+$K=\mathbb Q$ 이고 $n=2$ 인 자기동형 표현은 고전적인 모듈러 형식으로 번역된다. 무게 $k$ 와 레벨 $N$ 의 첨점형식은 상반평면 위의 정칙함수 $f$ 로
 
 $$
 f\Big(\frac{az+b}{cz+d}\Big)=(cz+d)^kf(z)\quad\Big(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\Big)\in\Gamma_0(N)
