@@ -188,6 +188,7 @@ for N in [50, 100, 300, 800, 2000]:
 ## 선수지식
 
 - [매듭 불변량과 Jones 다항식](knot-invariants.md)
+- [Lobachevsky 함수와 쌍곡 사면체의 부피](lobachevsky-function.md)
 
 ## 더 알아보기
 
