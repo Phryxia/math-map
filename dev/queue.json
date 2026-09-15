@@ -1,96 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-15T05:01:40.394Z",
-  "nextSeq": 259,
+  "savedAt": "2026-09-15T09:05:16.400Z",
+  "nextSeq": 272,
   "items": [
-    {
-      "id": "aa0cb897",
-      "title": "질량 공식과 격자의 류",
-      "priority": 10,
-      "note": "siegel-weil 아래 또는 lattices 아래. Minkowski-Siegel 질량 공식, 류와 스피너 류, Niemeier 분류를 세는 데 쓰인 방식",
-      "createdAt": "2026-09-15T04:55:27.550Z",
-      "seq": 257
-    },
-    {
-      "id": "5ec3a69e",
-      "title": "Speh 표현과 잔여 스펙트럼",
-      "priority": 10,
-      "note": "arthur-parameters 아래. Moeglin-Waldspurger 의 GL_n 이산 스펙트럼 분류, 잔여 Eisenstein 급수, CAP 표현과 Saito-Kurokawa",
-      "createdAt": "2026-09-15T05:01:21.900Z",
-      "seq": 258
-    },
-    {
-      "id": "3f2b3e4a",
-      "title": "과수렴 모듈러 기호와 p 진 L 함수",
-      "priority": 4,
-      "note": "modular-symbols 와 p-adic-hodge-theory 아래. Pollack-Stevens 분포 계수, Stevens 조절 정리, Iwasawa 주추측 수치 실험",
-      "createdAt": "2026-09-13T19:06:22.127Z",
-      "seq": 113
-    },
-    {
-      "id": "2cda1a39",
-      "title": "Deuring 대응과 사원수 알고리즘",
-      "priority": 4,
-      "note": "supersingular-isogeny-graphs 아래. 극대차수와 곡선의 사전, KLPT 알고리즘, SQIsign 서명의 뼈대",
-      "createdAt": "2026-09-13T19:09:32.859Z",
-      "seq": 114
-    },
-    {
-      "id": "48c7d7eb",
-      "title": "Fargues-Scholze 기하화와 국소 Langlands",
-      "priority": 4,
-      "note": "geometric-langlands 와 p-adic-hodge-theory 아래. Fargues-Fontaine 곡선, Bun_G 의 p 진 판본, 국소 Langlands 매개변수의 구성",
-      "createdAt": "2026-09-13T19:14:50.519Z",
-      "seq": 117
-    },
-    {
-      "id": "daa5ef08",
-      "title": "Néron-Tate 높이와 하강의 완결",
-      "priority": 4,
-      "note": "birch-swinnerton-dyer 아래. 정준 높이의 이차성, 조절자 계산, Mordell-Weil 증명의 높이 부분",
-      "createdAt": "2026-09-13T19:19:39.233Z",
-      "seq": 118
-    },
-    {
-      "id": "41294605",
-      "title": "애니온과 위상적 양자계산",
-      "priority": 4,
-      "note": "modular-tensor-categories 아래. Fibonacci 애니온의 조밀성, Ising 과 Clifford 군, 분수 양자 홀 효과",
-      "createdAt": "2026-09-13T21:10:53.776Z",
-      "seq": 141
-    },
-    {
-      "id": "4f172ecb",
-      "title": "조화 Maass 형식과 Borcherds 승법",
-      "priority": 4,
-      "note": "mock-modular-forms 아래. Borcherds 곱의 지수가 약정칙 형식 계수, theta 올림, Gross-Kohnen-Zagier",
-      "createdAt": "2026-09-13T21:56:19.313Z",
-      "seq": 147
-    },
-    {
-      "id": "bdcf9bc3",
-      "title": "Beilinson-Bernstein 국소화",
-      "priority": 4,
-      "note": "borel-weil-bott 아래. 깃발다양체 위 D 가군과 g 가군 범주의 동치, BWB 의 층론적 일반화, 범주 O",
-      "createdAt": "2026-09-13T21:59:22.345Z",
-      "seq": 149
-    },
-    {
-      "id": "7d22b0e4",
-      "title": "Brauer 대수와 직교군 쌍대성",
-      "priority": 4,
-      "note": "schur-weyl-duality 아래. O_n, Sp_n 의 텐서공간 중심화대수, 도형 대수와 자취, 제 1 기본정리",
-      "createdAt": "2026-09-13T22:12:22.913Z",
-      "seq": 156
-    },
-    {
-      "id": "faa8bd0b",
-      "title": "Ramanujan 그래프의 명시적 구성",
-      "priority": 4,
-      "note": "expander-graphs 아래. LPS 구성과 사원수 대수, Deligne 경계의 사용, MSS 의 교대 다항식과 이분 Ramanujan 족",
-      "createdAt": "2026-09-13T22:20:36.338Z",
-      "seq": 157
-    },
     {
       "id": "17ea12f7",
       "title": "Witten 점근 추측과 Ohtsuki 급수",
@@ -314,6 +226,110 @@
       "note": "wigner-semicircle 과 marchenko-pastur 가 둘 다 쓰는 구조인데 문서가 없다. 자유 독립성, R 변환과 S 변환, 반원이 자유 CLT 라는 것",
       "createdAt": "2026-09-15T00:58:41.579Z",
       "seq": 248
+    },
+    {
+      "id": "09fa3177",
+      "title": "Kneser 이웃법과 Brandt 행렬",
+      "priority": 4,
+      "note": "mass-formula 아래. p 이웃 그래프, 스피너 류가 연결성분, Hecke 작용소로서의 이웃 행렬, 사원수 쪽 Brandt 행렬과 같은 대상",
+      "createdAt": "2026-09-15T08:40:49.702Z",
+      "seq": 259
+    },
+    {
+      "id": "2e8d1aac",
+      "title": "Tamagawa 수와 Weil 추측",
+      "priority": 4,
+      "note": "adeles 아래. 아델군의 표준 측도, tau(SO_n)=2 와 질량 공식의 동치, 단순연결 반단순군에서 tau=1, Kottwitz 의 증명",
+      "createdAt": "2026-09-15T08:40:49.824Z",
+      "seq": 260
+    },
+    {
+      "id": "5697b765",
+      "title": "Saito-Kurokawa 올림과 CAP 표현",
+      "priority": 4,
+      "note": "speh-representations 아래. Maass 공간, Siegel 모듈러 형식과 Jacobi 형식의 사전, Ramanujan 반례의 정확한 위치, Piatetski-Shapiro 의 표현론적 구성",
+      "createdAt": "2026-09-15T08:43:31.454Z",
+      "seq": 261
+    },
+    {
+      "id": "05251e01",
+      "title": "Bernstein-Zelevinsky 분절과 GL_n 국소 분류",
+      "priority": 4,
+      "note": "speh-representations 의 국소 대응물. 분절과 다중분절, Zelevinsky 쌍대성, 유도표현의 기약성 판정, Langlands 몫",
+      "createdAt": "2026-09-15T08:43:31.588Z",
+      "seq": 262
+    },
+    {
+      "id": "59d31437",
+      "title": "고윳값 다양체 위의 p 진 L 함수 족",
+      "priority": 4,
+      "note": "overconvergent-modular-symbols 아래. 무게를 변수로 하는 분포, Greenberg-Stevens 의 무게 방향 미분, Coleman-Mazur 고윳값 곡선 항목과 합칠 수도 있다",
+      "createdAt": "2026-09-15T08:46:34.760Z",
+      "seq": 263
+    },
+    {
+      "id": "890cf8dd",
+      "title": "Fargues-Fontaine 곡선의 구성과 벡터다발 분류",
+      "priority": 4,
+      "note": "fargues-scholze 아래로 분리할 수 있다. B^{phi=p^d}, 닫힌점과 틸팅, 기울기 유리수 분류, Dieudonne-Manin 과의 대응",
+      "createdAt": "2026-09-15T08:52:31.514Z",
+      "seq": 264
+    },
+    {
+      "id": "1bb6ecbc",
+      "title": "Lang 의 높이 하한 추측",
+      "priority": 4,
+      "note": "canonical-height 아래. 도체에 비례하는 하한, 순위가 큰 곡선의 조절자 통제, Hindry-Silverman 의 부분 결과",
+      "createdAt": "2026-09-15T08:54:53.869Z",
+      "seq": 265
+    },
+    {
+      "id": "6090d14a",
+      "title": "Solovay-Kitaev 정리",
+      "priority": 4,
+      "note": "anyons 아래 또는 독립. 조밀한 부분군에서 다항 길이 근사, 군 정류자 기법, 게이트 컴파일의 기본 정리",
+      "createdAt": "2026-09-15T08:57:25.579Z",
+      "seq": 266
+    },
+    {
+      "id": "05e85f83",
+      "title": "Kudla 강령과 산술 교차수",
+      "priority": 4,
+      "note": "borcherds-products 아래. 특수 순환의 생성함수가 모듈러, Arakelov 높이와 Eisenstein 급수 계수, Gross-Zagier 의 고차원 일반화",
+      "createdAt": "2026-09-15T08:59:34.871Z",
+      "seq": 267
+    },
+    {
+      "id": "03332546",
+      "title": "Riemann-Hilbert 대응과 편향층",
+      "priority": 4,
+      "note": "beilinson-bernstein 이 쓰는 도구인데 문서가 없다. 정칙 홀로노믹 D 가군과 구성가능층의 동치, 편향 t 구조, 교차 코호몰로지",
+      "createdAt": "2026-09-15T09:01:31.032Z",
+      "seq": 268
+    },
+    {
+      "id": "2dd6379b",
+      "title": "분할 대수와 대칭군 쌍대성",
+      "priority": 4,
+      "note": "brauer-algebras 의 형제. S_n 의 중심화대수, Bell 수 차원, gnn-expressivity 와 color-refinement 로 이어진다",
+      "createdAt": "2026-09-15T09:03:10.488Z",
+      "seq": 269
+    },
+    {
+      "id": "3dfff8be",
+      "title": "Alon-Boppana 경계의 증명",
+      "priority": 4,
+      "note": "ramanujan-graphs 아래. 무한 d 정규 나무의 스펙트럼 반지름, 자취 계산으로 하한 유도, 비역행 걷기",
+      "createdAt": "2026-09-15T09:05:04.949Z",
+      "seq": 270
+    },
+    {
+      "id": "cd345008",
+      "title": "교대 족과 Kadison-Singer",
+      "priority": 4,
+      "note": "ramanujan-graphs 에서 MSS 기법을 따로 뗀다. 실안정 다항식, 교대 족, 가중 평균의 근 통제, 이산 기하와 프레임 이론",
+      "createdAt": "2026-09-15T09:05:05.075Z",
+      "seq": 271
     },
     {
       "id": "c512345c",
