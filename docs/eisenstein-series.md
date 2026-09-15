@@ -319,5 +319,6 @@ Eisenstein 급수는 이 구도의 자기동형 형식판이고, Langlands 강�
 - [Mock 모듈러 형식과 Zwegers 이론](mock-modular-forms.md)
 - [Rankin–Selberg 적분](rankin-selberg.md)
 - [Selberg 대각합 공식](selberg-trace-formula.md)
+- [Siegel–Weil 공식과 이차형식의 표현수](siegel-weil.md)
 
 #number_theory #complex_analysis #analysis #computation
