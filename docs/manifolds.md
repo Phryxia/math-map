@@ -134,6 +134,7 @@ print(np.linalg.matrix_rank(dF(x)))  # 1 = dim N, 따라서 전사
 ## 더 알아보기
 
 - [Riemann 계량과 측지선](riemannian-metrics.md)
+- [s-코보디즘 정리와 고차원 Poincaré 추측](s-cobordism.md)
 - [Lie 대수](lie-algebras.md)
 - [미분형식과 Stokes 정리](differential-forms.md)
 

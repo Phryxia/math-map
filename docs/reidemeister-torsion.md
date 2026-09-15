@@ -200,6 +200,6 @@ print("L(7,2) 비틀림 절댓값:", [f"{v:.4f}" for v in torsion_abs(7,2)])
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [s-코보디즘 정리와 고차원 Poincaré 추측](s-cobordism.md)
 
 #algebraic_topology #topology #linear_algebra
