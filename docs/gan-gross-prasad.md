@@ -263,6 +263,6 @@ $n=1$ 의 Waldspurger 정리와 Gross–Zagier 를 합치면 타원곡선 $E/\ma
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Waldspurger 정리와 토릭 주기](waldspurger-formula.md)
 
 #number_theory #group_theory #theorem
