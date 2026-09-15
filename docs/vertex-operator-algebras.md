@@ -65,16 +65,16 @@ $c$ 가 24 의 배수일 때 $q^{-c/24}$ 가 정수 거듭제곱이 되어 지�
 **정점작용소대수**는 네 쌍 $(V,Y,\mathbf 1,\omega)$ 이다.
 
 - $V=\bigoplus_{n\in\mathbb Z}V_n$ 은 각 $V_n$ 이 유한차원이고 아래로 유한한 등급 벡터공간.
-- $Y:V\to\operatorname{End}(V)[[z,z^{-1}]]$, $Y(a,z)=\sum_n a_{(n)}z^{-n-1}$ 은 절단 조건을 만족.
-- $\mathbf 1\in V_0$ 은 **진공**으로 $Y(\mathbf 1,z)=\operatorname{id}$ 이고 $Y(a,z)\mathbf 1\big|_{z=0}=a$.
+- $Y:V\to\operatorname{End}(V)[[z,z^{-1}]]$ 곧 $Y(a,z)=\sum_n a_{(n)}z^{-n-1}$ 은 절단 조건을 만족한다.
+- $\mathbf 1\in V_0$ 은 **진공**으로 $Y(\mathbf 1,z)=\operatorname{id}$ 이고 $Y(a,z)\mathbf 1\big|_{z=0}=a$ 다.
 - $\omega\in V_2$ 는 **Virasoro 원소**로 $Y(\omega,z)=\sum_n L_nz^{-n-2}$ 의 모드가 중심전하 $c$ 의 Virasoro 대수를 이룬다.
 
 $$
 [L_m,L_n]=(m-n)L_{m+n}+\frac{c}{12}m(m^2-1)\delta_{m+n,0}
 $$
 
-- $L_0$ 은 등급을 주고($L_0|_{V_n}=n$), $L_{-1}$ 은 평행이동을 준다($Y(L_{-1}a,z)=\partial_zY(a,z)$).
-- 국소성: 모든 $a,b$ 에 대해 어떤 $N$ 이 있어 $(z-w)^N[Y(a,z),Y(b,w)]=0$.
+- $L_0$ 은 $L_0|_{V_n}=n$ 으로 등급을 주고, $L_{-1}$ 은 $Y(L_{-1}a,z)=\partial_zY(a,z)$ 로 평행이동을 준다.
+- 국소성: 모든 $a,b$ 에 대해 어떤 $N$ 이 있어 $(z-w)^N[Y(a,z),Y(b,w)]=0$ 이다.
 
 $\omega$ 를 빼면 그냥 **정점대수**다. Virasoro 원소가 등급과 모듈러성을 담당하므로, 모듈러 형식 쪽 응용에서는 반드시 필요하다.
 
@@ -181,7 +181,7 @@ $\mathbb Z/2$ 궤도체가 하는 일이 정확히 이 $24$ 를 지우는 것이
 VOA 에 두 가지 유한성 조건을 걸면 지표가 모듈러가 된다.
 
 - **유리성**: 모든 가군이 기약가군의 직합으로 완전분해된다.
-- **$C_2$ 여유한**: $C_2(V)=\operatorname{span}\{a_{(-2)}b\}$ 에 대해 $\dim V/C_2(V)<\infty$.
+- **$C_2$ 여유한**: $C_2(V)=\operatorname{span}\{a_{(-2)}b\}$ 에 대해 $\dim V/C_2(V)<\infty$ 인 것.
 
 Zhu 정리는 이런 $V$ 의 기약가군 $M_1,\dots,M_r$ 의 지표들이 $\mathrm{SL}_2(\mathbb Z)$ 의 작용에 닫혀 있다고 말한다.
 
@@ -203,9 +203,9 @@ graph TD
 
 ## 중심전하 24 의 홀로모픽 VOA
 
-$c=24$, 홀로모픽인 VOA 를 분류하는 문제가 있다. Schellekens 가 무게 1 Lie 대수의 가능한 목록이 71 개임을 계산했고, 각 경우에 VOA 가 유일하게 존재한다는 것이 2010 년대에 대부분 확인되었다. 그 중 $\dim V_1=0$ 인 것이 유일하게 $V^\natural$ 이다.
+$c=24$ 이고 홀로모픽인 VOA 를 분류하는 문제가 있다. Schellekens 가 무게 1 Lie 대수의 가능한 목록이 71 개임을 계산했고, 각 경우에 VOA 가 유일하게 존재한다는 것이 2010 년대에 대부분 확인되었다. 그 중 $\dim V_1=0$ 인 것이 유일하게 $V^\natural$ 이다.
 
-$V^\natural$ 이 $c=24$, 홀로모픽, $\dim V_1=0$ 인 유일한 VOA 라는 명제는 아직 완전히 증명되지 않았고 **Frenkel–Lepowsky–Meurman 추측**으로 남아 있다.
+$V^\natural$ 이 $c=24$ 이고 홀로모픽이며 $\dim V_1=0$ 인 유일한 VOA 라는 명제는 아직 완전히 증명되지 않았고 **Frenkel–Lepowsky–Meurman 추측**으로 남아 있다.
 
 # 활용
 
