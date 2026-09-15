@@ -52,7 +52,7 @@ graph TD
 
 ## Hensel 은 자명하게 수렴하는 Newton 법이다
 
-$f(a)\equiv0\pmod p$ 이고 $f'(a)\not\equiv0\pmod p$ 이면, $a$ 를 법 $p^2$, $p^4$, $p^8$ 의 해로 계속 올릴 수 있다. 갱신식은 [Newton 법](newton-method.md)과 똑같다.
+$f(a)\equiv0\pmod p$ 이고 $f'(a)\not\equiv0\pmod p$ 이면, $a$ 를 법 $p^2,p^4,p^8$ 의 해로 계속 올릴 수 있다. 갱신식은 [Newton 법](newton-method.md)과 똑같다.
 
 $$
 a\ \longmapsto\ a-\frac{f(a)}{f'(a)}
@@ -64,7 +64,7 @@ $$
 
 ## 절댓값과 부치
 
-체 $K$ 위의 **절댓값**은 $|\cdot|\colon K\to\mathbb R_{\ge0}$ 으로 $|x|=0\iff x=0$, $|xy|=|x||y|$, $|x+y|\le|x|+|y|$ 를 만족하는 것이다. $|x+y|\le\max(|x|,|y|)$ 까지 성립하면 **비아르키메데스** 절댓값이라 한다.
+체 $K$ 위의 **절댓값**은 $|\cdot|\colon K\to\mathbb R_{\ge0}$ 으로 $|x|=0\iff x=0$ 과 $|xy|=|x||y|$ 와 $|x+y|\le|x|+|y|$ 를 만족하는 것이다. $|x+y|\le\max(|x|,|y|)$ 까지 성립하면 **비아르키메데스** 절댓값이라 한다.
 
 $\mathbb Q$ 에서 소수 $p$ 를 고정하고 **$p$ 진 부치**를 정의한다.
 
@@ -97,11 +97,11 @@ $$
 
 - 국소환이다. 유일한 극대 아이디얼이 $p\mathbb Z_p$ 이고 잉여체가 $\mathbb Z_p/p\mathbb Z_p\cong\mathbb F_p$ 다.
 - 0 이 아닌 모든 아이디얼이 $p^n\mathbb Z_p$ 다. 곧 이산부치환이다.
-- 모든 원소가 $x=\sum_{i\ge0}a_ip^i$ ($a_i\in\{0,\dots,p-1\}$) 로 유일하게 쓰인다.
+- 모든 원소가 $a_i\in\{0,\dots,p-1\}$ 을 써서 $x=\sum_{i\ge0}a_ip^i$ 로 유일하게 쓰인다.
 - $\varprojlim\mathbb Z/p^n\mathbb Z$ 와 표준적으로 동형이다.
 - 콤팩트하다. $\mathbb Q_p$ 자신은 국소콤팩트이고 완전분리다.
 
-$\mathbb Q_p=\mathbb Z_p[1/p]$ 이고, 0 이 아닌 모든 원소가 $x=p^nu$ ($n\in\mathbb Z$, $u\in\mathbb Z_p^\times$) 로 유일하게 쓰인다. 이것이 곱군의 분해
+$\mathbb Q_p=\mathbb Z_p[1/p]$ 이고, 0 이 아닌 모든 원소가 $n\in\mathbb Z$ 와 $u\in\mathbb Z_p^\times$ 를 써서 $x=p^nu$ 로 유일하게 쓰인다. 이것이 곱군의 분해
 
 $$
 \mathbb Q_p^\times\cong p^{\mathbb Z}\times\mathbb Z_p^\times\cong\mathbb Z\times\mathbb Z_p^\times
@@ -119,7 +119,7 @@ $$
 
 $e$ 는 부치군의 지표(분기지수), $f$ 는 잉여체 확대의 차수다. 수체에서는 여러 소 아이디얼로 갈라지느라 $\sum e_if_i=n$ 이었는데, 국소체에서는 소수가 하나뿐이라 항이 하나로 줄어든다. 국소적으로 보면 분해가 사라지고 분기만 남는다는 뜻이며, 이것이 국소 논증이 단순해지는 이유다.
 
-국소콤팩트 위상체는 분류되어 있다. $\mathbb R$, $\mathbb C$, $\mathbb Q_p$ 의 유한 확대, 그리고 양의 표수 쪽의 $\mathbb F_q((t))$ 가 전부다.
+국소콤팩트 위상체는 분류되어 있다. $\mathbb R$ 과 $\mathbb C$ 와 $\mathbb Q_p$ 의 유한 확대, 그리고 양의 표수 쪽의 $\mathbb F_q((t))$ 가 전부다.
 
 # 성질
 

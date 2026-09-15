@@ -19,7 +19,7 @@ $$
 
 레벨은 $p$ 를 뺀 Artin 도체이고, 무게는 $p$ 자리의 온순 분기 지표의 지수로 정해진다. 표현 하나를 받아 유한한 자료 $(k,N)$ 을 계산하면, 찾아야 할 고유형식이 유한 차원 공간 $S_{k}(\Gamma_1(N))$ 안에 있다고 장소까지 지목한다는 것이다. 추측이 곧 알고리즘인 드문 형태다.
 
-Khare 와 Wintenberger 가 2008 년에 이것을 증명했다.[^2] 증명의 뼈대는 [변형환](deformation-rings.md)이다. $\bar\rho$ 를 조건에 맞는 특성 $0$ 표현으로 **올리고**, 모듈러성 올림 정리($R=T$)로 그 올림이 모듈러임을 보이고, 다시 환원해 $\bar\rho$ 가 모듈러라고 결론짓는다. 올림은 언제나 가능하지 않으므로 소수와 무게를 옮겨 가며 귀납을 돌리는데, 그 귀납이 증명의 핵심 장치다.
+Khare 와 Wintenberger 가 2008 년에 이것을 증명했다.[^2] 증명의 뼈대는 [변형환](deformation-rings.md)이다. $\bar\rho$ 를 조건에 맞는 특성 $0$ 표현으로 **올리고**, 모듈러성 올림 정리($R=T$ 정리)로 그 올림이 모듈러임을 보이고, 다시 환원해 $\bar\rho$ 가 모듈러라고 결론짓는다. 올림은 언제나 가능하지 않으므로 소수와 무게를 옮겨 가며 귀납을 돌리는데, 그 귀납이 증명의 핵심 장치다.
 
 # 직관
 
@@ -69,7 +69,7 @@ $p=23$ 에서는 기약이지만 상이 이면체군에 들어간다. 그러면 
 
 ## 모듈러인 표현
 
-$\bar\rho\colon G_{\mathbb Q}\to\mathrm{GL}_2(\overline{\mathbb F}_p)$ 가 **모듈러**라는 것은 어떤 무게 $k\ge2$, 레벨 $N$, 네벤티푸스 $\varepsilon$ 의 고유형식 $f\in S_k(\Gamma_1(N))$ 과 $\lambda\mid p$ 가 있어
+$\bar\rho\colon G_{\mathbb Q}\to\mathrm{GL}_2(\overline{\mathbb F}_p)$ 가 **모듈러**라는 것은 어떤 무게 $k\ge2$ 와 레벨 $N$ 과 네벤티푸스 $\varepsilon$ 의 고유형식 $f\in S_k(\Gamma_1(N))$ 과 $\lambda\mid p$ 가 있어
 
 $$
 \bar\rho\;\cong\;\bar\rho_{f,\lambda}
@@ -88,14 +88,14 @@ $$
 
 **약한 형태.** 연속, 기약, 홀수인 $\bar\rho$ 는 모듈러다.
 
-**강한 형태.** 그런 $\bar\rho$ 는 무게 $k(\bar\rho)$, 레벨 $N(\bar\rho)$ 에서 모듈러다. 두 값은 다음으로 정한다.
+**강한 형태.** 그런 $\bar\rho$ 는 무게 $k(\bar\rho)$ 와 레벨 $N(\bar\rho)$ 에서 모듈러다. 두 값은 다음으로 정한다.
 
 $$
 N(\bar\rho)=\prod_{\ell\ne p}\ell^{\,n_\ell},\qquad
 n_\ell=\sum_{i\ge0}\frac{|G_i|}{|G_0|}\dim\bigl(V/V^{G_i}\bigr)
 $$
 
-$G_i$ 는 $\ell$ 에서의 상위 분기군, $V=\overline{\mathbb F}_p^2$ 다. 무게는 $\bar\rho|_{I_p}$ 로 정한다. $p>2$ 인 온순한 경우를 예로 들면, 관성군의 작용이 $\chi^a\oplus\chi^b$ ($0\le a<b\le p-2$, $\chi$ 는 mod $p$ 순환지표)로 분해되고 표현이 $I_p$ 에서 분해되면
+$G_i$ 는 $\ell$ 에서의 상위 분기군, $V=\overline{\mathbb F}_p^2$ 다. 무게는 $\bar\rho|_{I_p}$ 로 정한다. $p>2$ 인 온순한 경우를 예로 들면, 관성군의 작용이 $\chi^a\oplus\chi^b$ 로 분해되고(여기서 $0\le a<b\le p-2$ 이고 $\chi$ 는 mod $p$ 순환지표다) 표현이 $I_p$ 에서 분해되면
 
 $$
 k(\bar\rho)=1+pa+b
@@ -218,7 +218,7 @@ print("\n두 소수 모두에서 상이 작아지고, 그 작아진 만큼이 �
 
 $691$ 에서는 $\bar\rho_{\Delta,691}$ 가 가약하다. Serre 추측의 가정을 벗어나므로 추측이 할 말이 없고, 대신 그 가약성 자체가 Eisenstein 급수와의 합동이라는 고전적 사실로 설명된다. 기약성 가정이 장식이 아니라는 증거다.
 
-$23$ 에서는 기약이지만 상이 $\mathbb Q(\sqrt{-23})$ 의 힐베르트 유체에 대응하는 이면체군에 들어간다. 그래서 $\tau(p)\bmod23$ 이 $p$ 의 분해 방식으로 결정되고, 세 갈래가 나온다. 불활성이면 $0$, 주 아이디얼로 분해하면 $2$, 분해하지만 주 아이디얼이 아니면 $-1$ 이다. 여기서 무게는 $k(\bar\rho)=2$, 레벨은 $N(\bar\rho)=23$ 이고, 실제로 $S_2(\Gamma_0(23))$ 는 2 차원이며 그 안의 고유형식이 $\Delta$ 와 mod $23$ 에서 합동이다. Serre 의 공식이 지목한 자리에 형식이 정말로 있다.
+$23$ 에서는 기약이지만 상이 $\mathbb Q(\sqrt{-23})$ 의 힐베르트 유체에 대응하는 이면체군에 들어간다. 그래서 $\tau(p)\bmod23$ 이 $p$ 의 분해 방식으로 결정되고, 세 갈래가 나온다. 불활성이면 $0$ 이고, 주 아이디얼로 분해하면 $2$ 이며, 분해하지만 주 아이디얼이 아니면 $-1$ 이다. 여기서 무게는 $k(\bar\rho)=2$ 이고 레벨은 $N(\bar\rho)=23$ 이다. 실제로 $S_2(\Gamma_0(23))$ 는 2 차원이며 그 안의 고유형식이 $\Delta$ 와 mod $23$ 에서 합동이다. Serre 의 공식이 지목한 자리에 형식이 정말로 있다.
 
 $\Delta$ 의 예외적 소수가 $2,3,5,7,23,691$ 로 유한한 것은 우연이 아니다. Serre 가 증명했듯 무게가 고정된 고유형식에서 상이 작아지는 소수는 언제나 유한하고, 그 목록을 뽑는 일이 mod $p$ 표현론의 표준 계산이 되었다.
 
@@ -228,13 +228,13 @@ $\Delta$ 의 예외적 소수가 $2,3,5,7,23,691$ 로 유한한 것은 우연이
 - **합동의 원천.** $\tau$ 의 합동처럼 계수 사이의 합동은 대개 mod $p$ 표현의 상이 작아진 흔적이다. 어떤 합동이 가능한지는 상이 될 수 있는 부분군의 분류로 결정된다.
 - **$p$ 진 Langlands 의 잔여 입력.** 모듈러성 올림 정리는 언제나 잔여표현의 모듈러성을 가정에 둔다. Serre 추측이 $\mathrm{GL}_2/\mathbb Q$ 에서 그 가정을 제거해 주었고, 그 덕에 [Fontaine–Mazur 추측](fontaine-mazur.md)의 $\mathrm{GL}_2$ 경우가 조건 없는 정리가 되었다.
 
-[^1]: J.-P. Serre, *Sur les représentations modulaires de degré 2 de* $\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)$, Duke Math. J. **54** (1987), 179–230. 추측의 원전이고 무게·레벨 공식과 $\Delta$ 의 예외적 소수 계산이 여기 있다.
+[^1]: J.-P. Serre, *Sur les représentations modulaires de degré 2 de Gal(Q̄/Q)*, Duke Math. J. **54** (1987), 179–230. 추측의 원전이고 무게·레벨 공식과 $\Delta$ 의 예외적 소수 계산이 여기 있다.
 
 [^2]: C. Khare, J.-P. Wintenberger, *Serre's modularity conjecture I, II*, Invent. Math. **178** (2009), 485–504, 505–586.
 
 [^3]: K. A. Ribet, *On modular representations of* $\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)$ *arising from modular forms*, Invent. Math. **100** (1990), 431–476. 레벨 낮추기와 약한 형태에서 강한 형태로의 환원.
 
-[^4]: H. P. F. Swinnerton-Dyer, *On* $\ell$-*adic representations and congruences for coefficients of modular forms*, Modular Functions of One Variable III (1973), 1–55. $\tau$ 의 예외적 소수와 mod $23$ 의 세 갈래 법칙.
+[^4]: H. P. F. Swinnerton-Dyer, *On ℓ-adic representations and congruences for coefficients of modular forms*, Modular Functions of One Variable III (1973), 1–55. $\tau$ 의 예외적 소수와 mod $23$ 의 세 갈래 법칙.
 
 # 연관 문서
 
