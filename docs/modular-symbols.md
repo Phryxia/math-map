@@ -279,5 +279,6 @@ Pollack–Stevens 의 **과수렴 모듈러 기호**는 계수 가군 $V_{k-2}$ 
 ## 더 알아보기
 
 - [Merel 의 일양 유계성 정리](merel-theorem.md)
+- [과수렴 모듈러 기호와 p 진 L 함수](overconvergent-modular-symbols.md)
 
 #number_theory #computation #algebraic_topology

@@ -264,5 +264,6 @@ $\mathbb R$ 와 $\mathbb Q_p$ 는 $\mathbb Q$ 의 완비화라는 점에서 대�
 - [아델과 이델](adeles.md)
 - [국소 유체론과 Lubin–Tate 형식군](local-class-field-theory.md)
 - [Newton 다각형](newton-polygon.md)
+- [과수렴 모듈러 기호와 p 진 L 함수](overconvergent-modular-symbols.md)
 
 #number_theory #analysis #field_theory
