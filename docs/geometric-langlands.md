@@ -184,6 +184,6 @@ Kapustin–Witten 은 4차원 $\mathcal N=4$ 초대칭 게이지 이론을 곡�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Fargues–Scholze 기하화와 국소 Langlands](fargues-scholze.md)
 
 #number_theory #category_theory #algebraic_topology #group_theory
