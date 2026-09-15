@@ -214,6 +214,7 @@ Shor 알고리즘은 타원곡선 이산로그도 다항시간에 푼다. 오히
 
 - [Weil 쌍과 쌍선형 암호](pairing-based-cryptography.md)
 - [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
+- [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md)
 - [Langlands 강령](langlands-program.md)
 - [모듈러 곡선 X_0(N)](modular-curves.md)
 - [복소 곱셈과 허수이차체의 유체론](complex-multiplication.md)
