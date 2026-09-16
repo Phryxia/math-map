@@ -240,6 +240,7 @@ Gauss 잡음 채널에서 격자 부호가 용량에 접근하며, $E_8$ 과 Lee
 
 - [내적 공간](inner-product-spaces.md)
 - [행렬식](determinants.md)
+- [정수론 개관](number-theory-overview.md)
 
 ## 더 알아보기
 

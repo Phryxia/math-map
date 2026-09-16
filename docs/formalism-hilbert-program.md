@@ -102,6 +102,7 @@ PRA에 epsilon_0까지의 초한귀납법을 더한 체계는 PA의 무모순성
 
 - [1차 논리](first-order-logic.md)
 - [Gödel 불완전성 정리](godel-incompleteness.md)
+- [수학기초론 개관](foundations-overview.md)
 
 ## 더 알아보기
 

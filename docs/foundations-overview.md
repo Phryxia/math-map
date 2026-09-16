@@ -1,0 +1,83 @@
+# 수학기초론 개관
+
+# 개요
+
+수학기초론은 수학 자체를 대상으로 삼는다. 수학적 대상이 무엇인지(수리철학), 무엇을 말할 수 있는지(논리), 무엇 위에 세우는지(집합론), 무엇을 기계적으로 할 수 있는지(계산 가능성)를 묻는다. 네 물음은 20 세기 초 역설의 충격에서 함께 태어났고, Gödel 의 불완전성 정리가 넷을 한 자리에 묶는다.
+
+이 지도의 두 뿌리 [집합](sets.md)과 [명제와 증명](proofs.md)이 각각 무대와 언어를 준다. 거기서 [1차 논리](first-order-logic.md)로 가면 [ZFC 공리계](zfc-axioms.md)와 [Gödel 불완전성 정리](godel-incompleteness.md)가 나오고, [가산성](cardinality.md)으로 가면 [계산 가능성](computability.md)이 나온다. 수리철학의 다섯 입장, 곧 [플라톤주의](mathematical-platonism.md), [논리주의](logicism.md), [형식주의](formalism-hilbert-program.md), [직관주의](intuitionism.md), [구조주의](mathematical-structuralism.md)는 이 기술적 결과에 대한 서로 다른 해석이다. 다섯 문서를 따로 읽으면 각자 한 입장만 보이므로 여기서 한 줄로 세운다.
+
+# 지도
+
+```mermaid
+graph TD
+  S["집합"] --> F["함수"] --> CD["가산성"] --> CM["계산 가능성"] --> GD["Gödel 불완전성"]
+  P["명제와 증명"] --> FOL["1차 논리"] --> ZFC["ZFC 공리계"] --> OR["서수"] --> AC["선택공리"]
+  ZFC --> CH["연속체 가설"]
+  FOL --> GD --> FM["형식주의"]
+  FOL --> LG["논리주의"]
+  PL["플라톤주의"] --> LG
+  P --> IN["직관주의"] --> KR["Kripke 의미론"] --> HA["Heyting algebra"]
+  IN --> CH2["Curry–Howard"]
+  CM --> LC["Lambda calculus"] --> CH2
+  ST["구조주의"] --> SST["구조적 집합론"]
+  ZFC --> SST
+```
+
+# 갈래
+
+## 수리철학
+
+수학적 대상은 어디에 있고 증명은 무엇을 하는가. 다섯 답이다.
+
+- [수학적 플라톤주의](mathematical-platonism.md): 대상은 우리와 무관하게 존재하고 증명은 발견이다
+- [논리주의와 Frege 프로그램](logicism.md): 수학은 논리로 환원된다
+- [형식주의와 Hilbert 프로그램](formalism-hilbert-program.md): 수학은 규칙이 지배하는 기호이고 무모순성이 전부다
+- [직관주의](intuitionism.md): 대상은 정신의 구성이고 참은 증명을 가졌다는 뜻이다
+- [수학적 구조주의](mathematical-structuralism.md) → [구조적 집합론과 동형 불변성](structural-set-theory.md): 대상은 구조 안의 자리다
+
+## 논리
+
+- [명제와 증명](proofs.md) → [1차 논리](first-order-logic.md): 구문과 의미, 건전성과 완전성
+- [Compactness 정리와 Löwenheim–Skolem 정리](lowenheim-skolem.md): 1차 논리가 크기를 구별하지 못한다
+- [Gödel 불완전성 정리](godel-incompleteness.md): 산술을 담는 체계는 자기 무모순성을 증명하지 못한다
+- [직관주의](intuitionism.md) → [Kripke 의미론](kripke-semantics.md) → [Heyting algebra](heyting-algebras.md); [Boolean algebra](boolean-algebras.md)는 고전 쪽 대응물
+- [Curry–Howard 대응](curry-howard.md): 증명이 프로그램이다
+
+## 집합론
+
+- [집합](sets.md) → [함수](functions.md), [동치관계](relations.md) → [부분순서](partial-orders.md)
+- [가산성과 비가산성](cardinality.md): 대각선 논법과 무한의 크기
+- [ZFC 공리계](zfc-axioms.md) → [서수와 초한귀납법](ordinals.md) → [선택공리와 Zorn 보조정리](axiom-of-choice.md), [연속체 가설과 독립성](continuum-hypothesis.md)
+
+## 계산 가능성
+
+- [계산 가능성과 정지 문제](computability.md) → [Lambda calculus](lambda-calculus.md), [Rice 정리](rice-theorem.md), [유한 오토마타](finite-automata.md)
+- [영역 이론과 Kleene 고정점 정리](domain-theory.md): 재귀의 의미론
+- [Galois 연결](galois-connections.md) → [추상해석](abstract-interpretation.md): 순서 이론이 프로그램 분석이 되는 자리
+
+# 빈자리
+
+- 자연수의 Peano 공리와 귀납법의 지위: 불완전성 정리가 전제하는데 문서가 없다.
+- 모형론 입문(구조, 기본 확대, 양화사 소거): Löwenheim–Skolem 다음 단계.
+- 강제법(forcing): 연속체 가설 문서가 결과만 인용한다.
+- 역수학: 직관주의 문서가 언급만 한다.
+- 범주론적 기초와 토포스: 구조적 집합론에서 이어져야 할 줄기.
+- 타입 이론과 일가성 공리(HoTT): Curry–Howard 와 구조주의가 만나는 자리.
+
+# 연관 문서
+
+## 선수지식
+
+- [집합](sets.md)
+- [명제와 증명](proofs.md)
+
+## 더 알아보기
+
+- [수학적 플라톤주의](mathematical-platonism.md)
+- [논리주의와 Frege 프로그램](logicism.md)
+- [형식주의와 Hilbert 프로그램](formalism-hilbert-program.md)
+- [직관주의](intuitionism.md)
+- [수학적 구조주의](mathematical-structuralism.md)
+- [ZFC 공리계](zfc-axioms.md)
+
+#foundations #philosophy_of_math #logic #set_theory #overview

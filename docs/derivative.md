@@ -110,15 +110,23 @@ $$
 
 ## 더 알아보기
 
+### 해석
+
 - [미적분학의 기본 정리](fundamental-calculus.md)
-- [곡률](curvature.md)
-- [경사하강법](gradient-descent.md)
-- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
-- [Lagrange 쌍대성과 KKT 조건](lagrange-duality.md)
-- [다양체](manifolds.md)
-- [최대가능도 추정](maximum-likelihood.md)
-- [상미분방정식](ordinary-differential-equations.md)
 - [멱급수와 Taylor 급수](power-series.md)
+- [상미분방정식](ordinary-differential-equations.md)
+- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
+
+### 최적화와 통계
+
 - [Newton 법](newton-method.md)
+- [경사하강법](gradient-descent.md)
+- [Lagrange 쌍대성과 KKT 조건](lagrange-duality.md)
+- [최대가능도 추정](maximum-likelihood.md)
+
+### 기하
+
+- [다양체](manifolds.md)
+- [곡률](curvature.md)
 
 #analysis

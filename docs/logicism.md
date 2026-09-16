@@ -190,6 +190,7 @@ Peano 공리 중 셋은 그대로 확인되지만 마지막이 실패한다. 유
 
 - [수학적 플라톤주의](mathematical-platonism.md)
 - [1차 논리](first-order-logic.md)
+- [수학기초론 개관](foundations-overview.md)
 
 ## 더 알아보기
 

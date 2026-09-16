@@ -145,6 +145,7 @@ $$
 ## 선수지식
 
 - [동치관계와 동치류](relations.md)
+- [정수론 개관](number-theory-overview.md)
 
 ## 더 알아보기
 

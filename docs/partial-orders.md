@@ -138,13 +138,21 @@ $P$ 의 원소를 대상으로 삼고 $x \le y$ 일 때 $x$ 에서 $y$ 로 가�
 
 ## 더 알아보기
 
+### 순서와 격자
+
+- [Galois 연결과 완비 격자](galois-connections.md)
+- [Boolean algebra](boolean-algebras.md)
+- [Heyting algebra](heyting-algebras.md)
+
+### 집합론
+
+- [서수와 초한귀납법](ordinals.md)
+- [선택공리와 Zorn 보조정리](axiom-of-choice.md)
+
+### 그래프, 범주, 논리
+
 - [DAG와 위상정렬](dag-topological.md)
 - [범주](category.md)
 - [직관주의 논리의 Kripke 의미론](kripke-semantics.md)
-- [선택공리와 Zorn 보조정리](axiom-of-choice.md)
-- [서수와 초한귀납법](ordinals.md)
-- [Heyting algebra](heyting-algebras.md)
-- [Boolean algebra](boolean-algebras.md)
-- [Galois 연결과 완비 격자](galois-connections.md)
 
 #order_theory #set_theory

@@ -116,6 +116,7 @@ $$
 
 - [동치관계와 동치류](relations.md)
 - [군](groups.md)
+- [수학기초론 개관](foundations-overview.md)
 
 ## 더 알아보기
 
