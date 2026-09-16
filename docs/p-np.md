@@ -2,7 +2,7 @@
 
 # 개요
 
-[계산 가능성](computability.md)은 알고리즘의 존재를 묻고, 정지 문제로 존재하지 않는 경우를 찾아냈다. P 대 NP 는 존재하는 알고리즘의 비용을 묻는다. 답을 보면 빠르게 확인되는 문제를 답을 찾는 것도 빠르게 할 수 있는가. 스도쿠의 완성된 판은 한눈에 검증되지만 빈 판에서 답을 찾는 데는 알려진 빠른 방법이 없다. 이 간극이 본질적인지는 미해결이다.
+[계산 가능성](computability.md)은 알고리즘의 존재를 묻고, 정지 문제로 존재하지 않는 경우를 찾아냈다. P 대 NP 는 존재하는 알고리즘의 비용을 묻는다. 답을 보면 빠르게 확인되는 문제를 답을 찾는 것도 빠르게 할 수 있는가. 스도쿠의 완성된 판은 한눈에 검증되지만 빈 판에서 답을 찾는 데는 알려진 빠른 방법이 없다. 이 간극이 본질적인지가 Clay Mathematics Institute 가 내건 일곱 문제 중 하나이며 아직 답이 없다[^1].
 
 # 직관
 
@@ -10,7 +10,7 @@
 
 NP 문제는 모두 어떤 대상의 존재를 묻는 형태로 쓸 수 있다. 만족하는 변수 배정이 존재하는가, 모든 도시를 도는 짧은 경로가 존재하는가, 이 정리의 짧은 증명이 존재하는가. 답이 예이면 짧고 빠르게 검증되는 증거가 있다.
 
-$\mathrm P=\mathrm{NP}$ 이면 증거를 찾는 일이 검증만큼 싸진다. 정리의 증명을 자동으로 찾을 수 있고, 최적 설계와 최적 일정이 즉시 계산되며, 대부분의 공개키 암호가 무너진다. 대다수 연구자는 $\mathrm P\ne\mathrm{NP}$ 를 예상하지만 증명은 없다.
+$\mathrm P=\mathrm{NP}$ 이면 증거를 찾는 일이 검증만큼 싸진다. 정리의 증명을 자동으로 찾을 수 있고, 최적 설계와 최적 일정이 즉시 계산되며, 대부분의 공개키 암호가 무너진다. 연구자 대상 설문에서는 $\mathrm P\ne\mathrm{NP}$ 를 예상하는 응답이 다수였다[^3].
 
 ## 다항시간 경계
 
@@ -45,11 +45,11 @@ $$
 | $\mathrm{EXPTIME}$ | 지수시간에 판정 가능 |
 | $\mathrm{BPP}$ | 무작위 다항시간, 오답 확률 유계 |
 
-알려진 포함 관계는 $\mathrm P\subseteq\mathrm{NP}\subseteq\mathrm{PSPACE}\subseteq\mathrm{EXPTIME}$ 이고, $\mathrm P\subsetneq\mathrm{EXPTIME}$ 은 시간 계층 정리로 증명되어 있다. 따라서 이 사슬의 어딘가에 진포함이 있으나 어디인지는 알려져 있지 않다.
+알려진 포함 관계는 $\mathrm P\subseteq\mathrm{NP}\subseteq\mathrm{PSPACE}\subseteq\mathrm{EXPTIME}$ 이고, $\mathrm P\subsetneq\mathrm{EXPTIME}$ 은 시간 계층 정리로 증명되어 있다. 두 사실을 합치면 사슬의 세 포함 중 적어도 하나는 진포함이다. 어느 것인지는 판정되지 않았다[^1].
 
 # 성질
 
-## P ⊆ NP
+## P 와 NP 의 포함 관계
 
 $\mathrm P$ 의 문제는 증명서를 무시하고 직접 판정하면 되므로
 
@@ -57,7 +57,7 @@ $$
 \mathrm{P}\subseteq\mathrm{NP}
 $$
 
-이다. 이 포함이 등호인지 진포함인지가 문제다. 2026-09-12 에 확인한 Clay Mathematics Institute 의 문제 페이지는 미해결로 분류한다.
+이다. 이 포함이 등호인지 진포함인지가 문제이고, 어느 쪽도 증명되어 있지 않다[^2].
 
 ## NP-완전 문제의 역할
 
@@ -104,9 +104,11 @@ NP 문제는 모두 결정 가능하다. 증명서 후보가 유한하므로 전
 - **휴리스틱.** 최악의 경우를 포기하면 SAT 솔버와 정수계획 솔버가 수십만 변수의 산업 문제를 푼다.
 - **암호의 전제.** 공개키 암호는 계산의 비대칭에 기댄다. $\mathrm P=\mathrm{NP}$ 이면 비대칭이 무너진다. 다만 암호에는 최악의 경우가 아니라 평균적인 경우의 어려움이 필요하므로 $\mathrm P\ne\mathrm{NP}$ 만으로는 부족하다.
 
-경계는 좁다. 2-SAT 은 다항시간이고 3-SAT 은 NP-완전이며, 이분 매칭은 다항시간이고 3차원 매칭은 NP-완전이다. 특정 탐색 방법이 지수시간이어도 하한은 나오지 않는다. 하한은 가능한 모든 알고리즘에 대한 논증을 요구한다.[^1]
+경계는 좁다. 2-SAT 은 다항시간이고 3-SAT 은 NP-완전이며, 이분 매칭은 다항시간이고 3차원 매칭은 NP-완전이다. 특정 탐색 방법이 지수시간이어도 하한은 나오지 않는다. 하한은 가능한 모든 알고리즘에 대한 논증을 요구한다.
 
-[^1]: Stephen Cook, *The P versus NP Problem*, Clay Mathematics Institute 공식 문제 설명. 계산 모델, NP 의 정의와 NP-완전성. https://www.claymath.org/wp-content/uploads/2022/06/pvsnp.pdf
+[^1]: Stephen Cook, *The P versus NP Problem*, Clay Mathematics Institute 공식 문제 설명. 계산 모델, NP 의 정의와 NP-완전성, 그리고 알려진 포함 관계 가운데 어느 것이 진포함인지 판정되지 않았다는 서술. https://www.claymath.org/wp-content/uploads/2022/06/pvsnp.pdf
+[^2]: Clay Mathematics Institute, Millennium Problems 의 P vs NP 항목. 2026-09-12 에 미해결로 분류되어 있음을 확인했다. https://www.claymath.org/millennium/p-vs-np/
+[^3]: William Gasarch, "The P=?NP poll", SIGACT News 33 (2002), 34–47 과 2012, 2019 의 후속 설문.
 
 # 연관 문서
 
@@ -118,4 +120,4 @@ NP 문제는 모두 결정 가능하다. 증명서 후보가 유한하므로 전
 
 - [NP-완전성과 Cook–Levin 정리](np-completeness.md)
 
-#complexity
+#complexity #computation #algorithms
