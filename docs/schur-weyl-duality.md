@@ -4,8 +4,8 @@
 
 $V=\mathbb C^n$ 을 잡고 그 $k$ 중 텐서곱 $V^{\otimes k}$ 를 본다. 이 공간에는 두 군이 자연스럽게 작용한다.
 
-- $\mathrm{GL}_n(\mathbb C)$ 가 각 자리에 똑같이 작용한다. $g\cdot(v_1\otimes\cdots\otimes v_k)=gv_1\otimes\cdots\otimes gv_k$.
-- 대칭군 $S_k$ 가 자리를 바꾼다. $\sigma\cdot(v_1\otimes\cdots\otimes v_k)=v_{\sigma^{-1}(1)}\otimes\cdots\otimes v_{\sigma^{-1}(k)}$.
+- $\mathrm{GL}_n(\mathbb C)$ 가 각 자리에 똑같이 작용한다. $g\cdot(v_1\otimes\cdots\otimes v_k)=gv_1\otimes\cdots\otimes gv_k$ 이다.
+- 대칭군 $S_k$ 가 자리를 바꾼다. $\sigma\cdot(v_1\otimes\cdots\otimes v_k)=v_{\sigma^{-1}(1)}\otimes\cdots\otimes v_{\sigma^{-1}(k)}$ 이다.
 
 두 작용은 서로 교환한다. 자리를 바꾸고 같은 행렬을 먹이나, 먹이고 자리를 바꾸나 결과가 같기 때문이다. 여기까지는 확인만 하면 되는 사실이다.
 
@@ -65,7 +65,7 @@ graph TD
 
 ## 두 작용과 이중 중심화
 
-$\rho:\mathbb C[S_k]\to\mathrm{End}(V^{\otimes k})$ 와 $\pi:\mathbb C[\mathrm{GL}_n]\to\mathrm{End}(V^{\otimes k})$ 를 위 작용으로 두고 상을 각각 $\mathcal S$, $\mathcal G$ 라 하자.
+$\rho:\mathbb C[S_k]\to\mathrm{End}(V^{\otimes k})$ 와 $\pi:\mathbb C[\mathrm{GL}_n]\to\mathrm{End}(V^{\otimes k})$ 를 위 작용으로 두고 상을 각각 $\mathcal S$ 와 $\mathcal G$ 라 하자.
 
 **정리 (Schur, 1901; Weyl, 1939)**
 
@@ -73,7 +73,7 @@ $$
 \mathrm{End}_{\mathcal G}(V^{\otimes k})=\mathcal S,\qquad \mathrm{End}_{\mathcal S}(V^{\otimes k})=\mathcal G
 $$
 
-따라서 $\mathcal G$-$\mathcal S$ 이중가군으로서
+따라서 $(\mathcal G,\mathcal S)$ 이중가군으로서
 
 $$
 V^{\otimes k}\cong\bigoplus_{\substack{\lambda\vdash k\\ \ell(\lambda)\le n}} V_{\lambda}\otimes S^{\lambda}
@@ -105,7 +105,7 @@ $$
 
 ## 지표 판본
 
-두 작용의 지표를 동시에 취하면 대칭함수 항등식이 나온다. $g\in\mathrm{GL}_n$ 의 고윳값을 $x_1,\dots,x_n$, $\sigma\in S_k$ 의 순환형을 $\mu$ 라 할 때
+두 작용의 지표를 동시에 취하면 대칭함수 항등식이 나온다. $g\in\mathrm{GL}_n$ 의 고윳값을 $x_1,\dots,x_n$ 으로, $\sigma\in S_k$ 의 순환형을 $\mu$ 라 할 때
 
 $$
 \mathrm{tr}\left((g\otimes\sigma)\big|_{V^{\otimes k}}\right)=p_{\mu}(x)=\sum_{\lambda\vdash k}\chi^{\lambda}(\mu)\,s_{\lambda}(x)
@@ -212,7 +212,7 @@ print("\n모든 경우에서 차원이 맞는다")
 # 모든 경우에서 차원이 맞는다
 ```
 
-$n=k=2$ 행이 $V\otimes V=\mathrm{Sym}^2\oplus\Lambda^2$ 를 그대로 보여 준다. 분할 $(2)$ 가 대칭 부분으로 $\dim\mathrm{Sym}^2\mathbb C^2=3$, $(1,1)$ 이 반대칭 부분으로 $1$ 이고 $S_2$ 쪽 중복도는 둘 다 $1$ 이다.
+$n=k=2$ 행이 $V\otimes V=\mathrm{Sym}^2\oplus\Lambda^2$ 를 그대로 보여 준다. 분할 $(2)$ 가 대칭 부분으로 $\dim\mathrm{Sym}^2\mathbb C^2=3$ 이고, $(1,1)$ 이 반대칭 부분으로 $1$ 이고 $S_2$ 쪽 중복도는 둘 다 $1$ 이다.
 
 $n=2,k=3$ 행이 더 흥미롭다. 분할 $(2,1)$ 에서 $f^{(2,1)}=2$ 이므로 $\mathrm{GL}_2$ 의 2 차원 표현이 **중복도 2** 로 나타난다. 그 중복도가 $S_3$ 의 2 차원 기약표현의 차원이라는 것이 쌍대성의 내용이고, $4+2\times2=8=2^3$ 로 닫힌다.
 

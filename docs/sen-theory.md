@@ -72,9 +72,9 @@ $$
 
 ## 설정
 
-$K/\mathbb Q_p$ 를 유한 확장, $K_\infty=K(\mu_{p^\infty})$, $\Gamma=\mathrm{Gal}(K_\infty/K)$, $\chi:\Gamma\to\mathbb Z_p^\times$ 를 순환분체 지표라 하자. $\widehat{K_\infty}$ 를 $K_\infty$ 의 완비화라 한다.
+$K/\mathbb Q_p$ 를 유한 확장이라 하고, $K_\infty=K(\mu_{p^\infty})$ 와 $\Gamma=\mathrm{Gal}(K_\infty/K)$ 로 두고, $\chi:\Gamma\to\mathbb Z_p^\times$ 를 순환분체 지표라 하자. $\widehat{K_\infty}$ 를 $K_\infty$ 의 완비화라 한다.
 
-$W$ 를 $\mathbb C_p$ 위의 유한차원 반선형 $G_K$ 표현이라 하자(예: $W=\mathbb C_p\otimes_{\mathbb Q_p}V$).
+$W$ 를 $\mathbb C_p$ 위의 유한차원 반선형 $G_K$ 표현이라 하자. 예를 들면 $W=\mathbb C_p\otimes_{\mathbb Q_p}V$ 다.
 
 > **정리 (Sen).** $W$ 에는 $\Gamma$ 안정인 $K_\infty$ 위의 유한차원 부분공간 $W_{K_\infty}$ 가 있고, $\mathbb C_p\otimes_{K_\infty}W_{K_\infty}\cong W$ 다. 이 하강은 충분히 큰 부분에 대해 유일하다.
 
@@ -189,7 +189,7 @@ for (a, b, c) in [(1, 0, p*p), (2, 5, p*p*7), (3, 3, p*p), (3, 3, 0)]:
 
 $\Theta$ 는 Hodge–Tate 무게만 본다. $B_{\mathrm{dR}}$ 이 보는 여과, $B_{\mathrm{cris}}$ 가 보는 Frobenius 는 $\Theta$ 에 나타나지 않는다. 곧 Sen 이론은 사다리의 **가장 아래 칸만 완전히 해명한다.**
 
-이것을 위로 올리려는 것이 Sen 이론의 여러 확장이다. $B_{\mathrm{dR}}$ 수준의 Sen 작용소(Fontaine), $\varphi$–$\Gamma$ 가군 위에서의 Sen 작용소(Colmez, Kedlaya–Liu), 최근의 프리즘 관점(Bhatt–Lurie)이 그런 시도들이다. 공통점은 $\Gamma$ 작용을 미분해 얻은 작용소가 표현의 불변량을 담는다는 착상이다.
+이것을 위로 올리려는 것이 Sen 이론의 여러 확장이다. $B_{\mathrm{dR}}$ 수준의 Sen 작용소(Fontaine), $(\varphi,\Gamma)$ 가군 위에서의 Sen 작용소(Colmez, Kedlaya–Liu), 최근의 프리즘 관점(Bhatt–Lurie)이 그런 시도들이다. 공통점은 $\Gamma$ 작용을 미분해 얻은 작용소가 표현의 불변량을 담는다는 착상이다.
 
 # 활용
 
@@ -203,10 +203,10 @@ Fontaine–Mazur 추측 쪽 작업에서 어떤 표현이 기하에서 오는지
 
 ## 국소 Langlands 의 $p$ 진 판
 
-$\varphi$–$\Gamma$ 가군의 언어에서 $\Gamma$ 작용의 미분이 곧 Sen 작용소이고, 그것이 $p$ 진 국소 Langlands 대응에서 무한소 자료의 역할을 한다. $\mathrm{GL}_2(\mathbb Q_p)$ 의 경우 Colmez 의 대응에서 Sen 무게가 표현 쪽의 무한소 지표로 옮겨간다. 아르키메데스 자리에서 $(\mathfrak g,K)$ 가군의 무한소 지표가 하던 일을 $p$ 진 자리에서 $\Theta$ 가 한다.
+$(\varphi,\Gamma)$ 가군의 언어에서 $\Gamma$ 작용의 미분이 곧 Sen 작용소이고, 그것이 $p$ 진 국소 Langlands 대응에서 무한소 자료의 역할을 한다. $\mathrm{GL}_2(\mathbb Q_p)$ 의 경우 Colmez 의 대응에서 Sen 무게가 표현 쪽의 무한소 지표로 옮겨간다. 아르키메데스 자리에서 $(\mathfrak g,K)$ 가군의 무한소 지표가 하던 일을 $p$ 진 자리에서 $\Theta$ 가 한다.
 
 [^1]: S. Sen, *Continuous cohomology and p-adic Galois representations*, Ann. of Math. **97** (1973) 과 *Lie algebras of Galois groups arising from Hodge–Tate modules*, Ann. of Math. **97** (1973). 표준 서술은 J.-M. Fontaine, Y. Ouyang, *Theory of p-adic Galois Representations* (미출간 교재) 3 장, 또는 O. Brinon, B. Conrad, *CMI Summer School Notes on p-adic Hodge Theory* (2009) 15 장.
-[^2]: Tate 의 계산은 J. Tate, *p-divisible groups*, Proc. Conf. Local Fields (1967). $\varphi$–$\Gamma$ 쪽 확장은 P. Colmez, *Espaces de Banach de dimension finie*, J. Inst. Math. Jussieu **1** (2002) 및 K. Kedlaya, R. Liu 의 일련의 작업. 본문의 수치 계산은 직접 한 것이다.
+[^2]: Tate 의 계산은 J. Tate, *p-divisible groups*, Proc. Conf. Local Fields (1967). $(\varphi,\Gamma)$ 쪽 확장은 P. Colmez, *Espaces de Banach de dimension finie*, J. Inst. Math. Jussieu **1** (2002) 및 K. Kedlaya, R. Liu 의 일련의 작업. 본문의 수치 계산은 직접 한 것이다.
 
 # 연관 문서
 
