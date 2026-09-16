@@ -50,6 +50,7 @@ graph TD
 - [수열의 극한](limits.md): 수렴의 정의와 극한의 사칙연산
 - [Cauchy 수열과 완비성](completeness.md): 극한값을 모르고도 수렴을 판정하는 조건
 - [연속함수](continuity.md): $\varepsilon\text{-}\delta$ 정의와 열린집합 정의의 동치
+- [균등연속](uniform-continuity.md): $\delta$ 를 점에 의존하지 않게 고른 조건, Heine–Cantor 정리
 - [균등수렴](uniform-convergence.md): 연속성과 적분을 극한과 바꿔 쓸 수 있게 하는 조건
 - [축약사상 고정점 정리](banach-fixed-point.md): 완비성이 해의 존재와 유일성을 주는 첫 사례
 
@@ -91,7 +92,6 @@ graph TD
 
 # 빈자리
 
-- 균등연속과 Heine–Cantor 정리: 컴팩트 위의 연속함수가 균등연속이 되는 정리인데 문서가 없다.
 - 급수의 수렴판정: 비교, 비율, 근, 교대급수 판정이 멱급수 문서에 흩어져 있다.
 - 다변수 미분과 역함수·음함수 정리: [미분](derivative.md)이 1 차원에 머물러 [다양체](manifolds.md)로 가는 다리가 비어 있다.
 - Arzelà–Ascoli 정리: 함수공간의 컴팩트성 판정. 상미분방정식의 Peano 존재 정리가 이것을 쓴다.

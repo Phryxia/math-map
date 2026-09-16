@@ -104,10 +104,16 @@ $$
 
 ## 더 알아보기
 
+### 연속성의 변형
+
 - [위상 공간](topology.md)
-- [축약사상 고정점 정리](banach-fixed-point.md)
+- [균등연속](uniform-continuity.md)
+- [균등수렴](uniform-convergence.md)
+
+### 미적분과 응용
+
 - [미분](derivative.md)
 - [Riemann 적분](riemann-integral.md)
-- [균등수렴](uniform-convergence.md)
+- [축약사상 고정점 정리](banach-fixed-point.md)
 
 #analysis
