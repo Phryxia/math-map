@@ -4,7 +4,7 @@
 
 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)은 $L$ 함수의 $s=1$ 에서의 소멸 차수가 Mordell–Weil 군의 계수와 같다고 말한다. 이 추측에서 실제로 증명된 것은 **해석 순위가 0 이나 1 인 경우의 한쪽 방향**뿐이고, 그 증명이 Kolyvagin 의 정리다.
 
-> **정리(Kolyvagin).** $E/\mathbb Q$ 가 타원곡선이고 $L(E,1)\ne0$ 이면 $E(\mathbb Q)$ 가 유한하고 $Ш(E/\mathbb Q)$ 도 유한하다. $L(E,1)=0$ 이고 $L'(E,1)\ne0$ 이면 $\operatorname{rank}E(\mathbb Q)=1$ 이고 Heegner 점이 유한 지표의 부분군을 생성한다.
+> **정리(Kolyvagin).** $E/\mathbb Q$ 가 타원곡선이고 $L(E,1)\ne0$ 이면 $E(\mathbb Q)$ 가 유한하고 $\text{Ш}(E/\mathbb Q)$ 도 유한하다. $L(E,1)=0$ 이고 $L'(E,1)\ne0$ 이면 $\operatorname{rank}E(\mathbb Q)=1$ 이고 Heegner 점이 유한 지표의 부분군을 생성한다.
 
 Kolyvagin–Logachev 는 이것을 모듈러 형식에서 만들어지는 **아벨 다양체** $A_f$ 로 확장한다. 차원이 1 보다 커도 $L(f,1)\ne0$ 이면 $A_f(\mathbb Q)$ 가 유한하다는 것이다. 이 일반화가 결정적인 이유는, 모듈러 곡선의 Jacobian 을 다룰 때 **유리점이 유한한 몫을 만들어 낼 수 있게** 해 주기 때문이다.
 
@@ -60,7 +60,7 @@ $$
 $f$ 가 준위 $N$ 의 새형식이고 $A_f$ 가 대응하는 모듈러 아벨 다양체일 때
 
 $$
-L(f,1)\ne0\ \Longrightarrow\ A_f(\mathbb Q)\ \text{유한},\quad Ш(A_f/\mathbb Q)\ \text{유한}
+L(f,1)\ne0\ \Longrightarrow\ A_f(\mathbb Q)\ \text{유한},\quad \text{Ш}(A_f/\mathbb Q)\ \text{유한}
 $$
 
 $J_e$ 는 그런 $A_f$ 들로만 이루어지므로 **$J_e(\mathbb Q)$ 가 유한**이라는 따름정리가 나온다. 이 한 줄이 뒤의 모든 응용을 떠받친다.
@@ -73,7 +73,7 @@ $J_e$ 는 그런 $A_f$ 들로만 이루어지므로 **$J_e(\mathbb Q)$ 가 유�
 2. $X_0(N)$ 의 Heegner 점들을 $K$ 의 류체 탑 위에서 모아 Euler 계를 만든다.
 3. 유도류를 만들어 Selmer 군의 각 국소 조건을 제어한다.
 4. 첫 원소의 비소멸을 Gross–Zagier 또는 $L(f,1)\ne0$ 에서 확보한다.
-5. Selmer 군의 유한성에서 Mordell–Weil 과 $Ш$ 의 유한성을 읽는다.
+5. Selmer 군의 유한성에서 Mordell–Weil 과 $\text{Ш}$ 의 유한성을 읽는다.
 
 각 단계가 서로 다른 이론에 의존한다는 점이 특징이다. 모듈러성, 복소곱셈, 류체론, Galois 코호몰로지가 한 증명 안에서 차례로 쓰인다.
 
@@ -81,16 +81,16 @@ $J_e$ 는 그런 $A_f$ 들로만 이루어지므로 **$J_e(\mathbb Q)$ 가 유�
 
 | 해석 순위 | 결과 |
 | --- | --- |
-| 0 | 대수 순위 0, $Ш$ 유한 (Kolyvagin) |
-| 1 | 대수 순위 1, $Ш$ 유한, Heegner 점이 생성 |
+| 0 | 대수 순위 0, $\text{Ш}$ 유한 (Kolyvagin) |
+| 1 | 대수 순위 1, $\text{Ш}$ 유한, Heegner 점이 생성 |
 | $\ge2$ | 열림 |
 | BSD 공식의 정확한 등식 | 순위 0, 1 에서도 부분적 |
 
-순위와 계수가 같다는 것까지가 알려진 범위이고, **$Ш$ 의 위수와 주기, 조절자를 포함한 정확한 공식**은 특정 상황에서만 증명되어 있다. 반대 방향, 곧 대수 순위가 0 이면 $L(E,1)\ne0$ 이라는 주장은 일반적으로 열려 있다.
+순위와 계수가 같다는 것까지가 알려진 범위이고, **$\text{Ш}$ 의 위수와 주기, 조절자를 포함한 정확한 공식**은 특정 상황에서만 증명되어 있다. 반대 방향, 곧 대수 순위가 0 이면 $L(E,1)\ne0$ 이라는 주장은 일반적으로 열려 있다.
 
 ## 계산적 의미
 
-$L(E,1)$ 은 수치적으로 계산할 수 있고 0 인지 아닌지도 판정할 수 있으므로, Kolyvagin 의 정리는 **순위를 계산으로 확정하는 도구**가 된다. 순위 0 판정이 하강 계산보다 빠른 경우가 많고, $Ш$ 의 유한성이 보장되므로 하강이 반드시 끝난다는 것도 알 수 있다. 타원곡선 데이터베이스의 순위 항목 상당수가 이 경로로 확정된 것이다.
+$L(E,1)$ 은 수치적으로 계산할 수 있고 0 인지 아닌지도 판정할 수 있으므로, Kolyvagin 의 정리는 **순위를 계산으로 확정하는 도구**가 된다. 순위 0 판정이 하강 계산보다 빠른 경우가 많고, $\text{Ш}$ 의 유한성이 보장되므로 하강이 반드시 끝난다는 것도 알 수 있다. 타원곡선 데이터베이스의 순위 항목 상당수가 이 경로로 확정된 것이다.
 
 # 활용
 
@@ -106,7 +106,7 @@ Merel 의 증명은 위 사실을 차수 $d$ 점에 적용한 것이다. 대칭�
 
 Kolyvagin 의 Euler 계가 Selmer 군의 **크기**를 위에서 누른다면, [Iwasawa 주추측](iwasawa-main-conjecture.md)은 특성 아이디얼이라는 더 정밀한 등식을 준다. 두 접근은 같은 재료(Euler 계, $L$ 값)를 쓰지만 목표가 다르고, 실제로 타원곡선의 Iwasawa 주추측 증명에서 Kolyvagin 의 방법이 한쪽 포함관계를 담당한다. **부등식 두 개를 양쪽에서 만나게 하는 전략**이 이 분야의 표준 형태다.[^1]
 
-[^1]: V. A. Kolyvagin, *Finiteness of $E(\mathbb Q)$ and $Ш(E,\mathbb Q)$ for a subclass of Weil curves*, Izv. Akad. Nauk SSSR (1988), 그리고 V. A. Kolyvagin, D. Yu. Logachev, *Finiteness of the Shafarevich–Tate group and the group of rational points for some modular abelian varieties*, Leningrad Math. J. 1 (1990). 해설은 B. Gross, *Kolyvagin's work on modular elliptic curves* (1991) 와 K. Rubin, *Euler Systems* (2000). 겨냥 몫의 정의와 성질은 L. Merel 의 1996 년 논문 2 절에 있다.
+[^1]: V. A. Kolyvagin, *Finiteness of $E(\mathbb Q)$ and $\text{Ш}(E,\mathbb Q)$ for a subclass of Weil curves*, Izv. Akad. Nauk SSSR (1988), 그리고 V. A. Kolyvagin, D. Yu. Logachev, *Finiteness of the Shafarevich–Tate group and the group of rational points for some modular abelian varieties*, Leningrad Math. J. 1 (1990). 해설은 B. Gross, *Kolyvagin's work on modular elliptic curves* (1991) 와 K. Rubin, *Euler Systems* (2000). 겨냥 몫의 정의와 성질은 L. Merel 의 1996 년 논문 2 절에 있다.
 
 # 연관 문서
 

@@ -18,7 +18,7 @@ $$
 
 좌변은 해석, 우변은 기하다. 등식의 힘은 즉시 드러난다. $L'(E/K,1)\ne0$ 이면 $\hat h(y_K)\ne0$ 이므로 $y_K$ 가 무한위수이고, 곧 $\mathrm{rank}\,E(K)\ge1$ 이다. 해석적 정보에서 **실제 유리점**이 나온 것이다.
 
-Kolyvagin 은 이어서 반대 부등식을 얻었다. $y_K$ 가 무한위수이면 그것을 씨앗으로 Euler 계를 만들어 [Selmer 군](selmer-groups.md)을 누를 수 있고, 그 결과 순위가 정확히 $1$ 이며 $Ш$ 가 유한하다. 두 정리를 합치면 해석적 순위 $\le1$ 인 경우의 BSD 다.
+Kolyvagin 은 이어서 반대 부등식을 얻었다. $y_K$ 가 무한위수이면 그것을 씨앗으로 Euler 계를 만들어 [Selmer 군](selmer-groups.md)을 누를 수 있고, 그 결과 순위가 정확히 $1$ 이며 $\text{Ш}$ 가 유한하다. 두 정리를 합치면 해석적 순위 $\le1$ 인 경우의 BSD 다.
 
 # 직관
 
@@ -181,8 +181,8 @@ $$
 
 | 가정 | 결론 |
 |---|---|
-| $r_{\mathrm{an}}=0$ | $\mathrm{rank}\,E(\mathbb Q)=0$ 이고 $Ш(E/\mathbb Q)$ 유한 |
-| $r_{\mathrm{an}}=1$ | $\mathrm{rank}\,E(\mathbb Q)=1$ 이고 $Ш(E/\mathbb Q)$ 유한 |
+| $r_{\mathrm{an}}=0$ | $\mathrm{rank}\,E(\mathbb Q)=0$ 이고 $\text{Ш}(E/\mathbb Q)$ 유한 |
+| $r_{\mathrm{an}}=1$ | $\mathrm{rank}\,E(\mathbb Q)=1$ 이고 $\text{Ш}(E/\mathbb Q)$ 유한 |
 | $r_{\mathrm{an}}\ge2$ | 아무것도 증명되지 않음 |
 
 $r_{\mathrm{an}}=0$ 인 경우도 같은 장치로 처리된다. 적당한 $K$ 를 골라 꼬임 $E^{D}$ 쪽이 순위 $1$ 을 갖게 하고, $E$ 쪽에서는 Heegner 점이 비틀림이 됨을 보이면 Kolyvagin 논법이 $E(\mathbb Q)$ 를 유한으로 만든다. 그런 $K$ 가 존재한다는 것은 Waldspurger 계열의 비소실 정리(Bump–Friedberg–Hoffstein, Murty–Murty)가 보장한다.
@@ -214,7 +214,7 @@ $D$ 를 잘못 고르면 $y_K$ 가 비틀림 점이 되어 아무 정보도 주�
 ## 일반화
 
 - **Gross–Zagier–Zhang.** Zhang 이 전공식을 총실체 위의 Shimura 곡선으로 확장했고, Yuan–Zhang–Zhang 이 자기동형 표현의 언어로 완전히 일반화했다. 그 형태에서 공식은 Waldspurger 공식의 미분판으로 보인다.
-- **$p$ 진 Gross–Zagier.** Perrin-Riou 가 $p$ 진 $L$ 함수의 미분과 $p$ 진 높이를 잇는 판본을 얻었다. Iwasawa 주추측과 결합해 $Ш$ 의 $p$ 부분을 정밀하게 재는 데 쓰인다.
+- **$p$ 진 Gross–Zagier.** Perrin-Riou 가 $p$ 진 $L$ 함수의 미분과 $p$ 진 높이를 잇는 판본을 얻었다. Iwasawa 주추측과 결합해 $\text{Ш}$ 의 $p$ 부분을 정밀하게 재는 데 쓰인다.
 - **Stark–Heegner 점.** Darmon 은 실이차체에서 유사한 점을 정의하는 추측적 구성을 제안했다. $p$ 진 상반평면 위의 적분으로 정의되며, 대수적임이 아직 증명되지 않았다.
 
 # 활용
@@ -223,21 +223,21 @@ $D$ 를 잘못 고르면 $y_K$ 가 비틀림 점이 되어 아무 정보도 주�
 
 $n$ 이 합동수, 곧 세 변이 유리수이고 넓이가 $n$ 인 직각삼각형이 있는 수인 것은 $y^2=x^3-n^2x$ 의 순위가 양수인 것과 같다. 해석적 순위 $\le1$ 인 경우가 해결되어 있으므로, $L$ 함수의 소실 차수를 계산하면 판정이 끝난다. 그 계산을 유한한 조건으로 바꾼 것이 Tunnell 정리이며, 이 방향의 최종 진술은 BSD 전체를 기다린다.
 
-## $Ш$ 의 위수 계산
+## $\text{Ш}$ 의 위수 계산
 
-Kolyvagin 논법은 유한성만 주는 것이 아니라 명시적 상계를 준다. Heegner 점의 $p$ 로 나누어떨어짐 정도(Kolyvagin 지표)가 $Ш$ 의 $p$ 부분 위수를 제어한다.
+Kolyvagin 논법은 유한성만 주는 것이 아니라 명시적 상계를 준다. Heegner 점의 $p$ 로 나누어떨어짐 정도(Kolyvagin 지표)가 $\text{Ш}$ 의 $p$ 부분 위수를 제어한다.
 
 $$
-\mathrm{ord}_p\bigl|Ш(E/K)\bigr|\;\le\;2\,\mathrm{ord}_p\bigl[E(K):\mathbb Z y_K\bigr]
+\mathrm{ord}_p\bigl|\text{Ш}(E/K)\bigr|\;\le\;2\,\mathrm{ord}_p\bigl[E(K):\mathbb Z y_K\bigr]
 $$
 
-역방향 부등식이 Iwasawa 이론에서 나오면 등호가 되고, 그것이 순위 $1$ 에서의 강한 BSD 다. $Ш$ 의 위수를 손으로 세는 대신 **점 하나가 얼마나 나누어떨어지는지** 재는 것으로 문제가 바뀐다.
+역방향 부등식이 Iwasawa 이론에서 나오면 등호가 되고, 그것이 순위 $1$ 에서의 강한 BSD 다. $\text{Ш}$ 의 위수를 손으로 세는 대신 **점 하나가 얼마나 나누어떨어지는지** 재는 것으로 문제가 바뀐다.
 
 ## 왜 이 구성이 표준적 예가 되었나
 
 Heegner 점은 "특수값을 대수적 순환류로 실현한다" 는 도식의 가장 완전한 예다. $L$ 함수의 소실 차수만큼의 대수적 순환류가 있어야 한다는 Beilinson–Bloch 류의 예측이 여기서는 차수 $1$ 에 대해 실제로 증명되어 있다. 이후의 Euler 계 이론, $p$ 진 $L$ 함수의 미분 공식, 자기동형 주기 공식들이 모두 이 그림을 원형으로 삼는다.
 
-[^1]: B. Gross, D. Zagier, *Heegner points and derivatives of L-series*, Invent. Math. **84** (1986), 225–320. Kolyvagin 은 *Finiteness of* $E(\mathbb Q)$ *and* $Ш(E,\mathbb Q)$ *for a subclass of Weil curves*, Izv. Akad. Nauk SSSR **52** (1988). 해설로는 H. Darmon, *Rational Points on Modular Elliptic Curves* (CBMS 101) 와 Gross 의 *Kolyvagin's work on modular elliptic curves* 를 보라. 본문의 판별식 계산은 직접 한 것이다.
+[^1]: B. Gross, D. Zagier, *Heegner points and derivatives of L-series*, Invent. Math. **84** (1986), 225–320. Kolyvagin 은 *Finiteness of* $E(\mathbb Q)$ *and* $\text{Ш}(E,\mathbb Q)$ *for a subclass of Weil curves*, Izv. Akad. Nauk SSSR **52** (1988). 해설로는 H. Darmon, *Rational Points on Modular Elliptic Curves* (CBMS 101) 와 Gross 의 *Kolyvagin's work on modular elliptic curves* 를 보라. 본문의 판별식 계산은 직접 한 것이다.
 
 # 연관 문서
 

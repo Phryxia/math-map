@@ -270,7 +270,7 @@ $T=\mathbb Z_p(1)$ 과 순환체 단수의 Euler 계가 원형이다. 이 경우
 
 ## 타원곡선의 Selmer 군
 
-$T=T_p(E)$ 에서 $p$ 자리를 완화한 구조가 $\chi=1$ 이고, Kato 의 zeta 원소가 그 구조의 Kolyvagin 계를 준다. 결론은 엄격 Selmer 군의 크기가 $p$ 진 $L$ 함수의 소멸 차수로 정확히 주어진다는 것이고, 이 진술이 [BSD](birch-swinnerton-dyer.md) 의 $p$ 진 판본이다. Heegner 점 쪽 입력과 합쳐지면 해석적 순위 $\le1$ 에서 $Ш$ 의 $p$ 부분 위수까지 통제된다.
+$T=T_p(E)$ 에서 $p$ 자리를 완화한 구조가 $\chi=1$ 이고, Kato 의 zeta 원소가 그 구조의 Kolyvagin 계를 준다. 결론은 엄격 Selmer 군의 크기가 $p$ 진 $L$ 함수의 소멸 차수로 정확히 주어진다는 것이고, 이 진술이 [BSD](birch-swinnerton-dyer.md) 의 $p$ 진 판본이다. Heegner 점 쪽 입력과 합쳐지면 해석적 순위 $\le1$ 에서 $\text{Ш}$ 의 $p$ 부분 위수까지 통제된다.
 
 ## 이분 Euler 계
 

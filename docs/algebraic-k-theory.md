@@ -6,7 +6,7 @@
 
 $$
 K_0(R)=\text{사영가군의 Grothendieck 군},\quad
-K_1(R)=GL(R)^{\mathrm{ab}},\quad
+K_1(R)=\mathrm{GL}(R)^{\mathrm{ab}},\quad
 K_2(R)=\text{Steinberg 군의 중심 확대}
 $$
 
@@ -28,7 +28,7 @@ $$
 K_n(R)=\pi_n\big(BGL(R)^{+}\times K_0(R)\big)\qquad(n\ge1)
 $$
 
-Quillen 의 plus 구성은 분류공간 $BGL(R)$ 에 세포를 붙여 기본군을 아벨화하되 **호몰로지는 바꾸지 않는** 공간을 만든다. 호몰로지를 보존하면서 호모토피만 손보는 이 조작이 가능한 이유는 $GL(R)$ 의 교환자 부분군이 완전군이기 때문이다. 정의가 기교적으로 보이지만, 결과로 나오는 열은 예상되는 모든 성질(국소화 완전열, 곱 구조, 함자성)을 만족한다.
+Quillen 의 plus 구성은 분류공간 $BGL(R)$ 에 세포를 붙여 기본군을 아벨화하되 **호몰로지는 바꾸지 않는** 공간을 만든다. 호몰로지를 보존하면서 호모토피만 손보는 이 조작이 가능한 이유는 $\mathrm{GL}(R)$ 의 교환자 부분군이 완전군이기 때문이다. 정의가 기교적으로 보이지만, 결과로 나오는 열은 예상되는 모든 성질(국소화 완전열, 곱 구조, 함자성)을 만족한다.
 
 ## 왜 위상의 수가 나오는가
 
@@ -64,7 +64,7 @@ flowchart TD
 ## 낮은 차수
 
 - $K_0(R)$ 은 유한생성 사영 $R$ 가군의 동형류가 직합에 대해 만드는 Grothendieck 군이다. $R$ 이 Dedekind 정역이면 $K_0(R)\cong\mathbb Z\oplus\mathrm{Cl}(R)$ 이다.
-- $K_1(R)=GL(R)/E(R)$ 이다. 가환환이면 $\det$ 이 $R^{\times}$ 로의 분해를 주고, $\mathcal O_F$ 에서는 $K_1=\mathcal O_F^{\times}$ 다.
+- $K_1(R)=\mathrm{GL}(R)/E(R)$ 이다. 가환환이면 $\det$ 이 $R^{\times}$ 로의 분해를 주고, $\mathcal O_F$ 에서는 $K_1=\mathcal O_F^{\times}$ 다.
 - $K_2(R)$ 은 Steinberg 군 $St(R)\to E(R)$ 의 핵이다. 체에서는 Matsumoto 정리로 기호 $\{a,b\}$ 와 $\{a,1-a\}=1$ 이라는 관계만으로 제시된다.
 
 $K_0$ 이 류군을, $K_1$ 이 단수군을 담는다는 점에서 **$K$ 이론은 대수적 수론의 두 기본 불변량을 한 열로 묶는 틀**이다.

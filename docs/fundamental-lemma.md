@@ -5,17 +5,17 @@
 [Selberg 대각합 공식](selberg-trace-formula.md)은 $\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H$ 의 Laplace 스펙트럼을 닫힌 측지선으로 바꿔 놓았다. 왼쪽이 해석(스펙트럼), 오른쪽이 기하였다. Arthur 가 이것을 임의의 환원군 $G$ 와 아델 상 $G(\mathbb Q)\backslash G(\mathbb A)$ 로 올린 것이 **Arthur–Selberg 대각합 공식**이고, 그 모양은 여전히 같다.
 
 $$
-\underbrace{\sum_\pi m(\pi)\,\mathrm{tr}\,\pi(f)}_{\text{스펙트럼}}\;=\;\underbrace{\sum_{\{\gamma\}}\mathrm{vol}(\cdot)\,O_\gamma(f)}_{\text{기하}}
+\underbrace{\sum_\pi m(\pi)\,\mathrm{tr}\,\pi(f)}_{\text{스펙트럼}}\;=\;\underbrace{\sum_{\{\gamma\}}\mathrm{vol}(\cdot)\,\mathrm{O}_\gamma(f)}_{\text{기하}}
 $$
 
-측지선 자리에 들어온 것이 **궤도적분** $O_\gamma(f)$ 다. 곡면에서 측지선이 켤레류에 대응했던 것과 같은 자리다.
+측지선 자리에 들어온 것이 **궤도적분** $\mathrm{O}_\gamma(f)$ 다. 곡면에서 측지선이 켤레류에 대응했던 것과 같은 자리다.
 
 이 공식이 쓰이는 방식은 두 군에 대해 나란히 써 놓고 비교하는 것이다. 군 $H$ 의 자기동형 표현이 $G$ 의 것으로 올라간다는 함수성 명제를 증명하고 싶다면, 스펙트럼 쪽은 직접 비교할 방법이 없으므로 **기하 쪽을 비교한다.** $H$ 의 궤도적분과 $G$ 의 궤도적분이 짝이 맞으면 스펙트럼 쪽 등식이 따라 나온다.
 
 그런데 여기서 걸린다. $G$ 의 켤레류는 대수적 폐포 위에서 보는 것과 바닥체 위에서 보는 것이 다르다. 폐포에서 하나였던 켤레류가 바닥체 위에서는 여러 조각으로 갈라진다. 갈라진 조각들을 그냥 더한 것(안정 궤도적분)은 잘 다뤄지지만, 조각마다 부호를 달아 더한 것($\kappa$ 궤도적분)은 $G$ 안에서 해석되지 않는다. **Langlands 의 발견은 그 $\kappa$ 궤도적분이 더 작은 군 $H$ — 내시군(endoscopic group) — 의 안정 궤도적분과 같아 보인다는 것이었다.**
 
 $$
-O^\kappa_\gamma(f)\;\stackrel?=\;\Delta(\gamma_H,\gamma)\;SO_{\gamma_H}(f^H)
+\mathrm{O}^\kappa_\gamma(f)\;\stackrel?=\;\Delta(\gamma_H,\gamma)\;\mathrm{SO}_{\gamma_H}(f^H)
 $$
 
 가장 기본이 되는 경우, 곧 $f$ 가 극대 콤팩트 부분군의 특성함수이고 $f^H$ 가 [Satake 동형](satake-isomorphism.md)으로 정의된 기본 사상 $b$ 의 상일 때 이 등식이 성립한다는 것이 **기본 보조정리**다. Satake 동형이 여기서 필수인 이유는 $f\mapsto f^H$ 라는 대응이 달리 정의될 방법이 없기 때문이다. 쌍대군 준동형 $\widehat H\to\widehat G$ 를 표현환 사이의 사상으로 읽고, 양쪽에서 Satake 동형으로 Hecke 대수로 끌어내린다.
@@ -59,8 +59,8 @@ graph TD
 
 갈라진 조각들의 집합이 유한 아벨군 $\mathfrak D=\ker(H^1(F,T)\to H^1(F,G))$ 이다. 아벨군 위의 함수는 그 지표로 분해된다. 지표 하나를 $\kappa$ 라 하면 두 극단이 있다.
 
-- $\kappa=1$ 이면 조각을 전부 같은 무게로 더한다. **안정 궤도적분** $SO_\gamma$ 다.
-- $\kappa\neq1$ 이면 조각마다 $\kappa$ 값을 곱해 더한다. **$\kappa$ 궤도적분** $O^\kappa_\gamma$ 다.
+- $\kappa=1$ 이면 조각을 전부 같은 무게로 더한다. **안정 궤도적분** $\mathrm{SO}_\gamma$ 다.
+- $\kappa\neq1$ 이면 조각마다 $\kappa$ 값을 곱해 더한다. **$\kappa$ 궤도적분** $\mathrm{O}^\kappa_\gamma$ 다.
 
 대각합 공식의 기하 쪽을 안정 궤도적분만으로 다시 쓰려는 작업을 **안정화**라 한다. 실제로 해 보면 $\kappa=1$ 항만으로는 닫히지 않고 $\kappa\neq1$ 항들이 남는다. 그 남는 항들을 어떻게 할 것인가가 문제의 전부다.
 
@@ -85,7 +85,7 @@ $H$ 는 $G$ 의 부분군이 아니다. 계수는 같고 크기는 작다. $\mat
 $F$ 를 국소체, $G$ 를 $F$ 위의 환원군, $f\in C_c^\infty(G(F))$ 라 하자. 정칙 반단순 $\gamma$ 에 대해 $T=Z_G(\gamma)$ 를 두고
 
 $$
-O_\gamma(f)=\int_{T(F)\backslash G(F)}f(x^{-1}\gamma x)\,dx
+\mathrm{O}_\gamma(f)=\int_{T(F)\backslash G(F)}f(x^{-1}\gamma x)\,dx
 $$
 
 를 **궤도적분**이라 한다. 이것이 대각합 공식의 기하 쪽에 나타나는 양이다. $f=\mathbf 1_K$ 이면 적분은 $K$ 안에서 $\gamma$ 와 켤레가 되는 점들을 세는 것이 된다.
@@ -95,8 +95,8 @@ $$
 $\gamma$ 의 안정 켤레류에 든 $G(F)$ 켤레류 대표들을 $\gamma_1,\dots,\gamma_r$ 이라 하고, 각각에 $\mathfrak D$ 의 원소 $\mathrm{inv}(\gamma,\gamma_i)$ 를 대응시킨다. $\mathfrak D$ 의 지표 $\kappa$ 에 대해
 
 $$
-SO_\gamma(f)=\sum_{i=1}^re(\gamma_i)\,O_{\gamma_i}(f),\qquad
-O^\kappa_\gamma(f)=\sum_{i=1}^r\kappa\bigl(\mathrm{inv}(\gamma,\gamma_i)\bigr)\,e(\gamma_i)\,O_{\gamma_i}(f)
+\mathrm{SO}_\gamma(f)=\sum_{i=1}^re(\gamma_i)\,\mathrm{O}_{\gamma_i}(f),\qquad
+\mathrm{O}^\kappa_\gamma(f)=\sum_{i=1}^r\kappa\bigl(\mathrm{inv}(\gamma,\gamma_i)\bigr)\,e(\gamma_i)\,\mathrm{O}_{\gamma_i}(f)
 $$
 
 로 둔다. $e(\gamma_i)$ 는 측도를 맞추는 인자다. $\kappa=1$ 이면 앞의 것이 뒤의 것의 특수한 경우다.
@@ -115,7 +115,7 @@ $f^H:=b(f)$ 로 쓴다. 정의가 전적으로 쌍대군 쪽에서 이루어졌�
 
 > **기본 보조정리 (Langlands–Shelstad 추측, Ngô 정리).** $G$ 가 비분기이고 $(H,\kappa,\eta)$ 가 비분기 내시 자료라 하자. $G$ 의 정칙 반단순 $\gamma$ 와 그에 대응하는 $H$ 의 $\gamma_H$ 에 대해
 > $$
-> \Delta(\gamma_H,\gamma)\,SO_{\gamma_H}(\mathbf 1_{K_H})=O^\kappa_\gamma(\mathbf 1_K)
+> \Delta(\gamma_H,\gamma)\,\mathrm{SO}_{\gamma_H}(\mathbf 1_{K_H})=\mathrm{O}^\kappa_\gamma(\mathbf 1_K)
 > $$
 > 가 성립한다. 더 일반적으로 $\mathbf 1_K$ 자리에 임의의 $f\in\mathcal H(G,K)$ 와 $f^H=b(f)$ 를 넣어도 성립한다(가중 판).
 
@@ -203,10 +203,10 @@ $\mathrm{SL}_2$ 의 경우 내시군 $H$ 는 $\gamma$ 의 중심화군인 타원
 
 ## Ngô 의 증명
 
-핵심은 세는 대상을 바꾸는 것이다. 등표수 $F=\mathbb F_q((t))$ 에서 궤도적분 $O_\gamma(\mathbf 1_K)$ 는 $\gamma$ 가 안정화시키는 아핀 Grassmann 다양체의 점들을 세는 것이고, 그 점 집합이 **아핀 Springer 올**의 $\mathbb F_q$ 점이다.
+핵심은 세는 대상을 바꾸는 것이다. 등표수 $F=\mathbb F_q((t))$ 에서 궤도적분 $\mathrm{O}_\gamma(\mathbf 1_K)$ 는 $\gamma$ 가 안정화시키는 아핀 Grassmann 다양체의 점들을 세는 것이고, 그 점 집합이 **아핀 Springer 올**의 $\mathbb F_q$ 점이다.
 
 $$
-O_\gamma(\mathbf 1_K)=\#\mathcal X_\gamma(\mathbb F_q)
+\mathrm{O}_\gamma(\mathbf 1_K)=\#\mathcal X_\gamma(\mathbb F_q)
 $$
 
 이제 문제는 두 다양체의 점 개수 비교가 되었고, 그것은 코호몰로지 비교로 하면 된다. 그런데 아핀 Springer 올은 국소적이고 특이해서 직접 다루기 어렵다. Ngô 의 방법은 이 국소 대상들을 **대역적으로 묶는 것**이다.

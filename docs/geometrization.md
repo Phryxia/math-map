@@ -37,8 +37,8 @@
 
 | 점을 고정하는 대칭 | 기하의 성격 | 개수 |
 |---|---|---|
-| $SO(3)$ 전부 | 등방적, 상수 곡률 | 3 |
-| $SO(2)$ | 한 방향이 특별함, 곱 또는 꼬인 곱 | 3 |
+| $\mathrm{SO}(3)$ 전부 | 등방적, 상수 곡률 | 3 |
+| $\mathrm{SO}(2)$ | 한 방향이 특별함, 곱 또는 꼬인 곱 | 3 |
 | 유한군만 | 방향마다 다름 | 2 |
 
 첫 줄이 $S^3,\ \mathbb E^3,\ \mathbb H^3$ 이다. 곡면에서 보던 셋이 그대로 올라온다. 둘째 줄은 2 차원 기하에 직선을 곱하거나 꼬아 올린 것이고, 셋째 줄이 3 차원에만 있는 $\mathrm{Nil}$ 과 $\mathrm{Sol}$ 이다. 왜 곡면에는 뒤의 다섯이 없는가 하면, 2 차원에서는 특별한 방향을 하나 지정하면 남는 방향이 하나뿐이라 새 기하가 생길 여지가 없기 때문이다.
@@ -74,7 +74,7 @@ flowchart TD
 | $\mathbb H^3$ | 상수 $-1$ | 6 | 대부분의 매듭 여집합 |
 | $S^2\times\mathbb R$ | 혼합 | 4 | $S^2\times S^1$ |
 | $\mathbb H^2\times\mathbb R$ | 혼합 | 4 | 쌍곡 곡면 $\times S^1$ |
-| $\widetilde{SL_2\mathbb R}$ | 꼬인 곱 | 4 | 쌍곡 곡면 위의 단위 접다발 |
+| $\widetilde{\mathrm{SL}_2\mathbb R}$ | 꼬인 곱 | 4 | 쌍곡 곡면 위의 단위 접다발 |
 | $\mathrm{Nil}$ | 멱영 | 4 | 원환면 위의 비자명 원다발 |
 | $\mathrm{Sol}$ | 가해 | 3 | Anosov 사상의 사상원환면 |
 
@@ -94,8 +94,8 @@ $\mathrm{Nil}$ 은 3 차원 Heisenberg 군이고 $\mathrm{Sol}$ 은 $\mathbb R^2
 
 $\mathbb H^3$ 을 뺀 일곱 기하의 다양체는 전부 분류되어 있다.
 
-- $S^3,\ \mathbb E^3,\ S^2\times\mathbb R,\ \mathbb H^2\times\mathbb R,\ \widetilde{SL_2\mathbb R},\ \mathrm{Nil}$ 의 여섯은 **Seifert 올뭉치**다. 곧 원으로 채워져 있고, 밑공간인 2 차원 오비폴드와 몇 개의 수치 불변량으로 완전히 결정된다.
-- $\mathrm{Sol}$ 다양체는 원환면 위의 다발이고, 붙임사상이 $SL_2(\mathbb Z)$ 의 쌍곡 원소인 경우다.
+- $S^3,\ \mathbb E^3,\ S^2\times\mathbb R,\ \mathbb H^2\times\mathbb R,\ \widetilde{\mathrm{SL}_2\mathbb R},\ \mathrm{Nil}$ 의 여섯은 **Seifert 올뭉치**다. 곧 원으로 채워져 있고, 밑공간인 2 차원 오비폴드와 몇 개의 수치 불변량으로 완전히 결정된다.
+- $\mathrm{Sol}$ 다양체는 원환면 위의 다발이고, 붙임사상이 $\mathrm{SL}_2(\mathbb Z)$ 의 쌍곡 원소인 경우다.
 
 Seifert 조각은 밑 오비폴드의 Euler 지표와 다발의 Euler 수, 두 부호가 어느 기하인지를 정한다.
 
@@ -103,7 +103,7 @@ Seifert 조각은 밑 오비폴드의 Euler 지표와 다발의 Euler 수, 두 �
 |---|---|---|
 | $>0$ | $S^2\times\mathbb R$ | $S^3$ |
 | $=0$ | $\mathbb E^3$ | $\mathrm{Nil}$ |
-| $<0$ | $\mathbb H^2\times\mathbb R$ | $\widetilde{SL_2\mathbb R}$ |
+| $<0$ | $\mathbb H^2\times\mathbb R$ | $\widetilde{\mathrm{SL}_2\mathbb R}$ |
 
 곡면의 분류에서 Euler 지표의 부호가 기하를 정하던 것이 여기서도 반복되고, 다발 방향이 더해져 표가 2 열이 되었다.
 
@@ -139,7 +139,7 @@ $$
 
 | 여집합의 유형 | 매듭 | 기하 |
 |---|---|---|
-| Seifert 올뭉치 | 원환면 매듭 | $\widetilde{SL_2\mathbb R}$ 또는 $\mathbb H^2\times\mathbb R$ |
+| Seifert 올뭉치 | 원환면 매듭 | $\widetilde{\mathrm{SL}_2\mathbb R}$ 또는 $\mathbb H^2\times\mathbb R$ |
 | JSJ 로 잘림 | 위성 매듭 | 조각마다 다름 |
 | 원자적 | 쌍곡 매듭 | $\mathbb H^3$ |
 

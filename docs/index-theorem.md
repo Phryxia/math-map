@@ -111,11 +111,11 @@ $$
 | de Rham $d+d^*$ | $\chi(M)$ | Euler 류의 적분 (Gauss–Bonnet) |
 | 부호수 작용소 | $\mathrm{sign}(M)$ | $L$ 종수 (Hirzebruch) |
 | Dolbeault $\bar\partial+\bar\partial^*$ | $\sum(-1)^q\dim H^q(M,\mathcal O)$ | Todd 류 (Riemann–Roch) |
-| Dirac 작용소 | $\mathrm{ind}\,\slashed D$ | $\hat A$ 종수 |
+| Dirac 작용소 | $\mathrm{ind}\,{\not}D$ | $\hat A$ 종수 |
 
-Dirac 의 경우가 특히 날카롭다. 스핀 다양체에서 $\mathrm{ind}\,\slashed D=\hat A(M)$ 인데, 좌변이 정수이므로 $\hat A$ 종수가 정수여야 한다. 이 정수성이 위상만으로는 자명하지 않고, 여기서 4 차원 스핀 다양체의 부호수가 16 으로 나누어진다는 Rokhlin 정리가 나온다.
+Dirac 의 경우가 특히 날카롭다. 스핀 다양체에서 $\mathrm{ind}\,{\not}D=\hat A(M)$ 인데, 좌변이 정수이므로 $\hat A$ 종수가 정수여야 한다. 이 정수성이 위상만으로는 자명하지 않고, 여기서 4 차원 스핀 다양체의 부호수가 16 으로 나누어진다는 Rokhlin 정리가 나온다.
 
-더 나아가 양의 스칼라 곡률을 가지면 Lichnerowicz 공식에 의해 $\ker\slashed D=0$ 이므로 $\hat A(M)=0$ 이어야 한다. 곡률에 대한 기하적 가정이 위상적 장애를 만든다. 지표 정리가 해석과 위상을 잇는 다리로 쓰이는 전형이다.
+더 나아가 양의 스칼라 곡률을 가지면 Lichnerowicz 공식에 의해 $\ker{\not}D=0$ 이므로 $\hat A(M)=0$ 이어야 한다. 곡률에 대한 기하적 가정이 위상적 장애를 만든다. 지표 정리가 해석과 위상을 잇는 다리로 쓰이는 전형이다.
 
 ## 무엇이 필요한가
 

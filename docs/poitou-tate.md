@@ -187,17 +187,17 @@ $$
 ## Tate–Shafarevich 군의 쌍대성
 
 $$
-Ш^{i}(K,M)=\ker\Big(H^{i}(K,M)\to\prod_vH^{i}(K_v,M)\Big)
+\text{Ш}^{i}(K,M)=\ker\Big(H^{i}(K,M)\to\prod_vH^{i}(K_v,M)\Big)
 $$
 
 라 두면 완전열에서 곧바로
 
 $$
-Ш^{1}(K,M)\ \cong\ Ш^{2}(K,M^{*})^{\vee},\qquad
-Ш^{2}(K,M)\ \cong\ Ш^{1}(K,M^{*})^{\vee}
+\text{Ш}^{1}(K,M)\ \cong\ \text{Ш}^{2}(K,M^{*})^{\vee},\qquad
+\text{Ш}^{2}(K,M)\ \cong\ \text{Ш}^{1}(K,M^{*})^{\vee}
 $$
 
-가 나온다. $E[p]$ 에 적용하면 [Selmer 군](selmer-groups.md) 문서의 $Ш(E/K)$ 가 자기쌍대라는 사실, 따라서 그 위수가 제곱수라는 사실의 출처가 된다.
+가 나온다. $E[p]$ 에 적용하면 [Selmer 군](selmer-groups.md) 문서의 $\text{Ш}(E/K)$ 가 자기쌍대라는 사실, 따라서 그 위수가 제곱수라는 사실의 출처가 된다.
 
 ## Selmer 구조와 쌍대 구조
 
@@ -316,7 +316,7 @@ $$
 
 ## Hasse 원리의 장애
 
-$Ш^{2}(K,M)\cong Ш^{1}(K,M^{*})^{\vee}$ 는 "국소적으로 자명한 2 차 류" 의 개수를 1 차 쪽 계산으로 바꿔 준다. 이 대응이 매몰 문제(embedding problem)의 국소-대역 원리, 그리고 [Brauer 군](brauer-groups.md)에서 본 Hasse 원리의 반례를 다루는 표준 도구다. $M^{*}$ 쪽이 다루기 쉬운 경우가 많아, 장애의 존재를 손에 잡히는 유한 계산으로 옮기는 데 쓰인다.
+$\text{Ш}^{2}(K,M)\cong \text{Ш}^{1}(K,M^{*})^{\vee}$ 는 "국소적으로 자명한 2 차 류" 의 개수를 1 차 쪽 계산으로 바꿔 준다. 이 대응이 매몰 문제(embedding problem)의 국소-대역 원리, 그리고 [Brauer 군](brauer-groups.md)에서 본 Hasse 원리의 반례를 다루는 표준 도구다. $M^{*}$ 쪽이 다루기 쉬운 경우가 많아, 장애의 존재를 손에 잡히는 유한 계산으로 옮기는 데 쓰인다.
 
 [^1]: 표준 참고는 J. Neukirch, A. Schmidt, K. Wingberg, *Cohomology of Number Fields* (2판, Springer 2008) 8 장, 그리고 J. S. Milne, *Arithmetic Duality Theorems* (2판, 2006) I 장. Greenberg–Wiles 공식은 A. Wiles, *Modular elliptic curves and Fermat's Last Theorem*, Ann. of Math. **141** (1995) 의 명제 1.6 과 R. Greenberg 의 Iwasawa 이론 강의록에 있다. 읽기 쉬운 입문으로 B. Mazur, K. Rubin, *Kolyvagin Systems* (Memoirs AMS 168, 2004) 2 장을 권한다. 본문의 라그랑지안 항등식과 코드는 직접 확인한 것이다.
 

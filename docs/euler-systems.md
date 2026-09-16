@@ -222,7 +222,7 @@ $$
 **정리.** $E/\mathbb Q$ 가 모듈러이고 $K$ 가 Heegner 가정을 만족한다고 하자. Heegner 점 $y_K\in E(K)$ 가 무한위수이면
 
 $$
-\mathrm{rank}\,E(K)=1,\qquad \#Ш(E/K)<\infty
+\mathrm{rank}\,E(K)=1,\qquad \#\text{Ш}(E/K)<\infty
 $$
 
 이다.
@@ -233,7 +233,7 @@ $$
 \big\langle \mathrm{loc}_\ell^{\,s}(\kappa_\ell),\ \mathrm{loc}_\ell^{\,f}(s)\big\rangle_\ell=0
 $$
 
-만 남는다. 제 2 상호법칙으로 왼쪽 성분이 $\mathrm{loc}_\ell^{\,f}(\kappa_1)\ne0$ 과 같고 국소 짝이 완전하므로 $\mathrm{loc}_\ell(s)=0$ 이다. $\ell$ 을 고른 방식과 모순이다. 따라서 $\mathrm{Sel}^p(E/K)$ 는 $\kappa_1$ 이 생성하는 것에 가깝고, $y_K$ 가 무한위수라는 가정과 합쳐 계수 1 과 $Ш$ 의 유한성이 나온다. $\square$
+만 남는다. 제 2 상호법칙으로 왼쪽 성분이 $\mathrm{loc}_\ell^{\,f}(\kappa_1)\ne0$ 과 같고 국소 짝이 완전하므로 $\mathrm{loc}_\ell(s)=0$ 이다. $\ell$ 을 고른 방식과 모순이다. 따라서 $\mathrm{Sel}^p(E/K)$ 는 $\kappa_1$ 이 생성하는 것에 가깝고, $y_K$ 가 무한위수라는 가정과 합쳐 계수 1 과 $\text{Ш}$ 의 유한성이 나온다. $\square$
 
 $\gamma$ 를 $K$ 의 복소켤레라 하면 $E(K)$ 와 $\mathrm{Sel}$ 이 $\pm$ 고유공간으로 쪼개지고 $y_K$ 는 한쪽에만 산다. Kolyvagin 소수의 조건이 $\mathrm{Fr}_\ell$ 을 복소켤레와 묶어 두는 이유가 여기에 있다. 부호가 맞지 않으면 상호법칙의 항이 자동으로 죽어 정보가 사라진다.
 
@@ -242,10 +242,10 @@ $\gamma$ 를 $K$ 의 복소켤레라 하면 $E(K)$ 와 $\mathrm{Sel}$ 이 $\pm$ 
 정리는 유한성만이 아니라 크기의 상계를 준다. $M_n$ 을 $\mathcal P_n$ 이 $E(K)/p^{M}$ 에서 소멸하지 않는 최대의 $M$ 이라 하고 $M_\infty=\min_n M_n$ 이라 하자. 그러면
 
 $$
-\mathrm{ord}_p\,\#Ш(E/K)[p^\infty]\ \le\ 2\,\big(M_\infty-\mathrm{ord}_p[E(K):\mathbb Z y_K]\big)
+\mathrm{ord}_p\,\#\text{Ш}(E/K)[p^\infty]\ \le\ 2\,\big(M_\infty-\mathrm{ord}_p[E(K):\mathbb Z y_K]\big)
 $$
 
-꼴의 부등식이 나온다. $Ш$ 가 교대 짝을 가져 위수가 제곱수라는 사실과 맞물려, 실제로는 이 상계가 BSD 가 예측하는 값과 자주 일치한다. 그러므로 Heegner 점의 $p$ 로 나누어떨어짐 정도를 재는 것이 $Ш$ 를 재는 일이 된다.
+꼴의 부등식이 나온다. $\text{Ш}$ 가 교대 짝을 가져 위수가 제곱수라는 사실과 맞물려, 실제로는 이 상계가 BSD 가 예측하는 값과 자주 일치한다. 그러므로 Heegner 점의 $p$ 로 나누어떨어짐 정도를 재는 것이 $\text{Ш}$ 를 재는 일이 된다.
 
 ## 알려진 Euler 계는 몇 안 된다
 
@@ -253,7 +253,7 @@ $$
 |---|---|---|
 | 순환체 단수 $1-\zeta_n$ | $\mathbb Z_p(1)$ | Mazur–Wiles 의 재증명, 순환체 Iwasawa 주추측(Rubin) |
 | 타원 단수 | 허수이차체의 $\mathbb Z_p(1)$ | 허수이차체 위의 주추측 |
-| Heegner 점 | $T_pE$ (반순환) | 해석적 순위 $\le1$ 인 BSD, $Ш$ 유한 |
+| Heegner 점 | $T_pE$ (반순환) | 해석적 순위 $\le1$ 인 BSD, $\text{Ш}$ 유한 |
 | Beilinson–Kato 원소 | 모듈러 형식의 $T$ | $L(E,1)\ne0\Rightarrow$ 순위 0, 주추측의 한쪽 나눔 |
 | Rubin–Stark 원소 | 일반 $\mathbb Z_p(1)$ 꼬임 | 추측 단계 |
 
@@ -281,11 +281,11 @@ Rubin 은 순환체 단수의 Euler 계로 Mazur–Wiles 의 주추측을 다시
 
 ## BSD 의 $r_{\mathrm{an}}\le1$
 
-Gross–Zagier 가 $L'(E/K,1)\ne0\iff y_K$ 무한위수를 주고 Kolyvagin 이 $y_K$ 무한위수 $\Rightarrow$ 순위 1 과 $Ш$ 유한을 준다. 둘을 붙이면 해석적 순위가 0 이거나 1 인 모듈러 타원곡선에서 BSD 의 계수 부분이 증명된다. 순위 0 인 경우는 비소실 꼬임을 골라 순위 1 인 상황으로 옮겨 처리하거나, Kato 의 Euler 계로 직접 처리한다.
+Gross–Zagier 가 $L'(E/K,1)\ne0\iff y_K$ 무한위수를 주고 Kolyvagin 이 $y_K$ 무한위수 $\Rightarrow$ 순위 1 과 $\text{Ш}$ 유한을 준다. 둘을 붙이면 해석적 순위가 0 이거나 1 인 모듈러 타원곡선에서 BSD 의 계수 부분이 증명된다. 순위 0 인 경우는 비소실 꼬임을 골라 순위 1 인 상황으로 옮겨 처리하거나, Kato 의 Euler 계로 직접 처리한다.
 
-## $Ш$ 의 위수를 실제로 재기
+## $\text{Ш}$ 의 위수를 실제로 재기
 
-Kolyvagin 지표는 계산 가능한 양이다. Heegner 점을 수치적으로 구하고 $\mathcal P_n$ 들이 $p$ 로 몇 번 나뉘는지 보면 $Ш[p^\infty]$ 의 위수 상계가 나온다. BSD 공식의 다른 항(실주기, Tamagawa 수, 조절자)을 독립적으로 계산해 얻은 예측값과 비교하면, 많은 곡선에서 상계와 예측이 일치해 $Ш$ 의 위수가 확정된다. 이 방식이 순위 1 곡선의 $Ш$ 계산의 표준 절차다.
+Kolyvagin 지표는 계산 가능한 양이다. Heegner 점을 수치적으로 구하고 $\mathcal P_n$ 들이 $p$ 로 몇 번 나뉘는지 보면 $\text{Ш}[p^\infty]$ 의 위수 상계가 나온다. BSD 공식의 다른 항(실주기, Tamagawa 수, 조절자)을 독립적으로 계산해 얻은 예측값과 비교하면, 많은 곡선에서 상계와 예측이 일치해 $\text{Ш}$ 의 위수가 확정된다. 이 방식이 순위 1 곡선의 $\text{Ш}$ 계산의 표준 절차다.
 
 ## Selmer 군 계산의 일반 틀
 

@@ -126,7 +126,7 @@ $n\ge k$ 이면 $\mathbb C[S_k]\to\mathcal S$ 가 단사이고 $\mathcal S\cong\
 | 한쪽 | 다른 쪽 | 이름 |
 |---|---|---|
 | $\mathrm{GL}_n$ | $S_k$ | Schur–Weyl |
-| $O_n$ 또는 $Sp_n$ | Brauer 대수 | Brauer 쌍대성 |
+| $O_n$ 또는 $\mathrm{Sp}_n$ | Brauer 대수 | Brauer 쌍대성 |
 | 양자군 $U_q(\mathfrak{gl}_n)$ | Hecke 대수 $H_k(q)$ | Jimbo 쌍대성 |
 | $\mathfrak{gl}_n$ | 퇴화 아핀 Hecke | 아핀 판본 |
 | $\mathrm{GL}_n\times\mathrm{GL}_m$ | — | Howe 쌍대성 |
