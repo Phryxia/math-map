@@ -93,7 +93,7 @@ Kashaev 가 양자 이면체 대칭에서 나온 불변량 $\langle K\rangle_N$ 
 | 원환면 매듭 | 증명됨 (부피 0, 다항 증가) |
 | $5_2$ 와 일부 twist 매듭 | 증명됨 |
 | 쌍곡 링크의 무한족 일부 | 증명됨 |
-| 일반 매듭 | 미해결 |
+| 일반 매듭 | 증명되지 않음[^1] |
 
 증명된 경우는 합을 명시적으로 다룰 수 있을 만큼 단순한 것들이다. 어려움은 안장점 해석을 엄밀하게 만드는 데 있고, 합의 항이 복소수라 최대항 근처의 상쇄를 통제하기 어렵다.
 
@@ -103,7 +103,7 @@ Kashaev 가 양자 이면체 대칭에서 나온 불변량 $\langle K\rangle_N$ 
 
 Alexander 다항식은 무한순환덮개의 호몰로지라는 해석이 있지만 Jones 다항식에는 그런 기하적 해석이 없었고, 볼륨 추측이 그 자리의 후보다.
 
-추측이 참이면 $J_N$ 이 전부 자명한 매듭은 풀린 매듭뿐이다. 부피가 0 이고 단체적 부피가 0 이면 여집합이 Seifert 올다양체이고 거기서 결론이 따라 나온다. 보통 Jones 다항식 하나가 풀린 매듭을 검출하는지는 미해결이다.
+추측이 참이면 $J_N$ 이 전부 자명한 매듭은 풀린 매듭뿐이다. 부피가 0 이고 단체적 부피가 0 이면 여집합이 Seifert 올다양체이고 거기서 결론이 따라 나온다. 보통 Jones 다항식 하나가 풀린 매듭을 검출하는지는 답이 나와 있지 않다[^3].
 
 ## 정련된 판본
 
@@ -163,6 +163,7 @@ $2\pi\log J_N/N$ 은 참값보다 $2\pi\cdot\tfrac32\log N/N$ 만큼 크다. 이
 
 [^1]: R. Kashaev, *The hyperbolic volume of knots from quantum dilogarithm*, Lett. Math. Phys. 39 (1997) 가 원래 형태이고, H. Murakami–J. Murakami, *The colored Jones polynomials and the simplicial volume of a knot*, Acta Math. 186 (2001) 이 색 Jones 다항식의 진술로 옮겼다.
 [^2]: 8 자매듭에 대한 엄밀한 증명은 T. Ekholm 의 미출판 논증이 널리 인용되며, 상세한 해석적 취급은 H. Murakami 의 개관 *An introduction to the volume conjecture* (2010) 에 정리되어 있다. 정련된 판본과 위상 항은 H. Murakami–J. Murakami–M. Okamoto–T. Takata–Y. Yokota, Experiment. Math. 11 (2002).
+[^3]: S. Bigelow, "Does the Jones polynomial detect the unknot?", Journal of Knot Theory and Its Ramifications 11 (2002), 493–505. 제목의 물음이 답을 얻지 못한 상태임을 서론이 밝힌다.
 
 # 연관 문서
 
