@@ -22,7 +22,7 @@ $\zeta_n$ 이 하던 일을 $j$ 와 비틀림점이 한다. 이것이 Kronecker 
 
 $\Lambda=\mathbb Z+\mathbb Z\tau\subset\mathbb C$ 를 격자라 하자. 복소수 $\alpha$ 가 $\alpha\Lambda\subseteq\Lambda$ 를 만족하면 $\alpha$ 는 $\mathbb C/\Lambda$ 의 자기준동형을 준다. $\alpha=n\in\mathbb Z$ 는 언제나 가능하다. 그 밖의 $\alpha$ 가 있으려면 무엇이 필요한가.
 
-$\alpha\cdot1=a+b\tau$, $\alpha\cdot\tau=c+d\tau$ 를 $a,b,c,d\in\mathbb Z$ 로 쓰면 $\alpha$ 는 정수 행렬의 고유값이므로 이차 대수적 정수다. 그리고 $\alpha\notin\mathbb Z$ 이려면 $\tau$ 가 이차무리수여야 한다. 즉
+$\alpha\cdot1=a+b\tau$ 와 $\alpha\cdot\tau=c+d\tau$ 를 $a,b,c,d\in\mathbb Z$ 로 쓰면 $\alpha$ 는 정수 행렬의 고유값이므로 이차 대수적 정수다. 그리고 $\alpha\notin\mathbb Z$ 이려면 $\tau$ 가 이차무리수여야 한다. 즉
 
 $$
 A\tau^2+B\tau+C=0,\qquad A,B,C\in\mathbb Z,\ \gcd(A,B,C)=1,\ D=B^2-4AC<0
@@ -124,13 +124,13 @@ graph LR
 
 ## $j$ 만으로는 부족하다
 
-$H$ 는 $K$ 의 최대 **비분기** 아벨확대다. 분기를 허용하는 광선 유체까지 얻으려면 재료가 하나 더 필요하고, 그것이 비틀림점이다. $E$ 가 $\mathcal O_K$ 로 복소 곱셈을 가질 때 $\mathfrak m$ 등분점 $E[\mathfrak m]$ 의 좌표를 자기동형으로 정규화한 것(Weber 함수 $\mathfrak h$)을 $H$ 에 붙이면 도체 $\mathfrak m$ 의 광선 유체가 나온다. $\mathbb Q$ 쪽에서 $\zeta_n$ 이 $\mathbb G_m$ 의 $n$ 등분점이었다는 것을 떠올리면 유비가 정확하다. **곱셈군의 등분점 자리에 타원곡선의 등분점이 들어간다.**
+$H$ 는 $K$ 의 최대 **비분기** 아벨확대다. 분기를 허용하는 광선 유체까지 얻으려면 재료가 하나 더 필요하고, 그것이 비틀림점이다. $E$ 가 $\mathcal O_K$ 로 복소 곱셈을 가질 때 $\mathfrak m$ 등분점 $E[\mathfrak m]$ 의 좌표를 자기동형으로 정규화한 것, 곧 Weber 함수 $\mathfrak h$ 의 값을 $H$ 에 붙이면 도체 $\mathfrak m$ 의 광선 유체가 나온다. $\mathbb Q$ 쪽에서 $\zeta_n$ 이 $\mathbb G_m$ 의 $n$ 등분점이었다는 것을 떠올리면 유비가 정확하다. **곱셈군의 등분점 자리에 타원곡선의 등분점이 들어간다.**
 
 # 정의
 
 ## 순서환과 복소 곱셈
 
-허수이차체 $K$ 의 정수환을 $\mathcal O_K$ 라 하고, $\mathcal O=\mathbb Z+f\mathcal O_K$ ($f\ge1$, 지휘자)를 순서환이라 하자. 판별식은 $D=f^2 d_K$ 다. 타원곡선 $E/\mathbb C$ 가 **$\mathcal O$ 에 의한 복소 곱셈을 가진다**는 것은
+허수이차체 $K$ 의 정수환을 $\mathcal O_K$ 라 하고, 지휘자 $f\ge1$ 에 대한 $\mathcal O=\mathbb Z+f\mathcal O_K$ 를 순서환이라 하자. 판별식은 $D=f^2 d_K$ 다. 타원곡선 $E/\mathbb C$ 가 **$\mathcal O$ 에 의한 복소 곱셈을 가진다**는 것은
 
 $$
 \mathrm{End}(E)\cong\mathcal O
@@ -149,7 +149,7 @@ $\mathcal O=\mathcal O_K$ 인 경우를 적는다.
 1. $j(\mathfrak a)$ 는 대수적 정수다.
 2. $H=K(j(\mathcal O_K))$ 는 $K$ 의 힐베르트 유체다. 특히 $[H:K]=h(K)$ 이고 $H/K$ 는 비분기 아벨확대이며 최대다.
 3. $[\mathbb Q(j):\mathbb Q]=h(K)$ 이고 $H_D$ 는 $\mathbb Q$ 위에서 기약이다.
-4. Artin 동형 아래 $\sigma_{\mathfrak a}(j(\mathfrak b))=j(\mathfrak a^{-1}\mathfrak b)$.
+4. Artin 동형 아래 $\sigma_{\mathfrak a}(j(\mathfrak b))=j(\mathfrak a^{-1}\mathfrak b)$ 이다.
 
 ## 제2 주정리와 Shimura 상호법칙
 
@@ -186,7 +186,7 @@ $E$ 가 $\mathcal O_K$ 로 CM 을 갖고 $p$ 에서 좋은 환원을 가진다�
 | $K$ 에서 $p$ 의 분해 | 환원 $\tilde E$ | Frobenius |
 |---|---|---|
 | 분열 $p=\pi\bar\pi$ | 보통(ordinary) | $\pi\in\mathcal O_K$ 로 주어짐, $a_p=\pi+\bar\pi$ |
-| 비활성 | 초특이(supersingular) | $a_p=0$, $\mathrm{End}$ 가 사원수 대수 |
+| 비활성 | 초특이(supersingular) | $a_p=0$ 이고 $\mathrm{End}$ 가 사원수 대수 |
 | 분기 | 보통 또는 초특이 ($D$ 에 따름) | — |
 
 분열하는 경우 $p=\pi\bar\pi=N(\pi)$ 이므로 **$p$ 를 $K$ 의 노름으로 쓰는 것**과 곡선의 점 개수 $\#\tilde E(\mathbb F_p)=p+1-(\pi+\bar\pi)$ 가 같은 자료다. $p=x^2+ny^2$ 꼴 표현 문제가 CM 이론으로 풀리는 것이 이 때문이다. 예컨대 $p=x^2+27y^2$ 인 것은 $p\equiv1\pmod3$ 이고 $2$ 가 $\bmod\,p$ 세제곱잉여인 것과 같은데, 이는 $h(-108)=3$ 인 순서환의 유체 다항식 $X^3-2$ 로 설명된다.

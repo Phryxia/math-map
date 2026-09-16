@@ -42,7 +42,7 @@ $$
 
 ## 자취 정합성에서 어긋난 류를 만든다
 
-자연에서 얻어지는 대수적 원소들은 보통 Selmer 조건을 잘 만족한다. 순환체의 단수 $1-\zeta_n$, 타원곡선의 Heegner 점 $y_n$, 모듈러 곡선의 Beilinson 원소 — 전부 대역적으로 존재하는 진짜 원소라서 어긋난 곳이 없다. 그대로는 쓸모가 없다.
+자연에서 얻어지는 대수적 원소들은 보통 Selmer 조건을 잘 만족한다. 순환체의 단수 $1-\zeta_n$ 과 타원곡선의 Heegner 점 $y_n$ 과 모듈러 곡선의 Beilinson 원소 — 전부 대역적으로 존재하는 진짜 원소라서 어긋난 곳이 없다. 그대로는 쓸모가 없다.
 
 돌파구는 이 원소들이 탑 위에서 **자취로 이어져 있다**는 사실이다. Heegner 점이라면
 
@@ -125,7 +125,7 @@ flowchart TD
 
 $K$ 를 수체, $T$ 를 $G_K$ 가 작용하는 유한생성 $\mathbb Z_p$ 가군이라 하자. $\mathcal N$ 을 적당한 조건을 만족하는 제곱없는 정수들의 집합, $K(n)/K$ 를 도체 $n$ 에 붙는 아벨 확대의 족이라 하자.
 
-**정의.** 류의 족 $c=\{c_n\}_{n\in\mathcal N}$, $c_n\in H^1(K(n),T)$ 가 **Euler 계**라는 것은 모든 $n$ 과 $\ell\nmid n$ 에 대해
+**정의.** 류의 족 $c=\{c_n\}_{n\in\mathcal N}$ 으로 $c_n\in H^1(K(n),T)$ 인 것이 **Euler 계**라는 것은 모든 $n$ 과 $\ell\nmid n$ 에 대해
 
 $$
 \mathrm{cor}_{K(n\ell)/K(n)}\big(c_{n\ell}\big)=P_\ell\!\left(\mathrm{Fr}_\ell^{-1}\right)c_n
@@ -179,8 +179,8 @@ Kolyvagin 소수 $\ell$ 에서는 $H^1(K_\lambda,E[p])$ 이 $\mathbb F_p$ 위 2 
 
 | 이름 | 기호 | 정체 |
 |---|---|---|
-| 유한부(비분기) | $H^1_f(K_\lambda,E[p])$ | $H^1(\mathrm{Fr}_\lambda\text{ 불변})$, $E(K_\lambda)/p$ 의 상 |
-| 특이부(가로지름) | $H^1_s(K_\lambda,E[p])$ | 몫 $H^1/H^1_f$, 분기류의 잔여 |
+| 유한부(비분기) | $H^1_f(K_\lambda,E[p])$ | $H^1(\mathrm{Fr}_\lambda\text{ 불변})$ 이고 $E(K_\lambda)/p$ 의 상 |
+| 특이부(가로지름) | $H^1_s(K_\lambda,E[p])$ | 몫 $H^1/H^1_f$ 이고 분기류의 잔여 |
 
 $p\mid\ell+1$ 과 $p\mid a_\ell$ 이라는 조건 덕에 $E[p]$ 위의 $\mathrm{Fr}_\lambda$ 작용이 $\pm1$ 을 고윳값으로 갖고, 그래서 두 조각이 각각 1 차원이 된다. 국소 Tate 짝 $H^1_f\times H^1_s\to\mathbb F_p$ 는 완전 짝이다.
 
