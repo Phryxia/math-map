@@ -59,7 +59,7 @@ $\chi=0$ 이면 자유도가 없어 계가 $0$ 뿐이고, $\chi\ge2$ 이면 계�
 
 # 정의
 
-이하 $R=\mathbb Z/p^k$ 또는 $\mathbb Z_p$, $T$ 는 $R$ 위 자유이고 $G_K$ 가 연속으로 작용하는 가군이다. $T^*=\mathrm{Hom}(T,\mu_{p^k})$ 를 Cartier 쌍대라 한다.
+이하 $R$ 은 $\mathbb Z/p^k$ 또는 $\mathbb Z_p$ 이고 $T$ 는 $R$ 위 자유이고 $G_K$ 가 연속으로 작용하는 가군이다. $T^*=\mathrm{Hom}(T,\mu_{p^k})$ 를 Cartier 쌍대라 한다.
 
 ## Selmer 구조
 
@@ -171,14 +171,14 @@ $$
 
 두 따름결과가 중요하다.
 
-- **완화는 $\chi$ 를 올린다.** $\ell$ 에서 불분기($\dim=\dim H^0(K_\ell,T)$)를 전체로 넓히면 $\chi$ 가 $\dim H^1(K_\ell,T)-\dim H^1_{\mathrm{ur}}(K_\ell,T)$ 만큼 커진다. Kolyvagin 소수에서 이 값은 $\mathrm{rank}\,T$ 다.
+- **완화는 $\chi$ 를 올린다.** $\ell$ 에서 불분기 조건, 곧 $\dim=\dim H^0(K_\ell,T)$ 인 조건을 전체로 넓히면 $\chi$ 가 $\dim H^1(K_\ell,T)-\dim H^1_{\mathrm{ur}}(K_\ell,T)$ 만큼 커진다. Kolyvagin 소수에서 이 값은 $\mathrm{rank}\,T$ 다.
 - **가로지름은 $\chi$ 를 보존한다.** $H^1_{\mathrm{f}}$ 와 $H^1_{\mathrm{tr}}$ 의 크기가 같으므로 우변이 $1$ 이다. 그러므로 모든 $n\in\mathcal N$ 에 대해 $\chi(\mathcal F(n))=\chi(\mathcal F)$ 다.
 
 두 번째가 핵심계수를 불변량으로 만든다. Kolyvagin 계는 $\mathcal N$ 위를 돌아다니지만 시소의 기준선은 어디서나 같다.
 
 ## 자기쌍대 구조의 핵심계수는 $0$
 
-$\mathcal F=\mathcal F^*$ 이고 $T\cong T^*$ 이면 좌변의 두 군이 같으므로 $\chi=0$ 이다. 국소 계산으로 확인해 보면 상쇄가 어디서 일어나는지 보인다. $K=\mathbb Q$, $T=E[p]$, $p\ge5$ 이고 $E[p]$ 가 기약이며 $E$ 가 $p$ 에서 좋은 환원을 갖는다 하자.
+$\mathcal F=\mathcal F^*$ 이고 $T\cong T^*$ 이면 좌변의 두 군이 같으므로 $\chi=0$ 이다. 국소 계산으로 확인해 보면 상쇄가 어디서 일어나는지 보인다. $K=\mathbb Q$ 와 $T=E[p]$ 와 $p\ge5$ 이고 $E[p]$ 가 기약이며 $E$ 가 $p$ 에서 좋은 환원을 갖는다 하자.
 
 | 자리 $v$ | $\dim H^1_{\mathcal F}(\mathbb Q_v,T)$ | $\dim H^0(\mathbb Q_v,T)$ | 기여 |
 | --- | --- | --- | --- |
@@ -225,7 +225,7 @@ console.log(coreRank(relaxedAtP)); // 1  -> 자유 순위 1
 Mazur–Rubin 의 결론은 세 갈래다. $T$ 가 적절한 큼직함 조건(잔여 표현의 상이 충분히 크다)을 만족한다고 하자.
 
 - $\chi(\mathcal F)=0$ 이면 $\mathbf{KS}(T,\mathcal F,\mathcal P)=0$ 이다. 정합 조건이 너무 많아 $0$ 만 살아남는다.
-- $\chi(\mathcal F)=1$ 이면 $\mathbf{KS}(T,\mathcal F,\mathcal P)$ 는 **자유 순위 $1$** 인 $R$ 가군이다.
+- $\chi(\mathcal F)=1$ 이면 $\mathbf{KS}(T,\mathcal F,\mathcal P)$ 는 **자유 순위 $1$ 인** $R$ 가군이다.
 - $\chi(\mathcal F)\ge2$ 이면 가군이 매우 크고, 원소 하나가 나머지를 결정하지 못한다.
 
 가운데 경우가 왜 강력한지는 이렇게 읽는다. 서로 다른 Euler 계 두 개가 있어도 거기서 나온 Kolyvagin 계는 **서로 상수배**다. 그러므로 "어떤 Euler 계를 썼는가" 가 사라지고 "그 계가 $p$ 로 몇 번 나누어지는가" 만 남는다.
