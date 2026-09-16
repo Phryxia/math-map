@@ -27,6 +27,7 @@ graph TD
   CE --> MG["Martingale"]
   RV --> MC["Markov 연쇄"]
   MC --> RW["Random walk"]
+  MC --> PP["Poisson 과정"]
   MG --> BM["Brown 운동"]
   CLT --> BM
   BM --> IT["Itô 적분"]
@@ -62,6 +63,7 @@ graph TD
 - [Martingale](martingales.md): 공정한 도박의 형식화, 선택적 정지와 수렴정리
 - [Markov 연쇄](markov-chains.md): 전이행렬, 정상분포, 수렴정리
 - [Random walk와 전기 네트워크](random-walks.md): 재귀성을 유효저항으로 읽는 대응
+- [Poisson 과정](poisson-process.md): 독립·정상 증분을 가진 계수과정, 지수 대기시간
 
 ## 연속시간 확률과정
 
@@ -79,7 +81,6 @@ graph TD
 
 # 빈자리
 
-- Poisson 과정: 계수과정의 기본 모형인데 문서가 없다. 지수 대기시간, 무기억성, Markov 연쇄의 연속시간 판본으로 이어진다.
 - 대편차 원리: Cramér 정리와 Sanov 정리. [집중부등식](concentration-inequalities.md)의 지수가 정확히 무엇인지 말해 주는 층위다.
 - 결합과 전변동거리: Markov 연쇄의 수렴 속도를 재는 표준 도구.
 - Donsker 불변원리: 랜덤워크의 스케일 극한이 [Brown 운동](brownian-motion.md)이라는 함수공간 판본의 중심극한정리.
