@@ -20,7 +20,7 @@
 
 ## 이항관계와 동치관계
 
-$A$ 위의 이항관계는 곱집합의 부분집합 $R \subseteq A \times A$ 이고, $(x, y) \in R$ 을 $x\,R\,y$ 로 쓴다. 임의의 $x, y, z \in A$ 에 대해 다음 셋을 만족하면 동치관계다.
+$A$ 위의 이항관계는 곱집합의 부분집합 $R \subseteq A \times A$ 이고, $(x, y) \in R$ 을 $x\thinspace R\thinspace y$ 로 쓴다. 임의의 $x, y, z \in A$ 에 대해 다음 셋을 만족하면 동치관계다.
 
 $$
 \begin{aligned}

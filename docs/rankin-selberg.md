@@ -75,7 +75,7 @@ $$
 
 ## GL_n 에는 Fourier 계수가 없다
 
-$n\ge3$ 에서 첨점형식의 Fourier 전개는 수열 $\{a_n\}$ 이 아니다. 극대 멱단근 $N$ 이 아벨군이 아니라서, 전개의 계수 자리에 수가 아니라 함수가 온다. 그 함수가 **Whittaker 함수**다.
+$n\ge3$ 에서 첨점형식의 Fourier 전개는 수열 $\lbrace a_n\rbrace$ 이 아니다. 극대 멱단근 $N$ 이 아벨군이 아니라서, 전개의 계수 자리에 수가 아니라 함수가 온다. 그 함수가 **Whittaker 함수**다.
 
 $$
 W_\varphi(g)=\int_{N(\mathbb Q)\backslash N(\mathbb A)}\varphi(ng)\,\psi^{-1}(n)\,dn
@@ -232,7 +232,7 @@ $$
 =\frac{\zeta(s-11)\,L(s,\mathrm{Sym}^2\Delta)}{\zeta(2s-22)}
 $$
 
-여기서 $L(s,\mathrm{Sym}^2\Delta)$ 의 국소 인자는 $\alpha_p^2,\;1,\;\beta_p^2$ 에서 오는 3 차식이고, $\alpha_p^2+\beta_p^2=\tau(p)^2/p^{11}-2$ 이므로 계수가 전부 정수다.
+여기서 $L(s,\mathrm{Sym}^2\Delta)$ 의 국소 인자는 $\alpha_p^2,\thickspace 1,\thickspace\beta_p^2$ 에서 오는 3 차식이고, $\alpha_p^2+\beta_p^2=\tau(p)^2/p^{11}-2$ 이므로 계수가 전부 정수다.
 
 $$
 L_p(s,\mathrm{Sym}^2\Delta)^{-1}

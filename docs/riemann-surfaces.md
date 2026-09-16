@@ -38,7 +38,7 @@ $w^2=z$ 를 생각한다. $z\ne0$ 마다 $w$ 가 둘이다. 평면 하나로는 
 
 ## Riemann 곡면
 
-연결된 Hausdorff 위상공간 $X$ 에 열린덮개 $\{U_i\}$ 와 위상동형 $\varphi_i:U_i\to V_i\subset\mathbb C$ 가 주어지고, 겹치는 곳에서 전이함수
+연결된 Hausdorff 위상공간 $X$ 에 열린덮개 $\lbrace U_i\rbrace$ 와 위상동형 $\varphi_i:U_i\to V_i\subset\mathbb C$ 가 주어지고, 겹치는 곳에서 전이함수
 
 $$
 \varphi_j\circ\varphi_i^{-1}:\varphi_i(U_i\cap U_j)\to\varphi_j(U_i\cap U_j)
@@ -51,13 +51,13 @@ $$
 ## 기본 예
 
 - $\mathbb C$ 와 그 열린부분집합.
-- **Riemann 구** $\widehat{\mathbb C}=\mathbb C\cup\{\infty\}$ 다. 좌표는 $z$ 와 $1/z$ 두 장이고 전이함수가 $z\mapsto1/z$ 다. 콤팩트 Riemann 곡면 가운데 종수 0 인 유일한 것이다.
+- **Riemann 구** $\widehat{\mathbb C}=\mathbb C\cup\lbrace\infty\rbrace$ 다. 좌표는 $z$ 와 $1/z$ 두 장이고 전이함수가 $z\mapsto1/z$ 다. 콤팩트 Riemann 곡면 가운데 종수 0 인 유일한 것이다.
 - **복소 토러스** $\mathbb C/\Lambda$ 다. 여기서 $\Lambda=\mathbb Z+\tau\mathbb Z$ 는 격자이고 $\tau\in\mathbb H$ 다. 종수 1 이며, [타원곡선](elliptic-curves.md)의 복소해석적 모습이다.
-- 평면곡선 $\{(z,w):P(z,w)=0\}$ 의 비특이점 집합. 콤팩트 Riemann 곡면은 전부 이런 대수곡선으로 실현된다.
+- 평면곡선 $\lbrace(z,w):P(z,w)=0\rbrace$ 의 비특이점 집합. 콤팩트 Riemann 곡면은 전부 이런 대수곡선으로 실현된다.
 
 ## 균일화 정리
 
-> **정리(Koebe, Poincaré, 1907).** 단순연결 Riemann 곡면은 $\widehat{\mathbb C}$ 와 $\mathbb C$ 와 $\mathbb D=\{|z|<1\}$ 가운데 정확히 하나와 정칙동형이다.
+> **정리(Koebe, Poincaré, 1907).** 단순연결 Riemann 곡면은 $\widehat{\mathbb C}$ 와 $\mathbb C$ 와 $\mathbb D=\lbrace|z|<1\rbrace$ 가운데 정확히 하나와 정칙동형이다.
 
 세 모형은 서로 동형이 아니다. $\widehat{\mathbb C}$ 만 콤팩트이고, $\mathbb C$ 와 $\mathbb D$ 는 Liouville 정리로 갈린다. $\mathbb D\to\mathbb C$ 는 정칙사상이 많지만 $\mathbb C\to\mathbb D$ 는 유계 정함수라 상수뿐이다.
 

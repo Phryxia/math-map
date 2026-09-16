@@ -89,7 +89,7 @@ $$
 \mathfrak S_\theta = \exp\left(\sum_{\omega \in \theta}\dot\Delta_\omega\right)
 $$
 
-로 쓰인다. 특이 방향에 특이점이 하나면 지수함수가 두 항에서 끊기고, 격자 $\{A, 2A, 3A, \dots\}$ 이면 모든 항이 살아 무한급수가 된다.
+로 쓰인다. 특이 방향에 특이점이 하나면 지수함수가 두 항에서 끊기고, 격자 $\lbrace A, 2A, 3A, \dots\rbrace$ 이면 모든 항이 살아 무한급수가 된다.
 
 # 성질
 

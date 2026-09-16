@@ -70,7 +70,7 @@ $$
 
 ## Grassmann 다양체와 Schubert 세포
 
-$\mathrm{Gr}(k,n)=\{V\le\mathbb C^n:\dim V=k\}$ 는 차원 $k(n-k)$ 의 매끄러운 사영다양체다. 기준 깃발 $F_\bullet$ 을 고정하고 $\lambda=(\lambda_1\ge\cdots\ge\lambda_k)$ 와 $\lambda_1\le n-k$ 에 대해
+$\mathrm{Gr}(k,n)=\lbrace V\le\mathbb C^n:\dim V=k\rbrace$ 는 차원 $k(n-k)$ 의 매끄러운 사영다양체다. 기준 깃발 $F_\bullet$ 을 고정하고 $\lambda=(\lambda_1\ge\cdots\ge\lambda_k)$ 와 $\lambda_1\le n-k$ 에 대해
 
 $$
 \Omega_\lambda=\{V:\dim(V\cap F_{n-k+i-\lambda_i})\ge i\ \ (1\le i\le k)\}

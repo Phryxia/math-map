@@ -92,7 +92,7 @@ $$
 
 ## 일반 격자
 
-[격자](lattices.md) $L\subset\mathbb R^{d}$ 와 쌍대격자 $L^{*}=\{\mu:\langle\mu,\lambda\rangle\in\mathbb Z\ \forall\lambda\in L\}$ 에 대해
+[격자](lattices.md) $L\subset\mathbb R^{d}$ 와 쌍대격자 $L^{*}=\lbrace\mu:\langle\mu,\lambda\rangle\in\mathbb Z\ \forall\lambda\in L\rbrace$ 에 대해
 
 $$
 \sum_{\lambda\in L}f(\lambda)=\frac1{\operatorname{covol}(L)}\sum_{\mu\in L^{*}}\hat f(\mu)
@@ -157,7 +157,7 @@ $$
 \pi^{-s/2}\Gamma\!\left(\frac s2\right)\zeta(s)=\int_0^{\infty}\frac{\theta(t)-1}{2}\,t^{s/2-1}dt
 $$
 
-로 쓰고 적분을 $t=1$ 에서 자른 뒤 앞쪽 조각에 $t\mapsto1/t$ 와 $\theta(1/t)=\sqrt t\,\theta(t)$ 를 적용하면 $s\mapsto1-s$ 에 대해 대칭인 표현이 남는다. **Riemann 의 두 번째 증명이 이것이고, 대칭의 근원이 Poisson 합**이다. [소수 정리](prime-number-theorem.md)의 해석적 도구가 전부 이 함수방정식 위에 서 있다.
+로 쓰고 적분을 $t=1$ 에서 자른 뒤 앞쪽 조각에 $t\mapsto1/t$ 와 $\theta(1/t)=\sqrt t\thinspace\theta(t)$ 를 적용하면 $s\mapsto1-s$ 에 대해 대칭인 표현이 남는다. **Riemann 의 두 번째 증명이 이것이고, 대칭의 근원이 Poisson 합**이다. [소수 정리](prime-number-theorem.md)의 해석적 도구가 전부 이 함수방정식 위에 서 있다.
 
 ## 표본화와 에일리어싱
 

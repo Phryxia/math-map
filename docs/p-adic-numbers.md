@@ -97,7 +97,7 @@ $$
 
 - 국소환이다. 유일한 극대 아이디얼이 $p\mathbb Z_p$ 이고 잉여체가 $\mathbb Z_p/p\mathbb Z_p\cong\mathbb F_p$ 다.
 - 0 이 아닌 모든 아이디얼이 $p^n\mathbb Z_p$ 다. 곧 이산부치환이다.
-- 모든 원소가 $a_i\in\{0,\dots,p-1\}$ 을 써서 $x=\sum_{i\ge0}a_ip^i$ 로 유일하게 쓰인다.
+- 모든 원소가 $a_i\in\lbrace 0,\dots,p-1\rbrace$ 을 써서 $x=\sum_{i\ge0}a_ip^i$ 로 유일하게 쓰인다.
 - $\varprojlim\mathbb Z/p^n\mathbb Z$ 와 표준적으로 동형이다.
 - 콤팩트하다. $\mathbb Q_p$ 자신은 국소콤팩트이고 완전분리다.
 

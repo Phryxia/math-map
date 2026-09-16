@@ -10,7 +10,7 @@ a_p=p+1-\#E(\mathbb F_p),
 |a_p|\le2\sqrt p
 $$
 
-이고, 두 고윳값은 $\sqrt p\,e^{\pm i\theta_p}$ 꼴이다. 정규화하면
+이고, 두 고윳값은 $\sqrt p\thinspace e^{\pm i\theta_p}$ 꼴이다. 정규화하면
 
 $$
 \frac{a_p}{2\sqrt p}=\cos\theta_p\in[-1,1],\qquad\theta_p\in[0,\pi]
@@ -24,7 +24,7 @@ $$
 \theta_p\ \sim\ \frac2\pi\sin^2\theta\,d\theta
 $$
 
-를 따른다. $\cos\theta$ 로 옮기면 반원 분포 $\frac2\pi\sqrt{1-x^2}\,dx$ 다. 이 측도는 우연히 나온 것이 아니다. 콤팩트군 $\mathrm{SU}(2)$ 의 켤레류 위 Haar 측도이고, 곧 **Frobenius 가 $\mathrm{SU}(2)$ 안에 균등하게 흩어진다**는 말이다.
+를 따른다. $\cos\theta$ 로 옮기면 반원 분포 $\frac2\pi\sqrt{1-x^2}\thinspace dx$ 다. 이 측도는 우연히 나온 것이 아니다. 콤팩트군 $\mathrm{SU}(2)$ 의 켤레류 위 Haar 측도이고, 곧 **Frobenius 가 $\mathrm{SU}(2)$ 안에 균등하게 흩어진다**는 말이다.
 
 복소곱셈이 있으면 답이 달라진다. 대칭군이 $\mathrm{SU}(2)$ 가 아니라 그 안의 정규화 토러스로 줄어들기 때문이다. 절반의 소수에서 $a_p=0$ 이 되고(그 소수에서 곡선이 초특이다) 나머지 각은 **균등분포**를 따른다. 아래 계산에서 두 경우를 나란히 확인한다.
 
@@ -48,7 +48,7 @@ $$
 
 이 관점이 Sato–Tate 를 일반화하는 열쇠다. 곡선마다 **Sato–Tate 군** $\mathrm{ST}(E)$ 라는 콤팩트군이 붙고, 정규화된 Frobenius 가 그 군의 켤레류에서 Haar 측도로 등분포한다.
 
-- **복소곱셈이 없으면** $\mathrm{ST}(E)=\mathrm{SU}(2)$ 다. $\ell$ 진 표현의 상이 열려 있다(Serre 의 정리). 측도가 $\frac2\pi\sin^2\theta\,d\theta$ 다.
+- **복소곱셈이 없으면** $\mathrm{ST}(E)=\mathrm{SU}(2)$ 다. $\ell$ 진 표현의 상이 열려 있다(Serre 의 정리). 측도가 $\frac2\pi\sin^2\theta\thinspace d\theta$ 다.
 - **복소곱셈이 있으면** 표현의 상이 훨씬 작다. 허수이차체 $K$ 안의 Hecke 지표로 설명되고, $\mathrm{ST}(E)$ 는 정규화 토러스 $N(\mathrm{U}(1))$ 다. $\mathbb Q$ 위에서 보면 절반의 소수($K$ 에서 불활성인 소수)에서 곡선이 초특이라 $a_p=0$ 이고, 나머지 절반에서 각이 $[0,\pi]$ 에 **균등**하다.
 
 균등분포가 나오는 이유도 같은 논리다. $\mathrm{U}(1)$ 의 Haar 측도가 각에 대해 균등하기 때문이다. 군이 바뀌면 측도가 바뀐다.
@@ -76,7 +76,7 @@ $$
 =U_n(\cos\theta)
 $$
 
-곧 제2종 Chebyshev 다항식이다. 이 함수들이 $\frac2\pi\sin^2\theta\,d\theta$ 에 대해 정규직교기저를 이룬다. 그러므로 "모든 $n\ge1$ 에서 $\sum_p U_n(\cos\theta_p)$ 가 주 항 없이 작다" 를 보이면 등분포가 나온다.
+곧 제2종 Chebyshev 다항식이다. 이 함수들이 $\frac2\pi\sin^2\theta\thinspace d\theta$ 에 대해 정규직교기저를 이룬다. 그러므로 "모든 $n\ge1$ 에서 $\sum_p U_n(\cos\theta_p)$ 가 주 항 없이 작다" 를 보이면 등분포가 나온다.
 
 그 합을 통제하는 것이 $L(\mathrm{Sym}^nE,s)$ 다. Dirichlet 급수의 표준 논법대로, $\mathrm{Re}(s)=1$ 에서 영점도 극점도 없으면 계수합이 상쇄된다. 곧 **등분포 문제가 무한히 많은 $L$ 함수의 해석적 성질로 환원된다.** 소수 정리가 $\zeta(1+it)\ne0$ 으로 환원되는 것과 똑같은 구조이고, 다만 함수가 하나가 아니라 무한히 많다.
 
@@ -103,7 +103,7 @@ $$
 
 ## Sato–Tate 추측(정리)
 
-> **정리 (Taylor 등, 2006–2011).** $E/\mathbb Q$ 가 복소곱셈을 갖지 않으면 $\{\theta_p\}$ 는 $\mu_{ST}$ 에 대해 등분포한다. 곧 모든 $0\le\alpha<\beta\le\pi$ 에서
+> **정리 (Taylor 등, 2006–2011).** $E/\mathbb Q$ 가 복소곱셈을 갖지 않으면 $\lbrace\theta_p\rbrace$ 는 $\mu_{ST}$ 에 대해 등분포한다. 곧 모든 $0\le\alpha<\beta\le\pi$ 에서
 > $$\lim_{X\to\infty}\frac{\#\{p\le X:\theta_p\in[\alpha,\beta]\}}{\#\{p\le X\}}=\int_\alpha^\beta\frac2\pi\sin^2\theta\,d\theta$$
 
 총체적 실체는 전체수체(totally real field) 위의 타원곡선까지 확장되었다.
@@ -125,7 +125,7 @@ $\mathrm{ST}(E)$ 는 $\ell$ 진 표현의 상의 Zariski 폐포에 대응하는 
 
 | | $\mathrm{ST}(E)$ | 측도 | $a_p=0$ 인 소수의 밀도 |
 |---|---|---|---|
-| CM 없음 | $\mathrm{SU}(2)$ | $\frac2\pi\sin^2\theta\,d\theta$ | $0$ |
+| CM 없음 | $\mathrm{SU}(2)$ | $\frac2\pi\sin^2\theta\thinspace d\theta$ | $0$ |
 | CM 있음 | $N(\mathrm{U}(1))$ | $\frac12\delta_{\pi/2}+\frac1{2\pi}d\theta$ | $\tfrac12$ |
 
 종수 2 이상의 아벨 다양체로 가면 가능한 $\mathrm{ST}$ 군이 훨씬 많다. 종수 2 에서는 $52$ 개로 분류되어 있다.

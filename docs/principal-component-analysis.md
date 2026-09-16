@@ -72,7 +72,7 @@ $$
 
 ## 최적성
 
-**분산 최대화.** $\lambda_1 = \max\{\, u^T \Sigma u : \|u\| = 1 \,\}$ 이고 최대는 $u_1$ 에서 달성된다. 이미 고른 성분들과 직교한다는 제약을 걸고 같은 문제를 풀면 $\lambda_2, \lambda_3, \dots$ 이 차례로 나온다. 이는 Rayleigh 몫의 최대·최소 성질이고, 일반적인 $k$ 번째 값은 Courant–Fischer 최소최대 정리로 서술된다.
+**분산 최대화.** $\lambda_1 = \max\lbrace\thinspace u^T \Sigma u : \Vert u\Vert = 1 \thinspace\rbrace$ 이고 최대는 $u_1$ 에서 달성된다. 이미 고른 성분들과 직교한다는 제약을 걸고 같은 문제를 풀면 $\lambda_2, \lambda_3, \dots$ 이 차례로 나온다. 이는 Rayleigh 몫의 최대·최소 성질이고, 일반적인 $k$ 번째 값은 Courant–Fischer 최소최대 정리로 서술된다.
 
 **재구성 오차 최소화.** $k$ 차원 부분공간 $W$ 로의 정사영을 $P_W$ 라 하면 다음 최소화 문제의 해가 상위 $k$ 개 주성분이 span 하는 공간이다.
 

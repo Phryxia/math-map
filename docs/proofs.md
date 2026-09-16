@@ -37,7 +37,7 @@ $$
 \forall x\in A\;P(x),\qquad \exists x\in A\;P(x)
 $$
 
-부정은 양화를 뒤집는다. $\neg\forall x\, P(x)$ 는 $\exists x\, \neg P(x)$ 이고, $\neg\exists x\, P(x)$ 는 $\forall x\, \neg P(x)$ 다. 전칭명제를 반박하려면 반례 하나면 충분하고, 존재명제를 반박하려면 모든 경우를 배제해야 한다는 비대칭이 여기서 나온다.
+부정은 양화를 뒤집는다. $\neg\forall x\thinspace P(x)$ 는 $\exists x\thinspace \neg P(x)$ 이고, $\neg\exists x\thinspace P(x)$ 는 $\forall x\thinspace \neg P(x)$ 다. 전칭명제를 반박하려면 반례 하나면 충분하고, 존재명제를 반박하려면 모든 경우를 배제해야 한다는 비대칭이 여기서 나온다.
 
 ## 양화의 순서
 

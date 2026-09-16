@@ -48,7 +48,7 @@ $$
 
 ## 재귀성과 일시성
 
-원점으로의 첫 복귀 시각을 $T = \inf\{n \ge 1 : S_n = S_0\}$ 이라 할 때, $P(T < \infty) = 1$ 이면 재귀적(recurrent), $P(T < \infty) < 1$ 이면 일시적(transient)이라 한다. 표준적인 판정 기준은 Green 함수의 발산 여부다.
+원점으로의 첫 복귀 시각을 $T = \inf\lbrace n \ge 1 : S_n = S_0\rbrace$ 이라 할 때, $P(T < \infty) = 1$ 이면 재귀적(recurrent), $P(T < \infty) < 1$ 이면 일시적(transient)이라 한다. 표준적인 판정 기준은 Green 함수의 발산 여부다.
 
 $$
 G(0,0) \;=\; \sum_{n=0}^{\infty} P(S_n = 0 \mid S_0 = 0) \;=\; \frac{1}{1 - P(T < \infty)} .

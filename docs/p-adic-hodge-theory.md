@@ -154,7 +154,7 @@ $$
 \theta\Big(\sum p^n[x_n]\Big)=\sum p^nx_n^\sharp
 $$
 
-가 있고, 그 핵은 주 아이디얼 $(\xi)$ 다. 여기서 $[\,\cdot\,]$ 이 Teichmüller 올림이다. 핵으로 완비화하고 $p$ 를 뒤집으면
+가 있고, 그 핵은 주 아이디얼 $(\xi)$ 다. 여기서 $[\thinspace\cdot\thinspace]$ 이 Teichmüller 올림이다. 핵으로 완비화하고 $p$ 를 뒤집으면
 
 $$
 B_{\mathrm{dR}}^+=\varprojlim_n A_{\mathrm{inf}}[1/p]/(\ker\theta)^n,\qquad
@@ -286,13 +286,13 @@ $$
 
 ## 예: 타원곡선의 Tate 가군
 
-$E/K$ 가 타원곡선이고 $V=V_p(E)^\ast\cong H^1_{\mathrm{et}}$ 라 하자. Hodge–Tate 무게는 $\{0,1\}$ 이고 $t_H=1$ 이다.
+$E/K$ 가 타원곡선이고 $V=V_p(E)^\ast\cong H^1_{\mathrm{et}}$ 라 하자. Hodge–Tate 무게는 $\lbrace 0,1\rbrace$ 이고 $t_H=1$ 이다.
 
 | 환원 | $V$ | $D_{\mathrm{cris}}$ 의 Frobenius 부치 |
 |---|---|---|
-| 좋은 환원, 초특이 | 결정적 | $\{1/2,1/2\}$ 이고 $K_0$ 위 고유값 없음 |
-| 좋은 환원, 보통 | 결정적 | $\{0,1\}$ 이고 단위근 방향이 $\mathrm{Fil}^1$ 밖 |
-| 곱셈 환원 | 반안정, $N\ne0$ | $\{0,1\}$ |
+| 좋은 환원, 초특이 | 결정적 | $\lbrace 1/2,1/2\rbrace$ 이고 $K_0$ 위 고유값 없음 |
+| 좋은 환원, 보통 | 결정적 | $\lbrace 0,1\rbrace$ 이고 단위근 방향이 $\mathrm{Fil}^1$ 밖 |
+| 곱셈 환원 | 반안정, $N\ne0$ | $\lbrace 0,1\rbrace$ |
 | 잠재적 좋은 환원 | 잠재적 결정적 | 유한확대 후 위와 같음 |
 
 좋은 환원과 결정적 성질이 동치라는 것이 Fontaine 의 기준이며, $p$ 진 판정법이 기하의 환원 상태를 정확히 읽어낸다는 뜻이다.
@@ -301,7 +301,7 @@ $E/K$ 가 타원곡선이고 $V=V_p(E)^\ast\cong H^1_{\mathrm{et}}$ 라 하자. 
 
 ## 약허용성 판정
 
-2차원, Hodge 무게 $\{0,1\}$ 인 경우를 코드로 확인해 보자. $\varphi$ 안정 직선마다 $t_H\le t_N$ 을 검사하면 된다.
+2차원, Hodge 무게 $\lbrace 0,1\rbrace$ 인 경우를 코드로 확인해 보자. $\varphi$ 안정 직선마다 $t_H\le t_N$ 을 검사하면 된다.
 
 ```python
 from fractions import Fraction
@@ -334,7 +334,7 @@ print(weakly_admissible_2d(0, 1, [(0, True), (1, False)]))  # 보통, 분할된 
 
 ## 모듈러성 올림
 
-Wiles 이후의 $R=\mathbb T$ 정리들은 Galois 변형환을 다루는데, 변형에 국소 조건을 걸지 않으면 환이 너무 커진다. $p$ 에서 거는 조건이 바로 $p$ 진 Hodge 이론의 언어로 쓰인다. 무게 $k$ 의 새형식 $f$ 에 붙는 $\rho_f\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\bar{\mathbb Q}\_p)$ 는 $p\nmid N_f$ 일 때 $G_{\mathbb Q_p}$ 로 제한하면 결정적이고 Hodge–Tate 무게가 $\{0,1-k\}$ 다[^1]. $p\|N_f$ 면 반안정이 된다.
+Wiles 이후의 $R=\mathbb T$ 정리들은 Galois 변형환을 다루는데, 변형에 국소 조건을 걸지 않으면 환이 너무 커진다. $p$ 에서 거는 조건이 바로 $p$ 진 Hodge 이론의 언어로 쓰인다. 무게 $k$ 의 새형식 $f$ 에 붙는 $\rho_f\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\bar{\mathbb Q}\_p)$ 는 $p\nmid N_f$ 일 때 $G_{\mathbb Q_p}$ 로 제한하면 결정적이고 Hodge–Tate 무게가 $\lbrace 0,1-k\rbrace$ 다[^1]. $p\Vert N_f$ 면 반안정이 된다.
 
 Kisin 은 이 조건을 변형 공간 위의 닫힌 부분스킴(결정적 변형환, 준안정 변형환)으로 실현했고, 그 기하를 통제해 모듈러성 올림 정리를 무게와 준위의 넓은 범위로 확장했다. [Langlands 강령](langlands-program.md)의 국소–대역 정합성에서 $p$ 자리를 담당하는 것이 이 이론이다.
 
@@ -351,7 +351,7 @@ $\rho\colon G_{\mathbb Q}\to\mathrm{GL}_n(\bar{\mathbb Q}_p)$ 가 기약이고
 
 Fontaine–Wintenberger 의 노름체 대응은 "$p$ 진 탑을 충분히 올라가면 표수 $p$ 가 보인다" 는 현상이었다. Scholze 는 이를 공간 차원으로 끌어올려 perfectoid 공간을 정의했고, 틸팅 $X\mapsto X^\flat$ 이 에탈 위치를 보존한다는 정리로 이 이론 전체를 기하화했다. $A_{\mathrm{inf}}$ 와 $\theta$ 는 그 틀에서 프리즘(prism) $(A_{\mathrm{inf}},(\xi))$ 의 원형 예가 되고, Bhatt–Scholze 의 프리즘 코호몰로지는 결정 코호몰로지, de Rham 코호몰로지, 에탈 코호몰로지를 하나의 대상에서 특수화로 얻는다. 이 문서에서 손으로 만든 비교동형들이 그 이론에서는 한 코호몰로지의 여러 올로 설명된다.
 
-[^1]: 무게의 부호 관례는 문헌마다 다르다. 여기서는 $\mathbb C_p\otimes V\cong\bigoplus\mathbb C_p(-h_i)$ 로 $h_i$ 를 정해 $\mathbb Q_p(1)$ 의 무게가 $-1$ 이고 $D_{\mathrm{dR}}$ 의 여과 점프와 부호가 맞도록 했다. 모듈러성 쪽 문헌은 반대 부호를 써서 순환지표의 무게를 $1$ 로 하고 무게 $k$ 형식의 무게를 $\{0,k-1\}$ 로 적는 경우가 많다.
+[^1]: 무게의 부호 관례는 문헌마다 다르다. 여기서는 $\mathbb C_p\otimes V\cong\bigoplus\mathbb C_p(-h_i)$ 로 $h_i$ 를 정해 $\mathbb Q_p(1)$ 의 무게가 $-1$ 이고 $D_{\mathrm{dR}}$ 의 여과 점프와 부호가 맞도록 했다. 모듈러성 쪽 문헌은 반대 부호를 써서 순환지표의 무게를 $1$ 로 하고 무게 $k$ 형식의 무게를 $\lbrace 0,k-1\rbrace$ 로 적는 경우가 많다.
 
 [^2]: Colmez, Fontaine, *Construction des représentations p-adiques semi-stables*, Invent. Math. 140 (2000). 약허용 여과 $\varphi$ 가군이 모두 허용임을 보인 논문이다. Fontaine 의 주기환 구성 자체는 *Le corps des périodes p-adiques*, Astérisque 223 (1994) 에 정리되어 있다.
 

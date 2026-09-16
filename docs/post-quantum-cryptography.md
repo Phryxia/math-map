@@ -83,7 +83,7 @@ $m$ 이 충분히 크면 해가 반드시 존재하지만(비둘기집) 찾기�
 
 ## Regev 암호
 
-공개키 $(A,b=As+e)$ 에서 비트 $\mu\in\{0,1\}$ 를 암호화한다. 표본 첨자의 무작위 부분집합 $S$ 를 골라
+공개키 $(A,b=As+e)$ 에서 비트 $\mu\in\lbrace 0,1\rbrace$ 를 암호화한다. 표본 첨자의 무작위 부분집합 $S$ 를 골라
 
 $$
 u=\sum_{i\in S}a_i,\qquad v=\sum_{i\in S}b_i+\mu\Big\lfloor\frac q2\Big\rfloor

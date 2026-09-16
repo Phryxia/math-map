@@ -46,7 +46,7 @@ autonomous 방정식에서 f를 0으로 만드는 점을 평형점(equilibrium)�
 
 ## Picard–Lindelöf 정리
 
-$f$ 가 초기점의 근방에서 연속이고 $x$ 에 대해 Lipschitz이면, 어떤 양수 $\varepsilon$ 에 대해 구간 $[t_0-\varepsilon,\,t_0+\varepsilon]$ 에서 초기값 문제의 해가 존재하고 유일하다[^1].
+$f$ 가 초기점의 근방에서 연속이고 $x$ 에 대해 Lipschitz이면, 어떤 양수 $\varepsilon$ 에 대해 구간 $[t_0-\varepsilon,\thinspace t_0+\varepsilon]$ 에서 초기값 문제의 해가 존재하고 유일하다[^1].
 
 증명 개요: $M$ 을 근방에서 $f$ 의 노름 상한, $K$ 를 Lipschitz 상수라 하자. 초기값 중심 폐구 안에 머무는 연속함수들의 집합은 sup 노름에서 [완비](completeness.md)이며, $\varepsilon$ 을 충분히 작게 잡으면 $T$ 가 이 집합을 자기 자신으로 보낸다(적분의 크기가 $M\varepsilon$ 이하이기 때문). 두 함수 $x$ , $y$ 에 대해 Lipschitz 조건을 적분에 넣으면 다음을 얻는다.
 

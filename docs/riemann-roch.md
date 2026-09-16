@@ -56,7 +56,7 @@ graph TD
 
 ## 인자와 Riemann–Roch 공간
 
-콤팩트 Riemann 면(또는 매끄러운 사영곡선) $X$ 위에서 인자는 점들의 형식적 정수 결합 $D=\sum n_PP$ 이고 $\deg D=\sum n_P$ 다. 0 이 아닌 유리함수 $f$ 의 주인자는 $\mathrm{div}(f)=\sum\mathrm{ord}_P(f)\,P$ 이며 차수가 0 이다.
+콤팩트 Riemann 면(또는 매끄러운 사영곡선) $X$ 위에서 인자는 점들의 형식적 정수 결합 $D=\sum n_PP$ 이고 $\deg D=\sum n_P$ 다. 0 이 아닌 유리함수 $f$ 의 주인자는 $\mathrm{div}(f)=\sum\mathrm{ord}_P(f)\thinspace P$ 이며 차수가 0 이다.
 
 $$
 L(D)=\{f\in k(X)^\times:\mathrm{div}(f)+D\ge0\}\cup\{0\},\qquad \ell(D)=\dim_kL(D)
@@ -106,7 +106,7 @@ $\deg D\ge2g+1$ 이면 $|D|$ 가 $X$ 를 $\mathbb P^{\ell(D)-1}$ 에 매장한�
 작은 종수에서 분류가 바로 나온다.
 
 - $g=0$ : $\ell(P)=2$ 라 차수 1 의 사상이 있고, 곧 $X\cong\mathbb P^1$ 이다.
-- $g=1$ : $\ell(3P)=3$ 이고 $\{1,x,y\}$ 가 기저가 되어 Weierstrass 방정식을 얻는다. 타원곡선의 표준형이 여기서 나온다.
+- $g=1$ : $\ell(3P)=3$ 이고 $\lbrace 1,x,y\rbrace$ 가 기저가 되어 Weierstrass 방정식을 얻는다. 타원곡선의 표준형이 여기서 나온다.
 - $g\ge2$ : $K$ 자체가 $\deg K=2g-2$ 이고 $\ell(K)=g$ 라 표준사상이 정의된다. 초타원곡선이 아니면 이것이 매장이다.
 
 ## 함수체와 수체의 유비

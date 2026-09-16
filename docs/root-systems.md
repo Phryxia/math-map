@@ -30,7 +30,7 @@ $$
 
 ## 반사가 근계를 닫는다
 
-각 근 $\alpha$ 마다 $\mathfrak{sl}\_2$ 부분대수 $\{E_\alpha,F_\alpha,H_\alpha\}$ 가 있다. $\mathfrak g$ 를 이 $\mathfrak{sl}_2$ 의 표현으로 보면 사다리 논법이 적용되고, 무게가 $2$ 씩 오르내리는 정수 사슬이 나온다. 정수성 조건이 여기서 나온다.
+각 근 $\alpha$ 마다 $\mathfrak{sl}\_2$ 부분대수 $\lbrace E_\alpha,F_\alpha,H_\alpha\rbrace$ 가 있다. $\mathfrak g$ 를 이 $\mathfrak{sl}_2$ 의 표현으로 보면 사다리 논법이 적용되고, 무게가 $2$ 씩 오르내리는 정수 사슬이 나온다. 정수성 조건이 여기서 나온다.
 
 사다리의 양 끝을 맞바꾸는 것이 초평면 $\alpha^\perp$ 에 대한 **반사**다.
 
@@ -44,7 +44,7 @@ $\mathfrak{sl}\_2$ 표현의 대칭이 그대로 근계의 대칭이 되므로, 
 
 ## 단순근이 도표가 된다
 
-$\Phi$ 에서 초평면 하나를 잡아 양쪽으로 나누면 **양근** $\Phi^+$ 가 정해지고, 양근 중 두 양근의 합으로 쓰이지 않는 것들이 **단순근** $\Delta=\{\alpha_1,\dots,\alpha_n\}$ 이다. 단순근은 기저이고, 모든 근이 단순근의 정수계수 조합이며 계수 부호가 일정하다.
+$\Phi$ 에서 초평면 하나를 잡아 양쪽으로 나누면 **양근** $\Phi^+$ 가 정해지고, 양근 중 두 양근의 합으로 쓰이지 않는 것들이 **단순근** $\Delta=\lbrace\alpha_1,\dots,\alpha_n\rbrace$ 이다. 단순근은 기저이고, 모든 근이 단순근의 정수계수 조합이며 계수 부호가 일정하다.
 
 단순근 사이의 각도는 항상 둔각이라 Cartan 정수가 음이 아닌 정보로 정리된다. 이것을 그래프로 그린 것이 **Dynkin 도표**다. 꼭짓점이 단순근이고, $\alpha_i$ 와 $\alpha_j$ 를 $\langle\alpha_i,\alpha_j\rangle\langle\alpha_j,\alpha_i\rangle$ 개의 선으로 잇고, 길이가 다르면 긴 쪽으로 화살표를 그린다.
 
@@ -85,7 +85,7 @@ $$
 유클리드 공간 $V$ 의 유한 부분집합 $\Phi$ 가 다음을 만족하면 **근계**다.
 
 - $\Phi$ 가 $V$ 를 생성하고 $0\notin\Phi$ 다.
-- $\alpha\in\Phi$ 이면 $\Phi\cap\mathbb R\alpha=\{\pm\alpha\}$ (기약 근계 조건).
+- $\alpha\in\Phi$ 이면 $\Phi\cap\mathbb R\alpha=\lbrace\pm\alpha\rbrace$ (기약 근계 조건).
 - 모든 $\alpha\in\Phi$ 에 대해 $s_\alpha(\Phi)=\Phi$ 다.
 - 모든 $\alpha,\beta\in\Phi$ 에 대해 $\langle\beta,\alpha\rangle\in\mathbb Z$ 다.
 
@@ -93,7 +93,7 @@ $\dim V=n$ 을 **랭크**라 한다. 근계가 두 직교하는 근계의 합집
 
 ## Cartan 행렬과 Weyl 군
 
-단순근 $\Delta=\{\alpha_1,\dots,\alpha_n\}$ 을 고정하면 **Cartan 행렬**이 정해진다.
+단순근 $\Delta=\lbrace\alpha_1,\dots,\alpha_n\rbrace$ 을 고정하면 **Cartan 행렬**이 정해진다.
 
 $$
 A_{ij}=\langle\alpha_j,\alpha_i\rangle=\frac{2(\alpha_j,\alpha_i)}{(\alpha_i,\alpha_i)}
@@ -237,7 +237,7 @@ Chevalley 는 근계와 Cartan 행렬만으로 복소 Lie 대수의 정수 기�
 
 ## Langlands 쌍대
 
-근계 $\Phi$ 에서 근과 쌍대근을 맞바꾸면 다시 근계가 된다. $B_n$ 과 $C_n$ 이 서로 바뀌고 나머지는 자기쌍대다. 이 조작으로 얻는 군이 [Langlands 강령](langlands-program.md)의 쌍대군 ${}^L\!G$ 이고, 강령의 진술 자체가 근계 데이터의 대칭에 기대어 서술된다.
+근계 $\Phi$ 에서 근과 쌍대근을 맞바꾸면 다시 근계가 된다. $B_n$ 과 $C_n$ 이 서로 바뀌고 나머지는 자기쌍대다. 이 조작으로 얻는 군이 [Langlands 강령](langlands-program.md)의 쌍대군 ${}^L\negthinspace G$ 이고, 강령의 진술 자체가 근계 데이터의 대칭에 기대어 서술된다.
 
 ## 결정학과 조합론
 

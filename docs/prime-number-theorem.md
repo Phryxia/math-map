@@ -49,7 +49,7 @@ graph LR
 
 ## Riemann zeta 함수
 
-$\mathrm{Re}\,s>1$ 에서 다음 급수가 절대수렴한다.
+$\mathrm{Re}\thinspace s>1$ 에서 다음 급수가 절대수렴한다.
 
 $$
 \zeta(s)=\sum_{n=1}^\infty\frac1{n^s}
@@ -61,13 +61,13 @@ $$
 \zeta(s)=2^s\pi^{s-1}\sin\!\Big(\frac{\pi s}2\Big)\Gamma(1-s)\,\zeta(1-s)
 $$
 
-이 방정식이 $s$ 와 $1-s$ 를 맞바꾸므로 $\mathrm{Re}\,s=1/2$ 직선이 대칭축이 된다.
+이 방정식이 $s$ 와 $1-s$ 를 맞바꾸므로 $\mathrm{Re}\thinspace s=1/2$ 직선이 대칭축이 된다.
 
 ## 0 점
 
 $s=-2,-4,-6,\dots$ 에서 $\zeta$ 가 0 이 되며 이를 자명한 0 점이라 한다. 함수방정식의 사인 인자에서 나온다.
 
-나머지 0 점은 모두 임계띠 $0<\mathrm{Re}\,s<1$ 안에 있고 이를 비자명한 0 점이라 한다. Riemann 가설은 이들이 전부 $\mathrm{Re}\,s=1/2$ 위에 있다는 추측이다.
+나머지 0 점은 모두 임계띠 $0<\mathrm{Re}\thinspace s<1$ 안에 있고 이를 비자명한 0 점이라 한다. Riemann 가설은 이들이 전부 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 추측이다.
 
 ## 소수 계수 함수들
 
@@ -91,7 +91,7 @@ $x/\ln x$ 보다 훨씬 정확한 근사다. 부분적분으로 $\mathrm{Li}(x)=
 
 ## Euler 곱
 
-$\mathrm{Re}\,s>1$ 에서 다음이 성립한다.
+$\mathrm{Re}\thinspace s>1$ 에서 다음이 성립한다.
 
 $$
 \zeta(s)=\prod_p\big(1-p^{-s}\big)^{-1}
@@ -122,7 +122,7 @@ $\rho=\beta+i\gamma$ 이면 $|x^\rho|=x^\beta$ 이므로 진폭이 $\beta$ 로 �
 
 ## 증명의 핵심 단계
 
-소수 정리는 $\mathrm{Re}\,s=1$ 위에 0 점이 없다는 것과 동치다.
+소수 정리는 $\mathrm{Re}\thinspace s=1$ 위에 0 점이 없다는 것과 동치다.
 
 $\zeta(1+it)\ne0$ 을 보이는 고전적 논증은 다음 부등식을 쓴다.
 
@@ -142,7 +142,7 @@ $$
 \pi(x)=\mathrm{Li}(x)+O\!\left(x\exp\!\left(-c(\ln x)^{3/5}(\ln\ln x)^{-1/5}\right)\right)
 $$
 
-$\mathrm{Re}\,s=1$ 근처에 0 점이 없는 영역을 얼마나 넓게 잡을 수 있는지가 이 지수를 결정한다.
+$\mathrm{Re}\thinspace s=1$ 근처에 0 점이 없는 영역을 얼마나 넓게 잡을 수 있는지가 이 지수를 결정한다.
 
 Riemann 가설이 참이면 오차가 극적으로 작아진다.
 

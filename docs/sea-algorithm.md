@@ -2,7 +2,7 @@
 
 # 개요
 
-타원곡선 암호를 세우려면 $\#E(\mathbb F_p)$ 를 알아야 한다. 위수가 작은 소인수로 쪼개지면 Pohlig–Hellman 으로 [이산로그](discrete-logarithm.md)가 무너지므로, 곡선을 고른 뒤 반드시 위수를 센다. 그런데 암호에 쓰는 $p$ 는 $2^{256}$ 규모다. 점을 하나씩 세는 $O(p)$ 는 물론이고 Shanks 의 $O(p^{1/4})$ 도 감당할 수 없다.
+타원곡선 암호를 세우려면 $\char"23{}E(\mathbb F_p)$ 를 알아야 한다. 위수가 작은 소인수로 쪼개지면 Pohlig–Hellman 으로 [이산로그](discrete-logarithm.md)가 무너지므로, 곡선을 고른 뒤 반드시 위수를 센다. 그런데 암호에 쓰는 $p$ 는 $2^{256}$ 규모다. 점을 하나씩 세는 $O(p)$ 는 물론이고 Shanks 의 $O(p^{1/4})$ 도 감당할 수 없다.
 
 Schoof 가 1985 년에 최초의 다항시간 알고리즘을 주었다. $\log p$ 의 다항식이다. 착상은 한 문장이다.
 
@@ -45,7 +45,7 @@ $$
 
 다. 행렬식 쪽은 검산에 쓸 수 있다. 아래 코드가 두 등식을 모두 확인한다.
 
-$\ell$ 진 표현의 언어로 말하면 이것은 [Galois 표현](galois-representations.md) $\rho_{E,\ell}:\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\mathbb F_\ell)$ 의 Frobenius 에서의 값이다. 이론에서 $\mathrm{tr}\,\rho(\mathrm{Frob}_p)=a_p$ 라고 쓰는 그 등식을, 알고리즘에서는 실제로 행렬을 만들어 대각합을 잰다.
+$\ell$ 진 표현의 언어로 말하면 이것은 [Galois 표현](galois-representations.md) $\rho_{E,\ell}:\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\mathbb F_\ell)$ 의 Frobenius 에서의 값이다. 이론에서 $\mathrm{tr}\thinspace\rho(\mathrm{Frob}_p)=a_p$ 라고 쓰는 그 등식을, 알고리즘에서는 실제로 행렬을 만들어 대각합을 잰다.
 
 ## 나눗셈 다항식이 등분점을 대수로 바꾼다
 
@@ -103,7 +103,7 @@ $$
 \varphi^2-a_p\,\varphi+p=0,\qquad a_p=p+1-\#E(\mathbb F_p)
 $$
 
-이고 $|a_p|\le2\sqrt p$ 다(Hasse 정리). $\varphi$ 의 고정점이 정확히 $E(\mathbb F_p)$ 이므로 $\#E(\mathbb F_p)=\deg(\varphi-1)=p+1-a_p$ 가 나온다.
+이고 $|a_p|\le2\sqrt p$ 다(Hasse 정리). $\varphi$ 의 고정점이 정확히 $E(\mathbb F_p)$ 이므로 $\char"23{}E(\mathbb F_p)=\deg(\varphi-1)=p+1-a_p$ 가 나온다.
 
 ## 나눗셈 다항식
 
@@ -338,7 +338,7 @@ for p in [5, 101, 10**4 + 7, 10**8 + 7, 2**61 - 1]:
 ## 어디에 쓰이는가
 
 - **곡선 선택.** NIST P-256, secp256k1 같은 표준 곡선의 위수는 이 계열 알고리즘으로 검증되었다. 무작위 곡선을 뽑아 위수를 세고, 소수이거나 작은 보조인자만 갖는지 확인하는 절차가 표준이다.
-- **안전성 조건 확인.** $\#E(\mathbb F_p)=p$ 인 **비정상(anomalous)** 곡선은 이산로그가 선형시간에 풀리고, $\#E$ 가 $p^k-1$ 을 작은 $k$ 에서 나누면 MOV 공격으로 유한체 이산로그로 환원된다. 위수를 알아야 이 조건들을 검사할 수 있다.
+- **안전성 조건 확인.** $\char"23{}E(\mathbb F_p)=p$ 인 **비정상(anomalous)** 곡선은 이산로그가 선형시간에 풀리고, $\char"23{}E$ 가 $p^k-1$ 을 작은 $k$ 에서 나누면 MOV 공격으로 유한체 이산로그로 환원된다. 위수를 알아야 이 조건들을 검사할 수 있다.
 - **곡선 개수 세기.** 주어진 위수를 갖는 곡선을 찾거나(복소곱셈법의 역방향), 위수 분포를 실험적으로 조사하는 데 쓰인다.
 - **수치 실험.** 대량의 $a_p$ 표가 Sato–Tate 분포나 BSD 추측의 수치 검증에 쓰인다. 큰 $p$ 영역의 표는 SEA 가 만든다.
 - **$\ell$ 진 표현의 계산.** $\varphi|\_{E[\ell]}$ 의 행렬은 [Galois 표현](galois-representations.md) $\rho_{E,\ell}$ 의 Frobenius 에서의 상이다. 상이 $\mathrm{GL}\_2(\mathbb F_\ell)$ 전체인지 판정하는 Serre 의 문제를 실제로 계산할 때 이 행렬을 쓴다.

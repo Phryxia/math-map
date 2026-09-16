@@ -28,7 +28,7 @@ $1/(z-c)$ 는 $c$ 를 중심으로 한 바퀴 돌 때 편각이 $2\pi$ 만큼 �
 
 ## Laurent 급수
 
-$f$ 가 환형 영역 $\{r<|z-c|<R\}$ 에서 정칙이면 그 위에서 다음과 같이 유일하게 전개된다.
+$f$ 가 환형 영역 $\lbrace r<|z-c|<R\rbrace$ 에서 정칙이면 그 위에서 다음과 같이 유일하게 전개된다.
 
 $$
 f(z)=\sum_{n=-\infty}^{\infty}a_n(z-c)^n,\qquad a_n=\frac{1}{2\pi i}\oint_{\gamma}\frac{f(z)}{(z-c)^{n+1}}\,dz

@@ -2,7 +2,7 @@
 
 # 개요
 
-[Hecke 작용소](hecke-operators.md)는 이중 잉여류로 정의된다. $T_p$ 는 $\mathrm{SL}_2(\mathbb Z)\begin{pmatrix}1&0\\0&p\end{pmatrix}\mathrm{SL}_2(\mathbb Z)$ 를 잘라 만든 것이고, 정의만 보면 왜 그런 것을 만드는지, 왜 서로 가환인지, 왜 고유값이 $L$ 함수의 Euler 인자가 되는지가 전혀 보이지 않는다.
+[Hecke 작용소](hecke-operators.md)는 이중 잉여류로 정의된다. $T_p$ 는 $\mathrm{SL}_2(\mathbb Z)\begin{pmatrix}1&0\cr 0&p\end{pmatrix}\mathrm{SL}_2(\mathbb Z)$ 를 잘라 만든 것이고, 정의만 보면 왜 그런 것을 만드는지, 왜 서로 가환인지, 왜 고유값이 $L$ 함수의 Euler 인자가 되는지가 전혀 보이지 않는다.
 
 [아델](adeles.md) 위로 올리면 이 셋이 한꺼번에 해명된다. 자리 $p$ 를 하나 고정하고, $G=\mathrm{GL}_n(\mathbb Q_p)$ 와 $K=\mathrm{GL}_n(\mathbb Z_p)$ 라 하자. 콤팩트 받침을 갖는 양쪽 $K$ 불변 함수들이 합성곱으로 이루는 대수
 
@@ -131,7 +131,7 @@ $$
 
 이고 단위원은 $1_K$ 다.
 
-**Cartan 분해** $G=\bigsqcup_{\lambda\in X_\ast(T)^+}K\lambda(\varpi)K$ 에 의해 $\{1_{K\lambda(\varpi)K}\}$ 가 $\mathbb C$ 기저를 이룬다. $\varpi$ 는 소원, $X_\ast(T)$ 는 극대 분열 원환면의 쌍대지표 격자, $X_\ast(T)^+$ 는 고정한 Borel 에 대해 지배적인 것들이다.
+**Cartan 분해** $G=\bigsqcup_{\lambda\in X_\ast(T)^+}K\lambda(\varpi)K$ 에 의해 $\lbrace 1_{K\lambda(\varpi)K}\rbrace$ 가 $\mathbb C$ 기저를 이룬다. $\varpi$ 는 소원, $X_\ast(T)$ 는 극대 분열 원환면의 쌍대지표 격자, $X_\ast(T)^+$ 는 고정한 Borel 에 대해 지배적인 것들이다.
 
 ## Satake 변환과 정리
 
@@ -174,7 +174,7 @@ $$
 
 이 정해진다. Satake 동형으로 옮기면 $\chi_\pi$ 는 $\mathbb C[X^*(\widehat T)]^W$ 의 $\mathbb C$ 점, 곧 $\widehat T(\mathbb C)/W$ 의 점이다. $\widehat T/W$ 는 $\widehat G$ 의 반단순 켤레류 전체와 같으므로, 다음을 얻는다.
 
-> 비분기 기약표현 $\pi$ $\;\longleftrightarrow\;$ $\widehat G(\mathbb C)$ 의 반단순 켤레류 $A_\pi$
+> 비분기 기약표현 $\pi$ $\thickspace\longleftrightarrow\thickspace$ $\widehat G(\mathbb C)$ 의 반단순 켤레류 $A_\pi$
 
 이 켤레류를 $\pi$ 의 **Satake 매개변수**라 한다. $\mathrm{GL}_n$ 이면 순서를 잊은 $n$ 쌍 $(\alpha_1,\dots,\alpha_n)\in(\mathbb C^\times)^n$ 이다.
 
@@ -190,7 +190,7 @@ $r$ 이 표준표현이면 표준 $L$ 인자 $\prod_i(1-\alpha_iq^{-s})^{-1}$ �
 
 ## GL_2 의 명시적 상
 
-$G=\mathrm{GL}\_2(\mathbb Q_p)$ 와 $K=\mathrm{GL}\_2(\mathbb Z_p)$ 에서 기저를 $a\ge0$ 에 대한 $T(p^b,p^{a+b})=1_{K\,\mathrm{diag}(p^b,p^{a+b})K}$ 로 쓰면
+$G=\mathrm{GL}\_2(\mathbb Q_p)$ 와 $K=\mathrm{GL}\_2(\mathbb Z_p)$ 에서 기저를 $a\ge0$ 에 대한 $T(p^b,p^{a+b})=1_{K\thinspace\mathrm{diag}(p^b,p^{a+b})K}$ 로 쓰면
 
 $$
 \mathcal S\bigl(T(p^b,p^{a+b})\bigr)
@@ -223,7 +223,7 @@ $$
 
 이다. $m=1$ 에서만 계수가 $p+1$ 이고 그 뒤로는 $p$ 인 것이 고전적 Hecke 관계식 $T_pT_{p^m}=T_{p^{m+1}}+p^{k-1}T_{p^{m-1}}$ 의 무게 정규화와 맞물리는 자리다.
 
-아래 코드는 이 구조상수를 격자를 직접 세어 구하고, 위의 $\mathcal S$ 가 정말 환 준동형인지 검증한다. $\mathbb Z_p^2$ 의 지표 $p^n$ 부분격자는 Hermite 꼴 $\begin{pmatrix}p^i&b\\0&p^{n-i}\end{pmatrix}$ 와 $0\le b<p^i$ 로 전부 열거되므로 유한 계산이다.
+아래 코드는 이 구조상수를 격자를 직접 세어 구하고, 위의 $\mathcal S$ 가 정말 환 준동형인지 검증한다. $\mathbb Z_p^2$ 의 지표 $p^n$ 부분격자는 Hermite 꼴 $\begin{pmatrix}p^i&b\cr 0&p^{n-i}\end{pmatrix}$ 와 $0\le b<p^i$ 로 전부 열거되므로 유한 계산이다.
 
 ```python
 from fractions import Fraction
@@ -391,7 +391,7 @@ A_{\pi_v}\ \in\ \widehat G(\mathbb C)/\!\sim
 \rho(\mathrm{Frob}_v)\ \in\ {}^LG/\!\sim
 $$
 
-거의 모든 자리에서 이 둘이 같다는 것이 대응의 정의다. [Galois 표현](galois-representations.md)과 [모듈러 형식](modular-forms.md)의 관계에서 $a_p=\mathrm{tr}\,\rho(\mathrm{Frob}_p)$ 라는 익숙한 식이 $n=2$ 의 경우다.
+거의 모든 자리에서 이 둘이 같다는 것이 대응의 정의다. [Galois 표현](galois-representations.md)과 [모듈러 형식](modular-forms.md)의 관계에서 $a_p=\mathrm{tr}\thinspace\rho(\mathrm{Frob}_p)$ 라는 익숙한 식이 $n=2$ 의 경우다.
 
 강한 중복도 1 정리(Jacquet–Shalika)는 거의 모든 자리의 Satake 매개변수가 $\pi$ 를 결정한다고 말한다. 곧 이 켤레류들의 모임이 자기동형 표현의 완전한 불변량이다.
 
