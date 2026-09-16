@@ -2,7 +2,7 @@
 
 # 개요
 
-[Tate 논문](tate-thesis.md)은 자리마다 국소 함수방정식을 준다. 두 국소 zeta 적분의 비가 시험함수에 의존하지 않는 인자 하나로 정리되는 것이었다.
+[Tate 논문](tate-thesis.md)은 자리마다 국소 함수방정식을 준다. 두 국소 zeta 적분의 비가 시험함수에 의존하지 않는 인자 하나로 정리된다.
 
 $$
 Z_v(\hat f_v,\chi_v^{-1},1-s)=\gamma_v(\chi_v,s)\thinspace Z_v(f_v,\chi_v,s),
@@ -10,7 +10,7 @@ Z_v(\hat f_v,\chi_v^{-1},1-s)=\gamma_v(\chi_v,s)\thinspace Z_v(f_v,\chi_v,s),
 \gamma_v=\varepsilon_v(\chi_v,s)\thinspace\frac{L(1-s,\chi_v^{-1})}{L(s,\chi_v)}
 $$
 
-$L$ 인자는 국소 계산에서 바로 읽히는 유리함수다. 남은 $\varepsilon_v$ 가 **국소 근 수**이고, 이것만이 자명하지 않다. 비분기 자리에서는 $1$ 이라 아무 일도 하지 않고, 분기 자리에서만 값이 생긴다. 그리고 그 값이 정확히 **Gauss 합**이다.
+$L$ 인자는 국소 계산에서 읽히는 유리함수다. 남은 $\varepsilon_v$ 가 **국소 근 수**이고, 비분기 자리에서 $1$ 이며 분기 자리에서 **Gauss 합**이 된다.
 
 $$
 \varepsilon\big(\chi,\psi,\tfrac12\big)=\frac{g(\chi)}{\sqrt q},
@@ -18,37 +18,37 @@ $$
 g(\chi)=\sum_{n}\chi(n)\thinspace\psi(n)
 $$
 
-Gauss 합은 곱셈 지표와 덧셈 지표를 한 식에 섞는다. 유한체에서 두 군 구조를 잇는 유일한 다리이고, 절댓값이 언제나 $\sqrt q$ 다. 이 사실이 근 수의 절댓값을 $1$ 로 만들고, [Dirichlet L 함수](dirichlet-l-functions.md)의 함수방정식에 나오는 부호가 크기 $1$ 인 복소수임을 보장한다.
+Gauss 합은 곱셈 지표와 덧셈 지표를 한 식에 섞어 유한체의 두 군 구조를 잇고, 절댓값이 언제나 $\sqrt q$ 다. 이 값이 근 수의 절댓값을 $1$ 로 만들고 [Dirichlet L 함수](dirichlet-l-functions.md)의 함수방정식에 나오는 부호를 단위원 위에 놓는다.
 
-절댓값은 쉽고 **부호는 어렵다**. 이차 지표의 Gauss 합에서 어느 제곱근을 택해야 하는지를 Gauss 가 정하는 데 4 년이 걸렸다. 그 답이 이차 상호법칙의 또 다른 증명을 준다.
+절댓값과 달리 부호는 어렵다. 이차 지표의 Gauss 합에서 어느 제곱근을 택하는지를 Gauss 가 정하는 데 4 년이 걸렸고, 그 답이 이차 상호법칙의 또 다른 증명을 준다.
 
 # 직관
 
-## Fourier 변환이 지표를 지표로 보낸다
+## Fourier 변환의 고유벡터
 
-$\mathbb Z/p$ 위의 함수 공간에서 덧셈 Fourier 변환의 기저는 덧셈 지표 $\psi(n)=e^{2\pi in/p}$ 다. 한편 곱셈군 $(\mathbb Z/p)^\times$ 에는 곱셈 지표 $\chi$ 가 있다. 서로 다른 두 군 구조에 딸린 두 기저다.
+$\mathbb Z/p$ 위의 함수 공간에서 덧셈 Fourier 변환의 기저는 덧셈 지표 $\psi(n)=e^{2\pi in/p}$ 이고, 곱셈군 $(\mathbb Z/p)^\times$ 에는 곱셈 지표 $\chi$ 가 있다.
 
-$\chi$ 를 덧셈 Fourier 변환으로 보내면 어떻게 되는가. 계산하면 $\chi$ 자신이 되돌아온다. 상수배만 붙는다.
+$\chi$ 를 덧셈 Fourier 변환으로 보내면 상수배만 붙어 $\chi$ 가 되돌아온다.
 
 $$
 \sum_n\chi(n)\psi(mn)=\chi^{-1}(m)\thinspace g(\chi)
 $$
 
-$\chi$ 가 덧셈 Fourier 변환의 **고유벡터**이고 $g(\chi)$ 가 그 고유값인 셈이다. 그런데 Fourier 변환은 유니터리이고 네 번 하면 항등이므로 고유값의 절댓값이 $\sqrt p$ 로 고정된다.
+$\chi$ 가 덧셈 Fourier 변환의 고유벡터이고 $g(\chi)$ 가 고유값이다. Fourier 변환이 유니터리이고 네 번 하면 항등이므로 고유값의 절댓값이 $\sqrt p$ 다.
 
 $$
 |g(\chi)|=\sqrt p\qquad(\chi\ne\text{자명})
 $$
 
-근 수의 절댓값이 $1$ 인 이유가 여기서 끝난다. $\varepsilon$ 을 $\sqrt q$ 로 정규화했기 때문이다. 함수방정식의 부호가 단위원 위에 있다는 사실이 Fourier 변환의 유니터리성이라는 한 줄로 설명된다.
+$\varepsilon$ 을 $\sqrt q$ 로 정규화하므로 근 수의 절댓값이 $1$ 이다. 함수방정식의 부호가 단위원 위에 있는 것이 Fourier 변환의 유니터리성에서 나온다.
 
-## 왜 분기 자리에서만 생기는가
+## 분기 자리에서만 생기는 인자
 
 국소 적분 $\int_{K_v^\times}f_v(x)\chi_v(x)|x|^s\thinspace d^\times x$ 에 $f_v=\mathbf 1_{\mathcal O_v}$ 를 넣고 $\chi_v$ 가 $\mathcal O_v^\times$ 에서 자명하면(비분기) 적분이 단순한 등비급수가 되고, Fourier 변환한 쪽도 마찬가지라 두 결과의 비에 상수가 남지 않는다. 근 수가 $1$ 이다.
 
-$\chi_v$ 가 분기하면 $\mathcal O_v^\times$ 위에서 $\chi_v$ 가 진동한다. 그러면 $\mathbf 1_{\mathcal O_v}$ 를 넣은 적분은 지표의 직교성으로 $0$ 이 되어 버리고, 대신 $\chi_v$ 가 정확히 살아남는 크기의 시험함수를 골라야 한다. 그 함수의 Fourier 변환을 계산하는 일이 곧 유한 잉여환 위의 지표합, 곧 Gauss 합이다.
+$\chi_v$ 가 분기하면 $\mathcal O_v^\times$ 위에서 진동하므로 $\mathbf 1_{\mathcal O_v}$ 를 넣은 적분이 지표의 직교성으로 $0$ 이 된다. $\chi_v$ 가 살아남는 크기의 시험함수를 골라야 하고, 그 함수의 Fourier 변환이 유한 잉여환 위의 지표합, 곧 Gauss 합이다.
 
-곧 근 수는 **분기가 만드는 위상**이다. 분기하지 않으면 대칭이 깨질 곳이 없다.
+근 수는 분기가 만드는 위상이고, 분기하지 않으면 대칭이 깨질 곳이 없다.
 
 ```mermaid
 graph TD
@@ -64,16 +64,16 @@ graph TD
   QS["이차 지표의 부호"] -->|"Gauss 의 정리"| REC["이차 상호법칙의 또 다른 증명"]
 ```
 
-## 부호가 왜 어려운가
+## 부호의 결정
 
-$|g(\chi)|=\sqrt p$ 의 증명은 반 쪽이면 된다. $g(\chi)\overline{g(\chi)}$ 를 전개해 지표의 직교성을 쓰면 끝난다. 그런데 이차 지표에서는 $g(\chi)$ 가 실수이거나 순허수이므로 $\pm\sqrt p$ 또는 $\pm i\sqrt p$ 중 하나인데, **어느 부호인지**는 이 논법이 말해 주지 않는다.
+$|g(\chi)|=\sqrt p$ 는 $g(\chi)\overline{g(\chi)}$ 를 전개해 지표의 직교성을 쓰면 나온다. 이차 지표에서 $g(\chi)$ 는 실수이거나 순허수이므로 $\pm\sqrt p$ 또는 $\pm i\sqrt p$ 인데, 이 논법은 부호를 주지 않는다.
 
 $$
 \sum_{n=0}^{p-1}e^{2\pi in^2/p}=
 \begin{cases}\sqrt p&p\equiv1\pmod4\cr i\sqrt p&p\equiv3\pmod4\end{cases}
 $$
 
-부호를 결정하려면 크기가 아니라 실제 값을 봐야 하고, 그러려면 해석적 논증(theta 함수의 극한, 또는 유수 계산)이 필요하다. 크기는 대수적으로 나오고 부호는 해석적으로만 나온다는 이 비대칭이 근 수 이론 전반의 성격이다. 대역 근 수의 값을 명시적으로 아는 경우가 드문 것도 같은 이유다.
+부호에는 theta 함수의 극한이나 유수 계산 같은 해석적 논증이 필요하다. 크기는 대수적으로, 부호는 해석적으로만 나오며 대역 근 수의 값을 명시적으로 아는 경우가 드물다.
 
 # 정의
 
@@ -85,7 +85,7 @@ $$
 g(\chi)=\sum_{n=1}^{p-1}\chi(n)\thinspace e^{2\pi in/p}
 $$
 
-를 **Gauss 합**이라 한다. 일반적으로 $\chi$ 는 법 $m$ 의 지표일 수 있고, 덧셈 지표 $\psi$ 를 명시해 $g(\chi,\psi)$ 로 쓴다.
+를 **Gauss 합**이라 한다. $\chi$ 는 법 $m$ 의 지표일 수 있고, 덧셈 지표 $\psi$ 를 명시하면 $g(\chi,\psi)$ 로 쓴다.
 
 **Jacobi 합**은 곱셈 지표 두 개의 합성곱이다.
 
@@ -94,7 +94,7 @@ J(\chi_1,\chi_2)=\sum_{n}\chi_1(n)\chi_2(1-n),\qquad
 J(\chi_1,\chi_2)=\frac{g(\chi_1)g(\chi_2)}{g(\chi_1\chi_2)}\ \ (\chi_1\chi_2\ne1)
 $$
 
-유한체 위의 방정식의 해의 개수가 Jacobi 합으로 표현되며, Weil 추측의 최초 사례가 이 계산이었다.
+유한체 위 방정식의 해의 개수가 Jacobi 합으로 표현되고, Weil 추측의 최초 사례가 이 계산이다.
 
 ## 도체와 국소 근 수
 
@@ -106,7 +106,7 @@ $$
 \varepsilon_v(\chi_v,\psi_v,s)=q_v^{(\frac12-s)(a(\chi_v)+n(\psi_v))}\thickspace\varepsilon_v\big(\chi_v,\psi_v,\tfrac12\big)
 $$
 
-$s$ 의존성이 지수 하나로 전부 빠지므로, 본질적인 정보는 $s=1/2$ 에서의 값 하나다. 그 값이 비분기 자리에서는 $1$ 이고, 분기 자리에서는 도체를 법으로 한 Gauss 합을 $\sqrt{q^{a}}$ 로 나눈 것이다.
+$s$ 의존성이 지수 하나로 빠지므로 정보는 $s=1/2$ 에서의 값에 있다. 그 값은 비분기 자리에서 $1$ 이고 분기 자리에서 도체를 법으로 한 Gauss 합을 $\sqrt{q^{a}}$ 로 나눈 것이다.
 
 ## 대역 근 수
 
@@ -117,14 +117,14 @@ $$
 W(\chi)=\prod_v\varepsilon_v\big(\chi_v,\psi_v,\tfrac12\big)
 $$
 
-거의 모든 자리에서 인자가 $1$ 이라 유한 곱이다. 법 $q$ 의 원시 Dirichlet 지표에서는 명시적으로 쓸 수 있다.
+거의 모든 자리에서 인자가 $1$ 이라 유한 곱이다. 법 $q$ 의 원시 Dirichlet 지표에서는 다음과 같다.
 
 $$
 W(\chi)=\frac{g(\chi)}{i^{\delta}\sqrt q},\qquad
 \delta=\begin{cases}0&\chi(-1)=1\cr 1&\chi(-1)=-1\end{cases}
 $$
 
-$i^\delta$ 는 무한 자리의 근 수다. 지표가 홀이면 감마 인자가 $\Gamma(\frac{s+1}2)$ 로 바뀌고 그 대가로 $i$ 가 붙는다.
+$i^\delta$ 는 무한 자리의 근 수다. 지표가 홀이면 감마 인자가 $\Gamma(\frac{s+1}2)$ 로 바뀌면서 $i$ 가 붙는다.
 
 # 성질
 
@@ -136,33 +136,31 @@ $i^\delta$ 는 무한 자리의 근 수다. 지표가 홀이면 감마 인자가
 > 3. $m\not\equiv0$ 일 때 $\displaystyle\sum_n\chi(n)\psi(mn)=\bar\chi(m)\thinspace g(\chi)$ 다
 > 4. $\chi$ 가 이차이면 $p\equiv1\bmod4$ 일 때 $g(\chi)=\sqrt p$ 이고 $p\equiv3\bmod4$ 일 때 $g(\chi)=i\sqrt p$ 다
 
-첫째와 둘째는 같은 계산의 두 표현이다. 셋째는 $\chi$ 가 Fourier 변환의 고유벡터라는 진술이고, 실제로 국소 근 수의 계산이 이 식 하나로 정리된다.
+첫째와 둘째는 같은 계산의 두 표현이다. 셋째는 $\chi$ 가 Fourier 변환의 고유벡터라는 진술이고 국소 근 수의 계산이 이 식을 쓴다.
 
-넷째가 **Gauss 의 부호 정리**다[^1]. 1801년에 부호를 예상했고 1805년에 증명했다. 이 정리로부터 이차 상호법칙이 따라 나오며, Gauss 자신의 네 번째 증명이 그것이다.
+넷째가 **Gauss 의 부호 정리**다[^1]. Gauss 는 1801 년에 부호를 예상하고 1805 년에 증명했으며, 여기서 이차 상호법칙의 네 번째 증명이 나왔다.
 
 ## 근 수의 성질
 
 - **절댓값.** $\chi_v$ 가 유니터리이면 $|\varepsilon_v(\chi_v,\psi_v,\frac12)|=1$ 이다. 따라서 $|W(\chi)|=1$ 이고 함수방정식의 부호가 단위원 위에 있다.
 - **비분기에서 자명.** $a(\chi_v)=0$ 이고 $\psi_v$ 의 준위가 $0$ 이면 $\varepsilon_v=1$ 이다. 유한 곱이 되는 이유다.
-- **실수성.** $\chi$ 가 실수값(이차) 지표이면 $W(\chi)=1$ 이다. 이차 지표의 $L$ 함수는 언제나 부호가 $+1$ 이라는 뜻이고, Gauss 의 부호 정리가 이 사실을 담고 있다.
-- **곱셈성의 실패.** $\varepsilon(\chi_1\chi_2)\ne\varepsilon(\chi_1)\varepsilon(\chi_2)$ 가 일반적이다. 그 차이를 재는 것이 Jacobi 합이며, Langlands–Deligne 의 국소 상수 이론이 이 실패를 정확히 통제한다.
+- **실수성.** $\chi$ 가 실수값(이차) 지표이면 $W(\chi)=1$ 이다. 이차 지표의 $L$ 함수는 부호가 $+1$ 이고, Gauss 의 부호 정리가 이를 준다.
+- **곱셈성의 실패.** 일반적으로 $\varepsilon(\chi_1\chi_2)\ne\varepsilon(\chi_1)\varepsilon(\chi_2)$ 다. 그 차이를 재는 것이 Jacobi 합이고, Langlands–Deligne 의 국소 상수 이론이 이 실패를 통제한다.
 
-## 무엇에 쓰이는가
+## 중심값과 패리티
 
-근 수는 장식이 아니다. $W(\chi)=-1$ 이면 함수방정식이 $\Lambda(\frac12)=-\Lambda(\frac12)$ 를 강제해 중심값이 $0$ 이 된다. 타원곡선의 $L$ 함수에서 이 부호가 **패리티**이고, Birch–Swinnerton-Dyer 추측을 통해 계수의 홀짝을 예측한다. 계산으로 확인할 수 있는 부호 하나가 무한군의 계수에 대한 정보를 준다.
+$W(\chi)=-1$ 이면 함수방정식이 $\Lambda(\frac12)=-\Lambda(\frac12)$ 를 강제해 중심값이 $0$ 이 된다. 타원곡선의 $L$ 함수에서 이 부호가 **패리티**이고, Birch–Swinnerton-Dyer 추측을 통해 계수의 홀짝을 예측한다.
 
-Deligne 은 국소 근 수가 Galois 표현의 자료만으로 정해지는 방식을 확립했다. 자기동형 쪽의 $\varepsilon$ 과 Galois 쪽의 $\varepsilon$ 이 일치해야 한다는 요구가 [Langlands 강령](langlands-program.md)에서 대응을 특정하는 조건 가운데 하나가 된다.
+Deligne 은 국소 근 수가 Galois 표현의 자료만으로 정해지는 방식을 확립했다. 자기동형 쪽의 $\varepsilon$ 과 Galois 쪽의 $\varepsilon$ 이 일치해야 한다는 조건이 [Langlands 강령](langlands-program.md)에서 대응을 특정한다.
 
 # 활용
 
-## 어디에 쓰이는가
-
-- **$L$ 함수의 계산.** $W(\chi)$ 를 알아야 함수방정식을 써서 임계띠 안의 값을 계산할 수 있다. 수치적으로 $L$ 함수를 다루는 모든 코드가 근 수를 먼저 구한다.
+- **$L$ 함수의 계산.** 함수방정식으로 임계띠 안의 값을 계산하려면 $W(\chi)$ 가 필요하므로, $L$ 함수를 다루는 코드가 근 수를 먼저 구한다.
 - **패리티와 BSD.** 타원곡선 $L$ 함수의 근 수가 $-1$ 이면 중심값이 $0$ 이고, BSD 추측에 따라 계수가 홀수다. 근 수는 국소 자료에서 계산되므로 계수의 홀짝을 곡선의 환원 자료만으로 예측할 수 있다.
 - **지수합 추정.** Gauss 합과 Jacobi 합의 절댓값 $\sqrt p$ 가 유한체 위 방정식의 점 개수 추정을 준다. Weil 추측의 곡선 사례가 이 계산의 일반화다.
-- **상호법칙.** 이차 Gauss 합의 부호에서 이차 상호법칙이, 더 높은 차수의 Gauss 합에서 삼차·사차 상호법칙이 나온다. 유체론이 나오기 전의 고전적 길이다.
+- **상호법칙.** 이차 Gauss 합의 부호에서 이차 상호법칙이, 높은 차수의 Gauss 합에서 삼차와 사차 상호법칙이 나온다. 유체론 이전의 고전적 경로다.
 
-[^1]: Gauss 합의 기본 성질과 부호 정리는 K. Ireland, M. Rosen, *A Classical Introduction to Modern Number Theory* (2판, 1990) 6장과 8장. 국소 근 수의 정의와 Tate 의 국소 함수방정식은 J. Tate, *Local Constants*, in *Algebraic Number Fields* (Durham 1975), 89–131. Galois 쪽 근 수와의 일치는 P. Deligne, *Les constantes des équations fonctionnelles des fonctions L*, Antwerp II (1973). 본문의 수치 계산은 직접 한 것이다.
+[^1]: Gauss 합의 기본 성질과 부호 정리는 K. Ireland, M. Rosen, *A Classical Introduction to Modern Number Theory* (2판, 1990) 6장과 8장. 국소 근 수의 정의와 Tate 의 국소 함수방정식은 J. Tate, *Local Constants*, in *Algebraic Number Fields* (Durham 1975), 89–131. Galois 쪽 근 수와의 일치는 P. Deligne, *Les constantes des équations fonctionnelles des fonctions L*, Antwerp II (1973).
 
 # 연관 문서
 
