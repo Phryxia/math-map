@@ -37,7 +37,7 @@ graph TD
 $\mathcal C$ 를 locally small 범주, $A$ 를 $\mathcal C$ 의 대상이라 하자. $A$ 로 향하는 사상들이 반변 함자를 이룬다.
 
 $$
-h_A(X)=\operatorname{Hom}_C(X,A)
+h_A(X)=\mathrm{Hom}_C(X,A)
 $$
 
 $f:X\to Y$ 에 대해 $h_A(f):h_A(Y)\to h_A(X)$ 는 앞합성 $g\mapsto g\circ f$ 다. 어떤 함자가 이런 꼴과 자연동형이면 **표현가능**하다고 하고 $A$ 를 그 표현 대상이라 한다.
@@ -47,7 +47,7 @@ $f:X\to Y$ 에 대해 $h_A(f):h_A(Y)\to h_A(X)$ 는 앞합성 $g\mapsto g\circ f
 $F:C^{\mathrm{op}}\to\mathbf{Set}$ 에 대해
 
 $$
-\operatorname{Nat}(h_A,F)\cong F(A)
+\mathrm{Nat}(h_A,F)\cong F(A)
 $$
 
 인 전단사가 있으며 $A$ 와 $F$ 양쪽에 대해 자연스럽다. 대응은 자연변환 $\alpha$ 를 $\alpha_A(\mathrm{id}_A)$ 로 보낸다.
@@ -65,7 +65,7 @@ $u\in F(A)$ 가 주어지면 $f:X\to A$ 에 대해 $\alpha_X(f)=F(f)(u)$ 로 자
 $F=h_B$ 로 두면 다음을 얻는다.
 
 $$
-\operatorname{Nat}(h_A,h_B)\cong\operatorname{Hom}_C(A,B)
+\mathrm{Nat}(h_A,h_B)\cong\mathrm{Hom}_C(A,B)
 $$
 
 따라서 $A\mapsto h_A$ 로 주어지는 함자 $C\to[C^{\mathrm{op}},\mathbf{Set}]$ 는 full 이고 faithful 하다. 이를 **Yoneda 매장**이라 하며, 임의의 범주를 함자 범주 안에 충실하게 넣을 수 있다.
@@ -74,7 +74,7 @@ $$
 
 ## 보편 성질의 유일성
 
-보편 성질로 정의된 대상은 대개 어떤 함자를 표현한다. 곱 $A\times B$ 는 $X\mapsto\operatorname{Hom}(X,A)\times\operatorname{Hom}(X,B)$ 를 표현하고, 자유군은 망각 함자의 왼쪽 수반으로 $X\mapsto\operatorname{Hom}_{\mathbf{Set}}(S,U(X))$ 를 표현한다.
+보편 성질로 정의된 대상은 대개 어떤 함자를 표현한다. 곱 $A\times B$ 는 $X\mapsto\mathrm{Hom}(X,A)\times\mathrm{Hom}(X,B)$ 를 표현하고, 자유군은 망각 함자의 왼쪽 수반으로 $X\mapsto\mathrm{Hom}_{\mathbf{Set}}(S,U(X))$ 를 표현한다.
 
 표현 대상이 동형을 무시하고 유일하다는 것은 Yoneda 매장의 충실성에서 나온다. 두 대상 사이에 사상을 만들고 합성이 항등임을 확인하는 절차를 되풀이하지 않아도 된다.
 
@@ -101,10 +101,10 @@ poset 범주에서 $h_A$ 는 $A$ 이하인 원소들의 집합이고, Yoneda 매
 
 ## 공변판과 밀도
 
-공변 함자 $F:C\to\mathbf{Set}$ 와 $h^A(X)=\operatorname{Hom}(A,X)$ 에 대해서도 같은 형태가 성립한다.
+공변 함자 $F:C\to\mathbf{Set}$ 와 $h^A(X)=\mathrm{Hom}(A,X)$ 에 대해서도 같은 형태가 성립한다.
 
 $$
-\operatorname{Nat}(h^A,F)\cong F(A)
+\mathrm{Nat}(h^A,F)\cong F(A)
 $$
 
 화살표 방향만 뒤집으면 되므로 별개의 정리가 아니다. 모든 preSheaf 는 표현가능한 것들의 쌍대제한으로 쓸 수 있고, 이를 co-Yoneda lemma 또는 밀도 정리라 한다. 표현가능 함자가 함자 범주의 생성원 역할을 한다는 뜻이다.

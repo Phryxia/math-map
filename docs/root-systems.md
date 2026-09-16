@@ -207,7 +207,7 @@ for name, simple in systems.items():
 근계가 정해지면 유한차원 기약표현이 **지배적 정수 무게** $\lambda\in P^+$ 로 분류되고 지표가 Weyl 지표 공식으로 주어진다.
 
 $$
-\operatorname{ch}V_\lambda=\frac{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\rho)}},\qquad \rho=\frac12\sum_{\alpha\in\Phi^+}\alpha
+\mathrm{ch}V_\lambda=\frac{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\rho)}},\qquad \rho=\frac12\sum_{\alpha\in\Phi^+}\alpha
 $$
 
 분자와 분모 모두 Weyl 군에 대한 교대합이고, 차원 공식이 따라 나온다.

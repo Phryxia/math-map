@@ -65,7 +65,7 @@ $$
 동치인 서술 하나가 유용하다. $M$ 이 $R$ 가군이라는 것은 환 준동형
 
 $$
-\rho : R \to \operatorname{End}_{\mathbb{Z}}(M)
+\rho : R \to \mathrm{End}_{\mathbb{Z}}(M)
 $$
 
 가 주어진 것과 같다. 즉 가군은 "아벨군의 자기준동형환으로 가는 환 준동형" 이고, 이는 군 작용을 "대칭군으로 가는 준동형" 으로 보는 [군 작용](group-actions.md)의 관점과 정확히 평행하다.
@@ -89,7 +89,7 @@ $$
 [군](groups.md)이나 [환](rings.md)에서와 같은 형태가 그대로 성립한다. $f:M\to N$ 이 준동형이면
 
 $$
-M / \ker f \thickspace\cong\thickspace \operatorname{im} f
+M / \ker f \thickspace\cong\thickspace \mathrm{im} f
 $$
 
 이고, 부분가군 $A, B \subseteq M$ 과 $N \subseteq L \subseteq M$ 에 대해
@@ -119,7 +119,7 @@ $$
 원소 $m \in M$ 의 소멸자는
 
 $$
-\operatorname{Ann}(m) = \lbrace r \in R : rm = 0 \rbrace
+\mathrm{Ann}(m) = \lbrace r \in R : rm = 0 \rbrace
 $$
 
 이고, 이는 $R$ 의 아이디얼이다. $R$ 이 정역일 때 $\mathrm{Ann}(m) \ne 0$ 인 원소를 torsion 원소라 하고, 그 전체 $T(M)$ 은 부분가군이 된다. $T(M) = 0$ 이면 torsion-free, $T(M) = M$ 이면 torsion 가군이다. 벡터 공간에서는 항상 $T(M) = 0$ 이므로 이 개념 자체가 비어 있다.
@@ -216,7 +216,7 @@ print("자유 계수:", rank, "/ torsion:", torsion)
 
 ## 표현론과 그 너머
 
-군환 $k[G]$ 위의 가군은 [군의 표현과 지표](group-representations.md)의 대상이고, $\operatorname{char}k$ 가 $|G|$ 를 나누지 않을 때 이 환 위의 모든 가군이 단순가군의 직합이 된다는 것이 Maschke 정리다. 이는 "가군 범주가 벡터 공간 범주처럼 행동하는 조건" 을 묻는 일반적 질문의 한 사례다.[^2]
+군환 $k[G]$ 위의 가군은 [군의 표현과 지표](group-representations.md)의 대상이고, $\mathrm{char}k$ 가 $|G|$ 를 나누지 않을 때 이 환 위의 모든 가군이 단순가군의 직합이 된다는 것이 Maschke 정리다. 이는 "가군 범주가 벡터 공간 범주처럼 행동하는 조건" 을 묻는 일반적 질문의 한 사례다.[^2]
 
 대수기하에서는 환 위의 가군이 공간 위의 벡터다발 비슷한 대상으로 해석되고, 호몰로지 대수에서는 가군의 정확열이 불변량을 계산하는 도구가 된다. [단체 호몰로지](homology.md)의 사슬군은 처음부터 $\mathbb Z$ 가군이며, 구조 정리 덕분에 호몰로지군이 자유 부분과 torsion 부분으로 갈린다.
 

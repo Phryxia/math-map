@@ -257,7 +257,7 @@ $$
 
 Kato 의 Euler 계는 모듈러 곡선의 $K_2$ 안의 Beilinson 원소에서 오고, $K$ 나 CM 을 쓰지 않아 [모듈러 형식](modular-forms.md) 일반으로 확장된다. 얻는 방향은 반대다. Heegner 쪽이 $L'\ne0\Rightarrow$ 순위 1 을, Kato 쪽이 $L\ne0\Rightarrow$ 순위 0 과 주추측의 한쪽 나눔을 준다. 나머지 한쪽은 Skinner–Urban 이 Eisenstein 합동으로 채웠다.
 
-Bloch–Kato 가 예측하는 일반적인 동기에 Euler 계가 존재하는지는 열린 문제이고, 순위 2 이상에서 Selmer 군을 누르는 방법은 알려져 있지 않다. BSD 가 $r_{\mathrm{an}}\ge2$ 에서 멈춰 있는 것이 이 때문이다.
+알려진 Euler 계는 순위 1 까지의 Selmer 군만 누른다.
 
 ## Kolyvagin 계로의 추상화
 

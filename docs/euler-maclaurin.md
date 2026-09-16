@@ -173,7 +173,7 @@ for n in (4, 6, 8, 10, 12, 16):
 
 ## $\zeta(s)$ 의 고정밀 계산
 
-급수 $\sum n^{-s}$ 는 $s$ 가 1 에 가까우면 수렴이 느리고 $\operatorname{Re}s\le1$ 에서는 발산한다. 앞의 $N-1$ 항을 직접 더하고 꼬리를 Euler–Maclaurin 으로 바꾸면 두 문제가 함께 풀린다.
+급수 $\sum n^{-s}$ 는 $s$ 가 1 에 가까우면 수렴이 느리고 $\mathrm{Re}s\le1$ 에서는 발산한다. 앞의 $N-1$ 항을 직접 더하고 꼬리를 Euler–Maclaurin 으로 바꾸면 두 문제가 함께 풀린다.
 
 $$
 \zeta(s)=\sum_{n=1}^{N-1}\frac1{n^{s}}

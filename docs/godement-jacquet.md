@@ -136,7 +136,7 @@ $n=1$ 의 자명한 지표에서는 $\zeta$ 함수에 극점이 생기고, $n\ge
 |---|---|
 | $\mathrm{GL}_n$ 의 표준 $L$ 함수 | Godement–Jacquet — 무조건적 |
 | $\mathrm{GL}_n\times\mathrm{GL}_m$ 의 Rankin–Selberg | Jacquet–Piatetski-Shapiro–Shalika — 무조건적 |
-| 대칭곱 $L(s,\mathrm{Sym}^k\pi)$ | 대부분 미해결. $k\le4$ 만 알려짐 |
+| 대칭곱 $L(s,\mathrm{Sym}^k\pi)$ | $k\le4$ 만 알려짐 (Kim–Shahidi) |
 | 일반 $L(s,\pi,r)$ | Langlands 의 추측 |
 
 [Sato–Tate](sato-tate.md)에는 모든 $k$ 의 대칭곱이 필요하고 표준 $L$ 함수만으로는 닿지 않는다. Taylor 등은 잠재적 모듈러성으로 우회했다.
@@ -288,7 +288,7 @@ $c_{p^m}=\sum_{k=0}^m\alpha^k\beta^{m-k}$ 는 $\mathrm{GL}\_2(\mathbb C)$ 의 $m
 
 [Sato–Tate](sato-tate.md) 의 등분포에는 모든 대칭곱의 평균이 사라져야 하고 그 평균을 $L(s,\mathrm{Sym}^m\pi)$ 가 통제한다. Godement–Jacquet 은 $m=1$ 인 표준표현만 준다.
 
-## 후속 방향
+## 관련 정리와 일반화
 
 - **Langlands 강령의 전제.** 자기동형 $L$ 함수의 좋은 성질이 [강령](langlands-program.md)의 모든 진술의 전제이고, $\mathrm{GL}_n$ 표준 $L$ 함수에 대해 이 정리가 그것을 무조건적으로 준다.
 - **강한 중복도 1.** 표준 $L$ 함수가 표현을 결정한다는 정리(Jacquet–Shalika)가 거의 모든 자리의 Satake 매개변수로 $\pi$ 가 정해진다는 말이고, 증명에 이 적분이 쓰인다.

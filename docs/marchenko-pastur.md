@@ -57,7 +57,7 @@ $$
 m_k = \int x^k\thinspace d\mu_\gamma(x) = \sum_{r=0}^{k-1}\frac{1}{r+1}\binom{k}{r}\binom{k-1}{r}\gamma^{\thinspace r}
 $$
 
-계수 $\frac{1}{r+1}\binom{k}{r}\binom{k-1}{r}$ 이 Narayana 수이고, $\gamma = 1$ 에서 합이 Catalan 수 $C_k$ 가 된다. 처음 몇 개는 $m_1 = 1$ 과 $m_2 = 1+\gamma$ 와 $m_3 = 1 + 3\gamma + \gamma^2$ 이다. 적률은 $\frac1p\operatorname{tr}(S^k)$ 의 극한이므로 고윳값을 구하지 않고 행렬 곱만으로 확인할 수 있고, 아래 코드가 그렇게 한다.
+계수 $\frac{1}{r+1}\binom{k}{r}\binom{k-1}{r}$ 이 Narayana 수이고, $\gamma = 1$ 에서 합이 Catalan 수 $C_k$ 가 된다. 처음 몇 개는 $m_1 = 1$ 과 $m_2 = 1+\gamma$ 와 $m_3 = 1 + 3\gamma + \gamma^2$ 이다. 적률은 $\frac1p\mathrm{tr}(S^k)$ 의 극한이므로 고윳값을 구하지 않고 행렬 곱만으로 확인할 수 있고, 아래 코드가 그렇게 한다.
 
 ## Stieltjes 변환
 

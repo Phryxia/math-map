@@ -118,13 +118,13 @@ $$
 가장 중요한 성질은 다음 자연동형이다.
 
 $$
-\operatorname{Hom}_R(M \otimes_R N, P) \thickspace\cong\thickspace \operatorname{Hom}_R\big(M, \operatorname{Hom}_R(N, P)\big)
+\mathrm{Hom}_R(M \otimes_R N, P) \thickspace\cong\thickspace \mathrm{Hom}_R\big(M, \mathrm{Hom}_R(N, P)\big)
 $$
 
 좌변의 사상은 $M \times N$ 위의 쌍선형 사상과 같고, 우변은 $m$ 을 넣으면 $N \to P$ 사상이 나오는 사상이다. 두 쪽이 같은 자료를 가리킨다. 범주론의 언어로는
 
 $$
-{-} \otimes_R N \thickspace\dashv\thickspace \operatorname{Hom}_R(N, -)
+{-} \otimes_R N \thickspace\dashv\thickspace \mathrm{Hom}_R(N, -)
 $$
 
 이며, 자세한 틀은 [Adjunction](adjunctions.md)에 있다. 집합에서의 curry 와 uncurry 의 대수판이다.
@@ -155,7 +155,7 @@ $$
 \mathbb{Z} \xrightarrow{\ \times 2\ } \mathbb{Z} \quad \Longrightarrow \quad \mathbb{Z}/2\mathbb{Z} \xrightarrow{\ 0\ } \mathbb{Z}/2\mathbb{Z}
 $$
 
-왼쪽은 단사지만 오른쪽은 영사상이다. 이 실패의 정도를 재는 것이 Tor functor이고, 예컨대 $\operatorname{Tor}_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) = \mathbb Z/2\mathbb Z$ 다. $- \otimes N$ 이 항상 단사성을 보존하는 가군 $N$ 을 평탄(flat) 가군이라 한다. 자유가군은 평탄하고, PID 위에서는 torsion-free와 평탄이 같다.
+왼쪽은 단사지만 오른쪽은 영사상이다. 이 실패의 정도를 재는 것이 Tor functor이고, 예컨대 $\mathrm{Tor}_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) = \mathbb Z/2\mathbb Z$ 다. $- \otimes N$ 이 항상 단사성을 보존하는 가군 $N$ 을 평탄(flat) 가군이라 한다. 자유가군은 평탄하고, PID 위에서는 torsion-free와 평탄이 같다.
 
 ## 스칼라 확장
 
@@ -168,7 +168,7 @@ $$
 가 $R$ 가군을 $S$ 가군으로 보낸다. 이를 스칼라 확장이라 하고, 스칼라를 잊는 제한 functor의 left adjoint다.
 
 $$
-\operatorname{Hom}_S(S \otimes_R M, N) \cong \operatorname{Hom}_R(M, N)
+\mathrm{Hom}_S(S \otimes_R M, N) \cong \mathrm{Hom}_R(M, N)
 $$
 
 구체적인 예가 실수 벡터 공간의 복소화 $\mathbb C \otimes_{\mathbb R} V$ 다. 실수 $n$ 차원 공간은 복소 $n$ 차원 공간이 되고, 실행렬은 같은 성분의 복소행렬이 된다. 실수 위에서는 [고윳값](eigenvalues.md)이 없던 회전행렬이 복소화 후 대각화되는 일이 여기서 일어난다. 국소화 $S^{-1}R \otimes_R M$ 도 같은 형태이며 [국소화](localization-rings.md)에서 다룬다.
@@ -190,7 +190,7 @@ $$
 이며, 선형사상의 텐서곱을 표현한다.[^1] 유용한 항등식이 몇 개 있다.
 
 $$
-(A \otimes B)(C \otimes D) = (AC) \otimes (BD), \qquad \operatorname{tr}(A \otimes B) = \operatorname{tr}(A)\operatorname{tr}(B)
+(A \otimes B)(C \otimes D) = (AC) \otimes (BD), \qquad \mathrm{tr}(A \otimes B) = \mathrm{tr}(A)\mathrm{tr}(B)
 $$
 
 $$

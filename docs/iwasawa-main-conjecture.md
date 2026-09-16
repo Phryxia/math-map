@@ -235,7 +235,7 @@ $1-\zeta_{p^{n}}$ 자체는 $p$ 위의 소원소이고 단수가 되는 것은 �
 
 $\Lambda$ 가 2 차원 정칙 국소환이므로 각 높이 1 소아이디얼에서 나눔을 확인하면 전체 나눔이 되고, 이것이 4 단계를 정리한다.
 
-## 열린 문제
+## 알려진 열린 문제
 
 | 진술 | 상태 |
 |---|---|
@@ -246,7 +246,7 @@ $\Lambda$ 가 2 차원 정칙 국소환이므로 각 높이 1 소아이디얼에
 | Vandiver 추측 $p\nmid h^{+}$ | 열림 (대규모 수치 검증만) |
 | 총실체 위 주추측 | 거의 증명됨 (Wiles), $p=2$ 등 예외 |
 
-주추측은 홀수 성분을 기술하고 짝수 성분이 0 인지는 말하지 않으므로 Vandiver 추측은 주추측에서 따라 나오지 않는다. 짝수 성분이 순환체 산술의 남은 미지 영역이다.
+주추측은 홀수 성분을 기술하고 짝수 성분이 0 인지는 말하지 않으므로 Vandiver 추측은 주추측에서 따라 나오지 않는다. 짝수 성분이 순환체 산술의 남은 미지 영역이다. Vandiver 추측과 $\mu=0$ 추측의 진술과 상태는 Washington 의 교재 8 장과 7 장에 있다.[^1]
 
 # 활용
 
@@ -266,7 +266,7 @@ $p$ 가 $h$ 를 나누지 않는 정칙소수일 조건이 $p\nmid B_2B_4\cdots 
 
 $L$ 함수의 특수값이 대수적 원소로 실현된다는 Stark 의 예측은 순환체 단수를 일반 수체로 확장하려는 시도다. Rubin–Stark 원소가 예측대로 존재한다면 그것이 Euler 계를 이루고, 총실체 위의 주추측과 Gross–Stark 추측이 같은 논법으로 정리될 것이다. 아직 존재성 자체가 추측 단계이고, 알려진 Euler 계의 목록이 짧다는 [Euler 계](euler-systems.md)의 한계가 여기서도 나타난다.
 
-[^1]: 표준 교재는 L. Washington, *Introduction to Cyclotomic Fields* (2판, Springer 1997) 7, 13, 15 장. 주추측의 두 증명은 B. Mazur, A. Wiles, *Class fields of abelian extensions of* $\mathbb Q$ (Invent. Math. **76**, 1984) 와 K. Rubin 의 부록(Washington 2판 15 장). Ferrero–Washington 은 Ann. of Math. **109** (1979). 타원곡선 쪽은 C. Skinner, E. Urban, *The Iwasawa main conjectures for* $\mathrm{GL}_2$ (Invent. Math. **195**, 2014).
+[^1]: 표준 교재는 L. Washington, *Introduction to Cyclotomic Fields* (2판, Springer 1997) 7, 13, 15 장. 주추측의 두 증명은 B. Mazur, A. Wiles, *Class fields of abelian extensions of* $\mathbb Q$ (Invent. Math. **76**, 1984) 와 K. Rubin 의 부록(Washington 2판 15 장). Ferrero–Washington 은 Ann. of Math. **109** (1979). 총실체는 A. Wiles, *The Iwasawa conjecture for totally real fields*, Ann. of Math. **131** (1990). 타원곡선 쪽은 C. Skinner, E. Urban, *The Iwasawa main conjectures for* $\mathrm{GL}_2$ (Invent. Math. **195**, 2014).
 
 # 연관 문서
 

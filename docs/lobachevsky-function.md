@@ -73,7 +73,7 @@ flowchart TD
 - **최대와 최소.** $\theta=\pi/6$ 에서 최대 $0.5074708\ldots$ 이고 $\theta=5\pi/6$ 에서 최소다.
 - **배각 공식.** $\Lambda(2\theta)=2\Lambda(\theta)+2\Lambda\big(\theta+\tfrac\pi2\big)$ 다. 이 관계가 여러 부피 항등식의 출처다.
 
-$\Lambda$ 는 이중로그 $\mathrm{Li}_2$ 의 허수부와 같다. 정확히는 $\Lambda(\theta)=\tfrac12\operatorname{Im}\mathrm{Li}_2(e^{2i\theta})$ 이고, 그래서 쌍곡 부피가 이중로그의 값으로 표현되는 현상(Bloch 군, Borel 조절자)의 가장 구체적인 사례가 된다.
+$\Lambda$ 는 이중로그 $\mathrm{Li}_2$ 의 허수부와 같다. 정확히는 $\Lambda(\theta)=\tfrac12\mathrm{Im}\mathrm{Li}_2(e^{2i\theta})$ 이고, 그래서 쌍곡 부피가 이중로그의 값으로 표현되는 현상(Bloch 군, Borel 조절자)의 가장 구체적인 사례가 된다.
 
 ## 사면체의 부피
 

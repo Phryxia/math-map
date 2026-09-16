@@ -32,7 +32,7 @@ $$
 최대가능도 추정량은 로그가능도를 최대화하는 점이다. 존재하지 않거나 유일하지 않을 수 있으므로 argmax는 집합으로 이해한다.
 
 $$
-\hat\theta=\operatorname*{arg\thinspace max}_{\theta\in\Theta}\ \ell(\theta)
+\hat\theta=\mathop{\mathrm{arg\thinspace max}}_{\theta\in\Theta}\ \ell(\theta)
 $$
 
 ## score와 Fisher 정보

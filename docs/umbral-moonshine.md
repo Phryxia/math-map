@@ -67,7 +67,7 @@ Weyl 군을 나눠 버리는 것이 핵심이다. 근계의 대칭 중 "자명�
 콤팩트 초켈러 곡면 $X$ 의 **타원 종수**는 두 변수 함수다.
 
 $$
-Z_X(\tau,z)=\operatorname{tr}_{\mathcal H_{RR}}\left((-1)^Fy^{J_0}q^{L_0-c/24}\bar q^{\bar L_0-c/24}\right),\qquad q=e^{2\pi i\tau},\ y=e^{2\pi iz}
+Z_X(\tau,z)=\mathrm{tr}_{\mathcal H_{RR}}\left((-1)^Fy^{J_0}q^{L_0-c/24}\bar q^{\bar L_0-c/24}\right),\qquad q=e^{2\pi i\tau},\ y=e^{2\pi iz}
 $$
 
 우변은 물리적 표현이지만 결과는 순수하게 위상적이고, $X$ 의 변형에 불변이다. K3 곡면에 대해 이것은 무게 $0$ 과 지표 $1$ 의 약한 Jacobi 형식이고 그런 형식의 공간이 1 차원이라 정규화 하나로 결정된다.
@@ -101,7 +101,7 @@ $H$ 는 무게 $1/2$ 와 지표 2 의 mock 모듈러 형식이고 shadow 는 $24
 $N^X$ 를 근계 $X$ 를 갖는 Niemeier 격자, $W^X$ 를 그 Weyl 군이라 하고
 
 $$
-G^X=\operatorname{Aut}(N^X)/W^X
+G^X=\mathrm{Aut}(N^X)/W^X
 $$
 
 를 **umbral 군**이라 한다. $m=h(X)$ 를 $X$ 의 공통 Coxeter 수라 할 때, 각 $g\in G^X$ 에 대응하는 무게 $1/2$ 와 지표 $m$ 의 벡터값 mock 모듈러 형식 $H^X_g=(H^X_{g,r})_{r\bmod 2m}$ 이 정해지고 그 shadow 는 $X$ 의 근계 theta 급수에 $g$ 의 작용을 얹은 것이다.

@@ -21,7 +21,7 @@ WKB 급수 $\sum_n \epsilon^n S_n(x)$ 의 계수는 $n!$ 규모로 커진다. �
 $\epsilon^2 y'' = Q(x)y$ 에서 회전점 $Q(x_0) = 0$ 마다 세 개의 곡선이 뻗어 나간다. 조건은
 
 $$
-\operatorname{Im}\int_{x_0}^{x}\sqrt{Q(t)}\thinspace dt = 0
+\mathrm{Im}\int_{x_0}^{x}\sqrt{Q(t)}\thinspace dt = 0
 $$
 
 이다. 이 곡선 위에서 두 WKB 해 $e^{\pm\phi/\epsilon}$ 의 크기 비가 최대로 벌어져 작은 쪽의 계수가 결정되지 않는다. 이 곡선이 **Stokes 곡선**이고 전체 그림이 **Stokes 그래프**다. 그래프가 복소평면을 영역으로 나누고, 각 영역 안에서는 Borel 합이 정의되어 정확한 해가 산다.

@@ -159,10 +159,10 @@ $\varphi(x) = \lvert x \rvert^p$ 를 넣으면 $p \ge 1$ 인 모든 $L^p$ 에서
 
 ## 분산 분해와 최적 예측
 
-$E[X^2] < \infty$ 일 때 조건부 분산을 $\operatorname{Var}(X \mid \mathcal G) = E[X^2 \mid \mathcal G] - E[X \mid \mathcal G]^2$ 로 정의하면 전분산 공식이 성립한다.
+$E[X^2] < \infty$ 일 때 조건부 분산을 $\mathrm{Var}(X \mid \mathcal G) = E[X^2 \mid \mathcal G] - E[X \mid \mathcal G]^2$ 로 정의하면 전분산 공식이 성립한다.
 
 $$
-\operatorname{Var}(X) \thickspace=\thickspace E\big[\operatorname{Var}(X \mid \mathcal{G})\big] \thickspace+\thickspace \operatorname{Var}\big(E[X \mid \mathcal{G}]\big).
+\mathrm{Var}(X) \thickspace=\thickspace E\big[\mathrm{Var}(X \mid \mathcal{G})\big] \thickspace+\thickspace \mathrm{Var}\big(E[X \mid \mathcal{G}]\big).
 $$
 
 Pythagoras 정리의 확률적 표현이다. 또한 임의의 $\mathcal G$ 가측 제곱적분 가능 $W$ 에 대해

@@ -31,7 +31,7 @@ Sylow 부분군들은 서로 켤레이므로 Sylow $p$ 부분군이 하나뿐인
 $|G| = p^a m$ 이고 $p$ 가 $m$ 을 나누지 않는다고 하자. 위수가 정확히 $p^a$ 인 부분군 $P \le G$ 를 Sylow $p$ -부분군이라 한다. 그 전체 집합을
 
 $$
-\operatorname{Syl}_p(G), \qquad n_p = |\operatorname{Syl}_p(G)|
+\mathrm{Syl}_p(G), \qquad n_p = |\mathrm{Syl}_p(G)|
 $$
 
 로 쓴다.

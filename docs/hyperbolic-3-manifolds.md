@@ -89,7 +89,7 @@ $$
 
 $$
 \mathrm{Vol}(M)=\sum_{i=1}^n D(z_i),\qquad
-D(z)=\operatorname{Im}\mathrm{Li}_2(z)+\arg(1-z)\log|z|
+D(z)=\mathrm{Im}\mathrm{Li}_2(z)+\arg(1-z)\log|z|
 $$
 
 인 **Bloch–Wigner 이중로그**로 주어진다. 이상 사면체의 세 이면각이 $\alpha,\beta,\gamma$ 이면 $D(z)=\Lambda(\alpha)+\Lambda(\beta)+\Lambda(\gamma)$ 로 [Lobachevsky 함수](lobachevsky-function.md)가 된다.
@@ -193,7 +193,7 @@ z = cmath.exp(1j * math.pi / 3)
 print(volume([z, z]))                   # 2.0298832128... (참값 2.029883212819307...)
 ```
 
-$|z|=1$ 인 정이면체 해에서는 $\log|z|=0$ 이라 둘째 항이 사라지고 $D(e^{i\theta})=\operatorname{Im}\mathrm{Li}_2(e^{i\theta})=2\Lambda(\theta/2)$ 가 된다.[^1]
+$|z|=1$ 인 정이면체 해에서는 $\log|z|=0$ 이라 둘째 항이 사라지고 $D(e^{i\theta})=\mathrm{Im}\mathrm{Li}_2(e^{i\theta})=2\Lambda(\theta/2)$ 가 된다.[^1]
 
 ## 매듭 구별
 
@@ -207,7 +207,7 @@ SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자
 - **Chern–Simons 이론.** 쌍곡 구조는 $\mathrm{SL}_2(\mathbb C)$ 평탄 접속이므로 [Chern–Simons](chern-simons.md) 불변량이 정의되고 $\mathrm{CS}+i\thinspace\mathrm{Vol}/2\pi$ 라는 복소수 하나로 묶인다. [Witten 점근](witten-asymptotics.md)과 볼륨 추측이 이 복소수의 실수부와 허수부를 본다.
 - **$K$ 이론.** 사면체 모양들이 정하는 Bloch 군의 원소가 있고 그 Borel 조절자가 부피다. [대수적 K 이론](algebraic-k-theory.md)과 3 다양체를 잇는 다리다.
 
-[^1]: $\operatorname{Im}\mathrm{Li}_2(e^{i\theta})=\sum_n\sin(n\theta)/n^2$ 이고 $\Lambda(\theta)=\tfrac12\sum_n\sin(2n\theta)/n^2$ 이므로 $\operatorname{Im}\mathrm{Li}_2(e^{i\theta})=2\Lambda(\theta/2)$ 다. $\theta=\pi/3$ 에서 $2\Lambda(\pi/6)=1.0149416\ldots=V_3$ 이 나온다.
+[^1]: $\mathrm{Im}\mathrm{Li}_2(e^{i\theta})=\sum_n\sin(n\theta)/n^2$ 이고 $\Lambda(\theta)=\tfrac12\sum_n\sin(2n\theta)/n^2$ 이므로 $\mathrm{Im}\mathrm{Li}_2(e^{i\theta})=2\Lambda(\theta/2)$ 다. $\theta=\pi/3$ 에서 $2\Lambda(\pi/6)=1.0149416\ldots=V_3$ 이 나온다.
 
 # 연관 문서
 

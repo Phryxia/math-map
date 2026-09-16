@@ -37,7 +37,7 @@ $$
 WZW 작용에는 2 차원 적분으로 쓸 수 없는 항이 있다. Wess–Zumino 항은 $\Sigma$ 를 경계로 하는 3 차원 $B$ 로 연장해서만 쓰인다.
 
 $$
-\Gamma(g)=\frac{1}{24\pi}\int_B \operatorname{tr}\big(\tilde g^{-1}d\tilde g\big)^3
+\Gamma(g)=\frac{1}{24\pi}\int_B \mathrm{tr}\big(\tilde g^{-1}d\tilde g\big)^3
 $$
 
 두 연장 $B,B'$ 를 붙이면 닫힌 3 다양체가 되고 그 위의 적분은 $\pi_3(G)=\mathbb Z$ 를 세는 정수의 $2\pi$ 배다. $\Gamma$ 는 $2\pi\mathbb Z$ 만큼 모호하므로 $e^{ik\Gamma}$ 가 잘 정의되려면 $k\in\mathbb Z$ 여야 한다. Chern–Simons 쪽에서 큰 게이지 변환이 강요하던 정수성과 출처가 $\pi_3(G)=\mathbb Z$ 로 같다.
@@ -71,7 +71,7 @@ flowchart TD
 콤팩트 단순 Lie 군 $G$ 와 정수 $k$ 에 대해 장 $g:\Sigma\to G$ 의 **WZW 작용**은 다음이고 $\Gamma$ 는 위의 Wess–Zumino 항이다.
 
 $$
-S_k(g)=\frac{k}{16\pi}\int_\Sigma\operatorname{tr}\big(g^{-1}\partial^\mu g\thinspace g^{-1}\partial_\mu g\big)\thinspace d^2x\thickspace+\thickspace k\thinspace\Gamma(g)
+S_k(g)=\frac{k}{16\pi}\int_\Sigma\mathrm{tr}\big(g^{-1}\partial^\mu g\thinspace g^{-1}\partial_\mu g\big)\thinspace d^2x\thickspace+\thickspace k\thinspace\Gamma(g)
 $$
 
 첫 항만 있으면 시그마 모형이고 등각불변이 아니다. 두 항의 계수 비가 위와 같을 때만 베타 함수가 0 이 되어 등각장론이 되며, 이 지점을 WZW 고정점이라 한다. 그때 운동방정식이 $\partial_{\bar z}(g^{-1}\partial_z g)=0$ 으로 정리되어 흐름

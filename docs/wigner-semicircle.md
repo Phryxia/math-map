@@ -19,7 +19,7 @@ $$
 $A$ 를 규격화한 Wigner 행렬이라 하면 다음이 성립한다.
 
 $$
-\frac{1}{N}\mathbb E\bigl[\operatorname{tr}A^{k}\bigr]
+\frac{1}{N}\mathbb E\bigl[\mathrm{tr}A^{k}\bigr]
 = \frac{1}{N^{1+k/2}}\sum_{i_1,\dots,i_k}\mathbb E\bigl[a_{i_1i_2}a_{i_2i_3}\cdots a_{i_ki_1}\bigr]
 $$
 
@@ -28,7 +28,7 @@ $$
 $k=2m$ 일 때 남는 경로는 $m$ 개의 변으로 된 나무를 한 바퀴 도는 경로이고, 그 개수가 **Catalan 수** $C_m=\frac{1}{m+1}\binom{2m}{m}$ 이다. 정점을 고르는 방법이 $N^{m+1}$ 가지이고 규격화 인자가 $N^{-(1+m)}$ 이므로 극한에서 다음이 남는다.
 
 $$
-\lim_{N\to\infty}\frac1N\mathbb E\bigl[\operatorname{tr}A^{2m}\bigr] = C_m
+\lim_{N\to\infty}\frac1N\mathbb E\bigl[\mathrm{tr}A^{2m}\bigr] = C_m
 $$
 
 반원분포의 $2m$ 번째 적률이 $C_m$ 이므로 증명이 끝난다. 살아남는 항은 각 변을 두 번 쓰므로 분산만 관여하고 네 번 이상 쓰는 항은 $N$ 의 거듭제곱에서 밀리므로, 성분의 세부 분포가 극한에 나타나지 않는다.
@@ -51,7 +51,7 @@ graph TD
 
 ## Wigner 행렬
 
-실 대칭 $N\times N$ 행렬 $H$ 의 성분 $\lbrace h_{ij}\rbrace\_{i\le j}$ 가 독립이고 $i<j$ 마다 $\mathbb E h_{ij}=0$ , $\mathbb E h_{ij}^2=1$ 이며 대각 성분의 분산과 모든 적률이 유한할 때 $H$ 를 **Wigner 행렬**이라 한다. 규격화는 $A=H/\sqrt N$ 이고, 이때 $\frac1N\mathbb E\operatorname{tr}A^2=\frac{1}{N^2}\sum_{i,j}\mathbb E h_{ij}^2\to1$ 로 2 차 적률이 $N$ 과 무관하게 유한하다.
+실 대칭 $N\times N$ 행렬 $H$ 의 성분 $\lbrace h_{ij}\rbrace\_{i\le j}$ 가 독립이고 $i<j$ 마다 $\mathbb E h_{ij}=0$ , $\mathbb E h_{ij}^2=1$ 이며 대각 성분의 분산과 모든 적률이 유한할 때 $H$ 를 **Wigner 행렬**이라 한다. 규격화는 $A=H/\sqrt N$ 이고, 이때 $\frac1N\mathbb E\mathrm{tr}A^2=\frac{1}{N^2}\sum_{i,j}\mathbb E h_{ij}^2\to1$ 로 2 차 적률이 $N$ 과 무관하게 유한하다.
 
 고윳값 $\lambda_1\le\cdots\le\lambda_N$ 에 대해 **경험스펙트럼측도**를 다음으로 둔다.
 
@@ -66,10 +66,10 @@ $$
 측도 $\mu$ 의 **Stieltjes 변환**을 $z\in\mathbb C^+$ 에 대해 다음으로 정의한다.
 
 $$
-m_\mu(z) = \int \frac{d\mu(x)}{x - z} = \frac1N\operatorname{tr}\bigl(A - zI\bigr)^{-1}
+m_\mu(z) = \int \frac{d\mu(x)}{x - z} = \frac1N\mathrm{tr}\bigl(A - zI\bigr)^{-1}
 $$
 
-$\lim_{\eta\to0}\frac1\pi\operatorname{Im}m(x+i\eta)=\rho(x)$ 로 측도를 유일하게 결정하고, 약수렴이 각 $z$ 에서의 수렴과 동치이므로 수렴 증명의 표준 도구다.
+$\lim_{\eta\to0}\frac1\pi\mathrm{Im}m(x+i\eta)=\rho(x)$ 로 측도를 유일하게 결정하고, 약수렴이 각 $z$ 에서의 수렴과 동치이므로 수렴 증명의 표준 도구다.
 
 레졸벤트의 대각 성분을 Schur 보완으로 전개하면 $N\to\infty$ 에서 자기무모순 방정식이 나온다.
 

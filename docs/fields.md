@@ -39,7 +39,7 @@ $$
 체 $F$ 의 표수는 $1$ 을 반복해서 더해 $0$ 을 만드는 최소 횟수이며, 그런 횟수가 없으면 0으로 정의한다. $n\cdot 1$ 은 $1$ 을 $n$ 번 더한 것을 뜻한다.
 
 $$
-\operatorname{char}F=\begin{cases}\min\lbrace\thinspace n\ge 1: n\cdot 1_F=0\thinspace\rbrace & \text{그런 } n \text{이 존재할 때}\cr 0 & \text{그렇지 않을 때}\end{cases}
+\mathrm{char}F=\begin{cases}\min\lbrace\thinspace n\ge 1: n\cdot 1_F=0\thinspace\rbrace & \text{그런 } n \text{이 존재할 때}\cr 0 & \text{그렇지 않을 때}\end{cases}
 $$
 
 $F$ 의 소체(prime subfield)는 $F$ 에 포함된 모든 부분체의 교집합, 즉 $1$ 을 포함하는 가장 작은 부분체다. 부분체란 $F$ 의 부분집합이면서 $F$ 의 연산으로 체가 되는 것을 말한다.
@@ -57,7 +57,7 @@ $n\cdot 1=0$ 인 최소의 $n$ 이 합성수 $n=ab$ ( $1<a,b<n$ )라면 $(a\cdot
 환 준동형 $\varphi:\mathbb{Z}\to F$ , $\varphi(n)=n\cdot 1$ 을 잡는다. 상 $\varphi(\mathbb{Z})$ 를 포함하는 최소 부분체가 소체다. 표수가 소수 $p$ 이면 커널이 $p\mathbb{Z}$ 이므로 제1동형정리로 $\mathbb{Z}/p\mathbb{Z}$ 와 동형인 부분체를 얻고, 이는 이미 체이므로 소체다. 표수가 0이면 $\varphi$ 가 단사이므로 $\varphi$ 를 분수로 확장한 $\mathbb{Q}\to F$ 가 단사 체 준동형이 되고, 그 상이 소체다[^1].
 
 $$
-\operatorname{char}F=p \Rightarrow \text{소체}\cong\mathbb{F}_p=\mathbb{Z}/p\mathbb{Z},\qquad \operatorname{char}F=0 \Rightarrow \text{소체}\cong\mathbb{Q}
+\mathrm{char}F=p \Rightarrow \text{소체}\cong\mathbb{F}_p=\mathbb{Z}/p\mathbb{Z},\qquad \mathrm{char}F=0 \Rightarrow \text{소체}\cong\mathbb{Q}
 $$
 
 따라서 모든 체는 $\mathbb{Q}$ 또는 어떤 $\mathbb{F}_p$ 의 확대체다. $\mathbb{F}_p$ 의 연산은 [정수의 합동과 나머지 연산](modular-arithmetic.md)에서 $p$ 가 [소수](primes.md)일 때의 나머지 연산이다.
@@ -109,7 +109,7 @@ print((3 * 5) % p)  # 1
 표수 $p$ 인 체에서는 $p$ 제곱 사상이 체 준동형이다. 이항계수 $p!/(k!(p-k)!)$ 가 $0<k<p$ 에서 $p$ 로 나누어지기 때문이다.
 
 $$
-(x+y)^p=x^p+y^p \quad\text{in } \operatorname{char}p
+(x+y)^p=x^p+y^p \quad\text{in } \mathrm{char}p
 $$
 
 이 사상이 Frobenius endomorphism이며 [유한체](finite-fields.md)와 [Galois 이론](galois-theory.md)의 핵심 도구가 된다. 표수 0에서는 이런 항등식이 성립하지 않으므로, 표수 0과 표수 $p$ 의 이론은 미분·분리성(separability) 층위에서 갈라진다.

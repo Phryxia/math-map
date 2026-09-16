@@ -147,7 +147,6 @@ Mazur 의 계산은 Eisenstein 극대 아이디얼에서의 완비화 $\mathbb T
 | 이차체 위 비틀림 | 해결 (Kamienny, Kenku–Momose) |
 | 차수 $d$ 수체 위 일양 유계성 | 해결 ([Merel](merel-theorem.md)) |
 | $d\ge3$ 의 명시적 목록 | 부분적으로만 |
-| 아벨 다양체의 비틀림 | 대부분 열림 |
 
 Merel 의 정리는 목록이 아니라 유계를 준다. 명시적 목록은 $d=3$ 정도까지 알려져 있다.
 

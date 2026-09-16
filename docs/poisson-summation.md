@@ -95,10 +95,10 @@ $$
 [격자](lattices.md) $L\subset\mathbb R^{d}$ 와 쌍대격자 $L^{*}=\lbrace\mu:\langle\mu,\lambda\rangle\in\mathbb Z\ \forall\lambda\in L\rbrace$ 에 대해
 
 $$
-\sum_{\lambda\in L}f(\lambda)=\frac1{\operatorname{covol}(L)}\sum_{\mu\in L^{*}}\hat f(\mu)
+\sum_{\lambda\in L}f(\lambda)=\frac1{\mathrm{covol}(L)}\sum_{\mu\in L^{*}}\hat f(\mu)
 $$
 
-$L$ 이 촘촘하면 $L^{\ast}$ 는 성기다. 기본영역의 크기가 바뀌므로 부피 인자가 붙고, $L=\mathbb Z^{d}$ 이면 $\operatorname{covol}=1$ 이라 원래 공식이 된다.
+$L$ 이 촘촘하면 $L^{\ast}$ 는 성기다. 기본영역의 크기가 바뀌므로 부피 인자가 붙고, $L=\mathbb Z^{d}$ 이면 $\mathrm{covol}=1$ 이라 원래 공식이 된다.
 
 # 성질
 
@@ -142,10 +142,10 @@ Euler–Maclaurin 의 모든 보정항이 0 이 되는 자리에서 남는 것�
 $f$ 와 $\hat f$ 를 동시에 마음대로 정할 수는 없다. 양변에 부호 조건을 걸면 부등식이 나온다. $f\le0$ 을 원점 밖에서, $\hat f\ge0$ 을 모든 곳에서 요구하면
 
 $$
-0\ \ge\ \sum_{\lambda\ne0}f(\lambda)=\frac{\hat f(0)}{\operatorname{covol}(L)}-f(0)+\frac1{\operatorname{covol}(L)}\sum_{\mu\ne0}\hat f(\mu)\ \ge\ \frac{\hat f(0)}{\operatorname{covol}(L)}-f(0)
+0\ \ge\ \sum_{\lambda\ne0}f(\lambda)=\frac{\hat f(0)}{\mathrm{covol}(L)}-f(0)+\frac1{\mathrm{covol}(L)}\sum_{\mu\ne0}\hat f(\mu)\ \ge\ \frac{\hat f(0)}{\mathrm{covol}(L)}-f(0)
 $$
 
-에서 $\operatorname{covol}(L)\ge\hat f(0)/f(0)$ 이 나온다. 격자를 지정하지 않았으므로 이 하한은 모든 격자에 적용된다. 이것이 Cohn–Elkies 선형계획 한계이고, [구 채우기](sphere-packing.md)의 8 차원과 24 차원 해결은 이 부등식이 등호가 되게 하는 $f$ 를 구성한 것이다.
+에서 $\mathrm{covol}(L)\ge\hat f(0)/f(0)$ 이 나온다. 격자를 지정하지 않았으므로 이 하한은 모든 격자에 적용된다. 이것이 Cohn–Elkies 선형계획 한계이고, [구 채우기](sphere-packing.md)의 8 차원과 24 차원 해결은 이 부등식이 등호가 되게 하는 $f$ 를 구성한 것이다.
 
 # 활용
 

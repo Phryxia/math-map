@@ -5,7 +5,7 @@
 Poincaré–Hopf 정리는 콤팩트 다양체 위 접벡터장의 특이점에 붙는 정수(지표)의 합이 벡터장과 무관하다고 말한다.
 
 $$
-\sum_{p:\thinspace V(p)=0}\operatorname{ind}_p(V)=\chi(M)
+\sum_{p:\thinspace V(p)=0}\mathrm{ind}_p(V)=\chi(M)
 $$
 
 벡터장에 따라 특이점의 개수와 위치가 달라져도 지표의 합은 [Euler 지표](euler-characteristic.md)로 고정된다. [Gauss–Bonnet 정리](gauss-bonnet.md)에서 곡률의 적분이 위상으로 고정되는 것과 같은 형태이고, 두 정리는 서로를 유도한다.
@@ -38,7 +38,7 @@ $$
 \frac{V}{\lVert V\rVert}:S^{n-1}_\varepsilon(p)\longrightarrow S^{n-1}
 $$
 
-이 사상의 차수가 $\operatorname{ind}\_p(V)$ 다. 좌표 선택에 의존하지 않고 정수값을 가진다. 2 차원에서는 원을 한 바퀴 돌 때 벡터 방향이 도는 횟수다.
+이 사상의 차수가 $\mathrm{ind}\_p(V)$ 다. 좌표 선택에 의존하지 않고 정수값을 가진다. 2 차원에서는 원을 한 바퀴 돌 때 벡터 방향이 도는 횟수다.
 
 ## 정리
 

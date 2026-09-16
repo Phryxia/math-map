@@ -66,7 +66,7 @@ $$
 위 항등식이 포함관계를 보장하고, 아벨군이므로 몫이 잘 정의된다([아이디얼과 몫환](ideals-quotient-rings.md)과 같은 몫 구성이다).
 
 $$
-Z_n=\ker\partial_n,\qquad B_n=\operatorname{im}\partial_{n+1},\qquad B_n\subseteq Z_n
+Z_n=\ker\partial_n,\qquad B_n=\mathrm{im}\partial_{n+1},\qquad B_n\subseteq Z_n
 $$
 
 $$
@@ -76,7 +76,7 @@ $$
 유한 복합체에서 각 호몰로지 군은 유한생성 아벨군이므로 자유부분과 꼬임부분으로 분해된다. 자유부분의 rank 가 n 번째 **Betti 수**다.
 
 $$
-H_n(K)\cong\mathbb{Z}^{\beta_n}\oplus T_n,\qquad \beta_n=\operatorname{rank}H_n(K)
+H_n(K)\cong\mathbb{Z}^{\beta_n}\oplus T_n,\qquad \beta_n=\mathrm{rank}H_n(K)
 $$
 
 # 성질
@@ -86,7 +86,7 @@ $$
 경계 연산자를 기저에 대해 행렬로 쓰면 성분이 -1, 0, 1 인 정수행렬이다. 정수행렬의 Smith normal form 이 rank 와 꼬임 계수를 모두 주고, Betti 수는 다음으로 나온다[^2].
 
 $$
-\beta_n=\operatorname{rank}Z_n-\operatorname{rank}B_n=\bigl(m_n-\operatorname{rank}\partial_n\bigr)-\operatorname{rank}\partial_{n+1}
+\beta_n=\mathrm{rank}Z_n-\mathrm{rank}B_n=\bigl(m_n-\mathrm{rank}\partial_n\bigr)-\mathrm{rank}\partial_{n+1}
 $$
 
 $m_n$ 은 n-단체의 개수다. 이 계산은 [선형사상](linear-maps.md)의 rank-nullity 를 정수 계수로 되풀이한 것이다.

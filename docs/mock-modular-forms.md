@@ -103,20 +103,20 @@ $$
 가 무게 $1/2$ Jacobi 형식의 변환법칙을 만족함을 보였다.
 
 $$
-R(u;\tau)=\sum_{n\in\mathbb Z+\frac12}\left\lbrace\operatorname{sgn}(n)-E\negthinspace\left((n+a)\sqrt{2y}\right)\right\rbrace(-1)^{n-\frac12}e^{-2\pi i n u}q^{-n^2/2}
+R(u;\tau)=\sum_{n\in\mathbb Z+\frac12}\left\lbrace\mathrm{sgn}(n)-E\negthinspace\left((n+a)\sqrt{2y}\right)\right\rbrace(-1)^{n-\frac12}e^{-2\pi i n u}q^{-n^2/2}
 $$
 
-$E(z)=2\int_0^z e^{-\pi t^2}dt$ 이고 $a=\operatorname{Im}(u)/y$ 다. 보정의 내용은 $\operatorname{sgn}$ 을 오차함수로 매끄럽게 바꾸는 것이다. Ramanujan 의 mock theta 함수가 전부 $\mu$ 의 특수화이므로 이 정리 하나가 열일곱 개를 설명한다.
+$E(z)=2\int_0^z e^{-\pi t^2}dt$ 이고 $a=\mathrm{Im}(u)/y$ 다. 보정의 내용은 $\mathrm{sgn}$ 을 오차함수로 매끄럽게 바꾸는 것이다. Ramanujan 의 mock theta 함수가 전부 $\mu$ 의 특수화이므로 이 정리 하나가 열일곱 개를 설명한다.
 
 ## 부정부호 theta 급수
 
 부호수 $(r-1,1)$ 의 부정부호 이차형식 $Q$ 에 대해 $\sum_{n\in\mathbb Z^r}q^{Q(n)}$ 은 $Q$ 가 음수가 되는 방향 때문에 발산한다. 격자점을 잘라내는 조건으로 두 벡터 $c_1,c_2$ 를 잡는다.
 
 $$
-\Theta_{c_1,c_2}(\tau)=\sum_{n\in\mathbb Z^r}\tfrac12\left\lbrace\operatorname{sgn}(B(c_1,n))-\operatorname{sgn}(B(c_2,n))\right\rbrace q^{Q(n)}
+\Theta_{c_1,c_2}(\tau)=\sum_{n\in\mathbb Z^r}\tfrac12\left\lbrace\mathrm{sgn}(B(c_1,n))-\mathrm{sgn}(B(c_2,n))\right\rbrace q^{Q(n)}
 $$
 
-합은 수렴하지만 $\operatorname{sgn}$ 이 모듈러성을 깬다. 여기서도 $\operatorname{sgn}$ 을 오차함수로 바꾸면 모듈러가 회복되고 원래 급수가 그 완성의 정칙 부분이 된다. 앞의 $R$ 과 같은 조작이다.
+합은 수렴하지만 $\mathrm{sgn}$ 이 모듈러성을 깬다. 여기서도 $\mathrm{sgn}$ 을 오차함수로 바꾸면 모듈러가 회복되고 원래 급수가 그 완성의 정칙 부분이 된다. 앞의 $R$ 과 같은 조작이다.
 
 ## Zagier 의 무게 3/2 Eisenstein 급수
 
@@ -172,7 +172,7 @@ Ramanujan 의 mock theta 함수는 전부 무게 $1/2$ 이고 shadow 는 무게 
 
 - **[Umbral moonshine](umbral-moonshine.md).** K3 타원 종수를 $N=4$ 지표로 분해하면 짧은 지표 쪽 계수가 mock 모듈러 형식을 이룬다. 23 개 사례 각각에서 shadow 가 Niemeier 격자의 근계 theta 급수이며, 이 점이 괴물 달빛과의 차이다.
 - **분할수의 계수 합동.** rank 생성함수의 합동이 mock 모듈러성으로 설명된다. Dyson 의 rank 는 mock 을, crank 는 보통 Jacobi 형식을 준다.
-- **블랙홀 엔트로피.** $N=4$ 끈이론에서 단일중심 BPS 상태의 축퇴도가 mock Jacobi 형식의 계수로 나온다. 다중중심 상태를 빼는 조작이 $\operatorname{sgn}$ 을 넣는 자리다.
+- **블랙홀 엔트로피.** $N=4$ 끈이론에서 단일중심 BPS 상태의 축퇴도가 mock Jacobi 형식의 계수로 나온다. 다중중심 상태를 빼는 조작이 $\mathrm{sgn}$ 을 넣는 자리다.
 - **Gross–Zagier 와 높이.** Zagier 의 무게 $3/2$ Eisenstein 급수가 Heegner 점 높이 생성함수의 Eisenstein 부분으로 등장하고, 계급수가 거기서 기하적 의미를 얻는다.
 
 # 연관 문서

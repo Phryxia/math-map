@@ -164,7 +164,7 @@ $$
 $\chi$ 가 자명할 때 $s=1$ 의 유수가 $\kappa=\mathrm{vol}(\mathbb A_K^1/K^\times)$ 라는 것이 위 정리의 내용이다. 이 부피를 [아델](adeles.md) 문서의 콤팩트성에서 실제로 계산하면 이델류군의 구조가 그대로 나온다. 유수는 유수 $h$ 와 조절자 $R$ 과 단원근 개수 $w$ 와 판별식으로 표현된다.
 
 $$
-\operatorname*{Res}_{s=1}\zeta_K(s)=\frac{2^{r_1}(2\pi)^{r_2}hR}{w\sqrt{|d_K|}}
+\mathop{\mathrm{Res}}_{s=1}\zeta_K(s)=\frac{2^{r_1}(2\pi)^{r_2}hR}{w\sqrt{|d_K|}}
 $$
 
 Dirichlet 의 유수 공식이 "노름 1 이델류군의 부피" 한 줄로 정리된다. 유수는 이델류군의 성분 개수, 조절자는 단원 격자의 공변량, $w$ 와 $\sqrt{|d_K|}$ 는 측도 정규화에서 온다.

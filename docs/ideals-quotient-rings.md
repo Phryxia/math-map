@@ -81,7 +81,7 @@ $$
 를 만족한다. 이 보편성이 몫환을 특징짓는다. 특히 $I = \ker \varphi$ 이면 $\psi$ 가 단사이므로 제1 동형정리
 
 $$
-R/\ker\varphi\thickspace\cong\thickspace\operatorname{im}\varphi
+R/\ker\varphi\thickspace\cong\thickspace\mathrm{im}\varphi
 $$
 
 를 얻는다. "관계를 강제한 뒤에도 살아남는 사상은 원래 그 관계를 존중하던 사상뿐" 이라는 것이 이 성질의 내용이다.

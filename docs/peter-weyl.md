@@ -70,7 +70,7 @@ $G$ 가 콤팩트이면 이 측도가 유한이고 오른쪽 불변이기도 하
 
 ## 행렬계수와 지표
 
-유한차원 표현 $(\rho,V)$ 의 행렬계수는 위와 같고, **지표**는 $\chi_\rho(g)=\operatorname{tr}\rho(g)$ 다. 지표는 켤레불변이라 **류함수**이고, 콤팩트 군에서도 유한군과 같은 직교관계를 만족한다.
+유한차원 표현 $(\rho,V)$ 의 행렬계수는 위와 같고, **지표**는 $\chi_\rho(g)=\mathrm{tr}\rho(g)$ 다. 지표는 켤레불변이라 **류함수**이고, 콤팩트 군에서도 유한군과 같은 직교관계를 만족한다.
 
 $$
 \int_G\chi_i(g)\overline{\chi_j(g)}\thinspace dg=\delta_{ij}
@@ -86,8 +86,8 @@ $$
 - **(해석적)** 행렬계수들이 $C(G)$ 에서 균등노름으로 조밀하고, $L^2(G)$ 의 정규직교기저를 이룬다. 곧
 
 $$
-L^2(G)=\widehat{\bigoplus_{i\in\hat G}}\ \operatorname{End}(V_i),\qquad
-\dim\operatorname{End}(V_i)=(\dim V_i)^2
+L^2(G)=\widehat{\bigoplus_{i\in\hat G}}\ \mathrm{End}(V_i),\qquad
+\dim\mathrm{End}(V_i)=(\dim V_i)^2
 $$
 
 - **(구조적)** $G$ 가 콤팩트 Lie 군이면 충실한 유한차원 표현이 존재한다. 곧 모든 콤팩트 Lie 군은 어떤 $\mathrm U(n)$ 의 닫힌 부분군이다.
@@ -124,7 +124,7 @@ $\mathrm{SO}(3)$ 의 경우 $L^2(S^2)=L^2(\mathrm{SO}(3)/\mathrm{SO}(2))$ 이므
 군 위의 함수를 기약표현으로 전개하는 것이 비가환 Fourier 변환이다.
 
 $$
-\hat f(\rho)=\int_Gf(g)\rho(g)^{-1}dg\in\operatorname{End}(V_\rho)
+\hat f(\rho)=\int_Gf(g)\rho(g)^{-1}dg\in\mathrm{End}(V_\rho)
 $$
 
 합성곱이 행렬곱이 되므로 군 구조를 가진 데이터의 합성곱을 블록 대각화할 수 있다. 회전군 위의 상관 계산과 회전 동변 신경망의 구현이 이 변환을 쓴다.

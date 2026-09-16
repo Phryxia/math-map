@@ -15,7 +15,7 @@ $$
 표현 $V_\lambda$ 를 무게공간으로 쪼갠 정보를 담은 형식합이 지표이고, **Weyl 지표 공식**이 그것을 닫힌 꼴로 준다.
 
 $$
-\operatorname{ch}V_\lambda=\sum_{\mu}\dim(V_\lambda)_\mu\ e^\mu
+\mathrm{ch}V_\lambda=\sum_{\mu}\dim(V_\lambda)_\mu\ e^\mu
 =\frac{\displaystyle\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}{\displaystyle\sum_{w\in W}(-1)^{\ell(w)}e^{w(\rho)}}
 $$
 
@@ -30,7 +30,7 @@ $$
 $\mathfrak{sl}_2$ 의 기약표현은 각 차원마다 하나씩 있고, $n+1$ 차원 표현 $V_n$ 의 무게는 $n,n-2,\dots,-n$ 이 하나씩이다. 형식지표를 $e^1=x$ 로 쓰면 다음이 된다.
 
 $$
-\operatorname{ch}V_n=x^n+x^{n-2}+\cdots+x^{-n}=\frac{x^{n+1}-x^{-(n+1)}}{x-x^{-1}}
+\mathrm{ch}V_n=x^n+x^{n-2}+\cdots+x^{-n}=\frac{x^{n+1}-x^{-(n+1)}}{x-x^{-1}}
 $$
 
 유한 등비급수를 닫힌 꼴로 접은 것이고, 접힌 모양에 일반 공식의 세 요소가 들어 있다.
@@ -43,7 +43,7 @@ $$
 
 ## $\rho$ 이동
 
-$\operatorname{ch}V_\lambda$ 는 무게 다이어그램의 대칭 때문에 $W$ 에 대해 대칭이다. 반대칭 함수는 모든 $W$ 궤도에서 한 번씩만 항을 골라 부호를 붙인 것이라 다루기 쉽다. 대칭인 것을 반대칭으로 바꾸는 수법이 Vandermonde 행렬식 곱이고, 여기서 그 역할을 하는 것이 **Weyl 분모**다.
+$\mathrm{ch}V_\lambda$ 는 무게 다이어그램의 대칭 때문에 $W$ 에 대해 대칭이다. 반대칭 함수는 모든 $W$ 궤도에서 한 번씩만 항을 골라 부호를 붙인 것이라 다루기 쉽다. 대칭인 것을 반대칭으로 바꾸는 수법이 Vandermonde 행렬식 곱이고, 여기서 그 역할을 하는 것이 **Weyl 분모**다.
 
 $$
 \Delta=\sum_{w\in W}(-1)^{\ell(w)}e^{w\rho}=\prod_{\alpha\in\Phi^+}\left(e^{\alpha/2}-e^{-\alpha/2}\right)
@@ -52,7 +52,7 @@ $$
 두 표현이 같다는 것이 **Weyl 분모 항등식**이다. 곱 쪽에서 각 인수의 최고차항 $e^{\alpha/2}$ 를 모으면 $e^\rho$ 가 되고, 여기서 $\rho=\frac12\sum_{\alpha>0}\alpha$ 가 나온다.
 
 $$
-\underbrace{\operatorname{ch}V_\lambda}_{\text{대칭}}\cdot\underbrace{\Delta}_{\text{반대칭}}=\underbrace{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}_{\text{반대칭}}
+\underbrace{\mathrm{ch}V_\lambda}_{\text{대칭}}\cdot\underbrace{\Delta}_{\text{반대칭}}=\underbrace{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}_{\text{반대칭}}
 $$
 
 $\lambda$ 가 지배적이면 $\lambda+\rho$ 는 엄격히 지배적이라 $W$ 궤도가 자유롭고, 반대칭 함수 공간에서 궤도 하나가 기저 하나를 준다. $\rho$ 를 더하는 것은 고정점이 있던 무게를 내부로 밀어 궤도를 자유롭게 만드는 조작이다.
@@ -81,13 +81,13 @@ Peter–Weyl 이 주는 직교관계 $\int_G\chi_\lambda\overline{\chi_\mu}=\del
 대수적 노선은 Verma 가군 $M_\mu$ 의 지표가 Kostant 분할 함수로 나온다는 관찰에서 출발한다.
 
 $$
-\operatorname{ch}M_\mu=\frac{e^\mu}{\prod_{\alpha\in\Phi^+}(1-e^{-\alpha})}
+\mathrm{ch}M_\mu=\frac{e^\mu}{\prod_{\alpha\in\Phi^+}(1-e^{-\alpha})}
 $$
 
 기약표현은 Verma 가군들의 교대합으로 풀린다(**BGG 분해**).
 
 $$
-\operatorname{ch}V_\lambda=\sum_{w\in W}(-1)^{\ell(w)}\operatorname{ch}M_{w\cdot\lambda},\qquad w\cdot\lambda:=w(\lambda+\rho)-\rho
+\mathrm{ch}V_\lambda=\sum_{w\in W}(-1)^{\ell(w)}\mathrm{ch}M_{w\cdot\lambda},\qquad w\cdot\lambda:=w(\lambda+\rho)-\rho
 $$
 
 여기 나오는 이동 작용 $w\cdot\lambda$ 가 앞 절의 $\rho$ 이동이고, 이 식을 정리하면 지표 공식이 나온다.
@@ -125,13 +125,13 @@ $$
 군환의 형식기저 $\lbrace e^\mu\rbrace\_{\mu\in P}$ 를 $e^\mu e^\nu=e^{\mu+\nu}$ 로 곱해 놓고
 
 $$
-\operatorname{ch}V=\sum_{\mu\in P}\dim(V_\mu)\thinspace e^\mu
+\mathrm{ch}V=\sum_{\mu\in P}\dim(V_\mu)\thinspace e^\mu
 $$
 
-를 **형식지표**라 한다. 콤팩트군 쪽에서는 $e^\mu$ 를 극대원환면 위의 함수 $t\mapsto\mu(t)$ 로 읽고, 그때 $\operatorname{ch}V$ 가 표현의 대각합 $\chi_V(t)=\operatorname{tr}\rho(t)$ 와 같다. 형식지표는 직합과 텐서곱을 합과 곱으로 바꾼다.
+를 **형식지표**라 한다. 콤팩트군 쪽에서는 $e^\mu$ 를 극대원환면 위의 함수 $t\mapsto\mu(t)$ 로 읽고, 그때 $\mathrm{ch}V$ 가 표현의 대각합 $\chi_V(t)=\mathrm{tr}\rho(t)$ 와 같다. 형식지표는 직합과 텐서곱을 합과 곱으로 바꾼다.
 
 $$
-\operatorname{ch}(V\oplus W)=\operatorname{ch}V+\operatorname{ch}W,\qquad \operatorname{ch}(V\otimes W)=\operatorname{ch}V\cdot\operatorname{ch}W
+\mathrm{ch}(V\oplus W)=\mathrm{ch}V+\mathrm{ch}W,\qquad \mathrm{ch}(V\otimes W)=\mathrm{ch}V\cdot\mathrm{ch}W
 $$
 
 # 성질
@@ -141,7 +141,7 @@ $$
 **Weyl 지표 공식.**
 
 $$
-\operatorname{ch}V_\lambda=\frac{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}{\prod_{\alpha\in\Phi^+}\left(e^{\alpha/2}-e^{-\alpha/2}\right)}
+\mathrm{ch}V_\lambda=\frac{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}{\prod_{\alpha\in\Phi^+}\left(e^{\alpha/2}-e^{-\alpha/2}\right)}
 $$
 
 **Weyl 차원 공식.** 위 식에서 $e^\mu\mapsto e^{t(\mu,\rho^\vee)}$ 로 특수화하고 $t\to0$ 극한을 취하면(양쪽이 $0/0$ 이라 L'Hôpital 을 $|\Phi^+|$ 번 쓴다) 분모와 분자가 곱으로 풀린다.

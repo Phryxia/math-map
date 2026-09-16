@@ -62,11 +62,11 @@ graph TD
 GUE 의 고윳값은 **결정점과정**을 이룬다. $k$ 개의 고윳값이 특정 위치들에 있을 상관함수가 하나의 핵 $K$ 의 $k\times k$ 행렬식으로 쓰인다는 뜻이다. 가장자리를 $N^{2/3}$ 배로 확대하면 그 핵이
 
 $$
-K_{\mathrm{Ai}}(x,y) = \frac{\operatorname{Ai}(x)\operatorname{Ai}'(y) - \operatorname{Ai}'(x)\operatorname{Ai}(y)}{x-y}
-= \int_0^\infty \operatorname{Ai}(x+t)\operatorname{Ai}(y+t)\thinspace dt
+K_{\mathrm{Ai}}(x,y) = \frac{\mathrm{Ai}(x)\mathrm{Ai}'(y) - \mathrm{Ai}'(x)\mathrm{Ai}(y)}{x-y}
+= \int_0^\infty \mathrm{Ai}(x+t)\mathrm{Ai}(y+t)\thinspace dt
 $$
 
-로 수렴한다. 첫 표현의 분자는 [Airy 함수](airy-functions.md)의 Wronskian 형태이고, $x \to y$ 극한에서 $\operatorname{Ai}'(x)^2 - x\operatorname{Ai}(x)^2$ 이 되어 특이하지 않다. 두 번째 표현은 이 핵이 양의 준정부호임을 바로 보여 준다.
+로 수렴한다. 첫 표현의 분자는 [Airy 함수](airy-functions.md)의 Wronskian 형태이고, $x \to y$ 극한에서 $\mathrm{Ai}'(x)^2 - x\mathrm{Ai}(x)^2$ 이 되어 특이하지 않다. 두 번째 표현은 이 핵이 양의 준정부호임을 바로 보여 준다.
 
 최대 고윳값이 $s$ 이하일 확률은 구간 $(s,\infty)$ 에 점이 하나도 없을 확률이므로
 
@@ -74,7 +74,7 @@ $$
 F_2(s) = \det\left(I - K_{\mathrm{Ai}}\right)_{L^2(s,\infty)}
 $$
 
-다. Fredholm 행렬식은 핵의 자취들로 만든 급수 $\exp\bigl(-\sum_{k\ge1}\tfrac1k\operatorname{tr}K^k\bigr)$ 로 정의된다.
+다. Fredholm 행렬식은 핵의 자취들로 만든 급수 $\exp\bigl(-\sum_{k\ge1}\tfrac1k\mathrm{tr}K^k\bigr)$ 로 정의된다.
 
 ## Painlevé II 표현
 
@@ -84,7 +84,7 @@ $$
 q''(x) = x\thinspace q(x) + 2q(x)^3
 $$
 
-의 해 가운데 $x \to +\infty$ 에서 $q(x) \sim \operatorname{Ai}(x)$ 인 것을 **Hastings–McLeod 해**라 하며, 이것이 유일하게 존재한다. 그러면
+의 해 가운데 $x \to +\infty$ 에서 $q(x) \sim \mathrm{Ai}(x)$ 인 것을 **Hastings–McLeod 해**라 하며, 이것이 유일하게 존재한다. 그러면
 
 $$
 F_2(s) = \exp\left(-\int_s^{\infty}(x-s)\thinspace q(x)^2\thinspace dx\right)
@@ -120,7 +120,7 @@ $$
 F_2(s) \sim \exp\left(-\frac{\lvert s\rvert^{3}}{12}\right)\ (s\to-\infty)
 $$
 
-오른쪽 꼬리의 $e^{-\frac43 s^{3/2}}$ 는 $\operatorname{Ai}(s)^2$ 의 감쇠이며, 고윳값 하나가 혼자 멀리 나가는 사건이다. 왼쪽 꼬리는 지수가 3 으로, 스펙트럼 전체가 함께 움직이는 큰 편차 사건이라 더 비싸다.
+오른쪽 꼬리의 $e^{-\frac43 s^{3/2}}$ 는 $\mathrm{Ai}(s)^2$ 의 감쇠이며, 고윳값 하나가 혼자 멀리 나가는 사건이다. 왼쪽 꼬리는 지수가 3 으로, 스펙트럼 전체가 함께 움직이는 큰 편차 사건이라 더 비싸다.
 
 ## 보편성
 
@@ -136,7 +136,7 @@ $$
 
 ## Fredholm 행렬식의 수치 계산
 
-[Fredholm 행렬식](fredholm-determinant.md) 문서의 Nyström 구적을 Airy 핵에 적용하면 분포를 정의에서 직접 계산한다. 무한구간 $(s,\infty)$ 은 $x = s + L\tan(\pi u/4)$ 로 옮기고, 필요한 것은 $\operatorname{Ai}$ 와 $\operatorname{Ai}'$ 뿐이라 작은 $\lvert x\rvert$ 에서는 전평면 수렴 급수를 큰 $x$ 에서는 점근급수를 쓴다.
+[Fredholm 행렬식](fredholm-determinant.md) 문서의 Nyström 구적을 Airy 핵에 적용하면 분포를 정의에서 직접 계산한다. 무한구간 $(s,\infty)$ 은 $x = s + L\tan(\pi u/4)$ 로 옮기고, 필요한 것은 $\mathrm{Ai}$ 와 $\mathrm{Ai}'$ 뿐이라 작은 $\lvert x\rvert$ 에서는 전평면 수렴 급수를 큰 $x$ 에서는 점근급수를 쓴다.
 
 ```python
 import math
@@ -189,7 +189,7 @@ def F2(s, n=30, L=10.0):
 
 ```
 
-마디 스무 개로 $F_2$ 가 열두 자리까지 안정된다. 핵이 해석적일 때 Nyström 근사가 지수적으로 수렴하므로, 무한차원 행렬식이 $20 \times 20$ 행렬식 하나로 그 정확도에 도달한다. 같은 구적으로 평균과 분산을 적분하면 위 표의 $-1.7710868074$ 와 $0.8131947928$ 을 열 자리까지 재현한다. 쓰인 재료는 $\operatorname{Ai}$ 의 급수와 Gauss 구적과 LU 분해뿐이다.
+마디 스무 개로 $F_2$ 가 열두 자리까지 안정된다. 핵이 해석적일 때 Nyström 근사가 지수적으로 수렴하므로, 무한차원 행렬식이 $20 \times 20$ 행렬식 하나로 그 정확도에 도달한다. 같은 구적으로 평균과 분산을 적분하면 위 표의 $-1.7710868074$ 와 $0.8131947928$ 을 열 자리까지 재현한다. 쓰인 재료는 $\mathrm{Ai}$ 의 급수와 Gauss 구적과 LU 분해뿐이다.
 
 ## 쓰이는 자리
 

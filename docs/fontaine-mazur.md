@@ -209,12 +209,6 @@ Wiles 의 반안정 타원곡선 모듈러성, Breuil–Conrad–Diamond–Taylo
 
 [모듈러 기호](modular-symbols.md)로 3 단계의 공간을 계산하므로 절차 전체가 컴퓨터에서 돈다. 추측은 이 절차의 완전성, 곧 후보가 없으면 그런 표현도 없음을 보장한다.
 
-## 남은 방향
-
-- **일반 차원**: 자기쌍대 조건 아래 Taylor 등의 potential automorphy 기법이 부분 결과를 준다. 자기쌍대성을 벗어나면 [Langlands 강령](langlands-program.md)의 일반 함자성이 필요해진다.
-- **기하화**: Fargues–Scholze 는 $p$ 진 국소 Langlands 를 $\mathrm{Bun}_G$ 위의 층으로 재구성했다. 이 틀에서 de Rham 조건이 매개변수 공간의 부분대상으로 번역되고 Kisin–Emerton 논법의 국소 부분이 다시 쓰인다.
-- **무게가 $\lbrace 0,0\rbrace$ 인 경우**: 홀수 2 차원 Artin 표현의 모듈러성은 Buzzard–Taylor 이후 진전되었으나, 상이 유한함을 국소 조건에서 끌어내는 부분이 남아 있다.
-
 [^1]: J.-M. Fontaine, B. Mazur, *Geometric Galois representations*, Elliptic Curves, Modular Forms, and Fermat's Last Theorem (1995), 41–78. 본문의 조건 1, 2 와 기하적 표현의 정의가 이 논문의 §1 이다.
 
 [^2]: M. Kisin, *The Fontaine–Mazur conjecture for GL(2)*, J. Amer. Math. Soc. **22** (2009), 641–690. M. Emerton, *Local-global compatibility in the p-adic Langlands programme for GL(2)* (preprint, 2011). 잔여표현 쪽 입력인 Serre 추측은 C. Khare, J.-P. Wintenberger, *Serre's modularity conjecture I, II*, Invent. Math. **178** (2009).

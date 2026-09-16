@@ -116,7 +116,7 @@ $$
 
 ## 볼록성
 
-$\nabla^2 A = \operatorname{Cov}(T)$ 는 공분산행렬이므로 양반정부호다. 따라서 $A$ 는 $\mathcal N$ 위에서 볼록하고([볼록성](convexity.md)), 최소 표현이면 $\operatorname{Cov}(T)$ 가 양정부호라 엄격볼록이다. $\mathcal N$ 자체도 Hölder 부등식으로 볼록집합임을 보인다.
+$\nabla^2 A = \mathrm{Cov}(T)$ 는 공분산행렬이므로 양반정부호다. 따라서 $A$ 는 $\mathcal N$ 위에서 볼록하고([볼록성](convexity.md)), 최소 표현이면 $\mathrm{Cov}(T)$ 가 양정부호라 엄격볼록이다. $\mathcal N$ 자체도 Hölder 부등식으로 볼록집합임을 보인다.
 
 ## 최대가능도 추정과 모멘트 매칭
 
@@ -136,7 +136,7 @@ $$
 
 MLE 는 모형의 이론적 모멘트를 표본 모멘트에 맞춘다. 최소 표현에서는 $\ell$ 이 엄격오목이므로 해가 존재하면 유일하다. 존재는 표본 평균 $S_n/n$ 이 평균모수 공간의 내부에 있을 때 보장되고, 경계에 있으면 MLE 가 발산한다. Bernoulli 표본이 전부 1 인 경우와 로지스틱 회귀에서 데이터가 완전분리되는 경우가 그렇다.
 
-Fisher 정보는 $I(\eta) = \nabla^2 A(\eta) = \operatorname{Cov}(T)$ 이므로 점근분산도 같은 함수의 곡률이다. Newton 방법에서는 Hessian 이 공분산이라 Fisher scoring 과 일치한다. 차원이 커서 $A$ 를 구하지 못하면 [경사하강법](gradient-descent.md) 계열을 쓴다.
+Fisher 정보는 $I(\eta) = \nabla^2 A(\eta) = \mathrm{Cov}(T)$ 이므로 점근분산도 같은 함수의 곡률이다. Newton 방법에서는 Hessian 이 공분산이라 Fisher scoring 과 일치한다. 차원이 커서 $A$ 를 구하지 못하면 [경사하강법](gradient-descent.md) 계열을 쓴다.
 
 ## Legendre 쌍대와 Bregman divergence
 

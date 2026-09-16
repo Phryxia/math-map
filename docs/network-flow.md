@@ -62,7 +62,7 @@ $$
 $s \in S$ 이고 $t \in T = V \setminus S$ 인 분할 $(S, T)$ 를 **$s\text{-}t$ 절단**이라 하고, 그 용량을
 
 $$
-\operatorname{cap}(S, T) \thickspace=\thickspace \sum_{\substack{e = (u,v) \in E \cr u \in S,\ v \in T}} c(e)
+\mathrm{cap}(S, T) \thickspace=\thickspace \sum_{\substack{e = (u,v) \in E \cr u \in S,\ v \in T}} c(e)
 $$
 
 로 정의한다. 역방향 간선은 세지 않는다는 점이 중요하다.
@@ -80,12 +80,12 @@ $G_f$ 에서 $s$ 로부터 $t$ 로 가는 경로를 **증가 경로**(augmenting
 **보조정리.** 임의의 흐름 $f$ 와 임의의 $s\text{-}t$ 절단 $(S, T)$ 에 대해
 
 $$
-|f| \thickspace=\thickspace \sum_{\substack{(u,v) \in E \cr u \in S, v \in T}} f(u,v) \thickspace-\thickspace \sum_{\substack{(u,v) \in E \cr u \in T, v \in S}} f(u,v) \thickspace\le\thickspace \operatorname{cap}(S, T)
+|f| \thickspace=\thickspace \sum_{\substack{(u,v) \in E \cr u \in S, v \in T}} f(u,v) \thickspace-\thickspace \sum_{\substack{(u,v) \in E \cr u \in T, v \in S}} f(u,v) \thickspace\le\thickspace \mathrm{cap}(S, T)
 $$
 
-**증명.** 흐름 보존식을 $S$ 의 모든 정점에 대해 더한다. $s$ 를 제외한 $S$ 의 정점에서는 좌우가 상쇄되어 0이고, $s$ 에서는 $\lvert f \rvert$ 가 남는다. $S$ 내부를 오가는 간선은 한 번은 유입, 한 번은 유출로 두 번 세어져 사라지므로, 결국 $S$ 에서 $T$ 로 나가는 흐름의 합에서 $T$ 에서 $S$ 로 들어오는 흐름의 합을 뺀 값이 $\lvert f \rvert$ 다. 앞항은 $\operatorname{cap}(S, T)$ 이하이고 뒷항은 0 이상이므로 부등식이 성립한다. ∎
+**증명.** 흐름 보존식을 $S$ 의 모든 정점에 대해 더한다. $s$ 를 제외한 $S$ 의 정점에서는 좌우가 상쇄되어 0이고, $s$ 에서는 $\lvert f \rvert$ 가 남는다. $S$ 내부를 오가는 간선은 한 번은 유입, 한 번은 유출로 두 번 세어져 사라지므로, 결국 $S$ 에서 $T$ 로 나가는 흐름의 합에서 $T$ 에서 $S$ 로 들어오는 흐름의 합을 뺀 값이 $\lvert f \rvert$ 다. 앞항은 $\mathrm{cap}(S, T)$ 이하이고 뒷항은 0 이상이므로 부등식이 성립한다. ∎
 
-따름정리로 $\max \lvert f \rvert \le \min \operatorname{cap}(S, T)$ 를 얻는다. 여기까지는 계산이지 정리가 아니다. 어떤 흐름과 어떤 절단에서 등호가 성립하면 둘 다 최적임이 즉시 따라오므로, 등호를 달성하는 쌍을 만드는 것이 문제다.
+따름정리로 $\max \lvert f \rvert \le \min \mathrm{cap}(S, T)$ 를 얻는다. 여기까지는 계산이지 정리가 아니다. 어떤 흐름과 어떤 절단에서 등호가 성립하면 둘 다 최적임이 즉시 따라오므로, 등호를 달성하는 쌍을 만드는 것이 문제다.
 
 ## Ford–Fulkerson과 최대유량 최소절단 정리
 
@@ -96,16 +96,16 @@ $$
 **정리 (최대유량 최소절단).** 최대 흐름의 값과 최소 절단의 용량은 같다.
 
 $$
-\max_{f} |f| \thickspace=\thickspace \min_{(S,T)} \operatorname{cap}(S, T)
+\max_{f} |f| \thickspace=\thickspace \min_{(S,T)} \mathrm{cap}(S, T)
 $$
 
-**증명.** 다음 세 명제가 동치임을 보인다. (1) $f$ 는 최대 흐름이다. (2) $G_f$ 에 증가 경로가 없다. (3) 어떤 절단 $(S, T)$ 에 대해 $\lvert f \rvert = \operatorname{cap}(S, T)$ 가 성립한다.
+**증명.** 다음 세 명제가 동치임을 보인다. (1) $f$ 는 최대 흐름이다. (2) $G_f$ 에 증가 경로가 없다. (3) 어떤 절단 $(S, T)$ 에 대해 $\lvert f \rvert = \mathrm{cap}(S, T)$ 가 성립한다.
 
 (1) ⇒ (2): 증가 경로가 있으면 값을 늘릴 수 있으므로 최대가 아니다.
 
-(2) ⇒ (3): $S$ 를 $G_f$ 에서 $s$ 로부터 도달 가능한 정점 집합으로, $T = V \setminus S$ 로 둔다. 가정에 의해 $t \notin S$ 이므로 이는 $s\text{-}t$ 절단이다. $u \in S$ 이고 $v \in T$ 이고 $(u,v) \in E$ 라면 잔여 용량이 0이어야 하므로 $f(u,v) = c(u,v)$ 다. $u \in T$ 이고 $v \in S$ 이고 $(u,v) \in E$ 라면 역방향 잔여 용량이 0이어야 하므로 $f(u,v) = 0$ 이다. 약 쌍대성 보조정리의 등식에 대입하면 $\lvert f \rvert = \operatorname{cap}(S, T)$ 를 얻는다.
+(2) ⇒ (3): $S$ 를 $G_f$ 에서 $s$ 로부터 도달 가능한 정점 집합으로, $T = V \setminus S$ 로 둔다. 가정에 의해 $t \notin S$ 이므로 이는 $s\text{-}t$ 절단이다. $u \in S$ 이고 $v \in T$ 이고 $(u,v) \in E$ 라면 잔여 용량이 0이어야 하므로 $f(u,v) = c(u,v)$ 다. $u \in T$ 이고 $v \in S$ 이고 $(u,v) \in E$ 라면 역방향 잔여 용량이 0이어야 하므로 $f(u,v) = 0$ 이다. 약 쌍대성 보조정리의 등식에 대입하면 $\lvert f \rvert = \mathrm{cap}(S, T)$ 를 얻는다.
 
-(3) ⇒ (1): 약 쌍대성에 의해 모든 흐름이 $\operatorname{cap}(S, T)$ 이하인데 $f$ 가 그 값을 달성하므로 최대다. ∎
+(3) ⇒ (1): 약 쌍대성에 의해 모든 흐름이 $\mathrm{cap}(S, T)$ 이하인데 $f$ 가 그 값을 달성하므로 최대다. ∎
 
 **정수성 따름정리.** 모든 용량이 정수면, 각 증가 단계가 값을 최소 1 늘리므로 알고리즘은 유한 번에 끝나고 정수 최대 흐름이 나온다. 무리수 용량에서는 수렴하지 않는 예가 존재하므로, 증가 경로 선택 규칙이 필요하다.
 

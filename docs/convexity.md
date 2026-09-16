@@ -47,10 +47,10 @@ $$
 ## 에피그래프
 
 $$
-\operatorname{epi}f=\lbrace(x,s)\in K\times\mathbb{R}: f(x)\le s\rbrace
+\mathrm{epi}f=\lbrace(x,s)\in K\times\mathbb{R}: f(x)\le s\rbrace
 $$
 
-$f$ 가 볼록인 것과 $\operatorname{epi}f$ 가 볼록집합인 것은 동치다. 함수에 대한 명제를 집합에 대한 명제로 옮기면 분리초평면 정리 같은 집합의 도구를 쓸 수 있다.
+$f$ 가 볼록인 것과 $\mathrm{epi}f$ 가 볼록집합인 것은 동치다. 함수에 대한 명제를 집합에 대한 명제로 옮기면 분리초평면 정리 같은 집합의 도구를 쓸 수 있다.
 
 ## 판정 조건
 

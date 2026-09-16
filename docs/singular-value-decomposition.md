@@ -78,11 +78,11 @@ $0$ 이 아닌 특이값의 개수가 계수이고, $v_{r+1},\dots,v_n$ 이 kern
 $k<r$ 인 $k$ 에 대해, 계수가 $k$ 이하인 모든 행렬 중 절단 SVD가 오차를 최소화한다. 이 최적성은 spectral 노름과 Frobenius 노름에서 각각 다음 값으로 달성되며, 더 일반적으로 모든 unitary 불변 노름에서 성립한다[^2].
 
 $$
-\min_{\operatorname{rank}B\le k}\lVert A-B\rVert_2=\lVert A-A_k\rVert_2=\sigma_{k+1}
+\min_{\mathrm{rank}B\le k}\lVert A-B\rVert_2=\lVert A-A_k\rVert_2=\sigma_{k+1}
 $$
 
 $$
-\min_{\operatorname{rank}B\le k}\lVert A-B\rVert_F^2
+\min_{\mathrm{rank}B\le k}\lVert A-B\rVert_F^2
 =\sum_{i=k+1}^{r}\sigma_i^2
 $$
 

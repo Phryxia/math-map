@@ -14,7 +14,7 @@ $$
 I(\lambda)\sim g(x_0)e^{\lambda\varphi(x_0)}\sqrt{\frac{2\pi}{\lambda|\varphi''(x_0)|}}
 $$
 
-정칙함수의 절대값은 내부에서 최대를 갖지 못하므로 피적분함수가 복소수면 최대점이 없다. 대신 $\varphi'(z_0)=0$ 인 **안장점**이 있고, 그 점을 지나는 경로 중 $\operatorname{Im}\varphi$ 가 일정한 것을 골라 [윤곽을 변형](residue-theorem.md)하면 진동이 사라져 실수 Laplace 방법이 적용된다. 이것이 **최대급강하법**이다.
+정칙함수의 절대값은 내부에서 최대를 갖지 못하므로 피적분함수가 복소수면 최대점이 없다. 대신 $\varphi'(z_0)=0$ 인 **안장점**이 있고, 그 점을 지나는 경로 중 $\mathrm{Im}\varphi$ 가 일정한 것을 골라 [윤곽을 변형](residue-theorem.md)하면 진동이 사라져 실수 Laplace 방법이 적용된다. 이것이 **최대급강하법**이다.
 
 [Euler–Maclaurin](euler-maclaurin.md)이 합과 적분의 차이를 다루고 Laplace 방법이 적분 자체의 크기를 다룬다. 둘을 합치면 [생성함수](generating-functions.md)의 계수, [감마 함수](gamma-function.md)의 Stirling 근사, 확률의 대편차가 같은 도구로 처리된다.
 
@@ -36,9 +36,9 @@ $$
 
 ## 안장점
 
-$\varphi$ 가 정칙이면 최대값 원리 때문에 $|e^{\varphi}|$ 가 영역 내부에서 최대가 되지 못한다. $\varphi'(z_0)=0$ 인 점에서 $\operatorname{Re}\varphi$ 는 한 방향으로 올라가고 수직 방향으로 내려가는 말안장 모양이다.
+$\varphi$ 가 정칙이면 최대값 원리 때문에 $|e^{\varphi}|$ 가 영역 내부에서 최대가 되지 못한다. $\varphi'(z_0)=0$ 인 점에서 $\mathrm{Re}\varphi$ 는 한 방향으로 올라가고 수직 방향으로 내려가는 말안장 모양이다.
 
-Cauchy 정리로 경로를 옮길 수 있으므로 안장점을 내려가는 방향으로 지나도록 경로를 잡으면 그 경로 위에서 $\operatorname{Re}\varphi$ 가 최대가 되고, 그 방향으로 $\operatorname{Im}\varphi$ 가 일정해 피적분함수의 진동이 사라진다. 진동하는 적분은 상쇄 때문에 크기를 가늠하기 어려우므로 경로를 골라 상쇄를 없앤다.
+Cauchy 정리로 경로를 옮길 수 있으므로 안장점을 내려가는 방향으로 지나도록 경로를 잡으면 그 경로 위에서 $\mathrm{Re}\varphi$ 가 최대가 되고, 그 방향으로 $\mathrm{Im}\varphi$ 가 일정해 피적분함수의 진동이 사라진다. 진동하는 적분은 상쇄 때문에 크기를 가늠하기 어려우므로 경로를 골라 상쇄를 없앤다.
 
 ## 계수 추출
 

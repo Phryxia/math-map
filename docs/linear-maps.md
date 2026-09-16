@@ -33,7 +33,7 @@ $$
 $V$ 와 $W$ 를 같은 체 위의 벡터 공간, $T : V \to W$ 를 위 조건을 만족하는 함수라 하자.
 
 $$
-\ker T=\lbrace v\in V:T(v)=0_W\rbrace,\qquad \operatorname{im}T=\lbrace T(v):v\in V\rbrace
+\ker T=\lbrace v\in V:T(v)=0_W\rbrace,\qquad \mathrm{im}T=\lbrace T(v):v\in V\rbrace
 $$
 
 핵은 $V$ 의 부분공간, 상은 $W$ 의 부분공간이다. 선형사상은 영벡터를 영벡터로 보내므로 원점을 옮기는 평행이동은 선형사상이 아니다. 평행이동까지 허용한 것이 아핀 사상이다.
@@ -59,7 +59,7 @@ $T$ 가 단사인 것과 $\ker T = \lbrace 0\rbrace$ 인 것은 동치다. 두 �
 $V$ 가 유한차원이면 다음이 성립한다.
 
 $$
-\dim V=\dim\ker T+\dim\operatorname{im}T
+\dim V=\dim\ker T+\dim\mathrm{im}T
 $$
 
 *증명.* 핵의 기저를 $V$ 의 기저로 확장하고, 새로 추가한 벡터들의 상이 상의 기저가 됨을 보인다. 평면의 $(x, y)$ 를 $x + y$ 로 보내면 핵은 직선 $x + y = 0$ , 상은 실수 전체이므로 $2 = 1 + 1$ 이다.

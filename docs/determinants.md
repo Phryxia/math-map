@@ -38,10 +38,10 @@ a_i=a_j\ (i\neq j)\ \Longrightarrow\ \det A=0,
 \qquad \det I_n=1
 $$
 
-이 세 조건을 만족하는 함수는 존재하며 유일하고[^1], 명시적으로 Leibniz 공식으로 주어진다. $S_n$ 은 $n$ 차 대칭군, $\operatorname{sgn}$ 은 순열의 부호(짝순열이면 $1$ , 홀순열이면 $-1$ )다.
+이 세 조건을 만족하는 함수는 존재하며 유일하고[^1], 명시적으로 Leibniz 공식으로 주어진다. $S_n$ 은 $n$ 차 대칭군, $\mathrm{sgn}$ 은 순열의 부호(짝순열이면 $1$ , 홀순열이면 $-1$ )다.
 
 $$
-\det A=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\prod_{i=1}^{n}a_{i\thinspace\sigma(i)}
+\det A=\sum_{\sigma\in S_n}\mathrm{sgn}(\sigma)\prod_{i=1}^{n}a_{i\thinspace\sigma(i)}
 $$
 
 $A$ 에서 $i$ 행과 $j$ 열을 지운 $(n-1)$ 차 행렬을 $A_{ij}$ 라 쓰면(minor), 고정한 행 $i$ 에 대해 여인수 전개(Laplace 전개)가 성립한다[^2].
@@ -56,7 +56,7 @@ $$
 
 ## 유일성과 Leibniz 공식
 
-각 열을 표준기저로 전개하면 다중선형성에 의해 $n^n$ 개의 항이 생기고, 교대성이 인덱스가 중복된 항을 모두 $0$ 으로 만들어 인덱스가 순열인 항만 남는다. 순열을 인접 교환의 합성으로 분해하면 각 항의 부호가 $\operatorname{sgn}(\sigma)$ 가 되어 Leibniz 공식이 나온다. 같은 논증은 조금 더 강한 사실을 준다: 열들에 대한 임의의 교대 다중선형 함수 $D$ 는 $D(I)$ 배의 행렬식과 같다[^1].
+각 열을 표준기저로 전개하면 다중선형성에 의해 $n^n$ 개의 항이 생기고, 교대성이 인덱스가 중복된 항을 모두 $0$ 으로 만들어 인덱스가 순열인 항만 남는다. 순열을 인접 교환의 합성으로 분해하면 각 항의 부호가 $\mathrm{sgn}(\sigma)$ 가 되어 Leibniz 공식이 나온다. 같은 논증은 조금 더 강한 사실을 준다: 열들에 대한 임의의 교대 다중선형 함수 $D$ 는 $D(I)$ 배의 행렬식과 같다[^1].
 
 ## 곱셈성
 
@@ -77,8 +77,8 @@ $$
 행렬식이 $0$ 이 아닌 것, 열들이 선형독립인 것, $A$ 가 가역인 것은 서로 동치다. 열이 종속이면 한 열이 나머지의 선형결합이고 다중선형성과 교대성으로 행렬식이 $0$ 이 된다. 반대 방향은 adjugate가 역행렬을 직접 만들어 준다.
 
 $$
-A^{-1}=\frac{1}{\det A}\operatorname{adj}(A),
-\qquad (\operatorname{adj}A)_{ij}=(-1)^{i+j}\det A_{ji}
+A^{-1}=\frac{1}{\det A}\mathrm{adj}(A),
+\qquad (\mathrm{adj}A)_{ij}=(-1)^{i+j}\det A_{ji}
 $$
 
 같은 공식에서 Cramer 공식이 나온다. $A^{(i)}$ 를 $A$ 의 $i$ 번째 열을 $b$ 로 교체한 행렬이라 하면 $Ax=b$ 의 해는 다음과 같다.
@@ -92,7 +92,7 @@ $$
 실행렬 $A$ 에 대해 단위입방체의 상은 부피가 $\lvert\det A\rvert$ 인 평행육면체이고, 더 일반적으로 Lebesgue [측도](measure.md)는 선형사상 $A$ 아래에서 $\lvert\det A\rvert$ 배로 변한다. $\det A$ 가 양수면 방향을 보존한다. $m\le n$ 인 벡터 $m$ 개가 만드는 $m$ 차원 부피는 Gram 행렬의 행렬식으로 주어지며, 여기서 괄호는 [내적](inner-product-spaces.md)이다.
 
 $$
-\operatorname{vol}_m(a_1,\dots,a_m)=\sqrt{\det G},
+\mathrm{vol}_m(a_1,\dots,a_m)=\sqrt{\det G},
 \qquad G_{ij}=\langle a_i,a_j\rangle
 $$
 

@@ -5,7 +5,7 @@
 $n!$ 은 자연수에서만 정의된다. 이것을 실수와 복소수로 잇는 함수가 감마 함수다.
 
 $$
-\Gamma(s)=\int_0^{\infty}t^{s-1}e^{-t}\thinspace dt\quad(\operatorname{Re}s>0),
+\Gamma(s)=\int_0^{\infty}t^{s-1}e^{-t}\thinspace dt\quad(\mathrm{Re}s>0),
 \qquad
 \Gamma(n+1)=n!
 $$
@@ -74,13 +74,13 @@ flowchart TD
 
 ## 적분과 해석적 연속
 
-$\operatorname{Re}s>0$ 에서 적분이 절대수렴하고 정칙이다. 해석적 연속은 함수방정식을 거꾸로 쓴다.
+$\mathrm{Re}s>0$ 에서 적분이 절대수렴하고 정칙이다. 해석적 연속은 함수방정식을 거꾸로 쓴다.
 
 $$
 \Gamma(s)=\frac{\Gamma(s+n)}{s(s+1)\cdots(s+n-1)}
 $$
 
-우변은 $\operatorname{Re}s>-n$ 에서 정의되므로 $n$ 을 키우면 $\mathbb C$ 전체로 이어진다. 수치계산도 이 식을 쓴다.
+우변은 $\mathrm{Re}s>-n$ 에서 정의되므로 $n$ 을 키우면 $\mathbb C$ 전체로 이어진다. 수치계산도 이 식을 쓴다.
 
 ## Euler 곱과 Weierstrass 곱
 
@@ -107,7 +107,7 @@ $$
 $\Gamma$ 는 $\mathbb C$ 에서 유리형이고 영점이 없다. 극점은 $n\ge0$ 인 정수에 대한 $s=-n$ 의 단순극점뿐이며
 
 $$
-\operatorname*{Res}_{s=-n}\Gamma(s)=\frac{(-1)^{n}}{n!}
+\mathop{\mathrm{Res}}_{s=-n}\Gamma(s)=\frac{(-1)^{n}}{n!}
 $$
 
 영점이 없으므로 $\Gamma$ 로 나누는 조작이 언제나 허용되고, 함수방정식에서 감마 인자를 옮겨 붙이는 계산에 제약이 없다.
@@ -202,7 +202,7 @@ $\Gamma$ 자체는 금방 넘치지만 로그는 넘치지 않으므로 $\log\Ga
 $n$ 차원 단위공의 부피와 감마분포의 정규화 상수가 같은 뿌리에서 나온다.
 
 $$
-\operatorname{vol}(B^{n})=\frac{\pi^{n/2}}{\Gamma\negthinspace\left(\frac n2+1\right)},
+\mathrm{vol}(B^{n})=\frac{\pi^{n/2}}{\Gamma\negthinspace\left(\frac n2+1\right)},
 \qquad
 p(x)=\frac{\lambda^{\alpha}}{\Gamma(\alpha)}x^{\alpha-1}e^{-\lambda x}
 $$

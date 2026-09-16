@@ -63,7 +63,7 @@ graph TD
 각 $\lambda$ 에 대해 Euler 표수를 쓰면
 
 $$
-\chi(G/B,\mathcal L_\lambda)=\sum_i(-1)^i\operatorname{ch}H^i(G/B,\mathcal L_\lambda)=(-1)^{\ell(w)}\operatorname{ch}V_{w\cdot\lambda}^*
+\chi(G/B,\mathcal L_\lambda)=\sum_i(-1)^i\mathrm{ch}H^i(G/B,\mathcal L_\lambda)=(-1)^{\ell(w)}\mathrm{ch}V_{w\cdot\lambda}^*
 $$
 
 이고, 왼쪽은 Atiyah–Bott 고정점 공식이나 등변 Riemann–Roch 로 계산된다. 결과가 Weyl 지표 공식의 우변이다. 교대합 $\sum_w(-1)^{\ell(w)}$ 은 고정점 $wB\in(G/B)^T$ 들의 기여를 모은 것이다.
@@ -75,7 +75,7 @@ $$
 $G$ 를 복소 반단순 대수군, $B\le G$ 를 Borel 부분군(극대 연결 가해 부분군), $T\le B$ 를 극대 원환면이라 하자. 몫 $X=G/B$ 는 매끄러운 사영 대수다양체이고 **깃발다양체**라 한다. 차원은 양근의 개수다.
 
 $$
-\dim_{\mathbb C}G/B=|\Phi^+|=\frac{\dim G-\operatorname{rank}G}{2}
+\dim_{\mathbb C}G/B=|\Phi^+|=\frac{\dim G-\mathrm{rank}G}{2}
 $$
 
 $G=\mathrm{SL}_2$ 면 $G/B=\mathbb P^1$ 이고, $G=\mathrm{SL}_3$ 면 $G/B$ 는 $\mathbb P^2$ 안의 깃발들이 이루는 3 차원 다양체다.

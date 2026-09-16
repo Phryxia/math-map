@@ -87,10 +87,10 @@ $$
 
 ## 표준 예
 
-**열린집합 격자.** [위상공간](topology.md) $X$ 의 열린집합 전체 $O(X)$ 는 포함관계로 complete Heyting algebra 다. $\operatorname{int}$ 를 내부라 하면 연산은 다음과 같다.
+**열린집합 격자.** [위상공간](topology.md) $X$ 의 열린집합 전체 $O(X)$ 는 포함관계로 complete Heyting algebra 다. $\mathrm{int}$ 를 내부라 하면 연산은 다음과 같다.
 
 $$
-U \to V = \operatorname{int}\big((X \setminus U) \cup V\big), \qquad \neg U = \operatorname{int}(X \setminus U)
+U \to V = \mathrm{int}\big((X \setminus U) \cup V\big), \qquad \neg U = \mathrm{int}(X \setminus U)
 $$
 
 **상향닫힌 집합 격자.** 부분순서 집합 $(W, \le)$ 의 상향닫힌 집합 전체 $\mathrm{Up}(W)$ 는 교집합과 합집합으로 complete Heyting algebra 이고 함의는

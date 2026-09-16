@@ -45,7 +45,7 @@ $$
 가 주어졌다고 하자. $F$ 가 $G$ 의 left adjoint라는 것은 전단사족
 
 $$
-\varphi_{c,d} : \operatorname{Hom}_{\mathcal{D}}(Fc, d) \thickspace\xrightarrow{\ \sim\ }\thickspace \operatorname{Hom}_{\mathcal{C}}(c, Gd)
+\varphi_{c,d} : \mathrm{Hom}_{\mathcal{D}}(Fc, d) \thickspace\xrightarrow{\ \sim\ }\thickspace \mathrm{Hom}_{\mathcal{C}}(c, Gd)
 $$
 
 이 존재하고, 이것이 $c$ 와 $d$ 양쪽에 대해 자연스럽다는 뜻이다. 자연성은 임의의 $u:c'\to c$ 와 $v:d\to d'$ 에 대해
@@ -63,7 +63,7 @@ $$
 범주론적으로 정확히 말하면, 두 functor
 
 $$
-\operatorname{Hom}_{\mathcal{D}}(F-, -), \quad \operatorname{Hom}_{\mathcal{C}}(-, G-) \thickspace : \thickspace \mathcal{C}^{\mathrm{op}} \times \mathcal{D} \to \mathbf{Set}
+\mathrm{Hom}_{\mathcal{D}}(F-, -), \quad \mathrm{Hom}_{\mathcal{C}}(-, G-) \thickspace : \thickspace \mathcal{C}^{\mathrm{op}} \times \mathcal{D} \to \mathbf{Set}
 $$
 
 사이의 자연동형을 주는 것이 adjunction이다.
@@ -103,7 +103,7 @@ graph LR
 **정리.** functor $F$ , $G$ 에 대해 다음은 동치다.
 
 1. triangle identity를 만족하는 자연변환 쌍 $(\eta, \varepsilon)$ 이 존재한다.
-2. $c$ 와 $d$ 에 대해 자연스러운 전단사 $\operatorname{Hom}(Fc, d) \cong \operatorname{Hom}(c, Gd)$ 가 존재한다.
+2. $c$ 와 $d$ 에 대해 자연스러운 전단사 $\mathrm{Hom}(Fc, d) \cong \mathrm{Hom}(c, Gd)$ 가 존재한다.
 
 *증명 스케치.* (1) → (2): $f : Fc \to d$ 에 $Gf \circ \eta_c$ 를 대응시키고, $g : c \to Gd$ 에 $\varepsilon_d \circ Fg$ 를 대응시킨다. 한쪽 합성을 계산하면
 
@@ -132,7 +132,7 @@ $$
 Right adjoint는 존재하면 자연동형을 제외하고 유일하다. $G$ , $G'$ 가 모두 $F$ 의 right adjoint이면
 
 $$
-\operatorname{Hom}_{\mathcal{C}}(c, Gd) \cong \operatorname{Hom}_{\mathcal{D}}(Fc, d) \cong \operatorname{Hom}_{\mathcal{C}}(c, G'd)
+\mathrm{Hom}_{\mathcal{C}}(c, Gd) \cong \mathrm{Hom}_{\mathcal{D}}(Fc, d) \cong \mathrm{Hom}_{\mathcal{C}}(c, G'd)
 $$
 
 가 $c$ 에 대해 자연스러우므로 [Yoneda lemma](yoneda-lemma.md)의 따름정리(Yoneda 매장의 충실충만성)에 의해 $Gd \cong G'd$ 이고, 이 동형은 $d$ 에 대해 자연스럽다. Left adjoint도 같은 이유로 유일하다.
@@ -141,7 +141,7 @@ $$
 
 Adjunction은 표현가능성의 언어로 다시 쓸 수 있다.
 
-- $G:\mathcal D\to\mathcal C$ 의 left adjoint가 존재할 필요충분조건은, 각 대상 $c$ 에 대해 functor $\operatorname{Hom}_{\mathcal C}(c,G-):\mathcal D\to\mathbf{Set}$ 가 표현가능한 것이다. 그때 표현 대상이 $Fc$ 다.
+- $G:\mathcal D\to\mathcal C$ 의 left adjoint가 존재할 필요충분조건은, 각 대상 $c$ 에 대해 functor $\mathrm{Hom}_{\mathcal C}(c,G-):\mathcal D\to\mathbf{Set}$ 가 표현가능한 것이다. 그때 표현 대상이 $Fc$ 다.
 - Yoneda lemma는 이 표현 대상이 유일하며 $c$ 에 대한 functor성이 공짜로 따라옴을 보장한다. Adjunction의 자연성 조건이 곧 Yoneda 매장이 충실충만하다는 사실의 응용이다.
 
 달리 말해 adjunction은 "hom-functor를 통해 본 두 범주의 번역 사전" 이고, Yoneda lemma는 그 사전이 대상 자체를 결정한다는 진술이다.
@@ -153,10 +153,10 @@ Adjunction은 표현가능성의 언어로 다시 쓸 수 있다.
 *증명 스케치.* $\mathcal D$ 안의 도형 $d_i$ 가 극한 $\lim d_i$ 를 가진다고 하자. 임의의 $c$ 에 대해
 
 $$
-\operatorname{Hom}_{\mathcal{C}}(c, G(\lim_i d_i)) \cong \operatorname{Hom}_{\mathcal{D}}(Fc, \lim_i d_i) \cong \lim_i \operatorname{Hom}_{\mathcal{D}}(Fc, d_i) \cong \lim_i \operatorname{Hom}_{\mathcal{C}}(c, G d_i)
+\mathrm{Hom}_{\mathcal{C}}(c, G(\lim_i d_i)) \cong \mathrm{Hom}_{\mathcal{D}}(Fc, \lim_i d_i) \cong \lim_i \mathrm{Hom}_{\mathcal{D}}(Fc, d_i) \cong \lim_i \mathrm{Hom}_{\mathcal{C}}(c, G d_i)
 $$
 
-이다. 가운데 등호는 hom-functor가 두 번째 변수에서 극한을 보존한다는 사실이고, 나머지는 adjunction이다. 오른쪽 끝은 $\operatorname{Hom}(c, \lim G d_i)$ 와 같으므로 Yoneda에 의해 $G(\lim d_i) \cong \lim G d_i$ 다. 여극한 쪽은 반대 범주에서 같은 논증을 한다. ∎
+이다. 가운데 등호는 hom-functor가 두 번째 변수에서 극한을 보존한다는 사실이고, 나머지는 adjunction이다. 오른쪽 끝은 $\mathrm{Hom}(c, \lim G d_i)$ 와 같으므로 Yoneda에 의해 $G(\lim d_i) \cong \lim G d_i$ 다. 여극한 쪽은 반대 범주에서 같은 논증을 한다. ∎
 
 이 정리는 실전에서 부정 판정에 특히 강하다. 어떤 구성이 여극한(몫, 직합)을 깨뜨리면 그것은 right adjoint일 수 없다. 예를 들어 [가군](modules.md)에서 텐서곱은 직합을 보존하므로 left adjoint 후보이고, 실제로 Hom의 left adjoint다.
 
@@ -207,7 +207,7 @@ $$
 집합의 범주에서 고정된 $A$ 에 대해
 
 $$
-\operatorname{Hom}(X \times A, Y) \cong \operatorname{Hom}(X, Y^A)
+\mathrm{Hom}(X \times A, Y) \cong \mathrm{Hom}(X, Y^A)
 $$
 
 가 성립한다. 즉 $- \times A \dashv (-)^A$ 다. 이 성질을 가지는 범주를 cartesian closed category라 하고, 이것이 단순 타입 람다 계산의 의미론적 골격이다. 다음 코드가 전단사를 그대로 구현한다.
@@ -238,13 +238,13 @@ Unit $\eta_X : X \to (X \times A)^A$ 는 $x$ 를 $a \mapsto (x, a)$ 로 보내�
 이때
 
 $$
-\operatorname{Hom}_{S}(S \otimes_R M, N) \cong \operatorname{Hom}_{R}(M, f^{*}N)
+\mathrm{Hom}_{S}(S \otimes_R M, N) \cong \mathrm{Hom}_{R}(M, f^{*}N)
 $$
 
 이 성립하여 $S \otimes_R - \dashv f^*$ 다. 여기서 나오는 일반형이 tensor-hom adjunction
 
 $$
-\operatorname{Hom}_{S}(M \otimes_R N, P) \cong \operatorname{Hom}_{R}(M, \operatorname{Hom}_{S}(N, P))
+\mathrm{Hom}_{S}(M \otimes_R N, P) \cong \mathrm{Hom}_{R}(M, \mathrm{Hom}_{S}(N, P))
 $$
 
 이고, 자세한 구성은 [텐서곱](tensor-products.md)에서 다룬다. 이 adjunction에서 곧바로 "텐서곱은 여극한을 보존하므로 우완전" 이라는 결론이 나온다. 반대로 Hom은 극한을 보존하므로 좌완전이다. 환의 [국소화](localization-rings.md) 역시 같은 틀에서 left adjoint로 나타난다.

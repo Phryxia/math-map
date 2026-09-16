@@ -5,7 +5,7 @@
 [정점작용소대수](vertex-operator-algebras.md) $V$ 의 가군 $M$ 에 지표를 붙인다.
 
 $$
-\operatorname{ch}_M(\tau)=\operatorname{tr}_Mq^{L_0-c/24},\qquad q=e^{2\pi i\tau}
+\mathrm{ch}_M(\tau)=\mathrm{tr}_Mq^{L_0-c/24},\qquad q=e^{2\pi i\tau}
 $$
 
 등급 차원의 생성함수일 뿐이고, 정의만 보면 $q$ 의 형식급수 이상도 이하도 아니다. 그런데 알려진 예마다 이것이 모듈러 성질을 가졌다. 격자 VOA 에서 theta 급수를 $\eta$ 로 나눈 꼴이 나오고, Virasoro 최소모형에서 Rocha-Caridi 공식이 나오고, [괴물 달빛](monstrous-moonshine.md)에서는 $j-744$ 가 나온다.
@@ -15,7 +15,7 @@ $$
 > $V$ 가 $C_2$ 여유한이고 유리적이면, 기약가군은 유한개이고 지표들이 상반평면에서 수렴하며, 그 유한차원 span 위에서 $\mathrm{SL}_2(\mathbb Z)$ 가 작용한다.
 
 $$
-\operatorname{ch}_{M_i}\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_j\rho(\gamma)_{ij}\operatorname{ch}_{M_j}(\tau)
+\mathrm{ch}_{M_i}\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_j\rho(\gamma)_{ij}\mathrm{ch}_{M_j}(\tau)
 $$
 
 대수적 대상에서 나온 급수가 모듈러 형식이 되는 이유를 대수 쪽 조건으로 설명한 것이고, 달빛 현상 전체의 기반이 된다.
@@ -26,7 +26,7 @@ $$
 
 ## 지표가 모듈러라는 것이 왜 자명하지 않은가
 
-물리 쪽 그림에서 $\operatorname{ch}_M(\tau)$ 는 복소 원환면 $\mathbb C/(\mathbb Z+\mathbb Z\tau)$ 위의 분배함수다. 원환면은 $\tau$ 와 $-1/\tau$ 를 같은 모양으로 보므로, 분배함수가 $\tau$ 의 모듈러 성질을 가져야 "자연스럽다".
+물리 쪽 그림에서 $\mathrm{ch}_M(\tau)$ 는 복소 원환면 $\mathbb C/(\mathbb Z+\mathbb Z\tau)$ 위의 분배함수다. 원환면은 $\tau$ 와 $-1/\tau$ 를 같은 모양으로 보므로, 분배함수가 $\tau$ 의 모듈러 성질을 가져야 "자연스럽다".
 
 $$
 \tau\ \longmapsto\ -\frac1\tau\quad:\quad\text{원환면의 두 주기를 맞바꾸기}
@@ -38,7 +38,7 @@ $$
 
 ## $C_2$ 여유한이 공급하는 유한성
 
-$C_2(V)=\operatorname{span}\lbrace a_{-2}b:a,b\in V\rbrace$ 로 두고 $\dim V/C_2(V)<\infty$ 를 요구하는 것이 $C_2$ 여유한 조건이다. 첫인상은 기술적이지만 결과가 강력하다.
+$C_2(V)=\mathrm{span}\lbrace a_{-2}b:a,b\in V\rbrace$ 로 두고 $\dim V/C_2(V)<\infty$ 를 요구하는 것이 $C_2$ 여유한 조건이다. 첫인상은 기술적이지만 결과가 강력하다.
 
 이 조건이 있으면 지표가 만족하는 **미분방정식**이 나온다. $V/C_2(V)$ 가 유한차원이라 그 위의 어떤 연산이 유한 단계에서 선형종속을 만들고, 그것이 모듈러 형식 계수를 갖는 선형상미분방정식으로 번역된다.
 
@@ -79,11 +79,11 @@ graph LR
 $V=\bigoplus_nV_n$ 을 등급 VOA 라 하고 동차원소 $a\in V_{\mathrm{wt}\thinspace a}$ 에 대해 두 연산을 정의한다.
 
 $$
-a*b=\operatorname*{Res}_z\left(Y(a,z)b\thinspace\frac{(1+z)^{\mathrm{wt}\thinspace a}}{z}\right),\qquad
-a\circ b=\operatorname*{Res}_z\left(Y(a,z)b\thinspace\frac{(1+z)^{\mathrm{wt}\thinspace a}}{z^2}\right)
+a*b=\mathop{\mathrm{Res}}_z\left(Y(a,z)b\thinspace\frac{(1+z)^{\mathrm{wt}\thinspace a}}{z}\right),\qquad
+a\circ b=\mathop{\mathrm{Res}}_z\left(Y(a,z)b\thinspace\frac{(1+z)^{\mathrm{wt}\thinspace a}}{z^2}\right)
 $$
 
-$O(V)=\operatorname{span}\lbrace a\circ b\rbrace$ 로 두고
+$O(V)=\mathrm{span}\lbrace a\circ b\rbrace$ 로 두고
 
 $$
 A(V)=V/O(V)
@@ -93,7 +93,7 @@ $$
 
 ## 유한성 조건
 
-- **$C_2$ 여유한**: $C_2(V)=\operatorname{span}\lbrace a_{-2}b\rbrace$ 에 대해 $\dim V/C_2(V)<\infty$ 인 것.
+- **$C_2$ 여유한**: $C_2(V)=\mathrm{span}\lbrace a_{-2}b\rbrace$ 에 대해 $\dim V/C_2(V)<\infty$ 인 것.
 - **유리적**: 모든 허용가군이 완전가약.
 
 두 조건은 논리적으로 독립하지만 알려진 예에서는 대개 함께 성립하고, 둘 다 만족하는 VOA 를 **강유리적**이라 부른다. $C_2$ 여유한이면 $A(V)$ 가 유한차원이고 기약가군이 유한개다.
@@ -123,7 +123,7 @@ $A(V)=\mathbb C[x]$ 인 경우 $x=[\omega]$ 이고 그 고유값이 최고무게
 
 수치 확인은 쉽지만 일반 증명은 그렇지 않다. 핵심 단계를 순서대로 보면 각각 다른 어려움이 있다.
 
-1. **원환면 위 1 점 함수 공간의 정의.** $\operatorname{tr}_Mo(a)q^{L_0-c/24}$ 꼴을 $a\in V$ 에 대해 모은 공간을 놓고, 그것이 만족하는 재귀식(Zhu 재귀)을 세운다. Weierstrass $\wp$ 함수와 Eisenstein 급수가 여기서 계수로 들어온다.
+1. **원환면 위 1 점 함수 공간의 정의.** $\mathrm{tr}_Mo(a)q^{L_0-c/24}$ 꼴을 $a\in V$ 에 대해 모은 공간을 놓고, 그것이 만족하는 재귀식(Zhu 재귀)을 세운다. Weierstrass $\wp$ 함수와 Eisenstein 급수가 여기서 계수로 들어온다.
 2. **유한차원성.** $C_2$ 여유한 조건으로 이 공간이 유한차원임을 보인다. 가장 기술적인 부분이고, $V/C_2(V)$ 의 유한 생성원으로 재귀를 끝내는 논증이다.
 3. **$\mathrm{SL}_2(\mathbb Z)$ 작용.** 1 점 함수 공간이 격자 $\mathbb Z+\mathbb Z\tau$ 의 기저 교체에 대해 불변이므로 작용이 생긴다.
 4. **지표가 기저.** 유리성으로 기약가군의 지표들이 이 공간을 채운다.
@@ -137,7 +137,7 @@ $C_2$ 여유한 가정을 빼면 2 가 무너진다. 대수적으로 자연스�
 괴물 달빛에서 가장 먼저 설명되어야 할 것은 "왜 하필 $j$ 인가" 였다. Zhu 정리가 답을 준다. $V^\natural$ 이 홀로모픽이므로 지표가 $\mathrm{SL}_2(\mathbb Z)$ 아래 불변인 무게 0 함수이고, 등급이 $-1$ 에서 시작하므로 첨점에서 단순극을 가지며, $V^\natural_1=0$ 이라 상수항이 0 이다. 이 세 조건을 만족하는 함수가 $j-744$ 하나뿐이다.
 
 $$
-\operatorname{ch}_{V^\natural}(\tau)=J(\tau)=j(\tau)-744=q^{-1}+196884q+\cdots
+\mathrm{ch}_{V^\natural}(\tau)=J(\tau)=j(\tau)-744=q^{-1}+196884q+\cdots
 $$
 
 곧 홀로모픽 $c=24$ VOA 이면 $j$ 가 반드시 나온다. 남은 내용은 그 VOA 위에 괴물군이 작용한다는 쪽으로 옮겨간다.

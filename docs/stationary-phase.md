@@ -15,7 +15,7 @@ $$
 Laplace 방법과 형태는 같되 셋이 다르다.
 
 - 정상점이 없으면 적분이 모든 다항식 차수보다 빨리 작아진다.
-- 각 정상점의 기여에 위상 인자 $e^{i\pi\operatorname{sgn}\varphi''(x_0)/4}$ 가 붙는다. 고차원에서 이것이 Hessian 의 부호수, 곧 Morse 지표가 된다.
+- 각 정상점의 기여에 위상 인자 $e^{i\pi\mathrm{sgn}\varphi''(x_0)/4}$ 가 붙는다. 고차원에서 이것이 Hessian 의 부호수, 곧 Morse 지표가 된다.
 - 정상점이 여럿이면 전부 같은 크기로 기여해 서로 간섭한다.
 
 세 번째가 파동의 간섭, WKB 근사에서 여러 고전 궤도가 더해지는 현상, [Witten 점근 추측](witten-asymptotics.md)에서 여러 평탄 접속이 답에 나타나는 현상의 공통 원인이다.
@@ -58,7 +58,7 @@ $$
 
 $$
 \int_{-\infty}^{\infty}e^{i\lambda\varphi''(x-x_0)^2/2}dx
-=\sqrt{\frac{2\pi}{\lambda|\varphi''|}}\thickspace e^{i\pi\operatorname{sgn}(\varphi'')/4}
+=\sqrt{\frac{2\pi}{\lambda|\varphi''|}}\thickspace e^{i\pi\mathrm{sgn}(\varphi'')/4}
 $$
 
 추가된 $e^{\pm i\pi/4}$ 는 $\int e^{-ax^2}dx=\sqrt{\pi/a}$ 를 $a=-i\lambda\varphi''/2$ 라는 순허수까지 해석적으로 연장할 때 제곱근이 택하는 가지에서 나온다. $a$ 가 양의 실수에서 허축으로 회전하면 $\sqrt{1/a}$ 의 편각이 $\mp\pi/4$ 만큼 돈다.
@@ -83,12 +83,12 @@ flowchart TD
 
 ## 1 차원
 
-> **정리 (정상위상법).** $g\in C_c^\infty(\mathbb R)$ 이고 $\varphi$ 가 $\operatorname{supp}g$ 위에서 매끄럽다고 하자.
+> **정리 (정상위상법).** $g\in C_c^\infty(\mathbb R)$ 이고 $\varphi$ 가 $\mathrm{supp}g$ 위에서 매끄럽다고 하자.
 >
 > 1. $\varphi'\ne0$ 이면 모든 $N$ 에 대해 $I(\lambda)=O(\lambda^{-N})$ 이다.
 > 2. $\varphi$ 가 유일한 정상점 $x_0$ 를 갖고 $\varphi''(x_0)\ne0$ 이면
 > $$
-> I(\lambda)=g(x_0)\thinspace e^{i\lambda\varphi(x_0)}\sqrt{\frac{2\pi}{\lambda|\varphi''(x_0)|}}\thickspace e^{i\pi\operatorname{sgn}\varphi''(x_0)/4}\Big(1+O(\lambda^{-1})\Big)
+> I(\lambda)=g(x_0)\thinspace e^{i\lambda\varphi(x_0)}\sqrt{\frac{2\pi}{\lambda|\varphi''(x_0)|}}\thickspace e^{i\pi\mathrm{sgn}\varphi''(x_0)/4}\Big(1+O(\lambda^{-1})\Big)
 > $$
 >
 > 정상점이 여럿이면 각각의 기여를 더한다.

@@ -9,7 +9,7 @@
 동전을 n 번 던져 앞면 비율을 기록하면 n 이 커질수록 비율이 1/2 근처에 머문다. 표본평균의 분산이 개별 분산을 n 으로 나눈 값이라 분포가 평균 주위로 좁아지기 때문이고, Chebyshev 부등식이 그 좁아짐을 편차 확률의 상한으로 바꾼다.
 
 $$
-\operatorname{Var}\negthinspace\left(\frac{X_1+\cdots+X_n}{n}\right)=\frac{\sigma^2}{n}
+\mathrm{Var}\negthinspace\left(\frac{X_1+\cdots+X_n}{n}\right)=\frac{\sigma^2}{n}
 $$
 
 약한 법칙은 각 n 마다 지금 벗어나 있을 확률을 보고 그것이 0 으로 간다고 말한다. 강한 법칙은 한 번 뽑힌 무한 수열을 끝까지 따라가며 그 수열이 수렴한다고 말한다. 각 n 에서 벗어날 확률이 작아도 무한히 여러 n 에서 한 번씩 벗어나는 일은 일어날 수 있으므로 후자가 강하다.
@@ -79,7 +79,7 @@ $$
 
 $$
 P\big(|\overline X_n-\mu|\ge\varepsilon\big)
-\le\frac{\operatorname{Var}(\overline X_n)}{\varepsilon^2}
+\le\frac{\mathrm{Var}(\overline X_n)}{\varepsilon^2}
 =\frac{\sigma^2}{n\varepsilon^2}\ \xrightarrow[n\to\infty]{}\ 0
 $$
 

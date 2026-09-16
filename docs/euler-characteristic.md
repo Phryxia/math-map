@@ -39,8 +39,8 @@ $$
 오른쪽이 쪼개는 방식에 의존하지 않으므로 이 등식이 왼쪽의 불변성을 준다. 증명은 각 차원에서 rank를 세는 계산이다. $m_n$ 은 $n$ -사슬군의 rank이고 rank는 핵과 상으로 분해되므로
 
 $$
-m_n=\operatorname{rank}\ker\partial_n+\operatorname{rank}\operatorname{im}\partial_n,\qquad
-\beta_n=\operatorname{rank}\ker\partial_n-\operatorname{rank}\operatorname{im}\partial_{n+1}
+m_n=\mathrm{rank}\ker\partial_n+\mathrm{rank}\mathrm{im}\partial_n,\qquad
+\beta_n=\mathrm{rank}\ker\partial_n-\mathrm{rank}\mathrm{im}\partial_{n+1}
 $$
 
 이고, 교대합을 취하면 상의 rank들이 인접 항끼리 상쇄된다.

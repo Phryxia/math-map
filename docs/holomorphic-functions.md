@@ -50,7 +50,7 @@ $U$ 가 단순연결(simply connected)이라는 것은 $U$ 안의 모든 닫힌 
 고립 특이점 $z_0$ 에서 Laurent 급수의 $-1$ 차 계수를 유수(residue)라 하며, 충분히 작은 반지름의 원 적분으로 표현된다.
 
 $$
-\operatorname{Res}_{z=z_0}f=\frac{1}{2\pi i}\oint_{\lvert z-z_0\rvert=\rho}f(z)\thinspace dz
+\mathrm{Res}_{z=z_0}f=\frac{1}{2\pi i}\oint_{\lvert z-z_0\rvert=\rho}f(z)\thinspace dz
 $$
 
 # 성질
@@ -102,7 +102,7 @@ $n$ 차( $n\ge 1$ ) 복소계수 다항식 $p$ 는 복소 영점을 갖는다. �
 - 유수 정리: $f$ 가 닫힌 경로와 그 내부에서 유한히 많은 고립 특이점만 갖고 경로 위에서 정칙이면 적분은 내부 특이점 유수의 합으로 계산된다.
 
 $$
-\oint_{\gamma}f(z)\thinspace dz=2\pi i\sum_{k}\operatorname{Res}_{z=z_k}f
+\oint_{\gamma}f(z)\thinspace dz=2\pi i\sum_{k}\mathrm{Res}_{z=z_k}f
 $$
 
 # 활용
@@ -112,7 +112,7 @@ $$
 유수 정리는 실적분을 대수 계산으로 바꾼다. 반지름 $R$ 의 반원 경로(실축 구간과 상반평면 호)를 쓰면 다음을 얻는다.
 
 $$
-\int_{-\infty}^{\infty}\frac{dx}{1+x^2}=2\pi i\operatorname{Res}_{z=i}\frac{1}{1+z^2}=2\pi i\cdot\frac{1}{2i}=\pi
+\int_{-\infty}^{\infty}\frac{dx}{1+x^2}=2\pi i\mathrm{Res}_{z=i}\frac{1}{1+z^2}=2\pi i\cdot\frac{1}{2i}=\pi
 $$
 
 호 위의 적분은 피적분함수가 $R^{-2}$ 규모, 호의 길이가 $R$ 규모이므로 $0$ 으로 간다. 같은 기법으로 삼각함수를 포함한 적분, Fresnel 적분, 급수 합 공식을 얻는다. 이산판인 [이산 Fourier 변환](fourier.md)과 z-변환도 단위원 위의 유수 계산과 직접 연결된다.

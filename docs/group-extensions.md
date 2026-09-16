@@ -97,7 +97,7 @@ C^n(Q,A)=\lbrace f:Q^n\to A\rbrace,\qquad
 (\delta f)(q_1,\dots,q_{n+1})=q_1\negthinspace\cdot\negthinspace f(q_2,\dots)+\sum(-1)^if(\dots)+(-1)^{n+1}f(\dots)
 $$
 
-로 사슬복합체를 만들고 $H^n(Q,A)=\ker\delta^n/\operatorname{im}\delta^{n-1}$ 로 둔다. 낮은 차수의 뜻이 구체적이다.
+로 사슬복합체를 만들고 $H^n(Q,A)=\ker\delta^n/\mathrm{im}\delta^{n-1}$ 로 둔다. 낮은 차수의 뜻이 구체적이다.
 
 | 차수 | 뜻 |
 |---|---|
@@ -112,7 +112,7 @@ $$
 
 > $Q$ 가군 $A$ 에 대해, $A$ 를 핵으로 갖고 $Q$ 를 몫으로 갖는 확대의 동치류 집합과 $H^2(Q,A)$ 사이에 자연스러운 전단사가 있다. 영원소가 반직접곱에 대응한다.
 
-$A$ 가 비가환이면 $Q$ 가 $A$ 가 아니라 $\operatorname{Out}(A)$ 에 작용하고, 확대의 존재가 $H^3$ 의 장애로 통제된다.
+$A$ 가 비가환이면 $Q$ 가 $A$ 가 아니라 $\mathrm{Out}(A)$ 에 작용하고, 확대의 존재가 $H^3$ 의 장애로 통제된다.
 
 ## Schur–Zassenhaus 정리
 

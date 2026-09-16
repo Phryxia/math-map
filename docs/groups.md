@@ -64,7 +64,7 @@ $a=b$ 로 두면 항등원이, $a=e$ 로 두면 역원이, 그다음 둘을 합�
 두 군 사이의 함수 $\varphi : G \to H$ 가 $\varphi(ab) = \varphi(a)\varphi(b)$ 를 만족하면 준동형이다. 연산을 보존하므로 항등원과 역원도 자동으로 보존한다. 준동형의 핵과 상은 다음과 같다.
 
 $$
-\ker\varphi=\lbrace a\in G\mid\varphi(a)=e_H\rbrace,\qquad \operatorname{im}\varphi=\lbrace\varphi(a)\mid a\in G\rbrace
+\ker\varphi=\lbrace a\in G\mid\varphi(a)=e_H\rbrace,\qquad \mathrm{im}\varphi=\lbrace\varphi(a)\mid a\in G\rbrace
 $$
 
 전단사인 준동형이 동형이고, 동형인 두 군은 이름표만 다른 같은 군이다. "같은 군인가" 를 묻는 일은 [그래프 동형](graph-isomorphism.md)에서 두 그래프가 같은지 묻는 일과 같은 종류의 문제다.
@@ -116,7 +116,7 @@ $$
 준동형 $\varphi : G \to H$ 의 핵은 항상 정규부분군이고, 상은 $H$ 의 부분군이며, 다음 동형이 성립한다.
 
 $$
-G/\ker\varphi\ \cong\ \operatorname{im}\varphi
+G/\ker\varphi\ \cong\ \mathrm{im}\varphi
 $$
 
 "정보를 잃는 사상" 과 "잃은 정보를 뭉갠 몫" 이 같은 것을 본다는 뜻이다. 정규부분군과 준동형의 핵이 정확히 같은 개념이라는 사실도 함께 따라온다. 같은 정리가 [환](rings.md)과 [가군](modules.md)에서 그대로 반복되므로, 이 형태를 한 번 익혀 두면 대수 전체에서 재사용된다.

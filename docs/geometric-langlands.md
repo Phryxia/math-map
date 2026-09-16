@@ -167,13 +167,6 @@ $L$ 함수는 Frobenius 고윳값으로 만든 산술적 양이라 계수를 $\m
 
 아핀 Grassmannian 과 아핀 flag 다양체의 층 이론, 인수분해 대수(factorization algebra), 파생 대수기하의 스택 이론이 이 강령의 필요에서 나왔다. 기하적 Satake 도 그중 하나이고, 지금은 모듈러 표현론과 $p$ 진 군의 표현론에 독립적으로 쓰인다.
 
-## 남은 방향
-
-- **분기 경우.** 곡선의 유한 개 점에 준위 구조를 허용하는 대응. 국소 기하 Langlands 와 얽혀 있다.
-- **표수 $p$ 의 경우.** $\mathbb F_p$ 계수 층에서는 편향층의 성질이 달라 진술 자체가 바뀐다.
-- **양자 변형.** $\hat G$ 를 양자군으로 바꾼 대응. Gaitsgory–Lurie 의 작업이 있다.
-- **$\mathrm{Spec}\thinspace\mathbb Z$ 로의 복귀.** 기하적 도구가 없는 자리에서 무엇이 대응물인지는 열린 문제다.
-
 [^1]: 개설로는 E. Frenkel, *Lectures on the Langlands program and conformal field theory* (2005) 과 D. Gaitsgory, *Progrès récents dans la théorie de Langlands géométrique*, Séminaire Bourbaki (2015). 범주적 진술은 D. Arinkin, D. Gaitsgory, *Singular support of coherent sheaves and the geometric Langlands conjecture*, Selecta Math. (2015). 2024년 증명은 D. Gaitsgory, S. Raskin 외, *Proof of the geometric Langlands conjecture* I–V (2024). 물리 쪽은 A. Kapustin, E. Witten, *Electric-magnetic duality and the geometric Langlands program*, Commun. Number Theory Phys. **1** (2007).
 
 # 연관 문서

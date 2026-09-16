@@ -78,7 +78,7 @@ $\mathfrak S_\theta$ 는 transseries 대수의 대수적 자기동형이고 $\pa
 $\hat f$ 를 $\zeta = \omega$ 까지 해석적으로 연장한 뒤, 도중의 특이점들을 위쪽 $+$ 나 아래쪽 $-$ 로 우회하는 모든 경로를 고려한다. $\omega$ 방향의 특이점이 $\omega_1, \dots, \omega_r$ 로 늘어서 있을 때
 
 $$
-\Delta_\omega \tilde f = \sum_{\epsilon \in \lbrace\pm\rbrace^{r-1}} \frac{p(\epsilon)!\thinspace q(\epsilon)!}{r!}\thickspace\operatorname{sing}_{\omega}\bigl(\text{경로 } \epsilon \text{ 를 따른 연장}\bigr)
+\Delta_\omega \tilde f = \sum_{\epsilon \in \lbrace\pm\rbrace^{r-1}} \frac{p(\epsilon)!\thinspace q(\epsilon)!}{r!}\thickspace\mathrm{sing}_{\omega}\bigl(\text{경로 } \epsilon \text{ 를 따른 연장}\bigr)
 $$
 
 으로 정의한다. $p, q$ 는 $\epsilon$ 안의 $+$ 와 $-$ 의 개수다. 가중평균을 써야 Leibniz 법칙이 성립한다. 특이점이 하나뿐이면 합이 한 항으로 줄어 특이점을 돌 때 생기는 불연속과 일치한다.

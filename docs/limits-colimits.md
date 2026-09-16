@@ -45,7 +45,7 @@ $$
 \lambda_j\circ h=\mu_j
 $$
 
-원뿔들을 대상으로 하고 이 등식을 만족하는 $h$ 를 사상으로 하는 범주에서 극한은 종단대상이다. 쌍대극한은 반대 범주 $C^{\mathrm{op}}$ 에서의 극한이며, 성분으로 쓰면 여원뿔 $D(j) \to \operatorname{colim} D$ 들 가운데 시작대상이다.
+원뿔들을 대상으로 하고 이 등식을 만족하는 $h$ 를 사상으로 하는 범주에서 극한은 종단대상이다. 쌍대극한은 반대 범주 $C^{\mathrm{op}}$ 에서의 극한이며, 성분으로 쓰면 여원뿔 $D(j) \to \mathrm{colim} D$ 들 가운데 시작대상이다.
 
 ## 이름이 붙은 사례
 
@@ -53,7 +53,7 @@ $$
 |---|---|---|
 | 대상 둘, 사상 없음 | 곱 $A \times B$ | 합 $A + B$ |
 | 대상 없음 | 종단대상 $1$ | 시작대상 $0$ |
-| $f, g : a \rightrightarrows b$ | 동등자 $\operatorname{eq}(f,g)$ | 쌍대동등자 $\operatorname{coeq}(f,g)$ |
+| $f, g : a \rightrightarrows b$ | 동등자 $\mathrm{eq}(f,g)$ | 쌍대동등자 $\mathrm{coeq}(f,g)$ |
 | $a \to c \leftarrow b$ 와 $a \leftarrow c \to b$ | 당김 $A \times_C B$ | 밀어냄 $A +_C B$ |
 | 사슬 $a_0 \to a_1 \to \cdots$ | 역극한 | 직접극한 |
 
@@ -82,23 +82,23 @@ graph TD
 $C$ 에 모든 작은 곱과 모든 동등자가 있으면 임의의 작은 도형의 극한이 존재한다.
 
 $$
-\lim D=\operatorname{eq}\Big(\prod_{j}D(j)\ \rightrightarrows\ \prod_{u:j\to j'}D(j')\Big)
+\lim D=\mathrm{eq}\Big(\prod_{j}D(j)\ \rightrightarrows\ \prod_{u:j\to j'}D(j')\Big)
 $$
 
 두 사상은 $u : j \to j'$ 성분에서 각각 $D(u) \circ \pi_j$ 와 $\pi_{j'}$ 다. 두 사상이 일치하는 부분이 원뿔 조건을 만족하는 성분들의 모음이다. 유한 극한만 필요하면 유한 곱과 동등자로 충분하고, 당김과 종단대상만 있어도 같은 결론이 나온다.
 
 ## Hom functor 의 극한 보존
 
-극한의 정의를 $\operatorname{Hom}$ 으로 읽으면 다음 자연동형이 된다.
+극한의 정의를 $\mathrm{Hom}$ 으로 읽으면 다음 자연동형이 된다.
 
 $$
-\operatorname{Hom}_C(c,\lim D)\cong\lim_j\operatorname{Hom}_C(c,D(j))
+\mathrm{Hom}_C(c,\lim D)\cong\lim_j\mathrm{Hom}_C(c,D(j))
 $$
 
 왼쪽은 $c$ 에서 극한으로 가는 사상, 오른쪽은 $c$ 위의 원뿔들의 집합이고, 보편성질이 이 둘의 일대일 대응이다. 집합의 극한은 구체적으로 계산되므로 이 식이 추상적 극한을 집합 수준의 계산으로 내린다. 반변 쪽에서는 화살표가 뒤집혀 쌍대극한을 극한으로 바꾼다.
 
 $$
-\operatorname{Hom}_C(\operatorname{colim}D,c)\cong\lim_j\operatorname{Hom}_C(D(j),c)
+\mathrm{Hom}_C(\mathrm{colim}D,c)\cong\lim_j\mathrm{Hom}_C(D(j),c)
 $$
 
 ## 극한과 쌍대극한의 비대칭

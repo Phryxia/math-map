@@ -42,7 +42,7 @@ $$
 $X$ 위의 전단사 전체가 이루는 대칭군을 $\mathrm{Sym}(X)$ 라 하면 작용은 군 준동형
 
 $$
-\rho: G\to\operatorname{Sym}(X)
+\rho: G\to\mathrm{Sym}(X)
 $$
 
 과 같다. 작용은 군을 변환군으로 표현한 것이고, $\mathrm{Sym}(X)$ 대신 가역행렬군을 쓰면 [군의 표현](group-representations.md)이 된다.
@@ -50,7 +50,7 @@ $$
 ## 궤도와 안정자
 
 $$
-\operatorname{Orb}(x)=\lbrace g\cdot x: g\in G\rbrace,\qquad\operatorname{Stab}(x)=\lbrace g\in G: g\cdot x=x\rbrace
+\mathrm{Orb}(x)=\lbrace g\cdot x: g\in G\rbrace,\qquad\mathrm{Stab}(x)=\lbrace g\in G: g\cdot x=x\rbrace
 $$
 
 궤도가 하나뿐이면 **추이적** 작용, 모든 안정자가 자명하면 **자유** 작용, $\rho$ 가 단사이면 **충실한** 작용이다. $\ker \rho$ 는 모든 점을 고정하는 원소들의 모임이고 정규부분군이다.
@@ -66,7 +66,7 @@ $$
 점을 고정하는 두 변환의 합성과 역변환이 그 점을 고정하므로 $\mathrm{Stab}(x) \le G$ 다. 같은 궤도의 두 점에서 안정자가 켤레로 연결된다.
 
 $$
-\operatorname{Stab}(g\cdot x)=g\operatorname{Stab}(x)g^{-1}
+\mathrm{Stab}(g\cdot x)=g\mathrm{Stab}(x)g^{-1}
 $$
 
 궤도 안에서 안정자의 크기가 같으므로 아래 정리가 대표원 선택에 의존하지 않는다.
@@ -74,8 +74,8 @@ $$
 ## 궤도-안정자 정리
 
 $$
-|\operatorname{Orb}(x)|=[G:\operatorname{Stab}(x)],\qquad
-|G|=|\operatorname{Orb}(x)|\thinspace|\operatorname{Stab}(x)|\ \ (|G|<\infty)
+|\mathrm{Orb}(x)|=[G:\mathrm{Stab}(x)],\qquad
+|G|=|\mathrm{Orb}(x)|\thinspace|\mathrm{Stab}(x)|\ \ (|G|<\infty)
 $$
 
 $g \cdot x = h \cdot x$ 인 것과 $h^{-1}g \in \mathrm{Stab}(x)$ 인 것이 동치이므로 $x$ 를 같은 점으로 보내는 원소들이 안정자의 왼쪽 잉여류를 이루고, 궤도의 점과 잉여류가 일대일 대응한다.
@@ -99,8 +99,8 @@ $$
 궤도의 개수는 고정점 개수의 평균이다.
 
 $$
-|X/G|=\frac1{|G|}\sum_{g\in G}|\operatorname{Fix}(g)|,\qquad
-\operatorname{Fix}(g)=\lbrace x: g\cdot x=x\rbrace
+|X/G|=\frac1{|G|}\sum_{g\in G}|\mathrm{Fix}(g)|,\qquad
+\mathrm{Fix}(g)=\lbrace x: g\cdot x=x\rbrace
 $$
 
 증명은 $\lbrace(g,x) : g \cdot x = x\rbrace$ 를 두 방향으로 세는 것이다. $x$ 로 먼저 세면 $\sum |\mathrm{Stab}(x)|$ 이고 궤도-안정자 정리로 정리된다. 계산에서는 각 대칭이 고정하는 배치의 개수만 세면 된다.

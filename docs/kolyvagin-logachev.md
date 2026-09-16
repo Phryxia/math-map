@@ -4,7 +4,7 @@
 
 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)은 $L$ 함수의 $s=1$ 에서의 소멸 차수가 Mordell–Weil 군의 계수와 같다고 말한다. 이 추측에서 실제로 증명된 것은 **해석 순위가 0 이나 1 인 경우의 한쪽 방향**뿐이고, 그 증명이 Kolyvagin 의 정리다.
 
-> **정리(Kolyvagin).** $E/\mathbb Q$ 가 타원곡선이고 $L(E,1)\ne0$ 이면 $E(\mathbb Q)$ 가 유한하고 $\text{Ш}(E/\mathbb Q)$ 도 유한하다. $L(E,1)=0$ 이고 $L'(E,1)\ne0$ 이면 $\operatorname{rank}E(\mathbb Q)=1$ 이고 Heegner 점이 유한 지표의 부분군을 생성한다.
+> **정리(Kolyvagin).** $E/\mathbb Q$ 가 타원곡선이고 $L(E,1)\ne0$ 이면 $E(\mathbb Q)$ 가 유한하고 $\text{Ш}(E/\mathbb Q)$ 도 유한하다. $L(E,1)=0$ 이고 $L'(E,1)\ne0$ 이면 $\mathrm{rank}E(\mathbb Q)=1$ 이고 Heegner 점이 유한 지표의 부분군을 생성한다.
 
 Kolyvagin–Logachev 는 이것을 모듈러 형식에서 만들어지는 아벨 다양체 $A_f$ 로 확장해, 차원이 1 보다 커도 $L(f,1)\ne0$ 이면 $A_f(\mathbb Q)$ 가 유한함을 보인다. 이 일반화로 모듈러 곡선의 Jacobian 에서 유리점이 유한한 몫을 만들 수 있다.
 
@@ -47,7 +47,7 @@ flowchart TD
 
 ## 겨냥 몫
 
-$X_0(N)$ 의 모듈러 기호 $e=\lbrace 0,\infty\rbrace$ 가 정하는 Hecke 아이디얼 $I_e=\operatorname{Ann}_{\mathbb T}(e)$ 로 몫을 취한 아벨 다양체
+$X_0(N)$ 의 모듈러 기호 $e=\lbrace 0,\infty\rbrace$ 가 정하는 Hecke 아이디얼 $I_e=\mathrm{Ann}_{\mathbb T}(e)$ 로 몫을 취한 아벨 다양체
 
 $$
 J_e=J_0(N)\big/I_eJ_0(N)

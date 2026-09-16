@@ -67,7 +67,7 @@ $$
 w'' = -\frac{x}{2}\thinspace w
 $$
 
-가 되어 $x = -2^{1/3}t$ 치환으로 Airy 방정식이 된다. 따라서 $q(x) = -\frac{d}{dx}\log \operatorname{Ai}\bigl(-2^{-1/3}x\bigr)$ 가 $\mathrm{P}_{\mathrm{II}}$ 의 해다. **Bäcklund 변환**이 $\alpha \mapsto \alpha \pm 1$ 을 실현하므로 $\alpha \in \mathbb Z + \tfrac12$ 전체에 대한 Airy 형 해의 사슬이 만들어진다.
+가 되어 $x = -2^{1/3}t$ 치환으로 Airy 방정식이 된다. 따라서 $q(x) = -\frac{d}{dx}\log \mathrm{Ai}\bigl(-2^{-1/3}x\bigr)$ 가 $\mathrm{P}_{\mathrm{II}}$ 의 해다. **Bäcklund 변환**이 $\alpha \mapsto \alpha \pm 1$ 을 실현하므로 $\alpha \in \mathbb Z + \tfrac12$ 전체에 대한 Airy 형 해의 사슬이 만들어진다.
 
 ## 등모노드로미 변형
 
@@ -92,7 +92,7 @@ $$
 q'' = 2q^3 + xq
 $$
 
-에서 조건 $q(x) \sim \operatorname{Ai}(x)$ $(x \to +\infty)$ 를 붙이면 해가 유일하게 결정된다. 이것이 **Hastings–McLeod 해**다. 큰 $x$ 에서 $q$ 가 작아 $2q^3$ 항을 무시할 수 있으므로 방정식이 Airy 방정식에 가까워진다.
+에서 조건 $q(x) \sim \mathrm{Ai}(x)$ $(x \to +\infty)$ 를 붙이면 해가 유일하게 결정된다. 이것이 **Hastings–McLeod 해**다. 큰 $x$ 에서 $q$ 가 작아 $2q^3$ 항을 무시할 수 있으므로 방정식이 Airy 방정식에 가까워진다.
 
 반대쪽 점근은 다음과 같다.
 
@@ -100,7 +100,7 @@ $$
 q(x) \sim \sqrt{\frac{-x}{2}} \qquad (x \to -\infty)
 $$
 
-한쪽에서 지수적으로 0 에 가까운 해가 다른 쪽에서 대수적으로 자란다. 두 점근을 잇는 연결 공식은 등모노드로미로 증명된다. 조건을 $q \sim k\operatorname{Ai}(x)$ 로 놓으면 $\lvert k\rvert < 1$ 에서 위와 같은 매끄러운 거동, $k = 1$ 에서 임계, $\lvert k \rvert > 1$ 에서 유한한 $x$ 의 극점으로 갈린다. 이 해는 양방향으로 불안정하다.
+한쪽에서 지수적으로 0 에 가까운 해가 다른 쪽에서 대수적으로 자란다. 두 점근을 잇는 연결 공식은 등모노드로미로 증명된다. 조건을 $q \sim k\mathrm{Ai}(x)$ 로 놓으면 $\lvert k\rvert < 1$ 에서 위와 같은 매끄러운 거동, $k = 1$ 에서 임계, $\lvert k \rvert > 1$ 에서 유한한 $x$ 의 극점으로 갈린다. 이 해는 양방향으로 불안정하다.
 
 ## 유리해와 변환군
 

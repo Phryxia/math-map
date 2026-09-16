@@ -39,7 +39,7 @@ $f : X \to T(Y)$ 꼴의 사상을 이으려면 $f$ 를 적용한 뒤 $T(g)$ 를 
 범주 $\mathcal C$ 위의 monad 는 functor $T : \mathcal C \to \mathcal C$ 와 자연변환 $\eta : \mathrm{id}_{\mathcal C} \Rightarrow T$ , $\mu : T \circ T \Rightarrow T$ 로 다음 두 등식을 모든 대상에서 만족하는 것이다.
 
 $$
-\mu\circ T\mu=\mu\circ\mu T,\qquad \mu\circ T\eta=\operatorname{id}_T=\mu\circ\eta T
+\mu\circ T\mu=\mu\circ\mu T,\qquad \mu\circ T\eta=\mathrm{id}_T=\mu\circ\eta T
 $$
 
 $T\mu$ 는 성분이 $T(\mu_X)$ 인 자연변환이고 $\mu T$ 는 성분이 $\mu_{T(X)}$ 인 자연변환이다. 같은 $T^3(X) \to T(X)$ 를 만드는 두 방법이 일치해야 한다.
@@ -57,7 +57,7 @@ graph LR
 $\mu$ 대신 확장 연산 $(-)^*$ 를 쓰는 정의가 있다. 대상마다 $\eta_X : X \to T(X)$ 를 주고 각 사상 $f : X \to T(Y)$ 에 $f^\ast : T(X) \to T(Y)$ 를 대응시키되 다음을 요구한다.
 
 $$
-f^*\circ\eta_X=f,\qquad \eta_X^*=\operatorname{id}_{T(X)},\qquad (g^*\circ f)^*=g^*\circ f^*
+f^*\circ\eta_X=f,\qquad \eta_X^*=\mathrm{id}_{T(X)},\qquad (g^*\circ f)^*=g^*\circ f^*
 $$
 
 $T(f) = (\eta \circ f)^\ast$ 와 $\mu = (\mathrm{id}\_{T(X)})^\ast$ 를 정의하면 앞의 정의가 복원되고, 반대로 $f^* = \mu \circ T(f)$ 로 가면 이쪽이 복원된다. 프로그래밍 언어의 `return` 과 `bind` 가 $\eta$ 와 $(-)^*$ 다.
@@ -67,7 +67,7 @@ $T(f) = (\eta \circ f)^\ast$ 와 $\mu = (\mathrm{id}\_{T(X)})^\ast$ 를 정의�
 Monad $T$ 에 대한 대수는 대상 $A$ 와 사상 $a : T(A) \to A$ 로 다음을 만족한다.
 
 $$
-a\circ\eta_A=\operatorname{id}_A,\qquad a\circ\mu_A=a\circ T(a)
+a\circ\eta_A=\mathrm{id}_A,\qquad a\circ\mu_A=a\circ T(a)
 $$
 
 형식적으로 쌓아 둔 것을 실제로 계산해 내는 방법이 대수이고, 두 조건은 그 계산이 $\eta$ 와 $\mu$ 에 모순되지 않는다는 뜻이다. $T$ 가 자유 monoid monad 인 `List` 이면 $T$ 대수는 monoid 다. 리스트를 하나의 값으로 접는 방법이 결합적 곱과 항등원이기 때문이다. $T$ 대수와 그 사이의 사상들이 이루는 범주가 Eilenberg–Moore 범주 $\mathcal C^T$ 다.

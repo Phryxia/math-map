@@ -8,7 +8,7 @@ $$
 \cdots\to C_2\xrightarrow{\partial_2}C_1\xrightarrow{\partial_1}C_0
 $$
 
-에서 호몰로지는 $\ker\partial/\operatorname{im}\partial$ 만 본다. 복합체가 비순환이면 호몰로지가 전부 0 이지만 경계사상들이 맞물리는 방식은 남아 있다.
+에서 호몰로지는 $\ker\partial/\mathrm{im}\partial$ 만 본다. 복합체가 비순환이면 호몰로지가 전부 0 이지만 경계사상들이 맞물리는 방식은 남아 있다.
 
 Reidemeister 비틀림은 그 정보를 [행렬식](determinants.md)으로 꺼낸다. 비순환 복합체를 조각으로 잘라 각 조각의 기저 변환 행렬의 행렬식을 교대로 곱하면 자른 방법에 의존하지 않는 수 하나가 나온다.
 
@@ -29,7 +29,7 @@ Reidemeister 비틀림은 그 정보를 [행렬식](determinants.md)으로 꺼�
 
 호몰로지가 차원 계산에 해당하고 비틀림이 이 행렬식에 해당한다.
 
-비순환 복합체 $C_*$ 에서는 $\ker\partial_i=\operatorname{im}\partial_{i+1}$ 이므로 각 $C_i$ 가 두 조각으로 쪼개진다. 쪼갠 뒤 기저를 비교해 나온 행렬식들을 교대로 곱한 것이 비틀림이다.
+비순환 복합체 $C_*$ 에서는 $\ker\partial_i=\mathrm{im}\partial_{i+1}$ 이므로 각 $C_i$ 가 두 조각으로 쪼개진다. 쪼갠 뒤 기저를 비교해 나온 행렬식들을 교대로 곱한 것이 비틀림이다.
 
 $$
 \tau(C_*)=\prod_i\big[\det(\cdots)\big]^{(-1)^i}
@@ -71,7 +71,7 @@ $$
 
 ## 비순환 복합체의 비틀림
 
-$C_*$ 를 기저가 주어진 유한 복합체, $H_\ast(C)=0$ 이라 하자. 각 $i$ 에서 $B_i=\operatorname{im}\partial_{i+1}=\ker\partial_i$ 의 기저 $b_i$ 를 고른다. 비순환성에서 $b_i$ 를 $\partial$ 로 들어 올린 것과 $b_{i-1}$ 을 합치면 $C_i$ 의 기저가 되고, 그것을 주어진 기저 $c_i$ 와 비교한 변환행렬의 행렬식을 $[\thinspace\widetilde b_i b_{i-1}/c_i\thinspace]$ 라 쓴다.
+$C_*$ 를 기저가 주어진 유한 복합체, $H_\ast(C)=0$ 이라 하자. 각 $i$ 에서 $B_i=\mathrm{im}\partial_{i+1}=\ker\partial_i$ 의 기저 $b_i$ 를 고른다. 비순환성에서 $b_i$ 를 $\partial$ 로 들어 올린 것과 $b_{i-1}$ 을 합치면 $C_i$ 의 기저가 되고, 그것을 주어진 기저 $c_i$ 와 비교한 변환행렬의 행렬식을 $[\thinspace\widetilde b_i b_{i-1}/c_i\thinspace]$ 라 쓴다.
 
 > **정의.** $\tau(C_*)=\displaystyle\prod_i\big[\widetilde b_ib_{i-1}/c_i\big]^{(-1)^{i+1}}$
 

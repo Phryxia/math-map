@@ -48,10 +48,10 @@ $$
 
 증명은 한 줄이다. $X \ge t \cdot \mathbf 1\lbrace X \ge t\rbrace$ 의 양변에 기댓값을 취하면 된다([확률변수와 기댓값](random-variables.md)의 단조성).
 
-**Chebyshev 부등식.** $\operatorname{Var}(X) < \infty$ 이면
+**Chebyshev 부등식.** $\mathrm{Var}(X) < \infty$ 이면
 
 $$
-P\big(|X - E[X]| \ge t\big) \thickspace\le\thickspace \frac{\operatorname{Var}(X)}{t^2}.
+P\big(|X - E[X]| \ge t\big) \thickspace\le\thickspace \frac{\mathrm{Var}(X)}{t^2}.
 $$
 
 $(X - E[X])^2$ 에 Markov 부등식을 적용한 결과다. 일반적으로 비감소 비음 함수 $\varphi$ 에 대해 $P(X \ge t) \le E[\varphi(X)] / \varphi(t)$ 가 성립하며, $\varphi$ 의 선택이 부등식의 이름을 결정한다.
@@ -122,7 +122,7 @@ $$
 
 $$
 P\big(S_n - E[S_n] \ge t\big) \thickspace\le\thickspace
-\exp\negthinspace\left(-\frac{t^2}{2\big(\sum_i \operatorname{Var}(X_i) + bt/3\big)}\right)
+\exp\negthinspace\left(-\frac{t^2}{2\big(\sum_i \mathrm{Var}(X_i) + bt/3\big)}\right)
 $$
 
 를 쓴다. 작은 편차에서는 분산이 지배해 Gaussian 꼴, 큰 편차에서는 유계 상수 $b$ 가 지배해 지수 꼴이 된다[^1].
@@ -131,7 +131,7 @@ $$
 
 ## 큰 수의 법칙의 정량화
 
-약한 [큰 수의 법칙](law-of-large-numbers.md)은 Chebyshev 부등식 한 줄로 나온다. $\operatorname{Var}(X_i) = \sigma^2$ 이면
+약한 [큰 수의 법칙](law-of-large-numbers.md)은 Chebyshev 부등식 한 줄로 나온다. $\mathrm{Var}(X_i) = \sigma^2$ 이면
 
 $$
 P\big(|\bar{X}_n - \mu| \ge \varepsilon\big) \thickspace\le\thickspace \frac{\sigma^2}{n \varepsilon^2} \thickspace\to\thickspace 0 .

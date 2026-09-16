@@ -103,17 +103,17 @@ Stirling 급수에서는 Borel 변환의 특이점이 $\zeta = 2\pi i k$ 에 있
 고전적 서술에서 작은 항의 계수는 Stokes 선에서 0 에서 1 로 점프한다. Berry 는 최적 절단 부근에서 전환이 매끄러움을 보였다. 적절한 국소 변수 $\sigma$ 에 대해
 
 $$
-S(\sigma) \thickspace\approx\thickspace \tfrac12\thinspace\operatorname{erfc}(-\sigma)
+S(\sigma) \thickspace\approx\thickspace \tfrac12\thinspace\mathrm{erfc}(-\sigma)
 $$
 
 로 변한다. 점프는 급수를 성기게 볼 때 생기는 착시이고, 알맞은 해상도에서는 오차함수 하나의 매끄러운 계단이다.
 
 ## Airy 함수
 
-$\operatorname{Ai}(z)$ 는 안장점이 둘인 가장 간단한 예다. $\lvert \arg z\rvert < \pi/3$ 에서는 감쇠하는 안장점 하나가 지배해
+$\mathrm{Ai}(z)$ 는 안장점이 둘인 가장 간단한 예다. $\lvert \arg z\rvert < \pi/3$ 에서는 감쇠하는 안장점 하나가 지배해
 
 $$
-\operatorname{Ai}(z) \thickspace\sim\thickspace \frac{e^{-\frac23 z^{3/2}}}{2\sqrt{\pi}\thinspace z^{1/4}}\sum_{n\ge0} (-1)^n\frac{c_n}{(\tfrac23 z^{3/2})^{n}}
+\mathrm{Ai}(z) \thickspace\sim\thickspace \frac{e^{-\frac23 z^{3/2}}}{2\sqrt{\pi}\thinspace z^{1/4}}\sum_{n\ge0} (-1)^n\frac{c_n}{(\tfrac23 z^{3/2})^{n}}
 $$
 
 이고, 음의 실축 쪽으로 돌아가면 두 안장점의 기여가 합쳐져 진동한다. 그 사이 $\arg z = \pm 2\pi/3$ 에서 두 번째 지수항이 켜진다. 지수적으로 감쇠하는 해와 진동하는 해가 같은 함수의 두 영역이라는 것이 [WKB 근사](wkb-approximation.md)의 연결 공식이 하는 일이고, Stokes 가 1857 년에 본 현상이다.

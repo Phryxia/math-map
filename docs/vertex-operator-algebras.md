@@ -21,7 +21,7 @@ VOA 는 Virasoro 대수와 affine Kac–Moody 대수의 표현을 담는 틀이�
 결합대수에서 원소 $a$ 는 왼쪽 곱셈 연산자 $L_a$ 하나를 준다. VOA 에서 원소 $a$ 는 **형식 급수**를 준다.
 
 $$
-Y(a,z)=\sum_{n\in\mathbb Z}a_{(n)}z^{-n-1},\qquad a_{(n)}\in\operatorname{End}(V)
+Y(a,z)=\sum_{n\in\mathbb Z}a_{(n)}z^{-n-1},\qquad a_{(n)}\in\mathrm{End}(V)
 $$
 
 $z$ 는 수렴을 신경 쓰지 않는 형식변수다. 대응 $a\mapsto Y(a,z)$ 를 **상태-장 대응**이라 하며, 모든 장에 대응하는 상태가 있고 그 역도 성립한다는 물리의 원리를 공리로 옮긴 것이다.
@@ -51,7 +51,7 @@ $k=0$ 항만 남는 경우가 Lie 대수의 괄호이고 나머지가 고차 보
 $V=\bigoplus_{n}V_n$ 의 등급은 Virasoro 원소의 $L_0$ 고유값이다. 지표를 생성함수로 쓰면 다음과 같다.
 
 $$
-\operatorname{ch}V(\tau)=\operatorname{tr}_Vq^{L_0-c/24}=q^{-c/24}\sum_n(\dim V_n)q^n
+\mathrm{ch}V(\tau)=\mathrm{tr}_Vq^{L_0-c/24}=q^{-c/24}\sum_n(\dim V_n)q^n
 $$
 
 보정 $-c/24$ 는 원기둥 위의 Casimir 에너지에서 나오며, 이 보정이 있어야 지표가 모듈러 성질을 갖는다. [Dedekind eta](theta-functions.md)의 $q^{1/24}$ 와 같은 자리다. $c$ 가 24 의 배수이면 $q^{-c/24}$ 가 정수 거듭제곱이 되어 지표가 $q$ 의 Laurent 급수가 된다. 달빛의 $c=24$ 가 그 경우다.
@@ -63,8 +63,8 @@ $$
 **정점작용소대수**는 네 쌍 $(V,Y,\mathbf 1,\omega)$ 이다.
 
 - $V=\bigoplus_{n\in\mathbb Z}V_n$ 은 각 $V_n$ 이 유한차원이고 아래로 유한한 등급 벡터공간.
-- $Y:V\to\operatorname{End}(V)[[z,z^{-1}]]$ 곧 $Y(a,z)=\sum_n a_{(n)}z^{-n-1}$ 은 절단 조건을 만족한다.
-- $\mathbf 1\in V_0$ 은 **진공**으로 $Y(\mathbf 1,z)=\operatorname{id}$ 이고 $Y(a,z)\mathbf 1\big|_{z=0}=a$ 다.
+- $Y:V\to\mathrm{End}(V)[[z,z^{-1}]]$ 곧 $Y(a,z)=\sum_n a_{(n)}z^{-n-1}$ 은 절단 조건을 만족한다.
+- $\mathbf 1\in V_0$ 은 **진공**으로 $Y(\mathbf 1,z)=\mathrm{id}$ 이고 $Y(a,z)\mathbf 1\big|_{z=0}=a$ 다.
 - $\omega\in V_2$ 는 **Virasoro 원소**로 $Y(\omega,z)=\sum_n L_nz^{-n-2}$ 의 모드가 중심전하 $c$ 의 Virasoro 대수를 이룬다.
 
 $$
@@ -78,10 +78,10 @@ $\omega$ 를 빼면 **정점대수**다. Virasoro 원소가 등급과 모듈러�
 
 ## 가군과 지표
 
-$V$ 가군 $M$ 은 상태-장 대응 $Y_M:V\to\operatorname{End}(M)[[z,z^{-1}]]$ 를 갖고 같은 항등식을 만족하는 공간이다. $L_0$ 의 고유값은 일반적으로 $h+\mathbb Z_{\ge0}$ 꼴이고 $h$ 가 **등각무게**다.
+$V$ 가군 $M$ 은 상태-장 대응 $Y_M:V\to\mathrm{End}(M)[[z,z^{-1}]]$ 를 갖고 같은 항등식을 만족하는 공간이다. $L_0$ 의 고유값은 일반적으로 $h+\mathbb Z_{\ge0}$ 꼴이고 $h$ 가 **등각무게**다.
 
 $$
-\operatorname{ch}M(\tau)=\operatorname{tr}_Mq^{L_0-c/24}=q^{h-c/24}\sum_{n\ge0}(\dim M_{h+n})q^n
+\mathrm{ch}M(\tau)=\mathrm{tr}_Mq^{L_0-c/24}=q^{h-c/24}\sum_{n\ge0}(\dim M_{h+n})q^n
 $$
 
 기약가군이 $V$ 자신 하나뿐이면 **홀로모픽**이라 한다.
@@ -103,7 +103,7 @@ $$
 지표는 [theta 급수](theta-functions.md)를 $\eta$ 의 거듭제곱으로 나눈 것이다.
 
 $$
-\operatorname{ch}V_L(\tau)=\frac{\Theta_L(\tau)}{\eta(\tau)^{n}}
+\mathrm{ch}V_L(\tau)=\frac{\Theta_L(\tau)}{\eta(\tau)^{n}}
 $$
 
 $L$ 이 짝수 유니모듈러면 $V_L$ 이 홀로모픽이고 지표가 모듈러 함수다.
@@ -125,12 +125,12 @@ $\mathfrak h$ 에서 오는 $n$ 차원 Cartan 부분대수와 최소벡터에서
 두 유한성 조건을 건다.
 
 - **유리성**: 모든 가군이 기약가군의 직합으로 완전분해된다.
-- **$C_2$ 여유한**: $C_2(V)=\operatorname{span}\lbrace a_{(-2)}b\rbrace$ 에 대해 $\dim V/C_2(V)<\infty$ 다.
+- **$C_2$ 여유한**: $C_2(V)=\mathrm{span}\lbrace a_{(-2)}b\rbrace$ 에 대해 $\dim V/C_2(V)<\infty$ 다.
 
 Zhu 정리는 이런 $V$ 의 기약가군 $M_1,\dots,M_r$ 의 지표들이 $\mathrm{SL}_2(\mathbb Z)$ 의 작용에 닫혀 있다고 말한다.
 
 $$
-\operatorname{ch}M_i\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_{j}\rho(\gamma)_{ij}\operatorname{ch}M_j(\tau)
+\mathrm{ch}M_i\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_{j}\rho(\gamma)_{ij}\mathrm{ch}M_j(\tau)
 $$
 
 홀로모픽이면 $r=1$ 이므로 지표가 $\mathrm{SL}_2(\mathbb Z)$ 의 1 차원 표현, 곧 스칼라배를 제외하면 모듈러 함수다. $c=24$ 이고 홀로모픽이며 $\dim V_1=0$ 인 VOA 의 지표는 무게 0 의 모듈러 함수라 $j$ 의 다항식이고, 극이 1 위수이며 상수항이 0 이므로 $j-744$ 다.
@@ -151,7 +151,7 @@ Schellekens 는 $c=24$ 인 홀로모픽 VOA 의 무게 1 Lie 대수가 71 개의
 
 # 활용
 
-- **괴물 달빛.** $V^\natural$ 은 Leech 격자 VOA 의 $\mathbb Z/2$ 궤도체이고 $\operatorname{Aut}(V^\natural)=\mathbb M$ 이다. 지표가 $j-744$ 이므로 $\mathbb M$ 의 등급 표현이 된다. Borcherds 의 증명은 $V^\natural$ 에 쌍곡격자 VOA 를 텐서해 무한차원 Lie 대수를 만드는 데서 출발한다.
+- **괴물 달빛.** $V^\natural$ 은 Leech 격자 VOA 의 $\mathbb Z/2$ 궤도체이고 $\mathrm{Aut}(V^\natural)=\mathbb M$ 이다. 지표가 $j-744$ 이므로 $\mathbb M$ 의 등급 표현이 된다. Borcherds 의 증명은 $V^\natural$ 에 쌍곡격자 VOA 를 텐서해 무한차원 Lie 대수를 만드는 데서 출발한다.
 - **등각장론과 위상적 장론.** VOA 는 2 차원 등각장론의 손지기(chiral) 부분을 정의한다. 유리 VOA 의 가군 범주는 모듈러 텐서범주이고, 그것이 3 차원 Chern–Simons 이론과 매듭 불변량을 준다.
 - **W-대수.** Virasoro 대수를 고차 스핀 장으로 확장한 VOA 들이다. Drinfeld–Sokolov 축소로 affine VOA 에서 만들어지고 기하학적 Langlands 의 국소 이론에 쓰인다.
 - **손지기 대수와 인수분해 대수.** Beilinson–Drinfeld 가 VOA 를 대수곡선 위의 층으로 재정식화했다. 좌표에 의존하지 않는 정의라 기하학적 Langlands 로 이어진다.

@@ -8,7 +8,7 @@ $$
 L^2=\underbrace{L^2_{\mathrm{cusp}}}_{\text{첨점}}\ \oplus\ \underbrace{L^2_{\mathrm{res}}}_{\text{잔여}}\ \oplus\ \underbrace{L^2_{\mathrm{cont}}}_{\text{연속}}
 $$
 
-앞의 둘을 합쳐 **이산 스펙트럼**이라 한다. 첨점 부분 안에 무엇이 있는지는 열린 문제이지만 잔여 부분은 Mœglin 과 Waldspurger 가 1989 년에 완전히 분류했다.
+앞의 둘을 합쳐 **이산 스펙트럼**이라 한다. 잔여 부분은 Mœglin 과 Waldspurger 가 1989 년에 완전히 분류했다.
 
 $$
 L^2_{\mathrm{disc}}\bigl(\mathrm{GL}_n\bigr)=\bigoplus_{n=dm}\ \bigoplus_{\sigma\ \text{첨점}(\mathrm{GL}_m)}\mathrm{Speh}(\sigma,d)

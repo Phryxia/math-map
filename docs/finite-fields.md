@@ -95,7 +95,7 @@ $$
 Frobenius 사상 $\varphi$ 는 체 자기동형이다. 표수 $p$ 에서 $(a+b)^p=a^p+b^p$ 이므로 덧셈을 보존하고, 단사인 사상이 유한집합에서 전사이므로 자기동형이다. $\mathbb{F}_p$ 의 원소는 $a^p=a$ 로 고정되므로 $\varphi$ 는 $\mathbb{F}_p$ 를 고정한다. 자기동형군은 $\varphi$ 가 생성하는 위수 $n$ 의 순환군이다[^3].
 
 $$
-\operatorname{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)=\langle\varphi\rangle\cong\mathbb{Z}/n\mathbb{Z}
+\mathrm{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)=\langle\varphi\rangle\cong\mathbb{Z}/n\mathbb{Z}
 $$
 
 즉 유한체의 확대는 모두 Galois 확대이며 [Galois 이론](galois-theory.md)의 대응이 부분군과 약수의 대응으로 구체화된다. 부분군 $\langle\varphi^m\rangle$ 의 고정체가 $\mathbb{F}_{p^m}$ 이다.

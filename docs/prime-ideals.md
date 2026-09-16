@@ -48,7 +48,7 @@ $$
 
 ## 스펙트럼
 
-$R$ 의 소 아이디얼 전체가 $\operatorname{Spec}R$ 이고 극대 아이디얼 전체가 $\mathrm{mSpec}\thinspace R$ 이다. $\operatorname{Spec}R$ 에 Zariski 위상을 주면 위상공간이 되고, 대수기하는 환을 이 공간으로 본다.
+$R$ 의 소 아이디얼 전체가 $\mathrm{Spec}R$ 이고 극대 아이디얼 전체가 $\mathrm{mSpec}\thinspace R$ 이다. $\mathrm{Spec}R$ 에 Zariski 위상을 주면 위상공간이 되고, 대수기하는 환을 이 공간으로 본다.
 
 # 성질
 

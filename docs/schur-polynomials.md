@@ -106,7 +106,7 @@ $$
 이고, 이 내적이 대칭군 표현의 지표 내적과 일치한다. 대칭함수 공간이 모든 대칭군의 표현환을 합친 것과 동형이라는 **Frobenius 대응**이 여기서 나오고, $s_\lambda$ 가 대칭군 기약표현 $S^\lambda$ 에 대응한다.
 
 $$
-\operatorname{ch}:\bigoplus_n R(S_n)\ \xrightarrow{\ \sim\ }\ \Lambda,\qquad [S^\lambda]\mapsto s_\lambda
+\mathrm{ch}:\bigoplus_n R(S_n)\ \xrightarrow{\ \sim\ }\ \Lambda,\qquad [S^\lambda]\mapsto s_\lambda
 $$
 
 $\mathrm{GL}_n$ 의 표현론과 $S_n$ 의 표현론이 같은 대상 위에서 만나는 이 현상이 **Schur–Weyl 쌍대성**의 대칭함수 판본이다.

@@ -53,7 +53,7 @@ flowchart TD
 
 ## 순환 $\mathbb Z_p$ 확대
 
-$\mu_{p^{n}}$ 을 차례로 붙여 만든 $\mathbb Q_\infty=\bigcup\mathbb Q(\mu_{p^{n}})^{+}$ 가 $\mathbb Q$ 의 유일한 $\mathbb Z_p$ 확대다. 일반 수체 $F$ 에 대해 $F_\infty=F\mathbb Q_\infty$ 를 **순환 $\mathbb Z_p$ 확대**라 하고, $\Gamma=\operatorname{Gal}(F_\infty/F)\cong\mathbb Z_p$ 로 둔다.
+$\mu_{p^{n}}$ 을 차례로 붙여 만든 $\mathbb Q_\infty=\bigcup\mathbb Q(\mu_{p^{n}})^{+}$ 가 $\mathbb Q$ 의 유일한 $\mathbb Z_p$ 확대다. 일반 수체 $F$ 에 대해 $F_\infty=F\mathbb Q_\infty$ 를 **순환 $\mathbb Z_p$ 확대**라 하고, $\Gamma=\mathrm{Gal}(F_\infty/F)\cong\mathbb Z_p$ 로 둔다.
 
 ## 불변량
 

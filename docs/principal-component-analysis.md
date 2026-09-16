@@ -47,7 +47,7 @@ $$
 $\Sigma$ 는 대칭이고 양의 준정부호이므로 직교 고유벡터 $u_1, \dots, u_p$ 와 고윳값 $\lambda_1 \ge \cdots \ge \lambda_p \ge 0$ 을 가진다. $k$ 번째 주성분이 $u_k$ 이고 그 방향의 점수는 $u_k^T (X - m)$ 이며 분산은 $\lambda_k$ 다. 단위벡터에 대한 사영 분산은 Rayleigh 몫이다.
 
 $$
-\operatorname{Var}(u^{\mathsf T}X)=u^{\mathsf T}\Sigma u
+\mathrm{Var}(u^{\mathsf T}X)=u^{\mathsf T}\Sigma u
 $$
 
 ## 표본 버전과 SVD
@@ -83,7 +83,7 @@ $$
 직관 절의 피타고라스 등식을 모든 표본에 대해 더하면 두 문제가 같아진다. 행렬 언어로는 [Eckart–Young–Mirsky 정리](singular-value-decomposition.md)가 같은 내용을 저계수 근사의 최적성으로 진술한다. 남은 오차는 버린 고윳값의 합이다.
 
 $$
-\frac{1}{n-1}\min_{\operatorname{rank}B\le k}\lVert Z-B\rVert_F^2=\lambda_{k+1}+\cdots+\lambda_p
+\frac{1}{n-1}\min_{\mathrm{rank}B\le k}\lVert Z-B\rVert_F^2=\lambda_{k+1}+\cdots+\lambda_p
 $$
 
 ## 성분의 무상관성

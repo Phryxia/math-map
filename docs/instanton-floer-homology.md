@@ -27,7 +27,7 @@ $$
 Floer 는 이 절차를 무한차원 공간에 적용했다. 무대는 $\Sigma$ 위 $\mathrm{SU}(2)$ 접속들의 공간을 게이지군으로 나눈 것이고 함수는 Chern–Simons 범함수다.
 
 $$
-\mathrm{CS}(A)=\frac1{8\pi^2}\int_\Sigma\operatorname{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)
+\mathrm{CS}(A)=\frac1{8\pi^2}\int_\Sigma\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)
 $$
 
 $\delta\mathrm{CS}=0$ 이 $F_A=0$ 과 같으므로 임계점이 평탄 접속, 곧 Casson 불변량이 세던 대상이다. $\mathbb R\times\Sigma$ 위에서 기울기 흐름 방정식을 풀어 쓰면 4 차원의 반자기쌍대 방정식 $F^+=0$ 이 되므로 흐름선이 순간자다.
@@ -95,7 +95,7 @@ $\partial^2=0$ 은 $\mu=2$ 인 1 차원 모듈라이의 끝을 세어 나온다.
 
 ## Euler 지표와 Casson 불변량
 
-> **정리 (Taubes 1990).** $\displaystyle\chi\big(HF_*(\Sigma)\big)=\sum_{i\in\mathbb Z/8}(-1)^i\operatorname{rank}HF_i(\Sigma)=2\thinspace\lambda(\Sigma)$
+> **정리 (Taubes 1990).** $\displaystyle\chi\big(HF_*(\Sigma)\big)=\sum_{i\in\mathbb Z/8}(-1)^i\mathrm{rank}HF_i(\Sigma)=2\thinspace\lambda(\Sigma)$
 
 8 이 짝수이므로 $\mathbb Z/8$ 등급에서 $(-1)^i$ 가 잘 정의된다. 우변의 2 는 Casson 불변량의 관례적 정규화에서 온다. 호몰로지를 만들 때 쓴 부호, 방향, 섭동이 Casson 이 세던 부호와 맞아떨어진다.
 

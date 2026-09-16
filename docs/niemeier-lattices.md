@@ -86,13 +86,13 @@ $$
 **질량**은 격자를 개수 대신 자기동형군의 크기로 가중해 센 것이다.
 
 $$
-\operatorname{mass}(n)=\sum_{[L]}\frac1{|\operatorname{Aut}L|}
+\mathrm{mass}(n)=\sum_{[L]}\frac1{|\mathrm{Aut}L|}
 $$
 
 합은 $n$ 차원 짝수 유니모듈러 격자의 동형류 전체에 걸친다. Minkowski–Siegel 질량 공식이 이 값을 Bernoulli 수로 준다.
 
 $$
-\operatorname{mass}(n)=\frac{|B_{n/2}|}{n}\prod_{j=1}^{n/2-1}\frac{|B_{2j}|}{4j}
+\mathrm{mass}(n)=\frac{|B_{n/2}|}{n}\prod_{j=1}^{n/2-1}\frac{|B_{2j}|}{4j}
 $$
 
 우변은 격자를 하나도 모른 채 계산되므로 좌변을 분류 목록으로 계산해 맞추면 목록의 완전성이 확인된다.
@@ -149,7 +149,7 @@ $n=32$ 에서는 질량이 4 천만을 넘는다. 자기동형군이 $\pm1$ 을 
 | 근계 | $h$ | 비고 |
 |---|---|---|
 | (없음) | — | Leech 격자, 최소 노름 4 |
-| $A_1^{24}$ | 2 | glue 가 확장 Golay 부호, $\operatorname{Aut}$ 에 $M_{24}$ |
+| $A_1^{24}$ | 2 | glue 가 확장 Golay 부호, $\mathrm{Aut}$ 에 $M_{24}$ |
 | $A_2^{12}$ | 3 | glue 가 삼진 Golay 부호 |
 | $E_8^3$ | 30 | $E_8\oplus E_8\oplus E_8$ |
 | $D_{16}E_8$ | 30 | $D_{16}^+\oplus E_8$ |

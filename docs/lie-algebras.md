@@ -48,13 +48,13 @@ $$
 [X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0
 $$
 
-$\operatorname{ad}\_X(Y)=[X,Y]$ 로 두면 같은 식이 다음이 된다.
+$\mathrm{ad}\_X(Y)=[X,Y]$ 로 두면 같은 식이 다음이 된다.
 
 $$
-\operatorname{ad}\_X([Y,Z])=[\operatorname{ad}\_XY,Z]+[Y,\operatorname{ad}\_XZ]
+\mathrm{ad}\_X([Y,Z])=[\mathrm{ad}\_XY,Z]+[Y,\mathrm{ad}\_XZ]
 $$
 
-곧 $\operatorname{ad}\_X$ 는 괄호에 대한 도함수다. 대칭의 무한소 작용이 미분이라는 관점에서 Jacobi 항등식은 Leibniz 규칙이다.
+곧 $\mathrm{ad}\_X$ 는 괄호에 대한 도함수다. 대칭의 무한소 작용이 미분이라는 관점에서 Jacobi 항등식은 Leibniz 규칙이다.
 
 ## $\mathfrak{sl}_2$ 의 사다리
 
@@ -95,12 +95,12 @@ $$
 
 ## 딸림표현과 Killing 형식
 
-$\operatorname{ad}:\mathfrak g\to\mathfrak{gl}(\mathfrak g)$ , $\operatorname{ad}\_X(Y)=[X,Y]$ 가 **딸림표현**이다. Jacobi 항등식이 이것이 Lie 대수 준동형임을 보장하며, 핵은 중심 $Z(\mathfrak g)$ 다.
+$\mathrm{ad}:\mathfrak g\to\mathfrak{gl}(\mathfrak g)$ , $\mathrm{ad}\_X(Y)=[X,Y]$ 가 **딸림표현**이다. Jacobi 항등식이 이것이 Lie 대수 준동형임을 보장하며, 핵은 중심 $Z(\mathfrak g)$ 다.
 
 딸림표현에서 만든 대칭 쌍선형형식이 **Killing 형식**이다.
 
 $$
-\kappa(X,Y)=\operatorname{tr}\left(\operatorname{ad}\_X\circ\operatorname{ad}\_Y\right)
+\kappa(X,Y)=\mathrm{tr}\left(\mathrm{ad}\_X\circ\mathrm{ad}\_Y\right)
 $$
 
 구조상수만으로 계산되고 불변성 $\kappa([X,Y],Z)=\kappa(X,[Y,Z])$ 을 만족한다.
@@ -119,7 +119,7 @@ $$
 
 어떤 $k$ 에서 $\mathfrak g^{(k)}=0$ 이면 **가해**, $\mathfrak g^{k}=0$ 이면 **멱영**이다. 멱영이면 가해다. 상삼각행렬이 가해의 표준 예이고, 대각성분이 0 인 엄격 상삼각행렬이 멱영의 예다.
 
-가해 아이디얼 중 최대인 것이 **근기** $\operatorname{rad}\mathfrak g$ 다. $\operatorname{rad}\mathfrak g=0$ 이면 **반단순**이고, 진아이디얼이 $0$ 뿐이며 가환이 아니면 **단순**이다.
+가해 아이디얼 중 최대인 것이 **근기** $\mathrm{rad}\mathfrak g$ 다. $\mathrm{rad}\mathfrak g=0$ 이면 **반단순**이고, 진아이디얼이 $0$ 뿐이며 가환이 아니면 **단순**이다.
 
 # 성질
 
@@ -141,11 +141,11 @@ $$
 \mathfrak g=\mathfrak g_1\oplus\cdots\oplus\mathfrak g_r
 $$
 
-일반 Lie 대수는 Levi 분해 $\mathfrak g=\operatorname{rad}\mathfrak g\rtimes\mathfrak s$ 로 가해 부분과 반단순 부분으로 나뉜다. 가해 쪽의 분류는 알려져 있지 않고, 이론은 반단순 쪽에 집중된다.
+일반 Lie 대수는 Levi 분해 $\mathfrak g=\mathrm{rad}\mathfrak g\rtimes\mathfrak s$ 로 가해 부분과 반단순 부분으로 나뉜다. 가해 쪽의 분류는 알려져 있지 않고, 이론은 반단순 쪽에 집중된다.
 
 ## 근계와 Dynkin 도표
 
-복소 반단순 $\mathfrak g$ 에서 극대 가환 부분대수 $\mathfrak h$ (Cartan 부분대수)를 잡으면 $\operatorname{ad}\mathfrak h$ 가 동시대각화되어 근공간 분해를 준다.
+복소 반단순 $\mathfrak g$ 에서 극대 가환 부분대수 $\mathfrak h$ (Cartan 부분대수)를 잡으면 $\mathrm{ad}\mathfrak h$ 가 동시대각화되어 근공간 분해를 준다.
 
 $$
 \mathfrak g=\mathfrak h\oplus\bigoplus_{\alpha\in\Phi}\mathfrak g_\alpha,\qquad \mathfrak g_\alpha=\lbrace X:[H,X]=\alpha(H)X\ \forall H\in\mathfrak h\rbrace

@@ -177,9 +177,9 @@ Peano 공리 중 셋은 그대로 확인되지만 마지막이 실패한다. 유
 
 [직관주의](intuitionism.md)와 [형식주의와 Hilbert 프로그램](formalism-hilbert-program.md)까지 포함하면 20세기 초 기초론의 세 갈래가 완성된다. 셋 모두 역설의 충격에 대한 대응이었고, 셋 모두 원래 형태로는 성공하지 못했으며, 셋 모두 지금 수학의 일부로 남았다.
 
-## 남은 기술적 성과
+## 기술적 유산
 
-프로그램의 철학적 목표와 별개로 기술적 유산은 크다. 현대의 양화 논리 표기, 관계의 조상을 통한 귀납적 정의, 동치관계로부터 대상을 얻는 추상화 기법이 모두 Frege 에서 나왔다. 추상화 원리의 무모순성을 판정하는 문제는 지금도 활발히 연구되며, 어떤 원리가 안전한지에 대한 부분적 기준들이 알려져 있다. 역설이 프로그램을 무너뜨렸지만 도구는 남아 널리 쓰인다.
+프로그램의 철학적 목표와 별개로 기술적 유산은 크다. 현대의 양화 논리 표기, 관계의 조상을 통한 귀납적 정의, 동치관계로부터 대상을 얻는 추상화 기법이 모두 Frege 에서 나왔다. 추상화 원리의 무모순성을 판정하는 문제는 지금도 활발히 연구되며, 어떤 원리가 안전한지에 대한 부분적 기준들이 알려져 있다.[^2] 역설이 프로그램을 무너뜨렸지만 도구는 남아 널리 쓰인다.
 
 [^1]: Stanford Encyclopedia of Philosophy, "Frege's Theorem and Foundations for Arithmetic", https://plato.stanford.edu/entries/frege-theorem/
 [^2]: Stanford Encyclopedia of Philosophy, "Logicism and Neologicism", https://plato.stanford.edu/entries/logicism/

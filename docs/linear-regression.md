@@ -70,7 +70,7 @@ $$
 X^{\top}X\thinspace\hat\beta \thickspace=\thickspace X^{\top}y
 $$
 
-이고, $\operatorname{rank}(X)=p$ 이면 $X^{\mathsf T}X$ 가 가역이므로
+이고, $\mathrm{rank}(X)=p$ 이면 $X^{\mathsf T}X$ 가 가역이므로
 
 $$
 \hat\beta = (X^{\top}X)^{-1}X^{\top}y, \qquad \hat{y} = X\hat\beta = Hy .
@@ -88,7 +88,7 @@ $$
 H^{\top} = H, \qquad H^{2} = H, \qquad HX = X, \qquad \mathrm{tr}(H) = p .
 $$
 
-대칭이고 멱등이므로 [고윳값](eigenvalues.md)이 0 과 1 뿐이고, 1 의 중복도가 $\operatorname{rank}(X)=p$ 라 대각합이 $p$ 다. 잔차는 $e=(I-H)y$ 이고 $I-H$ 역시 $C(X)$ 의 직교여공간으로 가는 사영행렬이다. 대각원소 $h_{ii}$ 가 관측 $i$ 의 leverage 이고 $0\le h_{ii}\le1$ 이며 합이 $p$ 다. leverage 가 큰 점은 설계공간에서 멀리 떨어져 적합값을 혼자 끌고 간다.
+대칭이고 멱등이므로 [고윳값](eigenvalues.md)이 0 과 1 뿐이고, 1 의 중복도가 $\mathrm{rank}(X)=p$ 라 대각합이 $p$ 다. 잔차는 $e=(I-H)y$ 이고 $I-H$ 역시 $C(X)$ 의 직교여공간으로 가는 사영행렬이다. 대각원소 $h_{ii}$ 가 관측 $i$ 의 leverage 이고 $0\le h_{ii}\le1$ 이며 합이 $p$ 다. leverage 가 큰 점은 설계공간에서 멀리 떨어져 적합값을 혼자 끌고 간다.
 
 ## 잔차제곱합과 분산추정
 

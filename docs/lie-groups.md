@@ -61,10 +61,10 @@ $$
 $\mathrm{SL}_2(\mathbb R)$ 에서 $X$ 는 대각합이 0 이므로 고유값이 $\pm\lambda$ 다. $\lambda$ 가 실수면 $\exp X$ 의 대각합이 $2\cosh\lambda\ge2$ 이고, $\lambda=i\mu$ 가 순허수면 $2\cos\mu\in[-2,2]$ 이며, $X$ 가 멱영이면 $2$ 다. 어느 경우든 다음이 성립한다.
 
 $$
-\operatorname{tr}(\exp X)\ge-2
+\mathrm{tr}(\exp X)\ge-2
 $$
 
-$\operatorname{diag}(-2,-\tfrac12)$ 는 $\mathrm{SL}_2(\mathbb R)$ 의 원소이지만 대각합이 $-\tfrac52<-2$ 라 $\exp$ 의 상 밖에 있다. $\exp$ 의 상이 항등원의 근방을 포함하므로 유한 번 곱하면 모든 원소에 닿는다.
+$\mathrm{diag}(-2,-\tfrac12)$ 는 $\mathrm{SL}_2(\mathbb R)$ 의 원소이지만 대각합이 $-\tfrac52<-2$ 라 $\exp$ 의 상 밖에 있다. $\exp$ 의 상이 항등원의 근방을 포함하므로 유한 번 곱하면 모든 원소에 닿는다.
 
 콤팩트 연결 Lie 군에는 양불변 Riemann 계량이 존재하고 지수사상이 측지선의 지수사상과 일치하므로, Hopf–Rinow 정리에 의해 $\exp$ 가 전사다.
 
@@ -74,7 +74,7 @@ $\operatorname{diag}(-2,-\tfrac12)$ 는 $\mathrm{SL}_2(\mathbb R)$ 의 원소이
 
 **Lie 군**은 매끄러운 [다양체](manifolds.md) $G$ 이면서 군이고, 곱셈 $G\times G\to G$ 와 역원 $G\to G$ 가 매끄러운 것이다.
 
-$\mathfrak g=T_eG$ 의 괄호는 왼쪽불변 벡터장으로 정의한다. $X\in T_eG$ 에 대해 $X^L_g=(dL_g)_eX$ 로 벡터장을 만들면 벡터장의 Lie 괄호가 다시 왼쪽불변이므로 $T_eG$ 위의 괄호가 유도된다. 이것이 $\operatorname{Lie}(G)=\mathfrak g$ 이고, 행렬군에서는 교환자 $XY-YX$ 와 일치한다.
+$\mathfrak g=T_eG$ 의 괄호는 왼쪽불변 벡터장으로 정의한다. $X\in T_eG$ 에 대해 $X^L_g=(dL_g)_eX$ 로 벡터장을 만들면 벡터장의 Lie 괄호가 다시 왼쪽불변이므로 $T_eG$ 위의 괄호가 유도된다. 이것이 $\mathrm{Lie}(G)=\mathfrak g$ 이고, 행렬군에서는 교환자 $XY-YX$ 와 일치한다.
 
 ## 지수사상과 딸림표현
 
@@ -89,13 +89,13 @@ $G\subset\mathrm{GL}\_n$ 이면 행렬 지수함수와 같다.
 **딸림표현**은 켤레 작용의 미분이다.
 
 $$
-\operatorname{Ad}:G\to\mathrm{GL}(\mathfrak g),\quad \operatorname{Ad}(g)X=\left.\frac{d}{dt}\right|_{t=0}g\exp(tX)g^{-1}
+\mathrm{Ad}:G\to\mathrm{GL}(\mathfrak g),\quad \mathrm{Ad}(g)X=\left.\frac{d}{dt}\right|_{t=0}g\exp(tX)g^{-1}
 $$
 
-이것을 다시 미분하면 Lie 대수의 $\operatorname{ad}$ 가 나오고, 둘은 지수사상으로 이어진다.
+이것을 다시 미분하면 Lie 대수의 $\mathrm{ad}$ 가 나오고, 둘은 지수사상으로 이어진다.
 
 $$
-\operatorname{Ad}(\exp X)=e^{\operatorname{ad}\_X}
+\mathrm{Ad}(\exp X)=e^{\mathrm{ad}\_X}
 $$
 
 # 성질
@@ -104,11 +104,11 @@ $$
 
 - **함자성.** Lie 군 준동형 $\varphi:G\to H$ 는 Lie 대수 준동형 $d\varphi:\mathfrak g\to\mathfrak h$ 를 유도하고 $\varphi(\exp X)=\exp(d\varphi\thinspace X)$ 가 성립한다.
 - **단연결에서의 역방향.** $G$ 가 단연결이면 임의의 Lie 대수 준동형 $\psi:\mathfrak g\to\mathfrak h$ 에 대해 $d\varphi=\psi$ 인 군 준동형 $\varphi:G\to H$ 가 유일하게 존재한다.
-- **부분대수 대응.** 부분대수 $\mathfrak h\subset\mathfrak g$ 마다 $\operatorname{Lie}(H)=\mathfrak h$ 인 연결 부분군 $H\subset G$ 가 유일하게 대응한다. $H$ 가 닫힌 부분군일 필요는 없고, 비합리 기울기의 원환면 감기가 반례다.
+- **부분대수 대응.** 부분대수 $\mathfrak h\subset\mathfrak g$ 마다 $\mathrm{Lie}(H)=\mathfrak h$ 인 연결 부분군 $H\subset G$ 가 유일하게 대응한다. $H$ 가 닫힌 부분군일 필요는 없고, 비합리 기울기의 원환면 감기가 반례다.
 - **Lie 세 번째 정리.** 모든 유한차원 실 Lie 대수는 어떤 Lie 군의 Lie 대수다. Ado 정리로 행렬대수에 넣은 뒤 부분대수 대응을 쓴다.
 - **Cartan 닫힌 부분군 정리.** 위상적으로 닫힌 부분군은 자동으로 매끄러운 부분다양체, 곧 Lie 부분군이다.
 
-둘째 항목에서 단연결 Lie 군의 범주와 유한차원 실 Lie 대수의 범주가 $\operatorname{Lie}$ 함자로 동치임이 따른다.
+둘째 항목에서 단연결 Lie 군의 범주와 유한차원 실 Lie 대수의 범주가 $\mathrm{Lie}$ 함자로 동치임이 따른다.
 
 ```mermaid
 graph TD

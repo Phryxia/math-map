@@ -78,7 +78,7 @@ $$
 인 것이다. 동치로, 거의 모든 소수 $\ell$ 에서
 
 $$
-\operatorname{tr}\bar\rho(\mathrm{Frob}_\ell)\equiv a_\ell(f),\qquad
+\mathrm{tr}\bar\rho(\mathrm{Frob}_\ell)\equiv a_\ell(f),\qquad
 \det\bar\rho(\mathrm{Frob}_\ell)\equiv \varepsilon(\ell)\ell^{k-1}\pmod\lambda
 $$
 

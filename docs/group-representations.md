@@ -43,14 +43,14 @@ $$
 f \circ \rho(g) = \sigma(g) \circ f \quad (\forall g \in G)
 $$
 
-를 만족하는 선형사상 $f : V \to W$ 다. 그 전체를 $\operatorname{Hom}_G(V, W)$ 로 쓴다.
+를 만족하는 선형사상 $f : V \to W$ 다. 그 전체를 $\mathrm{Hom}_G(V, W)$ 로 쓴다.
 
 ## 지표
 
 표현 $(\rho, V)$ 의 **지표**는
 
 $$
-\chi_V(g) = \operatorname{tr} \rho(g)
+\chi_V(g) = \mathrm{tr} \rho(g)
 $$
 
 로 정의되는 함수 $\chi_V : G \to \mathbb C$ 다.
@@ -70,7 +70,7 @@ $$
 
 ## Maschke 정리
 
-**정리.** $G$ 가 유한군이고 $\operatorname{char} k$ 가 $\lvert G \rvert$ 를 나누지 않으면, $G$ 의 모든 유한차원 표현은 기약표현의 직합이다.[^2]
+**정리.** $G$ 가 유한군이고 $\mathrm{char} k$ 가 $\lvert G \rvert$ 를 나누지 않으면, $G$ 의 모든 유한차원 표현은 기약표현의 직합이다.[^2]
 
 *증명 스케치.* 부분표현 $W \subseteq V$ 를 잡고 임의의 사영 $\pi : V \to W$ 를 평균 낸다.
 
@@ -80,19 +80,19 @@ $$
 
 $\pi_0$ 은 $W$ 위에서 항등이고 상이 $W$ 이며 모든 $\rho(h)$ 와 교환한다. 따라서 $\ker \pi_0$ 이 부분표현이 되어 $V = W \oplus \ker \pi_0$ 이고, 차원에 대한 귀납으로 완전 분해를 얻는다. ∎
 
-$\operatorname{char} k$ 가 $\lvert G \rvert$ 를 나누는 modular 상황에서는 $1/\lvert G \rvert$ 를 쓸 수 없어 정리가 실패한다. $\mathbb Z/p$ 의 $\mathbb F_p$ 위 2차원 표현 중 분해되지 않는 것이 있다.
+$\mathrm{char} k$ 가 $\lvert G \rvert$ 를 나누는 modular 상황에서는 $1/\lvert G \rvert$ 를 쓸 수 없어 정리가 실패한다. $\mathbb Z/p$ 의 $\mathbb F_p$ 위 2차원 표현 중 분해되지 않는 것이 있다.
 
 ## Schur 보조정리
 
 **보조정리.** $V$ 와 $W$ 가 기약표현이면
 
 $$
-\operatorname{Hom}_G(V, W) = \begin{cases} 0 & (V \not\cong W) \cr \mathbb{C}\cdot \mathrm{id} & (V \cong W) \end{cases}
+\mathrm{Hom}_G(V, W) = \begin{cases} 0 & (V \not\cong W) \cr \mathbb{C}\cdot \mathrm{id} & (V \cong W) \end{cases}
 $$
 
 이다.
 
-*증명 스케치.* $f \neq 0$ 이면 $\ker f$ 와 $\operatorname{im} f$ 가 부분표현이므로 기약성에 의해 $f$ 는 동형이다. $V = W$ 인 경우 $\mathbb C$ 가 대수적으로 닫혀 있어 $f$ 는 고윳값 $\lambda$ 를 가지고, $f - \lambda \cdot \mathrm{id}$ 도 얽힘사상이면서 가역이 아니므로 $0$ 이다. ∎
+*증명 스케치.* $f \neq 0$ 이면 $\ker f$ 와 $\mathrm{im} f$ 가 부분표현이므로 기약성에 의해 $f$ 는 동형이다. $V = W$ 인 경우 $\mathbb C$ 가 대수적으로 닫혀 있어 $f$ 는 고윳값 $\lambda$ 를 가지고, $f - \lambda \cdot \mathrm{id}$ 도 얽힘사상이면서 가역이 아니므로 $0$ 이다. ∎
 
 기약표현 위에서 $G$ 와 교환하는 연산자는 스칼라뿐이고, 아래 직교관계와 물리의 선택 규칙이 여기서 따라온다.
 
@@ -104,13 +104,13 @@ $$
 \langle \chi_i, \chi_j \rangle = \delta_{ij}
 $$
 
-*증명 스케치.* $\operatorname{Hom}(V, W)$ 에 $g \cdot f = \sigma(g) f \rho(g)^{-1}$ 로 표현 구조를 주면 지표는 $\chi_W \overline{\chi_V}$ 이고 불변원소의 공간은 $\operatorname{Hom}_G(V, W)$ 다. 평균 연산자
+*증명 스케치.* $\mathrm{Hom}(V, W)$ 에 $g \cdot f = \sigma(g) f \rho(g)^{-1}$ 로 표현 구조를 주면 지표는 $\chi_W \overline{\chi_V}$ 이고 불변원소의 공간은 $\mathrm{Hom}_G(V, W)$ 다. 평균 연산자
 
 $$
 P = \frac{1}{|G|}\sum_{g} \rho(g)
 $$
 
-는 불변부분공간 위로의 사영이므로 $\operatorname{tr} P$ 가 그 차원과 같다. 두 계산에서 $\langle \chi_W, \chi_V \rangle = \dim \operatorname{Hom}_G(V, W)$ 이고, Schur 보조정리가 우변을 $0$ 또는 $1$ 로 만든다. ∎
+는 불변부분공간 위로의 사영이므로 $\mathrm{tr} P$ 가 그 차원과 같다. 두 계산에서 $\langle \chi_W, \chi_V \rangle = \dim \mathrm{Hom}_G(V, W)$ 이고, Schur 보조정리가 우변을 $0$ 또는 $1$ 로 만든다. ∎
 
 따름정리는 다음과 같다.
 

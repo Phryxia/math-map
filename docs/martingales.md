@@ -67,7 +67,7 @@ $(X_n)$ 이 martingale 이고 $\varphi$ 가 [볼록](convexity.md)함수이며 $
 ## 예
 
 - **랜덤워크.** $\xi_1, \xi_2, \dots$ 가 독립이고 $E[\xi_k] = 0$ 이면 $S_n = \sum_{k \le n} \xi_k$ 는 martingale 이다. $E[\xi_k] \ge 0$ 이면 submartingale 이다. [Random walk와 전기 네트워크](random-walks.md)에서 다루는 단순 대칭 랜덤워크가 여기 속한다.
-- **분산 보정.** 위의 상황에서 $\operatorname{Var}(\xi_k) = \sigma^2$ 이면 $S_n^2 - n\sigma^2$ 이 martingale 이다. 전개하면 교차항이 조건부로 사라진다.
+- **분산 보정.** 위의 상황에서 $\mathrm{Var}(\xi_k) = \sigma^2$ 이면 $S_n^2 - n\sigma^2$ 이 martingale 이다. 전개하면 교차항이 조건부로 사라진다.
 - **곱 martingale.** $\xi_k > 0$ 이 독립이고 $E[\xi_k] = 1$ 이면 $M_n = \prod_{k \le n} \xi_k$ 는 martingale 이다. 우도비(likelihood ratio)가 이 꼴이며, [측도 변환](change-of-measure.md)의 밀도과정이 바로 곱 martingale 이다.
 - **Doob martingale.** 적분 가능한 $Z$ 와 임의의 filtration 에 대해 $X_n = E[Z \mid \mathcal F_n]$ 은 martingale 이다(탑 성질). 정보가 점점 드러나면서 예측이 갱신되는 과정이며, Azuma 부등식의 표준 재료다.
 - **조화함수.** [Markov 연쇄](markov-chains.md)의 전이행렬 $P$ 와 $Ph = h$ 를 만족하는 조화함수 $h$ 에 대해 $h(X_n)$ 은 martingale 이다. 우조화함수면 supermartingale 이다.

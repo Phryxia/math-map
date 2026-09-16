@@ -41,10 +41,10 @@ $$
 내용은 **다른 원소에서도 맞는가**를 물을 때 생긴다. 표현 $V$ 가 진짜로 있다면 항등원뿐 아니라 모든 $g\in\mathbb M$ 에 대해 지표를 취할 수 있다.
 
 $$
-T_g(\tau)=\sum_{n\ge-1}\operatorname{tr}(g\mid V_n)\thinspace q^{n}
+T_g(\tau)=\sum_{n\ge-1}\mathrm{tr}(g\mid V_n)\thinspace q^{n}
 $$
 
-$g=e$ 이면 $\operatorname{tr}(e\mid V_n)=\dim V_n$ 이라 $T_e=j-744$ 다. $g\ne e$ 이면 지표값은 차원보다 훨씬 작은 수들이고, 아무 이유 없이 좋은 함수가 될 까닭이 없다. 그런데 Conway 와 Norton 이 추측한 것은 이것이다.
+$g=e$ 이면 $\mathrm{tr}(e\mid V_n)=\dim V_n$ 이라 $T_e=j-744$ 다. $g\ne e$ 이면 지표값은 차원보다 훨씬 작은 수들이고, 아무 이유 없이 좋은 함수가 될 까닭이 없다. 그런데 Conway 와 Norton 이 추측한 것은 이것이다.
 
 > 모든 $g\in\mathbb M$ 에 대해 $T_g$ 는 어떤 이산부분군 $\Gamma_g<\mathrm{SL}_2(\mathbb R)$ 의 **hauptmodul** 이다.
 
@@ -89,7 +89,7 @@ $$
 $\mathbb M$ 등급 가군 $V=\bigoplus_{n\ge-1}V_n$ 이 주어졌을 때 각 $g\in\mathbb M$ 에 대해
 
 $$
-T_g(\tau)=\sum_{n\ge-1}\operatorname{tr}\negthinspace\left(g\mid V_n\right)q^n,\qquad q=e^{2\pi i\tau}
+T_g(\tau)=\sum_{n\ge-1}\mathrm{tr}\negthinspace\left(g\mid V_n\right)q^n,\qquad q=e^{2\pi i\tau}
 $$
 
 를 $g$ 의 **McKay–Thompson 급수**라 한다. 지표는 켤레류의 함수이므로 $T_g$ 는 켤레류에만 의존하고, 194 개의 켤레류에서 실제로 서로 다른 급수는 171 개다.
@@ -99,7 +99,7 @@ $$
 **정점작용소대수**(VOA)는 등각장론의 대칭을 공리화한 대수 구조다. 등급 벡터공간 $V=\bigoplus_n V_n$ 과 각 상태 $a\in V$ 에 형식적 급수
 
 $$
-Y(a,z)=\sum_{n\in\mathbb Z}a_{(n)}z^{-n-1},\qquad a_{(n)}\in\operatorname{End}(V)
+Y(a,z)=\sum_{n\in\mathbb Z}a_{(n)}z^{-n-1},\qquad a_{(n)}\in\mathrm{End}(V)
 $$
 
 를 대응시키는 사상, 진공 $\mathbf 1$ 과 Virasoro 원소 $\omega$ 가 주어지고 국소성 공리를 만족한다. $\omega$ 의 모드가 중심전하 $c$ 의 Virasoro 대수를 이루며 $L_0$ 의 고유값이 등급을 준다.
@@ -107,7 +107,7 @@ $$
 **moonshine 가군** $V^\natural$ 은 Frenkel–Lepowsky–Meurman 이 구성한 중심전하 $24$ 의 VOA로, 다음을 만족한다.
 
 $$
-\operatorname{Aut}(V^\natural)\cong\mathbb M,\qquad \sum_{n\ge-1}(\dim V^\natural_n)\thinspace q^n=j(\tau)-744
+\mathrm{Aut}(V^\natural)\cong\mathbb M,\qquad \sum_{n\ge-1}(\dim V^\natural_n)\thinspace q^n=j(\tau)-744
 $$
 
 구성은 두 단계다. Leech 격자 $\Lambda$ 에서 격자 VOA $V_\Lambda$ 를 만들고, $\Lambda$ 의 $-1$ 자기동형이 유도하는 $\mathbb Z/2$ 작용의 **궤도체**(orbifold)를 취한다. 고정부분공간 $V_\Lambda^+$ 에 뒤틀린 부분 $V_\Lambda^{T,+}$ 를 더한 것이 $V^\natural$ 이다.

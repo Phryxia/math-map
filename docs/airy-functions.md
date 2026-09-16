@@ -8,7 +8,7 @@ $$
 
 는 계수가 가장 단순하게 부호를 바꾸는 2계 [상미분방정식](ordinary-differential-equations.md)이다. $z > 0$ 에서는 해가 지수적으로 감쇠하거나 증가하고, $z < 0$ 에서는 진동한다. 부호가 바뀌는 자리 $z = 0$ 이 **회전점**이고, 이 방정식은 회전점 하나를 가진 문제의 **표준형**이다. 계수가 단순 영점을 가지는 임의의 방정식은 회전점 근방에서 좌표를 다시 잡으면 이 방정식이 된다.
 
-해 $\operatorname{Ai}$ 와 $\operatorname{Bi}$ 를 **Airy 함수**라 한다. 이들이 특별한 이유는 두 가지다. 첫째, 적분 표현의 안장점이 정확히 두 개이고 $z = 0$ 에서 그 둘이 합류한다. 둘째, 그 배치가 [Stokes 현상](stokes-phenomenon.md)이 일어날 수 있는 가장 작은 무대다. 지수적으로 작은 항이 켜지고 꺼지는 전 과정을 초등적인 식 하나로 끝까지 따라갈 수 있고, 그래서 [WKB 근사](wkb-approximation.md)의 연결 공식이 이 함수의 점근에서 그대로 읽힌다. 연결 공식에 나타나는 $\pi/4$ 는 $\operatorname{Ai}(-x)$ 의 진동 점근에 들어 있는 상수가 옮겨 간 것이다.
+해 $\mathrm{Ai}$ 와 $\mathrm{Bi}$ 를 **Airy 함수**라 한다. 이들이 특별한 이유는 두 가지다. 첫째, 적분 표현의 안장점이 정확히 두 개이고 $z = 0$ 에서 그 둘이 합류한다. 둘째, 그 배치가 [Stokes 현상](stokes-phenomenon.md)이 일어날 수 있는 가장 작은 무대다. 지수적으로 작은 항이 켜지고 꺼지는 전 과정을 초등적인 식 하나로 끝까지 따라갈 수 있고, 그래서 [WKB 근사](wkb-approximation.md)의 연결 공식이 이 함수의 점근에서 그대로 읽힌다. 연결 공식에 나타나는 $\pi/4$ 는 $\mathrm{Ai}(-x)$ 의 진동 점근에 들어 있는 상수가 옮겨 간 것이다.
 
 # 직관
 
@@ -16,11 +16,11 @@ $$
 
 $y'' = z y$ 에서 해가 $e^{S(z)}$ 꼴이라면 $(S')^2 \approx z$ 이므로 $S \approx \pm\tfrac23 z^{3/2}$ 다. 계수가 상수인 방정식이면 지수가 $z$ 에 선형이겠지만, 계수 자체가 자라므로 지수도 $z$ 보다 빠르게 자란다. 이 $3/2$ 승이 Airy 함수의 모든 공식을 지배한다. 감쇠율, 진동 위상, 영점의 간격, Stokes 선의 각도가 전부 $z^{3/2}$ 하나에서 나온다.
 
-각도를 보면 분명하다. $z^{3/2}$ 는 $z$ 평면을 세 바퀴가 아니라 $3/2$ 바퀴로 감으므로, 복소평면이 $2\pi/3$ 씩 세 부채꼴로 나뉜다. 세 부채꼴 각각에서 지수적으로 감쇠하는 해가 하나씩 있고, 그것이 $\operatorname{Ai}(z)$ 와 $\operatorname{Ai}(\omega z)$ 와 $\operatorname{Ai}(\omega^2 z)$ 다. 2차원 해공간에 감쇠해가 세 개 있으니 이들은 선형종속이어야 하고, 그 관계식이 곧 Airy 함수의 연결 공식이 된다.
+각도를 보면 분명하다. $z^{3/2}$ 는 $z$ 평면을 세 바퀴가 아니라 $3/2$ 바퀴로 감으므로, 복소평면이 $2\pi/3$ 씩 세 부채꼴로 나뉜다. 세 부채꼴 각각에서 지수적으로 감쇠하는 해가 하나씩 있고, 그것이 $\mathrm{Ai}(z)$ 와 $\mathrm{Ai}(\omega z)$ 와 $\mathrm{Ai}(\omega^2 z)$ 다. 2차원 해공간에 감쇠해가 세 개 있으니 이들은 선형종속이어야 하고, 그 관계식이 곧 Airy 함수의 연결 공식이 된다.
 
 ## 두 안장점의 합류
 
-$\operatorname{Ai}$ 의 적분 표현에서 지수는 $t^3/3 - zt$ 이고 안장점은 $t = \pm\sqrt{z}$ 두 개다. 두 안장점에서 지수의 값은 $\mp\tfrac23 z^{3/2}$ 이므로, 둘의 차이가 [Laplace 방법](laplace-method.md)에서 말하는 작용 차이
+$\mathrm{Ai}$ 의 적분 표현에서 지수는 $t^3/3 - zt$ 이고 안장점은 $t = \pm\sqrt{z}$ 두 개다. 두 안장점에서 지수의 값은 $\mp\tfrac23 z^{3/2}$ 이므로, 둘의 차이가 [Laplace 방법](laplace-method.md)에서 말하는 작용 차이
 
 $$
 A = \tfrac43 z^{3/2}
@@ -46,16 +46,16 @@ graph TD
 Airy 방정식 $y'' = zy$ 는 복소평면 전체에서 정칙인 계수를 가지므로 모든 해가 **정함수**다. 특이점은 무한대에만 있고, 그것이 비정칙 특이점이라 해의 점근이 방향에 의존한다. 표준 기저를 초기값으로 고정한다.
 
 $$
-\operatorname{Ai}(0) = \frac{3^{-2/3}}{\Gamma(2/3)}, \quad
-\operatorname{Ai}'(0) = -\frac{3^{-1/3}}{\Gamma(1/3)}, \quad
-\operatorname{Bi}(0) = \frac{3^{-1/6}}{\Gamma(2/3)}, \quad
-\operatorname{Bi}'(0) = \frac{3^{1/6}}{\Gamma(1/3)}
+\mathrm{Ai}(0) = \frac{3^{-2/3}}{\Gamma(2/3)}, \quad
+\mathrm{Ai}'(0) = -\frac{3^{-1/3}}{\Gamma(1/3)}, \quad
+\mathrm{Bi}(0) = \frac{3^{-1/6}}{\Gamma(2/3)}, \quad
+\mathrm{Bi}'(0) = \frac{3^{1/6}}{\Gamma(1/3)}
 $$
 
-여기서 $\Gamma$ 는 [감마 함수](gamma-function.md)다. 수치로는 $\operatorname{Ai}(0) = 0.355028\ldots$ 이고 $\operatorname{Ai}'(0) = -0.258819\ldots$ 다. Taylor 급수는 $y'' = zy$ 를 계수별로 풀면 바로 나온다. $f(z) = \sum_k \frac{z^{3k}}{(3k)!}\prod_{j<k}(3j+1)$ 과 $g(z) = \sum_k \frac{z^{3k+1}}{(3k+1)!}\prod_{j<k}(3j+2)$ 가 각각 $y(0)=1,y'(0)=0$ 과 $y(0)=0,y'(0)=1$ 인 해이고
+여기서 $\Gamma$ 는 [감마 함수](gamma-function.md)다. 수치로는 $\mathrm{Ai}(0) = 0.355028\ldots$ 이고 $\mathrm{Ai}'(0) = -0.258819\ldots$ 다. Taylor 급수는 $y'' = zy$ 를 계수별로 풀면 바로 나온다. $f(z) = \sum_k \frac{z^{3k}}{(3k)!}\prod_{j<k}(3j+1)$ 과 $g(z) = \sum_k \frac{z^{3k+1}}{(3k+1)!}\prod_{j<k}(3j+2)$ 가 각각 $y(0)=1,y'(0)=0$ 과 $y(0)=0,y'(0)=1$ 인 해이고
 
 $$
-\operatorname{Ai}(z) = \operatorname{Ai}(0)\thinspace f(z) + \operatorname{Ai}'(0)\thinspace g(z)
+\mathrm{Ai}(z) = \mathrm{Ai}(0)\thinspace f(z) + \mathrm{Ai}'(0)\thinspace g(z)
 $$
 
 다. 이 급수는 모든 $z$ 에서 수렴하지만 $\lvert z\rvert$ 가 조금만 커져도 항끼리 거대한 상쇄가 일어나 수치적으로는 쓸 수 없다. 큰 $z$ 에서는 수렴하지 않는 점근급수 쪽이 오히려 정확하다는 것이 이 함수의 대표적인 아이러니다.
@@ -65,27 +65,27 @@ $$
 실수 $x$ 에 대해
 
 $$
-\operatorname{Ai}(x) = \frac{1}{\pi}\int_0^{\infty}\cos\negthinspace\left(\frac{t^3}{3} + xt\right)dt
+\mathrm{Ai}(x) = \frac{1}{\pi}\int_0^{\infty}\cos\negthinspace\left(\frac{t^3}{3} + xt\right)dt
 $$
 
 이며, 복소평면에서는
 
 $$
-\operatorname{Ai}(z) = \frac{1}{2\pi i}\int_{\mathcal{C}} \exp\negthinspace\left(\frac{t^3}{3} - zt\right)dt
+\mathrm{Ai}(z) = \frac{1}{2\pi i}\int_{\mathcal{C}} \exp\negthinspace\left(\frac{t^3}{3} - zt\right)dt
 $$
 
 로 쓴다. 경로 $\mathcal{C}$ 는 $\arg t = -\pi/3$ 방향의 무한대에서 들어와 $\arg t = +\pi/3$ 방향의 무한대로 나간다. 피적분함수가 그 두 부채꼴에서 급격히 감쇠하므로 적분이 수렴한다.
 
-경로를 다른 두 부채꼴 쌍으로 잡으면 $\operatorname{Ai}(\omega z)$ 와 $\operatorname{Ai}(\omega^2 z)$ 를 얻는다. 여기서 $\omega = e^{2\pi i/3}$ 다. 세 경로의 합이 닫힌 경로이므로 적분이 0 이 되고, 여기서 곧바로
+경로를 다른 두 부채꼴 쌍으로 잡으면 $\mathrm{Ai}(\omega z)$ 와 $\mathrm{Ai}(\omega^2 z)$ 를 얻는다. 여기서 $\omega = e^{2\pi i/3}$ 다. 세 경로의 합이 닫힌 경로이므로 적분이 0 이 되고, 여기서 곧바로
 
 $$
-\operatorname{Ai}(z) + \omega\operatorname{Ai}(\omega z) + \omega^2\operatorname{Ai}(\omega^2 z) = 0
+\mathrm{Ai}(z) + \omega\mathrm{Ai}(\omega z) + \omega^2\mathrm{Ai}(\omega^2 z) = 0
 $$
 
-이 따라 나온다. 2차원 해공간에 놓인 감쇠해 셋 사이의 유일한 선형관계다. $\operatorname{Bi}$ 는 이 셋의 조합으로
+이 따라 나온다. 2차원 해공간에 놓인 감쇠해 셋 사이의 유일한 선형관계다. $\mathrm{Bi}$ 는 이 셋의 조합으로
 
 $$
-\operatorname{Bi}(z) = i\thinspace\omega\operatorname{Ai}(\omega z) - i\thinspace\omega^2\operatorname{Ai}(\omega^2 z)
+\mathrm{Bi}(z) = i\thinspace\omega\mathrm{Ai}(\omega z) - i\thinspace\omega^2\mathrm{Ai}(\omega^2 z)
 $$
 
 로 정의되며, 실축에서 실숫값을 가지고 $z \to +\infty$ 에서 지수적으로 증가하는 해다.
@@ -97,17 +97,17 @@ $$
 $x \to +\infty$ 에서 $\zeta = \tfrac23 x^{3/2}$ 로 두면
 
 $$
-\operatorname{Ai}(x) \sim \frac{e^{-\zeta}}{2\sqrt{\pi}\thinspace x^{1/4}}\sum_{k\ge0}\frac{(-1)^k u_k}{\zeta^k},
+\mathrm{Ai}(x) \sim \frac{e^{-\zeta}}{2\sqrt{\pi}\thinspace x^{1/4}}\sum_{k\ge0}\frac{(-1)^k u_k}{\zeta^k},
 \qquad
-\operatorname{Bi}(x) \sim \frac{e^{\zeta}}{\sqrt{\pi}\thinspace x^{1/4}}\sum_{k\ge0}\frac{u_k}{\zeta^k}
+\mathrm{Bi}(x) \sim \frac{e^{\zeta}}{\sqrt{\pi}\thinspace x^{1/4}}\sum_{k\ge0}\frac{u_k}{\zeta^k}
 $$
 
 이고, $x \to -\infty$ 에서 $\xi = \tfrac23\lvert x\rvert^{3/2}$ 로 두면
 
 $$
-\operatorname{Ai}(-\lvert x\rvert) \sim \frac{1}{\sqrt{\pi}\thinspace\lvert x\rvert^{1/4}}\sin\negthinspace\left(\xi + \frac{\pi}{4}\right),
+\mathrm{Ai}(-\lvert x\rvert) \sim \frac{1}{\sqrt{\pi}\thinspace\lvert x\rvert^{1/4}}\sin\negthinspace\left(\xi + \frac{\pi}{4}\right),
 \qquad
-\operatorname{Bi}(-\lvert x\rvert) \sim \frac{1}{\sqrt{\pi}\thinspace\lvert x\rvert^{1/4}}\cos\negthinspace\left(\xi + \frac{\pi}{4}\right)
+\mathrm{Bi}(-\lvert x\rvert) \sim \frac{1}{\sqrt{\pi}\thinspace\lvert x\rvert^{1/4}}\cos\negthinspace\left(\xi + \frac{\pi}{4}\right)
 $$
 
 다. 계수는 $u_0 = 1$ 과
@@ -125,17 +125,17 @@ $$
 | 선 | 조건 | 각도 | 일어나는 일 |
 |---|---|---|---|
 | Stokes 선 | $z^{3/2}$ 가 실수 | $\arg z = 0,\ \pm\tfrac{2\pi}{3}$ | 작은 항의 계수가 켜지고 꺼진다 |
-| anti-Stokes 선 | $\operatorname{Re} z^{3/2} = 0$ | $\arg z = \pm\tfrac{\pi}{3},\ \pi$ | 두 항의 크기가 뒤바뀐다 |
+| anti-Stokes 선 | $\mathrm{Re} z^{3/2} = 0$ | $\arg z = \pm\tfrac{\pi}{3},\ \pi$ | 두 항의 크기가 뒤바뀐다 |
 
-$\arg z = \pi$ 가 anti-Stokes 선이라는 점이 음의 실축에서 해가 진동하는 이유다. 두 지수항의 크기가 정확히 같아 어느 쪽도 지배하지 못하고, 둘의 간섭이 그대로 보인다. 반대로 $\arg z = 0$ 은 Stokes 선이라 $\operatorname{Ai}$ 의 점근에 $e^{+\zeta}$ 항이 조용히 붙어 있지만 $e^{-\zeta}$ 에 완전히 가려 보이지 않는다.
+$\arg z = \pi$ 가 anti-Stokes 선이라는 점이 음의 실축에서 해가 진동하는 이유다. 두 지수항의 크기가 정확히 같아 어느 쪽도 지배하지 못하고, 둘의 간섭이 그대로 보인다. 반대로 $\arg z = 0$ 은 Stokes 선이라 $\mathrm{Ai}$ 의 점근에 $e^{+\zeta}$ 항이 조용히 붙어 있지만 $e^{-\zeta}$ 에 완전히 가려 보이지 않는다.
 
 이 배치를 함수 관계로 쓴 것이
 
 $$
-\operatorname{Ai}\negthinspace\left(z\thinspace e^{\mp 2\pi i/3}\right) = \tfrac12 e^{\pm i\pi/3}\left[\operatorname{Ai}(z) \mp i \operatorname{Bi}(z)\right]
+\mathrm{Ai}\negthinspace\left(z\thinspace e^{\mp 2\pi i/3}\right) = \tfrac12 e^{\pm i\pi/3}\left[\mathrm{Ai}(z) \mp i \mathrm{Bi}(z)\right]
 $$
 
-이며, 계수 $\tfrac12$ 과 위상 $\pi/3$ 이 이 문제의 Stokes 상수다. $\operatorname{Ai}$ 하나만 알면 나머지가 전부 결정된다.
+이며, 계수 $\tfrac12$ 과 위상 $\pi/3$ 이 이 문제의 Stokes 상수다. $\mathrm{Ai}$ 하나만 알면 나머지가 전부 결정된다.
 
 ## 발산률이 가리키는 것
 
@@ -144,12 +144,12 @@ $$
 ## Wronskian 과 영점
 
 $$
-\operatorname{Ai}(z)\operatorname{Bi}'(z) - \operatorname{Ai}'(z)\operatorname{Bi}(z) = \frac{1}{\pi}
+\mathrm{Ai}(z)\mathrm{Bi}'(z) - \mathrm{Ai}'(z)\mathrm{Bi}(z) = \frac{1}{\pi}
 $$
 
 이다. $y''=zy$ 에 1계 항이 없으므로 Wronskian 이 상수이고, $z=0$ 의 초기값과 $\Gamma(1/3)\Gamma(2/3) = 2\pi/\sqrt{3}$ 을 넣으면 값이 $1/\pi$ 로 떨어진다.
 
-$\operatorname{Ai}$ 의 영점은 모두 음의 실축 위에 있다. 진동 점근의 사인이 0 이 되는 조건에서
+$\mathrm{Ai}$ 의 영점은 모두 음의 실축 위에 있다. 진동 점근의 사인이 0 이 되는 조건에서
 
 $$
 a_n \approx -\left(\frac{3\pi(4n-1)}{8}\right)^{2/3}
@@ -163,18 +163,18 @@ $$
 
 $$
 I(\lambda,\mu)=\int_{-\infty}^{\infty}e^{i\lambda(x^3/3-\mu x)}\thinspace dx
-=\frac{2\pi}{\lambda^{1/3}}\operatorname{Ai}\negthinspace\big(-\mu\lambda^{2/3}\big)
+=\frac{2\pi}{\lambda^{1/3}}\mathrm{Ai}\negthinspace\big(-\mu\lambda^{2/3}\big)
 $$
 
 $x=\lambda^{-1/3}s$ 로 두면 그대로 적분 표현이 되어 나오는 **정확한 항등식**이다. 여기서 두 가지를 읽는다.
 
 - **합류점의 스케일.** $\mu=0$ 에서 크기가 $\lambda^{-1/3}$ 이다. 정상점이 분리되어 있을 때의 $\lambda^{-1/2}$ 보다 크다. 퇴화한 임계점이 더 넓은 영역을 간섭 없이 더하기 때문이다.
-- **두 영역을 잇는다.** $\mu>0$ 을 고정하고 $\lambda\to\infty$ 로 보내면 $\operatorname{Ai}(-\mu\lambda^{2/3})$ 의 진동 점근이 $\lambda^{-1/6}$ 를 내놓아 전체가 $\lambda^{-1/3}\cdot\lambda^{-1/6}=\lambda^{-1/2}$ 로 돌아간다. $\mu<0$ 이면 감쇠 점근이 지수적으로 작은 값을 준다. 곧 $\operatorname{Ai}$ 한 함수가 **진동 영역과 지수 영역, 그리고 그 사이의 전이층**을 하나의 식으로 덮는다.
+- **두 영역을 잇는다.** $\mu>0$ 을 고정하고 $\lambda\to\infty$ 로 보내면 $\mathrm{Ai}(-\mu\lambda^{2/3})$ 의 진동 점근이 $\lambda^{-1/6}$ 를 내놓아 전체가 $\lambda^{-1/3}\cdot\lambda^{-1/6}=\lambda^{-1/2}$ 로 돌아간다. $\mu<0$ 이면 감쇠 점근이 지수적으로 작은 값을 준다. 곧 $\mathrm{Ai}$ 한 함수가 **진동 영역과 지수 영역, 그리고 그 사이의 전이층**을 하나의 식으로 덮는다.
 
 일반적인 위상 $\varphi(x,\mu)$ 에 대해서도 $\varphi$ 를 3 차 표준형으로 옮기는 좌표변환을 잡으면
 
 $$
-I\sim 2\pi e^{i\lambda\eta}\Big[\frac{p_0}{\lambda^{1/3}}\operatorname{Ai}\big(\lambda^{2/3}\zeta\big)+\frac{i\thinspace q_0}{\lambda^{2/3}}\operatorname{Ai}'\big(\lambda^{2/3}\zeta\big)\Big]
+I\sim 2\pi e^{i\lambda\eta}\Big[\frac{p_0}{\lambda^{1/3}}\mathrm{Ai}\big(\lambda^{2/3}\zeta\big)+\frac{i\thinspace q_0}{\lambda^{2/3}}\mathrm{Ai}'\big(\lambda^{2/3}\zeta\big)\Big]
 $$
 
 가 되고, $\zeta$ 는 두 임계값의 차이 $\tfrac43|\zeta|^{3/2}=|\varphi(x_1)-\varphi(x_2)|$ 로 정해진다. 이것이 Chester–Friedman–Ursell 의 균등 점근이다. 이 $\zeta$ 는 위 「두 안장점의 합류」에서 본 작용 차이 $A$ 와 같은 양이고, 미분방정식 쪽 회전점과 적분 쪽 퇴화 정상점이 같은 대상의 두 얼굴이라는 점이 여기서 드러난다.
@@ -263,14 +263,14 @@ for n in (1, 2, 3, 10):
 
 ## 선형 퍼텐셜의 정확한 준위
 
-[WKB 근사](wkb-approximation.md)는 $V(x) = \lvert x\rvert$ 의 바닥 준위를 $0.8853$ 으로 주고 정확값이 $0.8086$ 이라고만 적었다. 그 정확값이 어디서 오는지가 여기서 보인다. $\hbar = m = 1$ 에서 방정식은 $y'' = 2(\lvert x\rvert - E)y$ 이고, $x>0$ 에서 $u = 2^{1/3}(x - E)$ 로 두면 그대로 $y_{uu} = u\thinspace y$ 다. 무한대에서 감쇠해야 하므로 해는 $\operatorname{Ai}$ 뿐이고, 원점에서의 대칭성이 조건을 준다.
+[WKB 근사](wkb-approximation.md)는 $V(x) = \lvert x\rvert$ 의 바닥 준위를 $0.8853$ 으로 주고 정확값이 $0.8086$ 이라고만 적었다. 그 정확값이 어디서 오는지가 여기서 보인다. $\hbar = m = 1$ 에서 방정식은 $y'' = 2(\lvert x\rvert - E)y$ 이고, $x>0$ 에서 $u = 2^{1/3}(x - E)$ 로 두면 그대로 $y_{uu} = u\thinspace y$ 다. 무한대에서 감쇠해야 하므로 해는 $\mathrm{Ai}$ 뿐이고, 원점에서의 대칭성이 조건을 준다.
 
 | 대칭 | 원점 조건 | 준위 | 값 |
 |---|---|---|---|
 | 짝 | $y'(0)=0$ | $E = -a'_n / 2^{1/3}$ | $E_0 = 1.018793/1.259921 = 0.808617$ |
 | 홀 | $y(0)=0$ | $E = -a_n / 2^{1/3}$ | $E_1 = 2.338107/1.259921 = 1.855757$ |
 
-$a_n$ 은 $\operatorname{Ai}$ 의 영점, $a'_n$ 은 $\operatorname{Ai}'$ 의 영점이다. WKB 가 9% 어긋난 바닥 준위가 Airy 함수의 도함수 첫 영점으로 정확히 결정되고, 준위가 올라갈수록 영점 점근이 좋아지면서 두 값이 만난다. 근사와 정확해가 같은 함수의 두 극한이라는 점이 이 표에 그대로 드러난다.
+$a_n$ 은 $\mathrm{Ai}$ 의 영점, $a'_n$ 은 $\mathrm{Ai}'$ 의 영점이다. WKB 가 9% 어긋난 바닥 준위가 Airy 함수의 도함수 첫 영점으로 정확히 결정되고, 준위가 올라갈수록 영점 점근이 좋아지면서 두 값이 만난다. 근사와 정확해가 같은 함수의 두 극한이라는 점이 이 표에 그대로 드러난다.
 
 ## 초점과 무지개
 
@@ -280,7 +280,7 @@ Airy 는 1838년 무지개의 **과잉 아치**(supernumerary arc)를 설명하�
 
 ## 무작위 행렬의 가장자리
 
-큰 무작위 행렬의 고윳값 분포는 가장자리에서 반원법칙의 제곱근으로 끊기는데, 그 근방을 $N^{2/3}$ 배로 확대하면 Airy 핵 $\bigl(\operatorname{Ai}(x)\operatorname{Ai}'(y) - \operatorname{Ai}'(x)\operatorname{Ai}(y)\bigr)/(x-y)$ 가 나타나고 최대 고윳값의 극한분포가 Tracy–Widom 분포가 된다. 분포의 밀도가 Painlevé II 방정식으로 기술되고 그 해의 경계조건이 $\operatorname{Ai}$ 라는 점에서, 회전점 근방의 보편성이 확률론까지 이어진다.
+큰 무작위 행렬의 고윳값 분포는 가장자리에서 반원법칙의 제곱근으로 끊기는데, 그 근방을 $N^{2/3}$ 배로 확대하면 Airy 핵 $\bigl(\mathrm{Ai}(x)\mathrm{Ai}'(y) - \mathrm{Ai}'(x)\mathrm{Ai}(y)\bigr)/(x-y)$ 가 나타나고 최대 고윳값의 극한분포가 Tracy–Widom 분포가 된다. 분포의 밀도가 Painlevé II 방정식으로 기술되고 그 해의 경계조건이 $\mathrm{Ai}$ 라는 점에서, 회전점 근방의 보편성이 확률론까지 이어진다.
 
 [^1]: M. V. Berry, C. Upstill, *Catastrophe optics: morphologies of caustics and their diffraction patterns*, Progress in Optics XVIII (1980). 초곡선의 분류와 각 유형에 대응하는 회절 적분. 접힘(fold) 초곡선의 표준 적분이 Airy 함수다.
 
