@@ -30,7 +30,7 @@ $A$ 의 일부에만 값이 정해진 대응은 부분함수라 하며 함수와
 
 ## 상과 역상
 
-부분집합 $S \subseteq A$, $T \subseteq B$ 에 대해 다음을 정의한다.
+부분집합 $S \subseteq A$ 와 $T \subseteq B$ 에 대해 다음을 정의한다.
 
 $$
 f(S)=\{f(x):x\in S\},\qquad f^{-1}(T)=\{x\in A:f(x)\in T\}

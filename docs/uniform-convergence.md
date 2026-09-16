@@ -49,7 +49,7 @@ $$
 \lim_{n \to \infty} \ \sup_{x \in X} \ |f_n(x) - f(x)| = 0 .
 $$
 
-이때 $f_n$ 이 $f$ 로 균등수렴한다고 한다. 양화사 순서만 바꾼 것이지만($for all x, exists N$ 대 $exists N, for all x$), 그 차이가 전부다.
+이때 $f_n$ 이 $f$ 로 균등수렴한다고 한다. 양화사 순서만 바꾼 것, 곧 $\forall x\,\exists N$ 과 $\exists N\,\forall x$ 의 차이지만, 그 차이가 전부다.
 
 ## sup 노름
 
