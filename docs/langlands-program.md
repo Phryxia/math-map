@@ -10,7 +10,7 @@ $$
 \rho \thickspace\longleftrightarrow\thickspace \pi,\qquad L(s,\rho)=L(s,\pi)
 $$
 
-$n=1$ 이 유체론이다. $n=2$ 이고 $K=\mathbb Q$ 인 경우의 자기동형 쪽 대상은 [모듈러 형식](modular-forms.md)이고, 그 안의 한 조각이 모듈러성 정리다. 유리수체 위의 모든 [타원곡선](elliptic-curves.md)이 모듈러 형식에서 온다는 그 정리가 Fermat 마지막 정리의 증명을 완성했다. 강령 전체는 여전히 열려 있고, 정수론에서 가장 큰 조직 원리로 받아들여진다.
+$n=1$ 이 유체론이다. $n=2$ 이고 $K=\mathbb Q$ 인 경우의 자기동형 쪽 대상은 [모듈러 형식](modular-forms.md)이고, 그 안의 한 조각이 모듈러성 정리다. 유리수체 위의 모든 [타원곡선](elliptic-curves.md)이 모듈러 형식에서 온다는 그 정리가 Fermat 마지막 정리의 증명을 완성했다. 일반 수체의 $n\ge2$ 는 증명되지 않았다. 증명된 경우는 성질 절의 표에 적는다.
 
 # 직관
 
@@ -118,7 +118,7 @@ $H$ 를 자명군으로 두면 ${}^LH=G_K$ 이고 $G_K\to\mathrm{GL}_n(\mathbb C
 | $n=2$ 이고 $K=\mathbb Q$ 인 홀수 기약 | 대부분 증명 (Serre 추측, Khare–Wintenberger 2009) |
 | $\mathbb Q$ 위 타원곡선 | 증명 (Wiles–Taylor 1995, Breuil–Conrad–Diamond–Taylor 2001) |
 | 함수체 $\mathbb F_q(X)$ 의 모든 $n$ | 증명 (Drinfeld 가 $n=2$ 를, L. Lafforgue 가 일반 $n$ 을) |
-| 일반 수체, $n\ge2$ | 열림 |
+| 일반 수체, $n\ge2$ | 증명되지 않음[^1] |
 
 함수체의 Galois 군은 곡선의 기본군이라 기하학적 대상이고 모듈라이 공간 위에서 논증을 펼 수 있어 먼저 풀렸다. 이 관점을 복소 곡선으로 옮긴 것이 기하적 Langlands 강령이고 물리의 게이지 이론과도 연결된다.
 
@@ -182,6 +182,8 @@ $\mathrm{Sym}^k$ 함자성으로 $\mathrm{Sym}^k\pi_E$ 가 자기동형임을 �
 - **Birch–Swinnerton-Dyer 추측**: $L(s,E)$ 의 $s=1$ 에서의 영점 차수가 계수와 같다는 추측. 모듈러성이 있어야 $L(s,E)$ 가 $s=1$ 에서 정의되기부터 한다.
 
 수체의 산술을 해석과 표현론의 언어로 옮기는 사전이 있다는 것이 강령의 주장이고 그 사전의 첫 항목이 유체론이다. $\mathrm{GL}_1$ 에서 확인된 원리를 모든 환원군으로 옮기려는 시도가 반세기 넘게 이어지고 있다.
+
+[^1]: S. Gelbart, "An elementary introduction to the Langlands program", Bulletin of the AMS 10 (1984), 177–219. 상호성 추측의 진술과 당시까지 증명된 경우를 정리한다. 함수체의 해결은 L. Lafforgue, "Chtoucas de Drinfeld et correspondance de Langlands", Inventiones Mathematicae 147 (2002), 1–241.
 
 # 연관 문서
 
