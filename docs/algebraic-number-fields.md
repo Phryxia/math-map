@@ -201,9 +201,9 @@ $D=-163$ 에서 $h=1$ 인 것이 $e^{\pi\sqrt{163}}$ 이 정수에 극도로 가
 
 ## 유수의 크기와 계산
 
-허이차체에서는 $|d_K|\to\infty$ 일 때 $h_K\to\infty$ 이므로 유수가 작은 경우가 유한하다. 실이차체에서 $h_K=1$ 인 체가 무한히 많다는 것은 Gauss 의 추측이고(*Disquisitiones Arithmeticae*, Art. 304) 증명되지 않았다. 조절자 $R_K$ 가 커질 수 있어 유수 공식이 $h_K$ 를 통제하지 못한다.
+허이차체에서는 $|d_K|\to\infty$ 일 때 $h_K\to\infty$ 이므로 유수가 작은 경우가 유한하다. 실이차체에서 $h_K=1$ 인 체가 무한히 많다는 것은 Gauss 의 추측이다(*Disquisitiones Arithmeticae*, Art. 304). 조절자 $R_K$ 가 커질 수 있어 유수 공식이 $h_K$ 를 통제하지 못한다.
 
-유수를 다항시간에 계산하는 고전 알고리즘은 알려져 있지 않고, 일반 Riemann 가설을 가정해야 준지수 시간이 나온다. 양자 알고리즘은 유수군 계산을 아벨 숨은 부분군 문제로 환원해 다항시간에 푼다. [후양자 암호](post-quantum-cryptography.md)가 구조화된 격자를 경계하는 이유다.
+고전 알고리즘으로 알려진 최선은 일반 Riemann 가설 아래의 준지수 시간이다[^1]. 양자 알고리즘은 유수군 계산을 아벨 숨은 부분군 문제로 환원해 다항시간에 푼다. [후양자 암호](post-quantum-cryptography.md)가 구조화된 격자를 경계하는 이유다.
 
 # 활용
 
@@ -230,6 +230,8 @@ $y^2=x^3-2$ 의 정수해는 $\mathbb Z[\sqrt{-2}]$ 에서 $(y+\sqrt{-2})(y-\sqr
 수체 체 거름법은 가장 빠른 소인수분해 알고리즘이며, 수체에서 노름이 매끄러운 원소를 찾아 관계를 모은다. [RSA](rsa-cryptosystem.md) 의 키 길이가 이 알고리즘의 준지수 복잡도 $\exp(O((\log N)^{1/3}))$ 로 정해진다.
 
 Ring-LWE 가 쓰는 $\mathbb Z[x]/(x^n+1)$ 은 $\mathbb Z[\zeta_{2n}]$ 이며, 이 환의 산술 구조가 효율을 주는 동시에 공격 표면이 된다. 단원군과 유수군을 계산하는 양자 알고리즘이 특정 구성에 위협이 된 전례가 있어, 표준화 과정에서 구조를 얼마나 넣을지가 쟁점이었다.
+
+[^1]: J. L. Hafner, K. S. McCurley, *A rigorous subexponential algorithm for computation of class groups*, Journal of the American Mathematical Society **2** (1989), 837–850. 허수이차체의 유수군을 일반 Riemann 가설 아래 준지수 시간에 계산한다. 고정 차수의 수체로 넓힌 것은 J. Buchmann 의 1990 년 작업이다.
 
 # 연관 문서
 
