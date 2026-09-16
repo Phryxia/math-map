@@ -103,9 +103,9 @@ $$
 | $d=2$ 명시적 목록 | 26 개 군 (Kamienny, Kenku–Momose) |
 | $d=3$ 명시적 목록 | 해결 (Derickx–Etropolski–van Hoeij–Morrow–Zureick-Brown) |
 | $d\ge4$ | 부분적 |
-| $B(d)$ 의 참 크기 | 미해결. 상한은 지수, 하한은 $d\log\log d$ 규모 |
+| $B(d)$ 의 참 크기 | 확정되지 않음. 상한은 지수, 하한은 $d\log\log d$ 규모[^1] |
 
-상한과 하한 사이의 간극이 크다. $B(d)$ 가 $d$ 의 다항식이리라는 기대가 있으나 현재 방법으로는 지수 꼴을 벗어나지 못한다. 하한은 CM 곡선을 적당한 체 위에서 관찰해 얻는다.
+상한과 하한 사이의 간극이 크다. 하한은 CM 곡선을 적당한 체 위에서 관찰해 얻는다.
 
 ## 유계와 분류의 거리
 
@@ -118,10 +118,11 @@ $$
 # 활용
 
 - **계산 수론.** 타원곡선 데이터베이스에서 비틀림군을 확정할 때 후보의 유한성이 탐색의 종료를 보장한다. $d\le3$ 에서는 명시적 목록으로 판정하고 더 높은 차수에서는 Merel 의 유계가 탐색 범위를 준다. [BSD](birch-swinnerton-dyer.md) 공식의 비틀림 항과 하강 계산의 전처리가 이 정보를 쓴다.
-- **동종 쪽의 미해결 문제.** 소수 차수 동종에 대한 일양 유계성은 차수 $d$ 수체 위에서 열려 있다. $E/K$ 가 CM 이 아니면 $\bmod\ p$ [Galois 표현](galois-representations.md)이 $p$ 가 클 때 전사인지를 묻는 Serre 의 일양성 문제가 같은 계열이다.
+- **동종의 일양 유계성.** 소수 차수 동종에 대응하는 유계는 차수 $d$ 수체 위에서 증명되어 있지 않다. $E/K$ 가 CM 이 아니면 $\bmod\ p$ [Galois 표현](galois-representations.md)이 $p$ 가 클 때 전사인지를 묻는 Serre 의 일양성 문제가 같은 계열이다[^2].
 - **방법론.** 대칭곱으로 올리고, 해석적 비소멸로 유한 몫을 만들고, Hecke 작용소의 선형대수로 단사성을 판정하는 세 단계가 이후 모듈러 곡선의 유리점 문제에서 반복해 쓰였다. [모듈러 기호](modular-symbols.md)는 정의가 구체적이고 Hecke 작용을 명시적으로 계산할 수 있어 존재 증명이 알고리즘이 된다.[^1]
 
 [^1]: L. Merel, *Bornes pour la torsion des courbes elliptiques sur les corps de nombres*, Invent. Math. **124** (1996), 437–449. 상한 개선은 J. Oesterlé 의 미출판 원고와 P. Parent, J. reine angew. Math. **506** (1999). $d=2$ 는 S. Kamienny, Invent. Math. **109** (1992) 와 M. Kenku, F. Momose, Nagoya Math. J. **109** (1988). $d=3$ 은 M. Derickx, A. Etropolski, M. van Hoeij, J. Morrow, D. Zureick-Brown, Algebra & Number Theory (2021).
+[^2]: J-P. Serre, "Propriétés galoisiennes des points d'ordre fini des courbes elliptiques", Inventiones Mathematicae 15 (1972), 259–331. §4.3 이 일양성 문제를 제기하며 답이 없음을 밝힌다.
 
 # 연관 문서
 
