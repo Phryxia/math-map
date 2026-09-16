@@ -20,7 +20,7 @@ $$
 
 UGC 가 참이면 최대 절단의 최적 근사비가 $\alpha_{\mathrm{GW}}$ 이고, 모든 제약 충족 문제에 대해 기본 SDP 완화가 최적 알고리즘이다. 하나의 알고리즘 틀이 넓은 문제군에서 더 개선될 수 없다는 통일 정리가 된다.
 
-2018 년에 Khot–Minzer–Safra 등이 **2-to-2 게임 정리**를 증명해 추측의 절반에 해당하는 형태를 확립했다. 완전한 UGC 는 여전히 열려 있다.
+2018 년에 Khot–Minzer–Safra 등이 **2-to-2 게임 정리**를 증명해 추측의 절반에 해당하는 형태를 확립했다[^1]. 완전한 UGC 는 증명되지 않았다[^1].
 
 # 직관
 
@@ -119,7 +119,7 @@ Sum-of-Squares 위계도 반증 경로로 검토되었다. 낮은 차수의 SoS 
 
 ## 소집합 확장 추측과의 관계
 
-UGC 는 **소집합 확장 추측**(SSEH)에서 따라온다. 그래프의 작은 집합들이 모두 잘 확장되는지 판정하는 문제의 난해성이며 더 조합적이다. 두 추측이 동치인지는 알려져 있지 않고 SSEH 가 더 강하다는 것만 알려져 있다.
+UGC 는 **소집합 확장 추측**(SSEH)에서 따라온다[^2]. 그래프의 작은 집합들이 모두 잘 확장되는지 판정하는 문제의 난해성이며 더 조합적이다. 알려진 함의는 이 한 방향뿐이고 역방향은 증명되어 있지 않다[^2].
 
 # 활용
 
@@ -136,6 +136,7 @@ UGC 를 둘러싼 작업은 이론 전산학에 부울 함수 해석학을 정�
 2-to-2 정리 이후 UGC 를 가정하지 않고 얻어진 난해성 결과가 여럿 있다. 정점 덮개의 $\sqrt2-\varepsilon$ 난해성과 특정 유일게임 사례에 대한 부분적 난해성이 그렇다.
 
 [^1]: S. Khot, *On the power of unique 2-prover 1-round games*, STOC (2002), 767–775. Majority is Stablest 는 E. Mossel, R. O'Donnell, K. Oleszkiewicz, Ann. of Math. **171** (2010). 통일 정리는 P. Raghavendra, *Optimal algorithms and inapproximability results for every CSP?*, STOC (2008). 2-to-2 정리는 S. Khot, D. Minzer, M. Safra, *Pseudorandom sets in Grassmann graph have near-perfect expansion*, FOCS (2018). 준지수 알고리즘은 S. Arora, B. Barak, D. Steurer, FOCS (2010).
+[^2]: P. Raghavendra, D. Steurer, "Graph expansion and the Unique Games Conjecture", STOC (2010), 755–764. 소집합 확장 추측을 제기하고 그것이 UGC 를 함의함을 보인다.
 
 # 연관 문서
 
