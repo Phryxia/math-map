@@ -10,7 +10,7 @@ $$
 \mathrm{ch}\thinspace V(\tau)=J(\tau)+N=q^{-1}+N+196884\thinspace q+\cdots,\qquad N=\dim V_1
 $$
 
-정수 $N$ 하나를 빼면 자유도가 없다. Schellekens 는 1993 년에 무게 $1$ 부분 $V_1$ 의 Lie 대수 구조를 조합적으로 제한해 71 가지 타입만 가능함을 보였다.[^1] 이후 30 년에 걸쳐 각 항목의 존재와 유일성이 증명되었고, $V_1=0$ 인 괴물 달빛 가군의 유일성만 미해결로 남아 있다.
+정수 $N$ 하나를 빼면 자유도가 없다. Schellekens 는 1993 년에 무게 $1$ 부분 $V_1$ 의 Lie 대수 구조를 조합적으로 제한해 71 가지 타입만 가능함을 보였다.[^1] 이후 30 년에 걸쳐 각 항목의 존재와 유일성이 증명되었고, $V_1=0$ 인 괴물 달빛 가군의 유일성만 증명되지 않은 채 남아 있다[^2].
 
 24 차원 짝수 자기쌍대 격자가 정확히 24 개라는 [Niemeier 분류](niemeier-lattices.md)가 이 목록과 나란히 놓인다. 격자 쪽 24 개는 VOA 쪽 71 개 안에 격자 VOA 로 들어가고, 두 분류 모두 지표가 대상을 거의 결정한다는 논법을 쓴다.
 
@@ -117,7 +117,7 @@ $$
 
 - **존재.** 71 개 타입 각각에 대해 실제 VOA 가 구성되었다. 격자 VOA, 오비폴드, 단순전류 확대, 역오비폴드 등을 조합한다.
 - **유일성.** $V_1\ne0$ 인 70 개에 대해 타입이 VOA 를 동형까지 결정한다(Höhn, Möller, Lam, van Ekeren–Möller–Scheithauer 등의 일련의 작업으로 2020 년경 완결).
-- **남은 것.** $V_1=0$ 인 홀로모픽 $c=24$ VOA 가 $V^\natural$ 뿐이라는 것은 Frenkel–Lepowsky–Meurman 추측으로 여전히 미해결이다.
+- **$V_1=0$ 인 경우.** $V_1=0$ 인 홀로모픽 $c=24$ VOA 가 $V^\natural$ 뿐이라는 Frenkel–Lepowsky–Meurman 추측은 증명되지 않았다[^2].
 
 # 성질
 
@@ -164,6 +164,7 @@ $c=32$ 에서는 짝수 자기쌍대 격자만 해도 십억 개가 넘어 분�
 $V^\natural$ 밖의 항목들도 자기동형군을 갖고, 그 군의 원소에 대한 꼬인 지표가 모듈러 함수를 준다. Umbral moonshine 을 비롯한 이후의 달빛 현상이 이 표를 훑는 과정에서 발견되었다.
 
 [^1]: A. N. Schellekens, *Meromorphic c=24 conformal field theories*, Comm. Math. Phys. **153** (1993), 159–185. 수학적 재구성과 유일성 완결은 G. Höhn, *On the genus of the moonshine module* (2017), J. van Ekeren, S. Möller, N. Scheithauer, *Construction and classification of holomorphic vertex operator algebras*, J. reine angew. Math. **759** (2020), C. H. Lam 등의 일련의 논문에 걸쳐 있다.
+[^2]: I. Frenkel, J. Lepowsky, A. Meurman, *Vertex Operator Algebras and the Monster*, Academic Press (1988). 서문이 $V^\natural$ 의 유일성을 추측으로 제기한다.
 
 # 연관 문서
 

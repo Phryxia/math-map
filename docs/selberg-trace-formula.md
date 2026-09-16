@@ -2,7 +2,7 @@
 
 # 개요
 
-$L^2(\Gamma\backslash\mathbb H)$ 의 이산 스펙트럼을 이루는 Maass 형식의 고윳값 $\lambda_j=\tfrac14+r_j^2$ 는 하나도 명시적으로 알려져 있지 않다. $\Gamma=\mathrm{SL}_2(\mathbb Z)$ 의 첫 고윳값 $r_1\approx9.533$ 도 수치 계산의 결과다.
+$L^2(\Gamma\backslash\mathbb H)$ 의 이산 스펙트럼을 이루는 Maass 형식의 고윳값 $\lambda_j=\tfrac14+r_j^2$ 에는 닫힌 형태의 표현이 없다. $\Gamma=\mathrm{SL}_2(\mathbb Z)$ 의 첫 고윳값 $r_1\approx9.533$ 도 수치 계산의 결과다.
 
 Selberg 대각합 공식은 개별 고윳값 대신 고윳값 전체에 걸친 합을 곡면의 닫힌 측지선으로 표현한다.
 
@@ -135,7 +135,7 @@ $$
 
 콤팩트 곡면에서는 $\lambda_1>0$ 만으로 예외 영점이 $[0,1]$ 의 실축 위 유한 개뿐임이 나온다. 영점이 자기수반 작용소의 스펙트럼에서 오므로, Hilbert–Pólya 가 $\zeta$ 에 대해 바라던 구조가 $Z$ 에서는 성립한다.
 
-산술 곡면에서 $\lambda_1\ge\tfrac14$ 인지는 **Selberg 1/4 추측**이며 열려 있다. 현재 최선은 $\lambda_1\ge\tfrac{975}{4096}\approx0.238$ (Kim–Sarnak) 이다. 이 추측은 Ramanujan 추측의 아르키메데스 자리 판본이다.
+산술 곡면에서 $\lambda_1\ge\tfrac14$ 인지가 **Selberg 1/4 추측**이고, 증명되지 않았다[^2]. 현재 최선은 $\lambda_1\ge\tfrac{975}{4096}\approx0.238$ 다[^3]. 이 추측은 Ramanujan 추측의 아르키메데스 자리 판본이다.
 
 ## 길이 스펙트럼과 동일스펙트럼
 
@@ -164,6 +164,8 @@ $$
 혼돈계의 고윳값 간격은 랜덤 행렬 통계(GOE)를 따르리라 예상되지만 산술 곡면은 Poisson 통계를 보인다. 원인은 Hecke 대칭에서 오는 측지선 길이의 큰 중복도다. Riemann zeta 영점의 간격이 GUE 를 따른다는 Montgomery–Odlyzko 관측과 대비된다.
 
 [^1]: A. Selberg, *Harmonic analysis and discontinuous groups in weakly symmetric Riemannian spaces*, J. Indian Math. Soc. **20** (1956). 표준 서술은 H. Iwaniec, *Spectral Methods of Automorphic Forms* (2판) 10–11장. 일반화는 J. Arthur, *An introduction to the trace formula* (Clay Math. Proc. 4, 2005).
+[^2]: A. Selberg, "On the estimation of Fourier coefficients of modular forms", Proceedings of Symposia in Pure Mathematics VIII (1965), 1–15. $\lambda\_1\ge\tfrac14$ 추측의 원 진술이다.
+[^3]: H. Kim, "Functoriality for the exterior square of $\mathrm{GL}\_4$ and the symmetric fourth of $\mathrm{GL}\_2$", Journal of the AMS 16 (2003), 139–183. $\tfrac{975}{4096}$ 한계는 H. Kim 과 P. Sarnak 의 부록 2 에 있다.
 
 # 연관 문서
 
