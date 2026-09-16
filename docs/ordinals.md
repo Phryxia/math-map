@@ -34,7 +34,7 @@ graph LR
 
 # 정의
 
-집합 A와 그 위의 관계가 [부분순서](partial-orders.md)이면서 전순서이고, A의 공집합이 아닌 모든 부분집합이 최솟값을 가지면 정렬순서(well-order)라 한다.
+집합 $A$ 와 그 위의 관계가 [부분순서](partial-orders.md)이면서 전순서이고, $A$ 의 공집합이 아닌 모든 부분집합이 최솟값을 가지면 정렬순서(well-order)라 한다.
 
 $$
 \forall B\subseteq A\ \bigl(B\neq\varnothing \to \exists m\in B\ \forall b\in B\ (m\le b)\bigr)
@@ -60,7 +60,7 @@ $$
 0=\varnothing,\quad \alpha+1=\alpha\cup\{\alpha\},\quad \alpha<\beta \iff \alpha\in\beta,\quad \alpha=\{\,\beta : \beta<\alpha\,\}
 $$
 
-서수의 집합 S에 대해 합집합은 상한이 된다. 0이 아니고 후속 서수도 아닌 서수, 즉 자기 미만 전체의 합집합과 같은 서수를 극한 서수라 한다.
+서수의 집합 $S$ 에 대해 합집합은 상한이 된다. $0$ 이 아니고 후속 서수도 아닌 서수, 즉 자기 미만 전체의 합집합과 같은 서수를 극한 서수라 한다.
 
 $$
 \sup S=\bigcup S,\qquad \lambda \text{ 극한} \iff \lambda\neq 0 \wedge \lambda=\bigcup\lambda
@@ -90,19 +90,19 @@ $$
 
 ## 초한귀납법
 
-서수의 성질 P에 대해, "모든 beta 미만에서 P가 성립하면 alpha에서 P가 성립한다"가 모든 alpha에 대해 참이면 P는 모든 서수에서 성립한다[^2].
+서수의 성질 $P$ 에 대해, " $\alpha$ 미만의 모든 $\beta$ 에서 $P$ 가 성립하면 $\alpha$ 에서도 $P$ 가 성립한다"가 모든 $\alpha$ 에 대해 참이면 $P$ 는 모든 서수에서 성립한다[^2].
 
 $$
 \forall\alpha\,\bigl(\forall\beta<\alpha\ P(\beta)\ \to\ P(\alpha)\bigr)\ \Longrightarrow\ \forall\alpha\ P(\alpha)
 $$
 
-증명: P가 거짓인 서수가 있다고 하자. 그중 하나를 gamma라 하면 gamma+1의 원소 중 P가 거짓인 것들의 집합은 공집합이 아니고, 정렬성에 의해 최소 원소 alpha를 갖는다. alpha 미만에서는 P가 성립하므로 가정에 의해 alpha에서도 성립하고, 모순이다.
+증명: $P$ 가 거짓인 서수가 있다고 하자. 그중 하나를 $\gamma$ 라 하면 $\gamma+1$ 의 원소 중 $P$ 가 거짓인 것들의 집합은 공집합이 아니고, 정렬성에 의해 최소 원소 $\alpha$ 를 갖는다. $\alpha$ 미만에서는 $P$ 가 성립하므로 가정에 의해 $\alpha$ 에서도 성립하고, 모순이다.
 
 실무에서는 0 단계, 후속 단계, 극한 단계 셋으로 나누어 확인하는 형태를 더 많이 쓴다.
 
 ## 초한재귀
 
-각 단계에서 이전 값 전체를 받아 다음 값을 주는 규칙 G가 주어지면, 모든 서수에서 정의된 유일한 함수 F가 존재한다.
+각 단계에서 이전 값 전체를 받아 다음 값을 주는 규칙 $G$ 가 주어지면, 모든 서수에서 정의된 유일한 함수 $F$ 가 존재한다.
 
 $$
 F(\alpha)=G\bigl(F\upharpoonright\alpha\bigr)
@@ -114,7 +114,7 @@ $$
 V_0=\varnothing,\quad V_{\alpha+1}=\mathcal P(V_\alpha),\quad V_\lambda=\bigcup_{\alpha<\lambda}V_\alpha
 $$
 
-정칙성 공리는 모든 집합이 어떤 V_alpha에 속한다는 진술과 동치다.
+정칙성 공리는 모든 집합이 어떤 $V_\alpha$ 에 속한다는 진술과 동치다.
 
 ## 산술의 특이성
 
