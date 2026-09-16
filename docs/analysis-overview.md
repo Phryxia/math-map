@@ -1,0 +1,115 @@
+# 해석학 개관
+
+# 개요
+
+해석학은 극한으로 정의되는 대상을 다룬다. 물음은 "이 근사가 무엇으로 수렴하고, 그 극한이 원래의 성질을 보존하는가" 이고, 답은 수렴의 종류를 구분하는 데서 나온다. 점별수렴은 연속성을 보존하지 않고 균등수렴은 보존한다는 사실이 이 분야의 첫 분기점이다.
+
+이 지도의 해석학 문서는 네 줄기다. 극한과 연속, 미분과 적분, 급수와 적분변환, 그리고 발산급수를 다루는 점근해석이다. 측도론으로 적분을 다시 세우는 갈래는 [Lebesgue 적분](lebesgue-integral.md)에서, 복소평면으로 넘어가는 갈래는 [정칙함수](holomorphic-functions.md)에서, 무한차원 공간의 선형해석은 [Hilbert 공간](hilbert-spaces.md)과 [Banach 공간](banach-spaces.md)에서 이어진다.
+
+시작은 [수열의 극한](limits.md)과 [연속함수](continuity.md)다. 거기서 [미분](derivative.md)과 [Riemann 적분](riemann-integral.md)이 갈라지고 [미적분학의 기본 정리](fundamental-calculus.md)에서 다시 만난다. [Cauchy 수열과 완비성](completeness.md)은 극한의 존재를 보장하는 축이고, [축약사상 고정점 정리](banach-fixed-point.md)를 거쳐 미분방정식의 해의 존재로 이어진다.
+
+# 지도
+
+```mermaid
+graph TD
+  FN["함수"] --> LM["수열의 극한"]
+  MS["거리 공간"] --> CT["연속함수"]
+  MS --> CM["Cauchy 수열과 완비성"]
+  LM --> UC["균등수렴"]
+  CT --> UC
+  CT --> DV["미분"]
+  CT --> RI["Riemann 적분"]
+  LM --> PS["멱급수와 Taylor 급수"]
+  DV --> PS
+  DV --> FC["미적분학의 기본 정리"]
+  RI --> FC
+  CM --> BF["축약사상 고정점 정리"]
+  CT --> BF
+  BF --> OD["상미분방정식"]
+  FC --> OD
+  RI --> FS["Fourier 급수"]
+  FS --> PSm["Poisson 합 공식"]
+  PSm --> MT["Mellin 변환"]
+  EM["Euler–Maclaurin 공식"] --> GM["감마 함수"]
+  EM --> PSm
+  GM --> LP["Laplace 방법"]
+  LP --> SP["정상위상법"]
+  LP --> ST["Stokes 현상"]
+  ST --> RS["Resurgence"]
+  SP --> AF["Airy 함수"]
+  AF --> PE["Painlevé 방정식"]
+  OD --> WK["WKB 근사"]
+  WK --> EW["정확한 WKB"]
+  RS --> EW
+```
+
+# 갈래
+
+## 극한과 연속
+
+- [수열의 극한](limits.md): 수렴의 정의와 극한의 사칙연산
+- [Cauchy 수열과 완비성](completeness.md): 극한값을 모르고도 수렴을 판정하는 조건
+- [연속함수](continuity.md): $\varepsilon\text{-}\delta$ 정의와 열린집합 정의의 동치
+- [균등수렴](uniform-convergence.md): 연속성과 적분을 극한과 바꿔 쓸 수 있게 하는 조건
+- [축약사상 고정점 정리](banach-fixed-point.md): 완비성이 해의 존재와 유일성을 주는 첫 사례
+
+## 미분과 적분
+
+- [미분](derivative.md): 국소 선형근사
+- [Riemann 적분](riemann-integral.md): 분할과 상하합, 적분 가능성의 판정
+- [미적분학의 기본 정리](fundamental-calculus.md): 미분과 적분의 역관계
+- [상미분방정식](ordinary-differential-equations.md): Picard–Lindelöf 존재 정리와 선형 이론
+
+## 급수와 변환
+
+- [멱급수와 Taylor 급수](power-series.md): 수렴반경과 해석성
+- [Fourier 급수](fourier-series.md): 직교계 전개와 $L^2$ 수렴
+- [이산 Fourier 변환](fourier.md): 유한 순환군 위의 Fourier 해석
+- [Euler–Maclaurin 공식과 점근급수](euler-maclaurin.md): 합과 적분의 차이를 Bernoulli 수로 전개
+- [감마 함수와 Stirling 근사](gamma-function.md): 계승의 해석적 연속
+- [Poisson 합 공식](poisson-summation.md): 격자 합과 쌍대격자 합의 등식
+- [Mellin 변환과 Perron 공식](mellin-transform.md): 곱셈적 구조 위의 적분변환
+
+## 점근해석과 재합산
+
+- [Laplace 방법과 안장점](laplace-method.md): 지수적으로 집중된 적분의 주항
+- [정상위상법과 안장점 근사](stationary-phase.md): 진동적분의 위상이 멈추는 자리
+- [Stokes 현상과 재합산](stokes-phenomenon.md): 점근전개의 계수가 불연속으로 바뀌는 선
+- [Padé 근사와 Borel 재합산](borel-pade.md): 발산급수에 값을 주는 두 방법
+- [Resurgence 와 alien 미분](resurgence.md): 섭동급수와 비섭동 효과의 연결
+- [Airy 함수와 회전점](airy-functions.md): 회전점 근방의 표준형
+- [WKB 근사와 연결 공식](wkb-approximation.md): 작은 매개변수를 가진 방정식의 지수적 해
+- [정확한 WKB 와 Voros 기호](exact-wkb.md): WKB 급수를 Borel 재합산으로 엄밀화
+- [Painlevé 방정식과 등모노드로미 변형](painleve-equations.md): 가동 특이점이 극뿐인 비선형 방정식
+
+## 다른 분야로 가는 다리
+
+- [Lobachevsky 함수](lobachevsky-function.md): Fourier 급수가 쌍곡 부피를 계산한다
+- [Lebesgue 적분](lebesgue-integral.md): 적분을 측도로 다시 세운다
+- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md): 복소미분이 해석성을 강제한다
+- [Hilbert 공간](hilbert-spaces.md), [Banach 공간과 세 기본정리](banach-spaces.md): 완비성을 무한차원 선형공간으로
+
+# 빈자리
+
+- 균등연속과 Heine–Cantor 정리: 컴팩트 위의 연속함수가 균등연속이 되는 정리인데 문서가 없다.
+- 급수의 수렴판정: 비교, 비율, 근, 교대급수 판정이 멱급수 문서에 흩어져 있다.
+- 다변수 미분과 역함수·음함수 정리: [미분](derivative.md)이 1 차원에 머물러 [다양체](manifolds.md)로 가는 다리가 비어 있다.
+- Arzelà–Ascoli 정리: 함수공간의 컴팩트성 판정. 상미분방정식의 Peano 존재 정리가 이것을 쓴다.
+- Stone–Weierstrass 정리: 다항식 근사의 일반형.
+- 변분법과 Euler–Lagrange 방정식: 범함수의 극값 조건.
+- Sturm–Liouville 이론: 2 계 선형 작용소의 고유함수 전개. Fourier 급수의 일반화다.
+
+# 연관 문서
+
+## 선수지식
+
+- [집합](sets.md)
+
+## 더 알아보기
+
+- [수열의 극한](limits.md)
+- [Cauchy 수열과 완비성](completeness.md)
+- [연속함수](continuity.md)
+- [이산 Fourier 변환](fourier.md)
+
+#analysis #complex_analysis #overview

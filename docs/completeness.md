@@ -117,6 +117,7 @@ $\mathbb{R}$ 은 완비지만 유계가 아니고, $(0,1]$ 은 유계지만 완�
 ## 선수지식
 
 - [거리 공간](metric-spaces.md)
+- [해석학 개관](analysis-overview.md)
 
 ## 더 알아보기
 

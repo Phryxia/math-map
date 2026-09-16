@@ -160,6 +160,7 @@ DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 Fourier 변환이다. 지수�
 ## 선수지식
 
 - [선형사상](linear-maps.md)
+- [해석학 개관](analysis-overview.md)
 
 ## 더 알아보기
 
