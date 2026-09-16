@@ -177,7 +177,7 @@ $E/\mathbb Q$ 의 해석적 순위를 $r_{\mathrm{an}}=\mathrm{ord}_{s=1}L(E,s)$
 |---|---|
 | $r_{\mathrm{an}}=0$ | $\mathrm{rank}\thinspace E(\mathbb Q)=0$ 이고 $\text{Ш}(E/\mathbb Q)$ 유한 |
 | $r_{\mathrm{an}}=1$ | $\mathrm{rank}\thinspace E(\mathbb Q)=1$ 이고 $\text{Ш}(E/\mathbb Q)$ 유한 |
-| $r_{\mathrm{an}}\ge2$ | 아무것도 증명되지 않음 |
+| $r_{\mathrm{an}}\ge2$ | 두 정리가 결론을 주지 않음 |
 
 $r_{\mathrm{an}}=0$ 인 경우도 같은 장치로 처리된다. 꼬임 $E^{D}$ 쪽이 순위 $1$ 을 갖는 $K$ 를 골라 $E$ 쪽 Heegner 점이 비틀림임을 보이면 Kolyvagin 논법이 $E(\mathbb Q)$ 를 유한으로 만든다. 그런 $K$ 의 존재는 Waldspurger 계열의 비소실 정리(Bump–Friedberg–Hoffstein, Murty–Murty)가 보장한다.
 
@@ -209,7 +209,7 @@ $D$ 를 잘못 고르면 $y_K$ 가 비틀림 점이 되어 정보를 주지 않�
 
 - **Gross–Zagier–Zhang.** Zhang 이 공식을 총실체 위의 Shimura 곡선으로 확장했고, Yuan–Zhang–Zhang 이 자기동형 표현의 언어로 일반화했다. 그 형태에서 공식은 Waldspurger 공식의 미분판이다.
 - **$p$ 진 Gross–Zagier.** Perrin-Riou 가 $p$ 진 $L$ 함수의 미분과 $p$ 진 높이를 잇는 판본을 얻었다. Iwasawa 주추측과 결합해 $\text{Ш}$ 의 $p$ 부분을 재는 데 쓰인다.
-- **Stark–Heegner 점.** Darmon 이 실이차체에서 유사한 점을 $p$ 진 상반평면 위의 적분으로 정의하는 구성을 제안했다. 대수성은 아직 증명되지 않았다.
+- **Stark–Heegner 점.** Darmon 이 실이차체에서 유사한 점을 $p$ 진 상반평면 위의 적분으로 정의하는 구성을 제안했고, 그 점이 대수적이라는 것은 추측으로 남겼다[^2].
 
 # 활용
 
@@ -232,6 +232,7 @@ $$
 Heegner 점은 특수값을 대수적 순환류로 실현하는 도식의 예다. $L$ 함수의 소실 차수만큼의 대수적 순환류가 있어야 한다는 Beilinson–Bloch 류의 예측이 차수 $1$ 에 대해 증명된 경우이며, 이후의 Euler 계 이론과 $p$ 진 $L$ 함수의 미분 공식, 자기동형 주기 공식이 이 그림을 따른다.
 
 [^1]: B. Gross, D. Zagier, *Heegner points and derivatives of L-series*, Invent. Math. **84** (1986), 225–320. Kolyvagin 은 *Finiteness of* $E(\mathbb Q)$ *and* $\text{Ш}(E,\mathbb Q)$ *for a subclass of Weil curves*, Izv. Akad. Nauk SSSR **52** (1988). 해설로는 H. Darmon, *Rational Points on Modular Elliptic Curves* (CBMS 101) 와 Gross 의 *Kolyvagin's work on modular elliptic curves* 가 있다.
+[^2]: H. Darmon, *Integration on* $\mathcal H\_p\times\mathcal H$ *and arithmetic applications*, Ann. of Math. **154** (2001), 589–639. Stark–Heegner 점을 구성하고 그 대수성을 추측으로 제시한다.
 
 # 연관 문서
 
