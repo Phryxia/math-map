@@ -91,7 +91,7 @@ for f, name in ([[3, 1], "T + 3"], [[3, 0, 1], "T^2 + 3"], [[6, 3, 1], "T^2 + 3T
 # T^2 + 3T + 6   [1, 3, 5, 7, 9, 11]       lambda = 2, nu = 1  (n >= 1 부터)
 ```
 
-$n=0$ 항이 공식에서 벗어나는 것도 보인다. 정리가 "충분히 큰 $n$" 을 요구하는 이유가 이 어긋남이다. $X=\Lambda/(p^{m})$ 로 두면 $\#(X/\omega_nX)=p^{m\,p^{n}}$ 이 되어 $\mu$ 항이 나타난다.
+$n=0$ 항이 공식에서 벗어나는 것도 보인다. 정리가 충분히 큰 $n$ 을 요구하는 이유가 이 어긋남이다. $X=\Lambda/(p^{m})$ 로 두면 $\#(X/\omega_nX)=p^{m\,p^{n}}$ 이 되어 $\mu$ 항이 나타난다.
 
 ## 두 개의 멱급수
 
@@ -266,7 +266,7 @@ $p$ 가 $h$ 를 나누지 않는 정칙소수일 조건이 $p\nmid B_2B_4\cdots 
 
 $L$ 함수의 특수값이 대수적 원소로 실현된다는 Stark 의 예측은 순환체 단수를 일반 수체로 확장하려는 시도다. Rubin–Stark 원소가 예측대로 존재한다면 그것이 Euler 계를 이루고, 총실체 위의 주추측과 Gross–Stark 추측이 같은 논법으로 정리될 것이다. 아직 존재성 자체가 추측 단계이며, [Euler 계](euler-systems.md) 문서에서 말한 "목록이 짧다" 는 한계가 여기서도 그대로 나타난다.
 
-[^1]: 표준 교재는 L. Washington, *Introduction to Cyclotomic Fields* (2판, Springer 1997) 7, 13, 15 장. 주추측의 두 증명은 B. Mazur, A. Wiles, *Class fields of abelian extensions of* $\mathbb Q$, Invent. Math. **76** (1984) 와 K. Rubin 의 부록(Washington 2판 15 장). Ferrero–Washington 은 Ann. of Math. **109** (1979). 타원곡선 쪽은 C. Skinner, E. Urban, *The Iwasawa main conjectures for* $\mathrm{GL}_2$, Invent. Math. **195** (2014). 본문의 성장 공식 수치 확인은 직접 계산한 것이다.
+[^1]: 표준 교재는 L. Washington, *Introduction to Cyclotomic Fields* (2판, Springer 1997) 7, 13, 15 장. 주추측의 두 증명은 B. Mazur, A. Wiles, *Class fields of abelian extensions of* $\mathbb Q$ (Invent. Math. **76**, 1984) 와 K. Rubin 의 부록(Washington 2판 15 장). Ferrero–Washington 은 Ann. of Math. **109** (1979). 타원곡선 쪽은 C. Skinner, E. Urban, *The Iwasawa main conjectures for* $\mathrm{GL}_2$ (Invent. Math. **195**, 2014). 본문의 성장 공식 수치 확인은 직접 계산한 것이다.
 
 # 연관 문서
 

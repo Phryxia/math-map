@@ -77,7 +77,7 @@ $$
 X=\bigsqcup_{w\in W}\ BwB/B\qquad(\text{Schubert 세포})
 $$
 
-가 $X$ 를 Weyl 군으로 색인된 세포로 나누고, [범주 $\mathcal O$](category-o.md) 의 대상들이 이 세포를 따라 지지된 $\mathcal D$ 가군에 대응한다. Verma 가군은 한 세포에 지지된 것, 기약 가군은 세포의 닫힘 위 교차 코호몰로지 층에 대응한다.
+가 $X$ 를 Weyl 군으로 색인된 세포로 나누고, [범주 O](category-o.md) 의 대상들이 이 세포를 따라 지지된 $\mathcal D$ 가군에 대응한다. Verma 가군은 한 세포에 지지된 것, 기약 가군은 세포의 닫힘 위 교차 코호몰로지 층에 대응한다.
 
 ```mermaid
 graph LR
@@ -91,7 +91,7 @@ graph LR
 
 ## 국소화 정리
 
-$X=G/B$, $\chi_0$ 를 자명한 중심 지표라 한다.
+$X=G/B$ 로 두고 $\chi_0$ 를 자명한 중심 지표라 한다.
 
 > **정리 (Beilinson–Bernstein, 1981).** $\Gamma(X,-)$ 는 준연접 $\mathcal D_X$ 가군의 범주에서 $U(\mathfrak g)_{\chi_0}$ 가군의 범주로 가는 범주 동치이고, 역함자는 $\mathrm{Loc}(M)=\mathcal D_X\otimes_{U(\mathfrak g)}M$ 이다.
 
@@ -146,7 +146,7 @@ Soergel 은 이 그림의 조합적 그림자를 뽑아냈다. 편향층의 초�
 
 아핀 판본의 국소화가 임계 준위 $\widehat{\mathfrak g}$ 가군과 오퍼(oper) 사이의 대응을 준다. 이 대응이 기하학적 Langlands 강령의 자기동형 쪽을 기술하는 언어가 되고, 유한 차원에서 KL 추측이 차지했던 자리를 무한 차원에서 되풀이한다.
 
-[^1]: A. Beĭlinson, J. Bernstein, *Localisation de* $\mathfrak g$*-modules*, C. R. Acad. Sci. Paris **292** (1981), 15–18. 독립적 증명은 J.-L. Brylinski, M. Kashiwara, *Kazhdan-Lusztig conjecture and holonomic systems*, Invent. Math. **64** (1981). 교과서 서술은 R. Hotta, K. Takeuchi, T. Tanisaki, *D-Modules, Perverse Sheaves, and Representation Theory* (2008) 11–12장. 표수 $p$ 판본은 R. Bezrukavnikov, I. Mirković, D. Rumynin, *Localization of modules for a semisimple Lie algebra in prime characteristic*, Ann. of Math. **167** (2008). 본문의 코호몰로지 표는 직접 계산한 것이다.
+[^1]: A. Beĭlinson, J. Bernstein, *Localisation de g-modules* (C. R. Acad. Sci. Paris **292**, 1981), 15–18. 독립적 증명은 J.-L. Brylinski, M. Kashiwara, *Kazhdan-Lusztig conjecture and holonomic systems*, Invent. Math. **64** (1981). 교과서 서술은 R. Hotta, K. Takeuchi, T. Tanisaki, *D-Modules, Perverse Sheaves, and Representation Theory* (2008) 11–12장. 표수 $p$ 판본은 R. Bezrukavnikov, I. Mirković, D. Rumynin, *Localization of modules for a semisimple Lie algebra in prime characteristic*, Ann. of Math. **167** (2008). 본문의 코호몰로지 표는 직접 계산한 것이다.
 
 # 연관 문서
 

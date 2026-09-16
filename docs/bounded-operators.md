@@ -40,7 +40,7 @@ graph TB
 
 ## 유계 작용소
 
-Hilbert 공간 $H$, $K$ 사이의 선형사상 $T:H\to K$ 가 유계라는 것은 다음이 유한하다는 뜻이다.
+Hilbert 공간 $H$ 와 $K$ 사이의 선형사상 $T:H\to K$ 가 유계라는 것은 다음이 유한하다는 뜻이다.
 
 $$
 \lVert T\rVert=\sup_{\lVert x\rVert\le1}\lVert Tx\rVert
@@ -94,7 +94,7 @@ $$
 
 ## 자기수반이면 스펙트럼이 실수
 
-$T=T^*$ 이면 $\sigma(T)\subset\mathbb R$ 이고, 나아가 $\sigma(T)\subset[m,M]$ 이다. 여기서 $m=\inf_{\lVert x\rVert=1}\langle Tx,x\rangle$, $M=\sup_{\lVert x\rVert=1}\langle Tx,x\rangle$ 이며 양 끝점이 모두 스펙트럼에 속한다.
+$T=T^*$ 이면 $\sigma(T)\subset\mathbb R$ 이고, 나아가 $\sigma(T)\subset[m,M]$ 이다. 여기서 $m=\inf_{\lVert x\rVert=1}\langle Tx,x\rangle$ 이고 $M=\sup_{\lVert x\rVert=1}\langle Tx,x\rangle$ 이며 양 끝점이 모두 스펙트럼에 속한다.
 
 $\lambda=a+bi$ 에 $b\ne0$ 이면 $\lVert(T-\lambda)x\rVert\ge|b|\lVert x\rVert$ 가 직접 계산으로 나오고, 이것이 단사성과 치역의 닫힘을 동시에 준다.
 
@@ -102,7 +102,7 @@ $\lambda=a+bi$ 에 $b\ne0$ 이면 $\lVert(T-\lambda)x\rVert\ge|b|\lVert x\rVert$
 
 $H=L^2[0,1]$ 에서 $(Mf)(x)=xf(x)$ 를 보자. 자기수반이고 $\lVert M\rVert=1$ 이다.
 
-$\lambda\in[0,1]$ 에 대해 $(M-\lambda)f=g$ 를 풀면 $f(x)=g(x)/(x-\lambda)$ 인데, $\lambda$ 근처에서 이 함수가 제곱적분가능하지 않을 수 있으므로 역작용소가 유계가 아니다. 따라서 $[0,1]\subset\sigma(M)$. 반대로 $\lambda\notin[0,1]$ 이면 $1/(x-\lambda)$ 가 유계이므로 가역이다. 즉 $\sigma(M)=[0,1]$ 이다.
+$\lambda\in[0,1]$ 에 대해 $(M-\lambda)f=g$ 를 풀면 $f(x)=g(x)/(x-\lambda)$ 인데, $\lambda$ 근처에서 이 함수가 제곱적분가능하지 않을 수 있으므로 역작용소가 유계가 아니다. 따라서 $[0,1]\subset\sigma(M)$ 이다. 반대로 $\lambda\notin[0,1]$ 이면 $1/(x-\lambda)$ 가 유계이므로 가역이다. 즉 $\sigma(M)=[0,1]$ 이다.
 
 그런데 $xf(x)=\lambda f(x)$ 는 $x\ne\lambda$ 인 거의 모든 곳에서 $f=0$ 을 강제하므로 $f=0$ 이다. 고유값이 하나도 없다. 스펙트럼 전체가 연속 스펙트럼이며, 이것이 무한차원에서 새로 나타나는 현상이다.
 

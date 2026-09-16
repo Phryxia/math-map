@@ -73,7 +73,7 @@ $$
 
 ## 정리
 
-> **Chebotarev 밀도 정리.** $L/K$ 가 유한 Galois 확대이고 $G=\mathrm{Gal}(L/K)$, $C\subseteq G$ 가 켤레류면
+> **Chebotarev 밀도 정리.** $L/K$ 가 유한 Galois 확대이고 $G=\mathrm{Gal}(L/K)$ 이고 $C\subseteq G$ 가 켤레류면
 > $$
 > \delta\Big(\Big\{\mathfrak p \text{ 불분기}:\Big[\tfrac{L/K}{\mathfrak p}\Big]=C\Big\}\Big)=\frac{|C|}{|G|}
 > $$
@@ -85,7 +85,7 @@ $C=\{1\}$ 인 경우가 특히 자주 쓰인다. $L$ 에서 완전분해하는 �
 
 ## 특수 사례들
 
-- **Dirichlet 등차수열 정리.** $K=\mathbb Q$, $L=\mathbb Q(\zeta_m)$. 켤레류가 한원소이므로 각 $a\in(\mathbb Z/m\mathbb Z)^\times$ 에 대해 $p\equiv a\pmod m$ 인 소수의 밀도가 $1/\varphi(m)$ 이다.
+- **Dirichlet 등차수열 정리.** $K=\mathbb Q$ 이고 $L=\mathbb Q(\zeta_m)$ 인 경우다. 켤레류가 한원소이므로 각 $a\in(\mathbb Z/m\mathbb Z)^\times$ 에 대해 $p\equiv a\pmod m$ 인 소수의 밀도가 $1/\varphi(m)$ 이다.
 - **이차체.** $L=\mathbb Q(\sqrt d)$ 면 $G\cong\mathbb Z/2$ 이고, $\left(\frac dp\right)=1$ 인 소수와 $-1$ 인 소수가 각각 절반이다.
 - **다항식의 분해형.** $f\in\mathbb Z[x]$ 가 기약이고 $L$ 이 분해체일 때, $f$ 가 법 $p$ 에서 어떤 차수들의 곱으로 쪼개지는지는 $\mathrm{Frob}_p$ 의 순열 사이클형으로 결정된다. 그래서 분해형의 분포가 Galois 군 안의 사이클형 분포와 같다.
 - **밀도 1 인 조건.** 거의 모든 $p$ 에서 $f$ 가 근을 가지면, 모든 Frobenius 가 어떤 근을 고정한다는 뜻이다. 유한군은 진부분군들의 켤레 합집합이 될 수 없으므로 $f$ 가 $\mathbb Q$ 에서 근을 가져야 한다. 국소 정보가 대역 정보를 강제하는 전형적인 논법이다.
