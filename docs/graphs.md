@@ -90,6 +90,7 @@ $$
 ## 선수지식
 
 - [집합](sets.md)
+- [그래프 이론 개관](graph-theory-overview.md)
 
 ## 더 알아보기
 

@@ -116,6 +116,7 @@ Mirsky 정리(최장 사슬의 길이 = 반사슬 분할의 최소 개수)가 �
 ## 선수지식
 
 - [Lovász 세타 함수](lovasz-theta.md)
+- [그래프 이론 개관](graph-theory-overview.md)
 
 ## 더 알아보기
 

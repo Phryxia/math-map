@@ -1,0 +1,92 @@
+# 그래프 이론 개관
+
+# 개요
+
+그래프 이론은 정점과 간선만으로 이루어진 구조를 다룬다. 물음은 "연결 관계만 남겼을 때 무엇을 말할 수 있는가" 이고, 답은 세 방향에서 온다. 조합적 논증, 다항시간 알고리즘, 그리고 인접행렬의 스펙트럼이다.
+
+이 지도의 그래프 문서는 다섯 줄기다. 기본 구조와 평면성, 색칠과 매칭, 최적화 알고리즘, 동형 판정, 그리고 스펙트럼 그래프 이론이다. 그래프 알고리즘의 계산복잡도 쪽은 [NP-완전성](np-completeness.md)에, 조합적 세기 쪽은 [조합론 개관](combinatorics-overview.md)에 있다.
+
+시작은 [그래프](graphs.md)다. 거기서 [그래프 색칠](graph-coloring.md)과 [매칭](matchings.md)이 조합적 갈래로, [네트워크 흐름](network-flow.md)이 알고리즘 갈래로, [그래프 Laplacian](graph-laplacian.md)이 스펙트럼 갈래로 갈라진다.
+
+# 지도
+
+```mermaid
+graph TD
+  ST["집합"] --> GR["그래프"]
+  GR --> DG["DAG와 위상정렬"]
+  GR --> GC["그래프 색칠"]
+  GR --> MA["매칭과 Hall 정리"]
+  GR --> NF["네트워크 흐름"]
+  GR --> GI["그래프 동형"]
+  GR --> GL["그래프 Laplacian"]
+  EC["Euler 지표"] --> PG["평면 그래프"]
+  GR --> PG
+  LP["선형계획법"] --> NF
+  GC --> LT["Lovász 세타 함수"]
+  LT --> PF["완전그래프"]
+  GI --> CR["Color refinement"]
+  CR --> GN["GNN 표현력"]
+  MT["Matroid"] --> MS["최소 신장트리"]
+  GL --> ER["유효저항"]
+  GL --> EG["Expander 그래프"]
+  EV["고윳값과 고유벡터"] --> EG
+  ER --> SS["스펙트럼 희소화"]
+  ER --> RW["Random walk"]
+  EG --> RG["Ramanujan 그래프"]
+```
+
+# 갈래
+
+## 기본 구조
+
+- [그래프](graphs.md): 정점과 간선, 차수, 경로와 연결성
+- [DAG와 위상정렬](dag-topological.md): 방향 비순환 그래프와 선형 순서
+- [평면 그래프](planar-graphs.md): Euler 공식과 Kuratowski 정리
+
+## 색칠과 매칭
+
+- [그래프 색칠](graph-coloring.md): 채색수, 탐욕 상한, 4색 정리
+- [매칭과 Hall 정리](matchings.md): 이분그래프의 완전매칭 조건
+- [완전그래프와 강한 완전그래프 정리](perfect-graphs.md): 채색수와 클릭 수가 모든 유도부분그래프에서 같은 그래프
+
+## 알고리즘과 최적화
+
+- [최소 신장트리](minimum-spanning-tree.md): 탐욕 알고리즘이 최적이 되는 Matroid 구조
+- [네트워크 흐름과 최대유량 최소절단 정리](network-flow.md): 흐름의 최댓값과 절단의 최솟값이 같다
+
+## 동형과 구별
+
+- [그래프 동형](graph-isomorphism.md): 라벨을 잊은 동일성과 그 판정 문제
+- [Color refinement](color-refinement.md): 1차원 Weisfeiler–Leman 알고리즘과 그 한계
+- [논문: How Powerful are Graph Neural Networks?](gnn-expressivity.md): 메시지 전달 신경망의 구별력이 색 세분과 같다
+
+## 스펙트럼 그래프 이론
+
+- [그래프 Laplacian](graph-laplacian.md): 차수행렬과 인접행렬의 차, 고윳값과 연결성분
+- [유효저항](effective-resistance.md): 그래프를 전기 회로로 읽는다
+- [Expander 그래프와 스펙트럼 간극](expander-graphs.md): 성김과 강한 연결성의 공존
+- [Ramanujan 그래프의 명시적 구성](ramanujan-graphs.md): 스펙트럼 간극의 최적 경계를 달성하는 구성
+- [논문: Graph Sparsification by Effective Resistances](spectral-sparsification.md): 유효저항 표본추출로 간선 수를 줄인다
+
+# 빈자리
+
+- 그래프 탐색: 깊이 우선과 너비 우선, 강연결성분 분해. 알고리즘 갈래의 출발인데 문서가 없다.
+- Menger 정리와 연결도: 절단과 서로소 경로의 쌍대성. [네트워크 흐름](network-flow.md)의 조합적 판본이다.
+- Hamilton 순환: Dirac 조건과 Ore 조건, [NP-완전성](np-completeness.md)과의 관계.
+- Erdős–Rényi 랜덤 그래프: 거대 연결성분의 상전이와 문턱 현상.
+- Tutte 다항식: 색칠 다항식과 신뢰도 다항식을 함께 거두는 불변량.
+- 그래프 마이너와 Robertson–Seymour 정리: 평면성 판정을 일반화하는 구조 이론.
+
+# 연관 문서
+
+## 선수지식
+
+- [집합](sets.md)
+
+## 더 알아보기
+
+- [그래프](graphs.md)
+- [최소 신장트리](minimum-spanning-tree.md)
+- [완전그래프와 강한 완전그래프 정리](perfect-graphs.md)
+
+#graph_theory #combinatorics #algorithms #overview
