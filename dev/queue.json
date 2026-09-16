@@ -1,15 +1,23 @@
 {
   "version": 1,
-  "savedAt": "2026-09-16T05:06:37.854Z",
-  "nextSeq": 320,
+  "savedAt": "2026-09-16T09:06:48.531Z",
+  "nextSeq": 322,
   "items": [
     {
-      "id": "3e8e2d49",
-      "title": "수식이 맨 텍스트로 쓰인 자리 전수 점검 (2차)",
+      "id": "770a4d00",
+      "title": "수식이 맨 텍스트로 쓰인 자리 전수 점검 (3차)",
       "priority": 60,
-      "note": "규모: 63 문서 420 줄. 상위는 gradient-descent 20, finite-fields 19, fields 17, hypothesis-testing 17, godel-incompleteness 16, field-extensions 15, random-variables 15, holomorphic-functions 13, chinese-remainder-theorem 12, galois-theory 12, lagrange-duality 12, singular-value-decomposition 12. central-limit-theorem 은 2026-09-16 회차에 처리했다. 검사 스크립트: 코드펜스와 $$ 블록과 인라인 수식과 마크다운 링크를 마스킹한 뒤 /[α-ωΑ-Ω]|(?<![A-Za-z가-힣])[A-Za-z]_[0-9a-z]|(?<![A-Za-z])[A-Zσμφ](?=[의를이가에와과로])/ 로 줄을 찾는다. 문서마다 문맥을 봐야 해서 일괄 치환이 안 되고, 한 회차에 문서 몇 개씩 나눠 처리한다. 고칠 때 한글 조사 앞 공백 규칙을 같이 지킨다",
-      "createdAt": "2026-09-16T05:06:24.930Z",
-      "seq": 319
+      "note": "2026-09-16 회차에 30 문서를 처리해 61 문서 355 줄에서 31 문서 77 줄로 줄었다. 처리 완료: gradient-descent, finite-fields, fields, hypothesis-testing, field-extensions, random-variables, godel-incompleteness, holomorphic-functions, chinese-remainder-theorem, galois-theory, lagrange-duality, singular-value-decomposition, determinants, maximum-likelihood, spectral-theorem, eigenvalues, curvature, euler-characteristic, first-order-logic, polynomial-rings, ordinary-differential-equations, manifolds, axiom-of-choice, zfc-axioms, ordinals, law-of-large-numbers, inner-product-spaces, measurable-functions/measure/radon-nikodym/conditional-expectation/martingales(시그마 접두어), lambda-calculus/curry-howard(알파베타에타 접두어). 남은 상위는 counting-principles 5, generating-functions 5, inclusion-exclusion 5, markov-chains 5, ramsey-theory 5, formalism-hilbert-program 4, fundamental-group 4, homology 4, linear-programming 4, np-completeness 4, pigeonhole-principle 4. 검사 스크립트: 코드펜스와 이중달러 블록과 인라인 수식과 마크다운 링크와 맨 URL을 마스킹한 뒤 /[α-ωΑ-Ω]|(?<![A-Za-z가-힣])[A-Za-z]_[0-9a-z]|(?<![A-Za-z])[A-Zσμφ](?=[의를이가에와과로])/ 로 줄을 찾는다. 이론 이름 약어(PA, ZFC, Q)와 논문 제목 인용은 그대로 두고, 한글 조사가 직접 붙는 단일 문자만 수식으로 감싼다. 유니코드 첨자(Aᵗ, σᵢ, v₁)도 같이 LaTeX 로 옮긴다",
+      "createdAt": "2026-09-16T09:06:27.260Z",
+      "seq": 321
+    },
+    {
+      "id": "e4a29c7e",
+      "title": "닫는 $ 뒤 공백 누락 전수 수정",
+      "priority": 55,
+      "note": "CLAUDE.md 4절의 '닫는 $ 뒤에 공백 1개' 규칙 위반이 2026-09-16 회차 검사에서 108건 발견됐다. 대부분 인라인 수식 뒤에 쉼표/마침표/괄호가 바로 붙은 경우다(예: weak-convergence 54줄 $\\mu_n(A)\\to\\mu(A)$. ). 검사 스크립트: 코드펜스와 $$ 블록과 인라인 코드를 마스킹한 뒤 /\\$([^$\\n]+)\\$/g 로 인라인 수식을 찾아 닫는 $ 다음 문자가 공백도 줄끝도 아니면 보고한다. 문장부호 앞에 공백을 넣는 것이 기존 관례(martingales 170줄, newton-method 51줄 참고)",
+      "createdAt": "2026-09-16T08:55:58.199Z",
+      "seq": 320
     },
     {
       "id": "a0cca02e",
