@@ -18,7 +18,7 @@ $$
 
 가 모든 $A$ 에서 자연스럽게 성립한다. $\bar\rho$ 의 모든 올림이 $R_{\bar\rho}$ 위의 **보편 변형** 하나에서 특수화로 나온다는 뜻이다. 표현들의 모임이 환 하나가 되고, 표현론의 질문이 가환대수의 질문으로 바뀐다.
 
-환의 모양은 코호몰로지가 정한다. 접공간은 $H^1(G,\mathrm{ad}\,\bar\rho)$ 이고 관계식의 장애는 $H^2(G,\mathrm{ad}\,\bar\rho)$ 에 산다. [군 확대](group-extensions.md)에서 확대가 $H^2$ 로 분류되고 $H^1$ 이 자기동형을 쟀던 것과 같은 기계가, 여기서는 계수환을 $\mathbb Z/p^m$ 으로 한 층씩 올리는 데 쓰인다. 한 층 올리는 문제가 곧 작은 확대 문제이기 때문이다.
+환의 모양은 코호몰로지가 정한다. 접공간은 $H^1(G,\mathrm{ad}\thinspace\bar\rho)$ 이고 관계식의 장애는 $H^2(G,\mathrm{ad}\thinspace\bar\rho)$ 에 산다. [군 확대](group-extensions.md)에서 확대가 $H^2$ 로 분류되고 $H^1$ 이 자기동형을 쟀던 것과 같은 기계가, 여기서는 계수환을 $\mathbb Z/p^m$ 으로 한 층씩 올리는 데 쓰인다. 한 층 올리는 문제가 곧 작은 확대 문제이기 때문이다.
 
 # 직관
 
@@ -36,7 +36,7 @@ $$
 c(gh)=c(g)+\mathrm{Ad}(\bar\rho(g))\,c(h)
 $$
 
-이것이 계수가 $\mathrm{ad}\,\bar\rho=M_n(\mathbb F_p)$ 인 **1-코사이클** 조건이다. 그리고 $1+pm$ 꼴로 켤레를 취하면 $c$ 가 coboundary 만큼 바뀐다. 그러므로
+이것이 계수가 $\mathrm{ad}\thinspace\bar\rho=M_n(\mathbb F_p)$ 인 **1-코사이클** 조건이다. 그리고 $1+pm$ 꼴로 켤레를 취하면 $c$ 가 coboundary 만큼 바뀐다. 그러므로
 
 $$
 \{\text{1 차 변형}\}\big/\text{동치}\;\cong\;H^1(G,\mathrm{ad}\,\bar\rho)
@@ -46,7 +46,7 @@ $$
 
 ## 한 층씩 올리다 걸리는 곳
 
-$\mathbb Z/p^m$ 까지 올렸다고 하고 $\mathbb Z/p^{m+1}$ 로 한 층 더 가려 한다. 아무렇게나 들어 올린 사상은 준동형이 아니고, 준동형에서 어긋나는 정도가 2-코사이클을 하나 만든다. 그 류가 $H^2(G,\mathrm{ad}\,\bar\rho)$ 에서 $0$ 이어야 올림이 존재한다. 이것이 **장애류**다.
+$\mathbb Z/p^m$ 까지 올렸다고 하고 $\mathbb Z/p^{m+1}$ 로 한 층 더 가려 한다. 아무렇게나 들어 올린 사상은 준동형이 아니고, 준동형에서 어긋나는 정도가 2-코사이클을 하나 만든다. 그 류가 $H^2(G,\mathrm{ad}\thinspace\bar\rho)$ 에서 $0$ 이어야 올림이 존재한다. 이것이 **장애류**다.
 
 ```mermaid
 flowchart TD
@@ -164,7 +164,7 @@ $H^2(G_{\mathbb Q,S},\mathrm{ad}^0\bar\rho)=0$ 이면 변형 문제가 **장애 
 
 ## 가장 작은 변형환을 손으로 만든다
 
-$n=1$ 이고 $\bar\rho$ 는 자명한 지표라 하자. 그러면 $\mathrm{ad}\,\bar\rho$ 는 자명 계수 $\mathbb F_p$ 이고, $A$ 계수 변형은 $\rho\colon G\to 1+\mathfrak m_A$ 하나다. 켤레가 자명하므로 틀 문제도 없다. $G$ 두 개를 비교한다.
+$n=1$ 이고 $\bar\rho$ 는 자명한 지표라 하자. 그러면 $\mathrm{ad}\thinspace\bar\rho$ 는 자명 계수 $\mathbb F_p$ 이고, $A$ 계수 변형은 $\rho\colon G\to 1+\mathfrak m_A$ 하나다. 켤레가 자명하므로 틀 문제도 없다. $G$ 두 개를 비교한다.
 
 **$G=\mathbb Z_p$ 인 경우.** procyclic 이고 생성원을 $\gamma$ 라 한다. 변형은 $t\in\mathfrak m_A$ 를 아무렇게나 골라 $\gamma\mapsto 1+t$ 로 두면 되므로
 

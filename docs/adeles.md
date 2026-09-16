@@ -16,7 +16,7 @@ $$
 
 ## 중국인의 나머지 정리의 극한
 
-$\mathbb Z/n\mathbb Z\cong\prod_{p^k\|n}\mathbb Z/p^k\mathbb Z$ 가 중국인의 나머지 정리다. $n$ 을 계속 키워 극한을 취하면
+$\mathbb Z/n\mathbb Z\cong\prod_{p^k\Vert n}\mathbb Z/p^k\mathbb Z$ 가 중국인의 나머지 정리다. $n$ 을 계속 키워 극한을 취하면
 
 $$
 \hat{\mathbb Z}=\varprojlim_n\mathbb Z/n\mathbb Z\cong\prod_p\mathbb Z_p
@@ -136,7 +136,7 @@ $K$ 가 $\mathbb A_K$ 에서 이산이므로 조밀할 수는 없다. 그런데 
 
 > **강근사 정리.** $S$ 가 비어 있지 않은 자리들의 집합이면, $K$ 는 $\mathbb A_K^S=\prod'_{v\notin S}K_v$ 에서 조밀하다.
 
-$S=\{\infty\}$ 로 두면 "유한 개의 소수에서 원하는 합동조건을 지정하면 그것을 만족하는 유리수가 있다" 는 중국인의 나머지 정리가 된다. $S=\{p\}$ 로 두면 실수 근사와 나머지 소수에서의 합동조건을 동시에 만족시킬 수 있다는 뜻이 된다.
+$S=\lbrace\infty\rbrace$ 로 두면 "유한 개의 소수에서 원하는 합동조건을 지정하면 그것을 만족하는 유리수가 있다" 는 중국인의 나머지 정리가 된다. $S=\lbrace p\rbrace$ 로 두면 실수 근사와 나머지 소수에서의 합동조건을 동시에 만족시킬 수 있다는 뜻이 된다.
 
 빼는 자리가 반드시 하나는 있어야 한다는 점이 핵심이다. 곱 공식이 모든 자리를 묶고 있으므로, 다른 자리를 다 지정하면 남은 자리의 절댓값이 강제된다. 근사의 대가를 어딘가에서 치러야 하고, $S$ 가 그 대가를 치르는 자리다.
 
@@ -174,7 +174,7 @@ $$
 \mathrm{GL}_2(\mathbb Q)\backslash\mathrm{GL}_2(\mathbb A_{\mathbb Q})/K_0(N)\ \cong\ \Gamma_0(N)\backslash\mathbb H
 $$
 
-를 준다. Hecke 작용소는 이중 잉여류 $K_0(N)\,\mathrm{diag}(1,p)\,K_0(N)$ 이 된다. 레벨과 Hecke 작용소라는 다소 임의로 보이던 장치가 군론적으로 해명되는 것이다.
+를 준다. Hecke 작용소는 이중 잉여류 $K_0(N)\thinspace\mathrm{diag}(1,p)\thinspace K_0(N)$ 이 된다. 레벨과 Hecke 작용소라는 다소 임의로 보이던 장치가 군론적으로 해명되는 것이다.
 
 # 활용
 

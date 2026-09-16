@@ -107,8 +107,8 @@ $$
 
 모듈러 텐서범주 $\mathcal C$ 하나가 애니온 모형이다.
 
-- 단순대상 $\{a\}$ 는 애니온의 종류이고 유한 개다.
-- 융합 규칙은 $a\otimes b\cong\bigoplus_c N_{ab}^c\,c$ 다.
+- 단순대상 $\lbrace a\rbrace$ 는 애니온의 종류이고 유한 개다.
+- 융합 규칙은 $a\otimes b\cong\bigoplus_c N_{ab}^c\thinspace c$ 다.
 - $F$ 행렬: 결합자. 융합 순서를 바꾸는 기저 변환.
 - $R$ 행렬: 땋임. 두 애니온을 맞바꾸는 연산.
 - $S,T$ 는 원환면 위 상태공간에 대한 $\mathrm{SL}_2(\mathbb Z)$ 작용이다.
@@ -117,9 +117,9 @@ $F$ 와 $R$ 이 오각형 항등식과 육각형 항등식을 만족해야 하�
 
 ## 두 모형
 
-**Fibonacci**: 대상이 $\{\mathbf 1,\tau\}$ 이고 융합이 $\tau\otimes\tau=\mathbf 1\oplus\tau$ 다.
+**Fibonacci**: 대상이 $\lbrace\mathbf 1,\tau\rbrace$ 이고 융합이 $\tau\otimes\tau=\mathbf 1\oplus\tau$ 다.
 
-**Ising**: 대상이 $\{\mathbf 1,\sigma,\psi\}$ 이고 융합은
+**Ising**: 대상이 $\lbrace\mathbf 1,\sigma,\psi\rbrace$ 이고 융합은
 
 $$
 \sigma\otimes\sigma=\mathbf 1\oplus\psi,\qquad

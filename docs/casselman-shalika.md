@@ -45,7 +45,7 @@ $$
 
 $\mathcal H(G,K)$ 가 $W^\circ$ 에 작용하는 방식을 보면 예상할 수 있다. Hecke 대수의 원소 $f$ 가 $W^\circ$ 에 작용하면 Satake 변환의 값 $\hat f(\alpha)$ 를 곱한 것이 나온다. 곧 $W^\circ$ 는 Hecke 대수의 동시 고유벡터이고, 그 고유값이 $R(\widehat G)\cong\mathbb C[\alpha]^{S_n}$ 의 원소다.
 
-그러면 $\lambda$ 로 매겨진 함수족이 기약표현으로 매겨진 지표족과 같은 대수 위에서 같은 방식으로 변환한다. 남은 것은 정규화뿐이고, 그것이 $\delta_B^{1/2}$ 인자다. **표현환의 자연 기저가 $\{s_\lambda\}$ 이므로 답도 $s_\lambda$ 일 수밖에 없다.**
+그러면 $\lambda$ 로 매겨진 함수족이 기약표현으로 매겨진 지표족과 같은 대수 위에서 같은 방식으로 변환한다. 남은 것은 정규화뿐이고, 그것이 $\delta_B^{1/2}$ 인자다. **표현환의 자연 기저가 $\lbrace s_\lambda\rbrace$ 이므로 답도 $s_\lambda$ 일 수밖에 없다.**
 
 증명은 이 발견법을 엄밀하게 만드는 것이다. Casselman–Shalika 는 Whittaker 함수를 $\mathrm{Ind}_B^G$ 에서 교차 작용소의 합으로 쓰고, Weyl 군에 걸친 합이 Weyl 지표 공식의 bialternant 꼴로 접히는 것을 보인다.
 

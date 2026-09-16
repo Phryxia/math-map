@@ -109,7 +109,7 @@ for n in (10, 100, 1000):
 
 - **유계 수렴 정리.** $\mu(X) < \infty$ 이고 $\lvert f_n \rvert \le M$ 이면 상수함수 $M$ 이 지배함수이므로 교환된다. 확률공간에서 유계 확률변수열에 바로 쓸 수 있다.
 - **급수의 교환.** $\sum_n \int \lvert g_n \rvert < \infty$ 이면 $\int \sum_n g_n = \sum_n \int g_n$ 다. 부분합이 $\sum_n \lvert g_n \rvert$ 에 지배되기 때문이며, 부호가 섞인 급수에서 필요한 형태다.
-- **적분 기호 아래 미분.** $\lvert \partial f/\partial t\,(x,t) \rvert \le G(x)$ 이면
+- **적분 기호 아래 미분.** $\lvert \partial f/\partial t\thinspace(x,t) \rvert \le G(x)$ 이면
 
 $$
 \frac{d}{dt}\int_X f(x,t)\,d\mu=\int_X\frac{\partial f}{\partial t}(x,t)\,d\mu

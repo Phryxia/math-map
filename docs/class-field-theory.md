@@ -83,7 +83,7 @@ $$
 1\to\frac{\mathcal O_K^\times}{\mathcal O_{K,\mathfrak m}^\times}\to\frac{(\mathcal O_K/\mathfrak m_0)^\times\times\{\pm1\}^{\mathfrak m_\infty}}{1}\to\mathrm{Cl}_{\mathfrak m}(K)\to\mathrm{Cl}(K)\to1
 $$
 
-$K=\mathbb Q$ 이고 $\mathfrak m=(m)\infty$ 인 경우를 확인해 두자. $\mathrm{Cl}(\mathbb Q)=1$ 이고 $\mathbb Z^\times=\{\pm1\}$ 인데 $\mathfrak m_\infty$ 조건이 양수만 남기므로
+$K=\mathbb Q$ 이고 $\mathfrak m=(m)\infty$ 인 경우를 확인해 두자. $\mathrm{Cl}(\mathbb Q)=1$ 이고 $\mathbb Z^\times=\lbrace\pm1\rbrace$ 인데 $\mathfrak m_\infty$ 조건이 양수만 남기므로
 
 $$
 \mathrm{Cl}_{(m)\infty}(\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times

@@ -28,7 +28,7 @@ Brauer 대수는 군의 군대수가 아니다. 원소가 치환이 아니라 **
 
 $\mathrm{GL}(V)$ 불변인 $V^{\otimes k}\to V^{\otimes k}$ 사상은 텐서 자리를 섞는 것뿐이다. 그래서 $S_k$ 가 답이었다.
 
-$\mathrm O(n)$ 은 여기에 더해 불변 이차형식 $\langle\,,\rangle$ 을 보존한다. 그러면 새로운 연산 두 개가 불변이 된다.
+$\mathrm O(n)$ 은 여기에 더해 불변 이차형식 $\langle\thinspace,\rangle$ 을 보존한다. 그러면 새로운 연산 두 개가 불변이 된다.
 
 $$
 \text{계약}:\ v\otimes w\ \mapsto\ \langle v,w\rangle,
@@ -86,7 +86,7 @@ graph TD
 
 ## Brauer 대수
 
-$\delta\in\mathbb C$ 에 대해 $B_k(\delta)$ 는 $\{1,\dots,k\}\sqcup\{1',\dots,k'\}$ 의 완전 짝짓기들을 기저로 갖는 $\mathbb C$ 대수다. 두 도형 $d_1,d_2$ 의 곱은 $d_1$ 아래에 $d_2$ 를 붙여 얻은 도형 $d$ 와 생긴 닫힌 고리 수 $c$ 에 대해
+$\delta\in\mathbb C$ 에 대해 $B_k(\delta)$ 는 $\lbrace 1,\dots,k\rbrace\sqcup\lbrace 1',\dots,k'\rbrace$ 의 완전 짝짓기들을 기저로 갖는 $\mathbb C$ 대수다. 두 도형 $d_1,d_2$ 의 곱은 $d_1$ 아래에 $d_2$ 를 붙여 얻은 도형 $d$ 와 생긴 닫힌 고리 수 $c$ 에 대해
 
 $$
 d_1\cdot d_2=\delta^{\,c}\,d

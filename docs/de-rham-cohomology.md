@@ -18,7 +18,7 @@ Poincaré 보조정리가 그 진술이다. 수축가능한 열린집합 위에�
 
 ## 각형식
 
-$M=\mathbb R^2\setminus\{0\}$ 위에서 다음을 보자.
+$M=\mathbb R^2\setminus\lbrace 0\rbrace$ 위에서 다음을 보자.
 
 $$
 \omega=\frac{-y\,dx+x\,dy}{x^2+y^2}
@@ -101,7 +101,7 @@ $$
 | $S^1$ | $\mathbb R$ | $\mathbb R$ | $0$ |
 | $S^2$ | $\mathbb R$ | $0$ | $\mathbb R$ |
 | $T^2$ | $\mathbb R$ | $\mathbb R^2$ | $\mathbb R$ |
-| $\mathbb R^2\setminus\{0\}$ | $\mathbb R$ | $\mathbb R$ | $0$ |
+| $\mathbb R^2\setminus\lbrace 0\rbrace$ | $\mathbb R$ | $\mathbb R$ | $0$ |
 
 $H^0$ 의 차원이 연결 성분의 개수다. $d f=0$ 인 함수가 각 성분에서 상수이기 때문이다.
 
@@ -149,7 +149,7 @@ $$
 
 "$d\omega=0$ 인 $\omega$ 에 대해 $\eta$ 가 존재하는가" 는 전형적인 편미분방정식 문제다. 코호몰로지가 그 답을 위상으로 환원한다. $H^k=0$ 이면 항상 풀리고, 아니면 장애물이 정확히 코호몰로지류로 측정된다.
 
-$\mathbb R^3$ 에서 $\mathrm{curl}\,F=0$ 이면 $F=\nabla f$ 인 것과, 구멍 있는 영역에서 그것이 깨지는 것이 $H^1$ 의 이야기다. 유체역학의 순환과 전자기학의 게이지 퍼텐셜이 같은 구조다.
+$\mathbb R^3$ 에서 $\mathrm{curl}\thinspace F=0$ 이면 $F=\nabla f$ 인 것과, 구멍 있는 영역에서 그것이 깨지는 것이 $H^1$ 의 이야기다. 유체역학의 순환과 전자기학의 게이지 퍼텐셜이 같은 구조다.
 
 ## 물리의 위상적 효과
 

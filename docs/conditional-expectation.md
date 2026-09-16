@@ -69,7 +69,7 @@ $$
 
 **정리.** $E\lvert X \rvert < \infty$ 이면 $E[X \mid \mathcal G]$ 가 존재하고, 거의 확실하게 유일하다.
 
-*유일성.* $Y$ 와 $Y'$ 가 둘 다 조건을 만족한다고 하자. $A = \{Y - Y' > \varepsilon\} \in \mathcal G$ 에 대해 두 부분적분 등식을 빼면 $\int_A (Y - Y') \, dP = 0$ 이고, 피적분함수가 $A$ 위에서 $\varepsilon$ 보다 크므로 $\varepsilon P(A) \le 0$ 이다. 따라서 $P(A) = 0$ 이다. $\varepsilon \downarrow 0$ 과 역할을 바꾼 논증으로 $Y = Y'$ 가 거의 확실하게 성립한다. 따라서 조건부 기댓값은 **버전**(version)까지만 결정되며, 등식은 모두 "거의 확실하게"로 읽어야 한다.
+*유일성.* $Y$ 와 $Y'$ 가 둘 다 조건을 만족한다고 하자. $A = \lbrace Y - Y' > \varepsilon\rbrace \in \mathcal G$ 에 대해 두 부분적분 등식을 빼면 $\int_A (Y - Y') \thinspace dP = 0$ 이고, 피적분함수가 $A$ 위에서 $\varepsilon$ 보다 크므로 $\varepsilon P(A) \le 0$ 이다. 따라서 $P(A) = 0$ 이다. $\varepsilon \downarrow 0$ 과 역할을 바꾼 논증으로 $Y = Y'$ 가 거의 확실하게 성립한다. 따라서 조건부 기댓값은 **버전**(version)까지만 결정되며, 등식은 모두 "거의 확실하게"로 읽어야 한다.
 
 *존재성.* 먼저 $X \ge 0$ 라 하자. $\mathcal G$ 위에서 유한측도
 
@@ -119,7 +119,7 @@ $$
 
 증명은 우변이 $\mathcal G$ 가측이고 부분적분 등식을 만족함을 확인한 뒤 유일성을 쓰면 끝난다. 이후 성질들도 대부분 같은 전략을 따른다.
 
-**단조성.** $X \le Y$ 이면 $E[X \mid \mathcal G] \le E[Y \mid \mathcal G]$ 다. 실제로 $A = \{E[X \mid \mathcal G] - E[Y \mid \mathcal G] > \varepsilon\}$ 위에서 적분하면 모순이 나온다. 따름정리로 $\lvert E[X \mid \mathcal G] \rvert \le E[\lvert X \rvert \mid \mathcal G]$ 가 성립하고, 따라서 조건부 기댓값은 $L^1$ 위의 수축이다.
+**단조성.** $X \le Y$ 이면 $E[X \mid \mathcal G] \le E[Y \mid \mathcal G]$ 다. 실제로 $A = \lbrace E[X \mid \mathcal G] - E[Y \mid \mathcal G] > \varepsilon\rbrace$ 위에서 적분하면 모순이 나온다. 따름정리로 $\lvert E[X \mid \mathcal G] \rvert \le E[\lvert X \rvert \mid \mathcal G]$ 가 성립하고, 따라서 조건부 기댓값은 $L^1$ 위의 수축이다.
 
 $$
 E\big[\,\big|E[X \mid \mathcal{G}]\big|\,\big] \;\le\; E[\,|X|\,].
@@ -131,7 +131,7 @@ $$
 E\big[\,E[X \mid \mathcal{G}] \,\big|\, \mathcal{H}\,\big] \;=\; E[X \mid \mathcal{H}].
 $$
 
-증명: 좌변은 $\mathcal H$ 가측이다. $A \in \mathcal H \subseteq \mathcal G$ 에 대해 $\int_A E[E[X \mid \mathcal G] \mid \mathcal H] \, dP = \int_A E[X \mid \mathcal G] \, dP = \int_A X \, dP$ 이며, 첫 등식은 $\mathcal H$ 에 대한 정의, 둘째 등식은 $A \in \mathcal G$ 이므로 $\mathcal G$ 에 대한 정의다. 유일성으로 결론이 난다. "정보를 적게 가진 쪽이 이긴다"는 이 성질이 [Martingale](martingales.md) 이론 전체의 계산 엔진이다.
+증명: 좌변은 $\mathcal H$ 가측이다. $A \in \mathcal H \subseteq \mathcal G$ 에 대해 $\int_A E[E[X \mid \mathcal G] \mid \mathcal H] \thinspace dP = \int_A E[X \mid \mathcal G] \thinspace dP = \int_A X \thinspace dP$ 이며, 첫 등식은 $\mathcal H$ 에 대한 정의, 둘째 등식은 $A \in \mathcal G$ 이므로 $\mathcal G$ 에 대한 정의다. 유일성으로 결론이 난다. "정보를 적게 가진 쪽이 이긴다"는 이 성질이 [Martingale](martingales.md) 이론 전체의 계산 엔진이다.
 
 **끌어내기 (taking out what is known).** $W$ 가 $\mathcal G$ 가측이고 $XW$ 가 적분 가능하면
 
@@ -153,7 +153,7 @@ $$
 \varphi\big(E[X \mid \mathcal{G}]\big) \;\le\; E[\varphi(X) \mid \mathcal{G}].
 $$
 
-*증명 스케치.* 볼록함수는 자신의 접선(지지선)들의 상한이다. 유리수 매개변수로 가산 집합 $\{(a_n, b_n)\}$ 을 골라 $\varphi(x) = \sup_n (a_n x + b_n)$ 로 쓸 수 있다. 각 $n$ 에 대해 $\varphi(X) \ge a_n X + b_n$ 이므로 단조성과 선형성으로 $E[\varphi(X) \mid \mathcal G] \ge a_n E[X \mid \mathcal G] + b_n$ 이고, 가산 상한을 취하면 영집합이 가산 번만 합쳐지므로 부등식이 거의 확실하게 유지된다.
+*증명 스케치.* 볼록함수는 자신의 접선(지지선)들의 상한이다. 유리수 매개변수로 가산 집합 $\lbrace(a_n, b_n)\rbrace$ 을 골라 $\varphi(x) = \sup_n (a_n x + b_n)$ 로 쓸 수 있다. 각 $n$ 에 대해 $\varphi(X) \ge a_n X + b_n$ 이므로 단조성과 선형성으로 $E[\varphi(X) \mid \mathcal G] \ge a_n E[X \mid \mathcal G] + b_n$ 이고, 가산 상한을 취하면 영집합이 가산 번만 합쳐지므로 부등식이 거의 확실하게 유지된다.
 
 $\varphi(x) = \lvert x \rvert^p$ 를 넣으면 $p \ge 1$ 인 모든 $L^p$ 에서 조건부 기댓값이 수축임이 따라 나온다. 이 사실은 [균등적분성](uniform-integrability.md)과 결합해 martingale 수렴 이론의 $L^1$ 수렴 판정에 쓰인다.
 

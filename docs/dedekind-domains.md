@@ -64,15 +64,15 @@ $\mathfrak p$ 에서 국소화한 $\mathcal O_{\mathfrak p}$ 는 극대 아이�
 
 - 국소 주 아이디얼 정역이면서 체가 아니다.
 - 극대 아이디얼이 $(\pi)$ 로 생성되고, 0 이 아닌 모든 아이디얼이 $(\pi^k)$ 다.
-- 분수체에 전사인 부치 $v:K^\times\to\mathbb Z$ 가 있어 $R=\{x:v(x)\ge0\}\cup\{0\}$ 이다.
+- 분수체에 전사인 부치 $v:K^\times\to\mathbb Z$ 가 있어 $R=\lbrace x:v(x)\ge0\rbrace\cup\lbrace 0\rbrace$ 이다.
 
 $\pi$ 를 균등화원이라 한다. $\mathbb Z_{(p)}$ 와 $p$ 진 정수환 $\mathbb Z_p$ 와 형식적 멱급수환 $k[[t]]$ 가 표준 예다.
 
 ## 분수 아이디얼
 
-$K$ 의 $R$ 부분가군 $I$ 중에서 $dI\subseteq R$ 인 $d\in R\setminus\{0\}$ 가 존재하는 것을 분수 아이디얼이라 한다. 곱은 원소들의 곱이 생성하는 가군으로 정의한다.
+$K$ 의 $R$ 부분가군 $I$ 중에서 $dI\subseteq R$ 인 $d\in R\setminus\lbrace 0\rbrace$ 가 존재하는 것을 분수 아이디얼이라 한다. 곱은 원소들의 곱이 생성하는 가군으로 정의한다.
 
-$I$ 가 가역이라는 것은 $IJ=R$ 인 $J$ 가 있다는 뜻이며, 그때 $J=\{x\in K:xI\subseteq R\}$ 로 유일하다.
+$I$ 가 가역이라는 것은 $IJ=R$ 인 $J$ 가 있다는 뜻이며, 그때 $J=\lbrace x\in K:xI\subseteq R\rbrace$ 로 유일하다.
 
 ## 부치와 지수
 

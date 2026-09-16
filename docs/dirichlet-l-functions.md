@@ -58,7 +58,7 @@ graph TD
 - $\chi(mn)=\chi(m)\chi(n)$
 - $\gcd(n,q)>1$ 이면 $\chi(n)=0$ 이고, 그렇지 않으면 $\chi(n)\ne0$
 
-동치인 서술로, 군 준동형 $(\mathbb Z/q\mathbb Z)^\times\to\mathbb C^\times$ 를 $\mathbb Z$ 로 끌어올린 뒤 단원이 아닌 곳에서 $0$ 으로 확장한 것이다. 단원군이 유한하므로 $\chi(n)$ 은 항상 $\varphi(q)$ 제곱근이며, 특히 $|\chi(n)|\in\{0,1\}$ 이다.
+동치인 서술로, 군 준동형 $(\mathbb Z/q\mathbb Z)^\times\to\mathbb C^\times$ 를 $\mathbb Z$ 로 끌어올린 뒤 단원이 아닌 곳에서 $0$ 으로 확장한 것이다. 단원군이 유한하므로 $\chi(n)$ 은 항상 $\varphi(q)$ 제곱근이며, 특히 $|\chi(n)|\in\lbrace 0,1\rbrace$ 이다.
 
 법 $q$ 의 지표는 정확히 $\varphi(q)$ 개다. 유한 아벨군 $G$ 와 그 지표군 $\hat G$ 가 (자연스럽지는 않게) 동형이기 때문이다.
 
@@ -72,17 +72,17 @@ $\chi$ 가 법 $q$ 의 지표이고 $d\mid q$ 인 어떤 $d$ 와 법 $d$ 의 지
 
 ## Dirichlet $L$ 함수
 
-$\mathrm{Re}\,s>1$ 에서 다음 급수가 절대수렴한다.
+$\mathrm{Re}\thinspace s>1$ 에서 다음 급수가 절대수렴한다.
 
 $$
 L(s,\chi)=\sum_{n=1}^\infty\frac{\chi(n)}{n^s}
 $$
 
-$\chi=\chi_0$ 이면 $L(s,\chi_0)=\zeta(s)\prod_{p\mid q}(1-p^{-s})$ 이므로 $\zeta$ 와 극·0 점을 극히 일부만 달리한다. $\chi$ 가 비자명하면 한 주기에 걸친 합 $\sum_{n=1}^q\chi(n)=0$ 이므로 부분합이 유계이고, 급수가 $\mathrm{Re}\,s>0$ 에서 조건수렴한다.
+$\chi=\chi_0$ 이면 $L(s,\chi_0)=\zeta(s)\prod_{p\mid q}(1-p^{-s})$ 이므로 $\zeta$ 와 극·0 점을 극히 일부만 달리한다. $\chi$ 가 비자명하면 한 주기에 걸친 합 $\sum_{n=1}^q\chi(n)=0$ 이므로 부분합이 유계이고, 급수가 $\mathrm{Re}\thinspace s>0$ 에서 조건수렴한다.
 
 ## 일반화된 Riemann 가설
 
-모든 Dirichlet 지표 $\chi$ 에 대해 $L(s,\chi)$ 의 비자명한 0 점이 전부 $\mathrm{Re}\,s=1/2$ 위에 있다는 주장이다. $\chi=\chi_0$ 인 경우가 원래 Riemann 가설이다.
+모든 Dirichlet 지표 $\chi$ 에 대해 $L(s,\chi)$ 의 비자명한 0 점이 전부 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 주장이다. $\chi=\chi_0$ 인 경우가 원래 Riemann 가설이다.
 
 # 성질
 
@@ -129,7 +129,7 @@ $$
 \qquad \epsilon=\frac{1-\chi(-1)}2
 $$
 
-가 함수방정식 $\Lambda(s,\chi)=\frac{\tau(\chi)}{i^\epsilon\sqrt q}\,\Lambda(1-s,\bar\chi)$ 를 만족한다. $\epsilon$ 은 $\chi$ 가 짝인지 홀인지를 나타내고, $\tau(\chi)=\sum_{n \bmod q}\chi(n)e^{2\pi in/q}$ 는 Gauss 합이다. 원시 지표에서 $|\tau(\chi)|=\sqrt q$ 이며, 이 등식이 함수방정식의 상수를 절댓값 1 로 만든다.
+가 함수방정식 $\Lambda(s,\chi)=\frac{\tau(\chi)}{i^\epsilon\sqrt q}\thinspace\Lambda(1-s,\bar\chi)$ 를 만족한다. $\epsilon$ 은 $\chi$ 가 짝인지 홀인지를 나타내고, $\tau(\chi)=\sum_{n \bmod q}\chi(n)e^{2\pi in/q}$ 는 Gauss 합이다. 원시 지표에서 $|\tau(\chi)|=\sqrt q$ 이며, 이 등식이 함수방정식의 상수를 절댓값 1 로 만든다.
 
 $\zeta$ 의 함수방정식과 달리 $s\mapsto1-s$ 가 $\chi$ 를 $\bar\chi$ 로 바꾼다. 실수 지표에서만 자기 자신으로 돌아온다.
 
@@ -141,7 +141,7 @@ $$
 \pi(x;q,a)\sim\frac1{\varphi(q)}\cdot\frac x{\ln x}
 $$
 
-즉 소수가 $\varphi(q)$ 개의 잉여류에 고르게 나뉜다. 증명의 핵심은 소수 정리와 같이 $\mathrm{Re}\,s=1$ 위에 $L$ 함수의 0 점이 없다는 것이다.
+즉 소수가 $\varphi(q)$ 개의 잉여류에 고르게 나뉜다. 증명의 핵심은 소수 정리와 같이 $\mathrm{Re}\thinspace s=1$ 위에 $L$ 함수의 0 점이 없다는 것이다.
 
 오차항을 $q$ 에 대해 고르게 잡는 것은 훨씬 어렵다. Siegel–Walfisz 정리가 $q\le(\ln x)^A$ 범위에서 이를 주지만, 상수가 비유효적이다. 실수 지표의 Siegel 0 점(있다면 $1$ 에 매우 가까운 실수 0 점)을 배제하지 못하기 때문이며, 존재하지 않는다고 믿어지는 대상 때문에 정리의 상수를 계산할 수 없다는 기묘한 상황이다. 훨씬 넓은 $q\le x^{1/2-\epsilon}$ 범위에서 평균적으로는 Bombieri–Vinogradov 정리가 GRH 에 준하는 결과를 무조건적으로 준다.
 
@@ -151,7 +151,7 @@ $\mathbb F_q$ 위의 다항식환 $\mathbb F_q[t]$ 는 $\mathbb Z$ 와 놀랄 �
 
 차이는 이쪽이 유한한 대상의 계수라는 점이다. $\mathbb F_q[t]$ 의 zeta 함수는 유리함수이고, 유한체 위의 곡선에 대한 $L$ 함수도 다항식이 되어 0 점이 유한 개다. Weil 이 1948 년에 곡선에 대해, Deligne 이 1974 년에 일반 다양체에 대해 그 0 점들의 절댓값이 정확히 $q^{-1/2}$ 임을 증명했다. 곧 함수체판 Riemann 가설은 정리다.
 
-증명이 정수로 옮겨 오지 않는 이유는 도구가 기하적이기 때문이다. 유한체 위의 다양체에는 코호몰로지와 Frobenius 작용이 있고, 0 점이 그 작용의 고윳값으로 나온다. $\mathrm{Spec}\,\mathbb Z$ 에 대응하는 기하를 세우려는 시도가 아직 성공하지 못했다. 그럼에도 구조적으로 같은 진술이 한쪽에서 참임은 강한 방증으로 여겨진다.
+증명이 정수로 옮겨 오지 않는 이유는 도구가 기하적이기 때문이다. 유한체 위의 다양체에는 코호몰로지와 Frobenius 작용이 있고, 0 점이 그 작용의 고윳값으로 나온다. $\mathrm{Spec}\thinspace\mathbb Z$ 에 대응하는 기하를 세우려는 시도가 아직 성공하지 못했다. 그럼에도 구조적으로 같은 진술이 한쪽에서 참임은 강한 방증으로 여겨진다.
 
 ## Chebyshev 편향
 

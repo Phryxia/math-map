@@ -61,11 +61,11 @@ $d(x,y)=\lVert x-y\rVert$ 가 거리를 주고, 이 거리에 대해 완비이�
 | 공간 | 노름 | 완비인가 |
 |---|---|---|
 | $\mathbb R^n$ | 임의의 노름 | 예 |
-| $C[0,1]$ | $\sup\|f\|$ | 예 |
-| $C[0,1]$ | $\int\|f\|$ | 아니오 |
-| $1\le p\le\infty$ 의 $\ell^p$ 와 $L^p$ | $(\sum\|x_n\|^p)^{1/p}$ | 예 |
-| $c_0$ | $\sup\|x_n\|$ | 예 |
-| 다항식 전체 | $\sup_{[0,1]}\|f\|$ | 아니오 |
+| $C[0,1]$ | $\sup\Vert f\Vert$ | 예 |
+| $C[0,1]$ | $\int\Vert f\Vert$ | 아니오 |
+| $1\le p\le\infty$ 의 $\ell^p$ 와 $L^p$ | $(\sum\Vert x_n\Vert^p)^{1/p}$ | 예 |
+| $c_0$ | $\sup\Vert x_n\Vert$ | 예 |
+| 다항식 전체 | $\sup_{[0,1]}\Vert f\Vert$ | 아니오 |
 
 $p=2$ 인 경우만 노름이 내적에서 나오며, 그때가 Hilbert 공간이다. 평행사변형 법칙이 성립하는지가 판정 기준이다.
 
@@ -95,9 +95,9 @@ $p:X\to\mathbb R$ 가 열등선형이고 $f$ 가 부분공간 $M$ 위의 선형�
 
 ## 균등유계성 원리
 
-$X$ 가 Banach, $\{T_\alpha\}\subset\mathcal B(X,Y)$ 가 모든 $x$ 에서 $\sup_\alpha\lVert T_\alpha x\rVert<\infty$ 를 만족하면 $\sup_\alpha\lVert T_\alpha\rVert<\infty$ 다.
+$X$ 가 Banach, $\lbrace T_\alpha\rbrace\subset\mathcal B(X,Y)$ 가 모든 $x$ 에서 $\sup_\alpha\lVert T_\alpha x\rVert<\infty$ 를 만족하면 $\sup_\alpha\lVert T_\alpha\rVert<\infty$ 다.
 
-$E_n=\{x:\sup_\alpha\lVert T_\alpha x\rVert\le n\}$ 이 닫힌 집합이고 합집합이 $X$ 이므로, Baire 범주 정리에 의해 어떤 $E_n$ 이 내부를 가진다. 그 공에서의 유계성을 평행이동과 스칼라배로 옮기면 결론이 나온다.
+$E_n=\lbrace x:\sup_\alpha\lVert T_\alpha x\rVert\le n\rbrace$ 이 닫힌 집합이고 합집합이 $X$ 이므로, Baire 범주 정리에 의해 어떤 $E_n$ 이 내부를 가진다. 그 공에서의 유계성을 평행이동과 스칼라배로 옮기면 결론이 나온다.
 
 응용이 즉각적이다. 작용소 열이 점별로 수렴하면 노름이 균등 유계이고 극한도 유계 작용소다. 또 Fourier 급수가 발산하는 연속함수의 존재가 이 원리로 증명된다. 부분합 작용소의 노름이 발산한다는 계산 하나로 반례의 존재가 따라온다.
 

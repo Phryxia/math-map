@@ -42,7 +42,7 @@ $$
 | 푸아송 $\mathrm{Poisson}(\lambda)$ | $\exp\bigl(\lambda(e^{it}-1)\bigr)$ |
 | 정규 $N(m,\sigma^2)$ | $\exp\bigl(itm-\tfrac12\sigma^2t^2\bigr)$ |
 | 지수 $\mathrm{Exp}(\lambda)$ | $\lambda/(\lambda-it)$ |
-| 코시 | $e^{-\|t\|}$ |
+| 코시 | $e^{-\Vert t\Vert}$ |
 
 정규분포의 특성함수가 다시 정규형이라는 점, 그리고 코시의 특성함수가 원점에서 미분불가능하다는 점을 기억해 두면 좋다. 뒤의 사실이 코시 분포에 평균이 없다는 것의 특성함수 쪽 표현이다.
 
@@ -112,7 +112,7 @@ $$
 
 - $\varphi(0)=1$,
 - $\varphi$ 가 연속,
-- $\varphi$ 가 **양정치**다. 즉 임의의 $t_1,\dots,t_n$ 과 복소수 $c_1,\dots,c_n$ 에 대해 $\sum_{j,k}c_j\overline{c_k}\,\varphi(t_j-t_k)\ge0$.
+- $\varphi$ 가 **양정치**다. 즉 임의의 $t_1,\dots,t_n$ 과 복소수 $c_1,\dots,c_n$ 에 대해 $\sum_{j,k}c_j\overline{c_k}\thinspace\varphi(t_j-t_k)\ge0$.
 
 양정치성은 $\bigl|\sum_jc_je^{i\langle t_j,X\rangle}\bigr|^2$ 의 기댓값이 음수가 될 수 없다는 사실의 이름이며, 위 합을 전개하면 곧바로 나온다. 어려운 방향은 양정치 연속함수에서 측도를 복원하는 쪽이다. 이 정리는 Gauss 과정의 공분산 핵을 설계할 때 그대로 쓰인다. 정상 핵이 유효하려면 그 Fourier 변환이 음이 아닌 측도여야 한다는 조건이 정확히 Bochner 정리다.
 

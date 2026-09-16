@@ -188,7 +188,7 @@ print(f"  τ(p²) = τ(p)² - p^11 인가 : {not bad2}   반례 {bad2}")
 - **무게 이론.** *Weil II* 의 무게 정리가 편향 층, 교차 코호몰로지, 혼합 Hodge 가군으로 이어졌다. "무게" 가 산술기하의 기본 언어가 되었다.
 - **지수합.** [Kloosterman 합](dwork-rationality.md)을 포함한 온갖 지수합의 최적 상계가 Deligne 의 정리에서 나온다. Katz 의 *Gauss Sums, Kloosterman Sums and Monodromy Groups* 가 이 응용을 체계화했다.
 - **해석적 정수론.** Ramanujan 한계가 모듈러 형식의 $L$ 함수를 다루는 모든 추정에 들어간다. 볼록성 깨기, 부분합 추정, 소수 정리의 변형이 여기에 의존한다.
-- **부호 이론.** Goppa 의 대수기하 부호의 성능이 $\#X(\mathbb F_q)$ 의 하계에서 나오고, 그 하계가 Weil 한계다. Tsfasman–Vlăduţ–Zink 한계가 Gilbert–Varshamov 한계를 넘은 것이 이 정리의 직접적 산물이다.
+- **부호 이론.** Goppa 의 대수기하 부호의 성능이 $\char"23{}X(\mathbb F_q)$ 의 하계에서 나오고, 그 하계가 Weil 한계다. Tsfasman–Vlăduţ–Zink 한계가 Gilbert–Varshamov 한계를 넘은 것이 이 정리의 직접적 산물이다.
 - **표준 추측.** Grothendieck 이 원했던 길은 여전히 열려 있다. Deligne 의 증명은 그것을 우회했을 뿐 대체하지 않았고, 표준 추측은 지금도 대수적 순환 이론의 중심 미해결 문제다.
 
 # 연관 문서

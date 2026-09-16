@@ -18,7 +18,7 @@ $d$ 는 미분이고 $\partial$ 는 경계이며, 정리는 둘이 서로 수반
 
 ## 적분되는 것은 부피이지 숫자가 아니다
 
-$\int f\,dx$ 에서 적분되는 대상이 $f$ 라고 배우지만, 좌표를 바꾸면 $dx$ 가 $|\partial x/\partial u|\,du$ 로 바뀌며 Jacobi 행렬식이 붙는다. 즉 $f$ 혼자서는 적분될 수 없고 $f\,dx$ 전체가 적분의 단위다.
+$\int f\thinspace dx$ 에서 적분되는 대상이 $f$ 라고 배우지만, 좌표를 바꾸면 $dx$ 가 $|\partial x/\partial u|\thinspace du$ 로 바뀌며 Jacobi 행렬식이 붙는다. 즉 $f$ 혼자서는 적분될 수 없고 $f\thinspace dx$ 전체가 적분의 단위다.
 
 미분형식은 이 단위를 하나의 대상으로 만든다. $k$ 형식은 각 점에서 $k$ 개의 접벡터가 만드는 평행다면체에 부호 있는 부피를 배정하는 규칙이며, 좌표변환에서 Jacobi 행렬식이 정의상 따라 나온다. 그래서 좌표에 무관한 적분이 가능해진다.
 
@@ -111,7 +111,7 @@ $$
 \int_Md\omega=\int_{\partial M}\omega
 $$
 
-증명은 두 단계다. 단위 분할로 문제를 좌표 조각 하나로 국소화하고, 반공간 $\{x^n\ge0\}$ 에서 직접 계산한다. 그 계산이 결국 미적분학의 기본정리 한 번이다. 일반 정리가 가장 단순한 경우의 재조립이라는 점이 이 이론의 경제성을 보여 준다.
+증명은 두 단계다. 단위 분할로 문제를 좌표 조각 하나로 국소화하고, 반공간 $\lbrace x^n\ge0\rbrace$ 에서 직접 계산한다. 그 계산이 결국 미적분학의 기본정리 한 번이다. 일반 정리가 가장 단순한 경우의 재조립이라는 점이 이 이론의 경제성을 보여 준다.
 
 | 차원 | 고전적 이름 |
 |---|---|
@@ -132,7 +132,7 @@ $$
 
 Poincaré 보조정리는 수축가능한 열린집합에서 모든 닫힘형식이 완전하다고 말한다. 따라서 $H^k$ 가 0 이 아니라는 것은 국소적으로는 메울 수 있는데 전역적으로는 메울 수 없다는 뜻이며, 그것이 구멍이다.
 
-고전적인 예가 $\mathbb R^2\setminus\{0\}$ 위의 각형식이다.
+고전적인 예가 $\mathbb R^2\setminus\lbrace 0\rbrace$ 위의 각형식이다.
 
 $$
 \omega=\frac{-y\,dx+x\,dy}{x^2+y^2}
@@ -146,13 +146,13 @@ de Rham 정리는 이 코호몰로지가 위상적 특이 코호몰로지와 동
 
 $n$ 형식이 각 점에서 1 차원이므로, 어디서도 0 이 되지 않는 $n$ 형식이 존재하는 것이 방향을 줄 수 있는 것과 동치다. 뫼비우스 띠에는 그런 형식이 없다.
 
-[Riemann 계량](riemannian-metrics.md)이 있으면 정규직교 여기저기서 $1$ 을 주는 부피형식이 유일하게 결정되고, 길이, 넓이, 부피가 모두 형식의 적분으로 통일된다. Hodge 별작용소가 $k$ 형식과 $(n-k)$ 형식을 맞바꾸며, $\delta=\pm\!\star d\star$ 와 $\Delta=d\delta+\delta d$ 로 Laplace 작용소가 나온다. 조화형식이 코호몰로지류의 대표원이 된다는 Hodge 정리가 이 구조의 정점이다.
+[Riemann 계량](riemannian-metrics.md)이 있으면 정규직교 여기저기서 $1$ 을 주는 부피형식이 유일하게 결정되고, 길이, 넓이, 부피가 모두 형식의 적분으로 통일된다. Hodge 별작용소가 $k$ 형식과 $(n-k)$ 형식을 맞바꾸며, $\delta=\pm\negthinspace\star d\star$ 와 $\Delta=d\delta+\delta d$ 로 Laplace 작용소가 나온다. 조화형식이 코호몰로지류의 대표원이 된다는 Hodge 정리가 이 구조의 정점이다.
 
 ## 좌표 없는 계산
 
 형식 계산은 지표를 쓰지 않고 진행된다. $d(\alpha\wedge\beta)$ 규칙과 $d\circ d=0$ 만으로 상당한 계산이 끝나며, 좌표 선택이 필요 없으므로 다양체 위에서 그대로 성립한다.
 
-예를 들어 $\mathbb R^3$ 에서 $\omega=x\,dy\wedge dz+y\,dz\wedge dx+z\,dx\wedge dy$ 를 미분하면
+예를 들어 $\mathbb R^3$ 에서 $\omega=x\thinspace dy\wedge dz+y\thinspace dz\wedge dx+z\thinspace dx\wedge dy$ 를 미분하면
 
 $$
 d\omega=(1+1+1)\,dx\wedge dy\wedge dz=3\,dx\wedge dy\wedge dz

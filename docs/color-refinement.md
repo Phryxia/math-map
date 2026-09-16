@@ -65,7 +65,7 @@ $$
 c_{t+1}(v)=\operatorname{ID}\left(c_t(v),\{\!\{c_t(u):u\in N(v)\}\!\}\right)
 $$
 
-$\mathrm{ID}$ 는 서로 다른 입력 쌍에 서로 다른 새 색을 배정하는 단사 함수다. 여기서 $\{\!\{\cdot\}\!\}$ 는 multiset 으로, 원소의 중복도를 보존한다.
+$\mathrm{ID}$ 는 서로 다른 입력 쌍에 서로 다른 새 색을 배정하는 단사 함수다. 여기서 $\lbrace\negthinspace\lbrace\cdot\rbrace\negthinspace\rbrace$ 는 multiset 으로, 원소의 중복도를 보존한다.
 
 두 그래프를 비교할 때는 반드시 같은 `ID` 규칙을 써야 한다. 구현에서는 두 그래프의 분리 합집합 위에서 색을 함께 갱신하면 자동으로 보장된다.
 

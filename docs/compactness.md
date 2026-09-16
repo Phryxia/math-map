@@ -36,7 +36,7 @@ $$
 K\subseteq\bigcup_{i\in I}U_i
 $$
 
-이면 $\{U_i\}$ 를 $K$ 의 열린 덮개라 한다. 모든 열린 덮개에 대해 유한 부분집합 $J \subseteq I$ 를 골라
+이면 $\lbrace U_i\rbrace$ 를 $K$ 의 열린 덮개라 한다. 모든 열린 덮개에 대해 유한 부분집합 $J \subseteq I$ 를 골라
 
 $$
 |J|<\infty,\qquad K\subseteq\bigcup_{i\in J}U_i

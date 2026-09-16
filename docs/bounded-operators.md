@@ -80,7 +80,7 @@ $$
 
 ## 스펙트럼은 공집합이 아닌 콤팩트 집합
 
-$\sigma(T)$ 는 $\{|\lambda|\le\lVert T\rVert\}$ 에 포함되는 닫힌 집합이며 비어 있지 않다.
+$\sigma(T)$ 는 $\lbrace|\lambda|\le\lVert T\rVert\rbrace$ 에 포함되는 닫힌 집합이며 비어 있지 않다.
 
 유계성은 $|\lambda|>\lVert T\rVert$ 일 때 Neumann 급수 $\sum \lambda^{-n-1}T^n$ 이 수렴해 역작용소를 준다는 데서 나온다. 닫힘은 가역 작용소들이 열린 집합을 이룬다는 사실이다. 비공집합성은 복소해석의 논증이다. $\sigma(T)$ 가 비었다면 $R(\lambda)$ 가 전해석이고 무한대에서 0 으로 가므로 Liouville 정리에 의해 항등적으로 0 이 되어 모순이다.
 
@@ -108,7 +108,7 @@ $\lambda\in[0,1]$ 에 대해 $(M-\lambda)f=g$ 를 풀면 $f(x)=g(x)/(x-\lambda)$
 
 ## 콤팩트 자기수반 작용소의 스펙트럼 정리
 
-$T$ 가 콤팩트이고 자기수반이면 정규직교기저 $\{e_n\}$ 과 실수 $\lambda_n\to0$ 이 존재해
+$T$ 가 콤팩트이고 자기수반이면 정규직교기저 $\lbrace e_n\rbrace$ 과 실수 $\lambda_n\to0$ 이 존재해
 
 $$
 Tx=\sum_n\lambda_n\langle x,e_n\rangle e_n
@@ -160,7 +160,7 @@ $T$ 가 콤팩트이고 $\lambda\ne0$ 이면 $T-\lambda I$ 에 대해 다음 중
 
 ## 적분방정식
 
-핵 $k(x,y)$ 가 제곱적분가능하면 $(Tf)(x)=\int k(x,y)f(y)\,dy$ 가 콤팩트 작용소다. 그래서 $f-\lambda Tf=g$ 꼴의 방정식에 Fredholm 대안이 적용되고, 핵이 대칭이면 고유함수 전개로 해를 쓸 수 있다.
+핵 $k(x,y)$ 가 제곱적분가능하면 $(Tf)(x)=\int k(x,y)f(y)\thinspace dy$ 가 콤팩트 작용소다. 그래서 $f-\lambda Tf=g$ 꼴의 방정식에 Fredholm 대안이 적용되고, 핵이 대칭이면 고유함수 전개로 해를 쓸 수 있다.
 
 Sturm–Liouville 문제의 고유함수 전개가 이 구조의 고전적 사례다. 미분방정식을 Green 함수로 적분방정식으로 바꾸면 비유계 미분 작용소가 콤팩트 적분 작용소로 바뀐다.
 

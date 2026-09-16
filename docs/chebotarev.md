@@ -57,7 +57,7 @@ $$
 \mathrm{Frob}_{\mathfrak P}(x)\equiv x^{N\mathfrak p}\pmod{\mathfrak P}
 $$
 
-로 유일하게 정해진다. $\mathfrak P$ 를 바꾸면 $\mathrm{Frob}\_{g\mathfrak P}=g\,\mathrm{Frob}\_{\mathfrak P}\,g^{-1}$ 이므로 켤레류가 잘 정의되고, 이를 $\left[\frac{L/K}{\mathfrak p}\right]$ 로 쓴다.
+로 유일하게 정해진다. $\mathfrak P$ 를 바꾸면 $\mathrm{Frob}\_{g\mathfrak P}=g\thinspace\mathrm{Frob}\_{\mathfrak P}\thinspace g^{-1}$ 이므로 켤레류가 잘 정의되고, 이를 $\left[\frac{L/K}{\mathfrak p}\right]$ 로 쓴다.
 
 ## 밀도
 
@@ -79,7 +79,7 @@ $$
 > $$
 > 이다. 자연밀도로도 성립한다.
 
-$C=\{1\}$ 인 경우가 특히 자주 쓰인다. $L$ 에서 완전분해하는 소수의 밀도가 $1/[L:K]$ 라는 것이다.
+$C=\lbrace 1\rbrace$ 인 경우가 특히 자주 쓰인다. $L$ 에서 완전분해하는 소수의 밀도가 $1/[L:K]$ 라는 것이다.
 
 # 성질
 

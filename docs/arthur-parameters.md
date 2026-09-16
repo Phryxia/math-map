@@ -24,7 +24,7 @@ Langlands 강령이 "어떤 표현이 존재하는가"를 예측한다면, Arthu
 
 ## 왜 하나로는 부족한가
 
-Ramanujan 추측은 $\mathrm{GL}_n$ 의 첨점 표현이 템퍼드라고 예측한다. 곧 Satake 매개변수의 절댓값이 1 이다. 그런데 자기동형 스펙트럼 전체를 보면 템퍼드가 아닌 것이 실제로 있다. 가장 단순한 예가 **자명 표현**이다. $\mathrm{GL}_1$ 의 자명 지표는 템퍼드지만, $\mathrm{GL}_2$ 의 자명 표현은 잔여 스펙트럼에 살고 Satake 매개변수가 $\{q^{1/2},q^{-1/2}\}$ 라 절댓값이 1 이 아니다.
+Ramanujan 추측은 $\mathrm{GL}_n$ 의 첨점 표현이 템퍼드라고 예측한다. 곧 Satake 매개변수의 절댓값이 1 이다. 그런데 자기동형 스펙트럼 전체를 보면 템퍼드가 아닌 것이 실제로 있다. 가장 단순한 예가 **자명 표현**이다. $\mathrm{GL}_1$ 의 자명 지표는 템퍼드지만, $\mathrm{GL}_2$ 의 자명 표현은 잔여 스펙트럼에 살고 Satake 매개변수가 $\lbrace q^{1/2},q^{-1/2}\rbrace$ 라 절댓값이 1 이 아니다.
 
 이런 표현에 L 매개변수를 억지로 붙이면 유니터리가 아닌 상으로 가야 해서 이론이 망가진다. 둘째 $\mathrm{SL}_2$ 는 이 밀림을 **구조 안에서** 처리하는 장치다. $\mathrm{SL}_2(\mathbb C)$ 의 $d$ 차원 표현을 통해 들어오면 매개변수가
 
@@ -68,7 +68,7 @@ $$
 
 ## 성분군과 부호 지표
 
-$S_\psi=\mathrm{Cent}(\psi,\widehat G)$ 에서 $\mathcal S_\psi=\pi_0(S_\psi/Z(\widehat G)^\Gamma)$ 를 만든다. 전역 상황에서는 $\epsilon_\psi:\mathcal S_\psi\to\{\pm1\}$ 를 다음 꼴로 정의한다.
+$S_\psi=\mathrm{Cent}(\psi,\widehat G)$ 에서 $\mathcal S_\psi=\pi_0(S_\psi/Z(\widehat G)^\Gamma)$ 를 만든다. 전역 상황에서는 $\epsilon_\psi:\mathcal S_\psi\to\lbrace\pm1\rbrace$ 를 다음 꼴로 정의한다.
 
 $$
 \epsilon_\psi(s)=\prod_i\varepsilon\!\left(\tfrac12,\ \pi_i\times\pi_j\right)^{\cdots}

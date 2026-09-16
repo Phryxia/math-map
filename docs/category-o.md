@@ -18,7 +18,7 @@ $$
 
 이것이 **BGG 상반성**이다. 좌변은 사영분해 쪽 자료이고 우변은 조성열 쪽 자료인데, 두 방향의 계산이 같은 수를 준다. 결과적으로 Cartan 행렬이 대칭이 된다.
 
-남는 것은 우변을 실제로 계산하는 문제다. 답은 [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)이 준다. $\bigl[M(y\cdot\lambda):L(w\cdot\lambda)\bigr]=P_{w_0y,\,w_0w}(1)$ 이라는 KL 추측이 Beilinson–Bernstein 과 Brylinski–Kashiwara 에 의해 정리가 되었고, 그때 범주 $\mathcal O$ 는 KL 다항식이 표현론적 의미를 얻는 **무대**가 된다. 조합적으로 정의된 다항식의 $1$ 에서의 값이 가군의 중복도라는 진술이다.
+남는 것은 우변을 실제로 계산하는 문제다. 답은 [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)이 준다. $\bigl[M(y\cdot\lambda):L(w\cdot\lambda)\bigr]=P_{w_0y,\thinspace w_0w}(1)$ 이라는 KL 추측이 Beilinson–Bernstein 과 Brylinski–Kashiwara 에 의해 정리가 되었고, 그때 범주 $\mathcal O$ 는 KL 다항식이 표현론적 의미를 얻는 **무대**가 된다. 조합적으로 정의된 다항식의 $1$ 에서의 값이 가군의 중복도라는 진술이다.
 
 # 직관
 
@@ -32,7 +32,7 @@ $$
 
 Poincaré–Birkhoff–Witt 에 의해 $M(\lambda)$ 는 음근 벡터들의 단항식을 기저로 갖는 자유 가군이고, 무게 중복도는 Kostant 분할함수가 준다. 최고무게 $\lambda$ 의 가군은 모두 $M(\lambda)$ 의 몫이므로, $M(\lambda)$ 는 유일한 극대 부분가군을 갖고 그 몫이 단순가군 $L(\lambda)$ 다.
 
-Verma 가군이 이 범주에서 하는 역할은 명확하다. **지표를 아는 대상**이다. $\mathrm{ch}\,M(\lambda)$ 는 Weyl 분모로 나눈 지수 하나로 닫힌 꼴이고, 따라서 $\mathrm{ch}\,L(\lambda)$ 를 Verma 지표의 정수결합으로 쓸 수만 있으면 단순가군의 지표를 안 것이 된다. 중복도 $[M(\mu):L(\lambda)]$ 를 구하는 일이 곧 그 결합계수를 구하는 일이다.
+Verma 가군이 이 범주에서 하는 역할은 명확하다. **지표를 아는 대상**이다. $\mathrm{ch}\thinspace M(\lambda)$ 는 Weyl 분모로 나눈 지수 하나로 닫힌 꼴이고, 따라서 $\mathrm{ch}\thinspace L(\lambda)$ 를 Verma 지표의 정수결합으로 쓸 수만 있으면 단순가군의 지표를 안 것이 된다. 중복도 $[M(\mu):L(\lambda)]$ 를 구하는 일이 곧 그 결합계수를 구하는 일이다.
 
 ## 블록으로 쪼개진다
 
@@ -42,7 +42,7 @@ $$
 w\cdot\lambda=w(\lambda+\rho)-\rho
 $$
 
-같은 궤도의 무게들만 서로 얽힐 수 있다. 그러므로 범주 $\mathcal O$ 는 블록의 직합으로 분해되고, 정수 정칙 무게의 블록은 Weyl 군 $W$ 와 크기가 같은 유한 집합 $\{w\cdot\lambda\}_{w\in W}$ 위에 놓인다. 무한차원 가군의 범주를 다루는 문제가 **유한군 $W$ 위의 조합 문제**로 축소되는 것이 이 절의 요점이다.
+같은 궤도의 무게들만 서로 얽힐 수 있다. 그러므로 범주 $\mathcal O$ 는 블록의 직합으로 분해되고, 정수 정칙 무게의 블록은 Weyl 군 $W$ 와 크기가 같은 유한 집합 $\lbrace w\cdot\lambda\rbrace_{w\in W}$ 위에 놓인다. 무한차원 가군의 범주를 다루는 문제가 **유한군 $W$ 위의 조합 문제**로 축소되는 것이 이 절의 요점이다.
 
 ```mermaid
 flowchart TD
@@ -69,7 +69,7 @@ flowchart TD
 
 여기서 상반성을 눈으로 확인할 수 있다. $\bigl(P(-2):M(0)\bigr)=1$ 이고 $\bigl[M(0):L(-2)\bigr]=1$ 이다. 두 수가 같다.
 
-$\mathrm{ch}\,L(0)=\mathrm{ch}\,M(0)-\mathrm{ch}\,M(-2)$ 도 여기서 읽힌다. 유한차원 가군의 지표를 Verma 지표의 교대합으로 쓰는 이 식이 일반 $\mathfrak g$ 에서 Weyl 지표 공식이 된다. Weyl 공식은 **최고무게가 지배적일 때의 특수한 경우**이고, 일반 $\lambda$ 에서 교대합의 계수를 주는 것이 KL 다항식이다.
+$\mathrm{ch}\thinspace L(0)=\mathrm{ch}\thinspace M(0)-\mathrm{ch}\thinspace M(-2)$ 도 여기서 읽힌다. 유한차원 가군의 지표를 Verma 지표의 교대합으로 쓰는 이 식이 일반 $\mathfrak g$ 에서 Weyl 지표 공식이 된다. Weyl 공식은 **최고무게가 지배적일 때의 특수한 경우**이고, 일반 $\lambda$ 에서 교대합의 계수를 주는 것이 KL 다항식이다.
 
 # 정의
 
@@ -90,7 +90,7 @@ M(\lambda)=U(\mathfrak g)\otimes_{U(\mathfrak b)}\mathbb C_\lambda,\qquad
 L(\lambda)=M(\lambda)/\mathrm{rad}\,M(\lambda)
 $$
 
-$\{L(\lambda)\}_{\lambda\in\mathfrak h^*}$ 가 $\mathcal O$ 의 단순 대상 전부이고 서로 동형이 아니다. $L(\lambda)$ 가 유한차원일 필요충분조건은 $\lambda$ 가 지배적 정수무게인 것이다.
+$\lbrace L(\lambda)\rbrace_{\lambda\in\mathfrak h^*}$ 가 $\mathcal O$ 의 단순 대상 전부이고 서로 동형이 아니다. $L(\lambda)$ 가 유한차원일 필요충분조건은 $\lambda$ 가 지배적 정수무게인 것이다.
 
 ## 블록 분해
 

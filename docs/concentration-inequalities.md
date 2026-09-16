@@ -46,7 +46,7 @@ $$
 P(X \ge t) \;\le\; \frac{E[X]}{t}.
 $$
 
-증명은 한 줄이다. $X \ge t \cdot \mathbf 1\{X \ge t\}$ 의 양변에 기댓값을 취하면 된다([확률변수와 기댓값](random-variables.md)의 단조성).
+증명은 한 줄이다. $X \ge t \cdot \mathbf 1\lbrace X \ge t\rbrace$ 의 양변에 기댓값을 취하면 된다([확률변수와 기댓값](random-variables.md)의 단조성).
 
 **Chebyshev 부등식.** $\operatorname{Var}(X) < \infty$ 이면
 

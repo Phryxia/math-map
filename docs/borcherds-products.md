@@ -159,7 +159,7 @@ $$
 
 ## Kudla 강령
 
-Heegner 인자들의 산술적 교차수가 Eisenstein 급수의 Fourier 계수와 같으리라는 것이 Kudla 의 추측이다. Borcherds 곱은 이 그림에서 "인자가 주인자가 되는 경우"를 다루는 부분이고, 산술적 판본에서는 $\log\|\Psi_f\|$ 가 Arakelov 이론의 Green 함수 노릇을 한다. 인자, $L$ 함수, 교차수를 한 줄에 놓으려는 시도의 출발점이다.
+Heegner 인자들의 산술적 교차수가 Eisenstein 급수의 Fourier 계수와 같으리라는 것이 Kudla 의 추측이다. Borcherds 곱은 이 그림에서 "인자가 주인자가 되는 경우"를 다루는 부분이고, 산술적 판본에서는 $\log\Vert\Psi_f\Vert$ 가 Arakelov 이론의 Green 함수 노릇을 한다. 인자, $L$ 함수, 교차수를 한 줄에 놓으려는 시도의 출발점이다.
 
 ## 달빛과 Lie 대수
 

@@ -15,7 +15,7 @@ $A$ 는 $G$ 주다발 위의 접속, 곧 [Lie 대수](lie-groups.md) 값을 갖�
 이 문서가 답할 물음은 셋이다.
 
 - **어디서 왔는가.** 이 식은 우연히 눈에 띈 것이 아니라 4 차원 특성류 $\mathrm{tr}(F\wedge F)$ 를 한 차원 내려 적은 것이다.
-- **왜 정수 레벨인가.** $\mathrm{CS}(A)$ 자체는 게이지 불변이 아니다. 게이지 변환에서 **정수만큼** 변하고, 그래서 $e^{2\pi ik\,\mathrm{CS}(A)}$ 가 $k\in\mathbb Z$ 일 때만 잘 정의된다.
+- **왜 정수 레벨인가.** $\mathrm{CS}(A)$ 자체는 게이지 불변이 아니다. 게이지 변환에서 **정수만큼** 변하고, 그래서 $e^{2\pi ik\thinspace\mathrm{CS}(A)}$ 가 $k\in\mathbb Z$ 일 때만 잘 정의된다.
 - **무엇을 남기는가.** 임계점이 평탄 접속이고, 평탄 접속에서 $\mathrm{CS}$ 는 $\mathbb R/\mathbb Z$ 값의 위상 불변량이 된다. 이 수들이 [Witten 점근 추측](witten-asymptotics.md)에서 양자 불변량의 점근 위상으로 다시 나타난다.
 
 # 직관
@@ -54,7 +54,7 @@ $$
 \mathrm{CS}(A^g)=\mathrm{CS}(A)-\deg(g)
 $$
 
-따라서 $\mathrm{CS}(A)$ 는 실수로서는 게이지 불변이 아니고, $\mathbb R/\mathbb Z$ 값으로만 잘 정의된다. 그런데 물리에서 쓰는 것은 $e^{2\pi ik\,\mathrm{CS}(A)}$ 이므로
+따라서 $\mathrm{CS}(A)$ 는 실수로서는 게이지 불변이 아니고, $\mathbb R/\mathbb Z$ 값으로만 잘 정의된다. 그런데 물리에서 쓰는 것은 $e^{2\pi ik\thinspace\mathrm{CS}(A)}$ 이므로
 
 $$
 e^{2\pi ik\,\mathrm{CS}(A^g)}=e^{2\pi ik\,\mathrm{CS}(A)}e^{-2\pi ik\deg(g)}
@@ -155,11 +155,11 @@ $$
 Z_k(M)=\int\mathcal DA\,e^{2\pi ik\,\mathrm{CS}(A)}
 $$
 
-에서 $k\to\infty$ 의 점근은 임계점마다 한 항이고, 각 항의 위상이 $e^{2\pi ik\,\mathrm{CS}(\alpha)}$ 다. $\mathrm{CS}(\alpha)$ 가 분모 $p$ 의 유리수이므로 **그 위상은 $k$ 에 대해 주기 $p$ 로 순환한다.** 렌즈 공간의 RT 불변량이 $k$ 에 따라 진동하는 패턴이 여기서 온다.
+에서 $k\to\infty$ 의 점근은 임계점마다 한 항이고, 각 항의 위상이 $e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}$ 다. $\mathrm{CS}(\alpha)$ 가 분모 $p$ 의 유리수이므로 **그 위상은 $k$ 에 대해 주기 $p$ 로 순환한다.** 렌즈 공간의 RT 불변량이 $k$ 에 따라 진동하는 패턴이 여기서 온다.
 
 ## 경계가 있으면 등각장론이 나온다
 
-$M$ 에 경계가 있으면 $\delta\,\mathrm{CS}$ 의 부분적분에서 경계항이 남아 작용이 게이지 불변이 아니게 된다. 이 결함을 고치려면 경계에 자유도를 두어야 하고, 그것이 Wess–Zumino–Witten 모형이다. 3 차원의 벌크와 2 차원의 경계가 짝을 이루는 이 구조가 벌크-경계 대응의 가장 오래된 예이고, Reshetikhin–Turaev 구성에서 $\Delta_+/\mathcal D=e^{2\pi ic/8}$ 의 $c$ 가 경계 등각장론의 중심 전하로 나타나는 이유이기도 하다.
+$M$ 에 경계가 있으면 $\delta\thinspace\mathrm{CS}$ 의 부분적분에서 경계항이 남아 작용이 게이지 불변이 아니게 된다. 이 결함을 고치려면 경계에 자유도를 두어야 하고, 그것이 Wess–Zumino–Witten 모형이다. 3 차원의 벌크와 2 차원의 경계가 짝을 이루는 이 구조가 벌크-경계 대응의 가장 오래된 예이고, Reshetikhin–Turaev 구성에서 $\Delta_+/\mathcal D=e^{2\pi ic/8}$ 의 $c$ 가 경계 등각장론의 중심 전하로 나타나는 이유이기도 하다.
 
 ## 엄밀함의 현재 상태
 

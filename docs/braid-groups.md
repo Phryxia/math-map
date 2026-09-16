@@ -56,7 +56,7 @@ graph LR
 $B_n$ 의 표현족 $\rho_n\colon B_n\to A_n$ 과 자취 $\mathrm{tr}$ 이 있고, 그것이
 
 1. $\mathrm{tr}(ab)=\mathrm{tr}(ba)$ (자취이므로 켤레 불변)
-2. $\mathrm{tr}(\beta\sigma_n^{\pm1})=z^{\pm1}\,\mathrm{tr}(\beta)$ (안정화에서 정해진 상수배)
+2. $\mathrm{tr}(\beta\sigma_n^{\pm1})=z^{\pm1}\thinspace\mathrm{tr}(\beta)$ (안정화에서 정해진 상수배)
 
 를 만족하면, 적당히 정규화한 $\mathrm{tr}(\rho(\beta))$ 가 링크 불변량이 된다. 조건 1 은 대수에서 거의 공짜이고 조건 2 만 확인하면 된다. 그림 위 세 이동을 확인하던 일이 대수 등식 하나로 줄었다.
 
@@ -155,7 +155,7 @@ $$
 
 ## Markov 자취
 
-대수족 $\{A_n\}$ 과 준동형 $\rho_n\colon B_n\to A_n^\times$ 과 선형범함수 $\mathrm{tr}_n\colon A_n\to R$ 이 위 두 조건을 만족하면 $\mathrm{tr}$ 을 Markov 자취라 한다. 이때 $w(\beta)$ 를 지수합, $n$ 을 가닥 수라 하고 적절한 상수 $a,b$ 를 잡으면
+대수족 $\lbrace A_n\rbrace$ 과 준동형 $\rho_n\colon B_n\to A_n^\times$ 과 선형범함수 $\mathrm{tr}_n\colon A_n\to R$ 이 위 두 조건을 만족하면 $\mathrm{tr}$ 을 Markov 자취라 한다. 이때 $w(\beta)$ 를 지수합, $n$ 을 가닥 수라 하고 적절한 상수 $a,b$ 를 잡으면
 
 $$
 X(\hat\beta)=a^{\,w(\beta)}b^{\,n-1}\,\mathrm{tr}_n\bigl(\rho_n(\beta)\bigr)

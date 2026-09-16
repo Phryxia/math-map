@@ -90,7 +90,7 @@ $$
 | 구조 | 완비격자 | cpo |
 | 사상 | 단조 | Scott 연속 |
 | 고정점 | 전체가 완비격자 | 최소 고정점 |
-| 최소점의 서술 | $\bigwedge\{x:F(x)\le x\}$ | $\bigsqcup_n F^n(\bot)$ |
+| 최소점의 서술 | $\bigwedge\lbrace x:F(x)\le x\rbrace$ | $\bigsqcup_n F^n(\bot)$ |
 
 Knaster–Tarski 는 구조를 더 요구하고 사상에는 덜 요구하며, 결과를 **위에서** 서술한다. Kleene 은 반대로 아래에서 쌓아 올린다. 계산하려면 아래에서 쌓아야 하므로 프로그램 의미론은 Kleene 쪽을 쓴다. [추상해석](abstract-interpretation.md)에서 정적 분석의 결과를 반복으로 구하는 절차도 같은 정리다.
 
@@ -112,7 +112,7 @@ Scott 이 이 이론을 만든 직접적 계기는 $D\cong D^D$ 를 만족하는
 
 ## 계승의 최소 고정점을 반복으로 만든다
 
-부분함수를 `dict` 로 두면 순서가 그대로 포함관계다. 본문을 한 번 펼치는 $F$ 를 $\bot=\{\}$ 에 반복 적용한다.
+부분함수를 `dict` 로 두면 순서가 그대로 포함관계다. 본문을 한 번 펼치는 $F$ 를 $\bot=\lbrace\rbrace$ 에 반복 적용한다.
 
 ```python
 from math import factorial
