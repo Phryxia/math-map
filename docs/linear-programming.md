@@ -56,7 +56,7 @@ $$
 c^\top x\ \le\ (A^\top y)^\top x\ =\ y^\top (Ax)\ \le\ y^\top b
 $$
 
-첫 부등식은 x≥0과 A^T y≥c에서, 마지막은 y≥0과 Ax≤b에서 나온다[^1]. 따라서 임의의 dual 실행가능해는 primal 최적값의 상한을 제공한다. 즉시 따르는 결과로, primal이 비유계이면 dual은 실행불가능하다.
+첫 부등식은 $x\ge0$ 과 $A^Ty\ge c$ 에서, 마지막은 $y\ge0$ 과 $Ax\le b$ 에서 나온다[^1]. 따라서 임의의 dual 실행가능해는 primal 최적값의 상한을 제공한다. 즉시 따르는 결과로, primal이 비유계이면 dual은 실행불가능하다.
 
 ## 강쌍대성
 
