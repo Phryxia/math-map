@@ -24,14 +24,14 @@ stateDiagram-v2
 
 # 정의
 
-가산 상태 공간 S 위의 확률변수열을 생각한다. [확률변수](random-variables.md) 열 X_0, X_1, ...가 Markov 연쇄라는 것은 다음 조건부 독립성을 뜻한다.
+가산 상태 공간 $S$ 위의 [확률변수](random-variables.md) 열 $X_0,X_1,\dots$ 가 **Markov 연쇄**라는 것은 다음 조건부 독립성을 뜻한다.
 
 $$
 \Pr[X_{n+1}=j \mid X_n=i,\ X_{n-1}=i_{n-1},\dots,X_0=i_0]
 =\Pr[X_{n+1}=j \mid X_n=i]
 $$
 
-오른쪽이 n에 의존하지 않으면 시간 동질(time-homogeneous)이라 하고, 전이행렬을 정의한다.
+오른쪽이 $n$ 에 의존하지 않으면 **시간 동질**(time-homogeneous)이라 하고, 전이행렬을 정의한다.
 
 $$
 P=(p_{ij}),\qquad p_{ij}=\Pr[X_{n+1}=j\mid X_n=i],\qquad
@@ -46,17 +46,17 @@ $$
 
 ## 보조 정의
 
-- n단계 전이확률: P의 n제곱의 (i, j) 성분을 p_{ij}^{(n)}로 쓴다.
-- i에서 j로 도달 가능: 어떤 n ≥ 0에 대해 p_{ij}^{(n)} > 0. 서로 도달 가능한 관계는 [동치관계](relations.md)이며 그 동치류를 communicating class라 한다.
+- $n$ 단계 전이확률: $P$ 의 $n$ 제곱의 $(i,j)$ 성분을 $p_{ij}^{(n)}$ 로 쓴다.
+- $i$ 에서 $j$ 로 도달 가능: 어떤 $n\ge 0$ 에 대해 $p_{ij}^{(n)}>0$ 이다. 서로 도달 가능한 관계는 [동치관계](relations.md)이고 그 동치류를 communicating class 라 한다.
 - 기약(irreducible): 상태 공간 전체가 하나의 communicating class다.
-- 주기: 상태 i의 주기는 다음 값이고, 기약 연쇄에서는 모든 상태가 같은 주기를 가진다. 주기가 1이면 비주기적(aperiodic)이다.
+- 주기: 상태 $i$ 의 주기는 다음 값이고, 기약 연쇄에서는 모든 상태가 같은 주기를 가진다. 주기가 1 이면 비주기적(aperiodic)이다.
 
 $$
 d(i)=\gcd\lbrace\thinspace n\ge 1 : p_{ii}^{(n)}>0\thinspace\rbrace
 $$
 
-- 첫 복귀시각과 재귀성: T_i = min{n ≥ 1 : X_n = i}로 두고, i가 재귀적이라는 것은 이 시각이 확률 1로 유한하다는 뜻이다. 기댓값까지 유한하면 양재귀적(positive recurrent)이다.
-- 정상분포: 다음을 만족하는 확률분포 pi.
+- 첫 복귀시각과 재귀성: $T_i=\min\lbrace n\ge 1 : X_n=i\rbrace$ 로 두고, $i$ 가 재귀적이라는 것은 이 시각이 확률 1 로 유한하다는 뜻이다. 기댓값까지 유한하면 양재귀적(positive recurrent)이다.
+- 정상분포: 다음을 만족하는 확률분포 $\pi$ 다.
 
 $$
 \pi P=\pi,\qquad \pi_j\ge 0,\ \ \sum_{j\in S}\pi_j=1

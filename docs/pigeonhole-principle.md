@@ -25,7 +25,7 @@ graph TD
 
 # 정의
 
-유한집합 A, B와 [함수](functions.md) f: A → B를 생각한다. 기본형은 다음과 같다.
+유한집합 $A,B$ 와 [함수](functions.md) $f\colon A\to B$ 에 대한 기본형은 다음과 같다.
 
 $$
 |A|>|B| \ \Longrightarrow\ \exists\thinspace b\in B:\ |f^{-1}(b)|\ge 2
@@ -77,29 +77,29 @@ $$
 N\ \ge\ (r-1)(s-1)+1
 $$
 
-증명: 각 항 a_i에 쌍 (x_i, y_i)를 붙인다. x_i는 a_i에서 끝나는 최장 증가 부분수열의 길이, y_i는 a_i에서 끝나는 최장 감소 부분수열의 길이다. i < j이면 a_i < a_j일 때 x_j > x_i이고 a_i > a_j일 때 y_j > y_i이므로, 서로 다른 두 항의 쌍은 항상 다르다. 결론이 거짓이라면 모든 쌍이 다음 집합에 속한다.
+각 항 $a_i$ 에 쌍 $(x_i,y_i)$ 를 붙인다. $x_i$ 는 $a_i$ 에서 끝나는 최장 증가 부분수열의 길이, $y_i$ 는 $a_i$ 에서 끝나는 최장 감소 부분수열의 길이다. $i<j$ 일 때 $a_i<a_j$ 이면 $x_j>x_i$ 이고 $a_i>a_j$ 이면 $y_j>y_i$ 이므로, 서로 다른 두 항의 쌍은 항상 다르다. 결론이 거짓이라면 모든 쌍이 다음 집합에 속한다.
 
 $$
 \lbrace 1,\dots,r-1\rbrace\times\lbrace 1,\dots,s-1\rbrace,\qquad \bigl|\thinspace\cdot\thinspace\bigr|=(r-1)(s-1)
 $$
 
-항이 (r-1)(s-1)+1개인데 상자가 (r-1)(s-1)개이므로 두 항의 쌍이 같아 모순이다. 경계는 최적이다. 길이 (r-1)(s-1)의 수열을 s-1개씩 감소하는 블록 r-1개로 배열하면 증가 부분수열은 최대 r-1, 감소 부분수열은 최대 s-1이다. r=s=n인 특수 경우가 "길이 (n-1)^2+1의 수열에는 길이 n의 단조 부분수열이 있다"는 진술이다.
+항이 $(r-1)(s-1)+1$ 개인데 상자가 $(r-1)(s-1)$ 개이므로 두 항의 쌍이 같아 모순이다. 경계는 최적이다. 길이 $(r-1)(s-1)$ 의 수열을 $s-1$ 개씩 감소하는 블록 $r-1$ 개로 배열하면 증가 부분수열은 최대 $r-1$ 이고 감소 부분수열은 최대 $s-1$ 이다. $r=s=n$ 인 특수 경우가 길이 $(n-1)^2+1$ 의 수열에 길이 $n$ 의 단조 부분수열이 있다는 진술이다.
 
 ## Dirichlet 근사 정리
 
-임의의 실수 alpha와 양의 정수 Q에 대해 다음을 만족하는 정수 p와 q가 존재한다[^2].
+임의의 실수 $\alpha$ 와 양의 정수 $Q$ 에 대해 다음을 만족하는 정수 $p,q$ 가 존재한다[^2].
 
 $$
 1\le q\le Q,\qquad |q\alpha-p|<\frac{1}{Q},\qquad \text{따라서}\quad \Bigl|\alpha-\frac{p}{q}\Bigr|<\frac{1}{qQ}\le\frac{1}{q^{2}}
 $$
 
-증명: Q+1개의 소수부 값을 길이 1/Q인 Q개의 구간에 넣는다.
+$Q+1$ 개의 소수부 값을 길이 $1/Q$ 인 $Q$ 개의 구간에 넣는다.
 
 $$
 \lbrace 0\cdot\alpha\rbrace,\lbrace\alpha\rbrace,\dots,\lbrace Q\alpha\rbrace\in[0,1)=\bigsqcup_{u=0}^{Q-1}\Bigl[\frac{u}{Q},\frac{u+1}{Q}\Bigr)
 $$
 
-비둘기집 원리로 같은 구간에 든 두 값 {q_1 alpha}와 {q_2 alpha}(q_1 < q_2)가 있다. q = q_2 - q_1, p = ⌊q_2 alpha⌋ - ⌊q_1 alpha⌋로 두면 주장이 따른다. alpha가 무리수이면 Q를 키워가며 분모가 무한히 커지는 근사열을 얻고, 이것이 연분수 근사의 이론적 출발점이다. 지수 2는 무리수 전체에 대해 개선할 수 없다. 황금비류의 badly approximable 수에서 막히며, 대수적 무리수에 대해서는 Roth 정리가 2+epsilon이 최선임을 말한다.
+비둘기집 원리로 $q_1<q_2$ 이면서 $\lbrace q_1\alpha\rbrace$ 와 $\lbrace q_2\alpha\rbrace$ 가 같은 구간에 드는 두 첨자가 있다. $q=q_2-q_1,\ p=\lfloor q_2\alpha\rfloor-\lfloor q_1\alpha\rfloor$ 로 두면 주장이 따른다. $\alpha$ 가 무리수이면 $Q$ 를 키워가며 분모가 무한히 커지는 근사열을 얻는다. 지수 2 는 무리수 전체에 대해 개선할 수 없다. 황금비류의 badly approximable 수가 그 장벽이고, 대수적 무리수에 한정하면 Roth 정리가 지수 $2+\varepsilon$ 을 준다.
 
 ## 이중 계산과의 관계
 
