@@ -71,14 +71,19 @@ function splitBlocks(text) {
   return blocks
 }
 
+// 렌더 비교용 텍스트에서는 블록 수식을 통째로 지운다. GFM 은 이것을 블록으로 먼저 잡기 때문이다.
+const stripMathBlocks = text => text.replace(/^\s*\$\$\s*$[\s\S]*?^\s*\$\$\s*$/gm, '').replace(/\$\$[^$]+?\$\$/g, '')
+
 const count = (hay, needle) => needle ? hay.split(needle).length - 1 : 0
 
 export function checkText(text) {
   const bad = []
   for (const blk of splitBlocks(text)) {
+    // 인용 블록 안의 $$ 도 블록 수식이다. 접두 > 를 벗겨서 본다.
+    if (/^\s*>/.test(blk.text)) blk.text = blk.text.replace(/^\s*>\s?/gm, '')
     const spans = extractMath(blk.text)
     if (!spans.length) continue
-    const rendered = norm(htmlToText(md.render(blk.text)))
+    const rendered = norm(htmlToText(md.render(stripMathBlocks(blk.text))))
     const seen = new Map()
     for (const s of spans) {
       if (s.kind === 'block') {
