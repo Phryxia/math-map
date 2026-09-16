@@ -6,7 +6,7 @@ RSA는 1977년에 제안된 최초의 실용적 공개키 암호이자 서명 �
 
 수학적 골격은 두 개뿐이다. [Euler 정리](fermat-euler-theorem.md)가 지수의 주기를 정해 주고, [중국인의 나머지 정리](chinese-remainder-theorem.md)가 $\bmod n$ 계산을 $\bmod p$ 와 $\bmod q$ 로 쪼개 준다. 정당성 증명과 복호화 가속이 모두 이 두 도구로 나온다.
 
-RSA의 안전성은 "큰 합성수의 인수분해가 어렵다"는 가정에 의존한다. 이는 증명된 사실이 아니라 미해결 문제이며([P 대 NP 문제](p-np.md) 참조), 실제 공격의 대부분은 인수분해가 아니라 잘못된 파라미터 선택이나 패딩 부재를 노린다.
+RSA 의 안전성은 "큰 합성수의 인수분해가 어렵다"는 가정에 의존한다. 이 가정은 증명되어 있지 않다[^2]([P 대 NP 문제](p-np.md) 참조). 실제 공격의 대부분은 인수분해가 아니라 잘못된 파라미터 선택이나 패딩 부재를 노린다.
 
 # 직관
 
@@ -119,11 +119,11 @@ $$
 
 RSA의 안전성은 여러 가정의 사슬 위에 있다.
 
-- **인수분해 문제.** $n=pq$ 에서 $p$ , $q$ 를 구하는 문제. 알려진 최선은 일반 수체 체로, 복잡도가 대략 $\exp\bigl(c(\log n)^{1/3}(\log\log n)^{2/3}\bigr)$ 이다. 다항시간 알고리즘은 알려져 있지 않지만 NP-완전이라는 증거도 없다([NP-완전성](np-completeness.md) 참조: 인수분해는 NP와 co-NP에 모두 속하므로 NP-완전일 가능성이 낮다고 여겨진다).
-- **RSA 문제.** $(n,e,c)$ 에서 $c^{1/e}\bmod n$ 을 구하는 문제. 인수분해할 수 있으면 RSA 문제를 풀 수 있다. 역방향, 즉 RSA 문제가 인수분해만큼 어려운지는 미해결이다.
-- **개인키 노출의 등가성.** $d$ 를 알면 $ed - 1$ 이 $\varphi(n)$ 의 배수라는 사실로부터 확률적 다항시간에 $n$ 을 인수분해할 수 있다. 따라서 "개인지수 복원"과 "인수분해"는 사실상 같은 난이도다.
+- **인수분해 문제.** $n=pq$ 에서 $p$ , $q$ 를 구하는 문제. 알려진 최선은 일반 수체 체로, 복잡도가 대략 $\exp\bigl(c(\log n)^{1/3}(\log\log n)^{2/3}\bigr)$ 이다. 다항시간 알고리즘은 알려져 있지 않다[^2]. 인수분해의 판정 버전은 NP 와 coNP 에 모두 속하므로, NP-완전이면 두 부류가 같아진다([NP-완전성](np-completeness.md) 참조).
+- **RSA 문제.** $(n,e,c)$ 에서 $c^{1/e}\bmod n$ 을 구하는 문제. 인수분해할 수 있으면 RSA 문제를 풀 수 있다. 역방향의 환원은 알려져 있지 않고, 작은 $e$ 에 대해서는 대수적 환원이 존재할 수 없다는 결과가 있다[^3].
+- **개인키 노출의 등가성.** $d$ 를 알면 $ed - 1$ 이 $\varphi(n)$ 의 배수라는 사실로부터 확률적 다항시간에 $n$ 을 인수분해할 수 있다. "개인지수 복원"과 "인수분해"는 같은 난이도다.
 
-핵심은 이 모든 것이 가정이라는 점이다. Shor 알고리즘은 양자 컴퓨터에서 인수분해를 다항시간에 해결하므로, 충분한 규모의 양자 컴퓨터가 등장하면 RSA는 무너진다.
+세 항목은 모두 증명되지 않은 가정이다. Shor 알고리즘은 양자 컴퓨터에서 인수분해를 다항시간에 해결하므로, 충분한 규모의 양자 컴퓨터가 등장하면 RSA 는 무너진다.
 
 ## 흔한 취약점
 
@@ -217,6 +217,7 @@ print("공통 모듈러스 공격으로 평문 복원:", recovered == m)
 
 [^1]: R. L. Rivest, A. Shamir, L. Adleman, A Method for Obtaining Digital Signatures and Public-Key Cryptosystems, Communications of the ACM 21(2), 1978, https://people.csail.mit.edu/rivest/Rsapaper.pdf
 [^2]: D. Boneh, Twenty Years of Attacks on the RSA Cryptosystem, Notices of the AMS 46(2), 1999, https://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf
+[^3]: D. Boneh, R. Venkatesan, "Breaking RSA may not be equivalent to factoring", EUROCRYPT 1998, LNCS 1403, 59–71. 작은 $e$ 에 대해 RSA 문제를 푸는 대수적 환원에서 인수분해 알고리즘을 얻으면 인수분해 자체가 다항시간에 풀린다는 결과다.
 
 # 연관 문서
 
@@ -229,4 +230,4 @@ print("공통 모듈러스 공격으로 평문 복원:", recovered == m)
 
 아직 연결한 문서가 없다.
 
-#cryptography #number_theory
+#cryptography #number_theory #computation
