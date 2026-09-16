@@ -47,7 +47,7 @@ graph LR
 세포가 전부 짝수 실차원이라 경계사상이 $0$ 이고, 따라서
 
 $$
-H^*(\mathrm{Gr}(k,n),\mathbb Z)=\bigoplus_{\lambda\subseteq k\times(n-k)}\mathbb Z\,\sigma_\lambda
+H^*(\mathrm{Gr}(k,n),\mathbb Z)=\bigoplus_{\lambda\subseteq k\times(n-k)}\mathbb Z\thinspace\sigma_\lambda
 $$
 
 이다. 기저의 개수는 상자 안 Young 도형의 개수, 곧 $\binom{n}{k}$ 다.
@@ -73,7 +73,7 @@ $$
 $\mathrm{Gr}(k,n)=\lbrace V\le\mathbb C^n:\dim V=k\rbrace$ 는 차원 $k(n-k)$ 의 매끄러운 사영다양체다. 기준 깃발 $F_\bullet$ 을 고정하고 $\lambda=(\lambda_1\ge\cdots\ge\lambda_k)$ 와 $\lambda_1\le n-k$ 에 대해
 
 $$
-\Omega_\lambda=\{V:\dim(V\cap F_{n-k+i-\lambda_i})\ge i\ \ (1\le i\le k)\}
+\Omega_\lambda=\lbrace V:\dim(V\cap F_{n-k+i-\lambda_i})\ge i\ \ (1\le i\le k)\rbrace
 $$
 
 를 **Schubert 다양체**라 한다. 열린 부분이 세포 $\cong\mathbb C^{k(n-k)-|\lambda|}$ 이고 여차원이 $|\lambda|$ 다. 기본류를 $\sigma_\lambda\in H^{2|\lambda|}(\mathrm{Gr}(k,n))$ 로 쓴다.
@@ -81,7 +81,7 @@ $$
 ## 곱셈 구조
 
 $$
-\sigma_\lambda\cdot\sigma_\mu=\sum_{\nu\subseteq k\times(n-k)}c^{\nu}_{\lambda\mu}\,\sigma_\nu
+\sigma_\lambda\cdot\sigma_\mu=\sum_{\nu\subseteq k\times(n-k)}c^{\nu}_{\lambda\mu}\thinspace\sigma_\nu
 $$
 
 $c^\nu_{\lambda\mu}$ 는 Littlewood–Richardson 계수이고 $|\nu|=|\lambda|+|\mu|$ 인 항만 살아남는다. 특수한 경우가 두 개 유용하다.
@@ -96,7 +96,7 @@ $c^\nu_{\lambda\mu}$ 는 Littlewood–Richardson 계수이고 $|\nu|=|\lambda|+|
 세포가 여차원 $|\lambda|$ 이므로
 
 $$
-\sum_i\dim H^{2i}(\mathrm{Gr}(k,n))\,q^{i}=\sum_{\lambda\subseteq k\times(n-k)}q^{|\lambda|}=\binom{n}{k}_q
+\sum_i\dim H^{2i}(\mathrm{Gr}(k,n))\thinspace q^{i}=\sum_{\lambda\subseteq k\times(n-k)}q^{|\lambda|}=\binom{n}{k}_q
 $$
 
 우변은 $q$ 이항계수다. $q=1$ 을 넣으면 $\binom{n}{k}$ 로 기저의 개수가 나온다.

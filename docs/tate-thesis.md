@@ -7,7 +7,7 @@ Riemann 은 $\zeta(s)$ 의 함수방정식을 theta 함수 $\theta(t)=\sum_ne^{-
 Tate 의 학위논문[^1]은 무대를 바꾼다. 계산을 [아델](adeles.md) 위로 옮기면 theta 변환식이 Poisson 합공식의 특수한 경우가 되고, $\zeta_K(s)$ 는 이델군 위의 적분 하나가 된다.
 
 $$
-Z(f,\chi,s)=\int_{\mathbb A_K^\times}f(x)\,\chi(x)\,|x|_{\mathbb A}^{s}\;d^\times x
+Z(f,\chi,s)=\int_{\mathbb A_K^\times}f(x)\thinspace\chi(x)\thinspace|x|_{\mathbb A}^{s}\thickspace d^\times x
 $$
 
 이 적분이 자리마다 쪼개지면서 Euler 인자와 감마 인자가 **같은 종류의 국소 적분**으로 통일되고, 함수방정식은 아델군의 자기쌍대성에서 자동으로 나온다. 판별식은 자기쌍대 측도를 정규화할 때 생기는 부피 인자다.
@@ -23,7 +23,7 @@ $$
 각 자리 $v$ 에서 국소 zeta 적분을 같은 모양으로 정의한다.
 
 $$
-Z_v(f_v,s)=\int_{K_v^\times}f_v(x)\,|x|_v^{s}\;d^\times x
+Z_v(f_v,s)=\int_{K_v^\times}f_v(x)\thinspace|x|_v^{s}\thickspace d^\times x
 $$
 
 자리마다 그 자리에서 가장 자연스러운 시험함수를 넣으면 된다. 유한 자리에서는 정수환의 정의함수 $\mathbf 1_{\mathbb Z_p}$ 이고 무한 자리에서는 Gauss 함수 $e^{-\pi x^2}$ 다. 둘 다 그 자리의 덧셈 Fourier 변환에 대해 자기쌍대인 함수라는 점에서 같은 선택이다.
@@ -78,7 +78,7 @@ Haar 측도는 Fourier 반전이 $\hat{\hat f}(x)=f(-x)$ 로 딱 떨어지도록
 적분에 넣을 시험함수의 공간은 국소적으로 조립한다.
 
 $$
-\mathcal S(\mathbb A_K)=\Big\{\textstyle\sum_i\bigotimes_vf_{i,v}\;:\;f_v\in\mathcal S(K_v),\ \text{거의 모든 } v \text{ 에서 } f_v=\mathbf 1_{\mathcal O_v}\Big\}
+\mathcal S(\mathbb A_K)=\Big\lbrace\textstyle\sum_i\bigotimes_vf_{i,v}\thickspace:\thickspace f_v\in\mathcal S(K_v),\ \text{거의 모든 } v \text{ 에서 } f_v=\mathbf 1_{\mathcal O_v}\Big\rbrace
 $$
 
 무한 자리에서 $\mathcal S(K_v)$ 는 보통의 급감 매끄러운 함수, 유한 자리에서는 국소상수이고 콤팩트 받침인 함수다. 유한 자리의 "매끄러움" 은 국소상수성이다. 이 공간은 Fourier 변환에 대해 닫혀 있고, $\widehat{\mathbf 1_{\mathcal O_v}}=\mathbf 1_{\mathcal O_v}$ 가 거의 모든 자리에서 성립해 무한 곱이 유한 곱으로 줄어든다.
@@ -90,14 +90,14 @@ $$
 $f\in\mathcal S(\mathbb A_K)$ 와 Hecke 지표 $\chi$ 에 대해 **대역 zeta 적분**을 정의한다.
 
 $$
-Z(f,\chi,s)=\int_{\mathbb A_K^\times}f(x)\,\chi(x)\,|x|_{\mathbb A}^{s}\;d^\times x,\qquad
+Z(f,\chi,s)=\int_{\mathbb A_K^\times}f(x)\thinspace\chi(x)\thinspace|x|_{\mathbb A}^{s}\thickspace d^\times x,\qquad
 d^\times x=\prod_v\frac{dx_v}{|x_v|_v}\ (\text{정규화})
 $$
 
 $\chi$ 가 유니터리이면 $\mathrm{Re}(s)>1$ 에서 절대수렴한다. $f=\bigotimes f_v$ 이면 적분이 자리마다 쪼개진다.
 
 $$
-Z(f,\chi,s)=\prod_vZ_v(f_v,\chi_v,s),\qquad Z_v(f_v,\chi_v,s)=\int_{K_v^\times}f_v(x)\chi_v(x)|x|_v^{s}\,d^\times x
+Z(f,\chi,s)=\prod_vZ_v(f_v,\chi_v,s),\qquad Z_v(f_v,\chi_v,s)=\int_{K_v^\times}f_v(x)\chi_v(x)|x|_v^{s}\thinspace d^\times x
 $$
 
 # 성질
@@ -143,7 +143,7 @@ $\gamma_v$ 는 국소 $L$ 인자의 비와 근 수 $\varepsilon_v(\chi_v,s)$ 로
 2. $t\ge1$ 부분은 $f$ 의 급감으로 모든 $s$ 에서 수렴하는 정함수다.
 3. $t<1$ 부분에 **Riemann–Roch 항등식**을 쓴다. $\mathrm{vol}(\mathbb A_K/K)=1$ 인 Poisson 합공식을 $x$ 배 만큼 늘린 것이다.
    $$
-   \sum_{\alpha\in K}f(\alpha x)=\frac1{|x|_{\mathbb A}}\sum_{\alpha\in K}\hat f\!\left(\frac\alpha x\right)
+   \sum_{\alpha\in K}f(\alpha x)=\frac1{|x|_{\mathbb A}}\sum_{\alpha\in K}\hat f\negthinspace\left(\frac\alpha x\right)
    $$
    양변을 $t<1$ 구간에서 적분하면 $x\mapsto x^{-1}$ 치환으로 $t\ge1$ 구간의 $\hat f$ 적분이 나온다. 이 과정에서 $\alpha=0$ 항이 따로 남아 $f(0)/s$ 와 $\hat f(0)/(1-s)$ 꼴의 극 두 개를 만든다.
 
@@ -191,7 +191,7 @@ Dirichlet 의 유수 공식이 "노름 1 이델류군의 부피" 한 줄로 정�
 Godement 와 Jacquet 이 이 논문을 $\mathrm{GL}_n$ 으로 올렸다. 시험함수를 행렬 공간 $M_n(\mathbb A)$ 위에서 잡고 자기동형 표현 $\pi$ 의 행렬 계수를 곱해 적분하면
 
 $$
-Z(f,\pi,s)=\int_{\mathrm{GL}_n(\mathbb A)}f(g)\,\langle\pi(g)v,\tilde v\rangle\,|\det g|^{s+\frac{n-1}2}\,dg
+Z(f,\pi,s)=\int_{\mathrm{GL}_n(\mathbb A)}f(g)\thinspace\langle\pi(g)v,\tilde v\rangle\thinspace|\det g|^{s+\frac{n-1}2}\thinspace dg
 $$
 
 가 되고, 같은 논법이 $L(s,\pi)$ 의 해석적 접속과 함수방정식을 준다. $n=1$ 이 Tate 의 논문이다. [Langlands 강령](langlands-program.md)이 "$L$ 함수를 급수가 아니라 군 위의 적분으로 정의한다" 는 전략을 쓰는 것은 이 계보 때문이다. Galois 쪽에서 보이지 않던 해석적 성질이 자기동형 쪽에서 거저 나오는 이유가, 자기동형 쪽에는 Poisson 합공식이 있기 때문이다.

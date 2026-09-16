@@ -100,13 +100,13 @@ $$
 **정리.** 유계 닫힌 구간 $[a,b]$ 위에서 [Riemann 적분](riemann-integral.md) 가능한 $f_n$ 이 $f$ 로 균등수렴하면 $f$ 도 적분가능하고
 
 $$
-\lim_{n \to \infty} \int_a^b f_n(x) \, dx = \int_a^b f(x) \, dx .
+\lim_{n \to \infty} \int_a^b f_n(x) \thinspace dx = \int_a^b f(x) \thinspace dx .
 $$
 
 **증명 스케치.** 오차 평가가 한 줄이다.
 
 $$
-\Big| \int_a^b f_n - \int_a^b f \Big| \le \int_a^b |f_n - f| \le (b-a) \, \Vert f_n - f \Vert_\infty \to 0 .
+\Big| \int_a^b f_n - \int_a^b f \Big| \le \int_a^b |f_n - f| \le (b-a) \thinspace \Vert f_n - f \Vert_\infty \to 0 .
 $$
 
 구간 길이가 유한하다는 점이 쓰였다. 무한 구간에서는 균등수렴만으로 적분 교환이 성립하지 않는다. 예를 들어 $f_n$ 을 $[0,n]$ 위에서 $1/n$ 으로 두면 sup 노름은 0 으로 가지만 적분은 항상 1 이다. 이런 상황은 [지배 수렴 정리](dominated-convergence.md)나 [균등적분가능성](uniform-integrability.md)이 다룬다.
@@ -122,7 +122,7 @@ $$
 **증명 스케치.** 평균값 정리를 차 $f_n - f_m$ 에 적용하면
 
 $$
-|(f_n - f_m)(x) - (f_n - f_m)(y)| \le |x - y| \, \Vert f_n' - f_m' \Vert_\infty
+|(f_n - f_m)(x) - (f_n - f_m)(y)| \le |x - y| \thinspace \Vert f_n' - f_m' \Vert_\infty
 $$
 
 이므로 $f_n$ 이 균등 Cauchy 임이 나오고, [미적분학의 기본 정리](fundamental-calculus.md)로 도함수의 극한이 극한의 도함수임을 확인한다. 요약하면 적분은 극한에 친화적이고 미분은 적대적이며, 미분을 다룰 때는 한 단계 위(도함수열)에서 균등수렴을 확보해야 한다.

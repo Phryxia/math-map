@@ -41,7 +41,7 @@ $G$ 를 정점 $n$ 개의 연결 가중 무향 그래프, $L_G$ 를 그 Laplacia
 $H$ 가 $G$ 의 spectral sparsifier 라는 것은 모든 실수 벡터 $x$ 에 대해 다음이 성립한다는 뜻이다.
 
 $$
-(1-\varepsilon)\,x^{\mathsf T}L_Gx\ \le\ x^{\mathsf T}L_Hx\ \le\ (1+\varepsilon)\,x^{\mathsf T}L_Gx
+(1-\varepsilon)\thinspace x^{\mathsf T}L_Gx\ \le\ x^{\mathsf T}L_Hx\ \le\ (1+\varepsilon)\thinspace x^{\mathsf T}L_Gx
 $$
 
 특정 신호 하나가 아니라 모든 정점값 배정에 같은 부등식이 적용된다.
@@ -57,7 +57,7 @@ $$
 Foster 정리에 의해 연결 그래프에서 $\sum_e p_e = 1$ 이므로 이것은 확률분포다. $q$ 번 독립적으로 복원 추출하고, 뽑힌 간선의 가중치에 매번 다음을 더한다.
 
 $$
-\frac{w_e}{q\,p_e}
+\frac{w_e}{q\thinspace p_e}
 $$
 
 뽑히지 않은 간선은 $H$ 에 없다. 한 간선이 여러 번 뽑히면 가중치가 누적된다.
@@ -107,7 +107,7 @@ $$
 간선 $e=(u,v)$ 에 대해 $b_e=e_u-e_v$ 로 두면 $L_G = \sum_e w_e b_e b_e^{\mathsf T}$ 다. 여기에 $L_G^{+/2}$ 를 양쪽에서 곱해 정규화한다.
 
 $$
-\Pi=L_G^{+/2}L_GL_G^{+/2}=\sum_e\big(\sqrt{w_e}\,L_G^{+/2}b_e\big)\big(\sqrt{w_e}\,L_G^{+/2}b_e\big)^{\mathsf T}
+\Pi=L_G^{+/2}L_GL_G^{+/2}=\sum_e\big(\sqrt{w_e}\thinspace L_G^{+/2}b_e\big)\big(\sqrt{w_e}\thinspace L_G^{+/2}b_e\big)^{\mathsf T}
 $$
 
 $\Pi$ 는 $L_G$ 의 상에 대한 사영이다. 이때 각 항의 노름 제곱이 정확히 $w_e R_e$ 이므로, 샘플링 확률 $p_e$ 는 각 항의 기여도에 비례하는 분포가 된다.

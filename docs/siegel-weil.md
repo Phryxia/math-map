@@ -5,7 +5,7 @@
 정수계수 이차형식 $Q$ 가 정수 $n$ 을 몇 가지 방법으로 표현하는지 묻는 문제는 정수론에서 가장 오래된 물음 가운데 하나다. Lagrange 의 네 제곱수 정리, Gauss 의 세 제곱수 정리가 모두 이 형태다.
 
 $$
-r_Q(n)=\#\{x\in\mathbb Z^m:\ Q(x)=n\}
+r_Q(n)=\char35{}\lbrace x\in\mathbb Z^m:\ Q(x)=n\rbrace
 $$
 
 국소적으로는 답이 쉽다. 각 $\mathbb Z_p$ 와 $\mathbb R$ 에서 해가 있는지는 유한한 계산이다. 그러나 국소 해가 전부 있어도 정수해가 없을 수 있다. **정수 위에서는 국소-전역 원리가 깨진다.** 깨지는 정도를 정확히 재는 것이 **Siegel–Weil 공식**이다.
@@ -13,14 +13,14 @@ $$
 Siegel 의 형태는 이렇다. 같은 **류(genus)** 에 속하는 형식들의 표현수를 자기동형군 크기로 가중 평균하면, 그 평균이 국소 밀도의 곱과 정확히 같다.
 
 $$
-\frac{\sum_i r_{Q_i}(n)/|\mathrm{Aut}\,Q_i|}{\sum_i 1/|\mathrm{Aut}\,Q_i|}
+\frac{\sum_i r_{Q_i}(n)/|\mathrm{Aut}\thinspace Q_i|}{\sum_i 1/|\mathrm{Aut}\thinspace Q_i|}
 =\prod_{v}\delta_v(n)
 $$
 
 Weil 은 이것이 표현론적 등식임을 알아냈다. [Weil 표현](weil-representation.md)에서 만든 theta 급수를 직교군 방향으로 적분하면 [Eisenstein 급수](eisenstein-series.md)가 나온다.
 
 $$
-\int_{O(V)(F)\backslash O(V)(\mathbb A)}\Theta_\varphi(g,h)\,dh\ =\ E(g,\varphi)
+\int_{O(V)(F)\backslash O(V)(\mathbb A)}\Theta_\varphi(g,h)\thinspace dh\ =\ E(g,\varphi)
 $$
 
 좌변은 류 평균이고 우변은 Fourier 계수가 국소 밀도의 곱으로 명시되는 대상이다. **국소-전역 원리의 양적 판본**이 이 한 줄에 들어 있다. 개별 형식과 류 평균의 차이는 첨점 형식이 담당하고, 그래서 오차항 추정이 자기동형 형식의 계수 크기 문제가 된다.
@@ -86,7 +86,7 @@ $$
 각 소수 $p$ 에서
 
 $$
-\delta_p(n)=\lim_{k\to\infty}\frac{\#\{x\in(\mathbb Z/p^k)^m:\ Q(x)\equiv n\}}{p^{k(m-1)}}
+\delta_p(n)=\lim_{k\to\infty}\frac{\char35{}\lbrace x\in(\mathbb Z/p^k)^m:\ Q(x)\equiv n\rbrace}{p^{k(m-1)}}
 $$
 
 로 두고, 무한 자리에서는 $Q(x)=n$ 인 실 초곡면 위의 측도로 $\delta_\infty(n)$ 을 정의한다. 이 곱 $\prod_v\delta_v(n)$ 을 **특이급수**라 부른다. 거의 모든 $p$ 에서 $\delta_p=1$ 이라 곱이 수렴한다.
@@ -106,7 +106,7 @@ $$
 $\varphi\in\mathcal S(V(\mathbb A)^k)$ 에 대해
 
 $$
-I(g,\varphi)=\int_{[O(V)]}\Theta_\varphi(g,h)\,dh,
+I(g,\varphi)=\int_{[O(V)]}\Theta_\varphi(g,h)\thinspace dh,
 \qquad
 E(g,\varphi)=\sum_{\gamma\in P(F)\backslash \mathrm{Sp}(F)}\Phi_\varphi(\gamma g)
 $$
@@ -155,7 +155,7 @@ for (let n = 1; n <= 6; n++) console.log(n, R8[n], jacobi8(n))
 24 차원 짝수 유니모듈러 격자는 [Niemeier 격자](niemeier-lattices.md) 24 개로 분류되고 전부 같은 류에 있다. 이들의 theta 급수는 무게 12 의 모듈러 형식이며, 그 공간은 2 차원이다.
 
 $$
-\Theta_L=E_{12}+c_L\,\Delta
+\Theta_L=E_{12}+c_L\thinspace\Delta
 $$
 
 $E_{12}$ 는 모든 $L$ 에서 같고 $c_L$ 만 격자마다 다르다. Siegel 공식이 말하는 것은 $c_L$ 의 가중 평균이 0 이라는 것이다. Leech 격자는 근벡터가 없어 $\Theta$ 의 2 차 계수가 0 이고, 이 조건이 $c_L$ 을 완전히 결정한다. **류 평균은 국소 정보가 알려주고, 개별 격자의 개성은 첨점 형식의 계수에 담긴다.** Siegel–Weil 공식의 구조가 이보다 선명한 예는 없다.

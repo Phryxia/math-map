@@ -54,7 +54,7 @@ $$
 $\sigma$ 의 Satake 매개변수가 $\lbrace\alpha_1,\dots,\alpha_m\rbrace$ 이면 $\mathrm{Speh}(\sigma,d)$ 의 것은
 
 $$
-\bigl\{\alpha_i\,q^{j}\ :\ 1\le i\le m,\ j=\tfrac{d-1}2,\tfrac{d-3}2,\dots,-\tfrac{d-1}2\bigr\}
+\bigl\lbrace\alpha_i\thinspace q^{j}\ :\ 1\le i\le m,\ j=\tfrac{d-1}2,\tfrac{d-3}2,\dots,-\tfrac{d-1}2\bigr\rbrace
 $$
 
 이다. $\sigma$ 가 Ramanujan 경계 $|\alpha_i|=1$ 을 지키더라도 Speh 표현은 $q^{\pm(d-1)/2}$ 만큼 벌어진다. **벌어진 폭이 정확히 $d$ 에 의해 결정된다.** Ramanujan 추측이 첨점 표현에 한정된 주장인 이유가 여기 있다. 잔여 표현은 애초에 경계를 지킬 생각이 없고, 얼마나 어기는지가 분류에 의해 미리 정해져 있다.

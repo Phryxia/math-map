@@ -33,7 +33,7 @@ $J_N$ 은 $N$ 차원 표현으로 색칠한 색 Jones 다항식이고, 이것을
 곧 같은 안장점 해석의 두 얼굴이다. 임계값이 실수면 진동하고, 복소수면 폭발한다. 쌍곡 구조는 $\mathrm{SL}_2(\mathbb C)$ 표현에 대응하므로 CS 불변량이 복소수가 되고, 그 허수부가 부피다. 정확한 형태는
 
 $$
-\mathrm{CS}+i\,\frac{\mathrm{Vol}}{2\pi}
+\mathrm{CS}+i\thinspace\frac{\mathrm{Vol}}{2\pi}
 $$
 
 라는 복소수 하나이고, 볼륨 추측의 정련된 판본은 위상까지 포함해 이 복소수 전체를 주장한다.
@@ -49,7 +49,7 @@ $$
 가 된다. 이 합의 각 항은 $\prod(1-q^j)$ 꼴이고, $\log$ 를 취하면 $\sum\log|1-q^j|$ 라는 **합**이 된다. $N\to\infty$ 에서 이 합은 적분으로 바뀌고
 
 $$
-\frac1N\sum_{j}\log\big|1-e^{2\pi ij/N}\big|\ \longrightarrow\ \frac1{2\pi}\int\log|1-e^{i\theta}|\,d\theta
+\frac1N\sum_{j}\log\big|1-e^{2\pi ij/N}\big|\ \longrightarrow\ \frac1{2\pi}\int\log|1-e^{i\theta}|\thinspace d\theta
 $$
 
 가 나타난다. 그런데 $-\int\log|2\sin(\theta/2)|d\theta$ 가 바로 **Lobachevsky 함수**이고, 쌍곡 사면체의 부피가 정확히 이 함수로 표현된다. 8 자매듭 여집합이 정이면체 사면체 두 개로 분할되고 그 부피가 $2\Lambda(\pi/6)\cdot3=2.0298\ldots$ 다.
@@ -112,7 +112,7 @@ Jones 다항식이 처음 나왔을 때 가장 큰 물음이 "이것이 기하�
 위상까지 포함하면 더 강한 주장이 된다.
 
 $$
-J_N(K;e^{2\pi i/N})\ \sim\ N^{3/2}\,e^{N\big(\mathrm{Vol}+i\,\mathrm{CS}\big)/2\pi}\cdot\big(c+O(1/N)\big)
+J_N(K;e^{2\pi i/N})\ \sim\ N^{3/2}\thinspace e^{N\big(\mathrm{Vol}+i\thinspace\mathrm{CS}\big)/2\pi}\cdot\big(c+O(1/N)\big)
 $$
 
 $N^{3/2}$ 가 붙는 것이 요점이다. 지수 앞의 멱이 정확히 $3/2$ 라는 것은 안장점이 비퇴화이고 실질 차원이 3 이라는 뜻이며, 아래 수치 실험에서 이 멱을 직접 확인할 수 있다. 상수 $c$ 는 비틀림과 관련된다. Witten 점근 추측에서 진폭이 Reidemeister 비틀림이었던 것과 같은 구조가 복소 안장점에서 반복된다.

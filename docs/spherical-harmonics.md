@@ -65,7 +65,7 @@ graph TD
 $\mathcal H_\ell$ 의 정규직교기저를 구면좌표로 쓰면
 
 $$
-Y_{\ell m}(\theta,\varphi)=\sqrt{\frac{2\ell+1}{4\pi}\frac{(\ell-m)!}{(\ell+m)!}}\;P_\ell^m(\cos\theta)\,e^{im\varphi},
+Y_{\ell m}(\theta,\varphi)=\sqrt{\frac{2\ell+1}{4\pi}\frac{(\ell-m)!}{(\ell+m)!}}\thickspace P_\ell^m(\cos\theta)\thinspace e^{im\varphi},
 \qquad -\ell\le m\le\ell
 $$
 
@@ -95,7 +95,7 @@ $\lbrace Y_{\ell m}\rbrace$ 이 $L^2(S^2)$ 의 정규직교기저다. 다항식�
 
 $$
 f=\sum_{\ell\ge0}\sum_{m=-\ell}^\ell a_{\ell m}Y_{\ell m},\qquad
-a_{\ell m}=\int_{S^2}f\,\overline{Y_{\ell m}}\,d\sigma
+a_{\ell m}=\int_{S^2}f\thinspace\overline{Y_{\ell m}}\thinspace d\sigma
 $$
 
 이고 $\Vert f\Vert^2=\sum|a_{\ell m}|^2$ 다. $f$ 가 매끄러우면 계수가 빠르게 감소하므로 낮은 $\ell$ 만 남겨도 좋은 근사가 된다.
@@ -105,9 +105,9 @@ $$
 회전과 교환하는 유계 작용소는 각 $\mathcal H_\ell$ 에서 스칼라 $\lambda_\ell$ 배다. 특히 핵이 $k(\hat x\cdot\hat y)$ 꼴인 적분작용소에서
 
 $$
-\int_{S^2}k(\hat x\cdot\hat y)Y_{\ell m}(\hat y)\,d\sigma(\hat y)=\lambda_\ell\,Y_{\ell m}(\hat x),
+\int_{S^2}k(\hat x\cdot\hat y)Y_{\ell m}(\hat y)\thinspace d\sigma(\hat y)=\lambda_\ell\thinspace Y_{\ell m}(\hat x),
 \qquad
-\lambda_\ell=2\pi\int_{-1}^1k(t)P_\ell(t)\,dt
+\lambda_\ell=2\pi\int_{-1}^1k(t)P_\ell(t)\thinspace dt
 $$
 
 가 성립한다. Funk–Hecke 정리다. 구면 위의 합성곱이 $\ell$ 마다 하나의 곱셈으로 대각화된다는 뜻이며, 원에서 합성곱이 Fourier 계수의 곱이 되는 것의 구면판이다.

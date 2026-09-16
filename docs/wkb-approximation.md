@@ -5,7 +5,7 @@
 최고계 도함수 앞에 작은 매개변수가 붙은 미분방정식
 
 $$
-\epsilon^2 y''(x) = Q(x)\,y(x)
+\epsilon^2 y''(x) = Q(x)\thinspace y(x)
 $$
 
 는 [상미분방정식](ordinary-differential-equations.md)의 표준적인 해법이 통하지 않는다. $\epsilon \to 0$ 에서 방정식의 계수(階數)가 떨어지므로 정칙 섭동이 아니다. WKB 근사는 해를 거듭제곱이 아니라 **지수의 어깨 위에서** 전개해 이 특이성을 정면으로 다룬다.
@@ -37,7 +37,7 @@ graph LR
 해를
 
 $$
-y(x) \;=\; \exp\left(\frac{1}{\epsilon}\sum_{n \ge 0}\epsilon^{n} S_n(x)\right)
+y(x) \thickspace=\thickspace \exp\left(\frac{1}{\epsilon}\sum_{n \ge 0}\epsilon^{n} S_n(x)\right)
 $$
 
 로 놓고 대입한 뒤 $\epsilon$ 의 거듭제곱별로 맞춘다. 최저 두 차수는
@@ -49,7 +49,7 @@ $$
 이다. 앞의 것을 **eikonal 방정식**, 뒤의 것을 **수송 방정식**이라 한다. 풀면 $S_0 = \pm\int^x \sqrt{Q}\thinspace dt$ 이고 $S_1 = -\tfrac14 \log Q$ 이므로, 두 독립해가
 
 $$
-y_{\pm}(x) \;\sim\; \frac{1}{Q(x)^{1/4}}\exp\left(\pm\frac{1}{\epsilon}\int^{x}\sqrt{Q(t)}\,dt\right)
+y_{\pm}(x) \thickspace\sim\thickspace \frac{1}{Q(x)^{1/4}}\exp\left(\pm\frac{1}{\epsilon}\int^{x}\sqrt{Q(t)}\thinspace dt\right)
 $$
 
 로 나온다. $Q < 0$ 인 영역에서는 지수가 순허수가 되어 $\lvert Q\rvert^{-1/4}\cos$ 와 $\lvert Q \rvert^{-1/4}\sin$ 꼴의 진동해가 된다.
@@ -59,7 +59,7 @@ $$
 전개가 점근적이려면 다음 차수가 앞 차수보다 작아야 한다. 조건은
 
 $$
-\epsilon\,\frac{\lvert Q' \rvert}{\lvert Q \rvert^{3/2}} \;\ll\; 1
+\epsilon\thinspace\frac{\lvert Q' \rvert}{\lvert Q \rvert^{3/2}} \thickspace\ll\thickspace 1
 $$
 
 이고, 물리 표기로는 "파장이 그 자리에서 변하는 정도가 1 보다 훨씬 작다" 는 말이다. $Q \to 0$ 인 회전점에서 좌변이 발산하므로 근사가 깨진다.
@@ -88,7 +88,7 @@ WKB 해 두 개는 [Stokes 현상](stokes-phenomenon.md)에서 말한 두 개의
 $Q(x) = \tfrac{2m}{\hbar^2}\bigl(V(x) - E\bigr)$ 로 두고 $\epsilon = \hbar$ 로 보면 정상상태 Schrödinger 방정식이 된다. 두 회전점 $a < b$ 사이에서 파동이 갇힌 경우, 양쪽에서 연결 공식을 적용해 같은 해가 되도록 요구하면
 
 $$
-\frac{1}{\hbar}\int_{a}^{b}\sqrt{2m\bigl(E - V(x)\bigr)}\;dx \;=\; \pi\left(n + \frac12\right), \qquad n = 0, 1, 2, \dots
+\frac{1}{\hbar}\int_{a}^{b}\sqrt{2m\bigl(E - V(x)\bigr)}\thickspace dx \thickspace=\thickspace \pi\left(n + \frac12\right), \qquad n = 0, 1, 2, \dots
 $$
 
 를 얻는다. 고전역학의 작용이 $\hbar$ 의 정수배가 아니라 반정수배라는 점이 WKB 가 주는 보정이고, $1/2$ 은 회전점 두 개에서 각각 $\pi/4$ 씩 받은 위상이다.
@@ -100,7 +100,7 @@ $$
 $1/2$ 이 늘 $1/2$ 인 것은 아니다. 양자화 조건을 닫힌 궤도 전체에 대한 적분으로 다시 쓰면
 
 $$
-\oint p\,dq \;=\; 2\pi\hbar\left(n+\frac{\mu}{4}\right)
+\oint p\thinspace dq \thickspace=\thickspace 2\pi\hbar\left(n+\frac{\mu}{4}\right)
 $$
 
 가 되고, 여기 나타나는 정수 $\mu$ 를 **Maslov 지표**라 한다. 이름이 붙은 이유는 $\mu$ 가 퍼텐셜의 세부가 아니라 궤도가 **어떤 종류의 되돌아옴을 몇 번 겪는가**만으로 정해지기 때문이다. 세는 규칙은 단순하다.
@@ -122,7 +122,7 @@ $$
 마지막 두 줄이 확인하기 좋다. 무한 우물에서 $\oint p\thinspace dq=2pL=2\pi\hbar(n+1)$ 은 $E=(n+1)^2\pi^2\hbar^2/2mL^2$ 로 **정확한** 고윳값이다. 반직선 삼각 우물에서는 $m=\hbar=1$ 로 두면
 
 $$
-\int_0^{E}\sqrt{2(E-x)}\,dx=\frac{2\sqrt2}{3}E^{3/2}=\pi\Big(n+\frac34\Big)
+\int_0^{E}\sqrt{2(E-x)}\thinspace dx=\frac{2\sqrt2}{3}E^{3/2}=\pi\Big(n+\frac34\Big)
 $$
 
 이고 $n=0$ 에서 $E_0=1.8416$ 이 나온다. 정확값은 $-a_1/2^{1/3}=1.8558$ 이다. 같은 문제를 $V=\lvert x\rvert$ 의 **홀함수 상태**로 보면 회전점 2 개짜리 $\mu=2$ 조건의 $n=1$ 이 되어 똑같은 값이 나온다. 벽 하나를 대칭성으로 바꿔치기해도 셈이 맞는다는 점이 이 지표가 궤도의 위상적 성질이라는 증거다.
@@ -130,7 +130,7 @@ $$
 $\mu$ 의 정체는 [정상위상법](stationary-phase.md)에서 이미 보았다. 임계점의 기여에 붙던 위상 $e^{i\pi\sigma(H)/4}$ 의 부호수 $\sigma(H)$ 가 바로 이것이다. 반고전 극한에서 파동함수는 고전 궤도들의 합이고, 각 궤도의 기여에 작용 $S/\hbar$ 와 함께 이 위상이 붙는다.
 
 $$
-\psi\sim\sum_{\text{궤도}}A_j\,\exp\Big(\frac i\hbar S_j-\frac{i\pi}{2}\mu_j\Big)
+\psi\sim\sum_{\text{궤도}}A_j\thinspace\exp\Big(\frac i\hbar S_j-\frac{i\pi}{2}\mu_j\Big)
 $$
 
 기하적으로 $\mu_j$ 는 궤도가 위치공간으로 사영될 때 **접히는 횟수**, 곧 화선(caustic)을 지나는 횟수다. 접힐 때마다 $A_j$ 의 분모가 0 이 되어 WKB 진폭이 발산하고, 그 자리를 [Airy 함수](airy-functions.md)로 매끄럽게 이어 붙이면 $\pi/2$ 의 위상 손실이 남는다. 주기 궤도의 합으로 상태밀도를 쓰는 Gutzwiller 대각합 공식에서도 각 궤도에 이 지표가 그대로 따라붙는다.
@@ -140,7 +140,7 @@ $$
 $V > E$ 인 영역을 통과하는 확률은 감쇠해의 감쇠량으로 결정된다.
 
 $$
-T \;\approx\; \exp\left(-\frac{2}{\hbar}\int_{a}^{b}\sqrt{2m\bigl(V(x) - E\bigr)}\;dx\right)
+T \thickspace\approx\thickspace \exp\left(-\frac{2}{\hbar}\int_{a}^{b}\sqrt{2m\bigl(V(x) - E\bigr)}\thickspace dx\right)
 $$
 
 지수 안의 값이 $\hbar$ 로 나누어지므로 투과율은 고전적 극한에서 지수적으로 0 이 된다. $\alpha$ 붕괴의 수명이 에너지에 지수적으로 민감한 이유, 주사 터널링 현미경이 원자 한 층의 높이차를 읽는 이유가 모두 이 지수 하나에서 나온다.

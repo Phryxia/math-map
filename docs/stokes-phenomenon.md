@@ -15,7 +15,7 @@
 점근급수의 계수가 왜 하필 $n!$ 처럼 커지는가. 답은 급수가 보고 있지 않은 두 번째 안장점에 있다. 두 안장점의 작용 차이를 $A$ 라 하면 계수는
 
 $$
-a_n \;\sim\; \frac{C\,\Gamma(n+b)}{A^{\,n+b}}
+a_n \thickspace\sim\thickspace \frac{C\thinspace\Gamma(n+b)}{A^{\thinspace n+b}}
 $$
 
 꼴로 커진다. $A$ 가 작을수록, 즉 두 안장점이 가까울수록 급수는 더 빨리 발산한다. 계수를 많이 계산해 성장률을 재면 보이지 않는 안장점의 위치를 알아낼 수 있다는 뜻이기도 하다.
@@ -46,13 +46,13 @@ $e^{-Ax}$ 가 주도항에 비해 가장 작은 방향에서 항이 켜지고, �
 $x \to \infty$ 에서의 점근급수 $\tilde f(x) = \sum_{n \ge 0} a_n x^{-n-1}$ 에 대해 **Borel 변환**을
 
 $$
-\mathcal{B}[\tilde f](\zeta) \;=\; \sum_{n \ge 0} \frac{a_n}{n!}\,\zeta^{n}
+\mathcal{B}[\tilde f](\zeta) \thickspace=\thickspace \sum_{n \ge 0} \frac{a_n}{n!}\thinspace\zeta^{n}
 $$
 
 으로 정의한다. $a_n$ 이 $n!$ 규모로 커져도 $\mathcal{B}[\tilde f]$ 는 양의 수렴 반경을 가진다. 이 함수를 해석적으로 연장한 뒤
 
 $$
-\mathcal{S}_\theta \tilde f(x) \;=\; \int_0^{e^{i\theta}\infty} e^{-x\zeta}\,\mathcal{B}[\tilde f](\zeta)\,d\zeta
+\mathcal{S}_\theta \tilde f(x) \thickspace=\thickspace \int_0^{e^{i\theta}\infty} e^{-x\zeta}\thinspace\mathcal{B}[\tilde f](\zeta)\thinspace d\zeta
 $$
 
 를 방향 $\theta$ 의 **Borel 합**이라 한다. 적분이 수렴하면 $\mathcal{S}_\theta \tilde f$ 는 실제 해석함수이고 그 점근전개가 원래 급수다.
@@ -75,7 +75,7 @@ $\mathcal{B}[\tilde f]$ 의 특이점이 놓인 방향을 **특이 방향**이�
 지수항 하나로는 함수를 다 적지 못한다. 모든 안장점을 한꺼번에 쓴 형식적 표현
 
 $$
-F(x) \;=\; \sum_{k \ge 0} \sigma^{k}\,e^{-kAx}\,x^{-kb}\sum_{n \ge 0} a_{n,k}\,x^{-n}
+F(x) \thickspace=\thickspace \sum_{k \ge 0} \sigma^{k}\thinspace e^{-kAx}\thinspace x^{-kb}\sum_{n \ge 0} a_{n,k}\thinspace x^{-n}
 $$
 
 을 **transseries** 라 한다. $k = 0$ 항이 보통의 점근급수이고, $\sigma$ 가 Stokes 상수이며 방향을 건널 때 값이 바뀐다. **Resurgence** 는 $k = 0$ 급수의 계수 $a_{n,0}$ 의 큰 $n$ 점근이 $k = 1$ 급수의 계수 $a_{n,1}$ 로 쓰인다는 사실을 말한다. 한 조각 안에 나머지 조각들이 되살아나 있다.
@@ -103,7 +103,7 @@ Stirling 급수가 좋은 예다. 그 Borel 변환의 특이점이 $\zeta = 2\pi
 고전적인 서술에서 작은 항의 계수는 Stokes 선에서 0 에서 1 로 점프한다. Berry 는 최적 절단 부근에서 보면 그 전환이 매끄러움을 보였다. 적절한 국소 변수 $\sigma$ 에 대해 승수가
 
 $$
-S(\sigma) \;\approx\; \tfrac12\,\operatorname{erfc}(-\sigma)
+S(\sigma) \thickspace\approx\thickspace \tfrac12\thinspace\operatorname{erfc}(-\sigma)
 $$
 
 로 변한다. 점프는 급수를 성기게 볼 때 생기는 착시이고, 알맞은 해상도로 보면 오차함수 한 개의 매끄러운 계단이다.
@@ -113,7 +113,7 @@ $$
 $\operatorname{Ai}(z)$ 는 안장점이 둘인 가장 간단한 예다. $\lvert \arg z\rvert < \pi/3$ 에서는 감쇠하는 안장점 하나가 지배해
 
 $$
-\operatorname{Ai}(z) \;\sim\; \frac{e^{-\frac23 z^{3/2}}}{2\sqrt{\pi}\,z^{1/4}}\sum_{n\ge0} (-1)^n\frac{c_n}{(\tfrac23 z^{3/2})^{n}}
+\operatorname{Ai}(z) \thickspace\sim\thickspace \frac{e^{-\frac23 z^{3/2}}}{2\sqrt{\pi}\thinspace z^{1/4}}\sum_{n\ge0} (-1)^n\frac{c_n}{(\tfrac23 z^{3/2})^{n}}
 $$
 
 이고, 음의 실축 쪽으로 돌아가면 두 안장점의 기여가 합쳐져 진동하는 꼴이 된다. 그 사이 $\arg z = \pm 2\pi/3$ 에서 두 번째 지수항이 켜진다. "지수적으로 감쇠하는 해" 와 "진동하는 해" 가 같은 함수의 두 영역이라는 사실이 [WKB 근사](wkb-approximation.md)의 연결 공식이 하는 일이고, Stokes 가 1857 년에 실제로 본 현상이 이것이다.

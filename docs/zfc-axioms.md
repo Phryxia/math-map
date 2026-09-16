@@ -13,7 +13,7 @@ ZFC로부터 자연수, 정수, 유리수, 실수, 함수, 관계, 군·환·체
 [집합](sets.md)의 소박한 이해에서는 "성질 $P$ 를 만족하는 모든 것의 모임"을 집합으로 인정한다. 여기서 $P$ 를 "자기 자신을 원소로 갖지 않는다"로 두면 다음 모순이 나온다.
 
 $$
-R=\{\,x : x\notin x\,\}\ \Longrightarrow\ R\in R \iff R\notin R
+R=\lbrace\thinspace x : x\notin x\thinspace\rbrace\ \Longrightarrow\ R\in R \iff R\notin R
 $$
 
 ZFC의 해법은 무제한 내포를 버리고, 이미 주어진 집합 $A$ 의 부분집합만 성질로 잘라내도록 허용하는 것이다(분류 공리). 그러면 위 논법은 모순 대신 " $R$ 은 어떤 집합에도 속하지 않는다", 즉 모든 집합의 집합은 없다는 결론만 준다.
@@ -36,7 +36,7 @@ graph BT
 아래에서 변수는 모두 집합을 가리키고, 원소 관계만 원시 기호다. 부분집합 관계는 축약 표기로 정의한다.
 
 $$
-A\subseteq B \ :\iff\ \forall x\,(x\in A\to x\in B)
+A\subseteq B \ :\iff\ \forall x\thinspace(x\in A\to x\in B)
 $$
 
 ## 공리 목록
@@ -44,55 +44,55 @@ $$
 1. 외연성(extensionality): 원소가 같은 집합은 같다.
 
 $$
-\forall A\,\forall B\,\bigl(\forall x\,(x\in A\leftrightarrow x\in B)\to A=B\bigr)
+\forall A\thinspace\forall B\thinspace\bigl(\forall x\thinspace(x\in A\leftrightarrow x\in B)\to A=B\bigr)
 $$
 
 2. 짝(pairing): 임의의 a, b에 대해 둘만을 원소로 갖는 집합이 있다.
 
 $$
-\forall a\,\forall b\,\exists P\,\forall x\,\bigl(x\in P\leftrightarrow (x=a\vee x=b)\bigr)
+\forall a\thinspace\forall b\thinspace\exists P\thinspace\forall x\thinspace\bigl(x\in P\leftrightarrow (x=a\vee x=b)\bigr)
 $$
 
 3. 합집합(union): 집합족의 원소들을 모은 집합이 있다.
 
 $$
-\forall F\,\exists U\,\forall x\,\bigl(x\in U\leftrightarrow \exists A\,(A\in F\wedge x\in A)\bigr)
+\forall F\thinspace\exists U\thinspace\forall x\thinspace\bigl(x\in U\leftrightarrow \exists A\thinspace(A\in F\wedge x\in A)\bigr)
 $$
 
 4. 거듭제곱집합(power set): 부분집합 전체의 집합이 있다.
 
 $$
-\forall A\,\exists P\,\forall B\,(B\in P\leftrightarrow B\subseteq A)
+\forall A\thinspace\exists P\thinspace\forall B\thinspace(B\in P\leftrightarrow B\subseteq A)
 $$
 
 5. 분류 스킴(separation): 각 논리식 $\varphi$ 마다 하나의 공리. $A$ 의 원소 중 $\varphi$ 를 만족하는 것들이 집합을 이룬다.
 
 $$
-\forall A\,\exists S\,\forall x\,\bigl(x\in S\leftrightarrow (x\in A\wedge \varphi(x,\vec p))\bigr)
+\forall A\thinspace\exists S\thinspace\forall x\thinspace\bigl(x\in S\leftrightarrow (x\in A\wedge \varphi(x,\vec p))\bigr)
 $$
 
 6. 치환 스킴(replacement): 각 논리식 phi마다 하나의 공리. phi가 A 위에서 함수처럼 행동하면 그 상이 집합을 이룬다.
 
 $$
-\forall x\in A\,\exists! y\,\varphi(x,y)\ \Longrightarrow\ \exists B\,\forall y\,\bigl(y\in B\leftrightarrow\exists x\in A\,\varphi(x,y)\bigr)
+\forall x\in A\thinspace\exists! y\thinspace\varphi(x,y)\ \Longrightarrow\ \exists B\thinspace\forall y\thinspace\bigl(y\in B\leftrightarrow\exists x\in A\thinspace\varphi(x,y)\bigr)
 $$
 
 7. 무한(infinity): 공집합을 포함하고 후속자에 닫힌 집합이 있다. 후속자는 다음으로 정의한다.
 
 $$
-S(x)=x\cup\{x\},\qquad \exists I\,\bigl(\varnothing\in I\wedge \forall x\,(x\in I\to S(x)\in I)\bigr)
+S(x)=x\cup\lbrace x\rbrace,\qquad \exists I\thinspace\bigl(\varnothing\in I\wedge \forall x\thinspace(x\in I\to S(x)\in I)\bigr)
 $$
 
 8. 정칙성(regularity, foundation): 공집합이 아닌 집합은 원소 관계에 대해 극소인 원소를 갖는다.
 
 $$
-\forall A\,\bigl(A\neq\varnothing \to \exists m\in A\ (m\cap A=\varnothing)\bigr)
+\forall A\thinspace\bigl(A\neq\varnothing \to \exists m\in A\ (m\cap A=\varnothing)\bigr)
 $$
 
 9. 선택(choice): 공집합을 원소로 갖지 않는 집합족에는 선택함수가 있다([선택공리와 Zorn 보조정리](axiom-of-choice.md)).
 
 $$
-\forall F\,\bigl(\varnothing\notin F \to \exists f:F\to\bigcup F\ \ \forall A\in F\ f(A)\in A\bigr)
+\forall F\thinspace\bigl(\varnothing\notin F \to \exists f:F\to\bigcup F\ \ \forall A\in F\ f(A)\in A\bigr)
 $$
 
 공집합의 존재는 무한 공리와 분류로부터 나오므로 별도 공리로 두지 않아도 된다. 1에서 8까지를 ZF, 9를 더한 것을 ZFC, 9를 뺀 체계를 ZF라 부른다[^1].
@@ -112,7 +112,7 @@ $$
 무한 공리가 주는 $I$ 에서 분류로 "후속자 닫힌 모든 집합에 속하는 원소"만 남기면 최소의 귀납적 집합을 얻는다. 이를 자연수 집합으로 정의한다[^2].
 
 $$
-0=\varnothing,\quad 1=\{0\},\quad 2=\{0,1\},\quad n+1=n\cup\{n\},\qquad \omega=\bigcap\{\,I : I \text{ 귀납적}\,\}
+0=\varnothing,\quad 1=\lbrace 0\rbrace,\quad 2=\lbrace 0,1\rbrace,\quad n+1=n\cup\lbrace n\rbrace,\qquad \omega=\bigcap\lbrace\thinspace I : I \text{ 귀납적}\thinspace\rbrace
 $$
 
 이 정의에서 n의 원소 개수는 정확히 n이고, m이 n의 원소인 것과 m이 n보다 작은 것이 같다. 즉 순서 관계가 원소 관계로 무료로 얻어진다. 외연성과 정칙성 덕분에 각 자연수는 유일하게 결정되고, 수학적 귀납법은 최소성에서 바로 나온다. 정수·유리수는 [동치류](relations.md)로, 실수는 유리수 Cauchy 수열의 동치류나 Dedekind 절단으로 구성한다.
@@ -120,7 +120,7 @@ $$
 ## 순서쌍과 함수
 
 $$
-(a,b)=\bigl\{\{a\},\{a,b\}\bigr\}
+(a,b)=\bigl\lbrace\lbrace a\rbrace,\lbrace a,b\rbrace\bigr\rbrace
 $$
 
 짝 공리를 두 번 쓰면 존재하고, 외연성으로 첫 성분과 둘째 성분이 복원된다. 곱집합은 거듭제곱집합과 분류로 만들고, [함수](functions.md)는 곱집합의 특별한 부분집합으로 정의한다. 관계, 순서, 대수 구조가 모두 이 위에 올라간다.

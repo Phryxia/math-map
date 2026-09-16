@@ -5,7 +5,7 @@
 [Weyl 지표 공식](weyl-character-formula.md)을 $\mathfrak{gl}_n$ 에 적용하면 분모가 Vandermonde 행렬식이 되고, 지표가 두 행렬식의 비로 떨어진다.
 
 $$
-s_\lambda(x_1,\dots,x_n)=\frac{\det\!\big(x_i^{\lambda_j+n-j}\big)_{1\le i,j\le n}}{\det\!\big(x_i^{n-j}\big)_{1\le i,j\le n}}
+s_\lambda(x_1,\dots,x_n)=\frac{\det\negthinspace\big(x_i^{\lambda_j+n-j}\big)_{1\le i,j\le n}}{\det\negthinspace\big(x_i^{n-j}\big)_{1\le i,j\le n}}
 $$
 
 이것이 **Schur 다항식**이다. 표현론에서는 기약표현의 지표이지만, 정의만 보면 대칭다항식 하나이고 실제로 대칭다항식 공간의 가장 자연스러운 기저다.
@@ -29,7 +29,7 @@ $$
 $\mathrm{GL}\_n$ 의 기약표현 $V_\lambda$ 의 무게 다이어그램을 생각하자. 무게 $\mu$ 의 중복도가 $\dim(V_\lambda)_\mu$ 이고, 지표는 그것을 $x^\mu$ 에 실어 모은 것이다.
 
 $$
-s_\lambda(x)=\sum_\mu K_{\lambda\mu}\,x^\mu
+s_\lambda(x)=\sum_\mu K_{\lambda\mu}\thinspace x^\mu
 $$
 
 이 계수 $K_{\lambda\mu}$ 를 **Kostka 수**라 한다. [Weyl 지표 공식 문서](weyl-character-formula.md)에서 Kostant 공식으로 계산한 것이 바로 이 수이고, 거기서는 Weyl 군 위의 교대합이라 부호가 상쇄되는 형태였다.

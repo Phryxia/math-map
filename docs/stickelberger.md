@@ -7,13 +7,13 @@
 핵심은 다음 한 줄이다. $\pi=1-\zeta_p$ 로 두고 $\omega$ 를 Teichmüller 지표라 하면
 
 $$
-\mathrm{ord}_\pi\,g(\omega^{-k})=k,\qquad 0\le k\le p-2
+\mathrm{ord}_\pi\thinspace g(\omega^{-k})=k,\qquad 0\le k\le p-2
 $$
 
 이다. 곧 Gauss 합의 부치가 지표의 "지수" 를 그대로 읽어 준다. Galois 켤레를 모두 모으면 이 데이터가 군환 $\mathbb Q[G]$ 안의 한 원소로 묶인다.
 
 $$
-\theta_m=\sum_{a\in(\mathbb Z/m)^{\times}}\Big\{\frac{a}{m}\Big\}\,\sigma_a^{-1}
+\theta_m=\sum_{a\in(\mathbb Z/m)^{\times}}\Big\lbrace\frac{a}{m}\Big\rbrace\thinspace\sigma_a^{-1}
 $$
 
 이것이 **Stickelberger 원소**다. 계수는 유리수지만 $(c-\sigma_c)\theta_m$ 꼴은 정수계수가 되고, 그렇게 얻은 정수계수 원소들이 $\mathbb Q(\mu_m)$ 의 **이데알류군을 소멸시킨다**. 이것이 Stickelberger 의 정리다.
@@ -38,7 +38,7 @@ $\mathbb Z_p[\mu_p]$ 에서 $\zeta_p=1+\pi$ 이므로
 
 $$
 g(\omega^{-k})=\sum_{a=1}^{p-1}\omega^{-k}(a)(1+\pi)^{a}
-=\sum_{j\ge0}\binom{\cdot}{j}\pi^{j}\sum_{a}\omega^{-k}(a)a^{\,j}\big/j!\ \text{꼴}
+=\sum_{j\ge0}\binom{\cdot}{j}\pi^{j}\sum_{a}\omega^{-k}(a)a^{\thinspace j}\big/j!\ \text{꼴}
 $$
 
 로 전개된다. 안쪽 합 $\sum_a\omega^{-k}(a)a^{j}$ 는 $j\equiv k$ 일 때만 $p$ 를 법으로 살아남는다. $\omega$ 가 $\bmod p$ 에서 항등이라 직교성이 그대로 작동하기 때문이다. 따라서 가장 낮은 살아남는 항이 $j=k$ 이고, 부치가 정확히 $k$ 가 된다. 같은 계산을 조금 더 밀면 **Stickelberger 합동**
@@ -54,7 +54,7 @@ $$
 $\sigma_t\in\mathrm{Gal}$ 이 $\omega$ 를 $\omega^{t}$ 로 보내므로 $\sigma_t$ 를 적용하면 지수 $k$ 가 $\langle kt\rangle$ ($[0,p-2]$ 안의 대표원)로 바뀐다. 따라서
 
 $$
-\big(g(\omega^{-k})\big)=\prod_t \mathfrak P_t^{\,\langle kt\rangle}
+\big(g(\omega^{-k})\big)=\prod_t \mathfrak P_t^{\thinspace\langle kt\rangle}
 $$
 
 꼴이 되고, 지수의 목록 $\lbrace\langle kt\rangle/(p-1)\rbrace$ 이 정확히 $\theta$ 의 계수 $\lbrace a/m\rbrace$ 다. **분수부 함수가 등장하는 이유는 $p$ 진 전개의 자릿수를 재고 있기 때문이다.**
@@ -105,7 +105,7 @@ flowchart TD
 $K=\mathbb Q(\mu_m)$ 과 $G=\mathrm{Gal}(K/\mathbb Q)\cong(\mathbb Z/m)^{\times}$ 를 두고 $\sigma_a(\zeta_m)=\zeta_m^{a}$ 라 하자.
 
 $$
-\theta_m=\sum_{a\in(\mathbb Z/m)^{\times}}\Big\{\frac{a}{m}\Big\}\sigma_a^{-1}\in\mathbb Q[G],
+\theta_m=\sum_{a\in(\mathbb Z/m)^{\times}}\Big\lbrace\frac{a}{m}\Big\rbrace\sigma_a^{-1}\in\mathbb Q[G],
 \qquad
 I_m=\mathbb Z[G]\cap\theta_m\mathbb Z[G]
 $$
@@ -117,7 +117,7 @@ $I_m$ 을 **Stickelberger 아이디얼**이라 한다. $\gcd(c,m)=1$ 인 $c$ 에
 **정리(Stickelberger).** $\mathfrak P$ 를 $\mathbb Q(\mu_{p-1},\mu_p)$ 의 $p$ 위 소 아이디얼이라 하자. $\chi$ 가 $\mathbb F_p^{\times}$ 의 위수 $d\mid p-1$ 인 지표일 때
 
 $$
-\big(g(\chi)\big)=\mathfrak P^{\,(p-1)\theta}
+\big(g(\chi)\big)=\mathfrak P^{\thinspace(p-1)\theta}
 $$
 
 꼴로 쓸 수 있고, 지수에 나타나는 유리수들이 위의 $\lbrace a/m\rbrace$ 이다. 소수체가 아닌 $q=p^{f}$ 의 $\mathbb F_q$ 로 가면 지수가 $k$ 의 $p$ 진 자릿수의 합 $s_p(k)$ 로 대체된다.
@@ -133,10 +133,10 @@ $$
 $\chi$ 를 도체 $f\mid m$ 인 원시 지표라 하면
 
 $$
-\chi(\theta_m)=\sum_a\Big\{\frac{a}{m}\Big\}\chi^{-1}(a)
+\chi(\theta_m)=\sum_a\Big\lbrace\frac{a}{m}\Big\rbrace\chi^{-1}(a)
 =-L(0,\chi^{-1})\times(\text{국소 인자}),
 \qquad
-L(0,\chi)=-B_{1,\chi}=-\frac1f\sum_{a=1}^{f}\chi(a)\,a
+L(0,\chi)=-B_{1,\chi}=-\frac1f\sum_{a=1}^{f}\chi(a)\thinspace a
 $$
 
 이다. $\chi$ 가 짝이면 $L(0,\chi)=0$ 이고 위에서 본 $\theta$ 의 짝수 부분 소멸과 일치한다. 그러므로 $\theta_m$ 은 **$L$ 함수의 $s=0$ 값들을 성분으로 갖는 군환 원소**다.
@@ -160,7 +160,7 @@ $$
 Iwasawa 와 Sinnott 은 Stickelberger 아이디얼의 지표를 계산했다.
 
 $$
-\big[\,\mathbb Z[G]^{-}:I_m^{-}\,\big]=h^{-}_m
+\big[\thinspace\mathbb Z[G]^{-}:I_m^{-}\thinspace\big]=h^{-}_m
 $$
 
 $h^{-}$ 은 상대류수 $h/h^{+}$ 다. 이 공식이 [Iwasawa 주추측](iwasawa-main-conjecture.md)에서 "총량을 고정" 하는 역할을 하는 두 지표 공식 중 하나다. 나머지 하나가 순환체 단수의 지표 $[E:C]=h^{+}$ 이고, 둘은 정확히 홀수 쪽과 짝수 쪽을 나눠 맡는다.

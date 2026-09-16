@@ -7,7 +7,7 @@
 엔트로피 항을 더하면 둘 다 풀린다. 목적함수가 강볼록해져 해가 유일해지고 매끄러워지며, 최적해가 닫힌 꼴을 갖는다.
 
 $$
-P^\star=\mathrm{diag}(u)\,K\,\mathrm{diag}(v),\qquad K=e^{-C/\varepsilon}
+P^\star=\mathrm{diag}(u)\thinspace K\thinspace\mathrm{diag}(v),\qquad K=e^{-C/\varepsilon}
 $$
 
 남은 일은 $u,v$ 를 주변분포에 맞추는 것뿐이고, 두 조건을 번갈아 강제하는 것이 **Sinkhorn 반복**이다. 행렬-벡터 곱만 쓰므로 GPU 에서 빠르다.
@@ -24,7 +24,7 @@ $$
 
 $$
 \varepsilon\to0:\ P^\star\to\text{최적 수송 계획},\qquad
-\varepsilon\to\infty:\ P^\star\to a\,b^\top\ (\text{독립 결합})
+\varepsilon\to\infty:\ P^\star\to a\thinspace b^\top\ (\text{독립 결합})
 $$
 
 극한이 둘 다 뜻이 통한다. $\varepsilon$ 이 크면 비용을 무시하고 가장 무질서한 결합인 곱측도로 가고, 작으면 원래 문제로 돌아간다.
@@ -46,13 +46,13 @@ $u_i=e^{f_i/\varepsilon}$ 과 $v_j=e^{g_j/\varepsilon}$ 로 쓰면 대각 스케
 목적함수를 다시 쓰면 정체가 분명해진다. $K=e^{-C/\varepsilon}$ 로 두면
 
 $$
-\langle C,P\rangle-\varepsilon H(P)=\varepsilon\,\mathrm{KL}(P\,\|\,K)+\text{상수}
+\langle C,P\rangle-\varepsilon H(P)=\varepsilon\thinspace\mathrm{KL}(P\thinspace\Vert\thinspace K)+\text{상수}
 $$
 
 이므로, 엔트로피 정규화 최적 수송은 **$K$ 에 KL 발산으로 가장 가까운 결합을 찾는 문제**다. 제약 집합은 아핀집합 두 개의 교집합이다.
 
 $$
-\mathcal C_1=\{P:P\mathbf 1=a\},\qquad \mathcal C_2=\{P:P^\top\mathbf 1=b\}
+\mathcal C_1=\lbrace P:P\mathbf 1=a\rbrace,\qquad \mathcal C_2=\lbrace P:P^\top\mathbf 1=b\rbrace
 $$
 
 Sinkhorn 반복의 한 단계는 정확히 $\mathcal C_1$ 로의 KL 사영이고, 다음 단계는 $\mathcal C_2$ 로의 KL 사영이다. 아핀집합으로의 Bregman 교대 사영이 교집합으로 수렴한다는 일반 정리의 특수한 경우이며, 유클리드 거리로 두 부분공간에 번갈아 사영하는 고전적 그림과 같은 구조다.
@@ -90,7 +90,7 @@ Birkhoff–Hopf 정리에 따르면 성분이 모두 양수인 행렬 $K$ 를 �
 $a\in\Delta_n$ 과 $b\in\Delta_m$ 을 확률벡터, $C\in\mathbb R^{n\times m}_{\ge0}$ 을 비용행렬이라 하고 $\Pi(a,b)=\lbrace P\ge0:P\mathbf1=a,\ P^\top\mathbf1=b\rbrace$ 라 하자.
 
 $$
-\mathrm{OT}_\varepsilon(a,b)=\min_{P\in\Pi(a,b)}\ \langle C,P\rangle+\varepsilon\,\mathrm{KL}\big(P\,\|\,a\otimes b\big)
+\mathrm{OT}_\varepsilon(a,b)=\min_{P\in\Pi(a,b)}\ \langle C,P\rangle+\varepsilon\thinspace\mathrm{KL}\big(P\thinspace\Vert\thinspace a\otimes b\big)
 $$
 
 기준측도를 $K=e^{-C/\varepsilon}$ 로 잡느냐 곱측도 $a\otimes b$ 로 잡느냐는 상수 차이이고 최적해 $P^\star$ 는 같다. 아래에서는 편향 논의에 편한 곱측도 규약을 쓴다. 목적함수가 $P$ 에 대해 강볼록하고 $\Pi(a,b)$ 가 콤팩트 볼록집합이므로 최소점이 유일하다.
@@ -100,20 +100,20 @@ $$
 제약에 승수 $f\in\mathbb R^n$ 과 $g\in\mathbb R^m$ 을 붙이고 $P$ 에 대해 최소화하면 매끄러운 쌍대 문제가 나온다.
 
 $$
-\max_{f,g}\ \langle f,a\rangle+\langle g,b\rangle-\varepsilon\sum_{i,j}a_ib_j\,e^{(f_i+g_j-C_{ij})/\varepsilon}
+\max_{f,g}\ \langle f,a\rangle+\langle g,b\rangle-\varepsilon\sum_{i,j}a_ib_j\thinspace e^{(f_i+g_j-C_{ij})/\varepsilon}
 $$
 
 원 문제와 달리 제약이 전혀 없다. 최적해는
 
 $$
-P^\star_{ij}=a_ib_j\,e^{(f_i+g_j-C_{ij})/\varepsilon}
+P^\star_{ij}=a_ib_j\thinspace e^{(f_i+g_j-C_{ij})/\varepsilon}
 $$
 
 이고, 각 변수에 대한 일계 조건이 곧 주변분포 조건이다. 이 조건을 번갈아 풀면
 
 $$
-f_i=-\varepsilon\log\sum_jb_j\,e^{(g_j-C_{ij})/\varepsilon},\qquad
-g_j=-\varepsilon\log\sum_ia_i\,e^{(f_i-C_{ij})/\varepsilon}
+f_i=-\varepsilon\log\sum_jb_j\thinspace e^{(g_j-C_{ij})/\varepsilon},\qquad
+g_j=-\varepsilon\log\sum_ia_i\thinspace e^{(f_i-C_{ij})/\varepsilon}
 $$
 
 가 된다. 곧 Sinkhorn 반복은 쌍대 문제의 **블록 좌표 상승법**이다. 곱 형태 $u\leftarrow a/(Kv)$ 와 $v\leftarrow b/(K^\top u)$ 같은 알고리즘이며, 위 식은 그것을 로그로 옮긴 것이다.

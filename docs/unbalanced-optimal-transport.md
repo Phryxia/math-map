@@ -9,8 +9,8 @@
 **불균형 최적 수송**은 주변분포 제약을 등식에서 벌점으로 바꾼다[^1].
 
 $$
-\min_{P\ge0}\ \langle C,P\rangle+\varepsilon\,\mathrm{KL}(P\,\|\,a\otimes b)
-+\tau\,\mathrm{KL}(P\mathbf 1\,\|\,a)+\tau\,\mathrm{KL}(P^\top\mathbf 1\,\|\,b)
+\min_{P\ge0}\ \langle C,P\rangle+\varepsilon\thinspace\mathrm{KL}(P\thinspace\Vert\thinspace a\otimes b)
++\tau\thinspace\mathrm{KL}(P\mathbf 1\thinspace\Vert\thinspace a)+\tau\thinspace\mathrm{KL}(P^\top\mathbf 1\thinspace\Vert\thinspace b)
 $$
 
 $\tau$ 가 "질량을 버리는 값" 과 "멀리 옮기는 값" 사이의 환율이다. $\tau\to\infty$ 면 벌점이 제약으로 돌아가 [Sinkhorn](sinkhorn.md) 문제가 되고, $\tau$ 가 작으면 먼 질량을 아예 포기한다.
@@ -18,7 +18,7 @@ $\tau$ 가 "질량을 버리는 값" 과 "멀리 옮기는 값" 사이의 환율
 놀라운 것은 알고리즘이 거의 그대로라는 점이다. 최적해는 여전히 대각 스케일링 꼴이고, 반복에 지수 하나만 붙는다.
 
 $$
-u\leftarrow\Big(\frac a{Kv}\Big)^{\!\lambda},\qquad \lambda=\frac\tau{\tau+\varepsilon}
+u\leftarrow\Big(\frac a{Kv}\Big)^{\negthinspace\lambda},\qquad \lambda=\frac\tau{\tau+\varepsilon}
 $$
 
 # 직관
@@ -34,7 +34,7 @@ $$
 균형 문제의 일계 조건은 "행 합이 정확히 $a$ 가 되도록 $f$ 를 고른다" 였다. 벌점이 되면 조건이 달라진다. 행 합을 $a$ 에 맞추는 이득과 $f$ 를 움직이는 비용이 균형을 이루는 지점이 답이고, 두 항이 모두 로그 꼴이라 그 지점이 **기하평균**으로 나온다.
 
 $$
-f_i\ \longleftarrow\ -\lambda\,\varepsilon\log\sum_jb_j\,e^{(g_j-C_{ij})/\varepsilon},\qquad
+f_i\ \longleftarrow\ -\lambda\thinspace\varepsilon\log\sum_jb_j\thinspace e^{(g_j-C_{ij})/\varepsilon},\qquad
 \lambda=\frac\tau{\tau+\varepsilon}\in(0,1)
 $$
 
@@ -67,8 +67,8 @@ $a\in\mathbb R^n_{>0}$ 과 $b\in\mathbb R^m_{>0}$ 은 총질량이 달라도 된
 
 $$
 \mathrm{UOT}_{\varepsilon,\tau}(a,b)=\min_{P\ge0}\ \langle C,P\rangle
-+\varepsilon\,\mathrm{KL}(P\,\|\,a\otimes b)
-+\tau\,\mathrm{KL}(P\mathbf 1\,\|\,a)+\tau\,\mathrm{KL}(P^\top\mathbf 1\,\|\,b)
++\varepsilon\thinspace\mathrm{KL}(P\thinspace\Vert\thinspace a\otimes b)
++\tau\thinspace\mathrm{KL}(P\mathbf 1\thinspace\Vert\thinspace a)+\tau\thinspace\mathrm{KL}(P^\top\mathbf 1\thinspace\Vert\thinspace b)
 $$
 
 로 둔다. 여기서 $\mathrm{KL}(\mu\Vert\nu)=\sum\mu_i\log\frac{\mu_i}{\nu_i}-\mu_i+\nu_i$ 로, 총질량이 다른 측도에도 뜻이 있는 형태를 쓴다. 마지막 두 항이 없으면 [Sinkhorn](sinkhorn.md) 문제이고, 그 항들의 계수를 무한대로 보내면 등식 제약이 복원된다.

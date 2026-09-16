@@ -15,7 +15,7 @@
 이진 부호 $C\subseteq\mathbb F_2^n$ 이 주어지면 다음 집합이 격자가 된다.
 
 $$
-\Lambda_A(C)=\{x\in\mathbb Z^n:\ x\bmod2\in C\}
+\Lambda_A(C)=\lbrace x\in\mathbb Z^n:\ x\bmod2\in C\rbrace
 $$
 
 이것이 Construction A 다. 격자점 사이의 거리가 두 가지 방식으로 생긴다. 같은 부호어에 대응하는 점들은 좌표 하나를 2 만큼 옮겨 얻어지므로 거리가 $2$ 이고, 서로 다른 부호어 사이는 Hamming 거리 $d$ 만큼의 좌표가 1 씩 달라 거리가 $\sqrt d$ 다.
@@ -72,7 +72,7 @@ $$
 ## $E_8$ 격자
 
 $$
-E_8=\Big\{x\in\mathbb Z^8\cup(\mathbb Z+\tfrac12)^8:\ \sum_i x_i\in2\mathbb Z\Big\}
+E_8=\Big\lbrace x\in\mathbb Z^8\cup(\mathbb Z+\tfrac12)^8:\ \sum_i x_i\in2\mathbb Z\Big\rbrace
 $$
 
 $\det E_8=1$ 이고 $\lambda_1=\sqrt2$ 다. 모든 벡터의 노름 제곱이 짝수인 짝격자이고, 자기 쌍대 곧 $E_8^*=E_8$ 이며, 이 두 성질을 동시에 갖는 가장 낮은 차원의 격자다. 짝 자기쌍대 격자는 차원이 8 의 배수일 때만 존재한다.

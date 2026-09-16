@@ -72,7 +72,7 @@ $p=23$ 에서는 기약이지만 상이 이면체군에 들어간다. 그러면 
 $\bar\rho\colon G_{\mathbb Q}\to\mathrm{GL}_2(\overline{\mathbb F}_p)$ 가 **모듈러**라는 것은 어떤 무게 $k\ge2$ 와 레벨 $N$ 과 네벤티푸스 $\varepsilon$ 의 고유형식 $f\in S_k(\Gamma_1(N))$ 과 $\lambda\mid p$ 가 있어
 
 $$
-\bar\rho\;\cong\;\bar\rho_{f,\lambda}
+\bar\rho\thickspace\cong\thickspace\bar\rho_{f,\lambda}
 $$
 
 인 것이다. 동치로, 거의 모든 소수 $\ell$ 에서
@@ -91,7 +91,7 @@ $$
 **강한 형태.** 그런 $\bar\rho$ 는 무게 $k(\bar\rho)$ 와 레벨 $N(\bar\rho)$ 에서 모듈러다. 두 값은 다음으로 정한다.
 
 $$
-N(\bar\rho)=\prod_{\ell\ne p}\ell^{\,n_\ell},\qquad
+N(\bar\rho)=\prod_{\ell\ne p}\ell^{\thinspace n_\ell},\qquad
 n_\ell=\sum_{i\ge0}\frac{|G_i|}{|G_0|}\dim\bigl(V/V^{G_i}\bigr)
 $$
 

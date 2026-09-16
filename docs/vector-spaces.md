@@ -30,9 +30,9 @@ $$
 
 $$
 \begin{aligned}
-a(u+v)&=au+av\\
-(a+b)v&=av+bv\\
-a(bv)&=(ab)v\\
+a(u+v)&=au+av\cr
+(a+b)v&=av+bv\cr
+a(bv)&=(ab)v\cr
 1v&=v
 \end{aligned}
 $$

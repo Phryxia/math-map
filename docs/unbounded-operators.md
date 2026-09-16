@@ -45,7 +45,7 @@ $T^*$ 의 정의역은 $T$ 의 정의역이 작을수록 커진다. 그래서 �
 $\mathcal D(T)\subset H$ 가 조밀하고 $T:\mathcal D(T)\to H$ 가 선형이라 하자. 수반작용소의 정의역은 다음이다.
 
 $$
-\mathcal D(T^*)=\big\{g\in H:\ \exists h\in H,\ \langle Tf,g\rangle=\langle f,h\rangle\ \ \forall f\in\mathcal D(T)\big\}
+\mathcal D(T^*)=\big\lbrace g\in H:\ \exists h\in H,\ \langle Tf,g\rangle=\langle f,h\rangle\ \ \forall f\in\mathcal D(T)\big\rbrace
 $$
 
 이때 $T^*g=h$ 로 두며, $\mathcal D(T)$ 의 조밀성이 $h$ 의 유일성을 보장한다. 정의역이 조밀하지 않으면 수반이 정의되지 않는다는 점이 첫 번째 제약이다.
@@ -97,8 +97,8 @@ $\mathcal D_0$ 를 $[0,1]$ 에서 양 끝이 0 인 매끄러운 함수들이라 
 자기수반 작용소 $T$ 에 대해 사영값 측도 $E$ 가 유일하게 존재해 다음이 성립한다.
 
 $$
-T=\int_{\mathbb R}\lambda\,dE(\lambda),\qquad
-\mathcal D(T)=\Big\{f:\int\lambda^2\,d\langle E(\lambda)f,f\rangle<\infty\Big\}
+T=\int_{\mathbb R}\lambda\thinspace dE(\lambda),\qquad
+\mathcal D(T)=\Big\lbrace f:\int\lambda^2\thinspace d\langle E(\lambda)f,f\rangle<\infty\Big\rbrace
 $$
 
 유계인 경우와 달리 정의역이 스펙트럼 측도로부터 결정된다는 점이 다르다. 동치인 형태로, 모든 자기수반 작용소는 어떤 측도공간 위에서 실함수를 곱하는 작용소와 유니터리 동치다.

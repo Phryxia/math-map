@@ -7,7 +7,7 @@
 지수가 순허수이면 사정이 완전히 달라진다.
 
 $$
-I(\lambda)=\int g(x)\,e^{i\lambda\varphi(x)}\,dx,\qquad \varphi\ \text{실함수}
+I(\lambda)=\int g(x)\thinspace e^{i\lambda\varphi(x)}\thinspace dx,\qquad \varphi\ \text{실함수}
 $$
 
 여기서는 피적분함수의 절댓값이 어디서나 $|g|$ 로 같다. 어느 점도 다른 점보다 크지 않으므로 감쇠가 크기를 정할 수 없다. 그런데도 $I(\lambda)$ 는 $\lambda\to\infty$ 에서 작아진다. 이유는 다른 데 있다. **이웃한 점들의 위상이 서로 달라 상쇄되기 때문**이다.
@@ -58,7 +58,7 @@ $$
 
 $$
 \int_{-\infty}^{\infty}e^{i\lambda\varphi''(x-x_0)^2/2}dx
-=\sqrt{\frac{2\pi}{\lambda|\varphi''|}}\;e^{i\pi\operatorname{sgn}(\varphi'')/4}
+=\sqrt{\frac{2\pi}{\lambda|\varphi''|}}\thickspace e^{i\pi\operatorname{sgn}(\varphi'')/4}
 $$
 
 Laplace 쪽에서는 $\sqrt{2\pi/(\lambda|\varphi''|)}$ 로 끝났는데 여기서는 $e^{\pm i\pi/4}$ 가 더 붙는다. 이것은 $\int e^{-ax^2}dx=\sqrt{\pi/a}$ 를 $a=-i\lambda\varphi''/2$ 라는 순허수까지 해석적으로 연장할 때, 제곱근이 어느 가지로 가느냐에서 나온다. $a$ 가 양의 실수에서 출발해 허축으로 회전하면 $\sqrt{1/a}$ 의 편각이 $\mp\pi/4$ 만큼 돈다.
@@ -88,7 +88,7 @@ flowchart TD
 > 1. $\varphi'\ne0$ 이면 모든 $N$ 에 대해 $I(\lambda)=O(\lambda^{-N})$ 이다.
 > 2. $\varphi$ 가 유일한 정상점 $x_0$ 를 갖고 $\varphi''(x_0)\ne0$ 이면
 > $$
-> I(\lambda)=g(x_0)\,e^{i\lambda\varphi(x_0)}\sqrt{\frac{2\pi}{\lambda|\varphi''(x_0)|}}\;e^{i\pi\operatorname{sgn}\varphi''(x_0)/4}\Big(1+O(\lambda^{-1})\Big)
+> I(\lambda)=g(x_0)\thinspace e^{i\lambda\varphi(x_0)}\sqrt{\frac{2\pi}{\lambda|\varphi''(x_0)|}}\thickspace e^{i\pi\operatorname{sgn}\varphi''(x_0)/4}\Big(1+O(\lambda^{-1})\Big)
 > $$
 >
 > 정상점이 여럿이면 각각의 기여를 더한다.
@@ -100,8 +100,8 @@ $\varphi''(x_0)\ne0$ 이라는 조건이 **비퇴화**다. Morse 이론의 비�
 $x\in\mathbb R^n$ 이고 $\varphi$ 의 임계점 $x_0$ 에서 Hessian $H=D^2\varphi(x_0)$ 가 가역이면
 
 $$
-\int_{\mathbb R^n}g\,e^{i\lambda\varphi}dx
-=g(x_0)e^{i\lambda\varphi(x_0)}\Big(\frac{2\pi}{\lambda}\Big)^{n/2}\frac{e^{i\pi\,\sigma(H)/4}}{\sqrt{|\det H|}}\Big(1+O(\lambda^{-1})\Big)
+\int_{\mathbb R^n}g\thinspace e^{i\lambda\varphi}dx
+=g(x_0)e^{i\lambda\varphi(x_0)}\Big(\frac{2\pi}{\lambda}\Big)^{n/2}\frac{e^{i\pi\thinspace\sigma(H)/4}}{\sqrt{|\det H|}}\Big(1+O(\lambda^{-1})\Big)
 $$
 
 $\sigma(H)$ 는 $H$ 의 부호수(양의 고윳값 개수 빼기 음의 고윳값 개수)다. 1 차원의 $\operatorname{sgn}\varphi''$ 가 그대로 올라온 것이고, 음의 고윳값 개수가 Morse 지표이므로 **위상이 임계점의 Morse 지표를 읽는다.** 진폭에 나타나는 $|\det H|^{-1/2}$ 는 임계점이 얼마나 "평평한지" 를 재는 양이고, 무한차원으로 가면 이 행렬식이 정규화되어 비틀림 같은 위상적 불변량이 된다.

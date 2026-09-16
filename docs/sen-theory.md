@@ -26,7 +26,7 @@ $$
 출발점은 Tate 의 계산이다.
 
 $$
-H^0(G_K,\mathbb C_p(k))=\begin{cases}K,&k=0\\0,&k\neq0\end{cases},\qquad
+H^0(G_K,\mathbb C_p(k))=\begin{cases}K,&k=0\cr 0,&k\neq0\end{cases},\qquad
 H^1(G_K,\mathbb C_p)=K
 $$
 

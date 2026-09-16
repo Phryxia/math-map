@@ -7,7 +7,7 @@
 $N \times N$ 무작위 대칭행렬의 고윳값은 반원 모양으로 퍼지고, 최대 고윳값은 반원의 오른쪽 끝 $2\sqrt N$ 근처에 놓인다. 그 요동의 크기는 $N^{-1/6}$ 이라는 어중간한 지수를 가지며, 적절히 규격화하면
 
 $$
-N^{2/3}\left(\frac{\lambda_{\max}}{\sqrt N} - 2\right) \;\longrightarrow\; \mathrm{TW}_\beta
+N^{2/3}\left(\frac{\lambda_{\max}}{\sqrt N} - 2\right) \thickspace\longrightarrow\thickspace \mathrm{TW}_\beta
 $$
 
 로 수렴한다. 극한분포는 [Airy 함수](airy-functions.md)로 만든 적분핵의 Fredholm 행렬식으로 쓰이고, Painlevé II 방정식의 특정 해로도 쓰인다. Airy 함수가 여기 나타나는 이유는 회전점에서와 같다. 스펙트럼의 가장자리는 고윳값이 있는 영역과 없는 영역이 만나는 자리, 곧 회전점이다.
@@ -19,7 +19,7 @@ $$
 반원법칙에 따르면 고윳값 밀도는 가장자리 $2\sqrt N$ 근처에서 제곱근으로 사라진다. 가장자리에서 거리 $\delta$ 안에 들어 있는 고윳값의 개수는 밀도를 적분해
 
 $$
-\#\{\lambda : \lambda > 2\sqrt N - \delta\} \;\sim\; N\cdot\delta^{3/2}
+\char35{}\lbrace\lambda : \lambda > 2\sqrt N - \delta\rbrace \thickspace\sim\thickspace N\cdot\delta^{3/2}
 $$
 
 규모다. 이 개수가 1 이 되는 $\delta$ 가 가장자리 고윳값들의 간격이고, $\delta \sim N^{-2/3}$ 이 나온다. 요동의 규모는 간격과 같아야 하므로 $\lambda_{\max}$ 의 요동도 $N^{-2/3}$ 이다. 위 식의 $\lambda_{\max}/\sqrt N$ 규격화까지 감안하면 제곱근 밀도 하나에서 $2/3$ 이 전부 결정된다.
@@ -63,7 +63,7 @@ GUE 의 고윳값은 **결정점과정**을 이룬다. $k$ 개의 고윳값이 �
 
 $$
 K_{\mathrm{Ai}}(x,y) = \frac{\operatorname{Ai}(x)\operatorname{Ai}'(y) - \operatorname{Ai}'(x)\operatorname{Ai}(y)}{x-y}
-= \int_0^\infty \operatorname{Ai}(x+t)\operatorname{Ai}(y+t)\,dt
+= \int_0^\infty \operatorname{Ai}(x+t)\operatorname{Ai}(y+t)\thinspace dt
 $$
 
 로 수렴한다. 첫 표현의 분자는 [Airy 함수](airy-functions.md)의 Wronskian 형태이고, $x \to y$ 극한에서 $\operatorname{Ai}'(x)^2 - x\operatorname{Ai}(x)^2$ 이 되어 특이하지 않다. 두 번째 표현은 이 핵이 양의 준정부호임을 바로 보여 준다.
@@ -81,19 +81,19 @@ $$
 Tracy 와 Widom 의 정리는 이 행렬식을 상미분방정식으로 바꾼다. Painlevé II 방정식
 
 $$
-q''(x) = x\,q(x) + 2q(x)^3
+q''(x) = x\thinspace q(x) + 2q(x)^3
 $$
 
 의 해 가운데 $x \to +\infty$ 에서 $q(x) \sim \operatorname{Ai}(x)$ 인 것을 **Hastings–McLeod 해**라 하며, 이것이 유일하게 존재한다. 그러면
 
 $$
-F_2(s) = \exp\left(-\int_s^{\infty}(x-s)\,q(x)^2\,dx\right)
+F_2(s) = \exp\left(-\int_s^{\infty}(x-s)\thinspace q(x)^2\thinspace dx\right)
 $$
 
 이고, $F_1$ 과 $F_4$ 도 같은 $q$ 로
 
 $$
-F_1(s)^2 = F_2(s)\,e^{-\int_s^\infty q},
+F_1(s)^2 = F_2(s)\thinspace e^{-\int_s^\infty q},
 \qquad
 F_4(s/\sqrt2)^2 = F_2(s)\left(\cosh\int_s^\infty q\right)^2
 $$
@@ -127,7 +127,7 @@ $$
 같은 극한이 무작위 행렬 바깥에서도 나타난다. 대표적인 것이 **최장증가부분수열**이다. $n$ 개 원소의 무작위 순열에서 가장 긴 증가부분수열의 길이 $\ell_n$ 은 $2\sqrt n$ 근처에 있고, Baik–Deift–Johansson 의 정리가
 
 $$
-\frac{\ell_n - 2\sqrt n}{n^{1/6}} \;\longrightarrow\; \mathrm{TW}_2
+\frac{\ell_n - 2\sqrt n}{n^{1/6}} \thickspace\longrightarrow\thickspace \mathrm{TW}_2
 $$
 
 를 준다. 순열에는 행렬도 고윳값도 없는데 같은 분포가 나온다. 무작위 성장 모형(모서리 성장, ASEP, 방향성 중합체)에서도 요동이 $t^{1/3}$ 규모이고 극한이 Tracy–Widom 인 것이 관찰되며, 이 부류를 **KPZ 보편성류**라 한다. $1/3$ 과 $2/3$ 라는 지수 쌍이 이 부류의 서명이다.

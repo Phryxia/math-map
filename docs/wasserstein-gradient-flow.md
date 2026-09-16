@@ -5,7 +5,7 @@
 열방정식 $\partial_t\rho=\Delta\rho$ 는 보통 확산의 방정식으로 읽는다. 다른 읽기가 있다. 확률측도 전체가 이루는 공간에 [최적 수송](optimal-transport.md)의 $W_2$ 거리를 주면 그 공간이 형식적인 Riemann 다양체가 되고, 열방정식이 **엔트로피의 경사하강**이 된다.
 
 $$
-\partial_t\rho=\nabla\!\cdot\!\Big(\rho\,\nabla\frac{\delta\mathcal F}{\delta\rho}\Big),
+\partial_t\rho=\nabla\negthinspace\cdot\negthinspace\Big(\rho\thinspace\nabla\frac{\delta\mathcal F}{\delta\rho}\Big),
 \qquad
 \mathcal F(\rho)=\int V\rho+\int\rho\log\rho
 $$
@@ -39,13 +39,13 @@ $$
 $W_2$ 의 Benamou–Brenier 동적 표현이 이 기하를 드러낸다.
 
 $$
-W_2^2(\mu,\nu)=\min\Big\{\int_0^1\!\!\int|v_t|^2\rho_t\,dx\,dt\ :\ \partial_t\rho_t+\nabla\!\cdot\!(\rho_tv_t)=0,\ \rho_0=\mu,\ \rho_1=\nu\Big\}
+W_2^2(\mu,\nu)=\min\Big\lbrace\int_0^1\negthinspace\negthinspace\int|v_t|^2\rho_t\thinspace dx\thinspace dt\ :\ \partial_t\rho_t+\nabla\negthinspace\cdot\negthinspace(\rho_tv_t)=0,\ \rho_0=\mu,\ \rho_1=\nu\Big\rbrace
 $$
 
 곡선 $\rho_t$ 의 "속도" 는 연속방정식을 통해 속도장 $v_t$ 로 나타나고, 그 길이의 제곱이 $\int|v_t|^2\rho_t$ 다. 곧 $\rho$ 에서의 접공간에 내적이 하나 있는 셈이다.
 
 $$
-\langle v_1,v_2\rangle_\rho=\int v_1\cdot v_2\,\rho\,dx
+\langle v_1,v_2\rangle_\rho=\int v_1\cdot v_2\thinspace\rho\thinspace dx
 $$
 
 최소화하는 속도장은 항상 기울기장 $v=\nabla\varphi$ 꼴이다. 회전 성분은 밀도를 바꾸지 않으면서 길이만 늘리기 때문이다. 그래서 접공간이 $\lbrace\nabla\varphi\rbrace$ 의 닫힘이 되고, 이 구조가 Otto 미적분이라 불린다.
@@ -55,7 +55,7 @@ $$
 계산 한 줄이면 된다. $\mathcal S(\rho)=\int\rho\log\rho$ 의 일차 변분은 $\frac{\delta\mathcal S}{\delta\rho}=\log\rho+1$ 이므로 기울기 흐름의 속도장이 $-\nabla\log\rho$ 다. 연속방정식에 넣으면
 
 $$
-\partial_t\rho=\nabla\!\cdot\!\big(\rho\,\nabla\log\rho\big)=\nabla\!\cdot\!\Big(\rho\,\frac{\nabla\rho}{\rho}\Big)=\Delta\rho
+\partial_t\rho=\nabla\negthinspace\cdot\negthinspace\big(\rho\thinspace\nabla\log\rho\big)=\nabla\negthinspace\cdot\negthinspace\Big(\rho\thinspace\frac{\nabla\rho}{\rho}\Big)=\Delta\rho
 $$
 
 가 된다. 열방정식이 나왔다. $\rho$ 와 $1/\rho$ 가 상쇄되는 이 한 줄이 전체 관점의 핵심이다. 퍼텐셜 항 $\int V\rho$ 를 더하면 속도장에 $-\nabla V$ 가 붙어 Fokker–Planck 방정식이 되고, 이것이 SDE $dX_t=-\nabla V(X_t)dt+\sqrt2\thinspace dB_t$ 의 밀도 방정식이다.
@@ -87,8 +87,8 @@ $$
 **Wasserstein 기울기 흐름**은 연속방정식에 속도장 $v=-\nabla\frac{\delta\mathcal F}{\delta\rho}$ 를 넣은 것이다.
 
 $$
-\partial_t\rho=\nabla\!\cdot\!\Big(\rho\,\nabla\frac{\delta\mathcal F}{\delta\rho}\Big)
-=\nabla\!\cdot\!\big(\rho\nabla V\big)+\nabla\!\cdot\!\big(\rho(\nabla W*\rho)\big)+\Delta\rho
+\partial_t\rho=\nabla\negthinspace\cdot\negthinspace\Big(\rho\thinspace\nabla\frac{\delta\mathcal F}{\delta\rho}\Big)
+=\nabla\negthinspace\cdot\negthinspace\big(\rho\nabla V\big)+\nabla\negthinspace\cdot\negthinspace\big(\rho(\nabla W*\rho)\big)+\Delta\rho
 $$
 
 $W=0$ 이면 Fokker–Planck, $V=W=0$ 이면 열방정식, 내부 에너지를 $\frac1{m-1}\int\rho^m$ 으로 바꾸면 다공질 매질 방정식이 된다. 서로 다른 PDE 들이 같은 틀의 다른 에너지로 통합된다.

@@ -7,7 +7,7 @@
 $\mathrm{GL}_n$ 의 상삼각 멱단군 $N$ 과 그 위의 비퇴화 지표 $\psi_N$ 에 대해, 표현 $\pi$ 의 Whittaker 모형은 $\pi$ 를 다음 성질을 갖는 함수공간으로 실현한 것이다.
 
 $$
-W\!\left(\begin{pmatrix}1&*\\&\ddots\\&&1\end{pmatrix}g\right)=\psi_N(n)\,W(g)
+W\negthinspace\left(\begin{pmatrix}1&*\cr&\ddots\cr&&1\end{pmatrix}g\right)=\psi_N(n)\thinspace W(g)
 $$
 
 고전적으로 이것은 **Fourier 계수의 대체물**이다. $\mathrm{GL}_2$ 에서 첨점형식의 Fourier 전개 $\sum a_nq^n$ 은 $N\cong\mathbb G_a$ 가 아벨군이라 수열로 적히지만, $n\ge3$ 에서 $N$ 은 아벨군이 아니다. 계수 자리에 수가 아니라 함수가 오고, 그 함수가 Whittaker 함수다.
@@ -33,7 +33,7 @@ $\mathrm{GL}_n$ 에서 자기동형 $L$ 함수 이론이 그토록 완결적인 
 $\mathrm{GL}_2$ 의 첨점형식을 아델 위의 함수 $\varphi$ 로 보면, $N\cong\mathbb G_a$ 이므로 $N(\mathbb Q)\backslash N(\mathbb A)$ 는 콤팩트 아벨군이고 Fourier 해석이 가능하다. 지표로 전개하면
 
 $$
-\varphi(g)=\sum_{\alpha\in\mathbb Q^\times}W_\varphi\!\left(\begin{pmatrix}\alpha&\\&1\end{pmatrix}g\right)
+\varphi(g)=\sum_{\alpha\in\mathbb Q^\times}W_\varphi\negthinspace\left(\begin{pmatrix}\alpha&\cr&1\end{pmatrix}g\right)
 $$
 
 이고 $W_\varphi$ 가 $\psi$ 성분이다. 첨점 조건이 $\alpha=0$ 항을 없앴고, 나머지 항이 $\mathrm{GL}_1(\mathbb Q)$ 의 작용으로 한 항에서 전부 나온다. 곧 **첨점형식은 Whittaker 함수 하나로 복원된다**.
@@ -42,7 +42,7 @@ $n\ge3$ 이면 $N$ 이 비가환이라 지표만으로 전개가 끝나지 않�
 
 $$
 \varphi(g)=\sum_{\gamma\in N_{n-1}(\mathbb Q)\backslash\mathrm{GL}_{n-1}(\mathbb Q)}
-W_\varphi\!\left(\begin{pmatrix}\gamma&\\&1\end{pmatrix}g\right)
+W_\varphi\negthinspace\left(\begin{pmatrix}\gamma&\cr&1\end{pmatrix}g\right)
 $$
 
 $\mathrm{GL}_1$ 자리에 $\mathrm{GL}\_{n-1}$ 이 온 것이다. 이 합이 Rankin–Selberg 펼치기의 재료다.
@@ -66,7 +66,7 @@ $$
 국소 공간이 1 차원이면 전역 범함수는 국소 범함수들의 곱에 스칼라를 곱한 것밖에 없다. 만약 국소 공간이 2 차원이었다면 전역 범함수가 여러 조합으로 쪼개져 "자리마다의 적분의 곱" 이라는 말 자체가 성립하지 않는다.
 
 $$
-\text{국소 유일성}\;\Longrightarrow\;\text{전역 Whittaker 함수의 분해}\;\Longrightarrow\;\text{적분이 Euler 곱}
+\text{국소 유일성}\thickspace\Longrightarrow\thickspace\text{전역 Whittaker 함수의 분해}\thickspace\Longrightarrow\thickspace\text{적분이 Euler 곱}
 $$
 
 $L$ 함수가 소수마다의 인자의 곱이라는 사실이 표현론의 1 차원성에서 온다.
@@ -112,7 +112,7 @@ $$
 $(\pi,V)$ 를 $\mathrm{GL}_n(F)$ 의 기약 허용 표현이라 하자. **Whittaker 범함수**는 $\lambda:V\to\mathbb C$ 로
 
 $$
-\lambda(\pi(u)v)=\psi_N(u)\,\lambda(v),\qquad u\in N_n(F)
+\lambda(\pi(u)v)=\psi_N(u)\thinspace\lambda(v),\qquad u\in N_n(F)
 $$
 
 를 만족하는 선형사상이다. $\lambda\ne0$ 이 있으면 $\pi$ 를 **일반적**(generic)이라 하고, 함수들
@@ -126,7 +126,7 @@ $$
 전역적으로 첨점형식 $\varphi$ 의 Whittaker 함수는
 
 $$
-W_\varphi(g)=\int_{N_n(\mathbb Q)\backslash N_n(\mathbb A)}\varphi(ug)\,\psi_N^{-1}(u)\,du
+W_\varphi(g)=\int_{N_n(\mathbb Q)\backslash N_n(\mathbb A)}\varphi(ug)\thinspace\psi_N^{-1}(u)\thinspace du
 $$
 
 다.
@@ -231,7 +231,7 @@ $$
 비분기 자리에서는 Whittaker 함수의 값이 명시적이다. $\pi$ 가 비분기이고 $W^\circ$ 가 $K$ 불변 Whittaker 함수(적절히 정규화)이면
 
 $$
-W^\circ\bigl(\varpi^\lambda\bigr)=\delta_B^{1/2}(\varpi^\lambda)\;s_\lambda(\alpha_1,\dots,\alpha_n)
+W^\circ\bigl(\varpi^\lambda\bigr)=\delta_B^{1/2}(\varpi^\lambda)\thickspace s_\lambda(\alpha_1,\dots,\alpha_n)
 $$
 
 이고 $s_\lambda$ 는 **Schur 다항식**, $(\alpha_i)$ 는 [Satake 매개변수](satake-isomorphism.md)다. $\lambda$ 가 지배적이 아니면 0 이다.
@@ -239,7 +239,7 @@ $$
 Whittaker 함수의 값이 쌍대군의 기약지표라는 이 사실이 Rankin–Selberg 국소 적분을 계산 가능하게 만든다. 두 Whittaker 함수의 곱을 적분하면 Schur 다항식의 Cauchy 항등식
 
 $$
-\sum_\lambda s_\lambda(x)\,s_\lambda(y)=\prod_{i,j}\frac1{1-x_iy_j}
+\sum_\lambda s_\lambda(x)\thinspace s_\lambda(y)=\prod_{i,j}\frac1{1-x_iy_j}
 $$
 
 이 나오고, 오른쪽이 정확히 $L(s,\pi\times\pi')$ 의 비분기 인자다. 국소 $L$ 인자가 왜 그 꼴인지에 대한 가장 투명한 설명이다.

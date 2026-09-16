@@ -5,7 +5,7 @@
 [타원곡선](elliptic-curves.md)에서 Mordell–Weil 정리를 보았다. 수체 $K$ 위의 타원곡선 $E$ 에 대해
 
 $$
-E(K)\;\cong\;\mathbb Z^r\oplus E(K)_{\mathrm{tors}}
+E(K)\thickspace\cong\thickspace\mathbb Z^r\oplus E(K)_{\mathrm{tors}}
 $$
 
 이고 비틀림 부분은 쉽게 계산된다. 문제는 계수 $r$ 이다. Mordell–Weil 의 증명은 두 조각으로 나뉘는데, 높이 함수를 쓰는 뒷부분은 완전히 구성적인 반면 앞부분인 **약 Mordell–Weil 정리**, 곧 $E(K)/mE(K)$ 가 유한하다는 진술의 증명은 유한성만 줄 뿐 그 군을 손에 쥐여 주지 않는다.
@@ -77,7 +77,7 @@ $\text{Ш}$ 의 원소가 곡선이므로 눈으로 볼 수는 있다. 그런데
 $E/K$ 의 주동차공간이란 $E$ 의 단순추이적 작용 $E\times C\to C$ 를 갖춘 매끄러운 사영 곡선 $C/K$ 다. $K$ 동형에 의한 동치류 전체를
 
 $$
-\mathrm{WC}(E/K)\;\cong\;H^1(K,E(\bar K))
+\mathrm{WC}(E/K)\thickspace\cong\thickspace H^1(K,E(\bar K))
 $$
 
 라 쓰고 Weil–Châtelet 군이라 한다. 자명한 류가 $C(K)\ne\emptyset$ 인 것과 같다. 국소체 위에서는 $H^1(K_v,E)$ 가 유한군이며 Tate 국소 쌍대성이 이를 $E(K_v)$ 와 짝지어 준다.
@@ -95,7 +95,7 @@ $$
 ## Selmer 군과 $\text{Ш}$
 
 $$
-\mathrm{Sel}^m(E/K)=\ker\Big(H^1(K,E[m])\to\prod_v\frac{H^1(K_v,E[m])}{\mathrm{im}\,\delta_v}\Big),\qquad
+\mathrm{Sel}^m(E/K)=\ker\Big(H^1(K,E[m])\to\prod_v\frac{H^1(K_v,E[m])}{\mathrm{im}\thinspace\delta_v}\Big),\qquad
 \text{Ш}(E/K)=\ker\Big(H^1(K,E)\to\prod_vH^1(K_v,E)\Big)
 $$
 
@@ -112,7 +112,7 @@ $$
 $E(K)_{\mathrm{tors}}$ 를 알고 $\mathrm{Sel}^m$ 을 계산하면
 
 $$
-r\;\le\;\log_m\#\mathrm{Sel}^m(E/K)-\log_m\#E(K)[m]
+r\thickspace\le\thickspace\log_m\char35{}\mathrm{Sel}^m(E/K)-\log_m\char35{}E(K)[m]
 $$
 
 를 얻는다. 등호는 $\text{Ш}[m]=0$ 일 때다. 반대 방향의 하한은 실제 점을 찾아서 얻으며, 상한과 하한이 만나면 순위가 확정된다.
@@ -222,7 +222,7 @@ Tunnell 은 $E_n$ 의 $L$ 함수 중심값을 무게 $3/2$ 인 형식의 Fourier
 ## BSD 추측에서의 위치
 
 $$
-\lim_{s\to1}\frac{L(E,s)}{(s-1)^r}=\frac{\Omega_E\cdot\mathrm{Reg}_E\cdot\#\text{Ш}(E/\mathbb Q)\cdot\prod_pc_p}{\#E(\mathbb Q)_{\mathrm{tors}}^2}
+\lim_{s\to1}\frac{L(E,s)}{(s-1)^r}=\frac{\Omega_E\cdot\mathrm{Reg}_E\cdot\char35{}\text{Ш}(E/\mathbb Q)\cdot\prod_pc_p}{\char35{}E(\mathbb Q)_{\mathrm{tors}}^2}
 $$
 
 정밀 BSD 공식의 분자에 $\char35{}\text{Ш}$ 가 직접 등장한다. 공식이 말이 되려면 $\text{Ш}$ 가 유한해야 하므로, 유한성은 추측의 전제이자 일부다. 거꾸로 순위 0 인 곡선에서 $L(E,1)\ne0$ 을 계산하고 공식을 믿으면 $\char35{}\text{Ш}$ 의 예측값이 나오고, 그 값을 하강으로 실제 확인하는 것이 수치 실험의 표준 절차다.

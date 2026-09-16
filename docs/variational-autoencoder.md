@@ -17,7 +17,7 @@
 $\log p(x)$ 를 직접 계산할 수 없으니 임의의 분포 $q(z)$ 를 끼워 넣는다.
 
 $$
-\log p(x)=\log\int p(x,z)\,dz=\log\mathbb E_{q}\Big[\frac{p(x,z)}{q(z)}\Big]
+\log p(x)=\log\int p(x,z)\thinspace dz=\log\mathbb E_{q}\Big[\frac{p(x,z)}{q(z)}\Big]
 \ \ge\ \mathbb E_{q}\Big[\log\frac{p(x,z)}{q(z)}\Big]
 $$
 
@@ -28,7 +28,7 @@ $$
 하계가 얼마나 느슨한지도 계산된다.
 
 $$
-\log p(x)-\mathrm{ELBO}(q)=\mathrm{KL}\big(q(z)\,\|\,p(z\mid x)\big)
+\log p(x)-\mathrm{ELBO}(q)=\mathrm{KL}\big(q(z)\thinspace\Vert\thinspace p(z\mid x)\big)
 $$
 
 $q$ 가 참 사후분포와 같을 때만 등호가 성립한다. 곧 ELBO 를 $q$ 에 대해 최대화하는 것은 사후분포를 근사하는 것과 정확히 같은 일이고, $\theta$ 에 대해 최대화하는 것은 가능도를 올리는 것이다. 하나의 목적함수가 추론과 학습을 동시에 수행한다.
@@ -60,7 +60,7 @@ $z\sim\mathcal N(\mu,\sigma^2)$ 를 $z=\mu+\sigma\epsilon$ 과 $\epsilon\sim\mat
 ## 생성모형
 
 $$
-p_\theta(x,z)=p(z)\,p_\theta(x\mid z),\qquad p(z)=\mathcal N(0,I)
+p_\theta(x,z)=p(z)\thinspace p_\theta(x\mid z),\qquad p(z)=\mathcal N(0,I)
 $$
 
 $p_\theta(x\mid z)$ 의 모수를 신경망(디코더)이 $z$ 에서 계산한다. 연속 데이터면 $\mathcal N(\mu_\theta(z),\sigma^2I)$ 이고, 이진 데이터면 Bernoulli 다.
@@ -70,7 +70,7 @@ $p_\theta(x\mid z)$ 의 모수를 신경망(디코더)이 $z$ 에서 계산한�
 ## 변분 사후분포
 
 $$
-q_\phi(z\mid x)=\mathcal N\big(\mu_\phi(x),\ \mathrm{diag}\,\sigma^2_\phi(x)\big)
+q_\phi(z\mid x)=\mathcal N\big(\mu_\phi(x),\ \mathrm{diag}\thinspace\sigma^2_\phi(x)\big)
 $$
 
 인코더 신경망이 $\mu_\phi$ 와 $\log\sigma^2_\phi$ 를 출력한다. 공분산을 대각으로 두는 것이 표준 선택이고, 이 제한이 근사의 주된 한계이기도 하다.
@@ -78,7 +78,7 @@ $$
 ## ELBO
 
 $$
-\mathcal L(\theta,\phi;x)=\mathbb E_{q_\phi(z\mid x)}\big[\log p_\theta(x\mid z)\big]-\mathrm{KL}\big(q_\phi(z\mid x)\,\|\,p(z)\big)
+\mathcal L(\theta,\phi;x)=\mathbb E_{q_\phi(z\mid x)}\big[\log p_\theta(x\mid z)\big]-\mathrm{KL}\big(q_\phi(z\mid x)\thinspace\Vert\thinspace p(z)\big)
 $$
 
 첫 항이 복원항, 둘째가 정칙화항이다. 위의 $\mathbb E_q[\log p(x,z)-\log q(z)]$ 를 정리한 것과 같다.
@@ -94,7 +94,7 @@ $$
 ## 재매개화 추정량
 
 $$
-\nabla_\phi\mathcal L=\nabla_\phi\,\mathbb E_{\epsilon\sim\mathcal N(0,I)}
+\nabla_\phi\mathcal L=\nabla_\phi\thinspace\mathbb E_{\epsilon\sim\mathcal N(0,I)}
 \big[\log p_\theta(x\mid \mu_\phi+\sigma_\phi\odot\epsilon)\big]-\nabla_\phi\mathrm{KL}
 $$
 
@@ -109,7 +109,7 @@ $$
 [정보이론](kl-divergence.md)의 언어로 다시 쓰면 KL 항의 데이터 평균이 다음과 같이 갈린다.
 
 $$
-\mathbb E_{x}\big[\mathrm{KL}(q(z\mid x)\|p(z))\big]=I(x;z)+\mathrm{KL}\big(q(z)\,\|\,p(z)\big)
+\mathbb E_{x}\big[\mathrm{KL}(q(z\mid x)\Vert p(z))\big]=I(x;z)+\mathrm{KL}\big(q(z)\thinspace\Vert\thinspace p(z)\big)
 $$
 
 $q(z)=\mathbb E_x[q(z\mid x)]$ 는 총합 사후분포다. 첫 항은 잠재변수가 데이터에 대해 갖는 상호정보량이고, 둘째는 총합 사후분포가 사전분포와 얼마나 다른지다. ELBO 최대화가 상호정보량에 벌점을 준다는 뜻이고, 이것이 다음 문제로 이어진다.

@@ -7,7 +7,7 @@
 분류는 한 문장이다. 복소 반단순 Lie 대수 $\mathfrak g$ 의 유한차원 기약표현은 **지배적 정수 무게**와 일대일 대응한다.
 
 $$
-\{\text{유한차원 기약표현}\}/\cong\ \ \longleftrightarrow\ \ P^+=\Big\{\lambda\in P:\langle\lambda,\alpha_i^\vee\rangle\in\mathbb Z_{\ge0}\Big\}
+\lbrace\text{유한차원 기약표현}\rbrace/\cong\ \ \longleftrightarrow\ \ P^+=\Big\lbrace\lambda\in P:\langle\lambda,\alpha_i^\vee\rangle\in\mathbb Z_{\ge0}\Big\rbrace
 $$
 
 오른쪽은 무게격자의 한 모서리에 있는 격자점들, 곧 $n$ 개의 음이 아닌 정수다. 무한히 많고 복잡해 보이던 대상이 정수 $n$ 개짜리 목록이 된다.
@@ -79,7 +79,7 @@ graph TD
 해석적 노선(Weyl 의 원래 증명)은 콤팩트군 $G$ 와 극대원환면 $T$ 를 놓고 시작한다. 모든 원소가 어떤 원환면에 들어가므로 류함수는 $T$ 위의 $W$ 불변 함수로 결정되고, Haar 측도가 $T$ 위에서 $\frac1{|W|}|\Delta|^2$ 라는 야코비안을 갖는다(**Weyl 적분 공식**).
 
 $$
-\int_Gf(g)\,dg=\frac1{|W|}\int_Tf(t)\,|\Delta(t)|^2\,dt
+\int_Gf(g)\thinspace dg=\frac1{|W|}\int_Tf(t)\thinspace|\Delta(t)|^2\thinspace dt
 $$
 
 그러면 Peter–Weyl 이 주는 지표의 직교관계 $\int_G\chi_\lambda\overline{\chi_\mu}=\delta_{\lambda\mu}$ 가 $\chi_\lambda\Delta$ 들이 $T$ 위에서 정규직교라는 말이 된다. 반대칭 지수합들도 정규직교이므로, 남은 일은 $\chi_\lambda\Delta$ 가 그 중 어느 것인지 고르는 것뿐이다. **곱했더니 직교기저가 되더라**는 것이 증명의 전부다.
@@ -105,7 +105,7 @@ $$
 Cartan 부분대수 $\mathfrak h$ 의 표현 $V$ 에 대한 동시 고유공간 분해를 무게공간 분해라 한다.
 
 $$
-V=\bigoplus_{\mu\in\mathfrak h^*}V_\mu,\qquad V_\mu=\{v\in V:h\cdot v=\mu(h)v\ \ \forall h\in\mathfrak h\}
+V=\bigoplus_{\mu\in\mathfrak h^*}V_\mu,\qquad V_\mu=\lbrace v\in V:h\cdot v=\mu(h)v\ \ \forall h\in\mathfrak h\rbrace
 $$
 
 $V_\mu\neq0$ 인 $\mu$ 가 **무게**이고 $\dim V_\mu$ 가 그 **중복도**다. 유한차원 표현의 무게는 모두 무게격자 $P$ 에 들어간다.
@@ -131,7 +131,7 @@ $$
 군환의 형식기저 $\lbrace e^\mu\rbrace_{\mu\in P}$ 를 $e^\mu e^\nu=e^{\mu+\nu}$ 로 곱해 놓고,
 
 $$
-\operatorname{ch}V=\sum_{\mu\in P}\dim(V_\mu)\,e^\mu
+\operatorname{ch}V=\sum_{\mu\in P}\dim(V_\mu)\thinspace e^\mu
 $$
 
 를 **형식지표**라 한다. 콤팩트군 쪽에서 보면 $e^\mu$ 를 극대원환면 위의 함수 $t\mapsto\mu(t)$ 로 읽는 것이고, 그때 $\operatorname{ch}V$ 는 표현의 대각합 $\chi_V(t)=\operatorname{tr}\rho(t)$ 와 같다. 형식지표는 직합과 텐서곱을 합과 곱으로 바꾸므로 표현환에서 다항식 계산을 하게 해 준다.
@@ -175,7 +175,7 @@ $$
 $|W|$ 개의 항이 크게 상쇄되며 작은 수가 남는 꼴이라 손계산에는 나쁘지만, 중복도가 분할 함수의 교대합이라는 구조 자체가 중요하다. 실제 계산에는 재귀식인 Freudenthal 공식이 낫다.
 
 $$
-\big((\lambda+\rho,\lambda+\rho)-(\mu+\rho,\mu+\rho)\big)\dim(V_\lambda)_\mu=2\sum_{\alpha\in\Phi^+}\sum_{k\ge1}\dim(V_\lambda)_{\mu+k\alpha}\,(\mu+k\alpha,\alpha)
+\big((\lambda+\rho,\lambda+\rho)-(\mu+\rho,\mu+\rho)\big)\dim(V_\lambda)_\mu=2\sum_{\alpha\in\Phi^+}\sum_{k\ge1}\dim(V_\lambda)_{\mu+k\alpha}\thinspace(\mu+k\alpha,\alpha)
 $$
 
 ## 특수화들
@@ -183,7 +183,7 @@ $$
 **Schur 다항식.** $\mathfrak{gl}_n$ 에서 $e^{\varepsilon_i}=x_i$ 로 두면 $W=S_n$ 이고 분모가 Vandermonde 행렬식이 된다. 지표 공식은
 
 $$
-s_\lambda(x_1,\dots,x_n)=\frac{\det\!\big(x_i^{\lambda_j+n-j}\big)}{\det\!\big(x_i^{n-j}\big)}
+s_\lambda(x_1,\dots,x_n)=\frac{\det\negthinspace\big(x_i^{\lambda_j+n-j}\big)}{\det\negthinspace\big(x_i^{n-j}\big)}
 $$
 
 곧 Schur 다항식의 bialternant 공식이다. 대칭함수론 전체가 $A_{n-1}$ 형 지표 공식의 특수한 경우이고, Littlewood–Richardson 계수는 텐서곱 분해의 중복도다.

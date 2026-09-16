@@ -23,7 +23,7 @@ $$
 $$
 \rho_\psi\circ g\ \cong\ \rho_\psi
 \quad\Longrightarrow\quad
-\exists\,\omega(g)\in\mathrm{GL}(\mathcal S)\ \text{ with }\ \rho_\psi(g\cdot h)=\omega(g)\,\rho_\psi(h)\,\omega(g)^{-1}
+\exists\thinspace\omega(g)\in\mathrm{GL}(\mathcal S)\ \text{ with }\ \rho_\psi(g\cdot h)=\omega(g)\thinspace\rho_\psi(h)\thinspace\omega(g)^{-1}
 $$
 
 Schur 보조정리에 의해 $\omega(g)$ 는 스칼라 차이로 결정되고, 그래서 $\omega$ 는 표현이 아니라 사영표현이다. [Whittaker 모형의 유일성](whittaker-models.md)이 전역 적분의 Euler 곱 분해를 낳았던 것과 같은 요령이고, 유일성 정리를 **구조를 뽑아내는 도구**로 쓰는 전형적인 방식이다.
@@ -33,13 +33,13 @@ Schur 보조정리에 의해 $\omega(g)$ 는 스칼라 차이로 결정되고, �
 사영표현을 진짜 표현으로 올리려면 코사이클을 없애야 하는데, $\mathrm{Sp}$ 에서는 없어지지 않는다. 가장 손에 잡히는 증거가 Fourier 변환이다. $\mathrm{SL}_2$ 의 원소
 
 $$
-w=\begin{pmatrix}0&1\\-1&0\end{pmatrix}
+w=\begin{pmatrix}0&1\cr-1&0\end{pmatrix}
 $$
 
 에 대응하는 연산자가 Fourier 변환인데, $w^2=-I$ 이고 $-I$ 는 $\varphi(x)\mapsto\varphi(-x)$ 로 작용해야 한다. 그런데 Fourier 변환의 제곱이 정확히 그것이 되려면 정규화 상수가 필요하고, 그 상수는 Gauss 적분의 **제곱근**이라 부호가 모호하다.
 
 $$
-\int_{\mathbb R}e^{-\pi i x^2}\,dx=e^{-\pi i/4}
+\int_{\mathbb R}e^{-\pi i x^2}\thinspace dx=e^{-\pi i/4}
 $$
 
 이 $e^{-\pi i/4}$ 가 Weil 지표라 불리는 8 차 근이고, 제곱근의 가지 선택이 2 겹 덮개를 만든다. 실 Lie 군 수준에서 보면 $\mathrm{SL}_2(\mathbb R)$ 의 기본군이 $\mathbb Z$ 라 덮개가 존재할 여지가 있다는 것과 같은 말이다. 그리고 이 2 겹 때문에 무게가 반정수가 된다. **반정수 무게 형식은 메타플렉틱군의 형식이다.**
@@ -92,9 +92,9 @@ $\mathrm{Sp}(W)$ 는 $H(W)$ 에 $g\cdot(w,t)=(gw,t)$ 로 작용하고 중심을 
 $\mathrm{SL}_2$ 에서 생성원의 작용을 적으면 다음과 같다.
 
 $$
-\omega_\psi\!\begin{pmatrix}a&0\\0&a^{-1}\end{pmatrix}\varphi(x)=\chi(a)\,|a|^{1/2}\varphi(ax),
+\omega_\psi\negthinspace\begin{pmatrix}a&0\cr 0&a^{-1}\end{pmatrix}\varphi(x)=\chi(a)\thinspace|a|^{1/2}\varphi(ax),
 \qquad
-\omega_\psi\!\begin{pmatrix}1&b\\0&1\end{pmatrix}\varphi(x)=\psi\!\left(\tfrac{b x^2}{2}\right)\varphi(x)
+\omega_\psi\negthinspace\begin{pmatrix}1&b\cr 0&1\end{pmatrix}\varphi(x)=\psi\negthinspace\left(\tfrac{b x^2}{2}\right)\varphi(x)
 $$
 
 $$
@@ -114,7 +114,7 @@ $$
 는 서로가 서로의 중심화군이다. 이런 쌍을 **축소 쌍대쌍**이라 한다. $\omega_\psi$ 를 이 곱으로 제한한 뒤 한쪽 군의 자기동형 형식과 적분하면 다른 쪽의 형식이 나온다.
 
 $$
-\theta(f)(h)=\int_{G(F)\backslash G(\mathbb A)}\Theta_\varphi(g,h)\,\overline{f(g)}\,dg
+\theta(f)(h)=\int_{G(F)\backslash G(\mathbb A)}\Theta_\varphi(g,h)\thinspace\overline{f(g)}\thinspace dg
 $$
 
 이 사상이 **theta 올림**이다.
@@ -162,7 +162,7 @@ $$
 theta 급수를 $O(V)$ 방향으로 적분하면 Eisenstein 급수가 나온다.
 
 $$
-\int_{O(V)(F)\backslash O(V)(\mathbb A)}\Theta_\varphi(g,h)\,dh
+\int_{O(V)(F)\backslash O(V)(\mathbb A)}\Theta_\varphi(g,h)\thinspace dh
 \ =\ E(g,\varphi)
 $$
 

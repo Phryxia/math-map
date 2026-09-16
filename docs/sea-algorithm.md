@@ -54,7 +54,7 @@ $E[\ell]$ 의 점을 실제로 구하려면 $\ell$ 등분점이 정의되는 확
 $\ell$ 등분점의 $x$ 좌표는 나눗셈 다항식 $\psi_\ell(x)$ 의 근이다. 그러면 $E[\ell]$ 위의 항등식을 확인하는 일이 환
 
 $$
-R=\mathbb F_p[x,y]\big/\big(\psi_\ell(x),\,y^2-f(x)\big)
+R=\mathbb F_p[x,y]\big/\big(\psi_\ell(x),\thinspace y^2-f(x)\big)
 $$
 
 안의 계산으로 바뀐다. 이 환은 체가 아니지만($\psi_\ell$ 이 기약이 아니어도 된다) 계산에는 지장이 없다. 항등식
@@ -100,7 +100,7 @@ graph TD
 $E/\mathbb F_p$ 에 대해 $\varphi(x,y)=(x^p,y^p)$ 를 **Frobenius 자기준동형**이라 한다. $\mathrm{End}(E)$ 안에서
 
 $$
-\varphi^2-a_p\,\varphi+p=0,\qquad a_p=p+1-\#E(\mathbb F_p)
+\varphi^2-a_p\thinspace\varphi+p=0,\qquad a_p=p+1-\char35{}E(\mathbb F_p)
 $$
 
 이고 $|a_p|\le2\sqrt p$ 다(Hasse 정리). $\varphi$ 의 고정점이 정확히 $E(\mathbb F_p)$ 이므로 $\char35{}E(\mathbb F_p)=\deg(\varphi-1)=p+1-a_p$ 가 나온다.

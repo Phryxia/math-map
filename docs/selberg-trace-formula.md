@@ -7,7 +7,7 @@
 Selberg 대각합 공식은 이 스펙트럼을 **간접적으로** 붙잡는다. 개별 고윳값 대신 고윳값 전체에 걸친 합을 계산하되, 그 답을 곡면의 **닫힌 측지선**으로 표현한다.
 
 $$
-\underbrace{\sum_j h(r_j)}_{\text{스펙트럼}}\;+\;\text{(연속 기여)}\;=\;\underbrace{\frac{\mathrm{vol}}{4\pi}\int_{-\infty}^\infty h(r)\,r\tanh(\pi r)\,dr+\sum_{\{\gamma\}}\sum_{k\ge1}\frac{\ell_\gamma\,g(k\ell_\gamma)}{2\sinh(k\ell_\gamma/2)}}_{\text{기하}}
+\underbrace{\sum_j h(r_j)}_{\text{스펙트럼}}\thickspace+\thickspace\text{(연속 기여)}\thickspace=\thickspace\underbrace{\frac{\mathrm{vol}}{4\pi}\int_{-\infty}^\infty h(r)\thinspace r\tanh(\pi r)\thinspace dr+\sum_{\lbrace\gamma\rbrace}\sum_{k\ge1}\frac{\ell_\gamma\thinspace g(k\ell_\gamma)}{2\sinh(k\ell_\gamma/2)}}_{\text{기하}}
 $$
 
 왼쪽은 해석, 오른쪽은 [Riemann 계량](riemannian-metrics.md)이 정하는 측지선의 길이들이다. 두 세계를 잇는 이 등식이 Weyl 법칙, 소측지선 정리, Maass 형식의 존재 증명을 한꺼번에 준다.
@@ -22,7 +22,7 @@ $$
 
 $$
 \sum_{n\in\mathbb Z}h\Big(\frac{2\pi n}{L}\Big)=L\sum_{m\in\mathbb Z}g(mL),\qquad
-g(u)=\frac1{2\pi}\int h(r)e^{-iru}\,dr
+g(u)=\frac1{2\pi}\int h(r)e^{-iru}\thinspace dr
 $$
 
 곧 Poisson 합 공식이다. 왼쪽이 스펙트럼 쪽, 오른쪽이 기하 쪽이다. Selberg 공식은 이것을 곡률 $-1$ 의 곡면으로 옮긴 것이며, 평평한 경우에 없던 두 항(부피에 비례하는 항, 첨점에서 오는 연속 기여)이 추가된다.
@@ -47,13 +47,13 @@ $$
 $\Gamma\subset\mathrm{PSL}\_2(\mathbb R)$ 의 원소는 대각합으로 분류된다. $|\mathrm{tr}\gamma|>2$ 인 쌍곡 원소는 $\mathbb H$ 위에서 한 측지선을 따라 평행이동하며, 그 이동거리 $\ell_\gamma$ 는
 
 $$
-2\cosh\frac{\ell_\gamma}2=|\mathrm{tr}\,\gamma|
+2\cosh\frac{\ell_\gamma}2=|\mathrm{tr}\thinspace\gamma|
 $$
 
 로 정해진다. 몫 곡면 $\Gamma\backslash\mathbb H$ 로 내려가면 이 측지선이 닫힌 고리가 된다. 그러므로
 
 $$
-\{\Gamma\ \text{의 쌍곡 공액류}\}\ \longleftrightarrow\ \{\text{닫힌 측지선}\}
+\lbrace\Gamma\ \text{의 쌍곡 공액류}\rbrace\ \longleftrightarrow\ \lbrace\text{닫힌 측지선}\rbrace
 $$
 
 이고, 원시 측지선을 $k$ 바퀴 도는 것이 $\gamma^k$ 에 해당한다. 공식의 오른쪽에 $\sum_k$ 가 붙는 이유다. 항등원의 기여가 부피 항, 타원 원소가 유한 위수의 기여, 포물 원소가 첨점의 기여를 준다.
@@ -63,7 +63,7 @@ $$
 $\Gamma_0(N)$ 같은 비콤팩트 경우에는 연속 스펙트럼이 있어 두 전개가 각각 발산한다. 발산을 서로 상쇄시키는 정규화가 필요하고, 그 대가로 공식에
 
 $$
--\frac1{4\pi}\int_{-\infty}^\infty h(r)\,\frac{\varphi'}{\varphi}\Big(\frac12+ir\Big)dr+\frac14h(0)\varphi\Big(\frac12\Big)
+-\frac1{4\pi}\int_{-\infty}^\infty h(r)\thinspace\frac{\varphi'}{\varphi}\Big(\frac12+ir\Big)dr+\frac14h(0)\varphi\Big(\frac12\Big)
 $$
 
 같은 항이 들어온다. 여기서 $\varphi$ 는 Eisenstein 급수의 산란 행렬식이며, $\mathrm{SL}_2(\mathbb Z)$ 에서는 $\varphi(s)=\xi(2s-1)/\xi(2s)$ 다. 즉 **Riemann zeta 함수가 대각합 공식 안에 직접 등장한다**. 스펙트럼을 세는 일에 $\zeta$ 의 영점이 끼어드는 셈이고, 이것이 해석적 정수론과 스펙트럼 이론이 얽히는 지점이다.
@@ -81,8 +81,8 @@ $\Gamma\subset\mathrm{PSL}_2(\mathbb R)$ 를 유한 공부피 이산군, $X=\Gam
 $X$ 가 콤팩트이고 $\Gamma$ 에 타원 원소가 없으면
 
 $$
-\sum_{j\ge0}h(r_j)=\frac{\mathrm{vol}(X)}{4\pi}\int_{-\infty}^{\infty}h(r)\,r\tanh(\pi r)\,dr
-+\sum_{\{\gamma\}_{\mathrm{prim}}}\sum_{k=1}^{\infty}\frac{\ell_\gamma}{2\sinh(k\ell_\gamma/2)}\,g(k\ell_\gamma)
+\sum_{j\ge0}h(r_j)=\frac{\mathrm{vol}(X)}{4\pi}\int_{-\infty}^{\infty}h(r)\thinspace r\tanh(\pi r)\thinspace dr
++\sum_{\lbrace\gamma\rbrace_{\mathrm{prim}}}\sum_{k=1}^{\infty}\frac{\ell_\gamma}{2\sinh(k\ell_\gamma/2)}\thinspace g(k\ell_\gamma)
 $$
 
 다[^1]. 첫 항은 항등원(연속체 근사), 둘째 항은 원시 닫힌 측지선 $\gamma$ 와 그 반복이다.
@@ -101,7 +101,7 @@ $$
 원시 닫힌 측지선 전체에 대해
 
 $$
-Z(s)=\prod_{\{\gamma\}_{\mathrm{prim}}}\prod_{n=0}^{\infty}\big(1-e^{-(s+n)\ell_\gamma}\big),\qquad \mathrm{Re}(s)>1
+Z(s)=\prod_{\lbrace\gamma\rbrace_{\mathrm{prim}}}\prod_{n=0}^{\infty}\big(1-e^{-(s+n)\ell_\gamma}\big),\qquad \mathrm{Re}(s)>1
 $$
 
 를 정의한다. 측지선이 소수의 자리를, $\ell_\gamma$ 가 $\log p$ 의 자리를 차지한 Euler 곱이다. 대각합 공식은 $Z$ 가 $\mathbb C$ 전체로 해석적 연속되고 함수방정식을 가짐을 보여 준다.
@@ -113,7 +113,7 @@ $$
 $h$ 를 $[0,T]$ 의 특성함수에 가깝게 잡으면 고윳값 계수함수가 나온다. 콤팩트 곡면에서
 
 $$
-\#\{j:\ r_j\le T\}=\frac{\mathrm{vol}(X)}{4\pi}T^2+O(T\log T)
+\char35{}\lbrace j:\ r_j\le T\rbrace=\frac{\mathrm{vol}(X)}{4\pi}T^2+O(T\log T)
 $$
 
 이다. 주항은 부피에만 의존하며, 이것이 "북을 두드려 그 넓이는 들을 수 있다" 는 진술의 정확한 형태다. $\Gamma_0(N)$ 같은 산술군에서는 연속 스펙트럼의 기여가 $O(T\log T)$ 에 머물러, 이산 스펙트럼이 주항을 차지한다. 그러므로 **Maass 형식은 무한히 많다**. 이것이 Maass 형식의 존재를 보이는 거의 유일한 방법이다.
@@ -125,7 +125,7 @@ $$
 $h$ 를 반대로 잡아 기하 쪽을 세면
 
 $$
-\#\{\text{원시 닫힌 측지선}:\ \ell_\gamma\le L\}\ \sim\ \frac{e^L}{L}
+\char35{}\lbrace\text{원시 닫힌 측지선}:\ \ell_\gamma\le L\rbrace\ \sim\ \frac{e^L}{L}
 $$
 
 를 얻는다. 소수 정리 $\pi(x)\sim x/\log x$ 에서 $x=e^L$ 을 넣은 것과 정확히 같은 꼴이다. 유비가 형식적인 것이 아니라 증명 구조까지 같다. $Z(s)$ 의 $s=1$ 에서의 단순 영점이 소수 정리에서 $\zeta(s)$ 의 $s=1$ 극점 역할을 한다.
@@ -157,7 +157,7 @@ Weyl 법칙은 개수를 주지만 위치를 주지 않는다. 실제 계산은 
 $\mathrm{SL}_2(\mathbb R)$ 를 일반 환원군 $G$ 로, $\Gamma\backslash\mathbb H$ 를 $G(\mathbb Q)\backslash G(\mathbb A)$ 로 바꾼 것이 Arthur–Selberg 대각합 공식이다. 기하 쪽이 궤도적분의 합, 스펙트럼 쪽이 자기동형 표현의 지표의 합이 된다.
 
 $$
-\sum_{\{\gamma\}}\mathrm{vol}\cdot O_\gamma(f)\;=\;\sum_\pi m(\pi)\,\mathrm{tr}\,\pi(f)
+\sum_{\lbrace\gamma\rbrace}\mathrm{vol}\cdot O_\gamma(f)\thickspace=\thickspace\sum_\pi m(\pi)\thinspace\mathrm{tr}\thinspace\pi(f)
 $$
 
 두 군 $G,H$ 에 대해 공식을 세우고 기하 쪽을 맞추면 스펙트럼 쪽이 맞아 표현의 대응이 나온다. 이것이 [Langlands 강령](langlands-program.md)의 함수성을 증명하는 주요 수단이며, 기하 쪽을 맞추는 데 필요한 등식이 기본 보조정리다. 비콤팩트성에서 오는 발산을 잘라 내는 Arthur 의 절단은 위에서 본 $\varphi'/\varphi$ 항의 일반화다.

@@ -7,7 +7,7 @@
 동기는 표현론에서 왔다. 표현을 $G\to\mathrm{GL}(V)$ 가 아니라 $G\to\mathrm{PGL}(V)$ 로 정의하면 **사영표현**이다. 물리에서 상태가 위상인자까지만 정해지므로 자연스러운 개념인데, 이것을 보통의 표현처럼 다루려면 $\mathrm{GL}(V)$ 로 들어올려야 한다. 들어올림이 항상 되지는 않고, 걸림돌을 재는 것이 2-코사이클이다.
 
 $$
-\rho(a)\rho(b)=c(a,b)\,\rho(ab),\qquad c(a,b)\in\mathbb C^\times
+\rho(a)\rho(b)=c(a,b)\thinspace\rho(ab),\qquad c(a,b)\in\mathbb C^\times
 $$
 
 $c$ 를 스칼라 재조정으로 없앨 수 있으면 보통 표현이 되고, 없앨 수 없으면 진짜 사영표현이다. 없앨 수 있는지를 재는 군이
@@ -107,7 +107,7 @@ $G$ 가 완전하지 않으면 보편 확대가 없지만, 곱셈자를 실현�
 $G=\mathbb Z/2\times\mathbb Z/2$ 를 보자. 아벨군이지만 $M(G)=\mathbb Z/2$ 로 비자명하고, 비자명 사영표현이 Pauli 행렬로 실현된다.
 
 $$
-X=\begin{pmatrix}0&1\\1&0\end{pmatrix},\qquad Z=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\qquad XZ=-ZX
+X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix},\qquad Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix},\qquad XZ=-ZX
 $$
 
 두 행렬은 가환이 아니지만 $\mathrm{PGL}_2$ 로 내려가면 가환이다. 부호 하나 차이가 정확히 걸림돌이다. 코사이클을 뽑아내고, 그것이 어떤 재조정으로도 없어지지 않음을 전수 탐색으로 확인한다.

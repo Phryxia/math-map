@@ -19,7 +19,7 @@ $$
 $d_k(v)$ 를 "간선을 $k$ 개 이하 쓰는 경로의 최단길이" 라 하자. 그러면
 
 $$
-d_0(v)=\begin{cases}0,&v=s\\ \infty,&\text{그 외}\end{cases},
+d_0(v)=\begin{cases}0,&v=s\cr \infty,&\text{그 외}\end{cases},
 \qquad
 d_{k}(v)=\min\Bigl(d_{k-1}(v),\ \min_{(u,v)\in E}\bigl(d_{k-1}(u)+w(u,v)\bigr)\Bigr)
 $$
@@ -43,7 +43,7 @@ flowchart LR
 $D=(\mathbb R\cup\lbrace\pm\infty\rbrace)^{V}$ 위에 "값이 작을수록 정보가 많다" 는 순서를 주고
 
 $$
-F(d)(v)=\begin{cases}0,&v=s\\ \min_{(u,v)\in E}\bigl(d(u)+w(u,v)\bigr),&\text{그 외}\end{cases}
+F(d)(v)=\begin{cases}0,&v=s\cr \min_{(u,v)\in E}\bigl(d(u)+w(u,v)\bigr),&\text{그 외}\end{cases}
 $$
 
 로 두면, 값 반복은 $F^k(\bot)$ 의 사슬이다. $\bot$ 은 $s$ 에서만 $0$ 이고 나머지가 $\infty$ 인 배열이다. $F$ 는 단조이고(값이 작아지면 $\min$ 도 작아진다) 연속이므로 [Kleene 반복](domain-theory.md)이 그대로 적용된다.
@@ -65,7 +65,7 @@ $$
 유향그래프 $G=(V,E)$ 와 가중치 $w\colon E\to\mathbb R$ 과 출발점 $s\in V$ 가 주어진다. 경로의 길이를 간선 가중치의 합으로 정의하고
 
 $$
-d(v)=\inf\{\,\text{길이}(P)\ :\ P\ \text{는}\ s\to v\ \text{경로}\,\}
+d(v)=\inf\lbrace\thinspace\text{길이}(P)\ :\ P\ \text{는}\ s\to v\ \text{경로}\thinspace\rbrace
 $$
 
 로 둔다. 도달할 수 없으면 $\infty$ 이고, 음수 사이클을 거쳐 갈 수 있으면 $-\infty$ 다.

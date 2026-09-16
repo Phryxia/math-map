@@ -19,7 +19,7 @@
 $\in$ 와 $\subseteq$ 는 다른 관계다. $1 \in \lbrace 1, 2\rbrace$ 이지만 $1$ 은 부분집합이 아니고, $\lbrace 1\rbrace \subseteq \lbrace 1, 2\rbrace$ 이지만 $\lbrace 1\rbrace$ 은 원소가 아니다. 집합이 다른 집합의 원소가 될 수 있기 때문에 이 구별이 필요하며, 공집합과 공집합만을 원소로 갖는 집합이 다른 것도 같은 이유다.
 
 $$
-\varnothing\ne\{\varnothing\}
+\varnothing\ne\lbrace\varnothing\rbrace
 $$
 
 왼쪽은 원소가 없고 오른쪽은 원소가 하나다.
@@ -31,7 +31,7 @@ $$
 집합을 $A$ , $B$ 로, 대상을 $x$ 로 쓴다. $x$ 가 $A$ 의 원소임을 $x \in A$ 로 적는다. $A$ 의 모든 원소가 $B$ 에도 속하면 $A$ 는 $B$ 의 부분집합이다.
 
 $$
-A\subseteq B\iff\forall x\,(x\in A\Rightarrow x\in B)
+A\subseteq B\iff\forall x\thinspace(x\in A\Rightarrow x\in B)
 $$
 
 두 집합은 서로가 서로의 부분집합일 때 같다. 등식을 증명할 때 양쪽 포함을 각각 보이는 방법이 여기서 나온다.
@@ -46,9 +46,9 @@ $$
 
 $$
 \begin{aligned}
-A\cup B&=\{x:x\in A\ \text{or}\ x\in B\}\\
-A\cap B&=\{x:x\in A\ \text{and}\ x\in B\}\\
-A\setminus B&=\{x:x\in A\ \text{and}\ x\notin B\}
+A\cup B&=\lbrace x:x\in A\ \text{or}\ x\in B\rbrace\cr
+A\cap B&=\lbrace x:x\in A\ \text{and}\ x\in B\rbrace\cr
+A\setminus B&=\lbrace x:x\in A\ \text{and}\ x\notin B\rbrace
 \end{aligned}
 $$
 
@@ -61,7 +61,7 @@ $A$ 를 $\lbrace 1,3\rbrace$ 이라 하고 $B$ 를 $\lbrace 3,5\rbrace$ 라 하�
 $A$ 의 모든 부분집합을 모은 집합이 멱집합 $P(A)$ 이고, 순서쌍을 모은 것이 곱집합이다.
 
 $$
-A\times B=\{(a,b):a\in A,\ b\in B\}
+A\times B=\lbrace(a,b):a\in A,\ b\in B\rbrace
 $$
 
 곱집합에서는 순서가 중요하므로 $(a,b)$ 와 $(b,a)$ 는 다르다. 순서를 잊는 집합 위에서 순서를 되살리는 장치가 순서쌍이고, 이것이 [함수](functions.md)와 [동치관계](relations.md)를 집합만으로 정의할 수 있게 해 준다.
@@ -71,7 +71,7 @@ $$
 집합을 여러 개 다룰 때는 인덱스 집합 $I$ 로 이름을 붙이고 한꺼번에 연산한다.
 
 $$
-\bigcup_{i\in I}A_i=\{x:\exists i\in I,\ x\in A_i\},\qquad \bigcap_{i\in I}A_i=\{x:\forall i\in I,\ x\in A_i\}
+\bigcup_{i\in I}A_i=\lbrace x:\exists i\in I,\ x\in A_i\rbrace,\qquad \bigcap_{i\in I}A_i=\lbrace x:\forall i\in I,\ x\in A_i\rbrace
 $$
 
 유한 개가 아니어도 되므로 극한, 측도, 위상을 다룰 때 기본 도구가 된다.

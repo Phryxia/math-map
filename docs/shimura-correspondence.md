@@ -5,7 +5,7 @@
 모듈러 형식의 무게는 보통 정수다. 그런데 가장 기본적인 예인 theta 급수 $\theta(\tau)=\sum_{n\in\mathbb Z}q^{n^2}$ 의 무게는 $1/2$ 이다. 변환식에 제곱근이 붙기 때문이다.
 
 $$
-\theta\!\left(\frac{-1}{4\tau}\right)=\sqrt{-2i\tau}\,\theta(\tau)
+\theta\negthinspace\left(\frac{-1}{4\tau}\right)=\sqrt{-2i\tau}\thinspace\theta(\tau)
 $$
 
 [Weil 표현](weil-representation.md)이 알려주듯 이 제곱근은 메타플렉틱 2 겹 덮개의 흔적이고, 반정수 무게 형식이란 $\mathrm{Mp}_2$ 위의 형식이다. 그렇다면 자연스러운 물음이 생긴다. **반정수 무게 형식과 정수 무게 형식은 어떻게 대응하는가.**
@@ -13,9 +13,9 @@ $$
 Shimura 가 1973 년에 답했다. 무게 $k+1/2$ 의 Hecke 고유형식 $g$ 마다 무게 $2k$ 의 고유형식 $f$ 가 대응하고, **Hecke 고윳값이 일치한다**.
 
 $$
-T(p^2)\,g=\lambda_p\,g
+T(p^2)\thinspace g=\lambda_p\thinspace g
 \quad\Longrightarrow\quad
-T(p)\,f=\lambda_p\,f
+T(p)\thinspace f=\lambda_p\thinspace f
 $$
 
 무게 $2k$ 쪽이 $g$ 의 "제곱근"처럼 행동하는 셈이다. Kohnen 은 여기에 **플러스 공간**이라는 알맞은 부분공간을 찾아 대응을 동형으로 다듬었고, 그 위에서 [Waldspurger 정리](waldspurger-formula.md)가 $g$ 의 Fourier 계수와 $f$ 의 중심 $L$ 값을 잇는다. 세 정리가 합쳐져 **반정수 무게 형식의 계수를 계산하면 정수 무게 형식의 $L$ 값을 안다**는 실용적 결론이 나온다.
@@ -58,10 +58,10 @@ Shintani 와 Niwa 가 곧 다른 증명을 주었다. **theta 올림**이다. �
 $\Gamma_0(4)$ 위에서 $\theta$ 를 자기동형 인자로 삼아 정의한다. $k\ge1$ 에 대해
 
 $$
-g\!\left(\frac{a\tau+b}{c\tau+d}\right)
+g\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)
 =\left(\frac{\theta(\gamma\tau)}{\theta(\tau)}\right)^{2k+1}g(\tau),
 \qquad
-\gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\Gamma_0(4)
+\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\Gamma_0(4)
 $$
 
 를 만족하고 첨점에서 사라지는 정칙함수를 무게 $k+1/2$ 의 첨점형식이라 하고, 그 공간을 $S_{k+1/2}(\Gamma_0(4))$ 라 쓴다. $\theta$ 의 거듭제곱을 자기동형 인자로 쓰는 것이 이 정의의 요점이고, 제곱근 모호성을 $\theta$ 가 흡수한다.
@@ -87,7 +87,7 @@ $N=1$ 에서 대응을 동형으로 만들려면 공간을 줄여야 한다.
 
 $$
 S^+_{k+1/2}(\Gamma_0(4))
-=\Bigl\{g=\sum c(n)q^n:\ c(n)=0\ \text{ unless }\ (-1)^kn\equiv0,1\ (\mathrm{mod}\ 4)\Bigr\}
+=\Bigl\lbrace g=\sum c(n)q^n:\ c(n)=0\ \text{ unless }\ (-1)^kn\equiv0,1\ (\mathrm{mod}\ 4)\Bigr\rbrace
 $$
 
 계수를 기본판별식이 될 수 있는 $n$ 에만 남기는 조건이다. Kohnen 의 정리는 이 부분공간 위에서 Shimura 대응이 Hecke 작용과 교환하는 **동형**이라고 말한다.
@@ -132,7 +132,7 @@ for (let k = 5; k <= 14; k++)
 대응이 확립되면 남는 물음은 계수 $c(|D|)$ 가 무엇을 뜻하느냐다. [Waldspurger 정리](waldspurger-formula.md)가 답한다.
 
 $$
-|c(|D|)|^2\ \sim\ |D|^{k-1/2}\,\frac{L\!\left(\tfrac12,\ \mathrm{Sh}(g)\otimes\chi_D\right)}{\langle f,f\rangle}
+|c(|D|)|^2\ \sim\ |D|^{k-1/2}\thinspace\frac{L\negthinspace\left(\tfrac12,\ \mathrm{Sh}(g)\otimes\chi_D\right)}{\langle f,f\rangle}
 $$
 
 앞의 그림에서 $D$ 방향이 하던 일이 여기 나타난다. $m$ 방향이 Hecke 구조(곧 $f$ 자신)를 주고, $D$ 방향이 $f$ 의 이차 뒤틀림 중심값을 준다. **하나의 반정수 무게 형식이 $f$ 의 뒤틀림 족 전체의 중심값을 계수 안에 담고 있다.**

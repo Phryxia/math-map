@@ -7,14 +7,14 @@
 $\mathrm{PGL}_2$ 위의 첨점형식 $\pi$ 와 허수이차체 $K$ 의 지표 $\chi$ 를 잡으면 **토릭 주기**를 만들 수 있다.
 
 $$
-\mathcal P_\chi(\varphi)=\int_{\mathbb A_F^\times K^\times\backslash\,\mathbb A_K^\times}\varphi(t)\,\chi^{-1}(t)\,dt
+\mathcal P_\chi(\varphi)=\int_{\mathbb A_F^\times K^\times\backslash\thinspace\mathbb A_K^\times}\varphi(t)\thinspace\chi^{-1}(t)\thinspace dt
 $$
 
 정리는 이 적분이 0 이 아닌 것과 중심값 $L(1/2,\pi_K\times\chi)$ 가 0 이 아닌 것이 같다고 말한다. 게다가 부등식이 아니라 **등식**이 성립한다. 주기의 절댓값 제곱이 중심값과 명시적인 상수배로 같다.
 
 $$
 \frac{|\mathcal P_\chi(\varphi)|^2}{\langle\varphi,\varphi\rangle}
-=\frac{1}{2}\cdot\frac{L\!\left(\tfrac12,\pi_K\times\chi\right)}{L(1,\pi,\mathrm{Ad})}\cdot\prod_v\alpha_v
+=\frac{1}{2}\cdot\frac{L\negthinspace\left(\tfrac12,\pi_K\times\chi\right)}{L(1,\pi,\mathrm{Ad})}\cdot\prod_v\alpha_v
 $$
 
 같은 정리가 고전적으로는 전혀 다르게 생겼다. **반정수 무게 모듈러 형식의 Fourier 계수의 제곱이 중심 $L$ 값과 같다**는 Kohnen–Zagier 공식이 그것이다. 두 얼굴을 잇는 것이 Shimura 대응이고, 그 정체는 theta 올림이다.
@@ -53,7 +53,7 @@ graph LR
 고전적 Waldspurger 정리는 이렇게 생겼다. 무게 $2k$ 의 새형식 $f$ 에 대응하는 무게 $k+1/2$ 의 형식 $g=\sum c(n)q^n$ 을 Shimura 대응으로 잡으면, 기본판별식 $D$ 에 대해
 
 $$
-|c(|D|)|^2\ \sim\ |D|^{k-1/2}\,\frac{L\!\left(\tfrac12,\ f\otimes\chi_D\right)}{\langle f,f\rangle}
+|c(|D|)|^2\ \sim\ |D|^{k-1/2}\thinspace\frac{L\negthinspace\left(\tfrac12,\ f\otimes\chi_D\right)}{\langle f,f\rangle}
 $$
 
 이 성립한다. 좌변은 $q$ 전개 계수라 컴퓨터로 곧장 뽑을 수 있고 우변은 $L$ 함수의 중심값이다. 이 두 얼굴이 같은 정리인 이유는 Shimura 대응이 **theta 대응**이기 때문이다. 쌍대쌍 $(\widetilde{\mathrm{SL}}_2,\mathrm{PGL}_2)$ 의 theta 올림이 한쪽에서는 반정수 무게 형식의 계수를, 다른 쪽에서는 토릭 주기를 내놓는다. [theta 급수](theta-functions.md)가 두 세계를 잇는 다리다.
@@ -82,7 +82,7 @@ $$
 \dim\mathrm{Hom}_{K_v^\times}(\pi_v,\chi_v)=1
 \ \text{ on }\ M_2(F_v)
 \quad\Longleftrightarrow\quad
-\varepsilon\!\left(\tfrac12,\pi_{K,v}\otimes\chi_v\right)\eta_v(-1)=+1
+\varepsilon\negthinspace\left(\tfrac12,\pi_{K,v}\otimes\chi_v\right)\eta_v(-1)=+1
 $$
 
 여기서 $\eta$ 는 $K/F$ 에 딸린 이차 지표다. 이것이 GGP 국소 지표 공식의 $n=1$ 판본이다.
@@ -101,7 +101,7 @@ $\Sigma$ 를 위 부호가 $-1$ 인 자리들의 집합이라 하자. 그러면 
 $$
 \frac{|\mathcal P_\chi(\varphi)|^2}{\langle\varphi,\varphi\rangle}
 =\frac{\zeta_F(2)}{2}\cdot
-\frac{L\!\left(\tfrac12,\pi_K\times\chi\right)}{L(1,\pi,\mathrm{Ad})}\cdot
+\frac{L\negthinspace\left(\tfrac12,\pi_K\times\chi\right)}{L(1,\pi,\mathrm{Ad})}\cdot
 \prod_v\alpha_v(\varphi_v)
 $$
 

@@ -5,7 +5,7 @@
 2 차원 등각장론에서 관측량은 곡면 위의 점에 놓인 **장**(field)이고, 두 장을 곱하면 점이 가까워질 때 발산한다. 곧 장들의 집합은 점별 곱셈으로 대수를 이루지 못한다. 대신 두 장의 곱을 거리의 Laurent 급수로 전개하면 각 계수가 다시 장이 된다.
 
 $$
-a(z)\,b(w)\ \sim\ \sum_{n}\frac{\big(a_{(n)}b\big)(w)}{(z-w)^{n+1}}
+a(z)\thinspace b(w)\ \sim\ \sum_{n}\frac{\big(a_{(n)}b\big)(w)}{(z-w)^{n+1}}
 $$
 
 이 전개를 공리로 삼아 만든 대수 구조가 **정점작용소대수**(vertex operator algebra, VOA)다. 결합대수에서 곱셈 하나가 하는 일을 무한히 많은 쌍선형 연산 $a_{(n)}$ 이 나눠 맡고, 결합법칙 자리에는 "두 장이 충분히 떨어져 있으면 순서를 바꿔도 된다" 는 국소성 공리가 들어간다.
@@ -99,7 +99,7 @@ $$
 앞쪽은 Heisenberg 대수의 Fock 공간(자유 보손), 뒤쪽은 격자의 군환이다. 격자벡터 $\alpha$ 에 대응하는 장이 정점작용소
 
 $$
-Y(e^\alpha,z)=e^{\alpha}z^{\alpha_{(0)}}\exp\!\left(\sum_{k>0}\frac{\alpha_{(-k)}}{k}z^k\right)\exp\!\left(-\sum_{k>0}\frac{\alpha_{(k)}}{k}z^{-k}\right)
+Y(e^\alpha,z)=e^{\alpha}z^{\alpha_{(0)}}\exp\negthinspace\left(\sum_{k>0}\frac{\alpha_{(-k)}}{k}z^k\right)\exp\negthinspace\left(-\sum_{k>0}\frac{\alpha_{(k)}}{k}z^{-k}\right)
 $$
 
 이고, 이 이름에서 구조 전체의 이름이 나왔다. 지표는 곧바로 계산된다.
@@ -117,7 +117,7 @@ $$
 임의의 VOA 에서 $V_1$ 은 괄호 $[a,b]=a_{(0)}b$ 로 Lie 대수가 된다. 격자 VOA 에서는 이것이 매우 구체적이다.
 
 $$
-\dim(V_L)_1=n+\#\{\alpha\in L:\langle\alpha,\alpha\rangle=2\}
+\dim(V_L)_1=n+\char35{}\lbrace\alpha\in L:\langle\alpha,\alpha\rangle=2\rbrace
 $$
 
 $\mathfrak h$ 에서 오는 $n$ 차원 가환 부분(Cartan 부분대수)과 최소벡터에서 오는 근벡터들이다. $L=E_8$ 이면 $8+240=248$ 로 $E_8$ Lie 대수가 정확히 재현된다. 근계 조합론이 VOA 의 무게 1 자리에 그대로 앉는다.
@@ -134,7 +134,7 @@ VOA 에 두 가지 유한성 조건을 걸면 지표가 모듈러가 된다.
 Zhu 정리는 이런 $V$ 의 기약가군 $M_1,\dots,M_r$ 의 지표들이 $\mathrm{SL}_2(\mathbb Z)$ 의 작용에 닫혀 있다고 말한다.
 
 $$
-\operatorname{ch}M_i\!\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_{j}\rho(\gamma)_{ij}\operatorname{ch}M_j(\tau)
+\operatorname{ch}M_i\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_{j}\rho(\gamma)_{ij}\operatorname{ch}M_j(\tau)
 $$
 
 홀로모픽이면 $r=1$ 이므로 지표가 $\mathrm{SL}_2(\mathbb Z)$ 의 1 차원 표현, 곧 스칼라배를 제외하면 모듈러 함수다. $c=24$ 이고 홀로모픽이며 $\dim V_1=0$ 인 VOA 의 지표가 $j-744$ 일 수밖에 없는 이유가 여기에 있다. 그런 VOA 는 무게 0 의 모듈러 함수이므로 $j$ 의 다항식이고, 극이 1 위수이고 상수항이 0 이면 $j-744$ 다.

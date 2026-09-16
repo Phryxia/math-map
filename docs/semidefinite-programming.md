@@ -61,7 +61,7 @@ $\langle A,B\rangle=\mathrm{tr}(A^{\mathsf T}B)$ 이고 $X\succeq0$ 은 양의 �
 원래 문제와 그 벡터 완화를 나란히 쓴다.
 
 $$
-\mathrm{OPT}=\max_{x\in\{\pm1\}^n}\sum_{(i,j)\in E}\frac{1-x_ix_j}2,\qquad
+\mathrm{OPT}=\max_{x\in\lbrace\pm1\rbrace^n}\sum_{(i,j)\in E}\frac{1-x_ix_j}2,\qquad
 \mathrm{SDP}=\max_{\lVert v_i\rVert=1}\sum_{(i,j)\in E}\frac{1-\langle v_i,v_j\rangle}2
 $$
 

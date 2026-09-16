@@ -83,7 +83,7 @@ $z=0$ 을 넣으면 $Z_{K3}(\tau,0)=24=\chi(K3)$ 로 Euler 지표가 나온다.
 $Z_{K3}$ 를 $c=6$ 인 $N=4$ 초등각대수의 지표로 분해한다. 짧은 지표 하나와 긴 지표들의 무한합으로 갈라진다.
 
 $$
-Z_{K3}(\tau,z)=24\,\mathrm{ch}_{\frac14,0}(\tau,z)+\sum_{n\ge0}A_n\,\mathrm{ch}_{n+\frac14,\frac12}(\tau,z)
+Z_{K3}(\tau,z)=24\thinspace\mathrm{ch}_{\frac14,0}(\tau,z)+\sum_{n\ge0}A_n\thinspace\mathrm{ch}_{n+\frac14,\frac12}(\tau,z)
 $$
 
 계수를 모은 생성함수를 놓는다.

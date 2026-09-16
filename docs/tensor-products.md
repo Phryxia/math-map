@@ -62,11 +62,11 @@ graph LR
 집합 $M \times N$ 이 자유롭게 생성하는 자유 $R$ 가군 $F$ 를 잡는다. 즉 기호 $e_{(m,n)}$ 들이 기저다. 부분가군 $K$ 를 다음 원소들이 생성하도록 둔다.
 
 $$
-e_{(m+m',\,n)} - e_{(m,n)} - e_{(m',n)}, \qquad e_{(m,\,n+n')} - e_{(m,n)} - e_{(m,n')}
+e_{(m+m',\thinspace n)} - e_{(m,n)} - e_{(m',n)}, \qquad e_{(m,\thinspace n+n')} - e_{(m,n)} - e_{(m,n')}
 $$
 
 $$
-e_{(rm,\,n)} - r\,e_{(m,n)}, \qquad e_{(m,\,rn)} - r\,e_{(m,n)}
+e_{(rm,\thinspace n)} - r\thinspace e_{(m,n)}, \qquad e_{(m,\thinspace rn)} - r\thinspace e_{(m,n)}
 $$
 
 그리고
@@ -82,7 +82,7 @@ $$
 $V$ 와 $W$ 가 체 $k$ 위 벡터 공간이고 기저가 각각 $\lbrace v_1, \dots, v_m\rbrace$ 과 $\lbrace w_1, \dots, w_n\rbrace$ 이면, 원소들
 
 $$
-\{ v_i \otimes w_j : 1 \le i \le m,\ 1 \le j \le n \}
+\lbrace v_i \otimes w_j : 1 \le i \le m,\ 1 \le j \le n \rbrace
 $$
 
 가 $V \otimes_k W$ 의 기저다. 따라서 차원 공식
@@ -118,13 +118,13 @@ $$
 가장 중요한 성질은 다음 자연동형이다.
 
 $$
-\operatorname{Hom}_R(M \otimes_R N, P) \;\cong\; \operatorname{Hom}_R\big(M, \operatorname{Hom}_R(N, P)\big)
+\operatorname{Hom}_R(M \otimes_R N, P) \thickspace\cong\thickspace \operatorname{Hom}_R\big(M, \operatorname{Hom}_R(N, P)\big)
 $$
 
 좌변의 사상은 $M \times N$ 위의 쌍선형 사상과 같고, 우변은 "$m$ 을 넣으면 $N \to P$ 사상이 나오는" 사상이다. 둘 다 결국 같은 데이터를 가리킨다. 범주론의 언어로는
 
 $$
-{-} \otimes_R N \;\dashv\; \operatorname{Hom}_R(N, -)
+{-} \otimes_R N \thickspace\dashv\thickspace \operatorname{Hom}_R(N, -)
 $$
 
 이며, 자세한 틀은 [Adjunction](adjunctions.md)에 있다. 집합에서의 curry와 uncurry가 그대로 대수 버전으로 옮겨온 것이다.
@@ -162,7 +162,7 @@ $$
 환 준동형 $f : R \to S$ 가 있으면 $S$ 는 $R$ 가군이므로
 
 $$
-M \;\longmapsto\; S \otimes_R M
+M \thickspace\longmapsto\thickspace S \otimes_R M
 $$
 
 가 $R$ 가군을 $S$ 가군으로 보낸다. 이를 스칼라 확장이라 하고, 스칼라를 잊는 제한 functor의 left adjoint다.
@@ -184,7 +184,7 @@ $$
 기저를 고정하면 텐서곱은 행렬 연산이 된다. $A$ 가 $m \times n$ 이고 $B$ 가 $p \times q$ 일 때 $A \otimes B$ 는 $mp \times nq$ 블록 행렬
 
 $$
-A \otimes B = \begin{pmatrix} a_{11}B & \cdots & a_{1n}B \\ \vdots & & \vdots \\ a_{m1}B & \cdots & a_{mn}B \end{pmatrix}
+A \otimes B = \begin{pmatrix} a_{11}B & \cdots & a_{1n}B \cr \vdots & & \vdots \cr a_{m1}B & \cdots & a_{mn}B \end{pmatrix}
 $$
 
 이며, 선형사상의 텐서곱을 표현한다.[^1] 유용한 항등식이 몇 개 있다.
@@ -236,7 +236,7 @@ print(np.linalg.matrix_rank(x.reshape(2, 2)))   # 2 이므로 단순텐서가 �
 두 표현의 텐서곱은 다시 표현이고, 지표는 곱으로 계산된다.
 
 $$
-\chi_{V \otimes W}(g) = \chi_V(g)\, \chi_W(g)
+\chi_{V \otimes W}(g) = \chi_V(g)\thinspace \chi_W(g)
 $$
 
 이 성질이 [군의 표현과 지표](group-representations.md)에서 기약표현의 곱을 분해하는 계산의 출발점이며, 물리의 각운동량 합성 규칙이 같은 계산이다.

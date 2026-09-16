@@ -30,7 +30,7 @@ $$
 게이지 이론에서 게이지 변환으로 없앨 수 있는 자유도는 물리적이지 않다. 하지만 "게이지 변환"이라는 말에는 경계에서 항등원으로 가야 한다는 조건이 숨어 있다. 경계에서 자유롭게 움직이는 변환은 물리적 상태를 진짜로 바꾼다.
 
 $$
-\mathcal G_{\text{진짜 게이지}}=\{g:g|_\Sigma=1\},\qquad
+\mathcal G_{\text{진짜 게이지}}=\lbrace g:g|_\Sigma=1\rbrace,\qquad
 \frac{\mathcal G_{\text{전체}}}{\mathcal G_{\text{진짜 게이지}}}=\mathrm{Map}(\Sigma,G)
 $$
 
@@ -88,7 +88,7 @@ flowchart TD
 
 > **정의.** 콤팩트 단순 Lie 군 $G$ 와 정수 $k$ 에 대해 장 $g:\Sigma\to G$ 의 WZW 작용은
 > $$
-> S_k(g)=\frac{k}{16\pi}\int_\Sigma\operatorname{tr}\big(g^{-1}\partial^\mu g\,g^{-1}\partial_\mu g\big)\,d^2x\;+\;k\,\Gamma(g)
+> S_k(g)=\frac{k}{16\pi}\int_\Sigma\operatorname{tr}\big(g^{-1}\partial^\mu g\thinspace g^{-1}\partial_\mu g\big)\thinspace d^2x\thickspace+\thickspace k\thinspace\Gamma(g)
 > $$
 > 이고 $\Gamma$ 는 위의 Wess–Zumino 항이다.
 
@@ -97,7 +97,7 @@ flowchart TD
 그때 운동방정식이 $\partial_{\bar z}(g^{-1}\partial_z g)=0$ 으로 정리되어, 흐름
 
 $$
-J(z)=-k\,\partial_z g\,g^{-1},\qquad \bar J(\bar z)=k\,g^{-1}\partial_{\bar z}g
+J(z)=-k\thinspace\partial_z g\thinspace g^{-1},\qquad \bar J(\bar z)=k\thinspace g^{-1}\partial_{\bar z}g
 $$
 
 가 각각 정칙과 반정칙이 된다. 좌우가 독립으로 보존되는 이 구조가 아핀 대칭의 출처다.
@@ -106,7 +106,7 @@ $$
 
 > **정의.** $\mathfrak g$ 의 루프대수 $\mathfrak g\otimes\mathbb C[t,t^{-1}]$ 에 중심원소 $K$ 를 더한
 > $$
-> [J^a_m,J^b_n]=f^{ab}{}_c\,J^c_{m+n}+m\,\delta^{ab}\delta_{m+n,0}\,K
+> [J^a_m,J^b_n]=f^{ab}{}_c\thinspace J^c_{m+n}+m\thinspace\delta^{ab}\delta_{m+n,0}\thinspace K
 > $$
 > 를 아핀 Lie 대수 $\hat{\mathfrak g}$ 라 한다. 표현에서 $K$ 가 스칼라 $k$ 로 작용할 때 그 표현의 **레벨**이 $k$ 다.
 
@@ -116,7 +116,7 @@ $m\delta_{m+n,0}K$ 항이 중심확대이고, 이것이 없으면 이론이 자�
 
 $$
 T(z)=\frac{1}{2(k+h^\vee)}\sum_a :J^aJ^a:(z),\qquad
-c=\frac{k\,\dim\mathfrak g}{k+h^\vee}
+c=\frac{k\thinspace\dim\mathfrak g}{k+h^\vee}
 $$
 
 $h^\vee$ 는 쌍대 Coxeter 수다. 분모의 $k+h^\vee$ 가 Chern–Simons 의 "이동된 레벨"과 정확히 같은 양이고, 양자 불변량 공식에서 $q=e^{2\pi i/(k+h^\vee)}$ 가 나타나는 이유다. $\mathfrak{su}(2)$ 면 $h^\vee=2$ 이고 $\dim\mathfrak g=3$ 이므로 $c=3k/(k+2)$ 이고 $k=1$ 에서 $c=1$ 이다.
@@ -128,13 +128,13 @@ $h^\vee$ 는 쌍대 Coxeter 수다. 분모의 $k+h^\vee$ 가 Chern–Simons 의 
 두 표현의 곱은 이 목록 안에서 닫히지 않으므로 잘라야 한다. 잘린 곱이 **융합 규칙**이다.
 
 $$
-\phi_i\times\phi_j=\sum_l N_{ij}^{\;l}\,\phi_l
+\phi_i\times\phi_j=\sum_l N_{ij}^{\thickspace l}\thinspace\phi_l
 $$
 
 $\mathfrak{su}(2)_k$ 에서는 보통의 스핀 덧셈에 상한이 하나 더 붙는다.
 
 $$
-j_1\times j_2=\sum_{j=|j_1-j_2|}^{\min(j_1+j_2,\;k-j_1-j_2)}j
+j_1\times j_2=\sum_{j=|j_1-j_2|}^{\min(j_1+j_2,\thickspace k-j_1-j_2)}j
 $$
 
 $k\to\infty$ 에서 두 번째 조건이 사라져 고전적인 Clebsch–Gordan 규칙으로 돌아간다. 레벨이 유한하다는 것이 **곱을 자르는** 방식으로 드러나는 셈이다.
@@ -155,14 +155,14 @@ $\Sigma$ 위의 상관함수는 모듈러 불변인 하나의 함수가 아니�
 
 > **정리 (Verlinde).** 융합 계수는
 > $$
-> N_{ij}^{\;l}=\sum_{m}\frac{S_{im}S_{jm}S^*_{lm}}{S_{0m}}
+> N_{ij}^{\thickspace l}=\sum_{m}\frac{S_{im}S_{jm}S^*_{lm}}{S_{0m}}
 > $$
 > 이고, 종수 $g$ 곡면의 블록 차원은 $\displaystyle\dim\mathcal V_g=\sum_m\big(S_{0m}\big)^{2-2g}$ 이다.
 
 여기서 $S$ 는 지표의 모듈러 변환 $\tau\mapsto-1/\tau$ 를 나타내는 행렬이다. $\mathfrak{su}(2)_k$ 면 라벨 $a=2j$ 에 대해
 
 $$
-S_{ab}=\sqrt{\frac{2}{k+2}}\,\sin\frac{\pi(a+1)(b+1)}{k+2}
+S_{ab}=\sqrt{\frac{2}{k+2}}\thinspace\sin\frac{\pi(a+1)(b+1)}{k+2}
 $$
 
 이다. 이 식이 **왜 놀라운가**를 짚을 만하다. 왼쪽은 표현의 곱을 분해한 비음 정수이고, 오른쪽은 사인 값들의 비를 더한 초월적인 실수다. 정수성이 전혀 자명하지 않은데 늘 성립한다. 아래 코드에서 직접 확인한다.

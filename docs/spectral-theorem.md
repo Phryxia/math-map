@@ -71,7 +71,7 @@ $$
 이 분해는 함수를 고윳값에만 적용하는 계산을 정당화한다. 예컨대 모든 고윳값이 음이 아니면 유일한 양의 준정부호 제곱근이 존재한다.
 
 $$
-f(A)=Q\,\mathrm{diag}(f(\lambda_1),\dots,f(\lambda_n))\,Q^{\mathsf T}
+f(A)=Q\thinspace\mathrm{diag}(f(\lambda_1),\dots,f(\lambda_n))\thinspace Q^{\mathsf T}
 $$
 
 ## Normal 연산자와 반례

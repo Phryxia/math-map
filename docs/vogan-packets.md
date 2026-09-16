@@ -70,7 +70,7 @@ $G$ 를 $F$ 위의 유사분열 환원군이라 하자. $G$ 의 **내부형식**
 $\varphi$ 의 상을 중심화하는 쌍대군의 부분군을 $S_\varphi=\mathrm{Cent}\bigl(\varphi,\widehat G\bigr)$ 라 하고
 
 $$
-\mathcal S_\varphi=\pi_0\!\left(S_\varphi\big/Z(\widehat G)^{\Gamma}\right)
+\mathcal S_\varphi=\pi_0\negthinspace\left(S_\varphi\big/Z(\widehat G)^{\Gamma}\right)
 $$
 
 를 **성분군**이라 한다. 고전군에서는 이것이 $(\mathbb Z/2)^r$ 의 몫으로 나온다.
@@ -89,7 +89,7 @@ $$
 꾸러미가 자연스러운 단위인 이유는 지표 쪽에 있다. 개별 표현의 지표는 안정 켤레류 위에서 잘 정의되지 않지만, 꾸러미 전체의 합
 
 $$
-\Theta_\varphi=\sum_{\pi\in\Pi_\varphi}\dim(\rho_\pi)\,\Theta_\pi
+\Theta_\varphi=\sum_{\pi\in\Pi_\varphi}\dim(\rho_\pi)\thinspace\Theta_\pi
 $$
 
 는 **안정 분포**가 된다. [대각합 공식의 안정화](fundamental-lemma.md)가 다루는 대상이 바로 이 합이고, 꾸러미를 쪼개는 일이 내시(endoscopy)다.
@@ -127,7 +127,7 @@ GGP 의 국소 정리는 다음 형태였다.
 $$
 \sum_{\pi\in\Pi_\varphi^{\mathrm{Vogan}}}m(\pi)=1,
 \qquad
-\chi(\pi)=\varepsilon\!\left(\tfrac12,\varphi_{n+1}\otimes\varphi_n\right)
+\chi(\pi)=\varepsilon\negthinspace\left(\tfrac12,\varphi_{n+1}\otimes\varphi_n\right)
 $$
 
 왼쪽 합이 **Vogan 꾸러미 위의 합**이라는 점이 결정적이다. 유사분열형 군 하나만 보면 중복도가 전부 0 일 수 있고, 그때 정답은 비유사분열 내부형식 위에 있다. [Waldspurger 정리](waldspurger-formula.md)에서 주기가 어느 사원수 대수 위에서 살아남는지가 문제였던 것이 정확히 이 현상의 $n=1$ 판본이다. 오른쪽 등식은 $\varepsilon$ 인자가 $\mathcal S_\varphi$ 위의 지표를 지정한다는 뜻이고, 그 지표를 $Z(\widehat G)^\Gamma$ 에 제한해 읽으면 어느 내부형식인지가 나온다.

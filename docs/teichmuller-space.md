@@ -40,7 +40,7 @@ $$
 $S=S_g$ 를 종수 $g\ge2$ 의 닫힌 유향 곡면이라 한다. 쌍 $(X,f)$ 를 생각한다. 여기서 $X$ 는 쌍곡 곡면이고 $f\colon S\to X$ 는 향을 보존하는 미분동형이다. 두 쌍 $(X_1,f_1)$ 과 $(X_2,f_2)$ 를 등거리 $h\colon X_1\to X_2$ 가 있어 $h\circ f_1$ 이 $f_2$ 와 호모토픽할 때 같다고 본다.
 
 $$
-\mathcal T_g=\{(X,f)\}/\sim
+\mathcal T_g=\lbrace(X,f)\rbrace/\sim
 $$
 
 를 **Teichmüller 공간**이라 한다.
@@ -50,7 +50,7 @@ $$
 곡면군 $\pi_1(S)$ 에서 $\mathrm{PSL}_2(\mathbb R)$ 로 가는 이산 충실 표현을 켤레로 나눈 것이 같은 공간을 준다.
 
 $$
-\mathcal T_g\cong\{\rho\colon\pi_1(S)\to\mathrm{PSL}_2(\mathbb R)\ \text{이산 충실}\}/\mathrm{PSL}_2(\mathbb R)
+\mathcal T_g\cong\lbrace\rho\colon\pi_1(S)\to\mathrm{PSL}_2(\mathbb R)\ \text{이산 충실}\rbrace/\mathrm{PSL}_2(\mathbb R)
 $$
 
 쌍곡 곡면은 상반평면을 Fuchs 군 $\rho(\pi_1(S))$ 로 나눈 것이고, 표시는 곧 $\pi_1$ 의 생성원을 어디로 보낼지 정한 것이다. 이 그림에서 $\mathcal T_g$ 는 표현다양체의 한 연결성분으로 나타난다.

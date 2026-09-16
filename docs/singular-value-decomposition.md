@@ -28,7 +28,7 @@ $$
 특이값은 $A^{\mathsf T}A$ (또는 $AA^{\mathsf T}$ )의 고윳값의 음이 아닌 제곱근이고, $u_i$ 와 $v_i$ 는 각각 $AA^{\mathsf T}$ 와 $A^{\mathsf T}A$ 의 고유벡터다[^1].
 
 $$
-A^{\mathsf T}A\,v_i=\sigma_i^2 v_i,\qquad
+A^{\mathsf T}A\thinspace v_i=\sigma_i^2 v_i,\qquad
 A A^{\mathsf T}u_i=\sigma_i^2 u_i,\qquad
 Av_i=\sigma_i u_i
 $$
@@ -56,7 +56,7 @@ $$
 $$
 \langle u_i,u_j\rangle
 =\frac{v_i^{\mathsf T}A^{\mathsf T}Av_j}{\sigma_i\sigma_j}
-=\frac{\lambda_j\,\delta_{ij}}{\sigma_i\sigma_j}=\delta_{ij}
+=\frac{\lambda_j\thinspace\delta_{ij}}{\sigma_i\sigma_j}=\delta_{ij}
 $$
 
 $\lambda_i=0$ 이면 $Av_i$ 의 노름 제곱이 $\lambda_i=0$ 이므로 $Av_i=0$ 이다. 따라서 $u_1,\dots,u_r$ 을 $m$ 차원의 정규직교기저로 확장하면 위 rank 1 합이 모든 $v_j$ 에서 $A$ 와 같은 값을 주고, 기저에서 일치하므로 $A$ 와 같다. 특이값은 유일하지만 $U$ 와 $V$ 는 유일하지 않다(중복 특이값의 고유공간 안에서 회전이 자유롭고, 부호도 짝지어 바꿀 수 있다).

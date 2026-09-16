@@ -75,7 +75,7 @@ $$
 경로 압축은 $FIND$ 가 지나간 원소들의 부모를 찾아낸 뿌리로 바꾼다. 크기 또는 랭크 기준 합치기와 함께 쓰면 $m$ 번의 연산열의 총비용이
 
 $$
-O\bigl(m\,\alpha(n)\bigr)
+O\bigl(m\thinspace\alpha(n)\bigr)
 $$
 
 로 제한된다. $\alpha$ 는 inverse Ackermann 함수이며 실용적인 모든 $n$ 에서 $4$ 이하다. Tarjan 과 van Leeuwen 은 이 한계가 이 부류의 알고리즘에 대해 최적임을 보였다.

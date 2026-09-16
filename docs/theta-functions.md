@@ -13,7 +13,7 @@ $$
 모듈러 형식의 공간은 유한차원이므로 여기서 곧바로 이득이 나온다. 차원이 $1$ 인 공간에 두 대상이 들어가면 그 둘은 상수배 차이뿐이고, 첫 계수를 맞추면 **모든** 계수가 같아진다. $E_8$ 격자에서 이 논법이 한 줄로 끝난다.
 
 $$
-\Theta_{E_8}=E_4\ \Longrightarrow\ \#\{x\in E_8:|x|^2=2m\}=240\,\sigma_3(m)
+\Theta_{E_8}=E_4\ \Longrightarrow\ \char35{}\lbrace x\in E_8:|x|^2=2m\rbrace=240\thinspace\sigma_3(m)
 $$
 
 8 차원 격자의 벡터를 세는 조합 문제가 약수의 세제곱합이라는 정수론적 답을 갖는다.
@@ -33,7 +33,7 @@ $$
 격자 위의 Poisson 합공식 $\sum_{x\in L}f(x)=\frac1{\mathrm{vol}(L)}\sum_{y\in L^*}\hat f(y)$ 에 넣으면 $t$ 와 $1/t$ 가 바뀐다.
 
 $$
-\Theta_L(-1/\tau)=\frac{(\tau/i)^{n/2}}{\mathrm{vol}(L)}\,\Theta_{L^*}(\tau)
+\Theta_L(-1/\tau)=\frac{(\tau/i)^{n/2}}{\mathrm{vol}(L)}\thinspace\Theta_{L^*}(\tau)
 $$
 
 $L$ 이 자기쌍대 곧 유니모듈러 $L^*=L$ 이면 오른쪽이 다시 $\Theta_L$ 이라 이 식이 무게 $n/2$ 의 모듈러 변환이 된다. 그리고 $L$ 이 짝수 격자이면 모든 $|x|^2$ 가 짝수라 $q$ 의 지수가 정수이고, $\Theta_L(\tau+1)=\Theta_L(\tau)$ 다. 두 변환이 $\mathrm{SL}_2(\mathbb Z)$ 를 생성하므로 $\Theta_L$ 이 모듈러 형식이다.
@@ -84,8 +84,8 @@ graph TD
 $L\subset\mathbb R^n$ 이 완전계수 격자일 때
 
 $$
-\Theta_L(\tau)=\sum_{x\in L}e^{\pi i\tau|x|^2}=\sum_{m\ge0}N_L(m)\,q^{m/2},\qquad
-N_L(m)=\#\{x\in L:|x|^2=m\}
+\Theta_L(\tau)=\sum_{x\in L}e^{\pi i\tau|x|^2}=\sum_{m\ge0}N_L(m)\thinspace q^{m/2},\qquad
+N_L(m)=\char35{}\lbrace x\in L:|x|^2=m\rbrace
 $$
 
 로 둔다. $L$ 이 **짝수**라는 것은 모든 $|x|^2$ 가 짝수라는 뜻이고, **유니모듈러**라는 것은 $L^*=L$ 곧 Gram 행렬의 행렬식이 $1$ 이라는 뜻이다.
@@ -93,8 +93,8 @@ $$
 $E_8$ 은 다음으로 정의되는 8 차원 짝수 유니모듈러 격자다.
 
 $$
-E_8=\Big\{x\in\mathbb Z^8:\textstyle\sum x_i\in2\mathbb Z\Big\}\ \cup\
-\Big\{x\in(\mathbb Z+\tfrac12)^8:\textstyle\sum x_i\in2\mathbb Z\Big\}
+E_8=\Big\lbrace x\in\mathbb Z^8:\textstyle\sum x_i\in2\mathbb Z\Big\rbrace\ \cup\
+\Big\lbrace x\in(\mathbb Z+\tfrac12)^8:\textstyle\sum x_i\in2\mathbb Z\Big\rbrace
 $$
 
 ## Jacobi theta 와 삼중곱

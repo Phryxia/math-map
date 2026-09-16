@@ -15,7 +15,7 @@ $$
 $$
 \dim\mathrm{Hom}_{K^\times}(\pi,\chi)=1\ \text{ on }\ \mathrm{GL}_2(F)
 \quad\Longleftrightarrow\quad
-\varepsilon\!\left(\tfrac12,\pi_K\otimes\chi\right)\,\eta(-1)=+1
+\varepsilon\negthinspace\left(\tfrac12,\pi_K\otimes\chi\right)\thinspace\eta(-1)=+1
 $$
 
 표현론적 질문("범함수가 있는가")이 해석적 불변량("$\varepsilon$ 인자의 부호")으로 완전히 번역된다. 이것이 [GGP 지표 공식](gan-gross-prasad.md)의 가장 낮은 경우이고, 역사적으로는 GGP 보다 먼저 발견되어 그 추측의 모양을 잡아준 사례다.
@@ -57,7 +57,7 @@ $$
 $$
 \dim\mathrm{Hom}_{K^\times}(\pi,\chi)=
 \begin{cases}
-1,&\varepsilon\!\left(\tfrac12,\pi_K\otimes\chi\right)\eta_{K/F}(-1)=+1\\[2pt]
+1,&\varepsilon\negthinspace\left(\tfrac12,\pi_K\otimes\chi\right)\eta_{K/F}(-1)=+1\cr
 0,&\text{그 외}
 \end{cases}
 $$
@@ -70,7 +70,7 @@ Saito 의 증명이 개념적으로 가장 깔끔하다. 양쪽 $\mathrm{Hom}$ �
 
 $$
 \dim\mathrm{Hom}_{K^\times}(\pi,\chi)
-=\int_{K^\times/F^\times}\Theta_\pi(t)\,\chi^{-1}(t)\,dt
+=\int_{K^\times/F^\times}\Theta_\pi(t)\thinspace\chi^{-1}(t)\thinspace dt
 $$
 
 꼴이 되고(적분은 정칙화가 필요하다), [Jacquet–Langlands 대응](jacquet-langlands.md)의 지표 항등식 $\Theta_{\pi'}=-\Theta_\pi$ 가 두 적분의 합을 상수로 만든다. 그 상수가 1 이라는 것이 정리의 내용이고, 부호를 $\varepsilon$ 로 동정하는 부분에 국소 함수방정식이 들어간다. **부호가 뒤집힌다는 사실 하나가 "합쳐서 1"을 낳는다.**
@@ -90,7 +90,7 @@ $F=\mathbb R$ 이고 $K=\mathbb C$ 인 경우도 같은 형태다. 무게 $2k$ �
 $n$ 이 **합동수**라는 것은 세 변이 유리수인 직각삼각형의 넓이가 $n$ 이라는 뜻이고, 타원곡선 $E_n:y^2=x^3-n^2x$ 의 계수가 양수라는 것과 동치다. Tunnell 은 자신의 국소 공식으로 $L(E_n,1)$ 의 값을 삼항 이차형식의 표현수로 적었다.
 
 > $n$ 이 홀수 무제곱수일 때, $n$ 이 합동수이면 다음이 성립한다.
-> $$2\,\#\{(x,y,z)\in\mathbb Z^3: n=2x^2+y^2+32z^2\}=\#\{(x,y,z)\in\mathbb Z^3: n=2x^2+y^2+8z^2\}$$
+> $$2\thinspace\char35{}\lbrace(x,y,z)\in\mathbb Z^3: n=2x^2+y^2+32z^2\rbrace=\char35{}\lbrace(x,y,z)\in\mathbb Z^3: n=2x^2+y^2+8z^2\rbrace$$
 > BSD 추측을 가정하면 역도 성립한다.
 
 짝수 $n=2m$ 에서는 $4x^2+y^2+32z^2$ 과 $4x^2+y^2+8z^2$ 을 쓴다. 판정이 유한 계산으로 끝난다.

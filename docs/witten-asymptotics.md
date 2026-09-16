@@ -17,14 +17,14 @@ Witten 이 예언한 답은 이렇다. **레벨 하나만 보면 안 되고 $k\t
 Witten 의 출발점은 다음 형식적 적분이다.
 
 $$
-Z_k(M)=\int_{\mathcal A/\mathcal G}\mathcal DA\;e^{2\pi ik\,\mathrm{CS}(A)},\qquad
+Z_k(M)=\int_{\mathcal A/\mathcal G}\mathcal DA\thickspace e^{2\pi ik\thinspace\mathrm{CS}(A)},\qquad
 \mathrm{CS}(A)=\frac1{8\pi^2}\int_M\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)
 $$
 
 측도가 수학적으로 정의되지 않으므로 이 식 자체는 증명의 재료가 아니다. 그러나 **큰 $k$ 에서 무엇이 나와야 하는지**는 말해 준다. 진동적분 $\int e^{ik f}$ 의 큰 $k$ 거동은 $f$ 의 임계점이 지배한다. Chern–Simons 범함수의 변분은
 
 $$
-\delta\,\mathrm{CS}(A)\propto\int\mathrm{tr}(\delta A\wedge F_A)
+\delta\thinspace\mathrm{CS}(A)\propto\int\mathrm{tr}(\delta A\wedge F_A)
 $$
 
 이므로 임계점은 $F_A=0$ 이고 곧 **평탄 접속**이다. 평탄 접속의 게이지류는 $\pi_1(M)\to\mathrm{SU}(2)$ 준동형의 켤레류와 같으므로, 이것은 유한하거나 유한차원인 대상이다. 무한차원 적분이 $\pi_1$ 의 표현이라는 손에 잡히는 것으로 내려온다.
@@ -63,7 +63,7 @@ $$
 $k\to\infty$ 말고 다른 방향으로 갈 수도 있다. $q=e^h$ 로 두고 $h\to0$ 에서 형식적 멱급수로 전개하는 것이다. 유리 호몰로지 구면 $M$ 에 대해
 
 $$
-\tau^{\mathrm{Ohtsuki}}(M)=\sum_{n\ge0}\lambda_n(M)\,h^n
+\tau^{\mathrm{Ohtsuki}}(M)=\sum_{n\ge0}\lambda_n(M)\thinspace h^n
 $$
 
 이 되고, 계수 $\lambda_n$ 이 **유한형 불변량**(Vassiliev 이론의 3 차원판)이 된다. 점근 추측이 "여러 임계점의 기여를 모두 본다" 면 Ohtsuki 급수는 "자명한 접속 하나 주위의 섭동전개를 전부 본다" 이다. 같은 불변량을 두 방향에서 펼친 것이고, 첫 계수 $\lambda_1$ 이 [Casson 불변량](casson-invariant.md)의 상수배라는 사실이 두 그림이 같은 대상을 본다는 첫 증거다.
@@ -76,7 +76,7 @@ $M$ 을 닫힌 유향 3 차원 다양체, $\tau_k(M)$ 을 $\mathrm{SU}(2)_k$ 의
 
 > **추측 (Witten 1989).** $k\to\infty$ 에서
 > $$
-> \tau_k(M)\;\sim\;\sum_{\alpha\in\mathcal M(M)}e^{2\pi ik\,\mathrm{CS}(\alpha)}\;k^{(h^1_\alpha-h^0_\alpha)/2}\;\sqrt{T_\alpha}\;e^{i\pi I_\alpha/4}\cdot\big(c_\alpha+O(k^{-1})\big)
+> \tau_k(M)\thickspace\sim\thickspace\sum_{\alpha\in\mathcal M(M)}e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}\thickspace k^{(h^1_\alpha-h^0_\alpha)/2}\thickspace\sqrt{T_\alpha}\thickspace e^{i\pi I_\alpha/4}\cdot\big(c_\alpha+O(k^{-1})\big)
 > $$
 > 여기서 $\mathrm{CS}(\alpha)\in\mathbb R/\mathbb Z$ 는 Chern–Simons 불변량, $T_\alpha$ 는 $\alpha$ 로 비꼰 Reidemeister 비틀림, $I_\alpha$ 는 스펙트럼 흐름에서 오는 정수, $h^i_\alpha$ 는 비꼰 코호몰로지의 차원이다.
 

@@ -15,7 +15,7 @@ $$
 > $V$ 가 $C_2$ 여유한이고 유리적이면, 기약가군은 유한개이고 지표들이 상반평면에서 수렴하며, 그 유한차원 span 위에서 $\mathrm{SL}_2(\mathbb Z)$ 가 작용한다.
 
 $$
-\operatorname{ch}_{M_i}\!\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_j\rho(\gamma)_{ij}\operatorname{ch}_{M_j}(\tau)
+\operatorname{ch}_{M_i}\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_j\rho(\gamma)_{ij}\operatorname{ch}_{M_j}(\tau)
 $$
 
 대수적 대상에서 나온 급수가 모듈러 형식이 되는 이유를 대수 쪽 조건으로 설명한 것이고, 달빛 현상 전체의 기반이 된다.
@@ -79,8 +79,8 @@ graph LR
 $V=\bigoplus_nV_n$ 을 등급 VOA 라 하고 동차원소 $a\in V_{\mathrm{wt}\thinspace a}$ 에 대해 두 연산을 정의한다.
 
 $$
-a*b=\operatorname*{Res}_z\left(Y(a,z)b\,\frac{(1+z)^{\mathrm{wt}\,a}}{z}\right),\qquad
-a\circ b=\operatorname*{Res}_z\left(Y(a,z)b\,\frac{(1+z)^{\mathrm{wt}\,a}}{z^2}\right)
+a*b=\operatorname*{Res}_z\left(Y(a,z)b\thinspace\frac{(1+z)^{\mathrm{wt}\thinspace a}}{z}\right),\qquad
+a\circ b=\operatorname*{Res}_z\left(Y(a,z)b\thinspace\frac{(1+z)^{\mathrm{wt}\thinspace a}}{z^2}\right)
 $$
 
 $O(V)=\operatorname{span}\lbrace a\circ b\rbrace$ 로 두고

@@ -7,8 +7,8 @@
 그러면 뜻밖의 대상이 나온다. $\overline{\mathbb F_p}$ 위의 초특이 $j$ 불변량은 모두 $\mathbb F_{p^2}$ 에 있고 개수가
 
 $$
-\#\{\text{초특이 }j\}=\Big\lfloor\frac p{12}\Big\rfloor+\varepsilon_p,\qquad
-\varepsilon_p=\begin{cases}0&p\equiv1\\1&p\equiv5,7\\2&p\equiv11\end{cases}\pmod{12}
+\char35{}\lbrace\text{초특이 }j\rbrace=\Big\lfloor\frac p{12}\Big\rfloor+\varepsilon_p,\qquad
+\varepsilon_p=\begin{cases}0&p\equiv1\cr 1&p\equiv5,7\cr 2&p\equiv11\end{cases}\pmod{12}
 $$
 
 로 유한하다. 이 유한집합을 정점으로 두고 $\ell$ 차 동종사상을 간선으로 두면 $(\ell+1)$ 정규 그래프가 되며, 그것이 **Ramanujan 그래프**다. 스펙트럼 간극이 이론적 최댓값에 도달해 [random walk](random-walks.md)가 가장 빠르게 섞인다.
@@ -40,7 +40,7 @@ $$
 Eichler 의 질량 공식이 답을 준다. 초특이 곡선 전체에 자기동형군의 크기로 가중치를 주어 세면
 
 $$
-\sum_{E\ \text{초특이}}\frac1{\#\mathrm{Aut}(E)}=\frac{p-1}{24}
+\sum_{E\ \text{초특이}}\frac1{\char35{}\mathrm{Aut}(E)}=\frac{p-1}{24}
 $$
 
 가 된다. 대부분의 곡선은 $\char35{}\mathrm{Aut}=2$ ($\pm1$ 뿐) 이므로 정점 수가 대략 $(p-1)/12$ 이고, $j=0$ (자기동형 6개) 과 $j=1728$ (4개) 이 있을 때만 보정항 $\varepsilon_p$ 가 붙는다. 위 공식의 $12$ 와 $\varepsilon_p$ 가 이렇게 설명된다.
@@ -86,7 +86,7 @@ $\phi\colon E_1\to E_2$ 가 차수 $\ell$ 의 분리 가능한 동종사상이�
 
 $$
 G_\ell(p)\colon\quad
-V=\{j\in\mathbb F_{p^2}:\ j\ \text{초특이}\},\qquad
+V=\lbrace j\in\mathbb F_{p^2}:\ j\ \text{초특이}\rbrace,\qquad
 j_1\sim j_2\iff\Phi_\ell(j_1,j_2)=0
 $$
 
@@ -95,7 +95,7 @@ $$
 ## Deuring 대응
 
 $$
-\{\text{초특이 }E/\overline{\mathbb F_p}\}\ \longleftrightarrow\ \{B_{p,\infty}\ \text{의 극대차수}\}/\text{공액}
+\lbrace\text{초특이 }E/\overline{\mathbb F_p}\rbrace\ \longleftrightarrow\ \lbrace B_{p,\infty}\ \text{의 극대차수}\rbrace/\text{공액}
 $$
 
 $B_{p,\infty}$ 는 $p$ 와 $\infty$ 에서만 분지하는 유일한 유리 사원수대수다. 이 대응 아래에서 동종사상은 좌아이디얼이 되고, 그래프는 아이디얼 류의 그래프가 된다. 곡선 쪽의 문제를 격자 쪽으로 옮기는 통로이며, 공격과 방어 양쪽에서 핵심 도구다.
@@ -121,7 +121,7 @@ $\ell$ 동종사상 그래프는 모든 $\ell\ne p$ 에 대해 연결이다. 사
 Ramanujan 성질에서 $\lambda_2\le2\sqrt\ell$ 이므로 혼합 시간이
 
 $$
-t_{\mathrm{mix}}=O\Big(\frac{\log\#V}{\log\big((\ell+1)/2\sqrt\ell\big)}\Big)=O(\log p)
+t_{\mathrm{mix}}=O\Big(\frac{\log\char35{}V}{\log\big((\ell+1)/2\sqrt\ell\big)}\Big)=O(\log p)
 $$
 
 이다. 이 상계는 곧 "임의의 두 정점 사이에 길이 $O(\log p)$ 의 경로가 있다" 는 지름 상계도 준다. 존재는 보장되지만 찾는 것은 별개의 문제라는 구도가 여기서 성립한다.

@@ -90,7 +90,7 @@ $$
 ## 적률과 Catalan 수
 
 $$
-\int_{-2}^{2}x^{2m}\rho_{\mathrm{sc}}(x)\,dx = C_m = \frac{1}{m+1}\binom{2m}{m}, \qquad \int x^{2m+1}\rho_{\mathrm{sc}} = 0
+\int_{-2}^{2}x^{2m}\rho_{\mathrm{sc}}(x)\thinspace dx = C_m = \frac{1}{m+1}\binom{2m}{m}, \qquad \int x^{2m+1}\rho_{\mathrm{sc}} = 0
 $$
 
 이다. $1, 2, 5, 14, 42, 132$ 라는 익숙한 수열이 스펙트럼 분포의 적률로 나타난다. 아래 코드에서 이것을 직접 확인한다.
