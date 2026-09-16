@@ -92,7 +92,7 @@ $$
 
 ## 일반 격자
 
-[격자](lattices.md) $L\subset\mathbb R^{d}$ 와 쌍대격자 $L^{*}=\lbrace\mu:\langle\mu,\lambda\rangle\in\mathbb Z\ \forall\lambda\in L\rbrace$ 에 대해
+[격자](lattices.md) $L\subset\mathbb R^{d}$ 와 쌍대격자 $L^{\ast}=\lbrace\mu:\langle\mu,\lambda\rangle\in\mathbb Z\ \forall\lambda\in L\rbrace$ 에 대해
 
 $$
 \sum_{\lambda\in L}f(\lambda)=\frac1{\mathrm{covol}(L)}\sum_{\mu\in L^{*}}\hat f(\mu)

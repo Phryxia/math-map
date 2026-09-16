@@ -140,7 +140,7 @@ $$
 I(a)=\sup_\theta\big(\theta a-\log M(\theta)\big)
 $$
 
-이 Cramér 의 대편차 원리다. 증명의 뼈대가 안장점법이고 $\sup$ 을 주는 $\theta^{*}$ 가 안장점이다. 안장점 조건 $M'(\theta)/M(\theta)=a$ 는 평균이 $a$ 가 되도록 분포를 기울인다는 뜻이고, 이 지수 기울이기가 [집중부등식](concentration-inequalities.md)의 Chernoff 한계와 같은 계산이다. 중심에서 2 차 전개를 하면 [중심극한정리](central-limit-theorem.md)의 국소판이, 꼬리에서 전개하면 대편차가 나온다.
+이 Cramér 의 대편차 원리다. 증명의 뼈대가 안장점법이고 $\sup$ 을 주는 $\theta^{\ast}$ 가 안장점이다. 안장점 조건 $M'(\theta)/M(\theta)=a$ 는 평균이 $a$ 가 되도록 분포를 기울인다는 뜻이고, 이 지수 기울이기가 [집중부등식](concentration-inequalities.md)의 Chernoff 한계와 같은 계산이다. 중심에서 2 차 전개를 하면 [중심극한정리](central-limit-theorem.md)의 국소판이, 꼬리에서 전개하면 대편차가 나온다.
 
 # 활용
 

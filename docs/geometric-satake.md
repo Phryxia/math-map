@@ -144,7 +144,7 @@ $G=\mathrm{GL}_n$ 이면 $\mathrm{Gr}_G$ 는 $F^n$ 안의 $\mathcal O$ 격자 �
 
 ## 궤도와 IC 층
 
-$\lambda\in X_*(T)^+$ 에 대해 $\mathrm{Gr}^\lambda=G(\mathcal O)t^\lambda G(\mathcal O)/G(\mathcal O)$ 는 차원 $\langle\lambda,2\rho\rangle$ 의 매끄러운 준사영 다양체이고, 폐포는
+$\lambda\in X_\ast(T)^+$ 에 대해 $\mathrm{Gr}^\lambda=G(\mathcal O)t^\lambda G(\mathcal O)/G(\mathcal O)$ 는 차원 $\langle\lambda,2\rho\rangle$ 의 매끄러운 준사영 다양체이고, 폐포는
 
 $$
 \overline{\mathrm{Gr}^\lambda}=\bigsqcup_{\mu\le\lambda}\mathrm{Gr}^\mu

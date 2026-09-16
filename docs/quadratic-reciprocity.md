@@ -42,7 +42,7 @@ graph LR
 
 $\mathbb Q(\zeta_p)$ 의 Galois 군이 $(\mathbb Z/p\mathbb Z)^\times$ 이고, 지표 2 인 부분군에 대응하는 이차 부분체가 정확히 하나 있다. 그것이 $p^\ast=(-1)^{(p-1)/2}p$ 에 대한 $\mathbb Q(\sqrt{p^\ast})$ 다.
 
-$q$ 가 이 이차체에서 분해되는지는 $\left(\frac{p^*}q\right)$ 가 결정한다. 반면 $q$ 가 $\mathbb Q(\zeta_p)$ 에서 어떻게 분해되는지는 $q \bmod p$ 가 결정한다. 같은 소수 $q$ 의 같은 분해 행동을 두 방식으로 읽은 것이므로 두 답이 일치해야 하고, 그 일치가 상호법칙이다.
+$q$ 가 이 이차체에서 분해되는지는 $\left(\frac{p^\ast}q\right)$ 가 결정한다. 반면 $q$ 가 $\mathbb Q(\zeta_p)$ 에서 어떻게 분해되는지는 $q \bmod p$ 가 결정한다. 같은 소수 $q$ 의 같은 분해 행동을 두 방식으로 읽은 것이므로 두 답이 일치해야 하고, 그 일치가 상호법칙이다.
 
 두 기호가 서로를 보는 것이 아니라 둘 다 원분체를 보고 있다.
 
@@ -129,7 +129,7 @@ g^2=\sum_{a,b}\Big(\frac{ab}p\Big)\zeta^{a+b}
 =\sum_c\Big(\frac cp\Big)\sum_a\zeta^{a(1+c)}
 $$
 
-$b=ac$ 로 치환하고 $\left(\frac{a^2}p\right)=1$ 을 썼다. 안쪽 합은 $c\equiv-1$ 이면 $p-1$ 이고 아니면 $-1$ 이므로 정리하면 $g^2=\left(\frac{-1}p\right)p=p^*$ 가 나온다.
+$b=ac$ 로 치환하고 $\left(\frac{a^2}p\right)=1$ 을 썼다. 안쪽 합은 $c\equiv-1$ 이면 $p-1$ 이고 아니면 $-1$ 이므로 정리하면 $g^2=\left(\frac{-1}p\right)p=p^\ast$ 가 나온다.
 
 이제 $\mathbb F_q$ 위에서 같은 계산을 한다. 표수 $q$ 의 체에서 Frobenius 사상 $x\mapsto x^q$ 가 덧셈을 보존하므로
 

@@ -64,14 +64,14 @@ $$
 \bar\rho_f=\begin{pmatrix}1&*\cr 0&\omega^{k-1}\end{pmatrix},\qquad *\ne0
 $$
 
-이고, $*$ 가 비자명한 코사이클 $c\in H^1\big(G_{\mathbb Q},\mathbb F_p(\omega^{k-1})\big)$ 를 정의한다.
+이고, $\ast$ 가 비자명한 코사이클 $c\in H^1\big(G_{\mathbb Q},\mathbb F_p(\omega^{k-1})\big)$ 를 정의한다.
 
 ## 불분기성
 
 $c$ 가 정의하는 확대가 $p$ 밖에서 불분기여야 류군의 원소가 된다.
 
 - $\ell\ne p$ 에서는 $f$ 가 레벨 1 이라 $\rho_f$ 가 비분기이고, $c$ 도 비분기다.
-- $\ell=p$ 에서 $\rho_f$ 는 결정군에 대해 $\begin{pmatrix}\omega^{k-1}&*\cr 0&1\end{pmatrix}$ 꼴로 순종이며, 위첨자와 아래첨자의 순서가 대역 쪽과 뒤바뀐다. 두 삼각화를 비교하면 $c$ 의 $p$ 자리 제한이 소멸한다.
+- $\ell=p$ 에서 $\rho_f$ 는 결정군에 대해 $\begin{pmatrix}\omega^{k-1}&\ast\cr 0&1\end{pmatrix}$ 꼴로 순종이며, 위첨자와 아래첨자의 순서가 대역 쪽과 뒤바뀐다. 두 삼각화를 비교하면 $c$ 의 $p$ 자리 제한이 소멸한다.
 
 따라서 $c$ 는 $\mathbb Q(\mu_p)$ 의 $p$ 밖 불분기 확대를 주고, Galois 작용의 고유성분을 추적하면 그 확대의 류가 $A^{(\omega^{1-k})}$ 에 놓인다.
 
@@ -147,13 +147,13 @@ $\Leftarrow$ 가 Herbrand(1932), $\Rightarrow$ 가 Ribet(1976)이다.
 
 ## 지표 $\omega^{1-k}$
 
-$*$ 가 사는 곳이 $H^1(G,\mathbb F_p(\omega^{k-1}))$ 이므로 대응하는 확대에서 $\Delta$ 가 $\omega^{k-1}$ 로 작용한다. Kummer 이론으로 류군 쪽으로 옮기면 쌍대성에서 $\mu_p$ 한 겹이 끼어들어 지표가 $\omega^{2-k}$ 가 아니라 $\omega^{1-k}$ 가 된다.
+$\ast$ 가 사는 곳이 $H^1(G,\mathbb F_p(\omega^{k-1}))$ 이므로 대응하는 확대에서 $\Delta$ 가 $\omega^{k-1}$ 로 작용한다. Kummer 이론으로 류군 쪽으로 옮기면 쌍대성에서 $\mu_p$ 한 겹이 끼어들어 지표가 $\omega^{2-k}$ 가 아니라 $\omega^{1-k}$ 가 된다.
 
 $k$ 가 짝수이므로 $1-k$ 는 홀수이고, 이 정리는 류군의 홀수 성분만 다룬다. Stickelberger 원소도 홀수 성분만 보므로 두 방향이 같은 자리에서 만난다. 짝수 성분이 0 이라는 주장이 Vandiver 추측이다.
 
 ## 무게의 범위
 
-$k=p-1$ 이면 $\omega^{k-1}$ 이 자명해져 표현이 $\begin{pmatrix}1&*\cr 0&1\end{pmatrix}$ 가 되고 위 논법이 무너진다. von Staudt–Clausen 에 의해 $(p-1)\mid k$ 이면 $B_k$ 의 분모가 $p$ 를 포함하므로 $p\mid B_k$ 의 뜻도 달라진다. 가정 $2\le k\le p-3$ 이 [Bernoulli 수](bernoulli-numbers.md)의 $p$ 진 성질을 반영한다.
+$k=p-1$ 이면 $\omega^{k-1}$ 이 자명해져 표현이 $\begin{pmatrix}1&\ast\cr 0&1\end{pmatrix}$ 가 되고 위 논법이 무너진다. von Staudt–Clausen 에 의해 $(p-1)\mid k$ 이면 $B_k$ 의 분모가 $p$ 를 포함하므로 $p\mid B_k$ 의 뜻도 달라진다. 가정 $2\le k\le p-3$ 이 [Bernoulli 수](bernoulli-numbers.md)의 $p$ 진 성질을 반영한다.
 
 ## Mazur–Wiles 로 가는 길
 

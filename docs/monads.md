@@ -54,13 +54,13 @@ graph LR
 
 ## Kleisli 형태의 동치 정의
 
-$\mu$ 대신 확장 연산 $(-)^*$ 를 쓰는 정의가 있다. 대상마다 $\eta_X : X \to T(X)$ 를 주고 각 사상 $f : X \to T(Y)$ 에 $f^\ast : T(X) \to T(Y)$ 를 대응시키되 다음을 요구한다.
+$\mu$ 대신 확장 연산 $(-)^\ast$ 를 쓰는 정의가 있다. 대상마다 $\eta_X : X \to T(X)$ 를 주고 각 사상 $f : X \to T(Y)$ 에 $f^\ast : T(X) \to T(Y)$ 를 대응시키되 다음을 요구한다.
 
 $$
 f^*\circ\eta_X=f,\qquad \eta_X^*=\mathrm{id}_{T(X)},\qquad (g^*\circ f)^*=g^*\circ f^*
 $$
 
-$T(f) = (\eta \circ f)^\ast$ 와 $\mu = (\mathrm{id}\_{T(X)})^\ast$ 를 정의하면 앞의 정의가 복원되고, 반대로 $f^* = \mu \circ T(f)$ 로 가면 이쪽이 복원된다. 프로그래밍 언어의 `return` 과 `bind` 가 $\eta$ 와 $(-)^*$ 다.
+$T(f) = (\eta \circ f)^\ast$ 와 $\mu = (\mathrm{id}\_{T(X)})^\ast$ 를 정의하면 앞의 정의가 복원되고, 반대로 $f^\ast = \mu \circ T(f)$ 로 가면 이쪽이 복원된다. 프로그래밍 언어의 `return` 과 `bind` 가 $\eta$ 와 $(-)^\ast$ 다.
 
 ## T-대수
 
@@ -82,7 +82,7 @@ $F \dashv G$ 에 unit $\eta$ 와 counit $\varepsilon$ 이 있으면 $T = GF$ 와
 
 역방향은 유일하지 않고 분해의 양 끝이 존재한다.
 
-- **Kleisli 범주** $\mathcal C_T$ 는 대상이 $\mathcal C$ 와 같고 $X$ 에서 $Y$ 로 가는 사상이 $\mathcal C$ 의 사상 $X \to T(Y)$ 다. 합성은 $g^* \circ f$ 다. 자유 functor $\mathcal C \to \mathcal C_T$ 와 망각 functor 가 이루는 수반이 $T$ 를 준다.
+- **Kleisli 범주** $\mathcal C_T$ 는 대상이 $\mathcal C$ 와 같고 $X$ 에서 $Y$ 로 가는 사상이 $\mathcal C$ 의 사상 $X \to T(Y)$ 다. 합성은 $g^\ast \circ f$ 다. 자유 functor $\mathcal C \to \mathcal C_T$ 와 망각 functor 가 이루는 수반이 $T$ 를 준다.
 - **Eilenberg–Moore 범주** $\mathcal C^T$ 는 $T$ 대수 범주다. 망각 functor $\mathcal C^T \to \mathcal C$ 는 자유대수 functor 의 right adjoint 이고 이 수반도 $T$ 를 준다.
 
 $T$ 를 주는 모든 수반의 범주에서 Kleisli 는 시작대상, Eilenberg–Moore 는 종단대상이다. Kleisli 범주는 $\mathcal C^T$ 에서 자유대수만 모은 충만한 부분범주와 동치다.

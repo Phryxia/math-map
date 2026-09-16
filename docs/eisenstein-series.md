@@ -123,14 +123,14 @@ $$
 
 ## 실해석적 Eisenstein 급수
 
-$\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 로 두고 $\Gamma_\infty$ 를 $\pm\bigl(\begin{smallmatrix}1&*\cr 0&1\end{smallmatrix}\bigr)$ 들의 군이라 하자.
+$\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 로 두고 $\Gamma_\infty$ 를 $\pm\bigl(\begin{smallmatrix}1&\ast\cr 0&1\end{smallmatrix}\bigr)$ 들의 군이라 하자.
 
 $$
 E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\mathrm{Im}(\gamma z)^s
 =\frac12\sum_{\substack{(c,d)\in\mathbb Z^2\cr \gcd(c,d)=1}}\frac{y^s}{\lvert cz+d\rvert^{2s}}
 $$
 
-는 $\mathrm{Re}(s)>1$ 에서 절대수렴한다. 완비화는 $\xi(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 를 써서 $E^*(z,s)=\xi(2s)E(z,s)$ 다.
+는 $\mathrm{Re}(s)>1$ 에서 절대수렴한다. 완비화는 $\xi(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 를 써서 $E^\ast(z,s)=\xi(2s)E(z,s)$ 다.
 
 $E(z,s)$ 는 $\Gamma$ 불변이고 $\Delta_{\mathbb H}E=s(1-s)E$ 를 만족하며 $L^2$ 에는 속하지 않는다.
 

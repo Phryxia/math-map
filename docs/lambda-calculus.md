@@ -52,7 +52,7 @@ $$
 
 두 함수가 모든 인자에 대해 같은 값을 주면 같다는 원리의 문법적 대응이다.
 
-$\to^*$ 로 여러 단계 축약을, $=_\beta$ 로 $\beta$ -축약으로 생성되는 동치관계를 쓴다.
+$\to^\ast$ 로 여러 단계 축약을, $=_\beta$ 로 $\beta$ -축약으로 생성되는 동치관계를 쓴다.
 
 ## Church 수와 산술
 
@@ -104,7 +104,7 @@ $$
 
 ## Church–Rosser 정리
 
-**정리 (합류성, confluence).** $M \to^* N_1$ 이고 $M \to^* N_2$ 이면, 어떤 $P$ 가 존재하여 $N_1 \to^* P$ 이고 $N_2 \to^* P$ 다. $\beta\eta$ 축약에 대해서도 성립한다.
+**정리 (합류성, confluence).** $M \to^\ast N_1$ 이고 $M \to^\ast N_2$ 이면, 어떤 $P$ 가 존재하여 $N_1 \to^\ast P$ 이고 $N_2 \to^\ast P$ 다. $\beta\eta$ 축약에 대해서도 성립한다.
 
 ```mermaid
 flowchart TD

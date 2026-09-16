@@ -48,7 +48,7 @@ graph LR
 
 ## 교대 형식
 
-벡터공간 $V$ 에 대해 $\Lambda^kV^*$ 는 $k$ 개의 인수를 받는 교대 다중선형 함수들의 공간이다. $\dim V=n$ 이면
+벡터공간 $V$ 에 대해 $\Lambda^kV^\ast$ 는 $k$ 개의 인수를 받는 교대 다중선형 함수들의 공간이다. $\dim V=n$ 이면
 
 $$
 \dim\Lambda^kV^*=\binom nk
@@ -58,7 +58,7 @@ $$
 
 ## 미분형식
 
-다양체 $M$ 위의 $k$ **형식**은 각 점 $p$ 에서 $\Lambda^kT_p^*M$ 의 원소를 매끄럽게 배정한 것이며 국소 좌표에서 다음 꼴이다.
+다양체 $M$ 위의 $k$ **형식**은 각 점 $p$ 에서 $\Lambda^kT_p^\ast M$ 의 원소를 매끄럽게 배정한 것이며 국소 좌표에서 다음 꼴이다.
 
 $$
 \omega=\sum_{i_1<\cdots<i_k}f_{i_1\cdots i_k}\thinspace dx^{i_1}\wedge\cdots\wedge dx^{i_k}

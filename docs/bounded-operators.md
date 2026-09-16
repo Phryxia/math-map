@@ -48,20 +48,20 @@ $$
 
 ## 수반작용소
 
-[Riesz 표현 정리](hilbert-spaces.md)에서 각 $T\in\mathcal B(H)$ 에 대해 다음을 만족하는 유일한 $T^*\in\mathcal B(H)$ 가 존재한다.
+[Riesz 표현 정리](hilbert-spaces.md)에서 각 $T\in\mathcal B(H)$ 에 대해 다음을 만족하는 유일한 $T^\ast\in\mathcal B(H)$ 가 존재한다.
 
 $$
 \langle Tx,y\rangle=\langle x,T^*y\rangle\qquad\forall x,y\in H
 $$
 
-$\lVert T^*\rVert=\lVert T\rVert$ 이고 $\lVert T^\ast T\rVert=\lVert T\rVert^2$ 다. 마지막 등식이 $C^\ast$ 대수를 정의하는 성질이다.
+$\lVert T^\ast\rVert=\lVert T\rVert$ 이고 $\lVert T^\ast T\rVert=\lVert T\rVert^2$ 다. 마지막 등식이 $C^\ast$ 대수를 정의하는 성질이다.
 
 | 부류 | 조건 | 유한차원 대응 |
 |---|---|---|
-| 자기수반 | $T=T^*$ | 대칭/에르미트 행렬 |
+| 자기수반 | $T=T^\ast$ | 대칭/에르미트 행렬 |
 | 유니터리 | $T^\ast T=TT^\ast=I$ | 직교/유니터리 행렬 |
 | 정규 | $T^\ast T=TT^\ast$ | 정규행렬 |
-| 사영 | $T=T^*=T^2$ | 직교사영 |
+| 사영 | $T=T^\ast=T^2$ | 직교사영 |
 | 콤팩트 | 유계집합의 상이 상대적으로 콤팩트 | 모든 행렬 |
 
 ## 스펙트럼
@@ -92,7 +92,7 @@ $$
 
 ## 자기수반 작용소의 실 스펙트럼
 
-$T=T^*$ 이면 $\sigma(T)\subset\mathbb R$ 이고, 나아가 $\sigma(T)\subset[m,M]$ 이다. 여기서 $m=\inf_{\lVert x\rVert=1}\langle Tx,x\rangle$ , $M=\sup_{\lVert x\rVert=1}\langle Tx,x\rangle$ 이며 양 끝점이 모두 스펙트럼에 속한다.
+$T=T^\ast$ 이면 $\sigma(T)\subset\mathbb R$ 이고, 나아가 $\sigma(T)\subset[m,M]$ 이다. 여기서 $m=\inf_{\lVert x\rVert=1}\langle Tx,x\rangle$ , $M=\sup_{\lVert x\rVert=1}\langle Tx,x\rangle$ 이며 양 끝점이 모두 스펙트럼에 속한다.
 
 *증명.* $\lambda=a+bi$ 에 $b\ne0$ 이면 $\lVert(T-\lambda)x\rVert\ge|b|\lVert x\rVert$ 가 나오고, 이것이 단사성과 치역의 닫힘을 준다.
 

@@ -92,7 +92,7 @@ $$
 
 이다. 거꾸로 계수를 몇십 개 계산해 $a_n/(n!\thinspace A^{-n})$ 이 안정되는 $A$ 를 찾으면 보이지 않는 안장점의 작용을 수치로 읽는다.
 
-Stirling 급수에서는 Borel 변환의 특이점이 $\zeta = 2\pi i k$ 에 있어 $\lvert A \rvert = 2\pi$ 이고, 여기서 [Euler–Maclaurin](euler-maclaurin.md) 의 최적 절단 $K^* \approx \pi x$ 와 최소 오차 $e^{-2\pi x}$ 가 따라 나온다.
+Stirling 급수에서는 Borel 변환의 특이점이 $\zeta = 2\pi i k$ 에 있어 $\lvert A \rvert = 2\pi$ 이고, 여기서 [Euler–Maclaurin](euler-maclaurin.md) 의 최적 절단 $K^\ast \approx \pi x$ 와 최소 오차 $e^{-2\pi x}$ 가 따라 나온다.
 
 ## 최적 절단과 그 너머
 

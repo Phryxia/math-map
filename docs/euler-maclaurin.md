@@ -210,7 +210,7 @@ for K in range(1, 20):              # N=4 고정, K 를 늘리면 최소를 찍�
 # 1 3.1e-05 ... 11 3.9e-11  12 3.8e-11  13 4.2e-11 ... 19 1.1e-09
 ```
 
-오차는 $K=12$ 근처에서 최소이고, 이론값 $k^{*}\approx\pi N=12.6$ 과 최소 오차 $e^{-8\pi}$ 규모가 이에 맞는다.
+오차는 $K=12$ 근처에서 최소이고, 이론값 $k^{\ast}\approx\pi N=12.6$ 과 최소 오차 $e^{-8\pi}$ 규모가 이에 맞는다.
 
 ## Stirling 급수
 
@@ -221,7 +221,7 @@ $$
 +\sum_{k=1}^{K}\frac{B_{2k}}{2k(2k-1)\thinspace x^{2k-1}}+R_K
 $$
 
-$\tfrac12\log2\pi$ 는 공식이 주지 않고 Wallis 곱이나 [유수 계산](residue-theorem.md)으로 따로 정한다. 최적 절단은 $k^{*}\approx\pi x$ 이고 최소 오차는 $e^{-2\pi x}$ 이며, $x$ 가 작으면 $\Gamma(x+m)$ 으로 올린 뒤 되돌리는 식으로 $x$ 를 키워 쓴다.
+$\tfrac12\log2\pi$ 는 공식이 주지 않고 Wallis 곱이나 [유수 계산](residue-theorem.md)으로 따로 정한다. 최적 절단은 $k^{\ast}\approx\pi x$ 이고 최소 오차는 $e^{-2\pi x}$ 이며, $x$ 가 작으면 $\Gamma(x+m)$ 으로 올린 뒤 되돌리는 식으로 $x$ 를 키워 쓴다.
 
 ## Euler 상수
 

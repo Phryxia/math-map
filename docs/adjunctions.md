@@ -232,7 +232,7 @@ Unit $\eta_X : X \to (X \times A)^A$ 는 $x$ 를 $a \mapsto (x, a)$ 로 보내�
 
 환 준동형 $f:R\to S$ 는 두 방향의 functor를 만든다.
 
-- 제한(restriction) $f^*$ 는 $S$ 가군을 $R$ 가군으로 보낸다. 스칼라 곱을 $f$ 로 끌어온다.
+- 제한(restriction) $f^\ast$ 는 $S$ 가군을 $R$ 가군으로 보낸다. 스칼라 곱을 $f$ 로 끌어온다.
 - 확장(extension) $f_! = S \otimes_R -$ 는 $R$ 가군을 $S$ 가군으로 보낸다.
 
 이때
@@ -241,7 +241,7 @@ $$
 \mathrm{Hom}_{S}(S \otimes_R M, N) \cong \mathrm{Hom}_{R}(M, f^{*}N)
 $$
 
-이 성립하여 $S \otimes_R - \dashv f^*$ 다. 여기서 나오는 일반형이 tensor-hom adjunction
+이 성립하여 $S \otimes_R - \dashv f^\ast$ 다. 여기서 나오는 일반형이 tensor-hom adjunction
 
 $$
 \mathrm{Hom}_{S}(M \otimes_R N, P) \cong \mathrm{Hom}_{R}(M, \mathrm{Hom}_{S}(N, P))

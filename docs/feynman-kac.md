@@ -115,7 +115,7 @@ $\varphi$ 를 지시함수로 두면 $u(t,x) = \Pr(X_T \in A \mid X_t = x)$ 이�
 | 대상 | 방정식 | 변수 |
 |---|---|---|
 | 기댓값 $u(t,x)$ | $\partial_tu+\mathcal Lu=0$ | 출발점, 시간을 거슬러 |
-| 밀도 $p(t,y)$ | $\partial_tp=\mathcal L^{*}p$ | 도착점, 시간 순으로 |
+| 밀도 $p(t,y)$ | $\partial_tp=\mathcal L^{\ast}p$ | 도착점, 시간 순으로 |
 
 ## 확률적 표현의 귀결
 

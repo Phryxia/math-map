@@ -114,7 +114,7 @@ $$
 
 이다. 한편 $\mathrm{Sel}\_{L}\subset\mathrm{Sel}\_{L'}$ 의 지표는 최대 1 이다. 조건을 넓히면 Selmer 가 1 커지거나 쌍대 Selmer 가 1 작아지거나 둘 중 하나가 일어나고, 어느 쪽인지는 국소 계산이 정한다. Euler 계 논법과 Taylor–Wiles 논법이 모두 이 이분법을 쓴다.
 
-| 조작 | $\mathrm{Sel}_L$ | $\mathrm{Sel}_{L^{*}}$ |
+| 조작 | $\mathrm{Sel}_L$ | $\mathrm{Sel}_{L^{\ast}}$ |
 |---|---|---|
 | $\ell$ 에서 조건 완화(relaxed) | $\le+1$ | $\ge-1$ |
 | $\ell$ 에서 조건 강화(strict) | $\ge-1$ | $\le+1$ |
@@ -144,7 +144,7 @@ flowchart LR
 
 ## 국소 Tate 쌍대성
 
-$K_v$ 를 국소체, $M$ 을 $\char35{}M$ 이 $\mathrm{char}$ 과 서로소인 유한 $G_{K_v}$ 가군, $M^{*}=\mathrm{Hom}(M,\mu_{\char35{}M})$ 이라 하자.
+$K_v$ 를 국소체, $M$ 을 $\char35{}M$ 이 $\mathrm{char}$ 과 서로소인 유한 $G_{K_v}$ 가군, $M^{\ast}=\mathrm{Hom}(M,\mu_{\char35{}M})$ 이라 하자.
 
 **정리(국소 Tate 쌍대성).** 컵곱과 불변량 사상
 
@@ -220,7 +220,7 @@ $$
 
 ## 대역 상호법칙
 
-**정리.** $a\in H^1(K,M)$ 이고 $b\in H^1(K,M^{*})$ 이면
+**정리.** $a\in H^1(K,M)$ 이고 $b\in H^1(K,M^{\ast})$ 이면
 
 $$
 \sum_v\mathrm{inv}_v\big(\mathrm{loc}_v(a)\cup\mathrm{loc}_v(b)\big)=0
@@ -308,7 +308,7 @@ $$
 \dim H^1_{\mathcal L}-\dim H^1_{\mathcal L^{*}}=\text{국소 항의 합}
 $$
 
-이 되고 오른쪽은 국소 계산으로 얻는다. Taylor–Wiles 는 $q\equiv1\ (\mathrm{mod}\ p^{n})$ 인 보조 소수를 $r=\dim H^1_{\mathcal L^{*}}$ 개 골라 그 자리들에서 조건을 완화한다. Chebotarev 로 각 소수가 쌍대 Selmer 의 원소 하나씩을 보도록 고르면 위 표의 두 번째 행에 따라 쌍대 Selmer 가 한 칸씩 줄고, $r$ 번 반복하면 $0$ 이 된다. 접공간의 차원이 국소 항만으로 확정되어 패칭에 필요한 균일한 표현이 나온다.
+이 되고 오른쪽은 국소 계산으로 얻는다. Taylor–Wiles 는 $q\equiv1\ (\mathrm{mod}\ p^{n})$ 인 보조 소수를 $r=\dim H^1_{\mathcal L^{\ast}}$ 개 골라 그 자리들에서 조건을 완화한다. Chebotarev 로 각 소수가 쌍대 Selmer 의 원소 하나씩을 보도록 고르면 위 표의 두 번째 행에 따라 쌍대 Selmer 가 한 칸씩 줄고, $r$ 번 반복하면 $0$ 이 된다. 접공간의 차원이 국소 항만으로 확정되어 패칭에 필요한 균일한 표현이 나온다.
 
 ## Euler 계 논법의 뼈대
 

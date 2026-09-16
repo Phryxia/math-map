@@ -58,7 +58,7 @@ $$
 
 ## 행렬로 보기
 
-$\omega = e^{-2\pi i/N}$ 이라 하면 $F[k][t] = \omega^{kt}$ 인 $N \times N$ 행렬이고, $F^{-1} = F^*/N$ 이다. $F/\sqrt{N}$ 이 유니터리이므로 DFT 는 $\mathbb{C}^N$ 의 정규직교 기저 변환이다.
+$\omega = e^{-2\pi i/N}$ 이라 하면 $F[k][t] = \omega^{kt}$ 인 $N \times N$ 행렬이고, $F^{-1} = F^\ast/N$ 이다. $F/\sqrt{N}$ 이 유니터리이므로 DFT 는 $\mathbb{C}^N$ 의 정규직교 기저 변환이다.
 
 # 성질
 
@@ -74,7 +74,7 @@ $N=4$ 이고 $x=(1,0,-1,0)$ 이면 결과는 $(0,2,0,2)$ 다. 실수 진동 하�
 
 ## 합성곱 정리
 
-순환 합성곱을 $(x * y)[n] = \sum_m x[m]\thinspace y[(n-m) \bmod N]$ 이라 하면
+순환 합성곱을 $(x \ast y)[n] = \sum_m x[m]\thinspace y[(n-m) \bmod N]$ 이라 하면
 
 $$
 \mathrm{DFT}(x*y)[k]=X[k]\cdot Y[k]

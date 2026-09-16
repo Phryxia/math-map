@@ -29,7 +29,7 @@ Reidemeister 비틀림은 그 정보를 [행렬식](determinants.md)으로 꺼�
 
 호몰로지가 차원 계산에 해당하고 비틀림이 이 행렬식에 해당한다.
 
-비순환 복합체 $C_*$ 에서는 $\ker\partial_i=\mathrm{im}\partial_{i+1}$ 이므로 각 $C_i$ 가 두 조각으로 쪼개진다. 쪼갠 뒤 기저를 비교해 나온 행렬식들을 교대로 곱한 것이 비틀림이다.
+비순환 복합체 $C_\ast$ 에서는 $\ker\partial_i=\mathrm{im}\partial_{i+1}$ 이므로 각 $C_i$ 가 두 조각으로 쪼개진다. 쪼갠 뒤 기저를 비교해 나온 행렬식들을 교대로 곱한 것이 비틀림이다.
 
 $$
 \tau(C_*)=\prod_i\big[\det(\cdots)\big]^{(-1)^i}
@@ -71,9 +71,9 @@ $$
 
 ## 비순환 복합체의 비틀림
 
-$C_*$ 를 기저가 주어진 유한 복합체, $H_\ast(C)=0$ 이라 하자. 각 $i$ 에서 $B_i=\mathrm{im}\partial_{i+1}=\ker\partial_i$ 의 기저 $b_i$ 를 고른다. 비순환성에서 $b_i$ 를 $\partial$ 로 들어 올린 것과 $b_{i-1}$ 을 합치면 $C_i$ 의 기저가 되고, 그것을 주어진 기저 $c_i$ 와 비교한 변환행렬의 행렬식을 $[\thinspace\widetilde b_i b_{i-1}/c_i\thinspace]$ 라 쓴다.
+$C_\ast$ 를 기저가 주어진 유한 복합체, $H_\ast(C)=0$ 이라 하자. 각 $i$ 에서 $B_i=\mathrm{im}\partial_{i+1}=\ker\partial_i$ 의 기저 $b_i$ 를 고른다. 비순환성에서 $b_i$ 를 $\partial$ 로 들어 올린 것과 $b_{i-1}$ 을 합치면 $C_i$ 의 기저가 되고, 그것을 주어진 기저 $c_i$ 와 비교한 변환행렬의 행렬식을 $[\thinspace\widetilde b_i b_{i-1}/c_i\thinspace]$ 라 쓴다.
 
-> **정의.** $\tau(C_*)=\displaystyle\prod_i\big[\widetilde b_ib_{i-1}/c_i\big]^{(-1)^{i+1}}$
+> **정의.** $\tau(C_\ast)=\displaystyle\prod_i\big[\widetilde b_ib_{i-1}/c_i\big]^{(-1)^{i+1}}$
 
 $b_i$ 의 선택에 의존하지 않는다는 것은 교대곱의 상쇄에서 나온다.
 
@@ -93,7 +93,7 @@ $$
 
 ## 렌즈 공간
 
-$L(p,q)$ 의 표준 CW 구조에서 계산이 끝까지 된다. $\pi_1=\mathbb Z/p$ 의 생성원을 $\zeta=e^{2\pi ij/p}$ 로 보내는 1 차원 표현 $\rho_j$ 를 쓰면, $qq^\ast\equiv1\pmod p$ 인 $q^*$ 에 대해
+$L(p,q)$ 의 표준 CW 구조에서 계산이 끝까지 된다. $\pi_1=\mathbb Z/p$ 의 생성원을 $\zeta=e^{2\pi ij/p}$ 로 보내는 1 차원 표현 $\rho_j$ 를 쓰면, $qq^\ast\equiv1\pmod p$ 인 $q^\ast$ 에 대해
 
 $$
 \tau_{\rho_j}(L(p,q))=(\zeta^j-1)(\zeta^{jq^*}-1)

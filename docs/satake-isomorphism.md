@@ -76,7 +76,7 @@ $$
 
 ## 대칭 다항식과의 대응
 
-Cartan 분해는 $\mathcal H(G,K)$ 의 기저가 **지배적 쌍대지표** $\lambda\in X_*(T)^+$ 로 매겨진다고 말한다. $\mathrm{GL}_n$ 이면 $\lambda_1\ge\cdots\ge\lambda_n$ 인 정수열이다.
+Cartan 분해는 $\mathcal H(G,K)$ 의 기저가 **지배적 쌍대지표** $\lambda\in X_\ast(T)^+$ 로 매겨진다고 말한다. $\mathrm{GL}_n$ 이면 $\lambda_1\ge\cdots\ge\lambda_n$ 인 정수열이다.
 
 한편 $\widehat G=\mathrm{GL}\_n(\mathbb C)$ 의 기약표현도 최고무게 $\lambda_1\ge\cdots\ge\lambda_n$ 로 매겨진다. 표현환 $R(\widehat G)$ 의 기저가 그 지표 $\chi_\lambda$ 들이다.
 
@@ -96,7 +96,7 @@ $$
 \mathcal S(f)(t)=\delta_B(t)^{1/2}\int_N f(tn)\thinspace dn
 $$
 
-로 두면 $\mathcal S(f)$ 는 $T/T(\mathbb Z_p)\cong X_*(T)$ 위의 함수, 곧 Laurent 다항식이다. 여기서 $\delta_B$ 는 모듈러 지표다.
+로 두면 $\mathcal S(f)$ 는 $T/T(\mathbb Z_p)\cong X_\ast(T)$ 위의 함수, 곧 Laurent 다항식이다. 여기서 $\delta_B$ 는 모듈러 지표다.
 
 $\delta_B^{1/2}$ 인자가 없으면 $\mathcal S(f)$ 가 Weyl 군 $W$ 불변이 아니다. 반쪽 지표를 곱해야 $N$ 방향 적분에서 생긴 비대칭이 상쇄된다. 이 인자는 유도표현 $\mathrm{Ind}_B^G\chi$ 의 정규화와 같고, $W$ 불변성은 $\mathrm{Ind}_B^G\chi\cong\mathrm{Ind}_B^G(w\chi)$ 에 대응한다.
 
@@ -172,7 +172,7 @@ $$
 \chi_\pi:\mathcal H(G,K)\to\mathbb C
 $$
 
-이 정해진다. Satake 동형으로 옮기면 $\chi_\pi$ 는 $\mathbb C[X^*(\widehat T)]^W$ 의 $\mathbb C$ 점, 곧 $\widehat T(\mathbb C)/W$ 의 점이다. $\widehat T/W$ 는 $\widehat G$ 의 반단순 켤레류 전체와 같으므로, 다음을 얻는다.
+이 정해진다. Satake 동형으로 옮기면 $\chi_\pi$ 는 $\mathbb C[X^\ast(\widehat T)]^W$ 의 $\mathbb C$ 점, 곧 $\widehat T(\mathbb C)/W$ 의 점이다. $\widehat T/W$ 는 $\widehat G$ 의 반단순 켤레류 전체와 같으므로, 다음을 얻는다.
 
 > 비분기 기약표현 $\pi$ $\thickspace\longleftrightarrow\thickspace$ $\widehat G(\mathbb C)$ 의 반단순 켤레류 $A_\pi$
 
@@ -281,7 +281,7 @@ for p in (2, 3, 5):
 #      T(p^2)*T(p^2) = {(0, 4): 1, (1, 3): 4, (2, 2): 30}
 ```
 
-$(1,1)$ 의 계수가 $p+1$ 이고 $T(p)*T(p^m)$ 의 $(1,m)$ 계수가 $p$ 다. $\mathcal S$ 에는 반정수 거듭제곱 $p^{a/2}$ 가 있으므로 임의의 점에서 수치로 평가한다.
+$(1,1)$ 의 계수가 $p+1$ 이고 $T(p)\ast T(p^m)$ 의 $(1,m)$ 계수가 $p$ 다. $\mathcal S$ 에는 반정수 거듭제곱 $p^{a/2}$ 가 있으므로 임의의 점에서 수치로 평가한다.
 
 ```python
 import random

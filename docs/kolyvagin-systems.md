@@ -57,7 +57,7 @@ $\chi=0$ 이면 자유도가 없어 계가 $0$ 뿐이고 $\chi\ge2$ 이면 계�
 
 # 정의
 
-이하 $R$ 은 $\mathbb Z/p^k$ 또는 $\mathbb Z_p$ 이고 $T$ 는 $R$ 위 자유이고 $G_K$ 가 연속으로 작용하는 가군이다. $T^*=\mathrm{Hom}(T,\mu_{p^k})$ 를 Cartier 쌍대라 한다.
+이하 $R$ 은 $\mathbb Z/p^k$ 또는 $\mathbb Z_p$ 이고 $T$ 는 $R$ 위 자유이고 $G_K$ 가 연속으로 작용하는 가군이다. $T^\ast=\mathrm{Hom}(T,\mu_{p^k})$ 를 Cartier 쌍대라 한다.
 
 ## Selmer 구조
 
@@ -72,13 +72,13 @@ $$
 H^1_{\mathcal F}(K,T)=\ker\Big(H^1(K_\Sigma/K,T)\longrightarrow\bigoplus_{v\in\Sigma}\frac{H^1(K_v,T)}{H^1_{\mathcal F}(K_v,T)}\Big)
 $$
 
-이다. **쌍대 구조** $\mathcal F^*$ 는 각 자리에서 국소 Tate 쌍대성의 소멸자로 정의한다.
+이다. **쌍대 구조** $\mathcal F^\ast$ 는 각 자리에서 국소 Tate 쌍대성의 소멸자로 정의한다.
 
 $$
 H^1_{\mathcal F^*}(K_v,T^*):=H^1_{\mathcal F}(K_v,T)^{\perp}
 $$
 
-$\mathcal F=\mathcal F^*$ 이면 **자기쌍대**라 한다. 타원곡선의 $T=E[p^k]$ 에 Weil 쌍이 주는 구조가 대표적이다.
+$\mathcal F=\mathcal F^\ast$ 이면 **자기쌍대**라 한다. 타원곡선의 $T=E[p^k]$ 에 Weil 쌍이 주는 구조가 대표적이다.
 
 ## 세 가지 변형
 
@@ -176,7 +176,7 @@ $$
 
 ## 자기쌍대 구조의 핵심계수
 
-$\mathcal F=\mathcal F^*$ 이고 $T\cong T^\ast$ 이면 두 군이 같으므로 $\chi=0$ 이다. $K=\mathbb Q$ , $T=E[p]$ , $p\ge5$ 이고 $E[p]$ 가 기약이며 $E$ 가 $p$ 에서 좋은 환원을 가질 때 자리별 기여는 다음과 같다.
+$\mathcal F=\mathcal F^\ast$ 이고 $T\cong T^\ast$ 이면 두 군이 같으므로 $\chi=0$ 이다. $K=\mathbb Q$ , $T=E[p]$ , $p\ge5$ 이고 $E[p]$ 가 기약이며 $E$ 가 $p$ 에서 좋은 환원을 가질 때 자리별 기여는 다음과 같다.
 
 | 자리 $v$ | $\dim H^1_{\mathcal F}(\mathbb Q_v,T)$ | $\dim H^0(\mathbb Q_v,T)$ | 기여 |
 | --- | --- | --- | --- |

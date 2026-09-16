@@ -172,7 +172,7 @@ $$
 \iff \Big(\frac qp\Big)=1
 $$
 
-이고, $\left(\frac{p^*}q\right)=\left(\frac{-1}q\right)^{(p-1)/2}\left(\frac pq\right)$ 을 풀면 Gauss 의 공식이 된다. 두 Legendre 기호는 같은 원분체의 Galois 군을 서로 다른 방향에서 본 것이다.
+이고, $\left(\frac{p^\ast}q\right)=\left(\frac{-1}q\right)^{(p-1)/2}\left(\frac pq\right)$ 을 풀면 Gauss 의 공식이 된다. 두 Legendre 기호는 같은 원분체의 Galois 군을 서로 다른 방향에서 본 것이다.
 
 ## $p=x^2+ny^2$ 의 판정
 

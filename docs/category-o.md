@@ -78,7 +78,7 @@ $\mathrm{ch}\thinspace L(0)=\mathrm{ch}\thinspace M(0)-\mathrm{ch}\thinspace M(-
 $\mathfrak g$ 를 복소 반단순 Lie 대수, $\mathfrak h\subset\mathfrak b\subset\mathfrak g$ 를 Cartan 과 Borel 이라 하자. $\mathcal O$ 의 대상은 다음 셋을 만족하는 $U(\mathfrak g)$ 가군 $M$ 이다.
 
 1. $M$ 은 유한생성이다.
-2. $M=\bigoplus_{\mu\in\mathfrak h^*}M_\mu$ 로 $\mathfrak h$ 무게 분해가 되고 각 $M_\mu$ 는 유한차원이다.
+2. $M=\bigoplus_{\mu\in\mathfrak h^\ast}M_\mu$ 로 $\mathfrak h$ 무게 분해가 되고 각 $M_\mu$ 는 유한차원이다.
 3. 모든 $v\in M$ 에 대해 $U(\mathfrak n^+)v$ 가 유한차원이다.
 
 $\mathcal O$ 는 아벨 범주이고 부분가군과 몫가군과 유한 직합에 닫혀 있으며 모든 대상이 유한 길이다.
@@ -90,7 +90,7 @@ M(\lambda)=U(\mathfrak g)\otimes_{U(\mathfrak b)}\mathbb C_\lambda,\qquad
 L(\lambda)=M(\lambda)/\mathrm{rad}\thinspace M(\lambda)
 $$
 
-$\lbrace L(\lambda)\rbrace_{\lambda\in\mathfrak h^*}$ 가 $\mathcal O$ 의 단순 대상 전부이고 서로 동형이 아니다. $L(\lambda)$ 가 유한차원일 필요충분조건은 $\lambda$ 가 지배적 정수무게인 것이다.
+$\lbrace L(\lambda)\rbrace_{\lambda\in\mathfrak h^\ast}$ 가 $\mathcal O$ 의 단순 대상 전부이고 서로 동형이 아니다. $L(\lambda)$ 가 유한차원일 필요충분조건은 $\lambda$ 가 지배적 정수무게인 것이다.
 
 ## 블록 분해
 

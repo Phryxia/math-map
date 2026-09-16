@@ -31,7 +31,7 @@ $W^\circ$ 는 $\mathbb Z^n$ 위의 함수 하나다. $\psi_N$ 의 비퇴화성�
 
 | | 왼쪽 ($p$ 진군) | 오른쪽 (복소 Lie 군) |
 |---|---|---|
-| 매개변수의 집합 | $A/(A\cap K)=X_*(T)$ 의 지배적 부분 | $\widehat G=\mathrm{GL}_n(\mathbb C)$ 의 최고무게 $X^*(\widehat T)^+$ |
+| 매개변수의 집합 | $A/(A\cap K)=X_\ast(T)$ 의 지배적 부분 | $\widehat G=\mathrm{GL}_n(\mathbb C)$ 의 최고무게 $X^\ast(\widehat T)^+$ |
 | 변수 | Satake 매개변수 $\alpha_i$ | 쌍대 토러스의 좌표 |
 | 값 | $W^\circ(\varpi^\lambda)$ | 기약지표 $s_\lambda(\alpha)$ |
 

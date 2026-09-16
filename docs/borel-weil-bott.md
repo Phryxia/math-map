@@ -82,7 +82,7 @@ $G=\mathrm{SL}_2$ 면 $G/B=\mathbb P^1$ 이고, $G=\mathrm{SL}_3$ 면 $G/B$ 는 
 
 ## 직선다발 $\mathcal L_\lambda$
 
-무게 $\lambda\in X^*(T)$ 는 $B\to T\to\mathbb C^\times$ 로 확장되어 $B$ 의 일차원 표현 $\mathbb C_\lambda$ 를 준다. 연관다발
+무게 $\lambda\in X^\ast(T)$ 는 $B\to T\to\mathbb C^\times$ 로 확장되어 $B$ 의 일차원 표현 $\mathbb C_\lambda$ 를 준다. 연관다발
 
 $$
 \mathcal L_\lambda=G\times^B\mathbb C_{-\lambda}=(G\times\mathbb C)/\lbrace(g,z)\sim(gb,\lambda(b)z)\rbrace
@@ -122,10 +122,10 @@ $d_i$ 는 $W$ 의 기본 불변식 차수다. $\mathrm{SL}_n$ 에서 $W=S_n$ 이
 
 ## 정리 (Borel–Weil–Bott)
 
-$\lambda\in X^*(T)$ 에 대해 다음이 성립한다.
+$\lambda\in X^\ast(T)$ 에 대해 다음이 성립한다.
 
 1. $\langle\lambda+\rho,\alpha^\vee\rangle=0$ 인 양근 $\alpha$ 가 있으면 모든 $i$ 에 대해 $H^i(G/B,\mathcal L_\lambda)=0$ 이다.
-2. 아니면 $w(\lambda+\rho)$ 가 지배적 정칙이 되는 $w\in W$ 가 유일하게 존재하고, $H^{\ell(w)}(G/B,\mathcal L_\lambda)\cong V_{w\cdot\lambda}^{*}$ 이며 나머지 차수는 $0$ 이다.
+2. 아니면 $w(\lambda+\rho)$ 가 지배적 정칙이 되는 $w\in W$ 가 유일하게 존재하고, $H^{\ell(w)}(G/B,\mathcal L_\lambda)\cong V_{w\cdot\lambda}^{\ast}$ 이며 나머지 차수는 $0$ 이다.
 
 *증명.* $\mathrm{SL}\_2$ 로 환원한다. 단순반사 $s_\alpha$ 에 대응하는 포물형 부분군 $P_\alpha$ 를 잡으면 $G/B\to G/P_\alpha$ 가 $\mathbb P^1$ 다발이고, Leray 스펙트럼열을 쓰면 $\mathbb P^1$ 위 $\mathcal O(n)$ 의 코호몰로지만 알면 된다. $n\ge0$ 이면 $H^0$ 만, $n\le-2$ 이면 $H^1$ 만, $n=-1$ 이면 둘 다 $0$ 이다. 마지막 경우가 벽 위 조건의 국소 판본이고, 다발을 하나씩 통과할 때마다 차수가 하나씩 밀린다.
 

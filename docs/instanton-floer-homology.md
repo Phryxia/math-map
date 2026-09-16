@@ -95,7 +95,7 @@ $\partial^2=0$ 은 $\mu=2$ 인 1 차원 모듈라이의 끝을 세어 나온다.
 
 ## Euler 지표와 Casson 불변량
 
-> **정리 (Taubes 1990).** $\displaystyle\chi\big(HF_*(\Sigma)\big)=\sum_{i\in\mathbb Z/8}(-1)^i\mathrm{rank}HF_i(\Sigma)=2\thinspace\lambda(\Sigma)$
+> **정리 (Taubes 1990).** $\displaystyle\chi\big(HF_\ast(\Sigma)\big)=\sum_{i\in\mathbb Z/8}(-1)^i\mathrm{rank}HF_i(\Sigma)=2\thinspace\lambda(\Sigma)$
 
 8 이 짝수이므로 $\mathbb Z/8$ 등급에서 $(-1)^i$ 가 잘 정의된다. 우변의 2 는 Casson 불변량의 관례적 정규화에서 온다. 호몰로지를 만들 때 쓴 부호, 방향, 섭동이 Casson 이 세던 부호와 맞아떨어진다.
 
@@ -130,7 +130,7 @@ Casson 불변량이 0 이어도 Floer 군은 0 이 아닐 수 있고, 그 차이
 
 | 사실 | 따라 나오는 것 |
 |---|---|
-| $HF_*(\Sigma)\ne0$ | $\Sigma$ 는 $S^3$ 와 호몰로지 코보디즘이 아니다 |
+| $HF_\ast(\Sigma)\ne0$ | $\Sigma$ 는 $S^3$ 와 호몰로지 코보디즘이 아니다 |
 | 무한히 많은 $\Sigma$ 에서 $HF$ 가 서로 다름 | 호몰로지 코보디즘 군 $\Theta^3_{\mathbb Z}$ 가 무한 생성 |
 | 코보디즘 사상이 자명하지 않음 | 4 다양체의 교차형식에 제약 |
 

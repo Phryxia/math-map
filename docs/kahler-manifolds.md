@@ -101,7 +101,7 @@ $h^{p,q}$ 를 격자 모양으로 배열한 것이 Hodge 다이아몬드다.
 
 ## Kähler 항등식
 
-$L\alpha=\omega\wedge\alpha$ 와 그 딸림 $\Lambda=L^*$ 를 쓰면 다음이 성립한다.
+$L\alpha=\omega\wedge\alpha$ 와 그 딸림 $\Lambda=L^\ast$ 를 쓰면 다음이 성립한다.
 
 $$
 [\Lambda,\bar\partial]=-i\partial^*,\qquad [\Lambda,\partial]=i\bar\partial^*

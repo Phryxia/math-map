@@ -30,13 +30,13 @@ $$
 \widehat{f_t}(y)=t^{-n/2}e^{-\pi|y|^2/t}=t^{-n/2}f_{1/t}(y)
 $$
 
-격자 위의 Poisson 합공식 $\sum_{x\in L}f(x)=\frac1{\mathrm{vol}(L)}\sum_{y\in L^*}\hat f(y)$ 에 넣으면 $t$ 와 $1/t$ 가 바뀐다.
+격자 위의 Poisson 합공식 $\sum_{x\in L}f(x)=\frac1{\mathrm{vol}(L)}\sum_{y\in L^\ast}\hat f(y)$ 에 넣으면 $t$ 와 $1/t$ 가 바뀐다.
 
 $$
 \Theta_L(-1/\tau)=\frac{(\tau/i)^{n/2}}{\mathrm{vol}(L)}\thinspace\Theta_{L^*}(\tau)
 $$
 
-$L$ 이 자기쌍대 곧 유니모듈러 $L^*=L$ 이면 오른쪽이 다시 $\Theta_L$ 이라 이 식이 무게 $n/2$ 의 모듈러 변환이 된다. 그리고 $L$ 이 짝수 격자이면 모든 $|x|^2$ 가 짝수라 $q$ 의 지수가 정수이고, $\Theta_L(\tau+1)=\Theta_L(\tau)$ 다. 두 변환이 $\mathrm{SL}_2(\mathbb Z)$ 를 생성하므로 $\Theta_L$ 이 모듈러 형식이다.
+$L$ 이 자기쌍대 곧 유니모듈러 $L^\ast=L$ 이면 오른쪽이 다시 $\Theta_L$ 이라 이 식이 무게 $n/2$ 의 모듈러 변환이 된다. 그리고 $L$ 이 짝수 격자이면 모든 $|x|^2$ 가 짝수라 $q$ 의 지수가 정수이고, $\Theta_L(\tau+1)=\Theta_L(\tau)$ 다. 두 변환이 $\mathrm{SL}_2(\mathbb Z)$ 를 생성하므로 $\Theta_L$ 이 모듈러 형식이다.
 
 [Tate 논문](tate-thesis.md)에서 $\zeta$ 의 함수방정식을 준 것도 같은 Poisson 합공식이며, 자기쌍대성이 대칭을 낳는 구조가 격자에서 반복된다.
 
@@ -88,7 +88,7 @@ $$
 N_L(m)=\char35{}\lbrace x\in L:|x|^2=m\rbrace
 $$
 
-로 둔다. $L$ 이 **짝수**라는 것은 모든 $|x|^2$ 가 짝수라는 뜻이고, **유니모듈러**라는 것은 $L^*=L$ 곧 Gram 행렬의 행렬식이 $1$ 이라는 뜻이다.
+로 둔다. $L$ 이 **짝수**라는 것은 모든 $|x|^2$ 가 짝수라는 뜻이고, **유니모듈러**라는 것은 $L^\ast=L$ 곧 Gram 행렬의 행렬식이 $1$ 이라는 뜻이다.
 
 $E_8$ 은 다음으로 정의되는 8 차원 짝수 유니모듈러 격자다.
 

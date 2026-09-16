@@ -146,7 +146,7 @@ $$
 A^{*}(\mu) = \sup_{\eta}\big(\eta^{\top}\mu - A(\eta)\big)
 $$
 
-의 기울기다. $A^*$ 는 음의 엔트로피에 해당한다([Shannon entropy](entropy.md)). 또한 두 분포 사이의 [KL divergence](kl-divergence.md)는 $A$ 가 만드는 Bregman divergence 로 정확히 표현된다.
+의 기울기다. $A^\ast$ 는 음의 엔트로피에 해당한다([Shannon entropy](entropy.md)). 또한 두 분포 사이의 [KL divergence](kl-divergence.md)는 $A$ 가 만드는 Bregman divergence 로 정확히 표현된다.
 
 $$
 D_{\mathrm{KL}}\big(p_{\eta_1} \thinspace\Vert\thinspace p_{\eta_2}\big) = A(\eta_2) - A(\eta_1) - \nabla A(\eta_1)^{\top}(\eta_2 - \eta_1).
