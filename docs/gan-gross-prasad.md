@@ -78,7 +78,7 @@ $$
 H=N\rtimes G(W),\qquad \nu:N\to\mathbb C^\times
 $$
 
-로 둔다. $\nu$ 는 $G(W)$ 의 작용으로 안정되는 일반 지표다. 가장 단순한 $d=1$ 에서는 $N$ 이 자명하고 $H=G(W)$, $\nu=1$ 이다. 이때 쌍은
+로 둔다. $\nu$ 는 $G(W)$ 의 작용으로 안정되는 일반 지표다. 가장 단순한 $d=1$ 에서는 $N$ 이 자명하고 $H=G(W)$ 이며 $\nu=1$ 이다. 이때 쌍은
 
 $$
 \bigl(\mathrm{SO}(n+1)\times\mathrm{SO}(n),\ \mathrm{SO}(n)\bigr),
@@ -106,7 +106,7 @@ $$
 m(\pi)=\dim\mathrm{Hom}_{H(F)}\bigl(\pi\otimes\nu,\ \mathbb C\bigr)
 $$
 
-(Fourier–Jacobi 경우에는 $\pi\otimes\omega_\psi$) 로 둔다. 국소 GGP 는 두 부분이다.
+로 둔다. Fourier–Jacobi 경우에는 $\pi$ 자리에 $\pi\otimes\omega_\psi$ 를 넣는다. 국소 GGP 는 두 부분이다.
 
 **(a) 중복도 1.** 언제나 $m(\pi)\le1$ 이다.
 
@@ -207,9 +207,9 @@ console.log(dimU(lambda), total, mus.length)
 
 $n$ 을 내리면 이미 알려진 정리들이 나온다.
 
-- $\mathrm{SO}(3)\times\mathrm{SO}(2)$, 곧 $\mathrm{PGL}_2\times$ 토러스: **Waldspurger 정리**다. 토릭 주기(허수이차체 관련 토러스 위의 적분)가 0 이 아닌 것이 $L(1/2,\pi\times\chi)\ne0$ 과 동치이고, 주기의 제곱이 중심값과 명시적 상수배로 같다.
-- $U(3)\times U(2)$: Gross–Prasad 가 1992 년에 처음 제기한 형태다.[^3]
-- $\mathrm{SO}(4)\times\mathrm{SO}(3)$: $\mathrm{GL}_2\times\mathrm{GL}_2$ 의 삼중곱 $L$ 함수와 연결되어 Ichino 의 삼중곱 공식이 된다.
+- $\mathrm{SO}(3)\times\mathrm{SO}(2)$ 곧 $\mathrm{PGL}_2\times$ 토러스의 경우: **Waldspurger 정리**다. 토릭 주기(허수이차체 관련 토러스 위의 적분)가 0 이 아닌 것이 $L(1/2,\pi\times\chi)\ne0$ 과 동치이고, 주기의 제곱이 중심값과 명시적 상수배로 같다.
+- $U(3)\times U(2)$ 의 경우: Gross–Prasad 가 1992 년에 처음 제기한 형태다.[^3]
+- $\mathrm{SO}(4)\times\mathrm{SO}(3)$ 의 경우: $\mathrm{GL}_2\times\mathrm{GL}_2$ 의 삼중곱 $L$ 함수와 연결되어 Ichino 의 삼중곱 공식이 된다.
 
 ## Ichino–Ikeda 정련
 
@@ -252,7 +252,7 @@ $n=1$ 의 Waldspurger 정리와 Gross–Zagier 를 합치면 타원곡선 $E/\ma
 
 [^2]: R. Beuzart-Plessis, P.-H. Chaudouard, M. Zydor, *The global Gan–Gross–Prasad conjecture for unitary groups: the endoscopic case*, Publ. IHÉS 135 (2022).
 
-[^3]: B. Gross, D. Prasad, *On the decomposition of a representation of $\mathrm{SO}_n$ when restricted to $\mathrm{SO}_{n-1}$*, Canad. J. Math. 44 (1992). 일반형은 W. T. Gan, B. Gross, D. Prasad, Astérisque 346 (2012).
+[^3]: B. Gross, D. Prasad, *On the decomposition of a representation of $\mathrm{SO}_n$ when restricted to* $\mathrm{SO}_{n-1}$ (Canad. J. Math. 44, 1992). 일반형은 W. T. Gan, B. Gross, D. Prasad, Astérisque 346 (2012).
 
 # 연관 문서
 
