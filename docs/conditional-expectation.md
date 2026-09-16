@@ -8,13 +8,13 @@ $$
 E[X \mid B] = \frac{E[X \mathbf{1}_B]}{P(B)}, \qquad P(B) > 0
 $$
 
-로 정의하지만, 이 정의는 $P(B) = 0$ 인 사건에 대해 무력하고, "관측할 정보 전체"를 하나의 대상으로 다루지 못한다. 현대적인 정의는 조건을 거는 대상을 사건이 아니라 **σ-대수** $\mathcal G$ 로 잡고, 조건부 기댓값을 $\mathcal G$ 가측 확률변수로 정의한다.
+로 정의하지만, 이 정의는 $P(B) = 0$ 인 사건에 대해 무력하고, "관측할 정보 전체"를 하나의 대상으로 다루지 못한다. 현대적인 정의는 조건을 거는 대상을 사건이 아니라 **$\sigma$ -대수** $\mathcal G$ 로 잡고, 조건부 기댓값을 $\mathcal G$ 가측 확률변수로 정의한다.
 
 핵심은 두 줄로 요약된다. 조건부 기댓값 $E[X \mid \mathcal G]$ 는 (1) $\mathcal G$ 가측이며 (2) $\mathcal G$ 안의 모든 사건 위에서 $X$ 와 같은 적분값을 갖는 확률변수다. 존재성과 거의 확실한 유일성은 [Radon–Nikodym 정리](radon-nikodym.md)가 보장한다. 이 정의가 있어야 [Markov 연쇄](markov-chains.md)의 연속시간·일반상태 버전, [Martingale](martingales.md), 그리고 [상측도와 확률분포](pushforward-measure.md) 위의 조건부 분포 이론이 성립한다.
 
 # 직관
 
-정보를 σ-대수로 부호화한다는 발상이 출발점이다. 확률공간 $(\Omega, \mathcal F, P)$ 에서 부분 σ-대수 $\mathcal G \subseteq \mathcal F$ 는 "지금 알 수 있는 질문들의 모음"이다. $\mathcal G$ 에 속한 사건 $A$ 에 대해서는 $\omega$ 가 $A$ 에 들어 있는지 여부를 관측으로 판정할 수 있고, $\mathcal G$ 에 없는 사건은 판정할 수 없다.
+정보를 $\sigma$ -대수로 부호화한다는 발상이 출발점이다. 확률공간 $(\Omega, \mathcal F, P)$ 에서 부분 $\sigma$ -대수 $\mathcal G \subseteq \mathcal F$ 는 "지금 알 수 있는 질문들의 모음"이다. $\mathcal G$ 에 속한 사건 $A$ 에 대해서는 $\omega$ 가 $A$ 에 들어 있는지 여부를 관측으로 판정할 수 있고, $\mathcal G$ 에 없는 사건은 판정할 수 없다.
 
 가장 투명한 경우는 $\mathcal G$ 가 가산 분할 $\Omega = B_1 \sqcup B_2 \sqcup \dots$ 로 생성될 때다. 이때 관측이 알려주는 것은 "지금 어느 조각 안에 있는가" 뿐이므로, 예측값은 각 조각 위에서 상수여야 하고 그 상수는 조각 위의 평균이어야 한다.
 
@@ -40,7 +40,7 @@ graph LR
 
 ## 조건부 기댓값
 
-확률공간 $(\Omega, \mathcal F, P)$ 와 부분 σ-대수 $\mathcal G \subseteq \mathcal F$ 와 $E\lvert X \rvert < \infty$ 를 만족하는 확률변수 $X$ 를 고정한다. 확률변수 $Y$ 가 다음 두 조건을 만족하면 $Y$ 를 $\mathcal G$ 에 대한 $X$ 의 조건부 기댓값이라 하고 $Y = E[X \mid \mathcal G]$ 로 쓴다.
+확률공간 $(\Omega, \mathcal F, P)$ 와 부분 $\sigma$ -대수 $\mathcal G \subseteq \mathcal F$ 와 $E\lvert X \rvert < \infty$ 를 만족하는 확률변수 $X$ 를 고정한다. 확률변수 $Y$ 가 다음 두 조건을 만족하면 $Y$ 를 $\mathcal G$ 에 대한 $X$ 의 조건부 기댓값이라 하고 $Y = E[X \mid \mathcal G]$ 로 쓴다.
 
 1. $Y$ 는 $\mathcal G$ 에 대한 [가측함수](measurable-functions.md)이고 적분 가능하다.
 2. 모든 $A \in \mathcal G$ 에 대하여
@@ -51,7 +51,7 @@ $$
 
 조건 2를 부분적분 등식(partial averaging property)이라 부른다. $A = \Omega$ 를 넣으면 특히 $E[Y] = E[X]$ 다.
 
-확률변수 $Z$ 에 대한 조건부 기댓값은 $Z$ 가 생성하는 σ-대수를 쓴 약속이다.
+확률변수 $Z$ 에 대한 조건부 기댓값은 $Z$ 가 생성하는 $\sigma$ -대수를 쓴 약속이다.
 
 $$
 E[X \mid Z] \;:=\; E[X \mid \sigma(Z)], \qquad \sigma(Z) = \{Z^{-1}(B) : B \in \mathcal{B}(\mathbb{R})\}.
@@ -181,7 +181,7 @@ $$
 
 ## Martingale 과 확률과정
 
-시간 축을 가진 σ-대수의 증가열 $\mathcal F_0 \subseteq \mathcal F_1 \subseteq \dots$ (filtration)을 두면 $E[X_{n+1} \mid \mathcal F_n]$ 은 "현재까지의 정보로 본 다음 값의 예측"이다. 이 예측이 현재 값과 같으면 [Martingale](martingales.md)이다. 탑 성질은 곧바로 $E[X_n] = E[X_0]$ 를 주고, 여기서 선택적 정지 정리, Doob 부등식, martingale 수렴 정리가 뻗어 나온다. [Markov 연쇄](markov-chains.md)의 Markov 성질도 $E[f(X_{n+1}) \mid \mathcal F_n] = (Pf)(X_n)$ 라는 조건부 기댓값 등식으로 쓰는 것이 표준이다.
+시간 축을 가진 $\sigma$ -대수의 증가열 $\mathcal F_0 \subseteq \mathcal F_1 \subseteq \dots$ (filtration)을 두면 $E[X_{n+1} \mid \mathcal F_n]$ 은 "현재까지의 정보로 본 다음 값의 예측"이다. 이 예측이 현재 값과 같으면 [Martingale](martingales.md)이다. 탑 성질은 곧바로 $E[X_n] = E[X_0]$ 를 주고, 여기서 선택적 정지 정리, Doob 부등식, martingale 수렴 정리가 뻗어 나온다. [Markov 연쇄](markov-chains.md)의 Markov 성질도 $E[f(X_{n+1}) \mid \mathcal F_n] = (Pf)(X_n)$ 라는 조건부 기댓값 등식으로 쓰는 것이 표준이다.
 
 ## 통계와 기계학습
 

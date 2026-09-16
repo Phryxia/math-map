@@ -44,7 +44,7 @@ graph TD
 
 ## Filtration 과 adapted 과정
 
-확률공간 $(\Omega, \mathcal F, P)$ 위의 증가하는 부분 σ-대수 열 $\mathcal F_0 \subseteq \mathcal F_1 \subseteq \dots \subseteq \mathcal F$ 를 filtration 이라 한다. $\mathcal F_n$ 은 "시각 $n$ 까지 관측 가능한 정보"다. 확률과정 $(X_n)$ 이 모든 $n$ 에 대해 $X_n$ 이 $\mathcal F_n$ 가측이면 $(X_n)$ 은 filtration 에 **adapted** 되었다고 한다. 특별한 언급이 없으면 자연 filtration $\mathcal F_n = \sigma(X_0, \dots, X_n)$ 을 쓴다.
+확률공간 $(\Omega, \mathcal F, P)$ 위의 증가하는 부분 $\sigma$ -대수 열 $\mathcal F_0 \subseteq \mathcal F_1 \subseteq \dots \subseteq \mathcal F$ 를 filtration 이라 한다. $\mathcal F_n$ 은 "시각 $n$ 까지 관측 가능한 정보"다. 확률과정 $(X_n)$ 이 모든 $n$ 에 대해 $X_n$ 이 $\mathcal F_n$ 가측이면 $(X_n)$ 은 filtration 에 **adapted** 되었다고 한다. 특별한 언급이 없으면 자연 filtration $\mathcal F_n = \sigma(X_0, \dots, X_n)$ 을 쓴다.
 
 ## Martingale, submartingale, supermartingale
 
@@ -167,7 +167,7 @@ $$
 
 ## 계산 예제
 
-대칭 랜덤워크의 도박꾼 파산 공식을 시뮬레이션으로 확인한다. 이론값은 도달확률 $k/N$, 기대 시간 $k(N-k)$ 다.
+대칭 랜덤워크의 도박꾼 파산 공식을 시뮬레이션으로 확인한다. 이론값은 도달확률 $k/N$ , 기대 시간 $k(N-k)$ 다.
 
 ```python
 import random

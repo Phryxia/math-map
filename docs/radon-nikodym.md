@@ -45,7 +45,7 @@ $$
 
 ## 정리
 
-$\mu$ 와 $\nu$ 가 σ-유한이고 $\nu \ll \mu$ 이면 음이 아닌 가측함수 $f$ 가 존재해 모든 가측집합 $E$ 에서
+$\mu$ 와 $\nu$ 가 $\sigma$ -유한이고 $\nu \ll \mu$ 이면 음이 아닌 가측함수 $f$ 가 존재해 모든 가측집합 $E$ 에서
 
 $$
 \nu(E)=\int_E f\,d\mu
@@ -59,13 +59,13 @@ $$
 
 로 쓴다.
 
-σ-유한성은 뺄 수 없다. $\mathbb R$ 의 Borel 집합에 $\mu$ 를 셈측도로, $\nu$ 를 Lebesgue 측도로 두면 $\nu \ll \mu$ 이지만 밀도가 존재하지 않는다. 셈측도가 σ-유한이 아니기 때문이다.
+$\sigma$ -유한성은 뺄 수 없다. $\mathbb R$ 의 Borel 집합에 $\mu$ 를 셈측도로, $\nu$ 를 Lebesgue 측도로 두면 $\nu \ll \mu$ 이지만 밀도가 존재하지 않는다. 셈측도가 $\sigma$ -유한이 아니기 때문이다.
 
 # 성질
 
 ## 필요조건과 충분조건
 
-필요조건은 즉시 확인된다. $\mu(E) = 0$ 이면 $E$ 위의 임의의 적분이 $0$ 이므로 $\nu(E) = 0$ 이다. 정리의 내용은 σ-유한성 아래에서 이것이 충분하다는 것이다.
+필요조건은 즉시 확인된다. $\mu(E) = 0$ 이면 $E$ 위의 임의의 적분이 $0$ 이므로 $\nu(E) = 0$ 이다. 정리의 내용은 $\sigma$ -유한성 아래에서 이것이 충분하다는 것이다.
 
 증명은 $\{g \ge 0 : \int_E g \, d\mu \le \nu(E) \text{ for all } E\}$ 라는 함수족을 놓고 그 상한을 취하는 방식이 표준이다. 상한이 실제로 밀도가 됨을 보이는 데 [단조수렴 정리](monotone-convergence.md)가 쓰인다. Hilbert 공간의 사영을 이용한 von Neumann 의 증명도 널리 쓰이며, 조건부 기댓값이 사영이라는 관점과 자연스럽게 이어진다.
 
@@ -94,7 +94,7 @@ $$
 
 ## Lebesgue 분해
 
-σ-유한 측도 $\nu$ 는 유일하게
+$\sigma$ -유한 측도 $\nu$ 는 유일하게
 
 $$
 \nu=\nu_{ac}+\nu_s,\qquad \nu_{ac}\ll\mu,\quad \nu_s\perp\mu
@@ -137,7 +137,7 @@ except ValueError as e:
 
 ## 조건부 기댓값과의 관계
 
-부분 σ-대수 $\mathcal G \subseteq \mathcal F$ 가 주어졌을 때 $E[X \mid \mathcal G]$ 는 $\mathcal G$ 위에서 정의된 측도 $A \mapsto \int_A X \, dP$ 의 $P\rvert_{\mathcal G}$ 에 대한 Radon–Nikodym 도함수다. 조건부 기댓값이 존재하고 거의 확실히 유일하다는 사실이 이 정리에서 곧바로 나온다.
+부분 $\sigma$ -대수 $\mathcal G \subseteq \mathcal F$ 가 주어졌을 때 $E[X \mid \mathcal G]$ 는 $\mathcal G$ 위에서 정의된 측도 $A \mapsto \int_A X \, dP$ 의 $P\rvert_{\mathcal G}$ 에 대한 Radon–Nikodym 도함수다. 조건부 기댓값이 존재하고 거의 확실히 유일하다는 사실이 이 정리에서 곧바로 나온다.
 
 정의를 이렇게 잡으면 조건부 기댓값이 "특정 값을 관측한 뒤의 평균" 이 아니라 "주어진 정보로 가측인 함수 중 적분이 일치하는 것" 이 된다. 조건이 확률 $0$ 인 사건이어도 정의가 무너지지 않는 이유가 여기 있다.
 
