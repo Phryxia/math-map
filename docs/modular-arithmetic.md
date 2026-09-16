@@ -62,7 +62,7 @@ $$
 
 ## 연산의 잘 정의됨
 
-$a \equiv b$, $c \equiv d \pmod m$ 이면 다음이 성립한다.
+$a \equiv b$ , $c \equiv d \pmod m$ 이면 다음이 성립한다.
 
 $$
 \begin{aligned}

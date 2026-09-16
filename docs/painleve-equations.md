@@ -104,7 +104,7 @@ $$
 
 ## 유리해와 변환군
 
-$\mathrm{P}_{\mathrm{II}}$ 는 $\alpha \in \mathbb Z$ 에서 유리해를 가진다. $\alpha = 0$ 에서 $q = 0$, $\alpha = 1$ 에서 $q = -1/x$, $\alpha = 2$ 에서 $q = \frac{1}{x} - \frac{3x^2}{x^3+4}$ 이고, 분자와 분모는 Yablonskii–Vorob'ev 다항식이라는 정수계수 다항식열이다.
+$\mathrm{P}_{\mathrm{II}}$ 는 $\alpha \in \mathbb Z$ 에서 유리해를 가진다. $\alpha = 0$ 에서 $q = 0$ , $\alpha = 1$ 에서 $q = -1/x$ , $\alpha = 2$ 에서 $q = \frac{1}{x} - \frac{3x^2}{x^3+4}$ 이고, 분자와 분모는 Yablonskii–Vorob'ev 다항식이라는 정수계수 다항식열이다.
 
 Bäcklund 변환은 매개변수 공간에 아핀 Weyl 군의 작용을 준다. $\mathrm{P}\_{\mathrm{II}}$ 에서는 $A_1^{(1)}$ 형, $\mathrm{P}\_{\mathrm{IV}}$ 에서는 $A_2^{(1)}$ 형이다.
 
@@ -150,7 +150,7 @@ def integrate(x0, x1, h=1e-3):
     return y[0]
 ```
 
-$q(0) = 0.367061552$ 이고, 음의 방향에서 $q(-2) = 0.98339$, $q(-4) = 1.41118$, $q(-6) = 1.7310$ 으로 $\sqrt{-x/2}$ 에 다가간다.
+$q(0) = 0.367061552$ 이고, 음의 방향에서 $q(-2) = 0.98339$ , $q(-4) = 1.41118$ , $q(-6) = 1.7310$ 으로 $\sqrt{-x/2}$ 에 다가간다.
 
 ## 분포함수
 

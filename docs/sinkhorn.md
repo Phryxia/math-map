@@ -39,7 +39,7 @@ $$
 P_{ij}=e^{f_i/\varepsilon}e^{-C_{ij}/\varepsilon}e^{g_j/\varepsilon}
 $$
 
-$u_i=e^{f_i/\varepsilon}$, $v_j=e^{g_j/\varepsilon}$ 로 쓰면 대각 스케일링이고 미지수가 $nm$ 개에서 $n+m$ 개로 줄었다. 엔트로피 항의 로그가 지수를 낳고 지수가 곱으로 분리된다.
+$u_i=e^{f_i/\varepsilon}$ , $v_j=e^{g_j/\varepsilon}$ 로 쓰면 대각 스케일링이고 미지수가 $nm$ 개에서 $n+m$ 개로 줄었다. 엔트로피 항의 로그가 지수를 낳고 지수가 곱으로 분리된다.
 
 ## KL 교대 사영
 
@@ -218,7 +218,7 @@ def sinkhorn_log(C, a, b, eps, tol=1e-9, max_iter=100_000):
 - **영역 적응과 색 이전.** 서로 다른 분포의 표본을 대응시키는 문제가 수송 계획이며, 부드러운 계획이 잡음에 강하다.
 - **단세포 유전체학.** 서로 다른 시점에 측정한 세포 집단을 잇는 궤적 추론이 수송 문제로 세워지고, 규모 때문에 Sinkhorn 이 쓰인다.
 - **미분가능한 정렬과 순위.** 치환행렬의 볼록완화가 이중확률행렬이므로 Sinkhorn 을 부드러운 정렬로 쓴다. 순위 기반 손실함수를 신경망에 넣을 때의 표준 수법이다.
-- **행렬 균형화.** 양수 행렬을 이중확률행렬로 만드는 고전적 문제가 $\varepsilon=1$, $C=-\log K$ 인 특수한 경우이며, Sinkhorn 의 1964년 원논문의 문제다.
+- **행렬 균형화.** 양수 행렬을 이중확률행렬로 만드는 고전적 문제가 $\varepsilon=1$ , $C=-\log K$ 인 특수한 경우이며, Sinkhorn 의 1964년 원논문의 문제다.
 
 [^1]: Marco Cuturi, *Sinkhorn Distances: Lightspeed Computation of Optimal Transport*, NeurIPS 2013 이 정규화와 반복을 최적 수송에 도입했다. 수렴 비율은 J. Franklin, J. Lorenz, *On the scaling of multidimensional matrices*, Linear Algebra Appl. 114–115 (1989), 717–735. Sinkhorn 발산의 양정성과 거리화는 J. Feydy 외, *Interpolating between Optimal Transport and MMD using Sinkhorn Divergences*, AISTATS 2019. 복잡도 $\tilde O(n^2/\delta^3)$ 은 J. Altschuler, J. Weed, P. Rigollet, NeurIPS 2017.
 

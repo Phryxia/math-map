@@ -92,7 +92,7 @@ $$
 
 ## 자기수반 작용소의 실 스펙트럼
 
-$T=T^*$ 이면 $\sigma(T)\subset\mathbb R$ 이고, 나아가 $\sigma(T)\subset[m,M]$ 이다. 여기서 $m=\inf_{\lVert x\rVert=1}\langle Tx,x\rangle$, $M=\sup_{\lVert x\rVert=1}\langle Tx,x\rangle$ 이며 양 끝점이 모두 스펙트럼에 속한다.
+$T=T^*$ 이면 $\sigma(T)\subset\mathbb R$ 이고, 나아가 $\sigma(T)\subset[m,M]$ 이다. 여기서 $m=\inf_{\lVert x\rVert=1}\langle Tx,x\rangle$ , $M=\sup_{\lVert x\rVert=1}\langle Tx,x\rangle$ 이며 양 끝점이 모두 스펙트럼에 속한다.
 
 *증명.* $\lambda=a+bi$ 에 $b\ne0$ 이면 $\lVert(T-\lambda)x\rVert\ge|b|\lVert x\rVert$ 가 나오고, 이것이 단사성과 치역의 닫힘을 준다.
 

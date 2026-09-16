@@ -220,7 +220,7 @@ $$
 p(n)\sim\frac1{4n\sqrt3}\exp\Big(\pi\sqrt{\tfrac{2n}3}\Big)
 $$
 
-Rademacher 는 같은 방법으로 $p(n)$ 을 정확히 주는 수렴급수를 얻었다. Ramanujan 의 합동 $p(5n+4)\equiv0\pmod5$, $p(7n+5)\equiv0\pmod7$, $p(11n+6)\equiv0\pmod{11}$ 도 같은 틀에서 설명된다.
+Rademacher 는 같은 방법으로 $p(n)$ 을 정확히 주는 수렴급수를 얻었다. Ramanujan 의 합동 $p(5n+4)\equiv0\pmod5$ , $p(7n+5)\equiv0\pmod7$ , $p(11n+6)\equiv0\pmod{11}$ 도 같은 틀에서 설명된다.
 
 ## 산술 대상과의 대응
 

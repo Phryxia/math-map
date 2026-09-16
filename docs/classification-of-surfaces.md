@@ -44,7 +44,7 @@ $$
 
 원판 선택과 붙이는 방식에 따른 모호함은 위상동형 유형을 바꾸지 않는다. 연결합은 교환적이고 결합적이며 구가 항등원이므로, 닫힌 곡면의 위상동형류가 연결합에 대해 가환 모노이드를 이룬다.
 
-토러스를 $T$, 사영평면을 $P$ 로 쓰고 연결합을 다음과 같이 줄여 쓴다.
+토러스를 $T$ , 사영평면을 $P$ 로 쓰고 연결합을 다음과 같이 줄여 쓴다.
 
 $$
 gT = \underbrace{T \mathbin{\char35{}} \cdots \mathbin{\char35{}} T}_{g}, \qquad kP = \underbrace{P \mathbin{\char35{}} \cdots \mathbin{\char35{}} P}_{k}
@@ -60,7 +60,7 @@ $$
 \text{구} : a a^{-1}, \qquad \text{토러스} : a b a^{-1} b^{-1}, \qquad \text{사영평면} : a a, \qquad \text{Klein 병} : a b a b^{-1}
 $$
 
-일반형(normal form)은 둘이고, 앞의 것이 $gT$, 뒤의 것이 $kP$ 다.
+일반형(normal form)은 둘이고, 앞의 것이 $gT$ , 뒤의 것이 $kP$ 다.
 
 $$
 \prod_{i=1}^{g} a_i b_i a_i^{-1} b_i^{-1}, \qquad \prod_{i=1}^{k} c_i c_i
@@ -138,7 +138,7 @@ $$
 \pi_1(kP) = \bigl\langle c_1, \dots, c_k \ \big| \ c_1^2 c_2^2 \cdots c_k^2 = 1 \bigr\rangle
 $$
 
-구의 기본군은 자명하고, 토러스는 $\mathbb Z^2$, 사영평면은 위수 2 의 순환군이다. 아벨화하면 1 차 호몰로지가 나온다.
+구의 기본군은 자명하고, 토러스는 $\mathbb Z^2$ , 사영평면은 위수 2 의 순환군이다. 아벨화하면 1 차 호몰로지가 나온다.
 
 $$
 H_1(gT) \cong \mathbb{Z}^{2g}, \qquad H_1(kP) \cong \mathbb{Z}^{k-1} \oplus \mathbb{Z}/2\mathbb{Z}
@@ -168,7 +168,7 @@ $$
 \chi = 2 - 2g - b \quad (\text{가향}), \qquad \chi = 2 - k - b \quad (\text{비가향})
 $$
 
-원판, 원환(annulus), Möbius 띠가 각각 $(g,b)=(0,1)$, $(g,b)=(0,2)$, $(k,b)=(1,1)$ 이다.
+원판, 원환(annulus), Möbius 띠가 각각 $(g,b)=(0,1)$ , $(g,b)=(0,2)$ , $(k,b)=(1,1)$ 이다.
 
 # 활용
 

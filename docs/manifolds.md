@@ -42,7 +42,7 @@ $$
 
 atlas 의 모든 transition map 이 무한히 미분가능하면 그 atlas 가 smooth atlas 다. transition map 은 Euclidean 공간의 열린집합 사이의 함수이므로 이 조건은 [미분](derivative.md)의 통상적 의미로 검사된다. 서로 합쳐도 smooth atlas 가 되는 atlas 들을 동일시하면 각 류에 극대 smooth atlas 가 하나 있고, 이것이 매끄러운 구조(smooth structure)다. 위상다양체에 매끄러운 구조를 지정한 것이 smooth manifold 다.
 
-$M$, $N$ 을 smooth manifold 라 하자. $F:M\to N$ 이 매끄러운 사상이라는 것은 각 점에서 적절한 chart 로 표현한 합성이 매끄럽다는 뜻이다.
+$M$ , $N$ 을 smooth manifold 라 하자. $F:M\to N$ 이 매끄러운 사상이라는 것은 각 점에서 적절한 chart 로 표현한 합성이 매끄럽다는 뜻이다.
 
 $$
 \psi\circ F\circ\varphi^{-1}\ \text{가 } C^{\infty}

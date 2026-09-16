@@ -2,7 +2,7 @@
 
 # 개요
 
-Adjunction은 두 [functor](functors.md) 사이의 가장 흔하고 가장 유용한 관계다. 두 범주 사이를 오가는 functor $F$, $G$ 가 있을 때, $F$ 를 보낸 뒤 잰 사상의 집합과 $G$ 로 되돌린 뒤 잰 사상의 집합이 자연스럽게 같다면 $F$ 는 $G$ 의 left adjoint다.
+Adjunction은 두 [functor](functors.md) 사이의 가장 흔하고 가장 유용한 관계다. 두 범주 사이를 오가는 functor $F$ , $G$ 가 있을 때, $F$ 를 보낸 뒤 잰 사상의 집합과 $G$ 로 되돌린 뒤 잰 사상의 집합이 자연스럽게 같다면 $F$ 는 $G$ 의 left adjoint다.
 
 자유군 구성, 텐서곱, 지수 대상, 스칼라 확장, 논리에서의 한정기호처럼 서로 무관해 보이는 구성들이 모두 adjunction 한 줄로 정리된다. 또한 adjoint functor는 limit, colimit의 보존 여부를 자동으로 결정하므로, "무엇이 무엇을 보존하는가" 를 매번 계산하지 않아도 된다.
 
@@ -20,7 +20,7 @@ Adjunction은 두 [functor](functors.md) 사이의 가장 흔하고 가장 유�
 
 ## 부분순서에서의 그림
 
-[부분순서](partial-orders.md) 집합을 사상이 최대 하나뿐인 범주로 보면 adjunction은 Galois connection이 된다. 단조사상 $f$, $g$ 에 대해
+[부분순서](partial-orders.md) 집합을 사상이 최대 하나뿐인 범주로 보면 adjunction은 Galois connection이 된다. 단조사상 $f$ , $g$ 에 대해
 
 $$
 f(x) \le y \iff x \le g(y)
@@ -36,7 +36,7 @@ hom-set 사이의 전단사가 그냥 존재하기만 해서는 쓸모가 없다
 
 ## hom-set 정의
 
-범주 $\mathcal C$, $\mathcal D$ 와 functor
+범주 $\mathcal C$ , $\mathcal D$ 와 functor
 
 $$
 F : \mathcal{C} \to \mathcal{D}, \qquad G : \mathcal{D} \to \mathcal{C}
@@ -100,7 +100,7 @@ graph LR
 
 ## 두 정의의 동치
 
-**정리.** functor $F$, $G$ 에 대해 다음은 동치다.
+**정리.** functor $F$ , $G$ 에 대해 다음은 동치다.
 
 1. triangle identity를 만족하는 자연변환 쌍 $(\eta, \varepsilon)$ 이 존재한다.
 2. $c$ 와 $d$ 에 대해 자연스러운 전단사 $\operatorname{Hom}(Fc, d) \cong \operatorname{Hom}(c, Gd)$ 가 존재한다.
@@ -129,7 +129,7 @@ $$
 
 ## 유일성
 
-Right adjoint는 존재하면 자연동형을 제외하고 유일하다. $G$, $G'$ 가 모두 $F$ 의 right adjoint이면
+Right adjoint는 존재하면 자연동형을 제외하고 유일하다. $G$ , $G'$ 가 모두 $F$ 의 right adjoint이면
 
 $$
 \operatorname{Hom}_{\mathcal{C}}(c, Gd) \cong \operatorname{Hom}_{\mathcal{D}}(Fc, d) \cong \operatorname{Hom}_{\mathcal{C}}(c, G'd)

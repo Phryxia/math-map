@@ -78,7 +78,7 @@ $\mathfrak g=T_eG$ 의 괄호는 왼쪽불변 벡터장으로 정의한다. $X\i
 
 ## 지수사상과 딸림표현
 
-$X\in\mathfrak g$ 에 대해 $\gamma_X(0)=e$, $\gamma_X'(t)=(dL_{\gamma_X(t)})_eX$ 인 유일한 곡선으로 지수사상을 정의한다.
+$X\in\mathfrak g$ 에 대해 $\gamma_X(0)=e$ , $\gamma_X'(t)=(dL_{\gamma_X(t)})_eX$ 인 유일한 곡선으로 지수사상을 정의한다.
 
 $$
 \exp(X)=\gamma_X(1)

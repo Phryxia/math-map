@@ -30,7 +30,7 @@ $$
 2+2<n\quad\Longleftrightarrow\quad n\ge5
 $$
 
-여야 한다. 정리가 $\dim W\ge6$, 곧 경계 쪽에서 $\dim M_i\ge5$ 를 요구하는 것이 이 조건 때문이다. 차원이 넉넉하면 원판을 흔들어 자기교차를 없앨 수 있고 좁으면 없앨 수 없다.
+여야 한다. 정리가 $\dim W\ge6$ , 곧 경계 쪽에서 $\dim M_i\ge5$ 를 요구하는 것이 이 조건 때문이다. 차원이 넉넉하면 원판을 흔들어 자기교차를 없앨 수 있고 좁으면 없앨 수 없다.
 
 ## 비틀림 장애
 
@@ -108,7 +108,7 @@ Freedman 은 이 무한탑이 위상적으로 진짜 손잡이와 같음을 보�
 
 ## 비틀림이 0 이 아닌 경우
 
-자유군, 자유아벨군 $\mathbb Z^n$(Bass–Heller–Swan), 작은 순환군에서는 $\mathrm{Wh}(\pi)=0$ 이다.
+자유군, 자유아벨군 $\mathbb Z^n$ (Bass–Heller–Swan), 작은 순환군에서는 $\mathrm{Wh}(\pi)=0$ 이다.
 
 > **정리.** $\mathrm{Wh}(\mathbb Z/n)$ 은 자유아벨군이고 계수가 $\left\lfloor n/2\right\rfloor+1-d(n)$ 이다. 여기서 $d(n)$ 은 $n$ 의 약수 개수다.
 

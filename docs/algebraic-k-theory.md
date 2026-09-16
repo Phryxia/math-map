@@ -10,7 +10,7 @@ K_1(R)=\mathrm{GL}(R)^{\mathrm{ab}},\quad
 K_2(R)=\text{Steinberg 군의 중심 확대}
 $$
 
-$R=\mathbb Z$ 면 $K_0=\mathbb Z$, $K_1=\mathbb Z/2$, $K_2=\mathbb Z/2$ 로 모두 산술적인 양이다. 차수를 올리면 $K_3(\mathbb Z)=\mathbb Z/48$ 이고, 이 48 은 구면의 안정 호모토피군에 나타나는 수와 같다.
+$R=\mathbb Z$ 면 $K_0=\mathbb Z$ , $K_1=\mathbb Z/2$ , $K_2=\mathbb Z/2$ 로 모두 산술적인 양이다. 차수를 올리면 $K_3(\mathbb Z)=\mathbb Z/48$ 이고, 이 48 은 구면의 안정 호모토피군에 나타나는 수와 같다.
 
 Quillen 이 $K_n$ 을 분류공간의 호모토피군으로 정의하면서 [호몰로지](homology.md)의 기법이 들어왔고, Quillen–Lichtenbaum 정리가 $K_n(\mathbb Z)$ 를 에탈 코호몰로지로 계산 가능하게 만들면서 [Galois 표현](galois-representations.md)과 순환체의 산술이 들어왔다. 그 결과 $K_{4k}(\mathbb Z)$ 의 소멸이 [Vandiver 추측](vandiver-conjecture.md)과 동치가 된다.
 
@@ -28,7 +28,7 @@ Quillen 의 plus 구성은 분류공간 $BGL(R)$ 에 세포를 붙여 기본군�
 
 ## 위상의 수가 나타나는 경로
 
-$K_3(\mathbb Z)=\mathbb Z/48$ 의 48 과 $K_7(\mathbb Z)=\mathbb Z/240$ 의 240 은 Bernoulli 수의 분모에서 온다. $\zeta(-1)=-\tfrac1{12}$, $\zeta(-3)=\tfrac1{120}$ 에 2 를 곱한 값이다. 같은 수가 구면의 안정 호모토피군의 im $J$ 부분에도 나타난다.
+$K_3(\mathbb Z)=\mathbb Z/48$ 의 48 과 $K_7(\mathbb Z)=\mathbb Z/240$ 의 240 은 Bernoulli 수의 분모에서 온다. $\zeta(-1)=-\tfrac1{12}$ , $\zeta(-3)=\tfrac1{120}$ 에 2 를 곱한 값이다. 같은 수가 구면의 안정 호모토피군의 im $J$ 부분에도 나타난다.
 
 $\mathbb Z$ 의 $K$ 군이 $\zeta$ 의 특수값을 재고 있다는 것이 현대적 설명이며, 그것을 정리로 만든 것이 Quillen–Lichtenbaum 이다. 분모는 [Bernoulli 수](bernoulli-numbers.md)의 von Staudt–Clausen 이 결정하고, 분자는 순환체의 류군이 결정한다.
 

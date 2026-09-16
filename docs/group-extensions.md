@@ -130,7 +130,7 @@ $$
 1\to H_2(Q,\mathbb Z)\to\tilde Q\to Q\to1
 $$
 
-$n\ge8$ 인 $A_n$ 의 Schur 곱셈자는 $\mathbb Z/2$ 이고 그 이중덮개가 $2.A_n$ 이다. 산재군에도 같은 표기를 쓰며 $2.\mathrm{Co}\_1$, $6.\mathrm{Suz}$, $3.\mathrm{Fi}\_{24}'$ 에서 앞의 숫자가 Schur 곱셈자의 위수다.
+$n\ge8$ 인 $A_n$ 의 Schur 곱셈자는 $\mathbb Z/2$ 이고 그 이중덮개가 $2.A_n$ 이다. 산재군에도 같은 표기를 쓰며 $2.\mathrm{Co}\_1$ , $6.\mathrm{Suz}$ , $3.\mathrm{Fi}\_{24}'$ 에서 앞의 숫자가 Schur 곱셈자의 위수다.
 
 [괴물군](monstrous-moonshine.md)의 Schur 곱셈자는 자명하고 $\mathbb M$ 자신이 보편 중심확대다. 아기 괴물의 이중덮개 $2.\mathrm{B}$ 가 $\mathbb M$ 의 중심화군으로 나타나므로 중심확대가 산재군을 서로 잇는다.
 

@@ -71,7 +71,7 @@ $x \le^\ast y$ 를 $y \le x$ 로 정의하면 $\le^\ast$ 도 부분순서다. �
 
 ## 격자
 
-모든 두 원소가 상한과 하한을 가지는 poset 이 격자다. 상한을 $x \vee y$, 하한을 $x \wedge y$ 로 쓴다. 멱집합은 합집합과 교집합으로 격자이고, 양의 정수의 나눔 관계는 최소공배수와 최대공약수로 격자다. 격자에 분배법칙과 보원을 더하면 [Boolean algebra](boolean-algebras.md)이고, 보원 대신 더 약한 조건을 두면 [Heyting algebra](heyting-algebras.md)가 된다.
+모든 두 원소가 상한과 하한을 가지는 poset 이 격자다. 상한을 $x \vee y$ , 하한을 $x \wedge y$ 로 쓴다. 멱집합은 합집합과 교집합으로 격자이고, 양의 정수의 나눔 관계는 최소공배수와 최대공약수로 격자다. 격자에 분배법칙과 보원을 더하면 [Boolean algebra](boolean-algebras.md)이고, 보원 대신 더 약한 조건을 두면 [Heyting algebra](heyting-algebras.md)가 된다.
 
 # 성질
 

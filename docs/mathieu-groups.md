@@ -73,7 +73,7 @@ $$
 
 $g_1$ 이 생성하는 길이 23 의 순환부호가 **이진 Golay 부호** $\mathcal G_{23}$ 이고 매개변수가 $[23,12,7]$ 이다. 전체 패리티 비트를 붙인 것이 **확장 Golay 부호** $\mathcal G_{24}$ 이고 매개변수가 $[24,12,8]$ 이다.
 
-$\mathcal G_{24}$ 는 자기쌍대이고($\mathcal C=\mathcal C^\perp$) 모든 부호어의 무게가 4 의 배수다.
+$\mathcal G_{24}$ 는 자기쌍대이고($\mathcal C=\mathcal C^\perp$ ) 모든 부호어의 무게가 4 의 배수다.
 
 ## Mathieu 군
 

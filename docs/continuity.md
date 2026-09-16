@@ -20,7 +20,7 @@ $f(a)$ 를 오차 $\varepsilon$ 안에서 알려면 입력을 $\delta$ 안에서
 
 ## ε–δ
 
-거리 공간 $(X, d_X)$, $(Y, d_Y)$ 와 함수 $f : X \to Y$, 점 $a \in X$ 에 대해 다음이 성립하면 $f$ 가 $a$ 에서 **연속**이다.
+거리 공간 $(X, d_X)$ , $(Y, d_Y)$ 와 함수 $f : X \to Y$ , 점 $a \in X$ 에 대해 다음이 성립하면 $f$ 가 $a$ 에서 **연속**이다.
 
 $$
 \forall\varepsilon>0\thickspace\exists\delta>0\thickspace\forall x\in X:\ d_X(x,a)<\delta\Rightarrow d_Y(f(x),f(a))<\varepsilon

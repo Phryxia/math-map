@@ -88,7 +88,7 @@ $$
 
 ## Appell–Lerch 합
 
-$u,v\in\mathbb C$, $q=e^{2\pi i\tau}$, $x=e^{2\pi i u}$, $y=e^{2\pi i v}$ 에 대해 다음으로 둔다.
+$u,v\in\mathbb C$ , $q=e^{2\pi i\tau}$ , $x=e^{2\pi i u}$ , $y=e^{2\pi i v}$ 에 대해 다음으로 둔다.
 
 $$
 \mu(u,v;\tau)=\frac{x^{1/2}}{\vartheta(v;\tau)}\sum_{n\in\mathbb Z}\frac{(-1)^n q^{n(n+1)/2}y^n}{1-q^n x}

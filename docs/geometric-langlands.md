@@ -84,7 +84,7 @@ $$
 \mathbb L_G\colon\quad\mathrm{D}\text{-}\mathrm{mod}(\mathrm{Bun}_G)\thickspace\xrightarrow{\ \sim\ }\thickspace\mathrm{IndCoh}_{\mathcal N}\big(\mathrm{LocSys}_{\hat G}\big)
 $$
 
-Arinkin–Gaitsgory 의 형태이고, 오른쪽의 받침 조건 $\mathcal N$(멱영 특이 받침)이 유일성 문제를 고친다. 이 동치가 Hecke 작용과 호환되며 왼쪽의 건너뜀 층(skyscraper)이 오른쪽의 고유층에 대응한다.
+Arinkin–Gaitsgory 의 형태이고, 오른쪽의 받침 조건 $\mathcal N$ (멱영 특이 받침)이 유일성 문제를 고친다. 이 동치가 Hecke 작용과 호환되며 왼쪽의 건너뜀 층(skyscraper)이 오른쪽의 고유층에 대응한다.
 
 # 정의
 

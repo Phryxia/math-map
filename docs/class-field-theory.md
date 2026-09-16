@@ -22,7 +22,7 @@ $$
 \mathrm{Gal}(L/\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times,\qquad \mathrm{Frob}_p\longmapsto p\bmod m
 $$
 
-이고 $p$ 가 완전분해할 조건은 $\mathrm{Frob}_p=1$, 곧 $p\equiv1\pmod m$ 이다. 소수의 분해라는 대수적 질문이 나머지 계산으로 번역된다.
+이고 $p$ 가 완전분해할 조건은 $\mathrm{Frob}_p=1$ , 곧 $p\equiv1\pmod m$ 이다. 소수의 분해라는 대수적 질문이 나머지 계산으로 번역된다.
 
 유체론은 이것이 원분체만의 현상이 아니라고 말한다. $K$ 의 모든 아벨 확대에서 분해법칙이 합동조건으로 서술되고, 무대가 $\mathbb Q$ 가 아니면 법 $m$ 의 나머지 자리에 광선유군의 원소가 들어간다.
 
@@ -147,7 +147,7 @@ $\mathfrak m=1$ 에 대응하는 확대 $H$ 를 **힐베르트 유체**라 한�
 
 - $H/K$ 는 유한 소수와 무한 소수 모두에서 불분기인 최대 아벨 확대다.
 - $\mathrm{Gal}(H/K)\cong\mathrm{Cl}(K)$ 이므로 $[H:K]=h_K$ 다.
-- $\mathfrak p$ 가 $H$ 에서 완전분해할 조건은 $\psi(\mathfrak p)=1$, 곧 $\mathfrak p$ 가 주 아이디얼인 것이다.
+- $\mathfrak p$ 가 $H$ 에서 완전분해할 조건은 $\psi(\mathfrak p)=1$ , 곧 $\mathfrak p$ 가 주 아이디얼인 것이다.
 
 마지막 항목은 아이디얼이 주 아이디얼인지를 묻는 질문을 소수가 어떤 체에서 완전분해하는지로 바꾸고, 후자는 다항식이 법 $\mathfrak p$ 에서 근을 갖는지로 판정된다.
 

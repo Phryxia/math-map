@@ -38,7 +38,7 @@ $$
 B_2=\tfrac16,\quad B_4=-\tfrac1{30},\quad B_6=\tfrac1{42},\quad B_8=-\tfrac1{30},\quad B_{10}=\tfrac5{66}
 $$
 
-분자는 불규칙하게 커지지만 분모는 규칙적이다. $6=2\cdot3$, $30=2\cdot3\cdot5$, $42=2\cdot3\cdot7$ 에서 보듯 $p-1$ 이 $n$ 을 나누는 소수 $p$ 가 분모에 정확히 한 번씩 나타난다.
+분자는 불규칙하게 커지지만 분모는 규칙적이다. $6=2\cdot3$ , $30=2\cdot3\cdot5$ , $42=2\cdot3\cdot7$ 에서 보듯 $p-1$ 이 $n$ 을 나누는 소수 $p$ 가 분모에 정확히 한 번씩 나타난다.
 
 $$
 B_{n}+\sum_{(p-1)\mid n}\frac1p\ \in\ \mathbb Z\qquad(n\ \text{짝수})

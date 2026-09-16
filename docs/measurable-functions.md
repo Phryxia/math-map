@@ -46,7 +46,7 @@ $$
 \lbrace x\in X: f(x)>a\rbrace\in\Sigma
 $$
 
-역상은 여집합과 가산 합집합을 보존하므로 $\lbrace B : f^{-1}(B) \in \Sigma\rbrace$ 가 $\sigma$ -대수를 이루고, 반직선들이 Borel $\sigma$ -대수를 생성한다. $>$ 대신 $\ge$, $<$, $\le$ 중 어느 것을 써도 같다.
+역상은 여집합과 가산 합집합을 보존하므로 $\lbrace B : f^{-1}(B) \in \Sigma\rbrace$ 가 $\sigma$ -대수를 이루고, 반직선들이 Borel $\sigma$ -대수를 생성한다. $>$ 대신 $\ge$ , $<$ , $\le$ 중 어느 것을 써도 같다.
 
 일반적으로 $\mathcal T$ 가 집합족 $\mathcal E$ 로 생성되면 $\mathcal E$ 의 원소에 대해서만 역상을 확인하면 된다.
 
@@ -75,7 +75,7 @@ for n in (1, 3, 6, 12):
 
 ## 연산에 대한 닫힘
 
-$f$ 와 $g$ 가 실수값 가측함수면 $f + g$, $fg$, $cf$, $\max(f,g)$, $\min(f,g)$, $\lvert f \rvert$, $f^+$, $f^-$ 가 모두 가측이다. 합의 가측성은 다음에서 나온다.
+$f$ 와 $g$ 가 실수값 가측함수면 $f + g$ , $fg$ , $cf$ , $\max(f,g)$ , $\min(f,g)$ , $\lvert f \rvert$ , $f^+$ , $f^-$ 가 모두 가측이다. 합의 가측성은 다음에서 나온다.
 
 $$
 \lbrace f+g>a\rbrace=\bigcup_{q\in\mathbb{Q}}\bigl(\lbrace f>q\rbrace\cap\lbrace g>a-q\rbrace\bigr)
@@ -85,7 +85,7 @@ $$
 
 ## 극한에 대한 닫힘
 
-가측함수열 $f_n$ 에 대해 $\sup f_n$, $\inf f_n$, $\limsup f_n$, $\liminf f_n$ 이 모두 가측이다.
+가측함수열 $f_n$ 에 대해 $\sup f_n$ , $\inf f_n$ , $\limsup f_n$ , $\liminf f_n$ 이 모두 가측이다.
 
 $$
 \Bigl\lbrace\sup_n f_n>a\Bigr\rbrace=\bigcup_n\lbrace f_n>a\rbrace

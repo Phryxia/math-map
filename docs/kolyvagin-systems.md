@@ -176,7 +176,7 @@ $$
 
 ## 자기쌍대 구조의 핵심계수
 
-$\mathcal F=\mathcal F^*$ 이고 $T\cong T^\ast$ 이면 두 군이 같으므로 $\chi=0$ 이다. $K=\mathbb Q$, $T=E[p]$, $p\ge5$ 이고 $E[p]$ 가 기약이며 $E$ 가 $p$ 에서 좋은 환원을 가질 때 자리별 기여는 다음과 같다.
+$\mathcal F=\mathcal F^*$ 이고 $T\cong T^\ast$ 이면 두 군이 같으므로 $\chi=0$ 이다. $K=\mathbb Q$ , $T=E[p]$ , $p\ge5$ 이고 $E[p]$ 가 기약이며 $E$ 가 $p$ 에서 좋은 환원을 가질 때 자리별 기여는 다음과 같다.
 
 | 자리 $v$ | $\dim H^1_{\mathcal F}(\mathbb Q_v,T)$ | $\dim H^0(\mathbb Q_v,T)$ | 기여 |
 | --- | --- | --- | --- |

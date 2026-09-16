@@ -98,7 +98,7 @@ flowchart TD
 
 ## Stickelberger 원소와 아이디얼
 
-$K=\mathbb Q(\mu_m)$, $G=\mathrm{Gal}(K/\mathbb Q)\cong(\mathbb Z/m)^{\times}$, $\sigma_a(\zeta_m)=\zeta_m^{a}$ 라 하자.
+$K=\mathbb Q(\mu_m)$ , $G=\mathrm{Gal}(K/\mathbb Q)\cong(\mathbb Z/m)^{\times}$ , $\sigma_a(\zeta_m)=\zeta_m^{a}$ 라 하자.
 
 $$
 \theta_m=\sum_{a\in(\mathbb Z/m)^{\times}}\Big\lbrace\frac{a}{m}\Big\rbrace\sigma_a^{-1}\in\mathbb Q[G],

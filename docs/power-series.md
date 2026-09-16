@@ -33,7 +33,7 @@ graph TD
 
 ## 멱급수와 수렴반경
 
-중심 $c$, 계수열 $a_n$ 에 대한 멱급수는 위의 형식적 합이다. **수렴반경** $R$ 은 Cauchy–Hadamard 공식으로 주어진다.
+중심 $c$ , 계수열 $a_n$ 에 대한 멱급수는 위의 형식적 합이다. **수렴반경** $R$ 은 Cauchy–Hadamard 공식으로 주어진다.
 
 $$
 \frac{1}{R} = \limsup_{n \to \infty} |a_n|^{1/n}, \qquad R \in [0, \infty] .

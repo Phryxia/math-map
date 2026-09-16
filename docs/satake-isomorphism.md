@@ -4,7 +4,7 @@
 
 [Hecke 작용소](hecke-operators.md) $T_p$ 는 이중 잉여류 $\mathrm{SL}_2(\mathbb Z)\begin{pmatrix}1&0\cr 0&p\end{pmatrix}\mathrm{SL}_2(\mathbb Z)$ 로 정의된다. 이 정의에서는 작용소들이 서로 가환인 이유도, 고유값이 $L$ 함수의 Euler 인자가 되는 이유도 보이지 않는다.
 
-[아델](adeles.md) 위로 올리면 두 사실이 함께 나온다. 자리 $p$ 를 고정하고 $G=\mathrm{GL}_n(\mathbb Q_p)$, $K=\mathrm{GL}_n(\mathbb Z_p)$ 라 하자. 콤팩트 받침을 갖는 양쪽 $K$ 불변 함수들이 합성곱으로 이루는 대수
+[아델](adeles.md) 위로 올리면 두 사실이 함께 나온다. 자리 $p$ 를 고정하고 $G=\mathrm{GL}_n(\mathbb Q_p)$ , $K=\mathrm{GL}_n(\mathbb Z_p)$ 라 하자. 콤팩트 받침을 갖는 양쪽 $K$ 불변 함수들이 합성곱으로 이루는 대수
 
 $$
 \mathcal H(G,K)=C_c^\infty(K\backslash G/K)
@@ -22,7 +22,7 @@ $$
 이 동형에서 두 가지가 나온다.
 
 - **가환성.** 오른쪽이 가환이므로 왼쪽도 가환이다. $T_mT_n=T_nT_m$ 이 증명 없이 따라 나온다.
-- **Satake 매개변수.** 가환 대수의 1 차원 지표는 점이다. 비분기 표현 $\pi_p$ 가 $\mathcal H(G,K)$ 에 스칼라로 작용하면 그 스칼라들의 모임이 $(\mathbb C^\times)^n/S_n$, 곧 $\widehat G$ 의 **반단순 켤레류** $A_{\pi_p}$ 하나다. $L$ 인자를 쌍대군의 표현으로 쓸 수 있다.
+- **Satake 매개변수.** 가환 대수의 1 차원 지표는 점이다. 비분기 표현 $\pi_p$ 가 $\mathcal H(G,K)$ 에 스칼라로 작용하면 그 스칼라들의 모임이 $(\mathbb C^\times)^n/S_n$ , 곧 $\widehat G$ 의 **반단순 켤레류** $A_{\pi_p}$ 하나다. $L$ 인자를 쌍대군의 표현으로 쓸 수 있다.
 
 $$
 L(s,\pi_p)=\det\bigl(1-q^{-s}A_{\pi_p}\bigr)^{-1}
@@ -335,7 +335,7 @@ $c$ 인자는 Harish-Chandra 의 $c$ 함수의 $p$ 진 판이고, Eisenstein 급
 
 행렬 계수가 $L^{2+\epsilon}$ 인 표현이 **온도적**이고, 비분기 표현에서는 $\lvert\alpha_i\rvert=1$ 과 동치다. 곧 $A_\pi$ 가 $\widehat G$ 의 콤팩트 형 $\widehat K$ 안에 켤레로 들어간다.
 
-$\mathrm{GL}_n$ 의 첨점 자기동형 표현이 모든 자리에서 온도적이라는 **Ramanujan–Petersson 추측**은 미해결이다. 무게 $k$ 의 정칙 첨점형식에 대해서는 Deligne 이 Weil 추측으로 증명했다. 이때 Satake 매개변수가 단위원 위에 있고 $\alpha_p\beta_p=1$ 이므로 $\alpha_p=e^{i\theta_p}$, $\beta_p=e^{-i\theta_p}$ 로 쓴다. 이 각 $\theta_p$ 의 분포를 묻는 것이 [Sato–Tate](sato-tate.md) 문제다.
+$\mathrm{GL}_n$ 의 첨점 자기동형 표현이 모든 자리에서 온도적이라는 **Ramanujan–Petersson 추측**은 미해결이다. 무게 $k$ 의 정칙 첨점형식에 대해서는 Deligne 이 Weil 추측으로 증명했다. 이때 Satake 매개변수가 단위원 위에 있고 $\alpha_p\beta_p=1$ 이므로 $\alpha_p=e^{i\theta_p}$ , $\beta_p=e^{-i\theta_p}$ 로 쓴다. 이 각 $\theta_p$ 의 분포를 묻는 것이 [Sato–Tate](sato-tate.md) 문제다.
 
 ## 국소 L 인자와 Euler 인자
 

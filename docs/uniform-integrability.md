@@ -76,7 +76,7 @@ $$
 G : [0,\infty) \to [0,\infty), \qquad \lim_{t \to \infty} \frac{G(t)}{t} = \infty, \qquad \sup_{f \in H} \int_X G(|f|) \thinspace d\mu < \infty .
 $$
 
-$G$ 는 증가 [볼록함수](convexity.md)로 잡을 수 있고, 초선형(superlinear) 증가함수에 대한 유계성이 UI 와 같다. 흔한 선택은 $G(t)=t^p$ ($p>1$) 이고 이때 판정이 $L^p$ 유계성이 된다. $G(t)=t\log(1+t)$ 도 쓰인다.
+$G$ 는 증가 [볼록함수](convexity.md)로 잡을 수 있고, 초선형(superlinear) 증가함수에 대한 유계성이 UI 와 같다. 흔한 선택은 $G(t)=t^p$ ($p>1$ ) 이고 이때 판정이 $L^p$ 유계성이 된다. $G(t)=t\log(1+t)$ 도 쓰인다.
 
 ## 확률에서의 표현
 
@@ -95,7 +95,7 @@ $$
 다음은 모두 UI 를 함의한다. 증명은 모두 Markov 부등식과 절단 기댓값의 직접 평가다.
 
 - **지배함수**: $|f|\le g$ 가 모든 $f$ 에 대해 성립하고 $g$ 가 적분가능하면, 절단 적분이 $g$ 의 꼬리 적분으로 눌린다. 따라서 [지배 수렴 정리](dominated-convergence.md)의 가정은 UI 를 준다.
-- **$L^p$ 유계 ($p>1$)**: Hölder 부등식으로
+- **$L^p$ 유계 ($p>1$ )**: Hölder 부등식으로
 
 $$
 \int_{\lbrace|f| > M\rbrace} |f| \thinspace d\mu \ \le \ \Big( \int |f|^p d\mu \Big)^{1/p} \mu(|f| > M)^{1 - 1/p}
@@ -117,7 +117,7 @@ $$
 
 유한 측도공간에서 다음이 동치다.
 
-1. $f_n$ 이 $L^1$ 에서 $f$ 로 수렴한다. 즉 $\int|f_n-f|\thinspace d\mu\to0$.
+1. $f_n$ 이 $L^1$ 에서 $f$ 로 수렴한다. 즉 $\int|f_n-f|\thinspace d\mu\to0$ .
 2. $f_n$ 이 $f$ 로 측도 수렴하고, 족 $\lbrace f_n\rbrace$ 이 균등적분가능하다.
 
 **증명 스케치 (2 ⇒ 1).** 절단 함수 $T_M(x)=\max(-M,\min(M,x))$ 를 쓴다. 삼각부등식으로

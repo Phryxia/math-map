@@ -66,7 +66,7 @@ $$
 
 를 만족하면 $x$ 에서 조화적이라 한다. $(P - I)h = 0$ 은 이산 Laplace 방정식이며 연산자 $I - P$ 는 [그래프 Laplacian](graph-laplacian.md)의 정규화된 형태다. 유한 그래프에서 경계집합 $B \subseteq V$ 위의 값이 주어지면, $V \setminus B$ 에서 조화적이고 $B$ 에서 주어진 값을 갖는 함수가 유일하게 존재한다. 유일성은 최대원리에서 나온다. 두 해의 차는 $V \setminus B$ 에서 조화적이고 경계에서 0 인데, 조화함수는 내부에서 최대·최소를 가질 수 없으므로 항등적으로 0 이다.
 
-**핵심 사실.** 서로 다른 두 목표 집합 $A$, $\mathbb Z$ 에 대해 도달 확률
+**핵심 사실.** 서로 다른 두 목표 집합 $A$ , $\mathbb Z$ 에 대해 도달 확률
 
 $$
 h(x) \thickspace=\thickspace P_x\big(\text{walk hits } A \text{ before } Z\big)
@@ -83,7 +83,7 @@ i(xy) \thickspace=\thickspace \frac{v(x) - v(y)}{r(xy)}, \qquad
 \sum_{y \sim x} i(xy) \thickspace=\thickspace 0 \quad (x \notin \lbrace a, z\rbrace).
 $$
 
-두 법칙을 합치면 전압이 전류원·배출점 밖에서 조화적임이 나온다. 그러므로 $v(a)=1$, $v(z)=0$ 인 전압은 곧 $a$ 를 $z$ 보다 먼저 방문할 확률이다. 유효저항은 단자 사이 전압차를 총 전류로 나눈 값이다.
+두 법칙을 합치면 전압이 전류원·배출점 밖에서 조화적임이 나온다. 그러므로 $v(a)=1$ , $v(z)=0$ 인 전압은 곧 $a$ 를 $z$ 보다 먼저 방문할 확률이다. 유효저항은 단자 사이 전압차를 총 전류로 나눈 값이다.
 
 $$
 R_{\mathrm{eff}}(a, z) \thickspace=\thickspace \frac{v(a) - v(z)}{\sum_{y \sim a} i(ay)} .

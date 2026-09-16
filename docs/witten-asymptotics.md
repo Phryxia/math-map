@@ -27,7 +27,7 @@ $$
 \delta\thinspace\mathrm{CS}(A)\propto\int\mathrm{tr}(\delta A\wedge F_A)
 $$
 
-이므로 임계점은 $F_A=0$, 곧 **평탄 접속**이다. 평탄 접속의 게이지류는 $\pi_1(M)\to\mathrm{SU}(2)$ 준동형의 켤레류와 같으므로 유한하거나 유한차원이고, 무한차원 적분이 $\pi_1$ 의 표현으로 내려온다.
+이므로 임계점은 $F_A=0$ , 곧 **평탄 접속**이다. 평탄 접속의 게이지류는 $\pi_1(M)\to\mathrm{SU}(2)$ 준동형의 켤레류와 같으므로 유한하거나 유한차원이고, 무한차원 적분이 $\pi_1$ 의 표현으로 내려온다.
 
 각 임계점의 기여는 정상위상법의 표준형을 따른다. 위상은 임계값 $e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}$ 이고 진폭은 2 차 변분의 행렬식의 $-1/2$ 승이다. 그 행렬식을 정규화하면 비꼬인 de Rham 복합체의 [Reidemeister 비틀림](reidemeister-torsion.md) $T_\alpha$ 가 되고, 행렬식의 부호에서 스펙트럼 흐름(Atiyah–Patodi–Singer 의 $\eta$ 불변량)이 위상으로 따라 나온다.
 

@@ -167,7 +167,7 @@ $$
 
 ## 국소 가해성 판정
 
-$C$ 를 원시 정수해로 동차화하면 $2Y^2=X^4-17Z^4$, $\gcd(X,Z)=1$ 이다. 홀수 소수에서는 $\bmod\thinspace p$ 의 비특이 해 하나면 Hensel 보조정리가 $\mathbb Z_p$ 해로 올려 준다.
+$C$ 를 원시 정수해로 동차화하면 $2Y^2=X^4-17Z^4$ , $\gcd(X,Z)=1$ 이다. 홀수 소수에서는 $\bmod\thinspace p$ 의 비특이 해 하나면 Hensel 보조정리가 $\mathbb Z_p$ 해로 올려 준다.
 
 ```python
 def hensel_point_mod_p(p):

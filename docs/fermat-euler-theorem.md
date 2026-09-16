@@ -81,7 +81,7 @@ a^{-1}\equiv a^{\varphi(n)-1}\pmod{n},\qquad
 a^{e}\equiv a^{\thinspace e \bmod \varphi(n)}\pmod{n}\ \ (\gcd(a,n)=1)
 $$
 
-두 번째 식에서 서로 소 조건은 뺄 수 없다. $n=4$, $a=2$, $e=2$ 에서 $e \bmod \varphi(4)=0$ 이지만 $2^0=1$ 이고 $2^2\equiv 0$ 이다. 서로 소가 아닌 경우에는 보정된 축약을 쓴다.
+두 번째 식에서 서로 소 조건은 뺄 수 없다. $n=4$ , $a=2$ , $e=2$ 에서 $e \bmod \varphi(4)=0$ 이지만 $2^0=1$ 이고 $2^2\equiv 0$ 이다. 서로 소가 아닌 경우에는 보정된 축약을 쓴다.
 
 $$
 e\ \ge\ \log_2 n \ \Longrightarrow\ a^{e}\equiv a^{\thinspace(e \bmod \varphi(n))+\varphi(n)} \pmod{n}
@@ -112,7 +112,7 @@ Korselt 판정법에 의해 $n$ 이 Carmichael 수인 것은 $n$ 이 square-free
 
 ## RSA의 정확성
 
-법 $N=pq$, 공개 지수 $e$, 비밀 지수 $d$ 가 다음을 만족한다고 하자.
+법 $N=pq$ , 공개 지수 $e$ , 비밀 지수 $d$ 가 다음을 만족한다고 하자.
 
 $$
 e\thinspace d\equiv 1 \pmod{\varphi(N)}

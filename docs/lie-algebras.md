@@ -2,7 +2,7 @@
 
 # 개요
 
-$\mathrm{SO}(3)$, $\mathrm{U}(n)$, $\mathrm{GL}\_n$ 같은 연속 대칭군은 [다양체](manifolds.md)이면서 군이다. 항등원의 접공간은 벡터공간이고, 군 곱셈의 비가환성은 그 위의 쌍선형 연산 하나로 압축된다.
+$\mathrm{SO}(3)$ , $\mathrm{U}(n)$ , $\mathrm{GL}\_n$ 같은 연속 대칭군은 [다양체](manifolds.md)이면서 군이다. 항등원의 접공간은 벡터공간이고, 군 곱셈의 비가환성은 그 위의 쌍선형 연산 하나로 압축된다.
 
 $$
 [X,Y]=XY-YX
@@ -20,7 +20,7 @@ $$
 
 ## 교환자
 
-$X$ 방향으로 시간 $t$, $Y$ 방향으로 $t$, 다시 $X$ 로 $-t$, $Y$ 로 $-t$ 만큼 흐르면 가환인 경우에만 제자리로 돌아온다. 남는 오차의 최저차항이 교환자다.
+$X$ 방향으로 시간 $t$ , $Y$ 방향으로 $t$ , 다시 $X$ 로 $-t$ , $Y$ 로 $-t$ 만큼 흐르면 가환인 경우에만 제자리로 돌아온다. 남는 오차의 최저차항이 교환자다.
 
 $$
 e^{tX}e^{tY}e^{-tX}e^{-tY}=e^{t^2[X,Y]+O(t^3)}
@@ -95,7 +95,7 @@ $$
 
 ## 딸림표현과 Killing 형식
 
-$\operatorname{ad}:\mathfrak g\to\mathfrak{gl}(\mathfrak g)$, $\operatorname{ad}\_X(Y)=[X,Y]$ 가 **딸림표현**이다. Jacobi 항등식이 이것이 Lie 대수 준동형임을 보장하며, 핵은 중심 $Z(\mathfrak g)$ 다.
+$\operatorname{ad}:\mathfrak g\to\mathfrak{gl}(\mathfrak g)$ , $\operatorname{ad}\_X(Y)=[X,Y]$ 가 **딸림표현**이다. Jacobi 항등식이 이것이 Lie 대수 준동형임을 보장하며, 핵은 중심 $Z(\mathfrak g)$ 다.
 
 딸림표현에서 만든 대칭 쌍선형형식이 **Killing 형식**이다.
 

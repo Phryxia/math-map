@@ -79,7 +79,7 @@ graph TD
 
 ## 국소체와 비분기 확대
 
-**국소체**는 이산 부치를 갖는 완비 체로 잔여체가 유한한 것이다. 표수 0 이면 $\mathbb Q_p$ 의 유한 확대, 표수 $p$ 면 $\mathbb F_q((T))$ 다. 정수환 $\mathcal O$, 극대 아이디얼 $\mathfrak m=(\pi)$, 잔여체 $k=\mathbb F_q$ 를 쓴다.
+**국소체**는 이산 부치를 갖는 완비 체로 잔여체가 유한한 것이다. 표수 0 이면 $\mathbb Q_p$ 의 유한 확대, 표수 $p$ 면 $\mathbb F_q((T))$ 다. 정수환 $\mathcal O$ , 극대 아이디얼 $\mathfrak m=(\pi)$ , 잔여체 $k=\mathbb F_q$ 를 쓴다.
 
 각 $n$ 에 대해 차수 $n$ 의 **비분기 확대**가 유일하게 존재한다. $k$ 의 차수 $n$ 확대 $\mathbb F_{q^n}$ 을 올린 것이고 Galois 군이 잔여체의 Galois 군과 같다.
 
@@ -124,7 +124,7 @@ $$
 
 $\mathcal F_\pi$ 를 $f\equiv\pi X\ (\deg2)$ 와 $f\equiv X^q\ (\mathfrak m)$ 을 만족하는 $f\in\mathcal O[[X]]$ 의 집합이라 하자.
 
-> **Lubin–Tate.** $f\in\mathcal F_\pi$ 마다 형식군 법칙 $F_f$ 가 유일하게 존재해 $f$ 가 $F_f$ 의 자기준동형이 된다. 또 환 준동형 $\mathcal O\to\mathrm{End}(F_f)$, $a\mapsto[a]_f$ 가 유일하게 있어 $[a]_f(X)\equiv aX\ (\deg2)$ 이고 $[\pi]_f=f$ 다.
+> **Lubin–Tate.** $f\in\mathcal F_\pi$ 마다 형식군 법칙 $F_f$ 가 유일하게 존재해 $f$ 가 $F_f$ 의 자기준동형이 된다. 또 환 준동형 $\mathcal O\to\mathrm{End}(F_f)$ , $a\mapsto[a]_f$ 가 유일하게 있어 $[a]_f(X)\equiv aX\ (\deg2)$ 이고 $[\pi]_f=f$ 다.
 
 구성은 차수에 대한 귀납이다. $F\equiv X+Y$ 에서 시작해 $\Delta=f(F)-F(f(X),f(Y))$ 의 $n$ 차 동차부분을 $\pi^n-\pi$ 로 나눈 것을 더한다. 잔여체에서 $f$ 가 Frobenius 이므로 $\Delta\equiv0\ (\mathfrak m)$ 이고, $\pi^n-\pi=\pi(\pi^{n-1}-1)$ 의 $\pi$ 가 그만큼 상쇄되어 나눗셈이 $\mathcal O$ 안에서 이루어진다.
 
@@ -151,7 +151,7 @@ $K_{\pi,n}=K(\Lambda_n)$ 으로 두고 $K_\pi=\bigcup_nK_{\pi,n}$ 이라 쓴다.
 
 ## 원분체와의 비교
 
-$K=\mathbb Q_p$, $\pi=p$, $f(X)=(1+X)^p-1$ 을 넣으면 표의 오른쪽 열이 나온다.
+$K=\mathbb Q_p$ , $\pi=p$ , $f(X)=(1+X)^p-1$ 을 넣으면 표의 오른쪽 열이 나온다.
 
 | Lubin–Tate | $K=\mathbb Q_p,\ f=(1+X)^p-1$ |
 |---|---|
@@ -191,7 +191,7 @@ $$
 
 ## 형식군의 귀납적 구성
 
-$K=\mathbb Q_3$, $\pi=3$, $q=3$ 에서 $F_f$ 를 차수 $6$ 미만까지 귀납으로 구성한다.
+$K=\mathbb Q_3$ , $\pi=3$ , $q=3$ 에서 $F_f$ 를 차수 $6$ 미만까지 귀납으로 구성한다.
 
 ```python
 from fractions import Fraction as Q

@@ -6,7 +6,7 @@
 
 # 직관
 
-집합은 순서 없는 명단이다. $\lbrace 1,3\rbrace$, $\lbrace 3,1\rbrace$, $\lbrace 1,3,3\rbrace$ 은 같은 집합이다. 순서가 필요하면 순서쌍을, 횟수가 필요하면 다중집합을 따로 둔다.
+집합은 순서 없는 명단이다. $\lbrace 1,3\rbrace$ , $\lbrace 3,1\rbrace$ , $\lbrace 1,3,3\rbrace$ 은 같은 집합이다. 순서가 필요하면 순서쌍을, 횟수가 필요하면 다중집합을 따로 둔다.
 
 원소 관계 $\in$ 와 포함 관계 $\subseteq$ 는 다르다. $1\in\lbrace 1,2\rbrace$ 이지만 $1\subseteq\lbrace 1,2\rbrace$ 는 아니고, $\lbrace 1\rbrace\subseteq\lbrace 1,2\rbrace$ 이지만 $\lbrace 1\rbrace\in\lbrace 1,2\rbrace$ 는 아니다. 집합은 다른 집합의 원소가 될 수 있다. $\varnothing\ne\lbrace\varnothing\rbrace$ 이다.
 
@@ -38,9 +38,9 @@ A\setminus B&=\lbrace x:x\in A\ \text{and}\ x\notin B\rbrace
 \end{aligned}
 $$
 
-전체집합 $U$ 를 고정하면 여집합은 $A^c=U\setminus A$ 다. $A=\lbrace 1,3\rbrace$, $B=\lbrace 3,5\rbrace$ 이면 $A\cup B=\lbrace 1,3,5\rbrace$, $A\cap B=\lbrace 3\rbrace$, $A\setminus B=\lbrace 1\rbrace$ 이다.
+전체집합 $U$ 를 고정하면 여집합은 $A^c=U\setminus A$ 다. $A=\lbrace 1,3\rbrace$ , $B=\lbrace 3,5\rbrace$ 이면 $A\cup B=\lbrace 1,3,5\rbrace$ , $A\cap B=\lbrace 3\rbrace$ , $A\setminus B=\lbrace 1\rbrace$ 이다.
 
-세 연산은 논리 연결사 $\lor$, $\land$, $\lnot$ 에 대응한다. 집합 등식의 증명은 임의의 $x$ 에 대해 양변의 소속 조건이 동치임을 보이는 것이다.
+세 연산은 논리 연결사 $\lor$ , $\land$ , $\lnot$ 에 대응한다. 집합 등식의 증명은 임의의 $x$ 에 대해 양변의 소속 조건이 동치임을 보이는 것이다.
 
 ## 멱집합과 곱집합
 

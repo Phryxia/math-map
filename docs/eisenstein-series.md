@@ -211,7 +211,7 @@ $$
 T_pE_k=(1+p^{k-1})E_k
 $$
 
-이므로 Satake 매개변수가 $\alpha=p^{(k-1)/2}$, $\beta=p^{-(k-1)/2}$ 이고 절댓값이 1 이 아니라 온도적이 아니다. 첨점형식이 Ramanujan 추측을 만족하는 것과 대조된다.
+이므로 Satake 매개변수가 $\alpha=p^{(k-1)/2}$ , $\beta=p^{-(k-1)/2}$ 이고 절댓값이 1 이 아니라 온도적이 아니다. 첨점형식이 Ramanujan 추측을 만족하는 것과 대조된다.
 
 자기동형 표현 가운데 더 작은 군에서 유도된 Eisenstein 쪽은 온도성을 깨고 첨점 쪽만 온도적일 것으로 기대된다. Arthur 의 분류에서 이 구분이 $A$ 매개변수와 $L$ 매개변수의 차이다.
 
@@ -235,7 +235,7 @@ $L$ 함수의 해석적 성질이 $\zeta$ 의 함수방정식으로 환원된다
 
 ## Selberg 대각합 공식
 
-Selberg 대각합 공식은 $\Gamma\backslash\mathbb H$ 의 Laplace 스펙트럼과 닫힌 측지선의 길이를 잇는다. 좌변에는 이산 스펙트럼과 함께 연속 스펙트럼의 기여가 들어가고 그 기여가 $\varphi'/\varphi(s)$, 곧 $\zeta'/\zeta$ 로 적힌다.
+Selberg 대각합 공식은 $\Gamma\backslash\mathbb H$ 의 Laplace 스펙트럼과 닫힌 측지선의 길이를 잇는다. 좌변에는 이산 스펙트럼과 함께 연속 스펙트럼의 기여가 들어가고 그 기여가 $\varphi'/\varphi(s)$ , 곧 $\zeta'/\zeta$ 로 적힌다.
 
 $$
 -\frac1{4\pi}\int_{-\infty}^{\infty}h(t)\thinspace\frac{\varphi'}{\varphi}\Bigl(\tfrac12+it\Bigr)dt

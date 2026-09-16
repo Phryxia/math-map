@@ -54,13 +54,13 @@ $$
 ## 대표적인 예
 
 - 유한차원: $\mathbb C^n$ 에 표준 내적. 모든 유한차원 내적 공간은 자동으로 완비다.
-- 수열 공간 $\ell^2$: 제곱합이 유한한 복소수열 전체.
+- 수열 공간 $\ell^2$ : 제곱합이 유한한 복소수열 전체.
 
 $$
 \ell^2 = \Big\lbrace (x_n)_{n\ge 1} : \sum_{n=1}^{\infty} |x_n|^2 < \infty \Big\rbrace,\qquad \langle x, y\rangle = \sum_{n=1}^{\infty} x_n \overline{y_n}.
 $$
 
-- 함수 공간 $L^2(\mu)$: [측도](measure.md) 공간 위에서 제곱적분가능한 [가측함수](measurable-functions.md)를 거의 어디서나 같음으로 동일시한 공간.
+- 함수 공간 $L^2(\mu)$ : [측도](measure.md) 공간 위에서 제곱적분가능한 [가측함수](measurable-functions.md)를 거의 어디서나 같음으로 동일시한 공간.
 
 $$
 L^2(\mu) = \Big\lbrace f : \int |f|^2 \thinspace d\mu < \infty \Big\rbrace,\qquad \langle f, g\rangle = \int f \overline{g}\thinspace d\mu.
@@ -98,7 +98,7 @@ $$
 \exists ! \thinspace p \in C : \ \Vert x - p\Vert = \inf_{c \in C} \Vert x - c\Vert =: d.
 $$
 
-증명 스케치. $\lVert x-c_n\rVert\to d$ 인 점렬을 잡고 평행사변형 법칙을 $x-c_n$, $x-c_m$ 에 적용하면
+증명 스케치. $\lVert x-c_n\rVert\to d$ 인 점렬을 잡고 평행사변형 법칙을 $x-c_n$ , $x-c_m$ 에 적용하면
 
 $$
 \Vert c_n - c_m\Vert^2 = 2\Vert x-c_n\Vert^2 + 2\Vert x-c_m\Vert^2 - 4\Big\Vert x - \tfrac{c_n+c_m}{2}\Big\Vert^2 \le 2\Vert x-c_n\Vert^2 + 2\Vert x-c_m\Vert^2 - 4d^2
@@ -130,7 +130,7 @@ $$
 f(x) = \langle x, y\rangle \quad (\forall x \in H),\qquad \Vert f\Vert = \Vert y\Vert.
 $$
 
-증명 스케치. $f=0$ 이면 $y=0$. 아니면 핵 $N=\ker f$ 는 닫힌 진부분공간이므로 직교분해에 의해 $N^\perp$ 에 단위벡터 $z$ 가 있다. 임의의 $x$ 에 대해 $f(x)z-f(z)x$ 가 $N$ 에 속함을 확인하면 $y=\overline{f(z)}\thinspace z$ 가 답이다.
+증명 스케치. $f=0$ 이면 $y=0$ . 아니면 핵 $N=\ker f$ 는 닫힌 진부분공간이므로 직교분해에 의해 $N^\perp$ 에 단위벡터 $z$ 가 있다. 임의의 $x$ 에 대해 $f(x)z-f(z)x$ 가 $N$ 에 속함을 확인하면 $y=\overline{f(z)}\thinspace z$ 가 답이다.
 
 이 정리는 Hilbert 공간이 자기 자신의 쌍대공간과 (켤레선형으로) 동일함을 뜻한다. 약형식 편미분방정식의 해의 존재(Lax–Milgram), 확률론의 [조건부 기댓값](conditional-expectation.md) 구성, [Radon–Nikodym 정리](radon-nikodym.md)의 von Neumann 식 증명이 모두 여기서 나온다.
 
@@ -142,7 +142,7 @@ $$
 \sum_{n} |\langle x, e_n\rangle|^2 \le \Vert x\Vert^2 .
 $$
 
-특히 계수열은 $\ell^2$ 에 속한다. 정규직교계가 완비(그 생성이 조밀, 동치로 $\lbrace e_n\rbrace^\perp=\lbrace 0\rbrace$)이면 정규직교기저라 하고, 이때 부등식이 등식이 된다.
+특히 계수열은 $\ell^2$ 에 속한다. 정규직교계가 완비(그 생성이 조밀, 동치로 $\lbrace e_n\rbrace^\perp=\lbrace 0\rbrace$ )이면 정규직교기저라 하고, 이때 부등식이 등식이 된다.
 
 $$
 x = \sum_{n} \langle x, e_n\rangle e_n,\qquad \Vert x\Vert^2 = \sum_{n} |\langle x, e_n\rangle|^2 .

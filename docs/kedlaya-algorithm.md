@@ -48,7 +48,7 @@ $$
 a_p\equiv\big[\thinspace x^{p-1}\thinspace\big]\thinspace f(x)^{(p-1)/2}\pmod p
 $$
 
-이 계수가 **Hasse 불변량**이고, Frobenius 의 코호몰로지 작용을 정밀도 $p^1$ 로 계산한 값이다. $|a_p|\le2\sqrt p$ 이므로 $4\sqrt p<p$, 곧 $p>16$ 이면 $a_p$ 가 유일하게 복원된다.
+이 계수가 **Hasse 불변량**이고, Frobenius 의 코호몰로지 작용을 정밀도 $p^1$ 로 계산한 값이다. $|a_p|\le2\sqrt p$ 이므로 $4\sqrt p<p$ , 곧 $p>16$ 이면 $a_p$ 가 유일하게 복원된다.
 
 Kedlaya 알고리즘은 같은 구조에서 정밀도를 $p^1$ 에서 $p^N$ 으로, 종수 $1$ 을 종수 $g$ 로, 소수체를 $\mathbb F_{p^n}$ 으로 올린 것이다.
 

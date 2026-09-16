@@ -38,7 +38,7 @@ rank 는 순서대로 $3,1,0,-1,-3$ 이고 법 $5$ 로 줄이면 $3,1,0,4,2$ 로
 
 ## crank 의 정의
 
-Andrews–Garvan 의 답은 $1$ 을 특별 취급한다. 분할 $\lambda$ 에서 $1$ 의 개수를 $\omega$, $\omega$ 보다 큰 부분의 개수를 $\mu$ 라 하면
+Andrews–Garvan 의 답은 $1$ 을 특별 취급한다. 분할 $\lambda$ 에서 $1$ 의 개수를 $\omega$ , $\omega$ 보다 큰 부분의 개수를 $\mu$ 라 하면
 
 $$
 \mathrm{crank}(\lambda)=\begin{cases}\text{가장 큰 부분}&\omega=0\cr \mu-\omega&\omega>0\end{cases}
@@ -103,7 +103,7 @@ $$
 
 이다.
 
-**정리 (Andrews–Garvan, 1988).** crank 는 $5n+4$, $7n+5$, $11n+6$ 에서 각각 법 $5,7,11$ 로 균등 분포한다.
+**정리 (Andrews–Garvan, 1988).** crank 는 $5n+4$ , $7n+5$ , $11n+6$ 에서 각각 법 $5,7,11$ 로 균등 분포한다.
 
 $p(1)=1$ 이라 균등 분포가 불가능하므로 $n=1$ 은 관례상 따로 다룬다.
 

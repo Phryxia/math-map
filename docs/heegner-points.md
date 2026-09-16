@@ -77,7 +77,7 @@ $N=11$ 에서 $D=-7$ 이 나온다. $-7\equiv 37\pmod{44}$ 이고 $9^2\equiv37$ 
 
 ## 복소 곱셈과 힐베르트 유체
 
-위 구성은 복소해석적인데 나온 점은 대수적수 체 위에서 정의된다. 근거는 [복소 곱셈론](complex-multiplication.md)이다. $\mathbb C/\mathfrak a$ 의 $j$ 불변량은 대수적 정수이고 $K$ 의 **힐베르트 유체** $H$, 곧 최대 비분기 아벨확대를 생성한다.
+위 구성은 복소해석적인데 나온 점은 대수적수 체 위에서 정의된다. 근거는 [복소 곱셈론](complex-multiplication.md)이다. $\mathbb C/\mathfrak a$ 의 $j$ 불변량은 대수적 정수이고 $K$ 의 **힐베르트 유체** $H$ , 곧 최대 비분기 아벨확대를 생성한다.
 
 $$
 H=K\bigl(j(\mathcal O_K)\bigr),\qquad \mathrm{Gal}(H/K)\cong \mathrm{Cl}(K)
@@ -143,7 +143,7 @@ $$
 
 ## Gross–Zagier 공식
 
-$y_K=\mathrm{Tr}\_{H/K}\varphi(x_{\mathcal O_K})$, $\hat h$ 를 $E/K$ 위의 Néron–Tate 정준 높이, $u=|\mathcal O_K^\times|/2$, $\langle f,f\rangle$ 을 Petersson 노름이라 하면
+$y_K=\mathrm{Tr}\_{H/K}\varphi(x_{\mathcal O_K})$ , $\hat h$ 를 $E/K$ 위의 Néron–Tate 정준 높이, $u=|\mathcal O_K^\times|/2$ , $\langle f,f\rangle$ 을 Petersson 노름이라 하면
 
 $$
 L'(E/K,1)=\frac{32\pi^2\thinspace\langle f,f\rangle}{u^2\sqrt{|D|}}\thickspace\hat h(y_K)

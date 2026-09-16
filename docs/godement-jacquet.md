@@ -41,7 +41,7 @@ $$
 2. $\chi$ : 군 $\mathbb A^\times$ 의 지표. 곧 1 차원 표현.
 3. $\lvert x\rvert^s$ : 군에서 $\mathbb C^\times$ 로 가는 매개변수족.
 
-함수방정식은 $f\leftrightarrow\hat f$, $\chi\leftrightarrow\chi^{-1}$, $s\leftrightarrow1-s$ 의 대칭에서 나오고 증명은 Poisson 합공식이다.
+함수방정식은 $f\leftrightarrow\hat f$ , $\chi\leftrightarrow\chi^{-1}$ , $s\leftrightarrow1-s$ 의 대칭에서 나오고 증명은 Poisson 합공식이다.
 
 ## 행렬 계수
 
@@ -260,7 +260,7 @@ for p in PR[:6]:
 #   13      -577738      -577738.0    1792160394037.0      1792160394037  True
 ```
 
-$1-\tau(p)X+p^{11}X^2=\det(1-X\thinspace A_{\pi_p})$ 에서 $A_{\pi_p}$ 의 고윳값이 $\alpha_p,\beta_p$ 이고, 대각합이 $\tau(p)$, 행렬식이 $p^{11}$ 이다. 이 행렬이 Satake 매개변수이고 $\mathrm{GL}_n$ 에서는 $n\times n$ 이 된다.
+$1-\tau(p)X+p^{11}X^2=\det(1-X\thinspace A_{\pi_p})$ 에서 $A_{\pi_p}$ 의 고윳값이 $\alpha_p,\beta_p$ 이고, 대각합이 $\tau(p)$ , 행렬식이 $p^{11}$ 이다. 이 행렬이 Satake 매개변수이고 $\mathrm{GL}_n$ 에서는 $n\times n$ 이 된다.
 
 ## 계수와 대칭곱 지표
 

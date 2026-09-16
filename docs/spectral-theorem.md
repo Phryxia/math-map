@@ -13,7 +13,7 @@ x^{\mathsf T}Ax=\sum_{i=1}^{n}\lambda_i y_i^2,
 \qquad y=Q^{\mathsf T}x
 $$
 
-$Av=\lambda v$, $Aw=\mu w$ 이고 $\lambda\neq\mu$ 이면 대칭성에서 $\lambda\langle v,w\rangle=\langle Av,w\rangle=\langle v,Aw\rangle=\mu\langle v,w\rangle$ 이므로 $\langle v,w\rangle=0$ 이다. 서로 다른 고윳값의 고유공간은 직교한다.
+$Av=\lambda v$ , $Aw=\mu w$ 이고 $\lambda\neq\mu$ 이면 대칭성에서 $\lambda\langle v,w\rangle=\langle Av,w\rangle=\langle v,Aw\rangle=\mu\langle v,w\rangle$ 이므로 $\langle v,w\rangle=0$ 이다. 서로 다른 고윳값의 고유공간은 직교한다.
 
 # 정의
 
@@ -63,7 +63,7 @@ $$
 
 ## 스펙트럼 분해와 함수 계산
 
-서로 다른 고윳값을 $\mu_1,\dots,\mu_k$, $P_i$ 를 그 고유공간으로의 정사영이라 하면
+서로 다른 고윳값을 $\mu_1,\dots,\mu_k$ , $P_i$ 를 그 고유공간으로의 정사영이라 하면
 
 $$
 A=\sum_{i=1}^{k}\mu_i P_i,\qquad
@@ -78,7 +78,7 @@ $$
 
 ## Normal 연산자와 반례
 
-복소 내적 공간에서 unitary 로 대각화 가능한 것은 normal 인 것과 동치이며, Hermitian, skew-Hermitian, unitary 행렬이 모두 normal 의 특수한 경우다[^1]. 대칭성이 없으면 결론이 깨진다. 첫 행 $(0,1)$, 둘째 행 $(0,0)$ 인 행렬은 고유벡터가 한 방향뿐이라 대각화되지 않고, 실회전행렬은 실고윳값이 없다.
+복소 내적 공간에서 unitary 로 대각화 가능한 것은 normal 인 것과 동치이며, Hermitian, skew-Hermitian, unitary 행렬이 모두 normal 의 특수한 경우다[^1]. 대칭성이 없으면 결론이 깨진다. 첫 행 $(0,1)$ , 둘째 행 $(0,0)$ 인 행렬은 고유벡터가 한 방향뿐이라 대각화되지 않고, 실회전행렬은 실고윳값이 없다.
 
 ## Rayleigh 몫과 min–max
 

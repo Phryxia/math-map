@@ -46,7 +46,7 @@ $$
 =\int_{\Gamma_\infty\backslash\mathbb H}F(z)\thinspace y^s\thinspace d\mu
 $$
 
-가 된다. 합이 영역을 넓히는 데 쓰이고 사라진다. $\Gamma_\infty$ 를 $z\mapsto z+1$ 이 생성하므로 오른쪽 영역은 $0\le x<1$, $y>0$ 인 띠이고, $x$ 적분에는 Fourier 계수의 직교성
+가 된다. 합이 영역을 넓히는 데 쓰이고 사라진다. $\Gamma_\infty$ 를 $z\mapsto z+1$ 이 생성하므로 오른쪽 영역은 $0\le x<1$ , $y>0$ 인 띠이고, $x$ 적분에는 Fourier 계수의 직교성
 
 $$
 \int_0^1e^{2\pi i(n-m)x}\thinspace dx=\delta_{nm}

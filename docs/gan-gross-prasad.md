@@ -78,7 +78,7 @@ $$
 H=N\rtimes G(W),\qquad \nu:N\to\mathbb C^\times
 $$
 
-로 둔다. $\nu$ 는 $G(W)$ 의 작용으로 안정되는 일반 지표다. $d=1$ 에서는 $N$ 이 자명하고 $H=G(W)$, $\nu=1$ 이며 쌍은
+로 둔다. $\nu$ 는 $G(W)$ 의 작용으로 안정되는 일반 지표다. $d=1$ 에서는 $N$ 이 자명하고 $H=G(W)$ , $\nu=1$ 이며 쌍은
 
 $$
 \bigl(\mathrm{SO}(n+1)\times\mathrm{SO}(n),\ \mathrm{SO}(n)\bigr),

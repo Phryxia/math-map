@@ -59,7 +59,7 @@ graph LR
 
 ## 갱신 규칙
 
-유한 그래프의 정점 집합을 $V$, 정점 $v$ 의 이웃 집합을 $N(v)$ 라 한다. $c_t(v)$ 는 $t$ 번째 반복에서 $v$ 에 붙인 색이다. 초기 색 $c_0$ 은 주어진 라벨이며 라벨이 없으면 모든 정점에 같은 색을 준다.
+유한 그래프의 정점 집합을 $V$ , 정점 $v$ 의 이웃 집합을 $N(v)$ 라 한다. $c_t(v)$ 는 $t$ 번째 반복에서 $v$ 에 붙인 색이다. 초기 색 $c_0$ 은 주어진 라벨이며 라벨이 없으면 모든 정점에 같은 색을 준다.
 
 $$
 c_{t+1}(v)=\operatorname{ID}\left(c_t(v),\lbrace\negthinspace\lbrace c_t(u):u\in N(v)\rbrace\negthinspace\rbrace\right)

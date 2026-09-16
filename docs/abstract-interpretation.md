@@ -127,7 +127,7 @@ $$
 연산자 $\nabla\colon A\times A\to A$ 가 **위드닝**이라 함은 다음을 만족하는 것이다.
 
 1. $a\sqsubseteq a\nabla b$ 이고 $b\sqsubseteq a\nabla b$
-2. 임의의 수열 $(b_n)$ 에 대해 $a_0=b_0$, $a_{n+1}=a_n\nabla b_{n+1}$ 로 정의한 수열이 유한 단계에 안정화
+2. 임의의 수열 $(b_n)$ 에 대해 $a_0=b_0$ , $a_{n+1}=a_n\nabla b_{n+1}$ 로 정의한 수열이 유한 단계에 안정화
 
 조건 2 가 종료를 강제한다. 대칭적으로 $\Delta$ 가 **내로잉**이라 함은 $b\sqsubseteq a$ 일 때 $b\sqsubseteq a\Delta b\sqsubseteq a$ 이고 하강 사슬이 안정화하는 것이다.
 

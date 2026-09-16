@@ -35,7 +35,7 @@ graph TD
 
 ## KL divergence
 
-같은 표본공간 위의 두 분포 $P$, $Q$ 에 대해, 이산인 경우
+같은 표본공간 위의 두 분포 $P$ , $Q$ 에 대해, 이산인 경우
 
 $$
 D(P\thinspace\Vert\thinspace Q) = \sum_{x} p(x)\thinspace\log\frac{p(x)}{q(x)}
@@ -101,7 +101,7 @@ $$
 
 ## 비대칭성과 삼각부등식 실패
 
-KL divergence 는 거리 공리 둘을 어긴다. 매개변수 0.1, 0.5, 0.9 인 세 Bernoulli 분포를 $P$, $Q$, $R$ 라 하자(자연로그 기준).
+KL divergence 는 거리 공리 둘을 어긴다. 매개변수 0.1, 0.5, 0.9 인 세 Bernoulli 분포를 $P$ , $Q$ , $R$ 라 하자(자연로그 기준).
 
 $$
 D(P\thinspace\Vert\thinspace Q) \approx 0.368,\qquad D(Q\thinspace\Vert\thinspace P) \approx 0.511 .
@@ -132,7 +132,7 @@ $$
 
 ## 상호정보량의 성질
 
-- 대칭. 정의에서 바로 $I(X;Y)=I(Y;X)$.
+- 대칭. 정의에서 바로 $I(X;Y)=I(Y;X)$ .
 - 비음성. Gibbs 부등식의 따름정리이며, 0인 것과 독립인 것이 동치다.
 - 연쇄법칙.
 

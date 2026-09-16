@@ -180,7 +180,7 @@ $$
 B_{\mathrm{cris}}=\Big(A_{\mathrm{inf}}\big[\tfrac{\xi^n}{n!}\big]^\wedge_p[1/p]\Big)[1/t]\ \subset\ B_{\mathrm{dR}}
 $$
 
-$W(R)$ 의 Frobenius 가 내려와 $\varphi$ 를 주고 $\varphi(t)=pt$ 다. 불변부분체는 $K_0=W(k)[1/p]$, 곧 $K$ 의 최대 비분기 부분체다. $p$ 의 $p^n$ 제곱근 계 $\tilde p\in R$ 를 골라 초월원소 $u=\log[\tilde p]$ 를 형식적으로 붙이면 다음이 된다.
+$W(R)$ 의 Frobenius 가 내려와 $\varphi$ 를 주고 $\varphi(t)=pt$ 다. 불변부분체는 $K_0=W(k)[1/p]$ , 곧 $K$ 의 최대 비분기 부분체다. $p$ 의 $p^n$ 제곱근 계 $\tilde p\in R$ 를 골라 초월원소 $u=\log[\tilde p]$ 를 형식적으로 붙이면 다음이 된다.
 
 $$
 B_{\mathrm{st}}=B_{\mathrm{cris}}[u],\qquad
@@ -242,7 +242,7 @@ $$
 
 ## 비교정리
 
-기하가 이 조건들을 만족한다는 Fontaine 의 $C_{\mathrm{st}}$ 추측을 Faltings, Tsuji, Nizioł 등이 증명했다. $X/K$ 가 고유하고 매끄러우며 $\mathcal O_K$ 위에 반안정 모형을 가지면 다음이 $\varphi$, $N$, $G_K$, 여과를 모두 보존하며 성립한다.
+기하가 이 조건들을 만족한다는 Fontaine 의 $C_{\mathrm{st}}$ 추측을 Faltings, Tsuji, Nizioł 등이 증명했다. $X/K$ 가 고유하고 매끄러우며 $\mathcal O_K$ 위에 반안정 모형을 가지면 다음이 $\varphi$ , $N$ , $G_K$ , 여과를 모두 보존하며 성립한다.
 
 $$
 B_{\mathrm{st}}\otimes_{K_0}H^n_{\mathrm{log-cris}}(X_k)\thickspace\cong\thickspace B_{\mathrm{st}}\otimes_{\mathbb Q_p}H^n_{\mathrm{et}}(X_{\bar K},\mathbb Q_p)

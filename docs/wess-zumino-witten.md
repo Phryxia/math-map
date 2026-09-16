@@ -99,7 +99,7 @@ T(z)=\frac{1}{2(k+h^\vee)}\sum_a :J^aJ^a:(z),\qquad
 c=\frac{k\thinspace\dim\mathfrak g}{k+h^\vee}
 $$
 
-$h^\vee$ 는 쌍대 Coxeter 수다. 분모의 $k+h^\vee$ 가 Chern–Simons 의 이동된 레벨과 같은 양이고, 양자 불변량 공식의 $q=e^{2\pi i/(k+h^\vee)}$ 가 여기서 온다. $\mathfrak{su}(2)$ 에서는 $h^\vee=2$, $\dim\mathfrak g=3$ 이라 $c=3k/(k+2)$ 이고 $k=1$ 에서 $c=1$ 이다.
+$h^\vee$ 는 쌍대 Coxeter 수다. 분모의 $k+h^\vee$ 가 Chern–Simons 의 이동된 레벨과 같은 양이고, 양자 불변량 공식의 $q=e^{2\pi i/(k+h^\vee)}$ 가 여기서 온다. $\mathfrak{su}(2)$ 에서는 $h^\vee=2$ , $\dim\mathfrak g=3$ 이라 $c=3k/(k+2)$ 이고 $k=1$ 에서 $c=1$ 이다.
 
 ## 적분가능 표현과 융합
 
@@ -123,7 +123,7 @@ $k\to\infty$ 에서 두 번째 조건이 사라져 Clebsch–Gordan 규칙으로
 
 $\Sigma$ 위의 상관함수는 정칙 조각과 반정칙 조각의 쌍선형 결합이고, 정칙 조각들이 이루는 유한차원 공간이 **공형 블록** 공간 $\mathcal V(\Sigma;\lambda_1,\dots,\lambda_n)$ 이다.
 
-**벌크–경계 대응.** Chern–Simons 이론이 곡면 $\Sigma$(Wilson 선이 뚫고 지나간 점들에 라벨 $\lambda_i$ 가 붙은)에 붙이는 Hilbert 공간은 같은 자료의 WZW 공형 블록 공간과 표준적으로 동형이다.
+**벌크–경계 대응.** Chern–Simons 이론이 곡면 $\Sigma$ (Wilson 선이 뚫고 지나간 점들에 라벨 $\lambda_i$ 가 붙은)에 붙이는 Hilbert 공간은 같은 자료의 WZW 공형 블록 공간과 표준적으로 동형이다.
 
 3 차원 쪽의 상태가 2 차원 쪽의 함수에 대응한다. 3 다양체를 손잡이체 둘로 가르면 각 조각이 그 Hilbert 공간의 벡터를 주고, 둘을 붙이는 사상이 모듈러 군의 작용이 된다. [Reshetikhin–Turaev](reshetikhin-turaev.md) 불변량의 구성이 이 그림의 범주론 판본이다.
 
@@ -151,7 +151,7 @@ $$
 d_{1}=\frac{\sin(2\pi/(k+2))}{\sin(\pi/(k+2))}=2\cos\frac{\pi}{k+2}
 $$
 
-이고 $k=1,2,3$ 에서 각각 $1$, $\sqrt2$, 황금비다. 정수가 아닌 차원은 이 범주가 벡터공간의 범주가 아니라는 표시이고, [애니온](anyons.md)의 통계가 자명하지 않은 것과 같은 사실이다.
+이고 $k=1,2,3$ 에서 각각 $1$ , $\sqrt2$ , 황금비다. 정수가 아닌 차원은 이 범주가 벡터공간의 범주가 아니라는 표시이고, [애니온](anyons.md)의 통계가 자명하지 않은 것과 같은 사실이다.
 
 ## 대응 사전
 

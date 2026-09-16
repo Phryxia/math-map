@@ -103,7 +103,7 @@ $\mathbb T$ 는 가환이고 $S_k(\Gamma_0(N))$ 위에 충실히 작용하므로
 
 ## 옛형식과 새형식
 
-$M\mid N$, $M<N$ 인 각 $M$ 과 $d\mid(N/M)$ 에 대한 사상 $f(\tau)\mapsto f(d\tau)$ 의 상이 생성하는 부분공간이 **옛부분공간** $S_k^{\mathrm{old}}(N)$ 이다.
+$M\mid N$ , $M<N$ 인 각 $M$ 과 $d\mid(N/M)$ 에 대한 사상 $f(\tau)\mapsto f(d\tau)$ 의 상이 생성하는 부분공간이 **옛부분공간** $S_k^{\mathrm{old}}(N)$ 이다.
 
 $$
 S_k^{\mathrm{new}}(\Gamma_0(N))=\big(S_k^{\mathrm{old}}(\Gamma_0(N))\big)^{\perp}\quad(\text{Petersson 내적})

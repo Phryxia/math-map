@@ -102,7 +102,7 @@ $$
 \sum_\lambda s_\lambda(x)s_\lambda(y)=\prod_{i,j}\frac1{1-x_iy_j}
 $$
 
-을 $x_i=\alpha_it$, $y_j=\beta_j$ 로 쓰면 오른쪽이 다음이 된다.
+을 $x_i=\alpha_it$ , $y_j=\beta_j$ 로 쓰면 오른쪽이 다음이 된다.
 
 $$
 \prod_{i,j}\frac1{1-\alpha_i\beta_jq^{-s}}=\det\bigl(1-(A_\pi\otimes A_{\pi'})q^{-s}\bigr)^{-1}=L(s,\pi\times\pi')
@@ -157,7 +157,7 @@ for n in [2, 3]:
             print(f"n={n}  t={t}  |lam|<={N:2d}:  차이 {abs(s-prod):.1e}")
 ```
 
-왼쪽은 분할마다 행렬식 두 개를 쓰고 오른쪽은 $n^2$ 개의 일차 인자를 곱한다. $n=3$, $N=20$ 에서 왼쪽은 분할 수백 개의 합이고 오른쪽은 인자 아홉 개의 곱인데 소수점 열다섯 자리까지 같다.
+왼쪽은 분할마다 행렬식 두 개를 쓰고 오른쪽은 $n^2$ 개의 일차 인자를 곱한다. $n=3$ , $N=20$ 에서 왼쪽은 분할 수백 개의 합이고 오른쪽은 인자 아홉 개의 곱인데 소수점 열다섯 자리까지 같다.
 
 $t$ 가 작을수록, 곧 $\mathrm{Re}(s)$ 가 클수록 수렴이 빠르다. $t=0.1$ 에서는 $|\lambda|\le12$ 로 기계정밀도에 닿고 $t=0.3$ 에서는 $|\lambda|\le20$ 이 필요하다. Rankin–Selberg 적분이 $\mathrm{Re}(s)$ 가 클 때만 수렴하고 나머지 영역을 해석적 접속으로 얻는 사정의 산술적 그림자다.
 

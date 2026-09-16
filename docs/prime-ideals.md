@@ -141,7 +141,7 @@ $k$ 가 대수적으로 닫힌 체이면 $k[x_1,\dots,x_n]$ 의 극대 아이디
 
 ## 차원과 구조
 
-소 아이디얼의 사슬 $P_0 \subsetneq P_1 \subsetneq \cdots \subsetneq P_d$ 의 최대 길이가 Krull 차원이다. 체는 $0$, $\mathbb{Z}$ 와 $k[x]$ 는 $1$, $k[x_1,\ldots,x_n]$ 은 $n$ 이다. 이 정의는 좌표도 위상도 쓰지 않고 대수적 조건만으로 공간의 차원을 준다.[^1]
+소 아이디얼의 사슬 $P_0 \subsetneq P_1 \subsetneq \cdots \subsetneq P_d$ 의 최대 길이가 Krull 차원이다. 체는 $0$ , $\mathbb{Z}$ 와 $k[x]$ 는 $1$ , $k[x_1,\ldots,x_n]$ 은 $n$ 이다. 이 정의는 좌표도 위상도 쓰지 않고 대수적 조건만으로 공간의 차원을 준다.[^1]
 
 [^1]: MIT OpenCourseWare 18.703, *Lecture 18: Prime and Maximal Ideals*, Definition-Lemma 18.1, Definition 18.6, Theorem 18.8 과 Corollary 18.9. https://ocw.mit.edu/courses/18-703-modern-algebra-spring-2013/247dc7bcf731827674f4a2338f929a7a_MIT18_703S13_pra_l_18.pdf
 
