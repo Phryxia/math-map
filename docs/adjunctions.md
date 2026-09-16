@@ -2,7 +2,7 @@
 
 # 개요
 
-Adjunction은 두 [functor](functors.md) 사이의 가장 흔하고 가장 유용한 관계다. 두 범주 사이를 오가는 functor `F`, `G` 가 있을 때, `F` 를 보낸 뒤 잰 사상의 집합과 `G` 로 되돌린 뒤 잰 사상의 집합이 자연스럽게 같다면 `F` 는 `G` 의 left adjoint다.
+Adjunction은 두 [functor](functors.md) 사이의 가장 흔하고 가장 유용한 관계다. 두 범주 사이를 오가는 functor $F$, $G$ 가 있을 때, $F$ 를 보낸 뒤 잰 사상의 집합과 $G$ 로 되돌린 뒤 잰 사상의 집합이 자연스럽게 같다면 $F$ 는 $G$ 의 left adjoint다.
 
 자유군 구성, 텐서곱, 지수 대상, 스칼라 확장, 논리에서의 한정기호처럼 서로 무관해 보이는 구성들이 모두 adjunction 한 줄로 정리된다. 또한 adjoint functor는 limit, colimit의 보존 여부를 자동으로 결정하므로, "무엇이 무엇을 보존하는가" 를 매번 계산하지 않아도 된다.
 
@@ -12,43 +12,43 @@ Adjunction은 두 [functor](functors.md) 사이의 가장 흔하고 가장 유�
 
 ## 최선의 근사
 
-망각 functor `U` 가 군을 그 바탕집합으로 보낸다고 하자. 집합 `S` 에 대해 "군 구조를 억지로 얹되 아무 관계식도 추가하지 않는" 군이 자유군 `F(S)` 다. 자유군의 정의적 성질은 다음과 같다.
+망각 functor $U$ 가 군을 그 바탕집합으로 보낸다고 하자. 집합 $S$ 에 대해 "군 구조를 억지로 얹되 아무 관계식도 추가하지 않는" 군이 자유군 $F(S)$ 다. 자유군의 정의적 성질은 다음과 같다.
 
-- 집합 사상 `S -> U(H)` 를 주는 것과 군 준동형 `F(S) -> H` 를 주는 것이 같다.
+- 집합 사상 $S\to U(H)$ 를 주는 것과 군 준동형 $F(S)\to H$ 를 주는 것이 같다.
 
-즉 `F(S)` 는 `S` 를 군의 세계로 옮기는 가장 경제적인 방법이다. Left adjoint는 늘 이런 "자유롭고 낭비 없는 생성" 이고, right adjoint는 "구조를 잊거나 잘라내는 쪽" 이다.
+즉 $F(S)$ 는 $S$ 를 군의 세계로 옮기는 가장 경제적인 방법이다. Left adjoint는 늘 이런 "자유롭고 낭비 없는 생성" 이고, right adjoint는 "구조를 잊거나 잘라내는 쪽" 이다.
 
 ## 부분순서에서의 그림
 
-[부분순서](partial-orders.md) 집합을 사상이 최대 하나뿐인 범주로 보면 adjunction은 Galois connection이 된다. 단조사상 `f`, `g` 에 대해
+[부분순서](partial-orders.md) 집합을 사상이 최대 하나뿐인 범주로 보면 adjunction은 Galois connection이 된다. 단조사상 $f$, $g$ 에 대해
 
 $$
 f(x) \le y \iff x \le g(y)
 $$
 
-가 성립하는 상황이다. 여기서 `f(x)` 는 `x` 를 담는 가장 작은 원소, `g(y)` 는 `y` 안에 들어가는 가장 큰 원소라는 최적화 문제의 해로 읽힌다. 일반 범주의 adjunction은 이 부등식을 사상의 집합 사이 전단사로 승격시킨 것이다.
+가 성립하는 상황이다. 여기서 $f(x)$ 는 $x$ 를 담는 가장 작은 원소, $g(y)$ 는 $y$ 안에 들어가는 가장 큰 원소라는 최적화 문제의 해로 읽힌다. 일반 범주의 adjunction은 이 부등식을 사상의 집합 사이 전단사로 승격시킨 것이다.
 
 ## 왜 자연성이 필요한가
 
-hom-set 사이의 전단사가 그냥 존재하기만 해서는 쓸모가 없다. 유한집합처럼 크기만 같아도 전단사는 생긴다. 전단사가 `c` 와 `d` 를 따라 사상과 호환된다는 조건, 즉 [자연변환](natural-transformations.md)으로서의 동형이라는 조건이 붙어야 unit·counit을 뽑아낼 수 있고 보존 정리가 따라온다.
+hom-set 사이의 전단사가 그냥 존재하기만 해서는 쓸모가 없다. 유한집합처럼 크기만 같아도 전단사는 생긴다. 전단사가 $c$ 와 $d$ 를 따라 사상과 호환된다는 조건, 즉 [자연변환](natural-transformations.md)으로서의 동형이라는 조건이 붙어야 unit·counit을 뽑아낼 수 있고 보존 정리가 따라온다.
 
 # 정의
 
 ## hom-set 정의
 
-범주 `C`, `D` 와 functor
+범주 $\mathcal C$, $\mathcal D$ 와 functor
 
 $$
 F : \mathcal{C} \to \mathcal{D}, \qquad G : \mathcal{D} \to \mathcal{C}
 $$
 
-가 주어졌다고 하자. `F` 가 `G` 의 left adjoint라는 것은 전단사족
+가 주어졌다고 하자. $F$ 가 $G$ 의 left adjoint라는 것은 전단사족
 
 $$
 \varphi_{c,d} : \operatorname{Hom}_{\mathcal{D}}(Fc, d) \;\xrightarrow{\ \sim\ }\; \operatorname{Hom}_{\mathcal{C}}(c, Gd)
 $$
 
-이 존재하고, 이것이 `c` 와 `d` 양쪽에 대해 자연스럽다는 뜻이다. 자연성은 임의의 `u : c' -> c` 와 `v : d -> d'` 에 대해
+이 존재하고, 이것이 $c$ 와 $d$ 양쪽에 대해 자연스럽다는 뜻이다. 자연성은 임의의 $u:c'\to c$ 와 $v:d\to d'$ 에 대해
 
 $$
 \varphi_{c',d'}(v \circ f \circ Fu) = Gv \circ \varphi_{c,d}(f) \circ u
@@ -70,7 +70,7 @@ $$
 
 ## unit과 counit
 
-`F ⊣ G` 이면 두 자연변환
+$F\dashv G$ 이면 두 자연변환
 
 $$
 \eta : \mathrm{id}_{\mathcal{C}} \Rightarrow GF, \qquad \varepsilon : FG \Rightarrow \mathrm{id}_{\mathcal{D}}
@@ -100,7 +100,7 @@ graph LR
 
 ## 두 정의의 동치
 
-**정리.** functor `F`, `G` 에 대해 다음은 동치다.
+**정리.** functor $F$, $G$ 에 대해 다음은 동치다.
 
 1. triangle identity를 만족하는 자연변환 쌍 $(\eta, \varepsilon)$ 이 존재한다.
 2. $c$ 와 $d$ 에 대해 자연스러운 전단사 $\operatorname{Hom}(Fc, d) \cong \operatorname{Hom}(c, Gd)$ 가 존재한다.
@@ -123,13 +123,13 @@ $$
 g = G\tilde{g} \circ \eta_c
 $$
 
-를 만족하는 `g̃ : Fc -> d` 가 유일하게 존재한다. 이것이 자유 구성의 보편성질 그 자체다. 역으로 각 `c` 마다 이런 보편 사상이 존재하면 `F` 를 functor로 확장할 수 있고 `F ⊣ G` 가 된다. 즉 adjoint의 존재는 "대상별 보편성질" 을 모아 놓은 것과 같다.
+를 만족하는 $\tilde g:Fc\to d$ 가 유일하게 존재한다. 이것이 자유 구성의 보편성질 그 자체다. 역으로 각 $c$ 마다 이런 보편 사상이 존재하면 $F$ 를 functor로 확장할 수 있고 $F\dashv G$ 가 된다. 즉 adjoint의 존재는 "대상별 보편성질" 을 모아 놓은 것과 같다.
 
 # 성질
 
 ## 유일성
 
-Right adjoint는 존재하면 자연동형을 제외하고 유일하다. `G`, `G'` 가 모두 `F` 의 right adjoint이면
+Right adjoint는 존재하면 자연동형을 제외하고 유일하다. $G$, $G'$ 가 모두 $F$ 의 right adjoint이면
 
 $$
 \operatorname{Hom}_{\mathcal{C}}(c, Gd) \cong \operatorname{Hom}_{\mathcal{D}}(Fc, d) \cong \operatorname{Hom}_{\mathcal{C}}(c, G'd)
@@ -141,8 +141,8 @@ $$
 
 Adjunction은 표현가능성의 언어로 다시 쓸 수 있다.
 
-- `G : D -> C` 의 left adjoint가 존재할 필요충분조건은, 각 대상 `c` 에 대해 functor `Hom_C(c, G-) : D -> Set` 가 표현가능한 것이다. 그때 표현 대상이 `Fc` 다.
-- Yoneda lemma는 이 표현 대상이 유일하며 `c` 에 대한 functor성이 공짜로 따라옴을 보장한다. Adjunction의 자연성 조건이 곧 Yoneda 매장이 충실충만하다는 사실의 응용이다.
+- $G:\mathcal D\to\mathcal C$ 의 left adjoint가 존재할 필요충분조건은, 각 대상 $c$ 에 대해 functor $\operatorname{Hom}_{\mathcal C}(c,G-):\mathcal D\to\mathbf{Set}$ 가 표현가능한 것이다. 그때 표현 대상이 $Fc$ 다.
+- Yoneda lemma는 이 표현 대상이 유일하며 $c$ 에 대한 functor성이 공짜로 따라옴을 보장한다. Adjunction의 자연성 조건이 곧 Yoneda 매장이 충실충만하다는 사실의 응용이다.
 
 달리 말해 adjunction은 "hom-functor를 통해 본 두 범주의 번역 사전" 이고, Yoneda lemma는 그 사전이 대상 자체를 결정한다는 진술이다.
 
@@ -150,7 +150,7 @@ Adjunction은 표현가능성의 언어로 다시 쓸 수 있다.
 
 **정리 (RAPL).** Right adjoint는 모든 극한을 보존하고, left adjoint는 모든 여극한을 보존한다.
 
-*증명 스케치.* `D` 안의 도형 `d_i` 가 극한 `lim d_i` 를 가진다고 하자. 임의의 `c` 에 대해
+*증명 스케치.* $\mathcal D$ 안의 도형 $d_i$ 가 극한 $\lim d_i$ 를 가진다고 하자. 임의의 $c$ 에 대해
 
 $$
 \operatorname{Hom}_{\mathcal{C}}(c, G(\lim_i d_i)) \cong \operatorname{Hom}_{\mathcal{D}}(Fc, \lim_i d_i) \cong \lim_i \operatorname{Hom}_{\mathcal{D}}(Fc, d_i) \cong \lim_i \operatorname{Hom}_{\mathcal{C}}(c, G d_i)
@@ -164,19 +164,19 @@ $$
 
 역방향 질문, 즉 "극한을 보존하는 functor는 adjoint를 가지는가" 는 크기 조건을 하나 더 요구한다.
 
-**Freyd adjoint functor theorem (진술).** `D` 가 locally small, complete이고 `G : D -> C` 가 모든 작은 극한을 보존하며 solution set condition을 만족하면 `G` 는 left adjoint를 가진다.[^1]
+**Freyd adjoint functor theorem (진술).** $\mathcal D$ 가 locally small, complete이고 $G:\mathcal D\to\mathcal C$ 가 모든 작은 극한을 보존하며 solution set condition을 만족하면 $G$ 는 left adjoint를 가진다.[^1]
 
-solution set condition은 각 `c` 마다 `c -> Gd` 꼴 사상을 "충분히 대표하는" 작은 집합이 있다는 조건으로, 순수한 크기 문제를 막는 장치다.
+solution set condition은 각 $c$ 마다 $c\to Gd$ 꼴 사상을 "충분히 대표하는" 작은 집합이 있다는 조건으로, 순수한 크기 문제를 막는 장치다.
 
 ## 합성과 동치
 
-- `F ⊣ G` 이고 `F' ⊣ G'` 이며 합성이 정의되면 `F'F ⊣ GG'` 다. Adjunction은 합성에 닫혀 있다.
-- 범주의 동치는 unit과 counit이 모두 동형인 adjunction과 같다. 이때 `F` 는 좌우 양쪽 adjoint를 겸한다.
-- Counit이 동형이면 `G` 는 충실충만하다. 이 상황을 reflective subcategory라 부르고, 완비화·군화(group completion)·층화(sheafification)가 모두 여기에 속한다.
+- $F\dashv G$ 이고 $F'\dashv G'$ 이며 합성이 정의되면 $F'F\dashv GG'$ 다. Adjunction은 합성에 닫혀 있다.
+- 범주의 동치는 unit과 counit이 모두 동형인 adjunction과 같다. 이때 $F$ 는 좌우 양쪽 adjoint를 겸한다.
+- Counit이 동형이면 $G$ 는 충실충만하다. 이 상황을 reflective subcategory라 부르고, 완비화·군화(group completion)·층화(sheafification)가 모두 여기에 속한다.
 
 ## monad로의 연결
 
-`F ⊣ G` 에서 `T = GF : C -> C` 를 만들면
+$F\dashv G$ 에서 $T=GF:\mathcal C\to\mathcal C$ 를 만들면
 
 $$
 \eta : \mathrm{id} \Rightarrow T, \qquad \mu = G \varepsilon F : T^2 \Rightarrow T
@@ -204,7 +204,7 @@ $$
 
 ## 곱-지수 adjunction
 
-집합의 범주에서 고정된 `A` 에 대해
+집합의 범주에서 고정된 $A$ 에 대해
 
 $$
 \operatorname{Hom}(X \times A, Y) \cong \operatorname{Hom}(X, Y^A)
@@ -230,7 +230,7 @@ Unit $\eta_X : X \to (X \times A)^A$ 는 $x$ 를 $a \mapsto (x, a)$ 로 보내�
 
 ## 확장과 제한
 
-환 준동형 `f : R -> S` 는 두 방향의 functor를 만든다.
+환 준동형 $f:R\to S$ 는 두 방향의 functor를 만든다.
 
 - 제한(restriction) $f^*$ 는 $S$ 가군을 $R$ 가군으로 보낸다. 스칼라 곱을 $f$ 로 끌어온다.
 - 확장(extension) $f_! = S \otimes_R -$ 는 $R$ 가군을 $S$ 가군으로 보낸다.
