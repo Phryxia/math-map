@@ -45,7 +45,7 @@ $$
 
 ## 특성함수
 
-확률변수 X의 특성함수는 다음으로 정의한다. 항상 존재하고, 분포를 유일하게 결정한다.
+확률변수 $X$ 의 [특성함수](characteristic-functions.md)는 다음으로 정의한다. 항상 존재하고, 분포를 유일하게 결정한다.
 
 $$
 \varphi_X(t)=\mathbb E\!\left[e^{itX}\right]
