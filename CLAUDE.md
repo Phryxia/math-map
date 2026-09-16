@@ -7,7 +7,9 @@
 - 사고 과정과 아이겐에게 보이는 응답을 모두 한국어로 쓴다. 저장소가 한국어 지식 그래프이므로 생각도 한국어로 한다.
 - 문서는 git으로 관리한다. `docs/` 아래 문서를 삽입, 수정, 삭제할 수 있다. git commit과 push를 해야 반영된다.
 - 작업 브랜치는 항상 `claude/math` 다. 다른 브랜치로 push 하지 않는다.
-- 아이겐(저장소 주인)이 언제든 문서를 고쳐 커밋할 수 있다. 세션 시작 시 pull 하고, push 직전에 다시 pull 한 뒤 push 한다.
+- 이 저장소는 여러 손이 동시에 만진다. 아이겐(저장소 주인)도, 다른 Claude 세션도 언제든 같은 브랜치에 커밋할 수 있다. 내 작업 트리가 원격의 최신 상태라고 가정하지 않는다.
+- 그래서 무슨 작업이든 시작하기 전에 `git pull` 로 원격을 먼저 받는다. 세션을 열 때 한 번, 2절 루프에서 문서를 하나 집을 때마다 한 번, push 직전에 한 번 받는다. 남이 방금 쓴 문서를 다시 쓰거나 남이 정리한 간선을 되살리는 사고를 이 pull 이 막는다.
+- 남과 겹치지 않게 작업을 고른다. 큐에서 꺼낸 주제의 문서가 pull 이후 이미 생겨 있으면 그 작업은 버리고 다음 것을 꺼낸다.
 - 서브 에이전트를 쓰지 않는다. 모든 읽기, 쓰기, 검증을 이 세션이 직접 한다.
 - 문서 링크로 만들어지는 그래프는 DAG 여야 한다. 순환이 있으면 안 되고, 간선을 더하기 전에 스크립트로 확인한다.
 - `dev/` 스크립트는 고치지 않는다. 버그나 필요한 기능은 큐에 push 해 두고 그 회차에서는 우회한다.
@@ -16,7 +18,7 @@
 ## 1. 세션 시작
 
 ```bash
-git fetch origin claude/math && git checkout claude/math && git pull origin claude/math
+git fetch origin claude/math && git checkout claude/math && git pull origin claude/math   # 남의 작업이 먼저 들어와 있을 수 있다
 node dev/timer.mjs start --minutes 40   # 40분 타이머. 회차가 겹치지 않게 짧게 잡는다
 node dev/queue.mjs list             # 큐 서버 자동 기동 + 지난 회차 큐 복원
 node dev/graph.mjs validate         # 깨진 링크, 비대칭 간선, 파싱 문제
@@ -31,32 +33,38 @@ node dev/graph.mjs leaves           # 더 알아보기가 빈 문서
 한 작업은 "문서 하나를 새로 쓰거나 보강하고, 그 문서와 연결된 문서의 연관 문서 절을 맞춘 뒤 커밋" 이다. 이 단위를 타이머가 끝날 때까지 반복한다.
 
 1. `node dev/timer.mjs check` 를 실행한다. 종료코드가 1이면(EXPIRED) 새 작업을 시작하지 않고 3절로 간다.
-2. `node dev/queue.mjs pop` 으로 작업을 꺼낸다. 큐가 비어 있으면 아래 우선순위로 작업을 직접 고른다.
+2. `git pull origin claude/math` 로 원격을 받는다. 앞선 작업을 커밋한 직후라도 다시 받는다. 다른 세션이나 아이겐이 그 사이에 문서를 고쳤을 수 있다. 받은 내용이 지금 하려던 작업과 겹치면 작업을 바꾼다.
+3. `node dev/queue.mjs pop` 으로 작업을 꺼낸다. 큐가 비어 있으면 아래 우선순위로 작업을 직접 고른다.
    - `validate` 가 보고한 문제
    - 리프 문서(더 알아보기 없음) 가운데 후속 개념이 분명한 것
    - 태그가 없는 문서, 태그 분포에서 소외된 분야
    - 구형 문서(`## 정의` / `## 성질` / `## 활용` 구조)의 신형 전환
    - 새 주제. 기존 문서 본문에서 언급만 되고 문서가 없는 개념이 좋은 후보다.
-3. `node dev/graph.mjs node <id>` 로 대상 문서와 이웃의 현재 상태를 본다. 새 문서라면 부모가 될 문서들을 `node dev/graph.mjs node` 로 읽고 어디에 붙일지 정한다.
-4. 문서를 쓴다. 규격은 4절.
-5. 간선을 더하기 전에 반드시 검사한다. `parent` 는 선수지식, `child` 는 후속이다.
+4. `node dev/graph.mjs node <id>` 로 대상 문서와 이웃의 현재 상태를 본다. 새 문서라면 부모가 될 문서들을 `node dev/graph.mjs node` 로 읽고 어디에 붙일지 정한다.
+5. 문서를 쓴다. 규격은 4절.
+6. 간선을 더하기 전에 반드시 검사한다. `parent` 는 선수지식, `child` 는 후속이다.
    ```bash
    node dev/graph.mjs check-cycle <parent> <child>              # 둘 다 기존 문서
    node dev/graph.mjs check-cycle <parent> <child> --allow-new  # 한쪽이 새 문서
    ```
    `CYCLE` 이 나오면 그 간선은 넣지 않는다. 방향이 틀렸는지 먼저 의심한다.
-6. 간선은 양쪽에 적는다. 자식 문서의 `## 선수지식` 에 부모를, 부모 문서의 `## 더 알아보기` 에 자식을 적는다. 한쪽만 적으면 `validate` 가 ASYMMETRIC 으로 잡는다.
-7. 검증한다. 셋 다 종료코드 0 이어야 한다.
+7. 간선은 양쪽에 적는다. 자식 문서의 `## 선수지식` 에 부모를, 부모 문서의 `## 더 알아보기` 에 자식을 적는다. 한쪽만 적으면 `validate` 가 ASYMMETRIC 으로 잡는다.
+8. maximal 요소가 바뀌었으면 루트 `README.md` 의 목록을 맞춘다. 새 문서를 쓰면 그 문서가 maximal 로 들어오고, 기존 maximal 문서에 자식을 달면 그 문서는 빠진다. 아래 diff 가 아무것도 내놓지 않아야 한다. 규칙은 7절.
+   ```bash
+   diff <(node dev/graph.mjs leaves | cut -f1 | sort) \
+        <(sed -n '/^## 지도의 경계/,$p' README.md | grep -o '(docs/[a-z0-9-]*\.md)' | tr -d '()' | sed 's|docs/||; s|\.md||' | sort)
+   ```
+9. 검증한다. 셋 다 종료코드 0 이어야 한다.
    ```bash
    node dev/graph.mjs validate && node dev/graph.mjs cycles && node --test dev/*.test.mjs
    ```
-8. 커밋한다. 메시지는 무엇을 왜 했는지 한 줄로 쓴다. 예: `add spectral-sequences under homology`, `migrate groups to new format`.
-9. 작업 중 떠오른 후속 주제, 보강할 점, 발견한 오류는 그 자리에서 큐에 넣는다.
-   ```bash
-   node dev/queue.mjs push "<제목>" --priority <정수> --note "<왜, 어디에 붙일지>"
-   ```
-   priority 는 큰 수가 먼저 나온다. 오류 수정 100, 기존 문서 보강 50, 신규 주제 10 정도를 기준으로 삼는다.
-10. 1로 돌아간다.
+10. 커밋한다. 메시지는 무엇을 왜 했는지 한 줄로 쓴다. 예: `add spectral-sequences under homology`, `migrate groups to new format`. README 를 고쳤으면 같은 커밋에 담는다.
+11. 작업 중 떠오른 후속 주제, 보강할 점, 발견한 오류는 그 자리에서 큐에 넣는다.
+    ```bash
+    node dev/queue.mjs push "<제목>" --priority <정수> --note "<왜, 어디에 붙일지>"
+    ```
+    priority 는 큰 수가 먼저 나온다. 오류 수정 100, 기존 문서 보강 50, 신규 주제 10 정도를 기준으로 삼는다.
+12. 1로 돌아간다.
 
 ## 3. 세션 종료
 
@@ -64,13 +72,15 @@ node dev/graph.mjs leaves           # 더 알아보기가 빈 문서
 
 ```bash
 node dev/graph.mjs validate && node dev/graph.mjs cycles && node --test dev/*.test.mjs
-git pull --rebase origin claude/math       # 아이겐의 변경을 먼저 받는다
+diff <(node dev/graph.mjs leaves | cut -f1 | sort) \
+     <(sed -n '/^## 지도의 경계/,$p' README.md | grep -o '(docs/[a-z0-9-]*\.md)' | tr -d '()' | sed 's|docs/||; s|\.md||' | sort)
+git pull --rebase origin claude/math       # 아이겐과 다른 세션의 변경을 먼저 받는다
 git push -u origin claude/math
 node dev/queue.mjs stop                    # 큐를 dev/queue.json 에 저장하고 별도 커밋
 git push -u origin claude/math
 ```
 
-rebase 충돌이 나면 문서 내용은 원격(아이겐) 쪽을 우선하고 내 변경을 그 위에 다시 얹는다. 충돌을 풀고 나서 7단계 검증을 다시 통과시킨 뒤 push 한다. `queue stop` 을 빠뜨리면 큐가 커밋되지 않으므로 종료 절차의 마지막에 반드시 실행한다.
+rebase 충돌이 나면 문서 내용은 원격 쪽을 우선하고 내 변경을 그 위에 다시 얹는다. README 가 충돌하면 원격 목록에 내가 더하거나 뺀 항목만 반영한다. 충돌을 풀고 나서 2절 9단계 검증과 위 diff 를 다시 통과시킨 뒤 push 한다. `queue stop` 을 빠뜨리면 큐가 커밋되지 않으므로 종료 절차의 마지막에 반드시 실행한다.
 
 ## 4. 문서 규격
 
@@ -134,7 +144,20 @@ rebase 충돌이 나면 문서 내용은 원격(아이겐) 쪽을 우선하고 �
 - 새 태그를 만들기 전에 `node dev/graph.mjs tags` 로 기존 태그를 보고 재사용한다. 분야 태그 하나는 반드시 붙이고, 성격 태그(`#theorem`, `#construction`, `#example`)는 필요할 때만 붙인다.
 - 문서를 보강하거나 새로 쓸 때 태그가 없으면 붙인다.
 
-## 7. 스크립트 요약
+## 7. README 유지
+
+루트 `README.md` 는 저장소의 첫 화면이고, 그 "지도의 경계" 절은 그래프의 maximal 요소 전부를 담는다. maximal 요소는 더 알아보기가 비어 있는 문서, 곧 `node dev/graph.mjs leaves` 가 내놓는 문서다.
+
+목록이 바뀌는 경우는 정해져 있다. 새 문서를 쓰면 그 문서가 목록에 들어온다. 기존 maximal 문서에 자식을 달면 그 문서가 목록에서 빠진다. 문서를 지우면 그 문서가 빠지고, 자식을 모두 잃은 부모가 새로 들어온다. 어느 경우든 그 회차의 커밋에서 README 를 함께 고친다.
+
+- 링크 형식은 `- [문서 제목](docs/<id>.md)` 다. `docs/` 접두사가 붙는 점이 문서끼리의 링크와 다르다. README 가 저장소 루트에 있기 때문이다.
+- 분야 묶음은 수론, 대수와 표현론, 기하와 위상, 해석, 확률과 통계, 조합과 그래프, 논리와 기초, 계산과 최적화 여덟 개다. 문서의 첫 태그를 따라 넣되, 첫 태그가 주제를 잘못 대표하면 내용에 맞는 묶음에 넣는다. 묶음 자체는 늘리지 않는다.
+- 묶음 안에서는 제목을 한국어 기준으로 정렬한다.
+- "구조" 절의 문서 수, 간선 수, 태그 수와 "지도의 경계" 절의 maximal 개수도 같이 맞춘다. `node dev/graph.mjs nodes`, `edges`, `tags` 의 마지막 줄이 각각의 개수를 알려준다.
+
+README 의 링크는 DAG 간선이 아니다. 여기서 무엇을 더하거나 빼도 그래프 구조는 달라지지 않고 `validate` 도 잡아주지 않는다. 그래서 2절 8단계의 diff 로 직접 확인한다. 출력이 비어야 맞는 상태다.
+
+## 8. 스크립트 요약
 
 | 명령                                                            | 용도                              |
 | --------------------------------------------------------------- | --------------------------------- |
