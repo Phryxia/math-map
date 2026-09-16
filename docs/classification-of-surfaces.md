@@ -281,5 +281,6 @@ $$
 ## 더 알아보기
 
 - [Teichmüller 공간과 곡면의 모듈라이](teichmuller-space.md)
+- [Riemann 곡면과 균일화 정리](riemann-surfaces.md)
 
 #topology #theorem

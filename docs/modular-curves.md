@@ -246,6 +246,7 @@ $N=37$ 은 $g=2$ 인 가장 작은 소수 레벨이다. 도체 37 의 타원곡�
 
 - [모듈러 형식](modular-forms.md)
 - [타원곡선과 군 구성](elliptic-curves.md)
+- [Riemann 곡면과 균일화 정리](riemann-surfaces.md)
 
 ## 더 알아보기
 

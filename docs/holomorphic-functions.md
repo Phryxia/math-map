@@ -150,6 +150,7 @@ print(np.sum(dz / z))  # 약 6.2832j
 - [Laurent 급수와 유수 정리](residue-theorem.md)
 - [모듈러 형식](modular-forms.md)
 - [Riemann–Roch 정리](riemann-roch.md)
+- [Riemann 곡면과 균일화 정리](riemann-surfaces.md)
 - [Kähler 다양체와 Hodge 분해](kahler-manifolds.md)
 
 #complex_analysis
