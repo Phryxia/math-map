@@ -163,6 +163,7 @@ for n in (100, 10_000, 1_000_000):
 ## 선수지식
 
 - [큰 수의 법칙](law-of-large-numbers.md)
+- [분포 수렴과 Prokhorov 정리](weak-convergence.md)
 
 ## 더 알아보기
 
