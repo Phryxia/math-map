@@ -95,7 +95,7 @@ ls docs | grep -- '-overview.md'    # 분야 개관 목록. 4.5절의 개관이 
 node dev/graph.mjs validate && node dev/graph.mjs cycles && node dev/render-check.mjs && node dev/order-check.mjs && node --test dev/*.test.mjs
 diff <(node dev/graph.mjs roots | cut -f1 | sort) \
      <(sed -n '/^## 지도의 뿌리/,$p' README.md | grep -o '(docs/[a-z0-9-]*\.md)' | tr -d '()' | sed 's|docs/||; s|\.md||' | sort)
-git pull --rebase origin claude/math       # 독자과 다른 세션의 변경을 먼저 받는다
+git pull --rebase origin claude/math       # 독자와 다른 세션의 변경을 먼저 받는다
 git push -u origin claude/math
 node dev/queue.mjs stop                    # 큐를 dev/queue.json 에 저장하고 별도 커밋
 git push -u origin claude/math
