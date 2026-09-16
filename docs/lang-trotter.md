@@ -26,7 +26,7 @@ $$
 
 가 된다. 상수 $C_{E,r}$ 는 이 발견법을 $\ell$ 진 표현의 상으로 보정한 것으로, $a_p\equiv r$ 이 $\bmod\ell$ 에서 일어나는 빈도를 모든 $\ell$ 에 걸쳐 곱한 오일러 곱이다.
 
-추측은 열려 있고 알려진 것은 예상보다 훨씬 약한 상계뿐이다. $r=0$ 에서는 무한성이 증명되어 있다. Elkies 가 1987 년에 $\mathbb Q$ 위의 모든 타원곡선이 무한히 많은 초특이 소수를 가짐을 보였다.
+추측은 증명되지 않았고 알려진 것은 예상 점근보다 약한 상계뿐이다[^1]. $r=0$ 에서는 무한성이 증명되어 있다. Elkies 가 1987 년에 $\mathbb Q$ 위의 모든 타원곡선이 무한히 많은 초특이 소수를 가짐을 보였다.
 
 # 직관
 
@@ -63,21 +63,6 @@ $$
 $a_p=0$ 은 $p$ 에서 곡선이 **초특이**라는 기하적 조건이고, [Newton 다각형](newton-polygon.md)의 기울기가 $\tfrac12,\tfrac12$ 라는 것, 형식군의 높이가 $2$ 라는 것과 같다. 산술 조건이 아니라 환원의 유형에 관한 조건이다.
 
 Elkies 의 증명은 이 기하를 쓴다. 초특이 소수가 유한하다고 가정하고 허수이차 차수의 Hilbert 유체론과 힐베르트 류다항식으로 모순을 끌어낸다. 초특이 $j$ 불변량이 $\mathbb F_{p^2}$ 에 살고 그 개수가 대략 $p/12$ 라는 것, 복소곱셈을 가진 곡선의 환원이 초특이가 되는 소수를 이차 상호법칙으로 통제한다는 것이 재료다. $r\ne0$ 에는 이런 기하가 없다.
-
-```mermaid
-graph TD
-  ST["Sato–Tate<br/>θ_p ~ (2/π)sin²θ dθ"] --> BAND["띠 |a_p| ≤ δ·2√p<br/>양의 밀도 ≈ 4δ/π"]
-  ST --> PT["점 a_p = r<br/>밀도 0 — 여기서 끝"]
-  PT --> LT["Lang–Trotter : 그 0 의 속도"]
-  HEUR["발견법 : 정수 4√p 개 중 하나<br/>확률 ≍ 1/√p"] --> LT
-  ELL["ℓ 진 상 안에서 tr = r 인 비율<br/>+ Chebotarev"] --> C["상수 C_{E,r} 의 오일러 곱"]
-  C --> LT
-  LT --> FORM["#{p ≤ X : a_p = r} ~ C √X / log X"]
-  FORM --> OPEN["미해결. 알려진 상계는 훨씬 약하다"]
-  FORM --> SS["r = 0 : 초특이 소수"]
-  SS --> ELK["Elkies 1987 : 무한히 많다<br/>(개수 점근은 여전히 미해결)"]
-```
-
 # 정의
 
 ## Lang–Trotter 추측
@@ -122,10 +107,10 @@ $a_p$ 에 관한 진술은 다음 층으로 나뉜다.
 |---|---|---|
 | 크기 | $\lvert a_p\rvert\le2\sqrt p$ | [Hasse, Deligne](deligne-weil-conjectures.md) — 정리 |
 | 분포(띠) | $\theta_p\sim\frac2\pi\sin^2\theta\thinspace d\theta$ | [Sato–Tate](sato-tate.md) — 정리 |
-| 분포(점) | $\char35{}\lbrace a_p=r\rbrace\sim C\sqrt X/\log X$ | Lang–Trotter — 미해결 |
+| 분포(점) | $\char35{}\lbrace a_p=r\rbrace\sim C\sqrt X/\log X$ | Lang–Trotter — 추측[^1] |
 | 점의 무한성 | $a_p=0$ 이 무한히 많다 | Elkies — 정리 |
 
-아래로 갈수록 미세하고 어려우며, 위 층이 아래 층을 함의하지 않는다. 연속측도의 한 점이므로 Sato–Tate 를 정밀한 오차항과 함께 얻어도 Lang–Trotter 는 나오지 않는다.
+아래로 갈수록 미세하고 어렵고, 위 층이 아래 층을 함의하지 않는다. 연속측도의 한 점이므로 Sato–Tate 를 정밀한 오차항과 함께 얻어도 Lang–Trotter 는 나오지 않는다.
 
 ## 관련 추측들
 
