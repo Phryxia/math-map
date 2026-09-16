@@ -39,7 +39,7 @@ $$
 P_{ij}=e^{f_i/\varepsilon}e^{-C_{ij}/\varepsilon}e^{g_j/\varepsilon}
 $$
 
-$u_i=e^{f_i/\varepsilon}$, $v_j=e^{g_j/\varepsilon}$ 로 쓰면 대각 스케일링이다. 미지수가 $nm$ 개에서 $n+m$ 개로 줄었다. 엔트로피 항의 로그가 지수를 낳고, 지수가 곱으로 분리되는 것이 전부다.
+$u_i=e^{f_i/\varepsilon}$ 과 $v_j=e^{g_j/\varepsilon}$ 로 쓰면 대각 스케일링이다. 미지수가 $nm$ 개에서 $n+m$ 개로 줄었다. 엔트로피 항의 로그가 지수를 낳고, 지수가 곱으로 분리되는 것이 전부다.
 
 ## 반복은 KL 사영을 번갈아 하는 것이다
 
@@ -87,7 +87,7 @@ Birkhoff–Hopf 정리에 따르면 성분이 모두 양수인 행렬 $K$ 를 �
 
 ## 엔트로피 정규화 최적 수송
 
-$a\in\Delta_n$, $b\in\Delta_m$ 을 확률벡터, $C\in\mathbb R^{n\times m}_{\ge0}$ 을 비용행렬이라 하고 $\Pi(a,b)=\{P\ge0:P\mathbf1=a,\ P^\top\mathbf1=b\}$ 라 하자.
+$a\in\Delta_n$ 과 $b\in\Delta_m$ 을 확률벡터, $C\in\mathbb R^{n\times m}_{\ge0}$ 을 비용행렬이라 하고 $\Pi(a,b)=\{P\ge0:P\mathbf1=a,\ P^\top\mathbf1=b\}$ 라 하자.
 
 $$
 \mathrm{OT}_\varepsilon(a,b)=\min_{P\in\Pi(a,b)}\ \langle C,P\rangle+\varepsilon\,\mathrm{KL}\big(P\,\|\,a\otimes b\big)
@@ -97,7 +97,7 @@ $$
 
 ## 쌍대 문제
 
-제약에 승수 $f\in\mathbb R^n$, $g\in\mathbb R^m$ 을 붙이고 $P$ 에 대해 최소화하면 매끄러운 쌍대 문제가 나온다.
+제약에 승수 $f\in\mathbb R^n$ 과 $g\in\mathbb R^m$ 을 붙이고 $P$ 에 대해 최소화하면 매끄러운 쌍대 문제가 나온다.
 
 $$
 \max_{f,g}\ \langle f,a\rangle+\langle g,b\rangle-\varepsilon\sum_{i,j}a_ib_j\,e^{(f_i+g_j-C_{ij})/\varepsilon}
@@ -116,7 +116,7 @@ f_i=-\varepsilon\log\sum_jb_j\,e^{(g_j-C_{ij})/\varepsilon},\qquad
 g_j=-\varepsilon\log\sum_ia_i\,e^{(f_i-C_{ij})/\varepsilon}
 $$
 
-가 된다. 곧 Sinkhorn 반복은 쌍대 문제의 **블록 좌표 상승법**이다. 곱 형태 $u\leftarrow a/(Kv)$, $v\leftarrow b/(K^\top u)$ 와 같은 알고리즘이며, 위 식은 그것을 로그로 옮긴 것이다.
+가 된다. 곧 Sinkhorn 반복은 쌍대 문제의 **블록 좌표 상승법**이다. 곱 형태 $u\leftarrow a/(Kv)$ 와 $v\leftarrow b/(K^\top u)$ 같은 알고리즘이며, 위 식은 그것을 로그로 옮긴 것이다.
 
 ## 로그 영역 반복
 
@@ -147,7 +147,7 @@ $S_\varepsilon(a,a)=0$ 이 정의에서 바로 따라 나오고, $S_\varepsilon(
 > \lambda=\frac{\sqrt\eta-1}{\sqrt\eta+1},\qquad
 > \eta=\max_{i,j,k,l}\frac{K_{ik}K_{jl}}{K_{jk}K_{il}}
 > $$
-> 이고, $K=e^{-C/\varepsilon}$ 이면 $\eta=e^{\Delta/\varepsilon}$, $\Delta=\max_{i,j,k,l}(C_{jk}+C_{il}-C_{ik}-C_{jl})$ 다.
+> 이고, $K=e^{-C/\varepsilon}$ 이면 $\eta=e^{\Delta/\varepsilon}$ 이고 $\Delta=\max_{i,j,k,l}(C_{jk}+C_{il}-C_{ik}-C_{jl})$ 다.
 
 $\lambda=\tanh\!\big(\Delta/4\varepsilon\big)$ 로 정리된다. $\varepsilon$ 이 크면 $\lambda\approx\Delta/4\varepsilon$ 로 아주 빠르고, $\varepsilon\to0$ 이면 $\lambda\to1-2e^{-\Delta/2\varepsilon}$ 이라 필요한 반복 수가 $e^{\Delta/2\varepsilon}$ 규모로 폭증한다.
 
@@ -272,7 +272,7 @@ for eps in (0.1, 0.01, 0.005, 0.002, 0.001):
 - **영역 적응과 색 이전.** 서로 다른 분포의 표본을 대응시키는 문제가 그대로 수송 계획이다. 부드러운 계획이 오히려 잡음에 강하다.
 - **단세포 유전체학.** 서로 다른 시점에 측정한 세포 집단을 잇는 궤적 추론이 수송 문제로 세워지고, 규모 때문에 Sinkhorn 이 사실상 유일한 선택지가 된다.
 - **미분가능한 정렬과 순위.** 치환행렬의 볼록완화가 이중확률행렬이므로, Sinkhorn 을 미분가능한 "부드러운 정렬" 로 쓴다. 순위 기반 손실함수를 신경망에 넣을 때의 표준 수법이다.
-- **행렬 균형화.** 비용과 무관하게 양수 행렬을 이중확률행렬로 만드는 고전적 문제 자체가 $\varepsilon=1$, $C=-\log K$ 인 특수한 경우다. Sinkhorn 의 1964년 원논문이 이 문제였다.
+- **행렬 균형화.** 비용과 무관하게 양수 행렬을 이중확률행렬로 만드는 고전적 문제 자체가 $\varepsilon=1$ 이고 $C=-\log K$ 인 특수한 경우다. Sinkhorn 의 1964년 원논문이 이 문제였다.
 
 [^1]: Marco Cuturi, *Sinkhorn Distances: Lightspeed Computation of Optimal Transport*, NeurIPS 2013 이 정규화와 반복을 최적 수송에 도입했다. 수렴 비율은 J. Franklin, J. Lorenz, *On the scaling of multidimensional matrices*, Linear Algebra Appl. 114–115 (1989), 717–735. Sinkhorn 발산의 양정성과 거리화는 J. Feydy 외, *Interpolating between Optimal Transport and MMD using Sinkhorn Divergences*, AISTATS 2019. 복잡도 $\tilde O(n^2/\delta^3)$ 은 J. Altschuler, J. Weed, P. Rigollet, NeurIPS 2017. 본문의 수치 실험은 직접 한 것이다.
 
