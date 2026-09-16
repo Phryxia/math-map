@@ -182,7 +182,7 @@ $$
 \int_S K \, dA + \int_{\partial S} k_g \, ds = 2\pi \chi(S) .
 $$
 
-이 Gauss–Bonnet 정리가 [Euler 지표](euler-characteristic.md)와 계량을 잇고, [곡면의 분류](classification-of-surfaces.md)에 기하적 해석을 준다. 균일화 정리에 따라 닫힌 곡면은 곡률이 $1$, $0$, $-1$ 중 하나로 일정한 계량을 가지며, 어느 것인지는 Euler 지표의 부호가 결정한다.
+이 Gauss–Bonnet 정리가 [Euler 지표](euler-characteristic.md)와 계량을 잇고, [곡면의 분류](classification-of-surfaces.md)에 기하적 해석을 준다. [균일화 정리](riemann-surfaces.md)에 따라 닫힌 곡면은 곡률이 $1$ 과 $0$ 과 $-1$ 중 하나로 일정한 계량을 가지며, 어느 것인지는 Euler 지표의 부호가 결정한다.
 
 # 활용
 
@@ -195,7 +195,7 @@ $$
 \ddot{\varphi} = -2 \cot\theta \, \dot{\theta}\dot{\varphi} .
 $$
 
-해가 대원임을 검증하는 방법은 궤적을 3차원으로 매장한 뒤 초기 대원 평면의 법선과의 내적이 0으로 유지되는지 보는 것이다. 아래 구현에서 그 이탈은 배정밀도 오차 수준(약 $1e-13$)에 머문다.
+해가 대원임을 검증하는 방법은 궤적을 3차원으로 매장한 뒤 초기 대원 평면의 법선과의 내적이 0으로 유지되는지 보는 것이다. 아래 구현에서 그 이탈은 배정밀도 오차 수준인 약 $10^{-13}$ 에 머문다.
 
 ```python
 import math

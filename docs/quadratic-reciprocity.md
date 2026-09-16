@@ -40,7 +40,7 @@ graph LR
 
 ## 두 얼굴을 잇는 다리
 
-$\mathbb Q(\zeta_p)$ 의 Galois 군이 $(\mathbb Z/p\mathbb Z)^\times$ 이고, 지표 2 인 부분군에 대응하는 이차 부분체가 정확히 하나 있다. 그것이 $\mathbb Q(\sqrt{p^*})$, $p^*=(-1)^{(p-1)/2}p$ 다.
+$\mathbb Q(\zeta_p)$ 의 Galois 군이 $(\mathbb Z/p\mathbb Z)^\times$ 이고, 지표 2 인 부분군에 대응하는 이차 부분체가 정확히 하나 있다. 그것이 $p^*=(-1)^{(p-1)/2}p$ 에 대한 $\mathbb Q(\sqrt{p^*})$ 다.
 
 $q$ 가 이 이차체에서 분해되는지는 $\left(\frac{p^*}q\right)$ 가 결정한다. 반면 $q$ 가 $\mathbb Q(\zeta_p)$ 에서 어떻게 분해되는지는 $q \bmod p$ 가 결정한다. 같은 소수 $q$ 의 같은 분해 행동을 두 방식으로 읽은 것이므로 두 답이 일치해야 하고, 그 일치가 상호법칙이다.
 
@@ -129,7 +129,7 @@ g^2=\sum_{a,b}\Big(\frac{ab}p\Big)\zeta^{a+b}
 =\sum_c\Big(\frac cp\Big)\sum_a\zeta^{a(1+c)}
 $$
 
-$b=ac$ 로 치환하고 $\left(\frac{a^2}p\right)=1$ 을 썼다. 안쪽 합은 $c\equiv-1$ 이면 $p-1$, 아니면 $-1$ 이므로 정리하면 $g^2=\left(\frac{-1}p\right)p=p^*$ 가 나온다.
+$b=ac$ 로 치환하고 $\left(\frac{a^2}p\right)=1$ 을 썼다. 안쪽 합은 $c\equiv-1$ 이면 $p-1$ 이고 아니면 $-1$ 이므로 정리하면 $g^2=\left(\frac{-1}p\right)p=p^*$ 가 나온다.
 
 이제 $\mathbb F_q$ 위에서 같은 계산을 한다. 표수 $q$ 의 체에서 Frobenius 사상 $x\mapsto x^q$ 가 덧셈을 보존하므로
 
@@ -183,7 +183,7 @@ for p in [5, 7, 11, 13]:
 # p=13: g = 3.6056-0.0000j, g^2 = 13.0000-0.0000j, p* = 13
 ```
 
-$g$ 가 $p\equiv1\pmod4$ 면 실수 $\sqrt p$, $p\equiv3\pmod4$ 면 순허수 $i\sqrt p$ 로 나온다. 절댓값이 $\sqrt p$ 라는 사실만으로도 이미 놀랍다. $p-1$ 개의 단위근을 부호만 바꿔 더했는데 무작위 행보의 기댓값인 $\sqrt p$ 규모가 정확히 나온다는 뜻이다.
+$g$ 가 $p\equiv1\pmod4$ 면 실수 $\sqrt p$ 로, $p\equiv3\pmod4$ 면 순허수 $i\sqrt p$ 로 나온다. 절댓값이 $\sqrt p$ 라는 사실만으로도 이미 놀랍다. $p-1$ 개의 단위근을 부호만 바꿔 더했는데 무작위 행보의 기댓값인 $\sqrt p$ 규모가 정확히 나온다는 뜻이다.
 
 부호까지 결정하는 것은 훨씬 어렵고, Gauss 가 답을 추측한 뒤 증명까지 4 년이 걸렸다. $g$ 가 항상 $+\sqrt p$ 또는 $+i\sqrt p$ 라는 것이 그 결론이며, 상호법칙 자체에는 $g^2$ 만 있으면 되므로 부호는 필요하지 않다.
 

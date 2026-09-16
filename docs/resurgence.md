@@ -65,7 +65,7 @@ $$
 
 ## 측면 합과 Stokes 자동사상
 
-특이 방향 $\theta$ 의 양옆에서 Borel 합을 취한 것을 **측면 합** $\mathcal S_{\theta^+}$, $\mathcal S_{\theta^-}$ 라 한다. 둘은 서로 다른 해석함수를 주며, 그 차이를 형식적 대상으로 되돌린 것이 **Stokes 자동사상** $\mathfrak S_\theta$ 다.
+특이 방향 $\theta$ 의 양옆에서 Borel 합을 취한 것을 **측면 합** $\mathcal S_{\theta^+}$ 와 $\mathcal S_{\theta^-}$ 라 한다. 둘은 서로 다른 해석함수를 주며, 그 차이를 형식적 대상으로 되돌린 것이 **Stokes 자동사상** $\mathfrak S_\theta$ 다.
 
 $$
 \mathcal S_{\theta^+} = \mathcal S_{\theta^-}\circ\,\mathfrak S_\theta
@@ -75,7 +75,7 @@ $\mathfrak S_\theta$ 는 transseries 대수의 대수적 자기동형이고 $\pa
 
 ## Alien 미분
 
-$\hat f$ 를 $\zeta = \omega$ 까지 해석적으로 연장한 뒤, 도중의 특이점들을 위($+$)나 아래($-$)로 우회하는 모든 경로를 고려한다. $\omega$ 방향의 특이점이 $\omega_1, \dots, \omega_r$ 로 늘어서 있을 때
+$\hat f$ 를 $\zeta = \omega$ 까지 해석적으로 연장한 뒤, 도중의 특이점들을 위쪽 $+$ 나 아래쪽 $-$ 로 우회하는 모든 경로를 고려한다. $\omega$ 방향의 특이점이 $\omega_1, \dots, \omega_r$ 로 늘어서 있을 때
 
 $$
 \Delta_\omega \tilde f = \sum_{\epsilon \in \{\pm\}^{r-1}} \frac{p(\epsilon)!\,q(\epsilon)!}{r!}\;\operatorname{sing}_{\omega}\bigl(\text{경로 } \epsilon \text{ 를 따른 연장}\bigr)
