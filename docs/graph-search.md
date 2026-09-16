@@ -105,6 +105,6 @@ BFS 로 거리의 홀짝에 따라 두 색을 칠하고, 같은 색 사이에 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [DAG와 위상정렬](dag-topological.md)
 
 #graph_theory #algorithms
