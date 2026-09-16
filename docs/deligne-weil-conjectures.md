@@ -16,7 +16,7 @@ $$
 
 유리성과 함수방정식은 코호몰로지 이론이 존재하면 형식적으로 따라 나온다. 유리성은 대각합의 생성함수가 유리함수라는 선형대수이고 함수방정식은 Poincaré 쌍대성이다. 절댓값은 아르키메데스 크기에 관한 진술이라 $\ell$ 진 계수의 코호몰로지에 들어 있을 이유가 없다. 대수적 구성에서 해석적 부등식을 뽑아내야 한다.
 
-Grothendieck 의 계획은 표준 추측을 세워 Hodge 이론의 양성을 유한체로 옮기는 것이었고 그 추측은 지금도 열려 있다. Deligne 은 1974 년에 다른 길을 갔다. 곡선의 다발로 다양체를 자르고, 단행성군의 크기를 재고, $L$ 함수의 계수가 실수이고 음이 아니라는 사실을 $2k$ 제곱으로 증폭해 부등식을 조였다. 해석적 정수론의 Rankin 의 수법이 산술기하의 정리를 증명했다.
+Grothendieck 의 계획은 표준 추측[^1]을 세워 Hodge 이론의 양성을 유한체로 옮기는 것이었고, 그 추측은 아직 증명되지 않았다[^2]. Deligne 은 1974 년에 다른 길을 갔다[^3]. 곡선의 다발로 다양체를 자르고, 단행성군의 크기를 재고, $L$ 함수의 계수가 실수이고 음이 아니라는 사실을 $2k$ 제곱으로 증폭해 부등식을 조였다. 해석적 정수론의 Rankin 의 수법이 산술기하의 정리를 증명했다.
 
 따름정리로 Ramanujan 이 1916 년에 추측한 $|\tau(p)|\le2p^{11/2}$ 가 나온다.
 
@@ -53,22 +53,6 @@ $2k$ 제곱 트릭을 쓰려면 $\mathcal F$ 가 매개변수를 따라 움직�
 Deligne 은 $X$ 를 사영공간에 심고 초평면 다발로 $\mathbb P^1$ 위의 족으로 만든다. 각 올이 $X$ 의 초평면 절단이라 차원이 하나 낮고, $X$ 의 코호몰로지가 $\mathbb P^1$ 위 층의 코호몰로지가 되어 귀납이 가능해진다.
 
 그 층에서 결정적인 것이 단행성군이다. 올이 특이해지는 점 주위를 돌 때 소멸 순환이 어떻게 움직이는지를 재는 군이며, Kazhdan–Margulis 의 정리로 이 군이 충분히 커서 대칭곱이 기약임을 보이면 $\mathrm{Sym}^{2k}$ 의 불변량이 작아져 부등식이 낭비 없이 조여진다.
-
-```mermaid
-graph TD
-  W["Weil 추측 : |α| = q^{i/2}"] --> HARD["아르키메데스 크기<br/>ℓ 진 구성에 들어 있을 이유가 없다"]
-  HARD --> G["Grothendieck 의 계획<br/>표준 추측 → 여전히 미해결"]
-  HARD --> D["Deligne 의 우회"]
-  D --> LEF["Lefschetz 다발<br/>X 를 P^1 위 족으로 자른다"]
-  LEF --> MON["단행성군이 크다<br/>(Kazhdan–Margulis)"]
-  D --> SYM["2k 번째 대칭곱<br/>L 함수의 계수가 음이 아니다"]
-  MON --> SYM
-  SYM --> LAN["Landau : 계수가 ≥0 이면<br/>수렴반경 경계에 극점"]
-  LAN --> UP["상계 |α| ≤ q^{(i+1)/2}(1+1/k)"]
-  UP -->|"k → ∞"| UP2["|α| ≤ q^{(i+1)/2}"]
-  UP2 --> PD["Poincaré 쌍대성<br/>α·α' = q^d"]
-  PD --> EQ["등식 |α| = q^{i/2}"]
-```
 
 # 정의
 
@@ -145,34 +129,26 @@ $$
 | 도구 | Newton 다각형, Dwork 이론 | 에탈 코호몰로지, 무게 |
 | 난이도 | 계수에서 바로 읽힌다 | Deligne 의 정리 |
 | 주는 것 | 보통/초특이, 형식군의 높이 | Weil 한계, Ramanujan |
-| 남은 문제 | Newton 다각형의 도약 | Sato–Tate 형 분포 |
+| 이어지는 주제 | Newton 다각형의 도약 | Sato–Tate 형 분포 |
 
 $d=1$ 인 곡선은 Weil 이 1948 년에 증명했다. 곡면에는 부분적 결과가 있었고 임의 차원은 1974 년까지 열려 있었다.
 
 ## 증명의 뼈대
 
 1. **환원.** Poincaré 쌍대성과 약한 Lefschetz 정리로 짝수차원 다양체의 중간 코호몰로지 $H^d$ 로 환원한다.
-2. **Lefschetz 다발.** $X$ 를 $\mathbb P^1$ 위 초평면 절단의 족으로 만든다. 소멸 순환이 만드는 층 $\mathcal F$ 가 주인공이다.
+2. **Lefschetz 다발.** $X$ 를 $\mathbb P^1$ 위 초평면 절단의 족으로 만든다. 소멸 순환이 층 $\mathcal F$ 를 만든다.
 3. **단행성.** $\mathcal F$ 의 단행성군이 충분히 커서 $\mathrm{Sym}^{2k}\mathcal F$ 가 기하적으로 기약이고 불변량 공간이 작다.
 4. **$2k$ 제곱과 양성.** $L(\mathrm{Sym}^{2k}\mathcal F,T)$ 의 $\log$ 계수가 실수이고 음이 아니다.
 5. **Landau.** 수렴반경에서 상계 $|\alpha|\le q^{(d+1)/2}(1+\varepsilon_k)$ 를 얻고 $k\to\infty$ 로 조인다.
 6. **쌍대성.** 얻은 상계를 쌍대 쪽에 적용해 등식으로 만든다.
 
-3 번이 기술적 심장이고 4 번이 해석적 정수론에서 온 아이디어다. 표준 추측은 쓰이지 않는다.
+3 번이 기술적으로 가장 어렵고 4 번이 해석적 정수론에서 온 착상이다. 표준 추측은 쓰이지 않는다.
 
 # 활용
 
 ## 곱셈성
 
 $\Delta$ 가 Hecke 고유형식이라 $\tau$ 가 곱셈적이고, 소수에서의 한계가 모든 $n$ 으로 퍼진다.
-
-```python
-bad = [(m, n) for m in range(1, 21) for n in range(1, 21)
-       if m * n <= N and gcd(m, n) == 1 and tau[m*n] != tau[m] * tau[n]]
-print(f"  서로소 m,n 에서 τ(mn)=τ(m)τ(n) 인가 : {not bad}   반례 {bad[:3]}")
-bad2 = [p for p in PR if p*p <= N and tau[p*p] != tau[p]**2 - p**11]
-print(f"  τ(p²) = τ(p)² - p^11 인가 : {not bad2}   반례 {bad2}")
-```
 
 $\tau(p^2)=\tau(p)^2-p^{11}$ 은 $\alpha_p+\beta_p=\tau(p)$ 와 $\alpha_p\beta_p=p^{11}$ 에서 나오는 $\alpha_p^2+\beta_p^2$ 이며, Frobenius 고윳값이 Hecke 작용소의 고윳값으로 보이는 자리다.
 
@@ -182,7 +158,11 @@ $\tau(p^2)=\tau(p)^2-p^{11}$ 은 $\alpha_p+\beta_p=\tau(p)$ 와 $\alpha_p\beta_p
 - [Kloosterman 합](dwork-rationality.md)을 비롯한 지수합의 최적 상계가 이 정리에서 나온다. Katz 의 *Gauss Sums, Kloosterman Sums and Monodromy Groups* 가 이 응용을 체계화했다.
 - Ramanujan 한계가 모듈러 형식의 $L$ 함수 추정에 들어간다. 볼록성 깨기, 부분합 추정, 소수 정리의 변형이 이에 의존한다.
 - Goppa 의 대수기하 부호의 성능은 $\char35{}X(\mathbb F_q)$ 의 하계인 Weil 한계에서 나온다. Tsfasman–Vlăduţ–Zink 한계가 Gilbert–Varshamov 한계를 넘은 것이 그 산물이다.
-- Grothendieck 의 표준 추측은 여전히 열려 있다. Deligne 의 증명은 그것을 우회했을 뿐 대체하지 않았다.
+- Grothendieck 의 표준 추측은 증명되지 않은 채로 남아 있다[^2]. Deligne 의 증명은 그것을 우회했을 뿐 대체하지 않았다.
+
+[^1]: A. Grothendieck, "Standard conjectures on algebraic cycles", Algebraic Geometry (Bombay Colloquium 1968), Oxford University Press, 1969, 193–199.
+[^2]: S. L. Kleiman, "The standard conjectures", Motives, Proceedings of Symposia in Pure Mathematics 55 (1994), 3–20. 표준 추측이 어떤 경우에 알려져 있고 일반적으로는 증명되지 않았음을 정리한 서베이다.
+[^3]: P. Deligne, "La conjecture de Weil. I", Publications mathématiques de l'IHÉS 43 (1974), 273–307.
 
 # 연관 문서
 
