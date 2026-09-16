@@ -150,7 +150,7 @@ $(0,1)$ 과 $(n,0)$ 을 잇는 선분 하나. 부치가 $1/n$ 이므로 분기�
 
 ## 보통과 초특이를 가른다
 
-[Dwork 문서](dwork-rationality.md)의 `count` 함수로 $a_p=p+1-\char"23{}E(\mathbb F_p)$ 를 구해 넣었다. 곡선은 같은 $E:y^2=x^3+x+1$ 이다.
+[Dwork 문서](dwork-rationality.md)의 `count` 함수로 $a_p=p+1-\char35{}E(\mathbb F_p)$ 를 구해 넣었다. 곡선은 같은 $E:y^2=x^3+x+1$ 이다.
 
 ```python
 print("   P 의 근은 1/α, 1/β 이므로  v(근) = -ord(α).  ord(α) = 기울기.")

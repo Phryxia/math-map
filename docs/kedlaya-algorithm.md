@@ -104,7 +104,7 @@ Z(C,T)=\frac{P(T)}{(1-T)(1-qT)},\qquad
 P(T)=\prod_{j=1}^{2g}(1-\alpha_jT)\in\mathbb Z[T],\quad|\alpha_j|=\sqrt q
 $$
 
-**점 세기 문제**란 $P(T)$ 를 계산하는 것이다. $\char"23{}C(\mathbb F_q)=q+1-\sum\alpha_j$ 이므로 점 개수는 따름이다.
+**점 세기 문제**란 $P(T)$ 를 계산하는 것이다. $\char35{}C(\mathbb F_q)=q+1-\sum\alpha_j$ 이므로 점 개수는 따름이다.
 
 $P$ 는 함수방정식 때문에 자기역수적이다. 그러므로 계수 $2g$ 개 가운데 절반 $g$ 개만 독립이다.
 

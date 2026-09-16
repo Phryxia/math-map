@@ -66,7 +66,7 @@ $\gcd(r,q)=1$ 이면 $E[r]\cong\mathbb Z/r\mathbb Z\times\mathbb Z/r\mathbb Z$ �
 
 ## 매장 차수
 
-$r\mid\char"23{}E(\mathbb F_q)$ 인 소수 $r$ 에 대해
+$r\mid\char35{}E(\mathbb F_q)$ 인 소수 $r$ 에 대해
 
 $$
 k=\min\{k\ge1:\ r\mid q^k-1\}
@@ -123,7 +123,7 @@ $$
 
 ## 작은 곡선에서 직접 계산
 
-$p=23$ 에서 $E:y^2=x^3+1$ 은 $p\equiv2\pmod3$ 이라 초특이 곡선이고 $\char"23{}E(\mathbb F_{23})=24$ 이며 매장 차수가 2 다. $r=3$ 으로 잡고 Tate 쌍의 쌍선형성을 확인한다.
+$p=23$ 에서 $E:y^2=x^3+1$ 은 $p\equiv2\pmod3$ 이라 초특이 곡선이고 $\char35{}E(\mathbb F_{23})=24$ 이며 매장 차수가 2 다. $r=3$ 으로 잡고 Tate 쌍의 쌍선형성을 확인한다.
 
 ```python
 p = 23                                   # p ≡ 3 mod 4 이므로 F_{p^2} = F_p[i], i^2 = -1
@@ -230,7 +230,7 @@ for a in (1, 2):
 #   e(2P,2Q) = 11+8i   e(P,Q)^4 = 11+8i   같은가: True
 ```
 
-$\char"23{}E(\mathbb F_{p^2})=576=(p+1)^2$ 이 나오는 것이 초특이성의 확인이다. 초특이 곡선은 $\char"23{}E(\mathbb F_p)=p+1$ 이고 Frobenius 의 고윳값이 $\pm i\sqrt p$ 라 확대체에서 위수가 완전제곱이 된다.
+$\char35{}E(\mathbb F_{p^2})=576=(p+1)^2$ 이 나오는 것이 초특이성의 확인이다. 초특이 곡선은 $\char35{}E(\mathbb F_p)=p+1$ 이고 Frobenius 의 고윳값이 $\pm i\sqrt p$ 라 확대체에서 위수가 완전제곱이 된다.
 
 $P$ 는 $\mathbb F_p$ 좌표를 갖고 $Q$ 는 그렇지 않다. 두 점이 $E[3]\cong(\mathbb Z/3)^2$ 의 서로 다른 부분군에 있어야 쌍이 비퇴화하며, 그래서 $Q$ 를 확대체에서 찾아야 했다. 네 조합 모두에서 $e(aP,bQ)=e(P,Q)^{ab}$ 가 확인된다.
 

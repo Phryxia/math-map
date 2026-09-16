@@ -124,7 +124,7 @@ $$
 \#X(\mathbb F_{q^n})=q^n+1-\sum_{j=1}^{2g}\alpha_j^n
 $$
 
-가 된다. Riemann 가설 $|\alpha_j|=\sqrt q$ 를 넣으면 Hasse–Weil 한계 $|\char"23{}X(\mathbb F_q)-q-1|\le2g\sqrt q$ 가 나온다. $g=1$ 인 타원곡선에서는 $|a_q|\le2\sqrt q$ 라는 Hasse 정리다.
+가 된다. Riemann 가설 $|\alpha_j|=\sqrt q$ 를 넣으면 Hasse–Weil 한계 $|\char35{}X(\mathbb F_q)-q-1|\le2g\sqrt q$ 가 나온다. $g=1$ 인 타원곡선에서는 $|a_q|\le2\sqrt q$ 라는 Hasse 정리다.
 
 ## 모듈러성과의 연결
 

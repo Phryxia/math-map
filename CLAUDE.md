@@ -159,8 +159,8 @@ rebase 충돌이 나면 문서 내용은 원격 쪽을 우선하고 내 변경�
   | --- | --- | --- |
   | `\{` `\}` | `\lbrace` `\rbrace` | `\left\lbrace`, `\right\rbrace` 도 같다 |
   | `\,` `\:` `\;` `\!` | `\thinspace` `\medspace` `\thickspace` `\negthinspace` | |
-  | `\#` | `\char"23{}` | 원소 개수 `\char"23{}E(\mathbb F_p)` |
-  | `\%` | 수식 밖 텍스트 `15%` | 수식 안에 남겨야 하면 `\char"25{}` |
+  | `\#` | `\char35{}` | 원소 개수 `\char35{}E(\mathbb F_p)` |
+  | `\%` | 수식 밖 텍스트 `15%` | 수식 안에 남겨야 하면 `\char37{}` |
   | 행렬의 `\\` | `\cr` | `\begin{pmatrix}a&b\cr c&d\end{pmatrix}` |
   | `\|` | `\Vert` | 표 셀 안에서도 같다. 단선은 `\vert` |
   명령 뒤에 영숫자가 오면 공백을 하나 둔다. `$\lbrace 2,5,7\rbrace$`, `$\Vert f\Vert\_2$`. `$$` 블록 안에서는 `\{`, `\,` 를 그대로 써도 된다.

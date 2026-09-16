@@ -86,7 +86,7 @@ $$
 \#(B) \;\overset{d}{=}\; \sum_i \mathrm{Bern}(\lambda_i)
 $$
 
-로 독립 베르누이 확률변수들의 합과 같은 분포를 가진다. 점들 자체는 독립이 아닌데 개수는 독립합으로 분해된다는 것이 결정점과정의 가장 유용한 성질이다. 여기서 $\mathbb E\char"23{}(B) = \operatorname{tr}K_B$ 와 $\operatorname{Var}\char"23{}(B) = \sum\lambda_i(1-\lambda_i) \le \mathbb E\char"23{}(B)$ 가 바로 따라 나온다. 분산이 평균보다 작다는 것이 반발의 정량적 표현이고, 집중부등식과 중심극한정리도 이 분해에서 나온다.
+로 독립 베르누이 확률변수들의 합과 같은 분포를 가진다. 점들 자체는 독립이 아닌데 개수는 독립합으로 분해된다는 것이 결정점과정의 가장 유용한 성질이다. 여기서 $\mathbb E\char35{}(B) = \operatorname{tr}K_B$ 와 $\operatorname{Var}\char35{}(B) = \sum\lambda_i(1-\lambda_i) \le \mathbb E\char35{}(B)$ 가 바로 따라 나온다. 분산이 평균보다 작다는 것이 반발의 정량적 표현이고, 집중부등식과 중심극한정리도 이 분해에서 나온다.
 
 $K_B$ 가 사영이면 모든 $\lambda_i$ 가 0 또는 1 이라 개수가 결정론적이다. $N$ 차원 사영핵의 결정점과정이 언제나 정확히 $N$ 개의 점을 내놓는 이유다.
 
