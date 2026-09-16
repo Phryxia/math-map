@@ -71,7 +71,7 @@ $Z^k$ 의 원소를 닫힘형식, $B^k$ 의 원소를 완전형식, 몫에서의
 
 ## 호모토피 불변
 
-$F,G:N\to M$ 이 매끄럽게 호모토픽하면 $F^*=G^*$ 다. 증명은 호모토피 작용소 $K:\Omega^k(M)\to\Omega^{k-1}(N)$ 를 만들어 다음을 보이는 것이다.
+$F,G:N\to M$ 이 매끄럽게 호모토픽하면 $F^\ast=G^\ast$ 다. 증명은 호모토피 작용소 $K:\Omega^k(M)\to\Omega^{k-1}(N)$ 를 만들어 다음을 보이는 것이다.
 
 $$
 G^*\omega-F^*\omega=d(K\omega)+K(d\omega)

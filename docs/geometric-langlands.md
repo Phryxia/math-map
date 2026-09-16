@@ -95,7 +95,7 @@ $X$ 를 $\mathbb C$ 위의 매끄러운 사영 곡선, $G$ 를 환원군, $\hat 
 | 자기동형 쪽 | Galois 쪽 |
 |---|---|
 | $\mathrm{Bun}_G$ 은 $X$ 위 $G$ 다발의 모듈라이 스택 | $\mathrm{LocSys}_{\hat G}$ 는 $X$ 위 $\hat G$ 국소계의 스택 |
-| $\mathrm{D}\text{-}\mathrm{mod}(\mathrm{Bun}_G)$ | $\mathrm{IndCoh}_{\mathcal N}(\mathrm{LocSys}_{\hat G})$ |
+| $\mathrm{D}\text{-}\mathrm{mod}(\mathrm{Bun}_G)$ | $\mathrm{IndCoh}\_{\mathcal N}(\mathrm{LocSys}\_{\hat G})$ |
 | Hecke 함자 $H^V_x$ | $V$ 를 통한 텐서 $\otimes V_\sigma$ |
 
 $\mathrm{LocSys}_{\hat G}$ 는 $\pi_1(X)\to\hat G$ 의 표현 다양체를 공액으로 나눈 것과 같고, 곡선의 종수 $g\ge2$ 이면 차원이 $(2g-2)\dim\hat G$ 다.
@@ -124,7 +124,7 @@ $$
 
 ## 아벨 경우는 유체론이다
 
-$G=\mathrm{GL}_1$ 이면 $\mathrm{Bun}_{\mathrm{GL}_1}=\mathrm{Pic}(X)$ 이고 $\hat G=\mathrm{GL}_1$ 이므로 국소계는 계수 1 의 국소계, 곧 지표다. 이때 대응은 "$X$ 위의 계수 1 국소계 $\sigma$ 마다 $\mathrm{Pic}(X)$ 위의 곱셈적 국소계가 하나 있다" 가 되고, 이것은 Deligne 이 일찍이 증명한 **기하적 유체론**이다. 고전 유체론의 상호사상이 여기서는 Abel–Jacobi 사상 $X\to\mathrm{Pic}(X)$ 를 따라 국소계를 밀어내는 조작이 된다.
+$G=\mathrm{GL}_1$ 이면 $\mathrm{Bun}\_{\mathrm{GL}\_1}=\mathrm{Pic}(X)$ 이고 $\hat G=\mathrm{GL}_1$ 이므로 국소계는 계수 1 의 국소계, 곧 지표다. 이때 대응은 "$X$ 위의 계수 1 국소계 $\sigma$ 마다 $\mathrm{Pic}(X)$ 위의 곱셈적 국소계가 하나 있다" 가 되고, 이것은 Deligne 이 일찍이 증명한 **기하적 유체론**이다. 고전 유체론의 상호사상이 여기서는 Abel–Jacobi 사상 $X\to\mathrm{Pic}(X)$ 를 따라 국소계를 밀어내는 조작이 된다.
 
 ## 비아벨 경우의 역사
 

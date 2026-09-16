@@ -149,7 +149,7 @@ $$
 
 ## Gross–Zagier 공식
 
-$y_K=\mathrm{Tr}_{H/K}\varphi(x_{\mathcal O_K})$ 라 두고 $\hat h$ 를 $E/K$ 위의 Néron–Tate 정준 높이라 하고, $u=|\mathcal O_K^\times|/2$ 로 두고, $\langle f,f\rangle$ 을 Petersson 노름이라 하자. 그러면
+$y_K=\mathrm{Tr}\_{H/K}\varphi(x_{\mathcal O_K})$ 라 두고 $\hat h$ 를 $E/K$ 위의 Néron–Tate 정준 높이라 하고, $u=|\mathcal O_K^\times|/2$ 로 두고, $\langle f,f\rangle$ 을 Petersson 노름이라 하자. 그러면
 
 $$
 L'(E/K,1)=\frac{32\pi^2\,\langle f,f\rangle}{u^2\sqrt{|D|}}\;\hat h(y_K)

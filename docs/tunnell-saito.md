@@ -42,7 +42,7 @@ $\varepsilon$ 인자는 국소 함수방정식에서 나오는 상수다. 국소
 
 ## 설정
 
-$F$ 를 비아르키메데스 국소체, $K/F$ 를 이차 확대, $\eta_{K/F}$ 를 유체론이 주는 이차 지표라 하자. $\pi$ 는 $\mathrm{GL}_2(F)$ 의 무한차원 기약 표현이고 중심 지표가 $\omega_\pi$ 다. $\chi$ 는 $K^\times$ 의 지표로 $\chi|_{F^\times}=\omega_\pi$ 를 만족한다고 가정한다.
+$F$ 를 비아르키메데스 국소체, $K/F$ 를 이차 확대, $\eta_{K/F}$ 를 유체론이 주는 이차 지표라 하자. $\pi$ 는 $\mathrm{GL}\_2(F)$ 의 무한차원 기약 표현이고 중심 지표가 $\omega_\pi$ 다. $\chi$ 는 $K^\times$ 의 지표로 $\chi|\_{F^\times}=\omega_\pi$ 를 만족한다고 가정한다.
 
 $\pi$ 가 이산계열이면 Jacquet–Langlands 대응으로 $D^\times$ 의 유한차원 표현 $\pi'=\mathrm{JL}^{-1}(\pi)$ 가 있다. 이산계열이 아니면 $D^\times$ 쪽 상대가 없다.
 

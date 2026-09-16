@@ -81,7 +81,7 @@ $$
 L^*=\{y\in\mathrm{span}(L):\ \langle y,x\rangle\in\mathbb Z\ \ \forall x\in L\}
 $$
 
-기저로는 $(B^{-1})^{\mathsf T}$ 가 $L^*$ 의 기저이고 $\det L^*=1/\det L$ 이다. $L$ 이 촘촘하면 $L^*$ 가 성기다. 전이 정리들이 $\lambda_1(L)$ 과 $\lambda_n(L^*)$ 를 묶으며, 암호의 어려움 증명에서 두 격자를 오가는 논증이 자주 쓰인다.
+기저로는 $(B^{-1})^{\mathsf T}$ 가 $L^\ast$ 의 기저이고 $\det L^\ast=1/\det L$ 이다. $L$ 이 촘촘하면 $L^\ast$ 가 성기다. 전이 정리들이 $\lambda_1(L)$ 과 $\lambda_n(L^\ast)$ 를 묶으며, 암호의 어려움 증명에서 두 격자를 오가는 논증이 자주 쓰인다.
 
 ## 계산 문제
 

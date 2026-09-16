@@ -62,7 +62,7 @@ $$
 
 ## 설정
 
-$F$ 를 수체, $K/F$ 를 이차 확대, $B/F$ 를 사원수 대수라 하고 매장 $K\hookrightarrow B$ 를 하나 고정한다. $\pi$ 를 $B^\times(\mathbb A)$ 의 자기동형 표현이라 하고, Jacquet–Langlands 대응으로 $\mathrm{PGL}_2$ 위의 표현 $\pi'$ 와 짝지어 둔다. $\chi$ 는 $K^\times\backslash\mathbb A_K^\times$ 의 지표이고 $\chi|_{\mathbb A_F^\times}=1$ 을 만족한다고 하자(중심이 자명).
+$F$ 를 수체, $K/F$ 를 이차 확대, $B/F$ 를 사원수 대수라 하고 매장 $K\hookrightarrow B$ 를 하나 고정한다. $\pi$ 를 $B^\times(\mathbb A)$ 의 자기동형 표현이라 하고, Jacquet–Langlands 대응으로 $\mathrm{PGL}_2$ 위의 표현 $\pi'$ 와 짝지어 둔다. $\chi$ 는 $K^\times\backslash\mathbb A_K^\times$ 의 지표이고 $\chi|\_{\mathbb A_F^\times}=1$ 을 만족한다고 하자(중심이 자명).
 
 이때 **토릭 주기**는 위의 $\mathcal P_\chi$ 이고, 적분 구간 $\mathbb A_F^\times K^\times\backslash\mathbb A_K^\times$ 는 콤팩트이므로 수렴에 문제가 없다.
 

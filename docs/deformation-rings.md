@@ -71,7 +71,7 @@ $$
 \mathrm{End}_{G}(\bar\rho)=\mathbb F_p\qquad(\text{예컨대 }\bar\rho\ \text{가 절대기약})
 $$
 
-Schur 조건이라 부른다. 이것이 있으면 Schlessinger 의 판정이 통과하고 $R_{\bar\rho}$ 가 존재한다. 없으면 대신 기저까지 함께 기억하는 **틀 붙인 변형**을 쓴다. 틀 변형 함자는 언제나 표현가능하고, 대가로 $\mathrm{PGL}_n$ 만큼 차원이 늘어난 $R^{\square}_{\bar\rho}$ 가 나온다. Kisin 이 국소 조건을 다룰 때 쓰는 것이 이쪽이다.
+Schur 조건이라 부른다. 이것이 있으면 Schlessinger 의 판정이 통과하고 $R_{\bar\rho}$ 가 존재한다. 없으면 대신 기저까지 함께 기억하는 **틀 붙인 변형**을 쓴다. 틀 변형 함자는 언제나 표현가능하고, 대가로 $\mathrm{PGL}\_n$ 만큼 차원이 늘어난 $R^{\square}\_{\bar\rho}$ 가 나온다. Kisin 이 국소 조건을 다룰 때 쓰는 것이 이쪽이다.
 
 # 정의
 
@@ -93,14 +93,14 @@ $$
 
 ## 보편 변형환
 
-**정리(Mazur).** $G$ 가 $\Phi_p$ 를 만족하고 $\mathrm{End}_G(\bar\rho)=k$ 이면 $D_{\bar\rho}$ 는 표현가능하다. 곧 $R_{\bar\rho}\in\mathcal C_\Lambda$ 와 보편 변형 $\rho^{\mathrm{univ}}\colon G\to\mathrm{GL}_n(R_{\bar\rho})$ 가 있어 모든 $A$ 에서
+**정리(Mazur).** $G$ 가 $\Phi_p$ 를 만족하고 $\mathrm{End}\_G(\bar\rho)=k$ 이면 $D_{\bar\rho}$ 는 표현가능하다. 곧 $R_{\bar\rho}\in\mathcal C_\Lambda$ 와 보편 변형 $\rho^{\mathrm{univ}}\colon G\to\mathrm{GL}\_n(R_{\bar\rho})$ 가 있어 모든 $A$ 에서
 
 $$
 \mathrm{Hom}_{\mathcal C_\Lambda}(R_{\bar\rho},A)\;\xrightarrow{\ \sim\ }\;D_{\bar\rho}(A),
 \qquad \varphi\longmapsto \varphi\circ\rho^{\mathrm{univ}}
 $$
 
-이 전단사다. Schur 조건 없이도 $D^{\square}_{\bar\rho}$ 는 언제나 $R^{\square}_{\bar\rho}$ 로 표현가능하다.
+이 전단사다. Schur 조건 없이도 $D^{\square}_{\bar\rho}$ 는 언제나 $R^{\square}\_{\bar\rho}$ 로 표현가능하다.
 
 ## 접공간과 표시
 

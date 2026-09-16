@@ -56,7 +56,7 @@ $\star$ 가 조화형식을 조화형식으로 보내므로 $\mathcal H^k\cong\m
 
 ## 형식의 내적과 부피형식
 
-계량이 각 접공간에 내적을 주면, 그것이 $\Lambda^k T^*_pM$ 의 내적으로 유일하게 확장된다. 정규직교 여기저기 $e^1,\dots,e^n$ 에 대해 $\{e^{i_1}\wedge\cdots\wedge e^{i_k}\}_{i_1<\cdots<i_k}$ 가 정규직교기저가 되도록 잡는 것이다.
+계량이 각 접공간에 내적을 주면, 그것이 $\Lambda^k T^\ast\_pM$ 의 내적으로 유일하게 확장된다. 정규직교 여기저기 $e^1,\dots,e^n$ 에 대해 $\{e^{i_1}\wedge\cdots\wedge e^{i_k}\}\_{i_1<\cdots<i_k}$ 가 정규직교기저가 되도록 잡는 것이다.
 
 방향과 계량이 함께 부피형식 $\mathrm{vol}=e^1\wedge\cdots\wedge e^n$ 을 결정한다.
 

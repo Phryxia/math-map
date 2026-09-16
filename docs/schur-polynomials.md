@@ -26,7 +26,7 @@ $$
 
 ## 대각표가 왜 나오는가
 
-$\mathrm{GL}_n$ 의 기약표현 $V_\lambda$ 의 무게 다이어그램을 생각하자. 무게 $\mu$ 의 중복도가 $\dim(V_\lambda)_\mu$ 이고, 지표는 그것을 $x^\mu$ 에 실어 모은 것이다.
+$\mathrm{GL}\_n$ 의 기약표현 $V_\lambda$ 의 무게 다이어그램을 생각하자. 무게 $\mu$ 의 중복도가 $\dim(V_\lambda)_\mu$ 이고, 지표는 그것을 $x^\mu$ 에 실어 모은 것이다.
 
 $$
 s_\lambda(x)=\sum_\mu K_{\lambda\mu}\,x^\mu

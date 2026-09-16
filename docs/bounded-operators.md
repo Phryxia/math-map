@@ -56,13 +56,13 @@ $$
 \langle Tx,y\rangle=\langle x,T^*y\rangle\qquad\forall x,y\in H
 $$
 
-$\lVert T^*\rVert=\lVert T\rVert$ 이고 $\lVert T^*T\rVert=\lVert T\rVert^2$ 다. 마지막 등식이 $C^*$ 대수를 정의하는 성질이며, 작용소 이론이 대수적으로 다뤄지는 출발점이다.
+$\lVert T^*\rVert=\lVert T\rVert$ 이고 $\lVert T^\ast T\rVert=\lVert T\rVert^2$ 다. 마지막 등식이 $C^\ast$ 대수를 정의하는 성질이며, 작용소 이론이 대수적으로 다뤄지는 출발점이다.
 
 | 부류 | 조건 | 유한차원 대응 |
 |---|---|---|
 | 자기수반 | $T=T^*$ | 대칭/에르미트 행렬 |
-| 유니터리 | $T^*T=TT^*=I$ | 직교/유니터리 행렬 |
-| 정규 | $T^*T=TT^*$ | 정규행렬 |
+| 유니터리 | $T^\ast T=TT^\ast=I$ | 직교/유니터리 행렬 |
+| 정규 | $T^\ast T=TT^\ast$ | 정규행렬 |
 | 사영 | $T=T^*=T^2$ | 직교사영 |
 | 콤팩트 | 유계집합의 상이 상대적으로 콤팩트 | 모든 행렬 |
 
@@ -170,7 +170,7 @@ Sturm–Liouville 문제의 고유함수 전개가 이 구조의 고전적 사�
 
 ## 작용소 대수
 
-$\mathcal B(H)$ 의 부분대수로 노름 닫힌 것을 $C^*$ 대수, 약작용소 위상에서 닫힌 것을 von Neumann 대수라 한다. Gelfand–Naimark 정리에 의해 모든 가환 $C^*$ 대수는 콤팩트 Hausdorff 공간 위의 연속함수 대수와 동형이므로, 작용소 대수를 "비가환 위상공간" 으로 읽는 관점이 나온다. 비가환 기하학과 양자장론의 대수적 접근이 이 위에 서 있다.
+$\mathcal B(H)$ 의 부분대수로 노름 닫힌 것을 $C^\ast$ 대수, 약작용소 위상에서 닫힌 것을 von Neumann 대수라 한다. Gelfand–Naimark 정리에 의해 모든 가환 $C^\ast$ 대수는 콤팩트 Hausdorff 공간 위의 연속함수 대수와 동형이므로, 작용소 대수를 "비가환 위상공간" 으로 읽는 관점이 나온다. 비가환 기하학과 양자장론의 대수적 접근이 이 위에 서 있다.
 
 # 연관 문서
 

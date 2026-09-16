@@ -44,7 +44,7 @@ $$
 
 ## 공액류가 왜 측지선인가
 
-$\Gamma\subset\mathrm{PSL}_2(\mathbb R)$ 의 원소는 대각합으로 분류된다. $|\mathrm{tr}\gamma|>2$ 인 쌍곡 원소는 $\mathbb H$ 위에서 한 측지선을 따라 평행이동하며, 그 이동거리 $\ell_\gamma$ 는
+$\Gamma\subset\mathrm{PSL}\_2(\mathbb R)$ 의 원소는 대각합으로 분류된다. $|\mathrm{tr}\gamma|>2$ 인 쌍곡 원소는 $\mathbb H$ 위에서 한 측지선을 따라 평행이동하며, 그 이동거리 $\ell_\gamma$ 는
 
 $$
 2\cosh\frac{\ell_\gamma}2=|\mathrm{tr}\,\gamma|

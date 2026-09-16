@@ -35,7 +35,7 @@ Euler 계 $\mathbf{c}=\{c_F\}$ 는 수체의 탑 위에 얹힌 거대한 대상�
 
 Selmer 군은 자리마다 부분군 $H^1_{\mathcal F}(K_v,T)\subseteq H^1(K_v,T)$ 를 하나씩 지정해 잘라낸 것이다. 한 자리 $\ell$ 에서 조건을 **넓히면** Selmer 군은 커진다. 당연하다.
 
-덜 당연한 것은 **쌍대 쪽**에서 벌어지는 일이다. [국소 Tate 쌍대성](poitou-tate.md) 아래 조건을 넓히면 그 소멸자는 좁아지고, 쌍대 Selmer 군 $H^1_{\mathcal F^*}(K,T^*)$ 는 그만큼 작아진다. 두 변화량은 우연히 비슷한 게 아니라 **정확히 상쇄된다.**
+덜 당연한 것은 **쌍대 쪽**에서 벌어지는 일이다. [국소 Tate 쌍대성](poitou-tate.md) 아래 조건을 넓히면 그 소멸자는 좁아지고, 쌍대 Selmer 군 $H^1_{\mathcal F^\ast}(K,T^\ast)$ 는 그만큼 작아진다. 두 변화량은 우연히 비슷한 게 아니라 **정확히 상쇄된다.**
 
 $$
 \frac{|H^1_{\mathcal F'}(K,T)|}{|H^1_{\mathcal F}(K,T)|}\cdot\frac{|H^1_{\mathcal F^*}(K,T^*)|}{|H^1_{\mathcal F'^*}(K,T^*)|}=\frac{|H^1_{\mathcal F'}(K_\ell,T)|}{|H^1_{\mathcal F}(K_\ell,T)|}
@@ -45,7 +45,7 @@ $$
 
 ## 핵심계수는 시소의 기준선이다
 
-시소 항등식은 **차** $\dim H^1_{\mathcal F}(K,T)-\dim H^1_{\mathcal F^*}(K,T^*)$ 가 국소 데이터만으로 정해진다는 말이다. 이 차가 핵심계수 $\chi(\mathcal F)$ 다.
+시소 항등식은 **차** $\dim H^1_{\mathcal F}(K,T)-\dim H^1_{\mathcal F^\ast}(K,T^\ast)$ 가 국소 데이터만으로 정해진다는 말이다. 이 차가 핵심계수 $\chi(\mathcal F)$ 다.
 
 그런데 Kolyvagin 소수 $\ell$ 에서 쓰는 변형은 "불분기 조건을 같은 크기의 다른 부분군(가로지름 조건)으로 바꾸는 것" 이다. 크기가 같으니 $\chi$ 는 **변하지 않는다.** 즉 $\chi$ 는 $n$ 에 의존하지 않는 불변량이고, Kolyvagin 계가 돌아다니는 격자 전체에 걸쳐 상수다. 이름에 "핵심" 이 붙은 이유가 그것이다.
 
@@ -178,7 +178,7 @@ $$
 
 ## 자기쌍대 구조의 핵심계수는 $0$
 
-$\mathcal F=\mathcal F^*$ 이고 $T\cong T^*$ 이면 좌변의 두 군이 같으므로 $\chi=0$ 이다. 국소 계산으로 확인해 보면 상쇄가 어디서 일어나는지 보인다. $K=\mathbb Q$ 와 $T=E[p]$ 와 $p\ge5$ 이고 $E[p]$ 가 기약이며 $E$ 가 $p$ 에서 좋은 환원을 갖는다 하자.
+$\mathcal F=\mathcal F^*$ 이고 $T\cong T^\ast$ 이면 좌변의 두 군이 같으므로 $\chi=0$ 이다. 국소 계산으로 확인해 보면 상쇄가 어디서 일어나는지 보인다. $K=\mathbb Q$ 와 $T=E[p]$ 와 $p\ge5$ 이고 $E[p]$ 가 기약이며 $E$ 가 $p$ 에서 좋은 환원을 갖는다 하자.
 
 | 자리 $v$ | $\dim H^1_{\mathcal F}(\mathbb Q_v,T)$ | $\dim H^0(\mathbb Q_v,T)$ | 기여 |
 | --- | --- | --- | --- |
@@ -238,7 +238,7 @@ $$
 \partial_i(\kappa):=\min\{\,\mathrm{ord}_p(\kappa_n)\ :\ n\in\mathcal N,\ \nu(n)\le i\,\}
 $$
 
-로 두면($\nu(n)$ 은 $n$ 의 소인수 개수, $\mathrm{ord}_p$ 는 $\kappa_n$ 이 $p$ 로 나누어지는 횟수), $\partial_i$ 는 감소하다가 $0$ 에서 멈추는 열이고, 그 감소 폭이 쌍대 Selmer 군 $H^1_{\mathcal F^*}(K,T^*)$ 의 초등인자를 그대로 준다. 특히 길이가
+로 두면($\nu(n)$ 은 $n$ 의 소인수 개수, $\mathrm{ord}\_p$ 는 $\kappa_n$ 이 $p$ 로 나누어지는 횟수), $\partial_i$ 는 감소하다가 $0$ 에서 멈추는 열이고, 그 감소 폭이 쌍대 Selmer 군 $H^1_{\mathcal F^\ast}(K,T^\ast)$ 의 초등인자를 그대로 준다. 특히 길이가
 
 $$
 \mathrm{length}_R\,H^1_{\mathcal F^*}(K,T^*)=\sum_{i\ge0}\partial_i(\kappa)
@@ -246,11 +246,11 @@ $$
 
 로 **등식**으로 나온다. Euler 계가 주던 부등식 $\mathrm{length}\le\cdots$ 가 여기서 등식이 된 것이다. 남는 것은 $\kappa$ 가 실제로 생성원인지 — 곧 $\partial_0(\kappa)$ 가 최소값인지 — 를 확인하는 문제뿐이고, 이것이 Euler 계 쪽에서 넘어오는 유일한 입력이다.
 
-특별한 경우로 $\kappa_1\not\equiv0\ (\mathrm{mod}\ p)$ 이면 모든 $\partial_i=0$ 이라 $H^1_{\mathcal F^*}(K,T^*)=0$ 이다. Kolyvagin 의 고전적 결론 "유도류가 $p$ 로 나누어지지 않으면 Selmer 군이 죽는다" 가 이 형식에서 한 줄이 된다.
+특별한 경우로 $\kappa_1\not\equiv0\ (\mathrm{mod}\ p)$ 이면 모든 $\partial_i=0$ 이라 $H^1_{\mathcal F^\ast}(K,T^\ast)=0$ 이다. Kolyvagin 의 고전적 결론 "유도류가 $p$ 로 나누어지지 않으면 Selmer 군이 죽는다" 가 이 형식에서 한 줄이 된다.
 
 ## 핵심 정점
 
-$\chi=1$ 일 때 $\mathcal N$ 의 정점 가운데 $\dim H^1_{\mathcal F(n)}(K,T)=1$ 이고 $H^1_{\mathcal F(n)^*}(K,T^*)=0$ 인 것을 **핵심 정점**(core vertex)이라 한다. 시소가 한쪽 끝까지 기운 자리다. 핵심 정점은 항상 존재하고 그래프 안에 조밀하게 퍼져 있다는 것이 [Chebotarev](chebotarev.md) 논법으로 증명되며, 이것이 위의 구조 정리를 얻는 기술적 열쇠다. 존재성 증명의 무게가 "적당한 $\ell$ 을 고른다" 에 실려 있다는 점은 Kolyvagin 의 원래 논법과 똑같다.
+$\chi=1$ 일 때 $\mathcal N$ 의 정점 가운데 $\dim H^1_{\mathcal F(n)}(K,T)=1$ 이고 $H^1_{\mathcal F(n)^\ast}(K,T^\ast)=0$ 인 것을 **핵심 정점**(core vertex)이라 한다. 시소가 한쪽 끝까지 기운 자리다. 핵심 정점은 항상 존재하고 그래프 안에 조밀하게 퍼져 있다는 것이 [Chebotarev](chebotarev.md) 논법으로 증명되며, 이것이 위의 구조 정리를 얻는 기술적 열쇠다. 존재성 증명의 무게가 "적당한 $\ell$ 을 고른다" 에 실려 있다는 점은 Kolyvagin 의 원래 논법과 똑같다.
 
 # 활용
 

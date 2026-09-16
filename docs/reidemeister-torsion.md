@@ -71,7 +71,7 @@ $$
 
 ## 비순환 복합체의 비틀림
 
-$C_*$ 를 기저가 주어진 유한 복합체, $H_*(C)=0$ 이라 하자. 각 $i$ 에서 $B_i=\operatorname{im}\partial_{i+1}=\ker\partial_i$ 의 기저 $b_i$ 를 고른다. 비순환성에서 $b_i$ 를 $\partial$ 로 들어 올린 것과 $b_{i-1}$ 을 합치면 $C_i$ 의 기저가 되고, 그것을 주어진 기저 $c_i$ 와 비교한 변환행렬의 행렬식을 $[\,\widetilde b_i b_{i-1}/c_i\,]$ 라 쓴다.
+$C_*$ 를 기저가 주어진 유한 복합체, $H_\ast(C)=0$ 이라 하자. 각 $i$ 에서 $B_i=\operatorname{im}\partial_{i+1}=\ker\partial_i$ 의 기저 $b_i$ 를 고른다. 비순환성에서 $b_i$ 를 $\partial$ 로 들어 올린 것과 $b_{i-1}$ 을 합치면 $C_i$ 의 기저가 되고, 그것을 주어진 기저 $c_i$ 와 비교한 변환행렬의 행렬식을 $[\,\widetilde b_i b_{i-1}/c_i\,]$ 라 쓴다.
 
 > **정의.** $\tau(C_*)=\displaystyle\prod_i\big[\widetilde b_ib_{i-1}/c_i\big]^{(-1)^{i+1}}$
 
@@ -79,7 +79,7 @@ $b_i$ 의 선택에 의존하지 않음을 확인하는 것이 유일한 손볼 
 
 ## 다양체의 비틀림
 
-$M$ 을 유한 CW 복합체, $\rho:\pi_1(M)\to\mathrm{GL}_n(\mathbb C)$ 를 표현이라 하자. 보편덮개 $\widetilde M$ 의 세포 사슬복합체 $C_*(\widetilde M)$ 은 $\mathbb Z[\pi_1]$ 가군이고, 여기에 $\rho$ 를 먹여
+$M$ 을 유한 CW 복합체, $\rho:\pi_1(M)\to\mathrm{GL}\_n(\mathbb C)$ 를 표현이라 하자. 보편덮개 $\widetilde M$ 의 세포 사슬복합체 $C_\ast(\widetilde M)$ 은 $\mathbb Z[\pi_1]$ 가군이고, 여기에 $\rho$ 를 먹여
 
 $$
 C_*^\rho(M)=\mathbb C^n\otimes_{\rho}C_*(\widetilde M)
@@ -93,7 +93,7 @@ $$
 
 ## 렌즈 공간
 
-$L(p,q)$ 의 표준 CW 구조에서 계산이 끝까지 된다. $\pi_1=\mathbb Z/p$ 의 생성원을 $\zeta=e^{2\pi ij/p}$ 로 보내는 1 차원 표현 $\rho_j$ 를 쓰면, $qq^*\equiv1\pmod p$ 인 $q^*$ 에 대해
+$L(p,q)$ 의 표준 CW 구조에서 계산이 끝까지 된다. $\pi_1=\mathbb Z/p$ 의 생성원을 $\zeta=e^{2\pi ij/p}$ 로 보내는 1 차원 표현 $\rho_j$ 를 쓰면, $qq^\ast\equiv1\pmod p$ 인 $q^*$ 에 대해
 
 $$
 \tau_{\rho_j}(L(p,q))=(\zeta^j-1)(\zeta^{jq^*}-1)

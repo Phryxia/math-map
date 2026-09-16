@@ -112,7 +112,7 @@ $$
 \dim\mathrm{Sel}_{L'}-\dim\mathrm{Sel}_{L'^{*}}=\big(\dim\mathrm{Sel}_{L}-\dim\mathrm{Sel}_{L^{*}}\big)+1
 $$
 
-이고, 한편 $\mathrm{Sel}_{L}\subset\mathrm{Sel}_{L'}$ 의 지표는 최대 1 이다. 그러므로 **조건을 넓히면 Selmer 가 1 커지거나, 아니면 쌍대 Selmer 가 1 작아지거나, 둘 중 하나다.** 어느 쪽인지를 결정하는 것이 국소 계산이고, 이 이분법이 Euler 계 논법과 Taylor–Wiles 논법의 공통 엔진이다.
+이고, 한편 $\mathrm{Sel}\_{L}\subset\mathrm{Sel}\_{L'}$ 의 지표는 최대 1 이다. 그러므로 **조건을 넓히면 Selmer 가 1 커지거나, 아니면 쌍대 Selmer 가 1 작아지거나, 둘 중 하나다.** 어느 쪽인지를 결정하는 것이 국소 계산이고, 이 이분법이 Euler 계 논법과 Taylor–Wiles 논법의 공통 엔진이다.
 
 | 조작 | $\mathrm{Sel}_L$ | $\mathrm{Sel}_{L^{*}}$ |
 |---|---|---|
@@ -124,7 +124,7 @@ $$
 
 ## 왜 제한곱인가
 
-가운데 항이 단순한 곱이 아니라 제한곱 $\prod'_v$ 인 이유는 유한성 때문이다. 거의 모든 자리에서 $M$ 이 비분기이고 그런 자리에서 $H^1(K_v,M)$ 의 "비분기부" $H^1_{\mathrm{ur}}(K_v,M)$ 는 $H^1(\hat{\mathbb Z},M^{I_v})$ 와 같다. 대역류는 유한 개 자리를 뺀 모든 곳에서 비분기이므로 상이 제한곱 안에 들어간다.
+가운데 항이 단순한 곱이 아니라 제한곱 $\prod'\_v$ 인 이유는 유한성 때문이다. 거의 모든 자리에서 $M$ 이 비분기이고 그런 자리에서 $H^1(K_v,M)$ 의 "비분기부" $H^1_{\mathrm{ur}}(K_v,M)$ 는 $H^1(\hat{\mathbb Z},M^{I_v})$ 와 같다. 대역류는 유한 개 자리를 뺀 모든 곳에서 비분기이므로 상이 제한곱 안에 들어간다.
 
 비분기부는 국소 짝에 대해 스스로의 소멸자다. 그래서 "거의 모든 자리에서 짝이 자동으로 0" 이 되고, 상호법칙의 무한합이 실제로는 유한합이 된다. 조건 $L_v=H^1_{\mathrm{ur}}$ 이 기본값이 되는 이유이기도 하다.
 
@@ -182,7 +182,7 @@ $$
 \end{aligned}
 $$
 
-여기서 $(-)^{\vee}$ 는 Pontryagin 쌍대다. 특히 $H^1(K,M)\to P^1(M)$ 의 상은 $H^1(K,M^{*})\to P^1(M^{*})$ 의 상의 소멸자다. $M=M^{*}$ 이면 상이 자기 소멸자, 곧 앞에서 말한 라그랑지안이다.
+여기서 $(-)^{\vee}$ 는 Pontryagin 쌍대다. 특히 $H^1(K,M)\to P^1(M)$ 의 상은 $H^1(K,M^{\ast})\to P^1(M^{\ast})$ 의 상의 소멸자다. $M=M^{*}$ 이면 상이 자기 소멸자, 곧 앞에서 말한 라그랑지안이다.
 
 ## Tate–Shafarevich 군의 쌍대성
 
@@ -286,7 +286,7 @@ $$
 0\to\mathrm{Sel}_L\to\mathrm{Sel}_{L'}\xrightarrow{\ \partial_\ell\ }H^1_s(K_\ell,M)
 $$
 
-이 완전하고, $\partial_\ell$ 의 상이 무엇인지가 유일한 미지수다. 상호법칙이 이 상을 결정한다. $\mathrm{Sel}_{L'^{*}}$ 의 원소는 $\ell$ 에서 강화 조건, 곧 $\mathrm{loc}_\ell=0$ 을 만족하므로, $\partial_\ell(\mathrm{Sel}_{L'})$ 는 $\mathrm{loc}_\ell(\mathrm{Sel}_{L^{*}})$ 의 소멸자다. 곧
+이 완전하고, $\partial_\ell$ 의 상이 무엇인지가 유일한 미지수다. 상호법칙이 이 상을 결정한다. $\mathrm{Sel}\_{L'^{\ast}}$ 의 원소는 $\ell$ 에서 강화 조건, 곧 $\mathrm{loc}\_\ell=0$ 을 만족하므로, $\partial_\ell(\mathrm{Sel}\_{L'})$ 는 $\mathrm{loc}\_\ell(\mathrm{Sel}\_{L^{\ast}})$ 의 소멸자다. 곧
 
 $$
 \mathrm{im}\,\partial_\ell=\big(\mathrm{loc}_\ell\,\mathrm{Sel}_{L^{*}}\big)^{\perp}
@@ -316,7 +316,7 @@ $$
 
 ## Hasse 원리의 장애
 
-$\text{Ш}^{2}(K,M)\cong \text{Ш}^{1}(K,M^{*})^{\vee}$ 는 "국소적으로 자명한 2 차 류" 의 개수를 1 차 쪽 계산으로 바꿔 준다. 이 대응이 매몰 문제(embedding problem)의 국소-대역 원리, 그리고 [Brauer 군](brauer-groups.md)에서 본 Hasse 원리의 반례를 다루는 표준 도구다. $M^{*}$ 쪽이 다루기 쉬운 경우가 많아, 장애의 존재를 손에 잡히는 유한 계산으로 옮기는 데 쓰인다.
+$\text{Ш}^{2}(K,M)\cong \text{Ш}^{1}(K,M^{\ast})^{\vee}$ 는 "국소적으로 자명한 2 차 류" 의 개수를 1 차 쪽 계산으로 바꿔 준다. 이 대응이 매몰 문제(embedding problem)의 국소-대역 원리, 그리고 [Brauer 군](brauer-groups.md)에서 본 Hasse 원리의 반례를 다루는 표준 도구다. $M^{*}$ 쪽이 다루기 쉬운 경우가 많아, 장애의 존재를 손에 잡히는 유한 계산으로 옮기는 데 쓰인다.
 
 [^1]: 표준 참고는 J. Neukirch, A. Schmidt, K. Wingberg, *Cohomology of Number Fields* (2판, Springer 2008) 8 장, 그리고 J. S. Milne, *Arithmetic Duality Theorems* (2판, 2006) I 장. Greenberg–Wiles 공식은 A. Wiles, *Modular elliptic curves and Fermat's Last Theorem*, Ann. of Math. **141** (1995) 의 명제 1.6 과 R. Greenberg 의 Iwasawa 이론 강의록에 있다. 읽기 쉬운 입문으로 B. Mazur, K. Rubin, *Kolyvagin Systems* (Memoirs AMS 168, 2004) 2 장을 권한다. 본문의 라그랑지안 항등식과 코드는 직접 확인한 것이다.
 

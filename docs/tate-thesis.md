@@ -119,7 +119,7 @@ $$
 | $v$ 유한, $\chi_v$ 비분기 | $\mathbf 1_{\mathcal O_v}$ | $(1-\chi_v(\varpi)N\mathfrak p^{-s})^{-1}$ |
 | $v$ 유한, $\chi_v$ 분기 | $\mathbf 1_{\mathcal O_v}$ | $1$ |
 | $v$ 실수 | $e^{-\pi x^2}$ | $\pi^{-s/2}\Gamma(s/2)$ |
-| $v$ 복소수 | $e^{-2\pi|z|^2}$ | $2(2\pi)^{-s}\Gamma(s)$ |
+| $v$ 복소수 | $e^{-2\pi\|z\|^2}$ | $2(2\pi)^{-s}\Gamma(s)$ |
 
 **국소 함수방정식**은 각 자리에서 따로 성립한다. $f_v$ 를 바꿔 가며 두 적분의 비를 보면 $f_v$ 에 의존하지 않는 인자가 남는다.
 
@@ -139,7 +139,7 @@ $\gamma_v$ 는 국소 $L$ 인자의 비와 근 수 $\varepsilon_v(\chi_v,s)$ 로
 
 증명의 뼈대는 세 단계다.
 
-1. 이델군을 $|x|_{\mathbb A}$ 로 층층이 자른다. $\mathbb A_K^\times\cong\mathbb A_K^1\times\mathbb R_{>0}$ 이므로 적분이 $\int_0^\infty\big(\int_{\mathbb A^1}\cdots\big)t^s\,dt/t$ 가 된다.
+1. 이델군을 $|x|\_{\mathbb A}$ 로 층층이 자른다. $\mathbb A_K^\times\cong\mathbb A_K^1\times\mathbb R_{>0}$ 이므로 적분이 $\int_0^\infty\big(\int_{\mathbb A^1}\cdots\big)t^s\,dt/t$ 가 된다.
 2. $t\ge1$ 부분은 $f$ 의 급감으로 모든 $s$ 에서 수렴하는 정함수다.
 3. $t<1$ 부분에 **Riemann–Roch 항등식**을 쓴다. $\mathrm{vol}(\mathbb A_K/K)=1$ 인 Poisson 합공식을 $x$ 배 만큼 늘린 것이다.
    $$

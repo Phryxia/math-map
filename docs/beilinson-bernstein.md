@@ -93,7 +93,7 @@ graph LR
 
 $X=G/B$ 로 두고 $\chi_0$ 를 자명한 중심 지표라 한다.
 
-> **정리 (Beilinson–Bernstein, 1981).** $\Gamma(X,-)$ 는 준연접 $\mathcal D_X$ 가군의 범주에서 $U(\mathfrak g)_{\chi_0}$ 가군의 범주로 가는 범주 동치이고, 역함자는 $\mathrm{Loc}(M)=\mathcal D_X\otimes_{U(\mathfrak g)}M$ 이다.
+> **정리 (Beilinson–Bernstein, 1981).** $\Gamma(X,-)$ 는 준연접 $\mathcal D_X$ 가군의 범주에서 $U(\mathfrak g)\_{\chi_0}$ 가군의 범주로 가는 범주 동치이고, 역함자는 $\mathrm{Loc}(M)=\mathcal D_X\otimes_{U(\mathfrak g)}M$ 이다.
 
 증명은 두 단계다. $X$ 가 $\mathcal D$ 아핀임을 보이고(전역단면 함자가 완전이며 충실), $\Gamma(X,\mathcal D_X)=U(\mathfrak g)_{\chi_0}$ 를 확인한다.
 
@@ -117,7 +117,7 @@ $$
 
 ## 왜 벽에서 깨지는가
 
-$\lambda$ 가 벽 위에 있으면 $\mathcal D_X^\lambda$ 의 전역단면이 여전히 $U(\mathfrak g)_{\chi_\lambda}$ 이지만 $\Gamma$ 가 충실하지 않다. 커널에 사는 가군들이 생기고, 이들이 벽 넘기 함자의 소재가 된다. 특이 무게에서 범주 $\mathcal O$ 의 블록이 정칙 블록보다 작아지는 현상이 기하 쪽에서는 이 실패로 보인다.
+$\lambda$ 가 벽 위에 있으면 $\mathcal D_X^\lambda$ 의 전역단면이 여전히 $U(\mathfrak g)\_{\chi_\lambda}$ 이지만 $\Gamma$ 가 충실하지 않다. 커널에 사는 가군들이 생기고, 이들이 벽 넘기 함자의 소재가 된다. 특이 무게에서 범주 $\mathcal O$ 의 블록이 정칙 블록보다 작아지는 현상이 기하 쪽에서는 이 실패로 보인다.
 
 ## 다른 계수로의 이식
 

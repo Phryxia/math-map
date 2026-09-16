@@ -108,11 +108,11 @@ $$
 > $$
 > \ker\psi_{L/K}=P_K^{\mathfrak m}\cdot N_{L/K}(I_L^{\mathfrak m})
 > $$
-> 이다. 따라서 $\mathrm{Cl}_{\mathfrak m}(K)/N_{L/K}(\cdots)\cong\mathrm{Gal}(L/K)$ 다.
+> 이다. 따라서 $\mathrm{Cl}\_{\mathfrak m}(K)/N_{L/K}(\cdots)\cong\mathrm{Gal}(L/K)$ 다.
 
 그런 $\mathfrak m$ 가운데 가장 작은 것을 $L/K$ 의 **도체** $\mathfrak f_{L/K}$ 라 하고, $\mathfrak p\mid\mathfrak f_{L/K}$ 인 것과 $\mathfrak p$ 가 분기하는 것이 동치다. 도체는 "이 확대를 보려면 얼마나 정밀한 합동조건이 필요한가" 를 재는 양이다.
 
-> **존재 정리.** 거꾸로 $\mathrm{Cl}_{\mathfrak m}(K)$ 의 임의의 부분군 $H$ 에 대해, $\ker\psi_{L/K}$ 가 $H$ 의 당김과 일치하는 아벨 확대 $L/K$ 가 유일하게 존재한다.
+> **존재 정리.** 거꾸로 $\mathrm{Cl}\_{\mathfrak m}(K)$ 의 임의의 부분군 $H$ 에 대해, $\ker\psi_{L/K}$ 가 $H$ 의 당김과 일치하는 아벨 확대 $L/K$ 가 유일하게 존재한다.
 
 > **유일성과 격자 동형.** 두 대응은 서로 역이며 포함관계를 뒤집는다. $H_1\subseteq H_2\iff L_1\supseteq L_2$ 이고, 교집합과 합성이 곱과 교집합에 대응한다.
 
@@ -167,7 +167,7 @@ $\mathfrak m=1$ 인 경우다. 대응하는 확대 $H$ 를 **힐베르트 유체
 
 ## 이차 상호법칙의 재증명
 
-$p$ 가 홀소수고 $p^*=(-1)^{(p-1)/2}p$ 라 하면 $\mathbb Q(\sqrt{p^*})$ 는 $\mathbb Q(\zeta_p)$ 의 유일한 이차 부분체다. Galois 대응에서 $\mathrm{Gal}(\mathbb Q(\zeta_p)/\mathbb Q)\cong(\mathbb Z/p\mathbb Z)^\times$ 의 지표 2 부분군, 곧 제곱잉여들이 $\mathbb Q(\sqrt{p^*})$ 를 고정한다. 따라서 다른 소수 $q$ 에 대해
+$p$ 가 홀소수고 $p^\ast=(-1)^{(p-1)/2}p$ 라 하면 $\mathbb Q(\sqrt{p^\ast})$ 는 $\mathbb Q(\zeta_p)$ 의 유일한 이차 부분체다. Galois 대응에서 $\mathrm{Gal}(\mathbb Q(\zeta_p)/\mathbb Q)\cong(\mathbb Z/p\mathbb Z)^\times$ 의 지표 2 부분군, 곧 제곱잉여들이 $\mathbb Q(\sqrt{p^\ast})$ 를 고정한다. 따라서 다른 소수 $q$ 에 대해
 
 $$
 \Big(\frac{p^*}q\Big)=1

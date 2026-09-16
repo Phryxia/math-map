@@ -130,7 +130,7 @@ $$
 
 ## Sinkhorn 발산
 
-$\varepsilon>0$ 이면 $\mathrm{OT}_\varepsilon(a,a)>0$ 이다. 자기 자신과의 거리가 $0$ 이 아니므로 $\mathrm{OT}_\varepsilon$ 은 손실함수로 쓰기에 결함이 있다. 이 상수를 빼내는 것이 **Sinkhorn 발산**이다[^1].
+$\varepsilon>0$ 이면 $\mathrm{OT}\_\varepsilon(a,a)>0$ 이다. 자기 자신과의 거리가 $0$ 이 아니므로 $\mathrm{OT}_\varepsilon$ 은 손실함수로 쓰기에 결함이 있다. 이 상수를 빼내는 것이 **Sinkhorn 발산**이다[^1].
 
 $$
 S_\varepsilon(a,b)=\mathrm{OT}_\varepsilon(a,b)-\tfrac12\mathrm{OT}_\varepsilon(a,a)-\tfrac12\mathrm{OT}_\varepsilon(b,b)
@@ -177,7 +177,7 @@ $$
 
 ## 무엇이 보장되지 않는가
 
-- $\mathrm{OT}_\varepsilon$ 은 삼각부등식을 만족하지 않는다. $S_\varepsilon$ 도 일반적으로는 거리가 아니고, 양정성과 볼록성, 약수렴의 거리화만 보장된다.
+- $\mathrm{OT}\_\varepsilon$ 은 삼각부등식을 만족하지 않는다. $S_\varepsilon$ 도 일반적으로는 거리가 아니고, 양정성과 볼록성, 약수렴의 거리화만 보장된다.
 - $\varepsilon$ 을 줄이면 정확해지지만 반복이 지수적으로 늘고 조건수가 나빠진다. $\varepsilon$ 을 크게 시작해 줄여 가는 어닐링이 표준 대응이다.
 - 주변분포가 정확히 맞는 것은 수렴 후의 이야기다. 유한 반복에서 얻은 $P$ 는 한쪽 주변분포만 정확하다. 근사 계획을 실제로 써야 하면 반올림 단계가 따로 필요하다.
 

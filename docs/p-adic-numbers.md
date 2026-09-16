@@ -4,7 +4,7 @@
 
 $\mathbb Q$ 에서 $\mathbb R$ 를 만드는 방법은 Cauchy 수열로 [완비화](completeness.md)하는 것이다. 이 구성에서 "가깝다" 는 판단은 절댓값 $|x|$ 이 하는데, 절댓값을 바꾸면 어떻게 될까.
 
-소수 $p$ 마다 다른 절댓값이 있다. $x$ 가 $p$ 로 많이 나누어질수록 $x$ 를 작다고 보는 $|\cdot|_p$ 다. 이 절댓값으로 $\mathbb Q$ 를 완비화하면 $\mathbb R$ 와 전혀 다른 체 $\mathbb Q_p$ 가 나온다. Ostrowski 정리에 따르면 $\mathbb Q$ 위의 절댓값은 본질적으로 $|\cdot|_\infty$ 와 $|\cdot|_p$ 들뿐이므로, 실수는 소수마다 하나씩 있는 형제들 가운데 하나에 불과하다.
+소수 $p$ 마다 다른 절댓값이 있다. $x$ 가 $p$ 로 많이 나누어질수록 $x$ 를 작다고 보는 $|\cdot|\_p$ 다. 이 절댓값으로 $\mathbb Q$ 를 완비화하면 $\mathbb R$ 와 전혀 다른 체 $\mathbb Q_p$ 가 나온다. Ostrowski 정리에 따르면 $\mathbb Q$ 위의 절댓값은 본질적으로 $|\cdot|\_\infty$ 와 $|\cdot|_p$ 들뿐이므로, 실수는 소수마다 하나씩 있는 형제들 가운데 하나에 불과하다.
 
 $$
 \mathbb Q\ \longrightarrow\ \mathbb R,\ \mathbb Q_2,\ \mathbb Q_3,\ \mathbb Q_5,\ \mathbb Q_7,\ \dots

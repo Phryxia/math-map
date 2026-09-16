@@ -180,7 +180,7 @@ $$
 
 ## 계산으로 확인하기
 
-$A_2$ 를 $\mathbb R^3$ 안에 놓고 차원 공식과 Kostant 공식을 각각 구현한다. 둘은 논리적으로 독립한 결과가 아니지만 계산 경로가 완전히 달라서(하나는 세 인수의 곱, 하나는 여섯 항의 교대합을 무게마다) 서로를 검증한다. $\sum_\mu\dim(V_\lambda)_\mu=\dim V_\lambda$ 가 맞아야 한다.
+$A_2$ 를 $\mathbb R^3$ 안에 놓고 차원 공식과 Kostant 공식을 각각 구현한다. 둘은 논리적으로 독립한 결과가 아니지만 계산 경로가 완전히 달라서(하나는 세 인수의 곱, 하나는 여섯 항의 교대합을 무게마다) 서로를 검증한다. $\sum_\mu\dim(V_\lambda)\_\mu=\dim V_\lambda$ 가 맞아야 한다.
 
 ```python
 from fractions import Fraction as F
