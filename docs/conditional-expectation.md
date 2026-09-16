@@ -40,9 +40,9 @@ graph LR
 
 ## 조건부 기댓값
 
-확률공간 $(\Omega, \mathcal F, P)$ 와 부분 σ-대수 $\mathcal G \subseteq \mathcal F$, 그리고 $E\lvert X \rvert < \infty$ 를 만족하는 확률변수 $X$ 를 고정한다. 확률변수 $Y$ 가 다음 두 조건을 만족하면 $Y$ 를 $\mathcal G$ 에 대한 $X$ 의 조건부 기댓값이라 하고 $Y = E[X \mid \mathcal G]$ 로 쓴다.
+확률공간 $(\Omega, \mathcal F, P)$ 와 부분 σ-대수 $\mathcal G \subseteq \mathcal F$ 와 $E\lvert X \rvert < \infty$ 를 만족하는 확률변수 $X$ 를 고정한다. 확률변수 $Y$ 가 다음 두 조건을 만족하면 $Y$ 를 $\mathcal G$ 에 대한 $X$ 의 조건부 기댓값이라 하고 $Y = E[X \mid \mathcal G]$ 로 쓴다.
 
-1. $Y$ 는 $\mathcal G$-[가측함수](measurable-functions.md)이고 적분 가능하다.
+1. $Y$ 는 $\mathcal G$ 에 대한 [가측함수](measurable-functions.md)이고 적분 가능하다.
 2. 모든 $A \in \mathcal G$ 에 대하여
 
 $$
