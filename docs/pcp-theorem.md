@@ -101,7 +101,7 @@ PCP 정리만으로 최적 상수가 나오지 않는 문제가 많다. MAX-CUT 
 
 Khot 의 **유일게임 추측**은 한 변수의 값이 다른 변수의 값을 유일하게 정하는 2 변수 제약으로 된 간극 문제가 임의의 $\varepsilon,\delta$ 에 대해 $\mathsf{Gap}[1-\varepsilon,\delta]$ 수준에서 NP-어렵다고 주장한다. 이 추측 아래에서 Goemans–Williamson 의 $0.878$ 이 최적이 되고, 넓은 종류의 제약충족 문제에서 기본 SDP 완화가 최적 근사 알고리즘이 된다.
 
-추측은 미해결이고, 절반에 해당하는 **2-to-2 게임 정리**가 2022 년에 증명되었다.
+이 추측의 절반에 해당하는 **2-to-2 게임 정리**는 Khot, Minzer, Safra 가 증명했다[^4].
 
 # 성질
 
@@ -207,6 +207,7 @@ print(f"\n항상 7m/8 이상. 최적 대비 최악 비율 {worst:.3f}")
 [^1]: S. Arora, S. Safra, *Probabilistic checking of proofs*, JACM 45 (1998), 그리고 S. Arora, C. Lund, R. Motwani, M. Sudan, M. Szegedy, *Proof verification and the hardness of approximation problems*, JACM 45 (1998). 원 증명.
 [^2]: I. Dinur, *The PCP theorem by gap amplification*, JACM 54 (2007). 간극 증폭에 의한 조합적 증명.
 [^3]: J. Håstad, *Some optimal inapproximability results*, JACM 48 (2001). 3 비트 검증자와 $7/8$ 최적성.
+[^4]: S. Khot, D. Minzer, M. Safra, *Pseudorandom sets in Grassmann graph have near-perfect expansion*, Annals of Mathematics **198** (2023), 1–92. 유일게임 추측의 2-to-2 판본을 증명한다.
 
 # 연관 문서
 

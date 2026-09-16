@@ -198,7 +198,7 @@ $$
 
 ## 정칙소수 판정
 
-Kummer 의 기준, 곧 $p\nmid B_2B_4\cdots B_{p-3}$ 이면 $p\nmid h$ 라는 진술의 홀수 쪽 절반이 Herbrand 방향에서 나온다. 짝수 쪽은 Vandiver 추측이 필요해 일반적으로는 증명되지 않았고 대규모 수치 검증만 있다.
+Kummer 의 기준, 곧 $p\nmid B_2B_4\cdots B_{p-3}$ 이면 $p\nmid h$ 라는 진술의 홀수 쪽 절반이 Herbrand 방향에서 나온다. 짝수 쪽은 [Vandiver 추측](vandiver-conjecture.md)에 기대며, 그 추측은 대규모 수치 검증을 받았다.
 
 ## Jacobi 합과 곡선의 점 개수
 
