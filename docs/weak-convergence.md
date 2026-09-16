@@ -155,5 +155,6 @@ $$
 
 - [중심극한정리](central-limit-theorem.md)
 - [특성함수와 Lévy 연속성 정리](characteristic-functions.md)
+- [최적 수송과 Wasserstein 거리](optimal-transport.md)
 
 #probability #measure_theory #theorem
