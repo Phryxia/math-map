@@ -42,7 +42,7 @@ $$
 | 푸아송 $\mathrm{Poisson}(\lambda)$ | $\exp\bigl(\lambda(e^{it}-1)\bigr)$ |
 | 정규 $N(m,\sigma^2)$ | $\exp\bigl(itm-\tfrac12\sigma^2t^2\bigr)$ |
 | 지수 $\mathrm{Exp}(\lambda)$ | $\lambda/(\lambda-it)$ |
-| 코시 | $e^{-\Vert t\Vert}$ |
+| 코시 | $e^{-\vert t\vert}$ |
 
 정규분포의 특성함수는 다시 정규형이다. 코시의 특성함수가 원점에서 미분불가능한 것이 코시 분포에 평균이 없다는 사실의 특성함수 쪽 표현이다.
 

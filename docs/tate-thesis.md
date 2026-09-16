@@ -119,7 +119,7 @@ $$
 | $v$ 유한, $\chi_v$ 비분기 | $\mathbf 1_{\mathcal O_v}$ | $(1-\chi_v(\varpi)N\mathfrak p^{-s})^{-1}$ |
 | $v$ 유한, $\chi_v$ 분기 | $\mathbf 1_{\mathcal O_v}$ | $1$ |
 | $v$ 실수 | $e^{-\pi x^2}$ | $\pi^{-s/2}\Gamma(s/2)$ |
-| $v$ 복소수 | $e^{-2\pi\Vert z\Vert^2}$ | $2(2\pi)^{-s}\Gamma(s)$ |
+| $v$ 복소수 | $e^{-2\pi\vert z\vert^2}$ | $2(2\pi)^{-s}\Gamma(s)$ |
 
 **국소 함수방정식**은 각 자리에서 따로 성립한다. $f_v$ 를 바꿔 가며 두 적분의 비를 보면 $f_v$ 에 의존하지 않는 인자가 남는다.
 

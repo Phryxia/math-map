@@ -69,7 +69,7 @@ $$
 
 | 인자 | 뜻 |
 |---|---|
-| $\Omega_E$ | 실주기. $\int_{E(\mathbb R)}\Vert\omega\Vert$ |
+| $\Omega_E$ | 실주기. $\int_{E(\mathbb R)}\vert\omega\vert$ |
 | $\mathrm{Reg}_E$ | 조절자. 생성원의 정준 높이 쌍 행렬식 |
 | $\char35{}\text{Ш}$ | Tate–Shafarevich 군의 위수 (유한하다고 가정) |
 | $c_p$ | Tamagawa 수. 나쁜 환원 자리의 국소 지수 |
