@@ -42,7 +42,7 @@ $n \mapsto 2n$ 은 자연수와 짝수 사이의 전단사다. 짝수는 자연�
 
 ## 멱집합과 연속체
 
-$A$ 의 부분집합 전체를 $P(A)$ 로 쓴다. $|P(A)| = 2^{|A|}$ 이고, 실수의 기수는 $|\mathbb{R}| = 2^{\aleph_0}$ 로 연속체의 크기라 한다. $2^{\aleph_0}$ 가 $\aleph_0$ 다음 기수인지는 ZFC 로 결정되지 않으며 이것이 [연속체 가설](continuum-hypothesis.md)이다.
+$A$ 의 부분집합 전체를 $\mathcal P(A)$ 로 쓴다. $|\mathcal P(A)| = 2^{|A|}$ 이고, 실수의 기수는 $|\mathbb{R}| = 2^{\aleph_0}$ 로 연속체의 크기라 한다. $2^{\aleph_0}$ 가 $\aleph_0$ 다음 기수인지는 ZFC 로 결정되지 않으며 이것이 [연속체 가설](continuum-hypothesis.md)이다.
 
 # 성질
 
@@ -95,7 +95,7 @@ $$
 
 ## Cantor 정리와 기수의 사다리
 
-임의의 집합 $A$ 에 대해 $|A| < |P(A)|$ 다. 단사 $a \mapsto \lbrace a\rbrace$ 가 있으므로 $\le$ 이고, 전사 $f : A \to P(A)$ 가 있다면
+임의의 집합 $A$ 에 대해 $|A| < |\mathcal P(A)|$ 다. 단사 $a \mapsto \lbrace a\rbrace$ 가 있으므로 $\le$ 이고, 전사 $f : A \to \mathcal P(A)$ 가 있다면
 
 $$
 D=\lbrace a\in A: a\notin f(a)\rbrace

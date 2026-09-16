@@ -58,7 +58,7 @@ $A$ 를 $\lbrace 1,3\rbrace$ 이라 하고 $B$ 를 $\lbrace 3,5\rbrace$ 라 하�
 
 ## 멱집합과 곱집합
 
-$A$ 의 모든 부분집합을 모은 집합이 멱집합 $P(A)$ 이고, 순서쌍을 모은 것이 곱집합이다.
+$A$ 의 모든 부분집합을 모은 집합이 멱집합 $\mathcal P(A)$ 이고, 순서쌍을 모은 것이 곱집합이다.
 
 $$
 A\times B=\lbrace(a,b):a\in A,\ b\in B\rbrace
@@ -98,7 +98,7 @@ $$
 
 각 원소를 넣을지 뺄지 독립적으로 고르기 때문이고, 공집합과 $A$ 자신도 센다. 이 계산이 [셈의 기본 원리](counting-principles.md)의 곱 법칙을 처음 쓰는 자리다.
 
-무한집합에서는 $P(A)$ 가 $A$ 보다 반드시 크다는 Cantor 정리가 성립한다. 어떤 함수 $f : A \to P(A)$ 를 가져와도 $D = \lbrace x \in A : x \notin f(x) \rbrace$ 는 상에 들어 있지 않기 때문이다. $D = f(a)$ 라면 $a \in D$ 인지 묻는 순간 모순이 나온다. 이 대각선 논법이 [가산성과 비가산성](cardinality.md)의 출발점이다.
+무한집합에서는 $\mathcal P(A)$ 가 $A$ 보다 반드시 크다는 Cantor 정리가 성립한다. 어떤 함수 $f : A \to \mathcal P(A)$ 를 가져와도 $D = \lbrace x \in A : x \notin f(x) \rbrace$ 는 상에 들어 있지 않기 때문이다. $D = f(a)$ 라면 $a \in D$ 인지 묻는 순간 모순이 나온다. 이 대각선 논법이 [가산성과 비가산성](cardinality.md)의 출발점이다.
 
 ## 아무 조건이나 집합을 만들지는 못한다
 
