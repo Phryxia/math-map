@@ -105,6 +105,7 @@ $$
 ### 해석
 
 - [미적분학의 기본 정리](fundamental-calculus.md)
+- [역함수 정리](inverse-function-theorem.md)
 - [멱급수와 Taylor 급수](power-series.md)
 - [상미분방정식](ordinary-differential-equations.md)
 - [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)

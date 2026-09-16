@@ -18,6 +18,7 @@ graph TD
   LM --> UC["균등수렴"]
   CT --> UC
   CT --> DV["미분"]
+  DV --> IF["역함수 정리"]
   CT --> RI["Riemann 적분"]
   LM --> PS["멱급수와 Taylor 급수"]
   DV --> PS
@@ -57,6 +58,7 @@ graph TD
 ## 미분과 적분
 
 - [미분](derivative.md): 국소 선형근사
+- [역함수 정리](inverse-function-theorem.md): 전미분과 연쇄법칙, 역함수 정리와 음함수 정리
 - [Riemann 적분](riemann-integral.md): 분할과 상하합, 적분 가능성의 판정
 - [미적분학의 기본 정리](fundamental-calculus.md): 미분과 적분의 역관계
 - [상미분방정식](ordinary-differential-equations.md): Picard–Lindelöf 존재 정리와 선형 이론
@@ -93,7 +95,6 @@ graph TD
 # 빈자리
 
 - 급수의 수렴판정: 비교, 비율, 근, 교대급수 판정이 멱급수 문서에 흩어져 있다.
-- 다변수 미분과 역함수·음함수 정리: [미분](derivative.md)이 1 차원에 머물러 [다양체](manifolds.md)로 가는 다리가 비어 있다.
 - Arzelà–Ascoli 정리: 함수공간의 컴팩트성 판정. 상미분방정식의 Peano 존재 정리가 이것을 쓴다.
 - Stone–Weierstrass 정리: 다항식 근사의 일반형.
 - 변분법과 Euler–Lagrange 방정식: 범함수의 극값 조건.
