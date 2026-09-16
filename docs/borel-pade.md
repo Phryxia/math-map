@@ -5,7 +5,7 @@
 [Stokes 현상](stokes-phenomenon.md)에서 정의한 Borel 합
 
 $$
-\mathcal S_\theta \tilde f(x) = \int_0^{e^{i\theta}\infty} e^{-x\zeta}\,\hat f(\zeta)\,d\zeta
+\mathcal S_\theta \tilde f(x) = \int_0^{e^{i\theta}\infty} e^{-x\zeta}\thinspace\hat f(\zeta)\thinspace d\zeta
 $$
 
 에는 실행할 수 없는 단계가 하나 있다. Borel 변환 $\hat f$ 는 수렴 반경이 유한한데 적분은 무한대까지 가므로, 먼저 $\hat f$ 를 **해석적으로 연장**해야 한다. 그런데 우리가 실제로 가진 것은 계수 몇십 개로 끊긴 Taylor 급수뿐이고, 수렴 반경 밖에서 그 급수는 아무 값도 주지 않는다.
@@ -47,7 +47,7 @@ $$
 이면서 $c(\zeta) - P_L/Q_M = O(\zeta^{L+M+1})$ 인 것이다. 조건을 $Q_M c - P_L = O(\zeta^{L+M+1})$ 로 바꿔 쓰면 계수 비교가 선형이 된다. 분모 계수 $q_1,\dots,q_M$ 은
 
 $$
-\sum_{j=0}^{M} q_j\,c_{L+k-j} = 0, \qquad k = 1,\dots,M \quad (q_0 = 1)
+\sum_{j=0}^{M} q_j\thinspace c_{L+k-j} = 0, \qquad k = 1,\dots,M \quad (q_0 = 1)
 $$
 
 이라는 Toeplitz 선형계로 결정되고, 분자는 $p_k = \sum_{j\le\min(k,M)}q_j c_{k-j}$ 로 바로 나온다. 이 선형계의 행렬이 특이하면 그 자리의 Padé 표가 **비정규**이고, 실제로는 낮은 차수의 근사가 이미 정확한 경우에 일어난다.

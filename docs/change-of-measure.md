@@ -36,7 +36,7 @@ graph LR
 측도공간 $(X,\mathcal F)$ 위의 두 측도 $Q$, $P$ 에 대해, $P(A)=0$ 인 모든 가측집합 $A$ 가 $Q(A)=0$ 을 만족할 때 $Q$ 는 $P$ 에 **절대연속**이라 하고 $Q\ll P$ 로 쓴다. $P$ 가 sigma-유한이면 [Radon–Nikodym 정리](radon-nikodym.md)에 의해 거의 어디서나 유일한 비음 가측함수 $L$ 이 존재하여
 
 $$
-Q(A) = \int_A L \, dP \qquad \text{for all } A \in \mathcal{F}, \qquad L = \frac{dQ}{dP} .
+Q(A) = \int_A L \thinspace dP \qquad \text{for all } A \in \mathcal{F}, \qquad L = \frac{dQ}{dP} .
 $$
 
 $Q$ 와 $P$ 가 서로 절대연속이면 동치(equivalent)라 하고, 이때 밀도는 거의 어디서나 양수이며
@@ -50,7 +50,7 @@ $$
 핵심 항등식이다. $f$ 가 $Q$ 적분가능한 가측함수이면
 
 $$
-\mathbb{E}_Q[f] = \int f \, dQ = \int f \, \frac{dQ}{dP} \, dP = \mathbb{E}_P\Big[ f \, \frac{dQ}{dP} \Big] .
+\mathbb{E}_Q[f] = \int f \thinspace dQ = \int f \thinspace \frac{dQ}{dP} \thinspace dP = \mathbb{E}_P\Big[ f \thinspace \frac{dQ}{dP} \Big] .
 $$
 
 증명은 표시함수에 대해 절대연속 정의를 그대로 쓰고, 단순함수로 선형 확장한 뒤 [단조 수렴 정리](monotone-convergence.md)로 일반 가측함수까지 올리는 표준 3단계다. 조건부 버전(Bayes 공식)은 부분 sigma-대수 $G$ 에 대해
@@ -98,7 +98,7 @@ $$
 유의수준을 고정했을 때 검정력을 최대화하는 검정은 우도비의 문턱값 검정이다. 즉 기각역을
 
 $$
-R = \{ x : \Lambda(x) > c \}
+R = \lbrace x : \Lambda(x) > c \rbrace
 $$
 
 로 잡는 것이 최적이다. 증명 스케치: 임의의 다른 기각역 $R'$ 와 비교하여 $R \setminus R'$ 에서는 $\Lambda > c$ , $R' \setminus R$ 에서는 $\Lambda \le c$ 이므로, 두 검정력 차이를 두 영역의 적분으로 쪼개면 부호가 고정된다. [가설검정](hypothesis-testing.md)에서 p-값 계산이 우도비에 의존하는 이유다.
@@ -108,7 +108,7 @@ $$
 $\mathbb{E}_Q[f]$ 를 $P$ 에서 뽑은 표본 $X_1,\dots,X_n$ 으로 추정한다.
 
 $$
-\hat{\theta}_n = \frac{1}{n} \sum_{i=1}^{n} f(X_i) \, L(X_i), \qquad L = \frac{dQ}{dP} .
+\hat{\theta}_n = \frac{1}{n} \sum_{i=1}^{n} f(X_i) \thinspace L(X_i), \qquad L = \frac{dQ}{dP} .
 $$
 
 이 추정량은 불편이며([큰 수의 법칙](law-of-large-numbers.md)으로 일치), 분산은

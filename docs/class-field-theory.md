@@ -7,7 +7,7 @@
 분류를 하는 데이터가 유수군을 조금 넓힌 **광선유군**이고, 분류를 실현하는 사상이 **Artin 상호법칙**이다. $K$ 의 아벨 확대 $L$ 마다 광선유군의 부분군 하나가 대응하고, 그 몫이 정확히 $\mathrm{Gal}(L/K)$ 와 동형이다. 확대체를 하나도 만들어 보지 않고, $K$ 의 아이디얼 산술만으로 아벨 확대의 목록 전체를 읽어낼 수 있다.
 
 $$
-\mathrm{Cl}_{\mathfrak m}(K)/H \;\xrightarrow{\ \sim\ }\; \mathrm{Gal}(L/K)
+\mathrm{Cl}_{\mathfrak m}(K)/H \thickspace\xrightarrow{\ \sim\ }\thickspace \mathrm{Gal}(L/K)
 $$
 
 왜 이것이 "상호법칙" 인가. [이차 상호법칙](quadratic-reciprocity.md)은 $p$ 가 법 $q$ 에서 제곱수인지와 $q$ 가 법 $p$ 에서 제곱수인지를 잇는 정리였다. 유체론의 언어로 다시 쓰면, 소수 $p$ 가 아벨 확대 $L/K$ 에서 어떻게 분해하는지가 오직 $p$ 의 합동조건으로 결정된다는 진술이 된다. Gauss 가 여덟 번 증명한 그 정리는 $K=\mathbb Q$ 이고 $L$ 이 이차체인 가장 작은 경우였다.
@@ -80,7 +80,7 @@ $$
 언제나 유한군이고, $\mathfrak m=1$ 이면 보통의 유수군 $\mathrm{Cl}(K)$ 다. 일반적으로는 다음 완전열이 크기를 결정한다.
 
 $$
-1\to\frac{\mathcal O_K^\times}{\mathcal O_{K,\mathfrak m}^\times}\to\frac{(\mathcal O_K/\mathfrak m_0)^\times\times\{\pm1\}^{\mathfrak m_\infty}}{1}\to\mathrm{Cl}_{\mathfrak m}(K)\to\mathrm{Cl}(K)\to1
+1\to\frac{\mathcal O_K^\times}{\mathcal O_{K,\mathfrak m}^\times}\to\frac{(\mathcal O_K/\mathfrak m_0)^\times\times\lbrace\pm1\rbrace^{\mathfrak m_\infty}}{1}\to\mathrm{Cl}_{\mathfrak m}(K)\to\mathrm{Cl}(K)\to1
 $$
 
 $K=\mathbb Q$ 이고 $\mathfrak m=(m)\infty$ 인 경우를 확인해 두자. $\mathrm{Cl}(\mathbb Q)=1$ 이고 $\mathbb Z^\times=\lbrace\pm1\rbrace$ 인데 $\mathfrak m_\infty$ 조건이 양수만 남기므로
@@ -123,7 +123,7 @@ $H$ 가 자명군일 때 나오는 확대 $K_{\mathfrak m}$ 를 **광선유체**
 모듈러스를 하나씩 고르는 방식은 정리를 서술하기에 번거롭다. 모든 자리 $v$ 를 한꺼번에 다루는 것이 이델이다.
 
 $$
-\mathbb A_K^\times=\Big\{(x_v)\in\prod_v K_v^\times : \text{거의 모든 } v \text{ 에서 } x_v\in\mathcal O_v^\times\Big\},
+\mathbb A_K^\times=\Big\lbrace(x_v)\in\prod_v K_v^\times : \text{거의 모든 } v \text{ 에서 } x_v\in\mathcal O_v^\times\Big\rbrace,
 \qquad C_K=\mathbb A_K^\times/K^\times
 $$
 

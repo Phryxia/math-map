@@ -36,9 +36,9 @@ $$
 곡률이 어디서도 $0$ 이 아닐 때 이 세 벡터는 각 점에서 정규직교기저를 이루고([내적공간](inner-product-spaces.md)의 정규직교성), 그 도함수는 자기 자신들로 표현된다. 이것이 Frenet–Serret 공식이다[^1].
 
 $$
-\begin{pmatrix}T'\\ N'\\ B'\end{pmatrix}
-=\begin{pmatrix}0&\kappa&0\\ -\kappa&0&\tau\\ 0&-\tau&0\end{pmatrix}
-\begin{pmatrix}T\\ N\\ B\end{pmatrix}
+\begin{pmatrix}T'\cr N'\cr B'\end{pmatrix}
+=\begin{pmatrix}0&\kappa&0\cr -\kappa&0&\tau\cr 0&-\tau&0\end{pmatrix}
+\begin{pmatrix}T\cr N\cr B\end{pmatrix}
 $$
 
 계수행렬이 반대칭인 것은 기저가 정규직교임을 미분한 결과다. 여기서 $\tau$ 가 비틀림(torsion)이며, 곡선이 한 평면에서 벗어나는 정도를 잰다.
@@ -55,11 +55,11 @@ $$
 곡면의 국소 매개화를 쓰면 접벡터의 길이를 재는 first fundamental form과 법선 방향으로 휘는 정도를 재는 second fundamental form이 나온다. 단위법벡터를 $n$ 이라 하면
 
 $$
-\mathrm{I}=\begin{pmatrix}E&F\\ F&G\end{pmatrix},\quad E=r_u\cdot r_u,\ F=r_u\cdot r_v,\ G=r_v\cdot r_v
+\mathrm{I}=\begin{pmatrix}E&F\cr F&G\end{pmatrix},\quad E=r_u\cdot r_u,\ F=r_u\cdot r_v,\ G=r_v\cdot r_v
 $$
 
 $$
-\mathrm{II}=\begin{pmatrix}e&f\\ f&g\end{pmatrix},\quad e=r_{uu}\cdot n,\ f=r_{uv}\cdot n,\ g=r_{vv}\cdot n
+\mathrm{II}=\begin{pmatrix}e&f\cr f&g\end{pmatrix},\quad e=r_{uu}\cdot n,\ f=r_{uv}\cdot n,\ g=r_{vv}\cdot n
 $$
 
 주곡률은 $\mathrm{I}$ 의 역행렬과 $\mathrm{II}$ 의 곱(shape operator)의 [고윳값](eigenvalues.md)이며, Gauss 곡률과 평균곡률은 각각 그 행렬식과 대각합의 절반이다.
@@ -75,7 +75,7 @@ $$
 Gauss 곡률은 first fundamental form과 그 편도함수만으로 표현된다. 즉 $K$ 는 곡면의 내재적(intrinsic) 양이며, 주변 공간에 어떻게 매장되었는지에 의존하지 않는다[^2]. 직교 매개화( $F=0$ )에서는 다음 형태가 된다.
 
 $$
-K=-\frac{1}{2\sqrt{EG}}\left[\frac{\partial}{\partial u}\!\left(\frac{G_u}{\sqrt{EG}}\right)+\frac{\partial}{\partial v}\!\left(\frac{E_v}{\sqrt{EG}}\right)\right]
+K=-\frac{1}{2\sqrt{EG}}\left[\frac{\partial}{\partial u}\negthinspace\left(\frac{G_u}{\sqrt{EG}}\right)+\frac{\partial}{\partial v}\negthinspace\left(\frac{E_v}{\sqrt{EG}}\right)\right]
 $$
 
 따라서 길이를 보존하는 사상(local isometry)은 $K$ 를 보존한다. 평면의 $K$ 는 $0$ 이므로 $K$ 가 $0$ 이 아닌 구면의 어떤 조각도 평면과 등거리동형이 될 수 없다. 지도 제작에서 각과 거리와 면적을 동시에 보존하는 투영이 존재하지 않는 이유가 이것이다. 반면 평균곡률 $H$ 는 내재적이 아니다. 평면과 원기둥은 국소적으로 등거리동형이지만 $H$ 는 각각 $0$ 과 $0$ 이 아닌 값이다.
@@ -85,13 +85,13 @@ $$
 $R$ 를 곡면 위의 조각으로, 그 경계가 조각마다 매끄러운 닫힌 곡선이고 외각이 주어졌다고 하자. 그러면 다음이 성립한다[^3].
 
 $$
-\iint_{R}K\,dA+\oint_{\partial R}\kappa_g\,ds+\sum_i \alpha_i=2\pi\chi(R)
+\iint_{R}K\thinspace dA+\oint_{\partial R}\kappa_g\thinspace ds+\sum_i \alpha_i=2\pi\chi(R)
 $$
 
 여기서 $\kappa_g$ 는 경계의 geodesic curvature, $\alpha_i$ 는 꼭짓점에서의 외각, $\chi$ 는 [Euler 지표](euler-characteristic.md)다. 경계가 없는 compact 방향지음 가능 곡면에서는 경계항이 사라지고
 
 $$
-\iint_{M}K\,dA=2\pi\chi(M)=2\pi(2-2g)
+\iint_{M}K\thinspace dA=2\pi\chi(M)=2\pi(2-2g)
 $$
 
 가 된다. 구면은 오른쪽이 $4\pi$ 이고, 반지름 $r$ 의 구면은 $K=1/r^2$ 이고 면적이 $4\pi r^2$ 이므로 좌변도 $4\pi$ 다. 원환면은 $\chi$ 가 $0$ 이므로 총 곡률이 $0$ 이다. 곡률을 어떻게 일그러뜨려도 총합은 변하지 않는다는 것이 이 정리의 요지다.

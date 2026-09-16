@@ -13,7 +13,7 @@ $$
 를 고정하고, 이것으로 환원되는 $p$ 진 표현을 **하나씩** 찾는 대신 **전부 한꺼번에** 다룬다. 완비 국소환 $A$ 마다 $A$ 계수 올림의 집합 $D(A)$ 를 대응시키면 함자가 되고, 적당한 조건 아래 이 함자는 표현가능하다. 즉 환 $R_{\bar\rho}$ 와 그 위의 표현 하나가 있어
 
 $$
-D(A)\;\cong\;\mathrm{Hom}_{\text{연속}}(R_{\bar\rho},A)
+D(A)\thickspace\cong\thickspace\mathrm{Hom}_{\text{연속}}(R_{\bar\rho},A)
 $$
 
 가 모든 $A$ 에서 자연스럽게 성립한다. $\bar\rho$ 의 모든 올림이 $R_{\bar\rho}$ 위의 **보편 변형** 하나에서 특수화로 나온다는 뜻이다. 표현들의 모임이 환 하나가 되고, 표현론의 질문이 가환대수의 질문으로 바뀐다.
@@ -27,19 +27,19 @@ $$
 $\bar\rho$ 를 $\mathbb Z/p^2$ 계수로 올린다고 하자. 행렬 성분을 $\bar\rho(g)$ 에 $p$ 배의 보정을 더한 것으로 쓴다.
 
 $$
-\rho(g)=\bigl(1+p\,c(g)\bigr)\,\tilde{\bar\rho}(g)
+\rho(g)=\bigl(1+p\thinspace c(g)\bigr)\thinspace\tilde{\bar\rho}(g)
 $$
 
 $\rho$ 가 준동형일 조건을 $p^2=0$ 에서 전개하면 $c$ 에 대한 조건이 하나 남는다.
 
 $$
-c(gh)=c(g)+\mathrm{Ad}(\bar\rho(g))\,c(h)
+c(gh)=c(g)+\mathrm{Ad}(\bar\rho(g))\thinspace c(h)
 $$
 
 이것이 계수가 $\mathrm{ad}\thinspace\bar\rho=M_n(\mathbb F_p)$ 인 **1-코사이클** 조건이다. 그리고 $1+pm$ 꼴로 켤레를 취하면 $c$ 가 coboundary 만큼 바뀐다. 그러므로
 
 $$
-\{\text{1 차 변형}\}\big/\text{동치}\;\cong\;H^1(G,\mathrm{ad}\,\bar\rho)
+\lbrace\text{1 차 변형}\rbrace\big/\text{동치}\thickspace\cong\thickspace H^1(G,\mathrm{ad}\thinspace\bar\rho)
 $$
 
 이다. 변형이론의 첫 문장이 이것 하나다. $\mathrm{ad}$ 를 계수로 쓰는 이유도 여기서 나온다 — 보정항이 $\mathfrak{gl}_n$ 값이고 $G$ 는 그 위에 켤레로 작용한다.
@@ -84,7 +84,7 @@ $\Lambda$ 를 잉여체 $k=\mathbb F_p$ 인 완비 이산부치환이라 하자.
 $\bar\rho\colon G\to\mathrm{GL}_n(k)$ 에 대해
 
 $$
-D_{\bar\rho}(A)=\Bigl\{\rho\colon G\to\mathrm{GL}_n(A)\ \text{연속}\ \Big|\ \rho\bmod\mathfrak m_A=\bar\rho\Bigr\}\Big/\ \ker\bigl(\mathrm{GL}_n(A)\to\mathrm{GL}_n(k)\bigr)\text{-켤레}
+D_{\bar\rho}(A)=\Bigl\lbrace\rho\colon G\to\mathrm{GL}_n(A)\ \text{연속}\ \Big|\ \rho\bmod\mathfrak m_A=\bar\rho\Bigr\rbrace\Big/\ \ker\bigl(\mathrm{GL}_n(A)\to\mathrm{GL}_n(k)\bigr)\text{-켤레}
 $$
 
 로 둔다. 켤레를 나누지 않은 것이 **틀 붙인 변형 함자** $D^{\square}_{\bar\rho}$ 다.
@@ -96,7 +96,7 @@ $$
 **정리(Mazur).** $G$ 가 $\Phi_p$ 를 만족하고 $\mathrm{End}\_G(\bar\rho)=k$ 이면 $D_{\bar\rho}$ 는 표현가능하다. 곧 $R_{\bar\rho}\in\mathcal C_\Lambda$ 와 보편 변형 $\rho^{\mathrm{univ}}\colon G\to\mathrm{GL}\_n(R_{\bar\rho})$ 가 있어 모든 $A$ 에서
 
 $$
-\mathrm{Hom}_{\mathcal C_\Lambda}(R_{\bar\rho},A)\;\xrightarrow{\ \sim\ }\;D_{\bar\rho}(A),
+\mathrm{Hom}_{\mathcal C_\Lambda}(R_{\bar\rho},A)\thickspace\xrightarrow{\ \sim\ }\thickspace D_{\bar\rho}(A),
 \qquad \varphi\longmapsto \varphi\circ\rho^{\mathrm{univ}}
 $$
 
@@ -107,19 +107,19 @@ $$
 이중수 $k[\varepsilon]$ 에서의 값이 접공간이다.
 
 $$
-D_{\bar\rho}(k[\varepsilon])\;\cong\;\mathrm{Hom}_k\bigl(\mathfrak m_R/(\mathfrak m_R^2,p),\,k\bigr)\;\cong\;H^1(G,\mathrm{ad}\,\bar\rho)
+D_{\bar\rho}(k[\varepsilon])\thickspace\cong\thickspace\mathrm{Hom}_k\bigl(\mathfrak m_R/(\mathfrak m_R^2,p),\thinspace k\bigr)\thickspace\cong\thickspace H^1(G,\mathrm{ad}\thinspace\bar\rho)
 $$
 
 따라서 $d=\dim_k H^1$ 개의 생성원으로 $R$ 을 덮을 수 있고, 장애 이론이 관계식의 개수를 누른다.
 
 $$
-R_{\bar\rho}\;\cong\;\Lambda[[x_1,\dots,x_d]]/(f_1,\dots,f_r),\qquad r\le \dim_k H^2(G,\mathrm{ad}\,\bar\rho)
+R_{\bar\rho}\thickspace\cong\thickspace\Lambda[[x_1,\dots,x_d]]/(f_1,\dots,f_r),\qquad r\le \dim_k H^2(G,\mathrm{ad}\thinspace\bar\rho)
 $$
 
 특히 $H^2=0$ 이면 $R_{\bar\rho}\cong\Lambda[[x_1,\dots,x_d]]$ 로 매끄럽고, 어떤 경우든
 
 $$
-\dim R_{\bar\rho}\;\ge\;1+\dim H^1-\dim H^2
+\dim R_{\bar\rho}\thickspace\ge\thickspace 1+\dim H^1-\dim H^2
 $$
 
 이다. 오른쪽은 Tate 의 전역 Euler 표수 공식으로 $H^0$ 과 무한소수 자리의 기여만으로 계산된다. $\mathrm{GL}_2$ 의 홀수 $\bar\rho$ 에서 $\mathrm{ad}^0$ 를 쓰면 이 하한이 $1$ 이 되어, $R$ 이 $\Lambda$ 위 유한이라는 기대와 맞아떨어진다.
@@ -183,7 +183,7 @@ $$
 생성원 하나, 관계식 하나다. $\dim H^1(\mathbb Z/p,\mathbb F_p)=1$ 이 생성원의 개수를, $\dim H^2(\mathbb Z/p,\mathbb F_p)=1$ 이 관계식 개수의 상한을 준 것이다. 이 환은 더 쪼개진다. $(1+T)^p-1=T\cdot\Phi_p(1+T)$ 이고 $\Phi_p(1+T)$ 가 $p$ 에서 Eisenstein 이므로
 
 $$
-R\;\cong\;\mathbb Z_p\ \times\ \mathbb Z_p[\zeta_p]
+R\thickspace\cong\thickspace\mathbb Z_p\ \times\ \mathbb Z_p[\zeta_p]
 $$
 
 두 성분은 각각 자명한 변형과 $p$ 차 분기 지표에 해당한다. 변형환의 성분 분해가 표현의 분류를 그대로 보여 주는 가장 작은 예다.

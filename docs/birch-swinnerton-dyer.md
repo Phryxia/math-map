@@ -7,7 +7,7 @@
 Birch 와 Swinnerton-Dyer 는 1960년대 초 EDSAC 으로 완전히 다른 길을 실험했다. 순위가 크면 유리점이 많고, 유리점이 많으면 각 소수에서 환원한 점의 개수 $N_p=\char35{}E(\mathbb F_p)$ 도 평균적으로 클 것이다. 그래서 그들은
 
 $$
-\prod_{p\le X}\frac{N_p}{p}\ \sim\ C\,(\log X)^{r}
+\prod_{p\le X}\frac{N_p}{p}\ \sim\ C\thinspace(\log X)^{r}
 $$
 
 를 관측했다. 좌변은 순전히 유한체 위의 점 세기이고 우변의 $r$ 은 $E(\mathbb Q)$ 의 계수다. 국소적 자료의 무한곱이 대역적 불변량을 안다는 주장이다.
@@ -15,7 +15,7 @@ $$
 이 곱을 정돈한 것이 [Dirichlet $L$ 함수](dirichlet-l-functions.md)와 같은 꼴의 $L(E,s)$ 이고, $\log X$ 의 거듭제곱은 $s=1$ 에서의 소멸 차수로 번역된다.
 
 $$
-\mathrm{ord}_{s=1}L(E,s)\;=\;\mathrm{rank}\,E(\mathbb Q)
+\mathrm{ord}_{s=1}L(E,s)\thickspace=\thickspace\mathrm{rank}\thinspace E(\mathbb Q)
 $$
 
 이것이 약한 BSD 이며, 밀레니엄 문제 중 하나다. 강한 형태는 선행계수까지 명시해 $\char35{}\text{Ш}$ 를 포함한 공식으로 쓴다.
@@ -39,7 +39,7 @@ $$
 Hasse 의 $|a_p|\le2\sqrt p$ 때문에 이 곱은 $\mathrm{Re}(s)>3/2$ 에서만 수렴한다. $s=1$ 은 수렴 영역 **밖**이다. 그러니 $L(E,1)$ 을 말하려면 해석적 연속이 먼저 필요하고, 그것을 준 것이 모듈러성 정리다. $E$ 가 무게 2 새형식 $f$ 에서 오므로 $L(E,s)=L(f,s)$ 이고, 후자는 $\mathbb C$ 전체로 연속되며 함수방정식
 
 $$
-\Lambda(s)=N^{s/2}(2\pi)^{-s}\Gamma(s)L(E,s),\qquad \Lambda(2-s)=w\,\Lambda(s)
+\Lambda(s)=N^{s/2}(2\pi)^{-s}\Gamma(s)L(E,s),\qquad \Lambda(2-s)=w\thinspace\Lambda(s)
 $$
 
 를 갖는다. $s=1$ 이 함수방정식의 중심이라는 점이 결정적이다.
@@ -57,7 +57,7 @@ $w=\pm1$ 이 함수방정식의 부호다. $w=-1$ 이면 $\Lambda(1)=-\Lambda(1)
 ## 약한 BSD
 
 $$
-\mathrm{ord}_{s=1}L(E,s)=r=\mathrm{rank}\,E(\mathbb Q)
+\mathrm{ord}_{s=1}L(E,s)=r=\mathrm{rank}\thinspace E(\mathbb Q)
 $$
 
 좌변을 해석적 순위, 우변을 대수적 순위라 부른다.
@@ -66,7 +66,7 @@ $$
 
 $$
 \lim_{s\to1}\frac{L(E,s)}{(s-1)^r}
-=\frac{\Omega_E\cdot\mathrm{Reg}_E\cdot\#\text{Ш}(E/\mathbb Q)\cdot\prod_pc_p}{\big(\#E(\mathbb Q)_{\mathrm{tors}}\big)^2}
+=\frac{\Omega_E\cdot\mathrm{Reg}_E\cdot\char35{}\text{Ш}(E/\mathbb Q)\cdot\prod_pc_p}{\big(\char35{}E(\mathbb Q)_{\mathrm{tors}}\big)^2}
 $$
 
 | 인자 | 뜻 |
@@ -120,7 +120,7 @@ Heegner 점은 하나뿐이다. $L'(E,1)$ 하나에 점 하나가 대응하므�
 순위 0 곡선에서는 강한 BSD 를 역으로 쓴다. $L(E,1)$ 을 수치로 계산하고 $\Omega_E,c_p,\char35{}E_{\mathrm{tors}}$ 를 구하면
 
 $$
-\#\text{Ш}\ \stackrel?=\ \frac{L(E,1)\cdot\#E(\mathbb Q)_{\mathrm{tors}}^2}{\Omega_E\prod_pc_p}
+\char35{}\text{Ш}\ \stackrel?=\ \frac{L(E,1)\cdot\char35{}E(\mathbb Q)_{\mathrm{tors}}^2}{\Omega_E\prod_pc_p}
 $$
 
 가 예측값을 준다. 이 값은 항상 완전제곱수에 가까운 정수로 나오는데, [Cassels–Tate 쌍](selmer-groups.md)이 그래야 함을 보장하므로 공식의 강력한 정합성 검사가 된다. $\char35{}\text{Ш}=4,9,16,\dots$ 인 곡선들이 이렇게 발견되었고, 하강으로 실제 확인된 경우도 많다.
@@ -130,7 +130,7 @@ $$
 $n$ 이 합동수인 것은 $E_n:y^2=x^3-n^2x$ 의 순위가 양수인 것과 같다. Tunnell 은 $L(E_n,1)$ 의 소멸 여부를 무게 $3/2$ 형식의 계수로 판정하는 유한 조건을 얻었다.
 
 $$
-n\ \text{홀수 무제곱수}:\quad n\ \text{합동수}\ \Longrightarrow\ \#\{x^2+2y^2+8z^2=n\}=2\,\#\{x^2+2y^2+32z^2=n\}
+n\ \text{홀수 무제곱수}:\quad n\ \text{합동수}\ \Longrightarrow\ \char35{}\lbrace x^2+2y^2+8z^2=n\rbrace=2\thinspace\char35{}\lbrace x^2+2y^2+32z^2=n\rbrace
 $$
 
 역방향, 곧 조건이 성립하면 합동수라는 주장은 순위 0 의 BSD 에 의존한다. 2000년 넘게 열려 있던 고전 문제가 밀레니엄 문제 하나에 매달려 있는 셈이다.

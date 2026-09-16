@@ -5,7 +5,7 @@
 Bernoulli 수는 거듭제곱의 합을 닫힌 꼴로 쓰려는 아주 구체적인 물음에서 나왔다.
 
 $$
-\sum_{a=0}^{n-1}a^{k}=\frac1{k+1}\sum_{j=0}^{k}\binom{k+1}{j}B_j\,n^{\,k+1-j}
+\sum_{a=0}^{n-1}a^{k}=\frac1{k+1}\sum_{j=0}^{k}\binom{k+1}{j}B_j\thinspace n^{\thinspace k+1-j}
 $$
 
 여기 나오는 유리수 $B_j$ 가 Bernoulli 수다. 정의는 초등적이지만 이 수열이 나타나는 자리는 초등적이지 않다.
@@ -112,7 +112,7 @@ flowchart TD
 $$
 \frac{t}{e^{t}-1}=\sum_{n\ge0}B_n\frac{t^{n}}{n!},
 \qquad
-\frac{t\,e^{xt}}{e^{t}-1}=\sum_{n\ge0}B_n(x)\frac{t^{n}}{n!}
+\frac{t\thinspace e^{xt}}{e^{t}-1}=\sum_{n\ge0}B_n(x)\frac{t^{n}}{n!}
 $$
 
 $B_n=B_n(0)$ 이다. 점화식은 $n\ge1$ 에서 $\sum_{k=0}^{n}\binom{n+1}{k}B_k=0$ 이고 위 코드가 쓰는 것이 이 식이다. $B_1=-\tfrac12$ 이며 $n\ge3$ 이 홀수면 $B_n=0$ 이다.
@@ -122,9 +122,9 @@ $B_n=B_n(0)$ 이다. 점화식은 $n\ge1$ 에서 $\sum_{k=0}^{n}\binom{n+1}{k}B_
 도체 $f$ 인 지표 $\chi$ 에 대해
 
 $$
-\sum_{a=1}^{f}\chi(a)\frac{t\,e^{at}}{e^{ft}-1}=\sum_{n\ge0}B_{n,\chi}\frac{t^{n}}{n!},
+\sum_{a=1}^{f}\chi(a)\frac{t\thinspace e^{at}}{e^{ft}-1}=\sum_{n\ge0}B_{n,\chi}\frac{t^{n}}{n!},
 \qquad
-B_{1,\chi}=\frac1f\sum_{a=1}^{f}\chi(a)\,a
+B_{1,\chi}=\frac1f\sum_{a=1}^{f}\chi(a)\thinspace a
 $$
 
 로 정의한다. $\chi$ 가 자명하면 원래의 $B_n$ 으로 돌아온다. [Dirichlet $L$ 함수](dirichlet-l-functions.md)와의 관계는
@@ -138,7 +138,7 @@ $$
 ## zeta 값
 
 $$
-\zeta(2k)=\frac{(-1)^{k+1}B_{2k}(2\pi)^{2k}}{2\,(2k)!},
+\zeta(2k)=\frac{(-1)^{k+1}B_{2k}(2\pi)^{2k}}{2\thinspace(2k)!},
 \qquad
 \zeta(1-n)=-\frac{B_n}{n}
 $$
@@ -158,7 +158,7 @@ $$
 **따름.** $B_n$ 의 분모는 $\prod_{(p-1)\mid n}p$ 이고 제곱인수가 없다. $p$ 진 부치로는
 
 $$
-v_p(B_n)=\begin{cases}-1,&(p-1)\mid n\\ \ \ge0,&\text{그 외}\end{cases}
+v_p(B_n)=\begin{cases}-1,&(p-1)\mid n\cr \ \ge0,&\text{그 외}\end{cases}
 $$
 
 **증명의 착상.** $\sum_{a=0}^{N-1}a^{n}$ 을 두 방식으로 $\bmod p$ 계산한다. 한쪽은 거듭제곱 합 공식, 다른 쪽은 $(\mathbb Z/p)^{\times}$ 의 직교성이다. 두 계산을 맞추면 $pB_n\equiv-1$ 또는 $0$ 이 나온다. $\square$
@@ -188,7 +188,7 @@ $$
 **Kummer 의 기준.** $p$ 가 정칙일 필요충분조건은
 
 $$
-p\nmid B_2\,B_4\cdots B_{p-3}\ \text{의 분자}
+p\nmid B_2\thinspace B_4\cdots B_{p-3}\ \text{의 분자}
 $$
 
 앞의 코드가 찾은 $37,59$ 가 60 이하의 비정칙 소수이고, 다음은 $67,101,103,\dots$ 이다. 비정칙 소수의 밀도는 $1-e^{-1/2}\approx39.3\char37{}$ 로 추정되며 수치와 잘 맞는다. **정칙소수가 무한히 많은지는 미해결이고, 비정칙 소수가 무한히 많다는 것은 증명되어 있다**(Jensen). 쉬운 쪽과 어려운 쪽이 뒤바뀐 드문 예다.
@@ -198,7 +198,7 @@ $$
 ## 점근 크기
 
 $$
-|B_{2n}|=\frac{2\,(2n)!}{(2\pi)^{2n}}\zeta(2n)\ \sim\ 4\sqrt{\pi n}\left(\frac{n}{\pi e}\right)^{2n}
+|B_{2n}|=\frac{2\thinspace(2n)!}{(2\pi)^{2n}}\zeta(2n)\ \sim\ 4\sqrt{\pi n}\left(\frac{n}{\pi e}\right)^{2n}
 $$
 
 계승보다 빠르게 자란다. 그러므로 $B_n$ 을 유리수로 그대로 다루는 계산은 금방 한계에 부딪히고, 실제 계산은 von Staudt–Clausen 으로 분모를 알아낸 뒤 여러 소수를 법으로 분자를 구해 중국인의 나머지 정리로 복원하는 방식을 쓴다.

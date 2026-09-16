@@ -38,7 +38,7 @@ $q_t$ 를 시각 $t$ 의 분포라 하면 $\nabla_x\log q_t(x)$ 는 밀도가 �
 전방 과정이 $x_t=x_0+\sigma_t\epsilon$ 이면 Tweedie 공식이 다음을 준다.
 
 $$
-\mathbb E[x_0\mid x_t]=x_t+\sigma_t^2\,\nabla_x\log q_t(x_t)
+\mathbb E[x_0\mid x_t]=x_t+\sigma_t^2\thinspace\nabla_x\log q_t(x_t)
 $$
 
 곧 "잡음 낀 관측에서 원본의 조건부 평균" 과 "점수함수" 가 서로를 결정한다. 신경망에 $\epsilon$ 을 예측하도록 최소제곱 회귀를 시키면, 그 최적해가 자동으로 $-\sigma_t\nabla\log q_t$ 다.
@@ -52,7 +52,7 @@ ELBO 를 전개해 나오는 복잡한 KL 항들의 가중합이 이 단순한 �
 분산 폭발(VE) 형식이 가장 단순하다.
 
 $$
-x_t=x_0+\sqrt t\,\epsilon,\qquad\epsilon\sim\mathcal N(0,I)
+x_t=x_0+\sqrt t\thinspace\epsilon,\qquad\epsilon\sim\mathcal N(0,I)
 $$
 
 $q_t$ 는 데이터 분포에 분산 $t$ 인 Gauss 를 합성곱한 것이다. $t$ 가 충분히 크면 데이터의 구조가 묻혀 $\mathcal N(0,tI)$ 와 구별되지 않는다.
@@ -60,7 +60,7 @@ $q_t$ 는 데이터 분포에 분산 $t$ 인 Gauss 를 합성곱한 것이다. $
 실무에서는 분산 보존(VP) 형식을 더 많이 쓴다.
 
 $$
-x_t=\sqrt{\bar\alpha_t}\,x_0+\sqrt{1-\bar\alpha_t}\,\epsilon
+x_t=\sqrt{\bar\alpha_t}\thinspace x_0+\sqrt{1-\bar\alpha_t}\thinspace\epsilon
 $$
 
 $\bar\alpha_t$ 가 1 에서 0 으로 줄어들며, 어느 $t$ 에서도 $x_t$ 의 분산이 대략 일정하게 유지되어 신경망 입력의 규모가 안정된다.
@@ -68,7 +68,7 @@ $\bar\alpha_t$ 가 1 에서 0 으로 줄어들며, 어느 $t$ 에서도 $x_t$ �
 ## SDE 서술
 
 $$
-dx=f(x,t)\,dt+g(t)\,dw
+dx=f(x,t)\thinspace dt+g(t)\thinspace dw
 $$
 
 VE 는 $f=0,\ g(t)=1$ 이고, VP 는 $f=-\tfrac12\beta(t)x,\ g=\sqrt{\beta(t)}$ 다.
@@ -76,7 +76,7 @@ VE 는 $f=0,\ g(t)=1$ 이고, VP 는 $f=-\tfrac12\beta(t)x,\ g=\sqrt{\beta(t)}$ 
 Anderson 의 시간역전 정리가 대응하는 역방향 SDE 를 준다.
 
 $$
-dx=\big[f(x,t)-g(t)^2\nabla_x\log q_t(x)\big]dt+g(t)\,d\bar w
+dx=\big[f(x,t)-g(t)^2\nabla_x\log q_t(x)\big]dt+g(t)\thinspace d\bar w
 $$
 
 $dt$ 가 음수이고 $\bar w$ 가 역시간 Brown 운동이다. 점수함수만 알면 생성이 이 SDE 의 수치적분으로 환원된다.
@@ -94,7 +94,7 @@ $$
 ## 학습 목적함수
 
 $$
-\mathcal L=\mathbb E_{t,x_0,\epsilon}\Big[w(t)\big\|\epsilon-\epsilon_\theta(x_t,t)\big\|^2\Big]
+\mathcal L=\mathbb E_{t,x_0,\epsilon}\Big[w(t)\big\Vert\epsilon-\epsilon_\theta(x_t,t)\big\Vert^2\Big]
 $$
 
 $w(t)=1$ 로 두는 단순화가 ELBO 와 다르지만 표본 품질이 더 좋다는 것이 경험적 발견이다. 가중치를 바꾸는 것이 잡음 수준 사이의 중요도를 조절하는 것이며, 정확한 가능도가 목표면 ELBO 가중치를 쓴다.
@@ -106,7 +106,7 @@ $w(t)=1$ 로 두는 단순화가 ELBO 와 다르지만 표본 품질이 더 좋�
 확산모형의 ELBO 는 계층적 VAE 의 그것이고, 전개하면 각 단계의 KL 항 합이 된다.
 
 $$
-\log p(x_0)\ \ge\ -\sum_t\mathrm{KL}\big(q(x_{t-1}\mid x_t,x_0)\,\|\,p_\theta(x_{t-1}\mid x_t)\big)+\cdots
+\log p(x_0)\ \ge\ -\sum_t\mathrm{KL}\big(q(x_{t-1}\mid x_t,x_0)\thinspace\Vert\thinspace p_\theta(x_{t-1}\mid x_t)\big)+\cdots
 $$
 
 두 분포가 모두 Gauss 이므로 각 KL 이 평균의 제곱거리로 닫히고, 재매개화하면 위의 잡음 예측 회귀가 나온다. VAE 와 달리 인코더가 학습 대상이 아니므로 상각 틈이 없고, 사후 붕괴도 일어나지 않는다. 전방 과정이 고정되어 잠재변수가 항상 정보를 담기 때문이다.

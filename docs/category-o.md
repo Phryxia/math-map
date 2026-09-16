@@ -87,7 +87,7 @@ $\mathcal O$ 는 아벨 범주이고, 부분가군과 몫가군과 유한 직합
 
 $$
 M(\lambda)=U(\mathfrak g)\otimes_{U(\mathfrak b)}\mathbb C_\lambda,\qquad
-L(\lambda)=M(\lambda)/\mathrm{rad}\,M(\lambda)
+L(\lambda)=M(\lambda)/\mathrm{rad}\thinspace M(\lambda)
 $$
 
 $\lbrace L(\lambda)\rbrace_{\lambda\in\mathfrak h^*}$ 가 $\mathcal O$ 의 단순 대상 전부이고 서로 동형이 아니다. $L(\lambda)$ 가 유한차원일 필요충분조건은 $\lambda$ 가 지배적 정수무게인 것이다.
@@ -127,9 +127,9 @@ $$
 정수 정칙 블록에서 $\lambda$ 를 반지배적으로 잡고 $w_0$ 를 최장원이라 하자.
 
 $$
-\bigl[M(y\cdot\lambda):L(w\cdot\lambda)\bigr]=P_{w_0y,\,w_0w}(1),
+\bigl[M(y\cdot\lambda):L(w\cdot\lambda)\bigr]=P_{w_0y,\thinspace w_0w}(1),
 \qquad
-\mathrm{ch}\,L(w\cdot\lambda)=\sum_{y\ge w}(-1)^{\ell(y)-\ell(w)}P_{w_0y,\,w_0w}(1)\,\mathrm{ch}\,M(y\cdot\lambda)
+\mathrm{ch}\thinspace L(w\cdot\lambda)=\sum_{y\ge w}(-1)^{\ell(y)-\ell(w)}P_{w_0y,\thinspace w_0w}(1)\thinspace\mathrm{ch}\thinspace M(y\cdot\lambda)
 $$
 
 Beilinson–Bernstein 과 Brylinski–Kashiwara 가 깃발다양체 위의 $D$ 가군으로 이것을 증명했다. 중복도가 위상적 대상 — 교차 코호몰로지 층의 줄기 차원 — 으로 계산되기 때문에 양수성이 따라오고, 조합적 정의만으로는 보이지 않던 사실이 기하에서 나온다.
@@ -141,7 +141,7 @@ Beilinson–Bernstein 과 Brylinski–Kashiwara 가 깃발다양체 위의 $D$ �
 $A_1$ 과 $A_2$ 에서는 모든 KL 다항식이 $1$ 이다. 그러면 중복도가 Bruhat 순서의 지시함수가 된다.
 
 $$
-\bigl[M(y\cdot\lambda):L(w\cdot\lambda)\bigr]=\begin{cases}1,&y\le w\\0,&\text{그 외}\end{cases}
+\bigl[M(y\cdot\lambda):L(w\cdot\lambda)\bigr]=\begin{cases}1,&y\le w\cr 0,&\text{그 외}\end{cases}
 $$
 
 $A_3$ 부터 $1$ 이 아닌 KL 다항식이 나타나고, 그때부터 중복도가 $2$ 이상인 자리가 생긴다. 아래 계산은 자명한 경우만 다루지만, 상반성과 Cartan 대칭성은 KL 다항식의 값과 무관하게 성립한다.

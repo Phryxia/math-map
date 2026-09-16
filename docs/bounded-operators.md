@@ -69,7 +69,7 @@ $\lVert T^*\rVert=\lVert T\rVert$ 이고 $\lVert T^\ast T\rVert=\lVert T\rVert^2
 ## 스펙트럼
 
 $$
-\sigma(T)=\{\lambda\in\mathbb C:\ T-\lambda I\ \text{가 }\mathcal B(H)\text{ 에서 가역이 아니다}\}
+\sigma(T)=\lbrace\lambda\in\mathbb C:\ T-\lambda I\ \text{가 }\mathcal B(H)\text{ 에서 가역이 아니다}\rbrace
 $$
 
 여집합을 분해집합이라 하고, 그 위에서 $R(\lambda)=(T-\lambda I)^{-1}$ 을 분해작용소라 한다.
@@ -125,7 +125,7 @@ $$
 콤팩트가 아니면 합이 적분으로 바뀐다. 자기수반 $T$ 에 대해 사영값 측도 $E$ 가 유일하게 존재해
 
 $$
-T=\int_{\sigma(T)}\lambda\,dE(\lambda)
+T=\int_{\sigma(T)}\lambda\thinspace dE(\lambda)
 $$
 
 가 성립한다. $E(B)$ 는 Borel 집합 $B$ 에 대응하는 직교사영이며, 고유공간의 일반화다. 위의 곱셈 작용소에서 $E(B)$ 는 $B$ 의 지시함수를 곱하는 작용소다.
@@ -137,7 +137,7 @@ $$
 스펙트럼 측도가 있으면 함수를 작용소에 적용할 수 있다.
 
 $$
-f(T)=\int_{\sigma(T)}f(\lambda)\,dE(\lambda)
+f(T)=\int_{\sigma(T)}f(\lambda)\thinspace dE(\lambda)
 $$
 
 $f$ 가 다항식이면 보통의 다항식 계산과 일치하고, $f(\lambda)=e^{it\lambda}$ 이면 유니터리군 $e^{itT}$ 가 나온다. 대응 $f\mapsto f(T)$ 가 대수 준동형이므로, 함수 사이의 항등식이 작용소 사이의 항등식으로 그대로 옮겨진다.

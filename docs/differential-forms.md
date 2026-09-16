@@ -27,7 +27,7 @@ $\int f\thinspace dx$ 에서 적분되는 대상이 $f$ 라고 배우지만, 좌
 두 벡터를 바꿔 넣으면 부호가 바뀐다는 조건이 교대성이다. 여기서 방향이 나온다.
 
 $$
-dx\wedge dy=-\,dy\wedge dx,\qquad dx\wedge dx=0
+dx\wedge dy=-\thinspace dy\wedge dx,\qquad dx\wedge dx=0
 $$
 
 같은 방향이 두 번 들어가면 평행다면체가 납작해져 부피가 0 이라는 기하가 대수 규칙으로 옮겨진 것이다. 행렬식이 교대 다중선형 함수로 특징지어지는 것과 같은 이야기이며, 그래서 좌표변환 공식이 공짜로 나온다.
@@ -63,7 +63,7 @@ $$
 다양체 $M$ 위의 $k$ 형식은 각 점 $p$ 에서 $\Lambda^kT_p^*M$ 의 원소를 매끄럽게 배정한 것이다. 국소 좌표에서 다음 꼴로 쓴다.
 
 $$
-\omega=\sum_{i_1<\cdots<i_k}f_{i_1\cdots i_k}\,dx^{i_1}\wedge\cdots\wedge dx^{i_k}
+\omega=\sum_{i_1<\cdots<i_k}f_{i_1\cdots i_k}\thinspace dx^{i_1}\wedge\cdots\wedge dx^{i_k}
 $$
 
 0-형식은 함수이고, $n$ 차원 다양체 위의 $n$ 형식은 부피 요소다.
@@ -71,7 +71,7 @@ $$
 ## 쐐기곱
 
 $$
-\alpha\wedge\beta=(-1)^{kl}\,\beta\wedge\alpha\qquad(\alpha\in\Omega^k,\ \beta\in\Omega^l)
+\alpha\wedge\beta=(-1)^{kl}\thinspace\beta\wedge\alpha\qquad(\alpha\in\Omega^k,\ \beta\in\Omega^l)
 $$
 
 결합적이고 쌍선형이며, 모든 차수의 형식을 모은 $\Omega^\bullet(M)$ 을 등급 대수로 만든다.
@@ -88,7 +88,7 @@ $$
 좌표에서는 계수함수에 $d$ 를 적용하고 쐐기를 붙이는 것으로 계산된다.
 
 $$
-d\big(f\,dx^{i_1}\wedge\cdots\wedge dx^{i_k}\big)=df\wedge dx^{i_1}\wedge\cdots\wedge dx^{i_k}
+d\big(f\thinspace dx^{i_1}\wedge\cdots\wedge dx^{i_k}\big)=df\wedge dx^{i_1}\wedge\cdots\wedge dx^{i_k}
 $$
 
 ## 당김
@@ -135,7 +135,7 @@ Poincaré 보조정리는 수축가능한 열린집합에서 모든 닫힘형식
 고전적인 예가 $\mathbb R^2\setminus\lbrace 0\rbrace$ 위의 각형식이다.
 
 $$
-\omega=\frac{-y\,dx+x\,dy}{x^2+y^2}
+\omega=\frac{-y\thinspace dx+x\thinspace dy}{x^2+y^2}
 $$
 
 계산하면 $d\omega=0$ 이지만 단위원에서의 적분이 $2\pi$ 이므로 완전하지 않다. Stokes 정리에 따르면 완전형식의 닫힌 곡선 위 적분은 0 이어야 하기 때문이다. 원점의 구멍이 $H^1$ 을 1 차원으로 만든다.
@@ -155,7 +155,7 @@ $n$ 형식이 각 점에서 1 차원이므로, 어디서도 0 이 되지 않는 
 예를 들어 $\mathbb R^3$ 에서 $\omega=x\thinspace dy\wedge dz+y\thinspace dz\wedge dx+z\thinspace dx\wedge dy$ 를 미분하면
 
 $$
-d\omega=(1+1+1)\,dx\wedge dy\wedge dz=3\,dx\wedge dy\wedge dz
+d\omega=(1+1+1)\thinspace dx\wedge dy\wedge dz=3\thinspace dx\wedge dy\wedge dz
 $$
 
 이고, 단위구 위에서 Stokes 정리를 적용하면 $\int_{S^2}\omega=3\cdot\frac43\pi=4\pi$ 다. 구의 부피 공식이 경계 적분 하나로 나온다.

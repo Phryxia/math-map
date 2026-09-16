@@ -7,7 +7,7 @@
 단순한 직적 $\prod_v K_v$ 는 너무 크다. 국소콤팩트성을 잃어 Haar 측도도 Fourier 해석도 할 수 없다. 직합은 너무 작아 $\mathbb Q$ 조차 담지 못한다. 올바른 중간이 **제한직적**이다. 거의 모든 자리에서 정수환 안에 있을 것만 요구한다.
 
 $$
-\mathbb A_K=\Big\{(x_v)\in\prod_vK_v:\text{거의 모든 } v \text{ 에서 } x_v\in\mathcal O_v\Big\}
+\mathbb A_K=\Big\lbrace(x_v)\in\prod_vK_v:\text{거의 모든 } v \text{ 에서 } x_v\in\mathcal O_v\Big\rbrace
 $$
 
 이렇게 만든 아델 환에서 놀라운 일이 일어난다. [수체](algebraic-number-fields.md) $K$ 가 $\mathbb A_K$ 안에 **이산 부분군**으로 들어가고 몫이 **콤팩트**해진다. $\mathbb Z\subset\mathbb R$ 와 똑같은 그림이다. 곱군 쪽으로 가면 유수의 유한성과 Dirichlet 단원 정리가 "노름 1 인 이델류군이 콤팩트하다" 는 한 문장으로 합쳐진다. 서로 다른 두 고전 정리가 사실 같은 콤팩트성이었던 것이다.
@@ -66,8 +66,8 @@ $\mathbb A_{\mathbb Q}=\mathbb Q+\big([0,1)\times\hat{\mathbb Z}\big)$ 라는 �
 $K$ 가 수체(또는 함수체)이고 $v$ 가 그 자리일 때, $K_v$ 를 완비화, $\mathcal O_v$ 를 그 정수환이라 하자(아르키메데스 자리에서는 $\mathcal O_v$ 조건을 붙이지 않는다).
 
 $$
-\mathbb A_K={\prod_v}'\,(K_v,\mathcal O_v)
-=\Big\{(x_v):x_v\in\mathcal O_v \text{ for almost all } v\Big\}
+\mathbb A_K={\prod_v}'\thinspace(K_v,\mathcal O_v)
+=\Big\lbrace(x_v):x_v\in\mathcal O_v \text{ for almost all } v\Big\rbrace
 $$
 
 위상은 유한집합 $S$ (아르키메데스 자리를 모두 포함) 마다
@@ -83,7 +83,7 @@ $$
 곱군은 $\mathbb A_K^\times$ 인데, 여기에 $\mathbb A_K$ 의 부분공간 위상을 주면 안 된다. 역원 연산이 연속이 아니기 때문이다. 올바른 위상은 $x\mapsto(x,x^{-1})$ 로 $\mathbb A_K\times\mathbb A_K$ 에 매장해 얻는 것이고, 결과적으로
 
 $$
-\mathbb A_K^\times={\prod_v}'\,(K_v^\times,\mathcal O_v^\times)
+\mathbb A_K^\times={\prod_v}'\thinspace(K_v^\times,\mathcal O_v^\times)
 $$
 
 의 제한직적 위상과 같다. 이 군을 **이델군**이라 한다.
@@ -105,7 +105,7 @@ $$
 를 **이델류군**이라 한다. 이름대로 유수군을 품는다. 유한 자리의 $\mathcal O_v^\times$ 들과 아르키메데스 성분을 묶어 $U=\prod_{v\nmid\infty}\mathcal O_v^\times\times\prod_{v\mid\infty}K_v^\times$ 로 두면
 
 $$
-C_K/\,\overline{U}\ \cong\ \mathrm{Cl}(K)
+C_K/\thinspace\overline{U}\ \cong\ \mathrm{Cl}(K)
 $$
 
 이고, 더 작은 열린 부분군으로 나누면 [광선유군](class-field-theory.md)이 나온다. 곧 $C_K$ 는 모든 모듈러스의 광선유군을 동시에 담는 대상이며, 유체론이 모듈러스를 하나씩 고르지 않고 한 줄로 서술되는 이유다.
@@ -151,7 +151,7 @@ $$
 Tate 는 여기에 이델 위의 zeta 적분
 
 $$
-Z(f,s)=\int_{\mathbb A_K^\times}f(x)\,|x|_{\mathbb A}^s\,d^\times x
+Z(f,s)=\int_{\mathbb A_K^\times}f(x)\thinspace|x|_{\mathbb A}^s\thinspace d^\times x
 $$
 
 를 얹었다. 적분이 국소 인자의 곱으로 쪼개져 Euler 곱이 나오고, Poisson 합공식이 $s\leftrightarrow1-s$ 대칭을 준다. Riemann 과 Hecke 가 theta 함수의 변환식으로 힘들게 얻었던 $\zeta_K(s)$ 의 해석적 접속과 함수방정식이, 감마 인자와 판별식까지 포함해 자동으로 따라 나온다.

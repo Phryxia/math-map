@@ -19,7 +19,7 @@ $$
 가장 투명한 경우는 $\mathcal G$ 가 가산 분할 $\Omega = B_1 \sqcup B_2 \sqcup \dots$ 로 생성될 때다. 이때 관측이 알려주는 것은 "지금 어느 조각 안에 있는가" 뿐이므로, 예측값은 각 조각 위에서 상수여야 하고 그 상수는 조각 위의 평균이어야 한다.
 
 $$
-E[X \mid \mathcal{G}](\omega) \;=\; \sum_{k} \frac{E[X \mathbf{1}_{B_k}]}{P(B_k)} \, \mathbf{1}_{B_k}(\omega).
+E[X \mid \mathcal{G}](\omega) \thickspace=\thickspace \sum_{k} \frac{E[X \mathbf{1}_{B_k}]}{P(B_k)} \thinspace \mathbf{1}_{B_k}(\omega).
 $$
 
 "조각 위에서 상수"가 곧 $\mathcal G$ 가측성이고, "조각 위의 평균"이 곧 적분 일치 조건이다. 일반적인 $\mathcal G$ 에는 분할이 없지만 두 조건은 그대로 살아남는다. 그래서 정의는 공식이 아니라 **특성화**의 형태를 띤다.
@@ -46,7 +46,7 @@ graph LR
 2. 모든 $A \in \mathcal G$ 에 대하여
 
 $$
-\int_A Y \, dP \;=\; \int_A X \, dP .
+\int_A Y \thinspace dP \thickspace=\thickspace \int_A X \thinspace dP .
 $$
 
 조건 2를 부분적분 등식(partial averaging property)이라 부른다. $A = \Omega$ 를 넣으면 특히 $E[Y] = E[X]$ 다.
@@ -54,7 +54,7 @@ $$
 확률변수 $Z$ 에 대한 조건부 기댓값은 $Z$ 가 생성하는 $\sigma$ -대수를 쓴 약속이다.
 
 $$
-E[X \mid Z] \;:=\; E[X \mid \sigma(Z)], \qquad \sigma(Z) = \{Z^{-1}(B) : B \in \mathcal{B}(\mathbb{R})\}.
+E[X \mid Z] \thickspace:=\thickspace E[X \mid \sigma(Z)], \qquad \sigma(Z) = \lbrace Z^{-1}(B) : B \in \mathcal{B}(\mathbb{R})\rbrace.
 $$
 
 Doob–Dynkin 보조정리에 의해 $\sigma(Z)$ 가측 확률변수는 어떤 Borel 함수 $g$ 에 대해 $g(Z)$ 의 꼴이므로, $E[X \mid Z] = g(Z)$ 인 함수 $g$ 가 존재한다. 이 $g$ 를 회귀함수라 부른다.
@@ -62,7 +62,7 @@ Doob–Dynkin 보조정리에 의해 $\sigma(Z)$ 가측 확률변수는 어떤 B
 조건부 확률은 지시함수의 조건부 기댓값으로 정의한다.
 
 $$
-P(A \mid \mathcal{G}) \;:=\; E[\mathbf{1}_A \mid \mathcal{G}].
+P(A \mid \mathcal{G}) \thickspace:=\thickspace E[\mathbf{1}_A \mid \mathcal{G}].
 $$
 
 ## 존재성과 유일성
@@ -74,7 +74,7 @@ $$
 *존재성.* 먼저 $X \ge 0$ 라 하자. $\mathcal G$ 위에서 유한측도
 
 $$
-\nu(A) \;=\; \int_A X \, dP, \qquad A \in \mathcal{G}
+\nu(A) \thickspace=\thickspace \int_A X \thinspace dP, \qquad A \in \mathcal{G}
 $$
 
 를 정의한다. $P(A) = 0$ 이면 $\nu(A) = 0$ 이므로 $\nu \ll P\rvert_{\mathcal G}$ 이고, [Radon–Nikodym 정리](radon-nikodym.md)에 의해 $\mathcal G$ 가측 밀도 $Y = d\nu / d(P\rvert_{\mathcal G})$ 가 존재한다. 이 $Y$ 가 정의의 두 조건을 그대로 만족한다. 일반적인 $X$ 는 $X = X^+ - X^-$ 로 분해하고 선형으로 결합한다. 존재성 증명의 전부가 Radon–Nikodym 이라는 점이 이 개념의 측도론적 위치를 말해 준다.
@@ -84,7 +84,7 @@ $$
 $E[X^2] < \infty$ 인 경우에는 측도론 없이도 구성할 수 있다. $L^2(\Omega, \mathcal F, P)$ 는 내적
 
 $$
-\langle U, V \rangle \;=\; E[UV]
+\langle U, V \rangle \thickspace=\thickspace E[UV]
 $$
 
 를 가진 [Hilbert 공간](hilbert-spaces.md)이고, $L^2(\Omega, \mathcal G, P)$ 는 그 닫힌 부분공간이다. 정사영 정리에 의해 $X$ 에 가장 가까운 원소 $Y$ 가 유일하게 존재하며, 최적성의 1차 조건은
@@ -100,7 +100,7 @@ $$
 $\mathcal G = \sigma(B_1, B_2, \dots)$ 가 양의 확률을 갖는 가산 분할로 생성되면, $\mathcal G$ 가측 변수는 각 $B_k$ 위에서 상수다. $Y = \sum_k c_k \mathbf 1_{B_k}$ 를 $A = B_k$ 에 대한 부분적분 등식에 넣으면 $c_k P(B_k) = E[X \mathbf 1_{B_k}]$ 이므로
 
 $$
-c_k \;=\; \frac{E[X \mathbf{1}_{B_k}]}{P(B_k)} \;=\; E[X \mid B_k]
+c_k \thickspace=\thickspace \frac{E[X \mathbf{1}_{B_k}]}{P(B_k)} \thickspace=\thickspace E[X \mid B_k]
 $$
 
 가 되어 초등적 정의와 일치한다. [유한 확률 공간](probability.md)에서 배우는 조건부 기댓값과 [Bayes 정리](bayes.md)의 계산은 모두 이 특수 경우다.
@@ -114,7 +114,7 @@ $$
 **선형성.** 상수 $a$ 와 $b$ 에 대해
 
 $$
-E[aX + bY \mid \mathcal{G}] \;=\; a\,E[X \mid \mathcal{G}] + b\,E[Y \mid \mathcal{G}].
+E[aX + bY \mid \mathcal{G}] \thickspace=\thickspace a\thinspace E[X \mid \mathcal{G}] + b\thinspace E[Y \mid \mathcal{G}].
 $$
 
 증명은 우변이 $\mathcal G$ 가측이고 부분적분 등식을 만족함을 확인한 뒤 유일성을 쓰면 끝난다. 이후 성질들도 대부분 같은 전략을 따른다.
@@ -122,13 +122,13 @@ $$
 **단조성.** $X \le Y$ 이면 $E[X \mid \mathcal G] \le E[Y \mid \mathcal G]$ 다. 실제로 $A = \lbrace E[X \mid \mathcal G] - E[Y \mid \mathcal G] > \varepsilon\rbrace$ 위에서 적분하면 모순이 나온다. 따름정리로 $\lvert E[X \mid \mathcal G] \rvert \le E[\lvert X \rvert \mid \mathcal G]$ 가 성립하고, 따라서 조건부 기댓값은 $L^1$ 위의 수축이다.
 
 $$
-E\big[\,\big|E[X \mid \mathcal{G}]\big|\,\big] \;\le\; E[\,|X|\,].
+E\big[\thinspace\big|E[X \mid \mathcal{G}]\big|\thinspace\big] \thickspace\le\thickspace E[\thinspace|X|\thinspace].
 $$
 
 **탑 성질 (tower property).** $\mathcal H \subseteq \mathcal G \subseteq \mathcal F$ 이면
 
 $$
-E\big[\,E[X \mid \mathcal{G}] \,\big|\, \mathcal{H}\,\big] \;=\; E[X \mid \mathcal{H}].
+E\big[\thinspace E[X \mid \mathcal{G}] \thinspace\big|\thinspace \mathcal{H}\thinspace\big] \thickspace=\thickspace E[X \mid \mathcal{H}].
 $$
 
 증명: 좌변은 $\mathcal H$ 가측이다. $A \in \mathcal H \subseteq \mathcal G$ 에 대해 $\int_A E[E[X \mid \mathcal G] \mid \mathcal H] \thinspace dP = \int_A E[X \mid \mathcal G] \thinspace dP = \int_A X \thinspace dP$ 이며, 첫 등식은 $\mathcal H$ 에 대한 정의, 둘째 등식은 $A \in \mathcal G$ 이므로 $\mathcal G$ 에 대한 정의다. 유일성으로 결론이 난다. "정보를 적게 가진 쪽이 이긴다"는 이 성질이 [Martingale](martingales.md) 이론 전체의 계산 엔진이다.
@@ -136,7 +136,7 @@ $$
 **끌어내기 (taking out what is known).** $W$ 가 $\mathcal G$ 가측이고 $XW$ 가 적분 가능하면
 
 $$
-E[XW \mid \mathcal{G}] \;=\; W \, E[X \mid \mathcal{G}].
+E[XW \mid \mathcal{G}] \thickspace=\thickspace W \thinspace E[X \mid \mathcal{G}].
 $$
 
 $B \in \mathcal G$ 인 지시함수 $W = \mathbf 1_B$ 에 대해 직접 확인한 뒤 단순함수, 단조극한([단조 수렴 정리](monotone-convergence.md))의 순서로 확장한다.
@@ -150,7 +150,7 @@ $B \in \mathcal G$ 인 지시함수 $W = \mathbf 1_B$ 에 대해 직접 확인�
 **조건부 Jensen 부등식.** $\varphi$ 가 [볼록](convexity.md)이고 $X$ 와 $\varphi(X)$ 가 적분 가능하면
 
 $$
-\varphi\big(E[X \mid \mathcal{G}]\big) \;\le\; E[\varphi(X) \mid \mathcal{G}].
+\varphi\big(E[X \mid \mathcal{G}]\big) \thickspace\le\thickspace E[\varphi(X) \mid \mathcal{G}].
 $$
 
 *증명 스케치.* 볼록함수는 자신의 접선(지지선)들의 상한이다. 유리수 매개변수로 가산 집합 $\lbrace(a_n, b_n)\rbrace$ 을 골라 $\varphi(x) = \sup_n (a_n x + b_n)$ 로 쓸 수 있다. 각 $n$ 에 대해 $\varphi(X) \ge a_n X + b_n$ 이므로 단조성과 선형성으로 $E[\varphi(X) \mid \mathcal G] \ge a_n E[X \mid \mathcal G] + b_n$ 이고, 가산 상한을 취하면 영집합이 가산 번만 합쳐지므로 부등식이 거의 확실하게 유지된다.
@@ -162,13 +162,13 @@ $\varphi(x) = \lvert x \rvert^p$ 를 넣으면 $p \ge 1$ 인 모든 $L^p$ 에서
 $E[X^2] < \infty$ 일 때 조건부 분산을 $\operatorname{Var}(X \mid \mathcal G) = E[X^2 \mid \mathcal G] - E[X \mid \mathcal G]^2$ 로 정의하면 전분산 공식이 성립한다.
 
 $$
-\operatorname{Var}(X) \;=\; E\big[\operatorname{Var}(X \mid \mathcal{G})\big] \;+\; \operatorname{Var}\big(E[X \mid \mathcal{G}]\big).
+\operatorname{Var}(X) \thickspace=\thickspace E\big[\operatorname{Var}(X \mid \mathcal{G})\big] \thickspace+\thickspace \operatorname{Var}\big(E[X \mid \mathcal{G}]\big).
 $$
 
 Pythagoras 정리의 확률적 표현이다. 또한 임의의 $\mathcal G$ 가측 제곱적분 가능 $W$ 에 대해
 
 $$
-E\big[(X - W)^2\big] \;=\; E\big[(X - E[X \mid \mathcal{G}])^2\big] + E\big[(E[X \mid \mathcal{G}] - W)^2\big]
+E\big[(X - W)^2\big] \thickspace=\thickspace E\big[(X - E[X \mid \mathcal{G}])^2\big] + E\big[(E[X \mid \mathcal{G}] - W)^2\big]
 $$
 
 이므로 제곱오차를 최소화하는 예측기는 $W = E[X \mid \mathcal G]$ 이다. 통계학에서 "조건부 평균이 최적 예측"이라는 표어가 이것이며, 추정량의 개선을 다루는 Rao–Blackwell 정리도 같은 항등식의 따름이다[^1].
@@ -211,7 +211,7 @@ print(statistics.fmean(cond[x] for x, _ in outcomes),
 조건이 연속 변수인 경우에는 원자가 없으므로 이런 분할 계산이 불가능하고, 밀도를 통해
 
 $$
-E[X \mid Z = z] \;=\; \frac{\int x \, f(x, z) \, dx}{\int f(x, z) \, dx}
+E[X \mid Z = z] \thickspace=\thickspace \frac{\int x \thinspace f(x, z) \thinspace dx}{\int f(x, z) \thinspace dx}
 $$
 
 로 계산한다. 이 표현이 정당한 이유는 우변이 $Z$ 의 Borel 함수이고 Fubini 정리로 부분적분 등식을 만족하기 때문이며, 분모가 0 인 $z$ 들의 집합은 $Z$ 의 분포에 대해 영집합이다. 조건이 영확률 사건이라는 사실과 무관하게 정의가 작동한다는 점이 측도론적 정의의 실질적인 이득이다.

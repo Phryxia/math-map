@@ -43,7 +43,7 @@ $$
 는 전사이고, 교집합과 곱이 일치하여 다음 동형을 얻는다[^2].
 
 $$
-R/\big(I_1\cdots I_k\big)\;=\;R/\big(I_1\cap\cdots\cap I_k\big)\;\cong\;\prod_{i=1}^{k} R/I_i
+R/\big(I_1\cdots I_k\big)\thickspace=\thickspace R/\big(I_1\cap\cdots\cap I_k\big)\thickspace\cong\thickspace\prod_{i=1}^{k} R/I_i
 $$
 
 $R=\mathbb{Z}$ , $I_i=(n_i)$ 로 두면 정수 형태가 나온다. 곱이 가환이 아니어도 성립하지만, 곱과 교집합이 같다는 부분은 comaximality가 있어야 한다.
@@ -55,19 +55,19 @@ $R=\mathbb{Z}$ , $I_i=(n_i)$ 로 두면 정수 형태가 나온다. 곱이 가�
 $k=2$ 에서 시작한다. $\gcd(n_1,n_2)=1$ 이므로 [유클리드 알고리즘](euclidean-algorithm.md)의 확장형이 Bézout 계수를 준다.
 
 $$
-u\,n_1+v\,n_2=1
+u\thinspace n_1+v\thinspace n_2=1
 $$
 
 이때 다음 $x$ 가 두 합동식을 모두 만족한다.
 
 $$
-x=a_1\,v\,n_2+a_2\,u\,n_1
+x=a_1\thinspace v\thinspace n_2+a_2\thinspace u\thinspace n_1
 $$
 
 실제로 $v\thinspace n_2=1-u\thinspace n_1$ 이므로 $x$ 는 법 $n_1$ 에서 $a_1$ 과 합동이고, 대칭적으로 법 $n_2$ 에서 $a_2$ 와 합동이다. 일반 $k$ 는 귀납으로 처리하거나 다음 명시적 공식을 쓴다. $M_i=N/n_i$ 라 하고 $M_i$ 의 법 $n_i$ 에서의 역원을 $y_i$ 라 하면
 
 $$
-x=\sum_{i=1}^{k} a_i\,M_i\,y_i \pmod{N}
+x=\sum_{i=1}^{k} a_i\thinspace M_i\thinspace y_i \pmod{N}
 $$
 
 $\gcd(M_i,n_i)=1$ 이므로 $y_i$ 가 존재한다. $j$ 와 $i$ 가 다르면 $n_i$ 가 $M_j$ 를 나누므로 $j$ 번째 항은 법 $n_i$ 에서 사라지고, $i$ 번째 항만 $a_i$ 를 남긴다.
@@ -133,11 +133,11 @@ assert crt([2, 3, 2], [3, 5, 7]) == 23
 $N=pq$ 이고 $d$ 가 비밀 지수일 때, 복호를 법 $p$ 와 법 $q$ 에서 따로 하고 CRT로 합치면 지수의 크기가 절반이 된다.
 
 $$
-m_p=c^{\,d \bmod (p-1)} \bmod p,\qquad m_q=c^{\,d \bmod (q-1)} \bmod q
+m_p=c^{\thinspace d \bmod (p-1)} \bmod p,\qquad m_q=c^{\thinspace d \bmod (q-1)} \bmod q
 $$
 
 $$
-m = m_p + p\,\big((m_q-m_p)\,p^{-1} \bmod q\big)
+m = m_p + p\thinspace\big((m_q-m_p)\thinspace p^{-1} \bmod q\big)
 $$
 
 모듈러 거듭제곱 비용이 법의 크기의 세제곱에 비례하므로 약 4배 빨라진다. 대신 두 분기 중 하나에서 계산 오류가 나면 최대공약수 한 번으로 $p$ 가 드러나는 취약점(Bellcore 공격)이 있어 결과 검증이 필요하다.

@@ -98,7 +98,7 @@ $$
 임의의 집합 $A$ 에 대해 $|A| < |P(A)|$ 다. 단사 $a \mapsto \lbrace a\rbrace$ 가 있으므로 $\le$ 이고, 전사 $f : A \to P(A)$ 가 있다면
 
 $$
-D=\{a\in A: a\notin f(a)\}
+D=\lbrace a\in A: a\notin f(a)\rbrace
 $$
 
 가 어떤 $f(a_0)$ 와 같아야 하는데 $a_0 \in D \iff a_0 \notin D$ 라 모순이다. 대각선 논법의 집합판이며 Russell 역설과 같은 골격이다. 결과적으로 기수에는 최대값이 없고 무한의 크기는 끝없이 올라간다.

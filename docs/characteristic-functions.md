@@ -21,7 +21,7 @@ $t$ 를 순허수로 바꾸면 이 문제가 한꺼번에 사라진다. $|e^{itX
 $\mathbb R^d$ 위 확률측도 $\mu$ 의 **특성함수**는
 
 $$
-\varphi_\mu(t)=\int_{\mathbb R^d}e^{i\langle t,x\rangle}\,d\mu(x),\qquad t\in\mathbb R^d
+\varphi_\mu(t)=\int_{\mathbb R^d}e^{i\langle t,x\rangle}\thinspace d\mu(x),\qquad t\in\mathbb R^d
 $$
 
 이다. 확률변수 $X\sim\mu$ 로 쓰면 $\varphi_X(t)=\mathbb E\bigl[e^{i\langle t,X\rangle}\bigr]$ 다. [상측도](pushforward-measure.md)로 정의한 분포만 보므로 확률공간이 무엇인지는 상관이 없다.
@@ -53,7 +53,7 @@ $$
 $X$ 와 $Y$ 가 독립이면
 
 $$
-\varphi_{X+Y}(t)=\varphi_X(t)\,\varphi_Y(t).
+\varphi_{X+Y}(t)=\varphi_X(t)\thinspace\varphi_Y(t).
 $$
 
 독립성으로 기댓값이 분리되기 때문이다. 분포의 합성곱이 특성함수의 곱이 되므로, 합의 분포를 다루는 문제가 곱셈 문제로 바뀐다. 독립 정규분포의 합이 정규분포라는 사실은 $\exp$ 안의 지수가 더해진다는 계산 한 줄로 끝난다.
@@ -63,13 +63,13 @@ $$
 $\varphi_\mu=\varphi_\nu$ 이면 $\mu=\nu$ 다. 분포함수의 연속점 $a<b$ 에서 반전공식
 
 $$
-\mu\bigl((a,b)\bigr)=\lim_{T\to\infty}\frac1{2\pi}\int_{-T}^{T}\frac{e^{-ita}-e^{-itb}}{it}\,\varphi_\mu(t)\,dt
+\mu\bigl((a,b)\bigr)=\lim_{T\to\infty}\frac1{2\pi}\int_{-T}^{T}\frac{e^{-ita}-e^{-itb}}{it}\thinspace\varphi_\mu(t)\thinspace dt
 $$
 
 가 성립하고, $\varphi_\mu$ 가 적분가능하면 $\mu$ 는 유계 연속 밀도
 
 $$
-f(x)=\frac1{2\pi}\int_{\mathbb R}e^{-itx}\varphi_\mu(t)\,dt
+f(x)=\frac1{2\pi}\int_{\mathbb R}e^{-itx}\varphi_\mu(t)\thinspace dt
 $$
 
 를 가진다. 특성함수가 분포를 완전히 결정한다는 것이 이 문서 전체의 전제다.
@@ -79,7 +79,7 @@ $$
 $\mathbb E[|X|^n]<\infty$ 이면 $\varphi$ 는 $n$ 번 연속미분가능하고
 
 $$
-\varphi^{(n)}(0)=i^n\,\mathbb E[X^n],\qquad
+\varphi^{(n)}(0)=i^n\thinspace\mathbb E[X^n],\qquad
 \varphi(t)=\sum_{k=0}^{n}\frac{(it)^k}{k!}\mathbb E[X^k]+o(|t|^n).
 $$
 
@@ -99,7 +99,7 @@ $$
 1 은 $e^{i\langle t,x\rangle}$ 가 유계 연속이므로 정의에서 곧바로 나온다. 2 가 본체이며, 0 에서의 연속성이 **tightness 를 대신한다**는 것이 핵심이다. 실제로 증명은 $\psi$ 의 원점 근방 적분으로 꼬리질량을 평가해
 
 $$
-\mu_n\bigl(\{|x|>2/\delta\}\bigr)\le\frac1\delta\int_{-\delta}^{\delta}\bigl(1-\varphi_{\mu_n}(t)\bigr)\,dt
+\mu_n\bigl(\lbrace|x|>2/\delta\rbrace\bigr)\le\frac1\delta\int_{-\delta}^{\delta}\bigl(1-\varphi_{\mu_n}(t)\bigr)\thinspace dt
 $$
 
 같은 부등식을 얻고, 여기서 tightness 를 끌어낸 뒤 Prokhorov 정리로 수렴 부분열을 잡고 유일성으로 극한을 확정하는 순서를 밟는다.

@@ -45,7 +45,7 @@ $$
 가 주어졌다고 하자. $F$ 가 $G$ 의 left adjoint라는 것은 전단사족
 
 $$
-\varphi_{c,d} : \operatorname{Hom}_{\mathcal{D}}(Fc, d) \;\xrightarrow{\ \sim\ }\; \operatorname{Hom}_{\mathcal{C}}(c, Gd)
+\varphi_{c,d} : \operatorname{Hom}_{\mathcal{D}}(Fc, d) \thickspace\xrightarrow{\ \sim\ }\thickspace \operatorname{Hom}_{\mathcal{C}}(c, Gd)
 $$
 
 이 존재하고, 이것이 $c$ 와 $d$ 양쪽에 대해 자연스럽다는 뜻이다. 자연성은 임의의 $u:c'\to c$ 와 $v:d\to d'$ 에 대해
@@ -63,7 +63,7 @@ $$
 범주론적으로 정확히 말하면, 두 functor
 
 $$
-\operatorname{Hom}_{\mathcal{D}}(F-, -), \quad \operatorname{Hom}_{\mathcal{C}}(-, G-) \; : \; \mathcal{C}^{\mathrm{op}} \times \mathcal{D} \to \mathbf{Set}
+\operatorname{Hom}_{\mathcal{D}}(F-, -), \quad \operatorname{Hom}_{\mathcal{C}}(-, G-) \thickspace : \thickspace \mathcal{C}^{\mathrm{op}} \times \mathcal{D} \to \mathbf{Set}
 $$
 
 사이의 자연동형을 주는 것이 adjunction이다.

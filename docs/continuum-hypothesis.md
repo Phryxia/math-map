@@ -36,7 +36,7 @@ graph TD
 [서수](ordinals.md)를 써서 무한 기수를 차례로 이름 붙인다. 가장 작은 무한 기수가 알레프 영이고, 그다음이 알레프 일이다. 실수 집합의 크기는 자연수 집합의 멱집합의 크기와 같다.
 
 $$
-|\mathbb{R}| \;=\; 2^{\aleph_0}
+|\mathbb{R}| \thickspace=\thickspace 2^{\aleph_0}
 $$
 
 **정의(CH).** 연속체 가설은 다음 등식이다.
@@ -74,7 +74,7 @@ $M$ 이 가산이므로 조밀집합도 가산 개이고, Rasiowa–Sikorski 보
 CH 를 깨는 데 쓰는 $P$ 는 유한 조건들의 순서다. 조건은 두 번째 성분이 자연수 쌍인 유한 부분함수이며, 값은 0 또는 1 이다.
 
 $$
-P = \{\, p : p \text{ is a finite partial function}, \ \mathrm{dom}(p) \subseteq \kappa \times \omega, \ \mathrm{ran}(p) \subseteq \{0,1\} \,\}
+P = \lbrace\thinspace p : p \text{ is a finite partial function}, \ \mathrm{dom}(p) \subseteq \kappa \times \omega, \ \mathrm{ran}(p) \subseteq \lbrace 0,1\rbrace \thinspace\rbrace
 $$
 
 일반 필터는 이 조각들을 이어 붙여 $\kappa$ 개의 새 실수를 만들어 낸다.

@@ -39,7 +39,7 @@ graph TD
 두 곡면 $S$ 와 $T$ 의 **연결합**(connected sum)은 각각에서 열린원판 하나씩을 제거하고 생긴 두 경계원을 붙여 만든 곡면이다.
 
 $$
-S \mathbin{\#} T = \bigl( S \setminus D_S \bigr) \cup_{\partial} \bigl( T \setminus D_T \bigr) .
+S \mathbin{\char35{}} T = \bigl( S \setminus D_S \bigr) \cup_{\partial} \bigl( T \setminus D_T \bigr) .
 $$
 
 원판 선택과 붙이는 방식에 따른 모호함은 위상동형 유형을 바꾸지 않는다(가향 곡면에서는 가향을 맞춰 붙인다). 연결합은 교환적·결합적이고 구가 항등원 역할을 한다. 즉 닫힌 곡면의 위상동형류는 연결합에 대해 가환 모노이드를 이룬다.
@@ -47,7 +47,7 @@ $$
 토러스를 $T$ 로, 사영평면을 $P$ 로 쓰고 $g$ 개의 연결합을 다음과 같이 줄여 쓴다.
 
 $$
-gT = \underbrace{T \mathbin{\#} \cdots \mathbin{\#} T}_{g}, \qquad kP = \underbrace{P \mathbin{\#} \cdots \mathbin{\#} P}_{k} .
+gT = \underbrace{T \mathbin{\char35{}} \cdots \mathbin{\char35{}} T}_{g}, \qquad kP = \underbrace{P \mathbin{\char35{}} \cdots \mathbin{\char35{}} P}_{k} .
 $$
 
 $gT$ 의 $g$ 를 **종수**(genus)라 한다.
@@ -111,7 +111,7 @@ $$
 연결합의 Euler 지표는 원판 두 개를 떼고 경계원을 붙이는 계산에서 다음 공식을 따른다.
 
 $$
-\chi(S \mathbin{\#} T) = \chi(S) + \chi(T) - 2 .
+\chi(S \mathbin{\char35{}} T) = \chi(S) + \chi(T) - 2 .
 $$
 
 ## 증명 스케치: 존재
@@ -125,7 +125,7 @@ $$
 7. **Dyck 정리로 혼합 제거.** $cc$ 와 $aba^{-1}b^{-1}$ 이 함께 있으면 다음 관계로 손잡이를 crosscap 두 개로 바꾼다.
 
 $$
-T \mathbin{\#} P \cong P \mathbin{\#} P \mathbin{\#} P .
+T \mathbin{\char35{}} P \cong P \mathbin{\char35{}} P \mathbin{\char35{}} P .
 $$
 
 각 단계는 단어의 길이를 늘리지 않고 "정돈되지 않은 부분"을 줄이므로 절차가 종료한다. 결과가 두 일반형 중 하나다.
@@ -250,7 +250,7 @@ for w in ["aA", "abAB", "aa", "abaB", "aabb", "abABcdCD"]:
 Gauss–Bonnet 정리는 분류를 기하로 옮긴다. 닫힌 곡면 위의 임의의 Riemann 계량에 대해 Gauss [곡률](curvature.md)의 적분은 위상만으로 결정된다.
 
 $$
-\int_S K \, dA = 2\pi \chi(S) .
+\int_S K \thinspace dA = 2\pi \chi(S) .
 $$
 
 따라서 구에는 평평한 계량이 없고, 토러스에는 곡률이 어디서나 양인 계량이 없다. 균일화(uniformization) 정리는 여기서 한 걸음 더 나아가, 모든 닫힌 곡면이 곡률이 상수인 계량을 가진다고 말한다. Euler 지표가 양이면 구면 기하, $0$ 이면 Euclid 기하, 음이면 쌍곡 기하다. 종수가 2 이상인 곡면이 쌍곡 평면의 몫으로 실현되는 것이 그 예이며, 자세한 도구는 [Riemann 계량과 측지선](riemannian-metrics.md)에서 다룬다.

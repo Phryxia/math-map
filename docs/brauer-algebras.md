@@ -89,7 +89,7 @@ graph TD
 $\delta\in\mathbb C$ 에 대해 $B_k(\delta)$ 는 $\lbrace 1,\dots,k\rbrace\sqcup\lbrace 1',\dots,k'\rbrace$ 의 완전 짝짓기들을 기저로 갖는 $\mathbb C$ 대수다. 두 도형 $d_1,d_2$ 의 곱은 $d_1$ 아래에 $d_2$ 를 붙여 얻은 도형 $d$ 와 생긴 닫힌 고리 수 $c$ 에 대해
 
 $$
-d_1\cdot d_2=\delta^{\,c}\,d
+d_1\cdot d_2=\delta^{\thinspace c}\thinspace d
 $$
 
 이다. 차원은 $(2k-1)!!$ 이고, $\mathbb C[S_k]$ 를 부분대수로 포함한다.

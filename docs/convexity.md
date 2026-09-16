@@ -47,7 +47,7 @@ $$
 ## 에피그래프
 
 $$
-\operatorname{epi}f=\{(x,s)\in K\times\mathbb{R}: f(x)\le s\}
+\operatorname{epi}f=\lbrace(x,s)\in K\times\mathbb{R}: f(x)\le s\rbrace
 $$
 
 $f$ 가 볼록인 것과 $\operatorname{epi}f$ 가 볼록집합인 것은 동치다. 이 사전 덕분에 함수에 대한 명제를 집합에 대한 명제로 옮길 수 있고, 분리초평면 정리 같은 집합의 도구를 함수에 그대로 쓸 수 있다.

@@ -33,7 +33,7 @@ $\mathbb{R}$ 과 $(0,1)$ 은 위상동형이다. 같은 열린집합 구조를 �
 거리 공간 $(X, d)$ 의 수열 $x_n$ 이 다음을 만족하면 Cauchy 수열이다.
 
 $$
-\forall\varepsilon>0\;\exists N\in\mathbb N\;\forall m,n\ge N:\ d(x_m,x_n)<\varepsilon
+\forall\varepsilon>0\thickspace\exists N\in\mathbb N\thickspace\forall m,n\ge N:\ d(x_m,x_n)<\varepsilon
 $$
 
 극한 후보를 지정하지 않고 뒤쪽 항들끼리의 거리만 제한한다는 점이 수렴의 정의와 다른 전부다.

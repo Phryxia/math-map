@@ -62,7 +62,7 @@ $$
 이 순서에 대해 $a \wedge b$ 는 하한, $a \vee b$ 는 상한이다. 함의는 다음처럼 정의할 수 있고, 이렇게 정의하면 Boolean algebra 는 $\neg\neg a = a$ 를 만족하는 Heyting algebra 와 같아진다.
 
 $$
-a \to b \;:=\; \neg a \vee b
+a \to b \thickspace:=\thickspace \neg a \vee b
 $$
 
 ## 예

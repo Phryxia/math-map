@@ -7,7 +7,7 @@
 비분기 자리에서 그 답이 완전히 명시적이고, 놀랍게도 [Schur 다항식](schur-polynomials.md)이다.
 
 $$
-W^\circ(\varpi^\lambda)=\delta_B^{1/2}(\varpi^\lambda)\;s_\lambda(\alpha_1,\dots,\alpha_n)
+W^\circ(\varpi^\lambda)=\delta_B^{1/2}(\varpi^\lambda)\thickspace s_\lambda(\alpha_1,\dots,\alpha_n)
 $$
 
 $\alpha_i$ 는 $\pi_v$ 의 Satake 매개변수이고 $\lambda$ 는 지배적 여무게, $\lambda$ 가 지배적이 아니면 값이 0 이다. 이것이 **Casselman–Shalika 공식**이다.
@@ -77,7 +77,7 @@ $$
 > $$
 > W^\circ(\varpi^\lambda)=
 > \begin{cases}
-> \delta_B^{1/2}(\varpi^\lambda)\,s_\lambda(\alpha_1,\dots,\alpha_n), & \lambda_1\ge\lambda_2\ge\dots\ge\lambda_n\\[2pt]
+> \delta_B^{1/2}(\varpi^\lambda)\thinspace s_\lambda(\alpha_1,\dots,\alpha_n), & \lambda_1\ge\lambda_2\ge\dots\ge\lambda_n\cr
 > 0, & \text{그 밖에}
 > \end{cases}
 > $$
@@ -87,7 +87,7 @@ $s_\lambda$ 는 Schur 다항식이고, $\lambda_n<0$ 이어도 무방하다($\de
 $n=2$ 이고 $\lambda=(m,0)$ 이면 $\delta_B^{1/2}=q^{-m/2}$ 이고
 
 $$
-W^\circ\begin{pmatrix}\varpi^m&\\&1\end{pmatrix}=q^{-m/2}\,\frac{\alpha^{m+1}-\beta^{m+1}}{\alpha-\beta}
+W^\circ\begin{pmatrix}\varpi^m&\cr&1\end{pmatrix}=q^{-m/2}\thinspace\frac{\alpha^{m+1}-\beta^{m+1}}{\alpha-\beta}
 $$
 
 이다. 오른쪽 분수가 $\mathrm{Sym}^m$ 의 지표이고, 고전적으로는 정규화된 Hecke 고유값 $a_{p^m}/p^{m(k-1)/2}$ 다. 곧 이 공식은 **$\mathrm{GL}\_2$ 에서 Hecke 재귀 $a_{p^{m+1}}=a_pa_{p^m}-p^{k-1}a_{p^{m-1}}$ 의 일반화**다.
@@ -99,7 +99,7 @@ $$
 Rankin–Selberg 국소 적분의 비분기 계산은 다음 모양이다. $t=q^{-s}$ 로 두면
 
 $$
-\Psi(s,W^\circ,W'^\circ)=\sum_{\lambda\ \text{지배적}}s_\lambda(\alpha)\,s_\lambda(\beta)\,t^{|\lambda|}
+\Psi(s,W^\circ,W'^\circ)=\sum_{\lambda\ \text{지배적}}s_\lambda(\alpha)\thinspace s_\lambda(\beta)\thinspace t^{|\lambda|}
 $$
 
 가 되고($\delta_B^{1/2}$ 인자들이 측도와 상쇄된다), 여기에 Schur 다항식의 **Cauchy 항등식**을 쓰면 곱으로 접힌다.
@@ -189,7 +189,7 @@ for n in [2, 3]:
 공식 자체는 분할 가능한 임의의 환원군 $G$ 로 일반화된다. Schur 다항식 자리에 $\widehat G$ 의 기약지표가 들어가고, 증명 구조가 같다.
 
 $$
-W^\circ(\varpi^\lambda)=\delta_B^{1/2}(\varpi^\lambda)\,\chi_\lambda(A_\pi),\qquad\chi_\lambda=\widehat G\ \text{의 기약지표}
+W^\circ(\varpi^\lambda)=\delta_B^{1/2}(\varpi^\lambda)\thinspace\chi_\lambda(A_\pi),\qquad\chi_\lambda=\widehat G\ \text{의 기약지표}
 $$
 
 $\mathrm{GL}\_n$ 에서 $\chi_\lambda=s_\lambda$ 이고, [Weyl 지표 공식](weyl-character-formula.md)이 그 bialternant 표현을 준다.

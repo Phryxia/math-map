@@ -7,7 +7,7 @@
 $M$ 이 정수 호몰로지 3 구면이면 $H_1(M)=0$ 이라 아벨 표현은 자명한 것뿐이고, 남는 것은 불가약 표현이다. 그 개수를 그냥 세면 불변량이 되지 않는다. $M$ 을 변형하면 표현이 쌍으로 생겼다 사라지기 때문이다. 그런데 **부호를 붙여 세면** 그 쌍이 상쇄되어 불변량이 된다.
 
 $$
-\lambda(M)=\tfrac12\cdot\#^{\text{대수적}}\big\{\rho:\pi_1(M)\to\mathrm{SU}(2)\ \text{불가약}\big\}
+\lambda(M)=\tfrac12\cdot\char35{}^{\text{대수적}}\big\lbrace\rho:\pi_1(M)\to\mathrm{SU}(2)\ \text{불가약}\big\rbrace
 $$
 
 이것이 Casson 불변량이다. 기하적으로는 Heegaard 분해에서 두 손잡이체의 표현다양체가 만나는 **교차수**로 정의된다. 부호를 붙여 세는 것이 위상수학에서 불변량을 만드는 표준적 수법이고, Euler 지표나 Lefschetz 수와 같은 계열이다.
@@ -27,7 +27,7 @@ $\mathrm{SU}(2)$ 표현의 개수 자체는 안정적이지 않다. Heegaard 분
 정의만으로 계산하기는 어렵다. 실제 계산은 **수술 공식**으로 한다. $K\subset S^3$ 이 매듭이면 $1/n$ 수술로 얻은 $S^3_{1/n}(K)$ 는 언제나 정수 호몰로지 구면이고,
 
 $$
-\lambda\big(S^3_{1/n}(K)\big)=\frac n2\,\Delta_K''(1)
+\lambda\big(S^3_{1/n}(K)\big)=\frac n2\thinspace\Delta_K''(1)
 $$
 
 이다. $\Delta_K$ 는 $\Delta_K(1)=1$ 과 $\Delta_K(t)=\Delta_K(t^{-1})$ 로 정규화한 Alexander 다항식이다.
@@ -88,7 +88,7 @@ Casson 은 위 정의 대신 성질만으로 $\lambda$ 를 특징지을 수도 �
 Ohtsuki 급수의 1 차 계수가 Casson 불변량이다. $q=e^h$ 로 두고 $\tau_k(M)$ 을 $h$ 로 전개할 때
 
 $$
-\lambda_1(M)=6\,\lambda(M)
+\lambda_1(M)=6\thinspace\lambda(M)
 $$
 
 가 된다(정규화에 따라 상수가 다르다). [Witten 점근 추측](witten-asymptotics.md) 쪽에서 보면 이것은 **자명한 접속 주위의 섭동전개의 첫 보정항**이다. 평탄 접속 하나하나가 기여하는 점근과, 자명한 접속 한 곳의 섭동급수가 같은 불변량의 두 전개라는 그림에서, Casson 불변량은 후자의 시작점에 있다.

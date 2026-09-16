@@ -36,7 +36,7 @@ $$
 
 $$
 \mathrm{Inf}_i[f]=\sum_{S\ni i}\hat f(S)^2,\qquad
-\mathbf I[f]=\sum_i\mathrm{Inf}_i[f]=\sum_S|S|\,\hat f(S)^2
+\mathbf I[f]=\sum_i\mathrm{Inf}_i[f]=\sum_S|S|\thinspace\hat f(S)^2
 $$
 
 가 된다. 총 영향력은 확률분포 $\hat f(S)^2$ 아래에서 준위 $|S|$ 의 **기댓값**이다. 그래서 "무게가 낮은 준위에 있다" 와 "총 영향력이 작다" 가 같은 말이 된다.
@@ -84,7 +84,7 @@ flowchart LR
 정의역 $\lbrace-1,1\rbrace^n$ 에 균등분포를 주고 내적을 $\langle f,g\rangle=\mathbb E_x[f(x)g(x)]$ 로 둔다. 지표 $\chi_S(x)=\prod_{i\in S}x_i$ 는 정규직교기저를 이루고
 
 $$
-f=\sum_{S\subseteq[n]}\hat f(S)\,\chi_S,\qquad \hat f(S)=\mathbb E_x\bigl[f(x)\chi_S(x)\bigr]
+f=\sum_{S\subseteq[n]}\hat f(S)\thinspace\chi_S,\qquad \hat f(S)=\mathbb E_x\bigl[f(x)\chi_S(x)\bigr]
 $$
 
 가 유일하게 성립한다. **Parseval**은 $\sum_S\hat f(S)^2=\mathbb E[f^2]$ 이고, 값이 $\pm1$ 이면 우변이 $1$ 이다. $\hat f(\emptyset)=\mathbb E[f]$ 이므로 분산은 $\sum_{S\ne\emptyset}\hat f(S)^2$ 다.
@@ -112,7 +112,7 @@ $$
 **정리(Bonami–Beckner).** $1\le p\le q$ 이고 $\rho\le\sqrt{(p-1)/(q-1)}$ 이면 모든 $f$ 에 대해
 
 $$
-\|T_\rho f\|_q\le\|f\|_p
+\Vert T_\rho f\Vert_q\le\Vert f\Vert_p
 $$
 
 특히 준위 $k$ 이하의 함수에 대해 $\Vert f\Vert_4\le\sqrt3^{\thinspace k}\Vert f\Vert_2$ 가 나온다. 저차 다항식의 값이 크게 흩어질 수 없다는 뜻이고, 이 한 줄이 이 분야 정리 대부분의 해석적 엔진이다. KKL 정리도 여기서 나온다.
@@ -122,7 +122,7 @@ $$
 **정리(Mossel–O'Donnell–Oleszkiewicz, 2010).** $\rho\in[0,1)$ 과 $\varepsilon>0$ 에 대해 $\tau>0$ 이 있어, $\mathbb E[f]=0$ 이고 모든 $i$ 에서 $\mathrm{Inf}_i[f]\le\tau$ 이면
 
 $$
-\mathrm{Stab}_\rho[f]\;\le\;1-\frac2\pi\arccos\rho+\varepsilon
+\mathrm{Stab}_\rho[f]\thickspace\le\thickspace 1-\frac2\pi\arccos\rho+\varepsilon
 $$
 
 이다. 우변은 $n\to\infty$ 에서 다수결 함수의 안정성의 극한값이다. 즉 **어느 좌표도 특별하지 않은 함수 중에서는 다수결이 가장 안정하다**.

@@ -41,7 +41,7 @@ $$
 이 세 조건을 만족하는 함수는 존재하며 유일하고[^1], 명시적으로 Leibniz 공식으로 주어진다. $S_n$ 은 $n$ 차 대칭군, $\operatorname{sgn}$ 은 순열의 부호(짝순열이면 $1$ , 홀순열이면 $-1$ )다.
 
 $$
-\det A=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\prod_{i=1}^{n}a_{i\,\sigma(i)}
+\det A=\sum_{\sigma\in S_n}\operatorname{sgn}(\sigma)\prod_{i=1}^{n}a_{i\thinspace\sigma(i)}
 $$
 
 $A$ 에서 $i$ 행과 $j$ 열을 지운 $(n-1)$ 차 행렬을 $A_{ij}$ 라 쓰면(minor), 고정한 행 $i$ 에 대해 여인수 전개(Laplace 전개)가 성립한다[^2].

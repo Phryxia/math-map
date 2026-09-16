@@ -44,13 +44,13 @@ $$
 두 조각은 $(\theta, X)$ 의 결합분포를 정하고, 조건부밀도가 사후분포다.
 
 $$
-\pi(\theta \mid x) \;=\; \frac{p(x \mid \theta)\,\pi(\theta)}{m(x)}, \qquad m(x) \;=\; \int_{\Theta} p(x \mid \theta)\,\pi(\theta)\, d\theta .
+\pi(\theta \mid x) \thickspace=\thickspace \frac{p(x \mid \theta)\thinspace\pi(\theta)}{m(x)}, \qquad m(x) \thickspace=\thickspace \int_{\Theta} p(x \mid \theta)\thinspace\pi(\theta)\thinspace d\theta .
 $$
 
 분모 $m(x)$ 는 주변가능도(marginal likelihood) 또는 evidence 라 하며 $\theta$ 에 의존하지 않는다. 그래서 실무에서는 비례식만 쓴다.
 
 $$
-\pi(\theta \mid x) \;\propto\; L(\theta)\,\pi(\theta).
+\pi(\theta \mid x) \thickspace\propto\thickspace L(\theta)\thinspace\pi(\theta).
 $$
 
 측도론적으로는 사후분포가 결합측도의 [조건부기댓값](conditional-expectation.md)에 대응하는 정칙 조건부분포이고, 사전측도에 대한 [Radon–Nikodym 정리](radon-nikodym.md) 도함수가 정규화된 가능도다.
@@ -74,7 +74,7 @@ $$
 이런 집합은 유일하지 않다. 관례는 양쪽 꼬리를 $\alpha/2$ 씩 자른 등꼬리 구간이거나, 밀도가 높은 점만 모은 HPD(highest posterior density) 집합이다.
 
 $$
-C_{\mathrm{HPD}} = \{\theta : \pi(\theta \mid x) \ge c\}, \quad c \text{ 는 } \Pr(C_{\mathrm{HPD}} \mid x) = 1-\alpha \text{ 가 되도록 잡는다.}
+C_{\mathrm{HPD}} = \lbrace\theta : \pi(\theta \mid x) \ge c\rbrace, \quad c \text{ 는 } \Pr(C_{\mathrm{HPD}} \mid x) = 1-\alpha \text{ 가 되도록 잡는다.}
 $$
 
 ## 사후예측분포
@@ -82,7 +82,7 @@ $$
 다음 관측 $X'$ 에 대한 예측은 모수를 적분해 없앤 분포다.
 
 $$
-p(x' \mid x) = \int_{\Theta} p(x' \mid \theta)\, \pi(\theta \mid x)\, d\theta .
+p(x' \mid x) = \int_{\Theta} p(x' \mid \theta)\thinspace \pi(\theta \mid x)\thinspace d\theta .
 $$
 
 플러그인 예측 $p(x' \mid \hat\theta)$ 과 달리 모수의 불확실성까지 퍼뜨린다.
@@ -92,7 +92,7 @@ $$
 사전분포족 $\mathcal{P}$ 가 가능도 $p(x \mid \theta)$ 에 대해 켤레(conjugate)라는 것은, 사전분포가 $\mathcal{P}$ 에 속하면 사후분포도 $\mathcal{P}$ 에 속한다는 뜻이다. 켤레족은 [지수족과 충분통계량](exponential-families.md)에서 자연스럽게 나온다. 가능도가 자연모수 $\eta$ 의 지수족이면
 
 $$
-\pi(\eta \mid \tau, n_0) \;\propto\; \exp\!\big(\eta^{\top}\tau - n_0 A(\eta)\big)
+\pi(\eta \mid \tau, n_0) \thickspace\propto\thickspace \exp\negthinspace\big(\eta^{\top}\tau - n_0 A(\eta)\big)
 $$
 
 꼴의 족이 켤레이고, 갱신은 $\tau \leftarrow \tau + T(x)$ 와 $n_0 \leftarrow n_0 + 1$ 이라는 덧셈이 된다.
@@ -104,13 +104,13 @@ $$
 $X\mid p\sim\mathrm{Binomial}(n,p)$ 이고 사전분포가 $\mathrm{Beta}(a,b)$ 면
 
 $$
-\pi(p \mid x) \;\propto\; p^{x}(1-p)^{n-x}\, p^{a-1}(1-p)^{b-1} \;=\; p^{x+a-1}(1-p)^{n-x+b-1},
+\pi(p \mid x) \thickspace\propto\thickspace p^{x}(1-p)^{n-x}\thinspace p^{a-1}(1-p)^{b-1} \thickspace=\thickspace p^{x+a-1}(1-p)^{n-x+b-1},
 $$
 
 즉 $\mathrm{Beta}(a+x,b+n-x)$ 다. 사후평균은
 
 $$
-\mathbb{E}[p \mid x] = \frac{a + x}{a + b + n} = \underbrace{\frac{a+b}{a+b+n}}_{w}\cdot \frac{a}{a+b} \;+\; (1-w)\cdot\frac{x}{n}.
+\mathbb{E}[p \mid x] = \frac{a + x}{a + b + n} = \underbrace{\frac{a+b}{a+b+n}}_{w}\cdot \frac{a}{a+b} \thickspace+\thickspace (1-w)\cdot\frac{x}{n}.
 $$
 
 사전평균과 표본비율의 볼록결합이고, 가중치는 "사전표본크기" $a + b$ 대 실제 표본크기 $n$ 의 비다. $n \to \infty$ 이면 최대가능도추정값 $x/n$ 으로 간다. MAP 는 $(a + x - 1)/(a + b + n - 2)$ 로 사후평균과 일반적으로 다르다.
@@ -131,7 +131,7 @@ $$
 독립 관측 $x_1,\dots,x_n$ 에 대해 가능도가 곱이므로
 
 $$
-\pi(\theta \mid x_1, \dots, x_n) \;\propto\; \pi(\theta)\prod_{i=1}^{n} p(x_i \mid \theta)
+\pi(\theta \mid x_1, \dots, x_n) \thickspace\propto\thickspace \pi(\theta)\prod_{i=1}^{n} p(x_i \mid \theta)
 $$
 
 이고, 이를 한 항씩 곱해 나가는 것과 한꺼번에 곱하는 것이 같다. 따라서 $k$ 번째 단계의 사후분포를 $k+1$ 번째의 사전분포로 쓰면 되고, 최종 결과는 관측 순서에 무관하다. 또한 $T$ 가 충분통계량이면 가능도가 $g(T(x), \theta)h(x)$ 로 인수분해되어 사후분포는 $T(x)$ 에만 의존한다. Beta–Binomial 에서 앞면 횟수만 필요했던 이유가 이것이다.
@@ -141,7 +141,7 @@ $$
 정칙 조건 아래에서 Bernstein–von Mises 정리는 사후분포가 참값 $\theta_0$ 근방에서 점근적으로 정규분포임을 말한다.
 
 $$
-\pi(\theta \mid x_{1:n}) \;\approx\; N\!\left(\hat\theta_{\mathrm{MLE}}, \; \frac{1}{n I(\theta_0)}\right),
+\pi(\theta \mid x_{1:n}) \thickspace\approx\thickspace N\negthinspace\left(\hat\theta_{\mathrm{MLE}}, \thickspace \frac{1}{n I(\theta_0)}\right),
 $$
 
 여기서 $I$ 는 Fisher 정보량이다. 즉 표본이 커지면 사전분포의 (양의 밀도를 갖는 한) 선택은 씻겨 나가고, Bayes 신용구간과 빈도주의 [신뢰구간](confidence-intervals.md)이 1차 근사에서 일치한다.[^1] 반대로 표본이 작거나 모수가 많거나 사전분포가 지지집합을 잘라 버리면 둘은 크게 갈린다.
@@ -159,7 +159,7 @@ $$
 [가설검정과 p-값](hypothesis-testing.md)의 p-값은 "귀무가설이 참일 때 이만큼 극단적인 데이터가 나올 확률"이고, Bayes 쪽 대응물은 Bayes 인자
 
 $$
-BF_{10} = \frac{m_1(x)}{m_0(x)} = \frac{\int p(x\mid\theta)\,\pi_1(\theta)\,d\theta}{\int p(x\mid\theta)\,\pi_0(\theta)\,d\theta}
+BF_{10} = \frac{m_1(x)}{m_0(x)} = \frac{\int p(x\mid\theta)\thinspace\pi_1(\theta)\thinspace d\theta}{\int p(x\mid\theta)\thinspace\pi_0(\theta)\thinspace d\theta}
 $$
 
 이다. 두 값은 같은 질문에 답하지 않으며, 같은 데이터에서 상반된 결론을 주기도 한다(Lindley 역설).
@@ -169,7 +169,7 @@ $$
 "아무것도 모른다"를 표현하려는 시도는 매개변수화에 의존한다는 문제에 부딪힌다. $p$ 에 균등분포를 주면 $\log(p/(1-p))$ 에는 균등이 아니다. Jeffreys 사전분포
 
 $$
-\pi_J(\theta) \;\propto\; \sqrt{\det I(\theta)}
+\pi_J(\theta) \thickspace\propto\thickspace \sqrt{\det I(\theta)}
 $$
 
 는 매끄러운 재매개변수화에 대해 불변이라는 성질로 이 문제를 부분적으로 피한다. Bernoulli 모형에서는 $\mathrm{Beta}(1/2,1/2)$ 가 된다. 사전분포가 적분해서 무한대가 되는 improper prior 도 쓰이지만, 사후분포가 정상분포인지는 매번 확인해야 한다.

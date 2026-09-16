@@ -48,7 +48,7 @@ $$
 확률 공간에서 $H$ 를 가설 사건, $E$ 를 관측 사건이라 하고 두 확률이 모두 양수라 하자.
 
 $$
-P(H\mid E)=\frac{P(E\mid H)\,P(H)}{P(E)}
+P(H\mid E)=\frac{P(E\mid H)\thinspace P(H)}{P(E)}
 $$
 
 $P(H)$ 는 사전확률, $P(E|H)$ 는 우도, $P(H|E)$ 는 사후확률이며 분모는 정규화 상수다.
@@ -125,7 +125,7 @@ Bayes 정리 자체는 이 독립성을 제공하지 않는다. 같은 검사를
 밀도가 있는 경우에도 같은 형태가 성립한다.
 
 $$
-p(\theta\mid x)=\frac{p(x\mid\theta)\,p(\theta)}{\int p(x\mid\theta')p(\theta')\,d\theta'}
+p(\theta\mid x)=\frac{p(x\mid\theta)\thinspace p(\theta)}{\int p(x\mid\theta')p(\theta')\thinspace d\theta'}
 $$
 
 분모의 적분이 대개 닫힌 형태로 계산되지 않는다는 것이 계산 베이즈 통계의 출발점이며, 켤레 사전분포, Markov 연쇄 몬테카를로, 변분 근사가 그 대응책이다. 조건화가 확률 $0$ 인 사건에 대해서도 잘 정의되려면 [조건부 기댓값](conditional-expectation.md)의 측도론적 정의가 필요하다.

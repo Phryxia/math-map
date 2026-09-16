@@ -21,7 +21,7 @@ Poincaré 보조정리가 그 진술이다. 수축가능한 열린집합 위에�
 $M=\mathbb R^2\setminus\lbrace 0\rbrace$ 위에서 다음을 보자.
 
 $$
-\omega=\frac{-y\,dx+x\,dy}{x^2+y^2}
+\omega=\frac{-y\thinspace dx+x\thinspace dy}{x^2+y^2}
 $$
 
 계산하면 $d\omega=0$ 이다. 국소적으로는 $\omega=d\theta$ 로 각도 함수의 미분이다. 그런데 각도 함수는 전역적으로 정의되지 않는다. 한 바퀴 돌면 $2\pi$ 만큼 어긋나기 때문이다.
@@ -56,7 +56,7 @@ $$
 $k$ 번째 de Rham 코호몰로지는 다음 실벡터공간이다.
 
 $$
-H^k_{\mathrm{dR}}(M)=\frac{Z^k}{B^k},\qquad Z^k=\ker d|_{\Omega^k},\quad B^k=\mathrm{im}\,d|_{\Omega^{k-1}}
+H^k_{\mathrm{dR}}(M)=\frac{Z^k}{B^k},\qquad Z^k=\ker d|_{\Omega^k},\quad B^k=\mathrm{im}\thinspace d|_{\Omega^{k-1}}
 $$
 
 $Z^k$ 의 원소를 닫힘형식, $B^k$ 의 원소를 완전형식, 몫에서의 동치류를 코호몰로지류라 한다.
@@ -82,7 +82,7 @@ $\omega$ 가 닫혀 있으면 둘째 항이 사라지고 차이가 완전형식�
 따라서 호모토피 동치인 두 다양체는 같은 코호몰로지를 가진다. 특히 수축가능하면 점과 같은 코호몰로지를 가지며, 이것이 Poincaré 보조정리다.
 
 $$
-H^k(\mathbb R^n)=\begin{cases}\mathbb R&k=0\\0&k>0\end{cases}
+H^k(\mathbb R^n)=\begin{cases}\mathbb R&k=0\cr 0&k>0\end{cases}
 $$
 
 ## Mayer–Vietoris 수열

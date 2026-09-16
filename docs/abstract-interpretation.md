@@ -15,7 +15,7 @@ $$
 로 잇고, 구체 전이함수 $F$ 를 추상 전이함수 $F^\sharp\sqsupseteq\alpha\circ F\circ\gamma$ 로 올린다. 그러면 Knaster–Tarski 정리가 양쪽에서 최소 고정점을 주고
 
 $$
-\gamma\bigl(\mathrm{lfp}\,F^\sharp\bigr)\;\sqsupseteq\;\mathrm{lfp}\,F
+\gamma\bigl(\mathrm{lfp}\thinspace F^\sharp\bigr)\thickspace\sqsupseteq\thickspace\mathrm{lfp}\thinspace F
 $$
 
 가 자동으로 따라온다. 이것이 **건전성**이다. 분석기가 계산한 추상값을 구체화하면 실제 도달 가능한 상태를 모두 포함한다. 놓치는 오류가 없다는 보장이 순서론 정리 하나에서 나온다.
@@ -82,7 +82,7 @@ console.log(`내로잉: ${k} 단계, 결과 ${show(N)}`);            // 2 단계
 위드닝은 임의로 크게 뛰므로 답이 부정확해질 수 있다. 그러나 **위로만** 뛰기 때문에 건전성은 깨지지 않는다.
 
 $$
-a\sqsubseteq a\,\nabla\,b,\qquad b\sqsubseteq a\,\nabla\,b
+a\sqsubseteq a\thinspace\nabla\thinspace b,\qquad b\sqsubseteq a\thinspace\nabla\thinspace b
 $$
 
 를 요구하면 위드닝 수열은 항상 실제 고정점 위에 머문다. 여기에 "무한 상승 사슬을 만들지 않는다" 는 조건을 더하면 종료도 보장된다. 정밀도만 희생하고 두 가지 필수 성질을 모두 지키는 것이다.
@@ -111,7 +111,7 @@ Galois 연결의 판정 조건이 여기서 실무적으로 쓰인다. $\gamma$ 
 구체 전이함수 $F\colon C\to C$ 에 대해 $F^\sharp\colon A\to A$ 가 **건전**하다는 것은
 
 $$
-\alpha\circ F\circ\gamma\;\sqsubseteq^\sharp\;F^\sharp
+\alpha\circ F\circ\gamma\thickspace\sqsubseteq^\sharp\thickspace F^\sharp
 $$
 
 즉 각 추상값에서 한 걸음 나아간 결과를 $F^\sharp$ 가 과대근사한다는 뜻이다. 등호가 성립하는 $F^\sharp=\alpha\circ F\circ\gamma$ 를 **최적 추상 전이함수**라 하고, 이는 존재하지만 계산 가능하지 않을 수 있어 실무에서는 더 거친 것을 쓴다.
@@ -121,7 +121,7 @@ $$
 $F^\sharp$ 가 건전하면
 
 $$
-\mathrm{lfp}\,F\;\sqsubseteq\;\gamma\bigl(\mathrm{lfp}\,F^\sharp\bigr)
+\mathrm{lfp}\thinspace F\thickspace\sqsubseteq\thickspace\gamma\bigl(\mathrm{lfp}\thinspace F^\sharp\bigr)
 $$
 
 가 성립한다. 증명은 짧다. $\mathrm{lfp}\thinspace F^\sharp$ 의 구체화가 $F$ 의 후고정점임을 확인하고 Knaster–Tarski 의 최소성을 쓰면 된다. 분석기의 건전성 증명이 통째로 이 한 줄로 환원되는 것이 이 이론의 실용적 가치다.

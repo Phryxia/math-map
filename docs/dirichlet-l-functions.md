@@ -17,8 +17,8 @@ $n\equiv a \pmod q$ 인 항만 남기고 나머지를 지우는 장치를 원한
 $(\mathbb Z/q\mathbb Z)^\times$ 는 아벨군이므로 모든 기약 표현이 1 차원이고, 표현과 지표가 같은 것이다. 지표는 군에서 단위원의 절댓값을 갖는 복소수로 가는 준동형이다. 지표들은 서로 직교하며, 그 직교성을 그대로 쓰면 다음이 나온다.
 
 $$
-\frac1{\varphi(q)}\sum_{\chi}\overline{\chi(a)}\,\chi(n)=
-\begin{cases}1&n\equiv a\pmod q\\0&\text{그 외}\end{cases}
+\frac1{\varphi(q)}\sum_{\chi}\overline{\chi(a)}\thinspace\chi(n)=
+\begin{cases}1&n\equiv a\pmod q\cr 0&\text{그 외}\end{cases}
 $$
 
 원하는 잉여류만 $1$ 이고 나머지는 $0$ 이다. 유한군 위의 Fourier 급수를 한 점에 집중시킨 델타 함수라고 보면 된다.
@@ -90,10 +90,10 @@ $\chi=\chi_0$ 이면 $L(s,\chi_0)=\zeta(s)\prod_{p\mid q}(1-p^{-s})$ 이므로 $
 
 $$
 \sum_{n \bmod q}\chi(n)\overline{\psi(n)}=
-\begin{cases}\varphi(q)&\chi=\psi\\0&\text{그 외}\end{cases}
+\begin{cases}\varphi(q)&\chi=\psi\cr 0&\text{그 외}\end{cases}
 \qquad
 \sum_{\chi \bmod q}\chi(n)\overline{\chi(a)}=
-\begin{cases}\varphi(q)&n\equiv a\\0&\text{그 외}\end{cases}
+\begin{cases}\varphi(q)&n\equiv a\cr 0&\text{그 외}\end{cases}
 $$
 
 왼쪽은 지표의 직교성이고 오른쪽은 그 쌍대다. 둘 다 유한 아벨군의 표현론에서 나오며, 비자명한 지표 $\chi$ 에 대해 $\sum_n\chi(n)=0$ 이라는 사실이 본질이다[^1].
@@ -103,7 +103,7 @@ $$
 $\chi$ 가 완전 곱셈적이므로 유일분해가 그대로 작동한다.
 
 $$
-L(s,\chi)=\prod_p\Big(1-\frac{\chi(p)}{p^s}\Big)^{-1},\qquad \mathrm{Re}\,s>1
+L(s,\chi)=\prod_p\Big(1-\frac{\chi(p)}{p^s}\Big)^{-1},\qquad \mathrm{Re}\thinspace s>1
 $$
 
 로그를 취하면 소수에 대한 합이 나온다.
@@ -115,7 +115,7 @@ $$
 여기에 직교 관계를 적용하면 잉여류만 남는다.
 
 $$
-\sum_{p\equiv a\,(q)}\frac1{p^s}=\frac1{\varphi(q)}\sum_\chi\overline{\chi(a)}\log L(s,\chi)+O(1)
+\sum_{p\equiv a\thinspace(q)}\frac1{p^s}=\frac1{\varphi(q)}\sum_\chi\overline{\chi(a)}\log L(s,\chi)+O(1)
 $$
 
 $s\to1^+$ 에서 우변의 $\chi_0$ 항이 $\frac1{\varphi(q)}\log\frac1{s-1}\to\infty$ 로 발산하고, 나머지 항은 $L(1,\chi)\ne0$ 덕분에 유계다. 따라서 좌변이 발산하고, 그 잉여류에 소수가 무한히 많다. 이것이 Dirichlet 정리의 증명이다.
@@ -125,7 +125,7 @@ $s\to1^+$ 에서 우변의 $\chi_0$ 항이 $\frac1{\varphi(q)}\log\frac1{s-1}\to
 도체 $q$ 인 원시 지표 $\chi$ 에 대해 $L(s,\chi)$ 는 복소평면 전체로 정칙 연속되고(비자명하면 극이 없다), 완비화한 함수
 
 $$
-\Lambda(s,\chi)=\Big(\frac q\pi\Big)^{(s+\epsilon)/2}\Gamma\!\Big(\frac{s+\epsilon}2\Big)L(s,\chi),
+\Lambda(s,\chi)=\Big(\frac q\pi\Big)^{(s+\epsilon)/2}\Gamma\negthinspace\Big(\frac{s+\epsilon}2\Big)L(s,\chi),
 \qquad \epsilon=\frac{1-\chi(-1)}2
 $$
 

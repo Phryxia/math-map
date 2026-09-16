@@ -83,7 +83,7 @@ $$
 영역 $B$ 로 제한한 작용소 $K_B$ 의 고윳값을 $\lambda_1,\lambda_2,\dots$ 라 하면, $B$ 안의 점 개수가
 
 $$
-\#(B) \;\overset{d}{=}\; \sum_i \mathrm{Bern}(\lambda_i)
+\char35{}(B) \thickspace\overset{d}{=}\thickspace \sum_i \mathrm{Bern}(\lambda_i)
 $$
 
 로 독립 베르누이 확률변수들의 합과 같은 분포를 가진다. 점들 자체는 독립이 아닌데 개수는 독립합으로 분해된다는 것이 결정점과정의 가장 유용한 성질이다. 여기서 $\mathbb E\char35{}(B) = \operatorname{tr}K_B$ 와 $\operatorname{Var}\char35{}(B) = \sum\lambda_i(1-\lambda_i) \le \mathbb E\char35{}(B)$ 가 바로 따라 나온다. 분산이 평균보다 작다는 것이 반발의 정량적 표현이고, 집중부등식과 중심극한정리도 이 분해에서 나온다.
@@ -95,7 +95,7 @@ $K_B$ 가 사영이면 모든 $\lambda_i$ 가 0 또는 1 이라 개수가 결정
 구간 $(s,\infty)$ 에 점이 하나도 없을 확률이
 
 $$
-\Pr[\#(s,\infty) = 0] = \det\bigl(I - K\bigr)_{L^2(s,\infty)}
+\Pr[\char35{}(s,\infty) = 0] = \det\bigl(I - K\bigr)_{L^2(s,\infty)}
 $$
 
 라는 Fredholm 행렬식으로 쓰인다. 최대 점의 분포함수가 곧 이 값이므로, Airy 핵에 적용하면 [Tracy–Widom 분포](tracy-widom.md) $F_2$ 가 정의된다. 최댓값의 분포를 구하는 문제가 작용소의 행렬식 계산으로 바뀌는 것이 이 이론이 무작위 행렬에서 하는 일이다.

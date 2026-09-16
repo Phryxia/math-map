@@ -79,7 +79,7 @@ graph TD
 $X$ 를 $\mathbb F_q$ 위의 매끄러운 사영다양체, 차원 $d$ 라 하자. $\ell\ne p$ 인 소수에 대해 $\ell$ 진 에탈 코호몰로지 $H^i(X_{\overline{\mathbb F_q}},\mathbb Q_\ell)$ 위에 기하적 Frobenius 가 작용하고
 
 $$
-P_i(T)=\det\big(1-T\,\mathrm{Frob}\mid H^i\big)=\prod_j(1-\alpha_{ij}T)
+P_i(T)=\det\big(1-T\thinspace\mathrm{Frob}\mid H^i\big)=\prod_j(1-\alpha_{ij}T)
 $$
 
 이다.
@@ -103,7 +103,7 @@ $q^{i/2}$ 를 $\alpha$ 의 **무게**라 한다. 이 진술이 $\zeta$ 함수의
 무게 $k$ 의 Hecke 고유 첨점형식 $f=\sum a_nq^n$ 에 대해
 
 $$
-|a_p|\le2\,p^{(k-1)/2}\qquad(p\nmid N)
+|a_p|\le2\thinspace p^{(k-1)/2}\qquad(p\nmid N)
 $$
 
 이 **Ramanujan–Petersson 추측**이다. $k=12$ 이고 $N=1$ 인 것이 판별식 $\Delta$ 이고 $a_p=\tau(p)$ 다.
@@ -117,7 +117,7 @@ $$
 $$
 \rho_f:\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q)\to\mathrm{GL}_2(\mathbb Q_\ell),
 \qquad
-\mathrm{tr}\,\rho_f(\mathrm{Frob}_p)=a_p,
+\mathrm{tr}\thinspace\rho_f(\mathrm{Frob}_p)=a_p,
 \quad
 \det\rho_f(\mathrm{Frob}_p)=p^{k-1}
 $$

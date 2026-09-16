@@ -32,7 +32,7 @@ graph TD
 유한집합 A의 원소 개수를 다음과 같이 쓴다.
 
 $$
-|A| = \#A \in \mathbb{Z}_{\ge 0}
+|A| = \char35{}A \in \mathbb{Z}_{\ge 0}
 $$
 
 ## 덧셈 원리와 곱셈 원리
@@ -47,7 +47,7 @@ $$
 나눗셈 원리는 사상 버전이다. 전사함수 f: A → B의 모든 섬유가 같은 크기 d를 가지면 다음이 성립한다.
 
 $$
-|A| = d\,|B|
+|A| = d\thinspace|B|
 $$
 
 ## 순열, 조합, 이항계수
@@ -57,7 +57,7 @@ n개 원소에서 k개를 순서를 구분해 뽑는 방법의 수(k-순열)와,
 $$
 P(n,k)=\frac{n!}{(n-k)!}=n(n-1)\cdots(n-k+1),
 \qquad
-\binom{n}{k}=\frac{P(n,k)}{k!}=\frac{n!}{k!\,(n-k)!}
+\binom{n}{k}=\frac{P(n,k)}{k!}=\frac{n!}{k!\thinspace(n-k)!}
 $$
 
 k가 0보다 작거나 n보다 크면 이항계수는 0으로 정의한다. 이항계수는 n원소 집합의 k원소 부분집합의 개수이며, 동시에 0과 1로 이루어진 길이 n의 열 중 1이 k개인 것의 개수다.
@@ -67,7 +67,7 @@ k가 0보다 작거나 n보다 크면 이항계수는 0으로 정의한다. 이�
 n개의 대상을 크기가 각각 k_1, ..., k_m인 이름 붙은 상자에 나누어 담는 방법의 수를 다항계수라 한다. 여기서 k_1 + ... + k_m = n이다.
 
 $$
-\binom{n}{k_1,\dots,k_m}=\frac{n!}{k_1!\,k_2!\cdots k_m!}
+\binom{n}{k_1,\dots,k_m}=\frac{n!}{k_1!\thinspace k_2!\cdots k_m!}
 $$
 
 같은 문자가 반복되는 문자열의 서로 다른 배열 수가 정확히 이 값이다. MISSISSIPPI(M 1개, I 4개, S 4개, P 2개)의 배열 수는 11!/(1!4!4!2!)=34650이다.
@@ -79,7 +79,7 @@ $$
 가환환에서 다음이 성립한다[^1].
 
 $$
-(x+y)^n=\sum_{k=0}^{n}\binom{n}{k}x^{k}y^{\,n-k}
+(x+y)^n=\sum_{k=0}^{n}\binom{n}{k}x^{k}y^{\thinspace n-k}
 $$
 
 증명은 전개항을 세는 것이다. 곱 (x+y)(x+y)...(x+y)를 분배법칙으로 펼치면 각 인자에서 x 또는 y를 고르는 모든 방법이 한 항씩 나타난다. x를 고른 인자의 집합이 k원소일 때 항은 x^k y^(n-k)이고, 그런 집합의 개수가 이항계수다.
@@ -87,7 +87,7 @@ $$
 다항정리는 같은 논증의 일반형이다.
 
 $$
-(x_1+\cdots+x_m)^n=\sum_{k_1+\cdots+k_m=n}\binom{n}{k_1,\dots,k_m}\,x_1^{k_1}\cdots x_m^{k_m}
+(x_1+\cdots+x_m)^n=\sum_{k_1+\cdots+k_m=n}\binom{n}{k_1,\dots,k_m}\thinspace x_1^{k_1}\cdots x_m^{k_m}
 $$
 
 ## Pascal 점화식과 대칭성
@@ -119,7 +119,7 @@ $$
 n종류에서 중복을 허용해 k개를 뽑는 방법(즉 x_1 + ... + x_n = k의 음이 아닌 정수해의 개수)은 다음과 같다.
 
 $$
-\left(\!\!\binom{n}{k}\!\!\right)=\binom{n+k-1}{k}
+\left(\negthinspace\negthinspace\binom{n}{k}\negthinspace\negthinspace\right)=\binom{n+k-1}{k}
 $$
 
 k개의 별과 n-1개의 막대를 일렬로 배열하는 것과의 전단사로 증명한다. 막대가 별들을 n개의 구간으로 나누고, i번째 구간의 별 개수가 x_i다. 전체 n+k-1개의 자리에서 막대 자리를 고르는 방법의 수가 곧 개수다.

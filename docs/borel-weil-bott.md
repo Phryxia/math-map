@@ -91,7 +91,7 @@ $G=\mathrm{SL}_2$ 면 $G/B=\mathbb P^1$ 이고, $G=\mathrm{SL}_3$ 면 $G/B$ 는 
 무게 $\lambda\in X^*(T)$ 는 $B\to T\to\mathbb C^\times$ 로 확장되어 $B$ 의 일차원 표현 $\mathbb C_\lambda$ 를 준다. 연관다발
 
 $$
-\mathcal L_\lambda=G\times^B\mathbb C_{-\lambda}=(G\times\mathbb C)/\{(g,z)\sim(gb,\lambda(b)z)\}
+\mathcal L_\lambda=G\times^B\mathbb C_{-\lambda}=(G\times\mathbb C)/\lbrace(g,z)\sim(gb,\lambda(b)z)\rbrace
 $$
 
 가 $G/B$ 위의 $G$ 등변 직선다발이다. 부호 규약이 문헌마다 갈리는데, 여기서는 $\lambda$ 지배적일 때 $\mathcal L_\lambda$ 가 매우 풍부(very ample)해지도록 잡았다. 그러면 $\mathcal L_\lambda$ 의 단면이 $\mathbb P(V_\lambda)$ 로의 매장을 준다.
@@ -119,7 +119,7 @@ $$
 이다. Poincaré 다항식이 Weyl 군의 길이 생성함수가 된다.
 
 $$
-\sum_k \dim H^{2k}(G/B)\,q^{k}=\sum_{w\in W}q^{\ell(w)}=\prod_{i=1}^{r}\frac{1-q^{d_i}}{1-q}
+\sum_k \dim H^{2k}(G/B)\thinspace q^{k}=\sum_{w\in W}q^{\ell(w)}=\prod_{i=1}^{r}\frac{1-q^{d_i}}{1-q}
 $$
 
 $d_i$ 는 $W$ 의 기본 불변식 차수다. $\mathrm{SL}_n$ 에서 $W=S_n$ 이고 우변은 $q$ 계승 $[n]_q!$ 이다.

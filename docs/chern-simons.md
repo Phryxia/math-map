@@ -27,7 +27,7 @@ $A$ 는 $G$ 주다발 위의 접속, 곧 [Lie 대수](lie-groups.md) 값을 갖�
 닫혀 있으면 국소적으로는 완전하다. 실제로 직접 계산하면
 
 $$
-\mathrm{tr}(F\wedge F)=d\,\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)
+\mathrm{tr}(F\wedge F)=d\thinspace\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)
 $$
 
 이 된다. 곧 **Chern–Simons 3 형식은 4 차원 특성류의 원시함수다.** 다발이 자명한 영역에서 $A$ 가 전역적으로 정의되므로 이 원시함수를 실제로 적을 수 있다.
@@ -57,7 +57,7 @@ $$
 따라서 $\mathrm{CS}(A)$ 는 실수로서는 게이지 불변이 아니고, $\mathbb R/\mathbb Z$ 값으로만 잘 정의된다. 그런데 물리에서 쓰는 것은 $e^{2\pi ik\thinspace\mathrm{CS}(A)}$ 이므로
 
 $$
-e^{2\pi ik\,\mathrm{CS}(A^g)}=e^{2\pi ik\,\mathrm{CS}(A)}e^{-2\pi ik\deg(g)}
+e^{2\pi ik\thinspace\mathrm{CS}(A^g)}=e^{2\pi ik\thinspace\mathrm{CS}(A)}e^{-2\pi ik\deg(g)}
 $$
 
 이고, $k$ 가 정수이면 마지막 인자가 1 이 되어 완전히 게이지 불변이다. **레벨이 정수여야 하는 이유가 $\pi_3(G)=\mathbb Z$ 다.** 양자화가 어떤 물리적 가정이 아니라 Lie 군의 위상에서 강제된다.
@@ -80,7 +80,7 @@ flowchart TD
 작용에 계량이 없으므로 분배함수도 계량에 의존하지 않을 것이다. 이 한 줄이 3 차원 TQFT 가 존재하는 이유이고, Witten 이 Jones 다항식을 설명한 방식이다. Wilson 고리
 
 $$
-W_R(K)=\mathrm{tr}_R\,\mathcal P\exp\oint_KA
+W_R(K)=\mathrm{tr}_R\thinspace\mathcal P\exp\oint_KA
 $$
 
 의 기댓값을 계산하면 매듭 불변량이 나오는데, 계량이 없으므로 그 값은 $K$ 를 연속적으로 움직여도 변하지 않는다. 곧 **동위류의 불변량**이다.
@@ -104,7 +104,7 @@ $$
 변분을 계산하면 (경계가 없을 때)
 
 $$
-\delta\,\mathrm{CS}(A)=\frac1{4\pi^2}\int_M\mathrm{tr}(\delta A\wedge F)
+\delta\thinspace\mathrm{CS}(A)=\frac1{4\pi^2}\int_M\mathrm{tr}(\delta A\wedge F)
 $$
 
 이다. 따라서 **임계점은 $F=0$ 이고 곧 평탄 접속**이다. 평탄 접속은 홀로노미로 결정되므로, 게이지류의 모듈라이는
@@ -140,7 +140,7 @@ $$
 이 경우 Wilson 고리 두 개의 상관함수를 계산하면 정확히 **이음수**가 나온다.
 
 $$
-\big\langle W_{n_1}(K_1)W_{n_2}(K_2)\big\rangle=\exp\Big(\frac{2\pi i\,n_1n_2}{k}\mathrm{lk}(K_1,K_2)\Big)
+\big\langle W_{n_1}(K_1)W_{n_2}(K_2)\big\rangle=\exp\Big(\frac{2\pi i\thinspace n_1n_2}{k}\mathrm{lk}(K_1,K_2)\Big)
 $$
 
 이차형식의 적분이라 Gauss 적분으로 정확히 계산되고, 그 결과가 Gauss 의 이음수 적분이 된다. 비가환 $G$ 에서는 $A\wedge A\wedge A$ 항 때문에 이렇게 되지 않고, 섭동전개의 각 차수가 Vassiliev 불변량을 준다. **이음수는 그 전개의 1 차 항이다.**
@@ -152,7 +152,7 @@ $$
 $M$ 이 유리 호몰로지 구면이면 평탄 접속이 유한개이므로 임계값 $\mathrm{CS}(\alpha)$ 도 유한개의 유리수다. 이 사실이 [정상위상법](stationary-phase.md)과 만나면 곧바로 예측이 나온다. 경로적분
 
 $$
-Z_k(M)=\int\mathcal DA\,e^{2\pi ik\,\mathrm{CS}(A)}
+Z_k(M)=\int\mathcal DA\thinspace e^{2\pi ik\thinspace\mathrm{CS}(A)}
 $$
 
 에서 $k\to\infty$ 의 점근은 임계점마다 한 항이고, 각 항의 위상이 $e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}$ 다. $\mathrm{CS}(\alpha)$ 가 분모 $p$ 의 유리수이므로 **그 위상은 $k$ 에 대해 주기 $p$ 로 순환한다.** 렌즈 공간의 RT 불변량이 $k$ 에 따라 진동하는 패턴이 여기서 온다.

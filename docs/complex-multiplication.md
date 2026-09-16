@@ -68,13 +68,13 @@ $$
 $h(D)=1$ 이면 $H_D(X)=X-j$ 라 $j$ 자체가 정수다. $j$ 의 $q$ 전개
 
 $$
-j(\tau)=\frac1q+744+196884\,q+\cdots,\qquad q=e^{2\pi i\tau}
+j(\tau)=\frac1q+744+196884\thinspace q+\cdots,\qquad q=e^{2\pi i\tau}
 $$
 
 에 $\tau=\frac{1+\sqrt D}{2}$ 를 넣으면 $q=-e^{-\pi\sqrt{|D|}}$ 이므로
 
 $$
--e^{\pi\sqrt{|D|}}+744-196884\,e^{-\pi\sqrt{|D|}}+\cdots=j\in\mathbb Z
+-e^{\pi\sqrt{|D|}}+744-196884\thinspace e^{-\pi\sqrt{|D|}}+\cdots=j\in\mathbb Z
 $$
 
 가 되고, $|D|$ 가 크면 셋째 항부터는 사실상 $0$ 이다. 결론은 $e^{\pi\sqrt{|D|}}$ 가 정수 $744-j$ 에 지수적으로 가깝다는 것이다.
@@ -99,7 +99,7 @@ $$
 가장 중요한 대목이다. $H=K(j(\mathcal O_K))$ 라 두면 $H/K$ 는 아벨확대이고 Artin 사상이
 
 $$
-\mathrm{Cl}(K)\;\xrightarrow{\ \sim\ }\;\mathrm{Gal}(H/K),\qquad [\mathfrak a]\mapsto\sigma_{\mathfrak a}
+\mathrm{Cl}(K)\thickspace\xrightarrow{\ \sim\ }\thickspace\mathrm{Gal}(H/K),\qquad [\mathfrak a]\mapsto\sigma_{\mathfrak a}
 $$
 
 를 준다. 주정리는 이 동형 아래에서
@@ -139,7 +139,7 @@ $$
 를 뜻한다. $E\cong\mathbb C/\mathfrak a$ 로 쓸 수 있고 $\mathfrak a$ 는 $\mathcal O$ 의 가역 아이디얼이며, 두 곡선이 동형인 것은 아이디얼류가 같은 것과 같다. 따라서
 
 $$
-\{\mathcal O\ \text{에 의한 CM 곡선}\}/\cong\;\longleftrightarrow\;\mathrm{Cl}(\mathcal O),\qquad \#=h(D)
+\lbrace\mathcal O\ \text{에 의한 CM 곡선}\rbrace/\cong\thickspace\longleftrightarrow\thickspace\mathrm{Cl}(\mathcal O),\qquad \char35{}=h(D)
 $$
 
 ## 제1 주정리
@@ -156,7 +156,7 @@ $\mathcal O=\mathcal O_K$ 인 경우를 적는다.
 $E/H$ 를 $\mathcal O_K$ 로 CM 을 갖는 곡선, $\mathfrak h\colon E\to E/\mathrm{Aut}(E)\cong\mathbb P^1$ 를 Weber 함수라 하자. 아이디얼 $\mathfrak m$ 에 대해
 
 $$
-K_{\mathfrak m}=H\bigl(\mathfrak h(P)\,:\,P\in E[\mathfrak m]\bigr)
+K_{\mathfrak m}=H\bigl(\mathfrak h(P)\thinspace:\thinspace P\in E[\mathfrak m]\bigr)
 $$
 
 가 도체 $\mathfrak m$ 의 광선 유체다. 이들의 합집합이 $K^{\mathrm{ab}}$ 이므로 허수이차체의 아벨확대가 모두 나온다. 아델 언어로 정리하면 이데일 $s\in\mathbb A_K^\times$ 의 작용을 격자 위 곱셈으로 기술하는 Shimura 상호법칙이 되고, 이 형태가 [모듈러 곡선](modular-curves.md) 위 CM 점의 Galois 작용을 계산할 때 실제로 쓰인다.

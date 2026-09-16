@@ -95,7 +95,7 @@ Dedekind 정역의 각 소 아이디얼 $\mathfrak p$ 에 대해 국소화 $R_{\
 ## 유일분해
 
 $$
-\mathfrak a=\prod_{\mathfrak p}\mathfrak p^{\,v_{\mathfrak p}(\mathfrak a)}
+\mathfrak a=\prod_{\mathfrak p}\mathfrak p^{\thinspace v_{\mathfrak p}(\mathfrak a)}
 $$
 
 유한 개의 $\mathfrak p$ 에서만 지수가 0 이 아니다. 분수 아이디얼에서는 지수가 음수일 수 있고, 그러면 군 구조가 $\bigoplus_{\mathfrak p}\mathbb Z$ 와 동형이 된다. 곧 분수 아이디얼군이 소 아이디얼을 기저로 하는 자유 아벨군이다.
@@ -107,7 +107,7 @@ $$
 주 분수 아이디얼이 부분군을 이루므로 몫을 취할 수 있다.
 
 $$
-\mathrm{Cl}(R)=\frac{\{\text{분수 아이디얼}\}}{\{\text{주 분수 아이디얼}\}}
+\mathrm{Cl}(R)=\frac{\lbrace\text{분수 아이디얼}\rbrace}{\lbrace\text{주 분수 아이디얼}\rbrace}
 $$
 
 $\mathrm{Cl}(R)=1$ 인 것과 $R$ 이 주 아이디얼 정역인 것과 유일분해 정역인 것이 모두 동치다. 일반 Noether 정역에서는 주 아이디얼 정역이 유일분해 정역보다 진짜로 강한 조건인데, Dedekind 정역에서는 두 개념이 붕괴한다.

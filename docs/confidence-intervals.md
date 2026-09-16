@@ -31,13 +31,13 @@ flowchart TD
 모수 $\theta$ 를 갖는 모형에서 데이터 $X$ 의 함수로 정해지는 확률집합 $C(X) \subseteq \Theta$ 를 생각한다. 피복확률(coverage probability)은
 
 $$
-\mathrm{cov}(\theta) \;=\; \Pr_{\theta}\big(\theta \in C(X)\big)
+\mathrm{cov}(\theta) \thickspace=\thickspace \Pr_{\theta}\big(\theta \in C(X)\big)
 $$
 
 이다. $C$ 가 수준 $1 - \alpha$ 의 신뢰집합이라는 것은 모든 $\theta$ 에 대해
 
 $$
-\Pr_{\theta}\big(\theta \in C(X)\big) \;\ge\; 1 - \alpha
+\Pr_{\theta}\big(\theta \in C(X)\big) \thickspace\ge\thickspace 1 - \alpha
 $$
 
 가 성립한다는 뜻이다. 등호가 모든 $\theta$ 에서 성립하면 정확(exact), 부등호로만 성립하면 보수적(conservative)이다. $C(X)$ 가 구간이면 신뢰구간이라 부른다.
@@ -63,7 +63,7 @@ $$
 가 피벗량이고, 표준정규분포의 상위 $\alpha/2$ 분위수를 $z$ 로 쓰면
 
 $$
-\bar{X} \pm z_{\alpha/2}\,\frac{\sigma}{\sqrt{n}}
+\bar{X} \pm z_{\alpha/2}\thinspace\frac{\sigma}{\sqrt{n}}
 $$
 
 가 정확한 $1-\alpha$ 구간이다. 분산을 모를 때는 표본표준편차 $s$ 로 바꾸고, 이때
@@ -75,7 +75,7 @@ $$
 이 자유도 $n-1$ 의 t 분포를 따르므로 구간은
 
 $$
-\bar{X} \pm t_{n-1,\,\alpha/2}\,\frac{s}{\sqrt{n}}
+\bar{X} \pm t_{n-1,\thinspace\alpha/2}\thinspace\frac{s}{\sqrt{n}}
 $$
 
 이다. t 분위수가 z 분위수보다 크므로 구간이 넓어진다. 그 차이가 분산을 추정했다는 사실의 비용이다. 분산 자체에 대해서는 $(n-1)s^2/\sigma^2$ 이 카이제곱 피벗량이 되며 비대칭 구간이 나온다.
@@ -85,13 +85,13 @@ $$
 피벗량이 없으면 [중심극한정리](central-limit-theorem.md)로 근사 피벗량을 만든다. [최대가능도 추정](maximum-likelihood.md)의 점근정규성
 
 $$
-\sqrt{n}\,(\hat\theta_n - \theta) \;\xrightarrow{d}\; N\!\big(0,\; I(\theta)^{-1}\big)
+\sqrt{n}\thinspace(\hat\theta_n - \theta) \thickspace\xrightarrow{d}\thickspace N\negthinspace\big(0,\thickspace I(\theta)^{-1}\big)
 $$
 
 을 쓰면 Wald 구간
 
 $$
-\hat\theta_n \pm z_{\alpha/2}\,\widehat{\mathrm{se}}(\hat\theta_n)
+\hat\theta_n \pm z_{\alpha/2}\thinspace\widehat{\mathrm{se}}(\hat\theta_n)
 $$
 
 를 얻는다. 피복확률은 $n \to \infty$ 에서만 $1-\alpha$ 로 가고, 유한 표본에서는 보장되지 않는다.
@@ -107,7 +107,7 @@ $$
 이다. 간단하지만 성능이 나쁘다. 표준화량을 뒤집되 분산을 참값 $p$ 로 두고 푸는 Wilson 점수구간
 
 $$
-\frac{\hat{p} + \dfrac{z^2}{2n}}{1 + \dfrac{z^2}{n}} \;\pm\; \frac{z}{1 + \dfrac{z^2}{n}}\sqrt{\frac{\hat{p}(1-\hat{p})}{n} + \frac{z^2}{4n^2}}
+\frac{\hat{p} + \dfrac{z^2}{2n}}{1 + \dfrac{z^2}{n}} \thickspace\pm\thickspace \frac{z}{1 + \dfrac{z^2}{n}}\sqrt{\frac{\hat{p}(1-\hat{p})}{n} + \frac{z^2}{4n^2}}
 $$
 
 가 훨씬 낫다.[^2] 중심이 $1/2$ 쪽으로 당겨지고, $\hat p=0$ 이나 $1$ 에서도 폭이 0 이 되지 않는다.
@@ -119,7 +119,7 @@ $$
 수준 $\alpha$ 검정족과 수준 $1-\alpha$ 신뢰집합은 서로를 결정한다. 각 $t \in \Theta$ 마다 $H_0: \theta = t$ 의 기각역 $R(t)$ 가 주어져 있으면
 
 $$
-C(x) \;=\; \{\, t \in \Theta \;:\; x \notin R(t) \,\}
+C(x) \thickspace=\thickspace \lbrace\thinspace t \in \Theta \thickspace:\thickspace x \notin R(t) \thinspace\rbrace
 $$
 
 로 정의한다. 그러면

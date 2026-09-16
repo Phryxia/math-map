@@ -40,7 +40,7 @@ $$
 
 $$
 \mathrm{inv}_v\colon\mathrm{Br}(K_v)\xrightarrow{\ \sim\ }
-\begin{cases}\mathbb Q/\mathbb Z&v\ \text{유한}\\ \tfrac12\mathbb Z/\mathbb Z&v\ \text{실수}\\ 0&v\ \text{복소}\end{cases}
+\begin{cases}\mathbb Q/\mathbb Z&v\ \text{유한}\cr \tfrac12\mathbb Z/\mathbb Z&v\ \text{실수}\cr 0&v\ \text{복소}\end{cases}
 $$
 
 사원수대수는 위수 2 의 원소이므로 불변량이 $0$ 아니면 $1/2$ 이고, $1/2$ 인 자리를 **분기 자리**라 한다. 그리고 대역적으로 정의된 대수는 분기 자리가 유한 개이며 불변량의 합이 $0$ 이다.
@@ -93,13 +93,13 @@ $$
 $K_v$ 위에서 사원수대수의 분해 여부를 $\pm1$ 로 적은 것이 **Hilbert 기호**다.
 
 $$
-(a,b)_v=\begin{cases}+1&ax^2+by^2=z^2\ \text{가 }K_v\ \text{에서 자명하지 않게 풀린다}\\-1&\text{그렇지 않다}\end{cases}
+(a,b)_v=\begin{cases}+1&ax^2+by^2=z^2\ \text{가 }K_v\ \text{에서 자명하지 않게 풀린다}\cr-1&\text{그렇지 않다}\end{cases}
 $$
 
 $\mathbb Q$ 위에서는 명시적 공식이 있다. $a=p^\alpha u$ 와 $b=p^\beta v$ 로 쓰면 홀수 소수 $p$ 에서
 
 $$
-(a,b)_p=(-1)^{\alpha\beta\varepsilon(p)}\left(\frac up\right)^{\!\beta}\left(\frac vp\right)^{\!\alpha},\qquad
+(a,b)_p=(-1)^{\alpha\beta\varepsilon(p)}\left(\frac up\right)^{\negthinspace\beta}\left(\frac vp\right)^{\negthinspace\alpha},\qquad
 \varepsilon(p)=\frac{p-1}2\bmod2
 $$
 
@@ -139,7 +139,7 @@ $$
 $X/K$ 가 매끄러운 사영다양체일 때 아델 점 집합 $X(\mathbb A_K)$ 안에 부분집합을 정의한다.
 
 $$
-X(\mathbb A_K)^{\mathrm{Br}}=\Big\{(P_v)\in X(\mathbb A_K)\ :\ \sum_v\mathrm{inv}_v\,\alpha(P_v)=0\ \ \text{모든 }\alpha\in\mathrm{Br}(X)\Big\}
+X(\mathbb A_K)^{\mathrm{Br}}=\Big\lbrace(P_v)\in X(\mathbb A_K)\ :\ \sum_v\mathrm{inv}_v\thinspace\alpha(P_v)=0\ \ \text{모든 }\alpha\in\mathrm{Br}(X)\Big\rbrace
 $$
 
 $X(K)\subset X(\mathbb A_K)^{\mathrm{Br}}\subset X(\mathbb A_K)$ 가 항상 성립한다. 가운데가 비어 있는데 오른쪽이 비어 있지 않으면 Hasse 원리가 깨지고, 그 깨짐이 Brauer 군으로 설명된 것이다.

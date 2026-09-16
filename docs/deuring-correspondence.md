@@ -5,7 +5,7 @@
 [초특이 동종사상 그래프](supersingular-isogeny-graphs.md)에서 곡선의 자기준동형환이 비가환이라는 사실이 모든 것의 근원이라고 했다. 그 비가환 환이 무엇인지를 끝까지 따라가면 **Deuring 대응**이 나온다.
 
 $$
-\{\text{표수 }p\ \text{초특이 타원곡선}\}\ \longleftrightarrow\ \{\text{사원수대수 }B_{p,\infty}\ \text{의 극대차수}\}
+\lbrace\text{표수 }p\ \text{초특이 타원곡선}\rbrace\ \longleftrightarrow\ \lbrace\text{사원수대수 }B_{p,\infty}\ \text{의 극대차수}\rbrace
 $$
 
 $p$ 와 $\infty$ 에서만 분기하는 [사원수대수](brauer-groups.md) $B_{p,\infty}$ 는 동형을 무시하면 하나뿐이다. 그 안의 극대차수들과 초특이 곡선들이 일대일로 대응하고, 대응은 대상에서 끝나지 않는다. **동종사상이 좌이념으로, 합성이 이념의 곱으로, 차수가 노름으로** 번역된다. 기하의 사전 전체가 대수의 사전으로 옮겨진다.
@@ -19,7 +19,7 @@ $p$ 와 $\infty$ 에서만 분기하는 [사원수대수](brauer-groups.md) $B_{
 $\varphi:E\to E'$ 를 동종사상, $\mathcal O=\mathrm{End}(E)$ 라 하자. 집합
 
 $$
-I_\varphi=\{\alpha\in\mathcal O:\ \varphi\circ\alpha=0\ \text{on}\ \ker\varphi\}
+I_\varphi=\lbrace\alpha\in\mathcal O:\ \varphi\circ\alpha=0\ \text{on}\ \ker\varphi\rbrace
 =\mathrm{Hom}(E',E)\cdot\varphi
 $$
 
@@ -66,7 +66,7 @@ KLPT 알고리즘이 하는 일이 정확히 이것이다. 주어진 이념과 �
 $p\equiv3\pmod 4$ 일 때
 
 $$
-B_{p,\infty}=\Bigl(\frac{-1,\,-p}{\mathbb Q}\Bigr)=\mathbb Q\oplus\mathbb Q i\oplus\mathbb Q j\oplus\mathbb Q k,
+B_{p,\infty}=\Bigl(\frac{-1,\thinspace-p}{\mathbb Q}\Bigr)=\mathbb Q\oplus\mathbb Q i\oplus\mathbb Q j\oplus\mathbb Q k,
 \qquad i^2=-1,\ j^2=-p,\ k=ij=-ji
 $$
 
@@ -83,7 +83,7 @@ $$
 $E\mapsto\mathrm{End}(E)$ 가 초특이 곡선의 동형류에서 $B_{p,\infty}$ 의 극대차수의 형류(type)로의 전단사를 준다. 더 나아가 범주 사이의 **반대응**이다. $E$ 를 고정하고 $\mathcal O=\mathrm{End}(E)$ 라 하면
 
 $$
-\{E\ \text{에서 나가는 동종사상}\}\ \longleftrightarrow\ \{\mathcal O\ \text{의 좌이념}\}
+\lbrace E\ \text{에서 나가는 동종사상}\rbrace\ \longleftrightarrow\ \lbrace\mathcal O\ \text{의 좌이념}\rbrace
 $$
 
 이고 차수와 노름, 합성과 곱이 대응한다.

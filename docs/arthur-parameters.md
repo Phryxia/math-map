@@ -15,7 +15,7 @@ $$
 이 매개변수가 정의하는 **Arthur 꾸러미** $\Pi_\psi$ 는 L 꾸러미보다 크고, 성질도 더 미묘하다. 그 대가로 얻는 것이 전역 **중복도 공식**이다. 자기동형 표현이 이산 스펙트럼에 몇 번 나타나는지가 국소 지표들의 곱 하나로 결정된다.
 
 $$
-m(\pi)=\bigl|\{\text{국소 지표의 곱이 }\psi\text{ 의 지표와 맞는 경우}\}\bigr|
+m(\pi)=\bigl|\lbrace\text{국소 지표의 곱이 }\psi\text{ 의 지표와 맞는 경우}\rbrace\bigr|
 $$
 
 Langlands 강령이 "어떤 표현이 존재하는가"를 예측한다면, Arthur 의 분류는 "몇 개 있는가"까지 답한다.
@@ -29,7 +29,7 @@ Ramanujan 추측은 $\mathrm{GL}_n$ 의 첨점 표현이 템퍼드라고 예측�
 이런 표현에 L 매개변수를 억지로 붙이면 유니터리가 아닌 상으로 가야 해서 이론이 망가진다. 둘째 $\mathrm{SL}_2$ 는 이 밀림을 **구조 안에서** 처리하는 장치다. $\mathrm{SL}_2(\mathbb C)$ 의 $d$ 차원 표현을 통해 들어오면 매개변수가
 
 $$
-w\ \longmapsto\ \varphi(w)\otimes\begin{pmatrix}|w|^{1/2}&\\&|w|^{-1/2}\end{pmatrix}^{\!\oplus}
+w\ \longmapsto\ \varphi(w)\otimes\begin{pmatrix}|w|^{1/2}&\cr&|w|^{-1/2}\end{pmatrix}^{\negthinspace\oplus}
 $$
 
 꼴로 $q^{\pm(d-1)/2}$ 만큼 벌어진다. 벌어진 양이 곧 비템퍼드성의 크기다.
@@ -61,7 +61,7 @@ $$
 에서 $W_F$ 로의 제한이 유계 상을 갖고, 두 $\mathrm{SL}_2$ 로의 제한이 대수적이어야 한다. 대응하는 L 매개변수는
 
 $$
-\varphi_\psi(w)=\psi\!\left(w,\ \begin{pmatrix}|w|^{1/2}&\\&|w|^{-1/2}\end{pmatrix},\ 1\right)
+\varphi_\psi(w)=\psi\negthinspace\left(w,\ \begin{pmatrix}|w|^{1/2}&\cr&|w|^{-1/2}\end{pmatrix},\ 1\right)
 $$
 
 로 정의된다. 둘째 인자에 절댓값이 들어가면서 유계성이 깨지고, 그 깨짐이 비템퍼드성이다.
@@ -71,7 +71,7 @@ $$
 $S_\psi=\mathrm{Cent}(\psi,\widehat G)$ 에서 $\mathcal S_\psi=\pi_0(S_\psi/Z(\widehat G)^\Gamma)$ 를 만든다. 전역 상황에서는 $\epsilon_\psi:\mathcal S_\psi\to\lbrace\pm1\rbrace$ 를 다음 꼴로 정의한다.
 
 $$
-\epsilon_\psi(s)=\prod_i\varepsilon\!\left(\tfrac12,\ \pi_i\times\pi_j\right)^{\cdots}
+\epsilon_\psi(s)=\prod_i\varepsilon\negthinspace\left(\tfrac12,\ \pi_i\times\pi_j\right)^{\cdots}
 $$
 
 곧 매개변수를 쪼갠 조각들의 Rankin–Selberg $\varepsilon$ 인자로 만든 부호다. 중심값의 부호가 다시 등장한다는 점에서 [GGP 지표 공식](gan-gross-prasad.md)과 같은 자리에 있다.
@@ -83,7 +83,7 @@ $G$ 를 고전군이라 하고 $\psi$ 를 이산 전역 Arthur 매개변수라 �
 $$
 m(\pi)=
 \begin{cases}
-1,&\chi_\pi=\epsilon_\psi\\
+1,&\chi_\pi=\epsilon_\psi\cr
 0,&\text{그 외}
 \end{cases}
 $$

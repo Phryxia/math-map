@@ -3,7 +3,7 @@
 # 개요
 
 $$
-y''(z) = z\,y(z)
+y''(z) = z\thinspace y(z)
 $$
 
 는 계수가 가장 단순하게 부호를 바꾸는 2계 [상미분방정식](ordinary-differential-equations.md)이다. $z > 0$ 에서는 해가 지수적으로 감쇠하거나 증가하고, $z < 0$ 에서는 진동한다. 부호가 바뀌는 자리 $z = 0$ 이 **회전점**이고, 이 방정식은 회전점 하나를 가진 문제의 **표준형**이다. 계수가 단순 영점을 가지는 임의의 방정식은 회전점 근방에서 좌표를 다시 잡으면 이 방정식이 된다.
@@ -55,7 +55,7 @@ $$
 여기서 $\Gamma$ 는 [감마 함수](gamma-function.md)다. 수치로는 $\operatorname{Ai}(0) = 0.355028\ldots$ 이고 $\operatorname{Ai}'(0) = -0.258819\ldots$ 다. Taylor 급수는 $y'' = zy$ 를 계수별로 풀면 바로 나온다. $f(z) = \sum_k \frac{z^{3k}}{(3k)!}\prod_{j<k}(3j+1)$ 과 $g(z) = \sum_k \frac{z^{3k+1}}{(3k+1)!}\prod_{j<k}(3j+2)$ 가 각각 $y(0)=1,y'(0)=0$ 과 $y(0)=0,y'(0)=1$ 인 해이고
 
 $$
-\operatorname{Ai}(z) = \operatorname{Ai}(0)\,f(z) + \operatorname{Ai}'(0)\,g(z)
+\operatorname{Ai}(z) = \operatorname{Ai}(0)\thinspace f(z) + \operatorname{Ai}'(0)\thinspace g(z)
 $$
 
 다. 이 급수는 모든 $z$ 에서 수렴하지만 $\lvert z\rvert$ 가 조금만 커져도 항끼리 거대한 상쇄가 일어나 수치적으로는 쓸 수 없다. 큰 $z$ 에서는 수렴하지 않는 점근급수 쪽이 오히려 정확하다는 것이 이 함수의 대표적인 아이러니다.
@@ -65,13 +65,13 @@ $$
 실수 $x$ 에 대해
 
 $$
-\operatorname{Ai}(x) = \frac{1}{\pi}\int_0^{\infty}\cos\!\left(\frac{t^3}{3} + xt\right)dt
+\operatorname{Ai}(x) = \frac{1}{\pi}\int_0^{\infty}\cos\negthinspace\left(\frac{t^3}{3} + xt\right)dt
 $$
 
 이며, 복소평면에서는
 
 $$
-\operatorname{Ai}(z) = \frac{1}{2\pi i}\int_{\mathcal{C}} \exp\!\left(\frac{t^3}{3} - zt\right)dt
+\operatorname{Ai}(z) = \frac{1}{2\pi i}\int_{\mathcal{C}} \exp\negthinspace\left(\frac{t^3}{3} - zt\right)dt
 $$
 
 로 쓴다. 경로 $\mathcal{C}$ 는 $\arg t = -\pi/3$ 방향의 무한대에서 들어와 $\arg t = +\pi/3$ 방향의 무한대로 나간다. 피적분함수가 그 두 부채꼴에서 급격히 감쇠하므로 적분이 수렴한다.
@@ -85,7 +85,7 @@ $$
 이 따라 나온다. 2차원 해공간에 놓인 감쇠해 셋 사이의 유일한 선형관계다. $\operatorname{Bi}$ 는 이 셋의 조합으로
 
 $$
-\operatorname{Bi}(z) = i\,\omega\operatorname{Ai}(\omega z) - i\,\omega^2\operatorname{Ai}(\omega^2 z)
+\operatorname{Bi}(z) = i\thinspace\omega\operatorname{Ai}(\omega z) - i\thinspace\omega^2\operatorname{Ai}(\omega^2 z)
 $$
 
 로 정의되며, 실축에서 실숫값을 가지고 $z \to +\infty$ 에서 지수적으로 증가하는 해다.
@@ -97,23 +97,23 @@ $$
 $x \to +\infty$ 에서 $\zeta = \tfrac23 x^{3/2}$ 로 두면
 
 $$
-\operatorname{Ai}(x) \sim \frac{e^{-\zeta}}{2\sqrt{\pi}\,x^{1/4}}\sum_{k\ge0}\frac{(-1)^k u_k}{\zeta^k},
+\operatorname{Ai}(x) \sim \frac{e^{-\zeta}}{2\sqrt{\pi}\thinspace x^{1/4}}\sum_{k\ge0}\frac{(-1)^k u_k}{\zeta^k},
 \qquad
-\operatorname{Bi}(x) \sim \frac{e^{\zeta}}{\sqrt{\pi}\,x^{1/4}}\sum_{k\ge0}\frac{u_k}{\zeta^k}
+\operatorname{Bi}(x) \sim \frac{e^{\zeta}}{\sqrt{\pi}\thinspace x^{1/4}}\sum_{k\ge0}\frac{u_k}{\zeta^k}
 $$
 
 이고, $x \to -\infty$ 에서 $\xi = \tfrac23\lvert x\rvert^{3/2}$ 로 두면
 
 $$
-\operatorname{Ai}(-\lvert x\rvert) \sim \frac{1}{\sqrt{\pi}\,\lvert x\rvert^{1/4}}\sin\!\left(\xi + \frac{\pi}{4}\right),
+\operatorname{Ai}(-\lvert x\rvert) \sim \frac{1}{\sqrt{\pi}\thinspace\lvert x\rvert^{1/4}}\sin\negthinspace\left(\xi + \frac{\pi}{4}\right),
 \qquad
-\operatorname{Bi}(-\lvert x\rvert) \sim \frac{1}{\sqrt{\pi}\,\lvert x\rvert^{1/4}}\cos\!\left(\xi + \frac{\pi}{4}\right)
+\operatorname{Bi}(-\lvert x\rvert) \sim \frac{1}{\sqrt{\pi}\thinspace\lvert x\rvert^{1/4}}\cos\negthinspace\left(\xi + \frac{\pi}{4}\right)
 $$
 
 다. 계수는 $u_0 = 1$ 과
 
 $$
-u_k = \frac{(6k-5)(6k-3)(6k-1)}{216\,k\,(2k-1)}\,u_{k-1}
+u_k = \frac{(6k-5)(6k-3)(6k-1)}{216\thinspace k\thinspace(2k-1)}\thinspace u_{k-1}
 $$
 
 로 정해진다. 앞인자 $x^{-1/4}$ 는 WKB 해의 $Q^{-1/4}$ 가 $Q = x$ 인 경우이고, 진동 쪽의 $\pi/4$ 는 연결 공식의 위상 이동 그 자체다. 두 방향의 점근이 같은 정함수의 두 얼굴이라는 사실이 연결 공식의 내용 전부다.
@@ -132,7 +132,7 @@ $\arg z = \pi$ 가 anti-Stokes 선이라는 점이 음의 실축에서 해가 �
 이 배치를 함수 관계로 쓴 것이
 
 $$
-\operatorname{Ai}\!\left(z\,e^{\mp 2\pi i/3}\right) = \tfrac12 e^{\pm i\pi/3}\left[\operatorname{Ai}(z) \mp i \operatorname{Bi}(z)\right]
+\operatorname{Ai}\negthinspace\left(z\thinspace e^{\mp 2\pi i/3}\right) = \tfrac12 e^{\pm i\pi/3}\left[\operatorname{Ai}(z) \mp i \operatorname{Bi}(z)\right]
 $$
 
 이며, 계수 $\tfrac12$ 과 위상 $\pi/3$ 이 이 문제의 Stokes 상수다. $\operatorname{Ai}$ 하나만 알면 나머지가 전부 결정된다.
@@ -162,8 +162,8 @@ $$
 같은 보편성이 미분방정식이 아니라 적분 쪽에서도 나타난다. [정상위상법](stationary-phase.md)은 정상점마다 $\lambda^{-1/2}$ 크기의 기여를 주지만 $\varphi''(x_0)=0$ 이면 그 공식이 무너진다. 매개변수 $\mu$ 를 따라 정상점 두 개가 다가와 충돌하는 상황이 전형적이고, 그 국소 표준형이 3 차식이다.
 
 $$
-I(\lambda,\mu)=\int_{-\infty}^{\infty}e^{i\lambda(x^3/3-\mu x)}\,dx
-=\frac{2\pi}{\lambda^{1/3}}\operatorname{Ai}\!\big(-\mu\lambda^{2/3}\big)
+I(\lambda,\mu)=\int_{-\infty}^{\infty}e^{i\lambda(x^3/3-\mu x)}\thinspace dx
+=\frac{2\pi}{\lambda^{1/3}}\operatorname{Ai}\negthinspace\big(-\mu\lambda^{2/3}\big)
 $$
 
 $x=\lambda^{-1/3}s$ 로 두면 그대로 적분 표현이 되어 나오는 **정확한 항등식**이다. 여기서 두 가지를 읽는다.
@@ -174,7 +174,7 @@ $x=\lambda^{-1/3}s$ 로 두면 그대로 적분 표현이 되어 나오는 **정
 일반적인 위상 $\varphi(x,\mu)$ 에 대해서도 $\varphi$ 를 3 차 표준형으로 옮기는 좌표변환을 잡으면
 
 $$
-I\sim 2\pi e^{i\lambda\eta}\Big[\frac{p_0}{\lambda^{1/3}}\operatorname{Ai}\big(\lambda^{2/3}\zeta\big)+\frac{i\,q_0}{\lambda^{2/3}}\operatorname{Ai}'\big(\lambda^{2/3}\zeta\big)\Big]
+I\sim 2\pi e^{i\lambda\eta}\Big[\frac{p_0}{\lambda^{1/3}}\operatorname{Ai}\big(\lambda^{2/3}\zeta\big)+\frac{i\thinspace q_0}{\lambda^{2/3}}\operatorname{Ai}'\big(\lambda^{2/3}\zeta\big)\Big]
 $$
 
 가 되고, $\zeta$ 는 두 임계값의 차이 $\tfrac43|\zeta|^{3/2}=|\varphi(x_1)-\varphi(x_2)|$ 로 정해진다. 이것이 Chester–Friedman–Ursell 의 균등 점근이다. 이 $\zeta$ 는 위 「두 안장점의 합류」에서 본 작용 차이 $A$ 와 같은 양이고, 미분방정식 쪽 회전점과 적분 쪽 퇴화 정상점이 같은 대상의 두 얼굴이라는 점이 여기서 드러난다.

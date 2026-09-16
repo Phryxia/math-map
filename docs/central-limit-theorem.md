@@ -19,9 +19,9 @@ n으로 나누면 요동이 죽어 상수만 남고, 나누지 않으면 요동�
 평균 m, 분산 v를 가진 정규분포의 밀도와 표준정규분포의 누적분포함수는 다음과 같다.
 
 $$
-f(t)=\frac{1}{\sqrt{2\pi v}}\exp\!\left(-\frac{(t-m)^2}{2v}\right),
+f(t)=\frac{1}{\sqrt{2\pi v}}\exp\negthinspace\left(-\frac{(t-m)^2}{2v}\right),
 \qquad
-\Phi(x)=\int_{-\infty}^{x}\frac{1}{\sqrt{2\pi}}e^{-u^2/2}\,du
+\Phi(x)=\int_{-\infty}^{x}\frac{1}{\sqrt{2\pi}}e^{-u^2/2}\thinspace du
 $$
 
 ## 분포수렴
@@ -37,7 +37,7 @@ $$
 확률변수 $X$ 의 [특성함수](characteristic-functions.md)는 다음으로 정의한다. 항상 존재하고, 분포를 유일하게 결정한다.
 
 $$
-\varphi_X(t)=\mathbb E\!\left[e^{itX}\right]
+\varphi_X(t)=\mathbb E\negthinspace\left[e^{itX}\right]
 $$
 
 ## Lindeberg–Lévy 중심극한정리
@@ -46,7 +46,7 @@ $X_1,X_2,\dots$ 를 i.i.d. 확률변수열이라 하고 기댓값 $\mu$ 와 분�
 
 $$
 \frac{1}{\sigma\sqrt n}\sum_{i=1}^{n}(X_i-\mu)
-=\frac{\sqrt n\,(\overline X_n-\mu)}{\sigma}
+=\frac{\sqrt n\thinspace(\overline X_n-\mu)}{\sigma}
 \ \xrightarrow{\ d\ }\ N(0,1)
 $$
 
@@ -65,8 +65,8 @@ $$
 독립성에서 합의 특성함수는 곱이므로 표준화한 합의 특성함수는 다음과 같다.
 
 $$
-\varphi_{S_n/\sqrt n}(t)=\left[\varphi_Z\!\left(\frac{t}{\sqrt n}\right)\right]^{n}
-=\left[1-\frac{t^2}{2n}+o\!\left(\frac1n\right)\right]^{n}
+\varphi_{S_n/\sqrt n}(t)=\left[\varphi_Z\negthinspace\left(\frac{t}{\sqrt n}\right)\right]^{n}
+=\left[1-\frac{t^2}{2n}+o\negthinspace\left(\frac1n\right)\right]^{n}
 \ \xrightarrow[n\to\infty]{}\ e^{-t^2/2}
 $$
 
@@ -79,7 +79,7 @@ $$
 $$
 \forall \varepsilon>0:\quad
 \lim_{n\to\infty}\frac{1}{s_n^2}\sum_{i=1}^{n}
-\mathbb E\!\left[(X_i-\mu_i)^2\,\mathbf 1\{|X_i-\mu_i|>\varepsilon s_n\}\right]=0
+\mathbb E\negthinspace\left[(X_i-\mu_i)^2\thinspace\mathbf 1\lbrace|X_i-\mu_i|>\varepsilon s_n\rbrace\right]=0
 $$
 
 이 조건 아래 표준화한 합은 표준정규분포로 분포수렴한다(Lindeberg–Feller). 조건이 깨지는 예: $X_1$ 이 거대한 분산을 갖고 나머지가 작으면 합의 분포는 $X_1$ 의 분포를 닮은 채 남는다.
@@ -89,7 +89,7 @@ $$
 3 차 절대적률이 유한하면 수렴 속도를 정량화할 수 있다. $F_n$ 을 표준화한 합의 누적분포함수, $\rho$ 를 중심화한 $X$ 의 3 차 절대적률이라 하면 절대상수 $C$ 가 존재해 다음이 성립한다.
 
 $$
-\sup_{x\in\mathbb R}\left|F_n(x)-\Phi(x)\right|\ \le\ \frac{C\,\rho}{\sigma^3\sqrt n}
+\sup_{x\in\mathbb R}\left|F_n(x)-\Phi(x)\right|\ \le\ \frac{C\thinspace\rho}{\sigma^3\sqrt n}
 $$
 
 i.i.d.인 경우 알려진 최선의 상한은 $C\le0.4690$ 이고(Shevtsova, 2011), Esseen이 준 하한은 약 0.4097이다[^3]. 최적 상수는 2026년 9월 현재도 결정되지 않았다. 실용적 결론은 오차가 $n$ 의 제곱근의 역수에 비례하고, 비대칭이 심한 분포($\rho$ 가 큰 분포)일수록 더 큰 n이 필요하다는 것이다.
@@ -117,7 +117,7 @@ $\sigma$ 를 $s$ 로 바꿔도 되는 근거는 $s$ 가 $\sigma$ 로 확률수�
 n번 시행에서 성공 확률 p인 이항분포는 평균 np, 분산 np(1−p)이므로 다음 근사를 쓴다(de Moivre–Laplace).
 
 $$
-P(S_n\le k)\approx\Phi\!\left(\frac{k+\tfrac12-np}{\sqrt{np(1-p)}}\right)
+P(S_n\le k)\approx\Phi\negthinspace\left(\frac{k+\tfrac12-np}{\sqrt{np(1-p)}}\right)
 $$
 
 0.5를 더하는 연속성 보정은 이산 분포를 연속 분포로 바꾸는 데서 오는 체계적 편향을 줄인다. $p$ 가 0 이나 1 에 가까우면 $\rho$ 가 커져 정규근사가 나빠지고, 이때는 Poisson 근사가 낫다.

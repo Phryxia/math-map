@@ -23,7 +23,7 @@ $f(a)$ 를 오차 $\varepsilon$ 안에서 알고 싶다고 하자. 연속이라�
 거리 공간 $(X, d_X)$ 와 $(Y, d_Y)$ 와 함수 $f : X \to Y$ 와 점 $a \in X$ 에 대해 다음이 성립하면 $f$ 가 $a$ 에서 연속이라 한다.
 
 $$
-\forall\varepsilon>0\;\exists\delta>0\;\forall x\in X:\ d_X(x,a)<\delta\Rightarrow d_Y(f(x),f(a))<\varepsilon
+\forall\varepsilon>0\thickspace\exists\delta>0\thickspace\forall x\in X:\ d_X(x,a)<\delta\Rightarrow d_Y(f(x),f(a))<\varepsilon
 $$
 
 모든 점에서 연속이면 연속함수다. 모든 $a$ 에 대해 같은 $\delta$ 를 쓸 수 있으면 균등연속이다.
@@ -59,7 +59,7 @@ $$
 임의의 실수 $a$ 에서 $x \mapsto x^2$ 가 연속임을 직접 보이자. 입력 차이를 1 미만으로 제한하면 다음을 얻는다.
 
 $$
-\lvert x^2-a^2\rvert=\lvert x-a\rvert\,\lvert x+a\rvert\le\lvert x-a\rvert\big(\lvert x-a\rvert+2\lvert a\rvert\big)<\lvert x-a\rvert(1+2\lvert a\rvert)
+\lvert x^2-a^2\rvert=\lvert x-a\rvert\thinspace\lvert x+a\rvert\le\lvert x-a\rvert\big(\lvert x-a\rvert+2\lvert a\rvert\big)<\lvert x-a\rvert(1+2\lvert a\rvert)
 $$
 
 따라서 주어진 $\varepsilon$ 에 대해 다음 $\delta$ 를 택하면 된다.

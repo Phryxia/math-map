@@ -73,7 +73,7 @@ $$
 가장 오래된 표현은 Burau 표현이다. 감소 Burau $\bar\rho\colon B_n\to\mathrm{GL}_{n-1}(\mathbb Z[t^{\pm1}])$ 를 쓰면 Alexander 다항식이 행렬식 하나로 나온다.
 
 $$
-\Delta_{\hat\beta}(t)\;\doteq\;\det\bigl(I-\bar\rho(\beta)\bigr)\cdot\frac{1-t}{1-t^{n}}
+\Delta_{\hat\beta}(t)\thickspace\doteq\thickspace\det\bigl(I-\bar\rho(\beta)\bigr)\cdot\frac{1-t}{1-t^{n}}
 $$
 
 $\doteq$ 는 $\pm t^k$ 배를 무시한다는 뜻이다. 수치로 확인해 보자.
@@ -133,7 +133,7 @@ for (const t of [1.3, 2.0, 3.0])
 ## 땋임군
 
 $$
-B_n=\bigl\langle \sigma_1,\dots,\sigma_{n-1}\;\bigm|\;\sigma_i\sigma_j=\sigma_j\sigma_i\ (|i-j|\ge2),\ \ \sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}\bigr\rangle
+B_n=\bigl\langle \sigma_1,\dots,\sigma_{n-1}\thickspace\bigm|\thickspace\sigma_i\sigma_j=\sigma_j\sigma_i\ (|i-j|\ge2),\ \ \sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}\bigr\rangle
 $$
 
 $\sigma_i\mapsto(i\ i{+}1)$ 은 전사 준동형 $B_n\to S_n$ 을 주고 그 핵을 **순수 땋임군** $P_n$ 이라 한다. $P_n$ 은 자유군들의 반직접곱으로 분해되고(Artin), 그 결과 $B_n$ 은 꼬임 없는 무한군이며 낱말 문제가 다항시간에 풀린다.
@@ -158,7 +158,7 @@ $$
 대수족 $\lbrace A_n\rbrace$ 과 준동형 $\rho_n\colon B_n\to A_n^\times$ 과 선형범함수 $\mathrm{tr}_n\colon A_n\to R$ 이 위 두 조건을 만족하면 $\mathrm{tr}$ 을 Markov 자취라 한다. 이때 $w(\beta)$ 를 지수합, $n$ 을 가닥 수라 하고 적절한 상수 $a,b$ 를 잡으면
 
 $$
-X(\hat\beta)=a^{\,w(\beta)}b^{\,n-1}\,\mathrm{tr}_n\bigl(\rho_n(\beta)\bigr)
+X(\hat\beta)=a^{\thinspace w(\beta)}b^{\thinspace n-1}\thinspace\mathrm{tr}_n\bigl(\rho_n(\beta)\bigr)
 $$
 
 가 링크 불변량이 된다. $TL_n$ 과 Jones 자취를 넣으면 Jones 다항식, Hecke 대수 $H_n(q)$ 와 Ocneanu 자취를 넣으면 HOMFLY 다항식이 나온다.

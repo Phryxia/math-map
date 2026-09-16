@@ -44,7 +44,7 @@ graph TD
 3. 정상 정규증분: $s<t$ 이면 증분의 분포가 다음과 같다.
 
 $$
-B_t-B_s\sim N(0,\,t-s)
+B_t-B_s\sim N(0,\thinspace t-s)
 $$
 
 4. 거의 모든 표본점에서 $t \mapsto B_t$ 가 연속이다.
@@ -56,7 +56,7 @@ $$
 $B_t$ 의 밀도는 열핵과 같다.
 
 $$
-p_t(x)=\frac{1}{\sqrt{2\pi t}}\exp\!\Big(-\frac{x^2}{2t}\Big)
+p_t(x)=\frac{1}{\sqrt{2\pi t}}\exp\negthinspace\Big(-\frac{x^2}{2t}\Big)
 $$
 
 이 함수는 $\partial_t p = \tfrac12 \partial_x^2 p$ 를 만족한다. Brown 운동과 열방정식이 같은 대상의 두 얼굴이라는 사실이 여기서 시작된다.
@@ -68,7 +68,7 @@ $$
 자연스러운 filtration 에 대해 다음 세 과정이 모두 martingale 이다.
 
 $$
-B_t,\qquad B_t^2-t,\qquad \exp\!\Big(\theta B_t-\frac{\theta^2t}{2}\Big)
+B_t,\qquad B_t^2-t,\qquad \exp\negthinspace\Big(\theta B_t-\frac{\theta^2t}{2}\Big)
 $$
 
 첫째는 독립증분과 평균 0 에서, 둘째는 증분의 분산이 $t-s$ 라는 사실에서, 셋째는 정규분포의 적률생성함수에서 나온다. 둘째 것이 "2차변동이 $t$" 라는 진술의 martingale 판이고, 셋째 지수 martingale 은 측도변환과 큰 편차 계산의 출발점이다.
@@ -80,7 +80,7 @@ $$
 정지시간 $\tau$ 에 대해 $(B_{\tau+t} - B_\tau)_{t \ge 0}$ 은 다시 Brown 운동이고 $\tau$ 까지의 정보와 독립이다. 이 성질과 대칭성을 결합하면 최대값의 분포가 나온다. 수준 $a > 0$ 에 처음 닿는 시각 이후의 경로를 뒤집어도 같은 분포이므로 다음이 성립한다.
 
 $$
-P\Big(\max_{0\le s\le t}B_s\ge a\Big)=2\,P(B_t\ge a)
+P\Big(\max_{0\le s\le t}B_s\ge a\Big)=2\thinspace P(B_t\ge a)
 $$
 
 따라서 최대값은 $|B_t|$ 와 같은 분포를 가진다. 수준 $a$ 의 도달시각 밀도, 원점 회귀 시각의 분포, 두 흡수벽 사이의 탈출 확률이 모두 이 한 줄에서 따라 나온다.
@@ -116,7 +116,7 @@ $$
 2차변동이 살아 있으므로 $dB_t$ 에 대한 적분은 보통의 Riemann–Stieltjes 적분으로 정의되지 않는다. 대신 적분을 martingale 의 극한으로 정의하면 Itô 적분이 되고, 연쇄법칙에 2차항이 남는다.
 
 $$
-df(B_t)=f'(B_t)\,dB_t+\tfrac12 f''(B_t)\,dt
+df(B_t)=f'(B_t)\thinspace dB_t+\tfrac12 f''(B_t)\thinspace dt
 $$
 
 이 보정항이 Itô 공식의 전부이며, 확산 과정, 금융의 옵션 가격 모형, 물리의 Langevin 방정식이 모두 이 위에 세워진다.

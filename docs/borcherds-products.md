@@ -7,7 +7,7 @@
 Borcherds 는 이 계수들이 **무한곱의 지수**가 될 수 있음을 발견했다. 무게 $1-n/2$ 의 약정칙 형식
 
 $$
-f=\sum_{m\gg-\infty}c(m)\,q^m
+f=\sum_{m\gg-\infty}c(m)\thinspace q^m
 $$
 
 이 주어지면, 계수 $c(m)$ 을 지수로 삼은 무한곱이 서명 $(2,n)$ 직교군의 자기동형 형식이 된다. 가장 유명한 경우가 괴물 Lie 대수의 분모 공식이다.
@@ -64,7 +64,7 @@ Ramanujan 의 $\tau$ 가 그대로 나온다. Borcherds 곱이 하는 일은 이
 보통의 theta 올림은
 
 $$
-\Phi(v,f)=\int_{\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H}f(\tau)\,\overline{\Theta(\tau,v)}\ \frac{du\,dv}{v^2}
+\Phi(v,f)=\int_{\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H}f(\tau)\thinspace\overline{\Theta(\tau,v)}\ \frac{du\thinspace dv}{v^2}
 $$
 
 꼴이고, $f$ 가 첨점형식이면 수렴한다. $f$ 가 첨점에서 극을 가지면 발산한다. 그런데 **발산이야말로 원하는 것**이다.
@@ -72,7 +72,7 @@ $$
 절단한 영역 $\mathcal F_T$ 위에서 적분하고 $T\to\infty$ 에서 발산하는 부분을 빼면 유한한 $\Phi$ 가 남는다. 이 $\Phi$ 는 매끄러운 함수가 아니라 특정 부분다양체를 따라 로그 특이점을 갖는다. 특이점의 위치와 무게는 $f$ 의 **주요부**, 곧 음수 차수 계수 $c(-m)$ 이 결정한다.
 
 $$
-\mathrm{div}\bigl(\Psi_f\bigr)=\sum_{m>0}c(-m)\,Z(m),
+\mathrm{div}\bigl(\Psi_f\bigr)=\sum_{m>0}c(-m)\thinspace Z(m),
 \qquad \Psi_f=\text{Borcherds 곱}
 $$
 
@@ -93,7 +93,7 @@ graph TD
 이 대응이 양방향이다. 어떤 Heegner 인자를 갖는 모듈러 형식이 존재하려면, 그 인자를 주요부로 갖는 약정칙 형식이 있어야 한다. 그리고 약정칙 형식의 주요부가 만족해야 하는 조건은 **첨점형식과의 짝이 0 이 되는 것**뿐이다(Serre 쌍대성).
 
 $$
-\sum_{m>0}c(-m)\,a_g(m)=0\quad\text{for all }g\in S_{1+n/2}
+\sum_{m>0}c(-m)\thinspace a_g(m)=0\quad\text{for all }g\in S_{1+n/2}
 $$
 
 결과적으로 "인자가 모듈러 형식의 인자인가"라는 기하 문제가 **유한 개의 선형 조건**으로 환원된다. Gross–Kohnen–Zagier 정리의 Borcherds 판 증명이 이 관찰에서 나온다.
@@ -115,7 +115,7 @@ $$
 가 무게 $c(0,0)/2$ 의 직교군 $\mathrm O(2,n)$ 자기동형 형식이고, 근방에서
 
 $$
-\Psi_f(v)=q^{\rho}\prod_{\lambda>0}\bigl(1-q^{\lambda}\bigr)^{c(\lambda,\,\langle\lambda,\lambda\rangle/2)}
+\Psi_f(v)=q^{\rho}\prod_{\lambda>0}\bigl(1-q^{\lambda}\bigr)^{c(\lambda,\thinspace\langle\lambda,\lambda\rangle/2)}
 $$
 
 꼴의 무한곱으로 전개된다. 인자는 $\sum_{m>0}c(-m)Z(m)$ 이다.
@@ -152,7 +152,7 @@ Borcherds 곱은 **인자가 Heegner 인자인 형식**만 만든다. 일반적�
 모듈러 곡선 $X_0(N)$ 의 Jacobian 안에서 Heegner 점들 $y_m$ 을 모으면
 
 $$
-\sum_{m\ge1}y_m\,q^m
+\sum_{m\ge1}y_m\thinspace q^m
 $$
 
 이 무게 $3/2$ 의 모듈러 형식처럼 행동한다. 원래 증명은 높이 계산이었는데, Borcherds 는 위의 선형 조건만으로 이를 다시 증명했다. 어떤 $\sum c(-m)Z(m)$ 이 주인자(principal divisor)인지를 알면, Jacobian 안의 관계식이 전부 읽히기 때문이다. **기하적 관계식이 모듈러 형식 공간의 쌍대성으로 환원된다.**

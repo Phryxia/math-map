@@ -7,7 +7,7 @@ Galois 확대 $L/K$ 에서 분기하지 않는 소 아이디얼 $\mathfrak p$ �
 이 번역이 얼마나 고르게 일어나는가. Chebotarev 의 답은 가장 단순한 형태다. **완전히 균등하다.**
 
 $$
-\delta\Big(\Big\{\mathfrak p:\Big[\tfrac{L/K}{\mathfrak p}\Big]=C\Big\}\Big)=\frac{|C|}{[L:K]}
+\delta\Big(\Big\lbrace\mathfrak p:\Big[\tfrac{L/K}{\mathfrak p}\Big]=C\Big\rbrace\Big)=\frac{|C|}{[L:K]}
 $$
 
 Galois 군에서 원소를 무작위로 뽑는 것과 소수를 무작위로 뽑아 Frobenius 를 보는 것이 구별되지 않는다는 뜻이다. [유체론](class-field-theory.md)이 아벨 확대에서 Frobenius가 무엇인지를 알려 주었다면, 이 정리는 그것이 어떻게 분포하는지를 알려 준다.
@@ -64,7 +64,7 @@ $$
 소 아이디얼의 집합 $S$ 에 대해 두 가지 밀도를 쓴다.
 
 $$
-\text{자연밀도}\quad\lim_{x\to\infty}\frac{\#\{\mathfrak p\in S:N\mathfrak p\le x\}}{\#\{\mathfrak p:N\mathfrak p\le x\}},
+\text{자연밀도}\quad\lim_{x\to\infty}\frac{\char35{}\lbrace\mathfrak p\in S:N\mathfrak p\le x\rbrace}{\char35{}\lbrace\mathfrak p:N\mathfrak p\le x\rbrace},
 \qquad
 \text{Dirichlet 밀도}\quad\lim_{s\to1^+}\frac{\sum_{\mathfrak p\in S}N\mathfrak p^{-s}}{\log\frac1{s-1}}
 $$
@@ -75,7 +75,7 @@ $$
 
 > **Chebotarev 밀도 정리.** $L/K$ 가 유한 Galois 확대이고 $G=\mathrm{Gal}(L/K)$ 이고 $C\subseteq G$ 가 켤레류면
 > $$
-> \delta\Big(\Big\{\mathfrak p \text{ 불분기}:\Big[\tfrac{L/K}{\mathfrak p}\Big]=C\Big\}\Big)=\frac{|C|}{|G|}
+> \delta\Big(\Big\lbrace\mathfrak p \text{ 불분기}:\Big[\tfrac{L/K}{\mathfrak p}\Big]=C\Big\rbrace\Big)=\frac{|C|}{|G|}
 > $$
 > 이다. 자연밀도로도 성립한다.
 
@@ -95,7 +95,7 @@ $C=\lbrace 1\rbrace$ 인 경우가 특히 자주 쓰인다. $L$ 에서 완전분
 밀도는 극한이라 유한 구간에서의 오차는 말해 주지 않는다. 효과적인 형태, 곧 "밀도가 안정되기까지 얼마나 큰 $x$ 가 필요한가" 는 훨씬 어렵다. 무조건적인 결과는 판별식에 지수적으로 의존하고, 일반 Riemann 가설을 가정하면
 
 $$
-\pi_C(x)=\frac{|C|}{|G|}\mathrm{Li}(x)+O\Big(\frac{|C|}{|G|}\sqrt x\log(d_L\,x^{[L:\mathbb Q]})\Big)
+\pi_C(x)=\frac{|C|}{|G|}\mathrm{Li}(x)+O\Big(\frac{|C|}{|G|}\sqrt x\log(d_L\thinspace x^{[L:\mathbb Q]})\Big)
 $$
 
 로 개선된다. 실제 계산에서는 이 차이가 결정적이다. 예를 들어 두 수체가 같은지 판정하려고 분해형을 비교할 때, 몇 개의 소수까지 확인해야 확신할 수 있는지가 여기에 달렸다.

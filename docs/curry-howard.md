@@ -42,7 +42,7 @@ $A \vee \neg A$ 의 증명은 "왼쪽" 또는 "오른쪽" 이라는 답을 내�
 $$
 \frac{(x:\sigma)\in\Gamma}{\Gamma\vdash x:\sigma}\qquad
 \frac{\Gamma,x:\sigma\vdash t:\tau}{\Gamma\vdash\lambda x.t:\sigma\to\tau}\qquad
-\frac{\Gamma\vdash t:\sigma\to\tau\quad\Gamma\vdash u:\sigma}{\Gamma\vdash t\,u:\tau}
+\frac{\Gamma\vdash t:\sigma\to\tau\quad\Gamma\vdash u:\sigma}{\Gamma\vdash t\thinspace u:\tau}
 $$
 
 ## 자연연역과의 대조
@@ -62,7 +62,7 @@ $$
 $\to$ 도입 바로 뒤에 $\to$ 제거가 오는 우회(절단)를 없애는 변환은 다음과 같다.
 
 $$
-(\lambda x.t)\,u\ \rightsquigarrow\ t[x:=u]
+(\lambda x.t)\thinspace u\ \rightsquigarrow\ t[x:=u]
 $$
 
 왼쪽은 "가정을 세워 $B$ 를 얻은 뒤 그 가정을 실제 증명으로 채운" 상황이고, 오른쪽은 그 대입을 미리 수행한 직접 증명이다. 증명을 간소화하는 일과 프로그램을 한 걸음 실행하는 일이 같은 조작이다.
