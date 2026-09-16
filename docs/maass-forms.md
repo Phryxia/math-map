@@ -15,7 +15,7 @@ $$
 \Delta u=\lambda u,\qquad \lambda=\tfrac14+r^2
 $$
 
-두 세계를 가르는 것이 딱 하나다. **정칙 첨점형식은 명시적으로 구성되고, Maass 첨점형식은 하나도 명시적으로 알려져 있지 않다.** $\Delta$ 와 무게 $12$ 를 알면 $\Delta(z)=q\prod(1-q^n)^{24}$ 를 쓸 수 있지만, $\mathrm{SL}_2(\mathbb Z)$ 의 첫 Maass 고윳값 $r_1=9.533695\dots$ 는 오직 수치 계산으로만 얻어진다. 유리수인지, 초월수인지조차 모른다.
+정칙 첨점형식은 명시적으로 구성되지만 Maass 첨점형식에는 그런 구성이 없다. $\Delta$ 와 무게 $12$ 를 알면 $\Delta(z)=q\prod(1-q^n)^{24}$ 를 쓸 수 있지만, $\mathrm{SL}_2(\mathbb Z)$ 의 첫 Maass 고윳값 $r_1=9.533695\dots$ 는 수치 계산으로 높은 정밀도까지 구해졌고, 그 값이 만족하는 대수적 관계는 알려진 것이 없다[^5].
 
 그런데도 이것들이 존재한다는 것은 안다. [Selberg 대각합 공식](selberg-trace-formula.md)이 개별 고윳값을 하나도 주지 않으면서 그 개수를 세어 주기 때문이다. 존재는 알고 정체는 모르는 대상이고, $L$ 함수와 Langlands 강령에서 정칙 형식과 정확히 같은 자격으로 등장한다.
 
@@ -45,7 +45,7 @@ $\tfrac14$ 는 쌍곡평면 $\mathbb H$ 자체의 Laplace 스펙트럼의 바닥
 
 > **Selberg 의 $1/4$ 추측.** 합동 부분군 $\Gamma_0(N)$ 에 대해 모든 Maass 첨점형식의 고윳값이 $\lambda\ge\tfrac14$ 다.
 
-정칙 형식 쪽에서 Deligne 이 증명한 Ramanujan–Petersson 추측 $|a_p|\le2p^{(k-1)/2}$ 의 **아르키메데스 자리 판본**이다. 유한 자리의 Satake 매개변수가 단위원 위에 있어야 한다는 조건이, 무한 자리에서는 $r$ 이 실수여야 한다는 조건으로 나타난다. 유한 자리 쪽은 Weil 추측으로 해결되었지만 무한 자리 쪽은 열려 있다. 현재까지의 최선은 $\lambda\ge\tfrac14-(\tfrac7{64})^2$ (Kim–Sarnak) 이다.
+정칙 형식 쪽에서 Deligne 이 증명한 Ramanujan–Petersson 추측 $|a_p|\le2p^{(k-1)/2}$ 의 **아르키메데스 자리 판본**이다. 유한 자리의 Satake 매개변수가 단위원 위에 있어야 한다는 조건이, 무한 자리에서는 $r$ 이 실수여야 한다는 조건으로 나타난다. 유한 자리 쪽은 Weil 추측으로 해결되었고 무한 자리 쪽은 증명되지 않았다[^1]. 현재까지의 최선은 $\lambda\ge\tfrac14-(\tfrac7{64})^2$ 다[^2].
 
 ```mermaid
 graph TD
@@ -156,7 +156,7 @@ $\Gamma\backslash\mathbb H$ 는 음곡률 곡면이므로 측지선 흐름이 �
 
 > **양자 유일 에르고딕성 (Lindenstrauss 2006, Soundararajan–Holowinsky 2010).** $\mathrm{SL}_2(\mathbb Z)$ 의 Hecke–Maass 형식에 대해 $|u_j(z)|^2d\mu$ 가 $\lambda_j\to\infty$ 에서 균등측도로 약수렴한다.
 
-곧 고유함수가 곡면 위에 고르게 퍼지고, 어느 곳에도 몰리지 않는다. Lindenstrauss 는 에르고딕 이론(측도 강직성)으로, Soundararajan–Holowinsky 는 $L$ 함수의 부분볼록 경계로 증명했다. 같은 정리에 대한 두 증명이 완전히 다른 분야에서 나온 드문 예다. 일반 음곡률 곡면에서는 여전히 열려 있고, Hecke 대칭이 결정적으로 쓰인다.
+곧 고유함수가 곡면 위에 고르게 퍼지고, 어느 곳에도 몰리지 않는다. Lindenstrauss 는 에르고딕 이론(측도 강직성)으로, Soundararajan–Holowinsky 는 $L$ 함수의 부분볼록 경계로 증명했다. 두 증명 모두 Hecke 대칭을 쓴다. 산술적이지 않은 일반 음곡률 곡면에 대한 대응 진술은 Rudnick–Sarnak 의 추측으로 남아 있다[^3].
 
 ## Artin 추측과의 연결
 
@@ -165,9 +165,16 @@ $\Gamma\backslash\mathbb H$ 는 음곡률 곡면이므로 측지선 흐름이 �
 - **홀수** 곧 $\det\rho(c)=-1$ 인 경우는 무게 1 의 정칙 첨점형식에 대응한다. Khare–Wintenberger 의 Serre 추측 증명으로 해결되었다.
 - **짝수** 곧 $\det\rho(c)=+1$ 인 경우는 **고윳값 $\lambda=\tfrac14$ 인 Maass 형식**에 대응한다.
 
-짝수 경우가 정확히 $\tfrac14$ 라는 문턱 위에 앉는다. 대응하는 Maass 형식이 $r=0$ 이어서 온도적이면서 경계에 있는 것이다. 이 경우는 부분적으로만 알려져 있고(Langlands, Tunnell 의 가해 경우), 일반적으로는 열려 있다. **정칙 형식으로는 절대 잡을 수 없는 Galois 표현이 있다**는 점이 Maass 형식을 빠뜨릴 수 없게 만든다.
+짝수 경우가 정확히 $\tfrac14$ 라는 문턱 위에 앉는다. 대응하는 Maass 형식이 $r=0$ 이어서 온도적이면서 경계에 있는 것이다. 상이 가해군인 경우는 Langlands 와 Tunnell 이 해결했고, 일반적인 경우는 증명되지 않았다[^4]. 정칙 형식으로 잡히지 않는 Galois 표현이 여기에 있다.
 
 이 대응에서 나오는 Maass 형식들은 예외적으로 계수가 명시적이다. Galois 표현의 지표값이 그대로 계수가 되기 때문이다. 알려진 Maass 형식이 하나도 없다는 앞의 말은 이런 "가짜" 예를 뺀 것이고, 일반적인 Maass 형식은 여전히 수치적으로만 접근된다.
+
+[^1]: A. Selberg, "On the estimation of Fourier coefficients of modular forms", Proceedings of Symposia in Pure Mathematics VIII (1965), 1–15. $\lambda\ge\tfrac14$ 추측의 원 진술이다.
+[^2]: H. Kim, "Functoriality for the exterior square of $\mathrm{GL}\_4$ and the symmetric fourth of $\mathrm{GL}\_2$", Journal of the AMS 16 (2003), 139–183. $\tfrac14-(\tfrac7{64})^2$ 한계는 H. Kim 과 P. Sarnak 의 부록 2 에 있다.
+[^3]: Z. Rudnick, P. Sarnak, "The behaviour of eigenstates of arithmetic hyperbolic manifolds", Communications in Mathematical Physics 161 (1994), 195–213. 일반 음곡률 다양체에 대한 양자 유일 에르고딕성 추측이 여기서 제기되었다.
+[^4]: J. Tunnell, "Artin's conjecture for representations of octahedral type", Bulletin of the AMS 5 (1981), 173–175. 가해 상을 갖는 2 차원 표현에 대한 결과이고, 일반 경우가 남아 있음을 서론이 밝힌다.
+
+[^5]: A. Booker, A. Strömbergsson, A. Venkatesh, "Effective computation of Maass cusp forms", International Mathematics Research Notices (2006). 고윳값을 엄밀한 오차 범위와 함께 계산하는 방법과 $\mathrm{SL}\_2(\mathbb Z)$ 의 첫 값들을 준다.
 
 # 연관 문서
 
