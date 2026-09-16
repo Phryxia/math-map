@@ -166,7 +166,7 @@ $$
 
 ## Burau 표현의 충실성
 
-$B_3$ 에서 Burau 표현은 충실하고 $n\ge5$ 에서는 충실하지 않다(Bigelow, Long–Paton). $n=4$ 는 열려 있다. 충실하지 않다는 것은 Alexander 다항식이 매듭을 완전히 구별하지 못한다는 사실의 대수적 판본이다.
+$B_3$ 에서 Burau 표현은 충실하고 $n\ge5$ 에서는 충실하지 않다(Bigelow, Long–Paton). $n=4$ 에서 충실한지는 알려져 있지 않다[^2]. 충실하지 않은 원소는 Alexander 다항식이 자명한 값을 주는 닫힌 땋임을 낳으므로, 이 다항식은 링크를 완전히 구별하지 못한다.
 
 Lawrence–Krammer 표현은 모든 $n$ 에 대해 충실함이 증명되어(Bigelow, Krammer) 땋임군이 선형군임이 확정되었다. 사상류군 가운데 선형성이 알려진 드문 예다.
 
@@ -200,6 +200,7 @@ $\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ 는 Yang–Baxte
 $B_n$ 이 구멍 뚫린 원판의 사상류군이라는 사실이 [곡면의 분류](classification-of-surfaces.md)와 이어진다. 땋임의 Nielsen–Thurston 분류(주기적, 가약, 유사 Anosov)가 매듭 보완공간의 기하화와 대응하고, 유사 Anosov 땋임의 팽창률이 매듭의 쌍곡 부피와 연결된다.
 
 [^1]: J. Birman, *Braids, Links, and Mapping Class Groups*, Ann. of Math. Studies 82 (1974) 가 표준 참고서다. Markov 정리의 현대적 증명은 P. Traczyk 과 N. Weinberg 의 짧은 논법이 널리 쓰인다. 선형성은 S. Bigelow, *Braid groups are linear*, J. Amer. Math. Soc. **14** (2001) 와 D. Krammer, *Braid groups are linear*, Ann. of Math. **155** (2002).
+[^2]: S. Bigelow, *The Burau representation is not faithful for n = 5*, Geometry & Topology **3** (1999), 397–404. 이 논문이 다섯 가닥의 경우를 해결하면서 네 가닥은 미해결로 남는다고 적었다.
 
 # 연관 문서
 

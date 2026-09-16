@@ -131,13 +131,13 @@ $$
 
 ## Lang 의 하한 추측
 
-비틀림이 아닌 점의 높이에 0 이 아닌 하한이 있는지는 미해결이다. Lang 은 도체에 비례하는 하한
+Lang 은 비틀림이 아닌 점의 표준 높이에 최소판별식으로 주어지는 하한
 
 $$
-\hat h(P)\ \gg\ \log|\Delta_E|
+\hat h(P)\ \gg\ \log\vert\Delta_E\vert
 $$
 
-을 추측했고, $\gg$ 의 상수가 곡선에 의존하지 않아야 한다. 이 추측이 참이면 순위가 큰 곡선의 조절자가 아래로 유계가 되어 BSD 선행계수의 크기를 통제할 수 있다. 부분 결과만 알려져 있다.
+을 추측했다[^1]. $\gg$ 의 상수는 곡선에 의존하지 않아야 한다. 이 추측이 참이면 순위가 큰 곡선의 조절자가 아래로 유계가 되어 BSD 선행계수의 크기를 통제할 수 있다. Hindry 와 Silverman 은 Szpiro 비가 유계인 곡선족에서 이 하한을 증명했다[^2].
 
 ## 계산 비용
 
@@ -166,6 +166,7 @@ $$
 Baker 의 방법이 타원곡선 위 정수점의 크기에 유효한 상한을 주고, 정준 높이의 하한과 결합하면 정수점을 전부 찾았다고 증명할 수 있다. 격자 축소로 후보를 걸러내는 이 절차가 Diophantine 방정식 풀이의 표준 도구다.
 
 [^1]: 구성과 증명은 J. Silverman, *The Arithmetic of Elliptic Curves* (2판, 2009) 8장. 국소 분해와 계산 알고리즘은 같은 저자의 *Advanced Topics in the Arithmetic of Elliptic Curves* (1994) 6장, 그리고 J. Cremona, *Algorithms for Modular Elliptic Curves* (2판, 1997) 3장. Lang 의 하한 추측은 S. Lang, *Elliptic Curves: Diophantine Analysis* (1978). Gross–Zagier 는 B. Gross, D. Zagier, *Heegner points and derivatives of L-series*, Invent. Math. **84** (1986).
+[^2]: M. Hindry, J. Silverman, *The canonical height and integral points on elliptic curves*, Invent. Math. **93** (1988), 419–450. 하한의 상수가 Szpiro 비에 의존하는 꼴로 나온다.
 
 # 연관 문서
 
