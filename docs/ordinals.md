@@ -33,7 +33,7 @@ $$
 집합 x가 transitive라는 것은 원소의 원소가 다시 원소라는 뜻이다.
 
 $$
-\forall y\,(y\in x \to y\subseteq x)
+\forall y\thinspace(y\in x \to y\subseteq x)
 $$
 
 ## 폰 노이만 서수
@@ -47,7 +47,7 @@ $$
 이 정의에서 다음이 성립한다.
 
 $$
-0=\varnothing,\quad \alpha+1=\alpha\cup\{\alpha\},\quad \alpha<\beta \iff \alpha\in\beta,\quad \alpha=\{\,\beta : \beta<\alpha\,\}
+0=\varnothing,\quad \alpha+1=\alpha\cup\lbrace\alpha\rbrace,\quad \alpha<\beta \iff \alpha\in\beta,\quad \alpha=\lbrace\thinspace\beta : \beta<\alpha\thinspace\rbrace
 $$
 
 서수의 집합 $S$ 에 대해 합집합은 상한이 된다. $0$ 이 아니고 후속 서수도 아닌 서수, 즉 자기 미만 전체의 합집합과 같은 서수를 극한 서수라 한다.
@@ -83,7 +83,7 @@ $$
 서수의 성질 $P$ 에 대해, " $\alpha$ 미만의 모든 $\beta$ 에서 $P$ 가 성립하면 $\alpha$ 에서도 $P$ 가 성립한다"가 모든 $\alpha$ 에 대해 참이면 $P$ 는 모든 서수에서 성립한다[^2].
 
 $$
-\forall\alpha\,\bigl(\forall\beta<\alpha\ P(\beta)\ \to\ P(\alpha)\bigr)\ \Longrightarrow\ \forall\alpha\ P(\alpha)
+\forall\alpha\thinspace\bigl(\forall\beta<\alpha\ P(\beta)\ \to\ P(\alpha)\bigr)\ \Longrightarrow\ \forall\alpha\ P(\alpha)
 $$
 
 증명: $P$ 가 거짓인 서수가 있다고 하자. 그중 하나를 $\gamma$ 라 하면 $\gamma+1$ 의 원소 중 $P$ 가 거짓인 것들의 집합은 공집합이 아니고, 정렬성에 의해 최소 원소 $\alpha$ 를 갖는다. $\alpha$ 미만에서는 $P$ 가 성립하므로 가정에 의해 $\alpha$ 에서도 성립하고, 모순이다.
@@ -127,7 +127,7 @@ $$
 지수와 서수가 같아지는 최소의 서수를 epsilon_0라 한다.
 
 $$
-\varepsilon_0=\min\{\alpha : \omega^{\alpha}=\alpha\}=\sup\{\omega,\ \omega^{\omega},\ \omega^{\omega^{\omega}},\dots\}
+\varepsilon_0=\min\lbrace\alpha : \omega^{\alpha}=\alpha\rbrace=\sup\lbrace\omega,\ \omega^{\omega},\ \omega^{\omega^{\omega}},\dots\rbrace
 $$
 
 epsilon_0는 가산 서수다. Gentzen은 Peano 산술의 무모순성이 epsilon_0까지의 초한귀납법으로 증명됨을 보였고, 이 서수가 PA의 증명론적 강도를 재는 척도가 된다([Gödel 불완전성 정리](godel-incompleteness.md) 참조).

@@ -64,7 +64,7 @@ Reidemeister 이동을 다룰 때 했던 일을 그대로 하면 된다. 링크�
 $\omega=\sum_id_iX_i$ 로 색칠한 고리가 하는 일이 무엇인지가 이 구성 전체의 심장이다. $\omega$ 고리와 라벨 $j$ 고리를 한 번 걸어 놓으면(Hopf 고리), 그 값이 이렇게 된다.
 
 $$
-\sum_id_i\cdot\frac{S_{ij}}{S_{00}}=\frac{(S^2)_{0j}}{S_{00}^2}=\mathcal D^2\,\delta_{j0}
+\sum_id_i\cdot\frac{S_{ij}}{S_{00}}=\frac{(S^2)_{0j}}{S_{00}^2}=\mathcal D^2\thinspace\delta_{j0}
 $$
 
 곧 **$j\neq0$ 이면 값이 0 이다.** $\omega$ 고리는 자기를 통과하는 모든 비자명한 라벨을 죽인다. 손잡이 미끄러짐이 만드는 차이가 정확히 이런 통과항으로 나타나므로, 그 항들이 전부 소멸해서 Kirby II 불변성이 나온다.
@@ -151,7 +151,7 @@ $$
 $T_{ij}=\delta_{ij}\theta_i$ 로 두면 $S,T$ 가 다음을 만족한다.
 
 $$
-S^4=\mathrm{id},\qquad (ST)^3=\frac{\Delta_+}{\mathcal D}\,S^2
+S^4=\mathrm{id},\qquad (ST)^3=\frac{\Delta_+}{\mathcal D}\thinspace S^2
 $$
 
 $\mathrm{SL}_2(\mathbb Z)$ 의 표시가 $(ST)^3=S^2$ 와 $S^4=1$ 이므로 위 식은 $S,T$ 가 **사영표현**을 준다는 뜻이고, 그 사영 인자가 정확히 프레이밍 변칙과 같은 수다. 곧 사상류군 표현이 진짜 표현이 되지 못하는 이유와 $\tau$ 가 프레이밍에 의존하는 이유가 같은 하나다.
@@ -161,7 +161,7 @@ $\mathrm{SL}_2(\mathbb Z)$ 의 표시가 $(ST)^3=S^2$ 와 $S^4=1$ 이므로 위 
 프레이밍 $p$ 인 풀린 고리 하나를 수술하면 렌즈 공간 $L(p,1)$ 이 나온다. 성분이 하나이므로 $m=1$ 이고 $\sigma=\mathrm{sgn}(p)$ 이며
 
 $$
-\tau(L(p,1))=\Big(\sum_id_i^2\theta_i^{\,p}\Big)\mathcal D^{-2}\Big(\frac{\Delta_+}{\mathcal D}\Big)^{-\mathrm{sgn}(p)}
+\tau(L(p,1))=\Big(\sum_id_i^2\theta_i^{\thinspace p}\Big)\mathcal D^{-2}\Big(\frac{\Delta_+}{\mathcal D}\Big)^{-\mathrm{sgn}(p)}
 $$
 
 이 된다. $p=\pm1$ 은 $S^3$ 을, $p=0$ 은 $S^1\times S^2$ 를 준다. 이 세 값을 공식이 제대로 재현하는지가 좋은 점검이다.

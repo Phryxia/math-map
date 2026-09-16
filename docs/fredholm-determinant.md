@@ -5,7 +5,7 @@
 [행렬식](determinants.md)은 유한차원의 개념이다. $n \times n$ 행렬의 행렬식은 $n!$ 개 항의 합이고, $n \to \infty$ 에서 이 정의는 아무 의미가 없다. 그런데 적분방정식
 
 $$
-\phi(x) - \int_a^b K(x,y)\,\phi(y)\,dy = f(x)
+\phi(x) - \int_a^b K(x,y)\thinspace\phi(y)\thinspace dy = f(x)
 $$
 
 를 다루다 보면 "$I - K$ 가 가역인가" 를 판정하는 수 하나가 있었으면 좋겠다는 생각이 자연스럽게 든다. 유한차원에서 그 역할을 하던 것이 행렬식이었으니 말이다.
@@ -33,7 +33,7 @@ $$
 가 성립한다. $k$ 번째 항은 크기 $k$ 인 주부분행렬의 행렬식을 전부 모은 것이다. 이 표현에는 차원이 겉으로 드러나지 않으므로, 지수 집합을 연속체로 바꾸고 합을 적분으로 바꾸면 그대로 무한차원 정의가 된다.
 
 $$
-\det(I - K) = \sum_{k\ge0}\frac{(-1)^k}{k!}\int_{[a,b]^k}\det\bigl(K(x_i,x_j)\bigr)_{i,j=1}^{k}\,dx_1\cdots dx_k
+\det(I - K) = \sum_{k\ge0}\frac{(-1)^k}{k!}\int_{[a,b]^k}\det\bigl(K(x_i,x_j)\bigr)_{i,j=1}^{k}\thinspace dx_1\cdots dx_k
 $$
 
 $1/k!$ 은 순서 없는 선택을 순서 있는 적분으로 바꾸며 생긴 것이다. 확률 쪽에서 보면 $k$ 번째 항은 "점 $k$ 개가 동시에 나타날 방식" 을 세는 양이고, 그래서 결정점과정의 간격 확률이 바로 이 급수가 된다.
@@ -72,7 +72,7 @@ Lidskii 의 정리가 자취와 고유값을 잇는다. 자취류 $K$ 에 대해
 자취류 $K$ 에 대해
 
 $$
-\det(I - zK) = \prod_i (1 - z\lambda_i) = \sum_{k\ge0}\frac{(-z)^k}{k!}\int \det\bigl(K(x_i,x_j)\bigr)_{i,j\le k}\;d^k x
+\det(I - zK) = \prod_i (1 - z\lambda_i) = \sum_{k\ge0}\frac{(-z)^k}{k!}\int \det\bigl(K(x_i,x_j)\bigr)_{i,j\le k}\thickspace d^k x
 $$
 
 로 정의한다. 두 표현이 같다는 것이 **Plemelj–Smithies** 의 항등식이고, 좌변은 $z$ 의 완전함수이며 그 영점이 정확히 $1/\lambda_i$ 다. 커널로 쓰인 형태는 $K$ 가 적분작용소이고 $K(x,y)$ 가 충분히 좋을 때(예를 들어 연속) 쓸 수 있다. 자취류성은 커널의 매끄러움으로 확인하는 것이 보통이며, $[a,b]$ 위의 $C^1$ 커널이면 충분하다.
@@ -88,7 +88,7 @@ $$
 를 얻는다. "행렬식의 로그는 로그의 자취" 라는 이 한 줄이 실용에서 가장 많이 쓰이는 형태다. 우변의 $\operatorname{tr}K^m$ 은 $m$ 중 적분
 
 $$
-\operatorname{tr}K^m = \int K(x_1,x_2)K(x_2,x_3)\cdots K(x_m,x_1)\,d^m x
+\operatorname{tr}K^m = \int K(x_1,x_2)K(x_2,x_3)\cdots K(x_m,x_1)\thinspace d^m x
 $$
 
 이므로, 섭동 전개나 점근 해석에서 항별로 다루기 좋다.
@@ -106,13 +106,13 @@ $$
 자취류 $K, L$ 에 대해
 
 $$
-\det\bigl((I-K)(I-L)\bigr) = \det(I-K)\,\det(I-L)
+\det\bigl((I-K)(I-L)\bigr) = \det(I-K)\thinspace\det(I-L)
 $$
 
 이 성립한다. 또 $\lVert K_n - K\rVert_1 \to 0$ 이면 $\det(I-K_n) \to \det(I-K)$ 이고, 더 정량적으로
 
 $$
-\bigl\lvert\det(I-K) - \det(I-L)\bigr\rvert \le \lVert K - L\rVert_1\,\exp\bigl(\lVert K\rVert_1 + \lVert L\rVert_1 + 1\bigr)
+\bigl\lvert\det(I-K) - \det(I-L)\bigr\rvert \le \lVert K - L\rVert_1\thinspace\exp\bigl(\lVert K\rVert_1 + \lVert L\rVert_1 + 1\bigr)
 $$
 
 이다. 자취류 노름에 대한 연속성이지 작용소 노름에 대한 연속성이 **아니라는** 점을 놓치면 안 된다. 작용소 노름으로 가까운 두 작용소의 행렬식이 전혀 다를 수 있다.
@@ -140,7 +140,7 @@ $$
 Fredholm 급수를 항별로 계산하려 들면 다중적분이 겹쳐 실용적이지 않다. Bornemann 이 지적한 것은 훨씬 단순하다. $[a,b]$ 위의 구적 마디 $x_i$ 와 무게 $w_i$ 를 잡고
 
 $$
-\det(I-K) \;\approx\; \det\Bigl(\delta_{ij} - \sqrt{w_i w_j}\,K(x_i,x_j)\Bigr)_{i,j=1}^{n}
+\det(I-K) \thickspace\approx\thickspace \det\Bigl(\delta_{ij} - \sqrt{w_i w_j}\thinspace K(x_i,x_j)\Bigr)_{i,j=1}^{n}
 $$
 
 라는 $n \times n$ 행렬식 하나를 계산하면 된다. 대칭을 유지하려고 $\sqrt{w_iw_j}$ 로 나눠 붙인 것이고, 본질은 적분작용소를 구적으로 이산화한 Nyström 근사다. 커널이 해석적이고 Gauss 구적을 쓰면 수렴이 **지수적**이라, 마디 몇 개로 기계정밀도에 닿는다.

@@ -7,7 +7,7 @@
 인자 $D=\sum n_PP$ 를 정해 놓고
 
 $$
-L(D)=\{f : \mathrm{div}(f)+D\ge0\}\cup\{0\}
+L(D)=\lbrace f : \mathrm{div}(f)+D\ge0\rbrace\cup\lbrace 0\rbrace
 $$
 
 의 차원을 $\ell(D)$ 라 하자. 직관적으로는 $n_P>0$ 인 곳에서 극을 그만큼 허용하고 $n_P<0$ 인 곳에서는 영점을 강제한다. 조건을 세어 보면 $\ell(D)\ge\deg D+1-g$ 정도가 기대되는데, 실제로는 보정항이 붙는다.
@@ -59,7 +59,7 @@ graph TD
 콤팩트 Riemann 면(또는 매끄러운 사영곡선) $X$ 위에서 인자는 점들의 형식적 정수 결합 $D=\sum n_PP$ 이고 $\deg D=\sum n_P$ 다. 0 이 아닌 유리함수 $f$ 의 주인자는 $\mathrm{div}(f)=\sum\mathrm{ord}_P(f)\thinspace P$ 이며 차수가 0 이다.
 
 $$
-L(D)=\{f\in k(X)^\times:\mathrm{div}(f)+D\ge0\}\cup\{0\},\qquad \ell(D)=\dim_kL(D)
+L(D)=\lbrace f\in k(X)^\times:\mathrm{div}(f)+D\ge0\rbrace\cup\lbrace 0\rbrace,\qquad \ell(D)=\dim_kL(D)
 $$
 
 $L(D)$ 는 유한차원이고 $\deg D<0$ 이면 $L(D)=0$ 이다. 차수가 0 이 아닌 함수가 없기 때문이다.
@@ -80,7 +80,7 @@ $L(D)$ 는 유한차원이고 $\deg D<0$ 이면 $L(D)=0$ 이다. 차수가 0 이
 $\mathrm{Hirzebruch}$ 는 이를 임의 차원의 사영다양체로 확장했다.
 
 $$
-\chi(X,\mathcal E)=\int_X\mathrm{ch}(\mathcal E)\,\mathrm{Td}(TX)
+\chi(X,\mathcal E)=\int_X\mathrm{ch}(\mathcal E)\thinspace\mathrm{Td}(TX)
 $$
 
 곡선에서 $\mathrm{ch}(\mathcal O(D))=1+D$ 와 $\mathrm{Td}=1-\frac12K$ 를 넣고 적분하면 $\deg D+1-g$ 가 나온다. 이 형태가 그대로 [지표 정리](index-theorem.md)의 Dolbeault 사례이며, Grothendieck 은 다시 이를 사상에 대한 상대적 형태로 일반화했다.

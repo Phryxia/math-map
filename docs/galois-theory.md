@@ -39,7 +39,7 @@ $\sigma$ 는 $\sqrt2$ 의 부호만 뒤집는 사상이다. $\sigma$ 가 고정�
 $K/k$ 를 유한 확대라 하자. $k$ 의 모든 원소를 고정하는 $K$ 의 체 자기동형 전체는 합성에 대해 군을 이루며, 이를 $\operatorname{Aut}(K/k)$ 로 쓴다. 부분군 $H$ 의 고정체(fixed field)는 $H$ 가 움직이지 않는 원소들의 모임이다.
 
 $$
-K^{H}=\{a\in K:\ \sigma(a)=a\ \ \text{for all } \sigma\in H\}
+K^{H}=\lbrace a\in K:\ \sigma(a)=a\ \ \text{for all } \sigma\in H\rbrace
 $$
 
 $K/k$ 가 Galois 확대라는 것은 전체 자기동형군의 고정체가 정확히 $k$ 라는 뜻이며, 이때 $\operatorname{Aut}(K/k)$ 를 Galois 군이라 하고 $\operatorname{Gal}(K/k)$ 로 쓴다.
@@ -53,7 +53,7 @@ $$
 거듭제곱근 확대(radical extension)는 각 층이 어떤 원소의 $n$ 제곱근을 추가해 얻어지는 확대의 탑이다.
 
 $$
-k=K_0\subseteq K_1\subseteq\cdots\subseteq K_r,\qquad K_{i+1}=K_i(\alpha_i),\ \ \alpha_i^{\,n_i}\in K_i
+k=K_0\subseteq K_1\subseteq\cdots\subseteq K_r,\qquad K_{i+1}=K_i(\alpha_i),\ \ \alpha_i^{\thinspace n_i}\in K_i
 $$
 
 # 성질

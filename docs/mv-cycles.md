@@ -13,7 +13,7 @@ $$
 Mirković–Vilonen 의 답이 이 문서의 주제다. 반무한 낟가리라 부르는 궤도와 층을 자르면, 무게 공간 $V_\lambda(\mu)$ 의 기저가 어떤 대수적 순환들의 집합으로 나온다.
 
 $$
-\dim V_\lambda(\mu)=\#\{\text{무게 }\mu\text{ 의 MV 순환}\}
+\dim V_\lambda(\mu)=\char35{}\lbrace\text{무게 }\mu\text{ 의 MV 순환}\rbrace
 $$
 
 [Weyl 지표 공식](weyl-character-formula.md)은 무게 중복도를 교대합으로 준다. Kostant 중복도 공식이 그 한 형태이고, 부호가 엇갈리는 합이라 값이 왜 음이 아닌지가 공식만 보아서는 보이지 않는다. MV 순환은 그 수를 **세는 대상**으로 바꾼다. 교대합 대신 집합이 놓이므로 음이 아님이 자명해진다.
@@ -51,7 +51,7 @@ graph TD
 Kostant 중복도 공식은 이렇다.
 
 $$
-m_\lambda(\mu)=\sum_{w\in W}(-1)^{\ell(w)}\,\mathcal P\bigl(w(\lambda+\rho)-(\mu+\rho)\bigr)
+m_\lambda(\mu)=\sum_{w\in W}(-1)^{\ell(w)}\thinspace\mathcal P\bigl(w(\lambda+\rho)-(\mu+\rho)\bigr)
 $$
 
 $\mathcal P$ 는 Kostant 분할 함수다. Weyl 군의 크기만큼 항이 있고 부호가 엇갈린다. $A_2$ 면 항이 여섯 개이고, 큰 군에서는 항 수가 폭발하면서 각 항이 답보다 훨씬 커진다. 답이 3 인데 항들이 수백 단위로 오가며 상쇄되는 일이 예사다.
@@ -63,7 +63,7 @@ $\mathcal P$ 는 Kostant 분할 함수다. Weyl 군의 크기만큼 항이 있�
 MV 순환 하나에 모멘트 사상을 씌우면 다면체가 나온다. Anderson 과 Kamnitzer 가 보인 것은 그 다면체가 순환을 완전히 결정한다는 것이다.
 
 $$
-\{\text{MV 순환}\}\ \longleftrightarrow\ \{\text{MV 다면체}\}
+\lbrace\text{MV 순환}\rbrace\ \longleftrightarrow\ \lbrace\text{MV 다면체}\rbrace
 $$
 
 MV 다면체는 꼭짓점이 $W\lambda$ 의 부분집합이고 면의 위치가 부등식 자료(Berenstein–Zelevinsky 자료)로 주어지는 볼록다면체다. 곧 무한차원 다양체의 기하가 **유한한 볼록기하**로 압축된다. 계산이 가능해지는 지점이고, 결정 기저의 조합론과 맞물리는 지점이기도 하다.
@@ -93,7 +93,7 @@ $$
 
 > **따름정리.** 무게 $\mu$ 의 MV 순환들의 기본류가 $V_\lambda(\mu)$ 의 기저를 이룬다. 특히
 > $$
-> \dim V_\lambda(\mu)=\#\{\lambda\ \text{에 대한 무게 }\mu\text{ 의 MV 순환}\}
+> \dim V_\lambda(\mu)=\char35{}\lbrace\lambda\ \text{에 대한 무게 }\mu\text{ 의 MV 순환}\rbrace
 > $$
 
 순수 차원이라는 것이 증명의 핵심이고, 그것이 있어야 기약성분과 코호몰로지 기저가 일대일로 대응한다.

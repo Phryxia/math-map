@@ -29,7 +29,7 @@ graph TD
 $R$ 를 항등원 있는 가환환이라 하자. $R$ 위 한 변수 다항식환은 유한개만 $0$ 이 아닌 계수열의 집합에 통상의 덧셈과 합성곱(convolution) 곱셈을 준 환이다.
 
 $$
-R[x]=\Big\{\textstyle\sum_{i=0}^{n}a_ix^i \ :\ n\ge 0,\ a_i\in R\Big\},\qquad
+R[x]=\Big\lbrace\textstyle\sum_{i=0}^{n}a_ix^i \ :\ n\ge 0,\ a_i\in R\Big\rbrace,\qquad
 \Big(\sum_i a_ix^i\Big)\Big(\sum_j b_jx^j\Big)=\sum_k\Big(\sum_{i+j=k}a_ib_j\Big)x^k
 $$
 
@@ -60,7 +60,7 @@ $$
 차수를 크기 함수로 쓰면 k[x]는 유클리드 정역이고, 모든 유클리드 정역은 주 아이디얼 정역이며 유일분해 정역(UFD)이다[^2]. 따라서 k[x]의 0이 아닌 모든 비단위 다항식은 기약다항식들의 곱으로 쓰이고, 그 분해는 순서와 0이 아닌 상수배를 무시하면 유일하다.
 
 $$
-f=c\,p_1^{e_1}\cdots p_m^{e_m},\qquad c\in k^{\times},\ p_i \text{ monic 기약}
+f=c\thinspace p_1^{e_1}\cdots p_m^{e_m},\qquad c\in k^{\times},\ p_i \text{ monic 기약}
 $$
 
 주 아이디얼 정역이라는 사실의 증명 개요: [아이디얼](ideals-quotient-rings.md) $I$ 가 $0$ 이 아니면 $I$ 에서 차수가 최소인 원소 $g$ 를 잡는다. 임의의 $f\in I$ 를 $g$ 로 나누면 나머지 $r=f-qg$ 가 $I$ 에 속하고 차수가 $g$ 보다 작으므로 $r=0$ 이다. 즉 $I=(g)$ 다.

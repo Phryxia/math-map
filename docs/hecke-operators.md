@@ -40,7 +40,7 @@ $$
 $T_n$ 들이 유한차원 공간 $S_k$ 에 작용하는 가환 연산자족이라는 것만으로는 대각화를 보장하지 못한다. 필요한 것은 내적과 자기수반성이다. Petersson 내적
 
 $$
-\langle f,g\rangle=\int_{\Gamma\backslash\mathbb H}f(\tau)\overline{g(\tau)}\,y^k\,\frac{dx\,dy}{y^2}
+\langle f,g\rangle=\int_{\Gamma\backslash\mathbb H}f(\tau)\overline{g(\tau)}\thinspace y^k\thinspace\frac{dx\thinspace dy}{y^2}
 $$
 
 이 그 역할을 한다. 측도 $dx\thinspace dy/y^2$ 가 $\mathrm{SL}_2(\mathbb R)$ 불변이고 $f\bar gy^k$ 가 $\Gamma$ 불변이라 적분이 잘 정의되며, 첨점형식의 급감 덕분에 수렴한다. 이 내적에 대해 $p\nmid N$ 인 $T_p$ 가 자기수반이다.
@@ -84,7 +84,7 @@ $$
 여기서 $(f|_k\gamma)(\tau)=\det(\gamma)^{k/2}(c\tau+d)^{-k}f(\gamma\tau)$ 로 정규화한다. $\alpha=\begin{pmatrix}1&0\cr 0&p\end{pmatrix}$ 로 두면 $T_p$ 를 얻는다. 잉여류 대표는 $p\nmid N$ 일 때 $p+1$ 개다.
 
 $$
-T_pf=p^{k-1}\sum_{j=0}^{p-1}f\Big|_k\begin{pmatrix}1&j\\0&p\end{pmatrix}+f\Big|_k\begin{pmatrix}p&0\\0&1\end{pmatrix}
+T_pf=p^{k-1}\sum_{j=0}^{p-1}f\Big|_k\begin{pmatrix}1&j\cr 0&p\end{pmatrix}+f\Big|_k\begin{pmatrix}p&0\cr 0&1\end{pmatrix}
 $$
 
 $p\mid N$ 이면 마지막 항이 빠져 대표가 $p$ 개뿐이다. 이 경우의 작용소를 $U_p$ 라 쓰고 $T_p$ 와 구별한다. $q$ 전개에서는 $(U_pf)\_n=a_{np}$ 로 둘째 항이 없다.
@@ -96,7 +96,7 @@ $p\mid N$ 이면 마지막 항이 빠져 대표가 $p$ 개뿐이다. 이 경우�
 $q$ 전개로 쓴 $T_n$ 의 정의는 다음과 같다.
 
 $$
-(T_nf)_m=\sum_{d\mid\gcd(n,m)}\chi(d)\,d^{k-1}a_{mn/d^2}
+(T_nf)_m=\sum_{d\mid\gcd(n,m)}\chi(d)\thinspace d^{k-1}a_{mn/d^2}
 $$
 
 $T_n$ 들이 생성하는 $\mathbb Z$ 대수를 **Hecke 대수** $\mathbb T$ 라 한다. 형식 Dirichlet 급수로 관계식을 한 줄에 담을 수 있다.
@@ -151,7 +151,7 @@ $$
 이 합동식이 다리다. 고유형식 $f$ 마다 $\ell$ 진 Galois 표현 $\rho_{f,\ell}\colon\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\bar{\mathbb Q}\_\ell)$ 이 있어
 
 $$
-\mathrm{tr}\,\rho_{f,\ell}(\mathrm{Frob}_p)=a_p,\qquad \det\rho_{f,\ell}(\mathrm{Frob}_p)=\chi(p)p^{k-1}
+\mathrm{tr}\thinspace\rho_{f,\ell}(\mathrm{Frob}_p)=a_p,\qquad \det\rho_{f,\ell}(\mathrm{Frob}_p)=\chi(p)p^{k-1}
 $$
 
 를 만족한다. 해석적으로 정의된 $a_p$ 가 산술적 의미를 얻는 지점이고, [Galois 표현](galois-representations.md)과 모듈러 형식을 잇는 통로다. 모듈러성 정리는 이 통로를 거꾸로 건너는 진술이다.

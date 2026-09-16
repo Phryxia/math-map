@@ -66,7 +66,7 @@ $a \equiv b$ , $c \equiv d \pmod m$ 이면 다음이 성립한다.
 
 $$
 \begin{aligned}
-a+c&\equiv b+d\pmod m\\
+a+c&\equiv b+d\pmod m\cr
 ac&\equiv bd\pmod m
 \end{aligned}
 $$
@@ -115,7 +115,7 @@ assert powmod(3, 5, 7) == 5      # 3^5 = 243 = 34*7 + 5
 $m = m_1 m_2$ 이고 $\gcd(m_1, m_2) = 1$ 이면 환 동형
 
 $$
-\mathbb{Z}/m\mathbb{Z}\;\cong\;\mathbb{Z}/m_1\mathbb{Z}\times\mathbb{Z}/m_2\mathbb{Z}
+\mathbb{Z}/m\mathbb{Z}\thickspace\cong\thickspace\mathbb{Z}/m_1\mathbb{Z}\times\mathbb{Z}/m_2\mathbb{Z}
 $$
 
 이 성립한다. 이것이 [중국인의 나머지 정리](chinese-remainder-theorem.md)의 구조적 형태이고, $\varphi$ 가 곱셈적이라는 사실이 여기서 따라 나온다. 법이 소수 $p$ 일 때는 $0$ 이 아닌 모든 원소가 가역이므로 $\mathbb{Z}/p\mathbb{Z}$ 는 체이며, $(\mathbb{Z}/p\mathbb{Z})^\times$ 는 크기 $p-1$ 의 순환군이다.

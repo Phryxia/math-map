@@ -13,13 +13,13 @@
 마지막 조건이 이름의 $modular$ 를 설명한다. $S$ 와 $T$ 가 $\mathrm{SL}_2(\mathbb Z)$ 의 표현을 이루기 때문이다.
 
 $$
-S=\begin{pmatrix}0&-1\\1&0\end{pmatrix},\qquad T=\begin{pmatrix}1&1\\0&1\end{pmatrix}
+S=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix},\qquad T=\begin{pmatrix}1&1\cr 0&1\end{pmatrix}
 $$
 
 그런데 이 공리계에서 나오는 결과가 예상 밖이다. **MTC 하나가 3 차원 위상적 장론(TQFT) 하나와 같다.** Reshetikhin–Turaev 구성이 MTC 에서 3 차원 다양체와 그 안의 매듭에 대한 불변량을 만들어 내고, 역으로 3 차원 TQFT 에서 원환면에 붙는 벡터공간과 그 위의 $\mathrm{SL}_2(\mathbb Z)$ 작용이 MTC 를 복원한다.
 
 $$
-\{\text{MTC}\}\ \longleftrightarrow\ \{\text{3 차원 TQFT}\}
+\lbrace\text{MTC}\rbrace\ \longleftrightarrow\ \lbrace\text{3 차원 TQFT}\rbrace
 $$
 
 대수적 공리 몇 줄이 위상수학의 불변량을 낳는다. Jones 다항식이 이 구성의 가장 작은 예이고, 위상적 양자계산이 그 응용이다.

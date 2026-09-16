@@ -5,9 +5,9 @@
 [Tate 논문](tate-thesis.md)은 자리마다 국소 함수방정식을 준다. 두 국소 zeta 적분의 비가 시험함수에 의존하지 않는 인자 하나로 정리되는 것이었다.
 
 $$
-Z_v(\hat f_v,\chi_v^{-1},1-s)=\gamma_v(\chi_v,s)\,Z_v(f_v,\chi_v,s),
+Z_v(\hat f_v,\chi_v^{-1},1-s)=\gamma_v(\chi_v,s)\thinspace Z_v(f_v,\chi_v,s),
 \qquad
-\gamma_v=\varepsilon_v(\chi_v,s)\,\frac{L(1-s,\chi_v^{-1})}{L(s,\chi_v)}
+\gamma_v=\varepsilon_v(\chi_v,s)\thinspace\frac{L(1-s,\chi_v^{-1})}{L(s,\chi_v)}
 $$
 
 $L$ 인자는 국소 계산에서 바로 읽히는 유리함수다. 남은 $\varepsilon_v$ 가 **국소 근 수**이고, 이것만이 자명하지 않다. 비분기 자리에서는 $1$ 이라 아무 일도 하지 않고, 분기 자리에서만 값이 생긴다. 그리고 그 값이 정확히 **Gauss 합**이다.
@@ -15,7 +15,7 @@ $L$ 인자는 국소 계산에서 바로 읽히는 유리함수다. 남은 $\var
 $$
 \varepsilon\big(\chi,\psi,\tfrac12\big)=\frac{g(\chi)}{\sqrt q},
 \qquad
-g(\chi)=\sum_{n}\chi(n)\,\psi(n)
+g(\chi)=\sum_{n}\chi(n)\thinspace\psi(n)
 $$
 
 Gauss 합은 곱셈 지표와 덧셈 지표를 한 식에 섞는다. 유한체에서 두 군 구조를 잇는 유일한 다리이고, 절댓값이 언제나 $\sqrt q$ 다. 이 사실이 근 수의 절댓값을 $1$ 로 만들고, [Dirichlet L 함수](dirichlet-l-functions.md)의 함수방정식에 나오는 부호가 크기 $1$ 인 복소수임을 보장한다.
@@ -31,7 +31,7 @@ $\mathbb Z/p$ 위의 함수 공간에서 덧셈 Fourier 변환의 기저는 덧�
 $\chi$ 를 덧셈 Fourier 변환으로 보내면 어떻게 되는가. 계산하면 $\chi$ 자신이 되돌아온다. 상수배만 붙는다.
 
 $$
-\sum_n\chi(n)\psi(mn)=\chi^{-1}(m)\,g(\chi)
+\sum_n\chi(n)\psi(mn)=\chi^{-1}(m)\thinspace g(\chi)
 $$
 
 $\chi$ 가 덧셈 Fourier 변환의 **고유벡터**이고 $g(\chi)$ 가 그 고유값인 셈이다. 그런데 Fourier 변환은 유니터리이고 네 번 하면 항등이므로 고유값의 절댓값이 $\sqrt p$ 로 고정된다.
@@ -70,7 +70,7 @@ $|g(\chi)|=\sqrt p$ 의 증명은 반 쪽이면 된다. $g(\chi)\overline{g(\chi
 
 $$
 \sum_{n=0}^{p-1}e^{2\pi in^2/p}=
-\begin{cases}\sqrt p&p\equiv1\pmod4\\ i\sqrt p&p\equiv3\pmod4\end{cases}
+\begin{cases}\sqrt p&p\equiv1\pmod4\cr i\sqrt p&p\equiv3\pmod4\end{cases}
 $$
 
 부호를 결정하려면 크기가 아니라 실제 값을 봐야 하고, 그러려면 해석적 논증(theta 함수의 극한, 또는 유수 계산)이 필요하다. 크기는 대수적으로 나오고 부호는 해석적으로만 나온다는 이 비대칭이 근 수 이론 전반의 성격이다. 대역 근 수의 값을 명시적으로 아는 경우가 드문 것도 같은 이유다.
@@ -82,7 +82,7 @@ $$
 소수 $p$ 와 곱셈 지표 $\chi\colon(\mathbb Z/p)^\times\to\mathbb C^\times$ 에 대해
 
 $$
-g(\chi)=\sum_{n=1}^{p-1}\chi(n)\,e^{2\pi in/p}
+g(\chi)=\sum_{n=1}^{p-1}\chi(n)\thinspace e^{2\pi in/p}
 $$
 
 를 **Gauss 합**이라 한다. 일반적으로 $\chi$ 는 법 $m$ 의 지표일 수 있고, 덧셈 지표 $\psi$ 를 명시해 $g(\chi,\psi)$ 로 쓴다.
@@ -103,7 +103,7 @@ $$
 국소 근 수는 국소 함수방정식에서 $L$ 인자를 걷어낸 나머지로 정의된다.
 
 $$
-\varepsilon_v(\chi_v,\psi_v,s)=q_v^{(\frac12-s)(a(\chi_v)+n(\psi_v))}\;\varepsilon_v\big(\chi_v,\psi_v,\tfrac12\big)
+\varepsilon_v(\chi_v,\psi_v,s)=q_v^{(\frac12-s)(a(\chi_v)+n(\psi_v))}\thickspace\varepsilon_v\big(\chi_v,\psi_v,\tfrac12\big)
 $$
 
 $s$ 의존성이 지수 하나로 전부 빠지므로, 본질적인 정보는 $s=1/2$ 에서의 값 하나다. 그 값이 비분기 자리에서는 $1$ 이고, 분기 자리에서는 도체를 법으로 한 Gauss 합을 $\sqrt{q^{a}}$ 로 나눈 것이다.
@@ -113,7 +113,7 @@ $s$ 의존성이 지수 하나로 전부 빠지므로, 본질적인 정보는 $s
 대역 함수방정식의 부호는 국소 근 수의 곱이다.
 
 $$
-\Lambda(s,\chi)=W(\chi)\,\Lambda(1-s,\bar\chi),\qquad
+\Lambda(s,\chi)=W(\chi)\thinspace\Lambda(1-s,\bar\chi),\qquad
 W(\chi)=\prod_v\varepsilon_v\big(\chi_v,\psi_v,\tfrac12\big)
 $$
 
@@ -121,7 +121,7 @@ $$
 
 $$
 W(\chi)=\frac{g(\chi)}{i^{\delta}\sqrt q},\qquad
-\delta=\begin{cases}0&\chi(-1)=1\\1&\chi(-1)=-1\end{cases}
+\delta=\begin{cases}0&\chi(-1)=1\cr 1&\chi(-1)=-1\end{cases}
 $$
 
 $i^\delta$ 는 무한 자리의 근 수다. 지표가 홀이면 감마 인자가 $\Gamma(\frac{s+1}2)$ 로 바뀌고 그 대가로 $i$ 가 붙는다.

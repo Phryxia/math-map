@@ -50,7 +50,7 @@ $$
 ## 궤도와 안정자
 
 $$
-\operatorname{Orb}(x)=\{g\cdot x: g\in G\},\qquad\operatorname{Stab}(x)=\{g\in G: g\cdot x=x\}
+\operatorname{Orb}(x)=\lbrace g\cdot x: g\in G\rbrace,\qquad\operatorname{Stab}(x)=\lbrace g\in G: g\cdot x=x\rbrace
 $$
 
 궤도가 하나뿐이면 추이적 작용, 모든 안정자가 자명하면 자유 작용, $\rho$ 가 단사이면 충실한 작용이라 한다. $\ker \rho$ 는 모든 점을 고정하는 원소들의 모임이며 항상 정규부분군이다.
@@ -75,7 +75,7 @@ $$
 
 $$
 |\operatorname{Orb}(x)|=[G:\operatorname{Stab}(x)],\qquad
-|G|=|\operatorname{Orb}(x)|\,|\operatorname{Stab}(x)|\ \ (|G|<\infty)
+|G|=|\operatorname{Orb}(x)|\thinspace|\operatorname{Stab}(x)|\ \ (|G|<\infty)
 $$
 
 $g \cdot x = h \cdot x$ 인 것과 $h^{-1}g \in \mathrm{Stab}(x)$ 인 것이 동치이므로, $x$ 를 같은 점으로 보내는 원소들이 안정자의 왼쪽 잉여류를 이룬다. 궤도의 점과 잉여류가 일대일로 대응한다.
@@ -100,7 +100,7 @@ $$
 
 $$
 |X/G|=\frac1{|G|}\sum_{g\in G}|\operatorname{Fix}(g)|,\qquad
-\operatorname{Fix}(g)=\{x: g\cdot x=x\}
+\operatorname{Fix}(g)=\lbrace x: g\cdot x=x\rbrace
 $$
 
 $\lbrace(g,x) : g \cdot x = x\rbrace$ 를 두 방향으로 세면 나온다. $x$ 로 먼저 세면 $\sum |\mathrm{Stab}(x)|$ 이고 궤도-안정자로 정리된다. 실제 계산에서는 "각 대칭이 몇 개의 배치를 고정하는가" 만 세면 되므로 매우 쓰기 편하다.

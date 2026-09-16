@@ -5,7 +5,7 @@
 재귀적으로 정의된 프로그램은 자기 자신을 참조한다.
 
 $$
-\mathrm{fact}(n)=\begin{cases}1,&n=0\\ n\cdot\mathrm{fact}(n-1),&n>0\end{cases}
+\mathrm{fact}(n)=\begin{cases}1,&n=0\cr n\cdot\mathrm{fact}(n-1),&n>0\end{cases}
 $$
 
 이것은 정의가 아니라 **방정식**이다. 미지의 것이 좌우 양쪽에 있으므로, 이 식이 무엇을 뜻하는지 말하려면 방정식의 해를 지정해야 한다. 게다가 해는 여럿일 수 있고, 어떤 프로그램은 영영 끝나지 않으므로 전체함수를 해로 요구할 수도 없다.
@@ -33,7 +33,7 @@ $f\sqsubseteq g$ 를 "$f$ 가 정의된 곳에서는 $g$ 도 정의되고 값이
 계승의 본문을 한 번 펼치는 조작을 보자.
 
 $$
-F(f)(n)=\begin{cases}1,&n=0\\ n\cdot f(n-1),&n>0\ \text{이고}\ f(n-1)\ \text{가 정의됨}\end{cases}
+F(f)(n)=\begin{cases}1,&n=0\cr n\cdot f(n-1),&n>0\ \text{이고}\ f(n-1)\ \text{가 정의됨}\end{cases}
 $$
 
 $\bot$ 에서 출발하면 $F(\bot)$ 은 $0$ 에서만 정의되고, $F^2(\bot)$ 은 $1$ 까지, $F^{k}(\bot)$ 은 $k-1$ 까지 정의된다. 각 단계는 이전 단계보다 정보가 많으므로 사슬이 만들어지고, 그 상한이 모든 자연수에서 정의된 계승 함수다. **재귀의 실행이 곧 고정점 반복**이라는 것이 이 그림의 내용이다.
@@ -54,7 +54,7 @@ flowchart LR
 단조성만으로는 $\bigsqcup_n F^n(\bot)$ 이 고정점이라는 보장이 없다. 극한을 취하고 $F$ 를 적용하는 것과, $F$ 를 적용하고 극한을 취하는 것이 같아야 한다. 그것이 **Scott 연속성**이다.
 
 $$
-F\Bigl(\bigsqcup_i x_i\Bigr)=\bigsqcup_i F(x_i)\qquad(\{x_i\}\ \text{는 방향집합})
+F\Bigl(\bigsqcup_i x_i\Bigr)=\bigsqcup_i F(x_i)\qquad(\lbrace x_i\rbrace\ \text{는 방향집합})
 $$
 
 연산적으로 읽으면 "출력의 유한한 부분을 알려면 입력의 유한한 부분만 보면 된다" 는 유한성 조건이다. 실제 프로그램이 만드는 함수는 모두 이 성질을 갖는다. 무한한 입력을 다 읽고 나서야 첫 글자를 내놓는 계산은 없기 때문이다.

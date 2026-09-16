@@ -28,13 +28,13 @@ graph TD
 유한집합 A, B와 [함수](functions.md) f: A → B를 생각한다. 기본형은 다음과 같다.
 
 $$
-|A|>|B| \ \Longrightarrow\ \exists\, b\in B:\ |f^{-1}(b)|\ge 2
+|A|>|B| \ \Longrightarrow\ \exists\thinspace b\in B:\ |f^{-1}(b)|\ge 2
 $$
 
 ## 일반형 (강한 비둘기집 원리)
 
 $$
-\exists\, b\in B:\ \bigl|f^{-1}(b)\bigr|\ \ge\ \left\lceil \frac{|A|}{|B|} \right\rceil
+\exists\thinspace b\in B:\ \bigl|f^{-1}(b)\bigr|\ \ge\ \left\lceil \frac{|A|}{|B|} \right\rceil
 $$
 
 증명: 모든 섬유의 크기가 천장값보다 작다고 하면 각 섬유 크기는 천장값보다 1 이상 작으므로 다음 모순이 나온다.
@@ -46,7 +46,7 @@ $$
 ## 무한형
 
 $$
-|A|>|B|,\ |B|<\aleph_0,\ A=\bigsqcup_{b\in B}f^{-1}(b)\ \text{이고 }A\text{가 무한이면}\ \exists\, b:\ f^{-1}(b)\ \text{무한}
+|A|>|B|,\ |B|<\aleph_0,\ A=\bigsqcup_{b\in B}f^{-1}(b)\ \text{이고 }A\text{가 무한이면}\ \exists\thinspace b:\ f^{-1}(b)\ \text{무한}
 $$
 
 [가산성](cardinality.md)의 언어로는 가산 집합을 유한 개 조각으로 나누면 적어도 하나가 가산 무한이라는 뜻이다.
@@ -56,7 +56,7 @@ $$
 유한 [측도](measure.md) 공간에서 부분집합족의 측도 합이 전체 측도를 넘으면 두 집합이 양의 측도로 겹친다.
 
 $$
-\sum_{i=1}^{n}\mu(A_i)>\mu(X)\ \Longrightarrow\ \exists\, i\ne j:\ \mu(A_i\cap A_j)>0
+\sum_{i=1}^{n}\mu(A_i)>\mu(X)\ \Longrightarrow\ \exists\thinspace i\ne j:\ \mu(A_i\cap A_j)>0
 $$
 
 # 성질
@@ -80,7 +80,7 @@ $$
 증명: 각 항 a_i에 쌍 (x_i, y_i)를 붙인다. x_i는 a_i에서 끝나는 최장 증가 부분수열의 길이, y_i는 a_i에서 끝나는 최장 감소 부분수열의 길이다. i < j이면 a_i < a_j일 때 x_j > x_i이고 a_i > a_j일 때 y_j > y_i이므로, 서로 다른 두 항의 쌍은 항상 다르다. 결론이 거짓이라면 모든 쌍이 다음 집합에 속한다.
 
 $$
-\{1,\dots,r-1\}\times\{1,\dots,s-1\},\qquad \bigl|\,\cdot\,\bigr|=(r-1)(s-1)
+\lbrace 1,\dots,r-1\rbrace\times\lbrace 1,\dots,s-1\rbrace,\qquad \bigl|\thinspace\cdot\thinspace\bigr|=(r-1)(s-1)
 $$
 
 항이 (r-1)(s-1)+1개인데 상자가 (r-1)(s-1)개이므로 두 항의 쌍이 같아 모순이다. 경계는 최적이다. 길이 (r-1)(s-1)의 수열을 s-1개씩 감소하는 블록 r-1개로 배열하면 증가 부분수열은 최대 r-1, 감소 부분수열은 최대 s-1이다. r=s=n인 특수 경우가 "길이 (n-1)^2+1의 수열에는 길이 n의 단조 부분수열이 있다"는 진술이다.
@@ -96,7 +96,7 @@ $$
 증명: Q+1개의 소수부 값을 길이 1/Q인 Q개의 구간에 넣는다.
 
 $$
-\{0\cdot\alpha\},\{\alpha\},\dots,\{Q\alpha\}\in[0,1)=\bigsqcup_{u=0}^{Q-1}\Bigl[\frac{u}{Q},\frac{u+1}{Q}\Bigr)
+\lbrace 0\cdot\alpha\rbrace,\lbrace\alpha\rbrace,\dots,\lbrace Q\alpha\rbrace\in[0,1)=\bigsqcup_{u=0}^{Q-1}\Bigl[\frac{u}{Q},\frac{u+1}{Q}\Bigr)
 $$
 
 비둘기집 원리로 같은 구간에 든 두 값 {q_1 alpha}와 {q_2 alpha}(q_1 < q_2)가 있다. q = q_2 - q_1, p = ⌊q_2 alpha⌋ - ⌊q_1 alpha⌋로 두면 주장이 따른다. alpha가 무리수이면 Q를 키워가며 분모가 무한히 커지는 근사열을 얻고, 이것이 연분수 근사의 이론적 출발점이다. 지수 2는 무리수 전체에 대해 개선할 수 없다. 황금비류의 badly approximable 수에서 막히며, 대수적 무리수에 대해서는 Roth 정리가 2+epsilon이 최선임을 말한다.

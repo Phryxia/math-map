@@ -21,7 +21,7 @@ Girsanov 정리는 표류를 지우는 방법을 준다. 과정 자체를 바꾸
 이산 시간에서 밀도는 각 단계의 우도비를 곱한 것이었다. 연속시간에서 이 곱을 극한으로 보내면 지수가 나온다. 한 눈금에서 표류 $\theta h$ 를 넣는 Gauss 밀도의 비가
 
 $$
-\frac{\exp\big(-(\Delta B-\theta h)^2/2h\big)}{\exp\big(-(\Delta B)^2/2h\big)}=\exp\Big(\theta\,\Delta B-\tfrac12\theta^2h\Big)
+\frac{\exp\big(-(\Delta B-\theta h)^2/2h\big)}{\exp\big(-(\Delta B)^2/2h\big)}=\exp\Big(\theta\thinspace\Delta B-\tfrac12\theta^2h\Big)
 $$
 
 이므로, 모든 눈금에 대해 곱하면 지수의 안이 합이 되어 $\theta B_t - \theta^2 t/2$ 가 된다. 이차항 $-\theta^2t/2$ 는 정규화에서 오는 것이고, 이것이 있어야 평균이 1 로 유지된다.
@@ -39,7 +39,7 @@ $$
 $B$ 를 $(\Omega,\mathcal F,(\mathcal F_t),P)$ 위의 $d$ 차원 표준 Brown 운동, $\theta = (\theta_t)$ 를 적합한 가측 과정이라 한다. 다음을 정의한다.
 
 $$
-L_t=\exp\left(-\int_0^t\theta_s^{\mathsf T}\,dB_s-\frac12\int_0^t\lVert\theta_s\rVert^2\,ds\right)
+L_t=\exp\left(-\int_0^t\theta_s^{\mathsf T}\thinspace dB_s-\frac12\int_0^t\lVert\theta_s\rVert^2\thinspace ds\right)
 $$
 
 Itô 공식에서 $dL_t = -L_t\theta_t^{\mathsf T}dB_t$ 이므로 $L$ 은 국소 martingale 이고 $L_0 = 1$ 이다.
@@ -49,7 +49,7 @@ Itô 공식에서 $dL_t = -L_t\theta_t^{\mathsf T}dB_t$ 이므로 $L$ 은 국소
 $L$ 이 진짜 martingale 임을 보장하는 충분조건이다.
 
 $$
-\mathbb E_P\left[\exp\left(\frac12\int_0^T\lVert\theta_s\rVert^2\,ds\right)\right]<\infty
+\mathbb E_P\left[\exp\left(\frac12\int_0^T\lVert\theta_s\rVert^2\thinspace ds\right)\right]<\infty
 $$
 
 이 조건이 성립하면 $\mathbb E_P[L_T] = 1$ 이므로 $dQ = L_T\thinspace dP$ 가 확률측도를 정의한다. 조건이 없으면 $L$ 이 순수한 국소 martingale 이 되어 $\mathbb E_P[L_T] < 1$ 일 수 있고, 그러면 $Q$ 는 전체 질량이 1 이 아니다.
@@ -59,7 +59,7 @@ $$
 Novikov 조건 아래에서 $dQ = L_T\thinspace dP$ 로 정의된 $Q$ 는 $P$ 와 동치이고, 다음 과정은 $Q$ 아래에서 표준 Brown 운동이다.
 
 $$
-\tilde B_t=B_t+\int_0^t\theta_s\,ds,\qquad 0\le t\le T
+\tilde B_t=B_t+\int_0^t\theta_s\thinspace ds,\qquad 0\le t\le T
 $$
 
 즉 $P$ Brown 운동에 표류 $\theta$ 를 더한 것이 $Q$ Brown 운동이 된다. 뒤집어 읽으면, $Q$ 아래에서 보면 원래 있던 표류가 사라진 셈이다.
@@ -69,7 +69,7 @@ $$
 $dX_t = b_t\thinspace dt + \sigma_t\thinspace dB_t$ 에서 표류를 $\tilde b$ 로 바꾸고 싶다면 $\sigma_t\theta_t = b_t - \tilde b_t$ 를 풀어 $\theta$ 를 정하면 된다. 그러면 $Q$ 아래에서
 
 $$
-dX_t=\tilde b_t\,dt+\sigma_t\,d\tilde B_t
+dX_t=\tilde b_t\thinspace dt+\sigma_t\thinspace d\tilde B_t
 $$
 
 가 된다. 확산계수 $\sigma$ 는 바뀌지 않는다는 점이 핵심이다. 측도변환으로 표류는 마음대로 바꿀 수 있지만 변동성은 건드릴 수 없다.
@@ -91,13 +91,13 @@ $\sigma$ 가 다른 두 확산은 서로 특이하다. 위 논증이 보여 주�
 기댓값을 옮기는 공식은 [측도변환](change-of-measure.md)의 일반 공식 그대로다.
 
 $$
-\mathbb E_P[Z]=\mathbb E_Q\!\left[\frac{Z}{L_T}\right],\qquad \mathbb E_Q[Z]=\mathbb E_P[Z\,L_T]
+\mathbb E_P[Z]=\mathbb E_Q\negthinspace\left[\frac{Z}{L_T}\right],\qquad \mathbb E_Q[Z]=\mathbb E_P[Z\thinspace L_T]
 $$
 
 조건부 기댓값에는 밀도 과정이 들어간다. $s \le t$ 에 대해
 
 $$
-\mathbb E_Q[Z\mid\mathcal F_s]=\frac{\mathbb E_P[Z\,L_t\mid\mathcal F_s]}{L_s}
+\mathbb E_Q[Z\mid\mathcal F_s]=\frac{\mathbb E_P[Z\thinspace L_t\mid\mathcal F_s]}{L_s}
 $$
 
 이며, $L$ 이 $P$ martingale 이라는 사실이 분모를 정당화한다.
@@ -121,7 +121,7 @@ $$
 그러면 만기 지급 $\Phi(S_T)$ 의 가격이 할인된 기댓값으로 쓰인다.
 
 $$
-V_0=e^{-rT}\,\mathbb E_Q[\Phi(S_T)]
+V_0=e^{-rT}\thinspace\mathbb E_Q[\Phi(S_T)]
 $$
 
 $\mu$ 가 식에서 완전히 사라진 것이 중요하다. 자산의 기대수익률을 추정하지 않고도 가격을 정할 수 있다는 것이 무차익 가격결정의 핵심이며, 그 이유는 표류가 측도변환으로 바뀌는 양이고 $\sigma$ 는 그렇지 않기 때문이다.

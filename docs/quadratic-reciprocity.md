@@ -54,8 +54,8 @@ $q$ 가 이 이차체에서 분해되는지는 $\left(\frac{p^*}q\right)$ 가 �
 
 $$
 \Big(\frac ap\Big)=\begin{cases}
-+1&p\nmid a\ \text{이고}\ x^2\equiv a\ \text{에 해가 있다}\\
--1&p\nmid a\ \text{이고}\ x^2\equiv a\ \text{에 해가 없다}\\
++1&p\nmid a\ \text{이고}\ x^2\equiv a\ \text{에 해가 있다}\cr
+-1&p\nmid a\ \text{이고}\ x^2\equiv a\ \text{에 해가 없다}\cr
 0&p\mid a
 \end{cases}
 $$

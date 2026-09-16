@@ -98,7 +98,7 @@ $P$ 와 $Q$ 가 완비 격자일 때 다음이 성립한다.
 이때 짝은 명시적으로 주어진다.
 
 $$
-g(q)=\bigvee\{p\in P: f(p)\le q\}
+g(q)=\bigvee\lbrace p\in P: f(p)\le q\rbrace
 $$
 
 이 판정이 실무에서 쓰인다. 추상해석에서 구체화 사상 $\gamma$ 를 먼저 설계하고 그것이 하한을 보존하는지 확인하면 추상화 사상 $\alpha$ 가 자동으로 존재하고 유일하다. 둘 다 손으로 만들고 나서 정합성을 맞출 필요가 없다.
@@ -108,13 +108,13 @@ $$
 완비 격자 $L$ 과 단조사상 $h:L\to L$ 에 대해 고정점 집합
 
 $$
-\mathrm{Fix}(h)=\{x\in L: h(x)=x\}
+\mathrm{Fix}(h)=\lbrace x\in L: h(x)=x\rbrace
 $$
 
 은 공집합이 아니며, 그 자체로 완비 격자다. 특히 최소 고정점과 최대 고정점이 존재하고 다음과 같이 주어진다.
 
 $$
-\mu h=\bigwedge\{x: h(x)\le x\},\qquad \nu h=\bigvee\{x: x\le h(x)\}
+\mu h=\bigwedge\lbrace x: h(x)\le x\rbrace,\qquad \nu h=\bigvee\lbrace x: x\le h(x)\rbrace
 $$
 
 증명은 짧다. $A=\lbrace x:h(x)\le x\rbrace$ 라 두고 $a=\bigwedge A$ 로 놓는다. $x\in A$ 마다 $a\le x$ 이므로 단조성에서 $h(a)\le h(x)\le x$ 이고, $x$ 전체에 대해 하한을 취하면 $h(a)\le a$ 다. 그러면 다시 단조성에서 $h(h(a))\le h(a)$ 이므로 $h(a)\in A$ 이고, 따라서 $a\le h(a)$ 다. 두 부등식을 합치면 $h(a)=a$ 다.

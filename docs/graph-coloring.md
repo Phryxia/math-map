@@ -38,7 +38,7 @@ graph TD
 그래프 $G=(V,E)$ 와 자연수 $k$ 에 대해, 사상
 
 $$
-c : V \to \{1, 2, \dots, k\}
+c : V \to \lbrace 1, 2, \dots, k\rbrace
 $$
 
 가 모든 간선 $uv \in E$ 에 대해 $c(u) \neq c(v)$ 를 만족하면 $c$ 를 $G$ 의 **적절한 $k$ 색칠**(proper $k$ coloring)이라 한다. 이런 $c$ 가 존재하면 $G$ 는 $k$ 색칠 가능하다고 한다.
@@ -46,13 +46,13 @@ $$
 **채색수**는
 
 $$
-\chi(G) = \min \{\, k \in \mathbb{N} : G \text{ 는 } k\text{-색칠 가능} \,\}
+\chi(G) = \min \lbrace\thinspace k \in \mathbb{N} : G \text{ 는 } k\text{-색칠 가능} \thinspace\rbrace
 $$
 
 이다. 색 클래스 $c^{-1}(i)$ 는 각각 독립집합이므로, 동치로
 
 $$
-\chi(G) = \min\{\, k : V \text{ 를 } k \text{ 개의 독립집합으로 분할할 수 있다} \,\}
+\chi(G) = \min\lbrace\thinspace k : V \text{ 를 } k \text{ 개의 독립집합으로 분할할 수 있다} \thinspace\rbrace
 $$
 
 이다.
@@ -159,7 +159,7 @@ $$
 동치로 [포함배제 원리](inclusion-exclusion.md)를 간선 부분집합에 적용하면
 
 $$
-P(G, k) = \sum_{S \subseteq E} (-1)^{|S|} k^{\,c(S)}
+P(G, k) = \sum_{S \subseteq E} (-1)^{|S|} k^{\thinspace c(S)}
 $$
 
 를 얻는다. 여기서 $c(S)$ 는 간선 집합 $S$ 만 남긴 그래프의 연결 성분 수다. 이 표현은 Whitney의 정리이며, 채색 다항식이 Tutte 다항식의 특수화이고 [matroid](matroids.md) 이론과 이어지는 통로다.

@@ -27,19 +27,19 @@ graph LR
 가환환 $F$ 가 체(field)라는 것은 $1$ 이 $0$ 과 다르고, $0$ 이 아닌 모든 원소가 곱셈에 대한 역원을 가진다는 뜻이다. 곱셈 가역원 전체를 $F$ 의 곱셈군이라 부르고 $F^{\times}$ 로 표기한다.
 
 $$
-1\neq 0,\qquad \forall a\in F\setminus\{0\}\ \ \exists\, a^{-1}\in F:\ a\cdot a^{-1}=1
+1\neq 0,\qquad \forall a\in F\setminus\lbrace 0\rbrace\ \ \exists\thinspace a^{-1}\in F:\ a\cdot a^{-1}=1
 $$
 
 동치로, 체는 곱셈군이 $0$ 이 아닌 원소 전체와 일치하는 가환환이다.
 
 $$
-F^{\times}=F\setminus\{0\}
+F^{\times}=F\setminus\lbrace 0\rbrace
 $$
 
 체 $F$ 의 표수는 $1$ 을 반복해서 더해 $0$ 을 만드는 최소 횟수이며, 그런 횟수가 없으면 0으로 정의한다. $n\cdot 1$ 은 $1$ 을 $n$ 번 더한 것을 뜻한다.
 
 $$
-\operatorname{char}F=\begin{cases}\min\{\,n\ge 1: n\cdot 1_F=0\,\} & \text{그런 } n \text{이 존재할 때}\\ 0 & \text{그렇지 않을 때}\end{cases}
+\operatorname{char}F=\begin{cases}\min\lbrace\thinspace n\ge 1: n\cdot 1_F=0\thinspace\rbrace & \text{그런 } n \text{이 존재할 때}\cr 0 & \text{그렇지 않을 때}\end{cases}
 $$
 
 $F$ 의 소체(prime subfield)는 $F$ 에 포함된 모든 부분체의 교집합, 즉 $1$ 을 포함하는 가장 작은 부분체다. 부분체란 $F$ 의 부분집합이면서 $F$ 의 연산으로 체가 되는 것을 말한다.

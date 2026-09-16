@@ -39,8 +39,8 @@ graph TD
 
 $$
 \begin{aligned}
-(ab)c&=a(bc)\\
-ea&=ae=a\\
+(ab)c&=a(bc)\cr
+ea&=ae=a\cr
 a^{-1}a&=aa^{-1}=e
 \end{aligned}
 $$
@@ -64,7 +64,7 @@ $a=b$ 로 두면 항등원이, $a=e$ 로 두면 역원이, 그다음 둘을 합�
 두 군 사이의 함수 $\varphi : G \to H$ 가 $\varphi(ab) = \varphi(a)\varphi(b)$ 를 만족하면 준동형이다. 연산을 보존하므로 항등원과 역원도 자동으로 보존한다. 준동형의 핵과 상은 다음과 같다.
 
 $$
-\ker\varphi=\{a\in G\mid\varphi(a)=e_H\},\qquad \operatorname{im}\varphi=\{\varphi(a)\mid a\in G\}
+\ker\varphi=\lbrace a\in G\mid\varphi(a)=e_H\rbrace,\qquad \operatorname{im}\varphi=\lbrace\varphi(a)\mid a\in G\rbrace
 $$
 
 전단사인 준동형이 동형이고, 동형인 두 군은 이름표만 다른 같은 군이다. "같은 군인가" 를 묻는 일은 [그래프 동형](graph-isomorphism.md)에서 두 그래프가 같은지 묻는 일과 같은 종류의 문제다.

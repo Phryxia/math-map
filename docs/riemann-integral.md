@@ -35,13 +35,13 @@ Riemann 합과 분할의 최대 폭은
 
 $$
 S(f,P,\xi)=\sum_{i=1}^n f(\xi_i)(x_i-x_{i-1}),\qquad
-\|P\|=\max_i(x_i-x_{i-1})
+\Vert P\Vert=\max_i(x_i-x_{i-1})
 $$
 
 이다. 임의의 $\varepsilon > 0$ 에 대해 $\delta > 0$ 이 있어 $\Vert P\Vert < \delta$ 인 모든 분할과 모든 표본점 선택에서 $|S(f,P,\xi) - I| < \varepsilon$ 이면 $f$ 는 Riemann 적분 가능하고
 
 $$
-I=\int_a^b f(x)\,dx
+I=\int_a^b f(x)\thinspace dx
 $$
 
 로 쓴다. 등분할로 한정하지 않고 모든 분할과 모든 표본점을 요구한다는 점이 중요하다.
@@ -53,7 +53,7 @@ M_i=\sup_{[x_{i-1},x_i]}f,\qquad m_i=\inf_{[x_{i-1},x_i]}f
 $$
 
 $$
-U(f,P)=\sum M_i\,\Delta x_i,\qquad L(f,P)=\sum m_i\,\Delta x_i
+U(f,P)=\sum M_i\thinspace\Delta x_i,\qquad L(f,P)=\sum m_i\thinspace\Delta x_i
 $$
 
 상적분을 $\inf_PU(f,P)$, 하적분을 $\sup_PL(f,P)$ 라 하고 둘이 같으면 Darboux 적분 가능이라 한다. 유계함수에 대해 Darboux 적분 가능과 Riemann 적분 가능은 동치이며, 값도 같다. 실제 증명에서는 거의 언제나 Darboux 쪽을 쓴다.

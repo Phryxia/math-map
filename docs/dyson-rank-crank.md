@@ -41,7 +41,7 @@ rank 를 계산하면 순서대로 $4-1=3,\ 3-2=1,\ 2-2=0,\ 2-3=-1,\ 1-4=-3$ 이
 rank 가 $11$ 에서 실패하는 것을 보면 정의를 손봐야 한다는 것을 알 수 있다. Andrews–Garvan 의 답은 $1$ 을 특별 취급하는 것이다. 분할 $\lambda$ 에서 $1$ 의 개수를 $\omega$ 라 하고 $\omega$ 보다 큰 부분의 개수를 $\mu$ 라 하면
 
 $$
-\mathrm{crank}(\lambda)=\begin{cases}\text{가장 큰 부분}&\omega=0\\ \mu-\omega&\omega>0\end{cases}
+\mathrm{crank}(\lambda)=\begin{cases}\text{가장 큰 부분}&\omega=0\cr \mu-\omega&\omega>0\end{cases}
 $$
 
 정의가 rank 보다 인위적으로 보이지만, 생성함수 쪽에서 보면 오히려 crank 쪽이 깔끔하다.
@@ -100,7 +100,7 @@ $$
 $\omega(\lambda)$ 를 $1$ 인 부분의 개수, $\mu(\lambda)$ 를 $\omega(\lambda)$ 보다 큰 부분의 개수라 하고
 
 $$
-\mathrm{crank}(\lambda)=\begin{cases}\lambda_1&\omega(\lambda)=0\\[2pt]\mu(\lambda)-\omega(\lambda)&\omega(\lambda)>0\end{cases}
+\mathrm{crank}(\lambda)=\begin{cases}\lambda_1&\omega(\lambda)=0\cr\mu(\lambda)-\omega(\lambda)&\omega(\lambda)>0\end{cases}
 $$
 
 **정리 (Andrews–Garvan, 1988)** crank 는 $5n+4$ 와 $7n+5$ 와 $11n+6$ 에서 각각 법 $5,7,11$ 로 균등 분포한다. 즉 세 Ramanujan 합동식을 모두 조합적으로 설명한다.

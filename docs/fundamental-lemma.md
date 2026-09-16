@@ -5,7 +5,7 @@
 [Selberg 대각합 공식](selberg-trace-formula.md)은 $\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H$ 의 Laplace 스펙트럼을 닫힌 측지선으로 바꿔 놓았다. 왼쪽이 해석(스펙트럼), 오른쪽이 기하였다. Arthur 가 이것을 임의의 환원군 $G$ 와 아델 상 $G(\mathbb Q)\backslash G(\mathbb A)$ 로 올린 것이 **Arthur–Selberg 대각합 공식**이고, 그 모양은 여전히 같다.
 
 $$
-\underbrace{\sum_\pi m(\pi)\,\mathrm{tr}\,\pi(f)}_{\text{스펙트럼}}\;=\;\underbrace{\sum_{\{\gamma\}}\mathrm{vol}(\cdot)\,\mathrm{O}_\gamma(f)}_{\text{기하}}
+\underbrace{\sum_\pi m(\pi)\thinspace\mathrm{tr}\thinspace\pi(f)}_{\text{스펙트럼}}\thickspace=\thickspace\underbrace{\sum_{\lbrace\gamma\rbrace}\mathrm{vol}(\cdot)\thinspace\mathrm{O}_\gamma(f)}_{\text{기하}}
 $$
 
 측지선 자리에 들어온 것이 **궤도적분** $\mathrm{O}_\gamma(f)$ 다. 곡면에서 측지선이 켤레류에 대응했던 것과 같은 자리다.
@@ -15,13 +15,13 @@ $$
 그런데 여기서 걸린다. $G$ 의 켤레류는 대수적 폐포 위에서 보는 것과 바닥체 위에서 보는 것이 다르다. 폐포에서 하나였던 켤레류가 바닥체 위에서는 여러 조각으로 갈라진다. 갈라진 조각들을 그냥 더한 것(안정 궤도적분)은 잘 다뤄지지만, 조각마다 부호를 달아 더한 것($\kappa$ 궤도적분)은 $G$ 안에서 해석되지 않는다. **Langlands 의 발견은 그 $\kappa$ 궤도적분이 더 작은 군 $H$ — 내시군(endoscopic group) — 의 안정 궤도적분과 같아 보인다는 것이었다.**
 
 $$
-\mathrm{O}^\kappa_\gamma(f)\;\stackrel?=\;\Delta(\gamma_H,\gamma)\;\mathrm{SO}_{\gamma_H}(f^H)
+\mathrm{O}^\kappa_\gamma(f)\thickspace\stackrel?=\thickspace\Delta(\gamma_H,\gamma)\thickspace\mathrm{SO}_{\gamma_H}(f^H)
 $$
 
 가장 기본이 되는 경우, 곧 $f$ 가 극대 콤팩트 부분군의 특성함수이고 $f^H$ 가 [Satake 동형](satake-isomorphism.md)으로 정의된 기본 사상 $b$ 의 상일 때 이 등식이 성립한다는 것이 **기본 보조정리**다. Satake 동형이 여기서 필수인 이유는 $f\mapsto f^H$ 라는 대응이 달리 정의될 방법이 없기 때문이다. 쌍대군 준동형 $\widehat H\to\widehat G$ 를 표현환 사이의 사상으로 읽고, 양쪽에서 Satake 동형으로 Hecke 대수로 끌어내린다.
 
 $$
-\mathcal H(G,K)\;\xrightarrow{\ \mathcal S\ }\;R(\widehat G)\;\longrightarrow\;R(\widehat H)\;\xrightarrow{\ \mathcal S^{-1}\ }\;\mathcal H(H,K_H)
+\mathcal H(G,K)\thickspace\xrightarrow{\ \mathcal S\ }\thickspace R(\widehat G)\thickspace\longrightarrow\thickspace R(\widehat H)\thickspace\xrightarrow{\ \mathcal S^{-1}\ }\thickspace\mathcal H(H,K_H)
 $$
 
 Langlands 는 이것을 남은 기술적 단계로 보고 "보조정리" 라 불렀다. 완전한 증명까지 30 년이 걸렸고, Ngô Bảo Châu 가 2008 년에 Hitchin 올뭉치의 기하로 증명해 2010 년 Fields 메달을 받았다. 이름만 보조정리로 남았다.
@@ -85,7 +85,7 @@ $H$ 는 $G$ 의 부분군이 아니다. 계수는 같고 크기는 작다. $\mat
 $F$ 를 국소체, $G$ 를 $F$ 위의 환원군, $f\in C_c^\infty(G(F))$ 라 하자. 정칙 반단순 $\gamma$ 에 대해 $T=Z_G(\gamma)$ 를 두고
 
 $$
-\mathrm{O}_\gamma(f)=\int_{T(F)\backslash G(F)}f(x^{-1}\gamma x)\,dx
+\mathrm{O}_\gamma(f)=\int_{T(F)\backslash G(F)}f(x^{-1}\gamma x)\thinspace dx
 $$
 
 를 **궤도적분**이라 한다. 이것이 대각합 공식의 기하 쪽에 나타나는 양이다. $f=\mathbf 1_K$ 이면 적분은 $K$ 안에서 $\gamma$ 와 켤레가 되는 점들을 세는 것이 된다.
@@ -95,8 +95,8 @@ $$
 $\gamma$ 의 안정 켤레류에 든 $G(F)$ 켤레류 대표들을 $\gamma_1,\dots,\gamma_r$ 이라 하고, 각각에 $\mathfrak D$ 의 원소 $\mathrm{inv}(\gamma,\gamma_i)$ 를 대응시킨다. $\mathfrak D$ 의 지표 $\kappa$ 에 대해
 
 $$
-\mathrm{SO}_\gamma(f)=\sum_{i=1}^re(\gamma_i)\,\mathrm{O}_{\gamma_i}(f),\qquad
-\mathrm{O}^\kappa_\gamma(f)=\sum_{i=1}^r\kappa\bigl(\mathrm{inv}(\gamma,\gamma_i)\bigr)\,e(\gamma_i)\,\mathrm{O}_{\gamma_i}(f)
+\mathrm{SO}_\gamma(f)=\sum_{i=1}^re(\gamma_i)\thinspace\mathrm{O}_{\gamma_i}(f),\qquad
+\mathrm{O}^\kappa_\gamma(f)=\sum_{i=1}^r\kappa\bigl(\mathrm{inv}(\gamma,\gamma_i)\bigr)\thinspace e(\gamma_i)\thinspace\mathrm{O}_{\gamma_i}(f)
 $$
 
 로 둔다. $e(\gamma_i)$ 는 측도를 맞추는 인자다. $\kappa=1$ 이면 앞의 것이 뒤의 것의 특수한 경우다.
@@ -115,7 +115,7 @@ $f^H:=b(f)$ 로 쓴다. 정의가 전적으로 쌍대군 쪽에서 이루어졌�
 
 > **기본 보조정리 (Langlands–Shelstad 추측, Ngô 정리).** $G$ 가 비분기이고 $(H,\kappa,\eta)$ 가 비분기 내시 자료라 하자. $G$ 의 정칙 반단순 $\gamma$ 와 그에 대응하는 $H$ 의 $\gamma_H$ 에 대해
 > $$
-> \Delta(\gamma_H,\gamma)\,\mathrm{SO}_{\gamma_H}(\mathbf 1_{K_H})=\mathrm{O}^\kappa_\gamma(\mathbf 1_K)
+> \Delta(\gamma_H,\gamma)\thinspace\mathrm{SO}_{\gamma_H}(\mathbf 1_{K_H})=\mathrm{O}^\kappa_\gamma(\mathbf 1_K)
 > $$
 > 가 성립한다. 더 일반적으로 $\mathbf 1_K$ 자리에 임의의 $f\in\mathcal H(G,K)$ 와 $f^H=b(f)$ 를 넣어도 성립한다(가중 판).
 
@@ -128,7 +128,7 @@ $\Delta(\gamma_H,\gamma)$ 는 Langlands–Shelstad 의 이동 인자(transfer fa
 핵심은 세는 대상을 바꾸는 것이다. 등표수 $F=\mathbb F_q((t))$ 에서 궤도적분 $\mathrm{O}_\gamma(\mathbf 1_K)$ 는 $\gamma$ 가 안정화시키는 아핀 Grassmann 다양체의 점들을 세는 것이고, 그 점 집합이 **아핀 Springer 올**의 $\mathbb F_q$ 점이다.
 
 $$
-\mathrm{O}_\gamma(\mathbf 1_K)=\#\mathcal X_\gamma(\mathbb F_q)
+\mathrm{O}_\gamma(\mathbf 1_K)=\char35{}\mathcal X_\gamma(\mathbb F_q)
 $$
 
 이제 문제는 두 다양체의 점 개수 비교가 되었고, 그것은 코호몰로지 비교로 하면 된다. 그런데 아핀 Springer 올은 국소적이고 특이해서 직접 다루기 어렵다. Ngô 의 방법은 이 국소 대상들을 **대역적으로 묶는 것**이다.
@@ -158,7 +158,7 @@ $\kappa=1$ 부분이 안정 궤도적분이고, $\kappa\neq1$ 부분이 $\kappa$
 기본 보조정리가 있으면 $G$ 의 대각합 공식을 내시군들의 안정 대각합 공식의 합으로 쓸 수 있다.
 
 $$
-T_G=\sum_{H}\iota(G,H)\,ST_H
+T_G=\sum_{H}\iota(G,H)\thinspace ST_H
 $$
 
 합은 $G$ 의 내시군들에 걸친다. $G$ 자신도 그 목록에 있고($\kappa=1$ 인 항이다), 나머지가 더 작은 군이므로 귀납이 돌아간다. 이것이 Arthur 가 30 년에 걸쳐 완성한 작업의 핵심 입력이었다.

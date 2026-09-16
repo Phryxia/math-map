@@ -121,7 +121,7 @@ $$
 $G$ 를 $\mathbb Q_p$ 위의 축소군이라 하자. $S\mapsto\lbrace S\ \text{위 상대 곡선 }X_{\mathrm{FF},S}\ \text{의 }G\ \text{다발}\rbrace$ 이 perfectoid 공간의 v 위상에 대해 스택을 이루고, 이를 $\mathrm{Bun}_G$ 라 쓴다. Fargues 의 정리가 그 점들을
 
 $$
-|\mathrm{Bun}_G|\ \cong\ B(G)=\bigl\{\sigma\text{ 켤레류}\bigr\}
+|\mathrm{Bun}_G|\ \cong\ B(G)=\bigl\lbrace\sigma\text{ 켤레류}\bigr\rbrace
 $$
 
 로 준다.

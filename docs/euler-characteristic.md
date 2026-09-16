@@ -98,7 +98,7 @@ $$
 ## 곱과 합의 규칙
 
 $$
-\chi(X\times Y)=\chi(X)\,\chi(Y),\qquad \chi(X\cup Y)=\chi(X)+\chi(Y)-\chi(X\cap Y)
+\chi(X\times Y)=\chi(X)\thinspace\chi(Y),\qquad \chi(X\cup Y)=\chi(X)+\chi(Y)-\chi(X\cap Y)
 $$
 
 두 번째 식은 두 조각이 부분복합체로 맞물릴 때 성립하며, [포함배제](inclusion-exclusion.md)의 위상판이다. 원의 지표가 0이므로 곱 규칙에서 원환면의 지표가 0임이 바로 나온다.
@@ -108,7 +108,7 @@ $$
 compact 방향지음 가능 곡면에서 Gauss 곡률의 총합은 Euler 지표로 결정된다([곡률](curvature.md)).
 
 $$
-\iint_{M}K\,dA=2\pi\chi(M)
+\iint_{M}K\thinspace dA=2\pi\chi(M)
 $$
 
 기하적으로 자유로운 양인 곡률의 적분이 순수하게 위상적인 정수로 고정된다. 다면체판에서는 각 꼭짓점의 각도 결손( $2\pi$ 에서 그 꼭짓점에 모인 면각의 합을 뺀 값)을 모두 더하면 $2\pi\chi$ 가 된다(Descartes의 결손 정리).

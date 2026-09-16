@@ -35,7 +35,7 @@ $$
 사다리의 양 끝을 맞바꾸는 것이 초평면 $\alpha^\perp$ 에 대한 **반사**다.
 
 $$
-s_\alpha(\beta)=\beta-\langle\beta,\alpha\rangle\,\alpha
+s_\alpha(\beta)=\beta-\langle\beta,\alpha\rangle\thinspace\alpha
 $$
 
 $\mathfrak{sl}\_2$ 표현의 대칭이 그대로 근계의 대칭이 되므로, $s_\alpha$ 는 $\Phi$ 를 $\Phi$ 로 보낸다. 곧 근계는 자기 자신의 반사들에 닫힌 집합이고, 이 반사들이 생성하는 유한군이 **Weyl 군** $W$ 다.

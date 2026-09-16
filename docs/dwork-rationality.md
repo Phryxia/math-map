@@ -7,7 +7,7 @@
 역사는 반대로 갔다. Weil 이 추측을 낸 1949 년부터 11 년 동안 아무도 그 코호몰로지를 만들지 못했다. 1960 년에 Dwork 가 먼저 도착했는데, 코호몰로지 없이 **유리성만** 증명했다. 도구도 뜻밖이었다. $\ell\ne p$ 인 $\ell$ 진 계수가 아니라 표수와 **같은** $p$ 의 $p$ 진 해석학이었다.
 
 $$
-Z(X/\mathbb F_q,T)=\exp\!\Big(\sum_{n\ge1}\frac{\#X(\mathbb F_{q^n})}{n}T^n\Big)\in\mathbb Q(T)
+Z(X/\mathbb F_q,T)=\exp\negthinspace\Big(\sum_{n\ge1}\frac{\char35{}X(\mathbb F_{q^n})}{n}T^n\Big)\in\mathbb Q(T)
 $$
 
 $X$ 는 아무 대수집합이어도 된다. 매끄럽지 않아도, 사영이 아니어도, 특이점이 있어도 된다. 코호몰로지 증명이 요구하는 가정이 하나도 없다. 이 일반성은 지금도 Dwork 의 방법만 주는 것이다.[^1]
@@ -26,13 +26,13 @@ Dwork 가 주지 **못한** 것도 분명히 해 두자. 그의 방법은 $Z$ �
 
 $$
 \frac1p\sum_{t\in\mathbb F_p}\psi(tu)=
-\begin{cases}1&u=0\\0&u\ne0\end{cases}
+\begin{cases}1&u=0\cr 0&u\ne0\end{cases}
 $$
 
 그러므로 $f\in\mathbb F_q[x_1,\dots,x_m]$ 의 영점 개수는
 
 $$
-\#\{x:f(x)=0\}=\frac1q\sum_{t\in\mathbb F_q}\sum_{x}\psi\big(\mathrm{Tr}_{\mathbb F_q/\mathbb F_p}(tf(x))\big)
+\char35{}\lbrace x:f(x)=0\rbrace=\frac1q\sum_{t\in\mathbb F_q}\sum_{x}\psi\big(\mathrm{Tr}_{\mathbb F_q/\mathbb F_p}(tf(x))\big)
 $$
 
 가 된다. 기하 문제가 **지수합** 문제로 바뀌었다. 이제 상대해야 하는 것은 $\sum_x\psi(\mathrm{Tr}\thinspace f(x))$ 꼴의 합 하나뿐이다. [Gauss 합](gauss-sums.md)은 $f(x)=ax$ 에 곱셈 지표를 곁들인 가장 단순한 사례이고, 아래에서 다룰 Kloosterman 합은 $f(x)=ax+b/x$ 다.
@@ -67,7 +67,7 @@ $\theta$ 를 손에 넣으면 지수합이 해석적 대상이 된다. Dwork 의
 
 $$
 S_n(f)=\sum_{x\in(\mathbb F_{q^n}^\times)^m}\psi\big(\mathrm{Tr}_{\mathbb F_{q^n}/\mathbb F_p}f(x)\big)
-=(q^n-1)^m\,\mathrm{Tr}(\alpha^n)
+=(q^n-1)^m\thinspace\mathrm{Tr}(\alpha^n)
 $$
 
 여기서 $\alpha$ 는 $\theta$ 로 만든 급수를 곱한 뒤 $p$ 제곱근을 취하는 작용소이고, 무한차원 공간 위에서 **완전연속**이다. 완전연속이면 Fredholm 행렬식 $\det(1-T\alpha)$ 가 정의되고 $p$ 진 정함수이며
@@ -170,7 +170,7 @@ Dwork 의 경우 $R=\infty$ 이므로 $r>0$ 이기만 하면 된다. 정수 계�
 $$
 f\in K(T)
 \iff
-\exists\,m_0\ \ \forall m\ge m_0,\ \forall s\ge0:\quad
+\exists\thinspace m_0\ \ \forall m\ge m_0,\ \forall s\ge0:\quad
 H_m^{(s)}=\det\big(a_{s+i+j}\big)_{0\le i,j\le m}=0
 $$
 
@@ -184,7 +184,7 @@ $$
 동치로 $L$ 함수가 정확히 차수 $2$ 의 다항식이다.
 
 $$
-L(T)=\exp\Big(\sum_{n\ge1}\frac{\mathrm{Kl}_n}{n}T^n\Big)=(1-\alpha T)(1-\beta T)=1+\mathrm{Kl}_1\,T+qT^2
+L(T)=\exp\Big(\sum_{n\ge1}\frac{\mathrm{Kl}_n}{n}T^n\Big)=(1-\alpha T)(1-\beta T)=1+\mathrm{Kl}_1\thinspace T+qT^2
 $$
 
 여기서 두 절댓값이 서로 다른 일을 한다.
@@ -210,7 +210,7 @@ $p$ 진 부치가 유리성보다 더 미세한 정보를 준다. 다항식 $\su
 $\pi^{p-1}=-p$ 는 Dwork 만의 수가 아니다. $\mathbb Q(\zeta_p)$ 에서 $p$ 위의 유일한 소 아이디얼이 $(\zeta_p-1)$ 이고 $\pi$ 는 그 생성원과 결부되는 수다. [Gauss 합](gauss-sums.md)의 $p$ 진 크기를 주는 것이 Stickelberger 정리다. $\omega$ 를 Teichmüller 지표라 할 때
 
 $$
-\mathrm{ord}_p\,g(\omega^{-a})=\frac{a}{p-1},\qquad 0\le a<p-1
+\mathrm{ord}_p\thinspace g(\omega^{-a})=\frac{a}{p-1},\qquad 0\le a<p-1
 $$
 
 이고, Gross–Koblitz 정리는 값 자체를 $p$ 진 감마함수 $\Gamma_p$ 로 준다. 증명이 Dwork 의 분해함수에서 나온다. 곧 Gauss 합은 "한 점짜리 Dwork 이론" 이고, 그 $p$ 진 부치가 Newton 다각형의 기울기다. 절댓값 $\sqrt p$ 라는 아르키메데스 쪽 사실과 $\mathrm{ord}_p=a/(p-1)$ 이라는 $p$ 진 쪽 사실이 같은 수의 두 얼굴이다.

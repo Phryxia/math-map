@@ -47,7 +47,7 @@ graph TB
 각 정점이 이웃 특징의 순서 무관 집계값과 자기 특징으로 새 특징을 계산하는 모형을 대상으로 한다. 정점 $v$ 의 $t$ 번째 특징을 $h_t(v)$ 로, 이웃 집합을 $N(v)$ 로, 집계 함수를 $A_t$ 로, 결합 함수를 $U_t$ 라 한다.
 
 $$
-h_{t+1}(v)=U_t\Big(h_t(v),\,A_t\big(\{\!\{h_t(u):u\in N(v)\}\!\}\big)\Big)
+h_{t+1}(v)=U_t\Big(h_t(v),\thinspace A_t\big(\lbrace\negthinspace\lbrace h_t(u):u\in N(v)\rbrace\negthinspace\rbrace\big)\Big)
 $$
 
 그래프 전체의 출력은 정점 특징들에 순열 불변 readout 을 적용해 만든다. 여기서 표현력은 두 입력 그래프에 서로 다른 출력을 줄 수 있는 능력을 뜻한다.
@@ -57,7 +57,7 @@ $$
 논문이 제시하는 구성이다. 합 집계에 학습 가능한 스칼라 $\epsilon$ 과 다층 퍼셉트론을 붙인다.
 
 $$
-h_{t+1}(v)=\mathrm{MLP}_t\Big((1+\epsilon_t)\,h_t(v)+\sum_{u\in N(v)}h_t(u)\Big)
+h_{t+1}(v)=\mathrm{MLP}_t\Big((1+\epsilon_t)\thinspace h_t(v)+\sum_{u\in N(v)}h_t(u)\Big)
 $$
 
 $(1+\epsilon_t)$ 계수가 자기 특징과 이웃 합을 구별해 준다. 그래프 수준 readout 은 각 층의 정점 특징 합을 이어 붙인다. 얕은 층의 정보가 깊은 층에서 뭉개지는 것을 막기 위해서다.

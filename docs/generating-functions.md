@@ -57,11 +57,11 @@ $$
 
 $$
 \begin{aligned}
-&\text{이동:} && \sum_{n\ge 0}a_{n+1}x^{n}=\frac{A(x)-a_0}{x}\\
-&\text{부분합:} && \sum_{n\ge 0}\Bigl(\sum_{k\le n}a_k\Bigr)x^{n}=\frac{A(x)}{1-x}\\
-&\text{가중:} && \sum_{n\ge 0}n\,a_n x^{n}=x\,A'(x)\\
-&\text{OGF 곱:} && [x^{n}]A(x)B(x)=\sum_{k=0}^{n}a_k b_{n-k}\\
-&\text{EGF 곱:} && n!\,[x^{n}]\hat A(x)\hat B(x)=\sum_{k=0}^{n}\binom{n}{k}a_k b_{n-k}
+&\text{이동:} && \sum_{n\ge 0}a_{n+1}x^{n}=\frac{A(x)-a_0}{x}\cr
+&\text{부분합:} && \sum_{n\ge 0}\Bigl(\sum_{k\le n}a_k\Bigr)x^{n}=\frac{A(x)}{1-x}\cr
+&\text{가중:} && \sum_{n\ge 0}n\thinspace a_n x^{n}=x\thinspace A'(x)\cr
+&\text{OGF 곱:} && [x^{n}]A(x)B(x)=\sum_{k=0}^{n}a_k b_{n-k}\cr
+&\text{EGF 곱:} && n!\thinspace[x^{n}]\hat A(x)\hat B(x)=\sum_{k=0}^{n}\binom{n}{k}a_k b_{n-k}
 \end{aligned}
 $$
 
@@ -89,7 +89,7 @@ $$
 일반적으로 분모의 근의 크기가 계수의 지수적 성장률을 결정한다. 가장 작은 절댓값의 극(pole)이 지배한다.
 
 $$
-a_n\sim C\,\rho^{-n}n^{m-1},\qquad \rho=\text{가장 작은 극의 절댓값}
+a_n\sim C\thinspace\rho^{-n}n^{m-1},\qquad \rho=\text{가장 작은 극의 절댓값}
 $$
 
 이 원리를 [해석함수](holomorphic-functions.md)로 정당화하면 특이점 해석(singularity analysis)이 된다. 형식적 조작으로 얻은 급수의 [수렴](limits.md) 반경이 곧 rho다.
@@ -117,7 +117,7 @@ $$
 Euler의 오각수 정리는 이 곱의 역수를 전개한 결과다[^1].
 
 $$
-\prod_{k\ge 1}(1-x^{k})=\sum_{j\in\mathbb{Z}}(-1)^{j}x^{\,j(3j-1)/2}=1-x-x^{2}+x^{5}+x^{7}-x^{12}-\cdots
+\prod_{k\ge 1}(1-x^{k})=\sum_{j\in\mathbb{Z}}(-1)^{j}x^{\thinspace j(3j-1)/2}=1-x-x^{2}+x^{5}+x^{7}-x^{12}-\cdots
 $$
 
 두 급수의 곱이 1이므로 계수를 비교하면 부호 교대 점화식이 나오고, 이것으로 p(n)을 O(n^{3/2}) 항으로 계산할 수 있다.
@@ -133,7 +133,7 @@ $$
 집합 분할, 순열, 사상의 열거에는 EGF가 맞다. 대표적인 결과는 다음이다.
 
 $$
-\sum_{n\ge 0}B_n\frac{x^{n}}{n!}=e^{\,e^{x}-1},
+\sum_{n\ge 0}B_n\frac{x^{n}}{n!}=e^{\thinspace e^{x}-1},
 \qquad
 \sum_{n\ge 0}D_n\frac{x^{n}}{n!}=\frac{e^{-x}}{1-x}
 $$

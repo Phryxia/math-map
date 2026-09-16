@@ -34,7 +34,7 @@ $P$ 가 거짓이면 함의 전체가 참이다. 그러므로 함의가 참이�
 변수 $x$ 의 범위를 집합 $A$ 로 정하고 $P(x)$ 를 조건이라 하자.
 
 $$
-\forall x\in A\;P(x),\qquad \exists x\in A\;P(x)
+\forall x\in A\thickspace P(x),\qquad \exists x\in A\thickspace P(x)
 $$
 
 부정은 양화를 뒤집는다. $\neg\forall x\thinspace P(x)$ 는 $\exists x\thinspace \neg P(x)$ 이고, $\neg\exists x\thinspace P(x)$ 는 $\forall x\thinspace \neg P(x)$ 다. 전칭명제를 반박하려면 반례 하나면 충분하고, 존재명제를 반박하려면 모든 경우를 배제해야 한다는 비대칭이 여기서 나온다.
@@ -44,7 +44,7 @@ $$
 순서를 바꾸면 뜻이 달라진다. "각 자연수마다 그보다 큰 자연수가 있다" 는 참이지만 "모든 자연수보다 큰 자연수가 있다" 는 거짓이다.
 
 $$
-\forall n\,\exists m\;(m>n)\quad\text{참},\qquad \exists m\,\forall n\;(m>n)\quad\text{거짓}
+\forall n\thinspace\exists m\thickspace(m>n)\quad\text{참},\qquad \exists m\thinspace\forall n\thickspace(m>n)\quad\text{거짓}
 $$
 
 앞쪽은 $n$ 마다 다른 $m$ 을 골라도 되고 뒤쪽은 공통의 $m$ 하나를 요구한다. 해석학의 $\varepsilon\text{-}\delta$ 정의, 균등연속과 연속의 차이, 균등수렴과 점별수렴의 차이가 모두 이 순서 하나에 달려 있다.

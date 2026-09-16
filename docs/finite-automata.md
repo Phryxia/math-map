@@ -52,7 +52,7 @@ $$
 전이함수를 문자열로 확장한다. 빈 문자열 $\varepsilon$ 과 $a \in \Sigma$ 에 대해
 
 $$
-\hat\delta(q, \varepsilon) = q, \qquad \hat\delta(q, wa) = \delta\!\left(\hat\delta(q, w),\ a\right).
+\hat\delta(q, \varepsilon) = q, \qquad \hat\delta(q, wa) = \delta\negthinspace\left(\hat\delta(q, w),\ a\right).
 $$
 
 $M$ 이 인식하는 언어는 $L(M) = \lbrace w \in \Sigma^* : \hat\delta(q_0, w) \in F\rbrace$ 이다. 어떤 DFA가 인식하는 언어를 **정규언어**라 한다.
@@ -68,7 +68,7 @@ $\varepsilon$ 전이는 입력을 소비하지 않고 상태를 옮긴다. 상�
 구성. $Q' = \mathcal P(Q)$ 와 시작 상태 $q_0' = E(\lbrace q_0\rbrace)$ 를 두고, 전이를
 
 $$
-\delta'(S, a) = E\!\left(\bigcup_{q \in S} \delta(q, a)\right),
+\delta'(S, a) = E\negthinspace\left(\bigcup_{q \in S} \delta(q, a)\right),
 $$
 
 로 하고 수용 상태를 $F' = \lbrace S \subseteq Q : S \cap F \neq \emptyset\rbrace$ 으로 둔다. 문자열 길이에 대한 귀납법으로 $\hat\delta'(q_0', w)$ 가 "$N$ 이 $w$ 를 읽은 뒤 있을 수 있는 상태 전체"임을 보이면, 수용 조건이 일치한다. ∎

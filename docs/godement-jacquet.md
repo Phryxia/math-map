@@ -7,8 +7,8 @@
 그 논문은 $\mathrm{GL}_1$ 의 이야기다. Godement 와 Jacquet 이 1972 년에 같은 일을 $\mathrm{GL}_n$ 에서 했다.
 
 $$
-Z(s,\Phi,\varphi)=\int_{\mathrm{GL}_n(\mathbb A)}\Phi(g)\,\varphi(g)\,
-\lvert\det g\rvert^{\,s+\frac{n-1}2}\,dg
+Z(s,\Phi,\varphi)=\int_{\mathrm{GL}_n(\mathbb A)}\Phi(g)\thinspace\varphi(g)\thinspace
+\lvert\det g\rvert^{\thinspace s+\frac{n-1}2}\thinspace dg
 $$
 
 $\Phi$ 는 행렬공간 위의 Schwartz 함수이고 $\varphi$ 는 표현 $\pi$ 의 **행렬 계수**다. 이 적분 하나가 $\mathrm{GL}_n$ 의 모든 첨점 자기동형 표현에 대해 **표준 $L$ 함수** $L(s,\pi)$ 의 해석적 접속과 함수방정식을 준다.
@@ -32,7 +32,7 @@ $M_n$ 은 $n^2$ 차원 벡터공간이고 $\mathrm{GL}_n$ 은 그 안에서 $\de
 $\mathrm{GL}_1$ 에서 Tate 의 적분은
 
 $$
-Z(s,f,\chi)=\int_{\mathbb A^\times}f(x)\,\chi(x)\,\lvert x\rvert^s\,d^\times x
+Z(s,f,\chi)=\int_{\mathbb A^\times}f(x)\thinspace\chi(x)\thinspace\lvert x\rvert^s\thinspace d^\times x
 $$
 
 였다. 세 부품이 있다.
@@ -107,8 +107,8 @@ $$
 $F$ 를 국소체, $\pi$ 를 $\mathrm{GL}_n(F)$ 의 기약 허용 표현, $\varphi$ 를 그 행렬 계수, $\Phi\in\mathcal S(M_n(F))$ 라 하자.
 
 $$
-Z(s,\Phi,\varphi)=\int_{\mathrm{GL}_n(F)}\Phi(g)\,\varphi(g)\,
-\lvert\det g\rvert^{\,s+\frac{n-1}2}\,dg
+Z(s,\Phi,\varphi)=\int_{\mathrm{GL}_n(F)}\Phi(g)\thinspace\varphi(g)\thinspace
+\lvert\det g\rvert^{\thinspace s+\frac{n-1}2}\thinspace dg
 $$
 
 $\mathrm{Re}(s)$ 가 충분히 크면 수렴하고, $q^{-s}$ 의 유리함수로 접속한다. 이런 적분 전체가 만드는 $\mathbb C[q^{\pm s}]$ 가군의 생성원이 국소 $L$ 인자 $L(s,\pi)$ 다.
@@ -121,7 +121,7 @@ $\pi$ 를 $\mathrm{GL}_n(\mathbb A)$ 의 첨점 자기동형 표현이라 하고
 > $$Z(s,\Phi,\varphi)=Z(1-s,\widehat\Phi,\tilde\varphi)$$
 > 를 만족한다. 여기서 $\tilde\varphi(g)=\varphi(g^{-1})$ 는 반대표현 $\tilde\pi$ 의 행렬 계수다.
 > 따라서 완비 $L$ 함수 $\Lambda(s,\pi)=\prod_vL(s,\pi_v)$ 가 정함수이고
-> $$\Lambda(s,\pi)=\varepsilon(s,\pi)\,\Lambda(1-s,\tilde\pi)$$
+> $$\Lambda(s,\pi)=\varepsilon(s,\pi)\thinspace\Lambda(1-s,\tilde\pi)$$
 > 다.
 
 $n=1$ 에서 $\zeta$ 함수에 극점이 생기는 것은 자명한 지표의 경우이고, $n\ge2$ 의 첨점 표현에서는 극점이 없다.
@@ -163,7 +163,7 @@ $n=1$ 에서 $\zeta$ 함수에 극점이 생기는 것은 자명한 지표의 �
 $n=2$ 에서 무게 $k$ 의 Hecke 고유형식 $f=\sum a_nq^n$ 에 딸린 $\pi_f$ 의 Satake 매개변수는 정규화 전에
 
 $$
-\{\alpha_p,\beta_p\},\qquad\alpha_p+\beta_p=a_p,\quad\alpha_p\beta_p=p^{k-1}
+\lbrace\alpha_p,\beta_p\rbrace,\qquad\alpha_p+\beta_p=a_p,\quad\alpha_p\beta_p=p^{k-1}
 $$
 
 다. 그러면 표준 $L$ 함수가

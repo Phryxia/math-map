@@ -9,7 +9,7 @@
 Kantorovich 의 완화가 문제를 구했다. 사상 대신 **결합측도**를 쓰면 질량을 쪼갤 수 있고, 문제가 선형계획이 되어 해의 존재와 [쌍대성](lagrange-duality.md)이 함께 따라온다. 그렇게 얻은 최소 비용이 확률분포 사이의 거리가 되며, 이것이 Wasserstein 거리다.
 
 $$
-W_p(\mu,\nu)=\Big(\inf_{\pi\in\Pi(\mu,\nu)}\int|x-y|^p\,d\pi\Big)^{1/p}
+W_p(\mu,\nu)=\Big(\inf_{\pi\in\Pi(\mu,\nu)}\int|x-y|^p\thinspace d\pi\Big)^{1/p}
 $$
 
 이 거리가 [KL 발산](kl-divergence.md)이나 총변동과 결정적으로 다른 점은 **바닥 공간의 기하를 본다**는 것이다. 지지집합이 겹치지 않는 두 분포에 대해서도 유한한 값을 주고, 얼마나 멀리 떨어져 있는지까지 말해 준다. 생성모형이 최적 수송을 쓰는 이유가 여기에 있다.
@@ -62,7 +62,7 @@ graph TD
 이유는 교환 논증이다. 두 쌍이 교차한다면, 곧 $x_1<x_2$ 인데 $y_1>y_2$ 이면, 목적지를 맞바꿔 비용을 줄일 수 있다. 볼록성이 정확히 이 부등식을 보장한다. 그래서 1 차원 문제는 정렬만으로 풀리고 닫힌 공식이 나온다.
 
 $$
-W_p(\mu,\nu)^p=\int_0^1\big|F_\mu^{-1}(u)-F_\nu^{-1}(u)\big|^p\,du
+W_p(\mu,\nu)^p=\int_0^1\big|F_\mu^{-1}(u)-F_\nu^{-1}(u)\big|^p\thinspace du
 $$
 
 고차원에서는 "순서" 가 없어 이 논증이 통하지 않는다. 그 자리를 메우는 것이 Brenier 정리의 볼록성이다.
@@ -76,7 +76,7 @@ $$
 **Monge 문제.**
 
 $$
-\inf_{T:\,T_\#\mu=\nu}\int_Xc\big(x,T(x)\big)\,d\mu(x)
+\inf_{T:\thinspace T_{\char35{}}\mu=\nu}\int_Xc\big(x,T(x)\big)\thinspace d\mu(x)
 $$
 
 제약 $T_{\char35{}}\mu=\nu$ 가 $T$ 에 대해 비선형이고, 실행가능해가 없을 수 있다.
@@ -84,7 +84,7 @@ $$
 **Kantorovich 문제.** $\Pi(\mu,\nu)$ 를 $X\times Y$ 위의 확률측도 가운데 주변분포가 각각 $\mu,\nu$ 인 것들의 집합이라 하자.
 
 $$
-\mathrm{OT}_c(\mu,\nu)=\inf_{\pi\in\Pi(\mu,\nu)}\int_{X\times Y}c(x,y)\,d\pi(x,y)
+\mathrm{OT}_c(\mu,\nu)=\inf_{\pi\in\Pi(\mu,\nu)}\int_{X\times Y}c(x,y)\thinspace d\pi(x,y)
 $$
 
 $\Pi(\mu,\nu)$ 는 $\mu\otimes\nu$ 를 포함하므로 비어 있지 않고, 볼록이며 약위상에서 콤팩트하다. $c$ 가 하반연속이면 최소값이 달성된다.
@@ -106,7 +106,7 @@ $W_p$ 는 [약수렴](weak-convergence.md)을 거리화한다. 정확히는 $W_p
 Kantorovich 문제는 무한차원 선형계획이므로 쌍대가 있다.
 
 $$
-\mathrm{OT}_c(\mu,\nu)=\sup\Big\{\int\varphi\,d\mu+\int\psi\,d\nu\ :\ \varphi(x)+\psi(y)\le c(x,y)\Big\}
+\mathrm{OT}_c(\mu,\nu)=\sup\Big\lbrace\int\varphi\thinspace d\mu+\int\psi\thinspace d\nu\ :\ \varphi(x)+\psi(y)\le c(x,y)\Big\rbrace
 $$
 
 $\varphi$ 를 "출발지에서 받는 값", $\psi$ 를 "도착지에서 받는 값" 으로 읽으면, 제약은 수송업자가 직접 옮기는 비용보다 더 받을 수 없다는 조건이다. 최적에서 두 값이 같다는 것이 강쌍대성이다.
@@ -114,7 +114,7 @@ $\varphi$ 를 "출발지에서 받는 값", $\psi$ 를 "도착지에서 받는 �
 $c(x,y)=|x-y|$ 인 경우 쌍대가 한 함수로 줄어든다.
 
 $$
-W_1(\mu,\nu)=\sup_{\|f\|_{\mathrm{Lip}}\le1}\Big(\int f\,d\mu-\int f\,d\nu\Big)
+W_1(\mu,\nu)=\sup_{\Vert f\Vert_{\mathrm{Lip}}\le1}\Big(\int f\thinspace d\mu-\int f\thinspace d\nu\Big)
 $$
 
 **Kantorovich–Rubinstein 공식**이라 한다. WGAN 의 판별자가 1-Lipschitz 로 제한되는 이유가 정확히 이것이다. 판별자는 쌍대해 $f$ 를 근사하고 있다.
@@ -158,7 +158,7 @@ $$
 목적함수가 강볼록이라 해가 유일하고, 최적성 조건을 풀면 해가
 
 $$
-P=\mathrm{diag}(u)\,K\,\mathrm{diag}(v),\qquad K_{ij}=e^{-C_{ij}/\varepsilon}
+P=\mathrm{diag}(u)\thinspace K\thinspace\mathrm{diag}(v),\qquad K_{ij}=e^{-C_{ij}/\varepsilon}
 $$
 
 꼴임이 나온다. 남은 것은 $u,v$ 를 주변분포 조건에 맞추는 일이고, 두 조건을 번갈아 강제하는 것이 **Sinkhorn 반복**이다. 행렬-벡터 곱만 쓰므로 GPU 에서 빠르고, 반복 전체가 미분가능해 신경망 손실함수로 쓸 수 있다.
@@ -170,7 +170,7 @@ $$
 $(\mathcal P_2(\mathbb R^d),W_2)$ 는 측지 거리공간이다. $\mu$ 에서 $\nu$ 로 가는 측지선은 최적 사상을 따라 선형보간하는 것이다.
 
 $$
-\mu_t=\big((1-t)\,\mathrm{id}+tT\big)_\#\mu
+\mu_t=\big((1-t)\thinspace\mathrm{id}+tT\big)_{\char35{}}\mu
 $$
 
 **변위 보간**이라 한다. 두 밀도를 값으로 섞는 $(1-t)\mu+t\nu$ 와 전혀 다르다. 값 보간은 디랙 둘을 섞어 봉우리 두 개를 만들지만, 변위 보간은 봉우리 하나를 옮긴다. 이미지나 분포의 "형태" 를 섞을 때 후자가 원하는 결과를 준다.

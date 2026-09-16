@@ -51,7 +51,7 @@ $h$ 는 $\widehat h$ 의 정칙 부분이라는 뜻에서 **mock** 이고, $g$ �
 무게 $k$ 첨점형식 $g$ 의 **비정칙 Eichler 적분**은 이렇게 생겼다.
 
 $$
-g^*(\tau)=\left(\frac{i}{2\pi}\right)^{k-1}\int_{-\bar\tau}^{i\infty}\frac{\overline{g(-\bar z)}}{(z+\tau)^{k}}\,dz
+g^*(\tau)=\left(\frac{i}{2\pi}\right)^{k-1}\int_{-\bar\tau}^{i\infty}\frac{\overline{g(-\bar z)}}{(z+\tau)^{k}}\thinspace dz
 $$
 
 적분의 하한이 $-\bar\tau$ 인 것이 전부다. 정칙 Eichler 적분은 하한을 $\tau$ 로 두고 주기 다항식만큼 모듈러성이 깨지는데, 하한을 켤레로 바꾸면 그 깨짐이 사라지는 대신 정칙성이 깨진다. 결국 같은 데이터를 갖고 무엇을 포기할지만 고른 셈이다.
@@ -59,7 +59,7 @@ $$
 $g=\sum b_n q^n$ 을 대입하고 적분을 계산하면 보정항이 불완전 감마 함수의 급수로 나온다. 무게 $1/2$ mock 에 대응하는 무게 $3/2$ shadow $g=\sum_{n\ge 0} b_n q^{n}$ 의 경우
 
 $$
-g^*(\tau)=\sum_{n> 0}\overline{b_n}\,n^{-1/2}\,\Gamma\!\left(-\tfrac12,4\pi n y\right)q^{-n}
+g^*(\tau)=\sum_{n> 0}\overline{b_n}\thinspace n^{-1/2}\thinspace\Gamma\negthinspace\left(-\tfrac12,4\pi n y\right)q^{-n}
 $$
 
 꼴이고, $\Gamma(-1/2,\cdot)$ 안에 $y$ 가 들어 있어 $\bar\tau$ 의존성이 생긴다. 계수에 $q^{-n}$ 이 붙는 것에 주의한다. 보정항은 정칙 부분과 반대 방향으로 자라는 조각이며, 둘이 합쳐져야 첨점에서의 증가가 통제된다.
@@ -81,7 +81,7 @@ $\mathrm{SL}_2(\mathbb Z)$ 의 유한지표 부분군 $\Gamma$ 와 $k\in\frac12\
 이때 Fourier 전개가 두 조각으로 갈린다.
 
 $$
-\widehat h(\tau)=\underbrace{\sum_{n\gg-\infty}c^+(n)q^n}_{\text{정칙 부분 }h}+\underbrace{\sum_{n<0}c^-(n)\,\Gamma(1-k,4\pi|n|y)\,q^{n}}_{\text{비정칙 부분}}
+\widehat h(\tau)=\underbrace{\sum_{n\gg-\infty}c^+(n)q^n}_{\text{정칙 부분 }h}+\underbrace{\sum_{n<0}c^-(n)\thinspace\Gamma(1-k,4\pi|n|y)\thinspace q^{n}}_{\text{비정칙 부분}}
 $$
 
 정칙 부분 $h$ 를 **mock 모듈러 형식**, $g=\xi_k\widehat h$ 를 그 **shadow** 라 한다. $g$ 는 무게 $2-k$ 의 (약정칙이 아닌 진짜) 모듈러 형식이고, 위 전개의 $c^-$ 가 $g$ 의 계수를 켤레한 것으로 결정된다.
@@ -103,7 +103,7 @@ $$
 가 무게 $1/2$ Jacobi 형식의 변환법칙을 만족함을 보였다. 여기서
 
 $$
-R(u;\tau)=\sum_{n\in\mathbb Z+\frac12}\left\{\operatorname{sgn}(n)-E\!\left((n+a)\sqrt{2y}\right)\right\}(-1)^{n-\frac12}e^{-2\pi i n u}q^{-n^2/2}
+R(u;\tau)=\sum_{n\in\mathbb Z+\frac12}\left\lbrace\operatorname{sgn}(n)-E\negthinspace\left((n+a)\sqrt{2y}\right)\right\rbrace(-1)^{n-\frac12}e^{-2\pi i n u}q^{-n^2/2}
 $$
 
 이고 $E(z)=2\int_0^z e^{-\pi t^2}dt$ 이고 $a=\operatorname{Im}(u)/y$ 다. $\operatorname{sgn}$ 을 오차함수로 매끄럽게 바꾸는 것이 보정의 정체다. Ramanujan 의 mock theta 함수는 전부 $\mu$ 의 특수화로 쓰이므로, 이 한 정리가 열일곱 개를 한꺼번에 설명한다.
@@ -113,7 +113,7 @@ $$
 두 번째 원천이다. 부호수 $(r-1,1)$ 의 부정부호 이차형식 $Q$ 에 대해 $\sum_{n\in\mathbb Z^r}q^{Q(n)}$ 은 발산한다. 양의정부호 격자에서와 달리 $Q$ 가 음수가 되는 방향이 있기 때문이다. 수렴하게 만들려면 격자점을 잘라내야 하고, 잘라내는 조건으로 두 벡터 $c_1,c_2$ 를 잡아
 
 $$
-\Theta_{c_1,c_2}(\tau)=\sum_{n\in\mathbb Z^r}\tfrac12\left\{\operatorname{sgn}(B(c_1,n))-\operatorname{sgn}(B(c_2,n))\right\}q^{Q(n)}
+\Theta_{c_1,c_2}(\tau)=\sum_{n\in\mathbb Z^r}\tfrac12\left\lbrace\operatorname{sgn}(B(c_1,n))-\operatorname{sgn}(B(c_2,n))\right\rbrace q^{Q(n)}
 $$
 
 로 둔다. 합은 수렴하지만 $\operatorname{sgn}$ 이 들어가 모듈러성이 깨진다. 여기서도 $\operatorname{sgn}$ 을 오차함수로 바꾸면 모듈러가 회복되고, 원래 급수는 그 완성의 정칙 부분, 곧 mock 모듈러 형식이 된다.
@@ -131,7 +131,7 @@ $$
 는 무게 $3/2$ mock 모듈러 형식이고, shadow 는 무게 $1/2$ theta 급수 $\theta(\tau)=\sum_{n\in\mathbb Z}q^{n^2}$ 의 상수배다. 완성은
 
 $$
-\widehat{\mathcal H}(\tau)=\mathcal H(\tau)+\frac{1}{8\sqrt\pi}\sum_{n\ge1}n\,\Gamma\!\left(-\tfrac12,4\pi n^2y\right)q^{-n^2}+\frac{1}{4\sqrt{\pi y}}
+\widehat{\mathcal H}(\tau)=\mathcal H(\tau)+\frac{1}{8\sqrt\pi}\sum_{n\ge1}n\thinspace\Gamma\negthinspace\left(-\tfrac12,4\pi n^2y\right)q^{-n^2}+\frac{1}{4\sqrt{\pi y}}
 $$
 
 이고 이것이 무게 $3/2$ 로 $\Gamma_0(4)$ 위에서 모듈러다. 상수항 $1/(4\sqrt{\pi y})$ 는 $\theta$ 의 상수항이 남긴 흔적이다. 계급수가 Eisenstein 급수 자리에 앉는다는 점에서, 이 예는 mock 현상이 예외적 기교가 아니라 산술의 기본 대상에서 이미 일어나고 있음을 보여 준다.
@@ -153,7 +153,7 @@ $$
 정칙 모듈러 형식 계수의 크기가 무게로 통제되듯, mock 쪽에도 원법이 적용된다. 다만 보정항 때문에 주항이 두 종류로 갈린다. Bringmann–Ono 는 조화 Maass 형식에 Rademacher 형 수렴 급수를 세워, 예컨대 $f(q)$ 의 계수 $\alpha(n)$ 에 대해
 
 $$
-\alpha(n)=\frac{(-1)^{n+1}}{\sqrt{n-\frac1{24}}}\sum_{c>0}\frac{A_{2c}(n)}{c}\,I_{1/2}\!\left(\frac{\pi\sqrt{24n-1}}{12c}\right)+O(1)
+\alpha(n)=\frac{(-1)^{n+1}}{\sqrt{n-\frac1{24}}}\sum_{c>0}\frac{A_{2c}(n)}{c}\thinspace I_{1/2}\negthinspace\left(\frac{\pi\sqrt{24n-1}}{12c}\right)+O(1)
 $$
 
 꼴의 정확 공식을 얻었다. Andrews–Dragonette 추측이 이 공식의 따름결과로 해결되었다. [분할수](partitions.md) 쪽 원법의 계산이 그대로 재사용되며, 차이는 Kloosterman 합 자리에 다른 곱수계가 들어간다는 것뿐이다.

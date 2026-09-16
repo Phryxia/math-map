@@ -31,7 +31,7 @@
 $G$ 와 $H$ 를 유한 단순 무향 그래프라 하고, 정점 집합을 $V_G, V_H$ 로, 간선 집합을 $E_G, E_H$ 라 하자. 전단사 $f : V_G \to V_H$ 가 서로 다른 모든 $u, v \in V_G$ 에 대해
 
 $$
-\{u,v\}\in E_G\iff\{f(u),f(v)\}\in E_H
+\lbrace u,v\rbrace\in E_G\iff\lbrace f(u),f(v)\rbrace\in E_H
 $$
 
 를 만족하면 동형사상이다. 간선이 있는 경우뿐 아니라 없는 경우도 보존해야 한다는 점에서 양방향 함의가 필수다. 이런 $f$ 가 존재하면 $G$ 와 $H$ 가 동형이라 한다.

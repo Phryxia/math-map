@@ -86,7 +86,7 @@ $$
 **적분형**: $f^{(n+1)}$ 이 연속이면
 
 $$
-R_n(x) = \frac{1}{n!} \int_c^x (x - t)^n f^{(n+1)}(t) \, dt .
+R_n(x) = \frac{1}{n!} \int_c^x (x - t)^n f^{(n+1)}(t) \thinspace dt .
 $$
 
 적분형은 [미적분학의 기본 정리](fundamental-calculus.md)에 부분적분을 반복 적용해 얻으며, 여기에 적분의 평균값 정리를 쓰면 Lagrange 형이 나온다. $f$ 가 $c$ 근방에서 해석적이라는 것은 정확히 그 근방에서 $R_n(x)$ 가 0 으로 수렴한다는 뜻이다.
@@ -106,7 +106,7 @@ $$
 **정리.** 수렴반경 $R$ 인 멱급수의 합을 $f$ 라 하면, $f$ 는 $|x-c|<R$ 에서 무한번 미분가능하고
 
 $$
-f'(x) = \sum_{n=1}^{\infty} n \, a_n (x - c)^{n-1}, \qquad \int_c^x f(t) \, dt = \sum_{n=0}^{\infty} \frac{a_n}{n+1} (x - c)^{n+1} ,
+f'(x) = \sum_{n=1}^{\infty} n \thinspace a_n (x - c)^{n-1}, \qquad \int_c^x f(t) \thinspace dt = \sum_{n=0}^{\infty} \frac{a_n}{n+1} (x - c)^{n+1} ,
 $$
 
 이며 두 급수의 수렴반경도 모두 $R$ 이다.
@@ -130,7 +130,7 @@ $$
 Taylor 급수가 수렴해도 원래 함수와 같지 않을 수 있다. 표준 예는
 
 $$
-f(x) = \begin{cases} e^{-1/x^2} & x \ne 0 \\ 0 & x = 0 \end{cases}
+f(x) = \begin{cases} e^{-1/x^2} & x \ne 0 \cr 0 & x = 0 \end{cases}
 $$
 
 이다. $x$ 가 0 이 아닌 곳에서 도함수는 $p(1/x)e^{-1/x^2}$ 꼴($p$ 는 다항식)이고, 지수적 감쇠가 임의의 다항식 증가를 이기므로 $x$ 가 0 으로 갈 때 모든 도함수가 0 으로 간다. 따라서 모든 계 도함수가 원점에서 0 이며 Maclaurin 급수는 항등적으로 0 이다. 이 급수는 실직선 전체에서 수렴하지만 $f$ 와 같은 값을 갖는 점은 원점뿐이다.

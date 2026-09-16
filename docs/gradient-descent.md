@@ -24,7 +24,7 @@ graph TD
 $f$ 를 $\mathbb{R}^n$ 에서 정의된 미분가능 함수라 한다. 고정 학습률(step size) $\eta>0$ 에 대한 경사하강법은 다음 점화식이다.
 
 $$
-x_{k+1}=x_k-\eta\,\nabla f(x_k),\qquad k=0,1,2,\dots
+x_{k+1}=x_k-\eta\thinspace\nabla f(x_k),\qquad k=0,1,2,\dots
 $$
 
 $f$ 의 기울기가 $L$ -Lipschitz라는 것( $L$ -smooth)은 다음을 뜻한다.

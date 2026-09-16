@@ -39,7 +39,7 @@ $P$ 를 만족하는 계산 가능 부분함수와 만족하지 않는 것이 �
 비자명한 의미론적 성질 $P$ 에 대해
 
 $$
-I_P=\{e:P(\varphi_e)\}
+I_P=\lbrace e:P(\varphi_e)\rbrace
 $$
 
 의 소속 여부를 모든 프로그램에서 항상 멈추며 정확히 판정하는 알고리즘은 없다.
@@ -55,7 +55,7 @@ $$
 $$
 \varphi_N=
 \begin{cases}
-g,&M(w)\text{ halts},\\
+g,&M(w)\text{ halts},\cr
 \bot,&M(w)\text{ does not halt}.
 \end{cases}
 $$

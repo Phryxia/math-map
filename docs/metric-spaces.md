@@ -28,9 +28,9 @@ $X$ 를 집합, $d : X \times X \to \mathbb{R}$ 를 함수라 하자. 임의의 
 
 $$
 \begin{aligned}
-d(x,y)&\ge0 &&\text{음이 아님}\\
-d(x,y)=0&\iff x=y &&\text{분리}\\
-d(x,y)&=d(y,x) &&\text{대칭}\\
+d(x,y)&\ge0 &&\text{음이 아님}\cr
+d(x,y)=0&\iff x=y &&\text{분리}\cr
+d(x,y)&=d(y,x) &&\text{대칭}\cr
 d(x,z)&\le d(x,y)+d(y,z) &&\text{삼각부등식}
 \end{aligned}
 $$
@@ -40,7 +40,7 @@ $$
 ## 열린 공과 열린 집합
 
 $$
-B(x,r)=\{y\in X: d(x,y)<r\},\qquad r>0
+B(x,r)=\lbrace y\in X: d(x,y)<r\rbrace,\qquad r>0
 $$
 
 $U \subseteq X$ 의 모든 점 $x$ 에 대해 $B(x, r) \subseteq U$ 인 $r > 0$ 이 있으면 $U$ 를 열린 집합이라 한다. 열린 집합의 모임은 임의 합집합과 유한 교집합에 닫혀 있어 [위상](topology.md)을 이룬다. 이를 $d$ 가 유도한 위상이라 한다.
@@ -60,7 +60,7 @@ $$
 $d$ 와 $d'$ 가 같은 열린 집합을 주면 위상동치라 한다. 특히 상수 $0 < c \le C$ 가 있어
 
 $$
-c\,d(x,y)\le d'(x,y)\le C\,d(x,y)
+c\thinspace d(x,y)\le d'(x,y)\le C\thinspace d(x,y)
 $$
 
 이면 강동치이며 위상동치를 함의한다. 유한차원 벡터공간 위의 모든 노름은 서로 강동치이고, 그래서 $\mathbb{R}^n$ 에서는 어떤 노름을 쓰든 수렴과 연속의 개념이 달라지지 않는다. 무한차원에서는 이 보장이 사라진다.

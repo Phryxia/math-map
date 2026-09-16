@@ -13,7 +13,7 @@ $$
 마지막 화살표가 핵심이다. Grothendieck 의 사전에서 층은 Frobenius 대각합을 통해 함수를 낳지만, 층은 함수보다 많은 정보를 담는다. 그래서 대응의 진술이 "같은 수" 가 아니라 "같은 범주" 가 된다.
 
 $$
-\mathrm{D}(\mathrm{Bun}_G)\;\simeq\;\mathrm{QCoh}\big(\mathrm{LocSys}_{\hat G}\big)\quad(\text{대략})
+\mathrm{D}(\mathrm{Bun}_G)\thickspace\simeq\thickspace\mathrm{QCoh}\big(\mathrm{LocSys}_{\hat G}\big)\quad(\text{대략})
 $$
 
 왼쪽은 $G$ 다발의 모듈라이 위의 $D$ 가군, 오른쪽은 쌍대군 $\hat G$ 의 국소계가 이루는 스택 위의 준연접층이다. 2024년에 Gaitsgory, Raskin 과 공저자들이 이 진술(비분기, 표수 0)의 증명을 아홉 편의 논문으로 발표했다[^1].
@@ -47,7 +47,7 @@ $$
 자기동형 형식은 $G(F)\backslash G(\mathbb A)/K$ 위의 함수인데, 함수체의 경우 이 이중잉여가 기하적 대상으로 해석된다.
 
 $$
-G(F)\backslash G(\mathbb A_F)/G(\mathcal O)\;\cong\;\mathrm{Bun}_G(\mathbb F_q)
+G(F)\backslash G(\mathbb A_F)/G(\mathcal O)\thickspace\cong\thickspace\mathrm{Bun}_G(\mathbb F_q)
 $$
 
 곡선 $X$ 위의 $G$ 다발의 동형류다. Weil 의 관찰이며, 자기동형 형식이 사실은 모듈라이 공간 위의 함수였다는 재해석이다. 그러므로 층으로 올릴 자리는 $\mathrm{Bun}_G$ 다.
@@ -57,7 +57,7 @@ $$
 고전적 Hecke 작용소는 한 자리 $x$ 에서 준위 구조를 바꾸는 평균이었다. 기하적으로는 $G$ 다발을 점 $x$ 에서만 수정하는 조작이 된다.
 
 $$
-\mathrm{Hecke}=\{(\mathcal P,\mathcal P',x,\ \varphi\colon\mathcal P|_{X\setminus x}\xrightarrow{\sim}\mathcal P'|_{X\setminus x})\}
+\mathrm{Hecke}=\lbrace(\mathcal P,\mathcal P',x,\ \varphi\colon\mathcal P|_{X\setminus x}\xrightarrow{\sim}\mathcal P'|_{X\setminus x})\rbrace
 $$
 
 이 대응 스택이 $\mathrm{Bun}_G\times\mathrm{Bun}_G\times X$ 로 사상하고, 두 사영을 따라 당기고 미는 것이 Hecke 작용이다. 수정의 "종류" 는 아핀 Grassmannian의 궤도로 분류되고, 기하적 Satake 가 그 궤도를 $\hat G$ 의 기약표현 $V$ 로 이름 붙인다. 그래서 Hecke 함자가 $\hat G$ 의 표현으로 매개된다.
@@ -71,7 +71,7 @@ $$
 고전 쪽에서 자기동형 형식은 Hecke 고유함수이고, 고윳값의 모임이 Galois 표현을 결정했다. 기하 쪽의 대응물이 **Hecke 고유층**이다. $\hat G$ 국소계 $\sigma$ 가 주어졌을 때
 
 $$
-H^V_x(\mathcal F)\;\cong\;\mathcal F\boxtimes V_\sigma\qquad(\text{모든 }V,\ x\ \text{에 대해 정합적으로})
+H^V_x(\mathcal F)\thickspace\cong\thickspace\mathcal F\boxtimes V_\sigma\qquad(\text{모든 }V,\ x\ \text{에 대해 정합적으로})
 $$
 
 를 만족하는 $\mathcal F$ 를 $\sigma$ 의 고유층이라 한다. 오른쪽의 $V_\sigma$ 는 국소계 $\sigma$ 에 표현 $V$ 를 적용해 얻는 $X$ 위의 국소계다. 고윳값이 수가 아니라 **국소계** 라는 점이 기하판의 특징이고, 대응이 "$\sigma$ 마다 고유층이 하나" 라는 형태를 띠는 이유다.
@@ -81,7 +81,7 @@ $$
 "국소계마다 고유층이 하나씩" 이라는 진술은 사실 부정확하다. $\mathrm{LocSys}_{\hat G}$ 가 스택이라 자기동형과 특이점을 갖고, 기약이 아닌 국소계에서는 고유층이 유일하지 않다. 올바른 진술은 개별 대상의 대응이 아니라 범주 전체의 동치다.
 
 $$
-\mathbb L_G\colon\quad\mathrm{D}\text{-}\mathrm{mod}(\mathrm{Bun}_G)\;\xrightarrow{\ \sim\ }\;\mathrm{IndCoh}_{\mathcal N}\big(\mathrm{LocSys}_{\hat G}\big)
+\mathbb L_G\colon\quad\mathrm{D}\text{-}\mathrm{mod}(\mathrm{Bun}_G)\thickspace\xrightarrow{\ \sim\ }\thickspace\mathrm{IndCoh}_{\mathcal N}\big(\mathrm{LocSys}_{\hat G}\big)
 $$
 
 Arinkin–Gaitsgory 가 다듬은 형태로, 오른쪽에 나타나는 받침 조건 $\mathcal N$ (멱영 특이 받침)이 순진한 진술을 고치는 장치다. 이 동치가 Hecke 작용과 호환되고, 왼쪽의 "건너뜀 층(skyscraper)" 이 오른쪽의 고유층에 대응한다.

@@ -19,13 +19,13 @@
 확률변수란 가측함수 $X:\Omega\to\mathbb R$ , 즉 모든 Borel 집합 $B$ 에 대해 $X$ 의 역상이 $\mathcal F$ 에 속하는 함수다.
 
 $$
-X^{-1}(B)=\{\omega\in\Omega: X(\omega)\in B\}\in\mathcal F\qquad(\forall B\in\mathcal B)
+X^{-1}(B)=\lbrace\omega\in\Omega: X(\omega)\in B\rbrace\in\mathcal F\qquad(\forall B\in\mathcal B)
 $$
 
 $X$ 의 분포(law)는 $P$ 를 $X$ 로 밀어 보낸 상측도다.
 
 $$
-P_X(B)=P\!\left(X^{-1}(B)\right),\qquad B\in\mathcal B
+P_X(B)=P\negthinspace\left(X^{-1}(B)\right),\qquad B\in\mathcal B
 $$
 
 누적분포함수는 다음으로 정의하며, 우연속이고 단조증가하며 양 끝에서 0과 1로 가는 함수다.
@@ -39,21 +39,21 @@ $$
 $X$ 가 음이 아니거나 적분 가능할 때 기댓값은 $P$ 에 대한 Lebesgue 적분이다[^2]. 상측도의 적분 변환 공식을 쓰면 분포만으로도 계산된다.
 
 $$
-\mathbb E[X]=\int_\Omega X\,dP=\int_{\mathbb R} t\,dP_X(t)
+\mathbb E[X]=\int_\Omega X\thinspace dP=\int_{\mathbb R} t\thinspace dP_X(t)
 $$
 
 적분 가능하다는 것은 $X$ 의 절댓값의 기댓값이 유한하다는 뜻이다. 더 일반적으로 Borel 함수 $g$ 에 대해 다음이 성립한다.
 
 $$
-\mathbb E[g(X)]=\int_{\mathbb R} g(t)\,dP_X(t)
+\mathbb E[g(X)]=\int_{\mathbb R} g(t)\thinspace dP_X(t)
 $$
 
 이산형이면 $P_X$ 가 가산개의 점에 질량을 주므로 적분은 합이 되고, $P_X$ 가 Lebesgue 측도에 대해 절대연속이면 [Radon–Nikodym 정리](radon-nikodym.md)가 주는 밀도 $f$ 로 적분이 된다.
 
 $$
-\mathbb E[g(X)]=\sum_k g(x_k)\,p_k
+\mathbb E[g(X)]=\sum_k g(x_k)\thinspace p_k
 \qquad\text{또는}\qquad
-\mathbb E[g(X)]=\int_{\mathbb R} g(t)f(t)\,dt
+\mathbb E[g(X)]=\int_{\mathbb R} g(t)f(t)\thinspace dt
 $$
 
 ## 분산
@@ -61,7 +61,7 @@ $$
 2차 모멘트가 유한할 때 분산과 표준편차를 다음으로 정의한다.
 
 $$
-\operatorname{Var}(X)=\mathbb E\!\left[(X-\mathbb E X)^2\right]=\mathbb E[X^2]-(\mathbb E X)^2,
+\operatorname{Var}(X)=\mathbb E\negthinspace\left[(X-\mathbb E X)^2\right]=\mathbb E[X^2]-(\mathbb E X)^2,
 \qquad \sigma_X=\sqrt{\operatorname{Var}(X)}
 $$
 
@@ -80,7 +80,7 @@ $$
 적분 가능한 $X$ , $Y$ 와 실수 $a$ , $b$ 에 대해 다음이 성립한다.
 
 $$
-\mathbb E[aX+bY]=a\,\mathbb E[X]+b\,\mathbb E[Y]
+\mathbb E[aX+bY]=a\thinspace\mathbb E[X]+b\thinspace\mathbb E[Y]
 $$
 
 증명은 Lebesgue 적분의 표준적인 단계 논법을 따른다[^1]. 지시함수에서는 측도의 가법성이 곧 등식이고, 음이 아닌 단순함수에서는 유한합이므로 직접 확인되며, 음이 아닌 가측함수에서는 단순함수의 증가열을 잡아 [단조 수렴 정리](monotone-convergence.md)로 극한을 교환한다. 일반 적분 가능 함수는 양의 부분과 음의 부분으로 나누어 적용한다. 독립성은 전혀 쓰이지 않는다는 점이 중요하다.
@@ -90,19 +90,19 @@ $$
 $X$ 와 $Y$ 가 독립이고 둘 다 적분 가능하면 곱도 적분 가능하고 다음이 성립한다. 역은 성립하지 않는다.
 
 $$
-\mathbb E[XY]=\mathbb E[X]\,\mathbb E[Y]
+\mathbb E[XY]=\mathbb E[X]\thinspace\mathbb E[Y]
 $$
 
 따라서 공분산을 $\operatorname{Cov}(X,Y)=\mathbb E[XY]-\mathbb E[X]\thinspace\mathbb E[Y]$ 로 두면 독립인 경우 $0$ 이고, 일반적으로 다음이 성립한다.
 
 $$
-\operatorname{Var}\!\left(\sum_{i=1}^n X_i\right)=\sum_{i=1}^n\operatorname{Var}(X_i)+2\sum_{i<j}\operatorname{Cov}(X_i,X_j)
+\operatorname{Var}\negthinspace\left(\sum_{i=1}^n X_i\right)=\sum_{i=1}^n\operatorname{Var}(X_i)+2\sum_{i<j}\operatorname{Cov}(X_i,X_j)
 $$
 
 특히 쌍마다 상관이 없으면(독립보다 약한 조건) 분산은 가법적이다. 공분산이 $0$ 이어도 독립은 아니다. $X$ 가 $-1$ , $0$ , $1$ 을 각각 $1/4$ , $1/2$ , $1/4$ 의 확률로 가지고 $Y$ 를 $X$ 의 제곱으로 두면 $X$ 의 분포가 대칭이므로 다음과 같다.
 
 $$
-\operatorname{Cov}(X,Y)=\mathbb E[X^3]-\mathbb E[X]\,\mathbb E[X^2]=0-0\cdot\tfrac12=0
+\operatorname{Cov}(X,Y)=\mathbb E[X^3]-\mathbb E[X]\thinspace\mathbb E[X^2]=0-0\cdot\tfrac12=0
 $$
 
 그러나 $Y$ 는 $X$ 로 완전히 결정되므로 두 변수는 독립이 아니다.
@@ -130,7 +130,7 @@ $$
 기댓값이 언제나 존재하는 것은 아니다. 다음 밀도를 갖는 분포는 기댓값이 무한이다.
 
 $$
-f(t)=t^{-2}\ (t\ge 1),\qquad \mathbb E[X]=\int_1^\infty t\cdot t^{-2}\,dt=\infty
+f(t)=t^{-2}\ (t\ge 1),\qquad \mathbb E[X]=\int_1^\infty t\cdot t^{-2}\thinspace dt=\infty
 $$
 
 Cauchy 분포는 양의 부분과 음의 부분의 적분이 모두 무한해서 기댓값이 아예 정의되지 않는다. 극한정리의 가정에서 적분 가능성을 요구하는 이유다.
@@ -148,8 +148,8 @@ $$
 독립인 베르누이 n개의 합인 이항분포는 선형성과 분산의 가법성으로 즉시 계산된다.
 
 $$
-\mathbb E\!\left[\sum_{i=1}^n X_i\right]=np,\qquad
-\operatorname{Var}\!\left(\sum_{i=1}^n X_i\right)=np(1-p)
+\mathbb E\negthinspace\left[\sum_{i=1}^n X_i\right]=np,\qquad
+\operatorname{Var}\negthinspace\left(\sum_{i=1}^n X_i\right)=np(1-p)
 $$
 
 지시함수로 쪼개는 기법은 조합론적 계산에서 강력하다. 예를 들어 n명의 사람에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 사람 수의 기댓값은, 사람 i가 자기 모자를 받는 사건의 지시함수 합으로 보고 선형성을 쓰면 곧바로 1이다. 이때 지시함수들은 독립이 아니지만 선형성은 독립성을 요구하지 않는다.

@@ -120,7 +120,7 @@ $$
 환 준동형의 핵 $\ker f=\lbrace a:f(a)=0\rbrace$ 은 항상 아이디얼이고, 역으로 모든 아이디얼은 몫사상의 핵이다. 군에서 정규부분군이 차지하던 자리와 정확히 같으며, 제1 동형정리도 같은 형태로 성립한다.
 
 $$
-R/\ker f\;\cong\;\operatorname{im}f
+R/\ker f\thickspace\cong\thickspace\operatorname{im}f
 $$
 
 $\mathbb{Z} \to \mathbb{Z}/m\mathbb{Z}$ 의 핵이 $m\mathbb{Z}$ 이고, 다항식환에서 $x$ 에 특정 값을 대입하는 사상의 핵이 $(x - a)$ 라는 것이 대표적인 예다. 후자로부터 " $f(a) = 0$ 이면 $f$ 가 $x - a$ 로 나누어진다" 는 인수정리가 즉시 나온다.

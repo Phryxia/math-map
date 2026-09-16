@@ -62,7 +62,7 @@ $$
 무모순성 문장은 모순이 증명되지 않는다는 진술로 정의한다.
 
 $$
-\mathrm{Con}(T)\ :\equiv\ \neg\,\mathrm{Pr}_T(\ulcorner 0=1\urcorner)
+\mathrm{Con}(T)\ :\equiv\ \neg\thinspace\mathrm{Pr}_T(\ulcorner 0=1\urcorner)
 $$
 
 ## 대각선 보조정리
@@ -84,7 +84,7 @@ $T$ 가 효과적으로 공리화된 무모순 이론이고 Robinson 산술을 �
 대각선 보조정리를 $\psi(x)$ 로 " $x$ 는 증명 불가능"을 두어 적용하면 Gödel 문장 $G$ 를 얻는다.
 
 $$
-T\vdash\ G\ \leftrightarrow\ \neg\,\mathrm{Pr}_T(\ulcorner G\urcorner)
+T\vdash\ G\ \leftrightarrow\ \neg\thinspace\mathrm{Pr}_T(\ulcorner G\urcorner)
 $$
 
 **$G$ 는 증명되지 않는다**: $T$ 가 $G$ 를 증명하면 첫 번째 파생 조건으로 $T$ 는 증명 가능성도 증명하고, $G$ 의 동치에서 그 부정도 증명한다. 이는 $T$ 의 무모순성에 반한다.

@@ -13,7 +13,7 @@
 중심이 $c$ 인 원 $\gamma$ 위에서 거듭제곱을 적분해 보자. $z = c + re^{i\theta}$ 로 두면 다음을 얻는다.
 
 $$
-\oint_{\gamma}(z-c)^n\,dz=\begin{cases}2\pi i&(n=-1)\\0&(n\neq-1)\end{cases}
+\oint_{\gamma}(z-c)^n\thinspace dz=\begin{cases}2\pi i&(n=-1)\cr 0&(n\neq-1)\end{cases}
 $$
 
 $n \ne -1$ 이면 피적분함수가 원함수 $(z-c)^{n+1}/(n+1)$ 을 가지므로 닫힌 경로에서 0 이 되고, $n = -1$ 일 때만 원함수 $\log(z-c)$ 가 한 바퀴 돌 때 $2\pi i$ 만큼 어긋난다. 적분은 이 한 항만 감지하는 체다.
@@ -31,7 +31,7 @@ $1/(z-c)$ 는 $c$ 를 중심으로 한 바퀴 돌 때 편각이 $2\pi$ 만큼 �
 $f$ 가 환형 영역 $\lbrace r<|z-c|<R\rbrace$ 에서 정칙이면 그 위에서 다음과 같이 유일하게 전개된다.
 
 $$
-f(z)=\sum_{n=-\infty}^{\infty}a_n(z-c)^n,\qquad a_n=\frac{1}{2\pi i}\oint_{\gamma}\frac{f(z)}{(z-c)^{n+1}}\,dz
+f(z)=\sum_{n=-\infty}^{\infty}a_n(z-c)^n,\qquad a_n=\frac{1}{2\pi i}\oint_{\gamma}\frac{f(z)}{(z-c)^{n+1}}\thinspace dz
 $$
 
 $\gamma$ 는 환 안의 임의의 닫힌 원이다. 음수 지수 부분 $\sum_{n<0} a_n (z-c)^n$ 을 주부(principal part)라 하고, 이 부분이 특이점의 성격을 전부 결정한다. 주부가 없으면 Taylor 급수이므로 Laurent 급수는 멱급수의 확장이다.
@@ -55,7 +55,7 @@ $c$ 에서 $f$ 의 유수는 Laurent 계수 $a_{-1}$ 이고 $\operatorname{Res}_
 **유수 정리.** 단순연결 영역에서 $f$ 가 유한개의 고립특이점 $z_1, \ldots, z_k$ 를 제외하고 정칙이고, 닫힌 경로 $\gamma$ 가 그 특이점들을 지나지 않으면 다음이 성립한다.
 
 $$
-\oint_{\gamma}f(z)\,dz=2\pi i\sum_{j=1}^{k}n(\gamma,z_j)\operatorname{Res}_{z=z_j}f
+\oint_{\gamma}f(z)\thinspace dz=2\pi i\sum_{j=1}^{k}n(\gamma,z_j)\operatorname{Res}_{z=z_j}f
 $$
 
 $n(\gamma, z_j)$ 는 경로가 $z_j$ 를 감은 횟수다. 경로가 단순 닫힌 곡선이고 양의 방향이면 내부 특이점에서 1, 외부에서 0 이므로 앞 문단의 간단한 형태가 된다. 증명은 각 특이점을 작은 원으로 도려내고 주부를 항별로 적분한 뒤 Cauchy 정리로 나머지를 지우는 것이다.
@@ -87,7 +87,7 @@ $$
 $f$ 가 경로 안에서 영점 $Z$ 개, 극 $P$ 개를 중복도까지 세어 가질 때 $f'/f$ 의 유수를 모으면 다음을 얻는다.
 
 $$
-\frac{1}{2\pi i}\oint_{\gamma}\frac{f'(z)}{f(z)}\,dz=Z-P
+\frac{1}{2\pi i}\oint_{\gamma}\frac{f'(z)}{f(z)}\thinspace dz=Z-P
 $$
 
 $f'/f$ 는 $m$ 차 영점에서 유수 $m$ , $m$ 차 극에서 유수 $-m$ 을 가지기 때문이다. 좌변은 $f \circ \gamma$ 가 원점을 감는 횟수이므로, "경로를 따라 함수값이 원점을 몇 바퀴 도는가" 를 세면 내부의 영점 개수를 알 수 있다. 여기서 **Rouché 정리**가 나온다. 경로 위에서 $\lvert g \rvert < \lvert f \rvert$ 이면 $f$ 와 $f + g$ 는 내부에서 같은 개수의 영점을 가진다. 큰 원 위에서 다항식의 최고차항이 나머지를 압도한다는 사실과 결합하면 대수학의 기본정리가 한 줄로 증명된다.
@@ -99,7 +99,7 @@ $f'/f$ 는 $m$ 차 영점에서 유수 $m$ , $m$ 차 극에서 유수 $-m$ 을 �
 실수 위의 적분을 복소 경로로 닫으면 유수 계산으로 바뀐다. 반원 경로는 유리함수와 $e^{iax}$ 가 곱해진 적분에, 부채꼴 경로는 분수 거듭제곱이 든 적분에, 직사각형 경로는 쌍곡함수가 든 적분에 쓰인다. 예를 들어 상반평면의 1 차 극 $z=i$ 하나만 잡으면 다음이 나온다.
 
 $$
-\int_{-\infty}^{\infty}\frac{e^{iax}}{1+x^2}\,dx=2\pi i\operatorname{Res}_{z=i}\frac{e^{iaz}}{1+z^2}=\pi e^{-a}\quad(a>0)
+\int_{-\infty}^{\infty}\frac{e^{iax}}{1+x^2}\thinspace dx=2\pi i\operatorname{Res}_{z=i}\frac{e^{iaz}}{1+z^2}=\pi e^{-a}\quad(a>0)
 $$
 
 급수 쪽에서는 모든 정수에서 유수 1 인 극을 갖는 $\pi \cot(\pi z)$ 를 곱하고 큰 사각형 경로에서 적분값이 0 으로 감을 보이는 방법이 표준이다. 이 기법으로 $\sum 1/n^2 = \pi^2/6$ 같은 합이 나온다.

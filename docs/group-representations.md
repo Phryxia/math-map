@@ -88,7 +88,7 @@ $$
 *증명 스케치.* 부분표현 $W \subseteq V$ 를 잡고 임의의 사영 $\pi : V \to W$ 를 고른 뒤 평균을 낸다.
 
 $$
-\pi_0 = \frac{1}{|G|} \sum_{g \in G} \rho(g)\, \pi\, \rho(g)^{-1}
+\pi_0 = \frac{1}{|G|} \sum_{g \in G} \rho(g)\thinspace \pi\thinspace \rho(g)^{-1}
 $$
 
 $\pi_0$ 은 여전히 $W$ 위에서 항등이고 상이 $W$ 이며, 구성상 모든 $\rho(h)$ 와 교환한다. 따라서 $\ker \pi_0$ 이 부분표현이 되어 $V = W \oplus \ker \pi_0$ 이다. 차원에 대한 귀납으로 완전 분해를 얻는다. ∎
@@ -100,7 +100,7 @@ $1/\lvert G \rvert$ 를 쓸 수 없는 경우, 즉 $\operatorname{char} k$ 가 $
 **보조정리.** $V$ 와 $W$ 가 기약표현이면
 
 $$
-\operatorname{Hom}_G(V, W) = \begin{cases} 0 & (V \not\cong W) \\ \mathbb{C}\cdot \mathrm{id} & (V \cong W) \end{cases}
+\operatorname{Hom}_G(V, W) = \begin{cases} 0 & (V \not\cong W) \cr \mathbb{C}\cdot \mathrm{id} & (V \cong W) \end{cases}
 $$
 
 이다.
@@ -135,7 +135,7 @@ $$
 **제2 직교관계.** 지표표의 열에 대해서도 직교성이 성립한다. 켤레류 대표 $g$ 와 $h$ 에 대해
 
 $$
-\sum_{i} \chi_i(g) \overline{\chi_i(h)} = \begin{cases} |C_G(g)| & (g \sim h) \\ 0 & (\text{그 외}) \end{cases}
+\sum_{i} \chi_i(g) \overline{\chi_i(h)} = \begin{cases} |C_G(g)| & (g \sim h) \cr 0 & (\text{그 외}) \end{cases}
 $$
 
 ## 정규표현의 분해
@@ -143,13 +143,13 @@ $$
 정규표현의 지표는 $\chi_{\mathrm{reg}}(1) = \lvert G \rvert$ 이고 $g \neq 1$ 에서 $0$ 이다. 따라서
 
 $$
-\langle \chi_{\mathrm{reg}}, \chi_i \rangle = \frac{1}{|G|}\, |G| \cdot \overline{\chi_i(1)} = \dim V_i
+\langle \chi_{\mathrm{reg}}, \chi_i \rangle = \frac{1}{|G|}\thinspace |G| \cdot \overline{\chi_i(1)} = \dim V_i
 $$
 
 이고, 정규표현은 각 기약표현을 그 차수만큼 포함한다.
 
 $$
-\mathbb{C}[G] \;\cong\; \bigoplus_i V_i^{\oplus \dim V_i}, \qquad \sum_i (\dim V_i)^2 = |G|
+\mathbb{C}[G] \thickspace\cong\thickspace \bigoplus_i V_i^{\oplus \dim V_i}, \qquad \sum_i (\dim V_i)^2 = |G|
 $$
 
 이 차수 공식은 기약표현의 차수를 좁히는 강력한 제약이다. 각 차수는 $|G|$ 를 나눈다는 정리까지 더하면 후보가 거의 남지 않는다.
@@ -225,7 +225,7 @@ $$
 $G$ 가 유한 아벨군이면 모든 기약표현이 1차원이고, 지표들은 군 준동형 $G \to \mathbb C^{\times}$ 다. 이들이 $\mathbb C[G]$ 의 정규직교 기저를 이루므로 임의의 함수가
 
 $$
-f(g) = \sum_{\chi} \hat{f}(\chi)\, \chi(g), \qquad \hat{f}(\chi) = \frac{1}{|G|}\sum_{g} f(g) \overline{\chi(g)}
+f(g) = \sum_{\chi} \hat{f}(\chi)\thinspace \chi(g), \qquad \hat{f}(\chi) = \frac{1}{|G|}\sum_{g} f(g) \overline{\chi(g)}
 $$
 
 로 전개된다. $G=\mathbb Z/n$ 인 경우 지표가 $χ_k(j) = e^{2\pi i jk/n}$ 이고 위 식이 정확히 [이산 Fourier 변환](fourier.md)이다. 즉 DFT는 순환군의 표현론이고, 비아벨군으로 확장하면 행렬 값을 갖는 Fourier 변환이 된다.[^1]

@@ -129,7 +129,7 @@ $\rho|\_{G_{\mathbb Q_p}}$ 가 de Rham 이라 함은 $D_{\mathrm{dR}}(\rho)=\big
 $n=2$ 에서는 Hodge–Tate 무게와 홀짝성까지 지정한 형태로 적는다. $\rho\colon G_{\mathbb Q}\to\mathrm{GL}_2(\mathbb Q_p)$ 가 기약, 거의 모든 곳 비분기, $p$ 에서 de Rham 이고 Hodge–Tate 무게가 $k\ge2$ 인 $\lbrace 0,k-1\rbrace$ 로 **서로 다르다**고 하자. 그러면
 
 $$
-\det\rho(c)=-1\quad(c\ \text{는 복소켤레}) \;\Longrightarrow\; \rho\cong\rho_f\ \text{ (어떤 무게 } k \text{ 첨점 고유형식 } f)
+\det\rho(c)=-1\quad(c\ \text{는 복소켤레}) \thickspace\Longrightarrow\thickspace \rho\cong\rho_f\ \text{ (어떤 무게 } k \text{ 첨점 고유형식 } f)
 $$
 
 가 추측된다. 홀수 조건 $\det\rho(c)=-1$ 은 사실 잉여가 아니다. 기하적이면서 무게가 서로 다른 2 차원 표현은 Hodge 구조의 대칭 때문에 홀수일 수밖에 없다.

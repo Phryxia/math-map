@@ -41,13 +41,13 @@ graph TD
 매끄러운 다양체 $M$ 위의 **Riemann 계량**이란 각 점 $p$ 의 접공간 $T_pM$ 위에 주어진 대칭 양정부호 쌍선형형식들의 모임으로, 좌표에 대해 매끄럽게 변하는 것을 말한다. 국소 좌표계에서 성분 함수로 쓰면 다음과 같다.
 
 $$
-g_p(u, v) = \sum_{i,j} g_{ij}(p)\, u^i v^j, \qquad g_{ij} = g_{ji}, \qquad (g_{ij}) \succ 0 .
+g_p(u, v) = \sum_{i,j} g_{ij}(p)\thinspace u^i v^j, \qquad g_{ij} = g_{ji}, \qquad (g_{ij}) \succ 0 .
 $$
 
 성분을 미분 형식 표기로 쓴 것이 익숙한 선소(line element)다.
 
 $$
-ds^2 = \sum_{i,j} g_{ij}\, dx^i dx^j .
+ds^2 = \sum_{i,j} g_{ij}\thinspace dx^i dx^j .
 $$
 
 쌍 $(M, g)$ 를 **Riemann 다양체**라 한다. 임의의 매끄러운 다양체는(제2가산 가정 아래) 단위 분할을 써서 항상 Riemann 계량을 가진다.
@@ -57,8 +57,8 @@ $$
 구간 위의 조각별 매끄러운 곡선의 길이와 에너지를 다음으로 정의한다.
 
 $$
-L(\gamma) = \int_a^b \sqrt{g_{\gamma(t)}(\dot\gamma(t), \dot\gamma(t))}\, dt, \qquad
-E(\gamma) = \frac{1}{2}\int_a^b g_{\gamma(t)}(\dot\gamma(t), \dot\gamma(t))\, dt .
+L(\gamma) = \int_a^b \sqrt{g_{\gamma(t)}(\dot\gamma(t), \dot\gamma(t))}\thinspace dt, \qquad
+E(\gamma) = \frac{1}{2}\int_a^b g_{\gamma(t)}(\dot\gamma(t), \dot\gamma(t))\thinspace dt .
 $$
 
 길이는 매개화에 무관하고 에너지는 그렇지 않다. Cauchy–Schwarz 부등식에서 다음이 나오며, 등호는 속력이 일정할 때 성립한다.
@@ -72,7 +72,7 @@ $$
 연결된 $M$ 에서 두 점 사이의 거리를 잇는 곡선들의 길이의 하한으로 정의한다.
 
 $$
-d(p,q) = \inf \{ L(\gamma) : \gamma(a) = p,\ \gamma(b) = q \} .
+d(p,q) = \inf \lbrace L(\gamma) : \gamma(a) = p,\ \gamma(b) = q \rbrace .
 $$
 
 이 $d$ 는 [거리 공간](metric-spaces.md)의 공리를 만족하고, $d$ 가 정하는 위상은 원래 다양체의 위상과 일치한다. 정의에 [연결성](connectedness.md)이 필요하다. 연결이 아니면 다른 성분의 점 사이 거리가 무한대가 된다.
@@ -83,7 +83,7 @@ $$
 - **단위 구.** 구면 좌표에서 다음과 같다. 곡률은 어디서나 $1$ 이다.
 
 $$
-ds^2 = d\theta^2 + \sin^2\!\theta \, d\varphi^2 .
+ds^2 = d\theta^2 + \sin^2\negthinspace\theta \thinspace d\varphi^2 .
 $$
 
 - **쌍곡 반평면.** 위쪽 반평면에서 다음 계량을 준다. 곡률은 어디서나 $-1$ 이며, 측지선은 실축에 수직인 반직선과 실축에 중심을 둔 반원이다.
@@ -116,7 +116,7 @@ $$
 곡선이 **측지선**이라는 것은 속도장의 공변미분이 0이라는 뜻이며, 좌표에서는 다음 2계 연립 비선형 [상미분방정식](ordinary-differential-equations.md)이다.
 
 $$
-\ddot{x}^k + \sum_{i,j} \Gamma^{k}_{ij}\, \dot{x}^i \dot{x}^j = 0 .
+\ddot{x}^k + \sum_{i,j} \Gamma^{k}_{ij}\thinspace \dot{x}^i \dot{x}^j = 0 .
 $$
 
 Christoffel 기호가 매끄러우므로 Picard–Lindelöf 정리에 의해 초기 위치와 초기 속도가 주어지면 해가 국소적으로 유일하게 존재한다. 이로부터 **지수 사상**을 정의한다. 점 $p$ 와 접벡터 $v$ 에 대해, $p$ 에서 속도 $v$ 로 출발한 측지선을 시간 $1$ 만큼 따라간 지점을 대응시키는 사상이다. 원점 근방에서 지수 사상은 미분동형이며, 그 상을 normal neighborhood라 한다.
@@ -179,7 +179,7 @@ $$
 곡면에서는 곡률 적분이 위상으로 결정된다.
 
 $$
-\int_S K \, dA + \int_{\partial S} k_g \, ds = 2\pi \chi(S) .
+\int_S K \thinspace dA + \int_{\partial S} k_g \thinspace ds = 2\pi \chi(S) .
 $$
 
 이 Gauss–Bonnet 정리가 [Euler 지표](euler-characteristic.md)와 계량을 잇고, [곡면의 분류](classification-of-surfaces.md)에 기하적 해석을 준다. [균일화 정리](riemann-surfaces.md)에 따라 닫힌 곡면은 곡률이 $1$ 과 $0$ 과 $-1$ 중 하나로 일정한 계량을 가지며, 어느 것인지는 Euler 지표의 부호가 결정한다.
@@ -191,8 +191,8 @@ $$
 측지선 방정식은 초기값 문제이므로 표준 수치 적분으로 풀린다. 단위 구의 구면 좌표에서 0이 아닌 Christoffel 기호는 둘뿐이며, 방정식은 다음과 같다.
 
 $$
-\ddot{\theta} = \sin\theta \cos\theta \, \dot{\varphi}^2, \qquad
-\ddot{\varphi} = -2 \cot\theta \, \dot{\theta}\dot{\varphi} .
+\ddot{\theta} = \sin\theta \cos\theta \thinspace \dot{\varphi}^2, \qquad
+\ddot{\varphi} = -2 \cot\theta \thinspace \dot{\theta}\dot{\varphi} .
 $$
 
 해가 대원임을 검증하는 방법은 궤적을 3차원으로 매장한 뒤 초기 대원 평면의 법선과의 내적이 0으로 유지되는지 보는 것이다. 아래 구현에서 그 이탈은 배정밀도 오차 수준인 약 $10^{-13}$ 에 머문다.

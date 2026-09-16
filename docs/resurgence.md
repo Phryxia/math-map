@@ -21,13 +21,13 @@ alien 미분 $\Delta_\omega \tilde f$ 는 "$\zeta = \omega$ 에서 $\hat f$ 가 
 $\Delta_\omega$ 가 미분처럼 보이는 이유는 Borel 평면에서 곱이 합성곱이 되기 때문이다.
 
 $$
-\widehat{fg}(\zeta) = \int_0^{\zeta}\hat f(\eta)\,\hat g(\zeta - \eta)\,d\eta
+\widehat{fg}(\zeta) = \int_0^{\zeta}\hat f(\eta)\thinspace\hat g(\zeta - \eta)\thinspace d\eta
 $$
 
 이 적분이 $\zeta = \omega$ 에서 특이해지는 경로는 두 가지뿐이다. $\hat f$ 가 $\omega$ 에서 특이하고 $\hat g$ 는 원점 근처에서 정칙이거나, 그 반대다. 두 특이점이 동시에 걸리는 상황은 한 차수 더 작다. 그래서
 
 $$
-\Delta_\omega(\tilde f\tilde g) = (\Delta_\omega \tilde f)\,\tilde g + \tilde f\,(\Delta_\omega \tilde g)
+\Delta_\omega(\tilde f\tilde g) = (\Delta_\omega \tilde f)\thinspace\tilde g + \tilde f\thinspace(\Delta_\omega \tilde g)
 $$
 
 가 나온다. Leibniz 법칙은 합성곱의 기하에서 저절로 따라오는 것이지 정의로 강요한 것이 아니다.
@@ -56,7 +56,7 @@ graph TD
 지수와 거듭제곱을 함께 허용한 형식 표현
 
 $$
-F(x,\sigma) = \sum_{k \ge 0}\sigma^{k}\,e^{-kAx}\,x^{-kb}\,\tilde\Phi_k(x),
+F(x,\sigma) = \sum_{k \ge 0}\sigma^{k}\thinspace e^{-kAx}\thinspace x^{-kb}\thinspace\tilde\Phi_k(x),
 \qquad
 \tilde\Phi_k(x) = \sum_{n\ge0}a_{n}^{(k)}x^{-n}
 $$
@@ -68,7 +68,7 @@ $$
 특이 방향 $\theta$ 의 양옆에서 Borel 합을 취한 것을 **측면 합** $\mathcal S_{\theta^+}$ 와 $\mathcal S_{\theta^-}$ 라 한다. 둘은 서로 다른 해석함수를 주며, 그 차이를 형식적 대상으로 되돌린 것이 **Stokes 자동사상** $\mathfrak S_\theta$ 다.
 
 $$
-\mathcal S_{\theta^+} = \mathcal S_{\theta^-}\circ\,\mathfrak S_\theta
+\mathcal S_{\theta^+} = \mathcal S_{\theta^-}\circ\thinspace\mathfrak S_\theta
 $$
 
 $\mathfrak S_\theta$ 는 transseries 대수의 대수적 자기동형이고 $\partial_x$ 와 교환한다. 곱과 미분을 보존하는 자동사상이므로 그 로그가 미분이어야 하는데, 그 로그가 정확히 alien 미분들의 합이다.
@@ -78,7 +78,7 @@ $\mathfrak S_\theta$ 는 transseries 대수의 대수적 자기동형이고 $\pa
 $\hat f$ 를 $\zeta = \omega$ 까지 해석적으로 연장한 뒤, 도중의 특이점들을 위쪽 $+$ 나 아래쪽 $-$ 로 우회하는 모든 경로를 고려한다. $\omega$ 방향의 특이점이 $\omega_1, \dots, \omega_r$ 로 늘어서 있을 때
 
 $$
-\Delta_\omega \tilde f = \sum_{\epsilon \in \{\pm\}^{r-1}} \frac{p(\epsilon)!\,q(\epsilon)!}{r!}\;\operatorname{sing}_{\omega}\bigl(\text{경로 } \epsilon \text{ 를 따른 연장}\bigr)
+\Delta_\omega \tilde f = \sum_{\epsilon \in \lbrace\pm\rbrace^{r-1}} \frac{p(\epsilon)!\thinspace q(\epsilon)!}{r!}\thickspace\operatorname{sing}_{\omega}\bigl(\text{경로 } \epsilon \text{ 를 따른 연장}\bigr)
 $$
 
 으로 정의한다. $p, q$ 는 $\epsilon$ 안의 $+$ 와 $-$ 의 개수다. 가중평균을 쓰는 이유는 이렇게 해야 Leibniz 법칙이 정확히 성립하기 때문이다. 특이점이 하나뿐이면 합이 한 항으로 줄어 "특이점을 돌 때 생기는 불연속" 이라는 소박한 정의와 일치한다.
@@ -98,7 +98,7 @@ $$
 $F(x,\sigma)$ 가 비선형 상미분방정식의 1-매개변수 transseries 해이면
 
 $$
-\dot\Delta_{mA}F = S_m\,\sigma^{\,m+1}\frac{\partial F}{\partial\sigma}, \qquad m \ge -1
+\dot\Delta_{mA}F = S_m\thinspace\sigma^{\thinspace m+1}\frac{\partial F}{\partial\sigma}, \qquad m \ge -1
 $$
 
 가 성립한다. 상수 $S_m$ 이 **Stokes 상수**이며, 방정식이 결정하지 못하고 대역적 해석성이 결정하는 유일한 자료다. 유도는 짧다. $F$ 가 방정식을 만족하므로 양변에 $\dot\Delta$ 를 적용하면 $\dot\Delta F$ 가 변분방정식을 만족하고, $\partial_\sigma F$ 도 같은 방정식을 만족한다. 해공간이 1차원이므로 둘은 비례한다. 지수 차수를 맞추면 $\sigma^{m+1}$ 이 붙는다.
@@ -110,7 +110,7 @@ $m = -1$ 항이 특히 중요하다. $\dot\Delta_{-A}F = S_{-1}\partial_\sigma F
 Bridge equation 을 $\sigma$ 의 거듭제곱으로 전개하고 $\Delta$ 의 정의를 되돌리면, $k=0$ sector 계수의 큰 $n$ 점근이 $k=1$ sector 계수로 쓰인다.
 
 $$
-a_n^{(0)} \;\sim\; \frac{S_1}{2\pi i}\sum_{m\ge0}\frac{\Gamma(n-m-b)}{A^{\,n-m-b}}\;a_m^{(1)}
+a_n^{(0)} \thickspace\sim\thickspace \frac{S_1}{2\pi i}\sum_{m\ge0}\frac{\Gamma(n-m-b)}{A^{\thinspace n-m-b}}\thickspace a_m^{(1)}
 $$
 
 주도항 $\Gamma(n)/A^n$ 이 [Stokes 현상](stokes-phenomenon.md)에서 본 계수 성장이고, $1/n$ 보정들이 두 번째 sector 의 급수를 차례로 꺼내 온다. 한 sector 를 충분히 많이 계산하면 다른 sector 전체와 Stokes 상수를 수치로 읽을 수 있다는 뜻이다. 실제 계산에서 resurgence 가 쓰이는 방식이 대개 이것이다.
@@ -120,7 +120,7 @@ $$
 측면 합 $\mathcal S_{\theta^\pm}$ 는 실수 문제에서도 허수부를 가진다. 두 값의 평균에 해당하는 **중앙 합**(median summation)
 
 $$
-\mathcal S_{\mathrm{med}} = \mathcal S_{\theta^-}\circ\,\mathfrak S_\theta^{1/2}
+\mathcal S_{\mathrm{med}} = \mathcal S_{\theta^-}\circ\thinspace\mathfrak S_\theta^{1/2}
 $$
 
 은 실숫값을 준다. 물리에서 "섭동급수의 허수 애매성이 instanton 기여의 허수부와 상쇄된다" 고 말하는 상황이 이것의 다른 표현이다. 애매성이 사라지는 것이 아니라, transseries 의 모든 sector 를 함께 셈할 때 서로 정확히 지워진다.

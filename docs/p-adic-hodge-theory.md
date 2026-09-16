@@ -55,7 +55,7 @@ $$
 $p$ 진 유비를 세우면 다음과 같다. 왼쪽에 $G_K$ 가 작용하는 $H^n_{\mathrm{et}}(X_{\bar K},\mathbb Q_p)$ 를 놓고 오른쪽에 여과와 Frobenius 를 가진 $H^n_{\mathrm{dR}}(X/K)$ 를 놓는다. 둘을 잇는 동형은 $K$ 위에서 존재하지 않으며, 두 구조를 모두 담을 만큼 큰 환으로 올려야 한다. 그 환이 $B_{\mathrm{dR}}$ 이다.
 
 $$
-B_{\mathrm{dR}}\otimes_K H^n_{\mathrm{dR}}(X/K)\;\cong\;B_{\mathrm{dR}}\otimes_{\mathbb Q_p}H^n_{\mathrm{et}}(X_{\bar K},\mathbb Q_p)
+B_{\mathrm{dR}}\otimes_K H^n_{\mathrm{dR}}(X/K)\thickspace\cong\thickspace B_{\mathrm{dR}}\otimes_{\mathbb Q_p}H^n_{\mathrm{et}}(X_{\bar K},\mathbb Q_p)
 $$
 
 양변에 $G_K$ 가 작용한다. 왼쪽은 $B_{\mathrm{dR}}$ 성분으로만, 오른쪽은 두 성분 모두에. 불변식을 취하면 오른쪽에서 Galois 작용이 사라지고 왼쪽의 $H_{\mathrm{dR}}$ 만 남는다. 이것이 $D_{\mathrm{dR}}$ 의 의미다.
@@ -71,7 +71,7 @@ $$
 로 쓰는데, $[\varepsilon]$ 은 아래에서 정의할 Teichmüller 올림이고 $\log$ 는 $1$ 근방의 멱급수다. 중요한 것은 Galois 작용이다. $g\in G_K$ 가 $\zeta_{p^n}\mapsto\zeta_{p^n}^{\chi(g)}$ 로 작용하므로
 
 $$
-g(t)=\chi(g)\,t
+g(t)=\chi(g)\thinspace t
 $$
 
 가 되어, $t$ 는 순환지표 $\chi$ 에 대한 고유벡터다. 복소 쪽에서 복소켤레가 $2\pi i\mapsto-2\pi i$ 로 작용하는 것과 정확히 같은 역할이다. $t$ 가 가역인 환에서는 Tate 꼬임 $\mathbb Q_p(1)$ 이 자명해진다. $t^{-1}\otimes e$ 가 불변원소이기 때문이다. 주기환이란 결국 "미리 정해 둔 꼬임들을 자명하게 만드는 계수환" 이다.
@@ -134,7 +134,7 @@ $$
 다. $V$ 가 $B_{\mathrm{HT}}$ 허용일 때 **Hodge–Tate 표현**이라 하고, 이는
 
 $$
-\mathbb C_p\otimes_{\mathbb Q_p}V\;\cong\;\bigoplus_{i}\mathbb C_p(-h_i)
+\mathbb C_p\otimes_{\mathbb Q_p}V\thickspace\cong\thickspace\bigoplus_{i}\mathbb C_p(-h_i)
 $$
 
 와 같다. 중복도를 세어 나온 정수 $h_1\le\dots\le h_n$ 이 **Hodge–Tate 무게**다. 이 관례에서 $\mathbb Q_p(1)$ 의 무게는 $-1$ 이고, 아래의 de Rham 여과 점프와 부호가 일치한다[^1].
@@ -245,7 +245,7 @@ $$
 기하가 실제로 이 조건들을 만족한다는 것이 Fontaine 의 $C_{\mathrm{st}}$ 추측이며, Faltings, Tsuji, Nizioł 등에 의해 증명되었다. $X/K$ 가 고유하고 매끄러우며 $\mathcal O_K$ 위에 반안정 모형을 가지면
 
 $$
-B_{\mathrm{st}}\otimes_{K_0}H^n_{\mathrm{log-cris}}(X_k)\;\cong\;B_{\mathrm{st}}\otimes_{\mathbb Q_p}H^n_{\mathrm{et}}(X_{\bar K},\mathbb Q_p)
+B_{\mathrm{st}}\otimes_{K_0}H^n_{\mathrm{log-cris}}(X_k)\thickspace\cong\thickspace B_{\mathrm{st}}\otimes_{\mathbb Q_p}H^n_{\mathrm{et}}(X_{\bar K},\mathbb Q_p)
 $$
 
 가 $\varphi$ 와 $N$ 과 $G_K$ 와 여과를 모두 보존하며 성립한다. 좋은 환원이면 $N=0$ 이고 결정적이 되며, 이때 $D_{\mathrm{cris}}(H^n_{\mathrm{et}})=H^n_{\mathrm{cris}}(X_k/W)[1/p]$ 다. $\ell$ 진 코호몰로지가 관성 자명 여부만 말하는 자리에서 $p$ 진 코호몰로지는 특수 올의 결정 코호몰로지 전체를 복원한다.
@@ -253,7 +253,7 @@ $$
 또한 Hodge–Tate 분해
 
 $$
-\mathbb C_p\otimes_{\mathbb Q_p}H^n_{\mathrm{et}}(X_{\bar K},\mathbb Q_p)\;\cong\;\bigoplus_{i+j=n}\mathbb C_p(-i)\otimes_KH^j(X,\Omega^i_{X/K})
+\mathbb C_p\otimes_{\mathbb Q_p}H^n_{\mathrm{et}}(X_{\bar K},\mathbb Q_p)\thickspace\cong\thickspace\bigoplus_{i+j=n}\mathbb C_p(-i)\otimes_KH^j(X,\Omega^i_{X/K})
 $$
 
 이 나온다. [Hodge 이론](hodge-theory.md)의 $H^n(X,\mathbb C)=\bigoplus H^{p,q}$ 와 형태가 같고, $\mathbb C$ 자리에 $\mathbb C_p$ 가, 켤레 대칭 자리에 Tate 꼬임이 들어간 것이다.
@@ -273,13 +273,13 @@ $$
 허용성 이론이 좋은 표현만 다루는 반면, **모든** $p$ 진 표현을 선형대수로 옮기는 길도 Fontaine 이 열었다. $K_\infty=K(\mu_{p^\infty})$ 와 $\Gamma=\mathrm{Gal}(K_\infty/K)$ 로 두면 Fontaine–Wintenberger 의 노름체 정리가
 
 $$
-\mathrm{Gal}(\bar K/K_\infty)\;\cong\;\mathrm{Gal}\big(\overline{\mathbb F_q((\pi))}/\mathbb F_q((\pi))\big)
+\mathrm{Gal}(\bar K/K_\infty)\thickspace\cong\thickspace\mathrm{Gal}\big(\overline{\mathbb F_q((\pi))}/\mathbb F_q((\pi))\big)
 $$
 
 를 준다. 표수 $0$ 의 탑을 올라가면 표수 $p$ 의 체가 나타나는 것이다. 그 결과
 
 $$
-\mathrm{Rep}_{\mathbb Z_p}(G_K)\;\cong\;\{\text{에탈 }\varphi\text{–}\Gamma\text{ 가군 over }\mathbf A_K\}
+\mathrm{Rep}_{\mathbb Z_p}(G_K)\thickspace\cong\thickspace\lbrace\text{에탈 }\varphi\text{–}\Gamma\text{ 가군 over }\mathbf A_K\rbrace
 $$
 
 가 동치가 되고, Galois 코호몰로지는 Herr 복체 $D\xrightarrow{(\varphi-1,\gamma-1)}D\oplus D\to D$ 로 계산된다. 무한 차원 프로유한군의 코호몰로지가 두 작용소의 유한 복체로 바뀐다.

@@ -12,9 +12,9 @@
 - **전역 GGP**: 아델 위의 **주기 적분**이 0 이 아닌 것과 Rankin–Selberg $L$ 함수의 **중심값** $L(1/2,\pi_{n+1}\times\pi_n)$ 이 0 이 아닌 것이 동치다.
 
 $$
-\int_{H(F)\backslash H(\mathbb A)}\varphi(h)\,\varphi'(h)\,dh\ne0
+\int_{H(F)\backslash H(\mathbb A)}\varphi(h)\thinspace\varphi'(h)\thinspace dh\ne0
 \quad\Longleftrightarrow\quad
-L\!\left(\tfrac12,\pi_{n+1}\times\pi_n\right)\ne0
+L\negthinspace\left(\tfrac12,\pi_{n+1}\times\pi_n\right)\ne0
 $$
 
 왼쪽은 표현론의 양이고 오른쪽은 해석적 정수론의 양이다. GGP 는 콤팩트군에서 조합적 사실에 불과했던 분지 법칙이 아델 위로 올라가면 $L$ 함수의 산술을 통째로 담게 된다고 말한다. $n=1$ 로 내리면 이것이 Waldspurger 정리이고, 다시 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)과 [Heegner 점](heegner-points.md)의 세계로 이어진다.
@@ -120,7 +120,7 @@ $$
 
 $$
 \chi\bigl(\pi_{n+1}\otimes\pi_n\bigr)
-=\varepsilon\!\left(\tfrac12,\ \varphi_{n+1}\otimes\varphi_n,\ \psi\right)
+=\varepsilon\negthinspace\left(\tfrac12,\ \varphi_{n+1}\otimes\varphi_n,\ \psi\right)
 $$
 
 즉 **어느 군의 어느 표현이 그 1 을 갖는지를 $\varepsilon$ 인자의 부호가 결정한다.** 이것이 GGP 의 핵심이고, 순수 내부형식 여럿을 동시에 봐야 하는 이유다. 하나만 보면 중복도가 0 일 수 있다.
@@ -130,15 +130,15 @@ $$
 $F$ 가 수체이고 $\pi_{n+1},\pi_n$ 이 첨점 자기동형 표현일 때, 주기 적분을
 
 $$
-\mathcal P(\varphi,\varphi')=\int_{H(F)\backslash H(\mathbb A)}\varphi(h)\,\varphi'(h)\,\nu(h)\,dh
+\mathcal P(\varphi,\varphi')=\int_{H(F)\backslash H(\mathbb A)}\varphi(h)\thinspace\varphi'(h)\thinspace\nu(h)\thinspace dh
 $$
 
 로 둔다(Fourier–Jacobi 경우 $\theta$ 급수를 함께 넣는다). 추측은 다음이다. $\pi_{n+1}\times\pi_n$ 의 근접동치류(near-equivalence class, 거의 모든 자리에서 같은 Satake 매개변수를 갖는 표현들의 모임) 안에서
 
 $$
-\exists\,(\pi_{n+1},\pi_n)\ \text{with}\ \mathcal P\not\equiv0
+\exists\thinspace(\pi_{n+1},\pi_n)\ \text{with}\ \mathcal P\not\equiv0
 \quad\Longleftrightarrow\quad
-L\!\left(\tfrac12,\pi_{n+1}\times\pi_n\right)\ne0
+L\negthinspace\left(\tfrac12,\pi_{n+1}\times\pi_n\right)\ne0
 $$
 
 이고, 주기가 살아남는 그 하나를 찾는 일이 자리마다의 국소 GGP 다. 전역 조건이 국소 조건들의 곱으로 분해된다는 구조가 [Whittaker 유일성](whittaker-models.md)이 Euler 곱을 보장했던 것과 같은 자리에 있다.
@@ -218,7 +218,7 @@ $n$ 을 내리면 이미 알려진 정리들이 나온다.
 $$
 \frac{|\mathcal P(\varphi,\varphi')|^2}{\langle\varphi,\varphi\rangle\langle\varphi',\varphi'\rangle}
 =\frac{1}{|S_\varphi|}\cdot
-\frac{L\!\left(\tfrac12,\pi_{n+1}\times\pi_n\right)}{L(1,\pi,\mathrm{Ad})}
+\frac{L\negthinspace\left(\tfrac12,\pi_{n+1}\times\pi_n\right)}{L(1,\pi,\mathrm{Ad})}
 \cdot\prod_v\alpha_v
 $$
 
@@ -229,7 +229,7 @@ $$
 중심값이 0 이면 주기도 0 이 되어 전역 GGP 는 더 말할 것이 없다. 그때 정보는 도함수에 있다. **산술 GGP** 는 [Gross–Zagier 공식](heegner-points.md)의 일반화로, $L'(1/2,\pi_{n+1}\times\pi_n)$ 이 유니터리 Shimura 다양체 안의 **순환 사이클의 높이 쌍**과 같다고 예측한다.
 
 $$
-L'\!\left(\tfrac12,\pi_{n+1}\times\pi_n\right)\ \sim\ \langle\,\Delta,\ \Delta\,\rangle_{\mathrm{NT}}
+L'\negthinspace\left(\tfrac12,\pi_{n+1}\times\pi_n\right)\ \sim\ \langle\thinspace\Delta,\ \Delta\thinspace\rangle_{\mathrm{NT}}
 $$
 
 여기서 $\Delta$ 는 $\mathrm{Sh}(U(n))\hookrightarrow\mathrm{Sh}(U(n+1)\times U(n))$ 의 상이 주는 사이클이다. 증명의 국소 성분이 **산술 기본 보조정리**이고, W. Zhang 이 이를 증명했으며 Rapoport–Smithling–Zhang 이 관련 산술 이전 추측을 다루었다. $n=1$ 로 내리면 사이클이 Heegner 점이 되고 원래의 Gross–Zagier 가 회복된다.

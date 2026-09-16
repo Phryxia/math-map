@@ -44,7 +44,7 @@ $$
 $$
 
 $$
-\sum_{e \in \delta^{-}(v)} f(e) \;=\; \sum_{e \in \delta^{+}(v)} f(e) \quad (\forall v \in V \setminus \{s, t\})
+\sum_{e \in \delta^{-}(v)} f(e) \thickspace=\thickspace \sum_{e \in \delta^{+}(v)} f(e) \quad (\forall v \in V \setminus \lbrace s, t\rbrace)
 $$
 
 여기서 $\delta^-(v)$ 와 $\delta^+(v)$ 는 각각 $v$ 로 들어오는 간선 집합과 나가는 간선 집합이다. 첫 조건이 **용량 제약**, 둘째가 **흐름 보존**이다.
@@ -52,7 +52,7 @@ $$
 흐름의 **값**은
 
 $$
-|f| \;=\; \sum_{e \in \delta^{+}(s)} f(e) \;-\; \sum_{e \in \delta^{-}(s)} f(e)
+|f| \thickspace=\thickspace \sum_{e \in \delta^{+}(s)} f(e) \thickspace-\thickspace \sum_{e \in \delta^{-}(s)} f(e)
 $$
 
 이다. 최대유량 문제는 $\lvert f \rvert$ 를 최대화하는 것이다.
@@ -62,7 +62,7 @@ $$
 $s \in S$ 이고 $t \in T = V \setminus S$ 인 분할 $(S, T)$ 를 **$s\text{-}t$ 절단**이라 하고, 그 용량을
 
 $$
-\operatorname{cap}(S, T) \;=\; \sum_{\substack{e = (u,v) \in E \\ u \in S,\ v \in T}} c(e)
+\operatorname{cap}(S, T) \thickspace=\thickspace \sum_{\substack{e = (u,v) \in E \cr u \in S,\ v \in T}} c(e)
 $$
 
 로 정의한다. 역방향 간선은 세지 않는다는 점이 중요하다.
@@ -80,7 +80,7 @@ $G_f$ 에서 $s$ 로부터 $t$ 로 가는 경로를 **증가 경로**(augmenting
 **보조정리.** 임의의 흐름 $f$ 와 임의의 $s\text{-}t$ 절단 $(S, T)$ 에 대해
 
 $$
-|f| \;=\; \sum_{\substack{(u,v) \in E \\ u \in S, v \in T}} f(u,v) \;-\; \sum_{\substack{(u,v) \in E \\ u \in T, v \in S}} f(u,v) \;\le\; \operatorname{cap}(S, T)
+|f| \thickspace=\thickspace \sum_{\substack{(u,v) \in E \cr u \in S, v \in T}} f(u,v) \thickspace-\thickspace \sum_{\substack{(u,v) \in E \cr u \in T, v \in S}} f(u,v) \thickspace\le\thickspace \operatorname{cap}(S, T)
 $$
 
 **증명.** 흐름 보존식을 $S$ 의 모든 정점에 대해 더한다. $s$ 를 제외한 $S$ 의 정점에서는 좌우가 상쇄되어 0이고, $s$ 에서는 $\lvert f \rvert$ 가 남는다. $S$ 내부를 오가는 간선은 한 번은 유입, 한 번은 유출로 두 번 세어져 사라지므로, 결국 $S$ 에서 $T$ 로 나가는 흐름의 합에서 $T$ 에서 $S$ 로 들어오는 흐름의 합을 뺀 값이 $\lvert f \rvert$ 다. 앞항은 $\operatorname{cap}(S, T)$ 이하이고 뒷항은 0 이상이므로 부등식이 성립한다. ∎
@@ -96,7 +96,7 @@ $$
 **정리 (최대유량 최소절단).** 최대 흐름의 값과 최소 절단의 용량은 같다.
 
 $$
-\max_{f} |f| \;=\; \min_{(S,T)} \operatorname{cap}(S, T)
+\max_{f} |f| \thickspace=\thickspace \min_{(S,T)} \operatorname{cap}(S, T)
 $$
 
 **증명.** 다음 세 명제가 동치임을 보인다. (1) $f$ 는 최대 흐름이다. (2) $G_f$ 에 증가 경로가 없다. (3) 어떤 절단 $(S, T)$ 에 대해 $\lvert f \rvert = \operatorname{cap}(S, T)$ 가 성립한다.
@@ -134,7 +134,7 @@ $$
 이다. 이 LP의 쌍대는 간선마다 변수 $y_e \ge 0$ 을 두고
 
 $$
-\min \sum_{e \in E} c(e)\, y_e \quad \text{s.t.} \quad \sum_{e \in p} y_e \ge 1 \ (\forall p \in P), \quad y \ge 0
+\min \sum_{e \in E} c(e)\thinspace y_e \quad \text{s.t.} \quad \sum_{e \in p} y_e \ge 1 \ (\forall p \in P), \quad y \ge 0
 $$
 
 가 된다. 즉 "모든 $s\text{-}t$ 경로를 길이 1 이상으로 만드는 최소 비용의 간선 길이 배정"이다. 이것이 **분수 절단** 문제이며, 최대유량 최소절단 정리는 이 LP의 최적해가 항상 $0/1$ 값으로 잡힐 수 있다는 정수성 주장으로 읽힌다. 실제로 흐름 문제의 제약 행렬(접합 행렬)은 완전 유니모듈러이므로 정수 꼭짓점이 보장된다. LP 쌍대성 일반론은 [선형계획법](linear-programming.md)과 [Lagrange 쌍대성과 KKT 조건](lagrange-duality.md)에 있고, 여기서는 강 쌍대성이 조합론적으로 구성된다는 점이 특별하다.

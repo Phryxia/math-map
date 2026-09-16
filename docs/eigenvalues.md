@@ -43,7 +43,7 @@ $$
 가역행렬 $P$ 가 존재하여 $P^{-1}AP$ 가 대각행렬이면 $A$ 가 대각화 가능하다고 한다. 이때 $P$ 의 열이 고유벡터, 대각 성분이 대응하는 고윳값이다.
 
 $$
-A=P\,\mathrm{diag}(\lambda_1,\dots,\lambda_n)\,P^{-1}
+A=P\thinspace\mathrm{diag}(\lambda_1,\dots,\lambda_n)\thinspace P^{-1}
 $$
 
 # 성질
@@ -94,7 +94,7 @@ $P^{-1}AP$ 는 $A$ 와 같은 특성다항식, 같은 고윳값, 같은 중복�
 대각화된 행렬의 k제곱은 대각 성분의 k제곱이다.
 
 $$
-A^k=P\,\mathrm{diag}(\lambda_1^k,\dots,\lambda_n^k)\,P^{-1}
+A^k=P\thinspace\mathrm{diag}(\lambda_1^k,\dots,\lambda_n^k)\thinspace P^{-1}
 $$
 
 Fibonacci 점화식은 첫 행 (1,1), 둘째 행 (1,0)인 행렬의 거듭제곱이고, 그 고윳값이 황금비와 그 켤레이므로 Binet 공식이 바로 나온다.

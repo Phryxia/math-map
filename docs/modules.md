@@ -89,7 +89,7 @@ $$
 [군](groups.md)이나 [환](rings.md)에서와 같은 형태가 그대로 성립한다. $f:M\to N$ 이 준동형이면
 
 $$
-M / \ker f \;\cong\; \operatorname{im} f
+M / \ker f \thickspace\cong\thickspace \operatorname{im} f
 $$
 
 이고, 부분가군 $A, B \subseteq M$ 과 $N \subseteq L \subseteq M$ 에 대해
@@ -119,7 +119,7 @@ $$
 원소 $m \in M$ 의 소멸자는
 
 $$
-\operatorname{Ann}(m) = \{ r \in R : rm = 0 \}
+\operatorname{Ann}(m) = \lbrace r \in R : rm = 0 \rbrace
 $$
 
 이고, 이는 $R$ 의 아이디얼이다. $R$ 이 정역일 때 $\mathrm{Ann}(m) \ne 0$ 인 원소를 torsion 원소라 하고, 그 전체 $T(M)$ 은 부분가군이 된다. $T(M) = 0$ 이면 torsion-free, $T(M) = M$ 이면 torsion 가군이다. 벡터 공간에서는 항상 $T(M) = 0$ 이므로 이 개념 자체가 비어 있다.
@@ -159,13 +159,13 @@ $R$ 이 주 아이디얼 정역(PID)이면 사정이 매우 좋아진다.
 **정리.** $R$ 이 PID이고 $M$ 이 유한생성 $R$ -가군이면, 유일하게 정해지는 계수 $n \ge 0$ 과 비단원 원소 $d_1 \mid d_2 \mid \cdots \mid d_k$ 가 존재하여
 
 $$
-M \;\cong\; R^{n} \oplus R/(d_1) \oplus R/(d_2) \oplus \cdots \oplus R/(d_k)
+M \thickspace\cong\thickspace R^{n} \oplus R/(d_1) \oplus R/(d_2) \oplus \cdots \oplus R/(d_k)
 $$
 
 가 성립한다. $d_i$ 를 불변인자라 한다. 각 $R/(d_i)$ 를 소원소 거듭제곱으로 쪼개면 초등인자 형태
 
 $$
-M \;\cong\; R^{n} \oplus \bigoplus_{j} R/(p_j^{e_j})
+M \thickspace\cong\thickspace R^{n} \oplus \bigoplus_{j} R/(p_j^{e_j})
 $$
 
 도 얻는다. 두 분해의 데이터는 서로를 결정하며 $M$ 의 동형류를 완전히 결정한다.[^1]

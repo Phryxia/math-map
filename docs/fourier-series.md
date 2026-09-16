@@ -34,13 +34,13 @@ graph TD
 구간에서의 내적을 [Riemann 적분](riemann-integral.md)(또는 더 일반적으로 [Lebesgue 적분](lebesgue-integral.md))으로 정의한다.
 
 $$
-\langle f, g\rangle = \frac{1}{2\pi}\int_{-\pi}^{\pi} f(x)\,\overline{g(x)}\,dx .
+\langle f, g\rangle = \frac{1}{2\pi}\int_{-\pi}^{\pi} f(x)\thinspace\overline{g(x)}\thinspace dx .
 $$
 
 복소 지수계 $e_n(x)=\exp(inx)$ 는 이 내적에 대해 정규직교다.
 
 $$
-\langle e_n, e_m\rangle = \frac{1}{2\pi}\int_{-\pi}^{\pi} e^{i(n-m)x}\,dx = \begin{cases} 1 & n = m,\\ 0 & n \ne m.\end{cases}
+\langle e_n, e_m\rangle = \frac{1}{2\pi}\int_{-\pi}^{\pi} e^{i(n-m)x}\thinspace dx = \begin{cases} 1 & n = m,\cr 0 & n \ne m.\end{cases}
 $$
 
 실수형으로는 $1$, $\cos(nx)$, $\sin(nx)$ 들이 서로 직교하며, 이는 곱을 합으로 바꾸는 삼각 항등식에서 바로 나온다.
@@ -50,13 +50,13 @@ $$
 $f$ 가 주기 $2\pi$ 이고 적분가능하면 계수와 부분합을 다음과 같이 정의한다.
 
 $$
-\hat{f}(n) = \frac{1}{2\pi}\int_{-\pi}^{\pi} f(x)\, e^{-inx}\,dx,\qquad S_N f(x) = \sum_{n=-N}^{N} \hat{f}(n)\, e^{inx}.
+\hat{f}(n) = \frac{1}{2\pi}\int_{-\pi}^{\pi} f(x)\thinspace e^{-inx}\thinspace dx,\qquad S_N f(x) = \sum_{n=-N}^{N} \hat{f}(n)\thinspace e^{inx}.
 $$
 
 실수형 계수와의 관계는 다음과 같다.
 
 $$
-a_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)\cos(nx)\,dx,\qquad b_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)\sin(nx)\,dx,
+a_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)\cos(nx)\thinspace dx,\qquad b_n = \frac{1}{\pi}\int_{-\pi}^{\pi} f(x)\sin(nx)\thinspace dx,
 $$
 
 $$
@@ -70,7 +70,7 @@ $$
 부분합은 합성곱으로 쓰인다.
 
 $$
-S_N f(x) = \frac{1}{2\pi}\int_{-\pi}^{\pi} f(x-t)\, D_N(t)\, dt,\qquad D_N(t) = \sum_{n=-N}^{N} e^{int} = \frac{\sin\big((N+\tfrac12)t\big)}{\sin(t/2)} .
+S_N f(x) = \frac{1}{2\pi}\int_{-\pi}^{\pi} f(x-t)\thinspace D_N(t)\thinspace dt,\qquad D_N(t) = \sum_{n=-N}^{N} e^{int} = \frac{\sin\big((N+\tfrac12)t\big)}{\sin(t/2)} .
 $$
 
 $D_N$ 의 적분은 항상 $2\pi$ 지만, 절댓값 적분(Lebesgue 상수)은 $\log N$ 정도로 발산한다. 이것이 점별 수렴이 자동이 아닌 근본 이유다.
@@ -90,7 +90,7 @@ $$
 $f$ 가 제곱적분가능하면 부분합은 $f$ 의 $2N+1$ 차원 부분공간으로의 정사영이므로, 그 차수의 삼각다항식 가운데 제곱평균 오차를 최소화한다. 삼각함수계가 완비이므로 다음이 성립한다.
 
 $$
-\|S_N f - f\| \xrightarrow[N\to\infty]{} 0,\qquad \sum_{n\in\mathbb{Z}} |\hat{f}(n)|^2 = \frac{1}{2\pi}\int_{-\pi}^{\pi} |f(x)|^2\,dx .
+\Vert S_N f - f\Vert \xrightarrow[N\to\infty]{} 0,\qquad \sum_{n\in\mathbb{Z}} |\hat{f}(n)|^2 = \frac{1}{2\pi}\int_{-\pi}^{\pi} |f(x)|^2\thinspace dx .
 $$
 
 완비성 증명의 표준 경로는 Fejér 정리다. 연속 주기함수에 대해 Cesàro 평균이 균등수렴하므로 삼각다항식이 연속함수 공간에서 조밀하고, 연속함수가 $L^2$ 에서 조밀하므로 삼각함수계에 직교하는 벡터는 0뿐이다. 따라서 Parseval은 [Hilbert 공간](hilbert-spaces.md)의 일반론에서 자동으로 따라온다.
@@ -98,7 +98,7 @@ $$
 편극하면 다음 형태(Parseval 항등식)도 얻는다.
 
 $$
-\frac{1}{2\pi}\int_{-\pi}^{\pi} f(x)\overline{g(x)}\,dx = \sum_{n\in\mathbb{Z}} \hat{f}(n)\overline{\hat{g}(n)} .
+\frac{1}{2\pi}\int_{-\pi}^{\pi} f(x)\overline{g(x)}\thinspace dx = \sum_{n\in\mathbb{Z}} \hat{f}(n)\overline{\hat{g}(n)} .
 $$
 
 ## 계수의 감쇠와 함수의 매끄러움
@@ -118,7 +118,7 @@ $$
 - Dini 판정. 어떤 양수 $\delta$ 에 대해
 
 $$
-\int_{0}^{\delta} \frac{|f(x+t) + f(x-t) - 2s|}{t}\,dt < \infty
+\int_{0}^{\delta} \frac{|f(x+t) + f(x-t) - 2s|}{t}\thinspace dt < \infty
 $$
 
 이면 $S_Nf(x)\to s$. 특히 $f$ 가 $x$ 에서 Hölder 조건을 만족하면 조건이 충족된다.
@@ -136,7 +136,7 @@ $$
 도약 불연속 근처에서 부분합은 함수를 일정 비율만큼 초과한다. 도약 크기를 1로 두면, 초과분의 극한은 $N$ 을 키워도 줄지 않고 다음 상수로 수렴한다.[^2]
 
 $$
-\frac{1}{\pi}\int_{0}^{\pi} \frac{\sin t}{t}\,dt - \frac{1}{2} \approx 0.0895 .
+\frac{1}{\pi}\int_{0}^{\pi} \frac{\sin t}{t}\thinspace dt - \frac{1}{2} \approx 0.0895 .
 $$
 
 즉 약 9퍼센트의 과도 진동이 남는다. 오버슈트가 일어나는 위치는 불연속점에 점점 가까워지므로 $L^2$ 수렴과 모순되지 않는다. 넓이가 0으로 가면서 높이는 그대로인 것이다. 이 현상은 부분합이라는 절단 방식의 성질이며, Fejér 평균처럼 음이 아닌 핵을 쓰면 사라진다. 신호 처리에서 창함수를 곱하는 이유가 여기에 있다.
@@ -164,7 +164,7 @@ $$
 변수분리를 하면 $\sin(nx)$ 가 공간 방향의 고유함수이고 시간 방향은 지수 감쇠다. 초기조건을 sin 급수로 전개하면 해가 바로 나온다.
 
 $$
-u(x,t) = \sum_{n=1}^{\infty} b_n\, e^{-\kappa n^2 t} \sin(nx),\qquad b_n = \frac{2}{\pi}\int_{0}^{\pi} f(x)\sin(nx)\,dx .
+u(x,t) = \sum_{n=1}^{\infty} b_n\thinspace e^{-\kappa n^2 t} \sin(nx),\qquad b_n = \frac{2}{\pi}\int_{0}^{\pi} f(x)\sin(nx)\thinspace dx .
 $$
 
 $t>0$ 이면 계수가 지수적으로 죽으므로 해는 즉시 무한히 매끄러워진다. 열방정식의 평활화 성질이 계수 감쇠로 곧바로 읽힌다. 파동방정식에서는 지수 대신 $\cos(nct)$, $\sin(nct)$ 가 나오며 감쇠가 없어 초기 불연속이 그대로 전파된다.

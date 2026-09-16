@@ -23,7 +23,7 @@
 유한 단순 무향 그래프는 정점 집합 $V$ 와 간선 집합 $E$ 의 쌍이다.
 
 $$
-G=(V,E),\qquad E\subseteq\big\{\{u,v\}:u,v\in V,\ u\ne v\big\}
+G=(V,E),\qquad E\subseteq\big\lbrace\lbrace u,v\rbrace:u,v\in V,\ u\ne v\big\rbrace
 $$
 
 간선을 순서쌍으로 바꾸면 방향 그래프가 되고, 같은 간선을 여러 개 허용하면 다중 그래프, 자기 자신으로 가는 간선을 허용하면 루프가 있는 그래프다. 무엇을 허용하는지는 모형마다 명시해야 한다. 이 수학 지도 자체는 방향 그래프이며 순환을 금지한 [DAG](dag-topological.md)다.

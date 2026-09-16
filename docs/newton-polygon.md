@@ -7,7 +7,7 @@
 Newton 다각형은 더 거친 질문에 더 싼 값으로 답한다. **근을 하나도 구하지 않고, 계수의 부치만 보고, 모든 근의 부치를 정확히 알아낸다.** 대수적 폐포까지 올라간 근 전부에 대해서다.
 
 $$
-f(x)=\sum_{i=0}^na_ix^i\ \longmapsto\ \big\{(i,\,v(a_i))\big\}\ \text{의 아래쪽 볼록포}
+f(x)=\sum_{i=0}^na_ix^i\ \longmapsto\ \big\lbrace(i,\thinspace v(a_i))\big\rbrace\ \text{의 아래쪽 볼록포}
 $$
 
 이 볼록포의 변 하나가 기울기 $-\lambda$ 이고 수평길이가 $m$ 이면, $f$ 는 부치가 정확히 $\lambda$ 인 근을 중복도까지 세어 $m$ 개 갖는다. 계수를 들여다보는 것만으로 근의 크기 분포가 전부 나온다.
@@ -90,7 +90,7 @@ $f(x)=\sum_{i\ge0}a_ix^i$ 가 멱급수여도 같은 정의를 쓴다. 다만 �
 $p$ 진 멱급수 $f(x)=\sum a_ix^i$ 가 $|x|_p\le r$ 에서 수렴하고 그 영역에서 유계라 하자. Newton 다각형에서 기울기가 $\ge-v(r)$ 인 변들의 수평길이 총합을 $d$ 라 하면 $f$ 는 그 원판에서 정확히 $d$ 개의 영점을 갖고,
 
 $$
-f(x)=P(x)\,u(x),\qquad \deg P=d,\ u\ \text{는 원판에서 단위}
+f(x)=P(x)\thinspace u(x),\qquad \deg P=d,\ u\ \text{는 원판에서 단위}
 $$
 
 로 분해된다. 무한차원이 유한차원으로 잘리는 이 현상이 [Dwork 이론](dwork-rationality.md)에서 Fredholm 행렬식을 다룰 수 있게 만드는 것이다. 완전연속 작용소의 특성급수가 정함수이고, 그 Newton 다각형이 고윳값의 부치를 층층이 준다.

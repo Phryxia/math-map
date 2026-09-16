@@ -24,8 +24,8 @@ $A$ 위의 이항관계는 곱집합의 부분집합 $R \subseteq A \times A$ �
 
 $$
 \begin{aligned}
-&x\mathrel{R}x &&\text{반사성}\\
-&x\mathrel{R}y\Rightarrow y\mathrel{R}x &&\text{대칭성}\\
+&x\mathrel{R}x &&\text{반사성}\cr
+&x\mathrel{R}y\Rightarrow y\mathrel{R}x &&\text{대칭성}\cr
 &(x\mathrel{R}y\ \text{and}\ y\mathrel{R}z)\Rightarrow x\mathrel{R}z &&\text{추이성}
 \end{aligned}
 $$
@@ -35,7 +35,7 @@ $$
 ## 동치류와 몫집합
 
 $$
-[x]=\{y\in A:x\mathrel{R}y\},\qquad A/R=\{[x]:x\in A\}
+[x]=\lbrace y\in A:x\mathrel{R}y\rbrace,\qquad A/R=\lbrace[x]:x\in A\rbrace
 $$
 
 $A/R$ 을 몫집합이라 하고, $x \mapsto [x]$ 를 몫사상이라 한다. 몫사상은 항상 전사이며 "차이를 잊는" 조작을 함수로 구현한 것이다.

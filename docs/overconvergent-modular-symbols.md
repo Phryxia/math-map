@@ -43,9 +43,9 @@ $$
 임의의 $\Phi_0$ 를 $\rho(\Phi_0)=\phi$ 가 되도록 잡으면, $\Phi_0$ 는 원하는 고유기호에 "쓰레기"가 섞인 것이다. 쓰레기는 기울기가 큰 성분이라 $U_p$ 를 한 번 적용할 때마다 $p$ 배씩 작아진다. 기울기 차이가 수렴 속도를 준다.
 
 $$
-\Phi_n=\alpha^{-n}U_p^{\,n}\Phi_0\ \longrightarrow\ \Phi,
+\Phi_n=\alpha^{-n}U_p^{\thinspace n}\Phi_0\ \longrightarrow\ \Phi,
 \qquad
-\bigl|\Phi_n-\Phi\bigr|\ \le\ |p|^{\,n(k-1-h)}
+\bigl|\Phi_n-\Phi\bigr|\ \le\ |p|^{\thinspace n(k-1-h)}
 $$
 
 2 차원 장난감으로 이 수렴을 그대로 볼 수 있다. 기울기 0 과 기울기 1 의 고유값을 가진 행렬에 벡터를 반복 곱하면, 기울기 1 쪽 성분의 $p$ 진 부치가 한 번에 1 씩 올라간다.
@@ -93,13 +93,13 @@ n  정규화한 벡터의 둘째 좌표      부치
 $\mathcal A_k$ 를 $\mathbb Z_p$ 위의 국소해석함수 공간, $\mathcal D_k=\mathcal A_k^\vee$ 를 그 연속 쌍대라 한다. 반군
 
 $$
-\Sigma_0(p)=\left\{\begin{pmatrix}a&b\\c&d\end{pmatrix}\in M_2(\mathbb Z_p):\ p\mid c,\ p\nmid a,\ ad-bc\ne0\right\}
+\Sigma_0(p)=\left\lbrace\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in M_2(\mathbb Z_p):\ p\mid c,\ p\nmid a,\ ad-bc\ne0\right\rbrace
 $$
 
 가 무게 $k$ 작용
 
 $$
-(\gamma\cdot f)(z)=(a+cz)^{k-2}\,f\!\left(\frac{b+dz}{a+cz}\right)
+(\gamma\cdot f)(z)=(a+cz)^{k-2}\thinspace f\negthinspace\left(\frac{b+dz}{a+cz}\right)
 $$
 
 로 $\mathcal A_k$ 에 작용하고, 쌍대로 $\mathcal D_k$ 에 작용한다. 분포 $\mu$ 는 모멘트 열 $\bigl(\mu(1),\mu(z),\mu(z^2),\dots\bigr)$ 로 결정되고, 계산에서는 이 열을 앞의 $M$ 개로 자른다.
@@ -125,13 +125,13 @@ $V_{k-2}\subset\mathcal A_k$ 이므로 쌍대로 $\mathcal D_k\twoheadrightarrow
 $\phi$ 를 무게 $k$ 와 준위 $\Gamma_0(Np)$ 의 고유기호, $\Phi$ 를 그 유일한 과수렴 올림이라 한다. 분포
 
 $$
-\mu_\Phi=\Phi\bigl(\{\infty\}-\{0\}\bigr)\ \in\ \mathcal D_k
+\mu_\Phi=\Phi\bigl(\lbrace\infty\rbrace-\lbrace 0\rbrace\bigr)\ \in\ \mathcal D_k
 $$
 
 를 $\mathbb Z_p^\times$ 로 제한하면 측도가 되고,
 
 $$
-L_p(\phi,s)=\int_{\mathbb Z_p^\times}\langle x\rangle^{\,s-1}\,d\mu_\Phi(x)
+L_p(\phi,s)=\int_{\mathbb Z_p^\times}\langle x\rangle^{\thinspace s-1}\thinspace d\mu_\Phi(x)
 $$
 
 가 $p$ 진 $L$ 함수다. 고전 $L$ 값과의 보간 관계는 정리로 따라 나온다. 구성 자체에는 보간이 들어가지 않는다.

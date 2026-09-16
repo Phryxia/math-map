@@ -48,7 +48,7 @@ $$
 $\mu$ 와 $\nu$ 가 $\sigma$ -유한이고 $\nu \ll \mu$ 이면 음이 아닌 가측함수 $f$ 가 존재해 모든 가측집합 $E$ 에서
 
 $$
-\nu(E)=\int_E f\,d\mu
+\nu(E)=\int_E f\thinspace d\mu
 $$
 
 가 성립한다. $f$ 는 $\mu$ 거의 모든 곳에서 유일하며 Radon–Nikodym 도함수라 하고
@@ -87,7 +87,7 @@ $$
 이다. 적분 공식도 도함수처럼 작동한다. 음이 아닌 가측함수 $g$ 에 대해
 
 $$
-\int g\,d\nu=\int g\,\frac{d\nu}{d\mu}\,d\mu
+\int g\thinspace d\nu=\int g\thinspace\frac{d\nu}{d\mu}\thinspace d\mu
 $$
 
 이며, 이것이 측도를 바꾸어 적분을 계산하는 기본 도구다.
@@ -154,7 +154,7 @@ except ValueError as e:
 확률측도 $Q$ 가 $P$ 에 대해 절대연속이면 $dQ/dP$ 가 우도비이고
 
 $$
-\mathbb{E}_Q[X]=\mathbb{E}_P\!\left[X\frac{dQ}{dP}\right]
+\mathbb{E}_Q[X]=\mathbb{E}_P\negthinspace\left[X\frac{dQ}{dP}\right]
 $$
 
 가 성립한다. 이 항등식 하나가 중요도 표본추출, 우도비 검정, 금융의 위험중립 가격결정, 확률미분방정식의 Girsanov 정리를 떠받친다. 어느 경우에도 두 측도가 서로 절대연속인지를 먼저 확인해야 하며, 그 조건이 깨지면 변환 자체가 정의되지 않는다.

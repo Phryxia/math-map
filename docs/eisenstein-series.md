@@ -5,7 +5,7 @@
 [모듈러 형식](modular-forms.md)의 공간은 두 조각으로 나뉜다.
 
 $$
-M_k(\mathrm{SL}_2(\mathbb Z))=S_k\;\oplus\;\mathbb C\,E_k
+M_k(\mathrm{SL}_2(\mathbb Z))=S_k\thickspace\oplus\thickspace\mathbb C\thinspace E_k
 $$
 
 첨점형식 $S_k$ 는 첨점에서 사라지는 쪽이고, Eisenstein 급수 $E_k$ 는 사라지지 않는 쪽이다. 첨점형식이 깊은 산술을 담는다면 Eisenstein 급수는 그 반대다. 계수가 $\sigma_{k-1}(n)=\sum_{d\mid n}d^{k-1}$ 이라 완전히 명시적이고, 신비가 없다.
@@ -43,7 +43,7 @@ $$
 $E(z,s)$ 의 Fourier 전개에서 $n=0$ 항, 곧 $x$ 에 대한 평균은 $y$ 의 함수다. 그런데 이것이 한 항이 아니라 두 항이다.
 
 $$
-a_0(y,s)=y^s+\varphi(s)\,y^{1-s},
+a_0(y,s)=y^s+\varphi(s)\thinspace y^{1-s},
 \qquad
 \varphi(s)=\frac{\xi(2s-1)}{\xi(2s)}
 $$
@@ -53,7 +53,7 @@ $$
 $$
 \Delta_{\mathbb H}=-y^2\Bigl(\partial_x^2+\partial_y^2\Bigr),
 \qquad
-\Delta_{\mathbb H}\,y^s=s(1-s)\,y^s
+\Delta_{\mathbb H}\thinspace y^s=s(1-s)\thinspace y^s
 $$
 
 을 주는 두 해다. 곧 상수항은 고윳값 $s(1-s)$ 의 2 차원 해공간 안에 있고, $\varphi(s)$ 는 두 해가 섞이는 비율이다.
@@ -67,10 +67,10 @@ $\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H$ 는 콤팩트가 아니다. 첨점
 $$
 L^2(\Gamma\backslash\mathbb H)=
 \underbrace{\mathbb C\cdot 1}_{\text{상수}}
-\;\oplus\;
+\thickspace\oplus\thickspace
 \underbrace{L^2_{\mathrm{cusp}}}_{\text{Maass 첨점형식}}
-\;\oplus\;
-\underbrace{\int_{\mathrm{Re}(s)=1/2}^{\oplus}\mathbb C\,E(z,s)\,ds}_{\text{연속 스펙트럼}}
+\thickspace\oplus\thickspace
+\underbrace{\int_{\mathrm{Re}(s)=1/2}^{\oplus}\mathbb C\thinspace E(z,s)\thinspace ds}_{\text{연속 스펙트럼}}
 $$
 
 연속 부분을 만드는 것이 바로 임계선 위의 $E(z,s)$ 다. $E(z,\tfrac12+it)$ 는 $L^2$ 에 속하지 않지만(상수항이 $y^{1/2}$ 크기라 첨점에서 적분 발산), 자유 입자의 평면파처럼 연속 스펙트럼의 "일반화 고유함수" 노릇을 한다. Selberg 의 스펙트럼 분해 정리가 이 분해를 정확히 서술한다.
@@ -121,7 +121,7 @@ $$
 로 두면 $E_k\in M_k(\mathrm{SL}_2(\mathbb Z))$ 이고 $E_k(\infty)=1$ 이다. Fourier 전개는
 
 $$
-E_k(z)=1-\frac{2k}{B_k}\sum_{n\ge1}\sigma_{k-1}(n)\,q^n,
+E_k(z)=1-\frac{2k}{B_k}\sum_{n\ge1}\sigma_{k-1}(n)\thinspace q^n,
 \qquad q=e^{2\pi iz}
 $$
 
@@ -133,7 +133,7 @@ $\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 로 두고 $\Gamma_\infty$ 를 $\pm\bigl(\beg
 
 $$
 E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\mathrm{Im}(\gamma z)^s
-=\frac12\sum_{\substack{(c,d)\in\mathbb Z^2\\ \gcd(c,d)=1}}\frac{y^s}{\lvert cz+d\rvert^{2s}}
+=\frac12\sum_{\substack{(c,d)\in\mathbb Z^2\cr \gcd(c,d)=1}}\frac{y^s}{\lvert cz+d\rvert^{2s}}
 $$
 
 $\mathrm{Re}(s)>1$ 에서 절대수렴한다. **완비화**는 $\xi(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 를 써서 $E^*(z,s)=\xi(2s)E(z,s)$ 로 정의한다.
@@ -143,8 +143,8 @@ $E(z,s)$ 는 $\Gamma$ 불변이고 $\Delta_{\mathbb H}E=s(1-s)E$ 를 만족하�
 ## Fourier 전개
 
 $$
-E^*(z,s)=\xi(2s)\,y^s+\xi(2s-1)\,y^{1-s}
-+4\sqrt y\sum_{n\ge1}n^{s-\frac12}\sigma_{1-2s}(n)\,K_{s-\frac12}(2\pi ny)\cos(2\pi nx)
+E^*(z,s)=\xi(2s)\thinspace y^s+\xi(2s-1)\thinspace y^{1-s}
++4\sqrt y\sum_{n\ge1}n^{s-\frac12}\sigma_{1-2s}(n)\thinspace K_{s-\frac12}(2\pi ny)\cos(2\pi nx)
 $$
 
 $K_\nu$ 는 변형 Bessel 함수이고 $K_\nu=K_{-\nu}$ 다. 이 전개에서 모든 성질이 읽힌다. 오른쪽 전체가 $s\mapsto1-s$ 에서 대칭이므로 함수방정식이 나오고, $\xi(2s-1)$ 의 극에서 $s=1$ 의 극이 나온다.
@@ -251,7 +251,7 @@ $$
 Selberg 대각합 공식은 $\Gamma\backslash\mathbb H$ 의 Laplace 스펙트럼과 닫힌 측지선의 길이를 잇는다. 좌변의 스펙트럼 쪽에는 이산 스펙트럼뿐 아니라 연속 스펙트럼의 기여가 들어가는데, 그 기여가 정확히 $\varphi'/\varphi(s)$ 로 적힌다. 곧 $\zeta'/\zeta$ 다.
 
 $$
--\frac1{4\pi}\int_{-\infty}^{\infty}h(t)\,\frac{\varphi'}{\varphi}\Bigl(\tfrac12+it\Bigr)dt
+-\frac1{4\pi}\int_{-\infty}^{\infty}h(t)\thinspace\frac{\varphi'}{\varphi}\Bigl(\tfrac12+it\Bigr)dt
 $$
 
 Weyl 법칙으로 Maass 첨점형식의 개수를 셀 때 이 항을 빼야 하고, 그래서 $\zeta$ 의 0 점 분포에 대한 지식이 자기동형 형식의 개수 세기에 끼어든다.

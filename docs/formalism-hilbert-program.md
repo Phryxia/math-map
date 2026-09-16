@@ -25,7 +25,7 @@ graph LR
 체계 T의 무모순성은 다음으로 정의한다.
 
 $$
-\mathrm{Con}(T)\ :\equiv\ \neg\,\exists p\ \big(\mathrm{Proof}_T(p,\ \ulcorner 0=1\urcorner)\big)
+\mathrm{Con}(T)\ :\equiv\ \neg\thinspace\exists p\ \big(\mathrm{Proof}_T(p,\ \ulcorner 0=1\urcorner)\big)
 $$
 
 Hilbert가 요구한 유한주의적 관점은 구체적으로 주어진 기호 구성물만 다루고, 완결된 무한 전체에 대한 양화를 쓰지 않으며, 결정 가능한 술어와 원시재귀적 구성만 허용한다. 현대적 대응물로는 원시재귀 산술 PRA를 쓴다[^1].
@@ -33,7 +33,7 @@ Hilbert가 요구한 유한주의적 관점은 구체적으로 주어진 기호 
 명제를 두 부류로 나눈다.
 
 $$
-\text{real: } \forall x\,R(x)\ (R \text{ 결정 가능})\ \text{의 각 예시},\qquad
+\text{real: } \forall x\thinspace R(x)\ (R \text{ 결정 가능})\ \text{의 각 예시},\qquad
 \text{ideal: } \text{완결된 무한을 양화하는 명제}
 $$
 
@@ -68,8 +68,8 @@ $$
 Gentzen은 1936년 PA의 무모순성을 증명했다[^2]. 사용한 추가 원리는 서수 epsilon_0까지의 초한귀납법이다.
 
 $$
-\varepsilon_0=\sup\{\omega,\ \omega^{\omega},\ \omega^{\omega^{\omega}},\dots\}
-= \min\{\alpha:\omega^{\alpha}=\alpha\}
+\varepsilon_0=\sup\lbrace\omega,\ \omega^{\omega},\ \omega^{\omega^{\omega}},\dots\rbrace
+= \min\lbrace\alpha:\omega^{\alpha}=\alpha\rbrace
 $$
 
 PRA에 epsilon_0까지의 초한귀납법을 더한 체계는 PA의 무모순성을 증명하며, 반대로 PA는 epsilon_0까지의 초한귀납법을 증명하지 못한다. 즉 epsilon_0은 PA의 증명론적 서수다. 이는 제2정리와 모순되지 않는다. 초한귀납법은 유한주의의 범위를 넘고, 대신 유한적 조작 가능한 서수 표기 체계 위의 구성적 원리로 정당화된다. Gödel의 Dialectica 해석(1958)은 같은 목표를 유한 타입 원시재귀 함수로 접근한 다른 환원이다.

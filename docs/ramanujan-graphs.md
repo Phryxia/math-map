@@ -66,7 +66,7 @@ LPS 구성은 그래프를 군의 Cayley 그래프로 만든다. 소수 $p,q$ �
 $$
 G=\mathrm{PGL}_2(\mathbb F_q)\ \text{또는}\ \mathrm{PSL}_2(\mathbb F_q),
 \qquad
-S=\{p+1\ \text{개의 생성원}\}
+S=\lbrace p+1\ \text{개의 생성원}\rbrace
 $$
 
 으로 두는데, 생성원을 **사원수 대수에서** 가져온다. $p$ 를 네 제곱수의 합으로 쓰는 방법의 개수가 $8(p+1)$ 이라는 Jacobi 의 고전 정리가 정확히 $p+1$ 개의 생성원을 준다.
@@ -95,7 +95,7 @@ graph TD
 연결된 $d$ 정규 그래프 $G$ 의 인접행렬 고윳값을 $d=\mu_1\ge\mu_2\ge\cdots\ge\mu_n$ 이라 하고
 
 $$
-\lambda(G)=\max\{|\mu_i|:\ |\mu_i|\ne d\}
+\lambda(G)=\max\lbrace|\mu_i|:\ |\mu_i|\ne d\rbrace
 $$
 
 라 하자. $\lambda(G)\le2\sqrt{d-1}$ 이면 $G$ 를 **Ramanujan 그래프**라 한다. 이분 그래프에서는 $\mu_n=-d$ 가 자동이므로 이를 제외한다.

@@ -106,7 +106,7 @@ m_p = c^{d_p} \bmod p, \qquad m_q = c^{d_q} \bmod q,
 $$
 
 $$
-h = q_{\mathrm{inv}}\,(m_p - m_q) \bmod p, \qquad m = m_q + h\,q .
+h = q_{\mathrm{inv}}\thinspace(m_p - m_q) \bmod p, \qquad m = m_q + h\thinspace q .
 $$
 
 로 수행한다. 마지막 식이 Garner 형식의 CRT 합성이며, $m \equiv m_q \pmod{q}$ 는 자명하고 $m \equiv m_p \pmod{p}$ 는 $h$ 의 정의에서 나온다.

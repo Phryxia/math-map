@@ -7,7 +7,7 @@
 이 곡선의 정체가 두 겹이다. 해석적으로는 Riemann 곡면이고, 대수적으로는 **$\mathbb Q$ 위에서 정의된 대수곡선**이다. 게다가 모듈라이 해석이 있다. $X_0(N)$ 의 점이 "[타원곡선](elliptic-curves.md)과 그 위의 위수 $N$ 순환 부분군" 의 쌍을 분류한다.
 
 $$
-Y_0(N)=\Gamma_0(N)\backslash\mathbb H\ \longleftrightarrow\ \{(E,C):C\subset E\ \text{순환},\ |C|=N\}/\!\cong
+Y_0(N)=\Gamma_0(N)\backslash\mathbb H\ \longleftrightarrow\ \lbrace(E,C):C\subset E\ \text{순환},\ |C|=N\rbrace/\negthinspace\cong
 $$
 
 세 층이 겹치면서 힘이 나온다. 무게 2 첨점형식이 $X_0(N)$ 의 정칙 미분형식이므로 $\dim S_2(\Gamma_0(N))$ 이 곡선의 **종수**와 같고, 종수는 군의 지표와 타원점, 첨점 개수만으로 계산된다. 해석적 대상의 차원이 조합 공식으로 나온다.
@@ -43,7 +43,7 @@ $\Gamma_0(N)$ 으로 좁히면 기저 변환이 제한된다. 정확히 부분�
 $f\in S_2(\Gamma_0(N))$ 에 대해 $\omega=f(\tau)\thinspace d\tau$ 를 생각하자. $\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}$ 에 대해 $d(\gamma\tau)=(c\tau+d)^{-2}d\tau$ 이므로, $f$ 의 무게 2 변환 규칙과 정확히 상쇄된다.
 
 $$
-f(\gamma\tau)\,d(\gamma\tau)=(c\tau+d)^2f(\tau)\cdot(c\tau+d)^{-2}d\tau=f(\tau)\,d\tau
+f(\gamma\tau)\thinspace d(\gamma\tau)=(c\tau+d)^2f(\tau)\cdot(c\tau+d)^{-2}d\tau=f(\tau)\thinspace d\tau
 $$
 
 곧 $\omega$ 가 $\Gamma_0(N)$ 불변이라 $X_0(N)$ 위의 미분형식으로 내려온다. 첨점형식 조건이 첨점에서 극을 갖지 않는다는 조건이 되고, 결과적으로
@@ -88,9 +88,9 @@ $N$ 이 소수이면 $\nu_\infty=2$ 로 $0$ 과 $\infty$ 두 개뿐이다.
 **타원점의 개수**는 이차 지표로 주어진다. $\left(\frac{-1}\cdot\right)$ 와 $\left(\frac{-3}\cdot\right)$ 는 각각 법 4, 법 3 의 이차 지표다.
 
 $$
-\nu_2=\begin{cases}0&4\mid N\\ \prod_{p\mid N}\big(1+\left(\frac{-1}p\right)\big)&\text{그 외}\end{cases}
+\nu_2=\begin{cases}0&4\mid N\cr \prod_{p\mid N}\big(1+\left(\frac{-1}p\right)\big)&\text{그 외}\end{cases}
 \qquad
-\nu_3=\begin{cases}0&9\mid N\\ \prod_{p\mid N}\big(1+\left(\frac{-3}p\right)\big)&\text{그 외}\end{cases}
+\nu_3=\begin{cases}0&9\mid N\cr \prod_{p\mid N}\big(1+\left(\frac{-3}p\right)\big)&\text{그 외}\end{cases}
 $$
 
 위수 2 의 타원점은 $E$ 가 $i$ 에 대응하고 허수곱이 $\mathbb Z[i]$ 인 $j=1728$ 에서, 위수 3 의 타원점은 허수곱이 $\mathbb Z[\omega]$ 인 $j=0$ 에서 온다. 지표가 나오는 것은 $\mathbb Z[i]$ 와 $\mathbb Z[\omega]$ 에서 $N$ 이 어떻게 쪼개지는지를 세기 때문이다.
@@ -123,7 +123,7 @@ $$
 $g=0$ 인 $N$ 은 유한하다.
 
 $$
-g\big(X_0(N)\big)=0\iff N\in\{1,\dots,10,12,13,16,18,25\}
+g\big(X_0(N)\big)=0\iff N\in\lbrace 1,\dots,10,12,13,16,18,25\rbrace
 $$
 
 이때 $X_0(N)\cong\mathbb P^1$ 이라 유리점이 무한히 많다. 그래서 위수 $N$ 의 순환 부분군을 갖는 $\mathbb Q$ 위의 타원곡선이 무한히 많다.

@@ -33,7 +33,7 @@ compactness에 대한 직관: 하나의 증명은 유한히 많은 공리만 쓴
 원자 논리식은 항 t1, t2에 대한 등식이나 관계 기호의 적용이고, 논리식(formula)은 원자 논리식에서 연결사와 양화사로 생성된다.
 
 $$
-\varphi ::= t_1 = t_2 \mid R(t_1,\dots,t_n) \mid \neg\varphi \mid \varphi\wedge\psi \mid \varphi\vee\psi \mid \varphi\to\psi \mid \forall x\,\varphi \mid \exists x\,\varphi
+\varphi ::= t_1 = t_2 \mid R(t_1,\dots,t_n) \mid \neg\varphi \mid \varphi\wedge\psi \mid \varphi\vee\psi \mid \varphi\to\psi \mid \forall x\thinspace\varphi \mid \exists x\thinspace\varphi
 $$
 
 자유 변수가 없는 논리식을 문장(sentence)이라 한다. 이론(theory) T는 문장들의 집합이다.
@@ -49,7 +49,7 @@ $$
 변수 배정 $v$ 와 구조 $\mathcal{M}$ 에 대해 만족 관계를 논리식의 구조에 대한 재귀로 정의한다(Tarski의 진리 정의). 양화사 절만 적으면 다음과 같다.
 
 $$
-\mathcal{M},v\models \forall x\,\varphi \iff \text{모든 } a\in M \text{ 에 대해 } \mathcal{M},v[x\mapsto a]\models\varphi
+\mathcal{M},v\models \forall x\thinspace\varphi \iff \text{모든 } a\in M \text{ 에 대해 } \mathcal{M},v[x\mapsto a]\models\varphi
 $$
 
 문장 집합 $T$ 의 모든 문장을 만족하는 구조를 $T$ 의 모델이라 한다. 의미론적 귀결과 증명 가능성을 각각 다음으로 쓴다.

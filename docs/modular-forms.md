@@ -6,7 +6,7 @@
 
 $$
 f\Big(\frac{az+b}{cz+d}\Big)=(cz+d)^kf(z)\qquad
-\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\mathrm{SL}_2(\mathbb Z)
+\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}_2(\mathbb Z)
 $$
 
 조건이 지나치게 강해 보인다. 무한히 많은 변환 각각에 대한 등식이고, 게다가 정칙성까지 요구한다. 그런데 해가 0 만 있는 것이 아니다. 각 무게 $k$ 마다 유한차원 벡터공간이 정확히 남는다.
@@ -77,7 +77,7 @@ $$
 $\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}_2(\mathbb R)$ 가 $\gamma\tau=\frac{a\tau+b}{c\tau+d}$ 로 $\mathbb H$ 에 작용한다. 핵심 등식은
 
 $$
-\mathrm{Im}(\gamma\tau)=\frac{\mathrm{Im}\,\tau}{|c\tau+d|^2}
+\mathrm{Im}(\gamma\tau)=\frac{\mathrm{Im}\thinspace\tau}{|c\tau+d|^2}
 $$
 
 이고, 이것이 $\mathbb H$ 가 보존됨을 보장한다. $\pm I$ 가 자명하게 작용하므로 실제로 작용하는 것은 $\mathrm{PSL}_2$ 다.
@@ -85,7 +85,7 @@ $$
 **합동 부분군**은 $\mathrm{SL}_2(\mathbb Z)$ 의 유한지표 부분군 중 어떤 $N$ 에 대해 $\Gamma(N)=\ker(\mathrm{SL}_2(\mathbb Z)\to\mathrm{SL}_2(\mathbb Z/N))$ 를 포함하는 것이다. 가장 많이 쓰는 것이
 
 $$
-\Gamma_0(N)=\Big\{\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\mathrm{SL}_2(\mathbb Z):c\equiv0\ (\mathrm{mod}\ N)\Big\}
+\Gamma_0(N)=\Big\lbrace\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}_2(\mathbb Z):c\equiv0\ (\mathrm{mod}\ N)\Big\rbrace
 $$
 
 이고, $N$ 을 **레벨**이라 한다.
@@ -153,7 +153,7 @@ $$
 $\mathrm{SL}_2(\mathbb Z)$ 에서 짝수 $k\ge0$ 에 대해
 
 $$
-\dim M_k=\begin{cases}\lfloor k/12\rfloor&k\equiv2\pmod{12}\\ \lfloor k/12\rfloor+1&\text{그 외}\end{cases}
+\dim M_k=\begin{cases}\lfloor k/12\rfloor&k\equiv2\pmod{12}\cr \lfloor k/12\rfloor+1&\text{그 외}\end{cases}
 $$
 
 이고 홀수 $k$ 에서는 0 이다. $-I$ 가 $(-1)^k$ 를 곱하기 때문이다. $k=4,6,8,10$ 에서 차원이 1 이고 $k=12$ 에서 처음 2 가 된다. $S_{12}$ 가 1 차원이라 $\Delta$ 가 상수배를 빼고 유일한 무게 12 첨점형식이다.

@@ -31,13 +31,13 @@ $$
 미분방정식과 적분방정식은 동치다. f가 연속이면, x가 위 초기값 문제의 해인 것과 x가 다음 적분방정식을 만족하는 연속함수인 것은 같다([미적분학의 기본 정리](fundamental-calculus.md)).
 
 $$
-x(t)=x_0+\int_{t_0}^{t}f\bigl(s,x(s)\bigr)\,ds
+x(t)=x_0+\int_{t_0}^{t}f\bigl(s,x(s)\bigr)\thinspace ds
 $$
 
 우변을 연속함수공간 위의 작용소로 보면 Picard 작용소가 된다.
 
 $$
-(Tx)(t)=x_0+\int_{t_0}^{t}f\bigl(s,x(s)\bigr)\,ds
+(Tx)(t)=x_0+\int_{t_0}^{t}f\bigl(s,x(s)\bigr)\thinspace ds
 $$
 
 autonomous 방정식에서 f를 0으로 만드는 점을 평형점(equilibrium)이라 한다. 평형점이 Lyapunov 안정이라는 것은 초기값을 충분히 가깝게 두면 궤적이 영원히 가까이 머무는 것, 점근 안정이라는 것은 여기에 더해 궤적이 평형점으로 수렴하는 것이다.
@@ -51,7 +51,7 @@ $f$ 가 초기점의 근방에서 연속이고 $x$ 에 대해 Lipschitz이면, �
 증명 개요: $M$ 을 근방에서 $f$ 의 노름 상한, $K$ 를 Lipschitz 상수라 하자. 초기값 중심 폐구 안에 머무는 연속함수들의 집합은 sup 노름에서 [완비](completeness.md)이며, $\varepsilon$ 을 충분히 작게 잡으면 $T$ 가 이 집합을 자기 자신으로 보낸다(적분의 크기가 $M\varepsilon$ 이하이기 때문). 두 함수 $x$ , $y$ 에 대해 Lipschitz 조건을 적분에 넣으면 다음을 얻는다.
 
 $$
-\left\lVert Tx-Ty\right\rVert_{\infty}\le K\varepsilon\,\left\lVert x-y\right\rVert_{\infty}
+\left\lVert Tx-Ty\right\rVert_{\infty}\le K\varepsilon\thinspace\left\lVert x-y\right\rVert_{\infty}
 $$
 
 따라서 $\varepsilon$ 을 추가로 $1/K$ 보다 작게 잡으면 $T$ 는 축약사상이고, 완비 [거리 공간](metric-spaces.md) 위의 축약사상은 유일한 고정점을 가진다[^2]. 그 고정점이 적분방정식의 해, 즉 초기값 문제의 유일한 해다. (Lipschitz 상수와 무관한 구간을 얻으려면 지수 가중 노름을 쓰거나 Gronwall 부등식을 이용한다.)
@@ -89,7 +89,7 @@ $$
 일반적인 $A$ 에서는 Jordan 형에 따라 다항식 계수 항이 붙는다. 비동차 방정식의 해는 Duhamel 공식으로 쓴다.
 
 $$
-x'=Ax+g(t)\ \Longrightarrow\ x(t)=e^{tA}x_0+\int_0^{t}e^{(t-s)A}g(s)\,ds
+x'=Ax+g(t)\ \Longrightarrow\ x(t)=e^{tA}x_0+\int_0^{t}e^{(t-s)A}g(s)\thinspace ds
 $$
 
 ## 평형점의 안정성
@@ -111,7 +111,7 @@ $A$ 의 모든 고윳값의 실수부가 음수(hyperbolic sink)이면 평형점
 로지스틱 방정식은 변수분리로 풀린다.
 
 $$
-x'=r\,x\,(1-x),\qquad r>0
+x'=r\thinspace x\thinspace(1-x),\qquad r>0
 $$
 
 평형점은 x=0과 x=1이다. 우변을 미분한 r(1−2x)를 평가하면 x=0에서 r>0이므로 불안정, x=1에서 −r<0이므로 점근 안정이다. 초기값이 0과 1 사이면 해는 다음과 같다.
@@ -125,7 +125,7 @@ $$
 Euler 방법은 적분방정식의 피적분함수를 왼끝점 값으로 근사한다.
 
 $$
-x_{k+1}=x_k+h\,f(t_k,x_k),\qquad t_{k+1}=t_k+h
+x_{k+1}=x_k+h\thinspace f(t_k,x_k),\qquad t_{k+1}=t_k+h
 $$
 
 f가 Lipschitz이고 해가 두 번 미분가능한 구간에서 전역 오차는 h에 비례한다(1차 정확도). 국소 절단오차는 h의 제곱 규모이지만 단계 수가 1/h 규모라서 한 차수 손실이 생긴다. 실무에서는 4차 Runge–Kutta나, 강성(stiff) 문제에서 안정성이 좋은 음함수 방법(implicit Euler, BDF)을 쓴다.

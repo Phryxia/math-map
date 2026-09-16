@@ -44,8 +44,8 @@ graph BT
 
 $$
 \begin{aligned}
-&x\le x &&\text{반사성}\\
-&(x\le y\ \text{and}\ y\le x)\Rightarrow x=y &&\text{반대칭성}\\
+&x\le x &&\text{반사성}\cr
+&(x\le y\ \text{and}\ y\le x)\Rightarrow x=y &&\text{반대칭성}\cr
 &(x\le y\ \text{and}\ y\le z)\Rightarrow x\le z &&\text{추이성}
 \end{aligned}
 $$

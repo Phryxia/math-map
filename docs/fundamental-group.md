@@ -31,13 +31,13 @@ $$
 경로 호모토피는 loop들 사이의 [동치관계](relations.md)이고, f의 동치류를 각괄호로 표기한다. 연접은 다음으로 정의된다.
 
 $$
-(f*g)(s)=\begin{cases} f(2s), & 0\le s\le \tfrac12\\ g(2s-1), & \tfrac12\le s\le 1\end{cases}
+(f*g)(s)=\begin{cases} f(2s), & 0\le s\le \tfrac12\cr g(2s-1), & \tfrac12\le s\le 1\end{cases}
 $$
 
 기본군은 이 연산을 가진 동치류들의 집합이다[^1].
 
 $$
-\pi_1(X,x_0)=\bigl\{\,[f]\ \big|\ f\ \text{는 } x_0 \text{ 기반 loop}\,\bigr\},\qquad [f]\cdot[g]=[f*g]
+\pi_1(X,x_0)=\bigl\lbrace\thinspace[f]\ \big|\ f\ \text{는 } x_0 \text{ 기반 loop}\thinspace\bigr\rbrace,\qquad [f]\cdot[g]=[f*g]
 $$
 
 항등원은 상수 loop의 류이고 역원은 방향을 뒤집은 loop의 류다.
@@ -96,7 +96,7 @@ $$
 증명 개요. 고정점이 없다고 가정하면 각 점 x에서 f(x)에서 x로 향하는 방향으로 반직선을 그어 경계와 만나는 점을 대응시키는 연속사상을 얻고, 이는 원판에서 경계 원으로의 retraction이 된다. 즉 경계의 포함사상 i와 이 retraction r에 대해 r∘i가 항등사상이다. 기본군의 functor 성질을 적용하면
 
 $$
-\pi_1(S^1)\xrightarrow{\,i_*\,}\pi_1(D^2)\xrightarrow{\,r_*\,}\pi_1(S^1)
+\pi_1(S^1)\xrightarrow{\thinspace i_*\thinspace}\pi_1(D^2)\xrightarrow{\thinspace r_*\thinspace}\pi_1(S^1)
 $$
 
 의 합성이 항등준동형이어야 한다. 그러나 가운데 군은 자명하므로 합성은 자명한 준동형이고, 정수군의 항등사상은 자명하지 않아 모순이다.

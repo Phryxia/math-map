@@ -21,7 +21,7 @@ Manin 의 기여는 이 군의 완전한 유한 표현을 준 것이다. 생성�
 $f\in S_2(\Gamma_0(N))$ 에 대해 $\omega_f=2\pi i\thinspace f(z)\thinspace dz$ 는 $\Gamma_0(N)$ 불변이므로 $X_0(N)$ 위의 정칙 1형식이 된다. 적분
 
 $$
-\langle\{\alpha,\beta\},f\rangle=\int_\alpha^\beta 2\pi i\,f(z)\,dz
+\langle\lbrace\alpha,\beta\rbrace,f\rangle=\int_\alpha^\beta 2\pi i\thinspace f(z)\thinspace dz
 $$
 
 는 $\alpha,\beta\in\mathbb P^1(\mathbb Q)$ (상반평면의 첨점) 사이의 경로를 따라 계산되고, $f$ 가 첨점에서 빠르게 죽으므로 수렴한다. 값은 경로의 호몰로지류에만 의존한다.
@@ -33,7 +33,7 @@ $$
 닫힌 경로만 쓰면 $H_1(X_0(N),\mathbb Z)\cong\mathbb Z^{2g}$ 이고, 이것이 $S_2$ 의 실수 구조를 준다. 그런데 계산하기에는 첨점을 끝점으로 허용하는 쪽이 훨씬 편하다. $\lbrace\alpha,\beta\rbrace$ 를 임의의 두 첨점을 잇는 측지선으로 두면 삼각 관계
 
 $$
-\{\alpha,\beta\}+\{\beta,\gamma\}+\{\gamma,\alpha\}=0
+\lbrace\alpha,\beta\rbrace+\lbrace\beta,\gamma\rbrace+\lbrace\gamma,\alpha\rbrace=0
 $$
 
 가 성립해, 경로를 마음대로 자르고 붙일 수 있다. 대가는 군이 조금 커진다는 것뿐이다.
@@ -50,13 +50,13 @@ $$
 
 $$
 \Gamma_0(N)\backslash\mathrm{SL}_2(\mathbb Z)\ \xrightarrow{\ \sim\ }\ \mathbb P^1(\mathbb Z/N),\qquad
-\begin{pmatrix}a&b\\c&d\end{pmatrix}\longmapsto(c:d)
+\begin{pmatrix}a&b\cr c&d\end{pmatrix}\longmapsto(c:d)
 $$
 
 그래서 생성원은 $\mathbb P^1(\mathbb Z/N)$ 의 원소 하나당 하나씩, 모두
 
 $$
-\#\mathbb P^1(\mathbb Z/N)=N\prod_{p\mid N}\Big(1+\frac1p\Big)=[\mathrm{SL}_2(\mathbb Z):\Gamma_0(N)]
+\char35{}\mathbb P^1(\mathbb Z/N)=N\prod_{p\mid N}\Big(1+\frac1p\Big)=[\mathrm{SL}_2(\mathbb Z):\Gamma_0(N)]
 $$
 
 개다. 이 생성원을 $x\in\mathbb P^1(\mathbb Z/N)$ 에 대한 **Manin 기호** $[x]$ 라 한다.
@@ -80,7 +80,7 @@ $$
 $\mathbb M_2$ 를 $\alpha,\beta\in\mathbb P^1(\mathbb Q)$ 인 기호 $\lbrace\alpha,\beta\rbrace$ 가 생성하는 자유아벨군을 다음 관계로 나눈 것이라 하자.
 
 $$
-\{\alpha,\beta\}+\{\beta,\gamma\}+\{\gamma,\alpha\}=0
+\lbrace\alpha,\beta\rbrace+\lbrace\beta,\gamma\rbrace+\lbrace\gamma,\alpha\rbrace=0
 $$
 
 (여기서 $\lbrace\alpha,\alpha\rbrace=0$ 과 $\lbrace\alpha,\beta\rbrace=-\lbrace\beta,\alpha\rbrace$ 가 따라 나온다.) $\mathrm{SL}_2(\mathbb Z)$ 가 $g\lbrace\alpha,\beta\rbrace=\lbrace g\alpha,g\beta\rbrace$ 로 작용하고, $\Gamma=\Gamma_0(N)$ 에 대해
@@ -93,7 +93,7 @@ $$
 
 $$
 \partial\colon\mathbb M_2(\Gamma)\longrightarrow\mathbb Z[\text{첨점}],\qquad
-\partial\{\alpha,\beta\}=(\beta)-(\alpha)
+\partial\lbrace\alpha,\beta\rbrace=(\beta)-(\alpha)
 $$
 
 의 핵 $\mathbb S_2(\Gamma)$ 가 **첨점 모듈러 기호**이며, 이것이 $H_1(X_0(N),\mathbb Z)$ 에 해당한다.
@@ -103,13 +103,13 @@ $$
 앞 절의 대응 $\Gamma_0(N)\backslash\mathrm{SL}_2(\mathbb Z)\cong\mathbb P^1(\mathbb Z/N)$ 아래에서 $x=(c:d)$ 에 대응하는 $g$ 를 잡아
 
 $$
-[x]=\{g\cdot0,\ g\cdot\infty\}\in\mathbb M_2(\Gamma_0(N))
+[x]=\lbrace g\cdot0,\ g\cdot\infty\rbrace\in\mathbb M_2(\Gamma_0(N))
 $$
 
 로 둔다. 여기서 $\mathrm{SL}_2(\mathbb Z)$ 는 $\mathbb P^1(\mathbb Z/N)$ 에 행벡터 우곱 $(c,d)\mapsto(c,d)M$ 으로 작용한다. Manin 의 정리는
 
 $$
-\mathbb M_2(\Gamma_0(N))\;\cong\;\frac{\bigoplus_{x\in\mathbb P^1(\mathbb Z/N)}\mathbb Z[x]}{\big([x]+[x\sigma],\ [x]+[x\tau]+[x\tau^2]\big)}
+\mathbb M_2(\Gamma_0(N))\thickspace\cong\thickspace\frac{\bigoplus_{x\in\mathbb P^1(\mathbb Z/N)}\mathbb Z[x]}{\big([x]+[x\sigma],\ [x]+[x\tau]+[x\tau^2]\big)}
 $$
 
 이다[^1].
@@ -119,7 +119,7 @@ $$
 $T_p$ 는 Manin 기호 위에서 명시적 행렬들의 합으로 작용한다. $p\nmid N$ 일 때
 
 $$
-T_p[x]=\Big[x\begin{pmatrix}p&0\\0&1\end{pmatrix}\Big]+\sum_{r=0}^{p-1}\Big[x\begin{pmatrix}1&r\\0&p\end{pmatrix}\Big]
+T_p[x]=\Big[x\begin{pmatrix}p&0\cr 0&1\end{pmatrix}\Big]+\sum_{r=0}^{p-1}\Big[x\begin{pmatrix}1&r\cr 0&p\end{pmatrix}\Big]
 $$
 
 로 쓰되, 각 항을 다시 Manin 기호로 환원해야 한다(행렬식이 $p$ 라 $\mathrm{SL}_2(\mathbb Z)$ 밖이기 때문이다). Merel 의 Heilbronn 행렬이 그 환원을 한 번에 해 준다. 어느 쪽이든 결과는 **정수 성분 행렬**이다.
@@ -135,7 +135,7 @@ $$
 Eichler–Shimura 대응이 복소수 계수에서 다음을 준다.
 
 $$
-\mathbb S_k(\Gamma)\otimes\mathbb C\;\cong\;S_k(\Gamma)\oplus\overline{S_k(\Gamma)}
+\mathbb S_k(\Gamma)\otimes\mathbb C\thickspace\cong\thickspace S_k(\Gamma)\oplus\overline{S_k(\Gamma)}
 $$
 
 $\mathbb M_k$ 전체로 가면 Eisenstein 부분이 더해진다. 차원으로 확인하면 $k=2$ 에서
@@ -162,7 +162,7 @@ $$
 $f$ 가 무게 2 새형식일 때 기호 $\lbrace 0,\infty\rbrace$ 와의 짝이 바로 $L$ 값이다.
 
 $$
-\langle\{0,\infty\},f\rangle=\int_0^{i\infty}2\pi i\,f(z)\,dz=L(f,1)
+\langle\lbrace 0,\infty\rbrace,f\rangle=\int_0^{i\infty}2\pi i\thinspace f(z)\thinspace dz=L(f,1)
 $$
 
 일반적으로 $\lbrace 0,\alpha\rbrace$ 꼴 기호가 꼬인 $L$ 값 $L(f,\chi,1)$ 을 주고, 무게 $k$ 에서는 $V_{k-2}$ 의 성분이 $1\le j\le k-1$ 인 임계점 $L(f,j)$ 를 준다. 게다가 이 값들은 주기 $\Omega_f^\pm$ 로 나누면 **유리수**이며, 그 유리수가 모듈러 기호 격자에서 직접 읽힌다. BSD 추측의 수치 검증이 이 성질 위에서 이루어진다.

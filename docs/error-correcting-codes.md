@@ -33,7 +33,7 @@ graph LR
 $F_q$ 를 원소가 $q$ 개인 유한체라 하자. 두 벡터의 Hamming 거리는 다른 자리의 개수이고, 무게는 0 이 아닌 자리의 개수다.
 
 $$
-d(x,y)=\lvert\{i:x_i\neq y_i\}\rvert,\qquad w(x)=d(x,0)
+d(x,y)=\lvert\lbrace i:x_i\neq y_i\rbrace\rvert,\qquad w(x)=d(x,0)
 $$
 
 부호 $C \subseteq \mathbb{F}_q^n$ 의 최소거리는 서로 다른 두 부호어 사이 거리의 최솟값이다.

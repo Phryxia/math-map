@@ -23,7 +23,7 @@ WKB 급수 $\sum_n \epsilon^n S_n(x)$ 의 계수는 $n!$ 규모로 커진다. �
 $\epsilon^2 y'' = Q(x)y$ 에서 회전점 $Q(x_0) = 0$ 마다 세 개의 곡선이 뻗어 나간다. 조건은
 
 $$
-\operatorname{Im}\int_{x_0}^{x}\sqrt{Q(t)}\,dt = 0
+\operatorname{Im}\int_{x_0}^{x}\sqrt{Q(t)}\thinspace dt = 0
 $$
 
 이다. 이 곡선 위에서 두 WKB 해 $e^{\pm\phi/\epsilon}$ 의 크기 비가 최대로 벌어지므로, 작은 쪽의 계수가 결정되지 않는다. 이 곡선들이 **Stokes 곡선**이고, 전체 그림을 **Stokes 그래프**라 한다. 그래프가 복소평면을 영역으로 나누고, 각 영역 안에서는 Borel 합이 문제없이 정의되어 정확한 해가 산다. 영역을 옮길 때만 무언가 일어난다.
@@ -33,7 +33,7 @@ $$
 각 영역에서 해가 정의되지만 그 해를 직접 비교하기는 번거롭다. 대신 회전점들을 감싸는 닫힌 경로 $\gamma$ 마다
 
 $$
-V_\gamma = \exp\left(\oint_\gamma S_{\mathrm{odd}}(x,\epsilon)\,dx\right)
+V_\gamma = \exp\left(\oint_\gamma S_{\mathrm{odd}}(x,\epsilon)\thinspace dx\right)
 $$
 
 라는 수 하나를 붙인다. 이것이 **Voros 기호**다. 지수 안은 발산급수이고, Borel 합을 취해 비로소 수가 된다. 경로를 연속적으로 움직여도 값이 변하지 않으므로 호몰로지류 $\gamma$ 만이 중요하고, 따라서 유한 개의 수가 문제 전체를 기술한다. 해의 무한한 자유도를 몇 개의 좌표로 압축한 셈이다.
@@ -57,7 +57,7 @@ graph TD
 $y = \exp\bigl(\epsilon^{-1}\negthinspace\int^x S\thinspace dt\bigr)$ 를 $\epsilon^2y'' = Qy$ 에 넣으면
 
 $$
-\epsilon\,S' + S^2 = Q
+\epsilon\thinspace S' + S^2 = Q
 $$
 
 라는 Riccati 방정식이 나온다. $S = \sum_{n\ge0}\epsilon^n S_n$ 으로 풀면 $S_0 = \pm\sqrt{Q}$ 이고 나머지는
@@ -75,7 +75,7 @@ $$
 로 나눈다. Riccati 방정식에서 $S_{\mathrm{even}} = -\tfrac12\thinspace\partial_x\log S_{\mathrm{odd}}$ 가 따라오므로, 해가
 
 $$
-y_{\pm}(x) = \frac{1}{\sqrt{S_{\mathrm{odd}}}}\exp\left(\pm\frac1\epsilon\int_{x_0}^{x} S_{\mathrm{odd}}\,dt\right)
+y_{\pm}(x) = \frac{1}{\sqrt{S_{\mathrm{odd}}}}\exp\left(\pm\frac1\epsilon\int_{x_0}^{x} S_{\mathrm{odd}}\thinspace dt\right)
 $$
 
 로 $S_{\mathrm{odd}}$ 하나에 의해 완전히 쓰인다. 모든 정보가 홀수부에 들어 있다는 것이 이 정리의 실질적 내용이고, 이후 모든 계산이 $S_{\mathrm{odd}}$ 로만 이루어지는 이유다. 아래 첨자 $x_0$ 는 보통 회전점으로 잡으며, 이때 적분이 수렴하도록 $S_{\mathrm{odd}}$ 의 특이부를 따로 떼어 낸다.
@@ -85,7 +85,7 @@ $$
 $S_{\mathrm{odd}}$ 는 $\sqrt{Q}$ 의 홀수 거듭제곱으로만 이루어지므로 회전점 주위에서 부호가 바뀐다. 따라서 회전점 두 개를 감싸는 닫힌 경로 $\gamma$ 위에서는 단일값이고, 적분
 
 $$
-\oint_\gamma S_{\mathrm{odd}}\,dx = \sum_{m\ge0}\epsilon^{2m-1}\oint_\gamma S_{2m}\,dx
+\oint_\gamma S_{\mathrm{odd}}\thinspace dx = \sum_{m\ge0}\epsilon^{2m-1}\oint_\gamma S_{2m}\thinspace dx
 $$
 
 가 뜻을 가진다. 홀수 차수 $S_{2m+1}$ 은 모두 완전미분이라 주기적분에 기여하지 않는다. 우변의 급수를 Borel 합한 값의 지수가 **Voros 주기 기호** $V_\gamma$ 다. 서로 다른 회전점을 잇는 열린 경로에 대해서도 같은 방식으로 기호를 정의할 수 있고, 이 둘을 합쳐 놓으면 곱셈에 대해 $V_{\gamma_1+\gamma_2} = V_{\gamma_1}V_{\gamma_2}$ 가 성립하는 군 준동형이 된다.
@@ -101,7 +101,7 @@ Stokes 곡선 하나가 회전점 두 개를 직접 잇는 배치를 **안장 �
 Stokes 곡선이 회전점 $a$ 에서 나와 회전점 $b$ 로 들어가는 안장 연결을 $\epsilon$ 의 위상을 돌려 통과시키면, Voros 기호가
 
 $$
-V_\gamma \;\longmapsto\; V_\gamma\,\bigl(1 + V_{\gamma_0}\bigr)^{\langle\gamma,\gamma_0\rangle}
+V_\gamma \thickspace\longmapsto\thickspace V_\gamma\thinspace\bigl(1 + V_{\gamma_0}\bigr)^{\langle\gamma,\gamma_0\rangle}
 $$
 
 로 바뀐다. $\gamma_0$ 는 그 안장 연결이 결정하는 사이클이고 $\langle\cdot,\cdot\rangle$ 는 교차수다.[^1] 이것이 **Delabaere–Dillinger–Pham 공식**이다. 세 가지를 눈여겨볼 만하다.

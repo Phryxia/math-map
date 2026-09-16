@@ -5,7 +5,7 @@
 지수족(exponential family)은 밀도가
 
 $$
-p(x \mid \eta) = h(x)\,\exp\!\big(\eta^{\top}T(x) - A(\eta)\big)
+p(x \mid \eta) = h(x)\thinspace\exp\negthinspace\big(\eta^{\top}T(x) - A(\eta)\big)
 $$
 
 꼴로 쓰이는 분포족이다. Bernoulli, Poisson, 정규, Gamma, Beta, 다항분포 등 표준적인 분포 대부분이 여기에 들어간다.
@@ -39,19 +39,19 @@ flowchart LR
 기준측도 $\nu$ 가 주어진 표본공간 $\mathcal X$ 위에서, 가측함수 $h : \mathcal X \to [0, \infty)$ 와 $T : \mathcal X \to \mathbb R^k$ 를 고정한다. 자연모수 $\eta \in \mathbb R^k$ 에 대해
 
 $$
-A(\eta) \;=\; \log \int_{\mathcal{X}} h(x)\,e^{\eta^{\top}T(x)}\, d\nu(x)
+A(\eta) \thickspace=\thickspace \log \int_{\mathcal{X}} h(x)\thinspace e^{\eta^{\top}T(x)}\thinspace d\nu(x)
 $$
 
 를 로그분배함수(log-partition function) 또는 cumulant 생성함수라 하고, 자연모수공간을
 
 $$
-\mathcal{N} = \{\eta \in \mathbb{R}^{k} : A(\eta) < \infty\}
+\mathcal{N} = \lbrace\eta \in \mathbb{R}^{k} : A(\eta) < \infty\rbrace
 $$
 
 로 둔다. $\eta \in \mathcal N$ 에 대해
 
 $$
-p(x \mid \eta) = h(x)\exp\!\big(\eta^{\top}T(x) - A(\eta)\big)
+p(x \mid \eta) = h(x)\exp\negthinspace\big(\eta^{\top}T(x) - A(\eta)\big)
 $$
 
 가 확률밀도가 되며, 이렇게 얻은 분포족을 지수족이라 한다. $T$ 를 충분통계량, $h$ 를 기저측도(carrier)라 부른다.
@@ -75,7 +75,7 @@ $\mathcal N$ 이 열린집합이면 정칙(regular), $T$ 의 성분들과 상수
 $x_1, \dots, x_n$ 이 독립이면
 
 $$
-p(x_{1:n} \mid \eta) = \Big(\prod_{i=1}^{n} h(x_i)\Big)\exp\!\Big(\eta^{\top}\sum_{i=1}^{n}T(x_i) - nA(\eta)\Big)
+p(x_{1:n} \mid \eta) = \Big(\prod_{i=1}^{n} h(x_i)\Big)\exp\negthinspace\Big(\eta^{\top}\sum_{i=1}^{n}T(x_i) - nA(\eta)\Big)
 $$
 
 이므로 표본 전체도 같은 자연모수를 갖는 지수족이고, 충분통계량은 합
@@ -91,7 +91,7 @@ $$
 통계량 $T$ 가 모수 $\theta$ 에 대해 충분(sufficient)하다는 것은, $T(X)$ 가 주어졌을 때 $X$ 의 조건부분포가 $\theta$ 에 의존하지 않는다는 뜻이다. Fisher–Neyman 인수분해 정리는 이것이 밀도의 형태로 판정된다고 말한다.
 
 $$
-T \text{ 가 충분} \iff p(x \mid \theta) = g\big(T(x),\, \theta\big)\, h(x) \quad \text{(모든 } x, \theta\text{)}.
+T \text{ 가 충분} \iff p(x \mid \theta) = g\big(T(x),\thinspace \theta\big)\thinspace h(x) \quad \text{(모든 } x, \theta\text{)}.
 $$
 
 지수족의 정의식이 정확히 이 형태이므로 $T$ 는 즉시 충분통계량이다. 증명 스케치(이산의 경우): 충분이면 $p(x \mid \theta) = \Pr(X=x \mid T=t)\Pr(T=t \mid \theta)$ 로 쪼개지고 앞쪽이 $\theta$ 무관이므로 인수분해가 나온다. 역으로 인수분해가 있으면 조건부확률을 계산할 때 $g(T(x), \theta)$ 가 분자와 분모에서 약분되어 $\theta$ 가 사라진다.
@@ -109,7 +109,7 @@ $$
 첫 식의 계산은 다음과 같다.
 
 $$
-\nabla A(\eta) = \frac{\int h(x)\,T(x)\,e^{\eta^{\top}T(x)}d\nu}{\int h(x)\,e^{\eta^{\top}T(x)}d\nu} = \mathbb{E}_{\eta}[T(X)].
+\nabla A(\eta) = \frac{\int h(x)\thinspace T(x)\thinspace e^{\eta^{\top}T(x)}d\nu}{\int h(x)\thinspace e^{\eta^{\top}T(x)}d\nu} = \mathbb{E}_{\eta}[T(X)].
 $$
 
 한 번 더 미분하면 두 번째 식이 나온다. 고차 미분은 고차 cumulant 를 준다. 예를 들어 Poisson 에서 $A(\eta) = e^{\eta}$ 이므로 모든 차수의 cumulant 가 $\lambda = e^{\eta}$ 로 같고, Bernoulli 에서 $A'(\eta) = e^{\eta}/(1+e^{\eta})$ 는 로지스틱 함수이며 $A''(\eta) = p(1-p)$ 다.
@@ -149,7 +149,7 @@ $$
 의 기울기다. $A^*$ 는 음의 엔트로피에 해당한다([Shannon entropy](entropy.md)). 또한 두 분포 사이의 [KL divergence](kl-divergence.md)는 $A$ 가 만드는 Bregman divergence 로 정확히 표현된다.
 
 $$
-D_{\mathrm{KL}}\big(p_{\eta_1} \,\|\, p_{\eta_2}\big) = A(\eta_2) - A(\eta_1) - \nabla A(\eta_1)^{\top}(\eta_2 - \eta_1).
+D_{\mathrm{KL}}\big(p_{\eta_1} \thinspace\Vert\thinspace p_{\eta_2}\big) = A(\eta_2) - A(\eta_1) - \nabla A(\eta_1)^{\top}(\eta_2 - \eta_1).
 $$
 
 이 항등식이 지수족에서의 정보기하(선형족과 지수족의 직교성, Pythagoras 항등식)를 떠받친다.[^1]
@@ -166,7 +166,7 @@ $$
 가능도가 지수족이면
 
 $$
-\pi(\eta \mid \tau, n_0) \;\propto\; \exp\!\big(\eta^{\top}\tau - n_0 A(\eta)\big)
+\pi(\eta \mid \tau, n_0) \thickspace\propto\thickspace \exp\negthinspace\big(\eta^{\top}\tau - n_0 A(\eta)\big)
 $$
 
 족이 켤레다. 관측 $x$ 를 보면 $\tau \leftarrow \tau + T(x)$ 와 $n_0 \leftarrow n_0 + 1$ 로 갱신되므로 사후분포가 같은 족에 머문다. Beta–Binomial, Gamma–Poisson, Normal–Normal 이 모두 이 한 줄의 특수경우다([Bayes 추론과 사후분포](bayesian-inference.md)).
@@ -176,13 +176,13 @@ $$
 $T$ 의 평균이 $\mu$ 로 고정된 분포 중 엔트로피를 최대화하는 것을 찾는 문제
 
 $$
-\max_{p}\; H(p) \quad \text{s.t.} \quad \mathbb{E}_{p}[T(X)] = \mu, \;\; \int p \, d\nu = 1
+\max_{p}\thickspace H(p) \quad \text{s.t.} \quad \mathbb{E}_{p}[T(X)] = \mu, \thickspace\thickspace \int p \thinspace d\nu = 1
 $$
 
 의 해는 제약의 Lagrange 승수를 $\eta$ 로 하는 지수족 분포 $p(x \mid \eta) = h(x)\exp(\eta^{\top}T(x) - A(\eta))$ 다([Lagrange 쌍대성과 KKT 조건](lagrange-duality.md)). 유도는 간단하다. 목표 분포 $p$ 와 지수족 분포 $q$ 의 KL divergence 가 비음이고, 모멘트 제약 아래에서 교차항이 상쇄되어
 
 $$
-H(p) = H(q) - D_{\mathrm{KL}}(p \,\|\, q) \le H(q)
+H(p) = H(q) - D_{\mathrm{KL}}(p \thinspace\Vert\thinspace q) \le H(q)
 $$
 
 가 되기 때문이다. 이것이 "평균만 알면 지수분포, 평균과 분산을 알면 정규분포, 아무 제약이 없으면 균등분포"라는 익숙한 목록의 출처다.[^2]

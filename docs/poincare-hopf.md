@@ -5,7 +5,7 @@
 곡면 위에 접벡터장을 하나 놓으면 어딘가에서는 벡터가 0 이 되는 자리(특이점)가 생기기 마련이다. Poincaré–Hopf 정리는 그 특이점들에 붙는 정수(지표)를 모두 더하면 언제나 같은 값이 나온다고 말한다.
 
 $$
-\sum_{p:\,V(p)=0}\operatorname{ind}_p(V)=\chi(M)
+\sum_{p:\thinspace V(p)=0}\operatorname{ind}_p(V)=\chi(M)
 $$
 
 벡터장은 마음대로 고를 수 있고 특이점의 개수와 위치도 그에 따라 달라지지만, 지표의 합은 [Euler 지표](euler-characteristic.md)로 고정된다. [Gauss–Bonnet 정리](gauss-bonnet.md)에서 곡률의 적분이 위상으로 고정되던 것과 같은 형태이며, 실제로 두 정리는 서로를 유도할 수 있다. 국소적으로 자유롭게 정할 수 있는 양의 총합이 전역 불변량이 되는 현상의 또 하나의 얼굴이다.

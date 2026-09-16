@@ -114,7 +114,7 @@ $$
 이 에너지는 변분 성질을 가진다. Thomson 원리에 따르면 유효저항은 $u$ 에서 $v$ 로 단위 전류를 보내는 모든 흐름 가운데 최소 에너지이며, Dirichlet 원리에 따르면 그 역수는 전위 함수에 대한 최소화로 얻어진다.
 
 $$
-R(u,v)^{-1}=\min\Big\{\varphi^{\mathsf T}L\varphi\ :\ \varphi_u-\varphi_v=1\Big\}
+R(u,v)^{-1}=\min\Big\lbrace\varphi^{\mathsf T}L\varphi\ :\ \varphi_u-\varphi_v=1\Big\rbrace
 $$
 
 ## Rayleigh 단조성
@@ -138,7 +138,7 @@ $$
 Kirchhoff 의 행렬-트리 정리와 결합하면 조합적 해석이 나온다. 간선 $e=(u,v)$ 에 대해 다음이 성립한다.
 
 $$
-w_e\,R(u,v)=\Pr[\,e\in T\,]
+w_e\thinspace R(u,v)=\Pr[\thinspace e\in T\thinspace]
 $$
 
 여기서 $T$ 는 가중치에 비례하는 확률로 뽑은 무작위 신장트리다. 즉 간선의 전도도 곱하기 유효저항은 그 간선이 무작위 신장트리에 포함될 확률이다.
@@ -146,7 +146,7 @@ $$
 모든 간선에 대해 더하면 Foster 정리를 얻는다. 신장트리의 간선 수가 항상 $n-1$ 이기 때문이다.
 
 $$
-\sum_{e=(u,v)\in E}w_e\,R(u,v)=n-1
+\sum_{e=(u,v)\in E}w_e\thinspace R(u,v)=n-1
 $$
 
 이 항등식이 저항 기반 샘플링의 표본 크기를 결정한다. 중요도의 총합이 정점 수로 고정되어 있으므로 필요한 표본 수가 간선 수가 아니라 정점 수에 비례한다.
@@ -156,7 +156,7 @@ $$
 $u$ 에서 출발해 $v$ 를 방문하고 돌아오는 데 걸리는 기대 시간, 즉 왕복시간이 유효저항에 비례한다.
 
 $$
-C(u,v)=2\,m\,R(u,v)\qquad(m=\textstyle\sum_e w_e)
+C(u,v)=2\thinspace m\thinspace R(u,v)\qquad(m=\textstyle\sum_e w_e)
 $$
 
 확률적 대상과 전기적 대상이 같은 방정식을 만족하기 때문이다. 두 언어의 사전은 [Random walk와 전기 네트워크](random-walks.md)에서 다룬다.

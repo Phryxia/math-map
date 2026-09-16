@@ -58,7 +58,7 @@ $$
 이 함수는 $s=1$ 의 단순극을 제외한 복소평면 전체로 해석적 연속된다. 연속된 함수는 함수방정식을 만족한다.
 
 $$
-\zeta(s)=2^s\pi^{s-1}\sin\!\Big(\frac{\pi s}2\Big)\Gamma(1-s)\,\zeta(1-s)
+\zeta(s)=2^s\pi^{s-1}\sin\negthinspace\Big(\frac{\pi s}2\Big)\Gamma(1-s)\thinspace\zeta(1-s)
 $$
 
 이 방정식이 $s$ 와 $1-s$ 를 맞바꾸므로 $\mathrm{Re}\thinspace s=1/2$ 직선이 대칭축이 된다.
@@ -103,7 +103,7 @@ $$
 
 $$
 -\frac{\zeta'}{\zeta}(s)=\sum_{n\ge1}\frac{\Lambda(n)}{n^s},\qquad
-\Lambda(n)=\begin{cases}\ln p&n=p^k\\0&\text{그 외}\end{cases}
+\Lambda(n)=\begin{cases}\ln p&n=p^k\cr 0&\text{그 외}\end{cases}
 $$
 
 $\Lambda$ 가 von Mangoldt 함수이고 $\psi(x)=\sum_{n\le x}\Lambda(n)$ 이다. $\zeta'/\zeta$ 의 극이 곧 $\zeta$ 의 극과 0 점이므로, 소수 계수 함수와 0 점이 여기서 직접 연결된다.
@@ -139,7 +139,7 @@ $$
 현재까지 알려진 최선의 무조건적 결과는 다음 형태다.
 
 $$
-\pi(x)=\mathrm{Li}(x)+O\!\left(x\exp\!\left(-c(\ln x)^{3/5}(\ln\ln x)^{-1/5}\right)\right)
+\pi(x)=\mathrm{Li}(x)+O\negthinspace\left(x\exp\negthinspace\left(-c(\ln x)^{3/5}(\ln\ln x)^{-1/5}\right)\right)
 $$
 
 $\mathrm{Re}\thinspace s=1$ 근처에 0 점이 없는 영역을 얼마나 넓게 잡을 수 있는지가 이 지수를 결정한다.
@@ -147,7 +147,7 @@ $\mathrm{Re}\thinspace s=1$ 근처에 0 점이 없는 영역을 얼마나 넓게
 Riemann 가설이 참이면 오차가 극적으로 작아진다.
 
 $$
-\pi(x)=\mathrm{Li}(x)+O\big(\sqrt x\,\ln x\big)
+\pi(x)=\mathrm{Li}(x)+O\big(\sqrt x\thinspace\ln x\big)
 $$
 
 명시 공식에서 $|x^\rho|=x^{1/2}$ 가 되기 때문이다. 역도 성립하므로 Riemann 가설은 "소수가 가능한 한 규칙적으로 분포한다" 는 진술과 정확히 같다.

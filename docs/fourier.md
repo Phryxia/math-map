@@ -21,7 +21,7 @@
 서로 다른 주파수의 회전 성분을 한 주기에 걸쳐 더하면 상쇄된다. 정수 $r$ 에 대해
 
 $$
-\sum_{k=0}^{N-1}e^{2\pi ikr/N}=\begin{cases}N&N\mid r\\0&N\nmid r\end{cases}
+\sum_{k=0}^{N-1}e^{2\pi ikr/N}=\begin{cases}N&N\mid r\cr 0&N\nmid r\end{cases}
 $$
 
 이며, 공비가 $1$ 인 경우와 아닌 경우로 나누어 유한 등비급수 공식을 적용하면 나온다. 역변환은 이 합 공식을 대입한 결과이고, 기저가 직교한다는 사실 자체다.
@@ -45,7 +45,7 @@ $$
 이다. 변환 방향의 지수 부호를 음수로 정하면
 
 $$
-X[k]=\sum_{t=0}^{N-1}x[t]\,e^{-2\pi ikt/N},\qquad k=0,\ldots,N-1
+X[k]=\sum_{t=0}^{N-1}x[t]\thinspace e^{-2\pi ikt/N},\qquad k=0,\ldots,N-1
 $$
 
 이다. 부호와 정규화 상수의 배치는 문헌마다 다르므로 라이브러리를 쓸 때 규약을 확인해야 한다.
@@ -53,7 +53,7 @@ $$
 ## 역변환
 
 $$
-x[t]=\frac1N\sum_{k=0}^{N-1}X[k]\,e^{2\pi ikt/N},\qquad t=0,\ldots,N-1
+x[t]=\frac1N\sum_{k=0}^{N-1}X[k]\thinspace e^{2\pi ikt/N},\qquad t=0,\ldots,N-1
 $$
 
 지수 부호를 바꾸고 $N$ 으로 나눈다. 양쪽에 $1/\sqrt{N}$ 을 배치하면 변환이 유니터리가 되어 Parseval 등식이 상수 없이 깔끔해진다.

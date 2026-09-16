@@ -8,7 +8,7 @@
 
 $$
 \frac{dx}{dt}=v_\theta(x,t),\qquad
-\mathcal L=\mathbb E_{t,x}\big\|v_\theta(x,t)-u_t(x)\big\|^2
+\mathcal L=\mathbb E_{t,x}\big\Vert v_\theta(x,t)-u_t(x)\big\Vert^2
 $$
 
 문제는 목표 속도장 $u_t(x)$ 를 계산할 수 없다는 것이다. 이것을 푸는 것이 **조건부 흐름 정합**이다. 데이터 점 하나를 조건으로 걸면 경로가 단순해져 목표가 닫힌 형태로 나오고, 두 손실의 기울기가 같다는 정리가 이를 정당화한다.
@@ -86,13 +86,13 @@ $$
 ## 흐름 정합과 조건부 흐름 정합
 
 $$
-\mathcal L_{\mathrm{FM}}(\theta)=\mathbb E_{t\sim U[0,1],\,x\sim p_t}\big\|v_\theta(x,t)-u_t(x)\big\|^2
+\mathcal L_{\mathrm{FM}}(\theta)=\mathbb E_{t\sim U[0,1],\thinspace x\sim p_t}\big\Vert v_\theta(x,t)-u_t(x)\big\Vert^2
 $$
 
 계산할 수 없는 목적함수다. 결합 $\pi(x_0,x_1)$ 과 조건부 경로를 고르면 계산 가능한 목적함수가 나온다.
 
 $$
-\mathcal L_{\mathrm{CFM}}(\theta)=\mathbb E_{t,\,(x_0,x_1)\sim\pi,\,x_t}\big\|v_\theta(x_t,t)-u_t(x_t\mid x_0,x_1)\big\|^2
+\mathcal L_{\mathrm{CFM}}(\theta)=\mathbb E_{t,\thinspace(x_0,x_1)\sim\pi,\thinspace x_t}\big\Vert v_\theta(x_t,t)-u_t(x_t\mid x_0,x_1)\big\Vert^2
 $$
 
 두 손실은 $\theta$ 에 무관한 상수만큼 다르므로 기울기가 같다.
@@ -130,7 +130,7 @@ $$
 - 연속 정규화 흐름의 순간 변수변환 공식으로 로그우도를 계산할 수 있다.
 
 $$
-\log p_1(x_1)=\log p_0(x_0)-\int_0^1\nabla\cdot v_\theta\big(x(t),t\big)\,dt
+\log p_1(x_1)=\log p_0(x_0)-\int_0^1\nabla\cdot v_\theta\big(x(t),t\big)\thinspace dt
 $$
 
 발산의 대각합 추정에 Hutchinson 추정량을 쓰면 고차원에서도 다룰 수 있다.

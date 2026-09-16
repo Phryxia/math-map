@@ -23,7 +23,7 @@ $x \mapsto x^2$ 를 실수에서 실수로 보면 단사도 전사도 아니다.
 $f : A \to B$ 는 곱집합의 부분집합 $f \subseteq A \times B$ 로서, 각 $a \in A$ 에 대해 $(a, b) \in f$ 인 $b$ 가 정확히 하나 존재하는 것이다. 그 유일한 $b$ 를 $f(a)$ 로 쓴다. $A$ 를 정의역, $B$ 를 공역이라 하고, 실제로 나오는 값들의 집합을 치역이라 한다.
 
 $$
-f(A)=\{f(x):x\in A\}\subseteq B
+f(A)=\lbrace f(x):x\in A\rbrace\subseteq B
 $$
 
 $A$ 의 일부에만 값이 정해진 대응은 부분함수라 하며 함수와 구별한다. 0 에서 값을 정하지 않은 역수 계산은 실수 전체를 정의역으로 하는 함수가 아니다. 이 구별이 [계산 가능성](computability.md)에서 중요해진다. 정지하지 않는 프로그램이 계산하는 것은 부분함수다.
@@ -33,7 +33,7 @@ $A$ 의 일부에만 값이 정해진 대응은 부분함수라 하며 함수와
 부분집합 $S \subseteq A$ 와 $T \subseteq B$ 에 대해 다음을 정의한다.
 
 $$
-f(S)=\{f(x):x\in S\},\qquad f^{-1}(T)=\{x\in A:f(x)\in T\}
+f(S)=\lbrace f(x):x\in S\rbrace,\qquad f^{-1}(T)=\lbrace x\in A:f(x)\in T\rbrace
 $$
 
 $f^{-1}$ 라는 표기를 쓰지만 역함수가 존재할 필요는 없다. 역상은 언제나 정의된다.

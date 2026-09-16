@@ -5,7 +5,7 @@
 [Satake 동형](satake-isomorphism.md)은 비분기 Hecke 대수가 쌍대군의 표현환과 같다고 말한다.
 
 $$
-\mathcal H(G,K)\;\cong\;R(\widehat G)\otimes\mathbb C
+\mathcal H(G,K)\thickspace\cong\thickspace R(\widehat G)\otimes\mathbb C
 $$
 
 그런데 표현환은 표현 범주의 **그림자**다. 표현환은 Grothendieck 군이라 $V\oplus W$ 와 $V'\oplus W'$ 이 같은 원소를 줄 수 있고, 텐서곱이 어떻게 분해되는지는 기억하지만 분해를 실현하는 사상은 잊는다. 그러면 원래 질문이 생긴다. **환이 아니라 범주 수준에서 성립하는가.**
@@ -14,7 +14,7 @@ $$
 
 $$
 \mathrm{Perv}_{G(\mathcal O)}\bigl(\mathrm{Gr}_G\bigr)
-\;\simeq\;
+\thickspace\simeq\thickspace
 \mathrm{Rep}(\widehat G)
 $$
 
@@ -44,8 +44,8 @@ Satake 동형의 좌변 $\mathcal H(G,K)$ 는 $K\backslash G/K$ 위의 함수 �
 
 $$
 \begin{array}{ccc}
-\text{함수} & \longleftrightarrow & \text{지표} \\
-\downarrow & & \downarrow \\
+\text{함수} & \longleftrightarrow & \text{지표} \cr
+\downarrow & & \downarrow \cr
 \text{퍼버스 층} & \longleftrightarrow & \text{표현}
 \end{array}
 $$
@@ -91,7 +91,7 @@ $\mathrm{Gr}^\lambda$ 는 열린 궤도이고 닫히지 않았다. 궤도의 폐
 층의 합성곱은 함수의 합성곱을 흉내 낸다. 곱사상 $m:G(F)\times^{G(\mathcal O)}\mathrm{Gr}_G\to\mathrm{Gr}_G$ 을 따라 밀어내는 것이다.
 
 $$
-\mathcal F\ast\mathcal G=m_*\bigl(\mathcal F\,\widetilde\boxtimes\,\mathcal G\bigr)
+\mathcal F\ast\mathcal G=m_*\bigl(\mathcal F\thinspace\widetilde\boxtimes\thinspace\mathcal G\bigr)
 $$
 
 문제는 이 곱이 교환적으로 보이지 않는다는 점이다. 표현의 텐서곱은 교환적이어야 하므로 교환 제약을 어디선가 얻어야 한다.
@@ -135,7 +135,7 @@ graph TD
 $k$ 를 체라 하고 $F=k((t))$ 와 $\mathcal O=k[[t]]$ 로 두고 $G$ 를 $k$ 위의 연결 환원군이라 하자. **아핀 Grassmann 다양체**는 함자
 
 $$
-\mathrm{Gr}_G(R)=\bigl\{(\mathcal E,\beta)\bigr\}/\cong
+\mathrm{Gr}_G(R)=\bigl\lbrace(\mathcal E,\beta)\bigr\rbrace/\cong
 $$
 
 로 정의된다. $\mathcal E$ 는 $\mathrm{Spec}\thinspace R[[t]]$ 위의 $G$ 다발, $\beta$ 는 $\mathrm{Spec}\thinspace R((t))$ 위에서의 자명화다. 이 함자가 ind-사영 ind-스킴으로 표현되고, $k$ 점은 $G(F)/G(\mathcal O)$ 다.
@@ -158,7 +158,7 @@ $\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)$ 를 $G(\mathcal O)$ 동변 퍼버
 
 > **정리 (Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 는 대칭 텐서 범주이고, 전체 코호몰로지 $H^\ast$ 를 올림자로 하는 Tannaka 쌍대성에 의해
 > $$
-> \mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\;\simeq\;\mathrm{Rep}(\widehat G)
+> \mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\thickspace\simeq\thickspace\mathrm{Rep}(\widehat G)
 > $$
 > 가 텐서 범주의 동치로 성립한다. $\mathcal{IC}\_\lambda$ 가 최고무게 $\lambda$ 의 기약표현 $V_\lambda$ 에 대응한다.[^1]
 
@@ -180,7 +180,7 @@ $$
 이고 오른쪽 $\mu$ 항이 무게 $\mu$ 의 무게 공간이다. 그 차원을 세는 것이 $\overline{\mathrm{Gr}^\lambda}\cap\overline{S_\mu}$ 의 기약성분들, 곧 **MV 순환**이다.
 
 $$
-\dim V_\lambda(\mu)=\#\bigl\{\text{MV 순환}\bigr\}
+\dim V_\lambda(\mu)=\char35{}\bigl\lbrace\text{MV 순환}\bigr\rbrace
 $$
 
 무게 중복도라는 표현론의 수가 기하적 순환의 개수가 된다. Kostant 분할 함수나 Littelmann 경로로 세던 것을 기하가 직접 준다. MV 다면체가 이 순환들의 조합적 그림자이고, 결정 기저(crystal basis)와 정확히 맞물린다.

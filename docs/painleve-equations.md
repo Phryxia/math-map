@@ -66,7 +66,7 @@ $$
 의 해는 $\mathrm{P}_{\mathrm{II}}$ 를 만족한다(미분해서 대입하면 바로 확인된다). Riccati 는 $q = -w'/w$ 로 선형화되고, 대입하면
 
 $$
-w'' = -\frac{x}{2}\,w
+w'' = -\frac{x}{2}\thinspace w
 $$
 
 가 되어 $x = -2^{1/3}t$ 치환으로 Airy 방정식이 된다. 즉 $q(x) = -\frac{d}{dx}\log \operatorname{Ai}\bigl(-2^{-1/3}x\bigr)$ 가 $\mathrm{P}_{\mathrm{II}}$ 의 해다. **Bäcklund 변환**이 $\alpha \mapsto \alpha \pm 1$ 을 실현하므로, 이 해에서 출발해 $\alpha \in \mathbb Z + \tfrac12$ 전체에 대한 Airy 형 해의 사슬이 만들어진다.
@@ -169,7 +169,7 @@ print("           참값 q(0)=0.367061552   " +
 [Tracy–Widom 분포](tracy-widom.md)는 위에서 계산한 $q$ 로
 
 $$
-F_2(s) = \exp\left(-\int_s^\infty (x-s)\,q(x)^2\,dx\right)
+F_2(s) = \exp\left(-\int_s^\infty (x-s)\thinspace q(x)^2\thinspace dx\right)
 $$
 
 로 쓰인다. 무작위 행렬 최대 고윳값의 분포표가 실제로 이 상미분방정식을 수치적분해 만들어진다. 무한차원 Fredholm 행렬식을 2계 방정식 하나로 바꾸는 것이 Painlevé 표현의 실용적 가치다.

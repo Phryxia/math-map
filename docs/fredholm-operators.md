@@ -5,7 +5,7 @@
 유한 차원에서 선형사상 $T\colon V\to W$ 의 지표
 
 $$
-\mathrm{ind}(T)=\dim\ker T-\dim\mathrm{coker}\,T
+\mathrm{ind}(T)=\dim\ker T-\dim\mathrm{coker}\thinspace T
 $$
 
 는 $\dim V-\dim W$ 다. $T$ 가 무엇인지는 전혀 들어가지 않는다. 계수 정리가 두 항을 정확히 상쇄시키기 때문이고, 그래서 유한 차원에서 지표는 정보를 담지 않는다.
@@ -77,7 +77,7 @@ graph TD
 Hilbert 공간 사이의 [유계 작용소](bounded-operators.md) $T\colon H_1\to H_2$ 가 **Fredholm** 이라는 것은
 
 $$
-\dim\ker T<\infty,\qquad \dim\mathrm{coker}\,T=\dim(H_2/\overline{\mathrm{ran}\,T})<\infty
+\dim\ker T<\infty,\qquad \dim\mathrm{coker}\thinspace T=\dim(H_2/\overline{\mathrm{ran}\thinspace T})<\infty
 $$
 
 이고 상이 닫혀 있다는 뜻이다. 사실 두 차원이 유한하면 상이 닫힌다는 것이 따라 나오므로, 조건은 두 줄로 충분하다. **지표**를 $\mathrm{ind}(T)=\dim\ker T-\dim\mathrm{coker}\thinspace T\in\mathbb Z$ 로 정의한다.
@@ -141,7 +141,7 @@ $a(z)=z-c$ 를 직접 계산해 보면 공식이 확인된다. $T_a=S-c$ 의 핵
 [지표 정리](index-theorem.md)는 이 정수를 명시적으로 계산한다.
 
 $$
-\mathrm{ind}(D)=\int_M\mathrm{ch}(\sigma(D))\,\mathrm{Td}(TM\otimes\mathbb C)
+\mathrm{ind}(D)=\int_M\mathrm{ch}(\sigma(D))\thinspace\mathrm{Td}(TM\otimes\mathbb C)
 $$
 
 우변은 주기호의 위상적 데이터만으로 만들어진다. 해석적으로 정의된 양이 위상으로 계산된다는 이 구조가 Gauss–Bonnet 정리와 Riemann–Roch 정리를 특수한 경우로 포함한다. Fredholm 지표는 그 전체 틀의 가장 기초적인 층이다.

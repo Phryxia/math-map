@@ -69,7 +69,7 @@ $$
 $\mathbb Q$ 에서 소수 $p$ 를 고정하고 **$p$ 진 부치**를 정의한다.
 
 $$
-v_p(x)=\max\{n:p^n\mid x\}\ \ (x\in\mathbb Z\setminus\{0\}),\qquad
+v_p(x)=\max\lbrace n:p^n\mid x\rbrace\ \ (x\in\mathbb Z\setminus\lbrace 0\rbrace),\qquad
 v_p\Big(\frac ab\Big)=v_p(a)-v_p(b),\qquad v_p(0)=\infty
 $$
 
@@ -90,7 +90,7 @@ $$
 $|\cdot|_p$ 에 대한 $\mathbb Q$ 의 완비화를 $\mathbb Q_p$ 라 한다. 그 안의 **정수환**은
 
 $$
-\mathbb Z_p=\{x\in\mathbb Q_p:|x|_p\le1\}=\{x:v_p(x)\ge0\}
+\mathbb Z_p=\lbrace x\in\mathbb Q_p:|x|_p\le1\rbrace=\lbrace x:v_p(x)\ge0\rbrace
 $$
 
 이고, 다음 성질을 갖는다.
@@ -241,7 +241,7 @@ Hensel 쪽에서는 $x^2-2$ 의 부치가 자릿수를 늘릴 때마다 정확�
 $\mathbb Q$ 의 자리 전체를 한꺼번에 다루려면 곱을 취해야 하는데, 단순한 직적은 너무 크고 직합은 너무 작다. 올바른 대상은 제한직적이다.
 
 $$
-\mathbb A_{\mathbb Q}=\Big\{(x_v)\in\mathbb R\times\prod_p\mathbb Q_p:\text{거의 모든 } p \text{ 에서 } x_v\in\mathbb Z_p\Big\}
+\mathbb A_{\mathbb Q}=\Big\lbrace(x_v)\in\mathbb R\times\prod_p\mathbb Q_p:\text{거의 모든 } p \text{ 에서 } x_v\in\mathbb Z_p\Big\rbrace
 $$
 
 아델 환이라 한다. $\mathbb Q$ 가 그 안에 이산 부분군으로 들어가고 몫이 콤팩트해지며, 곱군 쪽에서 만든 이델류군이 [유체론](class-field-theory.md)의 무대가 된다. 국소적으로 풀고 대역적으로 붙이는 전략이 여기서 하나의 위상적 대상으로 정착한다.

@@ -13,8 +13,8 @@ $$
 를 **비분기 Hecke 대수** 또는 구형 Hecke 대수라 한다. 고전적 $T_p$ 는 이 대수의 원소 하나다. Satake 가 1963 년에 증명한 것은 이 대수의 정체다.
 
 $$
-\mathcal H(G,K)\;\xrightarrow{\ \sim\ }\;\mathbb C[x_1^{\pm1},\dots,x_n^{\pm1}]^{S_n}
-\;=\;R\bigl(\widehat G\bigr)
+\mathcal H(G,K)\thickspace\xrightarrow{\ \sim\ }\thickspace\mathbb C[x_1^{\pm1},\dots,x_n^{\pm1}]^{S_n}
+\thickspace=\thickspace R\bigl(\widehat G\bigr)
 $$
 
 오른쪽은 $n$ 변수 대칭 Laurent 다항식환이고, 그것은 곧 **쌍대군** $\widehat G=\mathrm{GL}_n(\mathbb C)$ 의 유한차원 표현들이 이루는 표현환이다. 이중 잉여류를 세는 조합론이 복소 Lie 군의 표현론과 같은 환이라는 말이다.
@@ -37,7 +37,7 @@ $$
 $\mathcal H(G,K)$ 의 원소는 $f(k_1gk_2)=f(g)$ 인 콤팩트 받침 함수다. 받침이 콤팩트하고 양쪽 불변이므로, 이런 함수는 유한개의 이중 잉여류 $KgK$ 의 특성함수들의 선형결합이다. 곱은 합성곱이다.
 
 $$
-(f_1*f_2)(h)=\int_G f_1(g)\,f_2(g^{-1}h)\,dg,
+(f_1*f_2)(h)=\int_G f_1(g)\thinspace f_2(g^{-1}h)\thinspace dg,
 \qquad \mathrm{vol}(K)=1
 $$
 
@@ -47,8 +47,8 @@ $G/K$ 를 격자로 읽으면 그림이 선명해진다. $gK\mapsto L_g=g\mathbb
 
 $$
 (1_{K\alpha K}*1_{K\beta K})(h)
-=\#\bigl\{\,M \;:\; \mathbb Z_p^n\supset M \text{ 가 } \alpha \text{ 형},\;
-M\supset L_h \text{ 가 } \beta \text{ 형}\,\bigr\}
+=\char35{}\bigl\lbrace\thinspace M \thickspace:\thickspace \mathbb Z_p^n\supset M \text{ 가 } \alpha \text{ 형},\thickspace
+M\supset L_h \text{ 가 } \beta \text{ 형}\thinspace\bigr\rbrace
 $$
 
 ## 왜 가환인가 : Gelfand 의 요령
@@ -62,7 +62,7 @@ $$
 를 유도한다. 반자기동형이므로 $(f_1\ast f_2)^\iota=f_2^\iota\ast f_1^\iota$ 다. 그런데 **Cartan 분해**가
 
 $$
-G=\bigsqcup_{\lambda_1\ge\cdots\ge\lambda_n}K\,p^{\lambda}K,
+G=\bigsqcup_{\lambda_1\ge\cdots\ge\lambda_n}K\thinspace p^{\lambda}K,
 \qquad p^\lambda=\mathrm{diag}(p^{\lambda_1},\dots,p^{\lambda_n})
 $$
 
@@ -81,7 +81,7 @@ Cartan 분해는 $\mathcal H(G,K)$ 의 기저가 **지배적 쌍대지표** $\la
 한편 $\widehat G=\mathrm{GL}\_n(\mathbb C)$ 의 기약표현도 최고무게 $\lambda_1\ge\cdots\ge\lambda_n$ 로 매겨진다. 표현환 $R(\widehat G)$ 의 기저가 그 지표 $\chi_\lambda$ 들이다.
 
 $$
-\{\,KgK\,\}\;\longleftrightarrow\;X_*(T)^+\;\longleftrightarrow\;\{\,\text{기약표현}\,\}
+\lbrace\thinspace KgK\thinspace\rbrace\thickspace\longleftrightarrow\thickspace X_*(T)^+\thickspace\longleftrightarrow\thickspace\lbrace\thinspace\text{기약표현}\thinspace\rbrace
 $$
 
 기저끼리의 이 대응은 눈에 띄지만, 그 자체로는 우연일 수도 있다. Satake 의 정리는 **곱셈까지 일치**한다는 것이다. 격자를 세서 얻은 구조상수가 복소 표현의 텐서곱 분해 계수와 같은 환을 만든다.
@@ -93,7 +93,7 @@ $$
 동형을 구현하는 사상은 **상수항**이다. Borel 부분군 $B=TN$ 에 대해
 
 $$
-\mathcal S(f)(t)=\delta_B(t)^{1/2}\int_N f(tn)\,dn
+\mathcal S(f)(t)=\delta_B(t)^{1/2}\int_N f(tn)\thinspace dn
 $$
 
 로 두면 $\mathcal S(f)$ 는 $T/T(\mathbb Z_p)\cong X_*(T)$ 위의 함수, 곧 Laurent 다항식이다. 여기서 $\delta_B$ 는 모듈러 지표다.
@@ -126,7 +126,7 @@ $F$ 를 비아르키메데스 국소체, $\mathcal O$ 를 그 정수환, $q$ 를
 **비분기 Hecke 대수**는 $\mathrm{vol}(K)=1$ 인 Haar 측도에 대한 합성곱 대수
 
 $$
-\mathcal H(G,K)=\bigl\{\,f:G\to\mathbb C \;\bigm|\; f \text{ 는 콤팩트 받침},\; f(k_1gk_2)=f(g)\,\bigr\}
+\mathcal H(G,K)=\bigl\lbrace\thinspace f:G\to\mathbb C \thickspace\bigm|\thickspace f \text{ 는 콤팩트 받침},\thickspace f(k_1gk_2)=f(g)\thinspace\bigr\rbrace
 $$
 
 이고 단위원은 $1_K$ 다.
@@ -140,12 +140,12 @@ $B=TN$ 에 대해 모듈러 지표 $\delta_B(t)=\lvert\det(\mathrm{Ad}(t)\mid_{\
 $$
 \mathcal S:\mathcal H(G,K)\to\mathbb C[X_*(T)],
 \qquad
-\mathcal S(f)(\lambda)=\delta_B(\lambda(\varpi))^{1/2}\int_N f(\lambda(\varpi)n)\,dn
+\mathcal S(f)(\lambda)=\delta_B(\lambda(\varpi))^{1/2}\int_N f(\lambda(\varpi)n)\thinspace dn
 $$
 
 > **정리 (Satake, 1963).** $\mathcal S$ 는 $\mathbb C$ 대수의 동형
 > $$
-> \mathcal H(G,K)\;\xrightarrow{\ \sim\ }\;\mathbb C[X_*(T)]^{W}
+> \mathcal H(G,K)\thickspace\xrightarrow{\ \sim\ }\thickspace\mathbb C[X_*(T)]^{W}
 > $$
 > 이다. $W$ 는 Weyl 군이다. 특히 $\mathcal H(G,K)$ 는 가환이다.[^1]
 
@@ -158,7 +158,7 @@ $$
 $G=\mathrm{GL}\_n$ 이면 $X_\ast(T)=\mathbb Z^n$ 과 $W=S_n$ 과 $\widehat G=\mathrm{GL}_n(\mathbb C)$ 이므로
 
 $$
-\mathcal H\bigl(\mathrm{GL}_n(F),\mathrm{GL}_n(\mathcal O)\bigr)\;\cong\;
+\mathcal H\bigl(\mathrm{GL}_n(F),\mathrm{GL}_n(\mathcal O)\bigr)\thickspace\cong\thickspace
 \mathbb C[x_1^{\pm1},\dots,x_n^{\pm1}]^{S_n}
 $$
 
@@ -181,7 +181,7 @@ $$
 $\widehat G$ 의 유한차원 표현 $r$ 마다 국소 $L$ 인자가 정의된다.
 
 $$
-L(s,\pi,r)=\det\bigl(1-r(A_\pi)\,q^{-s}\bigr)^{-1}
+L(s,\pi,r)=\det\bigl(1-r(A_\pi)\thinspace q^{-s}\bigr)^{-1}
 $$
 
 $r$ 이 표준표현이면 표준 $L$ 인자 $\prod_i(1-\alpha_iq^{-s})^{-1}$ 다.
@@ -194,7 +194,7 @@ $G=\mathrm{GL}\_2(\mathbb Q_p)$ 와 $K=\mathrm{GL}\_2(\mathbb Z_p)$ 에서 기�
 
 $$
 \mathcal S\bigl(T(p^b,p^{a+b})\bigr)
-=(x_1x_2)^b\,p^{a/2}\Bigl(h_a(x_1,x_2)-\tfrac1p\,x_1x_2\,h_{a-2}(x_1,x_2)\Bigr)
+=(x_1x_2)^b\thinspace p^{a/2}\Bigl(h_a(x_1,x_2)-\tfrac1p\thinspace x_1x_2\thinspace h_{a-2}(x_1,x_2)\Bigr)
 $$
 
 이다. $h_a$ 는 완전 동차 대칭 다항식 $\sum_{k=0}^{a}x_1^kx_2^{a-k}$ 이고 $h_{-1}=h_{-2}=0$ 이다. 특별한 경우가
@@ -212,13 +212,13 @@ $$
 $\mathcal H$ 의 곱을 정의대로 계산하면 정수 구조상수가 나온다. 가장 유명한 것이
 
 $$
-T(p)*T(p)=T(p^2)+(p+1)\,T(p,p)
+T(p)*T(p)=T(p^2)+(p+1)\thinspace T(p,p)
 $$
 
 이고, $m\ge2$ 에서는
 
 $$
-T(p)*T(p^m)=T(p^{m+1})+p\,T(p,p)*T(p^{m-1})
+T(p)*T(p^m)=T(p^{m+1})+p\thinspace T(p,p)*T(p^{m-1})
 $$
 
 이다. $m=1$ 에서만 계수가 $p+1$ 이고 그 뒤로는 $p$ 인 것이 고전적 Hecke 관계식 $T_pT_{p^m}=T_{p^{m+1}}+p^{k-1}T_{p^{m-1}}$ 의 무게 정규화와 맞물리는 자리다.
@@ -317,14 +317,14 @@ for p in (2, 3, 5):
 Satake 변환의 쌍대가 **구형함수**다. 비분기 지표 $\chi$ 에 대해
 
 $$
-\omega_\chi(g)=\int_K\chi\delta_B^{1/2}(b(kg))\,dk
+\omega_\chi(g)=\int_K\chi\delta_B^{1/2}(b(kg))\thinspace dk
 $$
 
 가 $\mathcal H(G,K)$ 의 동시 고유함수이고, Macdonald 의 공식이 이것을 Weyl 군 위의 합으로 명시한다.
 
 $$
 \omega_\chi(\varpi^\lambda)=\frac{\delta_B^{1/2}(\varpi^\lambda)}{\lvert W\rvert}
-\sum_{w\in W}c(w\chi)\,(w\chi)(\varpi^\lambda),
+\sum_{w\in W}c(w\chi)\thinspace(w\chi)(\varpi^\lambda),
 \qquad
 c(\chi)=\prod_{\alpha>0}\frac{1-q^{-1}\chi(\alpha^\vee(\varpi))^{-1}}{1-\chi(\alpha^\vee(\varpi))^{-1}}
 $$
@@ -342,7 +342,7 @@ $\mathrm{GL}_n$ 의 첨점 자기동형 표현이 모든 자리에서 온도적�
 Satake 매개변수를 알면 $L$ 인자를 알고, 그 기하급수 전개가 Hecke 고유값 수열을 준다.
 
 $$
-\det(1-A_\pi t)^{-1}=\frac1{(1-\alpha t)(1-\beta t)}=\sum_{m\ge0}h_m(\alpha,\beta)\,t^m
+\det(1-A_\pi t)^{-1}=\frac1{(1-\alpha t)(1-\beta t)}=\sum_{m\ge0}h_m(\alpha,\beta)\thinspace t^m
 $$
 
 $h_m(\alpha,\beta)$ 가 정규화된 $T_{p^m}$ 의 고유값이다. $\Delta$ 의 $\tau$ 로 확인한다.
@@ -386,9 +386,9 @@ $\lvert\alpha\rvert=1$ 이 Deligne 의 정리, 곧 $\lvert\tau(p)\rvert\le2p^{11
 강령의 기본 서술은 "자기동형 표현 $\pi$ 와 Galois 표현 $\rho$ 가 대응한다" 이다. 이 대응을 검증 가능한 형태로 쓰려면 양쪽에서 같은 종류의 자료를 뽑아야 하는데, Galois 쪽이 주는 것은 Frobenius 켤레류다. Satake 동형이 자기동형 쪽에서도 켤레류를 뽑아 준다.
 
 $$
-A_{\pi_v}\ \in\ \widehat G(\mathbb C)/\!\sim
+A_{\pi_v}\ \in\ \widehat G(\mathbb C)/\negthinspace\sim
 \qquad\longleftrightarrow\qquad
-\rho(\mathrm{Frob}_v)\ \in\ {}^LG/\!\sim
+\rho(\mathrm{Frob}_v)\ \in\ {}^LG/\negthinspace\sim
 $$
 
 거의 모든 자리에서 이 둘이 같다는 것이 대응의 정의다. [Galois 표현](galois-representations.md)과 [모듈러 형식](modular-forms.md)의 관계에서 $a_p=\mathrm{tr}\thinspace\rho(\mathrm{Frob}_p)$ 라는 익숙한 식이 $n=2$ 의 경우다.
@@ -420,7 +420,7 @@ $$
 동형의 오른쪽이 표현환이라는 것은 "지표 수준", 곧 Grothendieck 군 수준의 진술이다. 이것을 범주 수준으로 들어 올린 것이 **기하학적 Satake 대응**이다. 아핀 Grassmann 다양체 $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 위의 $G(\mathcal O)$ 동변 퍼버스 층들의 범주가 텐서 범주로서 $\widehat G$ 의 표현 범주와 동치다.
 
 $$
-\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\;\simeq\;\mathrm{Rep}(\widehat G)
+\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\thickspace\simeq\thickspace\mathrm{Rep}(\widehat G)
 $$
 
 $\mathrm{Gr}\_G$ 의 $G(\mathcal O)$ 궤도가 $X_\ast(T)^+$ 로 매겨지고 그 위의 교차 코호몰로지 층이 기약표현에 대응한다. 함수 수준에서 층 수준으로 올라가면 Satake 변환의 $p^{-1}$ 보정항이 코호몰로지 차수의 이동으로 설명된다. Lusztig, Ginzburg, Mirković–Vilonen 을 거쳐 정리가 되었고, 쌍대군을 **정의**하는 방법을 준다는 점에서 기하학적 Langlands 강령의 출발점이다.

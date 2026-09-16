@@ -28,7 +28,7 @@ $$
 $d$ 정규 그래프 위에서 무작위로 이웃을 골라 걷는다. 분포가 균등분포에 얼마나 빨리 가까워지는가는 전이행렬 $M=A/d$ 의 고윳값으로 정해진다. 최대 고윳값은 항상 $1$ 이고 고유벡터는 균등분포다. 나머지 고윳값의 절댓값 최대를 $\lambda$ 라 하면, $t$ 걸음 뒤의 편차가 $\lambda^t$ 로 줄어든다.
 
 $$
-\|M^t x-\pi\|\le\lambda^{t}\|x-\pi\|
+\Vert M^t x-\pi\Vert\le\lambda^{t}\Vert x-\pi\Vert
 $$
 
 그러므로 $\lambda$ 가 $1$ 에서 떨어져 있으면 $O(\log n)$ 걸음 만에 섞인다. 이것이 expander 의 실용적 정의다. **상수 차수인데 로그 시간에 섞인다.**
@@ -68,7 +68,7 @@ $$
 $d$ 정규 그래프 $G=(V,E)$ 와 $|V|=n$ 에 대해
 
 $$
-h(G)=\min_{0<|S|\le n/2}\frac{|E(S,\bar S)|}{d\,|S|}
+h(G)=\min_{0<|S|\le n/2}\frac{|E(S,\bar S)|}{d\thinspace|S|}
 $$
 
 를 **전도도**(Cheeger 상수)라 한다. 그래프 족 $\lbrace G_i\rbrace$ 가 $|V_i|\to\infty$ 이고 차수가 상수 $d$ 로 고정되며 $h(G_i)\ge\varepsilon>0$ 인 상수 $\varepsilon$ 이 있으면 **expander 족**이라 한다.
@@ -106,7 +106,7 @@ $$
 expander 에서는 임의의 두 집합 사이 간선 수가 무작위 그래프에서의 기댓값에 가깝다. $S,T\subseteq V$ 에 대해
 
 $$
-\left|\,|E(S,T)|-\frac{d|S||T|}{n}\,\right|\le\lambda\, d\sqrt{|S||T|}
+\left|\thinspace|E(S,T)|-\frac{d|S||T|}{n}\thinspace\right|\le\lambda\thinspace d\sqrt{|S||T|}
 $$
 
 여기서 $\lambda=\max(|\lambda_2|,|\lambda_n|)$ 다. 이것이 expander 를 "유사무작위" 그래프라 부르는 이유다. 간선 분포가 무작위 그래프와 구별되지 않을 만큼 고르다. 조합론에서 expander 논법의 대부분이 이 한 부등식을 쓴다.

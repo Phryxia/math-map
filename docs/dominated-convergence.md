@@ -33,7 +33,7 @@ $$
 를 만족하면, $f$ 와 각 $f_n$ 은 적분 가능하고
 
 $$
-\lim_{n\to\infty}\int_X f_n\,d\mu=\int_X f\,d\mu
+\lim_{n\to\infty}\int_X f_n\thinspace d\mu=\int_X f\thinspace d\mu
 $$
 
 가 성립한다. 실수값뿐 아니라 복소수값 함수에도 실수부와 허수부에 나누어 적용할 수 있다.
@@ -64,7 +64,7 @@ $\int G < \infty$ 가 소거 단계에서 결정적으로 쓰인다. 지배함�
 $\lvert f_n - f \rvert \to 0$ 이 거의 모든 점에서 성립하고 $\lvert f_n - f \rvert \le 2G$ 이므로 정리를 다시 적용하면
 
 $$
-\lim_{n\to\infty}\int_X|f_n-f|\,d\mu=0
+\lim_{n\to\infty}\int_X|f_n-f|\thinspace d\mu=0
 $$
 
 를 얻는다. 적분값이 수렴하는 것보다 강한 결론이며, $L^1$ 노름에서의 수렴을 뜻한다. 이 형태가 $L^1$ 의 완비성 증명과 근사 논증에 직접 쓰인다.
@@ -74,7 +74,7 @@ $$
 점별 수렴과 각 함수의 적분 가능성만으로는 부족하다. $(0,1]$ 에서
 
 $$
-f_n(x)=n\,\mathbf{1}_{(0,1/n)}(x)
+f_n(x)=n\thinspace\mathbf{1}_{(0,1/n)}(x)
 $$
 
 는 모든 점에서 $0$ 으로 수렴하지만 적분은 항상 $1$ 이다. 적분 가능한 지배함수를 잡을 수 없기 때문이다.
@@ -112,7 +112,7 @@ for n in (10, 100, 1000):
 - **적분 기호 아래 미분.** $\lvert \partial f/\partial t\thinspace(x,t) \rvert \le G(x)$ 이면
 
 $$
-\frac{d}{dt}\int_X f(x,t)\,d\mu=\int_X\frac{\partial f}{\partial t}(x,t)\,d\mu
+\frac{d}{dt}\int_X f(x,t)\thinspace d\mu=\int_X\frac{\partial f}{\partial t}(x,t)\thinspace d\mu
 $$
 
 가 성립한다. 미분몫이 평균값 정리로 도함수에 의해 지배되므로 정리를 적용한 결과다. 적률생성함수의 미분, 최대가능도 추정의 점수함수 계산, Feynman 의 적분 기법이 모두 이 형태다.

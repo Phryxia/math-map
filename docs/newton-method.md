@@ -45,7 +45,7 @@ $$
 $f$ 가 두 번 미분가능하면 $g$ 의 도함수는 다음과 같다.
 
 $$
-g'(x) = \frac{f(x)\,f''(x)}{f'(x)^2} .
+g'(x) = \frac{f(x)\thinspace f''(x)}{f'(x)^2} .
 $$
 
 단순근 $r$ (즉 $f(r) = 0$ , $f'(r) \ne 0$ )에서는 $g'(r) = 0$ 이다.
@@ -55,7 +55,7 @@ $$
 $F$ 가 $n$ 차원 벡터값 함수일 때 접선 근사는 Jacobian 행렬로 주어진다.
 
 $$
-J(x)_{ij} = \frac{\partial F_i}{\partial x_j}(x),\qquad J(x_k)\,\Delta_k = -F(x_k),\qquad x_{k+1} = x_k + \Delta_k .
+J(x)_{ij} = \frac{\partial F_i}{\partial x_j}(x),\qquad J(x_k)\thinspace\Delta_k = -F(x_k),\qquad x_{k+1} = x_k + \Delta_k .
 $$
 
 역행렬을 명시적으로 구하지 않고 매 단계 선형계를 푼다. [행렬식](determinants.md)이 0에 가까우면(즉 Jacobian이 특이에 가까우면) 이 단계가 불안정해진다.
@@ -73,7 +73,7 @@ $$
 오차를 $e_k=x_k-r$ 이라 할 때, 어떤 상수와 지수에 대해
 
 $$
-|e_{k+1}| \le C\,|e_k|^{p}
+|e_{k+1}| \le C\thinspace|e_k|^{p}
 $$
 
 가 성립하면 수렴 차수를 $p$ 라 한다. $p=1$ 이면 선형, $p=2$ 면 이차 수렴이다.
@@ -85,7 +85,7 @@ $$
 $f$ 가 두 번 연속미분가능하고 $r$ 이 단순근이라 하자. $g'$ 이 연속이고 $g'(r) = 0$ 이므로, 임의의 양수 $q < 1$ 에 대해 구간 $I = [r-d, r+d]$ 를 충분히 작게 잡아 $|g'| \le q$ 가 되게 할 수 있다. 평균값 정리로
 
 $$
-|g(x) - r| = |g(x) - g(r)| \le q\,|x - r| \le d
+|g(x) - r| = |g(x) - g(r)| \le q\thinspace|x - r| \le d
 $$
 
 이므로 $g$ 는 $I$ 를 자기 자신으로 보내는 축약사상이다. $I$ 는 완비 [거리 공간](metric-spaces.md)이므로 Banach 고정점 정리에 의해 $I$ 안의 어떤 초기값에서 시작해도 반복열은 유일한 고정점 $r$ 로 수렴한다.
@@ -103,7 +103,7 @@ $$
 인 $\xi_k$ 가 $x_k$ 와 $r$ 사이에 존재한다([미적분학의 기본 정리](fundamental-calculus.md)에서 나오는 적분형 나머지로도 같다). 양변을 $f'(x_k)$ 로 나누고 반복식을 대입하면
 
 $$
-e_{k+1} = \frac{f''(\xi_k)}{2 f'(x_k)}\, e_k^{2}
+e_{k+1} = \frac{f''(\xi_k)}{2 f'(x_k)}\thinspace e_k^{2}
 $$
 
 를 얻는다. 따라서 $r$ 근방에서

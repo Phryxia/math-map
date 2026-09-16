@@ -86,7 +86,7 @@ $\widetilde X$ 가 무엇이냐에 따라 $X$ 를 **타원형**, **포물형**, 
 콤팩트 Riemann 곡면 위에는 유리형함수가 충분히 많아서 곡면을 사영공간에 매장할 수 있고, 그 상이 대수곡선이 된다. 거꾸로 비특이 사영곡선은 Riemann 곡면이다. 이 동치가 복소해석과 대수기하를 잇는 통로이고, 함수체를 통해 보면 다음 세 범주가 같다.
 
 $$
-\{\text{콤팩트 Riemann 곡면}\}\ \leftrightarrow\ \{\mathbb C\text{ 위 비특이 사영곡선}\}\ \leftrightarrow\ \{\mathbb C\text{ 의 초월차수 }1\text{ 확대체}\}
+\lbrace\text{콤팩트 Riemann 곡면}\rbrace\ \leftrightarrow\ \lbrace\mathbb C\text{ 위 비특이 사영곡선}\rbrace\ \leftrightarrow\ \lbrace\mathbb C\text{ 의 초월차수 }1\text{ 확대체}\rbrace
 $$
 
 유리형함수의 존재 자체가 간단하지 않다. 증명은 $\bar\partial$ 방정식의 해결이나 Hodge 이론을 거치고, 그 결과가 [Riemann–Roch](riemann-roch.md) 정리에 정리되어 있다.

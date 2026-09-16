@@ -47,7 +47,7 @@ $$
 돌파구는 이 원소들이 탑 위에서 **자취로 이어져 있다**는 사실이다. Heegner 점이라면
 
 $$
-\mathrm{Tr}_{K_{n\ell}/K_n}\big(y_{n\ell}\big)=a_\ell\,y_n
+\mathrm{Tr}_{K_{n\ell}/K_n}\big(y_{n\ell}\big)=a_\ell\thinspace y_n
 $$
 
 이다. 자취가 Hecke 고유값이라는 숫자로 떨어진다는 점이 결정적이다. $p\mid a_\ell$ 인 소수 $\ell$ 을 고르면 자취가 $p$ 를 법으로 **0** 이 되고, 그 순간 $y_{n\ell}$ 은 "자취가 사라지는 원소" 가 된다. 자취가 0 인 원소에는 군환에서 나눗셈 비슷한 조작이 가능해지고, 그 조작의 결과가 어긋난 류다.
@@ -57,19 +57,19 @@ $$
 $G=\langle\sigma\rangle$ 가 위수 $m$ 인 순환군이라 하자. 군환 $\mathbb Z[G]$ 안에서
 
 $$
-D=\sum_{i=1}^{m-1} i\,\sigma^{i},\qquad N=\sum_{i=0}^{m-1}\sigma^{i}
+D=\sum_{i=1}^{m-1} i\thinspace\sigma^{i},\qquad N=\sum_{i=0}^{m-1}\sigma^{i}
 $$
 
 로 두면 다음 항등식이 성립한다.
 
 $$
-(\sigma-1)\,D\;=\;m-N
+(\sigma-1)\thinspace D\thickspace=\thickspace m-N
 $$
 
 증명은 지수를 한 칸 밀어 상쇄시키는 것뿐이다. 이 한 줄이 Kolyvagin 유도의 전부다. 점 $y$ 에 $D$ 를 씌우고 $\sigma-1$ 을 먹이면
 
 $$
-(\sigma-1)Dy=m\,y-Ny=m\,y-\mathrm{Tr}(y)
+(\sigma-1)Dy=m\thinspace y-Ny=m\thinspace y-\mathrm{Tr}(y)
 $$
 
 이므로, $p\mid m$ 이고 $p\mid \mathrm{Tr}(y)$ 이면 $(\sigma-1)Dy\in p\thinspace E(K_\ell)$ 이다. 곧 $Dy$ 는 $p$ 를 법으로 **Galois 불변**이 된다. 대역 불변이라는 성질이 코호몰로지 류로 내려가는 통로를 열어 준다.
@@ -100,9 +100,9 @@ assert all(check(m) for m in range(2, 50))
 자취 관계에 나타나는 계수는 우연한 숫자가 아니다. 일반적인 형태는
 
 $$
-\mathrm{Tr}_{K(n\ell)/K(n)}\big(c_{n\ell}\big)=P_\ell\!\left(\mathrm{Fr}_\ell^{-1}\right)\,c_n,
+\mathrm{Tr}_{K(n\ell)/K(n)}\big(c_{n\ell}\big)=P_\ell\negthinspace\left(\mathrm{Fr}_\ell^{-1}\right)\thinspace c_n,
 \qquad
-P_\ell(x)=\det\!\left(1-\mathrm{Fr}_\ell\,x\ \middle|\ T^{*}\right)
+P_\ell(x)=\det\negthinspace\left(1-\mathrm{Fr}_\ell\thinspace x\ \middle|\ T^{*}\right)
 $$
 
 이고, $P_\ell$ 은 바로 그 표현의 $L$ 함수의 **$\ell$ 번째 Euler 인자**다. 즉 Euler 계란 $L$ 함수의 Euler 곱을 계수로 지니고 탑 위에 놓인 원소들의 열이다. $L$ 함수와 Selmer 군을 잇는 다리가 이 계수 안에 숨어 있고, 그래서 BSD 나 Iwasawa 주추측처럼 "해석적 양이 산술적 군을 제어한다" 는 진술의 증명이 여기서 나온다.
@@ -128,7 +128,7 @@ $K$ 를 수체, $T$ 를 $G_K$ 가 작용하는 유한생성 $\mathbb Z_p$ 가군
 **정의.** 류의 족 $c=\lbrace c_n\rbrace_{n\in\mathcal N}$ 으로 $c_n\in H^1(K(n),T)$ 인 것이 **Euler 계**라는 것은 모든 $n$ 과 $\ell\nmid n$ 에 대해
 
 $$
-\mathrm{cor}_{K(n\ell)/K(n)}\big(c_{n\ell}\big)=P_\ell\!\left(\mathrm{Fr}_\ell^{-1}\right)c_n
+\mathrm{cor}_{K(n\ell)/K(n)}\big(c_{n\ell}\big)=P_\ell\negthinspace\left(\mathrm{Fr}_\ell^{-1}\right)c_n
 $$
 
 를 만족한다는 뜻이다. 여기서 $\mathrm{cor}$ 는 코제한(자취)이고 $P_\ell(x)=\det(1-\mathrm{Fr}_\ell x\mid T^{*})$ 다.
@@ -146,7 +146,7 @@ $T=\mathbb Z_p(1)$ 이면 $P_\ell(x)=1-x$ 이고 $H^1(K(n),\mathbb Z_p(1))$ 은 
 $E/\mathbb Q$ 가 도체 $N$ 인 [타원곡선](elliptic-curves.md), $K$ 가 Heegner 가정을 만족하는 허수이차체, $p$ 가 $E[p]$ 의 [Galois 표현](galois-representations.md)이 전사인 소수라 하자. 소수 $\ell$ 이 **Kolyvagin 소수**라는 것은
 
 $$
-\ell\nmid N\,p\,\mathrm{disc}(K),\qquad
+\ell\nmid N\thinspace p\thinspace\mathrm{disc}(K),\qquad
 \ell\ \text{은 }K\text{ 에서 관성},\qquad
 p\mid \ell+1,\qquad p\mid a_\ell
 $$
@@ -170,7 +170,7 @@ $n=1$ 이면 $\kappa_1$ 은 원래 Heegner 점 $y_K$ 의 Kummer 상이고 Selmer
 각 자리 $v$ 에서 부분군 $H^1_{\mathcal F}(K_v,E[p])\subset H^1(K_v,E[p])$ 를 고르는 것을 **Selmer 구조**라 하고
 
 $$
-\mathrm{Sel}_{\mathcal F}(K,E[p])=\left\{\,s\in H^1(K,E[p])\ :\ \mathrm{loc}_v(s)\in H^1_{\mathcal F}(K_v,E[p])\ \ \forall v\,\right\}
+\mathrm{Sel}_{\mathcal F}(K,E[p])=\left\lbrace\thinspace s\in H^1(K,E[p])\ :\ \mathrm{loc}_v(s)\in H^1_{\mathcal F}(K_v,E[p])\ \ \forall v\thinspace\right\rbrace
 $$
 
 를 그 Selmer 군이라 한다. 표준 선택은 $H^1_f(K_v,E[p])=\mathrm{im}\big(E(K_v)/p\big)$ 이고 이때 Selmer 군이 보통의 $\mathrm{Sel}^p(E/K)$ 다.
@@ -200,9 +200,9 @@ $$
 더 정확히는 두 개의 **명시적 상호법칙**이 성립한다.
 
 $$
-\mathrm{loc}_\ell^{\,f}(\kappa_{n\ell})\ \doteq\ \mathrm{loc}_\ell^{\,f}(\kappa_n)\ \text{의 정보},
+\mathrm{loc}_\ell^{\thinspace f}(\kappa_{n\ell})\ \doteq\ \mathrm{loc}_\ell^{\thinspace f}(\kappa_n)\ \text{의 정보},
 \qquad
-\mathrm{loc}_\ell^{\,s}(\kappa_{n\ell})\ \doteq\ \mathrm{loc}_\ell^{\,f}(\kappa_n)
+\mathrm{loc}_\ell^{\thinspace s}(\kappa_{n\ell})\ \doteq\ \mathrm{loc}_\ell^{\thinspace f}(\kappa_n)
 $$
 
 앞의 것을 제 1 상호법칙, 뒤의 것을 제 2 상호법칙이라 부른다. 요점은 **한 층 위의 류의 특이부가 한 층 아래 류의 유한부로 계산된다**는 것이다. 그래서 $\kappa_n$ 이 0 이 아닌 한 $\kappa_{n\ell}$ 의 특이부도 0 이 아니고, 귀납이 돌아간다.
@@ -222,7 +222,7 @@ $$
 **정리.** $E/\mathbb Q$ 가 모듈러이고 $K$ 가 Heegner 가정을 만족한다고 하자. Heegner 점 $y_K\in E(K)$ 가 무한위수이면
 
 $$
-\mathrm{rank}\,E(K)=1,\qquad \#\text{Ш}(E/K)<\infty
+\mathrm{rank}\thinspace E(K)=1,\qquad \char35{}\text{Ш}(E/K)<\infty
 $$
 
 이다.
@@ -230,7 +230,7 @@ $$
 **증명의 뼈대.** $s\in \mathrm{Sel}^p(E/K)$ 가 $\kappa_1$ 이 생성하는 부분군 밖에 있다고 하자. Chebotarev 로 Kolyvagin 소수 $\ell$ 을 골라 $\mathrm{loc}\_\ell(s)\ne0$ 이면서 $\mathrm{loc}\_\ell^{\thinspace f}(\kappa_1)\ne0$ 이 되게 한다. 상호법칙을 $c=\kappa_\ell$ 과 $s$ 에 적용하면 $\ell$ 을 뺀 모든 자리에서 두 류가 서로 소멸자에 놓이므로 항이 죽고
 
 $$
-\big\langle \mathrm{loc}_\ell^{\,s}(\kappa_\ell),\ \mathrm{loc}_\ell^{\,f}(s)\big\rangle_\ell=0
+\big\langle \mathrm{loc}_\ell^{\thinspace s}(\kappa_\ell),\ \mathrm{loc}_\ell^{\thinspace f}(s)\big\rangle_\ell=0
 $$
 
 만 남는다. 제 2 상호법칙으로 왼쪽 성분이 $\mathrm{loc}\_\ell^{\thinspace f}(\kappa_1)\ne0$ 과 같고 국소 짝이 완전하므로 $\mathrm{loc}\_\ell(s)=0$ 이다. $\ell$ 을 고른 방식과 모순이다. 따라서 $\mathrm{Sel}^p(E/K)$ 는 $\kappa_1$ 이 생성하는 것에 가깝고, $y_K$ 가 무한위수라는 가정과 합쳐 계수 1 과 $\text{Ш}$ 의 유한성이 나온다. $\square$
@@ -242,7 +242,7 @@ $\gamma$ 를 $K$ 의 복소켤레라 하면 $E(K)$ 와 $\mathrm{Sel}$ 이 $\pm$ 
 정리는 유한성만이 아니라 크기의 상계를 준다. $M_n$ 을 $\mathcal P_n$ 이 $E(K)/p^{M}$ 에서 소멸하지 않는 최대의 $M$ 이라 하고 $M_\infty=\min_n M_n$ 이라 하자. 그러면
 
 $$
-\mathrm{ord}_p\,\#\text{Ш}(E/K)[p^\infty]\ \le\ 2\,\big(M_\infty-\mathrm{ord}_p[E(K):\mathbb Z y_K]\big)
+\mathrm{ord}_p\thinspace\char35{}\text{Ш}(E/K)[p^\infty]\ \le\ 2\thinspace\big(M_\infty-\mathrm{ord}_p[E(K):\mathbb Z y_K]\big)
 $$
 
 꼴의 부등식이 나온다. $\text{Ш}$ 가 교대 짝을 가져 위수가 제곱수라는 사실과 맞물려, 실제로는 이 상계가 BSD 가 예측하는 값과 자주 일치한다. 그러므로 Heegner 점의 $p$ 로 나누어떨어짐 정도를 재는 것이 $\text{Ш}$ 를 재는 일이 된다.

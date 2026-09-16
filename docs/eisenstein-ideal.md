@@ -28,7 +28,7 @@ $$
 $(E,P)$ 를 "타원곡선과 위수 $N$ 인 점" 의 쌍이라 하면 그 동형류가 $Y_1(N)$ 의 점이다. 그러므로
 
 $$
-\exists\,E/\mathbb Q\ \text{with}\ P\in E(\mathbb Q)\ \text{of order}\ N
+\exists\thinspace E/\mathbb Q\ \text{with}\ P\in E(\mathbb Q)\ \text{of order}\ N
 \iff
 Y_1(N)(\mathbb Q)\ne\emptyset
 $$
@@ -57,7 +57,7 @@ $$
 $N=p$ 가 소수일 때 $X_0(p)$ 의 첨점은 $0$ 과 $\infty$ 둘뿐이고, 그 차이가 $J_0(p)$ 안에서 유한 위수를 갖는다. 위수는
 
 $$
-n=\mathrm{num}\!\left(\frac{p-1}{12}\right)
+n=\mathrm{num}\negthinspace\left(\frac{p-1}{12}\right)
 $$
 
 이며 이 군을 **첨점군**이라 한다. 분자에 $p-1$ 이 나오는 것은 Eisenstein 급수 $E_2$ 의 상수항에서 오고, $12$ 는 판별식 $\Delta$ 의 무게에서 온다. Mazur 의 정리는 $J_0(p)[I]$ 가 정확히 이 첨점군과 같다는 것, 곧 **Eisenstein 부분에는 첨점밖에 없다**는 것이다.
@@ -99,7 +99,7 @@ $$
 $N=p$ 소수일 때 $C=\langle(0)-(\infty)\rangle\subset J_0(p)(\mathbb Q)$ 를 첨점군이라 하고
 
 $$
-\#C=n=\mathrm{num}\!\left(\frac{p-1}{12}\right)
+\char35{}C=n=\mathrm{num}\negthinspace\left(\frac{p-1}{12}\right)
 $$
 
 이다. $C$ 는 $I$ 에 의해 소멸된다.

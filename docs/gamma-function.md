@@ -5,7 +5,7 @@
 $n!$ 은 자연수에서만 정의된다. 이것을 실수와 복소수로 잇는 함수가 감마 함수다.
 
 $$
-\Gamma(s)=\int_0^{\infty}t^{s-1}e^{-t}\,dt\quad(\operatorname{Re}s>0),
+\Gamma(s)=\int_0^{\infty}t^{s-1}e^{-t}\thinspace dt\quad(\operatorname{Re}s>0),
 \qquad
 \Gamma(n+1)=n!
 $$
@@ -88,9 +88,9 @@ $$
 ## Euler 곱과 Weierstrass 곱
 
 $$
-\Gamma(s)=\lim_{n\to\infty}\frac{n!\,n^{s}}{s(s+1)\cdots(s+n)},
+\Gamma(s)=\lim_{n\to\infty}\frac{n!\thinspace n^{s}}{s(s+1)\cdots(s+n)},
 \qquad
-\frac1{\Gamma(s)}=s\,e^{\gamma s}\prod_{n\ge1}\Big(1+\frac sn\Big)e^{-s/n}
+\frac1{\Gamma(s)}=s\thinspace e^{\gamma s}\prod_{n\ge1}\Big(1+\frac sn\Big)e^{-s/n}
 $$
 
 두 번째 식이 $1/\Gamma$ 가 위수 1 의 정함수임을 보여 준다. 수렴인자 $e^{-s/n}$ 이 필요한 자리에서 [Euler 상수](euler-maclaurin.md) $\gamma$ 가 튀어나오는 것이 인상적이다. $\gamma$ 는 $\sum1/n$ 과 $\log n$ 의 차이였고, 여기서는 곱의 재정렬 비용으로 나타난다.
@@ -128,11 +128,11 @@ $$
 $$
 \Gamma(s)\Gamma(1-s)=\frac{\pi}{\sin\pi s},
 \qquad
-\Gamma(s)\Gamma\!\left(s+\tfrac12\right)=2^{1-2s}\sqrt\pi\,\Gamma(2s)
+\Gamma(s)\Gamma\negthinspace\left(s+\tfrac12\right)=2^{1-2s}\sqrt\pi\thinspace\Gamma(2s)
 $$
 
 $$
-\prod_{k=0}^{n-1}\Gamma\!\left(s+\frac kn\right)=(2\pi)^{(n-1)/2}\,n^{1/2-ns}\,\Gamma(ns)
+\prod_{k=0}^{n-1}\Gamma\negthinspace\left(s+\frac kn\right)=(2\pi)^{(n-1)/2}\thinspace n^{1/2-ns}\thinspace\Gamma(ns)
 $$
 
 세 번째가 Gauss 승법공식이고 두 번째(Legendre 배가)는 $n=2$ 인 경우다. 승법공식은 $\Gamma$ 가 **곱셈군의 $n$ 배 사상과 정합한다**는 진술이며, 지표합에서 [Gauss 합](gauss-sums.md)이 만족하는 Hasse–Davenport 관계의 원형이다.
@@ -158,7 +158,7 @@ $$
 ## 감마 인자와 함수방정식
 
 $$
-\xi(s)=\pi^{-s/2}\Gamma\!\left(\frac s2\right)\zeta(s)
+\xi(s)=\pi^{-s/2}\Gamma\negthinspace\left(\frac s2\right)\zeta(s)
 \quad\Longrightarrow\quad
 \xi(s)=\xi(1-s)
 $$
@@ -205,7 +205,7 @@ $\log\Gamma$ 를 먼저 계산하는 것도 요령이다. $\Gamma$ 자체는 금
 $n$ 차원 단위공의 부피와 감마분포의 정규화 상수가 같은 뿌리에서 나온다.
 
 $$
-\operatorname{vol}(B^{n})=\frac{\pi^{n/2}}{\Gamma\!\left(\frac n2+1\right)},
+\operatorname{vol}(B^{n})=\frac{\pi^{n/2}}{\Gamma\negthinspace\left(\frac n2+1\right)},
 \qquad
 p(x)=\frac{\lambda^{\alpha}}{\Gamma(\alpha)}x^{\alpha-1}e^{-\lambda x}
 $$

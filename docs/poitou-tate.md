@@ -6,8 +6,8 @@
 
 $$
 \begin{aligned}
-0\to H^0(K,M)\to\ &\textstyle\prod_v H^0(K_v,M)\to H^2(K,M^{*})^{\vee}\\
-\to H^1(K,M)\to\ &\textstyle\prod'_v H^1(K_v,M)\to H^1(K,M^{*})^{\vee}\\
+0\to H^0(K,M)\to\ &\textstyle\prod_v H^0(K_v,M)\to H^2(K,M^{*})^{\vee}\cr
+\to H^1(K,M)\to\ &\textstyle\prod'_v H^1(K_v,M)\to H^1(K,M^{*})^{\vee}\cr
 \to H^2(K,M)\to\ &\textstyle\bigoplus_v H^2(K_v,M)\to H^0(K,M^{*})^{\vee}\to0
 \end{aligned}
 $$
@@ -38,7 +38,7 @@ Poitou–Tate 완전열은 이 열을 계수 $M$ 으로 확장한 것에 지나�
 $M$ 이 유한이고 $M^{*}=M$ 인 자기쌍대 경우를 생각하자. $E[p]$ 가 Weil 짝 때문에 그렇다. 그러면
 
 $$
-V=\prod_v{}'\,H^1(K_v,M)
+V=\prod_v{}'\thinspace H^1(K_v,M)
 $$
 
 위에 비퇴화 교대 짝이 있고, 대역류의 상 $A=\mathrm{im}\big(H^1(K,M)\to V\big)$ 는 $A=A^{\perp}$ 를 만족한다. 유한차원 심플렉틱 공간에서 $A=A^{\perp}$ 인 부분공간을 **라그랑지안**이라 하고 차원은 정확히 절반이다.
@@ -149,13 +149,13 @@ $K_v$ 를 국소체, $M$ 을 $\char35{}M$ 이 $\mathrm{char}$ 과 서로소인 �
 **정리(국소 Tate 쌍대성).** 컵곱과 불변량 사상
 
 $$
-H^{i}(K_v,M)\times H^{2-i}(K_v,M^{*})\xrightarrow{\ \cup\ }H^{2}(K_v,\mu)=\mathrm{Br}(K_v)[\#M]\xrightarrow{\ \mathrm{inv}_v\ }\tfrac1{\#M}\mathbb Z/\mathbb Z
+H^{i}(K_v,M)\times H^{2-i}(K_v,M^{*})\xrightarrow{\ \cup\ }H^{2}(K_v,\mu)=\mathrm{Br}(K_v)[\char35{}M]\xrightarrow{\ \mathrm{inv}_v\ }\tfrac1{\char35{}M}\mathbb Z/\mathbb Z
 $$
 
 는 $i=0,1,2$ 에서 완전 짝이다. 또한 국소 Euler 표수 공식
 
 $$
-\frac{\#H^{0}(K_v,M)\cdot\#H^{2}(K_v,M)}{\#H^{1}(K_v,M)}=\|\#M\|_v
+\frac{\char35{}H^{0}(K_v,M)\cdot\char35{}H^{2}(K_v,M)}{\char35{}H^{1}(K_v,M)}=\Vert\char35{}M\Vert_v
 $$
 
 가 성립한다. $v$ 가 $\char35{}M$ 을 나누지 않으면 오른쪽이 1 이고, 그때 $\char35{}H^1_{\mathrm{ur}}=\char35{}H^0$ 이며 $H^1_{\mathrm{ur}}$ 은 자기 소멸자다.
@@ -165,7 +165,7 @@ $$
 $S$ 를 무한 자리, $\char35{}M$ 을 나누는 자리, $M$ 이 분기하는 자리를 포함하는 유한 집합이라 하자.
 
 $$
-P^{i}(M)=\prod_v{}'\,H^{i}(K_v,M)
+P^{i}(M)=\prod_v{}'\thinspace H^{i}(K_v,M)
 $$
 
 는 $v\notin S$ 에서 $H^i_{\mathrm{ur}}(K_v,M)$ 에 들어가는 성분만 모은 제한곱이다. $i=0$ 에서는 보통의 곱, $i=2$ 에서는 직합이 된다.
@@ -176,8 +176,8 @@ $$
 
 $$
 \begin{aligned}
-0\to\ &H^0(K,M)\to P^0(M)\to H^2(K,M^{*})^{\vee}\\
-\to\ &H^1(K,M)\to P^1(M)\to H^1(K,M^{*})^{\vee}\\
+0\to\ &H^0(K,M)\to P^0(M)\to H^2(K,M^{*})^{\vee}\cr
+\to\ &H^1(K,M)\to P^1(M)\to H^1(K,M^{*})^{\vee}\cr
 \to\ &H^2(K,M)\to P^2(M)\to H^0(K,M^{*})^{\vee}\to0
 \end{aligned}
 $$
@@ -237,8 +237,8 @@ $$
 **정리.** 위 기호에서
 
 $$
-\frac{\#\mathrm{Sel}_{L}(K,M)}{\#\mathrm{Sel}_{L^{*}}(K,M^{*})}
-=\frac{\#H^{0}(K,M)}{\#H^{0}(K,M^{*})}\prod_v\frac{\#L_v}{\#H^{0}(K_v,M)}
+\frac{\char35{}\mathrm{Sel}_{L}(K,M)}{\char35{}\mathrm{Sel}_{L^{*}}(K,M^{*})}
+=\frac{\char35{}H^{0}(K,M)}{\char35{}H^{0}(K,M^{*})}\prod_v\frac{\char35{}L_v}{\char35{}H^{0}(K_v,M)}
 $$
 
 곱은 유한 개 자리를 빼면 1 이다.
@@ -258,7 +258,7 @@ $$
 $K_S$ 를 $S$ 밖에서 비분기인 최대 확대라 하면 Tate 의 공식
 
 $$
-\frac{\#H^{0}(K_S/K,M)\cdot\#H^{2}(K_S/K,M)}{\#H^{1}(K_S/K,M)}=\prod_{v\mid\infty}\frac{\#H^{0}(K_v,M)}{\#M}
+\frac{\char35{}H^{0}(K_S/K,M)\cdot\char35{}H^{2}(K_S/K,M)}{\char35{}H^{1}(K_S/K,M)}=\prod_{v\mid\infty}\frac{\char35{}H^{0}(K_v,M)}{\char35{}M}
 $$
 
 가 성립한다. 오른쪽은 무한 자리만 보므로 전적으로 "실 대 복소" 의 조합 계산이다. $K=\mathbb Q$ 이고 $M$ 이 복소켤레에 대해 $\pm$ 로 쪼개지면 오른쪽이 $\char35{}M^{+}/\char35{}M$ 이 된다.
@@ -289,7 +289,7 @@ $$
 이 완전하고, $\partial_\ell$ 의 상이 무엇인지가 유일한 미지수다. 상호법칙이 이 상을 결정한다. $\mathrm{Sel}\_{L'^{\ast}}$ 의 원소는 $\ell$ 에서 강화 조건, 곧 $\mathrm{loc}\_\ell=0$ 을 만족하므로, $\partial_\ell(\mathrm{Sel}\_{L'})$ 는 $\mathrm{loc}\_\ell(\mathrm{Sel}\_{L^{\ast}})$ 의 소멸자다. 곧
 
 $$
-\mathrm{im}\,\partial_\ell=\big(\mathrm{loc}_\ell\,\mathrm{Sel}_{L^{*}}\big)^{\perp}
+\mathrm{im}\thinspace\partial_\ell=\big(\mathrm{loc}_\ell\thinspace\mathrm{Sel}_{L^{*}}\big)^{\perp}
 $$
 
 이다. 이 한 줄이 "쌍대 Selmer 에 $\ell$ 에서 보이는 원소가 있으면 완화해도 Selmer 가 커지지 않는다" 를 뜻하고, 대우로 읽으면 **쌍대 Selmer 를 죽이려면 그 원소가 보이는 자리를 골라 완화하면 된다**가 된다. [Chebotarev](chebotarev.md) 가 그런 자리의 존재를 보장한다.

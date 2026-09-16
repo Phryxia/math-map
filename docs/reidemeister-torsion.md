@@ -62,7 +62,7 @@ flowchart TD
 비틀림은 수 하나로 딱 떨어지지 않는다. 사슬의 기저를 고르는 방법(세포의 순서, 방향, 각 세포에 붙일 덮개의 들림)에 따라 $\pm\rho(g)$ 꼴의 행렬식만큼 달라진다. 그래서 비틀림은
 
 $$
-\tau\in\mathbb C^\times/\{\pm\det\rho(g):g\in\pi_1\}
+\tau\in\mathbb C^\times/\lbrace\pm\det\rho(g):g\in\pi_1\rbrace
 $$
 
 의 원소다. 불변량으로 쓰려면 이 애매성을 없애야 하고, 가장 값싼 방법이 **절댓값만 보는 것**이다. $\rho$ 가 유니터리면 $|\det\rho(g)|=1$ 이라 $|\tau|$ 가 잘 정의된다. 아래 계산은 이 방법을 쓴다.

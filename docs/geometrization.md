@@ -122,7 +122,7 @@ Seifert 조각은 밑 오비폴드의 Euler 지표와 다발의 Euler 수, 두 �
 Perelman 의 증명은 계량을 직접 찾지 않는다. 임의의 계량에서 출발해 방정식
 
 $$
-\frac{\partial g}{\partial t}=-2\,\mathrm{Ric}(g)
+\frac{\partial g}{\partial t}=-2\thinspace\mathrm{Ric}(g)
 $$
 
 를 따라 흘려보낸다. 곡률이 큰 곳이 빨리 변형되어 계량이 균질해지는 경향이 있고, 흐름이 끝까지 가면 상수 곡률 계량이 남는다.

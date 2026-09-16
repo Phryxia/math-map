@@ -13,7 +13,7 @@ $$
 반대편에 [모듈러 형식](modular-forms.md) 쪽의 $j$ 불변량이 있다. $\mathrm{SL}_2(\mathbb Z)$ 의 상반평면 몫이 구면이고, 그 구면의 좌표 하나를 주는 함수가 $j$ 다. $q$ 전개는
 
 $$
-j(\tau)=q^{-1}+744+196884\,q+21493760\,q^2+864299970\,q^3+\cdots
+j(\tau)=q^{-1}+744+196884\thinspace q+21493760\thinspace q^2+864299970\thinspace q^3+\cdots
 $$
 
 1978 년에 McKay 가 $196884=196883+1$ 을 알아챘다. 유한군 지표표의 숫자와 모듈러 함수의 Fourier 계수는 서로 아무 관계가 없어야 할 두 세계의 데이터인데, 첫 계수가 두 기약표현 차원의 합으로 딱 떨어졌다. 우연으로 넘기려다 Thompson 이 다음 계수를 확인했다.
@@ -41,7 +41,7 @@ $$
 내용은 **다른 원소에서도 맞는가**를 물을 때 생긴다. 표현 $V$ 가 진짜로 있다면 항등원뿐 아니라 모든 $g\in\mathbb M$ 에 대해 지표를 취할 수 있다.
 
 $$
-T_g(\tau)=\sum_{n\ge-1}\operatorname{tr}(g\mid V_n)\,q^{n}
+T_g(\tau)=\sum_{n\ge-1}\operatorname{tr}(g\mid V_n)\thinspace q^{n}
 $$
 
 $g=e$ 이면 $\operatorname{tr}(e\mid V_n)=\dim V_n$ 이라 $T_e=j-744$ 다. $g\ne e$ 이면 지표값은 차원보다 훨씬 작은 수들이고, 아무 이유 없이 좋은 함수가 될 까닭이 없다. 그런데 Conway 와 Norton 이 추측한 것은 이것이다.
@@ -89,7 +89,7 @@ $$
 $\mathbb M$ 등급 가군 $V=\bigoplus_{n\ge-1}V_n$ 이 주어졌을 때 각 $g\in\mathbb M$ 에 대해
 
 $$
-T_g(\tau)=\sum_{n\ge-1}\operatorname{tr}\!\left(g\mid V_n\right)q^n,\qquad q=e^{2\pi i\tau}
+T_g(\tau)=\sum_{n\ge-1}\operatorname{tr}\negthinspace\left(g\mid V_n\right)q^n,\qquad q=e^{2\pi i\tau}
 $$
 
 를 $g$ 의 **McKay–Thompson 급수**라 한다. 지표는 켤레류의 함수이므로 $T_g$ 는 켤레류에만 의존하고, 194 개의 켤레류에서 실제로 서로 다른 급수는 171 개다.
@@ -107,7 +107,7 @@ $$
 **moonshine 가군** $V^\natural$ 은 Frenkel–Lepowsky–Meurman 이 구성한 중심전하 $24$ 의 VOA로, 다음을 만족한다.
 
 $$
-\operatorname{Aut}(V^\natural)\cong\mathbb M,\qquad \sum_{n\ge-1}(\dim V^\natural_n)\,q^n=j(\tau)-744
+\operatorname{Aut}(V^\natural)\cong\mathbb M,\qquad \sum_{n\ge-1}(\dim V^\natural_n)\thinspace q^n=j(\tau)-744
 $$
 
 구성은 두 단계다. Leech 격자 $\Lambda$ 에서 격자 VOA $V_\Lambda$ 를 만들고, $\Lambda$ 의 $-1$ 자기동형이 유도하는 $\mathbb Z/2$ 작용의 **궤도체**(orbifold)를 취한다. 고정부분공간 $V_\Lambda^+$ 에 뒤틀린 부분 $V_\Lambda^{T,+}$ 를 더한 것이 $V^\natural$ 이다.
@@ -135,7 +135,7 @@ $$
 Borcherds 대수에는 Weyl–Kac 분모 공식의 일반화가 있다. $\mathfrak m$ 에 적용하면 놀랍도록 깔끔한 항등식이 나온다.
 
 $$
-j(\sigma)-j(\tau)=p^{-1}\prod_{m>0,\;n\in\mathbb Z}\left(1-p^mq^n\right)^{c(mn)},\qquad p=e^{2\pi i\sigma},\ q=e^{2\pi i\tau}
+j(\sigma)-j(\tau)=p^{-1}\prod_{m>0,\thickspace n\in\mathbb Z}\left(1-p^mq^n\right)^{c(mn)},\qquad p=e^{2\pi i\sigma},\ q=e^{2\pi i\tau}
 $$
 
 왼쪽은 두 모듈러 함수의 차이고 오른쪽은 무한곱이다. 이 항등식 하나에 $c(n)$ 들 사이의 무한히 많은 관계가 들어 있다. 양변의 $p^mq^n$ 계수를 비교하면 가장 단순한 것부터

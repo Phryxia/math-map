@@ -14,13 +14,13 @@ Rankin 과 Selberg 가 1939–40 년에 각각 발견한 방법은 전혀 다른
 
 $$
 I(s)=\int_{\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H}
-f(z)\,\overline{g(z)}\,y^{k}\,E(z,s)\,\frac{dx\,dy}{y^2}
+f(z)\thinspace\overline{g(z)}\thinspace y^{k}\thinspace E(z,s)\thinspace\frac{dx\thinspace dy}{y^2}
 $$
 
 $E(z,s)=\sum_{\Gamma_\infty\backslash\Gamma}\mathrm{Im}(\gamma z)^s$ 는 잉여류에 대한 합이다. 이 합을 적분 영역으로 흡수하면 — 이것을 **펼치기**(unfolding)라 한다 — 기본영역 위의 적분이 띠 $\Gamma_\infty\backslash\mathbb H$ 위의 적분이 되고, Fourier 전개를 넣으면 Dirichlet 급수가 그대로 떨어진다.
 
 $$
-I(s)\;=\;(\Gamma \text{ 인자})\cdot\sum_{n\ge1}\frac{a_n\overline{b_n}}{n^{s+k-1}}
+I(s)\thickspace=\thickspace(\Gamma \text{ 인자})\cdot\sum_{n\ge1}\frac{a_n\overline{b_n}}{n^{s+k-1}}
 $$
 
 이 등식의 값은 오른쪽이 아니라 왼쪽에 있다. 왼쪽은 $E(z,s)$ 의 해석적 접속과 함수방정식을 그대로 물려받는다. Eisenstein 급수의 해석적 성질은 이미 알려져 있으므로, 아무것도 모르던 Dirichlet 급수가 공짜로 해석적 접속과 함수방정식과 극의 위치를 얻는다.
@@ -29,7 +29,7 @@ Jacquet–Piatetski-Shapiro–Shalika 가 1983 년에 이것을 $\mathrm{GL}_n\t
 
 $$
 L(s,\pi_v\times\pi'_v)=\det\bigl(1-q^{-s}A_{\pi_v}\otimes A_{\pi'_v}\bigr)^{-1}
-=\prod_{i=1}^{n}\prod_{j=1}^{m}\bigl(1-\alpha_i\beta_j\,q^{-s}\bigr)^{-1}
+=\prod_{i=1}^{n}\prod_{j=1}^{m}\bigl(1-\alpha_i\beta_j\thinspace q^{-s}\bigr)^{-1}
 $$
 
 가 나온다. 쌍대군의 텐서곱 표현에 붙은 $L$ 함수가 적분 하나에서 나오는 것이다.
@@ -42,14 +42,14 @@ $E(z,s)$ 의 정의가 $\Gamma_\infty\backslash\Gamma$ 위의 합이라는 점�
 
 $$
 \int_{\Gamma\backslash\mathbb H}F(z)\sum_{\gamma\in\Gamma_\infty\backslash\Gamma}
-\mathrm{Im}(\gamma z)^s\,d\mu
-=\int_{\Gamma_\infty\backslash\mathbb H}F(z)\,y^s\,d\mu
+\mathrm{Im}(\gamma z)^s\thinspace d\mu
+=\int_{\Gamma_\infty\backslash\mathbb H}F(z)\thinspace y^s\thinspace d\mu
 $$
 
 가 된다. 합이 영역을 넓히는 데 쓰이고 사라진다. $\Gamma_\infty$ 는 $z\mapsto z+1$ 이 생성하므로 오른쪽 영역은 그냥 $0\le x<1$ 이고 $y>0$ 인 띠이고, $x$ 적분은 Fourier 계수의 직교성
 
 $$
-\int_0^1e^{2\pi i(n-m)x}\,dx=\delta_{nm}
+\int_0^1e^{2\pi i(n-m)x}\thinspace dx=\delta_{nm}
 $$
 
 을 쓴다. 남는 것은 $\sum_n a_n\overline{b_n}$ 에 $\int_0^\infty y^{s+k-2}e^{-4\pi ny}dy$ 를 곱한 것, 곧 Dirichlet 급수와 감마 인자다.
@@ -61,7 +61,7 @@ $L$ 함수를 직접 다루는 대신 그 $L$ 함수를 값으로 갖는 적분�
 $E(z,s)$ 는 $s=1$ 에서 단순극을 갖고 유수가 상수 $3/\pi=1/\mathrm{vol}(\Gamma\backslash\mathbb H)$ 다. 그러므로 $I(s)$ 의 $s=1$ 에서의 유수는
 
 $$
-\mathrm{Res}_{s=1}I(s)=\frac1{\mathrm{vol}}\int_{\Gamma\backslash\mathbb H}f\bar gy^k\,d\mu
+\mathrm{Res}_{s=1}I(s)=\frac1{\mathrm{vol}}\int_{\Gamma\backslash\mathbb H}f\bar gy^k\thinspace d\mu
 =\frac{\langle f,g\rangle}{\mathrm{vol}}
 $$
 
@@ -78,14 +78,14 @@ $$
 $n\ge3$ 에서 첨점형식의 Fourier 전개는 수열 $\lbrace a_n\rbrace$ 이 아니다. 극대 멱단근 $N$ 이 아벨군이 아니라서, 전개의 계수 자리에 수가 아니라 함수가 온다. 그 함수가 **Whittaker 함수**다.
 
 $$
-W_\varphi(g)=\int_{N(\mathbb Q)\backslash N(\mathbb A)}\varphi(ng)\,\psi^{-1}(n)\,dn
+W_\varphi(g)=\int_{N(\mathbb Q)\backslash N(\mathbb A)}\varphi(ng)\thinspace\psi^{-1}(n)\thinspace dn
 $$
 
 그리고 첨점형식의 전개는 $\mathrm{GL}_{n-1}$ 의 유리점에 대한 합이 된다.
 
 $$
 \varphi(g)=\sum_{\gamma\in N_{n-1}(\mathbb Q)\backslash\mathrm{GL}_{n-1}(\mathbb Q)}
-W_\varphi\!\left(\begin{pmatrix}\gamma&\\&1\end{pmatrix}g\right)
+W_\varphi\negthinspace\left(\begin{pmatrix}\gamma&\cr&1\end{pmatrix}g\right)
 $$
 
 이 합이 펼치기의 재료다. $\mathrm{GL}\_{n-1}$ 위의 합이 있으므로 적분 영역이 $\mathrm{GL}\_{n-1}$ 전체로 펼쳐지고, 남은 것이 Whittaker 함수 두 개의 곱의 적분이다.
@@ -131,7 +131,7 @@ $$
 이고 $\mathrm{Re}(s)>1$ 에서 수렴한다. $k=l$ 일 때 **Rankin–Selberg 적분**은
 
 $$
-I(s)=\int_{\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H}f(z)\overline{g(z)}\,y^{k}E(z,s)\,\frac{dx\,dy}{y^2}
+I(s)=\int_{\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H}f(z)\overline{g(z)}\thinspace y^{k}E(z,s)\thinspace\frac{dx\thinspace dy}{y^2}
 =\frac{\Gamma(s+k-1)}{(4\pi)^{s+k-1}}\sum_{n\ge1}\frac{a_n\overline{b_n}}{n^{s+k-1}}
 $$
 
@@ -153,8 +153,8 @@ $m<n$ 이고 $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}_n(\mathbb A)$ 와 $\mathrm
 
 $$
 \Psi(s,W,W')=\int_{N_m(\mathbb A)\backslash\mathrm{GL}_m(\mathbb A)}
-W\!\left(\begin{pmatrix}g&\\&1\end{pmatrix}\right)W'(g)\,
-\lvert\det g\rvert^{\,s-\frac12}\,dg
+W\negthinspace\left(\begin{pmatrix}g&\cr&1\end{pmatrix}\right)W'(g)\thinspace
+\lvert\det g\rvert^{\thinspace s-\frac12}\thinspace dg
 $$
 
 이고 $m<n-1$ 이면 가운데에 멱단 적분이 더 붙는다.
@@ -163,7 +163,7 @@ $m=n$ 일 때는 Eisenstein 급수가 필요하다. Schwartz 함수 $\Phi\in\mat
 
 $$
 I(s,\varphi,\varphi',\Phi)=\int_{Z(\mathbb A)\mathrm{GL}_n(\mathbb Q)\backslash\mathrm{GL}_n(\mathbb A)}
-\varphi(g)\,\varphi'(g)\,E(g,s;\Phi)\,dg
+\varphi(g)\thinspace\varphi'(g)\thinspace E(g,s;\Phi)\thinspace dg
 $$
 
 다. 고전적 적분의 $E(z,s)$ 가 그대로 이 자리에 있다.
@@ -182,7 +182,7 @@ $$
 
 > **정리 (Jacquet–Piatetski-Shapiro–Shalika, 1983).** $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}_n$ 과 $\mathrm{GL}_m$ 의 첨점 자기동형 표현이면 $L(s,\pi\times\pi')$ 는 $\mathbb C$ 전체로 유리형 접속되고, 완비 $L$ 함수가
 > $$
-> \Lambda(s,\pi\times\pi')=\varepsilon(s,\pi\times\pi')\,\Lambda(1-s,\tilde\pi\times\tilde\pi')
+> \Lambda(s,\pi\times\pi')=\varepsilon(s,\pi\times\pi')\thinspace\Lambda(1-s,\tilde\pi\times\tilde\pi')
 > $$
 > 를 만족한다. $\pi'\not\cong\tilde\pi\otimes\lvert\cdot\rvert^{it}$ 이면 정함수이고, $\pi'\cong\tilde\pi$ 인 경우에만 $s=0,1$ 에 단순극이 있다.[^1]
 
@@ -199,7 +199,7 @@ $$
 고전적 적분이 준 것은 $\sum_na_n\overline{b_n}n^{-s}$ 인데, 이것은 Euler 곱이 아니다. Hecke 고유형식의 계수가 곱셈적이어도 $a_nb_n$ 의 국소 인자가 2 차가 아니기 때문이다. 국소 수준에서 정확한 관계는 다음 항등식이다.
 
 $$
-\sum_{m\ge0}h_m(\alpha,\beta)\,h_m(\alpha',\beta')\,x^m
+\sum_{m\ge0}h_m(\alpha,\beta)\thinspace h_m(\alpha',\beta')\thinspace x^m
 =\frac{1-\alpha\beta\alpha'\beta'x^2}{\prod_{i,j}(1-\alpha_i\alpha'_jx)}
 $$
 
@@ -229,7 +229,7 @@ $\Delta$ 두 개를 곱한 경우 $\alpha\beta=\alpha'\beta'=1$ 이므로 보정
 
 $$
 \sum_{n\ge1}\frac{\tau(n)^2}{n^{s}}
-=\frac{\zeta(s-11)\,L(s,\mathrm{Sym}^2\Delta)}{\zeta(2s-22)}
+=\frac{\zeta(s-11)\thinspace L(s,\mathrm{Sym}^2\Delta)}{\zeta(2s-22)}
 $$
 
 여기서 $L(s,\mathrm{Sym}^2\Delta)$ 의 국소 인자는 $\alpha_p^2,\thickspace 1,\thickspace\beta_p^2$ 에서 오는 3 차식이고, $\alpha_p^2+\beta_p^2=\tau(p)^2/p^{11}-2$ 이므로 계수가 전부 정수다.

@@ -11,7 +11,7 @@
 $\mathbb{Q}$ 에 $2$ 의 제곱근을 넣으면 $a+b\sqrt2$ 꼴의 수 전체가 필요해진다. 곱셈에서 $2$ 가 다시 유리수로 돌아오므로 이보다 큰 집합은 필요하지 않다. 즉 $\mathbb{Q}(\sqrt2)$ 는 $\mathbb{Q}$ 위에서 $1$ 과 $\sqrt2$ 를 기저로 갖는 2차원 벡터 공간이다.
 
 $$
-\mathbb{Q}(\sqrt2)=\{a+b\sqrt2: a,b\in\mathbb{Q}\},\qquad [\mathbb{Q}(\sqrt2):\mathbb{Q}]=2
+\mathbb{Q}(\sqrt2)=\lbrace a+b\sqrt2: a,b\in\mathbb{Q}\rbrace,\qquad [\mathbb{Q}(\sqrt2):\mathbb{Q}]=2
 $$
 
 여러 원소를 차례로 넣으면 확대의 탑이 쌓이고, 차수는 층마다 곱해진다.
@@ -63,7 +63,7 @@ $\alpha$ 가 초월적이면 $k(\alpha)$ 는 유리함수체 $k(x)$ 와 동형�
 $k\subseteq L\subseteq K$ 이고 각 층이 유한 확대일 때 차수는 곱셈적이다[^1].
 
 $$
-[K:k]=[K:L]\,[L:k]
+[K:k]=[K:L]\thinspace[L:k]
 $$
 
 증명 개요: $L$ 의 $k$ -기저 $(a_i)$ 와 $K$ 의 $L$ -기저 $(b_j)$ 를 잡으면 곱 $(a_ib_j)$ 가 $K$ 의 $k$ -기저가 된다. 생성은 두 표현을 차례로 대입해서 얻고, 일차독립성은 $b_j$ 에 대한 계수를 $L$ 안에서 모아 $a_i$ 의 일차독립성을 적용해 얻는다.

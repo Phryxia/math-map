@@ -59,7 +59,7 @@ $$
 $E$ 를 간선 집합이라 하면
 
 $$
-x^{\mathsf T}Lx=\sum_{\{i,j\}\in E}w_{ij}(x_i-x_j)^2
+x^{\mathsf T}Lx=\sum_{\lbrace i,j\rbrace\in E}w_{ij}(x_i-x_j)^2
 $$
 
 이며 각 무향 간선을 한 번만 센다. $x^{\mathsf T}Dx$ 에서 $x^{\mathsf T}Wx$ 를 빼고 각 간선의 두 방향 항을 모으면 증명된다. 각 항이 음이 아니므로 $L$ 은 양반정치다.
@@ -139,7 +139,7 @@ print(round(det_minor(K4, 0)))        # 16 = 4^2, Cayley 공식
 경로 1–2–3 의 Laplacian 은
 
 $$
-L=\begin{pmatrix}1&-1&0\\-1&2&-1\\0&-1&1\end{pmatrix}
+L=\begin{pmatrix}1&-1&0\cr-1&2&-1\cr 0&-1&1\end{pmatrix}
 $$
 
 이고 $x=(0,1,0)$ 에서 에너지가 $2$ 다. 두 간선에서 각각 차의 제곱 $1$ 을 더한 결과이며, 모든 값에 같은 상수를 더해도 변하지 않는다.

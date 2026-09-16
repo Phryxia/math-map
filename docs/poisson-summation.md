@@ -7,7 +7,7 @@
 $$
 \sum_{n\in\mathbb Z}f(n)=\sum_{k\in\mathbb Z}\hat f(k),
 \qquad
-\hat f(\xi)=\int_{-\infty}^{\infty}f(x)e^{-2\pi i x\xi}\,dx
+\hat f(\xi)=\int_{-\infty}^{\infty}f(x)e^{-2\pi i x\xi}\thinspace dx
 $$
 
 좌변은 공간 쪽의 합, 우변은 진동수 쪽의 합이다. 두 합이 같다는 것만으로도 놀랍지만, 실제 쓸모는 **한쪽이 느리면 반드시 다른 쪽이 빠르다**는 데 있다. $f$ 가 폭 $\sigma$ 로 퍼져 있으면 $\hat f$ 는 폭 $1/\sigma$ 로 모여 있으므로, 수렴이 나쁜 합은 변환해서 더하면 된다.
@@ -39,7 +39,7 @@ $$
 $f_t(x)=e^{-\pi x^{2}t}$ 를 넣으면 $\hat f_t(\xi)=t^{-1/2}e^{-\pi\xi^{2}/t}$ 이므로
 
 $$
-\theta(t)=\sum_ne^{-\pi n^{2}t}=\frac1{\sqrt t}\,\theta\!\left(\frac1t\right)
+\theta(t)=\sum_ne^{-\pi n^{2}t}=\frac1{\sqrt t}\thinspace\theta\negthinspace\left(\frac1t\right)
 $$
 
 $t$ 가 크면 좌변은 항 몇 개로 끝나고, $t$ 가 작으면 우변이 그렇다. **$t$ 와 $1/t$ 중 계산하기 쉬운 쪽을 고를 수 있다**는 것이 이 항등식의 실질이다. 이것이 [theta 급수](theta-functions.md)의 모듈러 변환 $\tau\mapsto-1/\tau$ 의 출발점이고, 모듈러성이라는 현상이 결국 Fourier 쌍대성의 다른 이름임을 보여 준다.
@@ -49,7 +49,7 @@ $t$ 가 크면 좌변은 항 몇 개로 끝나고, $t$ 가 작으면 우변이 �
 간격 $h$ 의 사다리꼴로 $\int_{\mathbb R}f$ 를 근사하면 Poisson 합이 오차를 정확히 준다.
 
 $$
-h\sum_{n\in\mathbb Z}f(nh)-\int_{\mathbb R}f=\sum_{k\ne0}\hat f\!\left(\frac kh\right)
+h\sum_{n\in\mathbb Z}f(nh)-\int_{\mathbb R}f=\sum_{k\ne0}\hat f\negthinspace\left(\frac kh\right)
 $$
 
 $f$ 가 매끄러울수록 $\hat f$ 는 빨리 죽고, $f$ 가 해석적이면 $\hat f$ 가 지수적으로 죽는다. Euler–Maclaurin 절에서 "모든 차수보다 빠르게 줄어든다" 고만 말했던 것이 여기서는 **$e^{-c/h}$ 라는 구체적인 값**으로 나온다.
@@ -83,7 +83,7 @@ $$
 $f_h(x)=f(x/h)$ 에 적용하면
 
 $$
-h\sum_{n}f(nh)=\sum_k\hat f\!\left(\frac kh\right),
+h\sum_{n}f(nh)=\sum_k\hat f\negthinspace\left(\frac kh\right),
 \qquad
 \sum_nf(n+x)=\sum_k\hat f(k)e^{2\pi ikx}
 $$
@@ -154,7 +154,7 @@ $$
 $\theta$ 의 변환식을 Mellin 변환으로 읽으면 곧바로 나온다. [감마 함수](gamma-function.md)를 써서
 
 $$
-\pi^{-s/2}\Gamma\!\left(\frac s2\right)\zeta(s)=\int_0^{\infty}\frac{\theta(t)-1}{2}\,t^{s/2-1}dt
+\pi^{-s/2}\Gamma\negthinspace\left(\frac s2\right)\zeta(s)=\int_0^{\infty}\frac{\theta(t)-1}{2}\thinspace t^{s/2-1}dt
 $$
 
 로 쓰고 적분을 $t=1$ 에서 자른 뒤 앞쪽 조각에 $t\mapsto1/t$ 와 $\theta(1/t)=\sqrt t\thinspace\theta(t)$ 를 적용하면 $s\mapsto1-s$ 에 대해 대칭인 표현이 남는다. **Riemann 의 두 번째 증명이 이것이고, 대칭의 근원이 Poisson 합**이다. [소수 정리](prime-number-theorem.md)의 해석적 도구가 전부 이 함수방정식 위에 서 있다.

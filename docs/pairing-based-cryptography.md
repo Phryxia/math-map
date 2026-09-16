@@ -59,7 +59,7 @@ $\mu_r\subset\mathbb F_{q^k}^\times$ 이므로 $r\mid q^k-1$ 이고, $k$ 는 이
 ## 비틀림 부분군
 
 $$
-E[r]=\{P\in E(\bar{\mathbb F}_q):rP=O\}
+E[r]=\lbrace P\in E(\bar{\mathbb F}_q):rP=O\rbrace
 $$
 
 $\gcd(r,q)=1$ 이면 $E[r]\cong\mathbb Z/r\mathbb Z\times\mathbb Z/r\mathbb Z$ 다. 곡선의 군이 순환군인 경우가 많은데도 비틀림 부분군은 계수 2 인 자유 가군이라는 점이 쌍의 존재 근거다.
@@ -69,7 +69,7 @@ $\gcd(r,q)=1$ 이면 $E[r]\cong\mathbb Z/r\mathbb Z\times\mathbb Z/r\mathbb Z$ �
 $r\mid\char35{}E(\mathbb F_q)$ 인 소수 $r$ 에 대해
 
 $$
-k=\min\{k\ge1:\ r\mid q^k-1\}
+k=\min\lbrace k\ge1:\ r\mid q^k-1\rbrace
 $$
 
 초특이 곡선에서는 $k\le6$ 이고 표수 큰 경우 $k=2$ 다. 일반 곡선에서는 $k\approx r$ 이며, $k$ 가 작은 곡선은 Barreto–Naehrig 계열처럼 의도적으로 구성한다.

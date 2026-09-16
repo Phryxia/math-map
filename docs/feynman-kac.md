@@ -15,7 +15,7 @@
 풀고 싶은 방정식의 해를 $u(t,x)$ 라 하고, 확산 과정 $X$ 를 따라가며 $u(t,X_t)$ 를 보자. Itô 공식은 이 값의 변화를 두 부분으로 나눈다.
 
 $$
-du(t,X_t)=\underbrace{\Big(\partial_tu+b\,\partial_xu+\tfrac12\sigma^2\partial_x^2u\Big)dt}_{\text{표류}}+\underbrace{\sigma\,\partial_xu\,dB_t}_{\text{요동}}
+du(t,X_t)=\underbrace{\Big(\partial_tu+b\thinspace\partial_xu+\tfrac12\sigma^2\partial_x^2u\Big)dt}_{\text{표류}}+\underbrace{\sigma\thinspace\partial_xu\thinspace dB_t}_{\text{요동}}
 $$
 
 그런데 괄호 안이 정확히 풀려는 방정식의 좌변이다. $u$ 가 해라면 이 항이 0 이므로 표류가 사라지고, $u(t,X_t)$ 가 martingale 이 된다.
@@ -55,13 +55,13 @@ graph LR
 $d$ 차원 확산 과정
 
 $$
-dX_t=b(t,X_t)\,dt+\sigma(t,X_t)\,dB_t
+dX_t=b(t,X_t)\thinspace dt+\sigma(t,X_t)\thinspace dB_t
 $$
 
 의 생성원을 다음 이차 미분연산자로 정의한다.
 
 $$
-\mathcal L_t f(x)=\sum_ib_i(t,x)\,\partial_if(x)+\frac12\sum_{i,j}\big(\sigma\sigma^{\mathsf T}\big)_{ij}(t,x)\,\partial_i\partial_jf(x)
+\mathcal L_t f(x)=\sum_ib_i(t,x)\thinspace\partial_if(x)+\frac12\sum_{i,j}\big(\sigma\sigma^{\mathsf T}\big)_{ij}(t,x)\thinspace\partial_i\partial_jf(x)
 $$
 
 $X$ 가 표준 Brown 운동이면 $\mathcal L = \tfrac12\Delta$ 이므로 생성원이 Laplace 연산자의 절반이다. 열방정식과 Brown 운동의 대응이 여기서 나온다.
@@ -71,13 +71,13 @@ $X$ 가 표준 Brown 운동이면 $\mathcal L = \tfrac12\Delta$ 이므로 생성
 $c \ge 0$ 와 $g$ 가 주어졌을 때 다음 종단값 문제를 생각한다.
 
 $$
-\partial_tu+\mathcal L_tu-c(t,x)\,u+g(t,x)=0,\qquad u(T,x)=\varphi(x)
+\partial_tu+\mathcal L_tu-c(t,x)\thinspace u+g(t,x)=0,\qquad u(T,x)=\varphi(x)
 $$
 
 적절한 정칙성과 성장 조건 아래에서 해는 다음과 같다.
 
 $$
-u(t,x)=\mathbb E^{t,x}\left[\varphi(X_T)\,e^{-\int_t^Tc(s,X_s)ds}+\int_t^Tg(r,X_r)\,e^{-\int_t^rc(s,X_s)ds}\,dr\right]
+u(t,x)=\mathbb E^{t,x}\left[\varphi(X_T)\thinspace e^{-\int_t^Tc(s,X_s)ds}+\int_t^Tg(r,X_r)\thinspace e^{-\int_t^rc(s,X_s)ds}\thinspace dr\right]
 $$
 
 여기서 $\mathbb E^{t,x}$ 는 $X_t = x$ 에서 출발한 확산에 대한 기댓값이다. $c = 0$ 이고 $g = 0$ 이면 앞 절의 단순한 꼴로 돌아간다.
@@ -93,7 +93,7 @@ $$
 $c = g = 0$ 인 경우로 보인다. $u$ 가 해이고 충분히 매끄럽다고 가정한다. $Y_s = u(s,X_s)$ 에 Itô 공식을 적용하면
 
 $$
-dY_s=\big(\partial_su+\mathcal L_su\big)(s,X_s)\,ds+\big(\nabla u\big)^{\mathsf T}\sigma\,dB_s=\big(\nabla u\big)^{\mathsf T}\sigma\,dB_s
+dY_s=\big(\partial_su+\mathcal L_su\big)(s,X_s)\thinspace ds+\big(\nabla u\big)^{\mathsf T}\sigma\thinspace dB_s=\big(\nabla u\big)^{\mathsf T}\sigma\thinspace dB_s
 $$
 
 이다. 첫 항이 방정식 때문에 사라졌다. 양변을 $t$ 에서 $T$ 까지 적분하고 기댓값을 취하면, 확률적분의 기댓값이 0 이므로
@@ -142,7 +142,7 @@ $\varphi$ 를 지시함수로 두면 $u(t,x) = \Pr(X_T \in A \mid X_t = x)$ 이�
 파생상품 가격을 얻는 길이 둘이다. 복제 포트폴리오를 구성해 방정식을 세우고 푸는 길과, [Girsanov 정리](girsanov.md)로 위험중립측도를 만들어 할인된 기댓값을 계산하는 길이다.
 
 $$
-\partial_tV+rS\,\partial_SV+\tfrac12\sigma^2S^2\partial_S^2V-rV=0\qquad\Longleftrightarrow\qquad V_t=e^{-r(T-t)}\,\mathbb E_Q\big[\Phi(S_T)\big]
+\partial_tV+rS\thinspace\partial_SV+\tfrac12\sigma^2S^2\partial_S^2V-rV=0\qquad\Longleftrightarrow\qquad V_t=e^{-r(T-t)}\thinspace\mathbb E_Q\big[\Phi(S_T)\big]
 $$
 
 Feynman–Kac 이 이 동치를 정리로 만들어 준다. 좌변의 $-rV$ 가 우변의 할인 계수이고, 좌변의 표류 $rS$ 가 위험중립측도의 표류다. 어느 쪽으로 계산해도 같은 답이 나온다는 보장이 있으므로 문제에 편한 쪽을 고르면 된다.

@@ -6,7 +6,7 @@
 
 $$
 \sum_{a=M}^{N}f(a)
-=\int_M^{N}f(x)\,dx+\frac{f(M)+f(N)}2
+=\int_M^{N}f(x)\thinspace dx+\frac{f(M)+f(N)}2
 +\sum_{k=1}^{K}\frac{B_{2k}}{(2k)!}\Big(f^{(2k-1)}(N)-f^{(2k-1)}(M)\Big)+R_K
 $$
 
@@ -24,13 +24,13 @@ $$
 한 칸 $[0,1]$ 에서 시작한다. $B_1(x)=x-\tfrac12$ 로 [부분적분](fundamental-calculus.md)을 하면
 
 $$
-\frac{f(0)+f(1)}2-\int_0^1 f(x)\,dx=\int_0^1 B_1(x)f'(x)\,dx
+\frac{f(0)+f(1)}2-\int_0^1 f(x)\thinspace dx=\int_0^1 B_1(x)f'(x)\thinspace dx
 $$
 
 좌변은 사다리꼴 규칙의 오차다. 우변을 다시 부분적분한다. $B_1=\tfrac12 B_2'$ 이고 $B_2(0)=B_2(1)=B_2$ 이므로
 
 $$
-\int_0^1 B_1f'=\frac{B_2}{2}\big(f'(1)-f'(0)\big)-\frac12\int_0^1 B_2(x)f''(x)\,dx
+\int_0^1 B_1f'=\frac{B_2}{2}\big(f'(1)-f'(0)\big)-\frac12\int_0^1 B_2(x)f''(x)\thinspace dx
 $$
 
 첫 항이 $\tfrac1{12}(f'(1)-f'(0))$ 곧 사다리꼴 오차의 주항이다. 남은 적분을 또 부분적분하면 다음 보정이 나온다. **Euler–Maclaurin 은 이 되풀이를 끝까지 적어 놓은 것**이고, 각 단계에서 튀어나오는 상수가 $B_2,B_4,B_6,\dots$ 다.
@@ -56,7 +56,7 @@ $$
 항의 크기는 $\dfrac{2}{(2\pi)^{2k}}\big|f^{(2k-1)}(N)-f^{(2k-1)}(M)\big|$ 정도다. 앞의 인자는 기하급수적으로 작아지지만, **고계 도함수는 보통 계승 속도로 커진다**. $f(x)=x^{-s}$ 면 $f^{(2k-1)}$ 에 $(2k-2)!$ 가 붙는다. 계승은 어떤 기하급수도 이기므로 항은 결국 커지고 급수의 수렴반경은 0 이다.
 
 $$
-\text{항}_k\ \approx\ \frac{2\,(2k-2)!}{(2\pi N)^{2k}}\cdot N\ \longrightarrow\ \infty
+\text{항}_k\ \approx\ \frac{2\thinspace(2k-2)!}{(2\pi N)^{2k}}\cdot N\ \longrightarrow\ \infty
 $$
 
 다만 처음 한동안은 $(2k-2)!$ 가 $(2\pi N)^{2k}$ 를 이기지 못한다. 두 힘이 맞서다 역전되는 지점이 있고, 항이 최소가 되는 곳은 $2k\approx 2\pi N$ 곧 $k\approx\pi N$ 이다. 그때 항의 크기가 $e^{-2\pi N}$ 규모다. **급수를 거기서 끊으면 그것이 얻을 수 있는 최선**이고, 더 더하면 오히려 나빠진다.
@@ -98,7 +98,7 @@ $$
 $$
 
 $$
-R_K=-\frac1{(2K)!}\int_M^{N}\tilde B_{2K}(x)\,f^{(2K)}(x)\,dx
+R_K=-\frac1{(2K)!}\int_M^{N}\tilde B_{2K}(x)\thinspace f^{(2K)}(x)\thinspace dx
 $$
 
 **나머지항이 명시적 적분으로 주어진다는 점**이 이 공식의 힘이다. 급수가 발산하더라도 각 $K$ 마다 등식이 정확하므로, 오차를 추정하는 것이 아니라 계산할 수 있다.
@@ -110,7 +110,7 @@ $$
 $$
 f(x)\sim\sum_{n\ge0}\frac{a_n}{x^{n}}\quad(x\to\infty)
 \iff
-\forall N:\ f(x)-\sum_{n=0}^{N}\frac{a_n}{x^{n}}=o\!\left(x^{-N}\right)
+\forall N:\ f(x)-\sum_{n=0}^{N}\frac{a_n}{x^{n}}=o\negthinspace\left(x^{-N}\right)
 $$
 
 이면 우변을 $f$ 의 **점근전개**라 한다(Poincaré). 조건은 $N$ 을 고정하고 $x\to\infty$ 로 보내는 것이지 $x$ 를 고정하고 $N\to\infty$ 로 보내는 것이 아니다. 이 순서를 바꾸지 않는 것이 점근급수를 다루는 유일한 규칙이라고 해도 된다.
@@ -122,7 +122,7 @@ $$
 $\tilde B_{2K}$ 의 최대값이 끝점에서 나오므로 $\max_x|\tilde B_{2K}(x)|=|B_{2K}|$ 이고
 
 $$
-|R_K|\le\frac{|B_{2K}|}{(2K)!}\int_M^{N}\big|f^{(2K)}(x)\big|\,dx
+|R_K|\le\frac{|B_{2K}|}{(2K)!}\int_M^{N}\big|f^{(2K)}(x)\big|\thinspace dx
 =\frac{2\zeta(2K)}{(2\pi)^{2K}}\int_M^{N}\big|f^{(2K)}\big|
 $$
 
@@ -157,7 +157,7 @@ $$
 $f$ 가 주기 $N-M$ 인 매끄러운 함수면 모든 $k$ 에 대해 $f^{(2k-1)}(N)=f^{(2k-1)}(M)$ 이므로 보정항이 전부 0 이 된다. 남는 것은 나머지항뿐이고,
 
 $$
-\text{사다리꼴 오차}=R_K=O\!\left(h^{2K}\right)\quad\text{모든 }K
+\text{사다리꼴 오차}=R_K=O\negthinspace\left(h^{2K}\right)\quad\text{모든 }K
 $$
 
 곧 **오차가 모든 차수보다 빨리 감소한다**. $f$ 가 해석적이면 실제 감소는 지수적이다. 사다리꼴 규칙은 일반적으로 2 차 정확도밖에 없는 가장 조잡한 수치적분인데, 주기함수 위에서는 어떤 고차 공식보다 낫다. 이것이 [Fourier](fourier.md) 계산과 격자합에서 사다리꼴이 표준인 이유다.
@@ -183,7 +183,7 @@ for n in (4, 6, 8, 10, 12, 16):
 $$
 \zeta(s)=\sum_{n=1}^{N-1}\frac1{n^{s}}
 +\frac{N^{1-s}}{s-1}+\frac1{2N^{s}}
-+\sum_{k=1}^{K}\frac{B_{2k}}{(2k)!}\,\frac{\Gamma(s+2k-1)}{\Gamma(s)}\,N^{-s-2k+1}+R_K
++\sum_{k=1}^{K}\frac{B_{2k}}{(2k)!}\thinspace\frac{\Gamma(s+2k-1)}{\Gamma(s)}\thinspace N^{-s-2k+1}+R_K
 $$
 
 우변은 $s=1$ 의 극점만 빼면 **$s$ 의 정칙함수로 그대로 정의되므로**, 이 식 자체가 $\zeta$ 의 해석적 연속이기도 하다. $\zeta(-1)=-\tfrac1{12}$ 같은 값도 같은 코드로 나온다.
@@ -223,7 +223,7 @@ $f=\log x$ 에 공식을 적용하면 $\log n!$ 의 전개가 나온다. 정수�
 
 $$
 \log\Gamma(x)=\Big(x-\tfrac12\Big)\log x-x+\tfrac12\log2\pi
-+\sum_{k=1}^{K}\frac{B_{2k}}{2k(2k-1)\,x^{2k-1}}+R_K
++\sum_{k=1}^{K}\frac{B_{2k}}{2k(2k-1)\thinspace x^{2k-1}}+R_K
 $$
 
 $\tfrac12\log2\pi$ 만 Euler–Maclaurin 이 주지 못하고 Wallis 곱이나 [유수 계산](residue-theorem.md)으로 따로 정한다. 적분상수가 공식 바깥에서 와야 한다는 점은 점근전개의 일반적인 사정이다. 여기서도 최적 절단은 $k^{*}\approx\pi x$ 이고 최소 오차는 $e^{-2\pi x}$ 이며, $x$ 가 작으면 $\Gamma(x+m)$ 으로 올린 뒤 되돌리는 식으로 $x$ 를 키워 쓴다.
@@ -233,7 +233,7 @@ $\tfrac12\log2\pi$ 만 Euler–Maclaurin 이 주지 못하고 Wallis 곱이나 [
 $f=1/x$ 로 두면
 
 $$
-\sum_{a=1}^{n}\frac1a=\log n+\gamma+\frac1{2n}-\sum_{k=1}^{K}\frac{B_{2k}}{2k\,n^{2k}}+R_K
+\sum_{a=1}^{n}\frac1a=\log n+\gamma+\frac1{2n}-\sum_{k=1}^{K}\frac{B_{2k}}{2k\thinspace n^{2k}}+R_K
 $$
 
 $\gamma$ 는 공식이 만들어 내는 적분상수이고, 이 식이 곧 $\gamma$ 를 고정밀로 얻는 표준 방법이다. $n=10$ 과 $K=6$ 만으로 이미 $10^{-15}$ 까지 맞는다. 조화수가 $\log n$ 에서 얼마나 벗어나는지를 **모든 차수로 답하는 것**이 이 전개다.

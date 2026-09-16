@@ -59,7 +59,7 @@ $$
 $P=(x_1,y_1)$ 과 $Q=(x_2,y_2)$ 와 $P+Q=(x_3,y_3)$ 일 때 기울기를 다음으로 정한다.
 
 $$
-\lambda=\begin{cases}\dfrac{y_2-y_1}{x_2-x_1}&P\ne Q\\[2mm]\dfrac{3x_1^2+a}{2y_1}&P=Q\end{cases}
+\lambda=\begin{cases}\dfrac{y_2-y_1}{x_2-x_1}&P\ne Q\cr\dfrac{3x_1^2+a}{2y_1}&P=Q\end{cases}
 $$
 
 $$
@@ -127,7 +127,7 @@ print("공유 비밀 일치:", mul(ka, mul(kb, G)) == mul(kb, mul(ka, G)))
 유한체 $\mathbb F_q$ 위의 타원곡선의 점 개수는 $q+1$ 근처에 있다.
 
 $$
-\big|\,\#E(\mathbb F_q)-(q+1)\,\big|\le2\sqrt q
+\big|\thinspace\char35{}E(\mathbb F_q)-(q+1)\thinspace\big|\le2\sqrt q
 $$
 
 각 $x$ 에 대해 $x^3+ax+b$ 가 제곱수일 확률이 대략 절반이고 그때 $y$ 가 둘이므로 평균적으로 점이 $q$ 개 남짓이라는 어림이 맞다는 것이 이 정리의 내용이다. 오차가 $\sqrt q$ 규모라는 것은 유한체 위의 Riemann 가설에 해당하며, Hasse 가 증명하고 Weil 이 일반화했다.

@@ -13,7 +13,7 @@ $p$ 가 [소수](primes.md)일 때 [나머지 연산](modular-arithmetic.md) $\m
 원소 4개인 체는 $\mathbb{Z}/4\mathbb{Z}$ 가 아니라 $\mathbb{F}_2$ 위의 2차 확대로 만든다. $x^2+x+1$ 은 $\mathbb{F}_2$ 에서 근이 없으므로 기약이고, 몫환이 체가 된다.
 
 $$
-\mathbb{F}_4=\mathbb{F}_2[x]/(x^2+x+1)=\{0,\,1,\,\alpha,\,\alpha+1\},\qquad \alpha^2=\alpha+1
+\mathbb{F}_4=\mathbb{F}_2[x]/(x^2+x+1)=\lbrace 0,\thinspace 1,\thinspace\alpha,\thinspace\alpha+1\rbrace,\qquad \alpha^2=\alpha+1
 $$
 
 여기서 $\alpha$ 의 거듭제곱이 $\alpha$ , $\alpha+1$ , $1$ 로 순환하며 $0$ 이 아닌 원소 세 개를 모두 훑는다. 이것이 곱셈군의 순환성이다. 즉 유한체의 곱셈은 지수 하나로 좌표화된다.
@@ -79,7 +79,7 @@ $$
 유일성: 위수 $p^n$ 의 체 $F$ 에서는 모든 원소가 $a^{p^n}=a$ 를 만족하므로 $F$ 는 $x^{p^n}-x$ 의 분해체다. 분해체가 동형을 무시하면 유일하므로 $F$ 가 유일하다.
 
 $$
-\mathbb{F}_{p^n}=\{a : a^{p^n}=a\}\subseteq \overline{\mathbb{F}_p}
+\mathbb{F}_{p^n}=\lbrace a : a^{p^n}=a\rbrace\subseteq \overline{\mathbb{F}_p}
 $$
 
 이 결과가 "원소 6개인 체는 없다"와 "원소 4개인 체는 본질적으로 하나"를 동시에 준다. 기약다항식을 다르게 골라도 얻어지는 체는 동형이다.
@@ -105,7 +105,7 @@ $$
 $\mathbb{F}_p[x]$ 의 monic 기약다항식 중 차수 $n$ 인 것의 개수는 Möbius 반전으로 다음과 같다. 이 값은 $n\ge 1$ 에서 항상 양수이므로 존재성의 다른 증명이 된다.
 
 $$
-N_p(n)=\frac{1}{n}\sum_{d\mid n}\mu(d)\,p^{n/d}
+N_p(n)=\frac{1}{n}\sum_{d\mid n}\mu(d)\thinspace p^{n/d}
 $$
 
 # 활용

@@ -35,7 +35,7 @@ $$
 콤팩트 군에서는 합을 Haar 적분으로 바꾼다.
 
 $$
-\langle u,v\rangle=\int_G\langle gu,gv\rangle_0\,dg
+\langle u,v\rangle=\int_G\langle gu,gv\rangle_0\thinspace dg
 $$
 
 콤팩트성이 필요한 지점이 정확히 여기다. Haar 측도의 전체 질량이 유한해야 평균이 정의된다. $G=\mathbb R$ 이면 전체 질량이 무한이라 이 논법이 무너지고, 실제로 $\mathbb R$ 의 유니터리 표현은 직합이 아니라 직적분으로 분해된다. 연속 스펙트럼이 나오는 것이 그 차이다.
@@ -53,7 +53,7 @@ $$
 Peter–Weyl 정리의 첫 형태가 바로 이 일반화다. 모든 기약표현의 행렬계수를 모으면 $L^2(G)$ 에서 조밀하고, 적절히 정규화하면 정규직교기저가 된다.
 
 $$
-\left\{\sqrt{\dim V_i}\ \rho^{(i)}_{jk}\right\}
+\left\lbrace\sqrt{\dim V_i}\ \rho^{(i)}_{jk}\right\rbrace
 $$
 
 $\dim V_i$ 짜리 표현이 $(\dim V_i)^2$ 개의 함수를 기여하므로, 유한군의 $|G|=\sum(\dim V_i)^2$ 가 무한 버전으로 옮겨진 셈이다.
@@ -65,7 +65,7 @@ $\dim V_i$ 짜리 표현이 $(\dim V_i)^2$ 개의 함수를 기여하므로, 유
 국소 콤팩트 위상군 $G$ 위에 왼쪽 평행이동 불변인 Radon 측도가 상수배를 빼고 유일하게 존재한다.
 
 $$
-\int_Gf(hg)\,dg=\int_Gf(g)\,dg\qquad(\forall h\in G)
+\int_Gf(hg)\thinspace dg=\int_Gf(g)\thinspace dg\qquad(\forall h\in G)
 $$
 
 $G$ 가 콤팩트이면 이 측도가 유한이고 오른쪽 불변이기도 하며(유니모듈러), $\int_G1\thinspace dg=1$ 로 정규화한다. 유한군에서는 $dg$ 가 각 점에 $1/|G|$ 를 주는 계량 측도다.
@@ -75,7 +75,7 @@ $G$ 가 콤팩트이면 이 측도가 유한이고 오른쪽 불변이기도 하
 유한차원 표현 $(\rho,V)$ 의 행렬계수는 위와 같고, **지표**는 $\chi_\rho(g)=\operatorname{tr}\rho(g)$ 다. 지표는 켤레불변이라 **류함수**이고, 콤팩트 군에서도 유한군과 같은 직교관계를 만족한다.
 
 $$
-\int_G\chi_i(g)\overline{\chi_j(g)}\,dg=\delta_{ij}
+\int_G\chi_i(g)\overline{\chi_j(g)}\thinspace dg=\delta_{ij}
 $$
 
 # 성질

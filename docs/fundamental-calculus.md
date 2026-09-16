@@ -13,7 +13,7 @@
 $F(x)$ 를 $a$ 부터 $x$ 까지 쌓인 양이라고 하자. $x$ 를 아주 조금 $h$ 만큼 늘리면 새로 쌓이는 양은 폭이 $h$ 이고 높이가 대략 $f(x)$ 인 얇은 띠다. 따라서
 
 $$
-F(x+h)-F(x)\approx f(x)\,h
+F(x+h)-F(x)\approx f(x)\thinspace h
 $$
 
 이고 양변을 $h$ 로 나누면 $F'=f$ 다. 증명이 하는 일은 이 "대략" 을 연속성으로 정당화하는 것뿐이다.
@@ -33,7 +33,7 @@ $$
 실수 $a<b$ 를 고정하고 $f$ 를 $[a,b]$ 에서 Riemann 적분 가능한 함수라 하자.
 
 $$
-F(x)=\int_a^x f(t)\,dt,\qquad x\in[a,b]
+F(x)=\int_a^x f(t)\thinspace dt,\qquad x\in[a,b]
 $$
 
 를 누적함수라 한다. $G'=f$ 인 $G$ 를 $f$ 의 원시함수라 하며, 두 원시함수는 상수만큼만 다르다.
@@ -53,7 +53,7 @@ $$
 $f$ 가 $[a,b]$ 에서 적분 가능하고, $[a,b]$ 에서 연속이며 내부에서 미분가능한 $G$ 가 $G'=f$ 를 만족하면
 
 $$
-\int_a^b f(t)\,dt=G(b)-G(a)
+\int_a^b f(t)\thinspace dt=G(b)-G(a)
 $$
 
 이다. $f$ 의 연속성은 요구하지 않는다는 점이 제1 형태와 다르다.
@@ -65,13 +65,13 @@ $$
 $h>0$ 에 대해
 
 $$
-\frac{F(x+h)-F(x)}h=\frac1h\int_x^{x+h}f(t)\,dt
+\frac{F(x+h)-F(x)}h=\frac1h\int_x^{x+h}f(t)\thinspace dt
 $$
 
 이고 우변은 $[x, x+h]$ 에서의 $f$ 의 평균이다. $f$ 가 $x$ 에서 연속이므로 $|f(t) - f(x)| < \varepsilon$ 를 만드는 $\delta$ 를 잡으면 $0 < h < \delta$ 에서
 
 $$
-\left|\frac{F(x+h)-F(x)}h-f(x)\right|\le\frac1h\int_x^{x+h}|f(t)-f(x)|\,dt<\varepsilon
+\left|\frac{F(x+h)-F(x)}h-f(x)\right|\le\frac1h\int_x^{x+h}|f(t)-f(x)|\thinspace dt<\varepsilon
 $$
 
 이다. $h < 0$ 에서도 같다. 연속성 없이 적분 가능성만 있으면 $|F(x+h)-F(x)| \le M|h|$ 로 $F$ 의 Lipschitz 연속성까지만 얻는다.

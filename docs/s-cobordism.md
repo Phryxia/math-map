@@ -70,7 +70,7 @@ flowchart TD
 > **정의.** 군 $\pi$ 에 대해 $\mathrm{GL}(\mathbb Z\pi)=\varinjlim\mathrm{GL}_n(\mathbb Z\pi)$ 라 하고
 > $$
 > K_1(\mathbb Z\pi)=\mathrm{GL}(\mathbb Z\pi)^{\mathrm{ab}},\qquad
-> \mathrm{Wh}(\pi)=K_1(\mathbb Z\pi)\big/\{\pm g:g\in\pi\}
+> \mathrm{Wh}(\pi)=K_1(\mathbb Z\pi)\big/\lbrace\pm g:g\in\pi\rbrace
 > $$
 > 를 **Whitehead 군**이라 한다.
 

@@ -7,7 +7,7 @@
 가장 단순한 VOA 는 기약가군이 자기 자신뿐인 것, 즉 **홀로모픽**(자기쌍대) VOA 다. 이때 지표가 하나뿐이라 모듈러 불변성이 "지표가 $\mathrm{SL}_2(\mathbb Z)$ 불변인 함수" 라는 강력한 제약이 된다. 그 제약은 중심전하를 $c\in24\mathbb Z$ 로 강제하고, $c=24$ 에서는 지표를 완전히 결정한다.
 
 $$
-\mathrm{ch}\,V(\tau)=J(\tau)+N=q^{-1}+N+196884\,q+\cdots,\qquad N=\dim V_1
+\mathrm{ch}\thinspace V(\tau)=J(\tau)+N=q^{-1}+N+196884\thinspace q+\cdots,\qquad N=\dim V_1
 $$
 
 정수 하나 $N$ 을 빼면 자유도가 없다. 그렇다면 $V$ 자체는 몇 개인가. Schellekens 는 1993 년에 무게 $1$ 부분 $V_1$ 이 지니는 Lie 대수 구조를 조합적으로 제한해 **71 가지**만 가능함을 보였다.[^1] 이후 30 년에 걸쳐 그 목록의 각 항목이 실제로 존재하고 유일함이 증명되었고, $V_1=0$ 인 마지막 한 항목만 유일성이 미해결로 남아 있다. 그것이 괴물 달빛 가군이다.
@@ -106,7 +106,7 @@ VOA $V$ 가 홀로모픽(자기쌍대)이라 함은 $V$ 가 $C_2$ 여유한 유�
 $V_1$ 에 $[a,b]=a_{(0)}b$ 로 Lie 괄호를, $\langle a,b\rangle=a_{(1)}b\in V_0=\mathbb C$ 로 불변 쌍선형 형식을 준다. $V$ 가 $c=24$ 홀로모픽이면 $V_1$ 은 **환원적**이고, 단순 성분마다 양의 정수 레벨이 붙어 아핀 VOA 를 이룬다.
 
 $$
-\bigotimes_i L_{\mathfrak g_i}(k_i)\;\subseteq\;V
+\bigotimes_i L_{\mathfrak g_i}(k_i)\thickspace\subseteq\thickspace V
 $$
 
 ## Schellekens 목록

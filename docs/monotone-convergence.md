@@ -42,7 +42,7 @@ $$
 라 하자. 점별 극한을 $f(x) = \lim f_n(x)$ 로 두면
 
 $$
-\lim_{n\to\infty}\int_X f_n\,d\mu=\int_X f\,d\mu
+\lim_{n\to\infty}\int_X f_n\thinspace d\mu=\int_X f\thinspace d\mu
 $$
 
 가 성립한다. 양변에 $\infty$ 도 허용한다. 극한 $f$ 는 가측함수의 점별 극한이므로 자동으로 가측이고, 적분값의 수열은 단조성으로 증가하므로 극한이 항상 존재한다. 즉 정리의 양변이 늘 정의된다.
@@ -56,19 +56,19 @@ $$
 반대 부등식이 핵심이다. $f$ 아래의 음이 아닌 단순함수 $s$ 를 하나 고정하고 $0 < c < 1$ 을 잡아
 
 $$
-E_n=\{x: f_n(x)\ge c\,s(x)\}
+E_n=\lbrace x: f_n(x)\ge c\thinspace s(x)\rbrace
 $$
 
 라 두자. $f_n$ 이 증가하므로 $E_n$ 은 증가하고, $c < 1$ 이므로 $s$ 가 양수인 모든 점이 언젠가 $E_n$ 에 들어가 $\bigcup E_n = X$ 다. 그러면
 
 $$
-\int_X f_n\,d\mu\ge\int_{E_n}f_n\,d\mu\ge c\int_{E_n}s\,d\mu
+\int_X f_n\thinspace d\mu\ge\int_{E_n}f_n\thinspace d\mu\ge c\int_{E_n}s\thinspace d\mu
 $$
 
 이고, $s$ 가 단순함수이므로 오른쪽은 유한 개 집합의 측도의 합이라 측도의 아래로부터 연속성을 쓸 수 있다. $n \to \infty$ 를 취하면
 
 $$
-\lim_{n\to\infty}\int_X f_n\,d\mu\ge c\int_X s\,d\mu
+\lim_{n\to\infty}\int_X f_n\thinspace d\mu\ge c\int_X s\thinspace d\mu
 $$
 
 를 얻는다. $c \to 1$ 로 보내고 $f$ 아래의 모든 단순함수 $s$ 에 대해 상한을 취하면 정의에 의해 $\int f$ 가 나온다.
@@ -90,7 +90,7 @@ $$
 $g_n = \inf_{k \ge n} f_k$ 로 두면 $g_n$ 이 증가하고 $g_n \le f_n$ 이므로 단조수렴 정리를 적용해
 
 $$
-\int_X\liminf_n f_n\,d\mu\le\liminf_n\int_X f_n\,d\mu
+\int_X\liminf_n f_n\thinspace d\mu\le\liminf_n\int_X f_n\thinspace d\mu
 $$
 
 를 얻는다. 이것이 Fatou 보조정리이고, 음이 아니라는 가정만 있으면 성립한다. 여기에 지배함수를 더해 $g - f_n$ 과 $g + f_n$ 양쪽에 적용하면 지배수렴 정리가 나온다. 세 정리가 하나의 사슬로 이어진다.
@@ -137,7 +137,7 @@ print("점별 극한의 적분", 0.0)
 부분합 $F_N = \sum_{n \le N} g_n$ 은 각 $g_n \ge 0$ 이면 증가하므로 정리를 그대로 적용해
 
 $$
-\int_X\sum_{n=1}^{\infty}g_n\,d\mu=\sum_{n=1}^{\infty}\int_X g_n\,d\mu
+\int_X\sum_{n=1}^{\infty}g_n\thinspace d\mu=\sum_{n=1}^{\infty}\int_X g_n\thinspace d\mu
 $$
 
 를 얻는다. 음이 아니기만 하면 조건 없이 교환된다는 점이 강력하다. 이 결과가 Tonelli 정리로 이어지고, 이중급수의 순서 교환과 Fubini 정리의 음이 아닌 판본을 준다. 부호가 섞이면 절댓값의 적분이 유한한지 먼저 확인해야 하며, 그 확인 자체를 이 정리로 한다는 것이 실무의 순서다.
@@ -147,7 +147,7 @@ $$
 증가하는 사건열의 확률이 합집합의 확률로 수렴한다는 사실, 음이 아닌 확률변수를 유계 확률변수로 잘라 근사해도 기댓값이 보존된다는 사실, 꼬리합 공식
 
 $$
-\mathbb{E}[X]=\int_0^\infty P(X>t)\,dt\qquad(X\ge0)
+\mathbb{E}[X]=\int_0^\infty P(X>t)\thinspace dt\qquad(X\ge0)
 $$
 
 가 모두 이 정리에서 나온다. 마팅게일 수렴 정리와 조건부 기댓값의 성질을 세울 때도 반복해서 쓰인다.

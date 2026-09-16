@@ -27,19 +27,19 @@ $$
 확대 $1\to A\to G\to Q\to1$ 에서 $A$ 가 가환이라 하자. 각 $q\in Q$ 마다 대표원 $s(q)\in G$ 를 하나씩 고른다. $s$ 가 준동형이면 좋겠지만 일반적으로는 아니고, 어긋난 만큼이 $A$ 안에 남는다.
 
 $$
-s(q_1)s(q_2)=f(q_1,q_2)\,s(q_1q_2),\qquad f(q_1,q_2)\in A
+s(q_1)s(q_2)=f(q_1,q_2)\thinspace s(q_1q_2),\qquad f(q_1,q_2)\in A
 $$
 
 이 $f$ 를 **인자집합** 또는 2-코사이클이라 한다. $G$ 의 결합법칙을 세 원소에 적용하면 $f$ 가 만족해야 할 조건이 나온다.
 
 $$
-f(q_1,q_2)+f(q_1q_2,q_3)=q_1\!\cdot\! f(q_2,q_3)+f(q_1,q_2q_3)
+f(q_1,q_2)+f(q_1q_2,q_3)=q_1\negthinspace\cdot\negthinspace f(q_2,q_3)+f(q_1,q_2q_3)
 $$
 
 곧 $f$ 는 2-코사이클이다. 반대로 대표원을 다르게 고르면 $f$ 가 바뀌는데, 그 차이가 정확히 2-코바운더리다. 따라서
 
 $$
-\{\text{확대의 동치류}\}\ \longleftrightarrow\ H^2(Q,A)=Z^2/B^2
+\lbrace\text{확대의 동치류}\rbrace\ \longleftrightarrow\ H^2(Q,A)=Z^2/B^2
 $$
 
 $H^2$ 의 영원소가 **분할 확대**, 곧 반직접곱 $G=A\rtimes Q$ 다. 코호몰로지가 "준동형이 되지 못한 정도" 를 재고 있고, [호몰로지](homology.md)에서 사슬복합체가 하는 일과 같은 역할이다.
@@ -93,8 +93,8 @@ graph TD
 $Q$ 가군 $A$ (곧 $Q$ 가 작용하는 가환군)에 대해
 
 $$
-C^n(Q,A)=\{f:Q^n\to A\},\qquad
-(\delta f)(q_1,\dots,q_{n+1})=q_1\!\cdot\! f(q_2,\dots)+\sum(-1)^if(\dots)+(-1)^{n+1}f(\dots)
+C^n(Q,A)=\lbrace f:Q^n\to A\rbrace,\qquad
+(\delta f)(q_1,\dots,q_{n+1})=q_1\negthinspace\cdot\negthinspace f(q_2,\dots)+\sum(-1)^if(\dots)+(-1)^{n+1}f(\dots)
 $$
 
 로 사슬복합체를 만들고 $H^n(Q,A)=\ker\delta^n/\operatorname{im}\delta^{n-1}$ 로 둔다. 낮은 차수의 뜻이 구체적이다.
@@ -147,7 +147,7 @@ $n\ge8$ 인 $A_n$ 의 Schur 곱셈자는 $\mathbb Z/2$ 이고, 그 이중덮개�
 양자역학에서 대칭군 $Q$ 는 Hilbert 공간의 사영공간에 작용한다. 곧 표현이 위상 인자만큼 어긋날 수 있다.
 
 $$
-\rho(q_1)\rho(q_2)=c(q_1,q_2)\,\rho(q_1q_2),\qquad |c|=1
+\rho(q_1)\rho(q_2)=c(q_1,q_2)\thinspace\rho(q_1q_2),\qquad |c|=1
 $$
 
 $c$ 가 정확히 $H^2(Q,\mathrm U(1))$ 의 2-코사이클이다. 따라서 사영표현은 중심확대의 진짜 표현과 같고, $\mathrm{SO}(3)$ 의 사영표현이 [Lie 군](lie-groups.md)에서 본 $\mathrm{SU}(2)$ 의 표현인 이유가 이것이다. 반정수 스핀이 $H^2$ 의 비자명 원소에서 나온다.

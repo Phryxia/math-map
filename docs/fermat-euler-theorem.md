@@ -24,13 +24,13 @@ graph LR
 n을 2 이상의 정수라 하자. Euler phi 함수는 n 이하의 n과 서로 소인 양의 정수의 개수다.
 
 $$
-\varphi(n)=\#\{\,1\le k\le n : \gcd(k,n)=1\,\}
+\varphi(n)=\char35{}\lbrace\thinspace 1\le k\le n : \gcd(k,n)=1\thinspace\rbrace
 $$
 
 [정수의 합동](modular-arithmetic.md)에서 잉여류환 Z/n의 가역원 전체는 곱셈에 대해 군을 이루며, 그 크기가 phi(n)이다.
 
 $$
-(\mathbb{Z}/n)^{\times}=\{\,\bar a\in\mathbb{Z}/n : \gcd(a,n)=1\,\},\qquad
+(\mathbb{Z}/n)^{\times}=\lbrace\thinspace\bar a\in\mathbb{Z}/n : \gcd(a,n)=1\thinspace\rbrace,\qquad
 \big|(\mathbb{Z}/n)^{\times}\big|=\varphi(n)
 $$
 
@@ -78,13 +78,13 @@ Euler 정리의 가장 실용적인 귀결 두 개다.
 
 $$
 a^{-1}\equiv a^{\varphi(n)-1}\pmod{n},\qquad
-a^{e}\equiv a^{\,e \bmod \varphi(n)}\pmod{n}\ \ (\gcd(a,n)=1)
+a^{e}\equiv a^{\thinspace e \bmod \varphi(n)}\pmod{n}\ \ (\gcd(a,n)=1)
 $$
 
 두 번째 식에서 gcd 조건은 빠뜨릴 수 없다. n = 4, a = 2, e = 2에서 e mod phi(4) = 0이지만 2의 0제곱은 1이고 2의 2제곱은 0이다. 서로 소가 아닌 경우에는 지수를 0으로 떨어뜨리지 않는 보정된 축약을 쓴다. 지수가 충분히 클 때 다음이 성립한다.
 
 $$
-e\ \ge\ \log_2 n \ \Longrightarrow\ a^{e}\equiv a^{\,(e \bmod \varphi(n))+\varphi(n)} \pmod{n}
+e\ \ge\ \log_2 n \ \Longrightarrow\ a^{e}\equiv a^{\thinspace(e \bmod \varphi(n))+\varphi(n)} \pmod{n}
 $$
 
 역원 계산 자체는 [유클리드 알고리즘](euclidean-algorithm.md)의 확장형이 더 빠르다.
@@ -115,7 +115,7 @@ Korselt 판정법에 의해 n이 Carmichael 수인 것은 n이 square-free이고
 법 N = p q, 공개 지수 e, 비밀 지수 d가 다음을 만족한다고 하자.
 
 $$
-e\,d\equiv 1 \pmod{\varphi(N)}
+e\thinspace d\equiv 1 \pmod{\varphi(N)}
 $$
 
 그러면 e d = 1 + k phi(N)이므로 gcd(m, N) = 1인 평문에서 Euler 정리로 복호가 확인된다.
@@ -137,7 +137,7 @@ $$
 n이 홀수 소수이면 Z/n이 체이므로 1의 제곱근은 1과 -1뿐이라는 사실을 추가로 쓴다. 즉 다음 중 하나가 성립해야 한다.
 
 $$
-a^{q}\equiv 1,\qquad\text{또는}\qquad \exists\,0\le i<s:\ a^{2^{i}q}\equiv -1 \pmod n
+a^{q}\equiv 1,\qquad\text{또는}\qquad \exists\thinspace 0\le i<s:\ a^{2^{i}q}\equiv -1 \pmod n
 $$
 
 합성수 n에 대해 이를 통과하는 밑 a("strong liar")는 n - 1 중 최대 1/4이므로, 독립적으로 k회 반복하면 오류 확률이 4의 -k제곱 이하다[^3].

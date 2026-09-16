@@ -5,7 +5,7 @@
 [Deligne 의 정리](deligne-weil-conjectures.md)는 Frobenius 고윳값의 절댓값을 정확히 못 박았다. 타원곡선 $E/\mathbb Q$ 와 좋은 환원의 소수 $p$ 에서
 
 $$
-a_p=p+1-\#E(\mathbb F_p),
+a_p=p+1-\char35{}E(\mathbb F_p),
 \qquad
 |a_p|\le2\sqrt p
 $$
@@ -21,7 +21,7 @@ $$
 Sato 는 수치 실험으로, Tate 는 이론적 근거로 1960 년대에 같은 답에 도달했다. $E$ 가 복소곱셈을 갖지 않으면
 
 $$
-\theta_p\ \sim\ \frac2\pi\sin^2\theta\,d\theta
+\theta_p\ \sim\ \frac2\pi\sin^2\theta\thinspace d\theta
 $$
 
 를 따른다. $\cos\theta$ 로 옮기면 반원 분포 $\frac2\pi\sqrt{1-x^2}\thinspace dx$ 다. 이 측도는 우연히 나온 것이 아니다. 콤팩트군 $\mathrm{SU}(2)$ 의 켤레류 위 Haar 측도이고, 곧 **Frobenius 가 $\mathrm{SU}(2)$ 안에 균등하게 흩어진다**는 말이다.
@@ -37,7 +37,7 @@ $$
 $\mathrm{SU}(2)$ 의 원소는 켤레를 무시하면 고윳값 $e^{\pm i\theta}$ 로 결정된다. 곧 켤레류의 공간이 $[0,\pi]$ 다. $\mathrm{SU}(2)$ 의 Haar 측도를 이 공간으로 밀어내면 Weyl 적분공식이
 
 $$
-\frac2\pi\sin^2\theta\,d\theta
+\frac2\pi\sin^2\theta\thinspace d\theta
 $$
 
 를 준다. $\sin^2$ 는 Weyl 분모 $|e^{i\theta}-e^{-i\theta}|^2$ 에서 온다. 서로 다른 고윳값이 밀어내는 효과이고, 랜덤 행렬 이론의 반발과 같은 것이다.
@@ -72,7 +72,7 @@ graph TD
 측도를 확정하려면 모든 모멘트를 확정해야 한다. $\mathrm{SU}(2)$ 의 기약표현은 대칭곱 $\mathrm{Sym}^n$ 이고 그 지표가
 
 $$
-\mathrm{tr}\,\mathrm{Sym}^n(\theta)=\frac{\sin((n+1)\theta)}{\sin\theta}
+\mathrm{tr}\thinspace\mathrm{Sym}^n(\theta)=\frac{\sin((n+1)\theta)}{\sin\theta}
 =U_n(\cos\theta)
 $$
 
@@ -87,16 +87,16 @@ $$
 $E/\mathbb Q$ 가 좋은 환원을 갖는 소수 $p$ 에서
 
 $$
-a_p=p+1-\#E(\mathbb F_p),
+a_p=p+1-\char35{}E(\mathbb F_p),
 \qquad
-\theta_p=\arccos\!\Big(\frac{a_p}{2\sqrt p}\Big)\in[0,\pi]
+\theta_p=\arccos\negthinspace\Big(\frac{a_p}{2\sqrt p}\Big)\in[0,\pi]
 $$
 
 로 둔다. **Sato–Tate 측도**는
 
 $$
-\mu_{ST}=\frac2\pi\sin^2\theta\,d\theta
-\qquad\Big(\text{동치로}\quad\frac2\pi\sqrt{1-x^2}\,dx,\ x=\cos\theta\Big)
+\mu_{ST}=\frac2\pi\sin^2\theta\thinspace d\theta
+\qquad\Big(\text{동치로}\quad\frac2\pi\sqrt{1-x^2}\thinspace dx,\ x=\cos\theta\Big)
 $$
 
 다. 전체 질량이 $1$ 이고 $[0,\pi]$ 에 대칭이다.
@@ -104,7 +104,7 @@ $$
 ## Sato–Tate 추측(정리)
 
 > **정리 (Taylor 등, 2006–2011).** $E/\mathbb Q$ 가 복소곱셈을 갖지 않으면 $\lbrace\theta_p\rbrace$ 는 $\mu_{ST}$ 에 대해 등분포한다. 곧 모든 $0\le\alpha<\beta\le\pi$ 에서
-> $$\lim_{X\to\infty}\frac{\#\{p\le X:\theta_p\in[\alpha,\beta]\}}{\#\{p\le X\}}=\int_\alpha^\beta\frac2\pi\sin^2\theta\,d\theta$$
+> $$\lim_{X\to\infty}\frac{\char35{}\lbrace p\le X:\theta_p\in[\alpha,\beta]\rbrace}{\char35{}\lbrace p\le X\rbrace}=\int_\alpha^\beta\frac2\pi\sin^2\theta\thinspace d\theta$$
 
 총체적 실체는 전체수체(totally real field) 위의 타원곡선까지 확장되었다.
 
@@ -114,7 +114,7 @@ $\alpha_p,\beta_p$ 를 $p$ 에서의 정규화된 Frobenius 고윳값, 곧 $\alp
 
 $$
 L(\mathrm{Sym}^nE,s)=\prod_{p\ \text{좋음}}\ \prod_{k=0}^{n}
-\Big(1-\alpha_p^{\,k}\beta_p^{\,n-k}p^{-s}\Big)^{-1}
+\Big(1-\alpha_p^{\thinspace k}\beta_p^{\thinspace n-k}p^{-s}\Big)^{-1}
 $$
 
 이다. $n=1$ 이 $E$ 의 Hasse–Weil $L$ 함수이고, $n=2$ 는 수반(adjoint) $L$ 함수와 밀접하다.

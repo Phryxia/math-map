@@ -27,7 +27,7 @@ $$
 - $n=24$ 이면 무게 12 의 모듈러 형식 공간이 $E_4^3$ 와 $\Delta$ 가 생성하는 2 차원으로 처음 커진다. 그래서 theta 급수가 격자마다 달라질 여지가 생기고, 실제로 근 개수 하나가 그 차이를 전부 결정한다.
 
 $$
-\theta_L(\tau)=E_4(\tau)^3+(|\Phi|-720)\,\Delta(\tau)
+\theta_L(\tau)=E_4(\tau)^3+(|\Phi|-720)\thinspace\Delta(\tau)
 $$
 
 $q$ 계수가 근의 개수 $|\Phi|$ 이므로 그 한 정수가 theta 급수를 결정한다. Leech 는 $|\Phi|=0$ 이라 $\theta=E_4^3-720\Delta$ 이고, $q$ 계수가 0 이라는 것이 최소 노름이 4 라는 뜻이다. 24 차원은 격자가 여러 개이면서도 각각을 정수 하나로 구별할 수 있는 마지막 차원이다.
@@ -76,7 +76,7 @@ $L\subset\mathbb R^n$ 을 랭크 $n$ 의 격자라 하고 $L^*=\lbrace x:(x,y)\i
 $n=24$ 인 양의정부호 짝수 유니모듈러 격자를 **Niemeier 격자**라 한다. **근계**는
 
 $$
-\Phi(L)=\{x\in L:(x,x)=2\}
+\Phi(L)=\lbrace x\in L:(x,x)=2\rbrace
 $$
 
 이고, 이것이 ADE 형 근계를 이룬다. 길이가 모두 같으므로 단순끈 형 곧 $A,D,E$ 만 나온다.
@@ -191,7 +191,7 @@ Leech 격자는 이 목록에서 근이 없는 유일한 원소다. 이 한 줄�
 Construction A 는 이진 부호 $C\subseteq\mathbb F_2^n$ 에서 격자를 만든다.
 
 $$
-L_C=\{x\in\mathbb Z^n:x\bmod2\in C\}/\sqrt2
+L_C=\lbrace x\in\mathbb Z^n:x\bmod2\in C\rbrace/\sqrt2
 $$
 
 $C$ 가 자기쌍대이면 $L_C$ 가 유니모듈러이고, 모든 부호어 무게가 4 의 배수(doubly even)이면 짝수다. 확장 Hamming 부호가 $E_8$ 을, 확장 Golay 부호가 Leech 격자를 준다(후자는 보정을 한 번 더 거치는 Construction B/C). [오류정정부호](error-correcting-codes.md)의 분류 문제와 격자 분류 문제가 같은 문제의 두 판본이 되고, 부호의 무게 열거다항식과 격자의 theta 급수가 서로 번역된다.

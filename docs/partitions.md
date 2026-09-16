@@ -39,7 +39,7 @@ $p(n)$ 의 증가 속도는 $\exp(c\sqrt n)$ 이다. 다항식보다 빠르고 �
 $p(n)$ 은 Cauchy 적분으로 꺼낼 수 있다.
 
 $$
-p(n)=\frac1{2\pi i}\oint_{|q|=r}\frac{F(q)}{q^{n+1}}\,dq\qquad(0<r<1)
+p(n)=\frac1{2\pi i}\oint_{|q|=r}\frac{F(q)}{q^{n+1}}\thinspace dq\qquad(0<r<1)
 $$
 
 $r\to1$ 로 보내면 분모 $q^{n+1}$ 이 작아져 유리하지만 $F$ 가 폭발한다. 두 효과의 균형점에서 주된 기여가 나온다.
@@ -61,7 +61,7 @@ graph TD
 $q=1$ 근방의 거동을 어떻게 아는가. $q=e^{2\pi i\tau}$ 로 두면 $q\to1$ 은 $\tau\to0$ 이고, 이는 $\mathbb H$ 의 첨점이 아니라 실축 위의 점이다. 여기서 Dedekind eta 의 변환식
 
 $$
-\eta\Big(-\frac1\tau\Big)=\sqrt{-i\tau}\,\eta(\tau)
+\eta\Big(-\frac1\tau\Big)=\sqrt{-i\tau}\thinspace\eta(\tau)
 $$
 
 이 $\tau\to0$ 의 문제를 $\tau\to i\infty$ 의 문제로 바꿔 준다. 후자에서는 $q$ 전개의 첫 항만 보면 되므로 거동이 즉시 읽힌다. 모듈러 대칭이 어려운 극한을 쉬운 극한으로 옮기는 것이 원법의 기술적 심장이다.
@@ -107,7 +107,7 @@ $\eta$ 는 무게 $1/2$ 의 모듈러 형식처럼 변환한다.
 
 $$
 \eta(\tau+1)=e^{\pi i/12}\eta(\tau),\qquad
-\eta\Big(-\frac1\tau\Big)=\sqrt{-i\tau}\,\eta(\tau)
+\eta\Big(-\frac1\tau\Big)=\sqrt{-i\tau}\thinspace\eta(\tau)
 $$
 
 그러므로 $F(q)=q^{1/24}/\eta(\tau)$ 이고, 분할 생성함수가 모듈러 대상의 역수다. $\eta^{24}=\Delta$ 이므로 판별식 형식과도 직접 이어진다.
@@ -119,13 +119,13 @@ $$
 원법을 $q=1$ 근방에서만 적용하면 주항이 나온다.
 
 $$
-p(n)\sim\frac1{4n\sqrt3}\,e^{\pi\sqrt{2n/3}}
+p(n)\sim\frac1{4n\sqrt3}\thinspace e^{\pi\sqrt{2n/3}}
 $$
 
 수렴은 느리다. $n=400$ 에서도 오차가 2 퍼센트 남는다. 다른 유리점의 기여를 모두 더하면 개선되는데, Rademacher 는 이 급수가 수렴할 뿐 아니라 $p(n)$ 을 **정확히** 준다는 것을 보였다.
 
 $$
-p(n)=\frac1{\pi\sqrt2}\sum_{k\ge1}A_k(n)\sqrt k\,\frac{d}{dn}\left(\frac{\sinh\big(\frac\pi k\sqrt{\frac23(n-\frac1{24})}\big)}{\sqrt{n-\frac1{24}}}\right)
+p(n)=\frac1{\pi\sqrt2}\sum_{k\ge1}A_k(n)\sqrt k\thinspace\frac{d}{dn}\left(\frac{\sinh\big(\frac\pi k\sqrt{\frac23(n-\frac1{24})}\big)}{\sqrt{n-\frac1{24}}}\right)
 $$
 
 $A_k(n)$ 은 Kloosterman 합 꼴의 유한합이다. 정수를 주는 무한급수라는 점이 기이하고, 실제로 몇 항만 더해 반올림하면 $p(n)$ 이 나온다.

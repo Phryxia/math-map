@@ -30,7 +30,7 @@ graph TD
 완전그래프 K_n의 간선 집합을 r개의 색으로 칠하는 것을 다음과 같이 쓴다. [그래프](graphs.md)의 간선 집합은 정점의 2원소 부분집합의 집합이다.
 
 $$
-c:\binom{V}{2}\longrightarrow\{1,\dots,r\},\qquad |V|=n
+c:\binom{V}{2}\longrightarrow\lbrace 1,\dots,r\rbrace,\qquad |V|=n
 $$
 
 부분집합 S가 색 i에 대해 단색(monochromatic)이라는 것은 S 안의 모든 간선이 색 i라는 뜻이다.
@@ -38,7 +38,7 @@ $$
 ## Ramsey 수
 
 $$
-R(s_1,\dots,s_r)=\min\Bigl\{\,n\ \Bigm|\ \forall c:\binom{[n]}{2}\to[r],\ \exists\, i,\ \exists\, S,\ |S|=s_i,\ S\text{가 색 }i\text{로 단색}\Bigr\}
+R(s_1,\dots,s_r)=\min\Bigl\lbrace\thinspace n\ \Bigm|\ \forall c:\binom{[n]}{2}\to[r],\ \exists\thinspace i,\ \exists\thinspace S,\ |S|=s_i,\ S\text{가 색 }i\text{로 단색}\Bigr\rbrace
 $$
 
 두 색 대각선 경우 R(k) = R(k,k)로 줄여 쓴다. 하이퍼그래프 버전은 2원소 부분집합을 k원소 부분집합으로 바꾼 것이다.
@@ -52,7 +52,7 @@ $$
 가산 무한집합의 k원소 부분집합을 유한 개의 색으로 칠하면, 모든 k원소 부분집합이 같은 색인 무한 부분집합이 존재한다[^1].
 
 $$
-c:\binom{\mathbb{N}}{k}\to[r]\ \Longrightarrow\ \exists\, M\subseteq\mathbb{N}\ \text{무한},\ c\bigl|_{\binom{M}{k}}\ \text{상수}
+c:\binom{\mathbb{N}}{k}\to[r]\ \Longrightarrow\ \exists\thinspace M\subseteq\mathbb{N}\ \text{무한},\ c\bigl|_{\binom{M}{k}}\ \text{상수}
 $$
 
 # 성질
@@ -120,7 +120,7 @@ $$
 하한 43은 Exoo(1989), 상한 46은 Angeltveit와 McKay다. 대각선 상한은 1935년부터 4^k 형태에 머물렀으나 2023년 Campos, Griffiths, Morris, Sahasrabudhe가 처음으로 지수적 개선을 얻었다[^4].
 
 $$
-R(k)\ \le\ (4-\varepsilon)^{k}\quad(\exists\,\varepsilon>0)
+R(k)\ \le\ (4-\varepsilon)^{k}\quad(\exists\thinspace\varepsilon>0)
 $$
 
 파라미터를 최적화하면 3.8^{k+o(k)}까지 내려간다. 하한 쪽도 2^{k/2}의 상수배 개선에 머물러 있어, 성장률의 정확한 지수는 여전히 열려 있다. Erdős의 유명한 일화는 외계인이 R(5,5)를 요구하면 온 인류가 계산해 답할 수 있겠지만 R(6,6)을 요구하면 외계인을 공격하는 편이 낫다는 것이다.
@@ -130,7 +130,7 @@ $$
 양의 정수를 유한 개의 색으로 칠하면 x + y = z를 만족하는 단색 삼중쌍이 존재한다[^5]. 정확히는 임의의 r에 대해 다음 수가 존재한다.
 
 $$
-S(r)=\min\bigl\{N\ \bigm|\ \forall c:[N]\to[r],\ \exists\, x,y,z\ \text{같은 색},\ x+y=z\bigr\}
+S(r)=\min\bigl\lbrace N\ \bigm|\ \forall c:[N]\to[r],\ \exists\thinspace x,y,z\ \text{같은 색},\ x+y=z\bigr\rbrace
 $$
 
 증명은 Ramsey 정리로 환원한다. N = R_r(3) - 1(r색 삼각형 Ramsey 수)이라 하고 색칠 c가 주어지면, 완전그래프 K_{N+1}의 간선 {i, j}에 색 c(|i - j|)를 부여한다. Ramsey 정리로 단색 삼각형 {i < j < k}가 있으니 x = j - i, y = k - j, z = k - i로 두면 x + y = z이고 세 수의 색이 같다. 알려진 Schur 수는 S(1) = 2, S(2) = 5, S(3) = 14, S(4) = 45이고 S(5) = 161은 2017년에 SAT 풀이기로 확정되었다.

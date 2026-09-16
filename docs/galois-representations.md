@@ -15,7 +15,7 @@ $$
 이 구성이 왜 가능한가. 대수다양체에는 Zariski 위상밖에 없고 그 위상은 코호몰로지를 만들기에 너무 성기다. Grothendieck 은 "열린 부분집합" 을 "에탈 사상" 으로 바꿔 위상 없이 위상수학을 했다. 그 결과가 Weil 추측의 증명이며, 유한체 위에서 점을 세는 일이 코호몰로지의 Lefschetz 고정점 공식으로 환원된다.
 
 $$
-\#X(\mathbb F_{q^n})=\sum_i(-1)^i\mathrm{tr}\big(\mathrm{Frob}^n\mid H^i_{\mathrm{et}}\big)
+\char35{}X(\mathbb F_{q^n})=\sum_i(-1)^i\mathrm{tr}\big(\mathrm{Frob}^n\mid H^i_{\mathrm{et}}\big)
 $$
 
 산술의 양이 Frobenius 의 대각합이 되고, 대각합을 통제하는 것이 표현의 구조다. 여기서 Galois 표현이 정수론의 중심 대상이 된다.
@@ -87,7 +87,7 @@ $$
 이다. $G_K$ 가 꼬임점에 작용하므로 2 차원 표현 $\rho_{E,\ell}\colon G_K\to\mathrm{GL}\_2(\mathbb Q_\ell)$ 을 얻는다. 이것이 $H^1_{\mathrm{et}}(E_{\bar K},\mathbb Q_\ell)$ 의 쌍대이며, 좋은 환원을 갖는 $\mathfrak p$ 에서
 
 $$
-\mathrm{tr}\,\rho_{E,\ell}(\mathrm{Frob}_{\mathfrak p})=a_{\mathfrak p}=N\mathfrak p+1-\#E(\mathbb F_{\mathfrak p})
+\mathrm{tr}\thinspace\rho_{E,\ell}(\mathrm{Frob}_{\mathfrak p})=a_{\mathfrak p}=N\mathfrak p+1-\char35{}E(\mathbb F_{\mathfrak p})
 $$
 
 가 성립한다. 점 개수가 대각합이다.
@@ -97,7 +97,7 @@ $$
 $X$ 가 $\mathbb F_q$ 위의 매끄러운 사영다양체일 때 zeta 함수를 정의한다.
 
 $$
-Z(X,t)=\exp\Big(\sum_{n\ge1}\#X(\mathbb F_{q^n})\frac{t^n}n\Big)
+Z(X,t)=\exp\Big(\sum_{n\ge1}\char35{}X(\mathbb F_{q^n})\frac{t^n}n\Big)
 $$
 
 > **Weil 추측(정리).**
@@ -121,7 +121,7 @@ $$
 이고 점 개수 공식이
 
 $$
-\#X(\mathbb F_{q^n})=q^n+1-\sum_{j=1}^{2g}\alpha_j^n
+\char35{}X(\mathbb F_{q^n})=q^n+1-\sum_{j=1}^{2g}\alpha_j^n
 $$
 
 가 된다. Riemann 가설 $|\alpha_j|=\sqrt q$ 를 넣으면 Hasse–Weil 한계 $|\char35{}X(\mathbb F_q)-q-1|\le2g\sqrt q$ 가 나온다. $g=1$ 인 타원곡선에서는 $|a_q|\le2\sqrt q$ 라는 Hasse 정리다.

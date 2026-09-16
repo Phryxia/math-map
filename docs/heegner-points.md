@@ -13,7 +13,7 @@ $$
 Gross 와 Zagier 는 1986 년에 이 점의 정준 높이가 $L$ 함수의 미분과 같음을 증명했다.[^1]
 
 $$
-L'(E/K,1)=\frac{32\pi^2\,\langle f,f\rangle}{u^2\sqrt{|D|}}\;\hat h(y_K)
+L'(E/K,1)=\frac{32\pi^2\thinspace\langle f,f\rangle}{u^2\sqrt{|D|}}\thickspace\hat h(y_K)
 $$
 
 좌변은 해석, 우변은 기하다. 등식의 힘은 즉시 드러난다. $L'(E/K,1)\ne0$ 이면 $\hat h(y_K)\ne0$ 이므로 $y_K$ 가 무한위수이고, 곧 $\mathrm{rank}\thinspace E(K)\ge1$ 이다. 해석적 정보에서 **실제 유리점**이 나온 것이다.
@@ -29,7 +29,7 @@ $X_0(N)$ 의 점은 순환 $N$ 등원사상 $E_1\to E_2$ 다. 이 자료를 **�
 허수이차체 $K=\mathbb Q(\sqrt D)$ ($D<0$ 기본판별식)를 잡고 정수환 $\mathcal O_K$ 를 본다. $\mathcal O_K$ 자체가 $\mathbb C$ 안의 격자이므로 타원곡선 $\mathbb C/\mathcal O_K$ 를 준다. 여기에 지표 $N$ 의 아이디얼 $\mathfrak n\subset\mathcal O_K$ 로
 
 $$
-\mathbb C/\mathcal O_K\;\longrightarrow\;\mathbb C/\mathfrak n^{-1}
+\mathbb C/\mathcal O_K\thickspace\longrightarrow\thickspace\mathbb C/\mathfrak n^{-1}
 $$
 
 를 만들면 핵이 $\mathfrak n^{-1}/\mathcal O_K\cong\mathcal O_K/\mathfrak n$ 이다. 이 몫이 순환군 $\mathbb Z/N$ 이 되려면 $\mathcal O_K/\mathfrak n\cong\mathbb Z/N$ 이어야 하고, 그 조건이 바로 **Heegner 조건**이다.
@@ -90,7 +90,7 @@ Shimura 상호법칙이 Galois 작용을 유군의 작용으로 번역한다. �
 $x\in X_0(N)(H)$ 를 $\varphi$ 로 옮기면 $\varphi(x)\in E(H)$ 다. 아직 $H$ 위의 점이라 다루기 불편하니 자취를 취해 내린다.
 
 $$
-y_K=\mathrm{Tr}_{H/K}\bigl(\varphi(x)\bigr)=\sum_{\sigma\in\mathrm{Gal}(H/K)}\varphi(x)^{\sigma}\;\in\;E(K)
+y_K=\mathrm{Tr}_{H/K}\bigl(\varphi(x)\bigr)=\sum_{\sigma\in\mathrm{Gal}(H/K)}\varphi(x)^{\sigma}\thickspace\in\thickspace E(K)
 $$
 
 $E$ 의 군 구조가 있으므로 합이 말이 된다. 이 한 줄이 "특수점의 대수적 성질" 을 "$E(K)$ 의 원소" 로 바꾼다.
@@ -132,7 +132,7 @@ Heegner 점은 $K$ 를 하나 고를 때마다 하나 나온다. $K$ 를 바꾸�
 $E/\mathbb Q$ 의 도체를 $N$ 이라 하고 $K=\mathbb Q(\sqrt D)$ 를 Heegner 조건을 만족하는 허수이차체라 하자. $\mathcal O_K/\mathfrak n\cong\mathbb Z/N$ 인 아이디얼 $\mathfrak n$ 을 하나 고정하면, 각 아이디얼류 $[\mathfrak a]\in\mathrm{Cl}(K)$ 에 대해
 
 $$
-x_{\mathfrak a}=\bigl(\mathbb C/\mathfrak a\;\longrightarrow\;\mathbb C/\mathfrak a\mathfrak n^{-1}\bigr)\;\in\;X_0(N)(H)
+x_{\mathfrak a}=\bigl(\mathbb C/\mathfrak a\thickspace\longrightarrow\thickspace\mathbb C/\mathfrak a\mathfrak n^{-1}\bigr)\thickspace\in\thickspace X_0(N)(H)
 $$
 
 가 정의된다. 유수만큼의 점이 나오고 $\mathrm{Gal}(H/K)$ 가 이들을 단순추이적으로 섞는다.
@@ -152,7 +152,7 @@ $$
 $y_K=\mathrm{Tr}\_{H/K}\varphi(x_{\mathcal O_K})$ 라 두고 $\hat h$ 를 $E/K$ 위의 Néron–Tate 정준 높이라 하고, $u=|\mathcal O_K^\times|/2$ 로 두고, $\langle f,f\rangle$ 을 Petersson 노름이라 하자. 그러면
 
 $$
-L'(E/K,1)=\frac{32\pi^2\,\langle f,f\rangle}{u^2\sqrt{|D|}}\;\hat h(y_K)
+L'(E/K,1)=\frac{32\pi^2\thinspace\langle f,f\rangle}{u^2\sqrt{|D|}}\thickspace\hat h(y_K)
 $$
 
 특히 우변의 상수는 양수이므로
@@ -168,7 +168,7 @@ $$
 $y_K$ 하나가 아니라 그 **족**이 필요하다. $n$ 이 적당한 소수들의 곱일 때 순서환 $\mathcal O_n=\mathbb Z+n\mathcal O_K$ 에 대응하는 링 유체 $K_n$ 위에서 Heegner 점 $y_n\in E(K_n)$ 이 정의되고, 이들이 자취 정합성
 
 $$
-\mathrm{Tr}_{K_{n\ell}/K_n}(y_{n\ell})=a_\ell\,y_n
+\mathrm{Tr}_{K_{n\ell}/K_n}(y_{n\ell})=a_\ell\thinspace y_n
 $$
 
 을 만족한다. $a_\ell$ 은 $f$ 의 $\ell$ 번째 Hecke 고유값이다. 이 정합성에서 유도류 $\kappa_n\in H^1(K,E[p])$ 를 만들고, 각 $\kappa_n$ 이 국소 조건을 하나씩 강제해 Selmer 군의 크기를 위에서 누른다. Euler 계란 이렇게 **정합적인 대수류의 열로 Selmer 군을 조이는 장치**다.
@@ -228,7 +228,7 @@ $n$ 이 합동수, 곧 세 변이 유리수이고 넓이가 $n$ 인 직각삼각
 Kolyvagin 논법은 유한성만 주는 것이 아니라 명시적 상계를 준다. Heegner 점의 $p$ 로 나누어떨어짐 정도(Kolyvagin 지표)가 $\text{Ш}$ 의 $p$ 부분 위수를 제어한다.
 
 $$
-\mathrm{ord}_p\bigl|\text{Ш}(E/K)\bigr|\;\le\;2\,\mathrm{ord}_p\bigl[E(K):\mathbb Z y_K\bigr]
+\mathrm{ord}_p\bigl|\text{Ш}(E/K)\bigr|\thickspace\le\thickspace 2\thinspace\mathrm{ord}_p\bigl[E(K):\mathbb Z y_K\bigr]
 $$
 
 역방향 부등식이 Iwasawa 이론에서 나오면 등호가 되고, 그것이 순위 $1$ 에서의 강한 BSD 다. $\text{Ш}$ 의 위수를 손으로 세는 대신 **점 하나가 얼마나 나누어떨어지는지** 재는 것으로 문제가 바뀐다.
