@@ -8,7 +8,7 @@ $$
 \text{명제}=\text{타입},\qquad \text{증명}=\text{프로그램},\qquad \text{증명의 정규화}=\text{계산}
 $$
 
-$A \to B$ 의 증명은 $A$ 의 증명을 받아 $B$ 의 증명을 돌려주는 함수이고, $A \wedge B$ 의 증명은 두 증명의 순서쌍이다. [직관주의 논리](intuitionistic-logic.md)의 자연연역 규칙을 하나씩 적어 보면 [lambda calculus](lambda-calculus.md)의 타입 규칙과 글자 그대로 같다. 증명을 정리하는 절차(절단 제거)는 프로그램을 실행하는 절차($\beta$ -축약)와 같은 계산이다.
+$A \to B$ 의 증명은 $A$ 의 증명을 받아 $B$ 의 증명을 돌려주는 함수이고, $A \wedge B$ 의 증명은 두 증명의 순서쌍이다. [직관주의 논리](intuitionism.md)의 자연연역 규칙을 하나씩 적어 보면 [lambda calculus](lambda-calculus.md)의 타입 규칙과 글자 그대로 같다. 증명을 정리하는 절차(절단 제거)는 프로그램을 실행하는 절차($\beta$ -축약)와 같은 계산이다.
 
 이 대응이 성립하려면 증명이 "구성" 이어야 한다. 고전 논리처럼 배중률을 공짜로 쓰면 증명에서 프로그램을 뽑아낼 수 없다. 직관주의 논리를 선수지식으로 두는 이유가 여기에 있고, 이 대응이 증명 보조기와 의존 타입 언어의 설계 원리가 되는 이유이기도 하다.
 
@@ -127,7 +127,7 @@ Coq, Lean, Agda 는 이 대응을 그대로 구현한 시스템이다. 정리를
 ## 선수지식
 
 - [Lambda calculus](lambda-calculus.md)
-- [직관주의 논리](intuitionistic-logic.md)
+- [직관주의](intuitionism.md)
 
 ## 더 알아보기
 

@@ -22,13 +22,6 @@
 
 이유는 측도가 집합을 받는 함수이기 때문이다. 집합 자체는 함수를 따라 앞으로 갈 수 없다. $\varphi(A)$ 가 가측이라는 보장이 없기 때문이다. 반면 역상은 여집합과 가산 합집합을 그대로 보존하므로 측도의 구조가 온전히 옮겨진다. 그래서 대상은 앞으로 가고 정의는 뒤로 간다.
 
-```mermaid
-graph LR
-  X["표본공간 (X, Σ, μ)"] -->|"φ 가측"| Y["값 공간 (Y, T)"]
-  Y -->|"φ⁻¹"| X
-  Y -->|"φ_*μ(B) = μ(φ⁻¹(B))"| M["상측도 φ_*μ"]
-```
-
 # 정의
 
 ## 상측도
@@ -94,13 +87,11 @@ def inverse_transform(cdf_inv, n):
     """균등분포를 밀어 원하는 분포를 얻는다: (F^{-1})_* Uniform = 목표분포."""
     return [cdf_inv(random.random()) for _ in range(n)]
 
-
 import math
 # 지수분포 F(x) = 1 - e^{-x}, F^{-1}(u) = -ln(1-u)
 sample = inverse_transform(lambda u: -math.log(1 - u), 200000)
 print(sum(sample) / len(sample))            # 평균 ~ 1.0
 print(sum(1 for s in sample if s > 1) / len(sample), math.exp(-1))
-
 
 def pushforward_counts(base, phi):
     """유한 표본공간에서 상측도를 직접 계산한다."""
@@ -108,7 +99,6 @@ def pushforward_counts(base, phi):
     for x, p in base.items():
         out[phi(x)] = out.get(phi(x), 0) + p
     return out
-
 
 die = {i: 1 / 6 for i in range(1, 7)}
 print(pushforward_counts(die, lambda i: "홀" if i % 2 else "짝"))

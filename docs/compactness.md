@@ -24,13 +24,6 @@ $\mathbb R$ 에서 $U_n = (-n, n)$ 도 같은 일을 무한대 쪽에서 한다.
 
 거리 공간에서는 서로 다르게 생긴 조건 셋이 같아진다.
 
-```mermaid
-graph LR
-  A["열린덮개 컴팩트<br/>유한 부분덮개"] <--> B["점열 컴팩트<br/>수렴 부분수열"]
-  B <--> C["완비 + 전유계"]
-  A -.->|"일반 위상공간에서는<br/>동치가 아니다"| B
-```
-
 증명에서는 셋 중 가장 편한 것을 골라 쓴다. 존재를 끌어낼 때는 부분수열, 균등성을 얻을 때는 덮개, 구체적 공간을 판정할 때는 완비와 전유계를 쓰는 것이 보통이다. 거리 구조가 없는 일반 위상공간에서는 이 동치가 깨지므로 어느 정의를 쓰는지 명시해야 한다.
 
 # 정의
@@ -83,7 +76,6 @@ def needs_infinite_cover(intervals, target):
             return used, cur          # 여기서 막혔다
         cur, used = best, used + 1
     return used, None
-
 
 cover = [(1 / n, 1.0) for n in range(2, 200)]
 print(needs_infinite_cover(cover, (0.0, 1.0)))     # 0 을 덮는 구간이 없다

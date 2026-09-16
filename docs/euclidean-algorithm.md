@@ -162,7 +162,6 @@ RSA 의 개인키 지수는 $ed \equiv 1 \pmod{\varphi(n)}$ 을 푸는 것이므
 ## 선수지식
 
 - [정수의 합동과 나머지 연산](modular-arithmetic.md)
-- [명제와 증명](proofs.md)
 
 ## 더 알아보기
 
