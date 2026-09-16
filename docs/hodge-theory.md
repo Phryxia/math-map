@@ -48,7 +48,7 @@ $$
 
 $n$ 차원 공간에서 $k$ 형식을 지정하는 것은 $k$ 차원 방향을 고르는 것이고, 계량과 방향이 있으면 그 직교여공간인 $n-k$ 차원 방향이 따라온다. $\star$ 가 그 대응이다.
 
-$\star$ 가 조화형식을 조화형식으로 보내므로 $\mathcal H^k\cong\mathcal H^{n-k}$, 곧 $b_k=b_{n-k}$ 가 나온다. 위상적으로는 Poincaré 쌍대성이라 불리는 정리가 여기서는 선형대수 한 줄이다.
+$\star$ 가 조화형식을 조화형식으로 보내므로 $\mathcal H^k\cong\mathcal H^{n-k}$ 이고 곧 $b_k=b_{n-k}$ 가 나온다. 위상적으로는 Poincaré 쌍대성이라 불리는 정리가 여기서는 선형대수 한 줄이다.
 
 # 정의
 
@@ -96,7 +96,7 @@ $$
 \Delta=d\delta+\delta d:\Omega^k\to\Omega^k
 $$
 
-$\Delta\omega=0$ 인 형식을 조화형식이라 하고 그 공간을 $\mathcal H^k$ 로 쓴다. 함수($k=0$)에서는 $\delta=0$ 이므로 $\Delta f=\delta df$ 이고, 이것이 부호 규약을 빼면 Laplace–Beltrami 작용소다. 국소좌표로는
+$\Delta\omega=0$ 인 형식을 조화형식이라 하고 그 공간을 $\mathcal H^k$ 로 쓴다. 함수, 곧 $k=0$ 인 경우에는 $\delta=0$ 이므로 $\Delta f=\delta df$ 이고, 이것이 부호 규약을 빼면 Laplace–Beltrami 작용소다. 국소좌표로는
 
 $$
 \Delta f=-\frac1{\sqrt{|g|}}\partial_i\big(\sqrt{|g|}\,g^{ij}\partial_j f\big)
@@ -128,7 +128,7 @@ $$
 \Omega^k(M)=\mathcal H^k\ \oplus\ d\,\Omega^{k-1}\ \oplus\ \delta\,\Omega^{k+1}
 $$
 
-세 조각이 $L^2$ 내적에 대해 서로 직교하는 직합이다. 직교성은 계산으로 바로 나오고($\langle\!\langle d\alpha,\delta\beta\rangle\!\rangle=\langle\!\langle dd\alpha,\beta\rangle\!\rangle=0$), 어려운 부분은 이 셋이 전체를 덮는다는 것이다. 그 증명이 $\Delta$ 의 타원성과 Fredholm 이론이다.
+세 조각이 $L^2$ 내적에 대해 서로 직교하는 직합이다. 직교성은 $\langle\!\langle d\alpha,\delta\beta\rangle\!\rangle=\langle\!\langle dd\alpha,\beta\rangle\!\rangle=0$ 처럼 계산으로 바로 나오고, 어려운 부분은 이 셋이 전체를 덮는다는 것이다. 그 증명이 $\Delta$ 의 타원성과 Fredholm 이론이다.
 
 $\mathbb R^3$ 의 벡터장으로 번역하면 "임의의 벡터장은 조화 성분, 기울기 성분, 회전 성분의 합" 이라는 Helmholtz 분해다. 유체역학과 전자기학에서 오래 쓰이던 사실이 일반 다양체로 확장된 것이다.
 
@@ -144,7 +144,7 @@ $$
 
 ## Poincaré 쌍대성
 
-$\star$ 가 $\Delta$ 와 교환하므로($\star\Delta=\Delta\star$) $\star:\mathcal H^k\to\mathcal H^{n-k}$ 가 동형이다. 따라서
+$\star$ 가 $\Delta$ 와 교환하므로, 곧 $\star\Delta=\Delta\star$ 이므로 $\star:\mathcal H^k\to\mathcal H^{n-k}$ 가 동형이다. 따라서
 
 $$
 b_k=b_{n-k}
@@ -219,7 +219,7 @@ for name, K in [("S^1", circle), ("원판", disk), ("S^2", sphere)]:
 # S^2: dim ker Delta_k = [1, 0, 1]
 ```
 
-$S^1$ 은 구멍 하나라 $b_1=1$, 삼각형을 메운 원판은 $b_1=0$, 구는 $b_0=b_2=1$ 이고 $b_1=0$ 이다. $S^2$ 의 결과에서 $b_0=b_2$ 가 보이는데 이것이 Poincaré 쌍대성의 이산판이며, $\star$ 에 해당하는 것이 삼각분할의 쌍대 복합체다.
+$S^1$ 은 구멍 하나라 $b_1=1$ 이고, 삼각형을 메운 원판은 $b_1=0$ 이며, 구는 $b_0=b_2=1$ 이고 $b_1=0$ 이다. $S^2$ 의 결과에서 $b_0=b_2$ 가 보이는데 이것이 Poincaré 쌍대성의 이산판이며, $\star$ 에 해당하는 것이 삼각분할의 쌍대 복합체다.
 
 이산판에서는 타원 정칙성이 필요 없다. 유한차원이라 $\ker\Delta=\ker\partial^{\mathsf T}\cap\ker\partial$ 와 직교분해가 선형대수로 끝난다. 매끄러운 경우의 모든 어려움이 무한차원이라는 점 하나에서 온다는 것을 이 대비가 보여 준다.
 
