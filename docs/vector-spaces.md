@@ -94,17 +94,26 @@ $\dim V = n$ 인 실수 벡터 공간은 기저를 고르는 순간 $\mathbb R^n
 ## 선수지식
 
 - [함수](functions.md)
+- [선형대수 개관](linear-algebra-overview.md)
 
 ## 더 알아보기
 
+### 선형대수
+
 - [선형사상](linear-maps.md)
-- [논문: How Powerful are Graph Neural Networks?](gnn-expressivity.md)
-- [Matroid](matroids.md)
-- [볼록성](convexity.md)
-- [체의 확대](field-extensions.md)
 - [내적 공간](inner-product-spaces.md)
+
+### 대수 구조
+
 - [가군](modules.md)
+- [체의 확대](field-extensions.md)
+- [Matroid](matroids.md)
+
+### 해석과 응용
+
+- [볼록성](convexity.md)
 - [Banach 공간과 세 기본정리](banach-spaces.md)
 - [오류정정부호](error-correcting-codes.md)
+- [논문: How Powerful are Graph Neural Networks?](gnn-expressivity.md)
 
 #linear_algebra

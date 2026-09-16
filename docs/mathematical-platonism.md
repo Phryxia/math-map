@@ -98,6 +98,7 @@ $$
 
 - [집합](sets.md)
 - [명제와 증명](proofs.md)
+- [수학기초론 개관](foundations-overview.md)
 
 ## 더 알아보기
 

@@ -150,17 +150,26 @@ $$
 ## 선수지식
 
 - [함수](functions.md)
+- [추상대수 개관](abstract-algebra-overview.md)
 
 ## 더 알아보기
 
-- [수학적 구조주의](mathematical-structuralism.md)
-- [그래프 동형](graph-isomorphism.md)
+### 대수 구조
+
 - [군 작용](group-actions.md)
-- [범주](category.md)
 - [환](rings.md)
+- [범주](category.md)
+- [수학적 구조주의](mathematical-structuralism.md)
+
+### 정수론
+
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)
+- [이산로그와 Diffie–Hellman](discrete-logarithm.md)
+
+### 위상과 그래프
+
 - [기본군](fundamental-group.md)
 - [단체 호몰로지](homology.md)
-- [이산로그와 Diffie–Hellman](discrete-logarithm.md)
+- [그래프 동형](graph-isomorphism.md)
 
 #group_theory

@@ -100,15 +100,23 @@ $A$ 가 비어 있지 않을 때 $f$ 가 단사인 것은 $g \circ f = \mathrm{i
 
 ## 더 알아보기
 
-- [벡터 공간](vector-spaces.md)
-- [수열의 극한](limits.md)
-- [유한 확률 공간](probability.md)
-- [군](groups.md)
-- [거리 공간](metric-spaces.md)
-- [계산 가능성과 정지 문제](computability.md)
-- [범주](category.md)
+### 집합론과 계산
+
 - [가산성과 비가산성](cardinality.md)
 - [셈의 기본 원리](counting-principles.md)
+- [계산 가능성과 정지 문제](computability.md)
 - [Lambda calculus](lambda-calculus.md)
+
+### 대수 구조
+
+- [군](groups.md)
+- [벡터 공간](vector-spaces.md)
+- [범주](category.md)
+
+### 해석과 확률
+
+- [수열의 극한](limits.md)
+- [거리 공간](metric-spaces.md)
+- [유한 확률 공간](probability.md)
 
 #set_theory

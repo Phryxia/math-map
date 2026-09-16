@@ -124,13 +124,27 @@ $$
 
 ## 더 알아보기
 
+### 집합 위의 구조
+
 - [함수](functions.md)
 - [동치관계와 동치류](relations.md)
 - [그래프](graphs.md)
+
+### 세기와 논리
+
 - [셈의 기본 원리](counting-principles.md)
 - [1차 논리](first-order-logic.md)
-- [수학적 플라톤주의](mathematical-platonism.md)
-- [ZFC 공리계](zfc-axioms.md)
 - [Boolean algebra](boolean-algebras.md)
+- [ZFC 공리계](zfc-axioms.md)
+- [수학적 플라톤주의](mathematical-platonism.md)
+
+### 분야 개관
+
+- [수학기초론 개관](foundations-overview.md)
+- [조합론 개관](combinatorics-overview.md)
+- [선형대수 개관](linear-algebra-overview.md)
+- [추상대수 개관](abstract-algebra-overview.md)
+- [정수론 개관](number-theory-overview.md)
+- [위상수학 개관](topology-overview.md)
 
 #set_theory

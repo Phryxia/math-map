@@ -151,6 +151,7 @@ matroid 의 계수 함수가 열등모듈이라는 관찰에서 출발해, 열�
 
 - [그래프](graphs.md)
 - [벡터 공간](vector-spaces.md)
+- [조합론 개관](combinatorics-overview.md)
 
 ## 더 알아보기
 

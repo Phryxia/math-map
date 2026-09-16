@@ -171,16 +171,24 @@ $$
 
 ## 더 알아보기
 
-- [가설검정과 p-값](hypothesis-testing.md)
+### 극한 정리와 부등식
+
 - [큰 수의 법칙](law-of-large-numbers.md)
-- [Markov 연쇄](markov-chains.md)
-- [최대가능도 추정](maximum-likelihood.md)
-- [KL divergence와 상호정보량](kl-divergence.md)
-- [조건부 기댓값](conditional-expectation.md)
 - [집중부등식](concentration-inequalities.md)
 - [특성함수와 Lévy 연속성 정리](characteristic-functions.md)
-- [Bayes 추론과 사후분포](bayesian-inference.md)
-- [주성분 분석](principal-component-analysis.md)
+
+### 조건부 구조와 확률과정
+
+- [조건부 기댓값](conditional-expectation.md)
+- [Markov 연쇄](markov-chains.md)
 - [결정점과정](determinantal-point-process.md)
+
+### 정보와 통계
+
+- [KL divergence와 상호정보량](kl-divergence.md)
+- [최대가능도 추정](maximum-likelihood.md)
+- [Bayes 추론과 사후분포](bayesian-inference.md)
+- [가설검정과 p-값](hypothesis-testing.md)
+- [주성분 분석](principal-component-analysis.md)
 
 #probability

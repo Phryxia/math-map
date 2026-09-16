@@ -1,0 +1,88 @@
+# 선형대수 개관
+
+# 개요
+
+선형대수는 벡터 공간과 선형사상을 다룬다. 물음은 "선형사상 하나를 어디까지 단순하게 볼 수 있는가" 로 모인다. 행렬식은 부피 배율을, 고윳값은 불변 방향을, 스펙트럼 정리와 특이값 분해는 사상을 회전·늘림·회전으로 쪼갠다. 이 도구가 워낙 보편적이어서 지도의 선형대수 문서는 순수한 것보다 응용이 많다. 그래프의 스펙트럼, 통계의 주성분, 무한차원 작용소, 랜덤 행렬, 격자와 부호, 그리고 표현론이 모두 여기서 갈라진다.
+
+시작점은 [벡터 공간](vector-spaces.md)과 [선형사상](linear-maps.md)이다. [행렬식](determinants.md)과 [고윳값](eigenvalues.md)을 거쳐 [내적 공간](inner-product-spaces.md) 위의 [스펙트럼 정리](spectral-theorem.md)까지가 기초이고, 그 뒤는 관심사에 따라 고른다.
+
+# 지도
+
+```mermaid
+graph TD
+  VS["벡터 공간"] --> LM["선형사상"] --> DT["행렬식"] --> EV["고윳값"]
+  VS --> IP["내적 공간"] --> ST["스펙트럼 정리"] --> SVD["특이값 분해"] --> PCA["주성분 분석"]
+  EV --> ST
+  LM --> GL["그래프 Laplacian"] --> EX["Expander 그래프"]
+  EV --> EX
+  EV --> WS["Wigner 반원법칙"] --> TW["Tracy–Widom 분포"]
+  IP --> HS["Hilbert 공간"] --> BO["유계 작용소"] --> FO["Fredholm 작용소"]
+  DT --> LT["격자"]
+  IP --> LT
+  LM --> TP["텐서곱"]
+  LM --> LA["Lie 대수"] --> RS["근계"]
+  EV --> GR["군의 표현"]
+```
+
+# 갈래
+
+## 기초
+
+- [벡터 공간](vector-spaces.md) → [선형사상](linear-maps.md): 기저, 차원, 행렬 표현
+- [행렬식](determinants.md) → [고윳값과 고유벡터](eigenvalues.md): 부피와 불변 방향
+- [내적 공간](inner-product-spaces.md) → [스펙트럼 정리](spectral-theorem.md) → [특이값 분해](singular-value-decomposition.md)
+- [텐서곱](tensor-products.md): 다중선형을 선형으로
+
+## 통계와 데이터
+
+- [주성분 분석](principal-component-analysis.md) → [확률적 PCA](probabilistic-pca.md), [커널 PCA](kernel-pca.md)
+- [선형회귀와 최소제곱법](linear-regression.md): 사영으로 푸는 추정
+- [이산 Fourier 변환](fourier.md): 순환 구조의 대각화
+
+## 그래프의 스펙트럼
+
+- [그래프 Laplacian](graph-laplacian.md) → [유효저항](effective-resistance.md) → [논문: Graph Sparsification by Effective Resistances](spectral-sparsification.md)
+- [Expander 그래프와 스펙트럼 간극](expander-graphs.md): 두 번째 고윳값이 연결성을 잰다
+
+## 무한차원
+
+- [Hilbert 공간](hilbert-spaces.md) → [유계 작용소와 스펙트럼](bounded-operators.md) → [Fredholm 작용소와 지표](fredholm-operators.md) → [Fredholm 행렬식](fredholm-determinant.md)
+- [비유계 작용소](unbounded-operators.md): 미분 작용소의 자기수반성
+
+## 랜덤 행렬
+
+- [Wigner 반원법칙](wigner-semicircle.md) → [Marchenko–Pastur 법칙](marchenko-pastur.md), [Tracy–Widom 분포](tracy-widom.md)
+- [결정점과정](determinantal-point-process.md): 고윳값의 반발을 행렬식으로
+
+## 격자와 부호
+
+- [격자와 최단벡터 문제](lattices.md) → [격자 기반 후양자 암호](post-quantum-cryptography.md)
+- [오류정정부호](error-correcting-codes.md): 유한체 위의 선형 부분공간
+- [질량 공식](mass-formula.md) → [Niemeier 격자](niemeier-lattices.md)
+
+## 표현론으로
+
+- [군의 표현과 지표](group-representations.md): 군을 행렬로
+- [Lie 대수](lie-algebras.md) → [근계와 Weyl 군](root-systems.md), [Lie 군과 지수사상](lie-groups.md)
+- [Schur–Weyl 쌍대성](schur-weyl-duality.md), [Schur 다항식](schur-polynomials.md): 텐서 거듭제곱의 분해
+- [Hecke 작용소](hecke-operators.md), [Sen 이론](sen-theory.md), [Reidemeister 비틀림](reidemeister-torsion.md): 다른 분야가 선형대수를 쓰는 자리
+
+# 빈자리
+
+- Jordan 표준형: 대각화가 안 될 때의 표준형. 고윳값 문서가 전제한다.
+- 쌍대 공간과 쌍선형 형식: 내적 공간 앞에 있어야 할 문서다.
+- 행렬 분해와 수치 선형대수(LU, QR, Cholesky, 조건수): 응용 문서들이 전제한다.
+- Perron–Frobenius 정리: Markov 연쇄와 expander 가 함께 쓴다.
+- 외대수와 다중선형대수: [미분형식](differential-forms.md)이 전제하는데 텐서곱 문서에 반쪽만 있다.
+
+# 연관 문서
+
+## 선수지식
+
+- [집합](sets.md)
+
+## 더 알아보기
+
+- [벡터 공간](vector-spaces.md)
+
+#linear_algebra #overview

@@ -162,6 +162,7 @@ Dedekind 정역의 성질이 모든 국소화에서의 성질로 환원된다는
 
 - [소 아이디얼과 극대 아이디얼](prime-ideals.md)
 - [환의 국소화](localization-rings.md)
+- [정수론 개관](number-theory-overview.md)
 
 ## 더 알아보기
 

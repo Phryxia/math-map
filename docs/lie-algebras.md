@@ -204,6 +204,7 @@ Lie 가 애초에 이 이론을 만든 동기다. 대수방정식의 대칭을 [
 
 - [선형사상](linear-maps.md)
 - [다양체](manifolds.md)
+- [추상대수 개관](abstract-algebra-overview.md)
 
 ## 더 알아보기
 

@@ -101,8 +101,8 @@ Lebesgue 측도 외에도 목적에 따라 다른 측도를 쓴다. Hausdorff �
 
 ## 더 알아보기
 
-- [Lebesgue 적분](lebesgue-integral.md)
 - [가측함수](measurable-functions.md)
+- [Lebesgue 적분](lebesgue-integral.md)
 - [상측도와 확률분포](pushforward-measure.md)
 - [Radon–Nikodym 정리](radon-nikodym.md)
 

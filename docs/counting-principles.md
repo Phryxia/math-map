@@ -173,6 +173,7 @@ assert all(binom(n, k) == comb(n, k) for n in range(40) for k in range(-1, n + 2
 
 - [집합](sets.md)
 - [함수](functions.md)
+- [조합론 개관](combinatorics-overview.md)
 
 ## 더 알아보기
 

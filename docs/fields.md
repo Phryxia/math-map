@@ -130,7 +130,7 @@ $$
 
 ## 더 알아보기
 
-- [체의 확대](field-extensions.md)
 - [다항식환](polynomial-rings.md)
+- [체의 확대](field-extensions.md)
 
 #field_theory #algebra

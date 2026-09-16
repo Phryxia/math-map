@@ -201,7 +201,7 @@ assert [partitions(n) for n in range(10)] == [1, 1, 2, 3, 5, 7, 11, 15, 22, 30]
 
 ## 더 알아보기
 
-- [분할수와 원법](partitions.md)
 - [Laplace 방법과 안장점](laplace-method.md)
+- [분할수와 원법](partitions.md)
 
 #combinatorics

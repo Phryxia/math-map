@@ -166,11 +166,12 @@ def   omega    := least inductive set
 
 - [집합](sets.md)
 - [1차 논리](first-order-logic.md)
+- [수학기초론 개관](foundations-overview.md)
 
 ## 더 알아보기
 
-- [선택공리와 Zorn 보조정리](axiom-of-choice.md)
 - [서수와 초한귀납법](ordinals.md)
+- [선택공리와 Zorn 보조정리](axiom-of-choice.md)
 - [구조적 집합론과 동형 불변성](structural-set-theory.md)
 - [연속체 가설과 독립성](continuum-hypothesis.md)
 

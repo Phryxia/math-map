@@ -104,6 +104,7 @@ $n^2$ 이 홀수이면 $n$ 도 홀수임을 보이자. 대우를 취해 $n = 2k$
 
 ### 논리와 기초
 
+- [수학기초론 개관](foundations-overview.md)
 - [1차 논리](first-order-logic.md)
 - [직관주의](intuitionism.md)
 - [수학적 플라톤주의](mathematical-platonism.md)

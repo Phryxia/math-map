@@ -169,7 +169,7 @@ print(f"알려진 값                            = 2.0298832128")
 
 ## 더 알아보기
 
-- [볼륨 추측과 색 Jones 다항식](volume-conjecture.md)
 - [쌍곡 3 다양체와 Mostow 강직성](hyperbolic-3-manifolds.md)
+- [볼륨 추측과 색 Jones 다항식](volume-conjecture.md)
 
 #analysis #differential_geometry #topology #computation

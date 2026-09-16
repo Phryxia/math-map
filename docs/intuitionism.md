@@ -203,6 +203,7 @@ Bishop 의 구성적 해석학은 Brouwer 의 선택수열과 연속성 원리�
 ## 선수지식
 
 - [명제와 증명](proofs.md)
+- [수학기초론 개관](foundations-overview.md)
 
 ## 더 알아보기
 

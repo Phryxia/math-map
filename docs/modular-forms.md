@@ -238,6 +238,7 @@ Ramanujan 의 합동 $p(5n+4)\equiv0\pmod5$ 와 $p(7n+5)\equiv0\pmod7$ 과 $p(11
 
 - [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
 - [군 작용](group-actions.md)
+- [정수론 개관](number-theory-overview.md)
 
 ## 더 알아보기
 

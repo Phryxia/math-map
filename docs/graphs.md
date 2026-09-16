@@ -93,17 +93,25 @@ $$
 
 ## 더 알아보기
 
+### 구조와 알고리즘
+
 - [DAG와 위상정렬](dag-topological.md)
-- [그래프 동형](graph-isomorphism.md)
-- [그래프 Laplacian](graph-laplacian.md)
-- [Matroid](matroids.md)
 - [서로소 집합 자료구조](union-find.md)
 - [동적 연결성](dynamic-connectivity.md)
-- [Euler 지표](euler-characteristic.md)
-- [Ramsey 이론](ramsey-theory.md)
+- [네트워크 흐름과 최대유량 최소절단 정리](network-flow.md)
+
+### 색칠, 매칭, 극단
+
 - [그래프 색칠](graph-coloring.md)
 - [매칭과 Hall 정리](matchings.md)
-- [네트워크 흐름과 최대유량 최소절단 정리](network-flow.md)
+- [Ramsey 이론](ramsey-theory.md)
+- [Matroid](matroids.md)
+
+### 대수와 위상
+
+- [그래프 동형](graph-isomorphism.md)
+- [그래프 Laplacian](graph-laplacian.md)
+- [Euler 지표](euler-characteristic.md)
 - [평면 그래프](planar-graphs.md)
 
 #graph_theory

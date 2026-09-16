@@ -98,15 +98,23 @@ $$
 
 ## 더 알아보기
 
-- [그래프 Laplacian](graph-laplacian.md)
-- [이산 Fourier 변환](fourier.md)
-- [미분](derivative.md)
-- [Functor](functors.md)
+### 행렬의 불변량
+
 - [행렬식](determinants.md)
 - [고윳값과 고유벡터](eigenvalues.md)
-- [Lie 대수](lie-algebras.md)
-- [선형계획법](linear-programming.md)
+
+### 선형성이 나타나는 곳
+
+- [미분](derivative.md)
+- [이산 Fourier 변환](fourier.md)
 - [Markov 연쇄](markov-chains.md)
+- [그래프 Laplacian](graph-laplacian.md)
+- [선형계획법](linear-programming.md)
+
+### 구조로 확장
+
 - [텐서곱](tensor-products.md)
+- [Lie 대수](lie-algebras.md)
+- [Functor](functors.md)
 
 #linear_algebra
