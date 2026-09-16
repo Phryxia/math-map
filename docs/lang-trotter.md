@@ -8,7 +8,7 @@ $$
 a_p=r\qquad(r\ \text{고정})
 $$
 
-를 갖는 소수의 **밀도는 $0$** 이다. Sato–Tate 는 여기서 말을 멈춘다. 밀도가 $0$ 이라는 것은 개수가 $\pi(X)$ 보다 작게 자란다는 뜻일 뿐, 유한한지 무한한지조차 말해 주지 않는다.
+를 갖는 소수의 **밀도가 $0$ 이다**. Sato–Tate 는 여기서 말을 멈춘다. 밀도가 $0$ 이라는 것은 개수가 $\pi(X)$ 보다 작게 자란다는 뜻일 뿐, 유한한지 무한한지조차 말해 주지 않는다.
 
 Lang 과 Trotter 는 1976 년에 그 빈자리를 채우는 추측을 냈다.
 
@@ -131,7 +131,7 @@ $$
 
 같은 $\sqrt X/\log X$ 꼴이 여러 곳에 나타난다.
 
-- **고정된 자취.** 위의 $a_p=r$.
+- **고정된 자취.** 위의 $a_p=r$ 인 경우다.
 - **Koblitz 추측.** $\#E(\mathbb F_p)$ 가 소수인 $p$ 의 개수가 $\asymp X/(\log X)^2$ 라는 추측. 이쪽은 $X/(\log X)^2$ 라 층위가 다르다. 암호에서 좋은 곡선을 찾는 비용을 예측한다.
 - **고정된 환원 유형.** $\mathrm{End}(E\bmod p)$ 가 주어진 차수가 되는 소수의 개수. 역시 $\sqrt X/\log X$ 다.
 
@@ -252,7 +252,7 @@ print(f"  점 a_p = 0        : {len(ss)}/{len(good)} = {len(ss)/len(good):.5f}")
 - **암호에서의 곡선 선택.** 초특이 곡선은 MOV 공격으로 [이산로그](discrete-logarithm.md)가 유한체 이산로그로 환원되므로 배제해야 한다. 무작위 곡선이 초특이일 확률이 $\asymp1/\sqrt p$ 라는 것이 위 계산의 실무적 의미다. 사실상 걱정할 일이 없다는 뜻이고, 그래도 검사는 한다.
 - **초특이 동종사상 암호.** 반대로 초특이 곡선만 모아 그 사이의 동종사상 그래프를 쓰는 암호 계열(SIDH/SIKE 및 그 후속)이 있다. 초특이 $j$ 불변량이 $\mathbb F_{p^2}$ 에 $\approx p/12$ 개라는 사실이 설계의 근거다.
 - **수치 실험의 표준 대상.** Lang–Trotter 상수의 수치 검증은 대량의 $a_p$ 표를 요구하고, 그 표를 [SEA](sea-algorithm.md) 알고리즘이 만든다. 추측을 정밀하게 검증하려면 $X$ 를 $10^{10}$ 이상으로 올려야 한다.
-- **일반화.** 아벨 다양체, 모듈러 형식의 $a_p$, 수체 위의 곡선으로 같은 꼴의 추측이 확장되어 있고 대부분 열려 있다.
+- **일반화.** 아벨 다양체와 모듈러 형식의 $a_p$ 와 수체 위의 곡선으로 같은 꼴의 추측이 확장되어 있고 대부분 열려 있다.
 
 [^1]: S. Lang, H. Trotter, *Frobenius Distributions in GL₂-Extensions*, Lecture Notes in Math. 504 (1976). 초특이 소수의 무한성은 N. Elkies, *The existence of infinitely many supersingular primes for every elliptic curve over Q*, Invent. Math. **89** (1987), 561–567. 상계는 E. Fouvry, M. R. Murty 및 V. K. Murty 의 일련의 논문, 요약은 A. Cojocaru, *Questions about the reductions modulo primes of an elliptic curve*, in *Number Theory* (CRM Proc. 36, 2004). 초특이 동종사상 그래프는 D. Jao, L. De Feo, PQCrypto 2011. 본문의 수치 계산은 직접 한 것이다.
 
