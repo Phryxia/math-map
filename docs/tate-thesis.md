@@ -2,9 +2,9 @@
 
 # 개요
 
-Riemann 은 $\zeta(s)$ 의 함수방정식을 theta 함수 $\theta(t)=\sum_ne^{-\pi n^2t}$ 의 변환식 $\theta(1/t)=\sqrt t\thinspace\theta(t)$ 에서 끌어냈다. Hecke 는 같은 방법을 [수체](algebraic-number-fields.md) $K$ 위로 밀어붙여 $\zeta_K(s)$ 와 Hecke $L$ 함수까지 처리했지만, 그 계산은 수체마다 격자와 단원군을 손으로 다루는 고된 작업이었다. 감마 인자가 왜 그 모양인지, 판별식 $\sqrt{|d_K|}$ 가 왜 거기 끼어드는지는 계산이 끝난 뒤에야 알 수 있었다.
+Riemann 은 $\zeta(s)$ 의 함수방정식을 theta 함수 $\theta(t)=\sum_ne^{-\pi n^2t}$ 의 변환식 $\theta(1/t)=\sqrt t\thinspace\theta(t)$ 에서 끌어냈다. Hecke 는 같은 방법을 [수체](algebraic-number-fields.md) $K$ 위로 옮겨 $\zeta_K(s)$ 와 Hecke $L$ 함수까지 처리했지만, 그 계산은 수체마다 격자와 단원군을 손으로 다루는 작업이었고 감마 인자의 모양과 판별식 $\sqrt{|d_K|}$ 의 출처는 계산이 끝난 뒤에야 드러났다.
 
-Tate 의 학위논문[^1]은 무대를 바꾼다. 계산을 [아델](adeles.md) 위로 옮기면 theta 변환식이 Poisson 합공식의 특수한 경우가 되고, $\zeta_K(s)$ 는 이델군 위의 적분 하나가 된다.
+Tate 의 학위논문[^1]은 계산을 [아델](adeles.md) 위로 옮긴다. theta 변환식이 Poisson 합공식의 특수한 경우가 되고 $\zeta_K(s)$ 가 이델군 위의 적분 하나가 된다.
 
 $$
 Z(f,\chi,s)=\int_{\mathbb A_K^\times}f(x)\thinspace\chi(x)\thinspace|x|_{\mathbb A}^{s}\thickspace d^\times x
@@ -16,9 +16,9 @@ $$
 
 # 직관
 
-## 감마 인자는 무한 자리의 Euler 인자다
+## 감마 인자와 Euler 인자
 
-고전적 서술에서 $\zeta(s)$ 의 Euler 곱과 완비화에 붙는 $\pi^{-s/2}\Gamma(s/2)$ 는 출신이 다른 물건처럼 보인다. 하나는 소수에서 오고 하나는 해석에서 온다. 아델로 올라가면 둘이 같은 식의 값이 된다.
+고전적 서술에서 $\zeta(s)$ 의 Euler 곱은 소수에서 오고 완비화에 붙는 $\pi^{-s/2}\Gamma(s/2)$ 는 해석에서 온다. 아델로 올라가면 둘이 같은 식의 값이다.
 
 각 자리 $v$ 에서 국소 zeta 적분을 같은 모양으로 정의한다.
 
@@ -33,11 +33,11 @@ Z_p(\mathbf 1_{\mathbb Z_p},s)=\sum_{n\ge0}p^{-ns}=\frac1{1-p^{-s}},\qquad
 Z_\infty(e^{-\pi x^2},s)=2\int_0^\infty e^{-\pi x^2}x^{s}\frac{dx}{x}=\pi^{-s/2}\Gamma(s/2)
 $$
 
-왼쪽은 Euler 인자, 오른쪽은 감마 인자다. 완비 zeta 함수 $\Lambda(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 가 $\zeta(s)$ 보다 대칭적인 이유가 이것으로 설명된다. $\zeta(s)$ 는 자리를 하나 빼먹은 곱이고, $\Lambda(s)$ 가 비로소 모든 자리에 걸친 곱이다.
+왼쪽은 Euler 인자, 오른쪽은 감마 인자다. $\zeta(s)$ 는 자리를 하나 빼먹은 곱이고 $\Lambda(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 가 모든 자리에 걸친 곱이므로, 완비 zeta 함수 쪽이 대칭적이다.
 
 ## Mellin 변환의 정체
 
-$\int_0^\infty f(t)t^s\thinspace dt/t$ 라는 Mellin 변환은 해석학에서 기교처럼 쓰이지만, 군론으로 보면 정체가 분명하다. $dt/t$ 는 곱군 $\mathbb R_{>0}$ 의 Haar 측도이고 $t\mapsto t^s$ 는 그 군의 준지표다. 곧 Mellin 변환은 $\mathbb R_{>0}$ 위의 Fourier 변환이다.
+Mellin 변환 $\int_0^\infty f(t)t^s\thinspace dt/t$ 에서 $dt/t$ 는 곱군 $\mathbb R_{>0}$ 의 Haar 측도이고 $t\mapsto t^s$ 는 그 군의 준지표다. Mellin 변환은 $\mathbb R_{>0}$ 위의 Fourier 변환이다.
 
 Tate 의 zeta 적분은 이 관찰을 이델류군으로 일반화한 것이다. $\mathbb R_{>0}$ 자리에 $K^\times\backslash\mathbb A_K^\times$ 를 놓고, $t^s$ 자리에 Hecke 지표 $\chi\cdot|\cdot|^s$ 를 놓는다. Dirichlet 지표로 잘게 쪼개던 작업과 Mellin 변환이 하나의 조화해석으로 합쳐진다.
 
@@ -57,7 +57,7 @@ graph TD
   S --> X
 ```
 
-$K=\mathbb Q$ 이고 $f$ 가 Gauss 함수이면 Poisson 합공식이 정확히 theta 변환식이 된다. Riemann 의 증명은 이 그림의 한 점이었던 셈이다.
+$K=\mathbb Q$ 이고 $f$ 가 Gauss 함수이면 Poisson 합공식이 theta 변환식이 되고, Riemann 의 증명이 이 그림의 한 점이다.
 
 # 정의
 
@@ -171,7 +171,7 @@ Dirichlet 의 유수 공식이 "노름 1 이델류군의 부피" 한 줄로 정�
 
 # 활용
 
-## 무엇이 달라졌는가
+## 고전적 방법과의 대조
 
 고전적 증명과 비교하면 이득이 분명하다.
 
@@ -184,7 +184,7 @@ Dirichlet 의 유수 공식이 "노름 1 이델류군의 부피" 한 줄로 정�
 | Hecke 지표 | 법과 무한 성분의 조건 | 이델류군의 지표 하나 |
 | 적용 범위 | 수체마다 다시 계산 | 함수체까지 같은 증명 |
 
-마지막 줄이 특히 중요하다. $\mathbb F_q(T)$ 같은 함수체에서도 아델과 이델이 그대로 정의되고, Riemann–Roch 항등식이 곡선의 Riemann–Roch 정리 자체가 된다. 증명 한 편이 두 세계를 덮는다. [Riemann–Roch 정리](riemann-roch.md)와 Poisson 합공식의 이 대응이 항등식 이름의 유래다.
+$\mathbb F_q(T)$ 같은 함수체에서도 아델과 이델이 그대로 정의되고 Riemann–Roch 항등식이 곡선의 [Riemann–Roch 정리](riemann-roch.md)가 되므로, 증명 한 편이 두 세계를 덮는다. 이 대응이 항등식 이름의 유래다.
 
 ## 이후의 발전
 
@@ -194,9 +194,9 @@ $$
 Z(f,\pi,s)=\int_{\mathrm{GL}_n(\mathbb A)}f(g)\thinspace\langle\pi(g)v,\tilde v\rangle\thinspace|\det g|^{s+\frac{n-1}2}\thinspace dg
 $$
 
-가 되고, 같은 논법이 $L(s,\pi)$ 의 해석적 접속과 함수방정식을 준다. $n=1$ 이 Tate 의 논문이다. [Langlands 강령](langlands-program.md)이 "$L$ 함수를 급수가 아니라 군 위의 적분으로 정의한다" 는 전략을 쓰는 것은 이 계보 때문이다. Galois 쪽에서 보이지 않던 해석적 성질이 자기동형 쪽에서 거저 나오는 이유가, 자기동형 쪽에는 Poisson 합공식이 있기 때문이다.
+가 되고, 같은 논법이 $L(s,\pi)$ 의 해석적 접속과 함수방정식을 준다. $n=1$ 이 Tate 의 논문이다. [Langlands 강령](langlands-program.md)이 $L$ 함수를 급수가 아니라 군 위의 적분으로 정의하는 전략을 쓰는 것이 이 계보에서 나왔다. 자기동형 쪽에는 Poisson 합공식이 있으므로, Galois 쪽에서 보이지 않던 해석적 성질이 그쪽에서 나온다.
 
-[^1]: John Tate, *Fourier Analysis in Number Fields and Hecke's Zeta-Functions*, 1950년 Princeton 학위논문. Cassels–Fröhlich, *Algebraic Number Theory* (1967) 15장에 수록. 국소 계산은 2절, Riemann–Roch 항등식과 대역 정리는 4.2절이다. 본문의 수치 확인은 직접 계산한 것이다.
+[^1]: John Tate, *Fourier Analysis in Number Fields and Hecke's Zeta-Functions*, 1950년 Princeton 학위논문. Cassels–Fröhlich, *Algebraic Number Theory* (1967) 15장에 수록. 국소 계산은 2절, Riemann–Roch 항등식과 대역 정리는 4.2절이다.
 
 # 연관 문서
 

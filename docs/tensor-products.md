@@ -2,13 +2,13 @@
 
 # 개요
 
-텐서곱은 두 [가군](modules.md) $M$ 과 $N$ 에서 새 가군 $M \otimes_R N$ 을 만드는 구성으로, "쌍선형 사상을 선형 사상으로 바꿔 주는 가장 경제적인 장치" 로 정의된다. 두 변수에 각각 선형인 사상은 다루기 번거롭지만, 텐서곱을 거치면 한 변수 [선형사상](linear-maps.md)으로 환원되어 선형대수의 모든 도구를 다시 쓸 수 있다.
+텐서곱은 두 [가군](modules.md) $M$ 과 $N$ 에서 새 가군 $M \otimes_R N$ 을 만드는 구성이며, 쌍선형 사상을 선형 사상으로 바꾸는 가장 경제적인 장치로 정의된다. 두 변수에 각각 선형인 사상이 텐서곱을 거치면 한 변수 [선형사상](linear-maps.md)이 되어 선형대수의 도구가 그대로 적용된다.
 
-정의는 보편성질로 하고, 존재는 자유가군을 관계로 나누어 얻는다. 유한차원 벡터 공간에서는 기저의 곱으로 계산되고 차원이 곱해지며, 행렬 수준에서는 Kronecker product가 된다. 일반 환 위에서는 사정이 더 흥미로워서, 텐서곱은 우완전이지만 좌완전은 아니다. 이 실패가 torsion을 감지하고 Tor functor를 낳는다.
+정의는 보편성질로 하고 존재는 자유가군을 관계로 나누어 얻는다. 유한차원 벡터 공간에서는 기저의 곱으로 계산되어 차원이 곱해지고, 행렬 수준에서는 Kronecker product 가 된다. 일반 환 위에서 텐서곱은 우완전이지만 좌완전은 아니며, 이 실패가 torsion 을 감지하고 Tor functor 를 낳는다.
 
 # 직관
 
-## 쌍선형성을 선형화한다
+## 쌍선형 사상의 선형화
 
 행렬식, 내적, 다항식의 곱, 확률에서의 독립 결합은 모두 두 변수에 각각 선형인 사상이다. 이런 사상 $\beta : M \times N \to P$ 는 곱집합 $M \times N$ 위에서 정의되지만, $M \times N$ 은 가군으로서 직합 $M \oplus N$ 이고 $\beta$ 는 그 위의 선형사상이 아니다. 예컨대 $\beta(2m, 2n) = 4\beta(m, n)$ 이므로 스칼라가 두 번 곱해진다.
 
@@ -22,17 +22,17 @@ $$
 (m + m') \otimes n = m \otimes n + m' \otimes n, \qquad r(m \otimes n) = (rm) \otimes n = m \otimes (rn)
 $$
 
-주의할 점 두 가지가 있다. 첫째, 일반 원소는 단순텐서가 아니다. 둘째, 표현이 유일하지 않다. $2 \otimes 3$ 과 $6 \otimes 1$ 은 $\mathbb Z \otimes_{\mathbb Z} \mathbb Z$ 에서 같은 원소다.
+일반 원소는 단순텐서가 아니고, 표현도 유일하지 않다. $2 \otimes 3$ 과 $6 \otimes 1$ 은 $\mathbb Z \otimes_{\mathbb Z} \mathbb Z$ 에서 같은 원소다.
 
 ## 스칼라가 소멸시키는 예
 
-가장 인상적인 계산은 다음이다.
+다음 계산이 스칼라환의 영향을 보여 준다.
 
 $$
 \mathbb{Z}/2\mathbb{Z} \otimes_{\mathbb{Z}} \mathbb{Z}/3\mathbb{Z} = 0
 $$
 
-$\mathbb Z/2\mathbb Z$ 에서는 $3x = x$ 이므로 임의의 단순텐서에 대해 $x \otimes y = 3x \otimes y = x \otimes 3y$ 인데, $\mathbb Z/3\mathbb Z$ 에서는 $3y = 0$ 이므로 이 값이 $0$ 이다. 두 가군 모두 $0$ 이 아닌데 텐서곱은 사라진다. 벡터 공간에서는 결코 일어나지 않는 현상이고, 스칼라환의 산술이 텐서곱에 직접 반영된다는 신호다.
+$\mathbb Z/2\mathbb Z$ 에서는 $3x = x$ 이므로 임의의 단순텐서에 대해 $x \otimes y = 3x \otimes y = x \otimes 3y$ 인데, $\mathbb Z/3\mathbb Z$ 에서는 $3y = 0$ 이라 이 값이 $0$ 이다. 두 가군이 모두 $0$ 이 아닌데 텐서곱이 사라지며, 벡터 공간에서는 일어나지 않는 현상이다.
 
 # 정의
 
@@ -109,7 +109,7 @@ $$
 R \otimes_R M \cong M, \qquad \Big(\bigoplus_{i} M_i\Big) \otimes_R N \cong \bigoplus_{i} (M_i \otimes_R N)
 $$
 
-마지막 줄, 즉 직합과의 교환은 텐서곱이 left adjoint라는 사실의 그림자다.
+직합과의 교환은 텐서곱이 left adjoint 라는 데서 나온다.
 
 # 성질
 
@@ -121,13 +121,13 @@ $$
 \operatorname{Hom}_R(M \otimes_R N, P) \thickspace\cong\thickspace \operatorname{Hom}_R\big(M, \operatorname{Hom}_R(N, P)\big)
 $$
 
-좌변의 사상은 $M \times N$ 위의 쌍선형 사상과 같고, 우변은 "$m$ 을 넣으면 $N \to P$ 사상이 나오는" 사상이다. 둘 다 결국 같은 데이터를 가리킨다. 범주론의 언어로는
+좌변의 사상은 $M \times N$ 위의 쌍선형 사상과 같고, 우변은 $m$ 을 넣으면 $N \to P$ 사상이 나오는 사상이다. 두 쪽이 같은 자료를 가리킨다. 범주론의 언어로는
 
 $$
 {-} \otimes_R N \thickspace\dashv\thickspace \operatorname{Hom}_R(N, -)
 $$
 
-이며, 자세한 틀은 [Adjunction](adjunctions.md)에 있다. 집합에서의 curry와 uncurry가 그대로 대수 버전으로 옮겨온 것이다.
+이며, 자세한 틀은 [Adjunction](adjunctions.md)에 있다. 집합에서의 curry 와 uncurry 의 대수판이다.
 
 ## 우완전성
 
@@ -173,9 +173,9 @@ $$
 
 구체적인 예가 실수 벡터 공간의 복소화 $\mathbb C \otimes_{\mathbb R} V$ 다. 실수 $n$ 차원 공간은 복소 $n$ 차원 공간이 되고, 실행렬은 같은 성분의 복소행렬이 된다. 실수 위에서는 [고윳값](eigenvalues.md)이 없던 회전행렬이 복소화 후 대각화되는 일이 여기서 일어난다. 국소화 $S^{-1}R \otimes_R M$ 도 같은 형태이며 [국소화](localization-rings.md)에서 다룬다.
 
-## 체 위에서 무너지는 미묘함
+## 체 위에서의 단순화
 
-체 위 벡터 공간은 모두 자유이므로 텐서곱은 완전 functor이고, 차원 공식 하나로 모든 것이 끝난다. 위에서 본 소멸이나 Tor는 전부 $R$ 이 체가 아니어서 생기는 현상이다. 즉 텐서곱의 난이도는 계수환의 난이도와 정확히 같다.
+체 위 벡터 공간은 모두 자유이므로 텐서곱이 완전 functor 이고 차원 공식으로 계산이 끝난다. 위에서 본 소멸과 Tor 는 $R$ 이 체가 아닐 때 생기는 현상이며, 텐서곱의 난이도는 계수환의 난이도와 같다.
 
 # 활용
 
@@ -225,7 +225,7 @@ x = np.array([1, 0, 0, 1])            # (1,1) 성분과 (2,2) 성분만 있는 �
 print(np.linalg.matrix_rank(x.reshape(2, 2)))   # 2 이므로 단순텐서가 아니다
 ```
 
-마지막 세 줄이 실용적이다. $V \otimes W$ 의 원소를 행렬로 펼쳤을 때 랭크가 $1$ 인 것이 정확히 단순텐서이고, 양자정보에서 얽힘 여부를 판정하는 기준도 이것이다.
+$V \otimes W$ 의 원소를 행렬로 펼쳤을 때 랭크가 $1$ 인 것이 단순텐서이고, 양자정보에서 얽힘 여부를 판정하는 기준도 이것이다.
 
 ## 다중선형대수
 

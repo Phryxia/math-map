@@ -2,9 +2,9 @@
 
 # 개요
 
-포함배제 원리는 겹치는 집합들의 합집합 크기를 각 부분교집합의 크기로부터 계산하는 공식이다. 덧셈 원리는 서로소일 때만 쓸 수 있는데, 겹침을 한 번 빼면 두 번 겹친 부분이 지워지고, 다시 더하면 세 번 겹친 부분이 과다 계산되는 진동이 일어난다. 포함배제는 이 진동을 부호 교대 합으로 정확히 상쇄시킨다.
+포함배제 원리는 겹치는 집합들의 합집합 크기를 각 부분교집합의 크기로 계산하는 공식이다. 덧셈 원리는 서로소일 때만 쓸 수 있고, 겹침을 한 번 빼면 두 번 겹친 부분이 지워지며 다시 더하면 세 번 겹친 부분이 과다 계산된다. 포함배제는 이 진동을 부호 교대 합으로 상쇄한다.
 
-실전에서는 "조건을 만족하는 것을 직접 세기 어렵지만, 조건을 어기는 방식은 세기 쉽다"는 상황에 쓰인다. 완전순열(derangement), Euler phi 함수, 전사함수의 개수, 체(sieve) 계산이 모두 같은 형태다. 일반화하면 부분순서 집합 위의 Möbius 반전이 되며, 확률 버전은 Bonferroni 부등식으로 이어진다.
+조건을 만족하는 것을 직접 세기 어렵고 조건을 어기는 방식은 세기 쉬운 상황에 쓴다. 완전순열(derangement), Euler phi 함수, 전사함수의 개수, 체(sieve) 계산이 같은 형태다. 일반화하면 부분순서 집합 위의 Möbius 반전이 되고, 확률 판본은 Bonferroni 부등식으로 이어진다.
 
 # 직관
 
@@ -14,7 +14,7 @@ $$
 |A\cup B|=|A|+|B|-|A\cap B|
 $$
 
-세 집합에서 세 겹 영역을 추적해 보자. 세 개를 더할 때 3번, 쌍 교집합 셋을 뺄 때 -3번, 합이 0이다. 따라서 삼중 교집합을 다시 더해야 1이 된다.
+세 집합에서 세 겹 영역의 계수는 세 개를 더할 때 3, 쌍 교집합 셋을 뺄 때 -3 이라 합이 0 이다. 삼중 교집합을 다시 더해야 1 이 된다.
 
 일반적으로 정확히 m개의 집합에 속하는 원소의 계수는 이항정리에 의해 다음과 같이 1이 된다(m ≥ 1).
 
@@ -22,7 +22,7 @@ $$
 \sum_{j=1}^{m}(-1)^{j-1}\binom{m}{j}=1-\sum_{j=0}^{m}(-1)^{j}\binom{m}{j}=1-0=1
 $$
 
-어떤 집합에도 속하지 않는 원소는 어떤 항에도 등장하지 않으므로 계수가 0이다. 이것이 증명의 전부다.
+어떤 집합에도 속하지 않는 원소는 어떤 항에도 나타나지 않으므로 계수가 0 이다.
 
 # 정의
 
@@ -44,7 +44,7 @@ $$
 
 ## 여집합 형태
 
-실제 계산에서는 "모든 조건을 피하는" 원소의 개수를 세는 다음 형태가 더 쓰기 편하다.
+모든 조건을 피하는 원소의 개수를 세는 다음 형태가 계산에 편하다.
 
 $$
 \Bigl|\thinspace U\setminus\bigcup_{i=1}^{n}A_i\Bigr|=\sum_{S\subseteq[n]}(-1)^{|S|}\thinspace|A_S|
@@ -76,7 +76,7 @@ $$
 P\Bigl(\bigcup_i A_i\Bigr)\le \sum_i P(A_i)
 $$
 
-이는 [Ramsey 이론](ramsey-theory.md)의 확률적 하한 증명에서 핵심 도구로 쓰인다.
+[Ramsey 이론](ramsey-theory.md)의 확률적 하한 증명이 이 상한을 쓴다.
 
 ## 완전순열 (derangement)
 
@@ -86,7 +86,7 @@ $$
 D_n=\sum_{j=0}^{n}(-1)^{j}\binom{n}{j}(n-j)!=n!\sum_{j=0}^{n}\frac{(-1)^{j}}{j!}
 $$
 
-따라서 임의의 순열이 완전순열일 확률은 지수함수의 교대급수로 매우 빠르게 수렴한다.
+임의의 순열이 완전순열일 확률은 지수함수의 교대급수로 수렴한다.
 
 $$
 \frac{D_n}{n!}\longrightarrow e^{-1}\approx 0.367879
@@ -102,7 +102,7 @@ $$
 \varphi(n)=\sum_{S\subseteq[r]}(-1)^{|S|}\frac{n}{\prod_{i\in S}p_i}=n\prod_{i=1}^{r}\Bigl(1-\frac{1}{p_i}\Bigr)
 $$
 
-예를 들어 phi(60) = 60(1-1/2)(1-1/3)(1-1/5) = 16이다. 이 곱 형태에서 phi가 곱셈적(multiplicative)임이 바로 보인다. phi의 산술적 성질은 [Fermat–Euler 정리](fermat-euler-theorem.md)에서 사용한다.
+예를 들어 phi(60) = 60(1-1/2)(1-1/3)(1-1/5) = 16이다. 이 곱 형태에서 phi 가 곱셈적(multiplicative)임이 보인다. phi 의 산술적 성질은 [Fermat–Euler 정리](fermat-euler-theorem.md)에서 쓴다.
 
 ## 전사함수의 개수
 
@@ -138,11 +138,11 @@ $$
 \pi(100)=\Bigl(100-\sum_{p}\Bigl\lfloor\frac{100}{p}\Bigr\rfloor+\sum_{p<q}\Bigl\lfloor\frac{100}{pq}\Bigr\rfloor-\cdots\Bigr)-1+4=25
 $$
 
-이 절차를 일반화한 Legendre, Meissel, Lehmer의 방법이 소수 계수 함수의 고전적 계산법이다.
+이 절차를 일반화한 Legendre, Meissel, Lehmer 의 방법이 소수 계수 함수의 고전적 계산법이다.
 
-## 부분집합 합 계산
+## 여집합 형태의 계산
 
-여집합 형태를 그대로 코드로 옮긴다.
+여집합 형태를 코드로 옮긴다.
 
 ```python
 from itertools import combinations
@@ -166,7 +166,7 @@ print(D / factorial(n), prod([1]))   # 0.3678... ≈ 1/e
 
 ## 확률과 조합 최적화
 
-생일 문제류의 "적어도 하나" 사건, 체를 이용한 정수론적 추정, [최소 신장트리](minimum-spanning-tree.md)류 문제의 계수 계산, 색칠 다항식(chromatic polynomial)의 삭제-축약 전개가 모두 포함배제 구조를 갖는다. [생성함수](generating-functions.md)와 결합하면 부호 교대 합을 멱급수의 곱으로 바꾸어 다룰 수 있다.
+생일 문제류의 적어도 하나 사건, 체를 이용한 정수론적 추정, [최소 신장트리](minimum-spanning-tree.md)류 문제의 계수 계산, 색칠 다항식(chromatic polynomial)의 삭제-축약 전개가 포함배제 구조를 갖는다. [생성함수](generating-functions.md)와 결합하면 부호 교대 합을 멱급수의 곱으로 다룬다.
 
 [^1]: J. H. van Lint and R. M. Wilson, A Course in Combinatorics, 2nd ed., Cambridge University Press, Chapter 10 (Sieve methods). https://www.cambridge.org/core/books/course-in-combinatorics/BD3F62F231B5CC1E9E06915EF0E0E1DC
 
