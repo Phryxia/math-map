@@ -25,13 +25,13 @@ $$
 F(\lambda\Lambda)=\lambda^{-k}F(\Lambda)
 $$
 
-$\Lambda$ 를 $\omega_2$ 로 나눠 정규화하면 $\mathbb Z\tau+\mathbb Z$ ($\tau=\omega_1/\omega_2\in\mathbb H$) 가 되므로, $F$ 는 $\mathbb H$ 위의 함수 $f(\tau)$ 로 바뀐다. 그런데 같은 격자를 주는 기저는 여럿이고, 기저 변경은 정확히 $\mathrm{SL}_2(\mathbb Z)$ 다. $(\omega_1,\omega_2)$ 를 $(a\omega_1+b\omega_2,\ c\omega_1+d\omega_2)$ 로 바꾸면 $\tau\mapsto\frac{a\tau+b}{c\tau+d}$ 이고 정규화 인자가 $(c\tau+d)$ 만큼 바뀐다. 변환 규칙 $f(\gamma\tau)=(c\tau+d)^kf(\tau)$ 가 여기서 나온다.
+$\Lambda$ 를 $\omega_2$ 로 나눠 정규화하면 $\tau=\omega_1/\omega_2\in\mathbb H$ 에 대한 $\mathbb Z\tau+\mathbb Z$ 가 되므로, $F$ 는 $\mathbb H$ 위의 함수 $f(\tau)$ 로 바뀐다. 그런데 같은 격자를 주는 기저는 여럿이고, 기저 변경은 정확히 $\mathrm{SL}_2(\mathbb Z)$ 다. $(\omega_1,\omega_2)$ 를 $(a\omega_1+b\omega_2,\ c\omega_1+d\omega_2)$ 로 바꾸면 $\tau\mapsto\frac{a\tau+b}{c\tau+d}$ 이고 정규화 인자가 $(c\tau+d)$ 만큼 바뀐다. 변환 규칙 $f(\gamma\tau)=(c\tau+d)^kf(\tau)$ 가 여기서 나온다.
 
 그러니 모듈러 형식의 이상해 보이는 정의는 "격자의 함수를 좌표로 쓴 것" 이다. [격자](lattices.md) 자체는 기저에 무관한 대상이고, 인자 $(c\tau+d)^k$ 는 좌표를 고른 대가다.
 
 ## 왜 유한차원인가
 
-$\mathrm{SL}_2(\mathbb Z)$ 의 기본영역은 $|\tau|\ge1$, $|\mathrm{Re}\,\tau|\le\frac12$ 인 영역이다. 이 영역이 위쪽으로 열려 있으므로 $\tau\to i\infty$ 에서의 거동을 따로 규정해야 하고, 그 조건이 "첨점에서 정칙" 이다.
+$\mathrm{SL}_2(\mathbb Z)$ 의 기본영역은 $|\tau|\ge1$ 이고 $|\mathrm{Re}\,\tau|\le\frac12$ 인 영역이다. 이 영역이 위쪽으로 열려 있으므로 $\tau\to i\infty$ 에서의 거동을 따로 규정해야 하고, 그 조건이 "첨점에서 정칙" 이다.
 
 $f$ 가 무게 $k$ 의 모듈러 형식이면 유수 정리를 기본영역의 경계에 적용해 영점의 총수가 정확히 $k/12$ 임을 얻는다.
 
@@ -114,7 +114,7 @@ $$
 E_k(\tau)=1-\frac{2k}{B_k}\sum_{n\ge1}\sigma_{k-1}(n)q^n
 $$
 
-이다. $E_4=1+240\sum\sigma_3(n)q^n$, $E_6=1-504\sum\sigma_5(n)q^n$ 이다.
+이다. $E_4=1+240\sum\sigma_3(n)q^n$ 이고 $E_6=1-504\sum\sigma_5(n)q^n$ 이다.
 
 **판별식 형식.** 무게 12 의 첨점형식
 
@@ -282,7 +282,7 @@ $$
 
 라는 Hardy–Ramanujan 점근식이 나온다. Rademacher 는 같은 방법을 끝까지 밀어 $p(n)$ 을 정확히 주는 수렴급수를 얻었다. 순수하게 조합적인 양이 모듈러 대칭으로 계산되는 사례다.
 
-Ramanujan 의 합동 $p(5n+4)\equiv0\pmod5$, $p(7n+5)\equiv0\pmod7$, $p(11n+6)\equiv0\pmod{11}$ 도 같은 틀에서 설명된다.
+Ramanujan 의 합동 $p(5n+4)\equiv0\pmod5$ 와 $p(7n+5)\equiv0\pmod7$ 과 $p(11n+6)\equiv0\pmod{11}$ 도 같은 틀에서 설명된다.
 
 ## 산술 대상과의 대응
 

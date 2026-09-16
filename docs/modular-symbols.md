@@ -46,7 +46,7 @@ $$
 
 ## Manin 의 유한 표현
 
-임의의 $\{\alpha,\beta\}$ 를 어떻게 유한 생성원으로 쓸 것인가. 핵심은 연분수다. $\alpha$ 에서 $\beta$ 로 가는 경로를 연분수 수렴분을 따라 잘게 쪼개면, 각 조각이 $\{g\cdot0,\ g\cdot\infty\}$ 꼴이 된다($g\in\mathrm{SL}_2(\mathbb Z)$). 그리고 $\Gamma_0(N)$ 작용으로 나누면 $g$ 는 잉여류로만 기억되면 된다.
+임의의 $\{\alpha,\beta\}$ 를 어떻게 유한 생성원으로 쓸 것인가. 핵심은 연분수다. $\alpha$ 에서 $\beta$ 로 가는 경로를 연분수 수렴분을 따라 잘게 쪼개면, 각 조각이 어떤 $g\in\mathrm{SL}_2(\mathbb Z)$ 에 대해 $\{g\cdot0,\ g\cdot\infty\}$ 꼴이 된다. 그리고 $\Gamma_0(N)$ 작용으로 나누면 $g$ 는 잉여류로만 기억되면 된다.
 
 $$
 \Gamma_0(N)\backslash\mathrm{SL}_2(\mathbb Z)\ \xrightarrow{\ \sim\ }\ \mathbb P^1(\mathbb Z/N),\qquad
@@ -59,7 +59,7 @@ $$
 \#\mathbb P^1(\mathbb Z/N)=N\prod_{p\mid N}\Big(1+\frac1p\Big)=[\mathrm{SL}_2(\mathbb Z):\Gamma_0(N)]
 $$
 
-개다. 이 생성원을 **Manin 기호** $[x]$ ($x\in\mathbb P^1(\mathbb Z/N)$) 라 한다.
+개다. 이 생성원을 $x\in\mathbb P^1(\mathbb Z/N)$ 에 대한 **Manin 기호** $[x]$ 라 한다.
 
 ## 두 개의 관계식
 
@@ -77,7 +77,7 @@ $$
 
 ## 모듈러 기호 공간
 
-$\mathbb M_2$ 를 기호 $\{\alpha,\beta\}$ ($\alpha,\beta\in\mathbb P^1(\mathbb Q)$)가 생성하는 자유아벨군을 다음 관계로 나눈 것이라 하자.
+$\mathbb M_2$ 를 $\alpha,\beta\in\mathbb P^1(\mathbb Q)$ 인 기호 $\{\alpha,\beta\}$ 가 생성하는 자유아벨군을 다음 관계로 나눈 것이라 하자.
 
 $$
 \{\alpha,\beta\}+\{\beta,\gamma\}+\{\gamma,\alpha\}=0
@@ -126,7 +126,7 @@ $$
 
 ## 무게 $k$ 로의 확장
 
-무게 $k>2$ 에서는 계수를 가군으로 바꾼다. $V_{k-2}=\mathrm{Sym}^{k-2}(\mathbb Z^2)$ 를 $\mathrm{SL}_2$ 표현으로 두고 기호를 $P\otimes\{\alpha,\beta\}$ ($P\in V_{k-2}$) 로 확장하면 같은 이론이 그대로 작동한다. $k=2$ 는 $V_0=\mathbb Z$ 인 경우다.
+무게 $k>2$ 에서는 계수를 가군으로 바꾼다. $V_{k-2}=\mathrm{Sym}^{k-2}(\mathbb Z^2)$ 를 $\mathrm{SL}_2$ 표현으로 두고 기호를 $P\in V_{k-2}$ 에 대한 $P\otimes\{\alpha,\beta\}$ 로 확장하면 같은 이론이 그대로 작동한다. $k=2$ 는 $V_0=\mathbb Z$ 인 경우다.
 
 # 성질
 
@@ -165,7 +165,7 @@ $$
 \langle\{0,\infty\},f\rangle=\int_0^{i\infty}2\pi i\,f(z)\,dz=L(f,1)
 $$
 
-일반적으로 $\{0,\alpha\}$ 꼴 기호가 꼬인 $L$ 값 $L(f,\chi,1)$ 을 주고, 무게 $k$ 에서는 $V_{k-2}$ 의 성분이 임계점 $L(f,j)$ ($1\le j\le k-1$) 를 준다. 게다가 이 값들은 주기 $\Omega_f^\pm$ 로 나누면 **유리수**이며, 그 유리수가 모듈러 기호 격자에서 직접 읽힌다. BSD 추측의 수치 검증이 이 성질 위에서 이루어진다.
+일반적으로 $\{0,\alpha\}$ 꼴 기호가 꼬인 $L$ 값 $L(f,\chi,1)$ 을 주고, 무게 $k$ 에서는 $V_{k-2}$ 의 성분이 $1\le j\le k-1$ 인 임계점 $L(f,j)$ 를 준다. 게다가 이 값들은 주기 $\Omega_f^\pm$ 로 나누면 **유리수**이며, 그 유리수가 모듈러 기호 격자에서 직접 읽힌다. BSD 추측의 수치 검증이 이 성질 위에서 이루어진다.
 
 ## 정수 구조가 산술을 담는다
 
