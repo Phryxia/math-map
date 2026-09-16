@@ -135,6 +135,7 @@ $$
 
 - [Martingale](martingales.md)
 - [중심극한정리](central-limit-theorem.md)
+- [Gauss 과정](gaussian-processes.md)
 
 ## 더 알아보기
 

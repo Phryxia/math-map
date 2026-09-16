@@ -37,6 +37,9 @@ graph TD
   WS --> TW["Tracy–Widom 분포"]
   RV --> DPP["결정점과정"]
   DPP --> TW
+  CF --> GP["Gauss 과정"]
+  CE --> GP
+  GP --> BM
 ```
 
 # 갈래
@@ -51,6 +54,7 @@ graph TD
 - [큰 수의 법칙](law-of-large-numbers.md): 표본평균이 기댓값으로
 - [중심극한정리](central-limit-theorem.md): 요동의 정규분포 근사
 - [집중부등식](concentration-inequalities.md): 유한 표본에서 평균을 벗어날 확률의 지수적 상한
+- [Gauss 과정](gaussian-processes.md): 평균함수와 공분산핵으로 결정되는 과정, 조건부분포의 닫힌 형태
 
 ## 조건부 구조와 이산시간 확률과정
 
@@ -77,7 +81,6 @@ graph TD
 
 - Poisson 과정: 계수과정의 기본 모형인데 문서가 없다. 지수 대기시간, 무기억성, Markov 연쇄의 연속시간 판본으로 이어진다.
 - 대편차 원리: Cramér 정리와 Sanov 정리. [집중부등식](concentration-inequalities.md)의 지수가 정확히 무엇인지 말해 주는 층위다.
-- Gauss 과정과 공분산 핵: [특성함수](characteristic-functions.md)의 Bochner 정리가 핵의 유효성 조건이 된다.
 - 결합과 전변동거리: Markov 연쇄의 수렴 속도를 재는 표준 도구.
 - Donsker 불변원리: 랜덤워크의 스케일 극한이 [Brown 운동](brownian-motion.md)이라는 함수공간 판본의 중심극한정리.
 - 에르고딕 정리: 시간평균과 공간평균의 일치. [큰 수의 법칙](law-of-large-numbers.md)의 독립성 없는 일반화다.

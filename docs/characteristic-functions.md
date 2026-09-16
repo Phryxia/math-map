@@ -143,6 +143,6 @@ $\varphi_X(t)^n=\varphi_X(c_nt)e^{id_nt}$ 꼴을 요구하면 **안정분포**�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gauss 과정](gaussian-processes.md)
 
 #probability #analysis #theorem

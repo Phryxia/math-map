@@ -229,5 +229,6 @@ $$
 ## 더 알아보기
 
 - [Martingale](martingales.md)
+- [Gauss 과정](gaussian-processes.md)
 
 #probability #measure_theory
