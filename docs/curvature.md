@@ -27,13 +27,13 @@ flowchart TB
 
 ## 평면곡선과 공간곡선
 
-R의 3차 곱공간의 곡선을 호길이로 매개화하여 속도의 크기가 항상 1이 되게 하자. 단위접벡터 T, 주법선 N, 종법선 B를 쓰면 곡률과 비틀림은 다음으로 정의된다.
+$\mathbb R^3$ 의 곡선을 호길이로 매개화하여 속도의 크기가 항상 $1$ 이 되게 하자. 단위접벡터 $T$ , 주법선 $N$ , 종법선 $B$ 를 쓰면 곡률과 비틀림은 다음으로 정의된다.
 
 $$
 T=\gamma',\qquad \kappa=\lVert T'\rVert,\qquad N=\frac{T'}{\kappa},\qquad B=T\times N
 $$
 
-곡률이 어디서도 0이 아닐 때 이 세 벡터는 각 점에서 정규직교기저를 이루고([내적공간](inner-product-spaces.md)의 정규직교성), 그 도함수는 자기 자신들로 표현된다. 이것이 Frenet–Serret 공식이다[^1].
+곡률이 어디서도 $0$ 이 아닐 때 이 세 벡터는 각 점에서 정규직교기저를 이루고([내적공간](inner-product-spaces.md)의 정규직교성), 그 도함수는 자기 자신들로 표현된다. 이것이 Frenet–Serret 공식이다[^1].
 
 $$
 \begin{pmatrix}T'\\ N'\\ B'\end{pmatrix}
@@ -41,7 +41,7 @@ $$
 \begin{pmatrix}T\\ N\\ B\end{pmatrix}
 $$
 
-계수행렬이 반대칭인 것은 기저가 정규직교임을 미분한 결과다. 여기서 τ가 비틀림(torsion)이며, 곡선이 한 평면에서 벗어나는 정도를 잰다.
+계수행렬이 반대칭인 것은 기저가 정규직교임을 미분한 결과다. 여기서 $\tau$ 가 비틀림(torsion)이며, 곡선이 한 평면에서 벗어나는 정도를 잰다.
 
 호길이가 아닌 일반 매개변수에서는 다음 공식을 쓴다.
 
@@ -52,7 +52,7 @@ $$
 
 ## 곡면의 두 기본형식
 
-곡면의 국소 매개화를 쓰면 접벡터의 길이를 재는 first fundamental form과 법선 방향으로 휘는 정도를 재는 second fundamental form이 나온다. 단위법벡터를 n이라 하면
+곡면의 국소 매개화를 쓰면 접벡터의 길이를 재는 first fundamental form과 법선 방향으로 휘는 정도를 재는 second fundamental form이 나온다. 단위법벡터를 $n$ 이라 하면
 
 $$
 \mathrm{I}=\begin{pmatrix}E&F\\ F&G\end{pmatrix},\quad E=r_u\cdot r_u,\ F=r_u\cdot r_v,\ G=r_v\cdot r_v
@@ -62,7 +62,7 @@ $$
 \mathrm{II}=\begin{pmatrix}e&f\\ f&g\end{pmatrix},\quad e=r_{uu}\cdot n,\ f=r_{uv}\cdot n,\ g=r_{vv}\cdot n
 $$
 
-주곡률은 I의 역행렬과 II의 곱(shape operator)의 eigenvalue이며, Gauss 곡률과 평균곡률은 각각 그 행렬식과 대각합의 절반이다.
+주곡률은 $\mathrm{I}$ 의 역행렬과 $\mathrm{II}$ 의 곱(shape operator)의 [고윳값](eigenvalues.md)이며, Gauss 곡률과 평균곡률은 각각 그 행렬식과 대각합의 절반이다.
 
 $$
 K=k_1k_2=\frac{eg-f^{2}}{EG-F^{2}},\qquad H=\frac{k_1+k_2}{2}
@@ -72,40 +72,40 @@ $$
 
 ## Theorema Egregium
 
-Gauss 곡률은 first fundamental form과 그 편도함수만으로 표현된다. 즉 K는 곡면의 내재적(intrinsic) 양이며, 주변 공간에 어떻게 매장되었는지에 의존하지 않는다[^2]. 직교 매개화(F=0)에서는 다음 형태가 된다.
+Gauss 곡률은 first fundamental form과 그 편도함수만으로 표현된다. 즉 $K$ 는 곡면의 내재적(intrinsic) 양이며, 주변 공간에 어떻게 매장되었는지에 의존하지 않는다[^2]. 직교 매개화( $F=0$ )에서는 다음 형태가 된다.
 
 $$
 K=-\frac{1}{2\sqrt{EG}}\left[\frac{\partial}{\partial u}\!\left(\frac{G_u}{\sqrt{EG}}\right)+\frac{\partial}{\partial v}\!\left(\frac{E_v}{\sqrt{EG}}\right)\right]
 $$
 
-따라서 길이를 보존하는 사상(local isometry)은 K를 보존한다. 평면의 K는 0이므로 K가 0이 아닌 구면의 어떤 조각도 평면과 등거리동형이 될 수 없다. 지도 제작에서 각과 거리와 면적을 동시에 보존하는 투영이 존재하지 않는 이유가 이것이다. 반면 평균곡률 H는 내재적이 아니다. 평면과 원기둥은 국소적으로 등거리동형이지만 H는 각각 0과 0이 아닌 값이다.
+따라서 길이를 보존하는 사상(local isometry)은 $K$ 를 보존한다. 평면의 $K$ 는 $0$ 이므로 $K$ 가 $0$ 이 아닌 구면의 어떤 조각도 평면과 등거리동형이 될 수 없다. 지도 제작에서 각과 거리와 면적을 동시에 보존하는 투영이 존재하지 않는 이유가 이것이다. 반면 평균곡률 $H$ 는 내재적이 아니다. 평면과 원기둥은 국소적으로 등거리동형이지만 $H$ 는 각각 $0$ 과 $0$ 이 아닌 값이다.
 
 ## Gauss–Bonnet
 
-R를 곡면 위의 조각으로, 그 경계가 조각마다 매끄러운 닫힌 곡선이고 외각이 주어졌다고 하자. 그러면 다음이 성립한다[^3].
+$R$ 를 곡면 위의 조각으로, 그 경계가 조각마다 매끄러운 닫힌 곡선이고 외각이 주어졌다고 하자. 그러면 다음이 성립한다[^3].
 
 $$
 \iint_{R}K\,dA+\oint_{\partial R}\kappa_g\,ds+\sum_i \alpha_i=2\pi\chi(R)
 $$
 
-여기서 κ_g는 경계의 geodesic curvature, α_i는 꼭짓점에서의 외각, χ는 [Euler 지표](euler-characteristic.md)다. 경계가 없는 compact 방향지음 가능 곡면에서는 경계항이 사라지고
+여기서 $\kappa_g$ 는 경계의 geodesic curvature, $\alpha_i$ 는 꼭짓점에서의 외각, $\chi$ 는 [Euler 지표](euler-characteristic.md)다. 경계가 없는 compact 방향지음 가능 곡면에서는 경계항이 사라지고
 
 $$
 \iint_{M}K\,dA=2\pi\chi(M)=2\pi(2-2g)
 $$
 
-가 된다. 구면은 오른쪽이 4π이고, 반지름 r의 구면은 K가 r의 제곱의 역수이고 면적이 4π의 r 제곱배이므로 좌변도 4π다. 원환면은 χ가 0이므로 총 곡률이 0이다. 곡률을 어떻게 일그러뜨려도 총합은 변하지 않는다는 것이 이 정리의 요지다.
+가 된다. 구면은 오른쪽이 $4\pi$ 이고, 반지름 $r$ 의 구면은 $K=1/r^2$ 이고 면적이 $4\pi r^2$ 이므로 좌변도 $4\pi$ 다. 원환면은 $\chi$ 가 $0$ 이므로 총 곡률이 $0$ 이다. 곡률을 어떻게 일그러뜨려도 총합은 변하지 않는다는 것이 이 정리의 요지다.
 
 ## 따름정리
 
-- 구면 삼각형의 내각의 합은 π보다 크고, 초과분이 넓이에 비례한다. 세 변이 geodesic이면 κ_g가 0이므로 Gauss–Bonnet이 직접 넓이 공식을 준다.
-- 원환면에는 곡률이 어디서도 양수인 metric이 없다. 총 곡률이 0이어야 하기 때문이다.
-- K가 항상 0이면 곡면은 국소적으로 평면과 등거리동형이다(전개 가능 곡면).
+- 구면 삼각형의 내각의 합은 $\pi$ 보다 크고, 초과분이 넓이에 비례한다. 세 변이 geodesic이면 $\kappa_g$ 가 $0$ 이므로 Gauss–Bonnet이 직접 넓이 공식을 준다.
+- 원환면에는 곡률이 어디서도 양수인 metric이 없다. 총 곡률이 $0$ 이어야 하기 때문이다.
+- $K$ 가 항상 $0$ 이면 곡면은 국소적으로 평면과 등거리동형이다(전개 가능 곡면).
 
 # 활용
 
 - 일반상대성이론: Riemann 곡률 tensor가 조석력을, 그 축약이 Einstein 방정식의 좌변을 이룬다. 2차원에서는 이 정보가 Gauss 곡률 하나로 압축된다.
-- 이산기하와 그래픽: 삼각망의 꼭짓점에서 각도 결손을 모으면 이산 Gauss 곡률이 되고, 그 총합이 정확히 2π의 χ배가 되어 Gauss–Bonnet의 이산판이 성립한다.
+- 이산기하와 그래픽: 삼각망의 꼭짓점에서 각도 결손을 모으면 이산 Gauss 곡률이 되고, 그 총합이 정확히 $2\pi\chi$ 가 되어 Gauss–Bonnet의 이산판이 성립한다.
 - minimal surface: 평균곡률이 0인 곡면은 면적의 임계점이며 비눗막의 모양이다.
 - 데이터 해석: 곡선의 곡률은 경로 평활화와 모서리 검출에, 곡면의 주곡률은 형상 분류에 쓰인다.
 
