@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-09-16T09:44:04.121Z",
-  "nextSeq": 323,
+  "savedAt": "2026-09-16T13:05:09.976Z",
+  "nextSeq": 334,
   "items": [
     {
       "id": "e966086b",
@@ -10,30 +10,6 @@
       "note": "render-check 가 unescaped 비교로 \\{ \\, \\# \\% \\| 가 풀린 결과를 정상으로 간주해 집합 중괄호 소실을 못 잡았다. \\_ 만 허용하고 나머지 백슬래시+ASCII 문장부호는 인라인 수식에서 보고하게 고친다. 검사 로직은 CLAUDE.md 4절 수식 규칙 끝의 grep 과 같다",
       "createdAt": "2026-09-16T09:40:21.003Z",
       "seq": 322
-    },
-    {
-      "id": "770a4d00",
-      "title": "수식이 맨 텍스트로 쓰인 자리 전수 점검 (3차)",
-      "priority": 60,
-      "note": "2026-09-16 회차에 30 문서를 처리해 61 문서 355 줄에서 31 문서 77 줄로 줄었다. 처리 완료: gradient-descent, finite-fields, fields, hypothesis-testing, field-extensions, random-variables, godel-incompleteness, holomorphic-functions, chinese-remainder-theorem, galois-theory, lagrange-duality, singular-value-decomposition, determinants, maximum-likelihood, spectral-theorem, eigenvalues, curvature, euler-characteristic, first-order-logic, polynomial-rings, ordinary-differential-equations, manifolds, axiom-of-choice, zfc-axioms, ordinals, law-of-large-numbers, inner-product-spaces, measurable-functions/measure/radon-nikodym/conditional-expectation/martingales(시그마 접두어), lambda-calculus/curry-howard(알파베타에타 접두어). 남은 상위는 counting-principles 5, generating-functions 5, inclusion-exclusion 5, markov-chains 5, ramsey-theory 5, formalism-hilbert-program 4, fundamental-group 4, homology 4, linear-programming 4, np-completeness 4, pigeonhole-principle 4. 검사 스크립트: 코드펜스와 이중달러 블록과 인라인 수식과 마크다운 링크와 맨 URL을 마스킹한 뒤 /[α-ωΑ-Ω]|(?<![A-Za-z가-힣])[A-Za-z]_[0-9a-z]|(?<![A-Za-z])[A-Zσμφ](?=[의를이가에와과로])/ 로 줄을 찾는다. 이론 이름 약어(PA, ZFC, Q)와 논문 제목 인용은 그대로 두고, 한글 조사가 직접 붙는 단일 문자만 수식으로 감싼다. 유니코드 첨자(Aᵗ, σᵢ, v₁)도 같이 LaTeX 로 옮긴다",
-      "createdAt": "2026-09-16T09:06:27.260Z",
-      "seq": 321
-    },
-    {
-      "id": "e4a29c7e",
-      "title": "닫는 $ 뒤 공백 누락 전수 수정",
-      "priority": 55,
-      "note": "CLAUDE.md 4절의 '닫는 $ 뒤에 공백 1개' 규칙 위반이 2026-09-16 회차 검사에서 108건 발견됐다. 대부분 인라인 수식 뒤에 쉼표/마침표/괄호가 바로 붙은 경우다(예: weak-convergence 54줄 $\\mu_n(A)\\to\\mu(A)$. ). 검사 스크립트: 코드펜스와 $$ 블록과 인라인 코드를 마스킹한 뒤 /\\$([^$\\n]+)\\$/g 로 인라인 수식을 찾아 닫는 $ 다음 문자가 공백도 줄끝도 아니면 보고한다. 문장부호 앞에 공백을 넣는 것이 기존 관례(martingales 170줄, newton-method 51줄 참고)",
-      "createdAt": "2026-09-16T08:55:58.199Z",
-      "seq": 320
-    },
-    {
-      "id": "a0cca02e",
-      "title": "LaTeX 렌더 오류 회귀 점검 (KaTeX 파싱)",
-      "priority": 35,
-      "note": "2026-09-16 회차에 KaTeX 로 전 문서 수식을 파싱해 오류 0 을 만들었다. 방법: npm i katex 를 스크래치패드에 설치하고, 코드펜스와 인라인 코드를 마스킹해 $..$ 와 $$..$$ 조각을 뽑은 뒤 katex.renderToString(frag, {throwOnError:true, strict:(c)=>c==='unicodeTextInMathMode'?'error':'ignore'}) 로 돌린다. 이러면 미이스케이프 # %, 없는 환경(psmallmatrix), 없는 제어열(\\\\slashed), 수식 모드 유니코드를 한 번에 잡는다. 스크립트는 dev 에 못 넣으니 회차마다 다시 짠다",
-      "createdAt": "2026-09-16T04:40:23.060Z",
-      "seq": 309
     },
     {
       "id": "f5e32679",
@@ -52,28 +28,60 @@
       "seq": 310
     },
     {
-      "id": "307df7f0",
-      "title": "인라인 코드블록 수식 회귀 점검",
+      "id": "7b19ec13",
+      "title": "LaTeX 렌더 오류 회귀 점검 (KaTeX 파싱)",
+      "priority": 30,
+      "note": "2026-09-16 회차에 다시 돌려 수식 29649 개 오류 0 을 확인했다. 방법: 스크래치패드에 npm i katex 하고 dist/katex.mjs 를 import 한다(패키지 루트의 katex.mjs 는 없다). 코드펜스와 인라인 코드를 마스킹하고 인용부호 접두어를 벗긴 뒤 $$ 블록과 인라인 조각을 뽑아 katex.renderToString(frag, {throwOnError:true, displayMode, strict:(c)=>c==='unicodeTextInMathMode'?'error':'ignore'}) 로 돌린다. 인라인 짝짓기는 내용 양끝이 공백이거나 한글이 있으면 건너뛴다",
+      "createdAt": "2026-09-16T13:03:08.422Z",
+      "seq": 330
+    },
+    {
+      "id": "bfd4c210",
+      "title": "닫는 $ 뒤 공백 회귀 점검",
       "priority": 25,
-      "note": "2026-09-16 회차에 전수 정리를 마쳤다. 2088 곳 중 2008 곳을 LaTeX 로 옮겼고 남은 80 곳은 전부 코드 식별자다: 연산 이름(access, link, cut, INSERT, MAKE-SET, FIND, minimize), 언어 기능(while, dict, map, fmap, bind, return, do, goto, fix, %, assert), 도구 이름(gzip, PNG, JPEG, dev/graph.mjs check-cycle), 구현 변수(resistance, signature, ID, count, build_N, dn_lem, decrypt_crt, pow). 새 문서에서 다시 새어 나오므로 회차마다 한 번 훑는다. 검사법: 코드펜스 밖 백틱 내용을 전부 뽑아 빈도표를 만들고 위 목록에 없는 것만 본다. 변환 뒤에는 수식 뒤 공백 검사와 KaTeX 파싱을 함께 돌린다",
-      "createdAt": "2026-09-16T04:55:51.925Z",
-      "seq": 311
+      "note": "2026-09-16 회차에 349 건을 138 문서에서 고쳤다(쉼표, 마침표, 콜론, 세미콜론, 괄호, 대괄호, 따옴표 앞에 공백 1 개 삽입). 남은 위반 보고는 전부 인용부호로 들여쓴 한 줄 $$ 블록(> $$...$$)에 대한 오검출이다. 검사기를 다시 짤 때 두 가지를 반드시 넣는다. (1) $ 짝짓기는 왼쪽부터 순차로 하되 내용의 양끝이 공백이거나 내용에 한글이 있으면 수식으로 보지 않는다. 이 검사를 빼면 \"$i$ 가 ... 교집합은 $\" 처럼 수식 사이 산문이 통째로 수식으로 잡혀 엉뚱한 자리에 공백이 들어간다. (2) 한 줄 $$...$$ 와 인용부호 접두어를 먼저 마스킹한다. $L$-Lipschitz 처럼 하이픈이 붙는 자리는 공백 대신 $L\\text{-Lipschitz}$ 로 옮긴다(color-refinement 의 $k\\text{-WL}$ 이 기존 관례). 검수는 KaTeX 파싱(수식 29448 개 오류 0)으로 확인했다",
+      "createdAt": "2026-09-16T12:45:23.050Z",
+      "seq": 324
     },
     {
-      "id": "9499f404",
-      "title": "optimal-transport 와 weak-convergence 연결 검토",
+      "id": "db7e9bcc",
+      "title": "수식이 맨 텍스트로 쓰인 자리 잔여 점검 (4차)",
       "priority": 20,
-      "note": "optimal-transport 가 Wasserstein 거리를 다루는데 그 거리의 수렴이 약수렴 + 적률 수렴과 동치라는 사실이 두 문서 어디에도 없다. weak-convergence 를 optimal-transport 의 부모로 붙일 수 있는지 check-cycle 로 확인하고, 맞으면 optimal-transport 본문에 Wasserstein 수렴의 특징짓기 절을 넣는다",
-      "createdAt": "2026-09-16T05:03:24.646Z",
-      "seq": 316
+      "note": "2026-09-16 회차에 counting-principles, generating-functions, inclusion-exclusion, ramsey-theory, formalism-hilbert-program, fundamental-group, linear-programming, pigeonhole-principle, markov-chains, exponential-families, homology, mathematical-platonism 을 처리해 29 문서 66 줄에서 17 문서 22 줄로 줄었다. 남은 22 줄은 전부 현행 검사기의 오검출이다: 각주의 논문 제목 인용(lambda-calculus, lang-trotter, rankin-selberg, umbral-moonshine, godement-jacquet), 인용부호 > 로 들여쓴 수식 블록(modular-curves, s-cobordism, brauer-groups, casson-invariant, fredholm-operators, maass-forms, stationary-phase), 약어 NP/PSPACE(np-completeness), 헤딩의 유니코드 표기(continuity 의 ε–δ, uniform-integrability, localization-rings 의 R_p, monads 의 (T, η, μ)), 문서 제목(modular-curves 의 X_0(N)). 새 문서에서 다시 새어 나오므로 회차마다 한 번 훑되, 검사기를 다시 짤 때 > 블록 마스킹과 각주 줄 제외를 넣는다",
+      "createdAt": "2026-09-16T12:41:18.316Z",
+      "seq": 323
     },
     {
-      "id": "98ff9bd4",
-      "title": "Gauss 과정과 공분산 핵",
+      "id": "04b46360",
+      "title": "인라인 코드블록 수식 회귀 점검",
+      "priority": 20,
+      "note": "2026-09-16 회차에 다시 훑어 회귀가 없음을 확인했다. 코드펜스 밖 백틱 스팬은 35 종뿐이고 전부 코드 식별자다: 연산 이름(LINK, CUT, INSERT(u,v), DELETE(u,v), CONNECTED(u,v), MAKE-SET(x), FIND(x), UNION(x,y), access(v), evert(v), link(v, w), cut(v), findroot(v), makeroot, path(v, w), connected(v, w), find_root, is_root), 언어 기능과 항등식(call/cc, curry, uncurry, map(g, map(f, xs)), map f (reverse xs) = reverse (map f xs), List, Maybe, Z combinator, fact, picky, f), 표현식(((x % m) + m) % m, pow(c, d, n), exists, globalSign === 1). 검사법: 코드펜스 밖 백틱 내용을 전부 뽑아 빈도표를 만들고 위 목록에 없는 것만 본다",
+      "createdAt": "2026-09-16T13:00:00.390Z",
+      "seq": 329
+    },
+    {
+      "id": "a325702c",
+      "title": "분야 개관이 없는 분야 점검",
+      "priority": 15,
+      "note": "2026-09-16 회차에 analysis, probability, differential-geometry, graph-theory, optimization, category-theory 개관 여섯 개를 만들어 개관이 12 개가 되었다. 주 분야(태그 줄 첫 태그) 기준 문서 수가 10 개 이상인 분야는 이제 모두 개관을 가진다. 남은 분야는 measure_theory 9, group_theory 9, set_theory 8, ring_theory 8, statistics 7, logic 7, functional_analysis 7, algebraic_topology 7 인데 앞의 넷과 logic, algebraic_topology 는 abstract-algebra-overview, foundations-overview, topology-overview 가 이미 거둔다. 독립 개관이 필요해지는 시점은 measure_theory 나 functional_analysis 가 10 개를 넘을 때다. 태그 전체 등장 수(computation 54, complex_analysis 38)로는 커 보여도 주 분야로는 4 개, 3 개뿐이라 갈래를 채울 문서가 없다",
+      "createdAt": "2026-09-16T12:55:32.557Z",
+      "seq": 328
+    },
+    {
+      "id": "3cb3a283",
+      "title": "대편차 원리: Cramér 정리와 Sanov 정리",
       "priority": 10,
-      "note": "characteristic-functions 아래. Bochner 정리가 정상 핵의 유효성 조건이 되는 구조를 쓰려다 문서가 없어 링크를 뺐다. 유한차원 분포로의 정의, Kolmogorov 확장정리, RBF/Matern 핵, 회귀에서의 사후평균과 분산, brownian-motion 이 특수한 경우",
-      "createdAt": "2026-09-16T05:01:31.804Z",
-      "seq": 315
+      "note": "probability-overview 의 빈자리. concentration-inequalities 아래. Legendre 변환으로 주어지는 비율함수, Cramér 정리, Sanov 정리, Varadhan 보조정리, Gärtner–Ellis. 집중부등식의 지수가 정확히 무엇인지 말해 주는 층위다",
+      "createdAt": "2026-09-16T13:03:08.535Z",
+      "seq": 331
+    },
+    {
+      "id": "08e76449",
+      "title": "벡터다발과 접속",
+      "priority": 10,
+      "note": "differential-geometry-overview 의 빈자리 첫 줄. manifolds 아래, chern-simons 와 index-theorem 이 전제한다. 국소 자명화, 전이함수, 공변미분, 곡률 2 형식, 평행이동. 이어서 특성류(Chern 류) 문서로 간다",
+      "createdAt": "2026-09-16T13:03:08.649Z",
+      "seq": 332
     },
     {
       "id": "0aaf9d9d",
