@@ -10,7 +10,7 @@
 
 뿌리는 [집합](docs/sets.md)과 [명제와 증명](docs/proofs.md) 둘뿐이다. 나머지 문서는 모두 이 둘에서 출발하는 경로 위에 놓인다.
 
-현재 문서 343 개, 간선 630 개, 태그 34 종이다. 갱신과 검증에 쓰는 스크립트는 `dev/` 에 있고, 탐사 절차는 [CLAUDE.md](CLAUDE.md) 에 적혀 있다.
+현재 문서 345 개, 간선 635 개, 태그 34 종이다. 갱신과 검증에 쓰는 스크립트는 `dev/` 에 있고, 탐사 절차는 [CLAUDE.md](CLAUDE.md) 에 적혀 있다.
 
 ## 지도의 경계
 
@@ -67,7 +67,6 @@
 ### 해석
 
 - [균등수렴](docs/uniform-convergence.md)
-- [균등적분가능성](docs/uniform-integrability.md)
 - [비유계 작용소와 Stone 정리](docs/unbounded-operators.md)
 - [정확한 WKB 와 Voros 기호](docs/exact-wkb.md)
 - [Banach 공간과 세 기본정리](docs/banach-spaces.md)
@@ -79,6 +78,7 @@
 - [신뢰구간](docs/confidence-intervals.md)
 - [지수족과 충분통계량](docs/exponential-families.md)
 - [집중부등식](docs/concentration-inequalities.md)
+- [특성함수와 Lévy 연속성 정리](docs/characteristic-functions.md)
 - [Bayes 추론과 사후분포](docs/bayesian-inference.md)
 - [Feynman–Kac 공식](docs/feynman-kac.md)
 - [Marchenko–Pastur 법칙](docs/marchenko-pastur.md)
