@@ -128,40 +128,6 @@ $$
 
 확률 $\min(1, t\,x^*_S)$ 로 한 번에 뽑는 것도 같은 효과다. 비용이 $t$ 배로 늘고 실패 확률이 $e^{-t}$ 로 줄어드는 교환이 이 기법의 뼈대다.
 
-## 수치로 확인
-
-$n$ 개 원소와 "원소 하나만 빠진" 집합 $n$ 개로 이루어진 사례를 본다. $x_S = 1/(n-1)$ 이 가능해이므로 LP 비용이 $n/(n-1)$ 이고, 정수해는 두 집합이 필요하다.
-
-```python
-import random
-
-n = 12
-sets = [frozenset(range(n)) - {i} for i in range(n)]   # S_i = i 만 빠진 집합
-x = [1 / (n - 1)] * n                                   # LP 가능해, 비용 n/(n-1)
-
-def round_once(t, rng):
-    chosen = [i for i in range(n) if rng.random() < min(1.0, t * x[i])]
-    covered = set().union(*(sets[i] for i in chosen)) if chosen else set()
-    return len(chosen), len(covered) == n
-
-for t in (1, 2, 3, 4):
-    rng = random.Random(5)
-    cost = ok = 0
-    for _ in range(20000):
-        c, full = round_once(t, rng)
-        cost += c
-        ok += full
-    print(t, round(cost / 20000, 3), round(ok / 20000, 3))
-print("LP =", round(n / (n - 1), 3), " IP = 2")
-# 1 1.098 0.301
-# 2 2.184 0.671
-# 3 3.279 0.882
-# 4 4.372 0.965
-# LP = 1.091  IP = 2
-```
-
-$t = 1$ 에서 기대 비용이 LP 값과 거의 같지만 성공률이 30% 에 불과하다. $t$ 를 올리면 비용이 정확히 $t$ 배로 늘고 실패율이 지수적으로 줄어든다. 부풀리기와 실패 확률의 교환이 수치로 그대로 보인다.
-
 ## 간극이 1 인 경우
 
 제약행렬이 완전 단모듈러면 LP 의 모든 극점이 정수점이므로 간극이 1 이고 반올림이 필요하지 않다. 이분그래프의 정점 덮개와 매칭, [네트워크 흐름](network-flow.md)이 이 범주다. König 정리와 최대유량 최소절단 정리는 이 사실의 조합적 표현이다.

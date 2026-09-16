@@ -135,37 +135,6 @@ $\varphi$ 를 지시함수로 두면 $u(t,x) = \Pr(X_T \in A \mid X_t = x)$ 이�
 
 무작위 행보와 조화함수 사이에도 같은 구조가 있다. 격자에서 $u(x)$ 가 이웃 평균과 같다는 이산 Laplace 방정식은 $u(X_n)$ 이 martingale 이라는 것과 동치이고, 경계값 문제의 해는 "경계에 처음 닿는 지점에서의 경계값의 기댓값" 이다. Feynman–Kac 은 이 관찰의 연속시간 판이며, 소멸항이 있는 경우까지 확장한 것이다.
 
-## 수치로 확인
-
-Black–Scholes 방정식의 해를 닫힌 꼴과 Monte Carlo 로 각각 구해 비교한다.
-
-```python
-import math, random
-
-def bs_call(S0, K, r, sig, T):
-    """PDE 쪽: Black-Scholes 방정식의 닫힌 해."""
-    N = lambda z: 0.5 * (1 + math.erf(z / math.sqrt(2)))
-    d1 = (math.log(S0 / K) + (r + sig**2 / 2) * T) / (sig * math.sqrt(T))
-    d2 = d1 - sig * math.sqrt(T)
-    return S0 * N(d1) - K * math.exp(-r * T) * N(d2)
-
-def mc_call(S0, K, r, sig, T, trials, seed=3):
-    """확률 쪽: 위험중립측도 아래 할인된 기댓값."""
-    rng = random.Random(seed)
-    tot = 0.0
-    for _ in range(trials):
-        z = rng.gauss(0, 1)
-        ST = S0 * math.exp((r - sig**2 / 2) * T + sig * math.sqrt(T) * z)
-        tot += max(ST - K, 0.0)
-    return math.exp(-r * T) * tot / trials
-
-args = (100.0, 105.0, 0.03, 0.25, 1.0)
-print(round(bs_call(*args), 4), round(mc_call(*args, trials=400000), 4))
-# 9.1218 9.1216
-```
-
-같은 값이 나온다. 왼쪽은 방정식의 해이고 오른쪽은 기댓값이며, 둘이 같다는 것이 Feynman–Kac 의 내용이다. 할인 계수 $e^{-rT}$ 가 정리의 소멸항 $c = r$ 에 해당한다.
-
 # 활용
 
 ## Black–Scholes 의 두 얼굴

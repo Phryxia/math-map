@@ -168,29 +168,6 @@ $$
 
 [큰 수의 법칙](law-of-large-numbers.md)의 $L^1$ 형태, 추정량의 평균제곱오차 수렴, [최대가능도 추정](maximum-likelihood.md)의 점근 정규성 증명에서 "거의 확실한 수렴을 기댓값의 수렴으로 올리는" 단계가 반복해서 등장한다. 그 단계가 UI 이며, 실무에서는 보통 $L^{1+\delta}$ 유계(de la Vallée-Poussin 의 $G(t)=t^{1+\delta}$)를 보여서 처리한다. [측도변환](change-of-measure.md)에서 우도비족이 UI 인지도 같은 방식으로 확인한다.
 
-## 수치 확인
-
-절단 적분이 균등하게 0 으로 가는지를 두 함수열에 대해 직접 계산해 본다. $[0,1]$ 위에서 높이 $n^a$, 폭 $1/n$ 인 봉우리열의 절단 적분은 $n^a>M$ 인 $n$ 에 대해 $n^{a-1}$ 이다.
-
-```python
-import numpy as np
-
-def tail_sup(a, Ms, ns):
-    """높이 n^a, 폭 1/n 인 봉우리열의 절단 적분 상한 sup_n int_{|f_n|>M} |f_n|."""
-    out = []
-    for M in Ms:
-        vals = [n**(a - 1.0) for n in ns if n**a > M]
-        out.append(max(vals) if vals else 0.0)
-    return np.array(out)
-
-ns = range(1, 200000)
-Ms = [10, 100, 1000, 10000]
-print("a=1.0 (L^1 유계, UI 아님):", tail_sup(1.0, Ms, ns))
-print("a=0.5 (UI):            ", tail_sup(0.5, Ms, ns))
-```
-
-$a=1$ 이면 절단 적분이 $M$ 과 무관하게 1 로 남아 UI 가 깨지고, $a=0.5$ 이면 $M^{-1}$ 규모로 0 으로 가 UI 다. 앞의 표와 일치한다.
-
 ## 함수해석에서의 위치
 
 UI 는 $L^1$ 이 재귀적(reflexive)이지 않아서 유계 집합이 약compact 하지 않다는 결함을 메우는 조건이다. 편미분방정식의 변분해법, 최적수송, 확률측도열의 극한 구성에서 "극한이 여전히 밀도를 갖는다"를 보장하는 표준 도구로 쓰인다.[^1] [Lebesgue 적분](lebesgue-integral.md)과 [가측함수](measurable-functions.md)를 배운 직후에 이 개념을 익혀 두면, 이후의 수렴 논증에서 지배함수를 억지로 찾는 수고가 크게 줄어든다.[^2]

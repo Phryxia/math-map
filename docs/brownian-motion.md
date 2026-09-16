@@ -109,48 +109,6 @@ $$
 \limsup_{t\to0^+}\frac{B_t}{\sqrt{2t\log\log(1/t)}}=1
 $$
 
-## 시뮬레이션으로 확인
-
-랜덤워크를 축소해 경로를 만들고, 1차변동이 발산하는 동안 2차변동이 1로 유지되는지, 그리고 최대값의 분포가 반사원리와 맞는지 확인한다.
-
-```python
-import math, random
-
-rng = random.Random(0)
-
-def walk(n):
-    """[0,1]을 n등분하고 ±√(1/n) 걸음을 놓은 경로"""
-    h, b, out = 1.0 / n, 0.0, [0.0]
-    for _ in range(n):
-        b += math.sqrt(h) * (1 if rng.random() < 0.5 else -1)
-        out.append(b)
-    return out
-
-for n in (100, 10000, 100000):
-    p = walk(n)
-    qv = sum((p[i + 1] - p[i]) ** 2 for i in range(n))
-    tv = sum(abs(p[i + 1] - p[i]) for i in range(n))
-    print(f"n={n:6d}  2차변동={qv:.4f}  1차변동={tv:8.2f}")
-# n=   100  2차변동=1.0000  1차변동=   10.00
-# n= 10000  2차변동=1.0000  1차변동=  100.00
-# n=100000  2차변동=1.0000  1차변동=  316.23
-
-def max_of_path(n):
-    h, b, m = 1.0 / n, 0.0, 0.0
-    for _ in range(n):
-        b += rng.gauss(0, math.sqrt(h))
-        m = max(m, b)
-    return m
-
-a, trials = 1.0, 20000
-hit = sum(1 for _ in range(trials) if max_of_path(2000) >= a)
-theory = 2 * 0.5 * math.erfc(a / math.sqrt(2))
-print(f"P(max>={a}): 시뮬 {hit/trials:.3f} / 이론 {theory:.3f}")
-# P(max>=1.0): 시뮬 0.311 / 이론 0.317
-```
-
-$\pm\sqrt{h}$ 걸음에서는 증분의 제곱이 항상 $h$ 라서 2차변동이 정확히 1 이고, 1차변동은 $n \cdot \sqrt{1/n} = \sqrt{n}$ 으로 커진다. 두 변동의 운명이 갈리는 이유가 한눈에 보인다. 최대값 쪽 시뮬레이션 값이 이론값보다 조금 작은 것은 편향이며, 격자점만 보므로 두 관측 사이에서 수준을 넘었다 돌아온 경로를 놓치기 때문이다. 눈금을 더 잘게 하면 줄어든다.
-
 # 활용
 
 ## 확률미분방정식

@@ -163,77 +163,6 @@ Sato–Tate 의 증명 구조는 이 저장소의 다른 정리들과 같은 틀
 
 # 활용
 
-## 반원 분포를 직접 본다
-
-$p<20000$ 의 모든 좋은 소수에서 $a_p$ 를 세고 각을 모아 Sato–Tate 측도와 비교한다. 예측값은 측도의 누적분포에서 계산한다.
-
-```python
-from math import isqrt, acos, pi, sin
-
-LIM = 20000
-sieve = bytearray([1]) * (LIM + 1); sieve[0:2] = b"\0\0"
-for i in range(2, isqrt(LIM) + 1):
-    if sieve[i]: sieve[i*i::i] = bytearray(len(sieve[i*i::i]))
-PRIMES = [i for i in range(2, LIM + 1) if sieve[i]]
-
-def a_p(p, a, b):                              # a_p = p + 1 - #E(F_p)
-    n = 1
-    for x in range(p):
-        c = (x * x % p * x + a * x + b) % p
-        n += 1 if c == 0 else (2 if pow(c, (p - 1) // 2, p) == 1 else 0)
-    return p + 1 - n
-
-disc = lambda a, b: -16 * (4 * a ** 3 + 27 * b ** 2)
-
-def hist(angles, B):
-    h = [0] * B
-    for t in angles: h[min(B - 1, int(t / pi * B))] += 1
-    return [c / (len(angles) or 1) for c in h]
-
-ST = lambda t: (t - sin(2 * t) / 2) / pi        # (2/π)sin²θ 의 누적분포
-UNI = lambda t: t / pi
-
-def report(name, angles, B, cdf, extra=""):
-    obs = hist(angles, B)
-    print(f"\n  {name}   표본 {len(angles)} 개 {extra}")
-    print(f"  {'구간':>16} {'관측':>9} {'예측':>9} {'차':>9}")
-    worst = 0.0
-    for i in range(B):
-        lo, hi = i * pi / B, (i + 1) * pi / B
-        pred = cdf(hi) - cdf(lo)
-        worst = max(worst, abs(obs[i] - pred))
-        print(f"  [{lo:5.3f},{hi:5.3f}] {obs[i]:>9.4f} {pred:>9.4f} {obs[i]-pred:>+9.4f}")
-    print(f"  최대 칸 오차 {worst:.4f}")
-
-A, B_ = 1, 1                                   # E : y^2 = x^3 + x + 1  (CM 없음)
-print(f"  판별식 = {disc(A, B_)}")
-ang, bad = [], 0
-for p in PRIMES:
-    if p < 5 or disc(A, B_) % p == 0: continue
-    t = a_p(p, A, B_)
-    if abs(t) > 2 * p ** 0.5 + 1e-9: bad += 1
-    ang.append(acos(max(-1.0, min(1.0, t / (2 * p ** 0.5)))))
-print(f"  Hasse 한계 위반 : {bad}")
-report("Sato–Tate 측도 (2/π)sin²θ dθ 와 비교", ang, 8, ST)
-
-#   판별식 = -496
-#   Hasse 한계 위반 : 0
-#
-#   Sato–Tate 측도 (2/π)sin²θ dθ 와 비교   표본 2259 개
-#                 구간        관측        예측         차
-#   [0.000,0.393]    0.0124    0.0125   -0.0001
-#   [0.393,0.785]    0.0761    0.0784   -0.0022
-#   [0.785,1.178]    0.1656    0.1716   -0.0061
-#   [1.178,1.571]    0.2417    0.2375   +0.0042
-#   [1.571,1.963]    0.2430    0.2375   +0.0055
-#   [1.963,2.356]    0.1695    0.1716   -0.0021
-#   [2.356,2.749]    0.0779    0.0784   -0.0005
-#   [2.749,3.142]    0.0137    0.0125   +0.0013
-#   최대 칸 오차 0.0061
-```
-
-소수 $2259$ 개로 최대 칸 오차가 $0.006$ 이다. 양 끝 칸의 비율이 $0.012$ 로 가운데 칸 $0.24$ 의 스무 분의 일이다. $\sin^2$ 의 모양이 그대로 나온다. Hasse 한계 위반은 물론 하나도 없다.
-
 ## 복소곱셈이 있으면 분포가 바뀐다
 
 $y^2=x^3+1$ 은 $j=0$ 이고 $\mathbb Z[\zeta_3]$ 에 의한 복소곱셈을 갖는다. 같은 계산을 그대로 돌린다.
@@ -295,8 +224,6 @@ report("남은 각을 균등분포와 비교 (이쪽이 맞아야 한다)", nz, 
 - **CM 판정.** 위 계산이 그대로 실용적 판정법이다. $a_p=0$ 인 소수의 비율이 $\tfrac12$ 에 가까우면 복소곱셈을 의심한다.
 - **Sato–Tate 군 분류.** 아벨 다양체와 더 일반적인 동기에 대해 어떤 콤팩트군이 나타날 수 있는지를 분류하는 프로그램이 진행 중이다. 종수 2 의 $52$ 개 목록이 대표적 성과다.
 - **모듈러성 올림.** 증명에 쓰인 $R=T$ 형 정리는 Fermat 마지막 정리에서 시작된 줄기이며, 지금은 [Langlands 강령](langlands-program.md)의 표준 도구다. Sato–Tate 는 그 도구가 순수한 분포 문제를 푼 사례다.
-
-[^1]: 원 추측의 문헌은 J. Tate, *Algebraic cycles and poles of zeta functions*, in *Arithmetical Algebraic Geometry* (1965). 증명은 L. Clozel, M. Harris, R. Taylor, *Automorphy for some ℓ-adic lifts of automorphic mod ℓ Galois representations*, Publ. IHÉS **108** (2008) 및 그 후속인 M. Harris, N. Shepherd-Barron, R. Taylor, Ann. of Math. **171** (2010) 과 T. Barnet-Lamb, D. Geraghty, M. Harris, R. Taylor, Publ. RIMS **47** (2011). CM 곡선의 분포와 Serre 의 열린 상 정리는 J.-P. Serre, *Abelian ℓ-adic Representations and Elliptic Curves* (1968). 종수 2 의 Sato–Tate 군 분류는 F. Fité, K. Kedlaya, V. Rotger, A. Sutherland, *Sato–Tate distributions and Galois endomorphism modules in genus 2*, Compos. Math. **148** (2012). 본문의 수치 계산은 직접 한 것이다.
 
 # 연관 문서
 

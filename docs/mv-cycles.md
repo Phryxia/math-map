@@ -104,77 +104,6 @@ $T$ 작용의 모멘트 사상 $\Phi:\mathrm{Gr}\_G\to X_\ast(T)\otimes\mathbb R
 
 # 성질
 
-## 중복도를 두 방식으로 센다
-
-MV 순환의 개수는 조합론적으로 Gelfand–Tsetlin 패턴의 개수와 같다($\mathrm{GL}_n$ 의 경우). 그것이 Kostant 의 교대합과 실제로 같은지 $\mathfrak{gl}_3$ 에서 확인한다.
-
-```python
-from collections import Counter
-
-def gt_weights(lam):
-    """GL_3 Gelfand-Tsetlin 패턴을 세어 무게 중복도를 얻는다.
-       패턴은 lam1>=m1>=lam2>=m2>=lam3 과 m1>=n1>=m2 로 엮인다."""
-    l1, l2, l3 = lam
-    cnt = Counter()
-    for m1 in range(l2, l1+1):
-        for m2 in range(l3, l2+1):
-            for n1 in range(m2, m1+1):
-                cnt[(n1, m1+m2-n1, sum(lam)-m1-m2)] += 1
-    return cnt
-
-def kostant_P(c1, c2):
-    """A_2 의 Kostant 분할 함수: c1*a1 + c2*a2 를 양근 a1, a2, a1+a2 로 쓰는 방법 수"""
-    if c1 < 0 or c2 < 0: return 0
-    return min(c1, c2) + 1
-
-def kostant_mult(lam, mu):
-    """m = sum_w (-1)^{l(w)} P(w(lam+rho) - (mu+rho))  — 부호가 엇갈리는 여섯 항"""
-    rho = (2, 1, 0)
-    lr = tuple(lam[i] + rho[i] for i in range(3))
-    mr = tuple(mu[i]  + rho[i] for i in range(3))
-    total = 0
-    for p in [(0,1,2), (1,0,2), (0,2,1), (2,1,0), (1,2,0), (2,0,1)]:
-        sgn = 1
-        for i in range(3):
-            for j in range(i+1, 3):
-                if p[i] > p[j]: sgn = -sgn
-        d = tuple(lr[p[i]] - mr[i] for i in range(3))
-        if sum(d) != 0: continue
-        total += sgn * kostant_P(d[0], -d[2])      # d = c1*a1 + c2*a2,  c1 = d1, c2 = -d3
-    return total
-
-for lam in [(2,1,0), (3,1,0), (2,2,0), (4,2,0), (3,3,0), (5,2,0)]:
-    cnt = gt_weights(lam)
-    ok = all(kostant_mult(lam, mu) == m for mu, m in cnt.items())
-    print(f"lam={lam}:  무게 {len(cnt):3d} 개   dim = {sum(cnt.values()):3d}   "
-          f"최대 중복도 {max(cnt.values())}   Kostant 와 일치 {ok}")
-
-print()
-lam = (4, 2, 0)
-for mu, m in sorted(gt_weights(lam).items(), reverse=True)[:6]:
-    print(f"  lam={lam}  mu={mu}:  GT 패턴 {m} 개 = MV 순환 {m} 개 = Kostant {kostant_mult(lam, mu)}")
-
-# lam=(2, 1, 0):  무게   7 개   dim =   8   최대 중복도 2   Kostant 와 일치 True
-# lam=(3, 1, 0):  무게  12 개   dim =  15   최대 중복도 2   Kostant 와 일치 True
-# lam=(2, 2, 0):  무게   6 개   dim =   6   최대 중복도 1   Kostant 와 일치 True
-# lam=(4, 2, 0):  무게  19 개   dim =  27   최대 중복도 3   Kostant 와 일치 True
-# lam=(3, 3, 0):  무게  10 개   dim =  10   최대 중복도 1   Kostant 와 일치 True
-# lam=(5, 2, 0):  무게  27 개   dim =  42   최대 중복도 3   Kostant 와 일치 True
-#
-#   lam=(4, 2, 0)  mu=(4, 2, 0):  GT 패턴 1 개 = MV 순환 1 개 = Kostant 1
-#   lam=(4, 2, 0)  mu=(4, 1, 1):  GT 패턴 1 개 = MV 순환 1 개 = Kostant 1
-#   lam=(4, 2, 0)  mu=(4, 0, 2):  GT 패턴 1 개 = MV 순환 1 개 = Kostant 1
-#   lam=(4, 2, 0)  mu=(3, 3, 0):  GT 패턴 1 개 = MV 순환 1 개 = Kostant 1
-#   lam=(4, 2, 0)  mu=(3, 2, 1):  GT 패턴 2 개 = MV 순환 2 개 = Kostant 2
-#   lam=(4, 2, 0)  mu=(3, 1, 2):  GT 패턴 2 개 = MV 순환 2 개 = Kostant 2
-```
-
-차원이 전부 맞는다. $\lambda=(2,1,0)$ 은 $\mathfrak{sl}_3$ 의 수반표현이라 8, $(4,2,0)$ 은 27, $(5,2,0)$ 은 42 다. 그리고 모든 무게에서 두 계산이 일치한다.
-
-두 계산의 성격이 전혀 다르다. **GT 쪽은 세 겹 반복문으로 조건을 만족하는 패턴을 하나씩 세고, Kostant 쪽은 여섯 항을 부호와 함께 더한다.** 앞의 것은 음수가 나올 수 없는 구조이고 뒤의 것은 상쇄로만 음이 아닌 값에 도달한다. MV 순환의 존재가 보증하는 것이 앞쪽 구조이며, 개수는 같더라도 **이유가 다르다**는 것이 요점이다.
-
-$\lambda$ 가 커질수록 차이가 벌어진다. $\lambda=(5,2,0)$ 에서 최대 중복도가 3 인데, Kostant 공식은 그 3 을 얻으려고 여섯 항을 오간다. 세는 대상으로 바꾸면 그냥 세 개의 순환이 있다.
-
 ## 결정 기저와의 관계
 
 MV 순환들의 집합에 결정(crystal) 구조가 들어간다. 곧 $\tilde e_i,\tilde f_i$ 연산자가 순환들 사이에서 정의되고, 그 결과가 Kashiwara–Lusztig 의 결정 기저와 동형이다.
@@ -202,10 +131,6 @@ $\overline{\mathrm{Gr}^\lambda}$ 는 일반적으로 특이점을 갖고, 그 �
 - **산술 쪽으로의 되돌림**: Casselman–Shalika 공식처럼 함수 수준에서 계산되던 것들이 층 수준 진술의 점 개수 그림자로 이해된다. $\mathbb F_q$ 점을 세면 다시 $p$ 진 적분이 나온다.
 
 마지막 항목이 이 문서가 [기하학적 Satake](geometric-satake.md) 아래에 놓이는 이유를 다시 말해 준다. 함수에서 층으로 올라간 다음 무게까지 내려오면, 처음에 교대합으로만 알던 수가 세는 대상을 얻는다. **올라갔다 내려오는 동안 얻은 것이 그 세는 대상이다.**
-
-[^1]: I. Mirković, K. Vilonen, *Geometric Langlands duality and representations of algebraic groups over commutative rings*, Ann. of Math. **166** (2007), 95–143. 순수 차원 정리와 MV 순환이 여기 있다.
-[^2]: MV 다면체는 J. Anderson, *A polytope calculus for semisimple groups*, Duke Math. J. **116** (2003) 과 J. Kamnitzer, *Mirković–Vilonen cycles and polytopes*, Ann. of Math. **171** (2010). 결정 구조는 A. Braverman, D. Gaitsgory, *Crystals via the affine Grassmannian*, Duke Math. J. **107** (2001).
-[^3]: Kostant 중복도 공식과 Gelfand–Tsetlin 패턴의 표준 서술은 W. Fulton, J. Harris, *Representation Theory* (1991) 25 장, 또는 D. Bump, A. Schilling, *Crystal Bases* (2017). 본문의 수치 확인은 직접 한 것이다.
 
 # 연관 문서
 

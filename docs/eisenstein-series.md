@@ -163,40 +163,6 @@ $K_\nu$ 는 변형 Bessel 함수이고 $K_\nu=K_{-\nu}$ 다. 이 전개에서 �
 
 $\varphi(s)$ 의 0 점과 극은 $\zeta$ 의 0 점과 직결된다. 이 때문에 $E(z,s)$ 의 해석적 성질을 개선하는 일과 $\zeta$ 의 0 점을 이해하는 일이 같은 문제가 된다.
 
-## 상수항 수치 확인
-
-정의의 격자합에서 $x$ 방향 평균을 직접 내면 $y^s+\varphi(s)y^{1-s}$ 가 나와야 한다. $\varphi(s)$ 는 $\zeta$ 값으로 계산한다.
-
-```python
-from math import pi, gamma, gcd
-
-def zeta(s, N=400000):                      # Euler-Maclaurin 꼬리 보정
-    return sum(n**-s for n in range(1, N+1)) + (N+1)**(1-s)/(s-1)
-
-def xi(s):  return pi**(-s/2) * gamma(s/2) * zeta(s)
-def phi(s): return xi(2*s-1) / xi(2*s)
-
-def E(x, y, s, M):                          # 정의의 격자합을 |c|,|d|<=M 에서 절단
-    t = 0.0
-    for c in range(-M, M+1):
-        for d in range(-M, M+1):
-            if gcd(abs(c), abs(d)) != 1: continue
-            t += y**s / ((c*x + d)**2 + (c*y)**2)**s
-    return t/2
-
-for (y, s, M) in [(1.5, 3.0, 40), (2.0, 3.0, 40), (1.5, 4.0, 30)]:
-    K = 200
-    a0 = sum(E(k/K, y, s, M) for k in range(K)) / K      # x 에 대한 평균
-    pred = y**s + phi(s) * y**(1-s)
-    print(f"y={y} s={s}: 수치 {a0:.10f}  예측 {pred:.10f}  차이 {abs(a0-pred):.2e}")
-
-# y=1.5 s=3.0: 수치 3.9086782595  예측 3.9086784840  차이 2.24e-07
-# y=2.0 s=3.0: 수치 8.3001938151  예측 8.3001941472  차이 3.32e-07
-# y=1.5 s=4.0: 수치 5.3546258133  예측 5.3546258140  차이 7.20e-10
-```
-
-남은 오차는 격자합을 $M$ 에서 자른 탓이다. $s$ 를 키우면 꼬리가 빨리 줄어 오차도 준다. 격자를 세는 조합과 $\zeta$ 의 특수값이 이렇게 맞물리는 것이 $\varphi(s)$ 의 정체다.
-
 ## 정칙 쪽 : 명시적인 것에서 첨점형식을 만든다
 
 $M_k$ 의 차원이 작다는 사실과 $E_k$ 의 명시성을 합치면 첨점형식이 손에 들어온다. $M_{12}$ 는 2 차원이고 $E_4^3$ 과 $E_6^2$ 가 모두 상수항 1 을 가지므로 차가 첨점형식이다. 차원이 1 이므로 $\Delta$ 의 상수배일 수밖에 없다.

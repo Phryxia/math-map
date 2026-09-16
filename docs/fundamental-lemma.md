@@ -123,84 +123,6 @@ $\Delta(\gamma_H,\gamma)$ 는 Langlands–Shelstad 의 이동 인자(transfer fa
 
 # 성질
 
-## 갈라짐을 직접 센다
-
-가장 작은 예에서 갈라짐이 실제로 일어나는지 확인한다. $G=\mathrm{SL}_2$ 를 유한체 $\mathbb F_q$ 위에서 보고, 하나의 안정 켤레류(= 같은 특성다항식을 갖는 원소들)가 $\mathrm{SL}_2(\mathbb F_q)$ 켤레류 몇 개로 갈라지는지 센다.
-
-```python
-def sl2(q):
-    return [(a, b, c, d) for a in range(q) for b in range(q) for c in range(q)
-            for d in range(q) if (a*d - b*c) % q == 1]
-
-def mul(A, B, q):
-    a, b, c, d = A; e, f, g, h = B
-    return ((a*e+b*g) % q, (a*f+b*h) % q, (c*e+d*g) % q, (c*f+d*h) % q)
-
-def inv(A, q):
-    a, b, c, d = A
-    return (d % q, (-b) % q, (-c) % q, a % q)      # det = 1 이므로 여인수가 곧 역행렬
-
-def classes_in(St, G, q):
-    """St 를 SL_2(F_q)-켤레류로 쪼갠다"""
-    rem, out = set(St), []
-    while rem:
-        A = next(iter(rem))
-        orb = {mul(mul(g, A, q), inv(g, q), q) for g in G}
-        out.append(orb); rem -= orb
-    return sorted(out, key=len, reverse=True)
-
-for q in [5, 7, 11, 13]:
-    G = sl2(q)
-    regular, unipotent = set(), []
-    for t in range(q):                              # 특성다항식 x^2 - tx + 1
-        St = [A for A in G if (A[0] + A[3]) % q == t]
-        cls = classes_in(St, G, q)
-        big = sorted(len(c) for c in cls if len(c) > 1)   # 중심 원소 ±1 은 뺀다
-        if (t*t - 4) % q != 0:
-            regular.add(len(big))                   # 정칙 반단순
-        else:
-            unipotent.append((t, big))              # t = ±2
-    print(f"q={q:3d}  |SL2(F_q)| = {len(G):5d}")
-    print(f"   정칙 반단순 (t^2 != 4): 안정류 하나당 SL2-켤레류 {regular} 개")
-    for t, big in unipotent:
-        print(f"   t={t:2d} 유니포턴트: 켤레류 크기 {big}"
-              f"   ->  안정 O = {sum(big)},   kappa-O = {big[0] - big[1]}")
-
-# q=  5  |SL2(F_q)| =   120
-#    정칙 반단순 (t^2 != 4): 안정류 하나당 SL2-켤레류 {1} 개
-#    t= 2 유니포턴트: 켤레류 크기 [12, 12]   ->  안정 O = 24,   kappa-O = 0
-#    t= 3 유니포턴트: 켤레류 크기 [12, 12]   ->  안정 O = 24,   kappa-O = 0
-# q=  7  |SL2(F_q)| =   336
-#    정칙 반단순 (t^2 != 4): 안정류 하나당 SL2-켤레류 {1} 개
-#    t= 2 유니포턴트: 켤레류 크기 [24, 24]   ->  안정 O = 48,   kappa-O = 0
-#    t= 5 유니포턴트: 켤레류 크기 [24, 24]   ->  안정 O = 48,   kappa-O = 0
-# q= 11  |SL2(F_q)| =  1320
-#    정칙 반단순 (t^2 != 4): 안정류 하나당 SL2-켤레류 {1} 개
-#    t= 2 유니포턴트: 켤레류 크기 [60, 60]   ->  안정 O = 120,   kappa-O = 0
-#    t= 9 유니포턴트: 켤레류 크기 [60, 60]   ->  안정 O = 120,   kappa-O = 0
-# q= 13  |SL2(F_q)| =  2184
-#    정칙 반단순 (t^2 != 4): 안정류 하나당 SL2-켤레류 {1} 개
-#    t= 2 유니포턴트: 켤레류 크기 [84, 84]   ->  안정 O = 168,   kappa-O = 0
-#    t=11 유니포턴트: 켤레류 크기 [84, 84]   ->  안정 O = 168,   kappa-O = 0
-```
-
-두 줄이 정반대의 것을 말한다.
-
-**정칙 반단순에서는 갈라짐이 없다.** 네 소수 모두에서 안정류 하나가 $\mathrm{SL}_2(\mathbb F_q)$ 켤레류 하나다. 이유는 Lang 정리다. 유한체 위의 연결 대수군은 $H^1$ 이 자명하고, 정칙 반단순 원소의 중심화군은 연결 토러스이므로 $\mathfrak D$ 가 소멸한다. **유한체 위에서는 내시가 필요 없다.**
-
-**유니포턴트에서는 갈라진다.** $t=\pm2$ 자리의 비중심 원소들이 정확히 두 켤레류로 쪼개지고, 크기가 정확히 같다. 갈라지는 이유가 앞과 같다. 유니포턴트 원소 $u$ 의 $\mathrm{SL}_2$ 중심화군은 $\{\pm1\}\times U$ 로 **비연결**이고, 그 성분군 $\mathbb Z/2$ 가 Lang 정리를 피해 간다.
-
-$$
-u_1=\begin{pmatrix}1&1\\0&1\end{pmatrix},\qquad
-u_\epsilon=\begin{pmatrix}1&\epsilon\\0&1\end{pmatrix}\ (\epsilon\ \text{는 비제곱수})
-$$
-
-두 조각의 대표를 이렇게 잡을 수 있고, 둘을 잇는 대각행렬 $\mathrm{diag}(\sqrt\epsilon,\sqrt\epsilon^{-1})$ 가 $\mathbb F_q$ 안에 없다는 것이 전부다. 갈라짐이 $\mathbb F_q^\times/(\mathbb F_q^\times)^2\cong\mathbb Z/2$ 로 매겨진다.
-
-**그리고 $\kappa$ 궤도적분이 0 이다.** 두 조각의 크기가 같으므로 부호를 달아 더하면 상쇄된다. 유한체에서 이 문제가 자명해지는 이유이고, 동시에 진짜 내용이 어디 있는지를 가리킨다. 국소체 $F=\mathbb Q_p$ 나 $\mathbb F_q((t))$ 로 가면 사정이 달라진다. 거기서는 $H^1(F,T)$ 가 국소 유체론으로 $F^\times/N_{E/F}E^\times\cong\mathbb Z/2$ 가 되어 **정칙 반단순 타원 원소도 두 조각으로 갈라지고**, 두 조각의 궤도적분 값이 같지 않다. 그 차이가 내시군의 안정 궤도적분과 맞아야 한다는 것이 기본 보조정리다.
-
-$\mathrm{SL}_2$ 의 경우 내시군 $H$ 는 $\gamma$ 의 중심화군인 타원 토러스 $T$ 자신이고, $T$ 는 가환이므로 안정 궤도적분이 그냥 함수값이다. 등식이 "두 궤도적분의 차가 토러스 위의 어떤 명시적 양과 같다" 는 형태로 떨어지고, 이 경우는 손으로 확인된다. 계수가 커지면 손으로 세는 것이 불가능해진다.
-
 ## Ngô 의 증명
 
 핵심은 세는 대상을 바꾸는 것이다. 등표수 $F=\mathbb F_q((t))$ 에서 궤도적분 $\mathrm{O}_\gamma(\mathbf 1_K)$ 는 $\gamma$ 가 안정화시키는 아핀 Grassmann 다양체의 점들을 세는 것이고, 그 점 집합이 **아핀 Springer 올**의 $\mathbb F_q$ 점이다.
@@ -260,10 +182,6 @@ Kottwitz 의 계획은 Shimura 다양체의 Hasse–Weil zeta 함수를 자기�
 - **상대 대각합 공식**: 주기 적분과 $L$ 값을 잇는 계열(Gan–Gross–Prasad 등)에서도 같은 구조의 기본 보조정리가 필요하고, 일부는 여전히 열려 있다.
 
 기본 보조정리가 해결하고 나서 드러난 것은, 이 명제가 기술적 단계가 아니라 **국소 조화해석과 대역 기하가 만나는 자리**였다는 점이다. 문제를 유한 계산으로 보고 30 년을 보낸 뒤에야 그것이 대수기하의 문제임이 밝혀졌다.
-
-[^1]: 추측의 원형은 R. P. Langlands, D. Shelstad, *On the definition of transfer factors*, Math. Ann. **278** (1987). 여러 환원은 J.-L. Waldspurger, *Le lemme fondamental implique le transfert*, Compositio Math. **105** (1997) 와 *Endoscopie et changement de caractéristique*, J. Inst. Math. Jussieu **5** (2006).
-[^2]: 증명은 Ngô Bảo Châu, *Le lemme fondamental pour les algèbres de Lie*, Publ. Math. IHÉS **111** (2010). 개요는 같은 저자의 ICM 2010 강연록과 T. Hales, *The fundamental lemma and the Hitchin fibration* 류의 해설을 보라. Hitchin 올뭉치 쪽 배경은 N. Hitchin, *Stable bundles and integrable systems*, Duke Math. J. **54** (1987).
-[^3]: 대각합 공식 일반은 J. Arthur, *An introduction to the trace formula*, Clay Math. Proc. **4** (2005). 고전군 분류는 J. Arthur, *The Endoscopic Classification of Representations*, AMS Colloq. Publ. **61** (2013). 본문의 $\mathrm{SL}_2(\mathbb F_q)$ 계산은 직접 한 것이다.
 
 # 연관 문서
 

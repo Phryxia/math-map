@@ -171,67 +171,6 @@ Dirichlet 의 유수 공식이 "노름 1 이델류군의 부피" 한 줄로 정�
 
 # 활용
 
-## 국소 인자와 함수방정식을 수치로 확인한다
-
-세 가지를 직접 확인한다. 유한 자리 국소 적분의 곱이 $\zeta(s)$ 를 주는지, 무한 자리 국소 적분이 감마 인자를 주는지, Poisson 합공식이 준 대칭 표현이 실제로 $s\leftrightarrow1-s$ 에서 같은 값을 주는지다. 마지막 항등식
-
-$$
-\Lambda(s)=\frac1{s(s-1)}+\int_1^\infty\omega(t)\Big(t^{s/2}+t^{(1-s)/2}\Big)\frac{dt}{t},\qquad \omega(t)=\sum_{n\ge1}e^{-\pi n^2t}
-$$
-
-은 Tate 의 증명에서 $t<1$ 구간을 반사한 결과를 $K=\mathbb Q$ 로 내려 적은 것이다. 우변이 $s$ 와 $1-s$ 에 대칭인 것이 눈에 보인다.
-
-```python
-from math import pi, exp, gamma
-
-def zeta(s, N=200_000):                       # Euler 곱과 비교할 기준값
-    return sum(n ** -s for n in range(1, N + 1)) + N ** (1 - s) / (s - 1) - 0.5 * N ** -s
-
-def primes(n):
-    sieve = bytearray([1]) * (n + 1)
-    sieve[:2] = b"\x00\x00"
-    for p in range(2, int(n ** 0.5) + 1):
-        if sieve[p]:
-            sieve[p * p :: p] = bytearray(len(range(p * p, n + 1, p)))
-    return [i for i in range(n + 1) if sieve[i]]
-
-def local_finite(p, s, K=60):                 # ∫_{Z_p\{0}} |x|^s d^×x = Σ_{n≥0} p^{-ns}
-    return sum(p ** (-n * s) for n in range(K))
-
-def local_infinite(s, R=12.0, M=200_000):     # 2∫_0^∞ e^{-πx²} x^s dx/x
-    h = R / M
-    return 2 * h * sum(exp(-pi * (i * h) ** 2) * (i * h) ** (s - 1) for i in range(1, M + 1))
-
-def omega(t, N=60):                           # ω(t) = Σ_{n≥1} e^{-πn²t}
-    return sum(exp(-pi * n * n * t) for n in range(1, N + 1))
-
-def Lam(s, R=10.0, M=20_000):                 # Poisson 합공식이 준 대칭 표현
-    h = (R - 1) / M
-    acc = sum((0.5 if i in (0, M) else 1.0) * omega(1 + i * h)
-              * ((1 + i * h) ** (s / 2) + (1 + i * h) ** ((1 - s) / 2)) / (1 + i * h)
-              for i in range(M + 1))
-    return 1 / (s * (s - 1)) + acc * h
-
-s = 3.0
-prod = 1.0
-for p in primes(300_000):
-    prod *= local_finite(p, s)
-print(f"유한 자리 곱   {prod:.7f}   ζ(3) = {zeta(s):.7f}")
-print(f"무한 자리 적분 {local_infinite(s):.7f}   π^(-s/2)Γ(s/2) = {pi ** (-s/2) * gamma(s/2):.7f}")
-for s0 in (3.0, 2.5, 0.5):
-    print(f"Λ({s0:>4}) = {Lam(s0):.7f}    Λ({1-s0:>4}) = {Lam(1 - s0):.7f}")
-print(f"직접 계산 Λ(3) = {pi ** -1.5 * gamma(1.5) * zeta(3.0):.7f}")
-
-# 유한 자리 곱   1.2020569   ζ(3) = 1.2020569
-# 무한 자리 적분 0.1591549   π^(-s/2)Γ(s/2) = 0.1591549
-# Λ( 3.0) = 0.1913133    Λ(-2.0) = 0.1913133
-# Λ( 2.5) = 0.2907169    Λ(-1.5) = 0.2907169
-# Λ( 0.5) = -3.9769662    Λ( 0.5) = -3.9769662
-# 직접 계산 Λ(3) = 0.1913133
-```
-
-$s=0.5$ 에서 좌변과 우변이 같은 점을 보는 것이 특히 중요하다. 함수방정식의 대칭축이 $\mathrm{Re}(s)=1/2$ 라는 사실이 값 하나로 확인된다. 그리고 $\Lambda(3)$ 을 theta 적분으로 계산한 값과 $\pi^{-3/2}\Gamma(3/2)\zeta(3)$ 으로 계산한 값이 일치한다. 수렴 영역 밖으로 나간 표현이 원래 함수의 접속이 맞다는 뜻이다.
-
 ## 무엇이 달라졌는가
 
 고전적 증명과 비교하면 이득이 분명하다.

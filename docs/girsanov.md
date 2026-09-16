@@ -110,37 +110,6 @@ $$
 
 이며, $L$ 이 $P$ martingale 이라는 사실이 분모를 정당화한다.
 
-## 수치로 확인
-
-표류 $\theta$ 를 가진 Brown 운동의 경로를 뽑고, 밀도 $L_T$ 로 가중해 표준 Brown 운동의 기댓값을 재현한다.
-
-```python
-import math, random
-
-rng = random.Random(11)
-T, n, theta, trials = 1.0, 200, 0.8, 200000
-h = T / n
-
-def sample():
-    """P 아래: X_t = B_t + theta*t. 밀도 L_T = exp(-theta*B_T - theta^2*T/2)."""
-    b = 0.0
-    for _ in range(n):
-        b += rng.gauss(0, math.sqrt(h))
-    x = b + theta * T
-    L = math.exp(-theta * b - 0.5 * theta**2 * T)
-    return x, L
-
-num = den = 0.0
-for _ in range(trials):
-    x, L = sample()
-    num += L * x**2        # E_Q[X_T^2] = E_P[L_T * X_T^2]
-    den += L               # E_P[L_T] = 1 이어야 한다
-print(round(den / trials, 4), round(num / trials, 4))
-# 0.998 0.9987
-```
-
-가중치의 평균이 1 이고, $X_T$ 의 이차 적률이 $Q$ 아래에서 $T = 1$ 로 나온다. $Q$ 에서 $X$ 가 표준 Brown 운동이라는 진술의 수치적 확인이다. 가중치를 빼고 계산하면 $\mathbb E_P[X_T^2] = T + \theta^2T^2 = 1.64$ 가 나와야 한다.
-
 ## 이산 시간과의 대응
 
 | 이산 | 연속 |

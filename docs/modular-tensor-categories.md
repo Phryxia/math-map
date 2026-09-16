@@ -110,65 +110,6 @@ $$
 
 # 성질
 
-## Verlinde 공식을 직접 확인하기
-
-가장 익숙한 예가 $\mathrm{SU}(2)_k$ 곧 레벨 $k$ 의 아핀 $\mathfrak{sl}_2$ 에서 나오는 MTC 다. 단순대상은 $k+1$ 개이고 라벨 $i=0,\dots,k$ 는 스핀의 두 배다. $S$ 행렬이 사인으로 주어진다.
-
-$$
-S_{ij}=\sqrt{\frac2{k+2}}\,\sin\!\frac{\pi(i+1)(j+1)}{k+2}
-$$
-
-한편 융합 규칙은 [Weyl 지표 공식](weyl-character-formula.md)의 텐서곱 분해를 레벨 $k$ 에서 잘라낸 것이다.
-
-$$
-X_i\otimes X_j=\bigoplus_{l}X_l,\qquad l=|i-j|,|i-j|+2,\dots,\min(i+j,\,2k-i-j)
-$$
-
-앞쪽 끝은 보통의 Clebsch–Gordan 규칙이고, 뒤쪽 끝의 $2k-i-j$ 가 레벨에 의한 잘림이다. 두 자료가 Verlinde 공식으로 이어지는지 수치로 확인한다.
-
-```python
-from math import sin, pi, sqrt
-
-def S_matrix(k):
-    """SU(2)_k 의 S 행렬. 라벨 i = 0..k 는 스핀의 두 배"""
-    n = k + 1
-    return [[sqrt(2 / (k + 2)) * sin(pi * (i + 1) * (j + 1) / (k + 2))
-             for j in range(n)] for i in range(n)]
-
-def verlinde(k, i, j, l):
-    """N_{ij}^l = sum_m S_im S_jm S_lm / S_0m  (S 가 실대칭이라 켤레 생략)"""
-    S = S_matrix(k)
-    return sum(S[i][m] * S[j][m] * S[l][m] / S[0][m] for m in range(k + 1))
-
-def fusion_rule(k, i, j):
-    """알려진 융합 규칙: |i-j| 부터 min(i+j, 2k-i-j) 까지 2 씩"""
-    return list(range(abs(i - j), min(i + j, 2 * k - i - j) + 1, 2))
-
-for k in [1, 2, 3, 5, 8]:
-    integral, matches = True, True
-    for i in range(k + 1):
-        for j in range(k + 1):
-            vals = [verlinde(k, i, j, l) for l in range(k + 1)]
-            if any(abs(v - round(v)) > 1e-9 for v in vals): integral = False
-            if [l for l, v in enumerate(vals) if round(v) == 1] != fusion_rule(k, i, j):
-                matches = False
-    print(f"SU(2)_{k}:  전부 정수 {integral},  융합규칙과 일치 {matches}")
-
-print("k=3, N_{1,1}^l:", [round(abs(verlinde(3, 1, 1, l)), 9) for l in range(4)])
-print("k=3, N_{3,2}^l:", [round(abs(verlinde(3, 3, 2, l)), 9) for l in range(4)])
-# SU(2)_1:  전부 정수 True,  융합규칙과 일치 True
-# SU(2)_2:  전부 정수 True,  융합규칙과 일치 True
-# SU(2)_3:  전부 정수 True,  융합규칙과 일치 True
-# SU(2)_5:  전부 정수 True,  융합규칙과 일치 True
-# SU(2)_8:  전부 정수 True,  융합규칙과 일치 True
-# k=3, N_{1,1}^l: [1.0, 0.0, 1.0, 0.0]
-# k=3, N_{3,2}^l: [0.0, 1.0, 0.0, 0.0]
-```
-
-사인 값들의 비를 더해서 오차 $10^{-9}$ 안에서 정확히 $0$ 과 $1$ 이 나온다. 초월수들의 합이 정수가 되어야 할 이유는 공식만 보아서는 전혀 없고, 그 정수성이 곧 왼쪽에 범주가 있다는 사실의 흔적이다. Verlinde 공식은 원래 등각장론에서 추측으로 제안되었고, 이 정수성이 그 추측을 믿게 만든 첫 근거였다.
-
-$k=3$ 의 $N_{1,1}^l=[1,0,1,0]$ 은 $X_1\otimes X_1=\mathbf1\oplus X_2$ 를 뜻한다. 스핀 $1/2$ 두 개가 스핀 $0$ 과 $1$ 로 분해되는 보통의 규칙이고, 레벨이 충분히 커서 잘림이 일어나지 않았다. $N_{3,2}^l=[0,1,0,0]$ 은 $X_3\otimes X_2=X_1$ 인데, 보통의 규칙이라면 $X_1\oplus X_3\oplus X_5$ 가 나와야 할 자리에서 $2k-i-j=1$ 이 상한이라 한 항만 남은 것이다. 잘림이 실제로 작동한다.
-
 ## 예와 분류
 
 | MTC | 단순대상 수 | 비고 |

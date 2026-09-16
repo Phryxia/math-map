@@ -95,54 +95,6 @@ $$
 
 로그가능도는 $\ln|C| + \mathrm{tr}(C^{-1}S)$ 의 부호를 바꾼 것에 상수를 더한 형태다. 어느 $q$ 개를 남기든 대각화된 좌표에서 $\mathrm{tr}(C^{-1}S) = d$ 로 같으므로, 선택은 $\ln|C|$ 만으로 갈린다. 버린 고유값들의 산술평균이 기하평균 이상이라는 사실에서 상위 $q$ 개를 남기는 것이 최적임이 나온다.
 
-## 수치로 확인
-
-고유값이 주어졌을 때 어떤 $q$ 개를 남길지에 따라 가능도가 어떻게 달라지는지 전부 계산한다.
-
-```python
-import math
-from itertools import combinations
-
-lam = [6.0, 3.0, 1.2, 0.8, 0.5]     # 표본 공분산의 고유값(내림차순)
-d, q = len(lam), 2
-
-def neg_loglik(keep):
-    """상수를 뺀 -2/N * 로그가능도 = ln|C| + tr(C^{-1}S)."""
-    rest = [lam[i] for i in range(d) if i not in keep]
-    s2 = sum(rest) / len(rest)
-    logdet = sum(math.log(lam[i]) for i in keep) + len(rest) * math.log(s2)
-    trace = len(keep) + sum(r / s2 for r in rest)
-    return logdet + trace
-
-best = min(combinations(range(d), q), key=neg_loglik)
-for keep in combinations(range(d), q):
-    mark = " <-- 최소" if keep == best else ""
-    print(keep, round(neg_loglik(keep), 4), mark)
-
-rest = lam[q:]
-s2 = sum(rest) / len(rest)
-W = [math.sqrt(lam[i] - s2) for i in range(q)]        # 고유기저에서의 W 열벡터 길이
-C = [W[i] ** 2 + s2 for i in range(q)] + [s2] * (d - q)
-print("sigma^2 =", round(s2, 4))
-print("C 대각 =", [round(c, 4) for c in C])
-print("S 대각 =", lam)
-# (0, 1) 7.3434  <-- 최소
-# (0, 2) 8.0541
-# (0, 3) 7.9155
-# (0, 4) 7.6311
-# (1, 2) 8.9487
-# (1, 3) 8.7033
-# (1, 4) 8.348
-# (2, 3) 8.4172
-# (2, 4) 8.0405
-# (3, 4) 7.755
-# sigma^2 = 0.8333
-# C 대각 = [6.0, 3.0, 0.8333, 0.8333, 0.8333]
-# S 대각 = [6.0, 3.0, 1.2, 0.8, 0.5]
-```
-
-상위 두 개를 남길 때 가능도가 최대다. 모형 공분산은 남긴 두 고유값을 정확히 재현하고 버린 셋을 평균 $0.8333$ 으로 대체한다. 앞 절의 두 주장이 그대로 확인된다.
-
 ## EM 알고리즘
 
 고유분해를 하지 않고도 해를 얻을 수 있다. 잠재변수를 결측으로 보고 EM 을 돌린다.

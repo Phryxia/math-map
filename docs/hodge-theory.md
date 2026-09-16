@@ -170,59 +170,6 @@ $$
 
 곡률이라는 국소적 조건이 구멍의 개수라는 전역적 결론을 강제한다. Hodge 정리 없이는 이런 논증이 불가능하다. 곡률은 미분방정식의 계수에만 나타나고, 그 정보를 위상으로 옮기는 통로가 조화형식이기 때문이다.
 
-## 이산판으로 확인
-
-단체 복합체 위에서 $d$ 를 경계사상의 전치로 두면 같은 이야기가 유한차원 선형대수가 된다. $\Delta_k=\partial_{k+1}\partial_{k+1}^{\mathsf T}+\partial_k^{\mathsf T}\partial_k$ 의 핵의 차원이 Betti 수여야 한다.
-
-```python
-import numpy as np
-from itertools import combinations
-
-def boundary(faces_k, faces_km1):
-    """∂_k : C_k -> C_{k-1}. 단체는 정렬된 튜플, 부호는 뺀 꼭짓점 위치로."""
-    idx = {f: i for i, f in enumerate(faces_km1)}
-    D = np.zeros((len(faces_km1), len(faces_k)))
-    for j, f in enumerate(faces_k):
-        for i in range(len(f)):
-            D[idx[f[:i] + f[i+1:]], j] = (-1) ** i
-    return D
-
-def betti(complex_):
-    """complex_[k] = k 단체 목록. dim ker Delta_k 를 센다."""
-    out = []
-    for k in range(len(complex_)):
-        n = len(complex_[k])
-        L = np.zeros((n, n))
-        if k > 0:                                   # delta*d 쪽: ∂_k^T ∂_k
-            Dk = boundary(complex_[k], complex_[k-1])
-            L += Dk.T @ Dk
-        if k + 1 < len(complex_):                   # d*delta 쪽: ∂_{k+1} ∂_{k+1}^T
-            Dk1 = boundary(complex_[k+1], complex_[k])
-            L += Dk1 @ Dk1.T
-        out.append(int(np.sum(np.linalg.eigvalsh(L) < 1e-9)))
-    return out
-
-V = tuple(range(4))
-sphere = [                                           # 사면체의 경계 = S^2
-    [(v,) for v in V],
-    list(combinations(V, 2)),
-    list(combinations(V, 3)),
-]
-circle = [[(0,), (1,), (2,)], [(0, 1), (1, 2), (0, 2)]]              # S^1
-disk = [[(0,), (1,), (2,)], [(0, 1), (1, 2), (0, 2)], [(0, 1, 2)]]   # 원판
-
-for name, K in [("S^1", circle), ("원판", disk), ("S^2", sphere)]:
-    print(f"{name:>4}: dim ker Delta_k = {betti(K)}")
-
-# S^1: dim ker Delta_k = [1, 1]
-#  원판: dim ker Delta_k = [1, 0, 0]
-# S^2: dim ker Delta_k = [1, 0, 1]
-```
-
-$S^1$ 은 구멍 하나라 $b_1=1$ 이고, 삼각형을 메운 원판은 $b_1=0$ 이며, 구는 $b_0=b_2=1$ 이고 $b_1=0$ 이다. $S^2$ 의 결과에서 $b_0=b_2$ 가 보이는데 이것이 Poincaré 쌍대성의 이산판이며, $\star$ 에 해당하는 것이 삼각분할의 쌍대 복합체다.
-
-이산판에서는 타원 정칙성이 필요 없다. 유한차원이라 $\ker\Delta=\ker\partial^{\mathsf T}\cap\ker\partial$ 와 직교분해가 선형대수로 끝난다. 매끄러운 경우의 모든 어려움이 무한차원이라는 점 하나에서 온다는 것을 이 대비가 보여 준다.
-
 # 활용
 
 ## 스펙트럼 기하

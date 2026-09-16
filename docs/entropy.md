@@ -78,34 +78,6 @@ $$
 
 $H(f(X)) \le H(X)$ 이고, $f$ 가 단사이면 등호다. 데이터를 가공해서 없던 정보를 만들 수 없다는 진술이며, 처리 부등식의 가장 단순한 형태다.
 
-## 항등식 확인
-
-무작위 결합분포를 하나 만들어 연쇄법칙과 조건화 부등식, 상호정보량의 두 표현이 일치하는지 확인한다.
-
-```python
-import math, random
-
-rng = random.Random(11)
-A, B = 3, 4
-w = [[rng.random() for _ in range(B)] for _ in range(A)]
-s = sum(sum(row) for row in w)
-P = [[x / s for x in row] for row in w]                  # 결합분포
-
-H = lambda ps: -sum(p * math.log2(p) for p in ps if p > 0)
-px = [sum(row) for row in P]                             # 주변분포
-py = [sum(P[i][j] for i in range(A)) for j in range(B)]
-
-hx, hy = H(px), H(py)
-hxy = H([P[i][j] for i in range(A) for j in range(B)])
-hx_y = sum(py[j] * H([P[i][j] / py[j] for i in range(A)]) for j in range(B))
-
-print(round(hy + hx_y, 4), round(hxy, 4))      # 3.4239 3.4239  연쇄법칙
-print(round(hx_y, 4), round(hx, 4))            # 1.4503 1.5712  H(X|Y) ≤ H(X)
-print(round(hx - hx_y, 4), round(hx + hy - hxy, 4))   # 0.1209 0.1209  상호정보량
-```
-
-세 번째 줄에서 상호정보량의 두 정의가 같은 값을 준다. 무작위로 만든 분포라 $X$ 와 $Y$ 가 거의 독립에 가깝고, 그래서 $I$ 가 작게 나온다.
-
 # 활용
 
 ## 압축의 한계

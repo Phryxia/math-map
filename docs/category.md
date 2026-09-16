@@ -70,32 +70,6 @@ $\mathbf{Set}$ 에서 mono 는 단사함수, epi 는 전사함수와 일치하�
 
 "모든 집합의 집합" 이 존재할 수 없듯이 큰 범주를 다룰 때는 크기에 주의해야 한다. 국소적으로 작음을 요구하거나 Grothendieck 우주를 도입하는 것이 표준적인 처방이며, [ZFC 공리계](zfc-axioms.md)에서 제한한 것과 같은 종류의 문제다.
 
-## 직접 확인
-
-나누어떨어짐 순서를 범주로 보고 공리를 확인한 뒤, 유한집합의 범주에서 mono 가 단사함수와 같은지 전수 조사한다.
-
-```python
-from itertools import product
-
-obj = [1, 2, 3, 6]                                    # 나누어떨어짐 부분순서
-hom = [(a, b) for a in obj for b in obj if b % a == 0]  # a → b 는 a | b 일 때 하나
-print(len(hom))                                       # 9
-print(all((a, c) in hom for (a, b) in hom for (b2, c) in hom if b == b2),
-      all((a, a) in hom for a in obj))                # True True  합성과 항등
-
-A, B, C = [0, 1], [0, 1, 2], [0, 1]
-funcs = lambda X, Y: [dict(zip(X, t)) for t in product(Y, repeat=len(X))]
-
-for f in funcs(A, B):
-    # mono: f∘g = f∘h 인데 g ≠ h 인 반례가 없다
-    mono = not any(g != h and {x: f[g[x]] for x in C} == {x: f[h[x]] for x in C}
-                   for g in funcs(C, A) for h in funcs(C, A))
-    assert mono == (len(set(f.values())) == len(A))    # 단사와 정확히 일치
-print("mono = 단사")
-```
-
-두 번째 실험이 보여 주는 것은 "원소를 보지 않고 사상만으로 단사성을 표현할 수 있다" 는 사실이다. 소거 조건은 어느 범주에서나 쓸 수 있으므로, 원소라는 개념이 없는 곳에서도 같은 질문을 던질 수 있다.
-
 # 활용
 
 ## 분야를 가로지르는 번역

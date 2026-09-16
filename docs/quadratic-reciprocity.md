@@ -145,45 +145,9 @@ $$
 
 오른쪽을 보충 법칙으로 풀면 상호법칙이다. 표수가 다른 두 체에서 같은 Gauss 합을 계산한 것이 다리 역할을 했다. $\mathbb Q(\zeta_p)$ 에서의 계산으로 읽으면 앞 절의 Galois 이론 설명과 같은 내용이다.
 
-## 수치로 확인
+## Gauss 합의 크기와 부호
 
-```python
-import cmath
-
-def legendre(a, p):
-    """Euler 판정법: a^((p-1)/2) mod p 는 1, -1, 0 중 하나."""
-    r = pow(a % p, (p - 1) // 2, p)
-    return -1 if r == p - 1 else r
-
-primes = [p for p in range(3, 200)
-          if all(p % d for d in range(2, int(p**0.5) + 1))]
-
-# 상호법칙: (p|q)(q|p) = (-1)^((p-1)/2 * (q-1)/2)
-bad = [(p, q) for p in primes for q in primes if p < q
-       if legendre(p, q) * legendre(q, p) != (-1) ** ((p-1)//2 * (q-1)//2)]
-pairs = sum(1 for p in primes for q in primes if p < q)
-print(f"홀소수 쌍 {pairs}개 전부 확인, 반례 {len(bad)}개")
-
-# 보충 법칙
-print("(-1|p) 반례:", [p for p in primes if legendre(-1, p) != (-1) ** ((p-1)//2)])
-print(" (2|p) 반례:", [p for p in primes if legendre(2, p) != (-1) ** ((p*p-1)//8)])
-
-# Gauss 합 g = sum_a (a|p) zeta^a 는 g^2 = (-1)^((p-1)/2) p
-for p in [5, 7, 11, 13]:
-    z = cmath.exp(2j * cmath.pi / p)
-    g = sum(legendre(a, p) * z ** a for a in range(1, p))
-    print(f"p={p:>2}: g = {g:.4f}, g^2 = {g*g:.4f}, p* = {(-1)**((p-1)//2) * p}")
-
-# 홀소수 쌍 990개 전부 확인, 반례 0개
-# (-1|p) 반례: []
-#  (2|p) 반례: []
-# p= 5: g = 2.2361-0.0000j, g^2 = 5.0000-0.0000j, p* = 5
-# p= 7: g = 0.0000+2.6458j, g^2 = -7.0000+0.0000j, p* = -7
-# p=11: g = 0.0000+3.3166j, g^2 = -11.0000+0.0000j, p* = -11
-# p=13: g = 3.6056-0.0000j, g^2 = 13.0000-0.0000j, p* = 13
-```
-
-$g$ 가 $p\equiv1\pmod4$ 면 실수 $\sqrt p$ 로, $p\equiv3\pmod4$ 면 순허수 $i\sqrt p$ 로 나온다. 절댓값이 $\sqrt p$ 라는 사실만으로도 이미 놀랍다. $p-1$ 개의 단위근을 부호만 바꿔 더했는데 무작위 행보의 기댓값인 $\sqrt p$ 규모가 정확히 나온다는 뜻이다.
+$g$ 는 $p\equiv1\pmod4$ 면 실수 $\sqrt p$ 이고, $p\equiv3\pmod4$ 면 순허수 $i\sqrt p$ 다. 절댓값이 $\sqrt p$ 라는 사실만으로도 이미 놀랍다. $p-1$ 개의 단위근을 부호만 바꿔 더했는데 무작위 행보의 기댓값인 $\sqrt p$ 규모가 정확히 나온다는 뜻이다.
 
 부호까지 결정하는 것은 훨씬 어렵고, Gauss 가 답을 추측한 뒤 증명까지 4 년이 걸렸다. $g$ 가 항상 $+\sqrt p$ 또는 $+i\sqrt p$ 라는 것이 그 결론이며, 상호법칙 자체에는 $g^2$ 만 있으면 되므로 부호는 필요하지 않다.
 

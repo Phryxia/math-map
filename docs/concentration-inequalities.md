@@ -183,33 +183,8 @@ $$
 
 이면 충분하다. 가설 개수에 로그로만 의존한다는 결론이 PAC 학습 가능성의 출발점이다. 무한 가설류에서는 $\log|H|$ 자리에 VC 차원이나 Rademacher 복잡도가 들어가고, 경험 과정 전체의 상한에 McDiarmid 부등식을 적용해 집중을 보장한다. [가설검정과 p-값](hypothesis-testing.md)이나 [신뢰구간](confidence-intervals.md)에서 분포 가정 없이 유한 표본 보장을 얻고 싶을 때도 같은 부등식을 쓴다.
 
-## 시뮬레이션
-
-동전 던지기 평균이 Hoeffding 경계 안에 들어가는지 확인하는 짧은 실험이다. 경계는 모든 $n$ 에서 유효하며 통상 상당히 보수적이다.
-
-```python
-import math, random
-
-def tail_fraction(n, eps, trials=200_000, seed=1):
-    rng = random.Random(seed)
-    hits = 0
-    for _ in range(trials):
-        s = sum(rng.random() < 0.5 for _ in range(n))
-        if abs(s / n - 0.5) >= eps:
-            hits += 1
-    return hits / trials
-
-eps = 0.1
-for n in (25, 100, 400):
-    emp = tail_fraction(n, eps)
-    hoeffding = 2 * math.exp(-2 * n * eps**2)
-    chebyshev = 0.25 / (n * eps**2)
-    print(f"n={n:4d}  실측={emp:.4f}  Hoeffding={hoeffding:.4f}  Chebyshev={chebyshev:.4f}")
-```
-
-전형적인 출력에서 실측값은 Hoeffding 경계보다 몇 배 작고, Chebyshev 경계는 $n$ 이 커질수록 급격히 쓸모없어진다. $n$ 을 두 배로 늘릴 때 실측 꼬리가 제곱 규모로 줄어드는 것이 지수 경계의 형태와 일치한다.
-
 [^1]: Gábor Lugosi, Concentration-of-measure inequalities (lecture notes), https://www.upf.edu/documents/298368705/0/anu.pdf
+
 [^2]: Rick Durrett, Probability: Theory and Examples (5th ed.), https://sites.math.duke.edu/~rtd/PTE/PTE5_011119.pdf
 
 # 연관 문서

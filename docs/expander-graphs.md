@@ -125,78 +125,6 @@ expander 그래프에서 만든 부호(expander code, Sipser–Spielman)는 선�
 
 # 활용
 
-## Cheeger 부등식을 수치로 확인한다
-
-작은 정규 그래프 몇 개에서 전도도를 전수 계산하고, 스펙트럼 간극을 멱승법으로 구해 부등식의 양쪽을 확인한다. 전도도는 부분집합을 모두 훑어야 하므로 $2^n$ 이 들고, 간극은 행렬-벡터 곱 몇 백 번이면 된다. 이 비용 차이가 스펙트럼 방법을 쓰는 이유 그 자체다.
-
-```python
-from itertools import combinations
-import random
-
-def spectral_gap(adj, d):
-    """d-정규 그래프의 1 - λ2.  M=(I+A/d)/2 로 옮겨 고윳값을 [0,1] 에 두고
-    전체 1 벡터에 직교하는 공간에서 멱승법을 돌린다."""
-    n = len(adj)
-    rng = random.Random(7)
-    v = [rng.gauss(0, 1) for _ in range(n)]
-    def project(x):                       # 1 벡터 성분을 제거한다
-        m = sum(x) / n
-        return [xi - m for xi in x]
-    def step(x):
-        return [0.5 * x[i] + 0.5 * sum(x[j] for j in nb) / d
-                for i, nb in enumerate(adj)]
-    v, lam = project(v), 0.0
-    for _ in range(4000):
-        w = project(step(v))
-        nrm = max(abs(t) for t in w)
-        if nrm < 1e-14:
-            return 1.0
-        v, lam = [t / nrm for t in w], nrm
-    return 1 - (2 * lam - 1)              # lam = (1+λ2)/2
-
-def conductance(adj, d):
-    """전도도를 부분집합 전수로 계산한다."""
-    n, best = len(adj), 1.0
-    for r in range(1, n // 2 + 1):
-        for S in combinations(range(n), r):
-            Ss = set(S)
-            cut = sum(1 for i in S for j in adj[i] if j not in Ss)
-            best = min(best, cut / (d * len(S)))
-    return best
-
-def cycle(n):
-    return [[(i - 1) % n, (i + 1) % n] for i in range(n)]
-
-def complete(n):
-    return [[j for j in range(n) if j != i] for i in range(n)]
-
-def hypercube(k):
-    return [[i ^ (1 << b) for b in range(k)] for i in range(1 << k)]
-
-PETERSEN = [[1,4,5],[0,2,6],[1,3,7],[2,4,8],[0,3,9],
-            [0,7,8],[1,8,9],[2,5,9],[3,5,6],[4,6,7]]
-
-print("그래프        d   간극 1-λ₂   전도도 h    h²/2      2h")
-for name, adj, d in [("C_12", cycle(12), 2), ("K_8", complete(8), 7),
-                     ("Petersen", PETERSEN, 3), ("Q_4", hypercube(4), 4)]:
-    g, h = spectral_gap(adj, d), conductance(adj, d)
-    ok = h * h / 2 - 1e-9 <= g <= 2 * h + 1e-9
-    print(f"{name:10s} {d:3d} {g:10.4f} {h:10.4f} {h*h/2:9.4f} {2*h:8.4f}  "
-          f"{'OK' if ok else 'VIOLATION'}")
-
-# 그래프        d   간극 1-λ₂   전도도 h    h²/2      2h
-# C_12         2     0.1340     0.1667    0.0139   0.3333  OK
-# K_8          7     1.1429     0.5714    0.1633   1.1429  OK
-# Petersen     3     0.6667     0.3333    0.0556   0.6667  OK
-# Q_4          4     0.5000     0.2500    0.0312   0.5000  OK
-```
-
-값들이 이론과 맞는다. $C_{12}$ 의 간극은 $1-\cos(2\pi/12)\approx0.134$ 이고, Petersen 그래프는 $\lambda_2=1/3$ 이라 간극이 $2/3$ 이고, 4 차원 초입방체는 $\lambda_2=1/2$ 라 간극이 $1/2$ 다.
-
-세 그래프에서 간극이 상한 $2h$ 에 정확히 닿는 것이 눈에 띈다. 대칭성이 높은 그래프에서는 최적 절단이 고유벡터의 부호와 정확히 일치해 부등식이 등호가 된다. 반대로 $C_{12}$ 에서는 $h^2/2=0.014$ 와 $2h=0.33$ 사이가 넓고 실제 값 $0.134$ 가 그 사이에 있다. Cheeger 부등식이 두 방향 모두에서 헐거울 수 있다는 것을 보여 준다.
-
-정작 중요한 것은 비용이다. 전도도는 $2^{12}$ 개 부분집합을 훑어 얻었고 간극은 행렬-벡터 곱 몇 천 번으로 얻었다. 정점이 수만 개가 되면 앞의 방법은 불가능하고 뒤의 방법은 여전히 가볍다.
-
 ## 어디에 쓰이는가
 
 - **무작위성 절약**: expander 걷기로 증폭하면 무작위 비트를 상수 개씩만 더 쓰고도 오류가 지수적으로 준다.
@@ -204,9 +132,6 @@ for name, adj, d in [("C_12", cycle(12), 2), ("K_8", complete(8), 7),
 - **오류정정부호**: expander 부호는 선형 시간 복호가 가능하고, 최근의 국소 검사 가능 부호와 양자 LDPC 구성의 뼈대다.
 - **분산 시스템과 네트워크**: 상수 차수로 지름이 로그인 위상은 통신망과 P2P 오버레이의 이상적 설계다.
 - **스펙트럼 클러스터링**: Cheeger 부등식의 증명에 나오는 "고유벡터로 정렬하고 자른다" 가 그대로 알고리즘이 된다.
-
-[^1]: S. Hoory, N. Linial, A. Wigderson, *Expander graphs and their applications*, Bull. AMS 43 (2006). 표준 개관.
-[^2]: A. Lubotzky, R. Phillips, P. Sarnak, *Ramanujan graphs*, Combinatorica 8 (1988). 명시적 최적 구성.
 
 # 연관 문서
 

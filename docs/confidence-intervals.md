@@ -163,44 +163,6 @@ $k$ 개의 모수 각각에 95% 구간을 만들면, 모두가 동시에 참값�
 
 # 활용
 
-## 피복률을 시뮬레이션으로 확인하기
-
-신뢰구간의 주장은 반복표집에 대한 것이므로 그대로 시뮬레이션할 수 있다. 정규 평균의 t 구간과 이항비율의 두 구간을 비교한다.
-
-```python
-import numpy as np
-from scipy import stats
-
-rng = np.random.default_rng(0)
-z = stats.norm.ppf(0.975)
-
-def coverage_t(n, mu=0.0, sigma=1.0, reps=20000):
-    x = rng.normal(mu, sigma, size=(reps, n))
-    m, s = x.mean(1), x.std(1, ddof=1)
-    half = stats.t.ppf(0.975, n - 1) * s / np.sqrt(n)
-    return np.mean((m - half <= mu) & (mu <= m + half))
-
-def coverage_binom(n, p, kind, reps=20000):
-    x = rng.binomial(n, p, size=reps)
-    ph = x / n
-    if kind == "wald":
-        half = z * np.sqrt(ph * (1 - ph) / n)
-        lo, hi = ph - half, ph + half
-    else:  # wilson
-        c = (ph + z**2 / (2*n)) / (1 + z**2 / n)
-        half = z / (1 + z**2 / n) * np.sqrt(ph*(1-ph)/n + z**2/(4*n**2))
-        lo, hi = c - half, c + half
-    return np.mean((lo <= p) & (p <= hi))
-
-print("정규 t 구간 n=10 :", round(coverage_t(10), 4))       # 약 0.95
-print("정규 t 구간 n=100:", round(coverage_t(100), 4))      # 약 0.95
-for p in (0.5, 0.1, 0.02):
-    print("n=50, p=%.2f  Wald %.4f  Wilson %.4f"
-          % (p, coverage_binom(50, p, "wald"), coverage_binom(50, p, "wilson")))
-```
-
-t 구간은 정규가정이 맞으므로 모든 $n$ 에서 0.95 근처에 붙는다. 이항에서는 $p$ 가 0 에 가까울수록 Wald 의 피복률이 0.95 아래로 크게 내려가는 반면 Wilson 은 훨씬 안정적이다. 정규가정을 깨서(예: 지수분포 표본) 같은 실험을 돌리면 작은 $n$ 에서 t 구간의 피복률도 무너지는 것을 볼 수 있다. 이것이 "CLT 기반 근사"의 유효 범위를 눈으로 확인하는 방법이다.
-
 ## 다른 곳으로의 연결
 
 - **회귀**: [선형회귀와 최소제곱법](linear-regression.md)의 계수 추정량은 정규오차 아래 정확히 정규분포를 따르므로 각 계수에 t 구간이 붙는다. 예측값에는 평균에 대한 신뢰구간과 개별 관측에 대한 예측구간이 따로 있다.

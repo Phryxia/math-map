@@ -131,44 +131,6 @@ alien 미분들은 자유 Lie 대수를 이루고, 그 지수사상이 Stokes �
 
 # 활용
 
-## Airy 계수에서 되살아남을 본다
-
-[Airy 함수](airy-functions.md)의 점근급수 계수 $u_k$ 는 자기 자신으로 되살아나는 가장 깔끔한 예다. 두 안장점이 대칭이라 $k=1$ sector 의 급수가 $k=0$ sector 의 급수와 부호만 다르고, large-order 관계가
-
-$$
-u_k \;\approx\; \frac{1}{2\pi}\sum_{m \ge 0}(-1)^m\,u_m\,\frac{\Gamma(k-m)}{2^{\,k-m}}
-$$
-
-로 닫힌다. $A = 2$ 는 두 안장점의 작용 차이를 $\zeta = \tfrac23 z^{3/2}$ 단위로 잰 값이다. 오른쪽 합은 $u_k$ 자신을 포함하지 않으므로($m < k$ 항만 기여가 크다) 이것은 순환논증이 아니라 검증 가능한 예측이다.
-
-```python
-import math
-
-N = 30
-u = [1.0]
-for k in range(1, N):
-    u.append(u[-1] * (6 * k - 5) * (6 * k - 3) * (6 * k - 1) / (216 * k * (2 * k - 1)))
-
-def predict(k, M):
-    """large-order 관계의 오른쪽을 M 항까지."""
-    return sum((-1) ** m * u[m] * math.gamma(k - m) / 2 ** (k - m)
-               for m in range(M)) / (2 * math.pi)
-
-print(" k    M=1        M=2        M=4        M=6     (상대오차)")
-for k in (10, 15, 20, 25):
-    errs = [abs(predict(k, M) - u[k]) / u[k] for M in (1, 2, 4, 6)]
-    print(f"{k:2d}  " + "  ".join(f"{e:.2e}" for e in errs))
-
-# Stokes 상수를 거꾸로 읽어 내기: u_k * 2^k / Gamma(k) -> 1/(2 pi)
-print("\n 계수에서 읽은 Stokes 상수 (참값 1/(2pi) = %.8f)" % (1 / (2 * math.pi)))
-for k in (10, 20, 29):
-    print(f"  k={k:2d}:  {u[k] * 2 ** k / math.gamma(k):.8f}")
-```
-
-M=1, 즉 주도항만 쓰면 $k=25$ 에서 상대오차가 $5.6\times10^{-3}$ 이다. 이것이 고전적인 계수 성장 공식이 주는 정확도다. 보정항을 여섯 개까지 넣으면 오차가 $1.5\times10^{-7}$ 로 떨어진다. 넣은 보정항이 다른 급수에서 통째로 빌려 온 것이고 자유 매개변수가 하나도 없다는 점이 요점이다. 한 급수의 계수 안에 다른 급수가 실제로 들어앉아 있음을 네 자리 이상 정확하게 확인한 셈이다.
-
-마지막 표는 방향을 뒤집어, 계수만 보고 Stokes 상수를 읽는다. $k=29$ 에서 $0.15839$ 로 참값 $0.15915$ 에 다가가지만 수렴이 $1/k$ 규모로 느린데, 이는 위 표의 $M \ge 2$ 보정항을 통째로 무시한 탓이다. 실제 계산에서는 이 자리에 Richardson 외삽을 걸어 몇 자리를 더 얻는다. 함수를 전혀 모르고 급수 계수만 아는 상황에서 지수적으로 작은 항의 크기를 알아내는 표준 절차가 이것이다.
-
 ## 섭동론의 비섭동 효과
 
 양자역학의 이중우물에서 섭동급수는 발산하고, 그 발산률이 instanton 작용 $S_I$ 를 가리킨다. Bridge equation 은 섭동 sector 와 instanton sector, instanton–반instanton sector 사이의 관계를 전부 고정하며, 각 sector 의 허수 애매성이 상쇄되어 에너지 준위가 실수로 잘 정의됨을 보인다. 계수 몇십 개를 계산해 instanton 기여의 계수를 예측하고 독립 계산과 맞춰 보는 것이 이 분야의 표준 검산이다.

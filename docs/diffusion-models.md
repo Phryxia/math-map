@@ -133,48 +133,6 @@ $$
 
 단계를 줄이는 방향이 활발하다. 결정적 표본기(DDIM), 고차 ODE 해법, 그리고 다단계 모형을 한두 단계 모형으로 압축하는 증류가 쓰인다. 일관성 모형처럼 한 단계 생성을 목표로 설계된 변형도 나왔다.
 
-## 저차원에서 직접 확인
-
-목표 분포를 혼합 Gauss 로 두면 점수함수가 닫힌 형태라 신경망 없이 역방향 SDE 만 검증할 수 있다.
-
-```python
-import numpy as np
-rng = np.random.default_rng(1)
-
-# 1차원 혼합 Gauss 를 목표 분포로 두면 점수함수가 닫힌 형태로 나온다.
-MU, SD, W = np.array([-2.0, 2.0]), np.array([0.5, 0.5]), np.array([0.4, 0.6])
-
-def score(x, t_var):
-    """log q_t(x) 의 x 미분. q_t = 목표분포에 분산 t_var 를 더한 것."""
-    v = SD ** 2 + t_var
-    z = W * np.exp(-0.5 * (x[:, None] - MU) ** 2 / v) / np.sqrt(v)
-    w = z / z.sum(1, keepdims=True)                     # 각 성분의 사후 가중치
-    return (w * (MU - x[:, None]) / v).sum(1)
-
-# 전방 과정: x_t = x_0 + sqrt(t)·noise (분산 폭발 형식)
-# 역방향 SDE: dx = score(x, s)·ds + sqrt(ds)·noise 를 s: T -> 0 으로 적분
-T, EPS, steps, n = 400.0, 0.01, 4000, 200_000
-ts = np.geomspace(T, EPS, steps + 1)                    # 기하 시간 격자
-x = np.sqrt(T) * rng.standard_normal(n)                 # 거의 순수 잡음에서 시작
-for s0, s1 in zip(ts[:-1], ts[1:]):
-    dt = s0 - s1
-    x = x + score(x, s0) * dt + np.sqrt(dt) * rng.standard_normal(n)
-x = x + EPS * score(x, EPS)                             # Tweedie 로 마지막 잡음 제거
-
-true = np.where(rng.random(n) < W[0], MU[0], MU[1]) + SD[0] * rng.standard_normal(n)
-print(f"{'':10}{'평균':>8}{'표준편차':>10}{'왼쪽 봉우리 비율':>16}")
-for name, v in [("생성 표본", x), ("참 분포", true)]:
-    print(f"{name:10}{v.mean():8.3f}{v.std():10.3f}{(v < 0).mean():16.3f}")
-
-#                 평균      표준편차       왼쪽 봉우리 비율
-# 생성 표본        0.394     2.020           0.401
-# 참 분포         0.396     2.023           0.401
-```
-
-순수 잡음에서 출발했는데 두 봉우리의 비율 $0.4:0.6$ 이 소수점 셋째 자리까지 복원된다. 역방향 SDE 가 점수함수만으로 분포를 정확히 되살린다는 정리의 수치적 확인이다.
-
-두 가지 실무 요령이 코드에 들어 있다. $T=400$ 은 데이터의 분산(약 4)보다 훨씬 커야 시작 분포 $\mathcal N(0,TI)$ 와 실제 $q_T$ 의 차이가 무시되기 때문이고, 기하 격자는 점수함수가 $t\to0$ 에서 급격히 변하는 구간에 단계를 몰아 주기 위한 것이다. $T$ 를 9 로 낮추면 같은 코드가 봉우리 비율을 $0.43$ 으로 틀리게 준다. 실제 모형에서 잡음 일정을 세심하게 설계하는 이유가 이것이다.
-
 ## 한계
 
 점수함수의 추정 오차가 저밀도 영역에서 크다. 데이터가 거의 없는 곳의 $\nabla\log q$ 를 학습할 표본이 없기 때문이며, 여러 잡음 수준을 함께 쓰는 이유가 정확히 이 문제를 메우기 위해서다. 큰 잡음 수준에서는 분포가 퍼져 있어 어디서든 신호가 있다.

@@ -127,48 +127,6 @@ Beck 의 monadicity 정리가 판정 기준을 준다. $G$ 가 left adjoint 를 
 
 콤팩트 Hausdorff 공간의 범주가 초필터 monad 에 대해 monadic 이라는 결과가 이 정리의 유명한 응용이다.
 
-## 수치로 확인
-
-리스트 monad 에서 Kleisli 합성의 법칙과 $T$ 대수의 법칙을 각각 확인한다.
-
-```python
-# List monad: T(X) = X 의 유한 리스트
-eta = lambda x: [x]
-mu  = lambda xss: [x for xs in xss for x in xs]
-T   = lambda f: (lambda xs: [f(x) for x in xs])
-
-def kleisli(g, f):          # g ∘_T f : X -> T(Z)
-    return lambda x: mu(T(g)(f(x)))
-
-# Kleisli 사상 세 개
-f = lambda x: [x, x + 1]
-g = lambda y: [y * 2] * (y % 3)
-h = lambda z: [z, -z]
-
-dom = range(-3, 4)
-assoc = all(kleisli(kleisli(h, g), f)(x) == kleisli(h, kleisli(g, f))(x) for x in dom)
-unit_l = all(kleisli(f, eta)(x) == f(x) for x in dom)
-unit_r = all(kleisli(eta, f)(x) == f(x) for x in dom)
-print("Kleisli 결합/단위:", assoc, unit_l, unit_r)
-
-# Eilenberg-Moore 대수: (Z, +) 는 List-대수다
-a = sum
-law1 = all(a(eta(x)) == x for x in dom)                      # a ∘ η = id
-xss  = [[1, 2], [], [3], [4, 5, 6]]
-law2 = a(mu(xss)) == a(T(a)(xss))                            # a ∘ μ = a ∘ T(a)
-print("대수 법칙:", law1, law2, a(mu(xss)), a(T(a)(xss)))
-
-# 자유대수 (μ_X : T(TX) -> TX) 도 대수다
-free = mu
-law3 = all(free(eta(xs)) == xs for xs in ([], [1], [1, 2]))
-print("자유대수도 대수:", law3)
-# Kleisli 결합/단위: True True True
-# 대수 법칙: True True 21 21
-# 자유대수도 대수: True
-```
-
-$(\mathbb Z,+)$ 는 $\mathcal C^T$ 의 대상이지만 어떤 집합의 자유 monoid 도 아니므로 $\mathcal C_T$ 에는 대응물이 없다. 두 범주의 크기 차이가 이 한 예에서 드러난다. 반면 $\mu_X$ 를 구조사상으로 하는 자유대수는 양쪽에 다 있다.
-
 # 활용
 
 ## 프로그래밍의 do 표기

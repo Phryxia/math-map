@@ -98,55 +98,6 @@ $$
 
 지표는 류함수 공간 $L^2(G)^G$ 의 정규직교기저를 이룬다. 유한군에서 "기약표현의 개수 = 켤레류의 개수" 였던 사실의 대응물이다.
 
-## $\mathrm{SU}(2)$ 에서 확인하기
-
-$\mathrm{SU}(2)$ 의 $(n+1)$ 차원 기약표현의 지표는 극대 원환면의 각도 $\theta$ 로 쓰면
-
-$$
-\chi_n(\theta)=\frac{\sin\big((n+1)\theta\big)}{\sin\theta}
-$$
-
-이고, Haar 적분은 Weyl 적분 공식으로 1 차원 적분이 된다.
-
-$$
-\int_{\mathrm{SU}(2)}f\,dg=\frac2\pi\int_0^\pi f(\theta)\sin^2\theta\,d\theta
-$$
-
-무게 $\sin^2\theta$ 가 켤레류의 부피를 재는 인자다. 직교성을 수치적으로 확인한다.
-
-```python
-import math
-
-def chi(n, t):
-    """SU(2) 의 (n+1) 차원 기약표현 지표"""
-    if abs(math.sin(t)) < 1e-12:
-        return n + 1
-    return math.sin((n + 1) * t) / math.sin(t)
-
-def weyl_ip(f, g, N=200000):
-    """(2/pi) ∫_0^pi f g sin^2 t dt — Weyl 적분 공식에 의한 Haar 내적"""
-    h = math.pi / N
-    s = 0.0
-    for k in range(N):
-        t = (k + 0.5) * h
-        s += f(t) * g(t) * math.sin(t) ** 2
-    return 2 / math.pi * s * h
-
-for m in range(4):
-    print(m, [round(weyl_ip(lambda t: chi(m, t), lambda t: chi(n, t)), 6) for n in range(4)])
-# 0 [1.0, -0.0, -0.0, -0.0]
-# 1 [-0.0, 1.0, -0.0, -0.0]
-# 2 [-0.0, -0.0, 1.0, -0.0]
-# 3 [-0.0, -0.0, -0.0, 1.0]
-
-# 텐서곱 분해도 지표의 내적으로 읽힌다
-f = lambda t: chi(1, t) ** 2
-print([round(weyl_ip(f, lambda t: chi(n, t)), 6) for n in range(4)])
-# [1.0, 0.0, 1.0, 0.0]
-```
-
-지표 행렬이 단위행렬로 나온다. 마지막 줄은 $\chi_1^2=\chi_0+\chi_2$ 곧 스핀 $\tfrac12$ 두 개의 텐서곱이 스핀 $0$ 과 스핀 $1$ 로 쪼개진다는 Clebsch–Gordan 분해다. 무한차원 함수공간의 적분 계산이 유한한 정수 계수를 내놓는다.
-
 ## 고전적 특수 경우
 
 | $G$ | 기약표현 | Peter–Weyl 분해 |
@@ -187,8 +138,6 @@ $$
 ## 극대 원환면와 Weyl 지표 공식
 
 콤팩트 연결 Lie 군에서는 모든 원소가 극대 원환면 $T$ 의 켤레에 들어가므로, 류함수가 $T$ 위의 Weyl 군 불변 함수로 결정된다. 그래서 지표 계산이 [근계](root-systems.md) 위의 유한합으로 내려오고, Weyl 지표 공식이 명시적인 답을 준다. 위에서 쓴 $\chi_n(\theta)=\sin((n+1)\theta)/\sin\theta$ 가 $\mathrm{SU}(2)$ 에서의 그 공식이다.
-
-[^1]: T. Bröcker, T. tom Dieck, *Representations of Compact Lie Groups* (1985) 2, 3 장이 표준이다. Haar 측도의 존재는 G. Folland, *A Course in Abstract Harmonic Analysis* (2판, 2016) 2 장. 비콤팩트 쪽 대비는 같은 책 7 장. 본문의 수치 계산은 직접 한 것이다.
 
 # 연관 문서
 

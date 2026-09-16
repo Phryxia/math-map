@@ -278,63 +278,6 @@ Airy 는 1838년 무지개의 **과잉 아치**(supernumerary arc)를 설명하�
 
 초곡선 회절, 직선 모서리 근처의 빛의 세기, 전리층에서 되돌아오는 전파, 균일한 힘을 받는 입자의 파동함수가 모두 같은 형태다. "두 해가 합류하는 자리" 라는 조건만 같으면 세부 사정과 무관하게 Airy 함수가 나온다는 보편성이 이 함수의 값어치다.[^1]
 
-## 정상위상법이 깨지는 자리를 수치로 본다
-
-정상점 두 개가 충돌할 때 표준형이 어디까지 버티는지 확인한다. 위상 $\varphi=x^3/3-\mu x$ 의 정상점은 $x=\pm\sqrt\mu$ 이고, 정상위상법의 두 항을 더하면
-
-$$
-I\approx 2\sqrt{\frac{\pi}{\lambda\sqrt\mu}}\cos\Big(\frac23\lambda\mu^{3/2}-\frac\pi4\Big)
-$$
-
-인데 $\mu\to0$ 에서 $\mu^{-1/4}$ 로 발산한다. 진짜 적분은 발산하지 않는다.
-
-```python
-import math
-
-def ai_series(x, N=80):
-    """앞 절의 Taylor 급수."""
-    c1, c2 = 3 ** (-2 / 3) / math.gamma(2 / 3), 3 ** (-1 / 3) / math.gamma(1 / 3)
-    f, t = 0.0, 1.0
-    for k in range(N):
-        if k:
-            t *= x ** 3 / ((3 * k - 1) * (3 * k))
-        f += t
-    g, t = 0.0, x
-    for k in range(N):
-        if k:
-            t *= x ** 3 / ((3 * k) * (3 * k + 1))
-        g += t
-    return c1 * f - c2 * g
-
-def quadrature(lam, mu, n=2000000, T=40.0):
-    """int e^{i lam (x^3/3 - mu x)} dx 를 사다리꼴로. 짝함수라 실수부만 남는다."""
-    h, s = T / n, 0.0
-    for k in range(n + 1):
-        t = k * h
-        s += (1.0 if 0 < k < n else 0.5) * math.cos(lam * (t ** 3 / 3 - mu * t))
-    return 2 * s * h
-
-def airy_form(lam, mu):
-    return 2 * math.pi * lam ** (-1 / 3) * ai_series(-mu * lam ** (2 / 3))
-
-def stat_phase(lam, mu):
-    return 2 * math.sqrt(math.pi / (lam * math.sqrt(mu))) * math.cos(2 / 3 * lam * mu ** 1.5 - math.pi / 4)
-
-lam = 20.0
-print("  mu      수치적분      Airy 표준형    정상위상 2항")
-for mu in (0.02, 0.1, 0.3, 0.6, 1.0):
-    print(f"{mu:5.2f}  {quadrature(lam, mu):+12.6f}  {airy_form(lam, mu):+12.6f}  {stat_phase(lam, mu):+12.6f}")
-
-#   mu      수치적분      Airy 표준형    정상위상 2항
-#  0.02     +0.909599     +0.909622     +1.545585
-#  0.10     +1.194628     +1.194586     +1.317345
-#  0.30     +0.205944     +0.205976     +0.176244
-#  0.60     +0.571288     +0.571347     +0.579511
-#  1.00     +0.792232     +0.792291     +0.792531
-```
-
-Airy 표준형은 어디서나 여섯 자리까지 맞는다(이 위상에서는 근사가 아니라 항등식이므로 당연하다). 정상위상 2 항은 $\mu=1$ 에서 세 자리, $\mu=0.3$ 에서 한 자리, $\mu=0.02$ 에서는 70% 틀린다. **틀리기 시작하는 지점이 $\lambda\mu^{3/2}\sim1$ 근처**이고, 이것이 균등 점근이 필요한 전이층의 폭 $\mu\sim\lambda^{-2/3}$ 다. 회전점 근방에서 [WKB 근사](wkb-approximation.md)가 깨지는 폭과 같은 수다.
-
 ## 무작위 행렬의 가장자리
 
 큰 무작위 행렬의 고윳값 분포는 가장자리에서 반원법칙의 제곱근으로 끊기는데, 그 근방을 $N^{2/3}$ 배로 확대하면 Airy 핵 $\bigl(\operatorname{Ai}(x)\operatorname{Ai}'(y) - \operatorname{Ai}'(x)\operatorname{Ai}(y)\bigr)/(x-y)$ 가 나타나고 최대 고윳값의 극한분포가 Tracy–Widom 분포가 된다. 분포의 밀도가 Painlevé II 방정식으로 기술되고 그 해의 경계조건이 $\operatorname{Ai}$ 라는 점에서, 회전점 근방의 보편성이 확률론까지 이어진다.

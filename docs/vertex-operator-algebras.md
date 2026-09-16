@@ -124,58 +124,6 @@ $\mathfrak h$ 에서 오는 $n$ 차원 가환 부분(Cartan 부분대수)과 최
 
 Leech 격자는 $\langle\alpha,\alpha\rangle=2$ 인 벡터가 없다. 따라서 $\dim(V_\Lambda)_1=24$ 이고, 근이 없는 24 차원 가환 Lie 대수만 남는다.
 
-## 지표를 계산해 보기
-
-$E_8$ 격자 VOA 와 Leech 격자 VOA 의 지표를 직접 전개한다.
-
-```python
-N = 6  # q^N 까지
-
-def mul(a, b):
-    c = [0] * N
-    for i, ai in enumerate(a):
-        if ai:
-            for k in range(N - i):
-                c[i + k] += ai * b[k]
-    return c
-
-def eta_inv_power(m):
-    """Π(1-q^n)^{-m} 의 q 전개. eta^{-m} = q^{-m/24} * 이 급수"""
-    s = [1] + [0] * (N - 1)
-    for n in range(1, N):
-        # (1-q^n)^{-1} = 1 + q^n + q^{2n} + ...
-        geo = [1 if (i % n == 0) else 0 for i in range(N)]
-        for _ in range(m):
-            s = mul(s, geo)
-    return s
-
-def sigma(k, n):
-    return sum(d**k for d in range(1, n + 1) if n % d == 0)
-
-# Θ_{E8} = E_4 = 1 + 240 Σ σ_3(n) q^n
-theta_e8 = [1] + [240 * sigma(3, n) for n in range(1, N)]
-ch_e8 = mul(theta_e8, eta_inv_power(8))
-print(ch_e8[:4])
-# [1, 248, 4124, 34752]   ← q^{-1/3} 를 뺀 계수. 248 = dim E8
-
-# Θ_Λ (Leech): 최소 노름 4 이므로 q^2 부터. 계수는 알려진 값
-theta_leech = [1, 0, 196560, 16773120, 398034000, 4629381120][:N]
-ch_leech = mul(theta_leech, eta_inv_power(24))
-print(ch_leech[:4])
-# [1, 24, 196884, 21493760]   ← q^{-1} 를 뺀 계수
-
-# j - 744 의 계수와 비교
-j_shift = [1, 0, 196884, 21493760]   # q^{-1} 자리부터
-print(ch_leech[0] == j_shift[0], ch_leech[1], j_shift[1])
-# True 24 0
-print(ch_leech[2:4] == j_shift[2:4])
-# True
-```
-
-$V_\Lambda$ 의 지표는 $j-744+24 = j-720$ 이다. $q^1$ 이후의 계수는 $j$ 와 완전히 일치하는데 상수항만 $24$ 만큼 어긋난다. 바로 이 $24$ 가 무게 1 의 가환 Lie 대수이고, 이것이 있는 한 자기동형군이 괴물군이 될 수 없다.
-
-$\mathbb Z/2$ 궤도체가 하는 일이 정확히 이 $24$ 를 지우는 것이다. 결과가 $\operatorname{ch}V^\natural=j-744$ 이고, 무게 1 이 비어 있는 덕분에 무게 2 의 196884 차원 공간(Griess 대수)이 구조 전체를 통제하게 된다.
-
 ## Zhu 의 모듈러 불변성
 
 VOA 에 두 가지 유한성 조건을 걸면 지표가 모듈러가 된다.
@@ -222,8 +170,6 @@ VOA 는 2 차원 등각장론의 손지기(chiral) 부분을 수학적으로 정
 - **W-대수.** Virasoro 대수를 고차 스핀 장으로 확장한 VOA 들이다. Drinfeld–Sokolov 축소로 affine VOA 에서 만들어지고, 기하학적 Langlands 의 국소 이론에 쓰인다.
 - **손지기 대수와 인수분해 대수.** Beilinson–Drinfeld 가 VOA 를 대수곡선 위의 층으로 재정식화했다. 좌표에 의존하지 않는 정의라 기하학적 Langlands 로 바로 이어진다.
 - **정점대수의 4 차원 판본.** 4 차원 $\mathcal N=2$ 초등각 이론에 VOA 를 대응시키는 구성이 2013 년 이후 활발하다.
-
-[^1]: 표준 입문서는 V. Kac, *Vertex Algebras for Beginners* (2판, 1998) 과 E. Frenkel, D. Ben-Zvi, *Vertex Algebras and Algebraic Curves* (2판, 2004). 격자 VOA 와 $V^\natural$ 의 구성은 I. Frenkel, J. Lepowsky, A. Meurman, *Vertex Operator Algebras and the Monster* (1988). 모듈러 불변성은 Y. Zhu, "Modular invariance of characters of vertex operator algebras", *JAMS* 9 (1996). $c=24$ 목록은 A. Schellekens, "Meromorphic c=24 conformal field theories", *Comm. Math. Phys.* 153 (1993). 본문의 지표 계산은 직접 한 것이다.
 
 # 연관 문서
 

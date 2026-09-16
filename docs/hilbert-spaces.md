@@ -181,35 +181,6 @@ $L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개�
 
 상태는 단위벡터, 관측량은 자기수반 연산자, 측정 확률은 정규직교기저로의 전개계수의 제곱이다. Parseval 등식이 확률의 총합이 1이라는 진술이 된다.
 
-## 수치 계산: Parseval 확인
-
-구간 $[-\pi,\pi]$ 에서 정규직교계로 함수를 전개하고 Bessel/Parseval을 수치로 확인해 본다.
-
-```python
-import numpy as np
-
-N = 4096
-x = np.linspace(-np.pi, np.pi, N, endpoint=False)
-dx = 2 * np.pi / N
-f = np.where(x < 0, -1.0, 1.0)          # 사각파
-
-def coeff(k):
-    # 정규직교계: 1/sqrt(2pi), cos(kx)/sqrt(pi), sin(kx)/sqrt(pi)
-    c = np.sum(f * np.cos(k * x)) * dx / np.sqrt(np.pi)
-    s = np.sum(f * np.sin(k * x)) * dx / np.sqrt(np.pi)
-    return c, s
-
-norm2 = np.sum(f * f) * dx              # ||f||^2 = 2 pi
-for K in (1, 5, 25, 200):
-    partial = (np.sum(f) * dx) ** 2 / (2 * np.pi)
-    for k in range(1, K + 1):
-        c, s = coeff(k)
-        partial += c * c + s * s        # Bessel: 항상 norm2 이하
-    print(K, round(partial, 4), round(norm2, 4))
-```
-
-부분합은 단조증가하며 $\lVert f\rVert^2$ 를 넘지 않고(Bessel), 계가 완비이므로 극한에서 같아진다(Parseval).
-
 ## 재생핵 Hilbert 공간
 
 점 평가 범함수가 연속인 함수 공간에서는 Riesz 표현 정리가 각 점마다 대표 벡터를 주고, 그것이 커널 함수다. 커널 기법과 Gauss 과정 회귀가 이 구조 위에서 돌아간다. 정사영 정리가 곧 정규화된 회귀의 해가 유한 차원 문제로 줄어든다는 표현자 정리로 나타난다.

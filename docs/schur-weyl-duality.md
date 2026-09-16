@@ -143,88 +143,12 @@ $n\ge k$ 이면 $\mathbb C[S_k]\to\mathcal S$ 가 단사이고 $\mathcal S\cong\
 
 # 활용
 
-## 차원 항등식을 전수로 확인한다
-
-두 조합 공식을 각각 구현하고 $n^k=\sum_\lambda f^\lambda\dim V_\lambda$ 를 여러 $(n,k)$ 에서 확인한다. 두 공식이 서로 독립적으로 정의되므로, 합이 정확히 $n^k$ 가 되는 것은 분해가 맞다는 비자명한 증거다.
-
-```python
-from fractions import Fraction
-
-def partitions(k, maxpart=None):
-    if maxpart is None:
-        maxpart = k
-    if k == 0:
-        yield ()
-        return
-    for p in range(min(k, maxpart), 0, -1):
-        for rest in partitions(k - p, p):
-            yield (p,) + rest
-
-def hook(lam, i, j):
-    arm = lam[i] - j - 1
-    leg = sum(1 for r in range(i + 1, len(lam)) if lam[r] > j)
-    return arm + leg + 1
-
-def f_lambda(lam):
-    """S_k 기약표현의 차원 : 후크 길이 공식"""
-    k = sum(lam)
-    num = 1
-    for t in range(1, k + 1):
-        num *= t
-    den = 1
-    for i in range(len(lam)):
-        for j in range(lam[i]):
-            den *= hook(lam, i, j)
-    assert num % den == 0
-    return num // den
-
-def d_lambda(lam, n):
-    """GL_n 기약표현의 차원 : 후크-내용 공식 (= SSYT 개수 = s_λ(1,...,1))"""
-    r = Fraction(1)
-    for i in range(len(lam)):
-        for j in range(lam[i]):
-            r *= Fraction(n + j - i, hook(lam, i, j))
-    assert r.denominator == 1, "후크-내용 공식이 정수를 안 준다"
-    return r.numerator
-
-print(" n  k   Σ_λ f^λ·dim V_λ      n^k   분해")
-for n in (2, 3, 4):
-    for k in (2, 3, 4, 5):
-        total, parts = 0, []
-        for lam in partitions(k):
-            if len(lam) > n:           # 행이 n 보다 길면 GL_n 에서 사라진다
-                continue
-            f, d = f_lambda(lam), d_lambda(lam, n)
-            total += f * d
-            parts.append(f"{lam}:{f}×{d}")
-        detail = "  ".join(parts) if (n == 2 and k <= 3) else ""
-        assert total == n ** k
-        print(f"{n:2d} {k:2d} {total:13d} {n**k:8d}   {detail}")
-print("\n모든 경우에서 차원이 맞는다")
-
-#  n  k   Σ_λ f^λ·dim V_λ      n^k   분해
-#  2  2             4        4   (2,):1×3  (1, 1):1×1
-#  2  3             8        8   (3,):1×4  (2, 1):2×2
-#  2  4            16       16
-#  3  3            27       27
-#  4  5          1024     1024
-#
-# 모든 경우에서 차원이 맞는다
-```
-
-$n=k=2$ 행이 $V\otimes V=\mathrm{Sym}^2\oplus\Lambda^2$ 를 그대로 보여 준다. 분할 $(2)$ 가 대칭 부분으로 $\dim\mathrm{Sym}^2\mathbb C^2=3$ 이고, $(1,1)$ 이 반대칭 부분으로 $1$ 이고 $S_2$ 쪽 중복도는 둘 다 $1$ 이다.
-
-$n=2,k=3$ 행이 더 흥미롭다. 분할 $(2,1)$ 에서 $f^{(2,1)}=2$ 이므로 $\mathrm{GL}_2$ 의 2 차원 표현이 **중복도 2** 로 나타난다. 그 중복도가 $S_3$ 의 2 차원 기약표현의 차원이라는 것이 쌍대성의 내용이고, $4+2\times2=8=2^3$ 로 닫힌다.
-
 ## 어디에 쓰이는가
 
 - **표현론의 사전**: 대칭군 표현론(조합적, Young 배열)과 $\mathrm{GL}_n$ 표현론(기하적, 최고무게)을 서로 번역한다. 한쪽의 정리가 다른 쪽 정리를 곧바로 준다.
 - **대칭함수 이론의 근거**: 거듭제곱합–Schur 전개, Cauchy 항등식, Littlewood–Richardson 규칙이 전부 이 분해의 그림자다. [Schur 다항식](schur-polynomials.md)의 여러 정의가 왜 일치하는지가 여기서 설명된다.
 - **양자정보**: Schur–Weyl 변환이 $k$ 개 복사본에서 스펙트럼을 추정하는 최적 측정을 주고, 양자 자료 압축과 얽힘 농축에 쓰인다.
 - **통계물리와 적분가능계**: 스핀 사슬의 대칭성을 두 방향에서 쪼개는 표준 기법이고, 양자군 판본이 Yang–Baxter 방정식과 직접 연결된다.
-
-[^1]: H. Weyl, *The Classical Groups*, Princeton, 1939. 4 장이 원전이고 "쌍대성" 이라는 이름이 여기서 굳었다.
-[^2]: R. Goodman, N. R. Wallach, *Symmetry, Representations, and Invariants*, Springer, 2009. 9 장에 이중 중심화 정리의 현대적 서술과 Brauer·Howe 판본이 있다.
 
 # 연관 문서
 

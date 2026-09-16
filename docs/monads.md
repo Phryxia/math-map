@@ -95,37 +95,6 @@ $T$ 를 주는 모든 수반의 범주에서 Kleisli는 시작대상, Eilenberg�
 
 화살표를 뒤집으면 comonad $(W, \varepsilon : W \Rightarrow \mathrm{id}, \delta : W \Rightarrow W^2)$ 가 된다. monad가 "값을 문맥에 넣는" 쪽이라면 comonad는 "문맥에서 값을 꺼내고 문맥을 복제하는" 쪽이고, 스트림·이웃을 보는 계산이 대표적인 예다.
 
-## 리스트 monad로 법칙 확인
-
-```python
-from itertools import product
-
-def eta(x):
-    return [x]
-
-def mu(xss):
-    return [x for xs in xss for x in xs]
-
-def fmap(f, xs):
-    return [f(x) for x in xs]
-
-xsss = [[[1, 2], []], [[3]], []]
-
-# 결합법칙: 세 겹을 줄이는 두 순서가 같다
-assert mu(fmap(mu, xsss)) == mu(mu(xsss)) == [1, 2, 3]
-
-xs = [1, 2, 3]
-# 단위법칙: 어느 쪽에 η를 끼워 넣어도 원래대로
-assert mu(fmap(eta, xs)) == xs == mu(eta(xs))
-
-# Kleisli 합성: 비결정적 함수를 잇는다
-def bind(xs, f):
-    return mu(fmap(f, xs))
-
-divisors = lambda n: [d for d in range(1, n + 1) if n % d == 0]
-assert bind([4, 6], divisors) == [1, 2, 4, 1, 2, 3, 6]
-```
-
 # 활용
 
 ## 계산 효과의 구조화

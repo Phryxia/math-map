@@ -121,68 +121,12 @@ $g\ge2$ 에서는 이 족이 복소차원 $3g-3$ 이다. 그 공간을 다루는
 
 # 활용
 
-## 타원곡선의 두 얼굴을 계산으로 맞춰 본다
-
-복소 토러스 $\mathbb C/\Lambda$ 가 대수곡선 $y^2=4x^3-g_2x-g_3$ 과 같다는 것을 Weierstrass $\wp$ 함수로 확인한다. 격자를 하나 잡고 $\wp$ 와 $\wp'$ 를 급수로 계산해 대수 관계식이 성립하는지 직접 본다.
-
-```python
-# 격자 L = Z + tau*Z 에 대해 Weierstrass 함수를 급수로 계산하고
-# (wp')^2 = 4 wp^3 - g2 wp - g3 를 수치로 확인한다.
-import cmath
-
-tau = complex(0.3, 1.1)          # 상반평면의 점
-N = 60                            # 격자 절단 범위
-
-lattice = [m + n * tau for m in range(-N, N + 1) for n in range(-N, N + 1)
-           if (m, n) != (0, 0)]
-
-def eisenstein(k):
-    """G_k = sum' 1/w^k  (k 는 짝수)"""
-    return sum(1 / w**k for w in lattice)
-
-g2 = 60 * eisenstein(4)
-g3 = 140 * eisenstein(6)
-
-def wp(z):
-    s = 1 / z**2
-    for w in lattice:
-        s += 1 / (z - w)**2 - 1 / w**2
-    return s
-
-def wp_prime(z):
-    s = -2 / z**3
-    for w in lattice:
-        s += -2 / (z - w)**3
-    return s
-
-for z in [complex(0.21, 0.37), complex(-0.4, 0.15), complex(0.05, 0.62)]:
-    lhs = wp_prime(z)**2
-    rhs = 4 * wp(z)**3 - g2 * wp(z) - g3
-    print(f"z={z}  |lhs-rhs|/|lhs| = {abs(lhs - rhs) / abs(lhs):.2e}")
-
-# 주기성도 확인한다: wp(z+1) = wp(z), wp(z+tau) = wp(z)
-z = complex(0.21, 0.37)
-print(f"|wp(z+1)-wp(z)|   = {abs(wp(z + 1) - wp(z)):.2e}")
-print(f"|wp(z+tau)-wp(z)| = {abs(wp(z + tau) - wp(z)):.2e}")
-
-# z=(0.21+0.37j)  |lhs-rhs|/|lhs| = 9.31e-06
-# z=(-0.4+0.15j)  |lhs-rhs|/|lhs| = 7.75e-06
-# z=(0.05+0.62j)  |lhs-rhs|/|lhs| = 6.68e-05
-# |wp(z+1)-wp(z)|   = 3.55e-04
-# |wp(z+tau)-wp(z)| = 4.99e-04
-```
-
-오차가 0 이 아닌 것은 격자를 유한 범위에서 잘랐기 때문이고, $N$ 을 키우면 줄어든다. 확인된 것은 두 가지다. $\wp$ 가 격자에 대해 주기적이라 토러스 위의 함수이고, $(\wp,\wp')$ 가 3 차 곡선 위에 놓인다. 곧 **토러스에서 대수곡선으로 가는 사상이 실제로 만들어진다.** 역방향은 곡선의 주기적분으로 격자를 복원하는 것이고, 두 방향이 합쳐져 균일화의 종수 1 판이 된다.
-
 ## 어디로 이어지는가
 
 - **모듈라이와 변형.** 종수 $g\ge2$ 곡면의 복소구조가 이루는 공간이 Teichmüller 공간이고, 사상류군으로 몫을 취하면 모듈라이 공간이 된다. 준등각 사상과 Beltrami 방정식이 그 공간에 좌표를 준다.
 - **정수론.** 종수 1 의 모듈라이가 모듈러 곡선이고, 거기서 모듈러 형식과 Galois 표현이 나온다. 콤팩트 Riemann 곡면이 대수곡선이라는 사실이 이 통로를 연다.
 - **3 차원으로.** 쌍곡 곡면의 등거리군이 $\mathrm{PSL}_2(\mathbb R)$ 의 이산부분군이듯, 쌍곡 3 다양체는 $\mathrm{PSL}_2(\mathbb C)$ 의 이산부분군으로 기술된다. [쌍곡 3 다양체](hyperbolic-3-manifolds.md)의 Mostow 강직성이 곡면의 모듈라이와 대비되는 자리다. 곡면에서는 구조가 움직이고 3 차원에서는 굳는다.
 - **해석적 도구.** 균일화의 증명 자체가 Perron 방법이나 Dirichlet 원리, 곧 타원형 편미분방정식의 해결이다. 그 기법이 Hodge 이론과 지표 정리로 이어진다.
-
-[^1]: O. Forster, *Lectures on Riemann Surfaces*, GTM 81, Springer, 1981. 정의부터 Riemann–Roch 와 Abel 정리까지의 표준 서술이다. 균일화 정리는 27 절에 있다.
-[^2]: 균일화의 역사와 여러 증명의 비교는 H. Farkas, I. Kra, *Riemann Surfaces*, 2nd ed., GTM 71, Springer, 1992. 본문의 수치 계산은 직접 한 것이다.
 
 # 연관 문서
 

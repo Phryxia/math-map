@@ -163,30 +163,6 @@ $$
 - **[멱급수와 Taylor 급수](power-series.md)**: 수렴반경 내부에서 균등수렴하므로 항별 미분과 적분이 정당화된다.
 - **[Fourier 급수](fourier-series.md)**: 균등수렴은 일반적으로 보장되지 않고(연속함수의 Fourier 급수가 발산할 수 있다), Gibbs 현상이 불연속점 근처에서 균등수렴을 막는다. 그래서 [내적 공간](inner-product-spaces.md)의 $L^2$ 수렴을 대신 쓴다.
 
-## 수치 확인
-
-$x^n$ 과 $sin(nx)/n$ 의 sup 노름을 직접 계산해 두 수렴 방식을 구별한다.
-
-```python
-import numpy as np
-
-xs = np.linspace(0.0, 1.0, 20001)
-
-def sup_err(fn, limit):
-    return np.max(np.abs(fn(xs) - limit(xs)))
-
-pow_limit = lambda x: (x >= 1.0).astype(float)     # x^n 의 점별 극한
-zero = lambda x: np.zeros_like(x)
-
-for n in [10, 100, 1000, 10000]:
-    a = sup_err(lambda x, n=n: x**n, pow_limit)             # 균등수렴 아님
-    b = sup_err(lambda x, n=n: n*x*(1-x)**n, zero)          # 균등수렴 아님
-    c = sup_err(lambda x, n=n: np.sin(n*x)/n, zero)         # 균등수렴
-    print(f"n={n:6d}  x^n:{a:.4f}  nx(1-x)^n:{b:.4f}  sin(nx)/n:{c:.6f}")
-```
-
-앞의 두 열은 $n$ 이 커져도 1 과 $1/e$ 근처에 머물고, 마지막 열만 $1/n$ 으로 0 에 간다.
-
 ## 해석학의 다른 곳
 
 - **미분방정식**: Picard–Lindelöf 정리는 연속함수 공간의 완비성과 [축약사상 고정점 정리](banach-fixed-point.md)를 쓰며, 반복열의 균등수렴이 해를 만든다.

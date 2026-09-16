@@ -161,23 +161,6 @@ $$
 
 지시함수로 쪼개는 기법은 조합론적 계산에서 강력하다. 예를 들어 n명의 사람에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 사람 수의 기댓값은, 사람 i가 자기 모자를 받는 사건의 지시함수 합으로 보고 선형성을 쓰면 곧바로 1이다. 이때 지시함수들은 독립이 아니지만 선형성은 독립성을 요구하지 않는다.
 
-## 추정과 시뮬레이션
-
-표본평균은 확률변수들의 함수로 만든 새 확률변수이며, 그 기댓값과 분산이 [큰 수의 법칙](law-of-large-numbers.md)과 [중심극한정리](central-limit-theorem.md)의 출발점이다. Monte Carlo 방법은 계산하고 싶은 적분을 어떤 확률변수의 기댓값으로 바꾸어 표본평균으로 근사한다.
-
-```python
-import random
-
-def mean_var(sample):
-    n = len(sample)
-    m = sum(sample) / n
-    return m, sum((x - m) ** 2 for x in sample) / (n - 1)
-
-# X = 주사위 두 개의 눈의 합. 이론값: E[X] = 7, Var(X) = 35/6 ≈ 5.833
-sample = [random.randint(1, 6) + random.randint(1, 6) for _ in range(100000)]
-print(mean_var(sample))
-```
-
 ## 다른 문서와의 연결
 
 조건부확률을 확률변수 층위로 올리면 조건부기댓값이 되고, 여기서 [Bayes 정리](bayes.md)의 측도론적 형태가 나온다. 이산 확률변수의 분포에 −log p를 기댓값으로 취한 양이 [Shannon entropy](entropy.md)다. 확률변수열의 기댓값 극한 교환에는 [지배 수렴 정리](dominated-convergence.md)가 기본 도구로 쓰인다.

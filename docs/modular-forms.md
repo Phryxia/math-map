@@ -208,64 +208,6 @@ $$
 
 # 활용
 
-## 항등식을 계수로 확인한다
-
-```python
-from math import gcd
-
-N = 40
-sigma = lambda k, n: sum(d**k for d in range(1, n+1) if n % d == 0)
-
-def eisenstein(k, N):
-    """정규화된 Eisenstein 급수 E_k = 1 - (2k/B_k) Σ σ_{k-1}(n) qⁿ."""
-    c = {4: 240, 6: -504, 8: 480, 10: -264}[k]
-    return [1] + [c*sigma(k - 1, n) for n in range(1, N + 1)]
-
-def mul(a, b, N):
-    out = [0]*(N + 1)
-    for i, ai in enumerate(a):
-        if ai:
-            for j in range(0, N - i + 1):
-                out[i + j] += ai*b[j]
-    return out
-
-E4, E6, E8 = eisenstein(4, N), eisenstein(6, N), eisenstein(8, N)
-print("M_8 이 1 차원이므로  E4² = E8 :", mul(E4, E4, N) == E8)
-print("  따라나오는 약수합 항등식 :",
-      all(sigma(7, n) == sigma(3, n)
-          + 120*sum(sigma(3, m)*sigma(3, n - m) for m in range(1, n))
-          for n in range(1, 15)))
-
-# Δ = (E4³ - E6²)/1728 = q ∏ (1-qⁿ)²⁴
-delta = [(x - y)//1728 for x, y in zip(mul(mul(E4, E4, N), E4, N), mul(E6, E6, N))]
-eta24 = [0]*(N + 1); eta24[0] = 1
-for n in range(1, N + 1):
-    for _ in range(24):
-        for j in range(N, n - 1, -1):
-            eta24[j] -= eta24[j - n]
-eta24 = [0] + eta24[:N]                              # 앞의 q
-print("\nΔ = (E4³-E6²)/1728 = q∏(1-qⁿ)²⁴ :", delta == eta24)
-
-tau = delta
-print("τ(1..10) =", tau[1:11])
-print("τ(n) ≡ σ11(n) (mod 691) :", all((tau[n] - sigma(11, n)) % 691 == 0
-                                       for n in range(1, N + 1)))
-print("τ 가 곱셈적 :", all(tau[m]*tau[n] == tau[m*n] for m in range(1, 7)
-                       for n in range(1, 7) if gcd(m, n) == 1 and m*n <= N))
-print("τ(p²) = τ(p)² - p¹¹ :", all(tau[p*p] == tau[p]**2 - p**11 for p in (2, 3, 5)))
-
-# M_8 이 1 차원이므로  E4² = E8 : True
-#   따라나오는 약수합 항등식 : True
-#
-# Δ = (E4³-E6²)/1728 = q∏(1-qⁿ)²⁴ : True
-# τ(1..10) = [1, -24, 252, -1472, 4830, -6048, -16744, 84480, -113643, -115920]
-# τ(n) ≡ σ11(n) (mod 691) : True
-# τ 가 곱셈적 : True
-# τ(p²) = τ(p)² - p¹¹ : True
-```
-
-$\Delta$ 를 정의하는 두 방식 — Eisenstein 급수의 다항식과 무한곱 — 은 겉보기에 아무 관계가 없다. 둘이 같은 1 차원 공간에 있고 첫 계수가 같다는 것만으로 모든 계수가 일치한다. $\tau$ 의 곱셈성도 Hecke 작용소의 고유벡터라는 사실에서 따라 나올 뿐, 계수의 정의에서는 전혀 보이지 않는다.
-
 ## 격자의 theta 급수
 
 격자 $\Lambda$ 의 theta 급수 $\Theta_\Lambda(\tau)=\sum_{v\in\Lambda}q^{|v|^2/2}$ 는 $\Lambda$ 가 짝수 유니모듈러면 무게 $\dim\Lambda/2$ 의 모듈러 형식이 된다. 계수는 주어진 길이의 벡터 개수를 센다.
