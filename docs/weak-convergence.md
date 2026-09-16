@@ -180,5 +180,6 @@ for n in [10, 100, 10000, 1000000]:
 ## 더 알아보기
 
 - [중심극한정리](central-limit-theorem.md)
+- [특성함수와 Lévy 연속성 정리](characteristic-functions.md)
 
 #probability #measure_theory #theorem
