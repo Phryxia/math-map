@@ -184,37 +184,14 @@ def subsets(xs):
     xs = list(xs)
     return [frozenset(c) for r in range(len(xs) + 1) for c in combinations(xs, r)]
 
-# 1. 반변 Galois 연결 공리 : B ⊆ up(A) ⟺ A ⊆ down(B)
-bad = [(A, B) for A in subsets(OBJ) for B in subsets(ATTR)
-       if (B <= up(A)) != (A <= down(B))]
-print("Galois 연결 공리 위반 쌍:", len(bad))
-
-# 2. 합성이 폐포 연산인가
+# 폐포 연산과 개념 : 닫힌 쌍 (A, up(A))
 cl = lambda A: down(up(A))
-print("확장적 A ⊆ cl(A) :", all(A <= cl(A) for A in subsets(OBJ)))
-print("멱등 cl(cl(A))=cl(A) :", all(cl(cl(A)) == cl(A) for A in subsets(OBJ)))
-print("단조 :", all(not (A <= B) or cl(A) <= cl(B)
-                    for A in subsets(OBJ) for B in subsets(OBJ)))
-
-# 3. 개념 = 닫힌 쌍 (A, up(A))
 concepts = sorted({(cl(A), up(A)) for A in subsets(OBJ)},
                   key=lambda p: (len(p[0]), sorted(p[0])))
-print(f"\n개념 {len(concepts)} 개   (객체 | 공통 속성)")
+print(f"개념 {len(concepts)} 개   (객체 | 공통 속성)")
 for A, B in concepts:
     print(f"  {str(sorted(A)):<34} | {sorted(B)}")
 
-# 4. 개념 격자의 완비성 : 하한은 그대로, 상한은 닫아야 한다
-ext = [A for A, _ in concepts]
-print("\n교집합이 다시 개념 :", all(a & b in ext for a in ext for b in ext))
-print("합집합은 닫아야 개념 :", all(cl(a | b) in ext for a in ext for b in ext))
-print("합집합 그대로는 개념이 아닐 수 있다 :",
-      any(a | b not in ext for a in ext for b in ext))
-
-# Galois 연결 공리 위반 쌍: 0
-# 확장적 A ⊆ cl(A) : True
-# 멱등 cl(cl(A))=cl(A) : True
-# 단조 : True
-#
 # 개념 8 개   (객체 | 공통 속성)
 #   []                                 | ['난다', '날개', '물속', '젖먹임', '척추']
 #   ['고래']                             | ['물속', '젖먹임', '척추']
@@ -224,10 +201,6 @@ print("합집합 그대로는 개념이 아닐 수 있다 :",
 #   ['박쥐', '참새']                       | ['난다', '날개', '척추']
 #   ['박쥐', '참새', '타조']                 | ['날개', '척추']
 #   ['고래', '박쥐', '연어', '참새', '타조']     | ['척추']
-#
-# 교집합이 다시 개념 : True
-# 합집합은 닫아야 개념 : True
-# 합집합 그대로는 개념이 아닐 수 있다 : True
 ```
 
 $2^5=32$ 개의 객체 부분집합 가운데 닫힌 것은 8 개다. {박쥐, 고래} 는 닫혀 있고 {참새, 고래} 는 닫혀 있지 않다. 둘의 공통 속성이 척추뿐이고 척추를 갖는 객체가 다섯 마리 전부이기 때문이다. 닫힘은 그 조합을 속성으로 지목할 수 있다는 뜻이고, 지목할 수 없는 조합은 격자에서 사라진다.
