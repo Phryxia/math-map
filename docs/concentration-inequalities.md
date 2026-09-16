@@ -10,7 +10,7 @@
 
 # 직관
 
-기댓값 하나만 알면 할 수 있는 말은 거의 없다. 비음 확률변수 `X` 의 평균이 1 이라면 값이 100 이상일 확률은 최대 1/100 이다. 이것이 Markov 부등식이고, 이보다 나은 결론은 정보가 더 없이는 불가능하다(한 점에 몰린 분포가 등호를 달성한다).
+기댓값 하나만 알면 할 수 있는 말은 거의 없다. 비음 확률변수 $X$ 의 평균이 1 이라면 값이 100 이상일 확률은 최대 1/100 이다. 이것이 Markov 부등식이고, 이보다 나은 결론은 정보가 더 없이는 불가능하다(한 점에 몰린 분포가 등호를 달성한다).
 
 정보를 더 넣으면 꼬리가 급격히 얇아진다. 분산을 알면 $1/t^2$ 꼴로 떨어지고(Chebyshev), 적률생성함수 $E[e^{\lambda X}]$ 를 알면 지수적으로 떨어진다. 지수 모멘트가 강력한 이유는 독립합에서 곱으로 분해되기 때문이다.
 
@@ -40,7 +40,7 @@ graph TD
 
 ## Markov 와 Chebyshev
 
-**Markov 부등식.** 비음 확률변수 `X` 와 `t > 0` 에 대해
+**Markov 부등식.** 비음 확률변수 $X$ 와 $t>0$ 에 대해
 
 $$
 P(X \ge t) \;\le\; \frac{E[X]}{t}.
@@ -125,7 +125,7 @@ P\big(S_n - E[S_n] \ge t\big) \;\le\;
 \exp\!\left(-\frac{t^2}{2\big(\sum_i \operatorname{Var}(X_i) + bt/3\big)}\right)
 $$
 
-를 쓴다. 작은 편차에서는 분산이 지배해 Gaussian 꼴, 큰 편차에서는 유계 상수 `b` 가 지배해 지수 꼴이 된다[^1].
+를 쓴다. 작은 편차에서는 분산이 지배해 Gaussian 꼴, 큰 편차에서는 유계 상수 $b$ 가 지배해 지수 꼴이 된다[^1].
 
 # 성질
 
@@ -153,7 +153,7 @@ $$
 
 ## 독립성을 넘어서
 
-독립성이 본질적인 곳은 적률생성함수의 곱 분해 한 곳뿐이다. 그 자리를 [조건부 기댓값](conditional-expectation.md)으로 대체하면 같은 논증이 [Martingale](martingales.md) 증분에 대해 작동한다. 결과가 Azuma–Hoeffding 부등식이고, 여기서 유계 차분 조건을 가진 함수에 대한 McDiarmid 부등식이 따라 나온다. 함수 `f` 가 각 좌표를 바꿀 때 `c_i` 이하로 변하면
+독립성이 본질적인 곳은 적률생성함수의 곱 분해 한 곳뿐이다. 그 자리를 [조건부 기댓값](conditional-expectation.md)으로 대체하면 같은 논증이 [Martingale](martingales.md) 증분에 대해 작동한다. 결과가 Azuma–Hoeffding 부등식이고, 여기서 유계 차분 조건을 가진 함수에 대한 McDiarmid 부등식이 따라 나온다. 함수 $f$ 가 각 좌표를 바꿀 때 $c_i$ 이하로 변하면
 
 $$
 P\big(f(X_1, \dots, X_n) - E[f] \ge t\big) \;\le\; \exp\!\left(-\frac{2t^2}{\sum_i c_i^2}\right)
@@ -163,7 +163,7 @@ $$
 
 ## 한계
 
-집중부등식이 주는 상수는 대개 최적이 아니다. 예컨대 Hoeffding 은 분산을 전혀 쓰지 않으므로 실제 분산이 매우 작은 경우 심하게 느슨하다(이때는 Bernstein 이 낫다). 또한 유계성이나 sub-Gaussian 가정이 깨지면(예: 두꺼운 꼬리 분포) 지수 경계 자체가 거짓이 되고 다항 꼬리만 가능하다. 마지막으로 여러 사건에 대해 합집합 경계를 쓰는 순간 `log(개수)` 만큼 손해가 발생하므로, 개수가 지수적으로 많으면 chaining 같은 더 정교한 기법이 필요하다.
+집중부등식이 주는 상수는 대개 최적이 아니다. 예컨대 Hoeffding 은 분산을 전혀 쓰지 않으므로 실제 분산이 매우 작은 경우 심하게 느슨하다(이때는 Bernstein 이 낫다). 또한 유계성이나 sub-Gaussian 가정이 깨지면(예: 두꺼운 꼬리 분포) 지수 경계 자체가 거짓이 되고 다항 꼬리만 가능하다. 마지막으로 여러 사건에 대해 합집합 경계를 쓰는 순간 $\log(\text{개수})$ 만큼 손해가 발생하므로, 개수가 지수적으로 많으면 chaining 같은 더 정교한 기법이 필요하다.
 
 # 활용
 
@@ -175,17 +175,17 @@ $$
 
 ## 학습이론의 표본 복잡도
 
-가설 `h` 의 경험 오차와 실제 오차의 차이는 유계 확률변수 `n` 개의 평균 문제이므로 Hoeffding 이 적용된다. 유한 가설류 `H` 에 대해 모든 가설에 동시에 성립시키려면 합집합 경계를 쓰고
+가설 $h$ 의 경험 오차와 실제 오차의 차이는 유계 확률변수 $n$ 개의 평균 문제이므로 Hoeffding 이 적용된다. 유한 가설류 $H$ 에 대해 모든 가설에 동시에 성립시키려면 합집합 경계를 쓰고
 
 $$
 n \;\ge\; \frac{1}{2\varepsilon^2}\Big(\log |\mathcal{H}| + \log \frac{2}{\delta}\Big)
 $$
 
-이면 충분하다. 가설 개수에 로그로만 의존한다는 결론이 PAC 학습 가능성의 출발점이다. 무한 가설류에서는 `log |H|` 자리에 VC 차원이나 Rademacher 복잡도가 들어가고, 경험 과정 전체의 상한에 McDiarmid 부등식을 적용해 집중을 보장한다. [가설검정과 p-값](hypothesis-testing.md)이나 [신뢰구간](confidence-intervals.md)에서 분포 가정 없이 유한 표본 보장을 얻고 싶을 때도 같은 부등식을 쓴다.
+이면 충분하다. 가설 개수에 로그로만 의존한다는 결론이 PAC 학습 가능성의 출발점이다. 무한 가설류에서는 $\log|H|$ 자리에 VC 차원이나 Rademacher 복잡도가 들어가고, 경험 과정 전체의 상한에 McDiarmid 부등식을 적용해 집중을 보장한다. [가설검정과 p-값](hypothesis-testing.md)이나 [신뢰구간](confidence-intervals.md)에서 분포 가정 없이 유한 표본 보장을 얻고 싶을 때도 같은 부등식을 쓴다.
 
 ## 시뮬레이션
 
-동전 던지기 평균이 Hoeffding 경계 안에 들어가는지 확인하는 짧은 실험이다. 경계는 모든 `n` 에서 유효하며 통상 상당히 보수적이다.
+동전 던지기 평균이 Hoeffding 경계 안에 들어가는지 확인하는 짧은 실험이다. 경계는 모든 $n$ 에서 유효하며 통상 상당히 보수적이다.
 
 ```python
 import math, random
@@ -207,7 +207,7 @@ for n in (25, 100, 400):
     print(f"n={n:4d}  실측={emp:.4f}  Hoeffding={hoeffding:.4f}  Chebyshev={chebyshev:.4f}")
 ```
 
-전형적인 출력에서 실측값은 Hoeffding 경계보다 몇 배 작고, Chebyshev 경계는 `n` 이 커질수록 급격히 쓸모없어진다. `n` 을 두 배로 늘릴 때 실측 꼬리가 제곱 규모로 줄어드는 것이 지수 경계의 형태와 일치한다.
+전형적인 출력에서 실측값은 Hoeffding 경계보다 몇 배 작고, Chebyshev 경계는 $n$ 이 커질수록 급격히 쓸모없어진다. $n$ 을 두 배로 늘릴 때 실측 꼬리가 제곱 규모로 줄어드는 것이 지수 경계의 형태와 일치한다.
 
 [^1]: Gábor Lugosi, Concentration-of-measure inequalities (lecture notes), https://www.upf.edu/documents/298368705/0/anu.pdf
 [^2]: Rick Durrett, Probability: Theory and Examples (5th ed.), https://sites.math.duke.edu/~rtd/PTE/PTE5_011119.pdf
