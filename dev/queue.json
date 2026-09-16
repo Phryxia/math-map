@@ -1,111 +1,15 @@
 {
   "version": 1,
-  "savedAt": "2026-09-16T17:01:07.899Z",
-  "nextSeq": 399,
+  "savedAt": "2026-09-16T21:04:23.278Z",
+  "nextSeq": 413,
   "items": [
     {
-      "id": "0b1e890d",
-      "title": "열린 문제 언급의 출처 전수 점검 (이어서)",
-      "priority": 60,
-      "note": "2026-09-16 회차에 스물네 문서를 처리했다: ramsey-theory, graph-isomorphism, p-np, rsa-cryptosystem, deligne-weil-conjectures, vandiver-conjecture, lang-trotter, maass-forms, kolyvagin-logachev, selmer-groups, iwasawa-main-conjecture, greenberg-conjecture, birch-swinnerton-dyer, merel-theorem, unique-games, volume-conjecture, umbral-moonshine, fontaine-mazur, selberg-trace-formula, schellekens-list, langlands-program, lovasz-theta, graph-coloring, discrete-logarithm. geometric-langlands 에는 해당 문장이 없어 손대지 않았다. 남은 후보는 algebraic-number-fields, bernoulli-numbers, braid-groups, canonical-height, chebotarev, class-field-theory, complex-multiplication, computability, dyson-rank-crank, eisenstein-ideal, elliptic-curves, fft, heegner-points, herbrand-ribet, homomorphic-encryption, intuitionism, kahler-manifolds, kazhdan-lusztig, khovanov-homology, knot-invariants, lie-algebras, littlewood-richardson, local-class-field-theory, modular-forms 및 그 뒤 알파벳순 문서들이다. 방법: 명명된 추측의 진술은 각주 없이 두고 상태 주장에만 출처를 단다. 출처를 찾을 수 없으면 문장을 지운다. 위상의 '열린집합', '상이 열려 있다'(open image)는 오검출이다. 표 셀의 '열림', '미해결' 도 각주를 받는 대상이다",
-      "createdAt": "2026-09-16T17:00:40.634Z",
-      "seq": 398
-    },
-    {
-      "id": "f4287008",
-      "title": "절댓값 자리에 쓰인 \\Vert 전수 점검",
-      "priority": 55,
-      "note": "2026-09-16 회차에 banach-spaces 의 표와 노름 정의에서 절댓값 6 곳이 \\Vert 로 이중선이 되어 있었다. 이전 회차의 | 일괄 치환이 노름과 절댓값을 가리지 않은 결과로 보인다. \\Vert 를 쓰는 38 문서를 훑어 노름이 아닌 자리를 \\vert 로 되돌린다. sup/sum/int/max/prod/lim 바로 뒤의 \\Vert 다섯 건은 확인했고 adeles 의 p^k\\Vert n(정확히 나눔), inverse-function-theorem, lattices, optimal-transport 는 전부 정당한 쓰임이었다",
-      "createdAt": "2026-09-16T16:39:34.359Z",
-      "seq": 387
-    },
-    {
-      "id": "3375a20b",
-      "title": "의문형 헤딩 32 개를 명사구로",
-      "priority": 50,
-      "note": "CLAUDE.md 4절 문체 규칙: 헤딩은 개념 이름이고 의문은 헤딩이 아니다. 규칙이 제시한 grep 은 '-다|-까|-는' 으로 끝나는 것만 잡아서 '-인가', '-는가', '-왜 ~인가' 꼴을 놓친다. 검사법: grep -lE '^## .*(왜|어떻게|무엇|인가|는가|을까) *$' docs/*.md 가 20 문서 32 곳을 낸다. 2026-09-16 회차에 umbral-moonshine 두 곳을 고쳤다. 남은 곳은 airy-functions, fargues-scholze, finite-simple-groups, fundamental-lemma(2), graphs, ideals-quotient-rings, lobachevsky-function(3), maass-forms, marchenko-pastur(3), mv-cycles, perfect-graphs(2), proofs, reshetikhin-turaev(2) 등이다. 헤딩을 바꿀 때 그 절이 실제로 다루는 개념 이름을 쓴다",
-      "createdAt": "2026-09-16T16:56:44.023Z",
-      "seq": 396
-    },
-    {
-      "id": "09517b91",
-      "title": "인라인 수식의 별표를 \\ast 로 전수 교체",
-      "priority": 45,
-      "note": "CLAUDE.md 4절 수식 규칙: 인라인 수식 안의 * 는 \\ast 로 쓴다. 2026-09-16 회차에 banach-spaces 만 고쳤고 56 문서 133 곳이 남았다. 한 줄에 * 가 둘 이상이면 마크다운이 기울임으로 읽어 수식이 깨진다. 검사법: awk 로 코드펜스와 $$ 블록을 건너뛴 뒤 홀수번째 $ 짝의 내용에 * 가 있는지 본다. 쌍대공간 X^*, 당김 f^*, 수반작용소 T^*, 이중쌍대 X^{**} 가 대부분이다",
-      "createdAt": "2026-09-16T16:39:34.241Z",
-      "seq": 386
-    },
-    {
-      "id": "f5e32679",
-      "title": "dev/graph.mjs 에 수식 표기 검사 추가 요청",
-      "priority": 30,
-      "note": "아이겐에게 요청. validate 가 링크와 대칭만 보고 CLAUDE.md 4절의 수식 표기 규칙(닫는 $ 뒤 공백 1개, 인라인 코드 안 수식 금지)은 검사하지 않는다. 회차마다 임시 파서를 새로 짜야 해서 낭비가 크다. 코드블록과 $$ 블록을 건너뛰는 인라인 수식 파서를 validate 에 넣어 달라",
-      "createdAt": "2026-09-15T21:00:10.588Z",
-      "seq": 302
-    },
-    {
-      "id": "3088c2c5",
-      "title": "dev/graph.mjs 에 KaTeX 수식 검증 추가 요청",
-      "priority": 30,
-      "note": "아이겐에게 요청. f5e32679 와 같은 맥락인데 구현안이 더 구체적이다. 임시 파서 대신 katex 를 devDependency 로 두고 validate 에서 수식 조각을 렌더해 보면 문법 오류를 전부 잡는다. 맨 알파벳 연산자 이름(GL, SU, Aut, Hom)은 KaTeX 가 오류로 안 보므로 별도 휴리스틱이 필요하다",
-      "createdAt": "2026-09-16T04:40:23.174Z",
-      "seq": 310
-    },
-    {
-      "id": "7b19ec13",
-      "title": "LaTeX 렌더 오류 회귀 점검 (KaTeX 파싱)",
-      "priority": 30,
-      "note": "2026-09-16 회차에 다시 돌려 수식 29649 개 오류 0 을 확인했다. 방법: 스크래치패드에 npm i katex 하고 dist/katex.mjs 를 import 한다(패키지 루트의 katex.mjs 는 없다). 코드펜스와 인라인 코드를 마스킹하고 인용부호 접두어를 벗긴 뒤 $$ 블록과 인라인 조각을 뽑아 katex.renderToString(frag, {throwOnError:true, displayMode, strict:(c)=>c==='unicodeTextInMathMode'?'error':'ignore'}) 로 돌린다. 인라인 짝짓기는 내용 양끝이 공백이거나 한글이 있으면 건너뛴다",
-      "createdAt": "2026-09-16T13:03:08.422Z",
-      "seq": 330
-    },
-    {
-      "id": "214d68c5",
-      "title": "render-check: 인라인 수식의 백슬래시 이스케이프 검출",
-      "priority": 30,
-      "note": "render-check 가 unescaped 비교로 \\{ \\, \\# \\% \\| 가 풀린 결과를 정상으로 간주해 집합 중괄호 소실을 못 잡았다. \\_ 만 허용하고 나머지 백슬래시+ASCII 문장부호는 인라인 수식에서 보고하게 고친다. 검사 로직은 CLAUDE.md 4절 수식 규칙 끝의 grep 과 같다. dev/ 스크립트는 세션이 고치지 않으므로(0절) 저장소 주인 몫이다. 우선순위를 100 에서 30 으로 내렸다. 세션이 pop 할 때마다 되돌려야 해서 큐 맨 앞을 막았고, 같은 성격의 다른 스크립트 요청(f5e32679, 3088c2c5)이 30 이다. 2026-09-16 회차에 awk 로 전체 문서를 우회 점검했고 위반은 banach-spaces 한 곳뿐이었다",
-      "createdAt": "2026-09-16T16:43:55.182Z",
-      "seq": 394
-    },
-    {
-      "id": "bfd4c210",
-      "title": "닫는 $ 뒤 공백 회귀 점검",
-      "priority": 25,
-      "note": "2026-09-16 회차에 349 건을 138 문서에서 고쳤다(쉼표, 마침표, 콜론, 세미콜론, 괄호, 대괄호, 따옴표 앞에 공백 1 개 삽입). 남은 위반 보고는 전부 인용부호로 들여쓴 한 줄 $$ 블록(> $$...$$)에 대한 오검출이다. 검사기를 다시 짤 때 두 가지를 반드시 넣는다. (1) $ 짝짓기는 왼쪽부터 순차로 하되 내용의 양끝이 공백이거나 내용에 한글이 있으면 수식으로 보지 않는다. 이 검사를 빼면 \"$i$ 가 ... 교집합은 $\" 처럼 수식 사이 산문이 통째로 수식으로 잡혀 엉뚱한 자리에 공백이 들어간다. (2) 한 줄 $$...$$ 와 인용부호 접두어를 먼저 마스킹한다. $L$-Lipschitz 처럼 하이픈이 붙는 자리는 공백 대신 $L\\text{-Lipschitz}$ 로 옮긴다(color-refinement 의 $k\\text{-WL}$ 이 기존 관례). 검수는 KaTeX 파싱(수식 29448 개 오류 0)으로 확인했다",
-      "createdAt": "2026-09-16T12:45:23.050Z",
-      "seq": 324
-    },
-    {
-      "id": "db7e9bcc",
-      "title": "수식이 맨 텍스트로 쓰인 자리 잔여 점검 (4차)",
+      "id": "cf8eeb58",
+      "title": "수식이 맨 텍스트로 쓰인 자리 잔여 점검 (5차)",
       "priority": 20,
-      "note": "2026-09-16 회차에 counting-principles, generating-functions, inclusion-exclusion, ramsey-theory, formalism-hilbert-program, fundamental-group, linear-programming, pigeonhole-principle, markov-chains, exponential-families, homology, mathematical-platonism 을 처리해 29 문서 66 줄에서 17 문서 22 줄로 줄었다. 남은 22 줄은 전부 현행 검사기의 오검출이다: 각주의 논문 제목 인용(lambda-calculus, lang-trotter, rankin-selberg, umbral-moonshine, godement-jacquet), 인용부호 > 로 들여쓴 수식 블록(modular-curves, s-cobordism, brauer-groups, casson-invariant, fredholm-operators, maass-forms, stationary-phase), 약어 NP/PSPACE(np-completeness), 헤딩의 유니코드 표기(continuity 의 ε–δ, uniform-integrability, localization-rings 의 R_p, monads 의 (T, η, μ)), 문서 제목(modular-curves 의 X_0(N)). 새 문서에서 다시 새어 나오므로 회차마다 한 번 훑되, 검사기를 다시 짤 때 > 블록 마스킹과 각주 줄 제외를 넣는다",
-      "createdAt": "2026-09-16T12:41:18.316Z",
-      "seq": 323
-    },
-    {
-      "id": "04b46360",
-      "title": "인라인 코드블록 수식 회귀 점검",
-      "priority": 20,
-      "note": "2026-09-16 회차에 다시 훑어 회귀가 없음을 확인했다. 코드펜스 밖 백틱 스팬은 35 종뿐이고 전부 코드 식별자다: 연산 이름(LINK, CUT, INSERT(u,v), DELETE(u,v), CONNECTED(u,v), MAKE-SET(x), FIND(x), UNION(x,y), access(v), evert(v), link(v, w), cut(v), findroot(v), makeroot, path(v, w), connected(v, w), find_root, is_root), 언어 기능과 항등식(call/cc, curry, uncurry, map(g, map(f, xs)), map f (reverse xs) = reverse (map f xs), List, Maybe, Z combinator, fact, picky, f), 표현식(((x % m) + m) % m, pow(c, d, n), exists, globalSign === 1). 검사법: 코드펜스 밖 백틱 내용을 전부 뽑아 빈도표를 만들고 위 목록에 없는 것만 본다",
-      "createdAt": "2026-09-16T13:00:00.390Z",
-      "seq": 329
-    },
-    {
-      "id": "73b07981",
-      "title": "ramsey-theory 의 명시적 Ramsey 그래프 구성",
-      "priority": 20,
-      "note": "조합론. 확률적 하한 절에서 '명시적 구성이 알려져 있지 않다' 를 출처 없이 쓸 수 없어 지웠다. Barak-Rao-Shaltiel-Wigderson 이나 Chattopadhyay-Zuckerman 의 이색 추출기 결과를 출처로 삼아 현재 최선의 명시적 구성이 주는 하한을 사실로 적으면 절이 온전해진다",
-      "createdAt": "2026-09-16T16:43:37.881Z",
-      "seq": 393
-    },
-    {
-      "id": "7a7d5f2c",
-      "title": "rsa-cryptosystem 의 절차 흐름도와 검증 코드 정리",
-      "priority": 20,
-      "note": "2026-09-16 회차에 안전성 가정의 출처만 손봤다. 남은 것 셋. (1) 직관 절의 mermaid 는 키 생성부터 복호화까지의 절차를 화살표로 늘어놓은 것이라 4절 다이어그램 규칙에 걸린다. 정의 절이 같은 내용을 이미 단계로 쓴다. (2) 구현 예제 끝의 '거듭제곱 비용은 pow 한 번과 decrypt_crt 의 두 번을 비교하면 확인된다' 는 검증 문투이고 앞 절의 비용 분석과 겹친다. (3) 코드의 assert 와 print 가운데 RSA 절차의 실행이 아니라 정당성을 다시 확인하는 줄을 가린다",
-      "createdAt": "2026-09-16T16:48:03.986Z",
-      "seq": 395
+      "note": "2026-09-16 회차에 galois-theory(직관과 예제 절의 Q(√2), x^2-2, F_(p^m)), counting-principles, generating-functions, inclusion-exclusion, linear-programming 을 처리했다. 새 검사기는 스크래치패드 파이썬으로 짰고 패턴은 (?<![\\w\\\\])([A-Za-z]_[A-Za-z0-9](?![\\w])|[A-Za-z0-9]\\^[A-Za-z0-9{]|\\\\[a-zA-Z]{2,}) 다. 코드펜스, 인용부호 줄, 각주 줄, 인라인 코드, $$ 블록, 인라인 수식을 마스킹한다. 남은 보고 74 건은 전부 오검출이다: 한글이 든 \\text{} 때문에 인라인 수식 마스킹이 풀리는 자리(fargues-scholze, deformation-rings, localization-rings, kolyvagin-systems, euler-systems, knot-invariants, bayesian-inference, concentration-inequalities), 링크 표시 제목 '모듈러 곡선 X_0(N)'(eisenstein-ideal, elliptic-curves, fontaine-mazur, heegner-points). 검사기를 다시 짤 때 인라인 짝짓기에서 한글 제외 조건을 \\text{} 안쪽에는 적용하지 않도록 고친다",
+      "createdAt": "2026-09-16T21:01:27.344Z",
+      "seq": 411
     },
     {
       "id": "a325702c",
@@ -114,6 +18,62 @@
       "note": "2026-09-16 회차에 analysis, probability, differential-geometry, graph-theory, optimization, category-theory 개관 여섯 개를 만들어 개관이 12 개가 되었다. 주 분야(태그 줄 첫 태그) 기준 문서 수가 10 개 이상인 분야는 이제 모두 개관을 가진다. 남은 분야는 measure_theory 9, group_theory 9, set_theory 8, ring_theory 8, statistics 7, logic 7, functional_analysis 7, algebraic_topology 7 인데 앞의 넷과 logic, algebraic_topology 는 abstract-algebra-overview, foundations-overview, topology-overview 가 이미 거둔다. 독립 개관이 필요해지는 시점은 measure_theory 나 functional_analysis 가 10 개를 넘을 때다. 태그 전체 등장 수(computation 54, complex_analysis 38)로는 커 보여도 주 분야로는 4 개, 3 개뿐이라 갈래를 채울 문서가 없다",
       "createdAt": "2026-09-16T12:55:32.557Z",
       "seq": 328
+    },
+    {
+      "id": "5df2490d",
+      "title": "열린 문제 언급의 출처 회귀 점검",
+      "priority": 15,
+      "note": "2026-09-16 회차에 전수 점검을 마쳤다. 이번에 처리한 문서는 algebraic-number-fields, bernoulli-numbers, braid-groups, canonical-height, chebotarev, class-field-theory, complex-multiplication, computability, elliptic-curves, fft, heegner-points, herbrand-ribet, kahler-manifolds, khovanov-homology, lie-algebras, littlewood-richardson, local-class-field-theory, pcp-theorem, post-quantum-cryptography, primes, ramanujan-graphs, s-cobordism, satake-isomorphism, sphere-packing, stickelberger, witten-asymptotics 스물여섯이다. CLAUDE.md 4절의 두 grep(추측성 절 헤딩, 범위 뭉뚱그림)은 이제 아무것도 내놓지 않는다. 검사법: grep -nE '(열려 있|미해결|증명되지 않|알려져 있지 않)' docs/*.md 로 훑고 오검출을 걸러낸다. 상습 오검출은 위상의 '열린집합', Serre 의 '상이 열려 있다', 직관주의의 '증명되지 않는다'(메타정리), 역사적 서술('1977 년 전까지', '오래전'), godel-incompleteness 와 boolean-algebras 의 증명 본문이다. 새 문서에서 다시 새어 나오므로 회차마다 한 번 훑는다",
+      "createdAt": "2026-09-16T20:49:30.887Z",
+      "seq": 399
+    },
+    {
+      "id": "6f4c9073",
+      "title": "닫는 $ 뒤 공백 회귀 점검",
+      "priority": 15,
+      "note": "2026-09-16 회차에 별표 치환 뒤 다시 돌려 gradient-descent 한 줄(괄호가 수식에 붙은 두 곳)만 고쳤다. 남은 보고 두 건은 각주 안 논문 제목이 수식으로 끝나고 닫는 따옴표가 바로 오는 자리(maass-forms:173, selberg-trace-formula:168 의 Kim 논문)로 오검출이다. 검사기는 스크래치패드에 파이썬으로 짠다. 필수 조건 둘: (1) $ 짝짓기는 왼쪽부터 순차로 하되 내용의 양끝이 공백이거나 내용에 한글이 있으면 수식으로 보지 않는다. (2) 인용부호 접두어를 벗기고 인라인 코드와 한 줄 $$...$$ 를 먼저 마스킹한다. $L$-Lipschitz 처럼 하이픈이 붙는 자리는 $L\\text{-Lipschitz}$ 로 옮긴다",
+      "createdAt": "2026-09-16T20:59:01.494Z",
+      "seq": 409
+    },
+    {
+      "id": "a3238069",
+      "title": "절댓값과 노름 표기 회귀 점검",
+      "priority": 12,
+      "note": "2026-09-16 회차에 \\Vert 를 쓰는 57 문서를 전수로 훑어 오용 네 곳(characteristic-functions, optimal-transport, tate-thesis, birch-swinnerton-dyer)을 \\vert 로 되돌렸다. 정당한 이중선은 KL 발산의 구분자, 작용소/벡터/행렬 노름, p^k\\Vert n 꼴의 정확히 나눔(adeles, hecke-operators, p-adic-hodge-theory), poitou-tate 의 정규화된 국소 절댓값, borcherds-products 의 Petersson 노름이다. \\lVert/\\rVert 를 쓰는 문서들(inner-product-spaces, bounded-operators, banach-spaces, gradient-descent 등)은 전부 노름이라 손댈 것이 없었다. 검사법: grep -o '\\\\Vert[^\\\\]*\\\\Vert' docs/*.md 로 쌍의 내용을 빈도로 뽑고 스칼라 변수(t, z, 실수 하나)나 미분형식이 들어간 것만 본다",
+      "createdAt": "2026-09-16T20:51:53.076Z",
+      "seq": 400
+    },
+    {
+      "id": "1d68ad8f",
+      "title": "의문형 헤딩 회귀 점검",
+      "priority": 12,
+      "note": "2026-09-16 회차에 20 문서 32 곳을 명사구로 바꿔 비웠다. 검사법: grep -nE '^#+ .*(왜|어떻게|무엇|인가|는가|을까) *$' docs/*.md 와 CLAUDE.md 4절의 '^##' grep 을 함께 돌린다. 지금 유일한 히트인 galois-connections:192 는 파이썬 코드블록 안의 주석이라 헤딩이 아니다. 새 문서에서 다시 새어 나오므로 회차마다 한 번 훑는다",
+      "createdAt": "2026-09-16T20:54:12.313Z",
+      "seq": 402
+    },
+    {
+      "id": "e40b2540",
+      "title": "인라인 수식 별표 회귀 점검",
+      "priority": 12,
+      "note": "2026-09-16 회차에 56 문서 123 곳을 \\ast 로 바꿔 비웠다. $$ 블록 안의 * 는 강조가 먹지 않으므로 그대로 두었다(class-field-theory, quadratic-reciprocity 의 p^* 등). 검사법: 코드펜스와 $$ 블록을 건너뛰고 인라인 $ 짝을 순차로 맞추되 내용 양끝이 공백이거나 한글이 있으면 수식에서 제외한 뒤, 남은 내용에 * 가 있는지 본다. 치환할 때 \\ast 뒤가 영숫자면 공백을 하나 넣는다",
+      "createdAt": "2026-09-16T20:56:55.240Z",
+      "seq": 403
+    },
+    {
+      "id": "1c5bc409",
+      "title": "LaTeX 렌더 오류 회귀 점검 (KaTeX 파싱)",
+      "priority": 12,
+      "note": "2026-09-16 회차에 별표 132 곳을 \\ast 로 치환한 뒤 돌려 수식 29728 개 오류 0 을 확인했다(직전 회차는 29649 개). 같은 회차에 이미 수행했으므로 우선순위를 25 에서 12 로 내려 다른 회귀 점검들과 묶었다. 방법: 스크래치패드에 npm i katex 하고 dist/katex.mjs 를 import 한다(패키지 루트의 katex.mjs 는 없다). 코드펜스와 인라인 코드를 마스킹하고 인용부호 접두어를 벗긴 뒤 $$ 블록과 인라인 조각을 뽑아 katex.renderToString(frag, {throwOnError:true, displayMode, strict:(c)=>c==='unicodeTextInMathMode'?'error':'ignore'}) 로 돌린다. 인라인 짝짓기는 내용 양끝이 공백이거나 한글이 있으면 건너뛴다. 대량 치환을 한 회차마다 돌린다",
+      "createdAt": "2026-09-16T20:59:11.635Z",
+      "seq": 410
+    },
+    {
+      "id": "75b54b14",
+      "title": "인라인 코드블록 수식 회귀 점검",
+      "priority": 12,
+      "note": "2026-09-16 회차에 다시 훑어 회귀가 없음을 확인했다. 코드펜스 밖 백틱 스팬은 59 종이고 전부 코드 식별자, 언어 기능, 약어다. 직전 노트의 35 종에 더해 확인한 것: % (modular-arithmetic 의 나머지 연산자), ID (color-refinement), JPEG, PNG, gzip, Z (lambda-calculus 의 Z combinator), access, bind, build_N, count, cut, cut(v, w), decrypt_crt, dev/graph.mjs check-cycle, dict, dn_lem (intuitionism 의 보조정리 이름), do, fix, goto, link, map, map(g∘f, xs), minimize, resistance, return, signature, while. 검사법: 코드펜스 밖 백틱 내용을 전부 뽑아 빈도표를 만들고 목록에 없는 것만 본다",
+      "createdAt": "2026-09-16T21:02:18.166Z",
+      "seq": 412
     },
     {
       "id": "d9c884d3",
@@ -642,6 +602,14 @@
       "note": "weak-convergence 와 brownian-motion 아래. C[0,1] 위의 약수렴, tightness 판정(Arzela-Ascoli 와 모듈러스 조건), 랜덤워크의 스케일 극한이 Brown 운동. weak-convergence 본문 '극한정리의 표준 골격' 에서 언급만 했다",
       "createdAt": "2026-09-16T04:58:57.916Z",
       "seq": 314
+    },
+    {
+      "id": "a6985bd5",
+      "title": "dev 스크립트 개선 요청 묶음 (수식 표기 검사, KaTeX 검증, 이스케이프 검출)",
+      "priority": 8,
+      "note": "아이겐에게 보내는 요청 셋을 하나로 묶었다. 셋 다 0절에 따라 세션이 손대지 않는 dev/ 의 일이라 pop 될 때마다 되돌려 넣어야 했고, p30 으로 세 칸이 큐 앞을 막았다. 그래서 p8 로 내리고 한 항목으로 합친다. (1) validate 가 4절의 수식 표기 규칙(닫는 $ 뒤 공백 1개, 인라인 코드 안 수식 금지)을 검사하지 않아 회차마다 임시 파서를 새로 짠다. 코드블록과 $$ 블록을 건너뛰는 인라인 수식 파서를 넣어 달라. (2) 임시 파서 대신 katex 를 devDependency 로 두고 수식 조각을 렌더해 보면 문법 오류를 전부 잡는다. 맨 알파벳 연산자 이름(GL, SU, Aut, Hom)은 KaTeX 가 오류로 안 보므로 별도 휴리스틱이 필요하다. (3) render-check 가 unescaped 비교로 \\{ \\, \\# \\% \\| 가 풀린 결과를 정상으로 보아 집합 중괄호 소실을 못 잡는다. \\_ 만 허용하고 나머지 백슬래시+ASCII 문장부호는 인라인 수식에서 보고하게 고쳐 달라. 세 검사 모두 세션이 awk 와 katex 로 우회 점검하고 있고 2026-09-16 회차 기준 위반 0, 수식 29728 개 오류 0 이다",
+      "createdAt": "2026-09-16T20:58:05.439Z",
+      "seq": 408
     },
     {
       "id": "b1f43504",
