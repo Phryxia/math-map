@@ -129,7 +129,7 @@ Heegner 점은 $K$ 를 하나 고를 때마다 하나 나온다. $K$ 를 바꾸�
 
 ## Heegner 점
 
-$E/\mathbb Q$ 의 도체를 $N$, $K=\mathbb Q(\sqrt D)$ 를 Heegner 조건을 만족하는 허수이차체라 하자. $\mathcal O_K/\mathfrak n\cong\mathbb Z/N$ 인 아이디얼 $\mathfrak n$ 을 하나 고정하면, 각 아이디얼류 $[\mathfrak a]\in\mathrm{Cl}(K)$ 에 대해
+$E/\mathbb Q$ 의 도체를 $N$ 이라 하고 $K=\mathbb Q(\sqrt D)$ 를 Heegner 조건을 만족하는 허수이차체라 하자. $\mathcal O_K/\mathfrak n\cong\mathbb Z/N$ 인 아이디얼 $\mathfrak n$ 을 하나 고정하면, 각 아이디얼류 $[\mathfrak a]\in\mathrm{Cl}(K)$ 에 대해
 
 $$
 x_{\mathfrak a}=\bigl(\mathbb C/\mathfrak a\;\longrightarrow\;\mathbb C/\mathfrak a\mathfrak n^{-1}\bigr)\;\in\;X_0(N)(H)
@@ -149,7 +149,7 @@ $$
 
 ## Gross–Zagier 공식
 
-$y_K=\mathrm{Tr}_{H/K}\varphi(x_{\mathcal O_K})$ 라 두고 $\hat h$ 를 $E/K$ 위의 Néron–Tate 정준 높이, $u=|\mathcal O_K^\times|/2$, $\langle f,f\rangle$ 을 Petersson 노름이라 하자. 그러면
+$y_K=\mathrm{Tr}_{H/K}\varphi(x_{\mathcal O_K})$ 라 두고 $\hat h$ 를 $E/K$ 위의 Néron–Tate 정준 높이라 하고, $u=|\mathcal O_K^\times|/2$ 로 두고, $\langle f,f\rangle$ 을 Petersson 노름이라 하자. 그러면
 
 $$
 L'(E/K,1)=\frac{32\pi^2\,\langle f,f\rangle}{u^2\sqrt{|D|}}\;\hat h(y_K)
@@ -221,7 +221,7 @@ $D$ 를 잘못 고르면 $y_K$ 가 비틀림 점이 되어 아무 정보도 주�
 
 ## 합동수 문제
 
-$n$ 이 합동수(직각삼각형 세 변이 유리수이고 넓이가 $n$)인 것은 $y^2=x^3-n^2x$ 의 순위가 양수인 것과 같다. 해석적 순위 $\le1$ 인 경우가 해결되어 있으므로, $L$ 함수의 소실 차수를 계산하면 판정이 끝난다. 그 계산을 유한한 조건으로 바꾼 것이 Tunnell 정리이며, 이 방향의 최종 진술은 BSD 전체를 기다린다.
+$n$ 이 합동수, 곧 세 변이 유리수이고 넓이가 $n$ 인 직각삼각형이 있는 수인 것은 $y^2=x^3-n^2x$ 의 순위가 양수인 것과 같다. 해석적 순위 $\le1$ 인 경우가 해결되어 있으므로, $L$ 함수의 소실 차수를 계산하면 판정이 끝난다. 그 계산을 유한한 조건으로 바꾼 것이 Tunnell 정리이며, 이 방향의 최종 진술은 BSD 전체를 기다린다.
 
 ## $Ш$ 의 위수 계산
 

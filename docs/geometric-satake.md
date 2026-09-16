@@ -54,7 +54,7 @@ $$
 
 ## 아핀 Grassmann 다양체
 
-$F=\mathbb C((t))$, $\mathcal O=\mathbb C[[t]]$ 라 하자. $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 는 무한차원이지만 유한차원 사영다양체들의 증가 합집합(ind-다양체)이다. $G=\mathrm{GL}_n$ 이면 $\mathrm{Gr}_G$ 의 점은 $F^n$ 안의 $\mathcal O$ 격자다.
+$F=\mathbb C((t))$ 와 $\mathcal O=\mathbb C[[t]]$ 로 두자. $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 는 무한차원이지만 유한차원 사영다양체들의 증가 합집합(ind-다양체)이다. $G=\mathrm{GL}_n$ 이면 $\mathrm{Gr}_G$ 의 점은 $F^n$ 안의 $\mathcal O$ 격자다.
 
 Cartan 분해가 $G(\mathcal O)$ 궤도를 분류한다.
 
@@ -132,7 +132,7 @@ graph TD
 
 ## 아핀 Grassmann 다양체
 
-$k$ 를 체, $F=k((t))$, $\mathcal O=k[[t]]$ 라 하고 $G$ 를 $k$ 위의 연결 환원군이라 하자. **아핀 Grassmann 다양체**는 함자
+$k$ 를 체라 하고 $F=k((t))$ 와 $\mathcal O=k[[t]]$ 로 두고 $G$ 를 $k$ 위의 연결 환원군이라 하자. **아핀 Grassmann 다양체**는 함자
 
 $$
 \mathrm{Gr}_G(R)=\bigl\{(\mathcal E,\beta)\bigr\}/\cong
@@ -207,7 +207,7 @@ $$
 
 ## 쌍대군의 개념적 정의
 
-Langlands 쌍대군은 원래 근 자료 $(X^*,\Phi,X_*,\Phi^\vee)$ 에서 $X^*\leftrightarrow X_*$, $\Phi\leftrightarrow\Phi^\vee$ 를 맞바꿔 정의한다. 정확하지만 왜 그런 대상이 자기동형 형식을 지배하는지는 설명하지 못한다.
+Langlands 쌍대군은 원래 근 자료 $(X^*,\Phi,X_*,\Phi^\vee)$ 에서 $X^*\leftrightarrow X_*$ 와 $\Phi\leftrightarrow\Phi^\vee$ 를 맞바꿔 정의한다. 정확하지만 왜 그런 대상이 자기동형 형식을 지배하는지는 설명하지 못한다.
 
 기하학적 Satake 는 $\widehat G$ 를 $G$ 의 고리 공간의 코호몰로지의 자기동형군으로 준다. 정의가 개념적이고, 근 자료를 뒤집는 일이 정리의 결론으로 나온다. 이 관점에서 쌍대군은 선택이 아니라 필연이다.
 
