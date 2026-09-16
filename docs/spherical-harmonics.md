@@ -51,8 +51,8 @@ graph TD
 
 | | 원 $S^1$ | 구면 $S^2$ |
 |---|---|---|
-| 대칭군 | $\mathrm{SO}(2)$, 아벨 | $\mathrm{SO}(3)$, 비아벨 |
-| 기약표현 | $e^{in\theta}$, 1 차원 | $\mathcal H_\ell$, $2\ell+1$ 차원 |
+| 대칭군 | 아벨군 $\mathrm{SO}(2)$ | 비아벨군 $\mathrm{SO}(3)$ |
+| 기약표현 | 1 차원인 $e^{in\theta}$ | $2\ell+1$ 차원인 $\mathcal H_\ell$ |
 | Laplace 고유값 | $-n^2$ | $-\ell(\ell+1)$ |
 | 전개 | Fourier 급수 | 구면조화 전개 |
 
