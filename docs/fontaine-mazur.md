@@ -134,7 +134,7 @@ $$
 
 가 추측된다. 기하적이면서 무게가 서로 다른 2 차원 표현은 Hodge 구조의 대칭에서 홀수가 되므로 홀수 조건은 잉여가 아니다.
 
-무게가 같은 $\lbrace 0,0\rbrace$ 인 경우 추측은 $\rho$ 의 상이 유한하다고 주장한다. 그러면 $\rho$ 가 Artin 표현이 되고 Artin 추측의 영역으로 넘어간다. 이 경우는 열려 있다.
+무게가 같은 $\lbrace 0,0\rbrace$ 인 경우 추측은 $\rho$ 의 상이 유한하다고 주장한다. 그러면 $\rho$ 가 Artin 표현이 되고 Artin 추측의 영역으로 넘어간다. 이 경우는 증명되지 않았다[^1].
 
 ## 변형환의 언어
 
@@ -154,9 +154,9 @@ $$
 |---|---|
 | $n=1$ | 정리. 유체론과 Kronecker–Weber |
 | $n=2$ 이고 홀수, 서로 다른 HT 무게, $\bar\rho\vert\_{\mathbb Q(\zeta_p)}$ 기약 | Kisin, Emerton (대체로 해결)[^2] |
-| $n=2$ 이고 HT 무게 같음 | 미해결. Artin 추측과 얽힘 |
+| $n=2$ 이고 HT 무게 같음 | 증명되지 않음[^1]. Artin 추측과 얽힘 |
 | $n=2$ 이고 짝수 | 결론이 "그런 것은 없다" 쪽. 부분 결과만 |
-| $n\ge3$ | 열려 있음. 자기쌍대 경우에 부분 결과 |
+| $n\ge3$ | 증명되지 않음[^1]. 자기쌍대 경우에 부분 결과 |
 
 $n=2$ 증명은 두 단계다. [Serre 추측](modular-forms.md)(Khare–Wintenberger 정리)이 잔여표현 $\bar\rho$ 의 모듈러성을 주고, 모듈러성 올림 정리가 잔여적으로 모듈러이면서 $p$ 에서 de Rham 인 표현을 모듈러로 올린다. Kisin 은 올림 단계에서 $p$ 진 국소 Langlands 대응을 써서 국소 조건의 제약을 걷어냈다.
 
@@ -209,7 +209,7 @@ Wiles 의 반안정 타원곡선 모듈러성, Breuil–Conrad–Diamond–Taylo
 
 [모듈러 기호](modular-symbols.md)로 3 단계의 공간을 계산하므로 절차 전체가 컴퓨터에서 돈다. 추측은 이 절차의 완전성, 곧 후보가 없으면 그런 표현도 없음을 보장한다.
 
-[^1]: J.-M. Fontaine, B. Mazur, *Geometric Galois representations*, Elliptic Curves, Modular Forms, and Fermat's Last Theorem (1995), 41–78. 본문의 조건 1, 2 와 기하적 표현의 정의가 이 논문의 §1 이다.
+[^1]: J.-M. Fontaine, B. Mazur, *Geometric Galois representations*, Elliptic Curves, Modular Forms, and Fermat's Last Theorem (1995), 41–78. 본문의 조건 1, 2 와 기하적 표현의 정의가 이 논문의 §1 이다. 같은 절이 추측을 제기하면서 어느 경우가 증명되지 않았는지도 밝힌다.
 
 [^2]: M. Kisin, *The Fontaine–Mazur conjecture for GL(2)*, J. Amer. Math. Soc. **22** (2009), 641–690. M. Emerton, *Local-global compatibility in the p-adic Langlands programme for GL(2)* (preprint, 2011). 잔여표현 쪽 입력인 Serre 추측은 C. Khare, J.-P. Wintenberger, *Serre's modularity conjecture I, II*, Invent. Math. **178** (2009).
 
