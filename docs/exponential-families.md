@@ -62,11 +62,11 @@ $\mathcal N$ 이 열린집합이면 정칙(regular), $T$ 의 성분들과 상수
 
 | 분포 | $T(x)$ | 자연모수 $\eta$ | $A(\eta)$ |
 | --- | --- | --- | --- |
-| Bernoulli(p) | $x$ | $\log(p/(1-p))$ | $\log(1 + e^{\eta})$ |
-| Poisson(λ) | $x$ | $\log \lambda$ | $e^{\eta}$ |
+| $\mathrm{Bernoulli}(p)$ | $x$ | $\log(p/(1-p))$ | $\log(1 + e^{\eta})$ |
+| $\mathrm{Poisson}(\lambda)$ | $x$ | $\log \lambda$ | $e^{\eta}$ |
 | 정규 (분산 기지) | $x$ | $\mu/\sigma^2$ | $\sigma^2\eta^2/2$ |
 | 정규 (둘 다 미지) | $(x, x^2)$ | $(\mu/\sigma^2, -1/(2\sigma^2))$ | $-\eta_1^2/(4\eta_2) - (1/2)\log(-2\eta_2)$ |
-| Gamma(α, β) | $(\log x, x)$ | $(\alpha - 1, -\beta)$ | $\log \Gamma(\eta_1+1) - (\eta_1+1)\log(-\eta_2)$ |
+| $\mathrm{Gamma}(\alpha,\beta)$ | $(\log x, x)$ | $(\alpha - 1, -\beta)$ | $\log \Gamma(\eta_1+1) - (\eta_1+1)\log(-\eta_2)$ |
 
 지수분포는 Gamma 의 특수경우이고, 범주형과 다항분포는 지시벡터를 $T$ 로 두면 지수족이다. 균등분포 $U(0, \theta)$ 는 지지집합이 모수에 의존해 지수족이 아니며, Cauchy 분포와 자유도가 미지인 t 분포도 아니다.
 

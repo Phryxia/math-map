@@ -25,7 +25,7 @@ graph TD
 
 # 정의
 
-platonism의 세 주장을 명제로 적는다. 대상의 영역을 M이라 하자[^1].
+platonism 의 세 주장을 명제로 적는다. 대상의 영역을 $M$ 이라 하자[^1].
 
 $$
 \textbf{Existence:}\quad \exists x\thinspace(x \in M)
@@ -41,7 +41,7 @@ $$
 
 세 주장을 모두 받아들이면 platonism, Existence를 부정하면 nominalism, Independence를 약화시키면 여러 형태의 구성주의 · 관념론이 된다. 대상 대신 구조만을 일차적 실재로 보는 입장은 ante rem structuralism이라 불리며, Abstractness와 Independence는 유지한다.
 
-전통적 platonism은 여기에 object realism, 즉 M의 원소가 집합이나 수 같은 개별 대상이라는 주장을 더한다. plenitudinous(full-blooded) platonism은 무모순적인 어떤 수학적 이론이든 그것이 기술하는 대상 영역이 존재한다고 본다.
+전통적 platonism 은 여기에 object realism, 곧 $M$ 의 원소가 집합이나 수 같은 개별 대상이라는 주장을 더한다. plenitudinous(full-blooded) platonism은 무모순적인 어떤 수학적 이론이든 그것이 기술하는 대상 영역이 존재한다고 본다.
 
 # 성질
 
