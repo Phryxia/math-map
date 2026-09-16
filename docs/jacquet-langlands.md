@@ -56,7 +56,7 @@ $$
 
 이고 $D_v$ 는 유일한 분할 사원수 대수다. 후자인 자리들의 집합을 $\Sigma$ 라 하면 $\Sigma$ 는 유한하고 **크기가 짝수**다. 역으로 짝수 크기 유한집합마다 그것을 분지 집합으로 갖는 $B$ 가 정확히 하나 있다(Hasse–Brauer–Noether). $\Sigma=\varnothing$ 이면 $B=M_2(F)$ 다.
 
-$F=\mathbb Q$ 에서 $\Sigma=\{\infty,p\}$ 인 경우를 **확정(definite) 사원수 대수**라 부른다. 무한 자리에서 분지되어 $B^\times(\mathbb R)$ 이 콤팩트 mod 중심이 되는 경우다.
+$F=\mathbb Q$ 에서 $\Sigma=\lbrace\infty,p\rbrace$ 인 경우를 **확정(definite) 사원수 대수**라 부른다. 무한 자리에서 분지되어 $B^\times(\mathbb R)$ 이 콤팩트 mod 중심이 되는 경우다.
 
 ## 국소 대응
 
@@ -90,7 +90,7 @@ $\Sigma\ne\varnothing$ 이면 $B^\times(F)Z(\mathbb A)\backslash B^\times(\mathb
 
 ## 류수와 종수
 
-$\Sigma=\{\infty,p\}$ 인 확정 사원수 대수의 좌이념류 수 $h(p)$ 는 Eichler 의 질량 공식과 타원점 계산으로 닫힌 식이 된다. Eichler 의 정리는 무게 2 레벨 $p$ 의 첨점형식 공간의 차원이 $h(p)-1$ 이라고 말하고, 이는 곧 모듈러 곡선 $X_0(p)$ 의 종수다.
+$\Sigma=\lbrace\infty,p\rbrace$ 인 확정 사원수 대수의 좌이념류 수 $h(p)$ 는 Eichler 의 질량 공식과 타원점 계산으로 닫힌 식이 된다. Eichler 의 정리는 무게 2 레벨 $p$ 의 첨점형식 공간의 차원이 $h(p)-1$ 이라고 말하고, 이는 곧 모듈러 곡선 $X_0(p)$ 의 종수다.
 
 ```javascript
 // Deuring: p 에서 분지된 확정 사원수 대수의 좌이념류 수

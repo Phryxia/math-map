@@ -157,7 +157,7 @@ $K=\mathbb Q_p$ 와 $\pi=p$ 와 $f(X)=(1+X)^p-1$ 을 넣으면 모든 것이 익
 |---|---|
 | $F_f(X,Y)$ | 형식 곱군 $\hat{\mathbb G}_m$ 의 $X+Y+XY$ |
 | $[a]_f(X)$ | $(1+X)^a-1$ |
-| $\Lambda_n$ | $\{\zeta-1:\zeta^{p^n}=1\}$ |
+| $\Lambda_n$ | $\lbrace\zeta-1:\zeta^{p^n}=1\rbrace$ |
 | $K_{\pi,n}$ | $\mathbb Q_p(\mu_{p^n})$ |
 | $\mathrm{Gal}\cong(\mathcal O/\pi^n)^\times$ | $(\mathbb Z/p^n)^\times$ |
 | $K^{\mathrm{ab}}=K^{\mathrm{ur}}K_\pi$ | 국소 Kronecker–Weber |
@@ -274,13 +274,13 @@ report("f(X) = (1+X)^3 - 1", {1: 3, 2: 3, 3: 1})
 
 ## 두 형식군이 같은 체를 준다
 
-$f=3X+X^3$ 의 분할점을 직접 구해 본다. $f(x)=x(3+x^2)=0$ 이므로 $\Lambda_1=\{0,\pm\sqrt{-3}\}$ 이고
+$f=3X+X^3$ 의 분할점을 직접 구해 본다. $f(x)=x(3+x^2)=0$ 이므로 $\Lambda_1=\lbrace 0,\pm\sqrt{-3}\rbrace$ 이고
 
 $$
 K_{\pi,1}=\mathbb Q_3(\sqrt{-3})
 $$
 
-다. 한편 $f=(1+X)^3-1$ 쪽은 $\Lambda_1=\{\zeta_3-1\}$ 이므로 $K_{\pi,1}=\mathbb Q_3(\zeta_3)$ 인데, $\zeta_3=\frac{-1+\sqrt{-3}}2$ 이므로 두 체가 같다. 형식군은 서로 다른데 분할점이 만드는 체는 같다. 정리의 셋째 줄이 말하는 $f$ 독립성이 눈앞에서 확인된다.
+다. 한편 $f=(1+X)^3-1$ 쪽은 $\Lambda_1=\lbrace\zeta_3-1\rbrace$ 이므로 $K_{\pi,1}=\mathbb Q_3(\zeta_3)$ 인데, $\zeta_3=\frac{-1+\sqrt{-3}}2$ 이므로 두 체가 같다. 형식군은 서로 다른데 분할점이 만드는 체는 같다. 정리의 셋째 줄이 말하는 $f$ 독립성이 눈앞에서 확인된다.
 
 차수도 맞는다. 둘 다 $\mathbb Q_3$ 위 차수 $2$ 의 완전분기 확대이고 $|(\mathbb Z_3/3)^\times|=2$ 다.
 

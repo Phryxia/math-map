@@ -2,7 +2,7 @@
 
 # 개요
 
-[Sato–Tate 분포](sato-tate.md)는 Frobenius 각 $\theta_p$ 가 $\frac2\pi\sin^2\theta\,d\theta$ 를 따른다고 말한다. 연속측도다. 그러므로 한 점의 질량이 $0$ 이고, 특정한 정수값
+[Sato–Tate 분포](sato-tate.md)는 Frobenius 각 $\theta_p$ 가 $\frac2\pi\sin^2\theta\thinspace d\theta$ 를 따른다고 말한다. 연속측도다. 그러므로 한 점의 질량이 $0$ 이고, 특정한 정수값
 
 $$
 a_p=r\qquad(r\ \text{고정})
@@ -121,8 +121,8 @@ $$
 | 층위 | 진술 | 상태 |
 |---|---|---|
 | 크기 | $\lvert a_p\rvert\le2\sqrt p$ | [Hasse, Deligne](deligne-weil-conjectures.md) — 정리 |
-| 분포(띠) | $\theta_p\sim\frac2\pi\sin^2\theta\,d\theta$ | [Sato–Tate](sato-tate.md) — 정리 |
-| 분포(점) | $\#\{a_p=r\}\sim C\sqrt X/\log X$ | Lang–Trotter — 미해결 |
+| 분포(띠) | $\theta_p\sim\frac2\pi\sin^2\theta\thinspace d\theta$ | [Sato–Tate](sato-tate.md) — 정리 |
+| 분포(점) | $\char"23{}\lbrace a_p=r\rbrace\sim C\sqrt X/\log X$ | Lang–Trotter — 미해결 |
 | 점의 무한성 | $a_p=0$ 이 무한히 많다 | Elkies — 정리 |
 
 아래로 갈수록 미세하고 어렵다. 위 층이 아래 층을 함의하지 않는다는 점이 중요하다. Sato–Tate 를 아무리 정밀한 오차항과 함께 얻어도 Lang–Trotter 는 나오지 않는다. 연속측도의 한 점이기 때문이다.
@@ -132,7 +132,7 @@ $$
 같은 $\sqrt X/\log X$ 꼴이 여러 곳에 나타난다.
 
 - **고정된 자취.** 위의 $a_p=r$ 인 경우다.
-- **Koblitz 추측.** $\#E(\mathbb F_p)$ 가 소수인 $p$ 의 개수가 $\asymp X/(\log X)^2$ 라는 추측. 이쪽은 $X/(\log X)^2$ 라 층위가 다르다. 암호에서 좋은 곡선을 찾는 비용을 예측한다.
+- **Koblitz 추측.** $\char"23{}E(\mathbb F_p)$ 가 소수인 $p$ 의 개수가 $\asymp X/(\log X)^2$ 라는 추측. 이쪽은 $X/(\log X)^2$ 라 층위가 다르다. 암호에서 좋은 곡선을 찾는 비용을 예측한다.
 - **고정된 환원 유형.** $\mathrm{End}(E\bmod p)$ 가 주어진 차수가 되는 소수의 개수. 역시 $\sqrt X/\log X$ 다.
 
 공통점은 "밀도 $0$ 인 조건의 개수를 세는" 문제이고, 전부 Chebotarev 를 무한히 많은 확대에 걸쳐 균등하게 적용해야 한다는 같은 장벽에 걸려 있다.

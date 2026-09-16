@@ -144,7 +144,7 @@ $$
 0 \to A \xrightarrow{\ f\ } B \xrightarrow{\ g\ } C \to 0
 $$
 
-가 정확하다는 것은 $f$ 가 단사, $g$ 가 전사, $\mathrm{im}\, f = \ker g$ 라는 뜻이다. 체 위에서는 이런 열이 항상 분해되어 $B \cong A \oplus C$ 이지만, 일반 환에서는 그렇지 않다. 예를 들어
+가 정확하다는 것은 $f$ 가 단사, $g$ 가 전사, $\mathrm{im}\thinspace f = \ker g$ 라는 뜻이다. 체 위에서는 이런 열이 항상 분해되어 $B \cong A \oplus C$ 이지만, 일반 환에서는 그렇지 않다. 예를 들어
 
 $$
 0 \to \mathbb{Z}/2\mathbb{Z} \to \mathbb{Z}/4\mathbb{Z} \to \mathbb{Z}/2\mathbb{Z} \to 0

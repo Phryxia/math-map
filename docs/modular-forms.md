@@ -2,7 +2,7 @@
 
 # 개요
 
-상반평면 $\mathbb H=\{z:\mathrm{Im}\,z>0\}$ 위의 [정칙함수](holomorphic-functions.md) 가운데, 무한군 $\mathrm{SL}_2(\mathbb Z)$ 의 [작용](group-actions.md)에 대해 정해진 방식으로 변하는 것을 모듈러 형식이라 한다.
+상반평면 $\mathbb H=\lbrace z:\mathrm{Im}\thinspace z>0\rbrace$ 위의 [정칙함수](holomorphic-functions.md) 가운데, 무한군 $\mathrm{SL}_2(\mathbb Z)$ 의 [작용](group-actions.md)에 대해 정해진 방식으로 변하는 것을 모듈러 형식이라 한다.
 
 $$
 f\Big(\frac{az+b}{cz+d}\Big)=(cz+d)^kf(z)\qquad
@@ -31,7 +31,7 @@ $\Lambda$ 를 $\omega_2$ 로 나눠 정규화하면 $\tau=\omega_1/\omega_2\in\m
 
 ## 왜 유한차원인가
 
-$\mathrm{SL}_2(\mathbb Z)$ 의 기본영역은 $|\tau|\ge1$ 이고 $|\mathrm{Re}\,\tau|\le\frac12$ 인 영역이다. 이 영역이 위쪽으로 열려 있으므로 $\tau\to i\infty$ 에서의 거동을 따로 규정해야 하고, 그 조건이 "첨점에서 정칙" 이다.
+$\mathrm{SL}_2(\mathbb Z)$ 의 기본영역은 $|\tau|\ge1$ 이고 $|\mathrm{Re}\thinspace\tau|\le\frac12$ 인 영역이다. 이 영역이 위쪽으로 열려 있으므로 $\tau\to i\infty$ 에서의 거동을 따로 규정해야 하고, 그 조건이 "첨점에서 정칙" 이다.
 
 $f$ 가 무게 $k$ 의 모듈러 형식이면 유수 정리를 기본영역의 경계에 적용해 영점의 총수가 정확히 $k/12$ 임을 얻는다.
 
@@ -74,7 +74,7 @@ $$
 
 ## 상반평면 위의 작용
 
-$\gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}\in\mathrm{SL}_2(\mathbb R)$ 가 $\gamma\tau=\frac{a\tau+b}{c\tau+d}$ 로 $\mathbb H$ 에 작용한다. 핵심 등식은
+$\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}_2(\mathbb R)$ 가 $\gamma\tau=\frac{a\tau+b}{c\tau+d}$ 로 $\mathbb H$ 에 작용한다. 핵심 등식은
 
 $$
 \mathrm{Im}(\gamma\tau)=\frac{\mathrm{Im}\,\tau}{|c\tau+d|^2}
@@ -98,7 +98,7 @@ $\Gamma\subseteq\mathrm{SL}_2(\mathbb Z)$ 가 합동 부분군일 때, 다음 �
 2. 모든 $\gamma\in\Gamma$ 에서 $f(\gamma\tau)=(c\tau+d)^kf(\tau)$ 다.
 3. 모든 첨점에서 정칙이다.
 
-$\begin{pmatrix}1&1\\0&1\end{pmatrix}\in\Gamma$ 이므로 $f(\tau+1)=f(\tau)$ 이고, $q=e^{2\pi i\tau}$ 로 두면 $f$ 가 $q$ 의 함수가 된다. 조건 3 은 그 전개가 $q$ 의 음수 거듭제곱을 갖지 않는다는 뜻이다.
+$\begin{pmatrix}1&1\cr 0&1\end{pmatrix}\in\Gamma$ 이므로 $f(\tau+1)=f(\tau)$ 이고, $q=e^{2\pi i\tau}$ 로 두면 $f$ 가 $q$ 의 함수가 된다. 조건 3 은 그 전개가 $q$ 의 음수 거듭제곱을 갖지 않는다는 뜻이다.
 
 $$
 f(\tau)=\sum_{n\ge0}a_nq^n

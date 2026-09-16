@@ -74,13 +74,13 @@ $(X_n)$ 이 martingale 이고 $\varphi$ 가 [볼록](convexity.md)함수이며 $
 
 ## 정지시간
 
-확률변수 $T : \Omega \to \{0, 1, \dots, \infty\}$ 가 모든 $n$ 에 대해 $\{T \le n\} \in \mathcal F_n$ 이면 정지시간(stopping time)이라 한다. "지금 멈출지를 지금까지의 정보만으로 결정한다"는 뜻이고, 미래를 내다보는 규칙(예: 최고점에서 팔기)은 정지시간이 아니다. 정지된 과정은
+확률변수 $T : \Omega \to \lbrace 0, 1, \dots, \infty\rbrace$ 가 모든 $n$ 에 대해 $\lbrace T \le n\rbrace \in \mathcal F_n$ 이면 정지시간(stopping time)이라 한다. "지금 멈출지를 지금까지의 정보만으로 결정한다"는 뜻이고, 미래를 내다보는 규칙(예: 최고점에서 팔기)은 정지시간이 아니다. 정지된 과정은
 
 $$
 X_n^T \;=\; X_{T \wedge n}
 $$
 
-로 정의하며, $(X_n)$ 이 martingale 이면 $(X_{T \wedge n})$ 도 martingale 이다. 이는 예측 가능한 전략 $H_k = \mathbf 1\{T \ge k\}$ 에 대한 martingale 변환이기 때문이다.
+로 정의하며, $(X_n)$ 이 martingale 이면 $(X_{T \wedge n})$ 도 martingale 이다. 이는 예측 가능한 전략 $H_k = \mathbf 1\lbrace T \ge k\rbrace$ 에 대한 martingale 변환이기 때문이다.
 
 # 성질
 
@@ -92,11 +92,11 @@ $$
 2. $T < \infty$ 가 거의 확실하고 $(X_{T \wedge n})$ 이 유계다.
 3. $E[T] < \infty$ 이고 증분이 $\lvert X_{n+1} - X_n \rvert \le c$ 로 유계다.
 
-*증명 스케치.* 정지된 과정이 martingale 이므로 $E[X_{T \wedge n}] = E[X_0]$ 는 모든 $n$ 에서 성립한다. 남은 일은 $n \to \infty$ 에서 극한과 기댓값을 교환하는 것뿐이고, 세 조건은 각각 즉시 성립·[지배 수렴 정리](dominated-convergence.md)·증분 합의 지배를 제공한다. 조건이 없으면 정리는 거짓이다. 대칭 랜덤워크에서 $T = \inf\{n : S_n = 1\}$ 은 거의 확실하게 유한하지만 $E[S_T] = 1 \neq 0 = E[S_0]$ 이다. 이른바 마팅게일 배팅 전략(두 배로 걸기)이 "확실한 이익"처럼 보이는 착시의 정체가 이것이며, 실제로는 $E[T] = \infty$ 이거나 무한한 자금이 필요하다.
+*증명 스케치.* 정지된 과정이 martingale 이므로 $E[X_{T \wedge n}] = E[X_0]$ 는 모든 $n$ 에서 성립한다. 남은 일은 $n \to \infty$ 에서 극한과 기댓값을 교환하는 것뿐이고, 세 조건은 각각 즉시 성립·[지배 수렴 정리](dominated-convergence.md)·증분 합의 지배를 제공한다. 조건이 없으면 정리는 거짓이다. 대칭 랜덤워크에서 $T = \inf\lbrace n : S_n = 1\rbrace$ 은 거의 확실하게 유한하지만 $E[S_T] = 1 \neq 0 = E[S_0]$ 이다. 이른바 마팅게일 배팅 전략(두 배로 걸기)이 "확실한 이익"처럼 보이는 착시의 정체가 이것이며, 실제로는 $E[T] = \infty$ 이거나 무한한 자금이 필요하다.
 
 ## 도박꾼 파산
 
-$S_n$ 을 대칭 단순 랜덤워크라 하고 $S_0 = k$ 와 $T = \inf\{n : S_n \in \{0, N\}\}$ 로 둔다. $T$ 는 거의 확실하게 유한하고 $(S_{T \wedge n})$ 은 $[0, N]$ 에 유계이므로 선택적 정지 정리를 쓸 수 있다.
+$S_n$ 을 대칭 단순 랜덤워크라 하고 $S_0 = k$ 와 $T = \inf\lbrace n : S_n \in \lbrace 0, N\rbrace\rbrace$ 로 둔다. $T$ 는 거의 확실하게 유한하고 $(S_{T \wedge n})$ 은 $[0, N]$ 에 유계이므로 선택적 정지 정리를 쓸 수 있다.
 
 $$
 k \;=\; E[S_T] \;=\; N \cdot P(S_T = N) \;\Rightarrow\; P(S_T = N) = \frac{k}{N}.
@@ -118,7 +118,7 @@ $$
 P\Big(\max_{0 \le k \le n} X_k \ge \lambda\Big) \;\le\; \frac{E[X_n]}{\lambda}.
 $$
 
-*증명 스케치.* $T = \inf\{k : X_k \ge \lambda\}$ 로 두고 사건 $A = \{\max_{k \le n} X_k \ge \lambda\}$ 를 $\{T \le n\}$ 과 동일시한다. $A$ 위에서 $X_T \ge \lambda$ 이고, submartingale 성질로 $E[X_n \mathbf 1_A] \ge E[X_T \mathbf 1_A] \ge \lambda P(A)$ 이다. Markov 부등식의 "경로 전체" 버전이며, $X_n$ 대신 최댓값을 다루면서도 대가가 없다는 점이 핵심이다.
+*증명 스케치.* $T = \inf\lbrace k : X_k \ge \lambda\rbrace$ 로 두고 사건 $A = \lbrace\max_{k \le n} X_k \ge \lambda\rbrace$ 를 $\lbrace T \le n\rbrace$ 과 동일시한다. $A$ 위에서 $X_T \ge \lambda$ 이고, submartingale 성질로 $E[X_n \mathbf 1_A] \ge E[X_T \mathbf 1_A] \ge \lambda P(A)$ 이다. Markov 부등식의 "경로 전체" 버전이며, $X_n$ 대신 최댓값을 다루면서도 대가가 없다는 점이 핵심이다.
 
 $p > 1$ 에 대한 $L^p$ 최대부등식
 

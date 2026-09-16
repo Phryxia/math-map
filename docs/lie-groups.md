@@ -109,7 +109,7 @@ $$
 
 Lie 이론의 기본 정리들이다.
 
-- **함자성.** Lie 군 준동형 $\varphi:G\to H$ 는 Lie 대수 준동형 $d\varphi:\mathfrak g\to\mathfrak h$ 를 유도하고, $\varphi(\exp X)=\exp(d\varphi\,X)$ 가 성립한다.
+- **함자성.** Lie 군 준동형 $\varphi:G\to H$ 는 Lie 대수 준동형 $d\varphi:\mathfrak g\to\mathfrak h$ 를 유도하고, $\varphi(\exp X)=\exp(d\varphi\thinspace X)$ 가 성립한다.
 - **단연결에서의 역방향.** $G$ 가 단연결이면 임의의 Lie 대수 준동형 $\psi:\mathfrak g\to\mathfrak h$ 에 대해 $d\varphi=\psi$ 인 군 준동형 $\varphi:G\to H$ 가 유일하게 존재한다.
 - **부분대수 대응.** $\mathfrak h\subset\mathfrak g$ 부분대수마다 $\operatorname{Lie}(H)=\mathfrak h$ 인 연결 부분군 $H\subset G$ 가 유일하게 대응한다. $H$ 가 닫힌 부분군일 필요는 없다(비합리 기울기의 원환면 감기가 반례다).
 - **Lie 세 번째 정리.** 모든 유한차원 실 Lie 대수는 어떤 Lie 군의 Lie 대수다. Ado 정리로 행렬대수에 넣은 뒤 부분대수 대응을 쓰면 된다.
@@ -180,7 +180,7 @@ Um = [[-x for x in row] for row in U]
 print(adjoint_rot(U) == adjoint_rot(Um))   # True
 ```
 
-$\theta=2\pi$ 에서 $U=-I$ 인데 대응하는 회전은 항등이다. 그리고 $U$ 와 $-U$ 가 언제나 같은 회전을 준다. 핵이 $\{\pm I\}$ 인 이중덮개가 숫자로 드러난다.
+$\theta=2\pi$ 에서 $U=-I$ 인데 대응하는 회전은 항등이다. 그리고 $U$ 와 $-U$ 가 언제나 같은 회전을 준다. 핵이 $\lbrace\pm I\rbrace$ 인 이중덮개가 숫자로 드러난다.
 
 $\mathrm{SU}(2)$ 쪽에서는 $\theta$ 가 $0$ 에서 $4\pi$ 까지 가야 닫힌 고리가 되고, $\mathrm{SO}(3)$ 쪽에서는 $2\pi$ 면 닫힌다. $\pi_1(\mathrm{SO}(3))=\mathbb Z/2$ 가 이 차이다.
 

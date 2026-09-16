@@ -14,7 +14,7 @@ Laplace 작용소가 $\Delta_d$ 와 $\Delta_\partial$ 과 $\Delta_{\bar\partial}
 
 ## 형식이 두 방향으로 쪼개진다
 
-복소좌표 $z_j=x_j+iy_j$ 에서 $dz_j=dx_j+i\,dy_j$ 와 $d\bar z_j=dx_j-i\,dy_j$ 를 쓰면, 복소값 $k$ 형식이 $dz$ 를 $p$ 개, $d\bar z$ 를 $q$ 개 쓴 항들의 합으로 유일하게 쓰인다. 이것이 $(p,q)$ 분해이고 $p+q=k$ 다.
+복소좌표 $z_j=x_j+iy_j$ 에서 $dz_j=dx_j+i\thinspace dy_j$ 와 $d\bar z_j=dx_j-i\thinspace dy_j$ 를 쓰면, 복소값 $k$ 형식이 $dz$ 를 $p$ 개, $d\bar z$ 를 $q$ 개 쓴 항들의 합으로 유일하게 쓰인다. 이것이 $(p,q)$ 분해이고 $p+q=k$ 다.
 
 외미분도 따라서 쪼개진다. $d=\partial+\bar\partial$ 에서 $\partial$ 이 $p$ 를 1 올리고 $\bar\partial$ 가 $q$ 를 1 올린다. $d^2=0$ 을 전개하면 $\partial^2=\bar\partial^2=0$ 과 $\partial\bar\partial+\bar\partial\partial=0$ 이 나온다.
 
@@ -70,7 +70,7 @@ $$
 
 가 비퇴화 2-형식이 되며, 이것이 Kähler 형식(또는 기본 2-형식)이다. $g,J,\omega$ 중 둘이 나머지를 결정한다.
 
-국소좌표에서는 $\omega=\frac i2\sum h_{j\bar k}\,dz_j\wedge d\bar z_k$ 꼴이고, $(h_{j\bar k})$ 가 양의 정부호 Hermite 행렬이다.
+국소좌표에서는 $\omega=\frac i2\sum h_{j\bar k}\thinspace dz_j\wedge d\bar z_k$ 꼴이고, $(h_{j\bar k})$ 가 양의 정부호 Hermite 행렬이다.
 
 ## Kähler 다양체
 
@@ -86,7 +86,7 @@ $d\omega=0$ 이면 Kähler 다양체라 한다. 동치인 조건이 여럿 있�
 
 - $\mathbb C^n$ 에서는 표준 계량이 Kähler 이고 $\omega=\frac i2\sum dz_j\wedge d\bar z_j$ 다.
 - 복소 원환면 $\mathbb C^n/\Lambda$ 에는 평탄한 계량이 내려온다.
-- 복소 사영공간 $\mathbb{CP}^n$ 에서는 Fubini–Study 계량이 $\omega_{FS}=\frac i2\partial\bar\partial\log\|Z\|^2$ 로 주어진다.
+- 복소 사영공간 $\mathbb{CP}^n$ 에서는 Fubini–Study 계량이 $\omega_{FS}=\frac i2\partial\bar\partial\log\Vert Z\Vert^2$ 로 주어진다.
 - 위의 것들의 복소 부분다양체: $\omega$ 의 제한이 다시 닫혀 있으므로 Kähler 다. 따라서 모든 사영 대수다양체가 Kähler 다.
 
 ## Dolbeault 코호몰로지와 Hodge 수

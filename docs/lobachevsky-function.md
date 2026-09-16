@@ -64,7 +64,7 @@ flowchart TD
 
 ## 함수와 그 성질
 
-> **정의.** $\Lambda(\theta)=-\displaystyle\int_0^\theta\log|2\sin t|\,dt$
+> **정의.** $\Lambda(\theta)=-\displaystyle\int_0^\theta\log|2\sin t|\thinspace dt$
 
 피적분함수가 $t=0$ 에서 $-\infty$ 로 발산하지만 로그 특이점이라 적분은 수렴한다. 기본 성질은 다음과 같다.
 

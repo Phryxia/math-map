@@ -17,7 +17,7 @@
 $S$ 의 선택이 만들어 낼 환을 결정한다. 세 가지 전형적인 선택이 있다.
 
 - $S$ 가 $R$ 의 모든 비영인자 — 전분수환(total quotient ring). 정역이면 분수체가 된다.
-- $S=\{1,f,f^2,\dots\}$ — 한 원소 $f$ 를 가역으로 만든 환. 기하적으로는 $f$ 가 0이 되지 않는 열린 영역만 남긴다.
+- $S=\lbrace 1,f,f^2,\dots\rbrace$ — 한 원소 $f$ 를 가역으로 만든 환. 기하적으로는 $f$ 가 0이 되지 않는 열린 영역만 남긴다.
 - $S=R\setminus p$ ($p$ 는 소 아이디얼) — 이것이 $R_p$ 다. 소 아이디얼의 정의가 곧 이 여집합이 곱닫힘이라는 말이다.
 
 세 번째가 "국소화"라는 이름의 유래다. $R_p$ 에서 가역이 아닌 원소는 정확히 분자가 $p$ 에 들어 있는 분수들이고, 이들이 아이디얼을 이루므로 극대 아이디얼이 하나뿐이다. 비가역원 전체가 아이디얼을 이루는 환을 국소환(local ring)이라 한다. 국소환에서는 "$x$ 가 가역이거나, 아니면 $1 - x$ 가 가역" 같은 편리한 이분법이 성립한다.
@@ -50,7 +50,7 @@ $$
 \iota : R \longrightarrow S^{-1}R, \qquad \iota(a) = \frac{a}{1}
 $$
 
-이며 환준동형이다. 핵은 $\{a : ua = 0 \text{ 인 } u \text{ 가 } S \text{ 에 존재}\}$ 이다. 따라서 $S$ 가 비영인자들로만 이루어지면 $\iota$ 는 단사이고, $0$ 이 $S$ 에 속하면 $S^{-1}R$ 은 영환이다.
+이며 환준동형이다. 핵은 $\lbrace a : ua = 0 \text{ 인 } u \text{ 가 } S \text{ 에 존재}\rbrace$ 이다. 따라서 $S$ 가 비영인자들로만 이루어지면 $\iota$ 는 단사이고, $0$ 이 $S$ 에 속하면 $S^{-1}R$ 은 영환이다.
 
 ## 보편성질
 
@@ -88,13 +88,13 @@ $$
 
 ## 아이디얼의 확대와 축소
 
-$\iota : R \to S^{-1}R$ 을 따라 아이디얼을 옮기는 두 연산을 쓴다. $R$ 의 아이디얼 $I$ 에 대한 **확대**(extension)는 $I^e = S^{-1}I = \{a/s : a \in I,\ s \in S\}$ 이고, $S^{-1}R$ 의 아이디얼 $J$ 에 대한 **축소**(contraction)는 $J^c = \iota^{-1}(J)$ 다.
+$\iota : R \to S^{-1}R$ 을 따라 아이디얼을 옮기는 두 연산을 쓴다. $R$ 의 아이디얼 $I$ 에 대한 **확대**(extension)는 $I^e = S^{-1}I = \lbrace a/s : a \in I,\ s \in S\rbrace$ 이고, $S^{-1}R$ 의 아이디얼 $J$ 에 대한 **축소**(contraction)는 $J^c = \iota^{-1}(J)$ 다.
 
 **명제.** $S^{-1}R$ 의 모든 아이디얼은 확대 아이디얼이다. 즉 $J = (J^c)^e$ 이다.
 
 증명 스케치. $a/s \in J$ 이면 $a/1 = (s/1)(a/s) \in J$ 이므로 $a \in J^c$ 이고, 따라서 $a/s \in (J^c)^e$ 다. 역포함은 자명하다.
 
-반대 방향은 손실이 있다. $I^{ec} = \{a \in R : sa \in I \text{ 인 } s \text{ 가 } S \text{ 에 존재}\}$ 이고, 이는 일반적으로 $I$ 보다 크다. 특히 $I \cap S$ 가 비어 있지 않으면 $I^e$ 는 전체 환이다.
+반대 방향은 손실이 있다. $I^{ec} = \lbrace a \in R : sa \in I \text{ 인 } s \text{ 가 } S \text{ 에 존재}\rbrace$ 이고, 이는 일반적으로 $I$ 보다 크다. 특히 $I \cap S$ 가 비어 있지 않으면 $I^e$ 는 전체 환이다.
 
 **정리 (소 아이디얼의 대응).** 확대와 축소는 서로 역인 전단사
 
@@ -142,7 +142,7 @@ flowchart LR
 2. 모든 소 아이디얼 $p$ 에 대해 $M_p = 0$ 이다.
 3. 모든 극대 아이디얼 $m$ 에 대해 $M_m = 0$ 이다.
 
-증명 스케치. 1 ⟹ 2 ⟹ 3 은 자명하다. 3 ⟹ 1: $M \ne 0$ 이면 원소 $x \in M$ 을 $x \ne 0$ 이 되게 잡고 소멸자 $\operatorname{Ann}(x) = \{a : ax = 0\}$ 를 본다. 이는 진아이디얼이므로 어떤 극대 아이디얼 $m$ 에 포함된다([선택공리](axiom-of-choice.md)에 기반한 Krull 정리). 그러면 $M_m$ 에서 $x/1 \ne 0$ 인데, $x/1 = 0$ 이려면 $m$ 밖의 어떤 $u$ 가 $ux = 0$ 을 만족해야 하고 그런 $u$ 는 $\operatorname{Ann}(x) \subseteq m$ 에 들어 있어야 하므로 모순이다.
+증명 스케치. 1 ⟹ 2 ⟹ 3 은 자명하다. 3 ⟹ 1: $M \ne 0$ 이면 원소 $x \in M$ 을 $x \ne 0$ 이 되게 잡고 소멸자 $\operatorname{Ann}(x) = \lbrace a : ax = 0\rbrace$ 를 본다. 이는 진아이디얼이므로 어떤 극대 아이디얼 $m$ 에 포함된다([선택공리](axiom-of-choice.md)에 기반한 Krull 정리). 그러면 $M_m$ 에서 $x/1 \ne 0$ 인데, $x/1 = 0$ 이려면 $m$ 밖의 어떤 $u$ 가 $ux = 0$ 을 만족해야 하고 그런 $u$ 는 $\operatorname{Ann}(x) \subseteq m$ 에 들어 있어야 하므로 모순이다.
 
 완전성과 결합하면 곧바로 따름정리가 나온다. $f : M \to N$ 이 단사(전사, 동형)인 것과 모든 극대 아이디얼 $m$ 에 대해 $f_m$ 이 단사(전사, 동형)인 것은 동치다. 핵과 여핵이 국소화와 교환하므로 위 정리를 $\ker f$ 와 $\operatorname{coker}f$ 에 적용하면 된다.
 
@@ -150,7 +150,7 @@ flowchart LR
 
 ## 그 밖의 보존 성질
 
-- $S = \{1, f, f^2, \dots\}$ 이면 $S^{-1}R \cong R[x]/(fx - 1)$ 이다. 보편성질로 양쪽이 같은 대상임을 보인다.
+- $S = \lbrace 1, f, f^2, \dots\rbrace$ 이면 $S^{-1}R \cong R[x]/(fx - 1)$ 이다. 보편성질로 양쪽이 같은 대상임을 보인다.
 - $R$ 이 Noetherian이면 $S^{-1}R$ 도 Noetherian이다. 모든 아이디얼이 확대 아이디얼이고 생성원이 따라 올라가기 때문이다.
 - $R$ 이 정역이면 $0 \notin S$ 인 한 $S^{-1}R$ 도 정역이고, 모두 분수체 $\operatorname{Frac}(R)$ 의 부분환으로 볼 수 있다. 이때 모든 극대 아이디얼에 걸친 교집합으로 $R = \bigcap_m R_m$ 이 성립한다.
 - 유일분해정역(UFD)의 국소화는 UFD다.
@@ -168,14 +168,14 @@ $$
 
 이고, 극대 아이디얼은 $p\mathbb Z_{(p)}$ 이고 잉여체는 $\mathbb Z/p\mathbb Z$ 라는 [유한체](finite-fields.md)다. 이 환의 모든 0이 아닌 아이디얼은 $p^n\mathbb Z_{(p)}$ 꼴이므로 이산 부치환(discrete valuation ring)이 되고, 이는 정수의 $p$ 진 자릿수 전개와 $p$ 진 부치 $v_p$ 의 대수적 기반이다([소수와 유일분해](primes.md)).
 
-반대 극단으로 $S=\mathbb Z\setminus\{0\}$ 을 취하면 유리수체 $\mathbb Q$ 가 나오고, $S=\{1,2,4,\dots\}$ 를 취하면 이진 유리수의 환이 나온다. 서로 다른 $p$ 에 대한 $\mathbb Z_{(p)}$ 들의 교집합이 $\mathbb Z$ 라는 사실은 위 국소-대역 원리의 가장 익숙한 실례다. [합동식](modular-arithmetic.md)과 [중국인의 나머지 정리](chinese-remainder-theorem.md)가 소수별 정보를 모으는 것과 같은 구도다.
+반대 극단으로 $S=\mathbb Z\setminus\lbrace 0\rbrace$ 을 취하면 유리수체 $\mathbb Q$ 가 나오고, $S=\lbrace 1,2,4,\dots\rbrace$ 를 취하면 이진 유리수의 환이 나온다. 서로 다른 $p$ 에 대한 $\mathbb Z_{(p)}$ 들의 교집합이 $\mathbb Z$ 라는 사실은 위 국소-대역 원리의 가장 익숙한 실례다. [합동식](modular-arithmetic.md)과 [중국인의 나머지 정리](chinese-remainder-theorem.md)가 소수별 정보를 모으는 것과 같은 구도다.
 
 ## 다항식환과 유리함수
 
 $k$ 가 [체](fields.md)일 때 [다항식환](polynomial-rings.md) $k[x]$ 의 국소화는 대수기하의 기본 예다.
 
-- $S=k[x]\setminus\{0\}$ 이면 유리함수체 $k(x)$ 다.
-- $S=\{1,f,f^2,\dots\}$ : $f$ 의 영점을 뺀 열린 집합 위의 함수들.
+- $S=k[x]\setminus\lbrace 0\rbrace$ 이면 유리함수체 $k(x)$ 다.
+- $S=\lbrace 1,f,f^2,\dots\rbrace$ : $f$ 의 영점을 뺀 열린 집합 위의 함수들.
 - $S = k[x] \setminus (x - a)$ : 점 $a$ 에서의 국소환. 원소는 $a$ 에서 분모가 0이 되지 않는 유리함수이며, 극대 아이디얼은 $a$ 에서 값이 0인 함수들이다. 잉여체는 $k$ 이고 "$a$ 에서의 값을 읽는" 사상이 몫사상이다.
 
 여러 변수로 넘어가면 $k[x_1, ..., x_n]$ 의 극대 아이디얼에서의 국소화가 아핀 대수다양체의 점 근방을 기술한다. $\operatorname{Spec}R$ 의 기본 열린 집합 $D(f)$ 에 $R[1/f]$ 를, 점 $p$ 의 줄기(stalk)에 $R_p$ 를 붙이는 것이 스킴의 구조층 정의다.

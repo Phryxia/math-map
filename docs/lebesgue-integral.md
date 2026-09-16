@@ -12,7 +12,7 @@
 
 책상 위의 동전 더미의 총액을 구한다고 하자. Riemann 은 왼쪽부터 순서대로 집어 액면가를 더한다. Lebesgue 는 먼저 액면가별로 쌓아 놓고, 각 더미의 개수에 액면가를 곱해 더한다.
 
-두 방법의 답은 같다. 그러나 동전이 뒤죽박죽 놓여 있을수록 두 번째 방법이 안정적이다. 순서가 아무리 엉망이어도 "500 원짜리가 몇 개인가" 는 여전히 셀 수 있기 때문이다. 함수가 아무리 심하게 진동해도 $\{x:f(x)>c\}$ 의 측도만 알면 적분이 정의되는 것이 이와 같다.
+두 방법의 답은 같다. 그러나 동전이 뒤죽박죽 놓여 있을수록 두 번째 방법이 안정적이다. 순서가 아무리 엉망이어도 "500 원짜리가 몇 개인가" 는 여전히 셀 수 있기 때문이다. 함수가 아무리 심하게 진동해도 $\lbrace x:f(x)>c\rbrace$ 의 측도만 알면 적분이 정의되는 것이 이와 같다.
 
 ## 아래에서 쌓아 올린다
 
@@ -56,7 +56,7 @@ $$
 \int_X f\,d\mu=\int_X f^+\,d\mu-\int_X f^-\,d\mu
 $$
 
-로 정한다. 두 항이 모두 무한대면 정의되지 않는다. $\int \lvert f \rvert\, d\mu < \infty$ 일 때 $f$ 가 적분 가능하다고 하고, 그런 함수들의 모임을 $L^1(\mu)$ 라 쓴다. 가측집합 $E$ 위의 적분은 $\int f \cdot \mathbf{1}_E\, d\mu$ 다.
+로 정한다. 두 항이 모두 무한대면 정의되지 않는다. $\int \lvert f \rvert\thinspace d\mu < \infty$ 일 때 $f$ 가 적분 가능하다고 하고, 그런 함수들의 모임을 $L^1(\mu)$ 라 쓴다. 가측집합 $E$ 위의 적분은 $\int f \cdot \mathbf{1}_E\thinspace d\mu$ 다.
 
 ## 거의 어디서나
 
@@ -69,7 +69,7 @@ $$
 - 단조성: $0 \le f \le g$ 이면 $\int f \le \int g$ 다. $f$ 아래의 단순함수는 모두 $g$ 아래에도 있기 때문이다.
 - 선형성: $\int (af + bg) = a\int f + b\int g$ 다. 음이 아닌 경우는 단조수렴 정리를 거쳐 증명하며, 정의에서 곧바로 나오지 않는다는 점이 Riemann 과 다르다.
 - 삼각부등식: $\lvert \int f \rvert \le \int \lvert f \rvert$ 다.
-- $\int \lvert f \rvert\, d\mu = 0$ 인 것과 $f = 0$ 이 거의 어디서나인 것은 동치다.
+- $\int \lvert f \rvert\thinspace d\mu = 0$ 인 것과 $f = 0$ 이 거의 어디서나인 것은 동치다.
 
 ## 수렴 정리
 
@@ -95,11 +95,11 @@ $$
 
 역은 성립하지 않는다. $[0,1]$ 에서 유리수의 지시함수는 유리수 집합의 측도가 $0$ 이므로 Lebesgue 적분이 $0$ 이지만, 모든 부분구간에 유리수와 무리수가 있어 상합이 $1$ 이고 하합이 $0$ 이라 Riemann 적분이 존재하지 않는다.
 
-한 방향의 예외가 있다. 이상적분으로 정의되는 $\int_0^\infty \frac{\sin x}{x}\, dx$ 는 수렴하지만 $\int \frac{\lvert \sin x \rvert}{x}\, dx = \infty$ 라 Lebesgue 적분 가능하지 않다. Lebesgue 적분은 절대적분이므로 조건수렴을 담지 못하며, 이 경우에는 이상적분을 따로 다뤄야 한다.
+한 방향의 예외가 있다. 이상적분으로 정의되는 $\int_0^\infty \frac{\sin x}{x}\thinspace dx$ 는 수렴하지만 $\int \frac{\lvert \sin x \rvert}{x}\thinspace dx = \infty$ 라 Lebesgue 적분 가능하지 않다. Lebesgue 적분은 절대적분이므로 조건수렴을 담지 못하며, 이 경우에는 이상적분을 따로 다뤄야 한다.
 
 ## 완비성
 
-$L^1(\mu)$ 는 $\lVert f \rVert_1 = \int \lvert f \rvert\, d\mu$ 로 완비 노름공간이 된다. 이것이 Riesz–Fischer 정리이고, 지배수렴 정리가 그 증명의 핵심 도구다. Riemann 적분으로 같은 노름을 주면 완비가 되지 않는다는 점에서, Lebesgue 이론은 해석학에 "빠진 극한을 채워 넣는" 역할을 한다. 같은 방식으로 $L^2$ 가 Hilbert 공간이 되고 Fourier 해석의 무대가 마련된다.
+$L^1(\mu)$ 는 $\lVert f \rVert_1 = \int \lvert f \rvert\thinspace d\mu$ 로 완비 노름공간이 된다. 이것이 Riesz–Fischer 정리이고, 지배수렴 정리가 그 증명의 핵심 도구다. Riemann 적분으로 같은 노름을 주면 완비가 되지 않는다는 점에서, Lebesgue 이론은 해석학에 "빠진 극한을 채워 넣는" 역할을 한다. 같은 방식으로 $L^2$ 가 Hilbert 공간이 되고 Fourier 해석의 무대가 마련된다.
 
 ## 측도를 바꾸면 다른 것이 된다
 

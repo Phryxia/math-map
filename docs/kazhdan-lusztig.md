@@ -4,7 +4,7 @@
 
 [Borel–Weil–Bott 정리](borel-weil-bott.md)는 표수 $0$ 에서 기약표현의 지표를 완전히 결정했다. 깃발다양체 위 직선다발의 코호몰로지가 한 자리에만 살고, 그 자리에서 Weyl 지표 공식이 나온다. 그리고 그 정리가 표수 $p$ 에서 무너진다는 것도 보았다. 코호몰로지가 여러 차수에 흩어지고, 기약가군의 지표는 더 이상 닫힌 공식으로 주어지지 않는다.
 
-Kazhdan 과 Lusztig 은 1979 년에 이 빈자리를 메울 조합적 대상을 정의했다.[^1] Weyl 군(더 일반적으로 Coxeter 군) $W$ 의 군환을 매개변수 $q$ 로 변형한 **Iwahori–Hecke 대수** $\mathcal H$ 를 잡고, 거기에 자연스러운 대합에 대해 자기쌍대인 기저 $\{C'_w\}$ 가 유일하게 존재함을 보인다. 표준기저로 전개할 때 나오는 계수가
+Kazhdan 과 Lusztig 은 1979 년에 이 빈자리를 메울 조합적 대상을 정의했다.[^1] Weyl 군(더 일반적으로 Coxeter 군) $W$ 의 군환을 매개변수 $q$ 로 변형한 **Iwahori–Hecke 대수** $\mathcal H$ 를 잡고, 거기에 자연스러운 대합에 대해 자기쌍대인 기저 $\lbrace C'_w\rbrace$ 가 유일하게 존재함을 보인다. 표준기저로 전개할 때 나오는 계수가
 
 $$
 C'_w=q^{-\ell(w)/2}\sum_{x\le w}P_{x,w}(q)\,T_x,\qquad P_{x,w}\in\mathbb Z[q]
@@ -111,7 +111,7 @@ graph TD
 
 ## Iwahori–Hecke 대수
 
-$(W,S)$ 를 Coxeter 계, $\ell$ 을 길이 함수라 하자. $\mathcal H$ 는 $\mathbb Z[q^{1/2},q^{-1/2}]$ 위 자유가군으로 기저 $\{T_w\}_{w\in W}$ 를 갖고 곱셈이
+$(W,S)$ 를 Coxeter 계, $\ell$ 을 길이 함수라 하자. $\mathcal H$ 는 $\mathbb Z[q^{1/2},q^{-1/2}]$ 위 자유가군으로 기저 $\lbrace T_w\rbrace_{w\in W}$ 를 갖고 곱셈이
 
 $$
 T_sT_w=\begin{cases}T_{sw} & \ell(sw)>\ell(w)\\ qT_{sw}+(q-1)T_w & \ell(sw)<\ell(w)\end{cases}
@@ -171,7 +171,7 @@ Williamson 은 $\mathrm{SL}_n$ 에서 반례의 무한족을 만들어 이 기�
 
 ## 계산의 어려움
 
-$P_{x,w}$ 를 계산하는 것은 $\#\mathrm P$ 난해로 여겨진다. 재귀는 Bruhat 구간 전체를 훑고, $S_n$ 에서 구간의 크기는 $n$ 에 대해 초지수적으로 자란다. 그럼에도 실무에서는 다음 성질들이 계산을 크게 줄인다.
+$P_{x,w}$ 를 계산하는 것은 $\char"23{}\mathrm P$ 난해로 여겨진다. 재귀는 Bruhat 구간 전체를 훑고, $S_n$ 에서 구간의 크기는 $n$ 에 대해 초지수적으로 자란다. 그럼에도 실무에서는 다음 성질들이 계산을 크게 줄인다.
 
 - $P_{x,w}=P_{x',w'}$ 가 되는 조합적 대칭(포물형 축약, 결합 하강 집합)이 많다.
 - 매끄러움 판정은 패턴 회피로 다항시간에 끝난다.

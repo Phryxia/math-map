@@ -22,7 +22,7 @@ Mazur 와 Rubin 은 이 구조를 뒤집었다. Euler 계 자체를 버리고 �
 
 ## 유도류만 남긴다
 
-Euler 계 $\mathbf{c}=\{c_F\}$ 는 수체의 탑 위에 얹힌 거대한 대상이고, Kolyvagin 유도 연산자가 거기서 유도류 $\kappa_n\in H^1(K,T)$ 를 뽑아낸다. 실제 증명에서 쓰이는 것은 $\kappa_n$ 뿐이다. $c_F$ 는 $\kappa_n$ 을 만든 뒤 다시 등장하지 않는다.
+Euler 계 $\mathbf{c}=\lbrace c_F\rbrace$ 는 수체의 탑 위에 얹힌 거대한 대상이고, Kolyvagin 유도 연산자가 거기서 유도류 $\kappa_n\in H^1(K,T)$ 를 뽑아낸다. 실제 증명에서 쓰이는 것은 $\kappa_n$ 뿐이다. $c_F$ 는 $\kappa_n$ 을 만든 뒤 다시 등장하지 않는다.
 
 그렇다면 $\kappa$ 가 만족하는 성질을 목록으로 적고 그것을 정의로 삼으면 된다. 목록은 두 줄이다.
 
@@ -65,7 +65,7 @@ $\chi=0$ 이면 자유도가 없어 계가 $0$ 뿐이고, $\chi\ge2$ 이면 계�
 
 **Selmer 구조** $\mathcal F$ 는 다음 자료다.
 
-- 유한집합 $\Sigma\supseteq\{p,\infty\}\cup\{T\text{ 가 분기하는 자리}\}$
+- 유한집합 $\Sigma\supseteq\lbrace p,\infty\rbrace\cup\lbrace T\text{ 가 분기하는 자리}\rbrace$
 - 각 $v\in\Sigma$ 마다 부분가군 $H^1_{\mathcal F}(K_v,T)\subseteq H^1(K_v,T)$
 
 $v\notin\Sigma$ 에서는 불분기 조건 $H^1_{\mathrm{ur}}(K_v,T)=H^1(K_v^{\mathrm{ur}}/K_v,T^{I_v})$ 를 쓴다. 그러면
@@ -171,7 +171,7 @@ $$
 
 두 따름결과가 중요하다.
 
-- **완화는 $\chi$ 를 올린다.** $\ell$ 에서 불분기 조건, 곧 $\dim=\dim H^0(K_\ell,T)$ 인 조건을 전체로 넓히면 $\chi$ 가 $\dim H^1(K_\ell,T)-\dim H^1_{\mathrm{ur}}(K_\ell,T)$ 만큼 커진다. Kolyvagin 소수에서 이 값은 $\mathrm{rank}\,T$ 다.
+- **완화는 $\chi$ 를 올린다.** $\ell$ 에서 불분기 조건, 곧 $\dim=\dim H^0(K_\ell,T)$ 인 조건을 전체로 넓히면 $\chi$ 가 $\dim H^1(K_\ell,T)-\dim H^1_{\mathrm{ur}}(K_\ell,T)$ 만큼 커진다. Kolyvagin 소수에서 이 값은 $\mathrm{rank}\thinspace T$ 다.
 - **가로지름은 $\chi$ 를 보존한다.** $H^1_{\mathrm{f}}$ 와 $H^1_{\mathrm{tr}}$ 의 크기가 같으므로 우변이 $1$ 이다. 그러므로 모든 $n\in\mathcal N$ 에 대해 $\chi(\mathcal F(n))=\chi(\mathcal F)$ 다.
 
 두 번째가 핵심계수를 불변량으로 만든다. Kolyvagin 계는 $\mathcal N$ 위를 돌아다니지만 시소의 기준선은 어디서나 같다.

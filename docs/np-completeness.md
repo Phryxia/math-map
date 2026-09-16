@@ -51,8 +51,8 @@ NP-hard는 NP 안에 있을 필요가 없다. 정지 문제는 NP-hard이지만 
 
 명제 변수 $x_1,\dots,x_n$ 에 대해 리터럴은 변수 또는 그 부정이고, 절(clause)은 리터럴들의 논리합이며, CNF 논식은 절들의 논리곱이다. 각 절의 리터럴이 정확히 세 개인 CNF를 3CNF라 한다.
 
-- $\mathrm{SAT}=\{\text{충족가능한 명제논리식}\}$
-- $\mathrm{3SAT}=\{\text{충족가능한 3CNF 논리식}\}$
+- $\mathrm{SAT}=\lbrace\text{충족가능한 명제논리식}\rbrace$
+- $\mathrm{3SAT}=\lbrace\text{충족가능한 3CNF 논리식}\rbrace$
 
 둘 다 NP에 속한다. 증거는 변수 할당이고, 검증기는 대입해서 참인지 확인하면 되므로 선형 시간이다.
 

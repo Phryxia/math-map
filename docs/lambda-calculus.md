@@ -10,11 +10,11 @@ Lambda calculus는 Alonzo Church가 1930년대에 도입한 계산 모델이다.
 
 # 직관
 
-lambda 항은 "이름 붙이지 않은 함수"를 적는 표기법이다. $x$ 를 받아 $x + 1$ 을 주는 함수를 $\lambda x.\, x + 1$ 로 쓰고, 인자에 적용하는 것은 나란히 쓰는 것으로 표현한다. 계산이란 $(\lambda x.\, M)\,N$ 이라는 모양을 발견해 $M$ 안의 $x$ 를 $N$ 으로 치환하는 일의 반복이다. 이 한 가지 규칙( $\beta$ 축약)이 전부다.
+lambda 항은 "이름 붙이지 않은 함수"를 적는 표기법이다. $x$ 를 받아 $x + 1$ 을 주는 함수를 $\lambda x.\thinspace x + 1$ 로 쓰고, 인자에 적용하는 것은 나란히 쓰는 것으로 표현한다. 계산이란 $(\lambda x.\thinspace M)\thinspace N$ 이라는 모양을 발견해 $M$ 안의 $x$ 를 $N$ 으로 치환하는 일의 반복이다. 이 한 가지 규칙( $\beta$ 축약)이 전부다.
 
 데이터를 함수로 표현하는 발상이 처음에는 낯설다. 자연수 $n$ 을 "어떤 함수를 $n$ 번 반복 적용하는 연산자"로 정의하면, 덧셈은 반복의 이어 붙이기, 곱셈은 반복의 중첩이 된다. 같은 방식으로 참/거짓은 "두 인자 중 어느 쪽을 고르는가"로, 순서쌍은 "두 성분을 받는 선택자에게 자신을 넘기는 함수"로 정의된다. 자료구조가 자신에 대한 사용법으로 정의되는 셈이다.
 
-재귀는 더 미묘하다. 이름이 없으니 정의 안에서 자기를 부를 수 없다. 해결책은 "자기 자신을 인자로 받는" 항을 만들어 고정점을 취하는 것이다. Y combinator가 정확히 그 일을 한다. $Y\,g$ 가 $g\,(Y\,g)$ 로 축약되므로 $g$ 는 자기 자신의 결과를 인자로 받아 쓸 수 있고, 이렇게 이름 없이 재귀가 생긴다. 여기에는 대가가 있다. 같은 장치가 축약이 영원히 끝나지 않는 항도 만들어 내며, 실제로 $(\lambda x.\, x\,x)(\lambda x.\, x\,x)$ 는 자기 자신으로 축약되기를 무한히 반복한다.
+재귀는 더 미묘하다. 이름이 없으니 정의 안에서 자기를 부를 수 없다. 해결책은 "자기 자신을 인자로 받는" 항을 만들어 고정점을 취하는 것이다. Y combinator가 정확히 그 일을 한다. $Y\thinspace g$ 가 $g\thinspace(Y\thinspace g)$ 로 축약되므로 $g$ 는 자기 자신의 결과를 인자로 받아 쓸 수 있고, 이렇게 이름 없이 재귀가 생긴다. 여기에는 대가가 있다. 같은 장치가 축약이 영원히 끝나지 않는 항도 만들어 내며, 실제로 $(\lambda x.\thinspace x\thinspace x)(\lambda x.\thinspace x\thinspace x)$ 는 자기 자신으로 축약되기를 무한히 반복한다.
 
 계산 순서에 자유도가 있다는 점도 중요하다. 한 항 안에 축약 가능한 자리가 여러 개일 수 있는데, Church–Rosser 정리가 "어느 순서로 줄이든 결국 만날 수 있다"고 보장한다. 그래서 정규형은 유일하고, 계산 결과는 전략에 의존하지 않는다. 다만 정규형에 **도달하는지**는 전략에 의존한다.
 
@@ -28,13 +28,13 @@ $$
 M, N \;::=\; x \;\mid\; \lambda x.\,M \;\mid\; M\,N
 $$
 
-$x$ 는 변수, $\lambda x.\, M$ 은 추상, $M\,N$ 은 적용이다. 관례적으로 적용은 왼쪽 결합이어서 $M\,N\,P$ 는 $(M\,N)\,P$ 이고, 추상의 몸통은 최대한 오른쪽으로 뻗어서 $\lambda x.\, M\,N$ 은 $\lambda x.\, (M\,N)$ 이다.
+$x$ 는 변수, $\lambda x.\thinspace M$ 은 추상, $M\thinspace N$ 은 적용이다. 관례적으로 적용은 왼쪽 결합이어서 $M\thinspace N\thinspace P$ 는 $(M\thinspace N)\thinspace P$ 이고, 추상의 몸통은 최대한 오른쪽으로 뻗어서 $\lambda x.\thinspace M\thinspace N$ 은 $\lambda x.\thinspace (M\thinspace N)$ 이다.
 
-자유변수 집합은 $\mathrm{FV}(x) = \{x\}$ 와 $\mathrm{FV}(\lambda x.\, M) = \mathrm{FV}(M) \setminus \{x\}$ 와 $\mathrm{FV}(M\,N) = \mathrm{FV}(M) \cup \mathrm{FV}(N)$ 로 정의한다. 자유변수가 없는 항을 닫힌 항 또는 combinator라 한다.
+자유변수 집합은 $\mathrm{FV}(x) = \lbrace x\rbrace$ 와 $\mathrm{FV}(\lambda x.\thinspace M) = \mathrm{FV}(M) \setminus \lbrace x\rbrace$ 와 $\mathrm{FV}(M\thinspace N) = \mathrm{FV}(M) \cup \mathrm{FV}(N)$ 로 정의한다. 자유변수가 없는 항을 닫힌 항 또는 combinator라 한다.
 
 ## 세 가지 변환
 
-**$\alpha$ -변환.** 속박변수의 이름은 의미를 갖지 않는다. $y$ 가 $M$ 에서 자유롭지 않을 때 $\lambda x.\, M$ 과 $\lambda y.\, M[x := y]$ 를 같은 항으로 본다. 이후 모든 항은 $\alpha$ -동치류로 다룬다.
+**$\alpha$ -변환.** 속박변수의 이름은 의미를 갖지 않는다. $y$ 가 $M$ 에서 자유롭지 않을 때 $\lambda x.\thinspace M$ 과 $\lambda y.\thinspace M[x := y]$ 를 같은 항으로 본다. 이후 모든 항은 $\alpha$ -동치류로 다룬다.
 
 **$\beta$ -축약.** 계산 규칙이다.
 
@@ -42,7 +42,7 @@ $$
 (\lambda x.\,M)\,N \;\to_\beta\; M[x := N]
 $$
 
-여기서 치환은 포획 회피(capture-avoiding)여야 한다. 즉 $N$ 의 자유변수가 $M$ 안의 추상에 붙잡히지 않도록 필요하면 $\alpha$ -변환을 먼저 한다. $(\lambda x.\, M)\,N$ 꼴의 부분항을 redex라 하고, redex가 없는 항을 정규형(normal form)이라 한다.
+여기서 치환은 포획 회피(capture-avoiding)여야 한다. 즉 $N$ 의 자유변수가 $M$ 안의 추상에 붙잡히지 않도록 필요하면 $\alpha$ -변환을 먼저 한다. $(\lambda x.\thinspace M)\thinspace N$ 꼴의 부분항을 redex라 하고, redex가 없는 항을 정규형(normal form)이라 한다.
 
 **$\eta$ -변환.** 외연성(extensionality)을 표현한다. $x$ 가 $M$ 에서 자유롭지 않을 때
 
@@ -62,18 +62,18 @@ $$
 \underline{n} \;=\; \lambda f.\,\lambda x.\, \underbrace{f\,(f\,(\cdots(f}_{n}\,x)\cdots))
 $$
 
-즉 $\underline 0 = \lambda f.\lambda x.\, x$ 와 $\underline 1 = \lambda f.\lambda x.\, f\,x$ 와 $\underline 2 = \lambda f.\lambda x.\, f\,(f\,x)$ 다. 산술 연산은 다음과 같다.
+즉 $\underline 0 = \lambda f.\lambda x.\thinspace x$ 와 $\underline 1 = \lambda f.\lambda x.\thinspace f\thinspace x$ 와 $\underline 2 = \lambda f.\lambda x.\thinspace f\thinspace(f\thinspace x)$ 다. 산술 연산은 다음과 같다.
 
-- 후자: $\mathrm{succ} = \lambda n.\lambda f.\lambda x.\, f\,(n\,f\,x)$
-- 덧셈: $\mathrm{plus} = \lambda m.\lambda n.\lambda f.\lambda x.\, m\,f\,(n\,f\,x)$
-- 곱셈: $\mathrm{mult} = \lambda m.\lambda n.\lambda f.\, m\,(n\,f)$
-- 거듭제곱: $\mathrm{exp} = \lambda m.\lambda n.\, n\,m$
+- 후자: $\mathrm{succ} = \lambda n.\lambda f.\lambda x.\thinspace f\thinspace(n\thinspace f\thinspace x)$
+- 덧셈: $\mathrm{plus} = \lambda m.\lambda n.\lambda f.\lambda x.\thinspace m\thinspace f\thinspace(n\thinspace f\thinspace x)$
+- 곱셈: $\mathrm{mult} = \lambda m.\lambda n.\lambda f.\thinspace m\thinspace(n\thinspace f)$
+- 거듭제곱: $\mathrm{exp} = \lambda m.\lambda n.\thinspace n\thinspace m$
 
-진리값과 조건은 선택자로 정의한다. $\mathrm{true} = \lambda x.\lambda y.\, x$ 와 $\mathrm{false} = \lambda x.\lambda y.\, y$ 와 $\mathrm{ifelse} = \lambda b.\lambda t.\lambda e.\, b\,t\,e$ 다. 그러면 $\mathrm{iszero} = \lambda n.\, n\,(\lambda z.\, \mathrm{false})\,\mathrm{true}$ 가 된다. 순서쌍은 $\mathrm{pair} = \lambda a.\lambda b.\lambda s.\, s\,a\,b$ 와 $\mathrm{fst} = \lambda p.\, p\,\mathrm{true}$ 와 $\mathrm{snd} = \lambda p.\, p\,\mathrm{false}$ 다. 전자(predecessor)는 Kleene의 기법으로 $(n, n-1)$ 쌍을 반복 갱신해 얻는다.
+진리값과 조건은 선택자로 정의한다. $\mathrm{true} = \lambda x.\lambda y.\thinspace x$ 와 $\mathrm{false} = \lambda x.\lambda y.\thinspace y$ 와 $\mathrm{ifelse} = \lambda b.\lambda t.\lambda e.\thinspace b\thinspace t\thinspace e$ 다. 그러면 $\mathrm{iszero} = \lambda n.\thinspace n\thinspace(\lambda z.\thinspace \mathrm{false})\thinspace\mathrm{true}$ 가 된다. 순서쌍은 $\mathrm{pair} = \lambda a.\lambda b.\lambda s.\thinspace s\thinspace a\thinspace b$ 와 $\mathrm{fst} = \lambda p.\thinspace p\thinspace\mathrm{true}$ 와 $\mathrm{snd} = \lambda p.\thinspace p\thinspace\mathrm{false}$ 다. 전자(predecessor)는 Kleene의 기법으로 $(n, n-1)$ 쌍을 반복 갱신해 얻는다.
 
 ## 고정점 combinator
 
-**정의.** $Y = \lambda f.\, (\lambda x.\, f\,(x\,x))\,(\lambda x.\, f\,(x\,x))$ 다.
+**정의.** $Y = \lambda f.\thinspace (\lambda x.\thinspace f\thinspace(x\thinspace x))\thinspace(\lambda x.\thinspace f\thinspace(x\thinspace x))$ 다.
 
 **성질.** 임의의 $g$ 에 대해
 
@@ -81,7 +81,7 @@ $$
 Y\,g \;\to_\beta\; (\lambda x.\, g\,(x\,x))\,(\lambda x.\, g\,(x\,x)) \;\to_\beta\; g\,\big((\lambda x.\, g\,(x\,x))\,(\lambda x.\, g\,(x\,x))\big)
 $$
 
-이고 마지막 항은 $g\,(Y\,g)$ 와 같은 항이다. 따라서 $Y\,g =_\beta g\,(Y\,g)$ 이며, $Y\,g$ 는 $g$ 의 고정점이다.
+이고 마지막 항은 $g\thinspace(Y\thinspace g)$ 와 같은 항이다. 따라서 $Y\thinspace g =_\beta g\thinspace(Y\thinspace g)$ 이며, $Y\thinspace g$ 는 $g$ 의 고정점이다.
 
 재귀 함수는 "자기 자신을 인자로 받는" 함수의 고정점으로 얻는다. 계승을 예로 들면
 
@@ -89,7 +89,7 @@ $$
 F = \lambda r.\,\lambda n.\ \mathrm{ifelse}\ (\mathrm{iszero}\ n)\ \underline{1}\ (\mathrm{mult}\ n\ (r\ (\mathrm{pred}\ n)))
 $$
 
-에 대해 $\mathrm{fact} = Y\,F$ 다. 값 호출(call-by-value) 언어에서는 $Y$ 가 발산하므로 한 단계 지연을 넣은 $Z = \lambda f.\, (\lambda x.\, f\,(\lambda v.\, x\,x\,v))\,(\lambda x.\, f\,(\lambda v.\, x\,x\,v))$ 를 쓴다.
+에 대해 $\mathrm{fact} = Y\thinspace F$ 다. 값 호출(call-by-value) 언어에서는 $Y$ 가 발산하므로 한 단계 지연을 넣은 $Z = \lambda f.\thinspace (\lambda x.\thinspace f\thinspace(\lambda v.\thinspace x\thinspace x\thinspace v))\thinspace(\lambda x.\thinspace f\thinspace(\lambda v.\thinspace x\thinspace x\thinspace v))$ 를 쓴다.
 
 ## 축약 전략
 
@@ -98,7 +98,7 @@ $$
 - **정규 순서(normal order).** 가장 왼쪽 바깥쪽 redex부터. 지연 평가에 대응한다.
 - **값 호출(applicative order).** 인자를 먼저 정규형으로 만든 뒤 적용한다. 대부분의 실제 언어가 쓴다.
 
-두 전략은 결과가 같지만 종료성이 다르다. 예컨대 $\Omega = (\lambda x.\, x\,x)(\lambda x.\, x\,x)$ 로 둔 $(\lambda x.\, \lambda y.\, y)\,\Omega$ 는 정규 순서에서는 $\lambda y.\, y$ 로 끝나지만 값 호출에서는 $\Omega$ 를 먼저 줄이려다 발산한다.
+두 전략은 결과가 같지만 종료성이 다르다. 예컨대 $\Omega = (\lambda x.\thinspace x\thinspace x)(\lambda x.\thinspace x\thinspace x)$ 로 둔 $(\lambda x.\thinspace \lambda y.\thinspace y)\thinspace\Omega$ 는 정규 순서에서는 $\lambda y.\thinspace y$ 로 끝나지만 값 호출에서는 $\Omega$ 를 먼저 줄이려다 발산한다.
 
 # 성질
 
@@ -127,7 +127,7 @@ flowchart TD
 
 ## 계산 능력과 결정불가능성
 
-**정리 (Church, Kleene, Turing).** 함수 $f : \mathbb N^k \to \mathbb N$ 가 lambda-정의가능한 것과 Turing 계산가능한 것은 동치다. 즉 Church 수로 입출력을 부호화할 때 $F\,\underline n =_\beta \underline{f(n)}$ 인 항 $F$ 가 존재하는 것과 $f$ 를 계산하는 Turing 기계가 있는 것이 같다[^1].
+**정리 (Church, Kleene, Turing).** 함수 $f : \mathbb N^k \to \mathbb N$ 가 lambda-정의가능한 것과 Turing 계산가능한 것은 동치다. 즉 Church 수로 입출력을 부호화할 때 $F\thinspace\underline n =_\beta \underline{f(n)}$ 인 항 $F$ 가 존재하는 것과 $f$ 를 계산하는 Turing 기계가 있는 것이 같다[^1].
 
 증명의 한쪽은 원시 재귀 도식과 최소화 연산자를 lambda 항으로 구성하는 것이고(최소화에는 고정점 combinator가 쓰인다), 다른 쪽은 lambda 항의 축약 과정을 기계로 시뮬레이션하는 것이다. 이 동치가 Church–Turing 논제의 핵심 증거다. 논제 자체는 "직관적으로 계산가능하다"는 비형식적 개념을 다루므로 수학적 정리가 아니라 경험적 주장이다.
 
@@ -139,13 +139,13 @@ flowchart TD
 
 ## 단순 타입과 정규화
 
-**단순 타입 lambda calculus(STLC).** 타입을 기본 타입과 함수 타입 $A \to B$ 로 정의하고, 항에 타입 판정 규칙을 준다. 변수는 문맥에서 타입을 받고, $\lambda x : A.\, M$ 은 $M : B$ 일 때 $A \to B$ 를 가지며, 적용 $M\,N$ 은 $M : A \to B$ 이고 $N : A$ 일 때 $B$ 를 갖는다.
+**단순 타입 lambda calculus(STLC).** 타입을 기본 타입과 함수 타입 $A \to B$ 로 정의하고, 항에 타입 판정 규칙을 준다. 변수는 문맥에서 타입을 받고, $\lambda x : A.\thinspace M$ 은 $M : B$ 일 때 $A \to B$ 를 가지며, 적용 $M\thinspace N$ 은 $M : A \to B$ 이고 $N : A$ 일 때 $B$ 를 갖는다.
 
 **정리 (강한 정규화).** STLC의 모든 타입 있는 항은 어떤 축약 순서로도 유한 단계 안에 정규형에 도달한다.
 
 증명은 Tait의 계산가능성 술어(reducibility) 논법이 표준이다. 타입 구조에 대한 귀납으로 "계산가능한 항" 개념을 정의하고, 모든 타입 있는 항이 계산가능함을 보인다. 단순한 항 크기에 대한 귀납으로는 실패한다는 점이 이 증명의 요점이다.
 
-강한 정규화의 대가는 표현력이다. $\lambda x.\, x\,x$ 는 타입을 붙일 수 없고(자기 적용은 $A = A \to B$ 를 요구한다), 따라서 $Y$ 도 타입을 갖지 못한다. STLC에서 표현 가능한 수치 함수는 확장 다항식 수준에 그치므로 Turing 완전하지 않다. 실제 언어는 재귀를 원시 연산으로 추가하거나(`fix`), 다형성·의존 타입 같은 더 강한 체계를 쓴다.
+강한 정규화의 대가는 표현력이다. $\lambda x.\thinspace x\thinspace x$ 는 타입을 붙일 수 없고(자기 적용은 $A = A \to B$ 를 요구한다), 따라서 $Y$ 도 타입을 갖지 못한다. STLC에서 표현 가능한 수치 함수는 확장 다항식 수준에 그치므로 Turing 완전하지 않다. 실제 언어는 재귀를 원시 연산으로 추가하거나(`fix`), 다형성·의존 타입 같은 더 강한 체계를 쓴다.
 
 **Curry–Howard 대응.** 타입을 명제로, 항을 증명으로 읽으면 STLC는 [직관주의 논리](intuitionism.md)의 함의 단편과 정확히 대응한다. 함수 타입은 함의, 곱 타입은 논리곱, 합 타입은 논리합이며, $\beta$ -축약은 증명의 정규화(cut 제거)에 해당한다. 이 대응이 형식 증명 보조 도구(Coq, Agda, Lean)의 설계 원리다[^2].
 
@@ -215,7 +215,7 @@ print(to_int(Z(church_fact_body)(of_int(5))))
 
 ## 관련 개념과의 경계
 
-- **combinator 논리.** 변수 속박을 없애고 $S = \lambda x.\lambda y.\lambda z.\, x\,z\,(y\,z)$ 와 $K = \lambda x.\lambda y.\, x$ 두 combinator만으로 같은 계산 능력을 얻는다. 변수 이름 처리를 피하려는 구현에서 쓰인다.
+- **combinator 논리.** 변수 속박을 없애고 $S = \lambda x.\lambda y.\lambda z.\thinspace x\thinspace z\thinspace(y\thinspace z)$ 와 $K = \lambda x.\lambda y.\thinspace x$ 두 combinator만으로 같은 계산 능력을 얻는다. 변수 이름 처리를 피하려는 구현에서 쓰인다.
 - **계산 복잡도.** lambda calculus는 계산 가능성을 논하기에는 좋지만 비용 모델이 자명하지 않다. 축약 단계 수와 실제 시간의 관계는 별도 연구 주제이며, 여기서의 결과들은 [계산 가능성](computability.md)의 층위이지 [NP-완전성](np-completeness.md)의 층위가 아니다.
 - **논리와의 관계.** Church는 원래 lambda calculus를 수학의 기초 체계로 제안했으나 초기 체계가 Kleene–Rosser 역설로 무너졌고, 계산 부분만 떼어낸 것이 오늘날의 형태다. 이 경험이 타입 도입의 동기가 되었으며, 그 연장선에서 [Gödel 불완전성 정리](godel-incompleteness.md)와 같은 계열의 자기 지시 현상이 고정점 combinator로 나타난다.
 

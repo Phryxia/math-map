@@ -64,10 +64,10 @@ graph TD
 $V$ 를 $\mathbb Q$ 위의 $n$ 차원 이차공간, $L\subset V$ 를 그 위의 격자라 한다.
 
 - $L\cong L'$ (**동치**): $\sigma(L)=L'$ 인 $\sigma\in O(V)$ 가 있다.
-- $L'\in\mathrm{gen}\,L$ (**같은 류**): 모든 소수 $p$ 에 대해 $L_p\cong L'_p$ 이고 $V\otimes\mathbb R$ 위에서도 동치다.
-- $L'\in\mathrm{spn}\,L$ (**같은 스피너 류**): 위 조건에 더해, 국소 동치를 주는 사상들을 스피너 노름이 자명한 회전 $\sigma_p\in O'(V_p)$ 로 고를 수 있다.
+- $L'\in\mathrm{gen}\thinspace L$ (**같은 류**): 모든 소수 $p$ 에 대해 $L_p\cong L'_p$ 이고 $V\otimes\mathbb R$ 위에서도 동치다.
+- $L'\in\mathrm{spn}\thinspace L$ (**같은 스피너 류**): 위 조건에 더해, 국소 동치를 주는 사상들을 스피너 노름이 자명한 회전 $\sigma_p\in O'(V_p)$ 로 고를 수 있다.
 
-포함관계는 $[L]\subset\mathrm{spn}\,L\subset\mathrm{gen}\,L$ 이고, 류는 유한 개의 동치류로 이루어진다.
+포함관계는 $[L]\subset\mathrm{spn}\thinspace L\subset\mathrm{gen}\thinspace L$ 이고, 류는 유한 개의 동치류로 이루어진다.
 
 ## 질량
 
@@ -76,7 +76,7 @@ $$
 \qquad L_1,\dots,L_h\ \text{는 류의 동치류 대표}
 $$
 
-$\operatorname{Aut}L=\{\sigma\in O(V):\sigma(L)=L\}$ 이고 정부호에서 유한군이다.
+$\operatorname{Aut}L=\lbrace\sigma\in O(V):\sigma(L)=L\rbrace$ 이고 정부호에서 유한군이다.
 
 ## Smith–Minkowski–Siegel 질량 공식
 

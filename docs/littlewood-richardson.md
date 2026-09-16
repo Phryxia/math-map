@@ -188,7 +188,7 @@ $$
 
 | 문제 | 복잡도 |
 |---|---|
-| $c^\nu_{\lambda\mu}$ 의 값 계산 | $\#\mathrm P$ 완전 |
+| $c^\nu_{\lambda\mu}$ 의 값 계산 | $\char"23{}\mathrm P$ 완전 |
 | $c^\nu_{\lambda\mu}>0$ 인지 판정 | 다항시간 |
 
 값을 세는 것은 어렵지만 $0$ 인지 아닌지는 쉽다. 판정이 쉬운 이유가 saturation 이다. 정수점의 존재를 유리점의 존재로 바꾸면 선형계획법이 되고, 부등식의 개수가 다항적이므로 다항시간에 끝난다. **어떤 조합적 양이 세기는 어려워도 소멸 여부는 쉬울 수 있다**는 이 대비가 기하학적 복잡도 이론(GCT)이 $\mathrm{VP}$ 대 $\mathrm{VNP}$ 를 공략할 때 기대는 현상이다. Mulmuley 와 Sohoni 의 계획은 Kronecker 계수 같은 더 어려운 중복도에도 비슷한 구조가 있기를 바라는데, 그쪽은 아직 saturation 조차 알려져 있지 않다.
@@ -219,7 +219,7 @@ $\mathrm{Gr}(k,n)$ 의 코호몰로지 곱셈 구조상수가 LR 수이므로, h
 
 ## 표현론의 포화 현상
 
-$c^{N\nu}\_{N\lambda,N\mu}$ 를 $N$ 의 함수로 보면 다면체의 Ehrhart 준다항식이 된다. 곧 텐서곱 중복도의 점근 거동이 다면체의 부피로 읽힌다. 이 관점이 반군 $\{(\lambda,\mu,\nu):c^\nu_{\lambda\mu}\ne0\}$ 의 유한생성성(Klyachko, Belkale)과 그 반군의 면 구조를 다루는 이론으로 이어진다.
+$c^{N\nu}\_{N\lambda,N\mu}$ 를 $N$ 의 함수로 보면 다면체의 Ehrhart 준다항식이 된다. 곧 텐서곱 중복도의 점근 거동이 다면체의 부피로 읽힌다. 이 관점이 반군 $\lbrace(\lambda,\mu,\nu):c^\nu_{\lambda\mu}\ne0\rbrace$ 의 유한생성성(Klyachko, Belkale)과 그 반군의 면 구조를 다루는 이론으로 이어진다.
 
 [^1]: A. Knutson, T. Tao, *The honeycomb model of* $\mathrm{GL}_n(\mathbb C)$ *tensor products I: proof of the saturation conjecture*, J. Amer. Math. Soc. **12** (1999), 1055–1090. 대칭성과 다면체 구조는 같은 저자와 C. Woodward 의 후속 논문에 있다. Horn 문제 전체의 개관은 W. Fulton, *Eigenvalues, invariant factors, highest weights, and Schubert calculus*, Bull. Amer. Math. Soc. **37** (2000). 본문의 LR 계수 계산과 saturation 실험은 직접 한 것이다.
 

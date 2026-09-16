@@ -195,7 +195,7 @@ Lie 가 애초에 이 이론을 만든 동기다. 대수방정식의 대칭을 [
 ## 표현론과 정수론
 
 - **조화해석.** $\mathrm{SO}(3)$ 의 기약표현 분해가 [구면조화함수](spherical-harmonics.md)이고, 각 표현의 차원 $2\ell+1$ 이 Lie 대수의 사다리에서 나온다.
-- **Langlands 강령.** [Langlands 강령](langlands-program.md)의 쌍대군 ${}^L\!G$ 는 근계의 근과 쌍대근을 맞바꿔 얻는다. 근계라는 조합적 대상 없이는 진술 자체가 서술되지 않는다.
+- **Langlands 강령.** [Langlands 강령](langlands-program.md)의 쌍대군 ${}^L\negthinspace G$ 는 근계의 근과 쌍대근을 맞바꿔 얻는다. 근계라는 조합적 대상 없이는 진술 자체가 서술되지 않는다.
 - **대수기하.** 반단순군의 깃발다양체, Schubert 셈법, 기하학적 표현론이 모두 근계 조합론 위에서 돌아간다.
 
 # 연관 문서

@@ -94,7 +94,7 @@ $$
 K_{ir}(z)=\int_0^\infty e^{-z\cosh t}\cos(rt)\,dt
 $$
 
-$y\to\infty$ 에서 $K_{ir}(y)\sim\sqrt{\pi/2y}\,e^{-y}$ 로 지수적으로 감소하므로 첨점 조건이 자동으로 붙는다. 정칙 형식의 $q^n=e^{2\pi inz}$ 자리에 이 Bessel 인자가 들어온 것이고, 지수적 감소라는 성질만 같고 함수 자체는 훨씬 다루기 어렵다.
+$y\to\infty$ 에서 $K_{ir}(y)\sim\sqrt{\pi/2y}\thinspace e^{-y}$ 로 지수적으로 감소하므로 첨점 조건이 자동으로 붙는다. 정칙 형식의 $q^n=e^{2\pi inz}$ 자리에 이 Bessel 인자가 들어온 것이고, 지수적 감소라는 성질만 같고 함수 자체는 훨씬 다루기 어렵다.
 
 $z\mapsto-\bar z$ 에 대한 대칭으로 $a_{-n}=a_n$ 인 **짝**과 $a_{-n}=-a_n$ 인 **홀**로 나뉜다.
 

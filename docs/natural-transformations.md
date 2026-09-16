@@ -57,7 +57,7 @@ Functor $F : C \to D$ 와 $G : D \to C$ 에 대해 $GF \cong \mathrm{id}_C$ 이�
 
 ## 예와 반례
 
-- **멱집합.** 집합 $X$ 를 $P(X)$ 로, 함수를 직접상으로 보내는 functor $P$ 에 대해 $\eta_X(x) = \{x\}$ 는 항등 functor 에서 $P$ 로 가는 자연변환이다. $P(h)(\eta_X(x)) = \{h(x)\} = \eta_Y(h(x))$ 이므로 사각형이 닫힌다.
+- **멱집합.** 집합 $X$ 를 $P(X)$ 로, 함수를 직접상으로 보내는 functor $P$ 에 대해 $\eta_X(x) = \lbrace x\rbrace$ 는 항등 functor 에서 $P$ 로 가는 자연변환이다. $P(h)(\eta_X(x)) = \lbrace h(x)\rbrace = \eta_Y(h(x))$ 이므로 사각형이 닫힌다.
 - **이중쌍대.** $V \mapsto V^{**}$ 는 유한차원 벡터 공간 위에서 항등 functor 와 자연동형이다. 반면 $V \mapsto V^*$ 는 반변 functor 라 애초에 항등 functor 와 비교할 수 없고, 차원이 같다는 사실만으로 만든 동형은 기저 선택에 의존해 naturality 가 깨진다.
 - **행렬식.** 가환환 $R$ 에 $\mathrm{GL}_n(R)$ 을 대응시키는 functor 와 단원군 $R^\times$ 를 대응시키는 functor 사이에서 $\det$ 은 자연변환이다. 환 준동형을 성분별로 적용한 뒤 행렬식을 재나, 행렬식을 잰 뒤 준동형을 적용하나 같기 때문이다. "행렬식 공식이 환에 의존하지 않는다" 는 말의 정확한 표현이 이것이다.
 - **역행렬.** 반대로 $A \mapsto A^{-1}$ 은 $\mathrm{GL}_n$ 에서 $\mathrm{GL}_n$ 으로 가는 자연변환이 아니다. 군 준동형이 아니라 순서를 뒤집기 때문이며, 방향을 뒤집어 반변으로 놓아야 말이 된다.

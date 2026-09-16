@@ -18,7 +18,7 @@ Manin 의 기여는 이 군의 완전한 유한 표현을 준 것이다. 생성�
 
 ## 형식 대신 경로를 다룬다
 
-$f\in S_2(\Gamma_0(N))$ 에 대해 $\omega_f=2\pi i\,f(z)\,dz$ 는 $\Gamma_0(N)$ 불변이므로 $X_0(N)$ 위의 정칙 1형식이 된다. 적분
+$f\in S_2(\Gamma_0(N))$ 에 대해 $\omega_f=2\pi i\thinspace f(z)\thinspace dz$ 는 $\Gamma_0(N)$ 불변이므로 $X_0(N)$ 위의 정칙 1형식이 된다. 적분
 
 $$
 \langle\{\alpha,\beta\},f\rangle=\int_\alpha^\beta 2\pi i\,f(z)\,dz
@@ -30,7 +30,7 @@ $$
 
 ## 왜 첨점을 끝점으로 허용하는가
 
-닫힌 경로만 쓰면 $H_1(X_0(N),\mathbb Z)\cong\mathbb Z^{2g}$ 이고, 이것이 $S_2$ 의 실수 구조를 준다. 그런데 계산하기에는 첨점을 끝점으로 허용하는 쪽이 훨씬 편하다. $\{\alpha,\beta\}$ 를 임의의 두 첨점을 잇는 측지선으로 두면 삼각 관계
+닫힌 경로만 쓰면 $H_1(X_0(N),\mathbb Z)\cong\mathbb Z^{2g}$ 이고, 이것이 $S_2$ 의 실수 구조를 준다. 그런데 계산하기에는 첨점을 끝점으로 허용하는 쪽이 훨씬 편하다. $\lbrace\alpha,\beta\rbrace$ 를 임의의 두 첨점을 잇는 측지선으로 두면 삼각 관계
 
 $$
 \{\alpha,\beta\}+\{\beta,\gamma\}+\{\gamma,\alpha\}=0
@@ -46,7 +46,7 @@ $$
 
 ## Manin 의 유한 표현
 
-임의의 $\{\alpha,\beta\}$ 를 어떻게 유한 생성원으로 쓸 것인가. 핵심은 연분수다. $\alpha$ 에서 $\beta$ 로 가는 경로를 연분수 수렴분을 따라 잘게 쪼개면, 각 조각이 어떤 $g\in\mathrm{SL}_2(\mathbb Z)$ 에 대해 $\{g\cdot0,\ g\cdot\infty\}$ 꼴이 된다. 그리고 $\Gamma_0(N)$ 작용으로 나누면 $g$ 는 잉여류로만 기억되면 된다.
+임의의 $\lbrace\alpha,\beta\rbrace$ 를 어떻게 유한 생성원으로 쓸 것인가. 핵심은 연분수다. $\alpha$ 에서 $\beta$ 로 가는 경로를 연분수 수렴분을 따라 잘게 쪼개면, 각 조각이 어떤 $g\in\mathrm{SL}_2(\mathbb Z)$ 에 대해 $\lbrace g\cdot0,\ g\cdot\infty\rbrace$ 꼴이 된다. 그리고 $\Gamma_0(N)$ 작용으로 나누면 $g$ 는 잉여류로만 기억되면 된다.
 
 $$
 \Gamma_0(N)\backslash\mathrm{SL}_2(\mathbb Z)\ \xrightarrow{\ \sim\ }\ \mathbb P^1(\mathbb Z/N),\qquad
@@ -63,13 +63,13 @@ $$
 
 ## 두 개의 관계식
 
-$\mathrm{SL}_2(\mathbb Z)$ 는 $\sigma=\begin{pmatrix}0&-1\\1&0\end{pmatrix}$ 와 $\tau=\begin{pmatrix}0&-1\\1&-1\end{pmatrix}$ 로 생성되고 $\sigma^2=\tau^3=-I$ 다. 이 사실이 그대로 관계식이 된다.
+$\mathrm{SL}_2(\mathbb Z)$ 는 $\sigma=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 와 $\tau=\begin{pmatrix}0&-1\cr 1&-1\end{pmatrix}$ 로 생성되고 $\sigma^2=\tau^3=-I$ 다. 이 사실이 그대로 관계식이 된다.
 
 $$
 [x]+[x\sigma]=0,\qquad [x]+[x\tau]+[x\tau^2]=0
 $$
 
-첫 식은 경로 뒤집기 $\{0,\infty\}=-\{\infty,0\}$ 에서, 둘째 식은 $\{0,\infty\}+\{\infty,-1\}+\{-1,0\}=0$ 이라는 삼각 관계에서 온다. 놀라운 것은 **이 둘이 전부**라는 점이다. 다른 관계는 없다.
+첫 식은 경로 뒤집기 $\lbrace 0,\infty\rbrace=-\lbrace\infty,0\rbrace$ 에서, 둘째 식은 $\lbrace 0,\infty\rbrace+\lbrace\infty,-1\rbrace+\lbrace-1,0\rbrace=0$ 이라는 삼각 관계에서 온다. 놀라운 것은 **이 둘이 전부**라는 점이다. 다른 관계는 없다.
 
 그러므로 모듈러 기호 공간은 유한 생성원 위의 유한 연립일차방정식의 해공간이고, 계산은 Gauss 소거다. 무한한 해석적 대상이 완전히 유한한 조합론으로 내려온다.
 
@@ -77,13 +77,13 @@ $$
 
 ## 모듈러 기호 공간
 
-$\mathbb M_2$ 를 $\alpha,\beta\in\mathbb P^1(\mathbb Q)$ 인 기호 $\{\alpha,\beta\}$ 가 생성하는 자유아벨군을 다음 관계로 나눈 것이라 하자.
+$\mathbb M_2$ 를 $\alpha,\beta\in\mathbb P^1(\mathbb Q)$ 인 기호 $\lbrace\alpha,\beta\rbrace$ 가 생성하는 자유아벨군을 다음 관계로 나눈 것이라 하자.
 
 $$
 \{\alpha,\beta\}+\{\beta,\gamma\}+\{\gamma,\alpha\}=0
 $$
 
-(여기서 $\{\alpha,\alpha\}=0$ 과 $\{\alpha,\beta\}=-\{\beta,\alpha\}$ 가 따라 나온다.) $\mathrm{SL}_2(\mathbb Z)$ 가 $g\{\alpha,\beta\}=\{g\alpha,g\beta\}$ 로 작용하고, $\Gamma=\Gamma_0(N)$ 에 대해
+(여기서 $\lbrace\alpha,\alpha\rbrace=0$ 과 $\lbrace\alpha,\beta\rbrace=-\lbrace\beta,\alpha\rbrace$ 가 따라 나온다.) $\mathrm{SL}_2(\mathbb Z)$ 가 $g\lbrace\alpha,\beta\rbrace=\lbrace g\alpha,g\beta\rbrace$ 로 작용하고, $\Gamma=\Gamma_0(N)$ 에 대해
 
 $$
 \mathbb M_2(\Gamma)=\big(\mathbb M_2\big)_\Gamma\quad(\Gamma\text{ 공변})
@@ -126,7 +126,7 @@ $$
 
 ## 무게 $k$ 로의 확장
 
-무게 $k>2$ 에서는 계수를 가군으로 바꾼다. $V_{k-2}=\mathrm{Sym}^{k-2}(\mathbb Z^2)$ 를 $\mathrm{SL}\_2$ 표현으로 두고 기호를 $P\in V_{k-2}$ 에 대한 $P\otimes\{\alpha,\beta\}$ 로 확장하면 같은 이론이 그대로 작동한다. $k=2$ 는 $V_0=\mathbb Z$ 인 경우다.
+무게 $k>2$ 에서는 계수를 가군으로 바꾼다. $V_{k-2}=\mathrm{Sym}^{k-2}(\mathbb Z^2)$ 를 $\mathrm{SL}\_2$ 표현으로 두고 기호를 $P\in V_{k-2}$ 에 대한 $P\otimes\lbrace\alpha,\beta\rbrace$ 로 확장하면 같은 이론이 그대로 작동한다. $k=2$ 는 $V_0=\mathbb Z$ 인 경우다.
 
 # 성질
 
@@ -149,7 +149,7 @@ $$
 
 ## 복소켤레와 $\pm$ 분해
 
-$\eta=\begin{pmatrix}-1&0\\0&1\end{pmatrix}$ 가 $\mathbb M_k$ 에 대합으로 작용하고, 이것이 $X_0(N)(\mathbb C)$ 위의 복소켤레에 해당한다. 고유공간으로 나누면
+$\eta=\begin{pmatrix}-1&0\cr 0&1\end{pmatrix}$ 가 $\mathbb M_k$ 에 대합으로 작용하고, 이것이 $X_0(N)(\mathbb C)$ 위의 복소켤레에 해당한다. 고유공간으로 나누면
 
 $$
 \mathbb M_k=\mathbb M_k^+\oplus\mathbb M_k^-
@@ -159,13 +159,13 @@ $$
 
 ## $L$ 값이 기호의 값이다
 
-$f$ 가 무게 2 새형식일 때 기호 $\{0,\infty\}$ 와의 짝이 바로 $L$ 값이다.
+$f$ 가 무게 2 새형식일 때 기호 $\lbrace 0,\infty\rbrace$ 와의 짝이 바로 $L$ 값이다.
 
 $$
 \langle\{0,\infty\},f\rangle=\int_0^{i\infty}2\pi i\,f(z)\,dz=L(f,1)
 $$
 
-일반적으로 $\{0,\alpha\}$ 꼴 기호가 꼬인 $L$ 값 $L(f,\chi,1)$ 을 주고, 무게 $k$ 에서는 $V_{k-2}$ 의 성분이 $1\le j\le k-1$ 인 임계점 $L(f,j)$ 를 준다. 게다가 이 값들은 주기 $\Omega_f^\pm$ 로 나누면 **유리수**이며, 그 유리수가 모듈러 기호 격자에서 직접 읽힌다. BSD 추측의 수치 검증이 이 성질 위에서 이루어진다.
+일반적으로 $\lbrace 0,\alpha\rbrace$ 꼴 기호가 꼬인 $L$ 값 $L(f,\chi,1)$ 을 주고, 무게 $k$ 에서는 $V_{k-2}$ 의 성분이 $1\le j\le k-1$ 인 임계점 $L(f,j)$ 를 준다. 게다가 이 값들은 주기 $\Omega_f^\pm$ 로 나누면 **유리수**이며, 그 유리수가 모듈러 기호 격자에서 직접 읽힌다. BSD 추측의 수치 검증이 이 성질 위에서 이루어진다.
 
 ## 정수 구조가 산술을 담는다
 

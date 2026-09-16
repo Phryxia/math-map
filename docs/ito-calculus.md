@@ -2,7 +2,7 @@
 
 # 개요
 
-[Brown 운동](brownian-motion.md)의 경로는 1차변동이 무한이라서 $\int f\, dB$ 를 경로마다 Riemann–Stieltjes 적분으로 정의할 수 없다. 그럼에도 적분이 필요한 이유는 분명하다. "무작위로 흔들리는 항이 들어간 미분방정식" 을 쓰려면 그 항을 적분할 수 있어야 한다.
+[Brown 운동](brownian-motion.md)의 경로는 1차변동이 무한이라서 $\int f\thinspace dB$ 를 경로마다 Riemann–Stieltjes 적분으로 정의할 수 없다. 그럼에도 적분이 필요한 이유는 분명하다. "무작위로 흔들리는 항이 들어간 미분방정식" 을 쓰려면 그 항을 적분할 수 있어야 한다.
 
 Itô 의 해법은 적분을 경로별로 정의하기를 포기하고 $L^2$ 극한으로 정의하는 것이다. 리만 합에서 대표점을 반드시 구간의 왼쪽 끝에서 잡으면, 합이 martingale 이 되고 분산을 정확히 계산할 수 있어(Itô 등거리) 극한이 존재한다. 대가는 연쇄법칙이 바뀌는 것이다. 2차변동이 사라지지 않으므로 Taylor 전개의 2차항이 $dt$ 규모로 살아남고, 이 항이 Itô 공식의 보정항이 된다.
 
@@ -10,7 +10,7 @@ Itô 의 해법은 적분을 경로별로 정의하기를 포기하고 $L^2$ 극
 
 ## 왜 왼쪽 끝점인가
 
-보통의 적분에서는 구간 안 어느 점을 대표로 잡아도 극한이 같다. 하지만 $\int_0^T B\, dB$ 를 대표점 $B_{t_i}$ 로 계산한 값과 $B_{(t_i+t_{i+1})/2}$ 로 계산한 값은 극한에서 $T/2$ 만큼 다르다. 2차변동이 0 이 아니기 때문이다.
+보통의 적분에서는 구간 안 어느 점을 대표로 잡아도 극한이 같다. 하지만 $\int_0^T B\thinspace dB$ 를 대표점 $B_{t_i}$ 로 계산한 값과 $B_{(t_i+t_{i+1})/2}$ 로 계산한 값은 극한에서 $T/2$ 만큼 다르다. 2차변동이 0 이 아니기 때문이다.
 
 $$
 \int_0^TB\,dB=\frac{B_T^2-T}{2}\quad(\text{Itô}),\qquad \int_0^TB\circ dB=\frac{B_T^2}{2}\quad(\text{Stratonovich})
@@ -26,7 +26,7 @@ $$
 (dB)^2=dt,\qquad dB\,dt=0,\qquad (dt)^2=0
 $$
 
-$f(B_t)$ 를 Taylor 전개할 때 1차항만 남기던 습관이 여기서 깨진다. 2차항 $\tfrac12 f''(B)(dB)^2$ 가 $\tfrac12 f''(B)\,dt$ 로 살아남기 때문이다. Itô 공식은 이 한 줄의 결과일 뿐이다.
+$f(B_t)$ 를 Taylor 전개할 때 1차항만 남기던 습관이 여기서 깨진다. 2차항 $\tfrac12 f''(B)(dB)^2$ 가 $\tfrac12 f''(B)\thinspace dt$ 로 살아남기 때문이다. Itô 공식은 이 한 줄의 결과일 뿐이다.
 
 # 정의
 
@@ -48,17 +48,17 @@ $$
 \mathbb{E}\bigg[\Big(\int_0^TH_s\,dB_s\Big)^2\bigg]=\mathbb{E}\bigg[\int_0^TH_s^2\,ds\bigg]
 $$
 
-좌변은 확률적분의 $L^2$ 노름이고 우변은 보통 적분의 노름이다. 즉 적분 연산은 등거리사상이고, 단순 과정이 조밀하므로 이 사상은 $\int_0^T \mathbb{E}[H_s^2]\, ds < \infty$ 인 adapted 과정 전체로 유일하게 연장된다. 이렇게 정의된 $\int H\, dB$ 는 연속 martingale 이며 기댓값이 0 이다.
+좌변은 확률적분의 $L^2$ 노름이고 우변은 보통 적분의 노름이다. 즉 적분 연산은 등거리사상이고, 단순 과정이 조밀하므로 이 사상은 $\int_0^T \mathbb{E}[H_s^2]\thinspace ds < \infty$ 인 adapted 과정 전체로 유일하게 연장된다. 이렇게 정의된 $\int H\thinspace dB$ 는 연속 martingale 이며 기댓값이 0 이다.
 
 ## Itô 공식
 
-$X_t = X_0 + \int_0^t a_s\, ds + \int_0^t b_s\, dB_s$ 를 Itô 과정이라 하고 $f$ 가 두 번 연속미분가능하면 다음이 성립한다.
+$X_t = X_0 + \int_0^t a_s\thinspace ds + \int_0^t b_s\thinspace dB_s$ 를 Itô 과정이라 하고 $f$ 가 두 번 연속미분가능하면 다음이 성립한다.
 
 $$
 df(t,X_t)=\Big(\partial_tf+a_t\,\partial_xf+\tfrac12 b_t^2\,\partial_x^2f\Big)dt+b_t\,\partial_xf\,dB_t
 $$
 
-$\tfrac12 b^2 \partial_x^2 f$ 항이 고전적 연쇄법칙과의 유일한 차이이며 $(dB)^2 = dt$ 에서 나온다. 가장 단순한 경우로 $f(x) = x^2$ 와 $X = B$ 를 넣으면 $d(B^2) = 2B\, dB + dt$ 이고, 적분하면 앞의 $\int B\, dB$ 공식이 된다.
+$\tfrac12 b^2 \partial_x^2 f$ 항이 고전적 연쇄법칙과의 유일한 차이이며 $(dB)^2 = dt$ 에서 나온다. 가장 단순한 경우로 $f(x) = x^2$ 와 $X = B$ 를 넣으면 $d(B^2) = 2B\thinspace dB + dt$ 이고, 적분하면 앞의 $\int B\thinspace dB$ 공식이 된다.
 
 ## 확률미분방정식
 
@@ -74,24 +74,24 @@ $a$ 와 $b$ 가 $x$ 에 대해 Lipschitz 이고 선형 증가 조건을 만족�
 
 ## 기본 성질
 
-- 선형이고, $\int_0^t H\, dB$ 는 $t$ 에 대해 연속인 martingale 이다.
+- 선형이고, $\int_0^t H\thinspace dB$ 는 $t$ 에 대해 연속인 martingale 이다.
 - 기댓값은 0 이고 분산은 Itô 등거리로 계산된다.
-- 2차변동은 $d\langle X \rangle_t = b_t^2\, dt$ 다. 즉 확산계수 $b$ 가 경로의 거칠기를 결정하고, 표류항 $a$ 는 2차변동에 기여하지 않는다.
+- 2차변동은 $d\langle X \rangle_t = b_t^2\thinspace dt$ 다. 즉 확산계수 $b$ 가 경로의 거칠기를 결정하고, 표류항 $a$ 는 2차변동에 기여하지 않는다.
 - Doob 최대부등식이 그대로 적용되어 경로 전체의 크기를 종점의 크기로 통제할 수 있다.
 
 ## 대표적인 해
 
 | SDE | 해 |
 |---|---|
-| $dX = \mu\, dt + \sigma\, dB$ | $X_0 + \mu t + \sigma B_t$ (Brown 운동에 표류 추가) |
-| $dS = \mu S\, dt + \sigma S\, dB$ | $S_0 \exp((\mu - \sigma^2/2)t + \sigma B_t)$ (기하 Brown 운동) |
-| $dX = -\theta X\, dt + \sigma\, dB$ | Ornstein–Uhlenbeck 과정, 평균으로 회귀 |
+| $dX = \mu\thinspace dt + \sigma\thinspace dB$ | $X_0 + \mu t + \sigma B_t$ (Brown 운동에 표류 추가) |
+| $dS = \mu S\thinspace dt + \sigma S\thinspace dB$ | $S_0 \exp((\mu - \sigma^2/2)t + \sigma B_t)$ (기하 Brown 운동) |
+| $dX = -\theta X\thinspace dt + \sigma\thinspace dB$ | Ornstein–Uhlenbeck 과정, 평균으로 회귀 |
 
 기하 Brown 운동의 해에 나오는 $-\sigma^2/2$ 가 Itô 보정의 가장 유명한 얼굴이다. 고전적 미적분으로 풀면 이 항이 없고, 그 차이 때문에 기댓값과 중앙값이 갈라진다. $\mathbb{E}[S_t] = S_0 e^{\mu t}$ 이지만 $\log S_t$ 의 평균은 $\log S_0 + (\mu - \sigma^2/2)t$ 다.
 
 ## 지수 martingale과 측도변환
 
-$M_t = \exp(\int \theta\, dB - \tfrac12 \int \theta^2\, ds)$ 는 적당한 조건(Novikov)에서 martingale 이고, 이것을 밀도로 삼아 확률측도를 바꾸면 Brown 운동에 표류를 더하거나 뺄 수 있다. 이것이 Girsanov 정리이고, [측도변환과 우도비](change-of-measure.md)에서 다루는 밀도 변경을 연속시간 과정으로 옮긴 것이다. 금융에서 위험중립측도를 만드는 기술이 바로 이것이다.
+$M_t = \exp(\int \theta\thinspace dB - \tfrac12 \int \theta^2\thinspace ds)$ 는 적당한 조건(Novikov)에서 martingale 이고, 이것을 밀도로 삼아 확률측도를 바꾸면 Brown 운동에 표류를 더하거나 뺄 수 있다. 이것이 Girsanov 정리이고, [측도변환과 우도비](change-of-measure.md)에서 다루는 밀도 변경을 연속시간 과정으로 옮긴 것이다. 금융에서 위험중립측도를 만드는 기술이 바로 이것이다.
 
 # 활용
 

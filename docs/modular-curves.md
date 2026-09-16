@@ -24,7 +24,7 @@ $$
 
 $\Gamma_0(N)$ 이 $\mathbb H$ 에 불연속으로 작용하므로 몫이 Riemann 곡면이 된다. 문제는 두 가지다. 콤팩트하지 않다는 것과, 안정자군이 자명하지 않은 점이 있다는 것이다.
 
-첫 문제는 **첨점**을 붙여 해결한다. $\mathbb Q\cup\{\infty\}$ 의 $\Gamma_0(N)$ 궤도를 유한 개의 점으로 추가하면 콤팩트해진다. $X_0(N)=\Gamma_0(N)\backslash(\mathbb H\cup\mathbb Q\cup\{\infty\})$ 다.
+첫 문제는 **첨점**을 붙여 해결한다. $\mathbb Q\cup\lbrace\infty\rbrace$ 의 $\Gamma_0(N)$ 궤도를 유한 개의 점으로 추가하면 콤팩트해진다. $X_0(N)=\Gamma_0(N)\backslash(\mathbb H\cup\mathbb Q\cup\lbrace\infty\rbrace)$ 다.
 
 둘째 문제는 **타원점**이다. 안정자가 위수 2 또는 3 인 점에서는 몫이 국소적으로 $z\mapsto z^2$ 또는 $z\mapsto z^3$ 처럼 접히므로, 좌표를 그만큼 늘려 주어야 매끄러운 곡면이 된다. 위수 2 와 3 만 나오는 이유는 $\mathrm{SL}_2(\mathbb Z)$ 의 유한 위수 원소가 위수 4 와 6 뿐이기 때문이다.
 
@@ -40,7 +40,7 @@ $\Gamma_0(N)$ 으로 좁히면 기저 변환이 제한된다. 정확히 부분�
 
 ## 미분형식과 무게 2
 
-$f\in S_2(\Gamma_0(N))$ 에 대해 $\omega=f(\tau)\,d\tau$ 를 생각하자. $\gamma=\begin{pmatrix}a&b\\c&d\end{pmatrix}$ 에 대해 $d(\gamma\tau)=(c\tau+d)^{-2}d\tau$ 이므로, $f$ 의 무게 2 변환 규칙과 정확히 상쇄된다.
+$f\in S_2(\Gamma_0(N))$ 에 대해 $\omega=f(\tau)\thinspace d\tau$ 를 생각하자. $\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}$ 에 대해 $d(\gamma\tau)=(c\tau+d)^{-2}d\tau$ 이므로, $f$ 의 무게 2 변환 규칙과 정확히 상쇄된다.
 
 $$
 f(\gamma\tau)\,d(\gamma\tau)=(c\tau+d)^2f(\tau)\cdot(c\tau+d)^{-2}d\tau=f(\tau)\,d\tau
@@ -114,7 +114,7 @@ X_0(Np)\ \xrightarrow{\ \beta\ }\ X_0(N),\qquad
 T_p=\beta_*\alpha^*
 $$
 
-모듈라이로 읽으면 $(E,C)\mapsto\sum_{D}(E/D,\,(C+D)/D)$ 로, 위수 $p$ 부분군 전부에 걸친 합이다. [Hecke 작용소](hecke-operators.md)의 격자 정의가 곡선 위의 기하로 번역된 것이다.
+모듈라이로 읽으면 $(E,C)\mapsto\sum_{D}(E/D,\thinspace(C+D)/D)$ 로, 위수 $p$ 부분군 전부에 걸친 합이다. [Hecke 작용소](hecke-operators.md)의 격자 정의가 곡선 위의 기하로 번역된 것이다.
 
 # 성질
 
