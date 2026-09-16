@@ -39,10 +39,12 @@ graph TD
 - [다항식환](polynomial-rings.md): 환 위의 다항식과 나눗셈
 - [가군](modules.md) → [텐서곱](tensor-products.md): 환 위의 벡터 공간
 - [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md): 정수론으로 가는 문
+- [대수적 K 이론과 Quillen–Lichtenbaum](algebraic-k-theory.md): 환의 사영가군에서 나오는 고차 불변량
 
 ## 체와 Galois 이론
 
 - [체](fields.md) → [체의 확대](field-extensions.md) → [유한체](finite-fields.md), [Galois 이론](galois-theory.md)
+- [오류정정부호](error-correcting-codes.md): 유한체 위의 선형 부호, 대수가 통신에 쓰이는 첫 자리
 - [p 진수와 부치](p-adic-numbers.md) → [Newton 다각형](newton-polygon.md): 완비화한 체
 - [대수적 수체와 정수환](algebraic-number-fields.md) → [유체론](class-field-theory.md): 이후는 정수론 개관
 
