@@ -12,31 +12,31 @@ KKT 조건은 최적점에서 목적함수의 기울기가 "활성 제약들의 
 
 # 정의
 
-n차원 변수 x에 대한 문제를 다음 형태로 둔다. f, g_i, h_j는 실함수다.
+$n$ 차원 변수 $x$ 에 대한 문제를 다음 형태로 둔다. $f$ , $g_i$ , $h_j$ 는 실함수다.
 
 $$
 \min_{x}\ f(x)\quad\text{subject to}\quad g_i(x)\le 0\ (i=1,\dots,m),\quad h_j(x)=0\ (j=1,\dots,r)
 $$
 
-이 문제의 최적값을 p로 쓴다. Lagrangian은 승수 λ(부등식용, m차원)와 ν(등식용, r차원)를 붙인 함수다.
+이 문제의 최적값을 $p$ 로 쓴다. Lagrangian은 승수 $\lambda$ (부등식용, $m$ 차원)와 $\nu$ (등식용, $r$ 차원)를 붙인 함수다.
 
 $$
 L(x,\lambda,\nu)=f(x)+\sum_{i=1}^{m}\lambda_i g_i(x)+\sum_{j=1}^{r}\nu_j h_j(x)
 $$
 
-dual function은 x에 대한 하한이다.
+dual function은 $x$ 에 대한 하한이다.
 
 $$
 q(\lambda,\nu)=\inf_{x}\ L(x,\lambda,\nu)
 $$
 
-dual problem은 이 하한을 최대화한다. 최적값을 d로 쓴다.
+dual problem은 이 하한을 최대화한다. 최적값을 $d$ 로 쓴다.
 
 $$
 d=\max_{\lambda\ge 0,\ \nu}\ q(\lambda,\nu)
 $$
 
-문제가 볼록이라는 것은 f와 모든 g_i가 [볼록](convexity.md)이고 h_j가 affine이라는 뜻이다. Slater 조건은 강실행가능점이 존재한다는 조건이다. 즉 어떤 x가 있어 affine이 아닌 모든 부등식 제약을 강한 부등호로 만족한다.
+문제가 볼록이라는 것은 $f$ 와 모든 $g_i$ 가 [볼록](convexity.md)이고 $h_j$ 가 affine이라는 뜻이다. Slater 조건은 강실행가능점이 존재한다는 조건이다. 즉 어떤 $x$ 가 있어 affine이 아닌 모든 부등식 제약을 강한 부등호로 만족한다.
 
 $$
 \exists\, \tilde{x}:\quad g_i(\tilde{x})<0\ (\forall i),\quad h_j(\tilde{x})=0\ (\forall j)
@@ -46,27 +46,27 @@ $$
 
 ## dual function은 항상 concave
 
-q는 각 (λ,ν)에 대해 affine 함수들의 pointwise infimum이다. affine 함수족의 하한은 concave이므로 q는 f, g, h의 성질과 무관하게 concave이고 정의역도 볼록이다. 따라서 dual problem은 언제나 볼록 최적화 문제다.
+$q$ 는 각 $(\lambda,\nu)$ 에 대해 affine 함수들의 pointwise infimum이다. affine 함수족의 하한은 concave이므로 $q$ 는 $f$ , $g$ , $h$ 의 성질과 무관하게 concave이고 정의역도 볼록이다. 따라서 dual problem은 언제나 볼록 최적화 문제다.
 
 ## 약쌍대성
 
-임의의 λ≥0과 임의의 ν에 대해 다음이 성립하고, 따라서 d ≤ p다.
+임의의 $\lambda\ge 0$ 과 임의의 $\nu$ 에 대해 다음이 성립하고, 따라서 $d\le p$ 다.
 
 $$
 q(\lambda,\nu)\le p
 $$
 
-증명: x가 실행가능하면 g_i(x)≤0, λ_i≥0이므로 각 항 λ_i g_i(x)는 0 이하이고 h_j(x)=0이므로 ν 항은 사라진다. 따라서 L(x,λ,ν) ≤ f(x)이다. 좌변을 x에 대해 전체 공간에서 inf로 바꾸면 더 작아지므로 q(λ,ν) ≤ f(x)이고, 실행가능한 x 전체에 대해 최소화하면 q(λ,ν) ≤ p다[^1]. 이 부등식은 볼록성을 전혀 쓰지 않으므로 비볼록 문제에서도 유효하며, Lagrangian relaxation으로 하한을 얻는 근거가 된다.
+증명: $x$ 가 실행가능하면 $g_i(x)\le 0$ , $\lambda_i\ge 0$ 이므로 각 항 $\lambda_i g_i(x)$ 는 $0$ 이하이고 $h_j(x)=0$ 이므로 $\nu$ 항은 사라진다. 따라서 $L(x,\lambda,\nu)\le f(x)$ 이다. 좌변을 $x$ 에 대해 전체 공간에서 inf로 바꾸면 더 작아지므로 $q(\lambda,\nu)\le f(x)$ 이고, 실행가능한 $x$ 전체에 대해 최소화하면 $q(\lambda,\nu)\le p$ 다[^1]. 이 부등식은 볼록성을 전혀 쓰지 않으므로 비볼록 문제에서도 유효하며, Lagrangian relaxation으로 하한을 얻는 근거가 된다.
 
-p − d를 duality gap이라 한다. 비볼록 문제에서는 gap이 양수일 수 있다.
+$p-d$ 를 duality gap이라 한다. 비볼록 문제에서는 gap이 양수일 수 있다.
 
 ## 강쌍대성과 Slater 조건
 
-볼록 문제가 Slater 조건을 만족하면 p = d이고, p가 유한하면 dual 최적해가 달성된다[^2]. 증명 개요는 값 함수(perturbation function)의 subgradient 존재, 또는 (g(x), f(x)) 꼴의 점들이 만드는 볼록집합과 점 (0,p)를 분리하는 초평면의 존재에서 나온다. Slater 조건은 그 분리 초평면이 수직(즉 f 좌표의 계수가 0인 퇴화 형태)이 되지 않도록 막는 역할을 한다. LP는 부등식이 모두 affine이므로 실행가능성만으로 강쌍대성을 갖는다.
+볼록 문제가 Slater 조건을 만족하면 $p=d$ 이고, $p$ 가 유한하면 dual 최적해가 달성된다[^2]. 증명 개요는 값 함수(perturbation function)의 subgradient 존재, 또는 $(g(x),f(x))$ 꼴의 점들이 만드는 볼록집합과 점 $(0,p)$ 를 분리하는 초평면의 존재에서 나온다. Slater 조건은 그 분리 초평면이 수직(즉 $f$ 좌표의 계수가 $0$ 인 퇴화 형태)이 되지 않도록 막는 역할을 한다. LP는 부등식이 모두 affine이므로 실행가능성만으로 강쌍대성을 갖는다.
 
 ## KKT 조건
 
-f, g_i, h_j가 [미분가능](derivative.md)할 때, 다음을 KKT 조건이라 한다.
+$f$ , $g_i$ , $h_j$ 가 [미분가능](derivative.md)할 때, 다음을 KKT 조건이라 한다.
 
 $$
 \nabla f(x^\star)+\sum_{i=1}^{m}\lambda_i^\star\nabla g_i(x^\star)+\sum_{j=1}^{r}\nu_j^\star\nabla h_j(x^\star)=0
@@ -78,8 +78,8 @@ $$
 
 네 종류의 조건은 차례로 stationarity, primal feasibility, dual feasibility, 상보 여유(complementary slackness)다. 두 방향의 결과를 구분해야 한다.
 
-- 필요성: 강쌍대성이 성립하고 primal·dual 최적해가 달성되면, 볼록이 아니어도 미분가능한 문제의 최적해는 KKT 조건을 만족한다. 실제로 최적 x는 L(·,λ,ν)를 최소화하므로 기울기가 0이고, 목적값과 dual 값이 같다는 등식에서 λ_i g_i의 합이 0이며 각 항이 0 이하이므로 모두 0이다.
-- 충분성: 문제가 볼록이면 KKT 조건을 만족하는 조합은 곧 primal·dual 최적해 쌍이고 gap이 0이다. 볼록성으로 L(·,λ,ν)가 볼록이므로 stationarity가 전역 최소를 뜻하고, 상보 여유로 dual 값이 목적값과 같아진다.
+- 필요성: 강쌍대성이 성립하고 primal·dual 최적해가 달성되면, 볼록이 아니어도 미분가능한 문제의 최적해는 KKT 조건을 만족한다. 실제로 최적 $x$ 는 $L(\cdot,\lambda,\nu)$ 를 최소화하므로 기울기가 $0$ 이고, 목적값과 dual 값이 같다는 등식에서 $\lambda_i g_i$ 의 합이 $0$ 이며 각 항이 $0$ 이하이므로 모두 $0$ 이다.
+- 충분성: 문제가 볼록이면 KKT 조건을 만족하는 조합은 곧 primal·dual 최적해 쌍이고 gap이 $0$ 이다. 볼록성으로 $L(\cdot,\lambda,\nu)$ 가 볼록이므로 stationarity가 전역 최소를 뜻하고, 상보 여유로 dual 값이 목적값과 같아진다.
 
 따라서 Slater 조건을 만족하는 미분가능 볼록 문제에서 KKT 조건은 최적성의 필요충분조건이다[^2]. 비볼록 문제에서는 KKT 점이 최적해가 아닐 수 있고, 정칙성 조건(LICQ, MFCQ 등)이 없으면 최적해가 KKT 조건을 만족하지 않을 수도 있다.
 
@@ -97,13 +97,13 @@ $$
 L(x,\lambda)=x_1^2+x_2^2+\lambda\,(2-x_1-x_2)
 $$
 
-stationarity에서 2x_1=λ, 2x_2=λ이므로 x=(λ/2, λ/2)를 대입하면 dual function을 얻는다.
+stationarity에서 $2x_1=\lambda$ , $2x_2=\lambda$ 이므로 $x=(\lambda/2,\lambda/2)$ 를 대입하면 dual function을 얻는다.
 
 $$
 q(\lambda)=2\lambda-\frac{\lambda^2}{2}
 $$
 
-λ≥0에서 최대화하면 최적 승수는 2, d=2다. 상보 여유는 승수가 양수일 때 제약이 tight함을 요구하므로 최적해는 (1,1)이고 p=2가 되어 gap이 0이다. Slater 조건은 예컨대 (2,2)로 확인된다.
+$\lambda\ge 0$ 에서 최대화하면 최적 승수는 $2$ , $d=2$ 다. 상보 여유는 승수가 양수일 때 제약이 tight함을 요구하므로 최적해는 $(1,1)$ 이고 $p=2$ 가 되어 gap이 $0$ 이다. Slater 조건은 예컨대 $(2,2)$ 로 확인된다.
 
 ## 쓰임
 
