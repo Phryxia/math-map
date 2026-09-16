@@ -90,7 +90,7 @@ graph TD
 - [Lobachevsky 함수](lobachevsky-function.md): Fourier 급수가 쌍곡 부피를 계산한다
 - [Lebesgue 적분](lebesgue-integral.md): 적분을 측도로 다시 세운다
 - [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md): 복소미분이 해석성을 강제한다
-- [Hilbert 공간](hilbert-spaces.md), [Banach 공간과 세 기본정리](banach-spaces.md): 완비성을 무한차원 선형공간으로
+- [Hilbert 공간](hilbert-spaces.md), [Banach 공간](banach-spaces.md): 완비성을 무한차원 선형공간으로
 
 # 연관 문서
 

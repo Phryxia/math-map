@@ -104,7 +104,7 @@ $\dim V=n$ 인 $F$ 위의 벡터 공간은 기저를 고르면 $F^n$ 과 동형�
 ### 해석과 응용
 
 - [볼록성](convexity.md)
-- [Banach 공간과 세 기본정리](banach-spaces.md)
+- [Banach 공간](banach-spaces.md)
 - [오류정정부호](error-correcting-codes.md)
 - [논문: How Powerful are Graph Neural Networks?](gnn-expressivity.md)
 
