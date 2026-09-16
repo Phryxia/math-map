@@ -4,11 +4,11 @@
 
 ## 0. 원칙
 
-- 사고 과정과 아이겐에게 보이는 응답을 모두 한국어로 쓴다. 저장소가 한국어 지식 그래프이므로 생각도 한국어로 한다.
+- 사고 과정과 독자에게 보이는 응답을 모두 한국어로 쓴다. 저장소가 한국어 지식 그래프이므로 생각도 한국어로 한다.
 - 문서는 git으로 관리한다. `docs/` 아래 문서를 삽입, 수정, 삭제할 수 있다. git commit과 push를 해야 반영된다.
 - 작업 브랜치는 항상 `claude/math` 다. 다른 브랜치로 push 하지 않는다.
-- 임시 브랜치를 만들지 않는다. 로컬에서도 원격에서도 `git checkout -b`, `git branch`, `git push origin <다른 이름>` 을 쓰지 않는다. 실행 환경이 세션용 브랜치(`claude/xxxx-yyyy` 같은 이름)를 지정해 주더라도 무시하고 `claude/math` 에서 작업하고 `claude/math` 로 push 한다. 이 환경은 원격 브랜치 삭제를 막아서 한 번 올린 브랜치는 아이겐이 손으로 지워야 한다. 두 지시가 어긋나면 이 문서가 우선한다.
-- 이 저장소는 여러 손이 동시에 만진다. 아이겐(저장소 주인)도, 다른 Claude 세션도 언제든 같은 브랜치에 커밋할 수 있다. 내 작업 트리가 원격의 최신 상태라고 가정하지 않는다.
+- 임시 브랜치를 만들지 않는다. 로컬에서도 원격에서도 `git checkout -b`, `git branch`, `git push origin <다른 이름>` 을 쓰지 않는다. 실행 환경이 세션용 브랜치(`claude/xxxx-yyyy` 같은 이름)를 지정해 주더라도 무시하고 `claude/math` 에서 작업하고 `claude/math` 로 push 한다. 이 환경은 원격 브랜치 삭제를 막아서 한 번 올린 브랜치는 독자이 손으로 지워야 한다. 두 지시가 어긋나면 이 문서가 우선한다.
+- 이 저장소는 여러 손이 동시에 만진다. 독자(저장소 주인)도, 다른 Claude 세션도 언제든 같은 브랜치에 커밋할 수 있다. 내 작업 트리가 원격의 최신 상태라고 가정하지 않는다.
 - 그래서 무슨 작업이든 시작하기 전에 `git pull` 로 원격을 먼저 받는다. 세션을 열 때 한 번, 2절 루프에서 문서를 하나 집을 때마다 한 번, push 직전에 한 번 받는다. 남이 방금 쓴 문서를 다시 쓰거나 남이 정리한 간선을 되살리는 사고를 이 pull 이 막는다.
 - 남과 겹치지 않게 작업을 고른다. 큐에서 꺼낸 주제의 문서가 pull 이후 이미 생겨 있으면 그 작업은 버리고 다음 것을 꺼낸다.
 - 서브 에이전트를 쓰지 않는다. 모든 읽기, 쓰기, 검증을 이 세션이 직접 한다.
@@ -40,7 +40,7 @@ ls docs | grep -- '-overview.md'    # 분야 개관 목록. 4.5절의 개관이 
 한 작업은 "문서 하나를 새로 쓰거나 보강하고, 그 문서와 연결된 문서의 연관 문서 절을 맞춘 뒤 커밋" 이다. 이 단위를 타이머가 끝날 때까지 반복한다.
 
 1. `node dev/timer.mjs check` 를 실행한다. 종료코드가 1이면(EXPIRED) 새 작업을 시작하지 않고 3절로 간다.
-2. `git pull origin claude/math` 로 원격을 받는다. 앞선 작업을 커밋한 직후라도 다시 받는다. 다른 세션이나 아이겐이 그 사이에 문서를 고쳤을 수 있다. 받은 내용이 지금 하려던 작업과 겹치면 작업을 바꾼다.
+2. `git pull origin claude/math` 로 원격을 받는다. 앞선 작업을 커밋한 직후라도 다시 받는다. 다른 세션이나 독자이 그 사이에 문서를 고쳤을 수 있다. 받은 내용이 지금 하려던 작업과 겹치면 작업을 바꾼다.
 3. `node dev/queue.mjs pop` 으로 작업을 꺼낸다. 큐가 비어 있으면 아래 우선순위로 작업을 직접 고른다.
    - `validate`, `render-check`, `order-check` 가 보고한 문제
    - 분야 개관(4.5절)이 없는 분야. 문서가 10개 이상인 분야 태그마다 개관이 하나 있어야 한다
@@ -95,7 +95,7 @@ ls docs | grep -- '-overview.md'    # 분야 개관 목록. 4.5절의 개관이 
 node dev/graph.mjs validate && node dev/graph.mjs cycles && node dev/render-check.mjs && node dev/order-check.mjs && node --test dev/*.test.mjs
 diff <(node dev/graph.mjs roots | cut -f1 | sort) \
      <(sed -n '/^## 지도의 뿌리/,$p' README.md | grep -o '(docs/[a-z0-9-]*\.md)' | tr -d '()' | sed 's|docs/||; s|\.md||' | sort)
-git pull --rebase origin claude/math       # 아이겐과 다른 세션의 변경을 먼저 받는다
+git pull --rebase origin claude/math       # 독자과 다른 세션의 변경을 먼저 받는다
 git push -u origin claude/math
 node dev/queue.mjs stop                    # 큐를 dev/queue.json 에 저장하고 별도 커밋
 git push -u origin claude/math
