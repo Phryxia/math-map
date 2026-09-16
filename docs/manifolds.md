@@ -24,13 +24,13 @@ flowchart LR
 
 # 정의
 
-M을 위상공간, n을 음이 아닌 정수라 하자. M이 n차원 위상다양체(topological manifold)라는 것은 M이 Hausdorff이고 second countable이며 국소적으로 Euclidean이라는 뜻이다[^1]. 국소 Euclidean 조건은 다음과 같다.
+$M$ 을 위상공간, $n$ 을 음이 아닌 정수라 하자. $M$ 이 $n$ 차원 위상다양체(topological manifold)라는 것은 $M$ 이 Hausdorff이고 second countable이며 국소적으로 Euclidean이라는 뜻이다[^1]. 국소 Euclidean 조건은 다음과 같다.
 
 $$
 \forall p\in M\ \exists\, U\subseteq M \text{ 열린집합},\ p\in U,\ \exists\, \varphi:U\xrightarrow{\ \cong\ }\varphi(U)\subseteq\mathbb{R}^{n}
 $$
 
-여기서 화살표는 위상동형(homeomorphism)이고 상 집합은 R의 n차 곱공간의 열린집합이다. 쌍 (U, φ)를 chart, φ를 국소좌표계라 부른다. Hausdorff 조건은 점들을 분리할 수 있게 하고 second countable 조건은 공간이 지나치게 커지는 것을 막는다. 두 조건을 빼면 국소 Euclidean만으로는 원하는 정리가 성립하지 않는다.
+여기서 화살표는 위상동형(homeomorphism)이고 상 집합은 $\mathbb{R}^n$ 의 열린집합이다. 쌍 $(U,\varphi)$ 를 chart, $\varphi$ 를 국소좌표계라 부른다. Hausdorff 조건은 점들을 분리할 수 있게 하고 second countable 조건은 공간이 지나치게 커지는 것을 막는다. 두 조건을 빼면 국소 Euclidean만으로는 원하는 정리가 성립하지 않는다.
 
 M을 덮는 chart들의 모음을 atlas라 한다. 두 chart가 겹칠 때 좌표를 바꾸는 함수가 transition map이다.
 
@@ -42,7 +42,7 @@ $$
 
 atlas의 모든 transition map이 무한히 미분가능한 함수일 때 그 atlas를 smooth atlas라 한다. transition map은 Euclidean 공간의 열린집합 사이의 함수이므로 이 조건은 [미분](derivative.md)의 통상적 의미로 검사된다. 서로 합쳐도 여전히 smooth atlas가 되는 atlas들을 동일시하면 각 동일시 류에 극대 smooth atlas가 하나 있고, 이를 매끄러운 구조(smooth structure)라 한다. 위상다양체에 매끄러운 구조를 지정한 것이 smooth manifold다.
 
-M, N을 smooth manifold라 하자. 함수 F를 M에서 N으로 가는 매끄러운 사상이라 하는 것은 각 점에서 적절한 chart를 잡아 좌표로 표현한 합성이 매끄럽다는 뜻이다.
+$M$ , $N$ 을 smooth manifold라 하자. 함수 $F$ 를 $M$ 에서 $N$ 으로 가는 매끄러운 사상이라 하는 것은 각 점에서 적절한 chart를 잡아 좌표로 표현한 합성이 매끄럽다는 뜻이다.
 
 $$
 \psi\circ F\circ\varphi^{-1}\ \text{가 } C^{\infty}
@@ -56,7 +56,7 @@ $$
 T_pM=\bigl\{\,X:C^{\infty}(M)\to\mathbb{R}\ \big|\ X \text{ 는 선형},\ X(fg)=X(f)\,g(p)+f(p)\,X(g)\,\bigr\}
 $$
 
-이다. 오른쪽 조건이 Leibniz 규칙이다. 이는 [벡터 공간](vector-spaces.md)이고 차원은 n이며, chart (U, φ)의 좌표 x로부터 다음이 기저가 된다.
+이다. 오른쪽 조건이 Leibniz 규칙이다. 이는 [벡터 공간](vector-spaces.md)이고 차원은 $n$ 이며, chart $(U,\varphi)$ 의 좌표 $x$ 로부터 다음이 기저가 된다.
 
 $$
 \left.\frac{\partial}{\partial x^{1}}\right|_{p},\ \dots,\ \left.\frac{\partial}{\partial x^{n}}\right|_{p}
@@ -70,7 +70,7 @@ $$
 
 ## 정규값 정리
 
-F를 M에서 N으로 가는 매끄러운 사상, c를 N의 점이라 하자. F의 미분사상이 F의 역상의 모든 점에서 전사이면 c를 regular value라 하고, 이때 역상은 M의 부분다양체이며 차원은 다음과 같다[^1].
+$F$ 를 $M$ 에서 $N$ 으로 가는 매끄러운 사상, $c$ 를 $N$ 의 점이라 하자. $F$ 의 미분사상이 $F$ 의 역상의 모든 점에서 전사이면 $c$ 를 regular value라 하고, 이때 역상은 $M$ 의 부분다양체이며 차원은 다음과 같다[^1].
 
 $$
 \dim F^{-1}(c)=\dim M-\dim N
@@ -88,13 +88,13 @@ $$
 
 - 구면: 두 개의 chart로 덮을 수 있다(북극과 남극을 각각 제거하는 stereographic projection).
 - 원환면: 원의 곱공간이며 2차원 compact 다양체다.
-- 실사영공간: R의 n+1차 곱공간에서 원점을 지나는 직선들의 집합으로, n차원 compact 다양체다. 구면의 대칭점을 동일시한 몫공간으로도 얻어지며 [동치관계와 동치류](relations.md)의 전형적 사용이다.
+- 실사영공간: $\mathbb{R}^{n+1}$ 에서 원점을 지나는 직선들의 집합으로, $n$ 차원 compact 다양체다. 구면의 대칭점을 동일시한 몫공간으로도 얻어지며 [동치관계와 동치류](relations.md)의 전형적 사용이다.
 - 열린집합: Euclidean 공간의 임의의 열린집합은 그 자체로 다양체다.
 - 반례: 두 직선을 한 점에서 교차시킨 집합은 교차점 근처가 직선과 위상동형이 아니므로 다양체가 아니다.
 
 ## 매끄러운 구조는 유일하지 않을 수 있다
 
-차원 4 이하의 위상다양체에서는 매끄러운 구조가 (있으면) 본질적으로 유일하지만, R의 4차 곱공간에는 서로 미분동형이 아닌 매끄러운 구조가 비가산 개 있다. 또 7차원 구면에는 표준적이지 않은 매끄러운 구조가 존재한다(Milnor의 exotic sphere)[^2]. 위상적 정보와 미분적 정보가 다른 층위임을 보여주는 예다.
+차원 4 이하의 위상다양체에서는 매끄러운 구조가 (있으면) 본질적으로 유일하지만, $\mathbb{R}^4$ 에는 서로 미분동형이 아닌 매끄러운 구조가 비가산 개 있다. 또 7차원 구면에는 표준적이지 않은 매끄러운 구조가 존재한다(Milnor의 exotic sphere)[^2]. 위상적 정보와 미분적 정보가 다른 층위임을 보여주는 예다.
 
 ## compact 다양체
 
