@@ -12,7 +12,7 @@ $$
 
 양 끝은 NP-난해이고 가운데는 [반정부호 계획법](semidefinite-programming.md)으로 임의의 정밀도까지 계산된다. 샌드위치 정리라 불리는 이 결과가 조합 최적화에서 반정부호 완화를 쓴 첫 사례이며, 최대 절단의 0.878 근사보다 15 년 앞선다.
 
-$\vartheta$ 의 출처는 정보이론이다. Shannon 이 1956 년에 제기한 잡음 채널의 무오류 용량 문제에서 $C_5$ 의 답이 알려져 있지 않았고, $\vartheta$ 가 그 답이 $\sqrt5$ 임을 증명하는 도구로 나왔다.
+$\vartheta$ 의 출처는 정보이론이다. Shannon 이 1956 년에 무오류 용량을 정의하면서 $C_5$ 의 값을 결정하지 못했고[^1], Lovász 가 $\vartheta$ 를 도구로 그 값이 $\sqrt5$ 임을 증명했다[^2].
 
 # 직관
 
@@ -109,7 +109,7 @@ $$
 
 $\alpha(C_5\boxtimes C_5)=5$ 인 부호가 존재하므로 $\Theta(C_5)\ge\sqrt5$ 이고, 샌드위치 정리의 $\Theta(C_5)\le\sqrt5$ 와 합쳐 값이 확정된다.
 
-$C_7$ 의 Shannon 용량은 미해결이다. 상계 $\vartheta(C_7)\approx3.3177$ 과 하계 $3.2$ 근처 사이가 비어 있다.
+$C_7$ 의 Shannon 용량은 결정되지 않았다[^2]. 상계 $\vartheta(C_7)\approx3.3177$ 과 하계 $3.2$ 근처 사이가 비어 있다.
 
 ## 홀수 순환의 값
 
@@ -179,6 +179,9 @@ $\vartheta$ 를 연관 스킴 위의 부호에 적용하면 Delsarte 의 선형�
 ## 양자 문맥성
 
 그래프의 정점을 측정 결과로 보고 비호환 결과를 간선으로 연결하면 $\vartheta$ 가 문맥성 부등식의 최대 양자 위반값과 일치한다. Bell 부등식의 고전 한계가 $\alpha$ , 양자 한계가 $\vartheta$ , 상대론적 인과성만 요구한 한계가 분수 채색수에 대응한다.
+
+[^1]: C. E. Shannon, "The zero error capacity of a noisy channel", IRE Transactions on Information Theory 2 (1956), 8–19. 무오류 용량의 정의와 $C_5$ 가 미결로 남는다는 서술이 여기 있다.
+[^2]: L. Lovász, "On the Shannon capacity of a graph", IEEE Transactions on Information Theory 25 (1979), 1–7. $\vartheta$ 의 정의, $\Theta(C_5)=\sqrt5$ 의 증명, 그리고 $C_7$ 을 비롯한 큰 홀수 순환의 값이 결정되지 않는다는 서술이 있다.
 
 # 연관 문서
 
