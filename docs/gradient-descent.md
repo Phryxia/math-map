@@ -29,7 +29,7 @@ $$
 x_{k+1}=x_k-\eta\thinspace\nabla f(x_k),\qquad k=0,1,2,\dots
 $$
 
-$f$ 의 기울기가 $L\text{-Lipschitz}$($L\text{-smooth}$)라는 것은 다음을 뜻한다.
+$f$ 의 기울기가 $L\text{-Lipschitz}$ 인 것, 곧 $f$ 가 $L\text{-smooth}$ 인 것은 다음을 뜻한다.
 
 $$
 \left\lVert \nabla f(x)-\nabla f(y)\right\rVert\le L\left\lVert x-y\right\rVert\quad(\forall x,y)
