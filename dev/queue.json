@@ -1,23 +1,31 @@
 {
   "version": 1,
-  "savedAt": "2026-09-15T21:00:20.682Z",
-  "nextSeq": 303,
+  "savedAt": "2026-09-16T01:04:51.065Z",
+  "nextSeq": 309,
   "items": [
     {
-      "id": "3327a1f0",
-      "title": "수식 뒤 공백 규칙 위반 일괄 정리",
-      "priority": 80,
-      "note": "CLAUDE.md 4절(닫는 $ 뒤 공백 1개) 위반이 143 문서 447 군데 남았다(2026-09-15 회차 시작 시 211 문서 1101 군데). 하이픈 유형은 전부 처리했고 남은 것은 쉼표, 괄호, 마침표, 콜론, 볼드 별표 등 문맥 재작성이 필요한 유형이다. dev 스크립트에는 이 검사가 없으니 회차마다 인라인 수식 파서로 위반이 많은 문서를 뽑아 몇 개씩 처리",
-      "createdAt": "2026-09-15T21:00:02.022Z",
-      "seq": 301
+      "id": "aec5424a",
+      "title": "수식 안 LaTeX 문법 오류 전수 점검",
+      "priority": 90,
+      "note": "이번 회차에서 세 종류를 발견해 고쳤다. (1) 인라인 수식 안 미이스케이프 % 는 뒤 내용을 통째로 주석 처리한다(bayes 6, prime-number-theorem 1). (2) 집합 표기 중괄호를 \\{ \\} 로 쓰지 않으면 LaTeX 그룹으로 먹혀 괄호가 사라진다(dynamic-connectivity, functions, gnn-expressivity, linear-maps, uniform-convergence). (3) ker, for all, exists, INSERT 처럼 연산자와 양화사를 맨 알파벳으로 써서 이탤릭 곱으로 렌더링된다. 남은 유형으로 미이스케이프 & # 와 \\operatorname 없는 연산자 이름을 훑을 것",
+      "createdAt": "2026-09-16T00:53:27.323Z",
+      "seq": 306
     },
     {
-      "id": "7ae3ae1f",
-      "title": "인라인 코드블록에 든 수식 정리",
+      "id": "575e2f34",
+      "title": "인라인 코드블록에 든 수식 정리 (3차)",
       "priority": 70,
-      "note": "CLAUDE.md 4절은 인라인 코드에 수식을 넣지 말라고 한다. galois-connections 가 P,Q 와 f,g 와 x=y 를 백틱으로 쓰고 있다. 전체 문서에서 백틱 안 수식 기호를 찾아 인라인 LaTeX 로 옮길 것",
-      "createdAt": "2026-09-15T20:54:11.704Z",
-      "seq": 300
+      "note": "galois-connections 와 localization-rings 처리 완료. 남은 것: uniform-integrability 93, power-series 73, change-of-measure 70, planar-graphs 60, modules 52, rsa-cryptosystem 52, sylow-theorems 52, adjunctions 50, probabilistic-method 50 등 75 문서. localization-rings 에서 쓴 방법이 빠르다. 펜스 밖 백틱 내용을 전부 뽑아 빈도표를 만들고, ASCII 표기(Z, Q, ->, \\\\ , { }, Spec, ker)만 LaTeX 로 옮기는 치환표를 짠 뒤 일괄 변환하고, 변환 후 수식 공백 검사로 한글 조사가 붙은 자리를 잡아 손본다. ^{ } 같은 첨자 그룹을 이스케이프하지 않도록 주의",
+      "createdAt": "2026-09-16T01:04:36.394Z",
+      "seq": 308
+    },
+    {
+      "id": "3957b8f0",
+      "title": "수식 뒤 공백 규칙 회귀 점검",
+      "priority": 40,
+      "note": "2026-09-16 회차에 447 군데를 전부 정리해 현재 위반 0 이다. 새로 쓰거나 고친 문서에서 다시 새어 나오므로 회차마다 한 번 훑는다. 검사법: 코드 펜스와 $$ 블록과 인라인 코드를 마스킹한 뒤 인라인 $...$ 를 찾아 닫는 $ 뒤가 공백도 줄끝도 아니면 위반. dev/graph.mjs 에 이 검사를 넣어 달라는 요청이 큐에 따로 있다(f5e32679)",
+      "createdAt": "2026-09-16T01:02:59.382Z",
+      "seq": 307
     },
     {
       "id": "f5e32679",
@@ -26,14 +34,6 @@
       "note": "아이겐에게 요청. validate 가 링크와 대칭만 보고 CLAUDE.md 4절의 수식 표기 규칙(닫는 $ 뒤 공백 1개, 인라인 코드 안 수식 금지)은 검사하지 않는다. 회차마다 임시 파서를 새로 짜야 해서 낭비가 크다. 코드블록과 $$ 블록을 건너뛰는 인라인 수식 파서를 validate 에 넣어 달라",
       "createdAt": "2026-09-15T21:00:10.588Z",
       "seq": 302
-    },
-    {
-      "id": "7b667f23",
-      "title": "Riemann 곡면과 균일화 정리",
-      "priority": 8,
-      "note": "teichmuller-space 와 modular-curves 가 모두 전제하는데 문서가 없다. 복소구조와 쌍곡 계량의 동일시, 단순연결 곡면 세 종류, 곡면분류와 복소해석을 잇는 자리",
-      "createdAt": "2026-09-15T20:49:23.125Z",
-      "seq": 299
     },
     {
       "id": "b1f43504",
@@ -58,6 +58,14 @@
       "note": "teichmuller-space 아래. Dehn 비틀림 생성, 곡선복합체, 유사 Anosov 와 팽창률, 사상원환면이 쌍곡 3 다양체가 되는 정리",
       "createdAt": "2026-09-15T20:49:22.903Z",
       "seq": 297
+    },
+    {
+      "id": "fd3b5387",
+      "title": "준등각 사상과 Beltrami 방정식",
+      "priority": 6,
+      "note": "riemann-surfaces 와 teichmuller-space 아래. 팽창률, 가측 Riemann 사상 정리, Bers 매장. riemann-surfaces 본문 '어디로 이어지는가' 에서 언급만 하고 넘어갔다",
+      "createdAt": "2026-09-16T00:48:46.182Z",
+      "seq": 305
     },
     {
       "id": "a18bfa4f",
@@ -106,14 +114,6 @@
       "note": "chern-simons 와 instanton-floer-homology 아래. ASD 모듈라이, 대각화 정리, 이색 R^4, Seiberg-Witten 과의 대비",
       "createdAt": "2026-09-15T16:53:44.968Z",
       "seq": 293
-    },
-    {
-      "id": "1a689607",
-      "title": "준등각 사상과 Beltrami 방정식",
-      "priority": 5,
-      "note": "teichmuller-space 가 Teichmuller 거리 정의에 쓰는 도구인데 문서가 없다. 팽창률, 가측 Riemann 사상 정리, Bers 매장",
-      "createdAt": "2026-09-15T20:49:23.016Z",
-      "seq": 298
     },
     {
       "id": "50f81215",
