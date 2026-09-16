@@ -130,6 +130,7 @@ print(np.linalg.matrix_rank(dF(x)))  # 1 = dim N, 따라서 전사
 
 - [위상 공간](topology.md)
 - [미분](derivative.md)
+- [미분기하 개관](differential-geometry-overview.md)
 
 ## 더 알아보기
 

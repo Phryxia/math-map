@@ -136,6 +136,7 @@ print((1 / r**2) * 4 * np.pi, 2 * np.pi * 2)
 
 - [미분](derivative.md)
 - [내적 공간](inner-product-spaces.md)
+- [미분기하 개관](differential-geometry-overview.md)
 
 ## 더 알아보기
 

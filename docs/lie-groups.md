@@ -212,6 +212,7 @@ $$
 
 - [Lie 대수](lie-algebras.md)
 - [덮개공간](covering-spaces.md)
+- [미분기하 개관](differential-geometry-overview.md)
 
 ## 더 알아보기
 
