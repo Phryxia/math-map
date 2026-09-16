@@ -162,7 +162,7 @@ $K=\mathbb Q_p$ , $\pi=p$ , $f(X)=(1+X)^p-1$ 을 넣으면 표의 오른쪽 열�
 | $\mathrm{Gal}\cong(\mathcal O/\pi^n)^\times$ | $(\mathbb Z/p^n)^\times$ |
 | $K^{\mathrm{ab}}=K^{\mathrm{ur}}K_\pi$ | 국소 Kronecker–Weber |
 
-일반 $K$ 에서 Lubin–Tate 는 이 표의 왼쪽 열을 만든다. 국소 구성들을 이어 붙여 $K$ 의 대역 아벨 확대를 명시적으로 얻는 것이 Hilbert 의 12번 문제이고, $K=\mathbb Q$ 와 허수 이차체를 빼면 열려 있다.
+일반 $K$ 에서 Lubin–Tate 는 이 표의 왼쪽 열을 만든다. 국소 구성들을 이어 붙여 $K$ 의 대역 아벨 확대를 명시적으로 얻는 것이 Hilbert 의 12 번 문제이고, $K=\mathbb Q$ 와 허수 이차체를 뺀 수체에서는 그 구성이 알려져 있지 않다[^2].
 
 ## 분기 여과와의 정합성
 
@@ -275,6 +275,7 @@ $$
 - **국소 Langlands 대응.** $\mathrm{GL}_1$ 의 국소 Langlands 대응이 국소 상호법칙이다. $\mathrm{GL}\_n$ 으로 올린 진술을 Harris–Taylor 와 Henniart 가 증명했고, [Langlands 강령](langlands-program.md)의 국소 성분을 이룬다.
 
 [^1]: Jonathan Lubin, John Tate, *Formal Complex Multiplication in Local Fields*, Annals of Mathematics 81 (1965), 380–387. 형식군의 존재와 유일성은 Lemma 1 과 그 따름정리, 분할점의 $\mathcal O$ 가군 구조와 Galois 군 계산은 Theorem 2 다.
+[^2]: R. P. Langlands, *Some contemporary problems with origins in the Jugendtraum*, Mathematical Developments Arising from Hilbert Problems, Proc. Sympos. Pure Math. **28** (1976), 401–418. 유리수체와 허수 이차체 밖에서 Hilbert 의 12 번 문제가 풀리지 않은 채임을 전제로 그 너머의 접근을 논한다.
 
 # 연관 문서
 

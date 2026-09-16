@@ -117,7 +117,7 @@ $$
 
 - **꼬임.** 오른손 삼엽매듭은 $Kh^{3,7}=\mathbb Z/2$ 를 갖는다. 유리수 계수에서는 보이지 않고 Euler 지표에도 기여하지 않는다. 교대 매듭에서 꼬임의 분포는 Shumakovitch 가 기술했다.
 - **분리력.** Jones 다항식이 같은데 $Kh$ 가 다른 매듭 쌍이 있다. 다만 $Kh$ 도 매듭을 완전히 분류하지는 않는다.
-- **풀린 매듭 검출.** $Kh(K)$ 가 풀린 매듭의 것과 같으면 $K$ 는 풀린 매듭이다(Kronheimer–Mrowka, 2011). 증명은 조합적이지 않고 instanton 호몰로지와의 스펙트럼 열을 쓴다. Jones 다항식에 대한 같은 물음은 열려 있다.
+- **풀린 매듭 검출.** $Kh(K)$ 가 풀린 매듭의 것과 같으면 $K$ 는 풀린 매듭이다(Kronheimer–Mrowka, 2011). 증명은 조합적이지 않고 instanton 호몰로지와의 스펙트럼 열을 쓴다. Jones 다항식이 풀린 매듭을 검출하는지는 알려져 있지 않다[^5].
 - **교대 매듭.** 교대 매듭의 $Kh$ 는 $j-2i$ 가 두 값에만 실리고 그 두 대각선 위의 정보는 Jones 다항식과 행렬식으로 결정되므로 새 정보가 없다. 새 정보는 비교대 매듭에서 나온다.
 
 ## 4 차원 정보
@@ -128,7 +128,7 @@ $\mathbb R^3\times[0,1]$ 안의 매끄러운 곡면 $\Sigma$ 가 $K_0$ 와 $K_1$
 - $s$ 는 준동형 $\mathcal C\to2\mathbb Z$ 다. $\mathcal C$ 는 콩코던스 군.
 - 양의 매듭에서 등호가 성립하므로 $(p,q)$ 원환 매듭의 매끄러운 4 차원 종수가 $(p-1)(q-1)/2$ 라는 **Milnor 추측**이 따라온다. 원래 증명은 게이지 이론(Kronheimer–Mrowka)이었고 Rasmussen 의 증명은 조합적이다.
 - $s$ 와 Ozsváth–Szabó 의 $\tau$ 는 알려진 예에서 $s=2\tau$ 를 만족하다가 Hedden–Ording 의 반례로 분리되었다.
-- Freedman–Gompf–Morrison–Walker 는 $s$ 로 4 차원 매끄러운 Poincaré 추측의 반례 후보를 검사하려 했다. 계산은 후보를 모두 통과시켰고, 추측은 여전히 열려 있다.
+- Freedman–Gompf–Morrison–Walker 는 $s$ 로 4 차원 매끄러운 Poincaré 추측의 반례 후보를 검사하려 했다. 계산은 후보를 모두 통과시켜 $s$ 로는 반례를 가려내지 못했다[^6].
 
 ## 계산
 
@@ -345,7 +345,8 @@ $Kh^{3,7}=\mathbb Z/2$ 는 Euler 지표에 기여하지 않으므로 Jones 다�
 [^2]: D. Bar-Natan, *On Khovanov's categorification of the Jones polynomial*, Algebr. Geom. Topol. 2 (2002). 정육면체 구성과 계산을 정리한 표준 참고문헌.
 [^3]: J. Rasmussen, *Khovanov homology and the slice genus*, Invent. Math. 182 (2010). $s$ 불변량과 Milnor 추측의 조합적 증명.
 [^4]: E. S. Lee, *An endomorphism of the Khovanov invariant*, Adv. Math. 197 (2005). 변형 이론과 $2^\ell$ 정리.
-[^5]: P. B. Kronheimer, T. S. Mrowka, *Khovanov homology is an unknot-detector*, Publ. IHES 113 (2011).
+[^5]: P. B. Kronheimer, T. S. Mrowka, *Khovanov homology is an unknot-detector*, Publ. IHES 113 (2011). Jones 다항식이 풀린 매듭을 검출하는지는 답이 없는 물음으로 제시되어 있다.
+[^6]: M. Freedman, R. Gompf, S. Morrison, K. Walker, *Man and machine thinking about the smooth 4-dimensional Poincaré conjecture*, Quantum Topology **1** (2010), 171–208. 반례 후보를 $s$ 불변량으로 검사한 계산과 그 결과를 싣는다.
 
 # 연관 문서
 

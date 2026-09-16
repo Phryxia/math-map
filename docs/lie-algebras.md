@@ -141,7 +141,7 @@ $$
 \mathfrak g=\mathfrak g_1\oplus\cdots\oplus\mathfrak g_r
 $$
 
-일반 Lie 대수는 Levi 분해 $\mathfrak g=\mathrm{rad}\mathfrak g\rtimes\mathfrak s$ 로 가해 부분과 반단순 부분으로 나뉜다. 가해 쪽의 분류는 알려져 있지 않고, 이론은 반단순 쪽에 집중된다.
+일반 Lie 대수는 Levi 분해 $\mathfrak g=\mathrm{rad}\mathfrak g\rtimes\mathfrak s$ 로 가해 부분과 반단순 부분으로 나뉜다. 분류는 반단순 쪽에서 근계로 완결되고, 가해 쪽은 낮은 차원에서만 목록이 있다.
 
 ## 근계와 Dynkin 도표
 

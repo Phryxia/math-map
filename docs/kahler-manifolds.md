@@ -216,7 +216,7 @@ Hodge 구조로 추상화하면 다양체의 족에서 Hodge 분해의 변화를
 
 ## Hodge 추측
 
-$H^{2k}(M;\mathbb Q)\cap H^{k,k}$ 의 원소를 Hodge 류라 한다. 대수적 부분다양체는 언제나 Hodge 류를 준다. 모든 Hodge 류가 대수적 순환의 유리계수 결합인가를 묻는 것이 **Hodge 추측**이며 밀레니엄 문제의 하나다. $k=1$ 인 경우는 Lefschetz 의 $(1,1)$ 정리로 참이고 일반적으로는 열려 있다.
+$H^{2k}(M;\mathbb Q)\cap H^{k,k}$ 의 원소를 Hodge 류라 한다. 대수적 부분다양체는 언제나 Hodge 류를 준다. 모든 Hodge 류가 대수적 순환의 유리계수 결합인가를 묻는 것이 **Hodge 추측**이며 밀레니엄 문제의 하나다. $k=1$ 인 경우는 Lefschetz 의 $(1,1)$ 정리로 참이고, 일반적인 $k$ 에서는 판정되지 않았다[^1].
 
 ## Calabi–Yau 와 물리
 
@@ -229,6 +229,8 @@ $c_1=0$ 인 콤팩트 Kähler 다양체에 Ricci 평탄한 Kähler 계량이 유
 Simpson 등은 기본군의 표현과 다양체 위의 정칙 대상을 대응시켰다. 평탄한 접속, Higgs 다발, 조화 사상이 같은 대상의 세 기술이며 조화형식의 존재 정리가 다리 역할을 한다.
 
 Kähler 다양체의 기본군에는 제약이 따른다. 자유군 $F_n$ 은 $n\ge2$ 이면 콤팩트 Kähler 다양체의 기본군이 될 수 없다. 어떤 군이 Kähler 군인가가 이 이론의 주제다.
+
+[^1]: P. Deligne, *The Hodge Conjecture*, Clay Mathematics Institute 공식 문제 설명. https://www.claymath.org/wp-content/uploads/2022/06/hodge.pdf 밀레니엄 문제의 하나로 분류되어 있으며 $(1,1)$ 정리 밖의 경우가 판정되지 않았음을 밝힌다.
 
 # 연관 문서
 
