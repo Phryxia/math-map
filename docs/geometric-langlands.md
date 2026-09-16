@@ -94,7 +94,7 @@ $X$ 를 $\mathbb C$ 위의 매끄러운 사영 곡선, $G$ 를 환원군, $\hat 
 
 | 자기동형 쪽 | Galois 쪽 |
 |---|---|
-| $\mathrm{Bun}_G$: $X$ 위 $G$ 다발의 모듈라이 스택 | $\mathrm{LocSys}_{\hat G}$: $X$ 위 $\hat G$ 국소계의 스택 |
+| $\mathrm{Bun}_G$ 은 $X$ 위 $G$ 다발의 모듈라이 스택 | $\mathrm{LocSys}_{\hat G}$ 는 $X$ 위 $\hat G$ 국소계의 스택 |
 | $\mathrm{D}\text{-}\mathrm{mod}(\mathrm{Bun}_G)$ | $\mathrm{IndCoh}_{\mathcal N}(\mathrm{LocSys}_{\hat G})$ |
 | Hecke 함자 $H^V_x$ | $V$ 를 통한 텐서 $\otimes V_\sigma$ |
 
@@ -130,7 +130,7 @@ $G=\mathrm{GL}_1$ 이면 $\mathrm{Bun}_{\mathrm{GL}_1}=\mathrm{Pic}(X)$ 이고 $
 
 | 시기 | 결과 |
 |---|---|
-| 1980년대 | Drinfeld: $\mathrm{GL}_2$, 고유층의 구성 |
+| 1980년대 | Drinfeld 의 $\mathrm{GL}_2$ 와 고유층의 구성 |
 | 1990–2000년대 | Laumon, Frenkel–Gaitsgory–Vilonen: $\mathrm{GL}_n$ 의 고유층 존재 |
 | 2002 | Beilinson–Drinfeld: $\hat G$ 의 여정칙 국소계에 대한 구성(공형장론 경유) |
 | 2015 | Arinkin–Gaitsgory: 받침 조건을 포함한 올바른 범주적 진술 |
@@ -170,7 +170,7 @@ Kapustin–Witten 은 4차원 $\mathcal N=4$ 초대칭 게이지 이론을 곡�
 ## 남은 방향
 
 - **분기 경우.** 곡선의 유한 개 점에 준위 구조를 허용하는 대응. 국소 기하 Langlands 와 얽혀 있다.
-- **표수 $p$.** $\mathbb F_p$ 계수 층에서는 편향층의 성질이 달라 진술 자체가 바뀐다.
+- **표수 $p$ 의 경우.** $\mathbb F_p$ 계수 층에서는 편향층의 성질이 달라 진술 자체가 바뀐다.
 - **양자 변형.** $\hat G$ 를 양자군으로 바꾼 대응. Gaitsgory–Lurie 의 작업이 있다.
 - **$\mathrm{Spec}\,\mathbb Z$ 로의 복귀.** 유비의 왼쪽 끝으로 돌아가는 길은 여전히 열려 있다. 기하적 도구가 없는 자리에서 무엇이 대응물인지가 이 분야의 궁극적 질문이다.
 

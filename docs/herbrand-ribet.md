@@ -18,7 +18,7 @@ $$
 \bar\rho_f\sim\begin{pmatrix}1&*\\0&\omega^{k-1}\end{pmatrix}
 $$
 
-꼴의 **가약이지만 불분해**인 표현이 된다. $*$ 가 0 이 아니라는 것이 핵심이고, 그 $*$ 가 정의하는 확대가 바로 류군의 비자명한 원소다. 해석적 조건($p\mid B_k$)이 기하적 대상(모듈러 형식)을 거쳐 산술적 원소(이데알류)로 번역된다.
+꼴의 **가약이지만 불분해**인 표현이 된다. $*$ 가 0 이 아니라는 것이 핵심이고, 그 $*$ 가 정의하는 확대가 바로 류군의 비자명한 원소다. 해석적 조건 $p\mid B_k$ 가 기하적 대상(모듈러 형식)을 거쳐 산술적 원소(이데알류)로 번역된다.
 
 이 논법은 한 번 쓰고 버려진 기교가 아니다. Mazur–Wiles 의 [Iwasawa 주추측](iwasawa-main-conjecture.md) 증명이 이것을 탑 전체로 밀어 올린 것이고, Skinner–Urban 의 타원곡선 주추측도 같은 뼈대를 쓴다. **"군이 크다" 를 증명하려면 합동으로 표현을 만들어라**가 이 계열의 표어다.
 
@@ -153,7 +153,7 @@ $k$ 가 짝수이므로 $1-k$ 는 홀수다. 즉 이 정리는 류군의 **홀�
 
 ## 무게의 범위
 
-$2\le k\le p-3$ 이라는 제한은 본질적이다. $k=p-1$ 이면 $\omega^{k-1}$ 이 자명해져 표현이 $\begin{pmatrix}1&*\\0&1\end{pmatrix}$ 가 되고 위 논법이 무너진다. 실제로 von Staudt–Clausen 에 의해 $(p-1)\mid k$ 이면 $B_k$ 의 분모가 $p$ 를 포함하므로 "$p\mid B_k$" 자체가 다른 의미가 된다. [Bernoulli 수](bernoulli-numbers.md)의 $p$ 진 성질이 정리의 가정에 정확히 반영되어 있다.
+$2\le k\le p-3$ 이라는 제한은 본질적이다. $k=p-1$ 이면 $\omega^{k-1}$ 이 자명해져 표현이 $\begin{pmatrix}1&*\\0&1\end{pmatrix}$ 가 되고 위 논법이 무너진다. 실제로 von Staudt–Clausen 에 의해 $(p-1)\mid k$ 이면 $B_k$ 의 분모가 $p$ 를 포함하므로 $p\mid B_k$ 라는 말 자체가 다른 의미가 된다. [Bernoulli 수](bernoulli-numbers.md)의 $p$ 진 성질이 정리의 가정에 정확히 반영되어 있다.
 
 ## Mazur–Wiles 로 가는 길
 
@@ -179,7 +179,7 @@ $p$ 가 비정칙일 때 어느 성분이 비자명한지가 Herbrand–Ribet �
 
 Skinner–Urban 은 $\mathrm{GL}_2$ 의 Eisenstein 급수를 $\mathrm{GSp}_4$ 로 올려 타원곡선 주추측의 한쪽 부등식을 얻었다. 구조는 Ribet 과 같다. 합동으로 가약 표현을 만들고, 불분해성에서 Selmer 군의 원소를 뽑아내며, 그 개수를 $L$ 함수가 예측하는 만큼 확보한다. **Eisenstein 합동은 Selmer 군에 원소를 공급하는 표준 기계**이고, Euler 계가 원소를 제거하는 표준 기계다. 두 기계가 만나는 곳에서 주추측이 증명된다.
 
-[^1]: K. Ribet, *A modular construction of unramified* $p$*-extensions of* $\mathbb Q(\mu_p)$, Invent. Math. **34** (1976), 151–162. 해설은 L. Washington, *Introduction to Cyclotomic Fields* (2판) 15 장과 B. Mazur, *Modular curves and the Eisenstein ideal*, Publ. IHES **47** (1977). Mazur–Wiles 는 Invent. Math. **76** (1984), Skinner–Urban 은 Invent. Math. **195** (2014).
+[^1]: K. Ribet, *A modular construction of unramified p-extensions of* $\mathbb Q(\mu_p)$ (Invent. Math. **34**, 1976), 151–162. 해설은 L. Washington, *Introduction to Cyclotomic Fields* (2판) 15 장과 B. Mazur, *Modular curves and the Eisenstein ideal*, Publ. IHES **47** (1977). Mazur–Wiles 는 Invent. Math. **76** (1984), Skinner–Urban 은 Invent. Math. **195** (2014).
 
 # 연관 문서
 
