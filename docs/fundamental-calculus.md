@@ -24,12 +24,6 @@ $$
 
 미분과 적분이 서로의 역이라는 말은 편리한 요약이지만 정확하지 않다. 두 진술의 가정과 결론이 다르다.
 
-```mermaid
-graph LR
-  F["f 연속"] -->|"제1 형태"| A["F(x)=∫ₐˣ f 는 미분가능,<br/>F' = f"]
-  G["f 적분가능, G' = f<br/>인 G 가 존재"] -->|"제2 형태"| B["∫ₐᵇ f = G(b) − G(a)"]
-```
-
 제1 형태는 원시함수의 존재를 주장한다. 연속함수에는 반드시 원시함수가 있다는 뜻이다. 제2 형태는 원시함수가 이미 있다고 가정하고 계산 공식을 준다. 원시함수가 존재하지만 초등함수로 적을 수 없는 경우가 흔하므로, 제1 형태가 성립한다고 해서 제2 형태로 실제 계산이 되는 것은 아니다.
 
 # 정의
@@ -108,7 +102,6 @@ def antiderivative_check(f, G, a, b, n=200000):
     h = (b - a) / n
     riemann = h * sum(f(a + (i + 0.5) * h) for i in range(n))
     return riemann, G(b) - G(a)
-
 
 import math
 print(antiderivative_check(lambda t: 2 * t, lambda t: t * t, 0, 3))

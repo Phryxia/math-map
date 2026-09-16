@@ -24,13 +24,6 @@ $\mathbb{R}$ 과 $(0,1)$ 은 위상동형이다. 같은 열린집합 구조를 �
 
 완비성을 쓰는 논증은 언제나 세 단계다.
 
-```mermaid
-graph LR
-  A["근사열 구성<br/>xₙ₊₁ = Φ(xₙ)"] --> B["오차 추정<br/>d(xₙ, xₘ) 가 작아짐"]
-  B --> C["완비성<br/>극한 x* 존재"]
-  C --> D["확인<br/>x* 가 원하는 식을 만족"]
-```
-
 근삿값을 만드는 방법을 정하고, 항들 사이 거리가 줄어든다는 추정을 얻고, 완비성으로 극한을 꺼낸 뒤, 그 극한이 원하는 방정식을 만족하는지 확인한다. [Banach 부동점 정리](banach-fixed-point.md)는 이 절차를 정리 하나로 포장한 것이다.
 
 # 정의
@@ -87,14 +80,12 @@ def tail_spread(partial, N):
     tail = partial[N:]
     return max(tail) - min(tail)
 
-
 def partials(term, n):
     out, s = [], 0.0
     for k in range(1, n + 1):
         s += term(k)
         out.append(s)
     return out
-
 
 geom = partials(lambda k: 0.5 ** k, 20000)
 harmonic = partials(lambda k: 1 / k, 20000)

@@ -124,7 +124,7 @@ goal:
   forall e'. (forall x. m(x,e') = x) -> e' = e
 ```
 
-고전 논리 대신 증명의 구성성을 요구하면 [직관주의 논리](intuitionistic-logic.md)가 되고, 그때 의미론은 구조 하나가 아니라 [Kripke 모형](kripke-semantics.md)의 족이 된다.
+고전 논리 대신 증명의 구성성을 요구하면 [직관주의 논리](intuitionism.md)가 되고, 그때 의미론은 구조 하나가 아니라 [Kripke 모형](kripke-semantics.md)의 족이 된다.
 
 [^1]: Gödel's completeness theorem, Wikipedia. https://en.wikipedia.org/wiki/G%C3%B6del%27s_completeness_theorem
 [^2]: Compactness Theorem, Internet Encyclopedia of Philosophy. https://iep.utm.edu/compactness/

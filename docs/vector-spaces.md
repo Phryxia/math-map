@@ -94,7 +94,6 @@ $\dim V = n$ 인 실수 벡터 공간은 기저를 고르는 순간 $\mathbb R^n
 ## 선수지식
 
 - [함수](functions.md)
-- [명제와 증명](proofs.md)
 
 ## 더 알아보기
 
