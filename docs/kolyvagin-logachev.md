@@ -29,7 +29,7 @@ $L$ 함수가 Euler 계의 시동을 걸고 Euler 계가 Selmer 군을 누른다
 
 ## 순위 2 의 한계
 
-Heegner 점은 한 점만 준다. 계수가 2 이상이면 독립인 점을 둘 이상 만들어야 하는데 그런 구성이 알려져 있지 않고, 그래서 BSD 가 순위 1 에서 멈춰 있다.
+Heegner 점은 한 점만 준다. 계수가 2 이상이면 독립인 점을 둘 이상 만들어야 하는데 그런 구성이 없어서 이 방법은 순위 1 에서 멈춘다.
 
 ```mermaid
 flowchart TD
@@ -83,10 +83,10 @@ $J_e$ 는 그런 $A_f$ 들로만 이루어지므로 $J_e(\mathbb Q)$ 가 유한�
 | --- | --- |
 | 0 | 대수 순위 0, $\text{Ш}$ 유한 (Kolyvagin) |
 | 1 | 대수 순위 1, $\text{Ш}$ 유한, Heegner 점이 생성 |
-| $\ge2$ | 열림 |
+| $\ge2$ | 증명되지 않음[^2] |
 | BSD 공식의 정확한 등식 | 순위 0, 1 에서도 부분적 |
 
-순위와 계수가 같다는 것까지가 알려진 범위이고, $\text{Ш}$ 의 위수와 주기와 조절자를 포함한 정확한 공식은 특정 상황에서만 증명되어 있다. 대수 순위가 0 이면 $L(E,1)\ne0$ 이라는 반대 방향은 열려 있다.
+순위와 계수가 같다는 것까지가 알려진 범위이고, $\text{Ш}$ 의 위수와 주기와 조절자를 포함한 정확한 공식은 특정 상황에서만 증명되어 있다. 대수 순위가 0 이면 $L(E,1)\ne0$ 이라는 반대 방향은 증명되지 않았다[^2].
 
 ## 계산적 의미
 
@@ -107,6 +107,7 @@ Merel 의 증명은 위 사실을 차수 $d$ 점에 적용한다. 대칭곱 $X_1
 Kolyvagin 의 Euler 계가 Selmer 군의 크기를 위에서 누르는 데 비해 [Iwasawa 주추측](iwasawa-main-conjecture.md)은 특성 아이디얼의 등식을 준다. 두 접근은 Euler 계와 $L$ 값이라는 같은 재료를 쓰고 목표가 다르며, 타원곡선의 Iwasawa 주추측 증명에서 Kolyvagin 의 방법이 한쪽 포함관계를 담당한다. 부등식 둘을 양쪽에서 만나게 하는 것이 이 분야의 표준 전략이다.[^1]
 
 [^1]: V. A. Kolyvagin, *Finiteness of $E(\mathbb Q)$ and $\text{Ш}(E,\mathbb Q)$ for a subclass of Weil curves*, Izv. Akad. Nauk SSSR (1988), 그리고 V. A. Kolyvagin, D. Yu. Logachev, *Finiteness of the Shafarevich–Tate group and the group of rational points for some modular abelian varieties*, Leningrad Math. J. 1 (1990). 해설은 B. Gross, *Kolyvagin's work on modular elliptic curves* (1991) 와 K. Rubin, *Euler Systems* (2000). 겨냥 몫의 정의와 성질은 L. Merel 의 1996 년 논문 2 절에 있다.
+[^2]: A. Wiles, *The Birch and Swinnerton-Dyer Conjecture*, Clay Mathematics Institute 공식 문제 설명. BSD 추측 가운데 순위 0 과 1 에서 알려진 부분과 남은 부분을 정리한다. https://www.claymath.org/wp-content/uploads/2022/06/birchswin.pdf
 
 # 연관 문서
 
