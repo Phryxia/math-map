@@ -8,9 +8,9 @@ Galois 이론은 [체의 확대](field-extensions.md)를 [군](groups.md)으로 
 
 # 직관
 
-Q(√2)의 원소 a+b√2에서 √2를 -√2로 바꾸는 사상은 덧셈과 곱셈을 보존한다. x^2-2의 두 근을 맞바꾸는 이 조작이 확대의 유일한 비자명 대칭이고, 따라서 Galois 군은 위수 2다. 중간체가 없다는 사실이 부분군이 두 개뿐이라는 사실과 짝을 이룬다.
+$\mathbb Q(\sqrt2)$ 의 원소 $a+b\sqrt2$ 에서 $\sqrt2$ 를 $-\sqrt2$ 로 바꾸는 사상은 덧셈과 곱셈을 보존한다. $x^2-2$ 의 두 근을 맞바꾸는 이 조작이 확대의 유일한 비자명 대칭이고, 따라서 Galois 군은 위수 2 다. 중간체가 없다는 사실이 부분군이 두 개뿐이라는 사실과 짝을 이룬다.
 
-Q(√2,√3)에서는 √2와 √3의 부호를 독립적으로 뒤집을 수 있어 대칭이 네 개다. 부분군 격자와 중간체 격자는 위아래가 뒤집힌 같은 그림이다.
+$\mathbb Q(\sqrt2,\sqrt3)$ 에서는 $\sqrt2$ 와 $\sqrt3$ 의 부호를 독립적으로 뒤집을 수 있어 대칭이 네 개다. 부분군 격자와 중간체 격자는 위아래가 뒤집힌 같은 그림이다.
 
 ```mermaid
 graph TD
@@ -90,7 +90,7 @@ $$
 
 ## 예제
 
-Q(√2,√3)/Q는 (x^2-2)(x^2-3)의 분해체이므로 Galois이고 차수가 4다. Galois 군은 부호 뒤집기 두 개가 생성하는 Klein 4-군이다.
+$\mathbb Q(\sqrt2,\sqrt3)/\mathbb Q$ 는 $(x^2-2)(x^2-3)$ 의 분해체이므로 Galois 이고 차수가 4 다. Galois 군은 부호 뒤집기 두 개가 생성하는 Klein 4-군이다.
 
 $$
 \mathrm{Gal}(\mathbb{Q}(\sqrt2,\sqrt3)/\mathbb{Q})\cong \mathbb{Z}/2\mathbb{Z}\times\mathbb{Z}/2\mathbb{Z}
@@ -104,7 +104,7 @@ $$
 \mathrm{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)\cong\mathbb{Z}/n\mathbb{Z}
 $$
 
-부분군은 n의 약수 m에 대응하고 그 고정체가 부분체 F_(p^m)이다.
+부분군은 $n$ 의 약수 $m$ 에 대응하고 그 고정체가 부분체 $\mathbb{F}_{p^m}$ 이다.
 
 ## 가해성
 
