@@ -49,10 +49,10 @@ node dev/graph.mjs leaves           # 더 알아보기가 빈 문서
    ```
    `CYCLE` 이 나오면 그 간선은 넣지 않는다. 방향이 틀렸는지 먼저 의심한다.
 7. 간선은 양쪽에 적는다. 자식 문서의 `## 선수지식` 에 부모를, 부모 문서의 `## 더 알아보기` 에 자식을 적는다. 한쪽만 적으면 `validate` 가 ASYMMETRIC 으로 잡는다.
-8. maximal 요소가 바뀌었으면 루트 `README.md` 의 목록을 맞춘다. 새 문서를 쓰면 그 문서가 maximal 로 들어오고, 기존 maximal 문서에 자식을 달면 그 문서는 빠진다. 아래 diff 가 아무것도 내놓지 않아야 한다. 규칙은 7절.
+8. minimal 요소가 바뀌었으면 루트 `README.md` 의 목록을 맞춘다. minimal 은 선수지식이 없는 문서이고 5절에 따라 새로 만들지 않으니, 목록이 바뀌었다면 간선을 잘못 지웠을 가능성부터 의심한다. 아래 diff 가 아무것도 내놓지 않아야 한다. 규칙은 7절.
    ```bash
-   diff <(node dev/graph.mjs leaves | cut -f1 | sort) \
-        <(sed -n '/^## 지도의 경계/,$p' README.md | grep -o '(docs/[a-z0-9-]*\.md)' | tr -d '()' | sed 's|docs/||; s|\.md||' | sort)
+   diff <(node dev/graph.mjs roots | cut -f1 | sort) \
+        <(sed -n '/^## 지도의 뿌리/,$p' README.md | grep -o '(docs/[a-z0-9-]*\.md)' | tr -d '()' | sed 's|docs/||; s|\.md||' | sort)
    ```
 9. 검증한다. 셋 다 종료코드 0 이어야 한다.
    ```bash
@@ -72,8 +72,8 @@ node dev/graph.mjs leaves           # 더 알아보기가 빈 문서
 
 ```bash
 node dev/graph.mjs validate && node dev/graph.mjs cycles && node --test dev/*.test.mjs
-diff <(node dev/graph.mjs leaves | cut -f1 | sort) \
-     <(sed -n '/^## 지도의 경계/,$p' README.md | grep -o '(docs/[a-z0-9-]*\.md)' | tr -d '()' | sed 's|docs/||; s|\.md||' | sort)
+diff <(node dev/graph.mjs roots | cut -f1 | sort) \
+     <(sed -n '/^## 지도의 뿌리/,$p' README.md | grep -o '(docs/[a-z0-9-]*\.md)' | tr -d '()' | sed 's|docs/||; s|\.md||' | sort)
 git pull --rebase origin claude/math       # 아이겐과 다른 세션의 변경을 먼저 받는다
 git push -u origin claude/math
 node dev/queue.mjs stop                    # 큐를 dev/queue.json 에 저장하고 별도 커밋
@@ -146,14 +146,13 @@ rebase 충돌이 나면 문서 내용은 원격 쪽을 우선하고 내 변경�
 
 ## 7. README 유지
 
-루트 `README.md` 는 저장소의 첫 화면이고, 그 "지도의 경계" 절은 그래프의 maximal 요소 전부를 담는다. maximal 요소는 더 알아보기가 비어 있는 문서, 곧 `node dev/graph.mjs leaves` 가 내놓는 문서다.
+루트 `README.md` 는 저장소의 첫 화면이다. "지도의 뿌리" 절은 그래프의 minimal 요소 전부를 담는다. minimal 요소는 선수지식이 비어 있는 문서, 곧 `node dev/graph.mjs roots` 가 내놓는 문서다. 지금은 `sets` 와 `proofs` 둘뿐이다.
 
-목록이 바뀌는 경우는 정해져 있다. 새 문서를 쓰면 그 문서가 목록에 들어온다. 기존 maximal 문서에 자식을 달면 그 문서가 목록에서 빠진다. 문서를 지우면 그 문서가 빠지고, 자식을 모두 잃은 부모가 새로 들어온다. 어느 경우든 그 회차의 커밋에서 README 를 함께 고친다.
+5절에 따라 새 루트는 만들지 않으므로 이 목록은 평소에 움직이지 않는다. 그래도 매 회차 확인한다. 문서를 지우거나 간선을 고치다가 어떤 문서의 선수지식이 통째로 사라지면 그 문서가 조용히 minimal 로 올라오고, 이는 대개 실수다. 2절 8단계의 diff 에 새 id 가 뜨면 README 에 추가하기 전에 그 문서의 선수지식부터 복구할지 판단한다.
 
 - 링크 형식은 `- [문서 제목](docs/<id>.md)` 다. `docs/` 접두사가 붙는 점이 문서끼리의 링크와 다르다. README 가 저장소 루트에 있기 때문이다.
-- 분야 묶음은 수론, 대수와 표현론, 기하와 위상, 해석, 확률과 통계, 조합과 그래프, 논리와 기초, 계산과 최적화 여덟 개다. 문서의 첫 태그를 따라 넣되, 첫 태그가 주제를 잘못 대표하면 내용에 맞는 묶음에 넣는다. 묶음 자체는 늘리지 않는다.
-- 묶음 안에서는 제목을 한국어 기준으로 정렬한다.
-- "구조" 절의 문서 수, 간선 수, 태그 수와 "지도의 경계" 절의 maximal 개수도 같이 맞춘다. `node dev/graph.mjs nodes`, `edges`, `tags` 의 마지막 줄이 각각의 개수를 알려준다.
+- 목록은 id 순으로 정렬한다. 항목이 적어 분야로 묶지 않는다.
+- "구조" 절의 문서 수, 간선 수, 태그 수는 문서를 더하거나 지운 회차마다 맞춘다. `node dev/graph.mjs nodes`, `edges`, `tags` 의 마지막 줄이 각각의 개수를 알려준다.
 
 README 의 링크는 DAG 간선이 아니다. 여기서 무엇을 더하거나 빼도 그래프 구조는 달라지지 않고 `validate` 도 잡아주지 않는다. 그래서 2절 8단계의 diff 로 직접 확인한다. 출력이 비어야 맞는 상태다.
 
