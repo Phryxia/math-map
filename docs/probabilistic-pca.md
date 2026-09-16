@@ -41,7 +41,7 @@ $z$ 의 분포가 $N(0,I)$ 여서 회전에 대해 불변이므로, $W$ 를 $WR$
 
 ## 모형
 
-$z \in \mathbb R^q$, $x \in \mathbb R^d$, $q < d$ 로 두고 다음을 가정한다.
+$z \in \mathbb R^q$ 와 $x \in \mathbb R^d$ 와 $q < d$ 로 두고 다음을 가정한다.
 
 $$
 z\sim N(0,I_q),\qquad x\mid z\ \sim\ N(Wz+\mu,\ \sigma^2I_d)
@@ -53,7 +53,7 @@ $$
 x\sim N(\mu,\ C),\qquad C=WW^{\mathsf T}+\sigma^2I_d
 $$
 
-모수는 $W \in \mathbb R^{d\times q}$, $\mu$, $\sigma^2$ 이며, 자유도는 회전 불변성을 뺀 값이다.
+모수는 $W \in \mathbb R^{d\times q}$ 와 $\mu$ 와 $\sigma^2$ 이며, 자유도는 회전 불변성을 뺀 값이다.
 
 ## 사후분포
 
@@ -67,7 +67,7 @@ $q\times q$ 행렬만 뒤집으면 되므로 $d$ 가 커도 계산이 싸다. �
 
 ## 최대가능도 해
 
-표본 공분산 $S$ 의 고유값을 $\lambda_1\ge\cdots\ge\lambda_d$, 대응 고유벡터를 $u_1,\dots,u_d$ 라 한다. 최대가능도 해는 다음과 같다[^1].
+표본 공분산 $S$ 의 고유값을 $\lambda_1\ge\cdots\ge\lambda_d$ 로, 대응 고유벡터를 $u_1,\dots,u_d$ 라 한다. 최대가능도 해는 다음과 같다[^1].
 
 $$
 \hat\mu=\bar x,\qquad

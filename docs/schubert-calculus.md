@@ -70,7 +70,7 @@ $$
 
 ## Grassmann 다양체와 Schubert 세포
 
-$\mathrm{Gr}(k,n)=\{V\le\mathbb C^n:\dim V=k\}$ 는 차원 $k(n-k)$ 의 매끄러운 사영다양체다. 기준 깃발 $F_\bullet$ 을 고정하고 $\lambda=(\lambda_1\ge\cdots\ge\lambda_k)$, $\lambda_1\le n-k$ 에 대해
+$\mathrm{Gr}(k,n)=\{V\le\mathbb C^n:\dim V=k\}$ 는 차원 $k(n-k)$ 의 매끄러운 사영다양체다. 기준 깃발 $F_\bullet$ 을 고정하고 $\lambda=(\lambda_1\ge\cdots\ge\lambda_k)$ 와 $\lambda_1\le n-k$ 에 대해
 
 $$
 \Omega_\lambda=\{V:\dim(V\cap F_{n-k+i-\lambda_i})\ge i\ \ (1\le i\le k)\}
@@ -86,8 +86,8 @@ $$
 
 $c^\nu_{\lambda\mu}$ 는 Littlewood–Richardson 계수이고 $|\nu|=|\lambda|+|\mu|$ 인 항만 살아남는다. 특수한 경우가 두 개 유용하다.
 
-- **Pieri**: $\sigma_p\cdot\sigma_\lambda=\sum\sigma_\mu$, 합은 $\lambda\subseteq\mu$, $|\mu|=|\lambda|+p$ 이고 $\mu/\lambda$ 가 각 열에 많아야 한 상자인(수평 띠) $\mu$ 들.
-- **Giambelli**: 임의의 $\sigma_\lambda$ 가 특수류 $\sigma_p$ 들의 행렬식으로 쓰인다. $\sigma_\lambda=\det(\sigma_{\lambda_i+j-i})_{1\le i,j\le k}$.
+- **Pieri**: $\sigma_p\cdot\sigma_\lambda=\sum\sigma_\mu$ 이고, 합은 $\lambda\subseteq\mu$ 이며 $|\mu|=|\lambda|+p$ 이고 $\mu/\lambda$ 가 각 열에 많아야 한 상자인(수평 띠) $\mu$ 들.
+- **Giambelli**: 임의의 $\sigma_\lambda$ 가 특수류 $\sigma_p$ 들의 행렬식으로 쓰인다. $\sigma_\lambda=\det(\sigma_{\lambda_i+j-i})_{1\le i,j\le k}$ 이다.
 
 두 규칙을 합치면 환 $H^*(\mathrm{Gr}(k,n))$ 이 $\sigma_1,\dots,\sigma_{n-k}$ 로 생성됨을 알 수 있다.
 
@@ -196,7 +196,7 @@ print("\n일반 위치 직선 4 개와 모두 만나는 직선의 개수 =",
 # 일반 위치 직선 4 개와 모두 만나는 직선의 개수 = 2
 ```
 
-$\mathrm{Gr}(2,4)$ 의 $2$ 가 Schubert 가 손으로 얻은 답이고, 여기서는 상자를 채우는 경우의 수로 나왔다. $\mathrm{Gr}(2,5)$ 의 $5$, $\mathrm{Gr}(2,6)$ 의 $14$ 는 Catalan 수이고, $\mathrm{Gr}(3,6)$ 의 $42$ 도 그렇다. 두 줄짜리 직사각형의 표준 배열이 Catalan 수를 세기 때문이다.
+$\mathrm{Gr}(2,4)$ 의 $2$ 가 Schubert 가 손으로 얻은 답이고, 여기서는 상자를 채우는 경우의 수로 나왔다. $\mathrm{Gr}(2,5)$ 의 $5$ 와 $\mathrm{Gr}(2,6)$ 의 $14$ 는 Catalan 수이고, $\mathrm{Gr}(3,6)$ 의 $42$ 도 그렇다. 두 줄짜리 직사각형의 표준 배열이 Catalan 수를 세기 때문이다.
 
 기하적으로 읽으면 이렇다. $\sigma_1^{k(n-k)}$ 은 일반 위치의 여차원 $1$ 조건을 $\dim$ 만큼 걸었을 때의 해의 개수이고, 그것이 조합적으로 상자를 한 칸씩 채우는 순서의 개수와 같다. Hilbert 의 15 번 문제가 요구한 엄밀화가 "이 대응이 왜 성립하는가" 를 교차이론으로 세우는 작업이었다.
 
