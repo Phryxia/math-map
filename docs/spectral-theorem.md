@@ -23,7 +23,7 @@ $$
 \langle Tv,w\rangle=\langle v,T^{*}w\rangle\quad\text{모든 }v,w\in V
 $$
 
-정규직교기저에서 $T^{*}$ 의 행렬은 켤레전치다. $T^{*}=T$ 이면 자기수반(실수에서는 대칭, 복소수에서는 Hermitian)이라 하고, $T^{*}T=TT^{*}$ 이면 normal이라 한다.
+정규직교기저에서 $T^{\ast}$ 의 행렬은 켤레전치다. $T^{\ast}=T$ 이면 자기수반(실수에서는 대칭, 복소수에서는 Hermitian)이라 하고, $T^{\ast}T=TT^{\ast}$ 이면 normal이라 한다.
 
 $$
 A^{*}=\overline{A}^{\mathsf T},\qquad
