@@ -14,7 +14,7 @@ $$
 
 > $j(\mathcal O_K)$ 는 $K$ 의 힐베르트 유체 $H$ 를 생성하고, $\mathrm{Gal}(H/K)\cong\mathrm{Cl}(K)$ 의 작용은 아이디얼류의 곱셈으로 주어진다. 비틀림점의 좌표까지 붙이면 $K$ 의 모든 아벨확대가 나온다.
 
-$\zeta_n$ 이 하던 일을 $j$ 와 비틀림점이 한다. Kronecker 가 "청춘의 꿈"(Jugendtraum)이라 부른 그림이고, Hilbert 의 열두 번째 문제는 이를 일반 수체로 확장하라는 요구다. 허수이차체 바깥에서는 열려 있다.
+$\zeta_n$ 이 하던 일을 $j$ 와 비틀림점이 한다. Kronecker 가 "청춘의 꿈"(Jugendtraum)이라 부른 그림이고, Hilbert 의 열두 번째 문제는 이를 일반 수체로 확장하라는 요구다. 허수이차체 바깥에서는 아벨확대를 생성하는 함수가 알려져 있지 않다[^2].
 
 # 직관
 
@@ -206,6 +206,7 @@ Hilbert 12 번 문제는 임의의 수체 $K$ 의 $K^{\mathrm{ab}}$ 를 해석�
 - Deuring 의 정리는 $\mathrm{GL}_2$ 의 Galois 표현이 $\mathrm{GL}_1$ 에서 유도된 자기동형 대상과 짝지어진다는 진술이다. [Langlands 강령](langlands-program.md)의 함자성이 확인된 첫 비자명한 사례다.[^1]
 
 [^1]: M. Deuring, *Die Typen der Multiplikatorenringe elliptischer Funktionenkörper*, Abh. Math. Sem. Hamburg **14** (1941). 표준 교재는 J. Silverman, *Advanced Topics in the Arithmetic of Elliptic Curves* (1994) 2 장과 D. Cox, *Primes of the Form* $x^2+ny^2$ (1989). 후자는 유수 1 목록과 $p=x^2+27y^2$ 예제를 CM 이론으로 다룬다.
+[^2]: R. P. Langlands, *Some contemporary problems with origins in the Jugendtraum*, Mathematical Developments Arising from Hilbert Problems, Proc. Sympos. Pure Math. **28** (1976), 401–418. 유리수체와 허수 이차체 밖에서 Hilbert 의 12 번 문제가 풀리지 않은 채임을 전제로 그 너머의 접근을 논한다.
 
 # 연관 문서
 
