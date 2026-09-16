@@ -21,7 +21,7 @@ $$
 
 같은 색인 $\lambda$ — $k$ 의 분할 — 가 대칭군 기약표현 $S^\lambda$ 와 $\mathrm{GL}\_n$ 기약표현 $V_\lambda$ 를 **동시에** 붙잡는다. 중복도가 다른 쪽의 기약표현이라는 말이다.
 
-이것이 [Schur 다항식](schur-polynomials.md)의 정체를 설명한다. 분할이 두 표현론을 색인한다는 것은 우연이 아니라 한 공간을 두 방향에서 본 결과이고, Schur 다항식이 대칭함수의 기저이면서 $\mathrm{GL}_n$ 지표인 이중 신분을 갖는 이유가 여기 있다. [군의 표현](group-representations.md)에서 배운 지표 이론이 그 사전의 문법을 준다.
+이것이 [Schur 다항식](schur-polynomials.md)의 정체를 설명한다. 분할이 두 표현론을 색인하는 것은 한 공간을 두 방향에서 본 결과다. 그래서 Schur 다항식은 대칭함수의 기저이면서 $\mathrm{GL}_n$ 지표다. [군의 표현](group-representations.md)에서 배운 지표 이론이 그 사전의 문법을 준다.
 
 # 직관
 

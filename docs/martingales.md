@@ -156,7 +156,7 @@ $$
 P\big(X_n - X_0 \ge t\big) \thickspace\le\thickspace \exp\negthinspace\left(-\frac{t^2}{2 \sum_{k=1}^n c_k^2}\right)
 $$
 
-가 성립한다(Azuma–Hoeffding). 증명은 조건부 Hoeffding 보조정리를 지수 모멘트에 반복 적용하는 것으로, 독립 합에 대한 Hoeffding 부등식의 논증을 조건부 기댓값으로 바꿔 쓴 것에 지나지 않는다. 이 관점의 실익은 독립성을 요구하지 않는다는 데 있다. 함수 $f(Z_1, \dots, Z_n)$ 에 대해 Doob martingale $X_k = E[f \mid Z_1, \dots, Z_k]$ 를 만들고 각 좌표를 바꿀 때 $f$ 의 변화가 제한된다는 조건(bounded differences)을 쓰면 McDiarmid 부등식이 나온다. 자세한 독립 경우는 [집중부등식](concentration-inequalities.md)에서 다룬다.
+가 성립한다(Azuma–Hoeffding). 증명은 조건부 Hoeffding 보조정리를 지수 모멘트에 반복 적용하는 것으로, 독립 합에 대한 Hoeffding 부등식의 논증을 조건부 기댓값으로 바꿔 쓴 것이다. 이 관점의 실익은 독립성을 요구하지 않는다는 데 있다. 함수 $f(Z_1, \dots, Z_n)$ 에 대해 Doob martingale $X_k = E[f \mid Z_1, \dots, Z_k]$ 를 만들고 각 좌표를 바꿀 때 $f$ 의 변화가 제한된다는 조건(bounded differences)을 쓰면 McDiarmid 부등식이 나온다. 자세한 독립 경우는 [집중부등식](concentration-inequalities.md)에서 다룬다.
 
 ## 확률과정과 다른 분야
 
