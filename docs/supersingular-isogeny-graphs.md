@@ -25,7 +25,7 @@ $$
 E[p](\overline{\mathbb F_p})\cong\mathbb Z/p\ \ (\text{보통})\qquad\text{또는}\qquad E[p]=0\ \ (\text{초특이})
 $$
 
-표수 $0$ 에서 $E[p]\cong(\mathbb Z/p)^2$ 이던 것이 표수 $p$ 에서 절반 또는 전부 무너진다. 초특이 곡선은 $p$ 비틀림 점이 하나도 없는 쪽이고, 동치인 조건이 $a_p=0$, 곧 $\#E(\mathbb F_p)=p+1$ 이다.
+표수 $0$ 에서 $E[p]\cong(\mathbb Z/p)^2$ 이던 것이 표수 $p$ 에서 절반 또는 전부 무너진다. 초특이 곡선은 $p$ 비틀림 점이 하나도 없는 쪽이고, 동치인 조건이 $a_p=0$ 이고 곧 $\#E(\mathbb F_p)=p+1$ 이다.
 
 이 결손이 자기준동형환에 나타난다. 보통 곡선의 $\mathrm{End}(E)$ 는 허수이차체의 차수(order)로 가환이지만, 초특이 곡선은
 
@@ -102,7 +102,7 @@ $B_{p,\infty}$ 는 $p$ 와 $\infty$ 에서만 분지하는 유일한 유리 사�
 
 ## SIDH 키교환
 
-서로 다른 두 소수 $\ell_A=2,\ \ell_B=3$ 을 쓰고 $p=2^{e_A}3^{e_B}-1$ 로 잡는다. 공개 정보는 시작 곡선 $E_0$ 와 기저 $\langle P_A,Q_A\rangle=E_0[2^{e_A}]$, $\langle P_B,Q_B\rangle=E_0[3^{e_B}]$ 다.
+서로 다른 두 소수 $\ell_A=2,\ \ell_B=3$ 을 쓰고 $p=2^{e_A}3^{e_B}-1$ 로 잡는다. 공개 정보는 시작 곡선 $E_0$ 와 기저 $\langle P_A,Q_A\rangle=E_0[2^{e_A}]$ 와 $\langle P_B,Q_B\rangle=E_0[3^{e_B}]$ 다.
 
 1. Alice 가 비밀 $\ker\phi_A=\langle P_A+[a]Q_A\rangle$ 를 잡아 $\phi_A\colon E_0\to E_A$ 를 계산한다.
 2. Alice 가 $E_A$ 와 함께 **보조점** $\phi_A(P_B),\phi_A(Q_B)$ 를 공개한다. Bob 도 대칭으로 한다.

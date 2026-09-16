@@ -63,7 +63,7 @@ $\tau$ 의 두 극한이 각각 익숙한 대상이다. $\tau\to\infty$ 는 균�
 
 ## 불균형 문제
 
-$a\in\mathbb R^n_{>0}$, $b\in\mathbb R^m_{>0}$ 은 총질량이 달라도 된다. $C\in\mathbb R^{n\times m}_{\ge0}$ 에 대해
+$a\in\mathbb R^n_{>0}$ 과 $b\in\mathbb R^m_{>0}$ 은 총질량이 달라도 된다. $C\in\mathbb R^{n\times m}_{\ge0}$ 에 대해
 
 $$
 \mathrm{UOT}_{\varepsilon,\tau}(a,b)=\min_{P\ge0}\ \langle C,P\rangle
@@ -92,7 +92,7 @@ g_j\leftarrow-\lambda\varepsilon\log\sum_ia_ie^{(f_i-C_{ij})/\varepsilon},\qquad
 \lambda=\frac\tau{\tau+\varepsilon}
 $$
 
-곱 형태로 쓰면 $u\leftarrow(a/Kv)^\lambda$, $v\leftarrow(b/K^\top u)^\lambda$ 다. 균형판과 코드가 한 글자 차이다.
+곱 형태로 쓰면 $u\leftarrow(a/Kv)^\lambda$ 이고 $v\leftarrow(b/K^\top u)^\lambda$ 다. 균형판과 코드가 한 글자 차이다.
 
 ## Hellinger–Kantorovich 거리
 
