@@ -29,7 +29,7 @@ $$
 
 고차 방정식은 도함수를 새 변수로 두어 이 형태로 환원한다. f가 t에 명시적으로 의존하지 않으면 autonomous라 한다.
 
-f가 x에 대해 Lipschitz라는 것은 다음을 만족하는 상수 K가 있다는 뜻이다.
+$f$ 가 $x$ 에 대해 Lipschitz라는 것은 다음을 만족하는 상수 $K$ 가 있다는 뜻이다.
 
 $$
 \left\lVert f(t,x)-f(t,y)\right\rVert\le K\left\lVert x-y\right\rVert
@@ -53,15 +53,15 @@ autonomous 방정식에서 f를 0으로 만드는 점을 평형점(equilibrium)�
 
 ## Picard–Lindelöf 정리
 
-f가 초기점의 근방에서 연속이고 x에 대해 Lipschitz이면, 어떤 양수 ε에 대해 구간 [t_0−ε, t_0+ε]에서 초기값 문제의 해가 존재하고 유일하다[^1].
+$f$ 가 초기점의 근방에서 연속이고 $x$ 에 대해 Lipschitz이면, 어떤 양수 $\varepsilon$ 에 대해 구간 $[t_0-\varepsilon,\,t_0+\varepsilon]$ 에서 초기값 문제의 해가 존재하고 유일하다[^1].
 
-증명 개요: M을 근방에서 f의 노름 상한, K를 Lipschitz 상수라 하자. 초기값 중심 폐구 안에 머무는 연속함수들의 집합은 sup 노름에서 [완비](completeness.md)이며, ε을 충분히 작게 잡으면 T가 이 집합을 자기 자신으로 보낸다(적분의 크기가 Mε 이하이기 때문). 두 함수 x, y에 대해 Lipschitz 조건을 적분에 넣으면 다음을 얻는다.
+증명 개요: $M$ 을 근방에서 $f$ 의 노름 상한, $K$ 를 Lipschitz 상수라 하자. 초기값 중심 폐구 안에 머무는 연속함수들의 집합은 sup 노름에서 [완비](completeness.md)이며, $\varepsilon$ 을 충분히 작게 잡으면 $T$ 가 이 집합을 자기 자신으로 보낸다(적분의 크기가 $M\varepsilon$ 이하이기 때문). 두 함수 $x$ , $y$ 에 대해 Lipschitz 조건을 적분에 넣으면 다음을 얻는다.
 
 $$
 \left\lVert Tx-Ty\right\rVert_{\infty}\le K\varepsilon\,\left\lVert x-y\right\rVert_{\infty}
 $$
 
-따라서 ε을 추가로 1/K보다 작게 잡으면 T는 축약사상이고, 완비 [거리 공간](metric-spaces.md) 위의 축약사상은 유일한 고정점을 가진다[^2]. 그 고정점이 적분방정식의 해, 즉 초기값 문제의 유일한 해다. (Lipschitz 상수와 무관한 구간을 얻으려면 지수 가중 노름을 쓰거나 Gronwall 부등식을 이용한다.)
+따라서 $\varepsilon$ 을 추가로 $1/K$ 보다 작게 잡으면 $T$ 는 축약사상이고, 완비 [거리 공간](metric-spaces.md) 위의 축약사상은 유일한 고정점을 가진다[^2]. 그 고정점이 적분방정식의 해, 즉 초기값 문제의 유일한 해다. (Lipschitz 상수와 무관한 구간을 얻으려면 지수 가중 노름을 쓰거나 Gronwall 부등식을 이용한다.)
 
 f가 연속이지만 Lipschitz가 아니면 Peano 정리에 의해 존재성은 남지만 유일성은 잃는다. 예를 들어 다음 문제는 해가 여러 개다.
 
@@ -87,13 +87,13 @@ $$
 x'=Ax,\quad x(0)=x_0\ \Longrightarrow\ x(t)=e^{tA}x_0,\qquad e^{tA}=\sum_{k=0}^{\infty}\frac{t^k A^k}{k!}
 $$
 
-A가 대각화 가능하면 [eigenvalue](eigenvalues.md)와 eigenvector로 해를 분해할 수 있다. 고윳값 λ와 대응하는 eigenvector v에 대해 다음이 해다.
+$A$ 가 대각화 가능하면 [고윳값](eigenvalues.md)과 고유벡터로 해를 분해할 수 있다. 고윳값 $\lambda$ 와 대응하는 고유벡터 $v$ 에 대해 다음이 해다.
 
 $$
 x(t)=e^{\lambda t}v
 $$
 
-일반적인 A에서는 Jordan 형에 따라 다항식 계수 항이 붙는다. 비동차 방정식의 해는 Duhamel 공식으로 쓴다.
+일반적인 $A$ 에서는 Jordan 형에 따라 다항식 계수 항이 붙는다. 비동차 방정식의 해는 Duhamel 공식으로 쓴다.
 
 $$
 x'=Ax+g(t)\ \Longrightarrow\ x(t)=e^{tA}x_0+\int_0^{t}e^{(t-s)A}g(s)\,ds
@@ -101,7 +101,7 @@ $$
 
 ## 평형점의 안정성
 
-선형계 x'=Ax에서 원점은 A의 모든 고윳값의 실수부가 음수이면 점근 안정이고, 어떤 고윳값의 실수부가 양수이면 불안정하다.
+선형계 $x'=Ax$ 에서 원점은 $A$ 의 모든 고윳값의 실수부가 음수이면 점근 안정이고, 어떤 고윳값의 실수부가 양수이면 불안정하다.
 
 비선형 autonomous 계의 평형점에서 Jacobian을 보자.
 
@@ -109,7 +109,7 @@ $$
 A=Df(x^\star),\qquad f(x^\star)=0
 $$
 
-A의 모든 고윳값의 실수부가 음수(hyperbolic sink)이면 평형점은 점근 안정이고, 어떤 고윳값의 실수부가 양수이면 불안정하다. 실수부가 0인 고윳값이 있으면 선형화만으로는 판정할 수 없고, Lyapunov 함수(평형점에서 최소이며 궤적을 따라 감소하는 함수)를 찾는 방법이 필요하다.
+$A$ 의 모든 고윳값의 실수부가 음수(hyperbolic sink)이면 평형점은 점근 안정이고, 어떤 고윳값의 실수부가 양수이면 불안정하다. 실수부가 $0$ 인 고윳값이 있으면 선형화만으로는 판정할 수 없고, Lyapunov 함수(평형점에서 최소이며 궤적을 따라 감소하는 함수)를 찾는 방법이 필요하다.
 
 # 활용
 
