@@ -13,6 +13,7 @@
 ```mermaid
 graph TD
   ST["집합"] --> GR["그래프"]
+  GR --> GS2["그래프 탐색"]
   GR --> DG["DAG와 위상정렬"]
   GR --> GC["그래프 색칠"]
   GR --> MA["매칭과 Hall 정리"]
@@ -40,6 +41,7 @@ graph TD
 ## 기본 구조
 
 - [그래프](graphs.md): 정점과 간선, 차수, 경로와 연결성
+- [그래프 탐색](graph-search.md): DFS 와 BFS, 탐색 트리와 간선 분류, 강연결성분
 - [DAG와 위상정렬](dag-topological.md): 방향 비순환 그래프와 선형 순서
 - [평면 그래프](planar-graphs.md): Euler 공식과 Kuratowski 정리
 
@@ -70,7 +72,6 @@ graph TD
 
 # 빈자리
 
-- 그래프 탐색: 깊이 우선과 너비 우선, 강연결성분 분해. 알고리즘 갈래의 출발인데 문서가 없다.
 - Menger 정리와 연결도: 절단과 서로소 경로의 쌍대성. [네트워크 흐름](network-flow.md)의 조합적 판본이다.
 - Hamilton 순환: Dirac 조건과 Ore 조건, [NP-완전성](np-completeness.md)과의 관계.
 - Erdős–Rényi 랜덤 그래프: 거대 연결성분의 상전이와 문턱 현상.
