@@ -22,7 +22,7 @@ $$
 
 ## 정칙성과 모듈러성의 맞바꿈
 
-무게 $k$, 준위 $N$ 의 정칙 모듈러 형식 공간은 유한차원이다. 차원 공식이 $k$ 와 $N$ 으로 명시적으로 주어지므로, 조건을 만족하는 $q$ 급수는 매우 드물다. 그 드묾이 항등식을 뽑아내는 힘의 원천이지만, 동시에 이론 바깥에 남는 흥미로운 급수를 많이 만든다.
+무게 $k$ 와 준위 $N$ 의 정칙 모듈러 형식 공간은 유한차원이다. 차원 공식이 $k$ 와 $N$ 으로 명시적으로 주어지므로, 조건을 만족하는 $q$ 급수는 매우 드물다. 그 드묾이 항등식을 뽑아내는 힘의 원천이지만, 동시에 이론 바깥에 남는 흥미로운 급수를 많이 만든다.
 
 Zwegers 의 처방은 조건 하나를 약화시키는 것이다. "정칙 + 모듈러" 를 "조화 + 모듈러" 로 바꾼다. 무게 $k$ 쌍곡 Laplace 작용소
 
@@ -82,7 +82,7 @@ $q\to\zeta$ (단위근) 로 갈 때 $\widehat h$ 는 모듈러이므로 변환�
 $\mathrm{SL}_2(\mathbb Z)$ 의 유한지표 부분군 $\Gamma$ 와 $k\in\frac12\mathbb Z$ 를 잡는다. 실해석 함수 $\widehat h:\mathbb H\to\mathbb C$ 가 다음 셋을 만족하면 무게 $k$ 의 **조화 Maass 형식**이다.
 
 1. 모든 $\gamma\in\Gamma$ 에 대해 무게 $k$ 변환법칙을 만족한다(반정수 무게면 theta 곱수를 포함한다).
-2. $\Delta_k\widehat h=0$.
+2. $\Delta_k\widehat h=0$ 이다.
 3. 모든 첨점에서 많아야 선형 지수 증가를 한다.
 
 이때 Fourier 전개가 두 조각으로 갈린다.
@@ -95,7 +95,7 @@ $$
 
 ## Appell–Lerch 합
 
-Zwegers 가 다룬 첫 번째 원천이다. $u,v\in\mathbb C$, $q=e^{2\pi i\tau}$, $x=e^{2\pi i u}$, $y=e^{2\pi i v}$ 에 대해
+Zwegers 가 다룬 첫 번째 원천이다. $u,v\in\mathbb C$ 와 $q=e^{2\pi i\tau}$ 와 $x=e^{2\pi i u}$ 와 $y=e^{2\pi i v}$ 에 대해
 
 $$
 \mu(u,v;\tau)=\frac{x^{1/2}}{\vartheta(v;\tau)}\sum_{n\in\mathbb Z}\frac{(-1)^n q^{n(n+1)/2}y^n}{1-q^n x}
@@ -113,7 +113,7 @@ $$
 R(u;\tau)=\sum_{n\in\mathbb Z+\frac12}\left\{\operatorname{sgn}(n)-E\!\left((n+a)\sqrt{2y}\right)\right\}(-1)^{n-\frac12}e^{-2\pi i n u}q^{-n^2/2}
 $$
 
-이고 $E(z)=2\int_0^z e^{-\pi t^2}dt$, $a=\operatorname{Im}(u)/y$ 다. $\operatorname{sgn}$ 을 오차함수로 매끄럽게 바꾸는 것이 보정의 정체다. Ramanujan 의 mock theta 함수는 전부 $\mu$ 의 특수화로 쓰이므로, 이 한 정리가 열일곱 개를 한꺼번에 설명한다.
+이고 $E(z)=2\int_0^z e^{-\pi t^2}dt$ 이고 $a=\operatorname{Im}(u)/y$ 다. $\operatorname{sgn}$ 을 오차함수로 매끄럽게 바꾸는 것이 보정의 정체다. Ramanujan 의 mock theta 함수는 전부 $\mu$ 의 특수화로 쓰이므로, 이 한 정리가 열일곱 개를 한꺼번에 설명한다.
 
 ## 부정부호 theta 급수
 
