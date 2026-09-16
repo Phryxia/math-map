@@ -95,7 +95,7 @@ N(\bar\rho)=\prod_{\ell\ne p}\ell^{\,n_\ell},\qquad
 n_\ell=\sum_{i\ge0}\frac{|G_i|}{|G_0|}\dim\bigl(V/V^{G_i}\bigr)
 $$
 
-$G_i$ 는 $\ell$ 에서의 상위 분기군, $V=\overline{\mathbb F}_p^2$ 다. 무게는 $\bar\rho|_{I_p}$ 로 정한다. $p>2$ 인 온순한 경우를 예로 들면, 관성군의 작용이 $\chi^a\oplus\chi^b$ 로 분해되고(여기서 $0\le a<b\le p-2$ 이고 $\chi$ 는 mod $p$ 순환지표다) 표현이 $I_p$ 에서 분해되면
+$G_i$ 는 $\ell$ 에서의 상위 분기군, $V=\overline{\mathbb F}\_p^2$ 다. 무게는 $\bar\rho|_{I_p}$ 로 정한다. $p>2$ 인 온순한 경우를 예로 들면, 관성군의 작용이 $\chi^a\oplus\chi^b$ 로 분해되고(여기서 $0\le a<b\le p-2$ 이고 $\chi$ 는 mod $p$ 순환지표다) 표현이 $I_p$ 에서 분해되면
 
 $$
 k(\bar\rho)=1+pa+b

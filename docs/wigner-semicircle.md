@@ -51,7 +51,7 @@ graph TD
 
 ## Wigner 행렬
 
-실 대칭 $N\times N$ 행렬 $H$ 의 성분 $\{h_{ij}\}_{i\le j}$ 가 독립이고 $i<j$ 마다 $\mathbb E h_{ij}=0$ 이고 $\mathbb E h_{ij}^2 = 1$ 이며, 대각 성분의 분산이 유한하며 모든 적률이 유한할 때 $H$ 를 **Wigner 행렬**이라 한다. 규격화는 $A = H/\sqrt N$ 로 한다. 이 규격화가 옳은 이유는 $\frac1N\mathbb E\operatorname{tr}A^2 = \frac{1}{N^2}\sum_{i,j}\mathbb E h_{ij}^2 \to 1$ 로 2차 적률이 $N$ 과 무관하게 유한해지기 때문이다.
+실 대칭 $N\times N$ 행렬 $H$ 의 성분 $\{h_{ij}\}\_{i\le j}$ 가 독립이고 $i<j$ 마다 $\mathbb E h_{ij}=0$ 이고 $\mathbb E h_{ij}^2 = 1$ 이며, 대각 성분의 분산이 유한하며 모든 적률이 유한할 때 $H$ 를 **Wigner 행렬**이라 한다. 규격화는 $A = H/\sqrt N$ 로 한다. 이 규격화가 옳은 이유는 $\frac1N\mathbb E\operatorname{tr}A^2 = \frac{1}{N^2}\sum_{i,j}\mathbb E h_{ij}^2 \to 1$ 로 2차 적률이 $N$ 과 무관하게 유한해지기 때문이다.
 
 고윳값 $\lambda_1 \le \cdots \le \lambda_N$ 에 대해 **경험스펙트럼측도**를
 

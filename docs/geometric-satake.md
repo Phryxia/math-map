@@ -72,7 +72,7 @@ $$
 | 대상 | 교차 코호몰로지 층 $\mathcal{IC}_\lambda$ | $V_\lambda$ |
 | 차원 | $\dim\mathrm{Gr}^\lambda=\langle\lambda,2\rho\rangle$ | 최고무게 $\lambda$ |
 | 곱 | 합성곱 $\ast$ | 텐서곱 $\otimes$ |
-| 전체 코호몰로지 | $H^*(\mathrm{Gr}_G,\mathcal{IC}_\lambda)$ | 기저가 있는 벡터공간 $V_\lambda$ |
+| 전체 코호몰로지 | $H^\ast(\mathrm{Gr}\_G,\mathcal{IC}\_\lambda)$ | 기저가 있는 벡터공간 $V_\lambda$ |
 
 ## 왜 퍼버스인가
 
@@ -108,7 +108,7 @@ H^*:\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\to\mathrm{Vect},
 \mathcal F\mapsto\bigoplus_kH^k(\mathrm{Gr}_G,\mathcal F)
 $$
 
-Künneth 공식이 $H^*(\mathcal F\ast\mathcal G)\cong H^*(\mathcal F)\otimes H^*(\mathcal G)$ 를 주므로 텐서 함자다. 그 텐서 자기동형군이 $\widehat G$ 다. 곧 **쌍대군은 아핀 Grassmann 다양체의 코호몰로지의 대칭군**이다.
+Künneth 공식이 $H^\ast(\mathcal F\ast\mathcal G)\cong H^\ast(\mathcal F)\otimes H^\ast(\mathcal G)$ 를 주므로 텐서 함자다. 그 텐서 자기동형군이 $\widehat G$ 다. 곧 **쌍대군은 아핀 Grassmann 다양체의 코호몰로지의 대칭군**이다.
 
 ```mermaid
 graph TD
@@ -156,11 +156,11 @@ $$
 
 $\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)$ 를 $G(\mathcal O)$ 동변 퍼버스 층들의 범주라 하고, 합성곱을 위와 같이 정의한다.
 
-> **정리 (Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 $\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)$ 는 대칭 텐서 범주이고, 전체 코호몰로지 $H^*$ 를 올림자로 하는 Tannaka 쌍대성에 의해
+> **정리 (Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 는 대칭 텐서 범주이고, 전체 코호몰로지 $H^\ast$ 를 올림자로 하는 Tannaka 쌍대성에 의해
 > $$
 > \mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\;\simeq\;\mathrm{Rep}(\widehat G)
 > $$
-> 가 텐서 범주의 동치로 성립한다. $\mathcal{IC}_\lambda$ 가 최고무게 $\lambda$ 의 기약표현 $V_\lambda$ 에 대응한다.[^1]
+> 가 텐서 범주의 동치로 성립한다. $\mathcal{IC}\_\lambda$ 가 최고무게 $\lambda$ 의 기약표현 $V_\lambda$ 에 대응한다.[^1]
 
 Mirković–Vilonen 은 이것을 임의의 가환환 계수에서 증명했고, 그래서 $\widehat G$ 가 $\mathbb Z$ 위의 군 스킴으로 나온다.
 
@@ -187,7 +187,7 @@ $$
 
 ## 고전적 Satake 를 되찾는다
 
-유한체 $\mathbb F_q$ 위에서 함수-층 사전을 적용하면 $\mathcal{IC}_\lambda$ 의 Frobenius 자취 함수가 나온다. 그것이 $\mathcal H(G,K)$ 의 원소이고, 그 Satake 상이 기약지표 $\chi_\lambda$ 다.
+유한체 $\mathbb F_q$ 위에서 함수-층 사전을 적용하면 $\mathcal{IC}\_\lambda$ 의 Frobenius 자취 함수가 나온다. 그것이 $\mathcal H(G,K)$ 의 원소이고, 그 Satake 상이 기약지표 $\chi_\lambda$ 다.
 
 곧 고전적 Satake 동형에서 $1_{K t^\lambda K}$ 의 상이 $\chi_\lambda$ 가 아니라 낮은 항이 $q^{-1}$ 배로 섞인 꼴이었던 이유가 설명된다. $1_{Kt^\lambda K}$ 는 궤도 $\mathrm{Gr}^\lambda$ 의 상수층에 대응하고, $\chi_\lambda$ 는 폐포의 $\mathcal{IC}$ 층에 대응한다. 둘의 차이가 **교차 코호몰로지 줄기의 차원**, 곧 Kazhdan–Lusztig 다항식이다.
 
@@ -207,7 +207,7 @@ $$
 
 ## 쌍대군의 개념적 정의
 
-Langlands 쌍대군은 원래 근 자료 $(X^*,\Phi,X_*,\Phi^\vee)$ 에서 $X^*\leftrightarrow X_*$ 와 $\Phi\leftrightarrow\Phi^\vee$ 를 맞바꿔 정의한다. 정확하지만 왜 그런 대상이 자기동형 형식을 지배하는지는 설명하지 못한다.
+Langlands 쌍대군은 원래 근 자료 $(X^\ast,\Phi,X_\ast,\Phi^\vee)$ 에서 $X^\ast\leftrightarrow X_\ast$ 와 $\Phi\leftrightarrow\Phi^\vee$ 를 맞바꿔 정의한다. 정확하지만 왜 그런 대상이 자기동형 형식을 지배하는지는 설명하지 못한다.
 
 기하학적 Satake 는 $\widehat G$ 를 $G$ 의 고리 공간의 코호몰로지의 자기동형군으로 준다. 정의가 개념적이고, 근 자료를 뒤집는 일이 정리의 결론으로 나온다. 이 관점에서 쌍대군은 선택이 아니라 필연이다.
 

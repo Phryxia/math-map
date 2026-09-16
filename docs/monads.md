@@ -54,13 +54,13 @@ graph LR
 
 ## Kleisli 형태의 동치 정의
 
-$\mu$ 대신 확장 연산 $(-)^*$ 를 쓰는 정의도 있다. 대상마다 $\eta_X : X \to T(X)$ 를 주고, 각 사상 $f : X \to T(Y)$ 에 $f^* : T(X) \to T(Y)$ 를 대응시키되 다음을 요구한다.
+$\mu$ 대신 확장 연산 $(-)^*$ 를 쓰는 정의도 있다. 대상마다 $\eta_X : X \to T(X)$ 를 주고, 각 사상 $f : X \to T(Y)$ 에 $f^\ast : T(X) \to T(Y)$ 를 대응시키되 다음을 요구한다.
 
 $$
 f^*\circ\eta_X=f,\qquad \eta_X^*=\operatorname{id}_{T(X)},\qquad (g^*\circ f)^*=g^*\circ f^*
 $$
 
-이 데이터에서 $T(f) = (\eta \circ f)^*$ 와 $\mu = (\mathrm{id}_{T(X)})^*$ 를 정의하면 앞의 정의가 복원되고, 반대로 $f^* = \mu \circ T(f)$ 로 가면 이쪽이 복원된다. 프로그래밍 언어의 `return` 과 `bind` 가 정확히 $\eta$ 와 $(-)^*$ 다.
+이 데이터에서 $T(f) = (\eta \circ f)^\ast$ 와 $\mu = (\mathrm{id}\_{T(X)})^\ast$ 를 정의하면 앞의 정의가 복원되고, 반대로 $f^* = \mu \circ T(f)$ 로 가면 이쪽이 복원된다. 프로그래밍 언어의 `return` 과 `bind` 가 정확히 $\eta$ 와 $(-)^*$ 다.
 
 ## T-대수
 

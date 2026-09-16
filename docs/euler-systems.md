@@ -36,7 +36,7 @@ $$
 \big\langle \mathrm{loc}_\ell(c),\ \mathrm{loc}_\ell(s)\big\rangle_\ell=0
 $$
 
-하나로 줄고, $\mathrm{loc}_\ell(c)\ne0$ 이면 $\mathrm{loc}_\ell(s)$ 가 그 짝에 대해 직교하도록 강제된다. $\ell$ 자리의 국소 코호몰로지가 $p$ 위에서 2 차원이고 두 조각이 서로 소멸자이므로, 이 직교성은 $\mathrm{loc}_\ell(s)=0$ 을 뜻한다. 여기에 [Chebotarev](chebotarev.md) 를 써서 $\mathrm{loc}_\ell(s)\ne0$ 인 $\ell$ 을 미리 골라 두면 모순이 나고 $s=0$ 이 된다.
+하나로 줄고, $\mathrm{loc}\_\ell(c)\ne0$ 이면 $\mathrm{loc}\_\ell(s)$ 가 그 짝에 대해 직교하도록 강제된다. $\ell$ 자리의 국소 코호몰로지가 $p$ 위에서 2 차원이고 두 조각이 서로 소멸자이므로, 이 직교성은 $\mathrm{loc}\_\ell(s)=0$ 을 뜻한다. 여기에 [Chebotarev](chebotarev.md) 를 써서 $\mathrm{loc}\_\ell(s)\ne0$ 인 $\ell$ 을 미리 골라 두면 모순이 나고 $s=0$ 이 된다.
 
 그러므로 Euler 계 논법의 전부는 **"한 자리에서만 어긋난 대역류를, 자리를 마음대로 골라 가며 만들어 내는 일"** 이다.
 
@@ -179,7 +179,7 @@ Kolyvagin 소수 $\ell$ 에서는 $H^1(K_\lambda,E[p])$ 이 $\mathbb F_p$ 위 2 
 
 | 이름 | 기호 | 정체 |
 |---|---|---|
-| 유한부(비분기) | $H^1_f(K_\lambda,E[p])$ | $H^1(\mathrm{Fr}_\lambda\text{ 불변})$ 이고 $E(K_\lambda)/p$ 의 상 |
+| 유한부(비분기) | $H^1_f(K_\lambda,E[p])$ | $H^1(\mathrm{Fr}\_\lambda\text{ 불변})$ 이고 $E(K_\lambda)/p$ 의 상 |
 | 특이부(가로지름) | $H^1_s(K_\lambda,E[p])$ | 몫 $H^1/H^1_f$ 이고 분기류의 잔여 |
 
 $p\mid\ell+1$ 과 $p\mid a_\ell$ 이라는 조건 덕에 $E[p]$ 위의 $\mathrm{Fr}_\lambda$ 작용이 $\pm1$ 을 고윳값으로 갖고, 그래서 두 조각이 각각 1 차원이 된다. 국소 Tate 짝 $H^1_f\times H^1_s\to\mathbb F_p$ 는 완전 짝이다.
@@ -227,13 +227,13 @@ $$
 
 이다.
 
-**증명의 뼈대.** $s\in \mathrm{Sel}^p(E/K)$ 가 $\kappa_1$ 이 생성하는 부분군 밖에 있다고 하자. Chebotarev 로 Kolyvagin 소수 $\ell$ 을 골라 $\mathrm{loc}_\ell(s)\ne0$ 이면서 $\mathrm{loc}_\ell^{\,f}(\kappa_1)\ne0$ 이 되게 한다. 상호법칙을 $c=\kappa_\ell$ 과 $s$ 에 적용하면 $\ell$ 을 뺀 모든 자리에서 두 류가 서로 소멸자에 놓이므로 항이 죽고
+**증명의 뼈대.** $s\in \mathrm{Sel}^p(E/K)$ 가 $\kappa_1$ 이 생성하는 부분군 밖에 있다고 하자. Chebotarev 로 Kolyvagin 소수 $\ell$ 을 골라 $\mathrm{loc}\_\ell(s)\ne0$ 이면서 $\mathrm{loc}\_\ell^{\,f}(\kappa_1)\ne0$ 이 되게 한다. 상호법칙을 $c=\kappa_\ell$ 과 $s$ 에 적용하면 $\ell$ 을 뺀 모든 자리에서 두 류가 서로 소멸자에 놓이므로 항이 죽고
 
 $$
 \big\langle \mathrm{loc}_\ell^{\,s}(\kappa_\ell),\ \mathrm{loc}_\ell^{\,f}(s)\big\rangle_\ell=0
 $$
 
-만 남는다. 제 2 상호법칙으로 왼쪽 성분이 $\mathrm{loc}_\ell^{\,f}(\kappa_1)\ne0$ 과 같고 국소 짝이 완전하므로 $\mathrm{loc}_\ell(s)=0$ 이다. $\ell$ 을 고른 방식과 모순이다. 따라서 $\mathrm{Sel}^p(E/K)$ 는 $\kappa_1$ 이 생성하는 것에 가깝고, $y_K$ 가 무한위수라는 가정과 합쳐 계수 1 과 $\text{Ш}$ 의 유한성이 나온다. $\square$
+만 남는다. 제 2 상호법칙으로 왼쪽 성분이 $\mathrm{loc}\_\ell^{\,f}(\kappa_1)\ne0$ 과 같고 국소 짝이 완전하므로 $\mathrm{loc}\_\ell(s)=0$ 이다. $\ell$ 을 고른 방식과 모순이다. 따라서 $\mathrm{Sel}^p(E/K)$ 는 $\kappa_1$ 이 생성하는 것에 가깝고, $y_K$ 가 무한위수라는 가정과 합쳐 계수 1 과 $\text{Ш}$ 의 유한성이 나온다. $\square$
 
 $\gamma$ 를 $K$ 의 복소켤레라 하면 $E(K)$ 와 $\mathrm{Sel}$ 이 $\pm$ 고유공간으로 쪼개지고 $y_K$ 는 한쪽에만 산다. Kolyvagin 소수의 조건이 $\mathrm{Fr}_\ell$ 을 복소켤레와 묶어 두는 이유가 여기에 있다. 부호가 맞지 않으면 상호법칙의 항이 자동으로 죽어 정보가 사라진다.
 

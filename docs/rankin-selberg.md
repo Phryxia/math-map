@@ -88,7 +88,7 @@ $$
 W_\varphi\!\left(\begin{pmatrix}\gamma&\\&1\end{pmatrix}g\right)
 $$
 
-이 합이 펼치기의 재료다. $\mathrm{GL}_{n-1}$ 위의 합이 있으므로 적분 영역이 $\mathrm{GL}_{n-1}$ 전체로 펼쳐지고, 남은 것이 Whittaker 함수 두 개의 곱의 적분이다.
+이 합이 펼치기의 재료다. $\mathrm{GL}\_{n-1}$ 위의 합이 있으므로 적분 영역이 $\mathrm{GL}\_{n-1}$ 전체로 펼쳐지고, 남은 것이 Whittaker 함수 두 개의 곱의 적분이다.
 
 ## 왜 Euler 곱으로 쪼개지는가
 

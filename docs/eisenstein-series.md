@@ -129,7 +129,7 @@ $$
 
 ## 실해석적 Eisenstein 급수
 
-$\Gamma=\mathrm{SL}_2(\mathbb Z)$ 로 두고 $\Gamma_\infty$ 를 $\pm\bigl(\begin{smallmatrix}1&*\\0&1\end{smallmatrix}\bigr)$ 들의 군이라 하자.
+$\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 로 두고 $\Gamma_\infty$ 를 $\pm\bigl(\begin{smallmatrix}1&*\\0&1\end{smallmatrix}\bigr)$ 들의 군이라 하자.
 
 $$
 E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\mathrm{Im}(\gamma z)^s
@@ -153,7 +153,7 @@ $K_\nu$ 는 변형 Bessel 함수이고 $K_\nu=K_{-\nu}$ 다. 이 전개에서 �
 
 ## 함수방정식과 극
 
-> $E^*(z,s)$ 는 $s\in\mathbb C$ 전체로 유리형 접속되고
+> $E^\ast(z,s)$ 는 $s\in\mathbb C$ 전체로 유리형 접속되고
 > $$
 > E^*(z,s)=E^*(z,1-s)
 > $$

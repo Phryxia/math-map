@@ -30,7 +30,7 @@ $$
 
 로 닫힌 매장이 된다. 즉 $G/B$ 는 표현 바깥에서 억지로 가져온 공간이 아니라, 최고무게 벡터가 이미 그리고 있던 궤도다. 직선다발 $\mathcal L_\lambda$ 는 이 매장에서 $\mathcal O(1)$ 을 당긴 것이고, 단면이 $V_\lambda^*$ 인 것은 사영공간의 일차형식이 좌표를 되찾아 주는 것과 같은 현상이다.
 
-$G/B$ 를 **깃발다양체**라 부르는 것은 $G=\mathrm{GL}_n$ 에서 $G/B$ 가 $\mathbb C^n$ 의 완전 깃발 $0\subset V_1\subset\cdots\subset V_{n-1}\subset\mathbb C^n$ 들의 공간이기 때문이다. $B$ 는 표준 깃발의 안정자이고, $G$ 가 깃발 전체에 추이적으로 작용한다.
+$G/B$ 를 **깃발다양체**라 부르는 것은 $G=\mathrm{GL}\_n$ 에서 $G/B$ 가 $\mathbb C^n$ 의 완전 깃발 $0\subset V_1\subset\cdots\subset V_{n-1}\subset\mathbb C^n$ 들의 공간이기 때문이다. $B$ 는 표준 깃발의 안정자이고, $G$ 가 깃발 전체에 추이적으로 작용한다.
 
 ## Bott 의 이동 규칙
 
@@ -133,7 +133,7 @@ $\lambda\in X^*(T)$ 에 대해 다음이 성립한다.
 1. $\langle\lambda+\rho,\alpha^\vee\rangle=0$ 인 양근 $\alpha$ 가 있으면 모든 $i$ 에 대해 $H^i(G/B,\mathcal L_\lambda)=0$ 이다.
 2. 아니면 $w(\lambda+\rho)$ 가 지배적 정칙이 되는 $w\in W$ 가 유일하게 존재하고, $H^{\ell(w)}(G/B,\mathcal L_\lambda)\cong V_{w\cdot\lambda}^{*}$ 이며 나머지 차수는 $0$ 이다.
 
-증명의 뼈대는 $\mathrm{SL}_2$ 로 환원하는 것이다. 단순반사 $s_\alpha$ 하나에 대응하는 포물형 부분군 $P_\alpha$ 를 잡으면 $G/B\to G/P_\alpha$ 가 $\mathbb P^1$ 다발이고, 이 다발을 따라 Leray 스펙트럼열을 쓰면 $\mathbb P^1$ 위 $\mathcal O(n)$ 의 코호몰로지만 알면 된다. 거기서는 답이 초등적이다. $n\ge0$ 이면 $H^0$ 만, $n\le-2$ 이면 $H^1$ 만, $n=-1$ 이면 둘 다 $0$ 이다. 마지막 경우가 "벽 위" 조건의 국소 판본이고, $\ell(w)$ 가 하나씩 오르는 것이 다발을 하나씩 통과할 때마다 차수가 하나씩 밀리는 것이다.
+증명의 뼈대는 $\mathrm{SL}\_2$ 로 환원하는 것이다. 단순반사 $s_\alpha$ 하나에 대응하는 포물형 부분군 $P_\alpha$ 를 잡으면 $G/B\to G/P_\alpha$ 가 $\mathbb P^1$ 다발이고, 이 다발을 따라 Leray 스펙트럼열을 쓰면 $\mathbb P^1$ 위 $\mathcal O(n)$ 의 코호몰로지만 알면 된다. 거기서는 답이 초등적이다. $n\ge0$ 이면 $H^0$ 만, $n\le-2$ 이면 $H^1$ 만, $n=-1$ 이면 둘 다 $0$ 이다. 마지막 경우가 "벽 위" 조건의 국소 판본이고, $\ell(w)$ 가 하나씩 오르는 것이 다발을 하나씩 통과할 때마다 차수가 하나씩 밀리는 것이다.
 
 ## 표수 $p$ 에서 무너진다
 

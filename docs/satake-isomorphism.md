@@ -59,7 +59,7 @@ $$
 f^\iota(g)=f({}^tg)
 $$
 
-를 유도한다. 반자기동형이므로 $(f_1*f_2)^\iota=f_2^\iota*f_1^\iota$ 다. 그런데 **Cartan 분해**가
+를 유도한다. 반자기동형이므로 $(f_1\ast f_2)^\iota=f_2^\iota\ast f_1^\iota$ 다. 그런데 **Cartan 분해**가
 
 $$
 G=\bigsqcup_{\lambda_1\ge\cdots\ge\lambda_n}K\,p^{\lambda}K,
@@ -78,7 +78,7 @@ $$
 
 Cartan 분해는 $\mathcal H(G,K)$ 의 기저가 **지배적 쌍대지표** $\lambda\in X_*(T)^+$ 로 매겨진다고 말한다. $\mathrm{GL}_n$ 이면 $\lambda_1\ge\cdots\ge\lambda_n$ 인 정수열이다.
 
-한편 $\widehat G=\mathrm{GL}_n(\mathbb C)$ 의 기약표현도 최고무게 $\lambda_1\ge\cdots\ge\lambda_n$ 로 매겨진다. 표현환 $R(\widehat G)$ 의 기저가 그 지표 $\chi_\lambda$ 들이다.
+한편 $\widehat G=\mathrm{GL}\_n(\mathbb C)$ 의 기약표현도 최고무게 $\lambda_1\ge\cdots\ge\lambda_n$ 로 매겨진다. 표현환 $R(\widehat G)$ 의 기저가 그 지표 $\chi_\lambda$ 들이다.
 
 $$
 \{\,KgK\,\}\;\longleftrightarrow\;X_*(T)^+\;\longleftrightarrow\;\{\,\text{기약표현}\,\}
@@ -131,7 +131,7 @@ $$
 
 이고 단위원은 $1_K$ 다.
 
-**Cartan 분해** $G=\bigsqcup_{\lambda\in X_*(T)^+}K\lambda(\varpi)K$ 에 의해 $\{1_{K\lambda(\varpi)K}\}$ 가 $\mathbb C$ 기저를 이룬다. $\varpi$ 는 소원, $X_*(T)$ 는 극대 분열 원환면의 쌍대지표 격자, $X_*(T)^+$ 는 고정한 Borel 에 대해 지배적인 것들이다.
+**Cartan 분해** $G=\bigsqcup_{\lambda\in X_\ast(T)^+}K\lambda(\varpi)K$ 에 의해 $\{1_{K\lambda(\varpi)K}\}$ 가 $\mathbb C$ 기저를 이룬다. $\varpi$ 는 소원, $X_\ast(T)$ 는 극대 분열 원환면의 쌍대지표 격자, $X_\ast(T)^+$ 는 고정한 Borel 에 대해 지배적인 것들이다.
 
 ## Satake 변환과 정리
 
@@ -149,13 +149,13 @@ $$
 > $$
 > 이다. $W$ 는 Weyl 군이다. 특히 $\mathcal H(G,K)$ 는 가환이다.[^1]
 
-쌍대군 $\widehat G$ 는 $G$ 의 근계를 뒤집어 만든 복소 환원군이고, $X_*(T)=X^*(\widehat T)$ 다. 그래서 오른쪽은 $\widehat G$ 의 표현환이다.
+쌍대군 $\widehat G$ 는 $G$ 의 근계를 뒤집어 만든 복소 환원군이고, $X_\ast(T)=X^\ast(\widehat T)$ 다. 그래서 오른쪽은 $\widehat G$ 의 표현환이다.
 
 $$
 \mathbb C[X_*(T)]^W=\mathbb C[X^*(\widehat T)]^W=R(\widehat G)\otimes\mathbb C
 $$
 
-$G=\mathrm{GL}_n$ 이면 $X_*(T)=\mathbb Z^n$ 과 $W=S_n$ 과 $\widehat G=\mathrm{GL}_n(\mathbb C)$ 이므로
+$G=\mathrm{GL}\_n$ 이면 $X_\ast(T)=\mathbb Z^n$ 과 $W=S_n$ 과 $\widehat G=\mathrm{GL}_n(\mathbb C)$ 이므로
 
 $$
 \mathcal H\bigl(\mathrm{GL}_n(F),\mathrm{GL}_n(\mathcal O)\bigr)\;\cong\;
@@ -190,7 +190,7 @@ $r$ 이 표준표현이면 표준 $L$ 인자 $\prod_i(1-\alpha_iq^{-s})^{-1}$ �
 
 ## GL_2 의 명시적 상
 
-$G=\mathrm{GL}_2(\mathbb Q_p)$ 와 $K=\mathrm{GL}_2(\mathbb Z_p)$ 에서 기저를 $a\ge0$ 에 대한 $T(p^b,p^{a+b})=1_{K\,\mathrm{diag}(p^b,p^{a+b})K}$ 로 쓰면
+$G=\mathrm{GL}\_2(\mathbb Q_p)$ 와 $K=\mathrm{GL}\_2(\mathbb Z_p)$ 에서 기저를 $a\ge0$ 에 대한 $T(p^b,p^{a+b})=1_{K\,\mathrm{diag}(p^b,p^{a+b})K}$ 로 쓰면
 
 $$
 \mathcal S\bigl(T(p^b,p^{a+b})\bigr)
@@ -403,7 +403,7 @@ $$
 A_{\Pi_v}=\varphi\bigl(A_{\pi_v}\bigr)
 $$
 
-곧 함수성은 "매개변수를 $\varphi$ 로 밀어 보낸 것이 다시 자기동형 표현에서 나와야 한다" 는 진술이다. 정의가 이렇게 간단히 써지는 것이 Satake 동형 덕이다. 예를 들어 $\mathrm{Sym}^m:\mathrm{GL}_2(\mathbb C)\to\mathrm{GL}_{m+1}(\mathbb C)$ 에 대한 함수성이 $\mathrm{Sym}^m$ 올림이고, $(\alpha,\beta)\mapsto(\alpha^m,\alpha^{m-1}\beta,\dots,\beta^m)$ 이다. [Sato–Tate](sato-tate.md) 의 증명이 요구한 $L(s,\mathrm{Sym}^m\pi)$ 의 해석적 성질이 바로 이 올림의 존재 문제였다.
+곧 함수성은 "매개변수를 $\varphi$ 로 밀어 보낸 것이 다시 자기동형 표현에서 나와야 한다" 는 진술이다. 정의가 이렇게 간단히 써지는 것이 Satake 동형 덕이다. 예를 들어 $\mathrm{Sym}^m:\mathrm{GL}\_2(\mathbb C)\to\mathrm{GL}\_{m+1}(\mathbb C)$ 에 대한 함수성이 $\mathrm{Sym}^m$ 올림이고, $(\alpha,\beta)\mapsto(\alpha^m,\alpha^{m-1}\beta,\dots,\beta^m)$ 이다. [Sato–Tate](sato-tate.md) 의 증명이 요구한 $L(s,\mathrm{Sym}^m\pi)$ 의 해석적 성질이 바로 이 올림의 존재 문제였다.
 
 ## 기본 보조정리와 대각합 공식
 
@@ -423,7 +423,7 @@ $$
 \mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\;\simeq\;\mathrm{Rep}(\widehat G)
 $$
 
-$\mathrm{Gr}_G$ 의 $G(\mathcal O)$ 궤도가 $X_*(T)^+$ 로 매겨지고 그 위의 교차 코호몰로지 층이 기약표현에 대응한다. 함수 수준에서 층 수준으로 올라가면 Satake 변환의 $p^{-1}$ 보정항이 코호몰로지 차수의 이동으로 설명된다. Lusztig, Ginzburg, Mirković–Vilonen 을 거쳐 정리가 되었고, 쌍대군을 **정의**하는 방법을 준다는 점에서 기하학적 Langlands 강령의 출발점이다.
+$\mathrm{Gr}\_G$ 의 $G(\mathcal O)$ 궤도가 $X_\ast(T)^+$ 로 매겨지고 그 위의 교차 코호몰로지 층이 기약표현에 대응한다. 함수 수준에서 층 수준으로 올라가면 Satake 변환의 $p^{-1}$ 보정항이 코호몰로지 차수의 이동으로 설명된다. Lusztig, Ginzburg, Mirković–Vilonen 을 거쳐 정리가 되었고, 쌍대군을 **정의**하는 방법을 준다는 점에서 기하학적 Langlands 강령의 출발점이다.
 
 ## 계산
 

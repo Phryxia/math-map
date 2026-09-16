@@ -88,7 +88,7 @@ $$
 
 이다. $\mathrm{ch}$ 는 Chern 지표, $\mathrm{Td}$ 는 Todd 류다.
 
-> **Atiyah–Singer 지표 정리.** 콤팩트 다양체 위의 모든 타원 작용소에서 $\mathrm{ind}_{\mathrm{an}}(D)=\mathrm{ind}_{\mathrm{top}}(D)$ 다.
+> **Atiyah–Singer 지표 정리.** 콤팩트 다양체 위의 모든 타원 작용소에서 $\mathrm{ind}\_{\mathrm{an}}(D)=\mathrm{ind}\_{\mathrm{top}}(D)$ 다.
 
 ## 증명 전략
 

@@ -76,7 +76,7 @@ $$
 \eta : \mathrm{id}_{\mathcal{C}} \Rightarrow GF, \qquad \varepsilon : FG \Rightarrow \mathrm{id}_{\mathcal{D}}
 $$
 
-이 정해진다. $\eta_c = \varphi(\mathrm{id}_{Fc})$ 와 $\varepsilon_d = \varphi^{-1}(\mathrm{id}_{Gd})$ 로 두면 된다. 이들은 triangle identity를 만족한다.
+이 정해진다. $\eta_c = \varphi(\mathrm{id}\_{Fc})$ 와 $\varepsilon_d = \varphi^{-1}(\mathrm{id}\_{Gd})$ 로 두면 된다. 이들은 triangle identity를 만족한다.
 
 $$
 (\varepsilon F) \circ (F \eta) = \mathrm{id}_F, \qquad (G \varepsilon) \circ (\eta G) = \mathrm{id}_G

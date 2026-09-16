@@ -84,7 +84,7 @@ $$
 
 에 $\mathrm{GL}_n(\mathbb A_K)$ 가 오른쪽 평행이동으로 작용한다. 이 작용의 기약 성분을 **자기동형 표현**이라 한다. 특히 상수항이 사라지는 부분공간에서 나오는 것을 첨점 표현이라 하고, 이쪽이 Galois 표현에 대응한다.
 
-모든 자기동형 표현은 국소 표현의 제한 텐서곱 $\pi=\bigotimes'_v\pi_v$ 로 분해되고, 거의 모든 $v$ 에서 $\pi_v$ 가 불분기라 $n$ 개의 복소수 **[Satake 매개변수](satake-isomorphism.md)** $\alpha_{1,v},\dots,\alpha_{n,v}$ 로 결정된다. $L$ 함수는 이들로 만든다.
+모든 자기동형 표현은 국소 표현의 제한 텐서곱 $\pi=\bigotimes'\_v\pi_v$ 로 분해되고, 거의 모든 $v$ 에서 $\pi_v$ 가 불분기라 $n$ 개의 복소수 **[Satake 매개변수](satake-isomorphism.md)** $\alpha_{1,v},\dots,\alpha_{n,v}$ 로 결정된다. $L$ 함수는 이들로 만든다.
 
 $$
 L(s,\pi)=\prod_v\prod_{i=1}^n\big(1-\alpha_{i,v}\,q_v^{-s}\big)^{-1}
@@ -100,14 +100,14 @@ $L(s,\pi)$ 쪽의 해석적 성질은 자기동형 표현론에서 증명되어 
 
 ## 함자성
 
-상호성보다 더 근본적인 추측이 함자성이다. 각 환원군 $G$ 에 **$L$ 군** ${}^LG$ 라는 이중군을 붙이는데, 근계를 뒤집어 만든 쌍대군 $\hat G$ 에 Galois 군을 반직적으로 붙인 것이다. 예를 들어 ${}^L\mathrm{GL}_n=\mathrm{GL}_n(\mathbb C)\times G_K$ 이고 ${}^L\mathrm{SO}_{2n+1}=\mathrm{Sp}_{2n}(\mathbb C)\times G_K$ 다.
+상호성보다 더 근본적인 추측이 함자성이다. 각 환원군 $G$ 에 **$L$ 군** ${}^LG$ 라는 이중군을 붙이는데, 근계를 뒤집어 만든 쌍대군 $\hat G$ 에 Galois 군을 반직적으로 붙인 것이다. 예를 들어 ${}^L\mathrm{GL}\_n=\mathrm{GL}\_n(\mathbb C)\times G_K$ 이고 ${}^L\mathrm{SO}\_{2n+1}=\mathrm{Sp}\_{2n}(\mathbb C)\times G_K$ 다.
 
 > **함자성.** $L$ 군 준동형 ${}^LH\to{}^LG$ 가 있으면, $H$ 의 자기동형 표현을 $G$ 의 자기동형 표현으로 보내는 옮김이 있어야 하고 $L$ 함수가 대응해야 한다.
 
 상호성은 특수한 경우로 흡수된다. $H$ 를 자명군으로 두면 ${}^LH=G_K$ 이고, $G_K\to\mathrm{GL}_n(\mathbb C)\times G_K$ 준동형이 바로 Galois 표현이기 때문이다. 함자성이 주는 구체적 결과의 목록이 길다.
 
 - **밑변경**: 확대 $K'/K$ 를 따라 자기동형 표현을 올린다. Wiles 의 증명에서 핵심 도구였다.
-- **대칭 거듭제곱**: $\mathrm{GL}_2$ 의 $\pi$ 에서 $\mathrm{Sym}^k\pi$ 를 $\mathrm{GL}_{k+1}$ 의 자기동형 표현으로 만든다. Sato–Tate 추측이 여기서 나온다.
+- **대칭 거듭제곱**: $\mathrm{GL}_2$ 의 $\pi$ 에서 $\mathrm{Sym}^k\pi$ 를 $\mathrm{GL}\_{k+1}$ 의 자기동형 표현으로 만든다. Sato–Tate 추측이 여기서 나온다.
 - **자기동형 유도**: $H$ 를 부분체의 군으로 두면 유체론의 유도 표현 이야기가 일반화된다.
 
 # 성질

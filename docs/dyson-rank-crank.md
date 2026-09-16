@@ -119,7 +119,7 @@ $$
 C(z;q)=\sum_{n\ge0}\sum_m M(m,n)z^mq^n=\prod_{n\ge1}\frac{1-q^n}{(1-zq^n)(1-z^{-1}q^n)}
 $$
 
-여기서 $(a;q)_n=\prod_{j=0}^{n-1}(1-aq^j)$ 다. $z=1$ 을 넣으면 둘 다 $\sum p(n)q^n$ 으로 돌아온다.
+여기서 $(a;q)\_n=\prod_{j=0}^{n-1}(1-aq^j)$ 다. $z=1$ 을 넣으면 둘 다 $\sum p(n)q^n$ 으로 돌아온다.
 
 $z=-1$ 에서 $R(-1;q)$ 가 Ramanujan 의 세 번째 차수 mock theta 함수 $f(q)$ 다. 이것이 rank 를 mock 모듈러 형식에 연결하는 지점이고, 일반적으로 $z$ 가 $1$ 의 $k$ 제곱근이면 $R(z;q)$ 가 무게 $1/2$ 의 mock 모듈러 형식이 된다. shadow 는 그 $k$ 에 따른 theta 급수다.
 

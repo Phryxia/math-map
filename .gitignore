@@ -2,3 +2,5 @@ sandbox/*
 dev/queue.port
 dev/queue-server.log
 dev/.session
+node_modules/
+package-lock.json

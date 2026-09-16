@@ -45,7 +45,7 @@ $$
 
 다. 행렬식 쪽은 검산에 쓸 수 있다. 아래 코드가 두 등식을 모두 확인한다.
 
-$\ell$ 진 표현의 언어로 말하면 이것은 [Galois 표현](galois-representations.md) $\rho_{E,\ell}:\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q)\to\mathrm{GL}_2(\mathbb F_\ell)$ 의 Frobenius 에서의 값이다. 이론에서 $\mathrm{tr}\,\rho(\mathrm{Frob}_p)=a_p$ 라고 쓰는 그 등식을, 알고리즘에서는 실제로 행렬을 만들어 대각합을 잰다.
+$\ell$ 진 표현의 언어로 말하면 이것은 [Galois 표현](galois-representations.md) $\rho_{E,\ell}:\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\mathbb F_\ell)$ 의 Frobenius 에서의 값이다. 이론에서 $\mathrm{tr}\,\rho(\mathrm{Frob}_p)=a_p$ 라고 쓰는 그 등식을, 알고리즘에서는 실제로 행렬을 만들어 대각합을 잰다.
 
 ## 나눗셈 다항식이 등분점을 대수로 바꾼다
 
@@ -341,7 +341,7 @@ for p in [5, 101, 10**4 + 7, 10**8 + 7, 2**61 - 1]:
 - **안전성 조건 확인.** $\#E(\mathbb F_p)=p$ 인 **비정상(anomalous)** 곡선은 이산로그가 선형시간에 풀리고, $\#E$ 가 $p^k-1$ 을 작은 $k$ 에서 나누면 MOV 공격으로 유한체 이산로그로 환원된다. 위수를 알아야 이 조건들을 검사할 수 있다.
 - **곡선 개수 세기.** 주어진 위수를 갖는 곡선을 찾거나(복소곱셈법의 역방향), 위수 분포를 실험적으로 조사하는 데 쓰인다.
 - **수치 실험.** 대량의 $a_p$ 표가 Sato–Tate 분포나 BSD 추측의 수치 검증에 쓰인다. 큰 $p$ 영역의 표는 SEA 가 만든다.
-- **$\ell$ 진 표현의 계산.** $\varphi|_{E[\ell]}$ 의 행렬은 [Galois 표현](galois-representations.md) $\rho_{E,\ell}$ 의 Frobenius 에서의 상이다. 상이 $\mathrm{GL}_2(\mathbb F_\ell)$ 전체인지 판정하는 Serre 의 문제를 실제로 계산할 때 이 행렬을 쓴다.
+- **$\ell$ 진 표현의 계산.** $\varphi|\_{E[\ell]}$ 의 행렬은 [Galois 표현](galois-representations.md) $\rho_{E,\ell}$ 의 Frobenius 에서의 상이다. 상이 $\mathrm{GL}\_2(\mathbb F_\ell)$ 전체인지 판정하는 Serre 의 문제를 실제로 계산할 때 이 행렬을 쓴다.
 
 [^1]: R. Schoof, *Elliptic curves over finite fields and the computation of square roots mod p*, Math. Comp. **44** (1985), 483–494, 그리고 *Counting points on elliptic curves over finite fields*, J. Théor. Nombres Bordeaux **7** (1995), 219–254. Elkies–Atkin 개선의 표준 서술은 R. Lercier, F. Morain 의 논문들과 I. Blake, G. Seroussi, N. Smart, *Elliptic Curves in Cryptography* (1999) VII장. 나눗셈 다항식과 Hasse 정리는 J. Silverman, *The Arithmetic of Elliptic Curves* (2판, 2009) III, V장. 모듈러 다항식과 $X_0(\ell)$ 의 모듈러 해석은 F. Diamond, J. Shurman, *A First Course in Modular Forms* (2005) 8장. 본문의 수치 계산은 직접 한 것이다.
 

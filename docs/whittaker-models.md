@@ -45,7 +45,7 @@ $$
 W_\varphi\!\left(\begin{pmatrix}\gamma&\\&1\end{pmatrix}g\right)
 $$
 
-$\mathrm{GL}_1$ 자리에 $\mathrm{GL}_{n-1}$ 이 온 것이다. 이 합이 Rankin–Selberg 펼치기의 재료다.
+$\mathrm{GL}_1$ 자리에 $\mathrm{GL}\_{n-1}$ 이 온 것이다. 이 합이 Rankin–Selberg 펼치기의 재료다.
 
 ## 왜 하나뿐인가
 
@@ -133,7 +133,7 @@ $$
 
 # 성질
 
-> **정리 (Gelfand–Kazhdan, Shalika).** $\mathrm{GL}_n(F)$ 의 기약 허용 표현 $\pi$ 에 대해
+> **정리 (Gelfand–Kazhdan, Shalika).** $\mathrm{GL}\_n(F)$ 의 기약 허용 표현 $\pi$ 에 대해
 > $$
 > \dim\mathrm{Hom}_{N_n(F)}(\pi,\psi_N)\le1
 > $$

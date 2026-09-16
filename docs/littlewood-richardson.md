@@ -18,7 +18,7 @@ $$
 
 Knutson 과 Tao 는 계수를 **볼록 다면체의 정수점 개수**로 다시 쓰는 모형을 도입해 이 문제를 정리했다.[^1] $\mathrm{hive}$ 는 삼각형 격자 위의 수 배열이고 조건은 부등식뿐이라, 대칭성이 다면체의 대칭으로 눈에 보인다. 더 중요한 결과가 따라 나왔다.
 
-> **Saturation 정리.** $c^{N\nu}_{N\lambda,N\mu}\ne0$ 인 $N\ge1$ 이 있으면 $c^\nu_{\lambda\mu}\ne0$ 이다.
+> **Saturation 정리.** $c^{N\nu}\_{N\lambda,N\mu}\ne0$ 인 $N\ge1$ 이 있으면 $c^\nu_{\lambda\mu}\ne0$ 이다.
 
 이 한 줄이 Horn 추측을 해결한다. 두 에르미트 행렬의 합의 고유값이 어떤 값을 가질 수 있는가라는 선형대수 문제가, LR 수가 $0$ 이 아닌 조건과 정확히 같은 것이었기 때문이다.
 
@@ -127,7 +127,7 @@ for (const lam of parts(3, 3)) for (const mu of parts(3, 3)) for (const nu of pa
 console.log(`saturation 확인: ${tested} 쌍, 어긋남 ${bad}`);   // 99 쌍, 어긋남 0
 ```
 
-값 자체는 $c^{2\nu}_{2\lambda,2\mu}\ge c^\nu_{\lambda\mu}$ 로 커지지만 **$0$ 인지 아닌지**는 정확히 보존된다. 이 현상이 정리로 증명된 것이 saturation 이다.
+값 자체는 $c^{2\nu}\_{2\lambda,2\mu}\ge c^\nu_{\lambda\mu}$ 로 커지지만 **$0$ 인지 아닌지**는 정확히 보존된다. 이 현상이 정리로 증명된 것이 saturation 이다.
 
 # 정의
 
@@ -182,7 +182,7 @@ $$
 
 ## Saturation 정리의 위치
 
-정리는 "hive 다면체가 비어 있지 않으면 정수점을 갖는다" 는 진술이다. 유사한 다면체에서 이런 성질은 흔하지 않다. 예를 들어 $\mathrm{GL}_n$ 대신 다른 군의 텐서곱 중복도를 세는 다면체는 saturation 을 만족하지 않고, 실제로 $\mathrm{Sp}_{2n}$ 에서는 반례가 있다. $\mathrm{GL}_n$ 에서만 성립하는 이 특수성이 honeycomb 의 극점 구조에서 나온다.
+정리는 "hive 다면체가 비어 있지 않으면 정수점을 갖는다" 는 진술이다. 유사한 다면체에서 이런 성질은 흔하지 않다. 예를 들어 $\mathrm{GL}_n$ 대신 다른 군의 텐서곱 중복도를 세는 다면체는 saturation 을 만족하지 않고, 실제로 $\mathrm{Sp}\_{2n}$ 에서는 반례가 있다. $\mathrm{GL}_n$ 에서만 성립하는 이 특수성이 honeycomb 의 극점 구조에서 나온다.
 
 ## 복잡도의 갈림
 
@@ -219,7 +219,7 @@ $\mathrm{Gr}(k,n)$ 의 코호몰로지 곱셈 구조상수가 LR 수이므로, h
 
 ## 표현론의 포화 현상
 
-$c^{N\nu}_{N\lambda,N\mu}$ 를 $N$ 의 함수로 보면 다면체의 Ehrhart 준다항식이 된다. 곧 텐서곱 중복도의 점근 거동이 다면체의 부피로 읽힌다. 이 관점이 반군 $\{(\lambda,\mu,\nu):c^\nu_{\lambda\mu}\ne0\}$ 의 유한생성성(Klyachko, Belkale)과 그 반군의 면 구조를 다루는 이론으로 이어진다.
+$c^{N\nu}\_{N\lambda,N\mu}$ 를 $N$ 의 함수로 보면 다면체의 Ehrhart 준다항식이 된다. 곧 텐서곱 중복도의 점근 거동이 다면체의 부피로 읽힌다. 이 관점이 반군 $\{(\lambda,\mu,\nu):c^\nu_{\lambda\mu}\ne0\}$ 의 유한생성성(Klyachko, Belkale)과 그 반군의 면 구조를 다루는 이론으로 이어진다.
 
 [^1]: A. Knutson, T. Tao, *The honeycomb model of* $\mathrm{GL}_n(\mathbb C)$ *tensor products I: proof of the saturation conjecture*, J. Amer. Math. Soc. **12** (1999), 1055–1090. 대칭성과 다면체 구조는 같은 저자와 C. Woodward 의 후속 논문에 있다. Horn 문제 전체의 개관은 W. Fulton, *Eigenvalues, invariant factors, highest weights, and Schubert calculus*, Bull. Amer. Math. Soc. **37** (2000). 본문의 LR 계수 계산과 saturation 실험은 직접 한 것이다.
 

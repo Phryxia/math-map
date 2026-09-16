@@ -94,7 +94,7 @@ $$
 |x|_{\mathbb A}=\prod_v|x_v|_v
 $$
 
-거의 모든 자리에서 $|x_v|_v=1$ 이므로 유한 곱이라 잘 정의된다. 곱 공식은 정확히 $\alpha\in K^\times$ 마다 $|\alpha|_{\mathbb A}=1$ 이라는 것 라는 뜻이므로, $K^\times$ 가 노름 1 인 부분군 $\mathbb A_K^{\times,1}$ 안에 들어간다.
+거의 모든 자리에서 $|x_v|\_v=1$ 이므로 유한 곱이라 잘 정의된다. 곱 공식은 정확히 $\alpha\in K^\times$ 마다 $|\alpha|\_{\mathbb A}=1$ 이라는 것 라는 뜻이므로, $K^\times$ 가 노름 1 인 부분군 $\mathbb A_K^{\times,1}$ 안에 들어간다.
 
 ## 이델류군
 
@@ -124,7 +124,7 @@ $$
 
 이 한 문장이 두 고전 정리와 동치다. 콤팩트성을 유한 자리 쪽으로 밀면 **유수의 유한성**이 나오고, 아르키메데스 자리 쪽으로 밀면 **Dirichlet 단원 정리**가 나온다. 유수군과 단원군이 하나의 콤팩트 몫의 두 그림자였던 셈이다.
 
-$|\cdot|_{\mathbb A}\colon C_K\to\mathbb R_{>0}$ 의 핵이 이 콤팩트군이므로 구조가 이렇게 정리된다.
+$|\cdot|\_{\mathbb A}\colon C_K\to\mathbb R_{>0}$ 의 핵이 이 콤팩트군이므로 구조가 이렇게 정리된다.
 
 $$
 C_K\cong\mathbb R_{>0}\times C_K^1,\qquad C_K^1 \text{ 콤팩트}

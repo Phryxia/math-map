@@ -1,0 +1,12 @@
+{
+  "name": "math-map",
+  "private": true,
+  "description": "한국어 수학 지식 그래프. dev/ 스크립트의 의존성만 관리한다.",
+  "scripts": {
+    "test": "node --test dev/*.test.mjs",
+    "validate": "node dev/graph.mjs validate && node dev/graph.mjs cycles && node dev/render-check.mjs"
+  },
+  "dependencies": {
+    "markdown-it": "^14.1.0"
+  }
+}

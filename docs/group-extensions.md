@@ -58,7 +58,7 @@ $H^2(\mathbb Z/2,\mathbb Z/2)$ 의 원소가 두 개이고, 그 둘이 정확히
 
 ## Jordan–Hölder 는 세분에서 나온다
 
-합성열의 유일성은 Zassenhaus 의 **나비 보조정리**에서 나온다. 두 부분군 쌍 $(A\triangleleft A^*)$ 와 $(B\triangleleft B^*)$ 에 대해
+합성열의 유일성은 Zassenhaus 의 **나비 보조정리**에서 나온다. 두 부분군 쌍 $(A\triangleleft A^\ast)$ 와 $(B\triangleleft B^\ast)$ 에 대해
 
 $$
 \frac{A(A^*\cap B^*)}{A(A^*\cap B)}\ \cong\ \frac{B(A^*\cap B^*)}{B(A\cap B^*)}
@@ -180,7 +180,7 @@ $$
 1\to H_2(Q,\mathbb Z)\to\tilde Q\to Q\to1
 $$
 
-$n\ge8$ 인 $A_n$ 의 Schur 곱셈자는 $\mathbb Z/2$ 이고, 그 이중덮개가 $2.A_n$ 이다. 산재군에도 같은 표기가 쓰인다. $2.\mathrm{Co}_1$ 과 $6.\mathrm{Suz}$ 와 $3.\mathrm{Fi}_{24}'$ 처럼 앞에 붙는 숫자가 Schur 곱셈자의 위수다.
+$n\ge8$ 인 $A_n$ 의 Schur 곱셈자는 $\mathbb Z/2$ 이고, 그 이중덮개가 $2.A_n$ 이다. 산재군에도 같은 표기가 쓰인다. $2.\mathrm{Co}\_1$ 과 $6.\mathrm{Suz}$ 와 $3.\mathrm{Fi}\_{24}'$ 처럼 앞에 붙는 숫자가 Schur 곱셈자의 위수다.
 
 [괴물군](monstrous-moonshine.md)의 Schur 곱셈자는 자명해서 $\mathbb M$ 자신이 보편 중심확대다. 반면 $2.\mathrm{B}$ (아기 괴물의 이중덮개)가 $\mathbb M$ 의 중심화군으로 나타나므로, 중심확대는 산재군을 서로 잇는 배선 역할을 한다.
 

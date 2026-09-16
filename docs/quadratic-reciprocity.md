@@ -40,7 +40,7 @@ graph LR
 
 ## 두 얼굴을 잇는 다리
 
-$\mathbb Q(\zeta_p)$ 의 Galois 군이 $(\mathbb Z/p\mathbb Z)^\times$ 이고, 지표 2 인 부분군에 대응하는 이차 부분체가 정확히 하나 있다. 그것이 $p^*=(-1)^{(p-1)/2}p$ 에 대한 $\mathbb Q(\sqrt{p^*})$ 다.
+$\mathbb Q(\zeta_p)$ 의 Galois 군이 $(\mathbb Z/p\mathbb Z)^\times$ 이고, 지표 2 인 부분군에 대응하는 이차 부분체가 정확히 하나 있다. 그것이 $p^\ast=(-1)^{(p-1)/2}p$ 에 대한 $\mathbb Q(\sqrt{p^\ast})$ 다.
 
 $q$ 가 이 이차체에서 분해되는지는 $\left(\frac{p^*}q\right)$ 가 결정한다. 반면 $q$ 가 $\mathbb Q(\zeta_p)$ 에서 어떻게 분해되는지는 $q \bmod p$ 가 결정한다. 같은 소수 $q$ 의 같은 분해 행동을 두 방식으로 읽은 것이므로 두 답이 일치해야 하고, 그 일치가 상호법칙이다.
 
@@ -121,7 +121,7 @@ $$
 
 ## Gauss 합을 쓴 증명
 
-두 단계다. 먼저 $g^2=p^*$ 를 보인다. 여기서 $p^*=(-1)^{(p-1)/2}p$ 다.
+두 단계다. 먼저 $g^2=p^\ast$ 를 보인다. 여기서 $p^\ast=(-1)^{(p-1)/2}p$ 다.
 
 $$
 g^2=\sum_{a,b}\Big(\frac{ab}p\Big)\zeta^{a+b}
@@ -137,7 +137,7 @@ $$
 g^q=\sum_a\Big(\frac ap\Big)\zeta^{aq}=\Big(\frac qp\Big)g
 $$
 
-$a\mapsto aq$ 로 치환하면서 나온 $\left(\frac qp\right)$ 다. 한편 $g^q=g\cdot(g^2)^{(q-1)/2}=g\cdot(p^*)^{(q-1)/2}$ 이고, Euler 판정법으로 이것이 $g\left(\frac{p^*}q\right)$ 다. $g\ne0$ 이므로 두 식을 비교하면
+$a\mapsto aq$ 로 치환하면서 나온 $\left(\frac qp\right)$ 다. 한편 $g^q=g\cdot(g^2)^{(q-1)/2}=g\cdot(p^\ast)^{(q-1)/2}$ 이고, Euler 판정법으로 이것이 $g\left(\frac{p^\ast}q\right)$ 다. $g\ne0$ 이므로 두 식을 비교하면
 
 $$
 \Big(\frac qp\Big)=\Big(\frac{p^*}q\Big)

@@ -84,7 +84,7 @@ T_\ell E=\varprojlim_nE[\ell^n](\bar K)\cong\mathbb Z_\ell^2,
 \qquad V_\ell E=T_\ell E\otimes\mathbb Q_\ell
 $$
 
-이다. $G_K$ 가 꼬임점에 작용하므로 2 차원 표현 $\rho_{E,\ell}\colon G_K\to\mathrm{GL}_2(\mathbb Q_\ell)$ 을 얻는다. 이것이 $H^1_{\mathrm{et}}(E_{\bar K},\mathbb Q_\ell)$ 의 쌍대이며, 좋은 환원을 갖는 $\mathfrak p$ 에서
+이다. $G_K$ 가 꼬임점에 작용하므로 2 차원 표현 $\rho_{E,\ell}\colon G_K\to\mathrm{GL}\_2(\mathbb Q_\ell)$ 을 얻는다. 이것이 $H^1_{\mathrm{et}}(E_{\bar K},\mathbb Q_\ell)$ 의 쌍대이며, 좋은 환원을 갖는 $\mathfrak p$ 에서
 
 $$
 \mathrm{tr}\,\rho_{E,\ell}(\mathrm{Frob}_{\mathfrak p})=a_{\mathfrak p}=N\mathfrak p+1-\#E(\mathbb F_{\mathfrak p})
@@ -132,7 +132,7 @@ Deligne 은 무게 $k\ge2$ 의 Hecke 고유형식마다 2 차원 $\ell$ 진 표�
 
 반대 방향, 곧 주어진 Galois 표현이 어떤 고유형식에서 오는지를 보이는 것이 모듈러성이다. 이 방향의 도구가 변형 이론이다. mod $\ell$ 표현 $\bar\rho$ 를 고정하고 그것으로 환원되는 $\ell$ 진 표현들의 보편 변형환 $R$ 을 만든 뒤, 모듈러 표현만 모은 Hecke 대수 $T$ 와 비교한다. $R=T$ 를 증명하면 모든 변형이 모듈러라는 결론이 나오며, 이것이 Wiles 의 전략이다.
 
-Serre 추측은 그 출발점을 준다. $\bar\rho\colon G_{\mathbb Q}\to\mathrm{GL}_2(\bar{\mathbb F}_\ell)$ 이 기약이고 홀수면 반드시 어떤 모듈러 형식의 mod $\ell$ 표현이며, 그 무게와 레벨까지 $\bar\rho$ 의 분기 자료로 예측된다. Khare 와 Wintenberger 가 2009 년에 증명했다.
+Serre 추측은 그 출발점을 준다. $\bar\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\bar{\mathbb F}\_\ell)$ 이 기약이고 홀수면 반드시 어떤 모듈러 형식의 mod $\ell$ 표현이며, 그 무게와 레벨까지 $\bar\rho$ 의 분기 자료로 예측된다. Khare 와 Wintenberger 가 2009 년에 증명했다.
 
 ## 무엇이 어렵고 무엇이 쉬운가
 

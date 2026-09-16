@@ -135,7 +135,7 @@ Galois 연결은 합성에서 닫혀 있다. $f_1\dashv g_1:P\to Q$ 와 $f_2\das
 
 ## 고정점만 남기면 동형이다
 
-반변 Galois 연결 $(f,g)$ 에서 $P_c=\{p:gf(p)=p\}$ 와 $Q_c=\{q:fg(q)=q\}$ 로 두면 $f|_{P_c}:P_c\to Q_c$ 가 순서를 뒤집는 전단사이고 역이 $g|_{Q_c}$ 다. 나아가 $P$ 가 완비 격자면 $P_c$ 도 완비 격자다. 단 $P_c$ 의 상한은 $P$ 의 상한이 아니라 그것을 닫은 것이다.
+반변 Galois 연결 $(f,g)$ 에서 $P_c=\{p:gf(p)=p\}$ 와 $Q_c=\{q:fg(q)=q\}$ 로 두면 $f|\_{P_c}:P_c\to Q_c$ 가 순서를 뒤집는 전단사이고 역이 $g|\_{Q_c}$ 다. 나아가 $P$ 가 완비 격자면 $P_c$ 도 완비 격자다. 단 $P_c$ 의 상한은 $P$ 의 상한이 아니라 그것을 닫은 것이다.
 
 $$
 \bigvee_{P_c}S=c\left(\bigvee_P S\right),\qquad \bigwedge_{P_c}S=\bigwedge_P S

@@ -41,7 +41,7 @@ $\alpha_c$ 를 $\alpha$ 의 $c$ 성분이라 한다. 모든 성분이 동형사�
 ## 두 가지 합성
 
 - **수직 합성.** $\alpha : F \Rightarrow G$ 와 $\beta : G \Rightarrow H$ 에 대해 $(\beta \circ \alpha)_c = \beta_c \circ \alpha_c$ 로 정의한다. 두 naturality 사각형을 옆으로 붙이면 합성의 naturality 가 나온다.
-- **수평 합성.** $C \to D$ 위의 $\alpha : F \Rightarrow G$ 와 $D \to E$ 위의 $\beta : H \Rightarrow K$ 에 대해 $(\beta * \alpha)_c = K(\alpha_c) \circ \beta_{F(c)} = \beta_{G(c)} \circ H(\alpha_c)$ 로 정의한다. 두 표현이 같다는 것 자체가 $\beta$ 의 naturality 다.
+- **수평 합성.** $C \to D$ 위의 $\alpha : F \Rightarrow G$ 와 $D \to E$ 위의 $\beta : H \Rightarrow K$ 에 대해 $(\beta \ast \alpha)\_c = K(\alpha_c) \circ \beta_{F(c)} = \beta_{G(c)} \circ H(\alpha_c)$ 로 정의한다. 두 표현이 같다는 것 자체가 $\beta$ 의 naturality 다.
 
 두 합성은 교환법칙(interchange law)으로 맞물리며, 이 구조가 범주·functor·자연변환을 2-범주로 만든다.
 

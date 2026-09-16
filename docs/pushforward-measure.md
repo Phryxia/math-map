@@ -49,7 +49,7 @@ $$
 (\phi_*\mu)\Bigl(\bigsqcup_n B_n\Bigr)=\mu\Bigl(\bigsqcup_n\phi^{-1}(B_n)\Bigr)=\sum_n\mu(\phi^{-1}(B_n))
 $$
 
-이다. $\varphi_*\mu(\emptyset) = \mu(\emptyset) = 0$ 이므로 $\varphi_*\mu$ 는 측도다. 이 확인이 짧게 끝나는 것이 전적으로 역상의 좋은 성질 덕분이다.
+이다. $\varphi_\ast\mu(\emptyset) = \mu(\emptyset) = 0$ 이므로 $\varphi_*\mu$ 는 측도다. 이 확인이 짧게 끝나는 것이 전적으로 역상의 좋은 성질 덕분이다.
 
 # 성질
 

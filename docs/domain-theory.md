@@ -81,7 +81,7 @@ $$
 
 이다. 나아가 $F(x)\sqsubseteq x$ 인 모든 $x$ 에 대해 $\mathrm{lfp}(F)\sqsubseteq x$ 다.
 
-증명은 짧다. $\bot\sqsubseteq F(\bot)$ 이고 단조성으로 $F^n(\bot)$ 이 사슬이므로 상한 $x^*$ 이 존재한다. 연속성으로 $F(x^*)=\bigsqcup F^{n+1}(\bot)=x^*$ 이다. 최소성은 $F(x)\sqsubseteq x$ 에서 귀납으로 $F^n(\bot)\sqsubseteq x$ 를 얻어 나온다.
+증명은 짧다. $\bot\sqsubseteq F(\bot)$ 이고 단조성으로 $F^n(\bot)$ 이 사슬이므로 상한 $x^*$ 이 존재한다. 연속성으로 $F(x^\ast)=\bigsqcup F^{n+1}(\bot)=x^\ast$ 이다. 최소성은 $F(x)\sqsubseteq x$ 에서 귀납으로 $F^n(\bot)\sqsubseteq x$ 를 얻어 나온다.
 
 ## Knaster–Tarski 와의 비교
 

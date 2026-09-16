@@ -39,7 +39,7 @@ $$
 | 변수 | Satake 매개변수 $\alpha_i$ | 쌍대 토러스의 좌표 |
 | 값 | $W^\circ(\varpi^\lambda)$ | 기약지표 $s_\lambda(\alpha)$ |
 
-첫 줄이 우연이 아니다. $X_*(T)=X^*(\widehat T)$ 는 [Satake 동형](satake-isomorphism.md)이 쌍대군을 만들 때 쓴 바로 그 동일시다. 두 집합이 같은 격자이므로 두 함수를 비교하는 것이 뜻을 갖게 되고, Casselman–Shalika 공식은 **그 비교가 등식이라고 말한다.**
+첫 줄이 우연이 아니다. $X_\ast(T)=X^\ast(\widehat T)$ 는 [Satake 동형](satake-isomorphism.md)이 쌍대군을 만들 때 쓴 바로 그 동일시다. 두 집합이 같은 격자이므로 두 함수를 비교하는 것이 뜻을 갖게 되고, Casselman–Shalika 공식은 **그 비교가 등식이라고 말한다.**
 
 ## 지표가 나올 수밖에 없는 이유
 
@@ -90,7 +90,7 @@ $$
 W^\circ\begin{pmatrix}\varpi^m&\\&1\end{pmatrix}=q^{-m/2}\,\frac{\alpha^{m+1}-\beta^{m+1}}{\alpha-\beta}
 $$
 
-이다. 오른쪽 분수가 $\mathrm{Sym}^m$ 의 지표이고, 고전적으로는 정규화된 Hecke 고유값 $a_{p^m}/p^{m(k-1)/2}$ 다. 곧 이 공식은 **$\mathrm{GL}_2$ 에서 Hecke 재귀 $a_{p^{m+1}}=a_pa_{p^m}-p^{k-1}a_{p^{m-1}}$ 의 일반화**다.
+이다. 오른쪽 분수가 $\mathrm{Sym}^m$ 의 지표이고, 고전적으로는 정규화된 Hecke 고유값 $a_{p^m}/p^{m(k-1)/2}$ 다. 곧 이 공식은 **$\mathrm{GL}\_2$ 에서 Hecke 재귀 $a_{p^{m+1}}=a_pa_{p^m}-p^{k-1}a_{p^{m-1}}$ 의 일반화**다.
 
 # 성질
 
@@ -192,7 +192,7 @@ $$
 W^\circ(\varpi^\lambda)=\delta_B^{1/2}(\varpi^\lambda)\,\chi_\lambda(A_\pi),\qquad\chi_\lambda=\widehat G\ \text{의 기약지표}
 $$
 
-$\mathrm{GL}_n$ 에서 $\chi_\lambda=s_\lambda$ 이고, [Weyl 지표 공식](weyl-character-formula.md)이 그 bialternant 표현을 준다.
+$\mathrm{GL}\_n$ 에서 $\chi_\lambda=s_\lambda$ 이고, [Weyl 지표 공식](weyl-character-formula.md)이 그 bialternant 표현을 준다.
 
 반면 여러 방향에서 깨진다. **분기 자리**에서는 명시적 공식이 없고, 등급이 있는 벡터에 대한 부분적인 결과만 있다. **메타플렉틱 덮개군**에서는 Whittaker 모형의 유일성 자체가 실패하고, 공식의 자리에 Weyl 군 다중합(Weyl 군 다중 Dirichlet 급수)이 들어온다. 그 합이 결정 기저의 조합론과 이어지는 것이 최근 연구의 한 줄기다.
 

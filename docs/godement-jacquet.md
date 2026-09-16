@@ -286,7 +286,7 @@ for p in PR[:4]:
 #   p=  7  (m, c_p^m, Σα^kβ^(m-k)) = [(1, -16744, -16744), (2, -1696965207, -1696965207)]   일치 True
 ```
 
-$c_{p^m}=\sum_{k=0}^m\alpha^k\beta^{m-k}$ 다. 이것은 $\mathrm{GL}_2(\mathbb C)$ 의 $m$ 번째 **대칭곱 표현의 지표**를 $A_{\pi_p}$ 에서 평가한 값이다. 곧 $\tau(p^m)$ 이 Satake 매개변수의 대칭곱 지표다.
+$c_{p^m}=\sum_{k=0}^m\alpha^k\beta^{m-k}$ 다. 이것은 $\mathrm{GL}\_2(\mathbb C)$ 의 $m$ 번째 **대칭곱 표현의 지표**를 $A_{\pi_p}$ 에서 평가한 값이다. 곧 $\tau(p^m)$ 이 Satake 매개변수의 대칭곱 지표다.
 
 여기서 [Sato–Tate](sato-tate.md)와의 연결이 보인다. 등분포를 보이려면 모든 대칭곱의 평균이 사라져야 했고, 그 평균을 통제하는 것이 $L(s,\mathrm{Sym}^m\pi)$ 였다. Godement–Jacquet 은 $m=1$ 곧 표준표현만 준다. 나머지가 어려운 부분으로 남는다.
 

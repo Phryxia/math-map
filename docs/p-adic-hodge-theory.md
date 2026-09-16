@@ -20,7 +20,7 @@ $$
 
 ## $\ell\ne p$ 는 왜 쉬운가
 
-$G_K$ 의 $\ell$ 진 표현 $\rho\colon G_K\to\mathrm{GL}_n(\mathbb Q_\ell)$ 을 보자. 관성군 $I_K$ 의 야생 부분 $P_K$ 는 프로-$p$ 군이고, 상 $\rho(P_K)$ 는 프로-$\ell$ 군 안의 콤팩트 부분군이다. $p\ne\ell$ 이므로 프로-$p$ 군에서 프로-$\ell$ 군으로 가는 연속 준동형은 상이 유한하다. 야생 관성은 유한한 정보밖에 남기지 못한다.
+$G_K$ 의 $\ell$ 진 표현 $\rho\colon G_K\to\mathrm{GL}\_n(\mathbb Q_\ell)$ 을 보자. 관성군 $I_K$ 의 야생 부분 $P_K$ 는 프로-$p$ 군이고, 상 $\rho(P_K)$ 는 프로-$\ell$ 군 안의 콤팩트 부분군이다. $p\ne\ell$ 이므로 프로-$p$ 군에서 프로-$\ell$ 군으로 가는 연속 준동형은 상이 유한하다. 야생 관성은 유한한 정보밖에 남기지 못한다.
 
 남은 순한 관성 $I_K/P_K\cong\prod_{\ell'\ne p}\mathbb Z_{\ell'}$ 의 $\ell$ 부분만 실제로 작용하고, Grothendieck 은 열린 부분군 위에서 그 작용이 유니포턴트임을 보였다.
 
@@ -334,7 +334,7 @@ print(weakly_admissible_2d(0, 1, [(0, True), (1, False)]))  # 보통, 분할된 
 
 ## 모듈러성 올림
 
-Wiles 이후의 $R=\mathbb T$ 정리들은 Galois 변형환을 다루는데, 변형에 국소 조건을 걸지 않으면 환이 너무 커진다. $p$ 에서 거는 조건이 바로 $p$ 진 Hodge 이론의 언어로 쓰인다. 무게 $k$ 의 새형식 $f$ 에 붙는 $\rho_f\colon G_{\mathbb Q}\to\mathrm{GL}_2(\bar{\mathbb Q}_p)$ 는 $p\nmid N_f$ 일 때 $G_{\mathbb Q_p}$ 로 제한하면 결정적이고 Hodge–Tate 무게가 $\{0,1-k\}$ 다[^1]. $p\|N_f$ 면 반안정이 된다.
+Wiles 이후의 $R=\mathbb T$ 정리들은 Galois 변형환을 다루는데, 변형에 국소 조건을 걸지 않으면 환이 너무 커진다. $p$ 에서 거는 조건이 바로 $p$ 진 Hodge 이론의 언어로 쓰인다. 무게 $k$ 의 새형식 $f$ 에 붙는 $\rho_f\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\bar{\mathbb Q}\_p)$ 는 $p\nmid N_f$ 일 때 $G_{\mathbb Q_p}$ 로 제한하면 결정적이고 Hodge–Tate 무게가 $\{0,1-k\}$ 다[^1]. $p\|N_f$ 면 반안정이 된다.
 
 Kisin 은 이 조건을 변형 공간 위의 닫힌 부분스킴(결정적 변형환, 준안정 변형환)으로 실현했고, 그 기하를 통제해 모듈러성 올림 정리를 무게와 준위의 넓은 범위로 확장했다. [Langlands 강령](langlands-program.md)의 국소–대역 정합성에서 $p$ 자리를 담당하는 것이 이 이론이다.
 

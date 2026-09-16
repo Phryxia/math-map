@@ -2,7 +2,7 @@
 
 # 개요
 
-[모듈러 형식](modular-forms.md) 문서에서 $q$ 전개로 적은 $(T_pf)_n=a_{np}+p^{k-1}a_{n/p}$ 가 Hecke 작용소였다. 이 식은 결과일 뿐이고, 왜 이런 연산자를 봐야 하는지도 왜 계수가 곱셈적이 되는지도 식만 봐서는 알 수 없다. 원래 정의는 격자에 있다. 모듈러 형식을 격자의 함수로 보면 $T_p$ 는 **지표 $p$ 의 부분격자 전체에 걸친 합**이고, 곱셈성은 부분격자를 세는 일이 소수마다 독립이라는 사실에서 나온다.
+[모듈러 형식](modular-forms.md) 문서에서 $q$ 전개로 적은 $(T_pf)\_n=a_{np}+p^{k-1}a_{n/p}$ 가 Hecke 작용소였다. 이 식은 결과일 뿐이고, 왜 이런 연산자를 봐야 하는지도 왜 계수가 곱셈적이 되는지도 식만 봐서는 알 수 없다. 원래 정의는 격자에 있다. 모듈러 형식을 격자의 함수로 보면 $T_p$ 는 **지표 $p$ 의 부분격자 전체에 걸친 합**이고, 곱셈성은 부분격자를 세는 일이 소수마다 독립이라는 사실에서 나온다.
 
 연산자가 갖춰지면 선형대수가 일을 한다. $T_n$ 들은 서로 교환하고 Petersson 내적에 대해 자기수반이므로 [스펙트럼 정리](spectral-theorem.md)가 동시 고유기저를 준다. 고유형식 하나가 $L$ 함수 하나를 낳고, 그 $L$ 함수가 Euler 곱을 갖는다.
 
@@ -87,7 +87,7 @@ $$
 T_pf=p^{k-1}\sum_{j=0}^{p-1}f\Big|_k\begin{pmatrix}1&j\\0&p\end{pmatrix}+f\Big|_k\begin{pmatrix}p&0\\0&1\end{pmatrix}
 $$
 
-$p\mid N$ 이면 마지막 항이 빠져 대표가 $p$ 개뿐이다. 이 경우의 작용소를 $U_p$ 라 쓰고 $T_p$ 와 구별한다. $q$ 전개에서는 $(U_pf)_n=a_{np}$ 로 둘째 항이 없다.
+$p\mid N$ 이면 마지막 항이 빠져 대표가 $p$ 개뿐이다. 이 경우의 작용소를 $U_p$ 라 쓰고 $T_p$ 와 구별한다. $q$ 전개에서는 $(U_pf)\_n=a_{np}$ 로 둘째 항이 없다.
 
 이 정의가 아델판으로 바로 번역된다는 점이 중요하다. 레벨 $\Gamma_0(N)$ 이 유한 자리의 콤팩트 열린 부분군 $K_0(N)$ 이 되고, $T_p$ 가 이중 잉여류 $K_0(N)\,\mathrm{diag}(1,p)\,K_0(N)$ 이 된다. 고전적 서술에서 다소 임의로 보이던 $p+1$ 개의 행렬이 군론적 필연이 된다.
 
@@ -142,13 +142,13 @@ $$
 
 ## Eichler–Shimura 관계
 
-Hecke 작용소는 모듈러 곡선 $X_0(N)$ 위의 **대응**으로 실현된다. $X_0(Np)$ 에서 두 개의 사영 $\alpha,\beta\colon X_0(Np)\to X_0(N)$ 을 잡고 $T_p=\beta_*\alpha^*$ 로 두는 것이다. 이 대응이 Jacobian $J_0(N)$ 의 자기준동형을 유도하고, 표수 $p$ 로 환원하면 Frobenius 와 연결된다.
+Hecke 작용소는 모듈러 곡선 $X_0(N)$ 위의 **대응**으로 실현된다. $X_0(Np)$ 에서 두 개의 사영 $\alpha,\beta\colon X_0(Np)\to X_0(N)$ 을 잡고 $T_p=\beta_\ast\alpha^\ast$ 로 두는 것이다. 이 대응이 Jacobian $J_0(N)$ 의 자기준동형을 유도하고, 표수 $p$ 로 환원하면 Frobenius 와 연결된다.
 
 $$
 T_p\equiv\mathrm{Frob}_p+p\langle p\rangle\mathrm{Frob}_p^{\vee}\pmod p
 $$
 
-이 합동식이 다리다. 고유형식 $f$ 마다 $\ell$ 진 Galois 표현 $\rho_{f,\ell}\colon\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\to\mathrm{GL}_2(\bar{\mathbb Q}_\ell)$ 이 있어
+이 합동식이 다리다. 고유형식 $f$ 마다 $\ell$ 진 Galois 표현 $\rho_{f,\ell}\colon\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\bar{\mathbb Q}\_\ell)$ 이 있어
 
 $$
 \mathrm{tr}\,\rho_{f,\ell}(\mathrm{Frob}_p)=a_p,\qquad \det\rho_{f,\ell}(\mathrm{Frob}_p)=\chi(p)p^{k-1}

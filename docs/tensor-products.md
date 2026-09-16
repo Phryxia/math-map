@@ -124,7 +124,7 @@ $$
 좌변의 사상은 $M \times N$ 위의 쌍선형 사상과 같고, 우변은 "$m$ 을 넣으면 $N \to P$ 사상이 나오는" 사상이다. 둘 다 결국 같은 데이터를 가리킨다. 범주론의 언어로는
 
 $$
-- \otimes_R N \;\dashv\; \operatorname{Hom}_R(N, -)
+{-} \otimes_R N \;\dashv\; \operatorname{Hom}_R(N, -)
 $$
 
 이며, 자세한 틀은 [Adjunction](adjunctions.md)에 있다. 집합에서의 curry와 uncurry가 그대로 대수 버전으로 옮겨온 것이다.

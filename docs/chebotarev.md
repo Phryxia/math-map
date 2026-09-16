@@ -57,7 +57,7 @@ $$
 \mathrm{Frob}_{\mathfrak P}(x)\equiv x^{N\mathfrak p}\pmod{\mathfrak P}
 $$
 
-로 유일하게 정해진다. $\mathfrak P$ 를 바꾸면 $\mathrm{Frob}_{g\mathfrak P}=g\,\mathrm{Frob}_{\mathfrak P}\,g^{-1}$ 이므로 켤레류가 잘 정의되고, 이를 $\left[\frac{L/K}{\mathfrak p}\right]$ 로 쓴다.
+로 유일하게 정해진다. $\mathfrak P$ 를 바꾸면 $\mathrm{Frob}\_{g\mathfrak P}=g\,\mathrm{Frob}\_{\mathfrak P}\,g^{-1}$ 이므로 켤레류가 잘 정의되고, 이를 $\left[\frac{L/K}{\mathfrak p}\right]$ 로 쓴다.
 
 ## 밀도
 

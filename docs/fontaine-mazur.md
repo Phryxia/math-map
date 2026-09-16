@@ -120,7 +120,7 @@ $$
 
 ## 조건 2: $p$ 에서 de Rham
 
-$\rho|_{G_{\mathbb Q_p}}$ 가 de Rham 이라 함은 $D_{\mathrm{dR}}(\rho)=\bigl(B_{\mathrm{dR}}\otimes\rho\bigr)^{G_{\mathbb Q_p}}$ 의 차원이 $n$ 과 같다는 것이다. Berger 의 $p$ 진 단연법(monodromy) 정리에 의해 이는 **잠재적 반안정**과 동치다. 즉 유한 확대 $L/\mathbb Q_p$ 위에서 $\rho$ 가 반안정이 된다는 조건이다.
+$\rho|\_{G_{\mathbb Q_p}}$ 가 de Rham 이라 함은 $D_{\mathrm{dR}}(\rho)=\bigl(B_{\mathrm{dR}}\otimes\rho\bigr)^{G_{\mathbb Q_p}}$ 의 차원이 $n$ 과 같다는 것이다. Berger 의 $p$ 진 단연법(monodromy) 정리에 의해 이는 **잠재적 반안정**과 동치다. 즉 유한 확대 $L/\mathbb Q_p$ 위에서 $\rho$ 가 반안정이 된다는 조건이다.
 
 이 재서술이 중요하다. 잠재적 반안정 표현에는 Weil–Deligne 표현이 붙고, 그것이 $p$ 자리의 국소 Langlands 매개변수가 된다. de Rham 조건은 "표현이 $p$ 자리에서도 자기동형 형식과 짝지어질 자격이 있다" 는 말과 같다.
 
@@ -138,7 +138,7 @@ $$
 
 ## 변형환의 언어
 
-Mazur 의 변형이론이 추측을 기하적 대상 사이의 진술로 바꾼다. 잔여표현 $\bar\rho\colon G_{\mathbb Q,S}\to\mathrm{GL}_2(\mathbb F_p)$ 를 고정하면 그 변형을 분류하는 보편 변형환 $R_{\bar\rho}$ 가 있고, 한편 같은 잔여표현을 주는 고유형식들이 Hecke 대수 $\mathbb T_{\bar\rho}$ 를 이룬다. 모듈러성이 자연사상
+Mazur 의 변형이론이 추측을 기하적 대상 사이의 진술로 바꾼다. 잔여표현 $\bar\rho\colon G_{\mathbb Q,S}\to\mathrm{GL}\_2(\mathbb F_p)$ 를 고정하면 그 변형을 분류하는 보편 변형환 $R_{\bar\rho}$ 가 있고, 한편 같은 잔여표현을 주는 고유형식들이 Hecke 대수 $\mathbb T_{\bar\rho}$ 를 이룬다. 모듈러성이 자연사상
 
 $$
 R_{\bar\rho}\longrightarrow\mathbb T_{\bar\rho}
@@ -153,7 +153,7 @@ $$
 | 상황 | 결과 |
 |---|---|
 | $n=1$ | 정리. 유체론과 Kronecker–Weber |
-| $n=2$ 이고 홀수, 서로 다른 HT 무게, $\bar\rho|_{\mathbb Q(\zeta_p)}$ 기약 | Kisin, Emerton (대체로 해결)[^2] |
+| $n=2$ 이고 홀수, 서로 다른 HT 무게, $\bar\rho\|\_{\mathbb Q(\zeta_p)}$ 기약 | Kisin, Emerton (대체로 해결)[^2] |
 | $n=2$ 이고 HT 무게 같음 | 미해결. Artin 추측과 얽힘 |
 | $n=2$ 이고 짝수 | 결론이 "그런 것은 없다" 쪽. 부분 결과만 |
 | $n\ge3$ | 열려 있음. 자기쌍대 경우에 부분 결과 |

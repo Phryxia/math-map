@@ -145,7 +145,7 @@ $$
 
 ## 구조적 관찰
 
-- $(\mathbb{Z}/n\mathbb{Z})^*$ 는 CRT에 의해 $(\mathbb{Z}/p\mathbb{Z})^* \times (\mathbb{Z}/q\mathbb{Z})^*$ 와 군 동형이다. 각 성분이 순환군이므로 전체 군의 지수(exponent)는 $\lambda(n) = \operatorname{lcm}(p-1, q-1)$ 이며, $ed \equiv 1 \pmod{\lambda(n)}$ 만으로도 정당성 증명이 통과한다.
+- $(\mathbb{Z}/n\mathbb{Z})^*$ 는 CRT에 의해 $(\mathbb{Z}/p\mathbb{Z})^\ast \times (\mathbb{Z}/q\mathbb{Z})^\ast$ 와 군 동형이다. 각 성분이 순환군이므로 전체 군의 지수(exponent)는 $\lambda(n) = \operatorname{lcm}(p-1, q-1)$ 이며, $ed \equiv 1 \pmod{\lambda(n)}$ 만으로도 정당성 증명이 통과한다.
 - 제곱근이 넷이라는 사실이 여러 공격의 근원이다. $x^2 \equiv y^2 \pmod{n}$ 이고 $x \not\equiv \pm y$ 이면 $\gcd(x-y, n)$ 이 진약수다. Fermat 소정리 기반의 소수판정(Miller–Rabin)과 인수분해 알고리즘이 모두 이 성질을 쓴다.
 - $n$ 이 [환](rings.md) $\mathbb{Z}/n\mathbb{Z}$ 을 정의하고 CRT는 환 동형 $\mathbb{Z}/n\mathbb{Z} \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z}$ 를 준다([몫환](ideals-quotient-rings.md)). 두 성분은 [유한체](finite-fields.md)다.
 

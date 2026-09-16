@@ -96,7 +96,7 @@ $$
 > \mathrm{Art}_K\colon K^\times\to\mathrm{Gal}(K^{\mathrm{ab}}/K)
 > $$
 > 가 유일하게 존재해 다음을 만족한다.
-> 1. $\mathrm{Art}_K(\pi)|_{K^{\mathrm{ur}}}=\mathrm{Frob}$ 이 모든 소원 $\pi$ 에서 성립한다.
+> 1. $\mathrm{Art}\_K(\pi)|\_{K^{\mathrm{ur}}}=\mathrm{Frob}$ 이 모든 소원 $\pi$ 에서 성립한다.
 > 2. 유한 아벨 확대 $L/K$ 마다 동형 $K^\times/N_{L/K}L^\times\cong\mathrm{Gal}(L/K)$ 를 유도한다.
 > 3. $\mathrm{Art}_K(\mathcal O^\times)$ 가 관성군 $\mathrm{Gal}(K^{\mathrm{ab}}/K^{\mathrm{ur}})$ 이다.
 
@@ -116,7 +116,7 @@ $$
 F(X,0)=X,\qquad F(X,Y)=F(Y,X),\qquad F(F(X,Y),Z)=F(X,F(Y,Z))
 $$
 
-첫 조건에서 $F(X,Y)=X+Y+(\deg\ge2)$ 가 따라 나온다. $\mathfrak m_{\bar K}$ 의 원소를 대입하면 급수가 수렴하므로 $x+_Fy=F(x,y)$ 가 $\mathfrak m_{\bar K}$ 위의 실제 아벨군 구조를 준다. 역원과 결합법칙은 형식적 항등식에서 그대로 따라온다.
+첫 조건에서 $F(X,Y)=X+Y+(\deg\ge2)$ 가 따라 나온다. $\mathfrak m_{\bar K}$ 의 원소를 대입하면 급수가 수렴하므로 $x+\_Fy=F(x,y)$ 가 $\mathfrak m_{\bar K}$ 위의 실제 아벨군 구조를 준다. 역원과 결합법칙은 형식적 항등식에서 그대로 따라온다.
 
 준동형 $g\colon F\to G$ 는 $g(F(X,Y))=G(g(X),g(Y))$ 를 만족하는 $g\in X\mathcal O[[X]]$ 다. $\mathrm{End}(F)$ 는 환이 되고, 항상 $\mathbb Z$ 를 포함한다.
 
@@ -145,7 +145,7 @@ $K_{\pi,n}=K(\Lambda_n)$ 으로 두고 $K_\pi=\bigcup_nK_{\pi,n}$ 이라 쓴다.
 > 2. $u\in\mathcal O^\times$ 에 대해 $\mathrm{Art}_K(u)$ 가 $\Lambda_n$ 위에서 $[u^{-1}]_f$ 로 작용한다.
 > 3. $K^{\mathrm{ab}}=K^{\mathrm{ur}}\cdot K_\pi$ 이고, $K_{\pi,n}$ 은 $f$ 의 선택에 의존하지 않는다.
 
-첫 줄의 $\Lambda_n\cong\mathcal O/\pi^n$ 은 $[\pi^n]_f$ 가 차수 $q^n$ 의 멱급수이고 $\Lambda_1$ 의 원소가 $f(X)/X$ 의 근이라는 사실에서 나온다. $f=\pi X+X^q$ 이면 $f(X)/X=\pi+X^{q-1}$ 이 Eisenstein 다항식이므로 $K_{\pi,1}$ 이 차수 $q-1$ 의 완전분기 확대다. $|(\mathcal O/\pi)^\times|=q-1$ 과 맞는다.
+첫 줄의 $\Lambda_n\cong\mathcal O/\pi^n$ 은 $[\pi^n]\_f$ 가 차수 $q^n$ 의 멱급수이고 $\Lambda_1$ 의 원소가 $f(X)/X$ 의 근이라는 사실에서 나온다. $f=\pi X+X^q$ 이면 $f(X)/X=\pi+X^{q-1}$ 이 Eisenstein 다항식이므로 $K_{\pi,1}$ 이 차수 $q-1$ 의 완전분기 확대다. $|(\mathcal O/\pi)^\times|=q-1$ 과 맞는다.
 
 둘째 줄에 있는 역원 $u^{-1}$ 은 정규화의 문제다. $\mathrm{Art}_K(\pi)$ 를 Frobenius 로 둘 것인지 그 역으로 둘 것인지에 따라 부호가 뒤집히며, 문헌마다 규약이 갈린다.
 
