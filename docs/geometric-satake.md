@@ -26,7 +26,7 @@ $$
 \widehat G=\mathrm{Aut}^{\otimes}\bigl(\text{올림자 } H^*\bigr)
 $$
 
-이것이 Langlands 강령에서 쌍대군이 등장하는 근거이고 기하학적 Langlands 강령의 출발점이다.
+이 정리가 Langlands 강령에서 쌍대군이 등장하는 근거이고, 기하학적 Langlands 강령이 이를 바탕으로 세워진다.
 
 # 직관
 
