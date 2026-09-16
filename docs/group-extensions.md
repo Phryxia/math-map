@@ -114,56 +114,6 @@ $$
 
 $A$ 가 비가환이면 $Q$ 가 $A$ 에 작용하는 대신 $\operatorname{Out}(A)$ 에 작용하고, 확대의 존재 자체가 $H^3$ 의 장애로 통제된다. 그래서 확대 이론은 가환 핵에서 가장 깨끗하다.
 
-## $H^2$ 를 직접 계산하기
-
-순환군의 중심확대를 정의대로 세어 본다. $H^2(\mathbb Z/m,\mathbb Z/n)\cong\mathbb Z/\gcd(m,n)$ 이 나와야 한다.
-
-```python
-from itertools import product
-from math import gcd
-
-def H2_cyclic(m, n):
-    """자명한 작용에서 H^2(Z/m, Z/n) = Z^2 / B^2 의 크기"""
-    Q = range(m)
-    A = range(n)
-    keys = sorted((a, b) for a in Q for b in Q)
-    free = [(a, b) for a in range(1, m) for b in range(1, m)]   # 정규화: f(0,x)=f(x,0)=0
-
-    Z = set()
-    for vals in product(A, repeat=len(free)):
-        f = {(a, b): 0 for a in Q for b in Q}
-        f.update(dict(zip(free, vals)))
-        if all((f[(a, b)] + f[((a + b) % m, c)] - f[(b, c)] - f[(a, (b + c) % m)]) % n == 0
-               for a in Q for b in Q for c in Q):
-            Z.add(tuple(f[k] % n for k in keys))
-
-    B = set()
-    for g in product(A, repeat=m - 1):
-        gg = {0: 0}
-        gg.update(dict(zip(range(1, m), g)))
-        B.add(tuple((gg[a] + gg[b] - gg[(a + b) % m]) % n for (a, b) in keys))
-
-    classes, seen = set(), set()
-    for c in Z:
-        if c in seen:
-            continue
-        coset = frozenset(tuple((x + y) % n for x, y in zip(c, b)) for b in B)
-        seen |= coset
-        classes.add(coset)
-    return len(Z), len(B), len(classes)
-
-for m, n in [(2, 2), (2, 3), (3, 3), (4, 2), (2, 4)]:
-    z, b, h = H2_cyclic(m, n)
-    print(f"H^2(Z/{m}, Z/{n}): |Z|={z} |B|={b} |H^2|={h}  gcd={gcd(m, n)}")
-# H^2(Z/2, Z/2): |Z|=2 |B|=1 |H^2|=2  gcd=2
-# H^2(Z/2, Z/3): |Z|=3 |B|=3 |H^2|=1  gcd=1
-# H^2(Z/3, Z/3): |Z|=9 |B|=3 |H^2|=3  gcd=3
-# H^2(Z/4, Z/2): |Z|=8 |B|=4 |H^2|=2  gcd=2
-# H^2(Z/2, Z/4): |Z|=4 |B|=2 |H^2|=2  gcd=2
-```
-
-$|H^2|=\gcd(m,n)$ 이 모든 경우에 맞는다. $\gcd=1$ 인 $(2,3)$ 에서 $H^2$ 가 자명한 것이 특히 중요한데, 이것이 다음 정리의 특수한 경우다.
-
 ## Schur–Zassenhaus 정리
 
 > $|N|$ 과 $|G/N|$ 이 서로소이면 확대 $1\to N\to G\to Q\to1$ 은 분할되고, 모든 보충군이 서로 켤레다.
@@ -207,8 +157,6 @@ $c$ 가 정확히 $H^2(Q,\mathrm U(1))$ 의 2-코사이클이다. 따라서 사�
 ## Galois 이론의 매장 문제
 
 [Galois 이론](galois-theory.md)에서 군 $Q$ 를 Galois 군으로 갖는 확대가 주어졌을 때, 그것을 $G$ 를 Galois 군으로 갖는 더 큰 확대 안에 넣을 수 있는가를 묻는 것이 매장 문제다. 장애가 Galois 코호몰로지의 원소로 표현되고, 역 Galois 문제의 주요 접근법 중 하나다.
-
-[^1]: Jordan–Hölder 와 Zassenhaus 보조정리는 D. Dummit, R. Foote, *Abstract Algebra* (3판, 2004) 3, 6 장. 확대와 군 코호몰로지는 K. Brown, *Cohomology of Groups* (1982) 4 장, 또는 J. Rotman, *An Introduction to the Theory of Groups* (4판, 1995) 7 장. Schur 곱셈자 데이터는 J. Conway 외, *ATLAS of Finite Groups* (1985). 본문의 계산은 직접 한 것이다.
 
 # 연관 문서
 

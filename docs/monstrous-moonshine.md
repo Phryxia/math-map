@@ -166,75 +166,6 @@ graph LR
 
 Borcherds 는 이 업적으로 1998 년 Fields 메달을 받았다. 정점작용소대수, 일반화된 Kac–Moody 대수, 끈 이론의 no-ghost 정리를 유한군 지표표에 대한 명제로 수렴시킨 증명이다.
 
-## 계수 분해를 직접 확인하기
-
-$j$ 의 계수를 [Eisenstein 급수](eisenstein-series.md)에서 계산하고, $\mathbb M$ 의 기약표현 차원으로 분해되는지 확인한다.
-
-```python
-N = 8  # q^N 까지
-
-def mul(a, b):
-    c = [0] * N
-    for i, ai in enumerate(a):
-        if ai == 0:
-            continue
-        for k in range(N - i):
-            c[i + k] += ai * b[k]
-    return c
-
-def sigma(k, n):
-    return sum(d**k for d in range(1, n + 1) if n % d == 0)
-
-# E_4 = 1 + 240 Σ σ_3(n) q^n
-E4 = [1] + [240 * sigma(3, n) for n in range(1, N)]
-
-# Δ / q = Π (1-q^n)^24  (q 한 칸을 미리 뺀 형태)
-D = [1] + [0] * (N - 1)
-for n in range(1, N):
-    factor = [0] * N
-    factor[0] = 1
-    if n < N:
-        factor[n] = -1
-    for _ in range(24):
-        D = mul(D, factor)
-
-# j = E_4^3 / Δ 이므로 q·j = E_4^3 / (Δ/q) 를 나눗셈으로 구한다
-num = mul(mul(E4, E4), E4)
-qj = [0] * N
-for n in range(N):
-    s = num[n] - sum(qj[i] * D[n - i] for i in range(n))
-    qj[n] = s // D[0]
-
-# qj[n] 이 j 의 q^{n-1} 계수다
-c = {n - 1: qj[n] for n in range(N)}
-print([c[n] for n in range(-1, 5)])
-# [1, 744, 196884, 21493760, 864299970, 20245856256]
-
-# 괴물군 기약표현 차원 (작은 것부터)
-chi = [1, 196883, 21296876, 842609326, 18538750076, 19360062527]
-
-# 알려진 head character 분해
-decomp = {
-    1: [(1, 0), (1, 1)],
-    2: [(1, 0), (1, 1), (1, 2)],
-    3: [(2, 0), (2, 1), (1, 2), (1, 3)],
-    4: [(2, 0), (3, 1), (2, 2), (1, 3), (1, 5)],
-}
-for n, terms in decomp.items():
-    total = sum(m * chi[i] for m, i in terms)
-    print(n, total, c[n], total == c[n])
-# 1 196884 196884 True
-# 2 21493760 21493760 True
-# 3 864299970 864299970 True
-# 4 20245856256 20245856256 True
-
-# 분모 공식이 주는 가장 단순한 재귀식
-print(c[4] == c[3] + (c[1]**2 - c[1]) // 2)
-# True
-```
-
-$n=4$ 에서 $\chi_5=18538750076$ 은 쓰이지 않고 $\chi_6=19360062527$ 이 쓰인다. 분해가 "작은 것부터 욕심껏 채우기" 가 아니라는 증거이고, 실제 표현이 배후에 있다는 신호다.
-
 ## genus 0 성질
 
 추측의 핵심이자 가장 설명하기 어려운 부분이 genus 0 이다. 모듈러 함수가 나오는 것까지는 VOA 의 모듈러 불변성으로 이해되지만, 나오는 군이 하필 전부 genus 0 이라는 사실은 그것만으로 따라오지 않는다.
@@ -262,8 +193,6 @@ $V^\natural$ 은 중심전하 $24$ 의 등각장론이고, $\mathbb M$ 은 그 �
 ## 산재군을 보는 관점
 
 26 개의 산재군은 오랫동안 "분류 정리에 남은 예외 목록" 이었다. 달빛은 그 중 상당수가 하나의 구조에서 나온다는 것을 보였다. 괴물의 부분몫으로 얻어지는 20 개를 "행복한 가족" 이라 부르고, 나머지 6 개를 "파리아" 라 부른다. 예외들이 왜 그 개수만큼 있는지는 여전히 모르지만, 적어도 대부분이 서로 무관하지 않다는 것은 알게 되었다.
-
-[^1]: 원 추측은 J. Conway, S. Norton, "Monstrous Moonshine", *Bull. LMS* 11 (1979). 증명은 R. Borcherds, "Monstrous moonshine and monstrous Lie superalgebras", *Invent. Math.* 109 (1992). $V^\natural$ 의 구성은 I. Frenkel, J. Lepowsky, A. Meurman, *Vertex Operator Algebras and the Monster* (1988). 개괄로는 T. Gannon, *Moonshine Beyond the Monster* (2006) 이 읽을 만하다. umbral moonshine 은 M. Cheng, J. Duncan, J. Harvey, "Umbral Moonshine", *Commun. Number Theory Phys.* 8 (2014). 본문의 계수 계산은 직접 한 것이다.
 
 # 연관 문서
 

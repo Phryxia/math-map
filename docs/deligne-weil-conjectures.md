@@ -166,75 +166,6 @@ $d=1$ 인 곡선의 경우는 Weil 자신이 1948 년에 증명했다. 곡면에
 
 # 활용
 
-## Ramanujan 한계를 직접 확인한다
-
-$\Delta=q\prod_{n\ge1}(1-q^n)^{24}$ 의 계수를 오일러 오각수 정리로 정확히 계산하고, $|\tau(p)|\le2p^{11/2}$ 를 검사한다. 정수 연산만 쓰므로 오차가 없다.
-
-```python
-from math import isqrt, gcd, acos, pi, sin
-
-N = 400
-
-def eta_series(N):                          # ∏(1-q^n) : 오일러 오각수 정리
-    e = [0] * (N + 1); e[0] = 1
-    k = 1
-    while True:
-        g1, g2 = k * (3 * k - 1) // 2, k * (3 * k + 1) // 2
-        if g1 > N and g2 > N: break
-        s = -1 if k % 2 else 1
-        if g1 <= N: e[g1] += s
-        if g2 <= N: e[g2] += s
-        k += 1
-    return e
-
-def mul(a, b, N):
-    c = [0] * (N + 1)
-    for i, ai in enumerate(a):
-        if ai:
-            for j in range(0, N + 1 - i):
-                if b[j]: c[i + j] += ai * b[j]
-    return c
-
-e, prod = eta_series(N), [1] + [0] * N
-for _ in range(24):                         # ∏(1-q^n)^24
-    prod = mul(prod, e, N)
-tau = [0] * (N + 2)
-for n in range(N + 1):                      # Δ = q · ∏(1-q^n)^24
-    tau[n + 1] = prod[n]
-
-print("τ(1..12) :", tau[1:13])
-
-is_prime = lambda n: n > 1 and all(n % d for d in range(2, isqrt(n) + 1))
-PR = [p for p in range(2, N + 1) if is_prime(p)]
-
-print(f"\n{'p':>5} {'τ(p)':>16} {'2p^{11/2}':>18} {'비':>15}  성립")
-for p in PR[:12]:
-    b = 2 * p ** 5.5
-    print(f"{p:>5} {tau[p]:>16} {b:>18.3f} {abs(tau[p])/b:>15.6f}  {abs(tau[p]) <= b}")
-print(f"\n  p <= {N} 의 모든 소수에서 성립 : "
-      f"{all(abs(tau[p]) <= 2*p**5.5 for p in PR)}   (소수 {len(PR)} 개)")
-
-# τ(1..12) : [1, -24, 252, -1472, 4830, -6048, -16744, 84480, -113643, -115920, 534612, -370944]
-#
-#     p             τ(p)          2p^{11/2}              비  성립
-#     2              -24             90.510        0.265165  True
-#     3              252            841.777        0.299367  True
-#     5             4830          13975.425        0.345607  True
-#     7           -16744          88934.285        0.188274  True
-#    11           534612        1068291.478        0.500436  True
-#    13          -577738        2677431.899        0.215781  True
-#    17         -6905934       11708440.769        0.589825  True
-#    19         10661420       21586130.630        0.493901  True
-#    23         18643272       61735233.309        0.301988  True
-#    29        128406630      220911835.497        0.581257  True
-#    31        -52843168      318800733.352        0.165756  True
-#    37       -182213314      843605646.684        0.215993  True
-#
-#   p <= 400 의 모든 소수에서 성립 : True   (소수 78 개)
-```
-
-$\tau(2)=-24$ 와 $\tau(3)=252$ 와 $\tau(5)=4830$ 은 잘 알려진 값과 일치한다. 비율이 $0.16$ 에서 $0.59$ 사이에 흩어져 있고 한 번도 $1$ 을 넘지 않는다. 1916 년의 추측을 1974 년의 정리가 닫은 그 부등식이다.
-
 ## 곱셈성이 한계를 퍼뜨린다
 
 소수에서의 한계가 왜 모든 $n$ 으로 퍼지는가. $\Delta$ 가 Hecke 고유형식이라 $\tau$ 가 곱셈적이기 때문이다.
@@ -252,32 +183,6 @@ print(f"  τ(p²) = τ(p)² - p^11 인가 : {not bad2}   반례 {bad2}")
 
 두 번째 등식 $\tau(p^2)=\tau(p)^2-p^{11}$ 이 바로 $\alpha_p+\beta_p=\tau(p)$ 와 $\alpha_p\beta_p=p^{11}$ 에서 나오는 $\alpha_p^2+\beta_p^2$ 다. Frobenius 고윳값 두 개가 Hecke 작용소의 고윳값으로 보이는 자리다.
 
-## Frobenius 각을 본다
-
-$\tau(p)=2p^{11/2}\cos\theta_p$ 로 각을 정의하면, 한계가 성립한다는 것은 곧 $\theta_p$ 가 실수라는 것이다. 그 분포가 Sato–Tate 측도 $\frac2\pi\sin^2\theta\,d\theta$ 를 따른다는 것이 별개의 정리(Barnet-Lamb–Geraghty–Harris–Taylor, 2011)다.
-
-```python
-angles = [acos(max(-1.0, min(1.0, tau[p] / (2 * p ** 5.5)))) for p in PR]
-F = lambda t: (t - sin(2 * t) / 2) / pi          # ST 측도의 누적분포
-print(f"  {len(PR)} 개 소수, [0,π] 를 6 칸으로")
-print(f"{'구간':>14} {'관측 비율':>10} {'ST 예측':>10}")
-for i in range(6):
-    lo, hi = i * pi / 6, (i + 1) * pi / 6
-    c = sum(1 for a in angles if lo <= a < hi) / len(angles)
-    print(f"  [{lo:.3f},{hi:.3f}] {c:>10.4f} {F(hi)-F(lo):>10.4f}")
-
-#   78 개 소수, [0,π] 를 6 칸으로
-#             구간      관측 비율      ST 예측
-#   [0.000,0.524]     0.0000     0.0288
-#   [0.524,1.047]     0.2051     0.1667
-#   [1.047,1.571]     0.2949     0.3045
-#   [1.571,2.094]     0.3590     0.3045
-#   [2.094,2.618]     0.1154     0.1667
-#   [2.618,3.142]     0.0256     0.0288
-```
-
-소수 $78$ 개는 분포를 논하기에 턱없이 적고 실제로 칸마다 오차가 크다. 그래도 가운데가 두껍고 양 끝이 얇은 $\sin^2$ 모양은 보인다. 중요한 것은 **모든 각이 $[0,\pi]$ 안에 실수로 존재한다**는 사실이고, 그것이 Deligne 의 정리다. 분포가 어떤 모양인지는 그 다음 질문이다.
-
 ## 어디로 이어지는가
 
 - **무게 이론.** *Weil II* 의 무게 정리가 편향 층, 교차 코호몰로지, 혼합 Hodge 가군으로 이어졌다. "무게" 가 산술기하의 기본 언어가 되었다.
@@ -285,8 +190,6 @@ for i in range(6):
 - **해석적 정수론.** Ramanujan 한계가 모듈러 형식의 $L$ 함수를 다루는 모든 추정에 들어간다. 볼록성 깨기, 부분합 추정, 소수 정리의 변형이 여기에 의존한다.
 - **부호 이론.** Goppa 의 대수기하 부호의 성능이 $\#X(\mathbb F_q)$ 의 하계에서 나오고, 그 하계가 Weil 한계다. Tsfasman–Vlăduţ–Zink 한계가 Gilbert–Varshamov 한계를 넘은 것이 이 정리의 직접적 산물이다.
 - **표준 추측.** Grothendieck 이 원했던 길은 여전히 열려 있다. Deligne 의 증명은 그것을 우회했을 뿐 대체하지 않았고, 표준 추측은 지금도 대수적 순환 이론의 중심 미해결 문제다.
-
-[^1]: P. Deligne, *La conjecture de Weil I*, Publ. IHÉS **43** (1974), 273–307, 그리고 *La conjecture de Weil II*, Publ. IHÉS **52** (1980), 137–252. 교과서 서술은 E. Freitag, R. Kiehl, *Étale Cohomology and the Weil Conjecture* (1988). 모듈러 형식과의 연결은 P. Deligne, *Formes modulaires et représentations ℓ-adiques*, Séminaire Bourbaki 355 (1969). 지수합 응용은 N. Katz, *Gauss Sums, Kloosterman Sums, and Monodromy Groups* (1988). Sato–Tate 정리는 T. Barnet-Lamb, D. Geraghty, M. Harris, R. Taylor, *A family of Calabi–Yau varieties and potential automorphy II*, Publ. RIMS **47** (2011). 본문의 수치 계산은 직접 한 것이다.
 
 # 연관 문서
 

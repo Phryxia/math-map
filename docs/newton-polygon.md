@@ -126,75 +126,6 @@ $$
 
 # 활용
 
-## 다각형이 근의 부치를 되읽는지 확인한다
-
-근을 미리 정해서 다항식을 만들고, 계수만 넘겨 다각형을 계산한 뒤, 예측한 부치가 실제 근의 부치와 맞는지 본다. 답을 코드에 알려 주지 않는다.
-
-```python
-from fractions import Fraction as F
-
-def vp(x, p):                               # 유리수의 p 진 부치. 0 은 None(=+∞)
-    if x == 0: return None
-    x, k = F(x), 0
-    while x.numerator % p == 0: x, k = x / p, k + 1
-    while x.denominator % p == 0: x, k = x * p, k - 1
-    return F(k)
-
-def newton_polygon(coeffs, p):
-    """coeffs = [a_0,...,a_n].  아래쪽 볼록포의 꼭짓점을 (i, v(a_i)) 로 돌려준다."""
-    pts = [(i, vp(a, p)) for i, a in enumerate(coeffs)]
-    pts = [(i, v) for i, v in pts if v is not None]
-    hull = []
-    for q in pts:                           # Andrew monotone chain 의 아래쪽
-        while len(hull) >= 2:
-            (x1, y1), (x2, y2) = hull[-2], hull[-1]
-            # (x2,y2) 가 (x1,y1)-(q) 선분 위 또는 위쪽이면 버린다
-            if (y2 - y1) * (q[0] - x1) >= (q[1] - y1) * (x2 - x1): hull.pop()
-            else: break
-        hull.append(q)
-    return hull
-
-def slopes(coeffs, p):
-    """각 변에서 (근의 부치 λ = -기울기, 그 부치를 갖는 근의 개수) 를 읽는다."""
-    h, out = newton_polygon(coeffs, p), []
-    for (x1, y1), (x2, y2) in zip(h, h[1:]):
-        out += [-(y2 - y1) / (x2 - x1)] * (x2 - x1)
-    return sorted(out)
-
-def poly_from_roots(roots):
-    c = [F(1)]
-    for r in roots:
-        c = [F(0)] + c
-        for i in range(len(c) - 1): c[i] -= F(r) * c[i + 1]
-    return c
-
-for p, roots in [(3, [1, 3, 9, F(1, 3), 2]),
-                 (5, [5, 25, F(1, 25), 1, 7, 10]),
-                 (2, [2, 4, 8, 16, 1]),
-                 (7, [F(1, 7), F(1, 7), 7, 49])]:
-    f = poly_from_roots(roots)
-    want = sorted(vp(r, p) for r in roots)
-    got = slopes(f, p)
-    print(f"  p={p}  근 {[str(F(r)) for r in roots]}")
-    print(f"     실제 부치 {[str(v) for v in want]}")
-    print(f"     다각형    {[str(v) for v in got]}   일치={want == got}")
-
-#   p=3  근 ['1', '3', '9', '1/3', '2']
-#      실제 부치 ['-1', '0', '0', '1', '2']
-#      다각형    ['-1', '0', '0', '1', '2']   일치=True
-#   p=5  근 ['5', '25', '1/25', '1', '7', '10']
-#      실제 부치 ['-2', '0', '0', '1', '1', '2']
-#      다각형    ['-2', '0', '0', '1', '1', '2']   일치=True
-#   p=2  근 ['2', '4', '8', '16', '1']
-#      실제 부치 ['0', '1', '2', '3', '4']
-#      다각형    ['0', '1', '2', '3', '4']   일치=True
-#   p=7  근 ['1/7', '1/7', '7', '49']
-#      실제 부치 ['-1', '-1', '1', '2']
-#      다각형    ['-1', '-1', '1', '2']   일치=True
-```
-
-중복근($p=7$ 의 $1/7$ 이 둘)도 음수 부치도 정확히 나온다. 다각형은 근을 전혀 보지 않고 계수만 보았다.
-
 ## Eisenstein 은 변이 하나인 다각형이다
 
 ```python
@@ -243,27 +174,6 @@ for p, ap in [(5, -3), (7, 3), (11, -2), (13, -4), (17, 0), (19, -1), (23, -4)]:
 
 $p=17$ 에서만 $a_p=0$ 이라 다각형이 꺾이지 않고 곧은 한 변이 되며 부치가 $\frac12$ 로 쪼개진다. 이 곡선은 $p=17$ 에서 초특이다. 나머지 소수에서는 단위근이 하나 있고, 그 단위근이 형식군의 높이 $1$ 을 보증한다.
 
-## $p$ 진 exp 의 벽을 본다
-
-```python
-def v_fact(n, p):
-    s, q = 0, p
-    while q <= n: s, q = s + n // q, q * p
-    return s
-
-for p in [2, 3, 5, 7]:
-    N = 2000
-    print(f"  p={p}  v_p(N!)/N  (N={N}) = {F(v_fact(N,p), N)}"
-          f" ≈ {v_fact(N,p)/N:.6f}   1/(p-1) = {1/(p-1):.6f}")
-
-#   p=2  v_p(N!)/N  (N=2000) = 997/1000 ≈ 0.997000   1/(p-1) = 1.000000
-#   p=3  v_p(N!)/N  (N=2000) = 249/500 ≈ 0.498000   1/(p-1) = 0.500000
-#   p=5  v_p(N!)/N  (N=2000) = 499/2000 ≈ 0.249500   1/(p-1) = 0.250000
-#   p=7  v_p(N!)/N  (N=2000) = 33/200 ≈ 0.165000   1/(p-1) = 0.166667
-```
-
-다각형의 평균 기울기가 $-1/(p-1)$ 로 수렴한다. $\exp$ 의 수렴반경이 $p^{-1/(p-1)}$ 이라는 사실의 계산판이고, Dwork 가 $x^p$ 항을 더해 넘어야 했던 벽의 높이다.
-
 ## 어디에 쓰이는가
 
 - **분기 계산.** 수체나 국소체의 확대에서 소수가 어떻게 분기하는지를 정의다항식의 계수만으로 읽는다. [Dedekind 정역](dedekind-domains.md)의 분해 이론을 실제로 계산할 때 첫 단계다.
@@ -271,8 +181,6 @@ for p in [2, 3, 5, 7]:
 - **$p$ 진 해석.** 멱급수의 영점 개수, Weierstrass 예비정리, Iwasawa 이론의 $\mu$ 와 $\lambda$ 불변량이 전부 다각형의 언어로 진술된다.
 - **산술기하.** [Dwork 이론](dwork-rationality.md)과 결정 코호몰로지에서 Frobenius 고윳값의 부치 분포가 다각형이고, Newton 다각형이 Hodge 다각형 위에 놓인다는 Mazur 의 정리가 이 두 세계를 잇는다. 여러 변수 지수합에서 Adolphson–Sperber 의 Newton 다면체 한계가 같은 줄기다.
 - **트로피컬 기하.** "최솟값이 두 번 달성" 이라는 조건은 부치를 트로피컬 반환으로 보는 관점에서 트로피컬 근의 정의 그 자체다. Newton 다각형은 1 차원 트로피컬 기하다.
-
-[^1]: 표준 서술은 J. Neukirch, *Algebraic Number Theory* (1999) II장 §6, 또는 F. Gouvêa, *p-adic Numbers: An Introduction* (3판, 2020) 6장. Weierstrass 예비정리와 멱급수의 다각형은 A. Robert, *A Course in p-adic Analysis* (2000) 6장. Newton 다각형과 Hodge 다각형의 부등식은 B. Mazur, *Frobenius and the Hodge filtration*, Bull. AMS **78** (1972), 653–667. 본문의 수치 계산은 직접 한 것이다.
 
 # 연관 문서
 

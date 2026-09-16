@@ -145,83 +145,6 @@ flowchart LR
 
 # 활용
 
-## $\Delta$ 의 예외적 소수를 계산으로 본다
-
-$\Delta=q\prod_{m\ge1}(1-q^m)^{24}$ 를 전개해 $\tau(n)$ 을 얻고, 두 예외적 소수에서 상이 실제로 작아지는 것을 확인한다.
-
-```python
-N = 200
-
-def tau_table(n):
-    """Delta = q * prod (1 - q^m)^24 을 q^n 까지 전개한다."""
-    f = [0] * (n + 1); f[0] = 1
-    for m in range(1, n + 1):
-        for _ in range(24):
-            g = f[:]                              # (1 - q^m) 을 한 번 곱한다
-            for i in range(m, n + 1):
-                g[i] -= f[i - m]
-            f = g
-    return [0] + f[:n]                            # q 를 곱해 tau(n) 이 자리 n 에 오게
-
-tau = tau_table(N)
-assert [tau[i] for i in range(1, 7)] == [1, -24, 252, -1472, 4830, -6048]
-
-def sigma(k, n):
-    return sum(d ** k for d in range(1, n + 1) if n % d == 0)
-
-def legendre(a, p):
-    a %= p
-    return 0 if a == 0 else (1 if pow(a, (p - 1) // 2, p) == 1 else -1)
-
-def is_prime(n):
-    return n > 1 and all(n % d for d in range(2, int(n ** 0.5) + 1))
-
-def repr_by_form(p):
-    """p = x^2 + 23 y^2 로 나타나는가. Q(sqrt(-23)) 의 힐베르트 유체에서 완전분해에 해당."""
-    y = 1
-    while 23 * y * y <= p:
-        r = p - 23 * y * y
-        s = int(r ** 0.5)
-        if any((s + d) ** 2 == r for d in (-1, 0, 1)):
-            return True
-        y += 1
-    return False
-
-# p = 691 : 표현이 가약하게 갈라진다.  rho-bar = 1 (+) chi^11
-bad = [n for n in range(1, N + 1) if (tau[n] - sigma(11, n)) % 691]
-assert bad == []
-print(f"p = 691 : tau(n) = sigma_11(n) mod 691 이 n <= {N} 에서 모두 성립")
-
-# p = 23 : 기약이지만 상이 이면체군.  Q(sqrt(-23)) 의 분해가 tau(p) 를 결정한다.
-three_way = {0: [], 2: [], 22: []}
-for p in [q for q in range(2, N + 1) if is_prime(q) and q != 23]:
-    if legendre(p, 23) == -1:      expect = 0        # 관성 : 불활성
-    elif repr_by_form(p):          expect = 2        # 주 아이디얼로 분해
-    else:                          expect = -1 % 23  # 분해하지만 주 아이디얼이 아님
-    assert tau[p] % 23 == expect, (p, tau[p] % 23, expect)
-    three_way[expect].append(p)
-print("p = 23 : tau(p) mod 23 의 세 갈래")
-for v, ps in three_way.items():
-    print(f"   tau(p) = {v:>2} mod 23 :", ps[:8], "...")
-print("\n두 소수 모두에서 상이 작아지고, 그 작아진 만큼이 합동으로 드러난다.")
-
-# p = 691 : tau(n) = sigma_11(n) mod 691 이 n <= 200 에서 모두 성립
-# p = 23 : tau(p) mod 23 의 세 갈래
-#    tau(p) =  0 mod 23 : [5, 7, 11, 17, 19, 37, 43, 53] ...
-#    tau(p) =  2 mod 23 : [59, 101, 167, 173] ...
-#    tau(p) = 22 mod 23 : [2, 3, 13, 29, 31, 41, 47, 71] ...
-#
-# 두 소수 모두에서 상이 작아지고, 그 작아진 만큼이 합동으로 드러난다.
-```
-
-두 소수가 Serre 추측에서 차지하는 위치가 다르다.
-
-$691$ 에서는 $\bar\rho_{\Delta,691}$ 가 가약하다. Serre 추측의 가정을 벗어나므로 추측이 할 말이 없고, 대신 그 가약성 자체가 Eisenstein 급수와의 합동이라는 고전적 사실로 설명된다. 기약성 가정이 장식이 아니라는 증거다.
-
-$23$ 에서는 기약이지만 상이 $\mathbb Q(\sqrt{-23})$ 의 힐베르트 유체에 대응하는 이면체군에 들어간다. 그래서 $\tau(p)\bmod23$ 이 $p$ 의 분해 방식으로 결정되고, 세 갈래가 나온다. 불활성이면 $0$ 이고, 주 아이디얼로 분해하면 $2$ 이며, 분해하지만 주 아이디얼이 아니면 $-1$ 이다. 여기서 무게는 $k(\bar\rho)=2$ 이고 레벨은 $N(\bar\rho)=23$ 이다. 실제로 $S_2(\Gamma_0(23))$ 는 2 차원이며 그 안의 고유형식이 $\Delta$ 와 mod $23$ 에서 합동이다. Serre 의 공식이 지목한 자리에 형식이 정말로 있다.
-
-$\Delta$ 의 예외적 소수가 $2,3,5,7,23,691$ 로 유한한 것은 우연이 아니다. Serre 가 증명했듯 무게가 고정된 고유형식에서 상이 작아지는 소수는 언제나 유한하고, 그 목록을 뽑는 일이 mod $p$ 표현론의 표준 계산이 되었다.
-
 ## 어디에 쓰이는가
 
 - **모듈러성 판정.** 타원곡선이나 아벨 다양체에서 나온 $\bar\rho$ 를 만나면 $(k,N)$ 을 계산하고 해당 공간의 고유형식과 자취를 맞춘다. Frey 곡선 논법의 실전 형태다.
@@ -231,10 +154,6 @@ $\Delta$ 의 예외적 소수가 $2,3,5,7,23,691$ 로 유한한 것은 우연이
 [^1]: J.-P. Serre, *Sur les représentations modulaires de degré 2 de Gal(Q̄/Q)*, Duke Math. J. **54** (1987), 179–230. 추측의 원전이고 무게·레벨 공식과 $\Delta$ 의 예외적 소수 계산이 여기 있다.
 
 [^2]: C. Khare, J.-P. Wintenberger, *Serre's modularity conjecture I, II*, Invent. Math. **178** (2009), 485–504, 505–586.
-
-[^3]: K. A. Ribet, *On modular representations of* $\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)$ *arising from modular forms*, Invent. Math. **100** (1990), 431–476. 레벨 낮추기와 약한 형태에서 강한 형태로의 환원.
-
-[^4]: H. P. F. Swinnerton-Dyer, *On ℓ-adic representations and congruences for coefficients of modular forms*, Modular Functions of One Variable III (1973), 1–55. $\tau$ 의 예외적 소수와 mod $23$ 의 세 갈래 법칙.
 
 # 연관 문서
 

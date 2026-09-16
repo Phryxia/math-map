@@ -105,38 +105,6 @@ $$
 
 극한은 성분마다 독립적으로 계산된다. 집합의 곱에서 원소를 고르는 일이 좌표마다 따로 일어나는 것과 같다. 반면 쌍대극한은 그렇지 않다. 예를 들어 군의 합은 원소쌍이 아니라 자유곱이고, 위상공간의 밀어냄은 붙임 공간이다. 극한 쪽이 계산하기 쉽고 쌍대극한 쪽이 어려운 비대칭은 여기서 온다.
 
-## 유한 집합에서 확인
-
-유한 집합의 범주에서 곱, 동등자, 당김을 직접 만들고, 당김이 곱과 동등자로부터 나온다는 것을 확인한다.
-
-```python
-def product(A, B):
-    return [(a, b) for a in A for b in B]
-
-def equalizer(A, f, g):
-    return [a for a in A if f(a) == g(a)]
-
-def pullback(A, B, f, g):
-    # 곱을 만든 뒤 두 성분이 C에서 일치하는 부분만 남긴다
-    return equalizer(product(A, B), lambda p: f(p[0]), lambda p: g(p[1]))
-
-A = [1, 2, 3, 4]
-B = ["x", "y"]
-f = lambda a: a % 2           # A → {0, 1}
-g = lambda b: 0 if b == "x" else 1
-
-print(pullback(A, B, f, g))
-# [(1, 'y'), (2, 'x'), (3, 'y'), (4, 'x')]
-
-# 보편성질 확인: c에서 온 원뿔은 당김을 유일하게 경유한다
-C = ["p", "q"]
-u = lambda c: 2 if c == "p" else 3      # C → A
-v = lambda c: "x" if c == "p" else "y"  # C → B
-assert all(f(u(c)) == g(v(c)) for c in C)      # 원뿔 조건
-h = lambda c: (u(c), v(c))                     # 유일한 매개 사상
-assert all(h(c) in pullback(A, B, f, g) for c in C)
-```
-
 # 활용
 
 ## 익숙한 구성의 재해석

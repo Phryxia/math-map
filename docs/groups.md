@@ -129,52 +129,6 @@ $$
 
 모든 군 $G$ 는 자기 자신 위의 치환군의 부분군과 동형이다. $a \in G$ 를 "왼쪽에서 $a$ 를 곱하는 함수" 로 보내면 이 함수는 소거 가능성 때문에 전단사이고, 대응은 단사 준동형이 된다. 추상적인 공리로 정의한 군이 결국 "무언가를 섞는 방법들" 이라는 처음의 직관과 정확히 일치한다는 뜻이다. 이 관점을 일반화한 것이 [군 작용](group-actions.md)이다.
 
-## 계산으로 확인
-
-$D_4$ 를 정사각형 꼭짓점의 치환으로 구현하고 공리, 비가환성, Lagrange 정리를 확인한다.
-
-```python
-from itertools import product
-
-r = (1, 2, 3, 0)              # 90도 회전: 꼭짓점 i 를 r[i] 로 보낸다
-s = (1, 0, 3, 2)              # 한 축에 대한 반사
-e = (0, 1, 2, 3)
-
-def compose(g, h):            # (g∘h)(i) = g(h(i))
-    return tuple(g[h[i]] for i in range(4))
-
-def generate(gens):           # 생성원에서 닫힐 때까지 곱해 나간다
-    G = {e}
-    while True:
-        new = {compose(g, h) for g in G for h in gens} - G
-        if not new:
-            return G
-        G |= new
-
-D4 = generate({r, s})
-print(len(D4))                                                   # 8
-
-assert all(compose(compose(a, b), c) == compose(a, compose(b, c))
-           for a, b, c in product(D4, repeat=3))                 # 결합법칙
-inv = {a: next(b for b in D4 if compose(a, b) == e) for a in D4}  # 역원의 존재와 유일성
-print(all(compose(a, b) == compose(b, a) for a, b in product(D4, repeat=2)))   # False
-
-def order(a):
-    n, x = 1, a
-    while x != e:
-        x, n = compose(a, x), n + 1
-    return n
-print(sorted(order(a) for a in D4))        # [1, 2, 2, 2, 2, 2, 4, 4] 모두 8의 약수
-
-subs = {frozenset(generate({a, b})) for a in D4 for b in D4}
-print(sorted({len(H) for H in subs}))      # [1, 2, 4, 8]  Lagrange
-R = generate({r})                          # 회전 부분군은 지표 2라 정규
-print(all(frozenset(compose(compose(g, h), inv[g]) for h in R) == frozenset(R)
-          for g in D4))                    # True
-```
-
-원소 위수가 모두 8 의 약수라는 점, 부분군 위수 역시 8 의 약수라는 점이 Lagrange 정리의 두 형태다. 반사 하나와 회전으로 생성한 부분군이 전체가 되는 것에서 생성원의 의미도 보인다.
-
 # 활용
 
 ## 대칭과 불변량

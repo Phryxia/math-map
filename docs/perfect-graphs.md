@@ -91,55 +91,6 @@ Berge 그래프인지 판정하는 문제는 다항시간에 풀린다. 2005 년
 
 구조 정리가 나온 뒤에도 이 상황은 바뀌지 않았다. 구조 분해를 따라가는 조합적 채색 알고리즘은 아직 없으며, 연속 최적화가 순수 조합 문제의 유일한 해법으로 남아 있는 드문 사례다.
 
-## 5 개 꼭짓점 전수 확인
-
-```python
-from itertools import combinations, product
-
-def chrom(V, adj):
-    """유도 부분그래프의 채색수를 완전탐색으로."""
-    V = list(V)
-    for k in range(1, len(V) + 1):
-        for c in product(range(k), repeat=len(V)):
-            if max(c, default=-1) != k - 1: continue
-            if all(c[i] != c[j] for i, j in combinations(range(len(V)), 2)
-                   if adj[V[i]][V[j]]):
-                return k
-    return len(V)
-
-def clique(V, adj):
-    for r in range(len(V), 0, -1):
-        for S in combinations(V, r):
-            if all(adj[a][b] for a, b in combinations(S, 2)): return r
-    return 0
-
-def is_perfect(n, adj):
-    """모든 유도 부분그래프에서 ω = χ 인가."""
-    for r in range(1, n + 1):
-        for S in combinations(range(n), r):
-            if clique(S, adj) != chrom(S, adj): return False
-    return True
-
-n = 5
-pairs = list(combinations(range(n), 2))
-bad = []
-for mask in range(1 << len(pairs)):
-    adj = [[False] * n for _ in range(n)]
-    for b, (i, j) in enumerate(pairs):
-        if mask >> b & 1: adj[i][j] = adj[j][i] = True
-    if not is_perfect(n, adj):
-        bad.append(sorted(sum(row) for row in adj))
-print(f"꼭짓점 5 개 그래프 {1 << len(pairs)} 개 중 완전하지 않은 것: {len(bad)} 개")
-print("그 그래프들의 차수열:", {tuple(d) for d in bad})
-
-# 꼭짓점 5 개 그래프 1024 개 중 완전하지 않은 것: 12 개
-# 그 그래프들의 차수열: {(2, 2, 2, 2, 2)}
-```
-
-차수열이 전부 $(2,2,2,2,2)$ 로 나온다. 5 개 꼭짓점의 2-정칙 연결그래프는 $C_5$ 뿐이고, 이름 붙이는 방법이 $5!/(5\cdot2)=12$ 가지다. 곧 완전하지 않은 그래프가 정확히 $C_5$ 하나이며 나머지 1012 개는 모두 완전하다.
-
-강한 완전그래프 정리가 이 관찰을 모든 크기로 확장한 것이다. 꼭짓점이 늘어도 새로 생기는 장애물은 더 긴 홀수 구멍과 그 보그래프뿐이다.
-
 # 활용
 
 ## 스케줄링과 자원 배정

@@ -98,93 +98,6 @@ $V$ 가 de Rham 이면 Hodge–Tate 이므로, $\Theta$ 의 대각화 가능성�
 
 # 성질
 
-## Sen 작용소를 직접 계산한다
-
-$\Gamma$ 의 작용이 상삼각 행렬로 주어진 2 차원 예에서 $\Theta$ 를 실제로 계산한다. $p$ 진 로그 급수를 $\mathbb Q$ 위에서 유리수 산술로 돌리고, 결과의 $p$ 진 값매김을 본다.
-
-```python
-from fractions import Fraction as F
-
-p, M = 5, 40          # 소수, 로그 급수 절단 차수
-
-def vp(x):
-    """p 진 값매김. 정확히 0 이면 None"""
-    if x == 0: return None
-    n, d, v = x.numerator, x.denominator, 0
-    while n % p == 0: n //= p; v += 1
-    while d % p == 0: d //= p; v -= 1
-    return v
-
-def mul(A, B): return [[sum(A[i][k]*B[k][j] for k in range(2)) for j in range(2)] for i in range(2)]
-def add(A, B): return [[A[i][j]+B[i][j] for j in range(2)] for i in range(2)]
-def scal(A, c): return [[A[i][j]*c for j in range(2)] for i in range(2)]
-I2 = [[F(1), F(0)], [F(0), F(1)]]
-
-def log_scalar(u):
-    """log(1+x) = sum (-1)^{n+1} x^n / n"""
-    x, s, xn = u - 1, F(0), F(1)
-    for n in range(1, M+1):
-        xn *= x; s += F((-1)**(n+1), n) * xn
-    return s
-
-def log_matrix(A):
-    """같은 급수를 행렬에"""
-    X = [[A[i][j] - I2[i][j] for j in range(2)] for i in range(2)]
-    S, Xn = [[F(0)]*2 for _ in range(2)], I2
-    for n in range(1, M+1):
-        Xn = mul(Xn, X); S = add(S, scal(Xn, F((-1)**(n+1), n)))
-    return S
-
-u = F(1 + p*p*3)                 # chi(gamma). 1 mod p^2 이라 로그가 수렴한다
-log_u = log_scalar(u)
-
-def show(v):
-    return "0 (급수 절단 밖)" if v is None or v > 60 else f"v_p = {v}"
-
-print(f"p = {p},  chi(gamma) = {u},  급수 {M} 항까지\n")
-for (a, b, c) in [(1, 0, p*p), (2, 5, p*p*7), (3, 3, p*p), (3, 3, 0)]:
-    A = [[u**a, F(c)], [F(0), u**b]]                              # gamma 의 작용 행렬
-    T = log_matrix(A)
-    Th = [[T[i][j]/log_u for j in range(2)] for i in range(2)]    # Sen 작용소
-    diagable = (a != b) or Th[0][1] == 0
-    print(f"a={a}  b={b}  c={c}:")
-    print(f"   Theta_11 - {a} : {show(vp(Th[0][0]-a))}      Theta_22 - {b} : {show(vp(Th[1][1]-b))}")
-    print(f"   Theta_12       : {show(vp(Th[0][1]))}    Theta_21 : {show(vp(Th[1][0]))}")
-    print(f"   -> 고유값 {{{a}, {b}}},  대각화 가능 {diagable},  Hodge-Tate {diagable}\n")
-
-# p = 5,  chi(gamma) = 76,  급수 40 항까지
-#
-# a=1  b=0  c=25:
-#    Theta_11 - 1 : 0 (급수 절단 밖)      Theta_22 - 0 : 0 (급수 절단 밖)
-#    Theta_12       : v_p = 0    Theta_21 : 0 (급수 절단 밖)
-#    -> 고유값 {1, 0},  대각화 가능 True,  Hodge-Tate True
-#
-# a=2  b=5  c=175:
-#    Theta_11 - 2 : 0 (급수 절단 밖)      Theta_22 - 5 : 0 (급수 절단 밖)
-#    Theta_12       : v_p = 0    Theta_21 : 0 (급수 절단 밖)
-#    -> 고유값 {2, 5},  대각화 가능 True,  Hodge-Tate True
-#
-# a=3  b=3  c=25:
-#    Theta_11 - 3 : 0 (급수 절단 밖)      Theta_22 - 3 : 0 (급수 절단 밖)
-#    Theta_12       : v_p = 0    Theta_21 : 0 (급수 절단 밖)
-#    -> 고유값 {3, 3},  대각화 가능 False,  Hodge-Tate False
-#
-# a=3  b=3  c=0:
-#    Theta_11 - 3 : 0 (급수 절단 밖)      Theta_22 - 3 : 0 (급수 절단 밖)
-#    Theta_12       : 0 (급수 절단 밖)    Theta_21 : 0 (급수 절단 밖)
-#    -> 고유값 {3, 3},  대각화 가능 True,  Hodge-Tate True
-```
-
-읽을 것이 세 가지다.
-
-**대각성분이 정확히 $a$ 와 $b$ 다.** 로그 급수를 40 항 잘라서 유리수로 계산했는데, $\Theta_{11}-a$ 가 정확히 0 으로 떨어진다. 절단 밖의 항들이 실제로는 $p$ 진적으로 작을 뿐 0 이 아니지만, 대각 쪽은 $\log(u^a)/\log u=a$ 라는 스칼라 항등식이라 유리수 수준에서 상쇄된다. 지수에 있던 정수가 정확히 내려온다.
-
-**비대각성분은 0 이 아니다.** $c\neq0$ 이면 $\Theta_{12}$ 의 값매김이 0, 곧 단위원이다. $\Theta$ 가 상삼각이되 대각행렬은 아니다.
-
-**그래서 마지막 두 줄이 갈린다.** $a\neq b$ 이면 $\Theta_{12}\neq0$ 이어도 고유값이 다르므로 대각화되고 Hodge–Tate다. $a=b=3$ 이고 $c\neq0$ 이면 $\Theta=3I+N$ 에서 $N\neq0$ 이 멱영이라 대각화가 불가능하고 **Hodge–Tate가 아니다.** 같은 $c\neq0$ 이 $a\neq b$ 일 때는 무해하고 $a=b$ 일 때는 치명적이다.
-
-이것이 $\mathbb C_p(1)$ 과 $\mathbb C_p$ 의 확장 이야기의 축소판이다. $H^1(G_K,\mathbb C_p)=K\neq0$ 이므로 같은 무게끼리는 갈라지지 않는 확장이 있고, $\Theta$ 의 멱영 부분이 그것을 정확히 잰다. 나쁜 곱셈 환원 타원곡선의 Tate 가군이 Hodge–Tate가 아닌 이유가 이 계산 한 줄에 있다.
-
 ## 무엇이 남는가
 
 $\Theta$ 는 Hodge–Tate 무게만 본다. $B_{\mathrm{dR}}$ 이 보는 여과, $B_{\mathrm{cris}}$ 가 보는 Frobenius 는 $\Theta$ 에 나타나지 않는다. 곧 Sen 이론은 사다리의 **가장 아래 칸만 완전히 해명한다.**
@@ -204,9 +117,6 @@ Fontaine–Mazur 추측 쪽 작업에서 어떤 표현이 기하에서 오는지
 ## 국소 Langlands 의 $p$ 진 판
 
 $(\varphi,\Gamma)$ 가군의 언어에서 $\Gamma$ 작용의 미분이 곧 Sen 작용소이고, 그것이 $p$ 진 국소 Langlands 대응에서 무한소 자료의 역할을 한다. $\mathrm{GL}_2(\mathbb Q_p)$ 의 경우 Colmez 의 대응에서 Sen 무게가 표현 쪽의 무한소 지표로 옮겨간다. 아르키메데스 자리에서 $(\mathfrak g,K)$ 가군의 무한소 지표가 하던 일을 $p$ 진 자리에서 $\Theta$ 가 한다.
-
-[^1]: S. Sen, *Continuous cohomology and p-adic Galois representations*, Ann. of Math. **97** (1973) 과 *Lie algebras of Galois groups arising from Hodge–Tate modules*, Ann. of Math. **97** (1973). 표준 서술은 J.-M. Fontaine, Y. Ouyang, *Theory of p-adic Galois Representations* (미출간 교재) 3 장, 또는 O. Brinon, B. Conrad, *CMI Summer School Notes on p-adic Hodge Theory* (2009) 15 장.
-[^2]: Tate 의 계산은 J. Tate, *p-divisible groups*, Proc. Conf. Local Fields (1967). $(\varphi,\Gamma)$ 쪽 확장은 P. Colmez, *Espaces de Banach de dimension finie*, J. Inst. Math. Jussieu **1** (2002) 및 K. Kedlaya, R. Liu 의 일련의 작업. 본문의 수치 계산은 직접 한 것이다.
 
 # 연관 문서
 

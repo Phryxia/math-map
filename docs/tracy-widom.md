@@ -134,58 +134,6 @@ $$
 
 # 활용
 
-## 수치로 확인하기
-
-GOE 표본의 최대 고윳값을 직접 계산해 극한분포의 평균과 표준편차에 다가가는지 본다. 고윳값은 Jacobi 회전으로 구한다. 라이브러리가 필요 없고, 대칭행렬에 대해 안정적이다.
-
-```python
-import math, random
-
-def jacobi_eigs(A, sweeps=12):
-    """Jacobi 회전으로 실 대칭행렬의 고윳값. 정렬해서 반환."""
-    n = len(A)
-    A = [row[:] for row in A]
-    for _ in range(sweeps):
-        if sum(A[i][j] ** 2 for i in range(n) for j in range(i + 1, n)) < 1e-18:
-            break
-        for p in range(n - 1):
-            for q in range(p + 1, n):
-                if abs(A[p][q]) < 1e-14:
-                    continue
-                theta = (A[q][q] - A[p][p]) / (2 * A[p][q])
-                t = (1 if theta >= 0 else -1) / (abs(theta) + math.sqrt(theta ** 2 + 1))
-                c = 1 / math.sqrt(t * t + 1)
-                s = t * c
-                for k in range(n):                      # 열 회전
-                    akp, akq = A[k][p], A[k][q]
-                    A[k][p], A[k][q] = c * akp - s * akq, s * akp + c * akq
-                for k in range(n):                      # 행 회전
-                    apk, aqk = A[p][k], A[q][k]
-                    A[p][k], A[q][k] = c * apk - s * aqk, s * apk + c * aqk
-    return sorted(A[i][i] for i in range(n))
-
-def goe(N, rng):
-    """대각 분산 2, 비대각 분산 1 의 실 대칭 Gauss 행렬."""
-    A = [[0.0] * N for _ in range(N)]
-    for i in range(N):
-        A[i][i] = rng.gauss(0, math.sqrt(2))
-        for j in range(i + 1, N):
-            A[i][j] = A[j][i] = rng.gauss(0, 1)
-    return A
-
-rng = random.Random(7)
-print("  N   표본    평균      표준편차")
-for N, S in ((10, 300), (20, 300), (40, 200)):
-    xs = [N ** (2 / 3) * (jacobi_eigs(goe(N, rng))[-1] / math.sqrt(N) - 2)
-          for _ in range(S)]
-    m = sum(xs) / S
-    sd = math.sqrt(sum((x - m) ** 2 for x in xs) / (S - 1))
-    print(f"{N:4d} {S:5d}   {m:8.4f}   {sd:8.4f}")
-print("           TW_1:  -1.2065     1.2680")
-```
-
-평균이 $N = 10, 20, 40$ 에서 $-1.58, -1.45, -1.24$ 로 참값 $-1.2065$ 에 다가간다. 유한크기 보정이 $N^{-2/3}$ 규모라 수렴이 느리지만 방향은 분명하다. 표준편차는 $1.19$ 에서 $1.44$ 사이를 오가는데, 표본이 수백 개뿐일 때의 통계오차가 $0.06$ 규모이고 작은 $N$ 에서 분포 자체가 아직 넓으므로 이 정도 어긋남은 예상 범위다. 흥미로운 것은 $N = 10$ 이라는 아주 작은 행렬에서도 이미 값이 맞는 자리 근처에 있다는 점이다. 무작위 행렬 이론의 점근 공식이 실무에서 널리 쓰이는 이유가 이 빠른 수렴이다.
-
 ## 행렬식을 직접 계산한다
 
 표본을 뽑는 대신 정의를 그대로 계산할 수도 있다. [Fredholm 행렬식](fredholm-determinant.md) 문서의 Nyström 구적을 Airy 핵에 적용하면 되고, 무한구간 $(s,\infty)$ 은 $x = s + L\tan(\pi u/4)$ 로 옮긴다. 필요한 것은 $\operatorname{Ai}$ 와 $\operatorname{Ai}'$ 뿐이며, 작은 $\lvert x\rvert$ 에서는 전평면 수렴 급수를, 큰 $x$ 에서는 점근급수를 쓴다.

@@ -142,28 +142,6 @@ $$
 
 $\varphi_X(t)^n=\varphi_X(c_nt)e^{id_nt}$ 꼴을 요구하면 **안정분포**가 나오고, 특성함수가 $\exp(-|t|^\alpha)$ 꼴이 되는 $\alpha\in(0,2]$ 로 매개된다. $\alpha=2$ 가 정규, $\alpha=1$ 이 코시다. 분산이 없는 무거운 꼬리에서 중심극한정리가 깨질 때 그 자리를 채우는 것이 이 족이다.
 
-## 수치 확인
-
-균등분포의 합이 정규분포로 다가가는 과정을 특성함수 쪽에서 본다. $\mathrm{Uniform}(-1,1)$ 의 특성함수는 $\sin t/t$ 이므로, 정규화된 합의 특성함수는 닫힌 꼴로 계산된다. 이것을 $e^{-t^2/2}$ 와 비교한다.
-
-```python
-import math
-
-def phi_scaled_sum(t, n):
-    """Uniform(-1,1) 의 정규화된 합 (X_1+...+X_n)/sqrt(n/3) 의 특성함수."""
-    s = t / math.sqrt(n / 3.0)          # 분산이 1/3 이므로 sqrt(n/3) 로 나눈다
-    base = 1.0 if s == 0 else math.sin(s) / s
-    return base ** n
-
-for t in [0.5, 1.0, 2.0]:
-    row = [f"n={n}: {phi_scaled_sum(t, n):.6f}" for n in (1, 4, 16, 256)]
-    print(f"t={t}  target={math.exp(-t*t/2):.6f}  " + "  ".join(row))
-```
-
-$t$ 를 고정하고 $n$ 을 키우면 값이 $e^{-t^2/2}$ 로 다가간다. Lévy 연속성 정리가 보장하는 것이 정확히 이 각점 수렴이며, 그것만으로 분포 수렴이 따라 나온다는 점이 이 정리의 절약이다.[^1]
-
-[^1]: Rick Durrett, *Probability: Theory and Examples*, 5th ed., Cambridge University Press, 2019, 3.3절 (Characteristic Functions). https://services.math.duke.edu/~rtd/PTE/pte.html
-
 # 연관 문서
 
 ## 선수지식

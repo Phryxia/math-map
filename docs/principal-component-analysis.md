@@ -105,45 +105,6 @@ $$
 - 이상치 하나가 공분산을 지배할 수 있다. 제곱 오차를 쓰기 때문이다.
 - 성분은 원래 변수들의 조밀한 선형결합이라 해석이 어렵다. 희소성을 요구하면 다른 방법이 필요하다.
 
-## 작은 데이터로 확인
-
-2차원 표본에서 공분산의 고윳값을 직접 구하고, 각도를 촘촘히 훑어 찾은 최대 분산 방향과 일치하는지, 그리고 사영 분산과 잔차의 합이 총분산이 되는지 확인한다.
-
-```python
-import math
-
-X = [(2.5, 2.4), (0.5, 0.7), (2.2, 2.9), (1.9, 2.2),
-     (3.1, 3.0), (2.3, 2.7), (2.0, 1.6), (1.0, 1.1)]
-n = len(X)
-mx, my = sum(p[0] for p in X) / n, sum(p[1] for p in X) / n
-Z = [(x - mx, y - my) for x, y in X]                      # 중심화
-
-sxx = sum(a * a for a, _ in Z) / (n - 1)
-syy = sum(b * b for _, b in Z) / (n - 1)
-sxy = sum(a * b for a, b in Z) / (n - 1)
-
-tr, det = sxx + syy, sxx * syy - sxy * sxy                # 2x2 고윳값
-d = math.sqrt(tr * tr / 4 - det)
-lam1, lam2 = tr / 2 + d, tr / 2 - d
-theta = 0.5 * math.atan2(2 * sxy, sxx - syy)              # 첫 주성분 각도
-u = (math.cos(theta), math.sin(theta))
-
-var = lambda v: sum((a * v[0] + b * v[1]) ** 2 for a, b in Z) / (n - 1)
-res = lambda v: sum(a * a + b * b - (a * v[0] + b * v[1]) ** 2
-                    for a, b in Z) / (n - 1)
-
-print(round(lam1, 4), round(lam2, 4))          # 1.361 0.0581
-print(round(var(u), 4), round(res(u), 4))      # 1.361 0.0581  (사영 분산 = λ1, 잔차 = λ2)
-print(round(sxx + syy, 4))                     # 1.4191 = λ1 + λ2
-
-best = max(var((math.cos(t), math.sin(t))) for t in
-           (k * math.pi / 20000 for k in range(20000)))
-print(round(best, 4))                          # 1.361  전수 탐색도 같은 값
-print(round(lam1 / (lam1 + lam2), 4))          # 0.959  첫 성분이 설명하는 비율
-```
-
-잔차의 평균제곱이 정확히 두 번째 고윳값이라는 점, 총분산이 고윳값의 합으로 쪼개진다는 점이 위 최적성 절의 두 문장을 그대로 보여 준다.
-
 # 활용
 
 ## 전처리와 시각화

@@ -93,52 +93,6 @@ $a$ 와 $b$ 가 $x$ 에 대해 Lipschitz 이고 선형 증가 조건을 만족�
 
 $M_t = \exp(\int \theta\, dB - \tfrac12 \int \theta^2\, ds)$ 는 적당한 조건(Novikov)에서 martingale 이고, 이것을 밀도로 삼아 확률측도를 바꾸면 Brown 운동에 표류를 더하거나 뺄 수 있다. 이것이 Girsanov 정리이고, [측도변환과 우도비](change-of-measure.md)에서 다루는 밀도 변경을 연속시간 과정으로 옮긴 것이다. 금융에서 위험중립측도를 만드는 기술이 바로 이것이다.
 
-## 수치로 확인
-
-대표점을 왼쪽 끝에서 잡을 때와 중점에서 잡을 때 값이 정확히 $T/2$ 만큼 갈리는지, 그리고 Euler–Maruyama 로 푼 기하 Brown 운동이 닫힌 해와 맞는지 본다.
-
-```python
-import math, random
-
-rng = random.Random(7)
-
-def path(n, T=1.0):
-    h = T / n
-    b, out = 0.0, [0.0]
-    for _ in range(n):
-        b += rng.gauss(0, math.sqrt(h))
-        out.append(b)
-    return out
-
-n, trials = 5000, 400
-e_ito = e_str = 0.0
-for _ in range(trials):
-    B = path(n)
-    ito   = sum(B[i] * (B[i+1] - B[i]) for i in range(n))                # 왼쪽 끝점
-    strat = sum(0.5 * (B[i] + B[i+1]) * (B[i+1] - B[i]) for i in range(n))  # 중점
-    e_ito += abs(ito - (B[-1]**2 - 1.0) / 2)      # 예측: (B_T^2 - T)/2
-    e_str += abs(strat - B[-1]**2 / 2)            # 예측: B_T^2/2
-print(round(e_ito / trials, 6), round(e_str / trials, 6))
-# 0.007853 0.0
-
-mu, sig, S0, T, m, trials = 0.1, 0.3, 100.0, 1.0, 500, 5000
-h = T / m
-tot_em = tot_exact = 0.0
-for _ in range(trials):
-    s, b = S0, 0.0
-    for _ in range(m):
-        dB = rng.gauss(0, math.sqrt(h))
-        s += mu * s * h + sig * s * dB            # Euler-Maruyama
-        b += dB
-    tot_em += s
-    tot_exact += S0 * math.exp((mu - sig**2 / 2) * T + sig * b)   # 닫힌 해
-print(round(tot_em / trials, 2), round(tot_exact / trials, 2),
-      round(S0 * math.exp(mu * T), 2))
-# 110.29 110.29 110.52
-```
-
-중점 합의 오차가 정확히 0 인 것은 우연이 아니다. 중점과 증분의 곱이 $(B_{i+1}^2 - B_i^2)/2$ 로 망원합이 되어 이산 수준에서 이미 $B_T^2/2$ 이기 때문이다. 반대로 왼쪽 끝점 합은 $T$ 를 빼야 맞고, 남은 오차는 눈금을 잘게 할수록 줄어든다. 두 번째 실험에서 Euler–Maruyama 와 닫힌 해가 같은 난수를 쓰면 거의 일치하고, 이론값 $S_0 e^{\mu T}$ 와의 차이는 표본 수에서 오는 Monte Carlo 오차다.
-
 # 활용
 
 ## 금융

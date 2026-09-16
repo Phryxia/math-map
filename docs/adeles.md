@@ -178,68 +178,6 @@ $$
 
 # 활용
 
-## 강근사를 계산으로 확인한다
-
-유한 개의 소수에서 $p$ 진 근사 조건을 주고, 동시에 실수 자리에서 $\pi$ 에 가까운 유리수를 실제로 만들어 본다. 빼는 자리는 $S=\{3\}$ 이다.
-
-```python
-from fractions import Fraction
-import math
-
-def v_p(x, p):
-    if x == 0: return math.inf
-    n, d, v = x.numerator, x.denominator, 0
-    while n % p == 0: n //= p; v += 1
-    while d % p == 0: d //= p; v -= 1
-    return v
-
-def crt(pairs):
-    """[(법, 나머지)] 를 하나의 합동식으로. 법들은 서로소여야 한다."""
-    M, a = 1, 0
-    for m, r in pairs:
-        t = ((r - a) * pow(M, -1, m)) % m
-        a, M = a + M*t, M*m
-    return a % M, M
-
-# 국소 조건 : r ≡ 1/3 (mod 2⁵),  r ≡ 2 (mod 5³),  그리고 실수 자리에서 π 에 가깝게
-conds = [(2, 5, Fraction(1, 3)), (5, 3, Fraction(2))]
-a, M = crt([(p**k, (t.numerator * pow(t.denominator, -1, p**k)) % p**k)
-            for p, k, t in conds])
-print(f"유한 자리 조건을 모으면  r ≡ {a} (mod {M})")
-
-# r = a + M·(n/3^j). 분모 3^j 는 2, 5 와 서로소라 위의 조건을 건드리지 않는다.
-target, j = Fraction(math.pi), 30
-n = round((target - a) / M * 3**j)
-r = a + M * Fraction(n, 3**j)
-print(f"r = {r.numerator} / {r.denominator}")
-for p, k, t in conds:
-    print(f"  v_{p}(r - {t}) = {v_p(r - t, p)}   (요구: ≥ {k})")
-print(f"  |r - π| = {abs(float(r) - math.pi):.3e}")
-print(f"  대가를 치르는 자리 : v_3(r) = {v_p(r, 3)}"
-      f"   /  건드리지 않은 자리 : v_7 = {v_p(r, 7)}, v_11 = {v_p(r, 11)}")
-
-# Ẑ = lim Z/n 과 ∏ Z_p 의 일치를 중국인의 나머지 정리로 확인
-for N in (2**3 * 3**2 * 5, 2**4 * 3**2 * 5 * 7):
-    fac, m = [], N
-    for p in (2, 3, 5, 7, 11):
-        k = 0
-        while m % p == 0: m //= p; k += 1
-        if k: fac.append((p, k))
-    ok = all(crt([(p**k, x % p**k) for p, k in fac])[0] == x % N for x in range(N))
-    print(f"Z/{N} ≅ ∏ Z/p^k  ({fac}) : {ok}")
-
-# 유한 자리 조건을 모으면  r ≡ 3627 (mod 4000)
-# r = 215608689342641 / 68630377364883
-#   v_2(r - 1/3) = 7   (요구: ≥ 5)
-#   v_5(r - 2) = 3   (요구: ≥ 3)
-#   |r - π| = 4.277e-13
-#   대가를 치르는 자리 : v_3(r) = -29   /  건드리지 않은 자리 : v_7 = 1, v_11 = 0
-# Z/360 ≅ ∏ Z/p^k  ([(2, 3), (3, 2), (5, 1)]) : True
-# Z/5040 ≅ ∏ Z/p^k  ([(2, 4), (3, 2), (5, 1), (7, 1)]) : True
-```
-
-유한 자리의 조건들은 중국인의 나머지 정리로 하나의 합동식이 되고, 실수 자리는 남은 자유도로 맞춘다. 대가는 $v_3(r)=-29$ 로 나타난다. 빼기로 한 자리에서 절댓값이 크게 튀는 것이 강근사의 정확한 값이며, 곱 공식이 그 크기를 강제한다.
-
 ## 왜 아델로 바꿔 쓰는가
 
 같은 내용을 고전적으로도 쓸 수 있는데 굳이 아델을 쓰는 이유가 있다.

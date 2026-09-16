@@ -92,34 +92,6 @@ $$
 
 $f'/f$ 는 $m$ 차 영점에서 유수 $m$ , $m$ 차 극에서 유수 $-m$ 을 가지기 때문이다. 좌변은 $f \circ \gamma$ 가 원점을 감는 횟수이므로, "경로를 따라 함수값이 원점을 몇 바퀴 도는가" 를 세면 내부의 영점 개수를 알 수 있다. 여기서 **Rouché 정리**가 나온다. 경로 위에서 $\lvert g \rvert < \lvert f \rvert$ 이면 $f$ 와 $f + g$ 는 내부에서 같은 개수의 영점을 가진다. 큰 원 위에서 다항식의 최고차항이 나머지를 압도한다는 사실과 결합하면 대수학의 기본정리가 한 줄로 증명된다.
 
-## 수치 계산으로 확인
-
-유수의 정의가 곧 원 위의 적분이므로, 원을 촘촘히 잘라 더하면 유수를 직접 재어 볼 수 있다.
-
-```python
-import cmath, math
-
-def residue(f, c, r=0.3, n=4096):
-    """중심 c, 반지름 r 인 원 위에서 (1/2πi)∮f dz 를 사다리꼴 합으로 근사"""
-    total = 0
-    for k in range(n):
-        th = 2 * math.pi * k / n
-        z = c + r * cmath.exp(1j * th)
-        total += f(z) * 1j * r * cmath.exp(1j * th) * (2 * math.pi / n)
-    return total / (2j * math.pi)
-
-print(residue(lambda z: 1 / (z**2 + 1), 1j))      # -0.5j     = 1/(2i), 1차 극
-print(residue(lambda z: cmath.exp(z) / z**3, 0))  # 0.5+0j    = 2차 Taylor 계수, 3차 극
-print(residue(lambda z: cmath.exp(1 / z), 0))     # 1+0j      진성 특이점, 급수로만 계산
-
-# 편각원리: |z|=2 안에서 z^3-1 의 영점 개수
-f  = lambda z: z**3 - 1
-df = lambda z: 3 * z**2
-print(residue(lambda z: df(z) / f(z), 0, r=2.0, n=8192))  # 3+0j
-```
-
-세 번째 예가 특히 분명하다. 진성 특이점이라 극의 차수 공식은 쓸 수 없지만, 적분은 아무 문제 없이 $e^{1/z}$ 의 $z^{-1}$ 계수인 1 을 집어낸다. 네 번째 예에서는 $f'/f$ 의 적분이 영점의 개수를 정수로 돌려준다.
-
 # 활용
 
 ## 실적분과 급수 합

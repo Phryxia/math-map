@@ -179,59 +179,6 @@ Otto 는 여기서 더 나아가 $\mathcal P_2$ 를 무한차원 Riemann 다양�
 
 # 활용
 
-## 정렬과 Sinkhorn 을 직접 확인한다
-
-```python
-import math, random
-from itertools import permutations
-
-random.seed(0)
-n = 7
-xs = sorted(random.uniform(0, 1) for _ in range(n))
-ys = [random.uniform(0, 1) for _ in range(n)]
-
-def cost(perm, p):
-    """i 번 점을 perm[i] 번 점으로 보내는 계획의 평균 비용."""
-    return sum(abs(xs[i] - ys[perm[i]])**p for i in range(n)) / n
-
-for p in (1, 2):
-    brute = min(cost(s, p) for s in permutations(range(n)))     # n! 개 전수탐색
-    order = sorted(range(n), key=lambda j: ys[j])               # 단조 재배열
-    print(f"p={p}: 전수탐색 {brute:.10f}   정렬 {cost(order, p):.10f}"
-          f"   같음 {abs(brute - cost(order, p)) < 1e-12}")
-
-def sinkhorn(C, a, b, eps, iters):
-    """엔트로피 정규화 최적 수송. P = diag(u) K diag(v) 의 u, v 를 번갈아 맞춘다."""
-    K = [[math.exp(-c/eps) for c in row] for row in C]
-    u, v = [1.0]*len(a), [1.0]*len(b)
-    for _ in range(iters):
-        u = [a[i] / sum(K[i][j]*v[j] for j in range(len(b))) for i in range(len(a))]
-        v = [b[j] / sum(K[i][j]*u[i] for i in range(len(a))) for j in range(len(b))]
-    P = [[u[i]*K[i][j]*v[j] for j in range(len(b))] for i in range(len(a))]
-    return sum(P[i][j]*C[i][j] for i in range(len(a)) for j in range(len(b)))
-
-C = [[abs(xs[i] - ys[j])**2 for j in range(n)] for i in range(n)]
-a = b = [1/n]*n
-exact = min(cost(s, 2) for s in permutations(range(n)))
-print(f"\n정확한 W₂² = {exact:.8f}")
-for eps in (0.1, 0.01, 0.003, 0.001):
-    val = sinkhorn(C, a, b, eps, 3000)
-    print(f"  Sinkhorn ε={eps:<6} 비용 {val:.8f}   편향 {val - exact:+.2e}")
-
-# p=1: 전수탐색 0.0647733609   정렬 0.0647733609   같음 True
-# p=2: 전수탐색 0.0070500391   정렬 0.0070500391   같음 True
-#
-# 정확한 W₂² = 0.00705004
-#   Sinkhorn ε=0.1    비용 0.03528543   편향 +2.82e-02
-#   Sinkhorn ε=0.01   비용 0.01023282   편향 +3.18e-03
-#   Sinkhorn ε=0.003  비용 0.00806095   편향 +1.01e-03
-#   Sinkhorn ε=0.001  비용 0.00719793   편향 +1.48e-04
-```
-
-$5040$ 개의 순열을 전부 훑어 얻은 답이 정렬 한 번과 정확히 같다. 1 차원 최적 수송이 정렬 문제라는 사실의 확인이다.
-
-Sinkhorn 쪽은 편향이 항상 양수이고 $\varepsilon$ 에 대략 비례해 줄어든다. 엔트로피 항이 계획을 퍼뜨려 비용을 올리기 때문이다. 실무에서 $\varepsilon$ 을 무작정 줄이지 못하므로, 편향을 빼는 Sinkhorn 발산 같은 보정을 함께 쓴다.
-
 ## 생성모형
 
 WGAN 은 판별자를 1-Lipschitz 로 제한해 $W_1$ 의 쌍대해를 근사하고, 생성자는 그 값을 줄인다. 기울기 벌점이나 스펙트럴 정규화가 Lipschitz 제약을 구현하는 방법이다.

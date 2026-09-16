@@ -69,51 +69,6 @@ $$
 
 인접행렬 $A$ 에 대해 $(A^k)_{uv}$ 는 $u$ 에서 $v$ 로 가는 길이 $k$ 인 걷기의 개수다. 행렬 곱의 정의가 "중간 정점을 하나 거치는 경우를 모두 더한다" 와 같기 때문이다. 특히 $A^3$ 의 대각합을 6 으로 나누면 삼각형의 개수가 된다. 방향과 시작점을 고려해 각 삼각형이 여섯 번 세어지기 때문이다.
 
-## 계산으로 확인
-
-```python
-from collections import deque
-
-V = list(range(6))
-E = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 0)]   # 길이 6 인 순환
-adj = {v: set() for v in V}
-for u, v in E:
-    adj[u].add(v)
-    adj[v].add(u)
-
-print(sum(len(adj[v]) for v in V), 2 * len(E))          # 12 12  악수 정리
-
-def bipartite(V, adj):
-    color = {}
-    for s in V:
-        if s in color:
-            continue
-        color[s] = 0
-        q = deque([s])
-        while q:
-            u = q.popleft()
-            for w in adj[u]:
-                if w not in color:
-                    color[w] = 1 - color[u]
-                    q.append(w)
-                elif color[w] == color[u]:              # 같은 색끼리 인접 = 홀수 순환
-                    return None
-    return color
-
-print(bipartite(V, adj) is not None)                    # True   짝수 순환은 이분
-adj[0].add(2); adj[2].add(0)                            # 삼각형 0-1-2 를 만든다
-print(bipartite(V, adj) is not None)                    # False
-
-A = [[1 if v in adj[u] else 0 for v in V] for u in V]
-mul = lambda X, Y: [[sum(X[i][k] * Y[k][j] for k in range(6))
-                     for j in range(6)] for i in range(6)]
-A2 = mul(A, A)
-A3 = mul(A2, A)
-print(A2[0][3], sum(A3[i][i] for i in range(6)) // 6)   # 1 1
-```
-
-마지막 줄에서 $A^2$ 의 성분은 0 에서 3 으로 가는 길이 2 인 걷기가 하나임을, 대각합 계산은 삼각형이 정확히 하나임을 말해 준다. 그래프의 조합적 질문이 행렬 연산으로 번역되는 첫 사례다.
-
 # 활용
 
 ## 구조를 드러내는 모형

@@ -117,47 +117,6 @@ Gauss 커널의 $\sigma$ 가 결과를 지배한다. 너무 작으면 $K$ 가 �
 
 선형 PCA 가 가진 명확한 목적함수의 의미가 약해진다는 점도 대가다. 설명분산비율은 특징공간의 것이지 원 공간의 것이 아니므로, 몇 개의 성분을 남길지를 판단하기 어렵다.
 
-## 수치로 확인
-
-2차 다항 커널의 명시적 특징사상을 적어 두 가지를 검사한다. 커널 값이 특징벡터의 내적과 같은지, 그리고 이중 중심화 공식이 특징공간에서 실제로 평균을 뺀 것과 같은지다.
-
-```python
-import math, random
-
-rng = random.Random(0)
-X = [(rng.gauss(0, 1), rng.gauss(0, 1)) for _ in range(6)]
-
-def k(a, b):                      # 2차 다항 커널
-    return (a[0]*b[0] + a[1]*b[1] + 1) ** 2
-
-def phi(a):                       # 대응하는 명시적 특징사상
-    x, y = a
-    return (x*x, y*y, math.sqrt(2)*x*y, math.sqrt(2)*x, math.sqrt(2)*y, 1.0)
-
-def dot(u, v):
-    return sum(p*q for p, q in zip(u, v))
-
-n = len(X)
-err = max(abs(k(X[i], X[j]) - dot(phi(X[i]), phi(X[j])))
-          for i in range(n) for j in range(n))
-print("kernel trick 오차:", round(err, 12))
-
-K = [[k(X[i], X[j]) for j in range(n)] for i in range(n)]
-rows = [sum(r)/n for r in K]
-tot = sum(rows)/n
-Kc = [[K[i][j] - rows[i] - rows[j] + tot for j in range(n)] for i in range(n)]
-
-P = [phi(x) for x in X]
-mean = [sum(p[d] for p in P)/n for d in range(len(P[0]))]
-Pc = [[p[d] - mean[d] for d in range(len(mean))] for p in P]
-err2 = max(abs(Kc[i][j] - dot(Pc[i], Pc[j])) for i in range(n) for j in range(n))
-print("중심화 오차:", round(err2, 12))
-# kernel trick 오차: 0.0
-# 중심화 오차: 0.0
-```
-
-두 오차가 모두 0 이다. 앞의 것은 $(x^{\mathsf T}y+1)^2$ 를 전개하면 여섯 개 단항식의 내적이 된다는 항등식이고, 뒤의 것은 $\phi$ 를 한 번도 쓰지 않고 특징공간의 중심화를 수행할 수 있다는 주장이다. 커널 PCA 가 성립하는 두 축이 그대로 확인된다.
-
 # 활용
 
 ## 비선형 구조의 시각화

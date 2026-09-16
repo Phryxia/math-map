@@ -104,28 +104,6 @@ $$
 
 "자기 자신을 원소로 갖지 않는 집합 전체" 를 집합이라고 하면 그 집합이 자신의 원소인지 물었을 때 모순이 생긴다. 러셀의 역설이다. 그래서 현대의 집합론은 조건으로 새 집합을 만드는 것을 이미 있는 집합의 부분집합을 고르는 경우로 제한한다. 이 제한을 명시한 체계가 ZFC 이며, 이 문서에서 쓰는 연산은 모두 그 안에서 정당화된다.
 
-## 계산으로 확인
-
-파이썬의 집합 자료형으로 De Morgan 법칙과 멱집합의 크기를 확인한다.
-
-```python
-from itertools import combinations
-
-U = set(range(10))
-A, B = {1, 3, 5, 7}, {3, 4, 5, 6}
-
-print(A | B, A & B, A - B)          # {1,3,4,5,6,7} {3,5} {1,7}
-print((U - (A | B)) == (U - A) & (U - B))   # True  De Morgan
-print((U - (A & B)) == (U - A) | (U - B))   # True
-
-def powerset(s):
-    return [set(c) for r in range(len(s) + 1) for c in combinations(sorted(s), r)]
-
-print(len(powerset(A)), 2 ** len(A))        # 16 16
-print({1, 3} in powerset(A), 1 in A)        # True True   ⊆ 와 ∈ 는 다른 관계
-print({1, 3, 3} == {3, 1})                  # True  중복과 순서는 구별되지 않는다
-```
-
 # 활용
 
 ## 무대를 지정하는 일

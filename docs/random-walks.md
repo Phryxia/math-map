@@ -149,59 +149,8 @@ $$
 - **추천과 클러스터링.** commute time 을 정점 사이 유사도로 쓰는 방법은 위 항등식에 근거한다. 다만 큰 그래프에서는 commute time 이 차수에만 의존하는 값으로 퇴화하는 현상이 알려져 있어 보정이 필요하다.
 - **MCMC.** 가역 연쇄의 혼합 속도 분석에서 전기적 양(저항, 흐름)은 conductance 경계와 함께 표준 도구다.
 
-## 시뮬레이션
-
-Pólya 정리를 유한 시간 안에서 관찰하는 실험과 왕복 시간 공식의 수치 확인이다.
-
-```python
-import random
-
-def return_fraction(d, steps=20_000, trials=2000, seed=0):
-    """길이 steps 안에 원점으로 한 번이라도 돌아온 시행의 비율."""
-    rng = random.Random(seed)
-    hits = 0
-    for _ in range(trials):
-        pos = [0] * d
-        for _ in range(steps):
-            axis = rng.randrange(d)
-            pos[axis] += 1 if rng.random() < 0.5 else -1
-            if not any(pos):
-                hits += 1
-                break
-    return hits / trials
-
-for d in (1, 2, 3):
-    print(f"d={d}  복귀 비율 ≈ {return_fraction(d):.3f}")
-```
-
-$d=1$ 은 1 에 매우 가깝고, $d=2$ 는 1 에 가깝지만 수렴이 $1-c/\log(\text{steps})$ 처럼 극도로 느리며, $d=3$ 은 약 0.34 근처에서 멈춘다. 3차원 복귀 확률의 정확한 값은 Watson 적분으로 주어지는 약 0.3405 이며, 이 수치가 $\mathbb Z^3$ 의 유효저항이 유한하다는 사실의 정량적 표현이다.
-
-commute time 공식을 경로 그래프에서 확인하려면 다음처럼 하면 된다.
-
-```python
-import random
-
-def commute_path(n, trials=3000, seed=1):
-    rng = random.Random(seed)
-    total = 0
-    for _ in range(trials):
-        for start, target in ((0, n - 1), (n - 1, 0)):
-            x, t = start, 0
-            while x != target:
-                if x == 0:      x = 1
-                elif x == n - 1: x = n - 2
-                else:            x += 1 if rng.random() < 0.5 else -1
-                t += 1
-            total += t
-    return total / trials
-
-n = 12
-print(f"시뮬 {commute_path(n):.1f} / 이론 {2 * (n - 1) ** 2}")
-```
-
-두 값이 통계 오차 범위에서 일치한다. 이론값은 $2|E|R_{\mathrm{eff}}=2(n-1)(n-1)$ 에서 나온 것이며, 유효저항 계산이 직렬 규칙 한 줄이라는 점이 이 접근의 효율을 보여 준다.
-
 [^1]: Peter G. Doyle and J. Laurie Snell, Random Walks and Electric Networks, https://arxiv.org/abs/math/0001057
+
 [^2]: Russell Lyons and Yuval Peres, Probability on Trees and Networks, Chapters 2 and 9, https://rdlyons.pages.iu.edu/prbtree/book.pdf
 
 # 연관 문서

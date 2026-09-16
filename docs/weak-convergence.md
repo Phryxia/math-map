@@ -143,33 +143,6 @@ $$
 
 추정량의 점근분포가 곧 분포 수렴이다. 최대가능도 추정량의 점근 정규성, [신뢰구간](confidence-intervals.md)의 유효성, 검정통계량의 귀무분포가 모두 이 개념 위에 있다. 델타 방법은 연속사상 정리에 Taylor 전개를 결합한 것이고, 부트스트랩의 타당성 증명은 재표본 분포가 원래 극한분포로 약수렴함을 보이는 일이다.
 
-## 수치 확인
-
-약수렴이 적률을 보존하지 않는다는 위의 반례를 직접 확인한다. $\mu_n$ 을 유계 연속함수로 재면 $\delta_0$ 에 가까워지지만, 항등함수로 재면 1 에서 움직이지 않는다.
-
-```python
-import numpy as np
-
-def measure(n):
-    """mu_n = (1 - 1/n) delta_0 + (1/n) delta_n 의 (위치, 질량)."""
-    return np.array([0.0, float(n)]), np.array([1.0 - 1.0 / n, 1.0 / n])
-
-def integrate(f, n):
-    xs, ws = measure(n)
-    return float(np.sum(ws * f(xs)))
-
-bounded = lambda x: np.cos(x) / (1.0 + x**2)   # 유계 연속 시험함수
-identity = lambda x: x                          # 유계가 아닌 함수
-
-for n in [10, 100, 10000, 1000000]:
-    print(n, round(integrate(bounded, n), 8), round(integrate(identity, n), 8))
-# 유계 연속 쪽은 f(0)=1 로 수렴하고, 항등함수 쪽은 계속 1.0 이다.
-```
-
-시험함수를 유계 연속으로 제한한 정의가 무엇을 보고 무엇을 못 보는지가 이 두 열의 대비에 그대로 드러난다. 항등함수 쪽 값이 극한 측도의 평균 0 과 다른 것이 곧 적률이 보존되지 않는다는 말이다.[^1]
-
-[^1]: Patrick Billingsley, *Convergence of Probability Measures*, 2nd ed., Wiley, 1999, 1장과 5장 (Portmanteau, Prokhorov, Skorokhod). https://onlinelibrary.wiley.com/doi/book/10.1002/9780470316962
-
 # 연관 문서
 
 ## 선수지식

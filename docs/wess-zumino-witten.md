@@ -188,50 +188,6 @@ $$
 
 # 활용
 
-## Verlinde 공식의 정수성을 확인한다
-
-사인 값들의 합이 정수가 되는지, 그리고 그 정수가 잘린 스핀 덧셈 규칙과 맞는지를 직접 본다.
-
-```python
-import math
-from itertools import product
-
-def S_matrix(k):
-    n = k + 1                      # 라벨 a = 2j = 0, 1, ..., k
-    c = math.sqrt(2 / (k + 2))
-    return [[c * math.sin(math.pi * (a + 1) * (b + 1) / (k + 2)) for b in range(n)]
-            for a in range(n)]
-
-def fusion(k):
-    S, n = S_matrix(k), k + 1
-    N = {}
-    for a, b, l in product(range(n), repeat=3):
-        N[(a, b, l)] = sum(S[a][m] * S[b][m] * S[l][m] / S[0][m] for m in range(n))
-    return N
-
-def truncated_cg(k, a, b):
-    """잘린 스핀 덧셈: |a-b| 부터 min(a+b, 2k-a-b) 까지 2 씩"""
-    return set(range(abs(a - b), min(a + b, 2 * k - a - b) + 1, 2))
-
-for k in (1, 2, 3, 4, 8):
-    N = fusion(k)
-    worst = max(abs(v - round(v)) for v in N.values())
-    ok = all({l for l in range(k + 1) if round(N[(a, b, l)]) == 1} == truncated_cg(k, a, b)
-             for a in range(k + 1) for b in range(k + 1))
-    d = [S_matrix(k)[a][0] / S_matrix(k)[0][0] for a in range(k + 1)]
-    print(f"k={k}  정수와의 최대 오차 {worst:.1e}  융합규칙 일치 {ok}  "
-          f"양자차원 {[round(x, 4) for x in d]}")
-
-# k=1  정수와의 최대 오차 5.0e-16  융합규칙 일치 True  양자차원 [1.0, 1.0]
-# k=2  정수와의 최대 오차 4.4e-16  융합규칙 일치 True  양자차원 [1.0, 1.4142, 1.0]
-# k=3  정수와의 최대 오차 5.6e-16  융합규칙 일치 True  양자차원 [1.0, 1.618, 1.618, 1.0]
-# k=4  정수와의 최대 오차 6.1e-16  융합규칙 일치 True  양자차원 [1.0, 1.7321, 2.0, 1.7321, 1.0]
-# k=8  정수와의 최대 오차 2.2e-15  융합규칙 일치 True
-#      양자차원 [1.0, 1.9021, 2.618, 3.0777, 3.2361, 3.0777, 2.618, 1.9021, 1.0]
-```
-
-$k=3$ 의 양자차원에 황금비가 나타나는 것이 Fibonacci 애니온이고, 그 융합 규칙 $\tau\times\tau=1+\tau$ 하나로 보편 양자계산이 가능하다는 결과가 여기 붙는다.
-
 ## 레벨 1 의 특수한 단순함
 
 $G=\mathrm{SU}(N)$ 의 레벨 1 에서는 적분가능 표현이 $N$ 개뿐이고 전부 양자차원 1 이다. 중심전하는 $c=N-1$ 로 정수이고, 이론이 자유 보손을 격자 위에 감은 것과 같아진다. 이 격자가 $\mathfrak{su}(N)$ 의 근격자이고, 같은 구성을 다른 짝수 자기쌍대 격자에 적용하면 [정점작용소대수](vertex-operator-algebras.md)의 격자 구성이 된다. Leech 격자에서 시작해 달빛 가군을 만드는 경로가 그 연장선에 있다.

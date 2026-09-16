@@ -126,51 +126,6 @@ ELBO 가 $\log p(x)$ 의 하계일 뿐 표현 학습의 목적함수가 아니�
 
 다만 변분족의 공분산을 대각으로 제한하면 그렇지 않다. 참 사후분포의 공분산은 일반적으로 대각이 아니기 때문에 틈이 남는다. 표현력의 손실이 디코더가 아니라 인코더의 분포족에서 온다는 점을 보여 주는 사례다.
 
-## 하계와 틈을 직접 확인
-
-선형 Gauss 모형에서는 모든 양이 닫힌 형태로 나오므로 ELBO 와 KL 의 관계를 수치로 확인할 수 있다.
-
-```python
-import numpy as np
-rng = np.random.default_rng(0)
-
-# 선형 Gauss 모형: z ~ N(0,1), x|z ~ N(w z, s^2). 사후분포가 닫힌 형태로 나온다.
-w, s2, x = 2.0, 0.5, 1.3
-post_var = 1 / (1 + w * w / s2)
-post_mu = post_var * w * x / s2
-log_px = -0.5 * (np.log(2 * np.pi * (w * w + s2)) + x * x / (w * w + s2))
-print(f"참 사후분포 N({post_mu:.4f}, {post_var:.4f}),  log p(x) = {log_px:.6f}")
-
-def elbo(mu, var, n=2_000_000):
-    """재매개화로 뽑은 z 로 ELBO = E_q[log p(x,z) - log q(z)] 를 추정."""
-    z = mu + np.sqrt(var) * rng.standard_normal(n)          # 재매개화
-    log_pxz = (-0.5 * (np.log(2 * np.pi) + z ** 2)
-               - 0.5 * (np.log(2 * np.pi * s2) + (x - w * z) ** 2 / s2))
-    log_q = -0.5 * (np.log(2 * np.pi * var) + (z - mu) ** 2 / var)
-    return (log_pxz - log_q).mean()
-
-def kl(mu, var):
-    """KL(q || 참 사후분포), 두 Gauss 사이의 닫힌 형태."""
-    return 0.5 * (var / post_var + (mu - post_mu) ** 2 / post_var
-                  - 1 + np.log(post_var / var))
-
-print(f"{'q':>22} {'ELBO':>11} {'log p(x)-ELBO':>15} {'KL(q||p)':>10}")
-for mu, var in [(post_mu, post_var), (0.0, 1.0), (1.0, 0.2), (post_mu, 0.05)]:
-    e = elbo(mu, var)
-    print(f"N({mu:6.3f},{var:6.3f}) {e:11.6f} {log_px - e:15.6f} {kl(mu, var):10.6f}")
-
-# 참 사후분포 N(0.5778, 0.1111),  log p(x) = -1.858755
-#                      q        ELBO   log p(x)-ELBO   KL(q||p)
-# N( 0.578, 0.111)   -1.858755       -0.000000   0.000000
-# N( 0.000, 1.000)   -6.267750        4.408995   4.403610
-# N( 1.000, 0.200)   -2.766966        0.908211   0.908329
-# N( 0.578, 0.050)   -1.983645        0.124890   0.124254
-```
-
-참 사후분포를 넣으면 ELBO 가 $\log p(x)$ 와 정확히 일치하고, 그 밖에서는 틈이 KL 과 같다. 표본 200 만 개의 몬테카를로 오차 범위 안에서 두 열이 맞는다.
-
-마지막 줄이 중요하다. 평균은 맞는데 분산을 너무 작게 잡아도 틈이 생긴다. ELBO 최대화가 평균뿐 아니라 불확실성의 크기까지 맞추도록 강제한다는 뜻이며, 최대가능도로 점추정만 하는 오토인코더와 갈리는 지점이다.
-
 ## 두 기울기 추정량의 분산
 
 재매개화 없이도 기울기를 추정할 수는 있다. $\nabla_\phi\mathbb E_q[f]=\mathbb E_q[f\nabla_\phi\log q]$ 라는 항등식을 쓰는 점수함수 추정량(REINFORCE)이 그것이고, $q$ 가 이산이어도 쓸 수 있다는 장점이 있다. 대신 분산이 크다.

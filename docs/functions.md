@@ -76,30 +76,6 @@ $A$ 가 비어 있지 않을 때 $f$ 가 단사인 것은 $g \circ f = \mathrm{i
 
 전단사가 존재하는 것을 "크기가 같다" 의 정의로 삼으면 유한집합의 직관이 무한집합으로 확장된다. 이것이 [가산성과 비가산성](cardinality.md)의 출발점이다.
 
-## 계산으로 확인
-
-작은 집합에서 함수의 개수를 세고, 상과 역상의 비대칭을 반례로 확인한다.
-
-```python
-from itertools import product
-
-A, B = [0, 1, 2], ["a", "b"]
-F = [dict(zip(A, t)) for t in product(B, repeat=len(A))]
-inj = [f for f in F if len(set(f.values())) == len(A)]
-sur = [f for f in F if set(f.values()) == set(B)]
-print(len(F), len(inj), len(sur))        # 8 0 6
-# 2^3 = 8 개, 단사는 |A| > |B| 라 하나도 없고, 전사는 6 개
-
-f = {1: "a", 2: "a"}                      # 두 입력이 한 출력으로 합쳐진다
-img = lambda S: {f[x] for x in S}
-pre = lambda T: {x for x in f if f[x] in T}
-
-print(img({1} & {2}), img({1}) & img({2}))   # set() {'a'}   상은 교집합을 깬다
-print(pre(set()), pre({"a"}) & pre(set()))   # set() set()   역상은 보존한다
-```
-
-단사인 함수가 하나도 없다는 결과가 [비둘기집 원리](pigeonhole-principle.md)의 가장 작은 사례다. 세 입력을 두 출력에 넣으면 반드시 충돌한다.
-
 # 활용
 
 ## 구조를 보존하는 사상

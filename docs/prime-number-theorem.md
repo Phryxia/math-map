@@ -156,53 +156,6 @@ $$
 
 수치적으로 $\pi(x)<\mathrm{Li}(x)$ 가 관찰되지만 항상 그렇지는 않다. Littlewood 가 부호가 무한히 자주 바뀜을 증명했고, 처음 바뀌는 지점의 상계인 Skewes 수는 천문학적으로 크다. 계산으로 확인된 범위 전체에서 한 방향의 부등식이 성립해도 정리가 아니라는 경고 사례로 자주 인용된다.
 
-## 수치로 확인
-
-```python
-import math
-
-def sieve(n):
-    ok = bytearray([1]) * (n + 1)
-    ok[0] = ok[1] = 0
-    for p in range(2, int(n**0.5) + 1):
-        if ok[p]:
-            ok[p*p::p] = bytearray(len(ok[p*p::p]))
-    return [i for i in range(n + 1) if ok[i]]
-
-P = sieve(10**6)
-
-def pi(x):
-    lo, hi = 0, len(P)
-    while lo < hi:
-        m = (lo + hi) // 2
-        if P[m] <= x: lo = m + 1
-        else: hi = m
-    return lo
-
-def Li(x, n=200000):
-    """∫_2^x dt/ln t 를 Simpson 법으로."""
-    a, b = 2.0, float(x)
-    h = (b - a) / n
-    f = lambda t: 1 / math.log(t)
-    s = f(a) + f(b)
-    for i in range(1, n):
-        s += (4 if i % 2 else 2) * f(a + i * h)
-    return s * h / 3
-
-print(f"{'x':>9} {'pi(x)':>8} {'x/ln x':>10} {'Li(x)':>10}")
-for e in range(2, 7):
-    x = 10**e
-    print(f"{x:>9} {pi(x):>8} {x/math.log(x):>10.1f} {Li(x):>10.1f}")
-#         x    pi(x)     x/ln x      Li(x)
-#       100       25       21.7       29.1
-#      1000      168      144.8      176.6
-#     10000     1229     1085.7     1245.1
-#    100000     9592     8685.9     9628.8
-#   1000000    78498    72382.4    78627.1
-```
-
-$x/\ln x$ 는 $10^6$ 에서도 8% 가까이 모자라다. 수렴이 느린 것은 $\mathrm{Li}$ 의 전개에서 둘째 항 $x/\ln^2x$ 가 주항에 비해 $1/\ln x$ 배로만 작기 때문이다. 반면 $\mathrm{Li}(x)$ 는 상대오차가 $0.2\%$ 이하이며 $\pi(x)$ 를 위에서 근사한다. 두 근사가 같은 점근 등가류에 있으면서도 실제 정확도가 크게 다르다는 점이 보인다.
-
 # 활용
 
 ## 소수의 밀도를 쓰는 계산

@@ -116,60 +116,6 @@ $\epsilon$ 은 짝이면 0, 홀이면 1 이다. **감마 인자가 무한 자리
 
 # 성질
 
-## Laplace 고유성을 직접 확인한다
-
-전개에 나온 $\sqrt yK_{ir}(2\pi|n|y)e^{2\pi inx}$ 가 실제로 고유값 $\tfrac14+r^2$ 를 주는지 본다. Bessel 함수를 위의 적분 표시로 직접 계산하고, Laplace 작용소를 중심차분으로 적용한다.
-
-```python
-from math import exp, cosh, cos, sqrt, pi
-
-def K(r, z, T=6.0, N=40000):
-    """K_{ir}(z) = int_0^inf exp(-z cosh t) cos(rt) dt  를 Simpson 으로"""
-    h, s = T/N, 0.0
-    for i in range(N+1):
-        t = i*h
-        w = 1 if i in (0, N) else (4 if i % 2 else 2)
-        s += w * exp(-z*cosh(t)) * cos(r*t)
-    return s*h/3
-
-def f(r, x, y, n):
-    """Fourier 전개의 n 번째 항 (실수부)"""
-    return sqrt(y) * K(r, 2*pi*abs(n)*y) * cos(2*pi*n*x)
-
-def laplacian(r, x, y, n, h=1e-3):
-    """-y^2 (f_xx + f_yy) 를 중심차분으로"""
-    fxx = (f(r,x+h,y,n) - 2*f(r,x,y,n) + f(r,x-h,y,n)) / h**2
-    fyy = (f(r,x,y+h,n) - 2*f(r,x,y,n) + f(r,x,y-h,n)) / h**2
-    return -y*y*(fxx + fyy)
-
-for r in [9.533695, 12.173008, 3.0]:      # 앞의 둘은 SL_2(Z) 의 실제 고윳값 매개변수
-    for (x, y, n) in [(0.1, 1.0, 1), (0.3, 0.7, 1), (0.2, 1.3, 2)]:
-        ratio = laplacian(r, x, y, n) / f(r, x, y, n)
-        lam = 0.25 + r*r
-        print(f"r={r:9.6f}  n={n}  (x,y)=({x},{y}):  "
-              f"Du/u = {ratio:11.6f}   1/4+r^2 = {lam:11.6f}   상대오차 {abs(ratio-lam)/lam:.0e}")
-
-# r= 9.533695  n=1  (x,y)=(0.1,1.0):  Du/u =   91.140083   1/4+r^2 =   91.141340   상대오차 1e-05
-# r= 9.533695  n=1  (x,y)=(0.3,0.7):  Du/u =   91.139568   1/4+r^2 =   91.141340   상대오차 2e-05
-# r= 9.533695  n=2  (x,y)=(0.2,1.3):  Du/u =   91.136575   1/4+r^2 =   91.141340   상대오차 5e-05
-# r=12.173008  n=1  (x,y)=(0.1,1.0):  Du/u =  148.430057   1/4+r^2 =  148.432124   상대오차 1e-05
-# r=12.173008  n=1  (x,y)=(0.3,0.7):  Du/u =  148.430904   1/4+r^2 =  148.432124   상대오차 8e-06
-# r=12.173008  n=2  (x,y)=(0.2,1.3):  Du/u =  148.428297   1/4+r^2 =  148.432124   상대오차 3e-05
-# r= 3.000000  n=1  (x,y)=(0.1,1.0):  Du/u =    9.249816   1/4+r^2 =    9.250000   상대오차 2e-05
-# r= 3.000000  n=1  (x,y)=(0.3,0.7):  Du/u =    9.249950   1/4+r^2 =    9.250000   상대오차 5e-06
-# r= 3.000000  n=2  (x,y)=(0.2,1.3):  Du/u =    9.243247   1/4+r^2 =    9.250000   상대오차 7e-04
-```
-
-$\Delta u/u$ 가 위치와 $n$ 에 무관하게 $\tfrac14+r^2$ 로 나온다. 남은 오차는 중심차분의 절단오차이고, $h$ 를 줄이면 줄어든다.
-
-주목할 것은 **$r=3$ 에서도 똑같이 성립한다**는 점이다. 이 함수는 Laplace 방정식을 풀지만 $\mathrm{SL}_2(\mathbb Z)$ 불변은 아니다. 전개의 각 항은 어떤 $r$ 에 대해서도 고유함수이고, $r$ 을 제한하는 것은 미분방정식이 아니라 **모듈러 불변성**이다.
-
-$$
-u\Big(\frac{-1}z\Big)=u(z)
-$$
-
-이 한 줄이 연속체였던 $r$ 을 이산 집합으로 잘라낸다. 그리고 그 잘라내기가 명시적으로 풀리지 않는다는 것이 Maass 형식이 어려운 이유의 전부다. 정칙 형식이라면 유한 차원 공간에서 기저를 써 내려가면 되는데, 여기서는 $r$ 자체가 미지수다. 실제 계산은 전개를 유한 항에서 자르고 불변성을 최소제곱으로 강제해 $r$ 을 찾는 방식(Hejhal 알고리즘)으로 이루어진다.
-
 ## Weyl 법칙
 
 개별 고윳값을 모르는 대신 개수는 안다. [Selberg 대각합 공식](selberg-trace-formula.md)에 적당한 시험함수를 넣으면 나온다.
@@ -222,10 +168,6 @@ $\Gamma\backslash\mathbb H$ 는 음곡률 곡면이므로 측지선 흐름이 �
 짝수 경우가 정확히 $\tfrac14$ 라는 문턱 위에 앉는다. 대응하는 Maass 형식이 $r=0$ 이어서 온도적이면서 경계에 있는 것이다. 이 경우는 부분적으로만 알려져 있고(Langlands, Tunnell 의 가해 경우), 일반적으로는 열려 있다. **정칙 형식으로는 절대 잡을 수 없는 Galois 표현이 있다**는 점이 Maass 형식을 빠뜨릴 수 없게 만든다.
 
 이 대응에서 나오는 Maass 형식들은 예외적으로 계수가 명시적이다. Galois 표현의 지표값이 그대로 계수가 되기 때문이다. 알려진 Maass 형식이 하나도 없다는 앞의 말은 이런 "가짜" 예를 뺀 것이고, 일반적인 Maass 형식은 여전히 수치적으로만 접근된다.
-
-[^1]: H. Maass, *Über eine neue Art von nichtanalytischen automorphen Funktionen*, Math. Ann. **121** (1949). 표준 교과서는 H. Iwaniec, *Spectral Methods of Automorphic Forms* (2판, 2002), 특히 1–5장과 Kuznetsov 공식의 9장. 표현론적 관점은 D. Bump, *Automorphic Forms and Representations* (1997) 2장.
-[^2]: Selberg 추측은 A. Selberg, *On the estimation of Fourier coefficients of modular forms*, Proc. Sympos. Pure Math. **8** (1965). 현재까지의 최선은 H. Kim (부록: Kim–Sarnak), *Functoriality for the exterior square of GL_4 and the symmetric fourth of GL_2*, J. Amer. Math. Soc. **16** (2003). 수치 계산 방법은 D. Hejhal, *On eigenfunctions of the Laplacian for Hecke triangle groups* (1999).
-[^3]: QUE 는 E. Lindenstrauss, *Invariant measures and arithmetic quantum unique ergodicity*, Ann. of Math. **163** (2006) 과 K. Soundararajan, *Quantum unique ergodicity for SL_2(Z)\\H*, Ann. of Math. **172** (2010). 본문의 고유함수 수치 확인은 직접 한 것이다.
 
 # 연관 문서
 

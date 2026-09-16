@@ -130,59 +130,6 @@ $$
 
 # 활용
 
-## 차원을 직접 센다
-
-```python
-from fractions import Fraction
-from itertools import product
-
-def harmonic_dim(l, n=3):
-    """n 변수 l 차 동차다항식 중 Δp = 0 인 것들의 차원. 유리수 Gauss 소거로 정확히 센다."""
-    mono = [m for m in product(range(l + 1), repeat=n) if sum(m) == l]
-    tgt = [m for m in product(range(l + 1), repeat=n) if sum(m) == l - 2] if l >= 2 else []
-    ti = {m: i for i, m in enumerate(tgt)}
-
-    cols = []                                        # Δ 를 단항식 기저로 쓴 행렬의 열
-    for m in mono:
-        col = [Fraction(0)]*len(tgt)
-        for k in range(n):
-            if m[k] >= 2:
-                d = list(m); c = d[k]*(d[k] - 1); d[k] -= 2
-                col[ti[tuple(d)]] += c
-        cols.append(col)
-
-    mat = [[cols[j][i] for j in range(len(mono))] for i in range(len(tgt))]
-    r = 0
-    for c in range(len(mono)):                       # 계수를 구한다
-        piv = next((i for i in range(r, len(mat)) if mat[i][c] != 0), None)
-        if piv is None: continue
-        mat[r], mat[piv] = mat[piv], mat[r]
-        for i in range(len(mat)):
-            if i != r and mat[i][c] != 0:
-                f = mat[i][c]/mat[r][c]
-                mat[i] = [a - f*b for a, b in zip(mat[i], mat[r])]
-        r += 1
-    return len(mono) - r, len(mono)                  # 핵의 차원 = dim H_l
-
-print(" l  동차다항식 차원  조화다항식 차원   2l+1")
-for l in range(0, 9):
-    d, tot = harmonic_dim(l)
-    print(f" {l:>2}  {tot:>13}  {d:>14}   {2*l+1:>5}   {d == 2*l + 1}")
-
-#  l  동차다항식 차원  조화다항식 차원   2l+1
-#   0              1               1       1   True
-#   1              3               3       3   True
-#   2              6               5       5   True
-#   3             10               7       7   True
-#   4             15               9       9   True
-#   5             21              11      11   True
-#   6             28              13      13   True
-#   7             36              15      15   True
-#   8             45              17      17   True
-```
-
-$\Delta$ 의 핵의 차원이 언제나 $2\ell+1$ 이다. 이는 $\Delta\colon P_\ell\to P_{\ell-2}$ 가 전사임을 뜻하고, 전사성이 곧 $P_\ell=\mathcal H_\ell\oplus r^2P_{\ell-2}$ 분해를 준다. 표현론의 결론이 유한차원 선형대수로 확인된다.
-
 ## 어디에 쓰이는가
 
 - **양자역학.** 수소 원자의 파동함수가 지름 부분과 각 부분으로 분리되고, 각 부분이 정확히 $Y_{\ell m}$ 이다. 궤도 각운동량의 양자수 $\ell,m$ 이 표현의 표지이며, $2\ell+1$ 겹 축퇴가 기약표현의 차원이다.

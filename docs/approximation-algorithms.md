@@ -82,61 +82,6 @@ $$
 
 근사 불가능성 증명은 PCP 정리에 기댄다. 모든 NP 문제의 증명을 상수 개의 비트만 무작위로 읽고 검증할 수 있다는 이 정리는, "간극이 있는" 판정 문제로 번역된다. 참인 사례와 거짓인 사례 사이에 값의 간극이 생기도록 환원을 만들면, 그 간극보다 정밀한 근사 알고리즘은 판정 문제를 풀어 버리므로 존재할 수 없다.
 
-## 두 알고리즘을 실험으로
-
-정점 덮개의 근사비가 실제로 2 에 도달하는지, 탐욕 집합 덮개가 최적보다 얼마나 나빠질 수 있는지 확인한다.
-
-```python
-from itertools import combinations
-import math, random
-
-def vc_matching(V, E):                      # 덮이지 않은 간선의 양 끝을 모두 넣는다
-    cover = set()
-    for u, v in E:
-        if u not in cover and v not in cover:
-            cover |= {u, v}
-    return cover
-
-def vc_opt(V, E):                           # 작은 그래프에서 전수 탐색
-    for k in range(len(V) + 1):
-        for S in combinations(V, k):
-            if all(u in set(S) or v in set(S) for u, v in E):
-                return set(S)
-
-rng = random.Random(5)
-worst = 0
-for _ in range(300):
-    V = list(range(8))
-    E = [(u, v) for u, v in combinations(V, 2) if rng.random() < 0.3]
-    if E:
-        worst = max(worst, len(vc_matching(V, E)) / len(vc_opt(V, E)))
-print(round(worst, 3))                      # 2.0  분석의 상한이 실제로 달성된다
-
-U = list(range(16))                         # 탐욕이 나쁘게 동작하도록 만든 사례
-T = [set(range(0, 8)), set(range(8, 12)), set(range(12, 14)), {14}, {15}]
-A, B = {x for x in U if x % 2 == 0}, {x for x in U if x % 2 == 1}
-S = T + [A, B]                              # 최적해는 A 와 B 둘뿐
-
-def sc_greedy(U, S):
-    rem, pick = set(U), []
-    while rem:
-        best = max(S, key=lambda s: len(rem & s))
-        pick.append(best)
-        rem -= best
-    return pick
-
-def sc_opt(U, S):
-    for k in range(1, len(S) + 1):
-        for C in combinations(S, k):
-            if set().union(*C) == set(U):
-                return C
-
-print(len(sc_greedy(U, S)), len(sc_opt(U, S)), round(math.log(16), 3))
-# 5 2 2.773     탐욕은 절반씩 줄어드는 집합을 차례로 집어 ln n 배만큼 손해를 본다
-```
-
-집합 덮개 사례의 구조가 로그 인자의 정체를 보여 준다. 각 단계에서 탐욕은 "지금 가장 이득인" 집합을 고르지만, 그 선택이 다음 단계의 선택지를 나쁘게 만든다. 남은 원소가 절반씩 줄어드는 사슬이 만들어지면 $\log n$ 단계가 필요하고, 최적해는 두 집합으로 끝난다.
-
 # 활용
 
 ## 규모가 큰 최적화

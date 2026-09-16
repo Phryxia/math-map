@@ -415,40 +415,6 @@ for (p, a, b, NN) in [(5, 1, 1, 4), (7, 1, 1, 3), (11, 2, 3, 3)]:
 
 $n=1$ 하나가 모든 확대체의 값을 결정한다. $L$ 함수가 차수 $2$ 라는 것, 곧 유리성의 가장 구체적인 모습이다. $|\alpha|=|\beta|=\sqrt p$ 가 판별식 $\mathrm{Kl}_1^2-4p<0$ 에서 나오고 이것이 Weil 한계와 같은 진술이다. $p=17$ 에서 최댓값 $7.96$ 이 한계 $8.246$ 에 거의 닿는 것이 이 상계가 최선에 가깝다는 증거다.
 
-## 분모가 사라지는 것을 본다
-
-$\theta$ 가 단위원판 밖까지 수렴하는 이유를, 같은 상쇄가 일어나는 Artin–Hasse 지수함수에서 확인한다.
-
-```python
-from fractions import Fraction
-
-def artin_hasse(p, deg):
-    L = [Fraction(0)] * (deg + 1)
-    pk = 1
-    while pk <= deg:
-        L[pk] = Fraction(1, pk); pk *= p
-    E = [Fraction(1)] + [Fraction(0)] * deg
-    for m in range(1, deg + 1):
-        E[m] = sum(j * L[j] * E[m - j] for j in range(1, m + 1)) / m
-    return E
-
-for p in [2, 3, 5, 7]:
-    E = artin_hasse(p, 40)
-    bad = [m for m, c in enumerate(E) if c.denominator % p == 0]
-    print(f"p={p:2d}  deg<=40  모든 계수가 Z_(p) 안 : {not bad}   반례 {bad}")
-print("p=5 처음 계수 :", [str(c) for c in artin_hasse(5, 7)])
-print("비교 : exp(x) 의 1/5! = 1/120 은 분모에 5 가 있다")
-
-# p= 2  deg<=40  모든 계수가 Z_(p) 안 : True   반례 []
-# p= 3  deg<=40  모든 계수가 Z_(p) 안 : True   반례 []
-# p= 5  deg<=40  모든 계수가 Z_(p) 안 : True   반례 []
-# p= 7  deg<=40  모든 계수가 Z_(p) 안 : True   반례 []
-# p=5 처음 계수 : ['1', '1', '1/2', '1/6', '1/24', '5/24', '29/144', '101/1008']
-# 비교 : exp(x) 의 1/5! = 1/120 은 분모에 5 가 있다
-```
-
-$p=5$ 에서 $x^5$ 의 계수가 $1/120$ 이 아니라 $5/24$ 다. $x^5/5$ 를 지수 안에 더한 덕분에 분모의 $5$ 가 사라졌다. 차수 $40$ 까지 분모에 $p$ 가 한 번도 나타나지 않는다. Dwork 의 $\theta$ 에서 일어나는 일이 정확히 이것이고, 그 결과가 수렴반경 $p^{(p-1)/p^2}>1$ 이다.
-
 ## 어디로 이어지는가
 
 - **점 세기 알고리즘.** Dwork 의 방법을 Monsky–Washnitzer 코호몰로지로 다듬은 것이 Kedlaya 알고리즘(2001)이다. 초타원곡선의 zeta 함수를 $p$ 진 정밀도로 계산하며, 비용이 $p$ 에 선형이고 확대차수에 다항식이라 **작은 $p$ 와 큰 $n$ 인 영역**을 맡는다. 큰 $p$ 를 맡는 Schoof–Elkies–Atkin 과 정확히 상보적이다. Lauder–Wan 은 일반 다양체로 확장했다.

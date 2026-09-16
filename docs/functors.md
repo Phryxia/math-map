@@ -75,29 +75,6 @@ functor 의 합성은 다시 functor 이고 항등 functor 가 있으므로, 작
 - **군을 한 대상 범주로.** 대상이 하나이고 사상이 군의 원소인 범주에서 집합의 범주로 가는 functor 는 군 작용과 같다.
 - **거듭제곱 구성.** 집합에 리스트, 유한 부분집합, 확률분포를 대응시키는 구성은 모두 functor 이고, 여기에 구조를 더 얹으면 monad 가 된다.
 
-## 법칙을 코드로 확인
-
-리스트에 대한 `fmap` 이 functor 법칙을 만족하는지, 그리고 그럴듯해 보이지만 법칙을 깨는 대응은 어떻게 걸리는지 확인한다.
-
-```python
-fmap = lambda f, xs: [f(x) for x in xs]              # 후보 1
-bad  = lambda f, xs: [f(x) for x in reversed(xs)]    # 후보 2: 옮기면서 뒤집는다
-
-xs = [1, 2, 3]
-f, g = lambda x: x + 1, lambda x: x * 10
-gf = lambda x: g(f(x))
-idf = lambda x: x
-
-for F in (fmap, bad):
-    comp = F(gf, xs) == F(g, F(f, xs))               # F(g∘f) = F(g)∘F(f)
-    idty = F(idf, xs) == xs                          # F(id) = id
-    print(comp, idty)
-# True True     리스트 fmap 은 functor
-# False False   뒤집기를 섞으면 두 법칙이 모두 깨진다
-```
-
-두 번째 대응이 실패하는 이유가 분명하다. 사상을 두 번 옮기면 두 번 뒤집혀 원래 순서로 돌아오지만 한 번에 옮기면 한 번만 뒤집히고, 항등사상조차 항등으로 가지 않는다. 대상 대응(리스트를 리스트로)이 같아도 사상 대응을 잘못 정하면 functor 가 아니게 된다는 점을 보여 준다.
-
 # 활용
 
 ## 불변량과 분류

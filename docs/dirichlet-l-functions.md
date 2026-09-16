@@ -153,64 +153,6 @@ $\mathbb F_q$ 위의 다항식환 $\mathbb F_q[t]$ 는 $\mathbb Z$ 와 놀랄 �
 
 증명이 정수로 옮겨 오지 않는 이유는 도구가 기하적이기 때문이다. 유한체 위의 다양체에는 코호몰로지와 Frobenius 작용이 있고, 0 점이 그 작용의 고윳값으로 나온다. $\mathrm{Spec}\,\mathbb Z$ 에 대응하는 기하를 세우려는 시도가 아직 성공하지 못했다. 그럼에도 구조적으로 같은 진술이 한쪽에서 참임은 강한 방증으로 여겨진다.
 
-## 수치로 확인
-
-```python
-import cmath, math
-
-def characters(q):
-    """(Z/qZ)^* 가 순환군인 q 에 대해 지표를 명시적으로 만든다."""
-    units = [a for a in range(1, q) if math.gcd(a, q) == 1]
-    n = len(units)
-    g = next(g for g in units
-             if len({pow(g, k, q) for k in range(n)}) == n)      # 원시근
-    idx = {pow(g, k, q): k for k in range(n)}                    # 이산로그
-    def chi(j):
-        def f(a):
-            if math.gcd(a, q) != 1: return 0
-            return cmath.exp(2j * cmath.pi * j * idx[a % q] / n)
-        return f
-    return [chi(j) for j in range(n)], units
-
-X, U = characters(5)
-print("q=5, 지표표 (행=지표, 열=1,2,3,4)")
-for j, chi in enumerate(X):
-    print(f"  chi_{j}: " + "  ".join(f"{chi(a):+.2f}" for a in U))
-
-# 직교성: 서로 다른 지표의 내적은 0, 같으면 phi(q)
-print("<chi_1, chi_3> =", round(abs(sum(X[1](a) * X[3](a).conjugate() for a in U)), 12))
-print("<chi_1, chi_1> =", round(abs(sum(X[1](a) * X[1](a).conjugate() for a in U)), 12))
-
-# 법 4 의 비자명 지표는 1,0,-1,0,... -> Leibniz 급수
-chi4 = lambda a: 0 if a % 2 == 0 else (1 if a % 4 == 1 else -1)
-L = sum(chi4(n) / n for n in range(1, 2_000_001))
-print(f"L(1, chi_4) = {L:.6f},  pi/4 = {math.pi/4:.6f}")
-
-# 산술수열 속 소수의 개수
-N = 10**6
-ok = bytearray([1]) * (N + 1); ok[0] = ok[1] = 0
-for p in range(2, int(N**0.5) + 1):
-    if ok[p]: ok[p*p::p] = bytearray(len(ok[p*p::p]))
-cnt = {1: 0, 3: 0}
-for p in range(3, N + 1, 2):
-    if ok[p]: cnt[p % 4] += 1
-print(f"x=10^6: 4k+1 소수 {cnt[1]}개, 4k+3 소수 {cnt[3]}개, 차 {cnt[3]-cnt[1]}")
-
-# q=5, 지표표 (행=지표, 열=1,2,3,4)
-#   chi_0: +1.00+0.00j  +1.00+0.00j  +1.00+0.00j  +1.00+0.00j
-#   chi_1: +1.00+0.00j  +0.00+1.00j  -0.00-1.00j  -1.00+0.00j
-#   chi_2: +1.00+0.00j  -1.00+0.00j  -1.00+0.00j  +1.00-0.00j
-#   chi_3: +1.00+0.00j  -0.00-1.00j  +0.00+1.00j  -1.00+0.00j
-# <chi_1, chi_3> = 0.0
-# <chi_1, chi_1> = 4.0
-# L(1, chi_4) = 0.785398,  pi/4 = 0.785398
-# x=10^6: 4k+1 소수 39175개, 4k+3 소수 39322개, 차 147
-```
-
-지표표에서 $\chi_2$ 만 값이 실수다. $(\mathbb Z/5\mathbb Z)^\times\cong\mathbb Z/4$ 의 위수 2 인 원소에 해당하며, 이것이 법 5 의 유일한 실수 비자명 지표이자 Legendre 기호 $\left(\frac n5\right)$ 다. $\chi_1$ 과 $\chi_3$ 은 서로 켤레라서 위의 "복소 지표는 쉽다" 논증이 적용되고, $\chi_2$ 만 따로 다뤄야 한다.
-
-$L(1,\chi_4)=\pi/4$ 는 Leibniz 급수다. $0$ 이 아니라는 사실을 눈으로 확인할 수 있는 가장 작은 사례이며, 일반적으로 이 값이 $0$ 이 아님을 보이는 것이 앞서 말한 난관이다.
-
 ## Chebyshev 편향
 
 위 출력에서 $4k+3$ 소수가 $147$ 개 더 많다. 두 잉여류의 개수 비는 $1$ 로 수렴하지만, 차이의 부호는 압도적으로 자주 한쪽이다. 제곱잉여가 아닌 $3 \bmod 4$ 쪽이 앞선다.

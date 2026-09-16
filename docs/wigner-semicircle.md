@@ -107,48 +107,6 @@ $$
 
 # 활용
 
-## 적률을 직접 세어 본다
-
-행렬의 자취를 계산해 적률이 Catalan 수로 가는지 확인한다. 성분 분포를 정규분포와 동전던지기 두 가지로 바꿔 보편성도 함께 본다.
-
-```python
-import math, random
-
-def matmul(A, B):
-    Bt = list(zip(*B))
-    return [[sum(a * b for a, b in zip(row, col)) for col in Bt] for row in A]
-
-def wigner(N, rng, bernoulli=False):
-    """성분을 정규분포 또는 ±1 에서 뽑고 sqrt(N) 으로 규격화."""
-    draw = (lambda: rng.choice((-1.0, 1.0))) if bernoulli else (lambda: rng.gauss(0, 1))
-    A = [[0.0] * N for _ in range(N)]
-    for i in range(N):
-        A[i][i] = draw() / math.sqrt(N)
-        for j in range(i + 1, N):
-            A[i][j] = A[j][i] = draw() / math.sqrt(N)
-    return A
-
-def catalan(m):
-    return math.comb(2 * m, m) // (m + 1)
-
-N, S, K = 120, 4, 6
-rng = random.Random(3)
-print("성분분포      " + "".join(f"  tr A^{2*m:<2d}" for m in range(1, K + 1)))
-for bern in (False, True):
-    acc = [0.0] * (K + 1)
-    for _ in range(S):
-        A = wigner(N, rng, bern)
-        P = [[1.0 if i == j else 0.0 for j in range(N)] for i in range(N)]
-        for m in range(1, K + 1):
-            P = matmul(matmul(P, A), A)
-            acc[m] += sum(P[i][i] for i in range(N)) / N
-    name = "±1 동전" if bern else "정규분포"
-    print(f"{name:10s}  " + "".join(f"{acc[m]/S:8.2f}" for m in range(1, K + 1)))
-print(f"{'Catalan':10s}  " + "".join(f"{catalan(m):8d}" for m in range(1, K + 1)))
-```
-
-$N = 120$ 에서 표본 네 개로 $1, 2, 5$ 까지는 1% 안쪽으로 맞고 $14$ 부터 3% 안팎, $42$ 와 $132$ 에서 5% 정도 어긋난다. 유한크기 보정이 $O(1/N)$ 이고 차수가 높을수록 그 계수가 커지기 때문이다. 두 성분분포의 결과가 서로 다른 방향으로 벗어나 있지만 벌어진 폭이 표본 네 개의 변동 규모와 같으므로, 성분의 분포가 아니라 표본 수가 오차를 지배한다고 읽어야 한다. 분산만 맞으면 나머지는 극한에 영향을 주지 않는다는 것이 보편성의 내용이다.
-
 ## 어디에 쓰이는가
 
 원래 동기는 무거운 원자핵의 에너지 준위였다. Hamilton 연산자를 정확히 쓸 수 없으니 그 행렬 성분을 무작위로 놓고 통계만 예측하자는 발상이었고, 준위 간격의 분포가 실측과 맞았다.
