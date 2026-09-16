@@ -43,7 +43,7 @@ $$
 \langle f,g\rangle=\int_{\Gamma\backslash\mathbb H}f(\tau)\overline{g(\tau)}\,y^k\,\frac{dx\,dy}{y^2}
 $$
 
-이 그 역할을 한다. 측도 $dx\,dy/y^2$ 가 $\mathrm{SL}_2(\mathbb R)$ 불변이고 $f\bar gy^k$ 가 $\Gamma$ 불변이라 적분이 잘 정의되며, 첨점형식의 급감 덕분에 수렴한다. 이 내적에 대해 $p\nmid N$ 인 $T_p$ 가 자기수반이다.
+이 그 역할을 한다. 측도 $dx\thinspace dy/y^2$ 가 $\mathrm{SL}_2(\mathbb R)$ 불변이고 $f\bar gy^k$ 가 $\Gamma$ 불변이라 적분이 잘 정의되며, 첨점형식의 급감 덕분에 수렴한다. 이 내적에 대해 $p\nmid N$ 인 $T_p$ 가 자기수반이다.
 
 가환하는 자기수반 연산자족은 동시에 대각화된다. 스펙트럼 정리의 표준적 따름정리이며, 고유형식의 기저가 존재하는 이유가 이것뿐이다.
 
@@ -81,7 +81,7 @@ $$
 [\Gamma\alpha\Gamma]f=\det(\alpha)^{k-1}\sum_if\big|_k\alpha_i
 $$
 
-여기서 $(f|_k\gamma)(\tau)=\det(\gamma)^{k/2}(c\tau+d)^{-k}f(\gamma\tau)$ 로 정규화한다. $\alpha=\begin{pmatrix}1&0\\0&p\end{pmatrix}$ 로 두면 $T_p$ 를 얻는다. 잉여류 대표는 $p\nmid N$ 일 때 $p+1$ 개다.
+여기서 $(f|_k\gamma)(\tau)=\det(\gamma)^{k/2}(c\tau+d)^{-k}f(\gamma\tau)$ 로 정규화한다. $\alpha=\begin{pmatrix}1&0\cr 0&p\end{pmatrix}$ 로 두면 $T_p$ 를 얻는다. 잉여류 대표는 $p\nmid N$ 일 때 $p+1$ 개다.
 
 $$
 T_pf=p^{k-1}\sum_{j=0}^{p-1}f\Big|_k\begin{pmatrix}1&j\\0&p\end{pmatrix}+f\Big|_k\begin{pmatrix}p&0\\0&1\end{pmatrix}
@@ -89,7 +89,7 @@ $$
 
 $p\mid N$ 이면 마지막 항이 빠져 대표가 $p$ 개뿐이다. 이 경우의 작용소를 $U_p$ 라 쓰고 $T_p$ 와 구별한다. $q$ 전개에서는 $(U_pf)\_n=a_{np}$ 로 둘째 항이 없다.
 
-이 정의가 아델판으로 바로 번역된다는 점이 중요하다. 레벨 $\Gamma_0(N)$ 이 유한 자리의 콤팩트 열린 부분군 $K_0(N)$ 이 되고, $T_p$ 가 이중 잉여류 $K_0(N)\,\mathrm{diag}(1,p)\,K_0(N)$ 이 된다. 고전적 서술에서 다소 임의로 보이던 $p+1$ 개의 행렬이 군론적 필연이 된다.
+이 정의가 아델판으로 바로 번역된다는 점이 중요하다. 레벨 $\Gamma_0(N)$ 이 유한 자리의 콤팩트 열린 부분군 $K_0(N)$ 이 되고, $T_p$ 가 이중 잉여류 $K_0(N)\thinspace\mathrm{diag}(1,p)\thinspace K_0(N)$ 이 된다. 고전적 서술에서 다소 임의로 보이던 $p+1$ 개의 행렬이 군론적 필연이 된다.
 
 ## 관계식과 Hecke 대수
 
@@ -123,8 +123,8 @@ $$
 
 > 1. $S_k^{\mathrm{old}}$ 과 $S_k^{\mathrm{new}}$ 은 모든 $T_n$ $(\gcd(n,N)=1)$ 에 대해 불변이다.
 > 2. **다중도 1.** 새형식 $f,g$ 가 거의 모든 $p$ 에서 $a_p(f)=a_p(g)$ 를 만족하면 $f=g$ 다. 레벨까지 같아진다.
-> 3. 새형식은 모든 $n$ 에 대한 $T_n$ 과 $U_p$ 의 고유형식이고, $p\|N$ 이면 $a_p=\pm p^{k/2-1}$ 이고 $p^2\mid N$ 이면 $a_p=0$ 이다.
-> 4. $S_k(\Gamma_0(N))=\bigoplus_{M\mid N}\bigoplus_{d\mid N/M}\{f(d\tau):f\in S_k^{\mathrm{new}}(\Gamma_0(M))\}$ 로 완전히 분해된다.
+> 3. 새형식은 모든 $n$ 에 대한 $T_n$ 과 $U_p$ 의 고유형식이고, $p\Vert N$ 이면 $a_p=\pm p^{k/2-1}$ 이고 $p^2\mid N$ 이면 $a_p=0$ 이다.
+> 4. $S_k(\Gamma_0(N))=\bigoplus_{M\mid N}\bigoplus_{d\mid N/M}\lbrace f(d\tau):f\in S_k^{\mathrm{new}}(\Gamma_0(M))\rbrace$ 로 완전히 분해된다.
 
 둘째 줄이 이 이론의 핵심이다. 유한 개의 소수에서 고유값을 몰라도 형식이 결정된다는 강한 주장이며, [Langlands 강령](langlands-program.md)의 강한 다중도 1 정리가 이것의 일반화다. $L$ 함수 하나가 자기동형 표현 하나에 대응한다는 전제가 여기에 기대고 있다.
 

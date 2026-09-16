@@ -16,7 +16,7 @@ $$
 L'(E/K,1)=\frac{32\pi^2\,\langle f,f\rangle}{u^2\sqrt{|D|}}\;\hat h(y_K)
 $$
 
-좌변은 해석, 우변은 기하다. 등식의 힘은 즉시 드러난다. $L'(E/K,1)\ne0$ 이면 $\hat h(y_K)\ne0$ 이므로 $y_K$ 가 무한위수이고, 곧 $\mathrm{rank}\,E(K)\ge1$ 이다. 해석적 정보에서 **실제 유리점**이 나온 것이다.
+좌변은 해석, 우변은 기하다. 등식의 힘은 즉시 드러난다. $L'(E/K,1)\ne0$ 이면 $\hat h(y_K)\ne0$ 이므로 $y_K$ 가 무한위수이고, 곧 $\mathrm{rank}\thinspace E(K)\ge1$ 이다. 해석적 정보에서 **실제 유리점**이 나온 것이다.
 
 Kolyvagin 은 이어서 반대 부등식을 얻었다. $y_K$ 가 무한위수이면 그것을 씨앗으로 Euler 계를 만들어 [Selmer 군](selmer-groups.md)을 누를 수 있고, 그 결과 순위가 정확히 $1$ 이며 $\text{Ш}$ 가 유한하다. 두 정리를 합치면 해석적 순위 $\le1$ 인 경우의 BSD 다.
 
@@ -34,7 +34,7 @@ $$
 
 를 만들면 핵이 $\mathfrak n^{-1}/\mathcal O_K\cong\mathcal O_K/\mathfrak n$ 이다. 이 몫이 순환군 $\mathbb Z/N$ 이 되려면 $\mathcal O_K/\mathfrak n\cong\mathbb Z/N$ 이어야 하고, 그 조건이 바로 **Heegner 조건**이다.
 
-> $N$ 을 나누는 모든 소수가 $K$ 에서 분열한다. 동치로, $D$ 가 $\bmod\,4N$ 제곱이다.
+> $N$ 을 나누는 모든 소수가 $K$ 에서 분열한다. 동치로, $D$ 가 $\bmod\thinspace 4N$ 제곱이다.
 
 조건을 만족하는 $D$ 는 계산으로 바로 찾는다.
 
@@ -181,8 +181,8 @@ $$
 
 | 가정 | 결론 |
 |---|---|
-| $r_{\mathrm{an}}=0$ | $\mathrm{rank}\,E(\mathbb Q)=0$ 이고 $\text{Ш}(E/\mathbb Q)$ 유한 |
-| $r_{\mathrm{an}}=1$ | $\mathrm{rank}\,E(\mathbb Q)=1$ 이고 $\text{Ш}(E/\mathbb Q)$ 유한 |
+| $r_{\mathrm{an}}=0$ | $\mathrm{rank}\thinspace E(\mathbb Q)=0$ 이고 $\text{Ш}(E/\mathbb Q)$ 유한 |
+| $r_{\mathrm{an}}=1$ | $\mathrm{rank}\thinspace E(\mathbb Q)=1$ 이고 $\text{Ш}(E/\mathbb Q)$ 유한 |
 | $r_{\mathrm{an}}\ge2$ | 아무것도 증명되지 않음 |
 
 $r_{\mathrm{an}}=0$ 인 경우도 같은 장치로 처리된다. 적당한 $K$ 를 골라 꼬임 $E^{D}$ 쪽이 순위 $1$ 을 갖게 하고, $E$ 쪽에서는 Heegner 점이 비틀림이 됨을 보이면 Kolyvagin 논법이 $E(\mathbb Q)$ 를 유한으로 만든다. 그런 $K$ 가 존재한다는 것은 Waldspurger 계열의 비소실 정리(Bump–Friedberg–Hoffstein, Murty–Murty)가 보장한다.

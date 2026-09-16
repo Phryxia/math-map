@@ -2,7 +2,7 @@
 
 # 개요
 
-[theta 급수](theta-functions.md)가 왜 모듈러 형식인지 묻는 방법은 두 가지다. 하나는 Poisson 합 공식으로 $\theta(-1/\tau)=\sqrt{-i\tau}\,\theta(\tau)$ 를 직접 계산하는 것이고, 다른 하나는 이렇게 묻는 것이다. **무엇이 이 변환을 일으키는 군이고, theta 급수는 그 군의 어떤 표현에서 오는가.**
+[theta 급수](theta-functions.md)가 왜 모듈러 형식인지 묻는 방법은 두 가지다. 하나는 Poisson 합 공식으로 $\theta(-1/\tau)=\sqrt{-i\tau}\thinspace\theta(\tau)$ 를 직접 계산하는 것이고, 다른 하나는 이렇게 묻는 것이다. **무엇이 이 변환을 일으키는 군이고, theta 급수는 그 군의 어떤 표현에서 오는가.**
 
 답은 **Weil 표현**이다. 심플렉틱 공간 $W$ 에서 Heisenberg 군 $H(W)$ 를 만들고 중심 지표 $\psi$ 를 고정하면, Stone–von Neumann 정리가 그런 기약 유니터리 표현이 **정확히 하나**라고 말한다. 그런데 $\mathrm{Sp}(W)$ 가 $H(W)$ 에 중심을 고정하며 작용하므로, 유일성에 의해 $\mathrm{Sp}(W)$ 의 모든 원소가 그 표현을 자기 자신으로 옮긴다. 자동으로 사영표현이 생긴다.
 
@@ -71,7 +71,7 @@ $$
 (w,t)\cdot(w',t')=\Bigl(w+w',\ t+t'+\tfrac12\langle w,w'\rangle\Bigr)
 $$
 
-중심은 $\{0\}\times F$ 이고, 교환자가 $[(w,0),(w',0)]=(0,\langle w,w'\rangle)$ 이라 심플렉틱 형식이 그대로 군의 비가환성이 된다. 양자역학의 정준교환관계 $[\hat q,\hat p]=i\hbar$ 가 이 군의 Lie 대수 판본이다.
+중심은 $\lbrace 0\rbrace\times F$ 이고, 교환자가 $[(w,0),(w',0)]=(0,\langle w,w'\rangle)$ 이라 심플렉틱 형식이 그대로 군의 비가환성이 된다. 양자역학의 정준교환관계 $[\hat q,\hat p]=i\hbar$ 가 이 군의 Lie 대수 판본이다.
 
 ## Stone–von Neumann 정리
 
@@ -123,7 +123,7 @@ $$
 
 ## theta 변환식의 검산
 
-가장 단순한 경우를 수치로 확인해 두면 뒤의 논의가 구체적으로 보인다. $\tau=it$ 로 놓으면 변환식 $\theta(-1/\tau)=\sqrt{-i\tau}\,\theta(\tau)$ 는 실수만 남는다.
+가장 단순한 경우를 수치로 확인해 두면 뒤의 논의가 구체적으로 보인다. $\tau=it$ 로 놓으면 변환식 $\theta(-1/\tau)=\sqrt{-i\tau}\thinspace\theta(\tau)$ 는 실수만 남는다.
 
 ```javascript
 // theta3(it) = sum_{n in Z} exp(-pi n^2 t)

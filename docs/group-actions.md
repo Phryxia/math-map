@@ -103,7 +103,7 @@ $$
 \operatorname{Fix}(g)=\{x: g\cdot x=x\}
 $$
 
-$\{(g,x) : g \cdot x = x\}$ 를 두 방향으로 세면 나온다. $x$ 로 먼저 세면 $\sum |\mathrm{Stab}(x)|$ 이고 궤도-안정자로 정리된다. 실제 계산에서는 "각 대칭이 몇 개의 배치를 고정하는가" 만 세면 되므로 매우 쓰기 편하다.
+$\lbrace(g,x) : g \cdot x = x\rbrace$ 를 두 방향으로 세면 나온다. $x$ 로 먼저 세면 $\sum |\mathrm{Stab}(x)|$ 이고 궤도-안정자로 정리된다. 실제 계산에서는 "각 대칭이 몇 개의 배치를 고정하는가" 만 세면 되므로 매우 쓰기 편하다.
 
 ```python
 from itertools import product

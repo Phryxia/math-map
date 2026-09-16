@@ -117,8 +117,8 @@ $$
 
 유한 측도공간에서 다음이 동치다.
 
-1. $f_n$ 이 $L^1$ 에서 $f$ 로 수렴한다. 즉 $\int|f_n-f|\,d\mu\to0$.
-2. $f_n$ 이 $f$ 로 측도 수렴하고, 족 $\{f_n\}$ 이 균등적분가능하다.
+1. $f_n$ 이 $L^1$ 에서 $f$ 로 수렴한다. 즉 $\int|f_n-f|\thinspace d\mu\to0$.
+2. $f_n$ 이 $f$ 로 측도 수렴하고, 족 $\lbrace f_n\rbrace$ 이 균등적분가능하다.
 
 **증명 스케치 (2 ⇒ 1).** 절단 함수 $T_M(x)=\max(-M,\min(M,x))$ 를 쓴다. 삼각부등식으로
 
@@ -156,7 +156,7 @@ $L^1$ 유계는 UI 와 다르다는 점을 기억하는 세 예다.
 
 ## 확률: martingale 수렴
 
-[martingale](martingales.md) $M_n$ 이 $L^1$ 유계이면 거의 확실히 어떤 $M_\infty$ 로 수렴한다(Doob). 하지만 $L^1$ 수렴과 $\mathbb E[M_n]=\mathbb E[M_\infty]$ 는 따라오지 않는다. 이것이 성립할 필요충분조건이 정확히 $\{M_n\}$ 의 균등적분가능성이고, 이때 martingale 은 닫힌 형태
+[martingale](martingales.md) $M_n$ 이 $L^1$ 유계이면 거의 확실히 어떤 $M_\infty$ 로 수렴한다(Doob). 하지만 $L^1$ 수렴과 $\mathbb E[M_n]=\mathbb E[M_\infty]$ 는 따라오지 않는다. 이것이 성립할 필요충분조건이 정확히 $\lbrace M_n\rbrace$ 의 균등적분가능성이고, 이때 martingale 은 닫힌 형태
 
 $$
 M_n = \mathbb{E}[M_\infty \mid \mathcal{F}_n]

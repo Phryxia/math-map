@@ -129,7 +129,7 @@ Leech 격자는 $\langle\alpha,\alpha\rangle=2$ 인 벡터가 없다. 따라서 
 VOA 에 두 가지 유한성 조건을 걸면 지표가 모듈러가 된다.
 
 - **유리성**: 모든 가군이 기약가군의 직합으로 완전분해된다.
-- **$C_2$ 여유한**: $C_2(V)=\operatorname{span}\{a_{(-2)}b\}$ 에 대해 $\dim V/C_2(V)<\infty$ 인 것.
+- **$C_2$ 여유한**: $C_2(V)=\operatorname{span}\lbrace a_{(-2)}b\rbrace$ 에 대해 $\dim V/C_2(V)<\infty$ 인 것.
 
 Zhu 정리는 이런 $V$ 의 기약가군 $M_1,\dots,M_r$ 의 지표들이 $\mathrm{SL}_2(\mathbb Z)$ 의 작용에 닫혀 있다고 말한다.
 

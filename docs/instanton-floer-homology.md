@@ -80,7 +80,7 @@ flowchart TD
 
 $\Sigma$ 를 정수 호몰로지 3 구라 하자. $H_1(\Sigma)=0$ 이므로 아벨 표현이 자명한 것뿐이고, 기약 표현들이 깨끗하게 분리된다.
 
-> **생성원.** $R^*(\Sigma)=\{\rho:\pi_1\Sigma\to \mathrm{SU}(2)\ \text{기약}\}/\text{켤레}$ 의 원소들. 모두 비퇴화(평탄 접속의 변형이 자명)라고 가정하고, 아니면 홀로노미 섭동으로 비퇴화하게 만든다.
+> **생성원.** $R^*(\Sigma)=\lbrace\rho:\pi_1\Sigma\to \mathrm{SU}(2)\ \text{기약}\rbrace/\text{켤레}$ 의 원소들. 모두 비퇴화(평탄 접속의 변형이 자명)라고 가정하고, 아니면 홀로노미 섭동으로 비퇴화하게 만든다.
 
 > **등급.** $\alpha,\beta$ 사이의 상대 등급 $\mu(\alpha,\beta)\in\mathbb Z/8$ 은 그 둘을 잇는 경로를 따라가는 자기수반 연산자족의 **스펙트럼 흐름**, 곧 고윳값이 0 을 지나며 부호를 바꾸는 횟수의 합이다.
 
@@ -98,7 +98,7 @@ $\partial^2=0$ 은 $\mu=2$ 인 1 차원 모듈라이의 끝을 세어서 나온�
 
 ## Euler 지표가 Casson 불변량이다
 
-> **정리 (Taubes 1990).** $\displaystyle\chi\big(HF_*(\Sigma)\big)=\sum_{i\in\mathbb Z/8}(-1)^i\operatorname{rank}HF_i(\Sigma)=2\,\lambda(\Sigma)$
+> **정리 (Taubes 1990).** $\displaystyle\chi\big(HF_*(\Sigma)\big)=\sum_{i\in\mathbb Z/8}(-1)^i\operatorname{rank}HF_i(\Sigma)=2\thinspace\lambda(\Sigma)$
 
 $\mathbb Z/8$ 등급에서 $(-1)^i$ 가 잘 정의되는 것은 8 이 짝수이기 때문이다. 우변의 2 는 Casson 불변량의 관례적 정규화에서 온다.
 

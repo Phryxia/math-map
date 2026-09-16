@@ -40,7 +40,7 @@ flowchart LR
 
 ## 고정점으로 읽기
 
-$D=(\mathbb R\cup\{\pm\infty\})^{V}$ 위에 "값이 작을수록 정보가 많다" 는 순서를 주고
+$D=(\mathbb R\cup\lbrace\pm\infty\rbrace)^{V}$ 위에 "값이 작을수록 정보가 많다" 는 순서를 주고
 
 $$
 F(d)(v)=\begin{cases}0,&v=s\\ \min_{(u,v)\in E}\bigl(d(u)+w(u,v)\bigr),&\text{그 외}\end{cases}
@@ -85,11 +85,11 @@ d[s] = 0, 나머지는 무한대
 
 | 조건 | 알고리즘 | 시간 |
 |---|---|---|
-| 가중치 비음수 | Dijkstra | $O(\|E\|\log\|V\|)$ |
-| DAG | 위상순서로 한 번 훑기 | $O(\|V\|+\|E\|)$ |
-| 음수 간선 허용 | Bellman–Ford | $O(\|V\|\|E\|)$ |
-| 모든 쌍 | Floyd–Warshall | $O(\|V\|^3)$ |
-| 모든 쌍, 희소 | Johnson (재가중 후 Dijkstra) | $O(\|V\|\|E\|\log\|V\|)$ |
+| 가중치 비음수 | Dijkstra | $O(\vert E\vert\log\vert V\vert)$ |
+| DAG | 위상순서로 한 번 훑기 | $O(\vert V\vert+\vert E\vert)$ |
+| 음수 간선 허용 | Bellman–Ford | $O(\vert V\vert\vert E\vert)$ |
+| 모든 쌍 | Floyd–Warshall | $O(\vert V\vert^3)$ |
+| 모든 쌍, 희소 | Johnson (재가중 후 Dijkstra) | $O(\vert V\vert\vert E\vert\log\vert V\vert)$ |
 
 Dijkstra 가 더 빠른 이유는 탐욕적 순서를 쓸 수 있기 때문이다. 가중치가 비음수면 확정된 거리 중 가장 작은 것은 더 줄어들 수 없으므로, 각 정점을 한 번만 처리하면 된다. 음수 간선이 있으면 이 논거가 무너지고 반복으로 돌아가야 한다.
 

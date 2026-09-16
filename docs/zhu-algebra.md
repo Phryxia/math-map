@@ -38,7 +38,7 @@ $$
 
 ## $C_2$ 여유한이 공급하는 유한성
 
-$C_2(V)=\operatorname{span}\{a_{-2}b:a,b\in V\}$ 로 두고 $\dim V/C_2(V)<\infty$ 를 요구하는 것이 $C_2$ 여유한 조건이다. 첫인상은 기술적이지만 결과가 강력하다.
+$C_2(V)=\operatorname{span}\lbrace a_{-2}b:a,b\in V\rbrace$ 로 두고 $\dim V/C_2(V)<\infty$ 를 요구하는 것이 $C_2$ 여유한 조건이다. 첫인상은 기술적이지만 결과가 강력하다.
 
 이 조건이 있으면 지표가 만족하는 **미분방정식**이 나온다. $V/C_2(V)$ 가 유한차원이라 그 위의 어떤 연산이 유한 단계에서 선형종속을 만들고, 그것이 모듈러 형식 계수를 갖는 선형상미분방정식으로 번역된다.
 
@@ -60,7 +60,7 @@ $$
 
 $M$ 이 기약이면 최저층 $M(0)$ 이 전체를 생성하므로, $M$ 을 아는 것과 $M(0)$ 을 아는 것이 사실상 같다. 그렇다면 $M(0)$ 에는 무엇이 작용하는가.
 
-$a\in V$ 의 성분 중 등급을 보존하는 것 $o(a)=a_{\mathrm{wt}\,a-1}$ 만 $M(0)$ 을 $M(0)$ 으로 보낸다. 이 작용소들이 만드는 대수가 $A(V)$ 이고, $V$ 에서 "등급을 바꾸는 부분" 을 몫으로 날려 얻는다.
+$a\in V$ 의 성분 중 등급을 보존하는 것 $o(a)=a_{\mathrm{wt}\thinspace a-1}$ 만 $M(0)$ 을 $M(0)$ 으로 보낸다. 이 작용소들이 만드는 대수가 $A(V)$ 이고, $V$ 에서 "등급을 바꾸는 부분" 을 몫으로 날려 얻는다.
 
 ```mermaid
 graph LR
@@ -76,14 +76,14 @@ graph LR
 
 ## Zhu 대수
 
-$V=\bigoplus_nV_n$ 을 등급 VOA 라 하고 동차원소 $a\in V_{\mathrm{wt}\,a}$ 에 대해 두 연산을 정의한다.
+$V=\bigoplus_nV_n$ 을 등급 VOA 라 하고 동차원소 $a\in V_{\mathrm{wt}\thinspace a}$ 에 대해 두 연산을 정의한다.
 
 $$
 a*b=\operatorname*{Res}_z\left(Y(a,z)b\,\frac{(1+z)^{\mathrm{wt}\,a}}{z}\right),\qquad
 a\circ b=\operatorname*{Res}_z\left(Y(a,z)b\,\frac{(1+z)^{\mathrm{wt}\,a}}{z^2}\right)
 $$
 
-$O(V)=\operatorname{span}\{a\circ b\}$ 로 두고
+$O(V)=\operatorname{span}\lbrace a\circ b\rbrace$ 로 두고
 
 $$
 A(V)=V/O(V)
@@ -93,7 +93,7 @@ $$
 
 ## 유한성 조건
 
-- **$C_2$ 여유한**: $C_2(V)=\operatorname{span}\{a_{-2}b\}$ 에 대해 $\dim V/C_2(V)<\infty$ 인 것.
+- **$C_2$ 여유한**: $C_2(V)=\operatorname{span}\lbrace a_{-2}b\rbrace$ 에 대해 $\dim V/C_2(V)<\infty$ 인 것.
 - **유리적**: 모든 허용가군이 완전가약.
 
 두 조건은 논리적으로 독립하지만 알려진 예에서는 대개 함께 성립하고, 둘 다 만족하는 VOA 를 **강유리적**이라 부른다. $C_2$ 여유한이면 $A(V)$ 가 유한차원이고 기약가군이 유한개다.
@@ -112,7 +112,7 @@ $$
 |---|---|---|
 | 일반 $c$ 의 Virasoro $L(c,0)$ | $\mathbb C[x]$ | $x$ 의 값 $h$ 마다 하나, 무한개 |
 | Virasoro 최소모형 $L(c_{p,q},0)$ | 유한차원 몫 $\mathbb C[x]/f(x)$ | $(p-1)(q-1)/2$ 개 |
-| 격자 VOA $V_L$ ($L$ 짝수) | $\mathbb C[L^*/L]$ | $\|L^*/L\|$ 개, 잉여류로 색인 |
+| 격자 VOA $V_L$ ($L$ 짝수) | $\mathbb C[L^*/L]$ | $\vert L^*/L\vert$ 개, 잉여류로 색인 |
 | $V^\natural$ | $\mathbb C$ | 자기 자신 하나뿐 |
 
 $A(V)=\mathbb C[x]$ 인 경우 $x=[\omega]$ 이고 그 고유값이 최고무게 $h$ 다. 최소모형에서는 $f(x)$ 의 근이 Kac 표의 $h_{r,s}$ 값들이라 가군 개수가 유한해진다. 기약가군 분류가 다항식 하나의 근을 찾는 문제로 내려온다.

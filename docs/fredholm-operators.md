@@ -80,7 +80,7 @@ $$
 \dim\ker T<\infty,\qquad \dim\mathrm{coker}\,T=\dim(H_2/\overline{\mathrm{ran}\,T})<\infty
 $$
 
-이고 상이 닫혀 있다는 뜻이다. 사실 두 차원이 유한하면 상이 닫힌다는 것이 따라 나오므로, 조건은 두 줄로 충분하다. **지표**를 $\mathrm{ind}(T)=\dim\ker T-\dim\mathrm{coker}\,T\in\mathbb Z$ 로 정의한다.
+이고 상이 닫혀 있다는 뜻이다. 사실 두 차원이 유한하면 상이 닫힌다는 것이 따라 나오므로, 조건은 두 줄로 충분하다. **지표**를 $\mathrm{ind}(T)=\dim\ker T-\dim\mathrm{coker}\thinspace T\in\mathbb Z$ 로 정의한다.
 
 $H_1=H_2=H$ 일 때 Fredholm 작용소 전체를 $\mathcal F(H)$ 라 쓴다.
 
@@ -106,7 +106,7 @@ $$
 
 > 1. $\mathcal F(H)$ 는 $\mathcal B(H)$ 의 열린 부분집합이고 합성에 닫혀 있으며 $\mathrm{ind}(TS)=\mathrm{ind}(T)+\mathrm{ind}(S)$ 다.
 > 2. $\mathrm{ind}(T+K)=\mathrm{ind}(T)$ 가 모든 콤팩트 $K$ 에 대해 성립한다.
-> 3. $\mathrm{ind}$ 는 국소상수다. $\|T-T'\|$ 이 충분히 작으면 $\mathrm{ind}(T)=\mathrm{ind}(T')$ 다.
+> 3. $\mathrm{ind}$ 는 국소상수다. $\Vert T-T'\Vert$ 이 충분히 작으면 $\mathrm{ind}(T)=\mathrm{ind}(T')$ 다.
 > 4. $\mathrm{ind}(T^*)=-\mathrm{ind}(T)$ 이고, $T$ 가 자기수반이면 지표가 $0$ 이다.
 > 5. **Fredholm 대체정리.** $K$ 가 콤팩트면 $I-K$ 는 지표 $0$ 의 Fredholm 작용소다. 따라서 $(I-K)x=y$ 는 유일해를 갖거나, 동차방정식이 유한 차원의 해공간을 갖거나 둘 중 하나다.
 
@@ -132,7 +132,7 @@ $$
 
 $T_aT_b-T_{ab}$ 가 콤팩트라는 사실이 증명의 뼈대다. 기호를 곱하는 것과 작용소를 곱하는 것이 콤팩트 오차 안에서 같으므로, Calkin 대수에서 $a\mapsto\pi(T_a)$ 가 대수 준동형이 된다. 따라서 $a$ 가 $0$ 을 지나지 않으면(곧 $C(S^1)$ 에서 가역이면) $\pi(T_a)$ 가 가역이고 Atkinson 이 적용된다.
 
-$a(z)=z-c$ 를 직접 계산해 보면 공식이 확인된다. $T_a=S-c$ 의 핵은 언제나 $0$ 이고, 여핵은 $\ker(S^*-\bar c)=\{(x_0,\bar cx_0,\bar c^2x_0,\dots)\}$ 인데 이 수열이 $\ell^2$ 에 있으려면 $|c|<1$ 이어야 한다. 그래서 지표는 $|c|<1$ 에서 $-1$ 이고 $|c|>1$ 에서 $0$ 이다. 감음수도 정확히 그렇게 나뉜다.
+$a(z)=z-c$ 를 직접 계산해 보면 공식이 확인된다. $T_a=S-c$ 의 핵은 언제나 $0$ 이고, 여핵은 $\ker(S^*-\bar c)=\lbrace(x_0,\bar cx_0,\bar c^2x_0,\dots)\rbrace$ 인데 이 수열이 $\ell^2$ 에 있으려면 $|c|<1$ 이어야 한다. 그래서 지표는 $|c|<1$ 에서 $-1$ 이고 $|c|>1$ 에서 $0$ 이다. 감음수도 정확히 그렇게 나뉜다.
 
 ## 지표 정리로 가는 길
 

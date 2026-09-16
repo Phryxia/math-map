@@ -72,7 +72,7 @@ $$
 (\sigma-1)Dy=m\,y-Ny=m\,y-\mathrm{Tr}(y)
 $$
 
-이므로, $p\mid m$ 이고 $p\mid \mathrm{Tr}(y)$ 이면 $(\sigma-1)Dy\in p\,E(K_\ell)$ 이다. 곧 $Dy$ 는 $p$ 를 법으로 **Galois 불변**이 된다. 대역 불변이라는 성질이 코호몰로지 류로 내려가는 통로를 열어 준다.
+이므로, $p\mid m$ 이고 $p\mid \mathrm{Tr}(y)$ 이면 $(\sigma-1)Dy\in p\thinspace E(K_\ell)$ 이다. 곧 $Dy$ 는 $p$ 를 법으로 **Galois 불변**이 된다. 대역 불변이라는 성질이 코호몰로지 류로 내려가는 통로를 열어 준다.
 
 $m=\ell+1$ 이 $p$ 로 나뉘고 $a_\ell$ 이 $p$ 로 나뉘는 소수 $\ell$ — 이것이 **Kolyvagin 소수**의 두 조건이다. 조건이 두 개인 이유가 항등식의 두 항에 정확히 대응한다.
 
@@ -125,7 +125,7 @@ flowchart TD
 
 $K$ 를 수체, $T$ 를 $G_K$ 가 작용하는 유한생성 $\mathbb Z_p$ 가군이라 하자. $\mathcal N$ 을 적당한 조건을 만족하는 제곱없는 정수들의 집합, $K(n)/K$ 를 도체 $n$ 에 붙는 아벨 확대의 족이라 하자.
 
-**정의.** 류의 족 $c=\{c_n\}_{n\in\mathcal N}$ 으로 $c_n\in H^1(K(n),T)$ 인 것이 **Euler 계**라는 것은 모든 $n$ 과 $\ell\nmid n$ 에 대해
+**정의.** 류의 족 $c=\lbrace c_n\rbrace_{n\in\mathcal N}$ 으로 $c_n\in H^1(K(n),T)$ 인 것이 **Euler 계**라는 것은 모든 $n$ 과 $\ell\nmid n$ 에 대해
 
 $$
 \mathrm{cor}_{K(n\ell)/K(n)}\big(c_{n\ell}\big)=P_\ell\!\left(\mathrm{Fr}_\ell^{-1}\right)c_n
@@ -157,7 +157,7 @@ $n$ 을 Kolyvagin 소수들의 곱이라 하고 $K_n$ 을 도체 $n$ 의 링 유
 
 ## 유도류 $\kappa_n$
 
-$G_\ell$ 의 생성원 $\sigma_\ell$ 에 대해 $D_\ell=\sum_{i=1}^{\ell}i\,\sigma_\ell^{\,i}$ 로 두고 $D_n=\prod_{\ell\mid n}D_\ell$ 라 하자. Heegner 점 $y_n\in E(K_n)$ 에 대해 다음이 성립한다.
+$G_\ell$ 의 생성원 $\sigma_\ell$ 에 대해 $D_\ell=\sum_{i=1}^{\ell}i\thinspace\sigma_\ell^{\thinspace i}$ 로 두고 $D_n=\prod_{\ell\mid n}D_\ell$ 라 하자. Heegner 점 $y_n\in E(K_n)$ 에 대해 다음이 성립한다.
 
 - 앞의 텔레스코핑 항등식과 자취 관계에서 $D_n y_n$ 의 상은 $E(K_n)/pE(K_n)$ 안에서 $G_n$ 불변이다.
 - $E[p]$ 가 기약이므로 $H^1(G_n,E(K_n)[p])=0$ 이고, 따라서 $D_n y_n$ 은 $E(K_1)/p$ 의 원소로 유일하게 내려온다. 다시 $K_1/K$ 로 내려 $\mathcal P_n\in E(K)/pE(K)$ 를 얻는다.
@@ -227,13 +227,13 @@ $$
 
 이다.
 
-**증명의 뼈대.** $s\in \mathrm{Sel}^p(E/K)$ 가 $\kappa_1$ 이 생성하는 부분군 밖에 있다고 하자. Chebotarev 로 Kolyvagin 소수 $\ell$ 을 골라 $\mathrm{loc}\_\ell(s)\ne0$ 이면서 $\mathrm{loc}\_\ell^{\,f}(\kappa_1)\ne0$ 이 되게 한다. 상호법칙을 $c=\kappa_\ell$ 과 $s$ 에 적용하면 $\ell$ 을 뺀 모든 자리에서 두 류가 서로 소멸자에 놓이므로 항이 죽고
+**증명의 뼈대.** $s\in \mathrm{Sel}^p(E/K)$ 가 $\kappa_1$ 이 생성하는 부분군 밖에 있다고 하자. Chebotarev 로 Kolyvagin 소수 $\ell$ 을 골라 $\mathrm{loc}\_\ell(s)\ne0$ 이면서 $\mathrm{loc}\_\ell^{\thinspace f}(\kappa_1)\ne0$ 이 되게 한다. 상호법칙을 $c=\kappa_\ell$ 과 $s$ 에 적용하면 $\ell$ 을 뺀 모든 자리에서 두 류가 서로 소멸자에 놓이므로 항이 죽고
 
 $$
 \big\langle \mathrm{loc}_\ell^{\,s}(\kappa_\ell),\ \mathrm{loc}_\ell^{\,f}(s)\big\rangle_\ell=0
 $$
 
-만 남는다. 제 2 상호법칙으로 왼쪽 성분이 $\mathrm{loc}\_\ell^{\,f}(\kappa_1)\ne0$ 과 같고 국소 짝이 완전하므로 $\mathrm{loc}\_\ell(s)=0$ 이다. $\ell$ 을 고른 방식과 모순이다. 따라서 $\mathrm{Sel}^p(E/K)$ 는 $\kappa_1$ 이 생성하는 것에 가깝고, $y_K$ 가 무한위수라는 가정과 합쳐 계수 1 과 $\text{Ш}$ 의 유한성이 나온다. $\square$
+만 남는다. 제 2 상호법칙으로 왼쪽 성분이 $\mathrm{loc}\_\ell^{\thinspace f}(\kappa_1)\ne0$ 과 같고 국소 짝이 완전하므로 $\mathrm{loc}\_\ell(s)=0$ 이다. $\ell$ 을 고른 방식과 모순이다. 따라서 $\mathrm{Sel}^p(E/K)$ 는 $\kappa_1$ 이 생성하는 것에 가깝고, $y_K$ 가 무한위수라는 가정과 합쳐 계수 1 과 $\text{Ш}$ 의 유한성이 나온다. $\square$
 
 $\gamma$ 를 $K$ 의 복소켤레라 하면 $E(K)$ 와 $\mathrm{Sel}$ 이 $\pm$ 고유공간으로 쪼개지고 $y_K$ 는 한쪽에만 산다. Kolyvagin 소수의 조건이 $\mathrm{Fr}_\ell$ 을 복소켤레와 묶어 두는 이유가 여기에 있다. 부호가 맞지 않으면 상호법칙의 항이 자동으로 죽어 정보가 사라진다.
 
@@ -263,7 +263,7 @@ Kato 의 Euler 계는 모듈러 곡선의 $K_2$ 안의 Beilinson 원소에서 �
 
 ## Kolyvagin 계로의 추상화
 
-Mazur 와 Rubin 은 유도류만 남기고 원래의 Euler 계를 지워 버리는 형식화를 제안했다. **Kolyvagin 계**란 $\kappa=\{\kappa_n\}$ 의 족으로, 각 $\kappa_n$ 이 $n$ 에서 변형된 Selmer 군에 속하고 위의 제 2 상호법칙에 해당하는 관계를 공리로 만족하는 것이다.
+Mazur 와 Rubin 은 유도류만 남기고 원래의 Euler 계를 지워 버리는 형식화를 제안했다. **Kolyvagin 계**란 $\kappa=\lbrace\kappa_n\rbrace$ 의 족으로, 각 $\kappa_n$ 이 $n$ 에서 변형된 Selmer 군에 속하고 위의 제 2 상호법칙에 해당하는 관계를 공리로 만족하는 것이다.
 
 이 관점에서 정리의 형태가 깔끔해진다. Selmer 구조 $\mathcal F$ 에 **핵심계수**(core rank) $\chi(\mathcal F)$ 라는 정수가 붙고, 이 수 하나가 Kolyvagin 계 전체가 이루는 가군을 결정한다. $\chi=1$ 이면 그 가군이 자유 순위 $1$ 이고 생성원 하나가 Selmer 군의 구조를 완전히 결정한다. 곧
 

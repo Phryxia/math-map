@@ -203,7 +203,7 @@ for A in H:
     print(show(A), "neg:", show(neg(A)), "excluded middle:", A | neg(A) == top)
 ```
 
-원소는 공집합과 $\{w_1\}$ 과 $\{w_0, w_1\}$ 세 개다. $A = \{w_1\}$ 에서 $\neg A$ 는 공집합이므로 $A \vee \neg A$ 는 전체가 아니고, $\neg\neg A$ 는 전체이므로 이중부정 제거도 실패한다. 세 원소 사슬은 배중률을 만족하지 않는 가장 작은 Heyting algebra 이며, 이를 Gödel 의 3치 대수라고도 부른다.
+원소는 공집합과 $\lbrace w_1\rbrace$ 과 $\lbrace w_0, w_1\rbrace$ 세 개다. $A = \lbrace w_1\rbrace$ 에서 $\neg A$ 는 공집합이므로 $A \vee \neg A$ 는 전체가 아니고, $\neg\neg A$ 는 전체이므로 이중부정 제거도 실패한다. 세 원소 사슬은 배중률을 만족하지 않는 가장 작은 Heyting algebra 이며, 이를 Gödel 의 3치 대수라고도 부른다.
 
 # 활용
 

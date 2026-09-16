@@ -90,7 +90,7 @@ $$
 \limsup_{n\to\infty} \left\lvert \frac{a_n}{n!} \right\rvert^{1/n} = \frac{1}{\lvert A \rvert}
 $$
 
-가 성립한다. 거꾸로 계수를 몇십 개 계산해 $a_n/(n!\,A^{-n})$ 이 안정되는 $A$ 를 찾으면 특이점의 위치, 즉 보이지 않는 안장점의 작용을 수치로 읽어 낼 수 있다.
+가 성립한다. 거꾸로 계수를 몇십 개 계산해 $a_n/(n!\thinspace A^{-n})$ 이 안정되는 $A$ 를 찾으면 특이점의 위치, 즉 보이지 않는 안장점의 작용을 수치로 읽어 낼 수 있다.
 
 Stirling 급수가 좋은 예다. 그 Borel 변환의 특이점이 $\zeta = 2\pi i k$ 에 있어 $\lvert A \rvert = 2\pi$ 이고, 이로부터 [Euler–Maclaurin](euler-maclaurin.md) 에서 본 최적 절단 $K^* \approx \pi x$ 와 최소 오차 $e^{-2\pi x}$ 가 그대로 따라 나온다. 두 문서가 같은 수를 다른 쪽에서 본 셈이다.
 
@@ -122,7 +122,7 @@ $$
 
 ## 발산급수를 수치로 합산하기
 
-Borel 변환을 유리함수로 근사(Padé)한 뒤 Laplace 적분하는 **Borel–Padé** 재합산이 표준 도구다. 아래에서 Euler 급수 $\sum (-1)^n n!\,z^n$ 을 최적 절단, Borel 적분 두 방식으로 계산해 비교한다. 이 급수의 정확한 합은 $\int_0^\infty e^{-t}/(1+zt)\,dt$ 다.
+Borel 변환을 유리함수로 근사(Padé)한 뒤 Laplace 적분하는 **Borel–Padé** 재합산이 표준 도구다. 아래에서 Euler 급수 $\sum (-1)^n n!\thinspace z^n$ 을 최적 절단, Borel 적분 두 방식으로 계산해 비교한다. 이 급수의 정확한 합은 $\int_0^\infty e^{-t}/(1+zt)\thinspace dt$ 다.
 
 ```python
 import math

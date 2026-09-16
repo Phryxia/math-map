@@ -12,7 +12,7 @@
 
 ## 류 안에서 가장 짧은 형식
 
-콤팩트 다양체 위의 $k$ 형식들에 $L^2$ 내적이 있다고 하자. 코호몰로지류 $[\omega]$ 안에서 노름 $\|\omega+d\eta\|$ 를 최소화하는 문제를 생각한다.
+콤팩트 다양체 위의 $k$ 형식들에 $L^2$ 내적이 있다고 하자. 코호몰로지류 $[\omega]$ 안에서 노름 $\Vert\omega+d\eta\Vert$ 를 최소화하는 문제를 생각한다.
 
 이것은 유한차원 최소제곱과 같은 그림이다. 아핀 부분공간 $\omega+d\Omega^{k-1}$ 에 원점에서 수선의 발을 내리는 것이고, 최소점은 $d\Omega^{k-1}$ 에 수직인 점이다. 수직 조건을 풀어 쓰면 모든 $\eta$ 에 대해 $\langle\omega,d\eta\rangle=0$ 이고, $d$ 의 딸림작용소를 $\delta$ 라 하면 $\delta\omega=0$ 이다.
 
@@ -56,7 +56,7 @@ $\star$ 가 조화형식을 조화형식으로 보내므로 $\mathcal H^k\cong\m
 
 ## 형식의 내적과 부피형식
 
-계량이 각 접공간에 내적을 주면, 그것이 $\Lambda^k T^\ast\_pM$ 의 내적으로 유일하게 확장된다. 정규직교 여기저기 $e^1,\dots,e^n$ 에 대해 $\{e^{i_1}\wedge\cdots\wedge e^{i_k}\}\_{i_1<\cdots<i_k}$ 가 정규직교기저가 되도록 잡는 것이다.
+계량이 각 접공간에 내적을 주면, 그것이 $\Lambda^k T^\ast\_pM$ 의 내적으로 유일하게 확장된다. 정규직교 여기저기 $e^1,\dots,e^n$ 에 대해 $\lbrace e^{i_1}\wedge\cdots\wedge e^{i_k}\rbrace\_{i_1<\cdots<i_k}$ 가 정규직교기저가 되도록 잡는 것이다.
 
 방향과 계량이 함께 부피형식 $\mathrm{vol}=e^1\wedge\cdots\wedge e^n$ 을 결정한다.
 
@@ -88,7 +88,7 @@ $$
 \delta=(-1)^{n(k+1)+1}\star d\,\star
 $$
 
-이며, 콤팩트이고 경계가 없으면 Stokes 정리에서 $\langle\!\langle d\alpha,\beta\rangle\!\rangle=\langle\!\langle\alpha,\delta\beta\rangle\!\rangle$ 가 나온다. $d\circ d=0$ 의 딸림이 $\delta\circ\delta=0$ 이다.
+이며, 콤팩트이고 경계가 없으면 Stokes 정리에서 $\langle\negthinspace\langle d\alpha,\beta\rangle\negthinspace\rangle=\langle\negthinspace\langle\alpha,\delta\beta\rangle\negthinspace\rangle$ 가 나온다. $d\circ d=0$ 의 딸림이 $\delta\circ\delta=0$ 이다.
 
 ## Laplace–de Rham 작용소와 조화형식
 
@@ -128,7 +128,7 @@ $$
 \Omega^k(M)=\mathcal H^k\ \oplus\ d\,\Omega^{k-1}\ \oplus\ \delta\,\Omega^{k+1}
 $$
 
-세 조각이 $L^2$ 내적에 대해 서로 직교하는 직합이다. 직교성은 $\langle\!\langle d\alpha,\delta\beta\rangle\!\rangle=\langle\!\langle dd\alpha,\beta\rangle\!\rangle=0$ 처럼 계산으로 바로 나오고, 어려운 부분은 이 셋이 전체를 덮는다는 것이다. 그 증명이 $\Delta$ 의 타원성과 Fredholm 이론이다.
+세 조각이 $L^2$ 내적에 대해 서로 직교하는 직합이다. 직교성은 $\langle\negthinspace\langle d\alpha,\delta\beta\rangle\negthinspace\rangle=\langle\negthinspace\langle dd\alpha,\beta\rangle\negthinspace\rangle=0$ 처럼 계산으로 바로 나오고, 어려운 부분은 이 셋이 전체를 덮는다는 것이다. 그 증명이 $\Delta$ 의 타원성과 Fredholm 이론이다.
 
 $\mathbb R^3$ 의 벡터장으로 번역하면 "임의의 벡터장은 조화 성분, 기울기 성분, 회전 성분의 합" 이라는 Helmholtz 분해다. 유체역학과 전자기학에서 오래 쓰이던 사실이 일반 다양체로 확장된 것이다.
 
@@ -162,7 +162,7 @@ $$
 \Delta=\nabla^*\nabla+\mathrm{Ric}
 $$
 
-이므로 Ricci 곡률이 양의 준정부호면 조화 1-형식 $\omega$ 에 대해 $0=\|\nabla\omega\|^2+\langle\!\langle\mathrm{Ric}\,\omega,\omega\rangle\!\rangle$ 이고 두 항이 모두 0 이어야 한다. $\mathrm{Ric}>0$ 이면 $\omega=0$ 이므로
+이므로 Ricci 곡률이 양의 준정부호면 조화 1-형식 $\omega$ 에 대해 $0=\Vert\nabla\omega\Vert^2+\langle\negthinspace\langle\mathrm{Ric}\thinspace\omega,\omega\rangle\negthinspace\rangle$ 이고 두 항이 모두 0 이어야 한다. $\mathrm{Ric}>0$ 이면 $\omega=0$ 이므로
 
 $$
 \mathrm{Ric}>0\ \Longrightarrow\ b_1(M)=0

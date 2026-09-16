@@ -30,7 +30,7 @@ graph TB
   A2["Galois 표현"] --> B2["에탈 국소계"] --> C2["평탄 접속을 가진 다발"]
 ```
 
-왼쪽 열에서는 $\mathrm{Spec}\,\mathbb Z$ 가 곡선처럼 보인다는 것이 유비의 전부고, 기하적 도구를 쓸 수 없다. 가운데 열에서는 실제 곡선이 있어 에탈 코호몰로지를 쓸 수 있다. 오른쪽 열에서는 $\mathbb F_q$ 를 $\mathbb C$ 로 바꿔 산술을 완전히 버리는 대신 미분기하와 복소해석을 얻는다.
+왼쪽 열에서는 $\mathrm{Spec}\thinspace\mathbb Z$ 가 곡선처럼 보인다는 것이 유비의 전부고, 기하적 도구를 쓸 수 없다. 가운데 열에서는 실제 곡선이 있어 에탈 코호몰로지를 쓸 수 있다. 오른쪽 열에서는 $\mathbb F_q$ 를 $\mathbb C$ 로 바꿔 산술을 완전히 버리는 대신 미분기하와 복소해석을 얻는다.
 
 기하학적 Langlands 는 오른쪽 열의 진술이다. 산술적 결론을 직접 주지는 않지만, 대응의 **구조**를 가장 선명하게 드러낸다. 정리의 모양을 알아야 산술 쪽에서 무엇을 증명할지 알 수 있다는 뜻이다.
 
@@ -172,7 +172,7 @@ Kapustin–Witten 은 4차원 $\mathcal N=4$ 초대칭 게이지 이론을 곡�
 - **분기 경우.** 곡선의 유한 개 점에 준위 구조를 허용하는 대응. 국소 기하 Langlands 와 얽혀 있다.
 - **표수 $p$ 의 경우.** $\mathbb F_p$ 계수 층에서는 편향층의 성질이 달라 진술 자체가 바뀐다.
 - **양자 변형.** $\hat G$ 를 양자군으로 바꾼 대응. Gaitsgory–Lurie 의 작업이 있다.
-- **$\mathrm{Spec}\,\mathbb Z$ 로의 복귀.** 유비의 왼쪽 끝으로 돌아가는 길은 여전히 열려 있다. 기하적 도구가 없는 자리에서 무엇이 대응물인지가 이 분야의 궁극적 질문이다.
+- **$\mathrm{Spec}\thinspace\mathbb Z$ 로의 복귀.** 유비의 왼쪽 끝으로 돌아가는 길은 여전히 열려 있다. 기하적 도구가 없는 자리에서 무엇이 대응물인지가 이 분야의 궁극적 질문이다.
 
 [^1]: 개설로는 E. Frenkel, *Lectures on the Langlands program and conformal field theory* (2005) 과 D. Gaitsgory, *Progrès récents dans la théorie de Langlands géométrique*, Séminaire Bourbaki (2015). 범주적 진술은 D. Arinkin, D. Gaitsgory, *Singular support of coherent sheaves and the geometric Langlands conjecture*, Selecta Math. (2015). 2024년 증명은 D. Gaitsgory, S. Raskin 외, *Proof of the geometric Langlands conjecture* I–V (2024). 물리 쪽은 A. Kapustin, E. Witten, *Electric-magnetic duality and the geometric Langlands program*, Commun. Number Theory Phys. **1** (2007).
 

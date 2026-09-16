@@ -151,7 +151,7 @@ $$
 H^1(K,E[2])\cong\big(K^\times/(K^\times)^2\big)^2
 $$
 
-가 되어 코호몰로지가 아주 구체적이다. Selmer 군의 원소는 $S$ 밖에서 비분기라는 조건에서 $K(S,2)=\{d\in K^\times/(K^\times)^2:\ v(d)\equiv0\ (2)\ \forall v\notin S\}$ 안에 놓이고, 각 후보 $d$ 에 동차공간
+가 되어 코호몰로지가 아주 구체적이다. Selmer 군의 원소는 $S$ 밖에서 비분기라는 조건에서 $K(S,2)=\lbrace d\in K^\times/(K^\times)^2:\ v(d)\equiv0\ (2)\ \forall v\notin S\rbrace$ 안에 놓이고, 각 후보 $d$ 에 동차공간
 
 $$
 N_d\colon\quad dw^2=d^2u^4+adu^2v^2+bv^4
@@ -171,7 +171,7 @@ $$
 
 ## 국소 가해성 확인
 
-$C$ 를 원시 정수해로 동차화하면 $2Y^2=X^4-17Z^4$ 이고 $\gcd(X,Z)=1$ 이다. 홀수 소수에서는 $\bmod\,p$ 의 비특이 해 하나면 Hensel 보조정리가 $\mathbb Z_p$ 해로 올려 준다.
+$C$ 를 원시 정수해로 동차화하면 $2Y^2=X^4-17Z^4$ 이고 $\gcd(X,Z)=1$ 이다. 홀수 소수에서는 $\bmod\thinspace p$ 의 비특이 해 하나면 Hensel 보조정리가 $\mathbb Z_p$ 해로 올려 준다.
 
 ```python
 def hensel_point_mod_p(p):
@@ -225,7 +225,7 @@ $$
 \lim_{s\to1}\frac{L(E,s)}{(s-1)^r}=\frac{\Omega_E\cdot\mathrm{Reg}_E\cdot\#\text{Ш}(E/\mathbb Q)\cdot\prod_pc_p}{\#E(\mathbb Q)_{\mathrm{tors}}^2}
 $$
 
-정밀 BSD 공식의 분자에 $\#\text{Ш}$ 가 직접 등장한다. 공식이 말이 되려면 $\text{Ш}$ 가 유한해야 하므로, 유한성은 추측의 전제이자 일부다. 거꾸로 순위 0 인 곡선에서 $L(E,1)\ne0$ 을 계산하고 공식을 믿으면 $\#\text{Ш}$ 의 예측값이 나오고, 그 값을 하강으로 실제 확인하는 것이 수치 실험의 표준 절차다.
+정밀 BSD 공식의 분자에 $\char"23{}\text{Ш}$ 가 직접 등장한다. 공식이 말이 되려면 $\text{Ш}$ 가 유한해야 하므로, 유한성은 추측의 전제이자 일부다. 거꾸로 순위 0 인 곡선에서 $L(E,1)\ne0$ 을 계산하고 공식을 믿으면 $\char"23{}\text{Ш}$ 의 예측값이 나오고, 그 값을 하강으로 실제 확인하는 것이 수치 실험의 표준 절차다.
 
 ## Euler 계와 Kolyvagin
 

@@ -44,13 +44,13 @@ $$
 
 이 $\rho$ 는 단사(충실)이고 상이 이산이다. 거꾸로 이산 충실 표현이 있으면 몫이 쌍곡 다양체다. 그래서 "쌍곡 구조를 찾는다"는 문제는 "표현을 찾는다"는 **대수 문제**가 되고, Mostow 강직성은 그 표현이 $\mathrm{PSL}_2(\mathbb C)$ 켤레를 빼고 하나뿐이라는 말이 된다.
 
-이 번역이 왜 유용한지는 자취에서 보인다. $\rho(\gamma)$ 의 자취 $\mathrm{tr}\,\rho(\gamma)$ 가 켤레 불변이므로 위상 불변량이고, 그것들이 생성하는 체(불변 자취체)는 대수적 수체가 된다. 부피가 초월수인데 자취체는 수체라는 이 대비가 [Bloch 군](algebraic-k-theory.md)과 조절자 이야기로 이어진다.
+이 번역이 왜 유용한지는 자취에서 보인다. $\rho(\gamma)$ 의 자취 $\mathrm{tr}\thinspace\rho(\gamma)$ 가 켤레 불변이므로 위상 불변량이고, 그것들이 생성하는 체(불변 자취체)는 대수적 수체가 된다. 부피가 초월수인데 자취체는 수체라는 이 대비가 [Bloch 군](algebraic-k-theory.md)과 조절자 이야기로 이어진다.
 
 ## cusp 가 있는 쪽이 오히려 계산하기 쉽다
 
 닫힌 다양체보다 매듭 여집합처럼 **끝이 뾰족한**(cusped) 다양체가 먼저 다루어진 데에는 이유가 있다. 매듭 여집합 $S^3\setminus K$ 는 콤팩트하지 않지만 부피가 유한하고, 무한으로 가는 끝은 원환면 하나 곱하기 반직선 꼴이다. 이런 다양체는 **이상 사면체로 유한 분할**된다. 꼭짓점이 전부 무한원점에 놓인 사면체를 몇 개 붙여 다양체 전체를 덮는 것이다.
 
-사면체 하나는 복소수 하나로 결정된다. 무한원 경계에서 네 꼭짓점 중 셋을 $0,1,\infty$ 로 보내면 남은 하나가 $z\in\mathbb C\setminus\{0,1\}$ 이고, 이 **모양 매개변수**가 사면체를 완전히 정한다. 세 이면각은
+사면체 하나는 복소수 하나로 결정된다. 무한원 경계에서 네 꼭짓점 중 셋을 $0,1,\infty$ 로 보내면 남은 하나가 $z\in\mathbb C\setminus\lbrace 0,1\rbrace$ 이고, 이 **모양 매개변수**가 사면체를 완전히 정한다. 세 이면각은
 
 $$
 z,\qquad z'=\frac1{1-z},\qquad z''=1-\frac1z
@@ -62,7 +62,7 @@ $$
 
 ## 쌍곡 공간과 등거리군
 
-> **정의.** 상반공간 모형은 $\mathbb H^3=\{(x_1,x_2,x_3):x_3>0\}$ 에 계량 $ds^2=(dx_1^2+dx_2^2+dx_3^2)/x_3^2$ 을 준 것이다. 단면곡률이 상수 $-1$ 이고 완비이며, 이 성질을 갖는 단연결 3 차원 다양체는 등거리사상을 빼고 이것뿐이다.
+> **정의.** 상반공간 모형은 $\mathbb H^3=\lbrace(x_1,x_2,x_3):x_3>0\rbrace$ 에 계량 $ds^2=(dx_1^2+dx_2^2+dx_3^2)/x_3^2$ 을 준 것이다. 단면곡률이 상수 $-1$ 이고 완비이며, 이 성질을 갖는 단연결 3 차원 다양체는 등거리사상을 빼고 이것뿐이다.
 
 무한원 경계 $\partial\mathbb H^3=\widehat{\mathbb C}$ 위에서 등거리사상은 Möbius 변환으로 작용하고
 
@@ -71,7 +71,7 @@ $$
 \begin{pmatrix}a&b\\c&d\end{pmatrix}\cdot w=\frac{aw+b}{cw+d}
 $$
 
-이다. 항등이 아닌 원소는 자취로 분류된다. $\mathrm{tr}^2\in[0,4)$ 이면 **타원형**(고정점이 내부에 있어 회전), $\mathrm{tr}^2=4$ 이면 **포물형**(경계에 고정점 하나, cusp 를 만든다), 그 밖이면 **꼬인형**(축 하나를 따라 이동, 이동거리가 $2\,\mathrm{arccosh}|\mathrm{tr}/2|$ 로 폐측지선의 길이를 준다).
+이다. 항등이 아닌 원소는 자취로 분류된다. $\mathrm{tr}^2\in[0,4)$ 이면 **타원형**(고정점이 내부에 있어 회전), $\mathrm{tr}^2=4$ 이면 **포물형**(경계에 고정점 하나, cusp 를 만든다), 그 밖이면 **꼬인형**(축 하나를 따라 이동, 이동거리가 $2\thinspace\mathrm{arccosh}|\mathrm{tr}/2|$ 로 폐측지선의 길이를 준다).
 
 ## 쌍곡 다양체와 Kleinian 군
 
@@ -212,7 +212,7 @@ SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자
 ## 다른 분야로 나가는 통로
 
 - **산술 쌍곡 다양체.** $\Gamma$ 가 사원수 대수의 정수원에서 오면 Bianchi 군 $\mathrm{PSL}_2(\mathcal O_d)$ 류가 되고, 부피가 [Dedekind zeta 함수](dirichlet-l-functions.md)의 값으로 계산된다. 이때 [Selberg 대각합 공식](selberg-trace-formula.md)이 길이 스펙트럼과 Laplace 스펙트럼을 잇는다.
-- **Chern–Simons 이론.** 쌍곡 구조는 $\mathrm{SL}_2(\mathbb C)$ 평탄 접속이므로 [Chern–Simons](chern-simons.md) 불변량이 정의되고, $\mathrm{CS}+i\,\mathrm{Vol}/2\pi$ 라는 복소수 하나로 묶인다. [Witten 점근](witten-asymptotics.md)과 볼륨 추측이 이 복소수의 실수부와 허수부를 각각 본다.
+- **Chern–Simons 이론.** 쌍곡 구조는 $\mathrm{SL}_2(\mathbb C)$ 평탄 접속이므로 [Chern–Simons](chern-simons.md) 불변량이 정의되고, $\mathrm{CS}+i\thinspace\mathrm{Vol}/2\pi$ 라는 복소수 하나로 묶인다. [Witten 점근](witten-asymptotics.md)과 볼륨 추측이 이 복소수의 실수부와 허수부를 각각 본다.
 - **$K$ 이론.** 사면체 모양들이 정하는 Bloch 군의 원소가 있고, 그 Borel 조절자가 부피다. 이것이 [대수적 K 이론](algebraic-k-theory.md)과 3 다양체를 잇는 다리다.
 
 [^1]: $\operatorname{Im}\mathrm{Li}_2(e^{i\theta})=\sum_n\sin(n\theta)/n^2$ 이고 $\Lambda(\theta)=\tfrac12\sum_n\sin(2n\theta)/n^2$ 이므로 $\operatorname{Im}\mathrm{Li}_2(e^{i\theta})=2\Lambda(\theta/2)$ 다. $\theta=\pi/3$ 에서 $2\Lambda(\pi/6)=1.0149416\ldots=V_3$ 이 나온다.

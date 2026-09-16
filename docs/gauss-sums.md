@@ -44,7 +44,7 @@ $$
 
 ## 왜 분기 자리에서만 생기는가
 
-국소 적분 $\int_{K_v^\times}f_v(x)\chi_v(x)|x|^s\,d^\times x$ 에 $f_v=\mathbf 1_{\mathcal O_v}$ 를 넣고 $\chi_v$ 가 $\mathcal O_v^\times$ 에서 자명하면(비분기) 적분이 단순한 등비급수가 되고, Fourier 변환한 쪽도 마찬가지라 두 결과의 비에 상수가 남지 않는다. 근 수가 $1$ 이다.
+국소 적분 $\int_{K_v^\times}f_v(x)\chi_v(x)|x|^s\thinspace d^\times x$ 에 $f_v=\mathbf 1_{\mathcal O_v}$ 를 넣고 $\chi_v$ 가 $\mathcal O_v^\times$ 에서 자명하면(비분기) 적분이 단순한 등비급수가 되고, Fourier 변환한 쪽도 마찬가지라 두 결과의 비에 상수가 남지 않는다. 근 수가 $1$ 이다.
 
 $\chi_v$ 가 분기하면 $\mathcal O_v^\times$ 위에서 $\chi_v$ 가 진동한다. 그러면 $\mathbf 1_{\mathcal O_v}$ 를 넣은 적분은 지표의 직교성으로 $0$ 이 되어 버리고, 대신 $\chi_v$ 가 정확히 살아남는 크기의 시험함수를 골라야 한다. 그 함수의 Fourier 변환을 계산하는 일이 곧 유한 잉여환 위의 지표합, 곧 Gauss 합이다.
 
@@ -131,9 +131,9 @@ $i^\delta$ 는 무한 자리의 근 수다. 지표가 홀이면 감마 인자가
 ## 기본 항등식
 
 > $\chi$ 가 법 $p$ 의 비자명한 지표일 때
-> 1. $g(\chi)\,g(\bar\chi)=\chi(-1)\,p$
+> 1. $g(\chi)\thinspace g(\bar\chi)=\chi(-1)\thinspace p$
 > 2. $|g(\chi)|=\sqrt p$
-> 3. $m\not\equiv0$ 일 때 $\displaystyle\sum_n\chi(n)\psi(mn)=\bar\chi(m)\,g(\chi)$ 다
+> 3. $m\not\equiv0$ 일 때 $\displaystyle\sum_n\chi(n)\psi(mn)=\bar\chi(m)\thinspace g(\chi)$ 다
 > 4. $\chi$ 가 이차이면 $p\equiv1\bmod4$ 일 때 $g(\chi)=\sqrt p$ 이고 $p\equiv3\bmod4$ 일 때 $g(\chi)=i\sqrt p$ 다
 
 첫째와 둘째는 같은 계산의 두 표현이다. 셋째는 $\chi$ 가 Fourier 변환의 고유벡터라는 진술이고, 실제로 국소 근 수의 계산이 이 식 하나로 정리된다.

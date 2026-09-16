@@ -90,7 +90,7 @@ $[-1,1]$ 에서 $f(0) = 1$ 이고 나머지 점에서 $0$ 인 함수를 보자. 
 
 ## 따름정리
 
-- **치환적분.** $\int f(g(x))g'(x)\,dx = \int f(u)\,du$ 는 연쇄법칙을 뒤집은 것이다.
+- **치환적분.** $\int f(g(x))g'(x)\thinspace dx = \int f(u)\thinspace du$ 는 연쇄법칙을 뒤집은 것이다.
 - **부분적분.** $\int uv' = uv - \int u'v$ 는 곱의 미분법을 뒤집은 것이다.
 - **Leibniz 적분 규칙.** 적분 구간의 끝이 변수일 때 $\frac{d}{dx} \int_{a(x)}^{b(x)} f = f(b(x))b'(x) - f(a(x))a'(x)$ 로 미분한다.
 
@@ -111,7 +111,7 @@ print(antiderivative_check(lambda t: math.exp(-t * t),
                            lambda t: math.sqrt(math.pi) / 2 * math.erf(t), 0, 1))
 ```
 
-$\int_0^3 2t\,dt = 9$ 이고, 원시함수에 상수를 더해도 양 끝의 차에서 사라진다.
+$\int_0^3 2t\thinspace dt = 9$ 이고, 원시함수에 상수를 더해도 양 끝의 차에서 사라진다.
 
 # 활용
 

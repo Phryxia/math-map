@@ -118,7 +118,7 @@ $$
 닫힌 명제에 대해 다음이 성립한다.
 
 - $\vdash A \lor B$ 이면 $\vdash A$ 이거나 $\vdash B$ 다.
-- $\vdash \exists x.\, P(x)$ 이면 어떤 구체적 $t$ 에 대해 $\vdash P(t)$ 다.
+- $\vdash \exists x.\thinspace P(x)$ 이면 어떤 구체적 $t$ 에 대해 $\vdash P(t)$ 다.
 
 고전 논리에는 없는 성질이다. $\vdash A \lor \neg A$ 이지만 $A$ 도 $\neg A$ 도 증명되지 않는 경우가 있기 때문이다.
 

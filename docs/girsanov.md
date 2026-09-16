@@ -2,7 +2,7 @@
 
 # 개요
 
-표류가 있는 확률과정 $dX = \mu\,dt + \sigma\,dB$ 를 다루기는 표류가 없는 경우보다 어렵다. martingale 성질이 깨지므로 기댓값을 다루는 도구가 대부분 쓸 수 없게 된다.
+표류가 있는 확률과정 $dX = \mu\thinspace dt + \sigma\thinspace dB$ 를 다루기는 표류가 없는 경우보다 어렵다. martingale 성질이 깨지므로 기댓값을 다루는 도구가 대부분 쓸 수 없게 된다.
 
 Girsanov 정리는 표류를 지우는 방법을 준다. 과정 자체를 바꾸는 것이 아니라 확률측도를 바꾼다. 같은 경로들에 다른 확률을 배정하면, 원래 측도에서 위로 흐르던 과정이 새 측도에서는 순수한 Brown 운동이 된다. 표류가 사라지는 것이 아니라 확률의 무게가 옮겨 가는 것이다.
 
@@ -26,7 +26,7 @@ $$
 
 이므로, 모든 눈금에 대해 곱하면 지수의 안이 합이 되어 $\theta B_t - \theta^2 t/2$ 가 된다. 이차항 $-\theta^2t/2$ 는 정규화에서 오는 것이고, 이것이 있어야 평균이 1 로 유지된다.
 
-이 보정항의 정체는 Itô 공식이다. $L_t = e^{Y_t}$ 에서 $Y$ 가 이차변동을 가지면 $dL = L\,dY + \tfrac12 L\,d\langle Y\rangle$ 이므로, $dL$ 에 $dt$ 항이 남지 않으려면 $Y$ 의 표류가 정확히 $-\tfrac12 d\langle Y\rangle$ 여야 한다.
+이 보정항의 정체는 Itô 공식이다. $L_t = e^{Y_t}$ 에서 $Y$ 가 이차변동을 가지면 $dL = L\thinspace dY + \tfrac12 L\thinspace d\langle Y\rangle$ 이므로, $dL$ 에 $dt$ 항이 남지 않으려면 $Y$ 의 표류가 정확히 $-\tfrac12 d\langle Y\rangle$ 여야 한다.
 
 ## 무엇을 얻는가
 
@@ -52,11 +52,11 @@ $$
 \mathbb E_P\left[\exp\left(\frac12\int_0^T\lVert\theta_s\rVert^2\,ds\right)\right]<\infty
 $$
 
-이 조건이 성립하면 $\mathbb E_P[L_T] = 1$ 이므로 $dQ = L_T\,dP$ 가 확률측도를 정의한다. 조건이 없으면 $L$ 이 순수한 국소 martingale 이 되어 $\mathbb E_P[L_T] < 1$ 일 수 있고, 그러면 $Q$ 는 전체 질량이 1 이 아니다.
+이 조건이 성립하면 $\mathbb E_P[L_T] = 1$ 이므로 $dQ = L_T\thinspace dP$ 가 확률측도를 정의한다. 조건이 없으면 $L$ 이 순수한 국소 martingale 이 되어 $\mathbb E_P[L_T] < 1$ 일 수 있고, 그러면 $Q$ 는 전체 질량이 1 이 아니다.
 
 ## 정리
 
-Novikov 조건 아래에서 $dQ = L_T\,dP$ 로 정의된 $Q$ 는 $P$ 와 동치이고, 다음 과정은 $Q$ 아래에서 표준 Brown 운동이다.
+Novikov 조건 아래에서 $dQ = L_T\thinspace dP$ 로 정의된 $Q$ 는 $P$ 와 동치이고, 다음 과정은 $Q$ 아래에서 표준 Brown 운동이다.
 
 $$
 \tilde B_t=B_t+\int_0^t\theta_s\,ds,\qquad 0\le t\le T
@@ -66,7 +66,7 @@ $$
 
 ## SDE 의 표류 바꾸기
 
-$dX_t = b_t\,dt + \sigma_t\,dB_t$ 에서 표류를 $\tilde b$ 로 바꾸고 싶다면 $\sigma_t\theta_t = b_t - \tilde b_t$ 를 풀어 $\theta$ 를 정하면 된다. 그러면 $Q$ 아래에서
+$dX_t = b_t\thinspace dt + \sigma_t\thinspace dB_t$ 에서 표류를 $\tilde b$ 로 바꾸고 싶다면 $\sigma_t\theta_t = b_t - \tilde b_t$ 를 풀어 $\theta$ 를 정하면 된다. 그러면 $Q$ 아래에서
 
 $$
 dX_t=\tilde b_t\,dt+\sigma_t\,d\tilde B_t
@@ -78,7 +78,7 @@ $$
 
 ## 확산계수는 불변이다
 
-이차변동 $\langle X\rangle_t = \int_0^t \sigma_s^2\,ds$ 는 경로별로 확률수렴 극한으로 정의되고, 동치인 두 측도는 영집합이 같으므로 이 극한이 양쪽에서 같다. 따라서 $\sigma$ 는 측도변환의 불변량이다.
+이차변동 $\langle X\rangle_t = \int_0^t \sigma_s^2\thinspace ds$ 는 경로별로 확률수렴 극한으로 정의되고, 동치인 두 측도는 영집합이 같으므로 이 극한이 양쪽에서 같다. 따라서 $\sigma$ 는 측도변환의 불변량이다.
 
 이 사실의 통계적 의미가 크다. 연속적으로 관측된 확산 과정에서 변동성은 원리적으로 오차 없이 식별되지만, 표류는 유한한 구간의 관측만으로는 결코 정확히 알 수 없다. 표류가 다른 두 모형이 서로 동치인 측도를 주기 때문이다.
 
@@ -116,7 +116,7 @@ $$
 
 ## 위험중립 가격결정
 
-주가가 $dS = \mu S\,dt + \sigma S\,dB$ 를 따르고 무위험 이자율이 $r$ 이라 하자. $\theta = (\mu - r)/\sigma$ 로 잡으면 $Q$ 아래에서 $dS = rS\,dt + \sigma S\,d\tilde B$ 가 되고, 할인된 주가 $e^{-rt}S_t$ 가 martingale 이 된다. 이 $Q$ 를 위험중립측도라 한다.
+주가가 $dS = \mu S\thinspace dt + \sigma S\thinspace dB$ 를 따르고 무위험 이자율이 $r$ 이라 하자. $\theta = (\mu - r)/\sigma$ 로 잡으면 $Q$ 아래에서 $dS = rS\thinspace dt + \sigma S\thinspace d\tilde B$ 가 되고, 할인된 주가 $e^{-rt}S_t$ 가 martingale 이 된다. 이 $Q$ 를 위험중립측도라 한다.
 
 그러면 만기 지급 $\Phi(S_T)$ 의 가격이 할인된 기댓값으로 쓰인다.
 

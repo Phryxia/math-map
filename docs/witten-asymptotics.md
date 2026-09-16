@@ -29,7 +29,7 @@ $$
 
 이므로 임계점은 $F_A=0$ 이고 곧 **평탄 접속**이다. 평탄 접속의 게이지류는 $\pi_1(M)\to\mathrm{SU}(2)$ 준동형의 켤레류와 같으므로, 이것은 유한하거나 유한차원인 대상이다. 무한차원 적분이 $\pi_1$ 의 표현이라는 손에 잡히는 것으로 내려온다.
 
-각 임계점의 기여는 정상위상법의 표준형을 따른다. 위상은 임계값 $e^{2\pi ik\,\mathrm{CS}(\alpha)}$ 이고 진폭은 2 차 변분의 행렬식의 $-1/2$ 승이다. 그 행렬식이 정규화되면 비꼬인 de Rham 복합체의 [Reidemeister 비틀림](reidemeister-torsion.md) $T_\alpha$ 가 되고, 행렬식의 부호에서 스펙트럼 흐름(Atiyah–Patodi–Singer 의 $\eta$ 불변량)이 위상으로 따라 나온다.
+각 임계점의 기여는 정상위상법의 표준형을 따른다. 위상은 임계값 $e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}$ 이고 진폭은 2 차 변분의 행렬식의 $-1/2$ 승이다. 그 행렬식이 정규화되면 비꼬인 de Rham 복합체의 [Reidemeister 비틀림](reidemeister-torsion.md) $T_\alpha$ 가 되고, 행렬식의 부호에서 스펙트럼 흐름(Atiyah–Patodi–Singer 의 $\eta$ 불변량)이 위상으로 따라 나온다.
 
 ```mermaid
 graph TD

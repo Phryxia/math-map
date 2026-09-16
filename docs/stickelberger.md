@@ -57,11 +57,11 @@ $$
 \big(g(\omega^{-k})\big)=\prod_t \mathfrak P_t^{\,\langle kt\rangle}
 $$
 
-꼴이 되고, 지수의 목록 $\{\langle kt\rangle/(p-1)\}$ 이 정확히 $\theta$ 의 계수 $\{a/m\}$ 다. **분수부 함수가 등장하는 이유는 $p$ 진 전개의 자릿수를 재고 있기 때문이다.**
+꼴이 되고, 지수의 목록 $\lbrace\langle kt\rangle/(p-1)\rbrace$ 이 정확히 $\theta$ 의 계수 $\lbrace a/m\rbrace$ 다. **분수부 함수가 등장하는 이유는 $p$ 진 전개의 자릿수를 재고 있기 때문이다.**
 
 ## 소멸자의 정체
 
-$\mathfrak P^{\,\theta}$ 가 주 아이디얼이라는 것이 위 등식의 내용이다. $\theta$ 자체는 정수계수가 아니지만, 정수계수로 만드는 원소를 곱하면 "$\mathfrak P$ 의 류를 그만큼 거듭제곱하면 단위류" 라는 말이 된다. 소 아이디얼의 류가 류군을 생성하므로 소멸 정리가 나온다.
+$\mathfrak P^{\thinspace\theta}$ 가 주 아이디얼이라는 것이 위 등식의 내용이다. $\theta$ 자체는 정수계수가 아니지만, 정수계수로 만드는 원소를 곱하면 "$\mathfrak P$ 의 류를 그만큼 거듭제곱하면 단위류" 라는 말이 된다. 소 아이디얼의 류가 류군을 생성하므로 소멸 정리가 나온다.
 
 ```python
 # (c - sigma_c) theta 가 정수계수이고, (1 + sigma_{-1}) theta = 노름원소임을 확인한다
@@ -85,7 +85,7 @@ for m in [5, 7, 8, 9, 11, 12, 13, 15, 16, 23]:
     assert all(th[a] + minus[a] == 1 for a in G)
 ```
 
-두 번째 확인이 이 이론의 방향을 정한다. $\{a/m\}+\{-a/m\}=1$ 이므로 $(1+\sigma_{-1})\theta_m=\sum_a\sigma_a$ 이고, 이는 **$\theta$ 의 짝수 부분이 노름원소밖에 없다**는 뜻이다. 노름원소는 류군의 짝수 성분에 대해 아무 정보도 주지 않는다. 그래서 Stickelberger 는 홀수 성분만 다루며, 이 비대칭이 Herbrand–Ribet 과 Vandiver 추측까지 그대로 이어진다.
+두 번째 확인이 이 이론의 방향을 정한다. $\lbrace a/m\rbrace+\lbrace-a/m\rbrace=1$ 이므로 $(1+\sigma_{-1})\theta_m=\sum_a\sigma_a$ 이고, 이는 **$\theta$ 의 짝수 부분이 노름원소밖에 없다**는 뜻이다. 노름원소는 류군의 짝수 성분에 대해 아무 정보도 주지 않는다. 그래서 Stickelberger 는 홀수 성분만 다루며, 이 비대칭이 Herbrand–Ribet 과 Vandiver 추측까지 그대로 이어진다.
 
 ```mermaid
 flowchart TD
@@ -120,7 +120,7 @@ $$
 \big(g(\chi)\big)=\mathfrak P^{\,(p-1)\theta}
 $$
 
-꼴로 쓸 수 있고, 지수에 나타나는 유리수들이 위의 $\{a/m\}$ 이다. 소수체가 아닌 $q=p^{f}$ 의 $\mathbb F_q$ 로 가면 지수가 $k$ 의 $p$ 진 자릿수의 합 $s_p(k)$ 로 대체된다.
+꼴로 쓸 수 있고, 지수에 나타나는 유리수들이 위의 $\lbrace a/m\rbrace$ 이다. 소수체가 아닌 $q=p^{f}$ 의 $\mathbb F_q$ 로 가면 지수가 $k$ 의 $p$ 진 자릿수의 합 $s_p(k)$ 로 대체된다.
 
 ## Stickelberger 의 정리
 
@@ -174,7 +174,7 @@ $\theta$ 가 홀수 쪽만 보는 이유와 단수가 짝수 쪽만 보는 이�
 
 ## 소멸자와 크기의 간극
 
-Stickelberger 는 $I_m$ 이 류군을 죽인다고만 말한다. 이로부터 $\#\mathrm{Cl}$ 의 상계는 나오지 않는다. 소멸자가 크다고 군이 작지는 않기 때문이다. 지표 공식이 크기를 주지만 이번에는 $\Lambda$ 가군으로서의 구조를 주지 않는다.
+Stickelberger 는 $I_m$ 이 류군을 죽인다고만 말한다. 이로부터 $\char"23{}\mathrm{Cl}$ 의 상계는 나오지 않는다. 소멸자가 크다고 군이 작지는 않기 때문이다. 지표 공식이 크기를 주지만 이번에는 $\Lambda$ 가군으로서의 구조를 주지 않는다.
 
 세 층위를 정리하면 이렇다.
 

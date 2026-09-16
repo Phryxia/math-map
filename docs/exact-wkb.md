@@ -54,7 +54,7 @@ graph TD
 
 ## Riccati 방정식과 홀수부
 
-$y = \exp\bigl(\epsilon^{-1}\!\int^x S\,dt\bigr)$ 를 $\epsilon^2y'' = Qy$ 에 넣으면
+$y = \exp\bigl(\epsilon^{-1}\negthinspace\int^x S\thinspace dt\bigr)$ 를 $\epsilon^2y'' = Qy$ 에 넣으면
 
 $$
 \epsilon\,S' + S^2 = Q
@@ -72,7 +72,7 @@ $$
 S_{\mathrm{odd}} = \frac{S^{+} - S^{-}}{2}, \qquad S_{\mathrm{even}} = \frac{S^{+} + S^{-}}{2}
 $$
 
-로 나눈다. Riccati 방정식에서 $S_{\mathrm{even}} = -\tfrac12\,\partial_x\log S_{\mathrm{odd}}$ 가 따라오므로, 해가
+로 나눈다. Riccati 방정식에서 $S_{\mathrm{even}} = -\tfrac12\thinspace\partial_x\log S_{\mathrm{odd}}$ 가 따라오므로, 해가
 
 $$
 y_{\pm}(x) = \frac{1}{\sqrt{S_{\mathrm{odd}}}}\exp\left(\pm\frac1\epsilon\int_{x_0}^{x} S_{\mathrm{odd}}\,dt\right)
@@ -130,7 +130,7 @@ $$
 V_\gamma = -1
 $$
 
-이다. 지수를 풀면 $\oint_\gamma S_{\mathrm{odd}}\,dx = 2\pi i\,(n + \tfrac12)$ 이고, 최저 차수만 남기면 정확히 Bohr–Sommerfeld 조건이다. 차이는 좌변이 잘라 쓴 근사가 아니라 Borel 합한 정확한 값이라는 데 있다. 원리적으로 이 한 줄이 스펙트럼 전체를 정확히 결정한다.
+이다. 지수를 풀면 $\oint_\gamma S_{\mathrm{odd}}\thinspace dx = 2\pi i\thinspace(n + \tfrac12)$ 이고, 최저 차수만 남기면 정확히 Bohr–Sommerfeld 조건이다. 차이는 좌변이 잘라 쓴 근사가 아니라 Borel 합한 정확한 값이라는 데 있다. 원리적으로 이 한 줄이 스펙트럼 전체를 정확히 결정한다.
 
 우물이 둘이면 사이클도 둘이고, 조건은 두 Voros 기호의 관계식이 된다. 이중우물의 준위 분열이 장벽 사이클 $V_{\gamma_B}$ 의 크기로 나오며, 그것이 instanton 기여의 정확한 판본이다. 섭동급수와 instanton 급수가 서로의 애매성을 지운다는 이야기가 여기서는 기호 사이의 항등식으로 나타난다.
 

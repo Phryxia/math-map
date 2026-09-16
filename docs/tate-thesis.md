@@ -2,7 +2,7 @@
 
 # 개요
 
-Riemann 은 $\zeta(s)$ 의 함수방정식을 theta 함수 $\theta(t)=\sum_ne^{-\pi n^2t}$ 의 변환식 $\theta(1/t)=\sqrt t\,\theta(t)$ 에서 끌어냈다. Hecke 는 같은 방법을 [수체](algebraic-number-fields.md) $K$ 위로 밀어붙여 $\zeta_K(s)$ 와 Hecke $L$ 함수까지 처리했지만, 그 계산은 수체마다 격자와 단원군을 손으로 다루는 고된 작업이었다. 감마 인자가 왜 그 모양인지, 판별식 $\sqrt{|d_K|}$ 가 왜 거기 끼어드는지는 계산이 끝난 뒤에야 알 수 있었다.
+Riemann 은 $\zeta(s)$ 의 함수방정식을 theta 함수 $\theta(t)=\sum_ne^{-\pi n^2t}$ 의 변환식 $\theta(1/t)=\sqrt t\thinspace\theta(t)$ 에서 끌어냈다. Hecke 는 같은 방법을 [수체](algebraic-number-fields.md) $K$ 위로 밀어붙여 $\zeta_K(s)$ 와 Hecke $L$ 함수까지 처리했지만, 그 계산은 수체마다 격자와 단원군을 손으로 다루는 고된 작업이었다. 감마 인자가 왜 그 모양인지, 판별식 $\sqrt{|d_K|}$ 가 왜 거기 끼어드는지는 계산이 끝난 뒤에야 알 수 있었다.
 
 Tate 의 학위논문[^1]은 무대를 바꾼다. 계산을 [아델](adeles.md) 위로 옮기면 theta 변환식이 Poisson 합공식의 특수한 경우가 되고, $\zeta_K(s)$ 는 이델군 위의 적분 하나가 된다.
 
@@ -37,7 +37,7 @@ $$
 
 ## Mellin 변환의 정체
 
-$\int_0^\infty f(t)t^s\,dt/t$ 라는 Mellin 변환은 해석학에서 기교처럼 쓰이지만, 군론으로 보면 정체가 분명하다. $dt/t$ 는 곱군 $\mathbb R_{>0}$ 의 Haar 측도이고 $t\mapsto t^s$ 는 그 군의 준지표다. 곧 Mellin 변환은 $\mathbb R_{>0}$ 위의 Fourier 변환이다.
+$\int_0^\infty f(t)t^s\thinspace dt/t$ 라는 Mellin 변환은 해석학에서 기교처럼 쓰이지만, 군론으로 보면 정체가 분명하다. $dt/t$ 는 곱군 $\mathbb R_{>0}$ 의 Haar 측도이고 $t\mapsto t^s$ 는 그 군의 준지표다. 곧 Mellin 변환은 $\mathbb R_{>0}$ 위의 Fourier 변환이다.
 
 Tate 의 zeta 적분은 이 관찰을 이델류군으로 일반화한 것이다. $\mathbb R_{>0}$ 자리에 $K^\times\backslash\mathbb A_K^\times$ 를 놓고, $t^s$ 자리에 Hecke 지표 $\chi\cdot|\cdot|^s$ 를 놓는다. Dirichlet 지표로 잘게 쪼개던 작업과 Mellin 변환이 하나의 조화해석으로 합쳐진다.
 
@@ -104,7 +104,7 @@ $$
 
 ## 국소 계산
 
-유한 자리 $v\mid p$ 에서 $\mathrm{vol}(\mathcal O_v^\times)=1$ 로 정규화하고 $f_v=\mathbf 1_{\mathcal O_v}$ 를 넣으면, $\mathcal O_v\setminus\{0\}$ 이 $\varpi^n\mathcal O_v^\times$ 들로 분할되므로
+유한 자리 $v\mid p$ 에서 $\mathrm{vol}(\mathcal O_v^\times)=1$ 로 정규화하고 $f_v=\mathbf 1_{\mathcal O_v}$ 를 넣으면, $\mathcal O_v\setminus\lbrace 0\rbrace$ 이 $\varpi^n\mathcal O_v^\times$ 들로 분할되므로
 
 $$
 Z_v(\mathbf 1_{\mathcal O_v},\chi_v,s)=\sum_{n\ge0}\chi_v(\varpi)^nN\mathfrak p^{-ns}=\frac1{1-\chi_v(\varpi)N\mathfrak p^{-s}}
@@ -119,7 +119,7 @@ $$
 | $v$ 유한, $\chi_v$ 비분기 | $\mathbf 1_{\mathcal O_v}$ | $(1-\chi_v(\varpi)N\mathfrak p^{-s})^{-1}$ |
 | $v$ 유한, $\chi_v$ 분기 | $\mathbf 1_{\mathcal O_v}$ | $1$ |
 | $v$ 실수 | $e^{-\pi x^2}$ | $\pi^{-s/2}\Gamma(s/2)$ |
-| $v$ 복소수 | $e^{-2\pi\|z\|^2}$ | $2(2\pi)^{-s}\Gamma(s)$ |
+| $v$ 복소수 | $e^{-2\pi\Vert z\Vert^2}$ | $2(2\pi)^{-s}\Gamma(s)$ |
 
 **국소 함수방정식**은 각 자리에서 따로 성립한다. $f_v$ 를 바꿔 가며 두 적분의 비를 보면 $f_v$ 에 의존하지 않는 인자가 남는다.
 
@@ -139,7 +139,7 @@ $\gamma_v$ 는 국소 $L$ 인자의 비와 근 수 $\varepsilon_v(\chi_v,s)$ 로
 
 증명의 뼈대는 세 단계다.
 
-1. 이델군을 $|x|\_{\mathbb A}$ 로 층층이 자른다. $\mathbb A_K^\times\cong\mathbb A_K^1\times\mathbb R_{>0}$ 이므로 적분이 $\int_0^\infty\big(\int_{\mathbb A^1}\cdots\big)t^s\,dt/t$ 가 된다.
+1. 이델군을 $|x|\_{\mathbb A}$ 로 층층이 자른다. $\mathbb A_K^\times\cong\mathbb A_K^1\times\mathbb R_{>0}$ 이므로 적분이 $\int_0^\infty\big(\int_{\mathbb A^1}\cdots\big)t^s\thinspace dt/t$ 가 된다.
 2. $t\ge1$ 부분은 $f$ 의 급감으로 모든 $s$ 에서 수렴하는 정함수다.
 3. $t<1$ 부분에 **Riemann–Roch 항등식**을 쓴다. $\mathrm{vol}(\mathbb A_K/K)=1$ 인 Poisson 합공식을 $x$ 배 만큼 늘린 것이다.
    $$

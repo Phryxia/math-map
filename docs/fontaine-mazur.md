@@ -126,7 +126,7 @@ $\rho|\_{G_{\mathbb Q_p}}$ 가 de Rham 이라 함은 $D_{\mathrm{dR}}(\rho)=\big
 
 ## 추측의 정밀한 형태
 
-$n=2$ 에서는 Hodge–Tate 무게와 홀짝성까지 지정한 형태로 적는다. $\rho\colon G_{\mathbb Q}\to\mathrm{GL}_2(\mathbb Q_p)$ 가 기약, 거의 모든 곳 비분기, $p$ 에서 de Rham 이고 Hodge–Tate 무게가 $k\ge2$ 인 $\{0,k-1\}$ 로 **서로 다르다**고 하자. 그러면
+$n=2$ 에서는 Hodge–Tate 무게와 홀짝성까지 지정한 형태로 적는다. $\rho\colon G_{\mathbb Q}\to\mathrm{GL}_2(\mathbb Q_p)$ 가 기약, 거의 모든 곳 비분기, $p$ 에서 de Rham 이고 Hodge–Tate 무게가 $k\ge2$ 인 $\lbrace 0,k-1\rbrace$ 로 **서로 다르다**고 하자. 그러면
 
 $$
 \det\rho(c)=-1\quad(c\ \text{는 복소켤레}) \;\Longrightarrow\; \rho\cong\rho_f\ \text{ (어떤 무게 } k \text{ 첨점 고유형식 } f)
@@ -134,7 +134,7 @@ $$
 
 가 추측된다. 홀수 조건 $\det\rho(c)=-1$ 은 사실 잉여가 아니다. 기하적이면서 무게가 서로 다른 2 차원 표현은 Hodge 구조의 대칭 때문에 홀수일 수밖에 없다.
 
-무게가 **같은** 경우 $\{0,0\}$ 는 성격이 다르다. 이때 추측은 $\rho$ 의 상이 유한하다고 주장하고, 그 경우 $\rho$ 는 Artin 표현이 되어 Artin 추측의 영역으로 넘어간다. 이 부분은 여전히 열려 있다.
+무게가 **같은** 경우 $\lbrace 0,0\rbrace$ 는 성격이 다르다. 이때 추측은 $\rho$ 의 상이 유한하다고 주장하고, 그 경우 $\rho$ 는 Artin 표현이 되어 Artin 추측의 영역으로 넘어간다. 이 부분은 여전히 열려 있다.
 
 ## 변형환의 언어
 
@@ -153,7 +153,7 @@ $$
 | 상황 | 결과 |
 |---|---|
 | $n=1$ | 정리. 유체론과 Kronecker–Weber |
-| $n=2$ 이고 홀수, 서로 다른 HT 무게, $\bar\rho\|\_{\mathbb Q(\zeta_p)}$ 기약 | Kisin, Emerton (대체로 해결)[^2] |
+| $n=2$ 이고 홀수, 서로 다른 HT 무게, $\bar\rho\vert\_{\mathbb Q(\zeta_p)}$ 기약 | Kisin, Emerton (대체로 해결)[^2] |
 | $n=2$ 이고 HT 무게 같음 | 미해결. Artin 추측과 얽힘 |
 | $n=2$ 이고 짝수 | 결론이 "그런 것은 없다" 쪽. 부분 결과만 |
 | $n\ge3$ | 열려 있음. 자기쌍대 경우에 부분 결과 |
@@ -182,7 +182,7 @@ $$
 0\to\mathbb Q_p(1)\to V\to\mathbb Q_p\to0
 $$
 
-들의 공간 $H^1(G_{\mathbb Q_p},\mathbb Q_p(1))\cong\widehat{\mathbb Q_p^\times}\otimes\mathbb Q_p$ 는 2 차원이고, de Rham(여기서는 반안정과 같다) 인 확대는 그중 1 차원 부분공간뿐이다. 나머지 방향은 Hodge–Tate 무게가 $\{0,-1\}$ 로 멀쩡한 정수인데도 기하적이 아니다. 그러니 Sen 무게의 정수성은 **필요조건**일 뿐이고, 계산으로 후보를 걸러낼 때만 쓴다.
+들의 공간 $H^1(G_{\mathbb Q_p},\mathbb Q_p(1))\cong\widehat{\mathbb Q_p^\times}\otimes\mathbb Q_p$ 는 2 차원이고, de Rham(여기서는 반안정과 같다) 인 확대는 그중 1 차원 부분공간뿐이다. 나머지 방향은 Hodge–Tate 무게가 $\lbrace 0,-1\rbrace$ 로 멀쩡한 정수인데도 기하적이 아니다. 그러니 Sen 무게의 정수성은 **필요조건**일 뿐이고, 계산으로 후보를 걸러낼 때만 쓴다.
 
 ## 국소–전역 원리로서
 
@@ -205,7 +205,7 @@ Wiles 의 반안정 타원곡선 모듈러성, Breuil–Conrad–Diamond–Taylo
 1. 도체가 유한한가. 분기하는 소수를 나열할 수 있는가.
 2. Sen 작용소의 고유값이 정수이고 대각화되는가. 아니면 즉시 탈락.
 3. 무게가 서로 다르고 홀수인가. 그러면 그 무게와 도체의 $S_k(\Gamma_0(N))$ 를 실제로 계산해 후보 고유형식을 찾는다.
-4. 몇 개의 소수에서 $a_\ell$ 과 $\mathrm{tr}\,\rho(\mathrm{Frob}_\ell)$ 을 대조한다.
+4. 몇 개의 소수에서 $a_\ell$ 과 $\mathrm{tr}\thinspace\rho(\mathrm{Frob}_\ell)$ 을 대조한다.
 
 [모듈러 기호](modular-symbols.md)로 3 단계의 공간을 계산할 수 있으므로 이 절차 전체가 컴퓨터에서 돈다. 추측은 이 절차가 원리적으로 **완전**하다고, 즉 후보가 없으면 그런 표현도 없다고 보장한다.
 
@@ -213,7 +213,7 @@ Wiles 의 반안정 타원곡선 모듈러성, Breuil–Conrad–Diamond–Taylo
 
 - **일반 차원**: 자기쌍대 조건 아래 Taylor 등의 potential automorphy 기법이 부분 결과를 준다. 자기쌍대성을 벗어나면 [Langlands 강령](langlands-program.md)의 일반 함자성이 필요해진다.
 - **기하화**: Fargues–Scholze 는 $p$ 진 국소 Langlands 를 $\mathrm{Bun}_G$ 위의 층으로 재구성했다. 이 틀에서 de Rham 조건은 매개변수 공간의 어떤 부분대상으로 번역되고, Kisin–Emerton 논법의 국소 부분이 개념적으로 다시 쓰인다.
-- **무게가 $\{0,0\}$ 인 경우**: 홀수 2 차원 Artin 표현의 모듈러성은 Buzzard–Taylor 이후 상당히 진전되었지만, "상이 유한하다" 를 국소 조건에서 끌어내는 부분은 여전히 별개의 난점이다.
+- **무게가 $\lbrace 0,0\rbrace$ 인 경우**: 홀수 2 차원 Artin 표현의 모듈러성은 Buzzard–Taylor 이후 상당히 진전되었지만, "상이 유한하다" 를 국소 조건에서 끌어내는 부분은 여전히 별개의 난점이다.
 
 [^1]: J.-M. Fontaine, B. Mazur, *Geometric Galois representations*, Elliptic Curves, Modular Forms, and Fermat's Last Theorem (1995), 41–78. 본문의 조건 1, 2 와 기하적 표현의 정의가 이 논문의 §1 이다.
 

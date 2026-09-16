@@ -79,7 +79,7 @@ $$
 
 ## 기저에 의한 계산
 
-$V$ 와 $W$ 가 체 $k$ 위 벡터 공간이고 기저가 각각 $\{v_1, \dots, v_m\}$ 과 $\{w_1, \dots, w_n\}$ 이면, 원소들
+$V$ 와 $W$ 가 체 $k$ 위 벡터 공간이고 기저가 각각 $\lbrace v_1, \dots, v_m\rbrace$ 과 $\lbrace w_1, \dots, w_n\rbrace$ 이면, 원소들
 
 $$
 \{ v_i \otimes w_j : 1 \le i \le m,\ 1 \le j \le n \}

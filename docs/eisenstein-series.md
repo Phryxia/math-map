@@ -28,7 +28,7 @@ Riemann zeta 함수의 함수방정식이 상반평면 위의 함수의 대칭�
 
 $\Gamma$ 불변 함수를 만드는 가장 소박한 방법은 평균이다. 아무 함수 $f$ 나 잡고 $\sum_{\gamma\in\Gamma}f(\gamma z)$ 를 만들면 불변이다. 문제는 수렴이다.
 
-$\Gamma$ 전체에 대한 합은 대개 발산한다. 그래서 $f$ 를 어떤 부분군 $\Gamma_\infty$ 에 대해 이미 불변이도록 고르고, 잉여류에 대해서만 합한다. $\mathrm{Im}(z)^s$ 는 $z\mapsto z+1$ 에 대해 불변이므로 $\Gamma_\infty=\left\{\pm\bigl(\begin{smallmatrix}1&n\\0&1\end{smallmatrix}\bigr)\right\}$ 에 대한 불변함수이고,
+$\Gamma$ 전체에 대한 합은 대개 발산한다. 그래서 $f$ 를 어떤 부분군 $\Gamma_\infty$ 에 대해 이미 불변이도록 고르고, 잉여류에 대해서만 합한다. $\mathrm{Im}(z)^s$ 는 $z\mapsto z+1$ 에 대해 불변이므로 $\Gamma_\infty=\left\lbrace\pm\bigl(\begin{smallmatrix}1&n\cr 0&1\end{smallmatrix}\bigr)\right\rbrace$ 에 대한 불변함수이고,
 
 $$
 E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\mathrm{Im}(\gamma z)^s
@@ -129,7 +129,7 @@ $$
 
 ## 실해석적 Eisenstein 급수
 
-$\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 로 두고 $\Gamma_\infty$ 를 $\pm\bigl(\begin{smallmatrix}1&*\\0&1\end{smallmatrix}\bigr)$ 들의 군이라 하자.
+$\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 로 두고 $\Gamma_\infty$ 를 $\pm\bigl(\begin{smallmatrix}1&*\cr 0&1\end{smallmatrix}\bigr)$ 들의 군이라 하자.
 
 $$
 E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\mathrm{Im}(\gamma z)^s

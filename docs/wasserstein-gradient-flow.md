@@ -48,7 +48,7 @@ $$
 \langle v_1,v_2\rangle_\rho=\int v_1\cdot v_2\,\rho\,dx
 $$
 
-최소화하는 속도장은 항상 기울기장 $v=\nabla\varphi$ 꼴이다. 회전 성분은 밀도를 바꾸지 않으면서 길이만 늘리기 때문이다. 그래서 접공간이 $\{\nabla\varphi\}$ 의 닫힘이 되고, 이 구조가 Otto 미적분이라 불린다.
+최소화하는 속도장은 항상 기울기장 $v=\nabla\varphi$ 꼴이다. 회전 성분은 밀도를 바꾸지 않으면서 길이만 늘리기 때문이다. 그래서 접공간이 $\lbrace\nabla\varphi\rbrace$ 의 닫힘이 되고, 이 구조가 Otto 미적분이라 불린다.
 
 ## 엔트로피의 기울기가 왜 Laplacian 인가
 
@@ -58,7 +58,7 @@ $$
 \partial_t\rho=\nabla\!\cdot\!\big(\rho\,\nabla\log\rho\big)=\nabla\!\cdot\!\Big(\rho\,\frac{\nabla\rho}{\rho}\Big)=\Delta\rho
 $$
 
-가 된다. 열방정식이 나왔다. $\rho$ 와 $1/\rho$ 가 상쇄되는 이 한 줄이 전체 관점의 핵심이다. 퍼텐셜 항 $\int V\rho$ 를 더하면 속도장에 $-\nabla V$ 가 붙어 Fokker–Planck 방정식이 되고, 이것이 SDE $dX_t=-\nabla V(X_t)dt+\sqrt2\,dB_t$ 의 밀도 방정식이다.
+가 된다. 열방정식이 나왔다. $\rho$ 와 $1/\rho$ 가 상쇄되는 이 한 줄이 전체 관점의 핵심이다. 퍼텐셜 항 $\int V\rho$ 를 더하면 속도장에 $-\nabla V$ 가 붙어 Fokker–Planck 방정식이 되고, 이것이 SDE $dX_t=-\nabla V(X_t)dt+\sqrt2\thinspace dB_t$ 의 밀도 방정식이다.
 
 ```mermaid
 graph TD

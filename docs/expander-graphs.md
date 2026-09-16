@@ -71,7 +71,7 @@ $$
 h(G)=\min_{0<|S|\le n/2}\frac{|E(S,\bar S)|}{d\,|S|}
 $$
 
-를 **전도도**(Cheeger 상수)라 한다. 그래프 족 $\{G_i\}$ 가 $|V_i|\to\infty$ 이고 차수가 상수 $d$ 로 고정되며 $h(G_i)\ge\varepsilon>0$ 인 상수 $\varepsilon$ 이 있으면 **expander 족**이라 한다.
+를 **전도도**(Cheeger 상수)라 한다. 그래프 족 $\lbrace G_i\rbrace$ 가 $|V_i|\to\infty$ 이고 차수가 상수 $d$ 로 고정되며 $h(G_i)\ge\varepsilon>0$ 인 상수 $\varepsilon$ 이 있으면 **expander 족**이라 한다.
 
 핵심은 $\varepsilon$ 이 $i$ 에 무관한 상수라는 점이다. 고정된 하나의 그래프에 대해서는 언제나 $h>0$ 이므로(연결이면) 무한족에 대해서만 의미가 있다.
 

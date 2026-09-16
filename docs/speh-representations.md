@@ -39,7 +39,7 @@ graph TD
 
 ## 왜 하필 등차수열인가
 
-살아남는 극은 지수가 특별한 모양일 때만 생긴다. Levi 가 $\mathrm{GL}_m^{\,d}$ 이고 각 성분에 같은 첨점 표현 $\sigma$ 를 올린 뒤, 지수를 간격 1 의 등차수열
+살아남는 극은 지수가 특별한 모양일 때만 생긴다. Levi 가 $\mathrm{GL}_m^{\thinspace d}$ 이고 각 성분에 같은 첨점 표현 $\sigma$ 를 올린 뒤, 지수를 간격 1 의 등차수열
 
 $$
 \Bigl(\tfrac{d-1}2,\ \tfrac{d-3}2,\ \dots,\ -\tfrac{d-1}2\Bigr)
@@ -51,7 +51,7 @@ $$
 
 ## 비템퍼드성의 크기
 
-$\sigma$ 의 Satake 매개변수가 $\{\alpha_1,\dots,\alpha_m\}$ 이면 $\mathrm{Speh}(\sigma,d)$ 의 것은
+$\sigma$ 의 Satake 매개변수가 $\lbrace\alpha_1,\dots,\alpha_m\rbrace$ 이면 $\mathrm{Speh}(\sigma,d)$ 의 것은
 
 $$
 \bigl\{\alpha_i\,q^{j}\ :\ 1\le i\le m,\ j=\tfrac{d-1}2,\tfrac{d-3}2,\dots,-\tfrac{d-1}2\bigr\}

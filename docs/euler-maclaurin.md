@@ -37,7 +37,7 @@ $$
 
 ## 톱니파가 계수를 만든다
 
-칸을 이어 붙이면 $B_n(x)$ 대신 주기 1 로 반복되는 $\tilde B_n(x)=B_n(\{x\})$ 가 들어온다. $\tilde B_1$ 은 톱니파고, 높은 $n$ 일수록 매끄러운 주기함수다. 실은
+칸을 이어 붙이면 $B_n(x)$ 대신 주기 1 로 반복되는 $\tilde B_n(x)=B_n(\lbrace x\rbrace)$ 가 들어온다. $\tilde B_1$ 은 톱니파고, 높은 $n$ 일수록 매끄러운 주기함수다. 실은
 
 $$
 \tilde B_n(x)=-\frac{n!}{(2\pi i)^{n}}\sum_{m\ne0}\frac{e^{2\pi imx}}{m^{n}}
@@ -85,7 +85,7 @@ $$
 \tilde B_n(x)=B_n(x-\lfloor x\rfloor)
 $$
 
-로 둔다. $n\ge2$ 면 $B_n(0)=B_n(1)=B_n$ 이므로 $\tilde B_n$ 은 연속이고, $\tilde B_1$ 만 정수점에서 튄다. 기본 성질은 $B_n'(x)=nB_{n-1}(x)$ 와 $n\ge1$ 일 때의 $\int_0^1 B_n(x)\,dx=0$ 둘이다.
+로 둔다. $n\ge2$ 면 $B_n(0)=B_n(1)=B_n$ 이므로 $\tilde B_n$ 은 연속이고, $\tilde B_1$ 만 정수점에서 튄다. 기본 성질은 $B_n'(x)=nB_{n-1}(x)$ 와 $n\ge1$ 일 때의 $\int_0^1 B_n(x)\thinspace dx=0$ 둘이다.
 
 ## Euler–Maclaurin 공식
 
@@ -134,7 +134,7 @@ $$
 
 ## 최적 절단과 초점근 정확도
 
-항의 크기 $t_k\approx 2(2k-2)!\,(2\pi N)^{-2k}N$ 에서 $t_{k+1}/t_k\approx (2k)(2k-1)/(2\pi N)^2$ 이므로 비가 1 이 되는 곳이
+항의 크기 $t_k\approx 2(2k-2)!\thinspace(2\pi N)^{-2k}N$ 에서 $t_{k+1}/t_k\approx (2k)(2k-1)/(2\pi N)^2$ 이므로 비가 1 이 되는 곳이
 
 $$
 k^{*}\approx\pi N,\qquad t_{k^{*}}\ \sim\ e^{-2\pi N}

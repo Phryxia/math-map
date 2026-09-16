@@ -87,7 +87,7 @@ Birkhoff–Hopf 정리에 따르면 성분이 모두 양수인 행렬 $K$ 를 �
 
 ## 엔트로피 정규화 최적 수송
 
-$a\in\Delta_n$ 과 $b\in\Delta_m$ 을 확률벡터, $C\in\mathbb R^{n\times m}_{\ge0}$ 을 비용행렬이라 하고 $\Pi(a,b)=\{P\ge0:P\mathbf1=a,\ P^\top\mathbf1=b\}$ 라 하자.
+$a\in\Delta_n$ 과 $b\in\Delta_m$ 을 확률벡터, $C\in\mathbb R^{n\times m}_{\ge0}$ 을 비용행렬이라 하고 $\Pi(a,b)=\lbrace P\ge0:P\mathbf1=a,\ P^\top\mathbf1=b\rbrace$ 라 하자.
 
 $$
 \mathrm{OT}_\varepsilon(a,b)=\min_{P\in\Pi(a,b)}\ \langle C,P\rangle+\varepsilon\,\mathrm{KL}\big(P\,\|\,a\otimes b\big)
@@ -149,7 +149,7 @@ $S_\varepsilon(a,a)=0$ 이 정의에서 바로 따라 나오고, $S_\varepsilon(
 > $$
 > 이고, $K=e^{-C/\varepsilon}$ 이면 $\eta=e^{\Delta/\varepsilon}$ 이고 $\Delta=\max_{i,j,k,l}(C_{jk}+C_{il}-C_{ik}-C_{jl})$ 다.
 
-$\lambda=\tanh\!\big(\Delta/4\varepsilon\big)$ 로 정리된다. $\varepsilon$ 이 크면 $\lambda\approx\Delta/4\varepsilon$ 로 아주 빠르고, $\varepsilon\to0$ 이면 $\lambda\to1-2e^{-\Delta/2\varepsilon}$ 이라 필요한 반복 수가 $e^{\Delta/2\varepsilon}$ 규모로 폭증한다.
+$\lambda=\tanh\negthinspace\big(\Delta/4\varepsilon\big)$ 로 정리된다. $\varepsilon$ 이 크면 $\lambda\approx\Delta/4\varepsilon$ 로 아주 빠르고, $\varepsilon\to0$ 이면 $\lambda\to1-2e^{-\Delta/2\varepsilon}$ 이라 필요한 반복 수가 $e^{\Delta/2\varepsilon}$ 규모로 폭증한다.
 
 정규화 없는 최적 수송을 $\delta$ 오차로 풀겠다면 $\varepsilon\sim\delta/\log n$ 을 잡아야 하고, 이때 전체 복잡도는 $\tilde O(n^2/\delta^3)$ 이다. 선형계획의 $\tilde O(n^3)$ 과 견주면 정밀도를 낮게 잡을수록 유리한 교환이다. 실제 기계학습 응용에서 $\delta$ 를 크게 잡아도 되는 경우가 많아 Sinkhorn 이 널리 쓰인다.
 

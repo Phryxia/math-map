@@ -71,7 +71,7 @@ $$
 이제 $c$ 가 정의하는 확대가 $p$ 밖에서 불분기임을 보여야 류군의 원소가 된다.
 
 - $\ell\ne p$ 에서는 $f$ 가 레벨 1 이라 $\rho_f$ 가 비분기이고, 따라서 $c$ 도 비분기다.
-- $\ell=p$ 가 어려운 자리다. $\rho_f$ 는 $p$ 에서 결정군에 대해 $\begin{pmatrix}\omega^{k-1}&*\\0&1\end{pmatrix}$ 꼴로 순종이며, 여기서 위첨자와 아래첨자의 순서가 대역 쪽과 뒤바뀐다. 두 삼각화를 비교하면 $c$ 의 $p$ 자리 제한이 소멸함이 나온다.
+- $\ell=p$ 가 어려운 자리다. $\rho_f$ 는 $p$ 에서 결정군에 대해 $\begin{pmatrix}\omega^{k-1}&*\cr 0&1\end{pmatrix}$ 꼴로 순종이며, 여기서 위첨자와 아래첨자의 순서가 대역 쪽과 뒤바뀐다. 두 삼각화를 비교하면 $c$ 의 $p$ 자리 제한이 소멸함이 나온다.
 
 결과적으로 $c$ 는 $\mathbb Q(\mu_p)$ 의 $p$ 밖 불분기 확대를 준다. Galois 작용의 고유성분을 추적하면 그 확대의 류가 정확히 $A^{(\omega^{1-k})}$ 에 놓인다.
 
@@ -90,7 +90,7 @@ flowchart TD
 
 ## 지표 성분
 
-$A$ 를 $\mathbb Q(\mu_p)$ 의 이데알류군의 $p$ 부분, $\Delta=\mathrm{Gal}(\mathbb Q(\mu_p)/\mathbb Q)\cong(\mathbb Z/p)^{\times}$ 라 하자. $\#\Delta=p-1$ 이 $p$ 와 서로소이므로 군환 $\mathbb Z_p[\Delta]$ 의 멱등원으로
+$A$ 를 $\mathbb Q(\mu_p)$ 의 이데알류군의 $p$ 부분, $\Delta=\mathrm{Gal}(\mathbb Q(\mu_p)/\mathbb Q)\cong(\mathbb Z/p)^{\times}$ 라 하자. $\char"23{}\Delta=p-1$ 이 $p$ 와 서로소이므로 군환 $\mathbb Z_p[\Delta]$ 의 멱등원으로
 
 $$
 A=\bigoplus_{i=0}^{p-2}A^{(\omega^{i})},
@@ -153,7 +153,7 @@ $k$ 가 짝수이므로 $1-k$ 는 홀수다. 즉 이 정리는 류군의 **홀�
 
 ## 무게의 범위
 
-$2\le k\le p-3$ 이라는 제한은 본질적이다. $k=p-1$ 이면 $\omega^{k-1}$ 이 자명해져 표현이 $\begin{pmatrix}1&*\\0&1\end{pmatrix}$ 가 되고 위 논법이 무너진다. 실제로 von Staudt–Clausen 에 의해 $(p-1)\mid k$ 이면 $B_k$ 의 분모가 $p$ 를 포함하므로 $p\mid B_k$ 라는 말 자체가 다른 의미가 된다. [Bernoulli 수](bernoulli-numbers.md)의 $p$ 진 성질이 정리의 가정에 정확히 반영되어 있다.
+$2\le k\le p-3$ 이라는 제한은 본질적이다. $k=p-1$ 이면 $\omega^{k-1}$ 이 자명해져 표현이 $\begin{pmatrix}1&*\cr 0&1\end{pmatrix}$ 가 되고 위 논법이 무너진다. 실제로 von Staudt–Clausen 에 의해 $(p-1)\mid k$ 이면 $B_k$ 의 분모가 $p$ 를 포함하므로 $p\mid B_k$ 라는 말 자체가 다른 의미가 된다. [Bernoulli 수](bernoulli-numbers.md)의 $p$ 진 성질이 정리의 가정에 정확히 반영되어 있다.
 
 ## Mazur–Wiles 로 가는 길
 
@@ -161,7 +161,7 @@ Ribet 의 논법은 원소 하나를 만든다. 주추측은 성분의 **크기*
 
 - 레벨 1 대신 레벨 $Np^{r}$ 의 모듈러 곡선을 쓰고, 탑을 따라 올린다.
 - 코사이클 하나 대신 모듈러 곡선의 Jacobian 안의 Eisenstein 아이디얼로 잘라낸 부분을 통째로 쓴다.
-- 그 결과 $\#A^{(\chi)}\ge$ $L_p$ 가 예측하는 크기를 얻고, 반대 부등식은 해석적 유수 공식이 준다.
+- 그 결과 $\char"23{}A^{(\chi)}\ge$ $L_p$ 가 예측하는 크기를 얻고, 반대 부등식은 해석적 유수 공식이 준다.
 
 곧 "원소 하나" 에서 "충분히 많은 원소" 로 올라가는 것이 Mazur–Wiles 의 기술적 내용이다. Rubin 의 [Euler 계](euler-systems.md) 증명은 반대쪽에서 같은 결론에 도달한다.
 

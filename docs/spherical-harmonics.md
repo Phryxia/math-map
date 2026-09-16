@@ -91,14 +91,14 @@ $$
 
 ## 완비성과 근사
 
-$\{Y_{\ell m}\}$ 이 $L^2(S^2)$ 의 정규직교기저다. 다항식이 구면 위에서 조밀하다는 Stone–Weierstrass 논증과 위의 분해를 합치면 나온다. 따라서
+$\lbrace Y_{\ell m}\rbrace$ 이 $L^2(S^2)$ 의 정규직교기저다. 다항식이 구면 위에서 조밀하다는 Stone–Weierstrass 논증과 위의 분해를 합치면 나온다. 따라서
 
 $$
 f=\sum_{\ell\ge0}\sum_{m=-\ell}^\ell a_{\ell m}Y_{\ell m},\qquad
 a_{\ell m}=\int_{S^2}f\,\overline{Y_{\ell m}}\,d\sigma
 $$
 
-이고 $\|f\|^2=\sum|a_{\ell m}|^2$ 다. $f$ 가 매끄러우면 계수가 빠르게 감소하므로 낮은 $\ell$ 만 남겨도 좋은 근사가 된다.
+이고 $\Vert f\Vert^2=\sum|a_{\ell m}|^2$ 다. $f$ 가 매끄러우면 계수가 빠르게 감소하므로 낮은 $\ell$ 만 남겨도 좋은 근사가 된다.
 
 ## 회전불변 작용소와 Funk–Hecke
 
@@ -114,7 +114,7 @@ $$
 
 ## $\mathrm{SU}(2)$ 와 반정수
 
-$\mathrm{SU}(2)\to\mathrm{SO}(3)$ 는 핵이 $\{\pm I\}$ 인 이중덮개다. $\mathrm{SU}(2)$ 의 기약표현은 각 차원마다 하나씩, 곧 최고무게 $j\in\frac12\mathbb Z$ 마다 $2j+1$ 차원짜리가 있다.
+$\mathrm{SU}(2)\to\mathrm{SO}(3)$ 는 핵이 $\lbrace\pm I\rbrace$ 인 이중덮개다. $\mathrm{SU}(2)$ 의 기약표현은 각 차원마다 하나씩, 곧 최고무게 $j\in\frac12\mathbb Z$ 마다 $2j+1$ 차원짜리가 있다.
 
 이 가운데 $-I$ 가 자명하게 작용하는 것, 곧 $j$ 가 정수인 것만 $\mathrm{SO}(3)$ 의 표현으로 내려온다. 그것이 $\mathcal H_\ell$ 들이다. $j$ 가 반정수인 표현은 $\mathrm{SO}(3)$ 의 표현이 아니라 사영표현이고, 물리에서 스핀 $\frac12$ 입자가 여기에 해당한다. 구면조화함수에 반정수 차수가 없는 이유와 전자가 스피너인 이유가 같은 위상적 사실, 곧 $\pi_1(\mathrm{SO}(3))=\mathbb Z/2$ 에서 나온다.
 

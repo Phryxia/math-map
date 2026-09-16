@@ -94,7 +94,7 @@ $$
 
 > **Mathieu 달빛 관찰 (EOT 2010).** $H$ 의 계수가 $M_{24}$ 의 기약표현 차원의 음이 아닌 정수 조합이고, 더 나아가 각 $g\in M_{24}$ 마다 적절한 mock 모듈러 형식 $H_g$ 가 있어 $H_e=H$ 이고 계수가 $g$ 에서의 지표값이 된다.
 
-$H$ 는 무게 $1/2$ 와 지표 2 의 mock 모듈러 형식이고 shadow 는 $24\,\theta(\tau)$ 꼴의 무게 $3/2$ 단항 theta 급수다.
+$H$ 는 무게 $1/2$ 와 지표 2 의 mock 모듈러 형식이고 shadow 는 $24\thinspace\theta(\tau)$ 꼴의 무게 $3/2$ 단항 theta 급수다.
 
 ## Umbral moonshine 의 일반형
 

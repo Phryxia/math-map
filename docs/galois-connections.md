@@ -87,7 +87,7 @@ $$
 
 부분순서 집합 $L$ 의 모든 부분집합이 상한과 하한을 가지면 $L$ 을 **완비 격자**라 한다. 공집합도 포함되므로 완비 격자에는 최대 원소 $\top=\bigvee L$ 과 최소 원소 $\bot=\bigwedge L$ 이 있다.
 
-상한만 전부 존재해도 하한이 따라온다. $\bigwedge S=\bigvee\{x:\forall s\in S,\ x\le s\}$ 이기 때문이다. 그래서 완비성 확인은 한쪽만 보면 된다.
+상한만 전부 존재해도 하한이 따라온다. $\bigwedge S=\bigvee\lbrace x:\forall s\in S,\ x\le s\rbrace$ 이기 때문이다. 그래서 완비성 확인은 한쪽만 보면 된다.
 
 ## 짝의 존재 판정
 
@@ -117,7 +117,7 @@ $$
 \mu h=\bigwedge\{x: h(x)\le x\},\qquad \nu h=\bigvee\{x: x\le h(x)\}
 $$
 
-증명은 짧다. $A=\{x:h(x)\le x\}$ 라 두고 $a=\bigwedge A$ 로 놓는다. $x\in A$ 마다 $a\le x$ 이므로 단조성에서 $h(a)\le h(x)\le x$ 이고, $x$ 전체에 대해 하한을 취하면 $h(a)\le a$ 다. 그러면 다시 단조성에서 $h(h(a))\le h(a)$ 이므로 $h(a)\in A$ 이고, 따라서 $a\le h(a)$ 다. 두 부등식을 합치면 $h(a)=a$ 다.
+증명은 짧다. $A=\lbrace x:h(x)\le x\rbrace$ 라 두고 $a=\bigwedge A$ 로 놓는다. $x\in A$ 마다 $a\le x$ 이므로 단조성에서 $h(a)\le h(x)\le x$ 이고, $x$ 전체에 대해 하한을 취하면 $h(a)\le a$ 다. 그러면 다시 단조성에서 $h(h(a))\le h(a)$ 이므로 $h(a)\in A$ 이고, 따라서 $a\le h(a)$ 다. 두 부등식을 합치면 $h(a)=a$ 다.
 
 연속성 같은 추가 가정이 전혀 없다는 점이 중요하다. $h$ 가 단조이기만 하면 된다. 값이 초한 반복으로 얻어질 뿐 유한 반복으로 도달한다는 보장은 없고, 그 차이가 Kleene 고정점 정리(연속성을 가정하고 $\bigvee_n h^n(\bot)$ 로 도달)와의 경계다.
 
@@ -135,7 +135,7 @@ Galois 연결은 합성에서 닫혀 있다. $f_1\dashv g_1:P\to Q$ 와 $f_2\das
 
 ## 고정점만 남기면 동형이다
 
-반변 Galois 연결 $(f,g)$ 에서 $P_c=\{p:gf(p)=p\}$ 와 $Q_c=\{q:fg(q)=q\}$ 로 두면 $f|\_{P_c}:P_c\to Q_c$ 가 순서를 뒤집는 전단사이고 역이 $g|\_{Q_c}$ 다. 나아가 $P$ 가 완비 격자면 $P_c$ 도 완비 격자다. 단 $P_c$ 의 상한은 $P$ 의 상한이 아니라 그것을 닫은 것이다.
+반변 Galois 연결 $(f,g)$ 에서 $P_c=\lbrace p:gf(p)=p\rbrace$ 와 $Q_c=\lbrace q:fg(q)=q\rbrace$ 로 두면 $f|\_{P_c}:P_c\to Q_c$ 가 순서를 뒤집는 전단사이고 역이 $g|\_{Q_c}$ 다. 나아가 $P$ 가 완비 격자면 $P_c$ 도 완비 격자다. 단 $P_c$ 의 상한은 $P$ 의 상한이 아니라 그것을 닫은 것이다.
 
 $$
 \bigvee_{P_c}S=c\left(\bigvee_P S\right),\qquad \bigwedge_{P_c}S=\bigwedge_P S

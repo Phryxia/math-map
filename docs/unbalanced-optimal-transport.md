@@ -27,7 +27,7 @@ $$
 
 등식 제약 $P\mathbf 1=a$ 는 "행 합이 $a$ 와 다르면 벌금이 무한대" 라는 말과 같다. 무한대를 유한한 값으로 낮추면 최적화가 스스로 저울질한다. 어떤 질량을 옮기는 비용이 그 질량을 버리는 벌금보다 크면 버린다.
 
-벌금의 척도로 $\mathrm{KL}$ 을 쓰는 이유는 두 가지다. 첫째, $\mathrm{KL}$ 이 이미 엔트로피 정규화에 쓰이고 있어 목적함수 전체가 같은 종류의 항으로 이루어진다. 둘째, $\mathrm{KL}(\mu\|\nu)$ 가 $\mu\ll\nu$ 를 요구하므로 질량이 없던 곳에 새로 생기는 일이 자동으로 막힌다. 질량은 줄일 수는 있어도 무에서 만들어지지는 않는다.
+벌금의 척도로 $\mathrm{KL}$ 을 쓰는 이유는 두 가지다. 첫째, $\mathrm{KL}$ 이 이미 엔트로피 정규화에 쓰이고 있어 목적함수 전체가 같은 종류의 항으로 이루어진다. 둘째, $\mathrm{KL}(\mu\Vert\nu)$ 가 $\mu\ll\nu$ 를 요구하므로 질량이 없던 곳에 새로 생기는 일이 자동으로 막힌다. 질량은 줄일 수는 있어도 무에서 만들어지지는 않는다.
 
 ## 왜 지수 하나만 붙는가
 
@@ -71,7 +71,7 @@ $$
 +\tau\,\mathrm{KL}(P\mathbf 1\,\|\,a)+\tau\,\mathrm{KL}(P^\top\mathbf 1\,\|\,b)
 $$
 
-로 둔다. 여기서 $\mathrm{KL}(\mu\|\nu)=\sum\mu_i\log\frac{\mu_i}{\nu_i}-\mu_i+\nu_i$ 로, 총질량이 다른 측도에도 뜻이 있는 형태를 쓴다. 마지막 두 항이 없으면 [Sinkhorn](sinkhorn.md) 문제이고, 그 항들의 계수를 무한대로 보내면 등식 제약이 복원된다.
+로 둔다. 여기서 $\mathrm{KL}(\mu\Vert\nu)=\sum\mu_i\log\frac{\mu_i}{\nu_i}-\mu_i+\nu_i$ 로, 총질량이 다른 측도에도 뜻이 있는 형태를 쓴다. 마지막 두 항이 없으면 [Sinkhorn](sinkhorn.md) 문제이고, 그 항들의 계수를 무한대로 보내면 등식 제약이 복원된다.
 
 목적함수가 $P$ 에 대해 강볼록하고 아래로 유계이므로 최소점이 유일하다.
 
@@ -84,7 +84,7 @@ $$
 -\varepsilon\sum_{i,j}a_ib_j\big(e^{(f_i+g_j-C_{ij})/\varepsilon}-1\big)
 $$
 
-최적해가 $P_{ij}=a_ib_j\,e^{(f_i+g_j-C_{ij})/\varepsilon}$ 이고, 블록 좌표 상승법이 앞서 본 완화된 갱신이다.
+최적해가 $P_{ij}=a_ib_j\thinspace e^{(f_i+g_j-C_{ij})/\varepsilon}$ 이고, 블록 좌표 상승법이 앞서 본 완화된 갱신이다.
 
 $$
 f_i\leftarrow-\lambda\varepsilon\log\sum_jb_je^{(g_j-C_{ij})/\varepsilon},\qquad
@@ -111,7 +111,7 @@ $$
 - $\tau\to\infty$ : $\lambda\to1$ 이고 문제가 균형 엔트로피 정규화 최적 수송으로 수렴한다.
 - $\tau\to0$ : 옮기는 것이 언제나 손해라 $P\to0$ 이다.
 - $\varepsilon\to0$ : 엔트로피 흐림이 사라지고 Hellinger–Kantorovich 형태가 남는다.
-- 총질량이 달라도 문제가 잘 정의되며, 최적해의 총질량은 $\min(\|a\|_1,\|b\|_1)$ 이하이고 $\tau$ 에 대해 단조증가한다.
+- 총질량이 달라도 문제가 잘 정의되며, 최적해의 총질량은 $\min(\Vert a\Vert\_1,\Vert b\Vert\_1)$ 이하이고 $\tau$ 에 대해 단조증가한다.
 
 ## 알고리즘
 

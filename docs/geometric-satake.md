@@ -138,7 +138,7 @@ $$
 \mathrm{Gr}_G(R)=\bigl\{(\mathcal E,\beta)\bigr\}/\cong
 $$
 
-로 정의된다. $\mathcal E$ 는 $\mathrm{Spec}\,R[[t]]$ 위의 $G$ 다발, $\beta$ 는 $\mathrm{Spec}\,R((t))$ 위에서의 자명화다. 이 함자가 ind-사영 ind-스킴으로 표현되고, $k$ 점은 $G(F)/G(\mathcal O)$ 다.
+로 정의된다. $\mathcal E$ 는 $\mathrm{Spec}\thinspace R[[t]]$ 위의 $G$ 다발, $\beta$ 는 $\mathrm{Spec}\thinspace R((t))$ 위에서의 자명화다. 이 함자가 ind-사영 ind-스킴으로 표현되고, $k$ 점은 $G(F)/G(\mathcal O)$ 다.
 
 $G=\mathrm{GL}_n$ 이면 $\mathrm{Gr}_G$ 는 $F^n$ 안의 $\mathcal O$ 격자 전체와 같다.
 

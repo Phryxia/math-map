@@ -35,7 +35,7 @@ $$
 K(z,w)=\sum_{\gamma\in\Gamma}k(z,\gamma w)
 $$
 
-를 만들고, 대각선 위의 적분 $\int_{\Gamma\backslash\mathbb H}K(z,z)\,d\mu$ 를 **두 방식으로** 계산한다.
+를 만들고, 대각선 위의 적분 $\int_{\Gamma\backslash\mathbb H}K(z,z)\thinspace d\mu$ 를 **두 방식으로** 계산한다.
 
 - **스펙트럼 전개.** $K$ 를 고유함수로 전개하면 $\sum_j h(r_j)$ 가 나온다. $h$ 는 $k$ 의 Selberg/Harish-Chandra 변환이다.
 - **기하 전개.** $\Gamma$ 의 원소를 공액류로 묶어 각 류의 기여를 계산하면 측지선 항이 나온다.
@@ -74,7 +74,7 @@ $$
 
 $\Gamma\subset\mathrm{PSL}_2(\mathbb R)$ 를 유한 공부피 이산군, $X=\Gamma\backslash\mathbb H$ 를 쌍곡 곡면, $\Delta=-y^2(\partial_x^2+\partial_y^2)$ 를 Laplace 작용소라 하자. 이산 스펙트럼을 $\lambda_j=\tfrac14+r_j^2$ 로 쓴다.
 
-검사함수 $h(r)$ 는 $|\mathrm{Im}\,r|\le\tfrac12+\delta$ 에서 정칙이고 $h(r)=O((1+|r|)^{-2-\delta})$ 인 짝함수라 하고, 그 Fourier 변환을 $g(u)=\frac1{2\pi}\int h(r)e^{-iru}dr$ 로 둔다.
+검사함수 $h(r)$ 는 $|\mathrm{Im}\thinspace r|\le\tfrac12+\delta$ 에서 정칙이고 $h(r)=O((1+|r|)^{-2-\delta})$ 인 짝함수라 하고, 그 Fourier 변환을 $g(u)=\frac1{2\pi}\int h(r)e^{-iru}dr$ 로 둔다.
 
 ## 콤팩트 곡면의 공식
 
@@ -132,7 +132,7 @@ $$
 
 ## Riemann 가설이 성립하는 zeta
 
-$Z(s)$ 의 자명하지 않은 영점은 $s=\tfrac12\pm ir_j$ 에 있다. Laplace 고윳값이 $\lambda_j\ge0$ 이므로 $r_j$ 는 실수이거나 $|{\rm Im}\,r_j|\le\tfrac12$ 인 순허수다. 따라서
+$Z(s)$ 의 자명하지 않은 영점은 $s=\tfrac12\pm ir_j$ 에 있다. Laplace 고윳값이 $\lambda_j\ge0$ 이므로 $r_j$ 는 실수이거나 $|{\rm Im}\thinspace r_j|\le\tfrac12$ 인 순허수다. 따라서
 
 $$
 \lambda_j\ge\tfrac14\ \Longrightarrow\ Z(s)\ \text{의 영점이 }\mathrm{Re}(s)=\tfrac12\ \text{위에 있다}

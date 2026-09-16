@@ -76,7 +76,7 @@ $N=4$ 이고 $x=(1,0,-1,0)$ 이면 결과는 $(0,2,0,2)$ 다. 하나의 실수 �
 
 ## 합성곱 정리
 
-순환 합성곱을 $(x * y)[n] = \sum_m x[m]\, y[(n-m) \bmod N]$ 이라 하면
+순환 합성곱을 $(x * y)[n] = \sum_m x[m]\thinspace y[(n-m) \bmod N]$ 이라 하면
 
 $$
 \mathrm{DFT}(x*y)[k]=X[k]\cdot Y[k]

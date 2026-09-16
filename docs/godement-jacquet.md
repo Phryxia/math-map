@@ -262,7 +262,7 @@ for p in PR[:6]:
 #   13      -577738      -577738.0    1792160394037.0      1792160394037  True
 ```
 
-$1-\tau(p)X+p^{11}X^2=\det(1-X\,A_{\pi_p})$ 에서 $A_{\pi_p}$ 의 고윳값이 $\alpha_p,\beta_p$ 다. 대각합이 $\tau(p)$ 이고 행렬식이 $p^{11}$ 이다. 이것이 Satake 매개변수이고, $\mathrm{GL}_n$ 에서는 $n\times n$ 행렬로 커진다.
+$1-\tau(p)X+p^{11}X^2=\det(1-X\thinspace A_{\pi_p})$ 에서 $A_{\pi_p}$ 의 고윳값이 $\alpha_p,\beta_p$ 다. 대각합이 $\tau(p)$ 이고 행렬식이 $p^{11}$ 이다. 이것이 Satake 매개변수이고, $\mathrm{GL}_n$ 에서는 $n\times n$ 행렬로 커진다.
 
 ## 계수가 대칭곱의 지표다
 

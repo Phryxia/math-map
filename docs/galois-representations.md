@@ -77,7 +77,7 @@ $$
 
 ## Tate 가군
 
-가장 구체적인 예가 타원곡선에서 온다. $E$ 가 $K$ 위의 타원곡선이고 $\ell\ne\mathrm{char}\,K$ 일 때
+가장 구체적인 예가 타원곡선에서 온다. $E$ 가 $K$ 위의 타원곡선이고 $\ell\ne\mathrm{char}\thinspace K$ 일 때
 
 $$
 T_\ell E=\varprojlim_nE[\ell^n](\bar K)\cong\mathbb Z_\ell^2,
@@ -101,7 +101,7 @@ Z(X,t)=\exp\Big(\sum_{n\ge1}\#X(\mathbb F_{q^n})\frac{t^n}n\Big)
 $$
 
 > **Weil 추측(정리).**
-> 1. $Z(X,t)$ 는 유리함수이고 $\prod_iP_i(t)^{(-1)^{i+1}}$ 로 쓰인다. 여기서 $P_i(t)=\det(1-\mathrm{Frob}\,t\mid H^i_{\mathrm{et}})$ 다.
+> 1. $Z(X,t)$ 는 유리함수이고 $\prod_iP_i(t)^{(-1)^{i+1}}$ 로 쓰인다. 여기서 $P_i(t)=\det(1-\mathrm{Frob}\thinspace t\mid H^i_{\mathrm{et}})$ 다.
 > 2. $t\mapsto1/(q^dt)$ 에 대한 함수방정식이 성립한다(Poincaré 쌍대성).
 > 3. $P_i$ 의 역근 $\alpha$ 는 모두 $|\alpha|=q^{i/2}$ 를 만족한다(Riemann 가설).
 > 4. $X$ 가 표수 0 의 다양체의 환원이면 $\deg P_i$ 가 그 다양체의 Betti 수와 같다.
@@ -124,11 +124,11 @@ $$
 \#X(\mathbb F_{q^n})=q^n+1-\sum_{j=1}^{2g}\alpha_j^n
 $$
 
-가 된다. Riemann 가설 $|\alpha_j|=\sqrt q$ 를 넣으면 Hasse–Weil 한계 $|\#X(\mathbb F_q)-q-1|\le2g\sqrt q$ 가 나온다. $g=1$ 인 타원곡선에서는 $|a_q|\le2\sqrt q$ 라는 Hasse 정리다.
+가 된다. Riemann 가설 $|\alpha_j|=\sqrt q$ 를 넣으면 Hasse–Weil 한계 $|\char"23{}X(\mathbb F_q)-q-1|\le2g\sqrt q$ 가 나온다. $g=1$ 인 타원곡선에서는 $|a_q|\le2\sqrt q$ 라는 Hasse 정리다.
 
 ## 모듈러성과의 연결
 
-Deligne 은 무게 $k\ge2$ 의 Hecke 고유형식마다 2 차원 $\ell$ 진 표현 $\rho_f$ 를 모듈러 곡선의 에탈 코호몰로지에서 잘라냈다. $\mathrm{tr}\,\rho_f(\mathrm{Frob}_p)=a_p$ 이고, 계수의 크기 상계인 Ramanujan 추측이 Weil 추측의 Riemann 가설에서 따라온다.
+Deligne 은 무게 $k\ge2$ 의 Hecke 고유형식마다 2 차원 $\ell$ 진 표현 $\rho_f$ 를 모듈러 곡선의 에탈 코호몰로지에서 잘라냈다. $\mathrm{tr}\thinspace\rho_f(\mathrm{Frob}_p)=a_p$ 이고, 계수의 크기 상계인 Ramanujan 추측이 Weil 추측의 Riemann 가설에서 따라온다.
 
 반대 방향, 곧 주어진 Galois 표현이 어떤 고유형식에서 오는지를 보이는 것이 모듈러성이다. 이 방향의 도구가 변형 이론이다. mod $\ell$ 표현 $\bar\rho$ 를 고정하고 그것으로 환원되는 $\ell$ 진 표현들의 보편 변형환 $R$ 을 만든 뒤, 모듈러 표현만 모은 Hecke 대수 $T$ 와 비교한다. $R=T$ 를 증명하면 모든 변형이 모듈러라는 결론이 나오며, 이것이 Wiles 의 전략이다.
 

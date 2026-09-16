@@ -30,7 +30,7 @@ graph LR
   end
 ```
 
-왼쪽에서 $a - b$ 를 지워도 $a - c - b$ 가 남는다. 오른쪽에서 $b - c$ 를 지우면 $\{a,b\}$ 와 $\{c,d\}$ 로 갈라진다. 같은 연산이 전혀 다른 결과를 낳는다.
+왼쪽에서 $a - b$ 를 지워도 $a - c - b$ 가 남는다. 오른쪽에서 $b - c$ 를 지우면 $\lbrace a,b\rbrace$ 와 $\lbrace c,d\rbrace$ 로 갈라진다. 같은 연산이 전혀 다른 결과를 낳는다.
 
 ## 신장 forest 를 들고 다닌다
 
@@ -49,8 +49,8 @@ graph LR
 
 정점 집합이 고정된 무향 그래프에 대해 다음을 처리한다.
 
-- `INSERT(u,v)` 는 간선 $\{u,v\}$ 를 추가한다.
-- `DELETE(u,v)` 는 기존 간선 $\{u,v\}$ 를 제거한다.
+- `INSERT(u,v)` 는 간선 $\lbrace u,v\rbrace$ 를 추가한다.
+- `DELETE(u,v)` 는 기존 간선 $\lbrace u,v\rbrace$ 를 제거한다.
 - `CONNECTED(u,v)` 는 $u$ 와 $v$ 사이에 경로가 있는지 반환한다.
 
 ## 세 가지 모형

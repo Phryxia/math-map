@@ -57,7 +57,7 @@ $$
 
 ## Fenchel–Nielsen 좌표
 
-바지 분해를 주는 곡선족 $\mathcal C=\{c_1,\dots,c_{3g-3}\}$ 을 고정하면
+바지 분해를 주는 곡선족 $\mathcal C=\lbrace c_1,\dots,c_{3g-3}\rbrace$ 을 고정하면
 
 $$
 \mathrm{FN}_{\mathcal C}\colon\mathcal T_g\ \xrightarrow{\ \sim\ }\ (\mathbb R_{>0})^{3g-3}\times\mathbb R^{3g-3},\qquad
