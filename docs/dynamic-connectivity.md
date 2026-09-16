@@ -49,9 +49,9 @@ graph LR
 
 정점 집합이 고정된 무향 그래프에 대해 다음을 처리한다.
 
-- $INSERT(u,v)$: 간선 ${u,v}$ 를 추가한다.
-- $DELETE(u,v)$: 기존 간선 ${u,v}$ 를 제거한다.
-- $CONNECTED(u,v)$: $u$ 와 $v$ 사이에 경로가 있는지 반환한다.
+- `INSERT(u,v)` 는 간선 $\{u,v\}$ 를 추가한다.
+- `DELETE(u,v)` 는 기존 간선 $\{u,v\}$ 를 제거한다.
+- `CONNECTED(u,v)` 는 $u$ 와 $v$ 사이에 경로가 있는지 반환한다.
 
 ## 세 가지 모형
 
@@ -111,7 +111,7 @@ Holm, de Lichtenberg, Thorup 의 해법은 각 간선에 레벨을 붙여 이 �
 
 오프라인 동적 연결성은 그 자체가 목적이 아니라 다른 알고리즘의 부품으로도 쓰인다. 매개변수를 이분 탐색하면서 그래프를 조금씩 바꾸는 계산이 전형적인 예다.
 
-[^1]: MIT 6.851 Advanced Data Structures, Lecture 19, https://courses.csail.mit.edu/6.851/spring12/lectures/L19.html. link-cut tree 의 $LINK$ /$CUT$ 과 amortized $O(\log n)$.
+[^1]: MIT 6.851 Advanced Data Structures, Lecture 19, https://courses.csail.mit.edu/6.851/spring12/lectures/L19.html. link-cut tree 의 `LINK` 와 `CUT` 과 amortized $O(\log n)$ 을 다룬다.
 [^2]: Holm, de Lichtenberg, Thorup, *Poly-logarithmic deterministic fully-dynamic algorithms for connectivity, minimum spanning tree, 2-edge, and biconnectivity* (JACM 2001). 레벨 기법과 $O(\log^2 n)$ 상환 분석.
 
 # 연관 문서

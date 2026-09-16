@@ -133,8 +133,8 @@ $i^\delta$ 는 무한 자리의 근 수다. 지표가 홀이면 감마 인자가
 > $\chi$ 가 법 $p$ 의 비자명한 지표일 때
 > 1. $g(\chi)\,g(\bar\chi)=\chi(-1)\,p$
 > 2. $|g(\chi)|=\sqrt p$
-> 3. $\displaystyle\sum_n\chi(n)\psi(mn)=\bar\chi(m)\,g(\chi)$ ($m\not\equiv0$)
-> 4. $\chi$ 가 이차이면 $g(\chi)=\sqrt p$ ($p\equiv1\bmod4$), $i\sqrt p$ ($p\equiv3\bmod4$)
+> 3. $m\not\equiv0$ 일 때 $\displaystyle\sum_n\chi(n)\psi(mn)=\bar\chi(m)\,g(\chi)$ 다
+> 4. $\chi$ 가 이차이면 $p\equiv1\bmod4$ 일 때 $g(\chi)=\sqrt p$ 이고 $p\equiv3\bmod4$ 일 때 $g(\chi)=i\sqrt p$ 다
 
 첫째와 둘째는 같은 계산의 두 표현이다. 셋째는 $\chi$ 가 Fourier 변환의 고유벡터라는 진술이고, 실제로 국소 근 수의 계산이 이 식 하나로 정리된다.
 
@@ -234,7 +234,7 @@ for k, c in enumerate(chars_mod_p(7)):
 #   p=7 χ_5  δ=1  W = +0.386514-0.922284i   |W| = 1.0000000000
 ```
 
-부호 표에서 $p\equiv1\pmod4$ 이면 합이 실수 $\sqrt p$, $p\equiv3$ 이면 순허수 $i\sqrt p$ 로 정확히 갈린다. 절댓값은 어느 쪽이든 $\sqrt p$ 인데 방향이 $p$ 의 법 4 잉여로 결정된다.
+부호 표에서 $p\equiv1\pmod4$ 이면 합이 실수 $\sqrt p$ 이고, $p\equiv3$ 이면 순허수 $i\sqrt p$ 로 정확히 갈린다. 절댓값은 어느 쪽이든 $\sqrt p$ 인데 방향이 $p$ 의 법 4 잉여로 결정된다.
 
 마지막 묶음에서 $\chi_3$ 가 법 7 의 이차 지표다. $7\equiv3\pmod4$ 이므로 $\chi_3(-1)=-1$ 이라 $\delta=1$ 이고, $g(\chi_3)=i\sqrt7$ 을 $i\sqrt7$ 로 나누어 $W=1$ 이 나온다. 이차 지표의 근 수가 언제나 $+1$ 이라는 성질이 확인된다. 다른 지표들은 $W$ 가 단위원 위의 일반적인 점이고, 켤레 지표끼리 $W$ 도 켤레다.
 
