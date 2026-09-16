@@ -149,13 +149,13 @@ $$
 
 ## 부호를 맞추는 규칙
 
-고전군의 이산 스펙트럼을 세는 작업은 "$\mathrm{GL}_N$ 의 자기쌍대 첨점 표현 $\sigma_i$ 와 정수 $d_i$ 의 짝을 부호 조건에 맞게 조립하기"가 된다. 조립의 부품이 $\sigma_i\boxtimes[d_i]$, 곧 Speh 표현의 국소 매개변수다. $\mathrm{GL}_N$ 쪽 분류가 완전하기 때문에 고전군 쪽 분류가 **유한한 조합 문제**로 환원된다. Arthur 의 책 전체가 이 환원을 정당화하는 작업이라 해도 지나치지 않다.
+고전군의 이산 스펙트럼을 세는 작업은 "$\mathrm{GL}_N$ 의 자기쌍대 첨점 표현 $\sigma_i$ 와 정수 $d_i$ 의 짝을 부호 조건에 맞게 조립하기"가 된다. 조립의 부품이 $\sigma_i\boxtimes[d_i]$ 이고 곧 Speh 표현의 국소 매개변수다. $\mathrm{GL}_N$ 쪽 분류가 완전하기 때문에 고전군 쪽 분류가 **유한한 조합 문제**로 환원된다. Arthur 의 책 전체가 이 환원을 정당화하는 작업이라 해도 지나치지 않다.
 
 ## 주기와 올림
 
 Speh 표현은 주기 적분 쪽에서도 특별하게 행동한다. $\mathrm{Speh}(\sigma,2)$ 의 $\mathrm{Sp}_{2m}$ 주기가 $\sigma$ 의 외곱 $L$ 함수의 극과 이어지는 식이다. [Gan–Gross–Prasad 추측](gan-gross-prasad.md)의 비템퍼드 판본이 이런 주기들을 다루고, Ikeda 올림이나 Miyawaki 올림처럼 한 군에서 다른 군으로 형식을 옮기는 구성이 매개변수 수준에서는 $\boxtimes[d]$ 를 붙였다 떼는 조작으로 보인다.
 
-[^1]: 분류의 원논문은 C. Mœglin, J.-L. Waldspurger, *Le spectre résiduel de* $\mathrm{GL}(n)$, Ann. Sci. ÉNS **22** (1989), 605–674. Eisenstein 급수와 유수 절차의 전모는 같은 저자의 *Spectral Decomposition and Eisenstein Series* (1995). Speh 표현의 실수 자리 원본은 B. Speh, *Unitary representations of* $\mathrm{GL}(n,\mathbb R)$ *with nontrivial* $(\mathfrak g,K)$*-cohomology*, Invent. Math. **71** (1983). 유니터리 쌍대 분류는 M. Tadić, *Classification of unitary representations in irreducible representations of general linear group*, Ann. Sci. ÉNS **19** (1986). CAP 표현과 Saito–Kurokawa 는 I. Piatetski-Shapiro, *On the Saito-Kurokawa lifting*, Invent. Math. **71** (1983). 고전군 쪽은 J. Arthur, *The Endoscopic Classification of Representations* (2013). 본문의 매개변수 열거는 직접 한 것이다.
+[^1]: 분류의 원논문은 C. Mœglin, J.-L. Waldspurger, *Le spectre résiduel de* $\mathrm{GL}(n)$ (Ann. Sci. ÉNS **22**, 1989), 605–674. Eisenstein 급수와 유수 절차의 전모는 같은 저자의 *Spectral Decomposition and Eisenstein Series* (1995). Speh 표현의 실수 자리 원본은 B. Speh, *Unitary representations of* $\mathrm{GL}(n,\mathbb R)$ *with nontrivial (g,K)-cohomology*, Invent. Math. **71** (1983). 유니터리 쌍대 분류는 M. Tadić, *Classification of unitary representations in irreducible representations of general linear group*, Ann. Sci. ÉNS **19** (1986). CAP 표현과 Saito–Kurokawa 는 I. Piatetski-Shapiro, *On the Saito-Kurokawa lifting*, Invent. Math. **71** (1983). 고전군 쪽은 J. Arthur, *The Endoscopic Classification of Representations* (2013). 본문의 매개변수 열거는 직접 한 것이다.
 
 # 연관 문서
 

@@ -141,7 +141,7 @@ $$
 
 ## 유한군에서 보는 유일성
 
-$p$ 진체 대신 유한체를 놓으면 같은 현상이 유한 계산으로 확인된다. $G=\mathrm{GL}_n(\mathbb F_q)$, $N$ 을 상삼각 멱단군, $\psi_N$ 을 위와 같은 지표라 하면, 유도표현
+$p$ 진체 대신 유한체를 놓으면 같은 현상이 유한 계산으로 확인된다. $G=\mathrm{GL}_n(\mathbb F_q)$ 로 두고 $N$ 을 상삼각 멱단군, $\psi_N$ 을 위와 같은 지표라 하면, 유도표현
 
 $$
 \Gamma=\mathrm{Ind}_N^G\psi_N
@@ -248,7 +248,7 @@ $$
 
 Whittaker 함수가 첨점형식을 복원하므로, 두 첨점형식의 Whittaker 함수가 같으면 형식이 같다. 여기에 유일성을 더하면
 
-> $\pi$, $\pi'$ 가 $\mathrm{GL}_n$ 의 첨점 자기동형 표현이고 거의 모든 자리에서 $\pi_v\cong\pi'_v$ 이면 $\pi\cong\pi'$ 다.
+> $\pi$ 와 $\pi'$ 가 $\mathrm{GL}_n$ 의 첨점 자기동형 표현이고 거의 모든 자리에서 $\pi_v\cong\pi'_v$ 이면 $\pi\cong\pi'$ 다.
 
 이것이 **강한 중복도 1**(Jacquet–Shalika)이다. $\mathrm{GL}_n$ 의 자기동형 스펙트럼에 중복이 없다는 말이고, $L$ 함수가 표현을 결정한다는 진술과 짝을 이룬다. 다른 군에서는 거짓이며, 그 실패를 조직한 것이 Arthur 의 $L$ 꾸러미 이론이다.
 
@@ -270,7 +270,7 @@ Maass 형식과 $\mathrm{GL}_3$ 자기동형 형식의 수치 계산은 Whittake
 
 유일성이라는 현상 자체는 더 넓다. 어떤 부분군 $H$ 와 지표 $\chi$ 에 대해 $\dim\mathrm{Hom}_H(\pi,\chi)\le1$ 이 성립하면 그에 맞는 적분 표현과 주기가 생긴다. Gan–Gross–Prasad 추측은 이런 중복도 1 현상을 고전군 전반에서 예측하고, 중복도가 1 이 되는 정확한 조건을 $L$ 매개변수로 기술한다. Whittaker 모형은 그 가운데 가장 오래되고 가장 쓸모 있는 예다.
 
-[^1]: I. M. Gelfand, D. A. Kazhdan, *Representations of the group $\mathrm{GL}(n,K)$ where $K$ is a local field*, Lie Groups and Their Representations (1975). J. A. Shalika, *The multiplicity one theorem for $\mathrm{GL}_n$*, Ann. of Math. **100** (1974), 171–193. Casselman–Shalika 공식은 W. Casselman, J. Shalika, *The unramified principal series of p-adic groups II*, Compositio Math. **41** (1980), 207–231. 유한군판 Gelfand–Graev 표현은 R. Carter, *Finite Groups of Lie Type* (1985) 8장. 본문의 유한군 계산은 직접 한 것이다.
+[^1]: I. M. Gelfand, D. A. Kazhdan, *Representations of the group $\mathrm{GL}(n,K)$ where $K$ is a local field*, Lie Groups and Their Representations (1975). J. A. Shalika, *The multiplicity one theorem for* $\mathrm{GL}_n$ (Ann. of Math. **100**, 1974), 171–193. Casselman–Shalika 공식은 W. Casselman, J. Shalika, *The unramified principal series of p-adic groups II*, Compositio Math. **41** (1980), 207–231. 유한군판 Gelfand–Graev 표현은 R. Carter, *Finite Groups of Lie Type* (1985) 8장. 본문의 유한군 계산은 직접 한 것이다.
 
 # 연관 문서
 
