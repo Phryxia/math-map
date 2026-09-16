@@ -15,7 +15,7 @@
 $n$ 개의 점을 $d$ 차원에서 다룰 때 PCA 는 $d\times d$ 공분산행렬의 고유벡터를 구한다. 그런데 같은 정보가 $n\times n$ 그람행렬 $XX^{\mathsf T}$ 에도 들어 있다. 두 행렬은 0 이 아닌 고유값이 같고 고유벡터가 서로 옮겨진다.
 
 $$
-X^{\mathsf T}X\,v=\lambda v\quad\Longleftrightarrow\quad XX^{\mathsf T}(Xv)=\lambda(Xv)
+X^{\mathsf T}X\thinspace v=\lambda v\quad\Longleftrightarrow\quad XX^{\mathsf T}(Xv)=\lambda(Xv)
 $$
 
 그람행렬의 성분은 점들 사이의 내적뿐이다. 따라서 좌표를 몰라도 내적만 알면 PCA 를 할 수 있다. $d$ 가 $n$ 보다 훨씬 클 때는 이쪽이 오히려 싸다는 부수적 이득도 있다.
@@ -72,7 +72,7 @@ $$
 4. 새 점 $x$ 의 $m$ 번째 성분 점수를 다음으로 계산한다.
 
 $$
-z_m(x)=\sum_{i=1}^na^{(m)}_i\,\tilde k(x_i,x)
+z_m(x)=\sum_{i=1}^na^{(m)}_i\thinspace\tilde k(x_i,x)
 $$
 
 $\tilde k$ 는 새 점에도 같은 중심화를 적용한 커널 값이다. 고유벡터 $a^{(m)}$ 은 특징공간의 주축을 데이터 점들의 계수로 표현한 것이다. 주축 자체를 쓰지 못하고 계수만 쓰는 것이 커널 PCA 의 특징이다.

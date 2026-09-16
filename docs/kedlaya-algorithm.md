@@ -31,7 +31,7 @@ $|m|<M$ 인 정수 $m$ 을 찾는데 $m\bmod p^N$ 을 알고 $p^N>2M$ 이라 하
 zeta 함수의 분자 $P(T)=\prod_{j=1}^{2g}(1-\alpha_jT)$ 에서 계수는 $\alpha_j$ 의 기본대칭식이고, Weil 한계 $|\alpha_j|=\sqrt q$ 가
 
 $$
-|\,i\text{ 번째 계수}\,|\le\binom{2g}{i}q^{i/2}
+|\thinspace i\text{ 번째 계수}\thinspace|\le\binom{2g}{i}q^{i/2}
 $$
 
 를 준다. 크기가 미리 잡혀 있다. 남은 일은 $p$ 진 정밀도를 그 두 배 위로 올리는 것뿐이다.
@@ -47,7 +47,7 @@ $$
 이고, $\sum_{x\in\mathbb F_p}x^k$ 가 $(p-1)\mid k$ 이고 $k>0$ 일 때만 $-1$ 이라는 사실을 쓰면 $f^{(p-1)/2}$ 의 $x^{p-1}$ 계수 하나만 살아남는다.
 
 $$
-a_p\equiv\big[\,x^{p-1}\,\big]\,f(x)^{(p-1)/2}\pmod p
+a_p\equiv\big[\thinspace x^{p-1}\thinspace\big]\thinspace f(x)^{(p-1)/2}\pmod p
 $$
 
 이 계수를 **Hasse 불변량**이라 한다. 이것은 Frobenius 가 코호몰로지에 작용한 것을 정밀도 $p^1$ 로 계산한 값이다. 그리고 $|a_p|\le2\sqrt p$ 이므로 $4\sqrt p<p$ 곧 $p>16$ 이면 $a_p$ 가 유일하게 복원된다. **정밀도 하나로 점 세기가 끝난다.**
@@ -73,7 +73,7 @@ $\mathbb F_q$ 위 곡선의 $p$ 진 코호몰로지를 만들려면 곡선을 $\
 Monsky 와 Washnitzer 의 해법은 **수렴반경이 $1$ 보다 조금 큰** 급수만 남기는 것이다. 이 **약수렴 대수**(dagger algebra) $A^\dagger$ 의 de Rham 코호몰로지가 유한차원이고, 차원이 정확히 위상적으로 기대되는 값이다. 종수 $g$ 인 홀수차 초타원곡선의 아핀 조각에서 $H^1$ 의 기저가
 
 $$
-\frac{dx}{y},\ \frac{x\,dx}{y},\ \dots,\ \frac{x^{2g-1}dx}{y}
+\frac{dx}{y},\ \frac{x\thinspace dx}{y},\ \dots,\ \frac{x^{2g-1}dx}{y}
 $$
 
 로 $2g$ 개다.
@@ -85,7 +85,7 @@ $$
 $\sigma$ 를 $\mathbb Z_q$ 의 Frobenius 올림이라 하고 $x\mapsto x^p$ 로 확장한다. $y$ 는 $y^2=f(x)$ 를 만족해야 하므로 $\sigma(y)^2=f^\sigma(x^p)$ 여야 한다. 이것을 $y^{2p}$ 로 묶으면
 
 $$
-\sigma(y)=y^p\Big(1+\underbrace{\frac{f^\sigma(x^p)-f(x)^p}{y^{2p}}}_{=\,\delta}\Big)^{1/2}
+\sigma(y)=y^p\Big(1+\underbrace{\frac{f^\sigma(x^p)-f(x)^p}{y^{2p}}}_{=\thinspace\delta}\Big)^{1/2}
 =y^p\sum_{k\ge0}\binom{1/2}{k}\delta^k
 $$
 
@@ -117,7 +117,7 @@ $A=\mathbb Z_q[x_1,\dots,x_m]/I$ 라 할 때 **약수렴 대수** $A^\dagger$ �
 - Frobenius 가 작용하고, 그 대각합이 Lefschetz 공식으로 점 개수를 준다.
 
 $$
-\#C(\mathbb F_{q^k})=\sum_{i}(-1)^i\,\mathrm{tr}\big(\mathrm{Frob}^k\mid H^i_{\mathrm{MW}}\big)
+\char35{}C(\mathbb F_{q^k})=\sum_{i}(-1)^i\thinspace\mathrm{tr}\big(\mathrm{Frob}^k\mid H^i_{\mathrm{MW}}\big)
 $$
 
 Berthelot 의 강성(rigid) 코호몰로지가 이것을 특이점과 비적정 경우까지 일반화한 것이다.

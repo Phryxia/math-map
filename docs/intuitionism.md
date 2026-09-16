@@ -80,7 +80,7 @@ $$
 $\alpha$ 가 자연수의 선택수열이면, 어느 시점에도 $\alpha$ 의 유한한 앞부분만 알려져 있다. 따라서 $\alpha$ 에 대한 판단은 그 유한한 앞부분만으로 내려져야 한다. 이것이 연속성 원리다.
 
 $$
-\forall\alpha\,\exists n\,A(\alpha,n)\quad\Longrightarrow\quad\forall\alpha\,\exists m\,\exists n\,\forall\beta\,\big(\bar\alpha m=\bar\beta m\to A(\beta,n)\big)
+\forall\alpha\thinspace\exists n\thinspace A(\alpha,n)\quad\Longrightarrow\quad\forall\alpha\thinspace\exists m\thinspace\exists n\thinspace\forall\beta\thinspace\big(\bar\alpha m=\bar\beta m\to A(\beta,n)\big)
 $$
 
 여기서 $\bar\alpha m$ 은 $\alpha$ 의 첫 $m$ 항이다. 모든 수열에 어떤 값을 대응시키는 방법이 있다면, 그 값은 유한한 앞부분만 보고 정해져야 한다는 뜻이다.

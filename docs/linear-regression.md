@@ -31,13 +31,13 @@ flowchart TD
 관측 $i=1,\dots,n$ 에 대해
 
 $$
-y_i \;=\; \beta_0 + \beta_1 x_{i1} + \cdots + \beta_{p-1} x_{i,p-1} + \varepsilon_i
+y_i \thickspace=\thickspace \beta_0 + \beta_1 x_{i1} + \cdots + \beta_{p-1} x_{i,p-1} + \varepsilon_i
 $$
 
 를 가정한다. 행렬로 쓰면
 
 $$
-y = X\beta + \varepsilon, \qquad y \in \mathbb{R}^{n},\; X \in \mathbb{R}^{n \times p},\; \beta \in \mathbb{R}^{p}.
+y = X\beta + \varepsilon, \qquad y \in \mathbb{R}^{n},\thickspace X \in \mathbb{R}^{n \times p},\thickspace \beta \in \mathbb{R}^{p}.
 $$
 
 $X$ 를 설계행렬이라 하고, 절편을 쓰면 첫 열이 1 벡터다. 여기서 "선형"은 계수에 대한 선형이지 변수에 대한 선형이 아니다. 열에 $x^2$ 이나 $\log x$ 나 두 변수의 곱, 기저함수 값을 넣어도 모형은 여전히 선형회귀다. 범주형 변수는 지시변수 열로 부호화한다.
@@ -55,19 +55,19 @@ $$
 최소제곱추정량은
 
 $$
-\hat\beta \;=\; \arg\min_{b \in \mathbb{R}^{p}} \; \lVert y - Xb \rVert^{2}
+\hat\beta \thickspace=\thickspace \arg\min_{b \in \mathbb{R}^{p}} \thickspace \lVert y - Xb \rVert^{2}
 $$
 
 로 정의된다. $Xb$ 의 집합은 $X$ 의 열공간 $C(X)$ 이므로, 이 문제는 "부분공간 위의 최근접점 찾기"다. [내적 공간](inner-product-spaces.md)의 정사영 정리에 의해 최근접점은 유일하게 존재하고, 그 점 $\hat y$ 는
 
 $$
-y - \hat{y} \;\perp\; C(X), \qquad \text{즉}\quad X^{\top}(y - X\hat\beta) = 0
+y - \hat{y} \thickspace\perp\thickspace C(X), \qquad \text{즉}\quad X^{\top}(y - X\hat\beta) = 0
 $$
 
 으로 특징지어진다. 이를 정리하면 정규방정식
 
 $$
-X^{\top}X\,\hat\beta \;=\; X^{\top}y
+X^{\top}X\thinspace\hat\beta \thickspace=\thickspace X^{\top}y
 $$
 
 이고, $\operatorname{rank}(X)=p$ 이면 $X^{\mathsf T}X$ 가 가역이므로
@@ -79,7 +79,7 @@ $$
 ## Hat matrix
 
 $$
-H \;=\; X(X^{\top}X)^{-1}X^{\top}
+H \thickspace=\thickspace X(X^{\top}X)^{-1}X^{\top}
 $$
 
 를 hat matrix 또는 사영행렬이라 한다. 성질은 정사영의 성질 그대로다.
@@ -124,7 +124,7 @@ $$
 증명 스케치: 다른 선형불편추정량을 $\tilde{a} = a^\top y$ 라 하고 $a = X(X^\top X)^{-1}c + d$ 로 분해한다. 불편성은 모든 $\beta$ 에 대해 $a^\top X\beta = c^\top \beta$ 를 요구하므로 $X^\top d = 0$ 이고, 즉 $d \perp C(X)$ 다. 그러면
 
 $$
-\mathrm{Var}(a^{\top}y) = \sigma^{2}\lVert a \rVert^{2} = \sigma^{2}\big(\lVert X(X^{\top}X)^{-1}c \rVert^{2} + \lVert d \rVert^{2}\big) \;\ge\; \mathrm{Var}(c^{\top}\hat\beta),
+\mathrm{Var}(a^{\top}y) = \sigma^{2}\lVert a \rVert^{2} = \sigma^{2}\big(\lVert X(X^{\top}X)^{-1}c \rVert^{2} + \lVert d \rVert^{2}\big) \thickspace\ge\thickspace \mathrm{Var}(c^{\top}\hat\beta),
 $$
 
 등호는 $d=0$ 일 때만 성립한다. 정규성도, 오차의 분포도 쓰지 않았다는 점이 이 정리의 힘이다. 반대로 "선형"과 "불편"이라는 제약을 풀면 더 좋은 추정량이 있을 수 있다. ridge 추정량은 편향을 감수하고 평균제곱오차를 줄인다.
@@ -150,7 +150,7 @@ $$
 정규 가정 아래
 
 $$
-\hat\beta \sim N\!\big(\beta,\; \sigma^{2}(X^{\top}X)^{-1}\big), \qquad
+\hat\beta \sim N\negthinspace\big(\beta,\thickspace \sigma^{2}(X^{\top}X)^{-1}\big), \qquad
 \frac{\mathrm{RSS}}{\sigma^{2}} \sim \chi^{2}_{n-p},
 $$
 

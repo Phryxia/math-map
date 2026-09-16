@@ -81,7 +81,7 @@ $$
 를 만족한다. 이 보편성이 몫환을 특징짓는다. 특히 $I = \ker \varphi$ 이면 $\psi$ 가 단사이므로 제1 동형정리
 
 $$
-R/\ker\varphi\;\cong\;\operatorname{im}\varphi
+R/\ker\varphi\thickspace\cong\thickspace\operatorname{im}\varphi
 $$
 
 를 얻는다. "관계를 강제한 뒤에도 살아남는 사상은 원래 그 관계를 존중하던 사상뿐" 이라는 것이 이 성질의 내용이다.
@@ -125,7 +125,7 @@ $\mathbb Z/n\mathbb Z$ 의 아이디얼이 모두 주 아이디얼이라는 것�
 $I + J = R$ 이면 두 아이디얼이 서로소라 하고
 
 $$
-R/(I\cap J)\;\cong\;R/I\times R/J
+R/(I\cap J)\thickspace\cong\thickspace R/I\times R/J
 $$
 
 가 성립한다. 정수에서 $\gcd(m,n) = 1$ 일 때의 [중국인의 나머지 정리](chinese-remainder-theorem.md)가 이 진술의 특수한 경우다. 몫환을 더 작은 조각의 곱으로 쪼개는 이 정리는 다항식 보간, RSA 의 복호 가속, 병렬 산술 구현에 그대로 쓰인다.

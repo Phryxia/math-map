@@ -36,13 +36,13 @@ graph TD
 복소수체 위의 벡터 공간 $H$ 에 대해, 사상 $(x,y)\mapsto\langle x,y\rangle$ 가 첫 변수에 대해 선형이고, 켤레대칭이며, 양의 정부호일 때 내적이라 한다. 유도 노름은 다음과 같다.
 
 $$
-\|x\| = \sqrt{\langle x, x\rangle}.
+\Vert x\Vert = \sqrt{\langle x, x\rangle}.
 $$
 
 Cauchy–Schwarz 부등식과 그로부터 나오는 삼각부등식이 성립한다.
 
 $$
-|\langle x, y\rangle| \le \|x\|\,\|y\|,\qquad \|x+y\| \le \|x\| + \|y\|.
+|\langle x, y\rangle| \le \Vert x\Vert\thinspace\Vert y\Vert,\qquad \Vert x+y\Vert \le \Vert x\Vert + \Vert y\Vert.
 $$
 
 따라서 내적 공간은 $d(x,y)=\lVert x-y\rVert$ 로 [거리 공간](metric-spaces.md)이 된다.
@@ -57,13 +57,13 @@ $$
 - 수열 공간 $\ell^2$: 제곱합이 유한한 복소수열 전체.
 
 $$
-\ell^2 = \Big\{ (x_n)_{n\ge 1} : \sum_{n=1}^{\infty} |x_n|^2 < \infty \Big\},\qquad \langle x, y\rangle = \sum_{n=1}^{\infty} x_n \overline{y_n}.
+\ell^2 = \Big\lbrace (x_n)_{n\ge 1} : \sum_{n=1}^{\infty} |x_n|^2 < \infty \Big\rbrace,\qquad \langle x, y\rangle = \sum_{n=1}^{\infty} x_n \overline{y_n}.
 $$
 
 - 함수 공간 $L^2(\mu)$: [측도](measure.md) 공간 위에서 제곱적분가능한 [가측함수](measurable-functions.md)를 거의 어디서나 같음으로 동일시한 공간.
 
 $$
-L^2(\mu) = \Big\{ f : \int |f|^2 \, d\mu < \infty \Big\},\qquad \langle f, g\rangle = \int f \overline{g}\, d\mu.
+L^2(\mu) = \Big\lbrace f : \int |f|^2 \thinspace d\mu < \infty \Big\rbrace,\qquad \langle f, g\rangle = \int f \overline{g}\thinspace d\mu.
 $$
 
 $L^2$ 의 완비성이 Riesz–Fischer 정리이며, 이것이 [단조 수렴 정리](monotone-convergence.md)·[지배 수렴 정리](dominated-convergence.md) 계열 도구가 필요한 이유다.
@@ -73,7 +73,7 @@ $L^2$ 의 완비성이 Riesz–Fischer 정리이며, 이것이 [단조 수렴 �
 $\langle x,y\rangle=0$ 이면 $x$ 와 $y$ 는 직교한다. 서로 직교하고 각각의 노름이 1인 집합을 정규직교계라 한다. 부분집합 $S$ 에 대한 직교여공간은 다음과 같다.
 
 $$
-S^{\perp} = \{ x \in H : \langle x, s\rangle = 0 \ \ \forall s \in S \}.
+S^{\perp} = \lbrace x \in H : \langle x, s\rangle = 0 \ \ \forall s \in S \rbrace.
 $$
 
 직교여공간은 항상 닫힌 부분공간이다. 내적이 각 변수에 대해 연속이기 때문이다.
@@ -83,7 +83,7 @@ $$
 내적에서 유도된 노름은 반드시 다음을 만족한다.
 
 $$
-\|x+y\|^2 + \|x-y\|^2 = 2\|x\|^2 + 2\|y\|^2.
+\Vert x+y\Vert^2 + \Vert x-y\Vert^2 = 2\Vert x\Vert^2 + 2\Vert y\Vert^2.
 $$
 
 역도 참이다(Jordan–von Neumann). 이 등식을 만족하는 노름 공간은 편극 항등식으로 내적을 복원할 수 있다. 그러므로 Banach 공간 가운데 Hilbert 공간은 "평행사변형 법칙을 만족하는 것"으로 정확히 특징지어진다.
@@ -95,13 +95,13 @@ $$
 $\mathbb C$ 가 Hilbert 공간 $H$ 의 공집합이 아닌 닫힌 [볼록](convexity.md)집합이면, 임의의 $x$ 에 대해 거리를 최소화하는 점이 유일하게 존재한다.
 
 $$
-\exists ! \, p \in C : \ \|x - p\| = \inf_{c \in C} \|x - c\| =: d.
+\exists ! \thinspace p \in C : \ \Vert x - p\Vert = \inf_{c \in C} \Vert x - c\Vert =: d.
 $$
 
 증명 스케치. $\lVert x-c_n\rVert\to d$ 인 점렬을 잡고 평행사변형 법칙을 $x-c_n$, $x-c_m$ 에 적용하면
 
 $$
-\|c_n - c_m\|^2 = 2\|x-c_n\|^2 + 2\|x-c_m\|^2 - 4\Big\|x - \tfrac{c_n+c_m}{2}\Big\|^2 \le 2\|x-c_n\|^2 + 2\|x-c_m\|^2 - 4d^2
+\Vert c_n - c_m\Vert^2 = 2\Vert x-c_n\Vert^2 + 2\Vert x-c_m\Vert^2 - 4\Big\Vert x - \tfrac{c_n+c_m}{2}\Big\Vert^2 \le 2\Vert x-c_n\Vert^2 + 2\Vert x-c_m\Vert^2 - 4d^2
 $$
 
 를 얻는다. 볼록성으로 중점이 $\mathbb C$ 에 있어 마지막 항을 $d^2$ 이상으로 눌렀다. 우변이 0으로 가므로 점렬은 Cauchy이고, 완비성과 $\mathbb C$ 의 닫힘으로 극한이 $\mathbb C$ 안에 있다. 유일성도 같은 부등식에서 나온다. 볼록성과 완비성 둘 중 하나만 빠져도 결론은 거짓이다.
@@ -127,7 +127,7 @@ $P_M$ 은 멱등이고 자기수반이며 노름이 1 이하인 [선형사상](l
 $f$ 가 $H$ 위의 연속 선형범함수이면, 다음을 만족하는 $y$ 가 유일하게 존재한다.[^2]
 
 $$
-f(x) = \langle x, y\rangle \quad (\forall x \in H),\qquad \|f\| = \|y\|.
+f(x) = \langle x, y\rangle \quad (\forall x \in H),\qquad \Vert f\Vert = \Vert y\Vert.
 $$
 
 증명 스케치. $f=0$ 이면 $y=0$. 아니면 핵 $N=\ker f$ 는 닫힌 진부분공간이므로 직교분해에 의해 $N^\perp$ 에 단위벡터 $z$ 가 있다. 임의의 $x$ 에 대해 $f(x)z-f(z)x$ 가 $N$ 에 속함을 확인하면 $y=\overline{f(z)}\thinspace z$ 가 답이다.
@@ -139,13 +139,13 @@ $$
 $(e_n)$ 이 정규직교계이고 $c_n=\langle x,e_n\rangle$ 이면, 유한 부분합이 정사영이므로 피타고라스 정리에서 Bessel 부등식이 나온다.
 
 $$
-\sum_{n} |\langle x, e_n\rangle|^2 \le \|x\|^2 .
+\sum_{n} |\langle x, e_n\rangle|^2 \le \Vert x\Vert^2 .
 $$
 
 특히 계수열은 $\ell^2$ 에 속한다. 정규직교계가 완비(그 생성이 조밀, 동치로 $\lbrace e_n\rbrace^\perp=\lbrace 0\rbrace$)이면 정규직교기저라 하고, 이때 부등식이 등식이 된다.
 
 $$
-x = \sum_{n} \langle x, e_n\rangle e_n,\qquad \|x\|^2 = \sum_{n} |\langle x, e_n\rangle|^2 .
+x = \sum_{n} \langle x, e_n\rangle e_n,\qquad \Vert x\Vert^2 = \sum_{n} |\langle x, e_n\rangle|^2 .
 $$
 
 두 번째 식이 Parseval 등식이다. 급수는 순서에 무관하게(무조건) 수렴하며, 부분합이 Cauchy임은 계수의 제곱합이 수렴한다는 사실과 완비성에서 나온다. 여기서 "기저"는 유한 선형결합을 뜻하는 Hamel 기저가 아니라 수렴하는 무한급수를 허용한 Schauder 식 기저임에 주의한다.

@@ -18,7 +18,7 @@ $$
 두 번째가 핵심이다. Lie 대수는 군을 유일하게 결정하지 못하고, 남는 차이가 정확히 **위상적** 차이다. 같은 Lie 대수를 갖는 연결 Lie 군들은 하나의 보편덮개를 공유하고 서로는 이산 중심부분군에 의한 몫이다. [덮개공간](covering-spaces.md) 이론이 그대로 대응 정리의 뼈대가 된다.
 
 $$
-\{\text{단연결 Lie 군}\}\ \xrightarrow{\ \sim\ }\ \{\text{유한차원 실 Lie 대수}\}
+\lbrace\text{단연결 Lie 군}\rbrace\ \xrightarrow{\ \sim\ }\ \lbrace\text{유한차원 실 Lie 대수}\rbrace
 $$
 
 단연결을 요구하면 대응이 범주 동치가 된다. 곡선 대상인 군을 선형대수로 바꾸는 사전이 완성되는 지점이고, Lie 이론의 출발점이다.
@@ -48,7 +48,7 @@ $$
 그런데 군으로는 다르다. $\mathrm{SU}(2)$ 는 $S^3$ 이라 단연결이고, $\mathrm{SO}(3)$ 은 $\mathbb{RP}^3$ 이라 $\pi_1=\mathbb Z/2$ 다. 둘을 잇는 것이 이중덮개다.
 
 $$
-1\to\{\pm I\}\to\mathrm{SU}(2)\to\mathrm{SO}(3)\to1
+1\to\lbrace\pm I\rbrace\to\mathrm{SU}(2)\to\mathrm{SO}(3)\to1
 $$
 
 물리에서 이 $\pm$ 가 스핀 $1/2$ 이다. 공간에서 한 바퀴 돌린 $\theta=2\pi$ 의 회전은 $\mathrm{SO}(3)$ 에서 항등이지만 $\mathrm{SU}(2)$ 에서는 $-I$ 라, 전자의 파동함수는 부호가 뒤집힌다. 두 바퀴를 돌아야 제자리로 온다.

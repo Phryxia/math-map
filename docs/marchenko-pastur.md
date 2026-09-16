@@ -42,8 +42,8 @@ graph TD
 $X$ 를 $p \times n$ 행렬, 항목은 평균 $0$ 분산 $1$ 로 독립동일분포라 하고 $S = \frac1n XX^{\mathsf T}$ 라 두자. $p, n \to \infty$ 이면서 $p/n \to \gamma \in (0,\infty)$ 일 때, $S$ 의 고윳값의 경험분포는 거의 확실히
 
 $$
-d\mu_\gamma(x) = \frac{\sqrt{(\lambda_+ - x)(x - \lambda_-)}}{2\pi\gamma x}\,\mathbb 1_{[\lambda_-,\lambda_+]}(x)\,dx
-\;+\;\Bigl(1 - \tfrac1\gamma\Bigr)^{+}\delta_0,
+d\mu_\gamma(x) = \frac{\sqrt{(\lambda_+ - x)(x - \lambda_-)}}{2\pi\gamma x}\thinspace\mathbb 1_{[\lambda_-,\lambda_+]}(x)\thinspace dx
+\thickspace+\thickspace\Bigl(1 - \tfrac1\gamma\Bigr)^{+}\delta_0,
 \qquad \lambda_\pm = (1 \pm \sqrt\gamma)^2
 $$
 
@@ -54,7 +54,7 @@ $$
 $\mu_\gamma$ 의 적률은 조합적으로 닫힌 꼴이다.
 
 $$
-m_k = \int x^k\,d\mu_\gamma(x) = \sum_{r=0}^{k-1}\frac{1}{r+1}\binom{k}{r}\binom{k-1}{r}\gamma^{\,r}
+m_k = \int x^k\thinspace d\mu_\gamma(x) = \sum_{r=0}^{k-1}\frac{1}{r+1}\binom{k}{r}\binom{k-1}{r}\gamma^{\thinspace r}
 $$
 
 계수 $\frac{1}{r+1}\binom{k}{r}\binom{k-1}{r}$ 이 Narayana 수이고, $\gamma = 1$ 에서 합이 Catalan 수 $C_k$ 가 된다. 처음 몇 개는 $m_1 = 1$ 과 $m_2 = 1+\gamma$ 와 $m_3 = 1 + 3\gamma + \gamma^2$ 이다. 적률은 $\frac1p\operatorname{tr}(S^k)$ 의 극한이므로 고윳값을 구하지 않고 행렬 곱만으로 확인할 수 있고, 아래 코드가 그렇게 한다.
@@ -64,7 +64,7 @@ $$
 증명과 일반화는 Stieltjes 변환 $m(z) = \int (x-z)^{-1}d\mu(x)$ 로 한다. MP 분포의 변환은 이차방정식
 
 $$
-\gamma z\,m(z)^2 + \bigl(z + \gamma - 1\bigr)m(z) + 1 = 0
+\gamma z\thinspace m(z)^2 + \bigl(z + \gamma - 1\bigr)m(z) + 1 = 0
 $$
 
 을 만족하고, 근을 고른 뒤 허수부를 취하면 위의 밀도가 나온다. 이차방정식이 나오는 것은 자유확률에서 $S$ 가 자유 곱셈 합성곱으로 기술되기 때문이며, $\Sigma$ 가 항등행렬이 아닌 일반적인 경우로 넘어갈 때 이 방정식이 $\Sigma$ 의 스펙트럼을 담은 적분방정식으로 바뀐다.
@@ -76,9 +76,9 @@ $$
 받침의 끝 $\lambda_+$ 근처에서 밀도가 $\sqrt{\lambda_+ - x}$ 로 사라진다. 이 제곱근 소멸이 [Tracy–Widom 분포](tracy-widom.md)가 나타나는 전형적인 가장자리이고, 실제로 최대 고윳값은
 
 $$
-\frac{\lambda_{\max} - \lambda_+}{\sigma_{p,n}} \;\Longrightarrow\; \text{TW}_\beta,
+\frac{\lambda_{\max} - \lambda_+}{\sigma_{p,n}} \thickspace\Longrightarrow\thickspace \text{TW}_\beta,
 \qquad
-\sigma_{p,n} = \frac{(1+\sqrt\gamma)^{4/3}}{\gamma^{1/6}}\,n^{-2/3}
+\sigma_{p,n} = \frac{(1+\sqrt\gamma)^{4/3}}{\gamma^{1/6}}\thinspace n^{-2/3}
 $$
 
 를 따른다. Tracy–Widom 의 평균이 음수이므로 유한 크기에서 $\lambda_{\max}$ 는 $\lambda_+$ 보다 **체계적으로 안쪽**에 있다. 아래 수치에서 최대 고윳값이 예측값에 늘 조금 못 미치는 것이 이 편향이며, 크기는 $n^{-2/3}$ 규모다.
@@ -90,7 +90,7 @@ $\Sigma = I + \ell vv^{\mathsf T}$ 인 스파이크 모형에서 최대 고윳�
 $$
 \lambda_{\max} \longrightarrow
 \begin{cases}
-(1+\ell)\Bigl(1 + \dfrac{\gamma}{\ell}\Bigr), & \ell > \sqrt\gamma\\[2mm]
+(1+\ell)\Bigl(1 + \dfrac{\gamma}{\ell}\Bigr), & \ell > \sqrt\gamma\cr
 (1+\sqrt\gamma)^2, & \ell \le \sqrt\gamma
 \end{cases}
 $$

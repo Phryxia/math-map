@@ -73,7 +73,7 @@ $$
 x와 y가 각각 실행가능할 때, 둘이 모두 최적인 것은 다음 조건과 동치다[^3].
 
 $$
-x_j\,\bigl(A^\top y-c\bigr)_j=0\ \ (\forall j),\qquad y_i\,\bigl(b-Ax\bigr)_i=0\ \ (\forall i)
+x_j\thinspace\bigl(A^\top y-c\bigr)_j=0\ \ (\forall j),\qquad y_i\thinspace\bigl(b-Ax\bigr)_i=0\ \ (\forall i)
 $$
 
 증명: 약쌍대성의 두 부등식이 등식이 되는 조건을 성분별로 쓴 것이 위 식이고, 등식이 성립하는 것은 gap이 0, 즉 강쌍대성에 의해 최적인 것과 같다. 해석하면 "제약이 느슨하면(slack이 양수) 대응하는 쌍대 변수는 0이고, 쌍대 변수가 양수면 대응하는 제약은 tight하다".

@@ -32,7 +32,7 @@ $$
 최대가능도 추정량은 로그가능도를 최대화하는 점이다. 존재하지 않거나 유일하지 않을 수 있으므로 argmax는 집합으로 이해한다.
 
 $$
-\hat\theta=\operatorname*{arg\,max}_{\theta\in\Theta}\ \ell(\theta)
+\hat\theta=\operatorname*{arg\thinspace max}_{\theta\in\Theta}\ \ell(\theta)
 $$
 
 ## score와 Fisher 정보
@@ -48,8 +48,8 @@ $$
 Fisher 정보는 score의 분산이며, 같은 조건 아래 로그가능도의 2차 도함수의 기댓값의 음수와 같다.
 
 $$
-I(\theta)=\mathbb E_\theta\!\left[s(\theta;X)^2\right]
-=-\,\mathbb E_\theta\!\left[\frac{\partial^2}{\partial\theta^2}\log f(X;\theta)\right]
+I(\theta)=\mathbb E_\theta\negthinspace\left[s(\theta;X)^2\right]
+=-\thinspace\mathbb E_\theta\negthinspace\left[\frac{\partial^2}{\partial\theta^2}\log f(X;\theta)\right]
 $$
 
 다변수 모수에서는 $I(\theta)$ 가 행렬이 되고, [고윳값](eigenvalues.md)이 모든 방향의 정보량을 알려 준다.
@@ -86,8 +86,8 @@ $$
 
 $$
 \frac1n\ell(\theta)\ \xrightarrow{\ P\ }\
-\mathbb E_{\theta_0}\!\left[\log f(X;\theta)\right]
-=-H(\theta_0)-D_{\mathrm{KL}}\!\left(f_{\theta_0}\,\|\,f_\theta\right)
+\mathbb E_{\theta_0}\negthinspace\left[\log f(X;\theta)\right]
+=-H(\theta_0)-D_{\mathrm{KL}}\negthinspace\left(f_{\theta_0}\thinspace\Vert\thinspace f_\theta\right)
 $$
 
 Kullback–Leibler divergence는 음이 아니고 두 분포가 같을 때만 $0$ 이므로, 극한 목적함수는 $\theta_0$ 에서 유일하게 최대다. 여기에 최대점의 수렴을 보장하는 균등수렴 조건을 더하면 일치성이 나온다. MLE가 사실상 KL divergence를 최소화하고 있다는 이 해석은 [Shannon entropy](entropy.md)와 직접 연결된다.
@@ -97,7 +97,7 @@ Kullback–Leibler divergence는 음이 아니고 두 분포가 같을 때만 $0
 정칙 조건 아래 다음이 성립한다[^2].
 
 $$
-\sqrt n\,(\hat\theta-\theta_0)\ \xrightarrow{\ d\ }\ N\!\left(0,\ I(\theta_0)^{-1}\right)
+\sqrt n\thinspace(\hat\theta-\theta_0)\ \xrightarrow{\ d\ }\ N\negthinspace\left(0,\ I(\theta_0)^{-1}\right)
 $$
 
 증명 개요: score를 참값 주위에서 1차 Taylor 전개한다.

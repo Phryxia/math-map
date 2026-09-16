@@ -5,7 +5,7 @@
 쌍곡 3 차원 공간에서 사면체의 부피를 구하려면 무엇이 필요한가. Euclid 공간에서는 밑면 곱하기 높이로 끝나지만 쌍곡 공간에서는 그렇지 않다. 답은 초등함수로 쓰이지 않고 새 함수 하나를 필요로 한다.
 
 $$
-\Lambda(\theta)=-\int_0^\theta\log\big|2\sin t\big|\,dt
+\Lambda(\theta)=-\int_0^\theta\log\big|2\sin t\big|\thinspace dt
 $$
 
 이것이 Lobachevsky 함수다. [Fourier 급수](fourier-series.md)로 보면 정체가 분명해진다.
@@ -44,7 +44,7 @@ $$
 이다. $|1-e^{i\theta}|=2|\sin(\theta/2)|$ 을 쓴 것이다. 오른쪽은 $\log(2\sin)$ 의 **Riemann 합**이므로 $N\to\infty$ 에서
 
 $$
-\frac1N\sum_{j=1}^{k}\log\Big(2\sin\frac{\pi j}N\Big)\ \longrightarrow\ \frac1\pi\int_0^{\pi k/N}\log(2\sin t)\,dt=-\frac1\pi\Lambda\Big(\frac{\pi k}N\Big)
+\frac1N\sum_{j=1}^{k}\log\Big(2\sin\frac{\pi j}N\Big)\ \longrightarrow\ \frac1\pi\int_0^{\pi k/N}\log(2\sin t)\thinspace dt=-\frac1\pi\Lambda\Big(\frac{\pi k}N\Big)
 $$
 
 가 된다. **양자 불변량의 유한합에서 $\Lambda$ 가 이렇게 들어온다.** 색 Jones 다항식의 항들이 이런 곱이고, 합의 최대항을 찾는 것이 $\Lambda$ 를 최대화하는 문제가 되며, 그 최대점이 사면체의 이면각을 정한다. 조합적 합의 안장점 조건과 사면체 붙임 방정식이 같은 식이 되는 지점이다.
@@ -91,7 +91,7 @@ Thurston 의 계산이 이 이론의 출발점이다.
 
 > $S^3\setminus4_1$ 은 정이면체 사면체 **두 개**를 붙여 만들어진다. 따라서
 > $$
-> \mathrm{Vol}(S^3\setminus4_1)=6\,\Lambda(\pi/3)=2.0298832128\ldots
+> \mathrm{Vol}(S^3\setminus4_1)=6\thinspace\Lambda(\pi/3)=2.0298832128\ldots
 > $$
 
 이 수가 쌍곡 매듭 가운데 가장 작은 부피이고, 볼륨 추측의 수치 실험이 늘 이 매듭에서 시작하는 까닭이다.

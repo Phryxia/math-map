@@ -48,7 +48,7 @@ graph LR
 $b_1,\dots,b_m\in\mathbb R^n$ 이 선형독립일 때 다음 집합이 격자다.
 
 $$
-L=\Big\{\sum_{i=1}^m z_ib_i\ :\ z_i\in\mathbb Z\Big\}
+L=\Big\lbrace\sum_{i=1}^m z_ib_i\ :\ z_i\in\mathbb Z\Big\rbrace
 $$
 
 $B$ 를 $b_i$ 를 행으로 갖는 행렬이라 하면 $L=\lbrace zB:z\in\mathbb Z^m\rbrace$ 이다. $m=n$ 이면 완전계수라 하고, 이 문서는 그 경우만 다룬다.
@@ -58,7 +58,7 @@ $B$ 를 $b_i$ 를 행으로 갖는 행렬이라 하면 $L=\lbrace zB:z\in\mathbb
 ## 행렬식과 기본영역
 
 $$
-\det L=|\det B|,\qquad \mathcal P(B)=\Big\{\sum t_ib_i:t_i\in[0,1)\Big\}
+\det L=|\det B|,\qquad \mathcal P(B)=\Big\lbrace\sum t_ib_i:t_i\in[0,1)\Big\rbrace
 $$
 
 $\mathcal P(B)$ 가 기본영역이고 그 부피가 $\det L$ 이다. 두 기저 $B,B'$ 가 같은 격자를 만들 필요충분조건은 $B'=UB$ 인 정수행렬 $U$ 로 $\det U=\pm1$ 인 것이 존재하는 것이며, 그런 $U$ 를 단모듈러 행렬이라 한다.
@@ -68,7 +68,7 @@ Gram 행렬 $G=BB^{\mathsf T}$ 를 쓰면 $\det L=\sqrt{\det G}$ 다. 격자가 
 ## 연속 최소
 
 $$
-\lambda_k(L)=\min\{r>0:\ \dim\mathrm{span}(L\cap \bar B(0,r))\ge k\}
+\lambda_k(L)=\min\lbrace r>0:\ \dim\mathrm{span}(L\cap \bar B(0,r))\ge k\rbrace
 $$
 
 $\lambda_1$ 이 0 이 아닌 최단벡터의 길이다. $\lambda_k$ 는 선형독립인 격자벡터 $k$ 개를 반지름 $r$ 공 안에서 찾을 수 있는 최소 반지름이다.
@@ -78,7 +78,7 @@ $\lambda_1,\dots,\lambda_n$ 을 달성하는 벡터들이 기저가 되지 않�
 ## 쌍대격자
 
 $$
-L^*=\{y\in\mathrm{span}(L):\ \langle y,x\rangle\in\mathbb Z\ \ \forall x\in L\}
+L^*=\lbrace y\in\mathrm{span}(L):\ \langle y,x\rangle\in\mathbb Z\ \ \forall x\in L\rbrace
 $$
 
 기저로는 $(B^{-1})^{\mathsf T}$ 가 $L^\ast$ 의 기저이고 $\det L^\ast=1/\det L$ 이다. $L$ 이 촘촘하면 $L^\ast$ 가 성기다. 전이 정리들이 $\lambda_1(L)$ 과 $\lambda_n(L^\ast)$ 를 묶으며, 암호의 어려움 증명에서 두 격자를 오가는 논증이 자주 쓰인다.
@@ -117,7 +117,7 @@ $$
 무작위 격자에서는 반지름 $r$ 공 안의 격자점 개수가 대략 $V_nr^n/\det L$ 이다. 이것이 1 이 되는 지점을 최단벡터의 길이로 예상하면
 
 $$
-\lambda_1(L)\approx\sqrt{\frac n{2\pi e}}\,(\det L)^{1/n}
+\lambda_1(L)\approx\sqrt{\frac n{2\pi e}}\thinspace(\det L)^{1/n}
 $$
 
 Minkowski 상계와 상수배만 다르다. 실제 무작위 격자에서 매우 잘 맞으며, 암호 파라미터를 고르는 기준으로 쓰인다. 반대로 이 추정보다 훨씬 짧은 벡터를 심어 둔 격자가 암호 구성에서 "비밀" 의 역할을 한다.
@@ -128,13 +128,13 @@ Minkowski 상계와 상수배만 다르다. 실제 무작위 격자에서 매우
 
 $$
 |\mu_{ij}|\le\tfrac12\ (j<i),\qquad
-\delta\|b_{k-1}^*\|^2\le\|b_k^*\|^2+\mu_{k,k-1}^2\|b_{k-1}^*\|^2
+\delta\Vert b_{k-1}^*\Vert^2\le\Vert b_k^*\Vert^2+\mu_{k,k-1}^2\Vert b_{k-1}^*\Vert^2
 $$
 
 둘째가 Lovász 조건으로, 인접한 두 벡터의 순서가 크게 잘못되지 않았음을 요구한다. $\delta=3/4$ 로 잡으면 다음 보장이 나온다.
 
 $$
-\|b_1\|\le 2^{(n-1)/2}\lambda_1(L)
+\Vert b_1\Vert\le 2^{(n-1)/2}\lambda_1(L)
 $$
 
 근사비가 지수적이지만 차원이 작으면 충분히 쓸모 있고, 실제 입력에서는 보장보다 훨씬 잘 작동한다. 알고리즘은 크기 축소와 교환을 번갈아 하며, $\prod\Vert b_i^*\Vert^{n-i}$ 꼴의 정수 퍼텐셜이 교환마다 상수배로 줄어든다는 사실로 다항시간이 증명된다.

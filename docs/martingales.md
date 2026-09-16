@@ -5,7 +5,7 @@
 Martingale 은 "공정한 게임"의 수학적 모형이다. 시간에 따라 정보가 쌓이는 상황에서, 지금까지 관측한 모든 것을 알고 있어도 다음 시각의 값에 대한 최선의 예측이 현재 값과 같은 확률과정을 말한다.
 
 $$
-E[X_{n+1} \mid \mathcal{F}_n] \;=\; X_n .
+E[X_{n+1} \mid \mathcal{F}_n] \thickspace=\thickspace X_n .
 $$
 
 이 한 줄이 주는 힘은 놀라울 정도로 크다. 겉보기에 아무 구조도 없어 보이지만, 이 조건만으로 (1) 기댓값이 시간에 대해 불변이고, (2) 적절한 조건에서 임의의 **정지시간**까지 그 불변성이 유지되며(선택적 정지 정리), (3) 최댓값의 꼬리가 제어되고(Doob 부등식), (4) 유계성 가정 아래 거의 확실하게 수렴한다(martingale 수렴 정리). 조건은 [조건부 기댓값](conditional-expectation.md)의 언어로만 쓸 수 있으므로 martingale 이론은 측도론적 조건부 기댓값 위에 바로 얹힌다.
@@ -19,7 +19,7 @@ $$
 두 번째 직관은 "전략으로는 공정함을 이길 수 없다"는 것이다. 매 시각 얼마를 걸지를 과거 정보만 보고 정하는 전략 $H_n$ 을 세워도, 결과 과정
 
 $$
-(H \cdot X)_n \;=\; \sum_{k=1}^{n} H_k (X_k - X_{k-1})
+(H \cdot X)_n \thickspace=\thickspace \sum_{k=1}^{n} H_k (X_k - X_{k-1})
 $$
 
 은 다시 martingale 이다. 판돈을 언제 그만둘지 정하는 것(정지시간) 역시 일종의 전략이므로, 유계성 조건만 갖추면 기대 이득은 여전히 0 이다. 도박 시스템의 불가능성 정리라 할 만하며, 이것이 선택적 정지 정리의 내용이다.
@@ -77,7 +77,7 @@ $(X_n)$ 이 martingale 이고 $\varphi$ 가 [볼록](convexity.md)함수이며 $
 확률변수 $T : \Omega \to \lbrace 0, 1, \dots, \infty\rbrace$ 가 모든 $n$ 에 대해 $\lbrace T \le n\rbrace \in \mathcal F_n$ 이면 정지시간(stopping time)이라 한다. "지금 멈출지를 지금까지의 정보만으로 결정한다"는 뜻이고, 미래를 내다보는 규칙(예: 최고점에서 팔기)은 정지시간이 아니다. 정지된 과정은
 
 $$
-X_n^T \;=\; X_{T \wedge n}
+X_n^T \thickspace=\thickspace X_{T \wedge n}
 $$
 
 로 정의하며, $(X_n)$ 이 martingale 이면 $(X_{T \wedge n})$ 도 martingale 이다. 이는 예측 가능한 전략 $H_k = \mathbf 1\lbrace T \ge k\rbrace$ 에 대한 martingale 변환이기 때문이다.
@@ -99,13 +99,13 @@ $$
 $S_n$ 을 대칭 단순 랜덤워크라 하고 $S_0 = k$ 와 $T = \inf\lbrace n : S_n \in \lbrace 0, N\rbrace\rbrace$ 로 둔다. $T$ 는 거의 확실하게 유한하고 $(S_{T \wedge n})$ 은 $[0, N]$ 에 유계이므로 선택적 정지 정리를 쓸 수 있다.
 
 $$
-k \;=\; E[S_T] \;=\; N \cdot P(S_T = N) \;\Rightarrow\; P(S_T = N) = \frac{k}{N}.
+k \thickspace=\thickspace E[S_T] \thickspace=\thickspace N \cdot P(S_T = N) \thickspace\Rightarrow\thickspace P(S_T = N) = \frac{k}{N}.
 $$
 
 두 번째 martingale $S_n^2 - n$ 에 같은 정리를 적용하면 기대 도달 시간이 나온다.
 
 $$
-k^2 \;=\; E[S_T^2] - E[T] \;=\; N^2 \cdot \frac{k}{N} - E[T] \;\Rightarrow\; E[T] = k(N - k).
+k^2 \thickspace=\thickspace E[S_T^2] - E[T] \thickspace=\thickspace N^2 \cdot \frac{k}{N} - E[T] \thickspace\Rightarrow\thickspace E[T] = k(N - k).
 $$
 
 성공확률이 $p \neq 1/2$ 인 비대칭 경우에는 $(q/p)^{S_n}$ 이 martingale 이고, 같은 계산이 고전적인 파산 확률 공식을 준다.
@@ -115,7 +115,7 @@ $$
 **정리.** $(X_n)$ 이 비음 submartingale 이면 임의의 $\lambda > 0$ 에 대해
 
 $$
-P\Big(\max_{0 \le k \le n} X_k \ge \lambda\Big) \;\le\; \frac{E[X_n]}{\lambda}.
+P\Big(\max_{0 \le k \le n} X_k \ge \lambda\Big) \thickspace\le\thickspace \frac{E[X_n]}{\lambda}.
 $$
 
 *증명 스케치.* $T = \inf\lbrace k : X_k \ge \lambda\rbrace$ 로 두고 사건 $A = \lbrace\max_{k \le n} X_k \ge \lambda\rbrace$ 를 $\lbrace T \le n\rbrace$ 과 동일시한다. $A$ 위에서 $X_T \ge \lambda$ 이고, submartingale 성질로 $E[X_n \mathbf 1_A] \ge E[X_T \mathbf 1_A] \ge \lambda P(A)$ 이다. Markov 부등식의 "경로 전체" 버전이며, $X_n$ 대신 최댓값을 다루면서도 대가가 없다는 점이 핵심이다.
@@ -123,7 +123,7 @@ $$
 $p > 1$ 에 대한 $L^p$ 최대부등식
 
 $$
-E\Big[\max_{k \le n} |X_k|^p\Big] \;\le\; \Big(\frac{p}{p-1}\Big)^p E\big[|X_n|^p\big]
+E\Big[\max_{k \le n} |X_k|^p\Big] \thickspace\le\thickspace \Big(\frac{p}{p-1}\Big)^p E\big[|X_n|^p\big]
 $$
 
 은 위 부등식과 층 공식(layer cake), Hölder 부등식으로 얻는다. $p = 2$ 인 경우가 가장 많이 쓰이며, 랜덤워크의 최대 편차 추정과 확률적분의 등거리 성질(Itô isometry)의 이산 대응물이 된다.
@@ -135,7 +135,7 @@ $$
 **Upcrossing 부등식.** $(X_n)$ 이 supermartingale 이면
 
 $$
-(b - a)\, E\big[U_n[a,b]\big] \;\le\; E\big[(X_n - a)^-\big].
+(b - a)\thinspace E\big[U_n[a,b]\big] \thickspace\le\thickspace E\big[(X_n - a)^-\big].
 $$
 
 *증명 스케치.* $a$ 아래로 내려가면 1 단위를 사고 $b$ 위로 올라가면 파는 예측 가능 전략 $H$ 를 만든다. 완성된 upcrossing 하나마다 최소 $b - a$ 의 이익이 나므로 $(H \cdot X)_n \ge (b-a) U_n[a,b] - (X_n - a)^-$ 이고, supermartingale 의 비음 전략 변환은 다시 supermartingale 이므로 $E[(H \cdot X)_n] \le 0$ 이다.
@@ -153,7 +153,7 @@ $$
 증분이 $\lvert X_k - X_{k-1} \rvert \le c_k$ 로 유계인 martingale 에 대해
 
 $$
-P\big(X_n - X_0 \ge t\big) \;\le\; \exp\!\left(-\frac{t^2}{2 \sum_{k=1}^n c_k^2}\right)
+P\big(X_n - X_0 \ge t\big) \thickspace\le\thickspace \exp\negthinspace\left(-\frac{t^2}{2 \sum_{k=1}^n c_k^2}\right)
 $$
 
 가 성립한다(Azuma–Hoeffding). 증명은 조건부 Hoeffding 보조정리를 지수 모멘트에 반복 적용하는 것으로, 독립 합에 대한 Hoeffding 부등식의 논증을 조건부 기댓값으로 바꿔 쓴 것에 지나지 않는다. 이 관점의 실익은 독립성을 요구하지 않는다는 데 있다. 함수 $f(Z_1, \dots, Z_n)$ 에 대해 Doob martingale $X_k = E[f \mid Z_1, \dots, Z_k]$ 를 만들고 각 좌표를 바꿀 때 $f$ 의 변화가 제한된다는 조건(bounded differences)을 쓰면 McDiarmid 부등식이 나온다. 자세한 독립 경우는 [집중부등식](concentration-inequalities.md)에서 다룬다.

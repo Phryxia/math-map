@@ -128,7 +128,7 @@ $$
 ## Kolyvagin 계
 
 $$
-\mathbf{KS}(T,\mathcal F,\mathcal P)=\Big\{\kappa=(\kappa_n)_{n\in\mathcal N}\ :\ \kappa_n\in H^1_{\mathcal F(n)}(K,T),\ \ \phi_\ell^{\mathrm{fs}}\big(\mathrm{loc}_\ell(\kappa_n)\big)=\mathrm{loc}_\ell(\kappa_{n\ell})\ \ (\forall\,\ell\mid n\ell)\Big\}
+\mathbf{KS}(T,\mathcal F,\mathcal P)=\Big\lbrace\kappa=(\kappa_n)_{n\in\mathcal N}\ :\ \kappa_n\in H^1_{\mathcal F(n)}(K,T),\ \ \phi_\ell^{\mathrm{fs}}\big(\mathrm{loc}_\ell(\kappa_n)\big)=\mathrm{loc}_\ell(\kappa_{n\ell})\ \ (\forall\thinspace\ell\mid n\ell)\Big\rbrace
 $$
 
 여기서 $\mathcal P$ 는 허용하는 Kolyvagin 소수의 집합이다. 이것이 $R$ 가군을 이룬다. Euler 계와 달리 **대수적 원소의 탑에 대한 언급이 전혀 없다.** 남은 것은 코호몰로지와 국소 조건뿐이다.
@@ -235,13 +235,13 @@ Mazur–Rubin 의 결론은 세 갈래다. $T$ 가 적절한 큼직함 조건(�
 $\chi=1$ 이고 $\kappa$ 가 $\mathbf{KS}$ 의 생성원이라 하자. 각 $i\ge0$ 에 대해
 
 $$
-\partial_i(\kappa):=\min\{\,\mathrm{ord}_p(\kappa_n)\ :\ n\in\mathcal N,\ \nu(n)\le i\,\}
+\partial_i(\kappa):=\min\lbrace\thinspace\mathrm{ord}_p(\kappa_n)\ :\ n\in\mathcal N,\ \nu(n)\le i\thinspace\rbrace
 $$
 
 로 두면($\nu(n)$ 은 $n$ 의 소인수 개수, $\mathrm{ord}\_p$ 는 $\kappa_n$ 이 $p$ 로 나누어지는 횟수), $\partial_i$ 는 감소하다가 $0$ 에서 멈추는 열이고, 그 감소 폭이 쌍대 Selmer 군 $H^1_{\mathcal F^\ast}(K,T^\ast)$ 의 초등인자를 그대로 준다. 특히 길이가
 
 $$
-\mathrm{length}_R\,H^1_{\mathcal F^*}(K,T^*)=\sum_{i\ge0}\partial_i(\kappa)
+\mathrm{length}_R\thinspace H^1_{\mathcal F^*}(K,T^*)=\sum_{i\ge0}\partial_i(\kappa)
 $$
 
 로 **등식**으로 나온다. Euler 계가 주던 부등식 $\mathrm{length}\le\cdots$ 가 여기서 등식이 된 것이다. 남는 것은 $\kappa$ 가 실제로 생성원인지 — 곧 $\partial_0(\kappa)$ 가 최소값인지 — 를 확인하는 문제뿐이고, 이것이 Euler 계 쪽에서 넘어오는 유일한 입력이다.
@@ -259,7 +259,7 @@ $\chi=1$ 일 때 $\mathcal N$ 의 정점 가운데 $\dim H^1_{\mathcal F(n)}(K,T
 Euler 계가 주어지면 유도 연산자를 적용해 $\kappa_n$ 을 만들고, 자취 관계가 두 번째 공리로 번역된다. 곧 자연스러운 사상
 
 $$
-\{\text{Euler 계}\}\longrightarrow\mathbf{KS}(T,\mathcal F,\mathcal P)
+\lbrace\text{Euler 계}\rbrace\longrightarrow\mathbf{KS}(T,\mathcal F,\mathcal P)
 $$
 
 이 있다. 이 사상은 단사도 전사도 아니지만, $\chi=1$ 이면 치역이 자유 순위 $1$ 가군 안에 앉으므로 "어느 배수인가" 만 따지면 된다. 이론의 무게중심이 존재성에서 **정수 하나의 계산**으로 옮겨 간다.

@@ -11,7 +11,7 @@ $$
 이 **괄호**를 갖춘 벡터공간이 **Lie 대수**다. 결합법칙 대신 Jacobi 항등식을 만족하는 비결합 대수이며, 곡선 대상인 Lie 군의 문제를 [선형사상](linear-maps.md)의 문제로 바꾼다. 군의 부분군은 부분대수에, 정규부분군은 아이디얼에, 준동형은 준동형에 대응한다. 게다가 이 대응은 단연결 Lie 군에 대해서는 범주 동치다. 곧 잃는 정보가 없다.
 
 $$
-\{\text{단연결 Lie 군}\}\ \simeq\ \{\text{유한차원 실 Lie 대수}\}
+\lbrace\text{단연결 Lie 군}\rbrace\ \simeq\ \lbrace\text{유한차원 실 Lie 대수}\rbrace
 $$
 
 무한히 많은 원소를 가진 연속군의 분류 문제가 유한차원 선형대수로 내려온다는 뜻이다. 실제로 복소수 위의 단순 Lie 대수는 완전히 분류되어 있고, 답은 네 개의 무한 계열 $A_n,B_n,C_n,D_n$ 과 다섯 개의 예외 $E_6,E_7,E_8,F_4,G_2$ 뿐이다. 이 목록은 [군의 표현](group-representations.md)에서 유한군의 지표표가 하는 역할을 연속군 쪽에서 맡는다.
@@ -61,9 +61,9 @@ $$
 $\mathfrak{sl}_2$ 는 대각합이 0 인 $2\times2$ 행렬들이고, 기저와 괄호가 다음과 같다.
 
 $$
-H=\begin{pmatrix}1&0\\0&-1\end{pmatrix},\quad
-E=\begin{pmatrix}0&1\\0&0\end{pmatrix},\quad
-F=\begin{pmatrix}0&0\\1&0\end{pmatrix}
+H=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix},\quad
+E=\begin{pmatrix}0&1\cr 0&0\end{pmatrix},\quad
+F=\begin{pmatrix}0&0\cr 1&0\end{pmatrix}
 $$
 
 $$
@@ -148,7 +148,7 @@ $$
 복소 반단순 $\mathfrak g$ 에서 극대 가환 부분대수 $\mathfrak h$ (Cartan 부분대수)를 잡으면 $\operatorname{ad}\mathfrak h$ 가 동시대각화되어 근공간 분해가 나온다.
 
 $$
-\mathfrak g=\mathfrak h\oplus\bigoplus_{\alpha\in\Phi}\mathfrak g_\alpha,\qquad \mathfrak g_\alpha=\{X:[H,X]=\alpha(H)X\ \forall H\in\mathfrak h\}
+\mathfrak g=\mathfrak h\oplus\bigoplus_{\alpha\in\Phi}\mathfrak g_\alpha,\qquad \mathfrak g_\alpha=\lbrace X:[H,X]=\alpha(H)X\ \forall H\in\mathfrak h\rbrace
 $$
 
 $\Phi\subset\mathfrak h^*$ 가 **근계**이고 각 $\dim\mathfrak g_\alpha=1$ 이다. 근계는 유한 반사군(Weyl 군)이 작용하는 조합적 대상이라 순전히 조합론으로 분류되고, 단순근 사이의 각도를 그래프로 그린 것이 **Dynkin 도표**다.

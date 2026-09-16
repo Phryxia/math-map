@@ -11,7 +11,7 @@ $$
 Euler 지표처럼 생긴 수를 보면 그것을 Euler 지표로 갖는 사슬복체를 찾고 싶어진다. Floer 가 만든 것이 그 복체다. 생성원은 평탄 접속이고, 미분은 두 평탄 접속을 잇는 **순간자**(반자기쌍대 접속)의 개수다.
 
 $$
-\chi\big(HF_*(\Sigma)\big)=2\,\lambda(\Sigma)
+\chi\big(HF_*(\Sigma)\big)=2\thinspace\lambda(\Sigma)
 $$
 
 수 하나가 등급이 붙은 아벨군들의 열로 올라간다. 이런 승격을 **범주화**라 하고, 얻는 것은 두 가지다. 첫째, 정보가 늘어난다. Euler 지표가 같아도 호몰로지가 다를 수 있다. 둘째, 함자성이 생긴다. 4 차원 코보디즘이 군 사이의 준동형을 유도하고, 그래서 3 차원 불변량과 4 차원 Donaldson 이론이 한 틀에서 만난다.
@@ -86,7 +86,7 @@ $\Sigma$ 를 정수 호몰로지 3 구라 하자. $H_1(\Sigma)=0$ 이므로 아�
 
 > **미분.** $\mathcal M(\alpha,\beta)$ 를 $\mathbb R\times\Sigma$ 위에서 양끝이 $\alpha,\beta$ 로 수렴하는 순간자들의 모듈라이라 하자. $\mu(\alpha,\beta)=1$ 일 때 평행이동으로 나눈 $\mathcal M(\alpha,\beta)$ 는 0 차원 콤팩트이고,
 > $$
-> \partial\alpha=\sum_{\mu(\alpha,\beta)=1}\#\mathcal M(\alpha,\beta)\;\beta
+> \partial\alpha=\sum_{\mu(\alpha,\beta)=1}\char35{}\mathcal M(\alpha,\beta)\thickspace\beta
 > $$
 > 로 둔다. 개수는 방향을 준 부호 합이다.
 
@@ -107,7 +107,7 @@ $\mathbb Z/8$ 등급에서 $(-1)^i$ 가 잘 정의되는 것은 8 이 짝수이�
 가장 익숙한 예가 Poincaré 구면 $\Sigma(2,3,5)$ 다. 기본군이 위수 120 의 이진 정이십면체군이고, 그 안의 기약 2 차원 표현이 정확히 둘이다. 그러므로 사슬군이 $\mathbb Z^2$ 이고 등급 차이가 홀수라 미분이 0 이 될 수밖에 없어
 
 $$
-HF_i\big(\Sigma(2,3,5)\big)=\begin{cases}\mathbb Z,& i=1,5\\0&\text{그 밖}\end{cases}
+HF_i\big(\Sigma(2,3,5)\big)=\begin{cases}\mathbb Z,& i=1,5\cr 0&\text{그 밖}\end{cases}
 \qquad\chi=-2=2\cdot(-1)
 $$
 

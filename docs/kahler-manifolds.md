@@ -92,7 +92,7 @@ $d\omega=0$ 이면 Kähler 다양체라 한다. 동치인 조건이 여럿 있�
 ## Dolbeault 코호몰로지와 Hodge 수
 
 $$
-H^{p,q}_{\bar\partial}(M)=\frac{\ker\bar\partial|_{\Omega^{p,q}}}{\mathrm{im}\,\bar\partial|_{\Omega^{p,q-1}}},\qquad h^{p,q}=\dim_{\mathbb C}H^{p,q}
+H^{p,q}_{\bar\partial}(M)=\frac{\ker\bar\partial|_{\Omega^{p,q}}}{\mathrm{im}\thinspace\bar\partial|_{\Omega^{p,q-1}}},\qquad h^{p,q}=\dim_{\mathbb C}H^{p,q}
 $$
 
 $h^{p,q}$ 를 격자 모양으로 배열한 것이 Hodge 다이아몬드다.

@@ -38,7 +38,7 @@ $$
 표준 예는 실수 n짝의 점곱, 복소 n짝의 켤레 점곱, 구간에서 제곱적분 가능한 함수들의 적분 내적이다.
 
 $$
-\langle f,g\rangle=\int_a^b f(x)\overline{g(x)}\,dx
+\langle f,g\rangle=\int_a^b f(x)\overline{g(x)}\thinspace dx
 $$
 
 # 성질
@@ -48,7 +48,7 @@ $$
 임의의 u, v에 대해 다음이 성립하고, 등호는 u와 v가 선형종속일 때만 성립한다[^1].
 
 $$
-|\langle u,v\rangle|\le \lVert u\rVert\,\lVert v\rVert
+|\langle u,v\rangle|\le \lVert u\rVert\thinspace\lVert v\rVert
 $$
 
 증명: v가 0이면 자명하다. v가 0이 아니면 u에서 v 방향 성분을 뺀 벡터의 노름 제곱이 음이 아니라는 사실을 쓴다.
@@ -118,7 +118,7 @@ $$
 $A$ 의 열이 span하는 부분공간으로 $b$ 를 정사영하면 과결정 연립방정식의 최소제곱해를 얻고, 직교조건 $A^{\mathsf T}(b-Ax)=0$ 이 정규방정식이 된다.
 
 $$
-A^{\mathsf T}A\,x=A^{\mathsf T}b
+A^{\mathsf T}A\thinspace x=A^{\mathsf T}b
 $$
 
 열이 독립이면 $A^{\mathsf T}A$ 가 가역이라 해가 유일하고, 그렇지 않으면 [특이값 분해](singular-value-decomposition.md)로 최소노름해를 고른다. 이 문제의 목적함수는 볼록이므로 [볼록성](convexity.md) 이론의 전형적인 예이기도 하다.

@@ -39,7 +39,7 @@ $$
 문제가 볼록이라는 것은 $f$ 와 모든 $g_i$ 가 [볼록](convexity.md)이고 $h_j$ 가 affine이라는 뜻이다. Slater 조건은 강실행가능점이 존재한다는 조건이다. 즉 어떤 $x$ 가 있어 affine이 아닌 모든 부등식 제약을 강한 부등호로 만족한다.
 
 $$
-\exists\, \tilde{x}:\quad g_i(\tilde{x})<0\ (\forall i),\quad h_j(\tilde{x})=0\ (\forall j)
+\exists\thinspace \tilde{x}:\quad g_i(\tilde{x})<0\ (\forall i),\quad h_j(\tilde{x})=0\ (\forall j)
 $$
 
 # 성질
@@ -94,7 +94,7 @@ $$
 Lagrangian은 다음과 같다.
 
 $$
-L(x,\lambda)=x_1^2+x_2^2+\lambda\,(2-x_1-x_2)
+L(x,\lambda)=x_1^2+x_2^2+\lambda\thinspace(2-x_1-x_2)
 $$
 
 stationarity에서 $2x_1=\lambda$ , $2x_2=\lambda$ 이므로 $x=(\lambda/2,\lambda/2)$ 를 대입하면 dual function을 얻는다.

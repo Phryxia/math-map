@@ -7,7 +7,7 @@
 Langlands 강령은 이 벽을 정면으로 넘는다. 켤레류에서 수를 뽑는 표준적인 방법은 [표현의 지표](group-representations.md)를 취하는 것이므로, Galois 군의 표현 $\rho\colon\mathrm{Gal}(\bar K/K)\to\mathrm{GL}_n$ 을 대상으로 삼는다. 그리고 각 $\rho$ 에 전혀 다른 세계의 대상, 곧 $\mathrm{GL}_n(\mathbb A_K)$ 위의 자기동형 표현 $\pi$ 가 대응한다고 예측한다.
 
 $$
-\rho \;\longleftrightarrow\; \pi,\qquad L(s,\rho)=L(s,\pi)
+\rho \thickspace\longleftrightarrow\thickspace \pi,\qquad L(s,\rho)=L(s,\pi)
 $$
 
 $n=1$ 이 유체론이다. $n=2$ 이고 $K=\mathbb Q$ 인 경우의 자기동형 쪽 대상은 [모듈러 형식](modular-forms.md)이고, 그 안의 한 조각이 모듈러성 정리다. 유리수체 위의 모든 [타원곡선](elliptic-curves.md)이 모듈러 형식에서 온다는 그 정리가 Fermat 마지막 정리의 증명을 완성했다. 강령 전체는 여전히 열려 있고, 정수론에서 가장 큰 조직 원리로 받아들여진다.
@@ -23,7 +23,7 @@ $n=1$ 이 유체론이다. $n=2$ 이고 $K=\mathbb Q$ 인 경우의 자기동형
 표현 $\rho$ 를 하나 고정하면 소수마다 행렬 $\rho(\mathrm{Frob}_{\mathfrak p})$ 가 켤레를 빼고 정해지고, 그 특성다항식은 완전히 정해진다. 이 데이터를 Euler 곱으로 묶은 것이 Artin $L$ 함수다.
 
 $$
-L(s,\rho)=\prod_{\mathfrak p}\det\big(1-\rho(\mathrm{Frob}_{\mathfrak p})\,N\mathfrak p^{-s}\big)^{-1}
+L(s,\rho)=\prod_{\mathfrak p}\det\big(1-\rho(\mathrm{Frob}_{\mathfrak p})\thinspace N\mathfrak p^{-s}\big)^{-1}
 $$
 
 $n=1$ 이면 이것이 Hecke $L$ 함수이고, $K=\mathbb Q$ 로 내려오면 [Dirichlet L 함수](dirichlet-l-functions.md)다. Galois 쪽에서 만들 수 있는 것은 여기까지다.
@@ -87,7 +87,7 @@ $$
 모든 자기동형 표현은 국소 표현의 제한 텐서곱 $\pi=\bigotimes'\_v\pi_v$ 로 분해되고, 거의 모든 $v$ 에서 $\pi_v$ 가 불분기라 $n$ 개의 복소수 **[Satake 매개변수](satake-isomorphism.md)** $\alpha_{1,v},\dots,\alpha_{n,v}$ 로 결정된다. $L$ 함수는 이들로 만든다.
 
 $$
-L(s,\pi)=\prod_v\prod_{i=1}^n\big(1-\alpha_{i,v}\,q_v^{-s}\big)^{-1}
+L(s,\pi)=\prod_v\prod_{i=1}^n\big(1-\alpha_{i,v}\thinspace q_v^{-s}\big)^{-1}
 $$
 
 $n=1$ 일 때 $\mathrm{GL}_1(\mathbb A_K)/K^\times$ 가 곧 이델류군이므로 자기동형 표현은 Hecke 지표이고, 유체론이 정확히 Galois 쪽과의 대응을 준다. **유체론은 $\mathrm{GL}_1$ Langlands 다.**
@@ -129,7 +129,7 @@ $L(s,\pi)$ 쪽의 해석적 성질은 자기동형 표현론에서 증명되어 
 $K=\mathbb Q$ 이고 $n=2$ 인 자기동형 표현은 고전적인 모듈러 형식으로 번역된다. 무게 $k$ 와 레벨 $N$ 의 첨점형식은 상반평면 위의 정칙함수 $f$ 로
 
 $$
-f\Big(\frac{az+b}{cz+d}\Big)=(cz+d)^kf(z)\quad\Big(\begin{smallmatrix}a&b\\c&d\end{smallmatrix}\Big)\in\Gamma_0(N)
+f\Big(\frac{az+b}{cz+d}\Big)=(cz+d)^kf(z)\quad\Big(\begin{smallmatrix}a&b\cr c&d\end{smallmatrix}\Big)\in\Gamma_0(N)
 $$
 
 를 만족하고 첨점에서 0 이 되는 것이다. Hecke 작용소의 동시 고유벡터를 잡고 $q=e^{2\pi iz}$ 전개 $f=\sum a_nq^n$ 을 $a_1=1$ 로 정규화하면, 고유값이 곧 $a_p$ 이고
@@ -168,7 +168,7 @@ Frey 곡선의 판별식이 $(abc)^{2p}$ 라 도체가 극도로 작아지고, R
 모듈러성은 $a_p$ 의 값을 하나씩 말해 주지만 분포는 말해 주지 않는다. Hasse 정리가 $|a_p|\le2\sqrt p$ 를 주므로 $a_p=2\sqrt p\cos\theta_p$ 로 쓸 수 있고, 복소곱셈이 없는 $E$ 에서 $\theta_p$ 가 어떻게 퍼지는지를 묻는 것이 Sato–Tate 추측이다.
 
 $$
-\mu_{ST}=\frac2\pi\sin^2\theta\,d\theta,\qquad \theta\in[0,\pi]
+\mu_{ST}=\frac2\pi\sin^2\theta\thinspace d\theta,\qquad \theta\in[0,\pi]
 $$
 
 증명의 구조가 강령의 위력을 그대로 보여준다. $\mathrm{Sym}^k$ 함자성으로 $\mathrm{Sym}^k\pi_E$ 가 자기동형임을 보이면 그 $L$ 함수가 $\mathrm{Re}(s)=1$ 에서 0 이 되지 않고, 그러면 표준적인 Tauber 논증이 분포를 준다. 2011 년에 모든 $k$ 에 대해 필요한 자기동형성이 증명되면서 추측이 정리가 되었다.

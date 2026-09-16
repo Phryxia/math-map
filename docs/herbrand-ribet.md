@@ -15,7 +15,7 @@ $$
 착상은 이렇다. 무게 $k$ 의 Eisenstein 급수 $E_k$ 의 상수항은 $-B_k/2k$ 다. $p\mid B_k$ 이면 그 상수항이 $p$ 를 법으로 사라지고, $E_k$ 가 첨점형식처럼 보이기 시작한다. 실제로 $E_k$ 와 합동인 첨점형식 $f$ 가 존재하고, $f$ 에 붙는 [Galois 표현](galois-representations.md) $\rho_f$ 를 $\bmod p$ 로 줄이면
 
 $$
-\bar\rho_f\sim\begin{pmatrix}1&*\\0&\omega^{k-1}\end{pmatrix}
+\bar\rho_f\sim\begin{pmatrix}1&*\cr 0&\omega^{k-1}\end{pmatrix}
 $$
 
 꼴의 **가약이지만 불분해**인 표현이 된다. $\ast$ 가 0 이 아니라는 것이 핵심이고, 그 $\ast$ 가 정의하는 확대가 바로 류군의 비자명한 원소다. 해석적 조건 $p\mid B_k$ 가 기하적 대상(모듈러 형식)을 거쳐 산술적 원소(이데알류)로 번역된다.
@@ -35,7 +35,7 @@ $\theta$ 가 류군을 죽인다는 사실은 "류군이 $\theta$ 의 핵 안에
 무게 $k$ 의 Eisenstein 급수를 정규화하면
 
 $$
-E_k=-\frac{B_k}{2k}+\sum_{n\ge1}\sigma_{k-1}(n)\,q^{n}
+E_k=-\frac{B_k}{2k}+\sum_{n\ge1}\sigma_{k-1}(n)\thinspace q^{n}
 $$
 
 이다. $p\mid B_k$ 이면 상수항이 $p$ 를 법으로 0 이므로, $E_k\bmod p$ 는 $q$ 로 시작하는 급수, 곧 첨점형식의 $q$ 전개처럼 보인다. 무게 $k$ 의 [모듈러 형식](modular-forms.md) 공간에서 Eisenstein 부분과 첨점 부분이 $\mathbb Q$ 위에서는 갈라지지만 $\mathbb Z_p$ 위에서는 $B_k$ 가 분모에 들어 있어 갈라지지 않는다. **분모의 $p$ 가 두 부분을 붙여 놓는다.**
@@ -53,7 +53,7 @@ $$
 $f$ 에 붙는 2 차원 $p$ 진 Galois 표현 $\rho_f$ 는
 
 $$
-\mathrm{tr}\,\rho_f(\mathrm{Fr}_\ell)=a_\ell,\qquad \det\rho_f(\mathrm{Fr}_\ell)=\ell^{k-1}
+\mathrm{tr}\thinspace\rho_f(\mathrm{Fr}_\ell)=a_\ell,\qquad \det\rho_f(\mathrm{Fr}_\ell)=\ell^{k-1}
 $$
 
 를 만족한다. $\bmod\mathfrak p$ 로 줄이면 자취가 $1+\ell^{k-1}$ 이고 행렬식이 $\ell^{k-1}$ 이므로, Brauer–Nesbitt 로 반단순화가 $1\oplus\omega^{k-1}$ 이다. 곧 $\bar\rho_f$ 는 **가약**이다.
@@ -61,7 +61,7 @@ $$
 그러나 $\bar\rho_f$ 자체가 분해되지는 않는다. 분해된다면 $f$ 가 Eisenstein 급수가 되어야 하는데 $f$ 는 첨점형식이다. 그러므로 적당한 기저에서
 
 $$
-\bar\rho_f=\begin{pmatrix}1&*\\0&\omega^{k-1}\end{pmatrix},\qquad *\ne0
+\bar\rho_f=\begin{pmatrix}1&*\cr 0&\omega^{k-1}\end{pmatrix},\qquad *\ne0
 $$
 
 이고, $*$ 는 코사이클 $c\in H^1\big(G_{\mathbb Q},\mathbb F_p(\omega^{k-1})\big)$ 를 정의한다. **비자명한 코호몰로지 류가 생산되었다.** 소멸자 이론에는 없던 "만들어 내는" 단계가 여기서 일어난다.
@@ -95,7 +95,7 @@ $A$ 를 $\mathbb Q(\mu_p)$ 의 이데알류군의 $p$ 부분, $\Delta=\mathrm{Ga
 $$
 A=\bigoplus_{i=0}^{p-2}A^{(\omega^{i})},
 \qquad
-\varepsilon_i=\frac1{p-1}\sum_{\delta\in\Delta}\omega^{i}(\delta)\,\delta^{-1}
+\varepsilon_i=\frac1{p-1}\sum_{\delta\in\Delta}\omega^{i}(\delta)\thinspace\delta^{-1}
 $$
 
 로 완전히 쪼개진다. $\omega$ 는 Teichmüller 지표다. 각 성분을 따로 묻는 것이 이 이론의 기본 문법이다.

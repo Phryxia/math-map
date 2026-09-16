@@ -150,7 +150,7 @@ $\mathcal G_{24}$ 의 자기동형군이 크다는 것은 무게 분포가 극�
 $\mathcal G_{24}$ 에서 24 차원 [격자](lattices.md)를 만드는 방법이 Construction B 다. 대략적으로
 
 $$
-\Lambda=\frac1{\sqrt8}\left\{x\in\mathbb Z^{24}:x\bmod2\in\mathcal G_{24},\ \textstyle\sum x_i\equiv0\ (\mathrm{mod}\ 4)\right\}
+\Lambda=\frac1{\sqrt8}\left\lbrace x\in\mathbb Z^{24}:x\bmod2\in\mathcal G_{24},\ \textstyle\sum x_i\equiv0\ (\mathrm{mod}\ 4)\right\rbrace
 $$
 
 에 보정 벡터를 더한 것이 **Leech 격자**다. Golay 부호의 최소거리 8 이 격자의 최소노름 4 로 번역되고, 노름 2 인 벡터가 없다는 성질이 여기서 나온다. 이 성질이 [theta 급수](theta-functions.md)와 [구 채우기](sphere-packing.md)에서 결정적이었고, [정점작용소대수](vertex-operator-algebras.md) $V^\natural$ 의 구성에서도 같은 자리를 차지한다.

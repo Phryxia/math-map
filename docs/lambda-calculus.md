@@ -25,7 +25,7 @@ lambda 항은 "이름 붙이지 않은 함수"를 적는 표기법이다. $x$ �
 가산 무한개의 변수 집합에서 lambda 항을 귀납적으로 정의한다.
 
 $$
-M, N \;::=\; x \;\mid\; \lambda x.\,M \;\mid\; M\,N
+M, N \thickspace::=\thickspace x \thickspace\mid\thickspace \lambda x.\thinspace M \thickspace\mid\thickspace M\thinspace N
 $$
 
 $x$ 는 변수, $\lambda x.\thinspace M$ 은 추상, $M\thinspace N$ 은 적용이다. 관례적으로 적용은 왼쪽 결합이어서 $M\thinspace N\thinspace P$ 는 $(M\thinspace N)\thinspace P$ 이고, 추상의 몸통은 최대한 오른쪽으로 뻗어서 $\lambda x.\thinspace M\thinspace N$ 은 $\lambda x.\thinspace (M\thinspace N)$ 이다.
@@ -39,7 +39,7 @@ $x$ 는 변수, $\lambda x.\thinspace M$ 은 추상, $M\thinspace N$ 은 적용�
 **$\beta$ -축약.** 계산 규칙이다.
 
 $$
-(\lambda x.\,M)\,N \;\to_\beta\; M[x := N]
+(\lambda x.\thinspace M)\thinspace N \thickspace\to_\beta\thickspace M[x := N]
 $$
 
 여기서 치환은 포획 회피(capture-avoiding)여야 한다. 즉 $N$ 의 자유변수가 $M$ 안의 추상에 붙잡히지 않도록 필요하면 $\alpha$ -변환을 먼저 한다. $(\lambda x.\thinspace M)\thinspace N$ 꼴의 부분항을 redex라 하고, redex가 없는 항을 정규형(normal form)이라 한다.
@@ -47,7 +47,7 @@ $$
 **$\eta$ -변환.** 외연성(extensionality)을 표현한다. $x$ 가 $M$ 에서 자유롭지 않을 때
 
 $$
-\lambda x.\,M\,x \;\to_\eta\; M .
+\lambda x.\thinspace M\thinspace x \thickspace\to_\eta\thickspace M .
 $$
 
 두 함수가 모든 인자에 대해 같은 값을 주면 같다는 원리의 문법적 대응이다.
@@ -59,7 +59,7 @@ $\to^*$ 로 여러 단계 축약을, $=_\beta$ 로 $\beta$ -축약으로 생성�
 자연수 $n$ 을 "함수를 $n$ 번 적용하는 연산자"로 정의한다.
 
 $$
-\underline{n} \;=\; \lambda f.\,\lambda x.\, \underbrace{f\,(f\,(\cdots(f}_{n}\,x)\cdots))
+\underline{n} \thickspace=\thickspace \lambda f.\thinspace\lambda x.\thinspace \underbrace{f\thinspace(f\thinspace(\cdots(f}_{n}\thinspace x)\cdots))
 $$
 
 즉 $\underline 0 = \lambda f.\lambda x.\thinspace x$ 와 $\underline 1 = \lambda f.\lambda x.\thinspace f\thinspace x$ 와 $\underline 2 = \lambda f.\lambda x.\thinspace f\thinspace(f\thinspace x)$ 다. 산술 연산은 다음과 같다.
@@ -78,7 +78,7 @@ $$
 **성질.** 임의의 $g$ 에 대해
 
 $$
-Y\,g \;\to_\beta\; (\lambda x.\, g\,(x\,x))\,(\lambda x.\, g\,(x\,x)) \;\to_\beta\; g\,\big((\lambda x.\, g\,(x\,x))\,(\lambda x.\, g\,(x\,x))\big)
+Y\thinspace g \thickspace\to_\beta\thickspace (\lambda x.\thinspace g\thinspace(x\thinspace x))\thinspace(\lambda x.\thinspace g\thinspace(x\thinspace x)) \thickspace\to_\beta\thickspace g\thinspace\big((\lambda x.\thinspace g\thinspace(x\thinspace x))\thinspace(\lambda x.\thinspace g\thinspace(x\thinspace x))\big)
 $$
 
 이고 마지막 항은 $g\thinspace(Y\thinspace g)$ 와 같은 항이다. 따라서 $Y\thinspace g =_\beta g\thinspace(Y\thinspace g)$ 이며, $Y\thinspace g$ 는 $g$ 의 고정점이다.
@@ -86,7 +86,7 @@ $$
 재귀 함수는 "자기 자신을 인자로 받는" 함수의 고정점으로 얻는다. 계승을 예로 들면
 
 $$
-F = \lambda r.\,\lambda n.\ \mathrm{ifelse}\ (\mathrm{iszero}\ n)\ \underline{1}\ (\mathrm{mult}\ n\ (r\ (\mathrm{pred}\ n)))
+F = \lambda r.\thinspace\lambda n.\ \mathrm{ifelse}\ (\mathrm{iszero}\ n)\ \underline{1}\ (\mathrm{mult}\ n\ (r\ (\mathrm{pred}\ n)))
 $$
 
 에 대해 $\mathrm{fact} = Y\thinspace F$ 다. 값 호출(call-by-value) 언어에서는 $Y$ 가 발산하므로 한 단계 지연을 넣은 $Z = \lambda f.\thinspace (\lambda x.\thinspace f\thinspace(\lambda v.\thinspace x\thinspace x\thinspace v))\thinspace(\lambda x.\thinspace f\thinspace(\lambda v.\thinspace x\thinspace x\thinspace v))$ 를 쓴다.

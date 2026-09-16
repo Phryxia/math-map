@@ -7,7 +7,7 @@
 Khovanov 가 1999 년에 한 일이 정확히 이것이다. 각 상태에 수 대신 벡터공간을 놓고, 상태 사이의 이음 변경마다 그 벡터공간들 사이의 사상을 놓아 사슬 복합체를 만든다. 그 복합체의 [호몰로지](homology.md) $Kh^{i,j}(K)$ 는 도식에 의존하지 않는 매듭 불변량이고, 이중 등급을 부호와 무게로 환산한 Euler 지표가 정확히 Jones 다항식이다.
 
 $$
-\sum_{i,j}(-1)^i q^{\,j}\dim Kh^{i,j}(K)=(q+q^{-1})\,V(K)(q^2)
+\sum_{i,j}(-1)^i q^{\thinspace j}\dim Kh^{i,j}(K)=(q+q^{-1})\thinspace V(K)(q^2)
 $$
 
 이렇게 수 불변량을 호몰로지로 들어 올리는 것을 **범주화**(categorification)라 한다. 얻는 것이 둘 있다. 첫째, $Kh$ 는 Jones 보다 진짜로 강하다. Euler 지표를 취하면 사라지는 정보 — 대표적으로 꼬임 부분군 — 이 남고, Jones 다항식이 같은 두 매듭을 $Kh$ 가 구별하는 예가 있다. 둘째, 복합체는 수와 달리 **사상을 받는다**. 매듭 사이의 매끄러운 곡면이 $Kh$ 사이의 준동형을 유도하고, 이 함자성에서 4 차원 위상의 정보가 나온다. Rasmussen 의 $s$ 불변량으로 Milnor 추측이 조합적으로 증명된 것이 그 첫 수확이다.
@@ -72,15 +72,15 @@ $$
 방향을 준 도식 $D$ 의 교차점이 $n$ 개이고 양교차가 $n_+$ 개, 음교차가 $n_-$ 개라 하자. $\alpha\in\lbrace 0,1\rbrace^n$ 마다 그 이음으로 얻은 원들의 모임 $D_\alpha$ 가 있고 원의 개수를 $k_\alpha$ 라 한다. $r=|\alpha|$ 로 두고
 
 $$
-V_\alpha=A^{\otimes k_\alpha}\{\,r+n_+-2n_-\,\},\qquad
-C^{\,r-n_-}(D)=\bigoplus_{|\alpha|=r}V_\alpha
+V_\alpha=A^{\otimes k_\alpha}\lbrace\thinspace r+n_+-2n_-\thinspace\rbrace,\qquad
+C^{\thinspace r-n_-}(D)=\bigoplus_{|\alpha|=r}V_\alpha
 $$
 
 미분은 모서리별 사상의 부호합이다.
 
 $$
-d=\sum_{\alpha\to\beta}(-1)^{\alpha_1+\cdots+\alpha_{i-1}}\,d_{\alpha\to\beta},
-\qquad d_{\alpha\to\beta}\in\{m,\Delta\}\otimes\mathrm{id}
+d=\sum_{\alpha\to\beta}(-1)^{\alpha_1+\cdots+\alpha_{i-1}}\thinspace d_{\alpha\to\beta},
+\qquad d_{\alpha\to\beta}\in\lbrace m,\Delta\rbrace\otimes\mathrm{id}
 $$
 
 $m,\Delta$ 가 등급을 $-1$ 만큼 내리고 $r$ 이 $1$ 늘어 등급 이동이 $+1$ 이므로 $d$ 는 $q$ 등급을 보존한다. 따라서 복합체는 $q$ 등급마다 따로 갈라지고, 호몰로지는 이중 등급을 갖는다.
@@ -96,7 +96,7 @@ $n_+,n_-$ 로 준 이동이 하는 일이 Jones 다항식의 비틀림수 보정
 ## 정규화한 Jones 다항식과의 관계
 
 $$
-\hat J(K)(q)=\sum_{i,j}(-1)^i q^{\,j}\dim_{\mathbb Q} Kh^{i,j}(K;\mathbb Q)=(q+q^{-1})\,V(K)(q^2)
+\hat J(K)(q)=\sum_{i,j}(-1)^i q^{\thinspace j}\dim_{\mathbb Q} Kh^{i,j}(K;\mathbb Q)=(q+q^{-1})\thinspace V(K)(q^2)
 $$
 
 풀린 매듭에서는 $Kh^{0,-1}=Kh^{0,1}=\mathbb Z$ 이고 나머지는 $0$ 이므로 $\hat J=q+q^{-1}$ 이다.

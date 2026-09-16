@@ -22,14 +22,14 @@ $$
 국소체 $K$ 에는 부치 $v$ 와 잔여체 $k=\mathcal O/\mathfrak m\cong\mathbb F_q$ 가 있다. 확대 $L/K$ 를 볼 때 두 가지 일만 일어날 수 있다. 잔여체가 커지거나(비분기), 소원이 잘게 쪼개지거나(분기)다. 이 이분법이 곱군의 분해에 그대로 나타난다.
 
 $$
-K^\times\;\cong\;\pi^{\mathbb Z}\times\mathcal O^\times
+K^\times\thickspace\cong\thickspace\pi^{\mathbb Z}\times\mathcal O^\times
 $$
 
 소원 $\pi$ 가 생성하는 무한순환군과 단원군이다. 국소 유체론의 핵심은 이 분해가 Galois 쪽의 분해와 정확히 맞물린다는 것이다. $\pi$ 는 Frobenius 로 가고 $\mathcal O^\times$ 는 관성군으로 간다.
 
 $$
 \begin{array}{ccc}
-\pi^{\mathbb Z} & \longrightarrow & \mathrm{Gal}(K^{\mathrm{ur}}/K)\cong\hat{\mathbb Z}\\
+\pi^{\mathbb Z} & \longrightarrow & \mathrm{Gal}(K^{\mathrm{ur}}/K)\cong\hat{\mathbb Z}\cr
 \mathcal O^\times & \longrightarrow & I_K^{\mathrm{ab}}=\mathrm{Gal}(K^{\mathrm{ab}}/K^{\mathrm{ur}})
 \end{array}
 $$
@@ -84,7 +84,7 @@ graph TD
 각 $n$ 에 대해 차수 $n$ 의 **비분기 확대**가 유일하게 존재한다. $k$ 의 차수 $n$ 확대 $\mathbb F_{q^n}$ 을 올린 것이고, 그 Galois 군이 잔여체의 Galois 군과 같다.
 
 $$
-\mathrm{Gal}(K_n^{\mathrm{ur}}/K)\;\xrightarrow{\ \sim\ }\;\mathrm{Gal}(\mathbb F_{q^n}/\mathbb F_q)=\langle\mathrm{Frob}\rangle\cong\mathbb Z/n,
+\mathrm{Gal}(K_n^{\mathrm{ur}}/K)\thickspace\xrightarrow{\ \sim\ }\thickspace\mathrm{Gal}(\mathbb F_{q^n}/\mathbb F_q)=\langle\mathrm{Frob}\rangle\cong\mathbb Z/n,
 \qquad
 \mathrm{Gal}(K^{\mathrm{ur}}/K)\cong\hat{\mathbb Z}
 $$
@@ -103,7 +103,7 @@ $$
 $\mathrm{Art}_K$ 자체는 동형이 아니다. $K^\times$ 의 부치 부분이 $\mathbb Z$ 인데 Galois 쪽은 $\hat{\mathbb Z}$ 라 상이 조밀하기만 하다. 노름군에 대한 완비화를 취하면 동형이 된다.
 
 $$
-\widehat{K^\times}=\varprojlim_{L}K^\times/N_{L/K}L^\times\;\cong\;\hat{\mathbb Z}\times\mathcal O^\times\;\cong\;\mathrm{Gal}(K^{\mathrm{ab}}/K)
+\widehat{K^\times}=\varprojlim_{L}K^\times/N_{L/K}L^\times\thickspace\cong\thickspace\hat{\mathbb Z}\times\mathcal O^\times\thickspace\cong\thickspace\mathrm{Gal}(K^{\mathrm{ab}}/K)
 $$
 
 **존재정리**는 이 대응의 반대 방향이다. $K^\times$ 의 유한지표 열린 부분군과 $K$ 의 유한 아벨 확대가 일대일로 대응하며, 대응은 포함관계를 뒤집고 교차와 합성을 보존한다.
@@ -131,7 +131,7 @@ $\mathcal F_\pi$ 를 위 두 조건 $f\equiv\pi X\ (\deg2)$ 와 $f\equiv X^q\ (\
 **분할점**은 $[\pi^n]$ 의 핵이다.
 
 $$
-\Lambda_n=\{x\in\mathfrak m_{\bar K}:[\pi^n]_f(x)=0\},\qquad
+\Lambda_n=\lbrace x\in\mathfrak m_{\bar K}:[\pi^n]_f(x)=0\rbrace,\qquad
 \Lambda_n\cong\mathcal O/\pi^n\ (\mathcal O\text{-가군으로})
 $$
 

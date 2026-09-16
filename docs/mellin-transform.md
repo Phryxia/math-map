@@ -3,9 +3,9 @@
 # 개요
 
 $$
-\tilde f(s)=\int_0^{\infty}f(x)\,x^{s-1}dx,
+\tilde f(s)=\int_0^{\infty}f(x)\thinspace x^{s-1}dx,
 \qquad
-f(x)=\frac1{2\pi i}\int_{c-i\infty}^{c+i\infty}\tilde f(s)\,x^{-s}\,ds
+f(x)=\frac1{2\pi i}\int_{c-i\infty}^{c+i\infty}\tilde f(s)\thinspace x^{-s}\thinspace ds
 $$
 
 $x=e^{u}$ 로 바꾸면 이것은 그냥 Fourier 변환이다. 다른 점은 **덧셈군 $\mathbb R$ 대신 곱셈군 $(0,\infty)$ 위에서 한다**는 것뿐이고, 그 차이가 쓸모의 전부를 만든다. 곱셈이 자연스러운 대상—$n^{-s}$ 꼴의 항, 스케일이 $2$ 배씩 늘어나는 합, $x\to0$ 과 $x\to\infty$ 에서 거듭제곱으로 행동하는 함수—을 다룰 때 Mellin 변환은 계산을 **극점 찾기로 바꿔 준다**.
@@ -19,7 +19,7 @@ $x=e^{u}$ 로 바꾸면 이것은 그냥 Fourier 변환이다. 다른 점은 **�
 수론 쪽 판본이 Perron 공식이다. Dirichlet 급수 $D(s)=\sum a_nn^{-s}$ 에 대해
 
 $$
-\sum_{n\le x}a_n=\frac1{2\pi i}\int_{c-i\infty}^{c+i\infty}D(s)\,\frac{x^{s}}{s}\,ds
+\sum_{n\le x}a_n=\frac1{2\pi i}\int_{c-i\infty}^{c+i\infty}D(s)\thinspace\frac{x^{s}}{s}\thinspace ds
 $$
 
 이고, 여기서 윤곽을 왼쪽으로 밀면 $D$ 의 극점이 계수합의 주도항을 준다. [소수 정리](prime-number-theorem.md)의 증명이 바로 이 절차이며, $\zeta$ 의 $s=1$ 극점이 $\psi(x)\sim x$ 를 낳는다.
@@ -31,7 +31,7 @@ $$
 $x=e^{u}$ 와 $s=c+it$ 로 두면
 
 $$
-\tilde f(c+it)=\int_{-\infty}^{\infty}f(e^{u})e^{cu}\,e^{itu}\,du
+\tilde f(c+it)=\int_{-\infty}^{\infty}f(e^{u})e^{cu}\thinspace e^{itu}\thinspace du
 $$
 
 이므로 $\tilde f$ 는 $f(e^{u})e^{cu}$ 의 Fourier 변환이다. 그러므로 Mellin 변환에 대한 모든 정리는 Fourier 이론의 번역이고, [Poisson 합](poisson-summation.md)이 덧셈격자 $\mathbb Z$ 에 대해 했던 일을 Mellin 은 곱셈적 스케일에 대해 한다. **어떤 대칭을 쓰느냐의 차이일 뿐**이다.
@@ -47,7 +47,7 @@ $x\to0$ 에서 $f(x)\sim\sum_k c_kx^{\alpha_k}$ 이면 $\tilde f$ 는 $s=-\alpha
 $$
 \tilde f\ \text{의}\ s=s_0\ \text{에서의 단순극점, 유수}\ r
 \ \longleftrightarrow\
-f(x)\ \text{에}\ r\,x^{-s_0}\ \text{항}
+f(x)\ \text{에}\ r\thinspace x^{-s_0}\ \text{항}
 $$
 
 2 차 극점이면 $x^{-s_0}\log(1/x)$ 가 나오고, 허축 위의 극점이면 $x^{-it}=e^{-it\log x}$ 라 **$\log x$ 에 대한 진동항**이 나온다. 마지막 경우가 알고리즘 분석에서 흔히 보이는 작은 주기 변동의 정체다.
@@ -56,7 +56,7 @@ $$
 
 $$
 \frac1{2\pi i}\int_{c-i\infty}^{c+i\infty}\frac{y^{s}}{s}ds=
-\begin{cases}1,&y>1\\ \tfrac12,&y=1\\ 0,&0<y<1\end{cases}
+\begin{cases}1,&y>1\cr \tfrac12,&y=1\cr 0,&0<y<1\end{cases}
 $$
 
 이 적분이 $n\le x$ 라는 조건을 해석적으로 표현한다. $y=x/n$ 을 넣고 $n$ 에 대해 더하면 Perron 공식이 된다. **셈의 조건을 윤곽적분으로 바꾸는 것**이 요점이고, 그 순간 조합적 문제가 복소해석 문제가 된다.
@@ -94,7 +94,7 @@ $$
 ## 조화합
 
 $$
-F(x)=\sum_k\lambda_k\,f(\mu_kx)
+F(x)=\sum_k\lambda_k\thinspace f(\mu_kx)
 \quad\Longrightarrow\quad
 \tilde F(s)=\Big(\sum_k\lambda_k\mu_k^{-s}\Big)\tilde f(s)
 $$
@@ -106,7 +106,7 @@ $$
 $D(s)=\sum a_nn^{-s}$ 가 $\operatorname{Re}s>\sigma_a$ 에서 절대수렴하고 $c>\sigma_a$ 면
 
 $$
-{\sum_{n\le x}}'\,a_n=\frac1{2\pi i}\int_{(c)}D(s)\frac{x^{s}}{s}ds
+{\sum_{n\le x}}'\thinspace a_n=\frac1{2\pi i}\int_{(c)}D(s)\frac{x^{s}}{s}ds
 $$
 
 (프라임은 $n=x$ 항을 절반만 센다는 뜻이다.) 실제 계산에서는 적분을 $|t|\le T$ 로 자른 유효판을 쓰고, 잘라낸 꼬리를 명시적 오차항으로 평가한다.
@@ -118,7 +118,7 @@ $$
 $\tilde f$ 가 띠 바깥으로 유리형으로 이어지고 수직선 위에서 충분히 빨리 감쇠하면, 윤곽을 왼쪽으로 $\operatorname{Re}s=d$ 까지 밀어
 
 $$
-f(x)=\sum_{d<\operatorname{Re}s_0<c}\operatorname*{Res}_{s=s_0}\big(\tilde f(s)x^{-s}\big)+O\!\left(x^{-d}\right)
+f(x)=\sum_{d<\operatorname{Re}s_0<c}\operatorname*{Res}_{s=s_0}\big(\tilde f(s)x^{-s}\big)+O\negthinspace\left(x^{-d}\right)
 $$
 
 를 얻는다. **점근전개를 얻는 작업이 유수 계산으로 완전히 기계화된다**. 차수 $m$ 의 극점에서 나오는 항은 $x^{-s_0}$ 곱하기 $\log x$ 의 $m-1$ 차 다항식이다.
@@ -126,7 +126,7 @@ $$
 ## 곱셈 정리
 
 $$
-\int_0^{\infty}f(x)g(x)\frac{dx}x=\frac1{2\pi i}\int_{(c)}\tilde f(s)\,\tilde g(1-s)\,ds
+\int_0^{\infty}f(x)g(x)\frac{dx}x=\frac1{2\pi i}\int_{(c)}\tilde f(s)\thinspace\tilde g(1-s)\thinspace ds
 $$
 
 Fourier 의 Parseval 등식에 해당한다. $dx/x$ 가 곱셈군의 Haar 측도이므로 이 꼴이 자연스럽다. 수론에서 $\zeta$ 의 적률을 다룰 때 표준 도구다.
@@ -143,14 +143,14 @@ $$
 
 $$
 S(x)=\frac{\log(1/x)}{\log2}+\frac12-\frac{\gamma}{\log2}
-+\sum_{n\ge1}\frac{(-1)^{n}}{n!\,(1-2^{n})}x^{n}
++\sum_{n\ge1}\frac{(-1)^{n}}{n!\thinspace(1-2^{n})}x^{n}
 +\frac1{\log2}\sum_{k\ne0}\Gamma(\chi_k)x^{-\chi_k}
 $$
 
 마지막 합이 $\log_2x$ 에 대해 주기 1 로 진동하는 항이고, 진폭이
 
 $$
-\frac2{\log2}\left|\Gamma\!\left(\frac{2\pi i}{\log2}\right)\right|=\frac{2}{\log 2}\sqrt{\frac{\pi}{y\sinh\pi y}}\Big|_{y=2\pi/\log2}=1.573\times10^{-6}
+\frac2{\log2}\left|\Gamma\negthinspace\left(\frac{2\pi i}{\log2}\right)\right|=\frac{2}{\log 2}\sqrt{\frac{\pi}{y\sinh\pi y}}\Big|_{y=2\pi/\log2}=1.573\times10^{-6}
 $$
 
 로 아주 작다. **평균적으로는 $\log_2(1/x)$ 인데 백만 분의 일 수준의 주기 떨림이 얹혀 있다**는 결론이다.

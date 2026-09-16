@@ -50,7 +50,7 @@ $$
 경계 연산자는 꼭짓점을 하나씩 뺀 면들의 교대합으로 정의되고, 기저 위의 정의를 선형으로 확장한다[^1].
 
 $$
-\partial_n[v_0,\dots,v_n]=\sum_{i=0}^{n}(-1)^{i}\,[v_0,\dots,\widehat{v_i},\dots,v_n]
+\partial_n[v_0,\dots,v_n]=\sum_{i=0}^{n}(-1)^{i}\thinspace[v_0,\dots,\widehat{v_i},\dots,v_n]
 $$
 
 여기서 모자 표시는 그 꼭짓점을 제거했다는 뜻이다. 핵심 항등식은 다음이다.

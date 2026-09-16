@@ -7,7 +7,7 @@
 **질량 공식**은 개수 대신 **가중 개수**를 세면 닫힌 식이 나온다고 말한다.
 
 $$
-\operatorname{mass}(\mathrm{gen}\,L)=\sum_{[L']\in\mathrm{gen}\,L}\frac1{|\operatorname{Aut}L'|}
+\operatorname{mass}(\mathrm{gen}\thinspace L)=\sum_{[L']\in\mathrm{gen}\thinspace L}\frac1{|\operatorname{Aut}L'|}
 $$
 
 이 합은 격자를 하나도 모른 채, 국소 데이터만으로 계산된다. Minkowski 가 낮은 차원에서 발견하고 Siegel 이 일반 차원에서 증명했다.
@@ -72,7 +72,7 @@ $V$ 를 $\mathbb Q$ 위의 $n$ 차원 이차공간, $L\subset V$ 를 그 위의 
 ## 질량
 
 $$
-\operatorname{mass}(\mathrm{gen}\,L)=\sum_{i=1}^{h}\frac1{|\operatorname{Aut}L_i|},
+\operatorname{mass}(\mathrm{gen}\thinspace L)=\sum_{i=1}^{h}\frac1{|\operatorname{Aut}L_i|},
 \qquad L_1,\dots,L_h\ \text{는 류의 동치류 대표}
 $$
 
@@ -83,8 +83,8 @@ $\operatorname{Aut}L=\lbrace\sigma\in O(V):\sigma(L)=L\rbrace$ 이고 정부호�
 질량은 표준 인자와 국소 인자의 곱으로 쪼개진다.
 
 $$
-\operatorname{mass}(\mathrm{gen}\,L)
-=2\,\pi^{-n(n+1)/4}\prod_{j=1}^{n}\Gamma\!\left(\frac j2\right)\cdot\prod_{p}\frac{2}{\alpha_p(L)}
+\operatorname{mass}(\mathrm{gen}\thinspace L)
+=2\thinspace\pi^{-n(n+1)/4}\prod_{j=1}^{n}\Gamma\negthinspace\left(\frac j2\right)\cdot\prod_{p}\frac{2}{\alpha_p(L)}
 $$
 
 여기서 $\alpha_p(L)$ 는 $L$ 이 자기 자신을 $\mathbb Z_p$ 위에서 표현하는 국소 밀도다. 앞의 상수 2 가 $\mathrm{SO}_n$ 의 Tamagawa 수이고, 거의 모든 $p$ 에서 $\alpha_p$ 가 1 에 가까워 곱이 수렴한다. Conway 와 Sloane 이 $\alpha_p$ 를 Jordan 분해로부터 직접 읽는 절차를 정리했다.
@@ -104,7 +104,7 @@ $|B_{2j}|/(4j)$ 를 $\zeta(2j)\cdot(2j-1)!/(2\pi)^{2j}\cdot 2$ 로 바꿔 쓰면
 모든 격자는 $-\mathrm{id}$ 를 자기동형으로 가지므로 $|\operatorname{Aut}L|\ge2$ 다. 따라서
 
 $$
-h\ \ge\ 2\operatorname{mass}(\mathrm{gen}\,L)
+h\ \ge\ 2\operatorname{mass}(\mathrm{gen}\thinspace L)
 $$
 
 이고, 질량이 크면 류에 격자가 많다는 것이 **분류를 시도하기 전에** 확정된다. 반대 방향의 상한은 없다. 자기동형군이 큰 격자 몇 개가 질량을 다 가져갈 수 있기 때문이다. $n=8$ 이 그런 극단으로, 격자가 $E_8$ 하나뿐인데 그 자기동형군이 위수 $696729600$ 의 Weyl 군이라 질량이 $10^{-9}$ 자리다.

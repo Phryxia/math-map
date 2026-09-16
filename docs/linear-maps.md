@@ -33,7 +33,7 @@ $$
 $V$ 와 $W$ 를 같은 체 위의 벡터 공간이라 하고, $T : V \to W$ 를 위 조건을 만족하는 함수라 하자.
 
 $$
-\ker T=\{v\in V:T(v)=0_W\},\qquad \operatorname{im}T=\{T(v):v\in V\}
+\ker T=\lbrace v\in V:T(v)=0_W\rbrace,\qquad \operatorname{im}T=\lbrace T(v):v\in V\rbrace
 $$
 
 핵은 $V$ 의 부분공간, 상은 $W$ 의 부분공간이다. 선형사상은 영벡터를 영벡터로 보내므로, 원점을 다른 점으로 옮기는 평행이동은 선형사상이 아니다. 평행이동까지 허용하려면 아핀 사상이라는 다른 이름을 쓴다.

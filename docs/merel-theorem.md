@@ -51,7 +51,7 @@ flowchart TD
 ## 일양 유계성
 
 $$
-B(d)=\sup\big\{|E(K)_{\mathrm{tors}}|\ :\ [K:\mathbb Q]=d,\ E/K\ \text{타원곡선}\big\}
+B(d)=\sup\big\lbrace|E(K)_{\mathrm{tors}}|\ :\ [K:\mathbb Q]=d,\ E/K\ \text{타원곡선}\big\rbrace
 $$
 
 Merel 의 정리는 $B(d)<\infty$ 라는 진술이다. 동치로, 어떤 차수 $d$ 체 위의 타원곡선이 위수 $p$ 의 점을 가지면 $p$ 가 $d$ 에만 의존하는 유계를 넘지 않는다.
@@ -61,7 +61,7 @@ Merel 의 정리는 $B(d)<\infty$ 라는 진술이다. 동치로, 어떤 차수 
 $X_0(p)$ 의 호몰로지에서 0 과 $\infty$ 를 잇는 경로가 정하는 원소
 
 $$
-e=\{0,\infty\}\in H_1\big(X_0(p),\mathbb Q\big)
+e=\lbrace 0,\infty\rbrace\in H_1\big(X_0(p),\mathbb Q\big)
 $$
 
 를 **겨냥 원소**라 한다. 새형식 $f$ 에 대한 그 성분의 크기가 $L(f,1)$ 에 비례한다는 것이 모듈러 기호의 기본 사실이다. Hecke 대수에서 $e$ 를 소멸시키는 아이디얼 $I_e$ 로 몫을 취해
@@ -77,7 +77,7 @@ $$
 차수 $d$ 점에서 나오는 $X_1(p)^{(d)}\to J_e$ 가 단사인지를, 겨냥 원소에 Hecke 작용소를 적용해 얻은 원소들
 
 $$
-T_1e,\ T_2e,\ \dots,\ T_de\ \in\ \mathbb T\,e
+T_1e,\ T_2e,\ \dots,\ T_de\ \in\ \mathbb T\thinspace e
 $$
 
 이 일차독립인지로 판정한다. 독립이면 차수 $d$ 점이 존재할 수 없다. **기하적 진술이 유한차원 벡터공간의 계수 계산으로 바뀌는 것**이 이 판정의 힘이고, 작은 $d$ 에 대해서는 실제 계산으로 확인할 수 있다.

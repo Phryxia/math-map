@@ -7,7 +7,7 @@
 Kazhdan 과 Lusztig 은 1979 년에 이 빈자리를 메울 조합적 대상을 정의했다.[^1] Weyl 군(더 일반적으로 Coxeter 군) $W$ 의 군환을 매개변수 $q$ 로 변형한 **Iwahori–Hecke 대수** $\mathcal H$ 를 잡고, 거기에 자연스러운 대합에 대해 자기쌍대인 기저 $\lbrace C'_w\rbrace$ 가 유일하게 존재함을 보인다. 표준기저로 전개할 때 나오는 계수가
 
 $$
-C'_w=q^{-\ell(w)/2}\sum_{x\le w}P_{x,w}(q)\,T_x,\qquad P_{x,w}\in\mathbb Z[q]
+C'_w=q^{-\ell(w)/2}\sum_{x\le w}P_{x,w}(q)\thinspace T_x,\qquad P_{x,w}\in\mathbb Z[q]
 $$
 
 **Kazhdan–Lusztig 다항식**이다. 정의만 보면 순전히 조합적이다. Coxeter 군의 Bruhat 순서와 길이 함수 말고는 아무것도 쓰지 않는다.
@@ -46,7 +46,7 @@ $$
 조합으로 정의된 것이 왜 기하와 관계있는가. $P_{x,w}(q)$ 는 Schubert 다양체 $X_w=\overline{BwB/B}$ 의 점 $x$ 근방에서의 **교차 코호몰로지 층의 줄기**를 기술한다.
 
 $$
-P_{x,w}(q)=\sum_i \dim\mathcal H^{2i}\bigl(\mathrm{IC}(X_w)\bigr)_x\;q^{i}
+P_{x,w}(q)=\sum_i \dim\mathcal H^{2i}\bigl(\mathrm{IC}(X_w)\bigr)_x\thickspace q^{i}
 $$
 
 $X_w$ 가 $x$ 에서 매끄러우면 교차 코호몰로지가 상수층이라 $P_{x,w}=1$ 이다. 특이하면 여분의 코호몰로지가 생기고 $q$ 의 양의 차수 항으로 나타난다. **다항식의 크기가 특이점의 복잡도다.**
@@ -114,7 +114,7 @@ graph TD
 $(W,S)$ 를 Coxeter 계, $\ell$ 을 길이 함수라 하자. $\mathcal H$ 는 $\mathbb Z[q^{1/2},q^{-1/2}]$ 위 자유가군으로 기저 $\lbrace T_w\rbrace_{w\in W}$ 를 갖고 곱셈이
 
 $$
-T_sT_w=\begin{cases}T_{sw} & \ell(sw)>\ell(w)\\ qT_{sw}+(q-1)T_w & \ell(sw)<\ell(w)\end{cases}
+T_sT_w=\begin{cases}T_{sw} & \ell(sw)>\ell(w)\cr qT_{sw}+(q-1)T_w & \ell(sw)<\ell(w)\end{cases}
 $$
 
 로 정해진다. 결합법칙은 Coxeter 관계에서 따라오고 $T_w$ 는 가역이다.
@@ -138,7 +138,7 @@ $$
 정의는 존재만 말하지만 증명이 알고리즘을 준다. $\ell(sw)<\ell(w)$ 인 단순반사 $s$ 를 잡고 $v=sw$ 라 하면
 
 $$
-P_{x,w}=q^{1-c}P_{sx,v}+q^{c}P_{x,v}-\sum_{x\le z<v,\ sz<z}\mu(z,v)\,q^{(\ell(w)-\ell(z))/2}P_{x,z}
+P_{x,w}=q^{1-c}P_{sx,v}+q^{c}P_{x,v}-\sum_{x\le z<v,\ sz<z}\mu(z,v)\thinspace q^{(\ell(w)-\ell(z))/2}P_{x,z}
 $$
 
 $c=1$ 이면 $sx<x$ 이고 $c=0$ 이면 $sx>x$ 이며, $\mu(z,v)$ 는 $P_{z,v}$ 의 최고차 계수다. 길이에 대한 귀납으로 계산되지만 항의 수가 Bruhat 구간의 크기만큼 늘어난다. $W$ 가 크면 계산이 급격히 무거워지고, 실제로 $E_8$ 의 전체 KL 다항식 표를 얻는 작업(Atlas 프로젝트, 2007)은 대규모 분산 계산이었다.
@@ -154,7 +154,7 @@ $\ell(w)-\ell(x)$ 가 홀수일 때 최고차 계수 $\mu(x,w)$ 가 특히 중�
 원래 추측은 범주 $\mathcal O$ 의 기약 최고무게 가군 $L_w$ 의 지표에 관한 것이다.
 
 $$
-\mathrm{ch}\,L_w=\sum_{x\le w}(-1)^{\ell(w)-\ell(x)}P_{x,w}(1)\,\mathrm{ch}\,M_x
+\mathrm{ch}\thinspace L_w=\sum_{x\le w}(-1)^{\ell(w)-\ell(x)}P_{x,w}(1)\thinspace\mathrm{ch}\thinspace M_x
 $$
 
 $M_x$ 는 Verma 가군이다. Beilinson–Bernstein 과 Brylinski–Kashiwara 가 1981 년에 독립적으로 증명했고, 증명의 뼈대는 국소화다. 리 대수 가군의 범주를 깃발다양체 위 $\mathcal D$ 가군의 범주와 동치로 만든 뒤, Riemann–Hilbert 대응으로 편향층으로 옮기면 지표 계수가 IC 층의 줄기 차원이 된다. 곧 표현론 진술이 기하 진술로 번역되고, 기하 쪽에서는 Deligne 의 순수성 정리로 풀린다.

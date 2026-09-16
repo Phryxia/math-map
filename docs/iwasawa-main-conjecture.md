@@ -7,7 +7,7 @@
 그 순간 $h_n$ 의 불규칙함이 사라진다. 충분히 큰 $n$ 에서
 
 $$
-\mathrm{ord}_p(h_n)=\mu\,p^{n}+\lambda\,n+\nu
+\mathrm{ord}_p(h_n)=\mu\thinspace p^{n}+\lambda\thinspace n+\nu
 $$
 
 가 성립한다. 세 상수는 특성 멱급수에서 읽는다.
@@ -27,7 +27,7 @@ $\mathbb Q(\mu_{p^{n+1}})$ 의 류수는 앞 층의 류수로 나뉘지만, 몫�
 $\Gamma=\mathrm{Gal}(\mathbb Q(\mu_{p^\infty})/\mathbb Q(\mu_p))\cong\mathbb Z_p$ 이고, 각 층의 류군 $A_n$ 의 $p$ 부분이 $\Gamma$ 작용을 가지므로 극한 $X_\infty=\varprojlim A_n$ 은 $\mathbb Z_p[[\Gamma]]$ 가군이다. $\Gamma$ 의 위상생성원 $\gamma$ 를 잡고 $T=\gamma-1$ 로 두면
 
 $$
-\mathbb Z_p[[\Gamma]]\;\cong\;\Lambda=\mathbb Z_p[[T]]
+\mathbb Z_p[[\Gamma]]\thickspace\cong\thickspace\Lambda=\mathbb Z_p[[T]]
 $$
 
 이다. $\Lambda$ 는 2 차원 정칙 국소환이고, 유한생성 가군이 유사동형을 무시하면 순환 조각의 직합으로 분해된다. **불규칙해 보이던 수열이 한 가군의 그림자였다**는 것이 Iwasawa 이론의 출발점이다.
@@ -37,7 +37,7 @@ $$
 $n$ 번째 층은 극한에서 $\omega_n=(1+T)^{p^{n}}-1$ 로 나눈 몫으로 되돌아온다. 그러므로 $X=\Lambda/(f)$ 라면
 
 $$
-\#\big(X/\omega_nX\big)=\#\big(\Lambda/(f,\omega_n)\big)=p^{\,v_p(\mathrm{Res}(f,\omega_n))}
+\char35{}\big(X/\omega_nX\big)=\char35{}\big(\Lambda/(f,\omega_n)\big)=p^{\thinspace v_p(\mathrm{Res}(f,\omega_n))}
 $$
 
 이고, 이 종결식의 $p$ 부치를 직접 계산해 보면 $n$ 에 대해 정확히 선형이 된다. Weierstrass 준비정리로 $f$ 를 $p^{\mu}$ 곱하기 차수 $\lambda$ 의 구별다항식으로 쓸 수 있고, 구별다항식의 근들이 $p$ 진 절댓값이 1 보다 작으므로 $\omega_n$ 을 그 근에서 평가한 값의 부치가 $n$ 에 선형으로 자란다. 여기서 $\lambda$ 는 근의 개수, $\mu$ 는 $p$ 의 거듭제곱 몫이다.
@@ -118,7 +118,7 @@ $$
 반대 방향은 세는 방식만 바꾸면 공짜다. 순환체 단수의 지표가 류수와 같다는 고전적 사실
 
 $$
-\big[\,E:\,C\,\big]=h^{+}
+\big[\thinspace E:\thinspace C\thinspace\big]=h^{+}
 $$
 
 이 전체 크기를 고정해 주므로, 한쪽 나눔에 크기 일치를 더하면 등호가 나온다. **Euler 계는 상한을 주고 유수 공식은 총량을 주며, 둘이 만나 등식이 된다.** 이 구도는 뒤에 타원곡선 주추측에서도 그대로 반복된다.
@@ -170,7 +170,7 @@ $$
 **정리.** $A_n$ 을 $\mathbb Q_n$ 의 이데알류군의 $p$ 부분이라 하면, 충분히 큰 $n$ 에서
 
 $$
-\mathrm{ord}_p\#A_n=\mu\,p^{n}+\lambda\,n+\nu
+\mathrm{ord}_p\char35{}A_n=\mu\thinspace p^{n}+\lambda\thinspace n+\nu
 $$
 
 이다. $\mu,\lambda$ 는 $X_\infty=\varprojlim A_n$ 의 불변량이고 $\nu$ 는 상수다.
@@ -182,7 +182,7 @@ $$
 $\chi$ 를 도체가 $p$ 의 거듭제곱인 지표라 하자. 다음 보간 성질로 유일하게 결정되는 $p$ 진 해석함수 $L_p(s,\chi)$ 가 존재한다.
 
 $$
-L_p(1-n,\chi)=-\big(1-\chi\omega^{-n}(p)\,p^{\,n-1}\big)\frac{B_{n,\chi\omega^{-n}}}{n},\qquad n\ge1
+L_p(1-n,\chi)=-\big(1-\chi\omega^{-n}(p)\thinspace p^{\thinspace n-1}\big)\frac{B_{n,\chi\omega^{-n}}}{n},\qquad n\ge1
 $$
 
 $\omega$ 는 Teichmüller 지표다. Mazur 는 이 함수를 $\Gamma$ 위의 $p$ 진 측도로 실현했고, 측도는 $\Lambda$ 의 원소와 같은 것이므로 $L_p(s,\chi)$ 에 대응하는 멱급수 $f(T,\chi)\in\Lambda$ 가 얻어진다.
@@ -218,7 +218,7 @@ Mazur–Wiles 는 Ribet 의 방법을 탑 전체로 밀어 올린 것이고, Rub
 $E$ 를 $\mathbb Q(\mu_{p^{n}})^{+}$ 의 단수군, $C\subset E$ 를 순환체 단수가 생성하는 부분군이라 하자.
 
 $$
-\big[\,E:C\,\big]=h^{+}
+\big[\thinspace E:C\thinspace\big]=h^{+}
 $$
 
 가 성립한다(Kummer, Sinnott). 이 공식이 Euler 계 증명에서 **총량을 고정하는 역할**을 한다. Euler 계는 "류군이 $L_p$ 가 허용하는 것보다 크지 않다" 를 주고, 지표 공식은 두 변의 전체 크기가 같음을 보장하므로, 각 $\chi$ 성분에서도 등호가 된다.

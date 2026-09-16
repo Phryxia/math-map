@@ -5,7 +5,7 @@
 [Schur 다항식](schur-polynomials.md)에서 곱의 전개 계수
 
 $$
-s_\lambda s_\mu=\sum_\nu c^\nu_{\lambda\mu}\,s_\nu
+s_\lambda s_\mu=\sum_\nu c^\nu_{\lambda\mu}\thinspace s_\nu
 $$
 
 가 격자 낱말을 세는 규칙으로 주어진다고 했다. 규칙이 있으니 계산은 된다. 그런데 규칙은 답을 세어 줄 뿐 구조를 보여 주지 않는다. 가장 답답한 예가 대칭성이다. 표현론에서 $V_\lambda\otimes V_\mu\cong V_\mu\otimes V_\lambda$ 이므로
@@ -39,7 +39,7 @@ Knutson 과 Tao 는 계수를 **볼록 다면체의 정수점 개수**로 다시
 한 변의 길이가 $n$ 인 삼각형 격자의 각 꼭짓점에 정수를 놓는다. 조건은 모든 작은 마름모(두 삼각형을 붙인 것)에서
 
 $$
-(\text{짧은 대각선 양 끝의 합})\;\ge\;(\text{긴 대각선 양 끝의 합})
+(\text{짧은 대각선 양 끝의 합})\thickspace\ge\thickspace(\text{긴 대각선 양 끝의 합})
 $$
 
 이 성립한다는 것, 즉 배열이 **오목**하다는 것이다. 세 변의 값 증분을 $\lambda$ 와 $\mu$ 와 $\nu$ 로 지정하면 그런 hive 의 개수가 정확히 $c^\nu_{\lambda\mu}$ 다.
@@ -136,7 +136,7 @@ console.log(`saturation 확인: ${tested} 쌍, 어긋남 ${bad}`);   // 99 쌍, 
 $\Delta_n$ 을 한 변에 $n+1$ 개의 격자점이 놓인 삼각형이라 하자. 함수 $h\colon\Delta_n\cap\mathbb Z^2\to\mathbb R$ 가 **hive** 라 함은, 인접한 두 작은 삼각형이 이루는 모든 마름모 $(a,b,c,d)$ ($b,c$ 가 짧은 대각선)에 대해
 
 $$
-h(b)+h(c)\;\ge\;h(a)+h(d)
+h(b)+h(c)\thickspace\ge\thickspace h(a)+h(d)
 $$
 
 가 성립하는 것이다. 세 종류의 마름모가 있으므로 부등식도 세 묶음이다.
@@ -144,7 +144,7 @@ $$
 경계 조건은 이렇게 준다. 세 변을 따라가며 이웃한 값의 차를 읽으면 각각 $\lambda$ 와 $\mu$ 와 $\nu$ 의 성분이 되도록 $h$ 를 규격화한다. 그러면
 
 $$
-c^\nu_{\lambda\mu}=\#\bigl\{\text{경계가 }(\lambda,\mu,\nu)\text{ 인 정수 hive}\bigr\}
+c^\nu_{\lambda\mu}=\char35{}\bigl\lbrace\text{경계가 }(\lambda,\mu,\nu)\text{ 인 정수 hive}\bigr\rbrace
 $$
 
 ## honeycomb
@@ -198,7 +198,7 @@ $$
 hive 삼각형의 세 변은 대등하다. $\lambda,\mu,\nu$ 를 순환시키거나 뒤집는 조작이 삼각형의 대칭군 $S_3$ 작용에 해당하고, 부등식 계는 그 작용에 불변이다. 따라서
 
 $$
-c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}=c^{\nu^{\!*}}_{\lambda^{\!*}\mu^{\!*}}
+c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}=c^{\nu^{\negthinspace*}}_{\lambda^{\negthinspace*}\mu^{\negthinspace*}}
 $$
 
 같은 항등식이 모두 자명해진다. 원래 규칙에서 각각 별도의 전단사를 요구하던 것들이다. 모형을 바꾸어 정리를 자명하게 만드는 것도 증명의 한 형태다.

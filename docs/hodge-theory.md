@@ -33,7 +33,7 @@ graph TD
 두 조화형식이 같은 류에 있으면 차이가 완전형식 $d\eta$ 이면서 조화다. 그런데 조화형식 $\alpha=d\eta$ 에 대해
 
 $$
-\|\alpha\|^2=\langle d\eta,\alpha\rangle=\langle\eta,\delta\alpha\rangle=0
+\Vert\alpha\Vert^2=\langle d\eta,\alpha\rangle=\langle\eta,\delta\alpha\rangle=0
 $$
 
 이다. 콤팩트라 경계항이 없어서 부분적분이 깨끗하게 되는 것이 결정적이다. 경계가 있거나 비콤팩트면 정리가 그대로 성립하지 않는다.
@@ -65,13 +65,13 @@ $\star$ 가 조화형식을 조화형식으로 보내므로 $\mathcal H^k\cong\m
 $\star:\Omega^k\to\Omega^{n-k}$ 를 다음 성질로 정의한다. 모든 $k$ 형식 $\alpha,\beta$ 에 대해
 
 $$
-\alpha\wedge\star\beta=\langle\alpha,\beta\rangle\,\mathrm{vol}
+\alpha\wedge\star\beta=\langle\alpha,\beta\rangle\thinspace\mathrm{vol}
 $$
 
 이 조건이 $\star\beta$ 를 유일하게 결정한다. 정규직교기저에서는 첨자의 여집합을 취하고 부호를 붙이는 연산이다. 예를 들어 $\mathbb R^3$ 의 표준 계량에서
 
 $$
-\star\,dx=dy\wedge dz,\qquad \star(dx\wedge dy)=dz,\qquad\star1=dx\wedge dy\wedge dz
+\star\thinspace dx=dy\wedge dz,\qquad \star(dx\wedge dy)=dz,\qquad\star1=dx\wedge dy\wedge dz
 $$
 
 이며, 이것이 벡터 해석의 회전과 발산이 같은 $d$ 의 다른 얼굴이라는 사실의 근원이다. Riemann 계량에서 $\star\star=(-1)^{k(n-k)}$ 다.
@@ -79,13 +79,13 @@ $$
 ## $L^2$ 내적과 딸림미분
 
 $$
-\langle\!\langle\alpha,\beta\rangle\!\rangle=\int_M\alpha\wedge\star\beta=\int_M\langle\alpha,\beta\rangle\,\mathrm{vol}
+\langle\negthinspace\langle\alpha,\beta\rangle\negthinspace\rangle=\int_M\alpha\wedge\star\beta=\int_M\langle\alpha,\beta\rangle\thinspace\mathrm{vol}
 $$
 
 이 내적에 대한 $d:\Omega^{k-1}\to\Omega^k$ 의 형식적 딸림작용소를 여미분이라 하고 $\delta:\Omega^k\to\Omega^{k-1}$ 로 쓴다. Riemann 계량에서는 명시적으로
 
 $$
-\delta=(-1)^{n(k+1)+1}\star d\,\star
+\delta=(-1)^{n(k+1)+1}\star d\thinspace\star
 $$
 
 이며, 콤팩트이고 경계가 없으면 Stokes 정리에서 $\langle\negthinspace\langle d\alpha,\beta\rangle\negthinspace\rangle=\langle\negthinspace\langle\alpha,\delta\beta\rangle\negthinspace\rangle$ 가 나온다. $d\circ d=0$ 의 딸림이 $\delta\circ\delta=0$ 이다.
@@ -99,7 +99,7 @@ $$
 $\Delta\omega=0$ 인 형식을 조화형식이라 하고 그 공간을 $\mathcal H^k$ 로 쓴다. 함수, 곧 $k=0$ 인 경우에는 $\delta=0$ 이므로 $\Delta f=\delta df$ 이고, 이것이 부호 규약을 빼면 Laplace–Beltrami 작용소다. 국소좌표로는
 
 $$
-\Delta f=-\frac1{\sqrt{|g|}}\partial_i\big(\sqrt{|g|}\,g^{ij}\partial_j f\big)
+\Delta f=-\frac1{\sqrt{|g|}}\partial_i\big(\sqrt{|g|}\thinspace g^{ij}\partial_j f\big)
 $$
 
 로, 계량이 유클리드면 $-\sum\partial_i^2$ 가 된다. 이 문서의 부호 규약에서 $\Delta$ 는 양의 준정부호다.
@@ -117,7 +117,7 @@ $$
 한 방향은 자명하다. 반대는 부분적분이다.
 
 $$
-\langle\!\langle\Delta\omega,\omega\rangle\!\rangle=\langle\!\langle d\omega,d\omega\rangle\!\rangle+\langle\!\langle\delta\omega,\delta\omega\rangle\!\rangle=\|d\omega\|^2+\|\delta\omega\|^2
+\langle\negthinspace\langle\Delta\omega,\omega\rangle\negthinspace\rangle=\langle\negthinspace\langle d\omega,d\omega\rangle\negthinspace\rangle+\langle\negthinspace\langle\delta\omega,\delta\omega\rangle\negthinspace\rangle=\Vert d\omega\Vert^2+\Vert\delta\omega\Vert^2
 $$
 
 좌변이 0 이면 두 항이 각각 0 이다. 콤팩트성이 빠지면 무너진다. $\mathbb R^n$ 위의 조화함수는 상수 말고도 얼마든지 있고, 실제로 유계가 아닌 것들이다.
@@ -125,7 +125,7 @@ $$
 ## Hodge 분해
 
 $$
-\Omega^k(M)=\mathcal H^k\ \oplus\ d\,\Omega^{k-1}\ \oplus\ \delta\,\Omega^{k+1}
+\Omega^k(M)=\mathcal H^k\ \oplus\ d\thinspace\Omega^{k-1}\ \oplus\ \delta\thinspace\Omega^{k+1}
 $$
 
 세 조각이 $L^2$ 내적에 대해 서로 직교하는 직합이다. 직교성은 $\langle\negthinspace\langle d\alpha,\delta\beta\rangle\negthinspace\rangle=\langle\negthinspace\langle dd\alpha,\beta\rangle\negthinspace\rangle=0$ 처럼 계산으로 바로 나오고, 어려운 부분은 이 셋이 전체를 덮는다는 것이다. 그 증명이 $\Delta$ 의 타원성과 Fredholm 이론이다.

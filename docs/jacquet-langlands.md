@@ -5,9 +5,9 @@
 사원수 대수 $B/F$ 의 곱셈군은 $\mathrm{GL}_2$ 의 **내부형식**이다. 대수적으로 닫힌 체 위에서는 $B\cong M_2$ 이므로 두 군이 같고, $F$ 위에서만 달라진다. **Jacquet–Langlands 대응**은 이 두 군의 자기동형 표현이 사실상 같은 것임을 말한다.
 
 $$
-\mathrm{JL}:\ \{\text{$B^\times(\mathbb A)$ 의 자기동형 표현}\}
+\mathrm{JL}:\ \lbrace\text{$B^\times(\mathbb A)$ 의 자기동형 표현}\rbrace
 \ \hookrightarrow\
-\{\text{$\mathrm{GL}_2(\mathbb A)$ 의 첨점 표현}\}
+\lbrace\text{$\mathrm{GL}_2(\mathbb A)$ 의 첨점 표현}\rbrace
 $$
 
 이 사상은 단사이고, 상이 정확히 기술된다. $B$ 가 분지된 자리 $\Sigma$ 의 **모든 자리에서 이산계열**인 첨점 표현들이 상이다. Hecke 고윳값과 $L$ 함수가 그대로 보존된다.
@@ -39,7 +39,7 @@ $B$ 가 어딘가에서 분지되면 사정이 달라진다. $B^\times(F)\backsl
 국소 대응에는 지표 항등식이 따라온다. 정칙 타원원소 $\gamma$ 에서
 
 $$
-\Theta_{\mathrm{JL}(\rho)}(\gamma)=-\,\Theta_\rho(\gamma)
+\Theta_{\mathrm{JL}(\rho)}(\gamma)=-\thinspace\Theta_\rho(\gamma)
 $$
 
 부호가 뒤집힌다. 이 $-1$ 은 우연이 아니다. [Vogan 꾸러미](vogan-packets.md)의 언어로 보면 $\mathrm{GL}_2$ 쪽 표현과 $B^\times$ 쪽 표현이 같은 매개변수를 갖는 꾸러미의 두 원소이고, 성분군 $\mathbb Z/2$ 의 자명 지표와 부호 지표에 각각 대응한다. 부호 지표가 붙은 쪽이 비분열 내부형식 위에 있다는 규칙이 이 $-1$ 로 나타난다.
@@ -63,7 +63,7 @@ $F=\mathbb Q$ 에서 $\Sigma=\lbrace\infty,p\rbrace$ 인 경우를 **확정(defi
 $v\in\Sigma$ 에서 $B_v^\times/F_v^\times$ 는 콤팩트이므로 기약 매끄러운 표현이 모두 유한차원이다. 국소 JL 대응은 전단사
 
 $$
-\mathrm{JL}_v:\ \mathrm{Irr}\bigl(B_v^\times\bigr)\ \xrightarrow{\ \sim\ }\ \{\mathrm{GL}_2(F_v)\text{ 의 이산계열}\}
+\mathrm{JL}_v:\ \mathrm{Irr}\bigl(B_v^\times\bigr)\ \xrightarrow{\ \sim\ }\ \lbrace\mathrm{GL}_2(F_v)\text{ 의 이산계열}\rbrace
 $$
 
 이고 위의 지표 항등식으로 특징지어진다. 자명 표현이 Steinberg 표현에 대응하고, 차원이 큰 표현이 초첨점 표현에 대응한다.

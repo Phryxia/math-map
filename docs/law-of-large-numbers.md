@@ -9,7 +9,7 @@
 동전을 n번 던져 앞면 비율을 기록한다. n이 커지면 비율이 1/2 근처에 머문다. 왜인가. 표본평균의 분산은 개별 분산을 n으로 나눈 값이므로 n이 커질수록 분포가 평균 주위로 좁아진다. Chebyshev 부등식은 이 "좁아짐"을 편차 확률의 상한으로 바꿔 준다.
 
 $$
-\operatorname{Var}\!\left(\frac{X_1+\cdots+X_n}{n}\right)=\frac{\sigma^2}{n}
+\operatorname{Var}\negthinspace\left(\frac{X_1+\cdots+X_n}{n}\right)=\frac{\sigma^2}{n}
 $$
 
 약한 법칙과 강한 법칙의 차이는 "언제 벗어나는가"를 보는 방식이다. 약한 법칙은 각 n마다 따로 "지금 벗어나 있을 확률"을 보고, 그것이 0으로 간다고 말한다. 강한 법칙은 한 번 뽑힌 무한 수열 하나를 끝까지 따라가며 "이 수열 자체가 수렴한다"고 말한다. 후자가 더 강하다. 각 n에서 벗어날 확률이 작아도, 무한히 여러 n에서 한 번씩 벗어나는 일은 여전히 일어날 수 있다.
@@ -44,7 +44,7 @@ $$
 거의 확실한 수렴(almost sure convergence):
 
 $$
-P\!\left(\left\{\omega\in\Omega:\ \lim_{n\to\infty}Y_n(\omega)=Y(\omega)\right\}\right)=1
+P\negthinspace\left(\left\lbrace\omega\in\Omega:\ \lim_{n\to\infty}Y_n(\omega)=Y(\omega)\right\rbrace\right)=1
 $$
 
 L2 수렴(제곱평균 수렴):
@@ -66,7 +66,7 @@ $$
 강한 큰 수의 법칙(Kolmogorov, strong law, SLLN): 같은 조건, 즉 i.i.d.이고 절댓값의 기댓값이 유한하면 표본평균이 $\mu$ 로 거의 확실하게 수렴한다[^1].
 
 $$
-P\!\left(\lim_{n\to\infty}\overline X_n=\mu\right)=1
+P\negthinspace\left(\lim_{n\to\infty}\overline X_n=\mu\right)=1
 $$
 
 두 정리 모두 분산의 유한성을 요구하지 않는다. 분산 조건은 아래 Chebyshev 증명에 필요한 편의상의 강화일 뿐이다.
@@ -90,7 +90,7 @@ $$
 가장 간단한 경로는 4차 모멘트가 유한하다는 가정 아래의 논법이다. 중심화한 합의 4차 모멘트를 전개하면 독립성 때문에 살아남는 항의 개수가 n의 제곱 규모이므로 다음을 얻는다.
 
 $$
-\mathbb E\big[(\overline X_n-\mu)^4\big]=O\!\left(\frac1{n^2}\right),\qquad
+\mathbb E\big[(\overline X_n-\mu)^4\big]=O\negthinspace\left(\frac1{n^2}\right),\qquad
 \sum_{n\ge1}P\big(|\overline X_n-\mu|>\varepsilon\big)\le\sum_{n\ge1}\frac{O(n^{-2})}{\varepsilon^4}<\infty
 $$
 
@@ -113,7 +113,7 @@ $$
 계산하려는 적분을 기댓값으로 바꾸고 표본평균으로 근사한다. 예를 들어 구간 $[0,1]$ 에서 함수 $g$ 의 적분은 균등분포 $U$ 에 대한 $g(U)$ 의 기댓값이므로 다음과 같다.
 
 $$
-\int_0^1 g(t)\,dt=\mathbb E[g(U)]\approx\frac1n\sum_{i=1}^n g(U_i)
+\int_0^1 g(t)\thinspace dt=\mathbb E[g(U)]\approx\frac1n\sum_{i=1}^n g(U_i)
 $$
 
 강한 법칙이 이 근사가 거의 확실하게 옳은 값으로 간다는 보장을 준다. 차원이 높아져도 오차 규모가 차원에 직접 의존하지 않는다는 점이 격자 기반 수치적분과 대비되는 장점이다.

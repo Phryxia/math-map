@@ -68,7 +68,7 @@ $$
 
 $$
 \mathrm{Isom}^+(\mathbb H^3)\cong \mathrm{PSL}_2(\mathbb C),\qquad
-\begin{pmatrix}a&b\\c&d\end{pmatrix}\cdot w=\frac{aw+b}{cw+d}
+\begin{pmatrix}a&b\cr c&d\end{pmatrix}\cdot w=\frac{aw+b}{cw+d}
 $$
 
 이다. 항등이 아닌 원소는 자취로 분류된다. $\mathrm{tr}^2\in[0,4)$ 이면 **타원형**(고정점이 내부에 있어 회전), $\mathrm{tr}^2=4$ 이면 **포물형**(경계에 고정점 하나, cusp 를 만든다), 그 밖이면 **꼬인형**(축 하나를 따라 이동, 이동거리가 $2\thinspace\mathrm{arccosh}|\mathrm{tr}/2|$ 로 폐측지선의 길이를 준다).
@@ -84,7 +84,7 @@ $$
 이상 사면체 $\Delta_1,\dots,\Delta_n$ 을 붙여 $M$ 을 만들었다고 하자. 모양 매개변수 $z_1,\dots,z_n$ 이 실제로 완비 쌍곡 구조를 주려면 두 종류의 조건이 필요하다.
 
 > **모서리 조건.** 각 모서리를 둘러싼 사면체들의 이면각의 합이 $2\pi$ 이고 회전이 제자리로 돌아와야 한다. 모서리 $e$ 마다
-> $$\prod_{i}z_i^{\,a_{e,i}}(z_i')^{\,b_{e,i}}(z_i'')^{\,c_{e,i}}=1,\qquad \sum_i\big(a_{e,i}\arg z_i+\cdots\big)=2\pi$$
+> $$\prod_{i}z_i^{\thinspace a_{e,i}}(z_i')^{\thinspace b_{e,i}}(z_i'')^{\thinspace c_{e,i}}=1,\qquad \sum_i\big(a_{e,i}\arg z_i+\cdots\big)=2\pi$$
 
 > **cusp 조건 (완비성).** 각 cusp 원환면의 자오선 $m$ 과 경선 $\ell$ 에 대응하는 포물형 조건
 > $$H(m)=H(\ell)=1$$
@@ -165,7 +165,7 @@ cusp 를 메우면 부피가 **줄고**, 아주 복잡하게 메울수록 원래
 8 자매듭 $4_1$ 의 여집합은 이상 사면체 두 개를 붙여 만든다. 두 사면체의 모양을 $z,w$ 라 하면 모서리 조건이
 
 $$
-z(1-z)\,w(1-w)=1
+z(1-z)\thinspace w(1-w)=1
 $$
 
 이라는 한 방정식으로 줄고, 완비성 조건까지 넣으면 $z=w=e^{i\pi/3}$ 이 나온다. 정이면체 사면체다. 부피는

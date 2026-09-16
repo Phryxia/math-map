@@ -93,7 +93,7 @@ LP 최적해 $x^*$ 에서 $x^\ast\_v \ge 1/2$ 인 정점을 모두 고른다.
 비용은 두 배 이내다. 선택된 각 정점에서 $1 \le 2x^*_v$ 이므로
 
 $$
-\sum_{v:\,x^*_v\ge1/2}w_v\ \le\ 2\sum_vw_vx^*_v\ =\ 2\,\mathrm{OPT}_{LP}\ \le\ 2\,\mathrm{OPT}_{IP}
+\sum_{v:\thinspace x^*_v\ge1/2}w_v\ \le\ 2\sum_vw_vx^*_v\ =\ 2\thinspace\mathrm{OPT}_{LP}\ \le\ 2\thinspace\mathrm{OPT}_{IP}
 $$
 
 가중치가 있어도 그대로 통한다. 매칭을 쓰는 조합적 2-근사는 가중치가 붙으면 곧바로 깨지므로, 이 부분이 LP 기법의 실질적 이득이다.

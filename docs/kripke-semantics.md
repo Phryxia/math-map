@@ -43,9 +43,9 @@ $$
 
 $$
 \begin{aligned}
-w\Vdash A\wedge B&\iff w\Vdash A\ \text{이고}\ w\Vdash B\\
-w\Vdash A\vee B&\iff w\Vdash A\ \text{또는}\ w\Vdash B\\
-w\Vdash A\to B&\iff \forall v\ge w\,(v\Vdash A\Rightarrow v\Vdash B)\\
+w\Vdash A\wedge B&\iff w\Vdash A\ \text{이고}\ w\Vdash B\cr
+w\Vdash A\vee B&\iff w\Vdash A\ \text{또는}\ w\Vdash B\cr
+w\Vdash A\to B&\iff \forall v\ge w\thinspace(v\Vdash A\Rightarrow v\Vdash B)\cr
 w&\nVdash\bot
 \end{aligned}
 $$

@@ -93,8 +93,8 @@ $$
 \Lambda(x)=\frac{f_1(x)}{f_0(x)},
 \qquad
 \varphi(x)=\begin{cases}
-1, & \Lambda(x)>k\\
-\gamma, & \Lambda(x)=k\\
+1, & \Lambda(x)>k\cr
+\gamma, & \Lambda(x)=k\cr
 0, & \Lambda(x)<k
 \end{cases}
 $$
@@ -104,7 +104,7 @@ $$
 최적성의 증명 개요. 크기가 $\alpha$ 이하인 임의의 검정 $\psi$ 를 잡고 다음 적분을 본다.
 
 $$
-\int \big(\varphi(x)-\psi(x)\big)\big(f_1(x)-k f_0(x)\big)\,dx\ \ge\ 0
+\int \big(\varphi(x)-\psi(x)\big)\big(f_1(x)-k f_0(x)\big)\thinspace dx\ \ge\ 0
 $$
 
 피적분함수가 항상 음이 아니기 때문이다. $\Lambda(x)>k$ 인 곳에서는 $\varphi=1$ 이므로 첫 인자가 음이 아니고 둘째 인자가 양수이며, $\Lambda(x)<k$ 인 곳에서는 두 인자의 부호가 모두 뒤집힌다. 전개해서 정리하면 $\varphi$ 의 검정력에서 $\psi$ 의 검정력을 뺀 값이 $k$ 배의 크기 차이 이상이고, $\psi$ 의 크기가 $\alpha$ 이하이므로 그 차이가 음이 아니다.

@@ -57,7 +57,7 @@ $$
 **정리 (보편성질).** $f : R \to A$ 가 환준동형이고 $f(S)$ 가 전부 $A$ 의 가역원이면, $g \circ \iota = f$ 를 만족하는 환준동형 $g : S^{-1}R \to A$ 가 유일하게 존재한다.
 
 $$
-g\!\left(\frac{a}{s}\right) = f(a)\, f(s)^{-1}.
+g\negthinspace\left(\frac{a}{s}\right) = f(a)\thinspace f(s)^{-1}.
 $$
 
 well-definedness는 동치관계의 정의에서 나오고, 유일성은 $g(a/s)$ 가 $g(a/1)g(1/s)$ 로 강제되기 때문이다. 이 성질이 $S^{-1}R$ 를 동형을 제외하고 결정한다. [범주](category.md)의 언어로는 $S^{-1}R$ 이 $S$ 를 가역으로 만드는 $R$ 대수들 가운데 시작대상이다.
@@ -69,7 +69,7 @@ well-definedness는 동치관계의 정의에서 나오고, 유일성은 $g(a/s)
 $p$ 가 소 아이디얼이면 $S=R\setminus p$ 는 곱닫힘이고, 이때의 국소화를 $R_p$ 로 쓴다. $R_p$ 의 원소 $a/s$ 는 $a$ 가 $p$ 에 속할 때 정확히 비가역이며, 그런 원소들의 집합
 
 $$
-pR_p = \left\{ \frac{a}{s} : a \in p,\ s \notin p \right\}
+pR_p = \left\lbrace \frac{a}{s} : a \in p,\ s \notin p \right\rbrace
 $$
 
 은 아이디얼이다. 비가역원 전체가 아이디얼이므로 $R_p$ 는 국소환이고 극대 아이디얼은 $pR_p$ 다. 잉여체는 $R_p/pR_p \cong \operatorname{Frac}(R/p)$ 로, $p$ 에서의 함수체다.
@@ -79,7 +79,7 @@ $$
 $R$ 가군 $M$ 에 대해서도 같은 구성을 한다. $M \times S$ 를 $(m,s) \sim (n,t) \iff \exists u \in S,\ u(tm - sn) = 0$ 으로 나눈 것을 $S^{-1}M$ 이라 하며 $S^{-1}R$ 가군이 된다. 자연스러운 동형
 
 $$
-S^{-1}M \;\cong\; S^{-1}R \otimes_R M
+S^{-1}M \thickspace\cong\thickspace S^{-1}R \otimes_R M
 $$
 
 이 성립한다([텐서곱](tensor-products.md)). 즉 국소화는 $S^{-1}R$ 과의 텐서곱 functor이며, 아래에서 보듯 완전(exact)하다.
@@ -99,7 +99,7 @@ $\iota : R \to S^{-1}R$ 을 따라 아이디얼을 옮기는 두 연산을 쓴�
 **정리 (소 아이디얼의 대응).** 확대와 축소는 서로 역인 전단사
 
 $$
-\{\, q \subseteq R \text{ 소 아이디얼},\ q \cap S = \varnothing \,\} \;\longleftrightarrow\; \{\, \text{$S^{-1}R$ 의 소 아이디얼} \,\}
+\lbrace\thinspace q \subseteq R \text{ 소 아이디얼},\ q \cap S = \varnothing \thinspace\rbrace \thickspace\longleftrightarrow\thickspace \lbrace\thinspace \text{$S^{-1}R$ 의 소 아이디얼} \thinspace\rbrace
 $$
 
 를 준다. 이 대응은 포함관계를 보존한다([부분순서](partial-orders.md) 동형이다).
@@ -163,7 +163,7 @@ flowchart LR
 $R=\mathbb Z$ 의 곱닫힌 집합은 본질적으로 소수 집합의 선택으로 결정된다. 소수 $p$ 에서의 국소화는
 
 $$
-\mathbb{Z}_{(p)} = \left\{ \frac{a}{b} \in \mathbb{Q} : p \nmid b \right\}
+\mathbb{Z}_{(p)} = \left\lbrace \frac{a}{b} \in \mathbb{Q} : p \nmid b \right\rbrace
 $$
 
 이고, 극대 아이디얼은 $p\mathbb Z_{(p)}$ 이고 잉여체는 $\mathbb Z/p\mathbb Z$ 라는 [유한체](finite-fields.md)다. 이 환의 모든 0이 아닌 아이디얼은 $p^n\mathbb Z_{(p)}$ 꼴이므로 이산 부치환(discrete valuation ring)이 되고, 이는 정수의 $p$ 진 자릿수 전개와 $p$ 진 부치 $v_p$ 의 대수적 기반이다([소수와 유일분해](primes.md)).

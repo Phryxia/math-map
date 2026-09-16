@@ -33,13 +33,13 @@ Reidemeister 의 정리가 이 대응을 통제한다. 두 도식이 같은 매�
 Kauffman 의 착상은 이렇다. 교차점 하나를 골라 위아래 정보를 지우고, 두 가지 방식으로 이어 붙인다.
 
 $$
-\text{교차}\ \longmapsto\ A\cdot(\text{A-이음})\;+\;A^{-1}\cdot(\text{B-이음})
+\text{교차}\ \longmapsto\ A\cdot(\text{A-이음})\thickspace+\thickspace A^{-1}\cdot(\text{B-이음})
 $$
 
 두 이음 중 어느 쪽이 A 인지는 위 가닥을 반시계 방향으로 돌려 아래 가닥에 붙이는 쪽으로 약속한다. 교차점이 $n$ 개면 이 규칙을 전부 적용해 $2^n$ 개의 **상태**가 나오고, 각 상태는 교차점이 하나도 없는 그림, 곧 평면 위의 원 몇 개다. 원 하나에 $\delta=-A^2-A^{-2}$ 를 주고 전부 더한 것이 **Kauffman 괄호**다.
 
 $$
-\langle K\rangle=\sum_{s}A^{\,a(s)-b(s)}\,\delta^{\,|s|-1}
+\langle K\rangle=\sum_{s}A^{\thinspace a(s)-b(s)}\thinspace\delta^{\thinspace|s|-1}
 $$
 
 $a(s),b(s)$ 는 상태 $s$ 에서 A-이음과 B-이음의 개수, $|s|$ 는 원의 개수다.
@@ -111,7 +111,7 @@ $$
 Jones 다항식은 다음 재귀로도 특징지어진다. 한 교차점만 다른 세 도식 $L_+,L_-,L_0$ 에 대해
 
 $$
-t^{-1}V(L_+)-t\,V(L_-)=\left(t^{1/2}-t^{-1/2}\right)V(L_0)
+t^{-1}V(L_+)-t\thinspace V(L_-)=\left(t^{1/2}-t^{-1/2}\right)V(L_0)
 $$
 
 이고 $V(\text{풀린 매듭})=1$ 이다. 이 관계와 초기값만으로 $V$ 가 유일하게 결정된다. 교차점을 하나씩 뒤집어 가면 어떤 도식이든 유한 단계에 풀린 링크로 내려가기 때문이다. HOMFLY 다항식은 이 관계의 두 변수 판본이고, Alexander 다항식과 Jones 다항식을 동시에 특수화로 갖는다.

@@ -13,7 +13,7 @@ Boolean algebra 가 고전 명제논리의 대수적 뼈대인 것처럼, Heytin
 고전논리에서 함의는 정의로 환원된다. 다음 등식이 그것이다.
 
 $$
-a \to b \;=\; \neg a \vee b
+a \to b \thickspace=\thickspace \neg a \vee b
 $$
 
 이 환원은 부정이 잘 행동할 때만 쓸 수 있다. 부정을 가정할 수 없다면 함의를 따로 특징지어야 한다.
@@ -50,7 +50,7 @@ $$
 이 조건은 $c$ 를 유일하게 결정한다. 두 원소가 같은 조건을 만족하면 서로를 넘지 않기 때문이다. 동치로, $a \to b$ 는 집합
 
 $$
-\{\, x \in H : x \wedge a \le b \,\}
+\lbrace\thinspace x \in H : x \wedge a \le b \thinspace\rbrace
 $$
 
 의 최대원이다.
@@ -60,7 +60,7 @@ $$
 **정의.** Heyting algebra 는 유계 격자 $H$ 이며 모든 $a$ 와 $b$ 에 대해 상대 의사보수 $a \to b$ 가 존재하는 것이다. 부정은 다음으로 정의한다.
 
 $$
-\neg a \;:=\; a \to 0
+\neg a \thickspace:=\thickspace a \to 0
 $$
 
 수반 조건은 [부분순서](partial-orders.md)의 언어로 보면 Galois 연결이다. 각 $a$ 마다 단조사상 $(-) \wedge a$ 가 좌수반이고 $a \to (-)$ 가 우수반이다. [범주](category.md)의 관점에서는 $H$ 를 얇은 범주로 보았을 때 $(-) \wedge a$ 가 좌수반 [functor](functors.md) 라는 진술과 같다.
@@ -82,7 +82,7 @@ $$
 임의의 부분집합이 상한을 가지는 Heyting algebra 를 complete Heyting algebra 또는 frame 이라 한다. 완비 격자에서 Heyting 구조가 존재할 필요충분조건은 무한 분배법칙이다.
 
 $$
-a \wedge \bigvee_{i \in I} b_i \;=\; \bigvee_{i \in I} (a \wedge b_i)
+a \wedge \bigvee_{i \in I} b_i \thickspace=\thickspace \bigvee_{i \in I} (a \wedge b_i)
 $$
 
 성립하면 $a \to b$ 를 위의 집합의 상한으로 정의하면 된다.
@@ -98,7 +98,7 @@ $$
 **상향닫힌 집합 격자.** 부분순서 집합 $(W, \le)$ 에 대해 상향닫힌 집합 전체 $\mathrm{Up}(W)$ 는 교집합과 합집합으로 complete Heyting algebra 다. 함의는 다음과 같다.
 
 $$
-U \to V = \{\, w \in W : \forall v \ge w,\; v \in U \Rightarrow v \in V \,\}
+U \to V = \lbrace\thinspace w \in W : \forall v \ge w,\thickspace v \in U \Rightarrow v \in V \thinspace\rbrace
 $$
 
 이것이 [Kripke 의미론](kripke-semantics.md)의 강제 조건을 그대로 대수화한 것이다.

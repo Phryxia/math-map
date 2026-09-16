@@ -13,7 +13,7 @@ Kullback–Leibler divergence는 두 확률분포가 얼마나 다른지를 재�
 부호화로 보는 것이 가장 빠르다. 참 분포 $P$ 에 최적화된 부호는 결과 $x$ 에 $-\log p(x)$ 비트를 배정하고, 평균 길이가 엔트로피다. 그런데 분포를 $Q$ 로 잘못 알고 있으면 $-\log q(x)$ 비트를 쓰게 되고, 평균 길이는 교차 엔트로피다. KL divergence는 그 차이, 즉 순수한 낭비분이다.
 
 $$
-D(P\,\|\,Q) = \underbrace{\mathbb{E}_{P}[-\log q]}_{\text{교차 엔트로피}} - \underbrace{\mathbb{E}_{P}[-\log p]}_{\text{엔트로피}} .
+D(P\thinspace\Vert\thinspace Q) = \underbrace{\mathbb{E}_{P}[-\log q]}_{\text{교차 엔트로피}} - \underbrace{\mathbb{E}_{P}[-\log p]}_{\text{엔트로피}} .
 $$
 
 이 해석에서 두 가지가 곧바로 따라온다. 낭비는 음수일 수 없으므로 비음성이고, 기댓값을 $P$ 로만 잡으므로 $P$ 와 $Q$ 의 역할이 대칭이 아니다.
@@ -40,13 +40,13 @@ graph TD
 같은 표본공간 위의 두 분포 $P$, $Q$ 에 대해, 이산인 경우
 
 $$
-D(P\,\|\,Q) = \sum_{x} p(x)\,\log\frac{p(x)}{q(x)}
+D(P\thinspace\Vert\thinspace Q) = \sum_{x} p(x)\thinspace\log\frac{p(x)}{q(x)}
 $$
 
 로 정의한다. 관례로 $0\log(0/q)=0$ 이고, $p(x)>0$ 인데 $q(x)=0$ 인 $x$ 가 있으면 값은 무한대다. 연속인 경우, 그리고 일반적인 [측도](measure.md) 공간에서는 [Radon–Nikodym 정리](radon-nikodym.md)가 주는 밀도로 쓴다.
 
 $$
-D(P\,\|\,Q) = \int \log\!\left(\frac{dP}{dQ}\right) dP ,
+D(P\thinspace\Vert\thinspace Q) = \int \log\negthinspace\left(\frac{dP}{dQ}\right) dP ,
 $$
 
 단 $P$ 가 $Q$ 에 대해 절대연속일 때만 유한할 수 있다. 로그의 밑이 2면 단위는 비트, 자연로그면 nat이다.
@@ -56,7 +56,7 @@ $$
 결합분포에 대해서는 다음 연쇄법칙이 성립한다.
 
 $$
-D(P_{XY}\,\|\,Q_{XY}) = D(P_X\,\|\,Q_X) + \mathbb{E}_{x \sim P_X}\big[ D(P_{Y|X=x}\,\|\,Q_{Y|X=x}) \big].
+D(P_{XY}\thinspace\Vert\thinspace Q_{XY}) = D(P_X\thinspace\Vert\thinspace Q_X) + \mathbb{E}_{x \sim P_X}\big[ D(P_{Y|X=x}\thinspace\Vert\thinspace Q_{Y|X=x}) \big].
 $$
 
 ## 상호정보량
@@ -64,7 +64,7 @@ $$
 두 확률변수의 결합분포와 주변분포의 곱 사이의 divergence로 정의한다.
 
 $$
-I(X;Y) = D\big(P_{XY}\,\|\,P_X \otimes P_Y\big) = \sum_{x,y} p(x,y) \log\frac{p(x,y)}{p(x)p(y)} .
+I(X;Y) = D\big(P_{XY}\thinspace\Vert\thinspace P_X \otimes P_Y\big) = \sum_{x,y} p(x,y) \log\frac{p(x,y)}{p(x)p(y)} .
 $$
 
 엔트로피로 쓰면 다음 항등식들이 모두 같은 양을 가리킨다.
@@ -88,7 +88,7 @@ $$
 증명. 로그는 오목함수이므로 Jensen 부등식을 쓴다([볼록성](convexity.md) 참조). $P$ 의 지지집합 위에서
 
 $$
--D(P\,\|\,Q) = \mathbb{E}_{P}\!\left[\log \frac{q(X)}{p(X)}\right] \le \log \mathbb{E}_{P}\!\left[\frac{q(X)}{p(X)}\right] = \log \sum_{x:\, p(x)>0} q(x) \le \log 1 = 0 .
+-D(P\thinspace\Vert\thinspace Q) = \mathbb{E}_{P}\negthinspace\left[\log \frac{q(X)}{p(X)}\right] \le \log \mathbb{E}_{P}\negthinspace\left[\frac{q(X)}{p(X)}\right] = \log \sum_{x:\thinspace p(x)>0} q(x) \le \log 1 = 0 .
 $$
 
 첫 부등식의 등호는 로그의 순강한 오목성 때문에 비율 $q/p$ 가 $P$ 에 대해 거의 확실히 상수일 때에만, 둘째 등호는 $Q$ 가 $P$ 의 지지집합 밖에 질량을 두지 않을 때에만 성립한다. 두 조건을 합치면 $P=Q$ 다.
@@ -106,13 +106,13 @@ $$
 KL divergence는 거리 공리를 두 개나 어긴다. Bernoulli 분포로 확인하면 충분하다. 매개변수 0.1, 0.5, 0.9인 세 분포를 $P$, $Q$, $R$ 라 하자(자연로그 기준).
 
 $$
-D(P\,\|\,Q) \approx 0.368,\qquad D(Q\,\|\,P) \approx 0.511 .
+D(P\thinspace\Vert\thinspace Q) \approx 0.368,\qquad D(Q\thinspace\Vert\thinspace P) \approx 0.511 .
 $$
 
 두 값이 다르므로 대칭이 아니다. 또한
 
 $$
-D(P\,\|\,R) \approx 1.758 \;>\; D(P\,\|\,Q) + D(Q\,\|\,R) \approx 0.879
+D(P\thinspace\Vert\thinspace R) \approx 1.758 \thickspace>\thickspace D(P\thinspace\Vert\thinspace Q) + D(Q\thinspace\Vert\thinspace R) \approx 0.879
 $$
 
 이므로 삼각부등식도 성립하지 않는다. 그래서 KL divergence는 metric이 아니며 "거리"라는 말을 쓰지 않는다.
@@ -123,13 +123,13 @@ $$
 - Pinsker 부등식이 총변동거리를 위에서 눌러 준다.[^2]
 
 $$
-\|P - Q\|_{TV} \le \sqrt{\tfrac{1}{2} D(P\,\|\,Q)} .
+\Vert P - Q\Vert_{TV} \le \sqrt{\tfrac{1}{2} D(P\thinspace\Vert\thinspace Q)} .
 $$
 
 - KL divergence는 음의 엔트로피를 생성함수로 하는 Bregman divergence이며, 가까운 두 분포에 대해서는 이차 근사가 Fisher 정보 행렬로 주어진다.
 
 $$
-D(P_{\theta}\,\|\,P_{\theta+\delta}) = \tfrac{1}{2}\,\delta^{\top} I(\theta)\, \delta + o(\|\delta\|^2).
+D(P_{\theta}\thinspace\Vert\thinspace P_{\theta+\delta}) = \tfrac{1}{2}\thinspace\delta^{\top} I(\theta)\thinspace \delta + o(\Vert\delta\Vert^2).
 $$
 
 이 국소 이차형식이 정보기하에서 쓰는 Riemann 계량이다.
@@ -167,7 +167,7 @@ $$
 이고, 여기서 $\hat P_n$ 은 경험분포다. 경험분포의 엔트로피는 $\theta$ 와 무관하므로
 
 $$
-\arg\max_{\theta} \frac{1}{n}\sum_{i=1}^{n} \log p_{\theta}(x_i) = \arg\min_{\theta} D\big(\hat{P}_n \,\|\, P_{\theta}\big).
+\arg\max_{\theta} \frac{1}{n}\sum_{i=1}^{n} \log p_{\theta}(x_i) = \arg\min_{\theta} D\big(\hat{P}_n \thinspace\Vert\thinspace P_{\theta}\big).
 $$
 
 즉 [최대가능도 추정](maximum-likelihood.md)은 경험분포에 가장 가까운 모형을 KL 기준으로 고르는 일이다. [큰 수의 법칙](law-of-large-numbers.md)으로 경험분포가 참 분포로 가므로, 모형이 틀린 경우에도 추정량은 참 분포에 KL 기준으로 가장 가까운 모형(유사참 모수)으로 수렴한다. 분류 문제에서 쓰는 교차 엔트로피 손실이 정확히 이 목적함수이고, [지수족](exponential-families.md)에서는 이 최소화가 적률 맞추기로 환원된다.

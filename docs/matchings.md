@@ -54,7 +54,7 @@ graph LR
 $S \subseteq V$ 에 대해
 
 $$
-N(S) = \{\, v \in V : \exists u \in S,\ uv \in E \,\}
+N(S) = \lbrace\thinspace v \in V : \exists u \in S,\ uv \in E \thinspace\rbrace
 $$
 
 를 $S$ 의 이웃 집합이라 한다.

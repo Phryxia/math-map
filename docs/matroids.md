@@ -35,7 +35,7 @@ $E$ 를 유한 집합, $I$ 를 $E$ 의 부분집합들의 모임이라 하자. �
 - 교환 공리:
 
 $$
-A,B\in I,\ |A|<|B|\ \Rightarrow\ \exists e\in B\setminus A:\ A\cup\{e\}\in I
+A,B\in I,\ |A|<|B|\ \Rightarrow\ \exists e\in B\setminus A:\ A\cup\lbrace e\rbrace\in I
 $$
 
 독립이 아닌 집합을 종속집합, 극소 종속집합을 순환이라 한다.
@@ -67,7 +67,7 @@ $$
 계수 함수는 다음을 만족하며, 거꾸로 이 성질들이 matroid 를 정의하기도 한다.
 
 $$
-r(\emptyset)=0,\qquad r(S)\le r(S\cup\{e\})\le r(S)+1
+r(\emptyset)=0,\qquad r(S)\le r(S\cup\lbrace e\rbrace)\le r(S)+1
 $$
 
 $$

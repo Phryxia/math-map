@@ -60,7 +60,7 @@ $$
 집합의 범주에서 당김은 다음과 같이 구체적으로 쓰인다.
 
 $$
-A\times_C B=\{(a,b)\in A\times B\mid f(a)=g(b)\}
+A\times_C B=\lbrace(a,b)\in A\times B\mid f(a)=g(b)\rbrace
 $$
 
 ```mermaid

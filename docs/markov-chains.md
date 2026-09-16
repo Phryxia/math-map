@@ -39,7 +39,7 @@ $$
 각 행의 합이 1인 이런 행렬을 stochastic matrix라 한다. 분포는 행벡터로 두어 오른쪽에서 곱한다.
 
 $$
-\mu_n=\mu_0 P^{\,n},\qquad (\mu_n)_j=\Pr[X_n=j]
+\mu_n=\mu_0 P^{\thinspace n},\qquad (\mu_n)_j=\Pr[X_n=j]
 $$
 
 ## 보조 정의
@@ -50,7 +50,7 @@ $$
 - 주기: 상태 i의 주기는 다음 값이고, 기약 연쇄에서는 모든 상태가 같은 주기를 가진다. 주기가 1이면 비주기적(aperiodic)이다.
 
 $$
-d(i)=\gcd\{\,n\ge 1 : p_{ii}^{(n)}>0\,\}
+d(i)=\gcd\lbrace\thinspace n\ge 1 : p_{ii}^{(n)}>0\thinspace\rbrace
 $$
 
 - 첫 복귀시각과 재귀성: T_i = min{n ≥ 1 : X_n = i}로 두고, i가 재귀적이라는 것은 이 시각이 확률 1로 유한하다는 뜻이다. 기댓값까지 유한하면 양재귀적(positive recurrent)이다.
@@ -67,8 +67,8 @@ $$
 m, n ≥ 0에 대해 중간 시점을 전개하면 행렬 곱이 나온다.
 
 $$
-p_{ij}^{(m+n)}=\sum_{k\in S}p_{ik}^{(m)}\,p_{kj}^{(n)}
-\qquad\Longleftrightarrow\qquad P^{\,m+n}=P^{\,m}P^{\,n}
+p_{ij}^{(m+n)}=\sum_{k\in S}p_{ik}^{(m)}\thinspace p_{kj}^{(n)}
+\qquad\Longleftrightarrow\qquad P^{\thinspace m+n}=P^{\thinspace m}P^{\thinspace n}
 $$
 
 증명은 전체확률의 법칙과 Markov 성질뿐이다. 이 등식이 "연쇄의 해석 = 행렬 거듭제곱"이라는 관점을 정당화한다.
@@ -96,13 +96,13 @@ $$
 유한 상태에서는 total variation 거리로 기하급수적 수렴이 성립하고, 속도는 1 다음으로 큰 고유값의 절댓값(second largest eigenvalue modulus) lambda_2가 지배한다.
 
 $$
-\big\|\mu_0P^{\,n}-\pi\big\|_{\mathrm{TV}}\ \le\ C\,|\lambda_2|^{\,n}
+\big\Vert\mu_0P^{\thinspace n}-\pi\big\Vert_{\mathrm{TV}}\ \le\ C\thinspace|\lambda_2|^{\thinspace n}
 $$
 
 비주기성을 빼면 결론이 깨진다. 두 상태를 확정적으로 왕복하는 연쇄에서는 P의 제곱이 항등행렬이므로 n단계 전이확률이 0과 1 사이를 진동한다. 그래도 정상분포는 각 성분 1/2로 유일하게 존재하고, 시간 평균은 수렴한다. 이것이 ergodic 정리다. 기약 · 양재귀 연쇄에서 f가 pi에 대해 적분 가능하면 확률 1로 다음이 성립한다.
 
 $$
-\frac{1}{n}\sum_{k=0}^{n-1}f(X_k)\ \longrightarrow\ \sum_{j\in S}\pi_j\,f(j)
+\frac{1}{n}\sum_{k=0}^{n-1}f(X_k)\ \longrightarrow\ \sum_{j\in S}\pi_j\thinspace f(j)
 $$
 
 ## 가역성과 detailed balance
@@ -110,7 +110,7 @@ $$
 다음 조건을 만족하는 pi는 자동으로 정상분포다.
 
 $$
-\pi_i\,p_{ij}=\pi_j\,p_{ji}\qquad(\forall i,j)
+\pi_i\thinspace p_{ij}=\pi_j\thinspace p_{ji}\qquad(\forall i,j)
 $$
 
 양변을 i에 대해 더하면 pi P = pi가 나온다. 역은 성립하지 않으므로 detailed balance는 충분조건일 뿐이다. 가역 연쇄에서는 P가 적절한 내적에 대해 자기수반이 되어 고유값이 모두 실수이고, 스펙트럼 이론을 그대로 쓸 수 있다. [그래프](graphs.md) 위의 단순 random walk가 대표적 예이며, 정상분포는 차수에 비례한다.
@@ -126,13 +126,13 @@ $$
 ## 계산 예제
 
 $$
-P=\begin{pmatrix}0.5 & 0.5 & 0\\ 0 & 0 & 1\\ 0.7 & 0 & 0.3\end{pmatrix}
+P=\begin{pmatrix}0.5 & 0.5 & 0\cr 0 & 0 & 1\cr 0.7 & 0 & 0.3\end{pmatrix}
 $$
 
 정상분포는 pi P = pi와 성분 합 1을 연립하면 얻는다. 첫 성분 식은 0.5 pi_1 + 0.7 pi_3 = pi_1, 즉 pi_1 = 1.4 pi_3이고, 둘째 식은 0.5 pi_1 = pi_2다. 정리하면 다음이다.
 
 $$
-\pi=\tfrac{1}{31}\,(14,\ 7,\ 10)
+\pi=\tfrac{1}{31}\thinspace(14,\ 7,\ 10)
 $$
 
 ```python
@@ -169,7 +169,7 @@ P'는 모든 성분이 양수이므로 기약이고 비주기적이다[^2]. 따�
 목표 분포 pi에서 직접 표본을 뽑기 어려울 때, pi를 정상분포로 갖는 연쇄를 설계해 오래 돌린다. Metropolis–Hastings는 제안분포 q에서 후보 y를 뽑고 다음 확률로 수락한다.
 
 $$
-\alpha(x,y)=\min\!\left(1,\ \frac{\pi(y)\,q(y,x)}{\pi(x)\,q(x,y)}\right)
+\alpha(x,y)=\min\negthinspace\left(1,\ \frac{\pi(y)\thinspace q(y,x)}{\pi(x)\thinspace q(x,y)}\right)
 $$
 
 이렇게 정의한 연쇄는 detailed balance를 만족하므로 pi가 정상분포다[^3]. 기약성과 비주기성을 확보하면 ergodic 정리에 의해 표본 평균이 pi에 대한 기댓값으로 수렴한다. 정규화 상수를 몰라도 비율만 필요하다는 점이 실용적 핵심이다. 실무에서는 lambda_2가 1에 가까울 때 혼합이 느려지는 것이 주된 어려움이다.

@@ -5,7 +5,7 @@
 큰 매개변수가 들어간 적분
 
 $$
-I(\lambda)=\int_a^{b}g(x)\,e^{\lambda\varphi(x)}\,dx\qquad(\lambda\to\infty)
+I(\lambda)=\int_a^{b}g(x)\thinspace e^{\lambda\varphi(x)}\thinspace dx\qquad(\lambda\to\infty)
 $$
 
 의 크기를 어떻게 아는가. 답은 단순하다. $e^{\lambda\varphi}$ 는 $\varphi$ 가 최대인 점에서 다른 모든 곳을 압도하므로, **적분 전체가 그 한 점 주위의 좁은 창에서 나온다**. 그 창 안에서 $\varphi$ 를 2 차까지 전개해 Gauss 적분으로 바꾸면 주도항이 나오고, 더 전개하면 점근전개가 나온다. 이것이 Laplace 방법이다.
@@ -81,7 +81,7 @@ $$
 ## Watson 보조정리
 
 $$
-\int_0^{\infty}e^{-\lambda t}\,h(t)\,dt\ \sim\ \sum_{k\ge0}\frac{a_k\,\Gamma(k+\alpha)}{\lambda^{k+\alpha}}
+\int_0^{\infty}e^{-\lambda t}\thinspace h(t)\thinspace dt\ \sim\ \sum_{k\ge0}\frac{a_k\thinspace\Gamma(k+\alpha)}{\lambda^{k+\alpha}}
 \qquad\big(h(t)\sim t^{\alpha-1}\textstyle\sum_ka_kt^{k}\big)
 $$
 
@@ -92,7 +92,7 @@ $$
 $\varphi$ 가 정칙이고 $\varphi'(z_0)=0$ 이며 $\varphi''(z_0)\ne0$ 이면 경로를 $z_0$ 을 지나는 급강하 경로로 변형해
 
 $$
-\oint g\,e^{\lambda\varphi}\,dz\ \sim\ g(z_0)\,e^{\lambda\varphi(z_0)}\sqrt{\frac{2\pi}{\lambda\,|\varphi''(z_0)|}}\;e^{i\theta}
+\oint g\thinspace e^{\lambda\varphi}\thinspace dz\ \sim\ g(z_0)\thinspace e^{\lambda\varphi(z_0)}\sqrt{\frac{2\pi}{\lambda\thinspace|\varphi''(z_0)|}}\thickspace e^{i\theta}
 $$
 
 를 얻는다. $\theta$ 는 급강하 방향의 각도로, $\varphi''(z_0)=|\varphi''|e^{i\psi}$ 일 때 $\theta=-\psi/2$ 또는 그것에 $\pi$ 를 더한 값이다. **방향을 정하는 이 위상이 답의 부호를 결정한다**.
@@ -135,7 +135,7 @@ for n in (5, 10, 20, 50):
 $X_1,\dots,X_n$ 이 독립이고 $M(\theta)=\mathbb E[e^{\theta X}]$ 일 때
 
 $$
-\mathbb P\!\left(\frac1n\sum X_i\approx a\right)\approx e^{-nI(a)},
+\mathbb P\negthinspace\left(\frac1n\sum X_i\approx a\right)\approx e^{-nI(a)},
 \qquad
 I(a)=\sup_\theta\big(\theta a-\log M(\theta)\big)
 $$
@@ -153,7 +153,7 @@ $$
 $p(n)$ 의 생성함수는 $\prod(1-q^{k})^{-1}$ 이고 단위원 위의 모든 유리점이 특이점이라 안장점 하나로 끝나지 않는다. Hardy–Ramanujan 의 원법은 각 유리점 근방에서 [Dedekind eta](theta-functions.md)의 모듈러 변환으로 함수를 뒤집고, 각 조각에 안장점 평가를 적용한 뒤 전부 더한다.
 
 $$
-p(n)\sim\frac1{4n\sqrt3}\exp\!\left(\pi\sqrt{\frac{2n}3}\right)
+p(n)\sim\frac1{4n\sqrt3}\exp\negthinspace\left(\pi\sqrt{\frac{2n}3}\right)
 $$
 
 $q=1$ 근방의 기여가 주도항을 주고 나머지 유리점이 보정을 준다. [분할수와 원법](partitions.md) 문서가 이 계산을 자세히 다룬다. **모듈러성으로 함수를 뒤집고 안장점으로 평가한다**는 이 두 단계 구조가 해석적 수론의 표준 전술이다.
@@ -163,7 +163,7 @@ $q=1$ 근방의 기여가 주도항을 주고 나머지 유리점이 보정을 �
 사후분포 $\pi(\theta\mid D)\propto e^{\log p(D\mid\theta)+\log\pi(\theta)}$ 에서 표본 수 $n$ 이 큰 매개변수 역할을 한다. 최대점이 최대사후추정량이고 2 차 전개의 Hessian 이 공분산이 되므로
 
 $$
-\pi(\theta\mid D)\approx\mathcal N\!\left(\hat\theta,\ \big(-\nabla^{2}\log p\big)^{-1}\right),
+\pi(\theta\mid D)\approx\mathcal N\negthinspace\left(\hat\theta,\ \big(-\nabla^{2}\log p\big)^{-1}\right),
 \qquad
 \log p(D)\approx\log p(D\mid\hat\theta)-\frac{d}2\log n+\cdots
 $$

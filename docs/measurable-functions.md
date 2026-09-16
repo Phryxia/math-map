@@ -45,7 +45,7 @@ $X$ 가 $\mathbb R$ 이고 $\Sigma$ 가 Lebesgue 가측집합이면 Lebesgue 가
 모든 Borel 집합을 확인할 필요는 없다. 실수값 함수에서는 모든 $a \in \mathbb R$ 에 대해
 
 $$
-\{x\in X: f(x)>a\}\in\Sigma
+\lbrace x\in X: f(x)>a\rbrace\in\Sigma
 $$
 
 만 확인하면 충분하다. 역상은 여집합과 가산 합집합을 보존하므로 $\lbrace B : f^{-1}(B) \in \Sigma\rbrace$ 가 $\sigma$ -대수를 이루고, 반직선들이 Borel $\sigma$ -대수를 생성하기 때문이다. $>$ 대신 $\ge$ 나 $<$ 나 $\le$ 중 어느 것을 써도 같다.
@@ -80,7 +80,7 @@ for n in (1, 3, 6, 12):
 $f$ 와 $g$ 가 실수값 가측함수면 $f + g$ 와 $fg$ 와 $cf$ 와 $\max(f,g)$ 와 $\min(f,g)$ 와 $\lvert f \rvert$ 와 $f^+$ 와 $f^-$ 가 모두 가측이다. 합의 가측성은
 
 $$
-\{f+g>a\}=\bigcup_{q\in\mathbb{Q}}\bigl(\{f>q\}\cap\{g>a-q\}\bigr)
+\lbrace f+g>a\rbrace=\bigcup_{q\in\mathbb{Q}}\bigl(\lbrace f>q\rbrace\cap\lbrace g>a-q\rbrace\bigr)
 $$
 
 로 보인다. 유리수에 대한 가산 합집합이라는 점이 $\sigma$ -대수의 가산 연산 요구와 맞물린다.
@@ -90,7 +90,7 @@ $$
 가측함수열 $f_n$ 에 대해 $\sup f_n$ 과 $\inf f_n$ 과 $\limsup f_n$ 과 $\liminf f_n$ 이 모두 가측이다.
 
 $$
-\Bigl\{\sup_n f_n>a\Bigr\}=\bigcup_n\{f_n>a\}
+\Bigl\lbrace\sup_n f_n>a\Bigr\rbrace=\bigcup_n\lbrace f_n>a\rbrace
 $$
 
 가 핵심이고 나머지는 여기서 따라온다. 따라서 점별 극한이 존재하면 그 극한도 가측이다.

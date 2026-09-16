@@ -89,7 +89,7 @@ $$
 이 모형의 순서형은 표준 부분 뒤에 정수 사슬들이 조밀하게 늘어선 모양이다.
 
 $$
-\mathbb{N} \;+\; \mathbb{Z} \times \mathbb{Q}
+\mathbb{N} \thickspace+\thickspace \mathbb{Z} \times \mathbb{Q}
 $$
 
 가산 비표준 모형에 대해서는 Tennenbaum 정리가 더 강한 말을 한다. 덧셈과 곱셈이 계산 가능한 가산 비표준 모형은 존재하지 않는다. 비표준 모형은 존재하지만 결코 손에 잡히게 구성되지는 않는다는 뜻이다.

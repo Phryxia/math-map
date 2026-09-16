@@ -13,7 +13,7 @@ $$
 Lang 과 Trotter 는 1976 년에 그 빈자리를 채우는 추측을 냈다.
 
 $$
-\#\{p\le X:\ a_p=r\}\ \sim\ C_{E,r}\,\frac{\sqrt X}{\log X}
+\char35{}\lbrace p\le X:\ a_p=r\rbrace\ \sim\ C_{E,r}\thinspace\frac{\sqrt X}{\log X}
 $$
 
 $\sqrt X/\log X$ 다. $\pi(X)\approx X/\log X$ 에 비해 제곱근만큼 작다. $r=0$ 인 경우가 **초특이 소수**의 개수이고, 여기에는 별도의 상수와 별도의 역사가 있다.
@@ -37,7 +37,7 @@ Sato–Tate 와 Lang–Trotter 의 차이는 **띠와 점**의 차이다.
 $|a_p|\le\delta\cdot2\sqrt p$ 라는 조건은 각의 **구간**을 지정한다. $\delta$ 가 작아도 구간의 길이는 양수이므로 Sato–Tate 측도가 양의 질량을 주고, 그런 소수는 양의 밀도로 존재한다. 질량은 대략
 
 $$
-\int_{\pi/2-\arcsin\delta}^{\pi/2+\arcsin\delta}\frac2\pi\sin^2\theta\,d\theta\ \approx\ \frac{4\delta}\pi
+\int_{\pi/2-\arcsin\delta}^{\pi/2+\arcsin\delta}\frac2\pi\sin^2\theta\thinspace d\theta\ \approx\ \frac{4\delta}\pi
 $$
 
 다. 아래 계산에서 $\delta=0.02$ 로 이 값을 확인한다.
@@ -85,7 +85,7 @@ graph TD
 $E/\mathbb Q$ 를 복소곱셈이 없는 타원곡선, $r\in\mathbb Z$ 를 고정한다.
 
 $$
-\pi_{E,r}(X)=\#\{p\le X:\ p\ \text{좋은 환원},\ a_p=r\}
+\pi_{E,r}(X)=\char35{}\lbrace p\le X:\ p\ \text{좋은 환원},\ a_p=r\rbrace
 $$
 
 > **추측 (Lang–Trotter, 1976).** $r\ne0$ 이거나 $r=0$ 이면
@@ -107,7 +107,7 @@ $p$ 가 **초특이 소수**라 함은 $E$ 의 $\bmod p$ 환원이 초특이라�
 무조건적으로 알려진 것은 이 정도다.
 
 $$
-\pi_{E,r}(X)\ \ll\ \frac{X\,(\log\log X)^2}{(\log X)^2}
+\pi_{E,r}(X)\ \ll\ \frac{X\thinspace(\log\log X)^2}{(\log X)^2}
 $$
 
 추측값 $\sqrt X/\log X$ 와 비교하면 거의 $\sqrt X$ 만큼 멀다. 일반화 Riemann 가설을 가정하면 $X^{4/5}$ 규모까지 내려가지만, 여전히 $\sqrt X$ 에는 못 미친다. CM 이 있는 경우는 사정이 낫다. 허수이차체의 Hecke 지표로 환원되어 $\pi_{E,0}(X)\sim\frac12\pi(X)$ 처럼 정확한 답이 나온다.

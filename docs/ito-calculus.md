@@ -13,7 +13,7 @@ Itô 의 해법은 적분을 경로별로 정의하기를 포기하고 $L^2$ 극
 보통의 적분에서는 구간 안 어느 점을 대표로 잡아도 극한이 같다. 하지만 $\int_0^T B\thinspace dB$ 를 대표점 $B_{t_i}$ 로 계산한 값과 $B_{(t_i+t_{i+1})/2}$ 로 계산한 값은 극한에서 $T/2$ 만큼 다르다. 2차변동이 0 이 아니기 때문이다.
 
 $$
-\int_0^TB\,dB=\frac{B_T^2-T}{2}\quad(\text{Itô}),\qquad \int_0^TB\circ dB=\frac{B_T^2}{2}\quad(\text{Stratonovich})
+\int_0^TB\thinspace dB=\frac{B_T^2-T}{2}\quad(\text{Itô}),\qquad \int_0^TB\circ dB=\frac{B_T^2}{2}\quad(\text{Stratonovich})
 $$
 
 왼쪽 끝점을 고르는 것은 "다음에 무슨 일이 일어날지 모르는 상태에서 지금 결정한다" 는 뜻이다. 도박에서 판돈을 결과를 보기 전에 거는 것과 같고, 그래서 Itô 적분은 martingale 이 되고 기댓값이 0 이 된다. 중점을 고르면 미래를 조금 엿보게 되어 martingale 성질을 잃는 대신 보통의 연쇄법칙을 되찾는다. 두 방식은 서로 변환할 수 있고, 확률론과 통계에서는 Itô 를, 물리에서 기존 미적분과의 호환이 중요한 경우에는 Stratonovich 를 쓴다.
@@ -23,7 +23,7 @@ $$
 증분의 제곱합이 $t$ 로 수렴한다는 사실을 기호로 줄여 쓰면 다음과 같다.
 
 $$
-(dB)^2=dt,\qquad dB\,dt=0,\qquad (dt)^2=0
+(dB)^2=dt,\qquad dB\thinspace dt=0,\qquad (dt)^2=0
 $$
 
 $f(B_t)$ 를 Taylor 전개할 때 1차항만 남기던 습관이 여기서 깨진다. 2차항 $\tfrac12 f''(B)(dB)^2$ 가 $\tfrac12 f''(B)\thinspace dt$ 로 살아남기 때문이다. Itô 공식은 이 한 줄의 결과일 뿐이다.
@@ -35,7 +35,7 @@ $f(B_t)$ 를 Taylor 전개할 때 1차항만 남기던 습관이 여기서 깨�
 $(\mathcal F_t)$ 를 Brown 운동의 filtration 이라 하자. 적분되는 과정 $H$ 는 adapted, 즉 시각 $t$ 의 값이 $\mathcal F_t$ 만 보고 정해져야 한다. $H$ 가 구간마다 상수인 단순 과정이면 적분을 합으로 정의한다.
 
 $$
-\int_0^TH_s\,dB_s=\sum_{i}H_{t_i}\big(B_{t_{i+1}}-B_{t_i}\big)
+\int_0^TH_s\thinspace dB_s=\sum_{i}H_{t_i}\big(B_{t_{i+1}}-B_{t_i}\big)
 $$
 
 각 항에서 $H_{t_i}$ 는 증분과 독립이므로 기댓값이 0 이고, 따라서 이 합은 martingale 이다.
@@ -45,7 +45,7 @@ $$
 단순 과정에 대해 다음 등식이 성립한다. 교차항이 독립증분 때문에 사라지고 대각항만 남기 때문이다.
 
 $$
-\mathbb{E}\bigg[\Big(\int_0^TH_s\,dB_s\Big)^2\bigg]=\mathbb{E}\bigg[\int_0^TH_s^2\,ds\bigg]
+\mathbb{E}\bigg[\Big(\int_0^TH_s\thinspace dB_s\Big)^2\bigg]=\mathbb{E}\bigg[\int_0^TH_s^2\thinspace ds\bigg]
 $$
 
 좌변은 확률적분의 $L^2$ 노름이고 우변은 보통 적분의 노름이다. 즉 적분 연산은 등거리사상이고, 단순 과정이 조밀하므로 이 사상은 $\int_0^T \mathbb{E}[H_s^2]\thinspace ds < \infty$ 인 adapted 과정 전체로 유일하게 연장된다. 이렇게 정의된 $\int H\thinspace dB$ 는 연속 martingale 이며 기댓값이 0 이다.
@@ -55,7 +55,7 @@ $$
 $X_t = X_0 + \int_0^t a_s\thinspace ds + \int_0^t b_s\thinspace dB_s$ 를 Itô 과정이라 하고 $f$ 가 두 번 연속미분가능하면 다음이 성립한다.
 
 $$
-df(t,X_t)=\Big(\partial_tf+a_t\,\partial_xf+\tfrac12 b_t^2\,\partial_x^2f\Big)dt+b_t\,\partial_xf\,dB_t
+df(t,X_t)=\Big(\partial_tf+a_t\thinspace\partial_xf+\tfrac12 b_t^2\thinspace\partial_x^2f\Big)dt+b_t\thinspace\partial_xf\thinspace dB_t
 $$
 
 $\tfrac12 b^2 \partial_x^2 f$ 항이 고전적 연쇄법칙과의 유일한 차이이며 $(dB)^2 = dt$ 에서 나온다. 가장 단순한 경우로 $f(x) = x^2$ 와 $X = B$ 를 넣으면 $d(B^2) = 2B\thinspace dB + dt$ 이고, 적분하면 앞의 $\int B\thinspace dB$ 공식이 된다.
@@ -65,7 +65,7 @@ $\tfrac12 b^2 \partial_x^2 f$ 항이 고전적 연쇄법칙과의 유일한 차�
 계수 $a(t,x)$ 와 $b(t,x)$ 에 대한 SDE 는 적분형으로 정의된다.
 
 $$
-X_t=X_0+\int_0^ta(s,X_s)\,ds+\int_0^tb(s,X_s)\,dB_s
+X_t=X_0+\int_0^ta(s,X_s)\thinspace ds+\int_0^tb(s,X_s)\thinspace dB_s
 $$
 
 $a$ 와 $b$ 가 $x$ 에 대해 Lipschitz 이고 선형 증가 조건을 만족하면 강해가 유일하게 존재한다. 증명은 상미분방정식의 Picard 반복과 같은 구조이고, 수축을 확인하는 자리에서 Itô 등거리가 쓰인다.

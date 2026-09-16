@@ -38,7 +38,7 @@ graph TD
 **정의.** 개념 $F$ 와 $G$ 가 동수라 함은 $F$ 에 속하는 대상과 $G$ 에 속하는 대상 사이에 전단사 관계가 존재한다는 뜻이다. 이 조건은 [1차 논리](first-order-logic.md)의 2차 확장, 즉 관계 변항에 양화를 허용하는 언어에서 순수 논리적으로 쓸 수 있다.
 
 $$
-F \approx G \;:=\; \exists R \,\big[\, \text{R is a bijection between } F \text{ and } G \,\big]
+F \approx G \thickspace:=\thickspace \exists R \thinspace\big[\thinspace \text{R is a bijection between } F \text{ and } G \thinspace\big]
 $$
 
 여기에 집합 개념이 전혀 쓰이지 않는다는 점이 중요하다. 필요한 것은 관계에 대한 양화뿐이다.
@@ -48,7 +48,7 @@ $$
 **정의(HP).** 개념에 대상을 대응시키는 연산 $\char35{}$ 에 대해 다음이 성립한다는 것이 Hume 원리다.
 
 $$
-\#F = \#G \iff F \approx G
+\char35{}F = \char35{}G \iff F \approx G
 $$
 
 이것은 추상화 원리(abstraction principle)의 한 예다. 좌변은 대상들의 동일성이고 우변은 개념들 사이의 동치관계다. 새 대상의 동일성 조건을 이미 이해된 관계로 규정한다는 형태다.
@@ -58,7 +58,7 @@ $$
 **정의(Basic Law V).** 개념 $F$ 에 그 값범위 또는 외연 $ext(F)$ 를 대응시키는 연산에 대해 다음이 성립한다는 것이 기본 법칙 V 다.
 
 $$
-\mathrm{ext}(F) = \mathrm{ext}(G) \iff \forall x\,(Fx \leftrightarrow Gx)
+\mathrm{ext}(F) = \mathrm{ext}(G) \iff \forall x\thinspace(Fx \leftrightarrow Gx)
 $$
 
 형태는 Hume 원리와 같지만 우변의 동치관계가 훨씬 촘촘하다. 동수성은 개념들을 크기에 따라 거칠게 나누지만, 외연 동일성은 개념을 거의 낱낱으로 나눈다. 그만큼 많은 대상을 요구하고, 그것이 파국의 원인이 된다.
@@ -68,13 +68,13 @@ $$
 기본 법칙 V 를 쓸 수 있다면 수를 명시적으로 정의할 수 있다.
 
 $$
-\#F \;:=\; \mathrm{ext}\big(\lambda G.\ G \approx F\big)
+\char35{}F \thickspace:=\thickspace \mathrm{ext}\big(\lambda G.\ G \approx F\big)
 $$
 
 즉 $F$ 의 수는 "$F$ 와 동수임"이라는 2계 개념의 외연이다. 이어서 다음을 정의한다.
 
 $$
-0 := \#\big(\lambda x.\ x \ne x\big)
+0 := \char35{}\big(\lambda x.\ x \ne x\big)
 $$
 
 후속자 관계는 "$F$ 에서 한 원소를 뺀 개념의 수가 $m$ 이고 $F$ 의 수가 $n$ 이면 $n$ 은 $m$ 의 후속자"로 정의하고, 자연수는 "0 에서 후속자 관계를 따라 도달 가능한 대상"으로 정의한다. 이 마지막 정의는 관계의 조상(ancestral) 개념을 2차 논리로 쓴 것이며, 수학적 귀납법이 정의에서 바로 따라 나오게 만드는 장치다. [명제와 증명](proofs.md)에서 귀납법을 공리로 받는 것과 대조적이다.

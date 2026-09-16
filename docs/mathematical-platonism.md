@@ -26,7 +26,7 @@ graph TD
 platonism의 세 주장을 명제로 적는다. 대상의 영역을 M이라 하자[^1].
 
 $$
-\textbf{Existence:}\quad \exists x\,(x \in M)
+\textbf{Existence:}\quad \exists x\thinspace(x \in M)
 $$
 
 $$
@@ -67,9 +67,9 @@ Benacerraf의 "Mathematical Truth"는 두 요구가 동시에 충족되기 어�
 Benacerraf의 다른 논문 "What Numbers Could Not Be"는 자연수를 집합으로 구현하는 방식이 여러 가지임을 지적한다. von Neumann 순서수와 Zermelo 표현은 모두 Peano 공리를 만족한다.
 
 $$
-0=\varnothing,\quad n+1=n\cup\{n\}
+0=\varnothing,\quad n+1=n\cup\lbrace n\rbrace
 \qquad\text{vs.}\qquad
-0=\varnothing,\quad n+1=\{n\}
+0=\varnothing,\quad n+1=\lbrace n\rbrace
 $$
 
 산술만으로는 둘 중 어느 것이 "진짜 2"인지 결정할 수 없고, 결정할 필요도 없어 보인다. 이는 개별 대상보다 구조가 본질적이라는 결론으로 이어지며 구조주의의 주요 동기다. platonist의 대응은 두 가지다. 어느 한쪽이 실제 자연수라고 인정하되 우리가 알 수 없다고 보거나 (agnostic platonism), 자연수를 구조 안의 위치로 재해석한다.

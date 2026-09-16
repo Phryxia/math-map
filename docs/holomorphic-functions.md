@@ -42,7 +42,7 @@ $$
 곡선 $\gamma$ 가 구간 $[a,b]$ 에서 $U$ 로 가는 조각적 매끄러운 경로일 때 경로 적분은 실 [Riemann 적분](riemann-integral.md)으로 정의된다.
 
 $$
-\int_{\gamma}f(z)\,dz=\int_a^b f\bigl(\gamma(t)\bigr)\gamma'(t)\,dt
+\int_{\gamma}f(z)\thinspace dz=\int_a^b f\bigl(\gamma(t)\bigr)\gamma'(t)\thinspace dt
 $$
 
 $U$ 가 단순연결(simply connected)이라는 것은 $U$ 안의 모든 닫힌 곡선을 $U$ 안에서 한 점으로 연속적으로 줄일 수 있다는 뜻이다.
@@ -50,7 +50,7 @@ $U$ 가 단순연결(simply connected)이라는 것은 $U$ 안의 모든 닫힌 
 고립 특이점 $z_0$ 에서 Laurent 급수의 $-1$ 차 계수를 유수(residue)라 하며, 충분히 작은 반지름의 원 적분으로 표현된다.
 
 $$
-\operatorname{Res}_{z=z_0}f=\frac{1}{2\pi i}\oint_{\lvert z-z_0\rvert=\rho}f(z)\,dz
+\operatorname{Res}_{z=z_0}f=\frac{1}{2\pi i}\oint_{\lvert z-z_0\rvert=\rho}f(z)\thinspace dz
 $$
 
 # 성질
@@ -60,7 +60,7 @@ $$
 $f$ 가 열린집합 $U$ 에서 정칙이고 $U$ 가 단순연결이면, $U$ 안의 임의의 닫힌 경로 $\gamma$ 에 대해 적분이 $0$ 이다[^1].
 
 $$
-\oint_{\gamma}f(z)\,dz=0
+\oint_{\gamma}f(z)\thinspace dz=0
 $$
 
 Goursat의 기여는 $f$ 의 도함수의 연속성을 따로 가정하지 않아도 된다는 점이다[^1]. 증명 개요: 먼저 삼각형 경로에서 보인다. 삼각형을 변의 중점으로 네 개의 닮은 삼각형으로 쪼개면 적분값의 절댓값이 가장 큰 조각을 고를 수 있고, 이를 반복하면 한 점으로 수렴하는 삼각형 열을 얻는다. 그 점에서의 미분가능성으로 $f$ 를 일차식 더하기 오차로 쓰면, 일차식의 닫힌 경로 적분은 $0$ 이고 오차 항은 둘레의 제곱에 비례해 사라진다. 볼록(또는 별모양) 영역에서는 이로부터 원시함수를 구성하고, 단순연결 영역으로는 경로의 호모토피 불변성으로 확장한다. 단순연결성은 빠뜨릴 수 없다. $U$ 를 원점을 뺀 평면으로 두면 $1/z$ 은 정칙이지만 단위원 적분은 $2\pi i$ 다.
@@ -70,13 +70,13 @@ Goursat의 기여는 $f$ 의 도함수의 연속성을 따로 가정하지 않�
 $f$ 가 $U$ 에서 정칙, 폐원판이 $U$ 에 포함되고 $\gamma$ 가 그 경계원을 양의 방향으로 한 번 도는 경로이면, 원판 내부의 모든 $z$ 에서 다음이 성립한다[^2].
 
 $$
-f(z)=\frac{1}{2\pi i}\oint_{\gamma}\frac{f(w)}{w-z}\,dw
+f(z)=\frac{1}{2\pi i}\oint_{\gamma}\frac{f(w)}{w-z}\thinspace dw
 $$
 
 고계 도함수에 대해서도 같은 꼴이 성립한다.
 
 $$
-f^{(n)}(z)=\frac{n!}{2\pi i}\oint_{\gamma}\frac{f(w)}{(w-z)^{n+1}}\,dw
+f^{(n)}(z)=\frac{n!}{2\pi i}\oint_{\gamma}\frac{f(w)}{(w-z)^{n+1}}\thinspace dw
 $$
 
 따라서 정칙함수는 무한 번 미분가능하고 각 점의 근방에서 수렴하는 멱급수로 전개된다(해석적). 역방향으로 Morera 정리는 연속함수의 모든 삼각형 경로 적분이 0이면 그 함수가 정칙임을 말한다.
@@ -86,7 +86,7 @@ $$
 중심 $z_0$ , 반지름 $R$ 의 원 위에서 $f$ 의 절댓값이 $M$ 이하이면 적분 공식에서 즉시 다음을 얻는다.
 
 $$
-\bigl\lvert f^{(n)}(z_0)\bigr\rvert\le \frac{n!\,M}{R^n}
+\bigl\lvert f^{(n)}(z_0)\bigr\rvert\le \frac{n!\thinspace M}{R^n}
 $$
 
 $f$ 가 평면 전체에서 정칙(entire)이고 절댓값이 상수 $M$ 으로 유계이면, 임의의 $R$ 에 대해 위 추정이 성립하므로 $R$ 을 무한히 크게 보내 도함수가 $0$ 임을 얻는다. 모든 점에서 도함수가 $0$ 이므로 $f$ 는 상수다. 이것이 Liouville 정리다.
@@ -102,7 +102,7 @@ $n$ 차( $n\ge 1$ ) 복소계수 다항식 $p$ 는 복소 영점을 갖는다. �
 - 유수 정리: $f$ 가 닫힌 경로와 그 내부에서 유한히 많은 고립 특이점만 갖고 경로 위에서 정칙이면 적분은 내부 특이점 유수의 합으로 계산된다.
 
 $$
-\oint_{\gamma}f(z)\,dz=2\pi i\sum_{k}\operatorname{Res}_{z=z_k}f
+\oint_{\gamma}f(z)\thinspace dz=2\pi i\sum_{k}\operatorname{Res}_{z=z_k}f
 $$
 
 # 활용

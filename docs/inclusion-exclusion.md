@@ -38,7 +38,7 @@ $$
 
 $$
 \Bigl|\bigcup_{i=1}^{n}A_i\Bigr|
-=\sum_{\varnothing\ne S\subseteq[n]}(-1)^{|S|-1}\,|A_S|
+=\sum_{\varnothing\ne S\subseteq[n]}(-1)^{|S|-1}\thinspace|A_S|
 =\sum_{j=1}^{n}(-1)^{j-1}\sum_{|S|=j}|A_S|
 $$
 
@@ -47,7 +47,7 @@ $$
 실제 계산에서는 "모든 조건을 피하는" 원소의 개수를 세는 다음 형태가 더 쓰기 편하다.
 
 $$
-\Bigl|\,U\setminus\bigcup_{i=1}^{n}A_i\Bigr|=\sum_{S\subseteq[n]}(-1)^{|S|}\,|A_S|
+\Bigl|\thinspace U\setminus\bigcup_{i=1}^{n}A_i\Bigr|=\sum_{S\subseteq[n]}(-1)^{|S|}\thinspace|A_S|
 $$
 
 ## 지시함수 증명
@@ -109,7 +109,7 @@ $$
 크기 n의 집합에서 크기 m의 집합으로 가는 전사 [함수](functions.md)의 개수는 상이 i번째 값을 빠뜨리는 사건에 포함배제를 적용해 얻는다.
 
 $$
-\bigl|\{f:[n]\twoheadrightarrow[m]\}\bigr|=\sum_{j=0}^{m}(-1)^{j}\binom{m}{j}(m-j)^{n}=m!\,S(n,m)
+\bigl|\lbrace f:[n]\twoheadrightarrow[m]\rbrace\bigr|=\sum_{j=0}^{m}(-1)^{j}\binom{m}{j}(m-j)^{n}=m!\thinspace S(n,m)
 $$
 
 여기서 S(n,m)은 제2종 Stirling 수다.

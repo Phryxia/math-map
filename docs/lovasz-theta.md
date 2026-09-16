@@ -55,7 +55,7 @@ $G=(V,E)$ 의 직교 표현은 각 정점에 배정된 단위벡터 $u_i\in\math
 ## 세타 함수
 
 $$
-\vartheta(G)=\min_{\{u_i\},\,c}\ \max_{i\in V}\frac1{\langle c,u_i\rangle^2}
+\vartheta(G)=\min_{\lbrace u_i\rbrace,\thinspace c}\ \max_{i\in V}\frac1{\langle c,u_i\rangle^2}
 $$
 
 $\lbrace u_i\rbrace$ 는 $G$ 의 직교 표현이고 $c$ 는 단위벡터다. 모든 정점이 $c$ 와 되도록 가까운 방향을 갖도록 표현을 고르는 문제다.
@@ -65,7 +65,7 @@ $\lbrace u_i\rbrace$ 는 $G$ 의 직교 표현이고 $c$ 는 단위벡터다. �
 동치인 서술이 여럿 있으며, 다음이 계산에 쓰인다.
 
 $$
-\vartheta(G)=\max\ \{\,\mathrm{tr}(JX)\ :\ X\succeq0,\ \mathrm{tr}(X)=1,\ X_{ij}=0\ \ \forall ij\in E\,\}
+\vartheta(G)=\max\ \lbrace\thinspace\mathrm{tr}(JX)\ :\ X\succeq0,\ \mathrm{tr}(X)=1,\ X_{ij}=0\ \ \forall ij\in E\thinspace\rbrace
 $$
 
 $J$ 는 모든 성분이 1 인 행렬이다. $X$ 가 랭크 1 인 $xx^{\mathsf T}$ 로 제한되면 독립집합 문제 그 자체가 되고, 랭크 제약을 푼 것이 이 완화다.
@@ -73,7 +73,7 @@ $J$ 는 모든 성분이 1 인 행렬이다. $X$ 가 랭크 1 인 $xx^{\mathsf T
 쌍대는 고윳값 문제다.
 
 $$
-\vartheta(G)=\min\ \{\,\lambda_{\max}(A)\ :\ A=A^{\mathsf T},\ A_{ij}=1\ \text{if}\ i=j\ \text{or}\ ij\notin E\,\}
+\vartheta(G)=\min\ \lbrace\thinspace\lambda_{\max}(A)\ :\ A=A^{\mathsf T},\ A_{ij}=1\ \text{if}\ i=j\ \text{or}\ ij\notin E\thinspace\rbrace
 $$
 
 간선에 해당하는 성분만 자유롭게 고르고 나머지는 1 로 고정한 뒤 최대고윳값을 최소화한다. 강쌍대성이 성립해 두 값이 같다.
@@ -109,8 +109,8 @@ $G$ 가 완전그래프(perfect graph)면 $\alpha(G)=\vartheta(G)=\chi(\bar G)$ 
 ## 곱셈성과 보그래프
 
 $$
-\vartheta(G\boxtimes H)=\vartheta(G)\,\vartheta(H),\qquad
-\vartheta(G)\,\vartheta(\bar G)\ge n
+\vartheta(G\boxtimes H)=\vartheta(G)\thinspace\vartheta(H),\qquad
+\vartheta(G)\thinspace\vartheta(\bar G)\ge n
 $$
 
 정점추이적 그래프에서는 둘째 부등식이 등호가 된다. $C_5$ 는 자기 보그래프와 동형이므로 $\vartheta(C_5)^2=5$ 이고 곧 $\vartheta(C_5)=\sqrt5$ 다.

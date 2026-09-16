@@ -5,7 +5,7 @@
 $D$ 가 콤팩트 다양체 위의 타원 미분작용소면 해공간이 유한차원이다. 그래서 정수 하나를 정의할 수 있다.
 
 $$
-\mathrm{ind}(D)=\dim\ker D-\dim\mathrm{coker}\,D
+\mathrm{ind}(D)=\dim\ker D-\dim\mathrm{coker}\thinspace D
 $$
 
 **해석적 지표**라 한다. $D$ 의 계수를 연속적으로 흔들면 $\dim\ker D$ 와 $\dim\mathrm{coker}\thinspace D$ 는 각각 뛰지만, 차이는 변하지 않는다. 해석적으로 정의된 양이 변형에 둔감하다면 위상적 정보만 담고 있을 것이다.
@@ -13,7 +13,7 @@ $$
 Atiyah–Singer 지표 정리가 그 정보를 정확히 지목한다. 지표는 $D$ 의 최고차 기호가 정의하는 위상적 데이터, 곧 **위상적 지표**와 같다.
 
 $$
-\mathrm{ind}(D)=\int_M\mathrm{ch}(\sigma_D)\,\mathrm{Td}(TM\otimes\mathbb C)
+\mathrm{ind}(D)=\int_M\mathrm{ch}(\sigma_D)\thinspace\mathrm{Td}(TM\otimes\mathbb C)
 $$
 
 우변에는 미분방정식이 전혀 없다. 다양체의 특성류와 기호의 $K$ 이론 류만 들어간다. 좌변은 해를 세는 일이고 우변은 위상을 재는 일인데 두 답이 같다.
@@ -41,7 +41,7 @@ $$
 이다. 해석적 지표가 Euler 지표다. 한편 위상적 지표 쪽은 Gauss–Bonnet 의 곡률 적분이 된다.
 
 $$
-\frac1{2\pi}\int_MK\,dA=\chi(M)
+\frac1{2\pi}\int_MK\thinspace dA=\chi(M)
 $$
 
 곧 Gauss–Bonnet 은 de Rham 복합체에 대한 지표 정리다. 미분방정식의 해를 세는 일과 곡률을 적분하는 일이 같은 정수를 준다는 최초의 사례이며, 아래 코드가 이 등식을 다면체 곡면에서 직접 확인한다.
@@ -77,13 +77,13 @@ $$
 ## 해석적 지표와 위상적 지표
 
 $$
-\mathrm{ind}_{\mathrm{an}}(D)=\dim\ker D-\dim\mathrm{coker}\,D
+\mathrm{ind}_{\mathrm{an}}(D)=\dim\ker D-\dim\mathrm{coker}\thinspace D
 $$
 
 위상적 지표는 기호만으로 만든다. $\sigma_D$ 가 $T^*M$ 위에서 콤팩트 받침을 갖는 $K$ 이론 류 $[\sigma_D]\in K(T^*M)$ 를 정의하고, 이를 한 점의 $K$ 이론으로 밀어내려 정수를 얻는다. 특성류로 쓰면
 
 $$
-\mathrm{ind}_{\mathrm{top}}(D)=(-1)^{\dim M}\int_{T^*M}\mathrm{ch}([\sigma_D])\,\mathrm{Td}(TM\otimes\mathbb C)
+\mathrm{ind}_{\mathrm{top}}(D)=(-1)^{\dim M}\int_{T^*M}\mathrm{ch}([\sigma_D])\thinspace\mathrm{Td}(TM\otimes\mathbb C)
 $$
 
 이다. $\mathrm{ch}$ 는 Chern 지표, $\mathrm{Td}$ 는 Todd 류다.
@@ -97,7 +97,7 @@ $$
 세 번째 증명이 열핵 방법이다. 항등식
 
 $$
-\mathrm{ind}(D)=\mathrm{tr}\,e^{-tD^*D}-\mathrm{tr}\,e^{-tDD^*}
+\mathrm{ind}(D)=\mathrm{tr}\thinspace e^{-tD^*D}-\mathrm{tr}\thinspace e^{-tDD^*}
 $$
 
 이 모든 $t>0$ 에서 성립한다. 0 이 아닌 고윳값들이 양쪽에서 짝을 이뤄 상쇄되기 때문이다. 좌변이 $t$ 에 무관하므로 $t\to0$ 극한을 취할 수 있고, 열핵의 국소 전개에서 특성류 적분이 나온다. 해석적 양이 국소 기하로 환원되는 과정이 눈에 보이는 증명이며, 초대칭을 쓰는 물리학자들의 논증도 이 구조를 따른다.

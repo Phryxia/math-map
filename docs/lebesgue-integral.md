@@ -37,7 +37,7 @@ graph TD
 
 $$
 s=\sum_{i=1}^n c_i\mathbf{1}_{A_i},\qquad
-\int_X s\,d\mu=\sum_{i=1}^n c_i\,\mu(A_i)
+\int_X s\thinspace d\mu=\sum_{i=1}^n c_i\thinspace\mu(A_i)
 $$
 
 로 정한다. 여기서 $0 \cdot \infty = 0$ 으로 약속한다. 이 값이 $s$ 의 표현 방식에 의존하지 않는다는 것은 공통 세분을 취해 확인한다.
@@ -47,13 +47,13 @@ $$
 음이 아닌 가측함수 $f$ 에 대해
 
 $$
-\int_X f\,d\mu=\sup\Bigl\{\int_X s\,d\mu\ :\ 0\le s\le f,\ s\text{ 단순}\Bigr\}
+\int_X f\thinspace d\mu=\sup\Bigl\lbrace\int_X s\thinspace d\mu\ :\ 0\le s\le f,\ s\text{ 단순}\Bigr\rbrace
 $$
 
 로 정의하며 값으로 $\infty$ 를 허용한다. 실수값 가측함수는 $f^+ = \max(f, 0)$ 과 $f^- = \max(-f, 0)$ 으로 쪼개
 
 $$
-\int_X f\,d\mu=\int_X f^+\,d\mu-\int_X f^-\,d\mu
+\int_X f\thinspace d\mu=\int_X f^+\thinspace d\mu-\int_X f^-\thinspace d\mu
 $$
 
 로 정한다. 두 항이 모두 무한대면 정의되지 않는다. $\int \lvert f \rvert\thinspace d\mu < \infty$ 일 때 $f$ 가 적분 가능하다고 하고, 그런 함수들의 모임을 $L^1(\mu)$ 라 쓴다. 가측집합 $E$ 위의 적분은 $\int f \cdot \mathbf{1}_E\thinspace d\mu$ 다.
@@ -86,7 +86,7 @@ $$
 단조수렴 정리의 따름정리로 음이 아닌 항의 급수와 적분을 항상 교환할 수 있다.
 
 $$
-\int_X\sum_{n=1}^\infty f_n\,d\mu=\sum_{n=1}^\infty\int_X f_n\,d\mu\qquad(f_n\ge0)
+\int_X\sum_{n=1}^\infty f_n\thinspace d\mu=\sum_{n=1}^\infty\int_X f_n\thinspace d\mu\qquad(f_n\ge0)
 $$
 
 ## Riemann 적분과의 관계

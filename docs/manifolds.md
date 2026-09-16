@@ -27,7 +27,7 @@ flowchart LR
 $M$ 을 위상공간, $n$ 을 음이 아닌 정수라 하자. $M$ 이 $n$ 차원 위상다양체(topological manifold)라는 것은 $M$ 이 Hausdorff이고 second countable이며 국소적으로 Euclidean이라는 뜻이다[^1]. 국소 Euclidean 조건은 다음과 같다.
 
 $$
-\forall p\in M\ \exists\, U\subseteq M \text{ 열린집합},\ p\in U,\ \exists\, \varphi:U\xrightarrow{\ \cong\ }\varphi(U)\subseteq\mathbb{R}^{n}
+\forall p\in M\ \exists\thinspace U\subseteq M \text{ 열린집합},\ p\in U,\ \exists\thinspace \varphi:U\xrightarrow{\ \cong\ }\varphi(U)\subseteq\mathbb{R}^{n}
 $$
 
 여기서 화살표는 위상동형(homeomorphism)이고 상 집합은 $\mathbb{R}^n$ 의 열린집합이다. 쌍 $(U,\varphi)$ 를 chart, $\varphi$ 를 국소좌표계라 부른다. Hausdorff 조건은 점들을 분리할 수 있게 하고 second countable 조건은 공간이 지나치게 커지는 것을 막는다. 두 조건을 빼면 국소 Euclidean만으로는 원하는 정리가 성립하지 않는다.
@@ -53,7 +53,7 @@ $$
 접공간은 곡선의 속도벡터를 좌표에 의존하지 않게 정의한 것이다. 여러 동등한 정의가 있는데, 대수적으로 가장 짧은 것은 derivation을 쓰는 방식이다. M 위의 매끄러운 실함수 전체의 집합을 아래처럼 쓰면 p에서의 접공간은
 
 $$
-T_pM=\bigl\{\,X:C^{\infty}(M)\to\mathbb{R}\ \big|\ X \text{ 는 선형},\ X(fg)=X(f)\,g(p)+f(p)\,X(g)\,\bigr\}
+T_pM=\bigl\lbrace\thinspace X:C^{\infty}(M)\to\mathbb{R}\ \big|\ X \text{ 는 선형},\ X(fg)=X(f)\thinspace g(p)+f(p)\thinspace X(g)\thinspace\bigr\rbrace
 $$
 
 이다. 오른쪽 조건이 Leibniz 규칙이다. 이는 [벡터 공간](vector-spaces.md)이고 차원은 $n$ 이며, chart $(U,\varphi)$ 의 좌표 $x$ 로부터 다음이 기저가 된다.
@@ -79,7 +79,7 @@ $$
 이 정리가 예시를 대량으로 공급한다. 예를 들어 좌표의 제곱합을 취하는 함수에서 1은 regular value이므로
 
 $$
-S^{n}=\Bigl\{\,x\in\mathbb{R}^{n+1}\ \Big|\ \textstyle\sum_{i=1}^{n+1}x_i^{2}=1\,\Bigr\}
+S^{n}=\Bigl\lbrace\thinspace x\in\mathbb{R}^{n+1}\ \Big|\ \textstyle\sum_{i=1}^{n+1}x_i^{2}=1\thinspace\Bigr\rbrace
 $$
 
 는 n차원 smooth manifold다. 같은 방식으로 직교행렬 전체, 행렬식이 1인 행렬 전체 등이 다양체가 된다.

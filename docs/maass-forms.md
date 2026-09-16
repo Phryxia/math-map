@@ -5,7 +5,7 @@
 [Eisenstein 급수](eisenstein-series.md) 문서에서 $L^2(\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H)$ 가 두 조각으로 갈라지는 것을 보았다. 연속 스펙트럼은 실해석적 Eisenstein 급수 $E(z,\tfrac12+ir)$ 가 전부 만들어 내고, $\zeta$ 함수로 완전히 기술된다. 남는 것이 **이산 스펙트럼**이고, 그것을 이루는 함수가 **Maass 형식**이다.
 
 $$
-L^2(\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H)=\mathbb C\oplus\underbrace{\bigoplus_j\mathbb C\,u_j}_{\text{Maass 첨점형식}}\oplus\underbrace{\int_{(1/2)}E(z,s)\,ds}_{\text{Eisenstein}}
+L^2(\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H)=\mathbb C\oplus\underbrace{\bigoplus_j\mathbb C\thinspace u_j}_{\text{Maass 첨점형식}}\oplus\underbrace{\int_{(1/2)}E(z,s)\thinspace ds}_{\text{Eisenstein}}
 $$
 
 Maass 형식은 [모듈러 형식](modular-forms.md)과 나란한 자리에 있으면서 성격이 정반대다. 정칙 모듈러 형식은 $\mathbb H$ 위의 정칙함수이고 $q$ 전개가 있어 손에 잡힌다. Maass 형식은 정칙이 아니고, 대신 쌍곡 Laplace 작용소의 고유함수다.
@@ -85,13 +85,13 @@ $\Gamma\subset\mathrm{SL}_2(\mathbb Z)$ 를 유한 지표 부분군이라 하자
 $u(z+1)=u(z)$ 이므로 $x$ 에 대해 Fourier 전개할 수 있다. 계수함수가 만족하는 상미분방정식을 풀면 $y$ 방향의 모양이 결정된다. $\lambda=\tfrac14+r^2$ 일 때
 
 $$
-u(z)=\sqrt y\sum_{n\neq0}a_n\,K_{ir}(2\pi|n|y)\,e^{2\pi inx}
+u(z)=\sqrt y\sum_{n\neq0}a_n\thinspace K_{ir}(2\pi|n|y)\thinspace e^{2\pi inx}
 $$
 
 가 된다. $K_\nu$ 는 제2종 변형 Bessel 함수이고, 다음 적분으로 주어진다.
 
 $$
-K_{ir}(z)=\int_0^\infty e^{-z\cosh t}\cos(rt)\,dt
+K_{ir}(z)=\int_0^\infty e^{-z\cosh t}\cos(rt)\thinspace dt
 $$
 
 $y\to\infty$ 에서 $K_{ir}(y)\sim\sqrt{\pi/2y}\thinspace e^{-y}$ 로 지수적으로 감소하므로 첨점 조건이 자동으로 붙는다. 정칙 형식의 $q^n=e^{2\pi inz}$ 자리에 이 Bessel 인자가 들어온 것이고, 지수적 감소라는 성질만 같고 함수 자체는 훨씬 다루기 어렵다.
@@ -122,7 +122,7 @@ $\epsilon$ 은 짝이면 0, 홀이면 1 이다. **감마 인자가 무한 자리
 
 > **Weyl 법칙.** $\mathrm{SL}_2(\mathbb Z)$ 에 대해
 > $$
-> \#\{j:r_j\le T\}=\frac{\mathrm{vol}(\Gamma\backslash\mathbb H)}{4\pi}T^2-\frac{2}\pi T\log T+O(T)
+> \char35{}\lbrace j:r_j\le T\rbrace=\frac{\mathrm{vol}(\Gamma\backslash\mathbb H)}{4\pi}T^2-\frac{2}\pi T\log T+O(T)
 > $$
 
 $\mathrm{vol}=\pi/3$ 이므로 선행항이 $T^2/12$ 다. 곧 Maass 형식이 **무한히 많다.** 이것이 존재성의 유일한 증명이다. 하나도 구성하지 않고 개수만 세어서 존재를 보였다.
