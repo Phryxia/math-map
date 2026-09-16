@@ -45,7 +45,7 @@ $$
 
 로 쪼개진다. 차이는 기울기가 정수가 아니라 **유리수**라는 점이다. 그리고 이 분류는 Dieudonné–Manin 의 isocrystal 분류와 정확히 같은 모양이다. $p$ 진 Hodge 이론에서 $\varphi$ 가군을 기울기로 분해하던 것이 곡선 위 다발의 Harder–Narasimhan 분해로 다시 나타난다.
 
-## $\mathrm{Bun}_G$ 의 점이 무엇인가
+## $\mathrm{Bun}\_G$ 의 점
 
 $G$ 다발의 모듈라이 $\mathrm{Bun}_G$ 를 만들면 그 점들이 Kottwitz 집합 $B(G)$ 로 분류된다. $G=\mathrm{GL}_n$ 이면 곧 isocrystal 의 동형류이고, 기울기 다중집합으로 적힌다.
 

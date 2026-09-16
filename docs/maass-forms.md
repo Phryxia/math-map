@@ -21,7 +21,7 @@ $$
 
 # 직관
 
-## 왜 정칙성을 버리는가
+## 표현론에서 본 정칙성
 
 $\mathrm{SL}_2(\mathbb R)$ 의 작용에서 보면 이유가 분명해진다. 자기동형 형식은 $L^2(\Gamma\backslash\mathrm{SL}_2(\mathbb R))$ 를 $\mathrm{SL}_2(\mathbb R)$ 의 기약 표현으로 분해할 때 나오는 조각들이다. 그런데 $\mathrm{SL}_2(\mathbb R)$ 의 유니터리 쌍대에는 서로 다른 계열이 있다.
 
