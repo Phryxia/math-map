@@ -94,6 +94,8 @@ $$
 
 이 논증은 색칠을 하나도 제시하지 않고 존재만 준다.
 
+명시적 구성은 이 하한에 크게 못 미친다. $N$ 꼭짓점 그래프에서 최대 클릭과 최대 독립집합을 모두 $2^{(\log\log N)^{O(1)}}$ 아래로 누르는 구성이 Chattopadhyay 와 Zuckerman 의 두 소스 추출기에서 나오고[^6], 확률적 논증이 주는 $2\log N$ 과는 여전히 멀다.
+
 ## 알려진 값과 간극
 
 $$
@@ -151,6 +153,7 @@ union bound 로 존재를 증명하는 기법은 [포함배제 원리](inclusion
 [^3]: V. Angeltveit and B. D. McKay, "R(5,5) ≤ 46", arXiv:2409.15709. 하한 43은 G. Exoo (1989). 2026년 9월 확인. https://arxiv.org/abs/2409.15709
 [^4]: M. Campos, S. Griffiths, R. Morris, J. Sahasrabudhe, "An exponential improvement for diagonal Ramsey", Annals of Mathematics 203 (2026), 869–932. arXiv:2303.09521. https://arxiv.org/abs/2303.09521
 [^5]: Schur's theorem (1916)과 Schur 수: https://en.wikipedia.org/wiki/Schur%27s_theorem
+[^6]: E. Chattopadhyay, D. Zuckerman, *Explicit two-source extractors and resilient functions*, Annals of Mathematics **189** (2019), 653–705. 그 전의 최선은 B. Barak, A. Rao, R. Shaltiel, A. Wigderson, *2-source dispersers for $n^{o(1)}$ entropy, and Ramsey graphs beating the Frankl–Wilson construction*, Annals of Mathematics **176** (2012), 1483–1543.
 
 # 연관 문서
 
