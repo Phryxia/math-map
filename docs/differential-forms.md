@@ -82,8 +82,8 @@ $$
 
 1. 선형이다.
 2. 함수 $f$ 에 대해 $df$ 는 보통의 미분이다.
-3. $d(\alpha\wedge\beta)=d\alpha\wedge\beta+(-1)^k\alpha\wedge d\beta$.
-4. $d\circ d=0$.
+3. 곱규칙 $d(\alpha\wedge\beta)=d\alpha\wedge\beta+(-1)^k\alpha\wedge d\beta$ 가 성립한다.
+4. $d\circ d=0$ 이다.
 
 좌표에서는 계수함수에 $d$ 를 적용하고 쐐기를 붙이는 것으로 계산된다.
 
@@ -116,11 +116,11 @@ $$
 | 차원 | 고전적 이름 |
 |---|---|
 | $n=1$ | 미적분학의 기본정리 |
-| $n=2$, 평면 | Green 정리 |
-| $n=2$, $\mathbb R^3$ 안의 곡면 | 곡면 Stokes 정리 |
+| $n=2$ 인 평면 | Green 정리 |
+| $n=2$ 이고 바탕이 $\mathbb R^3$ 안의 곡면 | 곡면 Stokes 정리 |
 | $n=3$ | 발산 정리 |
 
-$\mathbb R^3$ 의 grad, curl, div 가 각각 $\Omega^0\to\Omega^1$, $\Omega^1\to\Omega^2$, $\Omega^2\to\Omega^3$ 의 $d$ 이며, $\mathrm{curl}\circ\mathrm{grad}=0$ 과 $\mathrm{div}\circ\mathrm{curl}=0$ 이 $d\circ d=0$ 의 두 사례다. 세 연산이 3 차원에서만 이렇게 정리되는 것은 $\binom3k$ 가 $1,3,3,1$ 이어서 1-형식과 2-형식을 모두 벡터장으로 볼 수 있기 때문이다.
+$\mathbb R^3$ 의 grad, curl, div 가 각각 $\Omega^0\to\Omega^1$ 과 $\Omega^1\to\Omega^2$ 와 $\Omega^2\to\Omega^3$ 의 $d$ 이며, $\mathrm{curl}\circ\mathrm{grad}=0$ 과 $\mathrm{div}\circ\mathrm{curl}=0$ 이 $d\circ d=0$ 의 두 사례다. 세 연산이 3 차원에서만 이렇게 정리되는 것은 $\binom3k$ 가 $1,3,3,1$ 이어서 1-형식과 2-형식을 모두 벡터장으로 볼 수 있기 때문이다.
 
 ## de Rham 코호몰로지
 

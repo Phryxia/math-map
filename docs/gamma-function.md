@@ -59,7 +59,7 @@ $$
 \Gamma(s)\Gamma(1-s)=\frac{\pi}{\sin\pi s}
 $$
 
-$s=\tfrac12$ 을 넣으면 $\Gamma(\tfrac12)=\sqrt\pi$, 곧 Gauss 적분이다. 정함수를 영점으로 판별하는 이 논법은 Hadamard 인수분해의 전형이다.
+$s=\tfrac12$ 을 넣으면 $\Gamma(\tfrac12)=\sqrt\pi$ 가 되는데 이것이 곧 Gauss 적분이다. 정함수를 영점으로 판별하는 이 논법은 Hadamard 인수분해의 전형이다.
 
 ```mermaid
 flowchart TD
@@ -107,7 +107,7 @@ $$
 
 ## 극점과 유수
 
-$\Gamma$ 는 $\mathbb C$ 에서 유리형이고 영점이 없다. 극점은 $s=-n$ ($n\ge0$) 의 단순극점뿐이며
+$\Gamma$ 는 $\mathbb C$ 에서 유리형이고 영점이 없다. 극점은 $n\ge0$ 인 정수에 대한 $s=-n$ 의 단순극점뿐이며
 
 $$
 \operatorname*{Res}_{s=-n}\Gamma(s)=\frac{(-1)^{n}}{n!}
@@ -117,7 +117,7 @@ $$
 
 ## Bohr–Mollerup 정리
 
-**정리.** $f:(0,\infty)\to(0,\infty)$ 가 $f(1)=1$, $f(x+1)=xf(x)$, $\log f$ 볼록을 만족하면 $f=\Gamma$ 다.
+**정리.** $f:(0,\infty)\to(0,\infty)$ 가 $f(1)=1$ 과 $f(x+1)=xf(x)$ 와 $\log f$ 의 볼록성을 만족하면 $f=\Gamma$ 다.
 
 **증명의 착상.** 로그볼록성으로 $\log f(n+x)$ 를 $\log f(n)$ 과 $\log f(n+1)$ 사이의 기울기로 가두면 Euler 곱의 표현이 그대로 유도된다. 조건 세 개가 함수를 완전히 결정한다. $\square$
 
@@ -153,7 +153,7 @@ $$
 \qquad n!\sim\sqrt{2\pi n}\left(\frac ne\right)^{n}
 $$
 
-상수 $\sqrt{2\pi}$ 는 Euler–Maclaurin 이 주지 못하고 반사공식이나 Wallis 곱으로 따로 정한다. 급수는 발산하므로 최적 절단은 $K\approx\pi|z|$, 그때 상대오차가 $e^{-2\pi|z|}$ 규모다.
+상수 $\sqrt{2\pi}$ 는 Euler–Maclaurin 이 주지 못하고 반사공식이나 Wallis 곱으로 따로 정한다. 급수는 발산하므로 최적 절단은 $K\approx\pi|z|$ 이고 그때 상대오차가 $e^{-2\pi|z|}$ 규모다.
 
 ## 감마 인자와 함수방정식
 
@@ -210,7 +210,7 @@ $$
 p(x)=\frac{\lambda^{\alpha}}{\Gamma(\alpha)}x^{\alpha-1}e^{-\lambda x}
 $$
 
-앞의 식에서 $\Gamma$ 가 분모에 있으므로 부피는 $n$ 이 커질 때 **0 으로 급격히 줄어든다**. 고차원 기하의 직관에 반하는 현상 대부분이 이 한 줄에서 시작하고, [구 채우기](sphere-packing.md)의 밀도 평가에도 그대로 들어간다. 뒤의 감마분포는 지수분포의 합이며 $\alpha=n/2$, $\lambda=1/2$ 이면 자유도 $n$ 의 카이제곱분포가 되어 [가설검정](hypothesis-testing.md)의 기본 분포가 된다. [지수족](exponential-families.md)의 로그분배함수가 $\log\Gamma$ 로 쓰이는 것도 같은 사정이다.
+앞의 식에서 $\Gamma$ 가 분모에 있으므로 부피는 $n$ 이 커질 때 **0 으로 급격히 줄어든다**. 고차원 기하의 직관에 반하는 현상 대부분이 이 한 줄에서 시작하고, [구 채우기](sphere-packing.md)의 밀도 평가에도 그대로 들어간다. 뒤의 감마분포는 지수분포의 합이며 $\alpha=n/2$ 와 $\lambda=1/2$ 이면 자유도 $n$ 의 카이제곱분포가 되어 [가설검정](hypothesis-testing.md)의 기본 분포가 된다. [지수족](exponential-families.md)의 로그분배함수가 $\log\Gamma$ 로 쓰이는 것도 같은 사정이다.
 
 ## 조합론적 근사
 
