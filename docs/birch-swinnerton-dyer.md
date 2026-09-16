@@ -2,33 +2,31 @@
 
 # 개요
 
-[Selmer 군](selmer-groups.md)에서 순위 $r$ 을 계산하려는 시도가 $\text{Ш}$ 라는 장애에 막히는 것을 보았다. 하강은 상한만 주고, 그 상한이 정확한지는 알 수 없었다.
-
-Birch 와 Swinnerton-Dyer 는 1960년대 초 EDSAC 으로 완전히 다른 길을 실험했다. 순위가 크면 유리점이 많고, 유리점이 많으면 각 소수에서 환원한 점의 개수 $N_p=\char35{}E(\mathbb F_p)$ 도 평균적으로 클 것이다. 그래서 그들은
-
-$$
-\prod_{p\le X}\frac{N_p}{p}\ \sim\ C\thinspace(\log X)^{r}
-$$
-
-를 관측했다. 좌변은 순전히 유한체 위의 점 세기이고 우변의 $r$ 은 $E(\mathbb Q)$ 의 계수다. 국소적 자료의 무한곱이 대역적 불변량을 안다는 주장이다.
-
-이 곱을 정돈한 것이 [Dirichlet $L$ 함수](dirichlet-l-functions.md)와 같은 꼴의 $L(E,s)$ 이고, $\log X$ 의 거듭제곱은 $s=1$ 에서의 소멸 차수로 번역된다.
+Birch–Swinnerton-Dyer 추측은 타원곡선 $E/\mathbb Q$ 의 $L$ 함수가 $s=1$ 에서 소멸하는 차수가 Mordell–Weil 군의 계수와 같다고 주장한다.
 
 $$
 \mathrm{ord}_{s=1}L(E,s)\thickspace=\thickspace\mathrm{rank}\thinspace E(\mathbb Q)
 $$
 
-이것이 약한 BSD 이며, 밀레니엄 문제 중 하나다. 강한 형태는 선행계수까지 명시해 $\char35{}\text{Ш}$ 를 포함한 공식으로 쓴다.
+[Selmer 군](selmer-groups.md)을 통한 하강은 순위의 상한만 주고, 그 상한의 정확성이 $\text{Ш}$ 에 막힌다. Birch 와 Swinnerton-Dyer 는 1960 년대 초 EDSAC 으로 각 소수에서 환원한 점의 개수 $N_p=\char35{}E(\mathbb F_p)$ 를 모아
+
+$$
+\prod_{p\le X}\frac{N_p}{p}\ \sim\ C\thinspace(\log X)^{r}
+$$
+
+를 관측했다. 좌변은 유한체 위의 점 세기이고 우변의 $r$ 은 $E(\mathbb Q)$ 의 계수다. 이 곱을 정돈한 것이 [Dirichlet $L$ 함수](dirichlet-l-functions.md)와 같은 꼴의 $L(E,s)$ 이고, $\log X$ 의 거듭제곱이 $s=1$ 에서의 소멸 차수로 번역된다.
+
+위 등식이 약한 BSD 이며 밀레니엄 문제의 하나다. 강한 형태는 선행계수까지 명시해 $\char35{}\text{Ш}$ 를 포함한 공식으로 쓴다.
 
 # 직관
 
-## 점이 많으면 환원도 많다
+## 순위와 환원점의 개수
 
-$P\in E(\mathbb Q)$ 가 무한위수 점이면 $P,2P,3P,\dots$ 가 모두 서로 다르고, 이들을 $\bmod\ p$ 로 환원하면 $E(\mathbb F_p)$ 안에 많은 점을 만든다. 물론 $E(\mathbb F_p)$ 는 유한군이라 언젠가 겹치지만, 겹치기 시작하는 시점이 늦어질수록 $N_p$ 가 커진다는 압력이 생긴다. 순위가 클수록 이 압력이 세다.
+$P\in E(\mathbb Q)$ 가 무한위수 점이면 $P,2P,3P,\dots$ 가 모두 다르고, $\bmod\ p$ 환원이 $E(\mathbb F_p)$ 안에 많은 점을 만든다. $E(\mathbb F_p)$ 가 유한군이라 언젠가 겹치지만 겹치는 시점이 늦어질수록 $N_p$ 가 커지고, 순위가 클수록 그 압력이 세다.
 
-이것이 엄밀한 논증은 아니다. 실제로 BSD 는 아직 추측이고, 이 직관을 정리로 바꾸는 방법을 아무도 모른다. 그러나 왜 국소 자료가 대역 순위를 알 수 있는지에 대한 최초의 그림이었다.
+이 직관을 정리로 바꾸는 방법은 알려져 있지 않다.
 
-## 무한곱을 $L$ 함수로 정돈한다
+## Euler 곱과 해석적 연속
 
 $a_p=p+1-N_p$ 로 두고 Euler 곱을 만든다.
 
@@ -36,21 +34,21 @@ $$
 L(E,s)=\prod_{p\nmid N}\Big(1-\frac{a_p}{p^s}+\frac1{p^{2s-1}}\Big)^{-1}\prod_{p\mid N}\Big(1-\frac{a_p}{p^s}\Big)^{-1}
 $$
 
-Hasse 의 $|a_p|\le2\sqrt p$ 때문에 이 곱은 $\mathrm{Re}(s)>3/2$ 에서만 수렴한다. $s=1$ 은 수렴 영역 **밖**이다. 그러니 $L(E,1)$ 을 말하려면 해석적 연속이 먼저 필요하고, 그것을 준 것이 모듈러성 정리다. $E$ 가 무게 2 새형식 $f$ 에서 오므로 $L(E,s)=L(f,s)$ 이고, 후자는 $\mathbb C$ 전체로 연속되며 함수방정식
+Hasse 의 $|a_p|\le2\sqrt p$ 때문에 이 곱은 $\mathrm{Re}(s)>3/2$ 에서만 수렴하고 $s=1$ 은 수렴 영역 밖이다. 해석적 연속을 준 것이 모듈러성 정리다. $E$ 가 무게 2 새형식 $f$ 에서 오므로 $L(E,s)=L(f,s)$ 이고, 후자는 $\mathbb C$ 전체로 연속되며 함수방정식
 
 $$
 \Lambda(s)=N^{s/2}(2\pi)^{-s}\Gamma(s)L(E,s),\qquad \Lambda(2-s)=w\thinspace\Lambda(s)
 $$
 
-를 갖는다. $s=1$ 이 함수방정식의 중심이라는 점이 결정적이다.
+를 갖는다. $s=1$ 이 함수방정식의 중심이다.
 
-## 부호가 순위의 홀짝을 정한다
+## 함수방정식의 부호와 패리티
 
-$w=\pm1$ 이 함수방정식의 부호다. $w=-1$ 이면 $\Lambda(1)=-\Lambda(1)$ 이므로 $L(E,1)=0$ 이고, 소멸 차수가 홀수다. $w=+1$ 이면 짝수다. 그래서 BSD 를 믿으면 **순위의 홀짝이 국소 자료로 결정된다**. 이 따름명제만 따로 떼어 낸 것이 패리티 추측이고, 많은 경우에 증명되어 있다.
+$w=\pm1$ 이 함수방정식의 부호다. $w=-1$ 이면 $\Lambda(1)=-\Lambda(1)$ 이므로 $L(E,1)=0$ 이고 소멸 차수가 홀수이며, $w=+1$ 이면 짝수다. BSD 아래에서 순위의 홀짝이 국소 자료로 결정되고, 이 따름명제를 따로 떼어 낸 패리티 추측은 많은 경우에 증명되어 있다.
 
-## 강한 형태가 왜 $\text{Ш}$ 를 포함하는가
+## 강한 형태의 인자
 
-순위만 맞히는 것으로는 부족하다. 선행계수까지 예측하려면 격자의 부피를 재야 하고, 그러려면 $E(\mathbb Q)$ 의 생성원이 얼마나 "성긴지" 를 재는 조절자와, 유리점이 아닌데 국소적으로는 점처럼 보이는 것들의 개수가 필요하다. 후자가 $\char35{}\text{Ш}$ 다. 강한 BSD 는 이 모든 인자가 정확히 맞아떨어진다고 주장한다.
+선행계수를 예측하려면 격자의 부피가 필요하다. $E(\mathbb Q)$ 의 생성원이 얼마나 성긴지를 재는 조절자와, 유리점이 아닌데 국소적으로는 점처럼 보이는 것들의 개수가 들어간다. 후자가 $\char35{}\text{Ш}$ 다.
 
 # 정의
 
@@ -60,7 +58,7 @@ $$
 \mathrm{ord}_{s=1}L(E,s)=r=\mathrm{rank}\thinspace E(\mathbb Q)
 $$
 
-좌변을 해석적 순위, 우변을 대수적 순위라 부른다.
+좌변이 해석적 순위, 우변이 대수적 순위다.
 
 ## 강한 BSD
 
@@ -77,7 +75,7 @@ $$
 | $c_p$ | Tamagawa 수. 나쁜 환원 자리의 국소 지수 |
 | $E(\mathbb Q)_{\mathrm{tors}}$ | 비틀림 부분군 |
 
-오른쪽 인자 가운데 $\char35{}\text{Ш}$ 만 계산법이 알려져 있지 않다. 나머지는 모두 유효하게 구해진다.
+$\char35{}\text{Ш}$ 만 계산법이 알려져 있지 않고 나머지는 유효하게 구해진다.
 
 ## 정준 높이와 조절자
 
@@ -101,21 +99,21 @@ $$
 | Skinner–Urban, Kato | Iwasawa 주추측을 통해 순위 $0$ 의 강한 BSD 를 여러 경우에 |
 | Bhargava–Skinner–Zhang | 도체로 정렬한 타원곡선의 양의 비율(> 66%)에서 BSD 성립 |
 
-핵심은 Gross–Zagier 와 Kolyvagin 의 결합이다. 전자가 $L$ 의 미분을 기하적 점의 높이로 바꾸고, 후자가 그 점에서 Euler 계를 만들어 Selmer 군을 누른다. 두 정리가 맞물려 **해석적 순위가 0 또는 1 인 경우**가 해결된다. 해석적 순위 $\ge2$ 에서는 단 하나의 곡선에 대해서도 대수적 순위가 그와 같다는 것이 증명되어 있지 않다.
+Gross–Zagier 가 $L$ 의 미분을 기하적 점의 높이로 바꾸고 Kolyvagin 이 그 점에서 Euler 계를 만들어 Selmer 군을 누른다. 두 정리가 맞물려 해석적 순위가 0 또는 1 인 경우가 해결된다. 해석적 순위 $\ge2$ 에서는 어떤 곡선에 대해서도 대수적 순위가 같음이 증명되어 있지 않다.
 
-## 왜 $\ge2$ 가 막히는가
+## 순위 2 이상의 장벽
 
-Heegner 점은 하나뿐이다. $L'(E,1)$ 하나에 점 하나가 대응하므로 순위 1 까지는 점을 공급할 수 있지만, 순위 2 이상에서 필요한 독립적 점들을 만드는 구성이 없다. Gross–Zagier–Kolyvagin 의 방법이 원리적으로 멈추는 지점이며, $\ge2$ 를 풀려면 다른 종류의 특수점이나 완전히 새로운 도구가 필요하다.
+Heegner 점은 하나뿐이다. $L'(E,1)$ 하나에 점 하나가 대응하므로 순위 1 까지는 점을 공급할 수 있지만, 순위 2 이상에서 필요한 독립적 점들을 만드는 구성이 없다. Gross–Zagier–Kolyvagin 의 방법은 여기서 멈춘다.
 
-## 다른 형태와 일반화
+## 일반화
 
-- **$p$ 진 BSD.** $L$ 함수 대신 $p$ 진 $L$ 함수를 쓰고 Selmer 군의 특성 아이디얼과 비교한다. Iwasawa 주추측이 그 뼈대이고, 고전 BSD 보다 증명된 부분이 많다.
+- **$p$ 진 BSD.** $L$ 함수 대신 $p$ 진 $L$ 함수를 쓰고 Selmer 군의 특성 아이디얼과 비교한다. Iwasawa 주추측이 그 뼈대이고 고전 BSD 보다 증명된 부분이 많다.
 - **Bloch–Kato 추측.** 임의의 모티브 $M$ 에 대해 $L(M,s)$ 의 소멸 차수와 선행계수를 Selmer 군과 행렬식으로 예측한다. BSD 는 $M=h^1(E)(1)$ 인 경우다.
-- **Birch–Swinnerton-Dyer over number fields.** 수체 위로 올린 형태. $\text{Ш}$ 와 조절자의 정의가 그대로 확장된다.
+- **수체 위의 BSD.** $\text{Ш}$ 와 조절자의 정의가 그대로 확장된다.
 
 # 활용
 
-## $\text{Ш}$ 의 위수를 예측한다
+## $\text{Ш}$ 의 위수 예측
 
 순위 0 곡선에서는 강한 BSD 를 역으로 쓴다. $L(E,1)$ 을 수치로 계산하고 $\Omega_E,c_p,\char35{}E_{\mathrm{tors}}$ 를 구하면
 
@@ -123,7 +121,7 @@ $$
 \char35{}\text{Ш}\ \stackrel?=\ \frac{L(E,1)\cdot\char35{}E(\mathbb Q)_{\mathrm{tors}}^2}{\Omega_E\prod_pc_p}
 $$
 
-가 예측값을 준다. 이 값은 항상 완전제곱수에 가까운 정수로 나오는데, [Cassels–Tate 쌍](selmer-groups.md)이 그래야 함을 보장하므로 공식의 강력한 정합성 검사가 된다. $\char35{}\text{Ш}=4,9,16,\dots$ 인 곡선들이 이렇게 발견되었고, 하강으로 실제 확인된 경우도 많다.
+가 예측값을 준다. [Cassels–Tate 쌍](selmer-groups.md)이 이 값이 완전제곱수임을 보장하므로 공식의 정합성 검사가 된다. $\char35{}\text{Ш}=4,9,16,\dots$ 인 곡선들이 이렇게 발견되었고 하강으로 확인된 경우도 많다.
 
 ## 합동수 문제
 
@@ -133,13 +131,13 @@ $$
 n\ \text{홀수 무제곱수}:\quad n\ \text{합동수}\ \Longrightarrow\ \char35{}\lbrace x^2+2y^2+8z^2=n\rbrace=2\thinspace\char35{}\lbrace x^2+2y^2+32z^2=n\rbrace
 $$
 
-역방향, 곧 조건이 성립하면 합동수라는 주장은 순위 0 의 BSD 에 의존한다. 2000년 넘게 열려 있던 고전 문제가 밀레니엄 문제 하나에 매달려 있는 셈이다.
+조건이 성립하면 합동수라는 역방향은 순위 0 의 BSD 에 의존한다.
 
-## 무엇을 사면 무엇을 얻는가
+## 순위 계산 알고리즘
 
-BSD 가 참이면 순위 계산이 유한 시간에 끝나는 알고리즘이 된다. $L$ 함수 쪽에서 순위의 상한을 수치로 얻고 하강에서 하한을 얻어 양쪽이 만나는 것을 기다리면 되며, $\text{Ш}$ 의 유한성이 그 종료를 보장한다. 현재는 순위를 "계산했다" 고 말할 때 사실상 BSD 를 가정하고 있는 경우가 많고, 이것이 이 추측이 계산 정수론의 기반 가정으로 쓰이는 이유다[^1].
+BSD 가 참이면 순위 계산이 유한 시간에 끝난다. $L$ 함수 쪽에서 순위의 상한을 수치로 얻고 하강에서 하한을 얻어 양쪽이 만나기를 기다리며, $\text{Ш}$ 의 유한성이 종료를 보장한다. 순위를 계산했다고 말할 때 사실상 BSD 를 가정하는 경우가 많다.[^1]
 
-[^1]: 원 논문은 B. Birch, H. P. F. Swinnerton-Dyer, *Notes on elliptic curves II*, J. reine angew. Math. **218** (1965). Gross–Zagier 는 *Heegner points and derivatives of L-series*, Invent. Math. **84** (1986). 개설로는 Wiles 의 Clay 문제 해설과 Silverman, *The Arithmetic of Elliptic Curves* 를 보라. 본문의 수치 실험은 직접 한 것이다.
+[^1]: 원 논문은 B. Birch, H. P. F. Swinnerton-Dyer, *Notes on elliptic curves II*, J. reine angew. Math. **218** (1965). Gross–Zagier 는 *Heegner points and derivatives of L-series*, Invent. Math. **84** (1986). 개설은 Wiles 의 Clay 문제 해설과 Silverman, *The Arithmetic of Elliptic Curves*.
 
 # 연관 문서
 
