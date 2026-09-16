@@ -144,6 +144,7 @@ $$
 
 - [벡터 공간](vector-spaces.md)
 - [거리 공간](metric-spaces.md)
+- [최적화 개관](optimization-overview.md)
 
 ## 더 알아보기
 

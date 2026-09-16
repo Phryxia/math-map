@@ -196,6 +196,7 @@ $a=2$ 에서 초기값 1로 시작하면 오차가 대략 0.08, 0.002, 2e-6, 1e-
 
 - [미분](derivative.md)
 - [축약사상 고정점 정리](banach-fixed-point.md)
+- [최적화 개관](optimization-overview.md)
 
 ## 더 알아보기
 
