@@ -107,6 +107,7 @@ $$
 ## 선수지식
 
 - [함수](functions.md)
+- [확률론 개관](probability-overview.md)
 
 ## 더 알아보기
 
