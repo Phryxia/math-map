@@ -79,13 +79,6 @@ graph TD
 - [결정점과정](determinantal-point-process.md): 상관함수가 행렬식으로 주어지는 점과정
 - [Tracy–Widom 분포와 Airy 핵](tracy-widom.md): 최대 고윳값의 요동
 
-# 빈자리
-
-- 대편차 원리: Cramér 정리와 Sanov 정리. [집중부등식](concentration-inequalities.md)의 지수가 정확히 무엇인지 말해 주는 층위다.
-- 결합과 전변동거리: Markov 연쇄의 수렴 속도를 재는 표준 도구.
-- Donsker 불변원리: 랜덤워크의 스케일 극한이 [Brown 운동](brownian-motion.md)이라는 함수공간 판본의 중심극한정리.
-- 에르고딕 정리: 시간평균과 공간평균의 일치. [큰 수의 법칙](law-of-large-numbers.md)의 독립성 없는 일반화다.
-
 # 연관 문서
 
 ## 선수지식

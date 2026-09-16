@@ -58,15 +58,6 @@ graph TD
 - [불균형 최적 수송](unbalanced-optimal-transport.md): 질량이 보존되지 않는 경우로의 확장
 - [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md): 확률분포 공간 위의 기울기 흐름과 Fokker–Planck 방정식
 
-# 빈자리
-
-- 근접 알고리즘과 분리가능 최적화: 근접 사상, ISTA 와 ADMM. 미분 불가능한 항을 다루는 표준 도구인데 문서가 없다.
-- 내점법: [선형계획법](linear-programming.md)과 [반정부호 계획법](semidefinite-programming.md)을 실제로 푸는 다항시간 방법.
-- Nesterov 가속법: [경사하강법](gradient-descent.md)이 정보 하한을 언급만 하고 달성하는 방법은 비어 있다.
-- 준볼록 최적화와 국소 최적화: 비볼록 문제에서 안장점을 벗어나는 조건.
-- 확률적 최적화의 수렴 이론: SGD 의 학습률 조건과 분산 감소 기법.
-- 정수계획법과 절단평면: 조합 문제를 정수 제약으로 푸는 갈래.
-
 # 연관 문서
 
 ## 선수지식

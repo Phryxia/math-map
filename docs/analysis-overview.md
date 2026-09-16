@@ -92,14 +92,6 @@ graph TD
 - [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md): 복소미분이 해석성을 강제한다
 - [Hilbert 공간](hilbert-spaces.md), [Banach 공간과 세 기본정리](banach-spaces.md): 완비성을 무한차원 선형공간으로
 
-# 빈자리
-
-- 급수의 수렴판정: 비교, 비율, 근, 교대급수 판정이 멱급수 문서에 흩어져 있다.
-- Arzelà–Ascoli 정리: 함수공간의 컴팩트성 판정. 상미분방정식의 Peano 존재 정리가 이것을 쓴다.
-- Stone–Weierstrass 정리: 다항식 근사의 일반형.
-- 변분법과 Euler–Lagrange 방정식: 범함수의 극값 조건.
-- Sturm–Liouville 이론: 2 계 선형 작용소의 고유함수 전개. Fourier 급수의 일반화다.
-
 # 연관 문서
 
 ## 선수지식

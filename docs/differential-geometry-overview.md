@@ -65,14 +65,6 @@ graph TD
 - [Chern–Simons 이론과 레벨 양자화](chern-simons.md): 3 차원 다양체 위의 위상적 게이지 이론
 - [Wess–Zumino–Witten 모형과 벌크–경계 대응](wess-zumino-witten.md): 경계의 공형장론과의 대응
 
-# 빈자리
-
-- 벡터다발과 접속: [Chern–Simons 이론](chern-simons.md)과 [지표 정리](index-theorem.md)가 전제하는데 문서가 없다. 곡률을 접속의 곡률로 다시 정의하는 자리다.
-- 특성류: Chern 류와 Pontryagin 류. 지표 정리의 위상적 지표가 이것으로 쓰인다.
-- 측지선의 비교정리: Jacobi 장, 켤레점, Rauch 비교정리. 곡률 부호가 위상을 제한하는 정리들.
-- 심플렉틱 다양체와 Hamilton 역학: 계량 없이 2 형식만 가진 기하.
-- Ricci 흐름: [기하화 정리](geometrization.md)의 증명 도구인데 흐름 자체의 문서가 없다.
-
 # 연관 문서
 
 ## 선수지식

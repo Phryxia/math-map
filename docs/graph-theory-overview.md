@@ -70,14 +70,6 @@ graph TD
 - [Ramanujan 그래프의 명시적 구성](ramanujan-graphs.md): 스펙트럼 간극의 최적 경계를 달성하는 구성
 - [논문: Graph Sparsification by Effective Resistances](spectral-sparsification.md): 유효저항 표본추출로 간선 수를 줄인다
 
-# 빈자리
-
-- Menger 정리와 연결도: 절단과 서로소 경로의 쌍대성. [네트워크 흐름](network-flow.md)의 조합적 판본이다.
-- Hamilton 순환: Dirac 조건과 Ore 조건, [NP-완전성](np-completeness.md)과의 관계.
-- Erdős–Rényi 랜덤 그래프: 거대 연결성분의 상전이와 문턱 현상.
-- Tutte 다항식: 색칠 다항식과 신뢰도 다항식을 함께 거두는 불변량.
-- 그래프 마이너와 Robertson–Seymour 정리: 평면성 판정을 일반화하는 구조 이론.
-
 # 연관 문서
 
 ## 선수지식
