@@ -71,7 +71,7 @@ $$
 dx=f(x,t)\,dt+g(t)\,dw
 $$
 
-VE 는 $f=0,\ g(t)=1$, VP 는 $f=-\tfrac12\beta(t)x,\ g=\sqrt{\beta(t)}$ 다.
+VE 는 $f=0,\ g(t)=1$ 이고, VP 는 $f=-\tfrac12\beta(t)x,\ g=\sqrt{\beta(t)}$ 다.
 
 Anderson 의 시간역전 정리가 대응하는 역방향 SDE 를 준다.
 

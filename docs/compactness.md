@@ -37,7 +37,7 @@ graph LR
 
 ## 열린 덮개와 compactness
 
-$X$ 를 위상 공간, $K \subseteq X$, $I$ 를 인덱스 집합이라 하자. 각 $i$ 에 대해 $U_i$ 가 $X$ 의 열린집합이고
+$X$ 를 위상 공간이라 하고, $K \subseteq X$ 와 $I$ 를 인덱스 집합이라 하자. 각 $i$ 에 대해 $U_i$ 가 $X$ 의 열린집합이고
 
 $$
 K\subseteq\bigcup_{i\in I}U_i

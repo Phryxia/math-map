@@ -53,7 +53,7 @@ graph LR
 
 ELBO 의 기울기를 $q$ 의 모수 $\phi$ 에 대해 구해야 하는데, 기댓값을 취하는 분포 자체가 $\phi$ 에 의존한다. 미분과 기댓값의 순서를 바꿀 수 없다.
 
-$z\sim\mathcal N(\mu,\sigma^2)$ 를 $z=\mu+\sigma\epsilon$, $\epsilon\sim\mathcal N(0,1)$ 로 쓰면 상황이 달라진다. 무작위성이 $\phi$ 와 무관한 $\epsilon$ 으로 옮겨 가고, $z$ 는 $\phi$ 의 결정적 함수가 된다. 이제 기댓값 안에서 그냥 미분하면 되고, 역전파가 인코더까지 관통한다.
+$z\sim\mathcal N(\mu,\sigma^2)$ 를 $z=\mu+\sigma\epsilon$ 과 $\epsilon\sim\mathcal N(0,1)$ 로 쓰면 상황이 달라진다. 무작위성이 $\phi$ 와 무관한 $\epsilon$ 으로 옮겨 가고, $z$ 는 $\phi$ 의 결정적 함수가 된다. 이제 기댓값 안에서 그냥 미분하면 되고, 역전파가 인코더까지 관통한다.
 
 # 정의
 
@@ -63,7 +63,7 @@ $$
 p_\theta(x,z)=p(z)\,p_\theta(x\mid z),\qquad p(z)=\mathcal N(0,I)
 $$
 
-$p_\theta(x\mid z)$ 의 모수를 신경망(디코더)이 $z$ 에서 계산한다. 연속 데이터면 $\mathcal N(\mu_\theta(z),\sigma^2I)$, 이진 데이터면 Bernoulli 다.
+$p_\theta(x\mid z)$ 의 모수를 신경망(디코더)이 $z$ 에서 계산한다. 연속 데이터면 $\mathcal N(\mu_\theta(z),\sigma^2I)$ 이고, 이진 데이터면 Bernoulli 다.
 
 사전분포를 표준 Gauss 로 고정하는 것은 제약이 아니다. 충분히 표현력 있는 디코더가 어떤 분포로도 밀어낼 수 있기 때문이며, 확률적 PCA 에서 $z\sim\mathcal N(0,I)$ 로 두는 것과 같은 이유다.
 

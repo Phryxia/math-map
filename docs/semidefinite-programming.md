@@ -65,7 +65,7 @@ $$
 \mathrm{SDP}=\max_{\lVert v_i\rVert=1}\sum_{(i,j)\in E}\frac{1-\langle v_i,v_j\rangle}2
 $$
 
-행렬 형태로는 $X\succeq0$, $X_{ii}=1$ 인 $X$ 에 대한 최대화다. 이 제약집합을 타원체라 부른다.
+행렬 형태로는 $X\succeq0$ 이고 $X_{ii}=1$ 인 $X$ 에 대한 최대화다. 이 제약집합을 타원체라 부른다.
 
 ## 알고리즘
 

@@ -122,7 +122,7 @@ $V_{k-2}\subset\mathcal A_k$ 이므로 쌍대로 $\mathcal D_k\twoheadrightarrow
 
 ## $p$ 진 $L$ 함수
 
-$\phi$ 를 무게 $k$, 준위 $\Gamma_0(Np)$ 의 고유기호, $\Phi$ 를 그 유일한 과수렴 올림이라 한다. 분포
+$\phi$ 를 무게 $k$ 와 준위 $\Gamma_0(Np)$ 의 고유기호, $\Phi$ 를 그 유일한 과수렴 올림이라 한다. 분포
 
 $$
 \mu_\Phi=\Phi\bigl(\{\infty\}-\{0\}\bigr)\ \in\ \mathcal D_k

@@ -36,7 +36,7 @@ $$
 
 ## 상관함수와 핵
 
-국소유한 점과정의 $k$ 차 상관함수 $\rho_k$ 를 "서로 다른 $k$ 개의 점이 $dx_1,\dots,dx_k$ 안에 하나씩 있을 확률이 $\rho_k\,dx_1\cdots dx_k$" 로 정의한다. 모든 $k$ 에 대해
+국소유한 점과정의 $k$ 차 상관함수 $\rho_k$ 를 "서로 다른 $k$ 개의 점이 $dx_1,\dots,dx_k$ 안에 하나씩 있을 확률이 $\rho_k\,dx_1\cdots dx_k$ 인 것으로 정의한다. 모든 $k$ 에 대해
 
 $$
 \rho_k(x_1,\dots,x_k) = \det\bigl[K(x_i,x_j)\bigr]

@@ -72,7 +72,7 @@ MV 다면체는 꼭짓점이 $W\lambda$ 의 부분집합이고 면의 위치가 
 
 ## 설정
 
-$G$ 를 복소 환원군, $F=\mathbb C((t))$, $\mathcal O=\mathbb C[[t]]$ 라 하고 아핀 Grassmann 다양체를 $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 라 한다. $T\subset B=TN$ 을 극대 토러스와 Borel 이라 하자.
+$G$ 를 복소 환원군, $F=\mathbb C((t))$ 와 $\mathcal O=\mathbb C[[t]]$ 로 두고 아핀 Grassmann 다양체를 $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 라 한다. $T\subset B=TN$ 을 극대 토러스와 Borel 이라 하자.
 
 여무게 $\mu\in X_*(T)$ 에 대해 $t^\mu\in\mathrm{Gr}_G$ 를 대응하는 점이라 하고 두 종류의 궤도를 둔다.
 

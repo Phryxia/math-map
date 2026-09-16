@@ -18,7 +18,7 @@ $$
 
 ## 원형은 Poisson 합 공식
 
-가장 단순한 경우부터 보자. 곡면 대신 원 $\mathbb R/L\mathbb Z$ 를 놓으면 Laplace 고윳값은 $(2\pi n/L)^2$ ($n\in\mathbb Z$) 이고, "닫힌 측지선" 은 원을 $m$ 바퀴 도는 길이 $m L$ 의 곡선이다. 두 자료를 잇는 등식이
+가장 단순한 경우부터 보자. 곡면 대신 원 $\mathbb R/L\mathbb Z$ 를 놓으면 Laplace 고윳값은 $n\in\mathbb Z$ 마다 $(2\pi n/L)^2$ 이고, "닫힌 측지선" 은 원을 $m$ 바퀴 도는 길이 $m L$ 의 곡선이다. 두 자료를 잇는 등식이
 
 $$
 \sum_{n\in\mathbb Z}h\Big(\frac{2\pi n}{L}\Big)=L\sum_{m\in\mathbb Z}g(mL),\qquad

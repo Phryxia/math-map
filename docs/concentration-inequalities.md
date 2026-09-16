@@ -116,7 +116,7 @@ P(X \ge t) \le \exp\!\Big(-\frac{t^2}{2\sigma^2}\Big), \qquad
 P(|X| \ge t) \le 2\exp\!\Big(-\frac{t^2}{2\sigma^2}\Big)
 $$
 
-가 따르고, 역으로 이런 꼬리 경계를 갖는 변수는 상수배 매개변수의 sub-Gaussian 이다. 꼬리 경계, 적률생성함수 경계, 모멘트 증가 속도 $(E\lvert X \rvert^p)^{1/p} = O(\sqrt p)$, Orlicz 노름 유한성이 모두 동치라는 사실이 이 개념을 편리하게 만든다. 독립 sub-Gaussian 의 합은 매개변수의 제곱이 더해지는 sub-Gaussian 이므로, 합에 대한 집중은 정의만으로 즉시 나온다.
+가 따르고, 역으로 이런 꼬리 경계를 갖는 변수는 상수배 매개변수의 sub-Gaussian 이다. 꼬리 경계, 적률생성함수 경계, 모멘트 증가 속도 $(E\lvert X \rvert^p)^{1/p} = O(\sqrt p)$ 와 Orlicz 노름 유한성이 모두 동치라는 사실이 이 개념을 편리하게 만든다. 독립 sub-Gaussian 의 합은 매개변수의 제곱이 더해지는 sub-Gaussian 이므로, 합에 대한 집중은 정의만으로 즉시 나온다.
 
 분산이 작지만 꼬리가 두꺼운 변수(예: 드문 사건의 지시함수 합)에는 sub-Gaussian 대신 sub-exponential 조건과 Bernstein 부등식
 

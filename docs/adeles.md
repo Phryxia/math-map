@@ -94,7 +94,7 @@ $$
 |x|_{\mathbb A}=\prod_v|x_v|_v
 $$
 
-거의 모든 자리에서 $|x_v|_v=1$ 이므로 유한 곱이라 잘 정의된다. 곱 공식은 정확히 $|\alpha|_{\mathbb A}=1$ ($\alpha\in K^\times$) 라는 뜻이므로, $K^\times$ 가 노름 1 인 부분군 $\mathbb A_K^{\times,1}$ 안에 들어간다.
+거의 모든 자리에서 $|x_v|_v=1$ 이므로 유한 곱이라 잘 정의된다. 곱 공식은 정확히 $\alpha\in K^\times$ 마다 $|\alpha|_{\mathbb A}=1$ 이라는 것 라는 뜻이므로, $K^\times$ 가 노름 1 인 부분군 $\mathbb A_K^{\times,1}$ 안에 들어간다.
 
 ## 이델류군
 

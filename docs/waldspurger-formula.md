@@ -176,7 +176,7 @@ $\chi$ 나 $D$ 를 움직이며 중심값이 0 이 아닌 비율을 묻는 문�
 
 $L(E,1)\ne0$ 이면 Mordell–Weil 계수가 0 이라는 [BSD](birch-swinnerton-dyer.md)의 절반은 Kolyvagin 의 Euler 계 논법이 준다. 그런데 그 논법에 들어가는 비소멸 조건을 확인하는 일이 남는다. Waldspurger 는 그 확인을 계수 계산으로 바꾸어 준다. 정리 하나가 해석적 조건을 산술적 검산으로 옮긴다는 점이, 주기 공식이 왜 쓸모 있는지를 가장 잘 보여준다.
 
-[^1]: J. Tunnell, *Local $\varepsilon$ factors and characters of $\mathrm{GL}(2)$*, Amer. J. Math. **105** (1983). H. Saito, *On Tunnell's formula for characters of $\mathrm{GL}(2)$*, Compositio Math. **85** (1993).
+[^1]: J. Tunnell, *Local epsilon factors and characters of GL(2)*, Amer. J. Math. **105** (1983). H. Saito, *On Tunnell's formula for characters of* $\mathrm{GL}(2)$ (Compositio Math. **85**, 1993).
 
 [^2]: J.-L. Waldspurger, *Sur les valeurs de certaines fonctions $L$ automorphes en leur centre de symétrie*, Compositio Math. **54** (1985), 173–242. 고전적 판본은 W. Kohnen, D. Zagier, *Values of $L$ series of modular forms at the center of the critical strip*, Invent. Math. **64** (1981).
 
