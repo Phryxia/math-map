@@ -17,19 +17,19 @@ flowchart LR
   D --> E["기댓값·분산·분위수"]
 ```
 
-기댓값은 분포의 무게중심이다. 질량 P_X를 실직선에 얹어 놓았을 때 균형을 이루는 점이며, 분산은 그 질량이 무게중심에서 얼마나 퍼져 있는지를 재는 2차 모멘트다.
+기댓값은 분포의 무게중심이다. 질량 $P_X$ 를 실직선에 얹어 놓았을 때 균형을 이루는 점이며, 분산은 그 질량이 무게중심에서 얼마나 퍼져 있는지를 재는 2차 모멘트다.
 
 # 정의
 
-확률공간을 (Ω, F, P)라 하자. 여기서 F는 Ω 위의 시그마 대수이고 P는 P(Ω)=1인 측도다. 실직선 R에는 Borel 시그마 대수 B를 준다.
+확률공간을 $(\Omega,\mathcal F,P)$ 라 하자. 여기서 $\mathcal F$ 는 $\Omega$ 위의 시그마 대수이고 $P$ 는 $P(\Omega)=1$ 인 측도다. 실직선 $\mathbb R$ 에는 Borel 시그마 대수 $\mathcal B$ 를 준다.
 
-확률변수란 가측함수 X: Ω → R, 즉 모든 Borel 집합 B에 대해 X의 역상이 F에 속하는 함수다.
+확률변수란 가측함수 $X:\Omega\to\mathbb R$ , 즉 모든 Borel 집합 $B$ 에 대해 $X$ 의 역상이 $\mathcal F$ 에 속하는 함수다.
 
 $$
 X^{-1}(B)=\{\omega\in\Omega: X(\omega)\in B\}\in\mathcal F\qquad(\forall B\in\mathcal B)
 $$
 
-X의 분포(law)는 P를 X로 밀어 보낸 상측도다.
+$X$ 의 분포(law)는 $P$ 를 $X$ 로 밀어 보낸 상측도다.
 
 $$
 P_X(B)=P\!\left(X^{-1}(B)\right),\qquad B\in\mathcal B
@@ -43,19 +43,19 @@ $$
 
 ## 기댓값
 
-X가 음이 아니거나 적분 가능할 때 기댓값은 P에 대한 Lebesgue 적분이다[^2]. 상측도의 적분 변환 공식을 쓰면 분포만으로도 계산된다.
+$X$ 가 음이 아니거나 적분 가능할 때 기댓값은 $P$ 에 대한 Lebesgue 적분이다[^2]. 상측도의 적분 변환 공식을 쓰면 분포만으로도 계산된다.
 
 $$
 \mathbb E[X]=\int_\Omega X\,dP=\int_{\mathbb R} t\,dP_X(t)
 $$
 
-적분 가능하다는 것은 X의 절댓값의 기댓값이 유한하다는 뜻이다. 더 일반적으로 Borel 함수 g에 대해 다음이 성립한다.
+적분 가능하다는 것은 $X$ 의 절댓값의 기댓값이 유한하다는 뜻이다. 더 일반적으로 Borel 함수 $g$ 에 대해 다음이 성립한다.
 
 $$
 \mathbb E[g(X)]=\int_{\mathbb R} g(t)\,dP_X(t)
 $$
 
-이산형이면 P_X가 가산개의 점에 질량을 주므로 적분은 합이 되고, P_X가 Lebesgue 측도에 대해 절대연속이면 [Radon–Nikodym 정리](radon-nikodym.md)가 주는 밀도 f로 적분이 된다.
+이산형이면 $P_X$ 가 가산개의 점에 질량을 주므로 적분은 합이 되고, $P_X$ 가 Lebesgue 측도에 대해 절대연속이면 [Radon–Nikodym 정리](radon-nikodym.md)가 주는 밀도 $f$ 로 적분이 된다.
 
 $$
 \mathbb E[g(X)]=\sum_k g(x_k)\,p_k
@@ -74,7 +74,7 @@ $$
 
 ## 독립
 
-확률변수들 X_1,…,X_n이 독립이라는 것은 생성하는 시그마 대수들이 독립이라는 뜻이며, 누적분포함수의 곱 형태로 쓸 수 있다.
+확률변수들 $X_1,\dots,X_n$ 이 독립이라는 것은 생성하는 시그마 대수들이 독립이라는 뜻이며, 누적분포함수의 곱 형태로 쓸 수 있다.
 
 $$
 P(X_1\le t_1,\dots,X_n\le t_n)=\prod_{i=1}^n P(X_i\le t_i)\qquad(\forall t_1,\dots,t_n\in\mathbb R)
@@ -84,7 +84,7 @@ $$
 
 ## 기댓값의 선형성
 
-적분 가능한 X, Y와 실수 a, b에 대해 다음이 성립한다.
+적분 가능한 $X$ , $Y$ 와 실수 $a$ , $b$ 에 대해 다음이 성립한다.
 
 $$
 \mathbb E[aX+bY]=a\,\mathbb E[X]+b\,\mathbb E[Y]
@@ -94,29 +94,29 @@ $$
 
 ## 곱과 분산의 가법성
 
-X와 Y가 독립이고 둘 다 적분 가능하면 곱도 적분 가능하고 다음이 성립한다. 역은 성립하지 않는다.
+$X$ 와 $Y$ 가 독립이고 둘 다 적분 가능하면 곱도 적분 가능하고 다음이 성립한다. 역은 성립하지 않는다.
 
 $$
 \mathbb E[XY]=\mathbb E[X]\,\mathbb E[Y]
 $$
 
-따라서 공분산을 Cov(X,Y)=E[XY]−E[X]E[Y]로 두면 독립인 경우 0이고, 일반적으로 다음이 성립한다.
+따라서 공분산을 $\operatorname{Cov}(X,Y)=\mathbb E[XY]-\mathbb E[X]\,\mathbb E[Y]$ 로 두면 독립인 경우 $0$ 이고, 일반적으로 다음이 성립한다.
 
 $$
 \operatorname{Var}\!\left(\sum_{i=1}^n X_i\right)=\sum_{i=1}^n\operatorname{Var}(X_i)+2\sum_{i<j}\operatorname{Cov}(X_i,X_j)
 $$
 
-특히 쌍마다 상관이 없으면(독립보다 약한 조건) 분산은 가법적이다. 공분산이 0이어도 독립은 아니다. X가 −1, 0, 1을 각각 1/4, 1/2, 1/4의 확률로 가지고 Y를 X의 제곱으로 두면 X의 분포가 대칭이므로 다음과 같다.
+특히 쌍마다 상관이 없으면(독립보다 약한 조건) 분산은 가법적이다. 공분산이 $0$ 이어도 독립은 아니다. $X$ 가 $-1$ , $0$ , $1$ 을 각각 $1/4$ , $1/2$ , $1/4$ 의 확률로 가지고 $Y$ 를 $X$ 의 제곱으로 두면 $X$ 의 분포가 대칭이므로 다음과 같다.
 
 $$
 \operatorname{Cov}(X,Y)=\mathbb E[X^3]-\mathbb E[X]\,\mathbb E[X^2]=0-0\cdot\tfrac12=0
 $$
 
-그러나 Y는 X로 완전히 결정되므로 두 변수는 독립이 아니다.
+그러나 $Y$ 는 $X$ 로 완전히 결정되므로 두 변수는 독립이 아니다.
 
 ## Markov와 Chebyshev 부등식
 
-음이 아닌 확률변수 Z와 a>0에 대해, 지시함수 부등식 a·1{Z≥a} ≤ Z의 양변에 기댓값을 취하면 Markov 부등식을 얻는다. Z를 (X−E X)의 제곱으로 잡으면 Chebyshev 부등식이 나온다.
+음이 아닌 확률변수 $Z$ 와 $a>0$ 에 대해, 지시함수 부등식 $a\cdot\mathbf 1\{Z\ge a\}\le Z$ 의 양변에 기댓값을 취하면 Markov 부등식을 얻는다. $Z$ 를 $(X-\mathbb E X)^2$ 으로 잡으면 Chebyshev 부등식이 나온다.
 
 $$
 P(Z\ge a)\le \frac{\mathbb E[Z]}{a},
@@ -126,7 +126,7 @@ $$
 
 ## Jensen 부등식
 
-φ가 볼록함수이고 X와 φ(X)가 적분 가능하면 다음이 성립한다. 증명 개요: E X에서의 지지 직선 φ(t) ≥ φ(E X)+c(t−E X)를 잡고 t=X를 대입한 뒤 기댓값을 취한다. [볼록성](convexity.md)의 지지 직선 존재가 핵심이다.
+$\varphi$ 가 볼록함수이고 $X$ 와 $\varphi(X)$ 가 적분 가능하면 다음이 성립한다. 증명 개요: $\mathbb E X$ 에서의 지지 직선 $\varphi(t)\ge\varphi(\mathbb E X)+c(t-\mathbb E X)$ 를 잡고 $t=X$ 를 대입한 뒤 기댓값을 취한다. [볼록성](convexity.md)의 지지 직선 존재가 핵심이다.
 
 $$
 \varphi\big(\mathbb E[X]\big)\le\mathbb E\big[\varphi(X)\big]
@@ -146,7 +146,7 @@ Cauchy 분포는 양의 부분과 음의 부분의 적분이 모두 무한해서
 
 ## 표준 예시
 
-베르누이 시행에서 X가 1을 확률 p로, 0을 확률 1−p로 가지면 다음이 성립한다.
+베르누이 시행에서 $X$ 가 $1$ 을 확률 $p$ 로, $0$ 을 확률 $1-p$ 로 가지면 다음이 성립한다.
 
 $$
 \mathbb E[X]=p,\qquad \operatorname{Var}(X)=p(1-p)
