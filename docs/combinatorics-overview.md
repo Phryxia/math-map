@@ -61,15 +61,6 @@ graph TD
 - [theta 급수](theta-functions.md), [Siegel–Weil 공식](siegel-weil.md): 격자 벡터 세기와 모듈러 형식
 - [Mock 모듈러 형식](mock-modular-forms.md), [Dyson 의 rank 와 crank](dyson-rank-crank.md): 분할수의 합동
 
-# 빈자리
-
-- 이항계수와 Stirling 수의 항등식: 세기의 기초 다음 단계인데 문서가 없다.
-- Burnside 보조정리와 Pólya 세기: [군 작용](group-actions.md) 안에 한 절로만 있다.
-- 극단 집합론(Sperner, Erdős–Ko–Rado): Ramsey 이론 옆에 있어야 할 줄기다.
-- 순서 이론의 조합론(Dilworth, Hall 의 동치): [부분순서](partial-orders.md)와 매칭을 잇는다.
-- RSK 대응과 hook 길이 공식: Schur 다항식 문서가 전제한다.
-- 조합적 설계와 유한 기하: Mathieu 군 문서가 Steiner 계를 언급만 한다.
-
 # 연관 문서
 
 ## 선수지식

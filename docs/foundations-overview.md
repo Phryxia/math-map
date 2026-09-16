@@ -55,15 +55,6 @@ graph TD
 - [영역 이론과 Kleene 고정점 정리](domain-theory.md): 재귀의 의미론
 - [Galois 연결](galois-connections.md) → [추상해석](abstract-interpretation.md): 순서 이론이 프로그램 분석이 되는 자리
 
-# 빈자리
-
-- 자연수의 Peano 공리와 귀납법의 지위: 불완전성 정리가 전제하는데 문서가 없다.
-- 모형론 입문(구조, 기본 확대, 양화사 소거): Löwenheim–Skolem 다음 단계.
-- 강제법(forcing): 연속체 가설 문서가 결과만 인용한다.
-- 역수학: 직관주의 문서가 언급만 한다.
-- 범주론적 기초와 토포스: 구조적 집합론에서 이어져야 할 줄기.
-- 타입 이론과 일가성 공리(HoTT): Curry–Howard 와 구조주의가 만나는 자리.
-
 # 연관 문서
 
 ## 선수지식

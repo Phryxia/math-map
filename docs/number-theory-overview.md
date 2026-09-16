@@ -111,16 +111,6 @@ graph TD
 - [Vogan L 꾸러미](vogan-packets.md) → [Arthur 매개변수](arthur-parameters.md) → [Speh 표현](speh-representations.md)
 - [Gan–Gross–Prasad 추측](gan-gross-prasad.md) → [Waldspurger 정리](waldspurger-formula.md) → [Tunnell–Saito 공식](tunnell-saito.md)
 
-# 빈자리
-
-있어야 하는데 아직 없는 문서다. 채우면 이 목록에서 지운다.
-
-- 연분수와 Diophantine 근사: Pell 방정식, Roth 정리. 초등 정수론과 격자를 잇는다.
-- Dirichlet 단수 정리와 류수 공식: 대수적 수체 문서가 전제하는 결과인데 독립 문서가 없다.
-- 이차형식과 Hasse–Minkowski 정리: Brauer 군 문서 안에 흩어져 있다.
-- 체 방법(sieve): Brun, Selberg 체와 소수 간격. 해석적 정수론의 두 번째 축이다.
-- Riemann 가설과 영점 분포: 소수 정리 문서가 언급만 한다.
-
 # 연관 문서
 
 ## 선수지식

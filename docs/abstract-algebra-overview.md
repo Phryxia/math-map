@@ -61,15 +61,6 @@ graph TD
 - [Wess–Zumino–Witten 모형](wess-zumino-witten.md): 아핀 Lie 대수의 물리
 - [괴물 달빛 추측](monstrous-moonshine.md) → [Umbral moonshine](umbral-moonshine.md)
 
-# 빈자리
-
-- 유한생성 아벨군의 구조정리와 PID 위의 가군: 군과 가군 사이에 있어야 할 다리다.
-- 유일분해정역, 주아이디얼정역, Euclid 정역: 다항식환과 Dedekind 정역 사이가 비어 있다.
-- Noether 환과 Hilbert 기저정리: 가환대수의 출발점.
-- 호몰로지 대수(Ext, Tor, 유도 함자): 군 확대와 텐서곱이 전제한다.
-- 반단순 Lie 대수의 분류와 Dynkin 도형: 근계 문서가 언급만 한다.
-- 군의 표시와 조합 군론: 땋임군과 기본군이 전제한다.
-
 # 연관 문서
 
 ## 선수지식

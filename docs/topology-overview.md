@@ -57,15 +57,6 @@ graph TD
 - [Chern–Simons 이론](chern-simons.md) → [Wess–Zumino–Witten 모형](wess-zumino-witten.md), [Witten 점근 추측](witten-asymptotics.md)
 - [모듈러 텐서범주와 3 차원 TQFT](modular-tensor-categories.md) → [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md), [애니온과 위상적 양자계산](anyons.md)
 
-# 빈자리
-
-- 분리공리, Urysohn 보조정리, Tychonoff 정리: 점집합 위상이 두 문서뿐이다.
-- 호모토피와 고차 호모토피군: 기본군 다음 단계가 비어 있다.
-- CW 복합체와 세포 호몰로지: 단체 호몰로지에서 실제 계산으로 가는 다리.
-- 코호몰로지 환과 Poincaré 쌍대성: 다양체 위상의 핵심 정리인데 없다.
-- 벡터다발과 특성류: Chern–Simons 와 지표 정리가 전제한다.
-- Morse 이론: 다양체의 위상을 함수로 읽는 방법.
-
 # 연관 문서
 
 ## 선수지식

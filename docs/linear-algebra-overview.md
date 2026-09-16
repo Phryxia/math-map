@@ -67,14 +67,6 @@ graph TD
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md), [Schur 다항식](schur-polynomials.md): 텐서 거듭제곱의 분해
 - [Hecke 작용소](hecke-operators.md), [Sen 이론](sen-theory.md), [Reidemeister 비틀림](reidemeister-torsion.md): 다른 분야가 선형대수를 쓰는 자리
 
-# 빈자리
-
-- Jordan 표준형: 대각화가 안 될 때의 표준형. 고윳값 문서가 전제한다.
-- 쌍대 공간과 쌍선형 형식: 내적 공간 앞에 있어야 할 문서다.
-- 행렬 분해와 수치 선형대수(LU, QR, Cholesky, 조건수): 응용 문서들이 전제한다.
-- Perron–Frobenius 정리: Markov 연쇄와 expander 가 함께 쓴다.
-- 외대수와 다중선형대수: [미분형식](differential-forms.md)이 전제하는데 텐서곱 문서에 반쪽만 있다.
-
 # 연관 문서
 
 ## 선수지식
