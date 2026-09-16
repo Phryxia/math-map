@@ -174,7 +174,7 @@ $$
 
 ## 계산 복잡도
 
-$k \ge 3$ 고정에 대해 $k$ 색칠 가능성 판정은 NP-완전이다(Karp의 21개 문제 목록에 포함[^3]). 따라서 $\chi(G)$ 계산은 [P 대 NP 문제](p-np.md)의 그림자 아래 놓여 있다. 근사 역시 어렵다. 임의의 $\varepsilon > 0$ 에 대해 $\chi(G)$ 를 $\lvert V \rvert^{1-\varepsilon}$ 배 이내로 근사하는 것도 NP-난해임이 알려져 있다. 3-색칠 가능한 그래프를 다항 시간에 몇 색으로 칠할 수 있는가는 지금도 열린 문제에 가깝고, 최선의 알고리즘이 쓰는 색 수는 $\lvert V \rvert$ 의 작은 거듭제곱 꼴이다.
+$k \ge 3$ 고정에 대해 $k$ 색칠 가능성 판정은 NP-완전이다(Karp 의 21 개 문제 목록에 포함[^3]). $\chi(G)$ 계산은 [P 대 NP 문제](p-np.md)에 걸린다. 근사도 어렵다. 임의의 $\varepsilon > 0$ 에 대해 $\chi(G)$ 를 $\lvert V \rvert^{1-\varepsilon}$ 배 이내로 근사하는 것이 NP-난해다. 3-색칠 가능한 그래프를 다항 시간에 칠하는 알고리즘이 쓰는 색 수는 $\lvert V \rvert$ 의 작은 거듭제곱 꼴이고, 현재 최선은 $O(\lvert V\rvert^{0.199})$ 색이다[^4].
 
 실무에서는 정확 해를 포기하고 DSATUR 같은 휴리스틱, 정수계획법, SAT 솔버를 쓴다.
 
@@ -275,6 +275,7 @@ print(chromatic_polynomial(4, [(0, 1), (1, 2), (2, 3), (0, 3)]))
 [^1]: K. Appel, W. Haken, "Every planar map is four colorable", Bulletin of the American Mathematical Society 82 (1976), https://www.ams.org/journals/bull/1976-82-05/S0002-9904-1976-14122-5/
 [^2]: N. Robertson, D. Sanders, P. Seymour, R. Thomas, "The Four-Colour Theorem", Journal of Combinatorial Theory Series B 70 (1997), https://doi.org/10.1006/jctb.1997.1750
 [^3]: R. M. Karp, "Reducibility Among Combinatorial Problems", Complexity of Computer Computations (1972), https://doi.org/10.1007/978-1-4684-2001-2_9
+[^4]: K. Kawarabayashi, M. Thorup, "Coloring 3-colorable graphs with less than $n^{1/5}$ colors", Journal of the ACM 64 (2017), article 4.
 
 # 연관 문서
 
