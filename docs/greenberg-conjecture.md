@@ -12,7 +12,7 @@ $$
 
 [Iwasawa 주추측](iwasawa-main-conjecture.md)은 $\lambda^{-}$ 를 $p$ 진 $L$ 함수의 영점 개수로 계산하고 그 값이 자주 양수다. 실수 쪽에는 $\lambda^{+}$ 를 재는 해석적 대응물이 없고 예측은 소멸이다. 한쪽에 공식이 있고 다른 쪽에 소멸 예측만 있는 이 비대칭이 [Vandiver 추측](vandiver-conjecture.md)에도 나타난다. Vandiver 추측은 Greenberg 추측의 특수한 경우를 함의하고, Greenberg 쪽이 더 약하고 일반적이다.
 
-$\mu=0$ 은 아벨체에 대해 증명되어 있고(Ferrero–Washington), $\lambda=0$ 이 열려 있다.
+$\mu=0$ 은 아벨체에 대해 증명되어 있고(Ferrero–Washington), $\lambda=0$ 은 증명되지 않았다[^1].
 
 # 직관
 
@@ -105,7 +105,7 @@ $F=\mathbb Q(\sqrt d)$ 와 $p=3$ 인 경우가 가장 많이 계산되었다. Fu
 
 $\lambda^{-}$ 는 $p$ 진 $L$ 함수의 영점을 세는 문제로 번역된다. $\lambda^{+}$ 에는 그런 번역이 없다. 주추측이 주는 것은 류군과 단수 지표의 비이고, 비가 1 이라는 정보로는 양쪽이 0 인지 알 수 없다.
 
-순환체 단수가 주는 [Euler 계](euler-systems.md)는 주추측 증명에 이미 쓰였다. $A^{+}$ 를 누를 새로운 대수적 원소가 필요한데 후보가 알려져 있지 않다.
+순환체 단수가 주는 [Euler 계](euler-systems.md)는 주추측 증명에 이미 쓰였고, 그 결론은 류군과 단수 지표의 비까지다.
 
 # 활용
 
