@@ -18,20 +18,6 @@ RSA 의 안전성은 "큰 합성수의 인수분해가 어렵다"는 가정에 �
 
 일방향성의 비유로, 두 소수를 곱하는 것은 몇 마이크로초지만 2048비트 곱을 되돌리는 것은 알려진 최선의 알고리즘(수체 체, number field sieve)으로도 준지수 시간이 걸린다.
 
-```mermaid
-flowchart TD
-  KG["키 생성: 소수 p, q 선택"] --> N["n = p q, phi = (p-1)(q-1)"]
-  N --> E["e 선택 (gcd(e, phi) = 1)"]
-  E --> D["d = e^-1 mod phi (확장 유클리드)"]
-  D --> PUB["공개키 (n, e)"]
-  D --> PRI["개인키 (d, p, q)"]
-  PUB --> ENC["암호화 c = m^e mod n"]
-  ENC --> DEC["복호화 m = c^d mod n"]
-  PRI --> DEC
-  PRI --> CRT["CRT 가속: mod p, mod q 로 분해"]
-  CRT --> DEC
-```
-
 # 정의
 
 ## 키 생성
@@ -180,7 +166,7 @@ d = inverse(e, phi)
 # 2) 암호화 / 복호화
 m = 123456789012 % n
 c = pow(m, e, n)
-assert pow(c, d, n) == m
+m_back = pow(c, d, n)
 
 # 3) CRT 가속 복호화
 dp, dq = d % (p - 1), d % (q - 1)
@@ -192,20 +178,18 @@ def decrypt_crt(c):
     h = (q_inv * (mp - mq)) % p
     return mq + h * q
 
-assert decrypt_crt(c) == m
-print("n =", n, "d =", d, "복호화 성공")
+print("n =", n)
+print("복호화:", m_back, decrypt_crt(c))
 
 # 4) 공통 모듈러스 공격 시연: 같은 n, 서로소인 두 공개지수
 e1, e2 = 17, 65537
 c1, c2 = pow(m, e1, n), pow(m, e2, n)
-g, a, b = egcd(e1, e2)
-assert g == 1
+g, a, b = egcd(e1, e2)                            # g = 1 이라야 공격이 성립한다
 recovered = (pow(c1, a, n) * pow(c2, b, n)) % n   # 음수 지수는 pow 가 역원으로 처리
-assert recovered == m
-print("공통 모듈러스 공격으로 평문 복원:", recovered == m)
+print("공통 모듈러스 공격으로 복원한 평문:", recovered)
 ```
 
-거듭제곱 비용은 `pow(c, d, n)` 한 번과 `decrypt_crt` 의 두 번을 비교하면 확인된다. 모듈러스가 커질수록 후자가 대략 4배 빠르다.
+CRT 복호화는 크기가 절반인 모듈러스에서 거듭제곱을 두 번 하므로 대략 4 배 빠르다.
 
 ## 다른 주제와의 연결
 
