@@ -93,6 +93,7 @@ UFD 에서는 두 원소의 최대공약수가 지수별 최솟값으로 정의�
 
 ## 선수지식
 
+- [소수와 유일분해](primes.md)
 - [아이디얼과 몫환](ideals-quotient-rings.md)
 - [다항식환](polynomial-rings.md)
 
