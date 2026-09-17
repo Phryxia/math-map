@@ -230,7 +230,7 @@ $B_n$ 은 Todd 류의 계수로 Hirzebruch–Riemann–Roch 공식에 들어가�
 
 ## 선수지식
 
-- [멱급수와 Taylor 급수](power-series.md)
+- [멱급수](power-series.md)
 - [소수 정리와 Riemann zeta 함수](prime-number-theorem.md)
 
 ## 더 알아보기

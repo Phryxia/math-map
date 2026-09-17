@@ -119,7 +119,7 @@ Laplace 변환과 z-변환의 역변환은 유수의 합이다. 선형 시불변
 ## 선수지식
 
 - [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
-- [멱급수와 Taylor 급수](power-series.md)
+- [멱급수](power-series.md)
 
 ## 더 알아보기
 

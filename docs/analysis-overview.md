@@ -20,7 +20,7 @@ graph TD
   CT --> DV["미분"]
   DV --> IF["역함수 정리"]
   CT --> RI["Riemann 적분"]
-  LM --> PS["멱급수와 Taylor 급수"]
+  LM --> PS["멱급수"]
   DV --> PS
   DV --> FC["미적분학의 기본 정리"]
   RI --> FC
@@ -65,7 +65,7 @@ graph TD
 
 ## 급수와 변환
 
-- [멱급수와 Taylor 급수](power-series.md): 수렴반경과 해석성
+- [멱급수](power-series.md): 수렴반경과 해석성
 - [Fourier 급수](fourier-series.md): 직교계 전개와 $L^2$ 수렴
 - [이산 Fourier 변환](fourier.md): 유한 순환군 위의 Fourier 해석
 - [Euler–Maclaurin 공식과 점근급수](euler-maclaurin.md): 합과 적분의 차이를 Bernoulli 수로 전개
