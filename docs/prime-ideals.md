@@ -156,4 +156,4 @@ $k$ 가 대수적으로 닫힌 체이면 $k[x_1,\dots,x_n]$ 의 극대 아이디
 - [체](fields.md)
 - [환의 국소화](localization-rings.md)
 
-#ring_theory
+#ring_theory #algebra

@@ -241,4 +241,4 @@ for q in samples:
 
 - [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md)
 
-#ring_theory
+#ring_theory #algebra #number_theory
