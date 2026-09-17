@@ -110,57 +110,9 @@ $$
 X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix},\qquad Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix},\qquad XZ=-ZX
 $$
 
-두 행렬은 가환이 아니지만 $\mathrm{PGL}_2$ 로 내려가면 가환이다. 부호 하나 차이가 걸림돌이다.
+두 행렬은 가환이 아니지만 $\mathrm{PGL}\_2$ 로 내려가면 가환이다. 부호 하나 차이가 걸림돌이다.
 
-```python
-from itertools import product
-
-def mul(A, B):
-    return tuple(tuple(sum(A[i][k] * B[k][j] for k in range(2)) for j in range(2))
-                 for i in range(2))
-
-I = ((1, 0), (0, 1)); X = ((0, 1), (1, 0)); Z = ((1, 0), (0, -1))
-rho = {(0, 0): I, (1, 0): X, (0, 1): Z, (1, 1): mul(X, Z)}   # (Z/2)^2 의 대표원
-V = list(rho)
-def add(a, b): return (a[0] ^ b[0], a[1] ^ b[1])
-
-def cocycle(a, b):
-    """rho(a) rho(b) = c(a,b) rho(a+b) 의 스칼라 c(a,b)"""
-    P, Q = mul(rho[a], rho[b]), rho[add(a, b)]
-    for i in range(2):
-        for j in range(2):
-            if Q[i][j] != 0:
-                return P[i][j] / Q[i][j]
-
-c = {(a, b): cocycle(a, b) for a in V for b in V}
-print("코사이클이 갖는 값:", sorted({complex(v).real for v in c.values()}))
-
-# c 가 코바운더리인가? c(a,b) = l(a)l(b)/l(a+b) 인 l 을 전수 탐색
-trivial = False
-for lam in product([1, -1, 1j, -1j], repeat=3):
-    l = {(0, 0): 1, (1, 0): lam[0], (0, 1): lam[1], (1, 1): lam[2]}
-    if all(abs(c[a, b] - l[a] * l[b] / l[add(a, b)]) < 1e-12 for a in V for b in V):
-        trivial = True
-print("스칼라 재조정으로 없앨 수 있는가:", trivial)
-
-# X, Z 가 생성하는 행렬군이 곧 중심확대
-G, frontier = {I}, [I]
-while frontier:
-    nxt = []
-    for g in frontier:
-        for h in (X, Z):
-            p = mul(g, h)
-            if p not in G:
-                G.add(p); nxt.append(p)
-    frontier = nxt
-center = [g for g in G if all(mul(g, h) == mul(h, g) for h in G)]
-print("중심확대의 위수:", len(G), " 중심의 위수:", len(center))
-# 코사이클이 갖는 값: [-1.0, 1.0]
-# 스칼라 재조정으로 없앨 수 있는가: False
-# 중심확대의 위수: 8  중심의 위수: 2
-```
-
-코사이클이 $\pm1$ 만 취하고 어떤 재조정으로도 $1$ 이 되지 않으며, 들어올린 군의 위수가 4 가 아니라 8 이다. 늘어난 인자 2 가 $M(G)=\mathbb Z/2$ 다.
+이 코사이클은 $\pm1$ 만 취하고 어떤 재조정으로도 $1$ 이 되지 않는다. 들어올린 군의 위수가 $4$ 가 아니라 $8$ 이고, 늘어난 인자 $2$ 가 $M(G)=\mathbb Z/2$ 다.
 
 위수 8 군 $\lbrace\pm I,\pm X,\pm Z,\pm XZ\rbrace$ 는 $X^2=Z^2=I$ , $(XZ)^2=-I$ 이므로 이면체군 $D_4$ 다. 이 확대로 $(\mathbb Z/2)^2$ 이 2 차원 기약 사영표현을 갖는다. 아벨군의 보통 기약표현은 전부 1 차원이므로 사영표현에서만 가능한 현상이다. 양자정보의 Pauli 군이 이것이고 안정자 부호의 대수적 바탕이다.
 
@@ -172,7 +124,7 @@ print("중심확대의 위수:", len(G), " 중심의 위수:", len(center))
 | $(\mathbb Z/n)^k$ | $(\mathbb Z/n)^{k(k-1)/2}$ |
 | $n\ge5$ 이고 $n\neq6,7$ 인 $A_n$ | $\mathbb Z/2$ |
 | $A_6,A_7$ | $\mathbb Z/6$ |
-| 대부분의 $\mathrm{PSL}_2(q)$ | $\mathbb Z/2$ |
+| 대부분의 $\mathrm{PSL}\_2(q)$ | $\mathbb Z/2$ |
 | $M_{11},M_{23},M_{24}$ | 자명 |
 | $M_{12},M_{22}$ | 각각 $\mathbb Z/2$ 와 $\mathbb Z/{12}$ |
 | 괴물군 $\mathbb M$ | 자명 |
@@ -205,7 +157,7 @@ print("중심확대의 위수:", len(G), " 중심의 위수:", len(center))
 
 ## 대수적 K 이론과의 연결
 
-$\mathrm{SL}_n(R)$ 의 보편 중심확대는 Steinberg 군 $\mathrm{St}_n(R)$ 이고, 그 핵이 $K_2(R)$ 다.
+$\mathrm{SL}\_n(R)$ 의 보편 중심확대는 Steinberg 군 $\mathrm{St}\_n(R)$ 이고, 그 핵이 $K_2(R)$ 다.
 
 $$
 1\to K_2(R)\to\mathrm{St}(R)\to E(R)\to1
