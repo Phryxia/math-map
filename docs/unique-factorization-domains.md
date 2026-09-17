@@ -99,6 +99,7 @@ UFD 에서는 두 원소의 최대공약수가 지수별 최솟값으로 정의�
 ## 더 알아보기
 
 - [Gauss 정수환](gaussian-integers.md)
+- [PID 위의 유한생성 가군](finitely-generated-modules.md)
 - [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md)
 
 #ring_theory #algebra #number_theory
