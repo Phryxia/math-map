@@ -239,7 +239,7 @@ Heegner 점은 특수값을 대수적 순환류로 실현하는 도식의 예다
 ## 선수지식
 
 - [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)
-- [모듈러 곡선 X_0(N)](modular-curves.md)
+- [모듈러 곡선](modular-curves.md)
 - [복소 곱셈과 허수이차체의 유체론](complex-multiplication.md)
 
 ## 더 알아보기

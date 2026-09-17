@@ -131,6 +131,6 @@ $g\ge2$ 에서는 이 족이 복소차원 $3g-3$ 이다. 그 공간을 다루는
 ## 더 알아보기
 
 - [Teichmüller 공간과 곡면의 모듈라이](teichmuller-space.md)
-- [모듈러 곡선 X_0(N)](modular-curves.md)
+- [모듈러 곡선](modular-curves.md)
 
 #complex_analysis #topology #theorem

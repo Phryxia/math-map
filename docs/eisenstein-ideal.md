@@ -163,7 +163,7 @@ Merel 의 정리는 목록이 아니라 유계를 준다. 명시적 목록은 $d
 ## 선수지식
 
 - [Herbrand–Ribet 정리와 Eisenstein 합동](herbrand-ribet.md)
-- [모듈러 곡선 X_0(N)](modular-curves.md)
+- [모듈러 곡선](modular-curves.md)
 
 ## 더 알아보기
 
