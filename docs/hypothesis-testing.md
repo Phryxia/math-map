@@ -171,4 +171,4 @@ $$
 
 - [신뢰구간](confidence-intervals.md)
 
-#statistics
+#statistics #probability

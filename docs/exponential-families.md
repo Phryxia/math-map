@@ -245,4 +245,4 @@ print("A'' 수치 %.4f  표본분산 %.4f" % (num_d2, z.var()))
 
 아직 연결한 문서가 없다.
 
-#statistics
+#statistics #probability #information_theory

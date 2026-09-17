@@ -243,4 +243,4 @@ print("leverage 최대 =", round(np.diag(H).max(), 3))
 
 아직 연결한 문서가 없다.
 
-#statistics
+#statistics #linear_algebra #optimization
