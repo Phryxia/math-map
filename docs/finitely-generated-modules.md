@@ -87,6 +87,6 @@ $R=k[x]$ 에서 벡터 공간 $V$ 와 선형사상 $T$ 의 쌍은 $k[x]$ 가군�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Jordan 표준형](jordan-canonical-form.md)
 
 #ring_theory #algebra #linear_algebra
