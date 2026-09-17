@@ -72,9 +72,9 @@ MV 다면체는 꼭짓점이 $W\lambda$ 의 부분집합이고 면의 위치가 
 
 ## 설정
 
-$G$ 를 복소 환원군, $F=\mathbb C((t))$ 와 $\mathcal O=\mathbb C[[t]]$ 로 두고 아핀 Grassmann 다양체를 $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 라 한다. $T\subset B=TN$ 을 극대 토러스와 Borel 이라 하자.
+$G$ 를 복소 환원군, $F=\mathbb C((t))$ 와 $\mathcal O=\mathbb C[[t]]$ 로 두고 아핀 Grassmann 다양체를 $\mathrm{Gr}\_G=G(F)/G(\mathcal O)$ 라 한다. $T\subset B=TN$ 을 극대 토러스와 Borel 이라 하자.
 
-여무게 $\mu\in X_\ast(T)$ 에 대해 $t^\mu\in\mathrm{Gr}_G$ 를 대응하는 점이라 하고 두 종류의 궤도를 둔다.
+여무게 $\mu\in X_\ast(T)$ 에 대해 $t^\mu\in\mathrm{Gr}\_G$ 를 대응하는 점이라 하고 두 종류의 궤도를 둔다.
 
 $$
 \mathrm{Gr}^\lambda=G(\mathcal O)\cdot t^\lambda\ (\lambda\ \text{지배적}),\qquad
@@ -110,27 +110,27 @@ MV 순환들의 집합에 결정(crystal) 구조가 들어간다. 곧 $\tilde e_
 
 > **정리 (Braverman–Gaitsgory, Kamnitzer).** MV 순환의 결정은 $B(\lambda)$ 와 동형이다.
 
-이것이 왜 대각표, Littelmann 경로, Lusztig 의 표준 단항식들이 모두 같은 수를 세는지를 설명한다. 셋 다 같은 결정의 다른 실현이고, MV 순환이 그 결정의 기하적 실현이다. 결정 기저는 원래 양자군의 $q\to0$ 극한에서 나온 대수적 대상인데, 기하가 그것을 독립적으로 재발견한 셈이다.
+대각표, Littelmann 경로, Lusztig 의 표준 단항식은 모두 같은 결정의 다른 실현이므로 같은 수를 센다. MV 순환은 그 결정의 기하적 실현이다. 결정 기저는 양자군의 $q\to0$ 극한에서 나온 대수적 대상이고, 기하 쪽에서 같은 대상이 독립적으로 구성되었다.
 
-한 가지 주의할 점이 있다. MV 순환이 주는 것은 **기저**이지 표준적인 하나의 기저가 아니다. 기본류를 쓰려면 각 순환에 방향을 주어야 하고, 그 선택에 모호성이 있다. 결정 구조는 그 모호성에 영향받지 않는 층위의 자료다.
+MV 순환이 주는 것은 기저이지 표준적인 하나의 기저가 아니다. 기본류를 쓰려면 각 순환에 방향을 주어야 하고 그 선택에 모호성이 있다. 결정 구조는 그 모호성에 영향받지 않는 층위의 자료다.
 
 # 활용
 
 ## 기하학적 Satake 의 정련
 
-기하학적 Satake 는 범주 동치를 준다. MV 이론은 그 동치를 **무게 수준까지 내려** 준다. 곧 $\mathrm{Rep}(\widehat G)$ 의 대상뿐 아니라 그 대상의 무게 분해까지 층 쪽에서 읽을 수 있다. 텐서곱의 분해(Littlewood–Richardson 계수)도 MV 순환들의 교차 자료로 표현되고, saturation 정리의 기하적 증명이 여기서 나온다.
+기하학적 Satake 는 범주 동치를 준다. MV 이론은 그 동치를 무게 수준까지 정련해, $\mathrm{Rep}(\widehat G)$ 의 대상뿐 아니라 그 대상의 무게 분해까지 층 쪽에서 읽게 한다. 텐서곱의 분해인 [Littlewood–Richardson 계수](littlewood-richardson.md)도 MV 순환들의 교차 자료로 표현되며, saturation 정리의 기하적 증명이 이 표현을 쓴다.
 
 ## 아핀 Grassmann 다양체의 특이점
 
 $\overline{\mathrm{Gr}^\lambda}$ 는 일반적으로 특이점을 갖고, 그 특이점의 성격이 표현론의 자료로 읽힌다. $\mathcal{IC}$ 층의 국소 코호몰로지 차원이 Kazhdan–Lusztig 다항식(아핀판)으로 주어지고, MV 순환은 그 층을 자른 조각이다. 특이점을 푸는 문제와 무게 중복도를 세는 문제가 같은 대상의 두 면이다.
 
-## 다른 방향으로의 파급
+## 다른 분야에서의 쓰임
 
-- **Coulomb 가지와 대칭 쌍대성**: 물리에서 나온 3 차원 게이지 이론의 Coulomb 가지가 $\mathrm{Gr}_G$ 의 변종으로 구성되고, MV 이론의 기법이 그대로 쓰인다.
+- **Coulomb 가지와 대칭 쌍대성**: 물리에서 나온 3 차원 게이지 이론의 Coulomb 가지가 $\mathrm{Gr}\_G$ 의 변종으로 구성되고, MV 이론의 기법이 그대로 쓰인다.
 - **적분가능계**: MV 다면체의 조합론이 Berenstein–Zelevinsky 의 tropical 자료, 나아가 cluster 대수와 이어진다.
 - **산술 쪽으로의 되돌림**: Casselman–Shalika 공식처럼 함수 수준에서 계산되던 것들이 층 수준 진술의 점 개수 그림자로 이해된다. $\mathbb F_q$ 점을 세면 다시 $p$ 진 적분이 나온다.
 
-마지막 항목이 이 문서가 [기하학적 Satake](geometric-satake.md) 아래에 놓이는 이유를 다시 말해 준다. 함수에서 층으로 올라간 다음 무게까지 내려오면, 처음에 교대합으로만 알던 수가 세는 대상을 얻는다. **올라갔다 내려오는 동안 얻은 것이 그 세는 대상이다.**
+[기하학적 Satake](geometric-satake.md) 에서 함수를 층으로 올리고 MV 이론에서 무게까지 내리면, Kostant 공식이 교대합으로 주던 무게 중복도가 세는 대상을 갖는다.
 
 # 연관 문서
 
