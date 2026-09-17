@@ -50,20 +50,6 @@ $$
 
 지수에 $n$ 이 곱해진 꼴이라 안장점법이 그대로 적용된다. 안장점 조건 $zF'(z)/F(z)=n$ 은 평균이 $n$ 이 되도록 $z$ 를 고른다는 뜻이고, 이 확률적 해석이 조합수의 점근을 구하는 지침이 된다.
 
-```mermaid
-flowchart TD
-  INT["I = int g e^{lambda phi}"] --> MAX["phi 최대점 x0<br/>폭 ~ lambda^{-1/2}"]
-  MAX --> GAUSS["2차 전개 -> Gauss 적분"]
-  GAUSS --> ASY["점근전개<br/>1 + c1/lambda + ..."]
-  INT --> CPX["복소: 최대 없음"]
-  CPX --> SADDLE["안장점 phi'(z0)=0"]
-  SADDLE --> STEEP["급강하 경로<br/>Im phi 일정 -> 진동 소멸"]
-  STEEP --> COEF["생성함수 계수 추출"]
-  COEF --> HR["분할수 Hardy-Ramanujan"]
-  GAUSS --> STIR["Stirling"]
-  GAUSS --> LD["대편차와 Laplace 근사"]
-```
-
 # 정의
 
 ## Laplace 방법
@@ -107,22 +93,7 @@ $$
 n!=\sqrt{2\pi n}\left(\frac ne\right)^{n}\left(1+\frac1{12n}+\frac1{288n^{2}}-\frac{139}{51840n^{3}}-\cdots\right)
 $$
 
-```python
-from math import sqrt, pi, exp, factorial
-
-for n in (5, 10, 20, 50):
-    lead = sqrt(2 * pi * n) * (n / exp(1)) ** n
-    rel = lambda v: abs(v - factorial(n)) / factorial(n)
-    print(n, "%.2e %.2e %.2e" % (rel(lead),
-                                 rel(lead * (1 + 1 / (12 * n))),
-                                 rel(lead * (1 + 1 / (12 * n) + 1 / (288 * n * n)))))
-# 5   1.65e-02 1.15e-04 2.12e-05
-# 10  8.30e-03 3.18e-05 2.67e-06
-# 20  4.16e-03 8.31e-06 3.35e-07
-# 50  1.67e-03 1.37e-06 2.15e-08
-```
-
-각 열의 오차가 $1/(12n)$ , $1/(288n^{2})$ , $139/(51840n^{3})$ 에 자릿수까지 맞는다. 이 급수는 발산하며 최적 절단은 Euler–Maclaurin 쪽과 같은 $K\approx\pi n$ 이다.
+항을 하나 더할 때마다 상대오차가 $1/(12n)$ , $1/(288n^{2})$ , $139/(51840n^{3})$ 규모로 줄어든다. 이 급수는 발산하며 최적 절단은 Euler–Maclaurin 쪽과 같은 $K\approx\pi n$ 이다.
 
 ## 안장점의 선택
 
