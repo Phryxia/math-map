@@ -46,7 +46,7 @@ graph TD
   BASIS --> POLY["MV 다면체<br/>(Anderson, Kamnitzer)"]
 ```
 
-## 왜 세는 것이 나은가
+## Kostant 공식과의 대비
 
 Kostant 중복도 공식은 이렇다.
 
