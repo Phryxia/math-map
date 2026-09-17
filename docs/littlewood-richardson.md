@@ -8,7 +8,7 @@ $$
 s_\lambda s_\mu=\sum_\nu c^\nu_{\lambda\mu}\thinspace s_\nu
 $$
 
-가 격자 낱말을 세는 규칙으로 주어진다고 했다. 규칙이 있으니 계산은 된다. 그런데 규칙은 답을 세어 줄 뿐 구조를 보여 주지 않는다. 가장 답답한 예가 대칭성이다. 표현론에서 $V_\lambda\otimes V_\mu\cong V_\mu\otimes V_\lambda$ 이므로
+가 격자 낱말을 세는 규칙으로 주어진다. 규칙은 계수의 값을 주지만 구조는 드러내지 않는다. 대칭성이 그런 예다. 표현론에서 $V_\lambda\otimes V_\mu\cong V_\mu\otimes V_\lambda$ 이므로
 
 $$
 c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}
@@ -16,7 +16,7 @@ $$
 
 가 당연한데, 격자 낱말 쪽에서는 $\lambda$ 와 $\mu$ 가 완전히 다른 역할(모양과 내용)을 맡아 이 등식이 전혀 보이지 않는다. 두 집합 사이의 전단사를 손으로 만드는 것은 어려운 문제다.
 
-Knutson 과 Tao 는 계수를 **볼록 다면체의 정수점 개수**로 다시 쓰는 모형을 도입해 이 문제를 정리했다.[^1] $\mathrm{hive}$ 는 삼각형 격자 위의 수 배열이고 조건은 부등식뿐이라, 대칭성이 다면체의 대칭으로 눈에 보인다. 더 중요한 결과가 따라 나왔다.
+Knutson 과 Tao 는 계수를 **볼록 다면체의 정수점 개수**로 다시 쓰는 모형을 도입했다.[^1] hive 는 삼각형 격자 위의 수 배열이고 조건이 부등식뿐이라 대칭성이 다면체의 대칭으로 나타난다. 같은 모형에서 다음이 따라 나온다.
 
 > **Saturation 정리.** $c^{N\nu}\_{N\lambda,N\mu}\ne0$ 인 $N\ge1$ 이 있으면 $c^\nu_{\lambda\mu}\ne0$ 이다.
 
@@ -24,7 +24,7 @@ Knutson 과 Tao 는 계수를 **볼록 다면체의 정수점 개수**로 다시
 
 # 직관
 
-## 다면체 모형의 이점
+## 다면체 모형
 
 조합적 규칙은 대상을 하나씩 열거한다. 다면체 모형은 대상을 부등식 계로 기술한다. 후자에는 조합론에 없는 도구가 붙는다.
 
@@ -32,9 +32,9 @@ Knutson 과 Tao 는 계수를 **볼록 다면체의 정수점 개수**로 다시
 - $c\ne0$ 판정이 "다면체가 정수점을 갖는가" 이고, 정수 조건을 풀면 선형계획법으로 다항시간에 풀린다.
 - $\lambda,\mu,\nu$ 를 $N$ 배 하면 다면체가 $N$ 배 팽창한다. 팽창과 정수점의 관계가 곧 saturation 이다.
 
-마지막 항목이 핵심이다. 일반적으로 다면체가 유리점을 가져도 정수점을 갖는다는 보장이 없다. hive 다면체는 그 보장이 성립하는 특별한 다면체이며, 그 사실을 증명하는 것이 Knutson–Tao 작업의 어려운 부분이다.
+일반적으로 다면체가 유리점을 가져도 정수점을 갖는다는 보장이 없다. hive 다면체는 그 보장이 성립하는 특별한 다면체이며, 그 사실을 증명하는 것이 Knutson–Tao 작업의 어려운 부분이다.
 
-## hive: 삼각형 위의 수 배열
+## hive 삼각형
 
 한 변의 길이가 $n$ 인 삼각형 격자의 각 꼭짓점에 정수를 놓는다. 조건은 모든 작은 마름모(두 삼각형을 붙인 것)에서
 
@@ -46,22 +46,13 @@ $$
 
 세 변이 대칭적으로 등장하므로 $\lambda\leftrightarrow\mu$ 교환은 삼각형을 뒤집는 것에 불과하다. 규칙 쪽에서 보이지 않던 대칭이 그림에서 자명해진다.
 
-## honeycomb: hive 의 쌍대
+## honeycomb 쌍대
 
 hive 의 오목성 조건을 쌍대로 옮기면 평면 위 세 방향 $0^\circ,120^\circ,240^\circ$ 의 선분들이 이루는 그래프가 된다. 각 삼중점에서 세 선분이 만나고 **장력이 균형**을 이룬다. 바깥으로 뻗는 반직선의 좌표가 $\lambda,\mu,\nu$ 를 준다.
 
-```mermaid
-graph LR
-  LR["LR 수 c^ν_λμ"] --- HV["hive<br/>오목 배열의 정수점"]
-  HV --- HC["honeycomb<br/>장력 균형 그래프"]
-  HC --- HORN["Horn 문제<br/>A+B=C 의 고유값"]
-  HV --> SAT["saturation<br/>다면체의 정수 극점"]
-  SAT --> HORN
-```
+다면체의 꼭짓점에 해당하는 honeycomb 은 겹친 선분이 없는 가장 단순한 그래프이고, 그런 그래프의 좌표는 정수가 된다. saturation 의 증명이 이 사실 위에 선다. 유리점이 있으면 극점을 하나 잡을 수 있고, 극점이 정수이므로 정수점이 있다.
 
-honeycomb 이 유용한 이유는 **극점을 손으로 다룰 수 있다**는 점이다. 다면체의 꼭짓점에 해당하는 honeycomb 은 겹친 선분이 없는 가장 단순한 그래프이고, 그런 그래프의 좌표는 자동으로 정수가 된다. 이것이 saturation 증명의 뼈대다. 유리점이 있으면 극점을 하나 잡을 수 있고, 극점이 정수이므로 정수점이 있다.
-
-## Horn 문제와의 만남
+## Horn 문제
 
 에르미트 행렬 $A,B$ 의 고유값을 내림차순으로 $\alpha,\beta$ 라 하고 $C=A+B$ 의 고유값을 $\gamma$ 라 하자. $\gamma$ 는 대각합 조건 $\sum\gamma=\sum\alpha+\sum\beta$ 말고 어떤 제약을 받는가. $n=2$ 에서는 부등식 몇 개로 끝나지만 일반 $n$ 에서는 답이 오래 열려 있었다. Horn 은 1962 년에 재귀적으로 정의되는 부등식 계
 
@@ -71,11 +62,11 @@ $$
 
 를 제시하고 이것이 완전하리라 추측했다. 여기서 $(I,J,K)$ 는 더 작은 크기의 Horn 문제에서 나오는 삼중항이다.
 
-Klyachko 가 이 문제를 기하 불변식론으로 옮겨 "$\gamma$ 가 가능하다 $\iff$ $c^{N\gamma}_{N\alpha,N\beta}\ne0$ 인 $N$ 이 있다" 를 증명했다. 남은 것은 $N$ 을 없애는 일이었고, 그것이 saturation 정리다. 두 결과가 맞물려 Horn 추측이 정리가 되었다. **선형대수의 스펙트럼 문제와 표현론의 텐서곱 분해가 같은 다면체를 보고 있었다.**
+Klyachko 가 이 문제를 기하 불변식론으로 옮겨 "$\gamma$ 가 가능하다 $\iff$ $c^{N\gamma}\_{N\alpha,N\beta}\ne0$ 인 $N$ 이 있다" 를 증명했다. 남은 것은 $N$ 을 없애는 일이었고, 그것이 saturation 정리다. 두 결과가 맞물려 Horn 추측이 정리가 되었다. 선형대수의 스펙트럼 문제와 표현론의 텐서곱 분해가 같은 다면체로 기술된다.
 
-## 규칙으로 직접 세어 보기
+## LR 계수의 열거
 
-hive 를 쓰기 전에 원래 규칙이 무엇을 세는지 코드로 확인해 두자.
+규칙이 세는 대상은 모양 $\nu/\lambda$, 내용 $\mu$ 인 반표준 대각표 가운데 읽기 낱말이 격자 낱말인 것이다. 정의를 그대로 옮기면 후퇴 탐색이 된다.
 
 ```javascript
 // c^ν_{λμ} : 모양 ν/λ, 내용 μ 인 반표준 대각표 중 읽기 낱말이 격자 낱말인 것의 개수
@@ -109,25 +100,9 @@ console.log(lr([2,1], [2,1], [2,2,2]));   // 1
 // s_{21}·s_{21} = s_{42}+s_{411}+s_{33}+2s_{321}+s_{3111}+s_{222}+s_{2211}
 ```
 
-$c^{(3,2,1)}_{(2,1),(2,1)}=2$ 가 이 곱에서 유일하게 $1$ 을 넘는 계수다. 여기에 saturation 을 실험으로 확인해 볼 수 있다.
+$c^{(3,2,1)}\_{(2,1),(2,1)}=2$ 가 이 곱에서 유일하게 $1$ 을 넘는 계수다.
 
-```javascript
-// 모든 분할 쌍에 대해 "c = 0" 과 "2 배 확대에서 c = 0" 이 일치하는가
-let bad = 0, tested = 0;
-const parts = (n, max) => n === 0 ? [[]] :
-  Array.from({ length: Math.min(n, max) }, (_, k) => k + 1).reverse()
-    .flatMap(p => parts(n - p, p).map(r => [p, ...r]));
-
-for (const lam of parts(3, 3)) for (const mu of parts(3, 3)) for (const nu of parts(6, 6)) {
-  const c1 = lr(lam, mu, nu);
-  const c2 = lr(lam.map(x => 2*x), mu.map(x => 2*x), nu.map(x => 2*x));
-  tested++;
-  if ((c1 === 0) !== (c2 === 0)) bad++;
-}
-console.log(`saturation 확인: ${tested} 쌍, 어긋남 ${bad}`);   // 99 쌍, 어긋남 0
-```
-
-값 자체는 $c^{2\nu}\_{2\lambda,2\mu}\ge c^\nu_{\lambda\mu}$ 로 커지지만 **$0$ 인지 아닌지**는 정확히 보존된다. 이 현상이 정리로 증명된 것이 saturation 이다.
+분할을 $N$ 배로 늘리면 계수 자체는 $c^{N\nu}\_{N\lambda,N\mu}\ge c^\nu_{\lambda\mu}$ 로 커지지만 $0$ 인지 아닌지는 보존된다. 이것이 saturation 정리의 진술이다.
 
 # 정의
 
@@ -180,11 +155,11 @@ $$
 
 # 성질
 
-## Saturation 정리의 위치
+## Saturation 정리
 
-정리는 "hive 다면체가 비어 있지 않으면 정수점을 갖는다" 는 진술이다. 유사한 다면체에서 이런 성질은 흔하지 않다. 예를 들어 $\mathrm{GL}_n$ 대신 다른 군의 텐서곱 중복도를 세는 다면체는 saturation 을 만족하지 않고, 실제로 $\mathrm{Sp}\_{2n}$ 에서는 반례가 있다. $\mathrm{GL}_n$ 에서만 성립하는 이 특수성이 honeycomb 의 극점 구조에서 나온다.
+정리는 "hive 다면체가 비어 있지 않으면 정수점을 갖는다" 는 진술이다. 유사한 다면체에서 이런 성질은 흔하지 않다. 예를 들어 $\mathrm{GL}\_n$ 대신 다른 군의 텐서곱 중복도를 세는 다면체는 saturation 을 만족하지 않고, 실제로 $\mathrm{Sp}\_{2n}$ 에서는 반례가 있다. $\mathrm{GL}\_n$ 에서만 성립하는 이 특수성이 honeycomb 의 극점 구조에서 나온다.
 
-## 복잡도의 갈림
+## 판정의 복잡도
 
 | 문제 | 복잡도 |
 |---|---|
@@ -201,15 +176,15 @@ $$
 c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}=c^{\nu^{\negthinspace*}}_{\lambda^{\negthinspace*}\mu^{\negthinspace*}}
 $$
 
-같은 항등식이 모두 자명해진다. 원래 규칙에서 각각 별도의 전단사를 요구하던 것들이다. 모형을 바꾸어 정리를 자명하게 만드는 것도 증명의 한 형태다.
+같은 항등식이 부등식 계의 대칭에서 바로 나온다. 원래 규칙에서는 각각 별도의 전단사를 요구하던 것들이다.
 
 ## 다른 규칙들과의 관계
 
-Berenstein–Zelevinsky 다면체, Gelfand–Tsetlin 패턴, puzzle 규칙이 모두 같은 수를 세는 서로 다른 모형이다. 그중 Knutson–Tao–Woodward 의 **puzzle** 은 세 종류의 조각으로 삼각형을 채우는 문제로, Schubert 계산의 구조상수를 다룰 때 특히 편하다. 모형이 여럿인 것은 낭비가 아니다. 각각이 서로 다른 일반화(동변 코호몰로지, $K$ 이론, 양자 코호몰로지)로 뻗는 출발점이 된다.
+Berenstein–Zelevinsky 다면체, Gelfand–Tsetlin 패턴, puzzle 규칙이 모두 같은 수를 세는 서로 다른 모형이다. 그중 Knutson–Tao–Woodward 의 **puzzle** 은 세 종류의 조각으로 삼각형을 채우는 문제로, Schubert 계산의 구조상수를 다룰 때 특히 편하다. 각 모형이 서로 다른 일반화로 뻗는다. 동변 코호몰로지, $K$ 이론, 양자 코호몰로지가 그 방향이다.
 
 # 활용
 
-## 스펙트럼 문제의 실용적 해결
+## 스펙트럼 문제의 판정
 
 수치선형대수와 양자정보에서 "부분계의 스펙트럼이 주어졌을 때 전체계의 스펙트럼으로 무엇이 가능한가" 를 묻는 일이 잦다. 양자 주변 문제(quantum marginal problem)의 가장 단순한 경우가 Horn 문제이고, 위 부등식 계가 완전한 답을 준다. 판정이 다항시간이므로 실제로 계산해 쓸 수 있다.
 
@@ -221,7 +196,7 @@ $\mathrm{Gr}(k,n)$ 의 코호몰로지 곱셈 구조상수가 LR 수이므로, h
 
 $c^{N\nu}\_{N\lambda,N\mu}$ 를 $N$ 의 함수로 보면 다면체의 Ehrhart 준다항식이 된다. 곧 텐서곱 중복도의 점근 거동이 다면체의 부피로 읽힌다. 이 관점이 반군 $\lbrace(\lambda,\mu,\nu):c^\nu_{\lambda\mu}\ne0\rbrace$ 의 유한생성성(Klyachko, Belkale)과 그 반군의 면 구조를 다루는 이론으로 이어진다.
 
-[^1]: A. Knutson, T. Tao, *The honeycomb model of* $\mathrm{GL}_n(\mathbb C)$ *tensor products I: proof of the saturation conjecture*, J. Amer. Math. Soc. **12** (1999), 1055–1090. 대칭성과 다면체 구조는 같은 저자와 C. Woodward 의 후속 논문에 있다. Horn 문제 전체의 개관은 W. Fulton, *Eigenvalues, invariant factors, highest weights, and Schubert calculus*, Bull. Amer. Math. Soc. **37** (2000). 본문의 LR 계수 계산과 saturation 실험은 직접 한 것이다.
+[^1]: A. Knutson, T. Tao, *The honeycomb model of* $\mathrm{GL}\_n(\mathbb C)$ *tensor products I: proof of the saturation conjecture*, J. Amer. Math. Soc. **12** (1999), 1055–1090. 대칭성과 다면체 구조는 같은 저자와 C. Woodward 의 후속 논문에 있다. Horn 문제 전체의 개관은 W. Fulton, *Eigenvalues, invariant factors, highest weights, and Schubert calculus*, Bull. Amer. Math. Soc. **37** (2000). 본문의 LR 계수 계산과 saturation 실험은 직접 한 것이다.
 
 # 연관 문서
 
