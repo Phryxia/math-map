@@ -16,7 +16,7 @@ $$
 
 > **Iwasawa 주추측.** 두 원소가 생성하는 $\Lambda$ 의 아이디얼은 같다.
 
-유수 공식이 "류수 × 조절자 = $L$ 함수의 값" 이라는 한 층의 등식이라면 주추측은 그 탑 판본이다. Mazur 와 Wiles 가 모듈러 곡선의 Eisenstein 합동으로 먼저 증명했고, Rubin 이 [Euler 계](euler-systems.md)로 더 짧은 두 번째 증명을 주었다.
+유수 공식이 "류수 $\times$ 조절자 $=L$ 함수의 값" 이라는 한 층의 등식이라면 주추측은 그 탑 판본이다. Mazur 와 Wiles 가 모듈러 곡선의 Eisenstein 합동으로 먼저 증명했고, Rubin 이 [Euler 계](euler-systems.md)로 더 짧은 두 번째 증명을 주었다.
 
 # 직관
 

@@ -142,7 +142,7 @@ flowchart LR
 2. 모든 소 아이디얼 $p$ 에 대해 $M_p = 0$ 이다.
 3. 모든 극대 아이디얼 $m$ 에 대해 $M_m = 0$ 이다.
 
-증명 스케치. 1 ⟹ 2 ⟹ 3 은 자명하다. 3 ⟹ 1: $M \ne 0$ 이면 원소 $x \in M$ 을 $x \ne 0$ 이 되게 잡고 소멸자 $\mathrm{Ann}(x) = \lbrace a : ax = 0\rbrace$ 를 본다. 이는 진아이디얼이므로 어떤 극대 아이디얼 $m$ 에 포함된다([선택공리](axiom-of-choice.md)에 기반한 Krull 정리). 그러면 $M_m$ 에서 $x/1 \ne 0$ 인데, $x/1 = 0$ 이려면 $m$ 밖의 어떤 $u$ 가 $ux = 0$ 을 만족해야 하고 그런 $u$ 는 $\mathrm{Ann}(x) \subseteq m$ 에 들어 있어야 하므로 모순이다.
+증명 스케치. $1\Rightarrow2\Rightarrow3$ 은 자명하다. $3\Rightarrow1$ 은 다음과 같다. $M \ne 0$ 이면 원소 $x \in M$ 을 $x \ne 0$ 이 되게 잡고 소멸자 $\mathrm{Ann}(x) = \lbrace a : ax = 0\rbrace$ 를 본다. 이는 진아이디얼이므로 어떤 극대 아이디얼 $m$ 에 포함된다([선택공리](axiom-of-choice.md)에 기반한 Krull 정리). 그러면 $M_m$ 에서 $x/1 \ne 0$ 인데, $x/1 = 0$ 이려면 $m$ 밖의 어떤 $u$ 가 $ux = 0$ 을 만족해야 하고 그런 $u$ 는 $\mathrm{Ann}(x) \subseteq m$ 에 들어 있어야 하므로 모순이다.
 
 완전성과 결합하면 곧바로 따름정리가 나온다. $f : M \to N$ 이 단사(전사, 동형)인 것과 모든 극대 아이디얼 $m$ 에 대해 $f_m$ 이 단사(전사, 동형)인 것은 동치다. 핵과 여핵이 국소화와 교환하므로 위 정리를 $\ker f$ 와 $\mathrm{coker}f$ 에 적용하면 된다.
 

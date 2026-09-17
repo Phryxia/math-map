@@ -34,7 +34,7 @@ $f : X \to T(Y)$ 꼴의 사상을 이으려면 $f$ 를 적용한 뒤 $T(g)$ 를 
 
 # 정의
 
-## 세 쌍 (T, η, μ)
+## 세 쌍 $(T,\eta,\mu)$
 
 범주 $\mathcal C$ 위의 monad 는 functor $T : \mathcal C \to \mathcal C$ 와 자연변환 $\eta : \mathrm{id}_{\mathcal C} \Rightarrow T$ , $\mu : T \circ T \Rightarrow T$ 로 다음 두 등식을 모든 대상에서 만족하는 것이다.
 

@@ -66,7 +66,7 @@ $$
 
 ## Chapman–Kolmogorov
 
-m, n ≥ 0에 대해 중간 시점을 전개하면 행렬 곱이 나온다.
+$m,n\ge0$ 에 대해 중간 시점을 전개하면 행렬 곱이 나온다.
 
 $$
 p_{ij}^{(m+n)}=\sum_{k\in S}p_{ik}^{(m)}\thinspace p_{kj}^{(n)}

@@ -145,7 +145,7 @@ $$
 
 로 둔다. 첨점형식 $\varphi$ 의 Whittaker 함수는 개요의 적분이다. $\pi=\otimes_v\pi_v$ 가 첨점 표현이면 각 자리에서 $\psi_v$ 형 Whittaker 모형이 유일하게 존재하고 $W_\varphi=\prod_vW_v$ 로 분해된다.
 
-## GL_n × GL_m 적분
+## $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 적분
 
 $m<n$ 이고 $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}_n(\mathbb A)$ 와 $\mathrm{GL}_m(\mathbb A)$ 의 첨점 표현이라 하자. $m=n-1$ 이면
 

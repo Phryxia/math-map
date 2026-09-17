@@ -60,7 +60,7 @@ $$
 \sup_{f \in H} \int_X |f| \thinspace d\mu < \infty .
 $$
 
-2. **균등절대연속 (ε–δ 조건)**: 임의의 양수 $\varepsilon$ 에 대해 어떤 양수 $\delta$ 가 존재하여, 가측집합 $A$ 가 $\mu(A)<\delta$ 를 만족하면 모든 $f$ 가 $H$ 에 속할 때
+2. **균등절대연속**: 임의의 양수 $\varepsilon$ 에 대해 어떤 양수 $\delta$ 가 존재하여, 가측집합 $A$ 가 $\mu(A)<\delta$ 를 만족하면 모든 $f$ 가 $H$ 에 속할 때
 
 $$
 \int_A |f| \thinspace d\mu < \varepsilon .
