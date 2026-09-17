@@ -20,17 +20,6 @@ $D(P\Vert Q)$ 는 $P$ 가 질량을 두는 곳에서 $Q$ 가 0 에 가까우면 
 
 상호정보량은 결합분포가 독립 모형에서 떨어진 정도를 같은 척도로 잰 것이다.
 
-```mermaid
-graph TD
-  H["H(X): X의 불확실성"] --- I["I(X;Y): 공유 정보"]
-  H2["H(Y): Y의 불확실성"] --- I
-  I --> D["I(X;Y) = D(P_XY || P_X P_Y)"]
-  D --> N["비음성: Gibbs 부등식"]
-  N --> Z["I = 0 ⟺ X와 Y가 독립"]
-  I --> C["I(X;Y) = H(X) - H(X|Y)"]
-  C --> DP["데이터 처리 부등식"]
-```
-
 # 정의
 
 ## KL divergence
@@ -47,7 +36,7 @@ $$
 D(P\thinspace\Vert\thinspace Q) = \int \log\negthinspace\left(\frac{dP}{dQ}\right) dP ,
 $$
 
-단 $P$ 가 $Q$ 에 대해 절대연속일 때만 유한할 수 있다. 로그의 밑이 2면 단위는 비트, 자연로그면 nat이다.
+단 $P$ 가 $Q$ 에 대해 절대연속일 때만 유한할 수 있다. 로그의 밑이 2면 단위는 비트, 자연로그면 nat이다.[^1]
 
 ## 조건부 divergence와 연쇄법칙
 
@@ -178,39 +167,6 @@ $$
 
 상호정보량은 비선형 의존까지 잡으므로 특징 선택의 기준으로 쓰인다. 결정트리의 정보 이득이 분할 변수와 라벨 사이의 상호정보량이다. 표현 학습에서는 표현과 라벨 사이의 상호정보량을 키우고 표현과 입력의 잉여 정보를 줄이는 정보 병목 관점을 쓴다. 고차원 연속 변수에서는 표본 추정이 어렵고 추정량의 분산이 크다.
 
-## 계산 예제
-
-```python
-from math import log
-
-def kl(p, q):
-    # p, q: 같은 지지집합 위의 확률 리스트
-    return sum(pi * log(pi / qi) for pi, qi in zip(p, q) if pi > 0)
-
-def bern(t):
-    return [1 - t, t]
-
-P, Q, R = bern(0.1), bern(0.5), bern(0.9)
-print("비대칭", round(kl(P, Q), 4), round(kl(Q, P), 4))
-print("삼각부등식", round(kl(P, R), 4), ">", round(kl(P, Q) + kl(Q, R), 4))
-
-# 결합분포에서 상호정보량
-joint = {(0, 0): 0.4, (0, 1): 0.1, (1, 0): 0.1, (1, 1): 0.4}
-px = {x: sum(v for (a, b), v in joint.items() if a == x) for x in (0, 1)}
-py = {y: sum(v for (a, b), v in joint.items() if b == y) for y in (0, 1)}
-mi = sum(v * log(v / (px[a] * py[b])) for (a, b), v in joint.items() if v > 0)
-print("상호정보량(nat)", round(mi, 4), "비트", round(mi / log(2), 4))
-
-# 최대가능도 = KL 최소화: Bernoulli 자료에서 확인
-data = [1, 1, 0, 1, 0, 1, 1, 0, 1, 1]          # 성공 7회
-phat = sum(data) / len(data)
-for t in (0.5, 0.6, 0.7, 0.8):
-    ll = sum(log(t if d else 1 - t) for d in data) / len(data)
-    print(t, "평균로그가능도", round(ll, 4), "KL", round(kl(bern(phat), bern(t)), 4))
-```
-
-경험 비율 0.7 에서 평균 로그가능도가 최대가 되고 동시에 KL 이 0 이 된다. 두 곡선은 상수만큼 차이 나는 같은 함수다.[^1]
-
 [^1]: Wikipedia, "Kullback–Leibler divergence", https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence
 [^2]: Wikipedia, "Pinsker's inequality", https://en.wikipedia.org/wiki/Pinsker%27s_inequality
 
@@ -226,4 +182,4 @@ for t in (0.5, 0.6, 0.7, 0.8):
 - [변분 오토인코더](variational-autoencoder.md)
 - [Sinkhorn 알고리즘과 엔트로피 정규화](sinkhorn.md)
 
-#information_theory
+#information_theory #probability #statistics #machine_learning
