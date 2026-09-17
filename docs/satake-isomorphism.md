@@ -2,9 +2,9 @@
 
 # 개요
 
-[Hecke 작용소](hecke-operators.md) $T_p$ 는 이중 잉여류 $\mathrm{SL}_2(\mathbb Z)\begin{pmatrix}1&0\cr 0&p\end{pmatrix}\mathrm{SL}_2(\mathbb Z)$ 로 정의된다. 이 정의에서는 작용소들이 서로 가환인 이유도, 고유값이 $L$ 함수의 Euler 인자가 되는 이유도 보이지 않는다.
+[Hecke 작용소](hecke-operators.md) $T_p$ 는 이중 잉여류 $\mathrm{SL}\_2(\mathbb Z)\begin{pmatrix}1&0\cr 0&p\end{pmatrix}\mathrm{SL}\_2(\mathbb Z)$ 로 정의된다. 이 정의에서는 작용소들이 서로 가환인 이유도, 고유값이 $L$ 함수의 Euler 인자가 되는 이유도 보이지 않는다.
 
-[아델](adeles.md) 위로 올리면 두 사실이 함께 나온다. 자리 $p$ 를 고정하고 $G=\mathrm{GL}_n(\mathbb Q_p)$ , $K=\mathrm{GL}_n(\mathbb Z_p)$ 라 하자. 콤팩트 받침을 갖는 양쪽 $K$ 불변 함수들이 합성곱으로 이루는 대수
+[아델](adeles.md) 위로 올리면 두 사실이 함께 나온다. 자리 $p$ 를 고정하고 $G=\mathrm{GL}\_n(\mathbb Q_p)$ , $K=\mathrm{GL}\_n(\mathbb Z_p)$ 라 하자. 콤팩트 받침을 갖는 양쪽 $K$ 불변 함수들이 합성곱으로 이루는 대수
 
 $$
 \mathcal H(G,K)=C_c^\infty(K\backslash G/K)
@@ -17,7 +17,7 @@ $$
 \thickspace=\thickspace R\bigl(\widehat G\bigr)
 $$
 
-오른쪽은 $n$ 변수 대칭 Laurent 다항식환이고 **쌍대군** $\widehat G=\mathrm{GL}_n(\mathbb C)$ 의 유한차원 표현이 이루는 표현환이다. 이중 잉여류를 세는 조합론과 복소 Lie 군의 표현론이 같은 환을 준다.
+오른쪽은 $n$ 변수 대칭 Laurent 다항식환이고 **쌍대군** $\widehat G=\mathrm{GL}\_n(\mathbb C)$ 의 유한차원 표현이 이루는 표현환이다. 이중 잉여류를 세는 조합론과 복소 Lie 군의 표현론이 같은 환을 준다.
 
 이 동형에서 두 가지가 나온다.
 
@@ -76,7 +76,7 @@ $$
 
 ## 대칭 다항식과의 대응
 
-Cartan 분해는 $\mathcal H(G,K)$ 의 기저가 **지배적 쌍대지표** $\lambda\in X_\ast(T)^+$ 로 매겨진다고 말한다. $\mathrm{GL}_n$ 이면 $\lambda_1\ge\cdots\ge\lambda_n$ 인 정수열이다.
+Cartan 분해는 $\mathcal H(G,K)$ 의 기저가 **지배적 쌍대지표** $\lambda\in X_\ast(T)^+$ 로 매겨진다고 말한다. $\mathrm{GL}\_n$ 이면 $\lambda_1\ge\cdots\ge\lambda_n$ 인 정수열이다.
 
 한편 $\widehat G=\mathrm{GL}\_n(\mathbb C)$ 의 기약표현도 최고무게 $\lambda_1\ge\cdots\ge\lambda_n$ 로 매겨진다. 표현환 $R(\widehat G)$ 의 기저가 그 지표 $\chi_\lambda$ 들이다.
 
@@ -98,30 +98,13 @@ $$
 
 로 두면 $\mathcal S(f)$ 는 $T/T(\mathbb Z_p)\cong X_\ast(T)$ 위의 함수, 곧 Laurent 다항식이다. 여기서 $\delta_B$ 는 모듈러 지표다.
 
-$\delta_B^{1/2}$ 인자가 없으면 $\mathcal S(f)$ 가 Weyl 군 $W$ 불변이 아니다. 반쪽 지표를 곱해야 $N$ 방향 적분에서 생긴 비대칭이 상쇄된다. 이 인자는 유도표현 $\mathrm{Ind}_B^G\chi$ 의 정규화와 같고, $W$ 불변성은 $\mathrm{Ind}_B^G\chi\cong\mathrm{Ind}_B^G(w\chi)$ 에 대응한다.
-
-```mermaid
-graph TD
-  DC["이중 잉여류 KgK<br/>격자 세기"] --> CAR["Cartan 분해<br/>G = ⊔ K p^λ K"]
-  CAR --> BAS["기저 : 지배적 쌍대지표 λ"]
-  CAR --> GEL["Gelfand 요령<br/>전치가 각 KgK 를 고정"]
-  GEL --> COMM["H(G,K) 는 가환"]
-  DC --> SAT["Satake 변환<br/>S(f)(t) = δ^{1/2} ∫_N f(tn) dn"]
-  SAT --> SYM["C[x_1^{±},…,x_n^{±}]^W"]
-  BAS --> SYM
-  SYM --> REP["R(Ĝ) : 쌍대군의 표현환"]
-  COMM --> CHAR["1 차원 지표 = 점"]
-  CHAR --> PARAM["Satake 매개변수<br/>A_π ⊂ Ĝ 반단순 켤레류"]
-  REP --> PARAM
-  PARAM --> L["L(s,π_p) = det(1 − q^{-s}A_π)^{-1}"]
-  PARAM --> FUN["함수성 : Ĥ → Ĝ 가<br/>매개변수를 옮긴다"]
-```
+$\delta_B^{1/2}$ 인자가 없으면 $\mathcal S(f)$ 가 Weyl 군 $W$ 불변이 아니다. 반쪽 지표를 곱해야 $N$ 방향 적분에서 생긴 비대칭이 상쇄된다. 이 인자는 유도표현 $\mathrm{Ind}\_B^G\chi$ 의 정규화와 같고, $W$ 불변성은 $\mathrm{Ind}\_B^G\chi\cong\mathrm{Ind}\_B^G(w\chi)$ 에 대응한다.
 
 # 정의
 
 ## 비분기 상황
 
-$F$ 를 비아르키메데스 국소체, $\mathcal O$ 를 그 정수환, $q$ 를 잉여체의 크기라 하자. $G$ 는 $F$ 위의 **비분기** 연결 환원군, 곧 $F$ 위에서 준분열이고 비분기 확대에서 분열하는 군이다. $K=G(\mathcal O)$ 를 초특수 극대 콤팩트 부분군으로 잡는다. $\mathrm{GL}_n$ 이면 $K=\mathrm{GL}_n(\mathcal O)$ 다.
+$F$ 를 비아르키메데스 국소체, $\mathcal O$ 를 그 정수환, $q$ 를 잉여체의 크기라 하자. $G$ 는 $F$ 위의 **비분기** 연결 환원군, 곧 $F$ 위에서 준분열이고 비분기 확대에서 분열하는 군이다. $K=G(\mathcal O)$ 를 초특수 극대 콤팩트 부분군으로 잡는다. $\mathrm{GL}\_n$ 이면 $K=\mathrm{GL}\_n(\mathcal O)$ 다.
 
 **비분기 Hecke 대수**는 $\mathrm{vol}(K)=1$ 인 Haar 측도에 대한 합성곱 대수
 
@@ -155,7 +138,7 @@ $$
 \mathbb C[X_*(T)]^W=\mathbb C[X^*(\widehat T)]^W=R(\widehat G)\otimes\mathbb C
 $$
 
-$G=\mathrm{GL}\_n$ 이면 $X_\ast(T)=\mathbb Z^n$ 과 $W=S_n$ 과 $\widehat G=\mathrm{GL}_n(\mathbb C)$ 이므로
+$G=\mathrm{GL}\_n$ 이면 $X_\ast(T)=\mathbb Z^n$ 과 $W=S_n$ 과 $\widehat G=\mathrm{GL}\_n(\mathbb C)$ 이므로
 
 $$
 \mathcal H\bigl(\mathrm{GL}_n(F),\mathrm{GL}_n(\mathcal O)\bigr)\thickspace\cong\thickspace
@@ -176,7 +159,7 @@ $$
 
 > 비분기 기약표현 $\pi$ $\thickspace\longleftrightarrow\thickspace$ $\widehat G(\mathbb C)$ 의 반단순 켤레류 $A_\pi$
 
-이 켤레류가 $\pi$ 의 **Satake 매개변수**다. $\mathrm{GL}_n$ 이면 순서를 잊은 $n$ 쌍 $(\alpha_1,\dots,\alpha_n)\in(\mathbb C^\times)^n$ 이다.
+이 켤레류가 $\pi$ 의 **Satake 매개변수**다. $\mathrm{GL}\_n$ 이면 순서를 잊은 $n$ 쌍 $(\alpha_1,\dots,\alpha_n)\in(\mathbb C^\times)^n$ 이다.
 
 $\widehat G$ 의 유한차원 표현 $r$ 마다 국소 $L$ 인자가 정의된다.
 
@@ -188,7 +171,7 @@ $r$ 이 표준표현이면 표준 $L$ 인자 $\prod_i(1-\alpha_iq^{-s})^{-1}$ �
 
 # 성질
 
-## GL_2 의 명시적 상
+## $\mathrm{GL}\_2$ 의 명시적 상
 
 $G=\mathrm{GL}\_2(\mathbb Q_p)$ 와 $K=\mathrm{GL}\_2(\mathbb Z_p)$ 에서 기저를 $a\ge0$ 에 대한 $T(p^b,p^{a+b})=1_{K\thinspace\mathrm{diag}(p^b,p^{a+b})K}$ 로 쓰면
 
@@ -281,36 +264,7 @@ for p in (2, 3, 5):
 #      T(p^2)*T(p^2) = {(0, 4): 1, (1, 3): 4, (2, 2): 30}
 ```
 
-$(1,1)$ 의 계수가 $p+1$ 이고 $T(p)\ast T(p^m)$ 의 $(1,m)$ 계수가 $p$ 다. $\mathcal S$ 에는 반정수 거듭제곱 $p^{a/2}$ 가 있으므로 임의의 점에서 수치로 평가한다.
-
-```python
-import random
-
-def h(m, x, y):
-    return sum(x**k * y**(m-k) for k in range(m+1)) if m >= 0 else 0.0
-
-def S(p, t, x, y):                  # t=(b, a+b) 형 이중 잉여류의 Satake 상
-    b, a = t[0], t[1] - t[0]
-    return (x*y)**b * p**(a/2) * (h(a, x, y) - (x*y)*h(a-2, x, y)/p)
-
-random.seed(7)
-for p in (2, 3, 5):
-    x, y = random.uniform(.5, 1.5), random.uniform(.5, 1.5)
-    worst = 0.0
-    for al in [(0,1), (1,1), (0,2), (1,2), (0,3), (2,2)]:
-        for be in [(0,1), (1,1), (0,2), (0,3)]:
-            lhs = S(p, al, x, y) * S(p, be, x, y)
-            rhs = sum(c * S(p, g, x, y)
-                      for g, c in product_in_basis(p, al, be).items())
-            worst = max(worst, abs(lhs - rhs) / abs(lhs))
-    print(f"p={p}  (x,y)=({x:.4f},{y:.4f})  최대 상대오차 {worst:.2e}")
-
-# p=2  (x,y)=(0.8238,0.6508)  최대 상대오차 4.08e-16
-# p=3  (x,y)=(1.1509,0.5724)  최대 상대오차 1.99e-16
-# p=5  (x,y)=(1.0359,0.8657)  최대 상대오차 2.13e-16
-```
-
-격자 세기로 나온 곱 전부에서 $\mathcal S(f_1)\mathcal S(f_2)=\mathcal S(f_1\ast f_2)$ 가 성립한다.
+$(1,1)$ 의 계수가 $p+1$ 이고 $T(p)\ast T(p^m)$ 의 $(1,m)$ 계수가 $p$ 다. 이렇게 얻은 구조상수는 Satake 변환이 옮기는 대칭 다항식의 곱셈 규칙과 일치한다.
 
 ## 구형함수
 
@@ -337,7 +291,7 @@ $c$ 인자는 Harish-Chandra 의 $c$ 함수의 $p$ 진 판이고, Eisenstein 급
 
 $\mathrm{GL}\_n$ 의 첨점 자기동형 표현이 모든 자리에서 온도적이라는 **Ramanujan–Petersson 추측**은 $n\ge2$ 에서 일반적으로 증명되지 않았다[^2]. 무게 $k$ 의 정칙 첨점형식에 대해서는 Deligne 이 Weil 추측으로 증명했다. 이때 Satake 매개변수가 단위원 위에 있고 $\alpha_p\beta_p=1$ 이므로 $\alpha_p=e^{i\theta_p}$ , $\beta_p=e^{-i\theta_p}$ 로 쓴다. 이 각 $\theta_p$ 의 분포를 묻는 것이 [Sato–Tate](sato-tate.md) 문제다.
 
-## 국소 L 인자와 Euler 인자
+## 국소 $L$ 인자와 Euler 인자
 
 Satake 매개변수가 $L$ 인자를 주고, 그 기하급수 전개가 Hecke 고유값 수열을 준다.
 
@@ -346,36 +300,6 @@ $$
 $$
 
 $h_m(\alpha,\beta)$ 가 정규화된 $T_{p^m}$ 의 고유값이다.
-
-```python
-N = 2000                                  # Δ = q ∏ (1-q^n)^24 의 계수
-c = [0]*(N+1); c[0] = 1
-for n in range(1, N+1):
-    for _ in range(24):
-        new = c[:]
-        for k in range(n, N+1): new[k] -= c[k-n]
-        c = new
-tau = [0]*(N+2)
-for k in range(N+1): tau[k+1] = c[k]
-
-import cmath
-for p in (2, 3, 5, 7, 11):
-    ap = tau[p] / p**5.5                  # 정규화 고유값 a_p = τ(p)/p^{(k-1)/2}
-    d = cmath.sqrt(complex(ap*ap - 4))
-    al, be = (ap + d)/2, (ap - d)/2       # α+β = a_p, αβ = 1
-    rows, pk, m = [], p, 1
-    while pk <= N:
-        hm = sum(al**k * be**(m-k) for k in range(m+1))
-        rows.append((m, tau[pk]/p**(5.5*m), hm.real)); pk *= p; m += 1
-    ok = all(abs(a-b) < 1e-8 for _, a, b in rows)
-    print(f"p={p:3d}  a_p={ap: .6f}  |α|={abs(al):.9f}  m≤{rows[-1][0]}  일치 {ok}")
-
-# p=  2  a_p=-0.530330  |α|=1.000000000  m≤10  일치 True
-# p=  3  a_p= 0.598734  |α|=1.000000000  m≤6  일치 True
-# p=  5  a_p= 0.691213  |α|=1.000000000  m≤4  일치 True
-# p=  7  a_p=-0.376548  |α|=1.000000000  m≤3  일치 True
-# p= 11  a_p= 1.000873  |α|=1.000000000  m≤3  일치 True
-```
 
 $\lvert\alpha\rvert=1$ 이 Deligne 의 정리 $\lvert\tau(p)\rvert\le2p^{11/2}$ 다. $\tau(p^m)/p^{11m/2}=h_m(\alpha,\beta)$ 가 성립하므로 $\Delta$ 의 $L$ 함수의 $p$ 인자가 $\det(1-A_{\pi_p}p^{-s})^{-1}$ 이다. 고전적 Hecke 관계식이 2 차 Euler 인자를 주는 것을 Satake 동형이 설명한다.
 
@@ -391,7 +315,7 @@ A_{\pi_v}\ \in\ \widehat G(\mathbb C)/\negthinspace\sim
 \rho(\mathrm{Frob}_v)\ \in\ {}^LG/\negthinspace\sim
 $$
 
-거의 모든 자리에서 이 둘이 같다는 것이 대응의 정의다. [Galois 표현](galois-representations.md)과 [모듈러 형식](modular-forms.md)의 관계에서 $a_p=\mathrm{tr}\thinspace\rho(\mathrm{Frob}_p)$ 가 $n=2$ 의 경우다.
+거의 모든 자리에서 이 둘이 같다는 것이 대응의 정의다. [Galois 표현](galois-representations.md)과 [모듈러 형식](modular-forms.md)의 관계에서 $a_p=\mathrm{tr}\thinspace\rho(\mathrm{Frob}\_p)$ 가 $n=2$ 의 경우다.
 
 Jacquet–Shalika 의 강한 중복도 1 정리에 따라 거의 모든 자리의 Satake 매개변수가 $\pi$ 를 결정한다. 이 켤레류들의 모임이 자기동형 표현의 완전한 불변량이다.
 
@@ -417,7 +341,7 @@ $$
 
 ## 기하학적 Satake
 
-동형의 오른쪽이 표현환이라는 것은 Grothendieck 군 수준의 진술이다. 이것을 범주 수준으로 올린 것이 **기하학적 Satake 대응**이다. 아핀 Grassmann 다양체 $\mathrm{Gr}_G=G(F)/G(\mathcal O)$ 위의 $G(\mathcal O)$ 동변 퍼버스 층의 범주가 텐서 범주로서 $\widehat G$ 의 표현 범주와 동치다.
+동형의 오른쪽이 표현환이라는 것은 Grothendieck 군 수준의 진술이다. 이것을 범주 수준으로 올린 것이 **기하학적 Satake 대응**이다. 아핀 Grassmann 다양체 $\mathrm{Gr}\_G=G(F)/G(\mathcal O)$ 위의 $G(\mathcal O)$ 동변 퍼버스 층의 범주가 텐서 범주로서 $\widehat G$ 의 표현 범주와 동치다.
 
 $$
 \mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\thickspace\simeq\thickspace\mathrm{Rep}(\widehat G)
@@ -429,7 +353,7 @@ $\mathrm{Gr}\_G$ 의 $G(\mathcal O)$ 궤도가 $X_\ast(T)^+$ 로 매겨지고 �
 
 LMFDB 의 자기동형 형식 표가 저장하는 것이 Satake 매개변수다. 각 자리의 켤레류만 있으면 $L$ 함수의 모든 Euler 인자, 모든 대칭 거듭제곱 $L$ 함수, 함수성 올림의 매개변수가 유한 계산으로 나온다.
 
-[^1]: I. Satake, *Theory of spherical functions on reductive algebraic groups over p-adic fields*, Publ. Math. IHÉS **18** (1963), 5–69. 정리의 현대적 서술과 $\mathrm{GL}_n$ 의 명시적 공식은 D. Bump, *Automorphic Forms and Representations* (1997) 4.6 절, 또는 W. Casselman 의 미출간 노트 *Introduction to the theory of admissible representations of p-adic reductive groups*. Macdonald 공식은 I. G. Macdonald, *Spherical functions on a group of p-adic type* (1971). 기하학적 판은 I. Mirković, K. Vilonen, *Geometric Langlands duality and representations of algebraic groups over commutative rings*, Ann. of Math. **166** (2007). 기본 보조정리는 Ngô Bảo Châu, *Le lemme fondamental pour les algèbres de Lie*, Publ. Math. IHÉS **111** (2010).
+[^1]: I. Satake, *Theory of spherical functions on reductive algebraic groups over p-adic fields*, Publ. Math. IHÉS **18** (1963), 5–69. 정리의 현대적 서술과 $\mathrm{GL}\_n$ 의 명시적 공식은 D. Bump, *Automorphic Forms and Representations* (1997) 4.6 절, 또는 W. Casselman 의 미출간 노트 *Introduction to the theory of admissible representations of p-adic reductive groups*. Macdonald 공식은 I. G. Macdonald, *Spherical functions on a group of p-adic type* (1971). 기하학적 판은 I. Mirković, K. Vilonen, *Geometric Langlands duality and representations of algebraic groups over commutative rings*, Ann. of Math. **166** (2007). 기본 보조정리는 Ngô Bảo Châu, *Le lemme fondamental pour les algèbres de Lie*, Publ. Math. IHÉS **111** (2010).
 [^2]: P. Sarnak, *Notes on the generalized Ramanujan conjectures*, Clay Mathematics Proceedings **4** (2005), 659–685. 어느 경우가 증명되었고 일반 경우가 어디까지 와 있는지 정리한다.
 
 # 연관 문서
