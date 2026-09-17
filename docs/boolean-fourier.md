@@ -53,17 +53,6 @@ $$
 \mathrm{Stab}_\rho[f]=\mathbb E[f(x)f(y)]=\sum_S\rho^{|S|}\hat f(S)^2
 $$
 
-```mermaid
-flowchart LR
-  F["부울 함수 f"] --> C["Fourier 무게<br/>W_k = sum_{|S|=k} f-hat(S)^2"]
-  C --> I["총 영향력<br/>sum k W_k"]
-  C --> S["잡음 안정성<br/>sum rho^k W_k"]
-  C --> L["저차 근사<br/>낮은 k 에 몰렸는가"]
-  I --> D["독재자 검사"]
-  S --> D
-  D --> H["근사 불가능성"]
-```
-
 높은 준위의 계수는 $\rho^{|S|}$ 로 빠르게 죽는다. 안정성이 크다는 것은 무게가 낮은 준위에 있다는 것이고, $\mathrm{Stab}_\rho=\rho$ 를 달성하는 것은 준위 $1$ 에 무게를 몰아 준 독재자뿐이다. 검사하려는 성질이 부등식의 등호 조건으로 나타나므로 독재자 검사가 가능해진다.
 
 ## 근사 불가능성과의 연결
