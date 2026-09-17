@@ -20,18 +20,6 @@ $A(\eta)$ 는 밀도를 1 로 만드는 정규화 비용이고, 이 비용이 $\
 
 같은 분포족을 자연모수 $\eta$ 로도, 평균모수 $\mu = E[T]$ 로도 볼 수 있다. 두 좌표계는 $\nabla A$ 로 오가고 그 대응이 Legendre 변환이다. 평균모수 좌표에서 MLE 는 표본평균을 그대로 쓰는 것이다.
 
-```mermaid
-flowchart LR
-  E["자연모수 eta"] -->|"grad A"| M["평균모수 mu = E[T]"]
-  M -->|"grad A*  (역대응)"| E
-  E --> LL["로그가능도 eta·S - n A(eta)<br/>오목"]
-  LL --> MLE["MLE: grad A(eta) = 평균 T"]
-  M --> MLE
-  E --> A2["Hess A = Cov(T) = Fisher 정보"]
-  M --> ME["모멘트 제약 최대엔트로피 분포"]
-  ME --> E
-```
-
 # 정의
 
 ## 지수족
@@ -191,38 +179,7 @@ $$
 
 ## 모멘트 매칭 계산
 
-Poisson 과 Bernoulli 에서 $\nabla A(\eta)$ 를 표본평균에 맞춰 MLE 를 닫힌 형태로 구한다.
-
-```python
-import numpy as np
-
-rng = np.random.default_rng(0)
-
-# 1) Poisson: A(eta) = exp(eta), T(x) = x
-lam_true = 3.5
-x = rng.poisson(lam_true, size=5000)
-A   = lambda e: np.exp(e)
-dA  = lambda e: np.exp(e)        # 평균
-d2A = lambda e: np.exp(e)        # 분산
-eta_hat = np.log(x.mean())       # dA(eta) = 표본평균 을 푼 것
-print("Poisson  eta_hat=%.4f  dA=%.4f  표본평균=%.4f  표본분산=%.4f"
-      % (eta_hat, dA(eta_hat), x.mean(), x.var()))
-
-# 2) Bernoulli: A(eta) = log(1 + exp(eta)), T(x) = x
-p_true = 0.3
-y = rng.binomial(1, p_true, size=5000)
-eta_b = np.log(y.mean() / (1 - y.mean()))
-dA_b  = 1 / (1 + np.exp(-eta_b))
-print("Bernoulli eta_hat=%.4f  dA=%.4f  표본평균=%.4f" % (eta_b, dA_b, y.mean()))
-
-# 3) 수치미분으로 grad A = E[T], Hess A = Var(T) 확인 (Poisson)
-e0, h = 1.0, 1e-5
-num_d1 = (A(e0 + h) - A(e0 - h)) / (2 * h)
-num_d2 = (A(e0 + h) - 2 * A(e0) + A(e0 - h)) / h**2
-z = rng.poisson(np.exp(e0), size=200000)
-print("A'  수치 %.4f  표본평균 %.4f" % (num_d1, z.mean()))
-print("A'' 수치 %.4f  표본분산 %.4f" % (num_d2, z.var()))
-```
+모멘트 매칭 $\nabla A(\hat\eta)=\bar T$ 는 일부 족에서 닫힌 형태로 풀린다. Poisson 은 $A(\eta)=e^\eta$ 이므로 $\hat\eta=\log\bar x$ 이고, Bernoulli 는 $A(\eta)=\log(1+e^\eta)$ 이므로 $\hat\eta=\log\frac{\bar y}{1-\bar y}$ 다. 두 경우 모두 평균모수 $\mu=\nabla A(\hat\eta)$ 가 표본평균과 같다.
 
 ## 응용
 
