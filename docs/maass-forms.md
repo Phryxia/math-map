@@ -170,7 +170,7 @@ $\Gamma\backslash\mathbb H$ 는 음곡률 곡면이므로 측지선 흐름이 �
 이 대응에서 나오는 Maass 형식들은 예외적으로 계수가 명시적이다. Galois 표현의 지표값이 그대로 계수가 되기 때문이다. 알려진 Maass 형식이 하나도 없다는 앞의 말은 이런 "가짜" 예를 뺀 것이고, 일반적인 Maass 형식은 여전히 수치적으로만 접근된다.
 
 [^1]: A. Selberg, "On the estimation of Fourier coefficients of modular forms", Proceedings of Symposia in Pure Mathematics VIII (1965), 1–15. $\lambda\ge\tfrac14$ 추측의 원 진술이다.
-[^2]: H. Kim, "Functoriality for the exterior square of $\mathrm{GL}\_4$ and the symmetric fourth of $\mathrm{GL}\_2$", Journal of the AMS 16 (2003), 139–183. $\tfrac14-(\tfrac7{64})^2$ 한계는 H. Kim 과 P. Sarnak 의 부록 2 에 있다.
+[^2]: H. Kim, "Functoriality for the exterior square of GL(4) and the symmetric fourth of GL(2)", Journal of the AMS 16 (2003), 139–183. $\tfrac14-(\tfrac7{64})^2$ 한계는 H. Kim 과 P. Sarnak 의 부록 2 에 있다.
 [^3]: Z. Rudnick, P. Sarnak, "The behaviour of eigenstates of arithmetic hyperbolic manifolds", Communications in Mathematical Physics 161 (1994), 195–213. 일반 음곡률 다양체에 대한 양자 유일 에르고딕성 추측이 여기서 제기되었다.
 [^4]: J. Tunnell, "Artin's conjecture for representations of octahedral type", Bulletin of the AMS 5 (1981), 173–175. 가해 상을 갖는 2 차원 표현에 대한 결과이고, 일반 경우가 남아 있음을 서론이 밝힌다.
 

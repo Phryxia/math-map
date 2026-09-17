@@ -165,7 +165,7 @@ $$
 
 [^1]: A. Selberg, *Harmonic analysis and discontinuous groups in weakly symmetric Riemannian spaces*, J. Indian Math. Soc. **20** (1956). 표준 서술은 H. Iwaniec, *Spectral Methods of Automorphic Forms* (2판) 10–11장. 일반화는 J. Arthur, *An introduction to the trace formula* (Clay Math. Proc. 4, 2005).
 [^2]: A. Selberg, "On the estimation of Fourier coefficients of modular forms", Proceedings of Symposia in Pure Mathematics VIII (1965), 1–15. $\lambda\_1\ge\tfrac14$ 추측의 원 진술이다.
-[^3]: H. Kim, "Functoriality for the exterior square of $\mathrm{GL}\_4$ and the symmetric fourth of $\mathrm{GL}\_2$", Journal of the AMS 16 (2003), 139–183. $\tfrac{975}{4096}$ 한계는 H. Kim 과 P. Sarnak 의 부록 2 에 있다.
+[^3]: H. Kim, "Functoriality for the exterior square of GL(4) and the symmetric fourth of GL(2)", Journal of the AMS 16 (2003), 139–183. $\tfrac{975}{4096}$ 한계는 H. Kim 과 P. Sarnak 의 부록 2 에 있다.
 
 # 연관 문서
 
