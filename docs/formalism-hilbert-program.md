@@ -6,17 +6,9 @@
 
 # 직관
 
-Hilbert의 비유는 이렇다. 물리학에서 "무한히 먼 점"은 실재하는 대상이 아니라 계산을 매끄럽게 하는 이상적 원소다. 무한 집합도 같은 지위로 보자. 유한하게 확인 가능한 명제(real statement)와 그것을 다루기 편하게 해주는 명제(ideal statement)를 나누고, 이상적 부분을 통과한 증명이 유한적 결론을 하나도 망치지 않음을 보이면 된다.
+Hilbert 는 무한 집합을 물리학의 "무한히 먼 점" 과 같은 지위로 두었다. 실재하는 대상이 아니라 계산을 매끄럽게 하는 이상적 원소다. 계획은 유한하게 확인 가능한 명제(real statement)와 그것을 다루기 편하게 하는 명제(ideal statement)를 나누고, 이상적 부분을 통과한 증명이 유한적 결론을 망치지 않음을 보이는 것이다.
 
-```mermaid
-graph LR
-  R["real 명제: 구체적 유한 진술"] --> T["형식체계 T (무한 포함)"]
-  T --> R2["다시 real 명제"]
-  T -.->|"유한주의 무모순성 증명?"| F["유한주의 체계 PRA"]
-  G["Gödel 제2정리"] -.->|차단| F
-```
-
-기계적으로 말하면, 무모순성 증명은 "규칙을 아무리 길게 적용해도 0=1이라는 문자열은 결코 나오지 않는다"는 기호열에 관한 유한한 주장이다. Hilbert는 이런 주장이라면 어떤 철학적 전제도 필요 없이 검사할 수 있다고 보았다.
+무모순성 증명은 규칙을 아무리 길게 적용해도 $0=1$ 이라는 문자열이 나오지 않는다는, 기호열에 관한 유한한 주장이다. Hilbert 는 이런 주장이라면 철학적 전제 없이 검사할 수 있다고 보았다.
 
 # 정의
 
@@ -28,7 +20,7 @@ $$
 \mathrm{Con}(T)\ :\equiv\ \neg\thinspace\exists p\ \big(\mathrm{Proof}_T(p,\ \ulcorner 0=1\urcorner)\big)
 $$
 
-Hilbert가 요구한 유한주의적 관점은 구체적으로 주어진 기호 구성물만 다루고, 완결된 무한 전체에 대한 양화를 쓰지 않으며, 결정 가능한 술어와 원시재귀적 구성만 허용한다. 현대적 대응물로는 원시재귀 산술 PRA를 쓴다[^1].
+Hilbert가 요구한 유한주의적 관점은 구체적으로 주어진 기호 구성물만 다루고, 완결된 무한 전체에 대한 양화를 쓰지 않으며, 결정 가능한 술어와 원시재귀적 구성만 허용한다. 현대적 대응물로는 원시재귀 산술 PRA 를 쓴다[^1].
 
 명제를 두 부류로 나눈다.
 
@@ -65,20 +57,20 @@ $$
 
 ## Gentzen의 부분적 성공
 
-Gentzen은 1936년 PA의 무모순성을 증명했다[^2]. 사용한 추가 원리는 서수 epsilon_0까지의 초한귀납법이다.
+Gentzen 은 1936 년에 PA 의 무모순성을 증명했다[^2]. 사용한 추가 원리는 서수 $\varepsilon\_0$ 까지의 초한귀납법이다.
 
 $$
 \varepsilon_0=\sup\lbrace\omega,\ \omega^{\omega},\ \omega^{\omega^{\omega}},\dots\rbrace
 = \min\lbrace\alpha:\omega^{\alpha}=\alpha\rbrace
 $$
 
-PRA에 epsilon_0까지의 초한귀납법을 더한 체계는 PA의 무모순성을 증명하며, 반대로 PA는 epsilon_0까지의 초한귀납법을 증명하지 못한다. 즉 epsilon_0은 PA의 증명론적 서수다. 이는 제2정리와 모순되지 않는다. 초한귀납법은 유한주의의 범위를 넘고, 대신 유한적 조작 가능한 서수 표기 체계 위의 구성적 원리로 정당화된다. Gödel의 Dialectica 해석(1958)은 같은 목표를 유한 타입 원시재귀 함수로 접근한 다른 환원이다.
+PRA 에 $\varepsilon\_0$ 까지의 초한귀납법을 더한 체계는 PA 의 무모순성을 증명하고, 반대로 PA 는 $\varepsilon\_0$ 까지의 초한귀납법을 증명하지 못한다. $\varepsilon\_0$ 이 PA 의 증명론적 서수다. 초한귀납법은 유한주의의 범위를 넘으므로 제2정리와 모순되지 않고, 유한하게 조작 가능한 서수 표기 체계 위의 구성적 원리로 정당화된다. Gödel 의 Dialectica 해석(1958)은 같은 목표를 유한 타입 원시재귀 함수로 접근한 다른 환원이다.
 
 ## 재편된 프로그램
 
 결론은 "무모순성 증명은 불가능하다"가 아니라 "어떤 증명도 증명 대상보다 강한 원리를 요구한다"다. 그래서 질문이 정량적으로 바뀐다.
 
-- 서수 분석: 체계마다 증명론적 서수를 계산해 강도를 비교한다. PA는 epsilon_0, ACA_0도 epsilon_0, ATR_0은 Gamma_0이다.
+- 서수 분석: 체계마다 증명론적 서수를 계산해 강도를 비교한다. PA 와 $\mathrm{ACA}\_0$ 은 $\varepsilon\_0$ , $\mathrm{ATR}\_0$ 은 $\Gamma\_0$ 이다.
 - Relativized Hilbert program: 유한주의 대신 구성적 또는 약한 체계 $S$ 를 기준으로 삼아, $T$ 의 어떤 부류의 정리가 $S$ 로 환원되는지를 본다.
 - Reverse mathematics: 해석학 · 대수학의 표준 정리들이 정확히 어떤 집합존재 공리와 동등한지 분류한다. Hilbert의 "어떤 무한이 실제로 필요한가"라는 물음의 현대적 형태다.
 
@@ -89,12 +81,12 @@ PRA에 epsilon_0까지의 초한귀납법을 더한 체계는 PA의 무모순성
 # 활용
 
 - 증명 보조기와 형식 검증. 형식체계로 환원한다는 발상은 Coq · Lean · Isabelle 같은 체계에서 실제 기술이 되었다. 증명의 정당성이 유한한 규칙 검사로 귀결된다는 Hilbert의 관점이 커널 설계 원리 그대로다.
-- 체계 강도 비교. 어떤 정리를 증명하려면 어떤 공리가 필요한지 묻는 실천적 습관. 예를 들어 Goodstein 정리는 PA에서 증명할 수 없고 epsilon_0까지의 귀납법을 요구한다.
+- 체계 강도 비교. 어떤 정리를 증명하려면 어떤 공리가 필요한지 묻는 실천적 습관. Goodstein 정리는 PA 에서 증명할 수 없고 $\varepsilon\_0$ 까지의 귀납법을 요구한다.
 - 무모순성의 상대화. 큰 기수 공리를 다룰 때 "ZFC가 무모순이면 ZFC + 공리도 무모순"이라는 형태의 상대적 무모순성만 목표로 삼는 관행은 제2정리 이후의 표준이다.
 - 계산 가능성과의 접점. 결정 가능한 증명 술어라는 요구는 [계산 가능성](computability.md)의 언어로 정확히 표현된다. Hilbert의 Entscheidungsproblem이 부정적으로 해결된 것도 같은 맥락이다.
 
 [^1]: Richard Zach, Hilbert's Program, Stanford Encyclopedia of Philosophy, §1–§3 (유한주의, real/ideal 구분, 보존성 목표, Gödel 정리의 영향과 Bernays의 관찰). https://plato.stanford.edu/entries/hilbert-program/
-[^2]: Jan von Plato, The Development of Proof Theory, Stanford Encyclopedia of Philosophy, §4 (Gentzen 1936: epsilon_0까지의 초한귀납법에 의한 PA 무모순성 증명과 현대 증명론의 출발). https://plato.stanford.edu/entries/proof-theory-development/
+[^2]: Jan von Plato, The Development of Proof Theory, Stanford Encyclopedia of Philosophy, §4 (Gentzen 1936: 서수 초한귀납법에 의한 PA 무모순성 증명과 현대 증명론의 출발). https://plato.stanford.edu/entries/proof-theory-development/
 
 # 연관 문서
 
@@ -108,4 +100,4 @@ PRA에 epsilon_0까지의 초한귀납법을 더한 체계는 PA의 무모순성
 
 아직 연결한 문서가 없다.
 
-#philosophy_of_math #foundations
+#philosophy_of_math #foundations #logic
