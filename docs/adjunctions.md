@@ -2,23 +2,21 @@
 
 # 개요
 
-Adjunction은 두 [functor](functors.md) 사이의 가장 흔하고 가장 유용한 관계다. 두 범주 사이를 오가는 functor $F$ , $G$ 가 있을 때, $F$ 를 보낸 뒤 잰 사상의 집합과 $G$ 로 되돌린 뒤 잰 사상의 집합이 자연스럽게 같다면 $F$ 는 $G$ 의 left adjoint다.
+Adjunction은 두 [functor](functors.md) 사이의 관계다. 두 범주 사이를 오가는 functor $F$ , $G$ 가 있을 때, $F$ 를 보낸 뒤 잰 사상의 집합과 $G$ 로 되돌린 뒤 잰 사상의 집합이 자연스럽게 같다면 $F$ 는 $G$ 의 left adjoint다.
 
-자유군 구성, 텐서곱, 지수 대상, 스칼라 확장, 논리에서의 한정기호처럼 서로 무관해 보이는 구성들이 모두 adjunction 한 줄로 정리된다. 또한 adjoint functor는 limit, colimit의 보존 여부를 자동으로 결정하므로, "무엇이 무엇을 보존하는가" 를 매번 계산하지 않아도 된다.
-
-이 문서는 hom-set 동형으로서의 정의, unit·counit에 의한 동치 정의, 표준 예, 보존 정리, [Yoneda lemma](yoneda-lemma.md)와의 관계, 그리고 monad로의 연결을 다룬다.
+자유군 구성, 텐서곱, 지수 대상, 스칼라 확장, 논리의 한정기호가 모두 adjunction 으로 기술된다. adjoint functor 는 limit 과 colimit 의 보존 여부도 결정한다. left adjoint 가 colimit 을 보존하고 right adjoint 가 limit 을 보존한다.
 
 # 직관
 
-## 최선의 근사
+## 자유 구성과 망각
 
 망각 functor $U$ 가 군을 그 바탕집합으로 보낸다고 하자. 집합 $S$ 에 대해 "군 구조를 억지로 얹되 아무 관계식도 추가하지 않는" 군이 자유군 $F(S)$ 다. 자유군의 정의적 성질은 다음과 같다.
 
 - 집합 사상 $S\to U(H)$ 를 주는 것과 군 준동형 $F(S)\to H$ 를 주는 것이 같다.
 
-즉 $F(S)$ 는 $S$ 를 군의 세계로 옮기는 가장 경제적인 방법이다. Left adjoint는 늘 이런 "자유롭고 낭비 없는 생성" 이고, right adjoint는 "구조를 잊거나 잘라내는 쪽" 이다.
+$F(S)$ 에서 나가는 준동형이 $S$ 에서 나가는 집합 사상과 일대일 대응하므로, $F$ 는 관계식을 더하지 않는 생성이다. 이 쌍에서 $F$ 가 left adjoint 이고 망각 functor $U$ 가 right adjoint 다.
 
-## 부분순서에서의 그림
+## Galois connection
 
 [부분순서](partial-orders.md) 집합을 사상이 최대 하나뿐인 범주로 보면 adjunction은 Galois connection이 된다. 단조사상 $f$ , $g$ 에 대해
 
@@ -30,7 +28,7 @@ $$
 
 ## 자연성 조건
 
-hom-set 사이의 전단사가 그냥 존재하기만 해서는 쓸모가 없다. 유한집합처럼 크기만 같아도 전단사는 생긴다. 전단사가 $c$ 와 $d$ 를 따라 사상과 호환된다는 조건, 즉 [자연변환](natural-transformations.md)으로서의 동형이라는 조건이 붙어야 unit·counit을 뽑아낼 수 있고 보존 정리가 따라온다.
+hom-set 사이의 전단사가 존재하는 것만으로는 부족하다. 유한집합처럼 크기만 같아도 전단사는 생긴다. 전단사가 $c$ 와 $d$ 를 따라 사상과 호환된다는 조건, 즉 [자연변환](natural-transformations.md)으로서의 동형이라는 조건이 붙어야 unit·counit을 뽑아낼 수 있고 보존 정리가 따라온다.
 
 # 정의
 
@@ -141,7 +139,7 @@ $$
 
 Adjunction은 표현가능성의 언어로 다시 쓸 수 있다.
 
-- $G:\mathcal D\to\mathcal C$ 의 left adjoint가 존재할 필요충분조건은, 각 대상 $c$ 에 대해 functor $\mathrm{Hom}_{\mathcal C}(c,G-):\mathcal D\to\mathbf{Set}$ 가 표현가능한 것이다. 그때 표현 대상이 $Fc$ 다.
+- $G:\mathcal D\to\mathcal C$ 의 left adjoint가 존재할 필요충분조건은, 각 대상 $c$ 에 대해 functor $\mathrm{Hom}\_{\mathcal C}(c,G-):\mathcal D\to\mathbf{Set}$ 가 표현가능한 것이다. 그때 표현 대상이 $Fc$ 다.
 - Yoneda lemma는 이 표현 대상이 유일하며 $c$ 에 대한 functor성이 공짜로 따라옴을 보장한다. Adjunction의 자연성 조건이 곧 Yoneda 매장이 충실충만하다는 사실의 응용이다.
 
 달리 말해 adjunction은 "hom-functor를 통해 본 두 범주의 번역 사전" 이고, Yoneda lemma는 그 사전이 대상 자체를 결정한다는 진술이다.
@@ -174,7 +172,7 @@ solution set condition은 각 $c$ 마다 $c\to Gd$ 꼴 사상을 "충분히 대�
 - 범주의 동치는 unit과 counit이 모두 동형인 adjunction과 같다. 이때 $F$ 는 좌우 양쪽 adjoint를 겸한다.
 - Counit이 동형이면 $G$ 는 충실충만하다. 이 상황을 reflective subcategory라 부르고, 완비화·군화(group completion)·층화(sheafification)가 모두 여기에 속한다.
 
-## monad로의 연결
+## Monad
 
 $F\dashv G$ 에서 $T=GF:\mathcal C\to\mathcal C$ 를 만들면
 
@@ -256,14 +254,6 @@ $$
 - [Galois 이론](galois-theory.md)의 대응은 부분체와 부분군 사이의 Galois connection, 즉 부분순서 범주 사이 adjunction의 전형이다.[^2]
 - 이산 위상과 비이산 위상을 주는 functor는 망각 functor의 각각 left, right adjoint여서 "위상을 잊는 functor는 양쪽 adjoint를 가진다" 는 예가 된다.
 
-## 쓰는 법 요약
-
-새 구성을 만나면 다음 순서로 점검하면 대체로 정체가 드러난다.
-
-1. 보편성질이 "어떤 사상을 유일하게 확장한다" 는 형태인가. 그렇다면 unit 혹은 counit이다.
-2. 그 보편성질을 hom-set 전단사로 옮겨 적을 수 있는가.
-3. 그렇다면 이 functor는 한쪽 방향의 극한류 구성을 자동으로 보존한다.
-
 [^1]: nLab, Adjoint functor theorem, https://ncatlab.org/nlab/show/adjoint+functor+theorem
 [^2]: nLab, Galois connection, https://ncatlab.org/nlab/show/Galois+connection
 
@@ -278,4 +268,4 @@ $$
 
 - [Monad](monads.md)
 
-#category_theory
+#category_theory #algebra #logic
