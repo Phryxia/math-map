@@ -58,18 +58,6 @@ $$
 
 $s=\tfrac12$ 에서 $\Gamma(\tfrac12)=\sqrt\pi$ 이고 이것이 Gauss 적분이다. 정함수를 영점으로 판별하는 논법은 Hadamard 인수분해의 형태다.
 
-```mermaid
-flowchart TD
-  INT["적분 정의<br/>Mellin 변환"] --> FE["Gamma(s+1) = s Gamma(s)"]
-  FE --> AC["해석적 연속<br/>극점 s = 0,-1,-2,..."]
-  INT --> PROD["Weierstrass 곱<br/>1/Gamma 는 정함수"]
-  PROD --> REFL["반사공식<br/>Gamma(s)Gamma(1-s) = pi/sin"]
-  AC --> ZETA["완비 zeta<br/>xi(s) = pi^{-s/2}Gamma(s/2)zeta(s)"]
-  FE --> STIR["Stirling 급수<br/>Euler-Maclaurin"]
-  STIR --> NUM["수치계산: 인수이동 + 점근전개"]
-  REFL --> BETA["베타 함수와 부피"]
-```
-
 # 정의
 
 ## 적분과 해석적 연속
@@ -170,7 +158,7 @@ $$
 
 ```python
 from fractions import Fraction as F
-from math import comb, log, pi, lgamma, sin, exp
+from math import comb, log, pi
 
 M = 40
 B = [F(0)] * (M + 1); B[0] = F(1)
@@ -185,14 +173,6 @@ def loggamma(z, K=8, shift=12):
     for k in range(1, K + 1):              # Stirling 급수
         r += float(B[2 * k]) / (2 * k * (2 * k - 1) * z ** (2 * k - 1))
     return r + s
-
-for z in (0.1, 0.5, 2.5, 7.0):
-    print(z, "%.2e" % abs(loggamma(z) - lgamma(z)))
-# 0.1 1.3e-15 / 0.5 7.1e-15 / 2.5 4.4e-15 / 7.0 8.9e-16
-
-print(exp(2 * loggamma(0.5)), pi)                          # Gamma(1/2)^2 = pi
-z = 0.3
-print(exp(loggamma(z) + loggamma(1 - z)), pi / sin(pi * z))  # 반사공식
 ```
 
 $\Gamma$ 자체는 금방 넘치지만 로그는 넘치지 않으므로 $\log\Gamma$ 를 계산한다. 이항계수나 확률밀도에서 필요한 양은 감마의 비 $\Gamma(a)\Gamma(b)/\Gamma(a+b)$ 이므로 로그로 더하고 뺀다.
