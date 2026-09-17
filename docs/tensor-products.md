@@ -155,7 +155,7 @@ $$
 \mathbb{Z} \xrightarrow{\ \times 2\ } \mathbb{Z} \quad \Longrightarrow \quad \mathbb{Z}/2\mathbb{Z} \xrightarrow{\ 0\ } \mathbb{Z}/2\mathbb{Z}
 $$
 
-왼쪽은 단사지만 오른쪽은 영사상이다. 이 실패의 정도를 재는 것이 Tor functor이고, 예컨대 $\mathrm{Tor}_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) = \mathbb Z/2\mathbb Z$ 다. $- \otimes N$ 이 항상 단사성을 보존하는 가군 $N$ 을 평탄(flat) 가군이라 한다. 자유가군은 평탄하고, PID 위에서는 torsion-free와 평탄이 같다.
+왼쪽은 단사지만 오른쪽은 영사상이다. 이 실패의 정도를 재는 것이 Tor functor이고, 예컨대 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) = \mathbb Z/2\mathbb Z$ 다. $- \otimes N$ 이 항상 단사성을 보존하는 가군 $N$ 을 평탄(flat) 가군이라 한다. 자유가군은 평탄하고, PID 위에서는 torsion-free와 평탄이 같다.
 
 ## 스칼라 확장
 
@@ -198,32 +198,6 @@ $$
 $$
 
 정사각행렬의 고윳값은 곱으로 나타난다. $A$ 의 고윳값이 $\lambda_i$ 이고 $B$ 의 고윳값이 $\mu_j$ 이면 $A \otimes B$ 의 고윳값은 $\lambda_i \mu_j$ 전부다.
-
-```python
-import numpy as np
-
-A = np.array([[1, 2],
-              [0, 3]])
-B = np.array([[0, 1],
-              [1, 0]])
-
-K = np.kron(A, B)                     # 4x4, 선형사상 A (x) B 의 행렬
-print(K.shape)                        # (4, 4)
-
-# 항등식 (A (x) B)(C (x) D) = AC (x) BD 확인
-C = np.array([[2, 0], [1, 1]])
-D = np.array([[1, 1], [0, 1]])
-assert np.allclose(np.kron(A, B) @ np.kron(C, D), np.kron(A @ C, B @ D))
-
-# 고윳값은 곱으로 나타난다
-ev = np.sort(np.linalg.eigvals(K).real)
-prod = np.sort(np.outer(np.linalg.eigvals(A), np.linalg.eigvals(B)).real.ravel())
-assert np.allclose(ev, prod)
-
-# 단순텐서가 아닌 원소: 랭크가 1이 아니면 v (x) w 꼴이 아니다
-x = np.array([1, 0, 0, 1])            # (1,1) 성분과 (2,2) 성분만 있는 텐서
-print(np.linalg.matrix_rank(x.reshape(2, 2)))   # 2 이므로 단순텐서가 아니다
-```
 
 $V \otimes W$ 의 원소를 행렬로 펼쳤을 때 랭크가 $1$ 인 것이 단순텐서이고, 양자정보에서 얽힘 여부를 판정하는 기준도 이것이다.
 
