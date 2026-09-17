@@ -2,7 +2,7 @@
 
 # 개요
 
-[벡터 공간](vector-spaces.md)만으로는 길이와 각도가 정해지지 않는다. 내적은 두 벡터에 스칼라를 대응시키는 양의 정부호 쌍선형(복소수에서는 켤레쌍선형) 형식이고, 노름과 거리, 직교성, 정사영이 여기서 나온다.[^1]
+[벡터 공간](vector-spaces.md)만으로는 길이와 각도가 정해지지 않는다. 내적은 두 벡터에 스칼라를 대응시키는 양의 정부호 쌍선형(복소수에서는 켤레쌍선형) 형식이다. 노름과 거리, 직교성, 정사영이 내적 하나로 정의된다.[^1]
 
 Cauchy–Schwarz 부등식이 각도의 코사인을 1 이하로 묶고, Gram–Schmidt 과정이 임의의 기저를 정규직교기저로 바꾼다. 정사영은 부분공간에서 가장 가까운 점을 주므로 최소제곱 근사의 기하가 된다.
 
@@ -37,7 +37,7 @@ $$
 \langle e_i,e_j\rangle=\delta_{ij}
 $$
 
-표준 예는 실수 n짝의 점곱, 복소 n짝의 켤레 점곱, 구간에서 제곱적분 가능한 함수들의 적분 내적이다.
+표준 예는 실수 $n$ 짝의 점곱, 복소 $n$ 짝의 켤레 점곱, 구간에서 제곱적분 가능한 함수들의 적분 내적이다.
 
 $$
 \langle f,g\rangle=\int_a^b f(x)\overline{g(x)}\thinspace dx
@@ -125,15 +125,6 @@ $$
 
 열이 독립이면 $A^{\mathsf T}A$ 가 가역이라 해가 유일하고, 그렇지 않으면 [특이값 분해](singular-value-decomposition.md)로 최소노름해를 고른다. 목적함수가 볼록이므로 [볼록성](convexity.md) 이론의 예이기도 하다.
 
-```python
-import numpy as np
-A = np.array([[1., 0.], [1., 1.], [1., 2.]])
-b = np.array([1., 2., 2.])
-x, *_ = np.linalg.lstsq(A, b, rcond=None)
-print(x)                      # 정규방정식의 해
-print(A @ x - b)              # 잔차는 A의 열공간과 직교한다
-```
-
 ## 직교기저와 Fourier 변환
 
 복소 지수함수들은 주기함수 공간의 정규직교기저이고, 유한 차원에서는 [이산 Fourier 변환](fourier.md)이 그 좌표 변환이다. 신호를 직교성분으로 쪼개면 에너지가 성분별로 분리된다(Parseval).
@@ -161,4 +152,4 @@ print(A @ x - b)              # 잔차는 A의 열공간과 직교한다
 - [격자와 최단벡터 문제](lattices.md)
 - [근계와 Weyl 군](root-systems.md)
 
-#linear_algebra
+#linear_algebra #analysis #functional_analysis
