@@ -236,4 +236,4 @@ print("자유 계수:", rank, "/ torsion:", torsion)
 - [Nakayama 보조정리](nakayama-lemma.md)
 - [텐서곱](tensor-products.md)
 
-#ring_theory #algebra
+#ring_theory #algebra #linear_algebra #group_theory
