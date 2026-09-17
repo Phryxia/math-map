@@ -36,7 +36,7 @@ graph TD
 ## 환과 가군
 
 - [환](rings.md) → [아이디얼과 몫환](ideals-quotient-rings.md) → [소 아이디얼과 극대 아이디얼](prime-ideals.md) → [환의 국소화](localization-rings.md)
-- [다항식환](polynomial-rings.md): 환 위의 다항식과 나눗셈
+- [다항식환](polynomial-rings.md) → [유일분해정역](unique-factorization-domains.md): 환 위의 다항식과 나눗셈, 그리고 ED ⊂ PID ⊂ UFD 사슬
 - [가군](modules.md) → [텐서곱](tensor-products.md): 환 위의 벡터 공간
 - [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md): 정수론으로 가는 문
 - [대수적 K 이론과 Quillen–Lichtenbaum](algebraic-k-theory.md): 환의 사영가군에서 나오는 고차 불변량

@@ -139,7 +139,7 @@ Dedekind 정역인 것.
 
 ## 선수지식
 
-- [소 아이디얼과 극대 아이디얼](prime-ideals.md)
+- [유일분해정역](unique-factorization-domains.md)
 - [환의 국소화](localization-rings.md)
 - [정수론 개관](number-theory-overview.md)
 
