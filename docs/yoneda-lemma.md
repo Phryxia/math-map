@@ -18,7 +18,7 @@ $\mathbf{Set}$ 에서 한 점 집합 $1$ 에서 $A$ 로 가는 사상은 $A$ 의
 
 ## 항등사상의 역할
 
-$h_A$ 에서 출발하는 자연변환은 성분이 많지만 $\alpha_A(\mathrm{id}_A)$ 하나로 전부 결정된다. $h_A(X)$ 의 원소 $f:X\to A$ 는 $h_A(f)$ 를 $\mathrm{id}_A$ 에 적용한 결과이고, 자연성이 $\alpha$ 와 $h_A(f)$ 의 교환을 요구하므로 $\alpha_X(f)$ 가 $F(f)(\alpha_A(\mathrm{id}_A))$ 로 강제된다.
+$h_A$ 에서 출발하는 자연변환은 성분이 많지만 $\alpha_A(\mathrm{id}\_A)$ 하나로 전부 결정된다. $h_A(X)$ 의 원소 $f:X\to A$ 는 $h_A(f)$ 를 $\mathrm{id}\_A$ 에 적용한 결과이고, 자연성이 $\alpha$ 와 $h_A(f)$ 의 교환을 요구하므로 $\alpha_X(f)$ 가 $F(f)(\alpha_A(\mathrm{id}\_A))$ 로 강제된다.
 
 ```mermaid
 graph TD
@@ -50,13 +50,13 @@ $$
 \mathrm{Nat}(h_A,F)\cong F(A)
 $$
 
-인 전단사가 있으며 $A$ 와 $F$ 양쪽에 대해 자연스럽다. 대응은 자연변환 $\alpha$ 를 $\alpha_A(\mathrm{id}_A)$ 로 보낸다.
+인 전단사가 있으며 $A$ 와 $F$ 양쪽에 대해 자연스럽다. 대응은 자연변환 $\alpha$ 를 $\alpha_A(\mathrm{id}\_A)$ 로 보낸다.
 
 # 성질
 
 ## 증명
 
-$u\in F(A)$ 가 주어지면 $f:X\to A$ 에 대해 $\alpha_X(f)=F(f)(u)$ 로 자연변환을 정의한다. 함자가 합성을 보존하므로 성분들이 자연성을 만족한다. 거꾸로 $\alpha$ 가 주어지면 $u=\alpha_A(\mathrm{id}_A)$ 로 두고 자연성 사각형을 $\mathrm{id}_A$ 에 적용하면 모든 $f$ 에서 위 식이 강제된다. 두 구성이 서로 역이므로 전단사다.
+$u\in F(A)$ 가 주어지면 $f:X\to A$ 에 대해 $\alpha_X(f)=F(f)(u)$ 로 자연변환을 정의한다. 함자가 합성을 보존하므로 성분들이 자연성을 만족한다. 거꾸로 $\alpha$ 가 주어지면 $u=\alpha_A(\mathrm{id}\_A)$ 로 두고 자연성 사각형을 $\mathrm{id}\_A$ 에 적용하면 모든 $f$ 에서 위 식이 강제된다. 두 구성이 서로 역이므로 전단사다.
 
 증명에 쓰인 것은 함자성과 자연성뿐이고 구체적인 범주의 성질은 쓰지 않으므로 결론이 모든 범주에서 성립한다.
 
@@ -74,28 +74,9 @@ $$
 
 ## 보편 성질의 유일성
 
-보편 성질로 정의된 대상은 대개 어떤 함자를 표현한다. 곱 $A\times B$ 는 $X\mapsto\mathrm{Hom}(X,A)\times\mathrm{Hom}(X,B)$ 를 표현하고, 자유군은 망각 함자의 왼쪽 수반으로 $X\mapsto\mathrm{Hom}_{\mathbf{Set}}(S,U(X))$ 를 표현한다.
+보편 성질로 정의된 대상은 대개 어떤 함자를 표현한다. 곱 $A\times B$ 는 $X\mapsto\mathrm{Hom}(X,A)\times\mathrm{Hom}(X,B)$ 를 표현하고, 자유군은 망각 함자의 왼쪽 수반으로 $X\mapsto\mathrm{Hom}\_{\mathbf{Set}}(S,U(X))$ 를 표현한다.
 
 표현 대상이 동형을 무시하고 유일하다는 것은 Yoneda 매장의 충실성에서 나온다. 두 대상 사이에 사상을 만들고 합성이 항등임을 확인하는 절차를 되풀이하지 않아도 된다.
-
-```python
-# 유한 poset 을 범주로 보고 Yoneda 를 확인한다.
-# 대상 x 에서 y 로 가는 사상은 x <= y 일 때 정확히 하나.
-P = {"0": set(), "a": {"0"}, "b": {"0"}, "1": {"a", "b", "0"}}
-
-def leq(x, y):
-    """x <= y 인가. below[y] 는 y 아래 원소들."""
-    return x == y or x in P[y]
-
-def h(A):
-    """h_A(X) = Hom(X, A): 비었거나 한 점."""
-    return {X for X in P if leq(X, A)}
-
-# Nat(h_A, h_B) 는 A <= B 일 때 한 원소, 아니면 빈 집합
-for A in P:
-    for B in P:
-        assert (1 if h(A) <= h(B) else 0) == (1 if leq(A, B) else 0)
-```
 
 poset 범주에서 $h_A$ 는 $A$ 이하인 원소들의 집합이고, Yoneda 매장은 원소를 그 아래집합으로 보내는 사상이다. 순서를 아래집합의 포함으로 복원할 수 있다는 것이 이 범주에서의 Yoneda lemma 이고, 격자 이론의 Dedekind–MacNeille 완비화가 같은 구성이다.
 
@@ -127,4 +108,4 @@ $$
 
 - [Adjunction](adjunctions.md)
 
-#category_theory #theorem
+#category_theory #order_theory #algebra #theorem
