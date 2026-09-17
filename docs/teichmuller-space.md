@@ -139,7 +139,7 @@ $\overline{\mathcal M}_g$ 위의 교차수를 세는 문제가 Witten 추측과 
 
 $\mathcal T_g$ 는 $\mathbb C^{3g-3}$ 안의 유계영역으로 실현되며(Bers 매장), 쌍곡 계량을 고르는 일과 복소구조를 고르는 일이 종수 $g$ 곡면에서 같은 일이라는 균일화 정리가 그 바탕이다. 준등각 사상과 Beltrami 미분이 이 동일시의 언어이고, Teichmüller 거리 자체가 준등각 팽창률로 정의된다.[^1]
 
-[^1]: 표준 참고서는 B. Farb, D. Margalit, *A Primer on Mapping Class Groups*, Princeton Univ. Press (2012) 와 Y. Imayoshi, M. Taniguchi, *An Introduction to Teichmüller Spaces*, Springer (1992). Weil–Petersson 부피 재귀는 M. Mirzakhani, *Simple geodesics and Weil–Petersson volumes of moduli spaces of bordered Riemann surfaces*, Invent. Math. **167** (2007), 179–222. 본문의 수치 확인은 직접 한 것이다.
+[^1]: 표준 참고서는 B. Farb, D. Margalit, *A Primer on Mapping Class Groups*, Princeton Univ. Press (2012) 와 Y. Imayoshi, M. Taniguchi, *An Introduction to Teichmüller Spaces*, Springer (1992). Weil–Petersson 부피 재귀는 M. Mirzakhani, *Simple geodesics and Weil–Petersson volumes of moduli spaces of bordered Riemann surfaces*, Invent. Math. **167** (2007), 179–222.
 
 # 연관 문서
 

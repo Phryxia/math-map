@@ -209,7 +209,7 @@ Mathieu 군 $M_{24}$ 는 확장 이진 Golay 부호 $[24,12,8]$ 의 자기동형
 
 "분류 정리를 쓰면" 이라는 단서가 붙은 정리가 많은 이유다. 15000 쪽을 인용하는 한 줄이 되는 셈이라, 분류에 의존하지 않는 증명을 따로 찾는 연구도 이어진다.
 
-[^1]: 개괄은 M. Aschbacher, "The Status of the Classification of the Finite Simple Groups", *Notices AMS* 51 (2004) 와 R. Solomon, "A Brief History of the Classification of the Finite Simple Groups", *Bull. AMS* 38 (2001). 교과서는 D. Gorenstein, *Finite Simple Groups: An Introduction to Their Classification* (1982). 데이터는 J. Conway 외, *ATLAS of Finite Groups* (1985). Feit–Thompson 은 *Pacific J. Math.* 13 (1963). 본문의 $A_5$ 계산은 직접 한 것이다.
+[^1]: 개괄은 M. Aschbacher, "The Status of the Classification of the Finite Simple Groups", *Notices AMS* 51 (2004) 와 R. Solomon, "A Brief History of the Classification of the Finite Simple Groups", *Bull. AMS* 38 (2001). 교과서는 D. Gorenstein, *Finite Simple Groups: An Introduction to Their Classification* (1982). 데이터는 J. Conway 외, *ATLAS of Finite Groups* (1985). Feit–Thompson 은 *Pacific J. Math.* 13 (1963).
 
 # 연관 문서
 

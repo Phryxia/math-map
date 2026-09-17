@@ -181,7 +181,7 @@ print(len(m), sorted(m.items()))               # 3
 print(sorted(min_vertex_cover(adj, left, right, m)))  # 크기 3 의 덮개
 ```
 
-Hall 조건을 작은 그래프에서 직접 확인해 정리를 검증할 수도 있다.
+Hall 조건은 부분집합마다 이웃의 크기를 세어 판정한다. 부분집합이 지수적으로 많으므로 이 판정은 작은 그래프에서만 쓴다.
 
 ```python
 from itertools import chain, combinations
