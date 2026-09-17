@@ -26,20 +26,6 @@ $d$ 에 대한 조화형식과 $\bar\partial$ 에 대한 조화형식이 다른 
 
 $d\omega=0$ 이면 Kähler 항등식이 $\Delta_d=2\Delta_{\bar\partial}=2\Delta_\partial$ 를 주고, 세 작용소의 핵이 같아진다. $\Delta_{\bar\partial}$ 는 $(p,q)$ 를 보존하므로 그 핵이 $(p,q)$ 성분으로 쪼개지고 $\Delta_d$ 의 핵도 그렇게 쪼개진다.
 
-```mermaid
-graph TD
-  A["복소구조 J"] --> B["형식의 (p,q) 분해"]
-  C["Riemann 계량 g"] --> D["Hodge 이론<br/>H^k ≅ ker Δ_d"]
-  A --> E["Kähler 형식 ω(X,Y)=g(JX,Y)"]
-  C --> E
-  E -->|"dω = 0"| F["Kähler 항등식<br/>Δ_d = 2Δ_∂̄"]
-  B --> F
-  D --> F
-  F --> G["H^k = ⊕_{p+q=k} H^{p,q}"]
-  G --> H["h^{p,q} = h^{q,p}"]
-  H --> I["b_odd 는 짝수"]
-```
-
 ## 홀수 Betti 수의 짝수성
 
 $\Delta_{\bar\partial}$ 가 실 작용소의 복소화이므로 켤레가 조화형식을 조화형식으로 보내고, $(p,q)$ 를 $(q,p)$ 로 바꾼다. 따라서 $h^{p,q}=h^{q,p}$ 다.
@@ -141,59 +127,11 @@ $$
 
 $b_{n-k}=b_{n+k}$ 이고 $k\le n$ 인 범위에서 $b_{k-2}\le b_k$ 로 Betti 수가 가운데까지 단조증가한다. 어떤 다양체가 사영 대수다양체가 될 수 있는지를 거르는 첫 검사다.
 
-$L$ 과 $\Lambda$ 와 등급에서 오는 작용소가 $\mathfrak{sl}_2$ 를 이루므로 코호몰로지 전체가 $\mathfrak{sl}_2$ 의 표현이 되고, 표현론의 표준 결과가 정리를 준다.
+$L$ 과 $\Lambda$ 와 등급에서 오는 작용소가 $\mathfrak{sl}\_2$ 를 이루므로 코호몰로지 전체가 $\mathfrak{sl}\_2$ 의 표현이 되고, 표현론의 표준 결과가 정리를 준다.
 
 ## Hodge 다이아몬드 계산
 
-```python
-from math import comb
-
-def torus_diamond(g):
-    """복소 g 차원 원환면: h^{p,q} = C(g,p)·C(g,q)."""
-    return [[comb(g, p) * comb(g, q) for q in range(g + 1)] for p in range(g + 1)]
-
-def betti(h):
-    n = len(h) - 1
-    return [sum(h[p][k - p] for p in range(max(0, k - n), min(n, k) + 1))
-            for k in range(2 * n + 1)]
-
-for g in (1, 2, 3):
-    h = torus_diamond(g)
-    b = betti(h)
-    print(f"복소 {g} 차원 원환면")
-    for row in h:
-        print("   h^{p,q}:", row)
-    print(f"   b_k = {b}   (C(2g,k) = {[comb(2*g, k) for k in range(2*g+1)]})")
-    print(f"   홀수 b_k = {b[1::2]}  전부 짝수인가: {all(x % 2 == 0 for x in b[1::2])}")
-
-for n in (1, 2, 3):                        # CP^n: h^{p,p} = 1, 나머지 0
-    h = [[1 if p == q else 0 for q in range(n + 1)] for p in range(n + 1)]
-    print(f"CP^{n}: b_k = {betti(h)}")
-
-# 복소 1 차원 원환면
-#    h^{p,q}: [1, 1]
-#    h^{p,q}: [1, 1]
-#    b_k = [1, 2, 1]   (C(2g,k) = [1, 2, 1])
-#    홀수 b_k = [2]  전부 짝수인가: True
-# 복소 2 차원 원환면
-#    h^{p,q}: [1, 2, 1]
-#    h^{p,q}: [2, 4, 2]
-#    h^{p,q}: [1, 2, 1]
-#    b_k = [1, 4, 6, 4, 1]   (C(2g,k) = [1, 4, 6, 4, 1])
-#    홀수 b_k = [4, 4]  전부 짝수인가: True
-# 복소 3 차원 원환면
-#    h^{p,q}: [1, 3, 3, 1]
-#    h^{p,q}: [3, 9, 9, 3]
-#    h^{p,q}: [3, 9, 9, 3]
-#    h^{p,q}: [1, 3, 3, 1]
-#    b_k = [1, 6, 15, 20, 15, 6, 1]   (C(2g,k) = [1, 6, 15, 20, 15, 6, 1])
-#    홀수 b_k = [6, 20, 6]  전부 짝수인가: True
-# CP^1: b_k = [1, 0, 1]
-# CP^2: b_k = [1, 0, 1, 0, 1]
-# CP^3: b_k = [1, 0, 1, 0, 1, 0, 1]
-```
-
-원환면의 Betti 수 $\binom{2g}k$ 는 $T^{2g}$ 의 위상적 Betti 수와 같다. Hodge 분해가 Vandermonde 항등식 $\sum_p\binom gp\binom g{k-p}=\binom{2g}k$ 을 실현하며, 수 하나가 복소구조에 따라 $g+1$ 개 조각으로 나뉜다.
+복소 원환면 $\mathbb C^g/\Lambda$ 의 Hodge 수는 $h^{p,q}=\binom gp\binom gq$ 이고, 그 Betti 수 $\binom{2g}k$ 는 $T^{2g}$ 의 위상적 Betti 수와 같다. Hodge 분해가 Vandermonde 항등식 $\sum_p\binom gp\binom g{k-p}=\binom{2g}k$ 을 실현하며, 수 하나가 복소구조에 따라 $g+1$ 개 조각으로 나뉜다.
 
 $\mathbb{CP}^n$ 에서는 홀수 Betti 수가 모두 0 이고 짝수 자리에 1 씩 있다. $H^{2k}$ 를 $[\omega]^k$ 가 생성하고 $b_{n-k}=b_{n+k}$ 가 성립한다.
 
