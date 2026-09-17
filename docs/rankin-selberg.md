@@ -2,7 +2,7 @@
 
 # 개요
 
-[Godement–Jacquet](godement-jacquet.md)은 $\mathrm{GL}_n$ 을 담는 벡터공간 $M_n$ 위에서 표준 $L$ 함수를 다룬다. 두 자기동형 표현의 곱
+[Godement–Jacquet](godement-jacquet.md)은 $\mathrm{GL}\_n$ 을 담는 벡터공간 $M_n$ 위에서 표준 $L$ 함수를 다룬다. 두 자기동형 표현의 곱
 
 $$
 L(s,\pi\times\pi'),\qquad \pi \text{ 는 } \mathrm{GL}_n,\quad \pi' \text{ 는 } \mathrm{GL}_m
@@ -25,7 +25,7 @@ $$
 
 왼쪽 적분은 $E(z,s)$ 의 해석적 접속과 함수방정식을 물려받는다. Eisenstein 급수의 해석적 성질이 알려져 있으므로 오른쪽 Dirichlet 급수가 해석적 접속과 함수방정식과 극의 위치를 얻는다.
 
-Jacquet–Piatetski-Shapiro–Shalika 가 1983 년에 이것을 $\mathrm{GL}_n\times\mathrm{GL}_m$ 으로 올렸다. 고전적 Fourier 계수 자리에 **Whittaker 함수**가 들어가고, 그 유일성이 전역 적분을 국소 적분의 곱으로 쪼갠다. 비분기 자리의 국소 적분을 [Satake 매개변수](satake-isomorphism.md)로 계산하면
+Jacquet–Piatetski-Shapiro–Shalika 가 1983 년에 이것을 $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 으로 올렸다. 고전적 Fourier 계수 자리에 **Whittaker 함수**가 들어가고, 그 유일성이 전역 적분을 국소 적분의 곱으로 쪼갠다. 비분기 자리의 국소 적분을 [Satake 매개변수](satake-isomorphism.md)로 계산하면
 
 $$
 L(s,\pi_v\times\pi'_v)=\det\bigl(1-q^{-s}A_{\pi_v}\otimes A_{\pi'_v}\bigr)^{-1}
@@ -73,7 +73,7 @@ $$
 
 극의 유무라는 해석적 성질이 동형 여부라는 표현론적 성질을 판정한다. 강한 중복도 1, $L$ 함수의 $\mathrm{Re}(s)=1$ 비소멸, 역정리의 증명이 이 판정을 쓴다.
 
-## GL_n 의 Whittaker 함수
+## $\mathrm{GL}\_n$ 의 Whittaker 함수
 
 $n\ge3$ 에서 첨점형식의 Fourier 전개는 수열 $\lbrace a_n\rbrace$ 이 아니다. 극대 멱단근 $N$ 이 아벨군이 아니므로 전개의 계수 자리에 수가 아니라 **Whittaker 함수**가 온다.
 
@@ -81,7 +81,7 @@ $$
 W_\varphi(g)=\int_{N(\mathbb Q)\backslash N(\mathbb A)}\varphi(ng)\thinspace\psi^{-1}(n)\thinspace dn
 $$
 
-그리고 첨점형식의 전개는 $\mathrm{GL}_{n-1}$ 의 유리점에 대한 합이 된다.
+그리고 첨점형식의 전개는 $\mathrm{GL}\_{n-1}$ 의 유리점에 대한 합이 된다.
 
 $$
 \varphi(g)=\sum_{\gamma\in N_{n-1}(\mathbb Q)\backslash\mathrm{GL}_{n-1}(\mathbb Q)}
@@ -92,7 +92,7 @@ $$
 
 ## Euler 곱과 Whittaker 모형의 유일성
 
-전역 적분이 국소 적분의 곱이 되는 근거는 Whittaker 모형의 유일성이다. Shalika 와 Gelfand–Kazhdan 의 정리에 따라 $\mathrm{Hom}_{N}(\pi_v,\psi_v)$ 는 많아야 1 차원이고, 전역 Whittaker 함수가 국소 Whittaker 함수의 곱으로 쪼개진다.
+전역 적분이 국소 적분의 곱이 되는 근거는 Whittaker 모형의 유일성이다. Shalika 와 Gelfand–Kazhdan 의 정리에 따라 $\mathrm{Hom}\_{N}(\pi_v,\psi_v)$ 는 많아야 1 차원이고, 전역 Whittaker 함수가 국소 Whittaker 함수의 곱으로 쪼개진다.
 
 $$
 W_\varphi(g)=\prod_v W_v(g_v)
@@ -100,26 +100,11 @@ $$
 
 피적분함수가 곱이고 측도가 곱이므로 적분도 곱이다. Whittaker 모형이 유일하지 않은 군에서는 적분이 Euler 곱이 되지 않아 이 방법이 통하지 않는다.
 
-```mermaid
-graph TD
-  E["Eisenstein 급수<br/>E(z,s) = Σ_{Γ_∞\\Γ} Im(γz)^s"] --> UF["펼치기<br/>합이 적분 영역을 넓힌다"]
-  CF["첨점형식의 Fourier 전개"] --> UF
-  UF --> DS["Dirichlet 급수 Σ a_n b̄_n n^{-s}"]
-  E --> AN["E 의 해석적 접속<br/>함수방정식, s=1 의 극"]
-  AN --> PROP["D(s) 의 해석적 성질<br/>공짜로 물려받는다"]
-  AN --> RES["Res_{s=1} = ⟨f,g⟩ / vol"]
-  RES --> CRIT["극 판정<br/>L(s,π×π') 극 ⟺ π' ≅ π̃"]
-  WH["Whittaker 모형의 유일성"] --> EUL["전역 적분 = ∏_v 국소 적분"]
-  EUL --> LOC["비분기 자리<br/>det(1 − q^{-s} A_π ⊗ A_π')^{-1}"]
-  CRIT --> CONV["역정리 → 함수성"]
-  LOC --> BOUND["Ramanujan 형 추정"]
-```
-
 # 정의
 
 ## 고전적 적분
 
-$f\in S_k(\mathrm{SL}_2(\mathbb Z))$ 와 $g\in S_l(\mathrm{SL}_2(\mathbb Z))$ 의 Fourier 전개를 각각 $f=\sum a_nq^n$ 과 $g=\sum b_nq^n$ 이라 하자. 실해석적 Eisenstein 급수는
+$f\in S_k(\mathrm{SL}\_2(\mathbb Z))$ 와 $g\in S_l(\mathrm{SL}\_2(\mathbb Z))$ 의 Fourier 전개를 각각 $f=\sum a_nq^n$ 과 $g=\sum b_nq^n$ 이라 하자. 실해석적 Eisenstein 급수는
 
 $$
 E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\mathrm{SL}_2(\mathbb Z)}\mathrm{Im}(\gamma z)^s
@@ -137,7 +122,7 @@ $$
 
 ## Whittaker 함수
 
-$\psi:\mathbb Q\backslash\mathbb A\to\mathbb C^\times$ 를 자명하지 않은 가법 지표, $N_n$ 을 $\mathrm{GL}_n$ 의 상삼각 멱단군이라 하고
+$\psi:\mathbb Q\backslash\mathbb A\to\mathbb C^\times$ 를 자명하지 않은 가법 지표, $N_n$ 을 $\mathrm{GL}\_n$ 의 상삼각 멱단군이라 하고
 
 $$
 \psi_N(n)=\psi\Bigl(\sum_{i=1}^{n-1}n_{i,i+1}\Bigr)
@@ -147,7 +132,7 @@ $$
 
 ## $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 적분
 
-$m<n$ 이고 $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}_n(\mathbb A)$ 와 $\mathrm{GL}_m(\mathbb A)$ 의 첨점 표현이라 하자. $m=n-1$ 이면
+$m<n$ 이고 $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}\_n(\mathbb A)$ 와 $\mathrm{GL}\_m(\mathbb A)$ 의 첨점 표현이라 하자. $m=n-1$ 이면
 
 $$
 \Psi(s,W,W')=\int_{N_m(\mathbb A)\backslash\mathrm{GL}_m(\mathbb A)}
@@ -166,19 +151,19 @@ $$
 
 다. 고전적 적분의 $E(z,s)$ 가 이 자리에 온다.
 
-## 국소 인자와 전역 L 함수
+## 국소 인자와 전역 $L$ 함수
 
-각 자리에서 $\Psi_v(s,W_v,W'_v)$ 는 $q_v^{-s}$ 의 유리함수이고, 이들이 생성하는 분수 아이디얼의 생성원으로 국소 $L$ 인자 $L(s,\pi_v\times\pi'_v)$ 를 정의한다. 비분기 자리에서는 Satake 매개변수 $(\alpha_i)$ 와 $(\beta_j)$ 로
+각 자리에서 $\Psi_v(s,W_v,W'\_v)$ 는 $q_v^{-s}$ 의 유리함수이고, 이들이 생성하는 분수 아이디얼의 생성원으로 국소 $L$ 인자 $L(s,\pi_v\times\pi'\_v)$ 를 정의한다. 비분기 자리에서는 Satake 매개변수 $(\alpha_i)$ 와 $(\beta_j)$ 로
 
 $$
 L(s,\pi_v\times\pi'_v)=\prod_{i,j}\bigl(1-\alpha_i\beta_jq_v^{-s}\bigr)^{-1}
 $$
 
-이고, 전역 $L$ 함수는 이들의 곱 $L(s,\pi\times\pi')=\prod_vL(s,\pi_v\times\pi'_v)$ 다.
+이고, 전역 $L$ 함수는 이들의 곱 $L(s,\pi\times\pi')=\prod_vL(s,\pi_v\times\pi'\_v)$ 다.
 
 # 성질
 
-> **정리 (Jacquet–Piatetski-Shapiro–Shalika, 1983).** $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}_n$ 과 $\mathrm{GL}_m$ 의 첨점 자기동형 표현이면 $L(s,\pi\times\pi')$ 는 $\mathbb C$ 전체로 유리형 접속되고, 완비 $L$ 함수가
+> **정리 (Jacquet–Piatetski-Shapiro–Shalika, 1983).** $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}\_n$ 과 $\mathrm{GL}\_m$ 의 첨점 자기동형 표현이면 $L(s,\pi\times\pi')$ 는 $\mathbb C$ 전체로 유리형 접속되고, 완비 $L$ 함수가
 > $$
 > \Lambda(s,\pi\times\pi')=\varepsilon(s,\pi\times\pi')\thinspace\Lambda(1-s,\tilde\pi\times\tilde\pi')
 > $$
@@ -188,11 +173,11 @@ $$
 
 극 판정에서 다음이 나온다.
 
-- **강한 중복도 1.** 거의 모든 자리에서 $\pi_v\cong\pi'_v$ 이면 $\pi\cong\pi'$ 다. $L(s,\pi\times\tilde\pi')$ 의 극을 보면 된다.
+- **강한 중복도 1.** 거의 모든 자리에서 $\pi_v\cong\pi'\_v$ 이면 $\pi\cong\pi'$ 다. $L(s,\pi\times\tilde\pi')$ 의 극을 보면 된다.
 - **$\mathrm{Re}(s)=1$ 비소멸.** $L(1+it,\pi)\ne0$ 이다. $\pi\times\tilde\pi$ 의 $L$ 함수가 계수가 음이 아니고 $s=1$ 에 극을 가진다는 사실을 [소수 정리](prime-number-theorem.md)의 $\zeta$ 논법과 똑같이 쓴다.
 - **Ramanujan 형 추정.** $L(s,\pi\times\tilde\pi)$ 가 $\mathrm{Re}(s)>1$ 에서 수렴한다는 사실만으로 Satake 매개변수가 $\lvert\alpha_i\rvert<q^{1/2}$ 로 갇힌다(Jacquet–Shalika). 더 정교한 논법이 $\lvert\alpha_i\rvert\le q^{1/2-1/(n^2+1)}$ 를 준다(Luo–Rudnick–Sarnak). 추측이 요구하는 $\lvert\alpha_i\rvert=1$ 에는 미치지 못한다.
 
-## 계수의 합과 L 함수의 차이
+## 계수의 합과 $L$ 함수의 차이
 
 고전적 적분이 주는 $\sum_na_n\overline{b_n}n^{-s}$ 는 Euler 곱이 아니다. Hecke 고유형식의 계수가 곱셈적이어도 $a_nb_n$ 의 국소 인자가 2 차가 아니기 때문이다. 국소 수준의 관계는 다음 항등식이다.
 
@@ -203,27 +188,7 @@ $$
 
 $h_m$ 은 완전 동차 대칭 다항식이고 $h_m(\alpha,\beta)$ 가 정규화된 $a_{p^m}$ 이다. 분자의 $x^2$ 항이 보정이고 전역적으로 $\zeta(2s)$ 의 역수가 된다.
 
-```python
-import random
-
-def h(m, a, b):
-    return sum(a**k * b**(m-k) for k in range(m+1))
-
-random.seed(11)
-for trial in range(3):
-    rc = lambda: complex(random.uniform(-1, 1), random.uniform(-1, 1))
-    al, be, ap, bp = rc(), rc(), rc(), rc()
-    x = 0.13
-    lhs = sum(h(m, al, be) * h(m, ap, bp) * x**m for m in range(400))
-    rhs = (1 - al*be*ap*bp*x*x) / ((1-al*ap*x)*(1-al*bp*x)*(1-be*ap*x)*(1-be*bp*x))
-    print(f"trial {trial}: |LHS-RHS| = {abs(lhs-rhs):.3e}")
-
-# trial 0: |LHS-RHS| = 5.204e-18
-# trial 1: |LHS-RHS| = 6.072e-18
-# trial 2: |LHS-RHS| = 2.289e-16
-```
-
-$\Delta$ 두 개를 곱하면 $\alpha\beta=\alpha'\beta'=1$ 이므로 보정이 $1-x^2$ 이다. $\mathrm{GL}_2\times\mathrm{GL}_2$ 의 $L$ 함수가 $\zeta\cdot L(\mathrm{Sym}^2)$ 으로 쪼개지므로 다음 항등식이 나온다.
+$\Delta$ 두 개를 곱하면 $\alpha\beta=\alpha'\beta'=1$ 이므로 보정이 $1-x^2$ 이다. $\mathrm{GL}\_2\times\mathrm{GL}\_2$ 의 $L$ 함수가 $\zeta\cdot L(\mathrm{Sym}^2)$ 으로 쪼개지므로 다음 항등식이 나온다.
 
 $$
 \sum_{n\ge1}\frac{\tau(n)^2}{n^{s}}
@@ -237,63 +202,6 @@ L_p(s,\mathrm{Sym}^2\Delta)^{-1}
 =(1-p^{11}x)\bigl(1-(\tau(p)^2-2p^{11})x+p^{22}x^2\bigr),\qquad x=p^{-s}
 $$
 
-계수가 정수이므로 항등식이 Dirichlet 계수 수준에서 정확히 성립한다.
-
-```python
-N = 3000
-c = [0]*(N+1); c[0] = 1                      # Δ = q ∏ (1-q^n)^24
-for n in range(1, N+1):
-    for _ in range(24):
-        new = c[:]
-        for k in range(n, N+1): new[k] -= c[k-n]
-        c = new
-tau = [0]*(N+1)
-for k in range(N): tau[k+1] = c[k]
-
-sieve = [True]*(N+1); sieve[0] = sieve[1] = False
-for i in range(2, int(N**.5)+1):
-    if sieve[i]:
-        for j in range(i*i, N+1, i): sieve[j] = False
-PR = [i for i in range(N+1) if sieve[i]]
-
-def dmul(a, b):                              # Dirichlet 급수의 곱
-    r = [0]*(N+1)
-    for i in range(1, N+1):
-        if a[i] == 0: continue
-        for j in range(1, N//i + 1):
-            if b[j]: r[i*j] += a[i]*b[j]
-    return r
-
-sym2 = [0]*(N+1); sym2[1] = 1                # L(s, Sym^2 Δ) 의 Euler 곱
-for p in PR:
-    A, B, C = p**11, tau[p]**2 - 2*p**11, p**22
-    d = [1, -(A+B), C + A*B, -A*C]           # 국소 분모 다항식
-    lim, pk = 0, 1
-    while pk*p <= N: pk *= p; lim += 1
-    co = [0]*(lim+1); co[0] = 1
-    for m in range(1, lim+1):                # 1/d 의 계수 점화식
-        co[m] = -sum(d[j]*co[m-j] for j in range(1, min(3, m)+1))
-    loc, pk = [0]*(N+1), 1
-    for m in range(lim+1): loc[pk] = co[m]; pk *= p
-    sym2 = dmul(sym2, loc)
-
-z11 = [n**11 for n in range(N+1)]; z11[0] = 0           # ζ(s-11)
-mu = [1]*(N+1)
-for p in PR:
-    for j in range(p, N+1, p): mu[j] *= -1
-    for j in range(p*p, N+1, p*p): mu[j] = 0
-iz = [0]*(N+1); k = 1                                    # 1/ζ(2s-22)
-while k*k <= N: iz[k*k] = mu[k]*k**22; k += 1
-
-rhs = dmul(dmul(z11, sym2), iz)
-bad = [n for n in range(1, N+1) if rhs[n] != tau[n]**2]
-print(f"Dirichlet 계수 일치 n<={N} : {not bad}  (불일치 {len(bad)} 개)")
-print("n=1..6 :", [(n, tau[n]**2, rhs[n]) for n in range(1, 7)])
-
-# Dirichlet 계수 일치 n<=3000 : True  (불일치 0 개)
-# n=1..6 : [(1, 1, 1), (2, 576, 576), (3, 63504, 63504), (4, 2166784, 2166784), (5, 23328900, 23328900), (6, 36578304, 36578304)]
-```
-
 Rankin 이 1939 년에 이 항등식에서 $\tau(n)=O(n^{29/5})$ 를 얻었다. Hecke 의 자명한 추정 $O(n^6)$ 을 처음으로 넘은 결과이고, Deligne 이 1974 년에 $O(n^{11/2+\epsilon})$ 를 얻기까지의 개선은 이 $L$ 함수의 해석적 성질을 다루는 작업이었다.
 
 ## 두 가지 방법의 비교
@@ -302,7 +210,7 @@ Rankin 이 1939 년에 이 항등식에서 $\tau(n)=O(n^{29/5})$ 를 얻었다. 
 
 | | 적분 표현 | Langlands–Shahidi |
 |---|---|---|
-| 대상 | $\mathrm{GL}_n$ 표준, $\mathrm{GL}_n\times\mathrm{GL}_m$ | 포물 부분군의 Levi 에서 나오는 $L$ 함수 |
+| 대상 | $\mathrm{GL}\_n$ 표준, $\mathrm{GL}\_n\times\mathrm{GL}\_m$ | 포물 부분군의 Levi 에서 나오는 $L$ 함수 |
 | 원리 | 펼치기, Whittaker 유일성 | Eisenstein 급수의 상수항과 얽힘 작용소 |
 | 강점 | 무조건적, 국소 인자가 명시적 | 다루는 $L$ 함수의 범위가 넓다 |
 | 약점 | 적절한 적분을 찾아야 한다 | 얽힘 작용소의 정규화가 어렵다 |
@@ -313,13 +221,13 @@ Rankin 이 1939 년에 이 항등식에서 $\tau(n)=O(n^{29/5})$ 를 얻었다. 
 
 ## 역정리와 함수성
 
-**역정리**(converse theorem)는 Hecke 의 고전적 역정리를 $\mathrm{GL}_n$ 으로 올린 것이다.
+**역정리**(converse theorem)는 Hecke 의 고전적 역정리를 $\mathrm{GL}\_n$ 으로 올린 것이다.
 
-> $\Pi=\otimes\Pi_v$ 가 $\mathrm{GL}_n(\mathbb A)$ 의 기약 허용 표현이고, $m\le n-2$ 인 모든 $\mathrm{GL}_m$ 첨점 표현 $\tau$ 에 대해 $L(s,\Pi\times\tau)$ 가 "좋으면"(정함수, 수직 띠에서 유계, 함수방정식) $\Pi$ 는 자기동형이다.[^2]
+> $\Pi=\otimes\Pi_v$ 가 $\mathrm{GL}\_n(\mathbb A)$ 의 기약 허용 표현이고, $m\le n-2$ 인 모든 $\mathrm{GL}\_m$ 첨점 표현 $\tau$ 에 대해 $L(s,\Pi\times\tau)$ 가 "좋으면"(정함수, 수직 띠에서 유계, 함수방정식) $\Pi$ 는 자기동형이다.[^2]
 
-함수성 증명의 표준 전략이 이것이다. 올리려는 표현 $\Pi$ 를 자리마다 국소적으로 정의하고, 전역적 자기동형성을 직접 보이는 대신 모든 꼬임 $L$ 함수가 좋다는 것만 보인다. 꼬임 $L$ 함수의 해석적 성질은 Rankin–Selberg 나 Langlands–Shahidi 로 얻는다.
+이 정리가 함수성 증명의 표준 전략을 준다. 올리려는 표현 $\Pi$ 를 자리마다 국소적으로 정의하고, 전역적 자기동형성을 직접 보이는 대신 모든 꼬임 $L$ 함수가 좋다는 것만 보인다. 꼬임 $L$ 함수의 해석적 성질은 Rankin–Selberg 나 Langlands–Shahidi 로 얻는다.
 
-$\mathrm{GL}_2$ 의 대칭 거듭제곱 올림이 그 성과다.
+$\mathrm{GL}\_2$ 의 대칭 거듭제곱 올림이 그 성과다.
 
 $$
 \mathrm{Sym}^3:\mathrm{GL}_2(\mathbb C)\to\mathrm{GL}_4(\mathbb C),
@@ -331,16 +239,15 @@ Kim 과 Shahidi 가 2002 년에 $\mathrm{Sym}^3$ 의 자기동형성을, Kim 이
 
 ## 해석적 정수론의 도구
 
-$\mathrm{GL}_n\times\mathrm{GL}_m$ 의 $L$ 함수는 자기동형 형식의 해석적 연구에서 다음과 같이 쓰인다.
+$\mathrm{GL}\_n\times\mathrm{GL}\_m$ 의 $L$ 함수는 자기동형 형식의 해석적 연구에서 다음과 같이 쓰인다.
 
 - **적률 계산.** $\sum_{n\le X}\lvert a_n\rvert^2$ 의 점근이 $L(s,\pi\times\tilde\pi)$ 의 $s=1$ 극에서 나오고, 계수의 평균 크기를 준다.
 - **부볼록 추정.** $L(1/2+it,\pi)$ 의 크기를 볼록성 한계보다 좋게 잡는 문제에서 amplification 기법이 $\pi\times\tilde\pi$ 의 $L$ 함수를 증폭기로 쓴다.
 - **양자 유일 에르고딕성.** Lindenstrauss 와 Soundararajan–Holowinsky 의 증명에서 $L(s,\mathrm{Sym}^2\pi)$ 의 $s=1$ 근처 행동이 입력이다.
 
-## 이어지는 주제
+## 다른 군과 주기
 
-- **Langlands 함수성.** 역정리의 입력이 Rankin–Selberg 적분이고, 함수성의 사례 증명이 대부분 이 구조를 쓴다.
-- **더 일반적인 군.** $\mathrm{GL}_n$ 바깥에서는 Whittaker 모형의 유일성이 깨지기도 하고 적절한 적분을 찾는 것 자체가 연구 주제다. Bump–Friedberg, Ginzburg–Rallis–Soudry 의 적분이 고전군의 $L$ 함수와 내림 사상을 다룬다.
+- **고전군의 적분.** $\mathrm{GL}\_n$ 바깥에서는 Whittaker 모형의 유일성이 깨지기도 하고 적절한 적분을 찾는 것 자체가 연구 주제다. Bump–Friedberg, Ginzburg–Rallis–Soudry 의 적분이 고전군의 $L$ 함수와 내림 사상을 다룬다.
 - **주기와 특수값.** 적분은 $L$ 함수뿐 아니라 특수값의 주기 해석을 준다. Deligne 추측과 Beilinson 추측이 이 값들의 초월성을 예측한다.
 
 [^1]: H. Jacquet, I. I. Piatetski-Shapiro, J. A. Shalika, *Rankin–Selberg convolutions*, Amer. J. Math. **105** (1983), 367–464. 고전적 원형은 R. A. Rankin, *Contributions to the theory of Ramanujan's function τ(n)*, Proc. Cambridge Philos. Soc. **35** (1939), 351–372 와 A. Selberg, *Bemerkungen über eine Dirichletsche Reihe*, Arch. Math. Naturvid. **43** (1940). Whittaker 모형의 유일성은 J. Shalika, *The multiplicity one theorem for GL(n)*, Ann. of Math. **100** (1974). 해설로는 J. Cogdell, *L functions and converse theorems for GL(n)*, IAS/Park City 강의록 (2002).
