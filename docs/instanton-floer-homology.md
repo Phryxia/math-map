@@ -5,7 +5,7 @@
 [Casson 불변량](casson-invariant.md)은 호몰로지 3 구 $\Sigma$ 위의 기약 $\mathrm{SU}(2)$ 평탄 접속을 부호와 함께 센 정수다.
 
 $$
-\lambda(\Sigma)=\sum_{\alpha\in R^*(\Sigma)}\pm1
+\lambda(\Sigma)=\sum_{\alpha\in R^\ast(\Sigma)}\pm1
 $$
 
 세는 대상이 유한집합이고 각 원소에 $\pm1$ 이 붙으므로 어떤 사슬복체의 Euler 지표의 꼴이다. Floer 가 그 복체를 만들었다. 생성원은 평탄 접속이고 미분은 두 평탄 접속을 잇는 **순간자**(반자기쌍대 접속)의 개수다.
@@ -77,7 +77,7 @@ flowchart TD
 
 $\Sigma$ 를 정수 호몰로지 3 구라 하자. $H_1(\Sigma)=0$ 이므로 아벨 표현이 자명한 것뿐이고 기약 표현들이 분리된다.
 
-> **생성원.** $R^*(\Sigma)=\lbrace\rho:\pi_1\Sigma\to \mathrm{SU}(2)\ \text{기약}\rbrace/\text{켤레}$ 의 원소들. 모두 비퇴화라고 가정하고, 아니면 홀로노미 섭동으로 비퇴화하게 만든다.
+> **생성원.** $R^\ast(\Sigma)=\lbrace\rho:\pi_1\Sigma\to \mathrm{SU}(2)\ \text{기약}\rbrace/\text{켤레}$ 의 원소들. 모두 비퇴화라고 가정하고, 아니면 홀로노미 섭동으로 비퇴화하게 만든다.
 
 > **등급.** $\alpha,\beta$ 사이의 상대 등급 $\mu(\alpha,\beta)\in\mathbb Z/8$ 은 둘을 잇는 경로를 따라가는 자기수반 연산자족의 **스펙트럼 흐름**, 곧 고윳값이 0 을 지나며 부호를 바꾸는 횟수의 합이다.
 
