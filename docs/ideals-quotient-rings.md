@@ -157,5 +157,6 @@ $\mathbb R[x]/(x^2+1) \cong \mathbb C$ 가 복소수를 만드는 가장 깔끔�
 - [소 아이디얼과 극대 아이디얼](prime-ideals.md)
 - [중국인의 나머지 정리](chinese-remainder-theorem.md)
 - [유일분해정역](unique-factorization-domains.md)
+- [Noether 환](noetherian-rings.md)
 
 #ring_theory
