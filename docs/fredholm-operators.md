@@ -58,18 +58,6 @@ $$
 
 가 성립한다. 기호가 $0$ 을 지나지 않는 한 $T_a$ 가 Fredholm 을 유지하고 지표가 연속 변형에 불변이므로, 지표는 기호의 호모토피류에만 의존한다. 원에서 $\mathbb C^\times$ 로 가는 연속 함수의 호모토피류는 $\pi_1(\mathbb C^\times)=\mathbb Z$ 에 의해 감음수가 분류한다. 곱셈성 $\mathrm{ind}(T_{ab})=\mathrm{ind}(T_a)+\mathrm{ind}(T_b)$ 에서 그 함수가 선형이고, $a=z$ 에서 값을 맞추면 부호가 정해진다.
 
-```mermaid
-graph TD
-  F["Fredholm 작용소 T<br/>dim ker, dim coker 유한"] -->|"Atkinson"| C["Calkin 대수에서 가역"]
-  C --> K["ind(T+K) = ind(T)<br/>콤팩트 섭동 불변"]
-  C --> O["가역원은 열린집합"]
-  O --> H["ind 가 연속인 정수값 함수<br/>→ 연결성분마다 상수"]
-  K --> TOP["위상적 불변량"]
-  H --> TOP
-  TOP --> W["Toeplitz : ind(T_a) = −wind(a)<br/>π₁(C^×) = Z"]
-  TOP --> AS["타원작용소 : 해석적 지표 = 위상적 지표<br/>Atiyah–Singer"]
-```
-
 # 정의
 
 ## Fredholm 작용소
