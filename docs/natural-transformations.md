@@ -40,7 +40,7 @@ $\alpha_c$ 가 $\alpha$ 의 $c$ 성분이다. 모든 성분이 동형사상이�
 
 ## 두 가지 합성
 
-- **수직 합성.** $\alpha : F \Rightarrow G$ 와 $\beta : G \Rightarrow H$ 에 대해 $(\beta \circ \alpha)_c = \beta_c \circ \alpha_c$ 로 정의한다. 두 naturality 사각형을 옆으로 붙이면 합성의 naturality 가 나온다.
+- **수직 합성.** $\alpha : F \Rightarrow G$ 와 $\beta : G \Rightarrow H$ 에 대해 $(\beta \circ \alpha)\_c = \beta_c \circ \alpha_c$ 로 정의한다. 두 naturality 사각형을 옆으로 붙이면 합성의 naturality 가 나온다.
 - **수평 합성.** $C \to D$ 위의 $\alpha : F \Rightarrow G$ 와 $D \to E$ 위의 $\beta : H \Rightarrow K$ 에 대해 $(\beta \ast \alpha)\_c = K(\alpha_c) \circ \beta_{F(c)} = \beta_{G(c)} \circ H(\alpha_c)$ 로 정의한다. 두 표현이 같다는 것이 $\beta$ 의 naturality 다.
 
 두 합성은 교환법칙(interchange law)으로 맞물리고, 이 구조가 범주·functor·자연변환을 2-범주로 만든다.
@@ -53,7 +53,7 @@ $C$ 에서 $D$ 로 가는 functor 들을 대상으로, 자연변환들을 사상
 
 ## 자연동형과 범주의 동치
 
-Functor $F : C \to D$ 와 $G : D \to C$ 에 대해 $GF \cong \mathrm{id}_C$ 이고 $FG \cong \mathrm{id}_D$ 인 자연동형이 있으면 두 범주는 동치다. 대상이 일대일 대응하는 동형보다 약하지만 실제로 쓰이는 것은 거의 언제나 동치이고, 사상까지 포함해 같음을 재는 방식이다.
+Functor $F : C \to D$ 와 $G : D \to C$ 에 대해 $GF \cong \mathrm{id}\_C$ 이고 $FG \cong \mathrm{id}\_D$ 인 자연동형이 있으면 두 범주는 동치다. 대상이 일대일 대응하는 동형보다 약하지만 실제로 쓰이는 것은 거의 언제나 동치이고, 사상까지 포함해 같음을 재는 방식이다.
 
 ## 예와 반례
 
@@ -64,32 +64,15 @@ Functor $F : C \to D$ 와 $G : D \to C$ 에 대해 $GF \cong \mathrm{id}_C$ 이�
 
 ## 다형성과 naturality
 
-리스트를 뒤집는 연산은 원소가 무엇인지 보지 않고 위치만 다루므로 `map f (reverse xs) = reverse (map f xs)` 가 항상 성립한다. 값을 들여다보는 연산은 그렇지 않다.
+리스트를 뒤집는 `reverse` 는 원소가 무엇인지 보지 않고 위치만 다루므로 `map f (reverse xs) = reverse (map f xs)` 가 항상 성립한다. List functor 에서 자기 자신으로 가는 자연변환이다.
 
-```python
-fmap = lambda f, xs: [f(x) for x in xs]      # List functor 의 사상 대응
+값을 들여다보는 연산은 자연변환이 아니다. $x>1$ 인 원소만 남기는 연산은 $xs=[0,1,2]$ 와 $f(x)=x+10$ 에서 `map f` 를 먼저 하면 $[10,11,12]$ 를, 나중에 하면 $[12]$ 를 준다. 원소를 $f$ 로 옮기고 나면 조건을 만족하는 원소가 달라지기 때문이다. 타입 변수에 대해 다형인 함수가 대체로 자연변환인 것도 같은 이유다.
 
-rev    = lambda xs: xs[::-1]                 # 후보 1: 위치만 본다
-picky  = lambda xs: [x for x in xs if x > 1] # 후보 2: 값을 들여다본다
-
-xs = [0, 1, 2]
-f = lambda x: x + 10
-
-for alpha in (rev, picky):
-    print(fmap(f, alpha(xs)) == alpha(fmap(f, xs)))
-# True    reverse 는 List ⇒ List 자연변환
-# False   [12] vs [10, 11, 12]
-```
-
-`picky` 가 깨지는 것은 원소를 `f` 로 옮기고 나면 조건을 만족하는 원소가 달라지기 때문이다. 자연변환은 무엇이 들어 있는지 묻지 않고 구조만 다루는 연산이며, 타입 변수에 대해 다형인 함수가 대체로 자연변환인 것도 같은 이유다.
-
-## 상위 이론으로 가는 입구
+## 자연변환이 쓰이는 자리
 
 - [Yoneda lemma](yoneda-lemma.md)는 hom functor 에서 나가는 자연변환 전체를 한 원소로 분류한다.
 - [Adjunction](adjunctions.md)의 unit 과 counit 은 자연변환이고 삼각항등식은 그들의 합성에 대한 조건이다.
 - [제한과 쌍대제한](limits-colimits.md)의 원뿔은 상수 functor 에서 도형 functor 로 가는 자연변환이다.
-
-세 주제 모두 자연변환을 셀 수 있게 만든다.
 
 # 활용
 
@@ -111,4 +94,4 @@ for alpha in (rev, picky):
 - [Adjunction](adjunctions.md)
 - [제한과 쌍대제한](limits-colimits.md)
 
-#category_theory
+#category_theory #algebra #linear_algebra #computation
