@@ -63,20 +63,6 @@ $$
 
 추가된 $e^{\pm i\pi/4}$ 는 $\int e^{-ax^2}dx=\sqrt{\pi/a}$ 를 $a=-i\lambda\varphi''/2$ 라는 순허수까지 해석적으로 연장할 때 제곱근이 택하는 가지에서 나온다. $a$ 가 양의 실수에서 허축으로 회전하면 $\sqrt{1/a}$ 의 편각이 $\mp\pi/4$ 만큼 돈다.
 
-```mermaid
-flowchart TD
-  OSC["I = int g e^{i lam phi}<br/>|피적분함수| 어디서나 같음"] --> Q{"phi' = 0 인 점?"}
-  Q -->|"없다"| IBP["반복 부분적분<br/>O(lam^{-N}) 모든 N"]
-  Q -->|"있다"| ST["정상점 x0<br/>폭 ~ lam^{-1/2}"]
-  ST --> FR["Fresnel 적분"]
-  FR --> AMP["진폭 sqrt(2 pi / lam |phi''|)"]
-  FR --> PH["위상 e^{i pi sgn(phi'')/4}<br/>고차원: Morse 지표"]
-  AMP --> SUM["정상점마다 한 항"]
-  PH --> SUM
-  SUM --> INT["여러 항의 간섭<br/>(Laplace 에는 없던 현상)"]
-  DEG["퇴화 정상점 phi''=0"] -.->|"lam^{-1/3}, Airy"| SUM
-```
-
 한 점에서 $\varphi''>0$ 이고 다른 점에서 $\varphi''<0$ 이면 두 기여의 위상이 $\pi/2$ 만큼 어긋나고, 전체 답의 진동 패턴이 그 차이로 정해진다.
 
 # 정의
