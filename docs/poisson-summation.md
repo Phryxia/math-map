@@ -54,18 +54,6 @@ $$
 
 $f$ 가 매끄러울수록 $\hat f$ 는 빨리 죽고, $f$ 가 해석적이면 $\hat f$ 가 지수적으로 죽어 오차가 $e^{-c/h}$ 규모가 된다.
 
-```mermaid
-flowchart TD
-  PER["주기화 F(x) = sum f(x+n)"] --> FS["Fourier 급수 전개"]
-  FS --> PS["Poisson 합<br/>sum f(n) = sum hat f(k)"]
-  PS --> TH["theta(1/t) = sqrt(t) theta(t)"]
-  TH --> FE["zeta 함수방정식"]
-  PS --> TRAP["사다리꼴 오차 = sum_{k != 0} hat f(k/h)"]
-  PS --> SAMP["표본화 정리와 에일리어싱"]
-  PS --> LP["Cohn-Elkies 선형계획 한계"]
-  PS --> LAT["일반 격자: covol 과 쌍대격자"]
-```
-
 # 정의
 
 ## 공식
@@ -118,24 +106,13 @@ $$
 
 라는 자명한 등식이 나온다. 스케일 매개변수를 넣으면 $\theta(t)=t^{-1/2}\theta(1/t)$ 가 된다. 자기쌍대 함수에 대칭을 깨는 매개변수를 넣는 것이 이 공식에서 정보를 뽑는 방법이다.
 
-```python
-from math import exp, pi, sqrt
+같은 등식이 Gauss 함수 위 사다리꼴 규칙의 오차를 정확히 준다.
 
-theta = lambda t: sum(exp(-pi * n * n * t) for n in range(-200, 201))
-for t in (0.5, 2.0, 3.7):
-    print(t, "%.3e" % abs(theta(1 / t) - sqrt(t) * theta(t)))
-# 0.5 0.000e+00 / 2.0 2.2e-16 / 3.7 2.2e-16
+$$
+h\sum_{j\in\mathbb Z}e^{-\pi(jh)^2}-1=2\sum_{k\ge1}e^{-\pi k^2/h^2}
+$$
 
-f = lambda x: exp(-pi * x * x)                       # 사다리꼴 오차의 예측
-for h in (1.0, 0.8, 0.6, 0.5):
-    err = h * sum(f(j * h) for j in range(-400, 401)) - 1.0
-    pred = 2 * sum(exp(-pi * k * k / h ** 2) for k in range(1, 20))
-    print("h=%.1f  실제 %.3e  예측 %.3e" % (h, err, pred))
-# h=1.0 8.643e-02 8.643e-02 / h=0.8 1.476e-02 1.476e-02
-# h=0.6 3.244e-04 3.244e-04 / h=0.5 6.975e-06 6.975e-06
-```
-
-Euler–Maclaurin 의 모든 보정항이 0 이 되는 자리에서 남는 것이 이 값이다.
+Euler–Maclaurin 의 보정항이 모두 0 이 되는 자리에서 남는 것이 이 오차다. $h$ 가 줄면 $e^{-\pi/h^2}$ 규모로 사라진다.
 
 ## 부호 조건과 격자 하한
 
