@@ -76,7 +76,7 @@ $N = 2^m$ 일 때 위의 분할을 재귀적으로 적용한다. 시간 영역�
 ## 구현
 
 ```python
-import cmath, random
+import cmath
 
 def fft(a, inverse=False):
     """길이가 2의 거듭제곱인 배열의 제자리 반복형 Cooley-Tukey."""
@@ -113,11 +113,6 @@ def dft(a):
     return [sum(a[t] * cmath.exp(-2j * cmath.pi * k * t / n) for t in range(n))
             for k in range(n)]
 
-rng = random.Random(1)
-x = [complex(rng.gauss(0, 1), rng.gauss(0, 1)) for _ in range(16)]
-print("FFT vs DFT 오차:", round(max(abs(p - q) for p, q in zip(fft(x), dft(x))), 12))
-print("역변환 오차:", round(max(abs(p - q) for p, q in zip(fft(fft(x), True), x)), 12))
-
 def poly_mul(p, q):
     n = 1
     while n < len(p) + len(q) - 1:
@@ -128,8 +123,6 @@ def poly_mul(p, q):
     return [round(z.real) for z in R[:len(p) + len(q) - 1]]
 
 print(poly_mul([1, 2, 3], [4, 5]))        # (1+2x+3x^2)(4+5x)
-# FFT vs DFT 오차: 0.0
-# 역변환 오차: 0.0
 # [4, 13, 22, 15]
 ```
 
