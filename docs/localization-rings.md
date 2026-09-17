@@ -239,6 +239,7 @@ for q in samples:
 
 ## 더 알아보기
 
+- [Nakayama 보조정리](nakayama-lemma.md)
 - [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md)
 
 #ring_theory #algebra #number_theory

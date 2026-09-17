@@ -46,6 +46,7 @@ graph TD
 - [Noether 환](noetherian-rings.md): 오름사슬 조건과 Hilbert 기저정리
 - [가군](modules.md) → [텐서곱](tensor-products.md): 환 위의 벡터 공간
 - [PID 위의 유한생성 가군](finitely-generated-modules.md): 구조정리와 Smith 표준형
+- [Nakayama 보조정리](nakayama-lemma.md): 국소환 위의 가군을 잉여체로 내려 읽기
 - [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md): 정수론으로 가는 문
 - [대수적 K 이론과 Quillen–Lichtenbaum](algebraic-k-theory.md): 환의 사영가군에서 나오는 고차 불변량
 
