@@ -4,16 +4,16 @@
 
 [Tate 의 논문](tate-thesis.md)은 Hecke 의 $L$ 함수를 아델 위의 적분 하나로 다시 썼다. 해석적 접속과 함수방정식이 Fourier 해석과 Poisson 합공식에서 나오고, 자리마다의 국소 인자와 근 수가 국소 적분에서 읽힌다.
 
-그 논문은 $\mathrm{GL}_1$ 을 다루고, Godement 와 Jacquet 이 1972 년에 같은 일을 $\mathrm{GL}_n$ 에서 했다.
+그 논문은 $\mathrm{GL}\_1$ 을 다루고, Godement 와 Jacquet 이 1972 년에 같은 일을 $\mathrm{GL}\_n$ 에서 했다.
 
 $$
 Z(s,\Phi,\varphi)=\int_{\mathrm{GL}_n(\mathbb A)}\Phi(g)\thinspace\varphi(g)\thinspace
 \lvert\det g\rvert^{\thinspace s+\frac{n-1}2}\thinspace dg
 $$
 
-$\Phi$ 는 행렬공간 위의 Schwartz 함수이고 $\varphi$ 는 표현 $\pi$ 의 **행렬 계수**다. 이 적분이 $\mathrm{GL}_n$ 의 모든 첨점 자기동형 표현에 대해 **표준 $L$ 함수** $L(s,\pi)$ 의 해석적 접속과 함수방정식을 준다.
+$\Phi$ 는 행렬공간 위의 Schwartz 함수이고 $\varphi$ 는 표현 $\pi$ 의 **행렬 계수**다. 이 적분이 $\mathrm{GL}\_n$ 의 모든 첨점 자기동형 표현에 대해 **표준 $L$ 함수** $L(s,\pi)$ 의 해석적 접속과 함수방정식을 준다.
 
-Tate 가 $\mathbb A^\times$ 위의 적분을 다룰 수 있었던 것은 $\mathbb A^\times$ 가 벡터공간 $\mathbb A$ 의 열린 부분집합이기 때문이다. 벡터공간에는 Schwartz 함수와 Fourier 변환과 Poisson 합공식이 있다. $\mathrm{GL}_n$ 을 담는 벡터공간은 **행렬대수** $M_n$ 이다.
+Tate 가 $\mathbb A^\times$ 위의 적분을 다룰 수 있었던 것은 $\mathbb A^\times$ 가 벡터공간 $\mathbb A$ 의 열린 부분집합이기 때문이다. 벡터공간에는 Schwartz 함수와 Fourier 변환과 Poisson 합공식이 있다. $\mathrm{GL}\_n$ 을 담는 벡터공간은 **행렬대수** $M_n$ 이다.
 
 $$
 \mathbb G_m\subset\mathbb A^1
@@ -21,15 +21,15 @@ $$
 \mathrm{GL}_n\subset M_n
 $$
 
-$M_n$ 은 $n^2$ 차원 벡터공간이고 $\mathrm{GL}_n$ 은 그 안에서 $\det\ne0$ 인 열린 부분집합이다. 곱셈 지표 $\chi$ 의 자리에 표현의 행렬 계수가, $\lvert x\rvert^s$ 의 자리에 $\lvert\det g\rvert^s$ 가 들어가고 나머지는 Tate 의 구성과 같다.
+$M_n$ 은 $n^2$ 차원 벡터공간이고 $\mathrm{GL}\_n$ 은 그 안에서 $\det\ne0$ 인 열린 부분집합이다. 곱셈 지표 $\chi$ 의 자리에 표현의 행렬 계수가, $\lvert x\rvert^s$ 의 자리에 $\lvert\det g\rvert^s$ 가 들어가고 나머지는 Tate 의 구성과 같다.
 
-[Langlands 강령](langlands-program.md)은 자기동형 표현의 $L$ 함수가 Galois 쪽 $L$ 함수와 같기를 요구하며, 그러려면 자기동형 쪽 $L$ 함수가 먼저 잘 정의되고 해석적으로 좋아야 한다. Godement–Jacquet 이 $\mathrm{GL}_n$ 의 표준 $L$ 함수에 대해 이를 무조건적으로 보장한다.
+[Langlands 강령](langlands-program.md)은 자기동형 표현의 $L$ 함수가 Galois 쪽 $L$ 함수와 같기를 요구하며, 그러려면 자기동형 쪽 $L$ 함수가 먼저 잘 정의되고 해석적으로 좋아야 한다. Godement–Jacquet 이 $\mathrm{GL}\_n$ 의 표준 $L$ 함수에 대해 이를 무조건적으로 보장한다.
 
 # 직관
 
 ## Tate 적분의 부품
 
-$\mathrm{GL}_1$ 에서 Tate 의 적분은
+$\mathrm{GL}\_1$ 에서 Tate 의 적분은
 
 $$
 Z(s,f,\chi)=\int_{\mathbb A^\times}f(x)\thinspace\chi(x)\thinspace\lvert x\rvert^s\thinspace d^\times x
@@ -51,35 +51,19 @@ $$
 \varphi(g)=\langle\pi(g)v,\tilde v\rangle
 $$
 
-가 $\mathrm{GL}_n$ 위의 함수이고, $n=1$ 이면 $\varphi=\chi$ 다. 행렬 계수는 표현의 정보를 함수 하나로 압축하며 Schur 직교성에 의해 지표와 같은 역할을 한다.
+가 $\mathrm{GL}\_n$ 위의 함수이고, $n=1$ 이면 $\varphi=\chi$ 다. 행렬 계수는 표현의 정보를 함수 하나로 압축하며 Schur 직교성에 의해 지표와 같은 역할을 한다.
 
-$\lvert x\rvert^s$ 자리에는 $\det\colon\mathrm{GL}_n\to\mathbb G_m$ 을 써서 $\lvert\det g\rvert^s$ 를 넣는다. 지수를 $s+\frac{n-1}2$ 로 옮기는 것은 함수방정식이 $s\leftrightarrow1-s$ 가 되게 하는 정규화다.
+$\lvert x\rvert^s$ 자리에는 $\det\colon\mathrm{GL}\_n\to\mathbb G_m$ 을 써서 $\lvert\det g\rvert^s$ 를 넣는다. 지수를 $s+\frac{n-1}2$ 로 옮기는 것은 함수방정식이 $s\leftrightarrow1-s$ 가 되게 하는 정규화다.
 
 ## $M_n$ 의 세 성질
 
 $M_n$ 은 다음 세 조건을 만족한다.
 
-- $\mathrm{GL}_n$ 이 $M_n$ 의 **조밀한 열린** 부분집합이다. 그래서 $\mathrm{GL}_n$ 위의 적분을 $M_n$ 위의 Schwartz 함수로 다룰 수 있다.
-- $M_n$ 위에 $\mathrm{GL}_n\times\mathrm{GL}_n$ 이 왼쪽·오른쪽 곱으로 작용하고, Fourier 변환이 이 작용과 잘 어울린다. 자기쌍대 측도에서 $\widehat{\Phi}$ 가 다시 Schwartz 함수다.
+- $\mathrm{GL}\_n$ 이 $M_n$ 의 **조밀한 열린** 부분집합이다. 그래서 $\mathrm{GL}\_n$ 위의 적분을 $M_n$ 위의 Schwartz 함수로 다룰 수 있다.
+- $M_n$ 위에 $\mathrm{GL}\_n\times\mathrm{GL}\_n$ 이 왼쪽·오른쪽 곱으로 작용하고, Fourier 변환이 이 작용과 잘 어울린다. 자기쌍대 측도에서 $\widehat{\Phi}$ 가 다시 Schwartz 함수다.
 - $\det$ 이 $M_n$ 위의 다항식이라 $\lvert\det\rvert^s$ 의 국소 적분이 유리함수로 수렴한다. 수렴영역이 $\mathrm{Re}(s)$ 가 클 때 확보되고, 거기서 해석적으로 접속한다.
 
-다른 군에는 이런 벡터공간이 없으므로 Godement–Jacquet 은 $\mathrm{GL}_n$ 에 특화된 방법이고, 다른 군과 다른 $L$ 함수에는 [Rankin–Selberg 적분](rankin-selberg.md)이나 Langlands–Shahidi 방법을 쓴다.
-
-```mermaid
-graph TD
-  T["Tate (GL_1)<br/>∫_{A^×} f(x)χ(x)|x|^s d^×x"] --> K["왜 되는가<br/>A^× ⊂ A 가 벡터공간의 열린 부분집합"]
-  K --> GEN["같은 조건을 만족하는 쌍을 찾자"]
-  GEN --> M["GL_n ⊂ M_n<br/>n² 차원 벡터공간"]
-  M --> GJ["Godement–Jacquet<br/>∫_{GL_n(A)} Φ(g)φ(g)|det g|^{s+(n−1)/2} dg"]
-  CH["지표 χ"] -.n≥2.-> MC["행렬 계수 ⟨π(g)v, ṽ⟩"]
-  MC --> GJ
-  GJ --> FE["Poisson 합공식<br/>→ 함수방정식 s ↔ 1−s"]
-  GJ --> LOC["국소 적분<br/>→ L 인자와 근 수"]
-  LOC --> UNR["비분기 자리 :<br/>det(1 − q^{-s}A_π)^{-1}"]
-  FE --> STD["표준 L 함수 L(s,π) 가<br/>무조건적으로 좋다"]
-  UNR --> STD
-  STD --> LAN["Langlands 강령이 딛고 설 바닥"]
-```
+다른 군에는 이런 벡터공간이 없으므로 Godement–Jacquet 은 $\mathrm{GL}\_n$ 에 특화된 방법이고, 다른 군과 다른 $L$ 함수에는 [Rankin–Selberg 적분](rankin-selberg.md)이나 Langlands–Shahidi 방법을 쓴다.
 
 ## 비분기 자리의 국소 인자
 
@@ -102,7 +86,7 @@ $$
 
 ## 국소 적분
 
-$F$ 를 국소체, $\pi$ 를 $\mathrm{GL}_n(F)$ 의 기약 허용 표현, $\varphi$ 를 그 행렬 계수, $\Phi\in\mathcal S(M_n(F))$ 라 하자.
+$F$ 를 국소체, $\pi$ 를 $\mathrm{GL}\_n(F)$ 의 기약 허용 표현, $\varphi$ 를 그 행렬 계수, $\Phi\in\mathcal S(M_n(F))$ 라 하자.
 
 $$
 Z(s,\Phi,\varphi)=\int_{\mathrm{GL}_n(F)}\Phi(g)\thinspace\varphi(g)\thinspace
@@ -113,7 +97,7 @@ $\mathrm{Re}(s)$ 가 충분히 크면 수렴하고 $q^{-s}$ 의 유리함수로 
 
 ## 대역 적분과 함수방정식
 
-$\pi$ 를 $\mathrm{GL}_n(\mathbb A)$ 의 첨점 자기동형 표현이라 하고 위의 적분을 아델 위에서 잡는다.
+$\pi$ 를 $\mathrm{GL}\_n(\mathbb A)$ 의 첨점 자기동형 표현이라 하고 위의 적분을 아델 위에서 잡는다.
 
 > **정리 (Godement–Jacquet, 1972).** $Z(s,\Phi,\varphi)$ 는 $\mathbb C$ 전체로 해석적으로 접속하고($n\ge2$ 이면 정함수)
 > $$Z(s,\Phi,\varphi)=Z(1-s,\widehat\Phi,\tilde\varphi)$$
@@ -124,9 +108,9 @@ $\pi$ 를 $\mathrm{GL}_n(\mathbb A)$ 의 첨점 자기동형 표현이라 하고
 
 $n=1$ 의 자명한 지표에서는 $\zeta$ 함수에 극점이 생기고, $n\ge2$ 의 첨점 표현에서는 극점이 없다.
 
-## 표준 L 함수
+## 표준 $L$ 함수
 
-이렇게 정의된 $L(s,\pi)$ 가 $\pi$ 의 **표준(standard) $L$ 함수**이고, Langlands 의 언어로는 쌍대군 ${}^L\mathrm{GL}_n=\mathrm{GL}_n(\mathbb C)$ 의 표준표현에 딸린 $L$ 함수다. 대칭곱이나 외적곱 같은 다른 표현의 $L$ 함수는 이 방법으로 나오지 않는다.
+이렇게 정의된 $L(s,\pi)$ 가 $\pi$ 의 **표준(standard) $L$ 함수**이고, Langlands 의 언어로는 쌍대군 ${}^L\mathrm{GL}\_n=\mathrm{GL}\_n(\mathbb C)$ 의 표준표현에 딸린 $L$ 함수다. 대칭곱이나 외적곱 같은 다른 표현의 $L$ 함수는 이 방법으로 나오지 않는다.
 
 # 성질
 
@@ -134,8 +118,8 @@ $n=1$ 의 자명한 지표에서는 $\zeta$ 함수에 극점이 생기고, $n\ge
 
 | | 상태 |
 |---|---|
-| $\mathrm{GL}_n$ 의 표준 $L$ 함수 | Godement–Jacquet — 무조건적 |
-| $\mathrm{GL}_n\times\mathrm{GL}_m$ 의 Rankin–Selberg | Jacquet–Piatetski-Shapiro–Shalika — 무조건적 |
+| $\mathrm{GL}\_n$ 의 표준 $L$ 함수 | Godement–Jacquet — 무조건적 |
+| $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 의 Rankin–Selberg | Jacquet–Piatetski-Shapiro–Shalika — 무조건적 |
 | 대칭곱 $L(s,\mathrm{Sym}^k\pi)$ | $k\le4$ 만 알려짐 (Kim–Shahidi) |
 | 일반 $L(s,\pi,r)$ | Langlands 의 추측 |
 
@@ -143,10 +127,10 @@ $n=1$ 의 자명한 지표에서는 $\zeta$ 함수에 극점이 생기고, $n\ge
 
 ## Tate 와의 대응
 
-| $\mathrm{GL}_1$ 의 Tate | $\mathrm{GL}_n$ 의 Godement–Jacquet |
+| $\mathrm{GL}\_1$ 의 Tate | $\mathrm{GL}\_n$ 의 Godement–Jacquet |
 |---|---|
 | 벡터공간 $\mathbb A$ | 행렬대수 $M_n(\mathbb A)$ |
-| 군 $\mathbb A^\times$ | $\mathrm{GL}_n(\mathbb A)$ |
+| 군 $\mathbb A^\times$ | $\mathrm{GL}\_n(\mathbb A)$ |
 | 지표 $\chi$ | 행렬 계수 $\langle\pi(g)v,\tilde v\rangle$ |
 | $\lvert x\rvert^s$ | $\lvert\det g\rvert^{s+(n-1)/2}$ |
 | Fourier 변환 $f\mapsto\hat f$ | $\Phi\mapsto\widehat\Phi$ (자기쌍대 측도) |
@@ -154,7 +138,7 @@ $n=1$ 의 자명한 지표에서는 $\zeta$ 함수에 극점이 생기고, $n\ge
 | $L$ 인자 $(1-\chi(\varpi)q^{-s})^{-1}$ | $\det(1-q^{-s}A_\pi)^{-1}$ |
 | 근 수 $\varepsilon$ | 같은 꼴의 $\varepsilon(s,\pi)$ |
 
-[Gauss 합](gauss-sums.md)이 $\mathrm{GL}_1$ 의 분기 자리에서 근 수로 나타나듯, $\mathrm{GL}_n$ 에서도 분기 자리의 $\varepsilon$ 이 비자명한 정보를 담는다. Deligne 과 Langlands 의 국소 상수 이론이 그것을 Galois 쪽 근 수와 맞춘다.
+[Gauss 합](gauss-sums.md)이 $\mathrm{GL}\_1$ 의 분기 자리에서 근 수로 나타나듯, $\mathrm{GL}\_n$ 에서도 분기 자리의 $\varepsilon$ 이 비자명한 정보를 담는다. Deligne 과 Langlands 의 국소 상수 이론이 그것을 Galois 쪽 근 수와 맞춘다.
 
 ## 모듈러 형식과의 사전
 
@@ -176,113 +160,19 @@ $$
 
 ## 오일러 곱의 전개
 
-$\Delta$ 의 계수 $\tau(n)$ 을 오각수 정리로 구하고, 오일러 곱 $\prod_p(1-\tau(p)p^{-s}+p^{11-2s})^{-1}$ 을 Dirichlet 급수로 전개해 $\tau(n)$ 과 대조한다. 정수 연산만 쓴다.
+$\Delta$ 의 표준 $L$ 함수는 오일러 곱 $\prod_p(1-\tau(p)p^{-s}+p^{11-2s})^{-1}$ 이고, 이것을 Dirichlet 급수로 전개하면 계수가 $\tau(n)$ 이다. 소수마다의 국소 인자를 전개하면 $p$ 거듭제곱 자리의 계수가 2 항 점화식을 만족한다.
 
-```python
-from math import isqrt
+$$
+\tau(p^{m+1})=\tau(p)\thinspace\tau(p^m)-p^{11}\thinspace\tau(p^{m-1})
+$$
 
-N = 300
-
-def tau_upto(N):                              # Δ = q ∏(1-q^n)^24
-    e = [0] * (N + 1); e[0] = 1
-    k = 1
-    while True:
-        g1, g2 = k * (3 * k - 1) // 2, k * (3 * k + 1) // 2
-        if g1 > N and g2 > N: break
-        s = -1 if k % 2 else 1
-        if g1 <= N: e[g1] += s
-        if g2 <= N: e[g2] += s
-        k += 1
-    def mul(a, b):
-        c = [0] * (N + 1)
-        for i, ai in enumerate(a):
-            if ai:
-                for j in range(0, N + 1 - i):
-                    if b[j]: c[i + j] += ai * b[j]
-        return c
-    prod = [1] + [0] * N
-    for _ in range(24): prod = mul(prod, e)
-    t = [0] * (N + 2)
-    for n in range(N + 1): t[n + 1] = prod[n]
-    return t
-
-tau = tau_upto(N)
-is_prime = lambda n: n > 1 and all(n % d for d in range(2, isqrt(n) + 1))
-PR = [p for p in range(2, N + 1) if is_prime(p)]
-
-# 국소 인자 (1 - τ(p)X + p^11 X^2)^{-1} = Σ_m c_{p^m} X^m,  c 는 2 항 점화식
-euler = [0] * (N + 1); euler[1] = 1
-for p in PR:
-    loc = [0] * (N + 1); loc[1] = 1
-    pk, prev2, prev1 = p, 1, 0                # c_{p^0}=1, c_{p^{-1}}=0
-    while pk <= N:
-        c = tau[p] * prev2 - (p ** 11) * prev1 if pk > p else tau[p]
-        loc[pk] = c
-        prev1, prev2, pk = prev2, c, pk * p
-    new = [0] * (N + 1)                       # Dirichlet 곱
-    for i in range(1, N + 1):
-        if euler[i]:
-            j = 1
-            while i * j <= N:
-                if loc[j]: new[i * j] += euler[i] * loc[j]
-                j += 1
-    euler = new
-
-bad = [n for n in range(1, N + 1) if euler[n] != tau[n]]
-print(f"  n <= {N} 에서 오일러 곱 전개 = τ(n) : {not bad}   반례 {bad[:5]}")
-print(f"  예 : n=1..12  오일러 곱 {euler[1:13]}")
-print(f"           τ(n) {tau[1:13]}")
-
-#   n <= 300 에서 오일러 곱 전개 = τ(n) : True   반례 []
-#   예 : n=1..12  오일러 곱 [1, -24, 252, -1472, 4830, -6048, -16744, 84480, -113643, -115920, 534612, -370944]
-#            τ(n) [1, -24, 252, -1472, 4830, -6048, -16744, 84480, -113643, -115920, 534612, -370944]
-```
-
-소수마다 만든 국소 인자의 곱이 $\tau(n)$ 을 복원한다. $\mathrm{GL}_2$ 의 표준 $L$ 함수가 자리마다의 곱이라는 진술이 이 내용이다.
+서로소인 자리끼리는 국소 인자가 독립이므로 $\gcd(m,n)=1$ 일 때 $\tau(mn)=\tau(m)\tau(n)$ 이다. 이 두 관계가 $\mathrm{GL}\_2$ 의 표준 $L$ 함수가 자리마다의 곱이라는 진술의 고전적 판본이다.
 
 ## 국소 인자와 특성다항식
 
-```python
-print(f"{'p':>4} {'τ(p)':>12} {'α+β':>14} {'αβ':>18} {'p^11':>18}  일치")
-for p in PR[:6]:
-    d = complex(tau[p] ** 2 - 4 * p ** 11) ** 0.5
-    al, be = (tau[p] + d) / 2, (tau[p] - d) / 2
-    s, pr = (al + be).real, (al * be).real
-    print(f"{p:>4} {tau[p]:>12} {s:>14.1f} {pr:>18.1f} {p**11:>18}  "
-          f"{abs(s - tau[p]) < 1e-3 and abs(pr - p**11) < 1e-3 * p**11}")
-
-#    p         τ(p)            α+β                 αβ               p^11  일치
-#    2          -24          -24.0             2048.0               2048  True
-#    3          252          252.0           177147.0             177147  True
-#    5         4830         4830.0         48828125.0           48828125  True
-#    7       -16744       -16744.0       1977326743.0         1977326743  True
-#   11       534612       534612.0     285311670611.0       285311670611  True
-#   13      -577738      -577738.0    1792160394037.0      1792160394037  True
-```
-
-$1-\tau(p)X+p^{11}X^2=\det(1-X\thinspace A_{\pi_p})$ 에서 $A_{\pi_p}$ 의 고윳값이 $\alpha_p,\beta_p$ 이고, 대각합이 $\tau(p)$ , 행렬식이 $p^{11}$ 이다. 이 행렬이 Satake 매개변수이고 $\mathrm{GL}_n$ 에서는 $n\times n$ 이 된다.
+$1-\tau(p)X+p^{11}X^2=\det(1-X\thinspace A_{\pi_p})$ 에서 $A_{\pi_p}$ 의 고윳값이 $\alpha_p,\beta_p$ 이고, 대각합이 $\tau(p)$ , 행렬식이 $p^{11}$ 이다. 이 행렬이 Satake 매개변수이고 $\mathrm{GL}\_n$ 에서는 $n\times n$ 이 된다.
 
 ## 계수와 대칭곱 지표
-
-국소 인자를 전개했을 때 $p^m$ 자리의 계수를 본다.
-
-```python
-for p in PR[:4]:
-    d = complex(tau[p] ** 2 - 4 * p ** 11) ** 0.5
-    al, be = (tau[p] + d) / 2, (tau[p] - d) / 2
-    row, pk, m = [], p, 1
-    while pk <= N and m <= 4:
-        pred = sum(al ** k * be ** (m - k) for k in range(m + 1)).real
-        row.append((m, euler[pk], round(pred)))
-        pk, m = pk * p, m + 1
-    ok = all(abs(a - b) <= max(1, abs(a)) * 1e-6 for _, a, b in row)
-    print(f"  p={p:3d}  (m, c_p^m, Σα^kβ^(m-k)) = {row}   일치 {ok}")
-
-#   p=  2  (m, c_p^m, Σα^kβ^(m-k)) = [(1, -24, -24), (2, -1472, -1472), (3, 84480, 84480), (4, 987136, 987136)]   일치 True
-#   p=  3  (m, c_p^m, Σα^kβ^(m-k)) = [(1, 252, 252), (2, -113643, -113643), (3, -73279080, -73279080), (4, 1665188361, 1665188361)]   일치 True
-#   p=  5  (m, c_p^m, Σα^kβ^(m-k)) = [(1, 4830, 4830), (2, -25499225, -25499225), (3, -359001100500, -359001100500)]   일치 True
-#   p=  7  (m, c_p^m, Σα^kβ^(m-k)) = [(1, -16744, -16744), (2, -1696965207, -1696965207)]   일치 True
-```
 
 $c_{p^m}=\sum_{k=0}^m\alpha^k\beta^{m-k}$ 는 $\mathrm{GL}\_2(\mathbb C)$ 의 $m$ 번째 대칭곱 표현의 지표를 $A_{\pi_p}$ 에서 평가한 값이다. $\tau(p^m)$ 이 Satake 매개변수의 대칭곱 지표다.
 
@@ -290,9 +180,9 @@ $c_{p^m}=\sum_{k=0}^m\alpha^k\beta^{m-k}$ 는 $\mathrm{GL}\_2(\mathbb C)$ 의 $m
 
 ## 관련 정리와 일반화
 
-- **Langlands 강령의 전제.** 자기동형 $L$ 함수의 좋은 성질이 [강령](langlands-program.md)의 모든 진술의 전제이고, $\mathrm{GL}_n$ 표준 $L$ 함수에 대해 이 정리가 그것을 무조건적으로 준다.
+- **Langlands 강령의 전제.** 자기동형 $L$ 함수의 좋은 성질이 [강령](langlands-program.md)의 모든 진술의 전제이고, $\mathrm{GL}\_n$ 표준 $L$ 함수에 대해 이 정리가 그것을 무조건적으로 준다.
 - **강한 중복도 1.** 표준 $L$ 함수가 표현을 결정한다는 정리(Jacquet–Shalika)가 거의 모든 자리의 Satake 매개변수로 $\pi$ 가 정해진다는 말이고, 증명에 이 적분이 쓰인다.
-- **[Rankin–Selberg](rankin-selberg.md).** $\mathrm{GL}_n\times\mathrm{GL}_m$ 의 $L$ 함수를 다루는 Jacquet–Piatetski-Shapiro–Shalika 의 적분은 이 방법의 형제다. 함수성 판정과 Ramanujan 형 추정의 주요 도구다.
+- **[Rankin–Selberg](rankin-selberg.md).** $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 의 $L$ 함수를 다루는 Jacquet–Piatetski-Shapiro–Shalika 의 적분은 이 방법의 형제다. 함수성 판정과 Ramanujan 형 추정의 주요 도구다.
 - **국소 상수.** 분기 자리의 $\varepsilon(s,\pi)$ 를 Galois 쪽 근 수와 맞추는 국소 Langlands 대응의 검증 조건이 여기서 나온다.
 - **더 일반적인 군.** $M_n$ 같은 벡터공간이 없는 군에서는 이 방법이 통하지 않는다. Braverman–Kazhdan 과 L. Lafforgue 가 일반 군에 대해 같은 역할을 하는 공간을 찾는 강령을 제안했다.
 
