@@ -124,7 +124,7 @@ $g\ge2$ 에서는 이 족이 복소차원 $3g-3$ 이다. 그 공간을 다루는
 
 ## 선수지식
 
-- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
+- [등각사상](conformal-mapping.md)
 - [덮개공간](covering-spaces.md)
 - [곡면의 분류](classification-of-surfaces.md)
 
