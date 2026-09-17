@@ -41,7 +41,7 @@ $$
 
 $\psi$ 는 유한군 위의 함수라 미분도 급수전개도 없다. 복소수 쪽에서 $\psi$ 의 값 $e^{2\pi ik/p}$ 는 단위원 위에 흩어진 점이다.
 
-$p$ 진 세계에서는 $\psi$ 가 해석함수의 값으로 실현된다. $\pi\in\mathbb C_p$ 를 $\pi^{p-1}=-p$ 인 원소로 잡으면 $\mathrm{ord}_p\pi=\frac1{p-1}$ 이고 $\zeta_p=1+\pi+O(\pi^2)$ 꼴의 $p$ 제곱근이 존재한다. $p$ 진 지수함수는 $\mathrm{ord}_p(x)>\frac1{p-1}$ 에서만 수렴하므로 $\exp(\pi x)$ 의 수렴반경이 $1$ 에 못 미치는데, Teichmüller 대표원은 절댓값이 정확히 $1$ 이다.
+$p$ 진 세계에서는 $\psi$ 가 해석함수의 값으로 실현된다. $\pi\in\mathbb C_p$ 를 $\pi^{p-1}=-p$ 인 원소로 잡으면 $\mathrm{ord}\_p\pi=\frac1{p-1}$ 이고 $\zeta_p=1+\pi+O(\pi^2)$ 꼴의 $p$ 제곱근이 존재한다. $p$ 진 지수함수는 $\mathrm{ord}\_p(x)>\frac1{p-1}$ 에서만 수렴하므로 $\exp(\pi x)$ 의 수렴반경이 $1$ 에 못 미치는데, Teichmüller 대표원은 절댓값이 정확히 $1$ 이다.
 
 Dwork 의 **분해함수**가 이 벽을 넘는다.
 
@@ -85,22 +85,6 @@ $$
 
 오른쪽은 $\mathbb C_p$ 전체에서 유리형이다. 유리함수라는 결론은 Borel–Dwork 판정이 준다.
 
-```mermaid
-graph TD
-  X["X / F_q 의 점 개수 N_n"] --> S["지수합 Σ ψ(Tr f(x))<br/>덧셈 지표의 직교성"]
-  S --> TH["Dwork 분해함수<br/>θ(x)=exp(π(x−x^p)), π^{p−1}=−p"]
-  TH --> OC["수렴반경 > 1<br/>(초과수렴)"]
-  OC --> CC["완전연속 작용소 α<br/>p 진 Banach 공간"]
-  CC --> TR["대각합 공식<br/>S_n=(q^n−1)^m Tr(α^n)"]
-  TR --> FD["Fredholm 행렬식<br/>det(1−Tα) 는 p 진 정함수"]
-  FD --> MER["Z(T) 가 C_p 에서 유리형"]
-  INT["Z(T) ∈ Z[[T]]<br/>아르키메데스 수렴반경 > 0"] --> BD
-  MER --> BD["Borel–Dwork 판정"]
-  BD --> RAT["Z(T) ∈ Q(T)"]
-  FD -.Newton 다각형.-> NP["Frobenius 고윳값의 p 진 부치"]
-  RAT -.주지 못하는 것.-> RH["|α| = q^{i/2} : Deligne 의 몫"]
-```
-
 # 정의
 
 ## zeta 함수
@@ -118,10 +102,10 @@ $$
 
 $\pi\in\mathbb C_p$ 는 $\pi^{p-1}=-p$ 의 근이고, $\theta(x)=\exp(\pi(x-x^p))$ 다. 성질은 두 가지다.
 
-- $\theta$ 는 $|x|_p<p^{(p-1)/p^2}$ 에서 수렴한다. 이 반경은 $1$ 보다 크다.
+- $\theta$ 는 $|x|\_p<p^{(p-1)/p^2}$ 에서 수렴한다. 이 반경은 $1$ 보다 크다.
 - $\theta(1)=\zeta_p$ 는 원시 $p$ 제곱근이고, Teichmüller 대표원 $\hat a$ 에 대해 $\psi(a)=\theta(\hat a)$ 가 $\mathbb F_p$ 의 덧셈 지표가 된다.
 
-$q=p^s$ 인 $\mathbb F_q$ 로 올릴 때는 $\Theta(x)=\prod_{i=0}^{s-1}\theta(x^{p^i})$ 를 쓴다. 그러면 $\Theta(\hat a)=\psi(\mathrm{Tr}_{\mathbb F_q/\mathbb F_p}a)$ 다.
+$q=p^s$ 인 $\mathbb F_q$ 로 올릴 때는 $\Theta(x)=\prod_{i=0}^{s-1}\theta(x^{p^i})$ 를 쓴다. 그러면 $\Theta(\hat a)=\psi(\mathrm{Tr}\_{\mathbb F_q/\mathbb F_p}a)$ 다.
 
 ## 완전연속 작용소와 Fredholm 행렬식
 
@@ -161,7 +145,7 @@ $$
 
 ## Borel–Dwork 유리성 판정
 
-> $f(T)=\sum a_nT^n$ 이고 $a_n\in\mathbb Z$ 라 하자. $f$ 가 복소해석적으로 $|T|<r$ 에서 수렴하고 $p$ 진 해석적으로 $|T|_p<R$ 에서 유리형이며 $rR>1$ 이면 $f\in\mathbb Q(T)$ 다.
+> $f(T)=\sum a_nT^n$ 이고 $a_n\in\mathbb Z$ 라 하자. $f$ 가 복소해석적으로 $|T|<r$ 에서 수렴하고 $p$ 진 해석적으로 $|T|\_p<R$ 에서 유리형이며 $rR>1$ 이면 $f\in\mathbb Q(T)$ 다.
 
 Dwork 의 경우 $R=\infty$ 이므로 $r>0$ 이면 된다. 유리수는 곱공식 때문에 모든 자리에서 동시에 작을 수 없고, 정수 계수라는 조건이 두 절댓값을 묶어 계수를 유한한 점화식에 가둔다.
 
@@ -179,7 +163,7 @@ $$
 ## Kloosterman 합의 구조
 
 > **정리 (Weil).** $a,b\in\mathbb F_q^\times$ 이면 $\alpha\beta=q$ 이고 $|\alpha|=|\beta|=\sqrt q$ 인 $\alpha,\beta$ 가 있어
-> $$\mathrm{Kl}_n(a,b)=-(\alpha^n+\beta^n),\qquad\text{따라서}\qquad|\mathrm{Kl}_1(a,b)|\le2\sqrt q$$
+> $$\mathrm{Kl}\_n(a,b)=-(\alpha^n+\beta^n),\qquad\text{따라서}\qquad|\mathrm{Kl}\_1(a,b)|\le2\sqrt q$$
 
 동치로 $L$ 함수가 정확히 차수 $2$ 의 다항식이다.
 
@@ -190,15 +174,15 @@ $$
 여기서 두 절댓값이 서로 다른 일을 한다.
 
 - **아르키메데스.** $|\alpha|=|\beta|=\sqrt q$ 는 Weil 의 곡선 Riemann 가설이다. Dwork 의 방법으로는 나오지 않는다.
-- **$p$ 진.** $\mathrm{Kl}_1$ 은 $p$ 진 단위다. $\psi$ 의 값이 전부 $1\bmod\pi$ 이므로 $\mathrm{Kl}_1\equiv q-1\equiv-1\pmod\pi$ 다. 그러면 $1+\mathrm{Kl}_1T+qT^2$ 의 Newton 다각형이 $(0,0),(1,0),(2,1)$ 의 아래쪽 볼록포이고 기울기가 $0$ 과 $1$ 이다. 즉 $\mathrm{ord}_q\alpha=0$ (단위근), $\mathrm{ord}_q\beta=1$ 이다.
+- **$p$ 진.** $\mathrm{Kl}\_1$ 은 $p$ 진 단위다. $\psi$ 의 값이 전부 $1\bmod\pi$ 이므로 $\mathrm{Kl}\_1\equiv q-1\equiv-1\pmod\pi$ 다. 그러면 $1+\mathrm{Kl}\_1T+qT^2$ 의 Newton 다각형이 $(0,0),(1,0),(2,1)$ 의 아래쪽 볼록포이고 기울기가 $0$ 과 $1$ 이다. 즉 $\mathrm{ord}\_q\alpha=0$ (단위근), $\mathrm{ord}\_q\beta=1$ 이다.
 
 단위근의 존재는 Dwork 이론에서 나오고 Weil 의 상계는 다른 증명을 요구한다.
 
 ## Newton 다각형과 Frobenius 부치
 
-$p$ 진 부치는 유리성보다 미세한 정보를 준다. 다항식 $\sum c_iT^i$ 의 Newton 다각형은 점 $(i,\mathrm{ord}_p c_i)$ 의 아래쪽 볼록포이고, 기울기의 목록이 근의 $\mathrm{ord}_p$ 의 목록(부호 반대)이다. 타원곡선의 $P(T)=1-a_pT+pT^2$ 에서 바로 보인다.
+$p$ 진 부치는 유리성보다 미세한 정보를 준다. 다항식 $\sum c_iT^i$ 의 Newton 다각형은 점 $(i,\mathrm{ord}\_p c_i)$ 의 아래쪽 볼록포이고, 기울기의 목록이 근의 $\mathrm{ord}\_p$ 의 목록(부호 반대)이다. 타원곡선의 $P(T)=1-a_pT+pT^2$ 에서 바로 보인다.
 
-| 경우 | $\mathrm{ord}_p a_p$ | 기울기 | 이름 |
+| 경우 | $\mathrm{ord}\_p a_p$ | 기울기 | 이름 |
 |---|---|---|---|
 | $p\nmid a_p$ | $0$ | $0,\ 1$ | 보통(ordinary) |
 | $p\mid a_p$ | $\ge1$ | $\tfrac12,\ \tfrac12$ | 초특이(supersingular) |
@@ -213,215 +197,33 @@ $$
 \mathrm{ord}_p\thinspace g(\omega^{-a})=\frac{a}{p-1},\qquad 0\le a<p-1
 $$
 
-이고 Gross–Koblitz 정리는 값 자체를 $p$ 진 감마함수 $\Gamma_p$ 로 주며 그 증명이 Dwork 의 분해함수를 쓴다. Gauss 합은 한 점 위의 Dwork 이론이고 그 $p$ 진 부치가 Newton 다각형의 기울기다. 절댓값 $\sqrt p$ 와 $\mathrm{ord}_p=a/(p-1)$ 은 같은 수의 두 절댓값이다.
+이고 Gross–Koblitz 정리는 값 자체를 $p$ 진 감마함수 $\Gamma_p$ 로 주며 그 증명이 Dwork 의 분해함수를 쓴다. Gauss 합은 한 점 위의 Dwork 이론이고 그 $p$ 진 부치가 Newton 다각형의 기울기다. 절댓값 $\sqrt p$ 와 $\mathrm{ord}\_p=a/(p-1)$ 은 같은 수의 두 절댓값이다.
 
 # 활용
 
 ## 점 개수에서 zeta 함수 복원
 
-$E:y^2=x^3+x+1$ 을 $\mathbb F_5$ 위에 놓고 $n=1,\dots,6$ 인 $\mathbb F_{5^n}$ 의 유리점을 센 뒤, 그 수열로 $Z(T)$ 의 계수를 유리수로 만들고 분모를 읽는다.
-
-```python
-from fractions import Fraction
-from itertools import product
-
-# ---- F_{p^n} = F_p[x]/(f) : 계수 튜플, 낮은 차수 먼저 ----
-def pmul(a, b, f, p):                      # f 는 monic, deg f = n
-    n = len(f) - 1
-    r = [0] * (len(a) + len(b) - 1)
-    for i, ai in enumerate(a):
-        if ai:
-            for j, bj in enumerate(b):
-                r[i + j] = (r[i + j] + ai * bj) % p
-    for i in range(len(r) - 1, n - 1, -1):
-        c = r[i]
-        if c:
-            r[i] = 0
-            for j in range(n):
-                r[i - n + j] = (r[i - n + j] - c * f[j]) % p
-    return tuple(r[:n]) + (0,) * (n - len(r))
-
-def ppow(a, e, f, p):
-    r = (1,) + (0,) * (len(f) - 2)
-    while e:
-        if e & 1:
-            r = pmul(r, a, f, p)
-        a, e = pmul(a, a, f, p), e >> 1
-    return r
-
-def pgcd(a, b, p):                          # F_p[x] 의 gcd
-    a, b = list(a), list(b)
-    while a and a[-1] == 0: a.pop()
-    while b and b[-1] == 0: b.pop()
-    while b:
-        inv = pow(b[-1], p - 2, p)
-        while len(a) >= len(b):
-            c, off = a[-1] * inv % p, len(a) - len(b)
-            for j, bj in enumerate(b):
-                a[off + j] = (a[off + j] - c * bj) % p
-            while a and a[-1] == 0: a.pop()
-            if not a: break
-        a, b = b, a
-    return a
-
-def irreducible(f, p):                      # 차수 n/2 이하 인수가 없는가
-    n = len(f) - 1
-    if n == 1: return True
-    x = (0, 1) + (0,) * (n - 2)
-    for d in range(1, n // 2 + 1):
-        g = list(ppow(x, p ** d, f, p)); g[1] = (g[1] - 1) % p
-        if len(pgcd(g, f, p)) > 1: return False
-    return True
-
-def field(p, n):
-    f = (0, 1) if n == 1 else next(t + (1,) for t in product(range(p), repeat=n)
-                                  if irreducible(t + (1,), p))
-    return f, [tuple(reversed(c)) for c in product(range(p), repeat=n)]
-
-# ---- E : y^2 = x^3 + ax + b 의 F_{p^n} 유리점 개수 ----
-def count(p, n, a, b):
-    f, elems = field(p, n)
-    q, one, zero = p ** n, (1,) + (0,) * (n - 1), (0,) * n
-    A, B = (a % p,) + (0,) * (n - 1), (b % p,) + (0,) * (n - 1)
-    cnt = 1                                                    # 무한원점
-    for x in elems:
-        c = pmul(pmul(x, x, f, p), x, f, p)
-        c = tuple((u + v + w) % p for u, v, w in zip(c, pmul(A, x, f, p), B))
-        cnt += 1 if c == zero else (2 if ppow(c, (q - 1) // 2, f, p) == one else 0)
-    return cnt
-
-p, DEG = 5, 6
-N = [count(p, n, 1, 1) for n in range(1, DEG + 1)]
-print("N_n =", N)
-
-# ---- Z(T) = exp(Σ N_n T^n / n) 의 계수를 유리수로 정확히 ----
-Z = [Fraction(1)] + [Fraction(0)] * DEG
-for k in range(1, DEG + 1):
-    Z[k] = sum(Fraction(N[j - 1]) * Z[k - j] for j in range(1, k + 1)) / k
-print("Z_n =", [str(c) for c in Z])
-print("정수 계수 :", all(c.denominator == 1 for c in Z))
-
-# ---- 유리성 : (1-T)(1-pT) 를 곱하면 차수 2 에서 끊긴다 ----
-P = [Z[k] - 6 * Z[k - 1] + 5 * Z[k - 2] if k >= 2 else
-     (Z[1] - 6 * Z[0] if k == 1 else Z[0]) for k in range(DEG + 1)]
-print("Z(T)(1-T)(1-5T) =", [str(c) for c in P])
-print("차수 2 초과 계수가 모두 0 :", all(c == 0 for c in P[3:]))
-print(f"P(T) = 1 + ({int(P[1])})T + ({int(P[2])})T^2,  a_p = {-int(P[1])},"
-      f"  T^2 계수가 q=5 : {int(P[2]) == p}")
-
-# ---- Kronecker 의 Hankel 판정 ----
-def det(M):
-    M, d = [r[:] for r in M], Fraction(1)
-    for i in range(len(M)):
-        piv = next((r for r in range(i, len(M)) if M[r][i] != 0), None)
-        if piv is None: return Fraction(0)
-        if piv != i: M[i], M[piv], d = M[piv], M[i], -d
-        d *= M[i][i]
-        for r in range(i + 1, len(M)):
-            fac = M[r][i] / M[i][i]
-            for c in range(i, len(M)): M[r][c] -= fac * M[i][c]
-    return d
-
-for s in (0, 1):
-    print(f"  H_m^({s}) = det(Z_{{{s}+i+j}}) :",
-          "  ".join(f"m={m}:{det([[Z[s+i+j] for j in range(m+1)] for i in range(m+1)])}"
-                    for m in range(3)))
-
-# N_n = [9, 27, 108, 675, 3069, 15552]
-# Z_n = ['1', '9', '54', '279', '1404', '7029', '35154']
-# 정수 계수 : True
-# Z(T)(1-T)(1-5T) = ['1', '3', '5', '0', '0', '0', '0']
-# 차수 2 초과 계수가 모두 0 : True
-# P(T) = 1 + (3)T + (5)T^2,  a_p = -3,  T^2 계수가 q=5 : True
-#   H_m^(0) = det(Z_{0+i+j}) : m=0:1  m=1:-27  m=2:-2025
-#   H_m^(1) = det(Z_{1+i+j}) : m=0:9  m=1:-405  m=2:0
-```
-
-$Z(T)$ 의 계수는 곱 표현이 예언한 대로 정수이고, $(1-T)(1-5T)$ 를 곱하면 차수 $2$ 에서 끊긴다.
+$E:y^2=x^3+x+1$ 을 $\mathbb F_5$ 위에 놓으면 $\mathbb F_{5^n}$ 의 유리점 수가 $N_n=9,27,108,675,3069,15552$ 다. 이 수열에서 만든 $Z(T)$ 는 유리함수다.
 
 $$
 Z(T)=\frac{1+3T+5T^2}{(1-T)(1-5T)}
 $$
 
-분자의 최고차 계수가 $q=5$ 인 것이 함수방정식이고 $a_p=-3$ 은 $N_1=5+1-(-3)=9$ 와 맞는다. Hankel 행렬식은 $s\ge1$ , $m\ge2$ 에서 $0$ 이 되어 분모 차수 $2$ 를 준다. $s=0$ 에서 $H_2\ne0$ 인 것은 분자 차수가 분모 차수와 같아 생기는 자리밀림이며 판정은 큰 $s$ 에서의 소멸을 요구한다. 여섯 개의 $N_n$ 이 무한히 많은 $N_n$ 을 결정한다.
+분자의 최고차 계수가 $q=5$ 인 것이 함수방정식이고, $a_p=-3$ 은 $N_1=5+1-(-3)=9$ 와 맞는다. Borel–Dwork 판정의 Hankel 행렬식 $H_m^{(s)}=\det(Z_{s+i+j})$ 는 $s\ge1$ 과 $m\ge2$ 에서 $0$ 이 되어 분모 차수 $2$ 를 준다. $s=0$ 에서 $H_2\ne0$ 인 것은 분자 차수가 분모 차수와 같아 생기는 자리밀림이고, 판정은 큰 $s$ 에서의 소멸을 요구한다. 유한개의 $N_n$ 이 무한히 많은 $N_n$ 을 결정한다.
 
 ## Kloosterman 합의 두 절댓값
 
-$\mathrm{Kl}_1$ 을 계산한 뒤 $\alpha+\beta=-\mathrm{Kl}_1$ 과 $\alpha\beta=p$ 로 $\alpha,\beta$ 를 정하면 확대체의 값이 $-(\alpha^n+\beta^n)$ 으로 나온다.
+$\alpha+\beta=-\mathrm{Kl}\_1$ 과 $\alpha\beta=p$ 로 $\alpha,\beta$ 를 정하면 확대체의 값이 $\mathrm{Kl}\_n=-(\alpha^n+\beta^n)$ 이다.
 
-```python
-from cmath import exp as cexp, pi
-# 앞 블록의 field / pmul / ppow 를 그대로 쓴다
+$n=1$ 하나가 모든 확대체의 값을 결정하며, 이것이 $L$ 함수가 차수 $2$ 라는 유리성의 구체적 내용이다. $|\alpha|=|\beta|=\sqrt p$ 는 판별식 $\mathrm{Kl}\_1^2-4p<0$ 에서 나오고 Weil 한계와 같은 진술이다. $p=17$ 에서 최댓값 $7.96$ 이 한계 $8.246$ 에 가까우므로 이 상계는 최선에 가깝다.
 
-def trace(a, f, p, n):                      # Tr_{F_{p^n}/F_p}
-    t, cur = (0,) * n, a
-    for _ in range(n):
-        t = tuple((u + v) % p for u, v in zip(t, cur))
-        cur = ppow(cur, p, f, p)
-    assert all(c == 0 for c in t[1:])
-    return t[0]
-
-def K(p, n, a, b):                          # Σ_{x∈F_{p^n}^*} ψ(Tr(ax + b/x))
-    f, elems = field(p, n)
-    q, zero = p ** n, (0,) * n
-    A, B = (a % p,) + (0,) * (n - 1), (b % p,) + (0,) * (n - 1)
-    s = 0j
-    for x in elems:
-        if x == zero: continue
-        t = tuple((u + v) % p for u, v in
-                  zip(pmul(A, x, f, p), pmul(B, ppow(x, q - 2, f, p), f, p)))
-        s += cexp(2j * pi * trace(t, f, p, n) / p)
-    return s
-
-print("Weil 한계  max_{a,b≠0} |K_1(a,b)| <= 2√p :")
-for p in [5, 7, 11, 13, 17, 19, 23]:
-    vals = [abs(K(p, 1, a, b)) for a in range(1, p) for b in range(1, p)]
-    print(f"  p={p:3d}  max|K| = {max(vals):8.5f}   2√p = {2*p**0.5:8.5f}"
-          f"   {max(vals) <= 2*p**0.5 + 1e-9}")
-
-print("\n확대체 : K_n = -(α^n + β^n),  α+β = -K_1,  αβ = p")
-for (p, a, b, NN) in [(5, 1, 1, 4), (7, 1, 1, 3), (11, 2, 3, 3)]:
-    K1 = K(p, 1, a, b).real
-    d = complex(K1 * K1 - 4 * p) ** 0.5
-    al, be = (-K1 + d) / 2, (-K1 - d) / 2
-    print(f"  p={p:2d} (a,b)=({a},{b})  K_1={K1:+9.5f}   "
-          f"|α|=|β|={abs(al):.5f}   √p={p**0.5:.5f}")
-    for n in range(2, NN + 1):
-        brute, pred = K(p, n, a, b), -(al ** n + be ** n)
-        print(f"     n={n}  직접={brute.real:+13.5f}   -(α^n+β^n)={pred.real:+13.5f}"
-              f"   {abs(brute - pred) < 1e-6}")
-
-# Weil 한계  max_{a,b≠0} |K_1(a,b)| <= 2√p :
-#   p=  5  max|K| =  3.23607   2√p =  4.47214   True
-#   p=  7  max|K| =  4.49396   2√p =  5.29150   True
-#   p= 11  max|K| =  5.71695   2√p =  6.63325   True
-#   p= 13  max|K| =  6.29623   2√p =  7.21110   True
-#   p= 17  max|K| =  7.96035   2√p =  8.24621   True
-#   p= 19  max|K| =  7.60973   2√p =  8.71780   True
-#   p= 23  max|K| =  7.96069   2√p =  9.59166   True
-#
-# 확대체 : K_n = -(α^n + β^n),  α+β = -K_1,  αβ = p
-#   p= 5 (a,b)=(1,1)  K_1= +0.38197   |α|=|β|=2.23607   √p=2.23607
-#      n=2  직접=     +9.85410   -(α^n+β^n)=     +9.85410   True
-#      n=3  직접=     -5.67376   -(α^n+β^n)=     -5.67376   True
-#      n=4  직접=    -47.10333   -(α^n+β^n)=    -47.10333   True
-#   p= 7 (a,b)=(1,1)  K_1= +2.04892   |α|=|β|=2.64575   √p=2.64575
-#      n=2  직접=     +9.80194   -(α^n+β^n)=     +9.80194   True
-#      n=3  직접=    -34.42578   -(α^n+β^n)=    -34.42578   True
-#   p=11 (a,b)=(2,3)  K_1= -4.45741   |α|=|β|=3.31662   √p=3.31662
-#      n=2  직접=     +2.13145   -(α^n+β^n)=     +2.13145   True
-#      n=3  직접=    +58.53233   -(α^n+β^n)=    +58.53233   True
-```
-
-$n=1$ 하나가 모든 확대체의 값을 결정하며, 이것이 $L$ 함수가 차수 $2$ 라는 유리성의 구체적 내용이다. $|\alpha|=|\beta|=\sqrt p$ 는 판별식 $\mathrm{Kl}_1^2-4p<0$ 에서 나오고 Weil 한계와 같은 진술이다. $p=17$ 에서 최댓값 $7.96$ 이 한계 $8.246$ 에 가까우므로 이 상계는 최선에 가깝다.
-
-## 이어지는 줄기
+## Dwork 이론이 쓰이는 자리
 
 - **점 세기 알고리즘.** Dwork 의 방법을 Monsky–Washnitzer 코호몰로지로 다듬은 것이 Kedlaya 알고리즘(2001)이다. 초타원곡선의 zeta 함수를 $p$ 진 정밀도로 계산하며 비용이 $p$ 에 선형이고 확대차수에 다항식이라 작은 $p$ 와 큰 $n$ 을 맡고, 큰 $p$ 를 맡는 Schoof–Elkies–Atkin 과 상보적이다. Lauder–Wan 이 일반 다양체로 확장했다.
 - **암호.** 위 알고리즘이 곡선 암호의 군 위수를 정하는 실무 도구다. [타원곡선](elliptic-curves.md) 위수를 모르면 안전성을 논할 수 없다.
 - **해석적 정수론.** Kloosterman 합은 사원 이차형식의 표현수를 원법으로 다루면서 나왔다. Weil 한계 $2\sqrt q$ 가 원법의 오차항을 결정하고 Kuznetsov 공식을 거쳐 모듈러 형식의 해석적 이론으로 들어간다.
 - **Newton 다각형의 기하.** 지수합의 $p$ 진 부치를 다면체로 예측하는 Adolphson–Sperber 이론과 Katz 의 Newton 다각형 도약 문제가 이 줄기에 있다.
-- **남은 항목.** Grothendieck 의 에탈 코호몰로지가 유리성과 함수방정식을 다시 증명했고 1974 년 Deligne 이 Riemann 가설을 닫았다.
+- **에탈 코호몰로지.** Grothendieck 의 에탈 코호몰로지가 유리성과 함수방정식을 다시 증명했고 1974 년 Deligne 이 Riemann 가설을 닫았다.
 
 [^1]: Dwork 의 원논문은 B. Dwork, *On the rationality of the zeta function of an algebraic variety*, Amer. J. Math. **82** (1960), 631–648. 교과서 서술은 N. Koblitz, *p-adic Numbers, p-adic Analysis, and Zeta-Functions* (2판, 1984) 5장이 가장 접근하기 쉽고, 완전연속 작용소와 Fredholm 행렬식은 J.-P. Serre, *Endomorphismes complètement continus des espaces de Banach p-adiques*, Publ. IHÉS **12** (1962). 지수합의 Newton 다각형은 A. Adolphson, S. Sperber, *Exponential sums and Newton polyhedra*, Ann. of Math. **130** (1989). Kedlaya 알고리즘은 K. Kedlaya, *Counting points on hyperelliptic curves using Monsky–Washnitzer cohomology*, J. Ramanujan Math. Soc. **16** (2001).
 
