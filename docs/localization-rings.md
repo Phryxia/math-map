@@ -180,46 +180,18 @@ $k$ 가 [체](fields.md)일 때 [다항식환](polynomial-rings.md) $k[x]$ 의 �
 
 여러 변수로 넘어가면 $k[x_1, ..., x_n]$ 의 극대 아이디얼에서의 국소화가 아핀 대수다양체의 점 근방을 기술한다. $\mathrm{Spec}R$ 의 기본 열린 집합 $D(f)$ 에 $R[1/f]$ 를, 점 $p$ 의 줄기(stalk)에 $R_p$ 를 붙이는 것이 스킴의 구조층 정의다.
 
-## 계산 예
+## $\mathbb Z_{(5)}$ 의 부치
 
-$\mathbb Z_{(p)}$ 의 원소를 기약 분수로 표현하고, 가역 판정과 valuation을 계산하는 간단한 구현이다.
+$p=5$ 에서 유리수의 부치 $v_5$ 와 $\mathbb Z_{(5)}$ 에서의 가역 여부는 기약분수의 분모와 분자를 보면 정해진다.
 
-```python
-from math import gcd
-from fractions import Fraction
+| $q$ | $v_5(q)$ | $\mathbb Z_{(5)}$ 의 원소 | 가역 |
+|---|---|---|---|
+| $3/4$ | $0$ | O | O |
+| $10/3$ | $1$ | O | |
+| $1/5$ | $-1$ | | |
+| $7/25$ | $-2$ | | |
 
-def in_local_ring(q: Fraction, p: int) -> bool:
-    """q 가 Z_(p) 에 속하는가 = 기약분모가 p 로 나누어떨어지지 않는가."""
-    return q.denominator % p != 0
-
-def valuation(q: Fraction, p: int) -> float:
-    """p진 valuation v_p(q). v_p(0) = 무한대."""
-    if q == 0:
-        return float("inf")
-    n, d, v = q.numerator, q.denominator, 0
-    while n % p == 0:
-        n //= p
-        v += 1
-    while d % p == 0:
-        d //= p
-        v -= 1
-    return v
-
-def is_unit(q: Fraction, p: int) -> bool:
-    """Z_(p) 의 가역원 = valuation 이 0 인 원소."""
-    return in_local_ring(q, p) and valuation(q, p) == 0
-
-p = 5
-samples = [Fraction(3, 4), Fraction(10, 3), Fraction(1, 5), Fraction(7, 25)]
-for q in samples:
-    print(q, in_local_ring(q, p), valuation(q, p), is_unit(q, p))
-# 3/4  True  0   True     (가역)
-# 10/3 True  1   False    (극대 아이디얼 5Z_(5) 의 원소)
-# 1/5  False -1  False    (Z_(5) 밖)
-# 7/25 False -2  False
-```
-
-부치가 0 이상인 유리수 전체가 $\mathbb Z_{(p)}$ 이고, 양수인 것들이 극대 아이디얼이라는 점을 확인할 수 있다. 일반 환에서의 국소화도 같은 방식으로 "분모에 무엇을 허용하는가"를 술어 하나로 구현한다.
+부치가 $0$ 이상인 유리수 전체가 $\mathbb Z_{(p)}$ 이고, 부치가 양수인 것들이 극대 아이디얼 $p\mathbb Z_{(p)}$ 를 이룬다. 일반 환의 국소화도 분모에 무엇을 허용하는지를 정하는 같은 구성이다.
 
 ## 다른 분야와의 연결
 
