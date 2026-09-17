@@ -23,6 +23,7 @@ graph TD
   CM --> RS["Riemann 곡면과 균일화 정리"]
   RS --> MC["모듈러 곡선"]
   RS --> TS["Teichmüller 공간"]
+  RT --> EF["타원함수"]
   RT --> GF["감마 함수와 Stirling 근사"]
   AC --> GF
   RT --> PNT["소수 정리와 Riemann zeta 함수"]
@@ -44,6 +45,7 @@ graph TD
 
 - [멱급수](power-series.md): 수렴반지름, 항별 미분, 해석함수
 - [Laurent 급수와 유수 정리](residue-theorem.md): 고립 특이점의 분류, 유수 계산, 실적분으로의 응용
+- [타원함수](elliptic-functions.md): 이중주기 유리형함수, Weierstrass 페 함수와 그 미분방정식, 복소 원환면
 
 ## 확장과 사상
 
