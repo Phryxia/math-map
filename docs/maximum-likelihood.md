@@ -182,6 +182,7 @@ def newton_logistic(xs, ys, iters=20):
 
 - [확률변수와 기댓값](random-variables.md)
 - [미분](derivative.md)
+- [통계 개관](statistics-overview.md)
 
 ## 더 알아보기
 

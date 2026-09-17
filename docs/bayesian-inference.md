@@ -224,6 +224,7 @@ print("사후예측 P(다음=앞면) %.4f" % post.mean())
 
 - [Bayes 정리](bayes.md)
 - [확률변수와 기댓값](random-variables.md)
+- [통계 개관](statistics-overview.md)
 
 ## 더 알아보기
 

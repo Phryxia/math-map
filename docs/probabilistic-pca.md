@@ -165,6 +165,7 @@ $d$ 가 수만이고 $q$ 가 수십이면 $d\times d$ 공분산행렬을 만들 
 ## 선수지식
 
 - [주성분 분석](principal-component-analysis.md)
+- [통계 개관](statistics-overview.md)
 
 ## 더 알아보기
 

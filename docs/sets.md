@@ -129,6 +129,7 @@ $R=\lbrace x:x\notin x\rbrace$ 를 집합으로 인정하면 $R\in R\iff R\notin
 - [복소해석 개관](complex-analysis-overview.md)
 - [측도론 개관](measure-theory-overview.md)
 - [확률론 개관](probability-overview.md)
+- [통계 개관](statistics-overview.md)
 - [미분기하 개관](differential-geometry-overview.md)
 - [그래프 이론 개관](graph-theory-overview.md)
 - [최적화 개관](optimization-overview.md)
