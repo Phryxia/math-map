@@ -190,4 +190,4 @@ def newton_logistic(xs, ys, iters=20):
 - [선형회귀와 최소제곱법](linear-regression.md)
 - [지수족과 충분통계량](exponential-families.md)
 
-#statistics
+#statistics #probability #optimization

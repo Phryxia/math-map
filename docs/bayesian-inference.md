@@ -230,4 +230,4 @@ print("사후예측 P(다음=앞면) %.4f" % post.mean())
 
 아직 연결한 문서가 없다.
 
-#statistics
+#statistics #probability #machine_learning
