@@ -25,6 +25,8 @@ graph TD
   R --> M["가군"] --> TP["텐서곱"]
   M --> FG["PID 위의 유한생성 가군"]
   UFD --> FG
+  M --> NK["Nakayama 보조정리"]
+  LZ --> NK
   LA["Lie 대수"] --> RS["근계와 Weyl 군"] --> WC["Weyl 지표 공식"] --> BWB["Borel–Weil–Bott"]
   LA --> LG["Lie 군"] --> PW["Peter–Weyl 정리"] --> WC
   LA --> VOA["정점작용소대수"] --> ZA["Zhu 대수"]
