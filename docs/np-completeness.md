@@ -125,7 +125,7 @@ $G$ 의 정점 집합 $S$ 가 clique인 것과, 여그래프 $G'$ (같은 정점
 
 이 세 문제는 사실상 같은 문제의 세 표현이며, 근사 가능성은 서로 크게 다르다. VERTEX-COVER는 2-근사가 쉽지만 CLIQUE는 어떤 상수 비율로도 근사하기 어렵다.
 
-## 의미하는 것과 의미하지 않는 것
+## NP-완전성의 범위
 
 의미하는 것.
 
@@ -142,51 +142,6 @@ $G$ 의 정점 집합 $S$ 가 clique인 것과, 여그래프 $G'$ (같은 정점
 - **결정불가능성과 다르다.** NP-완전 문제는 모두 결정가능하며 지수 시간에 풀린다. [Rice 정리](rice-theorem.md)가 다루는 종류의 절대적 불가능성이 아니다.
 
 # 활용
-
-## 환원을 코드로 확인하기
-
-3SAT에서 CLIQUE로의 환원을 직접 구성하고, 작은 인스턴스에서 양쪽 답이 일치하는지 확인한다.
-
-```python
-from itertools import combinations, product
-
-def reduce_3sat_to_clique(clauses):
-    """clauses: [(리터럴, 리터럴, 리터럴)], 리터럴은 0 이 아닌 정수 (음수는 부정).
-    반환: (정점 리스트, 간선 집합, 목표 clique 크기)"""
-    nodes = [(i, lit) for i, c in enumerate(clauses) for lit in c]
-    edges = {
-        (u, v)
-        for u, v in combinations(nodes, 2)
-        if u[0] != v[0] and u[1] != -v[1]
-    }
-    return nodes, edges, len(clauses)
-
-def has_clique(nodes, edges, k):
-    for sub in combinations(nodes, k):
-        if all((u, v) in edges or (v, u) in edges for u, v in combinations(sub, 2)):
-            return True
-    return False
-
-def brute_force_sat(clauses):
-    variables = sorted({abs(l) for c in clauses for l in c})
-    for bits in product([False, True], repeat=len(variables)):
-        assign = dict(zip(variables, bits))
-        if all(any(assign[abs(l)] == (l > 0) for l in c) for c in clauses):
-            return True
-    return False
-
-tests = [
-    [(1, 2, -3), (-1, 2, 3), (1, -2, 3)],
-    [(1, 1, 1), (-1, -1, -1)],                 # 충족 불가능
-    [(1, 2, 3), (-1, -2, -3), (1, -2, 3)],
-]
-for clauses in tests:
-    nodes, edges, k = reduce_3sat_to_clique(clauses)
-    print(brute_force_sat(clauses), has_clique(nodes, edges, k))
-# True True / False False / True True
-```
-
-환원이 옳다면 두 열의 값이 항상 같아야 한다. 물론 두 알고리즘 다 지수 시간이다. 환원은 난이도를 옮길 뿐 없애지 않는다.
 
 ## 실무에서의 쓰임
 
