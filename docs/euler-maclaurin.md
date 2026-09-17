@@ -60,18 +60,6 @@ $$
 
 [멱급수](power-series.md)는 전부 더해야 값이 되고 점근급수는 끊어야 값이 된다. 점근급수는 수렴하는 급수가 없는 자리에서 정확도를 얻는 대신 정확도의 상한을 갖는다.
 
-```mermaid
-flowchart TD
-  EM["Euler-Maclaurin<br/>합 - 적분 = sum B_2k/(2k)! f^(2k-1)"]
-  EM --> ASY["점근급수<br/>발산하지만 유용"]
-  EM --> ZETA["zeta(s), log Gamma(x)<br/>고정밀 계산"]
-  EM --> TRAP["사다리꼴 오차의 차수 전개"]
-  TRAP --> PER["주기함수: 모든 항이 소멸<br/>-> 지수적 수렴"]
-  ASY --> OPT["최적 절단 K ~ pi N<br/>오차 ~ e^{-2 pi N}"]
-  ZETA --> STIR["Stirling 급수"]
-  ZETA --> EUL["Euler 상수 gamma"]
-```
-
 # 정의
 
 ## 주기 Bernoulli 함수
@@ -157,18 +145,6 @@ $$
 
 곧 오차가 모든 차수보다 빨리 감소한다. $f$ 가 해석적이면 감소는 지수적이다. 일반적으로 2 차 정확도인 사다리꼴 규칙이 주기함수 위에서는 고차 공식보다 정확하며, [이산 Fourier 변환](fourier.md) 계산과 격자합에서 표준으로 쓰인다.
 
-```python
-# 주기 해석함수에서 사다리꼴은 지수적으로 수렴한다
-from math import exp, cos, pi, factorial
-f = lambda t: exp(cos(t))
-trap = lambda n: sum(f(2 * pi * j / n) for j in range(n)) * (2 * pi / n)
-true = 2 * pi * sum(0.25 ** k / factorial(k) ** 2 for k in range(30))   # 2 pi I_0(1)
-
-for n in (4, 6, 8, 10, 12, 16):
-    print(n, "%.1e" % abs(trap(n) - true))
-# 4 3.4e-02 / 6 2.8e-04 / 8 1.3e-06 / 10 3.5e-09 / 12 6.5e-12 / 16 0.0e+00
-```
-
 # 활용
 
 ## $\zeta(s)$ 의 고정밀 계산
@@ -201,16 +177,11 @@ def zeta(s, N=10, K=8):
         t += float(B[2 * k]) / factorial(2 * k) * poch * N ** (-s - 2 * k + 1)
     return t
 
-print(zeta(2.0) - pi * pi / 6)      # 0.0        <- 배정밀도 한계까지 일치
-print(zeta(0.5))                    # -1.4603545088095877   (임계선 왼쪽)
-print(zeta(-1.0))                   # -0.0833333333333333   = -1/12
-
-for K in range(1, 20):              # N=4 고정, K 를 늘리면 최소를 찍고 되돌아선다
-    print(K, "%.1e" % abs(zeta(2.0, N=4, K=K) - pi * pi / 6))
-# 1 3.1e-05 ... 11 3.9e-11  12 3.8e-11  13 4.2e-11 ... 19 1.1e-09
+zeta(0.5)     # -1.4603545088095877   임계선 왼쪽
+zeta(-1.0)    # -0.0833333333333333 = -1/12
 ```
 
-오차는 $K=12$ 근처에서 최소이고, 이론값 $k^{\ast}\approx\pi N=12.6$ 과 최소 오차 $e^{-8\pi}$ 규모가 이에 맞는다.
+$N$ 을 고정하고 $K$ 를 늘리면 오차가 $K\approx\pi N$ 에서 최소를 찍고 되돌아선다. $N=4$ 이면 최적 절단이 $k^\ast\approx12.6$ 이고 그 자리의 오차가 $e^{-8\pi}$ 규모다. 점근급수의 정확도 상한이 계산에서 이렇게 나타난다.
 
 ## Stirling 급수
 
