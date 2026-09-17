@@ -99,44 +99,7 @@ $$
 
 # 성질
 
-## 질량 공식에 의한 검산
-
-```python
-from fractions import Fraction as F
-from math import factorial
-
-def bernoulli(n):
-    """Akiyama-Tanigawa 알고리즘으로 B_n"""
-    A = [F(0)] * (n + 1)
-    for m in range(n + 1):
-        A[m] = F(1, m + 1)
-        for j in range(m, 0, -1):
-            A[j - 1] = j * (A[j - 1] - A[j])
-    return A[0]
-
-def mass(n):
-    """Minkowski-Siegel 질량 공식"""
-    k = n // 2
-    m = abs(bernoulli(k)) / n
-    for j in range(1, k):
-        m *= abs(bernoulli(2 * j)) / (4 * j)
-    return m
-
-# n=8: 격자는 E_8 하나. Aut 는 Weyl 군 W(E_8), 위수 696729600
-print("n=8 :", mass(8), "  1/|W(E8)| =", F(1, 696729600))
-
-# n=16: E_8 + E_8 과 D_16^+ 둘. 자기동형군 위수를 직접 넣는다
-aut16 = [696729600**2 * 2,          # 두 성분의 Weyl 군과 성분 교환
-         2**15 * factorial(16)]     # D_16^+ 의 자기동형군
-print("n=16:", mass(16), "  직접 합 =", sum(F(1, a) for a in aut16))
-
-print("n=24:", float(mass(24)))
-print("n=32:", float(mass(32)))
-# n=8 : 1/696729600   1/|W(E8)| = 1/696729600
-# n=16: 691/277667181515243520000   직접 합 = 691/277667181515243520000
-# n=24: 7.9367804696677e-15
-# n=32: 40309232.93560208
-```
+## 차원별 질량
 
 $n=8$ 에서 질량이 $1/|W(E_8)|$ 이다. 격자가 하나뿐이고 자기동형군이 $E_8$ 의 Weyl 군이라는 사실이 Bernoulli 수의 곱에서 재현된다. $n=16$ 도 두 격자의 자기동형군 위수만으로 좌변이 만들어진다.
 
@@ -165,7 +128,7 @@ $h=30$ 에서 $E_8^3$ 와 $D_{16}E_8$ 이 함께 나오듯 $h$ 가 같은 근계
 Leech 격자는 목록에서 근이 없는 유일한 원소다.
 
 - 최소 노름이 4 이고 24 차원 격자 채움의 밀도가 최대다.
-- 근이 없으므로 Weyl 군이 자명하고 자기동형군 전체가 순열 부분이다. 그것이 Conway 군 $\mathrm{Co}_0$ 이고 위수가 $8315553613086720000$ 이다. 중심 $\lbrace\pm1\rbrace$ 로 나눈 $\mathrm{Co}_1$ 이 산재 단순군이며 벡터의 안정자에서 $\mathrm{Co}_2,\mathrm{Co}_3$ 와 여러 산재군이 나온다.
+- 근이 없으므로 Weyl 군이 자명하고 자기동형군 전체가 순열 부분이다. 그것이 Conway 군 $\mathrm{Co}\_0$ 이고 위수가 $8315553613086720000$ 이다. 중심 $\lbrace\pm1\rbrace$ 로 나눈 $\mathrm{Co}\_1$ 이 산재 단순군이며 벡터의 안정자에서 $\mathrm{Co}\_2,\mathrm{Co}\_3$ 와 여러 산재군이 나온다.
 - [정점작용소대수](vertex-operator-algebras.md) $V^\natural$ 의 구성이 Leech 격자에서 출발하는 것도 근이 없기 때문이다. 근이 있으면 무게 1 부분공간에 Lie 대수가 생기는데 $V^\natural$ 은 그 부분이 비어야 괴물군이 작용한다.
 
 목록이 24 개뿐이므로 근이 없다는 조건이 사실상 유일성 조건이다.
@@ -174,7 +137,7 @@ Leech 격자는 목록에서 근이 없는 유일한 원소다.
 
 짝수 조건을 빼면 목록이 달라진다. 홀 유니모듈러 격자는 $\mathbb Z^n$ 이 항상 있어 모든 차원에 존재하고 24 차원에는 156 개가 있다. 그중 $\mathbb Z^{24}$ 를 뺀 것들도 근계로 색인되며 짝수 경우와 평행한 구조를 갖는다.
 
-부정부호 짝수 유니모듈러 격자는 $p,q>0$ 이고 $p\equiv q\bmod 8$ 인 각 부호수 $(p,q)$ 마다 정확히 하나다. 특히 $\mathrm{II}_{25,1}$ 의 Weyl 군의 기본영역 벽이 Leech 격자의 점들로 색인된다(Conway 의 정리). 24 차원의 유한한 복잡성이 25+1 차원의 무한 대칭으로 펼쳐지며, Borcherds 가 괴물 Lie 대수를 만들 때 쓴 기하가 이것이다.
+부정부호 짝수 유니모듈러 격자는 $p,q>0$ 이고 $p\equiv q\bmod 8$ 인 각 부호수 $(p,q)$ 마다 정확히 하나다. 특히 $\mathrm{II}\_{25,1}$ 의 Weyl 군의 기본영역 벽이 Leech 격자의 점들로 색인된다(Conway 의 정리). 24 차원의 유한한 복잡성이 25+1 차원의 무한 대칭으로 펼쳐지며, Borcherds 가 괴물 Lie 대수를 만들 때 쓴 기하가 이것이다.
 
 # 활용
 
@@ -198,7 +161,7 @@ $C$ 가 자기쌍대이면 $L_C$ 가 유니모듈러이고 모든 부호어 무�
 
 24 차원 쪽에서는 Niemeier 격자들이 $c=24$ 정점작용소대수의 구성 재료가 되며 그 71 개 목록(Schellekens 목록)의 상당 부분을 이 격자들이 준다.
 
-[^1]: J. Milnor, *Eigenvalues of the Laplace operator on certain manifolds*, PNAS 51 (1964). 분류 원논문은 H.-V. Niemeier, *Definite quadratische Formen der Dimension 24 und Diskriminante 1*, J. Number Theory 5 (1973). 근계 조건의 간결한 증명은 B. Venkov 의 논증으로, J. Conway–N. Sloane, *Sphere Packings, Lattices and Groups* (3판, 1999) 18 장에 실려 있다. 질량 공식과 24 개 격자의 자기동형군 위수 표는 같은 책 16 장. $\mathrm{II}_{25,1}$ 과 Leech 격자의 관계는 같은 책 26–27 장.
+[^1]: J. Milnor, *Eigenvalues of the Laplace operator on certain manifolds*, PNAS 51 (1964). 분류 원논문은 H.-V. Niemeier, *Definite quadratische Formen der Dimension 24 und Diskriminante 1*, J. Number Theory 5 (1973). 근계 조건의 간결한 증명은 B. Venkov 의 논증으로, J. Conway–N. Sloane, *Sphere Packings, Lattices and Groups* (3판, 1999) 18 장에 실려 있다. 질량 공식과 24 개 격자의 자기동형군 위수 표는 같은 책 16 장. $\mathrm{II}\_{25,1}$ 과 Leech 격자의 관계는 같은 책 26–27 장.
 
 # 연관 문서
 
