@@ -180,4 +180,4 @@ print(D / factorial(n), prod([1]))   # 0.3678... ≈ 1/e
 
 아직 연결한 문서가 없다.
 
-#combinatorics
+#combinatorics #probability #number_theory

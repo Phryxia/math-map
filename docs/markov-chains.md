@@ -38,7 +38,7 @@ P=(p_{ij}),\qquad p_{ij}=\Pr[X_{n+1}=j\mid X_n=i],\qquad
 p_{ij}\ge 0,\ \ \sum_{j\in S}p_{ij}=1
 $$
 
-각 행의 합이 1인 이런 행렬을 stochastic matrix라 한다. 분포는 행벡터로 두어 오른쪽에서 곱한다.
+각 행의 합이 1 인 이런 행렬을 **확률행렬**이라 한다. 분포는 행벡터로 두어 오른쪽에서 곱한다.
 
 $$
 \mu_n=\mu_0 P^{\thinspace n},\qquad (\mu_n)_j=\Pr[X_n=j]
@@ -83,9 +83,9 @@ $$
 \pi_i=\frac{1}{\mathbb{E}_i[T_i]}
 $$
 
-유한 상태에서 기약이면 양재귀적이므로 기약성만으로 충분하다. 존재는 Perron–Frobenius 정리로도 얻는다. stochastic matrix 는 전부 1 인 열벡터를 고유값 1 의 오른쪽 고유벡터로 가지므로 1 이 스펙트럼에 있고 모든 고유값의 절댓값이 1 이하다. 기약이고 성분이 음이 아니면 고유값 1 의 고유공간이 1 차원이고 대응하는 왼쪽 고유벡터를 양의 성분으로 잡을 수 있다. 자세한 구조는 [고유값](eigenvalues.md)에서 다룬다.
+유한 상태에서 기약이면 양재귀적이므로 기약성만으로 충분하다. 존재는 Perron–Frobenius 정리로도 얻는다. 확률행렬은 전부 1 인 열벡터를 고윳값 1 의 오른쪽 고유벡터로 가지므로 1 이 스펙트럼에 있고 모든 고윳값의 절댓값이 1 이하다. 기약이고 성분이 음이 아니면 고윳값 1 의 고유공간이 1 차원이고 대응하는 왼쪽 고유벡터를 양의 성분으로 잡을 수 있다. 자세한 구조는 [고유값](eigenvalues.md)에서 다룬다.
 
-무한 상태에서는 재귀성만으로 부족하다. 정수 위의 단순 대칭 random walk 는 기약이고 재귀적이지만 영재귀적(null recurrent)이라 정상분포가 없다. 균일 측도는 불변이되 유한 측도가 아니다.
+무한 상태에서는 재귀성만으로 부족하다. 정수 위의 단순 대칭 무작위 걷기는 기약이고 재귀적이지만 영재귀적(null recurrent)이라 정상분포가 없다. 균일 측도는 불변이되 유한 측도가 아니다.
 
 ## 수렴 정리
 
@@ -95,30 +95,30 @@ $$
 \lim_{n\to\infty}p_{ij}^{(n)}=\pi_j\qquad(\forall i,j\in S)
 $$
 
-유한 상태에서는 total variation 거리로 기하급수적 수렴이 성립하고, 속도는 1 다음으로 큰 고유값의 절댓값(second largest eigenvalue modulus) lambda_2가 지배한다.
+유한 상태에서는 총변동 거리로 기하급수적 수렴이 성립하고, 속도는 1 다음으로 큰 고윳값의 절댓값 $\vert\lambda\_2\vert$ 가 정한다.
 
 $$
-\big\Vert\mu_0P^{\thinspace n}-\pi\big\Vert_{\mathrm{TV}}\ \le\ C\thinspace|\lambda_2|^{\thinspace n}
+\big\Vert\mu_0P^{\thinspace n}-\pi\big\Vert_{\mathrm{TV}}\ \le\ C\thinspace\vert\lambda_2\vert^{\thinspace n}
 $$
 
-비주기성을 빼면 결론이 깨진다. 두 상태를 확정적으로 왕복하는 연쇄에서는 P 의 제곱이 항등행렬이라 n 단계 전이확률이 0 과 1 사이를 진동한다. 그때에도 정상분포는 각 성분 1/2 로 유일하게 존재하고 시간 평균은 수렴한다(ergodic 정리). 기약이고 양재귀인 연쇄에서 f 가 pi 에 대해 적분 가능하면 확률 1 로 다음이 성립한다.
+비주기성을 빼면 결론이 깨진다. 두 상태를 확정적으로 왕복하는 연쇄에서는 $P^2$ 이 항등행렬이라 $n$ 단계 전이확률이 0 과 1 사이를 진동한다. 그때에도 정상분포는 각 성분 $1/2$ 로 유일하게 존재하고 시간 평균은 수렴한다(에르고딕 정리). 기약이고 양재귀인 연쇄에서 $f$ 가 $\pi$ 에 대해 적분 가능하면 확률 1 로 다음이 성립한다.
 
 $$
 \frac{1}{n}\sum_{k=0}^{n-1}f(X_k)\ \longrightarrow\ \sum_{j\in S}\pi_j\thinspace f(j)
 $$
 
-## 가역성과 detailed balance
+## 가역성과 상세균형
 
-다음 조건을 만족하는 pi는 자동으로 정상분포다.
+다음 조건을 만족하는 $\pi$ 는 정상분포다.
 
 $$
 \pi_i\thinspace p_{ij}=\pi_j\thinspace p_{ji}\qquad(\forall i,j)
 $$
 
-양변을 i 에 대해 더하면 pi P = pi 가 나온다. 역은 성립하지 않으므로 detailed balance 는 충분조건이다. 가역 연쇄에서는 P 가 적절한 내적에 대해 자기수반이 되어 고유값이 모두 실수이고 스펙트럼 이론을 쓸 수 있다. [그래프](graphs.md) 위의 단순 random walk 가 그 예이고 정상분포가 차수에 비례한다.
+양변을 $i$ 에 대해 더하면 $\pi P=\pi$ 가 나온다. 역은 성립하지 않으므로 상세균형은 충분조건이다. 가역 연쇄에서는 $P$ 가 적절한 내적에 대해 자기수반이 되어 고윳값이 모두 실수이고 스펙트럼 이론을 쓸 수 있다. [그래프](graphs.md) 위의 단순 무작위 걷기가 그 예이고 정상분포가 차수에 비례한다.
 
 $$
-\pi_v=\frac{\deg v}{2|E|}
+\pi_v=\frac{\deg v}{2\vert E\vert}
 $$
 
 이 관계가 [그래프 Laplacian](graph-laplacian.md)과 [유효저항](effective-resistance.md)을 통해 도달시간 · 혼합시간 추정으로 이어진다.
@@ -131,50 +131,33 @@ $$
 P=\begin{pmatrix}0.5 & 0.5 & 0\cr 0 & 0 & 1\cr 0.7 & 0 & 0.3\end{pmatrix}
 $$
 
-정상분포는 pi P = pi 와 성분 합 1 을 연립해 얻는다. 첫 성분 식은 0.5 pi_1 + 0.7 pi_3 = pi_1, 곧 pi_1 = 1.4 pi_3 이고 둘째 식은 0.5 pi_1 = pi_2 다.
+정상분포는 $\pi P=\pi$ 와 성분 합 1 을 연립해 얻는다. 첫 성분 식 $0.5\pi\_1+0.7\pi\_3=\pi\_1$ 에서 $\pi\_1=1.4\pi\_3$ 이고, 둘째 식은 $0.5\pi\_1=\pi\_2$ 다.
 
 $$
 \pi=\tfrac{1}{31}\thinspace(14,\ 7,\ 10)
 $$
 
-```python
-import numpy as np
-
-P = np.array([[0.5, 0.5, 0.0],
-              [0.0, 0.0, 1.0],
-              [0.7, 0.0, 0.3]])
-
-# 방법 1: 거듭제곱
-mu = np.array([1.0, 0.0, 0.0])
-for _ in range(200):
-    mu = mu @ P
-
-# 방법 2: 왼쪽 고유벡터
-w, V = np.linalg.eig(P.T)
-v = np.real(V[:, np.argmax(np.real(w))])
-pi = v / v.sum()
-print(mu, pi)   # 둘 다 [0.4516 0.2258 0.3226]
-```
+같은 값을 $P^{\mathsf T}$ 의 고윳값 1 에 대한 왼쪽 고유벡터를 정규화해서도 얻는다. 연쇄가 기약이고 비주기적이므로 임의의 초기분포에서 거듭제곱 $\mu P^n$ 도 이 벡터로 수렴한다.
 
 ## PageRank
 
-웹 링크 그래프의 전이행렬 P 는 기약이 아닐 수 있고 나가는 링크가 없는 페이지에서 행 합이 0 이 된다. dangling 행을 균일분포로 채운 뒤 damping factor 를 섞는다. J 는 모든 성분이 1 인 n 차 정사각행렬이다.
+웹 링크 그래프의 전이행렬 $P$ 는 기약이 아닐 수 있고, 나가는 링크가 없는 페이지에서 행 합이 0 이 된다. 그런 행을 균일분포로 채운 뒤 감쇠 인자 $\alpha$ 를 섞는다. $J$ 는 모든 성분이 1 인 $n$ 차 정사각행렬이다.
 
 $$
 P'=\alpha P+(1-\alpha)\frac{1}{n}J,\qquad \alpha=0.85
 $$
 
-P' 는 모든 성분이 양수이므로 기약이고 비주기적이다.[^2] 수렴 정리가 적용되어 PageRank 가 그 유일한 정상분포이고, 반복법의 수렴 속도는 lambda_2 의 절댓값이 alpha 이하라는 데서 보장된다.
+$P'$ 는 모든 성분이 양수이므로 기약이고 비주기적이다.[^2] 수렴 정리에 따라 PageRank 가 그 유일한 정상분포이고, 반복법의 수렴 속도는 $\vert\lambda\_2\vert\le\alpha$ 에서 나온다.
 
 ## MCMC
 
-목표 분포 pi에서 직접 표본을 뽑기 어려울 때, pi를 정상분포로 갖는 연쇄를 설계해 오래 돌린다. Metropolis–Hastings는 제안분포 q에서 후보 y를 뽑고 다음 확률로 수락한다.
+목표 분포 $\pi$ 에서 직접 표본을 뽑기 어려울 때 $\pi$ 를 정상분포로 갖는 연쇄를 설계해 오래 돌린다. Metropolis–Hastings 는 제안분포 $q$ 에서 후보 $y$ 를 뽑고 다음 확률로 수락한다.
 
 $$
 \alpha(x,y)=\min\negthinspace\left(1,\ \frac{\pi(y)\thinspace q(y,x)}{\pi(x)\thinspace q(x,y)}\right)
 $$
 
-이렇게 정의한 연쇄는 detailed balance 를 만족하므로 pi 가 정상분포다.[^3] 기약성과 비주기성을 확보하면 ergodic 정리에 의해 표본 평균이 pi 에 대한 기댓값으로 수렴한다. 수락확률에 비율만 나타나므로 정규화 상수를 몰라도 되고, lambda_2 가 1 에 가까우면 혼합이 느려진다.
+이 연쇄는 상세균형을 만족하므로 $\pi$ 가 정상분포다.[^3] 기약성과 비주기성을 확보하면 에르고딕 정리에 의해 표본 평균이 $\pi$ 에 대한 기댓값으로 수렴한다. 수락확률에 비율만 나타나 정규화 상수를 몰라도 되고, $\vert\lambda\_2\vert$ 가 1 에 가까우면 혼합이 느려진다.
 
 ## 그 밖의 쓰임
 
@@ -198,4 +181,4 @@ $$
 - [Random walk와 전기 네트워크](random-walks.md)
 - [Poisson 과정](poisson-process.md)
 
-#probability
+#probability #linear_algebra #statistics #computation
