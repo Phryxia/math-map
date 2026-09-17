@@ -50,6 +50,8 @@ graph TD
 - [Lambda calculus](lambda-calculus.md): 함수 적용만으로 세운 계산 모형, $\beta$ 축약과 Church–Rosser 정리
 - [Curry–Howard 대응](curry-howard.md): 증명과 프로그램, 명제와 타입의 대응
 - [영역 이론과 Kleene 고정점 정리](domain-theory.md): 재귀 정의의 의미를 최소 고정점으로
+- [추상해석과 정적 분석의 건전성](abstract-interpretation.md): Galois 연결로 맺은 구체와 추상 의미, 고정점 근사
+- [애니온과 위상적 양자계산](anyons.md): 꼬임군의 표현으로 만드는 결맞음 오류에 강한 계산 모형
 
 ## 복잡도와 근사 한계
 
@@ -57,7 +59,9 @@ graph TD
 - [NP-완전성과 Cook–Levin 정리](np-completeness.md): 환원과 완전성, SAT 의 보편성
 - [근사 알고리즘](approximation-algorithms.md): 최적해 대신 보장된 비율의 해
 - [PCP 정리와 근사 불가능성](pcp-theorem.md): 상수 개의 비트만 읽는 검증, 근사 하한
+- [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위의 Fourier 전개, 영향력과 잡음 안정성
 - [유일게임 추측과 2-to-2 정리](unique-games.md): 최적 근사 비율을 결정하는 추측
+- [그래프 동형](graph-isomorphism.md): P 와 NP-완전 사이에 놓인 문제, 준다항시간 알고리즘
 
 ## 알고리즘
 
@@ -65,6 +69,9 @@ graph TD
 - [최단경로와 Bellman 방정식](shortest-paths.md): Bellman–Ford, Dijkstra, 고정점으로서의 최단거리
 - [LP 완화와 반올림](lp-rounding.md): 정수 제약을 푼 뒤 해를 되돌리는 근사 설계
 - [고속 Fourier 변환과 합성곱](fft.md): 분할정복으로 $O(n\log n)$ 에 이산 Fourier 변환
+- [오류정정부호](error-correcting-codes.md): 부호의 구성과 복호 알고리즘, 거리와 한계
+- [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md): 유한체 위 타원곡선의 점 개수를 다항시간에 센다
+- [Kedlaya 알고리즘과 p 진 점 세기](kedlaya-algorithm.md): Monsky–Washnitzer 코호몰로지로 Frobenius 자취를 계산한다
 
 ## 자료구조
 
@@ -79,6 +86,7 @@ graph TD
 - [Weil 쌍과 쌍선형 암호](pairing-based-cryptography.md): 타원곡선의 쌍선형 사상과 신원 기반 암호
 - [격자 기반 후양자 암호](post-quantum-cryptography.md): LWE 와 SIS, 양자 알고리즘에 견디는 가정
 - [완전동형암호](homomorphic-encryption.md): 암호문 위에서 덧셈과 곱셈, 잡음 관리와 부트스트래핑
+- [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md): 동종사상 그래프 위의 걷기를 어려운 문제로 삼는 가정
 
 # 연관 문서
 
