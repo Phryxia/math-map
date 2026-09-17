@@ -130,10 +130,16 @@ $$
 
 ## 더 알아보기
 
+### 복소해석의 줄기
+
 - [Laurent 급수와 유수 정리](residue-theorem.md)
 - [해석적 연속](analytic-continuation.md)
 - [조화함수](harmonic-functions.md)
 - [등각사상](conformal-mapping.md)
+- [Weierstrass 인수분해 정리](weierstrass-factorization.md)
+
+### 다른 분야에서의 쓰임
+
 - [모듈러 형식](modular-forms.md)
 - [Riemann–Roch 정리](riemann-roch.md)
 - [Kähler 다양체와 Hodge 분해](kahler-manifolds.md)

@@ -20,6 +20,7 @@ graph TD
   PS --> AC["해석적 연속"]
   HF --> AC
   HF --> CM["등각사상"]
+  HF --> WF["Weierstrass 인수분해 정리"]
   CM --> RS["Riemann 곡면과 균일화 정리"]
   RS --> MC["모듈러 곡선"]
   RS --> TS["Teichmüller 공간"]
@@ -51,6 +52,7 @@ graph TD
 
 - [해석적 연속](analytic-continuation.md): 함수 요소와 경로를 따른 연속, 항등정리와 유일성, 단일가치 정리, 자연 경계
 - [등각사상](conformal-mapping.md): Möbius 변환, Schwarz 보조정리, Riemann 사상정리, Schwarz–Christoffel 공식
+- [Weierstrass 인수분해 정리](weierstrass-factorization.md): 기본 인수와 무한곱, 지정한 영점을 갖는 전해석함수, Hadamard 인수분해
 - [Riemann 곡면과 균일화 정리](riemann-surfaces.md): 다가함수를 단일가치로 만드는 곡면, 구면·평면·원판의 삼분법
 
 ## 다른 분야에서의 쓰임
