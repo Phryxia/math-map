@@ -21,7 +21,7 @@ graph TD
   TP --> HM["단체 호몰로지"] --> EC["Euler 지표"] --> GB["Gauss–Bonnet"]
   HM --> DR["de Rham 코호몰로지"] --> HT["Hodge 이론"] --> IT["지표 정리"]
   TP --> MF["다양체"] --> DF["미분형식"] --> DR
-  DR --> CSM["Chern–Simons"] --> RT
+  DR --> CSM["Chern–Simons"] --> CI["Casson 불변량"]
 ```
 
 # 갈래
