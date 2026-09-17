@@ -21,7 +21,7 @@ $$
 
 확산모형의 확률흐름 상미분방정식은 역방향 확률미분방정식과 같은 주변분포를 만든다. 생성이 상미분방정식으로 서술되므로, 확률미분방정식을 거치지 않고 처음부터 속도장을 목표로 삼을 수 있다.
 
-확률경로 $(p_t)_{t\in[0,1]}$ 와 속도장 $v_t$ 의 관계는 연속방정식이다.
+확률경로 $(p_t)\_{t\in[0,1]}$ 와 속도장 $v_t$ 의 관계는 연속방정식이다.
 
 $$
 \partial_tp_t+\nabla\cdot(p_tv_t)=0
@@ -135,95 +135,7 @@ $$
 
 $p_0=N(0,1)$ 에서 $p_1=\frac12N(-2,0.3^2)+\frac12N(2,0.3^2)$ 로 가는 1 차원 문제에서는 가우시안 혼합이라 주변 속도장이 닫힌 형태다. 신경망 없이 이상적인 목표 속도장을 직접 적분할 수 있다.
 
-```python
-import math
-
-comps = [(0.5, -2.0, 0.3), (0.5, 2.0, 0.3)]
-npdf = lambda x, m, s: math.exp(-0.5*((x - m)/s)**2)/(s*math.sqrt(2*math.pi))
-
-# x_t = α_t x₁ + σ_t x₀.  (α,σ) = (t, 1-t) 이면 조건부 경로가 직선이다.
-LINEAR = (lambda t: t, lambda t: 1 - t, lambda t: 1.0, lambda t: -1.0)
-TRIG = (lambda t: math.sin(math.pi*t/2), lambda t: math.cos(math.pi*t/2),
-        lambda t: math.pi/2*math.cos(math.pi*t/2),
-        lambda t: -math.pi/2*math.sin(math.pi*t/2))
-
-def velocity(x, t, sch):
-    """독립 결합에서의 주변 속도장 u_t(x) = E[α'x₁ + σ'x₀ | x_t = x].
-    성분별 가우시안이라 사후 가중치와 조건부 기댓값이 모두 닫힌 형태다."""
-    al, sg, dal, dsg = (f(t) for f in sch)
-    num = den = 0.0
-    for w, m, s in comps:
-        V = al*al*s*s + sg*sg                                # Var(x_t)
-        g = w * npdf(x, al*m, math.sqrt(V))                  # 사후 가중치 (정규화 전)
-        num += g * (dal*m + (dal*al*s*s + dsg*sg)/V * (x - al*m))
-        den += g
-    return num/den
-
-def integrate(x, steps, sch):
-    t, h = 0.0, 1.0/steps
-    for _ in range(steps):
-        x += h*velocity(x, t, sch); t += h
-    return x
-
-cdf0 = lambda x: 0.5*(1 + math.erf(x/math.sqrt(2)))
-cdf1 = lambda x: sum(w*0.5*(1 + math.erf((x - m)/(s*math.sqrt(2)))) for w, m, s in comps)
-
-def inverse(cdf, q):
-    lo, hi = -10.0, 10.0
-    for _ in range(200):
-        mid = (lo + hi)/2
-        lo, hi = (mid, hi) if cdf(mid) < q else (lo, mid)
-    return (lo + hi)/2
-
-inv0 = lambda q: inverse(cdf0, q)
-inv1 = lambda q: inverse(cdf1, q)
-
-def velocity_ot(x, t):
-    """OT 결합의 주변 속도장. 1 차원에서 최적 결합은 분위수끼리 짝짓는 것이고,
-    x_t(q) = (1-t)F₀⁻¹(q) + t F₁⁻¹(q) 가 q 에 대해 증가하므로 q 를 되찾을 수 있다."""
-    lo, hi = 1e-12, 1 - 1e-12
-    for _ in range(200):
-        mid = (lo + hi)/2
-        lo, hi = (mid, hi) if (1-t)*inv0(mid) + t*inv1(mid) < x else (lo, mid)
-    q = (lo + hi)/2
-    return inv1(q) - inv0(q)
-
-def integrate_ot(x, steps):
-    t, h = 0.0, 1.0/steps
-    for _ in range(steps):
-        x += h*velocity_ot(x, t); t += h
-    return x
-
-qs = [i/20 for i in range(1, 20)]
-err = lambda f: max(abs(cdf1(f(inv0(q))) - q) for q in qs)      # Kolmogorov 거리
-
-print("Euler 적분 단계 수에 따른 오차 (독립 결합)")
-print("  steps |   직선 경로 |  삼각 스케줄")
-for steps in (2, 4, 8, 16, 32, 64, 256):
-    print(f"  {steps:>5} | {err(lambda x: integrate(x, steps, LINEAR)):11.6f}"
-          f" | {err(lambda x: integrate(x, steps, TRIG)):12.6f}")
-
-print("\nOT 결합(분위수 짝짓기)에서의 같은 오차")
-for steps in (1, 2, 4):
-    print(f"  steps={steps}: {err(lambda x: integrate_ot(x, steps)):.3e}")
-
-# Euler 적분 단계 수에 따른 오차 (독립 결합)
-#   steps |   직선 경로 |  삼각 스케줄
-#       2 |    0.225249 |     0.110937
-#       4 |    0.125269 |     0.057919
-#       8 |    0.061770 |     0.025210
-#      16 |    0.031245 |     0.012670
-#      32 |    0.015674 |     0.006425
-#      64 |    0.007845 |     0.003243
-#     256 |    0.001962 |     0.000817
-#
-# OT 결합(분위수 짝짓기)에서의 같은 오차
-#   steps=1: 4.441e-16
-#   steps=2: 1.943e-16
-#   steps=4: 2.359e-16
-```
-
-두 스케줄 모두 단계를 두 배로 늘리면 오차가 절반이 되는 오일러 법의 1 차 수렴을 보인다. 이 문제에서 직선 조건부 경로는 삼각 스케줄보다 오차가 크다. 조건부 경로가 직선이어도 적분하는 것은 주변 속도장이므로 궤적의 곡률은 별개다.
+어느 스케줄이든 단계를 두 배로 늘리면 오차가 절반이 되고, 이것이 오일러 법의 1 차 수렴이다. 직선 조건부 경로가 삼각 스케줄보다 오차가 큰 경우도 있다. 조건부 경로가 직선이어도 적분하는 것은 주변 속도장이므로 궤적의 곡률은 별개다.
 
 OT 결합에서는 궤적이 직선이라 오일러 한 걸음이 기계 정밀도까지 정확하다. 단계 수를 줄이는 것은 스케줄이 아니라 결합이고, rectified flow 의 반복과 고차원에서의 미니배치 최적 수송이 이 결합을 개선한다.
 
