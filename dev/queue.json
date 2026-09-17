@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "savedAt": "2026-09-17T13:04:26.257Z",
-  "nextSeq": 500,
+  "savedAt": "2026-09-17T17:00:13.238Z",
+  "nextSeq": 513,
   "items": [
     {
-      "id": "bf4fe803",
-      "title": "4절 헤딩 grep 의 구멍: 의문사로 시작하는 헤딩 훑기",
-      "priority": 40,
-      "note": "2026-09-17 네 번째 회차 발견. CLAUDE.md 4절이 주는 grep 은 '^##' 중 (다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) 로 끝나는 것만 잡는다. 그래서 '나', '가', '냐' 로 끝나는 의문형을 전부 놓친다. measure 의 '왜 모든 집합에 크기를 줄 수 없나' 가 세 회차를 살아남은 것이 그 때문이다. 이번에 grep -nE '^##+ .*(왜|어떻게|무엇|어느|얼마|언제|누가|어디)' 로 훑어 열둘을 찾아 고쳤고 지금은 0 건이다. 오검출 둘은 측도론 용어 '거의 어디서나' 다. 회차마다 이 grep 도 함께 돌린다",
-      "createdAt": "2026-09-17T13:04:03.414Z",
-      "seq": 498
+      "id": "58cca640",
+      "title": "인라인 수식 첨자 이스케이프 누락 786 건",
+      "priority": 50,
+      "note": "2026-09-17 다섯 번째 회차 발견. 4절 수식 규칙은 인라인 수식에서 _ 앞이 영숫자가 아니면 \\_ 로 쓰라고 하는데, 저장소 전체에 786 건이 남아 있다. 압도적 다수가 $\\mathrm{SL}_2$, $\\mathrm{GL}_n$, $\\mathrm{id}_A$, $\\mathfrak{sl}_2$ 처럼 } 뒤에 첨자가 오는 꼴이고 )_ 와 ]_ 도 있다. render-check 는 현재 0 건이라 실제로 깨진 자리는 없다. 열림 후보(앞이 }·)·]) 와 닫힘 후보(뒤가 \\·{·() 가 한 문단에 함께 있어야 기울임이 열리고 닫혀 깨지기 때문이다. 그래서 예방 규칙 위반이지 현재 버그는 아니다. 검사기는 스크래치패드 subcheck.mjs 다. 코드펜스와 $$ 블록(여러 줄과 한 줄 모두)과 인라인 코드를 마스킹하고 인라인 $...$ 조각만 뽑아 _ 앞 글자를 본다. $$ 블록은 강조 파싱 대상이 아니므로 제외해야 한다. 4절 방침대로 일괄 치환하지 말고 문서를 보강하는 회차마다 그 문서 것을 함께 고친다. 이번 회차에 riemann-roch, marchenko-pastur, monstrous-moonshine 셋을 처리했다. 남은 문서 상위: zhu-algebra, yoneda-lemma, whittaker-models, witten-asymptotics",
+      "createdAt": "2026-09-17T16:44:12.194Z",
+      "seq": 505
     },
     {
-      "id": "c13af5ca",
-      "title": "의문형 헤딩을 고친 문서 열둘의 본문 문체 손질",
-      "priority": 30,
-      "note": "2026-09-17 네 번째 회차에 헤딩만 명사구로 바꾸고 본문은 손대지 않았다. 4절은 '문서를 보강할 때 이 규칙에 어긋나는 헤딩과 문단이 보이면 그 문서 전체를 이 문체로 고친다' 고 하므로 본문도 봐야 한다. 대상: adjunctions, fargues-scholze, link-cut-trees, littlewood-richardson, marchenko-pastur, monstrous-moonshine, mv-cycles, rice-theorem, riemann-roch, zhu-algebra. 눈에 띈 것: monstrous-moonshine 의 '왜 놀라운가' 절이 '우연이거나, 한쪽이 다른 쪽의 정의를 우회한 것이거나, 둘 다 세 번째 대상의 그림자거나' 로 끝나는 수사, zhu-algebra 의 '자연스럽다', marchenko-pastur 의 '같은 현상을 다른 좌표에서 본 것에 가깝다'",
-      "createdAt": "2026-09-17T13:04:03.537Z",
-      "seq": 499
+      "id": "5768c1c4",
+      "title": "4절 헤딩 grep 의 구멍: 의문사로 시작하는 헤딩 훑기",
+      "priority": 40,
+      "note": "2026-09-17 다섯 번째 회차에 다시 돌려 회귀 없음. grep -nE '^##+ .*(왜|어떻게|무엇|어느|얼마|언제|누가|어디)' 는 2 건 보고, 둘 다 측도론 용어 '거의 어디서나' 오검출(lebesgue-integral, measurable-functions). '나|가|냐' 로 끝나는 헤딩 grep 보고 6 건도 전부 명사구 오검출이다. 4절 본래 grep 은 riemann-roch 의 '보정항의 필요' 하나를 잡았고 그 회차에 고쳤다. 세 grep 을 회차마다 함께 돌린다. pop 하면 맨 위로 다시 올라오니 pop 대신 회차 시작에 검사만 돌리고 노트를 갱신한다",
+      "createdAt": "2026-09-17T16:38:24.175Z",
+      "seq": 503
     },
     {
       "id": "82823d56",
@@ -60,22 +60,6 @@
       "seq": 479
     },
     {
-      "id": "55b3c7e4",
-      "title": "문체·수식 회귀 점검 묶음",
-      "priority": 12,
-      "note": "2026-09-17 네 번째 회차에 아홉 검사를 전부 돌려 0 건을 확인했다. 검사기는 스크래치패드 regcheck.mjs 하나로 합쳤다(별표, 닫는 $ 뒤 공백, 인라인 코드블록 안 수식 셋을 한 번에 본다). 함정 하나: 한 줄짜리 $$...$$ 블록을 인라인으로 읽으면 닫는 $ 뒤 공백 위반 11 건이 오검출로 뜬다(deligne-weil-conjectures, dwork-rationality, godement-jacquet, hyperbolic-3-manifolds 둘, lang-trotter, sato-tate, sea-algorithm, tunnell-saito). 인라인 코드를 마스킹한 뒤 $$[\\s\\S]*?$$ 도 함께 마스킹해야 한다. grep 으로 도는 나머지: 의문형·문장형 헤딩 0, 금지 매크로 0, 열린 문제 절 이름과 '대부분 열려' 류 0, 빈자리·할 일 절 0, 백슬래시+문장부호 이스케이프 0(문서 367 개). 노름 \\Vert 쌍은 전부 벡터·함수·작용소 노름이다",
-      "createdAt": "2026-09-17T12:36:55.696Z",
-      "seq": 480
-    },
-    {
-      "id": "479fbf82",
-      "title": "통계 문서 일곱의 분야 태그 채우기",
-      "priority": 12,
-      "note": "2026-09-17 네 번째 회차에 statistics-overview 를 만들며 확인했다. 태그가 #statistics 하나뿐인 문서 여섯: maximum-likelihood, exponential-families, bayesian-inference, hypothesis-testing, confidence-intervals, linear-regression. 6절은 문서당 분야 태그 2~4 개를 기준으로 하고 그 문서를 보강하는 회차에 채우라고 한다. 후보 태그: maximum-likelihood(#probability #optimization), exponential-families(#probability #information_theory), bayesian-inference(#probability #machine_learning), hypothesis-testing(#probability), confidence-intervals(#probability), linear-regression(#linear_algebra #optimization)",
-      "createdAt": "2026-09-17T12:53:15.213Z",
-      "seq": 493
-    },
-    {
       "id": "330454b2",
       "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (8차)",
       "priority": 12,
@@ -84,12 +68,60 @@
       "seq": 496
     },
     {
-      "id": "6f07db10",
+      "id": "0eacd1a9",
+      "title": "riemann-roch 를 대수기하 개관의 갈래에 세울 자리 검토",
+      "priority": 12,
+      "note": "2026-09-17 다섯 번째 회차. 저장소에 #algebraic_geometry 태그가 없어 riemann-roch 의 태그를 #differential_geometry #complex_analysis #number_theory 로 채웠다. 인자, 표준인자, 층 코호몰로지, 사영 매장, 모듈라이를 다루는 문서들(riemann-roch, borel-weil-bott, elliptic-curves, de-rham-cohomology, classification-of-surfaces 등)이 #algebra 와 #differential_geometry 와 #number_theory 로 흩어져 있다. 새 분야 태그를 만들지 결정하려면 먼저 대수기하가 주 분야인 문서를 세어야 한다. 10 개가 넘으면 4.5 절에 따라 개관이 필요하다",
+      "createdAt": "2026-09-17T16:37:59.080Z",
+      "seq": 501
+    },
+    {
+      "id": "fda05345",
+      "title": "수치 확인 절을 지운 뒤 남은 본문 참조 회귀 점검",
+      "priority": 12,
+      "note": "2026-09-17 다섯 번째 회차 신설. marchenko-pastur 에 '아래 코드가 그렇게 한다'(적률 절)와 '아래 수치에서'(가장자리 절) 두 문장이 남아 있었다. 코드블록이 하나도 없는 문서인데 이전 회차가 4절 코드 규칙대로 수치 확인 절만 지우고 본문 참조를 안 지운 것이다. 이번에 고쳤다. 검사법: grep -nE '(아래|위) (코드|수치|표|실험|계산|그림|다이어그램)' docs/*.md 로 25 개 문서가 걸리고, 각각 grep -c '^```' 와 grep -c '^|' 로 코드펜스와 표가 실제로 있는지 대조한다. 이번 회차에는 marchenko-pastur 외 전부 참조 대상이 실재했다. 앞으로 수치 확인 절이나 다이어그램을 지우는 회차마다 그 문서에 이 grep 을 돌린다",
+      "createdAt": "2026-09-17T16:40:56.962Z",
+      "seq": 504
+    },
+    {
+      "id": "a3bcd028",
+      "title": "네 번째 회차 의문형 헤딩 문서 열둘의 후속 점검",
+      "priority": 12,
+      "note": "2026-09-17 다섯 번째 회차에 열 개를 모두 4절 문체로 고쳤다: riemann-roch, marchenko-pastur, monstrous-moonshine, zhu-algebra, littlewood-richardson, fargues-scholze, rice-theorem, mv-cycles, adjunctions, link-cut-trees. 손질 내용은 서술형·비유형 헤딩의 명사구 전환, 검증 과정 산문과 실행되지 않는 예시 코드 제거, 나열형 mermaid 제거, 첨자 이스케이프, 분야 태그 채우기다. 다음 회차에는 고친 문서들이 4절 문체를 유지하는지만 확인하면 된다. adjunctions 와 link-cut-trees 는 아직 280~300 줄로 길어 8절 분할 후보인지 따로 볼 만하다",
+      "createdAt": "2026-09-17T16:53:55.526Z",
+      "seq": 507
+    },
+    {
+      "id": "7589dde6",
       "title": "분야 태그가 하나뿐인 문서 채우기",
       "priority": 12,
-      "note": "2026-09-17 네 번째 회차에 손댄 문서 넷을 채웠다: measure(#measure_theory #probability #analysis #set_theory), generating-functions(#combinatorics #analysis #probability), maximum-likelihood(#statistics #probability #optimization), bayesian-inference(#statistics #probability #machine_learning). 남은 후보 57 개. 6절은 일괄 작업이 아니라 그 문서를 보강하는 회차에 함께 채우라고 한다. 통계 문서 넷(exponential-families, hypothesis-testing, confidence-intervals, linear-regression)은 별도 항목에 후보 태그를 적어 두었다. 후보 찾기: for f in docs/*.md; do [ \"$(tail -1 \"$f\" | grep -o '#[a-z0-9_]*' | wc -l)\" -le 1 ] && echo \"$f\"; done",
-      "createdAt": "2026-09-17T13:02:57.905Z",
-      "seq": 497
+      "note": "2026-09-17 다섯 번째 회차에 통계 문서 넷(exponential-families, hypothesis-testing, confidence-intervals, linear-regression)을 채워 별도 항목을 소진했고, 이번 회차에 보강한 문서들(riemann-roch, monstrous-moonshine, zhu-algebra, rice-theorem, link-cut-trees)도 함께 채웠다. 남은 후보 약 53 개: cardinality, category, compactness, completeness, concentration-inequalities, connectedness, curvature, derivative, determinants, entropy, euler-characteristic 등. 6절은 일괄 작업이 아니라 그 문서를 보강하는 회차에 함께 채우라고 한다. 후보 찾기: for f in docs/*.md; do [ \"$(tail -1 \"$f\" | grep -o '#[a-z0-9_]*' | wc -l)\" -le 1 ] && echo \"$f\"; done",
+      "createdAt": "2026-09-17T16:56:14.009Z",
+      "seq": 508
+    },
+    {
+      "id": "53db4c65",
+      "title": "리프 문서에서 후속이 분명한 간선 훑기",
+      "priority": 12,
+      "note": "2026-09-17 다섯 번째 회차 신설. node dev/graph.mjs leaves 가 내놓는 리프 가운데, 본문이 이미 다른 문서를 전제로 삼고 있어 5절 기준을 만족하는 쌍을 찾는다. 이번 회차에 rice-theorem -> abstract-interpretation 하나를 그었다. 판정법: 후보 자식 문서의 개요나 전용 절이 부모 문서의 결론을 전제로 쓰는지 본다(abstract-interpretation 은 개요 첫 문단과 'Rice 정리와의 관계' 절 둘 다에서 그랬다). 반대로 도구로 한 번 쓰는 정도면 본문 링크로 충분하다(marchenko-pastur -> tracy-widom 은 tracy-widom 의 부모가 이미 셋이고 wigner-semicircle 아래 자리잡아 긋지 않았다). 간선을 더하면 README 의 간선 수를 함께 갱신한다",
+      "createdAt": "2026-09-17T16:57:25.036Z",
+      "seq": 510
+    },
+    {
+      "id": "be0749a7",
+      "title": "문체·수식 회귀 점검 묶음",
+      "priority": 12,
+      "note": "2026-09-17 다섯 번째 회차에 일곱 검사를 돌려 전부 0 건이다: 금지 매크로, 열린 문제 절 이름, '대부분 열려' 류, 빈자리·할 일 절, 문장형 헤딩, 백슬래시+문장부호 이스케이프. 의문사 헤딩 grep 만 2 건인데 둘 다 측도론 용어 '거의 어디서나' 오검출이다(lebesgue-integral, measurable-functions). 별표와 닫는 $ 뒤 공백과 인라인 코드블록 안 수식은 스크래치패드 regcheck.mjs 로 보는데 이번 회차에는 다시 만들지 않았다. 함정 하나: 한 줄짜리 $$...$$ 블록을 인라인으로 읽으면 닫는 $ 뒤 공백 위반이 오검출로 뜬다. 인라인 코드를 마스킹한 뒤 $$ 블록도 함께 마스킹해야 한다. 이번 회차에 새로 만든 검사기는 subcheck.mjs(첨자 이스케이프 누락)이고 별도 항목에 적었다",
+      "createdAt": "2026-09-17T16:57:54.439Z",
+      "seq": 511
+    },
+    {
+      "id": "a6591090",
+      "title": "제목과 파일명이 어긋난 문서 훑기",
+      "priority": 12,
+      "note": "2026-09-17 다섯 번째 회차 신설. CLAUDE.md 2절이 주는 grep -l '^# .*[와과] ' docs/*.md 는 로케일 탓에 문서 377 개를 전부 잡는다(한글 문자 클래스가 UTF-8 바이트로 쪼개진다). 제목 줄만 파이썬으로 뽑아 '와 ' 또는 '과 ' 를 찾으면 169 건이다. 대부분은 4절이 허용하는 형태이므로 일괄 처리 대상이 아니다. 판정 기준: (1) 정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목('Néron–Tate 높이와 Mordell–Weil 정리', 'Bernoulli 수와 von Staudt–Clausen 정리')은 한 주제이므로 그대로 둔다. (2) 한 개념의 두 면이고 파일명이 그것을 포괄하면 둔다('가산성과 비가산성'/cardinality, 'Cauchy 수열과 완비성'/completeness, '계산 가능성과 정지 문제'/computability). (3) 파일명이 둘 중 하나만 가리키고 나머지가 독립 문서가 될 만하면 4절대로 제목을 좁히거나 파일명을 바꾸거나 8절대로 나눈다. 세 번째에 해당하는 것을 한 회차에 한둘씩 처리한다. 검사 코드는 첫 줄이 '# ' 로 시작하는지 본 뒤 re.search(r'(와|과) ', 제목) 이다",
+      "createdAt": "2026-09-17T16:58:28.489Z",
+      "seq": 512
     },
     {
       "id": "ae1848a1",
@@ -642,6 +674,14 @@
       "note": "2026-09-17 세 번째 회차 판단: 지금은 만들지 않는다. 4.5절은 문서 10 개 이상인 분야 태그에 개관을 두라고 하는데, 갈래를 거두는 기준인 '태그 줄의 첫 태그' 로 세면 #computation 4 개, #algorithms 5 개로 합쳐 9 개다. #computation 태그가 붙은 문서 57 개는 대부분 다른 분야가 주 분야이고 도구 태그로 붙은 것이라 갈래를 채우지 못한다. 계산 쪽 주 분야 문서가 몇 개 더 늘면 computation-overview 를 만든다(갈래 후보: 계산 모형과 복잡도, 수치 알고리즘, 암호, 학습). 같은 방식으로 센 다른 후보: measure_theory 9, statistics 7, field_theory 5. complex_analysis 는 태그 39 개지만 주 분야가 3 개이고 analysis-overview 가 거둔다. 회차마다 이 집계를 다시 하려면: for t in computation algorithms; do for f in docs/*.md; do [ \"$(tail -1 $f | grep -o '#[a-z0-9_]*' | head -1)\" = \"#$t\" ] && echo $f; done; done",
       "createdAt": "2026-09-17T08:47:59.996Z",
       "seq": 469
+    },
+    {
+      "id": "307f17be",
+      "title": "Rice–Shapiro 정리",
+      "priority": 10,
+      "note": "2026-09-17 다섯 번째 회차. rice-theorem 의 '인식 가능성' 절이 이름과 대략적 진술만 들고 문서가 없다. 계산 어느 의미론적 성질이 인식 가능한지(r.e. 인지)를 특징짓는 정리이고, '유한한 양의 정보만 보고 확인할 수 있는 성질', 곧 컴팩트성 조건으로 진술된다. 부모는 rice-theorem 이고 분야는 계산이다. 영역 이론(domain-theory)의 Scott 위상과 이어지므로 그쪽 간선도 검토한다",
+      "createdAt": "2026-09-17T16:57:24.909Z",
+      "seq": 509
     },
     {
       "id": "dfb3e493",
