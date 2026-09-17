@@ -1,119 +1,71 @@
 {
   "version": 1,
-  "savedAt": "2026-09-17T05:01:33.650Z",
-  "nextSeq": 459,
+  "savedAt": "2026-09-17T08:59:58.710Z",
+  "nextSeq": 480,
   "items": [
     {
-      "id": "834f5e95",
-      "title": "판정 순서도형 mermaid 가 남은 문서 훑기",
-      "priority": 50,
-      "note": "2026-09-17 두 번째 회차에 열 문서의 나열형/판정형 mermaid 를 처리했다. 지운 것: eigenvalues(대각화 판정), reshetikhin-turaev(구성 단계), instanton-floer-homology(구성 단계), fredholm-operators(논증 사슬), quadratic-reciprocity(논증 사슬), modular-arithmetic(가역성 판정), gradient-descent(알고리즘 순서도), hypothesis-testing(판정 절차). 표로 바꾼 것: group-representations(S3 분해), monotone-convergence(세 수렴정리 비교). 남은 후보 30 개는 판정 노드나 의문형 라벨을 쓴다: algebraic-number-fields boolean-fourier classification-of-surfaces de-rham-cohomology flow-matching galois-connections gnn-expressivity group-representations heyting-algebras homomorphic-encryption kripke-semantics marchenko-pastur matchings mathematical-structuralism matroids network-flow newton-method post-quantum-cryptography power-series probabilistic-method radon-nikodym ramanujan-graphs s-cobordism sato-tate sea-algorithm speh-representations sphere-packing stationary-phase unique-games yoneda-lemma. 찾기: grep -ln '인가\"]|는가\"]|{\"' docs/*.md. 전부 위반은 아니고 실제 알고리즘의 상태 전이는 4 절이 허용한다. 판정 기준은 정점을 빼고 문장 하나나 표로 쓸 수 있는가다. 회차마다 두세 개씩 처리한다",
-      "createdAt": "2026-09-17T05:01:17.543Z",
-      "seq": 458
-    },
-    {
-      "id": "e60e3255",
-      "title": "닫는 $ 뒤 공백 회귀 점검",
+      "id": "07bf9a9a",
+      "title": "문체·수식 회귀 점검 묶음",
       "priority": 12,
-      "note": "2026-09-17 회차에 다시 돌려 회귀 없음을 확인했다. 보고 두 건은 여전히 maass-forms:173 과 selberg-trace-formula:168 의 Kim 논문 제목(수식으로 끝나고 닫는 따옴표가 바로 온다)으로 오검출이다. 검사기는 스크래치패드 dollarspace.py 에 있다. 필수 조건 둘: (1) $ 짝짓기는 왼쪽부터 순차로 하되 내용 양끝이 공백이거나 한글이 있으면 수식으로 보지 않는다(단 \\text{} 안쪽 한글은 예외로 둔다). (2) 인용부호 접두어를 벗기고 인라인 코드와 한 줄 $$...$$ 를 먼저 마스킹한다",
-      "createdAt": "2026-09-17T00:46:01.236Z",
-      "seq": 418
+      "note": "2026-09-17 세 번째 회차에 다음을 한 번에 돌려 전부 0 건을 확인했다. (1) 인라인 수식 별표: 스크래치패드 asterisk.mjs. (2) 닫는 $ 뒤 공백: dollarspace.mjs, 세 회차 묵혀 둔 Kim 논문 제목 두 건을 이번에 해소해 처음으로 0 이 되었다. (3) 의문형 헤딩: grep -nE '^#+ .*(왜|어떻게|무엇|인가|는가|을까) *$' 와 4절의 '^##' grep. (4) 금지 매크로 operatorname/bm/newcommand. (5) 열린 문제 절 이름과 '대부분 열려' 류. (6) 빈자리·할 일 절. (7) 인라인 코드블록 안 수식. (8) 백슬래시+문장부호 이스케이프(문서 367 개 전체). (9) 절댓값과 노름 표기: grep -o '\\\\Vert[^\\\\]*\\\\Vert' docs/*.md 의 쌍 내용이 전부 벡터/함수/작용소 노름이다(x 7, f 6, y 4, P 4, x-c_n, x-c_m, x+y, b_{k-1}^*, z, x_0^{(i)}-x_1^{(j)}, x-y, x-p, x-c, v). 검사기 둘은 node 판이고 문서 하나를 고칠 때마다 그 문서만 돌리면 회귀를 바로 잡는다. 이 묶음이 중복되던 회귀 항목 일곱 개를 대신한다. 남은 별도 항목: KaTeX 파싱(katexcheck.mjs, npm i katex 필요), 개관 지도 부분그래프(mapcheck.mjs), 본문 링크 표시 제목(linkcheck.mjs), 수식이 맨 텍스트로 쓰인 자리(plaintext.py) 는 준비 비용이 있어 따로 둔다",
+      "createdAt": "2026-09-17T08:49:12.351Z",
+      "seq": 471
     },
     {
-      "id": "34a7b1c7",
-      "title": "인라인 수식 별표 회귀 점검",
+      "id": "d91d3a49",
+      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (7차)",
       "priority": 12,
-      "note": "2026-09-17 회차에 스크래치패드 asterisk.py 로 다시 돌려 0 건을 확인했다. 검사법: 코드펜스와 $$ 블록을 건너뛰고 인라인 $ 짝을 순차로 맞추되 내용 양끝이 공백이거나 한글이 있으면 제외한 뒤 * 가 남았는지 본다. $$ 블록 안의 * 는 강조가 먹지 않으므로 그대로 둔다(class-field-theory, quadratic-reciprocity 의 p^*)",
-      "createdAt": "2026-09-17T00:47:51.247Z",
-      "seq": 423
+      "note": "2026-09-17 세 번째 회차에 node 판 검사기(스크래치패드 plaintext.mjs)로 돌려 실질 위반 17 건을 전부 고쳤다. 고친 문서 14 개: counting-principles(3x4=12), galois-theory(Q(root2) 셋), holomorphic-functions(2x2), inclusion-exclusion(m>=1), markov-chains(m,n>=0), rsa-cryptosystem(P != NP 두 곳), finite-simple-groups(194x194), rankin-selberg(헤딩 GL_n x GL_m), localization-rings(1=>2=>3), iwasawa-main-conjecture(류수 x 조절자), khovanov-homology(대응 화살표 셋을 문장으로), uniform-integrability(epsilon-delta 조건), continuity(헤딩), monads(헤딩 (T, eta, mu)). 검사기는 코드펜스/인라인 코드/$$ 블록/인라인 수식을 마스킹한 뒤 유니코드 수학기호, 그리스 문자, LaTeX 명령, ASCII 비교연산, 맨 텍스트 지수를 찾는다. 남는 보고 85 건은 전부 오검출 두 종류다: 개관의 갈래 목록이 문서 순서에 쓰는 ' -> ' 화살표와, 각주의 논문 제목·서지(R(5,5) <= 46 같은 원문 표기). 다음 회차에는 grep -v ' -> ' 와 각주 줄 제외로 걸러 보면 된다",
+      "createdAt": "2026-09-17T08:51:09.650Z",
+      "seq": 472
     },
     {
-      "id": "823e3876",
-      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (6차)",
-      "priority": 12,
-      "note": "2026-09-17 회차에 검사기의 인라인 수식 마스킹을 고쳐(한글 제외 조건을 \\\\text{}/\\\\mathrm{} 안쪽에는 적용하지 않음) 보고가 0 건이 되었다. 처리한 것: pigeonhole-principle, polynomial-rings 두 문서 전면 LaTeX 전환과 나열형 mermaid 삭제, localization-rings 헤딩, modular-curves 제목을 '모듈러 곡선' 으로 좁혀 링크 표시 제목 8 곳 해소. 검사기는 스크래치패드 plaintext.py 다",
-      "createdAt": "2026-09-17T00:47:51.571Z",
-      "seq": 426
-    },
-    {
-      "id": "31c62001",
+      "id": "c5001b3c",
       "title": "분야 태그가 하나뿐인 문서 채우기",
       "priority": 12,
-      "note": "2026-09-17 회차 기준 73 개 문서가 태그 줄에 분야 태그를 하나만 단다(adjunctions, cardinality, compactness, completeness, continuity, derivative, determinants, eigenvalues, groups, homology, limits, measure, primes, sets, topology, vector-spaces 등 대체로 각 분야의 기초 문서다). 6절은 문서당 2~4 개를 기준으로 하고 보강할 때 채우라고 한다. 일괄 작업이 아니라 그 문서를 보강하는 회차에 함께 채운다. 이번 회차에는 손댄 ideals-quotient-rings, localization-rings, prime-ideals 셋을 채웠다. 후보 찾기: for f in docs/*.md; do [ \"$(tail -1 \"$f\" | grep -o '#[a-z0-9_]*' | wc -l)\" -le 1 ] && echo \"$f\"; done",
-      "createdAt": "2026-09-17T00:59:00.388Z",
-      "seq": 433
+      "note": "2026-09-17 세 번째 회차에 손댄 문서 다섯을 채웠다: markov-chains(#probability #linear_algebra #statistics #computation), continuity(#analysis #topology), counting-principles(#combinatorics #probability #group_theory), inclusion-exclusion(#combinatorics #probability #number_theory), holomorphic-functions(#complex_analysis #analysis #number_theory), power-series(#analysis #complex_analysis #combinatorics #optimization). 6절은 문서당 2~4 개를 기준으로 하고 일괄 작업이 아니라 그 문서를 보강하는 회차에 함께 채우라고 한다. 후보 찾기: for f in docs/*.md; do [ \"$(tail -1 \"$f\" | grep -o '#[a-z0-9_]*' | wc -l)\" -le 1 ] && echo \"$f\"; done",
+      "createdAt": "2026-09-17T08:53:19.593Z",
+      "seq": 473
     },
     {
-      "id": "d16bb4d0",
-      "title": "절댓값과 노름 표기 회귀 점검",
+      "id": "82823d56",
+      "title": "로마자로 쓴 그리스 문자 훑기",
       "priority": 12,
-      "note": "2026-09-17 두 번째 회차 확인, 회귀 없음. grep -o '\\\\Vert[^\\\\]*\\\\Vert' docs/*.md 의 쌍 내용은 전부 벡터/함수/작용소 노름이다(x 7, f 6, y 4, P 4, x-c_n, x-c_m, x+y, b_{k-1}^*, z, x_0^{(i)}-x_1^{(j)}, x-y). 스칼라나 미분형식이 이중선 안에 든 자리는 없다",
-      "createdAt": "2026-09-17T04:42:06.087Z",
-      "seq": 443
+      "note": "2026-09-17 세 번째 회차에 두 문서를 처리했다: markov-chains(pi, alpha, lambda_2 전면 전환), formalism-hilbert-program(epsilon_0, Gamma_0, ACA_0, ATR_0). 검사법과 오검출: grep -nE '(^| )(pi|alpha|beta|gamma|delta|lambda|mu|sigma|theta|epsilon|rho|tau|phi|psi|omega|zeta|eta|chi)(_[0-9a-z]+)?( |,|다|를|가|는|에|의)' 로 후보를 뽑되, 보고의 대부분은 오검출이다. 걸러야 할 것 셋: (1) 관용 영문 용어인 'zeta 함수', 'theta 급수/올림', 'Euler phi', 'lambda calculus', 'Pollard rho' 는 수식이 아니라 이름이다. (2) 코드펜스와 mermaid 안의 식별자(grep 은 펜스를 모른다). (3) 각주의 논문 제목. 진짜 신호는 아래첨자가 붙은 변수(lambda_2, epsilon_0)와 등호·부등호 옆에 오는 자리다",
+      "createdAt": "2026-09-17T08:54:50.954Z",
+      "seq": 475
     },
     {
-      "id": "c3e30325",
-      "title": "의문형 헤딩 회귀 점검",
-      "priority": 12,
-      "note": "2026-09-17 두 번째 회차 확인, 0 건. grep -nE '^#+ .*(왜|어떻게|무엇|인가|는가|을까) *$' docs/*.md 와 CLAUDE.md 4절의 '^##' grep 을 함께 돌려 둘 다 비었다. 새 문서에서 다시 새므로 회차마다 한 번 훑는다",
-      "createdAt": "2026-09-17T04:42:06.208Z",
-      "seq": 444
-    },
-    {
-      "id": "9a60fc22",
-      "title": "인라인 코드블록 수식 회귀 점검",
-      "priority": 12,
-      "note": "2026-09-17 두 번째 회차 확인, 0 건. grep -o '`[^`]*`' docs/*.md 를 백슬래시 명령과 _{ ^{ 로 거르면 비어 있다. 코드펜스 밖 백틱 스팬은 전부 코드 식별자, 언어 기능, 약어다",
-      "createdAt": "2026-09-17T04:42:06.327Z",
-      "seq": 445
-    },
-    {
-      "id": "64525d99",
+      "id": "169be13e",
       "title": "LaTeX 렌더 오류 회귀 점검 (KaTeX 파싱)",
       "priority": 12,
-      "note": "2026-09-17 두 번째 회차에 돌려 수식 30358 개 오류 0 을 확인했다(직전 회차 29897 개). 검사기는 스크래치패드 katexcheck.mjs 다. npm i katex 하고 node_modules/katex/dist/katex.mjs 를 import 한다(패키지 루트의 katex.mjs 는 없다). 검사 뒤 package.json 과 package-lock.json 을 git checkout 으로 되돌려야 katex 가 저장소 의존성에 섞이지 않는다. 코드펜스와 인라인 코드를 마스킹하고 인용부호 접두어를 벗긴 뒤 $$ 블록과 인라인 조각을 뽑아 renderToString(frag, {throwOnError:true, displayMode, strict:(c)=>c==='unicodeTextInMathMode'?'error':'ignore'}) 로 돌린다. 한글 판정에서 \\\\text{}/\\\\mathrm{} 안쪽은 제외해야 인라인 짝짓기가 새지 않는다",
-      "createdAt": "2026-09-17T04:42:46.379Z",
-      "seq": 446
+      "note": "2026-09-17 세 번째 회차에 돌려 수식 30448 개 오류 0 을 확인했다(직전 회차 30358 개). 이번 회차에 수식을 많이 고쳤는데도 회귀가 없다. 검사기는 스크래치패드 katexcheck.mjs 다. npm i katex --no-save 로 설치하면 package.json 과 package-lock.json 이 그대로라 git checkout 으로 되돌릴 필요가 없다. import 경로는 node_modules/katex/dist/katex.mjs 다(패키지 루트의 katex.mjs 는 없다). 코드펜스와 인라인 코드를 마스킹하고 인용부호 접두어를 벗긴 뒤 $$ 블록(여러 줄과 한 줄 모두)과 인라인 조각을 뽑아 renderToString(frag, {throwOnError:true, displayMode, strict:(c)=>c==='unicodeTextInMathMode'?'error':'ignore'}) 로 돌린다. 한글 판정에서 \\text{}/\\mathrm{} 안쪽은 제외해야 인라인 짝짓기가 새지 않는다",
+      "createdAt": "2026-09-17T08:55:24.500Z",
+      "seq": 476
     },
     {
-      "id": "896991c0",
+      "id": "a393c19c",
       "title": "개관 지도 mermaid 가 실제 간선의 부분그래프인지 회귀 점검",
       "priority": 12,
-      "note": "2026-09-17 두 번째 회차에 스크래치패드 mapcheck.mjs(python 판을 node 로 다시 씀)로 개관 12 개 화살표 284 개를 대조해 위반 1 건을 찾아 고쳤다. topology-overview 지도의 CSM(chern-simons) --> RT(reshetikhin-turaev) 는 실제 간선이 아니어서 실제 자식인 casson-invariant 로 바꿨다. RT 의 부모는 knot-invariants 와 modular-tensor-categories 이고 그 개요에 Chern-Simons 가 안 나오므로 5 절 기준 배경이지 선수지식이 아니다. 주의 셋: (1) '# 지도' 뒤가 한글이라 정규식에 \\\\b 를 쓰면 매치가 안 된다. /^# 지도\\\\s*$[\\\\s\\\\S]*?```mermaid/m 로 쓴다. (2) 한 줄에 A --> B --> C 처럼 체인이 오므로 줄 단위 매치가 아니라 순차 파싱을 해야 한다. (3) 해석 못하는 라벨 29 개는 개관이 쓰는 약칭('Mellin 변환', 'Riemann 곡면', 'Lagrange 쌍대성과 KKT' 등)이라 손댈 것이 없다",
-      "createdAt": "2026-09-17T04:47:01.854Z",
-      "seq": 447
+      "note": "2026-09-17 세 번째 회차에 스크래치패드 mapcheck.mjs 로 개관 12 개 화살표 270 개를 대조해 위반 0 을 확인했다(직전 회차 284 개 중 1 건 수정). 이번 회차에 analysis-overview 지도의 PS 라벨을 '멱급수와 Taylor 급수' 에서 '멱급수' 로 바꿨는데 간선은 그대로다. 주의 넷: (1) '# 지도' 뒤가 한글이라 정규식에 \\b 를 쓰면 매치가 안 된다. /^# 지도\\s*$[\\s\\S]*?```mermaid/m 로 쓴다. (2) 한 줄에 A --> B --> C 체인이 오므로 줄 단위가 아니라 순차 파싱을 한다. (3) 라벨이 여러 문서 제목의 접두사일 수 있다. 'Galois 표현' 은 galois-representations('Galois 표현과 에탈 코호몰로지')와 deformation-rings('Galois 표현의 변형과 보편 변형환') 둘 다의 접두사라, 먼저 찾은 하나만 쓰면 오검출 2 건이 난다. 후보를 전부 모아 하나라도 실제 간선이면 통과로 봐야 한다. (4) 해석 못하는 라벨 14 개는 개관이 쓰는 약칭이라 손댈 것이 없다",
+      "createdAt": "2026-09-17T08:56:21.662Z",
+      "seq": 477
     },
     {
-      "id": "67c2d946",
+      "id": "67f0658c",
       "title": "본문 링크가 표시 제목과 다른 문서를 가리키는 자리 회귀 점검",
       "priority": 12,
-      "note": "2026-09-17 두 번째 회차에 다시 돌려 회귀 없음(진짜 위반 0). 검사기를 node 로 다시 썼다: 스크래치패드 linkcheck.mjs. 코드펜스를 건너뛰고 본문 링크 [라벨](id.md) 에서 라벨이 대상 제목이거나 그 접두사이면 통과, 아니면 다른 문서 제목과 같거나 그 접두사인지 본다. 보고 9 건은 전부 접두사 충돌 오검출이다. '직관주의 논리'->intuitionism 7 건은 8 절대로 철학과 형식 체계를 합친 문서라 라벨이 맞고 kripke-semantics 의 제목 '직관주의 논리의 Kripke 의미론' 과 겹쳤을 뿐이다. '확률'->probability 2 건은 probabilistic-method('확률적 방법') 와 겹친 기존 오검출이다",
-      "createdAt": "2026-09-17T04:50:52.384Z",
-      "seq": 451
+      "note": "2026-09-17 세 번째 회차에 다시 돌려 회귀 없음(진짜 위반 0). 이번 회차에 power-series 제목을 '멱급수와 Taylor 급수' 에서 '멱급수' 로 좁히고 표시 제목 8 곳(analysis-overview, bernoulli-numbers, derivative, limits, residue-theorem, uniform-convergence, fourier-series 의 '거듭제곱 급수', derivative 의 'Taylor 급수')을 맞췄는데 새 위반이 없다. 보고 9 건은 전부 기존 접두사 충돌 오검출이다. '직관주의 논리'->intuitionism 7 건은 8 절대로 철학과 형식 체계를 합친 문서라 라벨이 맞고 kripke-semantics 의 제목 '직관주의 논리의 Kripke 의미론' 과 겹쳤을 뿐이다. '확률'->probability 2 건은 probabilistic-method 등과 겹친 기존 오검출이다. 검사법: 코드펜스를 건너뛰고 본문 링크 [라벨](id.md) 에서 라벨이 대상 제목이거나 그 접두사이면 통과, 아니면 다른 문서 제목과 같거나 그 접두사인지 본다",
+      "createdAt": "2026-09-17T08:56:51.979Z",
+      "seq": 478
     },
     {
-      "id": "eeed3d23",
-      "title": "닫는 $ 뒤 공백 회귀 점검",
+      "id": "1c4e03aa",
+      "title": "판정 순서도형 mermaid 가 남은 문서 훑기 — 후보 목록 소진",
       "priority": 12,
-      "note": "2026-09-17 두 번째 회차에 다시 돌려 회귀 없음. 보고 두 건은 여전히 maass-forms:173 과 selberg-trace-formula:168 의 Kim 논문 제목(수식으로 끝나고 닫는 따옴표가 바로 온다)으로 오검출이다. 검사기를 node 로 다시 썼다: 스크래치패드 dollarspace.mjs. 필수 조건 둘: (1) $ 짝짓기는 왼쪽부터 순차로 하되 내용 양끝이 공백이거나 한글이 있으면 수식으로 보지 않는다(단 \\\\text{}/\\\\mathrm{} 안쪽 한글은 예외). (2) 인용부호 접두어를 벗기고 코드펜스, 인라인 코드, 한 줄 $$...$$, $$ 블록을 먼저 마스킹한다",
-      "createdAt": "2026-09-17T04:51:31.617Z",
-      "seq": 452
-    },
-    {
-      "id": "46992855",
-      "title": "인라인 수식 별표 회귀 점검",
-      "priority": 12,
-      "note": "2026-09-17 두 번째 회차에 node 판 검사기(스크래치패드 asterisk.mjs)로 돌려 위반 1 건을 찾아 고쳤다. instanton-floer-homology:80 의 $R^*(\\\\Sigma)$ 를 R^\\\\ast 로 바꿨고 같은 문서 8 행의 $$ 블록 안 표기도 함께 맞췄다. 검사법: 코드펜스와 $$ 블록을 건너뛰고 인용부호 접두어를 벗긴 뒤 인라인 $ 짝을 순차로 맞추되 내용 양끝이 공백이거나 한글이 있으면 제외하고 * 가 남았는지 본다. $$ 블록 안의 * 는 강조가 먹지 않으므로 그대로 둔다(class-field-theory, quadratic-reciprocity 의 p^*)",
-      "createdAt": "2026-09-17T04:52:15.272Z",
-      "seq": 453
-    },
-    {
-      "id": "a14d1f36",
-      "title": "분야 태그가 하나뿐인 문서 채우기",
-      "priority": 12,
-      "note": "2026-09-17 두 번째 회차에 eigenvalues 를 #linear_algebra #algebra #probability #analysis 로 채웠다(그 문서를 보강한 회차라 함께 처리). 6 절은 문서당 2~4 개를 기준으로 하고 일괄 작업이 아니라 그 문서를 보강하는 회차에 함께 채우라고 한다. 남은 후보 찾기: for f in docs/*.md; do [ \"$(tail -1 \"$f\" | grep -o '#[a-z0-9_]*' | wc -l)\" -le 1 ] && echo \"$f\"; done",
-      "createdAt": "2026-09-17T04:52:15.519Z",
-      "seq": 455
+      "note": "2026-09-17 세 번째 회차에 원래 후보 30 개를 전부 처리해 목록이 비었다. 지운 것 21 개: algebraic-number-fields de-rham-cohomology power-series radon-nikodym classification-of-surfaces network-flow probabilistic-method stationary-phase matchings newton-method sphere-packing boolean-fourier marchenko-pastur sato-tate ramanujan-graphs s-cobordism unique-games flow-matching gnn-expressivity homomorphic-encryption post-quantum-cryptography speh-representations formalism-hilbert-program. 표로 바꾼 것 1 개: mathematical-structuralism(세 입장). 남긴 것 5 개는 4절이 허용하는 구조 도형이다: galois-connections(단위·여단위 가환도), yoneda-lemma(자연성 사각형), heyting-algebras(격자 포함관계 Hasse 도형과 Kripke 쌍대 대응), kripke-semantics(실제 프레임의 예), sea-algorithm(Elkies/Atkin 분기는 알고리즘의 실제 상태 전이이고 나눗셈·모듈러 다항식 차수가 그림에만 있다). 저장소 전체에서 mermaid 를 가진 문서는 229 개이고, 이번에 쓴 판정 노드 grep(grep -ln '인가\"]|는가\"]|{\"')은 그중 판정형만 잡는다. 다른 나열형(정의의 사슬, 증명 단계)은 이 grep 에 안 걸리므로 다음에는 mermaid 보유 229 개를 다른 기준으로 훑어야 한다. 후보 기준: 화살표 라벨이 논증의 접속사('따라서', '그러므로')이거나 노드가 전부 문장인 그림",
+      "createdAt": "2026-09-17T08:59:39.897Z",
+      "seq": 479
     },
     {
       "id": "ae1848a1",
@@ -642,6 +594,30 @@
       "note": "선형대수. jordan-canonical-form 의 자식으로 붙인다. 대수적으로 닫히지 않은 체에서 특성다항식이 일차식으로 쪼개지지 않을 때 쓰는 표준형으로, finitely-generated-modules 의 불변인자 분해가 근거다. 동반행렬, 불변인자의 나눔 사슬, 유사 판정이 체 확대에 불변이라는 점을 담는다",
       "createdAt": "2026-09-17T04:41:41.650Z",
       "seq": 441
+    },
+    {
+      "id": "699b709d",
+      "title": "Taylor 정리를 별도 문서로 분리할지 판단",
+      "priority": 10,
+      "note": "해석학. power-series 의 'Taylor 정리와 나머지항' 절(Lagrange 형, 적분형, 해석성 판정)이 독립 문서가 될 분량인지 본다. 지금은 power-series 안에서 충분히 짧아 나누지 않았다. Newton 방법과 gradient-descent 의 수렴 속도 분석이 나머지항을 쓰므로 부모는 power-series, 자식은 newton-method 가 된다",
+      "createdAt": "2026-09-17T08:40:23.743Z",
+      "seq": 460
+    },
+    {
+      "id": "b4a850aa",
+      "title": "실해석적이 아닌 매끄러운 함수와 단위분할",
+      "priority": 10,
+      "note": "미분기하. power-series 의 'e^{-1/x^2}' 절에 bump function 과 partition of unity 가 이름만 나오고 문서가 없다. manifolds 아래에 붙이면 다양체 위의 국소-전역 붙이기 논증(Riemann 계량의 존재, Whitney 매장)의 공통 도구가 된다",
+      "createdAt": "2026-09-17T08:40:23.865Z",
+      "seq": 461
+    },
+    {
+      "id": "09c81cac",
+      "title": "계산·알고리즘 분야 개관을 만들지 판단",
+      "priority": 10,
+      "note": "2026-09-17 세 번째 회차 판단: 지금은 만들지 않는다. 4.5절은 문서 10 개 이상인 분야 태그에 개관을 두라고 하는데, 갈래를 거두는 기준인 '태그 줄의 첫 태그' 로 세면 #computation 4 개, #algorithms 5 개로 합쳐 9 개다. #computation 태그가 붙은 문서 57 개는 대부분 다른 분야가 주 분야이고 도구 태그로 붙은 것이라 갈래를 채우지 못한다. 계산 쪽 주 분야 문서가 몇 개 더 늘면 computation-overview 를 만든다(갈래 후보: 계산 모형과 복잡도, 수치 알고리즘, 암호, 학습). 같은 방식으로 센 다른 후보: measure_theory 9, statistics 7, field_theory 5. complex_analysis 는 태그 39 개지만 주 분야가 3 개이고 analysis-overview 가 거둔다. 회차마다 이 집계를 다시 하려면: for t in computation algorithms; do for f in docs/*.md; do [ \"$(tail -1 $f | grep -o '#[a-z0-9_]*' | head -1)\" = \"#$t\" ] && echo $f; done; done",
+      "createdAt": "2026-09-17T08:47:59.996Z",
+      "seq": 469
     },
     {
       "id": "dfb3e493",
