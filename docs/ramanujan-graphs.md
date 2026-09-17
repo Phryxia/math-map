@@ -79,15 +79,6 @@ $$
 
 가 적용된다. $d=p+1$ 이므로 이 부등식이 그래프 쪽에서 $\lambda\le2\sqrt{d-1}$ 이 된다.
 
-```mermaid
-graph TD
-  A["사원수 대수의 생성원<br/>p = 네 제곱수의 합"] --> B["PGL_2(F_q) 의 Cayley 그래프<br/>차수 p+1"]
-  B --> C["고윳값 = Hecke 고윳값"]
-  C --> D["Jacquet-Langlands 로<br/>무게 2 첨점형식으로 이전"]
-  D --> E["Deligne 경계 |a_p| <= 2 sqrt p"]
-  E --> F["lambda <= 2 sqrt(d-1)<br/>Ramanujan"]
-```
-
 # 정의
 
 ## Ramanujan 그래프
