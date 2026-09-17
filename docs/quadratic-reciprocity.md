@@ -198,6 +198,7 @@ Jacobi 기호는 쉽게 계산되지만 제곱잉여 여부는 인수분해 없�
 
 ## 더 알아보기
 
+- [Gauss 정수환](gaussian-integers.md)
 - [Dirichlet 지표와 L 함수](dirichlet-l-functions.md)
 - [유체론](class-field-theory.md)
 

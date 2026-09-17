@@ -40,6 +40,7 @@ graph TD
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
 - [중국인의 나머지 정리](chinese-remainder-theorem.md): 서로소 법의 합동식 결합
 - [이차 상호법칙](quadratic-reciprocity.md): 제곱잉여의 대칭성, 유체론의 씨앗
+- [Gauss 정수환](gaussian-integers.md): 소수의 분해 유형과 두 제곱수의 합
 - [유한체](finite-fields.md): 소수 위수의 체와 그 확대
 
 ## 암호와 계산
