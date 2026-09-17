@@ -22,15 +22,15 @@ $$
 \mathrm{Gal}(L/\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times,\qquad \mathrm{Frob}_p\longmapsto p\bmod m
 $$
 
-이고 $p$ 가 완전분해할 조건은 $\mathrm{Frob}_p=1$ , 곧 $p\equiv1\pmod m$ 이다. 소수의 분해라는 대수적 질문이 나머지 계산으로 번역된다.
+이고 $p$ 가 완전분해할 조건은 $\mathrm{Frob}\_p=1$ , 곧 $p\equiv1\pmod m$ 이다. 소수의 분해라는 대수적 질문이 나머지 계산으로 번역된다.
 
 유체론은 이것이 원분체만의 현상이 아니라고 말한다. $K$ 의 모든 아벨 확대에서 분해법칙이 합동조건으로 서술되고, 무대가 $\mathbb Q$ 가 아니면 법 $m$ 의 나머지 자리에 광선유군의 원소가 들어간다.
 
 ## 아벨 조건의 역할
 
-분기하지 않는 $\mathfrak p$ 위의 Frobenius 는 $\mathfrak p$ 위에 있는 $L$ 의 소 아이디얼을 골라야 정해지고, 다른 것을 고르면 Galois 군의 켤레원이 나온다. 일반적으로 $\mathrm{Frob}_{\mathfrak p}$ 는 원소가 아니라 켤레류다.
+분기하지 않는 $\mathfrak p$ 위의 Frobenius 는 $\mathfrak p$ 위에 있는 $L$ 의 소 아이디얼을 골라야 정해지고, 다른 것을 고르면 Galois 군의 켤레원이 나온다. 일반적으로 $\mathrm{Frob}\_{\mathfrak p}$ 는 원소가 아니라 켤레류다.
 
-군이 아벨이면 켤레류가 한원소라 모호함이 사라진다. $\mathrm{Frob}_{\mathfrak p}$ 가 $\mathfrak p$ 만의 함수가 되고, 아이디얼의 곱에 대해 곱셈적으로 확장하면 아이디얼군에서 Galois 군으로 가는 준동형이 생긴다. 유체론이 아벨 확대에서 멈추는 이유다.
+군이 아벨이면 켤레류가 한원소라 모호함이 사라진다. $\mathrm{Frob}\_{\mathfrak p}$ 가 $\mathfrak p$ 만의 함수가 되고, 아이디얼의 곱에 대해 곱셈적으로 확장하면 아이디얼군에서 Galois 군으로 가는 준동형이 생긴다. 유체론이 아벨 확대에서 멈추는 이유다.
 
 비아벨로 넘어가면 켤레류 정보만 남는다. 켤레류에서 수를 뽑으려면 [표현의 지표](group-representations.md)가 필요하고, 거기서 Galois 표현과 $L$ 함수의 세계가 열린다.
 
@@ -89,7 +89,7 @@ $$
 
 ## Artin 사상
 
-$L/K$ 가 아벨 확대이고 $\mathfrak m$ 이 분기하는 모든 소수를 포함한다고 하자. $\mathfrak m$ 과 서로소인 소 아이디얼 $\mathfrak p$ 에 대해 $\mathrm{Frob}_{\mathfrak p}\in\mathrm{Gal}(L/K)$ 가 잘 정의되고, 곱셈적으로 확장해
+$L/K$ 가 아벨 확대이고 $\mathfrak m$ 이 분기하는 모든 소수를 포함한다고 하자. $\mathfrak m$ 과 서로소인 소 아이디얼 $\mathfrak p$ 에 대해 $\mathrm{Frob}\_{\mathfrak p}\in\mathrm{Gal}(L/K)$ 가 잘 정의되고, 곱셈적으로 확장해
 
 $$
 \psi_{L/K}\colon I_K^{\mathfrak m}\to\mathrm{Gal}(L/K),\qquad
@@ -112,7 +112,7 @@ $$
 
 > **유일성과 격자 동형.** 두 대응은 서로 역이며 포함관계를 뒤집는다. $H_1\subseteq H_2\iff L_1\supseteq L_2$ 이고, 교집합과 합성이 곱과 교집합에 대응한다.
 
-$H$ 가 자명군일 때 나오는 확대 $K_{\mathfrak m}$ 가 **광선유체**다. $\mathfrak m$ 밖에서 불분기인 아벨 확대 전체를 품는 최대 확대이며 $\mathrm{Gal}(K_{\mathfrak m}/K)\cong\mathrm{Cl}_{\mathfrak m}(K)$ 다.
+$H$ 가 자명군일 때 나오는 확대 $K_{\mathfrak m}$ 가 **광선유체**다. $\mathfrak m$ 밖에서 불분기인 아벨 확대 전체를 품는 최대 확대이며 $\mathrm{Gal}(K_{\mathfrak m}/K)\cong\mathrm{Cl}\_{\mathfrak m}(K)$ 다.
 
 ## 이델류군에 의한 서술
 
@@ -123,7 +123,7 @@ $$
 \qquad C_K=\mathbb A_K^\times/K^\times
 $$
 
-$C_K$ 가 **이델류군**이다. 열린 유한지표 부분군으로 몫을 취하면 광선유군이 나오므로 $C_K$ 는 모든 $\mathrm{Cl}_{\mathfrak m}(K)$ 를 동시에 담는다. 유체론은 한 줄이 된다.
+$C_K$ 가 **이델류군**이다. 열린 유한지표 부분군으로 몫을 취하면 광선유군이 나오므로 $C_K$ 는 모든 $\mathrm{Cl}\_{\mathfrak m}(K)$ 를 동시에 담는다. 유체론은 한 줄이 된다.
 
 $$
 \psi_K\colon C_K\longrightarrow\mathrm{Gal}(K^{\mathrm{ab}}/K)
@@ -157,7 +157,7 @@ $\mathfrak m=1$ 에 대응하는 확대 $H$ 를 **힐베르트 유체**라 한�
 
 > $\mathbb Q$ 의 모든 유한 아벨 확대는 어떤 원분체 $\mathbb Q(\zeta_m)$ 안에 들어 있다.
 
-$\mathbb Q$ 의 아벨 확대 $L$ 의 도체를 $\mathfrak m\mid(m)\infty$ 로 잡으면 $L$ 이 광선유체 안에 들어가야 하는데, $\mathrm{Cl}_{(m)\infty}(\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathbb Q(\zeta_m)$ 이 그 광선유체다.
+$\mathbb Q$ 의 아벨 확대 $L$ 의 도체를 $\mathfrak m\mid(m)\infty$ 로 잡으면 $L$ 이 광선유체 안에 들어가야 하는데, $\mathrm{Cl}\_{(m)\infty}(\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathbb Q(\zeta_m)$ 이 그 광선유체다.
 
 이 정리를 일반 $K$ 로 옮기는 것이 Hilbert 의 12 번 문제다. $K^{\mathrm{ab}}$ 를 생성하는 해석적 함수를 찾는 문제이며, $K=\mathbb Q$ 에서는 $e^{2\pi ix}$ 가 답이고 허수 이차체에서는 타원 모듈러 함수와 [타원곡선](elliptic-curves.md)의 복소곱셈 이론이 답을 준다. 그 밖의 수체에서는 그런 함수가 알려져 있지 않다[^1].
 
@@ -190,42 +190,19 @@ $$
 
 $n=5$ 에서 $\mathrm{Cl}(\mathbb Q(\sqrt{-5}))\cong\mathbb Z/2$ 이므로 $[H:K]=2$ 이고 $H=K(i)=\mathbb Q(i,\sqrt5)$ 다. $\mathbb Q(i,\sqrt5)/\mathbb Q$ 가 $(\mathbb Z/2)^2$ 확대라 $p$ 의 완전분해가 합동조건 $p\equiv1,9\pmod{20}$ 으로 떨어진다.
 
-```python
-def primes(n):
-    return [p for p in range(2, n) if all(p % d for d in range(2, int(p**0.5) + 1))]
+| $p\bmod 20$ | 소수의 예 | $x^2+5y^2$ | $2x^2+2xy+3y^2$ | $H$ 에서 완전분해 |
+|---|---|---|---|---|
+| $1,\thickspace 9$ | 29, 41 | O | | O |
+| $3,\thickspace 7$ | 3, 7, 23, 43, 47 | | O | |
+| $11,13,17,19$ | 11, 13, 17, 19 | | | |
 
-def represented(a, b, c, p):
-    """p 를 이차형식 a x² + b xy + c y² 로 나타낼 수 있는가."""
-    B = int(p**0.5) + 1
-    return any(a*x*x + b*x*y + c*y*y == p for x in range(-B, B+1) for y in range(-B, B+1))
-
-def splits_in_H(p):
-    """p 가 H = Q(i, √5) 에서 완전분해하는가. 곧 p ≡ 1 (4) 이고 5 가 법 p 의 제곱잉여."""
-    return p % 4 == 1 and pow(5, (p - 1) // 2, p) == 1
-
-# K = Q(√-5), Cl(K) = Z/2, 힐베르트 유체 H = K(i) = Q(i, √5)
-print(" p  | 주류 x²+5y² | 비주류 2x²+2xy+3y² | H 에서 완전분해 | p mod 20")
-for p in primes(50):
-    if p in (2, 5): continue
-    print(f"{p:3} | {str(represented(1,0,5,p)):>11} | {str(represented(2,2,3,p)):>18}"
-          f" | {str(splits_in_H(p)):>14} | {p % 20:8}")
-
-#  p  | 주류 x²+5y² | 비주류 2x²+2xy+3y² | H 에서 완전분해 | p mod 20
-#   3 |       False |               True |          False |        3
-#   7 |       False |               True |          False |        7
-#  11 |       False |              False |          False |       11
-#  29 |        True |              False |           True |        9
-#  41 |        True |              False |           True |        1
-#  43 |       False |               True |          False |        3
-```
-
-세 번째 열과 네 번째 열이 일치한다. 왼쪽 두 열이 유수군의 두 류에 대응하고, $p\equiv11,13,17,19$ 인 경우는 $p$ 가 $K$ 에서 분해하지 않아 둘 다 거짓이다.
+$x^2+5y^2$ 으로 표현되는 소수와 $H$ 에서 완전분해하는 소수가 같다. 두 이차형식이 유수군의 두 류에 대응하고, $p\equiv11,13,17,19$ 인 경우는 $p$ 가 $K$ 에서 분해하지 않아 어느 형식으로도 표현되지 않는다.
 
 유수군 대신 차수의 환유군을 쓰면 대응하는 체가 아벨이 아닐 수 있다. $p=x^2+27y^2$ 의 판정은 $p\equiv1\pmod3$ 이고 2 가 법 $p$ 의 세제곱잉여라는 조건이며, 여기 관여하는 $\mathbb Q(\zeta_3,\sqrt[3]2)/\mathbb Q$ 는 $S_3$ 확대라 $\mathbb Q$ 위에서 합동조건으로 서술되지 않는다. $\mathbb Q(\zeta_3)$ 위에서는 아벨이라 유체론이 적용되므로, 상호법칙을 쓰려면 밑체를 올바로 골라야 한다.
 
 ## Chebotarev 밀도 정리
 
-유체론의 해석적 짝이다. $L/K$ 가 Galois 이고 $C\subseteq\mathrm{Gal}(L/K)$ 가 켤레류면 $\mathrm{Frob}_{\mathfrak p}=C$ 인 소 아이디얼의 밀도가 $|C|/[L:K]$ 다.
+유체론의 해석적 짝이다. $L/K$ 가 Galois 이고 $C\subseteq\mathrm{Gal}(L/K)$ 가 켤레류면 $\mathrm{Frob}\_{\mathfrak p}=C$ 인 소 아이디얼의 밀도가 $|C|/[L:K]$ 다.
 
 아벨 확대에 적용하면 각 광선유류에 속하는 소 아이디얼의 밀도가 모두 같다는 뜻이고, $K=\mathbb Q$ 에서는 [Dirichlet L 함수](dirichlet-l-functions.md)의 등차수열 소수 정리가 된다. Frobenius 의 균등 분포 덕분에 충분히 많은 $\mathfrak p$ 에서 분해 양상이 같으면 두 확대가 같다는 논증이 가능하다.
 
@@ -242,7 +219,7 @@ for p in primes(50):
 
 ## 비아벨로의 확장
 
-켤레류에서 수를 뽑는 방법은 표현의 지표를 취하는 것이다. Galois 표현 $\rho\colon\mathrm{Gal}(\bar K/K)\to\mathrm{GL}_n(\mathbb C)$ 에 대해
+켤레류에서 수를 뽑는 방법은 표현의 지표를 취하는 것이다. Galois 표현 $\rho\colon\mathrm{Gal}(\bar K/K)\to\mathrm{GL}\_n(\mathbb C)$ 에 대해
 
 $$
 L(s,\rho)=\prod_{\mathfrak p}\det\big(1-\rho(\mathrm{Frob}_{\mathfrak p})N\mathfrak p^{-s}\big)^{-1}
@@ -250,7 +227,7 @@ $$
 
 를 만들면 $n=1$ 일 때 Hecke $L$ 함수이고, 유체론은 그 $L$ 함수가 자기동형 $L$ 함수와 일치한다는 진술이 된다.
 
-Langlands 강령은 $n\ge2$ 에서도 $n$ 차원 Galois 표현이 $\mathrm{GL}_n$ 의 자기동형 표현과 대응하고 $L$ 함수가 일치한다고 예측한다. $n=2$ 의 특별한 경우가 모듈러성 정리이며 Fermat 마지막 정리의 증명을 완성했다. 유체론은 $\mathrm{GL}_1$ 의 경우로 이 그림 안에 자리잡는다.
+Langlands 강령은 $n\ge2$ 에서도 $n$ 차원 Galois 표현이 $\mathrm{GL}\_n$ 의 자기동형 표현과 대응하고 $L$ 함수가 일치한다고 예측한다. $n=2$ 의 특별한 경우가 모듈러성 정리이며 Fermat 마지막 정리의 증명을 완성했다. 유체론은 $\mathrm{GL}\_1$ 의 경우로 이 그림 안에 자리잡는다.
 
 ## 허수 이차체와 복소곱셈
 
@@ -283,4 +260,4 @@ CM 방법은 원하는 위수를 갖는 타원곡선을 유한체 위에 만들 
 - [복소 곱셈과 허수이차체의 유체론](complex-multiplication.md)
 - [Brauer 군과 Hasse 원리](brauer-groups.md)
 
-#number_theory #field_theory #theorem
+#number_theory #field_theory #group_theory #theorem
