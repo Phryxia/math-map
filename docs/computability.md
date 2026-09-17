@@ -104,6 +104,7 @@ $A$ 의 입력을 $B$ 의 입력으로 바꾸는 계산 가능한 함수 $f$ 가
 - [함수](functions.md)
 - [명제와 증명](proofs.md)
 - [가산성과 비가산성](cardinality.md)
+- [계산 개관](computation-overview.md)
 
 ## 더 알아보기
 

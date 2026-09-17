@@ -135,6 +135,7 @@ Bellman 방정식은 원래 동적 계획법에서 나온 식이고, 유한 시�
 ## 선수지식
 
 - [DAG와 위상정렬](dag-topological.md)
+- [계산 개관](computation-overview.md)
 
 ## 더 알아보기
 

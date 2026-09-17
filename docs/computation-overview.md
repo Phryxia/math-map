@@ -1,0 +1,96 @@
+# 계산 개관
+
+# 개요
+
+계산 이론은 기계가 무엇을 풀 수 있는지, 풀 수 있다면 얼마나 빨리 푸는지를 묻는다. 두 물음이 층위를 나눈다. 첫째 층위는 가부이고, 정지 문제가 알고리즘으로 풀리지 않는다는 대각선 논법이 답한다. 둘째 층위는 비용이고, $\mathrm P$ 와 $\mathrm{NP}$ 의 분리 여부와 NP-완전 문제의 근사 한계가 답한다.
+
+이 지도의 계산 문서는 다섯 줄기다. 계산 모형과 결정 불가능성, 복잡도류와 환원, 구체적 알고리즘 설계, 그 알고리즘이 쓰는 자료구조, 그리고 계산 난해성을 안전성의 근거로 삼는 암호다. 최적화 쪽의 완화와 쌍대성은 [최적화 개관](optimization-overview.md)에, 논리 쪽의 대응은 [수학기초론 개관](foundations-overview.md)에 있다.
+
+시작은 [계산 가능성과 정지 문제](computability.md)다. 거기서 [P 대 NP 문제](p-np.md)로 가면 [NP-완전성](np-completeness.md)과 [근사 알고리즘](approximation-algorithms.md)을 거쳐 근사 불가능성으로 이어지고, [유한 오토마타](finite-automata.md)와 [Lambda calculus](lambda-calculus.md)로는 계산 모형의 두 갈래가 갈라진다.
+
+# 지도
+
+```mermaid
+graph TD
+  PF["명제와 증명"] --> CB["계산 가능성과 정지 문제"]
+  CA["가산성과 비가산성"] --> CB
+  CB --> FA["유한 오토마타"]
+  CB --> RT["Rice 정리"]
+  CB --> LC["Lambda calculus"]
+  CB --> DT["영역 이론"]
+  LC --> CH["Curry–Howard 대응"]
+  CB --> PN["P 대 NP 문제"]
+  PN --> NPC["NP-완전성"]
+  NPC --> AA["근사 알고리즘"]
+  AA --> LPR["LP 완화와 반올림"]
+  AA --> PCP["PCP 정리"]
+  PCP --> UG["유일게임 추측"]
+  LP["선형계획법"] --> LPR
+  LPR --> SDP["반정부호 계획법"]
+  SDP --> UG
+  DAG["DAG와 위상정렬"] --> DP["동적 계획법"]
+  DP --> SP["최단경로와 Bellman 방정식"]
+  DT --> SP
+  UF["서로소 집합 자료구조"] --> DC["동적 연결성"]
+  DC --> LCT["Link-cut tree"]
+  DL["이산로그와 Diffie–Hellman"] --> PQ["격자 기반 후양자 암호"]
+  LA["격자와 최단벡터 문제"] --> PQ
+  PQ --> HE["완전동형암호"]
+  DL --> EC["타원곡선"]
+  EC --> PBC["Weil 쌍과 쌍선형 암호"]
+```
+
+# 갈래
+
+## 계산가능성과 계산 모형
+
+- [계산 가능성과 정지 문제](computability.md): Turing 기계, 대각선 논법, 결정 불가능성
+- [Rice 정리](rice-theorem.md): 자명하지 않은 의미론적 성질은 모두 결정 불가능
+- [유한 오토마타와 정규언어](finite-automata.md): 유한 상태 모형, Myhill–Nerode 정리, 펌핑 보조정리
+- [Lambda calculus](lambda-calculus.md): 함수 적용만으로 세운 계산 모형, $\beta$ 축약과 Church–Rosser 정리
+- [Curry–Howard 대응](curry-howard.md): 증명과 프로그램, 명제와 타입의 대응
+- [영역 이론과 Kleene 고정점 정리](domain-theory.md): 재귀 정의의 의미를 최소 고정점으로
+
+## 복잡도와 근사 한계
+
+- [P 대 NP 문제](p-np.md): 다항시간 판정과 다항시간 검증의 분리 문제
+- [NP-완전성과 Cook–Levin 정리](np-completeness.md): 환원과 완전성, SAT 의 보편성
+- [근사 알고리즘](approximation-algorithms.md): 최적해 대신 보장된 비율의 해
+- [PCP 정리와 근사 불가능성](pcp-theorem.md): 상수 개의 비트만 읽는 검증, 근사 하한
+- [유일게임 추측과 2-to-2 정리](unique-games.md): 최적 근사 비율을 결정하는 추측
+
+## 알고리즘
+
+- [동적 계획법](dynamic-programming.md): 부분문제의 DAG 위에서 값을 위상순으로 채운다
+- [최단경로와 Bellman 방정식](shortest-paths.md): Bellman–Ford, Dijkstra, 고정점으로서의 최단거리
+- [LP 완화와 반올림](lp-rounding.md): 정수 제약을 푼 뒤 해를 되돌리는 근사 설계
+- [고속 Fourier 변환과 합성곱](fft.md): 분할정복으로 $O(n\log n)$ 에 이산 Fourier 변환
+
+## 자료구조
+
+- [서로소 집합 자료구조](union-find.md): 경로 압축과 랭크 병합, 역 Ackermann 함수 상한
+- [동적 연결성](dynamic-connectivity.md): 간선 삽입과 삭제 아래에서 연결성 질의
+- [Link-cut tree](link-cut-trees.md): splay 트리로 구현한 동적 숲, 경로 질의
+
+## 암호
+
+- [RSA 암호](rsa-cryptosystem.md): 소인수분해의 난해성 위에 세운 공개키 암호
+- [이산로그와 Diffie–Hellman](discrete-logarithm.md): 순환군의 이산로그 문제와 키 교환
+- [Weil 쌍과 쌍선형 암호](pairing-based-cryptography.md): 타원곡선의 쌍선형 사상과 신원 기반 암호
+- [격자 기반 후양자 암호](post-quantum-cryptography.md): LWE 와 SIS, 양자 알고리즘에 견디는 가정
+- [완전동형암호](homomorphic-encryption.md): 암호문 위에서 덧셈과 곱셈, 잡음 관리와 부트스트래핑
+
+# 연관 문서
+
+## 선수지식
+
+- [명제와 증명](proofs.md)
+
+## 더 알아보기
+
+- [계산 가능성과 정지 문제](computability.md)
+- [동적 계획법](dynamic-programming.md)
+- [RSA 암호](rsa-cryptosystem.md)
+- [이산로그와 Diffie–Hellman](discrete-logarithm.md)
+
+#computation #complexity #algorithms #cryptography #overview

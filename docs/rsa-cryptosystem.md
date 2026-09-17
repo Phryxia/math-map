@@ -209,6 +209,7 @@ CRT 복호화는 크기가 절반인 모듈러스에서 거듭제곱을 두 번 
 
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)
 - [중국인의 나머지 정리](chinese-remainder-theorem.md)
+- [계산 개관](computation-overview.md)
 
 ## 더 알아보기
 

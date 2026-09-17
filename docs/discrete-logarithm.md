@@ -171,6 +171,7 @@ Shor 알고리즘은 소인수분해와 이산로그를 다항시간에 푼다. 
 
 - [군](groups.md)
 - [정수의 합동과 나머지 연산](modular-arithmetic.md)
+- [계산 개관](computation-overview.md)
 
 ## 더 알아보기
 
