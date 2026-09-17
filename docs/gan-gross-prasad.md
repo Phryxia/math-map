@@ -88,7 +88,7 @@ $$
 
 이다. 앞 절의 인터레이싱 상황이 이 경우다.
 
-**Fourier–Jacobi 경우 ($d$ 짝수).** $G(W)$ 만으로는 부족하고 Heisenberg 군과 [Weil 표현](theta-functions.md) $\omega_\psi$ 를 끼운다. $d=0$ 에서 쌍은
+**Fourier–Jacobi 경우 ($d$ 짝수).** $G(W)$ 만으로는 부족하고 Heisenberg 군과 [Weil 표현](weil-representation.md) $\omega_\psi$ 를 끼운다. $d=0$ 에서 쌍은
 
 $$
 \bigl(\mathrm{Mp}(2n)\times\mathrm{Sp}(2n),\ \mathrm{Sp}(2n)\bigr),

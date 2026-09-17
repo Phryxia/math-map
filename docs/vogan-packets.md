@@ -43,7 +43,7 @@ graph TD
   B --> V
 ```
 
-무한차원 표현과 유한차원 표현을 같은 이름표 아래 두는 것은 [Jacquet–Langlands 대응](waldspurger-formula.md)이 이미 하던 일이고, Vogan 꾸러미는 그것을 이름표 체계 안에 넣은 것이다.
+무한차원 표현과 유한차원 표현을 같은 이름표 아래 두는 것은 [Jacquet–Langlands 대응](jacquet-langlands.md)이 이미 하던 일이고, Vogan 꾸러미는 그것을 이름표 체계 안에 넣은 것이다.
 
 ## 기저점
 
