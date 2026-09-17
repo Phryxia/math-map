@@ -59,40 +59,7 @@ $$
 
 $\mathfrak P^{\thinspace\theta}$ 가 주 아이디얼이라는 것이 위 등식의 내용이다. $\theta$ 자체는 정수계수가 아니지만 정수계수로 만드는 원소를 곱하면 $\mathfrak P$ 의 류를 그만큼 거듭제곱하면 단위류라는 말이 되고, 소 아이디얼의 류가 류군을 생성하므로 소멸 정리가 나온다.
 
-```python
-# (c - sigma_c) theta 가 정수계수이고, (1 + sigma_{-1}) theta = 노름원소임을 확인한다
-from math import gcd
-from fractions import Fraction
-
-def theta(m):                                   # {a/m} 를 sigma_a^{-1} 의 계수로
-    G = [a for a in range(1, m) if gcd(a, m) == 1]
-    return {a: Fraction(a, m) for a in G}, G
-
-def act(c, th, G, m):                           # sigma_c 를 왼쪽에서 곱한다
-    return {a: th[(a * c) % m] for a in G}
-
-for m in [5, 7, 8, 9, 11, 12, 13, 15, 16, 23]:
-    th, G = theta(m)
-    for c in G:
-        if c == 1: continue
-        sc = act(c, th, G, m)
-        assert all((c * th[a] - sc[a]).denominator == 1 for a in G)
-    minus = act(m - 1, th, G, m)
-    assert all(th[a] + minus[a] == 1 for a in G)
-```
-
 $\lbrace a/m\rbrace+\lbrace-a/m\rbrace=1$ 이므로 $(1+\sigma_{-1})\theta_m=\sum_a\sigma_a$ 이고, $\theta$ 의 짝수 부분에는 노름원소밖에 없다. 노름원소는 류군의 짝수 성분에 대해 아무 정보도 주지 않으므로 Stickelberger 는 홀수 성분만 다루며, 이 비대칭이 Herbrand–Ribet 과 Vandiver 추측까지 이어진다.
-
-```mermaid
-flowchart TD
-  G["Gauss 합 g(chi)"] --> V["pi 부치 = 지표의 지수"]
-  V --> P["(g) = prod P_t^{<kt>}"]
-  P --> TH["Stickelberger 원소 theta_m"]
-  TH --> ANN["(c - sigma_c) theta 가 Cl 을 소멸"]
-  L["L(0, chi) = -B_{1,chi}"] --> TH
-  ANN --> HER["Herbrand: p 부재 B_k => 성분 0"]
-  ANN --> IDX["지표 공식 [Z[G]^- : I^-] = h^-"]
-```
 
 # 정의
 
@@ -222,4 +189,4 @@ Gauss 합의 분해는 Jacobi 합 $J(\chi,\psi)=g(\chi)g(\psi)/g(\chi\psi)$ 의 
 - [Iwasawa 주추측과 순환체 단수](iwasawa-main-conjecture.md)
 - [Herbrand–Ribet 정리와 Eisenstein 합동](herbrand-ribet.md)
 
-#number_theory #theorem #algebra
+#number_theory #algebra #field_theory #theorem
