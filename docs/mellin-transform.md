@@ -59,18 +59,6 @@ $$
 
 이 적분이 $n\le x$ 라는 조건을 해석적으로 표현한다. $y=x/n$ 을 넣고 $n$ 에 대해 더하면 Perron 공식이 되고, 셈의 조건이 윤곽적분으로 바뀌면서 조합적 문제가 복소해석 문제가 된다.
 
-```mermaid
-flowchart TD
-  F["f(x)"] --> MT["Mellin 변환<br/>띠 a < Re s < b"]
-  MT --> POLE["해석적 연속: 극점"]
-  POLE --> ASY["점근전개<br/>위치=지수, 유수=계수"]
-  POLE --> OSC["허축 극점<br/>-> log x 주기 진동"]
-  MT --> GAMMA["e^{-x} -> Gamma(s)"]
-  DS["Dirichlet 급수 D(s)"] --> PERRON["Perron: sum_{n<=x} a_n"]
-  PERRON --> SHIFT["윤곽 이동"]
-  SHIFT --> PNT["zeta 의 s=1 극점 -> psi(x) ~ x"]
-```
-
 # 정의
 
 ## 변환과 역변환
@@ -155,27 +143,7 @@ $$
 
 주도항 $\log_2(1/x)$ 에 백만 분의 일 수준의 주기 떨림이 얹힌다.
 
-```python
-from math import exp, log, pi, factorial, sinh, sqrt
-g, L = 0.5772156649015329, log(2)
-S = lambda x: sum(exp(-x * 2 ** k) for k in range(300))
-
-def main(x, N=6):                                   # 진동항을 뺀 주도부
-    v = log(1 / x) / L - g / L + 0.5
-    for n in range(1, N + 1):
-        v += (-1) ** n / factorial(n) / (1 - 2.0 ** n) * x ** n
-    return v
-
-for j in range(8):                                  # log2 x 한 주기를 훑는다
-    x = 1e-6 * 2 ** (j / 8)
-    print("%.3f %.3e" % (j / 8, S(x) - main(x)))
-# 0.000 -1.517e-06 / 0.250 -4.168e-07 / 0.500 1.517e-06 / 0.750 4.168e-07
-
-y = 2 * pi / L
-print("예측 진폭 %.3e" % (2 * sqrt(pi / (y * sinh(pi * y))) / L))   # 1.573e-06
-```
-
-$x$ 를 $2$ 배 할 때마다 잔차가 같은 값으로 돌아오고 한 주기에서 진폭이 위 식과 맞는다.
+$x$ 를 $2$ 배 할 때마다 잔차가 같은 값으로 돌아오므로 이 떨림은 $\log_2x$ 에 대해 주기 $1$ 이다. $x\approx10^{-6}$ 에서 진폭이 $1.6\times10^{-6}$ 규모다.
 
 # 활용
 
