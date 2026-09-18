@@ -197,27 +197,6 @@ $$
 
 이다. 실수 자리의 $-1$ 이 남아 균형을 한 칸 어긋나게 만든다. 이 완화된 구조의 쌍대는 $p$ 에서 엄격한 구조이므로 결론은 엄격 Selmer 군의 정확한 크기이고, [Kato](euler-systems.md) 의 zeta 원소가 사는 자리다.
 
-다음은 자리별 기여를 더해 두 경우를 비교한다.
-
-```javascript
-// chi(F) = sum_v ( dim H^1_F(K_v,T) - dim H^0(K_v,T) ) + dim H^0(K,T) - dim H^0(K,T*)
-// K = Q, T = E[p], p >= 5, E[p] 기약, E 는 p 에서 좋은 환원.
-function coreRank(localConditions, h0Global = 0, h0GlobalDual = 0) {
-  const sum = localConditions.reduce((acc, { dimF, dimH0 }) => acc + dimF - dimH0, 0);
-  return sum + h0Global - h0GlobalDual;
-}
-
-const selfDual = [
-  { v: 'inf', dimF: 0, dimH0: 1 }, // H^1(R,T)=0, T^{c=1} 은 1 차원
-  { v: 'p', dimF: 1, dimH0: 0 }, // Bloch-Kato 유한부분
-  { v: 'bad', dimF: 1, dimH0: 1 }, // 불분기: 두 차원이 같다
-];
-const relaxedAtP = selfDual.map((c) => (c.v === 'p' ? { ...c, dimF: 2 } : c));
-
-console.log(coreRank(selfDual)); // 0  -> Kolyvagin 계가 없다
-console.log(coreRank(relaxedAtP)); // 1  -> 자유 순위 1
-```
-
 ## 주정리
 
 $T$ 가 잔여 표현의 상이 충분히 크다는 조건을 만족한다고 하자. Mazur–Rubin 의 결론은 셋이다.

@@ -56,18 +56,11 @@ $$
 
 GW 알고리즘은 절단 문제를 단위구 위 벡터 배치로 완화하고, 무작위 초평면으로 자른다. 두 벡터의 각이 $\theta$ 면 잘릴 확률이 $\theta/\pi$ 인 반면 SDP 목적값 기여는 $(1-\cos\theta)/2$ 다. 비율의 최솟값이 근사비다.
 
-```javascript
-// α_GW = min_{0<θ≤π} (θ/π) / ((1-cos θ)/2)
-let best = [Infinity, 0];
-for (let i = 1; i <= 200000; i++) {
-  const th = Math.PI * i / 200000;
-  const v = (2 / Math.PI) * th / (1 - Math.cos(th));
-  if (v < best[0]) best = [v, th];
-}
-console.log('α_GW =', best[0].toFixed(6), 'at θ* =', (best[1] * 180 / Math.PI).toFixed(3), '도');
-// α_GW = 0.878567 at θ* = 133.564 도
-console.log('PCP 로 알려진 한계 16/17 =', (16 / 17).toFixed(6));   // 0.941176
-```
+$$
+\alpha_{\mathrm{GW}}=\min_{0\lt \theta\le\pi}\frac{\theta/\pi}{(1-\cos\theta)/2}=0.878567\ldots
+$$
+
+최솟값은 $\theta^\ast=133.564^\circ$ 에서 나온다. PCP 정리로 알려진 난해성의 문턱은 $16/17=0.941176\ldots$ 다.
 
 $0.878567$ 과 $0.941176$ 사이가 비어 있고, UGC 가 참이면 아래쪽 값이 정답이다. 최솟값이 나오는 각 $133.6^\circ$ 가 Majority is Stablest 의 극단 함수에서 다시 나타나므로, 알고리즘의 손실과 난해성의 구성이 같은 지점을 가리킨다.
 

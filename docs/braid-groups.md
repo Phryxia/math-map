@@ -76,50 +76,14 @@ $$
 
 $\doteq$ 는 $\pm t^k$ 배를 무시한다는 뜻이다.
 
-```javascript
-const mul = (A, B) => A.map(r => B[0].map((_, j) => r.reduce((s, v, k) => s + v * B[k][j], 0)));
-const id = n => Array.from({length: n}, (_, i) => Array.from({length: n}, (_, j) => +(i === j)));
-const inv = (M) => {                                  // 가우스–조던
-  const n = M.length, A = M.map((r, i) => [...r, ...id(n)[i]]);
-  for (let c = 0; c < n; c++) {
-    let p = c; while (Math.abs(A[p][c]) < 1e-12) p++;
-    [A[c], A[p]] = [A[p], A[c]];
-    const d = A[c][c]; A[c] = A[c].map(v => v / d);
-    for (let r = 0; r < n; r++) if (r !== c) { const f = A[r][c]; A[r] = A[r].map((v, k) => v - f * A[c][k]); }
-  }
-  return A.map(r => r.slice(n));
-};
-const det = (M) => {
-  const n = M.length, A = M.map(r => [...r]); let d = 1;
-  for (let c = 0; c < n; c++) {
-    let p = c; for (let r = c; r < n; r++) if (Math.abs(A[r][c]) > Math.abs(A[p][c])) p = r;
-    if (Math.abs(A[p][c]) < 1e-14) return 0;
-    if (p !== c) { [A[c], A[p]] = [A[p], A[c]]; d = -d; }
-    d *= A[c][c];
-    for (let r = c + 1; r < n; r++) { const f = A[r][c] / A[c][c]; for (let k = c; k < n; k++) A[r][k] -= f * A[c][k]; }
-  }
-  return d;
-};
-const gen = (i, n, t) => {                            // 감소 Burau 의 σ_i
-  if (n === 2) return [[-t]];
-  const m = id(n - 1);
-  if (i === 1) { m[0][0] = -t; m[0][1] = 1; }
-  else if (i === n - 1) { m[i-1][i-2] = t; m[i-1][i-1] = -t; }
-  else { m[i-1][i-2] = t; m[i-1][i-1] = -t; m[i-1][i] = 1; }
-  return m;
-};
-const alexander = (word, n, t) => {                   // word: +i 는 σ_i, -i 는 σ_i^{-1}
-  let M = id(n - 1);
-  for (const w of word) M = mul(M, w > 0 ? gen(w, n, t) : inv(gen(-w, n, t)));
-  const D = det(id(n - 1).map((r, i) => r.map((v, j) => v - M[i][j])));
-  return D * (1 - t) / (1 - Math.pow(t, n));
-};
+$\bar\rho(\sigma_i)$ 는 항등행렬에서 $i$ 행만 바뀌고, 그 행의 $(i-1,i,i+1)$ 성분이 차례로 $t,-t,1$ 이다. 양 끝 행에서는 없는 자리를 뺀다. $n=3$ 이면
 
-for (const t of [1.3, 2.0, 3.0])
-  console.log(`t=${t}`,
-    '삼엽', alexander([1,1,1], 2, t).toFixed(4),
-    '| 8자', alexander([1,-2,1,-2], 3, t).toFixed(4));
-```
+$$
+\bar\rho(\sigma_1)=\begin{pmatrix}-t&1\cr 0&1\end{pmatrix},\qquad
+\bar\rho(\sigma_2)=\begin{pmatrix}1&0\cr t&-t\end{pmatrix}
+$$
+
+이다.
 
 삼엽매듭 $\hat{\sigma_1^3}$ 에서 $t^2-t+1$ 이, 8 자 매듭 $\widehat{\sigma_1\sigma_2^{-1}\sigma_1\sigma_2^{-1}}$ 에서 $t^2-3t+1$ 이 $\pm t^{k}$ 배까지 나온다. 8 자 쪽이 $-t^{-2}$ 배로 나오는 것이 Alexander 다항식이 정의상 갖는 정규화 자유도다.
 
