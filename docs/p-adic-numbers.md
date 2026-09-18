@@ -4,7 +4,7 @@
 
 $\mathbb Q$ 에서 $\mathbb R$ 를 만드는 방법은 Cauchy 수열로 [완비화](completeness.md)하는 것이고, 그 구성에서 가까움을 판단하는 것은 절댓값 $|x|$ 이다.
 
-소수 $p$ 마다 다른 절댓값이 있다. $x$ 가 $p$ 로 많이 나누어질수록 $x$ 를 작다고 보는 $|\cdot|\_p$ 다. 이 절댓값으로 $\mathbb Q$ 를 완비화하면 $\mathbb R$ 와 다른 체 $\mathbb Q_p$ 가 나온다. Ostrowski 정리에 따르면 $\mathbb Q$ 위의 절댓값은 $|\cdot|\_\infty$ 와 $|\cdot|_p$ 들뿐이다.
+소수 $p$ 마다 다른 절댓값이 있다. $x$ 가 $p$ 로 많이 나누어질수록 $x$ 를 작다고 보는 $|\cdot|\_p$ 다. 이 절댓값으로 $\mathbb Q$ 를 완비화하면 $\mathbb R$ 와 다른 체 $\mathbb Q_p$ 가 나온다. Ostrowski 정리에 따르면 $\mathbb Q$ 위의 절댓값은 $|\cdot|\_\infty$ 와 $|\cdot|\_p$ 들뿐이다.
 
 $$
 \mathbb Q\ \longrightarrow\ \mathbb R,\ \mathbb Q_2,\ \mathbb Q_3,\ \mathbb Q_5,\ \mathbb Q_7,\ \dots
@@ -18,13 +18,13 @@ $\mathbb Q_p$ 의 정수환 $\mathbb Z_p$ 는 $\mathbb Z/p^n\mathbb Z$ 의 역�
 
 ## $p$ 진 절댓값
 
-$x=p^n\cdot\frac ab$ 이고 $a,b$ 가 $p$ 와 서로소면 $|x|_p=p^{-n}$ 이다. $p$ 의 거듭제곱이 작고 $1/p^n$ 이 크다.
+$x=p^n\cdot\frac ab$ 이고 $a,b$ 가 $p$ 와 서로소면 $|x|\_p=p^{-n}$ 이다. $p$ 의 거듭제곱이 작고 $1/p^n$ 이 크다.
 
 $p=3$ 에서 $1,\ 1+3,\ 1+3+9,\ 1+3+9+27,\dots$ 는 연속한 두 항의 차가 $3^n$ 이라 $3$ 진 거리가 $3^{-n}$ 으로 0 에 가는 Cauchy 수열이다. 실수로는 발산하는 이 수열이 $\mathbb Q_3$ 에서 수렴하고 극한이 $\frac1{1-3}=-\frac12$ 이다. $-1/2$ 의 3 진 전개가 $1+3+9+27+\cdots$ 다.
 
 ## 초거리 기하
 
-$|\cdot|_p$ 는 삼각부등식보다 강한 초거리 부등식을 만족한다.
+$|\cdot|\_p$ 는 삼각부등식보다 강한 초거리 부등식을 만족한다.
 
 $$
 |x+y|_p\le\max(|x|_p,|y|_p)
@@ -32,7 +32,7 @@ $$
 
 모든 삼각형이 이등변이고, 공 안의 모든 점이 그 공의 중심이며, 두 공은 겹치거나 하나가 다른 하나를 포함할 뿐 반쯤 겹치지 않는다. 모든 공이 열린집합이면서 닫힌집합이라 공간이 완전히 분리된다.
 
-급수 판정도 단순하다. $\sum a_n$ 이 수렴할 필요충분조건이 $|a_n|_p\to0$ 이다. 부분합의 차가 $\max$ 로 통제되기 때문이다.
+급수 판정도 단순하다. $\sum a_n$ 이 수렴할 필요충분조건이 $|a_n|\_p\to0$ 이다. 부분합의 차가 $\max$ 로 통제되기 때문이다.
 
 ## 두 구성의 일치
 
@@ -58,7 +58,7 @@ $$
 a\ \longmapsto\ a-\frac{f(a)}{f'(a)}
 $$
 
-실수에서 Newton 법의 수렴은 초기값에 달려 있지만 $p$ 진에서는 초거리 부등식 덕분에 오차의 부치가 매 단계 두 배가 되고 $|f'(a)|_p=1$ 이 분모의 폭발을 막는다. [축약사상 고정점 정리](banach-fixed-point.md)를 완비체 $\mathbb Z_p$ 에 적용하는 것과 같다.
+실수에서 Newton 법의 수렴은 초기값에 달려 있지만 $p$ 진에서는 초거리 부등식 덕분에 오차의 부치가 매 단계 두 배가 되고 $|f'(a)|\_p=1$ 이 분모의 폭발을 막는다. [축약사상 고정점 정리](banach-fixed-point.md)를 완비체 $\mathbb Z_p$ 에 적용하는 것과 같다.
 
 # 정의
 
@@ -73,9 +73,9 @@ v_p(x)=\max\lbrace n:p^n\mid x\rbrace\ \ (x\in\mathbb Z\setminus\lbrace 0\rbrace
 v_p\Big(\frac ab\Big)=v_p(a)-v_p(b),\qquad v_p(0)=\infty
 $$
 
-$|x|_p=p^{-v_p(x)}$ 로 두면 비아르키메데스 절댓값이 되고, $v_p(x+y)\ge\min(v_p(x),v_p(y))$ 가 초거리 부등식이다.
+$|x|\_p=p^{-v_p(x)}$ 로 두면 비아르키메데스 절댓값이 되고, $v_p(x+y)\ge\min(v_p(x),v_p(y))$ 가 초거리 부등식이다.
 
-> **Ostrowski 정리.** $\mathbb Q$ 위의 자명하지 않은 모든 절댓값은 $|\cdot|_\infty$ 또는 어떤 $|\cdot|_p$ 와 동치다.
+> **Ostrowski 정리.** $\mathbb Q$ 위의 자명하지 않은 모든 절댓값은 $|\cdot|\_\infty$ 또는 어떤 $|\cdot|\_p$ 와 동치다.
 
 절댓값의 동치류가 **자리**이고 $v$ 로 쓴다. $\mathbb Q$ 의 자리는 소수들과 하나의 무한 자리 $\infty$ 다. 이 목록이 완전하므로 다음 항등식이 성립한다.
 
@@ -87,7 +87,7 @@ $$
 
 ## $\mathbb Q_p$ 와 $\mathbb Z_p$
 
-$|\cdot|_p$ 에 대한 $\mathbb Q$ 의 완비화가 $\mathbb Q_p$ 다. 그 안의 **정수환**은 다음이다.
+$|\cdot|\_p$ 에 대한 $\mathbb Q$ 의 완비화가 $\mathbb Q_p$ 다. 그 안의 **정수환**은 다음이다.
 
 $$
 \mathbb Z_p=\lbrace x\in\mathbb Q_p:|x|_p\le1\rbrace=\lbrace x:v_p(x)\ge0\rbrace
@@ -121,7 +121,7 @@ $e$ 는 부치군의 지표(분기지수), $f$ 는 잉여체 확대의 차수다
 
 ## Hensel 보조정리
 
-> $f\in\mathbb Z_p[x]$ 이고 $a\in\mathbb Z_p$ 가 $|f(a)|_p<|f'(a)|_p^2$ 를 만족하면 $f(\alpha)=0$ 이고 $|\alpha-a|_p<|f'(a)|_p$ 인 $\alpha\in\mathbb Z_p$ 가 유일하게 있다.
+> $f\in\mathbb Z_p[x]$ 이고 $a\in\mathbb Z_p$ 가 $|f(a)|\_p<|f'(a)|\_p^2$ 를 만족하면 $f(\alpha)=0$ 이고 $|\alpha-a|\_p<|f'(a)|\_p$ 인 $\alpha\in\mathbb Z_p$ 가 유일하게 있다.
 
 가장 많이 쓰는 형태는 $f'(a)$ 가 단원인 경우다. $f(a)\equiv0\pmod p$ 이고 $f'(a)\not\equiv0\pmod p$ 이면 법 $p$ 에서의 단순근이 $p$ 진 근으로 올라간다.
 
@@ -143,8 +143,8 @@ $x^2+y^2=3z^2$ 에 자명하지 않은 정수해가 없는 것은 $\mathbb Q_3$ 
 
 $\mathbb Q_p$ 위에서도 미적분을 하지만 규칙이 다르다.
 
-- 멱급수 $\sum a_nx^n$ 의 수렴반경은 $|a_n|_p^{1/n}$ 의 극한으로 정해지고 경계에서의 판정이 $|a_nx^n|_p\to0$ 이라 단순하다.
-- $\exp(x)=\sum x^n/n!$ 은 $n!$ 의 부치 때문에 $|x|_p<p^{-1/(p-1)}$ 에서만 수렴하고, $\log(1+x)$ 는 $|x|_p<1$ 에서 수렴한다.
+- 멱급수 $\sum a_nx^n$ 의 수렴반경은 $|a_n|\_p^{1/n}$ 의 극한으로 정해지고 경계에서의 판정이 $|a_nx^n|\_p\to0$ 이라 단순하다.
+- $\exp(x)=\sum x^n/n!$ 은 $n!$ 의 부치 때문에 $|x|\_p<p^{-1/(p-1)}$ 에서만 수렴하고, $\log(1+x)$ 는 $|x|\_p<1$ 에서 수렴한다.
 - 도함수가 어디서나 0 인데 상수가 아닌 함수가 있다. 공간이 완전분리라 평균값 정리가 없다.
 - 국소해석적 함수, $p$ 진 측도, $p$ 진 $L$ 함수의 이론이 발달해 있다. Kubota–Leopoldt 의 $p$ 진 zeta 함수가 Bernoulli 수의 합동 관계를 보간하며 Iwasawa 이론의 출발점이 된다.
 
