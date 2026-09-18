@@ -44,16 +44,16 @@ graph TD
 
 | 이름 | 방정식 | 특수해가 되는 고전함수 |
 |---|---|---|
-| $\mathrm{P}_{\mathrm{I}}$ | $q'' = 6q^2 + x$ | 없음 |
-| $\mathrm{P}_{\mathrm{II}}$ | $q'' = 2q^3 + xq + \alpha$ | Airy |
-| $\mathrm{P}_{\mathrm{III}}$ | $q'' = \dfrac{(q')^2}{q} - \dfrac{q'}{x} + \dfrac{\alpha q^2+\beta}{x} + \gamma q^3 + \dfrac{\delta}{q}$ | Bessel |
-| $\mathrm{P}_{\mathrm{IV}}$ | $q'' = \dfrac{(q')^2}{2q} + \dfrac32 q^3 + 4xq^2 + 2(x^2-\alpha)q + \dfrac{\beta}{q}$ | 포물린더 |
-| $\mathrm{P}_{\mathrm{V}}$ | (유리형, 매개변수 4개) | 합류초기하 |
-| $\mathrm{P}_{\mathrm{VI}}$ | 유리형, 매개변수 4개, 고정특이점 $0,1,\infty$ | 초기하 |
+| $\mathrm{P}\_{\mathrm{I}}$ | $q'' = 6q^2 + x$ | 없음 |
+| $\mathrm{P}\_{\mathrm{II}}$ | $q'' = 2q^3 + xq + \alpha$ | Airy |
+| $\mathrm{P}\_{\mathrm{III}}$ | $q'' = \dfrac{(q')^2}{q} - \dfrac{q'}{x} + \dfrac{\alpha q^2+\beta}{x} + \gamma q^3 + \dfrac{\delta}{q}$ | Bessel |
+| $\mathrm{P}\_{\mathrm{IV}}$ | $q'' = \dfrac{(q')^2}{2q} + \dfrac32 q^3 + 4xq^2 + 2(x^2-\alpha)q + \dfrac{\beta}{q}$ | 포물린더 |
+| $\mathrm{P}\_{\mathrm{V}}$ | (유리형, 매개변수 4개) | 합류초기하 |
+| $\mathrm{P}\_{\mathrm{VI}}$ | 유리형, 매개변수 4개, 고정특이점 $0,1,\infty$ | 초기하 |
 
-$\mathrm{P}_{\mathrm{I}}$ 을 제외한 다섯은 매개변수가 특정 값일 때 고전함수로 풀리는 해를 가진다. 나머지 매개변수에서의 해가 새로운 초월함수다.
+$\mathrm{P}\_{\mathrm{I}}$ 을 제외한 다섯은 매개변수가 특정 값일 때 고전함수로 풀리는 해를 가진다. 나머지 매개변수에서의 해가 새로운 초월함수다.
 
-## $\mathrm{P}_{\mathrm{II}}$ 의 Airy 해
+## $\mathrm{P}\_{\mathrm{II}}$ 의 Airy 해
 
 $\alpha = \tfrac12$ 일 때 Riccati 방정식
 
@@ -61,24 +61,24 @@ $$
 q' = q^2 + \frac{x}{2}
 $$
 
-의 해는 $\mathrm{P}_{\mathrm{II}}$ 를 만족한다. Riccati 는 $q = -w'/w$ 로 선형화되고, 대입하면
+의 해는 $\mathrm{P}\_{\mathrm{II}}$ 를 만족한다. Riccati 는 $q = -w'/w$ 로 선형화되고, 대입하면
 
 $$
 w'' = -\frac{x}{2}\thinspace w
 $$
 
-가 되어 $x = -2^{1/3}t$ 치환으로 Airy 방정식이 된다. 따라서 $q(x) = -\frac{d}{dx}\log \mathrm{Ai}\bigl(-2^{-1/3}x\bigr)$ 가 $\mathrm{P}_{\mathrm{II}}$ 의 해다. **Bäcklund 변환**이 $\alpha \mapsto \alpha \pm 1$ 을 실현하므로 $\alpha \in \mathbb Z + \tfrac12$ 전체에 대한 Airy 형 해의 사슬이 만들어진다.
+가 되어 $x = -2^{1/3}t$ 치환으로 Airy 방정식이 된다. 따라서 $q(x) = -\frac{d}{dx}\log \mathrm{Ai}\bigl(-2^{-1/3}x\bigr)$ 가 $\mathrm{P}\_{\mathrm{II}}$ 의 해다. **Bäcklund 변환**이 $\alpha \mapsto \alpha \pm 1$ 을 실현하므로 $\alpha \in \mathbb Z + \tfrac12$ 전체에 대한 Airy 형 해의 사슬이 만들어진다.
 
 ## 등모노드로미 변형
 
-$\mathrm{P}_{\mathrm{II}}$ 의 Lax 쌍은 $2\times2$ 선형계
+$\mathrm{P}\_{\mathrm{II}}$ 의 Lax 쌍은 $2\times2$ 선형계
 
 $$
 \frac{\partial \Psi}{\partial \lambda} = A(\lambda, x)\Psi, \qquad
 \frac{\partial \Psi}{\partial x} = B(\lambda, x)\Psi
 $$
 
-이고, $A$ 는 $\lambda$ 의 2차 다항식, $B$ 는 1차 다항식이며 계수가 $q, q'$ 로 쓰인다. 두 식의 적합성 $\partial_x A - \partial_\lambda B + [A,B] = 0$ 이 정확히 $\mathrm{P}_{\mathrm{II}}$ 다.
+이고, $A$ 는 $\lambda$ 의 2차 다항식, $B$ 는 1차 다항식이며 계수가 $q, q'$ 로 쓰인다. 두 식의 적합성 $\partial_x A - \partial_\lambda B + [A,B] = 0$ 이 정확히 $\mathrm{P}\_{\mathrm{II}}$ 다.
 
 $\lambda = \infty$ 는 비정칙 특이점이므로 Stokes 현상이 일어나고, 그 Stokes 행렬들이 모노드로미 자료를 이룬다. $x$ 를 움직여도 이 자료가 변하지 않는 것이 **등모노드로미**이고, 해 하나가 자료 하나에 대응한다.
 
@@ -86,7 +86,7 @@ $\lambda = \infty$ 는 비정칙 특이점이므로 Stokes 현상이 일어나�
 
 ## Hastings–McLeod 해
 
-$\alpha = 0$ 인 $\mathrm{P}_{\mathrm{II}}$
+$\alpha = 0$ 인 $\mathrm{P}\_{\mathrm{II}}$
 
 $$
 q'' = 2q^3 + xq
@@ -104,13 +104,13 @@ $$
 
 ## 유리해와 변환군
 
-$\mathrm{P}_{\mathrm{II}}$ 는 $\alpha \in \mathbb Z$ 에서 유리해를 가진다. $\alpha = 0$ 에서 $q = 0$ , $\alpha = 1$ 에서 $q = -1/x$ , $\alpha = 2$ 에서 $q = \frac{1}{x} - \frac{3x^2}{x^3+4}$ 이고, 분자와 분모는 Yablonskii–Vorob'ev 다항식이라는 정수계수 다항식열이다.
+$\mathrm{P}\_{\mathrm{II}}$ 는 $\alpha \in \mathbb Z$ 에서 유리해를 가진다. $\alpha = 0$ 에서 $q = 0$ , $\alpha = 1$ 에서 $q = -1/x$ , $\alpha = 2$ 에서 $q = \frac{1}{x} - \frac{3x^2}{x^3+4}$ 이고, 분자와 분모는 Yablonskii–Vorob'ev 다항식이라는 정수계수 다항식열이다.
 
 Bäcklund 변환은 매개변수 공간에 아핀 Weyl 군의 작용을 준다. $\mathrm{P}\_{\mathrm{II}}$ 에서는 $A_1^{(1)}$ 형, $\mathrm{P}\_{\mathrm{IV}}$ 에서는 $A_2^{(1)}$ 형이다.
 
 ## 극점과 해의 전역 구조
 
-$\mathrm{P}_{\mathrm{I}}$ 의 모든 해는 복소평면 전체에서 유리형이고 극점이 무한히 많다. 극점 근처에서 $q \sim (x-c)^{-2}$ 이고, 극점 위치 $c$ 와 Laurent 전개의 한 계수가 자유롭게 정해져 초기조건 두 개에 대응한다. 특이점의 위치는 자유롭고 형태는 고정되어 있다.
+$\mathrm{P}\_{\mathrm{I}}$ 의 모든 해는 복소평면 전체에서 유리형이고 극점이 무한히 많다. 극점 근처에서 $q \sim (x-c)^{-2}$ 이고, 극점 위치 $c$ 와 Laurent 전개의 한 계수가 자유롭게 정해져 초기조건 두 개에 대응한다. 특이점의 위치는 자유롭고 형태는 고정되어 있다.
 
 # 활용
 
@@ -130,13 +130,13 @@ $$
 
 로 쓰인다. 무한차원 Fredholm 행렬식이 2계 상미분방정식 하나로 바뀌므로 분포표를 수치적분으로 만들 수 있다.
 
-2차원 Ising 모형의 두 점 상관함수가 임계온도 근방에서 $\mathrm{P}_{\mathrm{III}}$ 으로 쓰인다는 결과(1976)가 이 분야의 시작이다. 이후 최장증가부분수열, 육각형 타일링의 북극권, 양자장론의 형상인자에서 같은 함수들이 나타났다. 이 문제들이 등모노드로미 구조를 공유하기 때문이다.[^1]
+2차원 Ising 모형의 두 점 상관함수가 임계온도 근방에서 $\mathrm{P}\_{\mathrm{III}}$ 으로 쓰인다는 결과(1976)가 이 분야의 시작이다. 이후 최장증가부분수열, 육각형 타일링의 북극권, 양자장론의 형상인자에서 같은 함수들이 나타났다. 이 문제들이 등모노드로미 구조를 공유하기 때문이다.[^1]
 
 ## 적분가능성 판별
 
 새로운 비선형 방정식의 적분가능성은 $\mathbf{P}$ 성질 검사로 먼저 시험한다. 해를 Laurent 급수로 놓고 움직이는 특이점 주변의 전개가 자유 매개변수를 충분히 가지는지 보는 ARS 알고리즘이 표준이며, 편미분방정식에는 진행파 환원을 거쳐 적용한다. KdV 와 비선형 Schrödinger 방정식의 유사 환원이 Painlevé 방정식이 된다.
 
-[^1]: Athanassios S. Fokas, Alexander R. Its, Andrei A. Kapaev, Victor Yu. Novokshenov, *Painlevé Transcendents: The Riemann–Hilbert Approach*, AMS (2006), 제1장(분류와 $\mathbf{P}$ 성질), 제4–5장(등모노드로미 변형과 $\mathrm{P}_{\mathrm{II}}$ 의 연결 문제).
+[^1]: Athanassios S. Fokas, Alexander R. Its, Andrei A. Kapaev, Victor Yu. Novokshenov, *Painlevé Transcendents: The Riemann–Hilbert Approach*, AMS (2006), 제1장(분류와 $\mathbf{P}$ 성질), 제4–5장(등모노드로미 변형과 $\mathrm{P}\_{\mathrm{II}}$ 의 연결 문제).
 
 # 연관 문서
 

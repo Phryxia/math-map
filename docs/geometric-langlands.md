@@ -50,7 +50,7 @@ $$
 G(F)\backslash G(\mathbb A_F)/G(\mathcal O)\thickspace\cong\thickspace\mathrm{Bun}_G(\mathbb F_q)
 $$
 
-오른쪽은 곡선 $X$ 위 $G$ 다발의 동형류다. Weil 의 이 관찰에 따라 자기동형 형식이 모듈라이 공간 위의 함수이고, 층으로 올릴 자리가 $\mathrm{Bun}_G$ 다.
+오른쪽은 곡선 $X$ 위 $G$ 다발의 동형류다. Weil 의 이 관찰에 따라 자기동형 형식이 모듈라이 공간 위의 함수이고, 층으로 올릴 자리가 $\mathrm{Bun}\_G$ 다.
 
 ## Hecke 작용소와 다발의 수정
 
@@ -60,7 +60,7 @@ $$
 \mathrm{Hecke}=\lbrace(\mathcal P,\mathcal P',x,\ \varphi\colon\mathcal P|_{X\setminus x}\xrightarrow{\sim}\mathcal P'|_{X\setminus x})\rbrace
 $$
 
-이 대응 스택이 $\mathrm{Bun}_G\times\mathrm{Bun}_G\times X$ 로 사상하고, 두 사영을 따라 당기고 미는 것이 Hecke 작용이다. 수정의 종류는 아핀 Grassmannian 의 궤도가 분류하고 기하적 Satake 가 그 궤도를 $\hat G$ 의 기약표현 $V$ 로 이름 붙이므로, Hecke 함자가 $\hat G$ 의 표현으로 매개된다.
+이 대응 스택이 $\mathrm{Bun}\_G\times\mathrm{Bun}\_G\times X$ 로 사상하고, 두 사영을 따라 당기고 미는 것이 Hecke 작용이다. 수정의 종류는 아핀 Grassmannian 의 궤도가 분류하고 기하적 Satake 가 그 궤도를 $\hat G$ 의 기약표현 $V$ 로 이름 붙이므로, Hecke 함자가 $\hat G$ 의 표현으로 매개된다.
 
 $$
 H^V_x\colon\ \mathrm{D}(\mathrm{Bun}_G)\longrightarrow\mathrm{D}(\mathrm{Bun}_G)
@@ -78,7 +78,7 @@ $$
 
 ## 범주 동치로서의 진술
 
-국소계마다 고유층이 하나씩이라는 진술은 부정확하다. $\mathrm{LocSys}_{\hat G}$ 가 스택이라 자기동형과 특이점을 갖고, 기약이 아닌 국소계에서는 고유층이 유일하지 않다. 정확한 진술은 범주 전체의 동치다.
+국소계마다 고유층이 하나씩이라는 진술은 부정확하다. $\mathrm{LocSys}\_{\hat G}$ 가 스택이라 자기동형과 특이점을 갖고, 기약이 아닌 국소계에서는 고유층이 유일하지 않다. 정확한 진술은 범주 전체의 동치다.
 
 $$
 \mathbb L_G\colon\quad\mathrm{D}\text{-}\mathrm{mod}(\mathrm{Bun}_G)\thickspace\xrightarrow{\ \sim\ }\thickspace\mathrm{IndCoh}_{\mathcal N}\big(\mathrm{LocSys}_{\hat G}\big)
@@ -94,11 +94,11 @@ $X$ 를 $\mathbb C$ 위의 매끄러운 사영 곡선, $G$ 를 환원군, $\hat 
 
 | 자기동형 쪽 | Galois 쪽 |
 |---|---|
-| $\mathrm{Bun}_G$ 은 $X$ 위 $G$ 다발의 모듈라이 스택 | $\mathrm{LocSys}_{\hat G}$ 는 $X$ 위 $\hat G$ 국소계의 스택 |
-| $\mathrm{D}\text{-}\mathrm{mod}(\mathrm{Bun}_G)$ | $\mathrm{IndCoh}\_{\mathcal N}(\mathrm{LocSys}\_{\hat G})$ |
+| $\mathrm{Bun}\_G$ 은 $X$ 위 $G$ 다발의 모듈라이 스택 | $\mathrm{LocSys}\_{\hat G}$ 는 $X$ 위 $\hat G$ 국소계의 스택 |
+| $\mathrm{D}\text{-}\mathrm{mod}(\mathrm{Bun}\_G)$ | $\mathrm{IndCoh}\_{\mathcal N}(\mathrm{LocSys}\_{\hat G})$ |
 | Hecke 함자 $H^V_x$ | $V$ 를 통한 텐서 $\otimes V_\sigma$ |
 
-$\mathrm{LocSys}_{\hat G}$ 는 $\pi_1(X)\to\hat G$ 의 표현 다양체를 공액으로 나눈 것과 같고, 곡선의 종수 $g\ge2$ 이면 차원이 $(2g-2)\dim\hat G$ 다.
+$\mathrm{LocSys}\_{\hat G}$ 는 $\pi_1(X)\to\hat G$ 의 표현 다양체를 공액으로 나눈 것과 같고, 곡선의 종수 $g\ge2$ 이면 차원이 $(2g-2)\dim\hat G$ 다.
 
 ## Hecke 스택과 함자
 
@@ -112,7 +112,7 @@ $$
 
 ## 고유층 조건
 
-$\sigma\in\mathrm{LocSys}_{\hat G}$ 에 대해 $\mathcal F$ 가 $\sigma$ 고유층이라 함은 모든 $V$ 에 대해
+$\sigma\in\mathrm{LocSys}\_{\hat G}$ 에 대해 $\mathcal F$ 가 $\sigma$ 고유층이라 함은 모든 $V$ 에 대해
 
 $$
 H^V(\mathcal F)\cong\mathcal F\boxtimes V_\sigma\ \ \text{on}\ \ \mathrm{Bun}_G\times X
@@ -124,19 +124,19 @@ $$
 
 ## 아벨 경우
 
-$G=\mathrm{GL}_1$ 이면 $\mathrm{Bun}\_{\mathrm{GL}\_1}=\mathrm{Pic}(X)$ 이고 $\hat G=\mathrm{GL}_1$ 이므로 국소계는 계수 1 의 국소계, 곧 지표다. 대응은 $X$ 위의 계수 1 국소계 $\sigma$ 마다 $\mathrm{Pic}(X)$ 위의 곱셈적 국소계가 하나 있다는 진술이 되고, 이것이 Deligne 이 증명한 **기하적 유체론**이다. 고전 유체론의 상호사상은 여기서 Abel–Jacobi 사상 $X\to\mathrm{Pic}(X)$ 를 따라 국소계를 밀어내는 조작이다.
+$G=\mathrm{GL}\_1$ 이면 $\mathrm{Bun}\_{\mathrm{GL}\_1}=\mathrm{Pic}(X)$ 이고 $\hat G=\mathrm{GL}\_1$ 이므로 국소계는 계수 1 의 국소계, 곧 지표다. 대응은 $X$ 위의 계수 1 국소계 $\sigma$ 마다 $\mathrm{Pic}(X)$ 위의 곱셈적 국소계가 하나 있다는 진술이 되고, 이것이 Deligne 이 증명한 **기하적 유체론**이다. 고전 유체론의 상호사상은 여기서 Abel–Jacobi 사상 $X\to\mathrm{Pic}(X)$ 를 따라 국소계를 밀어내는 조작이다.
 
 ## 비아벨 경우의 역사
 
 | 시기 | 결과 |
 |---|---|
-| 1980년대 | Drinfeld 의 $\mathrm{GL}_2$ 와 고유층의 구성 |
-| 1990–2000년대 | Laumon, Frenkel–Gaitsgory–Vilonen: $\mathrm{GL}_n$ 의 고유층 존재 |
+| 1980년대 | Drinfeld 의 $\mathrm{GL}\_2$ 와 고유층의 구성 |
+| 1990–2000년대 | Laumon, Frenkel–Gaitsgory–Vilonen: $\mathrm{GL}\_n$ 의 고유층 존재 |
 | 2002 | Beilinson–Drinfeld: $\hat G$ 의 여정칙 국소계에 대한 구성(공형장론 경유) |
 | 2015 | Arinkin–Gaitsgory: 받침 조건을 포함한 올바른 범주적 진술 |
 | 2024 | Gaitsgory–Raskin 등: 비분기 범주적 대응의 증명 |
 
-2024 년 증명은 $\mathrm{Bun}_G$ 를 Whittaker 정규화된 조각으로 분해하고, 각 조각에서 대응을 세운 뒤 열 정리(trace)로 붙인다. Poincaré 층의 구성과 국소 기하 Langlands 가 재료다.
+2024 년 증명은 $\mathrm{Bun}\_G$ 를 Whittaker 정규화된 조각으로 분해하고, 각 조각에서 대응을 세운 뒤 열 정리(trace)로 붙인다. Poincaré 층의 구성과 국소 기하 Langlands 가 재료다.
 
 ## 산술로의 환원
 
@@ -154,7 +154,7 @@ Kapustin–Witten 은 4 차원 $\mathcal N=4$ 초대칭 게이지 이론을 곡�
 
 | 고전 Langlands | 기하 Langlands |
 |---|---|
-| 자기동형 형식 | $\mathrm{Bun}_G$ 위의 $D$ 가군 |
+| 자기동형 형식 | $\mathrm{Bun}\_G$ 위의 $D$ 가군 |
 | Hecke 고유함수 | Hecke 고유층 |
 | Hecke 고윳값 (수) | $X$ 위의 국소계 |
 | Galois 표현 $\rho$ | $\hat G$ 국소계 $\sigma$ |
