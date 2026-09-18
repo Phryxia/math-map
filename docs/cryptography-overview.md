@@ -6,7 +6,7 @@
 
 [정수의 합동](modular-arithmetic.md)에서 시작한다. 여기서 두 갈래가 나온다. 합성수의 소인수분해가 어렵다는 가정에서 [RSA](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)가 나오고, 유한군에서 지수를 되찾기 어렵다는 가정에서 [이산로그](discrete-logarithm.md)와 Diffie–Hellman 키 합의가 나온다. 이산로그를 [유한체](finite-fields.md)의 곱셈군 대신 [타원곡선](elliptic-curves.md)의 점군에서 걸면 지표 계산법이 통하지 않아 같은 안전성을 훨씬 작은 키로 얻는다.
 
-Shor 알고리즘이 두 가정을 함께 무너뜨린다. 두 문제가 모두 유한 아벨군의 숨은 부분군 문제이므로 대체 가정은 그 환원을 피해야 한다. [격자](lattices.md)의 근사 최단벡터 문제가 [후양자 암호](post-quantum-cryptography.md)의 주류이고, 그 잡음 구조에서 [완전동형암호](homomorphic-encryption.md)가 나온다. 초특이 타원곡선 사이의 [동종사상 그래프](supersingular-isogeny-graphs.md)가 또 다른 후보다.
+Shor 알고리즘이 두 가정을 함께 무너뜨린다. 두 문제가 모두 유한 아벨군의 숨은 부분군 문제이므로 대체 가정은 그 환원을 피해야 한다. [격자](lattices.md)의 근사 최단벡터 문제가 가장 유력한 후보이고, [격자 기반 후양자 암호](post-quantum-cryptography.md)가 그 위에 선다. 그 잡음 구조에서 [완전동형암호](homomorphic-encryption.md)가 나온다. [초특이 동종사상 그래프](supersingular-isogeny-graphs.md)가 또 다른 후보다.
 
 # 지도
 
