@@ -92,4 +92,4 @@ $A/R$ 이 몫집합이고 $x \mapsto [x]$ 가 몫사상이다. 몫사상은 항�
 - [서로소 집합 자료구조](union-find.md)
 - [유한 오토마타와 정규언어](finite-automata.md)
 
-#set_theory
+#set_theory #order_theory

@@ -111,4 +111,4 @@ $A$ 가 비어 있지 않을 때 $f$ 가 단사인 것은 $g \circ f = \mathrm{i
 - [거리 공간](metric-spaces.md)
 - [유한 확률 공간](probability.md)
 
-#set_theory
+#set_theory #computation #logic
