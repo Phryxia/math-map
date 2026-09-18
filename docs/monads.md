@@ -4,7 +4,7 @@
 
 Monad 는 한 범주 $\mathcal C$ 위에서 무언가를 형식적으로 덧붙였다가 두 겹으로 쌓인 것을 한 겹으로 평탄화하는 구조다. 데이터는 자기 functor $T : \mathcal C \to \mathcal C$ 와 두 [자연변환](natural-transformations.md) $\eta : \mathrm{id} \Rightarrow T$ , $\mu : T^2 \Rightarrow T$ 이고 조건은 결합법칙과 단위법칙이다.
 
-[Adjunction](adjunctions.md)과의 관계가 이 구조의 위치를 정한다. 모든 수반 $F \dashv G$ 는 $T = GF$ 로 monad 를 남기고, 모든 monad 는 그것을 낳는 수반으로 분해된다. monad 는 수반이 한쪽 범주에 남긴 그림자이고, 그 그림자에서 원래 수반을 복원하는 방법이 Kleisli 와 Eilenberg–Moore 둘이다.
+[수반](adjunctions.md)과의 관계가 이 구조의 위치를 정한다. 모든 수반 $F \dashv G$ 는 $T = GF$ 로 monad 를 남기고, 모든 monad 는 그것을 낳는 수반으로 분해된다. monad 는 수반이 한쪽 범주에 남긴 그림자이고, 그 그림자에서 원래 수반을 복원하는 방법이 Kleisli 와 Eilenberg–Moore 둘이다.
 
 # 직관
 
@@ -105,7 +105,7 @@ $T$ 를 주는 모든 수반의 범주에서 Kleisli 는 시작대상, Eilenberg
 
 ## 선수지식
 
-- [Adjunction](adjunctions.md)
+- [수반](adjunctions.md)
 
 ## 더 알아보기
 

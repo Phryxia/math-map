@@ -106,6 +106,6 @@ $$
 
 ## 더 알아보기
 
-- [Adjunction](adjunctions.md)
+- [수반](adjunctions.md)
 
 #category_theory #order_theory #algebra #theorem

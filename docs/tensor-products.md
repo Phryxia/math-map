@@ -55,7 +55,7 @@ graph LR
   T -. "유일한 선형사상 beta~" .-> P
 ```
 
-보편성질로 정의된 대상이 늘 그렇듯 텐서곱은 유일하다. 두 텐서곱이 있으면 서로를 통해 유일한 사상이 오가고 그 합성이 항등사상이 되므로 표준 동형이 하나 정해진다. 이 논법은 [adjunction](adjunctions.md)의 unit이 갖는 보편성질과 같은 형태다.
+보편성질로 정의된 대상이 늘 그렇듯 텐서곱은 유일하다. 두 텐서곱이 있으면 서로를 통해 유일한 사상이 오가고 그 합성이 항등사상이 되므로 표준 동형이 하나 정해진다. 이 논법은 [수반](adjunctions.md)의 unit이 갖는 보편성질과 같은 형태다.
 
 ## 존재 구성
 
@@ -127,7 +127,7 @@ $$
 {-} \otimes_R N \thickspace\dashv\thickspace \mathrm{Hom}\_R(N, -)
 $$
 
-이며, 자세한 틀은 [Adjunction](adjunctions.md)에 있다. 집합에서의 curry 와 uncurry 의 대수판이다.
+이며, 자세한 틀은 [수반](adjunctions.md)에 있다. 집합에서의 curry 와 uncurry 의 대수판이다.
 
 ## 우완전성
 
