@@ -96,23 +96,11 @@ $$
 
 $\mathrm{SO}(2n+1)$ 의 쌍대군은 $\mathrm{Sp}\_{2n}(\mathbb C)$ 다. 템퍼드 매개변수를 서로 다른 기약 성분의 합으로 적으면 각 성분이 심플렉틱형이어야 하고 중심화군은 $\lbrace\pm1\rbrace^r$ 이다. 중심을 나누면 꾸러미 크기가 $2^{r-1}$ 이다. 기약 매개변수의 꾸러미는 원소가 하나뿐이고, 매개변수가 분해될수록 꾸러미가 커진다.
 
-```javascript
-// SO(2n+1) 의 템퍼드 매개변수: phi = phi_1 + ... + phi_r,
-// 서로 다른 기약 심플렉틱형 성분. 쌍대군은 Sp_{2n}(C).
-function packet(dims) {
-  const N = dims.reduce((a, b) => a + b, 0)
-  if (new Set(dims).size !== dims.length) throw new Error('다중도 1 이 아니다')
-  const S = 2 ** dims.length          // 중심화군의 성분군 (Z/2)^r
-  return { dualGroup: `Sp_${N}(C)`, group: `SO(${N + 1})`, packetSize: S / 2 }
-}
-
-console.log(packet([4]))
-console.log(packet([2, 6]))
-console.log(packet([2, 4, 6]))
-// { dualGroup: 'Sp_4(C)',  group: 'SO(5)',  packetSize: 1 }
-// { dualGroup: 'Sp_8(C)',  group: 'SO(9)',  packetSize: 2 }
-// { dualGroup: 'Sp_12(C)', group: 'SO(13)', packetSize: 4 }
-```
+| 매개변수 | 쌍대군 | 군 | 꾸러미 크기 |
+| --- | --- | --- | --- |
+| $\phi_4$ | $\mathrm{Sp}\_4(\mathbb C)$ | $\mathrm{SO}(5)$ | $1$ |
+| $\phi_2+\phi_6$ | $\mathrm{Sp}\_8(\mathbb C)$ | $\mathrm{SO}(9)$ | $2$ |
+| $\phi_2+\phi_4+\phi_6$ | $\mathrm{Sp}\_{12}(\mathbb C)$ | $\mathrm{SO}(13)$ | $4$ |
 
 ## GGP 지표 공식
 

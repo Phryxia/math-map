@@ -109,28 +109,15 @@ $\alpha_v$ 는 $K_v^\times$ 위의 행렬계수 적분으로 거의 모든 자�
 
 전역 부호는 국소 부호의 곱이고, 그 값이 필요한 사원수 대수의 존재 여부와 같다. Hilbert 상호법칙이 두 조건을 같은 것으로 만든다.
 
-```javascript
-// 국소 부호 목록에서 분지 자리를 뽑고, 그런 사원수 대수가 존재하는지 판정한다
-function quaternionFromSigns(signs) {
-  const ramified = Object.keys(signs).filter((v) => signs[v] === -1)
-  const global = Object.values(signs).reduce((a, b) => a * b, 1)
-  return {
-    ramified,
-    exists: ramified.length % 2 === 0,   // Hilbert 상호법칙
-    globalSign: global,                   // 함수방정식의 부호
-  }
-}
+국소 부호를 $\varepsilon_v$ 라 하고 $S=\lbrace v:\varepsilon_v=-1\rbrace$ 를 그 자리의 집합이라 하면 전역 부호는
 
-// 무한 자리와 두 유한 자리에서 부호가 -1 인 경우
-console.log(quaternionFromSigns({ inf: -1, 2: -1, 3: 1, 5: 1 }))
-// { ramified: [ '2', 'inf' ], exists: true, globalSign: 1 }
+$$
+\varepsilon=\prod_v\varepsilon_v=(-1)^{|S|}
+$$
 
-// 홀수 개 자리에서 -1 이면 B 가 없고 전역 부호도 -1 이다
-console.log(quaternionFromSigns({ inf: -1, 2: 1, 3: 1, 5: 1 }))
-// { ramified: [ 'inf' ], exists: false, globalSign: -1 }
-```
+이다. 정확히 $S$ 에서 분지하는 사원수 대수 $B/F$ 는 $|S|$ 가 짝수일 때만 존재하므로, $B$ 의 존재와 $\varepsilon=+1$ 이 같은 조건이다.
 
-`exists` 와 `globalSign === 1` 이 언제나 같은 값을 갖는다는 것이 Waldspurger 정리의 요지다. 표현론이 주기를 담을 그릇을 마련하지 못하는 상황과 해석이 중심값을 0 으로 만드는 상황을 하나의 부호가 통제한다.
+이 동치가 Waldspurger 정리의 요지다. 표현론이 주기를 담을 그릇을 마련하지 못하는 상황과 해석이 중심값을 0 으로 만드는 상황을 하나의 부호가 통제한다.
 
 ## 두 정리의 분업
 
