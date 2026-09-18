@@ -137,5 +137,6 @@ $R=\lbrace x:x\notin x\rbrace$ 를 집합으로 인정하면 $R\in R\iff R\notin
 - [순서 이론 개관](order-theory-overview.md)
 - [암호 개관](cryptography-overview.md)
 - [정보이론 개관](information-theory-overview.md)
+- [기계학습 개관](machine-learning-overview.md)
 
 #set_theory #foundations

@@ -155,6 +155,7 @@ Markov chain Monte Carlo(MCMC)는 충분히 오래 돌리면 참 사후분포에
 - [확률적 PCA](probabilistic-pca.md)
 - [KL divergence와 상호정보량](kl-divergence.md)
 - [경사하강법](gradient-descent.md)
+- [기계학습 개관](machine-learning-overview.md)
 
 ## 더 알아보기
 
