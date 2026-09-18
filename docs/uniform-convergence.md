@@ -183,4 +183,4 @@ $$
 
 아직 연결한 문서가 없다.
 
-#analysis
+#analysis #functional_analysis #probability

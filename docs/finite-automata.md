@@ -160,4 +160,4 @@ NFA에 대해서는 이야기가 달라진다. NFA의 동치성·전체성 판�
 
 아직 연결한 문서가 없다.
 
-#computation
+#computation #algorithms #logic

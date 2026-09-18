@@ -123,4 +123,4 @@ Lebesgue 적분의 정의는 단순함수 근사에 기대므로 가측성 없�
 - [Lebesgue 적분](lebesgue-integral.md)
 - [상측도와 확률분포](pushforward-measure.md)
 
-#measure_theory
+#measure_theory #analysis #probability

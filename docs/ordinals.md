@@ -173,4 +173,4 @@ $$
 - [선택공리와 Zorn 보조정리](axiom-of-choice.md)
 - [연속체 가설과 독립성](continuum-hypothesis.md)
 
-#set_theory
+#set_theory #logic #analysis

@@ -119,4 +119,4 @@ $$
 - [확률적 방법](probabilistic-method.md)
 - [부울 함수의 Fourier 해석](boolean-fourier.md)
 
-#probability
+#probability #measure_theory #statistics #algorithms
