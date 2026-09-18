@@ -122,10 +122,16 @@ $$
 
 ## 더 알아보기
 
+### 구조 정리
+
 - [스펙트럼 정리](spectral-theorem.md)
 - [Jordan 표준형](jordan-canonical-form.md)
-- [군의 표현과 지표](group-representations.md)
+
+### 스펙트럼이 쓰이는 곳
+
+- [Perron–Frobenius 정리](perron-frobenius.md)
 - [Expander 그래프와 스펙트럼 간극](expander-graphs.md)
+- [군의 표현과 지표](group-representations.md)
 - [Wigner 반원법칙](wigner-semicircle.md)
 
 #linear_algebra #algebra #probability #analysis
