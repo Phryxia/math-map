@@ -96,7 +96,7 @@ $$
 
 복원항은 $z$ 에서 $x$ 를 얼마나 잘 복원하는지를 재고 KL 항은 $q(z\mid x)$ 를 사전분포 쪽으로 당긴다. KL 이 없으면 각 $x$ 가 잠재공간의 서로 다른 점에 고립되어 오토인코더가 되고, 복원항이 약하면 모든 $x$ 가 같은 곳으로 붕괴한다.
 
-[정보이론](kl-divergence.md)의 언어로 다시 쓰면 KL 항의 데이터 평균이 다음과 같이 갈린다.
+[상호정보량](kl-divergence.md)의 언어로 다시 쓰면 KL 항의 데이터 평균이 다음과 같이 갈린다.
 
 $$
 \mathbb E_{x}\big[\mathrm{KL}(q(z\mid x)\Vert p(z))\big]=I(x;z)+\mathrm{KL}\big(q(z)\thinspace\Vert\thinspace p(z)\big)
