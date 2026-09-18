@@ -77,7 +77,7 @@ $$
 F(x)=\sum_{n\ge 0}F_n x^{n}=\frac{x}{1-x-x^{2}}
 $$
 
-분모의 근을 이용해 부분분수로 분해하면 닫힌 공식이 나온다. phi는 황금비다.
+분모의 근을 이용해 부분분수로 분해하면 닫힌 공식이 나온다. $\varphi$ 는 황금비다.
 
 $$
 F(x)=\frac{1}{\sqrt5}\Bigl(\frac{1}{1-\varphi x}-\frac{1}{1-\psi x}\Bigr),
@@ -92,7 +92,7 @@ $$
 a_n\sim C\thinspace\rho^{-n}n^{m-1},\qquad \rho=\text{가장 작은 극의 절댓값}
 $$
 
-이 원리를 [해석함수](holomorphic-functions.md)로 정당화하면 특이점 해석(singularity analysis)이 된다. 형식적 조작으로 얻은 급수의 [수렴](limits.md) 반경이 곧 rho다.
+이 원리를 [해석함수](holomorphic-functions.md)로 정당화하면 특이점 해석(singularity analysis)이 된다. 형식적 조작으로 얻은 급수의 [수렴](limits.md) 반경이 위 식의 $\rho$ 다.
 
 ## Catalan 수: 비선형 점화식
 
