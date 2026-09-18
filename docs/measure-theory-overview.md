@@ -4,7 +4,7 @@
 
 측도론은 집합에 크기를 매기는 방법과 그 크기로 정의한 적분을 다룬다. 물음은 "어떤 집합에 길이나 넓이를 일관되게 줄 수 있고, 그 위에서 극한과 적분을 언제 바꿔칠 수 있는가" 다. 답은 가산가법성을 만족하는 $\sigma$ 대수 위의 측도, 그 측도로 세운 Lebesgue 적분, 그리고 극한과 적분의 교환을 보장하는 수렴정리로 나온다.
 
-이 지도의 측도론 문서는 세 줄기다. 측도와 가측성을 세우는 기초, 적분과 세 수렴정리, 그리고 한 측도를 다른 측도로 옮기거나 견주는 상측도와 Radon–Nikodym 도함수다. 확률론의 기반이 여기 있고, 극한정리와 확률과정은 [확률론 개관](probability-overview.md)에 있다.
+측도론의 갈래는 세 줄기다. 측도와 가측성을 세우는 기초, 적분과 세 수렴정리, 그리고 한 측도를 다른 측도로 옮기거나 견주는 상측도와 Radon–Nikodym 도함수다. 확률론의 기반이 여기 있고, 극한정리와 확률과정은 [확률론 개관](probability-overview.md)에 있다.
 
 시작은 [측도](measure.md)다. 거기서 [가측함수](measurable-functions.md)를 거쳐 [Lebesgue 적분](lebesgue-integral.md)으로 가면 [단조 수렴 정리](monotone-convergence.md)와 [지배 수렴 정리](dominated-convergence.md)가 나오고, [상측도](pushforward-measure.md)와 [Radon–Nikodym 정리](radon-nikodym.md)에서 확률론과 통계로 갈라진다.
 
