@@ -67,6 +67,6 @@ $x\in X$ 로 수렴하는 $A$ 의 수열 $(a_n)$ 을 잡으면 $(a_n)$ 이 Cauch
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Arzelà–Ascoli 정리](arzela-ascoli.md)
 
 #analysis #topology

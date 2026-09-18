@@ -137,6 +137,6 @@ Banach 공간에는 직교성, 사영 정리, 쌍대공간과 자기 자신의 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Arzelà–Ascoli 정리](arzela-ascoli.md)
 
 #functional_analysis #analysis #topology
