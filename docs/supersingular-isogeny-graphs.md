@@ -22,7 +22,7 @@ $$
 표수 $p$ 의 타원곡선 $E$ 에서 $p$ 비틀림은 두 가지만 가능하다.
 
 $$
-E[p](\overline{\mathbb F_p})\cong\mathbb Z/p\ \ (\text{보통})\qquad\text{또는}\qquad E[p]=0\ \ (\text{초특이})
+E\lbrack p\rbrack(\overline{\mathbb F_p})\cong\mathbb Z/p\ \ (\text{보통})\qquad\text{또는}\qquad E\lbrack p\rbrack=0\ \ (\text{초특이})
 $$
 
 표수 $0$ 에서 $E[p]\cong(\mathbb Z/p)^2$ 이던 것이 표수 $p$ 에서 절반 또는 전부 무너진다. 초특이 곡선은 $p$ 비틀림 점이 하나도 없는 쪽이고, $a_p=0$ 곧 $\char35{}E(\mathbb F_p)=p+1$ 과 동치다.

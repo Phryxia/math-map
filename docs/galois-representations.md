@@ -80,7 +80,7 @@ $$
 $E$ 가 $K$ 위의 타원곡선이고 $\ell\ne\mathrm{char}\thinspace K$ 일 때
 
 $$
-T_\ell E=\varprojlim_nE[\ell^n](\bar K)\cong\mathbb Z_\ell^2,
+T_\ell E=\varprojlim_nE\lbrack\ell^n\rbrack(\bar K)\cong\mathbb Z_\ell^2,
 \qquad V_\ell E=T_\ell E\otimes\mathbb Q_\ell
 $$
 
