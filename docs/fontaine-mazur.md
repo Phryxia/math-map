@@ -37,29 +37,6 @@ $$
 
 $\chi^s$ 가 de Rham 인 것은 $s\in\mathbb Z$ 일 때뿐이고, 그때 $\chi^s=\mathbb Q_p(-s)$ 는 기하에서 온다. 조건 2 가 연속체 크기의 족에서 $\mathbb Z$ 만 남긴다.
 
-```javascript
-// Z_5 안에서 s = 1/3 과 s = 2 의 p 진 전개.
-// 전개가 유한 자리에서 끊기면 s 는 음 아닌 정수다.
-const p = 5n, N = 12, M = p ** BigInt(N);
-
-const digits = (s) => {
-  const out = [];
-  let x = ((s % M) + M) % M;
-  for (let i = 0; i < N; i++) { out.push(Number(x % p)); x /= p; }
-  return out.join('');
-};
-
-const inverseMod = (a, m) => {              // 확장 유클리드
-  let [r0, r1, t0, t1] = [a, m, 1n, 0n];
-  while (r1 !== 0n) { const q = r0 / r1;
-    [r0, r1] = [r1, r0 - q * r1]; [t0, t1] = [t1, t0 - q * t1]; }
-  return ((t0 % m) + m) % m;
-};
-
-console.log('s = 1/3 :', digits(inverseMod(3n, M)));  // 231313131313  (반복, 정수 아님)
-console.log('s = 2   :', digits(2n));                 // 200000000000  (끊긴다, 정수)
-```
-
 $s=1/3$ 의 $5$ 진 전개 $2+3\cdot5+1\cdot5^2+3\cdot5^3+\cdots$ 는 끝나지 않는다. 지표 $\chi^{1/3}$ 은 [Sen 작용소](sen-theory.md)의 고유값이 정수가 아니라 Hodge–Tate 도 아니고, 어떤 다양체의 코호몰로지에도 들어 있지 않다.
 
 ## 1 차원의 경우

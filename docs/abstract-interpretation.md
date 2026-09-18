@@ -48,7 +48,6 @@ const join = (a, b) => a === BOT ? b : b === BOT ? a : mk(Math.min(a[0],b[0]), M
 const meet = (a, b) => a === BOT || b === BOT ? BOT : mk(Math.max(a[0],b[0]), Math.min(a[1],b[1]));
 const add1 = (a) => a === BOT ? BOT : mk(a[0] + 1, a[1] + 1);
 const eq = (a, b) => a === BOT || b === BOT ? a === b : a[0] === b[0] && a[1] === b[1];
-const show = (a) => a === BOT ? '⊥' : `[${a[0] === -Infinity ? '-∞' : a[0]}, ${a[1] === Infinity ? '+∞' : a[1]}]`;
 
 // 위드닝: 늘어나는 쪽 끝을 곧바로 무한으로 보낸다
 const widen = (a, b) => a === BOT ? b : b === BOT ? a :
@@ -58,17 +57,15 @@ const widen = (a, b) => a === BOT ? b : b === BOT ? a :
 // 루프 머리의 불변량은 X = [0,0] ⊔ ((X ⊓ [-∞,99]) + 1) 의 최소 고정점
 const F = (X) => join(mk(0, 0), add1(meet(X, mk(-Infinity, 99))));
 
-let X = BOT, n = 0;
-while (true) { const Y = F(X); n++; if (eq(X, Y)) break; X = Y; }
-console.log(`Kleene 반복: ${n} 단계, 결과 ${show(X)}`);       // 102 단계, [0, 100]
+// 같은 단계함수를 안정할 때까지 돌린다
+const iterate = (step, start) => {
+  let X = start;
+  for (;;) { const Y = step(X); if (eq(X, Y)) return X; X = Y; }
+};
 
-let W = BOT, m = 0;
-while (true) { const Y = widen(W, F(W)); m++; if (eq(W, Y)) break; W = Y; }
-console.log(`위드닝: ${m} 단계, 결과 ${show(W)}`);            // 3 단계, [0, +∞]
-
-let N = W, k = 0;
-while (true) { const Y = F(N); k++; if (eq(N, Y)) break; N = Y; }
-console.log(`내로잉: ${k} 단계, 결과 ${show(N)}`);            // 2 단계, [0, 100]
+const kleene   = iterate(F, BOT);
+const widened  = iterate((X) => widen(X, F(X)), BOT);
+const narrowed = iterate(F, widened);
 ```
 
 순진한 반복은 $[0,0],[0,1],[0,2],\dots$ 로 한 칸씩 올라가 $102$ 단계가 걸린다. 상한이 $10^9$ 였다면 사실상 끝나지 않는다. **위드닝**은 상한이 늘어나는 것을 보고 곧바로 $+\infty$ 로 점프해 $3$ 단계에 멈춘다. 그 결과 $[0,+\infty]$ 는 너무 거칠고, 여기서 다시 $F$ 를 반복하는 **내로잉**이 $[0,100]$ 을 회복한다.
