@@ -75,7 +75,7 @@ $$
 
 $$
 |\mathrm{Orb}(x)|=[G:\mathrm{Stab}(x)],\qquad
-|G|=|\mathrm{Orb}(x)|\thinspace|\mathrm{Stab}(x)|\ \ (|G|<\infty)
+|G|=|\mathrm{Orb}(x)|\thinspace|\mathrm{Stab}(x)|\ \ (|G|\lt\infty)
 $$
 
 $g \cdot x = h \cdot x$ 인 것과 $h^{-1}g \in \mathrm{Stab}(x)$ 인 것이 동치이므로 $x$ 를 같은 점으로 보내는 원소들이 안정자의 왼쪽 잉여류를 이루고, 궤도의 점과 잉여류가 일대일 대응한다.

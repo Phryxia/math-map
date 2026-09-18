@@ -34,7 +34,7 @@ $$
 L(E,s)=\prod_{p\nmid N}\Big(1-\frac{a_p}{p^s}+\frac1{p^{2s-1}}\Big)^{-1}\prod_{p\mid N}\Big(1-\frac{a_p}{p^s}\Big)^{-1}
 $$
 
-Hasse 의 $|a_p|\le2\sqrt p$ 때문에 이 곱은 $\mathrm{Re}(s)>3/2$ 에서만 수렴하고 $s=1$ 은 수렴 영역 밖이다. 해석적 연속을 준 것이 모듈러성 정리다. $E$ 가 무게 2 새형식 $f$ 에서 오므로 $L(E,s)=L(f,s)$ 이고, 후자는 $\mathbb C$ 전체로 연속되며 함수방정식
+Hasse 의 $|a_p|\le2\sqrt p$ 때문에 이 곱은 $\mathrm{Re}(s)\gt 3/2$ 에서만 수렴하고 $s=1$ 은 수렴 영역 밖이다. 해석적 연속을 준 것이 모듈러성 정리다. $E$ 가 무게 2 새형식 $f$ 에서 오므로 $L(E,s)=L(f,s)$ 이고, 후자는 $\mathbb C$ 전체로 연속되며 함수방정식
 
 $$
 \Lambda(s)=N^{s/2}(2\pi)^{-s}\Gamma(s)L(E,s),\qquad \Lambda(2-s)=w\thinspace\Lambda(s)
@@ -93,7 +93,7 @@ $$
 
 | 결과 | 내용 |
 |---|---|
-| Coates–Wiles (1977) | CM 곡선에서 $r>0\Rightarrow L(E,1)=0$ |
+| Coates–Wiles (1977) | CM 곡선에서 $r\gt 0\Rightarrow L(E,1)=0$ |
 | Gross–Zagier (1986) | $L'(E,1)$ 이 Heegner 점의 정준 높이와 같다 |
 | Kolyvagin (1988) | 해석적 순위 $\le1$ 이면 대수적 순위가 같고 $\text{Ш}$ 가 유한 |
 | Skinner–Urban, Kato | Iwasawa 주추측을 통해 순위 $0$ 의 강한 BSD 를 여러 경우에 |

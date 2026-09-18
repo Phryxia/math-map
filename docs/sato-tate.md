@@ -89,7 +89,7 @@ $$
 
 ## Sato–Tate 추측(정리)
 
-> **정리 (Taylor 등, 2006–2011).** $E/\mathbb Q$ 가 복소곱셈을 갖지 않으면 $\lbrace\theta_p\rbrace$ 는 $\mu_{ST}$ 에 대해 등분포한다. 곧 모든 $0\le\alpha<\beta\le\pi$ 에서
+> **정리 (Taylor 등, 2006–2011).** $E/\mathbb Q$ 가 복소곱셈을 갖지 않으면 $\lbrace\theta_p\rbrace$ 는 $\mu_{ST}$ 에 대해 등분포한다. 곧 모든 $0\le\alpha\lt\beta\le\pi$ 에서
 > $$\lim_{X\to\infty}\frac{\char35{}\lbrace p\le X:\theta_p\in[\alpha,\beta]\rbrace}{\char35{}\lbrace p\le X\rbrace}=\int_\alpha^\beta\frac2\pi\sin^2\theta\thinspace d\theta$$
 
 이 결과는 전체수체 위의 타원곡선까지 확장되었다.

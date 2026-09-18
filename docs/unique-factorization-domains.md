@@ -31,7 +31,7 @@ $$
 a = u\thinspace p_1\cdots p_m,\qquad u\in R^{\times},\ p_i \text{ 기약}
 $$
 
-**주아이디얼정역**(PID)은 모든 [아이디얼](ideals-quotient-rings.md)이 한 원소로 생성되는 정역이다. **Euclid 정역**(ED)은 함수 $N\colon R\setminus\lbrace 0\rbrace \to \mathbb Z\_{\ge 0}$ 가 있어 $b \ne 0$ 인 임의의 $a,b$ 에 대해 $a=qb+r$ 이고 $r=0$ 이거나 $N(r)<N(b)$ 인 $q,r$ 가 존재하는 정역이다.
+**주아이디얼정역**(PID)은 모든 [아이디얼](ideals-quotient-rings.md)이 한 원소로 생성되는 정역이다. **Euclid 정역**(ED)은 함수 $N\colon R\setminus\lbrace 0\rbrace \to \mathbb Z\_{\ge 0}$ 가 있어 $b \ne 0$ 인 임의의 $a,b$ 에 대해 $a=qb+r$ 이고 $r=0$ 이거나 $N(r)\lt N(b)$ 인 $q,r$ 가 존재하는 정역이다.
 
 # 성질
 
@@ -52,7 +52,7 @@ $$
 
 ## ED 에서 PID
 
-$I \ne 0$ 을 아이디얼이라 하고 $N$ 값이 최소인 $b \in I\setminus\lbrace 0\rbrace$ 를 잡는다. 임의의 $a \in I$ 를 $a=qb+r$ 로 쓰면 $r=a-qb \in I$ 이고 $N(r)<N(b)$ 는 최소성에 어긋나므로 $r=0$ 이다. 즉 $I=(b)$ 다.
+$I \ne 0$ 을 아이디얼이라 하고 $N$ 값이 최소인 $b \in I\setminus\lbrace 0\rbrace$ 를 잡는다. 임의의 $a \in I$ 를 $a=qb+r$ 로 쓰면 $r=a-qb \in I$ 이고 $N(r)\lt N(b)$ 는 최소성에 어긋나므로 $r=0$ 이다. 즉 $I=(b)$ 다.
 
 ## PID 에서 UFD
 

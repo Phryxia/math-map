@@ -37,7 +37,7 @@ $p(n)$ 의 증가 속도 $\exp(c\sqrt n)$ 은 다항식보다 빠르고 지수�
 $p(n)$ 은 Cauchy 적분으로 꺼낼 수 있다.
 
 $$
-p(n)=\frac1{2\pi i}\oint_{|q|=r}\frac{F(q)}{q^{n+1}}\thinspace dq\qquad(0<r<1)
+p(n)=\frac1{2\pi i}\oint_{|q|=r}\frac{F(q)}{q^{n+1}}\thinspace dq\qquad(0\lt r\lt 1)
 $$
 
 $r\to1$ 로 보내면 분모 $q^{n+1}$ 이 작아지는 이득과 $F$ 가 폭발하는 손해가 균형을 이루는 곳에서 주된 기여가 나온다.

@@ -41,7 +41,7 @@ $z$ 의 분포가 $N(0,I)$ 여서 회전에 대해 불변이므로, $W$ 를 $WR$
 
 ## 모형
 
-$z \in \mathbb R^q$ 와 $x \in \mathbb R^d$ 와 $q < d$ 로 두고 다음을 가정한다.
+$z \in \mathbb R^q$ 와 $x \in \mathbb R^d$ 와 $q \lt d$ 로 두고 다음을 가정한다.
 
 $$
 z\sim N(0,I_q),\qquad x\mid z\ \sim\ N(Wz+\mu,\ \sigma^2I_d)

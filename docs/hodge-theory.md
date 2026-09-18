@@ -48,7 +48,7 @@ $n$ 차원 공간에서 $k$ 차원 방향을 고르면 계량과 방향이 그 �
 
 ## 형식의 내적과 부피형식
 
-계량이 각 접공간에 주는 내적은 $\Lambda^k T^\ast\_pM$ 의 내적으로 유일하게 확장된다. 정규직교 여기저기 $e^1,\dots,e^n$ 에 대해 $\lbrace e^{i_1}\wedge\cdots\wedge e^{i_k}\rbrace\_{i_1<\cdots<i_k}$ 가 정규직교기저가 되도록 잡는다. 방향과 계량이 함께 부피형식 $\mathrm{vol}=e^1\wedge\cdots\wedge e^n$ 을 결정한다.
+계량이 각 접공간에 주는 내적은 $\Lambda^k T^\ast\_pM$ 의 내적으로 유일하게 확장된다. 정규직교 여기저기 $e^1,\dots,e^n$ 에 대해 $\lbrace e^{i_1}\wedge\cdots\wedge e^{i_k}\rbrace\_{i_1\lt\cdots\lt i_k}$ 가 정규직교기저가 되도록 잡는다. 방향과 계량이 함께 부피형식 $\mathrm{vol}=e^1\wedge\cdots\wedge e^n$ 을 결정한다.
 
 ## Hodge 별작용소
 
@@ -152,10 +152,10 @@ $$
 \Delta=\nabla^*\nabla+\mathrm{Ric}
 $$
 
-이므로 Ricci 곡률이 양의 준정부호면 조화 1-형식 $\omega$ 에 대해 $0=\Vert\nabla\omega\Vert^2+\langle\negthinspace\langle\mathrm{Ric}\thinspace\omega,\omega\rangle\negthinspace\rangle$ 이고 두 항이 모두 0 이어야 한다. $\mathrm{Ric}>0$ 이면 $\omega=0$ 이므로
+이므로 Ricci 곡률이 양의 준정부호면 조화 1-형식 $\omega$ 에 대해 $0=\Vert\nabla\omega\Vert^2+\langle\negthinspace\langle\mathrm{Ric}\thinspace\omega,\omega\rangle\negthinspace\rangle$ 이고 두 항이 모두 0 이어야 한다. $\mathrm{Ric}\gt 0$ 이면 $\omega=0$ 이므로
 
 $$
-\mathrm{Ric}>0\ \Longrightarrow\ b_1(M)=0
+\mathrm{Ric}\gt 0\ \Longrightarrow\ b_1(M)=0
 $$
 
 이다. 곡률은 미분방정식의 계수에만 나타나고, 그 정보를 위상으로 옮기는 통로가 조화형식이다.

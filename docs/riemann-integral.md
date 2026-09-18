@@ -24,10 +24,10 @@ Riemann 적분은 정의역을 자른다. $x$ 축을 조각내고 각 조각 위
 
 ## Riemann 합
 
-실수 $a < b$ 에 대해 $f$ 를 $[a,b]$ 위의 유계 실함수라 하자. 분할 $P$ 와 표본점 $\xi$ 를 다음처럼 정한다.
+실수 $a \lt b$ 에 대해 $f$ 를 $[a,b]$ 위의 유계 실함수라 하자. 분할 $P$ 와 표본점 $\xi$ 를 다음처럼 정한다.
 
 $$
-a=x_0<x_1<\cdots<x_n=b,\qquad
+a=x_0\lt x_1\lt\cdots\lt x_n=b,\qquad
 \xi_i\in[x_{i-1},x_i]
 $$
 
@@ -38,7 +38,7 @@ S(f,P,\xi)=\sum_{i=1}^n f(\xi_i)(x_i-x_{i-1}),\qquad
 \Vert P\Vert=\max_i(x_i-x_{i-1})
 $$
 
-이다. 임의의 $\varepsilon > 0$ 에 대해 $\delta > 0$ 이 있어 $\Vert P\Vert < \delta$ 인 모든 분할과 모든 표본점 선택에서 $|S(f,P,\xi) - I| < \varepsilon$ 이면 $f$ 는 Riemann 적분 가능하고
+이다. 임의의 $\varepsilon \gt 0$ 에 대해 $\delta \gt 0$ 이 있어 $\Vert P\Vert \lt\delta$ 인 모든 분할과 모든 표본점 선택에서 $|S(f,P,\xi) - I| \lt\varepsilon$ 이면 $f$ 는 Riemann 적분 가능하고
 
 $$
 I=\int_a^b f(x)\thinspace dx
@@ -63,7 +63,7 @@ $$
 $f$ 가 적분 가능한 것과 다음이 동치다.
 
 $$
-\forall\varepsilon>0\ \exists P:\quad U(f,P)-L(f,P)<\varepsilon
+\forall\varepsilon\gt 0\ \exists P:\quad U(f,P)-L(f,P)\lt\varepsilon
 $$
 
 상합과 하합의 간극을 원하는 만큼 줄이는 분할 하나를 찾으면 된다.

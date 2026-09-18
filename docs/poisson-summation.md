@@ -64,7 +64,7 @@ $$
 \sum_{n\in\mathbb Z}f(n)=\sum_{k\in\mathbb Z}\hat f(k)
 $$
 
-판정 조건 하나는 다음이다. $f$ 가 연속이고, 어떤 $C,\varepsilon>0$ 에 대해 $|f(x)|\le C(1+|x|)^{-1-\varepsilon}$ 이며 $|\hat f(\xi)|\le C(1+|\xi|)^{-1-\varepsilon}$ 이면 양변이 절대수렴하고 등식이 성립한다. Schwartz 함수는 물론 여기 들어간다.
+판정 조건 하나는 다음이다. $f$ 가 연속이고, 어떤 $C,\varepsilon\gt 0$ 에 대해 $|f(x)|\le C(1+|x|)^{-1-\varepsilon}$ 이며 $|\hat f(\xi)|\le C(1+|\xi|)^{-1-\varepsilon}$ 이면 양변이 절대수렴하고 등식이 성립한다. Schwartz 함수는 물론 여기 들어간다.
 
 ## 스케일과 평행이동
 
@@ -92,7 +92,7 @@ $L$ 이 촘촘하면 $L^{\ast}$ 는 성기다. 기본영역의 크기가 바뀌�
 
 ## 증명
 
-감쇠 조건에서 $\sum_nf(x+n)$ 이 균등수렴하므로 $F$ 는 연속이고, $\sum_k|\hat f(k)|<\infty$ 이므로 $F$ 의 Fourier 급수가 절대수렴해 $F$ 에 균등수렴한다. 두 사실을 $x=0$ 에서 맞추면 증명이 끝난다. $\square$
+감쇠 조건에서 $\sum_nf(x+n)$ 이 균등수렴하므로 $F$ 는 연속이고, $\sum_k|\hat f(k)|\lt\infty$ 이므로 $F$ 의 Fourier 급수가 절대수렴해 $F$ 에 균등수렴한다. 두 사실을 $x=0$ 에서 맞추면 증명이 끝난다. $\square$
 
 조건을 빼면 등식이 깨진다. 연속이고 $\sum f(n)$ 과 $\sum\hat f(k)$ 가 모두 절대수렴하는데 등식이 성립하지 않는 예가 있다. Fourier 급수가 점별로 값을 복원한다는 보장이 없으면 이 논법이 통하지 않는다.
 

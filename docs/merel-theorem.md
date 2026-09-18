@@ -54,7 +54,7 @@ $$
 B(d)=\sup\big\lbrace|E(K)_{\mathrm{tors}}|\ :\ [K:\mathbb Q]=d,\ E/K\ \text{타원곡선}\big\rbrace
 $$
 
-Merel 의 정리는 $B(d)<\infty$ 라는 진술이다. 동치로, 차수 $d$ 체 위의 타원곡선이 위수 $p$ 의 점을 가지면 $p$ 가 $d$ 에만 의존하는 유계를 넘지 않는다.
+Merel 의 정리는 $B(d)\lt\infty$ 라는 진술이다. 동치로, 차수 $d$ 체 위의 타원곡선이 위수 $p$ 의 점을 가지면 $p$ 가 $d$ 에만 의존하는 유계를 넘지 않는다.
 
 ## 겨냥 원소와 겨냥 몫
 
@@ -86,7 +86,7 @@ $$
 
 ## 명시적 상한
 
-Merel 의 원 논문은 $p<d^{3d^{2}}$ 를 준다. Oesterlé 가 같은 방법을 다듬어
+Merel 의 원 논문은 $p\lt d^{3d^{2}}$ 를 준다. Oesterlé 가 같은 방법을 다듬어
 
 $$
 p\le\big(3^{d/2}+1\big)^{2}
@@ -98,7 +98,7 @@ $$
 
 | 물음 | 상태 |
 | --- | --- |
-| $B(d)<\infty$ | 해결 (Merel) |
+| $B(d)\lt\infty$ | 해결 (Merel) |
 | $d=1$ 명시적 목록 | 15 개 군 (Mazur) |
 | $d=2$ 명시적 목록 | 26 개 군 (Kamienny, Kenku–Momose) |
 | $d=3$ 명시적 목록 | 해결 (Derickx–Etropolski–van Hoeij–Morrow–Zureick-Brown) |

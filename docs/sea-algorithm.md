@@ -6,7 +6,7 @@
 
 Schoof 가 1985 년에 $\log p$ 의 다항식 시간으로 도는 알고리즘을 주었다.
 
-> $a_p$ 는 크기가 $2\sqrt p$ 이하인 **정수**다. 작은 소수 $\ell$ 마다 $a_p\bmod\ell$ 을 계산하고, $\prod\ell>4\sqrt p$ 가 되면 중국인 나머지 정리로 $a_p$ 가 확정된다.
+> $a_p$ 는 크기가 $2\sqrt p$ 이하인 **정수**다. 작은 소수 $\ell$ 마다 $a_p\bmod\ell$ 을 계산하고, $\prod\ell\gt 4\sqrt p$ 가 되면 중국인 나머지 정리로 $a_p$ 가 확정된다.
 
 $a_p\bmod\ell$ 을 어떻게 계산하는가. Frobenius $\varphi(x,y)=(x^p,y^p)$ 는 $E$ 의 자기준동형이고 특성방정식
 
@@ -145,7 +145,7 @@ $\mathbb F_p$ 에서 $\Phi_\ell(j(E),Y)$ 의 근의 개수는 $0,1,2,\ell+1$ 중
 
 ## 알고리즘
 
-1. $\prod_{\ell\in S}\ell>4\sqrt p$ 가 되도록 작은 소수 집합 $S$ 를 잡는다. 이때 $p\notin S$ 다.
+1. $\prod_{\ell\in S}\ell\gt 4\sqrt p$ 가 되도록 작은 소수 집합 $S$ 를 잡는다. 이때 $p\notin S$ 다.
 2. 각 $\ell\in S$ 에서 $t_\ell=a_p\bmod\ell$ 을 구한다.
    - **Schoof.** $R=\mathbb F_p[x,y]/(\psi_\ell,y^2-f)$ 에서 $(x^{p^2},y^{p^2})+p(x,y)=t(x^p,y^p)$ 를 $t$ 마다 시험한다.
    - **Elkies.** $\Phi_\ell(j(E),Y)$ 에 근이 있으면 차수 $(\ell-1)/2$ 의 인수 $g_\ell$ 을 만들고, $\mathbb F_p[x]/(g_\ell)$ 에서 고윳값 $\lambda$ 를 찾아 $t_\ell\equiv\lambda+p/\lambda$ 로 얻는다.
@@ -165,7 +165,7 @@ $\ell=p$ 를 뺀 것은 $E[p]$ 가 $(\mathbb Z/p)^2$ 가 아니기 때문이다.
 
 ## 필요한 소수의 개수
 
-Hasse 한계가 길이 $4\sqrt p$ 인 구간을 주므로 $\prod_{\ell\in S}\ell>4\sqrt p$ 면 충분하다. $\prod_{\ell\le L}\ell=e^{(1+o(1))L}$ (Chebyshev 의 $\vartheta$ 함수) 이므로
+Hasse 한계가 길이 $4\sqrt p$ 인 구간을 주므로 $\prod_{\ell\in S}\ell\gt 4\sqrt p$ 면 충분하다. $\prod_{\ell\le L}\ell=e^{(1+o(1))L}$ (Chebyshev 의 $\vartheta$ 함수) 이므로
 
 $$
 L\approx\log(4\sqrt p)\approx\tfrac12\log p
@@ -199,7 +199,7 @@ $\ell=7$ 에서는 $E[7]$ 이 $n\le4$ 인 $\mathbb F_{5^n}$ 안에 다 들어오
 
 ## CRT 의 종료 조건
 
-$\ell=2,3$ 만으로는 $\prod\ell=6<4\sqrt5\approx8.94$ 라 후보가 $-3$ 과 $3$ 둘이다. $\ell=7$ 의 잉여가 더해지면 확정된다.
+$\ell=2,3$ 만으로는 $\prod\ell=6\lt 4\sqrt5\approx8.94$ 라 후보가 $-3$ 과 $3$ 둘이다. $\ell=7$ 의 잉여가 더해지면 확정된다.
 
 $p$ 가 $5$ 에서 $2^{61}-1$ 로 $18$ 자리 커지는 동안 필요한 가장 큰 $\ell$ 은 $7$ 에서 $29$ 로만 자란다. $\ell$ 이 $\log p$ 규모로 자라는 것이 Schoof 가 다항시간인 근거다.
 

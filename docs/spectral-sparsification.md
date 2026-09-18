@@ -34,7 +34,7 @@ $$
 
 ## Spectral sparsifier
 
-$G$ 를 정점 $n$ 개의 연결 가중 무향 그래프, $L_G$ 를 그 Laplacian 이라 한다. $H$ 는 같은 정점 집합 위에서 $G$ 의 간선 일부에 새 가중치를 준 그래프이고, 오차 허용량은 $0 < \epsilon < 1$ 이다.
+$G$ 를 정점 $n$ 개의 연결 가중 무향 그래프, $L_G$ 를 그 Laplacian 이라 한다. $H$ 는 같은 정점 집합 위에서 $G$ 의 간선 일부에 새 가중치를 준 그래프이고, 오차 허용량은 $0 \lt\epsilon \lt 1$ 이다.
 
 $H$ 가 $G$ 의 spectral sparsifier 라는 것은 모든 실수 벡터 $x$ 에 대해
 
@@ -69,7 +69,7 @@ $$
 arXiv 판 Theorem 1 은 충분히 큰 $n$ 과 충분히 큰 절대상수 $C$ 에 대해
 
 $$
-\frac1{\sqrt n}<\varepsilon<1,\qquad q=\left\lceil\frac{Cn\log n}{\varepsilon^2}\right\rceil
+\frac1{\sqrt n}\lt\varepsilon\lt 1,\qquad q=\left\lceil\frac{Cn\log n}{\varepsilon^2}\right\rceil
 $$
 
 이면 위 절차로 얻은 $H$ 가 $G$ 의 $\epsilon$ spectral sparsifier 일 확률이 적어도 $1/2$ 라고 말한다. 성공 확률은 독립 반복과 검증으로 올린다.

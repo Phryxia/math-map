@@ -5,7 +5,7 @@
 재귀적으로 정의된 프로그램은 자기 자신을 참조한다.
 
 $$
-\mathrm{fact}(n)=\begin{cases}1,&n=0\cr n\cdot\mathrm{fact}(n-1),&n>0\end{cases}
+\mathrm{fact}(n)=\begin{cases}1,&n=0\cr n\cdot\mathrm{fact}(n-1),&n\gt 0\end{cases}
 $$
 
 이것은 정의가 아니라 방정식이다. 미지의 것이 양쪽에 있으므로 뜻을 정하려면 해를 지정해야 하고, 해는 여럿일 수 있으며 끝나지 않는 프로그램 때문에 전체함수를 해로 요구할 수도 없다.
@@ -33,7 +33,7 @@ $f\sqsubseteq g$ 를 $f$ 가 정의된 곳에서 $g$ 도 정의되고 값이 같
 계승의 본문을 한 번 펼치는 조작은 다음과 같다.
 
 $$
-F(f)(n)=\begin{cases}1,&n=0\cr n\cdot f(n-1),&n>0\ \text{이고}\ f(n-1)\ \text{가 정의됨}\end{cases}
+F(f)(n)=\begin{cases}1,&n=0\cr n\cdot f(n-1),&n\gt 0\ \text{이고}\ f(n-1)\ \text{가 정의됨}\end{cases}
 $$
 
 $\bot$ 에서 출발하면 $F(\bot)$ 은 $0$ 에서만, $F^{k}(\bot)$ 은 $k-1$ 까지 정의된다. 각 단계가 이전보다 정보가 많아 사슬이 만들어지고 그 상한이 계승 함수다. 재귀의 실행이 고정점 반복이다.

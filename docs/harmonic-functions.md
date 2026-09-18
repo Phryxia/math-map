@@ -62,7 +62,7 @@ $$u(re^{i\theta})=\frac1{2\pi}\int_0^{2\pi}P_r(\theta-t)\thinspace u(e^{it})\thi
 
 ## Harnack 부등식
 
-$u$ 가 $B(0,R)$ 에서 조화이고 음이 아니면 $\vert z\vert=r<R$ 에서
+$u$ 가 $B(0,R)$ 에서 조화이고 음이 아니면 $\vert z\vert=r\lt R$ 에서
 
 $$\frac{R-r}{R+r}\thinspace u(0)\le u(z)\le\frac{R+r}{R-r}\thinspace u(0)$$
 

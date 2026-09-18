@@ -110,7 +110,7 @@ $$
 
 ## Airy 함수
 
-$\mathrm{Ai}(z)$ 는 안장점이 둘인 가장 간단한 예다. $\lvert \arg z\rvert < \pi/3$ 에서는 감쇠하는 안장점 하나가 지배해
+$\mathrm{Ai}(z)$ 는 안장점이 둘인 가장 간단한 예다. $\lvert \arg z\rvert \lt\pi/3$ 에서는 감쇠하는 안장점 하나가 지배해
 
 $$
 \mathrm{Ai}(z) \thickspace\sim\thickspace \frac{e^{-\frac23 z^{3/2}}}{2\sqrt{\pi}\thinspace z^{1/4}}\sum_{n\ge0} (-1)^n\frac{c_n}{(\tfrac23 z^{3/2})^{n}}

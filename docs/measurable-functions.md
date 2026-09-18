@@ -4,7 +4,7 @@
 
 [측도](measure.md)는 어떤 집합의 크기를 잴 수 있는지를 정한다. 실제로 묻는 질문은 함수에 대한 것이다. 관측값이 $3$ 보다 클 확률, 함수의 적분 같은 양이다.
 
-두 질문 모두 $\lbrace x:f(x)>3\rbrace$ 같은 집합의 크기로 환원된다. 함수에 요구할 조건은 값 쪽에서 뽑은 집합의 역상이 잴 수 있는 집합이라는 것 하나다. 이것이 가측성이고, [Lebesgue 적분](lebesgue-integral.md)과 [확률분포](pushforward-measure.md)가 이 조건 위에서 정의된다.
+두 질문 모두 $\lbrace x:f(x)\gt 3\rbrace$ 같은 집합의 크기로 환원된다. 함수에 요구할 조건은 값 쪽에서 뽑은 집합의 역상이 잴 수 있는 집합이라는 것 하나다. 이것이 가측성이고, [Lebesgue 적분](lebesgue-integral.md)과 [확률분포](pushforward-measure.md)가 이 조건 위에서 정의된다.
 
 정의의 모양은 연속함수와 같다. 위상에서 열린집합의 역상이 열린집합이듯 여기서는 가측집합의 역상이 가측집합이다.
 
@@ -43,10 +43,10 @@ $X=\mathbb R$ 이고 $\Sigma$ 가 Lebesgue 가측집합이면 Lebesgue 가측함
 실수값 함수에서는 모든 $a \in \mathbb R$ 에 대해 다음만 확인하면 충분하다.
 
 $$
-\lbrace x\in X: f(x)>a\rbrace\in\Sigma
+\lbrace x\in X: f(x)\gt a\rbrace\in\Sigma
 $$
 
-역상은 여집합과 가산 합집합을 보존하므로 $\lbrace B : f^{-1}(B) \in \Sigma\rbrace$ 가 $\sigma$ -대수를 이루고, 반직선들이 Borel $\sigma$ -대수를 생성한다. $>$ 대신 $\ge$ , $<$ , $\le$ 중 어느 것을 써도 같다.
+역상은 여집합과 가산 합집합을 보존하므로 $\lbrace B : f^{-1}(B) \in \Sigma\rbrace$ 가 $\sigma$ -대수를 이루고, 반직선들이 Borel $\sigma$ -대수를 생성한다. $\gt $ 대신 $\ge$ , $\lt $ , $\le$ 중 어느 것을 써도 같다.
 
 일반적으로 $\mathcal T$ 가 집합족 $\mathcal E$ 로 생성되면 $\mathcal E$ 의 원소에 대해서만 역상을 확인하면 된다.
 
@@ -63,7 +63,7 @@ $$
 $f$ 와 $g$ 가 실수값 가측함수면 $f + g$ , $fg$ , $cf$ , $\max(f,g)$ , $\min(f,g)$ , $\lvert f \rvert$ , $f^+$ , $f^-$ 가 모두 가측이다. 합의 가측성은 다음에서 나온다.
 
 $$
-\lbrace f+g>a\rbrace=\bigcup_{q\in\mathbb{Q}}\bigl(\lbrace f>q\rbrace\cap\lbrace g>a-q\rbrace\bigr)
+\lbrace f+g\gt a\rbrace=\bigcup_{q\in\mathbb{Q}}\bigl(\lbrace f\gt q\rbrace\cap\lbrace g\gt a-q\rbrace\bigr)
 $$
 
 유리수에 대한 가산 합집합이므로 $\sigma$ -대수의 가산 연산으로 충분하다.
@@ -73,7 +73,7 @@ $$
 가측함수열 $f_n$ 에 대해 $\sup f_n$ , $\inf f_n$ , $\limsup f_n$ , $\liminf f_n$ 이 모두 가측이다.
 
 $$
-\Bigl\lbrace\sup_n f_n>a\Bigr\rbrace=\bigcup_n\lbrace f_n>a\rbrace
+\Bigl\lbrace\sup_n f_n\gt a\Bigr\rbrace=\bigcup_n\lbrace f_n\gt a\rbrace
 $$
 
 에서 나머지가 따라오고, 점별 극한이 존재하면 그 극한도 가측이다.

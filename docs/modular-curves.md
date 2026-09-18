@@ -97,7 +97,7 @@ $$
 
 ## 종수 공식
 
-> $N>1$ 에 대해
+> $N\gt 1$ 에 대해
 > $$
 > g\big(X_0(N)\big)=1+\frac\mu{12}-\frac{\nu_2}4-\frac{\nu_3}3-\frac{\nu_\infty}2
 > $$

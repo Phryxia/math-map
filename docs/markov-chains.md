@@ -47,12 +47,12 @@ $$
 ## 보조 정의
 
 - $n$ 단계 전이확률: $P$ 의 $n$ 제곱의 $(i,j)$ 성분을 $p_{ij}^{(n)}$ 로 쓴다.
-- $i$ 에서 $j$ 로 도달 가능: 어떤 $n\ge 0$ 에 대해 $p_{ij}^{(n)}>0$ 이다. 서로 도달 가능한 관계는 [동치관계](relations.md)이고 그 동치류를 communicating class 라 한다.
+- $i$ 에서 $j$ 로 도달 가능: 어떤 $n\ge 0$ 에 대해 $p_{ij}^{(n)}\gt 0$ 이다. 서로 도달 가능한 관계는 [동치관계](relations.md)이고 그 동치류를 communicating class 라 한다.
 - 기약(irreducible): 상태 공간 전체가 하나의 communicating class다.
 - 주기: 상태 $i$ 의 주기는 다음 값이고, 기약 연쇄에서는 모든 상태가 같은 주기를 가진다. 주기가 1 이면 비주기적(aperiodic)이다.
 
 $$
-d(i)=\gcd\lbrace\thinspace n\ge 1 : p_{ii}^{(n)}>0\thinspace\rbrace
+d(i)=\gcd\lbrace\thinspace n\ge 1 : p_{ii}^{(n)}\gt 0\thinspace\rbrace
 $$
 
 - 첫 복귀시각과 재귀성: $T_i=\min\lbrace n\ge 1 : X_n=i\rbrace$ 로 두고, $i$ 가 재귀적이라는 것은 이 시각이 확률 1 로 유한하다는 뜻이다. 기댓값까지 유한하면 양재귀적(positive recurrent)이다.

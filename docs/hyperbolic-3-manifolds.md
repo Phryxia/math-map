@@ -57,7 +57,7 @@ $$
 
 ## 쌍곡 공간과 등거리군
 
-> **정의.** 상반공간 모형은 $\mathbb H^3=\lbrace(x_1,x_2,x_3):x_3>0\rbrace$ 에 계량 $ds^2=(dx_1^2+dx_2^2+dx_3^2)/x_3^2$ 을 준 것이다. 단면곡률이 상수 $-1$ 이고 완비이며, 이 성질을 갖는 단연결 3 차원 다양체는 등거리사상을 빼고 이것뿐이다.
+> **정의.** 상반공간 모형은 $\mathbb H^3=\lbrace(x_1,x_2,x_3):x_3\gt 0\rbrace$ 에 계량 $ds^2=(dx_1^2+dx_2^2+dx_3^2)/x_3^2$ 을 준 것이다. 단면곡률이 상수 $-1$ 이고 완비이며, 이 성질을 갖는 단연결 3 차원 다양체는 등거리사상을 빼고 이것뿐이다.
 
 무한원 경계 $\partial\mathbb H^3=\widehat{\mathbb C}$ 위에서 등거리사상은 Möbius 변환으로 작용하고
 
@@ -70,7 +70,7 @@ $$
 
 ## 쌍곡 다양체와 Kleinian 군
 
-> **정의.** $\Gamma\le\mathrm{PSL}_2(\mathbb C)$ 가 이산이고 비틀림이 없으면 **Kleinian 군**이라 하고, $M=\mathbb H^3/\Gamma$ 를 완비 쌍곡 3 다양체라 한다. $\mathrm{Vol}(M)<\infty$ 이면 유한 부피다.
+> **정의.** $\Gamma\le\mathrm{PSL}_2(\mathbb C)$ 가 이산이고 비틀림이 없으면 **Kleinian 군**이라 하고, $M=\mathbb H^3/\Gamma$ 를 완비 쌍곡 3 다양체라 한다. $\mathrm{Vol}(M)\lt\infty$ 이면 유한 부피다.
 
 비틀림이 없다는 조건이 타원형 원소를 배제하므로 작용이 자유롭고 몫이 다양체가 된다. 유한 부피이면 $M$ 은 콤팩트한 부분과 유한개의 **cusp**(원환면 $\times[0,\infty)$ 꼴, 포물형 원소들이 만든다)로 나뉜다.
 
@@ -119,13 +119,13 @@ Mostow 가 닫힌 경우를, Prasad 가 cusp 가 있는 유한 부피 경우를 
 
 ## 두꺼운–얇은 분해
 
-> **Margulis 보조정리.** 차원 $n$ 마다 상수 $\varepsilon_n>0$ 이 있어, 임의의 쌍곡 $n$ 다양체에서 단사반지름이 $\varepsilon_n$ 미만인 부분 $M_{<\varepsilon}$ 은 cusp 이웃과 짧은 측지선 주변의 Margulis 관들의 합집합이다.
+> **Margulis 보조정리.** 차원 $n$ 마다 상수 $\varepsilon_n\gt 0$ 이 있어, 임의의 쌍곡 $n$ 다양체에서 단사반지름이 $\varepsilon_n$ 미만인 부분 $M_{\lt\varepsilon}$ 은 cusp 이웃과 짧은 측지선 주변의 Margulis 관들의 합집합이다.
 
 쌍곡 다양체는 기하가 유계인 콤팩트 조각인 두꺼운 부분과 표준 꼴인 얇은 부분으로 나뉜다. 부피가 유계이면 두꺼운 부분의 꼴이 유한 가지뿐이고, 이 콤팩트성이 아래 Jørgensen–Thurston 정리를 지탱한다.
 
 ## 부피의 집합
 
-> **정리 (Jørgensen–Thurston).** 쌍곡 3 다양체 부피의 집합 $\mathcal V\subset\mathbb R_{>0}$ 은 정렬집합이고 순서형이 $\omega^\omega$ 다. 각 부피값을 갖는 다양체는 유한개다.
+> **정리 (Jørgensen–Thurston).** 쌍곡 3 다양체 부피의 집합 $\mathcal V\subset\mathbb R_{\gt 0}$ 은 정렬집합이고 순서형이 $\omega^\omega$ 다. 각 부피값을 갖는 다양체는 유한개다.
 
 작은 쪽 끝이 확인되어 있다.
 
@@ -141,7 +141,7 @@ $\omega^\omega$ 라는 순서형은 극한점의 층이 무한히 쌓인다는 �
 ## 쌍곡 Dehn 수술
 
 > **정리 (Thurston).** $M$ 이 cusp 를 가진 유한 부피 쌍곡 다양체이면, 유한개의 예외 기울기를 뺀 모든 기울기 $(p,q)$ 에 대해 Dehn 채움 $M_{p,q}$ 도 쌍곡이다. 그리고
-> $$\mathrm{Vol}(M_{p,q})<\mathrm{Vol}(M),\qquad \mathrm{Vol}(M_{p,q})\longrightarrow\mathrm{Vol}(M)\ \ (p^2+q^2\to\infty)$$
+> $$\mathrm{Vol}(M_{p,q})\lt\mathrm{Vol}(M),\qquad \mathrm{Vol}(M_{p,q})\longrightarrow\mathrm{Vol}(M)\ \ (p^2+q^2\to\infty)$$
 
 cusp 를 메우면 부피가 줄고, 복잡하게 메울수록 원래 부피에 아래에서 수렴한다. $\mathcal V$ 안의 각 부피값이 그보다 큰 부피값들의 극한이 되고, 이 과정을 겹쳐 $\omega^\omega$ 가 나온다. 수술로 만드는 3 다양체 가운데 쌍곡이 아닌 것은 유한개의 예외뿐이다.
 

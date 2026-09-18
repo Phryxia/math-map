@@ -134,7 +134,7 @@ $$
 \sum_{i\in I}i+\sum_{j\in J}j=\sum_{k\in K}k+\binom{r+1}{2}
 $$
 
-이고, 모든 $s<r$ 과 $(F,G,H)\in T^r_s$ 에 대해
+이고, 모든 $s\lt r$ 과 $(F,G,H)\in T^r_s$ 에 대해
 
 $$
 \sum_{f\in F}i_f+\sum_{g\in G}j_g\le\sum_{h\in H}k_h+\binom{s+1}{2}
@@ -148,7 +148,7 @@ $\alpha,\beta,\gamma$ 가 $n$ 개씩의 내림차순 실수열이라 하자. $A+
 
 $$
 \sum\gamma_k=\sum\alpha_i+\sum\beta_j\quad\text{이고}\quad
-\sum_{k\in K}\gamma_k\le\sum_{i\in I}\alpha_i+\sum_{j\in J}\beta_j\ \ \bigl(\forall(I,J,K)\in T^n_r,\ \forall r<n\bigr)
+\sum_{k\in K}\gamma_k\le\sum_{i\in I}\alpha_i+\sum_{j\in J}\beta_j\ \ \bigl(\forall(I,J,K)\in T^n_r,\ \forall r\lt n\bigr)
 $$
 
 이다. 그리고 정수열인 경우 이 조건은 $c^\gamma_{\alpha\beta}\ne0$ 과 동치다.
@@ -164,7 +164,7 @@ $$
 | 문제 | 복잡도 |
 |---|---|
 | $c^\nu_{\lambda\mu}$ 의 값 계산 | $\char35{}\mathrm P$ 완전 |
-| $c^\nu_{\lambda\mu}>0$ 인지 판정 | 다항시간 |
+| $c^\nu_{\lambda\mu}\gt 0$ 인지 판정 | 다항시간 |
 
 값을 세는 것은 어렵지만 $0$ 인지 아닌지는 쉽다. 판정이 쉬운 이유가 saturation 이다. 정수점의 존재를 유리점의 존재로 바꾸면 선형계획법이 되고, 부등식의 개수가 다항적이므로 다항시간에 끝난다. 세는 것이 어려운 양의 소멸 여부가 쉬울 수 있다는 이 대비를 기하학적 복잡도 이론(GCT)이 $\mathrm{VP}$ 대 $\mathrm{VNP}$ 를 공략하는 데 쓴다. Mulmuley 와 Sohoni 의 계획은 Kronecker 계수 같은 더 어려운 중복도에서도 같은 구조를 찾는다.
 

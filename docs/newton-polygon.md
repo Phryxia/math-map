@@ -104,9 +104,9 @@ $$
 $v(x^n/n!)=nv(x)-\frac{n-s_p(n)}{p-1}$ 이 $\infty$ 로 가려면 다음이 필요하다.
 
 $$
-v(x)>\frac1{p-1}
+v(x)\gt\frac1{p-1}
 \qquad\Longleftrightarrow\qquad
-|x|_p<p^{-1/(p-1)}<1
+|x|_p\lt p^{-1/(p-1)}\lt 1
 $$
 
 다각형의 기울기가 점근적으로 $-1/(p-1)$ 이라는 말과 같다. $\pi^{p-1}=-p$ 이면 $v(\pi)=\frac1{p-1}$ 이라 $\exp(\pi x)$ 는 열린 단위원판에서 겨우 수렴하고, $x^p$ 항을 뺀 $\exp(\pi(x-x^p))$ 가 반경을 $1$ 너머로 민다. 이 경계가 [Dwork 의 분해함수](dwork-rationality.md)가 넘은 벽이다.

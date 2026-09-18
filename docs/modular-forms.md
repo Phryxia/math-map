@@ -2,7 +2,7 @@
 
 # 개요
 
-모듈러 형식은 상반평면 $\mathbb H=\lbrace z:\mathrm{Im}\thinspace z>0\rbrace$ 위의 [정칙함수](holomorphic-functions.md) 가운데 무한군 $\mathrm{SL}\_2(\mathbb Z)$ 의 [작용](group-actions.md)에 대해 다음 규칙으로 변하는 것이다.
+모듈러 형식은 상반평면 $\mathbb H=\lbrace z:\mathrm{Im}\thinspace z\gt 0\rbrace$ 위의 [정칙함수](holomorphic-functions.md) 가운데 무한군 $\mathrm{SL}\_2(\mathbb Z)$ 의 [작용](group-actions.md)에 대해 다음 규칙으로 변하는 것이다.
 
 $$
 f\Big(\frac{az+b}{cz+d}\Big)=(cz+d)^kf(z)\qquad
@@ -39,7 +39,7 @@ $$
 \mathrm{ord}_\infty(f)+\tfrac12\mathrm{ord}_i(f)+\tfrac13\mathrm{ord}_\rho(f)+\sum_{\text{나머지}}\mathrm{ord}_P(f)=\frac k{12}
 $$
 
-$1/2$ 과 $1/3$ 은 $i$ 와 $\rho=e^{2\pi i/3}$ 에서 고정자군이 자명하지 않아 붙는 가중치다. 영점의 개수가 유계이므로 자유도가 유한하다. $k<0$ 이면 우변이 음수라 형식이 없고 $k=2$ 에서도 없다.
+$1/2$ 과 $1/3$ 은 $i$ 와 $\rho=e^{2\pi i/3}$ 에서 고정자군이 자명하지 않아 붙는 가중치다. 영점의 개수가 유계이므로 자유도가 유한하다. $k\lt 0$ 이면 우변이 음수라 형식이 없고 $k=2$ 에서도 없다.
 
 ## 항등식의 생성
 

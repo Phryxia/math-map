@@ -60,7 +60,7 @@ $$
 
 ## 유일성과 반전
 
-$\varphi_\mu=\varphi_\nu$ 이면 $\mu=\nu$ 다. 분포함수의 연속점 $a<b$ 에서 반전공식
+$\varphi_\mu=\varphi_\nu$ 이면 $\mu=\nu$ 다. 분포함수의 연속점 $a\lt b$ 에서 반전공식
 
 $$
 \mu\bigl((a,b)\bigr)=\lim_{T\to\infty}\frac1{2\pi}\int_{-T}^{T}\frac{e^{-ita}-e^{-itb}}{it}\thinspace\varphi_\mu(t)\thinspace dt
@@ -74,14 +74,14 @@ $$
 
 ## 적률과 원점에서의 미분
 
-$\mathbb E[|X|^n]<\infty$ 이면 $\varphi$ 는 $n$ 번 연속미분가능하고 다음이 성립한다.
+$\mathbb E[|X|^n]\lt\infty$ 이면 $\varphi$ 는 $n$ 번 연속미분가능하고 다음이 성립한다.
 
 $$
 \varphi^{(n)}(0)=i^n\thinspace\mathbb E[X^n],\qquad
 \varphi(t)=\sum_{k=0}^{n}\frac{(it)^k}{k!}\mathbb E[X^k]+o(|t|^n)
 $$
 
-적률 유한성이 원점에서의 매끄러움으로 번역된다. 역은 짝수 차수에서만 성립한다. $\varphi''(0)$ 이 존재하면 $\mathbb E[X^2]<\infty$ 이지만 1 차 미분 가능성만으로는 평균의 존재가 보장되지 않는다. 위 전개는 국소 정보이고 유일성은 $t$ 전체에서의 값에서 나온다.
+적률 유한성이 원점에서의 매끄러움으로 번역된다. 역은 짝수 차수에서만 성립한다. $\varphi''(0)$ 이 존재하면 $\mathbb E[X^2]\lt\infty$ 이지만 1 차 미분 가능성만으로는 평균의 존재가 보장되지 않는다. 위 전개는 국소 정보이고 유일성은 $t$ 전체에서의 값에서 나온다.
 
 ## Lévy 연속성 정리
 
@@ -93,7 +93,7 @@ $$
 1 은 $e^{i\langle t,x\rangle}$ 가 유계 연속이므로 정의에서 나온다. 2 에서는 원점에서의 연속성이 tightness 를 대신한다. 증명은 $\psi$ 의 원점 근방 적분으로 꼬리질량을 평가하는 부등식
 
 $$
-\mu_n\bigl(\lbrace|x|>2/\delta\rbrace\bigr)\le\frac1\delta\int_{-\delta}^{\delta}\bigl(1-\varphi_{\mu_n}(t)\bigr)\thinspace dt
+\mu_n\bigl(\lbrace|x|\gt 2/\delta\rbrace\bigr)\le\frac1\delta\int_{-\delta}^{\delta}\bigl(1-\varphi_{\mu_n}(t)\bigr)\thinspace dt
 $$
 
 에서 tightness 를 얻고, Prokhorov 정리로 수렴 부분열을 잡은 뒤 유일성으로 극한을 확정한다.

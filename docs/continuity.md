@@ -23,7 +23,7 @@ $f(a)$ 를 오차 $\varepsilon$ 안에서 알려면 입력을 $\delta$ 안에서
 거리 공간 $(X, d_X)$ , $(Y, d_Y)$ 와 함수 $f : X \to Y$ , 점 $a \in X$ 에 대해 다음이 성립하면 $f$ 가 $a$ 에서 **연속**이다.
 
 $$
-\forall\varepsilon>0\thickspace\exists\delta>0\thickspace\forall x\in X:\ d_X(x,a)<\delta\Rightarrow d_Y(f(x),f(a))<\varepsilon
+\forall\varepsilon\gt 0\thickspace\exists\delta\gt 0\thickspace\forall x\in X:\ d_X(x,a)\lt\delta\Rightarrow d_Y(f(x),f(a))\lt\varepsilon
 $$
 
 모든 점에서 연속이면 연속함수다. 모든 $a$ 에 대해 같은 $\delta$ 를 쓸 수 있으면 **균등연속**이다.
@@ -59,7 +59,7 @@ $$
 입력 차이를 1 미만으로 제한하면
 
 $$
-\lvert x^2-a^2\rvert=\lvert x-a\rvert\thinspace\lvert x+a\rvert\le\lvert x-a\rvert\big(\lvert x-a\rvert+2\lvert a\rvert\big)<\lvert x-a\rvert(1+2\lvert a\rvert)
+\lvert x^2-a^2\rvert=\lvert x-a\rvert\thinspace\lvert x+a\rvert\le\lvert x-a\rvert\big(\lvert x-a\rvert+2\lvert a\rvert\big)\lt\lvert x-a\rvert(1+2\lvert a\rvert)
 $$
 
 이므로 주어진 $\varepsilon$ 에 대해

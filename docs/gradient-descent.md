@@ -52,7 +52,7 @@ $$
 f(x_{k+1})\le f(x_k)-\eta\Bigl(1-\frac{L\eta}{2}\Bigr)\left\lVert \nabla f(x_k)\right\rVert^2
 $$
 
-따라서 $0\lt \eta\lt 2/L$ 이면 기울기가 $0$ 이 아닌 동안 함수값이 엄격히 줄어들고, $\eta=1/L$ 에서 계수가 $1/(2L)$ 이다.
+따라서 $0\lt\eta\lt 2/L$ 이면 기울기가 $0$ 이 아닌 동안 함수값이 엄격히 줄어들고, $\eta=1/L$ 에서 계수가 $1/(2L)$ 이다.
 
 $$
 f(x_{k+1})\le f(x_k)-\frac{1}{2L}\left\lVert \nabla f(x_k)\right\rVert^2

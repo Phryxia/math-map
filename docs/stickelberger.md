@@ -158,7 +158,7 @@ Stickelberger 는 $I_m$ 이 류군을 죽인다고만 말하므로 $\char35{}\ma
 $m=p\equiv3\pmod4$ 이고 $\chi$ 가 이차 지표이면 $\theta_p$ 의 $\chi$ 성분이
 
 $$
-h\big(\mathbb Q(\sqrt{-p})\big)=\frac{1}{2-\left(\frac2p\right)}\sum_{0<a<p/2}\left(\frac{a}{p}\right)\cdot(-1)\ \text{꼴}
+h\big(\mathbb Q(\sqrt{-p})\big)=\frac{1}{2-\left(\frac2p\right)}\sum_{0\lt a\lt p/2}\left(\frac{a}{p}\right)\cdot(-1)\ \text{꼴}
 $$
 
 의 고전적 유수 공식으로 환원된다. 이차잉여가 앞쪽 절반에 몇 개 더 있는지가 류수를 준다는 Dirichlet 의 결과이며, Stickelberger 원소는 이를 모든 지표로 확장한다.

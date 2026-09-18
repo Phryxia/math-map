@@ -13,7 +13,7 @@ $$
 이 주어지면 계수 $c(m)$ 을 지수로 삼은 무한곱이 자기동형 형식이 된다. 가장 알려진 경우가 괴물 Lie 대수의 분모 공식이다.
 
 $$
-j(\sigma)-j(\tau)=p^{-1}\prod_{m>0,\ n\in\mathbb Z}\bigl(1-p^mq^n\bigr)^{c(mn)},
+j(\sigma)-j(\tau)=p^{-1}\prod_{m\gt 0,\ n\in\mathbb Z}\bigl(1-p^mq^n\bigr)^{c(mn)},
 \qquad j-744=\sum_{k\ge-1}c(k)q^k
 $$
 
@@ -42,7 +42,7 @@ $$
 절단한 영역 $\mathcal F_T$ 위에서 적분하고 $T\to\infty$ 에서 발산하는 부분을 빼면 유한한 $\Phi$ 가 남는다. 이 $\Phi$ 는 특정 부분다양체를 따라 로그 특이점을 가지며, 특이점의 위치와 무게는 $f$ 의 주요부, 곧 음수 차수 계수 $c(-m)$ 이 결정한다.
 
 $$
-\mathrm{div}\bigl(\Psi_f\bigr)=\sum_{m>0}c(-m)\thinspace Z(m),
+\mathrm{div}\bigl(\Psi_f\bigr)=\sum_{m\gt 0}c(-m)\thinspace Z(m),
 \qquad \Psi_f=\text{Borcherds 곱}
 $$
 
@@ -63,7 +63,7 @@ graph TD
 이 대응은 양방향이다. 어떤 Heegner 인자를 갖는 모듈러 형식이 존재하려면 그 인자를 주요부로 갖는 약정칙 형식이 있어야 한다. 약정칙 형식의 주요부가 만족할 조건은 첨점형식과의 짝이 0 이 되는 것뿐이다(Serre 쌍대성).
 
 $$
-\sum_{m>0}c(-m)\thinspace a_g(m)=0\quad\text{for all }g\in S_{1+n/2}
+\sum_{m\gt 0}c(-m)\thinspace a_g(m)=0\quad\text{for all }g\in S_{1+n/2}
 $$
 
 인자가 모듈러 형식의 인자인가라는 기하 문제가 유한 개의 선형 조건으로 환원된다. Gross–Kohnen–Zagier 정리의 Borcherds 판 증명이 이 관찰에 기댄다.
@@ -85,10 +85,10 @@ $$
 가 무게 $c(0,0)/2$ 의 직교군 $\mathrm O(2,n)$ 자기동형 형식이고, 근방에서
 
 $$
-\Psi_f(v)=q^{\rho}\prod_{\lambda>0}\bigl(1-q^{\lambda}\bigr)^{c(\lambda,\thinspace\langle\lambda,\lambda\rangle/2)}
+\Psi_f(v)=q^{\rho}\prod_{\lambda\gt 0}\bigl(1-q^{\lambda}\bigr)^{c(\lambda,\thinspace\langle\lambda,\lambda\rangle/2)}
 $$
 
-꼴의 무한곱으로 전개된다. 인자는 $\sum_{m>0}c(-m)Z(m)$ 이다.
+꼴의 무한곱으로 전개된다. 인자는 $\sum_{m\gt 0}c(-m)Z(m)$ 이다.
 
 ## Heegner 인자
 
@@ -107,7 +107,7 @@ $Z(m)$ 은 노름 $-m$ 벡터의 직교여공간들이 이루는 부분다양체
 
 ## 지수의 부호
 
-$c(-m)>0$ 이면 $\Psi_f$ 가 $Z(m)$ 에서 영점을, $c(-m)<0$ 이면 극을 갖는다. 모든 $c(-m)$ 을 양수로 만들 수는 없고, 첨점형식과의 짝 조건이 부호의 조합을 제한한다.
+$c(-m)\gt 0$ 이면 $\Psi_f$ 가 $Z(m)$ 에서 영점을, $c(-m)\lt 0$ 이면 극을 갖는다. 모든 $c(-m)$ 을 양수로 만들 수는 없고, 첨점형식과의 짝 조건이 부호의 조합을 제한한다.
 
 ## 방법의 한계
 

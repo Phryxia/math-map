@@ -40,7 +40,7 @@ graph TD
 
 ## Markov 와 Chebyshev
 
-**Markov 부등식.** 비음 확률변수 $X$ 와 $t>0$ 에 대해
+**Markov 부등식.** 비음 확률변수 $X$ 와 $t\gt 0$ 에 대해
 
 $$
 P(X \ge t) \thickspace\le\thickspace \frac{E[X]}{t}.
@@ -48,7 +48,7 @@ $$
 
 증명은 한 줄이다. $X \ge t \cdot \mathbf 1\lbrace X \ge t\rbrace$ 의 양변에 기댓값을 취하면 된다([확률변수와 기댓값](random-variables.md)의 단조성).
 
-**Chebyshev 부등식.** $\mathrm{Var}(X) < \infty$ 이면
+**Chebyshev 부등식.** $\mathrm{Var}(X) \lt\infty$ 이면
 
 $$
 P\big(|X - E[X]| \ge t\big) \thickspace\le\thickspace \frac{\mathrm{Var}(X)}{t^2}.
@@ -58,12 +58,12 @@ $(X - E[X])^2$ 에 Markov 부등식을 적용한 결과다. 일반적으로 비�
 
 ## Chernoff 기법
 
-$\lambda > 0$ 에 대해 $\varphi(x) = e^{\lambda x}$ 를 택하면
+$\lambda \gt 0$ 에 대해 $\varphi(x) = e^{\lambda x}$ 를 택하면
 
 $$
 P(X \ge t) \thickspace\le\thickspace e^{-\lambda t} \thinspace E\big[e^{\lambda X}\big]
 \quad\Longrightarrow\quad
-P(X \ge t) \thickspace\le\thickspace \exp\Big(-\sup_{\lambda > 0} \big(\lambda t - \log E[e^{\lambda X}]\big)\Big).
+P(X \ge t) \thickspace\le\thickspace \exp\Big(-\sup_{\lambda \gt 0} \big(\lambda t - \log E[e^{\lambda X}]\big)\Big).
 $$
 
 우변의 지수는 누율생성함수 $\psi(\lambda) = \log E[e^{\lambda X}]$ 의 Legendre 변환이며, 이 최적화를 수행하는 절차 전체를 Chernoff 기법이라 부른다. 독립합에서는 $\psi$ 가 항별로 더해지므로 계산이 항 단위로 분해된다.
@@ -72,7 +72,7 @@ $$
 
 $$
 P\big(S \ge (1+\delta)\mu\big) \thickspace\le\thickspace \Big(\frac{e^{\delta}}{(1+\delta)^{1+\delta}}\Big)^{\mu}
-\thickspace\le\thickspace \exp\negthinspace\Big(-\frac{\delta^2 \mu}{2 + \delta}\Big), \qquad \delta > 0 .
+\thickspace\le\thickspace \exp\negthinspace\Big(-\frac{\delta^2 \mu}{2 + \delta}\Big), \qquad \delta \gt 0 .
 $$
 
 ## Hoeffding 보조정리와 부등식
@@ -103,7 +103,7 @@ $$
 
 ## sub-Gaussian
 
-중심화된 확률변수 $X$ 가 어떤 $\sigma > 0$ 에 대해
+중심화된 확률변수 $X$ 가 어떤 $\sigma \gt 0$ 에 대해
 
 $$
 E\big[e^{\lambda X}\big] \thickspace\le\thickspace \exp\negthinspace\Big(\frac{\lambda^2 \sigma^2}{2}\Big) \quad \text{for all } \lambda \in \mathbb{R}

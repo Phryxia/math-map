@@ -28,7 +28,7 @@ $$
 
 ## 누적함수
 
-실수 $a<b$ 를 고정하고 $f$ 를 $[a,b]$ 에서 Riemann 적분 가능한 함수라 하자.
+실수 $a\lt b$ 를 고정하고 $f$ 를 $[a,b]$ 에서 Riemann 적분 가능한 함수라 하자.
 
 $$
 F(x)=\int_a^x f(t)\thinspace dt,\qquad x\in[a,b]
@@ -60,19 +60,19 @@ $$
 
 ## 제1 형태의 증명
 
-$h>0$ 에 대해
+$h\gt 0$ 에 대해
 
 $$
 \frac{F(x+h)-F(x)}h=\frac1h\int_x^{x+h}f(t)\thinspace dt
 $$
 
-이고 우변은 $[x, x+h]$ 에서의 $f$ 의 평균이다. $f$ 가 $x$ 에서 연속이므로 $|f(t) - f(x)| < \varepsilon$ 를 만드는 $\delta$ 를 잡으면 $0 < h < \delta$ 에서
+이고 우변은 $[x, x+h]$ 에서의 $f$ 의 평균이다. $f$ 가 $x$ 에서 연속이므로 $|f(t) - f(x)| \lt\varepsilon$ 를 만드는 $\delta$ 를 잡으면 $0 \lt h \lt\delta$ 에서
 
 $$
-\left|\frac{F(x+h)-F(x)}h-f(x)\right|\le\frac1h\int_x^{x+h}|f(t)-f(x)|\thinspace dt<\varepsilon
+\left|\frac{F(x+h)-F(x)}h-f(x)\right|\le\frac1h\int_x^{x+h}|f(t)-f(x)|\thinspace dt\lt\varepsilon
 $$
 
-이다. $h < 0$ 에서도 같다. 연속성 없이 적분 가능성만 있으면 $|F(x+h)-F(x)| \le M|h|$ 로 $F$ 의 Lipschitz 연속성만 얻는다.
+이다. $h \lt 0$ 에서도 같다. 연속성 없이 적분 가능성만 있으면 $|F(x+h)-F(x)| \le M|h|$ 로 $F$ 의 Lipschitz 연속성만 얻는다.
 
 ## 연속성 가정의 위치
 

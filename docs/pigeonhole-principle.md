@@ -2,7 +2,7 @@
 
 # 개요
 
-비둘기집 원리(pigeonhole principle, Dirichlet의 서랍 원리)는 $n$ 개의 물건을 $m$ 개의 상자에 넣을 때 $n>m$ 이면 어떤 상자에 둘 이상이 들어간다는 진술이다. 증명은 한 줄이고, 대상을 지목하지 않은 채 존재만 확보한다.
+비둘기집 원리(pigeonhole principle, Dirichlet의 서랍 원리)는 $n$ 개의 물건을 $m$ 개의 상자에 넣을 때 $n\gt m$ 이면 어떤 상자에 둘 이상이 들어간다는 진술이다. 증명은 한 줄이고, 대상을 지목하지 않은 채 존재만 확보한다.
 
 적용은 무엇을 비둘기로, 무엇을 상자로 삼을지 정하는 데서 갈린다. 상자의 개수가 분류 기준의 개수이므로 기준을 고르는 것이 증명의 전부다. Erdős–Szekeres 정리, Dirichlet의 유리수 근사 정리, [Ramsey 이론](ramsey-theory.md)의 기초가 이 원리의 응용이다.
 
@@ -19,7 +19,7 @@
 유한집합 $A,B$ 와 [함수](functions.md) $f\colon A\to B$ 에 대한 기본형은 다음과 같다.
 
 $$
-|A|>|B| \ \Longrightarrow\ \exists\thinspace b\in B:\ |f^{-1}(b)|\ge 2
+|A|\gt |B| \ \Longrightarrow\ \exists\thinspace b\in B:\ |f^{-1}(b)|\ge 2
 $$
 
 ## 일반형 (강한 비둘기집 원리)
@@ -31,13 +31,13 @@ $$
 증명: 모든 섬유의 크기가 천장값보다 작다고 하면 각 섬유 크기는 천장값보다 1 이상 작으므로 다음 모순이 나온다.
 
 $$
-|A|=\sum_{b\in B}\bigl|f^{-1}(b)\bigr|\ \le\ |B|\Bigl(\Bigl\lceil \frac{|A|}{|B|}\Bigr\rceil-1\Bigr)<|B|\cdot\frac{|A|}{|B|}=|A|
+|A|=\sum_{b\in B}\bigl|f^{-1}(b)\bigr|\ \le\ |B|\Bigl(\Bigl\lceil \frac{|A|}{|B|}\Bigr\rceil-1\Bigr)\lt |B|\cdot\frac{|A|}{|B|}=|A|
 $$
 
 ## 무한형
 
 $$
-|A|>|B|,\ |B|<\aleph_0,\ A=\bigsqcup_{b\in B}f^{-1}(b)\ \text{이고 }A\text{가 무한이면}\ \exists\thinspace b:\ f^{-1}(b)\ \text{무한}
+|A|\gt |B|,\ |B|\lt\aleph_0,\ A=\bigsqcup_{b\in B}f^{-1}(b)\ \text{이고 }A\text{가 무한이면}\ \exists\thinspace b:\ f^{-1}(b)\ \text{무한}
 $$
 
 [가산성](cardinality.md)의 언어로는 가산 집합을 유한 개 조각으로 나누면 적어도 하나가 가산 무한이라는 뜻이다.
@@ -47,14 +47,14 @@ $$
 유한 [측도](measure.md) 공간에서 부분집합족의 측도 합이 전체 측도를 넘으면 두 집합이 양의 측도로 겹친다.
 
 $$
-\sum_{i=1}^{n}\mu(A_i)>\mu(X)\ \Longrightarrow\ \exists\thinspace i\ne j:\ \mu(A_i\cap A_j)>0
+\sum_{i=1}^{n}\mu(A_i)\gt\mu(X)\ \Longrightarrow\ \exists\thinspace i\ne j:\ \mu(A_i\cap A_j)\gt 0
 $$
 
 # 성질
 
 ## 원리 자체의 위상
 
-기본형은 $|A|>|B|$ 일 때 $A\to B$ 인 단사함수가 없다는 진술과 동치다. Dedekind 유한성의 정의가 이 동치를 무한집합으로 뒤집은 것이다. 자연수 위의 수학적 귀납법으로 증명되므로 [증명](proofs.md) 체계에서 추가 공리가 필요하지 않다. 무한형에서 상자가 무한 개로 늘어나면 성립하지 않는다. 자연수를 홀수와 짝수가 아니라 각 원소마다 따로 담으면 모든 상자가 유한하다.
+기본형은 $|A|\gt |B|$ 일 때 $A\to B$ 인 단사함수가 없다는 진술과 동치다. Dedekind 유한성의 정의가 이 동치를 무한집합으로 뒤집은 것이다. 자연수 위의 수학적 귀납법으로 증명되므로 [증명](proofs.md) 체계에서 추가 공리가 필요하지 않다. 무한형에서 상자가 무한 개로 늘어나면 성립하지 않는다. 자연수를 홀수와 짝수가 아니라 각 원소마다 따로 담으면 모든 상자가 유한하다.
 
 ## 비구성성
 
@@ -68,7 +68,7 @@ $$
 N\ \ge\ (r-1)(s-1)+1
 $$
 
-각 항 $a_i$ 에 쌍 $(x_i,y_i)$ 를 붙인다. $x_i$ 는 $a_i$ 에서 끝나는 최장 증가 부분수열의 길이, $y_i$ 는 $a_i$ 에서 끝나는 최장 감소 부분수열의 길이다. $i<j$ 일 때 $a_i<a_j$ 이면 $x_j>x_i$ 이고 $a_i>a_j$ 이면 $y_j>y_i$ 이므로, 서로 다른 두 항의 쌍은 항상 다르다. 결론이 거짓이라면 모든 쌍이 다음 집합에 속한다.
+각 항 $a_i$ 에 쌍 $(x_i,y_i)$ 를 붙인다. $x_i$ 는 $a_i$ 에서 끝나는 최장 증가 부분수열의 길이, $y_i$ 는 $a_i$ 에서 끝나는 최장 감소 부분수열의 길이다. $i\lt j$ 일 때 $a_i\lt a_j$ 이면 $x_j\gt x_i$ 이고 $a_i\gt a_j$ 이면 $y_j\gt y_i$ 이므로, 서로 다른 두 항의 쌍은 항상 다르다. 결론이 거짓이라면 모든 쌍이 다음 집합에 속한다.
 
 $$
 \lbrace 1,\dots,r-1\rbrace\times\lbrace 1,\dots,s-1\rbrace,\qquad \bigl|\thinspace\cdot\thinspace\bigr|=(r-1)(s-1)
@@ -81,7 +81,7 @@ $$
 임의의 실수 $\alpha$ 와 양의 정수 $Q$ 에 대해 다음을 만족하는 정수 $p,q$ 가 존재한다[^2].
 
 $$
-1\le q\le Q,\qquad |q\alpha-p|<\frac{1}{Q},\qquad \text{따라서}\quad \Bigl|\alpha-\frac{p}{q}\Bigr|<\frac{1}{qQ}\le\frac{1}{q^{2}}
+1\le q\le Q,\qquad |q\alpha-p|\lt\frac{1}{Q},\qquad \text{따라서}\quad \Bigl|\alpha-\frac{p}{q}\Bigr|\lt\frac{1}{qQ}\le\frac{1}{q^{2}}
 $$
 
 $Q+1$ 개의 소수부 값을 길이 $1/Q$ 인 $Q$ 개의 구간에 넣는다.
@@ -90,7 +90,7 @@ $$
 \lbrace 0\cdot\alpha\rbrace,\lbrace\alpha\rbrace,\dots,\lbrace Q\alpha\rbrace\in[0,1)=\bigsqcup_{u=0}^{Q-1}\Bigl[\frac{u}{Q},\frac{u+1}{Q}\Bigr)
 $$
 
-비둘기집 원리로 $q_1<q_2$ 이면서 $\lbrace q_1\alpha\rbrace$ 와 $\lbrace q_2\alpha\rbrace$ 가 같은 구간에 드는 두 첨자가 있다. $q=q_2-q_1,\ p=\lfloor q_2\alpha\rfloor-\lfloor q_1\alpha\rfloor$ 로 두면 주장이 따른다. $\alpha$ 가 무리수이면 $Q$ 를 키워가며 분모가 무한히 커지는 근사열을 얻는다. 지수 2 는 무리수 전체에 대해 개선할 수 없다. 황금비류의 badly approximable 수가 그 장벽이고, 대수적 무리수에 한정하면 Roth 정리가 지수 $2+\varepsilon$ 을 준다.
+비둘기집 원리로 $q_1\lt q_2$ 이면서 $\lbrace q_1\alpha\rbrace$ 와 $\lbrace q_2\alpha\rbrace$ 가 같은 구간에 드는 두 첨자가 있다. $q=q_2-q_1,\ p=\lfloor q_2\alpha\rfloor-\lfloor q_1\alpha\rfloor$ 로 두면 주장이 따른다. $\alpha$ 가 무리수이면 $Q$ 를 키워가며 분모가 무한히 커지는 근사열을 얻는다. 지수 2 는 무리수 전체에 대해 개선할 수 없다. 황금비류의 badly approximable 수가 그 장벽이고, 대수적 무리수에 한정하면 Roth 정리가 지수 $2+\varepsilon$ 을 준다.
 
 ## 이중 계산과의 관계
 

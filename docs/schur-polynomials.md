@@ -56,7 +56,7 @@ $$
 
 ## 분할과 대각표
 
-$\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_\ell>0)$ 을 **분할**이라 하고, $i$ 번째 행에 $\lambda_i$ 개의 칸을 왼쪽 정렬한 그림을 Young 도형이라 한다. 그 칸에 $\lbrace 1,\dots,n\rbrace$ 의 값을 채워
+$\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_\ell\gt 0)$ 을 **분할**이라 하고, $i$ 번째 행에 $\lambda_i$ 개의 칸을 왼쪽 정렬한 그림을 Young 도형이라 한다. 그 칸에 $\lbrace 1,\dots,n\rbrace$ 의 값을 채워
 
 - 각 행이 왼쪽에서 오른쪽으로 약증가
 - 각 열이 위에서 아래로 강증가
@@ -71,7 +71,7 @@ s_\lambda(x_1,\dots,x_n)=\frac{\det\big(x_i^{\lambda_j+n-j}\big)}{\det\big(x_i^{
 =\det\big(h_{\lambda_i-i+j}\big)_{1\le i,j\le\ell}
 $$
 
-여기서 $h_k$ 는 완전 동차 대칭다항식, 곧 차수 $k$ 의 모든 단항식의 합이며 $h_0=1$ 과 $h_{k<0}=0$ 이다. 마지막 등식이 **Jacobi–Trudi 항등식**이다. 기본 대칭다항식 $e_k$ 로 쓰는 쌍대 판본도 있다.
+여기서 $h_k$ 는 완전 동차 대칭다항식, 곧 차수 $k$ 의 모든 단항식의 합이며 $h_0=1$ 과 $h_{k\lt 0}=0$ 이다. 마지막 등식이 **Jacobi–Trudi 항등식**이다. 기본 대칭다항식 $e_k$ 로 쓰는 쌍대 판본도 있다.
 
 $$
 s_\lambda=\det\big(e_{\lambda'_i-i+j}\big),\qquad \lambda'=\text{전치 분할}

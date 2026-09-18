@@ -80,7 +80,7 @@ $$
 
 $\sigma(T)$ 는 $\lbrace|\lambda|\le\lVert T\rVert\rbrace$ 에 포함되는 닫힌 집합이며 비어 있지 않다.
 
-*증명.* $|\lambda|>\lVert T\rVert$ 일 때 Neumann 급수 $\sum \lambda^{-n-1}T^n$ 이 수렴해 역작용소를 주므로 유계다. 가역 작용소들이 열린 집합을 이루므로 닫혀 있다. $\sigma(T)$ 가 비었다면 $R(\lambda)$ 가 전해석이고 무한대에서 0 으로 가므로 Liouville 정리에 의해 항등적으로 0 이 되어 모순이다.
+*증명.* $|\lambda|\gt\lVert T\rVert$ 일 때 Neumann 급수 $\sum \lambda^{-n-1}T^n$ 이 수렴해 역작용소를 주므로 유계다. 가역 작용소들이 열린 집합을 이루므로 닫혀 있다. $\sigma(T)$ 가 비었다면 $R(\lambda)$ 가 전해석이고 무한대에서 0 으로 가므로 Liouville 정리에 의해 항등적으로 0 이 되어 모순이다.
 
 스펙트럼 반지름은 다음과 같다.
 
@@ -88,7 +88,7 @@ $$
 r(T)=\max_{\lambda\in\sigma(T)}|\lambda|=\lim_{n\to\infty}\lVert T^n\rVert^{1/n}
 $$
 
-정규작용소에서는 $r(T)=\lVert T\rVert$ 지만 일반적으로는 더 작을 수 있다. 멱영행렬에서 $r=0<\lVert T\rVert$ 다.
+정규작용소에서는 $r(T)=\lVert T\rVert$ 지만 일반적으로는 더 작을 수 있다. 멱영행렬에서 $r=0\lt\lVert T\rVert$ 다.
 
 ## 자기수반 작용소의 실 스펙트럼
 

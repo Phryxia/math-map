@@ -80,7 +80,7 @@ $|A|=n$ 이면 $|\mathcal P(A)|=2^n$ 이다. 각 원소의 포함 여부를 독�
 
 ## Cantor 정리
 
-모든 집합 $A$ 에 대해 $|A|<|\mathcal P(A)|$ 다.
+모든 집합 $A$ 에 대해 $|A|\lt |\mathcal P(A)|$ 다.
 
 *증명.* $a\mapsto\lbrace a\rbrace$ 가 단사이므로 $|A|\le|\mathcal P(A)|$ 다. 전사 $f:A\to\mathcal P(A)$ 가 있다고 하자. $D=\lbrace x\in A:x\notin f(x)\rbrace$ 에 대해 $D=f(a)$ 인 $a$ 를 잡으면 $a\in D\iff a\notin D$ 로 모순이다. 이 대각선 논법이 [기수](cardinality.md) 이론의 기초다.
 

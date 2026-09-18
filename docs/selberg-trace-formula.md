@@ -39,7 +39,7 @@ $$
 
 ## 공액류와 측지선의 대응
 
-$\Gamma\subset\mathrm{PSL}\_2(\mathbb R)$ 의 원소는 대각합으로 분류된다. $|\mathrm{tr}\gamma|>2$ 인 쌍곡 원소는 $\mathbb H$ 위에서 한 측지선을 따라 평행이동하고, 이동거리 $\ell_\gamma$ 는
+$\Gamma\subset\mathrm{PSL}\_2(\mathbb R)$ 의 원소는 대각합으로 분류된다. $|\mathrm{tr}\gamma|\gt 2$ 인 쌍곡 원소는 $\mathbb H$ 위에서 한 측지선을 따라 평행이동하고, 이동거리 $\ell_\gamma$ 는
 
 $$
 2\cosh\frac{\ell_\gamma}2=|\mathrm{tr}\thinspace\gamma|
@@ -96,7 +96,7 @@ $$
 원시 닫힌 측지선 전체에 대해
 
 $$
-Z(s)=\prod_{\lbrace\gamma\rbrace_{\mathrm{prim}}}\prod_{n=0}^{\infty}\big(1-e^{-(s+n)\ell_\gamma}\big),\qquad \mathrm{Re}(s)>1
+Z(s)=\prod_{\lbrace\gamma\rbrace_{\mathrm{prim}}}\prod_{n=0}^{\infty}\big(1-e^{-(s+n)\ell_\gamma}\big),\qquad \mathrm{Re}(s)\gt 1
 $$
 
 로 정의한다. 측지선이 소수의 자리를, $\ell_\gamma$ 가 $\log p$ 의 자리를 차지한 Euler 곱이다. 대각합 공식은 $Z$ 가 $\mathbb C$ 전체로 해석적 연속되고 함수방정식을 가짐을 준다.
@@ -133,7 +133,7 @@ $$
 \lambda_j\ge\tfrac14\ \Longrightarrow\ Z(s)\ \text{의 영점이 }\mathrm{Re}(s)=\tfrac12\ \text{위에 있다}
 $$
 
-콤팩트 곡면에서는 $\lambda_1>0$ 만으로 예외 영점이 $[0,1]$ 의 실축 위 유한 개뿐임이 나온다. 영점이 자기수반 작용소의 스펙트럼에서 오므로, Hilbert–Pólya 가 $\zeta$ 에 대해 바라던 구조가 $Z$ 에서는 성립한다.
+콤팩트 곡면에서는 $\lambda_1\gt 0$ 만으로 예외 영점이 $[0,1]$ 의 실축 위 유한 개뿐임이 나온다. 영점이 자기수반 작용소의 스펙트럼에서 오므로, Hilbert–Pólya 가 $\zeta$ 에 대해 바라던 구조가 $Z$ 에서는 성립한다.
 
 산술 곡면에서 $\lambda_1\ge\tfrac14$ 인지가 **Selberg 1/4 추측**이고, 증명되지 않았다[^2]. 현재 최선은 $\lambda_1\ge\tfrac{975}{4096}\approx0.238$ 다[^3]. 이 추측은 Ramanujan 추측의 아르키메데스 자리 판본이다.
 

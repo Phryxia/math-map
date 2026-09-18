@@ -86,10 +86,10 @@ $$
 P\bigl[\exists\text{ 단색 }k\text{집합}\bigr]\ \le\ \binom{n}{k}2^{1-\binom{k}{2}}
 $$
 
-이 값이 1보다 작으면 단색 $k$ 집합이 없는 색칠이 존재하므로 $R(k)>n$ 이다. 계산하면 다음 하한이 나온다[^2].
+이 값이 1보다 작으면 단색 $k$ 집합이 없는 색칠이 존재하므로 $R(k)\gt n$ 이다. 계산하면 다음 하한이 나온다[^2].
 
 $$
-R(k)\ >\ 2^{k/2}\qquad (k\ge 3)
+R(k)\ \gt\ 2^{k/2}\qquad (k\ge 3)
 $$
 
 이 논증은 색칠을 하나도 제시하지 않고 존재만 준다.
@@ -111,7 +111,7 @@ $$
 하한 43은 Exoo(1989), 상한 46은 Angeltveit 와 McKay 다. 대각선 상한은 1935년부터 $4^k$ 형태에 머물렀으나 2023년 Campos, Griffiths, Morris, Sahasrabudhe 가 처음으로 지수적 개선을 얻었다[^4].
 
 $$
-R(k)\ \le\ (4-\varepsilon)^{k}\quad(\exists\thinspace\varepsilon>0)
+R(k)\ \le\ (4-\varepsilon)^{k}\quad(\exists\thinspace\varepsilon\gt 0)
 $$
 
 파라미터를 최적화하면 $3.8^{k+o(k)}$ 까지 내려간다[^4]. 하한 쪽은 $2^{k/2}$ 의 상수배 개선에 머물러 있어 상한의 밑 $3.8$ 과 하한의 밑 $\sqrt2$ 사이에 간극이 남는다.
@@ -124,7 +124,7 @@ $$
 S(r)=\min\bigl\lbrace N\ \bigm|\ \forall c:[N]\to[r],\ \exists\thinspace x,y,z\ \text{같은 색},\ x+y=z\bigr\rbrace
 $$
 
-*증명.* Ramsey 정리로 환원한다. $r$ 색 삼각형 Ramsey 수로 $N=R_r(3)-1$ 이라 두고 색칠 $c$ 가 주어지면, 완전그래프 $K_{N+1}$ 의 간선 $\lbrace i,j\rbrace$ 에 색 $c(\vert i-j\vert)$ 를 부여한다. Ramsey 정리가 단색 삼각형 $\lbrace i<j<k\rbrace$ 를 주므로 $x=j-i,\ y=k-j,\ z=k-i$ 로 두면 $x+y=z$ 이고 세 수의 색이 같다. 알려진 Schur 수는 $S(1)=2,\ S(2)=5,\ S(3)=14,\ S(4)=45$ 이고, $S(5)=161$ 은 2017년에 SAT 풀이기로 확정되었다.
+*증명.* Ramsey 정리로 환원한다. $r$ 색 삼각형 Ramsey 수로 $N=R_r(3)-1$ 이라 두고 색칠 $c$ 가 주어지면, 완전그래프 $K_{N+1}$ 의 간선 $\lbrace i,j\rbrace$ 에 색 $c(\vert i-j\vert)$ 를 부여한다. Ramsey 정리가 단색 삼각형 $\lbrace i\lt j\lt k\rbrace$ 를 주므로 $x=j-i,\ y=k-j,\ z=k-i$ 로 두면 $x+y=z$ 이고 세 수의 색이 같다. 알려진 Schur 수는 $S(1)=2,\ S(2)=5,\ S(3)=14,\ S(4)=45$ 이고, $S(5)=161$ 은 2017년에 SAT 풀이기로 확정되었다.
 
 Schur 정리는 van der Waerden 정리(색칠하면 단색 등차수열이 생긴다)와 함께 산술적 Ramsey 이론을 이루고, 둘을 포괄하는 Rado 정리가 어떤 선형 방정식계가 "분할 정칙적(partition regular)"인지 완전히 판정한다.
 

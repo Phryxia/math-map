@@ -109,7 +109,7 @@ $$
 \lambda_0=n+2s,\qquad \lambda_k=2s\cos\frac{2\pi k}n\quad(k=1,\dots,n-1)
 $$
 
-$s<0$ 이면 $\lambda_0$ 은 $s$ 에 대해 증가하고 $k\ne0$ 쪽의 최대 $-2s\cos(\pi/n)$ 은 감소하므로, 최대 고윳값은 둘이 같아지는 곳에서 가장 작다. $n+2s=-2s\cos(\pi/n)$ 을 풀면 $s=-n/\lbrace 2(1+\cos(\pi/n))\rbrace$ 이고
+$s\lt 0$ 이면 $\lambda_0$ 은 $s$ 에 대해 증가하고 $k\ne0$ 쪽의 최대 $-2s\cos(\pi/n)$ 은 감소하므로, 최대 고윳값은 둘이 같아지는 곳에서 가장 작다. $n+2s=-2s\cos(\pi/n)$ 을 풀면 $s=-n/\lbrace 2(1+\cos(\pi/n))\rbrace$ 이고
 
 $$
 \vartheta(C_n)=\frac{n\cos(\pi/n)}{1+\cos(\pi/n)}

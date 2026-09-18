@@ -59,7 +59,7 @@ $$
 $g=\sum b_n q^n$ 을 대입하면 보정항이 불완전 감마 함수의 급수가 된다. 무게 $1/2$ mock 에 대응하는 무게 $3/2$ shadow $g=\sum_{n\ge 0} b_n q^{n}$ 에서는 다음 꼴이다.
 
 $$
-g^*(\tau)=\sum_{n> 0}\overline{b_n}\thinspace n^{-1/2}\thinspace\Gamma\negthinspace\left(-\tfrac12,4\pi n y\right)q^{-n}
+g^*(\tau)=\sum_{n\gt 0}\overline{b_n}\thinspace n^{-1/2}\thinspace\Gamma\negthinspace\left(-\tfrac12,4\pi n y\right)q^{-n}
 $$
 
 $\Gamma(-1/2,\cdot)$ 안에 $y$ 가 있어 $\bar\tau$ 의존성이 생긴다. 계수에 $q^{-n}$ 이 붙으므로 보정항은 정칙 부분과 반대 방향으로 자라고, 둘이 합쳐져야 첨점에서의 증가가 통제된다.
@@ -81,7 +81,7 @@ $\mathrm{SL}_2(\mathbb Z)$ 의 유한지표 부분군 $\Gamma$ 와 $k\in\frac12\
 Fourier 전개가 두 조각으로 갈린다.
 
 $$
-\widehat h(\tau)=\underbrace{\sum_{n\gg-\infty}c^+(n)q^n}_{\text{정칙 부분 }h}+\underbrace{\sum_{n<0}c^-(n)\thinspace\Gamma(1-k,4\pi|n|y)\thinspace q^{n}}_{\text{비정칙 부분}}
+\widehat h(\tau)=\underbrace{\sum_{n\gg-\infty}c^+(n)q^n}_{\text{정칙 부분 }h}+\underbrace{\sum_{n\lt 0}c^-(n)\thinspace\Gamma(1-k,4\pi|n|y)\thinspace q^{n}}_{\text{비정칙 부분}}
 $$
 
 정칙 부분 $h$ 가 **mock 모듈러 형식**, $g=\xi_k\widehat h$ 가 그 **shadow** 다. $g$ 는 무게 $2-k$ 의 모듈러 형식이고 위 전개의 $c^-$ 가 $g$ 의 계수를 켤레한 것으로 결정된다.
@@ -123,7 +123,7 @@ $$
 판별식 $-n$ 의 이진 이차형식 류수를 무게로 센 **Hurwitz 계급수** $H(n)$ 을 계수로 하는 급수
 
 $$
-\mathcal H(\tau)=-\tfrac1{12}+\sum_{n>0}H(n)q^n
+\mathcal H(\tau)=-\tfrac1{12}+\sum_{n\gt 0}H(n)q^n
 $$
 
 는 무게 $3/2$ mock 모듈러 형식이고 shadow 는 무게 $1/2$ theta 급수 $\theta(\tau)=\sum_{n\in\mathbb Z}q^{n^2}$ 의 상수배다. 완성은 다음이고 $\Gamma_0(4)$ 위에서 무게 $3/2$ 로 모듈러다.
@@ -151,7 +151,7 @@ $M^!$ 은 첨점에서 극을 허용하는 약정칙 형식이다. shadow 를 �
 Bringmann–Ono 는 조화 Maass 형식에 Rademacher 형 수렴 급수를 세워 $f(q)$ 의 계수 $\alpha(n)$ 에 대한 정확 공식을 얻었다.
 
 $$
-\alpha(n)=\frac{(-1)^{n+1}}{\sqrt{n-\frac1{24}}}\sum_{c>0}\frac{A_{2c}(n)}{c}\thinspace I_{1/2}\negthinspace\left(\frac{\pi\sqrt{24n-1}}{12c}\right)+O(1)
+\alpha(n)=\frac{(-1)^{n+1}}{\sqrt{n-\frac1{24}}}\sum_{c\gt 0}\frac{A_{2c}(n)}{c}\thinspace I_{1/2}\negthinspace\left(\frac{\pi\sqrt{24n-1}}{12c}\right)+O(1)
 $$
 
 Andrews–Dragonette 추측이 이 공식의 따름결과로 해결되었다. [분할수](partitions.md) 쪽 원법의 계산이 재사용되고 Kloosterman 합 자리에 다른 곱수계가 들어간다.

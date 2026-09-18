@@ -30,7 +30,7 @@ $$
 D(P\thinspace\Vert\thinspace Q) = \sum_{x} p(x)\thinspace\log\frac{p(x)}{q(x)}
 $$
 
-로 정의한다. 관례로 $0\log(0/q)=0$ 이고, $p(x)>0$ 인데 $q(x)=0$ 인 $x$ 가 있으면 값은 무한대다. 연속인 경우, 그리고 일반적인 [측도](measure.md) 공간에서는 [Radon–Nikodym 정리](radon-nikodym.md)가 주는 밀도로 쓴다.
+로 정의한다. 관례로 $0\log(0/q)=0$ 이고, $p(x)\gt 0$ 인데 $q(x)=0$ 인 $x$ 가 있으면 값은 무한대다. 연속인 경우, 그리고 일반적인 [측도](measure.md) 공간에서는 [Radon–Nikodym 정리](radon-nikodym.md)가 주는 밀도로 쓴다.
 
 $$
 D(P\thinspace\Vert\thinspace Q) = \int \log\negthinspace\left(\frac{dP}{dQ}\right) dP ,
@@ -75,7 +75,7 @@ $$
 *증명.* 로그가 오목함수이므로 Jensen 부등식을 쓴다([볼록성](convexity.md)). $P$ 의 지지집합 위에서
 
 $$
--D(P\thinspace\Vert\thinspace Q) = \mathbb{E}_{P}\negthinspace\left[\log \frac{q(X)}{p(X)}\right] \le \log \mathbb{E}_{P}\negthinspace\left[\frac{q(X)}{p(X)}\right] = \log \sum_{x:\thinspace p(x)>0} q(x) \le \log 1 = 0 .
+-D(P\thinspace\Vert\thinspace Q) = \mathbb{E}_{P}\negthinspace\left[\log \frac{q(X)}{p(X)}\right] \le \log \mathbb{E}_{P}\negthinspace\left[\frac{q(X)}{p(X)}\right] = \log \sum_{x:\thinspace p(x)\gt 0} q(x) \le \log 1 = 0 .
 $$
 
 첫 부등식의 등호는 로그의 순강한 오목성 때문에 비율 $q/p$ 가 $P$ 에 대해 거의 확실히 상수일 때에만, 둘째 등호는 $Q$ 가 $P$ 의 지지집합 밖에 질량을 두지 않을 때에만 성립한다. 두 조건을 합치면 $P=Q$ 다. ∎
@@ -99,7 +99,7 @@ $$
 두 값이 다르므로 대칭이 아니다. 또한
 
 $$
-D(P\thinspace\Vert\thinspace R) \approx 1.758 \thickspace>\thickspace D(P\thinspace\Vert\thinspace Q) + D(Q\thinspace\Vert\thinspace R) \approx 0.879
+D(P\thinspace\Vert\thinspace R) \approx 1.758 \thickspace\gt\thickspace D(P\thinspace\Vert\thinspace Q) + D(Q\thinspace\Vert\thinspace R) \approx 0.879
 $$
 
 이므로 삼각부등식도 성립하지 않는다. KL divergence 는 metric 이 아니므로 거리라 부르지 않는다. 남는 구조는 다음 셋이다.

@@ -58,7 +58,7 @@ GCH 는 CH 를 포함한다. Sierpiński 는 GCH 에서 [선택공리](axiom-of-
 집합 $X$ 에 대해 $\mathrm{Def}(X)$ 는 $X$ 를 논의 영역으로 하는 1차 논리식으로 매개변수를 써서 정의되는 $X$ 의 부분집합 전체다. 초한 재귀로 다음을 정의한다.
 
 $$
-L_0 = \varnothing, \qquad L_{\alpha+1} = \mathrm{Def}(L_\alpha), \qquad L_\lambda = \bigcup_{\alpha < \lambda} L_\alpha
+L_0 = \varnothing, \qquad L_{\alpha+1} = \mathrm{Def}(L_\alpha), \qquad L_\lambda = \bigcup_{\alpha \lt\lambda} L_\alpha
 $$
 
 모든 서수에 걸친 합집합이 **구성가능 우주** $L$ 이다. 일반 멱집합 대신 정의 가능한 부분집합만 취한다.
@@ -102,7 +102,7 @@ forcing 은 이후 집합론의 표준 기법이 되었다. Boolean 값 모형�
 **정리(Easton).** 정칙 기수들 위에서 멱집합 함수는 단조성과 König 의 부등식만 지키면 무엇이든 될 수 있다. König 의 부등식은 공종도(cofinality)에 대한 제약이다.
 
 $$
-\mathrm{cf}\big(2^{\kappa}\big) > \kappa
+\mathrm{cf}\big(2^{\kappa}\big) \gt\kappa
 $$
 
 연속체의 크기가 알레프 오메가가 되는 것은 그 기수의 공종도가 알레프 영이므로 불가능하다. 알레프 둘, 알레프 열일곱, 알레프 오메가 플러스 일은 모두 가능하다.

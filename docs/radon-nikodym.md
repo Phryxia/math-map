@@ -32,7 +32,7 @@ $$
 \nu\ll\mu
 $$
 
-로 쓴다. $\nu$ 가 유한하면 이 조건은 임의의 $\varepsilon > 0$ 에 대해 $\mu(E) < \delta$ 이면 $\nu(E) < \varepsilon$ 인 $\delta > 0$ 이 존재한다는 조건과 동치다. 절대연속이라는 이름이 이 형태에서 왔다.
+로 쓴다. $\nu$ 가 유한하면 이 조건은 임의의 $\varepsilon \gt 0$ 에 대해 $\mu(E) \lt\delta$ 이면 $\nu(E) \lt\varepsilon$ 인 $\delta \gt 0$ 이 존재한다는 조건과 동치다. 절대연속이라는 이름이 이 형태에서 왔다.
 
 ## 정리
 

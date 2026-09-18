@@ -98,10 +98,10 @@ $$
 유의수준을 고정했을 때 검정력을 최대화하는 검정은 우도비의 문턱값 검정이다. 즉 기각역을
 
 $$
-R = \lbrace x : \Lambda(x) > c \rbrace
+R = \lbrace x : \Lambda(x) \gt c \rbrace
 $$
 
-로 잡는 것이 최적이다. 증명 스케치: 임의의 다른 기각역 $R'$ 와 비교하여 $R \setminus R'$ 에서는 $\Lambda > c$ , $R' \setminus R$ 에서는 $\Lambda \le c$ 이므로, 두 검정력 차이를 두 영역의 적분으로 쪼개면 부호가 고정된다. [가설검정](hypothesis-testing.md)에서 p-값 계산이 우도비에 의존하는 이유다.
+로 잡는 것이 최적이다. 증명 스케치: 임의의 다른 기각역 $R'$ 와 비교하여 $R \setminus R'$ 에서는 $\Lambda \gt c$ , $R' \setminus R$ 에서는 $\Lambda \le c$ 이므로, 두 검정력 차이를 두 영역의 적분으로 쪼개면 부호가 고정된다. [가설검정](hypothesis-testing.md)에서 p-값 계산이 우도비에 의존하는 이유다.
 
 ## Importance sampling 과 분산
 

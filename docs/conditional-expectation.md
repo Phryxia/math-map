@@ -5,7 +5,7 @@
 조건부 기댓값은 "부분적인 정보만 주어졌을 때 확률변수의 최선의 예측값"을 수학적으로 정식화한 것이다. 초등적인 확률론에서는 사건 $B$ 에 대해
 
 $$
-E[X \mid B] = \frac{E[X \mathbf{1}_B]}{P(B)}, \qquad P(B) > 0
+E[X \mid B] = \frac{E[X \mathbf{1}_B]}{P(B)}, \qquad P(B) \gt 0
 $$
 
 로 정의하지만, 이 정의는 $P(B) = 0$ 인 사건에 대해 무력하고, "관측할 정보 전체"를 하나의 대상으로 다루지 못한다. 현대적인 정의는 조건을 거는 대상을 사건이 아니라 **$\sigma$ -대수** $\mathcal G$ 로 잡고, 조건부 기댓값을 $\mathcal G$ 가측 확률변수로 정의한다.
@@ -40,7 +40,7 @@ graph LR
 
 ## 조건부 기댓값
 
-확률공간 $(\Omega, \mathcal F, P)$ 와 부분 $\sigma$ -대수 $\mathcal G \subseteq \mathcal F$ 와 $E\lvert X \rvert < \infty$ 를 만족하는 확률변수 $X$ 를 고정한다. 확률변수 $Y$ 가 다음 두 조건을 만족하면 $Y$ 를 $\mathcal G$ 에 대한 $X$ 의 조건부 기댓값이라 하고 $Y = E[X \mid \mathcal G]$ 로 쓴다.
+확률공간 $(\Omega, \mathcal F, P)$ 와 부분 $\sigma$ -대수 $\mathcal G \subseteq \mathcal F$ 와 $E\lvert X \rvert \lt\infty$ 를 만족하는 확률변수 $X$ 를 고정한다. 확률변수 $Y$ 가 다음 두 조건을 만족하면 $Y$ 를 $\mathcal G$ 에 대한 $X$ 의 조건부 기댓값이라 하고 $Y = E[X \mid \mathcal G]$ 로 쓴다.
 
 1. $Y$ 는 $\mathcal G$ 에 대한 [가측함수](measurable-functions.md)이고 적분 가능하다.
 2. 모든 $A \in \mathcal G$ 에 대하여
@@ -67,9 +67,9 @@ $$
 
 ## 존재성과 유일성
 
-**정리.** $E\lvert X \rvert < \infty$ 이면 $E[X \mid \mathcal G]$ 가 존재하고, 거의 확실하게 유일하다.
+**정리.** $E\lvert X \rvert \lt\infty$ 이면 $E[X \mid \mathcal G]$ 가 존재하고, 거의 확실하게 유일하다.
 
-*유일성.* $Y$ 와 $Y'$ 가 둘 다 조건을 만족한다고 하자. $A = \lbrace Y - Y' > \varepsilon\rbrace \in \mathcal G$ 에 대해 두 부분적분 등식을 빼면 $\int_A (Y - Y') \thinspace dP = 0$ 이고, 피적분함수가 $A$ 위에서 $\varepsilon$ 보다 크므로 $\varepsilon P(A) \le 0$ 이다. 따라서 $P(A) = 0$ 이다. $\varepsilon \downarrow 0$ 과 역할을 바꾼 논증으로 $Y = Y'$ 가 거의 확실하게 성립한다. 따라서 조건부 기댓값은 **버전**(version)까지만 결정되며, 등식은 모두 "거의 확실하게"로 읽어야 한다.
+*유일성.* $Y$ 와 $Y'$ 가 둘 다 조건을 만족한다고 하자. $A = \lbrace Y - Y' \gt\varepsilon\rbrace \in \mathcal G$ 에 대해 두 부분적분 등식을 빼면 $\int_A (Y - Y') \thinspace dP = 0$ 이고, 피적분함수가 $A$ 위에서 $\varepsilon$ 보다 크므로 $\varepsilon P(A) \le 0$ 이다. 따라서 $P(A) = 0$ 이다. $\varepsilon \downarrow 0$ 과 역할을 바꾼 논증으로 $Y = Y'$ 가 거의 확실하게 성립한다. 따라서 조건부 기댓값은 **버전**(version)까지만 결정되며, 등식은 모두 "거의 확실하게"로 읽어야 한다.
 
 *존재성.* 먼저 $X \ge 0$ 라 하자. $\mathcal G$ 위에서 유한측도
 
@@ -81,7 +81,7 @@ $$
 
 ## L2 정사영으로서의 정의
 
-$E[X^2] < \infty$ 인 경우에는 측도론 없이도 구성할 수 있다. $L^2(\Omega, \mathcal F, P)$ 는 내적
+$E[X^2] \lt\infty$ 인 경우에는 측도론 없이도 구성할 수 있다. $L^2(\Omega, \mathcal F, P)$ 는 내적
 
 $$
 \langle U, V \rangle \thickspace=\thickspace E[UV]
@@ -119,7 +119,7 @@ $$
 
 증명은 우변이 $\mathcal G$ 가측이고 부분적분 등식을 만족함을 확인한 뒤 유일성을 쓰면 끝난다. 이후 성질들도 대부분 같은 전략을 따른다.
 
-**단조성.** $X \le Y$ 이면 $E[X \mid \mathcal G] \le E[Y \mid \mathcal G]$ 다. 실제로 $A = \lbrace E[X \mid \mathcal G] - E[Y \mid \mathcal G] > \varepsilon\rbrace$ 위에서 적분하면 모순이 나온다. 따름정리로 $\lvert E[X \mid \mathcal G] \rvert \le E[\lvert X \rvert \mid \mathcal G]$ 가 성립하고, 따라서 조건부 기댓값은 $L^1$ 위의 수축이다.
+**단조성.** $X \le Y$ 이면 $E[X \mid \mathcal G] \le E[Y \mid \mathcal G]$ 다. 실제로 $A = \lbrace E[X \mid \mathcal G] - E[Y \mid \mathcal G] \gt\varepsilon\rbrace$ 위에서 적분하면 모순이 나온다. 따름정리로 $\lvert E[X \mid \mathcal G] \rvert \le E[\lvert X \rvert \mid \mathcal G]$ 가 성립하고, 따라서 조건부 기댓값은 $L^1$ 위의 수축이다.
 
 $$
 E\big[\thinspace\big|E[X \mid \mathcal{G}]\big|\thinspace\big] \thickspace\le\thickspace E[\thinspace|X|\thinspace].
@@ -159,7 +159,7 @@ $\varphi(x) = \lvert x \rvert^p$ 를 넣으면 $p \ge 1$ 인 모든 $L^p$ 에서
 
 ## 분산 분해와 최적 예측
 
-$E[X^2] < \infty$ 일 때 조건부 분산을 $\mathrm{Var}(X \mid \mathcal G) = E[X^2 \mid \mathcal G] - E[X \mid \mathcal G]^2$ 로 정의하면 전분산 공식이 성립한다.
+$E[X^2] \lt\infty$ 일 때 조건부 분산을 $\mathrm{Var}(X \mid \mathcal G) = E[X^2 \mid \mathcal G] - E[X \mid \mathcal G]^2$ 로 정의하면 전분산 공식이 성립한다.
 
 $$
 \mathrm{Var}(X) \thickspace=\thickspace E\big[\mathrm{Var}(X \mid \mathcal{G})\big] \thickspace+\thickspace \mathrm{Var}\big(E[X \mid \mathcal{G}]\big).

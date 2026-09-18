@@ -47,7 +47,7 @@ $p-d$ 가 **쌍대성 간극**이다.
 문제가 **볼록**인 것은 $f$ 와 모든 $g_i$ 가 볼록함수이고 모든 $h_j$ 가 아핀인 것이다. **Slater 조건**은 아핀이 아닌 부등식 제약을 전부 강한 부등호로 만족하는 허용해가 있다는 조건이다.
 
 $$
-\exists\thinspace \tilde{x}:\quad g_i(\tilde{x})<0\ (\forall i),\quad h_j(\tilde{x})=0\ (\forall j)
+\exists\thinspace \tilde{x}:\quad g_i(\tilde{x})\lt 0\ (\forall i),\quad h_j(\tilde{x})=0\ (\forall j)
 $$
 
 # 성질

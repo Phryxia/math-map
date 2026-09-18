@@ -46,14 +46,14 @@ $$
 \dim\Lambda^kV^*=\binom nk
 $$
 
-이다. $k>n$ 이면 0 이고, $k=n$ 이면 1 차원이라 행렬식이 유일한 후보다.
+이다. $k\gt n$ 이면 0 이고, $k=n$ 이면 1 차원이라 행렬식이 유일한 후보다.
 
 ## 미분형식
 
 다양체 $M$ 위의 $k$ **형식**은 각 점 $p$ 에서 $\Lambda^kT_p^\ast M$ 의 원소를 매끄럽게 배정한 것이며 국소 좌표에서 다음 꼴이다.
 
 $$
-\omega=\sum_{i_1<\cdots<i_k}f_{i_1\cdots i_k}\thinspace dx^{i_1}\wedge\cdots\wedge dx^{i_k}
+\omega=\sum_{i_1\lt\cdots\lt i_k}f_{i_1\cdots i_k}\thinspace dx^{i_1}\wedge\cdots\wedge dx^{i_k}
 $$
 
 0-형식은 함수이고 $n$ 차원 다양체 위의 $n$ 형식은 부피 요소다.

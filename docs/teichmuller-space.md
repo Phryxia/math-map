@@ -22,7 +22,7 @@ $$
 
 그러면 자유도는 붙이는 데서만 나온다. 곡선 하나를 따라 두 조각을 붙일 때 고를 것이 둘이다.
 
-- **길이** $\ell_i>0$ 은 그 곡선이 얼마나 긴 측지선이 되는지를 정한다.
+- **길이** $\ell_i\gt 0$ 은 그 곡선이 얼마나 긴 측지선이 되는지를 정한다.
 - **비틀림** $\tau_i\in\mathbb R$ 은 붙이기 전에 얼마나 돌려서 붙이는지를 정한다.
 
 곡선이 $3g-3$ 개이므로 $2(3g-3)=6g-6$ 이다. **차원 공식이 바지를 세는 일에서 나온다.**
@@ -60,7 +60,7 @@ $$
 바지 분해를 주는 곡선족 $\mathcal C=\lbrace c_1,\dots,c_{3g-3}\rbrace$ 을 고정하면
 
 $$
-\mathrm{FN}_{\mathcal C}\colon\mathcal T_g\ \xrightarrow{\ \sim\ }\ (\mathbb R_{>0})^{3g-3}\times\mathbb R^{3g-3},\qquad
+\mathrm{FN}_{\mathcal C}\colon\mathcal T_g\ \xrightarrow{\ \sim\ }\ (\mathbb R_{\gt 0})^{3g-3}\times\mathbb R^{3g-3},\qquad
 X\mapsto(\ell_1,\dots,\ell_{3g-3},\tau_1,\dots,\tau_{3g-3})
 $$
 

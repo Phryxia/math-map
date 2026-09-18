@@ -57,13 +57,13 @@ $$
 - 수열 공간 $\ell^2$ : 제곱합이 유한한 복소수열 전체.
 
 $$
-\ell^2 = \Big\lbrace (x_n)_{n\ge 1} : \sum_{n=1}^{\infty} |x_n|^2 < \infty \Big\rbrace,\qquad \langle x, y\rangle = \sum_{n=1}^{\infty} x_n \overline{y_n}.
+\ell^2 = \Big\lbrace (x_n)_{n\ge 1} : \sum_{n=1}^{\infty} |x_n|^2 \lt\infty \Big\rbrace,\qquad \langle x, y\rangle = \sum_{n=1}^{\infty} x_n \overline{y_n}.
 $$
 
 - 함수 공간 $L^2(\mu)$ : [측도](measure.md) 공간 위에서 제곱적분가능한 [가측함수](measurable-functions.md)를 거의 어디서나 같음으로 동일시한 공간.
 
 $$
-L^2(\mu) = \Big\lbrace f : \int |f|^2 \thinspace d\mu < \infty \Big\rbrace,\qquad \langle f, g\rangle = \int f \overline{g}\thinspace d\mu.
+L^2(\mu) = \Big\lbrace f : \int |f|^2 \thinspace d\mu \lt\infty \Big\rbrace,\qquad \langle f, g\rangle = \int f \overline{g}\thinspace d\mu.
 $$
 
 $L^2$ 의 완비성이 Riesz–Fischer 정리이며, 이것이 [단조 수렴 정리](monotone-convergence.md)·[지배 수렴 정리](dominated-convergence.md) 계열 도구가 필요한 이유다.

@@ -21,7 +21,7 @@ $x_v$ 를 $\pm1$ 대신 고차원 단위벡터 $v_i$ 로 완화하면 곱 $x_ux_
 각도 $\theta$ 인 두 벡터가 무작위 초평면에 의해 갈라질 확률은 $\theta/\pi$ 이고, SDP 목적함수에서 그 간선의 기여는 $(1-\cos\theta)/2$ 다. 두 값의 비의 최솟값이 근사비다.
 
 $$
-\alpha=\min_{0<\theta\le\pi}\frac{\theta/\pi}{(1-\cos\theta)/2}\approx0.87856
+\alpha=\min_{0\lt\theta\le\pi}\frac{\theta/\pi}{(1-\cos\theta)/2}\approx0.87856
 $$
 
 최솟값은 $\theta\approx2.331$ 라디안, 약 $134$ 도에서 달성된다.

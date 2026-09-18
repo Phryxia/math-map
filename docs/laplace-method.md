@@ -54,7 +54,7 @@ $$
 
 ## Laplace 방법
 
-$\varphi$ 가 $[a,b]$ 내부의 유일한 점 $x_0$ 에서 최대이고 $\varphi''(x_0)<0$ 이며 $g(x_0)\ne0$ 이면
+$\varphi$ 가 $[a,b]$ 내부의 유일한 점 $x_0$ 에서 최대이고 $\varphi''(x_0)\lt 0$ 이며 $g(x_0)\ne0$ 이면
 
 $$
 \int_a^{b}g(x)e^{\lambda\varphi(x)}dx

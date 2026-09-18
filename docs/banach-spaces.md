@@ -61,7 +61,7 @@ $$
 
 $\mathbb R$ 이 완비이므로 $X$ 가 완비가 아니어도 $X^\ast$ 는 Banach 공간이다.
 
-$1<p<\infty$ 에서 $1/p+1/q=1$ 이면 $(\ell^p)^\ast\cong\ell^q$ 이고 $(\ell^1)^\ast\cong\ell^\infty$ 다. $(\ell^\infty)^\ast$ 는 $\ell^1$ 보다 크다.
+$1\lt p\lt\infty$ 에서 $1/p+1/q=1$ 이면 $(\ell^p)^\ast\cong\ell^q$ 이고 $(\ell^1)^\ast\cong\ell^\infty$ 다. $(\ell^\infty)^\ast$ 는 $\ell^1$ 보다 크다.
 
 # 성질
 
@@ -77,7 +77,7 @@ $p:X\to\mathbb R$ 가 열등선형이고 $f$ 가 부분공간 $M$ 위의 선형�
 
 ## 균등유계성 원리
 
-$X$ 가 Banach, $\lbrace T_\alpha\rbrace\subset\mathcal B(X,Y)$ 가 모든 $x$ 에서 $\sup_\alpha\lVert T_\alpha x\rVert<\infty$ 를 만족하면 $\sup_\alpha\lVert T_\alpha\rVert<\infty$ 다.
+$X$ 가 Banach, $\lbrace T_\alpha\rbrace\subset\mathcal B(X,Y)$ 가 모든 $x$ 에서 $\sup_\alpha\lVert T_\alpha x\rVert\lt\infty$ 를 만족하면 $\sup_\alpha\lVert T_\alpha\rVert\lt\infty$ 다.
 
 *증명.* $E_n=\lbrace x:\sup_\alpha\lVert T_\alpha x\rVert\le n\rbrace$ 이 닫힌 집합이고 합집합이 $X$ 이므로 Baire 범주 정리에 의해 어떤 $E_n$ 이 내부를 가진다. 그 공에서의 유계성을 평행이동과 스칼라배로 옮긴다.
 
@@ -101,7 +101,7 @@ $T\in\mathcal B(X,Y)$ 가 전사이면 $T$ 는 열린사상이고, 특히 전단
 
 ## 반사성과 약한 위상
 
-자연스러운 매장 $J:X\to X^{\ast\ast}$ 가 전사이면 $X$ 를 **반사적**이라 한다. $1<p<\infty$ 의 $L^p$ 는 반사적이고 $L^1$ 과 $L^\infty$ 와 $C[0,1]$ 은 아니다.
+자연스러운 매장 $J:X\to X^{\ast\ast}$ 가 전사이면 $X$ 를 **반사적**이라 한다. $1\lt p\lt\infty$ 의 $L^p$ 는 반사적이고 $L^1$ 과 $L^\infty$ 와 $C[0,1]$ 은 아니다.
 
 노름 위상에서 단위구는 콤팩트하지 않지만, 반사적이면 약한 위상에서 콤팩트하다. 최소화 문제에서 유계인 수열이 약수렴하는 부분열을 가지므로 변분법의 직접법이 작동한다.
 

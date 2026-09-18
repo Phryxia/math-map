@@ -10,7 +10,7 @@
 
 # 직관
 
-$\Sigma = I$ 이면 $\mathbb E[S] = I$ 이므로 고윳값의 평균은 $1$ 이고, 퍼짐은 $S$ 의 요동에서 온다. $S_{ij}$ 각각의 표준편차가 $n^{-1/2}$ 규모이고 그런 항목이 $p \times p$ 개 있다. 행렬의 고윳값은 항목의 요동을 $\sqrt p$ 배로 증폭해 받으므로 퍼짐이 $\sqrt{p}\cdot n^{-1/2} = \sqrt\gamma$ 규모가 되고, 받침의 끝이 $1 \pm \sqrt\gamma$ 의 제곱으로 나온다. $\gamma \to 0$ 이면 받침이 한 점 $1$ 로 수축해 고전 극한이 돌아온다. $\gamma = 1$ 이면 왼쪽 끝이 $0$ 에 닿아 밀도가 원점에서 발산하고, $\gamma > 1$ 이면 $S$ 의 계수가 $n$ 이므로 고윳값 $p - n$ 개가 정확히 $0$ 이다.
+$\Sigma = I$ 이면 $\mathbb E[S] = I$ 이므로 고윳값의 평균은 $1$ 이고, 퍼짐은 $S$ 의 요동에서 온다. $S_{ij}$ 각각의 표준편차가 $n^{-1/2}$ 규모이고 그런 항목이 $p \times p$ 개 있다. 행렬의 고윳값은 항목의 요동을 $\sqrt p$ 배로 증폭해 받으므로 퍼짐이 $\sqrt{p}\cdot n^{-1/2} = \sqrt\gamma$ 규모가 되고, 받침의 끝이 $1 \pm \sqrt\gamma$ 의 제곱으로 나온다. $\gamma \to 0$ 이면 받침이 한 점 $1$ 로 수축해 고전 극한이 돌아온다. $\gamma = 1$ 이면 왼쪽 끝이 $0$ 에 닿아 밀도가 원점에서 발산하고, $\gamma \gt 1$ 이면 $S$ 의 계수가 $n$ 이므로 고윳값 $p - n$ 개가 정확히 $0$ 이다.
 
 Wigner 행렬은 대칭이라 고윳값이 양쪽으로 대칭하게 퍼지지만 $S = \frac1n XX^{\mathsf T}$ 는 양의 준정부호라 고윳값이 음수가 될 수 없다. $X$ 의 특이값 $\sigma$ 가 반원에 가까운 법칙을 따르고 $S$ 의 고윳값이 $\sigma^2$ 이므로, 제곱이 오른쪽 꼬리를 늘이고 왼쪽을 원점에 밀어붙여 비대칭이 생긴다.
 
@@ -26,7 +26,7 @@ d\mu_\gamma(x) = \frac{\sqrt{(\lambda_+ - x)(x - \lambda_-)}}{2\pi\gamma x}\thin
 \qquad \lambda_\pm = (1 \pm \sqrt\gamma)^2
 $$
 
-로 수렴한다. $\delta_0$ 항은 $\gamma > 1$ 일 때 계수 부족으로 생기는 영 고윳값의 덩어리다. 항목의 분포는 극한에 나타나지 않으며 네 번째 적률이 유한하면 된다. 이 보편성이 [중심극한정리](central-limit-theorem.md)의 무작위 행렬판에 해당한다.
+로 수렴한다. $\delta_0$ 항은 $\gamma \gt 1$ 일 때 계수 부족으로 생기는 영 고윳값의 덩어리다. 항목의 분포는 극한에 나타나지 않으며 네 번째 적률이 유한하면 된다. 이 보편성이 [중심극한정리](central-limit-theorem.md)의 무작위 행렬판에 해당한다.
 
 ## 적률
 
@@ -69,7 +69,7 @@ $$
 $$
 \lambda_{\max} \longrightarrow
 \begin{cases}
-(1+\ell)\Bigl(1 + \dfrac{\gamma}{\ell}\Bigr), & \ell > \sqrt\gamma\cr
+(1+\ell)\Bigl(1 + \dfrac{\gamma}{\ell}\Bigr), & \ell \gt\sqrt\gamma\cr
 (1+\sqrt\gamma)^2, & \ell \le \sqrt\gamma
 \end{cases}
 $$

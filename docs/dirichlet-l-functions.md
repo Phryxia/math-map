@@ -54,7 +54,7 @@ graph TD
 
 - $\chi(n+q)=\chi(n)$
 - $\chi(mn)=\chi(m)\chi(n)$
-- $\gcd(n,q)>1$ 이면 $\chi(n)=0$ 이고, 그렇지 않으면 $\chi(n)\ne0$
+- $\gcd(n,q)\gt 1$ 이면 $\chi(n)=0$ 이고, 그렇지 않으면 $\chi(n)\ne0$
 
 동치로, 군 준동형 $(\mathbb Z/q\mathbb Z)^\times\to\mathbb C^\times$ 를 $\mathbb Z$ 로 끌어올린 뒤 단원이 아닌 곳에서 $0$ 으로 확장한 것이다. 단원군이 유한하므로 $\chi(n)$ 은 $\varphi(q)$ 제곱근이고 $|\chi(n)|\in\lbrace 0,1\rbrace$ 이다.
 
@@ -68,13 +68,13 @@ $\chi$ 가 법 $q$ 의 지표이고 $d\mid q$ 인 어떤 $d$ 와 법 $d$ 의 지
 
 ## Dirichlet $L$ 함수
 
-$\mathrm{Re}\thinspace s>1$ 에서 다음 급수가 절대수렴한다.
+$\mathrm{Re}\thinspace s\gt 1$ 에서 다음 급수가 절대수렴한다.
 
 $$
 L(s,\chi)=\sum_{n=1}^\infty\frac{\chi(n)}{n^s}
 $$
 
-$\chi=\chi_0$ 이면 $L(s,\chi_0)=\zeta(s)\prod_{p\mid q}(1-p^{-s})$ 이다. $\chi$ 가 비자명하면 한 주기의 합 $\sum_{n=1}^q\chi(n)=0$ 이라 부분합이 유계이고 급수가 $\mathrm{Re}\thinspace s>0$ 에서 조건수렴한다.
+$\chi=\chi_0$ 이면 $L(s,\chi_0)=\zeta(s)\prod_{p\mid q}(1-p^{-s})$ 이다. $\chi$ 가 비자명하면 한 주기의 합 $\sum_{n=1}^q\chi(n)=0$ 이라 부분합이 유계이고 급수가 $\mathrm{Re}\thinspace s\gt 0$ 에서 조건수렴한다.
 
 ## 일반화된 Riemann 가설
 
@@ -99,7 +99,7 @@ $$
 $\chi$ 가 완전 곱셈적이므로 유일분해가 작동한다.
 
 $$
-L(s,\chi)=\prod_p\Big(1-\frac{\chi(p)}{p^s}\Big)^{-1},\qquad \mathrm{Re}\thinspace s>1
+L(s,\chi)=\prod_p\Big(1-\frac{\chi(p)}{p^s}\Big)^{-1},\qquad \mathrm{Re}\thinspace s\gt 1
 $$
 
 로그를 취하면 소수에 대한 합이 나온다.
@@ -159,7 +159,7 @@ $4k+1$ 과 $4k+3$ 소수의 개수 비는 $1$ 로 수렴하지만 차이의 부�
 
 # 활용
 
-- 실수 원시 지표는 이차 수체 $\mathbb Q(\sqrt d)$ 와 일대일로 대응하고 그 지표가 Kronecker 기호다. $d<0$ 에서 $L(1,\chi_d)=\frac{2\pi h(d)}{w\sqrt{|d|}}$ 이며 $h(d)$ 는 유수, $w$ 는 단원근의 개수다. 유수가 양의 정수이므로 $L(1,\chi_d)>0$ 이 따라오고, 이것이 실수 지표의 난관을 뚫는 Dirichlet 의 해법이다. 해석적 양과 대수적 불변량을 잇는 같은 형식의 등식이 Birch–Swinnerton-Dyer 추측까지 이어진다.
+- 실수 원시 지표는 이차 수체 $\mathbb Q(\sqrt d)$ 와 일대일로 대응하고 그 지표가 Kronecker 기호다. $d\lt 0$ 에서 $L(1,\chi_d)=\frac{2\pi h(d)}{w\sqrt{|d|}}$ 이며 $h(d)$ 는 유수, $w$ 는 단원근의 개수다. 유수가 양의 정수이므로 $L(1,\chi_d)\gt 0$ 이 따라오고, 이것이 실수 지표의 난관을 뚫는 Dirichlet 의 해법이다. 해석적 양과 대수적 불변량을 잇는 같은 형식의 등식이 Birch–Swinnerton-Dyer 추측까지 이어진다.
 - $p\equiv3\pmod4$ 인 소수는 제곱근 계산이 $a^{(p+1)/4}$ 한 번으로 끝나 [RSA](rsa-cryptosystem.md) 의 Rabin 변형과 타원곡선 좌표 압축에 쓰이고, $p\equiv1\pmod{2^k}$ 인 소수는 $2^k$ 차 단위근을 가져 [고속 Fourier 변환](fft.md)을 유한체에서 수행하는 수론 변환의 법이 된다. 산술수열의 소수 정리가 밀도를 $1/\varphi(q)$ 로 보장하므로 후보를 무작위로 뽑아 소수판정을 반복하면 $\varphi(q)\ln x$ 번 남짓에 성공한다.
 - 아벨이 아닌 Galois 군의 표현으로 같은 구성을 하면 Artin $L$ 함수, 타원곡선의 점 개수로 하면 Hasse–Weil $L$ 함수가 된다. Langlands 강령은 이 $L$ 함수들이 자기동형 표현의 $L$ 함수와 일치한다고 예측하며, 그 대응에서 해석적 연속과 함수방정식이 따라온다. Wiles 의 증명도 특정 타원곡선의 $L$ 함수가 모듈러 형식의 $L$ 함수와 같음을 보인 것이다.
 

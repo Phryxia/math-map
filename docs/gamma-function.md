@@ -5,7 +5,7 @@
 $n!$ 은 자연수에서만 정의된다. 이것을 실수와 복소수로 잇는 함수가 감마 함수다.
 
 $$
-\Gamma(s)=\int_0^{\infty}t^{s-1}e^{-t}\thinspace dt\quad(\mathrm{Re}s>0),
+\Gamma(s)=\int_0^{\infty}t^{s-1}e^{-t}\thinspace dt\quad(\mathrm{Re}s\gt 0),
 \qquad
 \Gamma(n+1)=n!
 $$
@@ -62,13 +62,13 @@ $s=\tfrac12$ 에서 $\Gamma(\tfrac12)=\sqrt\pi$ 이고 이것이 Gauss 적분이
 
 ## 적분과 해석적 연속
 
-$\mathrm{Re}s>0$ 에서 적분이 절대수렴하고 정칙이다. 해석적 연속은 함수방정식을 거꾸로 쓴다.
+$\mathrm{Re}s\gt 0$ 에서 적분이 절대수렴하고 정칙이다. 해석적 연속은 함수방정식을 거꾸로 쓴다.
 
 $$
 \Gamma(s)=\frac{\Gamma(s+n)}{s(s+1)\cdots(s+n-1)}
 $$
 
-우변은 $\mathrm{Re}s>-n$ 에서 정의되므로 $n$ 을 키우면 $\mathbb C$ 전체로 이어진다. 수치계산도 이 식을 쓴다.
+우변은 $\mathrm{Re}s\gt -n$ 에서 정의되므로 $n$ 을 키우면 $\mathbb C$ 전체로 이어진다. 수치계산도 이 식을 쓴다.
 
 ## Euler 곱과 Weierstrass 곱
 
@@ -131,7 +131,7 @@ $$
 +\sum_{k=1}^{K}\frac{B_{2k}}{2k(2k-1)z^{2k-1}}+R_K
 $$
 
-$|\arg z|<\pi$ 인 닫힌 부채꼴에서 균등하게 성립한다. 지수를 취하면 다음이 된다.
+$|\arg z|\lt\pi$ 인 닫힌 부채꼴에서 균등하게 성립한다. 지수를 취하면 다음이 된다.
 
 $$
 \Gamma(z)\sim\sqrt{\frac{2\pi}{z}}\left(\frac ze\right)^{z},

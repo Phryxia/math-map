@@ -104,7 +104,7 @@ $$
 
 ## Majority is Stablest
 
-**정리(Mossel–O'Donnell–Oleszkiewicz, 2010).** $\rho\in[0,1)$ 과 $\varepsilon>0$ 에 대해 $\tau>0$ 이 있어, $\mathbb E[f]=0$ 이고 모든 $i$ 에서 $\mathrm{Inf}_i[f]\le\tau$ 이면
+**정리(Mossel–O'Donnell–Oleszkiewicz, 2010).** $\rho\in[0,1)$ 과 $\varepsilon\gt 0$ 에 대해 $\tau\gt 0$ 이 있어, $\mathbb E[f]=0$ 이고 모든 $i$ 에서 $\mathrm{Inf}_i[f]\le\tau$ 이면
 
 $$
 \mathrm{Stab}_\rho[f]\thickspace\le\thickspace 1-\frac2\pi\arccos\rho+\varepsilon

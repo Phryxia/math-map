@@ -118,7 +118,7 @@ $$
 - Dini 판정. 어떤 양수 $\delta$ 에 대해
 
 $$
-\int_{0}^{\delta} \frac{|f(x+t) + f(x-t) - 2s|}{t}\thinspace dt < \infty
+\int_{0}^{\delta} \frac{|f(x+t) + f(x-t) - 2s|}{t}\thinspace dt \lt\infty
 $$
 
 이면 $S_Nf(x)\to s$ . 특히 $f$ 가 $x$ 에서 Hölder 조건을 만족하면 조건이 충족된다.
@@ -167,7 +167,7 @@ $$
 u(x,t) = \sum_{n=1}^{\infty} b_n\thinspace e^{-\kappa n^2 t} \sin(nx),\qquad b_n = \frac{2}{\pi}\int_{0}^{\pi} f(x)\sin(nx)\thinspace dx .
 $$
 
-$t>0$ 이면 계수가 지수적으로 죽으므로 해는 즉시 무한히 매끄러워진다. 열방정식의 평활화 성질이 계수 감쇠로 곧바로 읽힌다. 파동방정식에서는 지수 대신 $\cos(nct)$ , $\sin(nct)$ 가 나오며 감쇠가 없어 초기 불연속이 그대로 전파된다.
+$t\gt 0$ 이면 계수가 지수적으로 죽으므로 해는 즉시 무한히 매끄러워진다. 열방정식의 평활화 성질이 계수 감쇠로 곧바로 읽힌다. 파동방정식에서는 지수 대신 $\cos(nct)$ , $\sin(nct)$ 가 나오며 감쇠가 없어 초기 불연속이 그대로 전파된다.
 
 ## 이산 변환과의 관계
 

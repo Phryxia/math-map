@@ -33,7 +33,7 @@ $$
 를 로그분배함수(log-partition function) 또는 cumulant 생성함수라 하고, 자연모수공간을
 
 $$
-\mathcal{N} = \lbrace\eta \in \mathbb{R}^{k} : A(\eta) < \infty\rbrace
+\mathcal{N} = \lbrace\eta \in \mathbb{R}^{k} : A(\eta) \lt\infty\rbrace
 $$
 
 로 둔다. $\eta \in \mathcal N$ 에 대해

@@ -37,13 +37,13 @@ graph TD
 함수족 $H$ 가 **균등적분가능**하다는 것은 다음을 뜻한다.
 
 $$
-\lim_{M \to \infty} \ \sup_{f \in H} \ \int_{\lbrace|f| > M\rbrace} |f| \thinspace d\mu = 0 .
+\lim_{M \to \infty} \ \sup_{f \in H} \ \int_{\lbrace|f| \gt M\rbrace} |f| \thinspace d\mu = 0 .
 $$
 
 즉 임의의 양수 $\varepsilon$ 에 대해 어떤 $M$ 이 존재하여 모든 $f$ 가 $H$ 에 속할 때
 
 $$
-\int_{\lbrace|f| > M\rbrace} |f| \thinspace d\mu < \varepsilon
+\int_{\lbrace|f| \gt M\rbrace} |f| \thinspace d\mu \lt\varepsilon
 $$
 
 이 성립한다. $M$ 을 $f$ 와 무관하게 잡을 수 있다는 것이 "균등"의 뜻이다.
@@ -57,13 +57,13 @@ $\mu(X)$ 가 유한할 때, $H$ 가 UI 인 것은 다음 두 조건이 동시에
 1. **$L^1$ 유계**:
 
 $$
-\sup_{f \in H} \int_X |f| \thinspace d\mu < \infty .
+\sup_{f \in H} \int_X |f| \thinspace d\mu \lt\infty .
 $$
 
-2. **균등절대연속**: 임의의 양수 $\varepsilon$ 에 대해 어떤 양수 $\delta$ 가 존재하여, 가측집합 $A$ 가 $\mu(A)<\delta$ 를 만족하면 모든 $f$ 가 $H$ 에 속할 때
+2. **균등절대연속**: 임의의 양수 $\varepsilon$ 에 대해 어떤 양수 $\delta$ 가 존재하여, 가측집합 $A$ 가 $\mu(A)\lt\delta$ 를 만족하면 모든 $f$ 가 $H$ 에 속할 때
 
 $$
-\int_A |f| \thinspace d\mu < \varepsilon .
+\int_A |f| \thinspace d\mu \lt\varepsilon .
 $$
 
 두 번째 조건은 [Radon–Nikodym 정리](radon-nikodym.md)에서 밀도의 적분이 정의하는 측도가 원래 측도에 절대연속이라는 사실의 균등판이다. 무한 측도 공간에서는 1 과 2 가 UI 를 함의하지 않고, 위의 $1/n$ 예가 반례다.
@@ -73,17 +73,17 @@ $$
 $H$ 가 $L^1$ 유계일 때, $H$ 가 UI 인 것과 다음 조건은 동치다. 어떤 함수 $G$ 가 존재하여
 
 $$
-G : [0,\infty) \to [0,\infty), \qquad \lim_{t \to \infty} \frac{G(t)}{t} = \infty, \qquad \sup_{f \in H} \int_X G(|f|) \thinspace d\mu < \infty .
+G : [0,\infty) \to [0,\infty), \qquad \lim_{t \to \infty} \frac{G(t)}{t} = \infty, \qquad \sup_{f \in H} \int_X G(|f|) \thinspace d\mu \lt\infty .
 $$
 
-$G$ 는 증가 [볼록함수](convexity.md)로 잡을 수 있고, 초선형(superlinear) 증가함수에 대한 유계성이 UI 와 같다. 흔한 선택은 $G(t)=t^p$ ($p>1$ ) 이고 이때 판정이 $L^p$ 유계성이 된다. $G(t)=t\log(1+t)$ 도 쓰인다.
+$G$ 는 증가 [볼록함수](convexity.md)로 잡을 수 있고, 초선형(superlinear) 증가함수에 대한 유계성이 UI 와 같다. 흔한 선택은 $G(t)=t^p$ ($p\gt 1$ ) 이고 이때 판정이 $L^p$ 유계성이 된다. $G(t)=t\log(1+t)$ 도 쓰인다.
 
 ## 확률에서의 표현
 
 확률공간에서 확률변수족 $H$ 의 UI 는 절단(truncation)으로 쓰는 편이 편하다.
 
 $$
-\lim_{M \to \infty} \ \sup_{Z \in H} \ \mathbb{E}\big[ |Z| \thinspace \mathbf{1}\lbrace|Z| > M\rbrace \big] = 0 .
+\lim_{M \to \infty} \ \sup_{Z \in H} \ \mathbb{E}\big[ |Z| \thinspace \mathbf{1}\lbrace|Z| \gt M\rbrace \big] = 0 .
 $$
 
 [확률변수](random-variables.md)의 기댓값을 큰 값 쪽에서 잘라낸 잔여 기댓값이 족 전체에서 균등하게 0 으로 간다는 조건이다.
@@ -95,13 +95,13 @@ $$
 다음은 모두 UI 를 함의한다. 증명은 모두 Markov 부등식과 절단 기댓값의 직접 평가다.
 
 - **지배함수**: $|f|\le g$ 가 모든 $f$ 에 대해 성립하고 $g$ 가 적분가능하면, 절단 적분이 $g$ 의 꼬리 적분으로 눌린다. 따라서 [지배 수렴 정리](dominated-convergence.md)의 가정은 UI 를 준다.
-- **$L^p$ 유계 ($p>1$ )**: Hölder 부등식으로
+- **$L^p$ 유계 ($p\gt 1$ )**: Hölder 부등식으로
 
 $$
-\int_{\lbrace|f| > M\rbrace} |f| \thinspace d\mu \ \le \ \Big( \int |f|^p d\mu \Big)^{1/p} \mu(|f| > M)^{1 - 1/p}
+\int_{\lbrace|f| \gt M\rbrace} |f| \thinspace d\mu \ \le \ \Big( \int |f|^p d\mu \Big)^{1/p} \mu(|f| \gt M)^{1 - 1/p}
 $$
 
-이고, Markov 부등식이 $\mu(|f|>M)\le C/M$ 을 주므로 $M$ 을 키우면 균등하게 0 으로 간다. 단, $p=1$ 유계만으로는 UI 가 아니다(위의 높이 도피 예가 $L^1$ 유계이면서 UI 가 아니다).
+이고, Markov 부등식이 $\mu(|f|\gt M)\le C/M$ 을 주므로 $M$ 을 키우면 균등하게 0 으로 간다. 단, $p=1$ 유계만으로는 UI 가 아니다(위의 높이 도피 예가 $L^1$ 유계이면서 UI 가 아니다).
 
 - **조건부 기댓값족**: 적분가능한 $Z$ 에 대해 부분 sigma-대수 전체를 훑는 족
 

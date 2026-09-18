@@ -101,9 +101,9 @@ Seifert 조각은 밑 오비폴드의 Euler 지표와 다발의 Euler 수, 두 �
 
 | $\chi^{\mathrm{orb}}$ / 다발 Euler 수 | $=0$ | $\ne0$ |
 |---|---|---|
-| $>0$ | $S^2\times\mathbb R$ | $S^3$ |
+| $\gt 0$ | $S^2\times\mathbb R$ | $S^3$ |
 | $=0$ | $\mathbb E^3$ | $\mathrm{Nil}$ |
-| $<0$ | $\mathbb H^2\times\mathbb R$ | $\widetilde{\mathrm{SL}_2\mathbb R}$ |
+| $\lt 0$ | $\mathbb H^2\times\mathbb R$ | $\widetilde{\mathrm{SL}_2\mathbb R}$ |
 
 곡면의 분류에서 Euler 지표의 부호가 기하를 정하던 것이 여기서도 성립하고, 다발 방향이 더해져 표가 2 열이 된다.
 

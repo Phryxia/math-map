@@ -206,7 +206,7 @@ $$
 
 이다. $m=1$ 에서만 계수가 $p+1$ 이고 그 뒤로는 $p$ 이며, 고전적 Hecke 관계식 $T_pT_{p^m}=T_{p^{m+1}}+p^{k-1}T_{p^{m-1}}$ 의 무게 정규화가 여기에 대응한다.
 
-구조상수는 격자를 세어 구한다. $\mathbb Z_p^2$ 의 지표 $p^n$ 부분격자는 Hermite 꼴 $\begin{pmatrix}p^i&b\cr 0&p^{n-i}\end{pmatrix}$ 와 $0\le b<p^i$ 로 전부 열거되므로 유한 계산이다.
+구조상수는 격자를 세어 구한다. $\mathbb Z_p^2$ 의 지표 $p^n$ 부분격자는 Hermite 꼴 $\begin{pmatrix}p^i&b\cr 0&p^{n-i}\end{pmatrix}$ 와 $0\le b\lt p^i$ 로 전부 열거되므로 유한 계산이다.
 
 $(1,1)$ 의 계수가 $p+1$ 이고 $T(p)\ast T(p^m)$ 의 $(1,m)$ 계수가 $p$ 다. 이렇게 얻은 구조상수는 Satake 변환이 옮기는 대칭 다항식의 곱셈 규칙과 일치한다.
 
@@ -224,7 +224,7 @@ $$
 \omega_\chi(\varpi^\lambda)=\frac{\delta_B^{1/2}(\varpi^\lambda)}{\lvert W\rvert}
 \sum_{w\in W}c(w\chi)\thinspace(w\chi)(\varpi^\lambda),
 \qquad
-c(\chi)=\prod_{\alpha>0}\frac{1-q^{-1}\chi(\alpha^\vee(\varpi))^{-1}}{1-\chi(\alpha^\vee(\varpi))^{-1}}
+c(\chi)=\prod_{\alpha\gt 0}\frac{1-q^{-1}\chi(\alpha^\vee(\varpi))^{-1}}{1-\chi(\alpha^\vee(\varpi))^{-1}}
 $$
 
 $c$ 인자는 Harish-Chandra 의 $c$ 함수의 $p$ 진 판이고, Eisenstein 급수의 상수항과 국소 얽힘 작용소의 분모에 같은 것이 나온다. $q^{-1}$ 항은 위 $\mathcal S(T(p^a))$ 공식의 $-p^{-1}$ 보정과 같은 뿌리다.

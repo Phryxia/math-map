@@ -81,7 +81,7 @@ $W=0$ 이면 Fokker–Planck, $V=W=0$ 이면 열방정식, 내부 에너지를 $
 
 ## JKO 스킴
 
-시간 간격 $\tau>0$ 에 대해 $\rho^0=\rho_0$ 에서 시작해 다음을 반복한다.
+시간 간격 $\tau\gt 0$ 에 대해 $\rho^0=\rho_0$ 에서 시작해 다음을 반복한다.
 
 $$
 \rho^{k+1}=\arg\min_{\rho\in\mathcal P_2}\Big[\mathcal F(\rho)+\frac1{2\tau}W_2^2(\rho,\rho^k)\Big]
@@ -103,7 +103,7 @@ $$
 
 ## JKO 정리
 
-**Jordan–Kinderlehrer–Otto.** $V$ 가 적당한 성장조건을 만족하고 $\mathcal F(\rho_0)<\infty$ 이면, JKO 스킴의 조각별 상수 보간 $\rho^\tau$ 는 $\tau\to0$ 에서 Fokker–Planck 방정식의 유일한 해로 수렴한다.
+**Jordan–Kinderlehrer–Otto.** $V$ 가 적당한 성장조건을 만족하고 $\mathcal F(\rho_0)\lt\infty$ 이면, JKO 스킴의 조각별 상수 보간 $\rho^\tau$ 는 $\tau\to0$ 에서 Fokker–Planck 방정식의 유일한 해로 수렴한다.
 
 각 JKO 단계가 잘 정의된다는 것은 $W_2$ 의 아래반연속성과 $\mathcal F$ 의 콤팩트 준위집합에서 변분법의 직접법으로 나오고, 극한이 해라는 것은 일계 조건을 모아 얻는다. PDE 의 정칙성 이론을 거치지 않고 존재성이 나온다.
 
@@ -117,7 +117,7 @@ $$
 
 $\mathcal F$ 가 상대 엔트로피이면 $\mathcal I$ 는 Fisher 정보이고 위 식이 de Bruijn 항등식이다.
 
-$\mathcal F$ 가 $\lambda>0$ 변위 볼록이면 흐름이 지수적으로 수렴한다.
+$\mathcal F$ 가 $\lambda\gt 0$ 변위 볼록이면 흐름이 지수적으로 수렴한다.
 
 $$
 W_2(\rho_t,\rho_\infty)\le e^{-\lambda t}W_2(\rho_0,\rho_\infty),\qquad

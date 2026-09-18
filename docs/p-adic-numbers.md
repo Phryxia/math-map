@@ -121,7 +121,7 @@ $e$ 는 부치군의 지표(분기지수), $f$ 는 잉여체 확대의 차수다
 
 ## Hensel 보조정리
 
-> $f\in\mathbb Z_p[x]$ 이고 $a\in\mathbb Z_p$ 가 $|f(a)|\_p<|f'(a)|\_p^2$ 를 만족하면 $f(\alpha)=0$ 이고 $|\alpha-a|\_p<|f'(a)|\_p$ 인 $\alpha\in\mathbb Z_p$ 가 유일하게 있다.
+> $f\in\mathbb Z_p[x]$ 이고 $a\in\mathbb Z_p$ 가 $|f(a)|\_p\lt |f'(a)|\_p^2$ 를 만족하면 $f(\alpha)=0$ 이고 $|\alpha-a|\_p\lt |f'(a)|\_p$ 인 $\alpha\in\mathbb Z_p$ 가 유일하게 있다.
 
 가장 많이 쓰는 형태는 $f'(a)$ 가 단원인 경우다. $f(a)\equiv0\pmod p$ 이고 $f'(a)\not\equiv0\pmod p$ 이면 법 $p$ 에서의 단순근이 $p$ 진 근으로 올라간다.
 
@@ -144,7 +144,7 @@ $x^2+y^2=3z^2$ 에 자명하지 않은 정수해가 없는 것은 $\mathbb Q_3$ 
 $\mathbb Q_p$ 위에서도 미적분을 하지만 규칙이 다르다.
 
 - 멱급수 $\sum a_nx^n$ 의 수렴반경은 $|a_n|\_p^{1/n}$ 의 극한으로 정해지고 경계에서의 판정이 $|a_nx^n|\_p\to0$ 이라 단순하다.
-- $\exp(x)=\sum x^n/n!$ 은 $n!$ 의 부치 때문에 $|x|\_p<p^{-1/(p-1)}$ 에서만 수렴하고, $\log(1+x)$ 는 $|x|\_p<1$ 에서 수렴한다.
+- $\exp(x)=\sum x^n/n!$ 은 $n!$ 의 부치 때문에 $|x|\_p\lt p^{-1/(p-1)}$ 에서만 수렴하고, $\log(1+x)$ 는 $|x|\_p\lt 1$ 에서 수렴한다.
 - 도함수가 어디서나 0 인데 상수가 아닌 함수가 있다. 공간이 완전분리라 평균값 정리가 없다.
 - 국소해석적 함수, $p$ 진 측도, $p$ 진 $L$ 함수의 이론이 발달해 있다. Kubota–Leopoldt 의 $p$ 진 zeta 함수가 Bernoulli 수의 합동 관계를 보간하며 Iwasawa 이론의 출발점이 된다.
 

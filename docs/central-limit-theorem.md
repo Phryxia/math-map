@@ -81,9 +81,9 @@ $$
 동일분포를 가정하지 않는 독립열에서도 어느 한 항이 합을 지배하지 않으면 결론이 유지된다. 개별 분산의 합을 $s_n$ 의 제곱이라 할 때 Lindeberg 조건은 다음이다[^2].
 
 $$
-\forall \varepsilon>0:\quad
+\forall \varepsilon\gt 0:\quad
 \lim_{n\to\infty}\frac{1}{s_n^2}\sum_{i=1}^{n}
-\mathbb E\negthinspace\left[(X_i-\mu_i)^2\thinspace\mathbf 1\lbrace|X_i-\mu_i|>\varepsilon s_n\rbrace\right]=0
+\mathbb E\negthinspace\left[(X_i-\mu_i)^2\thinspace\mathbf 1\lbrace|X_i-\mu_i|\gt\varepsilon s_n\rbrace\right]=0
 $$
 
 이 조건 아래 표준화한 합은 표준정규분포로 분포수렴한다(Lindeberg–Feller). $X_1$ 이 거대한 분산을 갖고 나머지가 작으면 조건이 깨지고 합의 분포가 $X_1$ 의 분포를 닮은 채 남는다.
@@ -100,7 +100,7 @@ i.i.d. 인 경우 알려진 최선의 상한은 $C\le0.4690$ 이고(Shevtsova, 2
 
 ## 성립하지 않는 경우
 
-분산이 무한하면 정규분포 극한이 사라진다. 꼬리가 무겁게 감소하는 분포(안정지수 $\alpha<2$ )에서는 $n^{1/\alpha}$ 으로 나누어야 수렴하고 극한은 $\alpha$ 안정분포다. Cauchy 분포가 $\alpha=1$ 의 예로, 표본평균이 다시 Cauchy 분포라 집중조차 하지 않는다. 독립성이 심하게 깨진 경우도 결론이 달라지며, 약한 의존 아래에서는 극한 분산에 자기상관 항이 더해진다.
+분산이 무한하면 정규분포 극한이 사라진다. 꼬리가 무겁게 감소하는 분포(안정지수 $\alpha\lt 2$ )에서는 $n^{1/\alpha}$ 으로 나누어야 수렴하고 극한은 $\alpha$ 안정분포다. Cauchy 분포가 $\alpha=1$ 의 예로, 표본평균이 다시 Cauchy 분포라 집중조차 하지 않는다. 독립성이 심하게 깨진 경우도 결론이 달라지며, 약한 의존 아래에서는 극한 분산에 자기상관 항이 더해진다.
 
 중심극한정리는 중심 근방의 근사만 보장한다. 표준편차의 몇 배를 넘어가는 꼬리 확률은 정규근사가 상대오차 기준으로 크게 틀릴 수 있고 그 영역은 대편차 이론이 다룬다.
 

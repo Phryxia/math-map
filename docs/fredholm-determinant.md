@@ -18,7 +18,7 @@ Fredholm 은 1900 년에 유한차원 행렬식이 만족하는 급수 전개를
 
 ## 자취류 조건
 
-대각화 가능한 유한차원 행렬에서 $\det(I - K) = \prod_i (1 - \lambda_i)$ 다. 무한차원에서 이 곱이 수렴하려면 $\sum_i|\lambda_i| < \infty$ 여야 한다. 이것이 **자취류**(trace class) 조건이다.
+대각화 가능한 유한차원 행렬에서 $\det(I - K) = \prod_i (1 - \lambda_i)$ 다. 무한차원에서 이 곱이 수렴하려면 $\sum_i|\lambda_i| \lt\infty$ 여야 한다. 이것이 **자취류**(trace class) 조건이다.
 
 콤팩트성만으로는 부족하다. 콤팩트이면 $\lambda_i \to 0$ 이지만 $\lambda_i = 1/i$ 처럼 느리게 갈 수 있고 그러면 $\prod(1-\lambda_i)$ 가 0 으로 발산한다. 고유값이 합할 수 있을 만큼 빨리 줄어야 하고, 자취류가 그 조건이다.
 
@@ -27,7 +27,7 @@ Fredholm 은 1900 년에 유한차원 행렬식이 만족하는 급수 전개를
 유한차원에서
 
 $$
-\det(I - K) = \sum_{k \ge 0}(-1)^k \sum_{i_1 < \dots < i_k}\det\bigl(K_{i_a i_b}\bigr)_{a,b=1}^{k}
+\det(I - K) = \sum_{k \ge 0}(-1)^k \sum_{i_1 \lt\dots \lt i_k}\det\bigl(K_{i_a i_b}\bigr)_{a,b=1}^{k}
 $$
 
 가 성립한다. $k$ 번째 항은 크기 $k$ 인 주부분행렬의 행렬식을 모은 것이고, 이 표현에는 차원이 드러나지 않는다. 지수 집합을 연속체로 바꾸고 합을 적분으로 바꾸면 무한차원 정의가 된다.
@@ -60,7 +60,7 @@ graph TD
 Hilbert 공간 위의 콤팩트 작용소 $K$ 의 특이값을 $s_1 \ge s_2 \ge \cdots$ 라 할 때
 
 $$
-\lVert K\rVert_1 = \sum_i s_i < \infty
+\lVert K\rVert_1 = \sum_i s_i \lt\infty
 $$
 
 이면 $K$ 가 **자취류**다. 임의의 정규직교기저에 대해 $\sum_i \langle Ke_i, e_i\rangle$ 가 절대수렴하고 기저에 의존하지 않으므로 **자취** $\mathrm{tr}K$ 가 정의된다. 자취류 작용소들은 $\lVert\cdot\rVert_1$ 에 대해 Banach 공간을 이루고, 유계 작용소를 곱해도 자취류로 남는 양쪽 아이디얼이다.
@@ -79,7 +79,7 @@ $$
 
 ## 자취를 통한 표현
 
-$\lVert K\rVert < 1$ 이면 로그를 전개해
+$\lVert K\rVert \lt 1$ 이면 로그를 전개해
 
 $$
 \log\det(I - K) = \mathrm{tr}\log(I - K) = -\sum_{m\ge1}\frac{1}{m}\mathrm{tr}K^m

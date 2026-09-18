@@ -201,7 +201,7 @@ $$
 **정리.** $E/\mathbb Q$ 가 모듈러이고 $K$ 가 Heegner 가정을 만족한다고 하자. Heegner 점 $y_K\in E(K)$ 가 무한위수이면
 
 $$
-\mathrm{rank}\thinspace E(K)=1,\qquad \char35{}\text{Ш}(E/K)<\infty
+\mathrm{rank}\thinspace E(K)=1,\qquad \char35{}\text{Ш}(E/K)\lt\infty
 $$
 
 이다.

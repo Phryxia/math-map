@@ -47,7 +47,7 @@ $$
 이 정의에서 다음이 성립한다.
 
 $$
-0=\varnothing,\quad \alpha+1=\alpha\cup\lbrace\alpha\rbrace,\quad \alpha<\beta \iff \alpha\in\beta,\quad \alpha=\lbrace\thinspace\beta : \beta<\alpha\thinspace\rbrace
+0=\varnothing,\quad \alpha+1=\alpha\cup\lbrace\alpha\rbrace,\quad \alpha\lt\beta \iff \alpha\in\beta,\quad \alpha=\lbrace\thinspace\beta : \beta\lt\alpha\thinspace\rbrace
 $$
 
 서수의 집합 $S$ 에 대해 합집합은 상한이 된다. $0$ 이 아니고 후속 서수도 아닌 서수, 즉 자기 미만 전체의 합집합과 같은 서수를 극한 서수라 한다.
@@ -61,7 +61,7 @@ $$
 ## 서수 산술
 
 $$
-\alpha+0=\alpha,\quad \alpha+(\beta+1)=(\alpha+\beta)+1,\quad \alpha+\lambda=\sup_{\beta<\lambda}(\alpha+\beta)
+\alpha+0=\alpha,\quad \alpha+(\beta+1)=(\alpha+\beta)+1,\quad \alpha+\lambda=\sup_{\beta\lt\lambda}(\alpha+\beta)
 $$
 
 $$
@@ -83,7 +83,7 @@ $$
 서수의 성질 $P$ 에 대해, " $\alpha$ 미만의 모든 $\beta$ 에서 $P$ 가 성립하면 $\alpha$ 에서도 $P$ 가 성립한다"가 모든 $\alpha$ 에 대해 참이면 $P$ 는 모든 서수에서 성립한다[^2].
 
 $$
-\forall\alpha\thinspace\bigl(\forall\beta<\alpha\ P(\beta)\ \to\ P(\alpha)\bigr)\ \Longrightarrow\ \forall\alpha\ P(\alpha)
+\forall\alpha\thinspace\bigl(\forall\beta\lt\alpha\ P(\beta)\ \to\ P(\alpha)\bigr)\ \Longrightarrow\ \forall\alpha\ P(\alpha)
 $$
 
 증명: $P$ 가 거짓인 서수가 있다고 하자. 그중 하나를 $\gamma$ 라 하면 $\gamma+1$ 의 원소 중 $P$ 가 거짓인 것들의 집합은 공집합이 아니고, 정렬성에 의해 최소 원소 $\alpha$ 를 갖는다. $\alpha$ 미만에서는 $P$ 가 성립하므로 가정에 의해 $\alpha$ 에서도 성립하고, 모순이다.
@@ -101,7 +101,7 @@ $$
 이것이 서수 산술, 누적 위계, [선택공리](axiom-of-choice.md)로부터의 정렬 구성 등을 정당화한다. 누적 위계는 다음 재귀로 정의된다.
 
 $$
-V_0=\varnothing,\quad V_{\alpha+1}=\mathcal P(V_\alpha),\quad V_\lambda=\bigcup_{\alpha<\lambda}V_\alpha
+V_0=\varnothing,\quad V_{\alpha+1}=\mathcal P(V_\alpha),\quad V_\lambda=\bigcup_{\alpha\lt\lambda}V_\alpha
 $$
 
 정칙성 공리는 모든 집합이 어떤 $V_\alpha$ 에 속한다는 진술과 동치다.
@@ -121,7 +121,7 @@ $$
 0이 아닌 모든 서수는 다음 형태로 유일하게 적힌다.
 
 $$
-\alpha=\omega^{\beta_1}c_1+\cdots+\omega^{\beta_k}c_k,\qquad \beta_1>\cdots>\beta_k\ge 0,\ 0<c_i<\omega
+\alpha=\omega^{\beta_1}c_1+\cdots+\omega^{\beta_k}c_k,\qquad \beta_1\gt\cdots\gt\beta_k\ge 0,\ 0\lt c_i\lt\omega
 $$
 
 지수와 서수가 같아지는 최소의 서수를 epsilon_0라 한다.

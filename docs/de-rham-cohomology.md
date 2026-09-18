@@ -71,7 +71,7 @@ $$
 호모토피 동치인 두 다양체는 같은 코호몰로지를 가진다. 수축가능하면 점과 같으며 이것이 Poincaré 보조정리다.
 
 $$
-H^k(\mathbb R^n)=\begin{cases}\mathbb R&k=0\cr 0&k>0\end{cases}
+H^k(\mathbb R^n)=\begin{cases}\mathbb R&k=0\cr 0&k\gt 0\end{cases}
 $$
 
 ## Mayer–Vietoris 수열

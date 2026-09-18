@@ -57,10 +57,10 @@ $$
 
 ## Tightness
 
-$\Pi\subseteq\mathcal P(S)$ 가 **tight** 하다는 것은 임의의 $\varepsilon>0$ 에 대해 어떤 [컴팩트](compactness.md) 집합 $K\subseteq S$ 가 존재하여
+$\Pi\subseteq\mathcal P(S)$ 가 **tight** 하다는 것은 임의의 $\varepsilon\gt 0$ 에 대해 어떤 [컴팩트](compactness.md) 집합 $K\subseteq S$ 가 존재하여
 
 $$
-\sup_{\mu\in\Pi}\mu(S\setminus K)<\varepsilon
+\sup_{\mu\in\Pi}\mu(S\setminus K)\lt\varepsilon
 $$
 
 가 성립한다는 뜻이다. 족 전체가 하나의 컴팩트 집합 안에 거의 다 들어간다는 조건이고, "거의"의 정도를 족과 무관하게 잡을 수 있다는 것이 균등성이다. $\mathbb R$ 에서는 유계구간 $[-M,M]$ 을 잡으면 되므로, tightness 는 꼬리질량이 균등하게 작다는 조건이 된다.
@@ -134,7 +134,7 @@ $$
 
 분포 극한을 증명하는 논증은 대개 두 단계다.
 
-1. **Tightness.** 족이 tight 함을 보여 수렴 부분열의 존재를 확보한다. 보통 $\sup_n\mathbb E[|X_n|^p]<\infty$ 같은 적률 유계에 Markov 부등식을 써서 얻는다.
+1. **Tightness.** 족이 tight 함을 보여 수렴 부분열의 존재를 확보한다. 보통 $\sup_n\mathbb E[|X_n|^p]\lt\infty$ 같은 적률 유계에 Markov 부등식을 써서 얻는다.
 2. **극한의 유일성.** 모든 수렴 부분열이 같은 극한을 가짐을 보인다. 특성함수나 적률로 극한을 식별한다.
 
 두 단계가 맞물리면 수열 전체가 수렴한다. [중심극한정리](central-limit-theorem.md)는 2 단계를 Lévy 연속성 정리로 처리해 1 단계를 생략할 수 있는 특히 깔끔한 경우다. [Brown 운동](brownian-motion.md)의 구성에서 나오는 Donsker 불변원리는 같은 골격을 함수공간 $C[0,1]$ 위에서 돌린 것으로, 거기서는 tightness 확인이 논증의 대부분을 차지한다.

@@ -114,7 +114,7 @@ graph TD
 $(W,S)$ 를 Coxeter 계, $\ell$ 을 길이 함수라 하자. $\mathcal H$ 는 $\mathbb Z[q^{1/2},q^{-1/2}]$ 위 자유가군으로 기저 $\lbrace T_w\rbrace_{w\in W}$ 를 갖고 곱셈이
 
 $$
-T_sT_w=\begin{cases}T_{sw} & \ell(sw)>\ell(w)\cr qT_{sw}+(q-1)T_w & \ell(sw)<\ell(w)\end{cases}
+T_sT_w=\begin{cases}T_{sw} & \ell(sw)\gt\ell(w)\cr qT_{sw}+(q-1)T_w & \ell(sw)\lt\ell(w)\end{cases}
 $$
 
 로 정해진다. 결합법칙은 Coxeter 관계에서 따라오고 $T_w$ 는 가역이다.
@@ -131,17 +131,17 @@ $$
 \iota(C'_w)=C'_w,\qquad C'_w=q^{-\ell(w)/2}\sum_{x\le w}P_{x,w}(q)T_x
 $$
 
-이고 $P_{w,w}=1$ 이며 $x<w$ 이면 $\deg P_{x,w}\le\frac{\ell(w)-\ell(x)-1}{2}$ 인 원소 $C'_w$ 가 유일하게 존재한다. 차수 상계를 하나만 느슨하게 해도 자유도가 생기므로 이 상계가 유일성을 준다.
+이고 $P_{w,w}=1$ 이며 $x\lt w$ 이면 $\deg P_{x,w}\le\frac{\ell(w)-\ell(x)-1}{2}$ 인 원소 $C'_w$ 가 유일하게 존재한다. 차수 상계를 하나만 느슨하게 해도 자유도가 생기므로 이 상계가 유일성을 준다.
 
 ## 재귀 계산
 
-유일성의 증명이 알고리즘을 준다. $\ell(sw)<\ell(w)$ 인 단순반사 $s$ 를 잡고 $v=sw$ 라 하면
+유일성의 증명이 알고리즘을 준다. $\ell(sw)\lt\ell(w)$ 인 단순반사 $s$ 를 잡고 $v=sw$ 라 하면
 
 $$
-P_{x,w}=q^{1-c}P_{sx,v}+q^{c}P_{x,v}-\sum_{x\le z<v,\ sz<z}\mu(z,v)\thinspace q^{(\ell(w)-\ell(z))/2}P_{x,z}
+P_{x,w}=q^{1-c}P_{sx,v}+q^{c}P_{x,v}-\sum_{x\le z\lt v,\ sz\lt z}\mu(z,v)\thinspace q^{(\ell(w)-\ell(z))/2}P_{x,z}
 $$
 
-$c=1$ 이면 $sx<x$ 이고 $c=0$ 이면 $sx>x$ 이며 $\mu(z,v)$ 는 $P_{z,v}$ 의 최고차 계수다. 길이에 대한 귀납으로 계산되지만 항의 수가 Bruhat 구간의 크기만큼 늘어난다. $E_8$ 의 전체 KL 다항식 표를 얻은 Atlas 프로젝트(2007)는 대규모 분산 계산이었다.
+$c=1$ 이면 $sx\lt x$ 이고 $c=0$ 이면 $sx\gt x$ 이며 $\mu(z,v)$ 는 $P_{z,v}$ 의 최고차 계수다. 길이에 대한 귀납으로 계산되지만 항의 수가 Bruhat 구간의 크기만큼 늘어난다. $E_8$ 의 전체 KL 다항식 표를 얻은 Atlas 프로젝트(2007)는 대규모 분산 계산이었다.
 
 ## $\mu$ 계수
 

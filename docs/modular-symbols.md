@@ -122,7 +122,7 @@ $$
 
 ## 무게 $k$ 로의 확장
 
-무게 $k>2$ 에서는 계수를 가군으로 바꾼다. $V_{k-2}=\mathrm{Sym}^{k-2}(\mathbb Z^2)$ 를 $\mathrm{SL}\_2$ 표현으로 두고 기호를 $P\in V_{k-2}$ 에 대한 $P\otimes\lbrace\alpha,\beta\rbrace$ 로 확장하면 같은 이론이 작동한다. $k=2$ 는 $V_0=\mathbb Z$ 인 경우다.
+무게 $k\gt 2$ 에서는 계수를 가군으로 바꾼다. $V_{k-2}=\mathrm{Sym}^{k-2}(\mathbb Z^2)$ 를 $\mathrm{SL}\_2$ 표현으로 두고 기호를 $P\in V_{k-2}$ 에 대한 $P\otimes\lbrace\alpha,\beta\rbrace$ 로 확장하면 같은 이론이 작동한다. $k=2$ 는 $V_0=\mathbb Z$ 인 경우다.
 
 # 성질
 

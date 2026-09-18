@@ -49,7 +49,7 @@ $$
 \Delta=\sum_{w\in W}(-1)^{\ell(w)}e^{w\rho}=\prod_{\alpha\in\Phi^+}\left(e^{\alpha/2}-e^{-\alpha/2}\right)
 $$
 
-두 표현이 같다는 것이 **Weyl 분모 항등식**이다. 곱 쪽에서 각 인수의 최고차항 $e^{\alpha/2}$ 를 모으면 $e^\rho$ 가 되고, 여기서 $\rho=\frac12\sum_{\alpha>0}\alpha$ 가 나온다.
+두 표현이 같다는 것이 **Weyl 분모 항등식**이다. 곱 쪽에서 각 인수의 최고차항 $e^{\alpha/2}$ 를 모으면 $e^\rho$ 가 되고, 여기서 $\rho=\frac12\sum_{\alpha\gt 0}\alpha$ 가 나온다.
 
 $$
 \underbrace{\mathrm{ch}V_\lambda}_{\text{대칭}}\cdot\underbrace{\Delta}_{\text{반대칭}}=\underbrace{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}_{\text{반대칭}}
@@ -104,7 +104,7 @@ $$
 
 $V_\mu\neq0$ 인 $\mu$ 가 **무게**이고 $\dim V_\mu$ 가 그 **중복도**다. 유한차원 표현의 무게는 모두 무게격자 $P$ 에 들어간다.
 
-양근 $\Phi^+$ 를 고정하면 무게에 부분순서가 생긴다. $\mu\le\lambda$ 는 $\lambda-\mu$ 가 단순근의 음이 아닌 정수결합이라는 뜻이다. 유한차원 기약표현에는 이 순서에 대한 **최고무게** $\lambda$ 가 유일하게 있고, $V_\lambda$ 는 1 차원이며 $\alpha>0$ 에 대해 $\mathfrak g_\alpha\cdot V_\lambda=0$ 이다. 그 한 벡터가 표현 전체를 생성한다.
+양근 $\Phi^+$ 를 고정하면 무게에 부분순서가 생긴다. $\mu\le\lambda$ 는 $\lambda-\mu$ 가 단순근의 음이 아닌 정수결합이라는 뜻이다. 유한차원 기약표현에는 이 순서에 대한 **최고무게** $\lambda$ 가 유일하게 있고, $V_\lambda$ 는 1 차원이며 $\alpha\gt 0$ 에 대해 $\mathfrak g_\alpha\cdot V_\lambda=0$ 이다. 그 한 벡터가 표현 전체를 생성한다.
 
 ## 지배적 정수 무게와 분류 정리
 

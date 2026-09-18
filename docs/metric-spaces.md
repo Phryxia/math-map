@@ -40,10 +40,10 @@ $$
 ## 열린 공과 열린 집합
 
 $$
-B(x,r)=\lbrace y\in X: d(x,y)<r\rbrace,\qquad r>0
+B(x,r)=\lbrace y\in X: d(x,y)\lt r\rbrace,\qquad r\gt 0
 $$
 
-$U \subseteq X$ 의 모든 점 $x$ 에 대해 $B(x, r) \subseteq U$ 인 $r > 0$ 이 있으면 $U$ 가 열린 집합이다. 열린 집합의 모임은 임의 합집합과 유한 교집합에 닫혀 있어 [위상](topology.md)을 이루고, 이것이 $d$ 가 유도한 위상이다.
+$U \subseteq X$ 의 모든 점 $x$ 에 대해 $B(x, r) \subseteq U$ 인 $r \gt 0$ 이 있으면 $U$ 가 열린 집합이다. 열린 집합의 모임은 임의 합집합과 유한 교집합에 닫혀 있어 [위상](topology.md)을 이루고, 이것이 $d$ 가 유도한 위상이다.
 
 ## 수렴과 연속
 
@@ -51,11 +51,11 @@ $$
 x_n\to p\iff d(x_n,p)\to0\quad(n\to\infty)
 $$
 
-오른쪽은 실수 수열의 수렴이므로 정의가 순환하지 않는다. 함수 $f : X \to Y$ 가 $x$ 에서 연속이라는 것은 $\varepsilon > 0$ 마다 $\delta > 0$ 이 있어 $d_X(x, y) < \delta$ 이면 $d_Y(f(x), f(y)) < \varepsilon$ 인 것이고, $Y$ 의 열린 집합의 역상이 열려 있다는 것과 동치다.
+오른쪽은 실수 수열의 수렴이므로 정의가 순환하지 않는다. 함수 $f : X \to Y$ 가 $x$ 에서 연속이라는 것은 $\varepsilon \gt 0$ 마다 $\delta \gt 0$ 이 있어 $d_X(x, y) \lt\delta$ 이면 $d_Y(f(x), f(y)) \lt\varepsilon$ 인 것이고, $Y$ 의 열린 집합의 역상이 열려 있다는 것과 동치다.
 
 ## 거리의 동치
 
-$d$ 와 $d'$ 가 같은 열린 집합을 주면 위상동치다. 상수 $0 < c \le C$ 가 있어
+$d$ 와 $d'$ 가 같은 열린 집합을 주면 위상동치다. 상수 $0 \lt c \le C$ 가 있어
 
 $$
 c\thinspace d(x,y)\le d'(x,y)\le C\thinspace d(x,y)

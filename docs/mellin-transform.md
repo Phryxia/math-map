@@ -36,7 +36,7 @@ $\tilde f$ 는 $f(e^{u})e^{cu}$ 의 Fourier 변환이므로 Mellin 변환의 정
 
 ## 수렴 띠
 
-적분 $\int_0^\infty f\thinspace x^{s-1}dx$ 는 $x\to0$ 에서 $f=O(x^{-a})$ 이고 $x\to\infty$ 에서 $f=O(x^{-b})$ 일 때 $a<\mathrm{Re}s<b$ 에서 수렴한다. Mellin 변환의 정의역은 수직 띠이고 띠의 양 끝을 $f$ 의 양 끝 거동이 정한다. 해석적 연속으로 띠 바깥에서 만나는 극점이 원래 함수의 전개 항에 대응한다.
+적분 $\int_0^\infty f\thinspace x^{s-1}dx$ 는 $x\to0$ 에서 $f=O(x^{-a})$ 이고 $x\to\infty$ 에서 $f=O(x^{-b})$ 일 때 $a\lt\mathrm{Re}s\lt b$ 에서 수렴한다. Mellin 변환의 정의역은 수직 띠이고 띠의 양 끝을 $f$ 의 양 끝 거동이 정한다. 해석적 연속으로 띠 바깥에서 만나는 극점이 원래 함수의 전개 항에 대응한다.
 
 ## 극점과 점근항의 대응
 
@@ -54,7 +54,7 @@ $$
 
 $$
 \frac1{2\pi i}\int_{c-i\infty}^{c+i\infty}\frac{y^{s}}{s}ds=
-\begin{cases}1,&y>1\cr \tfrac12,&y=1\cr 0,&0<y<1\end{cases}
+\begin{cases}1,&y\gt 1\cr \tfrac12,&y=1\cr 0,&0\lt y\lt 1\end{cases}
 $$
 
 이 적분이 $n\le x$ 라는 조건을 해석적으로 표현한다. $y=x/n$ 을 넣고 $n$ 에 대해 더하면 Perron 공식이 되고, 셈의 조건이 윤곽적분으로 바뀌면서 조합적 문제가 복소해석 문제가 된다.
@@ -63,7 +63,7 @@ $$
 
 ## 변환과 역변환
 
-$f$ 가 $(0,\infty)$ 에서 국소적분가능하고 띠 $a<\mathrm{Re}s<b$ 에서 적분이 절대수렴하면 $\tilde f$ 는 그 띠에서 정칙이다. 역변환은 $a<c<b$ 인 임의의 $c$ 에서 다음이고 값은 $c$ 에 의존하지 않는다.
+$f$ 가 $(0,\infty)$ 에서 국소적분가능하고 띠 $a\lt\mathrm{Re}s\lt b$ 에서 적분이 절대수렴하면 $\tilde f$ 는 그 띠에서 정칙이다. 역변환은 $a\lt c\lt b$ 인 임의의 $c$ 에서 다음이고 값은 $c$ 에 의존하지 않는다.
 
 $$
 f(x)=\frac1{2\pi i}\int_{(c)}\tilde f(s)x^{-s}ds
@@ -72,9 +72,9 @@ $$
 기본 예는 다음 둘이다.
 
 $$
-\int_0^{\infty}e^{-x}x^{s-1}dx=\Gamma(s)\ (0<\mathrm{Re}s),
+\int_0^{\infty}e^{-x}x^{s-1}dx=\Gamma(s)\ (0\lt\mathrm{Re}s),
 \qquad
-\int_0^{\infty}\frac{x^{s-1}}{e^{x}-1}dx=\Gamma(s)\zeta(s)\ (1<\mathrm{Re}s)
+\int_0^{\infty}\frac{x^{s-1}}{e^{x}-1}dx=\Gamma(s)\zeta(s)\ (1\lt\mathrm{Re}s)
 $$
 
 ## 조화합
@@ -91,7 +91,7 @@ $$
 
 ## Perron 공식
 
-$D(s)=\sum a_nn^{-s}$ 가 $\mathrm{Re}s>\sigma_a$ 에서 절대수렴하고 $c>\sigma_a$ 면 다음이 성립한다.
+$D(s)=\sum a_nn^{-s}$ 가 $\mathrm{Re}s\gt\sigma_a$ 에서 절대수렴하고 $c\gt\sigma_a$ 면 다음이 성립한다.
 
 $$
 {\sum_{n\le x}}'\thinspace a_n=\frac1{2\pi i}\int_{(c)}D(s)\frac{x^{s}}{s}ds
@@ -106,7 +106,7 @@ $$
 $\tilde f$ 가 띠 바깥으로 유리형으로 이어지고 수직선 위에서 충분히 빨리 감쇠하면 윤곽을 왼쪽으로 $\mathrm{Re}s=d$ 까지 밀어 다음을 얻는다.
 
 $$
-f(x)=\sum_{d<\mathrm{Re}s_0<c}\mathop{\mathrm{Res}}_{s=s_0}\big(\tilde f(s)x^{-s}\big)+O\negthinspace\left(x^{-d}\right)
+f(x)=\sum_{d\lt\mathrm{Re}s_0\lt c}\mathop{\mathrm{Res}}_{s=s_0}\big(\tilde f(s)x^{-s}\big)+O\negthinspace\left(x^{-d}\right)
 $$
 
 점근전개를 얻는 작업이 유수 계산이 된다. 차수 $m$ 의 극점에서 나오는 항은 $x^{-s_0}$ 곱하기 $\log x$ 의 $m-1$ 차 다항식이다.
@@ -161,7 +161,7 @@ $$
 \psi(x)=x-\sum_{\rho}\frac{x^{\rho}}{\rho}-\log2\pi-\tfrac12\log(1-x^{-2})
 $$
 
-영점의 실수부가 오차항의 크기를 정한다. $\mathrm{Re}\rho<1$ 을 보이는 것이 소수 정리이고, $\mathrm{Re}\rho=\tfrac12$ 이면 오차가 $O(x^{1/2+\varepsilon})$ 이다.
+영점의 실수부가 오차항의 크기를 정한다. $\mathrm{Re}\rho\lt 1$ 을 보이는 것이 소수 정리이고, $\mathrm{Re}\rho=\tfrac12$ 이면 오차가 $O(x^{1/2+\varepsilon})$ 이다.
 
 ## 알고리즘 분석
 

@@ -53,7 +53,7 @@ $E_\infty$ 는 단수의 극한, $C_\infty$ 는 순환체 단수의 극한이다
 
 근거가 둘이다.
 
-- **수치.** $p<2^{31}$ 까지 반례가 없다. Buhler–Harvey 등의 계산이 Bernoulli 수의 $p$ 진 성질과 순환체 단수의 지표를 함께 확인했다.
+- **수치.** $p\lt 2^{31}$ 까지 반례가 없다. Buhler–Harvey 등의 계산이 Bernoulli 수의 $p$ 진 성질과 순환체 단수의 지표를 함께 확인했다.
 - **확률 모형.** Cohen–Lenstra 류의 발견적 논법을 순환체에 적용하면 $p\mid h^{+}$ 일 확률이 대략 $p^{-2}$ 로 추정되고, $\sum p^{-2}$ 가 수렴하므로 반례가 유한 개일 것으로 예상된다. 반례가 아예 없다는 것까지는 나오지 않는다.
 
 같은 발견법이 $A^{-}$ 에서는 $p\mid h^{-}$ 확률을 $p^{-1}$ 로 주고 실제로 비정칙 소수가 39% 다. 지수 하나 차이가 흔한 일과 드문 일을 가른다.
@@ -130,7 +130,7 @@ $K_n(\mathbb Z)$ 의 계산에서 짝수 $n=4k$ 의 경우가 Vandiver 에 걸�
 
 ## 계산 수론의 벤치마크
 
-Vandiver 검증은 대규모 Bernoulli 수 계산의 표준 시험대다. $B_k \bmod p$ 를 $k<p$ 전체에 대해 계산하는 작업이 다중점 다항식 평가와 빠른 곱셈의 성능을 드러내고, 그 과정에서 비정칙 소수 표와 Iwasawa 불변량 표가 함께 만들어진다.
+Vandiver 검증은 대규모 Bernoulli 수 계산의 표준 시험대다. $B_k \bmod p$ 를 $k\lt p$ 전체에 대해 계산하는 작업이 다중점 다항식 평가와 빠른 곱셈의 성능을 드러내고, 그 과정에서 비정칙 소수 표와 Iwasawa 불변량 표가 함께 만들어진다.
 
 [^1]: H. S. Vandiver 의 원래 작업은 1920–30 년대이며, 정리와 동치 조건은 L. Washington, *Introduction to Cyclotomic Fields* (2판) 8, 10 장에 정리되어 있다. 수치 검증은 J. Buhler, D. Harvey, *Irregular primes to 163 million*, Math. Comp. **80** (2011). $K$ 이론과의 관계는 C. Weibel, *Algebraic K-theory of rings of integers in local and global fields* 를 보라.
 

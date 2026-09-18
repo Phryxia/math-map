@@ -113,7 +113,7 @@ Schubert 기저는 교차 쌍에 대해 자기 쌍대 기저를 갖는다. 열�
 
 Littlewood–Richardson 계수는 비음 정수다. 조합적으로는 격자 낱말 조건을 만족하는 반표준 배열의 개수이고 기하적으로는 실제 교차점의 개수다. 이 계수가 $0$ 인지 묻는 조합 질문이 기하 질문이 된다.
 
-Hermite 행렬 세 개의 고윳값이 언제 $A+B=C$ 를 만족할 수 있는지 묻는 Horn 문제가 $c^\nu_{\lambda\mu}>0$ 인 조건으로 환원되고, Knutson–Tao 의 saturation 정리가 그 조건을 선형 부등식으로 기술한다.
+Hermite 행렬 세 개의 고윳값이 언제 $A+B=C$ 를 만족할 수 있는지 묻는 Horn 문제가 $c^\nu_{\lambda\mu}\gt 0$ 인 조건으로 환원되고, Knutson–Tao 의 saturation 정리가 그 조건을 선형 부등식으로 기술한다.
 
 ## 실수체 위의 해
 

@@ -48,7 +48,7 @@ $$
 \mathbb{E}\bigg[\Big(\int_0^TH_s\thinspace dB_s\Big)^2\bigg]=\mathbb{E}\bigg[\int_0^TH_s^2\thinspace ds\bigg]
 $$
 
-좌변은 확률적분의 $L^2$ 노름이고 우변은 보통 적분의 노름이다. 적분 연산이 등거리사상이고 단순 과정이 조밀하므로, 이 사상은 $\int_0^T \mathbb{E}[H_s^2]\thinspace ds < \infty$ 인 adapted 과정 전체로 유일하게 연장된다. 이렇게 정의된 $\int H\thinspace dB$ 는 연속 martingale 이며 기댓값이 0 이다.
+좌변은 확률적분의 $L^2$ 노름이고 우변은 보통 적분의 노름이다. 적분 연산이 등거리사상이고 단순 과정이 조밀하므로, 이 사상은 $\int_0^T \mathbb{E}[H_s^2]\thinspace ds \lt\infty$ 인 adapted 과정 전체로 유일하게 연장된다. 이렇게 정의된 $\int H\thinspace dB$ 는 연속 martingale 이며 기댓값이 0 이다.
 
 ## Itô 공식
 

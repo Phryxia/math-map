@@ -135,7 +135,7 @@ $$
 100 이하 소수의 개수를 2, 3, 5, 7의 배수를 걸러 계산한다. 1은 소수가 아니고 2, 3, 5, 7 자신은 걸러졌으므로 보정한다.
 
 $$
-\pi(100)=\Bigl(100-\sum_{p}\Bigl\lfloor\frac{100}{p}\Bigr\rfloor+\sum_{p<q}\Bigl\lfloor\frac{100}{pq}\Bigr\rfloor-\cdots\Bigr)-1+4=25
+\pi(100)=\Bigl(100-\sum_{p}\Bigl\lfloor\frac{100}{p}\Bigr\rfloor+\sum_{p\lt q}\Bigl\lfloor\frac{100}{pq}\Bigr\rfloor-\cdots\Bigr)-1+4=25
 $$
 
 이 절차를 일반화한 Legendre, Meissel, Lehmer 의 방법이 소수 계수 함수의 고전적 계산법이다.

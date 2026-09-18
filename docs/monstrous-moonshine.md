@@ -36,7 +36,7 @@ $$
 
 를 취할 수 있고, $g=e$ 에서 $T_e=j-744$ 다. $g\ne e$ 이면 지표값은 차원보다 훨씬 작은 수들이다.
 
-> 모든 $g\in\mathbb M$ 에 대해 $T_g$ 는 어떤 이산부분군 $\Gamma_g<\mathrm{SL}\_2(\mathbb R)$ 의 **hauptmodul** 이다.
+> 모든 $g\in\mathbb M$ 에 대해 $T_g$ 는 어떤 이산부분군 $\Gamma_g\lt\mathrm{SL}\_2(\mathbb R)$ 의 **hauptmodul** 이다.
 
 hauptmodul 은 $\Gamma_g$ 에 의한 상반평면의 몫이 구면(genus 0)일 때 그 구면의 좌표를 주는 유일한 함수다. genus 0 인 모듈러 곡선이 드물므로 194 개의 켤레류 각각에서 이런 군이 존재한다는 조건은 강하다. 계수 다섯 개가 작은 음이 아닌 정수 계수로 분해되고 194 개 켤레류 전부에서 genus 0 이 나오는 것을 $V^\natural$ 하나가 설명한다. $\mathbb M$ 은 $V^\natural$ 의 자기동형군으로 나타나고, 모듈러성은 $V^\natural$ 이 등각장론의 공리를 만족하는 데서 나온다.
 
@@ -102,7 +102,7 @@ $$
 Borcherds 대수에는 Weyl–Kac 분모 공식의 일반화가 있다. $\mathfrak m$ 에 적용하면 다음 항등식을 얻는다.
 
 $$
-j(\sigma)-j(\tau)=p^{-1}\prod_{m>0,\thickspace n\in\mathbb Z}\left(1-p^mq^n\right)^{c(mn)},\qquad p=e^{2\pi i\sigma},\thinspace q=e^{2\pi i\tau}
+j(\sigma)-j(\tau)=p^{-1}\prod_{m\gt 0,\thickspace n\in\mathbb Z}\left(1-p^mq^n\right)^{c(mn)},\qquad p=e^{2\pi i\sigma},\thinspace q=e^{2\pi i\tau}
 $$
 
 왼쪽은 두 모듈러 함수의 차이고 오른쪽은 무한곱이다. 양변의 $p^mq^n$ 계수를 비교하면 $c(n)$ 들 사이의 재귀식이 나온다. 가장 단순한 것이

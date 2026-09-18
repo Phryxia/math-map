@@ -49,7 +49,7 @@ E_Q\ \text{의 계수}\ \asymp n^{m/2-1},
 f_Q\ \text{의 계수}\ \ll n^{m/4+\varepsilon}
 $$
 
-이고 오른쪽은 Deligne 의 Ramanujan 추측 증명이 준다. $m\ge5$ 이면 주항의 지수가 오차항보다 크므로, $n$ 이 충분히 크고 국소 조건을 만족하면 $r_Q(n)>0$ 이다. 이것이 Tartakowsky 의 정리다.
+이고 오른쪽은 Deligne 의 Ramanujan 추측 증명이 준다. $m\ge5$ 이면 주항의 지수가 오차항보다 크므로, $n$ 이 충분히 크고 국소 조건을 만족하면 $r_Q(n)\gt 0$ 이다. 이것이 Tartakowsky 의 정리다.
 
 ```mermaid
 graph TD

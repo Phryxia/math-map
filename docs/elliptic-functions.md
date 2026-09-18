@@ -18,7 +18,7 @@ $$\Lambda=\mathbb Z\omega_1+\mathbb Z\omega_2$$
 
 를 **격자**라 한다. 유리형함수 $f$ 가 모든 $\omega\in\Lambda$ 에 대해 $f(z+\omega)=f(z)$ 를 만족하면 $f$ 를 격자 $\Lambda$ 에 대한 **타원함수**라 한다. 격자 $\Lambda$ 에 대한 타원함수 전체는 체를 이룬다.
 
-**기본 평행사변형**은 $\lbrace a+s\omega_1+t\omega_2:0\le s,t<1\rbrace$ 이고, 타원함수의 값은 이 영역에서 전부 결정된다.
+**기본 평행사변형**은 $\lbrace a+s\omega_1+t\omega_2:0\le s,t\lt 1\rbrace$ 이고, 타원함수의 값은 이 영역에서 전부 결정된다.
 
 ## Weierstrass 페 함수
 

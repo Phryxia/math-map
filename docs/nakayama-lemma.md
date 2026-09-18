@@ -34,7 +34,7 @@ $$
 x_n=\sum_{i=1}^{n} a_i x_i,\qquad a_i\in I
 $$
 
-옮기면 $(1-a_n)x_n=\sum_{i<n}a_ix_i$ 다. $a_n\in\mathrm{rad}(R)$ 이므로 $1-a_n$ 이 가역이고, 따라서 $x_n$ 이 앞의 $n-1$ 개로 생성된다. 최소성에 어긋난다.
+옮기면 $(1-a_n)x_n=\sum_{i\lt n}a_ix_i$ 다. $a_n\in\mathrm{rad}(R)$ 이므로 $1-a_n$ 이 가역이고, 따라서 $x_n$ 이 앞의 $n-1$ 개로 생성된다. 최소성에 어긋난다.
 
 ## 생성원의 올림
 

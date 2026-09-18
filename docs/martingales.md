@@ -48,7 +48,7 @@ graph TD
 
 ## Martingale, submartingale, supermartingale
 
-adapted 이고 모든 $n$ 에 대해 $E\lvert X_n \rvert < \infty$ 인 과정 $(X_n)$ 이 다음을 만족하면 각각 martingale, submartingale, supermartingale 이라 한다.
+adapted 이고 모든 $n$ 에 대해 $E\lvert X_n \rvert \lt\infty$ 인 과정 $(X_n)$ 이 다음을 만족하면 각각 martingale, submartingale, supermartingale 이라 한다.
 
 $$
 E[X_{n+1} \mid \mathcal{F}_n] = X_n, \qquad
@@ -62,13 +62,13 @@ $$
 E[X_n] = E[X_0] \quad \text{for all } n.
 $$
 
-$(X_n)$ 이 martingale 이고 $\varphi$ 가 [볼록](convexity.md)함수이며 $E\lvert \varphi(X_n) \rvert < \infty$ 이면 조건부 Jensen 부등식으로 $(\varphi(X_n))$ 은 submartingale 이다. $\varphi(x) = \lvert x \rvert$ 나 $\varphi(x) = x^2$ 가 대표적이다.
+$(X_n)$ 이 martingale 이고 $\varphi$ 가 [볼록](convexity.md)함수이며 $E\lvert \varphi(X_n) \rvert \lt\infty$ 이면 조건부 Jensen 부등식으로 $(\varphi(X_n))$ 은 submartingale 이다. $\varphi(x) = \lvert x \rvert$ 나 $\varphi(x) = x^2$ 가 대표적이다.
 
 ## 예
 
 - **랜덤워크.** $\xi_1, \xi_2, \dots$ 가 독립이고 $E[\xi_k] = 0$ 이면 $S_n = \sum_{k \le n} \xi_k$ 는 martingale 이다. $E[\xi_k] \ge 0$ 이면 submartingale 이다. [Random walk와 전기 네트워크](random-walks.md)에서 다루는 단순 대칭 랜덤워크가 여기 속한다.
 - **분산 보정.** 위의 상황에서 $\mathrm{Var}(\xi_k) = \sigma^2$ 이면 $S_n^2 - n\sigma^2$ 이 martingale 이다. 전개하면 교차항이 조건부로 사라진다.
-- **곱 martingale.** $\xi_k > 0$ 이 독립이고 $E[\xi_k] = 1$ 이면 $M_n = \prod_{k \le n} \xi_k$ 는 martingale 이다. 우도비(likelihood ratio)가 이 꼴이며, [측도 변환](change-of-measure.md)의 밀도과정이 바로 곱 martingale 이다.
+- **곱 martingale.** $\xi_k \gt 0$ 이 독립이고 $E[\xi_k] = 1$ 이면 $M_n = \prod_{k \le n} \xi_k$ 는 martingale 이다. 우도비(likelihood ratio)가 이 꼴이며, [측도 변환](change-of-measure.md)의 밀도과정이 바로 곱 martingale 이다.
 - **Doob martingale.** 적분 가능한 $Z$ 와 임의의 filtration 에 대해 $X_n = E[Z \mid \mathcal F_n]$ 은 martingale 이다(탑 성질). 정보가 점점 드러나면서 예측이 갱신되는 과정이며, Azuma 부등식의 표준 재료다.
 - **조화함수.** [Markov 연쇄](markov-chains.md)의 전이행렬 $P$ 와 $Ph = h$ 를 만족하는 조화함수 $h$ 에 대해 $h(X_n)$ 은 martingale 이다. 우조화함수면 supermartingale 이다.
 
@@ -89,8 +89,8 @@ $$
 **정리 (Doob).** $(X_n)$ 이 martingale 이고 $T$ 가 정지시간일 때, 다음 중 하나가 성립하면 $E[X_T] = E[X_0]$ 이다.
 
 1. $T$ 가 유계다. 즉 어떤 $N$ 에 대해 $T \le N$ 이 거의 확실하게 성립한다.
-2. $T < \infty$ 가 거의 확실하고 $(X_{T \wedge n})$ 이 유계다.
-3. $E[T] < \infty$ 이고 증분이 $\lvert X_{n+1} - X_n \rvert \le c$ 로 유계다.
+2. $T \lt\infty$ 가 거의 확실하고 $(X_{T \wedge n})$ 이 유계다.
+3. $E[T] \lt\infty$ 이고 증분이 $\lvert X_{n+1} - X_n \rvert \le c$ 로 유계다.
 
 *증명 스케치.* 정지된 과정이 martingale 이므로 $E[X_{T \wedge n}] = E[X_0]$ 는 모든 $n$ 에서 성립한다. 남은 일은 $n \to \infty$ 에서 극한과 기댓값을 교환하는 것뿐이고, 세 조건은 각각 즉시 성립·[지배 수렴 정리](dominated-convergence.md)·증분 합의 지배를 제공한다. 조건이 없으면 정리는 거짓이다. 대칭 랜덤워크에서 $T = \inf\lbrace n : S_n = 1\rbrace$ 은 거의 확실하게 유한하지만 $E[S_T] = 1 \neq 0 = E[S_0]$ 이다. 이른바 마팅게일 배팅 전략(두 배로 걸기)이 "확실한 이익"처럼 보이는 착시의 정체가 이것이며, 실제로는 $E[T] = \infty$ 이거나 무한한 자금이 필요하다.
 
@@ -112,7 +112,7 @@ $$
 
 ## Doob 최대부등식
 
-**정리.** $(X_n)$ 이 비음 submartingale 이면 임의의 $\lambda > 0$ 에 대해
+**정리.** $(X_n)$ 이 비음 submartingale 이면 임의의 $\lambda \gt 0$ 에 대해
 
 $$
 P\Big(\max_{0 \le k \le n} X_k \ge \lambda\Big) \thickspace\le\thickspace \frac{E[X_n]}{\lambda}.
@@ -120,7 +120,7 @@ $$
 
 *증명 스케치.* $T = \inf\lbrace k : X_k \ge \lambda\rbrace$ 로 두고 사건 $A = \lbrace\max_{k \le n} X_k \ge \lambda\rbrace$ 를 $\lbrace T \le n\rbrace$ 과 동일시한다. $A$ 위에서 $X_T \ge \lambda$ 이고, submartingale 성질로 $E[X_n \mathbf 1_A] \ge E[X_T \mathbf 1_A] \ge \lambda P(A)$ 이다. Markov 부등식의 "경로 전체" 버전이며, $X_n$ 대신 최댓값을 다루면서도 대가가 없다는 점이 핵심이다.
 
-$p > 1$ 에 대한 $L^p$ 최대부등식
+$p \gt 1$ 에 대한 $L^p$ 최대부등식
 
 $$
 E\Big[\max_{k \le n} |X_k|^p\Big] \thickspace\le\thickspace \Big(\frac{p}{p-1}\Big)^p E\big[|X_n|^p\big]
@@ -140,11 +140,11 @@ $$
 
 *증명 스케치.* $a$ 아래로 내려가면 1 단위를 사고 $b$ 위로 올라가면 파는 예측 가능 전략 $H$ 를 만든다. 완성된 upcrossing 하나마다 최소 $b - a$ 의 이익이 나므로 $(H \cdot X)_n \ge (b-a) U_n[a,b] - (X_n - a)^-$ 이고, supermartingale 의 비음 전략 변환은 다시 supermartingale 이므로 $E[(H \cdot X)_n] \le 0$ 이다.
 
-**Martingale 수렴 정리.** $(X_n)$ 이 submartingale 이고 $\sup_n E[X_n^+] < \infty$ 이면 $X_n \to X_\infty$ 가 거의 확실하게 성립하고 $E\lvert X_\infty \rvert < \infty$ 이다.
+**Martingale 수렴 정리.** $(X_n)$ 이 submartingale 이고 $\sup_n E[X_n^+] \lt\infty$ 이면 $X_n \to X_\infty$ 가 거의 확실하게 성립하고 $E\lvert X_\infty \rvert \lt\infty$ 이다.
 
-*증명 스케치.* 수렴하지 않는 경로는 어떤 유리수 쌍 $a < b$ 에 대해 $U_\infty[a,b] = \infty$ 를 만족한다. upcrossing 부등식과 단조수렴으로 $E[U_\infty[a,b]] < \infty$ 이므로 각 쌍마다 그 사건은 영집합이고, 유리수 쌍이 가산이므로 합집합도 영집합이다. Fatou 보조정리로 극한의 적분가능성이 나온다.
+*증명 스케치.* 수렴하지 않는 경로는 어떤 유리수 쌍 $a \lt b$ 에 대해 $U_\infty[a,b] = \infty$ 를 만족한다. upcrossing 부등식과 단조수렴으로 $E[U_\infty[a,b]] \lt\infty$ 이므로 각 쌍마다 그 사건은 영집합이고, 유리수 쌍이 가산이므로 합집합도 영집합이다. Fatou 보조정리로 극한의 적분가능성이 나온다.
 
-거의 확실한 수렴이 $L^1$ 수렴을 함의하지는 않는다. 반례로 $P(\xi_k = 2) = P(\xi_k = 0) = 1/2$ 인 곱 martingale $X_n = \prod \xi_k$ 는 $X_n \to 0$ 이지만 $E[X_n] = 1$ 이다. $L^1$ 수렴과 $X_n = E[X_\infty \mid \mathcal F_n]$ 형태의 표현(닫힌 martingale)을 얻으려면 [균등적분성](uniform-integrability.md)이 필요하며, 이는 Doob martingale 이 언제나 균등적분 가능하다는 사실과 짝을 이룬다. $p > 1$ 에서는 $L^p$ 유계성만으로 $L^p$ 수렴이 따르는데, 최대부등식이 지배함수를 제공하기 때문이다[^1].
+거의 확실한 수렴이 $L^1$ 수렴을 함의하지는 않는다. 반례로 $P(\xi_k = 2) = P(\xi_k = 0) = 1/2$ 인 곱 martingale $X_n = \prod \xi_k$ 는 $X_n \to 0$ 이지만 $E[X_n] = 1$ 이다. $L^1$ 수렴과 $X_n = E[X_\infty \mid \mathcal F_n]$ 형태의 표현(닫힌 martingale)을 얻으려면 [균등적분성](uniform-integrability.md)이 필요하며, 이는 Doob martingale 이 언제나 균등적분 가능하다는 사실과 짝을 이룬다. $p \gt 1$ 에서는 $L^p$ 유계성만으로 $L^p$ 수렴이 따르는데, 최대부등식이 지배함수를 제공하기 때문이다[^1].
 
 # 활용
 

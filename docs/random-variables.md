@@ -96,7 +96,7 @@ $$
 따라서 공분산을 $\mathrm{Cov}(X,Y)=\mathbb E[XY]-\mathbb E[X]\thinspace\mathbb E[Y]$ 로 두면 독립인 경우 $0$ 이고, 일반적으로 다음이 성립한다.
 
 $$
-\mathrm{Var}\negthinspace\left(\sum_{i=1}^n X_i\right)=\sum_{i=1}^n\mathrm{Var}(X_i)+2\sum_{i<j}\mathrm{Cov}(X_i,X_j)
+\mathrm{Var}\negthinspace\left(\sum_{i=1}^n X_i\right)=\sum_{i=1}^n\mathrm{Var}(X_i)+2\sum_{i\lt j}\mathrm{Cov}(X_i,X_j)
 $$
 
 특히 쌍마다 상관이 없으면(독립보다 약한 조건) 분산은 가법적이다. 공분산이 $0$ 이어도 독립은 아니다. $X$ 가 $-1$ , $0$ , $1$ 을 각각 $1/4$ , $1/2$ , $1/4$ 의 확률로 가지고 $Y$ 를 $X$ 의 제곱으로 두면 $X$ 의 분포가 대칭이므로 다음과 같다.
@@ -109,7 +109,7 @@ $$
 
 ## Markov와 Chebyshev 부등식
 
-음이 아닌 확률변수 $Z$ 와 $a>0$ 에 대해, 지시함수 부등식 $a\cdot\mathbf 1\lbrace Z\ge a\rbrace\le Z$ 의 양변에 기댓값을 취하면 Markov 부등식을 얻는다. $Z$ 를 $(X-\mathbb E X)^2$ 으로 잡으면 Chebyshev 부등식이 나온다.
+음이 아닌 확률변수 $Z$ 와 $a\gt 0$ 에 대해, 지시함수 부등식 $a\cdot\mathbf 1\lbrace Z\ge a\rbrace\le Z$ 의 양변에 기댓값을 취하면 Markov 부등식을 얻는다. $Z$ 를 $(X-\mathbb E X)^2$ 으로 잡으면 Chebyshev 부등식이 나온다.
 
 $$
 P(Z\ge a)\le \frac{\mathbb E[Z]}{a},

@@ -57,7 +57,7 @@ $$
 
 ## 균일화 정리
 
-> **정리(Koebe, Poincaré, 1907).** 단순연결 Riemann 곡면은 $\widehat{\mathbb C}$ 와 $\mathbb C$ 와 $\mathbb D=\lbrace|z|<1\rbrace$ 가운데 정확히 하나와 정칙동형이다.
+> **정리(Koebe, Poincaré, 1907).** 단순연결 Riemann 곡면은 $\widehat{\mathbb C}$ 와 $\mathbb C$ 와 $\mathbb D=\lbrace|z|\lt 1\rbrace$ 가운데 정확히 하나와 정칙동형이다.
 
 세 모형은 서로 동형이 아니다. $\widehat{\mathbb C}$ 만 콤팩트이고, $\mathbb C$ 와 $\mathbb D$ 는 Liouville 정리로 갈린다. $\mathbb D\to\mathbb C$ 인 정칙사상은 많지만 $\mathbb C\to\mathbb D$ 는 유계 정함수라 상수뿐이다.
 

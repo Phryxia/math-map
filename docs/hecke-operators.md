@@ -11,7 +11,7 @@ S_k(\Gamma_0(N))=\bigoplus_{f}\mathbb C f\ \ (\text{고유형식}),\qquad
 L(s,f)=\prod_p\big(1-a_pp^{-s}+\chi(p)p^{k-1-2s}\big)^{-1}
 $$
 
-레벨 $N>1$ 에서는 낮은 레벨의 형식이 여러 방식으로 올라와 만드는 **옛형식**들이 $T_n$ 의 같은 고유값을 공유해, 고유값만으로 형식을 구별할 수 없다. Atkin 과 Lehner 의 새형식 이론이 이 겹침을 걷어낸다[^1]. 남은 **새형식**에서 고유값이 형식을 유일하게 결정하고, 모듈러성 정리와 Langlands 대응의 일대일 대응이 성립한다.
+레벨 $N\gt 1$ 에서는 낮은 레벨의 형식이 여러 방식으로 올라와 만드는 **옛형식**들이 $T_n$ 의 같은 고유값을 공유해, 고유값만으로 형식을 구별할 수 없다. Atkin 과 Lehner 의 새형식 이론이 이 겹침을 걷어낸다[^1]. 남은 **새형식**에서 고유값이 형식을 유일하게 결정하고, 모듈러성 정리와 Langlands 대응의 일대일 대응이 성립한다.
 
 # 직관
 
@@ -103,7 +103,7 @@ $\mathbb T$ 는 가환이고 $S_k(\Gamma_0(N))$ 위에 충실히 작용하므로
 
 ## 옛형식과 새형식
 
-$M\mid N$ , $M<N$ 인 각 $M$ 과 $d\mid(N/M)$ 에 대한 사상 $f(\tau)\mapsto f(d\tau)$ 의 상이 생성하는 부분공간이 **옛부분공간** $S_k^{\mathrm{old}}(N)$ 이다.
+$M\mid N$ , $M\lt N$ 인 각 $M$ 과 $d\mid(N/M)$ 에 대한 사상 $f(\tau)\mapsto f(d\tau)$ 의 상이 생성하는 부분공간이 **옛부분공간** $S_k^{\mathrm{old}}(N)$ 이다.
 
 $$
 S_k^{\mathrm{new}}(\Gamma_0(N))=\big(S_k^{\mathrm{old}}(\Gamma_0(N))\big)^{\perp}\quad(\text{Petersson 내적})

@@ -43,7 +43,7 @@ $$
 
 ## 전위 방정식
 
-연결된 유한 무향 그래프의 간선 가중치 $w_{ij}>0$ 을 전도도로 보면 간선의 저항은 $1/w_{ij}$ 다. $L$ 을 그래프 Laplacian, $u \ne v$ 를 두 정점, $b = e_u - e_v$ 라 하자. 전위 $\varphi$ 는
+연결된 유한 무향 그래프의 간선 가중치 $w_{ij}\gt 0$ 을 전도도로 보면 간선의 저항은 $1/w_{ij}$ 다. $L$ 을 그래프 Laplacian, $u \ne v$ 를 두 정점, $b = e_u - e_v$ 라 하자. 전위 $\varphi$ 는
 
 $$
 L\varphi=b
@@ -70,7 +70,7 @@ $$
 이다. 고유분해 $L = \sum_k \lambda_k q_k q_k^{\mathsf T}$ 를 쓰면
 
 $$
-R(u,v)=\sum_{k:\lambda_k>0}\frac{\left(q_k(u)-q_k(v)\right)^2}{\lambda_k}
+R(u,v)=\sum_{k:\lambda_k\gt 0}\frac{\left(q_k(u)-q_k(v)\right)^2}{\lambda_k}
 $$
 
 이고, 작은 고유값의 고유벡터가 두 정점을 크게 갈라놓을수록 저항이 커진다. 병목이 저항으로 나타난다.
@@ -138,7 +138,7 @@ $$
 # 활용
 
 - $w_eR(u,v)$ 가 간선의 중요도다. 값이 1 에 가까울수록 대체 불가능하고 0 에 가까울수록 잉여다. 이것이 [spectral sparsification](spectral-sparsification.md)의 샘플링 확률이 되어, 유효저항에 비례해 간선을 뽑으면 $O(n \log n / \epsilon^2)$ 개의 간선으로 Laplacian 이차형식을 근사한다[^1].
-- 전염, 정보 확산, 혼잡처럼 흐름이 여러 경로로 분산되는 문제에서는 유효저항 거리가 최단 경로보다 적절하다. 모든 쌍의 저항 합 $\sum_{u<v} R(u,v)$ 을 Kirchhoff 지표라 하며 네트워크의 견고함을 재는 값으로 쓴다.
+- 전염, 정보 확산, 혼잡처럼 흐름이 여러 경로로 분산되는 문제에서는 유효저항 거리가 최단 경로보다 적절하다. 모든 쌍의 저항 합 $\sum_{u\lt v} R(u,v)$ 을 Kirchhoff 지표라 하며 네트워크의 견고함을 재는 값으로 쓴다.
 - 정확한 계산은 $L^+$ 를 요구해 큰 그래프에서 비싸다. Johnson–Lindenstrauss 사영과 Laplacian 방정식의 빠른 해법을 결합해 모든 간선의 저항을 근사하고 그 값으로 샘플링한다.
 
 [^1]: Spielman, Srivastava, *Graph Sparsification by Effective Resistances* (2008), https://arxiv.org/abs/0803.0929. 전기적 해석과 저항 기반 샘플링의 연결, Foster 정리의 역할. 전위 방정식과 Schur 보수의 관계는 Spielman 의 강의 노트 https://www.cs.yale.edu/homes/spielman/561/lect08-15.pdf 를 참고했다.

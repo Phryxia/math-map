@@ -97,9 +97,9 @@ $$
 실대칭 $A$ 가 $0$ 이 아닌 모든 $x$ 에서 이차형식이 양수이면 양의 정부호라 한다. 스펙트럼 정리에서 이는 모든 고윳값이 양수인 것과 동치이고, 선행 주요 소행렬식(왼쪽 위 $k\times k$ 부분행렬의 [행렬식](determinants.md))이 모두 양수인 것과도 동치다[^3].
 
 $$
-x^{\mathsf T}Ax>0\ (x\neq0)
-\iff \lambda_i>0\ \forall i
-\iff \det A_{1:k,1:k}>0\ (k=1,\dots,n)
+x^{\mathsf T}Ax\gt 0\ (x\neq0)
+\iff \lambda_i\gt 0\ \forall i
+\iff \det A_{1:k,1:k}\gt 0\ (k=1,\dots,n)
 $$
 
 선행 주요 소행렬식만 보는 판정은 양의 준정부호에는 통하지 않는다. 준정부호 판정에는 모든 주요 소행렬식이 음이 아니어야 한다.

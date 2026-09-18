@@ -38,7 +38,7 @@ S_n \thickspace=\thickspace S_0 + \sum_{k=1}^{n} \xi_k, \qquad
 P(\xi_k = \pm e_i) = \frac{1}{2d} \ \ (i = 1, \dots, d)
 $$
 
-로 쓴다. 좌표별 대칭성 때문에 $\mathbb{E}[\xi_k] = 0$ 이고, 따라서 각 좌표는 [Martingale](martingales.md)이다. 일반 그래프 $G = (V, E)$ 위의 단순 random walk 는 현재 정점의 이웃 중 하나를 균등하게 고르는 연쇄이며, 전이확률은 $xy \in E$ 일 때 $P(x, y) = 1/\deg(x)$ 다. 가중 그래프에서는 변 $xy$ 의 컨덕턴스 $c(xy) > 0$ 에 비례해 고른다.
+로 쓴다. 좌표별 대칭성 때문에 $\mathbb{E}[\xi_k] = 0$ 이고, 따라서 각 좌표는 [Martingale](martingales.md)이다. 일반 그래프 $G = (V, E)$ 위의 단순 random walk 는 현재 정점의 이웃 중 하나를 균등하게 고르는 연쇄이며, 전이확률은 $xy \in E$ 일 때 $P(x, y) = 1/\deg(x)$ 다. 가중 그래프에서는 변 $xy$ 의 컨덕턴스 $c(xy) \gt 0$ 에 비례해 고른다.
 
 $$
 P(x, y) \thickspace=\thickspace \frac{c(xy)}{c(x)}, \qquad c(x) = \sum_{y \sim x} c(xy).
@@ -48,10 +48,10 @@ $$
 
 ## 재귀성과 일시성
 
-원점으로의 첫 복귀 시각을 $T = \inf\lbrace n \ge 1 : S_n = S_0\rbrace$ 이라 할 때, $P(T < \infty) = 1$ 이면 재귀적(recurrent), $P(T < \infty) < 1$ 이면 일시적(transient)이라 한다. 표준적인 판정 기준은 Green 함수의 발산 여부다.
+원점으로의 첫 복귀 시각을 $T = \inf\lbrace n \ge 1 : S_n = S_0\rbrace$ 이라 할 때, $P(T \lt\infty) = 1$ 이면 재귀적(recurrent), $P(T \lt\infty) \lt 1$ 이면 일시적(transient)이라 한다. 표준적인 판정 기준은 Green 함수의 발산 여부다.
 
 $$
-G(0,0) \thickspace=\thickspace \sum_{n=0}^{\infty} P(S_n = 0 \mid S_0 = 0) \thickspace=\thickspace \frac{1}{1 - P(T < \infty)} .
+G(0,0) \thickspace=\thickspace \sum_{n=0}^{\infty} P(S_n = 0 \mid S_0 = 0) \thickspace=\thickspace \frac{1}{1 - P(T \lt\infty)} .
 $$
 
 좌변이 발산하면 재귀적, 수렴하면 일시적이다. 재귀 사건의 횟수가 기하분포를 따른다는 사실에서 나온다.
@@ -98,7 +98,7 @@ $$
 **정리.** 정점 $a$ 에서 출발한 walk 가 $a$ 로 돌아오기 전에 집합 $\mathbb Z$ 에 도달할 확률은
 
 $$
-P_a(\tau_Z < \tau_a^+) \thickspace=\thickspace \frac{1}{c(a) \thinspace R_{\mathrm{eff}}(a, Z)} .
+P_a(\tau_Z \lt\tau_a^+) \thickspace=\thickspace \frac{1}{c(a) \thinspace R_{\mathrm{eff}}(a, Z)} .
 $$
 
 *증명 스케치.* $v(a) = 1$ 이고 $v|_Z = 0$ 인 전압을 잡는다. $a$ 에서 흘러 나가는 총 전류는 $\sum_y c(ay)(1 - v(y))$ 이고, 확률적으로 이는 첫 걸음 뒤 $a$ 로 돌아오기 전에 $Z$ 에 도달할 확률을 $c(a)$ 에 곱한 값과 같다. 유효저항의 정의에 대입하면 등식이 된다.
@@ -118,7 +118,7 @@ $$
 *전기적 증명 스케치.* 단조성 논증 두 개면 충분하다.
 
 - $d = 2$ 인 경우. 원점 중심의 정사각형 껍질 위의 정점들을 단락(short-circuit)시켜도 Rayleigh 단조성에 의해 유효저항은 줄어들 뿐이다. 껍질 $n$ 과 $n+1$ 사이에는 약 $8n$ 개의 변이 병렬로 있으므로 저항이 $\asymp 1/n$ 이고, 총합 $\sum 1/n$ 은 발산한다. 따라서 원래 네트워크의 저항도 발산하고 recurrent 다.
-- $d = 3$ 인 경우. 격자 안에 서로 변을 공유하지 않는 무한 경로들의 다발(Nash-Williams 의 쌍대인 흐름 구성)을 심는다. 변을 지우면 저항이 커질 뿐이므로, 저항이 유한한 부분 네트워크를 하나라도 찾으면 원래 네트워크의 저항도 유한하다. 3차원에서는 유한 에너지 흐름이 존재해 $R_{\mathrm{eff}}(0, \infty) < \infty$ 이고 transient 다.
+- $d = 3$ 인 경우. 격자 안에 서로 변을 공유하지 않는 무한 경로들의 다발(Nash-Williams 의 쌍대인 흐름 구성)을 심는다. 변을 지우면 저항이 커질 뿐이므로, 저항이 유한한 부분 네트워크를 하나라도 찾으면 원래 네트워크의 저항도 유한하다. 3차원에서는 유한 에너지 흐름이 존재해 $R_{\mathrm{eff}}(0, \infty) \lt\infty$ 이고 transient 다.
 
 전기적 증명의 장점은 격자 구조에 거의 의존하지 않는다는 점이다. 예컨대 $\mathbb Z^3$ 의 임의의 부분그래프가 $\mathbb Z^3$ 전체를 포함하면 여전히 transient 이고, $\mathbb Z^2$ 를 포함하는 평면 격자는 recurrent 하다. 이런 비교 정리는 해석적 계산으로는 얻기 어렵다[^2].
 

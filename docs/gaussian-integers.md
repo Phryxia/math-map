@@ -8,7 +8,7 @@ Gauss 정수환 $\mathbb Z[i]$ 는 $a+bi\ (a,b\in\mathbb Z)$ 꼴의 복소수가
 
 # 직관
 
-$\mathbb Z[i]$ 는 복소평면의 정사각 격자다. 임의의 복소수는 가장 가까운 격자점에서 거리 $\tfrac{\sqrt2}{2}<1$ 안에 있으므로, 나눗셈의 나머지를 노름이 작아지도록 항상 고를 수 있다. 이 기하가 나눗셈 정리를 준다.
+$\mathbb Z[i]$ 는 복소평면의 정사각 격자다. 임의의 복소수는 가장 가까운 격자점에서 거리 $\tfrac{\sqrt2}{2}\lt 1$ 안에 있으므로, 나눗셈의 나머지를 노름이 작아지도록 항상 고를 수 있다. 이 기하가 나눗셈 정리를 준다.
 
 정수의 소수는 이 격자에서 셋 중 하나로 행동한다. $2$ 는 $-i(1+i)^2$ 으로 분기하고, $p\equiv 1 \pmod 4$ 는 서로 켤레인 두 소원의 곱으로 쪼개지며, $p\equiv 3\pmod 4$ 는 그대로 소원으로 남는다.
 
@@ -36,9 +36,9 @@ $$
 
 ## 나눗셈 정리
 
-$\beta \ne 0$ 인 임의의 $\alpha,\beta$ 에 대해 $\alpha=\gamma\beta+\rho$ 이고 $N(\rho)<N(\beta)$ 인 $\gamma,\rho$ 가 존재한다.
+$\beta \ne 0$ 인 임의의 $\alpha,\beta$ 에 대해 $\alpha=\gamma\beta+\rho$ 이고 $N(\rho)\lt N(\beta)$ 인 $\gamma,\rho$ 가 존재한다.
 
-증명. $\alpha/\beta = u+vi$ 를 복소수로 계산하고 $u,v$ 를 각각 가장 가까운 정수로 반올림해 $\gamma$ 를 잡는다. 그러면 $|\alpha/\beta-\gamma|^2 \le \tfrac14+\tfrac14=\tfrac12$ 이므로 $\rho=\alpha-\gamma\beta$ 는 $N(\rho)\le \tfrac12 N(\beta)<N(\beta)$ 를 만족한다.
+증명. $\alpha/\beta = u+vi$ 를 복소수로 계산하고 $u,v$ 를 각각 가장 가까운 정수로 반올림해 $\gamma$ 를 잡는다. 그러면 $|\alpha/\beta-\gamma|^2 \le \tfrac14+\tfrac14=\tfrac12$ 이므로 $\rho=\alpha-\gamma\beta$ 는 $N(\rho)\le \tfrac12 N(\beta)\lt N(\beta)$ 를 만족한다.
 
 따라서 $\mathbb Z[i]$ 는 Euclid 정역이고, ED $\subset$ PID $\subset$ UFD 사슬에 의해 유일분해정역이다.
 

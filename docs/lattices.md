@@ -68,7 +68,7 @@ Gram 행렬 $G=BB^{\mathsf T}$ 에 대해 $\det L=\sqrt{\det G}$ 이므로, 격�
 ## 연속 최소
 
 $$
-\lambda_k(L)=\min\lbrace r>0:\ \dim\mathrm{span}(L\cap \bar B(0,r))\ge k\rbrace
+\lambda_k(L)=\min\lbrace r\gt 0:\ \dim\mathrm{span}(L\cap \bar B(0,r))\ge k\rbrace
 $$
 
 $\lambda_1$ 이 0 이 아닌 최단벡터의 길이다. $\lambda_k$ 는 선형독립인 격자벡터 $k$ 개를 반지름 $r$ 공 안에서 찾을 수 있는 최소 반지름이다.
@@ -88,7 +88,7 @@ $(B^{-1})^{\mathsf T}$ 가 $L^\ast$ 의 기저이고 $\det L^\ast=1/\det L$ 이�
 - SVP: $L$ 의 기저가 주어질 때 최단 비영 벡터를 찾아라.
 - CVP: 기저와 목표점 $t$ 가 주어질 때 $t$ 에 가장 가까운 격자점을 찾아라.
 - $\gamma$ 근사판: 최적의 $\gamma$ 배 이내인 답을 찾아라.
-- GapSVP$_\gamma$ 는 $\lambda_1\le1$ 인지 $\lambda_1>\gamma$ 인지 판정하라(둘 중 하나는 보장된다).
+- GapSVP$_\gamma$ 는 $\lambda_1\le1$ 인지 $\lambda_1\gt\gamma$ 인지 판정하라(둘 중 하나는 보장된다).
 
 암호는 근사판, 그중에서도 $\gamma$ 가 $n$ 의 다항식인 영역에 놓인다.
 
@@ -96,7 +96,7 @@ $(B^{-1})^{\mathsf T}$ 가 $L^\ast$ 의 기저이고 $\det L^\ast=1/\det L$ 이�
 
 ## Minkowski 의 정리
 
-원점 대칭인 볼록집합 $S$ 에 대해 $\mathrm{vol}(S)>2^n\det L$ 이면 $S\cap L\ne\lbrace 0\rbrace$ 이다. 반지름 $r$ 인 공에 적용하면
+원점 대칭인 볼록집합 $S$ 에 대해 $\mathrm{vol}(S)\gt 2^n\det L$ 이면 $S\cap L\ne\lbrace 0\rbrace$ 이다. 반지름 $r$ 인 공에 적용하면
 
 $$
 \lambda_1(L)\le 2\Big(\frac{\det L}{V_n}\Big)^{1/n},\qquad V_n=\mathrm{vol}(B(0,1))
@@ -127,7 +127,7 @@ Minkowski 상계와 상수배만 다르고 무작위 격자에서 잘 맞아 암
 좋은 기저를 찾는 문제는 어렵지만 어느 정도 좋은 기저는 다항시간에 찾을 수 있다. Gram–Schmidt 직교화를 $b_i^\ast$ , 계수를 $\mu_{ij}$ 라 할 때 다음 두 조건을 만족하면 **LLL 축소 기저**다.
 
 $$
-|\mu_{ij}|\le\tfrac12\ (j<i),\qquad
+|\mu_{ij}|\le\tfrac12\ (j\lt i),\qquad
 \delta\Vert b_{k-1}^*\Vert^2\le\Vert b_k^*\Vert^2+\mu_{k,k-1}^2\Vert b_{k-1}^*\Vert^2
 $$
 
@@ -153,7 +153,7 @@ SVP 는 무작위 환산 아래 NP 난해다. 정확판뿐 아니라 $1+1/n^\eps
 
 ## 정수론의 존재 정리들
 
-Fermat 의 두 제곱수 정리를 Minkowski 로 증명할 수 있다. $p\equiv1\pmod4$ 이면 $x^2\equiv-1\pmod p$ 인 $x$ 가 있고, $(1,x),(0,p)$ 가 생성하는 격자는 행렬식이 $p$ 이며 모든 격자점 $(a,b)$ 가 $a^2+b^2\equiv0\pmod p$ 를 만족한다. 반지름 $\sqrt{2p}$ 인 원의 넓이 $2\pi p>4p$ 이므로 그 안에 격자점이 있고, $0<a^2+b^2<2p$ 이면서 $p$ 의 배수이므로 $a^2+b^2=p$ 다.
+Fermat 의 두 제곱수 정리를 Minkowski 로 증명할 수 있다. $p\equiv1\pmod4$ 이면 $x^2\equiv-1\pmod p$ 인 $x$ 가 있고, $(1,x),(0,p)$ 가 생성하는 격자는 행렬식이 $p$ 이며 모든 격자점 $(a,b)$ 가 $a^2+b^2\equiv0\pmod p$ 를 만족한다. 반지름 $\sqrt{2p}$ 인 원의 넓이 $2\pi p\gt 4p$ 이므로 그 안에 격자점이 있고, $0\lt a^2+b^2\lt 2p$ 이면서 $p$ 의 배수이므로 $a^2+b^2=p$ 다.
 
 같은 도구가 대수적 수체에서 유수의 유한성과 Dirichlet 단원 정리를 준다. 격자와 볼록체의 관계가 수의 기하학의 바탕이다.
 
@@ -161,7 +161,7 @@ Fermat 의 두 제곱수 정리를 Minkowski 로 증명할 수 있다. $p\equiv1
 
 LLL 은 1982 년에 유리계수 다항식의 인수분해를 다항시간에 하려고 만들어졌다. 근을 수치로 구한 뒤 인수의 계수 벡터를 짧은 격자벡터로 찾는 방식이다.
 
-암호 해독에도 쓰인다. 배낭 암호 계열이 거의 전부 LLL 로 무너졌고, Coppersmith 의 방법은 지수가 작거나 비밀키 $d<N^{0.292}$ 이거나 소인수의 상위 비트가 새면 [RSA](rsa-cryptosystem.md) 를 깬다. 난수생성기의 출력 일부로 상태를 복원하는 공격도 같은 틀이다.
+암호 해독에도 쓰인다. 배낭 암호 계열이 거의 전부 LLL 로 무너졌고, Coppersmith 의 방법은 지수가 작거나 비밀키 $d\lt N^{0.292}$ 이거나 소인수의 상위 비트가 새면 [RSA](rsa-cryptosystem.md) 를 깬다. 난수생성기의 출력 일부로 상태를 복원하는 공격도 같은 틀이다.
 
 짧은 벡터를 찾으면 풀리는 문제로 번역되면 LLL 이 적용되므로, 격자는 공격 도구이자 방어 수단이다.
 

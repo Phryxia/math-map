@@ -121,7 +121,7 @@ $$
 \tilde\epsilon=\epsilon_\theta(x,t,\varnothing)+s\big(\epsilon_\theta(x,t,y)-\epsilon_\theta(x,t,\varnothing)\big)
 $$
 
-로 외삽한다. $s>1$ 이면 조건에 충실한 표본이 나오고 다양성이 줄어든다. 분포의 봉우리를 뾰족하게 만드는 조작이며 텍스트 조건 이미지 생성의 품질을 좌우한다.
+로 외삽한다. $s\gt 1$ 이면 조건에 충실한 표본이 나오고 다양성이 줄어든다. 분포의 봉우리를 뾰족하게 만드는 조작이며 텍스트 조건 이미지 생성의 품질을 좌우한다.
 
 ## 비용
 

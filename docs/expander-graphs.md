@@ -66,12 +66,12 @@ $$
 $d$ 정규 그래프 $G=(V,E)$ 와 $|V|=n$ 에 대해
 
 $$
-h(G)=\min_{0<|S|\le n/2}\frac{|E(S,\bar S)|}{d\thinspace|S|}
+h(G)=\min_{0\lt |S|\le n/2}\frac{|E(S,\bar S)|}{d\thinspace|S|}
 $$
 
-를 **전도도**(Cheeger 상수)라 한다. 그래프 족 $\lbrace G_i\rbrace$ 가 $|V_i|\to\infty$ 이고 차수가 상수 $d$ 로 고정되며 $h(G_i)\ge\varepsilon>0$ 인 상수 $\varepsilon$ 이 있으면 **expander 족**이라 한다.
+를 **전도도**(Cheeger 상수)라 한다. 그래프 족 $\lbrace G_i\rbrace$ 가 $|V_i|\to\infty$ 이고 차수가 상수 $d$ 로 고정되며 $h(G_i)\ge\varepsilon\gt 0$ 인 상수 $\varepsilon$ 이 있으면 **expander 족**이라 한다.
 
-$\varepsilon$ 은 $i$ 에 무관한 상수다. 연결된 그래프 하나는 언제나 $h>0$ 이므로 정의는 무한족에 대해서만 뜻이 있다.
+$\varepsilon$ 은 $i$ 에 무관한 상수다. 연결된 그래프 하나는 언제나 $h\gt 0$ 이므로 정의는 무한족에 대해서만 뜻이 있다.
 
 ## 스펙트럼 간극
 

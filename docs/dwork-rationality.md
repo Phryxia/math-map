@@ -41,7 +41,7 @@ $$
 
 $\psi$ 는 유한군 위의 함수라 미분도 급수전개도 없다. 복소수 쪽에서 $\psi$ 의 값 $e^{2\pi ik/p}$ 는 단위원 위에 흩어진 점이다.
 
-$p$ 진 세계에서는 $\psi$ 가 해석함수의 값으로 실현된다. $\pi\in\mathbb C_p$ 를 $\pi^{p-1}=-p$ 인 원소로 잡으면 $\mathrm{ord}\_p\pi=\frac1{p-1}$ 이고 $\zeta_p=1+\pi+O(\pi^2)$ 꼴의 $p$ 제곱근이 존재한다. $p$ 진 지수함수는 $\mathrm{ord}\_p(x)>\frac1{p-1}$ 에서만 수렴하므로 $\exp(\pi x)$ 의 수렴반경이 $1$ 에 못 미치는데, Teichmüller 대표원은 절댓값이 정확히 $1$ 이다.
+$p$ 진 세계에서는 $\psi$ 가 해석함수의 값으로 실현된다. $\pi\in\mathbb C_p$ 를 $\pi^{p-1}=-p$ 인 원소로 잡으면 $\mathrm{ord}\_p\pi=\frac1{p-1}$ 이고 $\zeta_p=1+\pi+O(\pi^2)$ 꼴의 $p$ 제곱근이 존재한다. $p$ 진 지수함수는 $\mathrm{ord}\_p(x)\gt\frac1{p-1}$ 에서만 수렴하므로 $\exp(\pi x)$ 의 수렴반경이 $1$ 에 못 미치는데, Teichmüller 대표원은 절댓값이 정확히 $1$ 이다.
 
 Dwork 의 **분해함수**가 이 벽을 넘는다.
 
@@ -51,7 +51,7 @@ $$
 \mathrm{ord}_p\theta_m\ \ge\ \frac{(p-1)m}{p^2}
 $$
 
-$-\pi x^p$ 항을 더하면 수렴반경이 $p^{(p-1)/p^2}>1$ 로 늘어나 닫힌 단위원판을 넘어서 수렴한다. 이 초과수렴(overconvergence)이 뒤에서 작용소를 완전연속으로 만든다.
+$-\pi x^p$ 항을 더하면 수렴반경이 $p^{(p-1)/p^2}\gt 1$ 로 늘어나 닫힌 단위원판을 넘어서 수렴한다. 이 초과수렴(overconvergence)이 뒤에서 작용소를 완전연속으로 만든다.
 
 분모가 사라지는 현상은 Artin–Hasse 지수함수에서 가장 뚜렷하다.
 
@@ -102,7 +102,7 @@ $$
 
 $\pi\in\mathbb C_p$ 는 $\pi^{p-1}=-p$ 의 근이고, $\theta(x)=\exp(\pi(x-x^p))$ 다. 성질은 두 가지다.
 
-- $\theta$ 는 $|x|\_p<p^{(p-1)/p^2}$ 에서 수렴한다. 이 반경은 $1$ 보다 크다.
+- $\theta$ 는 $|x|\_p\lt p^{(p-1)/p^2}$ 에서 수렴한다. 이 반경은 $1$ 보다 크다.
 - $\theta(1)=\zeta_p$ 는 원시 $p$ 제곱근이고, Teichmüller 대표원 $\hat a$ 에 대해 $\psi(a)=\theta(\hat a)$ 가 $\mathbb F_p$ 의 덧셈 지표가 된다.
 
 $q=p^s$ 인 $\mathbb F_q$ 로 올릴 때는 $\Theta(x)=\prod_{i=0}^{s-1}\theta(x^{p^i})$ 를 쓴다. 그러면 $\Theta(\hat a)=\psi(\mathrm{Tr}\_{\mathbb F_q/\mathbb F_p}a)$ 다.
@@ -114,7 +114,7 @@ $p$ 진 Banach 공간 $B$ 위의 연속선형작용소 $\alpha$ 가 **완전연�
 $$
 \det(1-T\alpha)=\sum_{k\ge0}(-1)^kc_kT^k,
 \qquad
-c_k=\sum_{i_1<\dots<i_k}\det\big(a_{i_\mu i_\nu}\big)_{1\le\mu,\nu\le k}
+c_k=\sum_{i_1\lt\dots\lt i_k}\det\big(a_{i_\mu i_\nu}\big)_{1\le\mu,\nu\le k}
 $$
 
 가 잘 정의되고 $T$ 의 정함수다. 고윳값 이론이 유한차원처럼 작동한다는 것이 Serre 의 정리다.
@@ -138,16 +138,16 @@ $$
 
 증명의 골격은 네 단계다.
 
-1. **정수성.** $Z\in\mathbb Z[[T]]$ 이고 $N_n\le Cq^{nd}$ 이므로 아르키메데스 수렴반경이 $q^{-d}>0$ 이상이다.
+1. **정수성.** $Z\in\mathbb Z[[T]]$ 이고 $N_n\le Cq^{nd}$ 이므로 아르키메데스 수렴반경이 $q^{-d}\gt 0$ 이상이다.
 2. **환원.** 아핀 조각으로 자르고 포함배제를 쓰면 초곡면의 경우로 환원되고, 다시 위의 지시함수 항등식으로 토러스 위의 지수합 $L$ 함수로 환원된다.
 3. **$p$ 진 유리형성.** 분해함수 $\theta$ 로 지수합을 완전연속 작용소의 대각합으로 쓰고, Fredholm 행렬식으로 $L(f,T)$ 를 정함수의 곱과 비로 표현한다. 따라서 $Z$ 는 $\mathbb C_p$ 전체에서 유리형이다.
 4. **판정.** Borel–Dwork 를 적용한다.
 
 ## Borel–Dwork 유리성 판정
 
-> $f(T)=\sum a_nT^n$ 이고 $a_n\in\mathbb Z$ 라 하자. $f$ 가 복소해석적으로 $|T|<r$ 에서 수렴하고 $p$ 진 해석적으로 $|T|\_p<R$ 에서 유리형이며 $rR>1$ 이면 $f\in\mathbb Q(T)$ 다.
+> $f(T)=\sum a_nT^n$ 이고 $a_n\in\mathbb Z$ 라 하자. $f$ 가 복소해석적으로 $|T|\lt r$ 에서 수렴하고 $p$ 진 해석적으로 $|T|\_p\lt R$ 에서 유리형이며 $rR\gt 1$ 이면 $f\in\mathbb Q(T)$ 다.
 
-Dwork 의 경우 $R=\infty$ 이므로 $r>0$ 이면 된다. 유리수는 곱공식 때문에 모든 자리에서 동시에 작을 수 없고, 정수 계수라는 조건이 두 절댓값을 묶어 계수를 유한한 점화식에 가둔다.
+Dwork 의 경우 $R=\infty$ 이므로 $r\gt 0$ 이면 된다. 유리수는 곱공식 때문에 모든 자리에서 동시에 작을 수 없고, 정수 계수라는 조건이 두 절댓값을 묶어 계수를 유한한 점화식에 가둔다.
 
 형식적인 쪽의 고전적 판정은 Kronecker 의 Hankel 행렬식 조건이다.
 
@@ -194,7 +194,7 @@ $p$ 진 부치는 유리성보다 미세한 정보를 준다. 다항식 $\sum c_
 $\mathbb Q(\zeta_p)$ 에서 $p$ 위의 유일한 소 아이디얼이 $(\zeta_p-1)$ 이고 $\pi$ 는 그 생성원과 결부된다. [Gauss 합](gauss-sums.md)의 $p$ 진 크기는 Stickelberger 정리가 준다. $\omega$ 를 Teichmüller 지표라 할 때
 
 $$
-\mathrm{ord}_p\thinspace g(\omega^{-a})=\frac{a}{p-1},\qquad 0\le a<p-1
+\mathrm{ord}_p\thinspace g(\omega^{-a})=\frac{a}{p-1},\qquad 0\le a\lt p-1
 $$
 
 이고 Gross–Koblitz 정리는 값 자체를 $p$ 진 감마함수 $\Gamma_p$ 로 주며 그 증명이 Dwork 의 분해함수를 쓴다. Gauss 합은 한 점 위의 Dwork 이론이고 그 $p$ 진 부치가 Newton 다각형의 기울기다. 절댓값 $\sqrt p$ 와 $\mathrm{ord}\_p=a/(p-1)$ 은 같은 수의 두 절댓값이다.
@@ -215,7 +215,7 @@ $$
 
 $\alpha+\beta=-\mathrm{Kl}\_1$ 과 $\alpha\beta=p$ 로 $\alpha,\beta$ 를 정하면 확대체의 값이 $\mathrm{Kl}\_n=-(\alpha^n+\beta^n)$ 이다.
 
-$n=1$ 하나가 모든 확대체의 값을 결정하며, 이것이 $L$ 함수가 차수 $2$ 라는 유리성의 구체적 내용이다. $|\alpha|=|\beta|=\sqrt p$ 는 판별식 $\mathrm{Kl}\_1^2-4p<0$ 에서 나오고 Weil 한계와 같은 진술이다. $p=17$ 에서 최댓값 $7.96$ 이 한계 $8.246$ 에 가까우므로 이 상계는 최선에 가깝다.
+$n=1$ 하나가 모든 확대체의 값을 결정하며, 이것이 $L$ 함수가 차수 $2$ 라는 유리성의 구체적 내용이다. $|\alpha|=|\beta|=\sqrt p$ 는 판별식 $\mathrm{Kl}\_1^2-4p\lt 0$ 에서 나오고 Weil 한계와 같은 진술이다. $p=17$ 에서 최댓값 $7.96$ 이 한계 $8.246$ 에 가까우므로 이 상계는 최선에 가깝다.
 
 ## Dwork 이론이 쓰이는 자리
 

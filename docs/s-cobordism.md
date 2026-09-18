@@ -27,7 +27,7 @@ Whitney 트릭은 부호가 반대인 교차점 두 개를 없앤다. 두 교차
 원판은 2 차원이다. 일반위치에서 $n$ 차원 공간 안의 두 2 차원 조각이 만나지 않으려면
 
 $$
-2+2<n\quad\Longleftrightarrow\quad n\ge5
+2+2\lt n\quad\Longleftrightarrow\quad n\ge5
 $$
 
 여야 한다. 정리가 $\dim W\ge6$ , 곧 경계 쪽에서 $\dim M_i\ge5$ 를 요구하는 것이 이 조건 때문이다. 차원이 넉넉하면 원판을 흔들어 자기교차를 없앨 수 있고 좁으면 없앨 수 없다.

@@ -49,10 +49,10 @@ Itô 공식에서 $dL_t = -L_t\theta_t^{\mathsf T}dB_t$ 이므로 $L$ 은 국소
 $L$ 이 진짜 martingale 임을 보장하는 충분조건이다.
 
 $$
-\mathbb E_P\left[\exp\left(\frac12\int_0^T\lVert\theta_s\rVert^2\thinspace ds\right)\right]<\infty
+\mathbb E_P\left[\exp\left(\frac12\int_0^T\lVert\theta_s\rVert^2\thinspace ds\right)\right]\lt\infty
 $$
 
-이 조건에서 $\mathbb E_P[L_T] = 1$ 이므로 $dQ = L_T\thinspace dP$ 가 확률측도다. 조건이 없으면 $L$ 이 순수한 국소 martingale 이 되어 $\mathbb E_P[L_T] < 1$ 일 수 있고 $Q$ 의 전체 질량이 1 이 아니다.
+이 조건에서 $\mathbb E_P[L_T] = 1$ 이므로 $dQ = L_T\thinspace dP$ 가 확률측도다. 조건이 없으면 $L$ 이 순수한 국소 martingale 이 되어 $\mathbb E_P[L_T] \lt 1$ 일 수 있고 $Q$ 의 전체 질량이 1 이 아니다.
 
 ## 정리
 

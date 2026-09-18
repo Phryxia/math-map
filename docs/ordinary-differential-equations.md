@@ -67,7 +67,7 @@ $$
 정리는 국소적일 뿐이다. f가 전역적으로 매끄러워도 해가 유한 시간에 발산할 수 있다.
 
 $$
-x'=x^2,\quad x(0)=1\ \Longrightarrow\ x(t)=\frac{1}{1-t}\quad(t<1)
+x'=x^2,\quad x(0)=1\ \Longrightarrow\ x(t)=\frac{1}{1-t}\quad(t\lt 1)
 $$
 
 f가 x에 대해 전역 Lipschitz(특히 선형)이면 해는 모든 시간으로 확장된다.
@@ -111,7 +111,7 @@ $A$ 의 모든 고윳값의 실수부가 음수(hyperbolic sink)이면 평형점
 로지스틱 방정식은 변수분리로 풀린다.
 
 $$
-x'=r\thinspace x\thinspace(1-x),\qquad r>0
+x'=r\thinspace x\thinspace(1-x),\qquad r\gt 0
 $$
 
 평형점은 x=0과 x=1이다. 우변을 미분한 r(1−2x)를 평가하면 x=0에서 r>0이므로 불안정, x=1에서 −r<0이므로 점근 안정이다. 초기값이 0과 1 사이면 해는 다음과 같다.

@@ -100,7 +100,7 @@ n=dm,\qquad
 \sigma\ \text{는 }\mathrm{GL}_m\text{ 의 첨점 표현}
 $$
 
-$d=1$ 이 첨점 표현이고, $d>1$ 이면 잔여 스펙트럼의 Speh 표현이며, $m=1,d=n$ 이면 자명 표현이다. 이 목록이 전부라는 것이 Mœglin–Waldspurger 의 정리다.
+$d=1$ 이 첨점 표현이고, $d\gt 1$ 이면 잔여 스펙트럼의 Speh 표현이며, $m=1,d=n$ 이면 자명 표현이다. 이 목록이 전부라는 것이 Mœglin–Waldspurger 의 정리다.
 
 ## 고전군의 분류
 

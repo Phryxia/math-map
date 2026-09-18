@@ -49,7 +49,7 @@ graph LR
 
 ## Riemann zeta 함수
 
-$\mathrm{Re}\thinspace s>1$ 에서 다음 급수가 절대수렴한다.
+$\mathrm{Re}\thinspace s\gt 1$ 에서 다음 급수가 절대수렴한다.
 
 $$
 \zeta(s)=\sum_{n=1}^\infty\frac1{n^s}
@@ -67,7 +67,7 @@ $$
 
 $s=-2,-4,-6,\dots$ 에서 $\zeta$ 가 0 이 되고, 이 값들이 함수방정식의 사인 인자에서 나오는 자명한 0 점이다.
 
-나머지 0 점은 모두 임계띠 $0<\mathrm{Re}\thinspace s<1$ 안에 있는 비자명한 0 점이다. Riemann 가설은 이들이 전부 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 추측이다.
+나머지 0 점은 모두 임계띠 $0\lt\mathrm{Re}\thinspace s\lt 1$ 안에 있는 비자명한 0 점이다. Riemann 가설은 이들이 전부 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 추측이다.
 
 ## 소수 계수 함수들
 
@@ -91,7 +91,7 @@ $\mathrm{Li}(x)$ 는 $x/\ln x$ 보다 정확한 근사다. 부분적분으로 $\
 
 ## Euler 곱
 
-$\mathrm{Re}\thinspace s>1$ 에서 다음이 성립한다.
+$\mathrm{Re}\thinspace s\gt 1$ 에서 다음이 성립한다.
 
 $$
 \zeta(s)=\prod_p\big(1-p^{-s}\big)^{-1}
@@ -154,7 +154,7 @@ $$
 
 ## $\pi(x)$ 와 $\mathrm{Li}(x)$ 의 부호
 
-계산된 범위에서는 $\pi(x)<\mathrm{Li}(x)$ 이지만 Littlewood 는 차의 부호가 무한히 자주 바뀜을 증명했다. 처음 바뀌는 지점의 상계인 Skewes 수는 매우 크다.
+계산된 범위에서는 $\pi(x)\lt\mathrm{Li}(x)$ 이지만 Littlewood 는 차의 부호가 무한히 자주 바뀜을 증명했다. 처음 바뀌는 지점의 상계인 Skewes 수는 매우 크다.
 
 # 활용
 

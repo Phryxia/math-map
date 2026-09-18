@@ -19,14 +19,14 @@ $$
 반원법칙에 따르면 고윳값 밀도는 가장자리 $2\sqrt N$ 근처에서 제곱근으로 사라진다. 가장자리에서 거리 $\delta$ 안에 들어 있는 고윳값의 개수는 밀도를 적분해
 
 $$
-\char35{}\lbrace\lambda : \lambda > 2\sqrt N - \delta\rbrace \thickspace\sim\thickspace N\cdot\delta^{3/2}
+\char35{}\lbrace\lambda : \lambda \gt 2\sqrt N - \delta\rbrace \thickspace\sim\thickspace N\cdot\delta^{3/2}
 $$
 
 규모다. 이 개수가 1 이 되는 $\delta \sim N^{-2/3}$ 이 가장자리 고윳값들의 간격이고, 요동의 규모가 간격과 같으므로 $\lambda_{\max}$ 의 요동도 $N^{-2/3}$ 이다. 제곱근 밀도 하나에서 지수 $2/3$ 이 결정된다.
 
 ## 정규분포와의 차이
 
-고윳값들은 독립이 아니다. 결합밀도의 인자 $\prod_{i<j}\lvert\lambda_i - \lambda_j\rvert^{\beta}$ 가 고윳값을 서로 밀어낸다. 최대 고윳값이 위로 올라가려면 아래 고윳값들을 전부 밀어야 하고 아래로 내려가려면 스펙트럼 전체가 수축해야 하므로, 양쪽 꼬리가 정규분포보다 가볍고 좌우가 비대칭이다. 왼쪽이 $e^{-\lvert s\rvert^3/12}$ , 오른쪽이 $e^{-\frac43 s^{3/2}}$ 로 지수가 다르다.
+고윳값들은 독립이 아니다. 결합밀도의 인자 $\prod_{i\lt j}\lvert\lambda_i - \lambda_j\rvert^{\beta}$ 가 고윳값을 서로 밀어낸다. 최대 고윳값이 위로 올라가려면 아래 고윳값들을 전부 밀어야 하고 아래로 내려가려면 스펙트럼 전체가 수축해야 하므로, 양쪽 꼬리가 정규분포보다 가볍고 좌우가 비대칭이다. 왼쪽이 $e^{-\lvert s\rvert^3/12}$ , 오른쪽이 $e^{-\frac43 s^{3/2}}$ 로 지수가 다르다.
 
 ## 가장자리와 회전점
 

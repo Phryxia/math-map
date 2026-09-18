@@ -23,14 +23,14 @@
 실수 수열은 자연수를 정의역으로 하는 [함수](functions.md)이고 $n$ 번째 값을 $a_n$ 으로 쓴다. 실수 $L$ 에 대해 다음이 성립하면 수열이 $L$ 로 수렴한다.
 
 $$
-\forall\varepsilon>0\thickspace\exists N\in\mathbb N\thickspace\forall n\ge N:\ \lvert a_n-L\rvert<\varepsilon
+\forall\varepsilon\gt 0\thickspace\exists N\in\mathbb N\thickspace\forall n\ge N:\ \lvert a_n-L\rvert\lt\varepsilon
 $$
 
 $$
 \lim_{n\to\infty}a_n=L
 $$
 
-수렴하지 않으면 발산이라 하고, 그중 어떤 $M$ 에 대해서도 결국 $a_n > M$ 이 되는 경우를 $+\infty$ 로 발산한다고 한다.
+수렴하지 않으면 발산이라 하고, 그중 어떤 $M$ 에 대해서도 결국 $a_n \gt M$ 이 되는 경우를 $+\infty$ 로 발산한다고 한다.
 
 ## 상극한과 하극한
 
@@ -49,13 +49,13 @@ $$
 - **유일성.** 극한이 둘이면 오차를 두 값 거리의 $1/3$ 로 잡고 삼각부등식을 쓰면 모순이 나온다.
 
 $$
-\lvert L-M\rvert\le\lvert L-a_n\rvert+\lvert a_n-M\rvert<\tfrac23\lvert L-M\rvert
+\lvert L-M\rvert\le\lvert L-a_n\rvert+\lvert a_n-M\rvert\lt\tfrac23\lvert L-M\rvert
 $$
 
 - **유계성.** 수렴 수열은 유계다. 극한에서 거리 1 이내인 꼬리와 앞의 유한 개 항을 각각 제한한다.
 - **대수.** 수렴하는 두 수열의 합, 차, 곱은 각각의 극한의 합, 차, 곱으로 수렴하고, 분모의 극한이 0 이 아니면 몫도 수렴한다.
 - **짜내기.** $a_n \le b_n \le c_n$ 이고 양끝이 같은 값으로 수렴하면 가운데도 그 값으로 수렴한다.
-- **순서 보존.** $a_n \le b_n$ 이면 극한도 $\le$ 다. 강한 부등식은 극한에서 약해진다. $1/n > 0$ 이지만 극한은 0 이다.
+- **순서 보존.** $a_n \le b_n$ 이면 극한도 $\le$ 다. 강한 부등식은 극한에서 약해진다. $1/n \gt 0$ 이지만 극한은 0 이다.
 
 ## 완비성에 기대는 정리
 

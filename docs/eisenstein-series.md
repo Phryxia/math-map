@@ -28,7 +28,7 @@ $$
 E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\mathrm{Im}(\gamma z)^s
 $$
 
-가 $\mathrm{Re}(s)>1$ 에서 수렴한다. 정칙 쪽도 같은 구성이며 $1$ 을 $(cz+d)^{-k}$ 라는 자기형 인자로 평균 내면 $E_k$ 가 나온다.
+가 $\mathrm{Re}(s)\gt 1$ 에서 수렴한다. 정칙 쪽도 같은 구성이며 $1$ 을 $(cz+d)^{-k}$ 라는 자기형 인자로 평균 내면 $E_k$ 가 나온다.
 
 무엇을 평균 냈는지 알기 때문에 Fourier 계수를 끝까지 계산할 수 있다. 첨점형식은 평균의 잔재를 모두 뺀 나머지다.
 
@@ -130,7 +130,7 @@ E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\mathrm{Im}(\gamma z)^s
 =\frac12\sum_{\substack{(c,d)\in\mathbb Z^2\cr \gcd(c,d)=1}}\frac{y^s}{\lvert cz+d\rvert^{2s}}
 $$
 
-는 $\mathrm{Re}(s)>1$ 에서 절대수렴한다. 완비화는 $\xi(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 를 써서 $E^\ast(z,s)=\xi(2s)E(z,s)$ 다.
+는 $\mathrm{Re}(s)\gt 1$ 에서 절대수렴한다. 완비화는 $\xi(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 를 써서 $E^\ast(z,s)=\xi(2s)E(z,s)$ 다.
 
 $E(z,s)$ 는 $\Gamma$ 불변이고 $\Delta_{\mathbb H}E=s(1-s)E$ 를 만족하며 $L^2$ 에는 속하지 않는다.
 

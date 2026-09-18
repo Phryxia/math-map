@@ -97,7 +97,7 @@ $$
 앞쪽은 Heisenberg 대수의 Fock 공간(자유 보손), 뒤쪽은 격자의 군환이다. 격자벡터 $\alpha$ 에 대응하는 장이 정점작용소이고 구조 전체의 이름이 여기서 나왔다.
 
 $$
-Y(e^\alpha,z)=e^{\alpha}z^{\alpha_{(0)}}\exp\negthinspace\left(\sum_{k>0}\frac{\alpha_{(-k)}}{k}z^k\right)\exp\negthinspace\left(-\sum_{k>0}\frac{\alpha_{(k)}}{k}z^{-k}\right)
+Y(e^\alpha,z)=e^{\alpha}z^{\alpha_{(0)}}\exp\negthinspace\left(\sum_{k\gt 0}\frac{\alpha_{(-k)}}{k}z^k\right)\exp\negthinspace\left(-\sum_{k\gt 0}\frac{\alpha_{(k)}}{k}z^{-k}\right)
 $$
 
 지표는 [theta 급수](theta-functions.md)를 $\eta$ 의 거듭제곱으로 나눈 것이다.
@@ -125,7 +125,7 @@ $\mathfrak h$ 에서 오는 $n$ 차원 Cartan 부분대수와 최소벡터에서
 두 유한성 조건을 건다.
 
 - **유리성**: 모든 가군이 기약가군의 직합으로 완전분해된다.
-- **$C_2$ 여유한**: $C_2(V)=\mathrm{span}\lbrace a_{(-2)}b\rbrace$ 에 대해 $\dim V/C_2(V)<\infty$ 다.
+- **$C_2$ 여유한**: $C_2(V)=\mathrm{span}\lbrace a_{(-2)}b\rbrace$ 에 대해 $\dim V/C_2(V)\lt\infty$ 다.
 
 Zhu 정리는 이런 $V$ 의 기약가군 $M_1,\dots,M_r$ 의 지표들이 $\mathrm{SL}_2(\mathbb Z)$ 의 작용에 닫혀 있다고 말한다.
 

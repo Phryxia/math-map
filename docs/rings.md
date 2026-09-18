@@ -100,7 +100,7 @@ $$
 (x+y)^p=x^p+y^p
 $$
 
-가 성립한다. 이항계수 $\binom pk$ 가 $0<k<p$ 에서 $p$ 로 나누어지기 때문이다. 이 사상이 Frobenius 준동형이고 [유한체](finite-fields.md)와 [Galois 이론](galois-theory.md)에서 쓰인다.
+가 성립한다. 이항계수 $\binom pk$ 가 $0\lt k\lt p$ 에서 $p$ 로 나누어지기 때문이다. 이 사상이 Frobenius 준동형이고 [유한체](finite-fields.md)와 [Galois 이론](galois-theory.md)에서 쓰인다.
 
 ## 준동형과 아이디얼의 대응
 

@@ -35,7 +35,7 @@ $E$ 를 유한 집합, $I$ 를 $E$ 의 부분집합들의 모임이라 하자. �
 - 교환 공리:
 
 $$
-A,B\in I,\ |A|<|B|\ \Rightarrow\ \exists e\in B\setminus A:\ A\cup\lbrace e\rbrace\in I
+A,B\in I,\ |A|\lt |B|\ \Rightarrow\ \exists e\in B\setminus A:\ A\cup\lbrace e\rbrace\in I
 $$
 
 독립이 아닌 집합이 종속집합, 극소 종속집합이 순환이다.

@@ -73,7 +73,7 @@ $$
 
 ## Cantor 정리
 
-임의의 집합 $A$ 에 대해 $|A| < |\mathcal P(A)|$ 다.
+임의의 집합 $A$ 에 대해 $|A| \lt |\mathcal P(A)|$ 다.
 
 *증명.* 단사 $a \mapsto \lbrace a\rbrace$ 가 있으므로 $\le$ 이다. 전사 $f : A \to \mathcal P(A)$ 가 있다면
 

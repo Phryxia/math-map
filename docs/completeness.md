@@ -25,7 +25,7 @@ $\mathbb{R}$ 과 $(0,1)$ 은 위상동형이지만 하나만 완비다. $\mathbb
 거리 공간 $(X,d)$ 의 수열 $x_n$ 이 다음을 만족하면 **Cauchy 수열**이다.
 
 $$
-\forall\varepsilon>0\thickspace\exists N\in\mathbb N\thickspace\forall m,n\ge N:\ d(x_m,x_n)<\varepsilon
+\forall\varepsilon\gt 0\thickspace\exists N\in\mathbb N\thickspace\forall m,n\ge N:\ d(x_m,x_n)\lt\varepsilon
 $$
 
 수렴의 정의와 달리 극한 후보가 등장하지 않고 뒤쪽 항들끼리의 거리만 제한된다.
@@ -43,7 +43,7 @@ $X$ 안의 모든 Cauchy 수열이 $X$ 의 원소로 수렴하면 $X$ 는 **완�
 극한을 $p$ 라 하고 $m,n\ge N$ 에서 두 항을 모두 $p$ 로부터 $\varepsilon/2$ 이내로 잡으면
 
 $$
-d(x_m,x_n)\le d(x_m,p)+d(p,x_n)<\varepsilon
+d(x_m,x_n)\le d(x_m,p)+d(p,x_n)\lt\varepsilon
 $$
 
 이다. 역은 공간에 달려 있고, 역이 항상 성립하는 공간이 완비 공간이다.

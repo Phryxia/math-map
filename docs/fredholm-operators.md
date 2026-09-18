@@ -65,7 +65,7 @@ $$
 Hilbert 공간 사이의 [유계 작용소](bounded-operators.md) $T\colon H_1\to H_2$ 가 **Fredholm** 이라는 것은
 
 $$
-\dim\ker T<\infty,\qquad \dim\mathrm{coker}\thinspace T=\dim(H_2/\overline{\mathrm{ran}\thinspace T})<\infty
+\dim\ker T\lt\infty,\qquad \dim\mathrm{coker}\thinspace T=\dim(H_2/\overline{\mathrm{ran}\thinspace T})\lt\infty
 $$
 
 이고 상이 닫혀 있다는 뜻이다. 두 차원이 유한하면 상이 닫히므로 조건은 위의 두 개로 충분하다. **지표**를 $\mathrm{ind}(T)=\dim\ker T-\dim\mathrm{coker}\thinspace T\in\mathbb Z$ 로 정의한다.
@@ -120,7 +120,7 @@ Atiyah–Jänich 정리는 콤팩트 공간 $X$ 에서 $\mathcal F(H)$ 로 가�
 
 증명의 요지는 $T_aT_b-T_{ab}$ 가 콤팩트라는 사실이다. 기호의 곱과 작용소의 곱이 콤팩트 오차 안에서 같으므로 Calkin 대수에서 $a\mapsto\pi(T_a)$ 가 대수 준동형이다. $a$ 가 $0$ 을 지나지 않으면, 곧 $C(S^1)$ 에서 가역이면 $\pi(T_a)$ 가 가역이고 Atkinson 정리가 적용된다.
 
-$a(z)=z-c$ 에서 $T_a=S-c$ 의 핵은 $0$ 이고 여핵은 $\ker(S^\ast-\bar c)=\lbrace(x_0,\bar cx_0,\bar c^2x_0,\dots)\rbrace$ 이다. 이 수열이 $\ell^2$ 에 있으려면 $|c|<1$ 이어야 하므로 지표가 $|c|<1$ 에서 $-1$ , $|c|>1$ 에서 $0$ 이고, 감음수도 같은 값을 준다.
+$a(z)=z-c$ 에서 $T_a=S-c$ 의 핵은 $0$ 이고 여핵은 $\ker(S^\ast-\bar c)=\lbrace(x_0,\bar cx_0,\bar c^2x_0,\dots)\rbrace$ 이다. 이 수열이 $\ell^2$ 에 있으려면 $|c|\lt 1$ 이어야 하므로 지표가 $|c|\lt 1$ 에서 $-1$ , $|c|\gt 1$ 에서 $0$ 이고, 감음수도 같은 값을 준다.
 
 ## 지표 정리
 

@@ -65,7 +65,7 @@ graph TD
 $K$ 의 **모듈러스** $\mathfrak m$ 은 형식적인 곱 $\mathfrak m=\mathfrak m_0\mathfrak m_\infty$ 다. $\mathfrak m_0$ 는 $\mathcal O_K$ 의 0 이 아닌 아이디얼, $\mathfrak m_\infty$ 는 실매장들의 부분집합이다.
 
 - $I_K^{\mathfrak m}$ 은 $\mathfrak m_0$ 와 서로소인 소 아이디얼들이 생성하는 분수 아이디얼군이다.
-- $P_K^{\mathfrak m}$ 은 $\alpha\equiv1\ (\mathrm{mod}^\times\mathfrak m)$ 인 $\alpha$ 로 생성되는 주 아이디얼들이다. 곧 $\mathfrak m_0$ 의 각 소인수에서 $\alpha$ 가 1 과 충분히 합동이고 $\mathfrak m_\infty$ 의 각 실매장에서 $\sigma(\alpha)>0$ 이다.
+- $P_K^{\mathfrak m}$ 은 $\alpha\equiv1\ (\mathrm{mod}^\times\mathfrak m)$ 인 $\alpha$ 로 생성되는 주 아이디얼들이다. 곧 $\mathfrak m_0$ 의 각 소인수에서 $\alpha$ 가 1 과 충분히 합동이고 $\mathfrak m_\infty$ 의 각 실매장에서 $\sigma(\alpha)\gt 0$ 이다.
 
 **광선유군**은 그 몫이다.
 
@@ -176,7 +176,7 @@ $$
 
 ## $p=x^2+ny^2$ 의 판정
 
-$h=1$ 이면 합동조건으로 답이 나오지만 $h>1$ 이면 부족하고, 그 부분을 힐베르트 유체가 채운다.
+$h=1$ 이면 합동조건으로 답이 나오지만 $h\gt 1$ 이면 부족하고, 그 부분을 힐베르트 유체가 채운다.
 
 $K=\mathbb Q(\sqrt{-n})$ 이고 $p$ 가 $n$ 을 나누지 않는 홀소수이며 $\mathcal O_K=\mathbb Z[\sqrt{-n}]$ 이라 하면
 

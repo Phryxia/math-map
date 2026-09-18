@@ -72,7 +72,7 @@ $$
 \dim\ker L=\text{연결 성분 수}
 $$
 
-다. 고윳값을 $0 = \lambda_1 \le \lambda_2 \le \cdots \le \lambda_n$ 이라 하면 $\lambda_2 > 0$ 인 것과 그래프가 연결인 것이 동치다. $\lambda_2$ 가 **대수적 연결성** 또는 Fiedler 값이고, 그래프를 끊는 어려움을 잰다.
+다. 고윳값을 $0 = \lambda_1 \le \lambda_2 \le \cdots \le \lambda_n$ 이라 하면 $\lambda_2 \gt 0$ 인 것과 그래프가 연결인 것이 동치다. $\lambda_2$ 가 **대수적 연결성** 또는 Fiedler 값이고, 그래프를 끊는 어려움을 잰다.
 
 Cheeger 부등식은 이 값을 조합적 양과 연결한다. 컨덕턴스를 $h$ 라 하면
 

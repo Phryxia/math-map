@@ -75,7 +75,7 @@ von Neumann 의 정리가 자기수반 확장의 개수를 완전히 결정한�
 | 결손지수 | 자기수반 확장 |
 |---|---|
 | $n_+=n_-=0$ | 이미 본질적 자기수반, 유일 |
-| $n_+=n_-=n>0$ | $K_+$ 에서 $K_-$ 로 가는 유니터리만큼, 무한히 많음 |
+| $n_+=n_-=n\gt 0$ | $K_+$ 에서 $K_-$ 로 가는 유니터리만큼, 무한히 많음 |
 | $n_+\ne n_-$ | 없음 |
 
 # 성질
@@ -96,7 +96,7 @@ $\mathcal D_0$ 를 $[0,1]$ 에서 양 끝이 0 인 매끄러운 함수들이라 
 
 $$
 T=\int_{\mathbb R}\lambda\thinspace dE(\lambda),\qquad
-\mathcal D(T)=\Big\lbrace f:\int\lambda^2\thinspace d\langle E(\lambda)f,f\rangle<\infty\Big\rbrace
+\mathcal D(T)=\Big\lbrace f:\int\lambda^2\thinspace d\langle E(\lambda)f,f\rangle\lt\infty\Big\rbrace
 $$
 
 유계인 경우와 달리 정의역이 스펙트럼 측도로부터 결정된다. 동치인 형태로, 모든 자기수반 작용소는 어떤 측도공간 위에서 실함수를 곱하는 작용소와 유니터리 동치다. 대칭이지만 자기수반이 아닌 작용소에는 스펙트럼 측도가 없다.
@@ -117,7 +117,7 @@ $$
 
 ## Kato–Rellich 정리
 
-$T$ 가 자기수반이고 $V$ 가 대칭이며 상대적으로 유계, 즉 어떤 $a<1$ 과 $b$ 에 대해
+$T$ 가 자기수반이고 $V$ 가 대칭이며 상대적으로 유계, 즉 어떤 $a\lt 1$ 과 $b$ 에 대해
 
 $$
 \lVert Vf\rVert\le a\lVert Tf\rVert+b\lVert f\rVert

@@ -16,7 +16,7 @@ $$
 
 ## 느리게 변하는 매질 속의 파동
 
-$Q<0$ 인 영역에서 해는 파수 $k(x)=\sqrt{-Q(x)}/\epsilon$ 로 진동한다. 매질이 파장에 비해 느리게 변하면 파동이 국소적으로 평면파처럼 행동하고 위상은 $\int k\thinspace dx$ 로 누적된다. 흐르는 에너지가 보존되어 $k\cdot(\text{진폭})^2$ 이 일정해야 하므로 진폭이 $k^{-1/2}$ 이고, 이것이 앞인자 $Q^{-1/4}$ 의 내용이다.
+$Q\lt 0$ 인 영역에서 해는 파수 $k(x)=\sqrt{-Q(x)}/\epsilon$ 로 진동한다. 매질이 파장에 비해 느리게 변하면 파동이 국소적으로 평면파처럼 행동하고 위상은 $\int k\thinspace dx$ 로 누적된다. 흐르는 에너지가 보존되어 $k\cdot(\text{진폭})^2$ 이 일정해야 하므로 진폭이 $k^{-1/2}$ 이고, 이것이 앞인자 $Q^{-1/4}$ 의 내용이다.
 
 ## 회전점에서의 파탄
 
@@ -52,7 +52,7 @@ $$
 y_{\pm}(x) \thickspace\sim\thickspace \frac{1}{Q(x)^{1/4}}\exp\left(\pm\frac{1}{\epsilon}\int^{x}\sqrt{Q(t)}\thinspace dt\right)
 $$
 
-$Q<0$ 인 영역에서는 지수가 순허수가 되어 $\lvert Q\rvert^{-1/4}\cos$ 와 $\lvert Q\rvert^{-1/4}\sin$ 꼴의 진동해가 된다.
+$Q\lt 0$ 인 영역에서는 지수가 순허수가 되어 $\lvert Q\rvert^{-1/4}\cos$ 와 $\lvert Q\rvert^{-1/4}\sin$ 꼴의 진동해가 된다.
 
 ## 타당성 조건
 
@@ -66,9 +66,9 @@ $$
 
 ## 회전점과 연결 공식
 
-$Q(x_0)=0$ 이고 $Q'(x_0)>0$ 인 단순 회전점에서 $Q(x)\approx Q'(x_0)(x-x_0)$ 로 근사하면 방정식이 Airy 방정식이 된다. $\mathrm{Ai}$ 의 두 방향 점근을 양쪽 WKB 해에 맞추면 다음 규칙을 얻는다. $\phi(x)=\epsilon^{-1}\bigl\lvert\int_{x_0}^{x}\sqrt{\lvert Q\rvert}\thinspace dt\bigr\rvert$ 로 둔다.
+$Q(x_0)=0$ 이고 $Q'(x_0)\gt 0$ 인 단순 회전점에서 $Q(x)\approx Q'(x_0)(x-x_0)$ 로 근사하면 방정식이 Airy 방정식이 된다. $\mathrm{Ai}$ 의 두 방향 점근을 양쪽 WKB 해에 맞추면 다음 규칙을 얻는다. $\phi(x)=\epsilon^{-1}\bigl\lvert\int_{x_0}^{x}\sqrt{\lvert Q\rvert}\thinspace dt\bigr\rvert$ 로 둔다.
 
-| 감쇠 영역 $Q>0$ | ↔ | 진동 영역 $Q<0$ |
+| 감쇠 영역 $Q\gt 0$ | ↔ | 진동 영역 $Q\lt 0$ |
 |---|---|---|
 | $\dfrac{1}{2Q^{1/4}}e^{-\phi}$ | ↔ | $\dfrac{1}{\lvert Q\rvert^{1/4}}\cos\left(\phi - \dfrac{\pi}{4}\right)$ |
 | $\dfrac{1}{Q^{1/4}}e^{+\phi}$ | ↔ | $\dfrac{-1}{\lvert Q\rvert^{1/4}}\sin\left(\phi - \dfrac{\pi}{4}\right)$ |
@@ -85,7 +85,7 @@ WKB 해 두 개는 [Stokes 현상](stokes-phenomenon.md)의 두 지수항 $e^{\p
 
 ## Bohr–Sommerfeld 양자화
 
-$Q(x)=\tfrac{2m}{\hbar^2}\bigl(V(x)-E\bigr)$ 로 두고 $\epsilon=\hbar$ 로 보면 정상상태 Schrödinger 방정식이 된다. 두 회전점 $a<b$ 사이에 파동이 갇힌 경우 양쪽에서 연결 공식을 적용해 같은 해가 되도록 요구하면 다음을 얻는다.
+$Q(x)=\tfrac{2m}{\hbar^2}\bigl(V(x)-E\bigr)$ 로 두고 $\epsilon=\hbar$ 로 보면 정상상태 Schrödinger 방정식이 된다. 두 회전점 $a\lt b$ 사이에 파동이 갇힌 경우 양쪽에서 연결 공식을 적용해 같은 해가 되도록 요구하면 다음을 얻는다.
 
 $$
 \frac{1}{\hbar}\int_{a}^{b}\sqrt{2m\bigl(E - V(x)\bigr)}\thickspace dx \thickspace=\thickspace \pi\left(n + \frac12\right), \qquad n = 0, 1, 2, \dots
@@ -135,7 +135,7 @@ $$
 
 ## 장벽 투과
 
-$V>E$ 인 영역을 통과하는 확률은 감쇠해의 감쇠량으로 결정된다.
+$V\gt E$ 인 영역을 통과하는 확률은 감쇠해의 감쇠량으로 결정된다.
 
 $$
 T \thickspace\approx\thickspace \exp\left(-\frac{2}{\hbar}\int_{a}^{b}\sqrt{2m\bigl(V(x) - E\bigr)}\thickspace dx\right)

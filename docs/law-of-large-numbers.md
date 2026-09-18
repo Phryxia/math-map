@@ -38,7 +38,7 @@ $$
 확률수렴(convergence in probability):
 
 $$
-\forall \varepsilon>0:\quad \lim_{n\to\infty}P\big(|Y_n-Y|>\varepsilon\big)=0
+\forall \varepsilon\gt 0:\quad \lim_{n\to\infty}P\big(|Y_n-Y|\gt\varepsilon\big)=0
 $$
 
 거의 확실한 수렴(almost sure convergence):
@@ -91,7 +91,7 @@ $$
 
 $$
 \mathbb E\big[(\overline X_n-\mu)^4\big]=O\negthinspace\left(\frac1{n^2}\right),\qquad
-\sum_{n\ge1}P\big(|\overline X_n-\mu|>\varepsilon\big)\le\sum_{n\ge1}\frac{O(n^{-2})}{\varepsilon^4}<\infty
+\sum_{n\ge1}P\big(|\overline X_n-\mu|\gt\varepsilon\big)\le\sum_{n\ge1}\frac{O(n^{-2})}{\varepsilon^4}\lt\infty
 $$
 
 급수가 수렴하므로 Borel–Cantelli 보조정리에 의해 편차 사건이 무한히 자주 일어날 확률이 0 이고 거의 확실한 수렴을 얻는다. 절댓값의 기댓값만 유한한 일반적인 경우는 절단과 Kolmogorov 의 최대부등식, 또는 역마팅게일 수렴 정리를 쓴다[^2].

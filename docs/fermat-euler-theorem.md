@@ -137,7 +137,7 @@ $$
 $n$ 이 홀수 소수이면 $\mathbb Z/n$ 이 체라 1 의 제곱근이 $\pm1$ 뿐이라는 사실을 더 쓴다. 다음 중 하나가 성립해야 한다.
 
 $$
-a^{q}\equiv 1,\qquad\text{또는}\qquad \exists\thinspace 0\le i<s:\ a^{2^{i}q}\equiv -1 \pmod n
+a^{q}\equiv 1,\qquad\text{또는}\qquad \exists\thinspace 0\le i\lt s:\ a^{2^{i}q}\equiv -1 \pmod n
 $$
 
 합성수 $n$ 에 대해 이를 통과하는 밑(strong liar)은 최대 $1/4$ 이므로, 독립으로 $k$ 회 반복하면 오류 확률이 $4^{-k}$ 이하다[^3].

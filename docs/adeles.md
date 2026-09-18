@@ -122,10 +122,10 @@ $$
 
 이 문장은 두 고전 정리와 동치다. 콤팩트성을 유한 자리 쪽으로 밀면 **유수의 유한성**이, 아르키메데스 자리 쪽으로 밀면 **Dirichlet 단원 정리**가 나온다.
 
-$|\cdot|\_{\mathbb A}\colon C_K\to\mathbb R_{>0}$ 의 핵이 이 콤팩트군이므로 구조는 다음과 같다.
+$|\cdot|\_{\mathbb A}\colon C_K\to\mathbb R_{\gt 0}$ 의 핵이 이 콤팩트군이므로 구조는 다음과 같다.
 
 $$
-C_K\cong\mathbb R_{>0}\times C_K^1,\qquad C_K^1 \text{ 콤팩트}
+C_K\cong\mathbb R_{\gt 0}\times C_K^1,\qquad C_K^1 \text{ 콤팩트}
 $$
 
 ## 강근사

@@ -86,9 +86,9 @@ $$
 \Lambda(x)=\frac{f_1(x)}{f_0(x)},
 \qquad
 \varphi(x)=\begin{cases}
-1, & \Lambda(x)>k\cr
+1, & \Lambda(x)\gt k\cr
 \gamma, & \Lambda(x)=k\cr
-0, & \Lambda(x)<k
+0, & \Lambda(x)\lt k
 \end{cases}
 $$
 
@@ -100,7 +100,7 @@ $$
 \int \big(\varphi(x)-\psi(x)\big)\big(f_1(x)-k f_0(x)\big)\thinspace dx\ \ge\ 0
 $$
 
-$\Lambda(x)>k$ 인 곳에서는 $\varphi=1$ 이라 첫 인자가 음이 아니고 둘째 인자가 양수이며, $\Lambda(x)<k$ 인 곳에서는 두 인자의 부호가 모두 뒤집혀 피적분함수가 항상 음이 아니다. 전개하면 $\varphi$ 의 검정력에서 $\psi$ 의 검정력을 뺀 값이 $k$ 배의 크기 차이 이상이고, $\psi$ 의 크기가 $\alpha$ 이하이므로 그 차이가 음이 아니다.
+$\Lambda(x)\gt k$ 인 곳에서는 $\varphi=1$ 이라 첫 인자가 음이 아니고 둘째 인자가 양수이며, $\Lambda(x)\lt k$ 인 곳에서는 두 인자의 부호가 모두 뒤집혀 피적분함수가 항상 음이 아니다. 전개하면 $\varphi$ 의 검정력에서 $\psi$ 의 검정력을 뺀 값이 $k$ 배의 크기 차이 이상이고, $\psi$ 의 크기가 $\alpha$ 이하이므로 그 차이가 음이 아니다.
 
 복합가설에는 그대로 확장되지 않는다. 최적 기각역이 대립가설의 어느 점을 보느냐에 따라 달라지기 때문이다. 단조가능도비를 갖는 모형족에서는 단측검정에 대해 균등최강력(UMP) 검정이 존재한다. 일반적인 경우에는 [최대가능도 추정](maximum-likelihood.md)을 이용한 가능도비 검정을 쓰고, Wilks 정리가 그 통계량의 점근분포를 카이제곱으로 준다.
 

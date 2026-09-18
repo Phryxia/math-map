@@ -44,7 +44,7 @@ $$f(z)=z^m e^{g(z)}\prod_{n\ge1}E_{p_n}\left(\frac z{a_n}\right)$$
 
 $f$ 의 위수 $\rho$ 가 유한하면 위 표현에서 $g$ 는 차수 $\le\rho$ 의 다항식이고, 모든 $p_n$ 을 $p=\lfloor\rho\rfloor$ 하나로 잡을 수 있다[^1].
 
-영점의 분포도 위수가 통제한다. $n(r)$ 을 $\vert z\vert\le r$ 안 영점의 개수라 하면 Jensen 공식에서 $n(r)=O(r^{\rho+\varepsilon})$ 이 나오고, $\sum_n\vert a_n\vert^{-s}$ 는 $s>\rho$ 에서 수렴한다.
+영점의 분포도 위수가 통제한다. $n(r)$ 을 $\vert z\vert\le r$ 안 영점의 개수라 하면 Jensen 공식에서 $n(r)=O(r^{\rho+\varepsilon})$ 이 나오고, $\sum_n\vert a_n\vert^{-s}$ 는 $s\gt\rho$ 에서 수렴한다.
 
 ## Mittag-Leffler 정리
 

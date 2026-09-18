@@ -12,7 +12,7 @@
 
 동전 더미의 총액을 구할 때 Riemann 은 왼쪽부터 순서대로 집어 액면가를 더하고, Lebesgue 는 액면가별로 쌓아 각 더미의 개수에 액면가를 곱해 더한다. 두 방법의 답은 같지만 동전의 순서가 엉망일수록 두 번째가 안정적이다.
 
-함수가 심하게 진동해도 $\lbrace x:f(x)>c\rbrace$ 의 측도만 알면 적분이 정의된다.
+함수가 심하게 진동해도 $\lbrace x:f(x)\gt c\rbrace$ 의 측도만 알면 적분이 정의된다.
 
 ## 단순함수의 상한
 
@@ -56,7 +56,7 @@ $$
 \int_X f\thinspace d\mu=\int_X f^+\thinspace d\mu-\int_X f^-\thinspace d\mu
 $$
 
-로 정한다. 두 항이 모두 무한대면 정의되지 않는다. $\int \lvert f \rvert\thinspace d\mu < \infty$ 이면 $f$ 가 **적분 가능**하고, 그런 함수들의 모임이 $L^1(\mu)$ 다. 가측집합 $E$ 위의 적분은 $\int f \cdot \mathbf{1}_E\thinspace d\mu$ 다.
+로 정한다. 두 항이 모두 무한대면 정의되지 않는다. $\int \lvert f \rvert\thinspace d\mu \lt\infty$ 이면 $f$ 가 **적분 가능**하고, 그런 함수들의 모임이 $L^1(\mu)$ 다. 가측집합 $E$ 위의 적분은 $\int f \cdot \mathbf{1}_E\thinspace d\mu$ 다.
 
 ## 거의 어디서나
 

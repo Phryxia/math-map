@@ -53,7 +53,7 @@ Gauss 과정의 유한 선형결합, 적분, 미분(존재하면)은 다시 Gaus
 
 ## 경로의 연속성
 
-핵만으로 표본경로의 연속성이 보장되지는 않는다. Kolmogorov 연속성 판정이 충분조건을 준다. 어떤 $\alpha,\beta,C>0$ 에 대해 $\mathbb E[|X_s-X_t|^\alpha]\le C|s-t|^{1+\beta}$ 이면 연속인 판본이 존재한다. Brown 운동의 연속성이 이 판정의 표준 예다.
+핵만으로 표본경로의 연속성이 보장되지는 않는다. Kolmogorov 연속성 판정이 충분조건을 준다. 어떤 $\alpha,\beta,C\gt 0$ 에 대해 $\mathbb E[|X_s-X_t|^\alpha]\le C|s-t|^{1+\beta}$ 이면 연속인 판본이 존재한다. Brown 운동의 연속성이 이 판정의 표준 예다.
 
 # 활용
 

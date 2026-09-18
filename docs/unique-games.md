@@ -12,7 +12,7 @@
 Khot 은 2002 년에 하나의 문제를 난해하다고 가정하면 이 간극이 닫힌다고 제안했다.[^1] 그 문제가 **유일게임**(unique games)이다.
 
 $$
-\textbf{UGC:}\quad \text{임의의 }\varepsilon>0\text{ 에 대해 }k\text{ 가 있어, 라벨 }k\text{ 개인 유일게임에서}
+\textbf{UGC:}\quad \text{임의의 }\varepsilon\gt 0\text{ 에 대해 }k\text{ 가 있어, 라벨 }k\text{ 개인 유일게임에서}
 $$
 $$
 \text{"}1-\varepsilon\text{ 이상 만족 가능" 과 "}\varepsilon\text{ 이하만 만족 가능" 을 구별하는 것이 }\mathrm{NP}\text{-난해}
@@ -79,7 +79,7 @@ $0.878567$ 과 $0.941176$ 사이가 비어 있고, UGC 가 참이면 아래쪽 �
 
 ## 추측의 진술
 
-**유일게임 추측.** 모든 $\varepsilon>0$ 에 대해 $k=k(\varepsilon)$ 이 존재해, 라벨 크기 $k$ 의 유일게임 사례에서 $\mathrm{opt}\ge1-\varepsilon$ 인 경우와 $\mathrm{opt}\le\varepsilon$ 인 경우를 구별하는 문제가 $\mathrm{NP}$ 난해다.
+**유일게임 추측.** 모든 $\varepsilon\gt 0$ 에 대해 $k=k(\varepsilon)$ 이 존재해, 라벨 크기 $k$ 의 유일게임 사례에서 $\mathrm{opt}\ge1-\varepsilon$ 인 경우와 $\mathrm{opt}\le\varepsilon$ 인 경우를 구별하는 문제가 $\mathrm{NP}$ 난해다.
 
 완전성 $1-\varepsilon$ 이 $1$ 에 가깝다는 점이 결정적이다. PCP 정리의 표준 형태는 완전성 $1$ 에서 출발하지만 유일게임에서 완전성 $1$ 인 경우는 다항시간에 풀리므로, $1-\varepsilon$ 이라는 위치가 필요하다.
 

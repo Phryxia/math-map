@@ -62,7 +62,7 @@ $\pi$ 를 비분기 기약 허용가능 표현이라 하고 그 Satake 매개변
 $\pi$ 의 Whittaker 모형에서 $K$ 불변 벡터에 대응하는 함수를 $W^\circ$ 라 하고 $W^\circ(1)=1$ 로 정규화한다. 모듈러스 지표는 다음과 같다.
 
 $$
-\delta_B(\varpi^\lambda)=\prod_{i<j}q^{-(\lambda_i-\lambda_j)}
+\delta_B(\varpi^\lambda)=\prod_{i\lt j}q^{-(\lambda_i-\lambda_j)}
 $$
 
 ## 공식
@@ -76,7 +76,7 @@ $$
 > \end{cases}
 > $$
 
-$s_\lambda$ 는 Schur 다항식이고 $\lambda_n<0$ 이어도 무방하다. $\det$ 로 나누는 정의가 Laurent 다항식을 준다.
+$s_\lambda$ 는 Schur 다항식이고 $\lambda_n\lt 0$ 이어도 무방하다. $\det$ 로 나누는 정의가 Laurent 다항식을 준다.
 
 $n=2$ 이고 $\lambda=(m,0)$ 이면 $\delta_B^{1/2}=q^{-m/2}$ 이고
 

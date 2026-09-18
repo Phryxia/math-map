@@ -46,7 +46,7 @@ $$
 =\int_{\Gamma_\infty\backslash\mathbb H}F(z)\thinspace y^s\thinspace d\mu
 $$
 
-가 된다. 합이 영역을 넓히는 데 쓰이고 사라진다. $\Gamma_\infty$ 를 $z\mapsto z+1$ 이 생성하므로 오른쪽 영역은 $0\le x<1$ , $y>0$ 인 띠이고, $x$ 적분에는 Fourier 계수의 직교성
+가 된다. 합이 영역을 넓히는 데 쓰이고 사라진다. $\Gamma_\infty$ 를 $z\mapsto z+1$ 이 생성하므로 오른쪽 영역은 $0\le x\lt 1$ , $y\gt 0$ 인 띠이고, $x$ 적분에는 Fourier 계수의 직교성
 
 $$
 \int_0^1e^{2\pi i(n-m)x}\thinspace dx=\delta_{nm}
@@ -111,7 +111,7 @@ E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\mathrm{SL}_2(\mathbb Z)}\mathrm{Im
 =\tfrac12\sum_{\gcd(c,d)=1}\frac{y^s}{\lvert cz+d\rvert^{2s}}
 $$
 
-이고 $\mathrm{Re}(s)>1$ 에서 수렴한다. $k=l$ 일 때 **Rankin–Selberg 적분**은
+이고 $\mathrm{Re}(s)\gt 1$ 에서 수렴한다. $k=l$ 일 때 **Rankin–Selberg 적분**은
 
 $$
 I(s)=\int_{\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H}f(z)\overline{g(z)}\thinspace y^{k}E(z,s)\thinspace\frac{dx\thinspace dy}{y^2}
@@ -132,7 +132,7 @@ $$
 
 ## $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 적분
 
-$m<n$ 이고 $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}\_n(\mathbb A)$ 와 $\mathrm{GL}\_m(\mathbb A)$ 의 첨점 표현이라 하자. $m=n-1$ 이면
+$m\lt n$ 이고 $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}\_n(\mathbb A)$ 와 $\mathrm{GL}\_m(\mathbb A)$ 의 첨점 표현이라 하자. $m=n-1$ 이면
 
 $$
 \Psi(s,W,W')=\int_{N_m(\mathbb A)\backslash\mathrm{GL}_m(\mathbb A)}
@@ -140,7 +140,7 @@ W\negthinspace\left(\begin{pmatrix}g&\cr&1\end{pmatrix}\right)W'(g)\thinspace
 \lvert\det g\rvert^{\thinspace s-\frac12}\thinspace dg
 $$
 
-이고 $m<n-1$ 이면 가운데에 멱단 적분이 더 붙는다.
+이고 $m\lt n-1$ 이면 가운데에 멱단 적분이 더 붙는다.
 
 $m=n$ 일 때는 Eisenstein 급수가 필요하다. Schwartz 함수 $\Phi\in\mathcal S(\mathbb A^n)$ 에서 만든 Eisenstein 급수 $E(g,s;\Phi)$ 에 대해
 
@@ -175,7 +175,7 @@ $$
 
 - **강한 중복도 1.** 거의 모든 자리에서 $\pi_v\cong\pi'\_v$ 이면 $\pi\cong\pi'$ 다. $L(s,\pi\times\tilde\pi')$ 의 극을 보면 된다.
 - **$\mathrm{Re}(s)=1$ 비소멸.** $L(1+it,\pi)\ne0$ 이다. $\pi\times\tilde\pi$ 의 $L$ 함수가 계수가 음이 아니고 $s=1$ 에 극을 가진다는 사실을 [소수 정리](prime-number-theorem.md)의 $\zeta$ 논법과 똑같이 쓴다.
-- **Ramanujan 형 추정.** $L(s,\pi\times\tilde\pi)$ 가 $\mathrm{Re}(s)>1$ 에서 수렴한다는 사실만으로 Satake 매개변수가 $\lvert\alpha_i\rvert<q^{1/2}$ 로 갇힌다(Jacquet–Shalika). 더 정교한 논법이 $\lvert\alpha_i\rvert\le q^{1/2-1/(n^2+1)}$ 를 준다(Luo–Rudnick–Sarnak). 추측이 요구하는 $\lvert\alpha_i\rvert=1$ 에는 미치지 못한다.
+- **Ramanujan 형 추정.** $L(s,\pi\times\tilde\pi)$ 가 $\mathrm{Re}(s)\gt 1$ 에서 수렴한다는 사실만으로 Satake 매개변수가 $\lvert\alpha_i\rvert\lt q^{1/2}$ 로 갇힌다(Jacquet–Shalika). 더 정교한 논법이 $\lvert\alpha_i\rvert\le q^{1/2-1/(n^2+1)}$ 를 준다(Luo–Rudnick–Sarnak). 추측이 요구하는 $\lvert\alpha_i\rvert=1$ 에는 미치지 못한다.
 
 ## 계수의 합과 $L$ 함수의 차이
 

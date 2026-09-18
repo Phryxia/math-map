@@ -31,7 +31,7 @@ $$
 분포를 다항식 위의 값만 기억하도록 자를 때 버려지는 부분, 곧 차수 $k-1$ 이상의 모멘트들에는 $U_p$ 가 $p^{k-1}$ 이상의 인자를 달고 작용한다. 특수화의 핵과 여핵 위에서 $U_p$ 의 기울기가 항상 $\ge k-1$ 이다.
 
 $$
-h<k-1\ \Longrightarrow\ \rho:\ \mathrm{Symb}_\Gamma(\mathcal D_k)^{\le h}\ \xrightarrow{\ \sim\ }\ \mathrm{Symb}_\Gamma(V_{k-2})^{\le h}
+h\lt k-1\ \Longrightarrow\ \rho:\ \mathrm{Symb}_\Gamma(\mathcal D_k)^{\le h}\ \xrightarrow{\ \sim\ }\ \mathrm{Symb}_\Gamma(V_{k-2})^{\le h}
 $$
 
 기울기가 작은 쪽에서는 잘려 나간 부분이 $U_p$ 에 짓눌려 보이지 않는다. $h=0$ 인 순종(ordinary) 경우가 Hida 이론의 조절 정리이고 Stevens 의 판본이 그것을 유한 기울기로 넓힌 것이다.
@@ -84,7 +84,7 @@ $D=V_{k-2}$ 면 고전 모듈러 기호, $D=\mathcal D_k$ 면 **과수렴 모듈
 
 $V_{k-2}\subset\mathcal A_k$ 이므로 쌍대로 $\mathcal D_k\twoheadrightarrow V_{k-2}^\vee\cong V_{k-2}$ 가 있고 이를 계수에 적용한 것이 $\rho$ 다.
 
-> **조절 정리 (Stevens).** $h<k-1$ 이면 $\rho$ 는 기울기 $\le h$ 부분공간 사이의 동형이다.
+> **조절 정리 (Stevens).** $h\lt k-1$ 이면 $\rho$ 는 기울기 $\le h$ 부분공간 사이의 동형이다.
 
 ## $p$ 진 $L$ 함수
 
@@ -106,7 +106,7 @@ $$
 
 ## 임계 기울기
 
-$h<k-1$ 은 버릴 수 없는 조건이다. $h=k-1$ 인 임계 기울기에서는 $\rho$ 가 동형이 아니고 올림이 유일하지 않다. 이 자리에 사는 것이 **임계 $p$ 안정화**이며 Pollack–Stevens 와 Bellaïche 가 그 경우에도 올림을 고르는 방법을 마련했다. 무게 2 의 순종 곡선은 $h=0<1=k-1$ 이라 조건을 여유 있게 만족한다.
+$h\lt k-1$ 은 버릴 수 없는 조건이다. $h=k-1$ 인 임계 기울기에서는 $\rho$ 가 동형이 아니고 올림이 유일하지 않다. 이 자리에 사는 것이 **임계 $p$ 안정화**이며 Pollack–Stevens 와 Bellaïche 가 그 경우에도 올림을 고르는 방법을 마련했다. 무게 2 의 순종 곡선은 $h=0\lt 1=k-1$ 이라 조건을 여유 있게 만족한다.
 
 ## Iwasawa 불변량
 

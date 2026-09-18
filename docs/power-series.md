@@ -16,7 +16,7 @@ $$
 
 멱급수의 부분합은 중심 $c$ 에서 차수를 올려 가는 다항식 근사다. 0차 근사는 함숫값, 1차 근사는 접선, 2차 근사는 곡률까지 맞춘 포물선이다. 차수를 올릴수록 중심 근처에서 오차가 빠르게 줄어든다.
 
-수렴반경은 기하적인 양이다. $1/(1+x^2)$ 은 실직선 전체에서 매끄럽고 특이점이 없는데도 $\vert x\vert<1$ 에서만 수렴한다. 복소평면에서는 분모가 0 이 되는 점이 $i$ 와 $-i$ 이고 중심에서 그 거리가 1 이다. 멱급수는 중심에서 가장 가까운 특이점까지의 원판에서 수렴한다.
+수렴반경은 기하적인 양이다. $1/(1+x^2)$ 은 실직선 전체에서 매끄럽고 특이점이 없는데도 $\vert x\vert\lt 1$ 에서만 수렴한다. 복소평면에서는 분모가 0 이 되는 점이 $i$ 와 $-i$ 이고 중심에서 그 거리가 1 이다. 멱급수는 중심에서 가장 가까운 특이점까지의 원판에서 수렴한다.
 
 # 정의
 
@@ -34,7 +34,7 @@ $$
 R = \lim_{n \to \infty} \left\vert \frac{a_n}{a_{n+1}} \right\vert \quad (\text{극한이 존재할 때}) .
 $$
 
-$\vert x-c\vert<R$ 이면 급수는 절대수렴하고, $\vert x-c\vert>R$ 이면 발산한다. 경계 $\vert x-c\vert=R$ 에서의 거동은 점마다 다르다. $\sum x^n/n^2$ 은 $R=1$ 이고 경계 전체에서 수렴, $\sum x^n$ 은 경계 전체에서 발산, $\sum x^n/n$ 은 $x=-1$ 에서 수렴하고 $x=1$ 에서 발산한다.
+$\vert x-c\vert\lt R$ 이면 급수는 절대수렴하고, $\vert x-c\vert\gt R$ 이면 발산한다. 경계 $\vert x-c\vert=R$ 에서의 거동은 점마다 다르다. $\sum x^n/n^2$ 은 $R=1$ 이고 경계 전체에서 수렴, $\sum x^n$ 은 경계 전체에서 발산, $\sum x^n/n$ 은 $x=-1$ 에서 수렴하고 $x=1$ 에서 발산한다.
 
 ## Taylor 급수
 
@@ -84,15 +84,15 @@ $$
 
 ## 수렴원 내부의 균등수렴
 
-**정리.** 수렴반경이 $R$ 인 멱급수는 임의의 $r<R$ 에 대해 $\vert x-c\vert\le r$ 위에서 [균등수렴](uniform-convergence.md)한다.
+**정리.** 수렴반경이 $R$ 인 멱급수는 임의의 $r\lt R$ 에 대해 $\vert x-c\vert\le r$ 위에서 [균등수렴](uniform-convergence.md)한다.
 
-**증명 스케치.** $r<\rho<R$ 인 $\rho$ 를 잡으면 $\vert a_n\vert\rho^n$ 이 유계이므로 $\vert a_n\vert r^n\le M(r/\rho)^n$ 이고, 우변은 등비급수라 수렴한다. Weierstrass M-test 가 균등수렴을 준다.
+**증명 스케치.** $r\lt\rho\lt R$ 인 $\rho$ 를 잡으면 $\vert a_n\vert\rho^n$ 이 유계이므로 $\vert a_n\vert r^n\le M(r/\rho)^n$ 이고, 우변은 등비급수라 수렴한다. Weierstrass M-test 가 균등수렴을 준다.
 
 수렴원 전체에서는 균등수렴하지 않는다. $\sum x^n$ 이 $(-1,1)$ 에서 균등수렴하지 않는 것이 그 예다. 콤팩트 부분집합마다 균등수렴하는 이 성질을 **국소균등수렴**(locally uniform convergence)이라 한다. 균등수렴이 [연속성](continuity.md)을 보존하므로 멱급수의 합은 수렴원 내부에서 연속이다.
 
 ## 항별 미분과 적분
 
-**정리.** 수렴반경 $R$ 인 멱급수의 합을 $f$ 라 하면, $f$ 는 $\vert x-c\vert<R$ 에서 무한번 미분가능하고
+**정리.** 수렴반경 $R$ 인 멱급수의 합을 $f$ 라 하면, $f$ 는 $\vert x-c\vert\lt R$ 에서 무한번 미분가능하고
 
 $$
 f'(x) = \sum_{n=1}^{\infty} n \thinspace a_n (x - c)^{n-1}, \qquad \int_c^x f(t) \thinspace dt = \sum_{n=0}^{\infty} \frac{a_n}{n+1} (x - c)^{n+1} ,

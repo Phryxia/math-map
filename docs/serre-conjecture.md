@@ -95,7 +95,7 @@ N(\bar\rho)=\prod_{\ell\ne p}\ell^{\thinspace n_\ell},\qquad
 n_\ell=\sum_{i\ge0}\frac{|G_i|}{|G_0|}\dim\bigl(V/V^{G_i}\bigr)
 $$
 
-$G_i$ 는 $\ell$ 에서의 상위 분기군, $V=\overline{\mathbb F}\_p^2$ 다. 무게는 $\bar\rho|_{I_p}$ 로 정한다. $p>2$ 인 온순한 경우를 예로 들면, 관성군의 작용이 $\chi^a\oplus\chi^b$ 로 분해되고(여기서 $0\le a<b\le p-2$ 이고 $\chi$ 는 mod $p$ 순환지표다) 표현이 $I_p$ 에서 분해되면
+$G_i$ 는 $\ell$ 에서의 상위 분기군, $V=\overline{\mathbb F}\_p^2$ 다. 무게는 $\bar\rho|_{I_p}$ 로 정한다. $p\gt 2$ 인 온순한 경우를 예로 들면, 관성군의 작용이 $\chi^a\oplus\chi^b$ 로 분해되고(여기서 $0\le a\lt b\le p-2$ 이고 $\chi$ 는 mod $p$ 순환지표다) 표현이 $I_p$ 에서 분해되면
 
 $$
 k(\bar\rho)=1+pa+b
@@ -105,7 +105,7 @@ $$
 
 ## Ribet 의 정리
 
-**정리(Ribet, 1990).** $p>2$ 에서 약한 형태와 강한 형태는 동치다.
+**정리(Ribet, 1990).** $p\gt 2$ 에서 약한 형태와 강한 형태는 동치다.
 
 증명은 모듈러 표현이 주어졌을 때 레벨과 무게를 실제로 최소값까지 **내리는** 것이다. 레벨 낮추기가 이른바 $\varepsilon$ -추측이고, 이것이 Frey 곡선과 Fermat 의 마지막 정리를 잇는 다리가 되었다. 그러므로 $\bar\rho$ 를 아무 $(k,N)$ 에서 모듈러라고 보이기만 하면 최소 자료까지 자동으로 내려온다. Khare–Wintenberger 가 약한 형태만 공략하면 되었던 이유다.
 

@@ -30,7 +30,7 @@ Möbius 변환은 원과 직선을 원과 직선으로 옮기고, 서로 다른 
 
 ## Schwarz 보조정리
 
-$\mathbb D=\lbrace z:\vert z\vert<1\rbrace$ 에서 정칙이고 $f(\mathbb D)\subset\mathbb D$, $f(0)=0$ 인 $f$ 는 모든 $z\in\mathbb D$ 에서
+$\mathbb D=\lbrace z:\vert z\vert\lt 1\rbrace$ 에서 정칙이고 $f(\mathbb D)\subset\mathbb D$, $f(0)=0$ 인 $f$ 는 모든 $z\in\mathbb D$ 에서
 
 $$\vert f(z)\vert\le\vert z\vert,\qquad \vert f'(0)\vert\le1$$
 
@@ -48,7 +48,7 @@ $$\varphi(z)=e^{i\theta}\thinspace\frac{z-a}{1-\bar az},\qquad a\in\mathbb D,\ \
 
 ## Riemann 사상정리
 
-$\Omega\subsetneq\mathbb C$ 가 공집합이 아닌 단순연결 영역이면 $\Omega$ 는 $\mathbb D$ 와 등각동치다. 지정한 점 $z_0\in\Omega$ 를 $0$ 으로 보내고 $f'(z_0)>0$ 이라는 정규화를 걸면 사상은 유일하다[^1].
+$\Omega\subsetneq\mathbb C$ 가 공집합이 아닌 단순연결 영역이면 $\Omega$ 는 $\mathbb D$ 와 등각동치다. 지정한 점 $z_0\in\Omega$ 를 $0$ 으로 보내고 $f'(z_0)\gt 0$ 이라는 정규화를 걸면 사상은 유일하다[^1].
 
 증명의 요지는 극값 문제다. $\Omega$ 에서 $\mathbb D$ 로 가는 단사 정칙함수 가운데 $\vert f'(z_0)\vert$ 를 최대로 하는 것을 찾는다. 이 집합이 비어 있지 않음을 제곱근 가지를 써서 보이고, Montel 정리로 정규족에서 극대원이 존재함을 얻은 뒤, 극대원이 전사가 아니라면 Koebe 사상으로 도함수를 더 키울 수 있음을 보여 모순을 얻는다.
 
