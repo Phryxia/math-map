@@ -70,7 +70,7 @@ $V\cong V^\ast$ 를 주는 동형은 기저의 선택에 의존한다. 기저 $e
 
 ## 전치의 반변성
 
-$(g\circ f)^\ast=f^\ast\circ g^\ast$ 이고 $(\mathrm{id}\_V)^\ast=\mathrm{id}\_{V^\ast}$ 다. 정의에 따라 $(g\circ f)^\ast(\varphi)=\varphi\circ g\circ f=f^\ast(g^\ast(\varphi))$ 이다. 그러므로 $V\mapsto V^\ast$ 는 반변 [functor](functors.md) 다.
+$(g\circ f)^\ast=f^\ast\circ g^\ast$ 이고 $(\mathrm{id}\_V)^\ast=\mathrm{id}\_{V^\ast}$ 다. 정의에 따라 $(g\circ f)^\ast(\varphi)=\varphi\circ g\circ f=f^\ast(g^\ast(\varphi))$ 이다. 그러므로 $V\mapsto V^\ast$ 는 반변 [함자](functors.md) 다.
 
 기저를 고정해 $f$ 의 행렬을 $A$ 라 하면, 쌍대 기저에 대한 $f^\ast$ 의 행렬은 전치행렬 $A^{T}$ 다.
 

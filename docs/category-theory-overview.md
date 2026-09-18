@@ -6,7 +6,7 @@
 
 범주론의 갈래는 네 줄기다. 범주와 함자의 기본 언어, Yoneda lemma 에서 adjunction 으로 가는 보편성질, monad 와 그 대수, 그리고 텐서범주에서 위상적 양자계산으로 이어지는 응용이다. 호몰로지 대수 쪽 응용은 [de Rham 코호몰로지](de-rham-cohomology.md)와 [대수적 K 이론](algebraic-k-theory.md)에, 프로그래밍 언어와의 대응은 [Curry–Howard 대응](curry-howard.md)에 있다.
 
-시작은 [범주](category.md)다. 거기서 [Functor](functors.md)와 [자연변환](natural-transformations.md)이 언어를 세우고, [Yoneda lemma](yoneda-lemma.md)가 대상을 사상으로 바꿔 읽는 원리를 준다.
+시작은 [범주](category.md)다. 거기서 [함자](functors.md)와 [자연변환](natural-transformations.md)이 언어를 세우고, [Yoneda lemma](yoneda-lemma.md)가 대상을 사상으로 바꿔 읽는 원리를 준다.
 
 # 지도
 
@@ -34,7 +34,7 @@ graph TD
 ## 기본 언어
 
 - [범주](category.md): 대상과 사상, 합성과 항등
-- [Functor](functors.md): 범주 사이의 구조 보존 사상
+- [함자](functors.md): 범주 사이의 구조 보존 사상
 - [자연변환](natural-transformations.md): 함자 사이의 사상, 함자 범주
 
 ## 보편성질

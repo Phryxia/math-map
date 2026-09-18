@@ -2,7 +2,7 @@
 
 # 개요
 
-Adjunction은 두 [functor](functors.md) 사이의 관계다. 두 범주 사이를 오가는 functor $F$ , $G$ 가 있을 때, $F$ 를 보낸 뒤 잰 사상의 집합과 $G$ 로 되돌린 뒤 잰 사상의 집합이 자연스럽게 같다면 $F$ 는 $G$ 의 left adjoint다.
+Adjunction은 두 [함자](functors.md) 사이의 관계다. 두 범주 사이를 오가는 functor $F$ , $G$ 가 있을 때, $F$ 를 보낸 뒤 잰 사상의 집합과 $G$ 로 되돌린 뒤 잰 사상의 집합이 자연스럽게 같다면 $F$ 는 $G$ 의 left adjoint다.
 
 자유군 구성, 텐서곱, 지수 대상, 스칼라 확장, 논리의 한정기호가 모두 adjunction 으로 기술된다. adjoint functor 는 limit 과 colimit 의 보존 여부도 결정한다. left adjoint 가 colimit 을 보존하고 right adjoint 가 limit 을 보존한다.
 

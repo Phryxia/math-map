@@ -61,7 +61,7 @@ $$
 
 으로 정의한다.
 
-수반 조건은 [부분순서](partial-orders.md)의 언어로 Galois 연결이다. 각 $a$ 마다 $(-) \wedge a$ 가 좌수반이고 $a \to (-)$ 가 우수반이다. [범주](category.md)의 관점에서는 $H$ 를 얇은 범주로 볼 때 $(-) \wedge a$ 가 좌수반 [functor](functors.md) 라는 진술과 같다.
+수반 조건은 [부분순서](partial-orders.md)의 언어로 Galois 연결이다. 각 $a$ 마다 $(-) \wedge a$ 가 좌수반이고 $a \to (-)$ 가 우수반이다. [범주](category.md)의 관점에서는 $H$ 를 얇은 범주로 볼 때 $(-) \wedge a$ 가 좌수반 [함자](functors.md) 라는 진술과 같다.
 
 ## 동치인 공리적 정의
 
@@ -189,7 +189,7 @@ IPC 와 고전논리 사이의 논리를 중간논리라 하고, 각 중간논�
 
 ## 위상수학과 locale
 
-frame 은 점 없이 공간을 다루는 locale 이론의 기본 대상이다. 공간에서 열린집합 격자를 얻는 대응이 [functor](functors.md) 이고 그 반대 방향이 점을 복원하려는 시도다. 선택공리 없이 compactness 를 다룰 수 있어 [선택공리](axiom-of-choice.md) 사용을 추적하는 구성적 수학에서 쓰인다.
+frame 은 점 없이 공간을 다루는 locale 이론의 기본 대상이다. 공간에서 열린집합 격자를 얻는 대응이 [함자](functors.md) 이고 그 반대 방향이 점을 복원하려는 시도다. 선택공리 없이 compactness 를 다룰 수 있어 [선택공리](axiom-of-choice.md) 사용을 추적하는 구성적 수학에서 쓰인다.
 
 ## 타입 이론과 프로그램
 

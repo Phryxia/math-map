@@ -80,7 +80,7 @@ $\mathbf{Set}$ 에서 mono 는 단사함수, epi 는 전사함수와 일치하�
 
 ## functor 와 adjunction
 
-두 범주 사이의 대응인 [functor](functors.md), functor 사이의 비교인 자연변환, 최적 근사 관계인 adjunction 이 범주의 공리 위에서 정의된다. 대수적 위상수학은 공간을 대수적 대상으로 옮길 때 functor 를 쓰고, 프로그래밍 언어의 타입 이론은 계산의 효과를 monad 로 쓴다.[^1]
+두 범주 사이의 대응인 [함자](functors.md), functor 사이의 비교인 자연변환, 최적 근사 관계인 adjunction 이 범주의 공리 위에서 정의된다. 대수적 위상수학은 공간을 대수적 대상으로 옮길 때 functor 를 쓰고, 프로그래밍 언어의 타입 이론은 계산의 효과를 monad 로 쓴다.[^1]
 
 [^1]: Emily Riehl, *Category Theory in Context*, Chapter 1. 범주·사상·동형과 구체적 예시. https://math.jhu.edu/~eriehl/context/
 
@@ -95,7 +95,7 @@ $\mathbf{Set}$ 에서 mono 는 단사함수, epi 는 전사함수와 일치하�
 
 ## 더 알아보기
 
-- [Functor](functors.md)
+- [함자](functors.md)
 - [구조적 집합론과 동형 불변성](structural-set-theory.md)
 - [기하학적 Satake 대응](geometric-satake.md)
 - [모듈러 텐서범주와 3 차원 TQFT](modular-tensor-categories.md)

@@ -129,7 +129,7 @@ $\mathrm{Ext}\_R^1(C, A)$ 의 원소는 $0 \to A \to B \to C \to 0$ 꼴 확대�
 
 ## 선수지식
 
-- [Functor](functors.md)
+- [함자](functors.md)
 - [텐서곱](tensor-products.md)
 
 ## 더 알아보기
