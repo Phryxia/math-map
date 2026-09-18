@@ -32,6 +32,7 @@ graph TD
 - [행렬식](determinants.md) → [고윳값과 고유벡터](eigenvalues.md): 부피와 불변 방향
 - [Jordan 표준형](jordan-canonical-form.md): 대각화가 안 되는 행렬의 유사 불변량
 - [내적 공간](inner-product-spaces.md) → [스펙트럼 정리](spectral-theorem.md) → [특이값 분해](singular-value-decomposition.md)
+- [쌍대 공간](dual-space.md): 벡터를 재는 범함수와 전치
 - [텐서곱](tensor-products.md): 다중선형을 선형으로
 
 ## 통계와 데이터

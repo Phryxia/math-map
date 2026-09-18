@@ -105,6 +105,7 @@ $$
 
 ### 구조로 확장
 
+- [쌍대 공간](dual-space.md)
 - [텐서곱](tensor-products.md)
 - [Lie 대수](lie-algebras.md)
 - [Functor](functors.md)
