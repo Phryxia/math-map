@@ -95,4 +95,4 @@ platonism 은 수학의 객관성과 응용 가능성을 단순하게 설명하�
 
 - [논리주의와 Frege 프로그램](logicism.md)
 
-#philosophy_of_math
+#philosophy_of_math #foundations #logic

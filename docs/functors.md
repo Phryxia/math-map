@@ -102,4 +102,4 @@ functor 의 합성은 functor 이고 항등 functor 가 있으므로 작은 범�
 
 - [자연변환](natural-transformations.md)
 
-#category_theory
+#category_theory #algebraic_topology #computation

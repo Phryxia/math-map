@@ -104,4 +104,4 @@ $\mathbf{Set}$ 에서 mono 는 단사함수, epi 는 전사함수와 일치하�
 - [기하학적 Satake 대응](geometric-satake.md)
 - [모듈러 텐서범주와 3 차원 TQFT](modular-tensor-categories.md)
 
-#category_theory
+#category_theory #algebra #topology #logic

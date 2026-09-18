@@ -135,4 +135,4 @@ $R=\lbrace x:x\notin x\rbrace$ 를 집합으로 인정하면 $R\in R\iff R\notin
 - [최적화 개관](optimization-overview.md)
 - [범주론 개관](category-theory-overview.md)
 
-#set_theory
+#set_theory #foundations

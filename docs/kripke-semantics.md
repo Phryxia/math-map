@@ -119,4 +119,4 @@ $w_0$ 에서 배중률과 이중부정 제거가 모두 실패하고 배중률�
 
 - [Heyting algebra](heyting-algebras.md)
 
-#logic
+#logic #order_theory #computation
