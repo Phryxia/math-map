@@ -165,42 +165,6 @@ $$
 \Delta=\frac{E_4^3-E_6^2}{1728}
 $$
 
-```python
-from fractions import Fraction
-N = 60
-
-def eis(k, B):                               # E_k = 1 - (2k/B_k) Σ σ_{k-1}(n) q^n
-    c = [Fraction(0)]*(N+1); c[0] = Fraction(1)
-    for n in range(1, N+1):
-        s = sum(d**(k-1) for d in range(1, n+1) if n % d == 0)
-        c[n] = -Fraction(2*k)/B * s
-    return c
-
-def mul(a, b):
-    r = [Fraction(0)]*(N+1)
-    for i in range(N+1):
-        if a[i] == 0: continue
-        for j in range(N+1-i): r[i+j] += a[i]*b[j]
-    return r
-
-E4 = eis(4, Fraction(-1, 30))                # B_4 = -1/30
-E6 = eis(6, Fraction(1, 42))                 # B_6 = 1/42
-lhs = [x - y for x, y in zip(mul(mul(E4, E4), E4), mul(E6, E6))]
-
-d = [0]*(N+1); d[0] = 1                      # Δ = q ∏ (1-q^n)^24
-for n in range(1, N+1):
-    for _ in range(24):
-        new = d[:]
-        for k in range(n, N+1): new[k] -= d[k-n]
-        d = new
-tau = [0] + [d[k] for k in range(N)]
-
-print("E4 계수", [int(E4[i]) for i in range(5)])
-print("E6 계수", [int(E6[i]) for i in range(5)])
-print("(E4^3-E6^2) == 1728·Δ :", all(lhs[n] == 1728*tau[n] for n in range(N+1)))
-print("처음 6개 tau :", tau[1:7])
-```
-
 $\tau(n)$ 의 불규칙함이 $\sigma_3$ 과 $\sigma_5$ 의 조합에서 나온다. Ramanujan 의 합동 $\tau(n)\equiv\sigma_{11}(n)\pmod{691}$ 도 여기서 나오며, $691$ 은 $B_{12}$ 의 분자로 $E_{12}$ 와 $E_4^3$ 의 차이에 나타난다.
 
 ## Hecke 고유형식

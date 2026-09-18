@@ -129,48 +129,6 @@ Woodin 은 후자의 입장에서 작업해 왔다. 2000년 전후에는 Omega-�
 
 ## forcing 조건의 확장
 
-조건의 조작은 유한하므로 직접 다룰 수 있다. 새 실수들을 분리시키는 조밀집합을 만나는 과정은 다음과 같다.
-
-```python
-def decide(p, i, n, bit):
-    """조밀집합 D(i,n) = {q : (i,n) in dom q} 를 만나도록 확장한다."""
-    q = dict(p)
-    q.setdefault((i, n), bit)
-    return q
-
-def separate(p, i, j):
-    """i 번째 실수와 j 번째 실수가 달라지도록 확장한다."""
-    q = dict(p)
-    n = 0
-    while True:
-        a, b = q.get((i, n)), q.get((j, n))
-        if a is not None and b is not None:
-            if a != b:
-                return q                 # 이미 분리됨
-            n += 1
-            continue
-        if a is None and b is None:
-            q[(i, n)], q[(j, n)] = 0, 1
-        elif a is None:
-            q[(i, n)] = 1 - b
-        else:
-            q[(j, n)] = 1 - a
-        return q
-
-p = {}
-for i in range(3):
-    for n in range(5):
-        p = decide(p, i, n, bit=(i * i + n) % 2)   # 유한 조각을 하나 만든다
-for i in range(3):
-    for j in range(i + 1, 3):
-        p = separate(p, i, j)
-
-for i in range(3):
-    bits = [p.get((i, n), "?") for n in range(6)]
-    print(f"실수 {i}:", "".join(str(b) for b in bits))
-print("조건의 크기(유한):", len(p))
-```
-
 각 단계는 유한한 정보만 확정하고, 모든 조밀집합을 만나는 필터가 무한 비트열을 완성한다. 첨자를 알레프 둘 개 준비하면 새 우주의 실수는 알레프 둘 개 이상이 되어 CH 가 깨진다.
 
 # 활용

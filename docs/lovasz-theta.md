@@ -105,39 +105,6 @@ $C_7$ 의 Shannon 용량은 결정되지 않았다[^2]. 상계 $\vartheta(C_7)\a
 
 홀수 순환은 정점추이적이라 쌍대 형식의 자유 성분을 모두 같은 값으로 두어도 최적이다. 한 모수짜리 볼록 문제가 되어 고윳값 계산으로 풀린다.
 
-```python
-import numpy as np
-from math import cos, pi
-
-def cycle_adj(n):
-    A = np.zeros((n, n))
-    for i in range(n):
-        A[i, (i + 1) % n] = A[(i + 1) % n, i] = 1
-    return A
-
-def theta_cycle(n):
-    """홀수 순환 C_n 은 정점추이적이라 A = J + s·Adj 한 모수로 최적화가 끝난다.
-       theta(G) = min { lambda_max(A) : A_ij = 1 for i=j or ij not in E }."""
-    J, Adj = np.ones((n, n)), cycle_adj(n)
-    lo, hi = -5.0, 0.0
-    for _ in range(200):                         # 볼록 함수의 삼분 탐색
-        m1, m2 = lo + (hi - lo) / 3, hi - (hi - lo) / 3
-        f = lambda s: np.linalg.eigvalsh(J + s * Adj).max()
-        if f(m1) < f(m2): hi = m2
-        else: lo = m1
-    s = (lo + hi) / 2
-    return np.linalg.eigvalsh(J + s * Adj).max()
-
-for n in (5, 7, 9, 11):
-    print(f"C_{n:>2}: alpha = {n // 2} <= theta = {theta_cycle(n):.6f} <= "
-          f"chi(complement) = {(n + 1) // 2}")
-
-# C_ 5: alpha = 2 <= theta = 2.236068 <= chi(complement) = 3
-# C_ 7: alpha = 3 <= theta = 3.317667 <= chi(complement) = 4
-# C_ 9: alpha = 4 <= theta = 4.360090 <= chi(complement) = 5
-# C_11: alpha = 5 <= theta = 5.386303 <= chi(complement) = 6
-```
-
 닫힌 형태는 $\vartheta(C_n)=n\cos(\pi/n)/(1+\cos(\pi/n))$ 이다. 샌드위치의 양 끝이 $\lfloor n/2\rfloor$ 와 $\lceil n/2\rceil$ 로 1 만큼 벌어져 있고 그 사이의 $\vartheta$ 는 무리수다.
 
 $n$ 이 커지면 $\vartheta(C_n)/\alpha(C_n)\to1$ 이다. 무작위 그래프에서는 $\alpha(G)\approx2\log_2n$ 인데 $\vartheta(G)\approx\sqrt n$ 이라 간격이 다항식 규모로 벌어지므로, 완화의 품질은 그래프에 크게 의존한다.

@@ -112,17 +112,15 @@ $T$ 의 모든 유한 부분집합이 모델을 가지면 $T$ 도 모델을 가�
 
 ## 자동 추론
 
-완전성 정리는 "타당한 문장은 언젠가 증명이 발견된다"를 보장하므로 resolution, tableau, SMT 같은 증명 탐색 절차의 정당화가 된다. 다음은 항등원의 유일성을 1차 언어로 적은 예다.
+완전성 정리는 "타당한 문장은 언젠가 증명이 발견된다"를 보장하므로 resolution, tableau, SMT 같은 증명 탐색 절차의 정당화가 된다. 군의 공리에서 항등원의 유일성을 유도하는 것이 그런 절차가 푸는 문제의 예다.
 
-```text
-theory Group:
-  forall x y z.  m(m(x,y),z) = m(x,m(y,z))
-  forall x.      m(x,e) = x  &  m(e,x) = x
-  forall x. exists y. m(x,y) = e
+$$
+\forall x\thinspace y\thinspace z.\ m(m(x,y),z)=m(x,m(y,z)),\qquad \forall x.\ m(x,e)=x\land m(e,x)=x,\qquad \forall x\thinspace\exists y.\ m(x,y)=e
+$$
 
-goal:
-  forall e'. (forall x. m(x,e') = x) -> e' = e
-```
+$$
+\forall e'.\ (\forall x.\ m(x,e')=x)\to e'=e
+$$
 
 고전 논리 대신 증명의 구성성을 요구하면 [직관주의 논리](intuitionism.md)가 되고, 그때 의미론은 구조 하나가 아니라 [Kripke 모형](kripke-semantics.md)의 족이 된다.
 

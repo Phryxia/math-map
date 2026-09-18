@@ -57,53 +57,6 @@ $$
 
 $A=A^{\perp}$ 이므로 $A\cap L^{\perp}=(A+L)^{\perp}$ 이고, 차원을 세면 위 식이 나온다. 오른쪽에 $A$ 가 없으므로 대역적으로 알기 어려운 대상이 차이 공식에서 사라진다.
 
-```python
-# dim(A ∩ L) - dim(A ∩ L^perp) = dim L - n   (A 는 F_p^{2n} 의 라그랑지안)
-import random, itertools
-p, n = 3, 3; N = 2 * n
-
-def rank(rows):
-    rows = [r[:] for r in rows]; r = 0
-    for c in range(N):
-        piv = next((i for i in range(r, len(rows)) if rows[i][c] % p), None)
-        if piv is None: continue
-        rows[r], rows[piv] = rows[piv], rows[r]
-        inv = pow(rows[r][c], p - 2, p)
-        rows[r] = [(x * inv) % p for x in rows[r]]
-        for i in range(len(rows)):
-            if i != r and rows[i][c] % p:
-                f = rows[i][c]
-                rows[i] = [(rows[i][j] - f * rows[r][j]) % p for j in range(N)]
-        r += 1
-    return r
-
-form = lambda x, y: sum(x[i] * y[n + i] - x[n + i] * y[i] for i in range(n)) % p
-
-def span(basis):
-    out = set()
-    for coef in itertools.product(range(p), repeat=len(basis)):
-        v = [0] * N
-        for c, b in zip(coef, basis):
-            v = [(v[j] + c * b[j]) % p for j in range(N)]
-        out.add(tuple(v))
-    return out
-
-random.seed(7)
-for _ in range(200):
-    S = [[0] * n for _ in range(n)]                  # 대칭행렬 -> 라그랑지안
-    for i in range(n):
-        for j in range(i, n):
-            S[i][j] = S[j][i] = random.randrange(p)
-    A = [[int(k == i) for k in range(n)] + S[i] for i in range(n)]
-    L = [[random.randrange(p) for _ in range(N)] for _ in range(random.randrange(N + 1))]
-
-    Aset, Lset = span(A), span(L)
-    Lperp = {v for v in itertools.product(range(p), repeat=N)
-             if all(form(v, s) == 0 for s in Lset)}
-    lhs = rank([list(v) for v in Aset & Lset]) - rank([list(v) for v in Aset & Lperp])
-    assert lhs == rank(L) - n
-```
-
 ## 국소 조건의 변형
 
 한 자리 $\ell$ 에서만 $L_\ell$ 을 1 차원 넓히면 $\dim L$ 이 1 늘고 $\dim L^{\perp}$ 이 1 준다. 따라서
@@ -310,7 +263,7 @@ $$
 
 이 되고 오른쪽은 국소 계산으로 얻는다. Taylor–Wiles 는 $q\equiv1\ (\mathrm{mod}\ p^{n})$ 인 보조 소수를 $r=\dim H^1_{\mathcal L^{\ast}}$ 개 골라 그 자리들에서 조건을 완화한다. Chebotarev 로 각 소수가 쌍대 Selmer 의 원소 하나씩을 보도록 고르면 위 표의 두 번째 행에 따라 쌍대 Selmer 가 한 칸씩 줄고, $r$ 번 반복하면 $0$ 이 된다. 접공간의 차원이 국소 항만으로 확정되어 패칭에 필요한 균일한 표현이 나온다.
 
-## Euler 계 논법의 뼈대
+## Euler 계 논법의 요지
 
 [Euler 계](euler-systems.md)는 상호법칙의 합에서 한 항만 살아남게 대역류를 설계한다. 유도류 $\kappa_n$ 이 $n$ 밖에서 Selmer 조건을 만족하면 그 자리들에서 짝이 0 이고, 남은 $\ell$ 자리의 짝도 0 이라는 결론이 $\mathrm{loc}_\ell(s)=0$ 을 강제한다.
 

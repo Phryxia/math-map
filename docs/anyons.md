@@ -41,34 +41,6 @@ graph TD
 
 융합 공간의 차원 증가율이 애니온 하나가 담는 정보량이다. 이를 **양자 차원** $d_a$ 라 하고, 융합 규칙 행렬 $N_a$ 의 최대 고윳값으로 얻는다.
 
-```python
-def fusion_dims(N, idx, steps):
-    """진공에서 시작해 idx 번 애니온을 하나씩 더 붙일 때 채널별 차원"""
-    n = len(N); v = [0] * n; v[0] = 1
-    out = []
-    for _ in range(steps):
-        v = [sum(N[idx][j][i] * v[j] for j in range(n)) for i in range(n)]
-        out.append(list(v))
-    return out
-
-# Fibonacci: 기저 (1, tau),  tau x tau = 1 + tau
-NF = [[[1,0],[0,1]], [[0,1],[1,1]]]
-# Ising: 기저 (1, sigma, psi)
-NI = [[[1,0,0],[0,1,0],[0,0,1]],
-      [[0,1,0],[1,0,1],[0,1,0]],
-      [[0,0,1],[0,1,0],[1,0,0]]]
-
-for name, N, labels in (("Fibonacci", NF, "(1,tau)"), ("Ising", NI, "(1,sigma,psi)")):
-    print(f'{name}: n 개를 융합한 공간의 차원')
-    prev = None
-    for n, v in enumerate(fusion_dims(N, 1, 9), 1):
-        tot = sum(v)
-        r = f'{tot/prev:.6f}' if prev else '-'
-        print(f'  n={n}  {labels} = {str(v):14s} 합 = {tot:3d}   비 = {r}')
-        prev = tot
-    print()
-```
-
 Fibonacci 모형의 차원은 $1,2,3,5,8,13,\dots$ 로 Fibonacci 수열이고 비가 황금비 $\varphi=1.6180\ldots$ 로 수렴한다. Ising 모형은 두 걸음마다 두 배라 한 걸음당 $\sqrt2$ 다.
 
 $$

@@ -157,7 +157,7 @@ $$
 \mathrm{ch}\thinspace L_w=\sum_{x\le w}(-1)^{\ell(w)-\ell(x)}P_{x,w}(1)\thinspace\mathrm{ch}\thinspace M_x
 $$
 
-$M_x$ 는 Verma 가군이다. Beilinson–Bernstein 과 Brylinski–Kashiwara 가 1981 년에 독립적으로 증명했고 뼈대는 국소화다. 리 대수 가군의 범주를 깃발다양체 위 $\mathcal D$ 가군의 범주와 동치로 만든 뒤 Riemann–Hilbert 대응으로 편향층으로 옮기면 지표 계수가 IC 층의 줄기 차원이 되고, 기하 쪽에서는 Deligne 의 순수성 정리가 결론을 준다.
+$M_x$ 는 Verma 가군이다. Beilinson–Bernstein 과 Brylinski–Kashiwara 가 1981 년에 독립적으로 증명했고 요지는 국소화다. 리 대수 가군의 범주를 깃발다양체 위 $\mathcal D$ 가군의 범주와 동치로 만든 뒤 Riemann–Hilbert 대응으로 편향층으로 옮기면 지표 계수가 IC 층의 줄기 차원이 되고, 기하 쪽에서는 Deligne 의 순수성 정리가 결론을 준다.
 
 ## 계수의 양수성
 

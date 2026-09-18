@@ -82,60 +82,6 @@ $$
 
 이고, 그래프를 두 조각으로 가르는 비용의 하한과 상한을 고윳값 하나가 정한다. 스펙트럴 군집화가 이 부등식에서 정당화된다.
 
-```python
-def laplacian(n, edges):
-    L = [[0.0] * n for _ in range(n)]
-    for i, j, w in edges:
-        L[i][i] += w
-        L[j][j] += w
-        L[i][j] -= w
-        L[j][i] -= w
-    return L
-
-
-def energy(L, x):
-    return sum(x[i] * sum(L[i][j] * x[j] for j in range(len(x)))
-               for i in range(len(x)))
-
-
-# 경로 1-2-3 (0-1-2), 가중치 1
-P3 = laplacian(3, [(0, 1, 1), (1, 2, 1)])
-for row in P3:
-    print([round(v, 6) for v in row])
-
-print(energy(P3, [0, 1, 0]))          # 2.0 = 1^2 + 1^2
-print(energy(P3, [5, 5, 5]))          # 0.0: 상수 벡터는 핵
-print(energy(P3, [1, 2, 1]))          # 2.0: 상수를 더해도 변하지 않는다
-
-
-def det_minor(L, drop):
-    """L 에서 한 행과 열을 지운 소행렬식. 행렬-트리 정리."""
-    n = len(L)
-    M = [[L[i][j] for j in range(n) if j != drop]
-         for i in range(n) if i != drop]
-    k = len(M)
-    det = 1.0
-    for c in range(k):
-        p = max(range(c, k), key=lambda r: abs(M[r][c]))
-        if abs(M[p][c]) < 1e-12:
-            return 0.0
-        M[c], M[p] = M[p], M[c]
-        if c != p:
-            det = -det
-        det *= M[c][c]
-        for r in range(c + 1, k):
-            f = M[r][c] / M[c][c]
-            for cc in range(c, k):
-                M[r][cc] -= f * M[c][cc]
-    return det
-
-
-K3 = laplacian(3, [(0, 1, 1), (1, 2, 1), (0, 2, 1)])
-print(round(det_minor(K3, 0)))        # 3: K3 의 신장트리 개수
-K4 = laplacian(4, [(i, j, 1) for i in range(4) for j in range(i + 1, 4)])
-print(round(det_minor(K4, 0)))        # 16 = 4^2, Cayley 공식
-```
-
 경로 1–2–3 의 Laplacian 은
 
 $$

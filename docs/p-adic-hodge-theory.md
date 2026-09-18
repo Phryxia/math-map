@@ -76,7 +76,7 @@ $$
 
 $t$ 는 순환지표 $\chi$ 에 대한 고유벡터이고, 복소 쪽에서 복소켤레가 $2\pi i\mapsto-2\pi i$ 로 작용하는 것과 같은 자리에 있다. $t$ 가 가역인 환에서는 $t^{-1}\otimes e$ 가 불변원소이므로 Tate 꼬임 $\mathbb Q_p(1)$ 이 자명해진다. 주기환은 미리 정해 둔 꼬임들을 자명하게 만드는 계수환이다.
 
-## 네 층의 사다리
+## 네 층의 주기환
 
 기하의 환원 상태에 따라 남는 자료가 다르므로 주기환도 여럿이다.
 
@@ -302,31 +302,6 @@ $E/K$ 가 타원곡선이고 $V=V_p(E)^\ast\cong H^1_{\mathrm{et}}$ 라 하자. 
 ## 약허용성 판정
 
 2차원, Hodge 무게 $\lbrace 0,1\rbrace$ 인 경우에 $\varphi$ 안정 직선마다 $t_H\le t_N$ 을 검사한다.
-
-```python
-from fractions import Fraction
-
-def weakly_admissible_2d(v_alpha, v_beta, phi_lines):
-    """D = K_0^2, Hodge 여과 점프 {0,1} 이므로 t_H(D) = 1.
-
-    v_alpha, v_beta : Frobenius 고유값의 p 진 부치
-    phi_lines       : phi 안정 직선 목록. 각 원소는 (그 직선의 기울기, Fil^1 에 포함되는가)
-                      고유값이 K_0 밖이면 빈 목록이다.
-    """
-    t_H, t_N = 1, v_alpha + v_beta
-    if t_H != t_N:
-        return False, f"t_H(D)={t_H} != t_N(D)={t_N}"
-    for slope, in_fil1 in phi_lines:
-        sub_tH = 1 if in_fil1 else 0          # 1차원 부분대상의 Hodge 기울기
-        if sub_tH > slope:                     # slope 가 그 부분대상의 t_N
-            return False, f"부분대상에서 t_H={sub_tH} > t_N={slope}"
-    return True, "약허용"
-
-half = Fraction(1, 2)
-print(weakly_admissible_2d(half, half, []))                 # 초특이: 진부분대상 없음
-print(weakly_admissible_2d(0, 1, [(0, False), (1, True)]))  # 보통, 여과가 단위근을 피함
-print(weakly_admissible_2d(0, 1, [(0, True), (1, False)]))  # 보통, 분할된 경우
-```
 
 세 번째만 실패한다. 단위근 방향의 직선은 $t_N=0$ 인데 여과가 그 직선에 실려 $t_H=1$ 이 되기 때문이다. 이 배치는 보통 환원 타원곡선의 $p$ 진 표현이 $\mathbb Q_p\oplus\mathbb Q_p(1)$ 꼴로 분할된 상황에 해당하고 실제로 그런 분할은 일어나지 않는다. 약허용성이 그것을 선형대수로 배제한다.
 

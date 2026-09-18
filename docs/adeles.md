@@ -116,7 +116,7 @@ $$
 
 > **정리.** $K$ 는 $\mathbb A_K$ 의 이산 부분군이고 $\mathbb A_K/K$ 는 콤팩트하다.
 
-증명의 뼈대는 $\mathbb Q$ 에서의 분해와 같다. $\mathcal O_K$ 를 $\prod_{v\mid\infty}K_v$ 의 격자로 실현하는 Minkowski 논증에, 유한 자리에서 분모를 털어내는 중국인의 나머지 정리를 붙인다.
+증명의 요지는 $\mathbb Q$ 에서의 분해와 같다. $\mathcal O_K$ 를 $\prod_{v\mid\infty}K_v$ 의 격자로 실현하는 Minkowski 논증에, 유한 자리에서 분모를 털어내는 중국인의 나머지 정리를 붙인다.
 
 > **정리.** $\mathbb A_K^{\times,1}/K^\times$ 는 콤팩트하다.
 

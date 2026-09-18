@@ -127,40 +127,6 @@ Wright 는 1983년에, 이후 Hale 과 함께, Frege 정리를 발판으로 프�
 
 Hume 원리가 수를 어떻게 만들어 내는지는 유한 우주에서 그대로 흉내 낼 수 있다. 개념을 부분집합으로, 수를 동수성 동치류로 두고 후속자를 정의한다.
 
-```python
-from itertools import combinations
-
-U = list(range(4))                      # 유한 우주
-concepts = [frozenset(c) for k in range(len(U) + 1) for c in combinations(U, k)]
-
-def equinumerous(F, G):                 # 유한 우주에서 전단사 존재와 크기 일치는 같다
-    return len(F) == len(G)
-
-def number_of(F):                       # Hume 원리: 수는 동수성의 동치류
-    return frozenset(G for G in concepts if equinumerous(F, G))
-
-zero = number_of(frozenset())           # 0 = #(x != x)
-
-def successor(n):
-    F = next(iter(n))                   # 동치류의 아무 대표나 잡는다
-    for a in U:
-        if a not in F:
-            return number_of(F | {a})
-    return None                         # 우주가 다 찼다
-
-chain, n = [zero], zero
-while (s := successor(n)) is not None:
-    chain.append(s)
-    n = s
-
-print("얻어진 수의 개수:", len(chain))
-print("각 수의 대표 개념 크기:", [len(next(iter(m))) for m in chain])
-print("0 은 어떤 수의 후속자인가:", any(successor(m) == zero for m in chain))
-print("후속자는 단사인가:",
-      len({successor(m) for m in chain[:-1]}) == len(chain) - 1)
-print("모든 수가 후속자를 가지는가:", successor(chain[-1]) is not None)
-```
-
 Peano 공리 중 셋은 그대로 확인되지만 마지막이 실패한다. 유한 우주에서는 수가 바닥나기 때문이다. Frege 의 해법은 수 자신을 세어지는 대상으로 쓰는 것이었다. "0 부터 $n$ 까지"라는 개념의 수가 $n$ 의 후속자가 되므로, 대상의 공급이 끊기지 않는다. 이 지점이 Hume 원리가 무한을 스스로 낳는 대목이며, Principia 가 무한 공리를 따로 요구해야 했던 것과 대조된다.
 
 # 활용
@@ -171,7 +137,7 @@ Peano 공리 중 셋은 그대로 확인되지만 마지막이 실패한다. 유
 
 ## 수리철학의 지형에서
 
-논리주의는 수가 논리적 대상이라고 주장한다는 점에서 [수학적 플라톤주의](mathematical-platonism.md)와 겹치면서도 다르다. 플라톤주의는 수학적 대상이 독립적으로 존재한다고 말하지만 어떻게 그것을 인식하는지 설명하기 어렵다. 논리주의는 그 인식론적 부담을 논리로 옮겨 해결하려 한다. 추상화 원리가 대상을 "공짜로" 준다는 신논리주의의 주장이 정확히 이 전략이다.
+논리주의는 수가 논리적 대상이라고 주장한다는 점에서 [수학적 플라톤주의](mathematical-platonism.md)와 겹치면서도 다르다. 플라톤주의는 수학적 대상이 독립적으로 존재한다고 말하지만 어떻게 그것을 인식하는지 설명하기 어렵다. 논리주의는 그 인식론적 부담을 논리로 옮겨 해결하려 한다. 추상화 원리가 대상을 추가 가정 없이 준다는 신논리주의의 주장이 정확히 이 전략이다.
 
 [수학적 구조주의](mathematical-structuralism.md)와의 차이는 더 선명하다. 구조주의는 수가 무엇인지 묻지 말고 구조 안의 자리로 보라고 한다. 이 관점에서 Caesar 문제는 애초에 잘못된 질문이다. 반대로 논리주의는 수를 특정한 대상으로 지목하려 하므로 그 질문에 답할 의무를 진다.
 

@@ -72,42 +72,6 @@ $$
 
 이것은 배중률의 부정이 아니라 배중률이 모든 직관주의 모형에서 타당하지는 않다는 반례다. 직관주의 논리는 $\neg(p \vee \neg p)$ 를 증명하지 않고 $\neg\neg(p \vee \neg p)$ 를 증명한다.
 
-```python
-def forces(model, w, f):
-    """model: (states, leq, atoms). f: ('atom', p) | ('and'|'or'|'imp', A, B) | ('bot',)."""
-    states, leq, atoms = model
-    tag = f[0]
-    if tag == "bot":
-        return False
-    if tag == "atom":
-        return f[1] in atoms[w]
-    if tag == "and":
-        return forces(model, w, f[1]) and forces(model, w, f[2])
-    if tag == "or":
-        return forces(model, w, f[1]) or forces(model, w, f[2])
-    if tag == "imp":
-        return all(not forces(model, v, f[1]) or forces(model, v, f[2])
-                   for v in states if leq(w, v))
-    raise ValueError(tag)
-
-
-states = ["w0", "w1"]
-leq = lambda a, b: a == b or (a, b) == ("w0", "w1")
-atoms = {"w0": set(), "w1": {"p"}}
-M = (states, leq, atoms)
-
-P = ("atom", "p")
-NOT = lambda A: ("imp", A, ("bot",))
-lem = ("or", P, NOT(P))
-
-print(forces(M, "w0", P))            # False
-print(forces(M, "w0", NOT(P)))       # False
-print(forces(M, "w0", lem))          # False: 배중률 반례
-print(forces(M, "w1", lem))          # True
-print(forces(M, "w0", NOT(NOT(lem))))  # True: 이중부정은 성립
-print(forces(M, "w0", ("imp", NOT(NOT(P)), P)))   # False: ¬¬p → p 도 실패
-```
-
 $w_0$ 에서 배중률과 이중부정 제거가 모두 실패하고 배중률의 이중부정은 성립한다. 두 논리의 간극이 이중부정만큼이다.
 
 ## 건전성과 완전성

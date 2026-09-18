@@ -85,21 +85,6 @@ $\bmod 6$ 에서 $2 \cdot 2 \equiv 2 \cdot 5$ 이지만 $2 \not\equiv 5$ 인 것
 
 지수를 이진 전개하면 곱셈 횟수가 $O(\log e)$ 이고, 매 단계 나머지를 취하므로 중간값이 $m^2$ 를 넘지 않는다.
 
-```python
-def powmod(a, e, m):
-    result, a = 1 % m, a % m
-    while e > 0:
-        if e & 1:
-            result = result * a % m
-        a = a * a % m
-        e >>= 1
-    return result
-
-
-assert powmod(2, 1000, 7) == pow(2, 1000, 7)
-assert powmod(3, 5, 7) == 5      # 3^5 = 243 = 34*7 + 5
-```
-
 Fermat 소수판정, RSA 의 암복호화, 이산로그 기반 프로토콜이 이 절차로 계산된다.
 
 ## 구조의 분해

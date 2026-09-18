@@ -82,42 +82,6 @@ $$
 
 이것은 긴 연산열의 평균 비용에 대한 명제이고 개별 $FIND$ 가 항상 상수 시간이라는 뜻이 아니다. 최악의 단일 연산은 $O(\log n)$ 이 걸릴 수 있어 실시간 보장이 필요한 상황에서는 차이가 있다.
 
-```python
-class DSU:
-    def __init__(self, n):
-        self.parent = list(range(n))
-        self.size = [1] * n
-        self.components = n
-
-    def find(self, x):
-        root = x
-        while self.parent[root] != root:
-            root = self.parent[root]
-        while self.parent[x] != root:        # 경로 압축
-            self.parent[x], x = root, self.parent[x]
-        return root
-
-    def union(self, x, y):
-        rx, ry = self.find(x), self.find(y)
-        if rx == ry:
-            return False
-        if self.size[rx] < self.size[ry]:    # 크기 기준 합치기
-            rx, ry = ry, rx
-        self.parent[ry] = rx
-        self.size[rx] += self.size[ry]
-        self.components -= 1
-        return True
-
-
-d = DSU(6)
-for a, b in [(0, 1), (1, 2), (3, 4)]:
-    d.union(a, b)
-print(d.components)                      # 3: {0,1,2} {3,4} {5}
-print(d.find(0) == d.find(2))            # True
-print(d.find(0) == d.find(3))            # False
-print(d.union(0, 2))                     # False: 이미 같은 성분
-```
-
 $union$ 이 $False$ 를 돌려준다는 것은 두 정점이 이미 연결되어 있다는 뜻이고, 그래프에서는 그 간선을 더하면 순환이 생긴다는 신호다. Kruskal 알고리즘이 바로 이 판정을 쓴다.
 
 ## 유지할 수 있는 부가 정보

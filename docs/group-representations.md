@@ -162,33 +162,7 @@ $S_3$ 의 켤레류는 항등원, 호환 3개, 3-순환 2개로 셋이다. 기�
 
 # 활용
 
-## 분해 계산
-
-지표만 있으면 분해는 산술이다. 다음은 $S_3$ 의 순열표현과 정규표현을 분해한다.
-
-```python
-from fractions import Fraction
-
-sizes = {"e": 1, "t": 3, "c": 2}          # 켤레류 크기: 항등, 호환, 3-순환
-irr = {"triv": {"e": 1, "t": 1, "c": 1},
-       "sign": {"e": 1, "t": -1, "c": 1},
-       "std":  {"e": 2, "t": 0, "c": -1}}
-order = sum(sizes.values())
-
-def ip(a, b):                              # 지표 내적 (실수 지표라 켤레는 생략)
-    return Fraction(sum(sizes[k] * a[k] * b[k] for k in sizes), order)
-
-perm = {"e": 3, "t": 1, "c": 0}            # 3점 위의 순열표현
-reg = {"e": 6, "t": 0, "c": 0}             # 정규표현
-
-print({n: ip(perm, chi) for n, chi in irr.items()})
-# {'triv': 1, 'sign': 0, 'std': 1}  ->  C^3 = 자명 (+) 표준
-
-print({n: ip(reg, chi) for n, chi in irr.items()})
-# {'triv': 1, 'sign': 1, 'std': 2}  ->  차수 공식 1 + 1 + 2*2 = 6
-
-print(ip(irr["std"], irr["std"]))          # 1 이므로 표준표현은 기약
-```
+## 순열표현의 분해
 
 순열표현의 지표는 고정점 개수이므로
 

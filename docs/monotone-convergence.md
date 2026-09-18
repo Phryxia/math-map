@@ -100,29 +100,6 @@ $$
 
 감소하는 열에는 같은 결론이 성립하지 않는다. $f_n = \mathbf 1_{[n,\infty)}$ 은 $0$ 으로 감소하지만 각 적분이 $\infty$ 다. 감소하는 경우에는 $\int f_1 < \infty$ 라는 조건이 추가로 필요하고, 그때는 지배수렴 정리로 처리된다.
 
-```python
-def integral_grid(f, lo, hi, n=400000):
-    h = (hi - lo) / n
-    return h * sum(f(lo + (i + 0.5) * h) for i in range(n))
-
-
-# 단조증가: 교환이 성립한다
-def f_inc(n):
-    return lambda x: min(1 / x ** 0.5, n) if x > 0 else 0
-
-for n in (10, 100, 1000):
-    print("증가열", n, integral_grid(f_inc(n), 0, 1))
-print("극한 적분", 2.0)          # ∫₀¹ x^{-1/2} = 2
-
-# 단조성 없음: 교환이 깨진다
-def spike(n):
-    return lambda x: n if 0 < x < 1 / n else 0
-
-for n in (10, 100, 1000):
-    print("봉우리", n, integral_grid(spike(n), 0, 1))
-print("점별 극한의 적분", 0.0)
-```
-
 # 활용
 
 ## 급수와 적분의 교환

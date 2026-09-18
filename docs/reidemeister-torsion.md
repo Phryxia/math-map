@@ -133,47 +133,6 @@ $\mathrm{Wh}(\mathbb Z/p)$ 가 자명하지 않으므로 렌즈 공간에서 두
 
 렌즈 공간의 비틀림을 표현 $\rho_j$ 마다 계산한다. 절댓값을 취해 애매성을 없애고, $j$ 를 전부 돌려 얻은 값의 다중집합을 비교한다.
 
-```python
-from cmath import exp, pi
-
-def torsion_abs(p, q):
-    """|tau_{rho_j}(L(p,q))| = |zeta^j - 1| |zeta^{j q*} - 1|,  q q* = 1 mod p"""
-    qs = next(x for x in range(1, p) if (q*x) % p == 1)
-    vals = []
-    for j in range(1, p):
-        z = exp(2j*pi*j/p)
-        vals.append(abs(z - 1) * abs(z**qs - 1))
-    return sorted(round(v, 9) for v in vals)
-
-def homotopy_equiv(p, q, qp):
-    """q q' = ±n^2 mod p"""
-    squares = {(n*n) % p for n in range(1, p)}
-    return (q*qp) % p in squares or (-q*qp) % p in squares
-
-def homeomorphic(p, q, qp):
-    """q' = ±q^{±1} mod p"""
-    qi = next(x for x in range(1, p) if (q*x) % p == 1)
-    return qp % p in {(s*x) % p for s in (1, -1) for x in (q, qi)}
-
-for (p, q, qp) in [(7,1,2), (7,1,6), (15,1,4), (5,1,2), (13,1,5)]:
-    t1, t2 = torsion_abs(p, q), torsion_abs(p, qp)
-    print(f"L({p},{q}) vs L({p},{qp}):  호모토피동치={homotopy_equiv(p,q,qp)!s:5s}"
-          f"  동형={homeomorphic(p,q,qp)!s:5s}  비틀림 일치={t1==t2}")
-
-print()
-print("L(7,1) 비틀림 절댓값:", [f"{v:.4f}" for v in torsion_abs(7,1)])
-print("L(7,2) 비틀림 절댓값:", [f"{v:.4f}" for v in torsion_abs(7,2)])
-
-# L(7,1) vs L(7,2):  호모토피동치=True   동형=False  비틀림 일치=False
-# L(7,1) vs L(7,6):  호모토피동치=True   동형=True   비틀림 일치=True
-# L(15,1) vs L(15,4):  호모토피동치=True   동형=False  비틀림 일치=False
-# L(5,1) vs L(5,2):  호모토피동치=False  동형=False  비틀림 일치=False
-# L(13,1) vs L(13,5):  호모토피동치=False  동형=False  비틀림 일치=False
-#
-# L(7,1) 비틀림 절댓값: ['0.7530', '0.7530', '2.4450', '2.4450', '3.8019', '3.8019']
-# L(7,2) 비틀림 절댓값: ['1.3569', '1.3569', '1.6920', '1.6920', '3.0489', '3.0489']
-```
-
 비틀림이 일치하는 경우와 위상동형인 경우가 다섯 줄에서 모두 같고, 호모토피 동치 여부와는 두 줄에서 어긋난다.
 
 $L(7,1)$ 과 $L(7,2)$ 는 호모토피 동치이므로 호몰로지, 코호몰로지 환, 기본군, 고차 호모토피군이 전부 같다. 비틀림 값의 다중집합은 $\lbrace 0.75,2.45,3.80\rbrace$ 와 $\lbrace 1.36,1.69,3.05\rbrace$ 로 겹치는 값이 없으므로 기저 선택의 애매성으로 맞출 수 없다.

@@ -54,49 +54,6 @@ $\mathrm{Aut}(G)$ 의 크기가 그래프의 대칭성을 잰다. 완전그래�
 
 널리 쓰이는 근사 불변량은 [color refinement](color-refinement.md)다. 정점의 색을 이웃의 색 다중집합으로 반복 갱신하는 절차이고 1 차원 Weisfeiler–Leman 알고리즘이라고도 한다. 빠르고 대부분의 그래프를 구별하지만, 모든 정점의 차수가 같은 정규 그래프에서는 색이 갈라지지 않아 실패한다.
 
-```python
-from itertools import permutations
-
-def is_isomorphic(n, e1, e2):
-    """작은 그래프에 대한 전수 탐색."""
-    A = {frozenset(e) for e in e1}
-    B = {frozenset(e) for e in e2}
-    if len(A) != len(B):
-        return None
-    for p in permutations(range(n)):
-        if {frozenset((p[u], p[v])) for u, v in A} == B:
-            return p
-    return None
-
-
-def degrees(n, edges):
-    d = [0] * n
-    for u, v in edges:
-        d[u] += 1
-        d[v] += 1
-    return sorted(d)
-
-
-C6 = [(0, 1), (1, 2), (2, 3), (3, 4), (4, 5), (5, 0)]
-two_tri = [(0, 1), (1, 2), (2, 0), (3, 4), (4, 5), (5, 3)]
-print(degrees(6, C6), degrees(6, two_tri))       # 차수는 동일
-print(is_isomorphic(6, C6, two_tri))             # None: 비동형
-
-# 같은 그래프를 이름만 바꾼 것
-relabel = [(5, 0), (0, 3), (3, 1), (1, 4), (4, 2), (2, 5)]
-print(is_isomorphic(6, C6, relabel))             # 대응 하나를 찾아낸다
-
-
-def automorphism_count(n, edges):
-    A = {frozenset(e) for e in edges}
-    return sum(1 for p in permutations(range(n))
-               if {frozenset((p[u], p[v])) for u, v in A} == A)
-
-
-print(automorphism_count(6, C6))                 # 12: 이면체군 D6
-print(automorphism_count(4, [(0, 1), (0, 2), (0, 3)]))   # 6: 별 그래프
-```
-
 $C_6$ 과 삼각형 둘은 차수가 모두 $[2,2,2,2,2,2]$ 이고 비동형이다. 자기동형군의 크기는 $C_6$ 이 $12$ (회전 $6$ 과 반사), 별 그래프가 $6$ (잎 $3$ 개의 치환)이다.
 
 ## 계산 복잡도

@@ -4,7 +4,7 @@
 
 Heyting algebra 는 유계 격자에 함의 연산을 하나 더 붙인 대수 구조다. 함의는 만남 연산의 오른쪽 수반으로 유일하게 결정되고, 이 조건 하나가 직관주의 명제논리의 정리를 대수적으로 재현한다.
 
-Boolean algebra 가 고전 명제논리의 대수적 뼈대이듯 Heyting algebra 는 [직관주의 논리](intuitionism.md)의 대수적 뼈대다. 차이는 배중률에 해당하는 항등식이 성립하지 않아도 된다는 것뿐이고, 분배법칙과 de Morgan 법칙의 절반과 이중부정 도입은 남는다.
+Boolean algebra 가 고전 명제논리의 대수적 대응물이듯 Heyting algebra 는 [직관주의 논리](intuitionism.md)의 대수적 대응물이다. 차이는 배중률에 해당하는 항등식이 성립하지 않아도 된다는 것뿐이고, 분배법칙과 de Morgan 법칙의 절반과 이중부정 도입은 남는다.
 
 주요 예는 위상공간의 열린집합 격자와 [Kripke 프레임](kripke-semantics.md)의 상향닫힌 집합 격자다. 두 예 모두 여집합이 구조를 벗어나기 때문에 배중률을 잃는다.
 
@@ -174,34 +174,6 @@ graph LR
 ## 최소 반례
 
 두 세계 $w_0<w_1$ 로 된 프레임의 상향닫힌 집합 격자에서 함의와 부정을 계산한다.
-
-```python
-from itertools import chain, combinations
-
-W = [0, 1]                      # w0 < w1
-leq = {(0, 0), (0, 1), (1, 1)}  # 반사적, 추이적 순서
-
-def up_closed(S):
-    return all((w, v) not in leq or v in S for w in S for v in W)
-
-def powerset(xs):
-    return chain.from_iterable(combinations(xs, k) for k in range(len(xs) + 1))
-
-H = [frozenset(S) for S in powerset(W) if up_closed(set(S))]
-
-def implies(A, B):
-    return frozenset(w for w in W
-                     if all(v not in A or v in B for v in W if (w, v) in leq))
-
-def neg(A):
-    return implies(A, frozenset())
-
-top = frozenset(W)
-show = lambda A: "{" + ",".join(f"w{w}" for w in sorted(A)) + "}"
-
-for A in H:
-    print(show(A), "neg:", show(neg(A)), "excluded middle:", A | neg(A) == top)
-```
 
 원소는 공집합과 $\lbrace w_1\rbrace$ 과 $\lbrace w_0, w_1\rbrace$ 셋이다. $A = \lbrace w_1\rbrace$ 에서 $\neg A$ 가 공집합이므로 $A \vee \neg A$ 는 전체가 아니고, $\neg\neg A$ 는 전체이므로 이중부정 제거도 실패한다. 이 세 원소 사슬은 배중률을 만족하지 않는 가장 작은 Heyting algebra 이고 Gödel 의 3치 대수라 부른다.
 

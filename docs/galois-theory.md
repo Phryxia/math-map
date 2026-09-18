@@ -132,19 +132,9 @@ $S_n$ 은 $n\ge 5$ 에서 가해가 아니다. $A_n$ 이 $n\ge 5$ 에서 비가�
 
 $\mathbb{Q}$ 의 Galois 확대에서 [소수](primes.md)의 분해 양상이 Galois 군의 부분군으로 기술된다. 각 소수에 Frobenius 켤레류가 대응하며, 이것이 class field theory와 Chebotarev 밀도 정리의 출발점이다.
 
-## 계산과 코드
+## 작은 차수의 판정
 
 작은 차수 다항식의 Galois 군은 판별식과 resolvent 다항식으로 판정한다. 기약 3차 다항식의 경우 판별식이 유리수체에서 완전제곱인지가 군이 위수 3의 순환군인지 $S_3$ 인지를 가른다.
-
-```python
-from sympy import Poly, discriminant
-from sympy.abc import x
-
-for f in [x**3 - 2, x**3 - 3*x - 1]:
-    print(f, discriminant(Poly(f, x)))
-# x**3 - 2        -108  제곱수 아님 -> S_3, 차수 6 분해체
-# x**3 - 3*x - 1    81  제곱수     -> Z/3Z, 차수 3 순환 확대
-```
 
 ## 다른 분야로의 이식
 

@@ -89,7 +89,7 @@ $$
 
 **정리.** $I_m$ 은 $\mathbb Q(\mu_m)$ 의 이데알류군 $\mathrm{Cl}(K)$ 를 소멸시킨다. 곧 $\alpha\in I_m$ 과 아이디얼류 $[\mathfrak a]$ 에 대해 $[\mathfrak a]^{\alpha}=1$ 이다[^1].
 
-**증명의 뼈대.** 류군은 $m$ 과 서로소인 1 차 소 아이디얼 $\mathfrak p$ 의 류로 생성된다. $\mathfrak p$ 의 잉여체 위에서 Gauss 합을 만들면 위 분해에 의해 $\mathfrak p^{(c-\sigma_c)\theta}$ 가 $g$ 의 적당한 거듭제곱이 생성하는 주 아이디얼이 되므로 그 류가 자명하다. $\square$
+**증명의 요지.** 류군은 $m$ 과 서로소인 1 차 소 아이디얼 $\mathfrak p$ 의 류로 생성된다. $\mathfrak p$ 의 잉여체 위에서 Gauss 합을 만들면 위 분해에 의해 $\mathfrak p^{(c-\sigma_c)\theta}$ 가 $g$ 의 적당한 거듭제곱이 생성하는 주 아이디얼이 되므로 그 류가 자명하다. $\square$
 
 ## $L$ 값과의 관계
 

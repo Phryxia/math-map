@@ -108,44 +108,6 @@ $n\le4$ 와 $n=6$ 에서 계수가 0 이고, 처음으로 0 이 아닌 것이 $n
 
 계수 공식을 계산한다.
 
-```python
-def divisors(n):
-    return sum(1 for k in range(1, n + 1) if n % k == 0)
-
-def wh_rank(n):
-    """Wh(Z/n) 의 계수."""
-    return n // 2 + 1 - divisors(n)
-
-print(" n  rank Wh(Z/n)")
-for n in range(1, 17):
-    r = wh_rank(n)
-    mark = "" if r else "   <- 장애 없음"
-    print(f"{n:2d}   {r}{mark}")
-
-zero = [n for n in range(1, 200) if wh_rank(n) == 0]
-print("\nWh(Z/n) = 0 인 n:", zero)
-
-#  n  rank Wh(Z/n)
-#  1   0   <- 장애 없음
-#  2   0   <- 장애 없음
-#  3   0   <- 장애 없음
-#  4   0   <- 장애 없음
-#  5   1
-#  6   0   <- 장애 없음
-#  7   2
-#  8   1
-#  9   2
-# 10   2
-# 11   4
-# 12   1
-# 13   5
-# 14   4
-# 15   4
-# 16   4
-#
-# Wh(Z/n) = 0 인 n: [1, 2, 3, 4, 6]
-```
-
 $\mathrm{Wh}(\mathbb Z/n)=0$ 인 $n$ 은 $\lbrace 1,2,3,4,6\rbrace$ 뿐이다. 나머지 순환군에서는 h-코보디즘 분류가 자명하지 않고 계수가 $n/2$ 규모로 자란다. 약수가 많은 수에서 계수가 작아지고($n=12$ 에서 1) 소수에서 가장 크다.
 
 ## 분류 정리들이 서 있는 자리

@@ -121,7 +121,7 @@ Jacobian이나 Hessian을 계산하고 분해하는 비용이 큰 경우, 근사
 - 할선법(secant). 스칼라에서 도함수를 차분으로 대체한다. 수렴 차수는 황금비 약 1.618이다.
 - Broyden 법. 다변수에서 $\Delta$ 와 $F$ 의 변화만으로 Jacobian 근사를 계급 1 갱신한다.
 - BFGS 및 L-BFGS. 최적화에서 Hessian의 역을 대칭 양정부호로 유지하며 갱신한다. 큰 규모 문제의 표준이다.
-- Gauss–Newton과 Levenberg–Marquardt. 최소제곱 구조를 이용해 Hessian을 Jacobian의 곱으로 근사하고 감쇠항을 더한다. 제약이 붙은 문제에서는 [Lagrange 쌍대성과 KKT 조건](lagrange-duality.md)의 정류 조건에 Newton 법을 적용하는 것이 내부점 방법의 뼈대다.
+- Gauss–Newton과 Levenberg–Marquardt. 최소제곱 구조를 이용해 Hessian을 Jacobian의 곱으로 근사하고 감쇠항을 더한다. 제약이 붙은 문제에서는 [Lagrange 쌍대성과 KKT 조건](lagrange-duality.md)의 정류 조건에 Newton 법을 적용하는 것이 내부점 방법의 기본 절차다.
 
 # 활용
 
@@ -134,23 +134,6 @@ x_{k+1} = \frac{1}{2}\left(x_k + \frac{a}{x_k}\right).
 $$
 
 양수 초기값에서는 항상 수렴한다. 산술기하평균 부등식으로 두 번째 항부터는 언제나 참값 이상이고, 그 다음부터 단조감소하며 아래로 유계이기 때문이다.
-
-나눗셈을 쓰지 않고 역수를 구하려면 $f(x)=1/x-a$ 를 쓴다. 반복식이 $x_{k+1}=x_k(2-ax_k)$ 가 되어 곱셈과 뺄셈만 남는다. 하드웨어의 부동소수점 나눗셈이 실제로 이런 식으로 구현된다.
-
-```python
-def sqrt_newton(a, tol=1e-15, max_iter=50):
-    if a < 0:
-        raise ValueError("음수")
-    if a == 0:
-        return 0.0
-    x = a if a >= 1 else 1.0          # 적당한 초기값
-    for k in range(max_iter):
-        nx = 0.5 * (x + a / x)
-        if abs(nx - x) <= tol * abs(nx):
-            return nx
-        x = nx
-    return x
-```
 
 $a=2$ 에서 초기값 $1$ 로 시작하면 오차가 대략 $0.08$ , $0.002$ , $2\times10^{-6}$ , $10^{-12}$ 순으로 줄어든다. 유효자릿수가 매 단계 두 배가 되는 이차 수렴의 전형이다.[^1]
 

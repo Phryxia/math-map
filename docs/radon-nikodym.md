@@ -93,37 +93,6 @@ $$
 
 로 분해된다. $\nu_s \perp \mu$ 는 두 측도가 서로소인 집합 위에 실려 있다는 뜻이다. 실수 위의 확률분포를 연속, 이산, 특이연속 부분으로 나누는 분류가 이 정리의 특수한 경우다.
 
-```python
-def rn_derivative_finite(nu, mu):
-    """유한 집합 위에서 밀도를 직접 계산한다. mu(x)=0 인 곳은 정의되지 않는다."""
-    out = {}
-    for x in set(nu) | set(mu):
-        m = mu.get(x, 0)
-        n = nu.get(x, 0)
-        if m == 0:
-            if n != 0:
-                raise ValueError(f"절대연속 아님: mu({x})=0 인데 nu({x})={n}")
-            continue                      # mu-영집합: 밀도 값이 임의
-        out[x] = n / m
-    return out
-
-
-mu = {"a": 0.5, "b": 0.3, "c": 0.2}
-nu = {"a": 0.2, "b": 0.6, "c": 0.2}
-f = rn_derivative_finite(nu, mu)
-print(f)                                   # 우도비
-print(sum(mu[x] * f[x] for x in mu))       # 1.0: ∫ f dmu = nu(전체)
-
-g = {"a": 1.0, "b": 4.0, "c": 9.0}
-print(sum(nu[x] * g[x] for x in nu),
-      sum(mu[x] * f[x] * g[x] for x in mu))  # 두 방식의 적분이 일치
-
-try:
-    rn_derivative_finite({"a": 1.0}, {"b": 1.0})
-except ValueError as e:
-    print(e)
-```
-
 밀도를 곱해 $\mu$ 로 적분한 결과가 $\nu$ 로 적분한 것과 같다. 이 등식이 중요도 표본추출과 우도비 검정의 계산 근거다.
 
 ## 조건부 기댓값과의 관계

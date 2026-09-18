@@ -30,9 +30,9 @@ $$
 
 ## 반사와 닫힘
 
-각 근 $\alpha$ 마다 $\mathfrak{sl}\_2$ 부분대수 $\lbrace E_\alpha,F_\alpha,H_\alpha\rbrace$ 가 있다. $\mathfrak g$ 를 이 $\mathfrak{sl}_2$ 의 표현으로 보면 사다리 논법으로 무게가 $2$ 씩 오르내리는 정수 사슬이 나오고, 정수성 조건이 따라온다.
+각 근 $\alpha$ 마다 $\mathfrak{sl}\_2$ 부분대수 $\lbrace E_\alpha,F_\alpha,H_\alpha\rbrace$ 가 있다. $\mathfrak g$ 를 이 $\mathfrak{sl}_2$ 의 표현으로 보면 올림·내림 논법으로 무게가 $2$ 씩 오르내리는 정수 사슬이 나오고, 정수성 조건이 따라온다.
 
-사다리의 양 끝을 맞바꾸는 것이 초평면 $\alpha^\perp$ 에 대한 **반사**다.
+무게열의 양 끝을 맞바꾸는 것이 초평면 $\alpha^\perp$ 에 대한 **반사**다.
 
 $$
 s_\alpha(\beta)=\beta-\langle\beta,\alpha\rangle\thinspace\alpha
@@ -143,66 +143,11 @@ $B_n$ 과 $C_n$ 은 근의 길이를 맞바꾼 쌍대이고 근 개수와 Weyl �
 
 단순근에서 출발해 반사를 닫힐 때까지 적용하면 근계 전체가 나온다.
 
-```python
-from fractions import Fraction
-
-def ip(a, b):
-    return sum(x * y for x, y in zip(a, b))
-
-def reflect(beta, alpha):
-    """s_alpha(beta) = beta - <beta,alpha> alpha"""
-    c = Fraction(2 * ip(beta, alpha), ip(alpha, alpha))
-    return tuple(b - c * a for b, a in zip(beta, alpha))
-
-def closure(simple):
-    R = set(simple)
-    while True:
-        new = {reflect(b, a) for b in R for a in simple} - R
-        if not new:
-            return R
-        R |= new
-
-def weyl_order(R, simple):
-    """W 를 근 위의 순열군으로 실현해 위수를 센다"""
-    R = sorted(R)
-    idx = {r: i for i, r in enumerate(R)}
-    gens = [tuple(idx[reflect(r, a)] for r in R) for a in simple]
-    ident = tuple(range(len(R)))
-    G, frontier = {ident}, [ident]
-    while frontier:
-        nxt = []
-        for p in frontier:
-            for g in gens:
-                q = tuple(p[g[i]] for i in range(len(R)))
-                if q not in G:
-                    G.add(q)
-                    nxt.append(q)
-        frontier = nxt
-    return len(G)
-
-def cartan(simple):
-    return [[Fraction(2 * ip(b, a), ip(a, a)) for b in simple] for a in simple]
-
-systems = {
-    "A_2": [(1, -1, 0), (0, 1, -1)],      # e_i - e_j 꼴
-    "B_2": [(1, -1), (0, 1)],             # 긴근과 짧은근
-    "G_2": [(1, -1, 0), (-1, 2, -1)],     # 30도 배치
-}
-for name, simple in systems.items():
-    simple = [tuple(Fraction(x) for x in a) for a in simple]
-    R = closure(simple)
-    print(name, "근:", len(R), "Weyl 위수:", weyl_order(R, simple),
-          "Cartan:", [[int(x) for x in row] for row in cartan(simple)])
-# A_2 근: 6  Weyl 위수: 6   Cartan: [[2, -1], [-1, 2]]
-# B_2 근: 8  Weyl 위수: 8   Cartan: [[2, -1], [-2, 2]]
-# G_2 근: 12 Weyl 위수: 12  Cartan: [[2, -3], [-1, 2]]
-```
-
 세 경우 모두 랭크가 2 이고 근이 평면 위에 놓이며, 단순근 사이의 각도 $120^\circ,135^\circ,150^\circ$ 의 차이가 근의 개수를 $6,8,12$ 로 가른다. $G_2$ 의 Cartan 행렬에 나타나는 $-3$ 은 근 길이 비가 $\sqrt3$ 이라는 뜻이고 $G_2$ 에서만 나온다.
 
 랭크 2 에서는 Weyl 군이 정 $n$ 각형의 이면체군이라 위수가 근 개수와 같다. $A_3$ 에서는 근 12 개에 Weyl 군 위수가 24 다.
 
-## 표현론의 뼈대
+## 표현론에서의 역할
 
 근계가 정해지면 유한차원 기약표현이 **지배적 정수 무게** $\lambda\in P^+$ 로 분류되고 지표가 Weyl 지표 공식으로 주어진다.
 
@@ -216,7 +161,7 @@ $$
 \dim V_\lambda=\prod_{\alpha\in\Phi^+}\frac{(\lambda+\rho,\alpha)}{(\rho,\alpha)}
 $$
 
-표현의 지표가 유한군 $W$ 위의 합으로 계산된다. $\mathfrak{sl}_2$ 의 사다리 논법을 근계 전체로 조직화한 결과다.
+표현의 지표가 유한군 $W$ 위의 합으로 계산된다. $\mathfrak{sl}_2$ 의 올림·내림 논법을 근계 전체로 조직화한 결과다.
 
 ## ADE 현상
 

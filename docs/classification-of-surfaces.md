@@ -164,48 +164,6 @@ $$
 
 다각형 단어가 주어지면 꼭짓점 동치류를 [서로소 집합 자료구조](union-find.md)로 세어 Euler 지표를 얻고, 문자의 방향 패턴으로 가향성을 판정한다. 둘이 완전 불변량이므로 곡면이 결정된다.
 
-```python
-def classify(word):
-    """다각형 변 단어에서 닫힌 곡면을 식별한다.
-    소문자는 변의 정방향, 대문자는 역방향을 뜻한다 (예: 토러스 = 'abAB')."""
-    n = len(word)
-    parent = list(range(n))
-
-    def find(x):
-        while parent[x] != x:
-            parent[x] = parent[parent[x]]
-            x = parent[x]
-        return x
-
-    def union(x, y):
-        rx, ry = find(x), find(y)
-        if rx != ry:
-            parent[rx] = ry
-
-    # 변 i 의 시작 꼭짓점은 i, 끝 꼭짓점은 (i+1) % n
-    for i in range(n):
-        for j in range(i + 1, n):
-            if word[i].lower() != word[j].lower():
-                continue
-            if word[i].islower() == word[j].islower():   # 같은 방향으로 붙인다
-                union(i, j)
-                union((i + 1) % n, (j + 1) % n)
-            else:                                        # 반대 방향으로 붙인다
-                union(i, (j + 1) % n)
-                union((i + 1) % n, j)
-
-    V = len({find(i) for i in range(n)})
-    chi = V - n // 2 + 1                  # 면은 다각형 하나
-    orientable = all(word.count(c) == 1 for c in set(word.lower()))
-    if orientable:
-        g = (2 - chi) // 2
-        name = "구" if g == 0 else f"토러스 {g} 개의 연결합 (종수 {g})"
-    else:
-        k = 2 - chi
-        name = f"사영평면 {k} 개의 연결합" + (" = Klein 병" if k == 2 else "")
-    return {"chi": chi, "orientable": orientable, "surface": name}
-```
-
 ## 기하학과의 연결
 
 Gauss–Bonnet 정리는 분류를 기하로 옮긴다. 닫힌 곡면 위의 임의의 Riemann 계량에 대해 Gauss [곡률](curvature.md)의 적분이 위상만으로 결정된다.

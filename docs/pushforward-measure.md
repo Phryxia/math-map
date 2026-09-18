@@ -76,31 +76,6 @@ $$
 
 확률론의 명제 대부분이 분포에만 의존하므로 표본공간의 선택은 편의의 문제다. 임의의 분포는 $[0,1]$ 위의 균등분포를 밀어서 만들 수 있고, 누적분포함수의 역함수를 쓰는 이 구성이 역변환 표본추출법이다.
 
-```python
-import random
-
-def inverse_transform(cdf_inv, n):
-    """균등분포를 밀어 원하는 분포를 얻는다: (F^{-1})_* Uniform = 목표분포."""
-    return [cdf_inv(random.random()) for _ in range(n)]
-
-import math
-# 지수분포 F(x) = 1 - e^{-x}, F^{-1}(u) = -ln(1-u)
-sample = inverse_transform(lambda u: -math.log(1 - u), 200000)
-print(sum(sample) / len(sample))            # 평균 ~ 1.0
-print(sum(1 for s in sample if s > 1) / len(sample), math.exp(-1))
-
-def pushforward_counts(base, phi):
-    """유한 표본공간에서 상측도를 직접 계산한다."""
-    out = {}
-    for x, p in base.items():
-        out[phi(x)] = out.get(phi(x), 0) + p
-    return out
-
-die = {i: 1 / 6 for i in range(1, 7)}
-print(pushforward_counts(die, lambda i: "홀" if i % 2 else "짝"))
-print(pushforward_counts(die, lambda i: min(i, 3)))
-```
-
 공정한 주사위에서 홀짝을 보면 각각 $1/2$ 이고, $\min(i,3)$ 으로 뭉개면 $3$ 에 $4/6$ 이 몰린다.
 
 ## 밀도와 Jacobi 행렬식

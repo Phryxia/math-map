@@ -120,38 +120,7 @@ ELBO 가 $\log p(x)$ 의 하계일 뿐 표현 학습의 목적함수가 아닌 �
 
 재매개화 없이도 기울기를 추정할 수는 있다. $\nabla_\phi\mathbb E_q[f]=\mathbb E_q[f\nabla_\phi\log q]$ 라는 항등식을 쓰는 점수함수 추정량(REINFORCE)이 그것이고, $q$ 가 이산이어도 쓸 수 있다는 장점이 있다. 대신 분산이 크다.
 
-```python
-import numpy as np
-rng = np.random.default_rng(0)
-w, s2, x = 2.0, 0.5, 1.3
-mu, var = 0.0, 1.0                      # 최적이 아닌 q 에서 기울기를 재 본다
-
-def f(z):                               # log p(x,z) - log q(z)
-    return (-0.5 * (np.log(2 * np.pi) + z ** 2)
-            - 0.5 * (np.log(2 * np.pi * s2) + (x - w * z) ** 2 / s2)
-            + 0.5 * (np.log(2 * np.pi * var) + (z - mu) ** 2 / var))
-
-def grad_reparam(n):                    # z = mu + sqrt(var)·eps 로 mu 에 대해 미분
-    eps = rng.standard_normal(n)
-    z = mu + np.sqrt(var) * eps
-    return (z - w * (w * z - x) / s2).mean()      # d/dz [log p(x,z)] · dz/dmu
-
-def grad_score(n):                      # REINFORCE: E[f(z)·d/dmu log q(z)]
-    z = mu + np.sqrt(var) * rng.standard_normal(n)
-    return (f(z) * (z - mu) / var).mean()
-
-for n in (10, 100, 1000):
-    r = np.array([grad_reparam(n) for _ in range(500)])
-    s = np.array([grad_score(n) for _ in range(500)])
-    print(f"표본 {n:>4}개: 재매개화 추정량 {r.mean():+.3f} ± {r.std():.3f}"
-          f"   |   점수함수 추정량 {s.mean():+.3f} ± {s.std():.3f}")
-
-# 표본   10개: 재매개화 추정량 +5.232 ± 2.204   |   점수함수 추정량 +5.306 ± 6.468
-# 표본  100개: 재매개화 추정량 +5.206 ± 0.742   |   점수함수 추정량 +5.245 ± 1.784
-# 표본 1000개: 재매개화 추정량 +5.185 ± 0.229   |   점수함수 추정량 +5.191 ± 0.564
-```
-
-두 추정량 모두 불편이라 평균이 같은 값으로 모이지만 표준편차가 3 배 가까이 차이 난다. 모수가 수백만 개이고 미니배치마다 표본을 하나만 쓰는 실제 상황에서는 차이가 더 커져 점수함수 추정량으로는 학습이 진행되지 않는다.
+두 추정량 모두 불편이지만 점수함수 추정량의 분산이 훨씬 크다. 모수가 수백만 개이고 미니배치마다 표본을 하나만 쓰는 실제 상황에서는 차이가 더 커져 점수함수 추정량으로는 학습이 진행되지 않는다.
 
 재매개화는 Gauss 분포가 위치–척도족이라 가능하다. 이산 잠재변수에는 그대로 적용되지 않고, 연속 완화(Gumbel–softmax)로 우회하거나 점수함수 추정량에 기저선을 붙여 분산을 줄인다.
 

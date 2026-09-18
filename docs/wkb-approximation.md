@@ -149,35 +149,6 @@ $$
 
 양자화 조건은 퍼텐셜 하나만 적분하면 되므로 미분방정식을 수치로 풀지 않고 고윳값의 점근을 얻는다.
 
-```python
-import math
-
-def action(V, a, b, E, n_grid=4000):
-    """작용 적분. 회전점의 제곱근 특이점을 sin 치환으로 없앤다."""
-    c, r = (a + b) / 2, (b - a) / 2
-    h = math.pi / n_grid
-    total = 0.0
-    for k in range(n_grid + 1):
-        th = -math.pi / 2 + k * h
-        x = c + r * math.sin(th)
-        p = math.sqrt(max(0.0, 2 * (E - V(x))))
-        w = 1.0 if 0 < k < n_grid else 0.5
-        total += w * p * r * math.cos(th)
-    return total * h
-
-def level(V, turning, n, lo=1e-9, hi=1e3):
-    """작용이 pi*(n+1/2) 가 되는 E 를 이분법으로 찾는다 (hbar = m = 1)."""
-    target = math.pi * (n + 0.5)
-    f = lambda E: action(V, *turning(E), E) - target
-    for _ in range(200):
-        mid = (lo + hi) / 2
-        if f(mid) < 0:
-            lo = mid
-        else:
-            hi = mid
-    return (lo + hi) / 2
-```
-
 $V=\lvert x\rvert$ 의 정확한 준위는 Airy 함수의 영점으로 주어진다. $n=0$ 에서 정확값 $0.8086$ 에 대해 WKB 가 $0.8853$ 으로 9% 넘게 어긋나고, $n=5$ 에서는 정확값 $4.3817$ 에 대해 $4.3790$ 으로 0.1% 이내다. 낮은 준위에서 오차가 크고 큰 $n$ 에서 좋아진다.
 
 ## 파동 문제

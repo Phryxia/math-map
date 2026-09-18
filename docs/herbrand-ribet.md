@@ -20,7 +20,7 @@ $$
 
 꼴의 가약이지만 불분해인 표현이 되고, $\ast\ne0$ 이 정의하는 확대가 류군의 비자명한 원소다. 해석적 조건 $p\mid B_k$ 가 모듈러 형식을 거쳐 이데알류로 번역된다.
 
-Mazur–Wiles 의 [Iwasawa 주추측](iwasawa-main-conjecture.md) 증명이 이 논법을 탑 전체로 밀어 올린 것이고, Skinner–Urban 의 타원곡선 주추측도 같은 뼈대를 쓴다.
+Mazur–Wiles 의 [Iwasawa 주추측](iwasawa-main-conjecture.md) 증명이 이 논법을 탑 전체로 밀어 올린 것이고, Skinner–Urban 의 타원곡선 주추측도 같은 구조를 쓴다.
 
 # 직관
 

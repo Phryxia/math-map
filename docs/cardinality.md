@@ -55,26 +55,6 @@ $A$ 의 부분집합 전체를 $\mathcal P(A)$ 로 쓴다. $|\mathcal P(A)| = 2^
 
 정의할 수 있는 실수는 가산 개뿐인데 실수는 비가산이므로 이름 붙일 수 없는 실수가 존재한다.
 
-```python
-from fractions import Fraction
-from itertools import count
-
-def enumerate_rationals(limit):
-    """|p| + q 가 작은 순서로 훑되 기약분수만 취한다."""
-    seen, out = set(), []
-    for s in count(1):
-        for q in range(1, s + 1):
-            for p in range(-(s - q), s - q + 1):
-                r = Fraction(p, q)
-                if r not in seen:
-                    seen.add(r)
-                    out.append(r)
-                    if len(out) == limit:
-                        return out
-
-print(enumerate_rationals(10))
-```
-
 각 단계의 후보가 유한하고 모든 유리수가 언젠가 등장하므로 이 절차는 $\mathbb{Q}$ 의 나열이다.
 
 ## 대각선 논법

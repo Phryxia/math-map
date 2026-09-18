@@ -181,120 +181,15 @@ $p=2$ 에서는 Kedlaya 의 가설이 깨져서 Mestre 의 AGM 이나 Satoh 의 
 
 ## Hasse 불변량에 의한 점 세기
 
-다음은 $y^2=x^3+x+1$ 에서 Hasse 불변량을 계산해 $a_p\bmod p$ 를 얻는다.
-
-```python
-def polymul(u, v, p):
-    w = [0] * (len(u) + len(v) - 1)
-    for i, ui in enumerate(u):
-        if ui:
-            for j, vj in enumerate(v):
-                w[i + j] = (w[i + j] + ui * vj) % p
-    return w
-
-def a_p_bruteforce(p, a, b):
-    """a_p = p + 1 - #E(F_p),  E : y^2 = x^3 + ax + b."""
-    n = 1                                            # 무한원점
-    for x in range(p):
-        c = (x * x % p * x + a * x + b) % p
-        n += 1 if c == 0 else (2 if pow(c, (p - 1) // 2, p) == 1 else 0)
-    return p + 1 - n
-
-def hasse_invariant(p, a, b):
-    """f(x)^{(p-1)/2} 의 x^{p-1} 계수.  = a_p mod p."""
-    f = [b % p, a % p, 0, 1]                         # x^3 + ax + b
-    r, e, base = [1], (p - 1) // 2, f
-    while e:
-        if e & 1: r = polymul(r, base, p)
-        base, e = polymul(base, base, p), e >> 1
-    return r[p - 1] % p if p - 1 < len(r) else 0
-
-CURVE = (1, 1)                                       # y^2 = x^3 + x + 1
-PRIMES = [5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71]
-
-print(f"{'p':>4} {'a_p (직접 셈)':>14} {'Hasse 불변량':>14} {'a_p mod p':>11}  일치")
-ok_all = True
-for p in PRIMES:
-    ap, h = a_p_bruteforce(p, *CURVE), hasse_invariant(p, *CURVE)
-    ok = (ap - h) % p == 0
-    ok_all &= ok
-    print(f"{p:>4} {ap:>14} {h:>14} {ap % p:>11}  {ok}")
-print(f"\n  모든 소수에서 합동 성립 : {ok_all}")
-
-#    p   a_p (직접 셈)      Hasse 불변량   a_p mod p  일치
-#    5             -3              2           2  True
-#    7              3              3           3  True
-#   11             -2              9           9  True
-#   13             -4              9           9  True
-#   17              0              0           0  True
-#   19             -1             18          18  True
-#   23             -4             19          19  True
-#   29             -6             23          23  True
-#   31             -1             30          30  True
-#   37            -10             27          27  True
-#   41              7              7           7  True
-#   43             10             10          10  True
-#   47            -12             35          35  True
-#   53             -4             49          49  True
-#   59             -3             56          56  True
-#   61             12             12          12  True
-#   67             12             12          12  True
-#   71             13             13          13  True
-#
-#   모든 소수에서 합동 성립 : True
-```
-
-다항식 거듭제곱의 계수 하나가 $a_p\bmod p$ 를 담는다.
+$y^2=x^3+x+1$ 에서 Hasse 불변량은 $(x^3+x+1)^{(p-1)/2}$ 의 $x^{p-1}$ 계수이고, 이 계수 하나가 $a_p\bmod p$ 를 담는다.
 
 ## Weil 한계에 의한 복원
 
 구간 $(-2\sqrt p,2\sqrt p)$ 의 길이가 $4\sqrt p$ 이므로 $4\sqrt p<p$ 이면 후보가 유일하다. 충분조건이므로 더 작은 $p$ 에서도 유일할 수 있다.
 
-```python
-print(f"{'p':>4} {'4√p':>8} {'후보 수':>8} {'복원한 a_p':>11} {'참값':>7}  일치")
-for p in PRIMES:
-    h, lim = hasse_invariant(p, *CURVE), 2 * p ** 0.5
-    cands = [c for c in range(-int(lim), int(lim) + 1) if (c - h) % p == 0]
-    ap = a_p_bruteforce(p, *CURVE)
-    rec = cands[0] if len(cands) == 1 else None
-    print(f"{p:>4} {4*p**0.5:>8.3f} {len(cands):>8} "
-          f"{str(rec):>11} {ap:>7}  {rec == ap if rec is not None else '유일하지 않음'}")
-
-#   구간 (-2√p, 2√p) 의 길이가 4√p.  4√p < p (곧 p > 16) 이면 반드시 유일하다.
-#   충분조건일 뿐이라 더 작은 p 에서도 유일할 수 있다.
-#    p      4√p     후보 수     복원한 a_p      참값  일치
-#    5    8.944        2        None      -3  유일하지 않음
-#    7   10.583        2        None       3  유일하지 않음
-#   11   13.266        1          -2      -2  True
-#   13   14.422        1          -4      -4  True
-#   17   16.492        1           0       0  True
-#   19   17.436        1          -1      -1  True
-#   23   19.183        1          -4      -4  True
-#   29   21.541        1          -6      -6  True
-#   31   22.271        1          -1      -1  True
-#   37   24.331        1         -10     -10  True
-#   41   25.612        1           7       7  True
-#   43   26.230        1          10      10  True
-#   47   27.423        1         -12     -12  True
-#   53   29.120        1          -4      -4  True
-#   59   30.725        1          -3      -3  True
-#   61   31.241        1          12      12  True
-#   67   32.741        1          12      12  True
-#   71   33.705        1          13      13  True
-```
-
 $p\ge11$ 에서 후보가 하나로 좁혀지고 그것이 참값이다. $p=5,7$ 에서는 정밀도가 모자라며, 정밀도를 $p^2$ 로 올리면 풀린다. Kedlaya 알고리즘은 이 절차에 정밀도와 종수를 올리는 장치를 더한 것이다.
 
 ## 초특이 소수
-
-```python
-for p in PRIMES:
-    if hasse_invariant(p, *CURVE) == 0:
-        print(f"  p={p:3d}  Hasse 불변량 = 0   a_p = {a_p_bruteforce(p, *CURVE)}"
-              f"   Newton 다각형 기울기 1/2, 1/2  →  초특이")
-
-#   p= 17  Hasse 불변량 = 0   a_p = 0   Newton 다각형 기울기 1/2, 1/2  →  초특이
-```
 
 $p\le71$ 에서 이 곡선이 초특이가 되는 소수는 $17$ 하나다. 초특이 소수는 희박하며 Elkies 가 무한히 많음을 증명했다. [Newton 다각형](newton-polygon.md)의 일반적 위치가 보통이라는 것과 같은 내용이다.
 

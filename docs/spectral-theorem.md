@@ -55,7 +55,7 @@ $$
 
 이고 노름 제곱이 양수이므로 $\lambda=\overline\lambda$ 다[^1].
 
-## 증명의 뼈대
+## 증명의 요지
 
 복소 내적 공간에서 귀납법으로 증명한다. 차원이 1 이상이면 특성다항식이 근을 가지므로 고윳값 $\lambda$ 과 단위 고유벡터 $v$ 가 있다. $w$ 가 $v$ 와 직교하면 $\langle Tw,v\rangle=\langle w,Tv\rangle=\lambda\langle w,v\rangle=0$ 이므로 $v$ 의 직교여공간은 $T$ 불변이다. 그 공간은 차원이 1 작고 제한한 연산자도 자기수반이므로 귀납가정이 적용되며, 얻은 고유벡터들이 정규직교 고유기저를 이룬다.
 
@@ -121,13 +121,6 @@ $$
 ## 그래프와 신호
 
 [그래프 Laplacian](graph-laplacian.md)은 대칭 양의 준정부호이므로 실고윳값과 직교 고유기저를 갖는다. 최소 고윳값 0 의 중복도가 연결성분 개수이고, 두 번째 고윳값이 확장성과 clustering 을 재며, [유효저항](effective-resistance.md)과 [스펙트럼 sparsification](spectral-sparsification.md)의 보증이 이 스펙트럼으로 서술된다. 순환행렬은 [이산 Fourier 변환](fourier.md) 행렬로 대각화되므로 convolution 이 곱셈이 된다.
-
-```python
-import numpy as np
-A = np.array([[2., 1.], [1., 2.]])
-lam, Q = np.linalg.eigh(A)        # 대칭 전용 루틴: 실고윳값, 직교 Q
-# lam = [1., 3.],  A = Q diag(lam) Q^T,  Q^T Q = I
-```
 
 무한차원으로의 확장은 compact 자기수반 연산자와 Hilbert 공간의 스펙트럼 이론으로 이어지며, 고윳값 없이 연속 스펙트럼만 있는 경우가 생긴다.
 

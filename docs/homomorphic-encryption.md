@@ -78,58 +78,9 @@ $|2r+m|<p/2$ 인 동안 정확하다. 덧셈과 곱셈이 평문의 XOR 과 AND 
 
 ## 깊이 한계
 
-DGHV 구현에서 잡음 예산과 깊이의 관계가 드러난다.
+신선한 암호문끼리 곱하면 잡음 비트가 매번 초기 잡음만큼 더해지고, 같은 암호문을 제곱하면 잡음 비트가 두 배씩 는다. 곱셈 횟수가 같아도 회로의 모양에 따라 도달하는 깊이가 다르다.
 
-```python
-import random
-random.seed(7)
-
-# DGHV: 정수 위의 완전동형암호. 비밀은 홀수 p, 암호문은 c = q·p + 2r + m.
-P_BITS, Q_BITS, R_BITS = 512, 2048, 16
-p = random.getrandbits(P_BITS) | 1 | (1 << (P_BITS - 1))
-
-def enc(m):
-    return random.getrandbits(Q_BITS) * p + 2 * random.getrandbits(R_BITS) + m
-
-def dec(c):
-    r = c % p
-    if r > p // 2: r -= p                      # 중심 잉여
-    return r % 2
-
-def noise(c):
-    r = c % p
-    if r > p // 2: r -= p
-    return abs(r).bit_length()                 # 잡음 |2r+m| 의 비트 수
-
-a, b = enc(1), enc(0)
-print(f"평문 복원: dec(a)={dec(a)}, dec(b)={dec(b)}")
-print(f"덧셈(XOR): dec(a+b)={dec(a + b)},  곱셈(AND): dec(a*b)={dec(a * b)}")
-print(f"잡음 비트: a={noise(a)}, a+b={noise(a + b)}, a*b={noise(a * b)}, p={p.bit_length()}\n")
-
-c = enc(1)
-for d in range(40):                            # 신선한 암호문을 계속 곱한다
-    if dec(c) != 1:
-        print(f"  깊이 {d} 에서 복호 실패 (잡음 {noise(c)} 비트 >= p 의 {p.bit_length()} 비트)")
-        break
-    if d % 8 == 0: print(f"  깊이 {d:>2}: 잡음 {noise(c):>3} 비트, 복호 성공")
-    c = c * enc(1)
-
-c = enc(1)
-for d in range(10):                            # 같은 암호문을 제곱한다
-    if dec(c) != 1:
-        print(f"  깊이 {d} 에서 복호 실패 (잡음 {noise(c)} 비트 >= p 의 {p.bit_length()} 비트)")
-        break
-    print(f"  깊이 {d:>2}: 잡음 {noise(c):>4} 비트, 복호 성공")
-    c = c * c
-
-# 잡음 비트: a=16, a+b=18, a*b=33, p=512
-# 신선한 암호문 곱: 깊이 0 에서 16 비트, 32 에서 510 비트, 35 에서 복호 실패
-# 제곱 반복:       깊이 0 에서 17 비트, 5 에서 511 비트, 7 에서 복호 실패
-```
-
-신선한 암호문을 계속 곱하면 잡음이 매번 초기 잡음만큼(17 비트) 더해져 35 층까지 가고, 같은 암호문을 제곱하면 잡음 비트가 두 배씩 되어 6 층에서 끝난다. 곱셈 횟수가 같아도 회로의 모양에 따라 깊이 비용이 다르다.
-
-깊이 6 의 출력은 잡음이 $p/2$ 를 넘어 중심 잉여가 감긴 뒤이므로 복호 성공이 우연이다. 잡음 예산을 넘긴 암호문은 복호가 틀렸다는 신호를 주지 않으며, 실무에서 파라미터를 보수적으로 잡는 근거가 된다.
+잡음이 $p/2$ 를 넘으면 중심 잉여가 감겨 복호 성공이 우연이 된다. 잡음 예산을 넘긴 암호문은 복호가 틀렸다는 신호를 주지 않으며, 실무에서 파라미터를 보수적으로 잡는 근거가 된다.
 
 ## 비용
 

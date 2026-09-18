@@ -157,30 +157,6 @@ $$
 +\sum_{k=1}^{K}\frac{B_{2k}}{(2k)!}\thinspace\frac{\Gamma(s+2k-1)}{\Gamma(s)}\thinspace N^{-s-2k+1}+R_K
 $$
 
-우변은 $s=1$ 의 극점을 빼면 $s$ 의 정칙함수이므로 이 식이 $\zeta$ 의 해석적 연속이다. $\zeta(-1)=-\tfrac1{12}$ 도 같은 코드로 나온다.
-
-```python
-from fractions import Fraction as F
-from math import comb, factorial, pi
-
-M = 40                                              # Bernoulli 수 준비
-B = [F(0)] * (M + 1); B[0] = F(1)
-for n in range(1, M + 1):
-    B[n] = -sum(comb(n + 1, k) * B[k] for k in range(n)) / F(n + 1)
-
-def zeta(s, N=10, K=8):
-    t = sum(n ** (-s) for n in range(1, N)) + N ** (1.0 - s) / (s - 1.0) + 0.5 * N ** (-s)
-    for k in range(1, K + 1):
-        poch = 1.0                                  # s(s+1)...(s+2k-2)
-        for j in range(2 * k - 1):
-            poch *= s + j
-        t += float(B[2 * k]) / factorial(2 * k) * poch * N ** (-s - 2 * k + 1)
-    return t
-
-zeta(0.5)     # -1.4603545088095877   임계선 왼쪽
-zeta(-1.0)    # -0.0833333333333333 = -1/12
-```
-
 $N$ 을 고정하고 $K$ 를 늘리면 오차가 $K\approx\pi N$ 에서 최소를 찍고 되돌아선다. $N=4$ 이면 최적 절단이 $k^\ast\approx12.6$ 이고 그 자리의 오차가 $e^{-8\pi}$ 규모다. 점근급수의 정확도 상한이 계산에서 이렇게 나타난다.
 
 ## Stirling 급수

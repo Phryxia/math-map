@@ -74,43 +74,6 @@ $$
 
 도청자는 $g, g^a, g^b$ 를 보지만 $g^{ab}$ 를 얻으려면 CDH 를 풀어야 한다.
 
-## 계산
-
-```python
-import math, random
-
-p, g = 1000003, 2          # p 는 소수, g 는 원시근 후보
-
-def bsgs(g, h, p):
-    """Shanks 의 baby-step giant-step: g^x = h (mod p) 를 O(sqrt(p)) 에."""
-    m = math.isqrt(p - 1) + 1
-    table = {}
-    e = 1
-    for j in range(m):                       # baby step: g^j
-        table.setdefault(e, j)
-        e = e * g % p
-    factor = pow(g, -m, p)                   # g^{-m}
-    e = h
-    for i in range(m):                       # giant step: h * g^{-im}
-        if e in table:
-            return i * m + table[e]
-        e = e * factor % p
-    return None
-
-x_true = 726431
-h = pow(g, x_true, p)
-x = bsgs(g, h, p)
-print("찾은 x:", x, " 검증:", pow(g, x, p) == h)
-
-# Diffie-Hellman: 두 사람이 같은 비밀을 얻는다
-rng = random.Random(7)
-a, b = rng.randrange(2, p - 1), rng.randrange(2, p - 1)
-A, B = pow(g, a, p), pow(g, b, p)            # 공개로 주고받는 값
-print("공유 비밀 일치:", pow(B, a, p) == pow(A, b, p) == pow(g, a * b, p))
-```
-
-백만 규모에서는 표가 천 개 남짓이다. 안전한 크기는 $p$ 가 2048 비트 이상이고 그때 $\sqrt p$ 는 $2^{1024}$ 다.
-
 # 성질
 
 ## 일반 군에서의 하한
@@ -127,7 +90,7 @@ $$
 L_p[1/3,c]=\exp\Big((c+o(1))(\ln p)^{1/3}(\ln\ln p)^{2/3}\Big)
 $$
 
-정수 소인수분해와 같은 형태이고 두 문제의 최선 알고리즘이 같은 뼈대를 공유한다. RSA 와 유한체 Diffie–Hellman 의 권장 키 길이가 비슷한 것이 이 때문이다.
+정수 소인수분해와 같은 형태이고 두 문제의 최선 알고리즘이 같은 구조를 공유한다. RSA 와 유한체 Diffie–Hellman 의 권장 키 길이가 비슷한 것이 이 때문이다.
 
 작은 표수의 유한체에서는 2013 년 이후 준다항식 시간 알고리즘이 나와 $\mathbb F_{2^n}$ 기반 구성이 폐기되었다.
 

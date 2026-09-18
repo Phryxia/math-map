@@ -92,18 +92,6 @@ $$
 
 [벡터 공간](vector-spaces.md)과 [선형사상](linear-maps.md)은 계수가 체일 때 정의된다. 체에서 나눗셈이 가능하다는 성질이 Gauss 소거법의 pivot 나눗셈, 기저의 존재, 차원의 유일성을 보장한다. 계수를 $\mathbb{Z}$ 로 바꾸면 기저가 없는 유한생성 모듈(예: $\mathbb{Z}/2\mathbb{Z}$ )이 생긴다.
 
-## 유한체 위 계산
-
-$\mathbb{F}_p$ 위의 계산은 나머지 연산으로 그대로 구현된다. 역원은 Fermat의 소정리 또는 [유클리드 알고리즘](euclidean-algorithm.md)의 확장형으로 구한다.
-
-```python
-p = 7
-# F_p의 곱셈 역원 표: a * inv[a] = 1 (mod p)
-inv = {a: pow(a, p - 2, p) for a in range(1, p)}
-print(inv)          # {1: 1, 2: 4, 3: 5, 4: 2, 5: 3, 6: 6}
-print((3 * 5) % p)  # 1
-```
-
 ## 표수가 만드는 차이
 
 표수 $p$ 인 체에서는 $p$ 제곱 사상이 체 준동형이다. 이항계수 $p!/(k!(p-k)!)$ 가 $0<k<p$ 에서 $p$ 로 나누어지기 때문이다.

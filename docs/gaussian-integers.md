@@ -80,21 +80,6 @@ $d$ 가 제곱인수 없는 정수일 때 $\mathbb Z[\sqrt d\thinspace]$ 나 그
 
 두 Gauss 정수의 최대공약수는 [유클리드 알고리즘](euclidean-algorithm.md)을 노름에 대해 돌려 구한다. $p\equiv 1\pmod 4$ 인 $p$ 를 $a^2+b^2$ 으로 실제 분해할 때는 $x^2\equiv-1\pmod p$ 인 $x$ 를 구한 뒤 $\gcd(p,\ x+i)$ 를 계산한다.
 
-```python
-def gauss_gcd(a, b):
-    # a, b 는 (re, im) 튜플. 노름이 줄어드는 나눗셈을 반복한다.
-    while b != (0, 0):
-        n = b[0] * b[0] + b[1] * b[1]
-        # a / b = a * conj(b) / N(b) 를 가장 가까운 정수로 반올림
-        p = (a[0] * b[0] + a[1] * b[1], a[1] * b[0] - a[0] * b[1])
-        q = ((2 * p[0] + n) // (2 * n), (2 * p[1] + n) // (2 * n))
-        r = (a[0] - q[0] * b[0] + q[1] * b[1], a[1] - q[0] * b[1] - q[1] * b[0])
-        a, b = b, r
-    return a
-
-print(gauss_gcd((13, 0), (5, 1)))   # 5^2 = -1 mod 13 이므로 (-2, -3), 곧 13 = 2^2 + 3^2
-```
-
 ## 분기와 유체론
 
 소수가 $\mathbb Z[i]$ 에서 분기, 분열, 불활성 가운데 어느 쪽인지를 $p \bmod 4$ 가 결정한다는 사실은 [유체론](class-field-theory.md)이 다루는 현상의 가장 작은 예다. 일반적으로 아벨 확대에서 소수의 분해 유형은 도체(conductor)를 법으로 한 합동류로 결정되며, $\mathbb Q(i)/\mathbb Q$ 의 도체가 $4$ 다.

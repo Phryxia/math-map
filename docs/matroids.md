@@ -84,41 +84,6 @@ $$
 
 앞의 경로 그래프에서 가운데 가중치를 $3$ , 양 끝을 각각 $2$ 로 주면 탐욕법은 $3$ 을 얻고 최적해는 $4$ 다.
 
-```python
-def greedy_max(ground, indep, weight):
-    """무거운 순서로 훑으며 독립성을 유지하면 채택한다."""
-    chosen = []
-    for e in sorted(ground, key=weight, reverse=True):
-        if indep(chosen + [e]):
-            chosen.append(e)
-    return chosen, sum(weight(e) for e in chosen)
-
-
-def brute_max(ground, indep, weight):
-    from itertools import combinations
-    best = ([], 0)
-    for k in range(len(ground) + 1):
-        for c in combinations(ground, k):
-            if indep(list(c)) and sum(map(weight, c)) > best[1]:
-                best = (list(c), sum(map(weight, c)))
-    return best
-
-
-# 균등 matroid: 크기 2 이하면 독립
-U = ["a", "b", "c", "d"]
-w1 = {"a": 5, "b": 4, "c": 3, "d": 1}
-print(greedy_max(U, lambda S: len(S) <= 2, w1.get))     # (['a','b'], 9)
-print(brute_max(U, lambda S: len(S) <= 2, w1.get))      # (['a','b'], 9)
-
-# matroid 가 아닌 경우: 경로 v1 - v2 - v3 의 독립집합
-V = ["v1", "v2", "v3"]
-adj = {("v1", "v2"), ("v2", "v1"), ("v2", "v3"), ("v3", "v2")}
-ok = lambda S: all((x, y) not in adj for x in S for y in S)
-w2 = {"v1": 2, "v2": 3, "v3": 2}
-print(greedy_max(V, ok, w2.get))                        # (['v2'], 3)
-print(brute_max(V, ok, w2.get))                         # (['v1','v3'], 4)
-```
-
 ## 쌍대와 마이너
 
 기저의 여집합들을 기저로 삼으면 다시 matroid 가 되고 이것이 쌍대 matroid 다. 그래프 matroid 의 쌍대는 평면 그래프에서 쌍대 그래프의 matroid 와 일치하며, 이 대응이 평면성의 조합적 특징을 준다.

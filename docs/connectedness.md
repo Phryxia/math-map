@@ -157,33 +157,6 @@ graph TD
 
 중간값 정리의 위상적 형태는 근의 존재를 보장하는 도구다. 이분법(bisection)은 그 증명을 그대로 알고리즘으로 옮긴 것으로, 부호가 다른 두 끝점을 유지하며 구간을 절반씩 줄인다. 수렴 속도는 매 단계 오차 절반, 즉 선형이다. 더 빠른 수렴은 [축약사상 고정점 정리](banach-fixed-point.md)나 미분 정보를 쓰는 방법이 담당하지만, 이분법은 연속성만으로 작동한다는 강점이 있다.
 
-```python
-def bisect(f, a, b, tol=1e-12, max_iter=200):
-    """f 가 [a,b] 에서 연속이고 f(a), f(b) 의 부호가 다르면 근을 반환한다.
-    중간값 정리(= 구간의 연결성 + 연속상의 연결성)가 근의 존재를 보장한다."""
-    fa, fb = f(a), f(b)
-    if fa == 0: return a
-    if fb == 0: return b
-    if fa * fb > 0:
-        raise ValueError("부호가 같아 연결성 논증을 쓸 수 없다")
-    for _ in range(max_iter):
-        m = (a + b) / 2
-        fm = f(m)
-        if fm == 0 or (b - a) / 2 < tol:
-            return m
-        if fa * fm < 0:
-            b, fb = m, fm
-        else:
-            a, fa = m, fm
-    return (a + b) / 2
-
-
-if __name__ == "__main__":
-    import math
-    print(bisect(lambda x: x * x - 2, 0, 2))        # 1.4142135623...
-    print(bisect(lambda x: math.cos(x) - x, 0, 1))  # 0.7390851332...
-```
-
 ## 해석학과 기하
 
 - 연결 열린집합 위에서 도함수가 항상 $0$ 인 함수는 상수다. 증명의 핵심은 "국소상수 함수는 연결 공간에서 상수"라는 동치 조건이다([미분](derivative.md)).

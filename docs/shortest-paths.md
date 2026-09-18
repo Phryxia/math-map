@@ -70,11 +70,12 @@ $$
 
 ## Bellman–Ford
 
-```
-d[s] = 0, 나머지는 무한대
-|V| - 1 번 반복:
-    모든 간선 (u,v) 에 대해  d[v] = min(d[v], d[u] + w(u,v))
-한 번 더 반복해서 값이 줄어드는 간선이 있으면 음수 사이클
+```javascript
+d = Array(n).fill(Infinity); d[s] = 0;
+for (let i = 0; i < n - 1; i++)
+  for (const [u, v, w] of edges) d[v] = Math.min(d[v], d[u] + w);
+for (const [u, v, w] of edges)
+  if (d[u] + w < d[v]) return "음수 사이클";
 ```
 
 시간복잡도는 $O(|V||E|)$ 다[^1]. 반복 중 아무 값도 바뀌지 않으면 그 자리에서 멈춘다.
@@ -111,26 +112,7 @@ $$
 
 # 활용
 
-## 값 반복의 구현
-
-한 번의 훑기가 아무것도 바꾸지 못하면 멈추는 형태로 구현한다.
-
-```python
-INF = float('inf')
-
-def bellman_ford(n, edges, s):
-    """값 반복. 반환은 (거리, 음수 사이클 여부, 안정화까지 걸린 반복 횟수)."""
-    d = [INF] * n; d[s] = 0
-    for k in range(1, n + 1):
-        nd = d[:]
-        for u, v, w in edges:
-            if d[u] + w < nd[v]:
-                nd[v] = d[u] + w
-        if nd == d:                       # 고정점에 도달
-            return d, False, k - 1
-        d = nd
-    return d, True, n                     # n 번째에도 줄어들면 음수 사이클
-```
+## 값 반복의 종료
 
 간선을 살피는 순서는 고정점에 이르는 속도만 바꾸고 고정점 자체는 바꾸지 않는다. 음수 사이클이 있으면 반복이 $n$ 번째에도 멈추지 않으며, 멈추지 않는다는 것이 검출 신호다.
 

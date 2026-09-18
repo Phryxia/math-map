@@ -172,48 +172,7 @@ $$
 
 좌변은 정수이고 우변은 매끄러운 함수의 이중적분이다.
 
-```python
-from math import sin, cos, pi, sqrt
-
-def linking(c1, c2, n=300):
-    """Gauss 이음수 적분. c(s) 는 (위치, 접벡터) 를 준다."""
-    tot, h = 0.0, 2*pi/n
-    for i in range(n):
-        r1, d1 = c1((i+0.5)*h)
-        for j in range(n):
-            r2, d2 = c2((j+0.5)*h)
-            d = [r1[k]-r2[k] for k in range(3)]
-            cr = [d1[1]*d2[2]-d1[2]*d2[1],
-                  d1[2]*d2[0]-d1[0]*d2[2],
-                  d1[0]*d2[1]-d1[1]*d2[0]]
-            tot += sum(d[k]*cr[k] for k in range(3))/sqrt(sum(x*x for x in d))**3
-    return tot*h*h/(4*pi)
-
-# Hopf 링크: 수직으로 걸린 두 원
-hopf_a = lambda s: ([cos(s), sin(s), 0.0], [-sin(s), cos(s), 0.0])
-hopf_b = lambda t: ([1+cos(t), 0.0, sin(t)], [-sin(t), 0.0, cos(t)])
-# 떨어진 두 원
-un_a = lambda s: ([cos(s), sin(s), 0.0], [-sin(s), cos(s), 0.0])
-un_b = lambda t: ([5+cos(t), sin(t), 0.0], [-sin(t), cos(t), 0.0])
-# 원환면 위를 두 번 감는 쌍
-def torus(shift):
-    return lambda s: ([(2+cos(2*s+shift))*cos(s), (2+cos(2*s+shift))*sin(s), sin(2*s+shift)],
-                      [-2*sin(2*s+shift)*cos(s)-(2+cos(2*s+shift))*sin(s),
-                       -2*sin(2*s+shift)*sin(s)+(2+cos(2*s+shift))*cos(s), 2*cos(2*s+shift)])
-
-for name, a, b in [("Hopf 링크", hopf_a, hopf_b), ("떨어진 두 원", un_a, un_b),
-                   ("원환면 위 두 곡선", torus(0), torus(pi))]:
-    for n in [100, 300]:
-        print(f"  {name:18s} n={n:4d}: lk = {linking(a, b, n):+.6f}")
-
-#   Hopf 링크           n= 100: lk = -1.000000
-#   떨어진 두 원          n= 100: lk = +0.000000
-#   원환면 위 두 곡선       n= 100: lk = -2.000000
-```
-
-값이 $-1$ , $0$ , $-2$ 로 소수점 여섯째 자리까지 정수이고 부호는 곡선의 방향 규약이 정한다. 격자를 100 에서 300 으로 늘려도 값이 달라지지 않는다. 피적분함수가 $|\mathbf r_1-\mathbf r_2|^{-3}$ 이라 완만하지 않은데도 100 개 격자에서 이미 여섯째 자리까지 맞다.
-
-이 적분이 차수 사상의 적분 표현이기 때문이다. 사상 $T^2\to S^2$ 인 $(s,t)\mapsto(\mathbf r_1-\mathbf r_2)/|\mathbf r_1-\mathbf r_2|$ 가 구면의 부피형식을 당겨 온 것이 피적분함수이고 그 적분이 사상의 차수, 곧 정수다. 차수는 연속 변형에 불변이므로 격자를 성기게 잡아 곡선을 다르게 근사해도 같은 정수가 나온다. 수치적 안정성이 위상적 불변성의 결과다.
+우변이 정수인 것은 이 적분이 차수 사상의 적분 표현이기 때문이다. 사상 $T^2\to S^2$ 인 $(s,t)\mapsto(\mathbf r_1-\mathbf r_2)/|\mathbf r_1-\mathbf r_2|$ 가 구면의 부피형식을 당겨 온 것이 피적분함수이고 그 적분이 사상의 차수, 곧 정수다. 차수는 연속 변형에 불변이므로 격자를 성기게 잡아 곡선을 다르게 근사해도 같은 정수가 나온다. 수치적 안정성이 위상적 불변성의 결과다.
 
 ## 양자 불변량과 2 차 특성류
 

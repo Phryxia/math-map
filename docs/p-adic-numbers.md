@@ -152,59 +152,6 @@ $\mathbb Q_p$ 위에서도 미적분을 하지만 규칙이 다르다.
 
 ## 전개와 Hensel 올리기
 
-```python
-from fractions import Fraction
-
-def v_p(x, p):
-    """유리수 x 의 p 진 부치. v_p(0) = ∞ 는 None 으로 둔다."""
-    if x == 0: return None
-    n, d, v = x.numerator, x.denominator, 0
-    while n % p == 0: n //= p; v += 1
-    while d % p == 0: d //= p; v -= 1
-    return v
-
-def digits(x, p, k):
-    """x ∈ Z_p 의 p 진 전개 앞 k 자리. x = a0 + a1 p + a2 p² + ..."""
-    x, out = Fraction(x), []
-    for _ in range(k):
-        a = (x.numerator * pow(x.denominator, -1, p)) % p    # a ≡ x (mod p)
-        out.append(a)
-        x = (x - a) / p                                      # 한 자리 내려간다
-    return out
-
-p = 7
-print("Z_7 에서의 p 진 전개 (낮은 자리부터)")
-for x in (Fraction(-1), Fraction(1, 3), Fraction(2, 5), Fraction(100)):
-    print(f"  {str(x):>6} -> {digits(x, p, 8)}")
-
-def hensel(f, df, a, p, k):
-    """f(a) ≡ 0, f'(a) ≢ 0 (mod p) 인 a 를 mod p^k 의 해로 올린다."""
-    m = p
-    for _ in range(k - 1):
-        a = (a - f(a) * pow(df(a), -1, m*m)) % (m*m)         # 정밀도가 매 단계 두 배
-        m *= m
-    return a % p**k
-
-f, df = lambda x: x*x - 2, lambda x: 2*x                     # 3² = 2 (mod 7) 에서 출발
-print("\n√2 ∈ Z_7 를 한 자리씩 올린다")
-for k in range(1, 6):
-    r = hensel(f, df, 3, 7, k)
-    print(f"  mod 7^{k}: x = {r:<6}  v_7(x²-2) = {v_p(Fraction(r*r - 2), 7)}")
-
-# Z_7 에서의 p 진 전개 (낮은 자리부터)
-#      -1 -> [6, 6, 6, 6, 6, 6, 6, 6]
-#     1/3 -> [5, 4, 4, 4, 4, 4, 4, 4]
-#     2/5 -> [6, 2, 1, 4, 5, 2, 1, 4]
-#     100 -> [2, 0, 2, 0, 0, 0, 0, 0]
-#
-# √2 ∈ Z_7 를 한 자리씩 올린다
-#   mod 7^1: x = 3       v_7(x²-2) = 1
-#   mod 7^2: x = 10      v_7(x²-2) = 2
-#   mod 7^3: x = 108     v_7(x²-2) = 3
-#   mod 7^4: x = 2166    v_7(x²-2) = 4
-#   mod 7^5: x = 4567    v_7(x²-2) = 5
-```
-
 $-1$ 이 $\cdots666_7$ 인 것은 $6+6\cdot7+6\cdot49+\cdots=\frac6{1-7}=-1$ 이기 때문이다. $100=202_7$ 이라 전개가 유한하고 $2/5$ 처럼 분모가 $7$ 과 서로소인 유리수는 전개가 순환한다. 유리수인 것과 전개가 궁극적으로 순환하는 것이 동치라는 점은 십진 전개와 같다.
 
 ## 다항식 인수분해와 정확한 선형대수

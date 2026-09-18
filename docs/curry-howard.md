@@ -85,30 +85,9 @@ $$
 
 ## 조합자와 공리
 
-조합자 $K$ , $S$ 의 타입이 함의 논리의 두 공리이고, `curry`/`uncurry` 가 곱과 함수 사이의 수반을 준다.
+조합자 $K$ , $S$ 의 타입이 함의 논리의 두 공리이고, 커링과 그 역이 곱과 함수 사이의 수반을 준다.
 
-```python
-# K : A → (B → A)          "A 가 참이면 무엇을 가정해도 A 다"
-K = lambda a: lambda b: a
-
-# S : (A → B → C) → (A → B) → A → C     자기분배 공리
-S = lambda f: lambda g: lambda x: f(x)(g(x))
-
-# I : A → A 는 S 와 K 만으로 얻어진다. 즉 항등증명은 두 공리의 따름정리다
-I = S(K)(K(K))
-print(K(7)(9), S(lambda x: lambda y: x + y)(lambda x: x * 10)(3), I(42))
-# 7 33 42
-
-# (A ∧ B → C) ↔ (A → B → C) : 곱 타입과 함수 타입의 수반
-curry   = lambda f: lambda a: lambda b: f((a, b))
-uncurry = lambda f: lambda p: f(p[0])(p[1])
-f = lambda p: p[0] + p[1]
-print(curry(f)(2)(3), uncurry(curry(f))((2, 3)))   # 5 5
-
-# A ∨ ¬A 에 대응하는 항은 쓸 수 없다. 어느 쪽인지 고를 방법이 없기 때문이다
-```
-
-$I=S(K)(K(K))$ 는 $A \to A$ 가 두 공리에서 유도된다는 사실의 실행 가능한 판본이다. 마지막 줄이 대응의 경계다.
+$I=S(K)(K(K))$ 는 $A \to A$ 가 두 공리에서 유도된다는 것을 항으로 쓴 것이다.
 
 # 활용
 

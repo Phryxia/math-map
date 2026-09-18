@@ -90,7 +90,7 @@ $V$ 가 de Rham 이면 Hodge–Tate 이므로 $\Theta$ 의 대각화 가능성�
 
 ## Sen 작용소가 담는 정보
 
-$\Theta$ 는 Hodge–Tate 무게만 본다. $B_{\mathrm{dR}}$ 이 보는 여과와 $B_{\mathrm{cris}}$ 가 보는 Frobenius 는 $\Theta$ 에 나타나지 않으므로, Sen 이론은 사다리의 가장 아래 칸만 해명한다.
+$\Theta$ 는 Hodge–Tate 무게만 본다. $B_{\mathrm{dR}}$ 이 보는 여과와 $B_{\mathrm{cris}}$ 가 보는 Frobenius 는 $\Theta$ 에 나타나지 않으므로, Sen 이론은 네 층 가운데 가장 아래 층만 해명한다.
 
 확장은 여럿이다. $B_{\mathrm{dR}}$ 수준의 Sen 작용소(Fontaine), $(\varphi,\Gamma)$ 가군 위에서의 Sen 작용소(Colmez, Kedlaya–Liu), 프리즘 관점(Bhatt–Lurie)이 모두 $\Gamma$ 작용을 미분해 얻은 작용소가 표현의 불변량을 담는다는 착상을 따른다.
 

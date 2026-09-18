@@ -124,23 +124,6 @@ $$
 
 Borel 변환을 유리함수로 근사(Padé)한 뒤 Laplace 적분하는 방식이 표준 도구다. Euler 급수 $\sum (-1)^n n!\thinspace z^n$ 의 정확한 합은 $\int_0^\infty e^{-t}/(1+zt)\thinspace dt$ 이고, 최적 절단과 Borel 적분을 비교할 수 있다.
 
-```python
-import math
-
-def truncated(z, N):
-    return sum((-1) ** n * math.factorial(n) * z ** n for n in range(N))
-
-def borel_sum(z, M=20000, T=60.0):
-    # B[f](t) = sum (-1)^n (zt)^n = 1/(1+zt), 이어서 Laplace 적분
-    h = T / M
-    total = 0.0
-    for k in range(M + 1):
-        t = k * h
-        w = 1.0 if 0 < k < M else 0.5
-        total += w * math.exp(-t) / (1 + z * t)
-    return total * h
-```
-
 최적 절단 $N\approx1/z$ 에서의 오차는 $e^{-1/z}$ 규모이고, 절단으로는 그 벽을 넘지 못한다. Borel 합은 벽 너머의 값을 준다.
 
 ## 섭동론의 비섭동 효과

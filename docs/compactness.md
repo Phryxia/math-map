@@ -58,28 +58,6 @@ $K$ 의 모든 수열이 $K$ 의 점으로 수렴하는 부분수열을 가지�
 - 거리 공간에서 컴팩트인 것과 완비이면서 전유계인 것은 동치다. 무한 이산 공간이 실패하는 이유는 전유계가 아니기 때문이다.
 - 컴팩트 공간의 닫힌 부분집합은 컴팩트하다. Hausdorff 공간에서는 역으로 컴팩트 부분집합이 닫혀 있다.
 
-```python
-def needs_infinite_cover(intervals, target):
-    """target 을 덮는 열린구간 목록에서 유한 부분덮개를 그리디로 찾아본다."""
-    lo, hi = target
-    cur = lo
-    used = 0
-    while cur < hi:
-        best = None
-        for (a, b) in intervals:
-            if a < cur + 1e-15 < b or (a <= cur < b):
-                if best is None or b > best:
-                    best = b
-        if best is None or best <= cur:
-            return used, cur          # 여기서 막혔다
-        cur, used = best, used + 1
-    return used, None
-
-cover = [(1 / n, 1.0) for n in range(2, 200)]
-print(needs_infinite_cover(cover, (0.0, 1.0)))     # 0 을 덮는 구간이 없다
-print(needs_infinite_cover(cover, (0.02, 1.0)))    # 유한 개로 끝난다
-```
-
 $(0,1)$ 전체를 목표로 하면 좌단에서 막히고 좌단을 조금만 안쪽으로 옮기면 유한 개로 끝난다. 컴팩트성이 깨지는 지점이 경계에 몰려 있다.
 
 ## 연속함수와의 관계

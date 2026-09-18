@@ -109,18 +109,6 @@ compact 다양체는 유한 개의 chart 로 덮인다. 2차원 compact 연결 �
 
 정규값 정리를 구면에 적용하는 계산은 다음과 같다.
 
-```python
-import numpy as np
-
-# F(x) = x·x - 1 의 미분은 2x^T 이다. x ≠ 0 이면 전사이므로
-# 1 은 regular value 이고 F^{-1}(0) = S^{n-1} 은 (n-1)차원 다양체다.
-def dF(x):
-    return 2.0 * np.asarray(x)[None, :]
-
-x = np.array([0.6, 0.8, 0.0])
-print(np.linalg.matrix_rank(dF(x)))  # 1 = dim N, 따라서 전사
-```
-
 [^1]: J. M. Lee, *Introduction to Smooth Manifolds*, 2nd ed., Ch. 1 (다양체·chart·atlas), Ch. 3 (접공간), Ch. 5 (정규값 정리와 부분다양체). 정의의 요약은 USTC 강의노트에서도 확인할 수 있다. http://staff.ustc.edu.cn/~wangzuoq/Courses/21F-Manifolds/Notes/Lec02.pdf
 [^2]: J. Milnor, "On manifolds homeomorphic to the 7-sphere", *Annals of Mathematics* 64 (1956), 399–405. https://doi.org/10.2307/1969983
 

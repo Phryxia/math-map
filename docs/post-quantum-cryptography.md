@@ -88,7 +88,7 @@ $q$ 가 다항 크기의 소수면 판정 LWE 를 푸는 알고리즘에서 탐�
 
 Regev 가 2005 년에 증명한 정리는 평균적인 LWE 사례를 푸는 알고리즘에서 모든 $n$ 차원 격자의 근사 SVP 를 다항 근사비로 푸는 양자 알고리즘을 만든다. Peikert 가 법 $q$ 를 지수적으로 키우는 대가로 고전 환산을 얻었다.
 
-RSA 에서는 소수가 특수한 꼴이면 인수분해가 쉬워지듯 무작위로 뽑은 열쇠가 약한 사례일 위험이 있다. 격자에서는 무작위 사례가 최악 사례만큼 어려우므로 이 위험이 없다.
+RSA 에서는 소수가 특수한 꼴이면 인수분해가 쉬워지듯 무작위로 뽑은 키가 약한 사례일 위험이 있다. 격자에서는 무작위 사례가 최악 사례만큼 어려우므로 이 위험이 없다.
 
 환산의 상수와 근사비 때문에 정리를 그대로 쓴 파라미터는 비실용적으로 크다. 실무 파라미터는 아래의 공격 비용 추정으로 정한다.
 
@@ -96,54 +96,9 @@ RSA 에서는 소수가 특수한 꼴이면 인수분해가 쉬워지듯 무작�
 
 복호가 성립하려면 누적 오차가 $q/4$ 미만이어야 하고, 잡음이 작으면 LWE 가 쉬워진다. 파라미터 선택은 두 요구 사이의 창을 찾는 일이다.
 
-```python
-import random
-random.seed(2026)
-
-n, m, q, B = 16, 128, 3329, 2      # 차원, 표본 수, 법, 오차 크기
-
-def keygen():
-    s = [random.randrange(q) for _ in range(n)]
-    A = [[random.randrange(q) for _ in range(n)] for _ in range(m)]
-    e = [random.randint(-B, B) for _ in range(m)]
-    b = [(sum(a * x for a, x in zip(A[i], s)) + e[i]) % q for i in range(m)]
-    return s, (A, b)
-
-def encrypt(pk, bit):
-    A, b = pk
-    S = [i for i in range(m) if random.random() < 0.5]       # 무작위 부분집합
-    u = [sum(A[i][j] for i in S) % q for j in range(n)]
-    v = (sum(b[i] for i in S) + bit * (q // 2)) % q
-    return u, v
-
-def decrypt(s, ct):
-    u, v = ct
-    d = (v - sum(a * x for a, x in zip(u, s))) % q
-    return 0 if min(d, q - d) < q // 4 else 1                # 0 과 q/2 중 가까운 쪽
-
-s, pk = keygen()
-ok = sum(decrypt(s, encrypt(pk, bit)) == bit
-         for bit in (random.randrange(2) for _ in range(2000)))
-print(f"n={n}, q={q}, 오차 |e|<={B}: 2000 회 중 복호 성공 {ok}")
-
-u, v = encrypt(pk, 1)
-d = (v - sum(a * x for a, x in zip(u, s))) % q
-print(f"암호문 1 개의 복호 잔차 = {d}  (q/2 = {q//2}, 오차 여유 {abs(d - q//2)})")
-
-B = 200                                                      # 잡음을 키우면
-s2, pk2 = keygen()
-ok2 = sum(decrypt(s2, encrypt(pk2, bit)) == bit
-          for bit in (random.randrange(2) for _ in range(2000)))
-print(f"오차 |e|<=200 으로 키우면: 2000 회 중 복호 성공 {ok2}")
-
-# n=16, q=3329, 오차 |e|<=2: 2000 회 중 복호 성공 2000
-# 암호문 1 개의 복호 잔차 = 1652  (q/2 = 1664, 오차 여유 12)
-# 오차 |e|<=200 으로 키우면: 2000 회 중 복호 성공 1500
-```
-
 $q=3329$ 는 ML-KEM 이 쓰는 법이다. $|e|\le2$ 에서는 2000 회 모두 복호되고 $|e|\le200$ 에서는 성공률이 75% 로 떨어진다. 부분집합의 크기가 평균 64 이므로 오차가 64 개 더해지고, 그 합이 $q/4=832$ 를 넘기 때문이다.
 
-위 코드의 $n=16$ 은 LLL 로 바로 깨지는 예시 값이다. ML-KEM 은 $256$ 차 다항식환 위의 2 차에서 4 차 가군을 쓴다.
+$n=16$ 은 LLL 로 바로 깨지는 값이다. ML-KEM 은 $256$ 차 다항식환 위의 2 차에서 4 차 가군을 쓴다.
 
 ## 덧셈 준동형과 완전동형암호
 

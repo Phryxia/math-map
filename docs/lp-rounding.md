@@ -108,7 +108,7 @@ $$
 \prod_{S\ni e}(1-x^*_S)\ \le\ \exp\Big(-\sum_{S\ni e}x^*_S\Big)\ \le\ e^{-1}
 $$
 
-$t = \Theta(\log n)$ 번 독립 반복해 합집합을 취하면 실패 확률이 $n^{-\Theta(1)}$ 로 떨어지고 비용의 기댓값은 $t \cdot \mathrm{OPT}\_{LP}$ 가 된다. 확률 $\min(1, t\thinspace x^\ast_S)$ 로 한 번에 뽑아도 같다. 비용이 $t$ 배로 늘고 실패 확률이 $e^{-t}$ 로 줄어드는 교환이 이 기법의 뼈대다.
+$t = \Theta(\log n)$ 번 독립 반복해 합집합을 취하면 실패 확률이 $n^{-\Theta(1)}$ 로 떨어지고 비용의 기댓값은 $t \cdot \mathrm{OPT}\_{LP}$ 가 된다. 확률 $\min(1, t\thinspace x^\ast_S)$ 로 한 번에 뽑아도 같다. 비용이 $t$ 배로 늘고 실패 확률이 $e^{-t}$ 로 줄어드는 교환이 이 기법의 요지다.
 
 ## 간극이 1 인 경우
 

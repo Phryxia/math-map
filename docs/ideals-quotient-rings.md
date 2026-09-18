@@ -103,21 +103,6 @@ $\mathbb Z/12\mathbb Z$ 의 아이디얼은 $12$ 의 약수 $1, 2, 3, 4, 6, 12$ 
 
 체는 정역이므로 극대 아이디얼은 소 아이디얼이고 역은 성립하지 않는다. $\mathbb Z$ 에서 $(0)$ 은 소이지만 극대가 아니고, $(p)$ 는 둘 다이며, $(4)$ 는 어느 쪽도 아니다. 이 대응이 [소 아이디얼과 극대 아이디얼](prime-ideals.md)의 주제이며, $\mathbb Z/p\mathbb Z$ 가 체라는 사실도 여기서 자동으로 나온다.
 
-```python
-def ideal_of_zn(n, gens):
-    """Z/nZ 에서 gens 가 생성하는 아이디얼."""
-    from math import gcd
-    g = n
-    for a in gens:
-        g = gcd(g, a % n)
-    return sorted(k * g % n for k in range(n // g)) if g else [0]
-
-
-print(ideal_of_zn(12, [4]))      # [0, 4, 8]
-print(ideal_of_zn(12, [4, 6]))   # [0, 2, 4, 6, 8, 10]  -> (4)+(6)=(2)
-print(ideal_of_zn(12, [5]))      # 전체: 5 가 가역이라 (5) = Z/12Z
-```
-
 $\mathbb Z/n\mathbb Z$ 의 아이디얼이 모두 주 아이디얼이라는 것을 확인할 수 있다. 이는 $\mathbb Z$ 가 PID 이고 대응 정리가 그 성질을 몫으로 물려주기 때문이다.
 
 ## 중국인의 나머지 정리

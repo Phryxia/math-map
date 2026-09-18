@@ -36,21 +36,6 @@ $$
 
 곱셈은 도형 두 개를 세로로 쌓고 가운데 점들을 지우는 것이다. 어디에도 닿지 않는 닫힌 고리가 생기면 그 개수만큼 $\delta$ 를 곱한다. $\delta=n$ 일 때 고리 하나가 $\sum_i\langle e_i,e_i\rangle=n$ 이다.
 
-```python
-from math import factorial
-
-def matchings(points):
-    """점 집합의 완전 짝짓기 개수"""
-    if not points: return 1
-    a, rest = points[0], points[1:]
-    return sum(matchings([x for x in rest if x != b]) for b in rest)
-
-print(' k   S_k 의 차원 k!   B_k 의 차원 (2k-1)!!')
-for k in range(1, 8):
-    d = factorial(2*k) // (2**k * factorial(k))
-    print(f'{k:2d}   {factorial(k):10d}   {d:14d}')
-```
-
 $B_k$ 의 차원은 $(2k-1)!!$ 이고 $k=7$ 에서 $135135$ 로 $k!=5040$ 의 27 배다.
 
 ```mermaid

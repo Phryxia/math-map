@@ -56,35 +56,6 @@ m\equiv n\pmod{p-1},\quad (p-1)\nmid m
 \frac{B_m}{m}\equiv\frac{B_n}{n}\pmod p
 $$
 
-$\bmod\ p^{k}$ 판본까지 성립한다. $n\mapsto B_n/n$ 이 $\mathbb Z/(p-1)$ 의 각 잉여류 위에서 $p$ 진 연속함수로 확장되고, 그 확장이 Kubota–Leopoldt 의 $L_p(s,\chi)$ 다.
-
-```python
-# von Staudt-Clausen 과 Kummer 합동
-from fractions import Fraction as F
-from math import comb
-isprime = lambda n: n > 1 and all(n % d for d in range(2, int(n ** 0.5) + 1))
-
-N = 80
-B = [F(0)] * (N + 1); B[0] = F(1)
-for n in range(1, N + 1):                      # sum_{k<n} C(n+1,k) B_k = 0
-    B[n] = -sum(comb(n + 1, k) * B[k] for k in range(n)) / F(n + 1)
-
-for m in range(2, N + 1, 2):                   # von Staudt-Clausen
-    s = B[m] + sum(F(1, p) for p in range(2, m + 2) if isprime(p) and m % (p - 1) == 0)
-    assert s.denominator == 1
-
-for p in [5, 7, 11, 13, 17, 19]:               # Kummer 합동
-    for m in range(2, N + 1, 2):
-        for n in range(2, N + 1, 2):
-            if m == n or (m - n) % (p - 1) or m % (p - 1) == 0: continue
-            d = B[m] / m - B[n] / n
-            assert d.numerator % p == 0 and d.denominator % p
-
-print([p for p in range(3, 61) if isprime(p)
-       and any(B[k].numerator % p == 0 for k in range(2, p - 2, 2))])
-# [37, 59]   <- 60 이하의 비정칙 소수
-```
-
 $B_k$ 의 분자에 $p$ 가 숨어 있는 일은 드물지만 일어나고, 그런 $p$ 에서 순환체의 산술이 달라진다.
 
 ## $p-1$ 의 근원

@@ -112,44 +112,9 @@ Scott 이 이 이론을 만든 계기는 $D\cong D^D$ 를 만족하는 비자명
 
 ## 계승의 최소 고정점
 
-부분함수를 `dict` 로 두면 순서가 포함관계다. 본문을 한 번 펼치는 $F$ 를 $\bot=\lbrace\rbrace$ 에 반복 적용한다.
+부분함수를 정의된 쌍의 집합으로 보면 순서가 포함관계다. 본문을 한 번 펼치는 $F$ 를 $\bot=\lbrace\rbrace$ 에 반복 적용한다.
 
-```python
-from math import factorial
-
-def F(f, bound):
-    """fact 의 본문을 한 번 펼친다. f 는 부분함수(정의된 곳만 담긴 dict)."""
-    g = {0: 1}
-    for n in range(1, bound + 1):
-        if n - 1 in f:                                  # f(n-1) 이 정의되어야 쓸 수 있다
-            g[n] = n * f[n - 1]
-    return g
-
-BOUND = 6
-chain, f = [], {}                                       # f = bottom
-while True:
-    chain.append(dict(f))
-    nxt = F(f, BOUND)
-    if nxt == f:
-        break
-    assert set(f.items()) <= set(nxt.items()), "F 는 단조여야 한다"
-    f = nxt
-
-print(f"반복 {len(chain) - 1} 회 만에 고정점에 도달")
-for i, g in enumerate(chain):
-    print(f"  F^{i}(bottom) = {dict(sorted(g.items()))}")
-assert f == F(f, BOUND)                                 # 고정점
-assert f == {n: factorial(n) for n in range(BOUND + 1)}
-
-# 종료하지 않는 재귀는 어떤가. loop(n) = loop(n) 은 정보를 전혀 더하지 않는다.
-G = lambda f, bound: dict(f)
-lfp = {}
-assert G(lfp, BOUND) == lfp                             # 최소 고정점은 어디서도 정의되지 않은 함수
-junk = {n: 0 for n in range(BOUND + 1)}
-assert G(junk, BOUND) == junk                           # 전체함수도 고정점이지만 프로그램의 뜻이 아니다
-```
-
-$\mathrm{BOUND}$ 를 잘라 두었으므로 유한 단계에 끝난다. 자르지 않으면 $F^k(\bot)$ 은 $k-1$ 까지만 정의된 부분함수이고 고정점은 그 상한으로만 존재한다.
+정의역을 유한 구간으로 자르면 유한 단계에 끝난다. 자르지 않으면 $F^k(\bot)$ 은 $k-1$ 까지만 정의된 부분함수이고 고정점은 그 상한으로만 존재한다.
 
 $\mathrm{loop}$ 의 방정식은 모든 함수를 해로 받아들이므로 해의 집합만으로는 프로그램의 뜻이 정해지지 않는다. $\bot$ 을 고르는 것만이 이 프로그램이 아무 답도 내놓지 않는다는 사실과 맞는다.
 

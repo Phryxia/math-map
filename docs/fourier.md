@@ -82,39 +82,6 @@ $$
 
 가 성립한다. $O(N^2)$ 짜리 합성곱이 변환 두 번, 성분별 곱 한 번, 역변환 한 번으로 $O(N \log N)$ 이 된다. 다항식 곱셈, 큰 정수 곱셈, 이미지 필터링, 상관 계산이 모두 합성곱이므로 같은 방법으로 가속된다.
 
-```python
-import cmath
-
-def dft(x):
-    N = len(x)
-    return [sum(x[t] * cmath.exp(-2j * cmath.pi * k * t / N) for t in range(N))
-            for k in range(N)]
-
-
-def idft(X):
-    N = len(X)
-    return [sum(X[k] * cmath.exp(2j * cmath.pi * k * t / N) for k in range(N)) / N
-            for t in range(N)]
-
-
-x = [1, 0, -1, 0]
-X = dft(x)
-print([complex(round(z.real, 9), round(z.imag, 9)) for z in X])
-print([round(z.real, 9) for z in idft(X)])        # 원래대로 복원
-
-# 합성곱 정리: 다항식 곱셈
-def cyclic_conv(a, b):
-    N = len(a)
-    return [sum(a[m] * b[(n - m) % N] for m in range(N)) for n in range(N)]
-
-a = [1, 2, 0, 0]          # 1 + 2z
-b = [3, 4, 0, 0]          # 3 + 4z
-direct = cyclic_conv(a, b)
-via_dft = idft([p * q for p, q in zip(dft(a), dft(b))])
-print([round(v, 9) for v in direct])
-print([round(z.real, 9) for z in via_dft])        # 3 + 10z + 8z^2
-```
-
 $(1+2z)(3+4z) = 3 + 10z + 8z^2$ 의 계수를 직접 합성곱과 변환 경로로 각각 얻는다. 길이를 충분히 잡아 순환 겹침을 피해야 하므로 실무에서는 $0$ 을 덧붙여 길이를 늘린다.
 
 ## 빠른 계산

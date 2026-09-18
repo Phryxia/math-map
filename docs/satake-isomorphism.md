@@ -208,62 +208,6 @@ $$
 
 구조상수는 격자를 세어 구한다. $\mathbb Z_p^2$ 의 지표 $p^n$ 부분격자는 Hermite 꼴 $\begin{pmatrix}p^i&b\cr 0&p^{n-i}\end{pmatrix}$ 와 $0\le b<p^i$ 로 전부 열거되므로 유한 계산이다.
 
-```python
-from fractions import Fraction
-
-def val(p, x):                      # p 진 부치
-    if x == 0: return 10**9
-    x = Fraction(x); num, den, n = x.numerator, x.denominator, 0
-    while num % p == 0: num //= p; n += 1
-    while den % p == 0: den //= p; n -= 1
-    return n
-
-def lattices(p, n):                 # 지표 p^n 인 부분격자 전부 (Hermite 꼴)
-    return [((p**i, b), (0, p**(n-i))) for i in range(n+1) for b in range(p**i)]
-
-def etype(p, A):                    # 2x2 행렬의 초등인자 지수 (d1<=d2)
-    vs = [val(p, A[r][s]) for r in range(2) for s in range(2)]
-    if min(vs) < 0: return None     # Z_p 위 정수행렬이 아님
-    det = A[0][0]*A[1][1] - A[0][1]*A[1][0]
-    return (min(vs), val(p, det) - min(vs))
-
-def rel_type(p, M, L):              # M 의 기저로 본 L 의 초등인자
-    (a, b), (c, d) = M
-    det = Fraction(a*d - b*c)
-    Mi = [[Fraction(d)/det, Fraction(-b)/det], [Fraction(-c)/det, Fraction(a)/det]]
-    Lm = [[L[0][0], L[0][1]], [L[1][0], L[1][1]]]
-    return etype(p, [[sum(Mi[r][k]*Lm[k][s] for k in range(2)) for s in range(2)]
-                     for r in range(2)])
-
-def product_in_basis(p, alpha, beta):
-    """1_{KαK} * 1_{KβK} 를 이중 잉여류 기저로 전개한다"""
-    n, res = sum(alpha) + sum(beta), {}
-    for g1 in range(n//2 + 1):
-        g2 = n - g1
-        Lg = ((p**g1, 0), (0, p**g2))                   # γ 형 대표 격자
-        c = sum(1 for M in lattices(p, sum(alpha))
-                if etype(p, [[Fraction(v) for v in r] for r in
-                             [[M[0][0], M[0][1]], [M[1][0], M[1][1]]]]) == alpha
-                and rel_type(p, M, Lg) == beta)
-        if c: res[(g1, g2)] = c
-    return res
-
-for p in (2, 3, 5):
-    print(f"p={p}  T(p)*T(p)     = {product_in_basis(p,(0,1),(0,1))}")
-    print(f"      T(p)*T(p^2)   = {product_in_basis(p,(0,1),(0,2))}")
-    print(f"      T(p^2)*T(p^2) = {product_in_basis(p,(0,2),(0,2))}")
-
-# p=2  T(p)*T(p)     = {(0, 2): 1, (1, 1): 3}
-#      T(p)*T(p^2)   = {(0, 3): 1, (1, 2): 2}
-#      T(p^2)*T(p^2) = {(0, 4): 1, (1, 3): 1, (2, 2): 6}
-# p=3  T(p)*T(p)     = {(0, 2): 1, (1, 1): 4}
-#      T(p)*T(p^2)   = {(0, 3): 1, (1, 2): 3}
-#      T(p^2)*T(p^2) = {(0, 4): 1, (1, 3): 2, (2, 2): 12}
-# p=5  T(p)*T(p)     = {(0, 2): 1, (1, 1): 6}
-#      T(p)*T(p^2)   = {(0, 3): 1, (1, 2): 5}
-#      T(p^2)*T(p^2) = {(0, 4): 1, (1, 3): 4, (2, 2): 30}
-```
-
 $(1,1)$ 의 계수가 $p+1$ 이고 $T(p)\ast T(p^m)$ 의 $(1,m)$ 계수가 $p$ 다. 이렇게 얻은 구조상수는 Satake 변환이 옮기는 대칭 다항식의 곱셈 규칙과 일치한다.
 
 ## 구형함수

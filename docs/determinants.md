@@ -116,14 +116,6 @@ $$
 
 실제 계산은 Gauss 소거(LU 분해)로 $O(n^3)$ 에 한다. 한 행에 다른 행의 배수를 더하는 연산은 행렬식을 보존하고 행 교환은 부호만 뒤집으므로, 소거 후 얻은 삼각행렬의 대각 성분 곱에 교환 횟수의 부호를 붙이면 된다.
 
-```python
-import numpy as np
-A = np.array([[2., 1., 0.], [1., 3., 1.], [0., 1., 2.]])
-print(np.linalg.det(A))              # 8.0 (부동소수 오차가 섞인다)
-sign, logabs = np.linalg.slogdet(A)  # 큰 행렬의 overflow를 피한다
-print(sign, logabs)
-```
-
 ## 그래프와 조합론
 
 Kirchhoff의 matrix-tree 정리는 연결 그래프의 신장트리 개수가 [그래프 Laplacian](graph-laplacian.md)에서 한 행과 한 열을 지운 minor의 행렬식(부호를 맞춘 값)과 같다고 말한다[^3]. 이 공식에서 [유효저항](effective-resistance.md)이 두 행렬식의 비로 표현되고, [최소 신장트리](minimum-spanning-tree.md)를 세는 문제도 선형대수로 환원된다.

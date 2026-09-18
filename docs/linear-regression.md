@@ -183,45 +183,6 @@ $$
 
 이고 $\mathrm{Var}(\hat\beta_j)$ 가 그만큼 커진다. 적합값 $\hat{y}$ 는 안정적이지만 개별 계수의 해석이 불안정해진다. 대응은 변수 제거, 주성분 사용([특이값 분해](singular-value-decomposition.md)), ridge 처럼 $X^\top X+\lambda I$ 로 대각을 키우는 정규화다.
 
-$X^{\mathsf T}X$ 의 조건수가 $X$ 의 조건수의 제곱이므로 정규방정식을 그대로 풀지 않는다. 실무 구현은 $X$ 의 QR 분해나 SVD 로 제곱을 피한다.
-
-# 활용
-
-## 정사영 구조의 계산
-
-```python
-import numpy as np
-
-rng = np.random.default_rng(1)
-n, sigma = 60, 0.7
-x1 = rng.normal(size=n)
-x2 = rng.normal(size=n)
-X = np.column_stack([np.ones(n), x1, x2, x1 * x2])   # 절편 + 교호작용 항
-beta = np.array([1.0, 2.0, -0.5, 0.3])
-y = X @ beta + rng.normal(0, sigma, size=n)
-
-# QR 로 푼다(정규방정식을 직접 역행렬로 푸는 것보다 안정적)
-Q, R = np.linalg.qr(X)
-bhat = np.linalg.solve(R, Q.T @ y)
-
-H = X @ np.linalg.solve(X.T @ X, X.T)               # hat matrix
-resid = y - X @ bhat
-p = X.shape[1]
-rss = resid @ resid
-s2 = rss / (n - p)
-se = np.sqrt(s2 * np.diag(np.linalg.inv(X.T @ X)))
-r2 = 1 - rss / ((y - y.mean()) @ (y - y.mean()))
-
-print("계수      ", np.round(bhat, 3))
-print("표준오차  ", np.round(se, 3))
-print("t 값      ", np.round(bhat / se, 2))
-print("R^2 = %.3f,  sigma^2 hat = %.3f" % (r2, s2))
-print("직교성 |X^T e| =", np.abs(X.T @ resid).max())   # 0 에 가깝다
-print("멱등성 |H^2 - H| =", np.abs(H @ H - H).max())
-print("trace(H) =", round(np.trace(H), 6), " (= p =", p, ")")
-print("leverage 최대 =", round(np.diag(H).max(), 3))
-```
-
 ## 확장과 연결
 
 - **일반화선형모형**: 반응이 이항이나 계수(count)면 정규 가정이 맞지 않는다. [지수족과 충분통계량](exponential-families.md)의 분포족에 연결함수를 붙이면 로지스틱 회귀, Poisson 회귀가 나오고, 추정은 반복 가중최소제곱(IRLS)으로 귀결된다. 닫힌 해가 없어 [경사하강법](gradient-descent.md)이나 Newton 계열 최적화를 쓴다.

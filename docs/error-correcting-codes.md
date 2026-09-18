@@ -81,46 +81,7 @@ $$
 
 같은 원리가 Shamir 비밀분산이다. 비밀을 상수항에 숨기고 $n$ 명에게 평가값을 나눠 주면 $k$ 명이 모여야 복원되고 $k-1$ 명은 아무 정보도 얻지 못한다.
 
-## 두 부호의 구현
-
-Hamming(7,4) 의 신드롬 복호와 Reed–Solomon 의 소실 복구다.
-
-```python
-from itertools import product
-
-# H 의 j 번째 열 = 숫자 j+1 의 이진 표현
-Hm = [[int(b) for b in f"{j:03b}"] for j in range(1, 8)]
-syndrome = lambda y: tuple(sum(y[j] * Hm[j][i] for j in range(7)) % 2 for i in range(3))
-
-C = [v for v in product((0, 1), repeat=7) if syndrome(v) == (0, 0, 0)]
-print(len(C), min(sum(a != b for a, b in zip(u, v))
-                  for u in C for v in C if u != v))     # 16 3  → [7,4,3]
-
-for c in C:
-    for i in range(7):                                  # 1비트 오류의 신드롬 복호
-        y = list(c)
-        y[i] ^= 1
-        pos = int("".join(map(str, syndrome(y))), 2) - 1  # 신드롬이 오류 위치
-        y[pos] ^= 1
-        assert tuple(y) == c
-
-p = 97                                                  # GF(97) 위의 RS
-def lagrange(pts, x0):
-    tot = 0
-    for i, (xi, yi) in enumerate(pts):
-        num = den = 1
-        for j, (xj, _) in enumerate(pts):
-            if i != j:
-                num, den = num * (x0 - xj) % p, den * (xi - xj) % p
-        tot = (tot + yi * num * pow(den, p - 2, p)) % p  # Fermat 소정리로 역원
-    return tot
-
-msg = [(1, 12), (2, 45), (3, 7)]                        # k=3 개의 값이 메시지
-cw = [(x, lagrange(msg, x)) for x in range(1, 7)]       # n=6 개 점으로 확장
-print(cw)
-left = [cw[1], cw[3], cw[5]]                            # 세 자리가 통째로 소실
-print([lagrange(left, x) for x in (1, 2, 3)])           # [12, 45, 7]
-```
+## 두 부호의 예
 
 Hamming 쪽은 부호어가 $2^4$ 개이고 최소거리가 3 이라 $[7,4,3]$ 이다. Reed–Solomon 쪽은 $n-k=3$ 이므로 여섯 자리 중 셋이 사라져도 복구되며 Singleton 한계가 허용하는 최대치를 쓴다.
 

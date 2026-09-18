@@ -188,41 +188,6 @@ $$
 
 이고 두 성분은 자명한 변형과 $p$ 차 분기 지표에 해당한다.
 
-```python
-from math import comb
-
-def phi_p_shifted(p):
-    """Phi_p(1+T) = ((1+T)^p - 1)/T 의 계수를 낮은 차수부터."""
-    num = [comb(p, k) for k in range(p + 1)]      # (1+T)^p
-    num[0] -= 1                                   # 상수항이 0 이 되어 T 로 나뉜다
-    return num[1:]
-
-def is_eisenstein(coeffs, p):
-    n = len(coeffs) - 1
-    return (coeffs[n] == 1                        # 모닉
-            and all(c % p == 0 for c in coeffs[:n])
-            and coeffs[0] % (p * p) != 0)         # 상수항이 p 로 정확히 한 번
-
-def deformations(p, k, procyclic):
-    """A = Z/p^k 계수의 변형을 직접 센다. 자명한 1 차원 잔여표현이므로
-    변형은 gamma 를 1 + m_A 의 원소로 보내는 것이고, G 의 관계식만 지키면 된다."""
-    mod = p ** k
-    lifts = [a for a in range(1, mod) if a % p == 1]          # 1 + m_A
-    if procyclic:                                             # G = Z_p : 관계식 없음
-        return lifts
-    return [a for a in lifts if pow(a, p, mod) == 1]          # G = Z/p : gamma^p = 1
-
-for p in (3, 5):
-    f = phi_p_shifted(p)
-    print(f"p = {p} :  Phi_p(1+T) = {f[::-1]}  (높은 차수부터),  Eisenstein = {is_eisenstein(f, p)}")
-    assert is_eisenstein(f, p)                     # 그러므로 Z_p[[T]]/(Phi_p(1+T)) = Z_p[zeta_p]
-    for k in (2, 3, 4):
-        a, b = deformations(p, k, True), deformations(p, k, False)
-        print(f"   A = Z/{p}^{k} :  G = Z_p 에서 {len(a):>3} 개,  G = Z/{p} 에서 {len(b):>2} 개")
-        assert len(a) == p ** (k - 1)              # R = Z_p[[T]] : 층마다 p 배로 늘어난다
-        assert len(b) == p                         # R 이 Z_p 위 유한 : 더 늘지 않는다
-```
-
 $\mathbb Z_p$ 쪽은 계수환을 한 층 키울 때마다 변형이 $p$ 배로 늘어난다. $R=\mathbb Z_p[[T]]$ 가 $\mathbb Z_p$ 위 상대 차원 $1$ 이기 때문이다. $\mathbb Z/p$ 쪽은 $A=\mathbb Z/p^2$ 에서 $p$ 개로 포화된다. $R$ 이 $\mathbb Z_p$ 위 유한이라 $\mathbb Z/p^k$ 값 점이 유한개다.
 
 수론의 상황은 두 극단 사이에 있다. $G_{\mathbb Q,S}$ 는 $\mathbb Z_p$ 보다 크고 $H^1$ 이 여러 차원이지만, $p$ 자리의 국소 조건과 행렬식 고정이 관계식을 걸어 $R$ 을 $\mathbb Z_p$ 위 유한에 가깝게 누른다. $R=T$ 가 성립하면 그 유한한 목록이 고유형식의 목록이다.

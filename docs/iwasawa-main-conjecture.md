@@ -42,55 +42,6 @@ $$
 
 이고, 이 종결식의 $p$ 부치가 $n$ 에 대해 선형이다. Weierstrass 준비정리로 $f$ 를 $p^{\mu}$ 곱하기 차수 $\lambda$ 의 구별다항식으로 쓸 수 있고, 구별다항식의 근들이 $p$ 진 절댓값이 1 보다 작으므로 $\omega_n$ 을 그 근에서 평가한 값의 부치가 $n$ 에 선형으로 자란다. 여기서 $\lambda$ 는 근의 개수, $\mu$ 는 $p$ 의 거듭제곱 몫이다.
 
-```python
-# ord_p # Lambda/(f, omega_n) 을 종결식으로 계산한다
-p = 3
-
-def mul(a, b, f):                                  # Z[T]/(f), f 는 모닉
-    d, r = len(f) - 1, [0] * (len(a) + len(b) - 1)
-    for i, x in enumerate(a):
-        for j, y in enumerate(b):
-            r[i + j] += x * y
-    while len(r) > d:
-        c = r.pop()
-        for k in range(d):
-            r[len(r) - d + k] -= c * f[k]
-    return r + [0] * (d - len(r))
-
-def power(a, e, f):
-    r = [1] + [0] * (len(f) - 2)
-    while e:
-        if e & 1: r = mul(r, a, f)
-        a, e = mul(a, a, f), e >> 1
-    return r
-
-def norm(a, f):                                    # Z[T]/(f) 위 곱셈사상의 행렬식
-    d, T = len(f) - 1, ([0, 1] + [0] * (len(f) - 3) if len(f) > 2 else [-f[0]])
-    cols, e = [], [1] + [0] * (d - 1)
-    for _ in range(d):
-        cols.append(mul(a, e, f)); e = mul(e, T, f)
-    def det(m):
-        if len(m) == 1: return m[0][0]
-        return sum((-1) ** j * m[0][j] * det([r[:j] + r[j + 1:] for r in m[1:]])
-                   for j in range(len(m)))
-    return det([[cols[j][i] for j in range(d)] for i in range(d)])
-
-def order(f, n):                                   # ord_p # Lambda/(f, omega_n)
-    w = power([1, 1] + [0] * (len(f) - 3) if len(f) > 2 else [1 - f[0]], p ** n, f)
-    w[0] -= 1
-    x, v = norm(w, f), 0
-    while x % p == 0:
-        x //= p; v += 1
-    return v
-
-for f, name in ([[3, 1], "T + 3"], [[3, 0, 1], "T^2 + 3"], [[6, 3, 1], "T^2 + 3T + 6"]):
-    print(f"{name:14s}", [order(f, n) for n in range(6)])
-
-# T + 3          [1, 2, 3, 4, 5, 6]        lambda = 1, nu = 1
-# T^2 + 3        [1, 4, 6, 8, 10, 12]      lambda = 2, nu = 2  (n >= 1 부터)
-# T^2 + 3T + 6   [1, 3, 5, 7, 9, 11]       lambda = 2, nu = 1  (n >= 1 부터)
-```
-
 $n=0$ 항이 공식에서 벗어나므로 정리는 충분히 큰 $n$ 을 요구한다. $X=\Lambda/(p^{m})$ 로 두면 $\char35{}(X/\omega_nX)=p^{m\thinspace p^{n}}$ 이 되어 $\mu$ 항이 나타난다.
 
 ## 두 개의 멱급수
@@ -225,7 +176,7 @@ $$
 
 $1-\zeta_{p^{n}}$ 자체는 $p$ 위의 소원소이고 단수가 되는 것은 비 $\frac{1-\zeta^{a}}{1-\zeta}$ 다. Euler 계로 쓰는 것도 이 비들이다.
 
-## Rubin 증명의 뼈대
+## Rubin 증명의 요지
 
 1. **Euler 계의 확보.** $c_n=\frac{1-\zeta_{n}^{a}}{1-\zeta_n}$ 들이 $H^1(\mathbb Q(\mu_n),\mathbb Z_p(1))$ 안에서 자취 관계 $\mathrm{cor}(c_{n\ell})=(1-\mathrm{Fr}_\ell^{-1})c_n$ 을 만족한다. Kummer 이론으로 단수군이 곧 $H^1(\cdot,\mathbb Z_p(1))$ 이므로 대수적 원소가 그대로 코호몰로지 류다.
 2. **유도.** Kolyvagin 유도 연산자로 $\kappa_n$ 을 만든다. 각 $\kappa_n$ 은 $n$ 밖에서만 국소 조건을 만족한다.

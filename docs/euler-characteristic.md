@@ -120,18 +120,6 @@ $$
 - 메쉬 처리: 삼각망의 $V$ , $E$ , $F$ 에서 지표를 계산해 구멍의 개수를 추정하고 위상 오류를 검출한다. 닫힌 삼각망에서는 $2E=3F$ 이므로 지표가 $V-F/2$ 로 계산된다.
 - 조합론: 교대합으로 불변량을 얻는 논법이 [포함배제](inclusion-exclusion.md)와 [생성함수](generating-functions.md)에 나타나고, 지표는 그 위상적 대응물이다.
 
-```python
-# 정다면체 열거: 1/p + 1/q > 1/2 의 정수해
-for p in range(3, 8):
-    for q in range(3, 8):
-        if 1 / p + 1 / q > 0.5:
-            E = 2 / (2 / p + 2 / q - 1)
-            V, F = 2 * E / q, 2 * E / p
-            print(p, q, int(V), int(E), int(F), int(V - E + F))
-# 3 3 -> 4 6 4 2 | 3 4 -> 6 12 8 2 | 3 5 -> 12 30 20 2
-# 4 3 -> 8 12 6 2 | 5 3 -> 20 30 12 2
-```
-
 [^1]: 삼각화의 단체 개수 교대합이 Betti 수의 교대합과 같다는 진술. J. R. Munkres, *Elements of Algebraic Topology*, §22. 요약: "Euler characteristic", Schools Wikipedia. https://landsurvival.com/schools-wikipedia/wp/e/Euler_characteristic.htm
 [^2]: 정다면체 다섯 개의 분류를 Euler 공식과 pF=2E=qV에서 얻는 논법. Wolfram MathWorld, "Platonic Solid". https://mathworld.wolfram.com/PlatonicSolid.html
 [^3]: compact 연결 곡면의 분류와 genus g 방향지음 가능 곡면의 지표가 2-2g라는 사실. Wolfram MathWorld, "Surface Classification Theorem". https://mathworld.wolfram.com/SurfaceClassificationTheorem.html

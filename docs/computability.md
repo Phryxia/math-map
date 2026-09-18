@@ -26,17 +26,6 @@ Cantor 에서는 목록이 전부일 수 없다는 결론이 나오고, 여기�
 
 Turing machine 은 유한한 상태 집합, 유한한 기호 집합, 양방향으로 확장되는 테이프, 기호 하나를 읽고 쓰며 좌우로 이동하는 헤드, 유한한 전이 규칙으로 이루어진다. 한 단계의 행동은 현재 상태와 읽은 기호만으로 결정된다.
 
-```python
-def step(tape, head, state, delta):
-    """delta[(state, symbol)] = (state', symbol', move). 정지 상태면 None."""
-    key = (state, tape.get(head, "_"))
-    if key not in delta:
-        return None
-    state2, write, move = delta[key]
-    tape[head] = write
-    return tape, head + move, state2
-```
-
 전이 규칙이 유한하고, 한 단계가 국소적이며, 테이프만 무한하다. 이 모델은 Lambda calculus, 재귀함수, 레지스터 기계, 실제 프로그래밍 언어와 같은 계산력을 가진다. 계산 가능을 Turing machine 으로 계산 가능과 동일시하는 것이 Church–Turing 논제이며, 정리가 아니라 비형식적 개념과 형식적 정의를 잇는 약속이다.
 
 ## 계산 가능, 결정 가능, 인식 가능

@@ -180,34 +180,6 @@ $$
 
 닫힌 형태가 없으면 정규화상수 $m(x)$ 의 적분이 문제가 된다. 실무의 표준 도구는 사후분포를 불변분포로 갖는 [Markov 연쇄](markov-chains.md)를 설계해 표본을 얻는 MCMC(Metropolis–Hastings, Gibbs, Hamiltonian Monte Carlo)이고, 여기서는 존재와 역할만 언급한다. 대안으로는 사후분포를 다루기 쉬운 분포족으로 근사하되 [KL divergence](kl-divergence.md)를 최소화하는 변분추론, 그리고 MAP 주변의 이차근사인 Laplace 근사가 있다.
 
-## 짧은 예제
-
-Beta–Binomial 의 사후분포와 두 종류의 구간을 직접 계산한다.
-
-```python
-import numpy as np
-from scipy import stats
-
-a0, b0 = 2.0, 2.0          # 사전분포 Beta(2,2)
-data = np.array([1,1,0,1,1,1,0,1,1,1])   # 관측된 앞면/뒷면
-
-# 순차 갱신: 한 번에 하나씩 곱해도 결과는 동일하다
-a, b = a0, b0
-for x in data:
-    a, b = a + x, b + (1 - x)
-
-post = stats.beta(a, b)
-print("사후분포 Beta(%.1f, %.1f)" % (a, b))
-print("사후평균 %.4f" % post.mean())
-print("MAP      %.4f" % ((a - 1) / (a + b - 2)))
-print("등꼬리 95%% 신용구간", np.round(post.ppf([0.025, 0.975]), 4))
-
-# 사후예측: 다음 한 번이 앞면일 확률 = 사후평균
-print("사후예측 P(다음=앞면) %.4f" % post.mean())
-```
-
-출력에서 사후평균은 $(2+9)/(4+10) \approx 0.7857$ 이고 MAP 는 $10/12 \approx 0.8333$ 으로 갈리며, 최대가능도추정값 $0.9$ 보다 둘 다 사전분포 쪽으로 당겨져 있다.
-
 ## 응용
 
 - **온라인 학습과 A/B 테스트**: 전환율에 Beta 사전분포를 두고 방문마다 갱신하면 언제 멈춰 보아도 해석이 일관된다. Thompson sampling 은 사후분포에서 뽑은 표본으로 팔을 고르는 bandit 알고리즘이다.

@@ -126,111 +126,15 @@ $a_p$ 에 관한 진술은 다음 층으로 나뉜다.
 
 ## $\sqrt X/\log X$ 규모
 
-$p\le60000$ 에서 $a_p$ 를 계산하고 $a_p=r$ 인 소수의 개수를 $X$ 를 키워 가며 센다. 개수를 $\sqrt X/\log X$ 로 나눈 값이 거의 일정하면 그 규모이고, $X/\log X$ 로 나눈 값이 $0$ 으로 줄면 $\pi(X)$ 규모가 아니다.
-
-```python
-from math import isqrt, log, sqrt
-
-X = 60000
-sieve = bytearray([1]) * (X + 1); sieve[0:2] = b"\0\0"
-for i in range(2, isqrt(X) + 1):
-    if sieve[i]: sieve[i*i::i] = bytearray(len(sieve[i*i::i]))
-PRIMES = [i for i in range(2, X + 1) if sieve[i]]
-
-def a_p(p, a, b):
-    """제곱잉여 표를 한 번 만들고 x 를 훑는다.  O(p)."""
-    qr = bytearray(p)
-    for t in range(1, p // 2 + 1): qr[t * t % p] = 1
-    s = 0
-    for x in range(p):
-        c = (x * x % p * x + a * x + b) % p
-        s += 0 if c == 0 else (1 if qr[c] else -1)
-    return -s
-
-A, B = 1, 1                                   # E : y^2 = x^3 + x + 1, CM 없음
-D = -16 * (4 * A ** 3 + 27 * B ** 2)
-print(f"E : y^2 = x^3 + x + 1,  판별식 {D},  p <= {X}")
-good, ap = [], {}
-for p in PRIMES:
-    if p < 5 or D % p == 0: continue
-    good.append(p); ap[p] = a_p(p, A, B)
-print(f"좋은 환원의 소수 {len(good)} 개\n")
-
-CUTS = [5000, 10000, 20000, 40000, 60000]
-print(f"{'r':>4} " + " ".join(f"{'N(' + str(c) + ')':>9}" for c in CUTS))
-for r in [0, 1, -1, 2, -2]:
-    print(f"{r:>4} " + " ".join(
-        f"{sum(1 for p in good if p <= c and ap[p] == r):>9}" for c in CUTS))
-
-print("\n  비율 N(X) / (√X/log X) 가 거의 일정하면 √X/log X 규모다.")
-print(f"{'r':>4} " + " ".join(f"{c:>9}" for c in CUTS))
-for r in [0, 1, -1, 2, -2]:
-    print(f"{r:>4} " + " ".join(
-        f"{sum(1 for p in good if p <= c and ap[p] == r)/(sqrt(c)/log(c)):>9.3f}"
-        for c in CUTS))
-
-print("\n  대조 : 만약 X/log X 규모라면 이 비율은 0 으로 빨리 줄어야 한다.")
-for r in [0, 1]:
-    print(f"{r:>4} " + " ".join(
-        f"{sum(1 for p in good if p <= c and ap[p] == r)/(c/log(c)):>9.5f}"
-        for c in CUTS))
-
-# E : y^2 = x^3 + x + 1,  판별식 -496,  p <= 60000
-# 좋은 환원의 소수 6054 개
-#
-#    r   N(5000)  N(10000)  N(20000)  N(40000)  N(60000)
-#    0         6         9        13        15        16
-#    1         5         8         8        11        12
-#   -1         3         5         6         9        10
-#    2         8        11        16        21        25
-#   -2         8        14        19        23        24
-#
-#   비율 N(X) / (√X/log X) 가 거의 일정하면 √X/log X 규모다.
-#    r      5000     10000     20000     40000     60000
-#    0     0.723     0.829     0.910     0.795     0.719
-#    1     0.602     0.737     0.560     0.583     0.539
-#   -1     0.361     0.461     0.420     0.477     0.449
-#    2     0.964     1.013     1.120     1.113     1.123
-#   -2     0.964     1.289     1.331     1.219     1.078
-#
-#   대조 : 만약 X/log X 규모라면 이 비율은 0 으로 빨리 줄어야 한다.
-#    0   0.01022   0.00829   0.00644   0.00397   0.00293
-#    1   0.00852   0.00737   0.00396   0.00291   0.00220
-```
-
-$X$ 가 $5000$ 에서 $60000$ 으로 커지는 동안 $\sqrt X/\log X$ 로 정규화한 값은 $r$ 마다 한 자리에 머물고, $X/\log X$ 로 정규화하면 $3$ 배 이상 줄어든다. 표본이 작아 흔들림은 크다.
-
 $r=\pm2$ 의 상수가 $r=\pm1$ 보다 크다. 상수가 $r$ 에 의존한다는 것이 Lang–Trotter 의 오일러 곱이 말하는 바이고, 홀짝에 따른 국소 인자의 차이가 큰 몫을 한다.
 
 ## 초특이 소수의 목록
-
-```python
-ss = [p for p in good if ap[p] == 0]
-print(f"  {len(ss)} 개 : {ss}")
-print(f"  밀도 {len(ss)}/{len(good)} = {len(ss)/len(good):.5f}  →  Sato–Tate 는 0 을 예측")
-print(f"  √X/log X = {sqrt(X)/log(X):.2f},  개수/그 값 = {len(ss)/(sqrt(X)/log(X)):.3f}")
-
-#   16 개 : [17, 179, 227, 523, 1031, 3767, 6131, 6551, 6679, 11519, 13421,
-#            14449, 16007, 31771, 35507, 52859]
-#   밀도 16/6054 = 0.00264  →  Sato–Tate 는 0 을 예측
-#   √X/log X = 22.26,  개수/그 값 = 0.719
-```
 
 $p=17$ 은 [Kedlaya 알고리즘](kedlaya-algorithm.md)에서 Hasse 불변량이 $0$ 으로 나온 소수이고 여기서 목록의 첫 원소다. 소수 $6054$ 개 가운데 $16$ 개로 비율이 $0.0026$ 이다. 밀도는 $0$ 으로 가지만 Elkies 의 정리대로 목록이 끊기지 않는다.
 
 ## 띠와 점의 비교
 
-```python
-band = [p for p in good if abs(ap[p]) <= 0.02 * 2 * sqrt(p)]
-print(f"  띠 |a_p| <= 0.02·2√p : {len(band)}/{len(good)} = {len(band)/len(good):.4f}"
-      f"   (ST 예측 ≈ 4·0.02/π = {4*0.02/3.141592653589793:.4f})")
-print(f"  점 a_p = 0        : {len(ss)}/{len(good)} = {len(ss)/len(good):.5f}")
-
-#   띠 |a_p| <= 0.02·2√p : 155/6054 = 0.0256   (ST 예측 ≈ 4·0.02/π = 0.0255)
-#   점 a_p = 0        : 16/6054 = 0.00264
-```
-
-띠의 관측 비율 $0.0256$ 이 Sato–Tate 예측 $0.0255$ 와 소수점 셋째 자리까지 맞는다. 같은 자료에서 점의 비율은 $0.0026$ 으로 열 배 작고 $X$ 를 키우면 계속 줄어든다. 띠는 Sato–Tate 가 예측하고 점은 예측하지 못한다.
+띠의 비율은 Sato–Tate 예측과 맞고, 점의 비율은 $X$ 를 키우면 $0$ 으로 줄어든다. 띠는 Sato–Tate 가 예측하고 점은 예측하지 못한다.
 
 ## 쓰이는 자리
 

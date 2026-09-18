@@ -152,35 +152,11 @@ $Q\ll P$ 가 깨지면 밀도가 존재하지 않는다. 예를 들어 연속분
 
 # 활용
 
-## Python: 희귀사건 확률 추정
+## 희귀사건 확률 추정
 
-표준정규 확률변수가 4 를 넘을 확률을 두 방식으로 추정한다. 직접 추정은 표본 대부분이 버려지고, 평균을 4 로 옮긴 제안분포에서 뽑아 밀도로 보정하면 훨씬 정확하다.
+표준정규 확률변수가 $4$ 를 넘을 확률을 직접 추정하면 표본 대부분이 버려진다. 평균을 $4$ 로 옮긴 제안분포에서 뽑고 밀도비로 보정하면 같은 표본 수로 훨씬 정확하다.
 
-```python
-import numpy as np
-from math import erfc, sqrt
-
-rng = np.random.default_rng(0)
-n, a, mu = 200_000, 4.0, 4.0
-truth = 0.5 * erfc(a / sqrt(2.0))
-
-# 1) 직접 몬테카를로: Q = N(0,1) 에서 그대로 뽑는다.
-x = rng.standard_normal(n)
-direct = (x > a).mean()
-
-# 2) importance sampling: P = N(mu,1) 에서 뽑고 L = dQ/dP 로 보정.
-y = mu + rng.standard_normal(n)
-L = np.exp(-mu * y + 0.5 * mu**2)          # N(0,1) 밀도 / N(mu,1) 밀도
-w = (y > a) * L
-imp = w.mean()
-
-ess = w.sum() ** 2 / (w**2).sum()
-print(f"truth  = {truth:.3e}")
-print(f"direct = {direct:.3e}  se={(direct*(1-direct)/n)**0.5:.1e}")
-print(f"impsmp = {imp:.3e}  se={w.std(ddof=1)/n**0.5:.1e}  ESS={ess:.0f}")
-```
-
-밀도 $L$ 은 두 정규분포 밀도의 비를 정리한 것이다. 지수부에서 이차항이 상쇄되어 선형항만 남는다는 점이 [지수족](exponential-families.md)의 일반적 성질이며, 이 구조 덕분에 지수족 안에서의 측도변환은 자연모수의 평행이동으로 표현된다.
+밀도비 $L$ 은 두 정규분포 밀도의 비를 정리한 것이다. 지수부에서 이차항이 상쇄되어 선형항만 남는다는 점이 [지수족](exponential-families.md)의 일반적 성질이며, 이 구조 덕분에 지수족 안에서의 측도변환은 자연모수의 평행이동으로 표현된다.
 
 ## 통계
 

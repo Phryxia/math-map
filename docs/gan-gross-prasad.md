@@ -186,7 +186,7 @@ console.log(dimU(lambda), total, mus.length)
 
 국소 GGP 의 (a) 는 정리로 확립되어 있다.
 
-- **비아르키메데스 자리**: Aizenbud–Gourevitch–Rallis–Schiffmann 이 $(\mathrm{GL}_{n+1},\mathrm{GL}_n)$ 을, Waldspurger 와 Jiang–Sun–Zhu 가 고전군의 Bessel 경우를 처리했다. 증명은 Gelfand–Kazhdan 식 대합을 분포에 적용하며 $\mathrm{GL}_n$ 의 논법과 뼈대가 같다.
+- **비아르키메데스 자리**: Aizenbud–Gourevitch–Rallis–Schiffmann 이 $(\mathrm{GL}_{n+1},\mathrm{GL}_n)$ 을, Waldspurger 와 Jiang–Sun–Zhu 가 고전군의 Bessel 경우를 처리했다. 증명은 Gelfand–Kazhdan 식 대합을 분포에 적용하며 $\mathrm{GL}_n$ 의 논법과 구조가 같다.
 - **아르키메데스 자리**: Sun–Zhu 가 실군과 복소군에서 증명했다.[^1]
 
 대합은 $\mathrm{GL}_n$ 의 $g\mapsto{}^tg^{-1}$ 에 해당한다. 관련된 분포가 모두 이 대합에 대해 불변이면 $\mathrm{Hom}$ 공간이 2 차원 이상일 수 없다. 이 구조가 $(G\times H, H)$ 가 **Gelfand 쌍**이라는 조건이다.

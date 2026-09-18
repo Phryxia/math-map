@@ -89,17 +89,6 @@ $$
 
 $E_8$ 의 노름 제곱 2 인 벡터는 240 개다. 정의에서 직접 세면 $\pm1$ 이 두 개인 정수 벡터 $\binom82\cdot4=112$ 개와 반정수 벡터 128 개이고, 확장 Hamming $[8,4,4]$ 부호의 Construction A 에서 세면 한 좌표만 $\pm2$ 인 것 16 개와 무게 4 인 부호어 14 개마다 부호 배정 $2^4$ 가지로 224 개다.
 
-```python
-from itertools import product
-
-def e8_min_vectors():
-    """E8 = {x in Z^8 or (Z+1/2)^8 : sum(x) 가 짝수} 의 노름^2 = 2 인 벡터 수"""
-    v = sum(1 for x in product([-1, 0, 1], repeat=8)
-            if sum(x) % 2 == 0 and sum(a * a for a in x) == 2)
-    v += sum(1 for s in product([-1, 1], repeat=8) if sum(s) % 4 == 0)   # x = s/2
-    return v
-```
-
 확장 Hamming 부호의 무게 분포는 $[1,0,0,0,14,0,0,0,1]$ 로 자기쌍대이고, 이 대칭이 $E_8$ 의 자기쌍대성으로 옮겨 간다.
 
 ## 알려지지 않은 차원

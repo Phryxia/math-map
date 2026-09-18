@@ -144,27 +144,6 @@ $$
 
 [군](groups.md)의 Lagrange 정리는 잉여류가 같은 크기라는 나눗셈 원리다. [군 작용](group-actions.md)에서 궤도-안정자 정리도 같은 형태이며, Burnside 보조정리는 대칭을 무시한 셈에 쓰인다. [정수의 합동](modular-arithmetic.md)에서 이항계수의 소수 나눗셈 성질(Kummer, Lucas 정리)이 나온다.
 
-## 계산
-
-이항계수는 팩토리얼을 직접 계산하면 오버플로가 쉽게 발생하므로 점화식이나 축약 곱으로 계산한다.
-
-```python
-from math import comb
-
-def binom(n, k):
-    if k < 0 or k > n:
-        return 0
-    k = min(k, n - k)          # 대칭성으로 항 수를 줄인다
-    result = 1
-    for i in range(k):
-        result = result * (n - i) // (i + 1)   # 각 단계에서 나누어떨어진다
-    return result
-
-assert all(binom(n, k) == comb(n, k) for n in range(40) for k in range(-1, n + 2))
-```
-
-각 단계의 부분곱이 이항계수 C(n-k+i+1, i+1)의 정수배임이 보장되므로 정수 나눗셈이 정확한다.
-
 [^1]: MIT OpenCourseWare, Mathematics for Computer Science (6.042J), Chapter 15 "Cardinality Rules". https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/
 
 # 연관 문서

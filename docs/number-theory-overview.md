@@ -4,7 +4,7 @@
 
 정수론은 정수와 그 확장(대수적 정수, $p$ 진수, 아델)에서 나눗셈, 소수, 합동, 방정식의 정수해를 묻는 분야다. 물음은 초등적이지만 답은 대수, 해석, 기하, 표현론을 전부 동원한다. 이 지도의 정수론 문서 100여 개는 크게 여섯 줄기로 읽힌다. 합동과 소수에서 시작하는 초등 정수론, 정수환의 아이디얼과 유체론으로 가는 대수적 정수론, $\zeta$ 와 $L$ 함수로 소수를 세는 해석적 정수론, 모듈러 형식, 타원곡선과 BSD, 그리고 이 모두를 표현론으로 통합하는 Langlands 강령이다.
 
-처음 읽는다면 [정수의 합동과 나머지 연산](modular-arithmetic.md)에서 시작해 [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md), [이차 상호법칙](quadratic-reciprocity.md)까지 가면 초등 정수론의 뼈대가 잡힌다. 그 다음 갈림길은 셋이다. 대수 쪽으로 [Dedekind 정역](dedekind-domains.md)과 [대수적 수체](algebraic-number-fields.md), 해석 쪽으로 [소수 정리](prime-number-theorem.md), 기하 쪽으로 [타원곡선](elliptic-curves.md)이다. 셋은 [유체론](class-field-theory.md)과 [모듈러 형식](modular-forms.md)을 거쳐 [Langlands 강령](langlands-program.md)에서 다시 만난다.
+처음 읽는다면 [정수의 합동과 나머지 연산](modular-arithmetic.md)에서 시작해 [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md), [이차 상호법칙](quadratic-reciprocity.md)까지 가면 초등 정수론의 기본이 잡힌다. 그 다음 갈림길은 셋이다. 대수 쪽으로 [Dedekind 정역](dedekind-domains.md)과 [대수적 수체](algebraic-number-fields.md), 해석 쪽으로 [소수 정리](prime-number-theorem.md), 기하 쪽으로 [타원곡선](elliptic-curves.md)이다. 셋은 [유체론](class-field-theory.md)과 [모듈러 형식](modular-forms.md)을 거쳐 [Langlands 강령](langlands-program.md)에서 다시 만난다.
 
 # 지도
 
@@ -39,7 +39,7 @@ graph TD
 - [소수와 유일분해](primes.md): 산술의 기본 정리
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
 - [중국인의 나머지 정리](chinese-remainder-theorem.md): 서로소 법의 합동식 결합
-- [이차 상호법칙](quadratic-reciprocity.md): 제곱잉여의 대칭성, 유체론의 씨앗
+- [이차 상호법칙](quadratic-reciprocity.md): 제곱잉여의 대칭성, 유체론의 시작점
 - [Gauss 정수환](gaussian-integers.md): 소수의 분해 유형과 두 제곱수의 합
 - [유한체](finite-fields.md): 소수 위수의 체와 그 확대
 

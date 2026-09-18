@@ -80,26 +80,6 @@ $d(x_n, p) \le q^n d(x_0, p)$ 이므로 오차가 매 단계 상수 배로 줄�
 
 [Newton 법](newton-method.md)은 해 근처에서 축약 계수가 $0$ 으로 가므로 이차 수렴을 보이며, 그 대가로 시작점이 충분히 가까워야 한다.
 
-```python
-def fixed_point(T, x0, q, tol=1e-12, max_iter=200):
-    x = x0
-    for n in range(1, max_iter + 1):
-        nxt = T(x)
-        gap = abs(nxt - x)
-        if q / (1 - q) * gap < tol:          # 후험적 오차 한계
-            return nxt, n
-        x = nxt
-    return x, max_iter
-
-
-# T(x) = (x+2)/3, q = 1/3, 고정점 1
-print(fixed_point(lambda x: (x + 2) / 3, 0.0, 1 / 3))
-
-# cos 의 고정점 (Dottie 수). [0,1] 에서 |sin| <= sin(1) < 1
-import math
-print(fixed_point(math.cos, 0.5, math.sin(1.0)))
-```
-
 $(x+2)/3$ 은 $0$ 에서 시작해 $2/3, 8/9, 26/27$ 을 거쳐 $1$ 로 간다. $\cos$ 은 $[0,1]$ 을 자기 안으로 보내고 그 위에서 $\lvert \cos' \rvert = \lvert \sin \rvert \le \sin(1) \approx 0.841 < 1$ 이므로 축약사상이며, 계수가 $1$ 에 가까워 수렴이 느리다.
 
 ## 변형

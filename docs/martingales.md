@@ -165,33 +165,6 @@ $$
 - **통계.** 순차적 검정(SPRT)의 우도비는 곱 martingale 이고, 정지 규칙의 오류 확률 경계는 선택적 정지 정리와 최대부등식에서 직접 나온다. [측도 변환](change-of-measure.md)의 Radon–Nikodym 밀도과정도 같은 구조다.
 - **연속시간.** Brownian motion 에서 $B_t$ 와 $B_t^2 - t$ 그리고 $\exp(\theta B_t - \theta^2 t / 2)$ 는 모두 martingale 이며, Itô 적분은 "martingale 변환"의 연속시간 판이다. 금융의 무차익 가격결정은 할인된 가격과정을 martingale 로 만드는 측도의 존재로 서술된다.
 
-## 계산 예제
-
-대칭 랜덤워크의 도박꾼 파산 공식을 시뮬레이션으로 확인한다. 이론값은 도달확률 $k/N$ , 기대 시간 $k(N-k)$ 다.
-
-```python
-import random
-
-def ruin(k, N, trials=20000, seed=0):
-    rng = random.Random(seed)
-    wins, steps = 0, 0
-    for _ in range(trials):
-        s, t = k, 0
-        while 0 < s < N:
-            s += 1 if rng.random() < 0.5 else -1
-            t += 1
-        wins += (s == N)
-        steps += t
-    return wins / trials, steps / trials
-
-k, N = 3, 10
-p_hat, t_hat = ruin(k, N)
-print(f"P(도달 N): 시뮬 {p_hat:.3f} / 이론 {k/N:.3f}")
-print(f"E[T]    : 시뮬 {t_hat:.2f} / 이론 {k*(N-k)}")
-```
-
-증분이 유계인 martingale 이므로 두 예측 모두 선택적 정지 정리의 조건 2와 3을 만족하고, 시뮬레이션 오차는 시행 횟수의 제곱근에 반비례해 줄어든다. 비대칭 경우로 바꾸면 $(q/p)^{S_n}$ 을 쓰는 공식과 비교할 수 있다[^2].
-
 [^1]: Rick Durrett, Probability: Theory and Examples (5th ed.), Chapter 4 (Martingales), https://sites.math.duke.edu/~rtd/PTE/PTE5_011119.pdf
 [^2]: Russell Lyons and Yuval Peres, Probability on Trees and Networks, Chapter 2, https://rdlyons.pages.iu.edu/prbtree/book.pdf
 

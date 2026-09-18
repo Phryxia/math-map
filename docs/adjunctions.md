@@ -140,7 +140,7 @@ $$
 Adjunction은 표현가능성의 언어로 다시 쓸 수 있다.
 
 - $G:\mathcal D\to\mathcal C$ 의 left adjoint가 존재할 필요충분조건은, 각 대상 $c$ 에 대해 functor $\mathrm{Hom}\_{\mathcal C}(c,G-):\mathcal D\to\mathbf{Set}$ 가 표현가능한 것이다. 그때 표현 대상이 $Fc$ 다.
-- Yoneda lemma는 이 표현 대상이 유일하며 $c$ 에 대한 functor성이 공짜로 따라옴을 보장한다. Adjunction의 자연성 조건이 곧 Yoneda 매장이 충실충만하다는 사실의 응용이다.
+- Yoneda lemma는 이 표현 대상이 유일하며 $c$ 에 대한 functor성이 자동으로 따라옴을 보장한다. Adjunction의 자연성 조건이 곧 Yoneda 매장이 충실충만하다는 사실의 응용이다.
 
 달리 말해 adjunction은 "hom-functor를 통해 본 두 범주의 번역 사전" 이고, Yoneda lemma는 그 사전이 대상 자체를 결정한다는 진술이다.
 
@@ -207,22 +207,6 @@ $$
 $$
 \mathrm{Hom}(X \times A, Y) \cong \mathrm{Hom}(X, Y^A)
 $$
-
-가 성립한다. 즉 $- \times A \dashv (-)^A$ 다. 이 성질을 가지는 범주를 cartesian closed category라 하고, 이것이 단순 타입 람다 계산의 의미론적 골격이다. 다음 코드가 전단사를 그대로 구현한다.
-
-```python
-def curry(f):
-    """f : (X x A) -> Y  ==>  X -> (A -> Y)"""
-    return lambda x: lambda a: f((x, a))
-
-def uncurry(g):
-    """g : X -> (A -> Y)  ==>  (X x A) -> Y"""
-    return lambda pair: g(pair[0])(pair[1])
-
-f = lambda xa: xa[0] ** xa[1]
-assert uncurry(curry(f))((3, 4)) == f((3, 4))     # 왕복하면 제자리
-assert curry(uncurry(curry(f)))(3)(4) == 81       # 반대 방향도 동일
-```
 
 Unit $\eta_X : X \to (X \times A)^A$ 는 $x$ 를 $a \mapsto (x, a)$ 로 보내는 사상이고, counit $\varepsilon_Y : Y^A \times A \to Y$ 는 평가 사상이다. Triangle identity는 "평가한 뒤 다시 묶으면 원래 함수" 라는 익숙한 등식이다.
 

@@ -118,38 +118,6 @@ $\mathrm{P}_{\mathrm{I}}$ 의 모든 해는 복소평면 전체에서 유리형�
 
 $x$ 가 큰 곳에서 Airy 점근으로 초기값을 잡고 음의 방향으로 Runge–Kutta 적분하면 이 해를 얻는다.
 
-```python
-import math
-
-def airy_pair(x, N=8):
-    """x 가 클 때 Ai(x) 와 Ai'(x) 를 점근급수로."""
-    z = 2 / 3 * x ** 1.5
-    u = [1.0]
-    for k in range(1, N):
-        u.append(u[-1] * (6*k-5) * (6*k-3) * (6*k-1) / (216 * k * (2*k-1)))
-    v = [1.0] + [u[k] * (6*k+1) / (1 - 6*k) for k in range(1, N)]
-    pre = math.exp(-z) / (2 * math.sqrt(math.pi))
-    ai = pre / x ** 0.25 * sum((-1) ** k * u[k] / z ** k for k in range(N))
-    aip = -pre * x ** 0.25 * sum((-1) ** k * v[k] / z ** k for k in range(N))
-    return ai, aip
-
-def integrate(x0, x1, h=1e-3):
-    """q'' = 2q^3 + x q 를 RK4 로 적분한다."""
-    f = lambda x, y: (y[1], x * y[0] + 2 * y[0] ** 3)
-    y = list(airy_pair(x0))
-    n = int(abs((x1 - x0) / h))
-    h = (x1 - x0) / n
-    x = x0
-    for _ in range(n):
-        k1 = f(x, y)
-        k2 = f(x + h/2, [y[j] + h/2 * k1[j] for j in range(2)])
-        k3 = f(x + h/2, [y[j] + h/2 * k2[j] for j in range(2)])
-        k4 = f(x + h, [y[j] + h * k3[j] for j in range(2)])
-        y = [y[j] + h/6 * (k1[j] + 2*k2[j] + 2*k3[j] + k4[j]) for j in range(2)]
-        x += h
-    return y[0]
-```
-
 $q(0) = 0.367061552$ 이고, 음의 방향에서 $q(-2) = 0.98339$ , $q(-4) = 1.41118$ , $q(-6) = 1.7310$ 으로 $\sqrt{-x/2}$ 에 다가간다.
 
 ## 분포함수

@@ -100,23 +100,7 @@ $$
 
 ## Huffman 알고리즘
 
-```python
-import heapq, math
-
-def huffman(p):
-    """확률표 p 에서 최적 접두부호를 만든다"""
-    h = [(w, i, {s: ""}) for i, (s, w) in enumerate(sorted(p.items()))]
-    heapq.heapify(h)
-    n = len(h)
-    while len(h) > 1:
-        w1, _, c1 = heapq.heappop(h)          # 가장 작은 둘을 묶는다
-        w2, _, c2 = heapq.heappop(h)
-        merged = {s: "0" + c for s, c in c1.items()}
-        merged.update({s: "1" + c for s, c in c2.items()})
-        heapq.heappush(h, (w1 + w2, n, merged))
-        n += 1
-    return h[0][2]
-```
+Huffman 알고리즘은 확률이 가장 작은 두 기호를 합쳐 새 기호로 두는 일을 기호가 하나 남을 때까지 반복하고, 합친 순서를 거꾸로 따라가며 $0$ 과 $1$ 을 붙인다. 결과는 평균 길이가 최소인 접두부호다.
 
 $p=(0.45,0.25,0.15,0.10,0.05)$ 에서 얻는 부호는 길이 $(1,2,3,4,4)$ 로 $L=2.0$ , $H=1.9772$ 이고 Kraft 부등식이 등호다.
 

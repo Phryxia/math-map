@@ -55,39 +55,6 @@ $$
 
 동률이 있으면 여러 개일 수 있지만 동률이 여러 해를 보장하지는 않는다. 동률인 두 간선이 같은 순환에 들어가지 않으면 둘 다 선택되어 해가 하나뿐이다.
 
-```python
-class DSU:
-    def __init__(self, n):
-        self.p = list(range(n))
-    def find(self, x):
-        while self.p[x] != x:
-            self.p[x] = self.p[self.p[x]]
-            x = self.p[x]
-        return x
-    def union(self, a, b):
-        ra, rb = self.find(a), self.find(b)
-        if ra == rb:
-            return False
-        self.p[rb] = ra
-        return True
-
-
-def kruskal(n, edges):
-    """edges: (w, u, v) 목록. (총 가중치, 선택된 간선) 반환."""
-    d = DSU(n)
-    total, chosen = 0, []
-    for w, u, v in sorted(edges):
-        if d.union(u, v):
-            total += w
-            chosen.append((w, u, v))
-    return total, chosen
-
-
-# A=0, B=1, C=2
-tri = [(2, 0, 1), (2, 1, 2), (3, 0, 2)]
-print(kruskal(3, tri))                       # (4, [(2,0,1), (2,1,2)])
-```
-
 ## 복잡도와 다른 알고리즘
 
 Kruskal 은 간선 정렬이 $O(|E|\log|E|)$ 이고 나머지 서로소 집합 연산이 거의 선형이라 전체가 정렬에 지배된다. 가중치가 작은 정수여서 기수 정렬을 쓸 수 있으면 더 빨라진다.

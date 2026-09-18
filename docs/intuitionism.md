@@ -120,29 +120,6 @@ $$
 
 고전 논리에는 없는 성질이다. $\vdash A \lor \neg A$ 이지만 $A$ 도 $\neg A$ 도 증명되지 않는 경우가 있다.
 
-이 성질이 직관주의 논리를 계산과 잇는다. 존재 증명에서 실제 대상을 기계적으로 추출할 수 있고 그 추출 과정이 프로그램 실행이며, 증명 정규화가 프로그램의 평가에 대응한다는 것이 Curry–Howard 의 내용이다.
-
-```python
-# 명제 = 타입, 증명 = 값. A -> B 의 증명은 함수, A and B 는 튜플, A or B 는 태그된 값.
-def and_intro(a, b):      return (a, b)
-def or_intro_left(a):     return ("left", a)
-def or_intro_right(b):    return ("right", b)
-
-# A -> not not A: a 를 받아 "na 를 받아 na(a) 를 내는 함수" 를 돌려준다
-def dni(a):
-    return lambda na: na(a)
-
-# not not (A or not A) 의 증명. k 는 (A or not A) -> bot.
-def dn_lem(k):
-    na = lambda a: k(or_intro_left(a))   # not A 를 구성한다
-    return k(or_intro_right(na))         # 다시 모순
-
-# 반면 not not A -> A 를 구성하는 함수는 작성할 수 없다.
-# nna 는 (A -> bot) -> bot 이고, bot 에서 A 를 꺼낼 방법이 없다.
-```
-
-`dn_lem` 은 오른쪽 선택으로 $\neg A$ 를 건네고, 그 $\neg A$ 가 쓰이면 왼쪽 선택을 통해 다시 모순으로 돌아온다. $k$ 가 두 번 불리는 흔적이 위 증명의 구조다. $\neg\neg A \to A$ 는 반환할 값을 만들 방법이 없어 작성 자체가 불가능하다.
-
 ## 고전 정리의 존속 여부
 
 | 식 | 직관주의 |

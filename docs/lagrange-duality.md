@@ -110,7 +110,7 @@ $\lambda\ge 0$ 에서 최대화하면 최적 승수는 $2$ , $d=2$ 다. 승수�
 - 쌍대 문제가 원 문제보다 변수가 적거나 구조가 좋으면 쌍대 문제를 풀어 원 문제의 해를 복원한다. support vector machine 의 kernel 형태가 그 예다.
 - 부등식 제약 아래의 해를 손으로 구할 때 KKT 조건을 푼다. 통신 전력배분의 water-filling 해는 상보 여유에서 나온다.
 - 쌍대함수는 임의의 승수에서 하한이므로 정수계획법의 분기한정법에서 하한을 만든다.
-- [경사하강법](gradient-descent.md)으로 쌍대 문제를 올리는 dual ascent 와 augmented Lagrangian, ADMM 계열 알고리즘의 뼈대다.
+- [경사하강법](gradient-descent.md)으로 쌍대 문제를 올리는 dual ascent 와 augmented Lagrangian, ADMM 계열 알고리즘의 기본 구조다.
 - [Shannon entropy](entropy.md)를 최대화하는 최대엔트로피 추정에서 지수족 분포가 KKT 조건의 해로 나온다.
 
 [^1]: S. Boyd and L. Vandenberghe, Convex Optimization, Chapter 5 (Duality) 강의 슬라이드. https://web.mit.edu/~jadbabai/www/EE605/lectures/duality.pdf

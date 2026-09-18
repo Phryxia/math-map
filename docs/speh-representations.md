@@ -87,19 +87,6 @@ $\mathrm{GL}_n$ 의 이산 스펙트럼은 중복도가 언제나 1 이다. 성�
 
 $n$ 이 주어졌을 때 잔여 스펙트럼에 기여하는 모양의 개수는 약수를 세는 문제다.
 
-```python
-def discrete_spectrum_shapes(n):
-    """GL_n 이산 스펙트럼의 (d, m) 모양과 Ramanujan 경계 위반 폭"""
-    out = []
-    for d in range(1, n + 1):
-        if n % d:
-            continue
-        m = n // d
-        # Satake 매개변수가 q^{(d-1)/2} 까지 벌어진다
-        out.append((d, m, (d - 1) / 2))
-    return out
-```
-
 | $n$ | 모양 $[\mathrm{GL}_m$ 첨점$]\times[d]$ |
 |---|---|
 | 2 | $m{=}2,d{=}1$ (첨점), $m{=}1,d{=}2$ (잔여, $q^{0.5}$ ) |

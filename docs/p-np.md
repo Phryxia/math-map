@@ -65,22 +65,6 @@ NP-완전 문제 하나에 다항시간 알고리즘이 있으면 $\mathrm P=\ma
 
 Boolean 만족 가능성 문제는 주어진 논리식을 참으로 만드는 변수 배정이 있는지 묻는다. 배정을 받으면 식을 평가해 빠르게 검증한다. 이 문제가 NP-완전이라는 것이 [Cook–Levin 정리](np-completeness.md)이고, 이후의 NP-완전성 증명은 여기서 환원으로 출발한다.
 
-```python
-from itertools import product
-
-def brute_sat(clauses, n):
-    """CNF 를 전수 탐색으로 판정한다. 2^n 개 배정."""
-    for bits in product([False, True], repeat=n):
-        if all(any(bits[abs(l) - 1] == (l > 0) for l in c) for c in clauses):
-            return bits
-    return None
-
-
-def verify(clauses, bits):
-    """증명서 검증은 절의 수에 선형이다."""
-    return all(any(bits[abs(l) - 1] == (l > 0) for l in c) for c in clauses)
-```
-
 찾기 쪽은 $2^n$ 번 반복하고 검증 쪽은 한 번 훑는다. $\mathrm P=\mathrm{NP}$ 는 두 비용의 차수가 같다는 주장이다.
 
 ## 증명의 장벽

@@ -75,26 +75,6 @@ $$
 
 이고, 작은 고유값의 고유벡터가 두 정점을 크게 갈라놓을수록 저항이 커진다. 병목이 저항으로 나타난다.
 
-## 계산
-
-```python
-import numpy as np
-
-def effective_resistance(W):
-    """W: 대칭 가중치 행렬(전도도). 모든 정점 쌍의 유효저항을 반환한다."""
-    L = np.diag(W.sum(axis=1)) - W
-    Lp = np.linalg.pinv(L)
-    d = np.diag(Lp)
-    return d[:, None] - 2 * Lp + d[None, :]
-
-path = np.array([[0, 1, 0], [1, 0, 1], [0, 1, 0]], dtype=float)
-print(effective_resistance(path)[0, 2])      # 2.0
-
-parallel = np.array([[0, 1, 1, 0], [1, 0, 0, 1],
-                     [1, 0, 0, 1], [0, 1, 1, 0]], dtype=float)
-print(effective_resistance(parallel)[0, 3])  # 1.0
-```
-
 # 성질
 
 ## 에너지 해석

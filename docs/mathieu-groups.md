@@ -96,32 +96,6 @@ $$
 
 생성다항식에서 순환부호를 만들고 무게 분포를 센다.
 
-```python
-from collections import Counter
-from math import comb
-
-# g(x) = x^11 + x^9 + x^7 + x^6 + x^5 + x + 1, 비트로 표현
-g = sum(1 << e for e in [11, 9, 7, 6, 5, 1, 0])
-
-def polymul(a, b):
-    r = 0
-    while b:
-        if b & 1:
-            r ^= a
-        a <<= 1
-        b >>= 1
-    return r
-
-wt = lambda x: bin(x).count("1")
-words = [polymul(m, g) for m in range(1 << 12)]     # <g> 의 원소 4096 개
-print(sorted(Counter(map(wt, words)).items()))
-# [(0, 1), (7, 253), (8, 506), (11, 1288), (12, 1288), (15, 506), (16, 253), (23, 1)]
-
-ext = [(w << 1) | (wt(w) & 1) for w in words]       # 패리티 비트 확장
-print(sorted(Counter(map(wt, ext)).items()))
-# [(0, 1), (8, 759), (12, 2576), (16, 759), (24, 1)]
-```
-
 확장 부호의 무게는 $0,8,12,16,24$ 뿐이다. 최소거리가 8 이고 모든 무게가 4 의 배수이며, 무게 8 짜리 759 개가 Steiner 계의 블록 수와 일치한다. 무게 분포가 $w\leftrightarrow24-w$ 로 대칭인 것은 전체 1 벡터가 부호에 속하기 때문이다.
 
 ## 자기동형군의 크기

@@ -137,64 +137,10 @@ $$
 
 # 활용
 
-## 구현 예제
-
-작은 소수로 전체 흐름을 보인다. 실제 사용에는 검증된 라이브러리와 OAEP 패딩이 필수다.
-
-```python
-from math import gcd
-
-def egcd(a, b):
-    if b == 0:
-        return (a, 1, 0)
-    g, x, y = egcd(b, a % b)
-    return (g, y, x - (a // b) * y)
-
-def inverse(a, m):
-    g, x, _ = egcd(a % m, m)
-    assert g == 1, "역원이 없다"
-    return x % m
-
-# 1) 키 생성 (데모용 작은 소수)
-p, q = 1000003, 1000033
-n = p * q
-phi = (p - 1) * (q - 1)
-e = 65537
-assert gcd(e, phi) == 1
-d = inverse(e, phi)
-
-# 2) 암호화 / 복호화
-m = 123456789012 % n
-c = pow(m, e, n)
-m_back = pow(c, d, n)
-
-# 3) CRT 가속 복호화
-dp, dq = d % (p - 1), d % (q - 1)
-q_inv = inverse(q, p)
-
-def decrypt_crt(c):
-    mp = pow(c, dp, p)
-    mq = pow(c, dq, q)
-    h = (q_inv * (mp - mq)) % p
-    return mq + h * q
-
-print("n =", n)
-print("복호화:", m_back, decrypt_crt(c))
-
-# 4) 공통 모듈러스 공격 시연: 같은 n, 서로소인 두 공개지수
-e1, e2 = 17, 65537
-c1, c2 = pow(m, e1, n), pow(m, e2, n)
-g, a, b = egcd(e1, e2)                            # g = 1 이라야 공격이 성립한다
-recovered = (pow(c1, a, n) * pow(c2, b, n)) % n   # 음수 지수는 pow 가 역원으로 처리
-print("공통 모듈러스 공격으로 복원한 평문:", recovered)
-```
-
-CRT 복호화는 크기가 절반인 모듈러스에서 거듭제곱을 두 번 하므로 대략 4 배 빠르다.
-
 ## 다른 주제와의 연결
 
 - **소수 생성.** 키 생성은 큰 소수를 뽑는 절차에 의존한다. 무작위 홀수를 뽑아 Miller–Rabin 확률적 소수판정을 통과시키는 방식이 표준이며, 소수 정리가 필요한 시도 횟수(대략 $\ln(2^b)/2$ 회)를 알려 준다.
-- **수론 알고리즘.** 확장 [유클리드 알고리즘](euclidean-algorithm.md), 반복 제곱법, Montgomery 곱셈이 구현의 뼈대다.
+- **수론 알고리즘.** 확장 [유클리드 알고리즘](euclidean-algorithm.md), 반복 제곱법, Montgomery 곱셈이 구현의 기본 요소다.
 - **계산 이론.** RSA의 존재 자체가 일방향함수의 존재를 가정한다. 일방향함수가 존재하면 $\mathrm P\ne\mathrm{NP}$ 이므로, RSA의 안전성은 [P 대 NP 문제](p-np.md)보다 강한 가정이다. 반대로 $\mathrm P\ne\mathrm{NP}$ 라 해도 RSA가 안전하다는 보장은 없다.
 - **후속 암호계.** 이산로그 기반(Diffie–Hellman, 타원곡선)과 격자 기반 방식은 같은 공개키 틀에 다른 난제를 끼운 것이다. 양자 내성 표준화는 격자·부호·해시 기반으로 이동 중이다.
 - **프로토콜 위치.** 실제 TLS에서 RSA는 대칭키 교환과 인증서 서명에 쓰이고, 대량 데이터는 대칭 암호가 처리한다. 공개키 연산이 느리기 때문이다.

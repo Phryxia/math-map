@@ -125,49 +125,6 @@ $$
 
 두 원소 대수만으로도 충분하다는 점이 Heyting 경우와 크게 다르다. 임의의 Boolean algebra 에서 값이 1이 아니면 초필터를 하나 잡아 두 원소 대수로 보내면 되기 때문이다. 그래서 고전 명제논리는 진리표로 결정 가능하다.
 
-## 계산 예
-
-세 변수 위의 자유 Boolean algebra 는 여덟 개의 assignment 집합의 멱집합이다. 원소를 "만족하는 assignment 집합"으로 두면 원자가 곧 assignment 이고, 모든 원소가 원자들의 이음으로 쓰이는 것이 바로 선언 정규형이다.
-
-```python
-from itertools import product
-
-VARS = ["p", "q", "r"]
-WORLDS = list(product([False, True], repeat=len(VARS)))   # 원자 8개
-
-def elem(f):                       # 논리식 -> 만족 assignment 집합
-    return frozenset(w for w in WORLDS if f(*w))
-
-TOP = elem(lambda *w: True)
-comp = lambda a: TOP - a
-meet = lambda a, b: a & b
-join = lambda a, b: a | b
-imp = lambda a, b: join(comp(a), b)
-
-phi = elem(lambda p, q, r: (p and q) or (not r))
-
-print("대수의 크기:", 2 ** len(WORLDS))
-print("배중률:", join(phi, comp(phi)) == TOP)
-print("이중부정:", comp(comp(phi)) == phi)
-print("de Morgan:", comp(meet(phi, TOP)) == join(comp(phi), comp(TOP)))
-
-def atom_name(w):
-    return " and ".join(v if b else "not " + v for v, b in zip(VARS, w))
-
-print("DNF:", " or ".join("(" + atom_name(w) + ")" for w in sorted(phi)))
-```
-
-출력되는 DNF 는 $\varphi$ 아래에 있는 원자들을 나열한 것이고, 유한 구조 정리가 말하는 분해가 바로 이것이다. 회로 설계에서 진리표로부터 게이트 회로를 뽑는 절차도 같은 분해다.
-
-```mermaid
-graph LR
-  P["명제논리식"] -->|"논리적 동치로 몫"| L["Lindenbaum 대수"]
-  L -->|"초필터"| V["진리 할당 (2원소 대수로의 준동형)"]
-  L -->|"Stone 위상"| S["Stone 공간"]
-  S -->|"공간의 compactness"| K["명제논리 compactness 정리"]
-  L -->|"유한 변수"| F["유한 Boolean algebra = 멱집합 대수"]
-```
-
 # 활용
 
 ## 집합 연산과 확률

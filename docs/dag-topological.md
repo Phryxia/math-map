@@ -60,33 +60,6 @@ $$
 
 이다. 큐 대신 우선순위 큐를 쓰면 사전순으로 가장 앞선 위상정렬을 $O((n+m)\log n)$ 에 얻는다.
 
-```python
-from collections import deque
-
-def toposort(n, edges):
-    """0..n-1 정점, edges 는 (u, v) 목록. 순환이 있으면 None."""
-    adj = [[] for _ in range(n)]
-    indeg = [0] * n
-    for u, v in edges:
-        adj[u].append(v)
-        indeg[v] += 1
-    q = deque(v for v in range(n) if indeg[v] == 0)
-    order = []
-    while q:
-        u = q.popleft()
-        order.append(u)
-        for v in adj[u]:
-            indeg[v] -= 1
-            if indeg[v] == 0:
-                q.append(v)
-    return order if len(order) == n else None
-
-
-# A=0, B=1, C=2:  A->C, B->C
-print(toposort(3, [(0, 2), (1, 2)]))      # [0, 1, 2]
-print(toposort(3, [(0, 1), (1, 2), (2, 0)]))   # None: 순환
-```
-
 DFS 로 구현하면 후위 순회 순서를 뒤집은 것이 위상정렬이고, 회색 정점으로 되돌아가는 간선이 순환을 알려 준다. 두 구현의 출력 순서는 다를 수 있다.
 
 ## 위상순 순회

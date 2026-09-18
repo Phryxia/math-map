@@ -77,28 +77,6 @@ $$
 
 는 모든 점에서 $0$ 으로 수렴하지만 적분이 항상 $1$ 이다. 적분 가능한 지배함수를 잡을 수 없기 때문이다. 반대로 지배함수 없이 교환이 성립하는 경우도 있으므로 정리의 조건은 충분조건이다.
 
-```python
-def integral_grid(f, lo, hi, n=200000):
-    h = (hi - lo) / n
-    return h * sum(f(lo + (i + 0.5) * h) for i in range(n))
-
-
-# 지배함수 G(x) = 1 이 있는 경우: 교환 성립
-import math
-def wave(n):
-    return lambda x: math.sin(n * x) / (1 + n * x ** 2)
-
-for n in (1, 10, 100, 1000):
-    print("지배됨", n, integral_grid(wave(n), 0, 1))
-
-# 지배함수 없음: 적분이 1 에 머문다
-def spike(n):
-    return lambda x: n if 0 < x < 1 / n else 0
-
-for n in (10, 100, 1000):
-    print("지배 없음", n, integral_grid(spike(n), 0, 1))
-```
-
 $\lvert \sin(nx)/(1+nx^2) \rvert \le 1$ 은 지배되어 적분이 $0$ 으로 가고, 좁아지며 높아지는 봉우리는 적분이 $1$ 에 머문다.
 
 ## 따름정리

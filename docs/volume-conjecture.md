@@ -131,28 +131,6 @@ $$
 J_N(4_1;e^{2\pi i/N})=\sum_{k=0}^{N-1}\prod_{j=1}^{k}\big|1-e^{2\pi ij/N}\big|^2
 $$
 
-```python
-from cmath import exp, pi
-from math import log
-
-def J_fig8(N):
-    """색 Jones 다항식 J_N(4_1) 을 q = e^{2 pi i / N} 에서 평가"""
-    q = exp(2j*pi/N)
-    total, prod = 0.0, 1.0 + 0j
-    for k in range(N):
-        total += abs(prod)**2          # k 번째 항
-        prod *= (1 - q**(k+1))         # 다음 항을 위한 q-이항곱
-    return total
-
-VOL = 2.029883212819307                # 8 자매듭의 쌍곡 부피
-
-for N in [50, 100, 300, 800, 2000]:
-    L = log(J_fig8(N))
-    raw = 2*pi*L/N                     # 추측 그대로
-    corr = 2*pi*(L - 1.5*log(N))/N     # J_N ~ N^{3/2} e^{N Vol/2pi} 를 가정
-    print(N, raw, corr)
-```
-
 $2\pi\log J_N/N$ 은 참값보다 $2\pi\cdot\tfrac32\log N/N$ 만큼 크다. 이 항은 0 으로 가지만 $\log N/N$ 이라 느려서 $N=2000$ 에서도 오차가 $0.035$ 다. $\log J_N$ 에서 $\tfrac32\log N$ 을 빼면 같은 $N$ 에서 오차가 $0.0009$ 로 줄고 감소 속도가 정련된 판본의 $O(1/N)$ 과 맞는다.
 
 ## 쓰임

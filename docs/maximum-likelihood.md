@@ -153,22 +153,6 @@ $$
 
 닫힌 해가 없으면 score 방정식을 수치적으로 푼다. Newton–Raphson은 2차 도함수를 쓰고, 그 자리에 Fisher 정보를 넣은 변형이 Fisher scoring이다. 로그가능도가 오목하면(예: 지수족의 자연매개화) 전역해가 보장되고 [볼록성](convexity.md) 기반의 [경사하강법](gradient-descent.md)이 그대로 적용된다.
 
-```python
-import math
-
-def newton_logistic(xs, ys, iters=20):
-    """절편 없는 1차원 로지스틱 회귀의 MLE (Newton-Raphson)."""
-    b = 0.0
-    for _ in range(iters):
-        score = hess = 0.0
-        for x, y in zip(xs, ys):
-            p = 1 / (1 + math.exp(-b * x))
-            score += (y - p) * x          # l'(b)
-            hess -= p * (1 - p) * x * x   # l''(b) < 0
-        b -= score / hess
-    return b, -1 / hess                   # 추정값, 점근분산 근사
-```
-
 ## 다른 추론 방식과의 관계
 
 가능도에 사전분포를 곱해 최대화하면 최대사후확률(MAP) 추정이 되고, 사전분포가 균등하면 MLE와 같다. 이 관계는 [Bayes 정리](bayes.md)에서 직접 읽힌다. 정규분포 사전분포를 쓴 MAP는 제곱 벌점(ridge)과 같고, Laplace 사전분포는 절댓값 벌점(lasso)과 같다. 가능도비를 검정통계량으로 쓰면 [가설검정과 p-값](hypothesis-testing.md)의 가능도비 검정이 되며, Wilks 정리가 그 점근분포를 준다.

@@ -88,19 +88,6 @@ $$
 
 곱이 $0$ 이어도 한 인수가 $0$ 이 아니고, $0$ 아닌 인수를 양변에서 지울 수도 없다. 소거가 가능한 조건은 곱하는 원소가 가역이거나 환이 정역인 것이다. 정역에서 $ab = ac$ 이고 $a \ne 0$ 이면 $a(b-c) = 0$ 에서 $b = c$ 가 나온다.
 
-```python
-def zero_divisors(m):
-    return [a for a in range(1, m)
-            if any(a * b % m == 0 for b in range(1, m))]
-
-def units(m):
-    return [a for a in range(m)
-            if any(a * b % m == 1 for b in range(m))]
-
-for m in (5, 6, 7, 8):
-    print(m, "영인자", zero_divisors(m), "가역원", units(m))
-```
-
 $m$ 이 소수이면 영인자가 없고 $0$ 을 뺀 전부가 가역이므로 $\mathbb{Z}/p\mathbb{Z}$ 는 체다. 유한 정역이 항상 체라는 정리의 특수한 경우이고, 증명에는 유한성에서 $x \mapsto ax$ 가 단사이면 전사라는 사실이 쓰인다.
 
 ## 특성

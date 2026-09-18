@@ -49,43 +49,7 @@ $$
 
 $G$ 다발의 모듈라이 $\mathrm{Bun}\_G$ 를 만들면 그 점들이 Kottwitz 집합 $B(G)$ 로 분류된다. $G=\mathrm{GL}\_n$ 이면 곧 isocrystal 의 동형류이고, 기울기 다중집합으로 적힌다.
 
-```python
-from fractions import Fraction as F
-from math import gcd
-
-def isocrystals(n, d, bound=1):
-    """높이 n, 차수 d 인 isocrystal 을 단순 성분의 다중집합으로 열거한다.
-       E_{r/s} 는 dim s, deg r 이고 gcd(r,s)=1 이다. 기울기는 [-bound, bound] 로 제한."""
-    simples = [(r, s) for s in range(1, n + 1)
-                      for r in range(-bound * s, bound * s + 1)
-                      if gcd(abs(r), s) == 1]
-    out = []
-    def rec(i, rn, rd, chosen):
-        if rn == 0:
-            if rd == 0: out.append(tuple(chosen))
-            return
-        if i >= len(simples): return
-        r, s = simples[i]
-        if s <= rn: rec(i, rn - s, rd - r, chosen + [(r, s)])
-        rec(i + 1, rn, rd, chosen)
-    rec(0, n, d, [])
-    return out
-
-for n, d in ((1,0), (2,0), (2,1), (3,1), (4,2)):
-    rows = isocrystals(n, d)
-    print(f'n={n}, d={d}: ' + ' | '.join(
-        ','.join(str(F(r,s)) for r,s in c) for c in rows))
-```
-
-```
-n=1, d=0: 0
-n=2, d=0: -1,1 | 0,0
-n=2, d=1: 0,1 | 1/2
-n=3, d=1: -1,1,1 | 0,0,1 | 0,1/2 | 1/3
-n=4, d=2: -1,1,1,1 | 0,0,1,1 | 0,1,1/2 | 0,2/3 | 1,1/3 | 1/2,1/2
-```
-
-기울기가 모두 같은 것을 **기본(basic)** 이라 한다. $n=2,d=1$ 의 $1/2$ 와 $n=4,d=2$ 의 $1/2,1/2$ 가 그렇다. 나머지는 기울기가 갈라진 비기본 원소다. 이 구분이 층화의 뼈대다.
+기울기가 모두 같은 것을 **기본(basic)** 이라 한다. $n=2,d=1$ 의 $1/2$ 와 $n=4,d=2$ 의 $1/2,1/2$ 가 그렇다. 나머지는 기울기가 갈라진 비기본 원소다. 이 구분이 층화의 기준이다.
 
 $$
 \mathrm{Bun}_G=\bigsqcup_{b\in B(G)}\mathrm{Bun}_G^b

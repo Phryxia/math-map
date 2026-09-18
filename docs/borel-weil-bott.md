@@ -155,71 +155,16 @@ $$
 
 로 대조한다.
 
-```python
-from itertools import product
-
-# A_2 : 기본무게 좌표 (a,b) = (<λ,α1^∨>, <λ,α2^∨>).  ρ = (1,1)
-def weyl_elements():
-    """(무게작용 행렬, 길이) 를 BFS 로 생성. S_3 이라 6 개."""
-    def mul(m, n):
-        a, b, c, d = m; e, f, g, h = n
-        return (a * e + b * g, a * f + b * h, c * e + d * g, c * f + d * h)
-    M1, M2 = (-1, 0, 1, 1), (1, 1, 0, -1)      # s1, s2 의 기본무게 좌표 행렬
-    frontier = [(1, 0, 0, 1)]
-    length = {(1, 0, 0, 1): 0}
-    while frontier:
-        nxt = []
-        for m in frontier:
-            for g in (M1, M2):
-                p = mul(g, m)
-                if p not in length:
-                    length[p] = length[m] + 1
-                    nxt.append(p)
-        frontier = nxt
-    return length
-
-def act(m, v):
-    a, b, c, d = m; x, y = v
-    return (a * x + b * y, c * x + d * y)
-
-def dim_A2(a, b):
-    return (a + 1) * (b + 1) * (a + b + 2) // 2
-
-LEN = weyl_elements()
-RHO = (1, 1)
-
-def bott(lam):
-    """무게 lam 에 대해 (차수, 결과 최고무게) 또는 None(전부 소멸) 을 준다."""
-    shifted = (lam[0] + RHO[0], lam[1] + RHO[1])
-    if shifted[0] == 0 or shifted[1] == 0:      # 벽 위 : λ+ρ 가 정칙이 아니다
-        return None
-    for m, l in LEN.items():
-        t = act(m, shifted)
-        if t[0] > 0 and t[1] > 0:               # 지배적 정칙으로 밀렸다
-            return l, (t[0] - RHO[0], t[1] - RHO[1])
-    return None
-
-print(" λ        결과")
-for lam in product(range(-4, 3), repeat=2):
-    r = bott(lam)
-    if r is None:
-        print(f"{str(lam):>9}   모든 H^i = 0")
-    else:
-        l, mu = r
-        print(f"{str(lam):>9}   H^{l} = V*_{mu},  dim {dim_A2(*mu)}")
-```
-
 자명표현이 나오는 자리만 뽑으면 규칙이 보인다.
 
-```
-  (0, 0)    H^0 = V*_(0, 0),  dim 1
- (-2, 1)    H^1 = V*_(0, 0),  dim 1
- (-3, 0)    H^2 = V*_(0, 0),  dim 1
- (-2, -2)   H^3 = V*_(0, 0),  dim 1
- (-1, 0)    모든 H^i = 0
- (-1, k)    모든 H^i = 0        (모든 k)
- (-4, -4)   H^3 = V*_(2, 2),  dim 27
-```
+| $\lambda=(a,b)$ | 코호몰로지 |
+|---|---|
+| $(0,0)$ | $H^0=V_{(0,0)}^\ast$ , 차원 $1$ |
+| $(-2,1)$ | $H^1=V_{(0,0)}^\ast$ , 차원 $1$ |
+| $(-3,0)$ | $H^2=V_{(0,0)}^\ast$ , 차원 $1$ |
+| $(-2,-2)$ | $H^3=V_{(0,0)}^\ast$ , 차원 $1$ |
+| $(-1,0)$ , $(-1,k)$ | 모든 $H^i=0$ |
+| $(-4,-4)$ | $H^3=V_{(2,2)}^\ast$ , 차원 $27$ |
 
 같은 표현 $V_0=\mathbb C$ 가 $\ell(w)=0,1,2,3$ 네 차수에서 한 번씩 나타나고, 그때의 $\lambda$ 는 $w\cdot 0=w(\rho)-\rho$ 다. $\lambda=(-1,k)$ 는 $\lambda+\rho$ 의 첫 좌표가 $0$ 이라 항상 벽 위이므로 $k$ 와 무관하게 소멸한다.
 

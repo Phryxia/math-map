@@ -34,19 +34,6 @@ $X$ 는 사영다양체인데도 $\mathcal D_X$ 가 많은 단면을 갖는다. 
 
 선다발 $\mathcal L_\lambda$ 는 $\mathcal D$ 가군 가운데 계수 1 인 특수한 것이고, Borel–Weil–Bott 는 그 전역단면만 계산한다. Beilinson–Bernstein 은 모든 $\mathcal D$ 가군에 대해 고차 코호몰로지가 사라지고 $\Gamma$ 가 완전함자임을 보여 계산을 동치로 격상시킨다.
 
-```python
-def bwb(n):
-    """P^1 = SL_2/B 위 O(n) 의 코호몰로지 차원"""
-    if n >= 0:   return (n + 1, 0)
-    if n == -1:  return (0, 0)
-    return (0, -n - 1)
-
-print(' n   H^0  H^1   dim L(n) (n>=0 일 때)')
-for n in range(-5, 5):
-    h0, h1 = bwb(n)
-    print(f'{n:3d}  {h0:4d} {h1:4d}   {n+1 if n >= 0 else "-":>5}')
-```
-
 $n\ge0$ 에서 $H^0$ 의 차원이 $\mathfrak{sl}_2$ 의 기약 표현 $L(n)$ 의 차원과 같다. $n=-1$ 은 Weyl 군 점 작용의 벽이라 모든 코호몰로지가 사라지고, $n\le-2$ 에서는 $H^1$ 으로 옮겨 간다.
 
 ## 지지집합과 Schubert 세포

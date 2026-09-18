@@ -130,17 +130,6 @@ $$
 
 유의수준 0.05 에서는 기각, 0.01 에서는 기각 실패다. 경계 근처의 결론이 유의수준 선택에 좌우된다.
 
-```python
-from math import erf, sqrt
-
-Phi = lambda x: 0.5 * (1 + erf(x / sqrt(2)))
-
-def z_test(k, n, p0=0.5):
-    se = sqrt(p0 * (1 - p0) / n)
-    z = (k / n - p0) / se
-    return z, 2 * (1 - Phi(abs(z)))
-```
-
 ## 검정력 설계
 
 표본 크기를 정할 때는 검출하려는 효과 크기 $\delta$ , 유의수준 $\alpha$ , 목표 검정력 $1-\beta$ 를 정하고 $n$ 을 역산한다. 양측 z-검정의 근사식은 다음이고 $z_q$ 는 표준정규분포의 상위 $q$ 분위수다.

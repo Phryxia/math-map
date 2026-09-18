@@ -169,21 +169,6 @@ $$
 
 $C$ 를 원시 정수해로 동차화하면 $2Y^2=X^4-17Z^4$ , $\gcd(X,Z)=1$ 이다. 홀수 소수에서는 $\bmod\thinspace p$ 의 비특이 해 하나면 Hensel 보조정리가 $\mathbb Z_p$ 해로 올려 준다.
 
-```python
-def hensel_point_mod_p(p):
-    """2Y^2 = X^4 - 17Z^4 의 mod p 비특이 해. 있으면 Z_p 해로 올라간다."""
-    for Z in range(1, p):
-        for X in range(p):
-            rhs = (X**4 - 17 * Z**4) % p
-            for Y in range(p):
-                if (2*Y*Y - rhs) % p:
-                    continue
-                grad = (4*Y % p, (-4*pow(X, 3)) % p, (68*pow(Z, 3)) % p)
-                if grad != (0, 0, 0):      # 편미분이 모두 0 이면 Hensel 이 안 먹는다
-                    return (X, Y, Z)
-    return None
-```
-
 $p=2$ 는 따로 본다. $X=11,\ Z=1$ 에서
 
 $$

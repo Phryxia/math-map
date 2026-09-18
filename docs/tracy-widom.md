@@ -138,58 +138,7 @@ $$
 
 [Fredholm 행렬식](fredholm-determinant.md) 문서의 Nyström 구적을 Airy 핵에 적용하면 분포를 정의에서 직접 계산한다. 무한구간 $(s,\infty)$ 은 $x = s + L\tan(\pi u/4)$ 로 옮기고, 필요한 것은 $\mathrm{Ai}$ 와 $\mathrm{Ai}'$ 뿐이라 작은 $\lvert x\rvert$ 에서는 전평면 수렴 급수를 큰 $x$ 에서는 점근급수를 쓴다.
 
-```python
-import math
-# gauss_legendre, det_dense 는 fredholm-determinant 문서의 것을 그대로 쓴다
-
-C1, C2 = 0.355028053887817239, 0.258819403792806798
-
-def airy_taylor(x):
-    """Ai, Ai' 를 전평면 수렴 급수로. 항과 그 도함수를 함께 갱신해 0 나눗셈을 피한다."""
-    f = fp = g = gp = 0.0
-    T, Tp, G, Gp = 1.0, 0.0, x, 1.0
-    for k in range(80):
-        f += T; fp += Tp; g += G; gp += Gp
-        T, Tp = T * x ** 3 / ((3*k+2) * (3*k+3)), T * x * x / (3*k+2)
-        G, Gp = G * x ** 3 / ((3*k+3) * (3*k+4)), G * x * x / (3*k+3)
-    return C1 * f - C2 * g, C1 * fp - C2 * gp
-
-def airy_asym(x):
-    """큰 x 에서의 점근급수. 최소항에서 끊는다."""
-    z, s, sp, u = 2 / 3 * x ** 1.5, 1.0, 1.0, 1.0
-    for k in range(1, 30):
-        u *= -(6*k-5) * (6*k-3) * (6*k-1) / (216 * k * (2*k-1)) / z
-        if abs(u) < 1e-17:
-            break
-        s += u
-        sp += u * (6*k+1) / (1-6*k)
-    pre = math.exp(-z) / (2 * math.sqrt(math.pi) * x ** 0.25)
-    return pre * s, -pre * math.sqrt(x) * sp
-
-def airy(x):
-    return airy_asym(x) if x >= 6 else airy_taylor(x)
-
-def K_airy(x, y):
-    a, ap = airy(x)
-    b, bp = airy(y)
-    if abs(x - y) < 1e-7:
-        return ap * ap - x * a * a          # Wronskian 의 x -> y 극한
-    return (a * bp - ap * b) / (x - y)
-
-def F2(s, n=30, L=10.0):
-    """det(I - K_Ai) on L^2(s, inf).  x = s + L tan(pi u / 4) 로 무한구간을 옮긴다."""
-    u, w = gauss_legendre(n, 0.0, 1.0)
-    c = math.pi / 4
-    x = [s + L * math.tan(c * ui) for ui in u]
-    dx = [L * c / math.cos(c * ui) ** 2 for ui in u]
-    sq = [math.sqrt(wi * di) for wi, di in zip(w, dx)]
-    M = [[(1.0 if i == j else 0.0) - sq[i] * sq[j] * K_airy(x[i], x[j])
-          for j in range(n)] for i in range(n)]
-    return det_dense(M)
-
-```
-
-마디 스무 개로 $F_2$ 가 열두 자리까지 안정된다. 핵이 해석적일 때 Nyström 근사가 지수적으로 수렴하므로, 무한차원 행렬식이 $20 \times 20$ 행렬식 하나로 그 정확도에 도달한다. 같은 구적으로 평균과 분산을 적분하면 위 표의 $-1.7710868074$ 와 $0.8131947928$ 을 열 자리까지 재현한다. 쓰인 재료는 $\mathrm{Ai}$ 의 급수와 Gauss 구적과 LU 분해뿐이다.
+핵이 해석적이므로 Nyström 근사가 지수적으로 수렴하고, 무한차원 행렬식이 마디 스무 개의 행렬식 하나로 열두 자리 정확도에 도달한다. 같은 구적으로 평균과 분산을 적분하면 위 표의 $-1.7710868074$ 와 $0.8131947928$ 을 열 자리까지 재현한다. 쓰인 재료는 $\mathrm{Ai}$ 의 급수와 Gauss 구적과 LU 분해뿐이다.
 
 ## 쓰이는 자리
 

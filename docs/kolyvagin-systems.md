@@ -248,7 +248,7 @@ $\kappa_1\not\equiv0\ (\mathrm{mod}\ p)$ 이면 모든 $\partial_i=0$ 이라 $H^
 
 ## 핵심 정점
 
-$\chi=1$ 일 때 $\mathcal N$ 의 정점 가운데 $\dim H^1_{\mathcal F(n)}(K,T)=1$ 이고 $H^1_{\mathcal F(n)^\ast}(K,T^\ast)=0$ 인 것을 **핵심 정점**(core vertex)이라 한다. 핵심 정점이 항상 존재하고 그래프 안에 조밀하게 퍼져 있다는 것이 [Chebotarev](chebotarev.md) 논법으로 증명되며, 이것이 위 구조 정리의 기술적 열쇠다. 증명의 무게가 적당한 $\ell$ 을 고르는 데 실려 있는 것은 Kolyvagin 의 원래 논법과 같다.
+$\chi=1$ 일 때 $\mathcal N$ 의 정점 가운데 $\dim H^1_{\mathcal F(n)}(K,T)=1$ 이고 $H^1_{\mathcal F(n)^\ast}(K,T^\ast)=0$ 인 것을 **핵심 정점**(core vertex)이라 한다. 핵심 정점이 항상 존재하고 그래프 안에 조밀하게 퍼져 있다는 것이 [Chebotarev](chebotarev.md) 논법으로 증명되며, 이것이 위 구조 정리의 기술적 요점이다. 증명의 무게가 적당한 $\ell$ 을 고르는 데 실려 있는 것은 Kolyvagin 의 원래 논법과 같다.
 
 # 활용
 

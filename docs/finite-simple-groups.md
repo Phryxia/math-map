@@ -86,7 +86,7 @@ $G$ 의 합성인자가 전부 가환(곧 $\mathbb Z/p$ 꼴)이면 $G$ 를 **가
 - **Lie 형 군**. 유한체 $\mathbb F_q$ 위의 [Lie 대수](lie-algebras.md)에서 만든 군들이다. 고전형 $A_n(q)=\mathrm{PSL}_{n+1}(q),\thinspace B_n(q),\thinspace C_n(q),\thinspace D_n(q)$ 와 예외형 $G_2(q),F_4(q),E_6(q),E_7(q),E_8(q)$ 가 있고, 도표 자기동형으로 뒤튼 ${}^2A_n(q),\thinspace{}^2D_n(q),\thinspace{}^3D_4(q),\thinspace{}^2E_6(q)$ 와 Suzuki 군 ${}^2B_2(q)$ 와 Ree 군 ${}^2G_2(q),\thinspace{}^2F_4(q)$ 가 이어진다. 모두 16 개 족이다.
 - **산재군** 26 개. 위 어디에도 속하지 않는 것들.
 
-Dynkin 도표 분류가 여기서 다시 나타난다. 연속군의 분류 목록이 그대로 유한군의 분류 목록 대부분을 이룬다. 복소 단순 Lie 대수의 분류와 유한 단순군 분류가 같은 조합적 뼈대를 공유한다는 뜻이다.
+Dynkin 도표 분류가 여기서 다시 나타난다. 연속군의 분류 목록이 그대로 유한군의 분류 목록 대부분을 이룬다. 복소 단순 Lie 대수의 분류와 유한 단순군 분류가 같은 조합적 구조를 공유한다는 뜻이다.
 
 ## 산재군
 
@@ -102,58 +102,9 @@ $$
 
 # 성질
 
-## $A_5$ 의 단순성을 켤레류로 확인하기
+## 켤레류에 의한 $A_5$ 의 단순성
 
 정규부분군은 켤레류의 합집합이고 항등원을 포함하며 위수가 군 위수의 약수다. 이 세 조건만으로 $A_5$ 의 단순성이 나온다.
-
-```python
-from itertools import permutations, combinations
-
-def sign(p):
-    n, s = len(p), 1
-    seen = [False] * n
-    for i in range(n):
-        if not seen[i]:
-            j, L = i, 0
-            while not seen[j]:
-                seen[j] = True
-                j = p[j]
-                L += 1
-            s *= (-1) ** (L - 1)
-    return s
-
-def comp(p, q):
-    return tuple(p[q[i]] for i in range(len(q)))
-
-def inv(p):
-    r = [0] * len(p)
-    for i, v in enumerate(p):
-        r[v] = i
-    return tuple(r)
-
-A5 = [p for p in permutations(range(5)) if sign(p) == 1]
-print(len(A5))                       # 60
-
-classes, seen = [], set()
-for g in A5:
-    if g in seen:
-        continue
-    cl = {comp(comp(x, g), inv(x)) for x in A5}
-    seen |= cl
-    classes.append(len(cl))
-classes.sort()
-print(classes)                       # [1, 12, 12, 15, 20]
-
-# 항등원 켤레류(크기 1)를 반드시 포함하는 부분합 중 60의 약수를 찾는다
-rest = classes[1:]
-orders = set()
-for r in range(len(rest) + 1):
-    for c in combinations(range(len(rest)), r):
-        n = 1 + sum(rest[i] for i in c)
-        if 60 % n == 0:
-            orders.add(n)
-print(sorted(orders))                # [1, 60]
-```
 
 가능한 정규부분군의 위수가 $1$ 과 $60$ 뿐이므로 $A_5$ 는 단순하다. 5 차 순환군이 $S_5$ 안에서는 켤레류 하나였다가 $A_5$ 에서 크기 12 짜리 둘로 쪼개지는 것이 결정적이다. 두 조각이 12 씩이라 어느 쪽도 단독으로는 위수 조건을 만족시키지 못한다.
 
@@ -171,7 +122,7 @@ $$
 
 $\mathrm{PSL}_2(7)\cong\mathrm{PSL}_3(2)$ 도 있다. 위수 168 인 이 군은 Klein 4 차곡선의 자기동형군이자 Fano 평면의 자기동형군이다. 작은 위수에서는 서로 다른 구성이 자꾸 같은 군을 낳고, 위수가 커지면 이런 우연이 사라진다.
 
-## 증명의 뼈대
+## 증명의 요지
 
 1. **Feit–Thompson**: 비가환 단순군은 짝수 위수다. Sylow 2-부분군이 자명하지 않다.
 2. **Sylow 2-부분군의 구조로 분기**: 2-랭크가 작은 경우, 특성 2 유형인 경우, 일반 경우로 나눈다.

@@ -156,25 +156,6 @@ $$
 
 작은 $z$ 에서는 점근전개의 정확도가 낮으므로 함수방정식으로 $z$ 를 키운 뒤 Stirling 급수를 쓰고 되돌린다.
 
-```python
-from fractions import Fraction as F
-from math import comb, log, pi
-
-M = 40
-B = [F(0)] * (M + 1); B[0] = F(1)
-for n in range(1, M + 1):
-    B[n] = -sum(comb(n + 1, k) * B[k] for k in range(n)) / F(n + 1)
-
-def loggamma(z, K=8, shift=12):
-    s = 0.0
-    while z < shift:                       # Gamma(z) = Gamma(z+1)/z 로 끌어올린다
-        s -= log(z); z += 1
-    r = (z - 0.5) * log(z) - z + 0.5 * log(2 * pi)
-    for k in range(1, K + 1):              # Stirling 급수
-        r += float(B[2 * k]) / (2 * k * (2 * k - 1) * z ** (2 * k - 1))
-    return r + s
-```
-
 $\Gamma$ 자체는 금방 넘치지만 로그는 넘치지 않으므로 $\log\Gamma$ 를 계산한다. 이항계수나 확률밀도에서 필요한 양은 감마의 비 $\Gamma(a)\Gamma(b)/\Gamma(a+b)$ 이므로 로그로 더하고 뺀다.
 
 ## 부피와 확률분포

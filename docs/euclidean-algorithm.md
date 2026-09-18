@@ -84,35 +84,6 @@ Lamé 정리에 따르면 작은 쪽 수의 십진 자릿수를 $d$ 라 할 때 
 
 나눗셈 횟수는 값에 대해 $O(\log \min(a,b))$ 다. 자릿수 $n$ 의 나눗셈 한 번의 비용을 세면 전체 비트 복잡도는 $O(n^2)$ 이고, 이를 줄이는 것이 이진 GCD 와 Lehmer 알고리즘이다.
 
-```python
-def egcd(a, b):
-    """gcd 와 Bezout 계수를 함께 반환한다. a*s + b*t = g."""
-    old_r, r = a, b
-    old_s, s = 1, 0
-    old_t, t = 0, 1
-    while r != 0:
-        q = old_r // r
-        old_r, r = r, old_r - q * r
-        old_s, s = s, old_s - q * s
-        old_t, t = t, old_t - q * t
-    return old_r, old_s, old_t
-
-
-g, s, t = egcd(252, 105)
-print(g, s, t, s * 252 + t * 105)        # 21 -2 5 21
-
-
-def inverse_mod(a, m):
-    g, s, _ = egcd(a % m, m)
-    if g != 1:
-        raise ValueError(f"{a} 는 법 {m} 에서 가역이 아니다")
-    return s % m
-
-
-print(inverse_mod(3, 7))                  # 5
-print(inverse_mod(17, 3120))              # RSA 예제의 개인키 지수
-```
-
 ## 선형 Diophantus 방정식
 
 $ax+by=c$ 가 정수해를 갖는 것과 $\gcd(a,b)\mid c$ 인 것은 동치다. 해가 있으면 Bézout 계수를 $c/g$ 배해 특수해를 얻고, 일반해는

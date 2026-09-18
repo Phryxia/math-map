@@ -102,7 +102,7 @@ $$
 
 Mostow 가 닫힌 경우를, Prasad 가 cusp 가 있는 유한 부피 경우를 처리했다. $n=2$ 에서는 Teichmüller 공간이 $6g-6$ 차원이라 거짓이다.
 
-증명의 뼈대는 다음과 같다.
+증명의 요지는 다음과 같다.
 
 1. 기본군의 동형이 준등거리사상 $\mathbb H^n\to\mathbb H^n$ 을 유도한다.
 2. 준등거리사상은 무한원 경계 $S^{n-1}$ 위의 유사등각 사상으로 확장된다 (Efremovič–Tihomirova, Mostow).
@@ -174,24 +174,6 @@ $$
 ## 이중로그에 의한 부피 계산
 
 붙임 방정식의 해가 주어지면 부피 계산은 Bloch–Wigner 함수의 수치 계산이다.
-
-```python
-import cmath, math
-
-def bloch_wigner(z, terms=200000):
-    """D(z) = Im Li_2(z) + arg(1-z) log|z|"""
-    if abs(z) > 1:                      # D(1/z) = -D(z) 로 수렴역 안으로 옮긴다
-        return -bloch_wigner(1 / z, terms)
-    li2 = sum(z**n / n**2 for n in range(1, terms + 1))
-    return li2.imag + cmath.phase(1 - z) * math.log(abs(z))
-
-def volume(shapes):
-    return sum(bloch_wigner(z) for z in shapes)
-
-# 8 자매듭: 정이면체 사면체 두 개
-z = cmath.exp(1j * math.pi / 3)
-print(volume([z, z]))                   # 2.0298832128... (참값 2.029883212819307...)
-```
 
 $|z|=1$ 인 정이면체 해에서는 $\log|z|=0$ 이라 둘째 항이 사라지고 $D(e^{i\theta})=\mathrm{Im}\mathrm{Li}_2(e^{i\theta})=2\Lambda(\theta/2)$ 가 된다.[^1]
 

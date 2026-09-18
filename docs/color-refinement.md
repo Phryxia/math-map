@@ -75,28 +75,6 @@ $\mathrm{ID}$ 는 서로 다른 입력 쌍에 서로 다른 새 색을 배정하
 
 색은 $V$ 의 분할을 정한다. $c_{t+1}$ 이 정하는 분할이 $c_t$ 의 것과 같아지면 그 이후로는 아무것도 바뀌지 않고, 이때의 분할이 **안정 분할**이다.
 
-## 계산
-
-```python
-def color_refinement(adj, labels=None):
-    """adj: {v: [이웃들]}. 안정 분할에 도달할 때까지 색을 갱신한다."""
-    color = dict.fromkeys(adj, 0) if labels is None else dict(labels)
-    while True:
-        signature = {
-            v: (color[v], tuple(sorted(color[u] for u in adj[v])))
-            for v in adj
-        }
-        table = {}
-        for sig in sorted(set(signature.values())):
-            table[sig] = len(table)          # 같은 ID 규칙을 두 그래프에 공유
-        new_color = {v: table[signature[v]] for v in adj}
-        if len(set(new_color.values())) == len(set(color.values())):
-            return new_color                 # 분할이 더 세분화되지 않음
-        color = new_color
-```
-
-`signature` 에서 이웃 색을 정렬한 튜플이 multiset 역할을 한다. 종료 조건은 색 번호가 같아지는 것이 아니라 색 부류의 개수가 늘지 않는 것이다.
-
 # 성질
 
 ## 분할의 단조 세분화

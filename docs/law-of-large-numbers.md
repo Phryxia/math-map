@@ -116,20 +116,6 @@ $$
 \int_0^1 g(t)\thinspace dt=\mathbb E[g(U)]\approx\frac1n\sum_{i=1}^n g(U_i)
 $$
 
-강한 법칙이 이 근사가 거의 확실하게 옳은 값으로 감을 보장한다. 차원이 높아져도 오차 규모가 차원에 직접 의존하지 않는 점이 격자 기반 수치적분과 다르다.
-
-```python
-import random, math
-
-def mc_pi(n):
-    inside = sum(1 for _ in range(n)
-                 if random.random() ** 2 + random.random() ** 2 <= 1)
-    return 4 * inside / n   # 지시함수의 기댓값 = pi/4
-
-for n in (10**3, 10**5, 10**7):
-    print(n, mc_pi(n), math.pi)
-```
-
 ## 통계적 추정의 일치성
 
 표본평균은 모평균의 일치추정량이다. 같은 논리를 함수에 적용하면 표본적률이 모적률로 수렴하고, 적률법과 [최대가능도 추정](maximum-likelihood.md)의 일치성 증명이 여기서 시작한다. 경험적 누적분포함수가 참 분포함수로 균등하게 수렴한다는 Glivenko–Cantelli 정리도 큰 수의 법칙을 각 점에서 적용한 뒤 단조성으로 균등화한 것이다.

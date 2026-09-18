@@ -187,28 +187,9 @@ $$
 
 회귀 문제에서 목표는 특징 $Z$ 로부터 반응 $X$ 를 예측하는 것이고, 제곱오차 기준의 정답은 회귀함수 $E[X \mid Z]$ 다. [선형회귀](linear-regression.md)는 이 정사영을 $Z$ 의 아핀 함수들이 이루는 부분공간으로 제한한 근사이며, 비모수 회귀는 $E[X \mid Z]$ 자체를 추정한다. [최대가능도 추정](maximum-likelihood.md)의 EM 알고리즘에서 E-단계는 문자 그대로 잠재변수에 대한 조건부 기댓값 계산이고, [KL 발산](kl-divergence.md)의 연쇄법칙도 조건부 분포에 대한 기댓값으로 표현된다.
 
-## 계산 예제
+## 연속 조건의 계산
 
-이산 경우의 조건부 기댓값이 정말 "조각 위 평균"임을 확인하는 짧은 시뮬레이션이다. 주사위 두 개의 합 $S$ 에 대해 첫 주사위 $X$ 를 조건으로 $E[S \mid X]$ 를 계산한다. 정답은 $X + 3.5$ 다.
-
-```python
-import itertools, statistics
-from collections import defaultdict
-
-outcomes = list(itertools.product(range(1, 7), repeat=2))   # 균등 확률
-groups = defaultdict(list)
-for x, y in outcomes:
-    groups[x].append(x + y)                                  # sigma(X) 의 원자별로 분류
-
-cond = {x: statistics.fmean(vals) for x, vals in groups.items()}
-print(cond)                       # {1: 4.5, 2: 5.5, ..., 6: 9.5}  =  x + 3.5
-
-# 탑 성질: E[E[S|X]] = E[S]
-print(statistics.fmean(cond[x] for x, _ in outcomes),
-      statistics.fmean(x + y for x, y in outcomes))          # 7.0 7.0
-```
-
-조건이 연속 변수인 경우에는 원자가 없으므로 이런 분할 계산이 불가능하고, 밀도를 통해
+조건이 연속 변수이면 원자가 없으므로 조각 위 평균으로 계산할 수 없고, 밀도를 통해
 
 $$
 E[X \mid Z = z] \thickspace=\thickspace \frac{\int x \thinspace f(x, z) \thinspace dx}{\int f(x, z) \thinspace dx}

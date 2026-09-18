@@ -140,30 +140,6 @@ $$
 
 이 절차를 일반화한 Legendre, Meissel, Lehmer 의 방법이 소수 계수 함수의 고전적 계산법이다.
 
-## 여집합 형태의 계산
-
-여집합 형태를 코드로 옮긴다.
-
-```python
-from itertools import combinations
-from math import factorial, prod
-
-def avoid_all(universe_size, intersection_size, n):
-    """|U \\ (A_1 ∪ ... ∪ A_n)| = Σ_S (-1)^|S| |A_S|"""
-    total = 0
-    for j in range(n + 1):
-        for S in combinations(range(n), j):
-            total += (-1) ** j * intersection_size(S)
-    return total
-
-# 완전순열: A_i = {i를 고정하는 순열}, |A_S| = (n - |S|)!
-n = 8
-D = avoid_all(factorial(n), lambda S: factorial(n - len(S)), n)
-assert D == 14833
-assert D == round(factorial(n) * sum((-1) ** j / factorial(j) for j in range(n + 1)))
-print(D / factorial(n), prod([1]))   # 0.3678... ≈ 1/e
-```
-
 ## 확률과 조합 최적화
 
 생일 문제류의 적어도 하나 사건, 체를 이용한 정수론적 추정, [최소 신장트리](minimum-spanning-tree.md)류 문제의 계수 계산, 색칠 다항식(chromatic polynomial)의 삭제-축약 전개가 포함배제 구조를 갖는다. [생성함수](generating-functions.md)와 결합하면 부호 교대 합을 멱급수의 곱으로 다룬다.

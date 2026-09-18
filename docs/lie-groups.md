@@ -10,7 +10,7 @@ $$
 
 $\exp$ 는 $0$ 의 근방에서 미분동형이므로 국소적으로는 완전한 사전이다. 전역적으로는 두 가지로 어긋난다. $\mathrm{SL}_2(\mathbb R)$ 처럼 $\exp$ 가 전사가 아닌 군이 있고, $\mathrm{SU}(2)$ 와 $\mathrm{SO}(3)$ 처럼 같은 Lie 대수를 갖는 서로 다른 군이 있다.
 
-남는 차이는 위상적이다. 같은 Lie 대수를 갖는 연결 Lie 군들은 하나의 보편덮개를 공유하고 서로는 이산 중심부분군에 의한 몫이므로, [덮개공간](covering-spaces.md) 이론이 대응 정리의 뼈대가 된다.
+남는 차이는 위상적이다. 같은 Lie 대수를 갖는 연결 Lie 군들은 하나의 보편덮개를 공유하고 서로는 이산 중심부분군에 의한 몫이므로, [덮개공간](covering-spaces.md) 이론이 대응 정리의 요지가 된다.
 
 $$
 \lbrace\text{단연결 Lie 군}\rbrace\ \xrightarrow{\ \sim\ }\ \lbrace\text{유한차원 실 Lie 대수}\rbrace
@@ -122,52 +122,6 @@ graph TD
 ## 이중덮개 $\mathrm{SU}(2)\to\mathrm{SO}(3)$ 의 계산
 
 Pauli 행렬로 $\mathfrak{su}(2)$ 의 원소를 지수화하고 딸림표현을 회전행렬로 읽는다.
-
-```python
-import math
-
-I2 = [[1, 0], [0, 1]]
-sx = [[0, 1], [1, 0]]
-sy = [[0, -1j], [1j, 0]]
-sz = [[1, 0], [0, -1]]
-sig = [sx, sy, sz]
-
-def mm(A, B):
-    return [[sum(A[i][k] * B[k][j] for k in range(2)) for j in range(2)]
-            for i in range(2)]
-
-def dag(A):
-    return [[A[j][i].conjugate() for j in range(2)] for i in range(2)]
-
-def su2(n, th):
-    """exp(-i (th/2) n·sigma) = cos(th/2) I - i sin(th/2) n·sigma"""
-    c, s = math.cos(th / 2), math.sin(th / 2)
-    U = [[c + 0j, 0j], [0j, c + 0j]]
-    for k in range(3):
-        for i in range(2):
-            for j in range(2):
-                U[i][j] += -1j * s * n[k] * sig[k][i][j]
-    return U
-
-def adjoint_rot(U):
-    """Ad(U) 를 sigma 기저로 읽으면 SO(3) 행렬. R_jk = (1/2) tr(sigma_j U sigma_k U†)"""
-    R = [[0.0] * 3 for _ in range(3)]
-    for j in range(3):
-        for k in range(3):
-            M = mm(sig[j], mm(U, mm(sig[k], dag(U))))
-            R[j][k] = round((0.5 * (M[0][0] + M[1][1])).real, 12) or 0.0
-    return R
-
-n = [0, 0, 1]
-for th in [math.pi, 2 * math.pi]:
-    U = su2(n, th)
-    print(round(th, 4), [[complex(round(x.real, 4), round(x.imag, 4)) for x in r] for r in U])
-    print("   ", adjoint_rot(U))
-# 3.1416 [[-1j, 0j], [0j, 1j]]
-#     [[-1.0, 0.0, 0.0], [0.0, -1.0, 0.0], [0.0, 0.0, 1.0]]
-# 6.2832 [[(-1-0j), 0j], [0j, (-1+0j)]]
-#     [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
-```
 
 $\theta=2\pi$ 에서 $U=-I$ 이지만 대응하는 회전은 항등이고, $U$ 와 $-U$ 는 언제나 같은 회전을 준다. $\mathrm{SU}(2)$ 에서는 $\theta$ 가 $4\pi$ 까지 가야 닫힌 고리가 되고 $\mathrm{SO}(3)$ 에서는 $2\pi$ 면 닫힌다. 그 차이가 $\pi_1(\mathrm{SO}(3))=\mathbb Z/2$ 다.
 

@@ -8,7 +8,7 @@ $$
 \Theta_L(\tau)=\sum_{x\in L}q^{|x|^2/2},\qquad q=e^{2\pi i\tau}
 $$
 
-이 급수가 격자에 대한 조건이 맞으면 [모듈러 형식](modular-forms.md)이 된다. Poisson 합공식이 $\tau\mapsto-1/\tau$ 변환을 주고, 격자가 짝수이면 $\tau\mapsto\tau+1$ 변환이 공짜로 따라온다.
+이 급수가 격자에 대한 조건이 맞으면 [모듈러 형식](modular-forms.md)이 된다. Poisson 합공식이 $\tau\mapsto-1/\tau$ 변환을 주고, 격자가 짝수이면 $\tau\mapsto\tau+1$ 변환이 자동으로 따라온다.
 
 모듈러 형식의 공간은 유한차원이다. 차원이 $1$ 인 공간에 두 대상이 들어가면 상수배 차이뿐이므로, 첫 계수를 맞추면 모든 계수가 같아진다. $E_8$ 격자에서 이 논법이 한 줄로 끝난다.
 

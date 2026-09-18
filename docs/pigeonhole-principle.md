@@ -112,28 +112,6 @@ $1$ 부터 $2n$ 까지에서 $n+1$ 개를 뽑으면 하나가 다른 하나를 �
 
 해시 테이블에서 키 공간이 슬롯 수보다 크면 충돌이 생긴다. 손실 없는 압축이 모든 입력을 짧게 만들 수 없다는 진술도 같은 논증이다. 길이 $n-1$ 이하의 이진 문자열은 $2^n-1$ 개뿐이므로, 길이 $n$ 인 입력 $2^n$ 개를 모두 더 짧은 문자열로 단사적으로 보낼 수 없다. [계산 가능성](computability.md)의 대각선 논법과 달리 셈만으로 얻는 하한이다.
 
-```python
-def find_collision(values, buckets):
-    """비둘기집 원리가 존재를 보장하는 충돌을 실제로 찾는다."""
-    seen = {}
-    for i, v in enumerate(values):
-        key = buckets(v)
-        if key in seen:
-            return seen[key], i        # 같은 상자에 든 두 인덱스
-        seen[key] = i
-    return None                        # len(values) <= 상자 수일 때만 도달
-
-# 1..2n에서 n+1개를 뽑으면 홀수 부분이 같은 두 수가 있다
-def odd_part(m):
-    while m % 2 == 0:
-        m //= 2
-    return m
-
-subset = [3, 4, 6, 9, 10, 11, 12]      # n = 6, 1..12에서 7개
-i, j = find_collision(subset, odd_part)
-print(subset[i], subset[j])            # 3 6  (3이 6을 나눈다)
-```
-
 ## Ramsey 이론으로의 일반화
 
 상자를 색으로, 비둘기를 그래프의 간선으로 바꾸면 $R(3,3)\le 6$ 의 증명이 나온다. [Ramsey 이론](ramsey-theory.md)은 비둘기집 원리를 조직적으로 일반화한 분야다. 평균 논증을 확률로 바꾸면 확률적 방법이 되어, 셈만으로는 닿지 않는 하한을 얻는다.

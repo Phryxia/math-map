@@ -56,7 +56,7 @@ $B_n$ 의 표현족 $\rho_n\colon B_n\to A_n$ 과 자취 $\mathrm{tr}$ 이
 1. $\mathrm{tr}(ab)=\mathrm{tr}(ba)$ (켤레 불변)
 2. $\mathrm{tr}(\beta\sigma_n^{\pm1})=z^{\pm1}\thinspace\mathrm{tr}(\beta)$ (안정화에서 정해진 상수배)
 
-를 만족하면 적당히 정규화한 $\mathrm{tr}(\rho(\beta))$ 가 링크 불변량이 된다. 조건 1 은 대수에서 거의 공짜이고 조건 2 만 확인하면 된다.
+를 만족하면 적당히 정규화한 $\mathrm{tr}(\rho(\beta))$ 가 링크 불변량이 된다. 조건 1 은 대수에서 거의 자동으로 성립하고 조건 2 만 확인하면 된다.
 
 Jones 는 $\mathrm{II}_1$ 인자의 부분인자를 연구하다 Temperley–Lieb 대수 $TL_n(\delta)$ 위에서 이 성질을 가진 자취를 찾았다. $B_n\to TL_n$ 은
 

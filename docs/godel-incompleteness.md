@@ -139,26 +139,6 @@ $$
 \Box(\Box\varphi\to\varphi)\to\Box\varphi
 $$
 
-## 계산적 확인
-
-산술화는 기계적이어서 증명 보조기에서 실제로 형식화되었다. 다음은 개념적 골격이다.
-
-```python
-# 개념 스케치. Proof_T 는 결정 가능한 술어라는 점이 핵심이다.
-def provable_witness(T, sentence, bound):
-    """부호가 bound 미만인 증명을 전수 탐색한다. 찾으면 반환, 없으면 None."""
-    for n in range(bound):
-        if is_proof_of(T, decode(n), sentence):   # 구문 검사만 하므로 결정 가능
-            return n
-    return None
-
-# Pr_T(s) = "어떤 n 이 존재하여 is_proof_of(T, decode(n), s)"
-# 이 존재 양화를 없앨 수 있다면(즉 결정 가능하다면) T 는 완전해지고,
-# 제1정리에 모순이다. 따라서 위 탐색에는 유한한 bound 를 줄 수 없다.
-```
-
-이 한계는 자동 정리 증명의 원리적 제약이기도 하다. 증명 탐색은 반결정 절차이므로, 정리가 아닌 문장에 대해서는 영원히 답하지 않을 수 있다.
-
 [^1]: Gödel's Incompleteness Theorems, Stanford Encyclopedia of Philosophy (대각선 보조정리와 파생 조건). https://plato.stanford.edu/entries/goedel-incompleteness/
 [^2]: Gödel's incompleteness theorems, Wikipedia. https://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems
 [^3]: Rosser's trick, Wikipedia ( $\omega$ -무모순성 가정의 제거). https://en.wikipedia.org/wiki/Rosser%27s_trick

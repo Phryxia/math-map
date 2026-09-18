@@ -116,17 +116,6 @@ $$
 
 Eckart–Young에 의해 상위 $k$ 개 성분만 남기면 저장량이 $(m+n+1)k$ 로 줄고 오차는 버린 특이값들로 통제된다. 이미지 압축, latent semantic analysis, 추천 시스템의 행렬 완성, 모델 가중치의 저계수 근사가 같은 원리다.
 
-```python
-import numpy as np
-A = np.arange(1., 13.).reshape(4, 3)      # 계수 2인 행렬
-U, s, Vt = np.linalg.svd(A, full_matrices=False)
-print(np.round(s, 6))                     # 세 번째 특이값은 0, 즉 계수가 2다
-k = 1
-Ak = (U[:, :k] * s[:k]) @ Vt[:k]
-print(np.linalg.norm(A - Ak))             # = sqrt(sum of s[k:]**2)
-print(np.sqrt((s[k:] ** 2).sum()))
-```
-
 ## 수치선형대수와 최적화
 
 조건수 $\sigma_1/\sigma_r$ 이 선형계 해의 민감도와 [gradient descent](gradient-descent.md)의 수렴 속도를 정한다. 계수 결손 문제, 전체 최소제곱, regularization(Tikhonov)에서 작은 특이값을 잘라내거나 감쇠시키는 조작이 표준 도구다. 그래프 쪽에서는 [그래프 Laplacian](graph-laplacian.md)이 대칭이라 SVD와 고유분해가 일치하고, [스펙트럼 sparsification](spectral-sparsification.md)의 보증도 특이값/고윳값 비로 서술된다.

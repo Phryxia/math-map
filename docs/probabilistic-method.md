@@ -6,7 +6,6 @@
 
 Erdős가 1947년 [Ramsey 이론](ramsey-theory.md)의 하한을 세 문단으로 증명하면서 이 방법이 조합론의 중심 도구가 되었다[^1]. 그 전에는 명시적 구성으로 접근하던 문제들이 확률 계산 몇 줄로 정리되었고, 지금도 명시적 구성이 확률적 논증을 따라잡지 못한 경우가 많다.
 
-
 # 직관
 
 $n$ 개의 대상에 점수를 매겨 평균이 $\mu$ 이면 점수가 $\mu$ 이상인 대상이 존재한다. [비둘기집 원리](pigeonhole-principle.md)의 평균 판본이고, 확률적 방법의 절반이 이 관찰이다. 기댓값은 선형이라 의존성을 무시하고 항별로 더할 수 있으므로, 무작위 대상의 기댓값 계산이 개별 대상 분석보다 쉬운 경우가 많다.
@@ -169,76 +168,7 @@ $$
 
 무작위 논증과 조건부 기댓값 탈무작위화를 나란히 적는다.
 
-```python
-import random
-
-def cut_size(edges, side):
-    return sum(1 for u, v in edges if side[u] != side[v])
-
-def random_cut(n, edges, trials=1000):
-    best = 0
-    for _ in range(trials):
-        side = [random.getrandbits(1) for _ in range(n)]
-        best = max(best, cut_size(edges, side))
-    return best
-
-def greedy_cut(n, edges):
-    """조건부 기댓값 탈무작위화: 항상 m/2 이상을 결정적으로 보장한다."""
-    adj = {i: [] for i in range(n)}
-    for u, v in edges:
-        adj[u].append(v); adj[v].append(u)
-    side = [None] * n
-    for v in range(n):
-        # 이미 결정된 이웃 기준으로 절단 간선을 더 많이 만드는 쪽을 고른다.
-        zero = sum(1 for w in adj[v] if side[w] == 1)
-        one = sum(1 for w in adj[v] if side[w] == 0)
-        side[v] = 0 if zero >= one else 1
-    return cut_size(edges, side)
-
-n = 12
-edges = [(i, j) for i in range(n) for j in range(i + 1, n) if (i * j) % 3]
-m = len(edges)
-print(m, m / 2, greedy_cut(n, edges), random_cut(n, edges))
-assert greedy_cut(n, edges) >= m / 2
-```
-
-Erdős 의 Ramsey 하한 조건을 계산하면 존재가 보장되는 최대 $n$ 을 얻는다.
-
-```python
-from math import comb, log2
-
-def ramsey_lower_bound(k):
-    """C(n,k) * 2^(1 - C(k,2)) < 1 을 만족하는 최대 n (그러면 R(k,k) > n)."""
-    n = k
-    while log2(comb(n + 1, k)) + 1 - comb(k, 2) < 0:
-        n += 1
-    return n
-
-for k in range(3, 11):
-    print(f"k={k}: R(k,k) > {ramsey_lower_bound(k)}  (2^(k/2) = {2 ** (k / 2):.1f})")
-```
-
 변경 논법이 주는 독립집합 하한은 탐욕 알고리즘으로 달성된다.
-
-```python
-def greedy_independent_set(n, edges):
-    """차수가 작은 정점부터 넣는 탐욕. 크기 >= sum 1/(d_v+1) >= n/(d+1)."""
-    adj = {i: set() for i in range(n)}
-    for u, v in edges:
-        adj[u].add(v); adj[v].add(u)
-    alive, S = set(range(n)), []
-    while alive:
-        v = min(alive, key=lambda u: len(adj[u] & alive))
-        S.append(v)
-        alive -= ({v} | adj[v])
-    return S
-
-deg_sum = 2 * len(edges)
-bound = n / (deg_sum / n + 1)
-S = greedy_independent_set(n, edges)
-print(len(S), bound)
-assert len(S) >= bound - 1e-9
-```
 
 ## 다른 분야와의 연결
 

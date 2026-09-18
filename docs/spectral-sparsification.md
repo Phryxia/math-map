@@ -14,7 +14,7 @@ Spielman 과 Srivastava 는 모든 정점값 배정에 대해 Laplacian 이차�
 
 가중치가 큰 간선이라도 옆에 비슷한 경로가 백 개 있으면 지워도 전체 전도가 거의 변하지 않고, 가는 간선이라도 다리면 지우는 순간 그래프가 끊어진다.
 
-곱 $w_eR_e$ 는 $[0,1]$ 에 있고 1 에 가까우면 다리에 가깝고 0 에 가까우면 잉여다. 이 값은 무작위 신장트리가 그 간선을 포함할 확률과 같으므로, 샘플링 확률이 간선이 뼈대에 속할 확률이라는 조합적 의미를 갖는다.
+곱 $w_eR_e$ 는 $[0,1]$ 에 있고 1 에 가까우면 다리에 가깝고 0 에 가까우면 잉여다. 이 값은 무작위 신장트리가 그 간선을 포함할 확률과 같으므로, 샘플링 확률이 간선이 신장트리에 속할 확률이라는 조합적 의미를 갖는다.
 
 ## Foster 정리와 표본 수
 
@@ -56,21 +56,7 @@ $$
 
 ## 계산 절차
 
-```python
-import random
-
-def sparsify(edges, resistance, n, q):
-    """edges: [(u, v, w)], resistance: {(u,v): R_e}. q 번 복원 추출."""
-    p = [w * resistance[(u, v)] / (n - 1) for u, v, w in edges]
-    out = {}
-    for _ in range(q):
-        i = random.choices(range(len(edges)), weights=p)[0]
-        u, v, w = edges[i]
-        out[(u, v)] = out.get((u, v), 0.0) + w / (q * p[i])
-    return [(u, v, w) for (u, v), w in out.items()]
-```
-
-실제 구현에서 `resistance` 는 정확한 값이 아니라 아래의 근사값을 쓴다.
+각 간선을 유효저항에 비례하는 확률로 뽑고 뽑힌 확률의 역수로 가중치를 키운다. 실제로는 유효저항의 정확한 값이 아니라 아래의 근사값을 쓴다.
 
 # 성질
 
@@ -90,7 +76,7 @@ $$
 
 간선 수는 $q$ 이하이므로 $O(n \log n / \epsilon^2)$ 이고 원래 간선 수 $m$ 과 무관하다. 완전그래프에서는 $m = \Theta(n^2)$ 이 $O(n \log n)$ 으로 줄어든다.
 
-## 증명의 뼈대
+## 증명의 요지
 
 간선 $e=(u,v)$ 에 대해 $b_e=e_u-e_v$ 로 두면 $L_G = \sum_e w_e b_e b_e^{\mathsf T}$ 다. 여기에 $L_G^{+/2}$ 를 양쪽에서 곱해 정규화한다.
 

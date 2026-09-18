@@ -27,28 +27,6 @@ $j$ 함수의 계수가 $j$ 함수에 대한 항등식의 지수로 나타난다
 
 지수가 모두 24 인 무한곱이 판별식 함수다.
 
-```python
-N = 12
-def mul(a, b):
-    c = [0]*N
-    for i, x in enumerate(a):
-        if x == 0: continue
-        for j, y in enumerate(b):
-            if i+j < N: c[i+j] += x*y
-    return c
-
-P = [0]*N; P[0] = 1
-for n in range(1, N):
-    f = [0]*N; f[0] = 1
-    if n < N: f[n] = -1
-    for _ in range(24):
-        P = mul(P, f)
-
-print('Delta = q * prod (1-q^n)^24 의 계수 tau(n):')
-print(' ', [P[n-1] for n in range(1, 11)])
-# [1, -24, 252, -1472, 4830, -6048, -16744, 84480, -113643, -115920]
-```
-
 Ramanujan 의 $\tau$ 가 나온다. Borcherds 곱은 이 상수 24 를 약정칙 형식의 계수 $c(m)$ 으로 바꾼다. 지수가 $n$ 에 따라 달라져도 곱이 모듈러 형식이 되는 이유를 특이 theta 올림이 설명한다.
 
 ## 발산하는 적분의 정규화

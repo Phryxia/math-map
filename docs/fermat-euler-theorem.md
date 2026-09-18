@@ -142,26 +142,7 @@ $$
 
 합성수 $n$ 에 대해 이를 통과하는 밑(strong liar)은 최대 $1/4$ 이므로, 독립으로 $k$ 회 반복하면 오류 확률이 $4^{-k}$ 이하다[^3].
 
-```python
-def miller_rabin(n, bases=(2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37)):
-    if n < 2: return False
-    for p in bases:
-        if n % p == 0: return n == p
-    s, q = 0, n - 1
-    while q % 2 == 0:
-        s, q = s + 1, q // 2
-    for a in bases:
-        x = pow(a, q, n)
-        if x in (1, n - 1): continue
-        for _ in range(s - 1):
-            x = x * x % n
-            if x == n - 1: break
-        else:
-            return False
-    return True
-```
-
-위 고정 밑 집합은 $2^{64}$ 미만의 모든 $n$ 에 대해 결정론적으로 정확하다.
+밑을 처음 열두 개 소수 $2,3,\dots,37$ 로 고정하면 $2^{64}$ 미만의 모든 $n$ 에 대해 결정론적으로 정확하다.
 
 ## 그 밖의 쓰임
 

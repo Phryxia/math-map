@@ -116,7 +116,7 @@ $$
 
 이다.
 
-즉 상한 $\Delta + 1$ 이 실제로 필요한 경우는 완전 그래프 $K_{\Delta+1}$ 과 홀수 사이클 두 가지 극단뿐이다. 증명의 뼈대는 다음과 같다. $\Delta \le 2$ 인 경우는 직접 확인한다. $\Delta \ge 3$ 이면 두 가지를 보인다. 첫째, $G$ 가 2-연결이 아니면 절단점에서 쪼개어 귀납한다. 둘째, 2-연결인 경우 어떤 정점 $v$ 와 그 이웃 $u, w$ 를 $u$ 와 $w$ 가 서로 인접하지 않고 $G - u - w$ 가 연결되도록 고를 수 있다. 그러면 $u, w$ 를 먼저 같은 색으로 칠하고 나머지를 $v$ 로부터 멀어지는 순서의 역순으로 탐욕 색칠하면, 마지막에 처리되는 $v$ 의 이웃 중 두 개가 색을 공유하므로 $v$ 에 쓸 색이 남는다.
+즉 상한 $\Delta + 1$ 이 실제로 필요한 경우는 완전 그래프 $K_{\Delta+1}$ 과 홀수 사이클 두 가지 극단뿐이다. 증명의 요지는 다음과 같다. $\Delta \le 2$ 인 경우는 직접 확인한다. $\Delta \ge 3$ 이면 두 가지를 보인다. 첫째, $G$ 가 2-연결이 아니면 절단점에서 쪼개어 귀납한다. 둘째, 2-연결인 경우 어떤 정점 $v$ 와 그 이웃 $u, w$ 를 $u$ 와 $w$ 가 서로 인접하지 않고 $G - u - w$ 가 연결되도록 고를 수 있다. 그러면 $u, w$ 를 먼저 같은 색으로 칠하고 나머지를 $v$ 로부터 멀어지는 순서의 역순으로 탐욕 색칠하면, 마지막에 처리되는 $v$ 의 이웃 중 두 개가 색을 공유하므로 $v$ 에 쓸 색이 남는다.
 
 ## 이분 그래프와 2-색칠
 
@@ -191,82 +191,6 @@ $k \ge 3$ 고정에 대해 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 - **스케줄링과 매칭**: 이분 그래프의 간선 색칠은 작업-기계 배정을 시간 단위로 쪼개는 문제이며, König 정리에 의해 $\Delta$ 개 시간대로 충분하다. 이 결과는 [매칭과 Hall 정리](matchings.md)의 완전 매칭 분해로 증명된다.
 - **독립집합 세기**: $P(G,k)$ 의 계수는 그래프의 구조적 정보를 담고 있고, [생성함수](generating-functions.md)의 관점에서 다루면 부분집합 합 공식이 자연스럽게 나온다.
 - **Ramsey 하한**: "클리크도 독립집합도 작다"는 그래프의 존재는 [확률적 방법](probabilistic-method.md)으로 보이며, 그런 그래프는 자동으로 채색수가 큰데 클리크는 작은 예가 된다.
-
-## 코드
-
-퇴화도 순서 기반 탐욕 색칠과 완전 탐색 기반 채색수 계산을 함께 둔다.
-
-```python
-from itertools import product
-
-def degeneracy_order(adj):
-    """매번 최소차수 정점을 떼어낸 순서를 뒤집어 돌려준다."""
-    deg = {v: len(ns) for v, ns in adj.items()}
-    alive = set(adj)
-    order = []
-    while alive:
-        v = min(alive, key=lambda u: deg[u])
-        alive.remove(v)
-        order.append(v)
-        for u in adj[v]:
-            if u in alive:
-                deg[u] -= 1
-    return order[::-1]
-
-def greedy_coloring(adj, order=None):
-    order = order or degeneracy_order(adj)
-    color = {}
-    for v in order:
-        used = {color[u] for u in adj[v] if u in color}
-        c = 0
-        while c in used:
-            c += 1
-        color[v] = c
-    return color
-
-def chromatic_number(adj):
-    """작은 그래프용 완전 탐색. 하한(탐욕 클리크)과 상한(탐욕) 사이만 시도한다."""
-    vs = list(adj)
-    upper = max(greedy_coloring(adj).values()) + 1
-    for k in range(1, upper + 1):
-        for assign in product(range(k), repeat=len(vs)):
-            c = dict(zip(vs, assign))
-            if all(c[u] != c[v] for u in vs for v in adj[u]):
-                return k, c
-    return upper, greedy_coloring(adj)
-
-# Petersen 그래프: χ = 3, Δ = 3 이므로 Brooks 정리의 상한이 헐겁다.
-outer = {i: {(i + 1) % 5, (i - 1) % 5, i + 5} for i in range(5)}
-inner = {i + 5: {(i + 2) % 5 + 5, (i - 2) % 5 + 5, i} for i in range(5)}
-petersen = {**outer, **inner}
-
-print(max(greedy_coloring(petersen).values()) + 1)  # 탐욕 결과 (순서 의존)
-print(chromatic_number(petersen)[0])                # 3
-
-cycle5 = {i: {(i + 1) % 5, (i - 1) % 5} for i in range(5)}
-print(chromatic_number(cycle5)[0])                  # 3 (홀수 사이클)
-```
-
-채색 다항식은 삭제-축약을 그대로 재귀로 옮기면 된다.
-
-```python
-def chromatic_polynomial(n, edges):
-    """P(G, k) 의 계수를 낮은 차수부터 담은 리스트로 돌려준다."""
-    if not edges:
-        return [0] * n + [1]          # k^n
-    e, rest = edges[0], edges[1:]
-    a = chromatic_polynomial(n, rest)  # G - e
-    u, v = e
-    relabel = lambda w: (u if w == v else w)
-    merged = sorted({(min(relabel(x), relabel(y)), max(relabel(x), relabel(y)))
-                     for x, y in rest if relabel(x) != relabel(y)})
-    b = chromatic_polynomial(n - 1, merged)  # G / e
-    b = b + [0] * (len(a) - len(b))
-    return [x - y for x, y in zip(a, b)]
-
-# C_4: P(k) = (k-1)^4 + (k-1) = k^4 - 4k^3 + 6k^2 - 3k
-print(chromatic_polynomial(4, [(0, 1), (1, 2), (2, 3), (0, 3)]))
-```
 
 ## 이론적 위치
 

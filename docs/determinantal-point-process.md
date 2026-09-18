@@ -112,48 +112,6 @@ $$
 
 연쇄법칙으로 결정점과정을 정확히 표본추출한다. 지표를 하나씩 보면서 조건부 확률로 뽑고, 뽑았는지 여부에 따라 핵을 Schur 보완으로 갱신한다. 갱신식의 분모만 다르다.
 
-```python
-import math, random
-
-def sine_kernel(N, rho):
-    """정수 격자 위의 이산 sine 핵. 밀도 rho 의 사영작용소."""
-    K = [[rho if i == j else math.sin(math.pi * rho * (i - j)) / (math.pi * (i - j))
-          for j in range(N)] for i in range(N)]
-    return K
-
-def sample(K0, rng):
-    """연쇄법칙 표본추출. 뽑으면 분모가 K_ii, 안 뽑으면 K_ii - 1."""
-    N = len(K0)
-    K = [row[:] for row in K0]
-    S = []
-    for i in range(N):
-        take = rng.random() < K[i][i]
-        if take:
-            S.append(i)
-        den = K[i][i] - (0.0 if take else 1.0)
-        col = [K[r][i] for r in range(N)]
-        row = K[i][:]
-        for r in range(N):
-            for c in range(N):
-                K[r][c] -= col[r] * row[c] / den
-    return S
-
-N, rho, S = 30, 0.5, 1000
-rng = random.Random(11)
-K = sine_kernel(N, rho)
-total = adj = far = 0
-for _ in range(S):
-    s = set(sample(K, rng))
-    total += len(s)
-    adj += sum(1 for i in range(N - 1) if i in s and i + 1 in s)
-    far += sum(1 for i in range(N - 2) if i in s and i + 2 in s)
-
-pair = lambda d: rho ** 2 - (math.sin(math.pi * rho * d) / (math.pi * d)) ** 2
-print(f"평균 점 개수   {total/S:.3f}   (tr K = {rho*N:.1f})")
-print(f"거리 1 쌍 비율 {adj/(S*(N-1)):.4f}   이론 {pair(1):.4f}   독립이면 {rho**2:.4f}")
-print(f"거리 2 쌍 비율 {far/(S*(N-2)):.4f}   이론 {pair(2):.4f}   독립이면 {rho**2:.4f}")
-```
-
 반발의 세기는 거리마다 다르다. $\rho=1/2$ 에서 거리 1 인 쌍의 밀도는 $\rho^2-K(0,1)^2=0.1487$ 로 독립값 $0.25$ 보다 훨씬 작지만, 거리 2 에서는 $K(0,2)=\sin(\pi)/(2\pi)=0$ 이라 상관이 사라지고 독립값과 같아진다.
 
 ## 이 틀의 쓰임

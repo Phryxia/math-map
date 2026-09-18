@@ -187,23 +187,6 @@ $$
 
 구조 정리의 계산판은 정수 행렬의 Smith 표준형이다. 관계행렬이 주어진 아벨군의 분해를 다음처럼 얻는다.
 
-```python
-from sympy import Matrix
-from sympy.matrices.normalforms import smith_normal_form
-
-# 생성원 3개, 관계 2개인 아벨군 Z^3 / im(A)
-A = Matrix([[2, 4, 4],
-            [-6, 6, 12]])
-S = smith_normal_form(A)          # 대각 불변인자
-d = [S[i, i] for i in range(min(S.shape))]
-print(d)                          # [2, 6] 형태의 불변인자
-
-rank = A.shape[1] - len([x for x in d if x != 0])
-torsion = [x for x in d if abs(x) not in (0, 1)]
-print("자유 계수:", rank, "/ torsion:", torsion)
-# 결과: Z^1 (+) Z/2 (+) Z/6
-```
-
 여기서 자유 계수는 생성원 수에서 $0$ 이 아닌 불변인자 수를 뺀 값이고, 단원인 불변인자는 인자를 만들지 않는다.
 
 ## 아이디얼과 환론

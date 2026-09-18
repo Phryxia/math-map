@@ -54,21 +54,6 @@ $$
 
 음이 아닌 가측함수 $f$ 에 대해 단순함수의 증가열 $s_n \uparrow f$ 가 존재한다. 치역을 $2^n$ 등분해 잘라 내린다.
 
-```python
-def simple_approx(f, x, n):
-    """음이 아닌 f 를 아래에서 근사하는 n 단계 단순함수 값."""
-    v = f(x)
-    if v >= n:
-        return n
-    k = int(v * 2 ** n)          # 치역을 1/2^n 격자로 내림
-    return k / 2 ** n
-
-
-g = lambda t: t ** 0.5
-for n in (1, 3, 6, 12):
-    print(n, simple_approx(g, 0.7, n), g(0.7))
-```
-
 각 단계의 값 $k/2^n$ 에 대응하는 집합이 $f^{-1}([k/2^n, (k+1)/2^n))$ 이고 가측성이 이것을 $\Sigma$ 에 넣는다. Lebesgue 적분의 정의가 이 근사 위에 놓이므로 가측성이 적분의 최소 조건이다.
 
 # 성질

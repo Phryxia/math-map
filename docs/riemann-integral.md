@@ -102,25 +102,9 @@ $f_n \to f$ 여도 $\int f_n \to \int f$ 는 일반적으로 성립하지 않는
 
 ## 수치 적분
 
-정의를 그대로 구현하면 사각형 합이고, 조각 위에서 함수를 일차·이차로 근사하면 사다리꼴 법칙과 Simpson 법칙이 된다.
+조각 위에서 함수를 왼끝 값으로 근사하면 사각형 합, 중점 값으로 근사하면 중점 법칙, 일차식으로 근사하면 사다리꼴 법칙이다.
 
-```python
-def riemann(f, a, b, n, rule="mid"):
-    h = (b - a) / n
-    if rule == "mid":
-        return h * sum(f(a + (i + 0.5) * h) for i in range(n))
-    if rule == "trap":
-        return h * (f(a) / 2 + sum(f(a + i * h) for i in range(1, n)) + f(b) / 2)
-    raise ValueError(rule)
-
-f = lambda x: x * x
-exact = 1 / 3
-for n in (10, 100, 1000):
-    print(n, abs(riemann(f, 0, 1, n, "mid") - exact),
-             abs(riemann(f, 0, 1, n, "trap") - exact))
-```
-
-매끄러운 함수에서 두 법칙의 오차는 $O(h^2)$ 이고, 이 차수는 Taylor 전개에서 나온다. 진동이 심하거나 미분 불가능한 함수에서는 이 차수가 무너진다.
+매끄러운 함수에서 중점 법칙과 사다리꼴 법칙의 오차는 $O(h^2)$ 이고, 이 차수는 Taylor 전개에서 나온다. 진동이 심하거나 미분 불가능한 함수에서는 이 차수가 무너진다.
 
 # 활용
 

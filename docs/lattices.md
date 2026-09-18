@@ -141,65 +141,6 @@ $$
 
 지수 근사비를 줄이려면 블록 단위로 정확히 푸는 BKZ 계열을 쓴다. 블록 크기 $\beta$ 에서 근사비가 대략 $\beta^{n/\beta}$ 이고 비용이 $2^{O(\beta)}$ 이며, 실무의 파라미터가 이 절충 곡선 위에서 정해진다.
 
-## 직접 구현
-
-```python
-from fractions import Fraction as F
-
-def gram_schmidt(B):
-    n = len(B)
-    Bs, mu = [], [[F(0)] * n for _ in range(n)]
-    for i in range(n):
-        v = list(B[i])
-        for j in range(i):
-            mu[i][j] = (sum(a * b for a, b in zip(B[i], Bs[j]))
-                        / sum(x * x for x in Bs[j]))
-            v = [x - mu[i][j] * y for x, y in zip(v, Bs[j])]
-        Bs.append(v)
-    return Bs, mu
-
-def lll(B, delta=F(3, 4)):
-    B = [[F(x) for x in b] for b in B]
-    n = len(B)
-    Bs, mu = gram_schmidt(B)
-    k = 1
-    while k < n:
-        for j in range(k - 1, -1, -1):                    # 크기 축소
-            q = round(mu[k][j])
-            if q:
-                B[k] = [x - q * y for x, y in zip(B[k], B[j])]
-                Bs, mu = gram_schmidt(B)
-        if (sum(x * x for x in Bs[k])
-                >= (delta - mu[k][k-1] ** 2) * sum(x * x for x in Bs[k-1])):
-            k += 1                                        # Lovasz 조건 만족
-        else:
-            B[k], B[k-1] = B[k-1], B[k]                   # 교환
-            Bs, mu = gram_schmidt(B)
-            k = max(k - 1, 1)
-    return [[int(x) for x in b] for b in B]
-
-norms = lambda B: [round(float(sum(x*x for x in b)) ** 0.5, 2) for b in B]
-
-bad = [[201, 37], [409, 75]]                              # det = -58 인 나쁜 기저
-good = lll(bad)
-print("2차원 전:", bad, norms(bad))
-print("2차원 후:", good, norms(good))
-
-bad4 = [[1, 0, 0, 1345], [0, 1, 0, 3129], [0, 0, 1, 5678], [0, 0, 0, 9901]]
-red = lll(bad4)
-print("4차원 전:", norms(bad4))
-print("4차원 후:", norms(red), "최단벡터", red[0])
-
-# 2차원 전: [[201, 37], [409, 75]] [204.38, 415.82]
-# 2차원 후: [[7, 1], [-2, 8]] [7.07, 8.25]
-# 4차원 전: [1345.0, 3129.0, 5678.0, 9901.0]
-# 4차원 후: [7.07, 8.37, 12.92, 14.21] 최단벡터 [-4, 4, -3, 3]
-```
-
-2 차원 격자의 행렬식은 $58$ 이고 Minkowski 상계가 $2\sqrt{58/\pi}\approx8.59$ 다. 축소된 첫 벡터의 길이 $7.07$ 이 이를 만족하고 이것이 최단벡터다.
-
-4 차원 예는 마지막 좌표를 크게 만들어 $1345,3129,5678$ 의 작은 정수 관계를 찾게 한 것이다. 답 $(-4,4,-3,3)$ 은 $-4\cdot1345+4\cdot3129-3\cdot5678+3\cdot9901=0$ 을 뜻한다. 짧은 벡터를 찾는 문제가 정수 관계를 찾는 문제로 번역된다.
-
 ## 어려움
 
 SVP 는 무작위 환산 아래 NP 난해다. 정확판뿐 아니라 $1+1/n^\epsilon$ 이내의 근사판까지 그렇다. 반면 $\sqrt{n/\log n}$ 배 이상의 근사판은 $\mathrm{NP}\cap\mathrm{coNP}$ 에 있어 NP 난해일 가능성이 낮다.

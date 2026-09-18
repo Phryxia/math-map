@@ -74,7 +74,7 @@ $$
 
 ## 하향 정리의 증명
 
-*증명 스케치.* Tarski–Vaught 판정이 열쇠다. 부분구조 $N$ 이 기본 부분구조일 필요충분조건은, $N$ 의 원소들을 매개변수로 하는 논리식 $\exists x\thinspace \varphi(x, \bar{a})$ 가 $M$ 에서 참일 때마다 그것을 만족하는 증거가 $N$ 안에 이미 있다는 것이다.
+*증명 스케치.* Tarski–Vaught 판정을 쓴다. 부분구조 $N$ 이 기본 부분구조일 필요충분조건은, $N$ 의 원소들을 매개변수로 하는 논리식 $\exists x\thinspace \varphi(x, \bar{a})$ 가 $M$ 에서 참일 때마다 그것을 만족하는 증거가 $N$ 안에 이미 있다는 것이다.
 
 그러므로 각 논리식마다 증거를 골라 주는 함수(Skolem 함수)를 정하고, $A$ 에서 출발해 이 함수들로 닫는다. 논리식은 언어 크기만큼, 각 단계는 유한 튜플에만 적용되므로 폐포의 크기가 위의 상한을 넘지 않는다. 증거를 "고른다"는 부분에서 [선택공리](axiom-of-choice.md)가 쓰인다.
 
@@ -114,34 +114,9 @@ $$
 
 2차 논리는 이 대상들을 정의할 수 있지만, 그 대가로 완전성과 compactness 를 모두 잃는다. Lindström 정리가 이 교환 관계를 정리로 만든다.
 
-## 계산 예
+## 비표준 모형
 
-compactness 의 전제인 "유한 부분집합의 만족 가능성"은 실제로 확인할 수 있는 조건이다. 비표준 모형을 만드는 이론에 대해 각 유한 조각의 증거를 직접 찾아본다.
-
-```python
-def finite_fragment(k):
-    """이론 T = Th(N) + {c > 0, c > 1, ..., } 의 유한 조각: c 에 대한 조건만 남긴다."""
-    return [n for n in range(k)]          # "c > n" 들
-
-def witness(fragment):
-    """표준 자연수 구조 안에서 조각을 만족시키는 c 의 해석을 찾는다."""
-    return max(fragment) + 1 if fragment else 0
-
-for k in [0, 1, 5, 100]:
-    frag = finite_fragment(k)
-    c = witness(frag)
-    assert all(c > n for n in frag)
-    print(f"조건 {k}개 -> c = {c} 로 해석하면 만족")
-
-# 전체 이론은 표준 모형에서 만족될 수 없다: 어떤 자연수도 모든 n 보다 크지 않다.
-def satisfied_in_standard_model(c, bound):
-    return all(c > n for n in range(bound))
-
-print("표준 모형에서 c = 10**9 가 모든 조건을 만족하는가:",
-      satisfied_in_standard_model(10**9, 10**9 + 5))
-```
-
-각 유한 조각은 표준 모형 안에서 만족되지만 전체는 그렇지 않다. compactness 는 이 간극을 메우는 새 모형의 존재를 보장하며, 그 모형은 표준 모형과 1차 문장 수준에서 구별되지 않는다.
+새 상수 $c$ 와 공리 $c>0,\ c>1,\ c>2,\dots$ 를 산술 이론에 더하면, 유한 부분집합은 각각 표준 모형 $\mathbb N$ 에서 만족되지만 전체는 그렇지 않다. compactness 는 이 간극을 메우는 새 모형의 존재를 보장하며, 그 모형은 표준 모형과 1차 문장 수준에서 구별되지 않는다.
 
 # 활용
 

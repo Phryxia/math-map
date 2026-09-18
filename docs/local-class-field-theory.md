@@ -193,68 +193,6 @@ $$
 
 $K=\mathbb Q_3$ , $\pi=3$ , $q=3$ 에서 $F_f$ 를 차수 $6$ 미만까지 귀납으로 구성한다.
 
-```python
-from fractions import Fraction as Q
-
-N, p, pi = 6, 3, 3          # K = Q_3, 소원 π = 3, 전체 차수 N 미만만 유지
-
-def mul(a, b):
-    c = {}
-    for (i, j), u in a.items():
-        for (k, l), v in b.items():
-            if i + j + k + l < N:
-                c[(i + k, j + l)] = c.get((i + k, j + l), Q(0)) + u * v
-    return {m: v for m, v in c.items() if v}
-
-def add(*gs):
-    c = {}
-    for g in gs:
-        for m, v in g.items():
-            c[m] = c.get(m, Q(0)) + v
-    return {m: v for m, v in c.items() if v}
-
-def scal(a, s):
-    return {m: v * s for m, v in a.items() if v * s}
-
-X, Y = {(1, 0): Q(1)}, {(0, 1): Q(1)}
-
-def subst(f, g):                              # f(T) 에 g 를 대입
-    out, power = {}, {(0, 0): Q(1)}
-    for k in range(N + 1):
-        if k:
-            power = mul(power, g)
-        if k in f and power:
-            out = add(out, scal(power, Q(f[k])))
-    return out
-
-def compose_outer(F, f):                      # F(f(X), f(Y))
-    fx, fy, out = subst(f, X), subst(f, Y), {}
-    for (i, j), c in F.items():
-        t = {(0, 0): c}
-        for _ in range(i): t = mul(t, fx)
-        for _ in range(j): t = mul(t, fy)
-        out = add(out, t)
-    return out
-
-def lubin_tate(f):                            # F ≡ X+Y 에서 시작해 차수별로 보정
-    F = add(X, Y)
-    for n in range(2, N):
-        delta = {m: v for m, v in add(subst(f, F), scal(compose_outer(F, f), Q(-1))).items()
-                 if sum(m) == n}
-        F = add(F, scal(delta, Q(1, pi ** n - pi)))   # 유일한 보정항
-    return F
-
-def show(f):
-    F = lubin_tate(f)
-    return " + ".join(f"{v}·X^{i}Y^{j}" for (i, j), v in sorted(F.items()))
-
-print(show({1: pi, p: 1}))       # f(X) = 3X + X^3
-print(show({1: 3, 2: 3, 3: 1}))  # f(X) = (1+X)^3 - 1
-
-# 1·X^0Y^1 + 1·X^1Y^0 + 1/8·X^1Y^2 + -1/128·X^1Y^4 + 1/8·X^2Y^1 + -1/128·X^4Y^1
-# 1·X^0Y^1 + 1·X^1Y^0 + 1·X^1Y^1
-```
-
 $f=(1+X)^3-1$ 에서 귀납적 구성이 형식 곱군 $X+Y+XY$ 를 복원한다. $f=3X+X^3$ 쪽 계수 $1/8$ 과 $-1/128$ 은 분모가 $2$ 의 거듭제곱이라 $\mathbb Z_3$ 의 단원이고, 나눗셈에 쓰인 $\pi^n-\pi=3(3^{n-1}-1)$ 의 $3$ 이 매번 상쇄된 결과다.
 
 ## $f$ 에 의존하지 않는 분할점 체

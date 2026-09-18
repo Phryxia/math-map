@@ -73,59 +73,6 @@ $N = 2^m$ 일 때 위의 분할을 재귀적으로 적용한다. 시간 영역�
 
 실무 라이브러리는 길이의 소인수분해를 보고 여러 기수를 섞어 쓴다. 길이를 2 의 거듭제곱으로 맞추는 0 채우기는 신호의 의미를 바꿀 수 있다.
 
-## 구현
-
-```python
-import cmath
-
-def fft(a, inverse=False):
-    """길이가 2의 거듭제곱인 배열의 제자리 반복형 Cooley-Tukey."""
-    n = len(a)
-    a = list(a)
-    j = 0
-    for i in range(1, n):                      # 비트 반전 순열
-        bit = n >> 1
-        while j & bit:
-            j ^= bit
-            bit >>= 1
-        j |= bit
-        if i < j:
-            a[i], a[j] = a[j], a[i]
-    length = 2
-    while length <= n:                         # 아래에서 위로 병합
-        ang = (2 if inverse else -2) * cmath.pi / length
-        w = cmath.exp(1j * ang)
-        for i in range(0, n, length):
-            wk = 1 + 0j
-            for k in range(length // 2):
-                u = a[i + k]
-                v = a[i + k + length // 2] * wk
-                a[i + k] = u + v
-                a[i + k + length // 2] = u - v
-                wk *= w
-        length <<= 1
-    if inverse:
-        a = [x / n for x in a]
-    return a
-
-def dft(a):
-    n = len(a)
-    return [sum(a[t] * cmath.exp(-2j * cmath.pi * k * t / n) for t in range(n))
-            for k in range(n)]
-
-def poly_mul(p, q):
-    n = 1
-    while n < len(p) + len(q) - 1:
-        n <<= 1
-    P = fft(list(p) + [0] * (n - len(p)))
-    Q = fft(list(q) + [0] * (n - len(q)))
-    R = fft([u * v for u, v in zip(P, Q)], inverse=True)
-    return [round(z.real) for z in R[:len(p) + len(q) - 1]]
-
-print(poly_mul([1, 2, 3], [4, 5]))        # (1+2x+3x^2)(4+5x)
-# [4, 13, 22, 15]
-```
-
 # 성질
 
 ## 역변환

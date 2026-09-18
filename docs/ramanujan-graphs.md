@@ -28,35 +28,6 @@ $$
 2\sqrt{d-1}=\text{무한 }d\text{ 정규 나무의 스펙트럼 반지름}
 $$
 
-Ramanujan 그래프는 유한하면서 무한 나무만큼 잘 섞인다. 작은 예에서 조건을 확인한다.
-
-```python
-from math import sqrt
-graphs = [
-    ('K_4',                  3, [3,-1,-1,-1]),
-    ('Petersen',             3, [3]+[1]*5+[-2]*4),
-    ('K_{3,3}',              3, [3]+[0]*4+[-3]),
-    ('Heawood',              3, [3]+[sqrt(2)]*6+[-sqrt(2)]*6+[-3]),
-    ('Hoffman-Singleton',    7, [7]+[2]*28+[-3]*21),
-]
-
-print('그래프                 d   lambda    2*sqrt(d-1)   Ramanujan')
-for name, d, spec in graphs:
-    rest = [m for m in spec if abs(abs(m) - d) > 1e-9]   # +-d 는 제외
-    lam = max(abs(m) for m in rest)
-    b = 2 * sqrt(d - 1)
-    print(f'{name:20s} {d:2d}   {lam:6.4f}   {b:8.4f}      {"예" if lam <= b + 1e-9 else "아니오"}')
-```
-
-```
-그래프                 d   lambda    2*sqrt(d-1)   Ramanujan
-K_4                   3   1.0000     2.8284      예
-Petersen              3   2.0000     2.8284      예
-K_{3,3}               3   0.0000     2.8284      예
-Heawood               3   1.4142     2.8284      예
-Hoffman-Singleton     7   3.0000     4.8990      예
-```
-
 작고 대칭성이 높은 그래프는 대개 Ramanujan 이다. 어려운 것은 정점 수를 무한히 키우면서 조건을 유지하는 무한 족이다. 정점이 많아질수록 $\lambda$ 가 $2\sqrt{d-1}$ 쪽으로 밀려 올라간다.
 
 ## 사원수 대수와 Hecke 고윳값

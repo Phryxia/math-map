@@ -64,7 +64,7 @@ $$
 
 # 성질
 
-## 의사다항시간이라는 함정
+## 의사다항시간
 
 배낭 문제의 표준 점화식은 $O(nW)$ 에 끝난다. 그런데 배낭 문제는 NP-난해다. 모순이 아닌 이유는 $W$ 가 입력의 크기가 아니라 입력에 적힌 수이기 때문이다. $W$ 를 이진수로 적으면 자릿수는 $\log W$ 이므로 $O(nW)$ 는 입력 길이에 대해 지수적이다. 이런 알고리즘을 의사다항시간이라 한다. 수의 크기가 작을 때만 실용적이고, 큰 경우에는 [근사 알고리즘](approximation-algorithms.md)으로 넘어간다. 배낭 문제에 FPTAS 가 있는 것도 이 표를 값 쪽으로 반올림해 크기를 줄이는 발상이다.
 
@@ -75,46 +75,6 @@ $$
 ## 탐욕법과의 관계
 
 탐욕 알고리즘은 각 단계에서 하나의 전이만 보고 결정한다. 이것이 정당하려면 교환 논증이나 matroid 구조 같은 추가 성질이 필요하다. 동적 계획법은 모든 전이를 살펴보므로 그런 성질 없이도 옳지만 대가로 상태 전체를 저장한다. 탐욕이 통하는 문제는 동적 계획법으로도 풀리지만 그 역은 아니다.
-
-## 코드로 확인
-
-배낭 문제의 표 채우기가 전수 탐색과 같은 답을 주는지, 최장 공통 부분수열에서 부분문제 개수가 격자 크기로 억제되는지 본다.
-
-```python
-from functools import lru_cache
-
-items, W = [(3, 4), (4, 5), (2, 3), (5, 8)], 9      # (무게, 가치)
-
-def knap_dp(items, W):
-    best = [0] * (W + 1)                            # best[w] = 용량 w 의 최적값
-    for wt, val in items:                           # 물건을 하나씩 추가한다
-        for w in range(W, wt - 1, -1):              # 역순: 같은 물건을 두 번 쓰지 않는다
-            best[w] = max(best[w], best[w - wt] + val)
-    return best[W]
-
-def knap_brute(items, W):
-    n = len(items)
-    return max(sum(items[i][1] for i in range(n) if m >> i & 1)
-               for m in range(1 << n)
-               if sum(items[i][0] for i in range(n) if m >> i & 1) <= W)
-
-print(knap_dp(items, W), knap_brute(items, W))      # 13 13
-
-def lcs(a, b):
-    @lru_cache(None)                                # 메모이제이션 = 정점 방문 표시
-    def f(i, j):
-        if i == len(a) or j == len(b):
-            return 0
-        if a[i] == b[j]:
-            return 1 + f(i + 1, j + 1)
-        return max(f(i + 1, j), f(i, j + 1))
-    return f(0, 0), f.cache_info().currsize
-
-print(lcs("AGGTAB", "GXTXAYB"))                     # (4, 46)
-print((len("AGGTAB") + 1) * (len("GXTXAYB") + 1))   # 56
-```
-
-LCS 의 재귀는 분기가 둘이라 메모 없이는 호출 수가 지수적으로 늘지만, 서로 다른 상태는 $(i, j)$ 격자의 56 칸뿐이고 실제로 방문한 것은 46 칸이다. 하향식이 상향식보다 적게 방문하는 경우가 이렇게 생긴다. 배낭 쪽 코드에서 용량을 역순으로 도는 이유도 부분문제 그래프에서 읽어야 할 것이다. 정순으로 돌면 방금 갱신한 값을 다시 써서 같은 물건을 여러 번 담게 된다.
 
 # 활용
 

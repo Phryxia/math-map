@@ -138,23 +138,6 @@ $$
 
 속이 빈 삼각형의 Betti 수 계산은 다음과 같다.
 
-```python
-import numpy as np
-
-verts = [0, 1, 2]
-edges = [(0, 1), (0, 2), (1, 2)]          # 2-단체는 넣지 않는다 (속이 빈 삼각형)
-
-d1 = np.zeros((len(verts), len(edges)), dtype=int)
-for j, (a, b) in enumerate(edges):
-    d1[a, j] = -1                          # d[a,b] = b - a
-    d1[b, j] = +1
-
-r1 = np.linalg.matrix_rank(d1)             # rank d_1 = 2
-b0 = len(verts) - r1                       # 1  (연결성분 1개)
-b1 = len(edges) - r1 - 0                   # 1  (d_2 = 0 이므로 rank 0)
-print(b0, b1)                              # 1 1  -> 원과 같은 Betti 수
-```
-
 [^1]: J. R. Munkres, *Elements of Algebraic Topology*, §5–8 (단체복합체, 경계 연산자, 단체 호몰로지), §34 (Hurewicz 정리). https://graphics.stanford.edu/courses/cs468-02-fall/notes/06.pdf
 [^2]: 경계 행렬의 성분이 -1, 0, 1 이고 Smith normal form 으로 Betti 수와 꼬임을 얻는 절차. V. Robins, "Computing Homology", Ch. 3. https://people.physics.anu.edu.au/~vbr110/thesis/ch3-homology.pdf
 

@@ -72,47 +72,6 @@ $x_1=x_2$ 이고 $y_1=-y_2$ 이면 $P+Q=O$ 다. 역원은 $-(x,y)=(x,-y)$ 다.
 
 $kP$ 는 $P$ 를 $k$ 번 더한 것이고 반복 제곱과 같은 방식으로 $O(\log k)$ 번의 군 연산에 계산된다. 타원곡선 이산로그 문제는 $Q=kP$ 에서 $k$ 를 찾는 것이다.
 
-## 계산
-
-```python
-p, a, b = 1009, 2, 3            # y^2 = x^3 + 2x + 3 over F_1009
-O = None                        # 무한원점
-
-def add(P, Q):
-    if P is O: return Q
-    if Q is O: return P
-    (x1, y1), (x2, y2) = P, Q
-    if x1 == x2 and (y1 + y2) % p == 0:
-        return O
-    if P == Q:
-        lam = (3 * x1 * x1 + a) * pow(2 * y1, -1, p) % p
-    else:
-        lam = (y2 - y1) * pow(x2 - x1, -1, p) % p
-    x3 = (lam * lam - x1 - x2) % p
-    return (x3, (lam * (x1 - x3) - y1) % p)
-
-pts = [O] + [(x, y) for x in range(p) for y in range(p)
-             if (y * y - x**3 - a * x - b) % p == 0]
-N = len(pts)
-print("위수 N =", N, " Hasse 구간:", (p + 1 - int(2 * p**0.5), p + 1 + int(2 * p**0.5)))
-
-def mul(k, P):
-    R, Q = O, P
-    while k:
-        if k & 1: R = add(R, Q)
-        Q = add(Q, Q); k >>= 1
-    return R
-
-G = pts[1]
-print("N*G = O :", mul(N, G) is O)
-
-# 타원곡선 Diffie-Hellman
-ka, kb = 271, 823
-print("공유 비밀 일치:", mul(ka, mul(kb, G)) == mul(kb, mul(ka, G)))
-```
-
-위수가 Hasse 구간 안에 있고 Lagrange 정리대로 $NG=O$ 다. 마지막 줄이 타원곡선 Diffie–Hellman 이며 곡선만 바꾸었을 뿐 프로토콜은 그대로다.
-
 # 성질
 
 ## Hasse 정리

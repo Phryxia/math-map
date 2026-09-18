@@ -141,20 +141,6 @@ $$
 
 ZFC로 판정되지 않는 문장을 다루기 위해 도달 불가능 기수, 측정 가능 기수 등 큰 기수 공리를 추가하는 확장을 연구한다. 이들은 증명 강도를 단계적으로 올리며, 각 단계는 앞 단계의 무모순성을 함의한다.
 
-## 형식화 예
-
-증명 보조기에서 ZFC 스타일 공리를 그대로 선언해 쓸 수 있다.
-
-```text
-axiom extensionality:  forall A B. (forall x. x in A <-> x in B) -> A = B
-axiom power:           forall A. exists P. forall B. B in P <-> B subset A
-scheme separation(phi): forall A. exists S. forall x. x in S <-> (x in A and phi(x))
-
-def   0        := emptyset
-def   succ(x)  := x union {x}
-def   omega    := least inductive set
-```
-
 실제 수학 대부분은 거듭제곱집합을 몇 번만 쓰는 낮은 층에서 진행되므로, ZFC의 강한 공리 전부를 필요로 하지 않는다. 어떤 정리가 어느 공리를 정말 필요로 하는지 재는 작업이 reverse mathematics다.
 
 [^1]: Zermelo-Fraenkel Axioms, Wolfram MathWorld. https://mathworld.wolfram.com/Zermelo-FraenkelAxioms.html

@@ -94,21 +94,6 @@ Cantor 함수가 절대연속성 가정의 필요성을 보인다. 이 함수는
 
 정리는 미분 공식 하나를 적분 공식 하나로 번역한다.
 
-```python
-def antiderivative_check(f, G, a, b, n=200000):
-    """Riemann 합과 G(b) - G(a) 를 각각 계산한다."""
-    h = (b - a) / n
-    riemann = h * sum(f(a + (i + 0.5) * h) for i in range(n))
-    return riemann, G(b) - G(a)
-
-import math
-print(antiderivative_check(lambda t: 2 * t, lambda t: t * t, 0, 3))
-print(antiderivative_check(math.cos, math.sin, 0, math.pi / 2))
-# 원시함수를 초등함수로 적을 수 없어도 누적함수는 존재한다
-print(antiderivative_check(lambda t: math.exp(-t * t),
-                           lambda t: math.sqrt(math.pi) / 2 * math.erf(t), 0, 1))
-```
-
 $\int_0^3 2t\thinspace dt = 9$ 이고, 원시함수에 더한 상수는 양 끝의 차에서 사라진다.
 
 # 활용

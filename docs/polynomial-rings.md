@@ -81,31 +81,13 @@ $$
 - 유리근 정리: 정수계수 다항식의 유리근 $b/c$ 는 $b$ 가 상수항을, $c$ 가 leading coefficient를 나눈다.
 - $\mathbb{C}[x]$ : 대수학의 기본정리에 의해 기약다항식은 1차뿐이다. $\mathbb{R}[x]$ 에서는 1차와 판별식이 음인 2차뿐이다.
 
-# 활용
-
-## 최대공약수와 확장 유클리드
-
-$k[x]$ 에서 유클리드 알고리즘은 정수판과 같은 형태로 돌아간다. 확장형은 $\gcd(f,g)=1$ 일 때 $k[x]/(g)$ 에서 $f$ 의 역원을 계산하는 수단이고, 유한체 산술과 오류정정 부호 구현의 기본 연산이다.
-
-```python
-def poly_gcd_F2(a, b):
-    # F_2[x] 다항식을 비트마스크로 표현: x^3+x+1 -> 0b1011
-    while b:
-        while a.bit_length() >= b.bit_length() and a:
-            a ^= b << (a.bit_length() - b.bit_length())
-        a, b = b, a
-    return a
-
-print(bin(poly_gcd_F2(0b1011, 0b110)))  # x^3+x+1 과 x^2+x 는 서로소 -> 0b1
-```
-
 ## 체의 구성
 
 기약다항식으로 몫을 취하는 절차가 [체의 확대](field-extensions.md)의 단순 확대이며, [유한체](finite-fields.md)는 $\mathbb{F}\_p[x]$ 를 차수 $n$ 의 기약다항식으로 나눈 몫으로 구성된다. 최소다항식(minimal polynomial)은 확대체 원소를 소멸시키는 monic 다항식 중 차수가 최소인 것으로, 기약이며 그 원소를 소멸시키는 모든 다항식을 나눈다.
 
 ## 선형대수와의 연결
 
-정사각행렬 $A$ 에 대해 특성다항식과 최소다항식은 $k[x]$ 의 원소이며, $k[x]$ 의 유일분해가 Jordan 표준형과 고윳값 중복도 이론의 뼈대를 준다. [선형사상](linear-maps.md)을 $k[x]$ -모듈 구조로 보는 관점이 그 형식화다.
+정사각행렬 $A$ 에 대해 특성다항식과 최소다항식은 $k[x]$ 의 원소이며, $k[x]$ 의 유일분해가 Jordan 표준형과 고윳값 중복도 이론의 기초를 준다. [선형사상](linear-maps.md)을 $k[x]$ -모듈 구조로 보는 관점이 그 형식화다.
 
 [^1]: UC Irvine Math 120B, "Rings of Polynomials" — 체 위 다항식환의 나눗셈 알고리즘과 인수 정리. https://www.math.uci.edu/~ndonalds/math120b/2poly.pdf
 [^2]: R. Woodroofe, "Polynomial rings and unique factorization domains" — 유클리드 정역이 PID이고 UFD임, $k[x]$ 의 유일분해. https://osebje.famnit.upr.si/~russ.woodroofe/wustl-notes/ufds.pdf

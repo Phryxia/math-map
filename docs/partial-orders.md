@@ -81,25 +81,6 @@ $x \le^\ast y$ 를 $y \le x$ 로 정의하면 $\le^\ast$ 도 부분순서다. �
 
 비교 불가능한 쌍의 상대 순서는 자유로우므로 선형 확장은 대개 여럿이다. 선형 확장의 개수는 poset 이 전순서에서 얼마나 먼지를 재고, 이 값을 세는 문제는 $\char35{}\mathrm P$ 완전이다.
 
-```python
-def linear_extensions(elements, leq):
-    """모든 선형 확장을 나열한다. leq(x, y)는 x <= y 여부."""
-    if not elements:
-        yield []
-        return
-    for x in elements:
-        # x보다 엄밀히 작은 원소가 남아 있으면 아직 x를 놓을 수 없다
-        if any(y != x and leq(y, x) for y in elements):
-            continue
-        rest = [y for y in elements if y != x]
-        for tail in linear_extensions(rest, leq):
-            yield [x] + tail
-
-
-divides = lambda a, b: b % a == 0
-print(sum(1 for _ in linear_extensions([1, 2, 3, 4, 6, 12], divides)))  # 5
-```
-
 ## 사슬과 반사슬
 
 원소들이 서로 모두 비교 가능한 부분집합을 사슬, 서로 모두 비교 불가능한 부분집합을 반사슬이라 한다. Dilworth 정리는 유한 poset 을 덮는 데 필요한 사슬의 최소 개수가 최대 반사슬의 크기와 같다고 말한다. Mirsky 정리는 방향을 뒤집어 반사슬 덮개의 최소 개수가 최대 사슬의 길이와 같다고 말한다.

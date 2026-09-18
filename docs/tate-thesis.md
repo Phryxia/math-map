@@ -137,7 +137,7 @@ $\gamma_v$ 는 국소 $L$ 인자의 비와 근 수 $\varepsilon_v(\chi_v,s)$ 로
 > $$
 > 를 만족한다. $\chi$ 가 자명할 때만 극이 있고, $s=0$ 과 $s=1$ 에서 단순극이며 유수는 각각 $-\kappa f(0)$ 와 $\kappa\hat f(0)$ 다. 여기서 $\kappa=\mathrm{vol}(\mathbb A_K^1/K^\times)$ 다.
 
-증명의 뼈대는 세 단계다.
+증명의 요지는 세 단계다.
 
 1. 이델군을 $|x|\_{\mathbb A}$ 로 층층이 자른다. $\mathbb A_K^\times\cong\mathbb A_K^1\times\mathbb R_{>0}$ 이므로 적분이 $\int_0^\infty\big(\int_{\mathbb A^1}\cdots\big)t^s\thinspace dt/t$ 가 된다.
 2. $t\ge1$ 부분은 $f$ 의 급감으로 모든 $s$ 에서 수렴하는 정함수다.

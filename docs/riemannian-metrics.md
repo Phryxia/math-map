@@ -2,7 +2,7 @@
 
 # 개요
 
-[다양체](manifolds.md)는 매끄러운 좌표계만 갖춘 뼈대이고, 그 자체로는 길이도 각도 개념도 없다. Riemann 계량은 각 접공간에 [내적](inner-product-spaces.md)을 하나씩, 점에 대해 매끄럽게 변하도록 배치해 이 뼈대에 기하를 입힌다. 계량 하나가 주어지면 곡선의 길이, 두 점 사이의 거리, 부피, 그리고 [곡률](curvature.md)까지 모두 따라 나온다.
+[다양체](manifolds.md)는 매끄러운 좌표계만 갖춘 대상이고, 그 자체로는 길이도 각도 개념도 없다. Riemann 계량은 각 접공간에 [내적](inner-product-spaces.md)을 하나씩, 점에 대해 매끄럽게 변하도록 배치해 이 대상에 기하를 더한다. 계량 하나가 주어지면 곡선의 길이, 두 점 사이의 거리, 부피, 그리고 [곡률](curvature.md)까지 모두 따라 나온다.
 
 측지선(geodesic)은 이 기하에서 "직선"의 역할을 한다. 두 가지 정의가 있고 둘은 일치한다. 가속도가 0인 곡선(등속으로 휘지 않고 나아가는 곡선)이자, 길이 범함수의 임계곡선(국소적으로 최단인 곡선)이다.
 
@@ -186,7 +186,7 @@ $$
 
 # 활용
 
-## 수치 계산: 구면 측지선
+## 구면 측지선의 수치 계산
 
 측지선 방정식은 초기값 문제이므로 표준 수치 적분으로 풀린다. 단위 구의 구면 좌표에서 0이 아닌 Christoffel 기호는 둘뿐이며, 방정식은 다음과 같다.
 
@@ -194,52 +194,6 @@ $$
 \ddot{\theta} = \sin\theta \cos\theta \thinspace \dot{\varphi}^2, \qquad
 \ddot{\varphi} = -2 \cot\theta \thinspace \dot{\theta}\dot{\varphi} .
 $$
-
-해가 대원임을 검증하는 방법은 궤적을 3차원으로 매장한 뒤 초기 대원 평면의 법선과의 내적이 0으로 유지되는지 보는 것이다. 아래 구현에서 그 이탈은 배정밀도 오차 수준인 약 $10^{-13}$ 에 머문다.
-
-```python
-import math
-
-def rhs(state):
-    """단위 구의 측지선 방정식. 0 이 아닌 Christoffel 기호는 다음 둘뿐이다.
-        Gamma^theta_{phi phi} = -sin(theta) cos(theta)
-        Gamma^phi_{theta phi} = Gamma^phi_{phi theta} = cot(theta)
-    """
-    th, ph, dth, dph = state
-    ddth = math.sin(th) * math.cos(th) * dph * dph
-    ddph = -2.0 * (math.cos(th) / math.sin(th)) * dth * dph
-    return (dth, dph, ddth, ddph)
-
-def step(state, h):                      # 고전적 4차 Runge-Kutta
-    def add(s, k, c):
-        return tuple(si + c * ki for si, ki in zip(s, k))
-    k1 = rhs(state)
-    k2 = rhs(add(state, k1, h / 2))
-    k3 = rhs(add(state, k2, h / 2))
-    k4 = rhs(add(state, k3, h))
-    return tuple(s + h / 6 * (a + 2 * b + 2 * c + d)
-                 for s, a, b, c, d in zip(state, k1, k2, k3, k4))
-
-def embed(th, ph):                       # 구면 좌표를 3차원으로
-    return (math.sin(th) * math.cos(ph), math.sin(th) * math.sin(ph), math.cos(th))
-
-def integrate(th0, ph0, dth0, dph0, T=2.0, n=4000):
-    state = (th0, ph0, dth0, dph0)
-    h = T / n
-    path = [embed(state[0], state[1])]
-    for _ in range(n):
-        state = step(state, h)
-        path.append(embed(state[0], state[1]))
-    return path
-
-path = integrate(math.pi / 3, 0.0, 0.35, 0.8)
-p0, p1 = path[0], path[1]                # 초기 대원 평면의 법선
-n0 = (p0[1]*p1[2] - p0[2]*p1[1], p0[2]*p1[0] - p0[0]*p1[2], p0[0]*p1[1] - p0[1]*p1[0])
-s = math.sqrt(sum(c * c for c in n0))
-n0 = tuple(c / s for c in n0)
-print(max(abs(sum(a * b for a, b in zip(n0, p))) for p in path))   # 약 1.4e-13
-print(max(abs(math.sqrt(sum(c * c for c in p)) - 1) for p in path))  # 약 2e-16
-```
 
 일반 다양체에서는 Christoffel 기호를 계량의 수치 미분으로 얻거나 자동미분으로 계산한다. 두 점을 잇는 측지선을 구하는 문제(경계값 문제)는 shooting 방법이나 에너지 범함수의 이산화 뒤 [경사하강법](gradient-descent.md) 계열로 푼다.
 

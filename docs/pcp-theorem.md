@@ -134,75 +134,12 @@ Dinur 증명의 핵심 연산은 제약 그래프 $G$ 를 $t$ 거듭제곱해 �
 
 조건부 기댓값 방법은 무작위성 없이 $\frac78 m$ 을 달성한다. 변수를 하나씩 고정할 때마다 남은 변수를 동전으로 채웠을 때의 기대 만족 절 수를 두 선택에 대해 계산하고 큰 쪽을 택한다. 매 단계에서 값이 줄지 않으므로 처음 기댓값 $\frac78 m$ 이상이 보장된다.
 
-```python
-import random
-from itertools import product
-
-def satisfied(clauses, assign):
-    return sum(any(assign[abs(l) - 1] == (l > 0) for l in c) for c in clauses)
-
-def random_3sat(n, m, rng):
-    cls = []
-    while len(cls) < m:
-        vs = rng.sample(range(1, n + 1), 3)
-        cls.append(tuple(v if rng.random() < .5 else -v for v in vs))
-    return cls
-
-def expected_sat(clauses, partial):
-    """미정 변수를 동전으로 채웠을 때의 기대 만족 절 수."""
-    total = 0.0
-    for c in clauses:
-        undecided, sat = 0, False
-        for l in c:
-            v = partial[abs(l) - 1]
-            if v is None:
-                undecided += 1
-            elif v == (l > 0):
-                sat = True
-                break
-        total += 1.0 if sat else 1 - 0.5 ** undecided
-    return total
-
-def conditional_expectation(clauses, n):
-    """조건부 기댓값 방법. 무작위성 없이 7m/8 을 달성한다."""
-    assign = [None] * n
-    for i in range(n):
-        assign[i] = True;  e1 = expected_sat(clauses, assign)
-        assign[i] = False; e0 = expected_sat(clauses, assign)
-        assign[i] = e1 >= e0
-    return assign
-
-rng = random.Random(20260913)
-print("n  m   최적   조건부기대값   7m/8   무작위평균")
-worst = 1.0
-for _ in range(8):
-    n, m = 8, rng.randint(20, 40)
-    cls = random_3sat(n, m, rng)
-    best = max(satisfied(cls, a) for a in product([False, True], repeat=n))
-    ce = satisfied(cls, conditional_expectation(cls, n))
-    avg = sum(satisfied(cls, [rng.random() < .5 for _ in range(n)])
-              for _ in range(2000)) / 2000
-    print(f"{n} {m:3d} {best:5d} {ce:11d} {7*m/8:8.1f} {avg:10.2f}")
-    assert ce >= 7 * m / 8, "7/8 보장이 깨졌다"
-    worst = min(worst, ce / best)
-print(f"\n항상 7m/8 이상. 최적 대비 최악 비율 {worst:.3f}")
-
-# n  m   최적   조건부기대값   7m/8   무작위평균
-# 8  23    23          22     20.1      20.10
-# 8  33    32          31     28.9      28.88
-# 8  27    27          27     23.6      23.63
-# 8  39    39          39     34.1      34.11
-# 8  25    25          24     21.9      21.87
-#
-# 항상 7m/8 이상. 최적 대비 최악 비율 0.957
-```
-
 ## 쓰이는 자리
 
 - **근사 하한**: 새 최적화 문제의 근사 한계는 알려진 간극 문제에서 간극을 보존하는 환원으로 증명한다.
 - **최적 비율의 결정**: 상한과 하한이 만나면 근사 가능성이 완전히 결정된다. MAX-3SAT 의 $7/8$ , 집합 덮개의 $\ln n$ , MAX-3LIN 의 $1/2$ 가 그런 예다.
 - **부호 이론**: 국소 검사 가능 부호(LTC)와 국소 복호 가능 부호(LDC)가 PCP 구성에서 나왔고 상수 비율 LTC 구성으로 이어졌다.
-- **위임 계산**: 짧은 증명을 조금만 읽고 검증하는 구조가 SNARK 류 증명 시스템의 뼈대다.
+- **위임 계산**: 짧은 증명을 조금만 읽고 검증하는 구조가 SNARK 류 증명 시스템의 기본 구조다.
 
 [^1]: S. Arora, S. Safra, *Probabilistic checking of proofs*, JACM 45 (1998), 그리고 S. Arora, C. Lund, R. Motwani, M. Sudan, M. Szegedy, *Proof verification and the hardness of approximation problems*, JACM 45 (1998). 원 증명.
 [^2]: I. Dinur, *The PCP theorem by gap amplification*, JACM 54 (2007). 간극 증폭에 의한 조합적 증명.

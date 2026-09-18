@@ -116,47 +116,6 @@ $X=A_1^{24}$ 이면 $m=2$ 이고 $G^X=M_{24}$ 이며 앞의 Mathieu 달빛이 �
 
 Niemeier 근계가 만족하는 두 조건, 곧 **랭크 합이 24** 이고 **모든 기약 성분의 Coxeter 수가 같다**는 것만으로 후보를 전부 열거한다. $A_n$ 의 Coxeter 수는 $n+1$ 이고, $D_n$ 은 $2n-2$ 이며, $E_6,E_7,E_8$ 은 각각 $12,18,30$ 이다.
 
-```python
-def components(h):
-    """Coxeter 수가 h 인 기약 ADE 성분: (이름, 랭크)"""
-    out = []
-    if h >= 2:                                  # A_n 의 Coxeter 수는 n+1
-        out.append((f"A{h-1}", h - 1))
-    if h % 2 == 0 and h // 2 + 1 >= 4:          # D_n 은 2n-2, n>=4
-        out.append((f"D{h//2+1}", h // 2 + 1))
-    for name, rank, hh in [("E6", 6, 12), ("E7", 7, 18), ("E8", 8, 30)]:
-        if hh == h:
-            out.append((name, rank))
-    return out
-
-def fill(comps, rank, i=0):
-    """comps 의 성분만 써서 랭크 합이 rank 가 되는 다중집합 전부"""
-    if rank == 0:
-        yield []
-        return
-    if i == len(comps):
-        return
-    name, r = comps[i]
-    for k in range(rank // r + 1):
-        for rest in fill(comps, rank - k * r, i + 1):
-            yield ([(name, k)] if k else []) + rest
-
-found = [(h, ms) for h in range(2, 60) for ms in fill(components(h), 24) if ms]
-for h, ms in found:
-    print(f"h={h:<3}", " ".join(f"{n}^{k}" if k > 1 else n for n, k in ms))
-print("총", len(found), "개")
-# 출력을 세 열로 나누어 옮기면(위에서 아래로, 왼쪽 열부터)
-# h=2   A1^24          h=9   A8^3           h=18  D10 E7^2
-# h=3   A2^12          h=10  D6^4           h=18  A17 E7
-# h=4   A3^8           h=10  A9^2 D6        h=22  D12^2
-# h=5   A4^6           h=12  E6^4           h=25  A24
-# h=6   D4^6           h=12  A11 D7 E6      h=30  E8^3
-# h=6   A5^4 D4        h=13  A12^2          h=30  D16 E8
-# h=7   A6^4           h=14  D8^3           h=46  D24
-# h=8   A7^2 D5^2      h=16  A15 D9
-# 총 23 개
-```
-
 열거가 끝이라는 것은 $h$ 가 커지면 성분 랭크가 24 를 넘어 버리기 때문이다. 다섯 줄짜리 재귀가 Niemeier 의 분류 목록을 그대로 재현하고, 이 23 줄이 umbral moonshine 의 색인표가 된다. $A_1^{24}$ 가 맨 위, $D_{24}$ 가 맨 아래이고 그 사이가 전부 개별 달빛 사례다.
 
 주의할 점은 이 열거가 **필요조건의 열거**라는 것이다. 두 조건을 만족하는 조합이 23 개라는 것과 각 조합이 실제로 Niemeier 격자를 하나씩 준다는 것은 다른 문제이고, 후자는 격자를 실제로 구성해야 한다. 목록의 크기는 초등적인 조합 제약에서 나온다.

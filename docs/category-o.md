@@ -166,50 +166,6 @@ $A_3$ 부터 $1$ 이 아닌 KL 다항식이 나타나고 중복도가 $2$ 이상
 
 $A_1$ 과 $A_2$ 의 정수 정칙 블록에서 결정 행렬을 Bruhat 순서로 적고, BGG 상반성으로 Verma 여과 행렬을 만든 뒤 곱해 Cartan 행렬을 얻는다.
 
-```python
-from itertools import permutations
-
-def bruhat_leq(x, y):
-    """S_n 의 Bruhat 순서. 순열의 rank 조건으로 판정한다."""
-    n = len(x)
-    for i in range(n):
-        for j in range(n):
-            if (sum(1 for a in range(i + 1) if x[a] >= j)
-                    > sum(1 for a in range(i + 1) if y[a] >= j)):
-                return False
-    return True
-
-def length(w):
-    return sum(1 for i in range(len(w)) for j in range(i + 1, len(w)) if w[i] > w[j])
-
-def block(n):
-    """sl_n 의 정수 정칙 블록. A_1, A_2 에서는 KL 다항식이 모두 1 이므로
-    [M(y.lambda) : L(w.lambda)] 는 y <= w 일 때 1, 아니면 0 이다."""
-    W = sorted(permutations(range(n)), key=length)
-    D = {(y, w): (1 if bruhat_leq(y, w) else 0) for y in W for w in W}
-    return W, D
-
-for n in (2, 3):
-    W, D = block(n)
-    Pv = {(w, y): D[(y, w)] for w in W for y in W}          # BGG 상반성
-    C = {(w, v): sum(Pv[(w, y)] * D[(y, v)] for y in W)     # Cartan = D^T D
-         for w in W for v in W}
-    print(f"sl_{n} 정칙 블록 : |W| = {len(W)}")
-    for w in W:
-        print("     ", [C[(w, v)] for v in W])
-
-# sl_2 정칙 블록 : |W| = 2
-#       [1, 1]
-#       [1, 2]
-# sl_3 정칙 블록 : |W| = 6
-#       [1, 1, 1, 1, 1, 1]
-#       [1, 2, 1, 2, 2, 2]
-#       [1, 1, 2, 2, 2, 2]
-#       [1, 2, 2, 4, 3, 4]
-#       [1, 2, 2, 3, 4, 4]
-#       [1, 2, 2, 4, 4, 6]
-```
-
 왼쪽 위 $C_{e,e}=1$ 은 $P(e\cdot\lambda)=M(e\cdot\lambda)=L(e\cdot\lambda)$ 라는 뜻이다. $e\cdot\lambda$ 는 Bruhat 순서의 맨 아래라 Verma 가 이미 단순하며 동시에 사영이다.
 
 오른쪽 아래 $C_{w_0,w_0}=|W|$ 는 큰 사영가군의 크기다. $P(w_0\cdot\lambda)$ 는 모든 Verma 가군을 한 번씩 여과로 갖고 $L(w_0\cdot\lambda)$ 를 $|W|$ 번 포함한다. $\mathfrak{sl}_2$ 에서 $P(-2)$ 가 $L(-2)$ 를 두 번 갖던 것의 일반형이며, 이 대상이 블록의 사영생성원이자 단사 대상이다.

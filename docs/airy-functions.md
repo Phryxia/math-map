@@ -181,75 +181,7 @@ $$
 
 # 활용
 
-## 세 가지 계산법의 역할 분담
-
-같은 함수를 급수, 적분, 점근급수로 계산해 각각이 잘 듣는 구간을 확인한다.
-
-```python
-import math
-
-def ai_series(x, N=60):
-    """Taylor 급수. 작은 |x| 에서만 신뢰할 수 있다."""
-    c1, c2 = 3 ** (-2 / 3) / math.gamma(2 / 3), 3 ** (-1 / 3) / math.gamma(1 / 3)
-    f, t = 0.0, 1.0
-    for k in range(N):
-        if k:
-            t *= x ** 3 / ((3 * k - 1) * (3 * k))
-        f += t
-    g, t = 0.0, x
-    for k in range(N):
-        if k:
-            t *= x ** 3 / ((3 * k) * (3 * k + 1))
-        g += t
-    return c1 * f - c2 * g
-
-def ai_integral(x, T=60.0, n=400000):
-    """(1/pi) int_0^inf cos(t^3/3 + x t) dt 를 사다리꼴로."""
-    h, s = T / n, 0.0
-    for k in range(n + 1):
-        t = k * h
-        s += (1.0 if 0 < k < n else 0.5) * math.cos(t ** 3 / 3 + x * t)
-    return s * h / math.pi
-
-def ai_asymptotic(x, N=6):
-    """x > 0 에서의 점근급수. 항이 최소가 되기 전에 끊어야 한다."""
-    z, u = 2 / 3 * x ** 1.5, [1.0]
-    for k in range(1, N):
-        u.append(u[-1] * (6 * k - 5) * (6 * k - 3) * (6 * k - 1) / (216 * k * (2 * k - 1)))
-    s = sum((-1) ** k * u[k] / z ** k for k in range(N))
-    return math.exp(-z) / (2 * math.sqrt(math.pi) * x ** 0.25) * s
-
-print("   x        급수             적분            점근급수       급수의 최대항")
-for x in (0.5, 1.0, 2.0, 5.0, 8.0):
-    t, peak = 1.0, 1.0
-    for k in range(1, 40):
-        t *= x ** 3 / ((3 * k - 1) * (3 * k))
-        peak = max(peak, abs(t))
-    print(f"{x:5.1f}   {ai_series(x):.3e}   {ai_integral(x):.3e}   "
-          f"{ai_asymptotic(x):.3e}   {peak:.1e}")
-
-# Ai 의 영점 점근을 급수 계산의 부호 변화로 검증
-def zero_asym(n):
-    return -((3 * math.pi * (4 * n - 1)) / 8) ** (2 / 3)
-
-def zero_exact(n, w=0.5):
-    """점근값 주변에서 이분법."""
-    c = zero_asym(n)
-    lo, hi = c - w, c + w
-    flo = ai_series(lo)
-    for _ in range(200):
-        mid = (lo + hi) / 2
-        if (ai_series(mid) < 0) == (flo < 0):
-            lo = mid
-        else:
-            hi = mid
-    return (lo + hi) / 2
-
-print("\n n     점근 a_n        실제 a_n       상대오차")
-for n in (1, 2, 3, 10):
-    a, e = zero_asym(n), zero_exact(n)
-    print(f"{n:2d}   {a:12.8f}   {e:12.8f}   {abs(a - e) / abs(e):.2e}")
-```
+## 계산법의 담당 구간
 
 셋의 담당 구간이 뚜렷하게 갈린다.
 

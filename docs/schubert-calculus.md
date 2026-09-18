@@ -125,72 +125,7 @@ $\mathrm{Gr}(k,n)$ 의 코호몰로지환을 유리곡선 세기로 변형한 �
 
 # 활용
 
-## 4 직선 문제의 계산
-
-$\sigma_1$ 을 반복해 곱하는 Pieri 규칙을 구현하면 고전 문제들이 풀린다.
-
-```python
-from collections import defaultdict
-from math import comb, factorial
-
-def classes(k, m):
-    """k x m 상자 안의 Young 도형 = Gr(k, k+m) 의 Schubert 류"""
-    out = []
-    def gen(pref):
-        out.append(tuple(pref))
-        last = pref[-1] if pref else m
-        if len(pref) < k:
-            for p in range(1, last + 1):
-                gen(pref + [p])
-    gen([])
-    return sorted(set(out), key=lambda l: (sum(l), l))
-
-def pieri1(lam, k, m):
-    """σ_1 · σ_λ : 상자 하나를 더할 수 있는 모든 자리"""
-    res, l = [], list(lam) + [0]
-    for i in range(len(l)):
-        if i < k and l[i] + 1 <= m and (i == 0 or l[i-1] >= l[i] + 1):
-            nxt = l[:]
-            nxt[i] += 1
-            res.append(tuple(x for x in nxt if x))
-    return res
-
-def sigma1_power(N, k, m):
-    v = {(): 1}
-    for _ in range(N):
-        out = defaultdict(int)
-        for lam, c in v.items():
-            for mu in pieri1(lam, k, m):
-                out[mu] += c
-        v = dict(out)
-    return v
-
-def syt_rectangle(k, m):
-    """k x m 직사각형의 표준 Young 배열 개수 (후크 길이 공식)"""
-    den = 1
-    for i in range(k):
-        for j in range(m):
-            den *= (k - i - 1) + (m - j - 1) + 1
-    return factorial(k * m) // den
-
-for k, m in [(2, 2), (2, 3), (3, 3), (2, 4)]:
-    n, N = k + m, k * m
-    top = sigma1_power(N, k, m)[tuple([m] * k)]
-    print(f"Gr({k},{n}) : 기저 {len(classes(k,m)):2d} 개 (C({n},{k})={comb(n,k):2d}), "
-          f"σ_1^{N} = {top:2d}·σ_top,  직사각형 SYT = {syt_rectangle(k,m)}")
-    assert len(classes(k, m)) == comb(n, k)
-    assert top == syt_rectangle(k, m)
-
-print("\n일반 위치 직선 4 개와 모두 만나는 직선의 개수 =",
-      sigma1_power(4, 2, 2)[(2, 2)])
-
-# Gr(2,4) : 기저  6 개 (C(4,2)= 6), σ_1^4 =  2·σ_top,  직사각형 SYT = 2
-# Gr(2,5) : 기저 10 개 (C(5,2)=10), σ_1^6 =  5·σ_top,  직사각형 SYT = 5
-# Gr(3,6) : 기저 20 개 (C(6,3)=20), σ_1^9 = 42·σ_top,  직사각형 SYT = 42
-# Gr(2,6) : 기저 15 개 (C(6,2)=15), σ_1^8 = 14·σ_top,  직사각형 SYT = 14
-#
-# 일반 위치 직선 4 개와 모두 만나는 직선의 개수 = 2
-```
+## 4 직선 문제
 
 $\mathrm{Gr}(2,4)$ 의 $2$ 가 Schubert 의 답이고 상자를 채우는 경우의 수로 나온다. $\mathrm{Gr}(2,5)$ 의 $5$ , $\mathrm{Gr}(2,6)$ 의 $14$ , $\mathrm{Gr}(3,6)$ 의 $42$ 는 Catalan 수다. 두 줄짜리 직사각형의 표준 배열이 Catalan 수를 세기 때문이다.
 

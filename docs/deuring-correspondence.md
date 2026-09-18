@@ -98,43 +98,9 @@ Kohel–Lauter–Petit–Tignol 이 $e=O(\log p)$ 로 이를 다항 시간에 �
 
 KLPT 의 핵심은 4 변수 정부호 이차형식 $x^2+y^2+p(z^2+w^2)$ 가 주어진 매끄러운 수를 표현하게 만드는 것이다. 형식이 정부호이므로 $z,w$ 가 0 이 아니려면 표현할 수가 최소 $2p$ 는 되어야 한다.
 
-```python
-from math import isqrt, log2
-
-def solve(p, n):
-    """x^2+y^2+p(z^2+w^2)=n 의 해를 z,w 가 0 이 아닌 범위에서 찾는다"""
-    for z in range(1, isqrt(n // p) + 1):
-        for w in range(1, isqrt(n // p) + 1):
-            r = n - p * (z * z + w * w)
-            if r < 0:
-                break
-            for x in range(isqrt(r) + 1):
-                y = isqrt(r - x * x)
-                if x * x + y * y == r and y > 0:
-                    return (x, y, z, w)
-    return None
-
-print('  p     최소 e   2^e     해 (x,y,z,w)      log2(2p)')
-for p in (103, 251, 1019, 4099, 16411):
-    for e in range(1, 30):
-        s = solve(p, 2**e)
-        if s:
-            print(f'{p:6d}   {e:3d}  {2**e:8d}   {str(s):18s} {log2(2*p):.2f}')
-            break
-```
-
-```
-  p     최소 e   2^e     해 (x,y,z,w)      log2(2p)
-   103     8       256   (1, 7, 1, 1)       7.69
-   251     9       512   (1, 3, 1, 1)       8.97
-  1019    11      2048   (1, 3, 1, 1)       10.99
-  4099    14     16384   (31, 85, 1, 1)     13.00
- 16411    18    262144   (161, 451, 1, 1)   15.00
-```
-
 최소 지수는 $\log_2 p$ 에 상수를 더한 규모다. 매끄러운 노름을 가진 대표가 항상 존재하고 그 노름이 $\ell^{O(\log p)}$ 이므로 곡선 쪽 번역이 $O(\log p)$ 번의 $\ell$ 차 합성으로 끝난다. KLPT 의 다항 시간성이 이 크기 계산에서 나온다.
 
-위 코드는 완전 탐색이라 작은 $p$ 에서만 돌아간다. 실제 KLPT 는 Cornacchia 알고리즘으로 $x^2+y^2=r$ 을 풀고 $z,w$ 는 합동 조건을 만족하도록 격자에서 고른다.
+완전 탐색은 작은 $p$ 에서만 돌아간다. 실제 KLPT 는 Cornacchia 알고리즘으로 $x^2+y^2=r$ 을 풀고 $z,w$ 는 합동 조건을 만족하도록 격자에서 고른다.
 
 ## 명시성의 한계
 

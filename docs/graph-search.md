@@ -16,44 +16,6 @@
 
 컨테이너가 스택이면 **깊이 우선 탐색**, 큐이면 **너비 우선 탐색**이다. 인접 리스트 표현에서 두 탐색 모두 $O(|V|+|E|)$ 시간과 $O(|V|)$ 공간이 든다.
 
-```python
-from collections import deque
-
-def bfs(adj, s):
-    """s 에서의 거리와 BFS 트리의 부모를 돌려준다."""
-    dist = {s: 0}
-    parent = {s: None}
-    q = deque([s])
-    while q:
-        v = q.popleft()
-        for w in adj[v]:
-            if w not in dist:
-                dist[w] = dist[v] + 1
-                parent[w] = v
-                q.append(w)
-    return dist, parent
-
-def dfs(adj, s):
-    """방문 시각과 종료 시각을 돌려준다."""
-    seen, disc, fin = set(), {}, {}
-    clock = 0
-    stack = [(s, iter(adj[s]))]
-    seen.add(s)
-    disc[s] = clock; clock += 1
-    while stack:
-        v, it = stack[-1]
-        for w in it:
-            if w not in seen:
-                seen.add(w)
-                disc[w] = clock; clock += 1
-                stack.append((w, iter(adj[w])))
-                break
-        else:
-            stack.pop()
-            fin[v] = clock; clock += 1
-    return disc, fin
-```
-
 ## 탐색 트리와 간선 분류
 
 탐색은 방문한 정점들 위에 트리를 남긴다. 처음 방문할 때 쓴 간선이 트리 간선이고, 나머지는 방문 시각과 종료 시각의 대소로 분류된다. 방향그래프의 DFS 에서 간선 $(u,v)$ 는 네 종류다.

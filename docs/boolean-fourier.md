@@ -147,52 +147,6 @@ $$
 
 Walsh–Hadamard 변환으로 $2^n$ 개 계수를 $O(n2^n)$ 에 뽑고, Parseval 과 총 영향력과 잡음 안정성을 계수에서 읽는다.
 
-```python
-from math import acos, pi, sqrt
-
-def wht(a):
-    """빠른 Walsh-Hadamard 변환. 결과를 2^n 으로 나누면 Fourier 계수가 된다."""
-    a = a[:]; N = len(a); h = 1
-    while h < N:
-        for i in range(0, N, h * 2):
-            for j in range(i, i + h):
-                a[j], a[j + h] = a[j] + a[j + h], a[j] - a[j + h]
-        h *= 2
-    return a
-
-def coeffs(f, n):
-    """진리표를 받아 f-hat(S) 를 준다. 비트 b 는 (-1)^b, 첨자 S 는 비트마스크."""
-    N = 1 << n
-    return [c / N for c in wht([f(x, n) for x in range(N)])]
-
-def bit_values(x, n):
-    return [1 - 2 * ((x >> i) & 1) for i in range(n)]      # 비트 b -> (-1)^b
-
-majority = lambda x, n: 1 if sum(bit_values(x, n)) > 0 else -1   # n 은 홀수로 쓴다
-dictator = lambda x, n: bit_values(x, n)[0]
-parity   = lambda x, n: 1 if bin(x).count('1') % 2 == 0 else -1
-
-popcount = lambda S: bin(S).count('1')
-parseval = lambda fh: sum(c * c for c in fh)
-influence = lambda fh: sum(c * c * popcount(S) for S, c in enumerate(fh))
-stability = lambda fh, r: sum(c * c * r ** popcount(S) for S, c in enumerate(fh))
-
-n = 3
-for name, f in [("Dict_1", dictator), ("Maj_3", majority), ("XOR_3", parity)]:
-    fh = coeffs(f, n)
-    support = sorted((popcount(S), round(c, 3)) for S, c in enumerate(fh) if abs(c) > 1e-12)
-    print(f"{name:>7} : Parseval={parseval(fh):.3f}  I[f]={influence(fh):.3f}  (준위, 계수)={support}")
-
-for n in (3, 7, 11, 15):
-    fh = coeffs(majority, n)
-    row = "".join(f"{stability(fh, r):>9.5f}" for r in (0.2, 0.5, 0.8))
-    print(f"{n:>3} {influence(fh):>8.4f} {sqrt(2 * n / pi):>12.4f} |" + row)
-
-#  Dict_1 : Parseval=1.000  I[f]=1.000  (준위, 계수)=[(1, 1.0)]
-#   Maj_3 : Parseval=1.000  I[f]=1.500  (준위, 계수)=[(1, 0.5), (1, 0.5), (1, 0.5), (3, -0.5)]
-#   XOR_3 : Parseval=1.000  I[f]=3.000  (준위, 계수)=[(3, 1.0)]
-```
-
 독재자는 준위 $1$ 에 계수 하나를 두고, XOR 은 준위 $n$ 에 계수 하나를 두며, 다수결은 홀수 준위에 퍼져 있되 준위 $1$ 이 지배한다. 총 영향력이 $1$ , $n$ , $\sqrt{2n/\pi}$ 로 갈린다.
 
 유한 $n$ 에서 $\mathrm{Maj}_n$ 의 안정성은 극한값 $1-\frac2\pi\arccos\rho$ 보다 크고 차이가 단조로 줄어든다. $\mathrm{Maj}_n$ 은 각 좌표의 영향력이 $\Theta(1/\sqrt n)$ 이라 $n$ 이 크면 정리의 조건을 만족하고 극한에서 상한을 달성하므로, 정리는 개선될 수 없다. $\rho$ 가 $1$ 에 가까울수록 수렴이 느린 것은 높은 준위 계수가 $\rho^{|S|}$ 로 충분히 죽지 않기 때문이며, 그 꼬리를 통제하는 것이 초축약성이다.

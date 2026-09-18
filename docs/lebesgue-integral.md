@@ -105,25 +105,6 @@ $L^1(\mu)$ 는 $\lVert f \rVert_1 = \int \lvert f \rvert\thinspace d\mu$ 로 완
 
 정의에 등장하는 것은 $\mu$ 뿐이므로 측도를 바꾸면 다른 대상이 나온다.
 
-```python
-def simple_integral(pieces):
-    """pieces: (값 c_i, 측도 μ(A_i)) 목록. 0 * inf = 0 규약."""
-    total = 0.0
-    for c, m in pieces:
-        if c == 0 or m == 0:
-            continue
-        total += c * m
-    return total
-
-
-# 셈측도: 각 점의 측도가 1 -> 적분이 급수가 된다
-print(simple_integral([(1 / 2 ** n, 1) for n in range(1, 30)]))   # ~1.0
-
-# 확률측도: 측도의 합이 1 -> 적분이 기댓값이 된다
-print(simple_integral([(1, 1 / 6), (2, 1 / 6), (3, 1 / 6),
-                       (4, 1 / 6), (5, 1 / 6), (6, 1 / 6)]))      # 3.5
-```
-
 # 활용
 
 ## 급수와 기댓값

@@ -145,76 +145,9 @@ $$
 
 라는 $n \times n$ 행렬식 하나를 계산하는 것이다. $\sqrt{w_iw_j}$ 는 대칭을 유지하려고 나눠 붙였고, 계산의 본체는 적분작용소를 구적으로 이산화한 Nyström 근사다. 커널이 해석적이고 Gauss 구적을 쓰면 수렴이 지수적이라 마디 몇 개로 기계정밀도에 닿는다.
 
-```python
-import math
-
-def gauss_legendre(n, a, b):
-    """[a,b] 위의 Gauss-Legendre 마디와 무게. Newton 으로 Legendre 영점을 찾는다."""
-    xs, ws = [], []
-    for i in range(n):
-        x = math.cos(math.pi * (i + 0.75) / (n + 0.5))
-        for _ in range(100):
-            p0, p1 = 1.0, 0.0
-            for k in range(n):
-                p0, p1 = ((2 * k + 1) * x * p0 - k * p1) / (k + 1), p0
-            dp = n * (x * p0 - p1) / (x * x - 1)
-            dx = -p0 / dp
-            x += dx
-            if abs(dx) < 1e-15:
-                break
-        xs.append(x)
-        ws.append(2 / ((1 - x * x) * dp * dp))
-    c, r = (a + b) / 2, (b - a) / 2
-    return [c + r * x for x in xs], [r * w for w in ws]
-
-def det_dense(A):
-    """부분 피벗 LU 로 행렬식."""
-    n, d = len(A), 1.0
-    A = [row[:] for row in A]
-    for k in range(n):
-        p = max(range(k, n), key=lambda i: abs(A[i][k]))
-        if p != k:
-            A[k], A[p] = A[p], A[k]
-            d = -d
-        if A[k][k] == 0:
-            return 0.0
-        d *= A[k][k]
-        for i in range(k + 1, n):
-            f = A[i][k] / A[k][k]
-            for j in range(k, n):
-                A[i][j] -= f * A[k][j]
-    return d
-
-def fredholm(K, a, b, n):
-    """det(I - K) 를 Nystrom 구적으로."""
-    x, w = gauss_legendre(n, a, b)
-    s = [math.sqrt(wi) for wi in w]
-    M = [[(1.0 if i == j else 0.0) - s[i] * s[j] * K(x[i], x[j])
-          for j in range(n)] for i in range(n)]
-    return det_dense(M)
-
-# 1. 랭크 2 커널: cos(x-y) = cos x cos y + sin x sin y 이므로 정확값 (1 - pi/2)^2
-print(f"cos(x-y) on [0,pi]   정확값 {(1 - math.pi / 2) ** 2:.15f}")
-for n in (4, 8, 12, 20):
-    print(f"   n={n:2d}: {fredholm(lambda x, y: math.cos(x - y), 0, math.pi, n):.15f}")
-
-# 2. sine 커널의 간격 확률.  작은 s 에서 1 - s + (pi^2/36) s^4
-def sine(x, y):
-    d = math.pi * (x - y)
-    return 1.0 if abs(d) < 1e-14 else math.sin(d) / d
-
-print("\nsine 커널, det(I-K) on [0,s]")
-print("   s      n=10            n=20            n=40          (1-det-s)/s^4")
-for s in (0.05, 0.2, 1.0, 2.0):
-    vals = [fredholm(sine, 0, s, n) for n in (10, 20, 40)]
-    c4 = (vals[-1] - 1 + s) / s ** 4
-    print(f" {s:4.2f}  " + "  ".join(f"{v:.12f}" for v in vals) + f"   {c4:.6f}")
-print(f"\n   pi^2/36 = {math.pi ** 2 / 36:.6f}")
-```
-
 랭크 2 커널은 유한 랭크라 Gauss 구적이 다항식을 정확히 적분하고 $n = 8$ 에서 15 자리가 맞는다.
 
-sine 커널에서는 $n=10$ 과 $n=40$ 이 12 자리까지 같은 값을 준다. 해석적 커널에서 Nyström 근사가 지수적으로 수렴하기 때문이다. 마지막 열은 $1 - s$ 에서 벗어난 양을 $s^4$ 로 나눈 값이고, $s = 0.05$ 에서 $0.2738$ 로 전개 계수 $\pi^2/36 = 0.2742$ 에 가깝다. $s$ 가 커지면 고차항이 지배해 이 비가 뜻을 잃는다. 급수의 2 차와 3 차 항이 상쇄되어 $s^4$ 가 첫 보정이다.
+해석적 커널에서는 Nyström 근사가 마디 수에 대해 지수적으로 수렴한다. $s$ 가 작을 때 $1-\det$ 은 $s$ 에서 시작하고 다음 항이 $\pi^2 s^4/36$ 이다. 급수의 2 차와 3 차 항이 상쇄되어 $s^4$ 가 첫 보정이다.
 
 ## 간격 확률과 무작위 행렬
 

@@ -91,67 +91,6 @@ $$
 
 세 급수에 같은 절차를 적용한다. 첫째는 Borel 변환이 유리함수인 경우, 둘째는 분지점인 경우, 셋째는 [Airy 함수](airy-functions.md)의 점근급수다.
 
-```python
-import math
-
-def solve(A, b):
-    """부분 피벗 가우스 소거. 복소수 지원."""
-    n = len(b)
-    M = [row[:] + [b[i]] for i, row in enumerate(A)]
-    for c in range(n):
-        p = max(range(c, n), key=lambda r: abs(M[r][c]))
-        M[c], M[p] = M[p], M[c]
-        for r in range(c + 1, n):
-            f = M[r][c] / M[c][c]
-            for k in range(c, n + 1):
-                M[r][k] -= f * M[c][k]
-    x = [0j] * n
-    for r in reversed(range(n)):
-        x[r] = (M[r][n] - sum(M[r][k] * x[k] for k in range(r + 1, n))) / M[r][r]
-    return x
-
-def pade(c, L, M):
-    """급수 계수 c 로부터 [L/M] Pade. 분모 상수항은 1."""
-    A = [[c[L + k - j] for j in range(1, M + 1)] for k in range(1, M + 1)]
-    q = [1] + list(solve(A, [-c[L + k] for k in range(1, M + 1)]))
-    p = [sum(q[j] * c[k - j] for j in range(min(k, M) + 1)) for k in range(L + 1)]
-    return p, q
-
-def roots(q):
-    """Durand-Kerner 로 다항식 q[0] + q[1] z + ... 의 근을 전부."""
-    n = len(q) - 1
-    q = [t / q[n] for t in q]
-    ev = lambda z: sum(q[k] * z ** k for k in range(n + 1))
-    z = [(0.4 + 0.9j) ** k for k in range(n)]
-    for _ in range(500):
-        for i in range(n):
-            d = 1.0
-            for j in range(n):
-                if i != j:
-                    d *= z[i] - z[j]
-            z[i] -= ev(z[i]) / d
-    return sorted(z, key=abs)
-
-def show(name, c, orders):
-    for LM in orders:
-        r = roots(pade(c, LM, LM)[1])
-        print(f"  {name} [{LM}/{LM}]: " +
-              "  ".join(f"{x.real:+.4f}{x.imag:+.4f}j" for x in r[:4]))
-
-# 1) Euler 급수: Borel 변환이 1/(1+zeta), 극점 하나
-show("", [(-1.0) ** n for n in range(6)], [1])
-
-# 2) Borel 변환이 (1+zeta)^{-1/2}: 분지점 zeta = -1 에서 시작하는 절단선
-show("", [math.comb(2 * n, n) / 4 ** n * (-1) ** n for n in range(30)], [5, 10, 14])
-
-# 3) Airy 점근급수: 작용 차이 A = 2 를 계수만으로 역산
-N = 30
-u = [1.0]
-for k in range(1, N):
-    u.append(u[-1] * (6 * k - 5) * (6 * k - 3) * (6 * k - 1) / (216 * k * (2 * k - 1)))
-show("", [(-1) ** k * u[k] / math.gamma(k + 1) for k in range(N)], [6, 10, 14])
-```
-
 Euler 급수는 $[1/1]$ 이 이미 정확하다. 극점이 $-1.0000$ 이고, 차수를 올리면 선형계가 특이해져 풀리지 않는다.
 
 분지점 예는 극점이 $-1.0035, -1.032, -1.094, -1.196$ 처럼 줄지어 선다. 차수를 $5 \to 14$ 로 올리면 첫 극점이 $-1.021$ 에서 $-1.0035$ 로 참값에 다가간다. 극점 네 개는 물리적 특이점이 아니라 한 개의 분지점이다.

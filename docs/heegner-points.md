@@ -18,7 +18,7 @@ $$
 
 좌변은 해석, 우변은 기하다. $L'(E/K,1)\ne0$ 이면 $\hat h(y_K)\ne0$ 이므로 $y_K$ 가 무한위수이고 $\mathrm{rank}\thinspace E(K)\ge1$ 이다.
 
-Kolyvagin 은 반대 부등식을 얻었다. $y_K$ 가 무한위수이면 그것을 씨앗으로 Euler 계를 만들어 [Selmer 군](selmer-groups.md)을 누를 수 있고, 순위가 정확히 $1$ 이며 $\text{Ш}$ 가 유한하다. 두 정리를 합친 것이 해석적 순위 $\le1$ 인 경우의 BSD 다.
+Kolyvagin 은 반대 부등식을 얻었다. $y_K$ 가 무한위수이면 그것에서 Euler 계를 만들어 [Selmer 군](selmer-groups.md)을 누를 수 있고, 순위가 정확히 $1$ 이며 $\text{Ш}$ 가 유한하다. 두 정리를 합친 것이 해석적 순위 $\le1$ 인 경우의 BSD 다.
 
 # 직관
 

@@ -169,32 +169,7 @@ $$
 
 # 활용
 
-## 로그 영역 구현
-
-```python
-import math
-
-def lse(vals):                                                # log Σ exp, 안정화판
-    m = max(vals)
-    return m + math.log(sum(math.exp(v - m) for v in vals))
-
-def sinkhorn_log(C, a, b, eps, tol=1e-9, max_iter=100_000):
-    """로그 영역 Sinkhorn. P_ij = a_i b_j exp((f_i+g_j-C_ij)/eps)."""
-    n, m = len(a), len(b)
-    f, g = [0.0] * n, [0.0] * m
-    for it in range(1, max_iter + 1):
-        f = [-eps * lse([math.log(b[j]) + (g[j] - C[i][j]) / eps for j in range(m)])
-             for i in range(n)]
-        g = [-eps * lse([math.log(a[i]) + (f[i] - C[i][j]) / eps for i in range(n)])
-             for j in range(m)]
-        err = max(abs(sum(a[i] * b[j] * math.exp((f[i] + g[j] - C[i][j]) / eps)
-                          for j in range(m)) - a[i]) for i in range(n))
-        if err < tol:
-            break
-    P = [[a[i] * b[j] * math.exp((f[i] + g[j] - C[i][j]) / eps) for j in range(m)]
-         for i in range(n)]
-    return P, it
-```
+## 로그 영역 계산
 
 비용의 최댓값이 $C_{\max}$ 일 때 표준 영역 커널의 최솟값은 $e^{-C_{\max}/\varepsilon}$ 이므로, $\varepsilon$ 이 작으면 배정도에서 $0$ 이 되어 첫 나눗셈에서 실패한다. 로그 영역 구현은 그 영역에서 선택이 아니라 필수다.
 

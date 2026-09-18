@@ -110,56 +110,7 @@ $$
 
 국소 $L$ 인자가 텐서곱 행렬의 특성다항식인 이유가 Cauchy 항등식이다. 자기동형 쪽 적분과 Galois 쪽 $L$ 인자가 같은 수가 되는 다리가 조합론적 항등식 하나다.
 
-```python
-from cmath import exp, pi
-
-def det(M):
-    """가우스 소거로 행렬식"""
-    n = len(M); M = [row[:] for row in M]; d = 1
-    for i in range(n):
-        p = max(range(i, n), key=lambda r: abs(M[r][i]))
-        if abs(M[p][i]) < 1e-14: return 0
-        if p != i: M[i], M[p] = M[p], M[i]; d = -d
-        d *= M[i][i]
-        for r in range(i+1, n):
-            f = M[r][i]/M[i][i]
-            for c in range(i, n): M[r][c] -= f*M[i][c]
-    return d
-
-def schur(lam, x):
-    """bialternant 정의: s_lam(x) = det(x_i^{lam_j+n-j}) / det(x_i^{n-j})"""
-    n = len(x); lam = list(lam) + [0]*(n - len(lam))
-    num = [[x[i]**(lam[j]+n-1-j) for j in range(n)] for i in range(n)]
-    den = [[x[i]**(n-1-j)        for j in range(n)] for i in range(n)]
-    return det(num)/det(den)
-
-def partitions(N, n):
-    """길이 <= n, 크기 <= N 인 분할 전부"""
-    out = []
-    def rec(pre, rem, mx):
-        out.append(tuple(pre))
-        if len(pre) == n: return
-        for v in range(1, min(rem, mx)+1): rec(pre+[v], rem-v, v)
-    rec([], N, N)
-    return out
-
-for n in [2, 3]:
-    # |alpha_i| = |beta_j| = 1 : 온도적 (Ramanujan 을 만족하는) Satake 매개변수
-    a = [exp(2j*pi*(0.317*k + 0.11*k*k)) for k in range(1, n+1)]
-    b = [exp(2j*pi*(0.211*k + 0.07*k))   for k in range(1, n+1)]
-    for t in [0.1, 0.3]:                       # t = q^{-s}
-        prod = 1.0
-        for x in a:
-            for y in b: prod /= (1 - x*y*t)
-        for N in [6, 12, 20]:                  # |lambda| <= N 까지만 더한다
-            s = sum(t**sum(lam) * schur(lam, a) * schur(lam, b)
-                    for lam in partitions(N, n))
-            print(f"n={n}  t={t}  |lam|<={N:2d}:  차이 {abs(s-prod):.1e}")
-```
-
-왼쪽은 분할마다 행렬식 두 개를 쓰고 오른쪽은 $n^2$ 개의 일차 인자를 곱한다. $n=3$ , $N=20$ 에서 왼쪽은 분할 수백 개의 합이고 오른쪽은 인자 아홉 개의 곱인데 소수점 열다섯 자리까지 같다.
-
-$t$ 가 작을수록, 곧 $\mathrm{Re}(s)$ 가 클수록 수렴이 빠르다. $t=0.1$ 에서는 $|\lambda|\le12$ 로 기계정밀도에 닿고 $t=0.3$ 에서는 $|\lambda|\le20$ 이 필요하다. Rankin–Selberg 적분이 $\mathrm{Re}(s)$ 가 클 때만 수렴하고 나머지 영역을 해석적 접속으로 얻는 사정의 산술적 그림자다.
+$t$ 가 작을수록, 곧 $\mathrm{Re}(s)$ 가 클수록 수렴이 빠르다. Rankin–Selberg 적분이 $\mathrm{Re}(s)$ 가 클 때만 수렴하고 나머지 영역을 해석적 접속으로 얻는 사정의 산술적 그림자다.
 
 ## 일반화의 범위
 

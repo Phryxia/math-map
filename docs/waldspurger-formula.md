@@ -130,7 +130,7 @@ console.log(quaternionFromSigns({ inf: -1, 2: 1, 3: 1, 5: 1 }))
 // { ramified: [ 'inf' ], exists: false, globalSign: -1 }
 ```
 
-`exists` 와 `globalSign === 1` 이 언제나 같은 값을 갖는다는 것이 Waldspurger 정리의 뼈대다. 표현론이 주기를 담을 그릇을 마련하지 못하는 상황과 해석이 중심값을 0 으로 만드는 상황을 하나의 부호가 통제한다.
+`exists` 와 `globalSign === 1` 이 언제나 같은 값을 갖는다는 것이 Waldspurger 정리의 요지다. 표현론이 주기를 담을 그릇을 마련하지 못하는 상황과 해석이 중심값을 0 으로 만드는 상황을 하나의 부호가 통제한다.
 
 ## 두 정리의 분업
 

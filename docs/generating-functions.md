@@ -161,30 +161,6 @@ $$
 \frac{1}{(1-x)(1-x^{5})(1-x^{10})(1-x^{25})}
 $$
 
-```python
-def coin_ways(amount, coins):
-    """생성함수 곱을 계수 배열 위에서 직접 수행한다."""
-    ways = [1] + [0] * amount
-    for c in coins:                      # 1/(1 - x^c)를 차례로 곱한다
-        for n in range(c, amount + 1):
-            ways[n] += ways[n - c]
-    return ways[amount]
-
-assert coin_ways(100, [1, 5, 10, 25]) == 242
-
-def partitions(n):
-    """p(n): 부분 크기 k에 대한 1/(1 - x^k)의 곱"""
-    p = [1] + [0] * n
-    for k in range(1, n + 1):
-        for m in range(k, n + 1):
-            p[m] += p[m - k]
-    return p[n]
-
-assert [partitions(n) for n in range(10)] == [1, 1, 2, 3, 5, 7, 11, 15, 22, 30]
-```
-
-안쪽 루프가 오름차순인 것이 곱셈의 정확한 구현이다. 내림차순으로 바꾸면 각 부분을 한 번씩만 쓰는(서로 다른 부분) 문제가 된다.
-
 ## 다른 분야와의 연결
 
 확률에서 확률생성함수와 적률생성함수는 같은 장치이며, 독립 확률변수의 합이 생성함수의 곱이 되는 성질이 [중심극한정리](central-limit-theorem.md)류 논증의 출발점이다. [Markov chain](markov-chains.md)의 첫 도달 시간 분포도 생성함수로 푼다. [이산 Fourier 변환](fourier.md)은 유한 수열에 대한 생성함수를 단위근에서 평가한 것이고, 이 관점에서 합성곱 정리와 급수의 곱이 같은 사실이다. Analytic Combinatorics는 구조의 재귀적 문법에서 생성함수를 기계적으로 유도하고 특이점으로 점근을 읽는 체계적 방법론이다[^2].

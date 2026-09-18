@@ -105,24 +105,6 @@ $$
 
 증명은 $\lbrace(g,x) : g \cdot x = x\rbrace$ 를 두 방향으로 세는 것이다. $x$ 로 먼저 세면 $\sum |\mathrm{Stab}(x)|$ 이고 궤도-안정자 정리로 정리된다. 계산에서는 각 대칭이 고정하는 배치의 개수만 세면 된다.
 
-```python
-from itertools import product
-
-def count_orbits(colors, n):
-    """길이 n 목걸이를 colors 가지 색으로 칠한 배치를 회전군으로 나눈 궤도 수."""
-    beads = list(product(range(colors), repeat=n))
-    total = 0
-    for r in range(n):                       # r 칸 회전
-        fixed = sum(1 for b in beads if all(b[i] == b[(i + r) % n]
-                                            for i in range(n)))
-        total += fixed
-    return total // n
-
-
-print(count_orbits(2, 4))   # 6
-print(count_orbits(3, 3))   # 11
-```
-
 $2$ 색 $4$ 구슬은 배치가 $16$ 개이고 궤도가 $6$ 개다. $16/4=4$ 가 아니므로 단순한 나눗셈은 틀린 값을 준다.
 
 # 활용

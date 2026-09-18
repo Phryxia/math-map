@@ -74,25 +74,6 @@ $$
 
 $m=\ell+1$ 과 $a_\ell$ 이 모두 $p$ 로 나뉘는 소수 $\ell$ 이 **Kolyvagin 소수**이며, 두 조건은 위 항등식의 두 항에 대응한다.
 
-```python
-# (sigma - 1) D = m - N  in Z[G]/(sigma^m - 1)
-def check(m):
-    D = [0] * m                       # D = sum_{i=1}^{m-1} i sigma^i
-    for i in range(1, m):
-        D[i] = i
-
-    out = [0] * m                     # (sigma - 1) D
-    for i in range(m):
-        out[(i + 1) % m] += D[i]
-        out[i] -= D[i]
-
-    want = [-1] * m                   # m - N,  N = sum_j sigma^j
-    want[0] += m
-    return out == want
-
-assert all(check(m) for m in range(2, 50))
-```
-
 ## 이름의 유래
 
 자취 관계에 나타나는 계수의 일반적인 형태는
@@ -225,7 +206,7 @@ $$
 
 이다.
 
-**증명의 뼈대.** $s\in \mathrm{Sel}^p(E/K)$ 가 $\kappa_1$ 이 생성하는 부분군 밖에 있다고 하자. Chebotarev 로 Kolyvagin 소수 $\ell$ 을 골라 $\mathrm{loc}\_\ell(s)\ne0$ 이면서 $\mathrm{loc}\_\ell^{\thinspace f}(\kappa_1)\ne0$ 이 되게 한다. 상호법칙을 $c=\kappa_\ell$ 과 $s$ 에 적용하면 $\ell$ 을 뺀 모든 자리에서 두 류가 서로 소멸자에 놓이므로 항이 죽고
+**증명의 요지.** $s\in \mathrm{Sel}^p(E/K)$ 가 $\kappa_1$ 이 생성하는 부분군 밖에 있다고 하자. Chebotarev 로 Kolyvagin 소수 $\ell$ 을 골라 $\mathrm{loc}\_\ell(s)\ne0$ 이면서 $\mathrm{loc}\_\ell^{\thinspace f}(\kappa_1)\ne0$ 이 되게 한다. 상호법칙을 $c=\kappa_\ell$ 과 $s$ 에 적용하면 $\ell$ 을 뺀 모든 자리에서 두 류가 서로 소멸자에 놓이므로 항이 죽고
 
 $$
 \big\langle \mathrm{loc}_\ell^{\thinspace s}(\kappa_\ell),\ \mathrm{loc}_\ell^{\thinspace f}(s)\big\rangle_\ell=0

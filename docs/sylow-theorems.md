@@ -62,7 +62,7 @@ $$
 
 # 성질
 
-## 증명의 뼈대
+## 증명의 요지
 
 세 정리는 모두 같은 재료로 증명된다.
 
@@ -142,40 +142,9 @@ $$
 
 # 활용
 
-## 위수별 Sylow 수 계산
+## 위수별 Sylow 수
 
-두 조건만으로 후보를 좁히는 계산은 짧은 코드로 자동화된다.
-
-```python
-from sympy import factorint, divisors
-
-def sylow_counts(n):
-    """위수 n 인 군에서 각 소수 p 에 대해 가능한 n_p 후보"""
-    out = {}
-    for p, e in factorint(n).items():
-        m = n // p**e                       # p 와 서로소인 부분
-        out[p] = [d for d in divisors(m) if d % p == 1]
-    return out
-
-def forced_normal(n):
-    """어떤 p 에 대해 n_p = 1 만 가능하면 그 p 를 모은다"""
-    return [p for p, cands in sylow_counts(n).items() if cands == [1]]
-
-for n in [15, 20, 30, 100, 255]:
-    print(n, sylow_counts(n), "-> 정규 Sylow:", forced_normal(n))
-```
-
-결과는 다음과 같다.
-
-```text
-15 {3: [1], 5: [1]} -> 정규 Sylow: [3, 5]
-20 {2: [1, 5], 5: [1]} -> 정규 Sylow: [5]
-30 {2: [1, 3, 5, 15], 3: [1, 10], 5: [1, 6]} -> 정규 Sylow: []
-100 {2: [1, 5, 25], 5: [1]} -> 정규 Sylow: [5]
-255 {3: [1, 85], 5: [1, 51], 17: [1]} -> 정규 Sylow: [17]
-```
-
-위수 30 처럼 산술 조건만으로 부족하면 앞 절의 원소 세기를 덧붙이고, 위수 255 처럼 한 줄로 정규부분군이 나오는 경우도 있다.
+$n_p\equiv1\pmod p$ 와 $n_p\mid m$ 두 조건만으로 위수 15 에서는 $n_3=n_5=1$ , 위수 20 과 100 에서는 $n_5=1$ , 위수 255 에서는 $n_{17}=1$ 이 나와 정규 Sylow 부분군이 있다. 위수 30 에서는 $n_2\in\lbrace1,3,5,15\rbrace$ , $n_3\in\lbrace1,10\rbrace$ , $n_5\in\lbrace1,6\rbrace$ 으로 산술 조건만으로는 부족하다.
 
 ## 유한군의 구조 분석
 

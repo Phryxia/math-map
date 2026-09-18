@@ -177,26 +177,6 @@ $t>0$ 이면 계수가 지수적으로 죽으므로 해는 즉시 무한히 매�
 
 사각파의 Fourier 급수는 홀수 차수 sin 항만 남는다. 부분합은 불연속점 근처에서 Gibbs 오버슈트를 보인다.
 
-```python
-import numpy as np
-
-x = np.linspace(-np.pi, np.pi, 20001)
-square = np.where(x >= 0, 1.0, -1.0)
-
-def partial_sum(N):
-    # 사각파의 Fourier 급수: (4/pi) * sum_{k odd} sin(kx)/k
-    s = np.zeros_like(x)
-    for k in range(1, N + 1, 2):
-        s += np.sin(k * x) / k
-    return 4.0 / np.pi * s
-
-for N in (5, 25, 101, 501):
-    s = partial_sum(N)
-    l2 = np.sqrt(np.mean((s - square) ** 2))
-    overshoot = s.max() - 1.0          # 도약 크기 2에 대한 절대 초과분
-    print(N, "L2 오차", round(l2, 4), "오버슈트", round(overshoot, 4))
-```
-
 $L^2$ 오차는 0으로 가지만 오버슈트는 약 0.179에 머문다. 도약 크기 2로 나누면 앞의 상수 0.0895가 나온다.
 
 ## 다른 방향으로의 확장

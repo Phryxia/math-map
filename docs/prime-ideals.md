@@ -75,41 +75,6 @@ $$
 
 $\mathbb{Z}$ 에서는 $(0)$ 을 빼면 소와 극대가 일치하고 Krull 차원이 $1$ 이다. $k[x,y]$ 에는 $(0) \subsetneq (x) \subsetneq (x,y)$ 라는 길이 $2$ 의 사슬이 있어 차원이 $2$ 다.
 
-```python
-from itertools import product
-
-def ideal_zn(n, gen):
-    from math import gcd
-    g = gcd(n, gen % n)
-    return {k * g % n for k in range(n // g)} if g else {0}
-
-def is_prime_ideal(n, gen):
-    I = ideal_zn(n, gen)
-    if I == set(range(n)):
-        return False                      # 진아이디얼이 아님
-    return all(not (a * b % n in I and a % n not in I and b % n not in I)
-               for a, b in product(range(n), repeat=2))
-
-def is_maximal_ideal(n, gen):
-    I = ideal_zn(n, gen)
-    if I == set(range(n)):
-        return False
-    bigger = [ideal_zn(n, g) for g in range(n)]
-    return not any(I < J < set(range(n)) for J in bigger)
-
-
-n = 12
-seen = set()
-for g in range(n):
-    I = frozenset(ideal_zn(n, g))
-    if I in seen:
-        continue                          # (9) = (3), (10) = (2) 처럼 같은 아이디얼
-    seen.add(I)
-    p, m = is_prime_ideal(n, g), is_maximal_ideal(n, g)
-    if p or m:
-        print(f"({g}) = {sorted(I)}  소={p} 극대={m}")
-```
-
 $\mathbb{Z}/12\mathbb{Z}$ 에서 소이면서 극대인 아이디얼은 $(2)$ 와 $(3)$ 뿐이고, $12$ 의 소인수에 대응한다. 대응 정리에 따라 이들은 $\mathbb{Z}$ 의 $(2), (3)$ 에서 내려온 것이다.
 
 ## 존재 정리

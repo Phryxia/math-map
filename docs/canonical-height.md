@@ -50,31 +50,6 @@ $$
 
 37a1 곡선 $y^2+y=x^3-x$ 와 그 생성원 $P=(0,0)$ 에서 수렴을 볼 수 있다.
 
-```python
-from fractions import Fraction as F
-from math import log
-
-def dbl(P):
-    """y^2 + y = x^3 - x 위의 배가"""
-    x, y = P
-    lam = (3*x*x - 1) / (2*y + 1)
-    nu  = (-x**3 - x - y) / (2*y + 1)
-    x3 = lam*lam - 2*x
-    y3 = -lam*x3 - nu - 1
-    return (x3, y3)
-
-def naive_h(P):
-    x = P[0]
-    return log(max(abs(x.numerator), abs(x.denominator)))
-
-P = (F(0), F(0))
-print(' n      2^n P 의 x 좌표 자릿수      h/4^n')
-for n in range(0, 9):
-    d = len(str(P[0].numerator)) + len(str(P[0].denominator))
-    print(f'{n:2d}   {d:8d}   {naive_h(P)/4**n:.10f}')
-    P = dbl(P)
-```
-
 값은 $\hat h(P)=0.05111140\ldots$ 로 수렴한다. $x$ 좌표의 크기가 매번 네 배로 늘어 $n=8$ 에서 삼천 자리를 넘는다. 정확도는 $4^{-n}$ 로 좋아지고 비용은 $4^n$ 으로 늘어나므로 실제 계산에는 쓰지 않는다.
 
 ## 하강의 종료

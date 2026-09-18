@@ -124,61 +124,7 @@ $$
 
 ## 이상치와 유효 사거리
 
-원점 근처에 모인 두 분포에 멀리 떨어진 점 하나를 더하면, 균형 문제는 그 점의 질량 $0.2$ 를 거리 $10$ 가까이 옮겨야 해 비용이 그 하나로 결정된다.
-
-```python
-import math
-
-xs = [0.0, 0.1, 0.2, 0.3, 0.4]                    # 두 분포 모두 원점 근처
-ys = [0.05, 0.15, 0.25, 0.35, 10.0]               # 마지막 하나만 멀리 떨어진 이상치
-n, m = len(xs), len(ys)
-a = [1 / n] * n
-b = [0.2] * m                                     # 이상치에도 0.2 의 질량
-C = [[(x - y) ** 2 for y in ys] for x in xs]
-
-def lse(v):
-    M = max(v)
-    return M + math.log(sum(math.exp(t - M) for t in v))
-
-def uot(eps, tau, iters=20000):
-    """불균형 Sinkhorn. lam = tau/(tau+eps) = 1 이면 균형 문제."""
-    lam = 1.0 if tau == math.inf else tau / (tau + eps)
-    f, g = [0.0] * n, [0.0] * m
-    for _ in range(iters):
-        f = [-lam * eps * lse([math.log(b[j]) + (g[j] - C[i][j]) / eps for j in range(m)])
-             for i in range(n)]
-        g = [-lam * eps * lse([math.log(a[i]) + (f[i] - C[i][j]) / eps for i in range(n)])
-             for j in range(m)]
-    P = [[a[i] * b[j] * math.exp((f[i] + g[j] - C[i][j]) / eps) for j in range(m)]
-         for i in range(n)]
-    return P
-
-def report(name, P):
-    mass = sum(sum(r) for r in P)
-    to_out = sum(P[i][m - 1] for i in range(n))
-    cost = sum(P[i][j] * C[i][j] for i in range(n) for j in range(m))
-    row = max(abs(sum(P[i]) - a[i]) for i in range(n))
-    print(f"{name:>12} {mass:>10.6f} {to_out:>12.6f} {cost:>12.6f} {row:>12.2e}")
-
-eps = 0.01
-print(f"{'τ':>12} {'총 질량':>10} {'이상치로 간 질량':>12} {'수송 비용':>12} {'행 제약 위반':>12}")
-report("∞ (균형)", uot(eps, math.inf))
-for tau in (1000.0, 100.0, 10.0, 1.0, 0.1, 0.01):
-    report(f"{tau}", uot(eps, tau))
-
-#            τ       총 질량    이상치로 간 질량        수송 비용      행 제약 위반
-#       ∞ (균형)   1.000000     0.200000    18.437080     8.01e-06
-#       1000.0   0.985271     0.182921    16.862842     2.95e-03
-#        100.0   0.936703     0.084743     7.814106     1.27e-02
-#         10.0   0.893884     0.000022     0.006399     2.13e-02
-#          1.0   0.888929     0.000000     0.004295     2.31e-02
-#          0.1   0.843488     0.000000     0.003979     3.86e-02
-#         0.01   0.598772     0.000000     0.002683     1.04e-01
-```
-
-균형 해의 수송 비용 $18.44$ 는 거의 전부 이상치에서 온다. $0.2\times10^2=20$ 에 가까운 값이고 나머지 네 점의 기여는 $10^{-3}$ 규모다.
-
-$\tau=10$ 에서는 이상치로 가는 질량이 $2\times10^{-5}$ 로 떨어지고 비용이 $0.0064$ 가 되며, 대가로 총질량이 $0.89$ 로 줄어 질량의 11 퍼센트를 버린다. 유효 사거리 $\sqrt{2\tau}\approx4.5$ 가 $10$ 보다 작다는 계산과 맞는다. $\tau=1000$ 에서는 이상치로 간 질량이 $0.183$ 으로 균형값 $0.2$ 에 가깝고, $\tau=0.01$ 에서는 총질량이 $0.6$ 으로 떨어져 $\tau\to0$ 극한에 들어선다.
+원점 근처에 모인 두 분포에 멀리 떨어진 점 하나를 더하면 균형 문제는 그 점의 질량을 끝까지 옮겨야 하므로 수송 비용이 거의 전부 이상치에서 온다. $\tau$ 를 유한하게 두면 이상치로 가는 질량이 사라지는 대신 총질량이 줄어든다. 유효 사거리 $\sqrt{2\tau}$ 가 이상치까지의 거리보다 작으면 그 질량은 버려진다.
 
 ## 쓰이는 자리
 
