@@ -95,35 +95,12 @@ $$
 |d(x,z)-d(y,z)|\le d(x,y)
 $$
 
-삼각부등식을 양방향으로 적용해 얻는다. $d(\cdot, z)$ 는 Lipschitz 상수 $1$ 인 연속함수이고, 가장 가까운 점까지의 거리가 연속이라는 사실이 컴팩트 집합 위에서 최솟값의 달성을 보이는 논법에 쓰인다.
+삼각부등식을 양방향으로 적용해 얻는다. $d(\cdot, z)$ 는 Lipschitz 상수 $1$ 인 연속함수이고, 가장 가까운 점까지의 거리가 연속이므로 컴팩트 집합 위에서 최솟값이 달성된다.
 
 ## 수열 판정법
 
 거리 공간에서 집합 $A$ 의 폐포는 $A$ 의 점들로 이루어진 수렴 수열의 극한 전체와 일치하고, 연속성도 수렴 수열을 수렴 수열로 보낸다는 것과 동치다. 일반 위상공간에서는 성립하지 않아 그물이나 필터가 필요하다.
 
-```python
-def is_metric(points, d, eps=1e-12):
-    """유한 집합 위에서 네 조건을 전수 검사한다."""
-    for x in points:
-        if abs(d(x, x)) > eps:
-            return False
-        for y in points:
-            if d(x, y) < -eps:
-                return False
-            if d(x, y) <= eps and x != y:
-                return False
-            if abs(d(x, y) - d(y, x)) > eps:
-                return False
-            for z in points:
-                if d(x, z) > d(x, y) + d(y, z) + eps:
-                    return False
-    return True
-
-
-pts = [0.0, 1.0, 2.0]
-print(is_metric(pts, lambda a, b: abs(a - b)))        # True
-print(is_metric(pts, lambda a, b: (a - b) ** 2))      # False: 삼각부등식
-```
 
 ## 완비성
 

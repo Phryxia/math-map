@@ -2,41 +2,49 @@
 
 # 개요
 
-Lagrange 쌍대성은 제약 최적화 문제를 제약 없는 문제의 족으로 바꿔 보는 방법이다. 각 제약에 승수(multiplier)를 곱해 목적함수에 더한 Lagrangian을 만들고, 변수에 대해 최소화하면 원 문제 최적값의 하한을 주는 함수(dual function)가 나온다. 가장 좋은 하한을 찾는 문제가 dual problem이며, 이것은 원 문제가 볼록하지 않아도 항상 볼록(concave 함수의 최대화)이다. 볼록 문제에서 Slater 조건 같은 정칙성이 성립하면 두 최적값이 일치하고(강쌍대성), 미분가능한 경우 최적성은 KKT 조건이라는 유한한 등식·부등식계로 완전히 특징지어진다. 이는 [선형계획법](linear-programming.md)의 duality를 일반 볼록 문제로 확장한 것이다.
+Lagrange 쌍대성은 제약 최적화 문제를 제약 없는 문제의 족으로 바꾸는 방법이다. 각 제약에 승수를 곱해 목적함수에 더한 Lagrangian 을 변수에 대해 최소화하면 원 문제 최적값의 하한을 주는 쌍대함수가 나온다. 가장 큰 하한을 찾는 쌍대 문제는 원 문제가 볼록하지 않아도 볼록 문제다.
+
+[볼록](convexity.md) 문제가 Slater 조건을 만족하면 원 문제와 쌍대 문제의 최적값이 같다. 함수가 [미분가능](derivative.md)하면 최적성이 KKT 조건이라는 유한한 등식·부등식계로 특징지어진다. [선형계획법](linear-programming.md)의 쌍대성을 일반 볼록 문제로 넓힌 것이다.
 
 # 직관
 
-제약을 "위반하면 벌금을 내는 것"으로 바꿔 생각한다. 승수는 벌금 단가다. 단가를 아무렇게 정해도, 실행가능한 점은 벌금이 0 이하이므로 Lagrangian의 최솟값은 원 문제 최적값을 넘지 못한다. 그래서 임의의 승수는 하한을 주고, 벌금 단가를 잘 조절하면 하한이 올라간다. 볼록성과 정칙성이 있으면 정확히 최적값까지 올라가고, 최적 단가는 제약을 한 단위 완화했을 때의 최적값 개선률(shadow price)로 해석된다.
+제약을 위반하면 승수를 단가로 벌금을 매긴다고 두면, 허용해에서는 벌금이 $0$ 이하이므로 Lagrangian 의 최솟값이 원 문제의 최적값을 넘지 못한다. 그래서 어떤 승수든 하한을 주고, 승수를 조절하면 하한이 올라간다. 볼록성과 Slater 조건 아래에서는 하한이 최적값까지 올라가고, 최적 승수는 제약을 한 단위 완화했을 때 최적값이 개선되는 비율이다.
 
-KKT 조건은 최적점에서 목적함수의 기울기가 "활성 제약들의 기울기가 만드는 원뿔" 안에 있다는 기하적 서술이다. 그렇지 않다면 모든 제약을 지키면서 목적함수를 줄이는 방향이 남아 있다.
+KKT 조건은 최적점에서 목적함수의 기울기가 활성 제약의 기울기들이 만드는 원뿔 안에 있다는 조건이다. 원뿔 밖에 있으면 모든 제약을 지키면서 목적함수를 줄이는 방향이 남는다.
 
 # 정의
 
-$n$ 차원 변수 $x$ 에 대한 문제를 다음 형태로 둔다. $f$ , $g_i$ , $h_j$ 는 실함수다.
+## Lagrangian 과 쌍대함수
+
+실함수 $f$ , $g_i$ , $h_j$ 에 대한 제약 최적화 문제를 다음 형태로 둔다.
 
 $$
 \min_{x}\ f(x)\quad\text{subject to}\quad g_i(x)\le 0\ (i=1,\dots,m),\quad h_j(x)=0\ (j=1,\dots,r)
 $$
 
-이 문제의 최적값을 $p$ 로 쓴다. Lagrangian은 승수 $\lambda$ (부등식용, $m$ 차원)와 $\nu$ (등식용, $r$ 차원)를 붙인 함수다.
+최적값을 $p$ 로 쓴다. **Lagrangian** 은 승수 $\lambda\in\mathbb{R}^m$ 과 $\nu\in\mathbb{R}^r$ 를 제약에 붙인 함수다.
 
 $$
 L(x,\lambda,\nu)=f(x)+\sum_{i=1}^{m}\lambda_i g_i(x)+\sum_{j=1}^{r}\nu_j h_j(x)
 $$
 
-dual function은 $x$ 에 대한 하한이다.
+**쌍대함수**는 Lagrangian 의 $x$ 에 대한 하한이다.
 
 $$
 q(\lambda,\nu)=\inf_{x}\ L(x,\lambda,\nu)
 $$
 
-dual problem은 이 하한을 최대화한다. 최적값을 $d$ 로 쓴다.
+**쌍대 문제**는 쌍대함수를 최대화하는 문제이고 최적값을 $d$ 로 쓴다.
 
 $$
 d=\max_{\lambda\ge 0,\ \nu}\ q(\lambda,\nu)
 $$
 
-문제가 볼록이라는 것은 $f$ 와 모든 $g_i$ 가 [볼록](convexity.md)이고 $h_j$ 가 affine이라는 뜻이다. Slater 조건은 강실행가능점이 존재한다는 조건이다. 즉 어떤 $x$ 가 있어 affine이 아닌 모든 부등식 제약을 강한 부등호로 만족한다.
+$p-d$ 가 **쌍대성 간극**이다.
+
+## 볼록 문제와 Slater 조건
+
+문제가 **볼록**인 것은 $f$ 와 모든 $g_i$ 가 볼록함수이고 모든 $h_j$ 가 아핀인 것이다. **Slater 조건**은 아핀이 아닌 부등식 제약을 전부 강한 부등호로 만족하는 허용해가 있다는 조건이다.
 
 $$
 \exists\thinspace \tilde{x}:\quad g_i(\tilde{x})<0\ (\forall i),\quad h_j(\tilde{x})=0\ (\forall j)
@@ -44,29 +52,27 @@ $$
 
 # 성질
 
-## dual function은 항상 concave
+## 쌍대함수의 오목성
 
-$q$ 는 각 $(\lambda,\nu)$ 에 대해 affine 함수들의 pointwise infimum이다. affine 함수족의 하한은 concave이므로 $q$ 는 $f$ , $g$ , $h$ 의 성질과 무관하게 concave이고 정의역도 볼록이다. 따라서 dual problem은 언제나 볼록 최적화 문제다.
+$q$ 는 $(\lambda,\nu)$ 의 아핀함수들의 점별 하한이므로 $f$ , $g$ , $h$ 의 성질과 무관하게 오목함수다. 정의역도 볼록집합이므로 쌍대 문제는 언제나 볼록 최적화 문제다.
 
 ## 약쌍대성
 
-임의의 $\lambda\ge 0$ 과 임의의 $\nu$ 에 대해 다음이 성립하고, 따라서 $d\le p$ 다.
+임의의 $\lambda\ge 0$ 과 $\nu$ 에 대해 $q(\lambda,\nu)\le p$ 이고, 따라서 $d\le p$ 다.[^1]
 
-$$
-q(\lambda,\nu)\le p
-$$
+*증명.* 허용해 $x$ 에서 $g_i(x)\le 0$ , $\lambda_i\ge 0$ 이므로 $\lambda_i g_i(x)\le0$ 이고 $h_j(x)=0$ 이므로 $\nu$ 항은 사라져 $L(x,\lambda,\nu)\le f(x)$ 다. 좌변을 전체 공간에서 $x$ 에 대해 하한으로 바꾸면 $q(\lambda,\nu)\le f(x)$ 이고, 허용해 전체에서 최소화하면 $q(\lambda,\nu)\le p$ 다.
 
-증명: $x$ 가 실행가능하면 $g_i(x)\le 0$ , $\lambda_i\ge 0$ 이므로 각 항 $\lambda_i g_i(x)$ 는 $0$ 이하이고 $h_j(x)=0$ 이므로 $\nu$ 항은 사라진다. 따라서 $L(x,\lambda,\nu)\le f(x)$ 이다. 좌변을 $x$ 에 대해 전체 공간에서 inf로 바꾸면 더 작아지므로 $q(\lambda,\nu)\le f(x)$ 이고, 실행가능한 $x$ 전체에 대해 최소화하면 $q(\lambda,\nu)\le p$ 다[^1]. 이 부등식은 볼록성을 전혀 쓰지 않으므로 비볼록 문제에서도 유효하며, Lagrangian relaxation으로 하한을 얻는 근거가 된다.
+볼록성을 쓰지 않으므로 비볼록 문제에서도 성립한다. 비볼록 문제에서는 간극이 양수일 수 있다.
 
-$p-d$ 를 duality gap이라 한다. 비볼록 문제에서는 gap이 양수일 수 있다.
+## 강쌍대성
 
-## 강쌍대성과 Slater 조건
+볼록 문제가 Slater 조건을 만족하면 $p=d$ 이고, $p$ 가 유한하면 쌍대 최적해가 달성된다.[^2]
 
-볼록 문제가 Slater 조건을 만족하면 $p=d$ 이고, $p$ 가 유한하면 dual 최적해가 달성된다[^2]. 증명 개요는 값 함수(perturbation function)의 subgradient 존재, 또는 $(g(x),f(x))$ 꼴의 점들이 만드는 볼록집합과 점 $(0,p)$ 를 분리하는 초평면의 존재에서 나온다. Slater 조건은 그 분리 초평면이 수직(즉 $f$ 좌표의 계수가 $0$ 인 퇴화 형태)이 되지 않도록 막는 역할을 한다. LP는 부등식이 모두 affine이므로 실행가능성만으로 강쌍대성을 갖는다.
+*증명의 요지.* $(g(x),f(x))$ 꼴의 점들이 만드는 볼록집합과 점 $(0,p)$ 를 분리하는 초평면이 존재한다. Slater 조건은 이 초평면이 수직, 곧 $f$ 좌표의 계수가 $0$ 인 퇴화 형태가 되지 못하게 막는다. 초평면의 법선이 최적 승수다. 선형계획 문제는 제약이 모두 아핀이므로 허용해의 존재만으로 강쌍대성을 갖는다.
 
 ## KKT 조건
 
-$f$ , $g_i$ , $h_j$ 가 [미분가능](derivative.md)할 때, 다음을 KKT 조건이라 한다.
+$f$ , $g_i$ , $h_j$ 가 미분가능할 때 **KKT 조건**은 다음 등식·부등식계다.
 
 $$
 \nabla f(x^\star)+\sum_{i=1}^{m}\lambda_i^\star\nabla g_i(x^\star)+\sum_{j=1}^{r}\nu_j^\star\nabla h_j(x^\star)=0
@@ -76,42 +82,36 @@ $$
 g_i(x^\star)\le 0,\quad h_j(x^\star)=0,\quad \lambda_i^\star\ge 0,\quad \lambda_i^\star g_i(x^\star)=0
 $$
 
-네 종류의 조건은 차례로 stationarity, primal feasibility, dual feasibility, 상보 여유(complementary slackness)다. 두 방향의 결과를 구분해야 한다.
+첫 식이 정상성, 둘째 줄의 네 조건이 차례로 원 문제 허용성, 쌍대 허용성, 상보 여유다.
 
-- 필요성: 강쌍대성이 성립하고 primal·dual 최적해가 달성되면, 볼록이 아니어도 미분가능한 문제의 최적해는 KKT 조건을 만족한다. 실제로 최적 $x$ 는 $L(\cdot,\lambda,\nu)$ 를 최소화하므로 기울기가 $0$ 이고, 목적값과 dual 값이 같다는 등식에서 $\lambda_i g_i$ 의 합이 $0$ 이며 각 항이 $0$ 이하이므로 모두 $0$ 이다.
-- 충분성: 문제가 볼록이면 KKT 조건을 만족하는 조합은 곧 primal·dual 최적해 쌍이고 gap이 $0$ 이다. 볼록성으로 $L(\cdot,\lambda,\nu)$ 가 볼록이므로 stationarity가 전역 최소를 뜻하고, 상보 여유로 dual 값이 목적값과 같아진다.
+- 필요성. 강쌍대성이 성립하고 양쪽 최적해가 달성되면, 볼록이 아니어도 최적해는 KKT 조건을 만족한다. 최적 $x^\star$ 는 $L(\cdot,\lambda^\star,\nu^\star)$ 를 최소화하므로 기울기가 $0$ 이고, $p=d$ 에서 $\sum_i\lambda_i^\star g_i(x^\star)=0$ 인데 각 항이 $0$ 이하이므로 모두 $0$ 이다.
+- 충분성. 볼록 문제에서 KKT 조건을 만족하는 $(x^\star,\lambda^\star,\nu^\star)$ 는 원 문제와 쌍대 문제의 최적해 쌍이고 간극이 $0$ 이다. $L(\cdot,\lambda^\star,\nu^\star)$ 가 볼록함수이므로 정상성이 전역 최소를 뜻하고, 상보 여유로 쌍대 값이 목적값과 같아진다.
 
-따라서 Slater 조건을 만족하는 미분가능 볼록 문제에서 KKT 조건은 최적성의 필요충분조건이다[^2]. 비볼록 문제에서는 KKT 점이 최적해가 아닐 수 있고, 정칙성 조건(LICQ, MFCQ 등)이 없으면 최적해가 KKT 조건을 만족하지 않을 수도 있다.
+Slater 조건을 만족하는 미분가능 볼록 문제에서 KKT 조건은 최적성의 필요충분조건이다.[^2] 비볼록 문제에서는 KKT 점이 최적해가 아닐 수 있고, LICQ 나 MFCQ 같은 정칙성 조건이 없으면 최적해가 KKT 조건을 만족하지 않을 수 있다.
 
 # 활용
 
 ## 예제
 
 $$
-\min\ x_1^2+x_2^2\quad\text{s.t.}\quad 2-x_1-x_2\le 0
+\min\ x_1^2+x_2^2\quad\text{subject to}\quad 2-x_1-x_2\le 0
 $$
 
-Lagrangian은 다음과 같다.
-
-$$
-L(x,\lambda)=x_1^2+x_2^2+\lambda\thinspace(2-x_1-x_2)
-$$
-
-stationarity에서 $2x_1=\lambda$ , $2x_2=\lambda$ 이므로 $x=(\lambda/2,\lambda/2)$ 를 대입하면 dual function을 얻는다.
+Lagrangian 은 $L(x,\lambda)=x_1^2+x_2^2+\lambda\thinspace(2-x_1-x_2)$ 다. 정상성에서 $x=(\lambda/2,\lambda/2)$ 이고, 대입하면 쌍대함수는 다음이다.
 
 $$
 q(\lambda)=2\lambda-\frac{\lambda^2}{2}
 $$
 
-$\lambda\ge 0$ 에서 최대화하면 최적 승수는 $2$ , $d=2$ 다. 상보 여유는 승수가 양수일 때 제약이 tight함을 요구하므로 최적해는 $(1,1)$ 이고 $p=2$ 가 되어 gap이 $0$ 이다. Slater 조건은 예컨대 $(2,2)$ 로 확인된다.
+$\lambda\ge 0$ 에서 최대화하면 최적 승수는 $2$ , $d=2$ 다. 승수가 양수이므로 상보 여유에 따라 제약이 등식으로 성립하고, 최적해는 $(1,1)$ , $p=2$ 로 간극이 $0$ 이다. $(2,2)$ 가 Slater 조건의 허용해다.
 
 ## 쓰임
 
-- dual 문제가 primal보다 변수 수가 적거나 구조가 좋으면 dual을 풀어 primal을 복원한다. support vector machine의 kernel 형태가 대표적이다.
-- 부등식 제약 하의 해를 손으로 구할 때 KKT 조건이 표준 도구다. 예를 들어 통신 전력배분의 water-filling 해는 상보 여유를 풀어서 얻는다.
-- dual function은 임의의 승수에서 하한이므로, 정수계획 등 어려운 문제의 분기한정법에서 하한 생성기로 쓰인다.
-- [경사하강법](gradient-descent.md)과 결합해 dual 문제를 1차 방법으로 올리는 dual ascent, 그리고 augmented Lagrangian·ADMM 계열 알고리즘의 뼈대가 된다.
-- 최대엔트로피 추정처럼 [Shannon entropy](entropy.md)를 목적함수로 쓰는 문제에서도 승수는 물리적 단위를 갖는 가격으로 해석되며, 지수족 분포가 KKT 조건의 해로 나온다.
+- 쌍대 문제가 원 문제보다 변수가 적거나 구조가 좋으면 쌍대 문제를 풀어 원 문제의 해를 복원한다. support vector machine 의 kernel 형태가 그 예다.
+- 부등식 제약 아래의 해를 손으로 구할 때 KKT 조건을 푼다. 통신 전력배분의 water-filling 해는 상보 여유에서 나온다.
+- 쌍대함수는 임의의 승수에서 하한이므로 정수계획법의 분기한정법에서 하한을 만든다.
+- [경사하강법](gradient-descent.md)으로 쌍대 문제를 올리는 dual ascent 와 augmented Lagrangian, ADMM 계열 알고리즘의 뼈대다.
+- [Shannon entropy](entropy.md)를 최대화하는 최대엔트로피 추정에서 지수족 분포가 KKT 조건의 해로 나온다.
 
 [^1]: S. Boyd and L. Vandenberghe, Convex Optimization, Chapter 5 (Duality) 강의 슬라이드. https://web.mit.edu/~jadbabai/www/EE605/lectures/duality.pdf
 [^2]: Slater's condition, Wikipedia. https://en.wikipedia.org/wiki/Slater%27s_condition
@@ -127,4 +127,4 @@ $\lambda\ge 0$ 에서 최대화하면 최적 승수는 $2$ , $d=2$ 다. 상보 �
 
 - [최적 수송과 Wasserstein 거리](optimal-transport.md)
 
-#optimization
+#optimization #analysis
