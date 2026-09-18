@@ -212,4 +212,4 @@ $k \ge 3$ 고정에 대해 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 
 - [Lovász 세타 함수](lovasz-theta.md)
 
-#graph_theory
+#graph_theory #combinatorics #algorithms

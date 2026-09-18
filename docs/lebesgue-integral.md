@@ -135,4 +135,4 @@ $L^1(\mu)$ 는 $\lVert f \rVert_1 = \int \lvert f \rvert\thinspace d\mu$ 로 완
 - [Radon–Nikodym 정리](radon-nikodym.md)
 - [확률변수와 기댓값](random-variables.md)
 
-#measure_theory
+#measure_theory #analysis #probability
