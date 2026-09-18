@@ -191,4 +191,4 @@ $$
 - [가설검정과 p-값](hypothesis-testing.md)
 - [주성분 분석](principal-component-analysis.md)
 
-#probability
+#probability #measure_theory #information_theory

@@ -229,4 +229,4 @@ $$
 - [쌍곡 3 다양체와 Mostow 강직성](hyperbolic-3-manifolds.md)
 - [Teichmüller 공간과 곡면의 모듈라이](teichmuller-space.md)
 
-#differential_geometry
+#differential_geometry #optimization #statistics

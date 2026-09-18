@@ -127,4 +127,4 @@ $$
 
 - [Riemann 계량과 측지선](riemannian-metrics.md)
 
-#differential_geometry
+#differential_geometry #topology #computation

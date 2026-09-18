@@ -198,4 +198,4 @@ $$
 
 아직 연결한 문서가 없다.
 
-#probability
+#probability #algorithms #machine_learning

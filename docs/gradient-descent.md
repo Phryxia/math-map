@@ -152,4 +152,4 @@ $$
 
 - [변분 오토인코더](variational-autoencoder.md)
 
-#optimization
+#optimization #machine_learning #statistics
