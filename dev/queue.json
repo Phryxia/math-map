@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-09-18T01:16:56.915Z",
-  "nextSeq": 536,
+  "savedAt": "2026-09-18T05:00:59.553Z",
+  "nextSeq": 544,
   "items": [
     {
       "id": "b1e99223",
@@ -12,12 +12,12 @@
       "seq": 535
     },
     {
-      "id": "10c7846c",
-      "title": "인라인 수식 첨자 이스케이프 누락 419 건",
+      "id": "ddb64695",
+      "title": "markdown-it 없이 render-check 를 대신할 검수 절차 정리",
       "priority": 50,
-      "note": "2026-09-18 회차에 639 에서 419 로 줄였다(문서 15 개 처리: unbalanced-optimal-transport, lobachevsky-function, reidemeister-torsion, sea-algorithm, langlands-program, fields, finite-fields, p-adic-numbers, schur-weyl-duality, modular-forms, speh-representations, geometric-satake, arthur-parameters, painleve-equations, vogan-packets, geometric-langlands). render-check 는 계속 0 건이라 실제로 깨진 자리는 없다. 검사기와 치환기는 파이썬으로 다시 만들었다(/tmp/subcheck.py, /tmp/subfix.py, 스크래치패드에 남는다). 코드펜스, 인라인 코드, 여러 줄과 한 줄 $$ 블록을 마스킹하고 인라인 $...$ 조각만 뽑아 _ 앞 글자를 본다. 치환기는 줄 단위로 돌되 re.split 으로 인라인 코드를 떼어낸 뒤 짝수 조각에만 걸고, 한 줄에 $$ 가 있으면 건너뛴다. 치환 뒤에는 그 문서에 render-check 와 4절 awk(백슬래시+문장부호) 를 반드시 돌린다. 문서를 보강하는 회차마다 그 문서 것을 함께 고치고, 보강 없이 치환만 할 때도 헤딩 grep 과 mermaid 판정을 같이 돌린다. 남은 문서 상위: modular-tensor-categories 13, jacquet-langlands 13, maass-forms 12, local-class-field-theory 12, reshetikhin-turaev 11, gan-gross-prasad 11, waldspurger-formula 9, serre-conjecture 9",
-      "createdAt": "2026-09-18T01:00:00.406Z",
-      "seq": 533
+      "note": "2026-09-18 이 회차에 npm registry 가 503 을 계속 내 markdown-it 설치가 세 번 실패했다. render-check 와 dev/render-check.test.mjs 가 그래서 돌지 않았고 node --test 는 19 개 중 1 개 실패로 끝났다(실패는 markdown-it 부재 하나뿐). 우회로 4절의 awk 와 grep 네 개, 인라인 밑줄 검사기(스크래치패드 subcheck.mjs, 인라인 코드와 20425 블록을 마스킹하고 인라인 $...$ 안의 _ 앞 글자만 본다)를 돌렸다. 저장소에 markdown-it 을 vendor 로 넣을지, 아니면 registry 가 막힌 회차의 절차를 CLAUDE.md 1절에 더 적을지는 독자의 몫이다. dev/ 는 건드리지 않았다",
+      "createdAt": "2026-09-18T04:54:14.182Z",
+      "seq": 539
     },
     {
       "id": "6a493f99",
@@ -186,6 +186,22 @@
       "note": "2026-09-18 회차에 42 개를 모두 채워 0 이 되었다. 6절대로 활용 절에서 실제로 쓰거나 응용되는 분야만 근거로 삼고 첫 태그(주 분야)는 바꾸지 않았다. 첫 태그를 바꾸면 4.5절 개관 갈래의 소속이 달라지므로 그때는 개관도 함께 고쳐야 한다. 새 문서나 보강 문서가 태그 하나로 들어오는지 회차마다 다음으로 본다: for f in docs/*.md; do [ $(tail -1 $f | grep -o '#[a-z0-9_]*' | wc -l) -le 1 ] && echo $f; done. 태그 수는 35 개로 늘지 않았고 untagged 0 이다",
       "createdAt": "2026-09-18T00:55:42.864Z",
       "seq": 530
+    },
+    {
+      "id": "9a49667c",
+      "title": "순서 이론 개관을 만들지 검토",
+      "priority": 12,
+      "note": "2026-09-18 회차에 dilworth-theorem 을 만들어 #order_theory 주 분야 문서가 7 개가 되었다(partial-orders, lattices, galois-connections, boolean-algebras, heyting-algebras, domain-theory, dilworth-theorem 계열을 직접 세어 확인할 것). 4.5 절 기준인 10 개에 아직 못 미치므로 개관은 이르다. 다음 회차들에 Sperner 정리, 선형 확장과 poset 의 차원, Mobius 반전과 incidence algebra 를 더하면 10 개를 넘는다. 넘으면 order-theory-overview 를 만들고 README 지도의 갈래에 더한다",
+      "createdAt": "2026-09-18T04:56:32.656Z",
+      "seq": 540
+    },
+    {
+      "id": "da33e8c8",
+      "title": "4절 금지 표현 grep 회귀 점검",
+      "priority": 12,
+      "note": "2026-09-18 회차에 '본질적으로' 6 건과 '~의 출발점이다' 15 건을 전부 고쳐 금지 표현 grep 이 0 건이 되었다. 회차마다 다음을 돌려 회귀를 잡는다: grep -rnoE '우연이 아니다|놀랍지 않다|흥미롭게도|놀랍게도|본질적으로|직관적으로 말하면|이것이 바로|에 다름 아니다|에 지나지 않는다|말하자면|라는 것이 밝혀졌다|강조할 점이|주목할 것은|짚고 넘어가자|다음이 핵심이다|점을 기억하자|이 점이 중요하다|의 출발점이다|인 셈이다|생각해 보면|해 보자' docs/*.md. 아직 이 목록에 넣지 않은 4절 금지 표현이 남아 있다: '다시 말해', '이는 곧', '자연스럽게', '이것은 ~를 의미한다', '라는 사실은', '~이기 때문이다' 로 앞 문장을 다시 설명하는 문장, '여기서 나온다', '~을 말해 준다'. 이들은 정당한 쓰임과 섞여 오검출이 많으므로 한 표현씩 맥락을 보고 처리한다",
+      "createdAt": "2026-09-18T04:59:38.955Z",
+      "seq": 543
     },
     {
       "id": "ae1848a1",
@@ -746,6 +762,38 @@
       "note": "2026-09-17 다섯 번째 회차. rice-theorem 의 '인식 가능성' 절이 이름과 대략적 진술만 들고 문서가 없다. 계산 어느 의미론적 성질이 인식 가능한지(r.e. 인지)를 특징짓는 정리이고, '유한한 양의 정보만 보고 확인할 수 있는 성질', 곧 컴팩트성 조건으로 진술된다. 부모는 rice-theorem 이고 분야는 계산이다. 영역 이론(domain-theory)의 Scott 위상과 이어지므로 그쪽 간선도 검토한다",
       "createdAt": "2026-09-17T16:57:24.909Z",
       "seq": 509
+    },
+    {
+      "id": "d8db30c8",
+      "title": "유도 함자의 후속: 스펙트럼 열과 Koszul 복합체",
+      "priority": 10,
+      "note": "derived-functors 를 이번 회차에 만들었고 더 알아보기가 비어 있다. 후속 후보는 (1) Koszul 복합체: 정칙열과 국소환의 정칙성 판정, 부모는 derived-functors, (2) 이중 복합체의 스펙트럼 열: 저장소에 spectral-sequences 문서가 있는지 확인하고 있으면 derived-functors 를 부모로 붙인다. 분야는 #algebra",
+      "createdAt": "2026-09-18T04:48:36.040Z",
+      "seq": 536
+    },
+    {
+      "id": "a0319f6d",
+      "title": "역수학의 부분체계와 Peano 산술의 강도",
+      "priority": 10,
+      "note": "peano-axioms 를 이번 회차에 만들면서 활용 절에 역수학을 한 줄로만 적었다. RCA_0, WKL_0, ACA_0, ATR_0, Pi^1_1-CA_0 의 다섯 체계와 각 체계가 어떤 정리와 동치인지가 별도 문서 감이다. 부모는 peano-axioms. formalism-hilbert-program 이 이미 ACA_0, ATR_0 을 언급하므로 그 문서와 겹치는지 먼저 확인한다. 분야는 #logic #foundations",
+      "createdAt": "2026-09-18T04:51:29.868Z",
+      "seq": 537
+    },
+    {
+      "id": "bea606ce",
+      "title": "Cramér 정리의 후속: Gärtner–Ellis 정리와 Freidlin–Wentzell 이론",
+      "priority": 10,
+      "note": "large-deviations 를 이번 회차에 만들었고 더 알아보기가 비어 있다. 후속 후보 둘. (1) Gärtner–Ellis 정리: 독립이 아닌 경우로 Cramér 를 확장, 극한 로그 적률생성함수가 미분가능하면 그 Legendre 변환이 rate function. (2) Freidlin–Wentzell 이론: 작은 잡음 확산의 대편차와 탈출시간, 부모는 large-deviations 와 brownian-motion. 분야는 #probability",
+      "createdAt": "2026-09-18T04:54:14.072Z",
+      "seq": 538
+    },
+    {
+      "id": "7538ffe3",
+      "title": "Sperner 정리와 LYM 부등식",
+      "priority": 10,
+      "note": "dilworth-theorem 을 만들면서 Sperner 정리를 활용 절에 넣지 못했다. 멱집합의 최대 반사슬이 중간 층이라는 정리이고 LYM(Lubell-Yamamoto-Meshalkin) 부등식이 그 증명을 준다. 부모는 dilworth-theorem 과 counting-principles. 분야는 #combinatorics #order_theory",
+      "createdAt": "2026-09-18T04:56:32.771Z",
+      "seq": 541
     },
     {
       "id": "dfb3e493",
