@@ -196,6 +196,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [대편차 원리](large-deviations.md)
 
 #probability #algorithms #machine_learning

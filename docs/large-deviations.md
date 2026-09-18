@@ -2,7 +2,7 @@
 
 # 개요
 
-대편차 원리는 [큰 수의 법칙](law-of-large-numbers.md)이 확률 $0$ 으로 보내는 사건의 확률이 얼마나 빨리 작아지는지를 재는 틀이다. 표본평균이 기댓값에서 벗어날 확률은 표본 수 $n$ 에 대해 지수적으로 감소하고, 그 지수를 결정하는 함수가 rate function 이다.
+대편차 원리는 [큰 수의 법칙](law-of-large-numbers.md)이 확률 $0$ 으로 보내는 사건의 확률이 얼마나 빨리 작아지는지를 재는 틀이다. 표본평균이 기댓값에서 벗어날 확률은 표본 수 $n$ 에 대해 지수적으로 감소하고, 그 지수를 결정하는 함수가 rate function 이다. [집중부등식](concentration-inequalities.md)은 이 감소의 지수적 상계를 주고, 대편차 원리는 그 지수의 정확한 값을 준다.
 
 rate function 은 두 방식으로 나타난다. 실수값 표본평균에서는 로그 적률생성함수의 Legendre 변환이고, 경험분포에서는 참분포에 대한 [상대엔트로피](kl-divergence.md)다. 두 결과가 Cramér 정리와 Sanov 정리이며, 축약 원리가 둘을 잇는다.
 
@@ -97,7 +97,7 @@ $$
 
 ## 선수지식
 
-- [큰 수의 법칙](law-of-large-numbers.md)
+- [집중부등식](concentration-inequalities.md)
 - [KL divergence와 상호정보량](kl-divergence.md)
 
 ## 더 알아보기
