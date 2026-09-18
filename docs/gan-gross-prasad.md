@@ -147,38 +147,7 @@ $$
 
 ## 콤팩트 경우의 차원 계산
 
-Bessel 쌍 $U(n+1)\supset U(n)$ 에서는 인터레이싱하는 $\mu$ 들의 차원 합을 Weyl 차원 공식으로 계산해 원래 차원과 비교한다.
-
-```javascript
-// U(n) 기약표현의 차원 (Weyl 차원 공식)
-function dimU(lambda) {
-  const n = lambda.length
-  let num = 1, den = 1
-  for (let i = 0; i < n; i++)
-    for (let j = i + 1; j < n; j++) {
-      num *= lambda[i] - lambda[j] + j - i
-      den *= j - i
-    }
-  return num / den
-}
-
-// lambda 와 인터레이싱하는 mu 를 모두 나열한다
-function interlacing(lambda) {
-  const out = []
-  const rec = (i, acc) => {
-    if (i === lambda.length - 1) { out.push(acc); return }
-    for (let m = lambda[i + 1]; m <= lambda[i]; m++) rec(i + 1, [...acc, m])
-  }
-  rec(0, [])
-  return out
-}
-
-const lambda = [4, 2, 1, 0]               // U(4) 의 최고무게
-const mus = interlacing(lambda)           // U(3) 성분들
-const total = mus.reduce((s, mu) => s + dimU(mu), 0)
-console.log(dimU(lambda), total, mus.length)
-// 140 140 12
-```
+$\lambda=(4,2,1,0)$ 인 $U(4)$ 의 기약표현은 Weyl 차원 공식으로 차원이 $140$ 이다. $\lambda$ 와 인터레이싱하는 $\mu$ 는 열둘이고, 대응하는 $U(3)$ 표현의 차원 합도 $140$ 이다.
 
 차원이 맞으므로 각 $\mu$ 는 많아야 한 번 나온다. $p$ 진군에서 같은 결론을 얻는 데는 더 깊은 도구가 필요하다.
 

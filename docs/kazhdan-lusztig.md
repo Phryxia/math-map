@@ -76,17 +76,11 @@ const contains = (w, p) => {
 const perms = (a) => a.length <= 1 ? [a] :
   a.flatMap((x, i) => perms([...a.slice(0, i), ...a.slice(i + 1)]).map(r => [x, ...r]));
 
-for (const n of [3, 4, 5]) {
-  const P = perms([...Array(n)].map((_, i) => i + 1));
-  const sing = P.filter(w => contains(w, [3,4,1,2]) || contains(w, [4,2,3,1]));
-  console.log(`S_${n}: 전체 ${P.length}, 특이 ${sing.length}`, n <= 4 ? sing.map(w => w.join('')).join(' ') : '');
-}
-// S_3: 전체 6,   특이 0
-// S_4: 전체 24,  특이 2   3412 4231
-// S_5: 전체 120, 특이 32
+const singular = (n) => perms([...Array(n)].map((_, i) => i + 1))
+  .filter(w => contains(w, [3,4,1,2]) || contains(w, [4,2,3,1]));
 ```
 
-$S_3$ 까지는 모든 Schubert 다양체가 매끄럽고 KL 다항식이 전부 $1$ 이다. 비자명한 예는 $S_4$ 에서 처음 나오며 두 개다.
+$S_3$ 까지는 모든 Schubert 다양체가 매끄럽고 KL 다항식이 전부 $1$ 이다. 비자명한 예는 $S_4$ 에서 처음 나오며 $3412$ 와 $4231$ 둘이다. $S_5$ 에서는 $120$ 개 가운데 $32$ 개가 특이하다.
 
 $$
 P_{e,3412}=1+q,\qquad P_{e,4231}=1+q

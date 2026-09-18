@@ -62,16 +62,19 @@ const isSquareMod = (D, M) => {
   return false;
 };
 
-for (const N of [11, 37, 389]) {
+const heegnerDiscs = (N, howMany) => {
   const out = [];
-  for (let D = -1; D > -200 && out.length < 6; D--)
+  for (let D = -1; D > -200 && out.length < howMany; D--)
     if (isFundamental(D) && isSquareMod(D, 4 * N)) out.push(D);
-  console.log(`N=${N}:`, out.join(', '));
-}
-// N=11:  -7, -8, -11, -19, -24, -35
-// N=37:  -3, -4, -7, -11, -40, -47
-// N=389: -4, -7, -11, -19, -20, -24
+  return out;
+};
 ```
+
+| $N$ | 절댓값이 작은 Heegner 판별식 |
+| --- | --- |
+| $11$ | $-7,\ -8,\ -11,\ -19,\ -24,\ -35$ |
+| $37$ | $-3,\ -4,\ -7,\ -11,\ -40,\ -47$ |
+| $389$ | $-4,\ -7,\ -11,\ -19,\ -20,\ -24$ |
 
 $N=11$ 에서 $D=-7$ 이 나온다. $-7\equiv 37\pmod{44}$ 이고 $9^2\equiv37$ 이며, $11$ 은 $\mathbb Q(\sqrt{-7})$ 에서 분열한다.
 

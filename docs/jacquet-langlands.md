@@ -90,23 +90,14 @@ $\Sigma\ne\varnothing$ 이면 $B^\times(F)Z(\mathbb A)\backslash B^\times(\mathb
 
 $\Sigma=\lbrace\infty,p\rbrace$ 인 확정 사원수 대수의 좌이념류 수 $h(p)$ 는 Eichler 의 질량 공식과 타원점 계산으로 닫힌 식이 된다. Eichler 의 정리에 의해 무게 2 레벨 $p$ 의 첨점형식 공간의 차원이 $h(p)-1$ 이고, 이는 모듈러 곡선 $X_0(p)$ 의 종수다.
 
-```javascript
-// Deuring: p 에서 분지된 확정 사원수 대수의 좌이념류 수
-function classNumber(p) {
-  const e4 = p % 4 === 1 ? 1 : -1   // (-4/p)
-  const e3 = p % 3 === 1 ? 1 : -1   // (-3/p)
-  return Math.round((p - 1) / 12 + (1 - e4) / 4 + (1 - e3) / 3)
-}
+$$
+h(p)=\frac{p-1}{12}+\frac14\Bigl(1-\Bigl(\frac{-4}{p}\Bigr)\Bigr)+\frac13\Bigl(1-\Bigl(\frac{-3}{p}\Bigr)\Bigr)
+$$
 
-// X_0(p) 의 종수 = dim S_2(Gamma_0(p))
-const genus = { 11: 1, 13: 0, 17: 1, 19: 1, 23: 2, 29: 2, 31: 2, 37: 2, 41: 3, 43: 3, 47: 4 }
-for (const p of Object.keys(genus).map(Number))
-  console.log(p, classNumber(p), classNumber(p) - 1 === genus[p])
-// 11 2 true    23 3 true    37 3 true
-// 13 1 true    29 3 true    41 4 true
-// 17 2 true    31 3 true    43 4 true
-// 19 2 true               47 5 true
-```
+| $p$ | $11$ | $13$ | $17$ | $19$ | $23$ | $29$ | $31$ | $37$ | $41$ | $43$ | $47$ |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| $h(p)$ | $2$ | $1$ | $2$ | $2$ | $3$ | $3$ | $3$ | $3$ | $4$ | $4$ | $5$ |
+| $g(X_0(p))$ | $1$ | $0$ | $1$ | $1$ | $2$ | $2$ | $2$ | $2$ | $3$ | $3$ | $4$ |
 
 왼쪽은 사원수 대수의 산술이고 오른쪽은 리만 곡면의 위상이다. $-1$ 은 상수함수, 곧 JL 대응의 상에서 빠지는 1 차원 표현의 몫이다.
 
