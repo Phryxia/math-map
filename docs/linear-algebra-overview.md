@@ -35,6 +35,7 @@ graph TD
 - [내적 공간](inner-product-spaces.md) → [스펙트럼 정리](spectral-theorem.md) → [특이값 분해](singular-value-decomposition.md)
 - [쌍대 공간](dual-space.md): 벡터를 재는 범함수와 전치
 - [텐서곱](tensor-products.md): 다중선형을 선형으로
+- [외대수](exterior-algebra.md): 반대칭 곱과 좌표 없는 행렬식
 
 ## 통계와 데이터
 

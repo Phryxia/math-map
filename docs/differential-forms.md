@@ -162,7 +162,7 @@ $$
 ## 선수지식
 
 - [다양체](manifolds.md)
-- [텐서곱](tensor-products.md)
+- [외대수](exterior-algebra.md)
 
 ## 더 알아보기
 
