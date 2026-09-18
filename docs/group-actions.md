@@ -134,10 +134,16 @@ Klein 의 관점에서 기하학은 어떤 변환군 아래 불변인 성질의 
 
 ## 더 알아보기
 
-- [Galois 이론](galois-theory.md)
+### 군론 안에서
+
 - [Sylow 정리](sylow-theorems.md)
-- [모듈러 형식](modular-forms.md)
 - [군의 표현과 지표](group-representations.md)
+
+### 세기와 다른 분야
+
+- [Pólya 세기 정리](polya-enumeration.md)
+- [Galois 이론](galois-theory.md)
 - [덮개공간](covering-spaces.md)
+- [모듈러 형식](modular-forms.md)
 
 #group_theory #algebra #combinatorics #field_theory
