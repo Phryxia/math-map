@@ -46,7 +46,7 @@ graph TD
 - [환](rings.md) → [아이디얼과 몫환](ideals-quotient-rings.md) → [소 아이디얼과 극대 아이디얼](prime-ideals.md) → [환의 국소화](localization-rings.md)
 - [다항식환](polynomial-rings.md) → [유일분해정역](unique-factorization-domains.md): 환 위의 다항식과 나눗셈, 그리고 ED ⊂ PID ⊂ UFD 사슬
 - [Noether 환](noetherian-rings.md): 오름사슬 조건과 Hilbert 기저정리
-- [가군](modules.md) → [텐서곱](tensor-products.md): 환 위의 벡터 공간
+- [가군](modules.md) → [텐서곱](tensor-products.md) → [유도 함자](derived-functors.md): 환 위의 벡터 공간과 완전성의 실패를 재는 Tor, Ext
 - [PID 위의 유한생성 가군](finitely-generated-modules.md): 구조정리와 Smith 표준형
 - [Nakayama 보조정리](nakayama-lemma.md): 국소환 위의 가군을 잉여체로 내려 읽기
 - [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md): 정수론으로 가는 문

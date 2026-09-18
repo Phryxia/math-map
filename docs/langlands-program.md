@@ -2,9 +2,9 @@
 
 # 개요
 
-[유체론](class-field-theory.md)은 수체 $K$ 의 아벨 확대를 $K$ 안의 산술로 완전히 분류했다. 그 성공의 열쇠는 Galois 군이 아벨일 때 Frobenius 원소가 소 아이디얼 하나마다 잘 정의된다는 사실이었다. 비아벨 확대에서는 이 사상이 무너진다. $\mathrm{Frob}\_{\mathfrak p}$ 가 원소가 아니라 켤레류이기 때문이다.
+[유체론](class-field-theory.md)은 수체 $K$ 의 아벨 확대를 $K$ 안의 산술로 완전히 분류했다. 이 분류는 Galois 군이 아벨일 때 Frobenius 원소가 소 아이디얼 하나마다 잘 정의된다는 점에 기댄다. 비아벨 확대에서는 이 사상이 무너진다. $\mathrm{Frob}\_{\mathfrak p}$ 가 원소가 아니라 켤레류이기 때문이다.
 
-Langlands 강령은 이 벽을 정면으로 넘는다. 켤레류에서 수를 뽑는 표준적인 방법은 [표현의 지표](group-representations.md)를 취하는 것이므로, Galois 군의 표현 $\rho\colon\mathrm{Gal}(\bar K/K)\to\mathrm{GL}\_n$ 을 대상으로 삼는다. 그리고 각 $\rho$ 에 전혀 다른 세계의 대상, 곧 $\mathrm{GL}\_n(\mathbb A_K)$ 위의 자기동형 표현 $\pi$ 가 대응한다고 예측한다.
+Langlands 강령은 켤레류를 다룰 수 있는 대상으로 바꾼다. 켤레류에서 수를 뽑는 표준적인 방법은 [표현의 지표](group-representations.md)를 취하는 것이므로, Galois 군의 표현 $\rho\colon\mathrm{Gal}(\bar K/K)\to\mathrm{GL}\_n$ 을 대상으로 삼는다. 그리고 각 $\rho$ 에 전혀 다른 세계의 대상, 곧 $\mathrm{GL}\_n(\mathbb A_K)$ 위의 자기동형 표현 $\pi$ 가 대응한다고 예측한다.
 
 $$
 \rho \thickspace\longleftrightarrow\thickspace \pi,\qquad L(s,\rho)=L(s,\pi)

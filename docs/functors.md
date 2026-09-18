@@ -101,5 +101,6 @@ functor 의 합성은 functor 이고 항등 functor 가 있으므로 작은 범�
 ## 더 알아보기
 
 - [자연변환](natural-transformations.md)
+- [유도 함자](derived-functors.md)
 
 #category_theory #algebraic_topology #computation
