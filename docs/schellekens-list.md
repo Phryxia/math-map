@@ -50,34 +50,17 @@ $$
 
 $h^\vee_i$ 는 dual Coxeter 수다. 좌변은 성분마다 다를 수 있고 우변은 $V_1$ 전체로 정해지므로 성분들이 서로 맞물린다. 이 조건이 후보를 크게 줄인다.
 
-```javascript
-// 단순 Lie 대수 [이름, dim, dual Coxeter number]
-const simple = [];
-for (let n = 1; n <= 8; n++) simple.push([`A${n}`, n * (n + 2), n + 1]);
-for (let n = 2; n <= 8; n++) simple.push([`B${n}`, n * (2 * n + 1), 2 * n - 1]);
-for (let n = 3; n <= 8; n++) simple.push([`C${n}`, n * (2 * n + 1), n + 1]);
-for (let n = 4; n <= 8; n++) simple.push([`D${n}`, n * (2 * n - 1), 2 * n - 2]);
-simple.push(['E6', 78, 12], ['E7', 133, 18], ['E8', 248, 30], ['F4', 52, 9], ['G2', 14, 4]);
+단순 성분이 둘 이하인 조합을 모두 훑으면 이 비율 조건을 통과하는 것은 열셋이다.
 
-const pairs = [];
-for (const [name, dim, hv] of simple)
-  for (let k = 1; k <= 12; k++) pairs.push({ name: `${name},${k}`, dim, m: hv / k });
+$$
+A_{6,7},\quad C_{4,10},\quad A_{1,2}D_{5,8},\quad A_{2,2}F_{4,6},\quad A_{2,6}D_{4,12},\quad A_{3,1}C_{7,2},\quad A_{3,8}B_{3,10}
+$$
 
-const found = [];
-for (const p of pairs)                                   // 단순 성분 하나
-  if (p.dim === 24 * (p.m + 1)) found.push([p.name]);
-for (let i = 0; i < pairs.length; i++)                   // 성분 둘
-  for (let j = i; j < pairs.length; j++) {
-    const [a, b] = [pairs[i], pairs[j]];
-    if (a.m === b.m && a.dim + b.dim === 24 * (a.m + 1)) found.push([a.name, b.name]);
-  }
-console.log(found.map(f => f.join(' ')).join('\n'));
-// A6,7        C4,10       A1,2 D5,8    A2,2 F4,6   A2,6 D4,12
-// A3,1 C7,2   A3,8 B3,10  A3,8 C3,8    A4,5 A4,5   A5,1 E7,3
-// A8,2 F4,2   B6,2 B6,2   B8,1 E8,2
-```
+$$
+A_{3,8}C_{3,8},\quad A_{4,5}A_{4,5},\quad A_{5,1}E_{7,3},\quad A_{8,2}F_{4,2},\quad B_{6,2}B_{6,2},\quad B_{8,1}E_{8,2}
+$$
 
-성분 두 개까지의 탐색에서 $A_{6,7},\ C_{4,10},\ A_{4,5}^2,\ A_{5,1}E_{7,3},\ B_{8,1}E_{8,2}$ 처럼 실제 목록의 항목이 나온다. 이 관계식은 필요조건이므로 통과한 조합이 모두 실현되지는 않고, 아래의 추가 조건이 후보를 더 잘라낸다. 성분이 세 개 이상인 항목은 이 탐색이 잡지 못한다.
+이 관계식은 필요조건이므로 통과한 조합이 모두 실현되지는 않고, 아래의 추가 조건이 후보를 더 잘라낸다. 성분이 세 개 이상인 항목은 이 탐색이 잡지 못한다.
 
 ## Niemeier 격자와의 대응
 

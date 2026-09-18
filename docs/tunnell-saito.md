@@ -115,9 +115,6 @@ function tunnell(n) {
   const m = n / 2
   return 2 * count(m, 4, 1, 32) === count(m, 4, 1, 8)
 }
-
-console.log([1, 2, 3, 5, 6, 7, 13, 14, 15].map((n) => [n, tunnell(n)]))
-// [[1,false],[2,false],[3,false],[5,true],[6,true],[7,true],[13,true],[14,true],[15,true]]
 ```
 
 $5,6,7$ 이 합동수이고 $1,2,3$ 이 아니라는 고전적 사실이 나온다. $1$ 이 합동수가 아니라는 것은 Fermat 이 무한강하법으로 증명한 명제이며, 그가 다룬 $x^4-y^4=z^2$ 의 불가능성과 같은 진술이다.
