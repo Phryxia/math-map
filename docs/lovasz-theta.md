@@ -103,9 +103,21 @@ $C_7$ 의 Shannon 용량은 결정되지 않았다[^2]. 상계 $\vartheta(C_7)\a
 
 ## 홀수 순환의 값
 
-홀수 순환은 정점추이적이라 쌍대 형식의 자유 성분을 모두 같은 값으로 두어도 최적이다. 한 모수짜리 볼록 문제가 되어 고윳값 계산으로 풀린다.
+홀수 순환은 정점추이적이라 쌍대 형식의 자유 성분을 모두 같은 값으로 두어도 최적이다. $A=J+s\thinspace\mathrm{Adj}(C_n)$ 한 모수의 문제가 되고, 두 행렬이 모두 순환행렬이라 고윳값이 함께 읽힌다.
 
-닫힌 형태는 $\vartheta(C_n)=n\cos(\pi/n)/(1+\cos(\pi/n))$ 이다. 샌드위치의 양 끝이 $\lfloor n/2\rfloor$ 와 $\lceil n/2\rceil$ 로 1 만큼 벌어져 있고 그 사이의 $\vartheta$ 는 무리수다.
+$$
+\lambda_0=n+2s,\qquad \lambda_k=2s\cos\frac{2\pi k}n\quad(k=1,\dots,n-1)
+$$
+
+$s<0$ 이면 $\lambda_0$ 은 $s$ 에 대해 증가하고 $k\ne0$ 쪽의 최대 $-2s\cos(\pi/n)$ 은 감소하므로, 최대 고윳값은 둘이 같아지는 곳에서 가장 작다. $n+2s=-2s\cos(\pi/n)$ 을 풀면 $s=-n/\lbrace 2(1+\cos(\pi/n))\rbrace$ 이고
+
+$$
+\vartheta(C_n)=\frac{n\cos(\pi/n)}{1+\cos(\pi/n)}
+$$
+
+이 된다. $\vartheta(C_5)=\sqrt5$ 이고 $\vartheta(C_7)=3.3176\ldots$ 다.
+
+샌드위치의 양 끝은 $\alpha(C_n)=\lfloor n/2\rfloor$ 와 $\chi(\overline{C_n})=\lceil n/2\rceil$ 로 1 만큼 벌어져 있고, 그 사이의 $\vartheta$ 는 무리수다. Niven 정리로 홀수 $n\ge5$ 에서 $\cos(\pi/n)$ 이 무리수이고, 유리계수 일차분수사상 $x\mapsto nx/(1+x)$ 가 무리수를 무리수로 보낸다.
 
 $n$ 이 커지면 $\vartheta(C_n)/\alpha(C_n)\to1$ 이다. 무작위 그래프에서는 $\alpha(G)\approx2\log_2n$ 인데 $\vartheta(G)\approx\sqrt n$ 이라 간격이 다항식 규모로 벌어지므로, 완화의 품질은 그래프에 크게 의존한다.
 
