@@ -194,6 +194,7 @@ $L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개�
 
 - [내적 공간](inner-product-spaces.md)
 - [Cauchy 수열과 완비성](completeness.md)
+- [함수해석 개관](functional-analysis-overview.md)
 
 ## 더 알아보기
 
