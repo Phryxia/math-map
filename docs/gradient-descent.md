@@ -14,7 +14,7 @@
 
 # 정의
 
-$f$ 를 $\mathbb{R}^n$ 에서 정의된 미분가능 함수라 한다. 고정 학습률 $\eta>0$ 에 대한 경사하강법은 다음 점화식이다.
+$f$ 를 $\mathbb{R}^n$ 에서 정의된 미분가능 함수라 한다. 고정 학습률 $\eta\gt 0$ 에 대한 경사하강법은 다음 점화식이다.
 
 $$
 x_{k+1}=x_k-\eta\thinspace\nabla f(x_k),\qquad k=0,1,2,\dots
@@ -28,10 +28,10 @@ $$
 \left\lVert \nabla f(x)-\nabla f(y)\right\rVert\le L\left\lVert x-y\right\rVert\quad(\forall x,y)
 $$
 
-$f$ 가 $\mu$ 강볼록($\mu>0$ )이라는 것은 $f$ 에서 이차항을 뺀 함수가 여전히 볼록하다는 뜻이고, 다음 부등식과 동치다.
+$f$ 가 $\mu$ 강볼록($\mu\gt 0$ )이라는 것은 $f$ 에서 이차항을 뺀 함수가 여전히 볼록하다는 뜻이고, 다음 부등식과 동치다.
 
 $$
-f(y)\ \ge\ f(x)+\nabla f(x)^\top (y-x)+\frac{\mu}{2}\left\lVert y-x\right\rVert^2\quad(\forall x,y)
+f(y)\thinspace \ge\thinspace f(x)+\nabla f(x)^\top (y-x)+\frac{\mu}{2}\left\lVert y-x\right\rVert^2\quad(\forall x,y)
 $$
 
 두 번 미분가능하면 두 조건은 Hessian 의 스펙트럼 조건 $\mu I\preceq\nabla^2f(x)\preceq LI$ 와 같다. 조건수를 $\kappa=L/\mu$ 로 정의하고 최솟값을 $f^\star$ , 최소점을 $x^\star$ 로 쓴다.
@@ -52,7 +52,7 @@ $$
 f(x_{k+1})\le f(x_k)-\eta\Bigl(1-\frac{L\eta}{2}\Bigr)\left\lVert \nabla f(x_k)\right\rVert^2
 $$
 
-따라서 $0<\eta<2/L$ 이면 기울기가 $0$ 이 아닌 동안 함수값이 엄격히 줄어들고, $\eta=1/L$ 에서 계수가 $1/(2L)$ 이다.
+따라서 $0\lt \eta\lt 2/L$ 이면 기울기가 $0$ 이 아닌 동안 함수값이 엄격히 줄어들고, $\eta=1/L$ 에서 계수가 $1/(2L)$ 이다.
 
 $$
 f(x_{k+1})\le f(x_k)-\frac{1}{2L}\left\lVert \nabla f(x_k)\right\rVert^2
@@ -63,7 +63,7 @@ $$
 $f$ 가 $L$ -smooth 이고 아래로 유계이며 $\eta=1/L$ 이면, 위 부등식을 $k=0$ 부터 $K-1$ 까지 더해 망원합으로 정리하면 다음을 얻는다.
 
 $$
-\min_{0\le k<K}\left\lVert \nabla f(x_k)\right\rVert\ \le\ \sqrt{\frac{2L\bigl(f(x_0)-f^\star\bigr)}{K}}
+\min_{0\le k\lt K}\left\lVert \nabla f(x_k)\right\rVert\thinspace \le\thinspace \sqrt{\frac{2L\bigl(f(x_0)-f^\star\bigr)}{K}}
 $$
 
 기울기 노름이 $K^{-1/2}$ 속도로 줄어든다. 전역 최소는 보장되지 않고, 볼록성이 없으면 saddle point 근방이나 국소 최소에 머물 수 있다.
@@ -73,7 +73,7 @@ $$
 $f$ 가 볼록이고 $L$ -smooth 이며 최소점 $x^\star$ 가 존재할 때 $\eta=1/L$ 이면 다음이 성립한다.[^1]
 
 $$
-f(x_K)-f^\star\ \le\ \frac{L\left\lVert x_0-x^\star\right\rVert^2}{2K}
+f(x_K)-f^\star\thinspace \le\thinspace \frac{L\left\lVert x_0-x^\star\right\rVert^2}{2K}
 $$
 
 증명은 갱신식을 대입해 최소점까지의 거리 제곱을 전개하고, 볼록성의 1 차 부등식으로 교차항을 막고, 하강 보조정리로 기울기 노름 항을 함수값 감소량으로 바꾸어 다음을 얻는 데서 출발한다.
@@ -89,14 +89,14 @@ $k=0$ 부터 $K-1$ 까지 더하면 $f(x_k)-f^\star$ 들의 합이 초기 거리
 $f$ 가 $\mu$ 강볼록이고 $L$ -smooth 이면 강볼록성에서 Polyak–Łojasiewicz 부등식이 따른다.
 
 $$
-\left\lVert \nabla f(x)\right\rVert^2\ \ge\ 2\mu\bigl(f(x)-f^\star\bigr)
+\left\lVert \nabla f(x)\right\rVert^2\thinspace \ge\thinspace 2\mu\bigl(f(x)-f^\star\bigr)
 $$
 
 이를 $\eta=1/L$ 의 하강 보조정리에 대입하면 한 걸음마다 오차가 일정 비율로 줄어든다.[^1][^2]
 
 $$
-f(x_{k+1})-f^\star\ \le\ \Bigl(1-\frac{\mu}{L}\Bigr)\bigl(f(x_k)-f^\star\bigr)
-\ \Longrightarrow\
+f(x_{k+1})-f^\star\thinspace \le\thinspace \Bigl(1-\frac{\mu}{L}\Bigr)\bigl(f(x_k)-f^\star\bigr)
+\thinspace\Longrightarrow\thinspace
 f(x_k)-f^\star\le\Bigl(1-\frac{\mu}{L}\Bigr)^{k}\bigl(f(x_0)-f^\star\bigr)
 $$
 
@@ -105,7 +105,7 @@ $\varepsilon$ 근사해에 필요한 반복 수는 $\kappa\log(1/\varepsilon)$ �
 ## 한계와 개선
 
 - 1 차 방법의 정보 하한 때문에 강볼록이고 $L$ -smooth 인 부류에서 어떤 1 차 방법도 조건수의 제곱근보다 좋은 의존성을 가질 수 없고, Nesterov 가속법이 이 하한을 달성한다.
-- $\eta>2/L$ 이면 이차함수에서도 발산한다. 실제로는 backtracking line search 로 $\eta$ 를 적응적으로 정한다.
+- $\eta\gt 2/L$ 이면 이차함수에서도 발산한다. 실제로는 backtracking line search 로 $\eta$ 를 적응적으로 정한다.
 - 미분 불가능한 볼록 함수에서는 subgradient 를 쓰고 수렴률이 $K^{-1/2}$ 로 떨어진다. 제약이 있으면 projected gradient 나 [Lagrange 쌍대성과 KKT 조건](lagrange-duality.md)을 쓴다.
 
 ## 확률적 경사하강
@@ -123,7 +123,7 @@ $$
 ## 이차함수에서의 수렴률
 
 $$
-f(x)=\frac{1}{2}\bigl(x_1^2+\gamma x_2^2\bigr),\qquad \gamma>1
+f(x)=\frac{1}{2}\bigl(x_1^2+\gamma x_2^2\bigr),\qquad \gamma\gt 1
 $$
 
 여기서 $\mu=1$ , $L=\gamma$ 이고 $\eta=1/\gamma$ 이면 각 좌표가 독립으로 갱신된다.
