@@ -165,9 +165,6 @@ $$
 - **통계.** 순차적 검정(SPRT)의 우도비는 곱 martingale 이고, 정지 규칙의 오류 확률 경계는 선택적 정지 정리와 최대부등식에서 직접 나온다. [측도 변환](change-of-measure.md)의 Radon–Nikodym 밀도과정도 같은 구조다.
 - **연속시간.** Brownian motion 에서 $B_t$ 와 $B_t^2 - t$ 그리고 $\exp(\theta B_t - \theta^2 t / 2)$ 는 모두 martingale 이며, Itô 적분은 "martingale 변환"의 연속시간 판이다. 금융의 무차익 가격결정은 할인된 가격과정을 martingale 로 만드는 측도의 존재로 서술된다.
 
-[^1]: Rick Durrett, Probability: Theory and Examples (5th ed.), Chapter 4 (Martingales), https://sites.math.duke.edu/~rtd/PTE/PTE5_011119.pdf
-[^2]: Russell Lyons and Yuval Peres, Probability on Trees and Networks, Chapter 2, https://rdlyons.pages.iu.edu/prbtree/book.pdf
-
 # 연관 문서
 
 ## 선수지식
@@ -178,4 +175,4 @@ $$
 
 - [Brown 운동](brownian-motion.md)
 
-#probability
+#probability #measure_theory #statistics

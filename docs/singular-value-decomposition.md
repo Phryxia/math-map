@@ -134,4 +134,4 @@ Eckart–Young에 의해 상위 $k$ 개 성분만 남기면 저장량이 $(m+n+1
 
 - [주성분 분석](principal-component-analysis.md)
 
-#linear_algebra
+#linear_algebra #statistics #optimization

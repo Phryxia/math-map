@@ -202,4 +202,4 @@ $L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개�
 - [Peter–Weyl 정리](peter-weyl.md)
 - [구면조화함수와 SO(3) 의 표현](spherical-harmonics.md)
 
-#functional_analysis
+#functional_analysis #analysis #linear_algebra #probability

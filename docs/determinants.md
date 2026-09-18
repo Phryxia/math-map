@@ -141,4 +141,4 @@ Kirchhoff의 matrix-tree 정리는 연결 그래프의 신장트리 개수가 [�
 - [Fredholm 행렬식](fredholm-determinant.md)
 - [Reidemeister 비틀림과 렌즈 공간](reidemeister-torsion.md)
 
-#linear_algebra
+#linear_algebra #combinatorics #graph_theory
