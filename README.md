@@ -8,7 +8,7 @@
 
 `docs/` 아래 마크다운 문서 하나가 정점 하나다. 문서 끝 `# 연관 문서` 절의 링크가 간선이 되고, 방향은 선수지식에서 후속 개념으로 간다. 부모 문서를 읽지 않으면 자식 문서를 이해할 수 없도록 간선을 긋는 것이 규칙이라, 전체 그래프는 순환 없는 DAG 로 유지된다.
 
-현재 문서 388 개, 간선 742 개, 태그 35 종이다. 갱신과 검증에 쓰는 스크립트는 `dev/` 에 있고, 탐사 절차는 [CLAUDE.md](CLAUDE.md) 에 적혀 있다.
+현재 문서 389 개, 간선 744 개, 태그 35 종이다. 갱신과 검증에 쓰는 스크립트는 `dev/` 에 있고, 탐사 절차는 [CLAUDE.md](CLAUDE.md) 에 적혀 있다.
 
 ## 지도의 갈래
 
@@ -24,6 +24,7 @@
 - [미분기하 개관](docs/differential-geometry-overview.md)
 - [수학기초론 개관](docs/foundations-overview.md)
 - [그래프 이론 개관](docs/graph-theory-overview.md)
+- [정보이론 개관](docs/information-theory-overview.md)
 - [선형대수 개관](docs/linear-algebra-overview.md)
 - [측도론 개관](docs/measure-theory-overview.md)
 - [정수론 개관](docs/number-theory-overview.md)

@@ -88,6 +88,7 @@ $H(f(X)) \le H(X)$ 이고 $f$ 가 단사이면 등호다. 데이터를 가공해
 ## 선수지식
 
 - [유한 확률 공간](probability.md)
+- [정보이론 개관](information-theory-overview.md)
 
 ## 더 알아보기
 
