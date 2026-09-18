@@ -31,13 +31,13 @@ $$
 경로 호모토피는 loop 들 사이의 [동치관계](relations.md)이고, $f$ 의 동치류를 $[f]$ 로 표기한다. 연접은 다음으로 정의된다.
 
 $$
-(f\astg)(s)=\begin{cases} f(2s), & 0\le s\le \tfrac12\cr g(2s-1), & \tfrac12\le s\le 1\end{cases}
+(f\ast g)(s)=\begin{cases} f(2s), & 0\le s\le \tfrac12\cr g(2s-1), & \tfrac12\le s\le 1\end{cases}
 $$
 
 기본군은 이 연산을 가진 동치류들의 집합이다[^1].
 
 $$
-\pi_1(X,x_0)=\bigl\lbrace\thinspace[f]\ \big|\ f\ \text{는 } x_0 \text{ 기반 loop}\thinspace\bigr\rbrace,\qquad [f]\cdot[g]=[f\astg]
+\pi_1(X,x_0)=\bigl\lbrace\thinspace[f]\ \big|\ f\ \text{는 } x_0 \text{ 기반 loop}\thinspace\bigr\rbrace,\qquad [f]\cdot[g]=[f\ast g]
 $$
 
 항등원은 상수 loop의 류이고 역원은 방향을 뒤집은 loop의 류다.

@@ -37,7 +37,7 @@ $$
 $\mathcal H(G,K)$ 의 원소는 $f(k_1gk_2)=f(g)$ 인 콤팩트 받침 함수다. 받침이 콤팩트하고 양쪽 불변이므로, 이런 함수는 유한개의 이중 잉여류 $KgK$ 의 특성함수들의 선형결합이다. 곱은 합성곱이다.
 
 $$
-(f_1\astf_2)(h)=\int_G f_1(g)\thinspace f_2(g^{-1}h)\thinspace dg,
+(f_1\ast f_2)(h)=\int_G f_1(g)\thinspace f_2(g^{-1}h)\thinspace dg,
 \qquad \mathrm{vol}(K)=1
 $$
 
@@ -46,7 +46,7 @@ $\mathrm{vol}(K)=1$ 로 정규화하면 $f_1$ 의 받침이 유한개의 왼쪽 
 $gK\mapsto L_g=g\mathbb Z_p^n$ 이 $G/K$ 와 $\mathbb Q_p^n$ 의 격자 전체의 일대일 대응이고, $KgK$ 는 $\mathbb Z_p^n$ 에 대한 $L_g$ 의 **초등인자**로 결정된다. 두 함수의 합성곱값이 중간 격자의 개수다.
 
 $$
-(1_{K\alpha K}\ast1_{K\beta K})(h)
+(1_{K\alpha K}\ast 1_{K\beta K})(h)
 =\char35{}\bigl\lbrace\thinspace M \thickspace:\thickspace \mathbb Z_p^n\supset M \text{ 가 } \alpha \text{ 형},\thickspace
 M\supset L_h \text{ 가 } \beta \text{ 형}\thinspace\bigr\rbrace
 $$
@@ -69,7 +69,7 @@ $$
 이고 $p^\lambda$ 는 대각행렬이라 ${}^tp^\lambda=p^\lambda$ 다. 곧 $\iota$ 는 모든 이중 잉여류를 제자리에 두므로 항등사상이다. 항등인 반자기동형이 있으면
 
 $$
-f_1\astf_2=(f_1\astf_2)^\iota=f_2^\iota\astf_1^\iota=f_2\astf_1
+f_1\ast f_2=(f_1\ast f_2)^\iota=f_2^\iota\ast f_1^\iota=f_2\ast f_1
 $$
 
 이다. 고전적으로 격자 계산으로 확인하던 $T_mT_n=T_{mn}$ 같은 식이 대각행렬이 대칭이라는 관찰에서 나온다.
@@ -195,13 +195,13 @@ $$
 $\mathcal H$ 의 곱을 정의대로 계산하면 정수 구조상수가 나온다.
 
 $$
-T(p)\astT(p)=T(p^2)+(p+1)\thinspace T(p,p)
+T(p)\ast T(p)=T(p^2)+(p+1)\thinspace T(p,p)
 $$
 
 이고, $m\ge2$ 에서는
 
 $$
-T(p)\astT(p^m)=T(p^{m+1})+p\thinspace T(p,p)\astT(p^{m-1})
+T(p)\ast T(p^m)=T(p^{m+1})+p\thinspace T(p,p)\ast T(p^{m-1})
 $$
 
 이다. $m=1$ 에서만 계수가 $p+1$ 이고 그 뒤로는 $p$ 이며, 고전적 Hecke 관계식 $T_pT_{p^m}=T_{p^{m+1}}+p^{k-1}T_{p^{m-1}}$ 의 무게 정규화가 여기에 대응한다.

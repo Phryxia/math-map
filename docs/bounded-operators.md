@@ -53,7 +53,7 @@ $$
 [Riesz 표현 정리](hilbert-spaces.md)에서 각 $T\in\mathcal B(H)$ 에 대해 다음을 만족하는 유일한 $T^\ast\in\mathcal B(H)$ 가 존재한다.
 
 $$
-\langle Tx,y\rangle=\langle x,T^\asty\rangle\qquad\forall x,y\in H
+\langle Tx,y\rangle=\langle x,T^\ast y\rangle\qquad\forall x,y\in H
 $$
 
 $\lVert T^\ast\rVert=\lVert T\rVert$ 이고 $\lVert T^\ast T\rVert=\lVert T\rVert^2$ 다. 마지막 등식이 $C^\ast$ 대수를 정의하는 성질이다.

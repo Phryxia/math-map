@@ -85,7 +85,7 @@ $$
 꼬임 $c_{X,Y}$ 와 정합적인 비틀림 $\theta_X$ 를 얹으면 **리본범주**가 되고 각 단순대상에 양자 차원 $d_i$ 와 비틀림 고유값 $\theta_i$ 가 붙는다. $S$ 행렬과 $T$ 행렬을 다음으로 정의한다.
 
 $$
-S_{ij}=\frac1{\mathcal D}\sum_kN_{i^\astj}^k\frac{\theta_k}{\theta_i\theta_j}d_k,\qquad T_{ij}=\delta_{ij}\theta_i,\qquad \mathcal D=\sqrt{\sum_id_i^2}
+S_{ij}=\frac1{\mathcal D}\sum_kN_{i^\ast j}^k\frac{\theta_k}{\theta_i\theta_j}d_k,\qquad T_{ij}=\delta_{ij}\theta_i,\qquad \mathcal D=\sqrt{\sum_id_i^2}
 $$
 
 $S_{ij}$ 는 도형으로 라벨 $i,j$ 를 단 두 고리를 한 번 걸어 놓은 그림의 값이다.
