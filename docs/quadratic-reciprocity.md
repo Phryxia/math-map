@@ -173,7 +173,7 @@ Jacobi 기호는 쉽게 계산되지만 제곱잉여 여부는 인수분해 없�
 
 세제곱과 네제곱 잉여에 대한 상호법칙이 Eisenstein 과 Gauss 에게서 나왔고, 일반 $n$ 차에 대한 Artin 상호법칙이 아벨 확대의 경우를 완결했다. Artin 의 정리는 Galois 군과 이데알류군 사이의 동형을 주며, 이차 상호법칙이 그 가장 작은 사례다.
 
-아벨이 아닌 확대로 넓히는 것이 Langlands 강령이다. Galois 표현과 자기동형 표현을 대응시키는 이 계획에서도 원분체의 Galois 군이 $(\mathbb Z/p\mathbb Z)^\times$ 라는 사실이 출발점이다.
+아벨이 아닌 확대로 넓히는 것이 Langlands 강령이다. Galois 표현과 자기동형 표현을 대응시키는 이 계획도 원분체의 Galois 군이 $(\mathbb Z/p\mathbb Z)^\times$ 라는 사실 위에 있다.
 
 # 연관 문서
 

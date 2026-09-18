@@ -14,7 +14,7 @@ $$
 
 # 직관
 
-정보를 $\sigma$ -대수로 부호화한다는 발상이 출발점이다. 확률공간 $(\Omega, \mathcal F, P)$ 에서 부분 $\sigma$ -대수 $\mathcal G \subseteq \mathcal F$ 는 "지금 알 수 있는 질문들의 모음"이다. $\mathcal G$ 에 속한 사건 $A$ 에 대해서는 $\omega$ 가 $A$ 에 들어 있는지 여부를 관측으로 판정할 수 있고, $\mathcal G$ 에 없는 사건은 판정할 수 없다.
+정보를 $\sigma$ -대수로 부호화한다. 확률공간 $(\Omega, \mathcal F, P)$ 에서 부분 $\sigma$ -대수 $\mathcal G \subseteq \mathcal F$ 는 "지금 알 수 있는 질문들의 모음"이다. $\mathcal G$ 에 속한 사건 $A$ 에 대해서는 $\omega$ 가 $A$ 에 들어 있는지 여부를 관측으로 판정할 수 있고, $\mathcal G$ 에 없는 사건은 판정할 수 없다.
 
 가장 투명한 경우는 $\mathcal G$ 가 가산 분할 $\Omega = B_1 \sqcup B_2 \sqcup \dots$ 로 생성될 때다. 이때 관측이 알려주는 것은 "지금 어느 조각 안에 있는가" 뿐이므로, 예측값은 각 조각 위에서 상수여야 하고 그 상수는 조각 위의 평균이어야 한다.
 
@@ -77,7 +77,7 @@ $$
 \nu(A) \thickspace=\thickspace \int_A X \thinspace dP, \qquad A \in \mathcal{G}
 $$
 
-를 정의한다. $P(A) = 0$ 이면 $\nu(A) = 0$ 이므로 $\nu \ll P\rvert_{\mathcal G}$ 이고, [Radon–Nikodym 정리](radon-nikodym.md)에 의해 $\mathcal G$ 가측 밀도 $Y = d\nu / d(P\rvert_{\mathcal G})$ 가 존재한다. 이 $Y$ 가 정의의 두 조건을 그대로 만족한다. 일반적인 $X$ 는 $X = X^+ - X^-$ 로 분해하고 선형으로 결합한다. 존재성 증명의 전부가 Radon–Nikodym 이라는 점이 이 개념의 측도론적 위치를 말해 준다.
+를 정의한다. $P(A) = 0$ 이면 $\nu(A) = 0$ 이므로 $\nu \ll P\rvert_{\mathcal G}$ 이고, [Radon–Nikodym 정리](radon-nikodym.md)에 의해 $\mathcal G$ 가측 밀도 $Y = d\nu / d(P\rvert_{\mathcal G})$ 가 존재한다. 이 $Y$ 가 정의의 두 조건을 그대로 만족한다. 일반적인 $X$ 는 $X = X^+ - X^-$ 로 분해하고 선형으로 결합한다. 존재성 증명은 전부 Radon–Nikodym 정리에 의존한다.
 
 ## L2 정사영으로서의 정의
 
