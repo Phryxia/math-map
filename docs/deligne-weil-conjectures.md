@@ -22,9 +22,9 @@ Grothendieck 의 계획은 표준 추측[^1]을 세워 Hodge 이론의 양성을
 
 # 직관
 
-## 부등식의 양방향 조이기
+## 상계와 하계의 결합
 
-Deligne 은 $|\alpha|=q^{i/2}$ 를 직접 노리지 않는다. 먼저 느슨한 상계
+Deligne 의 증명은 $\vert\alpha\vert=q^{i/2}$ 를 직접 다루지 않는다. 먼저 느슨한 상계
 
 $$
 |\alpha|\le q^{(i+1)/2}
