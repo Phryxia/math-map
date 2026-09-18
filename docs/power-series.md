@@ -165,6 +165,7 @@ $$
 
 - [수열의 극한](limits.md)
 - [미분](derivative.md)
+- [균등수렴](uniform-convergence.md)
 
 ## 더 알아보기
 
