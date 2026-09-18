@@ -2,13 +2,13 @@
 
 # 개요
 
-Arthur 매개변수는 L 매개변수에 $\mathrm{SL}_2$ 를 하나 더 붙여 비템퍼드 표현까지 분류하는 매개변수다.
+Arthur 매개변수는 L 매개변수에 $\mathrm{SL}\_2$ 를 하나 더 붙여 비템퍼드 표현까지 분류하는 매개변수다.
 
 $$
 \psi:\ W_F\times\mathrm{SL}_2(\mathbb C)\times\mathrm{SL}_2(\mathbb C)\longrightarrow{}^LG
 $$
 
-[Vogan 꾸러미](vogan-packets.md)의 L 매개변수 $\varphi:W_F\times\mathrm{SL}_2(\mathbb C)\to{}^LG$ 는 템퍼드 표현에서 작동하지만 잔여 스펙트럼에 사는 비템퍼드 표현을 놓친다. 첫째 $\mathrm{SL}_2$ 는 국소 분기 정보(Deligne 의 멱단 부분)를 담고, 둘째 $\mathrm{SL}_2$ 가 비템퍼드성을 담는다. 둘째가 자명하면 템퍼드로 돌아오고, 자명하지 않으면 그만큼 Satake 매개변수가 유니터리 축에서 밀려난다.
+[Vogan 꾸러미](vogan-packets.md)의 L 매개변수 $\varphi:W_F\times\mathrm{SL}\_2(\mathbb C)\to{}^LG$ 는 템퍼드 표현에서 작동하지만 잔여 스펙트럼에 사는 비템퍼드 표현을 놓친다. 첫째 $\mathrm{SL}\_2$ 는 국소 분기 정보(Deligne 의 멱단 부분)를 담고, 둘째 $\mathrm{SL}\_2$ 가 비템퍼드성을 담는다. 둘째가 자명하면 템퍼드로 돌아오고, 자명하지 않으면 그만큼 Satake 매개변수가 유니터리 축에서 밀려난다.
 
 이 매개변수가 정의하는 **Arthur 꾸러미** $\Pi_\psi$ 는 L 꾸러미보다 크고 성질이 미묘하다. 그 대가로 전역 **중복도 공식**을 얻는다. 자기동형 표현이 이산 스펙트럼에 나타나는 횟수가 국소 지표들의 곱 하나로 결정된다.
 
@@ -20,11 +20,11 @@ Langlands 강령이 어떤 표현이 존재하는지를 예측한다면 Arthur �
 
 # 직관
 
-## 둘째 $\mathrm{SL}_2$ 의 역할
+## 둘째 $\mathrm{SL}\_2$ 의 역할
 
-Ramanujan 추측은 $\mathrm{GL}_n$ 의 첨점 표현이 템퍼드라고, 곧 Satake 매개변수의 절댓값이 1 이라고 예측한다. 자기동형 스펙트럼 전체에는 템퍼드가 아닌 것이 있다. $\mathrm{GL}_2$ 의 자명 표현은 잔여 스펙트럼에 살고 Satake 매개변수가 $\lbrace q^{1/2},q^{-1/2}\rbrace$ 라 절댓값이 1 이 아니다.
+Ramanujan 추측은 $\mathrm{GL}\_n$ 의 첨점 표현이 템퍼드라고, 곧 Satake 매개변수의 절댓값이 1 이라고 예측한다. 자기동형 스펙트럼 전체에는 템퍼드가 아닌 것이 있다. $\mathrm{GL}\_2$ 의 자명 표현은 잔여 스펙트럼에 살고 Satake 매개변수가 $\lbrace q^{1/2},q^{-1/2}\rbrace$ 라 절댓값이 1 이 아니다.
 
-이런 표현에 L 매개변수를 붙이면 유니터리가 아닌 상으로 가야 해서 이론이 망가진다. 둘째 $\mathrm{SL}_2$ 는 이 밀림을 구조 안에서 처리한다. $\mathrm{SL}_2(\mathbb C)$ 의 $d$ 차원 표현을 통해 들어오면 매개변수가
+이런 표현에 L 매개변수를 붙이면 유니터리가 아닌 상으로 가야 해서 이론이 망가진다. 둘째 $\mathrm{SL}\_2$ 는 이 밀림을 구조 안에서 처리한다. $\mathrm{SL}\_2(\mathbb C)$ 의 $d$ 차원 표현을 통해 들어오면 매개변수가
 
 $$
 w\ \longmapsto\ \varphi(w)\otimes\begin{pmatrix}|w|^{1/2}&\cr&|w|^{-1/2}\end{pmatrix}^{\negthinspace\oplus}
@@ -34,9 +34,9 @@ $$
 
 ## 첨점성과 잔여성의 사전
 
-둘째 $\mathrm{SL}_2$ 가 자명한 매개변수가 템퍼드에 대응하고, 클수록 스펙트럼의 얕은 곳에 있는 표현이 나온다. 극단이 자명 표현으로, 첫째 $\mathrm{SL}_2$ 가 자명하고 둘째가 전체를 차지한다.
+둘째 $\mathrm{SL}\_2$ 가 자명한 매개변수가 템퍼드에 대응하고, 클수록 스펙트럼의 얕은 곳에 있는 표현이 나온다. 극단이 자명 표현으로, 첫째 $\mathrm{SL}\_2$ 가 자명하고 둘째가 전체를 차지한다.
 
-$\mathrm{GL}_n$ 에서 이 사전은 완전히 알려져 있다. Mœglin–Waldspurger 가 분류한 이산 스펙트럼은 첨점 표현 하나와 정수 $d$ 의 짝으로 매개되는 **Speh 표현**들이고, 둘째 $\mathrm{SL}_2$ 의 차원이 그 $d$ 다.
+$\mathrm{GL}\_n$ 에서 이 사전은 완전히 알려져 있다. Mœglin–Waldspurger 가 분류한 이산 스펙트럼은 첨점 표현 하나와 정수 $d$ 의 짝으로 매개되는 **Speh 표현**들이고, 둘째 $\mathrm{SL}\_2$ 의 차원이 그 $d$ 다.
 
 ## 중복도 공식의 구조
 
@@ -56,7 +56,7 @@ $$
 \psi:\ W_F\times\mathrm{SL}_2(\mathbb C)\times\mathrm{SL}_2(\mathbb C)\to{}^LG
 $$
 
-에서 $W_F$ 로의 제한이 유계 상을 갖고 두 $\mathrm{SL}_2$ 로의 제한이 대수적이어야 한다. 대응하는 L 매개변수는 다음과 같다.
+에서 $W_F$ 로의 제한이 유계 상을 갖고 두 $\mathrm{SL}\_2$ 로의 제한이 대수적이어야 한다. 대응하는 L 매개변수는 다음과 같다.
 
 $$
 \varphi_\psi(w)=\psi\negthinspace\left(w,\ \begin{pmatrix}|w|^{1/2}&\cr&|w|^{-1/2}\end{pmatrix},\ 1\right)
@@ -90,7 +90,7 @@ $$
 
 # 성질
 
-## $\mathrm{GL}_n$ 의 경우
+## $\mathrm{GL}\_n$ 의 경우
 
 $\mathrm{GL}\_n$ 에서는 성분군이 언제나 자명하므로 모든 $\pi\in\Pi_\psi$ 가 정확히 한 번 나타난다. 이산 스펙트럼의 분류는 다음과 같다.
 
@@ -104,7 +104,7 @@ $d=1$ 이 첨점 표현이고, $d>1$ 이면 잔여 스펙트럼의 Speh 표현�
 
 ## 고전군의 분류
 
-Arthur 는 유사분열 고전군의 이산 스펙트럼을 $\mathrm{GL}_N$ 의 자기쌍대 첨점 표현으로 매개했다. 매개변수는
+Arthur 는 유사분열 고전군의 이산 스펙트럼을 $\mathrm{GL}\_N$ 의 자기쌍대 첨점 표현으로 매개했다. 매개변수는
 
 $$
 \psi=\boxplus_i\ \sigma_i\boxtimes[d_i],
@@ -112,7 +112,7 @@ $$
 \sigma_i\ \text{는 }\mathrm{GL}_{m_i}\text{ 의 자기쌍대 첨점 표현}
 $$
 
-꼴이고, 각 $\sigma_i\boxtimes[d_i]$ 가 $G$ 의 쌍대군이 보존하는 형식과 맞는 부호를 가져야 한다. 조건을 만족하는 조합을 세는 것이 고전군 표현을 세는 일이 된다. 증명은 안정화된 대각합 공식과 $\mathrm{GL}_N$ 으로의 이전을 쓰고, [기본 보조정리](fundamental-lemma.md)가 그 밑에 깔려 있다.
+꼴이고, 각 $\sigma_i\boxtimes[d_i]$ 가 $G$ 의 쌍대군이 보존하는 형식과 맞는 부호를 가져야 한다. 조건을 만족하는 조합을 세는 것이 고전군 표현을 세는 일이 된다. 증명은 안정화된 대각합 공식과 $\mathrm{GL}\_N$ 으로의 이전을 쓰고, [기본 보조정리](fundamental-lemma.md)가 그 밑에 깔려 있다.
 
 ## Arthur 꾸러미의 성질
 
@@ -126,7 +126,7 @@ L 꾸러미와 달리 Arthur 꾸러미에는 다음 성질이 있다.
 
 ## 일반화 Ramanujan 추측과의 관계
 
-$\mathrm{GL}_n$ 의 첨점 표현이 템퍼드라는 추측은 Arthur 의 언어로 첨점 매개변수의 둘째 $\mathrm{SL}_2$ 가 자명하다는 진술이다. 고전군에서는 거짓이다. 둘째 $\mathrm{SL}_2$ 가 자명하지 않은 첨점 표현(CAP 표현)이 존재하고 Saito–Kurokawa 올림이 그 예다. Ramanujan 추측은 $\mathrm{GL}_n$ 의 성질이지 자기동형 형식 일반의 성질이 아니다.
+$\mathrm{GL}\_n$ 의 첨점 표현이 템퍼드라는 추측은 Arthur 의 언어로 첨점 매개변수의 둘째 $\mathrm{SL}\_2$ 가 자명하다는 진술이다. 고전군에서는 거짓이다. 둘째 $\mathrm{SL}\_2$ 가 자명하지 않은 첨점 표현(CAP 표현)이 존재하고 Saito–Kurokawa 올림이 그 예다. Ramanujan 추측은 $\mathrm{GL}\_n$ 의 성질이지 자기동형 형식 일반의 성질이 아니다.
 
 # 활용
 
