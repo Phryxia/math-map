@@ -132,10 +132,16 @@ $$
 
 ## 더 알아보기
 
-- [Gödel 불완전성 정리](godel-incompleteness.md)
-- [형식주의와 Hilbert 프로그램](formalism-hilbert-program.md)
-- [ZFC 공리계](zfc-axioms.md)
+### 형식 체계와 모형
+
 - [Compactness 정리와 Löwenheim–Skolem 정리](lowenheim-skolem.md)
+- [Peano 공리](peano-axioms.md)
+- [Gödel 불완전성 정리](godel-incompleteness.md)
+
+### 기초 프로그램
+
+- [ZFC 공리계](zfc-axioms.md)
 - [논리주의와 Frege 프로그램](logicism.md)
+- [형식주의와 Hilbert 프로그램](formalism-hilbert-program.md)
 
 #logic #set_theory #foundations

@@ -148,6 +148,7 @@ $$
 ## 선수지식
 
 - [1차 논리](first-order-logic.md)
+- [Peano 공리](peano-axioms.md)
 - [계산 가능성과 정지 문제](computability.md)
 
 ## 더 알아보기
