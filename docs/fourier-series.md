@@ -198,6 +198,6 @@ $L^2$ 오차는 0으로 가지만 오버슈트는 약 0.179에 머문다. 도약
 ## 더 알아보기
 
 - [Poisson 합 공식](poisson-summation.md)
-- [Lobachevsky 함수와 쌍곡 사면체의 부피](lobachevsky-function.md)
+- [Lobachevsky 함수](lobachevsky-function.md)
 
 #analysis

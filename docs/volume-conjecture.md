@@ -148,7 +148,7 @@ $2\pi\log J_N/N$ 은 참값보다 $2\pi\cdot\tfrac32\log N/N$ 만큼 크다. 이
 ## 선수지식
 
 - [매듭 불변량과 Jones 다항식](knot-invariants.md)
-- [Lobachevsky 함수와 쌍곡 사면체의 부피](lobachevsky-function.md)
+- [Lobachevsky 함수](lobachevsky-function.md)
 - [쌍곡 3 다양체와 Mostow 강직성](hyperbolic-3-manifolds.md)
 
 ## 더 알아보기

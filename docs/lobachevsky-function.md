@@ -1,8 +1,8 @@
-# Lobachevsky 함수와 쌍곡 사면체의 부피
+# Lobachevsky 함수
 
 # 개요
 
-쌍곡 3 차원 공간에서 사면체의 부피를 구하려면 무엇이 필요한가. Euclid 공간에서는 밑면 곱하기 높이로 끝나지만 쌍곡 공간에서는 그렇지 않다. 답은 초등함수로 쓰이지 않고 새 함수 하나를 필요로 한다.
+쌍곡 3 차원 공간에서 사면체의 부피는 초등함수로 쓰이지 않는다. Euclid 공간의 밑면 곱하기 높이에 해당하는 자리를 함수 하나가 대신한다.
 
 $$
 \Lambda(\theta)=-\int_0^\theta\log\big|2\sin t\big|\thinspace dt
@@ -16,7 +16,7 @@ $$
 
 $\log|2\sin t|=-\sum_n\cos(2nt)/n$ 이라는 고전적 전개를 항별로 적분한 것이다. 곧 $\Lambda$ 는 **계수가 $1/n^2$ 인 사인 급수**이고, 그래서 주기적이고 홀함수이며 $\pi$ 의 배수에서 0 이 된다.
 
-이 함수가 흥미로운 이유는 두 세계에서 따로 나타나기 때문이다. 기하 쪽에서는 이상 사면체의 부피가 $\Lambda$ 의 값 세 개의 합이고, 조합 쪽에서는 1 의 거듭제곱근들의 곱 $\prod(1-\zeta^j)$ 의 로그가 $\Lambda$ 의 Riemann 합이다. [볼륨 추측](volume-conjecture.md)이 조합적 불변량에서 쌍곡 부피를 끌어내는 통로가 정확히 이 일치다.
+이 함수는 두 자리에서 따로 나타난다. 기하 쪽에서는 이상 사면체의 부피가 $\Lambda$ 의 값 세 개의 합이고, 조합 쪽에서는 1 의 거듭제곱근들의 곱 $\prod(1-\zeta^j)$ 의 로그가 $\Lambda$ 의 Riemann 합이다. [볼륨 추측](volume-conjecture.md)이 조합적 불변량에서 쌍곡 부피를 끌어내는 통로가 정확히 이 일치다.
 
 # 직관
 
@@ -47,18 +47,7 @@ $$
 \frac1N\sum_{j=1}^{k}\log\Big(2\sin\frac{\pi j}N\Big)\ \longrightarrow\ \frac1\pi\int_0^{\pi k/N}\log(2\sin t)\thinspace dt=-\frac1\pi\Lambda\Big(\frac{\pi k}N\Big)
 $$
 
-가 된다. **양자 불변량의 유한합에서 $\Lambda$ 가 이렇게 들어온다.** 색 Jones 다항식의 항들이 이런 곱이고, 합의 최대항을 찾는 것이 $\Lambda$ 를 최대화하는 문제가 되며, 그 최대점이 사면체의 이면각을 정한다. 조합적 합의 안장점 조건과 사면체 붙임 방정식이 같은 식이 되는 지점이다.
-
-```mermaid
-flowchart TD
-  FS["Fourier 급수<br/>log|2 sin t| = -Σ cos(2nt)/n"] -->|"항별 적분"| LAM["Λ(θ) = ½ Σ sin(2nθ)/n²"]
-  LAM --> GEO["이상 사면체 부피<br/>Λ(α)+Λ(β)+Λ(γ)"]
-  LAM --> COMB["Riemann 합<br/>(1/N) Σ log|1-ζ^j|"]
-  GEO --> M8["8자매듭 여집합<br/>= 정이면체 사면체 2개"]
-  COMB --> QJ["색 Jones 다항식의 항"]
-  M8 --> VC["볼륨 추측"]
-  QJ --> VC
-```
+가 된다. 색 Jones 다항식의 항이 이런 곱이므로, 합의 최대항을 찾는 문제가 $\Lambda$ 의 최대화 문제가 된다. 그 최대점이 사면체의 이면각을 정한다. 조합적 합의 안장점 조건과 사면체 붙임 방정식이 같은 식이 되는 지점이다.
 
 # 정의
 
@@ -72,6 +61,7 @@ flowchart TD
 - **$\pi$ 의 배수에서 영.** 곧 $\Lambda(0)=\Lambda(\pi/2)=\Lambda(\pi)=0$ 이다.
 - **최대와 최소.** $\theta=\pi/6$ 에서 최대 $0.5074708\ldots$ 이고 $\theta=5\pi/6$ 에서 최소다.
 - **배각 공식.** $\Lambda(2\theta)=2\Lambda(\theta)+2\Lambda\big(\theta+\tfrac\pi2\big)$ 다. 이 관계가 여러 부피 항등식의 출처다.
+- **Fourier 급수.** $\Lambda(\theta)=\tfrac12\sum_{n\ge1}\frac{\sin 2n\theta}{n^2}$ 다. 수치 계산은 대개 이 급수로 한다.
 
 $\Lambda$ 는 이중로그 $\mathrm{Li}_2$ 의 허수부와 같다. 정확히는 $\Lambda(\theta)=\tfrac12\mathrm{Im}\mathrm{Li}_2(e^{2i\theta})$ 이고, 그래서 쌍곡 부피가 이중로그의 값으로 표현되는 현상(Bloch 군, Borel 조절자)의 가장 구체적인 사례가 된다.
 
@@ -109,6 +99,10 @@ Thurston 의 계산이 이 이론의 출발점이다.
 $\Lambda(\pi/3)$ 같은 값이 초등적으로 닫히지 않는다는 것은 이중로그의 성질에서 온다. $\mathrm{Li}_2$ 의 특수값은 대개 알려진 상수로 표현되지 않고, 쌍곡 부피가 "새로운 수" 인 이유가 그것이다. 부피와 Chern–Simons 불변량을 묶은 복소수 $\mathrm{CS}+i\mathrm{Vol}/2\pi$ 가 Bloch 군의 원소로 해석되고, 이것이 대수적 K 이론의 조절자와 이어진다. 수론과 3 차원 위상수학이 만나는 자리다.
 
 # 활용
+
+## 볼륨 추측에서의 같은 상수
+
+$6\Lambda(\pi/3)$ 이 볼륨 추측에서 색 Jones 다항식의 증가율로 다시 나온다. 거기서 쓰는 것은 1 의 거듭제곱근의 곱을 더하는 조합 계산이고, 여기서 쓰는 것은 사인 급수다. 두 길이 같은 수에 이른다는 것이 그 추측의 내용이다.
 
 ## 3 다양체 불변량의 계산
 

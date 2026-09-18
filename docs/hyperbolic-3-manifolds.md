@@ -197,7 +197,7 @@ SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자
 
 - [Riemann 계량과 측지선](riemannian-metrics.md)
 - [덮개공간](covering-spaces.md)
-- [Lobachevsky 함수와 쌍곡 사면체의 부피](lobachevsky-function.md)
+- [Lobachevsky 함수](lobachevsky-function.md)
 
 ## 더 알아보기
 
