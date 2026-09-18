@@ -140,7 +140,7 @@ $[0,1]$ 위에서 $f_n$ 을 길이 $1/n$ 인 구간 위의 값 $n^{1/2}$ 로 두
 
 ## Dunford–Pettis 정리
 
-$L^1$ 부분집합이 약위상에서 상대적으로 compact 인 것과 그 집합이 UI 이고 무한 측도에서는 tight 인 것이 동치다. UI 가 $L^1$ 에서 [compactness](compactness.md)를 대신하며, 확률측도열의 tightness 와 Prokhorov 정리가 [상측도](pushforward-measure.md) 수준에서 하는 역할을 밀도 수준에서 한다.
+$L^1$ 부분집합이 약위상에서 상대적으로 compact 인 것과 그 집합이 UI 이고 무한 측도에서는 tight 인 것이 동치다. UI 가 $L^1$ 에서 [콤팩트성](compactness.md)를 대신하며, 확률측도열의 tightness 와 Prokhorov 정리가 [상측도](pushforward-measure.md) 수준에서 하는 역할을 밀도 수준에서 한다.
 
 ## 반례
 

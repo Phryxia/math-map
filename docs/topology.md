@@ -97,7 +97,7 @@ $$
 
 ## 더 알아보기
 
-- [Compactness](compactness.md)
+- [콤팩트성](compactness.md)
 - [측도](measure.md)
 - [기본군](fundamental-group.md)
 - [단체 호몰로지](homology.md)

@@ -234,7 +234,7 @@ $$
 ## 논리와 기하
 
 - 술어논리에서 변수 치환 functor의 left adjoint가 존재기호, right adjoint가 전칭기호다. 이 관점은 [1차 논리](first-order-logic.md)의 규칙을 범주적으로 재구성한다.
-- 위상에서 부분공간 위상, 몫위상, 컴팩트화는 모두 adjoint 구성이다. Stone–Čech 컴팩트화는 컴팩트 Hausdorff 공간 포함 functor의 left adjoint다.
+- 위상에서 부분공간 위상, 몫위상, 콤팩트화는 모두 adjoint 구성이다. Stone–Čech 콤팩트화는 콤팩트 Hausdorff 공간 포함 functor의 left adjoint다.
 - [Galois 이론](galois-theory.md)의 대응은 부분체와 부분군 사이의 Galois connection, 즉 부분순서 범주 사이 adjunction의 전형이다.[^2]
 - 이산 위상과 비이산 위상을 주는 functor는 망각 functor의 각각 left, right adjoint여서 "위상을 잊는 functor는 양쪽 adjoint를 가진다" 는 예가 된다.
 

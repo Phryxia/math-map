@@ -68,7 +68,7 @@ ZF 안에서 AC, WO, ZL 이 동치다[^2].
 
 - 모든 [벡터 공간](vector-spaces.md)에 기저가 존재한다. 선형독립 부분집합들의 포함관계 부분순서에 ZL 을 적용한다. 유한차원에서는 AC 가 필요하지 않다.
 - 0 이 아닌 가환환의 모든 진 아이디얼은 [극대 아이디얼](prime-ideals.md)에 포함된다. 진 아이디얼들의 집합에 ZL 을 적용하며, chain 의 합집합이 다시 진 아이디얼임은 1 을 포함하지 않는다는 조건에서 나온다.
-- Tychonoff 정리로 [compact](compactness.md) 공간들의 임의 곱은 곱위상에서 compact 다. 이 정리는 AC 와 동치다.
+- Tychonoff 정리로 [콤팩트](compactness.md) 공간들의 임의 곱은 곱위상에서 콤팩트하다. 이 정리는 AC 와 동치다.
 - 체의 대수적 폐포 존재와 유일성, [Galois 이론](galois-theory.md)의 무한 확대 취급.
 - 두 집합의 크기는 항상 비교 가능하다(cardinal comparability). 이 진술도 AC 와 동치다.
 - 가산 개 영집합의 합집합이 영집합이라는 등 [측도](measure.md)론의 여러 기본 사실은 가산 선택(countable choice)만 요구한다.
