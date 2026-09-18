@@ -32,14 +32,6 @@ $$
 
 $\mathrm{Gr}(k,n)$ 을 기준 깃발 $F_1\subset F_2\subset\cdots\subset F_n$ 에 대해 자른다. 부분공간 $V$ 가 각 $F_i$ 와 얼마나 만나는지를 재면 $V$ 의 "위치" 가 정해지고, 같은 위치의 $V$ 들이 세포 하나를 이룬다. 세포는 $k\times(n-k)$ 상자 안에 들어가는 Young 도형 $\lambda$ 로 색인되고, 여차원이 $|\lambda|$ 다.
 
-```mermaid
-graph LR
-  G["Gr(k,n)"] -->|"기준 깃발로 자른다"| C["Schubert 세포 Ω_λ<br/>λ ⊆ k×(n-k) 상자"]
-  C -->|"닫힘"| X["Schubert 다양체 X_λ"]
-  X -->|"기본류"| S["σ_λ ∈ H^{2|λ|}"]
-  S -->|"곱셈"| L["σ_λ·σ_μ = Σ c^ν_{λμ} σ_ν<br/>Littlewood–Richardson"]
-```
-
 세포가 전부 짝수 실차원이라 경계사상이 $0$ 이고, 따라서
 
 $$
