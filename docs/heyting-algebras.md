@@ -61,7 +61,7 @@ $$
 
 으로 정의한다.
 
-수반 조건은 [부분순서](partial-orders.md)의 언어로 Galois 연결이다. 각 $a$ 마다 $(-) \wedge a$ 가 좌수반이고 $a \to (-)$ 가 우수반이다. [범주](category.md)의 관점에서는 $H$ 를 얇은 범주로 볼 때 $(-) \wedge a$ 가 좌수반 [함자](functors.md) 라는 진술과 같다.
+수반 조건은 [부분순서](partial-orders.md)의 언어로 Galois 연결이다. 각 $a$ 마다 $(-) \wedge a$ 가 왼쪽 수반이고 $a \to (-)$ 가 오른쪽 수반이다. [범주](category.md)의 관점에서는 $H$ 를 얇은 범주로 볼 때 $(-) \wedge a$ 가 왼쪽 수반 [함자](functors.md) 라는 진술과 같다.
 
 ## 동치인 공리적 정의
 
@@ -109,7 +109,7 @@ $$
 
 **정리.** 모든 Heyting algebra 는 분배격자다.
 
-*증명 스케치.* $(-) \wedge a$ 가 좌수반이므로 존재하는 모든 상한을 보존하고, 특히 이항 상한을 보존하므로 $a \wedge (b \vee c) = (a \wedge b) \vee (a \wedge c)$ 다. ∎
+*증명 스케치.* $(-) \wedge a$ 가 왼쪽 수반이므로 존재하는 모든 상한을 보존하고, 특히 이항 상한을 보존하므로 $a \wedge (b \vee c) = (a \wedge b) \vee (a \wedge c)$ 다. ∎
 
 ## 부정의 비대칭
 

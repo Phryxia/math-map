@@ -4,7 +4,7 @@
 
 텐서곱은 두 [가군](modules.md) $M$ 과 $N$ 에서 새 가군 $M \otimes_R N$ 을 만드는 구성이며, 쌍선형 사상을 선형 사상으로 바꾸는 가장 경제적인 장치로 정의된다. 두 변수에 각각 선형인 사상이 텐서곱을 거치면 한 변수 [선형사상](linear-maps.md)이 되어 선형대수의 도구가 그대로 적용된다.
 
-정의는 보편성질로 하고 존재는 자유가군을 관계로 나누어 얻는다. 유한차원 벡터 공간에서는 기저의 곱으로 계산되어 차원이 곱해지고, 행렬 수준에서는 Kronecker product 가 된다. 일반 환 위에서 텐서곱은 우완전이지만 좌완전은 아니며, 이 실패가 torsion 을 감지하고 Tor functor 를 낳는다.
+정의는 보편성질로 하고 존재는 자유가군을 관계로 나누어 얻는다. 유한차원 벡터 공간에서는 기저의 곱으로 계산되어 차원이 곱해지고, 행렬 수준에서는 Kronecker product 가 된다. 일반 환 위에서 텐서곱은 우완전이지만 좌완전은 아니며, 이 실패가 torsion 을 감지하고 Tor 함자를 낳는다.
 
 # 직관
 
@@ -95,7 +95,7 @@ $$
 
 ## 사상의 텐서곱
 
-$f : M \to M'$ 과 $g : N \to N'$ 이 선형이면 $f \otimes g : M \otimes N \to M' \otimes N'$ 이 $(f \otimes g)(m \otimes n) = f(m) \otimes g(n)$ 으로 잘 정의된다. 이로써 $- \otimes N$ 은 가군 범주 위의 functor가 된다.
+$f : M \to M'$ 과 $g : N \to N'$ 이 선형이면 $f \otimes g : M \otimes N \to M' \otimes N'$ 이 $(f \otimes g)(m \otimes n) = f(m) \otimes g(n)$ 으로 잘 정의된다. 이로써 $- \otimes N$ 은 가군 범주 위의 함자가 된다.
 
 ## 기본 동형
 
@@ -109,11 +109,11 @@ $$
 R \otimes_R M \cong M, \qquad \Big(\bigoplus_{i} M_i\Big) \otimes_R N \cong \bigoplus_{i} (M_i \otimes_R N)
 $$
 
-직합과의 교환은 텐서곱이 left adjoint 라는 데서 나온다.
+직합과의 교환은 텐서곱이 왼쪽 수반이라는 데서 나온다.
 
 # 성질
 
-## 텐서-Hom adjunction
+## 텐서–Hom 수반
 
 가장 중요한 성질은 다음 자연동형이다.
 
@@ -145,7 +145,7 @@ $$
 
 도 정확하다.
 
-*증명 스케치.* 위 adjunction에 의해 $- \otimes N$ 은 left adjoint이고, left adjoint는 여극한을 보존한다. 전사와 몫은 여극한으로 표현되므로 오른쪽 끝의 정확성이 따라온다. 직접 증명도 짧다. $C \otimes N$ 이 $B \otimes N$ 의 몫으로서 갖는 보편성질을 확인하면 된다. ∎
+*증명 스케치.* 위 수반에 의해 $- \otimes N$ 은 왼쪽 수반이고, 왼쪽 수반은 쌍대극한을 보존한다. 전사와 몫은 쌍대극한으로 표현되므로 오른쪽 끝의 정확성이 따라온다. 직접 증명도 짧다. $C \otimes N$ 이 $B \otimes N$ 의 몫으로서 갖는 보편성질을 확인하면 된다. ∎
 
 ## 좌완전성의 실패
 
@@ -155,7 +155,7 @@ $$
 \mathbb{Z} \xrightarrow{\ \times 2\ } \mathbb{Z} \quad \Longrightarrow \quad \mathbb{Z}/2\mathbb{Z} \xrightarrow{\ 0\ } \mathbb{Z}/2\mathbb{Z}
 $$
 
-왼쪽은 단사지만 오른쪽은 영사상이다. 이 실패의 정도를 재는 것이 Tor functor이고, 예컨대 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) = \mathbb Z/2\mathbb Z$ 다. $- \otimes N$ 이 항상 단사성을 보존하는 가군 $N$ 을 평탄(flat) 가군이라 한다. 자유가군은 평탄하고, PID 위에서는 torsion-free와 평탄이 같다.
+왼쪽은 단사지만 오른쪽은 영사상이다. 이 실패의 정도를 재는 것이 Tor 함자이고, 예컨대 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) = \mathbb Z/2\mathbb Z$ 다. $- \otimes N$ 이 항상 단사성을 보존하는 가군 $N$ 을 평탄(flat) 가군이라 한다. 자유가군은 평탄하고, PID 위에서는 torsion-free와 평탄이 같다.
 
 ## 스칼라 확장
 
@@ -165,7 +165,7 @@ $$
 M \thickspace\longmapsto\thickspace S \otimes_R M
 $$
 
-가 $R$ 가군을 $S$ 가군으로 보낸다. 이를 스칼라 확장이라 하고, 스칼라를 잊는 제한 functor의 left adjoint다.
+가 $R$ 가군을 $S$ 가군으로 보낸다. 이를 스칼라 확장이라 하고, 스칼라를 잊는 제한 함자의 왼쪽 수반이다.
 
 $$
 \mathrm{Hom}\_S(S \otimes_R M, N) \cong \mathrm{Hom}\_R(M, N)
@@ -175,7 +175,7 @@ $$
 
 ## 체 위에서의 단순화
 
-체 위 벡터 공간은 모두 자유이므로 텐서곱이 완전 functor 이고 차원 공식으로 계산이 끝난다. 위에서 본 소멸과 Tor 는 $R$ 이 체가 아닐 때 생기는 현상이며, 텐서곱의 난이도는 계수환의 난이도와 같다.
+체 위 벡터 공간은 모두 자유이므로 텐서곱이 완전 함자이고 차원 공식으로 계산이 끝난다. 위에서 본 소멸과 Tor 는 $R$ 이 체가 아닐 때 생기는 현상이며, 텐서곱의 난이도는 계수환의 난이도와 같다.
 
 # 활용
 
