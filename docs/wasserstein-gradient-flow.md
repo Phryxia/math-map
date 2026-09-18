@@ -58,18 +58,6 @@ $$
 
 퍼텐셜 항 $\int V\rho$ 를 더하면 속도장에 $-\nabla V$ 가 붙어 Fokker–Planck 방정식이 되고, 이것이 SDE $dX_t=-\nabla V(X_t)dt+\sqrt2\thinspace dB_t$ 의 밀도 방정식이다.
 
-```mermaid
-graph TD
-  E["유클리드 경사하강<br/>x' = argmin f + |x−x^k|²/2τ"] -->|"거리를 W_2 로"| J["JKO 스킴<br/>ρ' = argmin F + W_2²/2τ"]
-  BB["Benamou–Brenier<br/>W_2² = min ∫|v|²ρ"] --> G["P_2 의 Riemann 구조<br/>접공간 = {∇φ}"]
-  G --> J
-  J -->|"τ → 0"| FP["∂_t ρ = ∇·(ρ∇δF/δρ)<br/>Fokker–Planck"]
-  FP -->|"F = ∫ρlogρ"| H["열방정식 ∂_tρ = Δρ"]
-  FP -->|"SDE 의 밀도"| SDE["dX = −∇V dt + √2 dB"]
-  C["F 의 변위 볼록성 (λ-볼록)"] --> R["W_2(ρ_t,ρ_∞) ≤ e^{−λt} W_2(ρ_0,ρ_∞)<br/>엔트로피 지수 소산"]
-  FP --> R
-```
-
 # 정의
 
 ## 자유에너지와 기울기 흐름

@@ -57,20 +57,6 @@ $$
 
 Sinkhorn 반복의 한 단계는 $\mathcal C_1$ 로의 KL 사영, 다음 단계는 $\mathcal C_2$ 로의 KL 사영이다. 아핀집합으로의 Bregman 교대 사영이 교집합으로 수렴한다는 정리의 특수한 경우다.
 
-```mermaid
-graph TD
-  LP["선형계획<br/>⟨C,P⟩ 최소화"] -->|"꼭짓점 해, 미분 불가"| PB["문제"]
-  LP -->|"+ 엔트로피 −εH(P)"| EOT["강볼록 문제"]
-  EOT -->|"= ε·KL(P ‖ e^{-C/ε})"| KL["K 로의 KL 사영"]
-  EOT -->|"Lagrange 승수"| DS["P = diag(u) K diag(v)"]
-  KL --> ALT["C₁ = 행 제약, C₂ = 열 제약<br/>번갈아 사영"]
-  DS --> ALT
-  ALT -->|"Birkhoff–Hopf"| CONV["Hilbert 거리에서 선형 수렴<br/>비율 λ = tanh(Δ/4ε)"]
-  CONV -->|"ε 작으면 λ → 1"| SLOW["반복 폭증"]
-  EOT -->|"ε > 0 의 대가"| BIAS["OT_ε(a,a) ≠ 0 : 편향"]
-  BIAS -->|"S_ε = OT_ε(a,b) − ½OT_ε(a,a) − ½OT_ε(b,b)"| SD["Sinkhorn 발산"]
-```
-
 ## 수렴의 근거
 
 Sinkhorn 반복은 $u$ 를 양수 벡터의 사영공간에서 움직이고, 그 공간의 거리가 **Hilbert 사영 거리**다.
