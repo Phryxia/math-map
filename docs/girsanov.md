@@ -64,7 +64,7 @@ $$
 
 $P$ Brown 운동에 표류 $\theta$ 를 더한 것이 $Q$ Brown 운동이고, $Q$ 아래에서는 원래의 표류가 사라진다.
 
-## SDE 의 표류 바꾸기
+## SDE 의 표류 변경
 
 $dX_t = b_t\thinspace dt + \sigma_t\thinspace dB_t$ 에서 표류를 $\tilde b$ 로 바꾸려면 $\sigma_t\theta_t = b_t - \tilde b_t$ 를 풀어 $\theta$ 를 정한다. $Q$ 아래에서
 
@@ -86,7 +86,7 @@ $$
 
 $\sigma$ 가 다른 두 확산은 서로 특이하다. 이차변동이 다르면 한쪽에서 확률 1 인 사건이 다른 쪽에서 확률 0 이다. 무한 구간 $[0,\infty)$ 에서도 대수의 법칙으로 표류가 식별되어 절대연속성이 깨지므로, Girsanov 정리는 유한한 시평 $T$ 에 대한 진술이다.
 
-## 되돌리기
+## 기댓값의 변환
 
 기댓값을 옮기는 공식은 [측도변환](change-of-measure.md)의 일반 공식 그대로다.
 
