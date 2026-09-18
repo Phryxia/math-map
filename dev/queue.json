@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "savedAt": "2026-09-18T00:27:48.008Z",
+  "savedAt": "2026-09-18T00:46:46.385Z",
   "nextSeq": 525,
   "items": [
     {
@@ -20,22 +20,6 @@
       "seq": 520
     },
     {
-      "id": "02e67868",
-      "title": "unbalanced-optimal-transport 의 이상치 수치 실험 코드 정리",
-      "priority": 50,
-      "note": "## 이상치와 유효 사거리 절의 파이썬 실험을 지우고 관찰(균형 해의 비용이 이상치에서 오고 tau 를 줄이면 그 질량이 버려진다)만 문장으로 남긴다. 코드 규칙",
-      "createdAt": "2026-09-18T00:27:47.580Z",
-      "seq": 522
-    },
-    {
-      "id": "36dc86c7",
-      "title": "variational-autoencoder 의 기울기 추정량 분산 시뮬레이션 정리",
-      "priority": 50,
-      "note": "## 두 기울기 추정량의 분산 절의 numpy 시뮬레이션을 지우고 재매개화 추정량의 분산이 점수함수 추정량보다 작다는 진술과 이유만 남긴다. 코드 규칙",
-      "createdAt": "2026-09-18T00:27:47.720Z",
-      "seq": 523
-    },
-    {
       "id": "5768c1c4",
       "title": "4절 헤딩 grep 의 구멍: 의문사로 시작하는 헤딩 훑기",
       "priority": 40,
@@ -50,14 +34,6 @@
       "note": "2026-09-17 여섯 번째 회차 신설. 지난 회차가 판정 순서도형(grep -ln '인가\"]|는가\"]|{\"') 30 개를 소진하고 '다른 나열형은 다른 기준으로 훑어야 한다' 고 남겼는데, 이번 회차에 그 다른 기준이 확인됐다. 논증 사슬형 mermaid 다. 노드가 개념이 아니라 증명 단계나 결론('왜 되는가', 'dim <= 1 (국소)', 'Z(T) 가 C_p 에서 유리형', '발산하지만 유용')이고 화살표가 '따라서' 를 뜻하는 그림이다. 이번 회차에 12 개를 지웠다: whittaker-models rankin-selberg godement-jacquet satake-isomorphism dwork-rationality euler-maclaurin kl-divergence exponential-families poisson-summation gamma-function mellin-transform laplace-method kahler-manifolds. 반대로 남긴 것은 4절이 허용하는 구조 도형이다: yoneda-lemma(자연성 사각형), natural-transformations(naturality 사각형), tensor-products(보편성질 도형), localization-rings(Spec R 과 Spec R_p 의 소 아이디얼 대응), np-completeness(환원 사슬 — 어느 문제가 어느 문제로 환원되는지가 곧 내용), fft(재귀 분할 구조). 판정법: 노드 라벨을 읽어 문장이면 후보, 대상의 이름이면 남긴다. 화살표가 '~이므로' 로 읽히면 후보, '~의 부분/대응' 으로 읽히면 남긴다. 저장소에 mermaid 를 가진 문서가 아직 많으므로 grep -l '```mermaid' docs/*.md 로 목록을 만들고 이 기준으로 훑는다",
       "createdAt": "2026-09-17T21:00:05.774Z",
       "seq": 518
-    },
-    {
-      "id": "16e3e8ab",
-      "title": "lovasz-theta 홀수 순환 값의 폐형식",
-      "priority": 30,
-      "note": "## 홀수 순환의 값 절의 삼분 탐색 코드를 theta(C_n)=n cos(pi/n)/(1+cos(pi/n)) 폐형식과 그 유도로 바꾼다. 수치 확인 코드는 코드 규칙에 어긋난다",
-      "createdAt": "2026-09-18T00:27:47.845Z",
-      "seq": 524
     },
     {
       "id": "82823d56",
