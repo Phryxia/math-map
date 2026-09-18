@@ -110,7 +110,7 @@ $$
 Z_v(\mathbf 1_{\mathcal O_v},\chi_v,s)=\sum_{n\ge0}\chi_v(\varpi)^nN\mathfrak p^{-ns}=\frac1{1-\chi_v(\varpi)N\mathfrak p^{-s}}
 $$
 
-가 된다. $\chi_v$ 가 분기하면($\mathcal O_v^\times$ 에서 자명하지 않으면) 같은 합에서 지표의 직교성 때문에 $n\ge1$ 항이 모두 상쇄되어 값이 $1$ 이다. Euler 곱에서 분기한 소수의 인자가 빠지는 현상이 여기서 나온다.
+가 된다. $\chi_v$ 가 분기하면($\mathcal O_v^\times$ 에서 자명하지 않으면) 같은 합에서 지표의 직교성 때문에 $n\ge1$ 항이 모두 상쇄되어 값이 $1$ 이다. 이 상쇄가 Euler 곱에서 분기한 소수의 인자를 뺀다.
 
 무한 자리는 실수와 복소수를 나눠 계산한다.
 

@@ -183,7 +183,7 @@ $c_{p^m}=\sum_{k=0}^m\alpha^k\beta^{m-k}$ 는 $\mathrm{GL}\_2(\mathbb C)$ 의 $m
 - **Langlands 강령의 전제.** 자기동형 $L$ 함수의 좋은 성질이 [강령](langlands-program.md)의 모든 진술의 전제이고, $\mathrm{GL}\_n$ 표준 $L$ 함수에 대해 이 정리가 그것을 무조건적으로 준다.
 - **강한 중복도 1.** 표준 $L$ 함수가 표현을 결정한다는 정리(Jacquet–Shalika)가 거의 모든 자리의 Satake 매개변수로 $\pi$ 가 정해진다는 말이고, 증명에 이 적분이 쓰인다.
 - **[Rankin–Selberg](rankin-selberg.md).** $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 의 $L$ 함수를 다루는 Jacquet–Piatetski-Shapiro–Shalika 의 적분은 이 방법의 형제다. 함수성 판정과 Ramanujan 형 추정의 주요 도구다.
-- **국소 상수.** 분기 자리의 $\varepsilon(s,\pi)$ 를 Galois 쪽 근 수와 맞추는 국소 Langlands 대응의 검증 조건이 여기서 나온다.
+- **국소 상수.** 국소 Langlands 대응의 검증 조건은 분기 자리의 $\varepsilon(s,\pi)$ 를 Galois 쪽 근 수와 맞추는 것이다.
 - **더 일반적인 군.** $M_n$ 같은 벡터공간이 없는 군에서는 이 방법이 통하지 않는다. Braverman–Kazhdan 과 L. Lafforgue 가 일반 군에 대해 같은 역할을 하는 공간을 찾는 강령을 제안했다.
 
 [^1]: R. Godement, H. Jacquet, *Zeta Functions of Simple Algebras*, Lecture Notes in Math. 260 (1972). Tate 이론과의 비교는 D. Bump, *Automorphic Forms and Representations* (1997) 3장. Satake 매개변수와 비분기 계산은 같은 책 4장, 또는 A. Knapp 의 Motives 논문집 개설. Rankin–Selberg 쪽은 H. Jacquet, I. Piatetski-Shapiro, J. Shalika, *Rankin–Selberg convolutions*, Amer. J. Math. **105** (1983). 일반 군으로의 확장 제안은 A. Braverman, D. Kazhdan, *γ-functions of representations and lifting*, GAFA (2000).
