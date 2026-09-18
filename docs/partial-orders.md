@@ -116,6 +116,7 @@ $P$ 의 원소를 대상으로 삼고 $x \le y$ 일 때 $x$ 에서 $y$ 로 가�
 ## 선수지식
 
 - [동치관계와 동치류](relations.md)
+- [순서 이론 개관](order-theory-overview.md)
 
 ## 더 알아보기
 
