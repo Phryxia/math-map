@@ -18,7 +18,7 @@ $\prod_{n\ge1}(1+u_n)$ 은 $\sum_n\vert u_n\vert$ 이 수렴하면 절대수렴�
 
 $$E_0(z)=1-z,\qquad E_p(z)=(1-z)\exp\left(z+\frac{z^2}2+\cdots+\frac{z^p}p\right)$$
 
-를 **기본 인수**라 한다. 지수부는 $\log(1-z)$ 의 Taylor 전개 앞 $p$ 항을 상쇄하므로 $\vert z\vert\le1/2$ 에서 $\vert1-E_p(z)\vert\le2\vert z\vert^{p+1}$ 이다. $E_p$ 의 영점은 $z=1$ 하나뿐이고 단순하다.
+를 **기본 인수**라 한다. 지수부는 $\log(1-z)$ 의 Taylor 전개 앞 $p$ 항을 상쇄하므로 $\vert z\vert\le1/2$ 에서 $\vert 1-E_p(z)\vert\le2\vert z\vert^{p+1}$ 이다. $E_p$ 의 영점은 $z=1$ 하나뿐이고 단순하다.
 
 ## 위수
 

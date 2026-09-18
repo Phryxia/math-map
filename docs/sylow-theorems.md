@@ -144,7 +144,7 @@ $$
 
 ## 위수별 Sylow 수
 
-$n_p\equiv1\pmod p$ 와 $n_p\mid m$ 두 조건만으로 위수 15 에서는 $n_3=n_5=1$ , 위수 20 과 100 에서는 $n_5=1$ , 위수 255 에서는 $n_{17}=1$ 이 나와 정규 Sylow 부분군이 있다. 위수 30 에서는 $n_2\in\lbrace1,3,5,15\rbrace$ , $n_3\in\lbrace1,10\rbrace$ , $n_5\in\lbrace1,6\rbrace$ 으로 산술 조건만으로는 부족하다.
+$n_p\equiv1\pmod p$ 와 $n_p\mid m$ 두 조건만으로 위수 15 에서는 $n_3=n_5=1$ , 위수 20 과 100 에서는 $n_5=1$ , 위수 255 에서는 $n_{17}=1$ 이 나와 정규 Sylow 부분군이 있다. 위수 30 에서는 $n_2\in\lbrace 1,3,5,15\rbrace$ , $n_3\in\lbrace 1,10\rbrace$ , $n_5\in\lbrace 1,6\rbrace$ 으로 산술 조건만으로는 부족하다.
 
 ## 유한군의 구조 분석
 
