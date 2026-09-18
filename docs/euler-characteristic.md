@@ -137,4 +137,4 @@ $$
 - [곡면의 분류](classification-of-surfaces.md)
 - [Gauss–Bonnet 정리](gauss-bonnet.md)
 
-#topology
+#topology #algebraic_topology #graph_theory #combinatorics

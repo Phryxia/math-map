@@ -140,4 +140,4 @@ Klein 의 관점에서 기하학은 어떤 변환군 아래 불변인 성질의 
 - [군의 표현과 지표](group-representations.md)
 - [덮개공간](covering-spaces.md)
 
-#group_theory
+#group_theory #algebra #combinatorics #field_theory
