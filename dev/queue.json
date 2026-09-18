@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-09-18T16:50:26.508Z",
-  "nextSeq": 575,
+  "savedAt": "2026-09-18T20:58:17.878Z",
+  "nextSeq": 586,
   "items": [
     {
       "id": "a4a71183",
@@ -28,20 +28,12 @@
       "seq": 571
     },
     {
-      "id": "af79b853",
-      "title": "나열형 mermaid 가 남은 문서 훑기 (5차)",
+      "id": "e6da6e95",
+      "title": "나열형 mermaid 가 남은 문서 훑기 (6차)",
       "priority": 40,
-      "note": "2026-09-18 세 번째 회차에 4차를 했다. 4차 기준은 3차 노트가 제안한 '노드가 절 제목의 재열거인 그림' 이다. 검사기는 스크래치패드 mermaid4.mjs: 문서의 H2 헤딩을 모으고(코드펜스 안은 건너뛴다) mermaid 노드 라벨 X[\"...\"] 을 뽑아, <br/> 와 공백과 따옴표를 지운 뒤 서로 포함관계면 일치로 세어 일치율 0.6 이상을 후보로 낸다. 노드 3 개 미만은 제외. 후보 4 건 중 셋을 처리했다: uniform-convergence(점별->균등->연속성/적분/sup 노름의 함의 나열, 직관 절 바로 위 목록과 각 H2 가 전부 담고 있어 삭제), prime-number-theorem(소인수분해 유일성부터 오차항까지 증명 단계 사슬, '증명의 핵심 단계' 와 '0 점의 역할' 이 담고 있어 삭제), bounded-operators(스펙트럼 삼분 -> 표로 전환, 유한차원에서 합쳐진다는 그림의 점선 정보는 문장으로 옮김). connectedness 는 3 차와 같은 판정으로 남겼다(함의 관계 그래프). 이 기준으로 남은 후보는 없다. 5 차는 또 다른 기준이 필요하다. 아직 안 쓴 것: 화살표에 라벨이 하나도 없고 노드가 전부 한 단어인 그림(정의의 사슬일 가능성), subgraph 가 없는 graph LR 에 노드 3~5 개뿐인 그림",
-      "createdAt": "2026-09-18T16:40:46.689Z",
-      "seq": 567
-    },
-    {
-      "id": "629ca786",
-      "title": "개관이 없는 분야 셋 판정 (암호, 정보이론, 기계학습)",
-      "priority": 40,
-      "note": "2026-09-18 세 번째 회차에 order-theory-overview 를 만들어 순서 이론을 닫았다. 주 분야(태그 줄 첫 태그) 기준으로 개관이 없는 분야가 셋 남았다: #cryptography 5 개(discrete-logarithm homomorphic-encryption pairing-based-cryptography post-quantum-cryptography rsa-cryptosystem, 전체 태그로는 16), #information_theory 4 개(channel-coding entropy kl-divergence source-coding, 전체 12), #machine_learning 3 개(diffusion-models flow-matching variational-autoencoder, 전체 15). 4.5 절의 '문서 10 개 이상' 을 전체 태그 수로 읽으면 셋 다 대상이고 주 분야 수로 읽으면 셋 다 미달이다. 셋 중 암호가 주 분야 5 개로 가장 크고 number-theory-overview 의 갈래와 겹치는지부터 봐야 한다. 검사기는 이 회차에 쓴 인라인 node 스크립트다(문서마다 마지막 줄 첫 태그를 주 분야로 잡고 분야->개관 대응표로 해당 개관 본문에 (id.md) 가 있는지 본다). 같은 스크립트로 기존 개관 12 개의 갈래 누락은 0 건임을 확인했다",
-      "createdAt": "2026-09-18T16:43:56.579Z",
-      "seq": 569
+      "note": "2026-09-18 네 번째 회차에 5차를 했다. 검사기는 스크래치패드 mermaid5.mjs 로 4 차 노트가 제안한 두 기준을 구현했다: A 화살표 라벨이 하나도 없고 노드 라벨이 전부 한 단어, B subgraph 없는 graph/flowchart LR 에 노드 3~5 개. 후보 22 건(A 4, B 18)을 전부 눈으로 판정했다. 지운 것 4 개: supersingular-isogeny-graphs(E 에서 이웃 l+1 개로 뻗는 부채꼴, 앞뒤 문장이 담고 있어 몫곡선 표기만 문장으로 옮김), schubert-calculus(Gr -> 세포 -> 다양체 -> 류 -> 곱 사슬, 뒤의 절들이 전부 담음), bayes(사전 x 우도 -> 정규화 -> 사후 계산 흐름, 바로 아래 문장이 축차 갱신까지 담음), beilinson-bernstein(범주 O -> D 가군 -> 편향층 -> KL 다항식 대응 사슬, Kazhdan-Lusztig 절이 담음). 남긴 것 18 개는 4 절이 허용하는 구조 도형이다: 가환도와 보편성질(category monads natural-transformations tensor-products kleisli-eilenberg-moore conditional-expectation manifolds), 함의 관계 그래프(expander-graphs fontaine-mazur), Hasse 도형과 확대의 탑(fields finite-fields), 실제 그래프나 트리의 예(dynamic-programming fermat-euler-theorem), 알고리즘의 두 경로 비교(deuring-correspondence). 판정을 보류하고 남긴 경계 사례 넷은 6 차에서 다시 볼 것: domain-theory(Kleene 사슬), error-correcting-codes(부호화-채널-복호 파이프라인), wkb-approximation(영역별 해와 연결), serre-conjecture(분기 -> 레벨/무게 -> 고유형식 두 경로). 이 두 기준으로 남은 후보는 없다. 다음 기준 후보: subgraph 를 쓰는 큰 그림 가운데 노드가 전부 절 제목인 것",
+      "createdAt": "2026-09-18T20:53:37.516Z",
+      "seq": 582
     },
     {
       "id": "700234d5",
@@ -60,28 +52,12 @@
       "seq": 549
     },
     {
-      "id": "1b16f4cc",
-      "title": "리프 문서 104 개의 후속 간선 훑기",
-      "priority": 20,
-      "note": "2026-09-18 두 번째 회차에 node dev/graph.mjs leaves 가 104 개를 냈다. 이 회차에 uniform-convergence -> power-series 하나를 그었다(멱급수가 수렴원 내부 균등수렴과 항별 미분에서 균등수렴 절의 정리에 의존한다). 판정 기준은 5절이다: 도구로 한 번 쓰는 관계는 간선이 아니라 본문 링크다. 남은 리프 대부분은 연구 주제 문서(speh-representations, umbral-moonshine, witten-asymptotics 처럼)라 후속이 저장소에 없는 것이 정상이고, 기초 문서가 리프인 경우(uniform-continuity, shortest-paths, spherical-harmonics)가 실제 구멍이다",
-      "createdAt": "2026-09-18T12:56:56.969Z",
-      "seq": 563
-    },
-    {
       "id": "33878de9",
       "title": "'A와 B' 제목 177 개의 규격 판정",
       "priority": 20,
       "note": "2026-09-18 두 번째 회차에 검사만 했다. 검사법은 4절의 grep 이 아니라 첫 줄 기준이어야 한다(grep -l '^# .*[와과] ' 는 모든 문서의 '# 연관 문서' 에 걸려 385 개를 낸다). for f in docs/*.md; do head -1 $f | grep -qE '^# .*[와과] ' && echo $f; done 으로 177 개다. 표본을 보면 대부분 4절이 예외로 둔 꼴이다: 정리 이름과 그 정리가 답하는 개념(algebraic-k-theory '대수적 K 이론과 Quillen–Lichtenbaum', axiom-of-choice '선택공리와 Zorn 보조정리', bernoulli-numbers), 한 개념의 두 이름이나 쌍(adeles '아델과 이델', borel-pade). 실제 위반은 파일명이 둘 중 하나만 가리키는 경우이므로 판정은 제목이 아니라 파일명 대조로 해야 한다. 후보 추출법: 제목을 '와/과' 로 갈라 두 조각을 만들고, 파일명 id 의 영문이 한쪽에만 대응하며 다른 쪽이 독립 문서가 될 만한 분량(그 주제의 절이 3 개 이상)인지 본다",
       "createdAt": "2026-09-18T12:57:52.896Z",
       "seq": 564
-    },
-    {
-      "id": "db0dba5f",
-      "title": "여극한/쌍대극한 표기 통일",
-      "priority": 20,
-      "note": "adjunctions 를 손보며 확인했다. 쌍대극한 13 대 여극한 7 로 갈려 있다. 같은 문서 안에서 섞여 쓰는 곳이 있는지 grep -l 로 대조하고 다수인 쌍대극한으로 맞춘다. 좌수반/우수반(heyting-algebras 3 건)도 왼쪽 수반/오른쪽 수반으로 갈지 같이 판정한다",
-      "createdAt": "2026-09-18T16:39:12.260Z",
-      "seq": 566
     },
     {
       "id": "cc5b9b43",
@@ -92,12 +68,20 @@
       "seq": 572
     },
     {
-      "id": "169be13e",
-      "title": "LaTeX 렌더 오류 회귀 점검 (KaTeX 파싱)",
-      "priority": 12,
-      "note": "2026-09-17 세 번째 회차에 돌려 수식 30448 개 오류 0 을 확인했다(직전 회차 30358 개). 이번 회차에 수식을 많이 고쳤는데도 회귀가 없다. 검사기는 스크래치패드 katexcheck.mjs 다. npm i katex --no-save 로 설치하면 package.json 과 package-lock.json 이 그대로라 git checkout 으로 되돌릴 필요가 없다. import 경로는 node_modules/katex/dist/katex.mjs 다(패키지 루트의 katex.mjs 는 없다). 코드펜스와 인라인 코드를 마스킹하고 인용부호 접두어를 벗긴 뒤 $$ 블록(여러 줄과 한 줄 모두)과 인라인 조각을 뽑아 renderToString(frag, {throwOnError:true, displayMode, strict:(c)=>c==='unicodeTextInMathMode'?'error':'ignore'}) 로 돌린다. 한글 판정에서 \\text{}/\\mathrm{} 안쪽은 제외해야 인라인 짝짓기가 새지 않는다",
-      "createdAt": "2026-09-17T08:55:24.500Z",
-      "seq": 476
+      "id": "6c348c06",
+      "title": "영문 용어가 섞인 범주론 문서 훑기",
+      "priority": 20,
+      "note": "2026-09-18 네 번째 회차에 db0dba5f(여극한/쌍대극한)를 끝냈다. 여극한은 tensor-products 1 건뿐이었고 쌍대극한으로 고쳤다. 좌수반/우수반은 heyting-algebras 3 건이었고 왼쪽 수반/오른쪽 수반으로 고쳤다(700234d5 의 판정을 따랐다). 같은 문서 안에서 함자와 functor 가 섞이므로 tensor-products 의 functor 4 건도 함자로 옮겼다. 남은 후보: grep -ln 'functor\\|adjoint\\|adjunction' docs/*.md 로 나오는 문서 가운데 같은 문서에 한국어 표기가 함께 있는 것. unit/counit 은 monads 가 영문으로 쓰므로 영문을 유지한다",
+      "createdAt": "2026-09-18T20:47:58.221Z",
+      "seq": 578
+    },
+    {
+      "id": "a93f9446",
+      "title": "리프 문서 103 개의 후속 간선 훑기 (3차)",
+      "priority": 20,
+      "note": "2026-09-18 네 번째 회차에 2차를 했다. 노트가 실제 구멍으로 지목한 셋 가운데 uniform-continuity 를 메웠다: Arzelà–Ascoli 정리(arzela-ascoli)를 새로 쓰고 uniform-continuity 와 banach-spaces 를 부모로 달았다. 나머지 둘은 후속이 저장소에 없다는 판정이다. shortest-paths 는 network-flow 가 최단경로를 언급조차 하지 않아 간선 근거가 없고(최소비용흐름 문서가 생기면 다시 볼 것), spherical-harmonics 는 peter-weyl 과 weyl-character-formula 가 형제·조상이라 후속이 아니다. 새 주제 후보로 남은 것: 절대연속과 유계변동, Lipschitz 사상, Montel 정리와 Riemann 사상 정리, Peano 존재정리. 앞의 둘은 measure-theory, 뒤의 둘은 complex-analysis 와 analysis 가 붙을 자리다",
+      "createdAt": "2026-09-18T20:50:49.770Z",
+      "seq": 579
     },
     {
       "id": "a393c19c",
@@ -106,14 +90,6 @@
       "note": "2026-09-17 세 번째 회차에 스크래치패드 mapcheck.mjs 로 개관 12 개 화살표 270 개를 대조해 위반 0 을 확인했다(직전 회차 284 개 중 1 건 수정). 이번 회차에 analysis-overview 지도의 PS 라벨을 '멱급수와 Taylor 급수' 에서 '멱급수' 로 바꿨는데 간선은 그대로다. 주의 넷: (1) '# 지도' 뒤가 한글이라 정규식에 \\b 를 쓰면 매치가 안 된다. /^# 지도\\s*$[\\s\\S]*?```mermaid/m 로 쓴다. (2) 한 줄에 A --> B --> C 체인이 오므로 줄 단위가 아니라 순차 파싱을 한다. (3) 라벨이 여러 문서 제목의 접두사일 수 있다. 'Galois 표현' 은 galois-representations('Galois 표현과 에탈 코호몰로지')와 deformation-rings('Galois 표현의 변형과 보편 변형환') 둘 다의 접두사라, 먼저 찾은 하나만 쓰면 오검출 2 건이 난다. 후보를 전부 모아 하나라도 실제 간선이면 통과로 봐야 한다. (4) 해석 못하는 라벨 14 개는 개관이 쓰는 약칭이라 손댈 것이 없다",
       "createdAt": "2026-09-17T08:56:21.662Z",
       "seq": 477
-    },
-    {
-      "id": "67f0658c",
-      "title": "본문 링크가 표시 제목과 다른 문서를 가리키는 자리 회귀 점검",
-      "priority": 12,
-      "note": "2026-09-17 세 번째 회차에 다시 돌려 회귀 없음(진짜 위반 0). 이번 회차에 power-series 제목을 '멱급수와 Taylor 급수' 에서 '멱급수' 로 좁히고 표시 제목 8 곳(analysis-overview, bernoulli-numbers, derivative, limits, residue-theorem, uniform-convergence, fourier-series 의 '거듭제곱 급수', derivative 의 'Taylor 급수')을 맞췄는데 새 위반이 없다. 보고 9 건은 전부 기존 접두사 충돌 오검출이다. '직관주의 논리'->intuitionism 7 건은 8 절대로 철학과 형식 체계를 합친 문서라 라벨이 맞고 kripke-semantics 의 제목 '직관주의 논리의 Kripke 의미론' 과 겹쳤을 뿐이다. '확률'->probability 2 건은 probabilistic-method 등과 겹친 기존 오검출이다. 검사법: 코드펜스를 건너뛰고 본문 링크 [라벨](id.md) 에서 라벨이 대상 제목이거나 그 접두사이면 통과, 아니면 다른 문서 제목과 같거나 그 접두사인지 본다",
-      "createdAt": "2026-09-17T08:56:51.979Z",
-      "seq": 478
     },
     {
       "id": "1c4e03aa",
@@ -154,14 +130,6 @@
       "note": "2026-09-17 다섯 번째 회차에 열 개를 모두 4절 문체로 고쳤다: riemann-roch, marchenko-pastur, monstrous-moonshine, zhu-algebra, littlewood-richardson, fargues-scholze, rice-theorem, mv-cycles, adjunctions, link-cut-trees. 손질 내용은 서술형·비유형 헤딩의 명사구 전환, 검증 과정 산문과 실행되지 않는 예시 코드 제거, 나열형 mermaid 제거, 첨자 이스케이프, 분야 태그 채우기다. 다음 회차에는 고친 문서들이 4절 문체를 유지하는지만 확인하면 된다. adjunctions 와 link-cut-trees 는 아직 280~300 줄로 길어 8절 분할 후보인지 따로 볼 만하다",
       "createdAt": "2026-09-17T16:53:55.526Z",
       "seq": 507
-    },
-    {
-      "id": "7589dde6",
-      "title": "분야 태그가 하나뿐인 문서 채우기",
-      "priority": 12,
-      "note": "2026-09-17 다섯 번째 회차에 통계 문서 넷(exponential-families, hypothesis-testing, confidence-intervals, linear-regression)을 채워 별도 항목을 소진했고, 이번 회차에 보강한 문서들(riemann-roch, monstrous-moonshine, zhu-algebra, rice-theorem, link-cut-trees)도 함께 채웠다. 남은 후보 약 53 개: cardinality, category, compactness, completeness, concentration-inequalities, connectedness, curvature, derivative, determinants, entropy, euler-characteristic 등. 6절은 일괄 작업이 아니라 그 문서를 보강하는 회차에 함께 채우라고 한다. 후보 찾기: for f in docs/*.md; do [ \"$(tail -1 \"$f\" | grep -o '#[a-z0-9_]*' | wc -l)\" -le 1 ] && echo \"$f\"; done",
-      "createdAt": "2026-09-17T16:56:14.009Z",
-      "seq": 508
     },
     {
       "id": "be0749a7",
@@ -314,6 +282,38 @@
       "note": "2026-09-18 세 번째 회차에 2차를 돌려 문서 387 개 전부에서 위반 0 건을 확인했다. 검사기는 스크래치패드 mathfive.mjs 다. 4절의 awk 와 grep 네 개를 한 스크립트로 합치되 코드펜스와 인라인 코드를 마스킹하고 $$ 블록 상태를 추적한다. 마스킹 덕분에 mermaid 안의 태그형 부등호와 첨자가 오검출로 잡히지 않는다. 검사 항목 다섯: 수식 줄의 백슬래시+ASCII 문장부호(이스케이프 해제), <영문자(HTML 태그), 줄 끝 백슬래시, 수식 안의 ](  링크, 인라인 $...$ 와 $$ 블록 안에서 앞이 영숫자가 아닌 _. 다음 회차에는 이 스크립트를 그대로 다시 돌리면 된다",
       "createdAt": "2026-09-18T16:49:33.608Z",
       "seq": 574
+    },
+    {
+      "id": "7252bb5c",
+      "title": "개관 21 개의 지도 mermaid 부분그래프 회귀 점검",
+      "priority": 12,
+      "note": "2026-09-18 네 번째 회차에 스크래치패드 mapcheck.mjs 로 새 개관 넷(cryptography, information-theory, machine-learning, functional-analysis)의 화살표 70 개를 대조해 위반 0, 라벨 해석 실패 0 을 확인했다. 기존 개관 17 개는 이 회차에 다시 돌리지 않았다. 검사기 주의점은 a393c19c 항목의 노트와 같다: 지도 정규식은 /^# 지도\\s*$[\\s\\S]*?```mermaid/m, 한 줄의 A --> B --> C 체인은 순차 파싱, 라벨이 여러 제목의 접두사이면 후보를 전부 모아 하나라도 실제 간선이면 통과",
+      "createdAt": "2026-09-18T20:46:42.168Z",
+      "seq": 577
+    },
+    {
+      "id": "74058fe4",
+      "title": "본문 링크가 표시 제목과 다른 문서를 가리키는 자리 회귀 점검",
+      "priority": 12,
+      "note": "2026-09-18 네 번째 회차에 다시 돌렸다. 검사기는 스크래치패드 labelcheck.mjs 다(코드펜스를 건너뛰고 본문 링크의 라벨이 대상 제목이거나 그 접두사이면 통과, 아니면 그 라벨을 제목이나 접두사로 가지는 다른 문서를 함께 출력한다). 접두사 불일치는 367 건이지만 전부 정상 축약이고, 다른 문서와 충돌하는 진짜 후보는 10 건이었다. 이 회차에 만든 개관 넷 때문에 새로 생긴 둘을 고쳤다: variational-autoencoder 의 '정보이론'->kl-divergence 는 information-theory-overview 와 충돌해 '상호정보량' 으로, order-theory-overview 의 '격자'->order-lattices 는 lattices('격자와 최단벡터 문제')와 충돌해 '순서론의 격자' 로 바꿨다. 남은 8 건은 기존 오검출이다: '직관주의 논리'->intuitionism 6 건(8 절대로 합친 문서라 라벨이 맞고 kripke-semantics 제목과 겹쳤을 뿐), '확률'->probability 2 건. 새 문서나 새 개관을 만든 회차마다 다시 돌릴 것. 새 개관의 이름이 기존 문서의 축약 라벨과 겹치는 것이 이 검사가 잡는 전형적인 사고다",
+      "createdAt": "2026-09-18T20:55:21.486Z",
+      "seq": 583
+    },
+    {
+      "id": "18cae9f9",
+      "title": "LaTeX 렌더 오류 회귀 점검 (KaTeX 파싱)",
+      "priority": 12,
+      "note": "2026-09-18 네 번째 회차에 돌려 수식 31811 개 가운데 오류 14 개를 찾아 고쳤다(직전 회차 30448 개 오류 0 에서 회귀). 전부 같은 원인이다: 4 절이 요구하는 '명령 뒤에 영숫자가 오면 공백 하나' 를 \\ast 가 지키지 않아 \\astT, \\asty, \\astg, \\astb 가 정의되지 않은 명령으로 읽혔다. 고친 문서 여덟: bounded-operators fft fourier fundamental-group index-theorem modular-tensor-categories satake-isomorphism zhu-algebra. 일괄 치환은 perl -i -pe 's/\\\\ast([a-zA-Z0-9])/\\\\ast $1/g' 다. render-check 도 4 절의 grep 여섯도 이것을 잡지 못하므로 이 KaTeX 점검이 유일한 그물이다. 검사기는 스크래치패드 katexcheck.mjs 이고, npm i katex --no-save 로 설치하면 package.json 이 그대로다. import 경로는 절대경로 /home/user/math-map/node_modules/katex/dist/katex.mjs 로 쓸 것(스크래치패드에서 상대경로가 /tmp 기준으로 풀린다). 같은 오류가 \\thinspace, \\lbrace, \\lt, \\gt 뒤에서도 날 수 있으니 다음 회차에 grep -n '\\\\(thinspace|lbrace|rbrace|lt|gt|Vert|vert|mid)[a-zA-Z0-9]' 로 함께 훑을 것",
+      "createdAt": "2026-09-18T20:56:33.735Z",
+      "seq": 584
+    },
+    {
+      "id": "dc50666e",
+      "title": "닫는 달러 뒤 공백 규칙을 문장부호에도 적용할지 판정",
+      "priority": 12,
+      "note": "2026-09-18 네 번째 회차에 검사했다. 4 절은 '닫는 $ 뒤에는 공백 1 개를 둔다' 고 하는데, 그것을 어긴 자리가 31 곳이다. 문자 분포는 쉼표 27, 닫는 괄호 2, 하이픈 1, 마침표 1 로 전부 문장부호이고 영숫자나 한글이 바로 오는 사례는 0 이다. KaTeX 점검에서 오류가 나지 않고 GitHub 도 $x$, 를 정상 렌더하므로 렌더 사고는 없다. 규칙을 문자 그대로 적용해 31 곳에 공백을 넣을지, 문장부호를 예외로 두고 4 절 문구를 '뒤에 영숫자나 한글이 오면 공백을 둔다' 로 읽을지는 독자의 판단이다. 검사기는 스크래치패드 spacecheck.mjs 다(코드펜스와 $$ 블록과 인라인 코드를 건너뛰고 인라인 $...$ 다음 한 글자를 본다). 문서 목록은 peano-axioms perron-frobenius polya-enumeration riemann-roch uniform-integrability weierstrass-factorization 등이다",
+      "createdAt": "2026-09-18T20:58:11.086Z",
+      "seq": 585
     },
     {
       "id": "c535c656",
@@ -866,6 +866,22 @@
       "note": "해석학. 균등연속(uniform-continuity)이 리프인데 그 자연스러운 후속이 저장소에 없다. 동등연속(equicontinuity)을 정의하고 Arzelà–Ascoli(닫힌 유계 구간 위 함수족이 상대적으로 콤팩트할 필요충분조건이 균등유계이고 동등연속인 것)를 놓는다. 부모는 uniform-continuity 와 compactness. Riemann 적분은 균등연속을 증명 도구로 한 번 쓸 뿐이라 5절 기준으로 자식이 아니다(간선을 긋지 않았다). 후속으로 Montel 정리, Peano 존재정리가 이어진다",
       "createdAt": "2026-09-18T12:56:56.818Z",
       "seq": 562
+    },
+    {
+      "id": "2ed116cd",
+      "title": "Montel 정리와 Riemann 사상 정리",
+      "priority": 10,
+      "note": "복소해석. arzela-ascoli 의 활용 절에서 정규족과 Montel 정리를 언급만 하고 링크하지 못했다. 부모 후보는 arzela-ascoli 와 복소해석의 정칙함수 문서. 쓰면 arzela-ascoli 의 더 알아보기에 달고 complex-analysis-overview 의 갈래에 한 줄 더할 것",
+      "createdAt": "2026-09-18T20:50:49.890Z",
+      "seq": 580
+    },
+    {
+      "id": "65c43e94",
+      "title": "Peano 존재정리",
+      "priority": 10,
+      "note": "해석학. arzela-ascoli 의 활용 절 첫 항목이 Peano 존재정리의 논증이다. Lipschitz 조건을 쓰는 Picard–Lindelöf 와 대비해 쓸 것. 부모 후보는 arzela-ascoli 와 banach-fixed-point",
+      "createdAt": "2026-09-18T20:50:49.998Z",
+      "seq": 581
     },
     {
       "id": "dfb3e493",
