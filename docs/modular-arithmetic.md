@@ -123,4 +123,4 @@ $$
 - [유한체](finite-fields.md)
 - [p 진수와 부치](p-adic-numbers.md)
 
-#number_theory
+#number_theory #algebra #cryptography #computation

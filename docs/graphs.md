@@ -116,4 +116,4 @@ $$
 - [Euler 지표](euler-characteristic.md)
 - [평면 그래프](planar-graphs.md)
 
-#graph_theory
+#graph_theory #combinatorics #linear_algebra #complexity

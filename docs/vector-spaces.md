@@ -108,4 +108,4 @@ $\dim V=n$ 인 $F$ 위의 벡터 공간은 기저를 고르면 $F^n$ 과 동형�
 - [오류정정부호](error-correcting-codes.md)
 - [논문: How Powerful are Graph Neural Networks?](gnn-expressivity.md)
 
-#linear_algebra
+#linear_algebra #algebra #field_theory #statistics

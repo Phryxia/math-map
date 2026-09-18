@@ -172,4 +172,4 @@ $$
 - [단체 호몰로지](homology.md)
 - [그래프 동형](graph-isomorphism.md)
 
-#group_theory
+#group_theory #algebra #number_theory #cryptography
