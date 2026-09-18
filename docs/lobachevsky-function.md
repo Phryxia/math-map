@@ -63,7 +63,7 @@ $$
 - **배각 공식.** $\Lambda(2\theta)=2\Lambda(\theta)+2\Lambda\big(\theta+\tfrac\pi2\big)$ 다. 이 관계가 여러 부피 항등식의 출처다.
 - **Fourier 급수.** $\Lambda(\theta)=\tfrac12\sum_{n\ge1}\frac{\sin 2n\theta}{n^2}$ 다. 수치 계산은 대개 이 급수로 한다.
 
-$\Lambda$ 는 이중로그 $\mathrm{Li}_2$ 의 허수부와 같다. 정확히는 $\Lambda(\theta)=\tfrac12\mathrm{Im}\mathrm{Li}_2(e^{2i\theta})$ 이고, 그래서 쌍곡 부피가 이중로그의 값으로 표현되는 현상(Bloch 군, Borel 조절자)의 가장 구체적인 사례가 된다.
+$\Lambda$ 는 이중로그 $\mathrm{Li}\_2$ 의 허수부와 같다. 정확히는 $\Lambda(\theta)=\tfrac12\mathrm{Im}\mathrm{Li}\_2(e^{2i\theta})$ 이고, 그래서 쌍곡 부피가 이중로그의 값으로 표현되는 현상(Bloch 군, Borel 조절자)의 가장 구체적인 사례가 된다.
 
 ## 사면체의 부피
 
@@ -96,7 +96,7 @@ Thurston 의 계산이 이 이론의 출발점이다.
 
 ## 특수값의 초월성
 
-$\Lambda(\pi/3)$ 같은 값이 초등적으로 닫히지 않는다는 것은 이중로그의 성질에서 온다. $\mathrm{Li}_2$ 의 특수값은 대개 알려진 상수로 표현되지 않고, 쌍곡 부피가 "새로운 수" 인 이유가 그것이다. 부피와 Chern–Simons 불변량을 묶은 복소수 $\mathrm{CS}+i\mathrm{Vol}/2\pi$ 가 Bloch 군의 원소로 해석되고, 이것이 대수적 K 이론의 조절자와 이어진다. 수론과 3 차원 위상수학이 만나는 자리다.
+$\Lambda(\pi/3)$ 같은 값이 초등적으로 닫히지 않는다는 것은 이중로그의 성질에서 온다. $\mathrm{Li}\_2$ 의 특수값은 대개 알려진 상수로 표현되지 않고, 쌍곡 부피가 "새로운 수" 인 이유가 그것이다. 부피와 Chern–Simons 불변량을 묶은 복소수 $\mathrm{CS}+i\mathrm{Vol}/2\pi$ 가 Bloch 군의 원소로 해석되고, 이것이 대수적 K 이론의 조절자와 이어진다. 수론과 3 차원 위상수학이 만나는 자리다.
 
 # 활용
 

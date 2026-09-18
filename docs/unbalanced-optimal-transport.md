@@ -52,7 +52,7 @@ $\tau\to\infty$ 는 균형 최적 수송이고 $\tau\to0$ 은 아무것도 옮�
 
 ## 불균형 문제
 
-$a\in\mathbb R^n_{>0}$ 과 $b\in\mathbb R^m_{>0}$ 은 총질량이 달라도 된다. $C\in\mathbb R^{n\times m}_{\ge0}$ 에 대해
+$a\in\mathbb R^n_{>0}$ 과 $b\in\mathbb R^m_{>0}$ 은 총질량이 달라도 된다. $C\in\mathbb R^{n\times m}\_{\ge0}$ 에 대해
 
 $$
 \mathrm{UOT}_{\varepsilon,\tau}(a,b)=\min_{P\ge0}\ \langle C,P\rangle
@@ -106,7 +106,7 @@ $$
 
 반복 한 번의 비용이 균형판과 같은 $O(nm)$ 이고 로그 영역 안정화가 그대로 적용된다. $\lambda<1$ 이 갱신을 축소해 Hilbert 사영 거리에서의 축약비가 균형판보다 작으므로, 같은 $\varepsilon$ 에서 더 빨리 수렴한다.
 
-편향은 균형판과 같은 방식으로 다룬다. $\mathrm{UOT}_{\varepsilon,\tau}(a,a)\ne0$ 이므로 Sinkhorn 발산과 똑같은 보정
+편향은 균형판과 같은 방식으로 다룬다. $\mathrm{UOT}\_{\varepsilon,\tau}(a,a)\ne0$ 이므로 Sinkhorn 발산과 똑같은 보정
 
 $$
 S_{\varepsilon,\tau}(a,b)=\mathrm{UOT}(a,b)-\tfrac12\mathrm{UOT}(a,a)-\tfrac12\mathrm{UOT}(b,b)+\text{(질량 보정항)}
