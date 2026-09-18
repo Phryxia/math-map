@@ -150,7 +150,7 @@ Boolean algebra 는 격자 이론의 여러 계층 중 가장 강한 조건을 �
 
 ## 선수지식
 
-- [부분순서](partial-orders.md)
+- [순서론의 격자](order-lattices.md)
 - [집합](sets.md)
 
 ## 더 알아보기

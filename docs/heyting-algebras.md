@@ -207,7 +207,7 @@ Heyting algebra 가 다루는 체계는 배중률을 부정하지 않고 가정�
 ## 선수지식
 
 - [직관주의 논리의 Kripke 의미론](kripke-semantics.md)
-- [부분순서](partial-orders.md)
+- [순서론의 격자](order-lattices.md)
 
 ## 더 알아보기
 
