@@ -79,6 +79,19 @@ graph TD
 - [동적 연결성](dynamic-connectivity.md): 간선 삽입과 삭제 아래에서 연결성 질의
 - [Link-cut tree](link-cut-trees.md): splay 트리로 구현한 동적 숲, 경로 질의
 
+## 정보이론
+
+- [Shannon entropy](entropy.md): 부호화 길이의 하한이 되는 불확실성의 척도
+- [무손실 부호화 정리](source-coding.md): 압축률의 한계가 entropy 다
+- [채널 부호화 정리](channel-coding.md): 잡음 있는 채널의 용량과 신뢰 전송
+- [KL divergence와 상호정보량](kl-divergence.md): 두 분포의 부호화 손실과 그 결합 형태
+
+## 생성모형
+
+- [변분 오토인코더](variational-autoencoder.md): ELBO 와 재매개화로 잠재변수 모형을 학습한다
+- [확산모형](diffusion-models.md): 잡음을 더하는 과정을 되돌려 표본을 만든다
+- [흐름 정합](flow-matching.md): 확률 경로의 속도장을 회귀로 학습한다
+
 ## 암호
 
 - [RSA 암호](rsa-cryptosystem.md): 소인수분해의 난해성 위에 세운 공개키 암호

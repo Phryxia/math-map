@@ -85,6 +85,14 @@ graph TD
 - [정확한 WKB 와 Voros 기호](exact-wkb.md): WKB 급수를 Borel 재합산으로 엄밀화
 - [Painlevé 방정식과 등모노드로미 변형](painleve-equations.md): 가동 특이점이 극뿐인 비선형 방정식
 
+## 작용소와 함수해석
+
+- [유계 작용소와 스펙트럼](bounded-operators.md): 작용소 노름, 스펙트럼과 분해 스펙트럼
+- [비유계 작용소와 Stone 정리](unbounded-operators.md): 조밀한 정의역, 자기수반성, 한 모수 유니터리 군
+- [Fredholm 작용소와 지표](fredholm-operators.md): 핵과 여핵이 유한차원인 작용소의 정수 불변량
+- [Fredholm 행렬식](fredholm-determinant.md): 핵 작용소의 행렬식과 적분방정식
+- [Peter–Weyl 정리](peter-weyl.md): 콤팩트군 위 $L^2$ 의 기약표현 분해
+
 ## 다른 분야로 가는 다리
 
 - [Lobachevsky 함수](lobachevsky-function.md): Fourier 급수가 쌍곡 부피를 계산한다
