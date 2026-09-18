@@ -90,7 +90,7 @@ $n^2$ 이 홀수이면 $n$ 도 홀수임을 보이자. 대우를 취해 $n = 2k$
 
 ## 증명의 한계
 
-증명의 한계를 아는 것도 증명의 일부다. 어떤 명제는 주어진 공리계에서 참도 거짓도 증명할 수 없고([연속체 가설](continuum-hypothesis.md)), 어떤 문제는 알고리즘으로 판정할 수 없다([계산 가능성](computability.md)). 이 경계를 다루려면 증명 자체를 수학적 대상으로 삼아야 하며, 그것이 수리논리학의 출발점이다.
+증명의 한계를 아는 것도 증명의 일부다. 어떤 명제는 주어진 공리계에서 참도 거짓도 증명할 수 없고([연속체 가설](continuum-hypothesis.md)), 어떤 문제는 알고리즘으로 판정할 수 없다([계산 가능성](computability.md)). 이 경계를 다루려면 증명 자체를 수학적 대상으로 삼아야 하고, 수리논리학이 그 일을 한다.
 
 [^1]: MIT, *Mathematics for Computer Science*, Chapter 1.1–1.6. 직접증명, 대우, 귀류법의 도입과 흔한 오류. https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/resources/mit6_042js15_session1/
 

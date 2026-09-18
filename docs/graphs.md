@@ -81,7 +81,7 @@ $$
 
 ## 선형대수와의 연결
 
-인접행렬과 Laplacian 의 고윳값은 연결성, 팽창성, 무작위 걷기의 혼합 속도 같은 조합적 성질을 통제한다. 그래프를 행렬로 보는 관점은 스펙트럼 그래프 이론과 대규모 그래프 알고리즘의 출발점이다.[^1]
+인접행렬과 Laplacian 의 고윳값은 연결성, 팽창성, 무작위 걷기의 혼합 속도 같은 조합적 성질을 통제한다. 스펙트럼 그래프 이론과 대규모 그래프 알고리즘이 그래프를 행렬로 보는 이 관점을 쓴다.[^1]
 
 [^1]: MIT, *Mathematics for Computer Science*, Chapter 11.1–11.4. 그래프, 차수, 연결성의 기초. https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/resources/mit6_042js15_session19/
 
