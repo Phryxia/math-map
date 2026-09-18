@@ -101,6 +101,6 @@ $$
 ## 더 알아보기
 
 - [자연변환](natural-transformations.md)
-- [유도 함자](derived-함자s.md)
+- [유도 함자](derived-functors.md)
 
 #category_theory #algebraic_topology #computation
