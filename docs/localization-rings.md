@@ -160,7 +160,7 @@ flowchart LR
 
 ## 정수환의 국소화
 
-$R=\mathbb Z$ 의 곱닫힌 집합은 본질적으로 소수 집합의 선택으로 결정된다. 소수 $p$ 에서의 국소화는
+$R=\mathbb Z$ 의 곱닫힌 집합은 소수 집합의 선택으로 결정된다. 소수 $p$ 에서의 국소화는
 
 $$
 \mathbb{Z}\_{(p)} = \left\lbrace \frac{a}{b} \in \mathbb{Q} : p \nmid b \right\rbrace
