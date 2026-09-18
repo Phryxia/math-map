@@ -66,29 +66,7 @@ $$
 
 $\mathbb{R}$ 의 완비성은 상한 공리와 동치다. $C[a,b]$ 는 sup 거리에서 [균등수렴](uniform-convergence.md) 극한이 연속이라 완비이고, 적분 거리에서는 연속함수열이 불연속 함수로 수렴할 수 있어 완비가 아니다. 그 빠진 극한을 채운 것이 [Lebesgue 적분](lebesgue-integral.md)으로 만든 $L^1$ 이다.
 
-```python
-def tail_spread(partial, N):
-    """N 번째 이후 항들이 벌어진 최대 폭. Cauchy 라면 N 과 함께 0 으로 간다."""
-    tail = partial[N:]
-    return max(tail) - min(tail)
-
-def partials(term, n):
-    out, s = [], 0.0
-    for k in range(1, n + 1):
-        s += term(k)
-        out.append(s)
-    return out
-
-geom = partials(lambda k: 0.5 ** k, 20000)
-harmonic = partials(lambda k: 1 / k, 20000)
-
-for N in (10, 100, 1000):
-    print(N, "이웃 간격", harmonic[N] - harmonic[N - 1],
-          "| 기하 꼬리폭", tail_spread(geom, N),
-          "| 조화 꼬리폭", tail_spread(harmonic, N))
-```
-
-기하급수의 꼬리 폭은 $N$ 과 함께 빠르게 $0$ 으로 간다. 조화급수는 이웃 간격이 $1/N$ 인데도 꼬리 폭이 모든 $N$ 에서 무한대다.
+기하급수의 부분합은 Cauchy 수열이다. 조화급수의 부분합은 이웃 항의 간격이 $1/N$ 으로 줄어들지만 $N$ 번째 이후 항들이 벌어지는 폭이 무한대라서 Cauchy 수열이 아니다. Cauchy 조건은 이웃 간격이 아니라 꼬리 전체의 폭에 대한 조건이다.
 
 ## 닫힌 부분집합과 완비성
 
@@ -126,4 +104,4 @@ $\mathbb{R}$ 은 완비지만 유계가 아니고, $(0,1]$ 은 유계지만 완�
 - [Banach 공간](banach-spaces.md)
 - [p 진수와 부치](p-adic-numbers.md)
 
-#analysis
+#analysis #topology

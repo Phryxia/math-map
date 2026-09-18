@@ -53,14 +53,14 @@ $$
 |\langle u,v\rangle|\le \lVert u\rVert\thinspace\lVert v\rVert
 $$
 
-$v=0$ 이면 자명하다. $v\ne0$ 이면 $u$ 에서 $v$ 방향 성분을 뺀 벡터의 노름 제곱이 음이 아니라는 사실을 쓴다.
+$v=0$ 이면 자명하다. $v\ne0$ 이면 $u$ 에서 $v$ 방향 성분을 뺀 벡터의 노름 제곱이 음이 아니다.
 
 $$
 0\le\Big\lVert u-\frac{\langle u,v\rangle}{\lVert v\rVert^2}v\Big\rVert^2
 =\lVert u\rVert^2-\frac{|\langle u,v\rangle|^2}{\lVert v\rVert^2}
 $$
 
-정리하면 부등식이 되고, 등호는 뺀 벡터가 0, 곧 $u$ 가 $v$ 의 배수일 때다.
+우변을 옮기면 부등식이 되고, 등호는 뺀 벡터가 0, 곧 $u$ 가 $v$ 의 배수일 때다.
 
 ## 노름의 성질
 

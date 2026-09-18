@@ -149,4 +149,4 @@ print(brute_max(V, ok, w2.get))                         # (['v1','v3'], 4)
 
 - [최소 신장트리](minimum-spanning-tree.md)
 
-#combinatorics
+#combinatorics #graph_theory #linear_algebra
