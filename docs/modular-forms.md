@@ -2,7 +2,7 @@
 
 # 개요
 
-모듈러 형식은 상반평면 $\mathbb H=\lbrace z:\mathrm{Im}\thinspace z>0\rbrace$ 위의 [정칙함수](holomorphic-functions.md) 가운데 무한군 $\mathrm{SL}_2(\mathbb Z)$ 의 [작용](group-actions.md)에 대해 다음 규칙으로 변하는 것이다.
+모듈러 형식은 상반평면 $\mathbb H=\lbrace z:\mathrm{Im}\thinspace z>0\rbrace$ 위의 [정칙함수](holomorphic-functions.md) 가운데 무한군 $\mathrm{SL}\_2(\mathbb Z)$ 의 [작용](group-actions.md)에 대해 다음 규칙으로 변하는 것이다.
 
 $$
 f\Big(\frac{az+b}{cz+d}\Big)=(cz+d)^kf(z)\qquad
@@ -13,7 +13,7 @@ $$
 
 유한차원성이 도구가 된다. 다른 방식으로 만든 두 모듈러 형식이 같은 작은 공간에 있으면 몇 개의 계수만 맞춰 보아도 둘이 같고, 나머지 무한히 많은 계수의 항등식이 따라온다. 약수 함수의 합성곱 항등식, 분할수의 점근식, 격자의 theta 급수, 타원곡선의 점 개수가 이 방식으로 연결된다.
 
-이 대칭이 $\mathrm{GL}_2$ 자기동형 표현의 고전적 얼굴이며, [Langlands 강령](langlands-program.md)에서 Galois 표현과 짝지어지는 쪽이다.
+이 대칭이 $\mathrm{GL}\_2$ 자기동형 표현의 고전적 얼굴이며, [Langlands 강령](langlands-program.md)에서 Galois 표현과 짝지어지는 쪽이다.
 
 # 직관
 
@@ -25,13 +25,13 @@ $$
 F(\lambda\Lambda)=\lambda^{-k}F(\Lambda)
 $$
 
-$\Lambda$ 를 $\omega_2$ 로 나눠 정규화하면 $\tau=\omega_1/\omega_2\in\mathbb H$ 에 대한 $\mathbb Z\tau+\mathbb Z$ 가 되므로 $F$ 가 $\mathbb H$ 위의 함수 $f(\tau)$ 로 바뀐다. 같은 격자를 주는 기저는 여럿이고 기저 변경이 $\mathrm{SL}_2(\mathbb Z)$ 다. $(\omega_1,\omega_2)$ 를 $(a\omega_1+b\omega_2,\ c\omega_1+d\omega_2)$ 로 바꾸면 $\tau\mapsto\frac{a\tau+b}{c\tau+d}$ 이고 정규화 인자가 $(c\tau+d)$ 만큼 바뀌어 변환 규칙이 나온다.
+$\Lambda$ 를 $\omega_2$ 로 나눠 정규화하면 $\tau=\omega_1/\omega_2\in\mathbb H$ 에 대한 $\mathbb Z\tau+\mathbb Z$ 가 되므로 $F$ 가 $\mathbb H$ 위의 함수 $f(\tau)$ 로 바뀐다. 같은 격자를 주는 기저는 여럿이고 기저 변경이 $\mathrm{SL}\_2(\mathbb Z)$ 다. $(\omega_1,\omega_2)$ 를 $(a\omega_1+b\omega_2,\ c\omega_1+d\omega_2)$ 로 바꾸면 $\tau\mapsto\frac{a\tau+b}{c\tau+d}$ 이고 정규화 인자가 $(c\tau+d)$ 만큼 바뀌어 변환 규칙이 나온다.
 
 [격자](lattices.md) 자체는 기저에 무관한 대상이고 인자 $(c\tau+d)^k$ 는 좌표를 고른 대가다.
 
 ## 유한차원성의 근거
 
-$\mathrm{SL}_2(\mathbb Z)$ 의 기본영역은 $|\tau|\ge1$ 이고 $|\mathrm{Re}\thinspace\tau|\le\frac12$ 인 영역이다. 위쪽으로 열려 있으므로 $\tau\to i\infty$ 에서의 거동을 규정해야 하고 그 조건이 첨점에서의 정칙성이다.
+$\mathrm{SL}\_2(\mathbb Z)$ 의 기본영역은 $|\tau|\ge1$ 이고 $|\mathrm{Re}\thinspace\tau|\le\frac12$ 인 영역이다. 위쪽으로 열려 있으므로 $\tau\to i\infty$ 에서의 거동을 규정해야 하고 그 조건이 첨점에서의 정칙성이다.
 
 $f$ 가 무게 $k$ 의 모듈러 형식이면 기본영역의 경계에 유수 정리를 적용해 영점의 총수가 $k/12$ 임을 얻는다.
 
@@ -40,19 +40,6 @@ $$
 $$
 
 $1/2$ 과 $1/3$ 은 $i$ 와 $\rho=e^{2\pi i/3}$ 에서 고정자군이 자명하지 않아 붙는 가중치다. 영점의 개수가 유계이므로 자유도가 유한하다. $k<0$ 이면 우변이 음수라 형식이 없고 $k=2$ 에서도 없다.
-
-```mermaid
-graph TD
-  L["복소 격자 Λ ⊂ C"] -->|"ω₁/ω₂ 로 정규화"| H["상반평면 위 함수 f(τ)"]
-  L -->|"기저 변경"| S["SL₂(Z)"]
-  S --> H
-  H --> F["기본영역에서<br/>영점 총수 = k/12"]
-  F --> D["M_k 는 유한차원"]
-  D --> ID["다른 방식으로 만든 두 형식이<br/>몇 계수만 같으면 완전히 같다"]
-  ID --> C1["약수합 항등식"]
-  ID --> C2["격자의 theta 급수"]
-  ID --> C3["타원곡선의 점 개수"]
-```
 
 ## 항등식의 생성
 
@@ -74,15 +61,15 @@ $$
 
 ## 상반평면 위의 작용
 
-$\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}_2(\mathbb R)$ 가 $\gamma\tau=\frac{a\tau+b}{c\tau+d}$ 로 $\mathbb H$ 에 작용한다.
+$\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}\_2(\mathbb R)$ 가 $\gamma\tau=\frac{a\tau+b}{c\tau+d}$ 로 $\mathbb H$ 에 작용한다.
 
 $$
 \mathrm{Im}(\gamma\tau)=\frac{\mathrm{Im}\thinspace\tau}{|c\tau+d|^2}
 $$
 
-이 등식이 $\mathbb H$ 의 보존을 보장한다. $\pm I$ 가 자명하게 작용하므로 실제로 작용하는 것은 $\mathrm{PSL}_2$ 다.
+이 등식이 $\mathbb H$ 의 보존을 보장한다. $\pm I$ 가 자명하게 작용하므로 실제로 작용하는 것은 $\mathrm{PSL}\_2$ 다.
 
-**합동 부분군**은 $\mathrm{SL}_2(\mathbb Z)$ 의 유한지표 부분군 중 어떤 $N$ 에 대해 $\Gamma(N)=\ker(\mathrm{SL}_2(\mathbb Z)\to\mathrm{SL}_2(\mathbb Z/N))$ 를 포함하는 것이다. 가장 많이 쓰는 것이 다음이고 $N$ 을 **레벨**이라 한다.
+**합동 부분군**은 $\mathrm{SL}\_2(\mathbb Z)$ 의 유한지표 부분군 중 어떤 $N$ 에 대해 $\Gamma(N)=\ker(\mathrm{SL}\_2(\mathbb Z)\to\mathrm{SL}\_2(\mathbb Z/N))$ 를 포함하는 것이다. 가장 많이 쓰는 것이 다음이고 $N$ 을 **레벨**이라 한다.
 
 $$
 \Gamma_0(N)=\Big\lbrace\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}_2(\mathbb Z):c\equiv0\ (\mathrm{mod}\ N)\Big\rbrace
@@ -90,7 +77,7 @@ $$
 
 ## 모듈러 형식과 첨점형식
 
-$\Gamma\subseteq\mathrm{SL}_2(\mathbb Z)$ 가 합동 부분군일 때 다음 셋을 만족하는 $f\colon\mathbb H\to\mathbb C$ 가 무게 $k$ 레벨 $\Gamma$ 의 모듈러 형식이다.
+$\Gamma\subseteq\mathrm{SL}\_2(\mathbb Z)$ 가 합동 부분군일 때 다음 셋을 만족하는 $f\colon\mathbb H\to\mathbb C$ 가 무게 $k$ 레벨 $\Gamma$ 의 모듈러 형식이다.
 
 1. $f$ 가 $\mathbb H$ 에서 정칙이다.
 2. 모든 $\gamma\in\Gamma$ 에서 $f(\gamma\tau)=(c\tau+d)^kf(\tau)$ 다.
@@ -122,9 +109,9 @@ $$
 
 은 $\mathbb H$ 에서 영점을 갖지 않는다. 계수 $\tau(n)$ 이 Ramanujan 의 tau 함수다.
 
-**$j$ 불변량.** $j=E_4^3/\Delta$ 는 무게 0 이고 $\mathbb H$ 에서 정칙이지만 첨점에서 극을 갖는다. $\mathrm{SL}_2(\mathbb Z)$ 불변 함수의 체를 생성하며 격자의 동형류를 완전히 분류한다.
+**$j$ 불변량.** $j=E_4^3/\Delta$ 는 무게 0 이고 $\mathbb H$ 에서 정칙이지만 첨점에서 극을 갖는다. $\mathrm{SL}\_2(\mathbb Z)$ 불변 함수의 체를 생성하며 격자의 동형류를 완전히 분류한다.
 
-$\mathrm{SL}_2(\mathbb Z)$ 전체에 대한 형식들의 등급환은 자유 다항식환이다.
+$\mathrm{SL}\_2(\mathbb Z)$ 전체에 대한 형식들의 등급환은 자유 다항식환이다.
 
 $$
 \bigoplus_kM_k(\mathrm{SL}_2(\mathbb Z))=\mathbb C[E_4,E_6]
@@ -148,7 +135,7 @@ $$
 
 ## 차원
 
-$\mathrm{SL}_2(\mathbb Z)$ 에서 짝수 $k\ge0$ 에 대해 다음이 성립하고 홀수 $k$ 에서는 0 이다.
+$\mathrm{SL}\_2(\mathbb Z)$ 에서 짝수 $k\ge0$ 에 대해 다음이 성립하고 홀수 $k$ 에서는 0 이다.
 
 $$
 \dim M_k=\begin{cases}\lfloor k/12\rfloor&k\equiv2\pmod{12}\cr \lfloor k/12\rfloor+1&\text{그 외}\end{cases}
@@ -226,7 +213,7 @@ Rademacher 는 같은 방법으로 $p(n)$ 을 정확히 주는 수렴급수를 �
 
 무게 2 의 고유형식이 타원곡선과 대응하고(모듈러성 정리) 무게 1 의 고유형식이 2 차원 Artin 표현과 대응한다. 무게 $k\ge2$ 의 고유형식마다 2 차원 $\ell$ 진 Galois 표현이 있고 $a_p$ 가 Frobenius 의 대각합이다.
 
-이 대응이 $\mathrm{GL}_2$ Langlands 의 고전적 서술이다. 계수 $a_p$ 하나가 Fourier 계수이면서 유한체 위의 점 개수이고 Galois 군 원소의 대각합이다.
+이 대응이 $\mathrm{GL}\_2$ Langlands 의 고전적 서술이다. 계수 $a_p$ 하나가 Fourier 계수이면서 유한체 위의 점 개수이고 Galois 군 원소의 대각합이다.
 
 # 연관 문서
 
