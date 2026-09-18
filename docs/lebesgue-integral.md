@@ -33,10 +33,10 @@ graph TD
 
 ## 단순함수의 적분
 
-측도 공간 $(X, \Sigma, \mu)$ 를 고정한다. 지시함수 $\mathbf{1}_A$ 는 $A$ 위에서 값이 $1$ 이고 바깥에서 $0$ 이다. 서로소 가측집합 $A_1, \dots, A_n$ 과 음이 아닌 유한 실수 $c_1, \dots, c_n$ 으로 만든 단순함수 $s$ 에 대해
+측도 공간 $(X, \Sigma, \mu)$ 를 고정한다. 지시함수 $\mathbf{1}\_A$ 는 $A$ 위에서 값이 $1$ 이고 바깥에서 $0$ 이다. 서로소 가측집합 $A_1, \dots, A_n$ 과 음이 아닌 유한 실수 $c_1, \dots, c_n$ 으로 만든 단순함수 $s$ 에 대해
 
 $$
-s=\sum_{i=1}^n c_i\mathbf{1}_{A_i},\qquad
+s=\sum_{i=1}^n c_i\mathbf{1}\_{A_i},\qquad
 \int_X s\thinspace d\mu=\sum_{i=1}^n c_i\thinspace\mu(A_i)
 $$
 
@@ -56,7 +56,7 @@ $$
 \int_X f\thinspace d\mu=\int_X f^+\thinspace d\mu-\int_X f^-\thinspace d\mu
 $$
 
-로 정한다. 두 항이 모두 무한대면 정의되지 않는다. $\int \lvert f \rvert\thinspace d\mu \lt\infty$ 이면 $f$ 가 **적분 가능**하고, 그런 함수들의 모임이 $L^1(\mu)$ 다. 가측집합 $E$ 위의 적분은 $\int f \cdot \mathbf{1}_E\thinspace d\mu$ 다.
+로 정한다. 두 항이 모두 무한대면 정의되지 않는다. $\int \lvert f \rvert\thinspace d\mu \lt\infty$ 이면 $f$ 가 **적분 가능**하고, 그런 함수들의 모임이 $L^1(\mu)$ 다. 가측집합 $E$ 위의 적분은 $\int f \cdot \mathbf{1}\_E\thinspace d\mu$ 다.
 
 ## 거의 어디서나
 
@@ -117,7 +117,7 @@ $L^1(\mu)$ 는 $\lVert f \rVert_1 = \int \lvert f \rvert\thinspace d\mu$ 로 완
 
 ## 교환의 조건
 
-수렴 정리들이 극한과 적분의 교환을 넉넉하게 허용하지만 무조건은 아니다. $f_n = n \cdot \mathbf{1}_{(0,1/n)}$ 은 점별로 $0$ 에 수렴하지만 모든 $n$ 에서 적분이 $1$ 이다. 지배함수가 없는 경우이고 Fatou 의 부등식이 등호가 아닌 이유를 보이는 예다. 적분 기호와 극한 기호의 순서를 바꿀 때는 어떤 정리의 어떤 가정을 쓰는지 밝혀야 한다.[^1]
+수렴 정리들이 극한과 적분의 교환을 넉넉하게 허용하지만 무조건은 아니다. $f_n = n \cdot \mathbf{1}\_{(0,1/n)}$ 은 점별로 $0$ 에 수렴하지만 모든 $n$ 에서 적분이 $1$ 이다. 지배함수가 없는 경우이고 Fatou 의 부등식이 등호가 아닌 이유를 보이는 예다. 적분 기호와 극한 기호의 순서를 바꿀 때는 어떤 정리의 어떤 가정을 쓰는지 밝혀야 한다.[^1]
 
 [^1]: Terence Tao, *245A Notes 3: Integration on abstract measure spaces and the convergence theorems*, §4 정의 10·11·13. 단순함수에서 일반 가측함수로의 확장과 수렴 정리. https://terrytao.wordpress.com/2010/09/25/245a-notes-3-integration-on-abstract-measure-spaces-and-the-convergence-theorems/
 

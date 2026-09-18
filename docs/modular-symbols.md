@@ -12,7 +12,7 @@ $$
 
 가 $S_2(\Gamma_0(N))$ 의 쌍대이고 Hecke 작용소가 이 격자 위에 정수 행렬로 작용한다.
 
-Manin 은 이 군의 완전한 유한 표현을 주었다. 생성원은 $\mathbb P^1(\mathbb Z/N)$ 의 원소로 매개되고 개수가 $[\mathrm{SL}_2(\mathbb Z):\Gamma_0(N)]$ 이며 관계식은 두 줄이다. 컴퓨터가 $N$ 을 받아 $S_2(\Gamma_0(N))$ 의 Hecke 고유형식을 뽑아낼 수 있고, Cremona 의 타원곡선 표와 LMFDB 의 모듈러 형식 자료가 이 알고리즘에서 나왔다.
+Manin 은 이 군의 완전한 유한 표현을 주었다. 생성원은 $\mathbb P^1(\mathbb Z/N)$ 의 원소로 매개되고 개수가 $[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]$ 이며 관계식은 두 줄이다. 컴퓨터가 $N$ 을 받아 $S_2(\Gamma_0(N))$ 의 Hecke 고유형식을 뽑아낼 수 있고, Cremona 의 타원곡선 표와 LMFDB 의 모듈러 형식 자료가 이 알고리즘에서 나왔다.
 
 # 직관
 
@@ -44,24 +44,24 @@ $c$ 는 첨점의 개수다. 닫힌 경로 부분 $2g$ 에 첨점 사이의 여�
 
 ## Manin 의 유한 표현
 
-$\alpha$ 에서 $\beta$ 로 가는 경로를 연분수 수렴분을 따라 쪼개면 각 조각이 어떤 $g\in\mathrm{SL}_2(\mathbb Z)$ 에 대해 $\lbrace g\cdot0,\ g\cdot\infty\rbrace$ 꼴이다. $\Gamma_0(N)$ 작용으로 나누면 $g$ 는 잉여류로만 기억된다.
+$\alpha$ 에서 $\beta$ 로 가는 경로를 연분수 수렴분을 따라 쪼개면 각 조각이 어떤 $g\in\mathrm{SL}\_2(\mathbb Z)$ 에 대해 $\lbrace g\cdot0,\ g\cdot\infty\rbrace$ 꼴이다. $\Gamma_0(N)$ 작용으로 나누면 $g$ 는 잉여류로만 기억된다.
 
 $$
-\Gamma_0(N)\backslash\mathrm{SL}_2(\mathbb Z)\ \xrightarrow{\ \sim\ }\ \mathbb P^1(\mathbb Z/N),\qquad
+\Gamma_0(N)\backslash\mathrm{SL}\_2(\mathbb Z)\ \xrightarrow{\ \sim\ }\ \mathbb P^1(\mathbb Z/N),\qquad
 \begin{pmatrix}a&b\cr c&d\end{pmatrix}\longmapsto(c:d)
 $$
 
 생성원은 $\mathbb P^1(\mathbb Z/N)$ 의 원소마다 하나씩이고 개수는 다음이다.
 
 $$
-\char35{}\mathbb P^1(\mathbb Z/N)=N\prod_{p\mid N}\Big(1+\frac1p\Big)=[\mathrm{SL}_2(\mathbb Z):\Gamma_0(N)]
+\char35{}\mathbb P^1(\mathbb Z/N)=N\prod_{p\mid N}\Big(1+\frac1p\Big)=[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]
 $$
 
 $x\in\mathbb P^1(\mathbb Z/N)$ 에 대응하는 생성원이 **Manin 기호** $[x]$ 다.
 
 ## 두 개의 관계식
 
-$\mathrm{SL}_2(\mathbb Z)$ 는 $\sigma=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 와 $\tau=\begin{pmatrix}0&-1\cr 1&-1\end{pmatrix}$ 로 생성되고 $\sigma^2=\tau^3=-I$ 다. 이것이 관계식이 된다.
+$\mathrm{SL}\_2(\mathbb Z)$ 는 $\sigma=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 와 $\tau=\begin{pmatrix}0&-1\cr 1&-1\end{pmatrix}$ 로 생성되고 $\sigma^2=\tau^3=-I$ 다. 이것이 관계식이 된다.
 
 $$
 [x]+[x\sigma]=0,\qquad [x]+[x\tau]+[x\tau^2]=0
@@ -81,10 +81,10 @@ $$
 \lbrace\alpha,\beta\rbrace+\lbrace\beta,\gamma\rbrace+\lbrace\gamma,\alpha\rbrace=0
 $$
 
-$\lbrace\alpha,\alpha\rbrace=0$ 과 $\lbrace\alpha,\beta\rbrace=-\lbrace\beta,\alpha\rbrace$ 가 따라 나온다. $\mathrm{SL}_2(\mathbb Z)$ 가 $g\lbrace\alpha,\beta\rbrace=\lbrace g\alpha,g\beta\rbrace$ 로 작용하고, $\Gamma=\Gamma_0(N)$ 에 대해
+$\lbrace\alpha,\alpha\rbrace=0$ 과 $\lbrace\alpha,\beta\rbrace=-\lbrace\beta,\alpha\rbrace$ 가 따라 나온다. $\mathrm{SL}\_2(\mathbb Z)$ 가 $g\lbrace\alpha,\beta\rbrace=\lbrace g\alpha,g\beta\rbrace$ 로 작용하고, $\Gamma=\Gamma_0(N)$ 에 대해
 
 $$
-\mathbb M_2(\Gamma)=\big(\mathbb M_2\big)_\Gamma\quad(\Gamma\text{ 공변})
+\mathbb M_2(\Gamma)=\big(\mathbb M_2\big)\_\Gamma\quad(\Gamma\text{ 공변})
 $$
 
 가 $\Gamma$ 의 모듈러 기호 공간이다. 경계 사상
@@ -98,13 +98,13 @@ $$
 
 ## Manin 기호
 
-대응 $\Gamma_0(N)\backslash\mathrm{SL}_2(\mathbb Z)\cong\mathbb P^1(\mathbb Z/N)$ 아래에서 $x=(c:d)$ 에 대응하는 $g$ 를 잡아 다음으로 둔다.
+대응 $\Gamma_0(N)\backslash\mathrm{SL}\_2(\mathbb Z)\cong\mathbb P^1(\mathbb Z/N)$ 아래에서 $x=(c:d)$ 에 대응하는 $g$ 를 잡아 다음으로 둔다.
 
 $$
 [x]=\lbrace g\cdot0,\ g\cdot\infty\rbrace\in\mathbb M_2(\Gamma_0(N))
 $$
 
-$\mathrm{SL}_2(\mathbb Z)$ 는 $\mathbb P^1(\mathbb Z/N)$ 에 행벡터 우곱 $(c,d)\mapsto(c,d)M$ 으로 작용한다. Manin 의 정리는 다음이다[^1].
+$\mathrm{SL}\_2(\mathbb Z)$ 는 $\mathbb P^1(\mathbb Z/N)$ 에 행벡터 우곱 $(c,d)\mapsto(c,d)M$ 으로 작용한다. Manin 의 정리는 다음이다[^1].
 
 $$
 \mathbb M_2(\Gamma_0(N))\thickspace\cong\thickspace\frac{\bigoplus_{x\in\mathbb P^1(\mathbb Z/N)}\mathbb Z[x]}{\big([x]+[x\sigma],\ [x]+[x\tau]+[x\tau^2]\big)}
@@ -118,7 +118,7 @@ $$
 T_p[x]=\Big[x\begin{pmatrix}p&0\cr 0&1\end{pmatrix}\Big]+\sum_{r=0}^{p-1}\Big[x\begin{pmatrix}1&r\cr 0&p\end{pmatrix}\Big]
 $$
 
-각 항은 행렬식이 $p$ 라 $\mathrm{SL}_2(\mathbb Z)$ 밖이므로 다시 Manin 기호로 환원해야 하고, Merel 의 Heilbronn 행렬이 그 환원을 한 번에 한다. 결과는 정수 성분 행렬이다.
+각 항은 행렬식이 $p$ 라 $\mathrm{SL}\_2(\mathbb Z)$ 밖이므로 다시 Manin 기호로 환원해야 하고, Merel 의 Heilbronn 행렬이 그 환원을 한 번에 한다. 결과는 정수 성분 행렬이다.
 
 ## 무게 $k$ 로의 확장
 

@@ -15,7 +15,7 @@ LP 완화가 그 비교 대상이다. 정수 제약 $x_i \in \lbrace 0,1\rbrace$
 최소화 문제에서 제약을 풀면 가능해가 늘어나 최적값이 내려간다.
 
 $$
-\mathrm{OPT}_{LP}\ \le\ \mathrm{OPT}_{IP}
+\mathrm{OPT}\_{LP}\ \le\ \mathrm{OPT}\_{IP}
 $$
 
 만든 정수해의 비용이 $\mathrm{OPT}\_{LP}$ 의 $\alpha$ 배 이하이면 $\mathrm{OPT}\_{IP}$ 의 $\alpha$ 배 이하이므로, 최적 정수해를 몰라도 근사비가 증명된다.
@@ -41,7 +41,7 @@ LP 최적해의 값 $x^\ast\_i = 0.7$ 은 제약 전체를 고려해 부담을 �
 적분성 간극은 문제의 모든 사례에 대한 최악의 비다.
 
 $$
-\mathrm{gap}=\sup_{I}\frac{\mathrm{OPT}_{IP}(I)}{\mathrm{OPT}_{LP}(I)}
+\mathrm{gap}=\sup_{I}\frac{\mathrm{OPT}\_{IP}(I)}{\mathrm{OPT}\_{LP}(I)}
 $$
 
 최대화 문제에서는 분자와 분모를 뒤집는다. 간극은 알고리즘이 아니라 완화의 성질이며, 같은 문제의 서로 다른 완화는 각각 다른 간극을 가진다.
@@ -81,17 +81,17 @@ LP 최적해 $x^\ast$ 에서 $x^\ast\_v \ge 1/2$ 인 정점을 모두 고른다.
 각 간선 $(u,v)$ 에 대해 $x^\ast\_u + x^\ast\_v \ge 1$ 이므로 둘 중 하나가 $1/2$ 이상이고 그 정점이 선택되어 실현가능하다. 선택된 각 정점에서 $1 \le 2x^\ast_v$ 이므로 비용은 두 배 이내다.
 
 $$
-\sum_{v:\thinspace x^*_v\ge1/2}w_v\ \le\ 2\sum_vw_vx^*_v\ =\ 2\thinspace\mathrm{OPT}_{LP}\ \le\ 2\thinspace\mathrm{OPT}_{IP}
+\sum_{v:\thinspace x^\ast\_v\ge1/2}w_v\ \le\ 2\sum_vw_vx^\ast\_v\ =\ 2\thinspace\mathrm{OPT}\_{LP}\ \le\ 2\thinspace\mathrm{OPT}\_{IP}
 $$
 
 가중치가 있어도 그대로 통한다. 매칭을 쓰는 조합적 2-근사는 가중치가 붙으면 깨지므로 이 부분이 LP 기법의 이득이다.
 
 ## 정점 덮개의 간극 2
 
-완전그래프 $K_n$ 에서 모든 $x_v = 1/2$ 가 가능해이므로 $\mathrm{OPT}_{LP} = n/2$ 다. 정수해는 두 정점을 남기면 그 사이 간선이 덮이지 않으므로 $n-1$ 개 미만을 고를 수 없다.
+완전그래프 $K_n$ 에서 모든 $x_v = 1/2$ 가 가능해이므로 $\mathrm{OPT}\_{LP} = n/2$ 다. 정수해는 두 정점을 남기면 그 사이 간선이 덮이지 않으므로 $n-1$ 개 미만을 고를 수 없다.
 
 $$
-\frac{\mathrm{OPT}_{IP}}{\mathrm{OPT}_{LP}}=\frac{n-1}{n/2}=2-\frac2n\ \xrightarrow{\ n\to\infty\ }\ 2
+\frac{\mathrm{OPT}\_{IP}}{\mathrm{OPT}\_{LP}}=\frac{n-1}{n/2}=2-\frac2n\ \xrightarrow{\ n\to\infty\ }\ 2
 $$
 
 이 완화로는 $2-\epsilon$ 근사를 증명할 수 없다. 정점 덮개의 2-근사가 개선되지 않은 것과, 유일 게임 추측 아래에서 $2-\epsilon$ 이 불가능하다는 결과가 이 간극과 나란히 놓인다.
@@ -105,7 +105,7 @@ $$
 각 집합 $S$ 를 확률 $x^\ast\_S$ 로 독립적으로 고르면 비용의 기댓값이 $\mathrm{OPT}\_{LP}$ 다. 제약 $\sum_{S\ni e}x^\ast\_S \ge 1$ 에서 원소 $e$ 가 덮이지 않을 확률은 다음으로 막힌다.
 
 $$
-\prod_{S\ni e}(1-x^*_S)\ \le\ \exp\Big(-\sum_{S\ni e}x^*_S\Big)\ \le\ e^{-1}
+\prod_{S\ni e}(1-x^\ast\_S)\ \le\ \exp\Big(-\sum_{S\ni e}x^\ast\_S\Big)\ \le\ e^{-1}
 $$
 
 $t = \Theta(\log n)$ 번 독립 반복해 합집합을 취하면 실패 확률이 $n^{-\Theta(1)}$ 로 떨어지고 비용의 기댓값은 $t \cdot \mathrm{OPT}\_{LP}$ 가 된다. 확률 $\min(1, t\thinspace x^\ast_S)$ 로 한 번에 뽑아도 같다. 비용이 $t$ 배로 늘고 실패 확률이 $e^{-t}$ 로 줄어드는 교환이 이 기법의 요지다.
@@ -126,7 +126,7 @@ LP 쌍대해 하나가 최적값의 하한을 증명한다. 정점 덮개 LP 의
 
 # 활용
 
-- **설계 절차.** 정수 계획으로 쓰고, 완화를 풀고, 반올림하고, 반올림된 해의 실현가능성과 $\mathrm{OPT}_{LP}$ 대비 비용을 증명한다. 간극의 하한을 나쁜 사례로 먼저 찾으면 달성 불가능한 목표를 배제할 수 있다.
+- **설계 절차.** 정수 계획으로 쓰고, 완화를 풀고, 반올림하고, 반올림된 해의 실현가능성과 $\mathrm{OPT}\_{LP}$ 대비 비용을 증명한다. 간극의 하한을 나쁜 사례로 먼저 찾으면 달성 불가능한 목표를 배제할 수 있다.
 - **실무.** 인력 배치, 차량 경로, 시설 배치, 광고 배분이 정수 계획으로 쓰인다. 완화해는 분기한정법의 가지치기 기준과 휴리스틱의 초기해로 쓰이고, 완화해와 얻은 해의 비가 그 사례에서의 품질 증명서가 된다.
 - **분수해가 답인 경우.** 자원을 실제로 나눌 수 있으면 반올림이 불필요하고, 확률적 배정으로 해석하면 분수해가 무작위 전략이다.
 

@@ -39,7 +39,7 @@ $$
 \langle f,g\rangle=\int_{\Gamma\backslash\mathbb H}f(\tau)\overline{g(\tau)}\thinspace y^k\thinspace\frac{dx\thinspace dy}{y^2}
 $$
 
-이 필요한 자기수반성을 준다. 측도 $dx\thinspace dy/y^2$ 가 $\mathrm{SL}_2(\mathbb R)$ 불변이고 $f\bar gy^k$ 가 $\Gamma$ 불변이라 적분이 잘 정의되며, 첨점형식의 급감으로 수렴한다. 이 내적에 대해 $p\nmid N$ 인 $T_p$ 는 자기수반이고, 가환하는 자기수반 연산자족은 동시에 대각화된다.
+이 필요한 자기수반성을 준다. 측도 $dx\thinspace dy/y^2$ 가 $\mathrm{SL}\_2(\mathbb R)$ 불변이고 $f\bar gy^k$ 가 $\Gamma$ 불변이라 적분이 잘 정의되며, 첨점형식의 급감으로 수렴한다. 이 내적에 대해 $p\nmid N$ 인 $T_p$ 는 자기수반이고, 가환하는 자기수반 연산자족은 동시에 대각화된다.
 
 ```mermaid
 graph TD
@@ -68,17 +68,17 @@ Atkin–Lehner 는 옛형식들이 만드는 부분공간의 Petersson 직교여
 
 ## 이중 잉여류로서의 Hecke 작용소
 
-$\Gamma=\Gamma_0(N)$ 과 $\alpha\in\mathrm{GL}_2^+(\mathbb Q)$ 에 대해 이중 잉여류 $\Gamma\alpha\Gamma$ 를 우잉여류로 쪼갠다.
+$\Gamma=\Gamma_0(N)$ 과 $\alpha\in\mathrm{GL}\_2^+(\mathbb Q)$ 에 대해 이중 잉여류 $\Gamma\alpha\Gamma$ 를 우잉여류로 쪼갠다.
 
 $$
 \Gamma\alpha\Gamma=\coprod_{i}\Gamma\alpha_i,\qquad
-[\Gamma\alpha\Gamma]f=\det(\alpha)^{k-1}\sum_if\big|_k\alpha_i
+[\Gamma\alpha\Gamma]f=\det(\alpha)^{k-1}\sum_if\big|\_k\alpha_i
 $$
 
-여기서 $(f|_k\gamma)(\tau)=\det(\gamma)^{k/2}(c\tau+d)^{-k}f(\gamma\tau)$ 로 정규화한다. $\alpha=\begin{pmatrix}1&0\cr 0&p\end{pmatrix}$ 가 $T_p$ 를 준다. 잉여류 대표는 $p\nmid N$ 일 때 $p+1$ 개다.
+여기서 $(f|\_k\gamma)(\tau)=\det(\gamma)^{k/2}(c\tau+d)^{-k}f(\gamma\tau)$ 로 정규화한다. $\alpha=\begin{pmatrix}1&0\cr 0&p\end{pmatrix}$ 가 $T_p$ 를 준다. 잉여류 대표는 $p\nmid N$ 일 때 $p+1$ 개다.
 
 $$
-T_pf=p^{k-1}\sum_{j=0}^{p-1}f\Big|_k\begin{pmatrix}1&j\cr 0&p\end{pmatrix}+f\Big|_k\begin{pmatrix}p&0\cr 0&1\end{pmatrix}
+T_pf=p^{k-1}\sum_{j=0}^{p-1}f\Big|\_k\begin{pmatrix}1&j\cr 0&p\end{pmatrix}+f\Big|\_k\begin{pmatrix}p&0\cr 0&1\end{pmatrix}
 $$
 
 $p\mid N$ 이면 마지막 항이 빠져 대표가 $p$ 개다. 이 작용소를 $U_p$ 로 쓰고, $q$ 전개에서는 $(U_pf)\_n=a_{np}$ 다.
@@ -90,7 +90,7 @@ $p\mid N$ 이면 마지막 항이 빠져 대표가 $p$ 개다. 이 작용소를 
 $q$ 전개로 쓴 $T_n$ 의 정의는 다음과 같다.
 
 $$
-(T_nf)_m=\sum_{d\mid\gcd(n,m)}\chi(d)\thinspace d^{k-1}a_{mn/d^2}
+(T_nf)\_m=\sum_{d\mid\gcd(n,m)}\chi(d)\thinspace d^{k-1}a_{mn/d^2}
 $$
 
 $T_n$ 들이 생성하는 $\mathbb Z$ 대수가 **Hecke 대수** $\mathbb T$ 다. 관계식은 형식 Dirichlet 급수 한 줄로 쓰인다.
@@ -137,13 +137,13 @@ Ramanujan–Petersson 추측이라 불리던 이 부등식을 Deligne 이 Weil �
 Hecke 작용소는 모듈러 곡선 $X_0(N)$ 위의 **대응**으로 실현된다. $X_0(Np)$ 에서 두 사영 $\alpha,\beta\colon X_0(Np)\to X_0(N)$ 을 잡고 $T_p=\beta_\ast\alpha^\ast$ 로 둔다. 이 대응이 Jacobian $J_0(N)$ 의 자기준동형을 유도하고, 표수 $p$ 로 환원하면 Frobenius 와 연결된다.
 
 $$
-T_p\equiv\mathrm{Frob}_p+p\langle p\rangle\mathrm{Frob}_p^{\vee}\pmod p
+T_p\equiv\mathrm{Frob}\_p+p\langle p\rangle\mathrm{Frob}\_p^{\vee}\pmod p
 $$
 
 고유형식 $f$ 마다 $\ell$ 진 Galois 표현 $\rho_{f,\ell}\colon\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\bar{\mathbb Q}\_\ell)$ 이 있어
 
 $$
-\mathrm{tr}\thinspace\rho_{f,\ell}(\mathrm{Frob}_p)=a_p,\qquad \det\rho_{f,\ell}(\mathrm{Frob}_p)=\chi(p)p^{k-1}
+\mathrm{tr}\thinspace\rho_{f,\ell}(\mathrm{Frob}\_p)=a_p,\qquad \det\rho_{f,\ell}(\mathrm{Frob}\_p)=\chi(p)p^{k-1}
 $$
 
 를 만족한다. 해석적으로 정의된 $a_p$ 가 산술적 의미를 얻는 지점이고, [Galois 표현](galois-representations.md)과 모듈러 형식을 잇는 통로다. 모듈러성 정리는 이 통로를 거꾸로 건너는 진술이다.
@@ -153,7 +153,7 @@ $$
 - **모듈러성 정리와 Fermat.** 타원곡선의 $a_p$ 수열이 어느 새형식에서 오는지를 묻는 것이 모듈러성이다. 다중도 1 에 의해 그 새형식은 있다면 하나뿐이고 레벨은 도체로 결정된다. Ribet 의 레벨 낮추기 정리가 가상의 Frey 곡선을 레벨 2 의 새형식으로 보내는데 $S_2(\Gamma_0(2))=0$ 이므로 Fermat 마지막 정리가 따라온다.
 - **Galois 표현의 변형.** Hecke 대수 $\mathbb T$ 가 변형환 $R$ 과 동형이라는 $R=\mathbb T$ 정리가 Wiles 의 증명 구조다. $\mathbb T$ 가 유한 $\mathbb Z$ 가군이라는 성질이 그 논증의 전제다.
 - **계산 정수론.** 모듈러 기호로 $\mathbb T$ 의 행렬 표현을 얻어 새형식을 유한 계산으로 열거한다. LMFDB 의 새형식 표가 이 방법으로 만들어진다.
-- **자기동형 표현.** 이중 잉여류 정의를 아델화하면 $T_p$ 는 국소 Hecke 대수의 원소이고 고유값은 [Satake 매개변수](satake-isomorphism.md)다. [아델](adeles.md) 위의 서술에서 $\mathrm{GL}_n$ 으로 올라가는 길이 열린다.
+- **자기동형 표현.** 이중 잉여류 정의를 아델화하면 $T_p$ 는 국소 Hecke 대수의 원소이고 고유값은 [Satake 매개변수](satake-isomorphism.md)다. [아델](adeles.md) 위의 서술에서 $\mathrm{GL}\_n$ 으로 올라가는 길이 열린다.
 
 [^1]: A. O. L. Atkin, J. Lehner, *Hecke Operators on* $\Gamma_0(m)$ (Mathematische Annalen 185, 1970), 134–160. 옛부분공간의 정의와 직교여공간의 다중도 1 은 Theorem 5, $p\mid N$ 에서의 $a_p$ 값은 Theorem 3 이다.
 

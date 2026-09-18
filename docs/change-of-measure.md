@@ -50,13 +50,13 @@ $$
 핵심 항등식이다. $f$ 가 $Q$ 적분가능한 가측함수이면
 
 $$
-\mathbb{E}_Q[f] = \int f \thinspace dQ = \int f \thinspace \frac{dQ}{dP} \thinspace dP = \mathbb{E}_P\Big[ f \thinspace \frac{dQ}{dP} \Big] .
+\mathbb{E}\_Q[f] = \int f \thinspace dQ = \int f \thinspace \frac{dQ}{dP} \thinspace dP = \mathbb{E}\_P\Big[ f \thinspace \frac{dQ}{dP} \Big] .
 $$
 
 증명은 표시함수에 대해 절대연속 정의를 그대로 쓰고, 단순함수로 선형 확장한 뒤 [단조 수렴 정리](monotone-convergence.md)로 일반 가측함수까지 올리는 표준 3단계다. 조건부 버전(Bayes 공식)은 부분 sigma-대수 $G$ 에 대해
 
 $$
-\mathbb{E}_Q[f \mid \mathcal{G}] = \frac{\mathbb{E}_P[ f L \mid \mathcal{G} ]}{\mathbb{E}_P[ L \mid \mathcal{G} ]}
+\mathbb{E}\_Q[f \mid \mathcal{G}] = \frac{\mathbb{E}\_P[ f L \mid \mathcal{G} ]}{\mathbb{E}\_P[ L \mid \mathcal{G} ]}
 $$
 
 이며, [조건부 기댓값](conditional-expectation.md)의 정의 성질로 양변에 $G$ 가측 표시함수를 곱해 적분하면 바로 확인된다.
@@ -78,7 +78,7 @@ $$
 $P_0$ 아래에서 이 합의 기댓값은 음수이고, 그 크기가 정확히 [KL divergence](kl-divergence.md)다.
 
 $$
-\mathbb{E}_{P_1}\Big[ \log \frac{dP_1}{dP_0} \Big] = D_{\mathrm{KL}}(P_1 \Vert P_0) \ \ge 0 .
+\mathbb{E}\_{P_1}\Big[ \log \frac{dP_1}{dP_0} \Big] = D_{\mathrm{KL}}(P_1 \Vert P_0) \ \ge 0 .
 $$
 
 ## Chain rule
@@ -105,16 +105,16 @@ $$
 
 ## Importance sampling 과 분산
 
-$\mathbb{E}_Q[f]$ 를 $P$ 에서 뽑은 표본 $X_1,\dots,X_n$ 으로 추정한다.
+$\mathbb{E}\_Q[f]$ 를 $P$ 에서 뽑은 표본 $X_1,\dots,X_n$ 으로 추정한다.
 
 $$
-\hat{\theta}_n = \frac{1}{n} \sum_{i=1}^{n} f(X_i) \thinspace L(X_i), \qquad L = \frac{dQ}{dP} .
+\hat{\theta}\_n = \frac{1}{n} \sum_{i=1}^{n} f(X_i) \thinspace L(X_i), \qquad L = \frac{dQ}{dP} .
 $$
 
 이 추정량은 불편이며([큰 수의 법칙](law-of-large-numbers.md)으로 일치), 분산은
 
 $$
-\mathrm{Var}_P\big( f L \big) = \mathbb{E}_P\big[ f^2 L^2 \big] - \big( \mathbb{E}_Q[f] \big)^2 = \mathbb{E}_Q\big[ f^2 L \big] - \big( \mathbb{E}_Q[f] \big)^2 .
+\mathrm{Var}\_P\big( f L \big) = \mathbb{E}\_P\big[ f^2 L^2 \big] - \big( \mathbb{E}\_Q[f] \big)^2 = \mathbb{E}\_Q\big[ f^2 L \big] - \big( \mathbb{E}\_Q[f] \big)^2 .
 $$
 
 여기서 두 가지가 읽힌다.

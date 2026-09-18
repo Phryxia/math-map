@@ -13,7 +13,7 @@ $p$ 가 [소수](primes.md)일 때 [나머지 연산](modular-arithmetic.md) $\m
 원소 4개인 체는 $\mathbb{Z}/4\mathbb{Z}$ 가 아니라 $\mathbb{F}\_2$ 위의 2차 확대로 만든다. $x^2+x+1$ 은 $\mathbb{F}\_2$ 에서 근이 없으므로 기약이고, 몫환이 체가 된다.
 
 $$
-\mathbb{F}_4=\mathbb{F}_2[x]/(x^2+x+1)=\lbrace 0,\thinspace 1,\thinspace\alpha,\thinspace\alpha+1\rbrace,\qquad \alpha^2=\alpha+1
+\mathbb{F}\_4=\mathbb{F}\_2[x]/(x^2+x+1)=\lbrace 0,\thinspace 1,\thinspace\alpha,\thinspace\alpha+1\rbrace,\qquad \alpha^2=\alpha+1
 $$
 
 여기서 $\alpha$ 의 거듭제곱이 $\alpha$ , $\alpha+1$ , $1$ 로 순환하며 $0$ 이 아닌 원소 세 개를 모두 훑는다. 곱셈군이 순환군이므로 유한체의 곱셈은 지수 하나로 좌표화된다.
@@ -37,7 +37,7 @@ graph LR
 $q=p^n$ 인 유한체는 $\mathbb{F}\_p$ 위의 $n$ 차 확대로 실현된다. 즉 $\mathbb{F}\_p[x]$ 의 $n$ 차 기약다항식 $f$ 를 잡으면 다음이 성립한다.
 
 $$
-\mathbb{F}_{p^n}\cong \mathbb{F}_p[x]/(f),\qquad [\mathbb{F}_{p^n}:\mathbb{F}_p]=n
+\mathbb{F}\_{p^n}\cong \mathbb{F}\_p[x]/(f),\qquad [\mathbb{F}\_{p^n}:\mathbb{F}\_p]=n
 $$
 
 $\mathbb{F}\_q$ 의 곱셈군을 생성하는 원소를 원시근(primitive element) 또는 generator라 한다.
@@ -45,7 +45,7 @@ $\mathbb{F}\_q$ 의 곱셈군을 생성하는 원소를 원시근(primitive elem
 Frobenius 사상은 $p$ 제곱 사상이다.
 
 $$
-\varphi:\mathbb{F}_q\to\mathbb{F}_q,\qquad \varphi(a)=a^{p}
+\varphi:\mathbb{F}\_q\to\mathbb{F}\_q,\qquad \varphi(a)=a^{p}
 $$
 
 # 성질
@@ -59,7 +59,7 @@ $$
 $\mathbb{F}\_q$ 의 곱셈군은 위수 $q-1$ 의 순환군이다[^2].
 
 $$
-\mathbb{F}_q^{\times}\cong \mathbb{Z}/(q-1)\mathbb{Z}
+\mathbb{F}\_q^{\times}\cong \mathbb{Z}/(q-1)\mathbb{Z}
 $$
 
 증명 개요: $d$ 가 $q-1$ 을 나눌 때 $x^d-1$ 은 체에서 근을 최대 $d$ 개 가지므로, 위수가 $d$ 를 나누는 원소가 $d$ 개를 넘지 않는다. 유한 abelian 군에서 이 조건은 순환성과 동치다. 또는 지수(exponent) $m$ 이 $q-1$ 보다 작다고 가정하면 모든 원소가 $x^m-1$ 의 근이 되어 근의 개수 제한에 모순임을 보인다.
@@ -67,7 +67,7 @@ $$
 따름정리로 모든 원소는 다음을 만족한다. 이는 Fermat의 소정리를 유한체로 일반화한 것이다.
 
 $$
-a^{q}=a\quad\text{for all } a\in\mathbb{F}_q
+a^{q}=a\quad\text{for all } a\in\mathbb{F}\_q
 $$
 
 ## 존재와 유일성
@@ -79,7 +79,7 @@ $$
 유일성: 위수 $p^n$ 의 체 $F$ 에서는 모든 원소가 $a^{p^n}=a$ 를 만족하므로 $F$ 는 $x^{p^n}-x$ 의 분해체다. 분해체가 동형을 무시하면 유일하므로 $F$ 가 유일하다.
 
 $$
-\mathbb{F}_{p^n}=\lbrace a : a^{p^n}=a\rbrace\subseteq \overline{\mathbb{F}_p}
+\mathbb{F}\_{p^n}=\lbrace a : a^{p^n}=a\rbrace\subseteq \overline{\mathbb{F}\_p}
 $$
 
 이 결과가 "원소 6개인 체는 없다"와 "원소 4개인 체는 본질적으로 하나"를 동시에 준다. 기약다항식을 다르게 골라도 얻어지는 체는 동형이다.
@@ -89,13 +89,13 @@ $$
 $\mathbb{F}\_{p^n}$ 의 부분체는 $n$ 의 약수 $m$ 에 대응하는 $\mathbb{F}\_{p^m}$ 들뿐이고, 이 대응은 일대일이다.
 
 $$
-\mathbb{F}_{p^m}\subseteq \mathbb{F}_{p^n}\iff m\mid n
+\mathbb{F}\_{p^m}\subseteq \mathbb{F}\_{p^n}\iff m\mid n
 $$
 
 Frobenius 사상 $\varphi$ 는 체 자기동형이다. 표수 $p$ 에서 $(a+b)^p=a^p+b^p$ 이므로 덧셈을 보존하고, 단사인 사상이 유한집합에서 전사이므로 자기동형이다. $\mathbb{F}\_p$ 의 원소는 $a^p=a$ 로 고정되므로 $\varphi$ 는 $\mathbb{F}\_p$ 를 고정한다. 자기동형군은 $\varphi$ 가 생성하는 위수 $n$ 의 순환군이다[^3].
 
 $$
-\mathrm{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)=\langle\varphi\rangle\cong\mathbb{Z}/n\mathbb{Z}
+\mathrm{Gal}(\mathbb{F}\_{p^n}/\mathbb{F}\_p)=\langle\varphi\rangle\cong\mathbb{Z}/n\mathbb{Z}
 $$
 
 즉 유한체의 확대는 모두 Galois 확대이며 [Galois 이론](galois-theory.md)의 대응이 부분군과 약수의 대응으로 구체화된다. 부분군 $\langle\varphi^m\rangle$ 의 고정체가 $\mathbb{F}\_{p^m}$ 이다.

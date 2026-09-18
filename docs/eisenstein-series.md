@@ -5,15 +5,15 @@
 [모듈러 형식](modular-forms.md)의 공간은 두 조각으로 나뉜다.
 
 $$
-M_k(\mathrm{SL}_2(\mathbb Z))=S_k\thickspace\oplus\thickspace\mathbb C\thinspace E_k
+M_k(\mathrm{SL}\_2(\mathbb Z))=S_k\thickspace\oplus\thickspace\mathbb C\thinspace E_k
 $$
 
 첨점형식 $S_k$ 는 첨점에서 사라지고 Eisenstein 급수 $E_k$ 는 사라지지 않는다. Eisenstein 급수의 계수는 $\sigma_{k-1}(n)=\sum_{d\mid n}d^{k-1}$ 로 완전히 명시적이다.
 
-그 명시성이 쓸모다. $E_4^3-E_6^2=1728\Delta$ 처럼 명시적인 것들의 조합으로 첨점형식이 만들어지고, 무게 대신 복소 매개변수 $s$ 를 넣은 실해석적 Eisenstein 급수 $E(z,s)$ 는 $\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H$ 의 Laplace 작용소의 연속 스펙트럼을 전부 만든다. 이산 스펙트럼인 Maass 형식이 미지인 것과 달리 연속 쪽은 $\zeta$ 함수로 기술된다.
+그 명시성이 쓸모다. $E_4^3-E_6^2=1728\Delta$ 처럼 명시적인 것들의 조합으로 첨점형식이 만들어지고, 무게 대신 복소 매개변수 $s$ 를 넣은 실해석적 Eisenstein 급수 $E(z,s)$ 는 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 의 Laplace 작용소의 연속 스펙트럼을 전부 만든다. 이산 스펙트럼인 Maass 형식이 미지인 것과 달리 연속 쪽은 $\zeta$ 함수로 기술된다.
 
 $$
-E^*(z,s)=\xi(2s)E(z,s)\qquad\Longrightarrow\qquad E^*(z,s)=E^*(z,1-s)
+E^\ast(z,s)=\xi(2s)E(z,s)\qquad\Longrightarrow\qquad E^\ast(z,s)=E^\ast(z,1-s)
 $$
 
 $\zeta$ 의 함수방정식이 상반평면 위 함수의 대칭으로 옮겨 앉는다. [Rankin–Selberg 적분](rankin-selberg.md)이 $L$ 함수의 해석적 성질을 얻는 것도 $E(z,s)$ 가 그 성질을 이미 갖고 있기 때문이다.
@@ -56,15 +56,15 @@ $E(z,s)$ 와 $E(z,1-s)$ 는 같은 고윳값의 같은 종류의 함수이고 �
 
 ## 연속 스펙트럼
 
-$\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H$ 는 첨점이 하나 뚫려 있어 콤팩트가 아니고, 그래서 연속 스펙트럼이 생긴다.
+$\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 는 첨점이 하나 뚫려 있어 콤팩트가 아니고, 그래서 연속 스펙트럼이 생긴다.
 
 $$
 L^2(\Gamma\backslash\mathbb H)=
-\underbrace{\mathbb C\cdot 1}_{\text{상수}}
+\underbrace{\mathbb C\cdot 1}\_{\text{상수}}
 \thickspace\oplus\thickspace
-\underbrace{L^2_{\mathrm{cusp}}}_{\text{Maass 첨점형식}}
+\underbrace{L^2_{\mathrm{cusp}}}\_{\text{Maass 첨점형식}}
 \thickspace\oplus\thickspace
-\underbrace{\int_{\mathrm{Re}(s)=1/2}^{\oplus}\mathbb C\thinspace E(z,s)\thinspace ds}_{\text{연속 스펙트럼}}
+\underbrace{\int_{\mathrm{Re}(s)=1/2}^{\oplus}\mathbb C\thinspace E(z,s)\thinspace ds}\_{\text{연속 스펙트럼}}
 $$
 
 연속 부분을 만드는 것이 임계선 위의 $E(z,s)$ 다. $E(z,\tfrac12+it)$ 는 상수항이 $y^{1/2}$ 크기라 $L^2$ 에 속하지 않지만 자유 입자의 평면파처럼 일반화 고유함수 노릇을 한다. Selberg 의 스펙트럼 분해 정리가 이 분해를 서술한다.
@@ -76,7 +76,7 @@ $$
 $\varphi(s)=\xi(2s-1)/\xi(2s)$ 의 분자가 $\xi$ 의 $w=1$ 극에서 오는 $s=1$ 단순극을 준다. 유수는
 
 $$
-\mathrm{Res}_{s=1}E(z,s)=\frac{1}{2\xi(2)}=\frac{3}{\pi}
+\mathrm{Res}\_{s=1}E(z,s)=\frac{1}{2\xi(2)}=\frac{3}{\pi}
 =\frac1{\mathrm{vol}(\Gamma\backslash\mathbb H)}
 $$
 
@@ -112,7 +112,7 @@ G_k(z)=\sum_{(m,n)\ne(0,0)}\frac1{(mz+n)^k},
 E_k(z)=\frac{G_k(z)}{2\zeta(k)}
 $$
 
-로 두면 $E_k\in M_k(\mathrm{SL}_2(\mathbb Z))$ 이고 $E_k(\infty)=1$ 이다. Fourier 전개는
+로 두면 $E_k\in M_k(\mathrm{SL}\_2(\mathbb Z))$ 이고 $E_k(\infty)=1$ 이다. Fourier 전개는
 
 $$
 E_k(z)=1-\frac{2k}{B_k}\sum_{n\ge1}\sigma_{k-1}(n)\thinspace q^n,
@@ -137,7 +137,7 @@ $E(z,s)$ 는 $\Gamma$ 불변이고 $\Delta_{\mathbb H}E=s(1-s)E$ 를 만족하�
 ## Fourier 전개
 
 $$
-E^*(z,s)=\xi(2s)\thinspace y^s+\xi(2s-1)\thinspace y^{1-s}
+E^\ast(z,s)=\xi(2s)\thinspace y^s+\xi(2s-1)\thinspace y^{1-s}
 +4\sqrt y\sum_{n\ge1}n^{s-\frac12}\sigma_{1-2s}(n)\thinspace K_{s-\frac12}(2\pi ny)\cos(2\pi nx)
 $$
 
@@ -149,9 +149,9 @@ $K_\nu$ 는 변형 Bessel 함수이고 $K_\nu=K_{-\nu}$ 다. 오른쪽 전체가
 
 > $E^\ast(z,s)$ 는 $s\in\mathbb C$ 전체로 유리형 접속되고
 > $$
-> E^*(z,s)=E^*(z,1-s)
+> E^\ast(z,s)=E^\ast(z,1-s)
 > $$
-> 를 만족한다. 극은 $s=0$ 과 $s=1$ 의 단순극뿐이고 $\mathrm{Res}_{s=1}E(z,s)=3/\pi$ 다.[^1]
+> 를 만족한다. 극은 $s=0$ 과 $s=1$ 의 단순극뿐이고 $\mathrm{Res}\_{s=1}E(z,s)=3/\pi$ 다.[^1]
 
 정규화하지 않은 꼴로는 $E(z,s)=\varphi(s)E(z,1-s)$ 이고 $\varphi(s)\varphi(1-s)=1$ 이다. 첨점이 여러 개이면 $\varphi$ 가 첨점 개수 크기의 행렬이 되고 그 행렬식의 극이 잉여 스펙트럼을 준다.
 
@@ -182,7 +182,7 @@ $$
 ## 일반화
 
 - **레벨과 첨점.** $\Gamma_0(N)$ 은 첨점이 여러 개이고 각 첨점마다 Eisenstein 급수가 있다. 산란 행렬이 진짜 행렬이 되고 그 행렬식이 스펙트럼 이론의 중심 대상이다.
-- **더 높은 계수.** $\mathrm{GL}_n$ 에서는 포물 부분군 $P$ 마다, 그 Levi 위의 첨점형식 $\sigma$ 마다 Eisenstein 급수 $E(g,s;\sigma,P)$ 가 있다. Langlands 가 이들의 해석적 접속을 증명했고 그것이 $L^2(\mathrm{GL}_n(\mathbb Q)\backslash\mathrm{GL}_n(\mathbb A))$ 의 스펙트럼 분해를 준다.
+- **더 높은 계수.** $\mathrm{GL}\_n$ 에서는 포물 부분군 $P$ 마다, 그 Levi 위의 첨점형식 $\sigma$ 마다 Eisenstein 급수 $E(g,s;\sigma,P)$ 가 있다. Langlands 가 이들의 해석적 접속을 증명했고 그것이 $L^2(\mathrm{GL}\_n(\mathbb Q)\backslash\mathrm{GL}\_n(\mathbb A))$ 의 스펙트럼 분해를 준다.
 - **Langlands–Shahidi 방법.** Eisenstein 급수의 상수항에 자기동형 $L$ 함수들이 인자로 나타난다. $\varphi(s)=\xi(2s-1)/\xi(2s)$ 에 $\zeta$ 가 나온 것의 일반화이고, 상수항의 해석적 성질에서 $L$ 함수의 해석적 성질을 읽는다.
 
 # 활용
@@ -209,13 +209,13 @@ Weyl 법칙으로 Maass 첨점형식의 개수를 셀 때 이 항을 빼야 하�
 
 ## 유수와 부피
 
-$E(z,s)$ 의 유수가 상수라는 사실에서 기본영역의 부피가 계산된다. Langlands 의 Eisenstein 급수 이론에서 잉여 스펙트럼을 계산하면 산술 군의 공변량 부피(Siegel–Weil, Langlands 부피 공식)가 나온다. $\mathrm{vol}(\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H)=\pi/3$ 에 $\zeta(2)=\pi^2/6$ 가 들어 있는 것이 그 예다.
+$E(z,s)$ 의 유수가 상수라는 사실에서 기본영역의 부피가 계산된다. Langlands 의 Eisenstein 급수 이론에서 잉여 스펙트럼을 계산하면 산술 군의 공변량 부피(Siegel–Weil, Langlands 부피 공식)가 나온다. $\mathrm{vol}(\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H)=\pi/3$ 에 $\zeta(2)=\pi^2/6$ 가 들어 있는 것이 그 예다.
 
 ## 반복되는 구도
 
 명시적으로 아는 대상을 만들어 두고 그것과의 관계에서 미지의 대상을 다루는 구도가 여러 분야에 나타난다. 해석적 정수론은 $\zeta$ 를 알고 $L$ 함수를 다루고, 표현론은 유도표현을 알고 초첨점 표현을 다루며, 대수기하는 사영공간을 알고 일반 다양체를 다룬다. Langlands 강령은 Eisenstein 쪽이 이미 알려졌고 첨점 쪽만 새롭다는 원리 위에 있다.
 
-[^1]: 함수방정식과 Fourier 전개는 H. Iwaniec, *Spectral Methods of Automorphic Forms* (2 판, 2002) 3장과 6장. 스펙트럼 분해는 같은 책 4장, 또는 A. Selberg, *Harmonic analysis and discontinuous groups*, J. Indian Math. Soc. **20** (1956). 정칙 쪽과 $691$ 합동은 J.-P. Serre, *A Course in Arithmetic* (1973) 7장. $\mathrm{GL}_n$ 의 Eisenstein 급수는 R. Langlands, *On the Functional Equations Satisfied by Eisenstein Series*, Lecture Notes in Math. 544 (1976), 해설은 C. Mœglin, J.-L. Waldspurger, *Spectral Decomposition and Eisenstein Series* (1995).
+[^1]: 함수방정식과 Fourier 전개는 H. Iwaniec, *Spectral Methods of Automorphic Forms* (2 판, 2002) 3장과 6장. 스펙트럼 분해는 같은 책 4장, 또는 A. Selberg, *Harmonic analysis and discontinuous groups*, J. Indian Math. Soc. **20** (1956). 정칙 쪽과 $691$ 합동은 J.-P. Serre, *A Course in Arithmetic* (1973) 7장. $\mathrm{GL}\_n$ 의 Eisenstein 급수는 R. Langlands, *On the Functional Equations Satisfied by Eisenstein Series*, Lecture Notes in Math. 544 (1976), 해설은 C. Mœglin, J.-L. Waldspurger, *Spectral Decomposition and Eisenstein Series* (1995).
 
 # 연관 문서
 

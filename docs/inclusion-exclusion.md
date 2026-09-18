@@ -55,7 +55,7 @@ $$
 각 원소 x에 대한 항등식을 U 위에서 더하면 위 공식이 나온다. 1_A는 지시함수다.
 
 $$
-\prod_{i=1}^{n}\bigl(1-\mathbf{1}_{A_i}(x)\bigr)=\sum_{S\subseteq[n]}(-1)^{|S|}\mathbf{1}_{A_S}(x)
+\prod_{i=1}^{n}\bigl(1-\mathbf{1}\_{A_i}(x)\bigr)=\sum_{S\subseteq[n]}(-1)^{|S|}\mathbf{1}\_{A_S}(x)
 $$
 
 좌변은 $x$ 가 어떤 $A_i$ 에도 속하지 않으면 1, 하나라도 속하면 0 이다. 우변을 $U$ 에 대해 합하면 여집합 형태를 얻는다[^1].

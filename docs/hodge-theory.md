@@ -149,7 +149,7 @@ $4k$ 차원에서는 $\star$ 가 $\mathcal H^{2k}$ 를 자기 자신으로 보�
 Weitzenböck 공식이 $\Delta$ 를 접속 Laplace 작용소와 곡률항의 합으로 쓴다. 1-형식에서는
 
 $$
-\Delta=\nabla^*\nabla+\mathrm{Ric}
+\Delta=\nabla^\ast\nabla+\mathrm{Ric}
 $$
 
 이므로 Ricci 곡률이 양의 준정부호면 조화 1-형식 $\omega$ 에 대해 $0=\Vert\nabla\omega\Vert^2+\langle\negthinspace\langle\mathrm{Ric}\thinspace\omega,\omega\rangle\negthinspace\rangle$ 이고 두 항이 모두 0 이어야 한다. $\mathrm{Ric}\gt 0$ 이면 $\omega=0$ 이므로

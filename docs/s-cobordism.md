@@ -48,7 +48,7 @@ $\pi_1$ 이 자명하면 $\mathbb Z[\pi_1]=\mathbb Z$ 이고 행렬식으로 다
 
 ## Whitehead 군
 
-> **정의.** 군 $\pi$ 에 대해 $\mathrm{GL}(\mathbb Z\pi)=\varinjlim\mathrm{GL}_n(\mathbb Z\pi)$ 라 하고
+> **정의.** 군 $\pi$ 에 대해 $\mathrm{GL}(\mathbb Z\pi)=\varinjlim\mathrm{GL}\_n(\mathbb Z\pi)$ 라 하고
 > $$
 > K_1(\mathbb Z\pi)=\mathrm{GL}(\mathbb Z\pi)^{\mathrm{ab}},\qquad
 > \mathrm{Wh}(\pi)=K_1(\mathbb Z\pi)\big/\lbrace\pm g:g\in\pi\rbrace

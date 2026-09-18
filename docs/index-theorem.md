@@ -67,7 +67,7 @@ graph TD
 $E,F$ 가 콤팩트 다양체 $M$ 위의 벡터다발이고 $D\colon\Gamma(E)\to\Gamma(F)$ 가 $m$ 계 미분작용소라 하자. 최고차 계수만 남긴 것이 **주기호**다.
 
 $$
-\sigma_D(x,\xi)\colon E_x\to F_x,\qquad (x,\xi)\in T^*M
+\sigma_D(x,\xi)\colon E_x\to F_x,\qquad (x,\xi)\in T^\astM
 $$
 
 모든 $\xi\ne0$ 에서 $\sigma_D(x,\xi)$ 가 동형이면 $D$ 가 **타원적**이다. Laplace 작용소는 기호가 $-|\xi|^2$ 라 타원적이고, 파동 작용소는 $\xi$ 가 빛원뿔 위에서 퇴화해 타원적이지 않다.
@@ -77,13 +77,13 @@ $$
 ## 해석적 지표와 위상적 지표
 
 $$
-\mathrm{ind}_{\mathrm{an}}(D)=\dim\ker D-\dim\mathrm{coker}\thinspace D
+\mathrm{ind}\_{\mathrm{an}}(D)=\dim\ker D-\dim\mathrm{coker}\thinspace D
 $$
 
 위상적 지표는 기호만으로 만든다. $\sigma_D$ 가 $T^\ast M$ 위에서 콤팩트 받침을 갖는 $K$ 이론 류 $[\sigma_D]\in K(T^\ast M)$ 를 정의하고, 이를 한 점의 $K$ 이론으로 밀어내려 정수를 얻는다. 특성류로 쓰면
 
 $$
-\mathrm{ind}_{\mathrm{top}}(D)=(-1)^{\dim M}\int_{T^*M}\mathrm{ch}([\sigma_D])\thinspace\mathrm{Td}(TM\otimes\mathbb C)
+\mathrm{ind}\_{\mathrm{top}}(D)=(-1)^{\dim M}\int_{T^\astM}\mathrm{ch}([\sigma_D])\thinspace\mathrm{Td}(TM\otimes\mathbb C)
 $$
 
 이고 $\mathrm{ch}$ 는 Chern 지표, $\mathrm{Td}$ 는 Todd 류다.
@@ -97,7 +97,7 @@ $$
 세 번째가 열핵 방법이다. 0 이 아닌 고윳값들이 양쪽에서 짝을 이뤄 상쇄되므로 항등식
 
 $$
-\mathrm{ind}(D)=\mathrm{tr}\thinspace e^{-tD^*D}-\mathrm{tr}\thinspace e^{-tDD^*}
+\mathrm{ind}(D)=\mathrm{tr}\thinspace e^{-tD^\astD}-\mathrm{tr}\thinspace e^{-tDD^\ast}
 $$
 
 이 모든 $t\gt 0$ 에서 성립한다. 좌변이 $t$ 에 무관하므로 $t\to0$ 극한을 취하면 열핵의 국소 전개에서 특성류 적분이 나온다. 초대칭을 쓰는 물리학자들의 논증이 같은 구조를 따른다.

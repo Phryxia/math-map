@@ -5,7 +5,7 @@
 무손실 부호화 정리는 평균 부호 길이를 [Shannon entropy](entropy.md) $H(X)$ 아래로 내릴 수 없고, 동시에 $H(X)$ 에 원하는 만큼 가까이 갈 수 있다고 말한다.
 
 $$
-H(X)\le L^{*}\lt H(X)+1
+H(X)\le L^{\ast}\lt H(X)+1
 $$
 
 entropy 는 비트 단위로 측정되는 압축의 한계다. 하한은 Kraft 부등식과 KL divergence 의 비음수성에서 나오고, 상한은 길이를 $\lceil -\log p \rceil$ 로 잡는 부호가 달성한다. 기호를 묶어서 부호화하면 $+1$ 의 손해도 기호당 0 으로 줄어든다.

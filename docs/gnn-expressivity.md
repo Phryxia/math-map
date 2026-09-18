@@ -49,7 +49,7 @@ $$
 논문의 구성은 합 집계에 학습 가능한 스칼라 $\epsilon$ 과 다층 퍼셉트론을 붙인다.
 
 $$
-h_{t+1}(v)=\mathrm{MLP}_t\Big((1+\epsilon_t)\thinspace h_t(v)+\sum_{u\in N(v)}h_t(u)\Big)
+h_{t+1}(v)=\mathrm{MLP}\_t\Big((1+\epsilon_t)\thinspace h_t(v)+\sum_{u\in N(v)}h_t(u)\Big)
 $$
 
 $(1+\epsilon_t)$ 계수가 자기 특징과 이웃 합을 구별한다. 그래프 수준 readout 은 각 층의 정점 특징 합을 이어 붙여 얕은 층의 정보가 깊은 층에서 뭉개지는 것을 막는다.

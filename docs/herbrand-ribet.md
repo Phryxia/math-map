@@ -15,7 +15,7 @@ $$
 무게 $k$ 의 Eisenstein 급수 $E_k$ 의 상수항은 $-B_k/2k$ 다. $p\mid B_k$ 이면 상수항이 $p$ 를 법으로 사라져 $E_k$ 가 첨점형식처럼 보이고, $E_k$ 와 합동인 첨점형식 $f$ 가 존재한다. $f$ 에 붙는 [Galois 표현](galois-representations.md) $\rho_f$ 를 $\bmod p$ 로 줄이면
 
 $$
-\bar\rho_f\sim\begin{pmatrix}1&*\cr 0&\omega^{k-1}\end{pmatrix}
+\bar\rho_f\sim\begin{pmatrix}1&\ast\cr 0&\omega^{k-1}\end{pmatrix}
 $$
 
 꼴의 가약이지만 불분해인 표현이 되고, $\ast\ne0$ 이 정의하는 확대가 류군의 비자명한 원소다. 해석적 조건 $p\mid B_k$ 가 모듈러 형식을 거쳐 이데알류로 번역된다.
@@ -53,7 +53,7 @@ $$
 $f$ 에 붙는 2 차원 $p$ 진 Galois 표현 $\rho_f$ 는
 
 $$
-\mathrm{tr}\thinspace\rho_f(\mathrm{Fr}_\ell)=a_\ell,\qquad \det\rho_f(\mathrm{Fr}_\ell)=\ell^{k-1}
+\mathrm{tr}\thinspace\rho_f(\mathrm{Fr}\_\ell)=a_\ell,\qquad \det\rho_f(\mathrm{Fr}\_\ell)=\ell^{k-1}
 $$
 
 를 만족한다. $\bmod\mathfrak p$ 로 줄이면 자취가 $1+\ell^{k-1}$ 이고 행렬식이 $\ell^{k-1}$ 이므로 Brauer–Nesbitt 로 반단순화가 $1\oplus\omega^{k-1}$ 이고 $\bar\rho_f$ 는 가약이다.
@@ -61,7 +61,7 @@ $$
 $\bar\rho_f$ 가 분해되면 $f$ 가 Eisenstein 급수여야 하는데 $f$ 는 첨점형식이다. 그러므로 적당한 기저에서
 
 $$
-\bar\rho_f=\begin{pmatrix}1&*\cr 0&\omega^{k-1}\end{pmatrix},\qquad *\ne0
+\bar\rho_f=\begin{pmatrix}1&\ast\cr 0&\omega^{k-1}\end{pmatrix},\qquad \ast\ne0
 $$
 
 이고, $\ast$ 가 비자명한 코사이클 $c\in H^1\big(G_{\mathbb Q},\mathbb F_p(\omega^{k-1})\big)$ 를 정의한다.
@@ -177,7 +177,7 @@ $p$ 가 비정칙일 때 어느 성분이 비자명한지가 Herbrand–Ribet �
 
 ## 현대적 일반화
 
-Skinner–Urban 은 $\mathrm{GL}_2$ 의 Eisenstein 급수를 $\mathrm{GSp}_4$ 로 올려 타원곡선 주추측의 한쪽 부등식을 얻었다. 합동으로 가약 표현을 만들고 불분해성에서 Selmer 군의 원소를 뽑아내며 그 개수를 $L$ 함수가 예측하는 만큼 확보하는 구조는 Ribet 과 같다. Eisenstein 합동이 Selmer 군에 원소를 공급하고 Euler 계가 원소를 제거하며, 두 기계가 만나는 곳에서 주추측이 증명된다.
+Skinner–Urban 은 $\mathrm{GL}\_2$ 의 Eisenstein 급수를 $\mathrm{GSp}\_4$ 로 올려 타원곡선 주추측의 한쪽 부등식을 얻었다. 합동으로 가약 표현을 만들고 불분해성에서 Selmer 군의 원소를 뽑아내며 그 개수를 $L$ 함수가 예측하는 만큼 확보하는 구조는 Ribet 과 같다. Eisenstein 합동이 Selmer 군에 원소를 공급하고 Euler 계가 원소를 제거하며, 두 기계가 만나는 곳에서 주추측이 증명된다.
 
 [^1]: K. Ribet, *A modular construction of unramified p-extensions of* $\mathbb Q(\mu_p)$ (Invent. Math. **34**, 1976), 151–162. 해설은 L. Washington, *Introduction to Cyclotomic Fields* (2판) 15 장과 B. Mazur, *Modular curves and the Eisenstein ideal*, Publ. IHES **47** (1977). Mazur–Wiles 는 Invent. Math. **76** (1984), Skinner–Urban 은 Invent. Math. **195** (2014).
 

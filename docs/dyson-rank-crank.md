@@ -53,7 +53,7 @@ $$
 이것은 완전한 Jacobi 형식이다. rank 쪽 생성함수는
 
 $$
-\sum_{\lambda}z^{\mathrm{rank}(\lambda)}q^{|\lambda|}=\sum_{n\ge0}\frac{q^{n^2}}{(zq;q)_n(z^{-1}q;q)_n}
+\sum_{\lambda}z^{\mathrm{rank}(\lambda)}q^{|\lambda|}=\sum_{n\ge0}\frac{q^{n^2}}{(zq;q)\_n(z^{-1}q;q)\_n}
 $$
 
 이고 $z$ 가 $1$ 의 거듭제곱근이면 Ramanujan 의 mock theta 함수가 된다. 두 통계량의 차이가 모듈러와 mock 의 차이다. crank 의 정의가 복잡해 보이는 것은 무한곱을 조합적으로 읽어낸 결과이기 때문이다.
@@ -110,7 +110,7 @@ $p(1)=1$ 이라 균등 분포가 불가능하므로 $n=1$ 은 관례상 따로 �
 ## 생성함수
 
 $$
-R(z;q)=\sum_{n\ge0}\sum_m N(m,n)z^mq^n=\sum_{n\ge0}\frac{q^{n^2}}{(zq;q)_n(z^{-1}q;q)_n}
+R(z;q)=\sum_{n\ge0}\sum_m N(m,n)z^mq^n=\sum_{n\ge0}\frac{q^{n^2}}{(zq;q)\_n(z^{-1}q;q)\_n}
 $$
 
 $$

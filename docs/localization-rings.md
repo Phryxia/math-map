@@ -163,7 +163,7 @@ flowchart LR
 $R=\mathbb Z$ 의 곱닫힌 집합은 본질적으로 소수 집합의 선택으로 결정된다. 소수 $p$ 에서의 국소화는
 
 $$
-\mathbb{Z}_{(p)} = \left\lbrace \frac{a}{b} \in \mathbb{Q} : p \nmid b \right\rbrace
+\mathbb{Z}\_{(p)} = \left\lbrace \frac{a}{b} \in \mathbb{Q} : p \nmid b \right\rbrace
 $$
 
 이고, 극대 아이디얼은 $p\mathbb Z_{(p)}$ 이고 잉여체는 $\mathbb Z/p\mathbb Z$ 라는 [유한체](finite-fields.md)다. 이 환의 모든 0이 아닌 아이디얼은 $p^n\mathbb Z_{(p)}$ 꼴이므로 이산 부치환(discrete valuation ring)이 되고, 이는 정수의 $p$ 진 자릿수 전개와 $p$ 진 부치 $v_p$ 의 대수적 기반이다([소수와 유일분해](primes.md)).

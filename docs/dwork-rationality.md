@@ -32,7 +32,7 @@ $$
 그러므로 $f\in\mathbb F_q[x_1,\dots,x_m]$ 의 영점 개수는
 
 $$
-\char35{}\lbrace x:f(x)=0\rbrace=\frac1q\sum_{t\in\mathbb F_q}\sum_{x}\psi\big(\mathrm{Tr}_{\mathbb F_q/\mathbb F_p}(tf(x))\big)
+\char35{}\lbrace x:f(x)=0\rbrace=\frac1q\sum_{t\in\mathbb F_q}\sum_{x}\psi\big(\mathrm{Tr}\_{\mathbb F_q/\mathbb F_p}(tf(x))\big)
 $$
 
 가 된다. 기하 문제가 $\sum_x\psi(\mathrm{Tr}\thinspace f(x))$ 꼴의 지수합 하나로 바뀐다. [Gauss 합](gauss-sums.md)은 $f(x)=ax$ 에 곱셈 지표를 곁들인 사례이고 Kloosterman 합은 $f(x)=ax+b/x$ 다.
@@ -48,7 +48,7 @@ Dwork 의 **분해함수**가 이 벽을 넘는다.
 $$
 \theta(x)=\exp\big(\pi(x-x^p)\big)=\sum_{m\ge0}\theta_mx^m,
 \qquad
-\mathrm{ord}_p\theta_m\ \ge\ \frac{(p-1)m}{p^2}
+\mathrm{ord}\_p\theta_m\ \ge\ \frac{(p-1)m}{p^2}
 $$
 
 $-\pi x^p$ 항을 더하면 수렴반경이 $p^{(p-1)/p^2}\gt 1$ 로 늘어나 닫힌 단위원판을 넘어서 수렴한다. 이 초과수렴(overconvergence)이 뒤에서 작용소를 완전연속으로 만든다.
@@ -66,7 +66,7 @@ $\exp(x)$ 의 계수 $1/n!$ 이 분모에 $p$ 를 끌고 오는데 $x^p/p+x^{p^2
 $\theta$ 가 있으면 지수합이 해석적 대상이 된다. Dwork 의 대각합 공식은 토러스 $(\mathbb F_{q^n}^\times)^m$ 위의 지수합을 작용소 하나로 정리한다.
 
 $$
-S_n(f)=\sum_{x\in(\mathbb F_{q^n}^\times)^m}\psi\big(\mathrm{Tr}_{\mathbb F_{q^n}/\mathbb F_p}f(x)\big)
+S_n(f)=\sum_{x\in(\mathbb F_{q^n}^\times)^m}\psi\big(\mathrm{Tr}\_{\mathbb F_{q^n}/\mathbb F_p}f(x)\big)
 =(q^n-1)^m\thinspace\mathrm{Tr}(\alpha^n)
 $$
 
@@ -114,7 +114,7 @@ $p$ 진 Banach 공간 $B$ 위의 연속선형작용소 $\alpha$ 가 **완전연�
 $$
 \det(1-T\alpha)=\sum_{k\ge0}(-1)^kc_kT^k,
 \qquad
-c_k=\sum_{i_1\lt\dots\lt i_k}\det\big(a_{i_\mu i_\nu}\big)_{1\le\mu,\nu\le k}
+c_k=\sum_{i_1\lt\dots\lt i_k}\det\big(a_{i_\mu i_\nu}\big)\_{1\le\mu,\nu\le k}
 $$
 
 가 잘 정의되고 $T$ 의 정함수다. 고윳값 이론이 유한차원처럼 작동한다는 것이 Serre 의 정리다.
@@ -124,7 +124,7 @@ $$
 $a,b\in\mathbb F_q^\times$ 에 대해
 
 $$
-\mathrm{Kl}_n(a,b)=\sum_{x\in\mathbb F_{q^n}^\times}\psi\Big(\mathrm{Tr}_{\mathbb F_{q^n}/\mathbb F_p}\big(ax+bx^{-1}\big)\Big)
+\mathrm{Kl}\_n(a,b)=\sum_{x\in\mathbb F_{q^n}^\times}\psi\Big(\mathrm{Tr}\_{\mathbb F_{q^n}/\mathbb F_p}\big(ax+bx^{-1}\big)\Big)
 $$
 
 이다. $f(x)=ax+bx^{-1}$ 은 토러스 $\mathbb G_m$ 위의 함수이므로 $m=1$ 사례다. 이 합의 $L$ 함수가 Dwork 이론의 가장 작은 비자명 예다.
@@ -155,7 +155,7 @@ $$
 f\in K(T)
 \iff
 \exists\thinspace m_0\ \ \forall m\ge m_0,\ \forall s\ge0:\quad
-H_m^{(s)}=\det\big(a_{s+i+j}\big)_{0\le i,j\le m}=0
+H_m^{(s)}=\det\big(a_{s+i+j}\big)\_{0\le i,j\le m}=0
 $$
 
 행렬식이 $0$ 이 되는 최소 $m$ 이 분모의 차수다. Dwork 는 이 조건을 직접 확인하는 대신 $p$ 진 유리형성을 거쳐 우회한다. 계산에서는 Hankel 판정이 유리성을 확인하는 가장 짧은 길이다.
@@ -168,7 +168,7 @@ $$
 동치로 $L$ 함수가 정확히 차수 $2$ 의 다항식이다.
 
 $$
-L(T)=\exp\Big(\sum_{n\ge1}\frac{\mathrm{Kl}_n}{n}T^n\Big)=(1-\alpha T)(1-\beta T)=1+\mathrm{Kl}_1\thinspace T+qT^2
+L(T)=\exp\Big(\sum_{n\ge1}\frac{\mathrm{Kl}\_n}{n}T^n\Big)=(1-\alpha T)(1-\beta T)=1+\mathrm{Kl}\_1\thinspace T+qT^2
 $$
 
 여기서 두 절댓값이 서로 다른 일을 한다.
@@ -194,7 +194,7 @@ $p$ 진 부치는 유리성보다 미세한 정보를 준다. 다항식 $\sum c_
 $\mathbb Q(\zeta_p)$ 에서 $p$ 위의 유일한 소 아이디얼이 $(\zeta_p-1)$ 이고 $\pi$ 는 그 생성원과 결부된다. [Gauss 합](gauss-sums.md)의 $p$ 진 크기는 Stickelberger 정리가 준다. $\omega$ 를 Teichmüller 지표라 할 때
 
 $$
-\mathrm{ord}_p\thinspace g(\omega^{-a})=\frac{a}{p-1},\qquad 0\le a\lt p-1
+\mathrm{ord}\_p\thinspace g(\omega^{-a})=\frac{a}{p-1},\qquad 0\le a\lt p-1
 $$
 
 이고 Gross–Koblitz 정리는 값 자체를 $p$ 진 감마함수 $\Gamma_p$ 로 주며 그 증명이 Dwork 의 분해함수를 쓴다. Gauss 합은 한 점 위의 Dwork 이론이고 그 $p$ 진 부치가 Newton 다각형의 기울기다. 절댓값 $\sqrt p$ 와 $\mathrm{ord}\_p=a/(p-1)$ 은 같은 수의 두 절댓값이다.

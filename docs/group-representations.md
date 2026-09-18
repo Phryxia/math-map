@@ -43,7 +43,7 @@ $$
 f \circ \rho(g) = \sigma(g) \circ f \quad (\forall g \in G)
 $$
 
-를 만족하는 선형사상 $f : V \to W$ 다. 그 전체를 $\mathrm{Hom}_G(V, W)$ 로 쓴다.
+를 만족하는 선형사상 $f : V \to W$ 다. 그 전체를 $\mathrm{Hom}\_G(V, W)$ 로 쓴다.
 
 ## 지표
 
@@ -87,7 +87,7 @@ $\mathrm{char} k$ 가 $\lvert G \rvert$ 를 나누는 modular 상황에서는 $1
 **보조정리.** $V$ 와 $W$ 가 기약표현이면
 
 $$
-\mathrm{Hom}_G(V, W) = \begin{cases} 0 & (V \not\cong W) \cr \mathbb{C}\cdot \mathrm{id} & (V \cong W) \end{cases}
+\mathrm{Hom}\_G(V, W) = \begin{cases} 0 & (V \not\cong W) \cr \mathbb{C}\cdot \mathrm{id} & (V \cong W) \end{cases}
 $$
 
 이다.
@@ -104,13 +104,13 @@ $$
 \langle \chi_i, \chi_j \rangle = \delta_{ij}
 $$
 
-*증명 스케치.* $\mathrm{Hom}(V, W)$ 에 $g \cdot f = \sigma(g) f \rho(g)^{-1}$ 로 표현 구조를 주면 지표는 $\chi_W \overline{\chi_V}$ 이고 불변원소의 공간은 $\mathrm{Hom}_G(V, W)$ 다. 평균 연산자
+*증명 스케치.* $\mathrm{Hom}(V, W)$ 에 $g \cdot f = \sigma(g) f \rho(g)^{-1}$ 로 표현 구조를 주면 지표는 $\chi_W \overline{\chi_V}$ 이고 불변원소의 공간은 $\mathrm{Hom}\_G(V, W)$ 다. 평균 연산자
 
 $$
 P = \frac{1}{|G|}\sum_{g} \rho(g)
 $$
 
-는 불변부분공간 위로의 사영이므로 $\mathrm{tr} P$ 가 그 차원과 같다. 두 계산에서 $\langle \chi_W, \chi_V \rangle = \dim \mathrm{Hom}_G(V, W)$ 이고, Schur 보조정리가 우변을 $0$ 또는 $1$ 로 만든다. ∎
+는 불변부분공간 위로의 사영이므로 $\mathrm{tr} P$ 가 그 차원과 같다. 두 계산에서 $\langle \chi_W, \chi_V \rangle = \dim \mathrm{Hom}\_G(V, W)$ 이고, Schur 보조정리가 우변을 $0$ 또는 $1$ 로 만든다. ∎
 
 따름정리는 다음과 같다.
 

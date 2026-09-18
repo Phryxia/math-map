@@ -90,7 +90,7 @@ Shimura 상호법칙이 Galois 작용을 유군의 작용으로 번역한다. �
 $x\in X_0(N)(H)$ 를 $\varphi$ 로 옮기면 $\varphi(x)\in E(H)$ 다. 자취를 취해 $K$ 로 내린다.
 
 $$
-y_K=\mathrm{Tr}_{H/K}\bigl(\varphi(x)\bigr)=\sum_{\sigma\in\mathrm{Gal}(H/K)}\varphi(x)^{\sigma}\thickspace\in\thickspace E(K)
+y_K=\mathrm{Tr}\_{H/K}\bigl(\varphi(x)\bigr)=\sum_{\sigma\in\mathrm{Gal}(H/K)}\varphi(x)^{\sigma}\thickspace\in\thickspace E(K)
 $$
 
 $E$ 의 군 구조가 있으므로 합이 정의된다.
@@ -162,7 +162,7 @@ $$
 $n$ 이 적당한 소수들의 곱일 때 순서환 $\mathcal O_n=\mathbb Z+n\mathcal O_K$ 에 대응하는 링 유체 $K_n$ 위에서 Heegner 점 $y_n\in E(K_n)$ 이 정의되고, 자취 정합성
 
 $$
-\mathrm{Tr}_{K_{n\ell}/K_n}(y_{n\ell})=a_\ell\thinspace y_n
+\mathrm{Tr}\_{K_{n\ell}/K_n}(y_{n\ell})=a_\ell\thinspace y_n
 $$
 
 을 만족한다. $a_\ell$ 은 $f$ 의 $\ell$ 번째 Hecke 고유값이다. 이 정합성에서 유도류 $\kappa_n\in H^1(K,E[p])$ 를 만들면 각 $\kappa_n$ 이 국소 조건을 하나씩 강제해 Selmer 군의 크기를 위에서 누른다. Euler 계는 정합적인 대수류의 열로 Selmer 군을 조이는 장치다.
@@ -171,7 +171,7 @@ $$
 
 ## 순위 $\le1$ 의 BSD
 
-$E/\mathbb Q$ 의 해석적 순위를 $r_{\mathrm{an}}=\mathrm{ord}_{s=1}L(E,s)$ 라 하면 두 정리의 결론은 다음과 같다.
+$E/\mathbb Q$ 의 해석적 순위를 $r_{\mathrm{an}}=\mathrm{ord}\_{s=1}L(E,s)$ 라 하면 두 정리의 결론은 다음과 같다.
 
 | 가정 | 결론 |
 |---|---|
@@ -222,7 +222,7 @@ $n$ 이 합동수, 곧 세 변이 유리수이고 넓이가 $n$ 인 직각삼각
 Kolyvagin 논법은 명시적 상계를 준다. Heegner 점의 $p$ 로 나누어떨어짐 정도(Kolyvagin 지표)가 $\text{Ш}$ 의 $p$ 부분 위수를 제어한다.
 
 $$
-\mathrm{ord}_p\bigl|\text{Ш}(E/K)\bigr|\thickspace\le\thickspace 2\thinspace\mathrm{ord}_p\bigl[E(K):\mathbb Z y_K\bigr]
+\mathrm{ord}\_p\bigl|\text{Ш}(E/K)\bigr|\thickspace\le\thickspace 2\thinspace\mathrm{ord}\_p\bigl[E(K):\mathbb Z y_K\bigr]
 $$
 
 역방향 부등식이 Iwasawa 이론에서 나오면 등호가 되고, 그것이 순위 $1$ 에서의 강한 BSD 다.

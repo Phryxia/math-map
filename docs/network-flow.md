@@ -22,7 +22,7 @@ Ford–Fulkerson 은 되돌리기를 그래프에 넣는다. 간선 $u \to v$ �
 
 ## 네트워크와 흐름
 
-**네트워크**는 유향 그래프 $G = (V, E)$ 와 용량 함수 $c : E \to \mathbb{R}_{\ge 0}$ 과 서로 다른 두 정점 source $s$ 와 sink $t$ 의 조합이다.
+**네트워크**는 유향 그래프 $G = (V, E)$ 와 용량 함수 $c : E \to \mathbb{R}\_{\ge 0}$ 과 서로 다른 두 정점 source $s$ 와 sink $t$ 의 조합이다.
 
 **흐름**은 함수 $f : E \to \mathbb{R}$ 로서 다음 두 조건을 만족하는 것이다.
 

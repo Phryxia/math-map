@@ -45,7 +45,7 @@ $$
 X_{t_\ast}\mid\mathbf y\ \sim\ \mathcal N\bigl(\mathbf k_\ast^\top K^{-1}\mathbf y,\ \ k(t_\ast,t_\ast)-\mathbf k_\ast^\top K^{-1}\mathbf k_\ast\bigr)
 $$
 
-여기서 $K=(k(t_i,t_j))$ 이고 $\mathbf k_\ast=(k(t_\ast,t_i))_i$ 다. 사후분산이 관측값 $\mathbf y$ 에 의존하지 않는다. 이것이 정규분포에 고유한 성질이다.
+여기서 $K=(k(t_i,t_j))$ 이고 $\mathbf k_\ast=(k(t_\ast,t_i))\_i$ 다. 사후분산이 관측값 $\mathbf y$ 에 의존하지 않는다. 이것이 정규분포에 고유한 성질이다.
 
 ## 선형변환의 닫힘
 

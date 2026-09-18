@@ -58,7 +58,7 @@ $B_n$ 의 표현족 $\rho_n\colon B_n\to A_n$ 과 자취 $\mathrm{tr}$ 이
 
 를 만족하면 적당히 정규화한 $\mathrm{tr}(\rho(\beta))$ 가 링크 불변량이 된다. 조건 1 은 대수에서 거의 자동으로 성립하고 조건 2 만 확인하면 된다.
 
-Jones 는 $\mathrm{II}_1$ 인자의 부분인자를 연구하다 Temperley–Lieb 대수 $TL_n(\delta)$ 위에서 이 성질을 가진 자취를 찾았다. $B_n\to TL_n$ 은
+Jones 는 $\mathrm{II}\_1$ 인자의 부분인자를 연구하다 Temperley–Lieb 대수 $TL_n(\delta)$ 위에서 이 성질을 가진 자취를 찾았다. $B_n\to TL_n$ 은
 
 $$
 \sigma_i\longmapsto A+A^{-1}e_i,\qquad e_i^2=\delta e_i,\ e_ie_{i\pm1}e_i=e_i
@@ -68,7 +68,7 @@ $$
 
 ## Burau 표현과 Alexander 다항식
 
-감소 Burau $\bar\rho\colon B_n\to\mathrm{GL}_{n-1}(\mathbb Z[t^{\pm1}])$ 를 쓰면 Alexander 다항식이 행렬식으로 나온다.
+감소 Burau $\bar\rho\colon B_n\to\mathrm{GL}\_{n-1}(\mathbb Z[t^{\pm1}])$ 를 쓰면 Alexander 다항식이 행렬식으로 나온다.
 
 $$
 \Delta_{\hat\beta}(t)\thickspace\doteq\thickspace\det\bigl(I-\bar\rho(\beta)\bigr)\cdot\frac{1-t}{1-t^{n}}
@@ -150,10 +150,10 @@ $$
 
 ## Markov 자취
 
-대수족 $\lbrace A_n\rbrace$ 과 준동형 $\rho_n\colon B_n\to A_n^\times$ 과 선형범함수 $\mathrm{tr}_n\colon A_n\to R$ 이 위 두 조건을 만족하면 $\mathrm{tr}$ 을 **Markov 자취**라 한다. $w(\beta)$ 를 지수합, $n$ 을 가닥 수라 하고 적절한 상수 $a,b$ 를 잡으면
+대수족 $\lbrace A_n\rbrace$ 과 준동형 $\rho_n\colon B_n\to A_n^\times$ 과 선형범함수 $\mathrm{tr}\_n\colon A_n\to R$ 이 위 두 조건을 만족하면 $\mathrm{tr}$ 을 **Markov 자취**라 한다. $w(\beta)$ 를 지수합, $n$ 을 가닥 수라 하고 적절한 상수 $a,b$ 를 잡으면
 
 $$
-X(\hat\beta)=a^{\thinspace w(\beta)}b^{\thinspace n-1}\thinspace\mathrm{tr}_n\bigl(\rho_n(\beta)\bigr)
+X(\hat\beta)=a^{\thinspace w(\beta)}b^{\thinspace n-1}\thinspace\mathrm{tr}\_n\bigl(\rho_n(\beta)\bigr)
 $$
 
 가 링크 불변량이 된다. $TL_n$ 과 Jones 자취를 넣으면 Jones 다항식, Hecke 대수 $H_n(q)$ 와 Ocneanu 자취를 넣으면 HOMFLY 다항식이 나온다.

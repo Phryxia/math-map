@@ -26,13 +26,13 @@ $\Gamma_0(N)$ 이 $\mathbb H$ 에 불연속으로 작용하므로 몫이 Riemann
 
 첫 문제는 **첨점**으로 해결한다. $\mathbb Q\cup\lbrace\infty\rbrace$ 의 $\Gamma_0(N)$ 궤도를 유한 개의 점으로 추가하면 $X_0(N)=\Gamma_0(N)\backslash(\mathbb H\cup\mathbb Q\cup\lbrace\infty\rbrace)$ 가 콤팩트하다.
 
-둘째 문제는 **타원점**이다. 안정자가 위수 2 또는 3 인 점에서 몫이 국소적으로 $z\mapsto z^2$ 또는 $z\mapsto z^3$ 처럼 접히므로 좌표를 그만큼 늘려야 매끄럽다. 위수 2 와 3 만 나오는 것은 $\mathrm{SL}_2(\mathbb Z)$ 의 유한 위수 원소가 위수 4 와 6 뿐이기 때문이다.
+둘째 문제는 **타원점**이다. 안정자가 위수 2 또는 3 인 점에서 몫이 국소적으로 $z\mapsto z^2$ 또는 $z\mapsto z^3$ 처럼 접히므로 좌표를 그만큼 늘려야 매끄럽다. 위수 2 와 3 만 나오는 것은 $\mathrm{SL}\_2(\mathbb Z)$ 의 유한 위수 원소가 위수 4 와 6 뿐이기 때문이다.
 
 두 보정이 Riemann–Hurwitz 공식에 들어가 종수 공식을 만든다. $\mu=[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]$ 가 덮개의 차수이고 $\nu_2,\nu_3,\nu_\infty$ 가 분기 자료다.
 
 ## 모듈라이 해석
 
-$\tau\in\mathbb H$ 에 격자 $L_\tau=\mathbb Z+\mathbb Z\tau$ 와 타원곡선 $E_\tau=\mathbb C/L_\tau$ 를 대응시킨다. $\mathrm{SL}_2(\mathbb Z)$ 의 작용은 격자의 기저를 바꾸므로 $E_\tau$ 를 바꾸지 않고, $\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H$ 가 타원곡선의 동형류 전체, 곧 $j$ 불변량의 값들이다.
+$\tau\in\mathbb H$ 에 격자 $L_\tau=\mathbb Z+\mathbb Z\tau$ 와 타원곡선 $E_\tau=\mathbb C/L_\tau$ 를 대응시킨다. $\mathrm{SL}\_2(\mathbb Z)$ 의 작용은 격자의 기저를 바꾸므로 $E_\tau$ 를 바꾸지 않고, $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 가 타원곡선의 동형류 전체, 곧 $j$ 불변량의 값들이다.
 
 $\Gamma_0(N)$ 으로 좁히면 부분군 $\langle1/N\rangle\subset E_\tau$ 를 보존하는 변환만 남으므로 $\Gamma_0(N)\backslash\mathbb H$ 의 점이 쌍 $(E,C)$ 를 분류한다.
 
@@ -74,7 +74,7 @@ graph TD
 $\Gamma_0(N)$ 의 지표는 곱 공식으로 주어진다.
 
 $$
-\mu=[\mathrm{SL}_2(\mathbb Z):\Gamma_0(N)]=N\prod_{p\mid N}\Big(1+\frac1p\Big)
+\mu=[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]=N\prod_{p\mid N}\Big(1+\frac1p\Big)
 $$
 
 **첨점의 개수**는 약수마다 센다.
@@ -111,7 +111,7 @@ $J_0(N)=\mathrm{Jac}(X_0(N))$ 은 차원 $g$ 의 아벨다양체이고 $\mathbb 
 $$
 X_0(Np)\ \xrightarrow{\ \alpha\ }\ X_0(N),\qquad
 X_0(Np)\ \xrightarrow{\ \beta\ }\ X_0(N),\qquad
-T_p=\beta_*\alpha^*
+T_p=\beta_\ast\alpha^\ast
 $$
 
 모듈라이로 읽으면 $(E,C)\mapsto\sum_{D}(E/D,\thinspace(C+D)/D)$ 로 위수 $p$ 부분군 전부에 걸친 합이다. [Hecke 작용소](hecke-operators.md)의 격자 정의가 곡선 위의 기하로 번역된 것이다.

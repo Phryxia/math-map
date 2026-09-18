@@ -74,7 +74,7 @@ flowchart TD
 | $\mathbb H^3$ | 상수 $-1$ | 6 | 대부분의 매듭 여집합 |
 | $S^2\times\mathbb R$ | 혼합 | 4 | $S^2\times S^1$ |
 | $\mathbb H^2\times\mathbb R$ | 혼합 | 4 | 쌍곡 곡면 $\times S^1$ |
-| $\widetilde{\mathrm{SL}_2\mathbb R}$ | 꼬인 곱 | 4 | 쌍곡 곡면 위의 단위 접다발 |
+| $\widetilde{\mathrm{SL}\_2\mathbb R}$ | 꼬인 곱 | 4 | 쌍곡 곡면 위의 단위 접다발 |
 | $\mathrm{Nil}$ | 멱영 | 4 | 원환면 위의 비자명 원다발 |
 | $\mathrm{Sol}$ | 가해 | 3 | Anosov 사상의 사상원환면 |
 
@@ -94,8 +94,8 @@ $\mathrm{Nil}$ 은 3 차원 Heisenberg 군이고, $\mathrm{Sol}$ 은 두 방향�
 
 $\mathbb H^3$ 을 뺀 일곱 기하의 다양체는 분류되어 있다.
 
-- $S^3,\ \mathbb E^3,\ S^2\times\mathbb R,\ \mathbb H^2\times\mathbb R,\ \widetilde{\mathrm{SL}_2\mathbb R},\ \mathrm{Nil}$ 의 여섯은 **Seifert 올뭉치**다. 원으로 채워져 있고 밑공간인 2 차원 오비폴드와 몇 개의 수치 불변량으로 결정된다.
-- $\mathrm{Sol}$ 다양체는 원환면 위의 다발이고, 붙임사상이 $\mathrm{SL}_2(\mathbb Z)$ 의 쌍곡 원소인 경우다.
+- $S^3,\ \mathbb E^3,\ S^2\times\mathbb R,\ \mathbb H^2\times\mathbb R,\ \widetilde{\mathrm{SL}\_2\mathbb R},\ \mathrm{Nil}$ 의 여섯은 **Seifert 올뭉치**다. 원으로 채워져 있고 밑공간인 2 차원 오비폴드와 몇 개의 수치 불변량으로 결정된다.
+- $\mathrm{Sol}$ 다양체는 원환면 위의 다발이고, 붙임사상이 $\mathrm{SL}\_2(\mathbb Z)$ 의 쌍곡 원소인 경우다.
 
 Seifert 조각은 밑 오비폴드의 Euler 지표와 다발의 Euler 수, 두 부호가 어느 기하인지를 정한다.
 
@@ -103,7 +103,7 @@ Seifert 조각은 밑 오비폴드의 Euler 지표와 다발의 Euler 수, 두 �
 |---|---|---|
 | $\gt 0$ | $S^2\times\mathbb R$ | $S^3$ |
 | $=0$ | $\mathbb E^3$ | $\mathrm{Nil}$ |
-| $\lt 0$ | $\mathbb H^2\times\mathbb R$ | $\widetilde{\mathrm{SL}_2\mathbb R}$ |
+| $\lt 0$ | $\mathbb H^2\times\mathbb R$ | $\widetilde{\mathrm{SL}\_2\mathbb R}$ |
 
 곡면의 분류에서 Euler 지표의 부호가 기하를 정하던 것이 여기서도 성립하고, 다발 방향이 더해져 표가 2 열이 된다.
 
@@ -139,7 +139,7 @@ $$
 
 | 여집합의 유형 | 매듭 | 기하 |
 |---|---|---|
-| Seifert 올뭉치 | 원환면 매듭 | $\widetilde{\mathrm{SL}_2\mathbb R}$ 또는 $\mathbb H^2\times\mathbb R$ |
+| Seifert 올뭉치 | 원환면 매듭 | $\widetilde{\mathrm{SL}\_2\mathbb R}$ 또는 $\mathbb H^2\times\mathbb R$ |
 | JSJ 로 잘림 | 위성 매듭 | 조각마다 다름 |
 | 원자적 | 쌍곡 매듭 | $\mathbb H^3$ |
 

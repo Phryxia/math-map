@@ -30,7 +30,7 @@ Schur 보조정리에 의해 $\omega(g)$ 는 스칼라 차이로 결정되고, �
 
 ## 2 겹 덮개
 
-사영표현을 진짜 표현으로 올리려면 코사이클을 없애야 하는데 $\mathrm{Sp}$ 에서는 없어지지 않는다. $\mathrm{SL}_2$ 의 원소
+사영표현을 진짜 표현으로 올리려면 코사이클을 없애야 하는데 $\mathrm{Sp}$ 에서는 없어지지 않는다. $\mathrm{SL}\_2$ 의 원소
 
 $$
 w=\begin{pmatrix}0&1\cr-1&0\end{pmatrix}
@@ -42,7 +42,7 @@ $$
 \int_{\mathbb R}e^{-\pi i x^2}\thinspace dx=e^{-\pi i/4}
 $$
 
-$e^{-\pi i/4}$ 가 Weil 지표라 불리는 8 차 근이고, 제곱근의 가지 선택이 2 겹 덮개를 만든다. 실 Lie 군 수준에서는 $\mathrm{SL}_2(\mathbb R)$ 의 기본군이 $\mathbb Z$ 라 덮개가 존재한다는 말과 같다. 이 2 겹에서 무게가 반정수가 되며, 반정수 무게 형식은 메타플렉틱군의 형식이다.
+$e^{-\pi i/4}$ 가 Weil 지표라 불리는 8 차 근이고, 제곱근의 가지 선택이 2 겹 덮개를 만든다. 실 Lie 군 수준에서는 $\mathrm{SL}\_2(\mathbb R)$ 의 기본군이 $\mathbb Z$ 라 덮개가 존재한다는 말과 같다. 이 2 겹에서 무게가 반정수가 되며, 반정수 무게 형식은 메타플렉틱군의 형식이다.
 
 ## 불변 범함수로서의 theta
 
@@ -87,7 +87,7 @@ $$
 
 $\mathrm{Sp}(W)$ 는 $H(W)$ 에 $g\cdot(w,t)=(gw,t)$ 로 작용하고 중심을 고정한다. 유일성에서 사영표현이 생기고 그 코사이클이 2 겹 덮개 $\mathrm{Mp}(W)\to\mathrm{Sp}(W)$ 위에서 자명해진다. 이 덮개 위의 표현 $\omega_\psi$ 가 **Weil 표현**이다.
 
-$\mathrm{SL}_2$ 에서 생성원의 작용은 다음과 같다.
+$\mathrm{SL}\_2$ 에서 생성원의 작용은 다음과 같다.
 
 $$
 \omega_\psi\negthinspace\begin{pmatrix}a&0\cr 0&a^{-1}\end{pmatrix}\varphi(x)=\chi(a)\thinspace|a|^{1/2}\varphi(ax),
@@ -147,7 +147,7 @@ $$
 
 ## Shimura 대응
 
-쌍대쌍 $\bigl(\mathrm{Mp}_2,\mathrm{PGL}_2\bigr)$ 가 주는 올림이 고전적 Shimura 대응이다. 무게 $k+1/2$ 의 형식과 무게 $2k$ 의 형식이 대응하고 Hecke 고윳값이 일치한다. [Waldspurger 정리](waldspurger-formula.md)가 반정수 무게 계수와 토릭 주기라는 두 형태를 갖는 근거가 이 대응이다.
+쌍대쌍 $\bigl(\mathrm{Mp}\_2,\mathrm{PGL}\_2\bigr)$ 가 주는 올림이 고전적 Shimura 대응이다. 무게 $k+1/2$ 의 형식과 무게 $2k$ 의 형식이 대응하고 Hecke 고윳값이 일치한다. [Waldspurger 정리](waldspurger-formula.md)가 반정수 무게 계수와 토릭 주기라는 두 형태를 갖는 근거가 이 대응이다.
 
 ## Siegel–Weil 공식
 

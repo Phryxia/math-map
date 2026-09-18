@@ -50,12 +50,12 @@ $\sin z / z$ 는 $0$ 에서 제거가능, $1/(z^2+1)$ 은 $\pm i$ 에서 1 차 �
 
 ## 유수와 유수 정리
 
-$c$ 에서 $f$ 의 유수는 Laurent 계수 $a_{-1}$ 이고 $\mathrm{Res}_{z=c}f$ 로 쓴다.
+$c$ 에서 $f$ 의 유수는 Laurent 계수 $a_{-1}$ 이고 $\mathrm{Res}\_{z=c}f$ 로 쓴다.
 
 **유수 정리.** 단순연결 영역에서 $f$ 가 유한개의 고립특이점 $z_1, \ldots, z_k$ 를 제외하고 정칙이고, 닫힌 경로 $\gamma$ 가 그 특이점들을 지나지 않으면 다음이 성립한다.
 
 $$
-\oint_{\gamma}f(z)\thinspace dz=2\pi i\sum_{j=1}^{k}n(\gamma,z_j)\mathrm{Res}_{z=z_j}f
+\oint_{\gamma}f(z)\thinspace dz=2\pi i\sum_{j=1}^{k}n(\gamma,z_j)\mathrm{Res}\_{z=z_j}f
 $$
 
 $n(\gamma, z_j)$ 는 경로가 $z_j$ 를 감은 횟수다. 경로가 단순 닫힌 곡선이고 양의 방향이면 내부 특이점에서 1, 외부에서 0 이다. 증명은 각 특이점을 작은 원으로 도려내고 주부를 항별로 적분한 뒤 Cauchy 정리로 나머지를 지운다.
@@ -67,11 +67,11 @@ $n(\gamma, z_j)$ 는 경로가 $z_j$ 를 감은 횟수다. 경로가 단순 닫�
 급수를 실제로 펼치지 않고 극의 차수만 알면 미분으로 계산된다.
 
 $$
-\mathrm{Res}_{z=c}f=\lim_{z\to c}(z-c)f(z)\quad(\text{1차 극})
+\mathrm{Res}\_{z=c}f=\lim_{z\to c}(z-c)f(z)\quad(\text{1차 극})
 $$
 
 $$
-\mathrm{Res}_{z=c}f=\frac{1}{(m-1)!}\lim_{z\to c}\frac{d^{m-1}}{dz^{m-1}}\big[(z-c)^mf(z)\big]\quad(m\text{차 극})
+\mathrm{Res}\_{z=c}f=\frac{1}{(m-1)!}\lim_{z\to c}\frac{d^{m-1}}{dz^{m-1}}\big[(z-c)^mf(z)\big]\quad(m\text{차 극})
 $$
 
 $f = g/h$ 이고 $h(c) = 0$ , $h'(c) \ne 0$ , $g(c) \ne 0$ 이면 유수는 $g(c)/h'(c)$ 다. 진성 특이점에는 이런 공식이 없고 급수를 직접 펼친다. $e^{1/z}=\sum z^{-n}/n!$ 에서 $a_{-1} = 1$ 이다.
@@ -101,7 +101,7 @@ $f'/f$ 가 $m$ 차 영점에서 유수 $m$ , $m$ 차 극에서 유수 $-m$ 을 �
 실수 위의 적분을 복소 경로로 닫으면 유수 계산이 된다. 반원 경로는 유리함수와 $e^{iax}$ 의 곱에, 부채꼴 경로는 분수 거듭제곱이 든 적분에, 직사각형 경로는 쌍곡함수가 든 적분에 쓰인다. 상반평면의 1 차 극 $z=i$ 하나를 잡으면 다음이 나온다.
 
 $$
-\int_{-\infty}^{\infty}\frac{e^{iax}}{1+x^2}\thinspace dx=2\pi i\mathrm{Res}_{z=i}\frac{e^{iaz}}{1+z^2}=\pi e^{-a}\quad(a\gt 0)
+\int_{-\infty}^{\infty}\frac{e^{iax}}{1+x^2}\thinspace dx=2\pi i\mathrm{Res}\_{z=i}\frac{e^{iaz}}{1+z^2}=\pi e^{-a}\quad(a\gt 0)
 $$
 
 급수의 합에는 모든 정수에서 유수 1 인 극을 갖는 $\pi \cot(\pi z)$ 를 곱하고 큰 사각형 경로에서 적분값이 0 으로 감을 보인다. 이 기법으로 $\sum 1/n^2 = \pi^2/6$ 이 나온다.

@@ -140,7 +140,7 @@ $$
 이다. $\beta$ 에 대한 부분이 $-\mathrm{RSS}/(2\sigma^2)$ 뿐이므로 가능도 최대화가 잔차제곱합 최소화와 같은 문제이고, **최소제곱추정량이 정규오차 모형의 MLE** 다. 분산에 대해서는 미분해서
 
 $$
-\hat\sigma^{2}_{\mathrm{MLE}} = \frac{\mathrm{RSS}}{n}
+\hat\sigma^{2}\_{\mathrm{MLE}} = \frac{\mathrm{RSS}}{n}
 $$
 
 을 얻는데 아래로 편향되어 있어 실무에서는 $n-p$ 로 나눈 값을 쓴다. 오차가 Laplace 분포이면 같은 논리가 절대편차합 최소화(중앙값 회귀)를 주므로, 손실함수의 선택이 오차분포 가정의 선택이다.
@@ -151,7 +151,7 @@ $$
 
 $$
 \hat\beta \sim N\negthinspace\big(\beta,\thickspace \sigma^{2}(X^{\top}X)^{-1}\big), \qquad
-\frac{\mathrm{RSS}}{\sigma^{2}} \sim \chi^{2}_{n-p},
+\frac{\mathrm{RSS}}{\sigma^{2}} \sim \chi^{2}\_{n-p},
 $$
 
 이고 둘은 독립이다(직교하는 두 사영에 대한 정규벡터의 상이므로). 따라서 $(X^{\mathsf T}X)^{-1}$ 의 $j$ 번째 대각원소를 $v_j$ 라 할 때
@@ -167,7 +167,7 @@ $$
 절편이 모형에 있으면 잔차의 합이 0 이고, 총제곱합이 직교분해된다.
 
 $$
-\underbrace{\sum_i (y_i - \bar{y})^{2}}_{\mathrm{TSS}} = \underbrace{\sum_i (\hat{y}_i - \bar{y})^{2}}_{\mathrm{ESS}} + \underbrace{\sum_i (y_i - \hat{y}_i)^{2}}_{\mathrm{RSS}}, \qquad
+\underbrace{\sum_i (y_i - \bar{y})^{2}}\_{\mathrm{TSS}} = \underbrace{\sum_i (\hat{y}\_i - \bar{y})^{2}}\_{\mathrm{ESS}} + \underbrace{\sum_i (y_i - \hat{y}\_i)^{2}}\_{\mathrm{RSS}}, \qquad
 R^{2} = 1 - \frac{\mathrm{RSS}}{\mathrm{TSS}} = \frac{\mathrm{ESS}}{\mathrm{TSS}}.
 $$
 
@@ -178,7 +178,7 @@ $R^2$ 는 설명된 분산의 비율이고 절편만 있는 모형 대비 개선
 설명변수들이 서로 거의 선형종속이면 $X^\top X$ 가 거의 특이해져 계수의 분산이 커진다. $j$ 번째 변수를 나머지 변수들로 회귀했을 때의 결정계수를 $R_j^2$ 라 하면 분산팽창계수는
 
 $$
-\mathrm{VIF}_j = \frac{1}{1 - R_j^{2}}
+\mathrm{VIF}\_j = \frac{1}{1 - R_j^{2}}
 $$
 
 이고 $\mathrm{Var}(\hat\beta_j)$ 가 그만큼 커진다. 적합값 $\hat{y}$ 는 안정적이지만 개별 계수의 해석이 불안정해진다. 대응은 변수 제거, 주성분 사용([특이값 분해](singular-value-decomposition.md)), ridge 처럼 $X^\top X+\lambda I$ 로 대각을 키우는 정규화다.

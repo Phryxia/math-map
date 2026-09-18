@@ -38,7 +38,7 @@ $Q$ 와 $Q'$ 가 같은 류라는 것은 모든 $\mathbb Z_p$ 와 $\mathbb R$ �
 무게 $m/2$ 의 모듈러 형식 공간은 Eisenstein 부분과 첨점 부분의 직합이다.
 
 $$
-\Theta_Q=\underbrace{E_Q}_{\text{류에만 의존}}+\underbrace{f_Q}_{\text{개별 형식}}
+\Theta_Q=\underbrace{E_Q}\_{\text{류에만 의존}}+\underbrace{f_Q}\_{\text{개별 형식}}
 $$
 
 Eisenstein 부분은 같은 류의 모든 형식에서 같고 그 계수가 국소 밀도의 곱이며, 첨점 부분이 형식마다 다른 몫을 담는다. 계수의 크기는

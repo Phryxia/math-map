@@ -25,7 +25,7 @@ $H=L^2[0,1]$ 에서 $T=-i\thinspace d/dx$ 를 생각하자. 이 표현만으로�
 $\langle Tf,g\rangle=\langle f,Tg\rangle$ 가 정의역 안에서 성립하면 대칭이다. 이 조건은 수반작용소 $T^\ast$ 가 $T$ 의 확장임을 뜻한다.
 
 $$
-T\ \text{대칭}\iff T\subseteq T^*,\qquad T\ \text{자기수반}\iff T=T^*
+T\ \text{대칭}\iff T\subseteq T^\ast,\qquad T\ \text{자기수반}\iff T=T^\ast
 $$
 
 $T^\ast$ 의 정의역은 $T$ 의 정의역이 작을수록 커진다. 정의역을 너무 좁게 잡으면 대칭이지만 자기수반이 아니고 너무 넓게 잡으면 대칭성을 잃으므로, 맞는 지점을 찾는 것이 문제다.
@@ -43,7 +43,7 @@ $T^\ast$ 의 정의역은 $T$ 의 정의역이 작을수록 커진다. 정의역
 $\mathcal D(T)\subset H$ 가 조밀하고 $T:\mathcal D(T)\to H$ 가 선형이라 하자. 수반작용소의 정의역은 다음이다.
 
 $$
-\mathcal D(T^*)=\big\lbrace g\in H:\ \exists h\in H,\ \langle Tf,g\rangle=\langle f,h\rangle\ \ \forall f\in\mathcal D(T)\big\rbrace
+\mathcal D(T^\ast)=\big\lbrace g\in H:\ \exists h\in H,\ \langle Tf,g\rangle=\langle f,h\rangle\ \ \forall f\in\mathcal D(T)\big\rbrace
 $$
 
 이때 $T^\ast g=h$ 로 두며 $\mathcal D(T)$ 의 조밀성이 $h$ 의 유일성을 보장한다. 정의역이 조밀하지 않으면 수반이 정의되지 않는다.
@@ -67,7 +67,7 @@ $T$ 의 그래프 $\lbrace(f,Tf):f\in\mathcal D(T)\rbrace$ 가 $H\oplus H$ 에�
 대칭 작용소 $T$ 에 대해 다음을 결손공간, 그 차원을 결손지수라 한다.
 
 $$
-K_\pm=\ker(T^*\mp i),\qquad n_\pm=\dim K_\pm
+K_\pm=\ker(T^\ast\mp i),\qquad n_\pm=\dim K_\pm
 $$
 
 von Neumann 의 정리가 자기수반 확장의 개수를 완전히 결정한다.

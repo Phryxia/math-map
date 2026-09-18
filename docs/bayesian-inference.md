@@ -110,7 +110,7 @@ $$
 즉 $\mathrm{Beta}(a+x,b+n-x)$ 다. 사후평균은
 
 $$
-\mathbb{E}[p \mid x] = \frac{a + x}{a + b + n} = \underbrace{\frac{a+b}{a+b+n}}_{w}\cdot \frac{a}{a+b} \thickspace+\thickspace (1-w)\cdot\frac{x}{n}.
+\mathbb{E}[p \mid x] = \frac{a + x}{a + b + n} = \underbrace{\frac{a+b}{a+b+n}}\_{w}\cdot \frac{a}{a+b} \thickspace+\thickspace (1-w)\cdot\frac{x}{n}.
 $$
 
 사전평균과 표본비율의 볼록결합이고, 가중치는 "사전표본크기" $a + b$ 대 실제 표본크기 $n$ 의 비다. $n \to \infty$ 이면 최대가능도추정값 $x/n$ 으로 간다. MAP 는 $(a + x - 1)/(a + b + n - 2)$ 로 사후평균과 일반적으로 다르다.

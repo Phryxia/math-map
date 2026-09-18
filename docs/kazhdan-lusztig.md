@@ -4,10 +4,10 @@
 
 [Borel–Weil–Bott 정리](borel-weil-bott.md)는 표수 $0$ 에서 기약표현의 지표를 결정한다. 깃발다양체 위 직선다발의 코호몰로지가 한 자리에만 살고 그 자리에서 Weyl 지표 공식이 나온다. 표수 $p$ 에서는 코호몰로지가 여러 차수에 흩어지고 기약가군의 지표가 닫힌 공식으로 주어지지 않는다.
 
-Kazhdan 과 Lusztig 은 1979 년에 이 빈자리를 메울 조합적 대상을 정의했다.[^1] Weyl 군(더 일반적으로 Coxeter 군) $W$ 의 군환을 매개변수 $q$ 로 변형한 **Iwahori–Hecke 대수** $\mathcal H$ 를 잡고, 거기에 자연스러운 대합에 대해 자기쌍대인 기저 $\lbrace C'_w\rbrace$ 가 유일하게 존재함을 보인다. 표준기저로 전개할 때 나오는 계수가
+Kazhdan 과 Lusztig 은 1979 년에 이 빈자리를 메울 조합적 대상을 정의했다.[^1] Weyl 군(더 일반적으로 Coxeter 군) $W$ 의 군환을 매개변수 $q$ 로 변형한 **Iwahori–Hecke 대수** $\mathcal H$ 를 잡고, 거기에 자연스러운 대합에 대해 자기쌍대인 기저 $\lbrace C'\_w\rbrace$ 가 유일하게 존재함을 보인다. 표준기저로 전개할 때 나오는 계수가
 
 $$
-C'_w=q^{-\ell(w)/2}\sum_{x\le w}P_{x,w}(q)\thinspace T_x,\qquad P_{x,w}\in\mathbb Z[q]
+C'\_w=q^{-\ell(w)/2}\sum_{x\le w}P_{x,w}(q)\thinspace T_x,\qquad P_{x,w}\in\mathbb Z[q]
 $$
 
 **Kazhdan–Lusztig 다항식**이다. 정의는 조합적이어서 Coxeter 군의 Bruhat 순서와 길이 함수만 쓴다.
@@ -36,8 +36,8 @@ $$
 
 표준기저 $T_w$ 는 이 대합에 대해 자기쌍대가 아니다. 그런데 다음 두 조건을 동시에 만족하는 기저는 **유일하게** 존재한다.
 
-1. $\overline{C'_w}=C'_w$ (자기쌍대)
-2. $C'_w$ 를 $T_x$ 로 전개할 때 계수의 차수가 엄격히 제한됨
+1. $\overline{C'\_w}=C'\_w$ (자기쌍대)
+2. $C'\_w$ 를 $T_x$ 로 전개할 때 계수의 차수가 엄격히 제한됨
 
 대칭성, Bruhat 순서에 대한 상삼각 전개, 차수 제한이 함께 걸리면 자유도가 사라진다. 구조는 Gram–Schmidt 와 같다. Kazhdan–Lusztig 다항식은 그 유일한 답의 계수이고, 같은 종류의 기저가 양자군의 정준기저와 결정기저로 이어진다.
 
@@ -46,7 +46,7 @@ $$
 $P_{x,w}(q)$ 는 Schubert 다양체 $X_w=\overline{BwB/B}$ 의 점 $x$ 근방에서 교차 코호몰로지 층의 줄기를 기술한다.
 
 $$
-P_{x,w}(q)=\sum_i \dim\mathcal H^{2i}\bigl(\mathrm{IC}(X_w)\bigr)_x\thickspace q^{i}
+P_{x,w}(q)=\sum_i \dim\mathcal H^{2i}\bigl(\mathrm{IC}(X_w)\bigr)\_x\thickspace q^{i}
 $$
 
 $X_w$ 가 $x$ 에서 매끄러우면 교차 코호몰로지가 상수층이라 $P_{x,w}=1$ 이고, 특이하면 여분의 코호몰로지가 $q$ 의 양의 차수 항으로 나타난다. 다항식의 크기가 특이점의 복잡도를 잰다.
@@ -128,10 +128,10 @@ $x\le w$ 는 $w$ 의 어떤 축소 표현에서 문자 몇 개를 지워 $x$ 의
 $\iota\colon\mathcal H\to\mathcal H$ 를 $q^{1/2}\mapsto q^{-1/2}$ 와 $T_w\mapsto T_{w^{-1}}^{-1}$ 로 정의되는 환 대합이라 하자. 각 $w\in W$ 에 대해
 
 $$
-\iota(C'_w)=C'_w,\qquad C'_w=q^{-\ell(w)/2}\sum_{x\le w}P_{x,w}(q)T_x
+\iota(C'\_w)=C'\_w,\qquad C'\_w=q^{-\ell(w)/2}\sum_{x\le w}P_{x,w}(q)T_x
 $$
 
-이고 $P_{w,w}=1$ 이며 $x\lt w$ 이면 $\deg P_{x,w}\le\frac{\ell(w)-\ell(x)-1}{2}$ 인 원소 $C'_w$ 가 유일하게 존재한다. 차수 상계를 하나만 느슨하게 해도 자유도가 생기므로 이 상계가 유일성을 준다.
+이고 $P_{w,w}=1$ 이며 $x\lt w$ 이면 $\deg P_{x,w}\le\frac{\ell(w)-\ell(x)-1}{2}$ 인 원소 $C'\_w$ 가 유일하게 존재한다. 차수 상계를 하나만 느슨하게 해도 자유도가 생기므로 이 상계가 유일성을 준다.
 
 ## 재귀 계산
 
@@ -167,7 +167,7 @@ $M_x$ 는 Verma 가군이다. Beilinson–Bernstein 과 Brylinski–Kashiwara �
 
 표수 $p$ 에서 대수군 $G$ 의 기약가군 지표를 KL 다항식으로 주려는 것이 Lusztig 추측이다. $p$ 가 충분히 크면 성립하고, 처음에는 Coxeter 수 $h$ 에 대해 $p\ge 2h-2$ 면 되리라 기대했다.
 
-Williamson 은 $\mathrm{SL}_n$ 에서 반례의 무한족을 만들었다.[^3] 필요한 $p$ 의 하계가 $n$ 의 다항식이 아니라 지수적으로 자란다. 표수 $p$ 표현론은 KL 다항식이 아니라 $p$ 에 의존하는 **$p$ 진 KL 다항식**을 요구하며, Riche–Williamson 이 그 틀을 정리했다.
+Williamson 은 $\mathrm{SL}\_n$ 에서 반례의 무한족을 만들었다.[^3] 필요한 $p$ 의 하계가 $n$ 의 다항식이 아니라 지수적으로 자란다. 표수 $p$ 표현론은 KL 다항식이 아니라 $p$ 에 의존하는 **$p$ 진 KL 다항식**을 요구하며, Riche–Williamson 이 그 틀을 정리했다.
 
 ## 계산의 어려움
 

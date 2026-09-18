@@ -43,7 +43,7 @@ $$
 벡터공간 $V$ 에 대해 $\Lambda^kV^\ast$ 는 $k$ 개의 인수를 받는 교대 다중선형 함수들의 공간이다. $\dim V=n$ 이면
 
 $$
-\dim\Lambda^kV^*=\binom nk
+\dim\Lambda^kV^\ast=\binom nk
 $$
 
 이다. $k\gt n$ 이면 0 이고, $k=n$ 이면 1 차원이라 행렬식이 유일한 후보다.
@@ -86,7 +86,7 @@ $$
 매끄러운 사상 $F:N\to M$ 은 형식을 반대 방향으로 옮긴다.
 
 $$
-(F^*\omega)_p(v_1,\dots,v_k)=\omega_{F(p)}\big(dF_p v_1,\dots,dF_p v_k\big)
+(F^\ast\omega)\_p(v_1,\dots,v_k)=\omega_{F(p)}\big(dF_p v_1,\dots,dF_p v_k\big)
 $$
 
 당김은 쐐기곱, 외미분과 교환한다. $F^\ast(d\omega)=d(F^\ast\omega)$ 가 좌표변환의 근거이고 치환적분 공식이 그 한 경우다.

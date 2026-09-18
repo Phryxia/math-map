@@ -7,7 +7,7 @@
 $N \times N$ 무작위 대칭행렬의 고윳값은 반원 모양으로 퍼지고, 최대 고윳값은 반원의 오른쪽 끝 $2\sqrt N$ 근처에 놓인다. 그 요동의 크기는 $N^{-1/6}$ 이라는 어중간한 지수를 가지며, 적절히 규격화하면
 
 $$
-N^{2/3}\left(\frac{\lambda_{\max}}{\sqrt N} - 2\right) \thickspace\longrightarrow\thickspace \mathrm{TW}_\beta
+N^{2/3}\left(\frac{\lambda_{\max}}{\sqrt N} - 2\right) \thickspace\longrightarrow\thickspace \mathrm{TW}\_\beta
 $$
 
 로 수렴한다. 극한분포는 [Airy 함수](airy-functions.md)로 만든 적분핵의 Fredholm 행렬식으로도, Painlevé II 방정식의 특정 해로도 쓰인다. 스펙트럼의 가장자리는 고윳값이 있는 영역과 없는 영역이 만나는 회전점이므로 Airy 함수가 나타난다.
@@ -71,7 +71,7 @@ $$
 최대 고윳값이 $s$ 이하일 확률은 구간 $(s,\infty)$ 에 점이 하나도 없을 확률이므로
 
 $$
-F_2(s) = \det\left(I - K_{\mathrm{Ai}}\right)_{L^2(s,\infty)}
+F_2(s) = \det\left(I - K_{\mathrm{Ai}}\right)\_{L^2(s,\infty)}
 $$
 
 다. Fredholm 행렬식은 핵의 자취들로 만든 급수 $\exp\bigl(-\sum_{k\ge1}\tfrac1k\mathrm{tr}K^k\bigr)$ 로 정의된다.
@@ -127,7 +127,7 @@ $$
 같은 극한이 무작위 행렬 바깥에서도 나타난다. **최장증가부분수열**이 대표적이다. $n$ 개 원소의 무작위 순열에서 가장 긴 증가부분수열의 길이 $\ell_n$ 은 $2\sqrt n$ 근처에 있고, Baik–Deift–Johansson 의 정리가
 
 $$
-\frac{\ell_n - 2\sqrt n}{n^{1/6}} \thickspace\longrightarrow\thickspace \mathrm{TW}_2
+\frac{\ell_n - 2\sqrt n}{n^{1/6}} \thickspace\longrightarrow\thickspace \mathrm{TW}\_2
 $$
 
 를 준다. 순열에는 행렬도 고윳값도 없지만 같은 분포가 나온다. 무작위 성장 모형(모서리 성장, ASEP, 방향성 중합체)에서도 요동이 $t^{1/3}$ 규모이고 극한이 Tracy–Widom 이며, 이 부류를 **KPZ 보편성류**라 한다.

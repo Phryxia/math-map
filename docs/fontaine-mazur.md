@@ -7,7 +7,7 @@
 Fontaine 과 Mazur 는 1995 년에 이 국소 조건이 표현의 전역적 출처를 결정한다고 추측했다.[^1] 전역 표현
 
 $$
-\rho\colon G_{\mathbb Q}=\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\longrightarrow \mathrm{GL}_n(\mathbb Q_p)
+\rho\colon G_{\mathbb Q}=\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\longrightarrow \mathrm{GL}\_n(\mathbb Q_p)
 $$
 
 가 기약이고 다음 두 조건을 만족한다고 하자.
@@ -106,7 +106,7 @@ graph LR
 
 ## 기하적 표현
 
-$\rho\colon G_{\mathbb Q}\to\mathrm{GL}_n(\mathbb Q_p)$ 가 연속이라 하자. $\rho$ 가 **기하적**(geometric)이라 함은 매끄러운 사영 다양체 $X/\mathbb Q$ 와 정수 $i,j$ 가 있어 $\rho$ 가
+$\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_n(\mathbb Q_p)$ 가 연속이라 하자. $\rho$ 가 **기하적**(geometric)이라 함은 매끄러운 사영 다양체 $X/\mathbb Q$ 와 정수 $i,j$ 가 있어 $\rho$ 가
 
 $$
 H^i_{\mathrm{et}}\bigl(X_{\bar{\mathbb Q}},\mathbb Q_p\bigr)(j)
@@ -126,7 +126,7 @@ $\rho|\_{G_{\mathbb Q_p}}$ 가 de Rham 이라 함은 $D_{\mathrm{dR}}(\rho)=\big
 
 ## 추측의 정밀한 형태
 
-$n=2$ 에서는 Hodge–Tate 무게와 홀짝성까지 지정한 형태로 적는다. $\rho\colon G_{\mathbb Q}\to\mathrm{GL}_2(\mathbb Q_p)$ 가 기약, 거의 모든 곳 비분기, $p$ 에서 de Rham 이고 Hodge–Tate 무게가 $k\ge2$ 인 $\lbrace 0,k-1\rbrace$ 로 **서로 다르다**고 하자. 그러면
+$n=2$ 에서는 Hodge–Tate 무게와 홀짝성까지 지정한 형태로 적는다. $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\mathbb Q_p)$ 가 기약, 거의 모든 곳 비분기, $p$ 에서 de Rham 이고 Hodge–Tate 무게가 $k\ge2$ 인 $\lbrace 0,k-1\rbrace$ 로 **서로 다르다**고 하자. 그러면
 
 $$
 \det\rho(c)=-1\quad(c\ \text{는 복소켤레}) \thickspace\Longrightarrow\thickspace \rho\cong\rho_f\ \text{ (어떤 무게 } k \text{ 첨점 고유형식 } f)
@@ -172,7 +172,7 @@ graph TD
   NC --> NW["p 진 무게"]
 ```
 
-추측은 de Rham 인 점이 모두 고전점이라고 주장한다. de Rham 성은 $p$ 자리의 국소 조건이고 고전성은 전역적인 자기동형 자료라, 국소 조건 하나가 족 안의 위치를 결정한다는 진술이다. Kisin 과 Emerton 은 $\mathrm{GL}_2(\mathbb Q_p)$ 의 $p$ 진 국소 Langlands 대응으로 그 국소 조건을 표현론적 조건으로 번역했다.
+추측은 de Rham 인 점이 모두 고전점이라고 주장한다. de Rham 성은 $p$ 자리의 국소 조건이고 고전성은 전역적인 자기동형 자료라, 국소 조건 하나가 족 안의 위치를 결정한다는 진술이다. Kisin 과 Emerton 은 $\mathrm{GL}\_2(\mathbb Q_p)$ 의 $p$ 진 국소 Langlands 대응으로 그 국소 조건을 표현론적 조건으로 번역했다.
 
 ## Sen 무게의 정수성
 
@@ -205,7 +205,7 @@ Wiles 의 반안정 타원곡선 모듈러성, Breuil–Conrad–Diamond–Taylo
 1. 도체가 유한한가. 분기하는 소수를 나열할 수 있는가.
 2. Sen 작용소의 고유값이 정수이고 대각화되는가. 아니면 즉시 탈락.
 3. 무게가 서로 다르고 홀수인가. 그러면 그 무게와 도체의 $S_k(\Gamma_0(N))$ 를 실제로 계산해 후보 고유형식을 찾는다.
-4. 몇 개의 소수에서 $a_\ell$ 과 $\mathrm{tr}\thinspace\rho(\mathrm{Frob}_\ell)$ 을 대조한다.
+4. 몇 개의 소수에서 $a_\ell$ 과 $\mathrm{tr}\thinspace\rho(\mathrm{Frob}\_\ell)$ 을 대조한다.
 
 [모듈러 기호](modular-symbols.md)로 3 단계의 공간을 계산하므로 절차 전체가 컴퓨터에서 돈다. 추측은 이 절차의 완전성, 곧 후보가 없으면 그런 표현도 없음을 보장한다.
 

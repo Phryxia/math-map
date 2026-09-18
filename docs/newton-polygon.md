@@ -85,7 +85,7 @@ $f(x)=\sum_{i\ge0}a_ix^i$ 가 멱급수여도 같은 정의를 쓰고 볼록포�
 
 ## Weierstrass 예비정리와의 관계
 
-$p$ 진 멱급수 $f(x)=\sum a_ix^i$ 가 $|x|_p\le r$ 에서 수렴하고 유계라 하자. Newton 다각형에서 기울기가 $\ge-v(r)$ 인 변들의 수평길이 총합을 $d$ 라 하면 $f$ 는 그 원판에서 정확히 $d$ 개의 영점을 갖고 다음으로 분해된다.
+$p$ 진 멱급수 $f(x)=\sum a_ix^i$ 가 $|x|\_p\le r$ 에서 수렴하고 유계라 하자. Newton 다각형에서 기울기가 $\ge-v(r)$ 인 변들의 수평길이 총합을 $d$ 라 하면 $f$ 는 그 원판에서 정확히 $d$ 개의 영점을 갖고 다음으로 분해된다.
 
 $$
 f(x)=P(x)\thinspace u(x),\qquad \deg P=d,\ u\ \text{는 원판에서 단위}
@@ -106,7 +106,7 @@ $v(x^n/n!)=nv(x)-\frac{n-s_p(n)}{p-1}$ 이 $\infty$ 로 가려면 다음이 필�
 $$
 v(x)\gt\frac1{p-1}
 \qquad\Longleftrightarrow\qquad
-|x|_p\lt p^{-1/(p-1)}\lt 1
+|x|\_p\lt p^{-1/(p-1)}\lt 1
 $$
 
 다각형의 기울기가 점근적으로 $-1/(p-1)$ 이라는 말과 같다. $\pi^{p-1}=-p$ 이면 $v(\pi)=\frac1{p-1}$ 이라 $\exp(\pi x)$ 는 열린 단위원판에서 겨우 수렴하고, $x^p$ 항을 뺀 $\exp(\pi(x-x^p))$ 가 반경을 $1$ 너머로 민다. 이 경계가 [Dwork 의 분해함수](dwork-rationality.md)가 넘은 벽이다.
@@ -115,7 +115,7 @@ $$
 
 유한체 위 다양체의 zeta 함수 분자 $P(T)=\prod(1-\alpha_jT)$ 에서 근은 $\alpha_j^{-1}$ 이므로 다각형의 기울기가 $\mathrm{ord}\thinspace\alpha_j$ 와 같다. 타원곡선의 $P(T)=1-a_pT+pT^2$ 에서 점은 $(0,0),(1,v(a_p)),(2,1)$ 이고 두 경우로 갈린다.
 
-| 조건 | 다각형 | $\mathrm{ord}_p\alpha,\ \mathrm{ord}_p\beta$ | 이름 |
+| 조건 | 다각형 | $\mathrm{ord}\_p\alpha,\ \mathrm{ord}\_p\beta$ | 이름 |
 |---|---|---|---|
 | $p\nmid a_p$ | 꺾인 두 변 | $0,\ 1$ | 보통(ordinary) |
 | $p\mid a_p$ | 곧은 한 변 | $\tfrac12,\ \tfrac12$ | 초특이(supersingular) |

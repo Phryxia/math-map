@@ -8,7 +8,7 @@ $$
 \exp:\mathfrak g\to G,\qquad \exp(X)=\sum_{k\ge0}\frac{X^k}{k!}
 $$
 
-$\exp$ 는 $0$ 의 근방에서 미분동형이므로 국소적으로는 완전한 사전이다. 전역적으로는 두 가지로 어긋난다. $\mathrm{SL}_2(\mathbb R)$ 처럼 $\exp$ 가 전사가 아닌 군이 있고, $\mathrm{SU}(2)$ 와 $\mathrm{SO}(3)$ 처럼 같은 Lie 대수를 갖는 서로 다른 군이 있다.
+$\exp$ 는 $0$ 의 근방에서 미분동형이므로 국소적으로는 완전한 사전이다. 전역적으로는 두 가지로 어긋난다. $\mathrm{SL}\_2(\mathbb R)$ 처럼 $\exp$ 가 전사가 아닌 군이 있고, $\mathrm{SU}(2)$ 와 $\mathrm{SO}(3)$ 처럼 같은 Lie 대수를 갖는 서로 다른 군이 있다.
 
 남는 차이는 위상적이다. 같은 Lie 대수를 갖는 연결 Lie 군들은 하나의 보편덮개를 공유하고 서로는 이산 중심부분군에 의한 몫이므로, [덮개공간](covering-spaces.md) 이론이 대응 정리의 요지가 된다.
 
@@ -58,13 +58,13 @@ $$
 
 ## 지수사상의 상
 
-$\mathrm{SL}_2(\mathbb R)$ 에서 $X$ 는 대각합이 0 이므로 고유값이 $\pm\lambda$ 다. $\lambda$ 가 실수면 $\exp X$ 의 대각합이 $2\cosh\lambda\ge2$ 이고, $\lambda=i\mu$ 가 순허수면 $2\cos\mu\in[-2,2]$ 이며, $X$ 가 멱영이면 $2$ 다. 어느 경우든 다음이 성립한다.
+$\mathrm{SL}\_2(\mathbb R)$ 에서 $X$ 는 대각합이 0 이므로 고유값이 $\pm\lambda$ 다. $\lambda$ 가 실수면 $\exp X$ 의 대각합이 $2\cosh\lambda\ge2$ 이고, $\lambda=i\mu$ 가 순허수면 $2\cos\mu\in[-2,2]$ 이며, $X$ 가 멱영이면 $2$ 다. 어느 경우든 다음이 성립한다.
 
 $$
 \mathrm{tr}(\exp X)\ge-2
 $$
 
-$\mathrm{diag}(-2,-\tfrac12)$ 는 $\mathrm{SL}_2(\mathbb R)$ 의 원소이지만 대각합이 $-\tfrac52\lt -2$ 라 $\exp$ 의 상 밖에 있다. $\exp$ 의 상이 항등원의 근방을 포함하므로 유한 번 곱하면 모든 원소에 닿는다.
+$\mathrm{diag}(-2,-\tfrac12)$ 는 $\mathrm{SL}\_2(\mathbb R)$ 의 원소이지만 대각합이 $-\tfrac52\lt -2$ 라 $\exp$ 의 상 밖에 있다. $\exp$ 의 상이 항등원의 근방을 포함하므로 유한 번 곱하면 모든 원소에 닿는다.
 
 콤팩트 연결 Lie 군에는 양불변 Riemann 계량이 존재하고 지수사상이 측지선의 지수사상과 일치하므로, Hopf–Rinow 정리에 의해 $\exp$ 가 전사다.
 
@@ -74,11 +74,11 @@ $\mathrm{diag}(-2,-\tfrac12)$ 는 $\mathrm{SL}_2(\mathbb R)$ 의 원소이지만
 
 **Lie 군**은 매끄러운 [다양체](manifolds.md) $G$ 이면서 군이고, 곱셈 $G\times G\to G$ 와 역원 $G\to G$ 가 매끄러운 것이다.
 
-$\mathfrak g=T_eG$ 의 괄호는 왼쪽불변 벡터장으로 정의한다. $X\in T_eG$ 에 대해 $X^L_g=(dL_g)_eX$ 로 벡터장을 만들면 벡터장의 Lie 괄호가 다시 왼쪽불변이므로 $T_eG$ 위의 괄호가 유도된다. 이것이 $\mathrm{Lie}(G)=\mathfrak g$ 이고, 행렬군에서는 교환자 $XY-YX$ 와 일치한다.
+$\mathfrak g=T_eG$ 의 괄호는 왼쪽불변 벡터장으로 정의한다. $X\in T_eG$ 에 대해 $X^L_g=(dL_g)\_eX$ 로 벡터장을 만들면 벡터장의 Lie 괄호가 다시 왼쪽불변이므로 $T_eG$ 위의 괄호가 유도된다. 이것이 $\mathrm{Lie}(G)=\mathfrak g$ 이고, 행렬군에서는 교환자 $XY-YX$ 와 일치한다.
 
 ## 지수사상과 딸림표현
 
-$X\in\mathfrak g$ 에 대해 $\gamma_X(0)=e$ , $\gamma_X'(t)=(dL_{\gamma_X(t)})_eX$ 인 유일한 곡선으로 지수사상을 정의한다.
+$X\in\mathfrak g$ 에 대해 $\gamma_X(0)=e$ , $\gamma_X'(t)=(dL_{\gamma_X(t)})\_eX$ 인 유일한 곡선으로 지수사상을 정의한다.
 
 $$
 \exp(X)=\gamma_X(1)
@@ -89,7 +89,7 @@ $G\subset\mathrm{GL}\_n$ 이면 행렬 지수함수와 같다.
 **딸림표현**은 켤레 작용의 미분이다.
 
 $$
-\mathrm{Ad}:G\to\mathrm{GL}(\mathfrak g),\quad \mathrm{Ad}(g)X=\left.\frac{d}{dt}\right|_{t=0}g\exp(tX)g^{-1}
+\mathrm{Ad}:G\to\mathrm{GL}(\mathfrak g),\quad \mathrm{Ad}(g)X=\left.\frac{d}{dt}\right|\_{t=0}g\exp(tX)g^{-1}
 $$
 
 이것을 다시 미분하면 Lie 대수의 $\mathrm{ad}$ 가 나오고, 둘은 지수사상으로 이어진다.
@@ -140,7 +140,7 @@ $G=\mathrm{SO}(3)$ 에서 이 분해가 [구면조화함수](spherical-harmonics
 
 ## 스핀과 게이지장
 
-$\mathrm{SU}(2)$ 의 표현이 스핀이다. 반정수 스핀은 $\mathrm{SO}(3)$ 이 아니라 그 이중덮개의 표현이고, 그래서 페르미온이 $2\pi$ 회전에서 부호를 바꾼다. 상대론에서는 $\mathrm{SL}_2(\mathbb C)\to\mathrm{SO}^+(3,1)$ 가 같은 역할을 하며 Weyl 스피너를 준다.
+$\mathrm{SU}(2)$ 의 표현이 스핀이다. 반정수 스핀은 $\mathrm{SO}(3)$ 이 아니라 그 이중덮개의 표현이고, 그래서 페르미온이 $2\pi$ 회전에서 부호를 바꾼다. 상대론에서는 $\mathrm{SL}\_2(\mathbb C)\to\mathrm{SO}^+(3,1)$ 가 같은 역할을 하며 Weyl 스피너를 준다.
 
 게이지 이론에서 주다발의 구조군이 Lie 군이고 게이지장이 Lie 대수값 접속이며, 곡률의 지수가 Wilson 고리로 관측된다.
 

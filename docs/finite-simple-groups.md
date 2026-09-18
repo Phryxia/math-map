@@ -83,7 +83,7 @@ $G$ 의 합성인자가 전부 가환(곧 $\mathbb Z/p$ 꼴)이면 $G$ 를 **가
 
 - **순환군** $\mathbb Z/p$ 는 $p$ 가 소수일 때 유일한 가환 단순군이다.
 - **교대군** $A_n$ 은 $n\ge5$ 에서 단순하다. $n=5$ 에서 위수 60 이고 이것이 최소 비가환 단순군이다.
-- **Lie 형 군**. 유한체 $\mathbb F_q$ 위의 [Lie 대수](lie-algebras.md)에서 만든 군들이다. 고전형 $A_n(q)=\mathrm{PSL}_{n+1}(q),\thinspace B_n(q),\thinspace C_n(q),\thinspace D_n(q)$ 와 예외형 $G_2(q),F_4(q),E_6(q),E_7(q),E_8(q)$ 가 있고, 도표 자기동형으로 뒤튼 ${}^2A_n(q),\thinspace{}^2D_n(q),\thinspace{}^3D_4(q),\thinspace{}^2E_6(q)$ 와 Suzuki 군 ${}^2B_2(q)$ 와 Ree 군 ${}^2G_2(q),\thinspace{}^2F_4(q)$ 가 이어진다. 모두 16 개 족이다.
+- **Lie 형 군**. 유한체 $\mathbb F_q$ 위의 [Lie 대수](lie-algebras.md)에서 만든 군들이다. 고전형 $A_n(q)=\mathrm{PSL}\_{n+1}(q),\thinspace B_n(q),\thinspace C_n(q),\thinspace D_n(q)$ 와 예외형 $G_2(q),F_4(q),E_6(q),E_7(q),E_8(q)$ 가 있고, 도표 자기동형으로 뒤튼 ${}^2A_n(q),\thinspace{}^2D_n(q),\thinspace{}^3D_4(q),\thinspace{}^2E_6(q)$ 와 Suzuki 군 ${}^2B_2(q)$ 와 Ree 군 ${}^2G_2(q),\thinspace{}^2F_4(q)$ 가 이어진다. 모두 16 개 족이다.
 - **산재군** 26 개. 위 어디에도 속하지 않는 것들.
 
 Dynkin 도표 분류가 여기서 다시 나타난다. 연속군의 분류 목록이 그대로 유한군의 분류 목록 대부분을 이룬다. 복소 단순 Lie 대수의 분류와 유한 단순군 분류가 같은 조합적 구조를 공유한다는 뜻이다.
@@ -115,12 +115,12 @@ $$
 분류 목록에는 겹침이 있다. 같은 군이 두 갈래에 나타나는 경우다.
 
 $$
-A_5\cong\mathrm{PSL}_2(4)\cong\mathrm{PSL}_2(5),\qquad
-A_6\cong\mathrm{PSL}_2(9),\qquad
-A_8\cong\mathrm{PSL}_4(2)
+A_5\cong\mathrm{PSL}\_2(4)\cong\mathrm{PSL}\_2(5),\qquad
+A_6\cong\mathrm{PSL}\_2(9),\qquad
+A_8\cong\mathrm{PSL}\_4(2)
 $$
 
-$\mathrm{PSL}_2(7)\cong\mathrm{PSL}_3(2)$ 도 있다. 위수 168 인 이 군은 Klein 4 차곡선의 자기동형군이자 Fano 평면의 자기동형군이다. 작은 위수에서는 서로 다른 구성이 자꾸 같은 군을 낳고, 위수가 커지면 이런 우연이 사라진다.
+$\mathrm{PSL}\_2(7)\cong\mathrm{PSL}\_3(2)$ 도 있다. 위수 168 인 이 군은 Klein 4 차곡선의 자기동형군이자 Fano 평면의 자기동형군이다. 작은 위수에서는 서로 다른 구성이 자꾸 같은 군을 낳고, 위수가 커지면 이런 우연이 사라진다.
 
 ## 증명의 요지
 

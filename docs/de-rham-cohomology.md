@@ -43,7 +43,7 @@ $$
 $k$ 번째 **de Rham 코호몰로지**는 다음 실벡터공간이다.
 
 $$
-H^k_{\mathrm{dR}}(M)=\frac{Z^k}{B^k},\qquad Z^k=\ker d|_{\Omega^k},\quad B^k=\mathrm{im}\thinspace d|_{\Omega^{k-1}}
+H^k_{\mathrm{dR}}(M)=\frac{Z^k}{B^k},\qquad Z^k=\ker d|\_{\Omega^k},\quad B^k=\mathrm{im}\thinspace d|\_{\Omega^{k-1}}
 $$
 
 $Z^k$ 의 원소를 닫힘형식, $B^k$ 의 원소를 완전형식, 몫에서의 동치류를 코호몰로지류라 한다.
@@ -63,7 +63,7 @@ $F,G:N\to M$ 이 매끄럽게 호모토픽하면 $F^\ast=G^\ast$ 다.
 *증명.* 호모토피 작용소 $K:\Omega^k(M)\to\Omega^{k-1}(N)$ 를 만들어
 
 $$
-G^*\omega-F^*\omega=d(K\omega)+K(d\omega)
+G^\ast\omega-F^\ast\omega=d(K\omega)+K(d\omega)
 $$
 
 를 보인다. $\omega$ 가 닫혀 있으면 둘째 항이 사라지고 차이가 완전형식이 되어 코호몰로지에서 같다.
@@ -121,7 +121,7 @@ de Rham 정리의 따름으로 삼각분할로 센 값과 일치하므로 $\chi$
 $M$ 이 콤팩트이고 Riemann 계량을 가지면 각 코호몰로지류에 조화형식 대표원이 정확히 하나 있다.
 
 $$
-H^k_{\mathrm{dR}}(M)\cong\mathcal H^k=\ker\Delta|_{\Omega^k},\qquad\Delta=d\delta+\delta d
+H^k_{\mathrm{dR}}(M)\cong\mathcal H^k=\ker\Delta|\_{\Omega^k},\qquad\Delta=d\delta+\delta d
 $$
 
 위상적 불변량이 타원형 편미분방정식의 해공간으로 실현되고, 코호몰로지의 유한차원성도 이 타원성에서 나온다. Poincaré 쌍대성 $H^k\cong H^{n-k}$ 는 Hodge 별작용소로 주어진다.

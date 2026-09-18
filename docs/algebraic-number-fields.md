@@ -133,11 +133,11 @@ $$
 efg=n
 $$
 
-이 된다. 여기서 $g$ 는 소 아이디얼의 개수다. 분기하지 않는 $p$ 에 대해 각 $\mathfrak p$ 의 분해군이 잉여체 확대의 Galois 군과 동형이고, 그 생성원이 Frobenius 원소 $\mathrm{Frob}_{\mathfrak p}$ 다.
+이 된다. 여기서 $g$ 는 소 아이디얼의 개수다. 분기하지 않는 $p$ 에 대해 각 $\mathfrak p$ 의 분해군이 잉여체 확대의 Galois 군과 동형이고, 그 생성원이 Frobenius 원소 $\mathrm{Frob}\_{\mathfrak p}$ 다.
 
 아벨 확대에서는 Frobenius 가 $\mathfrak p$ 의 선택에 무관해 $p$ 만의 함수가 된다. 이것이 Artin 사상이며, 유체론은 이 사상이 유수군의 일반화를 Galois 군에 동형으로 대응시킨다고 말한다.
 
-$K=\mathbb Q(\zeta_m)$ 에서 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathrm{Frob}_p=p \bmod m$ 이다. $p$ 가 완전분해할 조건이 $p\equiv1\pmod m$ 이고, 이차 부분체로 내려가면 이차 상호법칙이 된다.
+$K=\mathbb Q(\zeta_m)$ 에서 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathrm{Frob}\_p=p \bmod m$ 이다. $p$ 가 완전분해할 조건이 $p\equiv1\pmod m$ 이고, 이차 부분체로 내려가면 이차 상호법칙이 된다.
 
 ## 유수 공식
 

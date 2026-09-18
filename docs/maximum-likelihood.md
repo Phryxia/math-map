@@ -32,7 +32,7 @@ $$
 최대가능도 추정량은 로그가능도를 최대화하는 점이다. 존재하지 않거나 유일하지 않을 수 있으므로 argmax는 집합으로 이해한다.
 
 $$
-\hat\theta=\mathop{\mathrm{arg\thinspace max}}_{\theta\in\Theta}\ \ell(\theta)
+\hat\theta=\mathop{\mathrm{arg\thinspace max}}\_{\theta\in\Theta}\ \ell(\theta)
 $$
 
 ## score와 Fisher 정보
@@ -85,7 +85,7 @@ $$
 모형이 식별가능하고 정칙 조건이 만족되면 MLE는 참값으로 확률수렴한다. 증명의 골격은 다음이다. [큰 수의 법칙](law-of-large-numbers.md)에 의해 $1/n$ 을 곱한 로그가능도가 참값 $\theta_0$ 에서의 기댓값으로 수렴한다.
 
 $$
-\frac1n\ell(\theta)\ \xrightarrow{\ P\ }\
+\frac1n\ell(\theta)\thinspace\xrightarrow{\thinspace P\thinspace}\thinspace
 \mathbb E_{\theta_0}\negthinspace\left[\log f(X;\theta)\right]
 =-H(\theta_0)-D_{\mathrm{KL}}\negthinspace\left(f_{\theta_0}\thinspace\Vert\thinspace f_\theta\right)
 $$
@@ -104,7 +104,7 @@ $$
 
 $$
 0=\ell'(\hat\theta)\approx\ell'(\theta_0)+\ell''(\theta_0)(\hat\theta-\theta_0)
-\ \Longrightarrow\
+\thinspace\Longrightarrow\thinspace
 \sqrt n(\hat\theta-\theta_0)\approx
 \frac{n^{-1/2}\ell'(\theta_0)}{-n^{-1}\ell''(\theta_0)}
 $$

@@ -106,7 +106,7 @@ Fontaine–Mazur 추측 쪽 작업에서 표현이 기하에서 오는지 판정
 
 ## 국소 Langlands 의 $p$ 진 판
 
-$(\varphi,\Gamma)$ 가군의 언어에서 $\Gamma$ 작용의 미분이 Sen 작용소이고, $p$ 진 국소 Langlands 대응에서 무한소 자료의 역할을 한다. $\mathrm{GL}_2(\mathbb Q_p)$ 의 Colmez 대응에서 Sen 무게가 표현 쪽의 무한소 지표로 옮겨간다. 아르키메데스 자리에서 $(\mathfrak g,K)$ 가군의 무한소 지표가 하던 일을 $p$ 진 자리에서 $\Theta$ 가 한다.
+$(\varphi,\Gamma)$ 가군의 언어에서 $\Gamma$ 작용의 미분이 Sen 작용소이고, $p$ 진 국소 Langlands 대응에서 무한소 자료의 역할을 한다. $\mathrm{GL}\_2(\mathbb Q_p)$ 의 Colmez 대응에서 Sen 무게가 표현 쪽의 무한소 지표로 옮겨간다. 아르키메데스 자리에서 $(\mathfrak g,K)$ 가군의 무한소 지표가 하던 일을 $p$ 진 자리에서 $\Theta$ 가 한다.
 
 # 연관 문서
 

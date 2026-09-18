@@ -59,7 +59,7 @@ $$
 오른쪽 조건이 Leibniz 규칙이다. $T_pM$ 은 [벡터 공간](vector-spaces.md)이고 차원은 $n$ 이며, chart $(U,\varphi)$ 의 좌표 $x$ 로부터 다음이 기저가 된다.
 
 $$
-\left.\frac{\partial}{\partial x^{1}}\right|_{p},\ \dots,\ \left.\frac{\partial}{\partial x^{n}}\right|_{p}
+\left.\frac{\partial}{\partial x^{1}}\right|\_{p},\ \dots,\ \left.\frac{\partial}{\partial x^{n}}\right|\_{p}
 $$
 
 # 성질

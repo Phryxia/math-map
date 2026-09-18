@@ -170,7 +170,7 @@ $$
 $\mathrm{End}$ 는 $\mathbb Q$ 위에서 $\mathbb Z$ 이고 $K$ 로 기저확대해야 $\mathcal O_K$ 전체가 보인다. 그래서 $\mathbb Q$ 위 CM 곡선의 Galois 표현은 기약이 아니라 $K$ 의 Hecke 지표 $\psi$ 에서 유도된 것이다.
 
 $$
-\rho_{E,\ell}\cong\mathrm{Ind}_{G_K}^{G_{\mathbb Q}}\psi
+\rho_{E,\ell}\cong\mathrm{Ind}\_{G_K}^{G_{\mathbb Q}}\psi
 $$
 
 CM 곡선의 $L$ 함수가 Hecke $L$ 함수와 같다는 Deuring 의 정리가 여기서 따라오고, 모듈러성이 CM 경우에만 먼저 알려졌던 것도 이 때문이다.
@@ -202,8 +202,8 @@ Hilbert 12 번 문제는 임의의 수체 $K$ 의 $K^{\mathrm{ab}}$ 를 해석�
 # 활용
 
 - CM 방법은 위수를 지정해 곡선을 만든다. 원하는 위수 $N=p+1-a$ 에 대해 $4p-a^2=|D|y^2$ 를 만족하는 작은 $|D|$ 를 찾고, $H_D(X)$ 의 $\bmod\ p$ 근 $j_0$ 를 구하고, $j_0$ 를 불변량으로 갖는 곡선을 쓴다. 위수를 [Schoof–Elkies–Atkin](sea-algorithm.md) 으로 세는 대신 지정하는 것이며, 소수판정 ECPP 도 같은 원리로 증명서를 만든다. $|D|$ 가 커지면 $H_D$ 의 계수가 폭발하므로 $|D|$ 를 작게 유지하거나 Weber 함수 같은 더 작은 불변량을 쓴다.
-- [Heegner 점](heegner-points.md)은 $X_0(N)$ 위의 CM 점을 모듈러 파라미터화로 옮긴 것이다. 그 점이 $H$ 위에서 정의되는 것과 Galois 궤도가 유군으로 명시되는 것이 제1 주정리이고, 그래서 자취 $\mathrm{Tr}_{H/K}$ 로 $K$ 유리점을 얻을 수 있다. Gross–Zagier 공식의 우변에 $\sqrt{|D|}$ 와 $u=|\mathcal O_K^\times|/2$ 가 나타나는 것도 이 구성 때문이다.
-- Deuring 의 정리는 $\mathrm{GL}_2$ 의 Galois 표현이 $\mathrm{GL}_1$ 에서 유도된 자기동형 대상과 짝지어진다는 진술이다. [Langlands 강령](langlands-program.md)의 함자성이 확인된 첫 비자명한 사례다.[^1]
+- [Heegner 점](heegner-points.md)은 $X_0(N)$ 위의 CM 점을 모듈러 파라미터화로 옮긴 것이다. 그 점이 $H$ 위에서 정의되는 것과 Galois 궤도가 유군으로 명시되는 것이 제1 주정리이고, 그래서 자취 $\mathrm{Tr}\_{H/K}$ 로 $K$ 유리점을 얻을 수 있다. Gross–Zagier 공식의 우변에 $\sqrt{|D|}$ 와 $u=|\mathcal O_K^\times|/2$ 가 나타나는 것도 이 구성 때문이다.
+- Deuring 의 정리는 $\mathrm{GL}\_2$ 의 Galois 표현이 $\mathrm{GL}\_1$ 에서 유도된 자기동형 대상과 짝지어진다는 진술이다. [Langlands 강령](langlands-program.md)의 함자성이 확인된 첫 비자명한 사례다.[^1]
 
 [^1]: M. Deuring, *Die Typen der Multiplikatorenringe elliptischer Funktionenkörper*, Abh. Math. Sem. Hamburg **14** (1941). 표준 교재는 J. Silverman, *Advanced Topics in the Arithmetic of Elliptic Curves* (1994) 2 장과 D. Cox, *Primes of the Form* $x^2+ny^2$ (1989). 후자는 유수 1 목록과 $p=x^2+27y^2$ 예제를 CM 이론으로 다룬다.
 [^2]: R. P. Langlands, *Some contemporary problems with origins in the Jugendtraum*, Mathematical Developments Arising from Hilbert Problems, Proc. Sympos. Pure Math. **28** (1976), 401–418. 유리수체와 허수 이차체 밖에서 Hilbert 의 12 번 문제가 풀리지 않은 채임을 전제로 그 너머의 접근을 논한다.

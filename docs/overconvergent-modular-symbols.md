@@ -7,7 +7,7 @@
 Pollack 과 Stevens 는 계수를 $\mathbb Z_p$ 위 국소해석함수의 연속 쌍대인 **$p$ 진 분포 공간** $\mathcal D_k$ 로 바꿨다. 무한 차원이지만 다음 **특수화 사상**이 $U_p$ 의 기울기가 작은 부분에서 동형이다.
 
 $$
-\mathrm{Symb}_\Gamma(\mathcal D_k)\ \xrightarrow{\ \rho\ }\ \mathrm{Symb}_\Gamma(V_{k-2})
+\mathrm{Symb}\_\Gamma(\mathcal D_k)\ \xrightarrow{\ \rho\ }\ \mathrm{Symb}\_\Gamma(V_{k-2})
 $$
 
 이것이 **Stevens 의 조절 정리**다. 고전 고유기호 하나를 유일하게 위로 올릴 수 있고, 올린 기호가 담은 분포를 $\mathbb Z_p^\times$ 로 제한하면 $p$ 진 $L$ 함수가 된다.
@@ -21,7 +21,7 @@ $p$ 진 $L$ 함수는 원래 고전 $L$ 값들을 보간해 존재를 증명하�
 $\mathcal D_k$ 는 무한 차원이지만 $U_p$ 작용소가 콤팩트하다. 콤팩트 작용소의 고유값은 0 으로 몰려가고, $p$ 진에서 이는 고유값의 부치가 무한대로 간다는 뜻이다. 기울기(고유값의 $p$ 진 부치)를 하나 고정하면 다음이 유한 차원이다.
 
 $$
-\mathrm{Symb}_\Gamma(\mathcal D_k)^{\le h}
+\mathrm{Symb}\_\Gamma(\mathcal D_k)^{\le h}
 $$
 
 무한 차원 공간을 통째로 다루는 대신 기울기 $h$ 이하 조각만 떼어 유한 차원 문제로 만든다. [Newton 다각형](newton-polygon.md)이 Fredholm 행렬식의 기울기를 읽어 그 조각의 차원을 준다.
@@ -31,7 +31,7 @@ $$
 분포를 다항식 위의 값만 기억하도록 자를 때 버려지는 부분, 곧 차수 $k-1$ 이상의 모멘트들에는 $U_p$ 가 $p^{k-1}$ 이상의 인자를 달고 작용한다. 특수화의 핵과 여핵 위에서 $U_p$ 의 기울기가 항상 $\ge k-1$ 이다.
 
 $$
-h\lt k-1\ \Longrightarrow\ \rho:\ \mathrm{Symb}_\Gamma(\mathcal D_k)^{\le h}\ \xrightarrow{\ \sim\ }\ \mathrm{Symb}_\Gamma(V_{k-2})^{\le h}
+h\lt k-1\ \Longrightarrow\ \rho:\ \mathrm{Symb}\_\Gamma(\mathcal D_k)^{\le h}\ \xrightarrow{\ \sim\ }\ \mathrm{Symb}\_\Gamma(V_{k-2})^{\le h}
 $$
 
 기울기가 작은 쪽에서는 잘려 나간 부분이 $U_p$ 에 짓눌려 보이지 않는다. $h=0$ 인 순종(ordinary) 경우가 Hida 이론의 조절 정리이고 Stevens 의 판본이 그것을 유한 기울기로 넓힌 것이다.
@@ -75,7 +75,7 @@ $$
 $\Delta_0=\mathrm{Div}^0(\mathbb P^1(\mathbb Q))$ 라 하면 다음이다.
 
 $$
-\mathrm{Symb}_\Gamma(D)=\mathrm{Hom}_\Gamma(\Delta_0,\ D)
+\mathrm{Symb}\_\Gamma(D)=\mathrm{Hom}\_\Gamma(\Delta_0,\ D)
 $$
 
 $D=V_{k-2}$ 면 고전 모듈러 기호, $D=\mathcal D_k$ 면 **과수렴 모듈러 기호**다.

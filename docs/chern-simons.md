@@ -60,7 +60,7 @@ $$
 작용에 계량이 없으므로 분배함수도 계량에 의존하지 않는다. Wilson 고리
 
 $$
-W_R(K)=\mathrm{tr}_R\thinspace\mathcal P\exp\oint_KA
+W_R(K)=\mathrm{tr}\_R\thinspace\mathcal P\exp\oint_KA
 $$
 
 의 기댓값이 매듭 불변량을 주고, 계량이 없으므로 $K$ 를 연속적으로 움직여도 값이 변하지 않아 동위류의 불변량이 된다. Witten 이 Jones 다항식을 이렇게 설명했다.

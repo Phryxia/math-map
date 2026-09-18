@@ -34,7 +34,7 @@ graph LR
 각 정점에서 흘러 나가는 전류의 합은 외부에서 주입한 양과 같다. 간선 $(i,j)$ 의 전류가 Ohm 법칙으로 $w_{ij}(\varphi_i - \varphi_j)$ 이므로 정점 $i$ 의 순유출은
 
 $$
-\sum_{j\sim i} w_{ij}(\varphi_i-\varphi_j)=(L\varphi)_i
+\sum_{j\sim i} w_{ij}(\varphi_i-\varphi_j)=(L\varphi)\_i
 $$
 
 이고, Kirchhoff 의 전류 법칙이 $L\varphi = b$ 가 된다. 전기 회로는 Laplacian 방정식의 물리적 모형이다.
@@ -64,7 +64,7 @@ $L$ 이 특이행렬이므로 $\varphi$ 는 유일하지 않다. 그래프가 �
 $L^+$ 를 Moore–Penrose 유사역행렬이라 하면 $\varphi = L^+ b$ 를 택할 수 있고
 
 $$
-R(u,v)=b^{\mathsf T}L^{+}b=L^{+}_{uu}-2L^{+}_{uv}+L^{+}_{vv}
+R(u,v)=b^{\mathsf T}L^{+}b=L^{+}\_{uu}-2L^{+}\_{uv}+L^{+}\_{vv}
 $$
 
 이다. 고유분해 $L = \sum_k \lambda_k q_k q_k^{\mathsf T}$ 를 쓰면

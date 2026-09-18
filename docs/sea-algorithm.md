@@ -37,9 +37,9 @@ $E[\ell]$ 은 원소가 $\ell^2$ 개인 군이고 $\ell$ 은 $100$ 미만이다.
 $\varphi(x,y)=(x^p,y^p)$ 는 $E(\overline{\mathbb F_p})$ 의 군 자기준동형이다. $E[\ell]$ 은 $\varphi$ 로 보존되고($\ell$ 배해서 $O$ 가 되는 성질이 $\varphi$ 에 보존된다) $\mathbb F_\ell$ 위의 2 차원 벡터공간이다. 그러므로 $\varphi|\_{E[\ell]}$ 은 $2\times2$ 행렬이고
 
 $$
-\mathrm{tr}\big(\varphi|_{E[\ell]}\big)\equiv a_p,
+\mathrm{tr}\big(\varphi|\_{E[\ell]}\big)\equiv a_p,
 \qquad
-\det\big(\varphi|_{E[\ell]}\big)\equiv p
+\det\big(\varphi|\_{E[\ell]}\big)\equiv p
 \pmod\ell
 $$
 

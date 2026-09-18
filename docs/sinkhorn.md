@@ -35,7 +35,7 @@ $\varepsilon$ 이 크면 비용을 무시하고 가장 무질서한 결합인 �
 
 $$
 \frac{\partial}{\partial P_{ij}}\Big[\langle C,P\rangle-\varepsilon H(P)-\textstyle\sum_if_i(\cdot)-\sum_jg_j(\cdot)\Big]=0
-\ \Longrightarrow\
+\thinspace\Longrightarrow\thinspace
 P_{ij}=e^{f_i/\varepsilon}e^{-C_{ij}/\varepsilon}e^{g_j/\varepsilon}
 $$
 
@@ -62,7 +62,7 @@ Sinkhorn 반복의 한 단계는 $\mathcal C_1$ 로의 KL 사영, 다음 단계�
 Sinkhorn 반복은 $u$ 를 양수 벡터의 사영공간에서 움직이고, 그 공간의 거리가 **Hilbert 사영 거리**다.
 
 $$
-d_H(u,u')=\log\max_{i,j}\frac{u_iu'_j}{u_ju'_i}
+d_H(u,u')=\log\max_{i,j}\frac{u_iu'\_j}{u_ju'\_i}
 $$
 
 Birkhoff–Hopf 정리에 따르면 성분이 모두 양수인 행렬 $K$ 를 곱하는 사상은 이 거리에서 축약이고 축약비가 $K$ 의 사영 지름으로 명시된다.
@@ -73,10 +73,10 @@ $K=e^{-C/\varepsilon}$ 이면 성분 사이의 비가 $\varepsilon$ 이 작아�
 
 ## 엔트로피 정규화 최적 수송
 
-$a\in\Delta_n$ 과 $b\in\Delta_m$ 을 확률벡터, $C\in\mathbb R^{n\times m}_{\ge0}$ 을 비용행렬이라 하고 $\Pi(a,b)=\lbrace P\ge0:P\mathbf1=a,\ P^\top\mathbf1=b\rbrace$ 라 하자.
+$a\in\Delta_n$ 과 $b\in\Delta_m$ 을 확률벡터, $C\in\mathbb R^{n\times m}\_{\ge0}$ 을 비용행렬이라 하고 $\Pi(a,b)=\lbrace P\ge0:P\mathbf1=a,\ P^\top\mathbf1=b\rbrace$ 라 하자.
 
 $$
-\mathrm{OT}_\varepsilon(a,b)=\min_{P\in\Pi(a,b)}\ \langle C,P\rangle+\varepsilon\thinspace\mathrm{KL}\big(P\thinspace\Vert\thinspace a\otimes b\big)
+\mathrm{OT}\_\varepsilon(a,b)=\min_{P\in\Pi(a,b)}\ \langle C,P\rangle+\varepsilon\thinspace\mathrm{KL}\big(P\thinspace\Vert\thinspace a\otimes b\big)
 $$
 
 기준측도를 $K=e^{-C/\varepsilon}$ 로 잡느냐 곱측도 $a\otimes b$ 로 잡느냐는 상수 차이이고 최적해 $P^\star$ 는 같다. 아래에서는 곱측도 규약을 쓴다. 목적함수가 강볼록하고 $\Pi(a,b)$ 가 콤팩트 볼록집합이므로 최소점이 유일하다.
@@ -119,7 +119,7 @@ $$
 $\varepsilon\gt 0$ 이면 $\mathrm{OT}\_\varepsilon(a,a)\gt 0$ 이라 자기 자신과의 거리가 $0$ 이 아니다. 이 상수를 빼낸 것이 **Sinkhorn 발산**이다[^1].
 
 $$
-S_\varepsilon(a,b)=\mathrm{OT}_\varepsilon(a,b)-\tfrac12\mathrm{OT}_\varepsilon(a,a)-\tfrac12\mathrm{OT}_\varepsilon(b,b)
+S_\varepsilon(a,b)=\mathrm{OT}\_\varepsilon(a,b)-\tfrac12\mathrm{OT}\_\varepsilon(a,a)-\tfrac12\mathrm{OT}\_\varepsilon(b,b)
 $$
 
 $S_\varepsilon(a,a)=0$ 이 정의에서 따라 나오고, $S_\varepsilon(a,b)\ge0$ 이며 $a=b$ 일 때만 $0$ 이다. 두 번의 추가 Sinkhorn 실행이 비용의 전부다.
@@ -144,7 +144,7 @@ $\lambda=\tanh\negthinspace\big(\Delta/4\varepsilon\big)$ 로 정리된다. $\va
 매끄러운 분포에서
 
 $$
-\mathrm{OT}_\varepsilon(a,b)-\mathrm{OT}_0(a,b)=O\big(\varepsilon\log\tfrac1\varepsilon\big)
+\mathrm{OT}\_\varepsilon(a,b)-\mathrm{OT}\_0(a,b)=O\big(\varepsilon\log\tfrac1\varepsilon\big)
 $$
 
 이 알려져 있다. $S_\varepsilon$ 은 앞선 항들이 상쇄되어 $\varepsilon$ 의 더 높은 차수로 접근하므로, 같은 $\varepsilon$ 에서 더 정확하고 같은 정확도를 더 큰 $\varepsilon$ 으로 얻어 반복 수도 줄어든다.
@@ -156,7 +156,7 @@ $S_\varepsilon$ 은 $\varepsilon\to0$ 에서 최적 수송 비용으로, $\varep
 쌍대 문제의 포락선 정리에서 기울기가 나온다.
 
 $$
-\nabla_a\mathrm{OT}_\varepsilon(a,b)=f^\star\quad(\textstyle\sum_if^\star_i a_i=0\ \text{로 정규화})
+\nabla_a\mathrm{OT}\_\varepsilon(a,b)=f^\star\quad(\textstyle\sum_if^\star_i a_i=0\ \text{로 정규화})
 $$
 
 최적 쌍대 변수가 곧 기울기이므로 반복을 되짚어 미분할 필요가 없다. 반복 전체를 자동미분할 수도 있지만, 수렴한 지점에서는 위 식이 메모리와 정확도 양쪽에서 낫다.

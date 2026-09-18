@@ -57,7 +57,7 @@ $$
 - 수열 공간 $\ell^2$ : 제곱합이 유한한 복소수열 전체.
 
 $$
-\ell^2 = \Big\lbrace (x_n)_{n\ge 1} : \sum_{n=1}^{\infty} |x_n|^2 \lt\infty \Big\rbrace,\qquad \langle x, y\rangle = \sum_{n=1}^{\infty} x_n \overline{y_n}.
+\ell^2 = \Big\lbrace (x_n)\_{n\ge 1} : \sum_{n=1}^{\infty} |x_n|^2 \lt\infty \Big\rbrace,\qquad \langle x, y\rangle = \sum_{n=1}^{\infty} x_n \overline{y_n}.
 $$
 
 - 함수 공간 $L^2(\mu)$ : [측도](measure.md) 공간 위에서 제곱적분가능한 [가측함수](measurable-functions.md)를 거의 어디서나 같음으로 동일시한 공간.
@@ -155,7 +155,7 @@ $$
 모든 Hilbert 공간은 정규직교기저를 가진다(Zorn 보조정리를 쓰는 [선택공리와 Zorn 보조정리](axiom-of-choice.md) 논증). 기저의 농도는 잘 정의되며 그것이 유일한 동형 불변량이다. 특히 $H$ 가 분리가능(가산 조밀부분집합 보유)하고 무한차원이면 기저가 가산이고, 좌표 사상
 
 $$
-U : H \to \ell^2,\qquad U x = \big(\langle x, e_n\rangle\big)_{n \ge 1}
+U : H \to \ell^2,\qquad U x = \big(\langle x, e_n\rangle\big)\_{n \ge 1}
 $$
 
 은 전단사 선형사상이며 내적을 보존한다(유니터리). 즉 무한차원 분리가능 Hilbert 공간은 동형을 무시하면 $\ell^2$ 하나뿐이다. 서로 전혀 달라 보이는 $L^2([0,1])$ 과 $\ell^2$ 가 같은 공간이라는 사실이 이 정리의 내용이고, 그 구체적인 동형이 바로 Fourier 계수 사상이다.

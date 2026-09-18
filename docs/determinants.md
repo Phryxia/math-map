@@ -78,7 +78,7 @@ $$
 
 $$
 A^{-1}=\frac{1}{\det A}\mathrm{adj}(A),
-\qquad (\mathrm{adj}A)_{ij}=(-1)^{i+j}\det A_{ji}
+\qquad (\mathrm{adj}A)\_{ij}=(-1)^{i+j}\det A_{ji}
 $$
 
 같은 공식에서 Cramer 공식이 나온다. $A^{(i)}$ 를 $A$ 의 $i$ 번째 열을 $b$ 로 교체한 행렬이라 하면 $Ax=b$ 의 해는 다음과 같다.
@@ -92,7 +92,7 @@ $$
 실행렬 $A$ 에 대해 단위입방체의 상은 부피가 $\lvert\det A\rvert$ 인 평행육면체이고, 더 일반적으로 Lebesgue [측도](measure.md)는 선형사상 $A$ 아래에서 $\lvert\det A\rvert$ 배로 변한다. $\det A$ 가 양수면 방향을 보존한다. $m\le n$ 인 벡터 $m$ 개가 만드는 $m$ 차원 부피는 Gram 행렬의 행렬식으로 주어지며, 여기서 괄호는 [내적](inner-product-spaces.md)이다.
 
 $$
-\mathrm{vol}_m(a_1,\dots,a_m)=\sqrt{\det G},
+\mathrm{vol}\_m(a_1,\dots,a_m)=\sqrt{\det G},
 \qquad G_{ij}=\langle a_i,a_j\rangle
 $$
 

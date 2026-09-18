@@ -2,12 +2,12 @@
 
 # 개요
 
-$L^2(\Gamma\backslash\mathbb H)$ 의 이산 스펙트럼을 이루는 Maass 형식의 고윳값 $\lambda_j=\tfrac14+r_j^2$ 에는 닫힌 형태의 표현이 없다. $\Gamma=\mathrm{SL}_2(\mathbb Z)$ 의 첫 고윳값 $r_1\approx9.533$ 도 수치 계산의 결과다.
+$L^2(\Gamma\backslash\mathbb H)$ 의 이산 스펙트럼을 이루는 Maass 형식의 고윳값 $\lambda_j=\tfrac14+r_j^2$ 에는 닫힌 형태의 표현이 없다. $\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 의 첫 고윳값 $r_1\approx9.533$ 도 수치 계산의 결과다.
 
 Selberg 대각합 공식은 개별 고윳값 대신 고윳값 전체에 걸친 합을 곡면의 닫힌 측지선으로 표현한다.
 
 $$
-\underbrace{\sum_j h(r_j)}_{\text{스펙트럼}}\thickspace+\thickspace\text{(연속 기여)}\thickspace=\thickspace\underbrace{\frac{\mathrm{vol}}{4\pi}\int_{-\infty}^\infty h(r)\thinspace r\tanh(\pi r)\thinspace dr+\sum_{\lbrace\gamma\rbrace}\sum_{k\ge1}\frac{\ell_\gamma\thinspace g(k\ell_\gamma)}{2\sinh(k\ell_\gamma/2)}}_{\text{기하}}
+\underbrace{\sum_j h(r_j)}\_{\text{스펙트럼}}\thickspace+\thickspace\text{(연속 기여)}\thickspace=\thickspace\underbrace{\frac{\mathrm{vol}}{4\pi}\int_{-\infty}^\infty h(r)\thinspace r\tanh(\pi r)\thinspace dr+\sum_{\lbrace\gamma\rbrace}\sum_{k\ge1}\frac{\ell_\gamma\thinspace g(k\ell_\gamma)}{2\sinh(k\ell_\gamma/2)}}\_{\text{기하}}
 $$
 
 왼쪽은 해석, 오른쪽은 [Riemann 계량](riemannian-metrics.md)이 정하는 측지선의 길이다. 이 등식에서 Weyl 법칙, 소측지선 정리, Maass 형식의 존재가 따라 나온다.
@@ -61,13 +61,13 @@ $$
 -\frac1{4\pi}\int_{-\infty}^\infty h(r)\thinspace\frac{\varphi'}{\varphi}\Big(\frac12+ir\Big)dr+\frac14h(0)\varphi\Big(\frac12\Big)
 $$
 
-가 들어온다. $\varphi$ 는 Eisenstein 급수의 산란 행렬식이고 $\mathrm{SL}_2(\mathbb Z)$ 에서는 $\varphi(s)=\xi(2s-1)/\xi(2s)$ 다. Riemann zeta 함수가 대각합 공식 안에 직접 등장하는 자리다.
+가 들어온다. $\varphi$ 는 Eisenstein 급수의 산란 행렬식이고 $\mathrm{SL}\_2(\mathbb Z)$ 에서는 $\varphi(s)=\xi(2s-1)/\xi(2s)$ 다. Riemann zeta 함수가 대각합 공식 안에 직접 등장하는 자리다.
 
 # 정의
 
 ## 설정
 
-$\Gamma\subset\mathrm{PSL}_2(\mathbb R)$ 는 유한 공부피 이산군, $X=\Gamma\backslash\mathbb H$ 는 쌍곡 곡면, $\Delta=-y^2(\partial_x^2+\partial_y^2)$ 는 Laplace 작용소다. 이산 스펙트럼을 $\lambda_j=\tfrac14+r_j^2$ 로 쓴다.
+$\Gamma\subset\mathrm{PSL}\_2(\mathbb R)$ 는 유한 공부피 이산군, $X=\Gamma\backslash\mathbb H$ 는 쌍곡 곡면, $\Delta=-y^2(\partial_x^2+\partial_y^2)$ 는 Laplace 작용소다. 이산 스펙트럼을 $\lambda_j=\tfrac14+r_j^2$ 로 쓴다.
 
 검사함수 $h(r)$ 는 $|\mathrm{Im}\thinspace r|\le\tfrac12+\delta$ 에서 정칙이고 $h(r)=O((1+|r|)^{-2-\delta})$ 인 짝함수이며, 그 Fourier 변환은 $g(u)=\frac1{2\pi}\int h(r)e^{-iru}dr$ 다.
 
@@ -149,7 +149,7 @@ Weyl 법칙은 고윳값의 개수를 주지만 위치를 주지 않는다. 실�
 
 ## Arthur–Selberg 대각합 공식
 
-$\mathrm{SL}_2(\mathbb R)$ 를 일반 환원군 $G$ 로, $\Gamma\backslash\mathbb H$ 를 $G(\mathbb Q)\backslash G(\mathbb A)$ 로 바꾼 것이 Arthur–Selberg 대각합 공식이다. 기하 쪽은 궤도적분의 합, 스펙트럼 쪽은 자기동형 표현의 지표의 합이다.
+$\mathrm{SL}\_2(\mathbb R)$ 를 일반 환원군 $G$ 로, $\Gamma\backslash\mathbb H$ 를 $G(\mathbb Q)\backslash G(\mathbb A)$ 로 바꾼 것이 Arthur–Selberg 대각합 공식이다. 기하 쪽은 궤도적분의 합, 스펙트럼 쪽은 자기동형 표현의 지표의 합이다.
 
 $$
 \sum_{\lbrace\gamma\rbrace}\mathrm{vol}\cdot O_\gamma(f)\thickspace=\thickspace\sum_\pi m(\pi)\thinspace\mathrm{tr}\thinspace\pi(f)

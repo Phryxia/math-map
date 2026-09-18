@@ -5,7 +5,7 @@
 [기하학적 Satake 대응](geometric-satake.md)은 아핀 Grassmann 다양체 위의 퍼버스 층의 범주가 쌍대군의 표현 범주와 같다고 말한다.
 
 $$
-\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\ \simeq\ \mathrm{Rep}(\widehat G)
+\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\ \simeq\ \mathrm{Rep}(\widehat G)
 $$
 
 동치가 있으면 양쪽의 모든 것이 옮겨진다. 그러면 자연히 묻게 된다. **표현의 무게 공간은 층 쪽에서 무엇인가.**
@@ -29,7 +29,7 @@ $\mathrm{Gr}\_G$ 위에서 $G(\mathcal O)$ 궤도는 지배적 여무게 $\lambd
 무게 분해를 얻으려면 표현을 쌍대 토러스 $\widehat T$ 로 제한해야 하고, 층 쪽에서 그것에 해당하는 조작이 **다른 부분군의 궤도로 자르는 것**이다. $N$ 을 멱단 부분군이라 할 때 그 궤도 $S_\mu=N(F)\cdot t^\mu$ 를 **반무한 낟가리**(semi-infinite cell)라 한다. 이름 그대로 무한차원이면서 여차원도 무한이다.
 
 $$
-V_\lambda(\mu)\ \cong\ H^{\bullet}_c\bigl(S_\mu\cap\overline{\mathrm{Gr}^\lambda},\ \mathcal{IC}_\lambda\bigr)
+V_\lambda(\mu)\ \cong\ H^{\bullet}\_c\bigl(S_\mu\cap\overline{\mathrm{Gr}^\lambda},\ \mathcal{IC}\_\lambda\bigr)
 $$
 
 핵심은 이 교차가 **순수 차원**이라는 것이다. 차원이 고르므로 최고차원 기약성분들이 코호몰로지의 기저를 곧바로 준다. 그 성분들의 닫힘이 **MV 순환**이다.

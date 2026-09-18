@@ -43,7 +43,7 @@ graph LR
 급수 $c(\zeta) = \sum_{n\ge0}c_n\zeta^n$ 에 대해 $[L/M]$ **Padé 근사**는
 
 $$
-[L/M](\zeta) = \frac{P_L(\zeta)}{Q_M(\zeta)}, \qquad \deg P_L \le L,\ \deg Q_M \le M,\ Q_M(0)=1
+\lbrack L/M\rbrack(\zeta) = \frac{P_L(\zeta)}{Q_M(\zeta)}, \qquad \deg P_L \le L,\ \deg Q_M \le M,\ Q_M(0)=1
 $$
 
 이면서 $c(\zeta) - P_L/Q_M = O(\zeta^{L+M+1})$ 인 것이다. 조건을 $Q_M c - P_L = O(\zeta^{L+M+1})$ 로 바꿔 쓰면 계수 비교가 선형이 된다. 분모 계수 $q_1,\dots,q_M$ 은

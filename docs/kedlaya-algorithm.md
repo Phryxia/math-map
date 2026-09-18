@@ -9,10 +9,10 @@ Dwork 의 증명은 구성적이다. 완전연속 작용소의 Fredholm 행렬�
 핵심 구조는 두 절댓값을 조합하는 것이다.
 
 $$
-\underbrace{\text{Frobenius 를 }p^N\text{ 정밀도로 계산}}_{p\ \text{진}}
-\ +\
-\underbrace{|\alpha_j|=\sqrt q\ \text{(Weil 한계)}}_{\text{아르키메데스}}
-\ \Longrightarrow\
+\underbrace{\text{Frobenius 를 }p^N\text{ 정밀도로 계산}}\_{p\ \text{진}}
+\thinspace+\thinspace
+\underbrace{|\alpha_j|=\sqrt q\ \text{(Weil 한계)}}\_{\text{아르키메데스}}
+\thinspace\Longrightarrow\thinspace
 \text{정수 계수를 정확히 확정}
 $$
 
@@ -83,7 +83,7 @@ $$
 $\sigma$ 를 $\mathbb Z_q$ 의 Frobenius 올림이라 하고 $x\mapsto x^p$ 로 확장한다. $y$ 는 $y^2=f(x)$ 를 만족해야 하므로 $\sigma(y)^2=f^\sigma(x^p)$ 여야 한다. 이것을 $y^{2p}$ 로 묶으면
 
 $$
-\sigma(y)=y^p\Big(1+\underbrace{\frac{f^\sigma(x^p)-f(x)^p}{y^{2p}}}_{=\thinspace\delta}\Big)^{1/2}
+\sigma(y)=y^p\Big(1+\underbrace{\frac{f^\sigma(x^p)-f(x)^p}{y^{2p}}}\_{=\thinspace\delta}\Big)^{1/2}
 =y^p\sum_{k\ge0}\binom{1/2}{k}\delta^k
 $$
 

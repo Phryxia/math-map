@@ -37,7 +37,7 @@ $$
 L-구조 M은 공집합이 아닌 논의 영역과 각 기호의 해석으로 이루어진다.
 
 $$
-\mathcal{M}=\bigl(M,\ (c^{\mathcal M})_{c},\ (f^{\mathcal M})_{f},\ (R^{\mathcal M})_{R}\bigr),\quad f^{\mathcal M}:M^{n}\to M,\ R^{\mathcal M}\subseteq M^{n}
+\mathcal{M}=\bigl(M,\ (c^{\mathcal M})\_{c},\ (f^{\mathcal M})\_{f},\ (R^{\mathcal M})\_{R}\bigr),\quad f^{\mathcal M}:M^{n}\to M,\ R^{\mathcal M}\subseteq M^{n}
 $$
 
 ## 만족 관계

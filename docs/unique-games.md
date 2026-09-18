@@ -45,7 +45,7 @@ PCP 정리의 표준 형태는 3 항 제약(3SAT 류)에서 강력하지만 2 �
 UGC 에서 최대 절단의 최적성으로 가는 길은 해석적이다. 초입방체 $\lbrace-1,1\rbrace^n$ 위 함수 $f$ 의 **잡음 안정성**
 
 $$
-\mathrm{Stab}_\rho(f)=\mathbb E\bigl[f(x)f(y)\bigr],\qquad y\ \text{는}\ x\ \text{의 각 좌표를 확률}\ \tfrac{1-\rho}{2}\ \text{로 뒤집은 것}
+\mathrm{Stab}\_\rho(f)=\mathbb E\bigl[f(x)f(y)\bigr],\qquad y\ \text{는}\ x\ \text{의 각 좌표를 확률}\ \tfrac{1-\rho}{2}\ \text{로 뒤집은 것}
 $$
 
 이 양을 최대화하는 함수는 좌표 하나에만 의존하는 독재자 함수 $f(x)=x_i$ 이고, 모든 좌표의 영향력이 작다는 조건을 걸면 다수결이다. 이것이 Mossel–O'Donnell–Oleszkiewicz 의 Majority is Stablest 정리다.

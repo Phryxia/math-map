@@ -5,7 +5,7 @@
 Beilinson–Bernstein 국소화는 깃발다양체 $X=G/B$ 위의 $\mathcal D$ 가군 범주와 자명한 중심 지표를 갖는 $U(\mathfrak g)$ 가군 범주 사이의 동치다.
 
 $$
-\Gamma:\ \mathrm{Mod}(\mathcal D_X)\ \rightleftarrows\ \mathrm{Mod}\bigl(U(\mathfrak g)_{\chi_0}\bigr)\ :\mathrm{Loc}
+\Gamma:\ \mathrm{Mod}(\mathcal D_X)\ \rightleftarrows\ \mathrm{Mod}\bigl(U(\mathfrak g)\_{\chi_0}\bigr)\ :\mathrm{Loc}
 $$
 
 전역단면 함자가 동치이고 역함자는 국소화 $\mathrm{Loc}(M)=\mathcal D_X\otimes_{U(\mathfrak g)}M$ 이다.
@@ -25,7 +25,7 @@ $$
 이 생긴다. 이 사상은 전사이고 핵이 자명한 중심 지표다.
 
 $$
-\Gamma(X,\mathcal D_X)\ \cong\ U(\mathfrak g)/\bigl(\ker\chi_0\bigr)=U(\mathfrak g)_{\chi_0}
+\Gamma(X,\mathcal D_X)\ \cong\ U(\mathfrak g)/\bigl(\ker\chi_0\bigr)=U(\mathfrak g)\_{\chi_0}
 $$
 
 $X$ 는 사영다양체인데도 $\mathcal D_X$ 가 많은 단면을 갖는다. 이 성질을 **$\mathcal D$ 아핀**이라 하며 정리의 기술적 핵심이다. 아핀 다양체 위에서 연접층과 가군이 같아지는 Serre 의 사실이, 깃발다양체에서는 $\mathcal D$ 가군에 대해 성립한다.
@@ -34,7 +34,7 @@ $X$ 는 사영다양체인데도 $\mathcal D_X$ 가 많은 단면을 갖는다. 
 
 선다발 $\mathcal L_\lambda$ 는 $\mathcal D$ 가군 가운데 계수 1 인 특수한 것이고, Borel–Weil–Bott 는 그 전역단면만 계산한다. Beilinson–Bernstein 은 모든 $\mathcal D$ 가군에 대해 고차 코호몰로지가 사라지고 $\Gamma$ 가 완전함자임을 보여 계산을 동치로 격상시킨다.
 
-$n\ge0$ 에서 $H^0$ 의 차원이 $\mathfrak{sl}_2$ 의 기약 표현 $L(n)$ 의 차원과 같다. $n=-1$ 은 Weyl 군 점 작용의 벽이라 모든 코호몰로지가 사라지고, $n\le-2$ 에서는 $H^1$ 으로 옮겨 간다.
+$n\ge0$ 에서 $H^0$ 의 차원이 $\mathfrak{sl}\_2$ 의 기약 표현 $L(n)$ 의 차원과 같다. $n=-1$ 은 Weyl 군 점 작용의 벽이라 모든 코호몰로지가 사라지고, $n\le-2$ 에서는 $H^1$ 으로 옮겨 간다.
 
 ## 지지집합과 Schubert 세포
 
@@ -62,7 +62,7 @@ $X=G/B$ 로 두고 $\chi_0$ 를 자명한 중심 지표라 한다.
 
 > **정리 (Beilinson–Bernstein, 1981).** $\Gamma(X,-)$ 는 준연접 $\mathcal D_X$ 가군의 범주에서 $U(\mathfrak g)\_{\chi_0}$ 가군의 범주로 가는 범주 동치이고, 역함자는 $\mathrm{Loc}(M)=\mathcal D_X\otimes_{U(\mathfrak g)}M$ 이다.
 
-*증명.* $X$ 가 $\mathcal D$ 아핀임을 보여 전역단면 함자가 완전이며 충실함을 얻고, $\Gamma(X,\mathcal D_X)=U(\mathfrak g)_{\chi_0}$ 를 확인한다.
+*증명.* $X$ 가 $\mathcal D$ 아핀임을 보여 전역단면 함자가 완전이며 충실함을 얻고, $\Gamma(X,\mathcal D_X)=U(\mathfrak g)\_{\chi_0}$ 를 확인한다.
 
 ## 비틀린 판본
 
@@ -75,7 +75,7 @@ $X=G/B$ 로 두고 $\chi_0$ 를 자명한 중심 지표라 한다.
 국소화 정리와 Riemann–Hilbert 대응을 이어 붙이면 다음을 얻는다.
 
 $$
-\mathrm{Mod}\bigl(U(\mathfrak g)_{\chi_0}\bigr)\ \simeq\ \mathrm{Mod}_{\mathrm{rh}}(\mathcal D_X)\ \simeq\ \mathrm{Perv}(X)
+\mathrm{Mod}\bigl(U(\mathfrak g)\_{\chi_0}\bigr)\ \simeq\ \mathrm{Mod}\_{\mathrm{rh}}(\mathcal D_X)\ \simeq\ \mathrm{Perv}(X)
 $$
 
 편향층 범주에서 기약 대상은 Schubert 세포 닫힘 위의 교차 코호몰로지 층이고, 그 줄기 코호몰로지 차원이 [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)의 계수다. Verma 가군 안의 기약 가군 중복도가 그 계수라는 추측이 이렇게 증명된다. Beilinson–Bernstein 과 Brylinski–Kashiwara 가 같은 해에 독립적으로 완성했다.

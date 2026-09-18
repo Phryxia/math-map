@@ -78,7 +78,7 @@ $\lambda_1,\dots,\lambda_n$ 을 달성하는 벡터들이 기저가 되지 않�
 ## 쌍대격자
 
 $$
-L^*=\lbrace y\in\mathrm{span}(L):\ \langle y,x\rangle\in\mathbb Z\ \ \forall x\in L\rbrace
+L^\ast=\lbrace y\in\mathrm{span}(L):\ \langle y,x\rangle\in\mathbb Z\ \ \forall x\in L\rbrace
 $$
 
 $(B^{-1})^{\mathsf T}$ 가 $L^\ast$ 의 기저이고 $\det L^\ast=1/\det L$ 이므로 $L$ 이 촘촘하면 $L^\ast$ 가 성기다. 전이 정리들이 $\lambda_1(L)$ 과 $\lambda_n(L^\ast)$ 를 묶고, 암호의 어려움 증명에서 두 격자를 오가는 논증이 쓰인다.
@@ -88,7 +88,7 @@ $(B^{-1})^{\mathsf T}$ 가 $L^\ast$ 의 기저이고 $\det L^\ast=1/\det L$ 이�
 - SVP: $L$ 의 기저가 주어질 때 최단 비영 벡터를 찾아라.
 - CVP: 기저와 목표점 $t$ 가 주어질 때 $t$ 에 가장 가까운 격자점을 찾아라.
 - $\gamma$ 근사판: 최적의 $\gamma$ 배 이내인 답을 찾아라.
-- GapSVP$_\gamma$ 는 $\lambda_1\le1$ 인지 $\lambda_1\gt\gamma$ 인지 판정하라(둘 중 하나는 보장된다).
+- GapSVP$\_\gamma$ 는 $\lambda_1\le1$ 인지 $\lambda_1\gt\gamma$ 인지 판정하라(둘 중 하나는 보장된다).
 
 암호는 근사판, 그중에서도 $\gamma$ 가 $n$ 의 다항식인 영역에 놓인다.
 
@@ -128,7 +128,7 @@ Minkowski 상계와 상수배만 다르고 무작위 격자에서 잘 맞아 암
 
 $$
 |\mu_{ij}|\le\tfrac12\ (j\lt i),\qquad
-\delta\Vert b_{k-1}^*\Vert^2\le\Vert b_k^*\Vert^2+\mu_{k,k-1}^2\Vert b_{k-1}^*\Vert^2
+\delta\Vert b_{k-1}^\ast\Vert^2\le\Vert b_k^\ast\Vert^2+\mu_{k,k-1}^2\Vert b_{k-1}^\ast\Vert^2
 $$
 
 둘째가 Lovász 조건으로, 인접한 두 벡터의 순서가 크게 잘못되지 않았음을 요구한다. $\delta=3/4$ 로 잡으면 다음 보장이 나온다.

@@ -23,7 +23,7 @@ $$
 이 선형사상을 **전미분**이라 하고, 표준기저에서의 행렬이 편미분으로 이루어진 **Jacobi 행렬**이다.
 
 $$
-Df(a)=\Bigl(\frac{\partial f_i}{\partial x_j}(a)\Bigr)_{1\le i\le m,\ 1\le j\le n}
+Df(a)=\Bigl(\frac{\partial f_i}{\partial x_j}(a)\Bigr)\_{1\le i\le m,\ 1\le j\le n}
 $$
 
 편미분이 존재하는 것만으로는 미분 가능성이 나오지 않는다. 편미분이 존재하고 연속이면($C^1$ 이면) 미분 가능하다.

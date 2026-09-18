@@ -5,12 +5,12 @@
 Brauer 대수 $B_k(\delta)$ 는 $2k$ 개 점의 완전 짝짓기 도형을 기저로 갖는 대수이며, 직교군과 심플렉틱군의 텐서 표현에서 중심화대수 노릇을 한다.
 
 $$
-\mathrm{End}_{\mathrm O(n)}\bigl(V^{\otimes k}\bigr)=B_k(n),
+\mathrm{End}\_{\mathrm O(n)}\bigl(V^{\otimes k}\bigr)=B_k(n),
 \qquad
-\mathrm{End}_{\mathrm{Sp}(2m)}\bigl(V^{\otimes k}\bigr)=B_k(-2m)
+\mathrm{End}\_{\mathrm{Sp}(2m)}\bigl(V^{\otimes k}\bigr)=B_k(-2m)
 $$
 
-[Schur–Weyl 쌍대성](schur-weyl-duality.md)은 $\mathrm{End}_{\mathrm{GL}(V)}(V^{\otimes k})=\mathbb C[S_k]$ 를 준다. $\mathrm{GL}(V)$ 를 직교군으로 줄이면 불변량이 늘어나고 중심화대수도 커지며, 늘어난 만큼을 Brauer 대수가 기술한다. 두 군이 각각 대칭 쌍선형형식과 교대 쌍선형형식을 보존한다는 차이가 매개변수 $\delta$ 의 부호로 압축된다.
+[Schur–Weyl 쌍대성](schur-weyl-duality.md)은 $\mathrm{End}\_{\mathrm{GL}(V)}(V^{\otimes k})=\mathbb C[S_k]$ 를 준다. $\mathrm{GL}(V)$ 를 직교군으로 줄이면 불변량이 늘어나고 중심화대수도 커지며, 늘어난 만큼을 Brauer 대수가 기술한다. 두 군이 각각 대칭 쌍선형형식과 교대 쌍선형형식을 보존한다는 차이가 매개변수 $\delta$ 의 부호로 압축된다.
 
 Brauer 대수는 군의 군대수가 아니다. 원소가 치환이 아니라 도형이고 곱셈이 도형을 쌓는 것이다.
 
@@ -60,12 +60,12 @@ $$
 
 ## 쌍대성
 
-$V=\mathbb C^n$ 에 표준 이차형식을 주면 $B_k(n)\to\mathrm{End}(V^{\otimes k})$ 가 정의되고 상이 $\mathrm{End}_{\mathrm O(n)}(V^{\otimes k})$ 다. 심플렉틱 쪽은 $\delta=-2m$ 으로 같은 진술이 성립한다. $k\le n$ 이면 사상이 단사이고 $k\gt n$ 이면 핵이 생긴다.
+$V=\mathbb C^n$ 에 표준 이차형식을 주면 $B_k(n)\to\mathrm{End}(V^{\otimes k})$ 가 정의되고 상이 $\mathrm{End}\_{\mathrm O(n)}(V^{\otimes k})$ 다. 심플렉틱 쪽은 $\delta=-2m$ 으로 같은 진술이 성립한다. $k\le n$ 이면 사상이 단사이고 $k\gt n$ 이면 핵이 생긴다.
 
 ## 제 1 기본정리
 
 $$
-\mathrm{End}_{\mathrm O(n)}\bigl(V^{\otimes k}\bigr)\ \text{는 계약과 치환으로 생성된다}
+\mathrm{End}\_{\mathrm O(n)}\bigl(V^{\otimes k}\bigr)\ \text{는 계약과 치환으로 생성된다}
 $$
 
 고전 불변론의 언어로는 $\mathrm O(n)$ 의 벡터 불변량이 내적 $\langle v_i,v_j\rangle$ 들의 다항식이라는 진술이며, 도형 언어로는 모든 도형이 기저라는 진술이다.
@@ -80,15 +80,15 @@ $\delta=n$ 이 작은 정수이고 $k$ 가 크면 반단순성이 깨진다. 이
 
 ## Temperley–Lieb 대수
 
-도형에서 선이 교차하지 않는 것만 남기면 **Temperley–Lieb 대수** $TL_k(\delta)$ 가 된다. $B_k(\delta)$ 의 몫이고 차원이 Catalan 수 $C_k$ 다. $\mathrm{SL}_2$ 의 텐서 범주와 매듭 불변량에 쓰이는 대수가 여기서 갈라진다.
+도형에서 선이 교차하지 않는 것만 남기면 **Temperley–Lieb 대수** $TL_k(\delta)$ 가 된다. $B_k(\delta)$ 의 몫이고 차원이 Catalan 수 $C_k$ 다. $\mathrm{SL}\_2$ 의 텐서 범주와 매듭 불변량에 쓰이는 대수가 여기서 갈라진다.
 
 ## 도형 대수의 가족
 
 | 대수 | 쌍대 군 | 차원 |
 | --- | --- | --- |
-| $\mathbb C[S_k]$ | $\mathrm{GL}_n$ | $k!$ |
-| $B_k(\delta)$ | $\mathrm O_n$ 과 $\mathrm{Sp}_{2m}$ | $(2k-1)!!$ |
-| 벽 있는 Brauer | $\mathrm{GL}_n$ (혼합 텐서) | 조합적 |
+| $\mathbb C[S_k]$ | $\mathrm{GL}\_n$ | $k!$ |
+| $B_k(\delta)$ | $\mathrm O_n$ 과 $\mathrm{Sp}\_{2m}$ | $(2k-1)!!$ |
+| 벽 있는 Brauer | $\mathrm{GL}\_n$ (혼합 텐서) | 조합적 |
 | 분할 대수 | $S_n$ | Bell 수 |
 
 군을 줄이면 중심화대수가 커지고, 커진 만큼이 도형으로 기술된다.

@@ -101,7 +101,7 @@ $$
 P_a(\tau_Z \lt\tau_a^+) \thickspace=\thickspace \frac{1}{c(a) \thinspace R_{\mathrm{eff}}(a, Z)} .
 $$
 
-*증명 스케치.* $v(a) = 1$ 이고 $v|_Z = 0$ 인 전압을 잡는다. $a$ 에서 흘러 나가는 총 전류는 $\sum_y c(ay)(1 - v(y))$ 이고, 확률적으로 이는 첫 걸음 뒤 $a$ 로 돌아오기 전에 $Z$ 에 도달할 확률을 $c(a)$ 에 곱한 값과 같다. 유효저항의 정의에 대입하면 등식이 된다.
+*증명 스케치.* $v(a) = 1$ 이고 $v|\_Z = 0$ 인 전압을 잡는다. $a$ 에서 흘러 나가는 총 전류는 $\sum_y c(ay)(1 - v(y))$ 이고, 확률적으로 이는 첫 걸음 뒤 $a$ 로 돌아오기 전에 $Z$ 에 도달할 확률을 $c(a)$ 에 곱한 값과 같다. 유효저항의 정의에 대입하면 등식이 된다.
 
 무한 그래프에서는 $Z$ 를 원점에서 거리 $n$ 인 껍질로 잡고 $n \to \infty$ 극한을 취해 $R_{\mathrm{eff}}(a, \infty)$ 를 정의한다. 위 식에서 즉시 다음 판정이 나온다.
 
@@ -127,7 +127,7 @@ $$
 유한 연결 그래프에서 $a$ 에서 $b$ 로 갔다가 돌아오는 기대 시간(commute time)은 유효저항에 정비례한다.
 
 $$
-\mathbb{E}_a[\tau_b] + \mathbb{E}_b[\tau_a] \thickspace=\thickspace 2 |E| \cdot R_{\mathrm{eff}}(a, b)
+\mathbb{E}\_a[\tau_b] + \mathbb{E}\_b[\tau_a] \thickspace=\thickspace 2 |E| \cdot R_{\mathrm{eff}}(a, b)
 $$
 
 (가중 그래프에서는 $2\lvert E \rvert$ 자리에 총 컨덕턴스 $\sum_x c(x)$ 가 들어간다). 증명은 도달 시간을 조화함수 방정식의 해로 쓰고 정지분포에 대한 가역성을 이용한다. 이 항등식은 세 가지 이유로 유용하다. 첫째, 저항은 직렬·병렬 규칙으로 계산할 수 있으므로 도달 시간 계산이 회로 계산으로 바뀐다. 둘째, 저항은 거리 함수(resistance metric)이므로 도달 시간에 삼각부등식 같은 구조가 생긴다. 셋째, 커버 시간(모든 정점을 방문하는 기대 시간)이 $R_{\mathrm{eff}}$ 의 최대값과 $\lvert E \rvert$ 로 위아래에서 묶인다.

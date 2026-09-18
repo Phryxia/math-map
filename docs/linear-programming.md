@@ -75,7 +75,7 @@ $$
 허용해 $x$ , $y$ 가 둘 다 최적인 것은 다음과 동치다.[^3]
 
 $$
-x_j\thinspace\bigl(A^{\mathsf{T}}y-c\bigr)_j=0\ \ (\forall j),\qquad y_i\thinspace\bigl(b-Ax\bigr)_i=0\ \ (\forall i)
+x_j\thinspace\bigl(A^{\mathsf{T}}y-c\bigr)\_j=0\ \ (\forall j),\qquad y_i\thinspace\bigl(b-Ax\bigr)\_i=0\ \ (\forall i)
 $$
 
 약쌍대성의 두 부등식이 등식이 되는 조건을 성분별로 쓴 것이고, 강쌍대성에 따라 등식은 최적성과 같다. 제약이 느슨하면 대응하는 쌍대 변수가 $0$ 이고, 쌍대 변수가 양수이면 대응하는 제약이 등식으로 성립한다.

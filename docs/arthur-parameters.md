@@ -5,7 +5,7 @@
 Arthur 매개변수는 L 매개변수에 $\mathrm{SL}\_2$ 를 하나 더 붙여 비템퍼드 표현까지 분류하는 매개변수다.
 
 $$
-\psi:\ W_F\times\mathrm{SL}_2(\mathbb C)\times\mathrm{SL}_2(\mathbb C)\longrightarrow{}^LG
+\psi:\ W_F\times\mathrm{SL}\_2(\mathbb C)\times\mathrm{SL}\_2(\mathbb C)\longrightarrow{}^LG
 $$
 
 [Vogan 꾸러미](vogan-packets.md)의 L 매개변수 $\varphi:W_F\times\mathrm{SL}\_2(\mathbb C)\to{}^LG$ 는 템퍼드 표현에서 작동하지만 잔여 스펙트럼에 사는 비템퍼드 표현을 놓친다. 첫째 $\mathrm{SL}\_2$ 는 국소 분기 정보(Deligne 의 멱단 부분)를 담고, 둘째 $\mathrm{SL}\_2$ 가 비템퍼드성을 담는다. 둘째가 자명하면 템퍼드로 돌아오고, 자명하지 않으면 그만큼 Satake 매개변수가 유니터리 축에서 밀려난다.
@@ -53,7 +53,7 @@ $$
 ## Arthur 매개변수
 
 $$
-\psi:\ W_F\times\mathrm{SL}_2(\mathbb C)\times\mathrm{SL}_2(\mathbb C)\to{}^LG
+\psi:\ W_F\times\mathrm{SL}\_2(\mathbb C)\times\mathrm{SL}\_2(\mathbb C)\to{}^LG
 $$
 
 에서 $W_F$ 로의 제한이 유계 상을 갖고 두 $\mathrm{SL}\_2$ 로의 제한이 대수적이어야 한다. 대응하는 L 매개변수는 다음과 같다.
@@ -97,7 +97,7 @@ $\mathrm{GL}\_n$ 에서는 성분군이 언제나 자명하므로 모든 $\pi\in
 $$
 n=dm,\qquad
 \psi=\sigma\boxtimes[d],\qquad
-\sigma\ \text{는 }\mathrm{GL}_m\text{ 의 첨점 표현}
+\sigma\ \text{는 }\mathrm{GL}\_m\text{ 의 첨점 표현}
 $$
 
 $d=1$ 이 첨점 표현이고, $d\gt 1$ 이면 잔여 스펙트럼의 Speh 표현이며, $m=1,d=n$ 이면 자명 표현이다. 이 목록이 전부라는 것이 Mœglin–Waldspurger 의 정리다.
@@ -109,7 +109,7 @@ Arthur 는 유사분열 고전군의 이산 스펙트럼을 $\mathrm{GL}\_N$ 의
 $$
 \psi=\boxplus_i\ \sigma_i\boxtimes[d_i],
 \qquad
-\sigma_i\ \text{는 }\mathrm{GL}_{m_i}\text{ 의 자기쌍대 첨점 표현}
+\sigma_i\ \text{는 }\mathrm{GL}\_{m_i}\text{ 의 자기쌍대 첨점 표현}
 $$
 
 꼴이고, 각 $\sigma_i\boxtimes[d_i]$ 가 $G$ 의 쌍대군이 보존하는 형식과 맞는 부호를 가져야 한다. 조건을 만족하는 조합을 세는 것이 고전군 표현을 세는 일이 된다. 증명은 안정화된 대각합 공식과 $\mathrm{GL}\_N$ 으로의 이전을 쓰고, [기본 보조정리](fundamental-lemma.md)가 그 밑에 깔려 있다.

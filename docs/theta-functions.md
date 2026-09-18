@@ -33,16 +33,16 @@ $$
 격자 위의 Poisson 합공식 $\sum_{x\in L}f(x)=\frac1{\mathrm{vol}(L)}\sum_{y\in L^\ast}\hat f(y)$ 에 넣으면 $t$ 와 $1/t$ 가 바뀐다.
 
 $$
-\Theta_L(-1/\tau)=\frac{(\tau/i)^{n/2}}{\mathrm{vol}(L)}\thinspace\Theta_{L^*}(\tau)
+\Theta_L(-1/\tau)=\frac{(\tau/i)^{n/2}}{\mathrm{vol}(L)}\thinspace\Theta_{L^\ast}(\tau)
 $$
 
-$L$ 이 자기쌍대 곧 유니모듈러 $L^\ast=L$ 이면 오른쪽이 다시 $\Theta_L$ 이라 이 식이 무게 $n/2$ 의 모듈러 변환이 된다. 그리고 $L$ 이 짝수 격자이면 모든 $|x|^2$ 가 짝수라 $q$ 의 지수가 정수이고, $\Theta_L(\tau+1)=\Theta_L(\tau)$ 다. 두 변환이 $\mathrm{SL}_2(\mathbb Z)$ 를 생성하므로 $\Theta_L$ 이 모듈러 형식이다.
+$L$ 이 자기쌍대 곧 유니모듈러 $L^\ast=L$ 이면 오른쪽이 다시 $\Theta_L$ 이라 이 식이 무게 $n/2$ 의 모듈러 변환이 된다. 그리고 $L$ 이 짝수 격자이면 모든 $|x|^2$ 가 짝수라 $q$ 의 지수가 정수이고, $\Theta_L(\tau+1)=\Theta_L(\tau)$ 다. 두 변환이 $\mathrm{SL}\_2(\mathbb Z)$ 를 생성하므로 $\Theta_L$ 이 모듈러 형식이다.
 
 [Tate 논문](tate-thesis.md)에서 $\zeta$ 의 함수방정식을 준 것도 같은 Poisson 합공식이며, 자기쌍대성이 대칭을 낳는 구조가 격자에서 반복된다.
 
 ## 모듈러 형식 공간의 유한차원성
 
-$\Theta_L$ 이 무게 $n/2$ 의 모듈러 형식이라는 것만으로 많은 것이 결정된다. $n=8$ 이면 무게 4 이고 $M_4(\mathrm{SL}_2(\mathbb Z))$ 는 $E_4$ 가 생성하는 1 차원 공간이다. 상수항이 둘 다 $1$ 이므로
+$\Theta_L$ 이 무게 $n/2$ 의 모듈러 형식이라는 것만으로 많은 것이 결정된다. $n=8$ 이면 무게 4 이고 $M_4(\mathrm{SL}\_2(\mathbb Z))$ 는 $E_4$ 가 생성하는 1 차원 공간이다. 상수항이 둘 다 $1$ 이므로
 
 $$
 \Theta_{E_8}=E_4=1+240\sum_{m\ge1}\sigma_3(m)q^m
@@ -93,7 +93,7 @@ $$
 $E_8$ 은 다음으로 정의되는 8 차원 짝수 유니모듈러 격자다.
 
 $$
-E_8=\Big\lbrace x\in\mathbb Z^8:\textstyle\sum x_i\in2\mathbb Z\Big\rbrace\ \cup\
+E_8=\Big\lbrace x\in\mathbb Z^8:\textstyle\sum x_i\in2\mathbb Z\Big\rbrace\thinspace\cup\thinspace
 \Big\lbrace x\in(\mathbb Z+\tfrac12)^8:\textstyle\sum x_i\in2\mathbb Z\Big\rbrace
 $$
 
@@ -129,7 +129,7 @@ $$
 
 > 짝수 유니모듈러 격자는 $n\equiv0\pmod8$ 일 때만 존재한다[^1]. 각 차원에서의 개수는 $n=8$ 에서 $E_8$ 하나, $n=16$ 에서 2 개, $n=24$ 에서 Niemeier 격자 24 개다.
 
-$8\mid n$ 이라는 조건이 theta 급수에서 바로 나온다. $\Theta_L$ 이 무게 $n/2$ 이려면 변환식의 인자 $(\tau/i)^{n/2}$ 가 모듈러 형식의 규약과 맞아야 하고, $\mathrm{SL}_2(\mathbb Z)$ 의 관계식이 $n$ 을 8 의 배수로 강제한다.
+$8\mid n$ 이라는 조건이 theta 급수에서 바로 나온다. $\Theta_L$ 이 무게 $n/2$ 이려면 변환식의 인자 $(\tau/i)^{n/2}$ 가 모듈러 형식의 규약과 맞아야 하고, $\mathrm{SL}\_2(\mathbb Z)$ 의 관계식이 $n$ 을 8 의 배수로 강제한다.
 
 차원 $n=24$ 에서 $M_{12}$ 가 2 차원($E_4^3$ 와 $\Delta$ 가 기저)이라 theta 급수가 상수항 $1$ 과 $\Delta$ 의 계수 하나로 결정된다. 그 자유도가 최소벡터 개수 $N_L(2)$ 이며, $N_L(2)=0$ 인 유일한 격자가 **Leech 격자**다. 최소벡터가 없다는 것이 24 차원 [구 채우기](sphere-packing.md)의 최적성으로 이어진다.
 

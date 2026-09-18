@@ -35,7 +35,7 @@ $$
 LPS 구성은 그래프를 군의 Cayley 그래프로 만든다. 소수 $p,q$ 를 잡고
 
 $$
-G=\mathrm{PGL}_2(\mathbb F_q)\ \text{또는}\ \mathrm{PSL}_2(\mathbb F_q),
+G=\mathrm{PGL}\_2(\mathbb F_q)\ \text{또는}\ \mathrm{PSL}\_2(\mathbb F_q),
 \qquad
 S=\lbrace p+1\ \text{개의 생성원}\rbrace
 $$
@@ -64,7 +64,7 @@ $$
 
 ## LPS 구성
 
-$p,q$ 를 $4$ 로 나눈 나머지가 1 인 서로 다른 소수라 하자. $p$ 가 $\mathbb F_q$ 에서 제곱잉여인지에 따라 $\mathrm{PSL}_2(\mathbb F_q)$ 또는 $\mathrm{PGL}_2(\mathbb F_q)$ 를 택하고, $x_0^2+x_1^2+x_2^2+x_3^2=p$ 의 해에서 만든 $p+1$ 개의 원소를 생성집합으로 하는 Cayley 그래프가 $X^{p,q}$ 다. 이 그래프는 $(p+1)$ 정규이고 Ramanujan 이다.
+$p,q$ 를 $4$ 로 나눈 나머지가 1 인 서로 다른 소수라 하자. $p$ 가 $\mathbb F_q$ 에서 제곱잉여인지에 따라 $\mathrm{PSL}\_2(\mathbb F_q)$ 또는 $\mathrm{PGL}\_2(\mathbb F_q)$ 를 택하고, $x_0^2+x_1^2+x_2^2+x_3^2=p$ 의 해에서 만든 $p+1$ 개의 원소를 생성집합으로 하는 Cayley 그래프가 $X^{p,q}$ 다. 이 그래프는 $(p+1)$ 정규이고 Ramanujan 이다.
 
 # 성질
 

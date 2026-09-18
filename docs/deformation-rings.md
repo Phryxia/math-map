@@ -7,13 +7,13 @@
 Mazur 의 착상은[^1] 유한체 위의 표현
 
 $$
-\bar\rho\colon G\longrightarrow \mathrm{GL}_n(\mathbb F_p)
+\bar\rho\colon G\longrightarrow \mathrm{GL}\_n(\mathbb F_p)
 $$
 
 로 환원되는 $p$ 진 표현을 하나씩 찾는 대신 전부 한꺼번에 다루는 것이다. 완비 국소환 $A$ 마다 $A$ 계수 올림의 집합 $D(A)$ 를 대응시키면 함자가 되고, 적당한 조건 아래 표현가능하다. 환 $R_{\bar\rho}$ 와 그 위의 표현 하나가 있어
 
 $$
-D(A)\thickspace\cong\thickspace\mathrm{Hom}_{\text{연속}}(R_{\bar\rho},A)
+D(A)\thickspace\cong\thickspace\mathrm{Hom}\_{\text{연속}}(R_{\bar\rho},A)
 $$
 
 가 모든 $A$ 에서 자연스럽게 성립한다. $\bar\rho$ 의 모든 올림이 $R_{\bar\rho}$ 위의 **보편 변형** 하나의 특수화이고, 표현론의 질문이 가환대수의 질문이 된다.
@@ -42,7 +42,7 @@ $$
 \lbrace\text{1 차 변형}\rbrace\big/\text{동치}\thickspace\cong\thickspace H^1(G,\mathrm{ad}\thinspace\bar\rho)
 $$
 
-이다. 보정항이 $\mathfrak{gl}_n$ 값이고 $G$ 가 그 위에 켤레로 작용하므로 계수가 $\mathrm{ad}$ 다.
+이다. 보정항이 $\mathfrak{gl}\_n$ 값이고 $G$ 가 그 위에 켤레로 작용하므로 계수가 $\mathrm{ad}$ 다.
 
 ## 장애류
 
@@ -68,7 +68,7 @@ $H^2=0$ 이면 장애가 없어 모든 층이 올라가고 $R$ 은 형식적 멱
 함자 $D$ 가 표현가능하려면 올림을 붙여 나갈 때 선택이 유일해야 한다. $\bar\rho$ 가 자명하지 않은 자기준동형을 가지면 동치류를 붙이는 방식이 여럿이 되어 보편 대상이 깨진다. 그래서 Schur 조건을 건다.
 
 $$
-\mathrm{End}_{G}(\bar\rho)=\mathbb F_p\qquad(\text{예컨대 }\bar\rho\ \text{가 절대기약})
+\mathrm{End}\_{G}(\bar\rho)=\mathbb F_p\qquad(\text{예컨대 }\bar\rho\ \text{가 절대기약})
 $$
 
 이 조건이 있으면 Schlessinger 의 판정이 통과하고 $R_{\bar\rho}$ 가 존재한다. 없으면 기저까지 기억하는 **틀 붙인 변형**을 쓴다. 틀 변형 함자는 언제나 표현가능하고 $\mathrm{PGL}\_n$ 만큼 차원이 늘어난 $R^{\square}\_{\bar\rho}$ 를 준다. Kisin 이 국소 조건을 다룰 때 쓰는 것이 이쪽이다.
@@ -81,13 +81,13 @@ $\Lambda$ 를 잉여체 $k=\mathbb F_p$ 인 완비 이산부치환이라 하고 
 
 ## 변형 함자
 
-$\bar\rho\colon G\to\mathrm{GL}_n(k)$ 에 대해
+$\bar\rho\colon G\to\mathrm{GL}\_n(k)$ 에 대해
 
 $$
-D_{\bar\rho}(A)=\Bigl\lbrace\rho\colon G\to\mathrm{GL}_n(A)\ \text{연속}\ \Big|\ \rho\bmod\mathfrak m_A=\bar\rho\Bigr\rbrace\Big/\ \ker\bigl(\mathrm{GL}_n(A)\to\mathrm{GL}_n(k)\bigr)\text{-켤레}
+D_{\bar\rho}(A)=\Bigl\lbrace\rho\colon G\to\mathrm{GL}\_n(A)\ \text{연속}\ \Big|\ \rho\bmod\mathfrak m_A=\bar\rho\Bigr\rbrace\Big/\ \ker\bigl(\mathrm{GL}\_n(A)\to\mathrm{GL}\_n(k)\bigr)\text{-켤레}
 $$
 
-로 둔다. 켤레를 나누지 않은 것이 **틀 붙인 변형 함자** $D^{\square}_{\bar\rho}$ 다.
+로 둔다. 켤레를 나누지 않은 것이 **틀 붙인 변형 함자** $D^{\square}\_{\bar\rho}$ 다.
 
 수론에서 $G$ 는 유한집합 $S$ 밖에서 비분기인 최대 확대의 Galois 군 $G_{\mathbb Q,S}$ 다. 이 군이 Mazur 의 $p$ 유한성 조건 $\Phi_p$ 를 만족하므로 코호몰로지가 유한 차원이다.
 
@@ -96,18 +96,18 @@ $$
 **정리(Mazur).** $G$ 가 $\Phi_p$ 를 만족하고 $\mathrm{End}\_G(\bar\rho)=k$ 이면 $D_{\bar\rho}$ 는 표현가능하다. 곧 $R_{\bar\rho}\in\mathcal C_\Lambda$ 와 보편 변형 $\rho^{\mathrm{univ}}\colon G\to\mathrm{GL}\_n(R_{\bar\rho})$ 가 있어 모든 $A$ 에서
 
 $$
-\mathrm{Hom}_{\mathcal C_\Lambda}(R_{\bar\rho},A)\thickspace\xrightarrow{\ \sim\ }\thickspace D_{\bar\rho}(A),
+\mathrm{Hom}\_{\mathcal C_\Lambda}(R_{\bar\rho},A)\thickspace\xrightarrow{\ \sim\ }\thickspace D_{\bar\rho}(A),
 \qquad \varphi\longmapsto \varphi\circ\rho^{\mathrm{univ}}
 $$
 
-이 전단사다. Schur 조건 없이도 $D^{\square}_{\bar\rho}$ 는 $R^{\square}\_{\bar\rho}$ 로 표현가능하다.
+이 전단사다. Schur 조건 없이도 $D^{\square}\_{\bar\rho}$ 는 $R^{\square}\_{\bar\rho}$ 로 표현가능하다.
 
 ## 접공간과 표시
 
 이중수 $k[\varepsilon]$ 에서의 값이 접공간이다.
 
 $$
-D_{\bar\rho}(k[\varepsilon])\thickspace\cong\thickspace\mathrm{Hom}_k\bigl(\mathfrak m_R/(\mathfrak m_R^2,p),\thinspace k\bigr)\thickspace\cong\thickspace H^1(G,\mathrm{ad}\thinspace\bar\rho)
+D_{\bar\rho}(k[\varepsilon])\thickspace\cong\thickspace\mathrm{Hom}\_k\bigl(\mathfrak m_R/(\mathfrak m_R^2,p),\thinspace k\bigr)\thickspace\cong\thickspace H^1(G,\mathrm{ad}\thinspace\bar\rho)
 $$
 
 $d=\dim_k H^1$ 개의 생성원으로 $R$ 을 덮을 수 있고 장애 이론이 관계식의 개수를 누른다.
@@ -122,7 +122,7 @@ $$
 \dim R_{\bar\rho}\thickspace\ge\thickspace 1+\dim H^1-\dim H^2
 $$
 
-이다. 오른쪽은 Tate 의 전역 Euler 표수 공식으로 $H^0$ 과 무한소수 자리의 기여만으로 계산된다. $\mathrm{GL}_2$ 의 홀수 $\bar\rho$ 에서 $\mathrm{ad}^0$ 를 쓰면 하한이 $1$ 이고, $R$ 이 $\Lambda$ 위 유한이라는 기대와 맞는다.
+이다. 오른쪽은 Tate 의 전역 Euler 표수 공식으로 $H^0$ 과 무한소수 자리의 기여만으로 계산된다. $\mathrm{GL}\_2$ 의 홀수 $\bar\rho$ 에서 $\mathrm{ad}^0$ 를 쓰면 하한이 $1$ 이고, $R$ 이 $\Lambda$ 위 유한이라는 기대와 맞는다.
 
 ## 조건을 단 변형
 
@@ -133,7 +133,7 @@ $$
 - **$p$ 자리의 국소 조건**: 평탄, 결정적, 반안정, 또는 Hodge–Tate 무게를 지정한 것. [Fontaine–Mazur](fontaine-mazur.md) 의 de Rham 조건을 변형환의 언어로 옮긴 것이다.
 - **$\ell\ne p$ 자리의 국소 조건**: 도체의 형태를 지정한다.
 
-각 조건은 국소 틀 변형환 $R^{\square}_v$ 의 닫힌 부분스킴에 대응하고 전역 변형환은 그 교차로 잘린다. Kisin 은 $p$ 자리 국소 틀 변형환의 기약 성분을 분류했고, 그 성분들이 $p$ 진 국소 Langlands 대응의 표현론적 자료와 맞물려 모듈러성 올림 정리의 국소 입력이 되었다.
+각 조건은 국소 틀 변형환 $R^{\square}\_v$ 의 닫힌 부분스킴에 대응하고 전역 변형환은 그 교차로 잘린다. Kisin 은 $p$ 자리 국소 틀 변형환의 기약 성분을 분류했고, 그 성분들이 $p$ 진 국소 Langlands 대응의 표현론적 자료와 맞물려 모듈러성 올림 정리의 국소 입력이 되었다.
 
 # 성질
 
@@ -147,7 +147,7 @@ $$
 
 을 준다. 모듈러성은 이 사상의 전사성에 해당하고 **$R=T$ 정리**는 동형이라는 주장이다. 동형이면 조건을 만족하는 $\bar\rho$ 의 모든 변형이 모듈러다.
 
-Wiles 와 Taylor 의 증명은 수치 판정을 쓴다. $R$ 이 완전교차이고 $\mathbb T$ 의 합동 가군의 크기가 $R$ 의 여접공간 크기와 맞으면 동형이라는 가환대수 보조정리를 만들고, Taylor–Wiles 계가 그 조건을 공급한다. 보조 소수를 무한히 붙였다 극한을 취해 $R$ 을 $\Lambda[[x_1,\dots,x_g]]$ 위에서 통제하는 패칭 논법이며, Diamond, Fujiwara, Kisin, Calegari–Geraghty 를 거쳐 $\mathrm{GL}_n$ 과 수체로 확장되었다.
+Wiles 와 Taylor 의 증명은 수치 판정을 쓴다. $R$ 이 완전교차이고 $\mathbb T$ 의 합동 가군의 크기가 $R$ 의 여접공간 크기와 맞으면 동형이라는 가환대수 보조정리를 만들고, Taylor–Wiles 계가 그 조건을 공급한다. 보조 소수를 무한히 붙였다 극한을 취해 $R$ 을 $\Lambda[[x_1,\dots,x_g]]$ 위에서 통제하는 패칭 논법이며, Diamond, Fujiwara, Kisin, Calegari–Geraghty 를 거쳐 $\mathrm{GL}\_n$ 과 수체로 확장되었다.
 
 ## 장애 없는 변형
 
@@ -157,7 +157,7 @@ $H^2(G_{\mathbb Q,S},\mathrm{ad}^0\bar\rho)=0$ 이면 변형 문제가 장애 �
 
 - **Serre 추측**: Khare–Wintenberger 의 증명은 $\bar\rho$ 를 올려 특성 $0$ 표현을 만들고 모듈러성 올림으로 옮기는 귀납이다. 올리는 단계가 변형환의 점을 찾는 일이고, Ramakrishna 의 올림 정리가 국소 조건을 단 변형환이 비어 있지 않음을 보장한다.
 - **모듈러성 올림**: $\bar\rho$ 가 모듈러이면 조건을 만족하는 변형도 모듈러라는 정리들이 $R=T$ 의 변주다. Fermat 의 마지막 정리가 첫 응용이었다.
-- **Fontaine–Mazur**: de Rham 조건을 단 변형환의 $\mathbb Q_p$ 값 점이 모두 $\mathbb T$ 에서 온다는 것이 추측의 내용이다. Kisin 과 Emerton 의 $\mathrm{GL}_2$ 증명은 국소 변형환의 기하를 $p$ 진 국소 Langlands 로 읽는다.
+- **Fontaine–Mazur**: de Rham 조건을 단 변형환의 $\mathbb Q_p$ 값 점이 모두 $\mathbb T$ 에서 온다는 것이 추측의 내용이다. Kisin 과 Emerton 의 $\mathrm{GL}\_2$ 증명은 국소 변형환의 기하를 $p$ 진 국소 Langlands 로 읽는다.
 - **고유다양체**: 변형환의 점을 강체적으로 해석해 얻는 $p$ 진 해석공간이 Hida 족과 eigenvariety 다. 고전점이 그 안에 조밀하게 놓이고, 어느 점이 de Rham 인지가 다시 Fontaine–Mazur 다.
 
 # 활용

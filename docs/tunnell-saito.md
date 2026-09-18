@@ -4,16 +4,16 @@
 
 [Waldspurger 정리](waldspurger-formula.md)는 토릭 주기가 살아남는 사원수 대수가 어느 것인지를 $\varepsilon$ 인자가 결정한다고 말한다. 그 결정 규칙의 국소 성분이 **Tunnell–Saito 공식**이다.
 
-국소체 $F$ 와 이차 확대 $K/F$ 와 $\mathrm{GL}_2(F)$ 의 기약 표현 $\pi$ 를 놓자. 토러스 $K^\times$ 위에서 지표 $\chi$ 로 변환하는 범함수가 존재하는지 묻는다.
+국소체 $F$ 와 이차 확대 $K/F$ 와 $\mathrm{GL}\_2(F)$ 의 기약 표현 $\pi$ 를 놓자. 토러스 $K^\times$ 위에서 지표 $\chi$ 로 변환하는 범함수가 존재하는지 묻는다.
 
 $$
-\mathrm{Hom}_{K^\times}\bigl(\pi,\chi\bigr)\ \ne\ 0\ ?
+\mathrm{Hom}\_{K^\times}\bigl(\pi,\chi\bigr)\ \ne\ 0\ ?
 $$
 
-답은 분열형 $\mathrm{GL}_2(F)$ 와 분할 사원수 대수 $D^\times$ 를 함께 보아야 나온다. 두 군에서 $\mathrm{Hom}$ 공간의 차원의 합이 언제나 1 이고, 어느 쪽이 1 인지는 부호 하나가 지정한다.
+답은 분열형 $\mathrm{GL}\_2(F)$ 와 분할 사원수 대수 $D^\times$ 를 함께 보아야 나온다. 두 군에서 $\mathrm{Hom}$ 공간의 차원의 합이 언제나 1 이고, 어느 쪽이 1 인지는 부호 하나가 지정한다.
 
 $$
-\dim\mathrm{Hom}_{K^\times}(\pi,\chi)=1\ \text{ on }\ \mathrm{GL}_2(F)
+\dim\mathrm{Hom}\_{K^\times}(\pi,\chi)=1\ \text{ on }\ \mathrm{GL}\_2(F)
 \quad\Longleftrightarrow\quad
 \varepsilon\negthinspace\left(\tfrac12,\pi_K\otimes\chi\right)\thinspace\eta(-1)=+1
 $$
@@ -26,9 +26,9 @@ Tunnell 은 이 공식으로 **합동수 문제의 판정 알고리즘**을 얻�
 
 ## 부호와 내부형식
 
-$K^\times$ 는 $\mathrm{GL}_2(F)$ 안에서도 $D^\times$ 안에서도 극대 토러스로 실현된다. 두 군은 같은 $L$ 군을 갖는 내부형식이라 매개변수 수준에서는 구별되지 않는다. 그런데 표현 수준에서는 다르게 행동한다.
+$K^\times$ 는 $\mathrm{GL}\_2(F)$ 안에서도 $D^\times$ 안에서도 극대 토러스로 실현된다. 두 군은 같은 $L$ 군을 갖는 내부형식이라 매개변수 수준에서는 구별되지 않는다. 그런데 표현 수준에서는 다르게 행동한다.
 
-$D^\times$ 는 중심을 나누면 콤팩트하므로 기약 표현이 유한차원이고, 콤팩트 부분군 $K^\times/F^\times$ 위로 제한해 지표를 분해하는 일이 유한 계산이다. $\mathrm{GL}_2(F)$ 쪽에서는 무한차원 표현을 다룬다. 두 계산의 답이 합쳐서 1 이라는 것은 두 군의 표현이 하나의 [Vogan 꾸러미](vogan-packets.md)를 이루고 그 꾸러미 위에서 중복도 1 이 성립한다는 뜻이다.
+$D^\times$ 는 중심을 나누면 콤팩트하므로 기약 표현이 유한차원이고, 콤팩트 부분군 $K^\times/F^\times$ 위로 제한해 지표를 분해하는 일이 유한 계산이다. $\mathrm{GL}\_2(F)$ 쪽에서는 무한차원 표현을 다룬다. 두 계산의 답이 합쳐서 1 이라는 것은 두 군의 표현이 하나의 [Vogan 꾸러미](vogan-packets.md)를 이루고 그 꾸러미 위에서 중복도 1 이 성립한다는 뜻이다.
 
 $\varepsilon$ 인자는 꾸러미 안에서 주소를 지정한다. $+1$ 이면 분열형, $-1$ 이면 비분열형이다.
 
@@ -49,27 +49,27 @@ $\pi$ 가 이산계열이면 Jacquet–Langlands 대응으로 $D^\times$ 의 유
 ## 정리 (Tunnell 1983, Saito 1993)
 
 $$
-\dim\mathrm{Hom}_{K^\times}(\pi,\chi)+\dim\mathrm{Hom}_{K^\times}(\pi',\chi)=1
+\dim\mathrm{Hom}\_{K^\times}(\pi,\chi)+\dim\mathrm{Hom}\_{K^\times}(\pi',\chi)=1
 $$
 
 이고, 각 항은 다음으로 결정된다.
 
 $$
-\dim\mathrm{Hom}_{K^\times}(\pi,\chi)=
+\dim\mathrm{Hom}\_{K^\times}(\pi,\chi)=
 \begin{cases}
 1,&\varepsilon\negthinspace\left(\tfrac12,\pi_K\otimes\chi\right)\eta_{K/F}(-1)=+1\cr
 0,&\text{그 외}
 \end{cases}
 $$
 
-여기서 $\pi_K$ 는 $\pi$ 의 $K$ 로의 기저변환이고, $\varepsilon$ 는 고정된 가법 지표에 대한 국소 $\varepsilon$ 인자다. $\pi$ 가 이산계열이 아니면 부호가 언제나 $+1$ 이라 $\mathrm{GL}_2$ 쪽에 범함수가 있다.
+여기서 $\pi_K$ 는 $\pi$ 의 $K$ 로의 기저변환이고, $\varepsilon$ 는 고정된 가법 지표에 대한 국소 $\varepsilon$ 인자다. $\pi$ 가 이산계열이 아니면 부호가 언제나 $+1$ 이라 $\mathrm{GL}\_2$ 쪽에 범함수가 있다.
 
 ## 증명의 요령
 
 Saito 의 증명이 개념적으로 가장 깔끔하다. 양쪽 $\mathrm{Hom}$ 공간의 차원을 지표의 적분으로 적으면
 
 $$
-\dim\mathrm{Hom}_{K^\times}(\pi,\chi)
+\dim\mathrm{Hom}\_{K^\times}(\pi,\chi)
 =\int_{K^\times/F^\times}\Theta_\pi(t)\thinspace\chi^{-1}(t)\thinspace dt
 $$
 
@@ -79,7 +79,7 @@ $$
 
 ## 비분기 경우의 그림
 
-$\pi$ 가 비분기 주계열이고 $K/F$ 가 불분기이면 $\varepsilon=+1$ 이 되어 언제나 $\mathrm{GL}_2$ 쪽에 범함수가 있고 $D^\times$ 쪽은 0 이다. 전역 문제에서 유한 개의 나쁜 자리만 따지면 되므로 Waldspurger 정리의 분지 집합 $\Sigma$ 가 유한하다.
+$\pi$ 가 비분기 주계열이고 $K/F$ 가 불분기이면 $\varepsilon=+1$ 이 되어 언제나 $\mathrm{GL}\_2$ 쪽에 범함수가 있고 $D^\times$ 쪽은 0 이다. 전역 문제에서 유한 개의 나쁜 자리만 따지면 되므로 Waldspurger 정리의 분지 집합 $\Sigma$ 가 유한하다.
 
 ## 무한 자리
 

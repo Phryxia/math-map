@@ -11,7 +11,7 @@ $$
 세는 대상이 유한집합이고 각 원소에 $\pm1$ 이 붙으므로 어떤 사슬복체의 Euler 지표의 꼴이다. Floer 가 그 복체를 만들었다. 생성원은 평탄 접속이고 미분은 두 평탄 접속을 잇는 **순간자**(반자기쌍대 접속)의 개수다.
 
 $$
-\chi\big(HF_*(\Sigma)\big)=2\thinspace\lambda(\Sigma)
+\chi\big(HF_\ast(\Sigma)\big)=2\thinspace\lambda(\Sigma)
 $$
 
 수 하나가 등급이 붙은 아벨군들의 열로 올라가는 이런 승격을 **범주화**라 한다. 얻는 것은 둘이다. Euler 지표가 같아도 호몰로지가 다를 수 있어 정보가 늘고, 4 차원 코보디즘이 군 사이의 준동형을 유도해 3 차원 불변량과 4 차원 Donaldson 이론이 한 틀에서 만난다.
@@ -107,7 +107,7 @@ $$
 매듭 $K\subset\Sigma$ 를 따라 기울기를 바꿔 가며 수술하면 세 다양체가 나오고 그들의 Floer 군이 긴 완전열을 이룬다.
 
 $$
-\cdots\to HF_*(\Sigma_0)\to HF_*(\Sigma_1)\to HF_*(\Sigma_\infty)\to HF_{*-1}(\Sigma_0)\to\cdots
+\cdots\to HF_\ast(\Sigma_0)\to HF_\ast(\Sigma_1)\to HF_\ast(\Sigma_\infty)\to HF_{\ast-1}(\Sigma_0)\to\cdots
 $$
 
 수술로 다양체를 만들고 완전열로 불변량을 따라가는 방식이 이후 Floer 이론의 표준 도구가 되었다. Heegaard Floer, 매듭 Floer, [Khovanov 호몰로지](khovanov-homology.md)의 사각형 완전열이 같은 형태다.

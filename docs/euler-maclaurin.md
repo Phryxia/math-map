@@ -53,7 +53,7 @@ $$
 항의 크기는 $\dfrac{2}{(2\pi)^{2k}}\big|f^{(2k-1)}(N)-f^{(2k-1)}(M)\big|$ 정도다. 앞의 인자는 기하급수적으로 작아지지만 고계 도함수는 보통 계승 속도로 커진다. $f(x)=x^{-s}$ 면 $f^{(2k-1)}$ 에 $(2k-2)!$ 가 붙는다. 계승은 어떤 기하급수도 이기므로 항은 결국 커지고 급수의 수렴반경은 0 이다.
 
 $$
-\text{항}_k\ \approx\ \frac{2\thinspace(2k-2)!}{(2\pi N)^{2k}}\cdot N\ \longrightarrow\ \infty
+\text{항}\_k\ \approx\ \frac{2\thinspace(2k-2)!}{(2\pi N)^{2k}}\cdot N\ \longrightarrow\ \infty
 $$
 
 처음 한동안은 $(2k-2)!$ 가 $(2\pi N)^{2k}$ 를 이기지 못한다. 항이 최소가 되는 곳은 $2k\approx 2\pi N$ , 곧 $k\approx\pi N$ 이고 그때 항의 크기가 $e^{-2\pi N}$ 규모다. 거기서 끊은 값이 최선이며 항을 더 더하면 나빠진다.
@@ -120,7 +120,7 @@ $f=x^{-s}$ , $f=\log x$ , $f=e^{-x}$ 처럼 도함수의 부호가 일정한 함
 항의 크기 $t_k\approx 2(2k-2)!\thinspace(2\pi N)^{-2k}N$ 에서 $t_{k+1}/t_k\approx (2k)(2k-1)/(2\pi N)^2$ 이므로 비가 1 이 되는 곳이
 
 $$
-k^{*}\approx\pi N,\qquad t_{k^{*}}\ \sim\ e^{-2\pi N}
+k^{\ast}\approx\pi N,\qquad t_{k^{\ast}}\ \sim\ e^{-2\pi N}
 $$
 
 이다. $N$ 을 두 배로 늘리면 지수가 두 배가 되므로 정확도는 항을 더 더해서가 아니라 $N$ 을 키워서 올린다.

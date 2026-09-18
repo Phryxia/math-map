@@ -7,7 +7,7 @@
 $\mathrm{GL}\_n$ 의 상삼각 멱단군 $N$ 과 그 위의 비퇴화 지표 $\psi_N$ 에 대해, 표현 $\pi$ 의 Whittaker 모형은 $\pi$ 를 다음 성질을 갖는 함수공간으로 실현한 것이다.
 
 $$
-W\negthinspace\left(\begin{pmatrix}1&*\cr&\ddots\cr&&1\end{pmatrix}g\right)=\psi_N(n)\thinspace W(g)
+W\negthinspace\left(\begin{pmatrix}1&\ast\cr&\ddots\cr&&1\end{pmatrix}g\right)=\psi_N(n)\thinspace W(g)
 $$
 
 이 실현은 Fourier 계수를 대신한다. $\mathrm{GL}\_2$ 에서 첨점형식의 Fourier 전개 $\sum a_nq^n$ 은 $N\cong\mathbb G_a$ 가 아벨군이라 수열로 적힌다. $n\ge3$ 에서는 $N$ 이 아벨군이 아니어서 계수 자리에 수 대신 함수가 오고, 그 함수가 Whittaker 함수다.
@@ -15,7 +15,7 @@ $$
 이 실현은 많아야 하나다.
 
 $$
-\dim\mathrm{Hom}_{N(F)}\bigl(\pi,\psi_N\bigr)\le1
+\dim\mathrm{Hom}\_{N(F)}\bigl(\pi,\psi_N\bigr)\le1
 $$
 
 국소적으로는 Gelfand–Kazhdan 과 Shalika 가 증명했고 전역 진술은 국소 사실에서 따라 나온다. 유일하므로 전역 Whittaker 함수가 국소 Whittaker 함수들의 곱이 되고, 적분이 Euler 곱이 된다.
@@ -41,7 +41,7 @@ $W_\varphi$ 가 $\psi$ 성분이다. 첨점 조건이 $\alpha=0$ 항을 없애�
 $n\ge3$ 이면 $N$ 이 비가환이라 지표만으로 전개가 끝나지 않고 다음 전개를 쓴다.
 
 $$
-\varphi(g)=\sum_{\gamma\in N_{n-1}(\mathbb Q)\backslash\mathrm{GL}_{n-1}(\mathbb Q)}
+\varphi(g)=\sum_{\gamma\in N_{n-1}(\mathbb Q)\backslash\mathrm{GL}\_{n-1}(\mathbb Q)}
 W_\varphi\negthinspace\left(\begin{pmatrix}\gamma&\cr&1\end{pmatrix}g\right)
 $$
 
@@ -107,7 +107,7 @@ $$
 $p$ 진체 대신 유한체를 놓으면 같은 현상이 유한군의 지표 계산이 된다. $G=\mathrm{GL}\_n(\mathbb F_q)$ 라 하고, $N$ 을 상삼각 멱단군, $\psi_N$ 을 위와 같은 지표라 할 때 유도표현
 
 $$
-\Gamma=\mathrm{Ind}_N^G\psi_N
+\Gamma=\mathrm{Ind}\_N^G\psi_N
 $$
 
 이 **Gelfand–Graev 표현**이다. Frobenius 상호법칙 $\dim\mathrm{Hom}\_G(\Gamma,\pi)=\dim\mathrm{Hom}\_N(\pi,\psi_N)$ 에 의해, Whittaker 모형의 유일성은 $\Gamma$ 가 중복도 없이 분해된다는 진술과 같다. 중복도 $m_i$ 에 대해 $\langle\Gamma,\Gamma\rangle=\sum m_i^2$ 이므로 이 값이 성분의 개수와 같을 때 모든 $m_i$ 가 1 이다.

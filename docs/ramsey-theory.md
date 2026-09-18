@@ -41,7 +41,7 @@ $$
 가산 무한집합의 $k$ 원소 부분집합을 유한 개의 색으로 칠하면, 모든 $k$ 원소 부분집합이 같은 색인 무한 부분집합이 존재한다[^1].
 
 $$
-c:\binom{\mathbb{N}}{k}\to[r]\ \Longrightarrow\ \exists\thinspace M\subseteq\mathbb{N}\ \text{무한},\ c\bigl|_{\binom{M}{k}}\ \text{상수}
+c:\binom{\mathbb{N}}{k}\to[r]\ \Longrightarrow\ \exists\thinspace M\subseteq\mathbb{N}\ \text{무한},\ c\bigl|\_{\binom{M}{k}}\ \text{상수}
 $$
 
 # 성질

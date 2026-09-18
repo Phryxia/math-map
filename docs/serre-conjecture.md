@@ -5,7 +5,7 @@
 [모듈러 형식](modular-forms.md)의 고유형식 $f$ 는 각 소수 $\lambda\mid p$ 마다 Galois 표현 $\rho_{f,\lambda}$ 를 낳고, 그것을 잉여체로 환원하면 2 차원 mod $p$ 표현
 
 $$
-\bar\rho_f\colon G_{\mathbb Q}\longrightarrow \mathrm{GL}_2(\overline{\mathbb F}_p)
+\bar\rho_f\colon G_{\mathbb Q}\longrightarrow \mathrm{GL}\_2(\overline{\mathbb F}\_p)
 $$
 
 가 나온다. Serre 는 1987 년에 그 역을 물었다.[^1] **연속이고 기약이고 홀수인 mod $p$ 표현은 모두 이렇게 나오는가?** 여기서 홀수란 복소켤레 $c$ 에 대해 $\det\bar\rho(c)=-1$ 이라는 뜻이다.
@@ -13,7 +13,7 @@ $$
 추측은 여기서 멈추지 않는다. Serre 는 그런 $f$ 의 **무게와 레벨을 $\bar\rho$ 자체에서 읽는 공식**을 함께 제시했다.
 
 $$
-k(\bar\rho)\ \text{는}\ \bar\rho|_{I_p}\ \text{로부터},\qquad
+k(\bar\rho)\ \text{는}\ \bar\rho|\_{I_p}\ \text{로부터},\qquad
 N(\bar\rho)\ \text{는}\ p\ \text{밖의 분기로부터}
 $$
 
@@ -33,7 +33,7 @@ $\rho_{f,\lambda}$ 는 [모듈러 곡선](modular-curves.md)의 코호몰로지�
 
 $\ell\ne p$ 에서 $\bar\rho$ 가 비분기이면 그 소수는 레벨에 기여하지 않는다. 분기하면 관성군의 여과로 Artin 도체 지수를 계산해 $\ell^{n_\ell}$ 만큼 레벨을 키운다. 자기동형 형식 쪽에서 도체가 레벨인 것과 정확히 같은 규칙이다.
 
-$p$ 자리는 사정이 다르다. $p$ 에서의 분기는 레벨로 보내지 않고 **무게**로 흡수한다. $\bar\rho|_{I_p}$ 가 온순 지표 $\chi^a\oplus\chi^b$ 로 분해되면
+$p$ 자리는 사정이 다르다. $p$ 에서의 분기는 레벨로 보내지 않고 **무게**로 흡수한다. $\bar\rho|\_{I_p}$ 가 온순 지표 $\chi^a\oplus\chi^b$ 로 분해되면
 
 $$
 k(\bar\rho)=1+pa+b
@@ -69,7 +69,7 @@ $p=23$ 에서는 기약이지만 상이 이면체군에 들어간다. 그러면 
 
 ## 모듈러인 표현
 
-$\bar\rho\colon G_{\mathbb Q}\to\mathrm{GL}_2(\overline{\mathbb F}_p)$ 가 **모듈러**라는 것은 어떤 무게 $k\ge2$ 와 레벨 $N$ 과 네벤티푸스 $\varepsilon$ 의 고유형식 $f\in S_k(\Gamma_1(N))$ 과 $\lambda\mid p$ 가 있어
+$\bar\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\overline{\mathbb F}\_p)$ 가 **모듈러**라는 것은 어떤 무게 $k\ge2$ 와 레벨 $N$ 과 네벤티푸스 $\varepsilon$ 의 고유형식 $f\in S_k(\Gamma_1(N))$ 과 $\lambda\mid p$ 가 있어
 
 $$
 \bar\rho\thickspace\cong\thickspace\bar\rho_{f,\lambda}
@@ -78,8 +78,8 @@ $$
 인 것이다. 동치로, 거의 모든 소수 $\ell$ 에서
 
 $$
-\mathrm{tr}\bar\rho(\mathrm{Frob}_\ell)\equiv a_\ell(f),\qquad
-\det\bar\rho(\mathrm{Frob}_\ell)\equiv \varepsilon(\ell)\ell^{k-1}\pmod\lambda
+\mathrm{tr}\bar\rho(\mathrm{Frob}\_\ell)\equiv a_\ell(f),\qquad
+\det\bar\rho(\mathrm{Frob}\_\ell)\equiv \varepsilon(\ell)\ell^{k-1}\pmod\lambda
 $$
 
 가 성립하는 것이다. Chebotarev 밀도 정리가 거의 모든 $\ell$ 에서의 자취 일치로 표현이 결정됨을 보장한다.
@@ -95,7 +95,7 @@ N(\bar\rho)=\prod_{\ell\ne p}\ell^{\thinspace n_\ell},\qquad
 n_\ell=\sum_{i\ge0}\frac{|G_i|}{|G_0|}\dim\bigl(V/V^{G_i}\bigr)
 $$
 
-$G_i$ 는 $\ell$ 에서의 상위 분기군, $V=\overline{\mathbb F}\_p^2$ 다. 무게는 $\bar\rho|_{I_p}$ 로 정한다. $p\gt 2$ 인 온순한 경우를 예로 들면, 관성군의 작용이 $\chi^a\oplus\chi^b$ 로 분해되고(여기서 $0\le a\lt b\le p-2$ 이고 $\chi$ 는 mod $p$ 순환지표다) 표현이 $I_p$ 에서 분해되면
+$G_i$ 는 $\ell$ 에서의 상위 분기군, $V=\overline{\mathbb F}\_p^2$ 다. 무게는 $\bar\rho|\_{I_p}$ 로 정한다. $p\gt 2$ 인 온순한 경우를 예로 들면, 관성군의 작용이 $\chi^a\oplus\chi^b$ 로 분해되고(여기서 $0\le a\lt b\le p-2$ 이고 $\chi$ 는 mod $p$ 순환지표다) 표현이 $I_p$ 에서 분해되면
 
 $$
 k(\bar\rho)=1+pa+b
@@ -133,14 +133,14 @@ flowchart LR
 ## 따름정리
 
 - **Fermat 의 마지막 정리.** Frey 곡선의 mod $p$ 표현이 레벨 $2$ 무게 $2$ 에서 모듈러여야 하는데 그 공간이 $0$ 이다. Serre 추측의 강한 형태만으로 모순이 나온다. 역사적으로는 Ribet 의 레벨 낮추기와 Wiles 의 모듈러성 정리로 따로 증명되었지만, 더 짧은 논리적 경로는 Serre 추측을 거친다.
-- **홀수 2 차원 Artin 추측.** 상이 유한한 홀수 기약 표현 $\rho\colon G_{\mathbb Q}\to\mathrm{GL}_2(\mathbb C)$ 의 Artin $L$ 함수가 정칙이라는 주장. Serre 추측에서 $k(\bar\rho)=1$ 인 경우에 해당하고, 무게 $1$ 형식에서 모듈러성이 나오면 정칙성이 따라온다. 이 방향이 Khare–Wintenberger 이후 정리가 되었다.
-- **[Fontaine–Mazur 추측](fontaine-mazur.md)의 입력.** $\mathrm{GL}_2$ 경우를 증명하는 Kisin–Emerton 논법은 잔여표현이 모듈러라는 가정에서 출발한다. Serre 추측이 그 가정을 불필요하게 만든다.
+- **홀수 2 차원 Artin 추측.** 상이 유한한 홀수 기약 표현 $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\mathbb C)$ 의 Artin $L$ 함수가 정칙이라는 주장. Serre 추측에서 $k(\bar\rho)=1$ 인 경우에 해당하고, 무게 $1$ 형식에서 모듈러성이 나오면 정칙성이 따라온다. 이 방향이 Khare–Wintenberger 이후 정리가 되었다.
+- **[Fontaine–Mazur 추측](fontaine-mazur.md)의 입력.** $\mathrm{GL}\_2$ 경우를 증명하는 Kisin–Emerton 논법은 잔여표현이 모듈러라는 가정에서 출발한다. Serre 추측이 그 가정을 불필요하게 만든다.
 - **계산 가능한 판정.** $\bar\rho$ 를 주면 $(k,N)$ 을 계산하고 유한 차원 공간에서 자취를 맞춰 보면 된다. [모듈러 기호](modular-symbols.md)로 그 공간을 다루므로 절차 전체가 컴퓨터에서 돈다.
 
 ## 일반화
 
 - **수체 위의 Serre 추측.** Buzzard–Diamond–Jarvis 가 완전실체 위의 무게 공식을 정식화했다. 무게가 하나가 아니라 집합이 되고, 국소 조건의 언어로 다시 쓰인다.
-- **일반 군.** $\mathrm{GL}_n$ 과 다른 환원군에 대한 판본이 제안되어 있으나, 무게 공식 자체가 국소 Galois 표현의 결정적 변형환의 기하로 번역되어야 해서 진술부터 어렵다.
+- **일반 군.** $\mathrm{GL}\_n$ 과 다른 환원군에 대한 판본이 제안되어 있으나, 무게 공식 자체가 국소 Galois 표현의 결정적 변형환의 기하로 번역되어야 해서 진술부터 어렵다.
 - **홀수 조건의 필연성.** 짝수 표현의 경우 대응은 Maass 형식 쪽이고, 이쪽은 $p$ 진 방법이 거의 닿지 않는다. Serre 추측이 정칙 형식으로 닫히는 것은 홀수 조건 덕분이다.
 
 # 활용
@@ -149,7 +149,7 @@ flowchart LR
 
 - **모듈러성 판정.** 타원곡선이나 아벨 다양체에서 나온 $\bar\rho$ 를 만나면 $(k,N)$ 을 계산하고 해당 공간의 고유형식과 자취를 맞춘다. Frey 곡선 논법의 실전 형태다.
 - **합동의 원천.** $\tau$ 의 합동처럼 계수 사이의 합동은 대개 mod $p$ 표현의 상이 작아진 흔적이다. 어떤 합동이 가능한지는 상이 될 수 있는 부분군의 분류로 결정된다.
-- **$p$ 진 Langlands 의 잔여 입력.** 모듈러성 올림 정리는 언제나 잔여표현의 모듈러성을 가정에 둔다. Serre 추측이 $\mathrm{GL}_2/\mathbb Q$ 에서 그 가정을 제거해 주었고, 그 덕에 [Fontaine–Mazur 추측](fontaine-mazur.md)의 $\mathrm{GL}_2$ 경우가 조건 없는 정리가 되었다.
+- **$p$ 진 Langlands 의 잔여 입력.** 모듈러성 올림 정리는 언제나 잔여표현의 모듈러성을 가정에 둔다. Serre 추측이 $\mathrm{GL}\_2/\mathbb Q$ 에서 그 가정을 제거해 주었고, 그 덕에 [Fontaine–Mazur 추측](fontaine-mazur.md)의 $\mathrm{GL}\_2$ 경우가 조건 없는 정리가 되었다.
 
 [^1]: J.-P. Serre, *Sur les représentations modulaires de degré 2 de Gal(Q̄/Q)*, Duke Math. J. **54** (1987), 179–230. 추측의 원전이고 무게·레벨 공식과 $\Delta$ 의 예외적 소수 계산이 여기 있다.
 

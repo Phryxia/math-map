@@ -27,13 +27,13 @@ Fredholm 은 1900 년에 유한차원 행렬식이 만족하는 급수 전개를
 유한차원에서
 
 $$
-\det(I - K) = \sum_{k \ge 0}(-1)^k \sum_{i_1 \lt\dots \lt i_k}\det\bigl(K_{i_a i_b}\bigr)_{a,b=1}^{k}
+\det(I - K) = \sum_{k \ge 0}(-1)^k \sum_{i_1 \lt\dots \lt i_k}\det\bigl(K_{i_a i_b}\bigr)\_{a,b=1}^{k}
 $$
 
 가 성립한다. $k$ 번째 항은 크기 $k$ 인 주부분행렬의 행렬식을 모은 것이고, 이 표현에는 차원이 드러나지 않는다. 지수 집합을 연속체로 바꾸고 합을 적분으로 바꾸면 무한차원 정의가 된다.
 
 $$
-\det(I - K) = \sum_{k\ge0}\frac{(-1)^k}{k!}\int_{[a,b]^k}\det\bigl(K(x_i,x_j)\bigr)_{i,j=1}^{k}\thinspace dx_1\cdots dx_k
+\det(I - K) = \sum_{k\ge0}\frac{(-1)^k}{k!}\int_{[a,b]^k}\det\bigl(K(x_i,x_j)\bigr)\_{i,j=1}^{k}\thinspace dx_1\cdots dx_k
 $$
 
 $1/k!$ 은 순서 없는 선택을 순서 있는 적분으로 바꾸며 생긴다. 확률에서 $k$ 번째 항은 점 $k$ 개가 동시에 나타나는 방식을 세는 양이고, 결정점과정의 간격 확률이 이 급수다.
@@ -72,7 +72,7 @@ Lidskii 의 정리는 자취류 $K$ 에 대해 $\mathrm{tr}K = \sum_i\lambda_i$ 
 자취류 $K$ 에 대해
 
 $$
-\det(I - zK) = \prod_i (1 - z\lambda_i) = \sum_{k\ge0}\frac{(-z)^k}{k!}\int \det\bigl(K(x_i,x_j)\bigr)_{i,j\le k}\thickspace d^k x
+\det(I - zK) = \prod_i (1 - z\lambda_i) = \sum_{k\ge0}\frac{(-z)^k}{k!}\int \det\bigl(K(x_i,x_j)\bigr)\_{i,j\le k}\thickspace d^k x
 $$
 
 로 정의한다. 두 표현이 같다는 것이 **Plemelj–Smithies 항등식**이다. 좌변은 $z$ 의 완전함수이고 그 영점이 $1/\lambda_i$ 다. 커널 형태는 $K$ 가 적분작용소이고 $K(x,y)$ 가 연속일 때 쓴다. 자취류성은 커널의 매끄러움으로 확인하며 $[a,b]$ 위의 $C^1$ 커널이면 충분하다.
@@ -128,10 +128,10 @@ $I - K$ 는 지표가 항상 0 이라 지표가 정보를 주지 않고 행렬�
 $K$ 가 자취류가 아니고 Hilbert–Schmidt 일 뿐이면 곱 $\prod(1-\lambda_i)$ 가 발산할 수 있다. 이때는
 
 $$
-{\det}_2(I - K) = \prod_i (1-\lambda_i)e^{\lambda_i}
+{\det}\_2(I - K) = \prod_i (1-\lambda_i)e^{\lambda_i}
 $$
 
-처럼 발산하는 1 차 항을 지수인자로 상쇄한다. $K \in \mathcal S_p$ 에 대해 ${\det}_p$ 가 있다. 발산하는 항을 정해진 규칙으로 빼는 이 조작이 물리의 재규격화에 해당하고, 대가로 곱셈성이 수정된다.
+처럼 발산하는 1 차 항을 지수인자로 상쇄한다. $K \in \mathcal S_p$ 에 대해 ${\det}\_p$ 가 있다. 발산하는 항을 정해진 규칙으로 빼는 이 조작이 물리의 재규격화에 해당하고, 대가로 곱셈성이 수정된다.
 
 # 활용
 
@@ -140,7 +140,7 @@ $$
 Fredholm 급수를 항별로 계산하면 다중적분이 겹친다. Bornemann 의 방법은 $[a,b]$ 위의 구적 마디 $x_i$ 와 무게 $w_i$ 를 잡고
 
 $$
-\det(I-K) \thickspace\approx\thickspace \det\Bigl(\delta_{ij} - \sqrt{w_i w_j}\thinspace K(x_i,x_j)\Bigr)_{i,j=1}^{n}
+\det(I-K) \thickspace\approx\thickspace \det\Bigl(\delta_{ij} - \sqrt{w_i w_j}\thinspace K(x_i,x_j)\Bigr)\_{i,j=1}^{n}
 $$
 
 라는 $n \times n$ 행렬식 하나를 계산하는 것이다. $\sqrt{w_iw_j}$ 는 대칭을 유지하려고 나눠 붙였고, 계산의 본체는 적분작용소를 구적으로 이산화한 Nyström 근사다. 커널이 해석적이고 Gauss 구적을 쓰면 수렴이 지수적이라 마디 몇 개로 기계정밀도에 닿는다.
@@ -159,7 +159,7 @@ $$
 
 산란 이론에서 Jost 함수가 섭동 작용소의 Fredholm 행렬식으로 쓰이고, 그 위상의 증가가 속박 상태의 개수를 센다. Birman–Krein 공식이 $\det$ 의 위상과 스펙트럼 이동 함수를 잇는 형태로 이 관계를 정리한다.
 
-Laplace 작용소처럼 자취류가 아닌 대상에는 제타 정규화 행렬식 $\exp(-\zeta'(0))$ 을 쓴다. 정의는 Fredholm 행렬식과 다르지만 발산하는 고유값 곱에 유한한 값을 지정한다는 점에서 ${\det}_p$ 정규화와 같은 계열이다. 해석적 비틀림과 곡면 위의 행렬식 공식이 이 틀에 속한다.[^1]
+Laplace 작용소처럼 자취류가 아닌 대상에는 제타 정규화 행렬식 $\exp(-\zeta'(0))$ 을 쓴다. 정의는 Fredholm 행렬식과 다르지만 발산하는 고유값 곱에 유한한 값을 지정한다는 점에서 ${\det}\_p$ 정규화와 같은 계열이다. 해석적 비틀림과 곡면 위의 행렬식 공식이 이 틀에 속한다.[^1]
 
 [^1]: Barry Simon, *Trace Ideals and Their Applications*, 2nd ed., Chapters 3 and 5. 자취류 아이디얼, Lidskii 정리, Fredholm 행렬식의 정의와 곱셈성, 정규화 행렬식 det_p. 수치 계산은 Folkmar Bornemann, *On the numerical evaluation of Fredholm determinants*, Mathematics of Computation 79 (2010), §§1–3.
 

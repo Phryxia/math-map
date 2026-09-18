@@ -5,7 +5,7 @@
 Martingale 은 "공정한 게임"의 수학적 모형이다. 시간에 따라 정보가 쌓이는 상황에서, 지금까지 관측한 모든 것을 알고 있어도 다음 시각의 값에 대한 최선의 예측이 현재 값과 같은 확률과정을 말한다.
 
 $$
-E[X_{n+1} \mid \mathcal{F}_n] \thickspace=\thickspace X_n .
+E[X_{n+1} \mid \mathcal{F}\_n] \thickspace=\thickspace X_n .
 $$
 
 이 한 줄이 주는 힘은 놀라울 정도로 크다. 겉보기에 아무 구조도 없어 보이지만, 이 조건만으로 (1) 기댓값이 시간에 대해 불변이고, (2) 적절한 조건에서 임의의 **정지시간**까지 그 불변성이 유지되며(선택적 정지 정리), (3) 최댓값의 꼬리가 제어되고(Doob 부등식), (4) 유계성 가정 아래 거의 확실하게 수렴한다(martingale 수렴 정리). 조건은 [조건부 기댓값](conditional-expectation.md)의 언어로만 쓸 수 있으므로 martingale 이론은 측도론적 조건부 기댓값 위에 바로 얹힌다.
@@ -19,7 +19,7 @@ $$
 두 번째 직관은 "전략으로는 공정함을 이길 수 없다"는 것이다. 매 시각 얼마를 걸지를 과거 정보만 보고 정하는 전략 $H_n$ 을 세워도, 결과 과정
 
 $$
-(H \cdot X)_n \thickspace=\thickspace \sum_{k=1}^{n} H_k (X_k - X_{k-1})
+(H \cdot X)\_n \thickspace=\thickspace \sum_{k=1}^{n} H_k (X_k - X_{k-1})
 $$
 
 은 다시 martingale 이다. 판돈을 언제 그만둘지 정하는 것(정지시간) 역시 일종의 전략이므로, 유계성 조건만 갖추면 기대 이득은 여전히 0 이다. 도박 시스템의 불가능성 정리라 할 만하며, 이것이 선택적 정지 정리의 내용이다.
@@ -51,9 +51,9 @@ graph TD
 adapted 이고 모든 $n$ 에 대해 $E\lvert X_n \rvert \lt\infty$ 인 과정 $(X_n)$ 이 다음을 만족하면 각각 martingale, submartingale, supermartingale 이라 한다.
 
 $$
-E[X_{n+1} \mid \mathcal{F}_n] = X_n, \qquad
-E[X_{n+1} \mid \mathcal{F}_n] \ge X_n, \qquad
-E[X_{n+1} \mid \mathcal{F}_n] \le X_n .
+E[X_{n+1} \mid \mathcal{F}\_n] = X_n, \qquad
+E[X_{n+1} \mid \mathcal{F}\_n] \ge X_n, \qquad
+E[X_{n+1} \mid \mathcal{F}\_n] \le X_n .
 $$
 
 탑 성질에 의해 $m \le n$ 이면 $E[X_n \mid \mathcal F_m] = X_m$ 이 따라 나오고(부등식 버전도 동일), 특히 martingale 의 기댓값은 상수다.
@@ -138,7 +138,7 @@ $$
 (b - a)\thinspace E\big[U_n[a,b]\big] \thickspace\le\thickspace E\big[(X_n - a)^-\big].
 $$
 
-*증명 스케치.* $a$ 아래로 내려가면 1 단위를 사고 $b$ 위로 올라가면 파는 예측 가능 전략 $H$ 를 만든다. 완성된 upcrossing 하나마다 최소 $b - a$ 의 이익이 나므로 $(H \cdot X)_n \ge (b-a) U_n[a,b] - (X_n - a)^-$ 이고, supermartingale 의 비음 전략 변환은 다시 supermartingale 이므로 $E[(H \cdot X)_n] \le 0$ 이다.
+*증명 스케치.* $a$ 아래로 내려가면 1 단위를 사고 $b$ 위로 올라가면 파는 예측 가능 전략 $H$ 를 만든다. 완성된 upcrossing 하나마다 최소 $b - a$ 의 이익이 나므로 $(H \cdot X)\_n \ge (b-a) U_n[a,b] - (X_n - a)^-$ 이고, supermartingale 의 비음 전략 변환은 다시 supermartingale 이므로 $E[(H \cdot X)\_n] \le 0$ 이다.
 
 **Martingale 수렴 정리.** $(X_n)$ 이 submartingale 이고 $\sup_n E[X_n^+] \lt\infty$ 이면 $X_n \to X_\infty$ 가 거의 확실하게 성립하고 $E\lvert X_\infty \rvert \lt\infty$ 이다.
 

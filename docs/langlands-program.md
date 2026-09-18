@@ -21,7 +21,7 @@ $n=1$ 이 유체론이다. $n=2$ 이고 $K=\mathbb Q$ 인 경우의 자기동형
 표현 $\rho$ 를 하나 고정하면 소수마다 행렬 $\rho(\mathrm{Frob}\_{\mathfrak p})$ 가 켤레를 빼고 정해지고, 그 특성다항식은 완전히 정해진다. 이 데이터를 Euler 곱으로 묶은 것이 Artin $L$ 함수다.
 
 $$
-L(s,\rho)=\prod_{\mathfrak p}\det\big(1-\rho(\mathrm{Frob}_{\mathfrak p})\thinspace N\mathfrak p^{-s}\big)^{-1}
+L(s,\rho)=\prod_{\mathfrak p}\det\big(1-\rho(\mathrm{Frob}\_{\mathfrak p})\thinspace N\mathfrak p^{-s}\big)^{-1}
 $$
 
 $n=1$ 이면 Hecke $L$ 함수이고 $K=\mathbb Q$ 로 내려오면 [Dirichlet L 함수](dirichlet-l-functions.md)다.
@@ -62,7 +62,7 @@ graph LR
 $G_K=\mathrm{Gal}(\bar K/K)$ 는 무한 Galois 군이고 자연스러운 profinite 위상을 갖는다. 연속 준동형
 
 $$
-\rho\colon G_K\to\mathrm{GL}_n(E)
+\rho\colon G_K\to\mathrm{GL}\_n(E)
 $$
 
 를 **Galois 표현**이라 한다. 계수체 $E$ 의 선택이 표현의 성격을 정한다.
@@ -77,7 +77,7 @@ $$
 $\mathbb A_K$ 를 $K$ 의 아델 환이라 하자. $\mathrm{GL}\_n(K)$ 는 $\mathrm{GL}\_n(\mathbb A_K)$ 의 이산 부분군이고, 그 몫 위의 함수공간
 
 $$
-L^2\big(\mathrm{GL}_n(K)\backslash\mathrm{GL}_n(\mathbb A_K)\big)
+L^2\big(\mathrm{GL}\_n(K)\backslash\mathrm{GL}\_n(\mathbb A_K)\big)
 $$
 
 에 $\mathrm{GL}\_n(\mathbb A_K)$ 가 오른쪽 평행이동으로 작용한다. 이 작용의 기약 성분을 **자기동형 표현**이라 한다. 특히 상수항이 사라지는 부분공간에서 나오는 것을 첨점 표현이라 하고, 이쪽이 Galois 표현에 대응한다.

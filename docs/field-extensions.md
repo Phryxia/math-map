@@ -110,7 +110,7 @@ $\mathbb{Q}$ 의 유한 확대를 수체(number field)라 하고 정수론의 �
 
 ## 다음 단계
 
-확대의 자기동형(automorphism)을 모으면 군이 되고, 중간체와 부분군이 서로 대응한다. 이것이 [Galois 이론](galois-theory.md)이며, 분해체와 [군 작용](group-actions.md)이 그 언어다. 표수 $p$ 에서는 $\mathbb{F}_p$ 의 유한 확대만이 유한체이므로 [유한체](finite-fields.md)가 확대 이론의 가장 완결된 사례가 된다.
+확대의 자기동형(automorphism)을 모으면 군이 되고, 중간체와 부분군이 서로 대응한다. 이것이 [Galois 이론](galois-theory.md)이며, 분해체와 [군 작용](group-actions.md)이 그 언어다. 표수 $p$ 에서는 $\mathbb{F}\_p$ 의 유한 확대만이 유한체이므로 [유한체](finite-fields.md)가 확대 이론의 가장 완결된 사례가 된다.
 
 [^1]: ProofWiki, "Degree of Field Extensions is Multiplicative" — 탑 법칙의 진술과 기저 곱 논증. https://proofwiki.org/wiki/Degree_of_Field_Extensions_is_Multiplicative
 [^2]: A. W. Knapp, Basic Algebra, Chapter IX (Fields and Galois Theory) — 대수적 원소, 최소다항식, 분해체의 존재와 유일성. https://www.math.stonybrook.edu/~aknapp/books/basic-alg/b-alg-Ch9-sample.pdf

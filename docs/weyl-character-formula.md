@@ -15,7 +15,7 @@ $$
 표현 $V_\lambda$ 를 무게공간으로 쪼갠 정보를 담은 형식합이 지표이고, **Weyl 지표 공식**이 그것을 닫힌 꼴로 준다.
 
 $$
-\mathrm{ch}V_\lambda=\sum_{\mu}\dim(V_\lambda)_\mu\ e^\mu
+\mathrm{ch}V_\lambda=\sum_{\mu}\dim(V_\lambda)\_\mu\ e^\mu
 =\frac{\displaystyle\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}{\displaystyle\sum_{w\in W}(-1)^{\ell(w)}e^{w(\rho)}}
 $$
 
@@ -25,9 +25,9 @@ $$
 
 # 직관
 
-## $\mathfrak{sl}_2$ 의 경우
+## $\mathfrak{sl}\_2$ 의 경우
 
-$\mathfrak{sl}_2$ 의 기약표현은 각 차원마다 하나씩 있고, $n+1$ 차원 표현 $V_n$ 의 무게는 $n,n-2,\dots,-n$ 이 하나씩이다. 형식지표를 $e^1=x$ 로 쓰면 다음이 된다.
+$\mathfrak{sl}\_2$ 의 기약표현은 각 차원마다 하나씩 있고, $n+1$ 차원 표현 $V_n$ 의 무게는 $n,n-2,\dots,-n$ 이 하나씩이다. 형식지표를 $e^1=x$ 로 쓰면 다음이 된다.
 
 $$
 \mathrm{ch}V_n=x^n+x^{n-2}+\cdots+x^{-n}=\frac{x^{n+1}-x^{-(n+1)}}{x-x^{-1}}
@@ -52,7 +52,7 @@ $$
 두 표현이 같다는 것이 **Weyl 분모 항등식**이다. 곱 쪽에서 각 인수의 최고차항 $e^{\alpha/2}$ 를 모으면 $e^\rho$ 가 되고, 여기서 $\rho=\frac12\sum_{\alpha\gt 0}\alpha$ 가 나온다.
 
 $$
-\underbrace{\mathrm{ch}V_\lambda}_{\text{대칭}}\cdot\underbrace{\Delta}_{\text{반대칭}}=\underbrace{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}_{\text{반대칭}}
+\underbrace{\mathrm{ch}V_\lambda}\_{\text{대칭}}\cdot\underbrace{\Delta}\_{\text{반대칭}}=\underbrace{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}\_{\text{반대칭}}
 $$
 
 $\lambda$ 가 지배적이면 $\lambda+\rho$ 는 엄격히 지배적이라 $W$ 궤도가 자유롭고, 반대칭 함수 공간에서 궤도 하나가 기저 하나를 준다. $\rho$ 를 더하는 것은 고정점이 있던 무게를 내부로 밀어 궤도를 자유롭게 만드는 조작이다.
@@ -99,7 +99,7 @@ $$
 Cartan 부분대수 $\mathfrak h$ 의 표현 $V$ 에 대한 동시 고유공간 분해가 무게공간 분해다.
 
 $$
-V=\bigoplus_{\mu\in\mathfrak h^*}V_\mu,\qquad V_\mu=\lbrace v\in V:h\cdot v=\mu(h)v\ \ \forall h\in\mathfrak h\rbrace
+V=\bigoplus_{\mu\in\mathfrak h^\ast}V_\mu,\qquad V_\mu=\lbrace v\in V:h\cdot v=\mu(h)v\ \ \forall h\in\mathfrak h\rbrace
 $$
 
 $V_\mu\neq0$ 인 $\mu$ 가 **무게**이고 $\dim V_\mu$ 가 그 **중복도**다. 유한차원 표현의 무게는 모두 무게격자 $P$ 에 들어간다.
@@ -118,7 +118,7 @@ $$
 
 **최고무게 분류 정리.** $\lambda\mapsto V_\lambda$ 는 $P^+$ 에서 유한차원 기약표현의 동형류 전체로 가는 전단사다.
 
-각 단순근의 $\mathfrak{sl}_2$ 부분대수로 제한하면 정수성이 나오고, 음이 아니어야 한다는 조건은 최고무게 벡터가 무게열의 위쪽 끝이라는 뜻이다.
+각 단순근의 $\mathfrak{sl}\_2$ 부분대수로 제한하면 정수성이 나오고, 음이 아니어야 한다는 조건은 최고무게 벡터가 무게열의 위쪽 끝이라는 뜻이다.
 
 ## 지표
 
@@ -159,18 +159,18 @@ $$
 **Kostant 중복도 공식.** 무게별 중복도는 Verma 지표의 분모를 급수로 펼쳐 얻는다. $\mathcal P(\nu)$ 를 $\nu$ 를 양근들의 음이 아닌 정수결합으로 쓰는 방법의 수(**Kostant 분할 함수**)라 하면 다음과 같다.
 
 $$
-\dim(V_\lambda)_\mu=\sum_{w\in W}(-1)^{\ell(w)}\ \mathcal P\big(w(\lambda+\rho)-(\mu+\rho)\big)
+\dim(V_\lambda)\_\mu=\sum_{w\in W}(-1)^{\ell(w)}\ \mathcal P\big(w(\lambda+\rho)-(\mu+\rho)\big)
 $$
 
 $|W|$ 개의 항이 크게 상쇄되어 손계산에는 불리하다. 실제 계산에는 재귀식인 Freudenthal 공식을 쓴다.
 
 $$
-\big((\lambda+\rho,\lambda+\rho)-(\mu+\rho,\mu+\rho)\big)\dim(V_\lambda)_\mu=2\sum_{\alpha\in\Phi^+}\sum_{k\ge1}\dim(V_\lambda)_{\mu+k\alpha}\thinspace(\mu+k\alpha,\alpha)
+\big((\lambda+\rho,\lambda+\rho)-(\mu+\rho,\mu+\rho)\big)\dim(V_\lambda)\_\mu=2\sum_{\alpha\in\Phi^+}\sum_{k\ge1}\dim(V_\lambda)\_{\mu+k\alpha}\thinspace(\mu+k\alpha,\alpha)
 $$
 
 ## 특수화
 
-**Schur 다항식.** $\mathfrak{gl}_n$ 에서 $e^{\varepsilon_i}=x_i$ 로 두면 $W=S_n$ 이고 분모가 Vandermonde 행렬식이 되어 지표 공식이 Schur 다항식의 bialternant 공식이 된다.
+**Schur 다항식.** $\mathfrak{gl}\_n$ 에서 $e^{\varepsilon_i}=x_i$ 로 두면 $W=S_n$ 이고 분모가 Vandermonde 행렬식이 되어 지표 공식이 Schur 다항식의 bialternant 공식이 된다.
 
 $$
 s_\lambda(x_1,\dots,x_n)=\frac{\det\negthinspace\big(x_i^{\lambda_j+n-j}\big)}{\det\negthinspace\big(x_i^{n-j}\big)}
@@ -194,7 +194,7 @@ $A_1$ 에서는 $x-x^{-1}$ 이고, 같은 항등식을 아핀 근계로 확장�
 |---|---|---|
 | 유한차원 복소 반단순 $\mathfrak g$ | 성립 | 성립 |
 | 콤팩트 연결 Lie 군 | 성립 | 성립 |
-| 비콤팩트 실 형식($\mathrm{SL}_2(\mathbb R)$ 등) | 유한차원 유니터리는 자명한 것뿐 | Harish-Chandra 지표(초함수)로 대체 |
+| 비콤팩트 실 형식($\mathrm{SL}\_2(\mathbb R)$ 등) | 유한차원 유니터리는 자명한 것뿐 | Harish-Chandra 지표(초함수)로 대체 |
 | Kac–Moody 대수, 최고무게 적분가능 | 성립 | Weyl–Kac 공식, $W$ 무한군 |
 | 표수 $p$ 인 체 | 기약표현은 여전히 $P^+$ 로 색인 | 실패. Lusztig 추측 영역 |
 

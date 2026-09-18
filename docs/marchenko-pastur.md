@@ -55,7 +55,7 @@ $$
 받침의 끝 $\lambda_+$ 근처에서 밀도가 $\sqrt{\lambda_+ - x}$ 로 사라진다. 이 제곱근 소멸이 [Tracy–Widom 분포](tracy-widom.md)가 나타나는 가장자리이고, 최대 고윳값은
 
 $$
-\frac{\lambda_{\max} - \lambda_+}{\sigma_{p,n}} \thickspace\Longrightarrow\thickspace \text{TW}_\beta,
+\frac{\lambda_{\max} - \lambda_+}{\sigma_{p,n}} \thickspace\Longrightarrow\thickspace \text{TW}\_\beta,
 \qquad
 \sigma_{p,n} = \frac{(1+\sqrt\gamma)^{4/3}}{\gamma^{1/6}}\thinspace n^{-2/3}
 $$

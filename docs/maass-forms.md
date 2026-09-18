@@ -2,10 +2,10 @@
 
 # 개요
 
-[Eisenstein 급수](eisenstein-series.md) 문서에서 $L^2(\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H)$ 가 두 조각으로 갈라지는 것을 보았다. 연속 스펙트럼은 실해석적 Eisenstein 급수 $E(z,\tfrac12+ir)$ 가 전부 만들어 내고, $\zeta$ 함수로 완전히 기술된다. 남는 것이 **이산 스펙트럼**이고, 그것을 이루는 함수가 **Maass 형식**이다.
+[Eisenstein 급수](eisenstein-series.md) 문서에서 $L^2(\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H)$ 가 두 조각으로 갈라지는 것을 보았다. 연속 스펙트럼은 실해석적 Eisenstein 급수 $E(z,\tfrac12+ir)$ 가 전부 만들어 내고, $\zeta$ 함수로 완전히 기술된다. 남는 것이 **이산 스펙트럼**이고, 그것을 이루는 함수가 **Maass 형식**이다.
 
 $$
-L^2(\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H)=\mathbb C\oplus\underbrace{\bigoplus_j\mathbb C\thinspace u_j}_{\text{Maass 첨점형식}}\oplus\underbrace{\int_{(1/2)}E(z,s)\thinspace ds}_{\text{Eisenstein}}
+L^2(\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H)=\mathbb C\oplus\underbrace{\bigoplus_j\mathbb C\thinspace u_j}\_{\text{Maass 첨점형식}}\oplus\underbrace{\int_{(1/2)}E(z,s)\thinspace ds}\_{\text{Eisenstein}}
 $$
 
 Maass 형식은 [모듈러 형식](modular-forms.md)과 나란한 자리에 있으면서 성격이 정반대다. 정칙 모듈러 형식은 $\mathbb H$ 위의 정칙함수이고 $q$ 전개가 있어 손에 잡힌다. Maass 형식은 정칙이 아니고, 대신 쌍곡 Laplace 작용소의 고유함수다.
@@ -15,7 +15,7 @@ $$
 \Delta u=\lambda u,\qquad \lambda=\tfrac14+r^2
 $$
 
-정칙 첨점형식은 명시적으로 구성되지만 Maass 첨점형식에는 그런 구성이 없다. $\Delta$ 와 무게 $12$ 를 알면 $\Delta(z)=q\prod(1-q^n)^{24}$ 를 쓸 수 있지만, $\mathrm{SL}_2(\mathbb Z)$ 의 첫 Maass 고윳값 $r_1=9.533695\dots$ 는 수치 계산으로 높은 정밀도까지 구해졌고, 그 값이 만족하는 대수적 관계는 알려진 것이 없다[^5].
+정칙 첨점형식은 명시적으로 구성되지만 Maass 첨점형식에는 그런 구성이 없다. $\Delta$ 와 무게 $12$ 를 알면 $\Delta(z)=q\prod(1-q^n)^{24}$ 를 쓸 수 있지만, $\mathrm{SL}\_2(\mathbb Z)$ 의 첫 Maass 고윳값 $r_1=9.533695\dots$ 는 수치 계산으로 높은 정밀도까지 구해졌고, 그 값이 만족하는 대수적 관계는 알려진 것이 없다[^5].
 
 그런데도 이것들이 존재한다는 것은 안다. [Selberg 대각합 공식](selberg-trace-formula.md)이 개별 고윳값을 하나도 주지 않으면서 그 개수를 세어 주기 때문이다. 존재는 알고 정체는 모르는 대상이고, $L$ 함수와 Langlands 강령에서 정칙 형식과 정확히 같은 자격으로 등장한다.
 
@@ -23,7 +23,7 @@ $$
 
 ## 표현론에서 본 정칙성
 
-$\mathrm{SL}_2(\mathbb R)$ 의 작용에서 보면 이유가 분명해진다. 자기동형 형식은 $L^2(\Gamma\backslash\mathrm{SL}_2(\mathbb R))$ 를 $\mathrm{SL}_2(\mathbb R)$ 의 기약 표현으로 분해할 때 나오는 조각들이다. 그런데 $\mathrm{SL}_2(\mathbb R)$ 의 유니터리 쌍대에는 서로 다른 계열이 있다.
+$\mathrm{SL}\_2(\mathbb R)$ 의 작용에서 보면 이유가 분명해진다. 자기동형 형식은 $L^2(\Gamma\backslash\mathrm{SL}\_2(\mathbb R))$ 를 $\mathrm{SL}\_2(\mathbb R)$ 의 기약 표현으로 분해할 때 나오는 조각들이다. 그런데 $\mathrm{SL}\_2(\mathbb R)$ 의 유니터리 쌍대에는 서로 다른 계열이 있다.
 
 | 표현 계열 | 대응하는 자기동형 형식 |
 |---|---|
@@ -72,13 +72,13 @@ $$
 
 ## Maass 형식
 
-$\Gamma\subset\mathrm{SL}_2(\mathbb Z)$ 를 유한 지표 부분군이라 하자. 함수 $u:\mathbb H\to\mathbb C$ 가 다음 셋을 만족하면 **Maass 형식**이다.
+$\Gamma\subset\mathrm{SL}\_2(\mathbb Z)$ 를 유한 지표 부분군이라 하자. 함수 $u:\mathbb H\to\mathbb C$ 가 다음 셋을 만족하면 **Maass 형식**이다.
 
 1. $\Gamma$ 불변: 모든 $\gamma\in\Gamma$ 에 대해 $u(\gamma z)=u(z)$ 다.
 2. Laplace 고유함수: $\Delta=-y^2(\partial_x^2+\partial_y^2)$ 에 대해 $\Delta u=\lambda u$ 다.
 3. 다항 증가.
 
-첨점에서 상수항까지 사라지면 **첨점형식**이라 하고, 이때 $u\in L^2(\Gamma\backslash\mathbb H)$ 다. $\Delta$ 가 쌍곡 계량에 대한 Laplace–Beltrami 작용소이고 $\mathrm{SL}_2(\mathbb R)$ 작용과 가환이라는 점이 1 과 2 를 양립시킨다.
+첨점에서 상수항까지 사라지면 **첨점형식**이라 하고, 이때 $u\in L^2(\Gamma\backslash\mathbb H)$ 다. $\Delta$ 가 쌍곡 계량에 대한 Laplace–Beltrami 작용소이고 $\mathrm{SL}\_2(\mathbb R)$ 작용과 가환이라는 점이 1 과 2 를 양립시킨다.
 
 ## Fourier 전개
 
@@ -120,7 +120,7 @@ $\epsilon$ 은 짝이면 0, 홀이면 1 이다. **감마 인자가 무한 자리
 
 개별 고윳값을 모르는 대신 개수는 안다. [Selberg 대각합 공식](selberg-trace-formula.md)에 적당한 시험함수를 넣으면 나온다.
 
-> **Weyl 법칙.** $\mathrm{SL}_2(\mathbb Z)$ 에 대해
+> **Weyl 법칙.** $\mathrm{SL}\_2(\mathbb Z)$ 에 대해
 > $$
 > \char35{}\lbrace j:r_j\le T\rbrace=\frac{\mathrm{vol}(\Gamma\backslash\mathbb H)}{4\pi}T^2-\frac{2}\pi T\log T+O(T)
 > $$
@@ -133,7 +133,7 @@ $\mathrm{vol}=\pi/3$ 이므로 선행항이 $T^2/12$ 다. 곧 Maass 형식이 **
 
 ## 예외 고윳값
 
-$\mathrm{SL}_2(\mathbb Z)$ 자체에는 $\lambda\lt\tfrac14$ 인 첨점형식이 없다(수치적으로도 확인되었고, 첫 고윳값이 $\tfrac14+9.53^2\approx91.14$ 로 한참 위다). 문제는 준위 $N$ 이 커질 때 균등하게 그런가이다. 응용에서 필요한 것은 보통 $N\to\infty$ 에서의 균등한 하한이고, 그것이 Selberg 추측의 실질이다.
+$\mathrm{SL}\_2(\mathbb Z)$ 자체에는 $\lambda\lt\tfrac14$ 인 첨점형식이 없다(수치적으로도 확인되었고, 첫 고윳값이 $\tfrac14+9.53^2\approx91.14$ 로 한참 위다). 문제는 준위 $N$ 이 커질 때 균등하게 그런가이다. 응용에서 필요한 것은 보통 $N\to\infty$ 에서의 균등한 하한이고, 그것이 Selberg 추측의 실질이다.
 
 | 결과 | 하한 |
 |---|---|
@@ -154,13 +154,13 @@ Maass 형식은 그 자체로 목적이면서 동시에 도구다. 산술 함수
 
 $\Gamma\backslash\mathbb H$ 는 음곡률 곡면이므로 측지선 흐름이 혼돈적이다. 그 위의 Laplace 고유함수가 $\lambda\to\infty$ 에서 어떻게 분포하는지가 양자 혼돈의 표준 물음이고, Maass 형식이 그 물음의 산술적 사례다.
 
-> **양자 유일 에르고딕성 (Lindenstrauss 2006, Soundararajan–Holowinsky 2010).** $\mathrm{SL}_2(\mathbb Z)$ 의 Hecke–Maass 형식에 대해 $|u_j(z)|^2d\mu$ 가 $\lambda_j\to\infty$ 에서 균등측도로 약수렴한다.
+> **양자 유일 에르고딕성 (Lindenstrauss 2006, Soundararajan–Holowinsky 2010).** $\mathrm{SL}\_2(\mathbb Z)$ 의 Hecke–Maass 형식에 대해 $|u_j(z)|^2d\mu$ 가 $\lambda_j\to\infty$ 에서 균등측도로 약수렴한다.
 
 곧 고유함수가 곡면 위에 고르게 퍼지고, 어느 곳에도 몰리지 않는다. Lindenstrauss 는 에르고딕 이론(측도 강직성)으로, Soundararajan–Holowinsky 는 $L$ 함수의 부분볼록 경계로 증명했다. 두 증명 모두 Hecke 대칭을 쓴다. 산술적이지 않은 일반 음곡률 곡면에 대한 대응 진술은 Rudnick–Sarnak 의 추측으로 남아 있다[^3].
 
 ## Artin 추측과의 연결
 
-2 차원 Galois 표현 $\rho:\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\to\mathrm{GL}_2(\mathbb C)$ 를 자기동형 형식에 대응시킬 때, $\rho(c)$ 의 행렬식으로 두 경우가 갈린다.
+2 차원 Galois 표현 $\rho:\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\mathbb C)$ 를 자기동형 형식에 대응시킬 때, $\rho(c)$ 의 행렬식으로 두 경우가 갈린다.
 
 - **홀수** 곧 $\det\rho(c)=-1$ 인 경우는 무게 1 의 정칙 첨점형식에 대응한다. Khare–Wintenberger 의 Serre 추측 증명으로 해결되었다.
 - **짝수** 곧 $\det\rho(c)=+1$ 인 경우는 **고윳값 $\lambda=\tfrac14$ 인 Maass 형식**에 대응한다.

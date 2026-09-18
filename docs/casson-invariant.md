@@ -50,14 +50,14 @@ $$
 
 > **정의 (Casson 1985).** $M$ 을 정수 호몰로지 3 구면, $M=H_1\cup_\Sigma H_2$ 를 종수 $g$ Heegaard 분해라 하자. $R^\ast(\cdot)$ 을 불가약 $\mathrm{SU}(2)$ 표현공간이라 할 때
 > $$
-> \lambda(M)=\frac{(-1)^g}2\big\langle R^*(H_1),R^*(H_2)\big\rangle_{R^*(\Sigma)}
+> \lambda(M)=\frac{(-1)^g}2\big\langle R^\ast(H_1),R^\ast(H_2)\big\rangle_{R^\ast(\Sigma)}
 > $$
 > 여기 $\langle\cdot,\cdot\rangle$ 은 대수적 교차수다.
 
 $R^\ast(\Sigma)$ 가 심플렉틱 다양체이고 $R^\ast(H_i)$ 가 그 안의 Lagrangian 부분다양체이므로 이 정의가 Floer 이론으로 이어진다. Casson 불변량은 순간자 Floer 호몰로지의 Euler 지표다.
 
 $$
-\lambda(M)=\tfrac12\chi\big(HF_*^{\text{inst}}(M)\big)
+\lambda(M)=\tfrac12\chi\big(HF_\ast^{\text{inst}}(M)\big)
 $$
 
 세는 수가 범주화된 대상의 Euler 지표가 되는 구조는 Jones 다항식과 Khovanov 호몰로지의 관계와 같다.

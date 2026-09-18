@@ -52,7 +52,7 @@ von Staudt–Clausen 이 분모를 치우고 나면 $B_n/n$ 을 $p$ 진수로 �
 
 $$
 m\equiv n\pmod{p-1},\quad (p-1)\nmid m
-\ \Longrightarrow\
+\thinspace\Longrightarrow\thinspace
 \frac{B_m}{m}\equiv\frac{B_n}{n}\pmod p
 $$
 

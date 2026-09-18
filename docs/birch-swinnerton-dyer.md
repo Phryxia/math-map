@@ -5,7 +5,7 @@
 Birch–Swinnerton-Dyer 추측은 타원곡선 $E/\mathbb Q$ 의 $L$ 함수가 $s=1$ 에서 소멸하는 차수가 Mordell–Weil 군의 계수와 같다고 주장한다.
 
 $$
-\mathrm{ord}_{s=1}L(E,s)\thickspace=\thickspace\mathrm{rank}\thinspace E(\mathbb Q)
+\mathrm{ord}\_{s=1}L(E,s)\thickspace=\thickspace\mathrm{rank}\thinspace E(\mathbb Q)
 $$
 
 [Selmer 군](selmer-groups.md)을 통한 하강은 순위의 상한만 주고, 그 상한의 정확성이 $\text{Ш}$ 에 막힌다. Birch 와 Swinnerton-Dyer 는 1960 년대 초 EDSAC 으로 각 소수에서 환원한 점의 개수 $N_p=\char35{}E(\mathbb F_p)$ 를 모아
@@ -55,7 +55,7 @@ $w=\pm1$ 이 함수방정식의 부호다. $w=-1$ 이면 $\Lambda(1)=-\Lambda(1)
 ## 약한 BSD
 
 $$
-\mathrm{ord}_{s=1}L(E,s)=r=\mathrm{rank}\thinspace E(\mathbb Q)
+\mathrm{ord}\_{s=1}L(E,s)=r=\mathrm{rank}\thinspace E(\mathbb Q)
 $$
 
 좌변이 해석적 순위, 우변이 대수적 순위다.
@@ -64,16 +64,16 @@ $$
 
 $$
 \lim_{s\to1}\frac{L(E,s)}{(s-1)^r}
-=\frac{\Omega_E\cdot\mathrm{Reg}_E\cdot\char35{}\text{Ш}(E/\mathbb Q)\cdot\prod_pc_p}{\big(\char35{}E(\mathbb Q)_{\mathrm{tors}}\big)^2}
+=\frac{\Omega_E\cdot\mathrm{Reg}\_E\cdot\char35{}\text{Ш}(E/\mathbb Q)\cdot\prod_pc_p}{\big(\char35{}E(\mathbb Q)\_{\mathrm{tors}}\big)^2}
 $$
 
 | 인자 | 뜻 |
 |---|---|
 | $\Omega_E$ | 실주기. $\int_{E(\mathbb R)}\vert\omega\vert$ |
-| $\mathrm{Reg}_E$ | 조절자. 생성원의 정준 높이 쌍 행렬식 |
+| $\mathrm{Reg}\_E$ | 조절자. 생성원의 정준 높이 쌍 행렬식 |
 | $\char35{}\text{Ш}$ | Tate–Shafarevich 군의 위수 (유한하다고 가정) |
 | $c_p$ | Tamagawa 수. 나쁜 환원 자리의 국소 지수 |
-| $E(\mathbb Q)_{\mathrm{tors}}$ | 비틀림 부분군 |
+| $E(\mathbb Q)\_{\mathrm{tors}}$ | 비틀림 부분군 |
 
 $\text{Ш}$ 의 유한성이 증명되지 않았으므로 $\char35{}\text{Ш}$ 만 유효한 계산법이 없고, 나머지 양은 모두 유효하게 구해진다[^1].
 
@@ -82,10 +82,10 @@ $\text{Ш}$ 의 유한성이 증명되지 않았으므로 $\char35{}\text{Ш}$ �
 Néron–Tate 높이 $\hat h\colon E(\mathbb Q)\to\mathbb R_{\ge0}$ 는 $\hat h(mP)=m^2\hat h(P)$ 를 만족하는 이차형식이고, 쌍 $\langle P,Q\rangle=\tfrac12(\hat h(P+Q)-\hat h(P)-\hat h(Q))$ 가 자유 부분에서 양정치다. 생성원 $P_1,\dots,P_r$ 에 대해
 
 $$
-\mathrm{Reg}_E=\det\big(\langle P_i,P_j\rangle\big)
+\mathrm{Reg}\_E=\det\big(\langle P_i,P_j\rangle\big)
 $$
 
-가 격자의 공부피다. 순위가 $0$ 이면 빈 행렬식이라 $\mathrm{Reg}_E=1$ 이다.
+가 격자의 공부피다. 순위가 $0$ 이면 빈 행렬식이라 $\mathrm{Reg}\_E=1$ 이다.
 
 # 성질
 
@@ -118,7 +118,7 @@ Heegner 점은 하나뿐이다. $L'(E,1)$ 하나에 점 하나가 대응하므�
 순위 0 곡선에서는 강한 BSD 를 역으로 쓴다. $L(E,1)$ 을 수치로 계산하고 $\Omega_E,c_p,\char35{}E_{\mathrm{tors}}$ 를 구하면
 
 $$
-\char35{}\text{Ш}\ \stackrel?=\ \frac{L(E,1)\cdot\char35{}E(\mathbb Q)_{\mathrm{tors}}^2}{\Omega_E\prod_pc_p}
+\char35{}\text{Ш}\ \stackrel?=\ \frac{L(E,1)\cdot\char35{}E(\mathbb Q)\_{\mathrm{tors}}^2}{\Omega_E\prod_pc_p}
 $$
 
 가 예측값을 준다. [Cassels–Tate 쌍](selmer-groups.md)이 이 값이 완전제곱수임을 보장하므로 공식의 정합성 검사가 된다. $\char35{}\text{Ш}=4,9,16,\dots$ 인 곡선들이 이렇게 발견되었고 하강으로 확인된 경우도 많다.

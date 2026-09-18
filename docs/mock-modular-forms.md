@@ -51,7 +51,7 @@ $h$ 는 $\widehat h$ 의 정칙 부분이고 $g$ 는 그 그림자다. 보통 �
 무게 $k$ 첨점형식 $g$ 의 **비정칙 Eichler 적분**은 다음이다.
 
 $$
-g^*(\tau)=\left(\frac{i}{2\pi}\right)^{k-1}\int_{-\bar\tau}^{i\infty}\frac{\overline{g(-\bar z)}}{(z+\tau)^{k}}\thinspace dz
+g^\ast(\tau)=\left(\frac{i}{2\pi}\right)^{k-1}\int_{-\bar\tau}^{i\infty}\frac{\overline{g(-\bar z)}}{(z+\tau)^{k}}\thinspace dz
 $$
 
 정칙 Eichler 적분은 하한을 $\tau$ 로 두고 주기 다항식만큼 모듈러성이 깨지는데, 하한을 켤레로 바꾸면 그 깨짐이 사라지고 대신 정칙성이 깨진다.
@@ -59,7 +59,7 @@ $$
 $g=\sum b_n q^n$ 을 대입하면 보정항이 불완전 감마 함수의 급수가 된다. 무게 $1/2$ mock 에 대응하는 무게 $3/2$ shadow $g=\sum_{n\ge 0} b_n q^{n}$ 에서는 다음 꼴이다.
 
 $$
-g^*(\tau)=\sum_{n\gt 0}\overline{b_n}\thinspace n^{-1/2}\thinspace\Gamma\negthinspace\left(-\tfrac12,4\pi n y\right)q^{-n}
+g^\ast(\tau)=\sum_{n\gt 0}\overline{b_n}\thinspace n^{-1/2}\thinspace\Gamma\negthinspace\left(-\tfrac12,4\pi n y\right)q^{-n}
 $$
 
 $\Gamma(-1/2,\cdot)$ 안에 $y$ 가 있어 $\bar\tau$ 의존성이 생긴다. 계수에 $q^{-n}$ 이 붙으므로 보정항은 정칙 부분과 반대 방향으로 자라고, 둘이 합쳐져야 첨점에서의 증가가 통제된다.
@@ -72,7 +72,7 @@ $q\to\zeta$ (단위근) 로 갈 때 $\widehat h$ 는 모듈러이므로 변환�
 
 ## 조화 Maass 형식
 
-$\mathrm{SL}_2(\mathbb Z)$ 의 유한지표 부분군 $\Gamma$ 와 $k\in\frac12\mathbb Z$ 를 잡는다. 실해석 함수 $\widehat h:\mathbb H\to\mathbb C$ 가 다음 셋을 만족하면 무게 $k$ 의 **조화 Maass 형식**이다.
+$\mathrm{SL}\_2(\mathbb Z)$ 의 유한지표 부분군 $\Gamma$ 와 $k\in\frac12\mathbb Z$ 를 잡는다. 실해석 함수 $\widehat h:\mathbb H\to\mathbb C$ 가 다음 셋을 만족하면 무게 $k$ 의 **조화 Maass 형식**이다.
 
 1. 모든 $\gamma\in\Gamma$ 에 대해 무게 $k$ 변환법칙을 만족한다(반정수 무게면 theta 곱수를 포함한다).
 2. $\Delta_k\widehat h=0$ 이다.
@@ -81,7 +81,7 @@ $\mathrm{SL}_2(\mathbb Z)$ 의 유한지표 부분군 $\Gamma$ 와 $k\in\frac12\
 Fourier 전개가 두 조각으로 갈린다.
 
 $$
-\widehat h(\tau)=\underbrace{\sum_{n\gg-\infty}c^+(n)q^n}_{\text{정칙 부분 }h}+\underbrace{\sum_{n\lt 0}c^-(n)\thinspace\Gamma(1-k,4\pi|n|y)\thinspace q^{n}}_{\text{비정칙 부분}}
+\widehat h(\tau)=\underbrace{\sum_{n\gg-\infty}c^+(n)q^n}\_{\text{정칙 부분 }h}+\underbrace{\sum_{n\lt 0}c^-(n)\thinspace\Gamma(1-k,4\pi|n|y)\thinspace q^{n}}\_{\text{비정칙 부분}}
 $$
 
 정칙 부분 $h$ 가 **mock 모듈러 형식**, $g=\xi_k\widehat h$ 가 그 **shadow** 다. $g$ 는 무게 $2-k$ 의 모듈러 형식이고 위 전개의 $c^-$ 가 $g$ 의 계수를 켤레한 것으로 결정된다.
@@ -141,10 +141,10 @@ $$
 $\xi_k$ 는 조화 Maass 형식 공간에서 무게 $2-k$ 모듈러 형식 공간으로 가는 전사 선형사상이고 핵은 약정칙 모듈러 형식이다.
 
 $$
-0\to M^!_k(\Gamma)\to H_k(\Gamma)\xrightarrow{\ \xi_k\ } M_{2-k}(\Gamma)\to 0
+0\to M^!\_k(\Gamma)\to H_k(\Gamma)\xrightarrow{\ \xi_k\ } M_{2-k}(\Gamma)\to 0
 $$
 
-$M^!$ 은 첨점에서 극을 허용하는 약정칙 형식이다. shadow 를 지정해도 $M^!_k$ 만큼의 자유가 남으므로 첨점에서의 극 차수를 제한해야 유한차원 문제가 되고, 계산에서는 주요부를 고정해 유일성을 얻는다.
+$M^!$ 은 첨점에서 극을 허용하는 약정칙 형식이다. shadow 를 지정해도 $M^!\_k$ 만큼의 자유가 남으므로 첨점에서의 극 차수를 제한해야 유한차원 문제가 되고, 계산에서는 주요부를 고정해 유일성을 얻는다.
 
 ## 계수의 증가와 원법
 

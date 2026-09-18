@@ -12,7 +12,7 @@ $$
 
 VOA 는 Virasoro 대수와 affine Kac–Moody 대수의 표현을 담는 틀이다. 무한차원 [Lie 대수](lie-algebras.md)의 최고무게 가군에 곱셈 구조를 얹은 것이며, 정의 안에 Virasoro 원소 $\omega$ 가 명시적으로 들어간다.
 
-좋은 조건을 만족하는 VOA 의 기약가군 지표들은 $\mathrm{SL}_2(\mathbb Z)$ 의 유한차원 표현을 이룬다(Zhu 정리). 대수 구조 하나가 [모듈러 형식](modular-forms.md) 한 묶음을 낳으며, [괴물 달빛](monstrous-moonshine.md)에서 $j$ 가 나온 것이 그 사례다.
+좋은 조건을 만족하는 VOA 의 기약가군 지표들은 $\mathrm{SL}\_2(\mathbb Z)$ 의 유한차원 표현을 이룬다(Zhu 정리). 대수 구조 하나가 [모듈러 형식](modular-forms.md) 한 묶음을 낳으며, [괴물 달빛](monstrous-moonshine.md)에서 $j$ 가 나온 것이 그 사례다.
 
 # 직관
 
@@ -41,7 +41,7 @@ $$
 이 조건에서 Borcherds 항등식, 결합성의 약한 형태, 교환자 공식이 따라 나온다. $n\ge0$ 부분만 추리면 다음이 된다.
 
 $$
-\big[a_{(m)},b_{(n)}\big]=\sum_{k\ge0}\binom{m}{k}\big(a_{(k)}b\big)_{(m+n-k)}
+\big[a_{(m)},b_{(n)}\big]=\sum_{k\ge0}\binom{m}{k}\big(a_{(k)}b\big)\_{(m+n-k)}
 $$
 
 $k=0$ 항만 남는 경우가 Lie 대수의 괄호이고 나머지가 고차 보정이다. VOA 가 Lie 대수의 확장이라는 말의 정확한 뜻이 이 공식이다.
@@ -51,7 +51,7 @@ $k=0$ 항만 남는 경우가 Lie 대수의 괄호이고 나머지가 고차 보
 $V=\bigoplus_{n}V_n$ 의 등급은 Virasoro 원소의 $L_0$ 고유값이다. 지표를 생성함수로 쓰면 다음과 같다.
 
 $$
-\mathrm{ch}V(\tau)=\mathrm{tr}_Vq^{L_0-c/24}=q^{-c/24}\sum_n(\dim V_n)q^n
+\mathrm{ch}V(\tau)=\mathrm{tr}\_Vq^{L_0-c/24}=q^{-c/24}\sum_n(\dim V_n)q^n
 $$
 
 보정 $-c/24$ 는 원기둥 위의 Casimir 에너지에서 나오며, 이 보정이 있어야 지표가 모듈러 성질을 갖는다. [Dedekind eta](theta-functions.md)의 $q^{1/24}$ 와 같은 자리다. $c$ 가 24 의 배수이면 $q^{-c/24}$ 가 정수 거듭제곱이 되어 지표가 $q$ 의 Laurent 급수가 된다. 달빛의 $c=24$ 가 그 경우다.
@@ -64,7 +64,7 @@ $$
 
 - $V=\bigoplus_{n\in\mathbb Z}V_n$ 은 각 $V_n$ 이 유한차원이고 아래로 유한한 등급 벡터공간.
 - $Y:V\to\mathrm{End}(V)[[z,z^{-1}]]$ 곧 $Y(a,z)=\sum_n a_{(n)}z^{-n-1}$ 은 절단 조건을 만족한다.
-- $\mathbf 1\in V_0$ 은 **진공**으로 $Y(\mathbf 1,z)=\mathrm{id}$ 이고 $Y(a,z)\mathbf 1\big|_{z=0}=a$ 다.
+- $\mathbf 1\in V_0$ 은 **진공**으로 $Y(\mathbf 1,z)=\mathrm{id}$ 이고 $Y(a,z)\mathbf 1\big|\_{z=0}=a$ 다.
 - $\omega\in V_2$ 는 **Virasoro 원소**로 $Y(\omega,z)=\sum_n L_nz^{-n-2}$ 의 모드가 중심전하 $c$ 의 Virasoro 대수를 이룬다.
 
 $$
@@ -81,7 +81,7 @@ $\omega$ 를 빼면 **정점대수**다. Virasoro 원소가 등급과 모듈러�
 $V$ 가군 $M$ 은 상태-장 대응 $Y_M:V\to\mathrm{End}(M)[[z,z^{-1}]]$ 를 갖고 같은 항등식을 만족하는 공간이다. $L_0$ 의 고유값은 일반적으로 $h+\mathbb Z_{\ge0}$ 꼴이고 $h$ 가 **등각무게**다.
 
 $$
-\mathrm{ch}M(\tau)=\mathrm{tr}_Mq^{L_0-c/24}=q^{h-c/24}\sum_{n\ge0}(\dim M_{h+n})q^n
+\mathrm{ch}M(\tau)=\mathrm{tr}\_Mq^{L_0-c/24}=q^{h-c/24}\sum_{n\ge0}(\dim M_{h+n})q^n
 $$
 
 기약가군이 $V$ 자신 하나뿐이면 **홀로모픽**이라 한다.
@@ -115,10 +115,10 @@ $L$ 이 짝수 유니모듈러면 $V_L$ 이 홀로모픽이고 지표가 모듈�
 임의의 VOA 에서 $V_1$ 은 괄호 $[a,b]=a_{(0)}b$ 로 Lie 대수가 된다. 격자 VOA 에서는 다음과 같다.
 
 $$
-\dim(V_L)_1=n+\char35{}\lbrace\alpha\in L:\langle\alpha,\alpha\rangle=2\rbrace
+\dim(V_L)\_1=n+\char35{}\lbrace\alpha\in L:\langle\alpha,\alpha\rangle=2\rbrace
 $$
 
-$\mathfrak h$ 에서 오는 $n$ 차원 Cartan 부분대수와 최소벡터에서 오는 근벡터들이다. $L=E_8$ 이면 $8+240=248$ 로 $E_8$ Lie 대수가 재현된다. Leech 격자는 $\langle\alpha,\alpha\rangle=2$ 인 벡터가 없으므로 $\dim(V_\Lambda)_1=24$ 이고 근이 없는 가환 Lie 대수만 남는다.
+$\mathfrak h$ 에서 오는 $n$ 차원 Cartan 부분대수와 최소벡터에서 오는 근벡터들이다. $L=E_8$ 이면 $8+240=248$ 로 $E_8$ Lie 대수가 재현된다. Leech 격자는 $\langle\alpha,\alpha\rangle=2$ 인 벡터가 없으므로 $\dim(V_\Lambda)\_1=24$ 이고 근이 없는 가환 Lie 대수만 남는다.
 
 ## Zhu 의 모듈러 불변성
 
@@ -127,13 +127,13 @@ $\mathfrak h$ 에서 오는 $n$ 차원 Cartan 부분대수와 최소벡터에서
 - **유리성**: 모든 가군이 기약가군의 직합으로 완전분해된다.
 - **$C_2$ 여유한**: $C_2(V)=\mathrm{span}\lbrace a_{(-2)}b\rbrace$ 에 대해 $\dim V/C_2(V)\lt\infty$ 다.
 
-Zhu 정리는 이런 $V$ 의 기약가군 $M_1,\dots,M_r$ 의 지표들이 $\mathrm{SL}_2(\mathbb Z)$ 의 작용에 닫혀 있다고 말한다.
+Zhu 정리는 이런 $V$ 의 기약가군 $M_1,\dots,M_r$ 의 지표들이 $\mathrm{SL}\_2(\mathbb Z)$ 의 작용에 닫혀 있다고 말한다.
 
 $$
-\mathrm{ch}M_i\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_{j}\rho(\gamma)_{ij}\mathrm{ch}M_j(\tau)
+\mathrm{ch}M_i\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_{j}\rho(\gamma)\_{ij}\mathrm{ch}M_j(\tau)
 $$
 
-홀로모픽이면 $r=1$ 이므로 지표가 $\mathrm{SL}_2(\mathbb Z)$ 의 1 차원 표현, 곧 스칼라배를 제외하면 모듈러 함수다. $c=24$ 이고 홀로모픽이며 $\dim V_1=0$ 인 VOA 의 지표는 무게 0 의 모듈러 함수라 $j$ 의 다항식이고, 극이 1 위수이며 상수항이 0 이므로 $j-744$ 다.
+홀로모픽이면 $r=1$ 이므로 지표가 $\mathrm{SL}\_2(\mathbb Z)$ 의 1 차원 표현, 곧 스칼라배를 제외하면 모듈러 함수다. $c=24$ 이고 홀로모픽이며 $\dim V_1=0$ 인 VOA 의 지표는 무게 0 의 모듈러 함수라 $j$ 의 다항식이고, 극이 1 위수이며 상수항이 0 이므로 $j-744$ 다.
 
 ```mermaid
 graph TD

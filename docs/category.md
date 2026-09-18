@@ -30,7 +30,7 @@ graph LR
 범주 $C$ 는 대상들의 모임과 각 대상 쌍 $(A, B)$ 에 대한 사상들의 모임 $\mathrm{Hom}(A, B)$ 와 합성 $\mathrm{Hom}(B,C) \times \mathrm{Hom}(A,B) \to \mathrm{Hom}(A,C)$ 와 각 대상의 항등사상으로 이루어지고 다음을 만족한다.
 
 $$
-h\circ(g\circ f)=(h\circ g)\circ f,\qquad f\circ\mathrm{id}_A=f=\mathrm{id}_B\circ f
+h\circ(g\circ f)=(h\circ g)\circ f,\qquad f\circ\mathrm{id}\_A=f=\mathrm{id}\_B\circ f
 $$
 
 각 $\mathrm{Hom}(A, B)$ 가 집합이면 **국소적으로 작은 범주**, 대상 전체까지 집합이면 **작은 범주**다. 모든 집합의 범주는 작지 않지만 국소적으로 작다. 사상이 반드시 함수일 필요는 없으며, 무엇을 대상으로 삼고 무엇을 합성으로 삼는지가 범주의 데이터 전부다.
@@ -49,7 +49,7 @@ $$
 
 ## 사상으로 정의되는 개념
 
-- **동형사상.** $g \circ f = \mathrm{id}_A$ 와 $f \circ g = \mathrm{id}_B$ 를 만족하는 $g$ 가 있는 $f$ 다.
+- **동형사상.** $g \circ f = \mathrm{id}\_A$ 와 $f \circ g = \mathrm{id}\_B$ 를 만족하는 $g$ 가 있는 $f$ 다.
 - **단사사상(mono).** $f \circ g = f \circ h \Rightarrow g = h$ 가 성립한다.
 - **전사사상(epi).** $g \circ f = h \circ f \Rightarrow g = h$ 가 성립한다.
 - **시작대상.** 모든 대상으로 가는 사상이 정확히 하나인 대상. 종단대상은 화살표를 뒤집은 것이다.

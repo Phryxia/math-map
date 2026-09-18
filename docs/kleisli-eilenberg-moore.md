@@ -68,7 +68,7 @@ monad 법칙이 이 합성의 결합법칙과 단위법칙이다. 자유 functor
 $\mathcal C^T$ 의 대상은 $T$ 대수 $(A, a: T(A)\to A)$ 로 다음 두 법칙을 만족하는 것이다.
 
 $$
-a\circ\eta_A=\mathrm{id}_A,\qquad a\circ\mu_A=a\circ T(a)
+a\circ\eta_A=\mathrm{id}\_A,\qquad a\circ\mu_A=a\circ T(a)
 $$
 
 사상 $(A,a) \to (B,b)$ 는 $h : A \to B$ 로 $h\circ a = b\circ T(h)$ 를 만족하는 것이다. 망각 functor $G^T : \mathcal C^T \to \mathcal C$ 는 $(A,a)\mapsto A$ 이고, 그 left adjoint 는 자유대수 $X \mapsto (T(X), \mu_X)$ 다.

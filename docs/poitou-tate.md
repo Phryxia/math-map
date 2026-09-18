@@ -6,18 +6,18 @@
 
 $$
 \begin{aligned}
-0\to H^0(K,M)\to\ &\textstyle\prod_v H^0(K_v,M)\to H^2(K,M^{*})^{\vee}\cr
-\to H^1(K,M)\to\ &\textstyle\prod'_v H^1(K_v,M)\to H^1(K,M^{*})^{\vee}\cr
-\to H^2(K,M)\to\ &\textstyle\bigoplus_v H^2(K_v,M)\to H^0(K,M^{*})^{\vee}\to0
+0\to H^0(K,M)\to\ &\textstyle\prod_v H^0(K_v,M)\to H^2(K,M^{\ast})^{\vee}\cr
+\to H^1(K,M)\to\ &\textstyle\prod'\_v H^1(K_v,M)\to H^1(K,M^{\ast})^{\vee}\cr
+\to H^2(K,M)\to\ &\textstyle\bigoplus_v H^2(K_v,M)\to H^0(K,M^{\ast})^{\vee}\to0
 \end{aligned}
 $$
 
 아홉 항이 한 줄로 이어지고 $M$ 과 그 Cartier 쌍대 $M^{\ast}=\mathrm{Hom}(M,\mu)$ 가 번갈아 나온다. 이 열에서 두 가지가 나온다.
 
-- **상호법칙.** $H^1(K,M)\to\prod'_vH^1(K_v,M)$ 의 상은 국소 짝에 대해 **자기 소멸자**다. 곧 두 대역류의 국소 짝을 모든 자리에서 더하면 0 이다.
+- **상호법칙.** $H^1(K,M)\to\prod'\_vH^1(K_v,M)$ 의 상은 국소 짝에 대해 **자기 소멸자**다. 곧 두 대역류의 국소 짝을 모든 자리에서 더하면 0 이다.
 - **크기 공식.** 국소 조건으로 잘라낸 Selmer 군과 소멸자 조건으로 잘라낸 쌍대 Selmer 군의 크기 비가 국소 데이터만으로 계산된다. 이것이 Greenberg–Wiles 공식이다.
 
-두 진술은 같은 뿌리를 갖는다. [국소 유체론](local-class-field-theory.md)이 각 자리에서 완전 짝을 주고, [Brauer 군](brauer-groups.md)의 $\sum_v\mathrm{inv}_v=0$ 이 그 짝들을 대역적으로 묶는다. Poitou–Tate 는 이 두 사실을 계수 $M$ 으로 확장한다.
+두 진술은 같은 뿌리를 갖는다. [국소 유체론](local-class-field-theory.md)이 각 자리에서 완전 짝을 주고, [Brauer 군](brauer-groups.md)의 $\sum_v\mathrm{inv}\_v=0$ 이 그 짝들을 대역적으로 묶는다. Poitou–Tate 는 이 두 사실을 계수 $M$ 으로 확장한다.
 
 # 직관
 
@@ -26,7 +26,7 @@ $$
 수체의 산술에서 대역적인 입력은 적다. [유체론](class-field-theory.md)의 대역 부분은 한 줄이다.
 
 $$
-0\longrightarrow \mathrm{Br}(K)\longrightarrow\bigoplus_v\mathrm{Br}(K_v)\xrightarrow{\ \sum\mathrm{inv}_v\ }\mathbb Q/\mathbb Z\longrightarrow0
+0\longrightarrow \mathrm{Br}(K)\longrightarrow\bigoplus_v\mathrm{Br}(K_v)\xrightarrow{\ \sum\mathrm{inv}\_v\ }\mathbb Q/\mathbb Z\longrightarrow0
 $$
 
 가운데 사상은 국소적이고, 대역적인 내용은 합이 0 인 것만 대역적으로 실현된다는 한 문장이다.
@@ -46,7 +46,7 @@ $$
 Selmer 조건 $L=\prod_v L_v$ 도 $V$ 의 부분공간이다. 그러면
 
 $$
-\mathrm{Sel}_L=A\cap L,\qquad \mathrm{Sel}_{L^{*}}=A\cap L^{\perp}
+\mathrm{Sel}\_L=A\cap L,\qquad \mathrm{Sel}\_{L^{\ast}}=A\cap L^{\perp}
 $$
 
 이므로 두 Selmer 군은 같은 라그랑지안을 서로 소멸자인 두 부분공간으로 자른 것이다. 크기 비교가 선형대수가 된다.
@@ -62,12 +62,12 @@ $A=A^{\perp}$ 이므로 $A\cap L^{\perp}=(A+L)^{\perp}$ 이고, 차원을 세면
 한 자리 $\ell$ 에서만 $L_\ell$ 을 1 차원 넓히면 $\dim L$ 이 1 늘고 $\dim L^{\perp}$ 이 1 준다. 따라서
 
 $$
-\dim\mathrm{Sel}_{L'}-\dim\mathrm{Sel}_{L'^{*}}=\big(\dim\mathrm{Sel}_{L}-\dim\mathrm{Sel}_{L^{*}}\big)+1
+\dim\mathrm{Sel}\_{L'}-\dim\mathrm{Sel}\_{L'^{\ast}}=\big(\dim\mathrm{Sel}\_{L}-\dim\mathrm{Sel}\_{L^{\ast}}\big)+1
 $$
 
 이다. 한편 $\mathrm{Sel}\_{L}\subset\mathrm{Sel}\_{L'}$ 의 지표는 최대 1 이다. 조건을 넓히면 Selmer 가 1 커지거나 쌍대 Selmer 가 1 작아지거나 둘 중 하나가 일어나고, 어느 쪽인지는 국소 계산이 정한다. Euler 계 논법과 Taylor–Wiles 논법이 모두 이 이분법을 쓴다.
 
-| 조작 | $\mathrm{Sel}_L$ | $\mathrm{Sel}_{L^{\ast}}$ |
+| 조작 | $\mathrm{Sel}\_L$ | $\mathrm{Sel}\_{L^{\ast}}$ |
 |---|---|---|
 | $\ell$ 에서 조건 완화(relaxed) | $\le+1$ | $\ge-1$ |
 | $\ell$ 에서 조건 강화(strict) | $\ge-1$ | $\le+1$ |
@@ -102,7 +102,7 @@ $K_v$ 를 국소체, $M$ 을 $\char35{}M$ 이 $\mathrm{char}$ 과 서로소인 �
 **정리(국소 Tate 쌍대성).** 컵곱과 불변량 사상
 
 $$
-H^{i}(K_v,M)\times H^{2-i}(K_v,M^{*})\xrightarrow{\ \cup\ }H^{2}(K_v,\mu)=\mathrm{Br}(K_v)[\char35{}M]\xrightarrow{\ \mathrm{inv}_v\ }\tfrac1{\char35{}M}\mathbb Z/\mathbb Z
+H^{i}(K_v,M)\times H^{2-i}(K_v,M^{\ast})\xrightarrow{\ \cup\ }H^{2}(K_v,\mu)=\mathrm{Br}(K_v)[\char35{}M]\xrightarrow{\ \mathrm{inv}\_v\ }\tfrac1{\char35{}M}\mathbb Z/\mathbb Z
 $$
 
 는 $i=0,1,2$ 에서 완전 짝이다. 또한 국소 Euler 표수 공식
@@ -129,9 +129,9 @@ $$
 
 $$
 \begin{aligned}
-0\to\ &H^0(K,M)\to P^0(M)\to H^2(K,M^{*})^{\vee}\cr
-\to\ &H^1(K,M)\to P^1(M)\to H^1(K,M^{*})^{\vee}\cr
-\to\ &H^2(K,M)\to P^2(M)\to H^0(K,M^{*})^{\vee}\to0
+0\to\ &H^0(K,M)\to P^0(M)\to H^2(K,M^{\ast})^{\vee}\cr
+\to\ &H^1(K,M)\to P^1(M)\to H^1(K,M^{\ast})^{\vee}\cr
+\to\ &H^2(K,M)\to P^2(M)\to H^0(K,M^{\ast})^{\vee}\to0
 \end{aligned}
 $$
 
@@ -146,8 +146,8 @@ $$
 라 두면 완전열에서 곧바로
 
 $$
-\text{Ш}^{1}(K,M)\ \cong\ \text{Ш}^{2}(K,M^{*})^{\vee},\qquad
-\text{Ш}^{2}(K,M)\ \cong\ \text{Ш}^{1}(K,M^{*})^{\vee}
+\text{Ш}^{1}(K,M)\ \cong\ \text{Ш}^{2}(K,M^{\ast})^{\vee},\qquad
+\text{Ш}^{2}(K,M)\ \cong\ \text{Ш}^{1}(K,M^{\ast})^{\vee}
 $$
 
 가 나온다. $E[p]$ 에 적용하면 [Selmer 군](selmer-groups.md)의 $\text{Ш}(E/K)$ 가 자기쌍대이고 그 위수가 제곱수임이 따라온다.
@@ -157,14 +157,14 @@ $$
 각 자리에서 부분군 $L_v\subset H^1(K_v,M)$ 를 고른 것이 Selmer 구조이고, 거의 모든 $v$ 에서 $L_v=H^1_{\mathrm{ur}}$ 을 요구한다. **쌍대 구조**는
 
 $$
-L^{*}_v=\big(L_v\big)^{\perp}\subset H^1(K_v,M^{*})
+L^{\ast}\_v=\big(L_v\big)^{\perp}\subset H^1(K_v,M^{\ast})
 $$
 
 로 정의한다. 두 Selmer 군은
 
 $$
-\mathrm{Sel}_L(K,M)=\ker\Big(H^1(K,M)\to\prod_v\frac{H^1(K_v,M)}{L_v}\Big),\qquad
-\mathrm{Sel}_{L^{*}}(K,M^{*})
+\mathrm{Sel}\_L(K,M)=\ker\Big(H^1(K,M)\to\prod_v\frac{H^1(K_v,M)}{L_v}\Big),\qquad
+\mathrm{Sel}\_{L^{\ast}}(K,M^{\ast})
 $$
 
 이다. $L_v=H^1_f$ 를 고르면 앞의 것이 보통의 Selmer 군이다.
@@ -176,12 +176,12 @@ $$
 **정리.** $a\in H^1(K,M)$ 이고 $b\in H^1(K,M^{\ast})$ 이면
 
 $$
-\sum_v\mathrm{inv}_v\big(\mathrm{loc}_v(a)\cup\mathrm{loc}_v(b)\big)=0
+\sum_v\mathrm{inv}\_v\big(\mathrm{loc}\_v(a)\cup\mathrm{loc}\_v(b)\big)=0
 $$
 
 이다. 합은 유한 개 항만 0 이 아니다.
 
-**증명.** $a\cup b\in H^2(K,\mu)$ 이고 $H^2(K,\mu_n)\subset\mathrm{Br}(K)[n]$ 이다. 컵곱은 국소화와 교환하므로 $\mathrm{loc}_v(a)\cup\mathrm{loc}_v(b)=\mathrm{loc}_v(a\cup b)$ 이고, Brauer 군의 대역 열에서 $\mathrm{Br}(K)$ 의 원소는 국소 불변량의 합이 0 이다. $\square$
+**증명.** $a\cup b\in H^2(K,\mu)$ 이고 $H^2(K,\mu_n)\subset\mathrm{Br}(K)[n]$ 이다. 컵곱은 국소화와 교환하므로 $\mathrm{loc}\_v(a)\cup\mathrm{loc}\_v(b)=\mathrm{loc}\_v(a\cup b)$ 이고, Brauer 군의 대역 열에서 $\mathrm{Br}(K)$ 의 원소는 국소 불변량의 합이 0 이다. $\square$
 
 이 항등식이 Selmer 군의 상계를 주는 대역 입력이다. [Euler 계](euler-systems.md) 논법은 이 합에서 한 항만 남기도록 대역류를 고른다.
 
@@ -190,8 +190,8 @@ $$
 **정리.** 위 기호에서
 
 $$
-\frac{\char35{}\mathrm{Sel}_{L}(K,M)}{\char35{}\mathrm{Sel}_{L^{*}}(K,M^{*})}
-=\frac{\char35{}H^{0}(K,M)}{\char35{}H^{0}(K,M^{*})}\prod_v\frac{\char35{}L_v}{\char35{}H^{0}(K_v,M)}
+\frac{\char35{}\mathrm{Sel}\_{L}(K,M)}{\char35{}\mathrm{Sel}\_{L^{\ast}}(K,M^{\ast})}
+=\frac{\char35{}H^{0}(K,M)}{\char35{}H^{0}(K,M^{\ast})}\prod_v\frac{\char35{}L_v}{\char35{}H^{0}(K_v,M)}
 $$
 
 곱은 유한 개 자리를 빼면 1 이다.
@@ -201,7 +201,7 @@ $$
 $\dim$ 으로 쓰면 직관 절의 선형대수 항등식이 된다. 자기쌍대 $M$ 과 $H^0=0$ 인 경우
 
 $$
-\dim\mathrm{Sel}_{L}-\dim\mathrm{Sel}_{L^{*}}=\sum_v\Big(\dim L_v-\dim H^{0}(K_v,M)\Big)
+\dim\mathrm{Sel}\_{L}-\dim\mathrm{Sel}\_{L^{\ast}}=\sum_v\Big(\dim L_v-\dim H^{0}(K_v,M)\Big)
 $$
 
 이고, 오른쪽이 $\dim L-\tfrac12\dim V$ 의 자리별 판본이다.
@@ -229,20 +229,20 @@ $$
 | 강화 $0$ | 영 | $0$ | 전체 |
 | 가로지름 $H^1_{\mathrm{tr}}$ | 분기 방향의 보충 | $\dim H^0$ | 자기 자신 |
 
-비분기와 가로지름은 둘 다 자기 소멸자다. 하나를 다른 하나로 바꾸면 $\dim L$ 이 변하지 않고 $\mathrm{Sel}_L$ 만 다른 군으로 옮겨 간다. Kolyvagin 유도류는 비분기를 가로지름으로 바꾼 Selmer 군에 산다.
+비분기와 가로지름은 둘 다 자기 소멸자다. 하나를 다른 하나로 바꾸면 $\dim L$ 이 변하지 않고 $\mathrm{Sel}\_L$ 만 다른 군으로 옮겨 간다. Kolyvagin 유도류는 비분기를 가로지름으로 바꾼 Selmer 군에 산다.
 
 ## 한 자리의 완화
 
 $L'$ 을 $\ell$ 에서만 $H^1(K_\ell,M)$ 전체로 바꾼 구조라 하면
 
 $$
-0\to\mathrm{Sel}_L\to\mathrm{Sel}_{L'}\xrightarrow{\ \partial_\ell\ }H^1_s(K_\ell,M)
+0\to\mathrm{Sel}\_L\to\mathrm{Sel}\_{L'}\xrightarrow{\ \partial_\ell\ }H^1_s(K_\ell,M)
 $$
 
 이 완전하고 미지수는 $\partial_\ell$ 의 상뿐이다. 상호법칙이 이 상을 결정한다. $\mathrm{Sel}\_{L'^{\ast}}$ 의 원소는 $\ell$ 에서 강화 조건, 곧 $\mathrm{loc}\_\ell=0$ 을 만족하므로, $\partial_\ell(\mathrm{Sel}\_{L'})$ 는 $\mathrm{loc}\_\ell(\mathrm{Sel}\_{L^{\ast}})$ 의 소멸자다. 곧
 
 $$
-\mathrm{im}\thinspace\partial_\ell=\big(\mathrm{loc}_\ell\thinspace\mathrm{Sel}_{L^{*}}\big)^{\perp}
+\mathrm{im}\thinspace\partial_\ell=\big(\mathrm{loc}\_\ell\thinspace\mathrm{Sel}\_{L^{\ast}}\big)^{\perp}
 $$
 
 이다. 쌍대 Selmer 에 $\ell$ 에서 보이는 원소가 있으면 완화해도 Selmer 가 커지지 않는다. 거꾸로 쌍대 Selmer 를 죽이려면 그 원소가 보이는 자리를 골라 완화한다. [Chebotarev](chebotarev.md) 가 그런 자리의 존재를 보장한다.
@@ -258,14 +258,14 @@ $m$ 하강에서 $\mathrm{Sel}^m(E/K)$ 의 크기는 Greenberg–Wiles 로 센�
 [변형환](deformation-rings.md)의 접공간은 국소 조건을 단 Selmer 군 $H^1_{\mathcal L}(K,\mathrm{ad}\bar\rho)$ 이고, 장애는 $H^2$ 에 있다. Greenberg–Wiles 를 $\mathrm{ad}\bar\rho$ 에 적용하면
 
 $$
-\dim H^1_{\mathcal L}-\dim H^1_{\mathcal L^{*}}=\text{국소 항의 합}
+\dim H^1_{\mathcal L}-\dim H^1_{\mathcal L^{\ast}}=\text{국소 항의 합}
 $$
 
 이 되고 오른쪽은 국소 계산으로 얻는다. Taylor–Wiles 는 $q\equiv1\ (\mathrm{mod}\ p^{n})$ 인 보조 소수를 $r=\dim H^1_{\mathcal L^{\ast}}$ 개 골라 그 자리들에서 조건을 완화한다. Chebotarev 로 각 소수가 쌍대 Selmer 의 원소 하나씩을 보도록 고르면 위 표의 두 번째 행에 따라 쌍대 Selmer 가 한 칸씩 줄고, $r$ 번 반복하면 $0$ 이 된다. 접공간의 차원이 국소 항만으로 확정되어 패칭에 필요한 균일한 표현이 나온다.
 
 ## Euler 계 논법의 요지
 
-[Euler 계](euler-systems.md)는 상호법칙의 합에서 한 항만 살아남게 대역류를 설계한다. 유도류 $\kappa_n$ 이 $n$ 밖에서 Selmer 조건을 만족하면 그 자리들에서 짝이 0 이고, 남은 $\ell$ 자리의 짝도 0 이라는 결론이 $\mathrm{loc}_\ell(s)=0$ 을 강제한다.
+[Euler 계](euler-systems.md)는 상호법칙의 합에서 한 항만 살아남게 대역류를 설계한다. 유도류 $\kappa_n$ 이 $n$ 밖에서 Selmer 조건을 만족하면 그 자리들에서 짝이 0 이고, 남은 $\ell$ 자리의 짝도 0 이라는 결론이 $\mathrm{loc}\_\ell(s)=0$ 을 강제한다.
 
 ## Hasse 원리의 장애
 

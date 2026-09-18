@@ -10,13 +10,13 @@
 - **꼬임**(braiding) $c_{X,Y}:X\otimes Y\to Y\otimes X$ . 대칭이 아니어도 되고 두 번 꼬아 제자리로 돌아오지 않아도 된다.
 - 그 꼬임의 비퇴화성. 동치로 $S$ 행렬이 가역이다.
 
-마지막 조건에서 $S$ 와 $T$ 가 $\mathrm{SL}_2(\mathbb Z)$ 의 표현을 이루고, 이름의 "모듈러" 가 거기서 온다.
+마지막 조건에서 $S$ 와 $T$ 가 $\mathrm{SL}\_2(\mathbb Z)$ 의 표현을 이루고, 이름의 "모듈러" 가 거기서 온다.
 
 $$
 S=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix},\qquad T=\begin{pmatrix}1&1\cr 0&1\end{pmatrix}
 $$
 
-이 공리계에서 MTC 하나가 3 차원 위상적 장론(TQFT) 하나와 대응한다. Reshetikhin–Turaev 구성이 MTC 에서 3 차원 다양체와 그 안의 매듭에 대한 불변량을 만들고, 역으로 3 차원 TQFT 에서 원환면에 붙는 벡터공간과 그 위의 $\mathrm{SL}_2(\mathbb Z)$ 작용이 MTC 를 복원한다.
+이 공리계에서 MTC 하나가 3 차원 위상적 장론(TQFT) 하나와 대응한다. Reshetikhin–Turaev 구성이 MTC 에서 3 차원 다양체와 그 안의 매듭에 대한 불변량을 만들고, 역으로 3 차원 TQFT 에서 원환면에 붙는 벡터공간과 그 위의 $\mathrm{SL}\_2(\mathbb Z)$ 작용이 MTC 를 복원한다.
 
 $$
 \lbrace\text{MTC}\rbrace\ \longleftrightarrow\ \lbrace\text{3 차원 TQFT}\rbrace
@@ -33,7 +33,7 @@ Jones 다항식이 이 구성의 가장 작은 예이고 위상적 양자계산�
 세계선에서는 다르다. 평면 위의 두 점을 맞바꾸는 과정을 시간 방향을 세워 3 차원에서 그리면 두 가닥이 꼬인다. 시계방향과 반시계방향의 교환이 다른 꼬임이고 이어 붙여도 풀리지 않는다.
 
 $$
-c_{Y,X}\circ c_{X,Y}\neq\mathrm{id}_{X\otimes Y}
+c_{Y,X}\circ c_{X,Y}\neq\mathrm{id}\_{X\otimes Y}
 $$
 
 꼬임은 2 공간차원 + 1 시간차원의 대칭이고, 두 번 하면 항등이라는 대칭성은 3 공간차원 이상에서 강제된다. 3 차원에서는 두 입자의 세계선을 풀 여유가 있어 교환이 $\pm1$ 로 나타나고(보손과 페르미온), 2 차원에서는 임의의 위상인자나 행렬이 나온다. 이런 준입자가 **애니온**이다.
@@ -61,11 +61,11 @@ graph LR
   MTC -->|"융합 규칙"| VER["Verlinde 공식"]
 ```
 
-## 원환면과 $\mathrm{SL}_2(\mathbb Z)$
+## 원환면과 $\mathrm{SL}\_2(\mathbb Z)$
 
 3 차원 TQFT 는 곡면마다 벡터공간을 붙인다. 원환면 $T^2$ 에 붙는 공간의 차원이 단순대상의 개수이고, 기저는 원환면의 속을 채우는 고체원환의 심에 라벨 $i$ 를 넣은 상태다.
 
-원환면의 자기동상사상군이 $\mathrm{SL}_2(\mathbb Z)$ 이므로 그 군이 이 벡터공간에 작용한다. $S$ 는 두 주기를 맞바꾸는 사상, $T$ 는 한 쪽을 비트는 사상이다. Zhu 정리에서 지표가 $\mathrm{SL}_2(\mathbb Z)$ 표현을 이루던 작용과 같은 행렬이 나온다.
+원환면의 자기동상사상군이 $\mathrm{SL}\_2(\mathbb Z)$ 이므로 그 군이 이 벡터공간에 작용한다. $S$ 는 두 주기를 맞바꾸는 사상, $T$ 는 한 쪽을 비트는 사상이다. Zhu 정리에서 지표가 $\mathrm{SL}\_2(\mathbb Z)$ 표현을 이루던 작용과 같은 행렬이 나온다.
 
 # 정의
 
@@ -85,12 +85,12 @@ $$
 꼬임 $c_{X,Y}$ 와 정합적인 비틀림 $\theta_X$ 를 얹으면 **리본범주**가 되고 각 단순대상에 양자 차원 $d_i$ 와 비틀림 고유값 $\theta_i$ 가 붙는다. $S$ 행렬과 $T$ 행렬을 다음으로 정의한다.
 
 $$
-S_{ij}=\frac1{\mathcal D}\sum_kN_{i^*j}^k\frac{\theta_k}{\theta_i\theta_j}d_k,\qquad T_{ij}=\delta_{ij}\theta_i,\qquad \mathcal D=\sqrt{\sum_id_i^2}
+S_{ij}=\frac1{\mathcal D}\sum_kN_{i^\astj}^k\frac{\theta_k}{\theta_i\theta_j}d_k,\qquad T_{ij}=\delta_{ij}\theta_i,\qquad \mathcal D=\sqrt{\sum_id_i^2}
 $$
 
 $S_{ij}$ 는 도형으로 라벨 $i,j$ 를 단 두 고리를 한 번 걸어 놓은 그림의 값이다.
 
-> **정의.** 리본 융합범주가 **모듈러**라는 것은 $S$ 가 가역이라는 뜻이다. 이때 $S,T$ 가 $\mathrm{SL}_2(\mathbb Z)$ 의 사영표현을 준다.
+> **정의.** 리본 융합범주가 **모듈러**라는 것은 $S$ 가 가역이라는 뜻이다. 이때 $S,T$ 가 $\mathrm{SL}\_2(\mathbb Z)$ 의 사영표현을 준다.
 
 ## Verlinde 공식
 
@@ -109,16 +109,16 @@ $$
 | MTC | 단순대상 수 | 비고 |
 |---|---|---|
 | $\mathrm{Vec}$ | 1 | 자명 |
-| 준-Ising 곧 $\mathrm{SU}(2)_2$ | 3 | $\mathbf1,\sigma,\psi$ 이고 $\sigma^2=\mathbf1\oplus\psi$ |
-| Fibonacci ($\mathrm{SU}(2)_3$ 의 부분) | 2 | $\tau^2=\mathbf1\oplus\tau$ 이고 $d_\tau=\varphi$ 는 황금비 |
-| $\mathrm{SU}(2)_k$ | $k+1$ | 위의 예 |
-| $\mathcal Z(\mathrm{Vec}_G)$ | $G$ 의 켤레류 자료 | 유한군 $G$ 의 Drinfeld 중심 |
+| 준-Ising 곧 $\mathrm{SU}(2)\_2$ | 3 | $\mathbf1,\sigma,\psi$ 이고 $\sigma^2=\mathbf1\oplus\psi$ |
+| Fibonacci ($\mathrm{SU}(2)\_3$ 의 부분) | 2 | $\tau^2=\mathbf1\oplus\tau$ 이고 $d_\tau=\varphi$ 는 황금비 |
+| $\mathrm{SU}(2)\_k$ | $k+1$ | 위의 예 |
+| $\mathcal Z(\mathrm{Vec}\_G)$ | $G$ 의 켤레류 자료 | 유한군 $G$ 의 Drinfeld 중심 |
 
 Fibonacci 범주에서 $d_\tau$ 가 황금비인 것은 $d_\tau^2=1+d_\tau$ 에서 나온다. 양자 차원이 정수가 아니어도 되고, 애니온 하나가 차원 $\varphi$ 를 갖는다는 물리적 진술이 된다.
 
 > **랭크 유한성 정리 (Bruillard–Ng–Rowell–Wang, 2016).** 단순대상 개수를 고정하면 MTC 는 동치를 빼고 유한개다.
 
-증명은 $S,T$ 가 $\mathrm{SL}_2(\mathbb Z)$ 의 표현을 이루며 그 핵이 유한 지표라는 Ng–Schauenburg 의 Galois 대칭에서 나온다. 랭크 5 까지 완전한 목록이 알려져 있다.[^1]
+증명은 $S,T$ 가 $\mathrm{SL}\_2(\mathbb Z)$ 의 표현을 이루며 그 핵이 유한 지표라는 Ng–Schauenburg 의 Galois 대칭에서 나온다. 랭크 5 까지 완전한 목록이 알려져 있다.[^1]
 
 ## 3 차원 TQFT 로의 번역
 
@@ -134,7 +134,7 @@ Reshetikhin–Turaev 구성은 MTC 에서 다음을 만든다.
 
 ## 매듭 불변량
 
-$\mathrm{SU}(2)_k$ 에서 라벨 1, 곧 스핀 $1/2$ 를 단 매듭의 불변량이 Jones 다항식을 $q=e^{2\pi i/(k+2)}$ 에서 평가한 값이다. Witten 이 Jones 다항식을 3 차원 Chern–Simons 이론의 Wilson 고리 기댓값으로 설명했고 Reshetikhin–Turaev 가 그것을 수학적으로 구성했으며, MTC 가 그 구성의 대수적 입력이다.
+$\mathrm{SU}(2)\_k$ 에서 라벨 1, 곧 스핀 $1/2$ 를 단 매듭의 불변량이 Jones 다항식을 $q=e^{2\pi i/(k+2)}$ 에서 평가한 값이다. Witten 이 Jones 다항식을 3 차원 Chern–Simons 이론의 Wilson 고리 기댓값으로 설명했고 Reshetikhin–Turaev 가 그것을 수학적으로 구성했으며, MTC 가 그 구성의 대수적 입력이다.
 
 라벨을 바꾸면 색 Jones 다항식이, 다른 Lie 군을 쓰면 HOMFLY 나 Kauffman 다항식이 나온다.
 
@@ -142,7 +142,7 @@ $\mathrm{SU}(2)_k$ 에서 라벨 1, 곧 스핀 $1/2$ 를 단 매듭의 불변량
 
 애니온 여러 개를 평면에 놓으면 그 상태공간이 $Z$ 로 주어지고, 애니온의 위치를 서로 돌려 바꾸는 것이 그 공간 위의 유니터리 연산이 된다. 연산이 경로의 위상만으로 정해지므로 국소적 잡음에 강하다.
 
-Fibonacci 애니온의 꼬임 연산은 유니터리 군에서 조밀한 부분군을 생성하므로 보편 양자계산이 가능하다. $\mathrm{SU}(2)_2$ 의 Ising 애니온은 Clifford 군만 주어 보편적이지 않고 추가 연산이 필요하다. 범주의 대수적 성질이 계산 능력을 정한다.
+Fibonacci 애니온의 꼬임 연산은 유니터리 군에서 조밀한 부분군을 생성하므로 보편 양자계산이 가능하다. $\mathrm{SU}(2)\_2$ 의 Ising 애니온은 Clifford 군만 주어 보편적이지 않고 추가 연산이 필요하다. 범주의 대수적 성질이 계산 능력을 정한다.
 
 ## 정점작용소대수와의 왕복
 

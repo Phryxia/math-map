@@ -5,7 +5,7 @@
 [Godement–Jacquet](godement-jacquet.md)은 $\mathrm{GL}\_n$ 을 담는 벡터공간 $M_n$ 위에서 표준 $L$ 함수를 다룬다. 두 자기동형 표현의 곱
 
 $$
-L(s,\pi\times\pi'),\qquad \pi \text{ 는 } \mathrm{GL}_n,\quad \pi' \text{ 는 } \mathrm{GL}_m
+L(s,\pi\times\pi'),\qquad \pi \text{ 는 } \mathrm{GL}\_n,\quad \pi' \text{ 는 } \mathrm{GL}\_m
 $$
 
 에는 그런 벡터공간이 없다. 차수가 $nm$ 인 이 $L$ 함수는 Langlands 강령에서 자주 쓰이지만 정의만으로는 해석적 성질이 나오지 않는다.
@@ -13,7 +13,7 @@ $$
 Rankin 과 Selberg 가 1939–40 년에 각각 찾은 방법은 두 첨점형식의 곱에 **Eisenstein 급수**를 곱해 적분한다.
 
 $$
-I(s)=\int_{\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H}
+I(s)=\int_{\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H}
 f(z)\thinspace\overline{g(z)}\thinspace y^{k}\thinspace E(z,s)\thinspace\frac{dx\thinspace dy}{y^2}
 $$
 
@@ -28,7 +28,7 @@ $$
 Jacquet–Piatetski-Shapiro–Shalika 가 1983 년에 이것을 $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 으로 올렸다. 고전적 Fourier 계수 자리에 **Whittaker 함수**가 들어가고, 그 유일성이 전역 적분을 국소 적분의 곱으로 쪼갠다. 비분기 자리의 국소 적분을 [Satake 매개변수](satake-isomorphism.md)로 계산하면
 
 $$
-L(s,\pi_v\times\pi'_v)=\det\bigl(1-q^{-s}A_{\pi_v}\otimes A_{\pi'_v}\bigr)^{-1}
+L(s,\pi_v\times\pi'\_v)=\det\bigl(1-q^{-s}A_{\pi_v}\otimes A_{\pi'\_v}\bigr)^{-1}
 =\prod_{i=1}^{n}\prod_{j=1}^{m}\bigl(1-\alpha_i\beta_j\thinspace q^{-s}\bigr)^{-1}
 $$
 
@@ -61,7 +61,7 @@ $L$ 함수를 값으로 갖는 적분을 만들고 적분의 다른 표현에서
 $E(z,s)$ 는 $s=1$ 에서 단순극을 갖고 유수가 상수 $3/\pi=1/\mathrm{vol}(\Gamma\backslash\mathbb H)$ 다. 그러므로 $I(s)$ 의 $s=1$ 에서의 유수는
 
 $$
-\mathrm{Res}_{s=1}I(s)=\frac1{\mathrm{vol}}\int_{\Gamma\backslash\mathbb H}f\bar gy^k\thinspace d\mu
+\mathrm{Res}\_{s=1}I(s)=\frac1{\mathrm{vol}}\int_{\Gamma\backslash\mathbb H}f\bar gy^k\thinspace d\mu
 =\frac{\langle f,g\rangle}{\mathrm{vol}}
 $$
 
@@ -84,7 +84,7 @@ $$
 그리고 첨점형식의 전개는 $\mathrm{GL}\_{n-1}$ 의 유리점에 대한 합이 된다.
 
 $$
-\varphi(g)=\sum_{\gamma\in N_{n-1}(\mathbb Q)\backslash\mathrm{GL}_{n-1}(\mathbb Q)}
+\varphi(g)=\sum_{\gamma\in N_{n-1}(\mathbb Q)\backslash\mathrm{GL}\_{n-1}(\mathbb Q)}
 W_\varphi\negthinspace\left(\begin{pmatrix}\gamma&\cr&1\end{pmatrix}g\right)
 $$
 
@@ -107,14 +107,14 @@ $$
 $f\in S_k(\mathrm{SL}\_2(\mathbb Z))$ 와 $g\in S_l(\mathrm{SL}\_2(\mathbb Z))$ 의 Fourier 전개를 각각 $f=\sum a_nq^n$ 과 $g=\sum b_nq^n$ 이라 하자. 실해석적 Eisenstein 급수는
 
 $$
-E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\mathrm{SL}_2(\mathbb Z)}\mathrm{Im}(\gamma z)^s
+E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\mathrm{SL}\_2(\mathbb Z)}\mathrm{Im}(\gamma z)^s
 =\tfrac12\sum_{\gcd(c,d)=1}\frac{y^s}{\lvert cz+d\rvert^{2s}}
 $$
 
 이고 $\mathrm{Re}(s)\gt 1$ 에서 수렴한다. $k=l$ 일 때 **Rankin–Selberg 적분**은
 
 $$
-I(s)=\int_{\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H}f(z)\overline{g(z)}\thinspace y^{k}E(z,s)\thinspace\frac{dx\thinspace dy}{y^2}
+I(s)=\int_{\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H}f(z)\overline{g(z)}\thinspace y^{k}E(z,s)\thinspace\frac{dx\thinspace dy}{y^2}
 =\frac{\Gamma(s+k-1)}{(4\pi)^{s+k-1}}\sum_{n\ge1}\frac{a_n\overline{b_n}}{n^{s+k-1}}
 $$
 
@@ -135,7 +135,7 @@ $$
 $m\lt n$ 이고 $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}\_n(\mathbb A)$ 와 $\mathrm{GL}\_m(\mathbb A)$ 의 첨점 표현이라 하자. $m=n-1$ 이면
 
 $$
-\Psi(s,W,W')=\int_{N_m(\mathbb A)\backslash\mathrm{GL}_m(\mathbb A)}
+\Psi(s,W,W')=\int_{N_m(\mathbb A)\backslash\mathrm{GL}\_m(\mathbb A)}
 W\negthinspace\left(\begin{pmatrix}g&\cr&1\end{pmatrix}\right)W'(g)\thinspace
 \lvert\det g\rvert^{\thinspace s-\frac12}\thinspace dg
 $$
@@ -145,7 +145,7 @@ $$
 $m=n$ 일 때는 Eisenstein 급수가 필요하다. Schwartz 함수 $\Phi\in\mathcal S(\mathbb A^n)$ 에서 만든 Eisenstein 급수 $E(g,s;\Phi)$ 에 대해
 
 $$
-I(s,\varphi,\varphi',\Phi)=\int_{Z(\mathbb A)\mathrm{GL}_n(\mathbb Q)\backslash\mathrm{GL}_n(\mathbb A)}
+I(s,\varphi,\varphi',\Phi)=\int_{Z(\mathbb A)\mathrm{GL}\_n(\mathbb Q)\backslash\mathrm{GL}\_n(\mathbb A)}
 \varphi(g)\thinspace\varphi'(g)\thinspace E(g,s;\Phi)\thinspace dg
 $$
 
@@ -156,7 +156,7 @@ $$
 각 자리에서 $\Psi_v(s,W_v,W'\_v)$ 는 $q_v^{-s}$ 의 유리함수이고, 이들이 생성하는 분수 아이디얼의 생성원으로 국소 $L$ 인자 $L(s,\pi_v\times\pi'\_v)$ 를 정의한다. 비분기 자리에서는 Satake 매개변수 $(\alpha_i)$ 와 $(\beta_j)$ 로
 
 $$
-L(s,\pi_v\times\pi'_v)=\prod_{i,j}\bigl(1-\alpha_i\beta_jq_v^{-s}\bigr)^{-1}
+L(s,\pi_v\times\pi'\_v)=\prod_{i,j}\bigl(1-\alpha_i\beta_jq_v^{-s}\bigr)^{-1}
 $$
 
 이고, 전역 $L$ 함수는 이들의 곱 $L(s,\pi\times\pi')=\prod_vL(s,\pi_v\times\pi'\_v)$ 다.
@@ -183,7 +183,7 @@ $$
 
 $$
 \sum_{m\ge0}h_m(\alpha,\beta)\thinspace h_m(\alpha',\beta')\thinspace x^m
-=\frac{1-\alpha\beta\alpha'\beta'x^2}{\prod_{i,j}(1-\alpha_i\alpha'_jx)}
+=\frac{1-\alpha\beta\alpha'\beta'x^2}{\prod_{i,j}(1-\alpha_i\alpha'\_jx)}
 $$
 
 $h_m$ 은 완전 동차 대칭 다항식이고 $h_m(\alpha,\beta)$ 가 정규화된 $a_{p^m}$ 이다. 분자의 $x^2$ 항이 보정이고 전역적으로 $\zeta(2s)$ 의 역수가 된다.
@@ -230,9 +230,9 @@ Rankin 이 1939 년에 이 항등식에서 $\tau(n)=O(n^{29/5})$ 를 얻었다. 
 $\mathrm{GL}\_2$ 의 대칭 거듭제곱 올림이 그 성과다.
 
 $$
-\mathrm{Sym}^3:\mathrm{GL}_2(\mathbb C)\to\mathrm{GL}_4(\mathbb C),
+\mathrm{Sym}^3:\mathrm{GL}\_2(\mathbb C)\to\mathrm{GL}\_4(\mathbb C),
 \qquad
-\mathrm{Sym}^4:\mathrm{GL}_2(\mathbb C)\to\mathrm{GL}_5(\mathbb C)
+\mathrm{Sym}^4:\mathrm{GL}\_2(\mathbb C)\to\mathrm{GL}\_5(\mathbb C)
 $$
 
 Kim 과 Shahidi 가 2002 년에 $\mathrm{Sym}^3$ 의 자기동형성을, Kim 이 $\mathrm{Sym}^4$ 의 자기동형성을 역정리로 증명했다. [Sato–Tate](sato-tate.md)의 초기 부분 결과와 Ramanujan 추측을 향한 최선의 추정 $\lvert\alpha_p\rvert\le p^{7/64}$ 가 이 결과에서 나온다. 모든 $m$ 에 대한 $\mathrm{Sym}^m$ 은 뒤에 Newton–Thorne 이 모듈러성 올리기로 해결했다.

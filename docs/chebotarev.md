@@ -10,7 +10,7 @@ $$
 
 분기하지 않는 소 아이디얼 $\mathfrak p$ 마다 Frobenius 켤레류 $\left[\frac{L/K}{\mathfrak p}\right]\subseteq\mathrm{Gal}(L/K)$ 가 정해져 소수를 Galois 군의 원소로 번역한다. 위 등식은 Galois 군에서 원소를 무작위로 뽑는 것과 소수를 무작위로 뽑아 Frobenius 를 보는 것이 구별되지 않는다는 뜻이다. [유체론](class-field-theory.md)이 아벨 확대에서 Frobenius 가 무엇인지를 알려 준다면 이 정리는 그것의 분포를 알려 준다.
 
-$L=\mathbb Q(\zeta_m)$ 이면 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathrm{Frob}_p=p\bmod m$ 이므로 정리가 [Dirichlet 의 등차수열 정리](dirichlet-l-functions.md)가 된다. Chebotarev 는 이것을 비아벨 확대로 넓혔고 증명도 일반 경우를 원분체 경우로 환원한다.
+$L=\mathbb Q(\zeta_m)$ 이면 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathrm{Frob}\_p=p\bmod m$ 이므로 정리가 [Dirichlet 의 등차수열 정리](dirichlet-l-functions.md)가 된다. Chebotarev 는 이것을 비아벨 확대로 넓혔고 증명도 일반 경우를 원분체 경우로 환원한다.
 
 # 직관
 
@@ -51,8 +51,8 @@ $L^H$ 에서 얻은 밀도를 $K$ 로 되돌리는 단계에는 Artin $L$ 함수
 $L/K$ 가 유한 Galois 확대이고 $\mathfrak p$ 가 $K$ 의 소 아이디얼로 $L/K$ 에서 분기하지 않는다고 하자. $\mathfrak P\mid\mathfrak p$ 에 대해
 
 $$
-\mathrm{Frob}_{\mathfrak P}\in\mathrm{Gal}(L/K),\qquad
-\mathrm{Frob}_{\mathfrak P}(x)\equiv x^{N\mathfrak p}\pmod{\mathfrak P}
+\mathrm{Frob}\_{\mathfrak P}\in\mathrm{Gal}(L/K),\qquad
+\mathrm{Frob}\_{\mathfrak P}(x)\equiv x^{N\mathfrak p}\pmod{\mathfrak P}
 $$
 
 로 유일하게 정해진다. $\mathrm{Frob}\_{g\mathfrak P}=g\thinspace\mathrm{Frob}\_{\mathfrak P}\thinspace g^{-1}$ 이므로 켤레류가 잘 정의되고, 이를 $\left[\frac{L/K}{\mathfrak p}\right]$ 로 쓴다.
@@ -85,7 +85,7 @@ $C=\lbrace 1\rbrace$ 인 경우 $L$ 에서 완전분해하는 소수의 밀도�
 
 - **Dirichlet 등차수열 정리.** $K=\mathbb Q$ 이고 $L=\mathbb Q(\zeta_m)$ 인 경우다. 켤레류가 한원소이므로 각 $a\in(\mathbb Z/m\mathbb Z)^\times$ 에 대해 $p\equiv a\pmod m$ 인 소수의 밀도가 $1/\varphi(m)$ 이다.
 - **이차체.** $L=\mathbb Q(\sqrt d)$ 면 $G\cong\mathbb Z/2$ 이고 $\left(\frac dp\right)=1$ 인 소수와 $-1$ 인 소수가 각각 절반이다.
-- **다항식의 분해형.** $f\in\mathbb Z[x]$ 가 기약이고 $L$ 이 분해체일 때 $f$ 가 법 $p$ 에서 쪼개지는 차수들은 $\mathrm{Frob}_p$ 의 순열 사이클형으로 결정된다. 분해형의 분포가 Galois 군 안의 사이클형 분포와 같다.
+- **다항식의 분해형.** $f\in\mathbb Z[x]$ 가 기약이고 $L$ 이 분해체일 때 $f$ 가 법 $p$ 에서 쪼개지는 차수들은 $\mathrm{Frob}\_p$ 의 순열 사이클형으로 결정된다. 분해형의 분포가 Galois 군 안의 사이클형 분포와 같다.
 - **밀도 1 인 조건.** 거의 모든 $p$ 에서 $f$ 가 근을 가지면 모든 Frobenius 가 어떤 근을 고정한다. 유한군은 진부분군들의 켤레 합집합이 될 수 없으므로 $f$ 가 $\mathbb Q$ 에서 근을 가져야 한다.
 
 ## 유효성의 한계

@@ -17,7 +17,7 @@ Hilbert 는 무한 집합을 물리학의 "무한히 먼 점" 과 같은 지위�
 체계 $T$ 의 무모순성은 다음으로 정의한다.
 
 $$
-\mathrm{Con}(T)\ :\equiv\ \neg\thinspace\exists p\ \big(\mathrm{Proof}_T(p,\ \ulcorner 0=1\urcorner)\big)
+\mathrm{Con}(T)\ :\equiv\ \neg\thinspace\exists p\ \big(\mathrm{Proof}\_T(p,\ \ulcorner 0=1\urcorner)\big)
 $$
 
 Hilbert가 요구한 유한주의적 관점은 구체적으로 주어진 기호 구성물만 다루고, 완결된 무한 전체에 대한 양화를 쓰지 않으며, 결정 가능한 술어와 원시재귀적 구성만 허용한다. 현대적 대응물로는 원시재귀 산술 PRA 를 쓴다[^1].

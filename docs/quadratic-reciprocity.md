@@ -126,7 +126,7 @@ $$
 $a\mapsto aq$ 로 치환하면서 나온 $\left(\frac qp\right)$ 다. 한편 $g^q=g\cdot(g^2)^{(q-1)/2}=g\cdot(p^\ast)^{(q-1)/2}$ 이고, Euler 판정법으로 이것이 $g\left(\frac{p^\ast}q\right)$ 다. $g\ne0$ 이므로 두 식을 비교하면
 
 $$
-\Big(\frac qp\Big)=\Big(\frac{p^*}q\Big)
+\Big(\frac qp\Big)=\Big(\frac{p^\ast}q\Big)
 $$
 
 오른쪽을 보충 법칙으로 풀면 상호법칙이다. 표수가 다른 두 체에서 같은 Gauss 합을 계산한 것이 다리 역할을 했다. $\mathbb Q(\zeta_p)$ 에서의 계산으로 읽으면 앞 절의 Galois 이론 설명과 같은 내용이다.

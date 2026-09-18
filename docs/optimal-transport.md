@@ -73,7 +73,7 @@ $$
 **Kantorovich 문제.** $\Pi(\mu,\nu)$ 를 $X\times Y$ 위의 확률측도 가운데 주변분포가 각각 $\mu,\nu$ 인 것들의 집합이라 하자.
 
 $$
-\mathrm{OT}_c(\mu,\nu)=\inf_{\pi\in\Pi(\mu,\nu)}\int_{X\times Y}c(x,y)\thinspace d\pi(x,y)
+\mathrm{OT}\_c(\mu,\nu)=\inf_{\pi\in\Pi(\mu,\nu)}\int_{X\times Y}c(x,y)\thinspace d\pi(x,y)
 $$
 
 $\Pi(\mu,\nu)$ 는 $\mu\otimes\nu$ 를 포함하므로 비어 있지 않고 볼록이며 약위상에서 콤팩트하다. $c$ 가 하반연속이면 최소값이 달성된다.
@@ -83,7 +83,7 @@ $\Pi(\mu,\nu)$ 는 $\mu\otimes\nu$ 를 포함하므로 비어 있지 않고 볼�
 $p\ge1$ 에 대해 $c(x,y)=|x-y|^p$ 로 두고 다음으로 정의한다.
 
 $$
-W_p(\mu,\nu)=\mathrm{OT}_{|x-y|^p}(\mu,\nu)^{1/p}
+W_p(\mu,\nu)=\mathrm{OT}\_{|x-y|^p}(\mu,\nu)^{1/p}
 $$
 
 $p$ 차 적률이 유한한 확률측도들의 공간 $\mathcal P_p(X)$ 위에서 거리가 되고, 삼각부등식은 결합측도를 이어 붙이는 접합 보조정리로 증명한다.
@@ -95,7 +95,7 @@ $W_p$ 는 [약수렴](weak-convergence.md)을 거리화한다. $W_p(\mu_n,\mu)\t
 Kantorovich 문제는 무한차원 선형계획이므로 쌍대가 있다.
 
 $$
-\mathrm{OT}_c(\mu,\nu)=\sup\Big\lbrace\int\varphi\thinspace d\mu+\int\psi\thinspace d\nu\ :\ \varphi(x)+\psi(y)\le c(x,y)\Big\rbrace
+\mathrm{OT}\_c(\mu,\nu)=\sup\Big\lbrace\int\varphi\thinspace d\mu+\int\psi\thinspace d\nu\ :\ \varphi(x)+\psi(y)\le c(x,y)\Big\rbrace
 $$
 
 $\varphi$ 를 출발지에서 받는 값, $\psi$ 를 도착지에서 받는 값으로 읽으면 제약은 직접 옮기는 비용보다 더 받을 수 없다는 조건이고, 최적에서 두 값이 같다는 것이 강쌍대성이다.
@@ -159,7 +159,7 @@ $u,v$ 를 주변분포 조건에 맞추는 일만 남고, 두 조건을 번갈�
 $(\mathcal P_2(\mathbb R^d),W_2)$ 는 측지 거리공간이고 $\mu$ 에서 $\nu$ 로 가는 측지선은 최적 사상을 따라 선형보간한 것이다.
 
 $$
-\mu_t=\big((1-t)\thinspace\mathrm{id}+tT\big)_{\char35{}}\mu
+\mu_t=\big((1-t)\thinspace\mathrm{id}+tT\big)\_{\char35{}}\mu
 $$
 
 **변위 보간**이라 한다. 두 밀도를 값으로 섞는 $(1-t)\mu+t\nu$ 와 다르다. 값 보간은 디랙 둘을 섞어 봉우리 두 개를 만들고 변위 보간은 봉우리 하나를 옮긴다.

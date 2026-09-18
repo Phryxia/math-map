@@ -61,7 +61,7 @@ $H^2(\mathbb Z/2,\mathbb Z/2)$ 의 원소가 두 개이고, 그 둘이 정확히
 합성열의 유일성은 Zassenhaus 의 **나비 보조정리**에서 나온다. 두 부분군 쌍 $(A\triangleleft A^\ast)$ 와 $(B\triangleleft B^\ast)$ 에 대해
 
 $$
-\frac{A(A^*\cap B^*)}{A(A^*\cap B)}\ \cong\ \frac{B(A^*\cap B^*)}{B(A\cap B^*)}
+\frac{A(A^\ast\cap B^\ast)}{A(A^\ast\cap B)}\ \cong\ \frac{B(A^\ast\cap B^\ast)}{B(A\cap B^\ast)}
 $$
 
 가 성립한다. 여기서 임의의 두 부분정규열이 동형인 세분을 갖는다는 Schreier 세분 정리가 나오고, 합성열은 더 세분할 수 없으므로 두 합성열이 동형이다.

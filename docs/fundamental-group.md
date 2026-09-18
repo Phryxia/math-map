@@ -31,13 +31,13 @@ $$
 경로 호모토피는 loop 들 사이의 [동치관계](relations.md)이고, $f$ 의 동치류를 $[f]$ 로 표기한다. 연접은 다음으로 정의된다.
 
 $$
-(f*g)(s)=\begin{cases} f(2s), & 0\le s\le \tfrac12\cr g(2s-1), & \tfrac12\le s\le 1\end{cases}
+(f\astg)(s)=\begin{cases} f(2s), & 0\le s\le \tfrac12\cr g(2s-1), & \tfrac12\le s\le 1\end{cases}
 $$
 
 기본군은 이 연산을 가진 동치류들의 집합이다[^1].
 
 $$
-\pi_1(X,x_0)=\bigl\lbrace\thinspace[f]\ \big|\ f\ \text{는 } x_0 \text{ 기반 loop}\thinspace\bigr\rbrace,\qquad [f]\cdot[g]=[f*g]
+\pi_1(X,x_0)=\bigl\lbrace\thinspace[f]\ \big|\ f\ \text{는 } x_0 \text{ 기반 loop}\thinspace\bigr\rbrace,\qquad [f]\cdot[g]=[f\astg]
 $$
 
 항등원은 상수 loop의 류이고 역원은 방향을 뒤집은 loop의 류다.
@@ -47,7 +47,7 @@ $$
 $X$ 가 경로연결(path-connected)이면 서로 다른 기준점에서 얻은 기본군은 동형이므로 기준점을 생략하고 적기도 한다. 연속사상 $h$ 가 $X$ 의 $x_0$ 를 $Y$ 의 $y_0$ 로 보내면 다음 준동형이 유도된다.
 
 $$
-h_*:\pi_1(X,x_0)\to\pi_1(Y,y_0),\qquad h_*[f]=[h\circ f]
+h_\ast:\pi_1(X,x_0)\to\pi_1(Y,y_0),\qquad h_\ast[f]=[h\circ f]
 $$
 
 항등사상은 항등준동형으로, 합성은 합성으로 가므로 기본군은 함자다. 따라서 $X$ 와 $Y$ 가 위상동형이면 기본군이 동형이다. 기본군이 자명한 경로연결 공간을 **단일연결**(simply connected)이라 한다.
@@ -57,7 +57,7 @@ $$
 연속 전사 $p$ 가 **피복사상**(covering map)이라는 것은 밑공간의 각 점이 열린근방 $U$ 를 가져 그 역상이 서로소인 열린집합들의 합집합이고 각 조각이 $p$ 에 의해 $U$ 와 위상동형이 되는 것이다.
 
 $$
-p^{-1}(U)=\bigsqcup_{\alpha}V_\alpha,\qquad p\big|_{V_\alpha}:V_\alpha\xrightarrow{\ \cong\ }U
+p^{-1}(U)=\bigsqcup_{\alpha}V_\alpha,\qquad p\big|\_{V_\alpha}:V_\alpha\xrightarrow{\ \cong\ }U
 $$
 
 피복공간은 기본군 계산의 주된 도구다. 핵심 보조정리는 경로 올림(path lifting)과 호모토피 올림(homotopy lifting)이며, 둘 모두 올림이 시작점을 정하면 유일하다.
@@ -96,7 +96,7 @@ $$
 증명 개요. 고정점이 없다고 가정하면 각 점 x에서 f(x)에서 x로 향하는 방향으로 반직선을 그어 경계와 만나는 점을 대응시키는 연속사상을 얻고, 이는 원판에서 경계 원으로의 retraction이 된다. 즉 경계의 포함사상 i와 이 retraction r에 대해 r∘i가 항등사상이다. 기본군의 functor 성질을 적용하면
 
 $$
-\pi_1(S^1)\xrightarrow{\thinspace i_*\thinspace}\pi_1(D^2)\xrightarrow{\thinspace r_*\thinspace}\pi_1(S^1)
+\pi_1(S^1)\xrightarrow{\thinspace i_\ast\thinspace}\pi_1(D^2)\xrightarrow{\thinspace r_\ast\thinspace}\pi_1(S^1)
 $$
 
 의 합성이 항등준동형이어야 한다. 그러나 가운데 군은 자명하므로 합성은 자명한 준동형이고, 정수군의 항등사상은 자명하지 않아 모순이다.

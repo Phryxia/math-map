@@ -96,7 +96,7 @@ graph TD
 
 ## 추상 영역과 Galois 연결
 
-완비 격자 $(C,\sqsubseteq)$ 를 구체 영역, $(A,\sqsubseteq^\sharp)$ 를 추상 영역이라 하고 단조사상 쌍 $\alpha,\gamma$ 가 Galois 연결을 이룬다고 하자. $\alpha\circ\gamma=\mathrm{id}_A$ 이면 **Galois 삽입**이며, 이때 추상 영역에 같은 것을 두 번 표현하는 잉여가 없다.
+완비 격자 $(C,\sqsubseteq)$ 를 구체 영역, $(A,\sqsubseteq^\sharp)$ 를 추상 영역이라 하고 단조사상 쌍 $\alpha,\gamma$ 가 Galois 연결을 이룬다고 하자. $\alpha\circ\gamma=\mathrm{id}\_A$ 이면 **Galois 삽입**이며, 이때 추상 영역에 같은 것을 두 번 표현하는 잉여가 없다.
 
 Galois 연결의 판정 조건이 설계에 쓰인다. $\gamma$ 를 먼저 정하고 그것이 하한을 보존하는지만 확인하면 $\alpha$ 는 자동으로 존재하고 유일하다.
 

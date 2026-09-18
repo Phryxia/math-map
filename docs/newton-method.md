@@ -43,7 +43,7 @@ $$
 $F$ 가 $n$ 차원 벡터값 함수일 때 접선 근사는 Jacobian 행렬로 주어진다.
 
 $$
-J(x)_{ij} = \frac{\partial F_i}{\partial x_j}(x),\qquad J(x_k)\thinspace\Delta_k = -F(x_k),\qquad x_{k+1} = x_k + \Delta_k .
+J(x)\_{ij} = \frac{\partial F_i}{\partial x_j}(x),\qquad J(x_k)\thinspace\Delta_k = -F(x_k),\qquad x_{k+1} = x_k + \Delta_k .
 $$
 
 역행렬을 명시적으로 구하지 않고 매 단계 선형계를 푼다. [행렬식](determinants.md)이 0에 가까우면(즉 Jacobian이 특이에 가까우면) 이 단계가 불안정해진다.

@@ -5,7 +5,7 @@
 유체론은 [수체](algebraic-number-fields.md) $K$ 의 아벨 확대를 $K$ 안의 산술 자료만으로 분류한다. 분류하는 자료가 유수군을 넓힌 **광선유군**이고, 분류를 실현하는 사상이 **Artin 상호법칙**이다.
 
 $$
-\mathrm{Cl}_{\mathfrak m}(K)/H \thickspace\xrightarrow{\ \sim\ }\thickspace \mathrm{Gal}(L/K)
+\mathrm{Cl}\_{\mathfrak m}(K)/H \thickspace\xrightarrow{\ \sim\ }\thickspace \mathrm{Gal}(L/K)
 $$
 
 $K$ 의 아벨 확대 $L$ 마다 광선유군의 부분군 하나가 대응하고 그 몫이 $\mathrm{Gal}(L/K)$ 와 동형이다. 확대체를 만들어 보지 않고 $K$ 의 아이디얼 산술만으로 아벨 확대의 목록을 읽어낼 수 있다.
@@ -19,7 +19,7 @@ $K$ 의 아벨 확대 $L$ 마다 광선유군의 부분군 하나가 대응하�
 $K=\mathbb Q$ 이고 $L=\mathbb Q(\zeta_m)$ 일 때
 
 $$
-\mathrm{Gal}(L/\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times,\qquad \mathrm{Frob}_p\longmapsto p\bmod m
+\mathrm{Gal}(L/\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times,\qquad \mathrm{Frob}\_p\longmapsto p\bmod m
 $$
 
 이고 $p$ 가 완전분해할 조건은 $\mathrm{Frob}\_p=1$ , 곧 $p\equiv1\pmod m$ 이다. 소수의 분해라는 대수적 질문이 나머지 계산으로 번역된다.
@@ -70,19 +70,19 @@ $K$ 의 **모듈러스** $\mathfrak m$ 은 형식적인 곱 $\mathfrak m=\mathfr
 **광선유군**은 그 몫이다.
 
 $$
-\mathrm{Cl}_{\mathfrak m}(K)=I_K^{\mathfrak m}/P_K^{\mathfrak m}
+\mathrm{Cl}\_{\mathfrak m}(K)=I_K^{\mathfrak m}/P_K^{\mathfrak m}
 $$
 
 언제나 유한군이고 $\mathfrak m=1$ 이면 유수군 $\mathrm{Cl}(K)$ 다. 크기는 다음 완전열이 결정한다.
 
 $$
-1\to\frac{\mathcal O_K^\times}{\mathcal O_{K,\mathfrak m}^\times}\to\frac{(\mathcal O_K/\mathfrak m_0)^\times\times\lbrace\pm1\rbrace^{\mathfrak m_\infty}}{1}\to\mathrm{Cl}_{\mathfrak m}(K)\to\mathrm{Cl}(K)\to1
+1\to\frac{\mathcal O_K^\times}{\mathcal O_{K,\mathfrak m}^\times}\to\frac{(\mathcal O_K/\mathfrak m_0)^\times\times\lbrace\pm1\rbrace^{\mathfrak m_\infty}}{1}\to\mathrm{Cl}\_{\mathfrak m}(K)\to\mathrm{Cl}(K)\to1
 $$
 
 $K=\mathbb Q$ 이고 $\mathfrak m=(m)\infty$ 이면 $\mathrm{Cl}(\mathbb Q)=1$ 이고 $\mathfrak m_\infty$ 조건이 양수만 남기므로
 
 $$
-\mathrm{Cl}_{(m)\infty}(\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times
+\mathrm{Cl}\_{(m)\infty}(\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times
 $$
 
 가 된다. $\mathfrak m_0$ 와 서로소인 분수 아이디얼은 양의 유리수 $a/b$ 로 유일하게 쓰이고 $P^{\mathfrak m}$ 은 $\equiv1\pmod m$ 인 것들이다.
@@ -93,7 +93,7 @@ $L/K$ 가 아벨 확대이고 $\mathfrak m$ 이 분기하는 모든 소수를 �
 
 $$
 \psi_{L/K}\colon I_K^{\mathfrak m}\to\mathrm{Gal}(L/K),\qquad
-\prod\mathfrak p_i^{a_i}\mapsto\prod\mathrm{Frob}_{\mathfrak p_i}^{a_i}
+\prod\mathfrak p_i^{a_i}\mapsto\prod\mathrm{Frob}\_{\mathfrak p_i}^{a_i}
 $$
 
 를 얻는다. 이것이 **Artin 사상**이다.
@@ -166,8 +166,8 @@ $\mathbb Q$ 의 아벨 확대 $L$ 의 도체를 $\mathfrak m\mid(m)\infty$ 로 �
 $p$ 가 홀소수고 $p^\ast=(-1)^{(p-1)/2}p$ 라 하면 $\mathbb Q(\sqrt{p^\ast})$ 는 $\mathbb Q(\zeta_p)$ 의 유일한 이차 부분체다. $\mathrm{Gal}(\mathbb Q(\zeta_p)/\mathbb Q)\cong(\mathbb Z/p\mathbb Z)^\times$ 의 지표 2 부분군인 제곱잉여들이 $\mathbb Q(\sqrt{p^\ast})$ 를 고정한다. 다른 소수 $q$ 에 대해
 
 $$
-\Big(\frac{p^*}q\Big)=1
-\iff \mathrm{Frob}_q \text{ 가 } \mathbb Q(\sqrt{p^*}) \text{ 를 고정}
+\Big(\frac{p^\ast}q\Big)=1
+\iff \mathrm{Frob}\_q \text{ 가 } \mathbb Q(\sqrt{p^\ast}) \text{ 를 고정}
 \iff q\bmod p \text{ 가 제곱잉여}
 \iff \Big(\frac qp\Big)=1
 $$
@@ -222,7 +222,7 @@ $x^2+5y^2$ 으로 표현되는 소수와 $H$ 에서 완전분해하는 소수가
 켤레류에서 수를 뽑는 방법은 표현의 지표를 취하는 것이다. Galois 표현 $\rho\colon\mathrm{Gal}(\bar K/K)\to\mathrm{GL}\_n(\mathbb C)$ 에 대해
 
 $$
-L(s,\rho)=\prod_{\mathfrak p}\det\big(1-\rho(\mathrm{Frob}_{\mathfrak p})N\mathfrak p^{-s}\big)^{-1}
+L(s,\rho)=\prod_{\mathfrak p}\det\big(1-\rho(\mathrm{Frob}\_{\mathfrak p})N\mathfrak p^{-s}\big)^{-1}
 $$
 
 를 만들면 $n=1$ 일 때 Hecke $L$ 함수이고, 유체론은 그 $L$ 함수가 자기동형 $L$ 함수와 일치한다는 진술이 된다.

@@ -35,7 +35,7 @@ $$
 토러스를 $T$ , 사영평면을 $P$ 로 쓰고 연결합을 다음과 같이 줄여 쓴다.
 
 $$
-gT = \underbrace{T \mathbin{\char35{}} \cdots \mathbin{\char35{}} T}_{g}, \qquad kP = \underbrace{P \mathbin{\char35{}} \cdots \mathbin{\char35{}} P}_{k}
+gT = \underbrace{T \mathbin{\char35{}} \cdots \mathbin{\char35{}} T}\_{g}, \qquad kP = \underbrace{P \mathbin{\char35{}} \cdots \mathbin{\char35{}} P}\_{k}
 $$
 
 $gT$ 의 $g$ 가 **종수**(genus)다.

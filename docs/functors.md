@@ -23,7 +23,7 @@ Functor 는 가환 그림을 가환 그림으로, 동형을 동형으로 옮긴�
 범주 $C$ , $D$ 에 대해 functor $F : C \to D$ 는 $C$ 의 각 대상 $A$ 에 $D$ 의 대상 $F(A)$ 를, 각 사상 $f : A \to B$ 에 사상 $F(f) : F(A) \to F(B)$ 를 대응시키되 다음을 만족하는 것이다.
 
 $$
-F(g\circ f)=F(g)\circ F(f),\qquad F(\mathrm{id}_A)=\mathrm{id}_{F(A)}
+F(g\circ f)=F(g)\circ F(f),\qquad F(\mathrm{id}\_A)=\mathrm{id}\_{F(A)}
 $$
 
 ## Contravariant functor
@@ -38,7 +38,7 @@ $$
 
 ## Hom functor
 
-대상 $c$ 를 고정한 $\mathrm{Hom}_C(c, -)$ 는 대상 $d$ 를 집합 $\mathrm{Hom}(c, d)$ 로, 사상 $f : d \to d'$ 를 뒤에 $f$ 를 합성하는 사상으로 보내는 공변 functor 다. 두 번째 변수를 고정한 $\mathrm{Hom}_C(-, d)$ 는 앞에 합성하는 반변 functor 다. Yoneda lemma 가 이 두 functor 를 다룬다.
+대상 $c$ 를 고정한 $\mathrm{Hom}\_C(c, -)$ 는 대상 $d$ 를 집합 $\mathrm{Hom}(c, d)$ 로, 사상 $f : d \to d'$ 를 뒤에 $f$ 를 합성하는 사상으로 보내는 공변 functor 다. 두 번째 변수를 고정한 $\mathrm{Hom}\_C(-, d)$ 는 앞에 합성하는 반변 functor 다. Yoneda lemma 가 이 두 functor 를 다룬다.
 
 ## 충실성과 충만성
 
@@ -57,7 +57,7 @@ $$
 $f$ 의 역을 $g$ 라 하면 다음이 성립한다.
 
 $$
-F(g)\circ F(f)=F(g\circ f)=F(\mathrm{id}_A)=\mathrm{id}_{F(A)}
+F(g)\circ F(f)=F(g\circ f)=F(\mathrm{id}\_A)=\mathrm{id}\_{F(A)}
 $$
 
 반대 순서도 같으므로 $F(f)$ 는 동형이다. 역은 성립하지 않는다. 모든 것을 대상 하나와 항등사상 하나뿐인 범주로 보내는 functor 에서는 비가역 사상도 항등사상이 된다. Functor 가 잃는 정보의 양을 재는 것이 위의 충실성과 충만성이다.

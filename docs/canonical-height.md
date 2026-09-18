@@ -5,14 +5,14 @@
 **Mordell–Weil 정리**는 [타원곡선](elliptic-curves.md)의 유리점 전체 $E(\mathbb Q)$ 가 유한생성 아벨군이라고 말한다.
 
 $$
-E(\mathbb Q)\ \cong\ \mathbb Z^r\ \oplus\ E(\mathbb Q)_{\mathrm{tors}}
+E(\mathbb Q)\ \cong\ \mathbb Z^r\ \oplus\ E(\mathbb Q)\_{\mathrm{tors}}
 $$
 
 증명은 두 부분이다. **약한 Mordell–Weil 정리**, 곧 $E(\mathbb Q)/2E(\mathbb Q)$ 가 유한하다는 것은 하강으로 얻는다. 유한한 몫에서 유한생성을 얻으려면 무한히 내려갈 수 없다는 장치가 더 필요하다.
 
 그 장치가 **높이**다. 유리점에 적는 데 드는 비용을 재는 실수를 붙이고 점을 두 배 하면 비용이 네 배가 됨을 보이면 무한강하법이 작동한다. 순진하게 정의한 높이는 이 관계를 오차 범위 안에서만 만족하고, Tate 의 극한 조작이 오차를 지운다. 그 결과가 정확한 이차형식인 **Néron–Tate 높이** $\hat h$ 다.
 
-생성원들의 높이 쌍 행렬식이 조절자 $\mathrm{Reg}_E$ 이고 [BSD 추측](birch-swinnerton-dyer.md)의 선행계수에 들어간다. Gross–Zagier 공식이 $L'(E,1)$ 과 같다고 말하는 대상도 Heegner 점의 정준 높이다.
+생성원들의 높이 쌍 행렬식이 조절자 $\mathrm{Reg}\_E$ 이고 [BSD 추측](birch-swinnerton-dyer.md)의 선행계수에 들어간다. Gross–Zagier 공식이 $L'(E,1)$ 과 같다고 말하는 대상도 Heegner 점의 정준 높이다.
 
 # 직관
 
@@ -81,7 +81,7 @@ $$
 가 쌍선형이고 자유 부분 $E(\mathbb Q)\otimes\mathbb R$ 위에서 양정치다. 생성원 $P_1,\dots,P_r$ 에 대해
 
 $$
-\mathrm{Reg}_E=\det\bigl(\langle P_i,P_j\rangle\bigr)_{1\le i,j\le r}
+\mathrm{Reg}\_E=\det\bigl(\langle P_i,P_j\rangle\bigr)\_{1\le i,j\le r}
 $$
 
 가 **조절자**이며, 격자 $E(\mathbb Q)/\mathrm{tors}$ 가 얼마나 성긴지를 재는 부피다.
@@ -123,10 +123,10 @@ $$
 ## BSD 의 선행계수
 
 $$
-\frac{L^{(r)}(E,1)}{r!}=\frac{\Omega_E\cdot\mathrm{Reg}_E\cdot\char35{}\text{Ш}\cdot\prod_p c_p}{\bigl(\char35{}E(\mathbb Q)_{\mathrm{tors}}\bigr)^2}
+\frac{L^{(r)}(E,1)}{r!}=\frac{\Omega_E\cdot\mathrm{Reg}\_E\cdot\char35{}\text{Ш}\cdot\prod_p c_p}{\bigl(\char35{}E(\mathbb Q)\_{\mathrm{tors}}\bigr)^2}
 $$
 
-좌변을 수치로 계산하고 $\mathrm{Reg}_E$ 를 포함한 우변의 다른 인자를 구하면 $\char35{}\text{Ш}$ 의 예측값이 나온다. 이 값이 완전제곱수 근처의 정수로 떨어지는지가 공식의 정합성 검사이며, 조절자를 충분한 정확도로 계산할 수 있어야 한다.
+좌변을 수치로 계산하고 $\mathrm{Reg}\_E$ 를 포함한 우변의 다른 인자를 구하면 $\char35{}\text{Ш}$ 의 예측값이 나온다. 이 값이 완전제곱수 근처의 정수로 떨어지는지가 공식의 정합성 검사이며, 조절자를 충분한 정확도로 계산할 수 있어야 한다.
 
 ## Gross–Zagier 공식
 

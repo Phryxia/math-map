@@ -114,7 +114,7 @@ $$
 확률측도 $Q$ 가 $P$ 에 대해 절대연속이면 $dQ/dP$ 가 우도비이고
 
 $$
-\mathbb{E}_Q[X]=\mathbb{E}_P\negthinspace\left[X\frac{dQ}{dP}\right]
+\mathbb{E}\_Q[X]=\mathbb{E}\_P\negthinspace\left[X\frac{dQ}{dP}\right]
 $$
 
 가 성립한다. 중요도 표본추출, 우도비 검정, 위험중립 가격결정, 확률미분방정식의 Girsanov 정리가 이 항등식을 쓴다. 두 측도가 절대연속이 아니면 변환이 정의되지 않는다.

@@ -65,16 +65,16 @@ $$
 $\mathcal P_2(\mathbb R^d)$ 위의 범함수를 세 항으로 적는다.
 
 $$
-\mathcal F(\rho)=\underbrace{\int V\rho}_{\text{퍼텐셜}}
-+\underbrace{\frac12\iint W(x-y)\rho(x)\rho(y)}_{\text{상호작용}}
-+\underbrace{\int\rho\log\rho}_{\text{내부 에너지}}
+\mathcal F(\rho)=\underbrace{\int V\rho}\_{\text{퍼텐셜}}
++\underbrace{\frac12\iint W(x-y)\rho(x)\rho(y)}\_{\text{상호작용}}
++\underbrace{\int\rho\log\rho}\_{\text{내부 에너지}}
 $$
 
 **Wasserstein 기울기 흐름**은 연속방정식에 속도장 $v=-\nabla\frac{\delta\mathcal F}{\delta\rho}$ 를 넣은 것이다.
 
 $$
 \partial_t\rho=\nabla\negthinspace\cdot\negthinspace\Big(\rho\thinspace\nabla\frac{\delta\mathcal F}{\delta\rho}\Big)
-=\nabla\negthinspace\cdot\negthinspace\big(\rho\nabla V\big)+\nabla\negthinspace\cdot\negthinspace\big(\rho(\nabla W*\rho)\big)+\Delta\rho
+=\nabla\negthinspace\cdot\negthinspace\big(\rho\nabla V\big)+\nabla\negthinspace\cdot\negthinspace\big(\rho(\nabla W\ast\rho)\big)+\Delta\rho
 $$
 
 $W=0$ 이면 Fokker–Planck, $V=W=0$ 이면 열방정식, 내부 에너지를 $\frac1{m-1}\int\rho^m$ 으로 바꾸면 다공질 매질 방정식이다.
@@ -91,7 +91,7 @@ $$
 
 ## 변위 볼록성
 
-$\mu_0,\mu_1$ 사이의 $W_2$ 측지선 $(\mu_t)_{t\in[0,1]}$ 을 따라
+$\mu_0,\mu_1$ 사이의 $W_2$ 측지선 $(\mu_t)\_{t\in[0,1]}$ 을 따라
 
 $$
 \mathcal F(\mu_t)\le(1-t)\mathcal F(\mu_0)+t\mathcal F(\mu_1)-\frac\lambda2t(1-t)W_2^2(\mu_0,\mu_1)

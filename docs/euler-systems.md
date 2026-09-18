@@ -9,7 +9,7 @@
 방정식의 출처는 대역 상호법칙이다. [유체론](class-field-theory.md)의 진술 "국소 불변량의 합은 0" 이 코호몰로지로 올라가면 두 대역류의 국소 짝의 합이 0 이라는 항등식이 된다. 대역류 $c$ 에 대해 미지의 Selmer 원소 $s$ 는
 
 $$
-\sum_v \big\langle \mathrm{loc}_v(c),\ \mathrm{loc}_v(s)\big\rangle_v=0
+\sum_v \big\langle \mathrm{loc}\_v(c),\ \mathrm{loc}\_v(s)\big\rangle_v=0
 $$
 
 를 만족한다. 항 대부분이 0 이 되도록 $c$ 를 고르면 남은 한 항이 $s$ 의 국소 성분을 0 으로 만든다. 그런 $c$ 를 자리마다 하나씩 공급하는 장치가 Euler 계다.
@@ -20,18 +20,18 @@ Euler 계의 정의는 수체의 탑 위에 얹힌 대수적 원소들이 **자�
 
 ## Selmer 군의 상계 문제
 
-$\mathrm{Sel}_p(E/K)\subset H^1(K,E[p])$ 는 모든 자리에서 국소 조건을 만족하는 류의 집합이다. 이 정의는 원소를 거르지만 원소가 없음을 보이지는 않는다.
+$\mathrm{Sel}\_p(E/K)\subset H^1(K,E[p])$ 는 모든 자리에서 국소 조건을 만족하는 류의 집합이다. 이 정의는 원소를 거르지만 원소가 없음을 보이지는 않는다.
 
 Selmer 군은 부등식으로만 주어진 볼록집합에 해당하고, 선형 방정식을 더하면 차원이 떨어진다. 방정식은 대역적으로 존재하는 코호몰로지 류에서만 나오므로, 대수적으로 만들 수 있는 류의 개수가 Selmer 군을 누르는 정도를 결정한다.
 
 ## 쓸모 있는 류의 조건
 
-상호법칙의 항등식 $\sum_v\langle \mathrm{loc}_v c,\mathrm{loc}_v s\rangle_v=0$ 에서 $c$ 와 $s$ 가 모두 Selmer 군에 있으면 Selmer 조건이 국소 짝에 대해 자기쌍대이므로 모든 항이 0 이고, 아무 정보도 얻지 못한다.
+상호법칙의 항등식 $\sum_v\langle \mathrm{loc}\_v c,\mathrm{loc}\_v s\rangle_v=0$ 에서 $c$ 와 $s$ 가 모두 Selmer 군에 있으면 Selmer 조건이 국소 짝에 대해 자기쌍대이므로 모든 항이 0 이고, 아무 정보도 얻지 못한다.
 
 필요한 것은 한 자리 $\ell$ 에서만 조건을 어기는 류다. 그러면 항등식이
 
 $$
-\big\langle \mathrm{loc}_\ell(c),\ \mathrm{loc}_\ell(s)\big\rangle_\ell=0
+\big\langle \mathrm{loc}\_\ell(c),\ \mathrm{loc}\_\ell(s)\big\rangle_\ell=0
 $$
 
 하나로 줄고, $\mathrm{loc}\_\ell(c)\ne0$ 이면 $\mathrm{loc}\_\ell(s)$ 가 그 짝에 대해 직교하도록 강제된다. $\ell$ 자리의 국소 코호몰로지가 $p$ 위에서 2 차원이고 두 조각이 서로 소멸자이므로, 이 직교성은 $\mathrm{loc}\_\ell(s)=0$ 을 뜻한다. 여기에 [Chebotarev](chebotarev.md) 를 써서 $\mathrm{loc}\_\ell(s)\ne0$ 인 $\ell$ 을 미리 골라 두면 모순이 나고 $s=0$ 이 된다.
@@ -45,7 +45,7 @@ Euler 계 논법은 한 자리에서만 어긋난 대역류를 자리를 골라 
 이 원소들은 탑 위에서 자취로 이어져 있다. Heegner 점이라면
 
 $$
-\mathrm{Tr}_{K_{n\ell}/K_n}\big(y_{n\ell}\big)=a_\ell\thinspace y_n
+\mathrm{Tr}\_{K_{n\ell}/K_n}\big(y_{n\ell}\big)=a_\ell\thinspace y_n
 $$
 
 이고 자취가 Hecke 고유값으로 떨어진다. $p\mid a_\ell$ 인 소수 $\ell$ 을 고르면 자취가 $p$ 를 법으로 0 이 된다. 자취가 0 인 원소에는 군환에서 나눗셈에 해당하는 조작이 가능하고, 그 결과가 어긋난 류다.
@@ -79,9 +79,9 @@ $m=\ell+1$ 과 $a_\ell$ 이 모두 $p$ 로 나뉘는 소수 $\ell$ 이 **Kolyvag
 자취 관계에 나타나는 계수의 일반적인 형태는
 
 $$
-\mathrm{Tr}_{K(n\ell)/K(n)}\big(c_{n\ell}\big)=P_\ell\negthinspace\left(\mathrm{Fr}_\ell^{-1}\right)\thinspace c_n,
+\mathrm{Tr}\_{K(n\ell)/K(n)}\big(c_{n\ell}\big)=P_\ell\negthinspace\left(\mathrm{Fr}\_\ell^{-1}\right)\thinspace c_n,
 \qquad
-P_\ell(x)=\det\negthinspace\left(1-\mathrm{Fr}_\ell\thinspace x\ \middle|\ T^{*}\right)
+P_\ell(x)=\det\negthinspace\left(1-\mathrm{Fr}\_\ell\thinspace x\ \middle|\ T^{\ast}\right)
 $$
 
 이고, $P_\ell$ 은 그 표현의 $L$ 함수의 $\ell$ 번째 Euler 인자다. Euler 계는 $L$ 함수의 Euler 곱을 계수로 지니고 탑 위에 놓인 원소들의 열이다. $L$ 함수와 Selmer 군을 잇는 다리가 이 계수이며, BSD 와 Iwasawa 주추측의 증명이 이를 쓴다.
@@ -107,10 +107,10 @@ $K$ 를 수체, $T$ 를 $G_K$ 가 작용하는 유한생성 $\mathbb Z_p$ 가군
 **정의.** 류의 족 $c=\lbrace c_n\rbrace_{n\in\mathcal N}$ 으로 $c_n\in H^1(K(n),T)$ 인 것이 **Euler 계**라는 것은 모든 $n$ 과 $\ell\nmid n$ 에 대해
 
 $$
-\mathrm{cor}_{K(n\ell)/K(n)}\big(c_{n\ell}\big)=P_\ell\negthinspace\left(\mathrm{Fr}_\ell^{-1}\right)c_n
+\mathrm{cor}\_{K(n\ell)/K(n)}\big(c_{n\ell}\big)=P_\ell\negthinspace\left(\mathrm{Fr}\_\ell^{-1}\right)c_n
 $$
 
-를 만족한다는 뜻이다. $\mathrm{cor}$ 는 코제한(자취)이고 $P_\ell(x)=\det(1-\mathrm{Fr}_\ell x\mid T^{\ast})$ 다.
+를 만족한다는 뜻이다. $\mathrm{cor}$ 는 코제한(자취)이고 $P_\ell(x)=\det(1-\mathrm{Fr}\_\ell x\mid T^{\ast})$ 다.
 
 $T=\mathbb Z_p(1)$ 이면 $P_\ell(x)=1-x$ 이고 $H^1(K(n),\mathbb Z_p(1))$ 은 단수군의 완비화이므로, 순환체의 단수 $1-\zeta_n$ 이 이 정의를 만족한다. $T=T_pE$ 면 $P_\ell(x)=1-a_\ell x+\ell x^{2}$ 다.
 
@@ -130,7 +130,7 @@ $$
 p\mid \ell+1,\qquad p\mid a_\ell
 $$
 
-를 만족한다는 뜻이다. 마지막 두 조건은 $\mathrm{Fr}_\ell$ 이 $\mathbb Q(E[p],\mu_p)$ 위에서 복소켤레와 공액이라는 한 조건으로 묶인다. Chebotarev 에 의해 이런 $\ell$ 은 양의 밀도로 무한히 많고, 추가 조건을 붙여 가며 고를 수 있다. 논법이 쓰는 것은 이 선택의 자유다.
+를 만족한다는 뜻이다. 마지막 두 조건은 $\mathrm{Fr}\_\ell$ 이 $\mathbb Q(E[p],\mu_p)$ 위에서 복소켤레와 공액이라는 한 조건으로 묶인다. Chebotarev 에 의해 이런 $\ell$ 은 양의 밀도로 무한히 많고, 추가 조건을 붙여 가며 고를 수 있다. 논법이 쓰는 것은 이 선택의 자유다.
 
 $n$ 을 Kolyvagin 소수들의 곱이라 하고 $K_n$ 을 도체 $n$ 의 링 유체, $G_n=\mathrm{Gal}(K_n/K_1)\cong\prod_{\ell\mid n}G_\ell$ 라 쓴다. $G_\ell$ 은 위수 $\ell+1$ 인 순환군이다.
 
@@ -149,7 +149,7 @@ $n=1$ 이면 $\kappa_1$ 이 Heegner 점 $y_K$ 의 Kummer 상이고 Selmer 군에
 각 자리 $v$ 에서 부분군 $H^1_{\mathcal F}(K_v,E[p])\subset H^1(K_v,E[p])$ 를 고르는 것을 **Selmer 구조**라 하고
 
 $$
-\mathrm{Sel}_{\mathcal F}(K,E[p])=\left\lbrace\thinspace s\in H^1(K,E[p])\ :\ \mathrm{loc}_v(s)\in H^1_{\mathcal F}(K_v,E[p])\ \ \forall v\thinspace\right\rbrace
+\mathrm{Sel}\_{\mathcal F}(K,E[p])=\left\lbrace\thinspace s\in H^1(K,E[p])\ :\ \mathrm{loc}\_v(s)\in H^1_{\mathcal F}(K_v,E[p])\ \ \forall v\thinspace\right\rbrace
 $$
 
 를 그 Selmer 군이라 한다. 표준 선택은 $H^1_f(K_v,E[p])=\mathrm{im}\big(E(K_v)/p\big)$ 이고 이때 Selmer 군이 보통의 $\mathrm{Sel}^p(E/K)$ 다.
@@ -161,7 +161,7 @@ Kolyvagin 소수 $\ell$ 에서는 $H^1(K_\lambda,E[p])$ 이 $\mathbb F_p$ 위 2 
 | 유한부(비분기) | $H^1_f(K_\lambda,E[p])$ | $H^1(\mathrm{Fr}\_\lambda\text{ 불변})$ 이고 $E(K_\lambda)/p$ 의 상 |
 | 특이부(가로지름) | $H^1_s(K_\lambda,E[p])$ | 몫 $H^1/H^1_f$ 이고 분기류의 잔여 |
 
-$p\mid\ell+1$ 과 $p\mid a_\ell$ 에서 $E[p]$ 위의 $\mathrm{Fr}_\lambda$ 작용이 $\pm1$ 을 고윳값으로 가지므로 두 조각이 각각 1 차원이다. 국소 Tate 짝 $H^1_f\times H^1_s\to\mathbb F_p$ 는 완전 짝이다.
+$p\mid\ell+1$ 과 $p\mid a_\ell$ 에서 $E[p]$ 위의 $\mathrm{Fr}\_\lambda$ 작용이 $\pm1$ 을 고윳값으로 가지므로 두 조각이 각각 1 차원이다. 국소 Tate 짝 $H^1_f\times H^1_s\to\mathbb F_p$ 는 완전 짝이다.
 
 # 성질
 
@@ -170,8 +170,8 @@ $p\mid\ell+1$ 과 $p\mid a_\ell$ 에서 $E[p]$ 위의 $\mathrm{Fr}_\lambda$ 작�
 $\kappa_n$ 의 국소 성분은 다음과 같다.
 
 $$
-\mathrm{loc}_v(\kappa_n)\in H^1_f(K_v,E[p])\quad(v\nmid n),\qquad
-\mathrm{loc}_\ell(\kappa_n)\ \text{는 }\ell\mid n\text{ 에서 분기할 수 있다}
+\mathrm{loc}\_v(\kappa_n)\in H^1_f(K_v,E[p])\quad(v\nmid n),\qquad
+\mathrm{loc}\_\ell(\kappa_n)\ \text{는 }\ell\mid n\text{ 에서 분기할 수 있다}
 $$
 
 $\kappa_n$ 은 $n$ 을 나누는 자리에서만 Selmer 조건을 어긴다. $D_\ell$ 이 $\ell$ 자리에서 관성군을 건드리므로 그 자리에서만 흔적이 남는다.
@@ -179,9 +179,9 @@ $\kappa_n$ 은 $n$ 을 나누는 자리에서만 Selmer 조건을 어긴다. $D_
 두 개의 **명시적 상호법칙**이 성립한다.
 
 $$
-\mathrm{loc}_\ell^{\thinspace f}(\kappa_{n\ell})\ \doteq\ \mathrm{loc}_\ell^{\thinspace f}(\kappa_n)\ \text{의 정보},
+\mathrm{loc}\_\ell^{\thinspace f}(\kappa_{n\ell})\ \doteq\ \mathrm{loc}\_\ell^{\thinspace f}(\kappa_n)\ \text{의 정보},
 \qquad
-\mathrm{loc}_\ell^{\thinspace s}(\kappa_{n\ell})\ \doteq\ \mathrm{loc}_\ell^{\thinspace f}(\kappa_n)
+\mathrm{loc}\_\ell^{\thinspace s}(\kappa_{n\ell})\ \doteq\ \mathrm{loc}\_\ell^{\thinspace f}(\kappa_n)
 $$
 
 앞의 것이 제 1 상호법칙, 뒤의 것이 제 2 상호법칙이다. 한 층 위의 류의 특이부가 한 층 아래 류의 유한부로 계산되므로, $\kappa_n$ 이 0 이 아니면 $\kappa_{n\ell}$ 의 특이부도 0 이 아니고 귀납이 돌아간다.
@@ -191,7 +191,7 @@ $$
 [Brauer 군](brauer-groups.md)과 [국소 유체론](local-class-field-theory.md)에서 본 "국소 불변량의 합은 0" 이 Poitou–Tate 완전열의 형태로 코호몰로지에 올라간다. $c,s\in H^1(K,E[p])$ 가 모두 대역류면
 
 $$
-\sum_v \big\langle \mathrm{loc}_v(c),\ \mathrm{loc}_v(s)\big\rangle_v=0
+\sum_v \big\langle \mathrm{loc}\_v(c),\ \mathrm{loc}\_v(s)\big\rangle_v=0
 $$
 
 이다. 합은 유한 개 항만 0 이 아니다. 이 항등식이 Euler 계 논법의 유일한 대역 입력이고, 나머지는 국소 계산과 Chebotarev 다.
@@ -209,19 +209,19 @@ $$
 **증명의 요지.** $s\in \mathrm{Sel}^p(E/K)$ 가 $\kappa_1$ 이 생성하는 부분군 밖에 있다고 하자. Chebotarev 로 Kolyvagin 소수 $\ell$ 을 골라 $\mathrm{loc}\_\ell(s)\ne0$ 이면서 $\mathrm{loc}\_\ell^{\thinspace f}(\kappa_1)\ne0$ 이 되게 한다. 상호법칙을 $c=\kappa_\ell$ 과 $s$ 에 적용하면 $\ell$ 을 뺀 모든 자리에서 두 류가 서로 소멸자에 놓이므로 항이 죽고
 
 $$
-\big\langle \mathrm{loc}_\ell^{\thinspace s}(\kappa_\ell),\ \mathrm{loc}_\ell^{\thinspace f}(s)\big\rangle_\ell=0
+\big\langle \mathrm{loc}\_\ell^{\thinspace s}(\kappa_\ell),\ \mathrm{loc}\_\ell^{\thinspace f}(s)\big\rangle_\ell=0
 $$
 
 만 남는다. 제 2 상호법칙으로 왼쪽 성분이 $\mathrm{loc}\_\ell^{\thinspace f}(\kappa_1)\ne0$ 과 같고 국소 짝이 완전하므로 $\mathrm{loc}\_\ell(s)=0$ 이며, $\ell$ 을 고른 방식과 모순이다. 따라서 $\mathrm{Sel}^p(E/K)$ 가 $\kappa_1$ 이 생성하는 것에 가깝고, $y_K$ 가 무한위수라는 가정과 합쳐 순위 1 과 $\text{Ш}$ 의 유한성이 나온다. $\square$
 
-$K$ 의 복소켤레에 대해 $E(K)$ 와 $\mathrm{Sel}$ 이 $\pm$ 고유공간으로 쪼개지고 $y_K$ 는 한쪽에만 산다. Kolyvagin 소수의 조건이 $\mathrm{Fr}_\ell$ 을 복소켤레와 묶어 두며, 부호가 맞지 않으면 상호법칙의 항이 죽어 정보가 사라진다.
+$K$ 의 복소켤레에 대해 $E(K)$ 와 $\mathrm{Sel}$ 이 $\pm$ 고유공간으로 쪼개지고 $y_K$ 는 한쪽에만 산다. Kolyvagin 소수의 조건이 $\mathrm{Fr}\_\ell$ 을 복소켤레와 묶어 두며, 부호가 맞지 않으면 상호법칙의 항이 죽어 정보가 사라진다.
 
 ## 명시적 상계: Kolyvagin 지표
 
 정리는 크기의 상계도 준다. $M_n$ 을 $\mathcal P_n$ 이 $E(K)/p^{M}$ 에서 소멸하지 않는 최대의 $M$ 이라 하고 $M_\infty=\min_n M_n$ 이라 하자. 그러면
 
 $$
-\mathrm{ord}_p\thinspace\char35{}\text{Ш}(E/K)[p^\infty]\ \le\ 2\thinspace\big(M_\infty-\mathrm{ord}_p[E(K):\mathbb Z y_K]\big)
+\mathrm{ord}\_p\thinspace\char35{}\text{Ш}(E/K)[p^\infty]\ \le\ 2\thinspace\big(M_\infty-\mathrm{ord}\_p[E(K):\mathbb Z y_K]\big)
 $$
 
 꼴의 부등식이 나온다. $\text{Ш}$ 가 교대 짝을 가져 위수가 제곱수라는 사실과 맞물려 이 상계는 BSD 의 예측값과 자주 일치한다. Heegner 점이 $p$ 로 나누어떨어지는 정도를 재는 것이 $\text{Ш}$ 를 재는 일이다.

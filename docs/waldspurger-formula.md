@@ -2,9 +2,9 @@
 
 # 개요
 
-[Gan–Gross–Prasad 추측](gan-gross-prasad.md)의 계수를 끝까지 내리면 쌍 $\mathrm{SO}(3)\times\mathrm{SO}(2)$ 가 남는다. $\mathrm{SO}(3)$ 는 $\mathrm{PGL}_2$ 이고 $\mathrm{SO}(2)$ 는 토러스다. 이 경우의 GGP 는 1985 년에 증명된 **Waldspurger 정리**다.
+[Gan–Gross–Prasad 추측](gan-gross-prasad.md)의 계수를 끝까지 내리면 쌍 $\mathrm{SO}(3)\times\mathrm{SO}(2)$ 가 남는다. $\mathrm{SO}(3)$ 는 $\mathrm{PGL}\_2$ 이고 $\mathrm{SO}(2)$ 는 토러스다. 이 경우의 GGP 는 1985 년에 증명된 **Waldspurger 정리**다.
 
-$\mathrm{PGL}_2$ 위의 첨점형식 $\pi$ 와 허수이차체 $K$ 의 지표 $\chi$ 에 대해 **토릭 주기**를 정의한다.
+$\mathrm{PGL}\_2$ 위의 첨점형식 $\pi$ 와 허수이차체 $K$ 의 지표 $\chi$ 에 대해 **토릭 주기**를 정의한다.
 
 $$
 \mathcal P_\chi(\varphi)=\int_{\mathbb A_F^\times K^\times\backslash\thinspace\mathbb A_K^\times}\varphi(t)\thinspace\chi^{-1}(t)\thinspace dt
@@ -25,9 +25,9 @@ $L(1/2)$ 가 함수방정식의 부호 때문에 0 이 되는 경우에는 주�
 
 ## 토러스의 자리
 
-$\mathrm{SO}(2)$ 는 원군이고, 수체 위에서는 이차체 $K$ 가 주는 토러스 $T=\mathrm{Res}_{K/F}\mathbb G_m/\mathbb G_m$ 이다. 사원수 대수 $B$ 안에 $K$ 가 들어가면 $K^\times$ 는 $B^\times$ 의 극대 토러스가 되고, $B^\times/F^\times\cong\mathrm{SO}(3)$ 에서 축 하나를 고정하는 회전군이다. GGP 의 쌍 $(\mathrm{SO}(3),\mathrm{SO}(2))$ 는 3 차원 이차공간 안에서 1 차원 부분공간을 고르는 일이고, 고르는 방식이 $K$ 다.
+$\mathrm{SO}(2)$ 는 원군이고, 수체 위에서는 이차체 $K$ 가 주는 토러스 $T=\mathrm{Res}\_{K/F}\mathbb G_m/\mathbb G_m$ 이다. 사원수 대수 $B$ 안에 $K$ 가 들어가면 $K^\times$ 는 $B^\times$ 의 극대 토러스가 되고, $B^\times/F^\times\cong\mathrm{SO}(3)$ 에서 축 하나를 고정하는 회전군이다. GGP 의 쌍 $(\mathrm{SO}(3),\mathrm{SO}(2))$ 는 3 차원 이차공간 안에서 1 차원 부분공간을 고르는 일이고, 고르는 방식이 $K$ 다.
 
-$\chi$ 는 $K$ 위의 $\mathrm{GL}_1$ 자기동형 표현이고 $\pi_K$ 는 $\pi$ 의 기저변환이므로, 중심값은 $K$ 위의 $\mathrm{GL}_2\times\mathrm{GL}_1$ Rankin–Selberg $L$ 함수의 값이다. [Rankin–Selberg 적분](rankin-selberg.md)이 놓일 자리에 주기 적분이 들어선다.
+$\chi$ 는 $K$ 위의 $\mathrm{GL}\_1$ 자기동형 표현이고 $\pi_K$ 는 $\pi$ 의 기저변환이므로, 중심값은 $K$ 위의 $\mathrm{GL}\_2\times\mathrm{GL}\_1$ Rankin–Selberg $L$ 함수의 값이다. [Rankin–Selberg 적분](rankin-selberg.md)이 놓일 자리에 주기 적분이 들어선다.
 
 ## 사원수 대수와 순수 내부형식
 
@@ -54,7 +54,7 @@ $$
 |c(|D|)|^2\ \sim\ |D|^{k-1/2}\thinspace\frac{L\negthinspace\left(\tfrac12,\ f\otimes\chi_D\right)}{\langle f,f\rangle}
 $$
 
-좌변은 $q$ 전개 계수라 계산으로 뽑을 수 있고 우변은 $L$ 함수의 중심값이다. 두 얼굴이 같은 정리인 근거는 Shimura 대응이 theta 대응이라는 데 있다. 쌍대쌍 $(\widetilde{\mathrm{SL}}_2,\mathrm{PGL}_2)$ 의 theta 올림이 한쪽에서는 반정수 무게 형식의 계수를, 다른 쪽에서는 토릭 주기를 내놓는다([theta 급수](theta-functions.md)).
+좌변은 $q$ 전개 계수라 계산으로 뽑을 수 있고 우변은 $L$ 함수의 중심값이다. 두 얼굴이 같은 정리인 근거는 Shimura 대응이 theta 대응이라는 데 있다. 쌍대쌍 $(\widetilde{\mathrm{SL}}\_2,\mathrm{PGL}\_2)$ 의 theta 올림이 한쪽에서는 반정수 무게 형식의 계수를, 다른 쪽에서는 토릭 주기를 내놓는다([theta 급수](theta-functions.md)).
 
 # 정의
 
@@ -67,15 +67,15 @@ $F$ 를 수체, $K/F$ 를 이차 확대, $B/F$ 를 사원수 대수라 하고 �
 국소체 $F_v$ 에서 $K_v$ 는 $F_v$ 의 이차 확대이거나 $F_v\times F_v$ 이고, $B_v$ 는 $M_2(F_v)$ 이거나 유일한 분할 사원수 대수다. 두 가지 $B_v$ 에 대해
 
 $$
-\dim\mathrm{Hom}_{K_v^\times}\bigl(\pi_v,\chi_v\bigr)\le1,
+\dim\mathrm{Hom}\_{K_v^\times}\bigl(\pi_v,\chi_v\bigr)\le1,
 \qquad
-\sum_{B_v}\dim\mathrm{Hom}_{K_v^\times}\bigl(\pi_v,\chi_v\bigr)=1
+\sum_{B_v}\dim\mathrm{Hom}\_{K_v^\times}\bigl(\pi_v,\chi_v\bigr)=1
 $$
 
 이고 어느 쪽이 1 인지는 부호가 결정한다.[^1]
 
 $$
-\dim\mathrm{Hom}_{K_v^\times}(\pi_v,\chi_v)=1
+\dim\mathrm{Hom}\_{K_v^\times}(\pi_v,\chi_v)=1
 \ \text{ on }\ M_2(F_v)
 \quad\Longleftrightarrow\quad
 \varepsilon\negthinspace\left(\tfrac12,\pi_{K,v}\otimes\chi_v\right)\eta_v(-1)=+1
@@ -147,7 +147,7 @@ console.log(quaternionFromSigns({ inf: -1, 2: 1, 3: 1, 5: 1 }))
 ## 증명의 계보
 
 - **Waldspurger (1985)**: theta 대응과 Siegel–Weil 공식으로 반정수 무게 쪽과 토릭 주기 쪽을 직접 잇는다.[^2]
-- **Jacquet 의 상대 대각합 공식**: 토러스 주기를 담은 대각합 공식과 $\mathrm{GL}_2$ 의 Kuznetsov 형 대각합 공식을 비교한다. 이 방법이 고계수로 확장되어 Jacquet–Rallis 가 되었고 유니터리군 GGP 의 증명 틀이 되었다.
+- **Jacquet 의 상대 대각합 공식**: 토러스 주기를 담은 대각합 공식과 $\mathrm{GL}\_2$ 의 Kuznetsov 형 대각합 공식을 비교한다. 이 방법이 고계수로 확장되어 Jacquet–Rallis 가 되었고 유니터리군 GGP 의 증명 틀이 되었다.
 - **Ichino–Ikeda 형 증명**: 삼중곱 $L$ 함수의 주기 공식을 특수화한다.
 
 ## 중복도 1 의 역할

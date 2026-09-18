@@ -6,7 +6,7 @@
 
 $$
 f\Big(\frac{az+b}{cz+d}\Big)=(cz+d)^kf(z)\qquad
-\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}_2(\mathbb Z)
+\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}\_2(\mathbb Z)
 $$
 
 무한히 많은 변환 각각에 대한 등식에 정칙성까지 요구하지만 해가 $0$ 만은 아니다. 각 무게 $k$ 마다 유한차원 벡터공간이 남는다.
@@ -36,7 +36,7 @@ $\mathrm{SL}\_2(\mathbb Z)$ 의 기본영역은 $|\tau|\ge1$ 이고 $|\mathrm{Re
 $f$ 가 무게 $k$ 의 모듈러 형식이면 기본영역의 경계에 유수 정리를 적용해 영점의 총수가 $k/12$ 임을 얻는다.
 
 $$
-\mathrm{ord}_\infty(f)+\tfrac12\mathrm{ord}_i(f)+\tfrac13\mathrm{ord}_\rho(f)+\sum_{\text{나머지}}\mathrm{ord}_P(f)=\frac k{12}
+\mathrm{ord}\_\infty(f)+\tfrac12\mathrm{ord}\_i(f)+\tfrac13\mathrm{ord}\_\rho(f)+\sum_{\text{나머지}}\mathrm{ord}\_P(f)=\frac k{12}
 $$
 
 $1/2$ 과 $1/3$ 은 $i$ 와 $\rho=e^{2\pi i/3}$ 에서 고정자군이 자명하지 않아 붙는 가중치다. 영점의 개수가 유계이므로 자유도가 유한하다. $k\lt 0$ 이면 우변이 음수라 형식이 없고 $k=2$ 에서도 없다.
@@ -72,7 +72,7 @@ $$
 **합동 부분군**은 $\mathrm{SL}\_2(\mathbb Z)$ 의 유한지표 부분군 중 어떤 $N$ 에 대해 $\Gamma(N)=\ker(\mathrm{SL}\_2(\mathbb Z)\to\mathrm{SL}\_2(\mathbb Z/N))$ 를 포함하는 것이다. 가장 많이 쓰는 것이 다음이고 $N$ 을 **레벨**이라 한다.
 
 $$
-\Gamma_0(N)=\Big\lbrace\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}_2(\mathbb Z):c\equiv0\ (\mathrm{mod}\ N)\Big\rbrace
+\Gamma_0(N)=\Big\lbrace\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}\_2(\mathbb Z):c\equiv0\ (\mathrm{mod}\ N)\Big\rbrace
 $$
 
 ## 모듈러 형식과 첨점형식
@@ -114,7 +114,7 @@ $$
 $\mathrm{SL}\_2(\mathbb Z)$ 전체에 대한 형식들의 등급환은 자유 다항식환이다.
 
 $$
-\bigoplus_kM_k(\mathrm{SL}_2(\mathbb Z))=\mathbb C[E_4,E_6]
+\bigoplus_kM_k(\mathrm{SL}\_2(\mathbb Z))=\mathbb C[E_4,E_6]
 $$
 
 ## Hecke 작용소
@@ -122,7 +122,7 @@ $$
 $M_k$ 위에 작용하는 가환 연산자족이 있다. 소수 $p$ 에서 $q$ 전개로 쓰면 다음이다.
 
 $$
-(T_pf)_n=a_{np}+p^{k-1}a_{n/p}\qquad(p\nmid n \text{ 이면 둘째 항은 0})
+(T_pf)\_n=a_{np}+p^{k-1}a_{n/p}\qquad(p\nmid n \text{ 이면 둘째 항은 0})
 $$
 
 $T_m$ 들이 서로 교환하고 자기수반이므로 동시 고유벡터의 기저가 있다. 그런 $f$ 가 **Hecke 고유형식**이고 $a_1=1$ 로 정규화하면 고유값이 계수가 된다. 계수가 곱셈적이 되어 $L$ 함수가 Euler 곱을 갖는다.

@@ -37,7 +37,7 @@ $\mathbb Z$ 의 $K$ 군이 $\zeta$ 의 특수값을 재고 있다는 것이 현�
 $K$ 군을 직접 계산하기는 어렵다. 대신 $K$ 이론에서 에탈 코호몰로지로 가는 사상을 만들고 차수가 충분히 높으면 동형임을 보인다.
 
 $$
-K_n(\mathcal O_F;\mathbb Z_p)\ \longrightarrow\ K^{\text{ét}}_n(\mathcal O_F;\mathbb Z_p)
+K_n(\mathcal O_F;\mathbb Z_p)\ \longrightarrow\ K^{\text{ét}}\_n(\mathcal O_F;\mathbb Z_p)
 $$
 
 우변은 Galois 코호몰로지로 계산되고, 수체에서 그것은 류군과 단수군의 정보다. 이 사상이 동형이라는 것이 Quillen–Lichtenbaum 추측이며, Voevodsky 의 노름 잉여 동형 정리 이후 정리가 되었다.
@@ -80,10 +80,10 @@ $$
 **정리(Voevodsky, Rost, Suslin 등).** $F$ 가 수체, $p$ 가 소수, $n\ge2$ 이면 사상
 
 $$
-K_n(\mathcal O_F[1/p];\mathbb Z_p)\ \xrightarrow{\ \sim\ }\ K^{\text{ét}}_n(\mathcal O_F[1/p];\mathbb Z_p)
+K_n(\mathcal O_F[1/p];\mathbb Z_p)\ \xrightarrow{\ \sim\ }\ K^{\text{ét}}\_n(\mathcal O_F[1/p];\mathbb Z_p)
 $$
 
-는 동형이다. 우변은 $H^{i}_{\text{ét}}(\mathcal O_F[1/p],\mathbb Z_p(j))$ 를 항으로 갖는 스펙트럼열로 계산된다.
+는 동형이다. 우변은 $H^{i}\_{\text{ét}}(\mathcal O_F[1/p],\mathbb Z_p(j))$ 를 항으로 갖는 스펙트럼열로 계산된다.
 
 # 성질
 
@@ -134,7 +134,7 @@ $K$ 군의 유리계수 부분에서 정의되는 Borel 정규화자가 $\zeta_F
 Quillen–Lichtenbaum 의 증명은 $K$ 이론을 동기 코호몰로지로 번역하고 거기서 노름 잉여 동형 정리를 쓴다. 그 결과 Milnor $K$ 이론과 Galois 코호몰로지 사이의 동형
 
 $$
-K^{M}_{n}(F)/m\ \xrightarrow{\ \sim\ }\ H^{n}_{\text{ét}}\big(F,\mu_m^{\otimes n}\big)
+K^{M}\_{n}(F)/m\ \xrightarrow{\ \sim\ }\ H^{n}\_{\text{ét}}\big(F,\mu_m^{\otimes n}\big)
 $$
 
 이 확립되었다. $n=1$ 은 Kummer 이론, $n=2$ 는 Merkurjev–Suslin 이며 [Brauer 군](brauer-groups.md)의 구조 정리를 포함한다.[^1]

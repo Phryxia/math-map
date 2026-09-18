@@ -4,11 +4,11 @@
 
 체는 0이 아닌 모든 원소를 나눌 수 있는 가환환이다. [환](rings.md)에서 곱셈 가역성을 최대한 요구한 구조이므로, 환론에서 가장 단순하면서도 가장 많이 쓰이는 대상이다. 체가 중요한 이유는 두 가지다. 첫째, [벡터 공간](vector-spaces.md)과 행렬 이론은 계수가 체일 때 비로소 차원·기저·계수(rank) 이론이 온전히 작동한다. 둘째, 체는 [극대 아이디얼](prime-ideals.md)에 의한 몫환으로 자동 생산되므로, 환을 조사하는 도구이자 환에서 얻어지는 결과물이 된다.
 
-체의 내적 구조를 가장 거칠게 나누는 불변량이 표수(characteristic)다. 표수는 0 또는 소수뿐이며, 그에 따라 체는 유리수체를 품는 것과 $\mathbb{F}_p$ 를 품는 것으로 갈라진다. 이 이분법이 [체의 확대](field-extensions.md)와 [유한체](finite-fields.md) 이론의 출발점이다.
+체의 내적 구조를 가장 거칠게 나누는 불변량이 표수(characteristic)다. 표수는 0 또는 소수뿐이며, 그에 따라 체는 유리수체를 품는 것과 $\mathbb{F}\_p$ 를 품는 것으로 갈라진다. 이 이분법이 [체의 확대](field-extensions.md)와 [유한체](finite-fields.md) 이론의 출발점이다.
 
 # 직관
 
-정수환 $\mathbb{Z}$ 에서는 $2$ 로 나눌 수 없지만 유리수체 $\mathbb{Q}$ 에서는 나눌 수 있다. 체는 "사칙연산이 모두 가능한 수 체계"를 공리화한 것이고, 순서·거리·극한 같은 해석적 구조는 전혀 요구하지 않는다. 따라서 원소가 두 개인 체 $\mathbb{F}_2$ 도, 원소가 비가산인 복소수체 $\mathbb{C}$ 도 같은 공리를 만족한다.
+정수환 $\mathbb{Z}$ 에서는 $2$ 로 나눌 수 없지만 유리수체 $\mathbb{Q}$ 에서는 나눌 수 있다. 체는 "사칙연산이 모두 가능한 수 체계"를 공리화한 것이고, 순서·거리·극한 같은 해석적 구조는 전혀 요구하지 않는다. 따라서 원소가 두 개인 체 $\mathbb{F}\_2$ 도, 원소가 비가산인 복소수체 $\mathbb{C}$ 도 같은 공리를 만족한다.
 
 환에서 체로 가는 길은 조건을 계단식으로 강화하는 것으로 보면 된다.
 
@@ -20,7 +20,7 @@ graph LR
   F --> Q["Q, R, C, F_p"]
 ```
 
-표수는 "1을 몇 번 더하면 0이 되는가"이다. $\mathbb{Q}$ 에서는 아무리 더해도 $0$ 이 되지 않으므로 표수 0이고, $\mathbb{F}_5$ 에서는 다섯 번 더하면 $0$ 이므로 표수 5다. 표수 $p$ 인 체에서는 $p$ 배가 $0$ 이라는 사실이 항등식 수준으로 작동해서, 예컨대 제곱이 아니라 $p$ 제곱이 덧셈을 보존한다.
+표수는 "1을 몇 번 더하면 0이 되는가"이다. $\mathbb{Q}$ 에서는 아무리 더해도 $0$ 이 되지 않으므로 표수 0이고, $\mathbb{F}\_5$ 에서는 다섯 번 더하면 $0$ 이므로 표수 5다. 표수 $p$ 인 체에서는 $p$ 배가 $0$ 이라는 사실이 항등식 수준으로 작동해서, 예컨대 제곱이 아니라 $p$ 제곱이 덧셈을 보존한다.
 
 # 정의
 
@@ -52,15 +52,15 @@ $F$ 에서 체 $K$ 로 가는 환 준동형 중 $1$ 을 $1$ 로 보내는 것을
 
 $n\cdot 1=0$ 인 최소의 $n$ 이 합성수 $n=ab$ ( $1\lt a,b\lt n$ )라면 $(a\cdot 1)(b\cdot 1)=n\cdot 1=0$ 이 되어 체에서 영인수가 생기므로 모순이다. 체는 정역이므로 표수는 0이거나 소수다[^1].
 
-## 소체는 $\mathbb{Q}$ 또는 $\mathbb{F}_p$
+## 소체는 $\mathbb{Q}$ 또는 $\mathbb{F}\_p$
 
 환 준동형 $\varphi:\mathbb{Z}\to F$ , $\varphi(n)=n\cdot 1$ 을 잡는다. 상 $\varphi(\mathbb{Z})$ 를 포함하는 최소 부분체가 소체다. 표수가 소수 $p$ 이면 커널이 $p\mathbb{Z}$ 이므로 제1동형정리로 $\mathbb{Z}/p\mathbb{Z}$ 와 동형인 부분체를 얻고, 이는 이미 체이므로 소체다. 표수가 0이면 $\varphi$ 가 단사이므로 $\varphi$ 를 분수로 확장한 $\mathbb{Q}\to F$ 가 단사 체 준동형이 되고, 그 상이 소체다[^1].
 
 $$
-\mathrm{char}F=p \Rightarrow \text{소체}\cong\mathbb{F}_p=\mathbb{Z}/p\mathbb{Z},\qquad \mathrm{char}F=0 \Rightarrow \text{소체}\cong\mathbb{Q}
+\mathrm{char}F=p \Rightarrow \text{소체}\cong\mathbb{F}\_p=\mathbb{Z}/p\mathbb{Z},\qquad \mathrm{char}F=0 \Rightarrow \text{소체}\cong\mathbb{Q}
 $$
 
-따라서 모든 체는 $\mathbb{Q}$ 또는 어떤 $\mathbb{F}_p$ 의 확대체다. $\mathbb{F}_p$ 의 연산은 [정수의 합동과 나머지 연산](modular-arithmetic.md)에서 $p$ 가 [소수](primes.md)일 때의 나머지 연산이다.
+따라서 모든 체는 $\mathbb{Q}$ 또는 어떤 $\mathbb{F}\_p$ 의 확대체다. $\mathbb{F}\_p$ 의 연산은 [정수의 합동과 나머지 연산](modular-arithmetic.md)에서 $p$ 가 [소수](primes.md)일 때의 나머지 연산이다.
 
 ## 아이디얼과 준동형
 
@@ -74,7 +74,7 @@ $$
 M \text{이 극대 아이디얼} \iff R/M \text{가 체}
 $$
 
-이는 체를 만드는 표준적인 방법이다. $\mathbb{Z}$ 의 극대 아이디얼 $(p)$ 에서 $\mathbb{F}_p$ 를, 체 $k$ 위 다항식환의 극대 아이디얼에서 [체의 확대](field-extensions.md)를 얻는다. 반면 $(0)$ 은 $\mathbb{Z}$ 에서 소 아이디얼이지만 극대가 아니므로 $\mathbb{Z}$ 는 체가 아니다.
+이는 체를 만드는 표준적인 방법이다. $\mathbb{Z}$ 의 극대 아이디얼 $(p)$ 에서 $\mathbb{F}\_p$ 를, 체 $k$ 위 다항식환의 극대 아이디얼에서 [체의 확대](field-extensions.md)를 얻는다. 반면 $(0)$ 은 $\mathbb{Z}$ 에서 소 아이디얼이지만 극대가 아니므로 $\mathbb{Z}$ 는 체가 아니다.
 
 ## 유한성에 대한 제약
 
@@ -106,7 +106,7 @@ $$
 
 체 위의 [다항식환](polynomial-rings.md)은 나눗셈 정리를 가지므로 유클리드 정역이 된다. 기약다항식으로 몫을 취하면 더 큰 체가 나오고, 이 과정을 반복해 대수방정식의 해를 담는 체를 구성한다.
 
-[^1]: Dummit, Math 5111 Lecture #5, "Subfields and Simple Extensions" — 표수가 0 또는 소수임과 소체가 $\mathbb{Q}$ 또는 $\mathbb{F}_p$ 와 동형임의 증명. https://dummit.cos.northeastern.edu/teaching_fa20_5111/5111_lecture_05_subfields_simple_extensions.pdf
+[^1]: Dummit, Math 5111 Lecture #5, "Subfields and Simple Extensions" — 표수가 0 또는 소수임과 소체가 $\mathbb{Q}$ 또는 $\mathbb{F}\_p$ 와 동형임의 증명. https://dummit.cos.northeastern.edu/teaching_fa20_5111/5111_lecture_05_subfields_simple_extensions.pdf
 [^2]: MIT OpenCourseWare 18.703, Lecture 18 "Prime and Maximal Ideals", Theorem 18.8. https://ocw.mit.edu/courses/18-703-modern-algebra-spring-2013/247dc7bcf731827674f4a2338f929a7a_MIT18_703S13_pra_l_18.pdf
 
 # 연관 문서

@@ -27,7 +27,7 @@ $A \times B \times \mathbb{Z}$ 는 $A$ 와 $B$ 로 가는 사상을 갖지만 �
 
 ## 도형과 원뿔
 
-작은 범주 $J$ 가 도형의 모양이고, functor $D : J \to C$ 가 $C$ 안의 $J$ 모양 도형이다. 대상 $c \in C$ 에 대해 모든 대상을 $c$ 로, 모든 사상을 $\mathrm{id}_c$ 로 보내는 상수 functor 를 $\Delta c : J \to C$ 로 쓴다.
+작은 범주 $J$ 가 도형의 모양이고, functor $D : J \to C$ 가 $C$ 안의 $J$ 모양 도형이다. 대상 $c \in C$ 에 대해 모든 대상을 $c$ 로, 모든 사상을 $\mathrm{id}\_c$ 로 보내는 상수 functor 를 $\Delta c : J \to C$ 로 쓴다.
 
 $D$ 위의 원뿔(cone)은 자연변환 $\lambda : \Delta c \Rightarrow D$ 다. 성분으로 풀면 $J$ 의 각 대상 $j$ 마다 사상 $\lambda_j : c \to D(j)$ 가 있고 $J$ 의 각 사상 $u : j \to j'$ 마다 다음이 성립한다.
 
@@ -54,7 +54,7 @@ $$
 | 대상 둘, 사상 없음 | 곱 $A \times B$ | 합 $A + B$ |
 | 대상 없음 | 종단대상 $1$ | 시작대상 $0$ |
 | $f, g : a \rightrightarrows b$ | 동등자 $\mathrm{eq}(f,g)$ | 쌍대동등자 $\mathrm{coeq}(f,g)$ |
-| $a \to c \leftarrow b$ 와 $a \leftarrow c \to b$ | 당김 $A \times_C B$ | 밀어냄 $A +_C B$ |
+| $a \to c \leftarrow b$ 와 $a \leftarrow c \to b$ | 당김 $A \times_C B$ | 밀어냄 $A +\_C B$ |
 | 사슬 $a_0 \to a_1 \to \cdots$ | 역극한 | 직접극한 |
 
 집합의 범주에서 당김은 다음과 같다.
@@ -92,13 +92,13 @@ $$
 극한의 정의를 $\mathrm{Hom}$ 으로 읽으면 다음 자연동형이 된다.
 
 $$
-\mathrm{Hom}_C(c,\lim D)\cong\lim_j\mathrm{Hom}_C(c,D(j))
+\mathrm{Hom}\_C(c,\lim D)\cong\lim_j\mathrm{Hom}\_C(c,D(j))
 $$
 
 왼쪽은 $c$ 에서 극한으로 가는 사상, 오른쪽은 $c$ 위의 원뿔들의 집합이고, 보편성질이 이 둘의 일대일 대응이다. 집합의 극한은 구체적으로 계산되므로 이 식이 추상적 극한을 집합 수준의 계산으로 내린다. 반변 쪽에서는 화살표가 뒤집혀 쌍대극한을 극한으로 바꾼다.
 
 $$
-\mathrm{Hom}_C(\mathrm{colim}D,c)\cong\lim_j\mathrm{Hom}_C(D(j),c)
+\mathrm{Hom}\_C(\mathrm{colim}D,c)\cong\lim_j\mathrm{Hom}\_C(D(j),c)
 $$
 
 ## 극한과 쌍대극한의 비대칭

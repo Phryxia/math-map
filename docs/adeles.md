@@ -2,7 +2,7 @@
 
 # 개요
 
-아델 환은 수체의 모든 자리를 한 덩어리로 묶은 국소콤팩트 위상환이다. [p 진수](p-adic-numbers.md)에서 $\mathbb Q$ 의 자리는 소수들과 무한 자리 하나로 전부이고, 곱 공식 $\prod_v|x|_v=1$ 은 모든 자리를 동시에 볼 때만 의미를 갖는다.
+아델 환은 수체의 모든 자리를 한 덩어리로 묶은 국소콤팩트 위상환이다. [p 진수](p-adic-numbers.md)에서 $\mathbb Q$ 의 자리는 소수들과 무한 자리 하나로 전부이고, 곱 공식 $\prod_v|x|\_v=1$ 은 모든 자리를 동시에 볼 때만 의미를 갖는다.
 
 직적 $\prod_v K_v$ 는 국소콤팩트성을 잃어 Haar 측도도 Fourier 해석도 할 수 없고, 직합은 $\mathbb Q$ 조차 담지 못한다. 그 중간이 **제한직적**이며, 거의 모든 자리에서 정수환 안에 있을 것만 요구한다.
 
@@ -91,7 +91,7 @@ $$
 **이델 노름**은 자리별 절댓값의 곱이다.
 
 $$
-|x|_{\mathbb A}=\prod_v|x_v|_v
+|x|\_{\mathbb A}=\prod_v|x_v|\_v
 $$
 
 거의 모든 자리에서 $|x_v|\_v=1$ 이므로 유한 곱이라 잘 정의된다. 곱 공식은 $\alpha\in K^\times$ 마다 $|\alpha|\_{\mathbb A}=1$ 이라는 뜻이므로, $K^\times$ 는 노름 1 인 부분군 $\mathbb A_K^{\times,1}$ 안에 들어간다.
@@ -132,7 +132,7 @@ $$
 
 $K$ 가 $\mathbb A_K$ 에서 이산이므로 조밀할 수 없다. 자리 하나를 빼면 달라진다.
 
-> **강근사 정리.** $S$ 가 비어 있지 않은 자리들의 집합이면, $K$ 는 $\mathbb A_K^S=\prod'_{v\notin S}K_v$ 에서 조밀하다.
+> **강근사 정리.** $S$ 가 비어 있지 않은 자리들의 집합이면, $K$ 는 $\mathbb A_K^S=\prod'\_{v\notin S}K_v$ 에서 조밀하다.
 
 $S=\lbrace\infty\rbrace$ 로 두면 유한 개의 소수에서 지정한 합동조건을 만족하는 유리수가 있다는 중국인의 나머지 정리가 된다. $S=\lbrace p\rbrace$ 로 두면 실수 근사와 나머지 소수에서의 합동조건을 동시에 만족시킬 수 있다는 뜻이 된다.
 
@@ -149,7 +149,7 @@ $$
 Tate 는 여기에 이델 위의 zeta 적분
 
 $$
-Z(f,s)=\int_{\mathbb A_K^\times}f(x)\thinspace|x|_{\mathbb A}^s\thinspace d^\times x
+Z(f,s)=\int_{\mathbb A_K^\times}f(x)\thinspace|x|\_{\mathbb A}^s\thinspace d^\times x
 $$
 
 를 얹었다. 적분이 국소 인자의 곱으로 쪼개져 Euler 곱이 나오고, Poisson 합공식이 $s\leftrightarrow1-s$ 대칭을 준다. Riemann 과 Hecke 가 theta 함수의 변환식으로 얻었던 $\zeta_K(s)$ 의 해석적 접속과 함수방정식이 감마 인자와 판별식까지 포함해 따라 나온다.
@@ -158,18 +158,18 @@ $L$ 함수를 급수가 아니라 군 위의 적분으로 정의하면 해석적
 
 ## 자기동형 형식의 무대
 
-$\mathrm{GL}_n(K)$ 는 $\mathrm{GL}_n(\mathbb A_K)$ 의 이산 부분군이므로 몫공간
+$\mathrm{GL}\_n(K)$ 는 $\mathrm{GL}\_n(\mathbb A_K)$ 의 이산 부분군이므로 몫공간
 
 $$
-\mathrm{GL}_n(K)\backslash\mathrm{GL}_n(\mathbb A_K)
+\mathrm{GL}\_n(K)\backslash\mathrm{GL}\_n(\mathbb A_K)
 $$
 
 위의 함수를 볼 수 있다. $n=1$ 이면 이델류군이고, $n=2$ 이면 [모듈러 형식](modular-forms.md)의 아델 판이다.
 
-레벨 $\Gamma_0(N)$ 은 유한 자리의 콤팩트 열린 부분군 $K_0(N)\subset\mathrm{GL}_2(\hat{\mathcal O})$ 에 대응하고, 강근사 정리가
+레벨 $\Gamma_0(N)$ 은 유한 자리의 콤팩트 열린 부분군 $K_0(N)\subset\mathrm{GL}\_2(\hat{\mathcal O})$ 에 대응하고, 강근사 정리가
 
 $$
-\mathrm{GL}_2(\mathbb Q)\backslash\mathrm{GL}_2(\mathbb A_{\mathbb Q})/K_0(N)\ \cong\ \Gamma_0(N)\backslash\mathbb H
+\mathrm{GL}\_2(\mathbb Q)\backslash\mathrm{GL}\_2(\mathbb A_{\mathbb Q})/K_0(N)\ \cong\ \Gamma_0(N)\backslash\mathbb H
 $$
 
 를 준다. Hecke 작용소는 이중 잉여류 $K_0(N)\thinspace\mathrm{diag}(1,p)\thinspace K_0(N)$ 이 된다.
@@ -179,7 +179,7 @@ $$
 - **모듈러스의 소거.** 유체론을 광선유군으로 쓰면 모듈러스 $\mathfrak m$ 을 매번 고르고 정합성을 확인해야 한다. 이델류군은 모든 $\mathfrak m$ 을 동시에 담아 $C_K\to\mathrm{Gal}(K^{\mathrm{ab}}/K)$ 한 줄로 끝난다.
 - **국소와 대역의 통일.** 각 $K_v^\times$ 에서의 국소 유체론과 대역 유체론이 같은 그림의 부분과 전체가 된다. 국소 조건을 붙여 대역 대상을 만드는 절차가 제한직적으로 형식화된다.
 - **해석적 도구.** 국소콤팩트라 Haar 측도와 Fourier 변환이 있다. Tate 논문이 그 첫 수확이고, 자기동형 형식의 스펙트럼 분해와 대각합 공식이 그 위에 세워진다.
-- **군의 교체.** $\mathrm{GL}_1$ 을 $\mathrm{GL}_n$ 이나 다른 환원군으로 바꾸는 것이 서술상 자명해진다.
+- **군의 교체.** $\mathrm{GL}\_1$ 을 $\mathrm{GL}\_n$ 이나 다른 환원군으로 바꾸는 것이 서술상 자명해진다.
 
 ## 수체와 함수체의 평행
 

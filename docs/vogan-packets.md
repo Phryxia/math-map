@@ -5,7 +5,7 @@
 [Langlands 강령](langlands-program.md)의 국소 판본은 국소체 $F$ 위의 환원군 $G$ 의 기약 표현에 **L 매개변수**로 이름표를 붙인다.
 
 $$
-\varphi:W_F\times\mathrm{SL}_2(\mathbb C)\longrightarrow{}^LG
+\varphi:W_F\times\mathrm{SL}\_2(\mathbb C)\longrightarrow{}^LG
 $$
 
 $\mathrm{GL}\_n$ 에서는 표현과 매개변수가 일대일로 대응한다. 다른 군에서는 여러 표현이 같은 이름표를 공유하며, 같은 $\varphi$ 를 갖는 표현들의 모임이 **L 꾸러미** $\Pi_\varphi$ 다. 꾸러미 안에서 표현을 구별하는 것은 매개변수의 중심화군이 주는 유한군, **성분군** $\mathcal S_\varphi$ 다. 꾸러미의 원소가 $\mathcal S_\varphi$ 의 기약 지표와 대응한다는 것이 정련된 국소 Langlands 대응이다.
@@ -131,7 +131,7 @@ $$
 템퍼드가 아닌 표현까지 다루려면 매개변수에 $\mathrm{SL}\_2$ 를 하나 더 붙인다.
 
 $$
-\psi:W_F\times\mathrm{SL}_2(\mathbb C)\times\mathrm{SL}_2(\mathbb C)\to{}^LG
+\psi:W_F\times\mathrm{SL}\_2(\mathbb C)\times\mathrm{SL}\_2(\mathbb C)\to{}^LG
 $$
 
 둘째 $\mathrm{SL}\_2$ 가 비템퍼드성을 담당한다. Arthur 꾸러미는 L 꾸러미보다 크고 유니터리가 아닌 원소를 포함할 수도 있다. 고전군에 대한 Arthur 의 분류는 전역 중복도 공식을 성분군의 언어로 적는다. 전역 자기동형 표현 $\pi=\otimes\pi_v$ 가 이산 스펙트럼에 나타나는지는 국소 지표들의 곱

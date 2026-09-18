@@ -32,7 +32,7 @@ graph TD
 유한집합 $A$ 의 원소 개수를 다음과 같이 쓴다.
 
 $$
-|A| = \char35{}A \in \mathbb{Z}_{\ge 0}
+|A| = \char35{}A \in \mathbb{Z}\_{\ge 0}
 $$
 
 ## 덧셈 원리와 곱셈 원리

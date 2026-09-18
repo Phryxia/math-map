@@ -42,7 +42,7 @@ $+$ 쪽에서 살아나는 것은 $s=0$ 에서의 미분 $L'(0,\chi)$ 이고 그
 짝수 지표 $\chi$ 에 대한 주추측은 다음 꼴이다.
 
 $$
-\mathrm{char}_\Lambda\Big(\big(E_\infty/C_\infty\big)^{(\chi)}\Big)=\mathrm{char}_\Lambda\Big(X_\infty^{(\chi)}\Big)
+\mathrm{char}\_\Lambda\Big(\big(E_\infty/C_\infty\big)^{(\chi)}\Big)=\mathrm{char}\_\Lambda\Big(X_\infty^{(\chi)}\Big)
 $$
 
 $E_\infty$ 는 단수의 극한, $C_\infty$ 는 순환체 단수의 극한이다. 좌변은 단수 중 순환체 단수가 아닌 것의 크기를 재고 우변이 류군이며, 두 양이 같다는 것이 주추측의 내용이다.

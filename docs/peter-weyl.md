@@ -11,7 +11,7 @@ $$
 증명의 핵심 도구는 군 위의 평균 $\frac1{|G|}\sum_{g\in G}$ 이다. 콤팩트 [Lie 군](lie-groups.md) $G$ 에는 전체 부피가 1 인 불변 측도(Haar 측도)가 있어 이 합을 적분으로 바꿀 수 있고, **Peter–Weyl 정리**가 위 동형을 [Hilbert 공간](hilbert-spaces.md)의 직교분해로 옮긴다.
 
 $$
-L^2(G)\cong\widehat{\bigoplus_{i}}\ V_i\otimes V_i^*
+L^2(G)\cong\widehat{\bigoplus_{i}}\ V_i\otimes V_i^\ast
 $$
 
 오른쪽 합은 가산개이고 각 항은 유한차원이다.
@@ -43,7 +43,7 @@ $$
 표현 $\rho:G\to\mathrm{GL}(V)$ 와 기저를 고정하면 함수들이 나온다.
 
 $$
-\rho_{ij}(g)=\big(\rho(g)\big)_{ij}
+\rho_{ij}(g)=\big(\rho(g)\big)\_{ij}
 $$
 
 이것이 **행렬계수**다. $G=S^1$ 이고 $\rho_n(\theta)=e^{in\theta}$ 이면 행렬계수가 $e^{in\theta}$ 자신이므로, Fourier 급수는 모든 $L^2$ 함수가 행렬계수의 급수라는 진술이다.
@@ -51,7 +51,7 @@ $$
 Peter–Weyl 정리의 첫 형태가 이것의 일반화다. 모든 기약표현의 행렬계수를 모으면 $L^2(G)$ 에서 조밀하고, 정규화하면 정규직교기저가 된다.
 
 $$
-\left\lbrace\sqrt{\dim V_i}\ \rho^{(i)}_{jk}\right\rbrace
+\left\lbrace\sqrt{\dim V_i}\ \rho^{(i)}\_{jk}\right\rbrace
 $$
 
 $\dim V_i$ 차원 표현이 $(\dim V_i)^2$ 개의 함수를 기여하므로 유한군의 $|G|=\sum(\dim V_i)^2$ 가 무한 차원으로 옮겨진다.

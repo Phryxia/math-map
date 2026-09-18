@@ -37,7 +37,7 @@ graph TD
 $\mathcal C$ 를 locally small 범주, $A$ 를 $\mathcal C$ 의 대상이라 하자. $A$ 로 향하는 사상들이 반변 함자를 이룬다.
 
 $$
-h_A(X)=\mathrm{Hom}_C(X,A)
+h_A(X)=\mathrm{Hom}\_C(X,A)
 $$
 
 $f:X\to Y$ 에 대해 $h_A(f):h_A(Y)\to h_A(X)$ 는 앞합성 $g\mapsto g\circ f$ 다. 어떤 함자가 이런 꼴과 자연동형이면 **표현가능**하다고 하고 $A$ 를 그 표현 대상이라 한다.
@@ -65,7 +65,7 @@ $u\in F(A)$ 가 주어지면 $f:X\to A$ 에 대해 $\alpha_X(f)=F(f)(u)$ 로 자
 $F=h_B$ 로 두면 다음을 얻는다.
 
 $$
-\mathrm{Nat}(h_A,h_B)\cong\mathrm{Hom}_C(A,B)
+\mathrm{Nat}(h_A,h_B)\cong\mathrm{Hom}\_C(A,B)
 $$
 
 따라서 $A\mapsto h_A$ 로 주어지는 함자 $C\to[C^{\mathrm{op}},\mathbf{Set}]$ 는 full 이고 faithful 하다. 이를 **Yoneda 매장**이라 하며, 임의의 범주를 함자 범주 안에 충실하게 넣을 수 있다.

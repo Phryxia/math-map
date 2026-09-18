@@ -47,10 +47,10 @@ $$
 
 ## 표현으로 보는 같은 공간
 
-곡면군 $\pi_1(S)$ 에서 $\mathrm{PSL}_2(\mathbb R)$ 로 가는 이산 충실 표현을 켤레로 나눈 것이 같은 공간을 준다.
+곡면군 $\pi_1(S)$ 에서 $\mathrm{PSL}\_2(\mathbb R)$ 로 가는 이산 충실 표현을 켤레로 나눈 것이 같은 공간을 준다.
 
 $$
-\mathcal T_g\cong\lbrace\rho\colon\pi_1(S)\to\mathrm{PSL}_2(\mathbb R)\ \text{이산 충실}\rbrace/\mathrm{PSL}_2(\mathbb R)
+\mathcal T_g\cong\lbrace\rho\colon\pi_1(S)\to\mathrm{PSL}\_2(\mathbb R)\ \text{이산 충실}\rbrace/\mathrm{PSL}\_2(\mathbb R)
 $$
 
 쌍곡 곡면은 상반평면을 Fuchs 군 $\rho(\pi_1(S))$ 로 나눈 것이고, 표시는 곧 $\pi_1$ 의 생성원을 어디로 보낼지 정한 것이다. 이 그림에서 $\mathcal T_g$ 는 표현다양체의 한 연결성분으로 나타난다.
@@ -60,7 +60,7 @@ $$
 바지 분해를 주는 곡선족 $\mathcal C=\lbrace c_1,\dots,c_{3g-3}\rbrace$ 을 고정하면
 
 $$
-\mathrm{FN}_{\mathcal C}\colon\mathcal T_g\ \xrightarrow{\ \sim\ }\ (\mathbb R_{\gt 0})^{3g-3}\times\mathbb R^{3g-3},\qquad
+\mathrm{FN}\_{\mathcal C}\colon\mathcal T_g\ \xrightarrow{\ \sim\ }\ (\mathbb R_{\gt 0})^{3g-3}\times\mathbb R^{3g-3},\qquad
 X\mapsto(\ell_1,\dots,\ell_{3g-3},\tau_1,\dots,\tau_{3g-3})
 $$
 
@@ -69,7 +69,7 @@ $$
 ## 사상류군과 모듈라이 공간
 
 $$
-\mathrm{Mod}(S_g)=\mathrm{Diff}^+(S_g)/\mathrm{Diff}_0(S_g)
+\mathrm{Mod}(S_g)=\mathrm{Diff}^+(S_g)/\mathrm{Diff}\_0(S_g)
 $$
 
 를 **사상류군**이라 하고, 표시를 바꾸는 방식으로 $\mathcal T_g$ 에 작용한다. 몫
@@ -88,10 +88,10 @@ $$
 | --- | --- | --- |
 | $\dim\mathcal T_g$ | 2 | $6g-6$ |
 | $\mathcal T_g$ | $\mathbb H$ | $\mathbb R^{6g-6}$ 과 위상동형 |
-| $\mathrm{Mod}$ | $\mathrm{SL}_2(\mathbb Z)$ | 유한생성, 무한 |
-| $\mathcal M_g$ | [모듈러 곡선](modular-curves.md) $\mathbb H/\mathrm{SL}_2(\mathbb Z)$ | 복소차원 $3g-3$ 오비폴드 |
+| $\mathrm{Mod}$ | $\mathrm{SL}\_2(\mathbb Z)$ | 유한생성, 무한 |
+| $\mathcal M_g$ | [모듈러 곡선](modular-curves.md) $\mathbb H/\mathrm{SL}\_2(\mathbb Z)$ | 복소차원 $3g-3$ 오비폴드 |
 
-$g=1$ 칸이 이 이론의 축소판이다. 원환면의 모듈라이가 곧 $j$ 불변량이고, 그 위의 $\mathrm{SL}_2(\mathbb Z)$ 작용이 모듈러 형식을 낳는다. 종수를 올린 것이 일반 이론이다.
+$g=1$ 칸이 이 이론의 축소판이다. 원환면의 모듈라이가 곧 $j$ 불변량이고, 그 위의 $\mathrm{SL}\_2(\mathbb Z)$ 작용이 모듈러 형식을 낳는다. 종수를 올린 것이 일반 이론이다.
 
 경계나 첨점이 $n$ 개 있으면 차원이 $6g-6+2n$ 으로 늘어난다. $(g,n)=(0,3)$ 에서 $0$ 이 되는데, 세 구멍 뚫린 구 곧 바지가 강직하다는 앞의 사실이 이 계산이다.
 
@@ -102,7 +102,7 @@ $\mathcal T_g$ 에는 성격이 다른 계량이 여럿 있다.
 - **Teichmüller 계량.** $d(X,Y)=\tfrac12\log K$ 로 두고, $K$ 는 표시를 지키는 준등각 사상의 최소 팽창률이다. 완비이고 Finsler 이며, 측지선이 이차미분으로 기술된다.
 - **Weil–Petersson 계량.** 여이차미분의 $L^2$ 내적에서 오는 Kähler 계량이다. 완비가 아니고 단면곡률이 음이며, 부피가 유한하다. Mirzakhani 의 부피 재귀가 이 계량에서 나온다.
 
-완비성이 갈리는 이유는 곡선 하나의 길이를 $0$ 으로 보내는 경로가 Weil–Petersson 거리에서는 유한하기 때문이다. 그 극한은 마디가 생긴 곡면이고, 여기에 극한점을 붙인 것이 Deligne–Mumford 콤팩트화 $\overline{\mathcal M}_g$ 다.
+완비성이 갈리는 이유는 곡선 하나의 길이를 $0$ 으로 보내는 경로가 Weil–Petersson 거리에서는 유한하기 때문이다. 그 극한은 마디가 생긴 곡면이고, 여기에 극한점을 붙인 것이 Deligne–Mumford 콤팩트화 $\overline{\mathcal M}\_g$ 다.
 
 ## 작용과 특이점
 
@@ -119,7 +119,7 @@ $\mathcal T_g$ 가 수축가능이므로 $\mathcal M_g$ 는 유리계수에서 $
 | 모듈라이 | $\mathcal M_g$ | 점 |
 | 대수적 반영 | 표현이 변형됨 | 표현이 강직, 수체 위에 정의됨 |
 
-같은 상수곡률 $-1$ 인데 차원 하나 차이로 결론이 뒤집힌다. 이유는 등거리군의 크기에 있다. $\mathrm{PSL}_2(\mathbb R)$ 안의 Fuchs 군은 변형 가능한 반면 $\mathrm{PSL}_2(\mathbb C)$ 안의 격자는 부피가 유한하면 변형되지 않는다. 3 차원 쪽 강직성이 쌍곡 부피를 위상 불변량으로 만들고, 2 차원 쪽 유연성이 모듈라이라는 학문을 만든다.
+같은 상수곡률 $-1$ 인데 차원 하나 차이로 결론이 뒤집힌다. 이유는 등거리군의 크기에 있다. $\mathrm{PSL}\_2(\mathbb R)$ 안의 Fuchs 군은 변형 가능한 반면 $\mathrm{PSL}\_2(\mathbb C)$ 안의 격자는 부피가 유한하면 변형되지 않는다. 3 차원 쪽 강직성이 쌍곡 부피를 위상 불변량으로 만들고, 2 차원 쪽 유연성이 모듈라이라는 학문을 만든다.
 
 # 활용
 
@@ -133,7 +133,7 @@ $\mathcal T_g$ 위의 작용을 보면 사상류군의 원소가 셋 중 하나�
 
 ## 모듈라이 공간의 교차 이론
 
-$\overline{\mathcal M}_g$ 위의 교차수를 세는 문제가 Witten 추측과 Kontsevich 정리이고, 그 뒤로 2 차원 중력 모형과 행렬 적분으로 이어졌다. Mirzakhani 는 경계 길이를 변수로 본 Weil–Petersson 부피의 재귀를 세워 같은 결론을 기하 쪽에서 얻었고, 그 과정에서 쌍곡 곡면 위 측지선 개수의 점근을 함께 얻었다. 모듈라이 공간이 조합과 적분과 기하가 만나는 자리가 된다.
+$\overline{\mathcal M}\_g$ 위의 교차수를 세는 문제가 Witten 추측과 Kontsevich 정리이고, 그 뒤로 2 차원 중력 모형과 행렬 적분으로 이어졌다. Mirzakhani 는 경계 길이를 변수로 본 Weil–Petersson 부피의 재귀를 세워 같은 결론을 기하 쪽에서 얻었고, 그 과정에서 쌍곡 곡면 위 측지선 개수의 점근을 함께 얻었다. 모듈라이 공간이 조합과 적분과 기하가 만나는 자리가 된다.
 
 ## 복소해석 쪽의 얼굴
 

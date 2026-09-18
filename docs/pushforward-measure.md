@@ -25,7 +25,7 @@
 측도 공간 $(X, \Sigma, \mu)$ 와 가측 공간 $(Y, T)$ , 가측함수 $\varphi : X \to Y$ 에 대해
 
 $$
-(\phi_*\mu)(B)=\mu\negthinspace\left(\phi^{-1}(B)\right),\qquad B\in\mathcal T
+(\phi_\ast\mu)(B)=\mu\negthinspace\left(\phi^{-1}(B)\right),\qquad B\in\mathcal T
 $$
 
 를 상측도라 한다. $\mu$ 가 확률측도이면 $\varphi_\ast\mu$ 도 확률측도이고, 이것을 확률변수 $\varphi$ 의 분포 또는 법칙이라 한다.
@@ -35,7 +35,7 @@ $$
 서로소인 $B_1, B_2, \ldots$ 의 역상은 서로소이고 역상이 가산 합집합을 보존하므로
 
 $$
-(\phi_*\mu)\Bigl(\bigsqcup_n B_n\Bigr)=\mu\Bigl(\bigsqcup_n\phi^{-1}(B_n)\Bigr)=\sum_n\mu(\phi^{-1}(B_n))
+(\phi_\ast\mu)\Bigl(\bigsqcup_n B_n\Bigr)=\mu\Bigl(\bigsqcup_n\phi^{-1}(B_n)\Bigr)=\sum_n\mu(\phi^{-1}(B_n))
 $$
 
 이다. $\varphi_\ast\mu(\emptyset) = \mu(\emptyset) = 0$ 이므로 $\varphi_\ast\mu$ 는 측도다.
@@ -47,7 +47,7 @@ $$
 음이 아닌 가측함수 $g : Y \to [0,\infty]$ 에 대해
 
 $$
-\int_Y g(y)\thinspace d(\phi_*\mu)(y)=\int_X g(\phi(x))\thinspace d\mu(x)
+\int_Y g(y)\thinspace d(\phi_\ast\mu)(y)=\int_X g(\phi(x))\thinspace d\mu(x)
 $$
 
 가 성립한다. 지시함수에서는 정의 그대로이고, 단순함수에서는 선형성으로, 일반적인 음이 아닌 함수에는 [단조수렴 정리](monotone-convergence.md)를 적용한다. 적분 가능한 실수값 함수에는 양의 부분과 음의 부분에 각각 쓴다.
@@ -65,7 +65,7 @@ $g(X)$ 의 기댓값을 구하는 데 $g(X)$ 의 분포가 아니라 $X$ 의 분
 또 다른 가측함수 $\psi : Y \to Z$ 에 대해
 
 $$
-(\psi\circ\phi)_*\mu=\psi_*(\phi_*\mu)
+(\psi\circ\phi)\_\ast\mu=\psi_\ast(\phi_\ast\mu)
 $$
 
 가 성립한다. 역상이 합성을 뒤집어 보존하기 때문이다. 확률변수를 변환할 때 표본공간으로 돌아갈 필요가 없고, $X$ 의 분포에 $g$ 를 적용하면 $g(X)$ 의 분포가 나온다.

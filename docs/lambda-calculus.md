@@ -52,14 +52,14 @@ $$
 
 두 함수가 모든 인자에 대해 같은 값을 주면 같다는 원리의 문법적 대응이다.
 
-$\to^\ast$ 로 여러 단계 축약을, $=_\beta$ 로 $\beta$ -축약으로 생성되는 동치관계를 쓴다.
+$\to^\ast$ 로 여러 단계 축약을, $=\_\beta$ 로 $\beta$ -축약으로 생성되는 동치관계를 쓴다.
 
 ## Church 수와 산술
 
 자연수 $n$ 을 "함수를 $n$ 번 적용하는 연산자"로 정의한다.
 
 $$
-\underline{n} \thickspace=\thickspace \lambda f.\thinspace\lambda x.\thinspace \underbrace{f\thinspace(f\thinspace(\cdots(f}_{n}\thinspace x)\cdots))
+\underline{n} \thickspace=\thickspace \lambda f.\thinspace\lambda x.\thinspace \underbrace{f\thinspace(f\thinspace(\cdots(f}\_{n}\thinspace x)\cdots))
 $$
 
 즉 $\underline 0 = \lambda f.\lambda x.\thinspace x$ 와 $\underline 1 = \lambda f.\lambda x.\thinspace f\thinspace x$ 와 $\underline 2 = \lambda f.\lambda x.\thinspace f\thinspace(f\thinspace x)$ 다. 산술 연산은 다음과 같다.
@@ -81,7 +81,7 @@ $$
 Y\thinspace g \thickspace\to_\beta\thickspace (\lambda x.\thinspace g\thinspace(x\thinspace x))\thinspace(\lambda x.\thinspace g\thinspace(x\thinspace x)) \thickspace\to_\beta\thickspace g\thinspace\big((\lambda x.\thinspace g\thinspace(x\thinspace x))\thinspace(\lambda x.\thinspace g\thinspace(x\thinspace x))\big)
 $$
 
-이고 마지막 항은 $g\thinspace(Y\thinspace g)$ 와 같은 항이다. 따라서 $Y\thinspace g =_\beta g\thinspace(Y\thinspace g)$ 이며, $Y\thinspace g$ 는 $g$ 의 고정점이다.
+이고 마지막 항은 $g\thinspace(Y\thinspace g)$ 와 같은 항이다. 따라서 $Y\thinspace g =\_\beta g\thinspace(Y\thinspace g)$ 이며, $Y\thinspace g$ 는 $g$ 의 고정점이다.
 
 재귀 함수는 "자기 자신을 인자로 받는" 함수의 고정점으로 얻는다. 계승을 예로 들면
 
@@ -122,19 +122,19 @@ flowchart TD
 따름정리 세 개.
 
 1. **정규형의 유일성.** 항이 정규형을 가지면 그것은 $\alpha$ -동치를 제외하고 유일하다. 두 정규형이 공통 축약형을 가져야 하는데, 정규형은 더 줄지 않으므로 서로 같아야 한다.
-2. **무모순성.** $\mathrm{true}$ 와 $\mathrm{false}$ 는 서로 다른 정규형이므로 $=_\beta$ 로 동일시되지 않는다. 즉 모든 항을 같다고 증명하는 붕괴가 일어나지 않는다.
+2. **무모순성.** $\mathrm{true}$ 와 $\mathrm{false}$ 는 서로 다른 정규형이므로 $=\_\beta$ 로 동일시되지 않는다. 즉 모든 항을 같다고 증명하는 붕괴가 일어나지 않는다.
 3. **표준화 정리.** 항이 정규형을 가지면 정규 순서 축약이 반드시 그 정규형에 도달한다. 정규 순서는 "종료성 면에서 최선"이다.
 
 ## 계산 능력과 결정불가능성
 
-**정리 (Church, Kleene, Turing).** 함수 $f : \mathbb N^k \to \mathbb N$ 가 lambda-정의가능한 것과 Turing 계산가능한 것은 동치다. 즉 Church 수로 입출력을 부호화할 때 $F\thinspace\underline n =_\beta \underline{f(n)}$ 인 항 $F$ 가 존재하는 것과 $f$ 를 계산하는 Turing 기계가 있는 것이 같다[^1].
+**정리 (Church, Kleene, Turing).** 함수 $f : \mathbb N^k \to \mathbb N$ 가 lambda-정의가능한 것과 Turing 계산가능한 것은 동치다. 즉 Church 수로 입출력을 부호화할 때 $F\thinspace\underline n =\_\beta \underline{f(n)}$ 인 항 $F$ 가 존재하는 것과 $f$ 를 계산하는 Turing 기계가 있는 것이 같다[^1].
 
 증명의 한쪽은 원시 재귀 도식과 최소화 연산자를 lambda 항으로 구성하는 것이고(최소화에는 고정점 combinator가 쓰인다), 다른 쪽은 lambda 항의 축약 과정을 기계로 시뮬레이션하는 것이다. 이 동치가 Church–Turing 논제의 핵심 증거다. 논제 자체는 "직관적으로 계산가능하다"는 비형식적 개념을 다루므로 수학적 정리가 아니라 경험적 주장이다.
 
 계산 능력이 같으니 결정불가능성도 따라온다.
 
 - 주어진 항이 정규형을 갖는지는 결정불가능하다(정지 문제에 대응).
-- 두 항이 $=_\beta$ 인지도 결정불가능하다(Church의 정리). Scott–Curry 정리는 더 강하게, $\beta$ -동치로 닫힌 자명하지 않은 항 집합은 결정불가능하다고 말한다. 이는 [Rice 정리](rice-theorem.md)의 lambda calculus 판본이다.
+- 두 항이 $=\_\beta$ 인지도 결정불가능하다(Church의 정리). Scott–Curry 정리는 더 강하게, $\beta$ -동치로 닫힌 자명하지 않은 항 집합은 결정불가능하다고 말한다. 이는 [Rice 정리](rice-theorem.md)의 lambda calculus 판본이다.
 - 반면 [유한 오토마타](finite-automata.md)처럼 계산 능력이 제한된 모델에서는 이런 질문들이 모두 결정가능하다. 표현력과 분석가능성의 교환은 여기서도 같다.
 
 ## 단순 타입과 정규화

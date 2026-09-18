@@ -7,7 +7,7 @@
 $\pi=1-\zeta_p$ 로 두고 $\omega$ 를 Teichmüller 지표라 하면
 
 $$
-\mathrm{ord}_\pi\thinspace g(\omega^{-k})=k,\qquad 0\le k\le p-2
+\mathrm{ord}\_\pi\thinspace g(\omega^{-k})=k,\qquad 0\le k\le p-2
 $$
 
 이다. Gauss 합의 부치가 지표의 지수를 읽어 준다. Galois 켤레를 모으면 이 자료가 군환 $\mathbb Q[G]$ 의 한 원소로 묶인다.
@@ -123,7 +123,7 @@ $$
 Iwasawa 와 Sinnott 은 Stickelberger 아이디얼의 지표를 계산했다.
 
 $$
-\big[\thinspace\mathbb Z[G]^{-}:I_m^{-}\thinspace\big]=h^{-}_m
+\big[\thinspace\mathbb Z[G]^{-}:I_m^{-}\thinspace\big]=h^{-}\_m
 $$
 
 $h^{-}$ 은 상대류수 $h/h^{+}$ 다. 이 공식이 [Iwasawa 주추측](iwasawa-main-conjecture.md)에서 총량을 고정하는 두 지표 공식 중 하나이고, 나머지 하나가 순환체 단수의 지표 $[E:C]=h^{+}$ 다.

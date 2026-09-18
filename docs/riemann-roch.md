@@ -28,7 +28,7 @@ $\deg D=n\gt 0$ 인 인자에서 $f$ 를 찾을 때 자유도를 세면 극의 �
 
 ## 인자와 Riemann–Roch 공간
 
-콤팩트 Riemann 면 또는 매끄러운 사영곡선 $X$ 위의 인자는 점들의 형식적 정수 결합 $D=\sum n_PP$ 이고, 그 차수는 $\deg D=\sum n_P$ 다. 0 이 아닌 유리함수 $f$ 의 주인자는 $\mathrm{div}(f)=\sum\mathrm{ord}_P(f)\thinspace P$ 이며 차수가 0 이다.
+콤팩트 Riemann 면 또는 매끄러운 사영곡선 $X$ 위의 인자는 점들의 형식적 정수 결합 $D=\sum n_PP$ 이고, 그 차수는 $\deg D=\sum n_P$ 다. 0 이 아닌 유리함수 $f$ 의 주인자는 $\mathrm{div}(f)=\sum\mathrm{ord}\_P(f)\thinspace P$ 이며 차수가 0 이다.
 
 $$
 L(D)=\lbrace f\in k(X)^\times:\mathrm{div}(f)+D\ge0\rbrace\cup\lbrace 0\rbrace,\qquad \ell(D)=\dim_kL(D)

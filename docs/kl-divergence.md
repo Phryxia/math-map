@@ -11,7 +11,7 @@ Kullback–Leibler divergence는 두 확률분포가 얼마나 다른지를 재�
 참 분포 $P$ 에 최적화된 부호는 결과 $x$ 에 $-\log p(x)$ 비트를 배정하고 평균 길이가 엔트로피다. 분포를 $Q$ 로 잘못 알면 $-\log q(x)$ 비트를 쓰게 되고 평균 길이가 교차 엔트로피다. KL divergence 는 그 차이, 곧 낭비분이다.
 
 $$
-D(P\thinspace\Vert\thinspace Q) = \underbrace{\mathbb{E}_{P}[-\log q]}_{\text{교차 엔트로피}} - \underbrace{\mathbb{E}_{P}[-\log p]}_{\text{엔트로피}} .
+D(P\thinspace\Vert\thinspace Q) = \underbrace{\mathbb{E}\_{P}[-\log q]}\_{\text{교차 엔트로피}} - \underbrace{\mathbb{E}\_{P}[-\log p]}\_{\text{엔트로피}} .
 $$
 
 낭비는 음수일 수 없으므로 비음성이고, 기댓값을 $P$ 로만 잡으므로 $P$ 와 $Q$ 의 역할이 대칭이 아니다.
@@ -43,7 +43,7 @@ $$
 결합분포에 대해서는 다음 연쇄법칙이 성립한다.
 
 $$
-D(P_{XY}\thinspace\Vert\thinspace Q_{XY}) = D(P_X\thinspace\Vert\thinspace Q_X) + \mathbb{E}_{x \sim P_X}\big[ D(P_{Y|X=x}\thinspace\Vert\thinspace Q_{Y|X=x}) \big].
+D(P_{XY}\thinspace\Vert\thinspace Q_{XY}) = D(P_X\thinspace\Vert\thinspace Q_X) + \mathbb{E}\_{x \sim P_X}\big[ D(P_{Y|X=x}\thinspace\Vert\thinspace Q_{Y|X=x}) \big].
 $$
 
 ## 상호정보량
@@ -75,7 +75,7 @@ $$
 *증명.* 로그가 오목함수이므로 Jensen 부등식을 쓴다([볼록성](convexity.md)). $P$ 의 지지집합 위에서
 
 $$
--D(P\thinspace\Vert\thinspace Q) = \mathbb{E}_{P}\negthinspace\left[\log \frac{q(X)}{p(X)}\right] \le \log \mathbb{E}_{P}\negthinspace\left[\frac{q(X)}{p(X)}\right] = \log \sum_{x:\thinspace p(x)\gt 0} q(x) \le \log 1 = 0 .
+-D(P\thinspace\Vert\thinspace Q) = \mathbb{E}\_{P}\negthinspace\left[\log \frac{q(X)}{p(X)}\right] \le \log \mathbb{E}\_{P}\negthinspace\left[\frac{q(X)}{p(X)}\right] = \log \sum_{x:\thinspace p(x)\gt 0} q(x) \le \log 1 = 0 .
 $$
 
 첫 부등식의 등호는 로그의 순강한 오목성 때문에 비율 $q/p$ 가 $P$ 에 대해 거의 확실히 상수일 때에만, 둘째 등호는 $Q$ 가 $P$ 의 지지집합 밖에 질량을 두지 않을 때에만 성립한다. 두 조건을 합치면 $P=Q$ 다. ∎
@@ -146,13 +146,13 @@ $Y$ 를 어떻게 가공해도 $X$ 에 대한 정보가 늘지 않는다. 통계
 자료 $x_1,\dots,x_n$ 이 참 분포에서 독립 추출되었다고 하자. 로그가능도를 표본 크기로 나누면
 
 $$
-\frac{1}{n}\sum_{i=1}^{n} \log p_{\theta}(x_i) = \mathbb{E}_{\hat{P}_n}\big[\log p_{\theta}\big]
+\frac{1}{n}\sum_{i=1}^{n} \log p_{\theta}(x_i) = \mathbb{E}\_{\hat{P}\_n}\big[\log p_{\theta}\big]
 $$
 
 이고, 여기서 $\hat P_n$ 은 경험분포다. 경험분포의 엔트로피는 $\theta$ 와 무관하므로
 
 $$
-\arg\max_{\theta} \frac{1}{n}\sum_{i=1}^{n} \log p_{\theta}(x_i) = \arg\min_{\theta} D\big(\hat{P}_n \thinspace\Vert\thinspace P_{\theta}\big).
+\arg\max_{\theta} \frac{1}{n}\sum_{i=1}^{n} \log p_{\theta}(x_i) = \arg\min_{\theta} D\big(\hat{P}\_n \thinspace\Vert\thinspace P_{\theta}\big).
 $$
 
 [최대가능도 추정](maximum-likelihood.md)은 경험분포에 KL 기준으로 가장 가까운 모형을 고르는 일이다. [큰 수의 법칙](law-of-large-numbers.md)으로 경험분포가 참 분포로 가므로, 모형이 틀린 경우에도 추정량은 참 분포에 KL 기준으로 가장 가까운 유사참 모수로 수렴한다. 분류 문제의 교차 엔트로피 손실이 이 목적함수이고, [지수족](exponential-families.md)에서는 이 최소화가 적률 맞추기가 된다.

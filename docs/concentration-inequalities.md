@@ -96,7 +96,7 @@ $$
 특히 $X_i \in [0, 1]$ 이고 표본평균을 볼 때
 
 $$
-P\big(|\bar{X}_n - \mu| \ge \varepsilon\big) \thickspace\le\thickspace 2 \exp\big(-2 n \varepsilon^2\big)
+P\big(|\bar{X}\_n - \mu| \ge \varepsilon\big) \thickspace\le\thickspace 2 \exp\big(-2 n \varepsilon^2\big)
 $$
 
 이다. Chebyshev 가 주는 $1/(4n\varepsilon^2)$ 와 비교하면 꼬리 감소 속도가 다항에서 지수로 바뀐다.
@@ -134,7 +134,7 @@ $$
 약한 [큰 수의 법칙](law-of-large-numbers.md)은 Chebyshev 부등식 한 줄로 나온다. $\mathrm{Var}(X_i) = \sigma^2$ 이면
 
 $$
-P\big(|\bar{X}_n - \mu| \ge \varepsilon\big) \thickspace\le\thickspace \frac{\sigma^2}{n \varepsilon^2} \thickspace\to\thickspace 0 .
+P\big(|\bar{X}\_n - \mu| \ge \varepsilon\big) \thickspace\le\thickspace \frac{\sigma^2}{n \varepsilon^2} \thickspace\to\thickspace 0 .
 $$
 
 유계성을 추가하면 Hoeffding 이 지수 경계를 주고, 이때 우변이 합 가능하므로 Borel–Cantelli 보조정리에 의해 **강한** 수렴까지 바로 얻는다. 즉 유계 경우에는 집중부등식이 강한 큰 수의 법칙의 짧은 증명을 제공한다.

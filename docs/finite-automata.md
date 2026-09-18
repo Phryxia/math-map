@@ -88,7 +88,7 @@ $$
 언어 $L \subseteq \Sigma^\ast$ 에 대해 문자열 위의 관계를 정의한다.
 
 $$
-x \equiv_L y \iff \forall z \in \Sigma^*,\ \left( xz \in L \iff yz \in L \right).
+x \equiv_L y \iff \forall z \in \Sigma^\ast,\ \left( xz \in L \iff yz \in L \right).
 $$
 
 이는 [동치관계](relations.md)이며, 오른쪽 접합에 대해 불변이다. 즉 $x \equiv_L y$ 이면 모든 $a$ 에 대해 $xa \equiv_L ya$ 다. 동치류의 개수를 $L$ 의 **지수**(index)라 한다.

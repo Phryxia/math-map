@@ -5,7 +5,7 @@
 조건부 기댓값은 "부분적인 정보만 주어졌을 때 확률변수의 최선의 예측값"을 수학적으로 정식화한 것이다. 초등적인 확률론에서는 사건 $B$ 에 대해
 
 $$
-E[X \mid B] = \frac{E[X \mathbf{1}_B]}{P(B)}, \qquad P(B) \gt 0
+E[X \mid B] = \frac{E[X \mathbf{1}\_B]}{P(B)}, \qquad P(B) \gt 0
 $$
 
 로 정의하지만, 이 정의는 $P(B) = 0$ 인 사건에 대해 무력하고, "관측할 정보 전체"를 하나의 대상으로 다루지 못한다. 현대적인 정의는 조건을 거는 대상을 사건이 아니라 **$\sigma$ -대수** $\mathcal G$ 로 잡고, 조건부 기댓값을 $\mathcal G$ 가측 확률변수로 정의한다.
@@ -19,7 +19,7 @@ $$
 가장 투명한 경우는 $\mathcal G$ 가 가산 분할 $\Omega = B_1 \sqcup B_2 \sqcup \dots$ 로 생성될 때다. 이때 관측이 알려주는 것은 "지금 어느 조각 안에 있는가" 뿐이므로, 예측값은 각 조각 위에서 상수여야 하고 그 상수는 조각 위의 평균이어야 한다.
 
 $$
-E[X \mid \mathcal{G}](\omega) \thickspace=\thickspace \sum_{k} \frac{E[X \mathbf{1}_{B_k}]}{P(B_k)} \thinspace \mathbf{1}_{B_k}(\omega).
+E\lbrack X \mid \mathcal{G}\rbrack(\omega) \thickspace=\thickspace \sum_{k} \frac{E[X \mathbf{1}\_{B_k}]}{P(B_k)} \thinspace \mathbf{1}\_{B_k}(\omega).
 $$
 
 "조각 위에서 상수"가 곧 $\mathcal G$ 가측성이고, "조각 위의 평균"이 곧 적분 일치 조건이다. 일반적인 $\mathcal G$ 에는 분할이 없지만 두 조건은 그대로 살아남는다. 그래서 정의는 공식이 아니라 **특성화**의 형태를 띤다.
@@ -62,7 +62,7 @@ Doob–Dynkin 보조정리에 의해 $\sigma(Z)$ 가측 확률변수는 어떤 B
 조건부 확률은 지시함수의 조건부 기댓값으로 정의한다.
 
 $$
-P(A \mid \mathcal{G}) \thickspace:=\thickspace E[\mathbf{1}_A \mid \mathcal{G}].
+P(A \mid \mathcal{G}) \thickspace:=\thickspace E[\mathbf{1}\_A \mid \mathcal{G}].
 $$
 
 ## 존재성과 유일성
@@ -100,7 +100,7 @@ $$
 $\mathcal G = \sigma(B_1, B_2, \dots)$ 가 양의 확률을 갖는 가산 분할로 생성되면, $\mathcal G$ 가측 변수는 각 $B_k$ 위에서 상수다. $Y = \sum_k c_k \mathbf 1_{B_k}$ 를 $A = B_k$ 에 대한 부분적분 등식에 넣으면 $c_k P(B_k) = E[X \mathbf 1_{B_k}]$ 이므로
 
 $$
-c_k \thickspace=\thickspace \frac{E[X \mathbf{1}_{B_k}]}{P(B_k)} \thickspace=\thickspace E[X \mid B_k]
+c_k \thickspace=\thickspace \frac{E[X \mathbf{1}\_{B_k}]}{P(B_k)} \thickspace=\thickspace E[X \mid B_k]
 $$
 
 가 되어 초등적 정의와 일치한다. [유한 확률 공간](probability.md)에서 배우는 조건부 기댓값과 [Bayes 정리](bayes.md)의 계산은 모두 이 특수 경우다.

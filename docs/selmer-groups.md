@@ -5,7 +5,7 @@
 수체 $K$ 위의 [타원곡선](elliptic-curves.md) $E$ 에 대해 Mordell–Weil 정리는
 
 $$
-E(K)\thickspace\cong\thickspace\mathbb Z^r\oplus E(K)_{\mathrm{tors}}
+E(K)\thickspace\cong\thickspace\mathbb Z^r\oplus E(K)\_{\mathrm{tors}}
 $$
 
 을 준다. 비틀림 부분은 쉽게 계산되지만 계수 $r$ 은 그렇지 않다. 높이 함수를 쓰는 증명의 뒷부분은 구성적인 반면, 앞부분인 약 Mordell–Weil 정리는 $E(K)/mE(K)$ 의 유한성만 줄 뿐 그 군을 내놓지 않는다.
@@ -105,7 +105,7 @@ $$
 
 ## 순위의 상한
 
-$E(K)_{\mathrm{tors}}$ 를 알고 $\mathrm{Sel}^m$ 을 계산하면
+$E(K)\_{\mathrm{tors}}$ 를 알고 $\mathrm{Sel}^m$ 을 계산하면
 
 $$
 r\thickspace\le\thickspace\log_m\char35{}\mathrm{Sel}^m(E/K)-\log_m\char35{}E(K)[m]
@@ -137,7 +137,7 @@ $$
 \langle\ ,\ \rangle\colon \text{Ш}(E/K)\times \text{Ш}(E/K)\longrightarrow\mathbb Q/\mathbb Z
 $$
 
-가 있고, 나눌 수 있는 부분을 나눈 몫 위에서 비퇴화다. 정의는 각 자리의 국소 불변량을 더하는 것으로 [Brauer 군](brauer-groups.md)의 완전열 $\sum_v\mathrm{inv}_v=0$ 과 같은 구조다. 따라서 $\text{Ш}$ 가 유한하면 위수가 완전제곱수이고, 관측되는 위수는 $1,4,9,16,25,\dots$ 다.
+가 있고, 나눌 수 있는 부분을 나눈 몫 위에서 비퇴화다. 정의는 각 자리의 국소 불변량을 더하는 것으로 [Brauer 군](brauer-groups.md)의 완전열 $\sum_v\mathrm{inv}\_v=0$ 과 같은 구조다. 따라서 $\text{Ш}$ 가 유한하면 위수가 완전제곱수이고, 관측되는 위수는 $1,4,9,16,25,\dots$ 다.
 
 ## 2 하강
 
@@ -192,7 +192,7 @@ Tunnell 은 $E_n$ 의 $L$ 함수 중심값을 무게 $3/2$ 인 형식의 Fourier
 ## BSD 추측
 
 $$
-\lim_{s\to1}\frac{L(E,s)}{(s-1)^r}=\frac{\Omega_E\cdot\mathrm{Reg}_E\cdot\char35{}\text{Ш}(E/\mathbb Q)\cdot\prod_pc_p}{\char35{}E(\mathbb Q)_{\mathrm{tors}}^2}
+\lim_{s\to1}\frac{L(E,s)}{(s-1)^r}=\frac{\Omega_E\cdot\mathrm{Reg}\_E\cdot\char35{}\text{Ш}(E/\mathbb Q)\cdot\prod_pc_p}{\char35{}E(\mathbb Q)\_{\mathrm{tors}}^2}
 $$
 
 정밀 BSD 공식의 분자에 $\char35{}\text{Ш}$ 가 등장하므로 유한성은 추측의 전제이자 일부다. 순위 0 인 곡선에서 $L(E,1)\ne0$ 을 계산하고 공식을 쓰면 $\char35{}\text{Ш}$ 의 예측값이 나오고, 그 값을 하강으로 확인하는 것이 수치 실험의 표준 절차다.

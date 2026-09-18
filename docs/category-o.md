@@ -58,7 +58,7 @@ flowchart TD
   D --> KL["KL 다항식의 1 에서의 값"]
 ```
 
-## $\mathfrak{sl}_2$ 의 블록
+## $\mathfrak{sl}\_2$ 의 블록
 
 $\lambda=0$ 의 블록에는 무게가 둘 있다. $e\cdot0=0$ 과 $s\cdot0=-2$ 다.
 
@@ -117,7 +117,7 @@ $$
 결정 행렬 $D_{\mu\lambda}=[M(\mu):L(\lambda)]$ 와 Verma 여과 행렬 $V_{\lambda\mu}=(P(\lambda):M(\mu))$ 에 대해 $V=D^{\mathsf T}$ 이고, Cartan 행렬은
 
 $$
-C_{\lambda\nu}=\bigl[P(\lambda):L(\nu)\bigr]=\bigl(D^{\mathsf T}D\bigr)_{\lambda\nu}
+C_{\lambda\nu}=\bigl[P(\lambda):L(\nu)\bigr]=\bigl(D^{\mathsf T}D\bigr)\_{\lambda\nu}
 $$
 
 이라 대칭이다. 유한차원 대수에서 이런 성질을 갖는 것을 준유전 대수 또는 최고무게 범주라 하고 범주 $\mathcal O$ 의 블록이 그 원형이다.
@@ -168,7 +168,7 @@ $A_1$ 과 $A_2$ 의 정수 정칙 블록에서 결정 행렬을 Bruhat 순서로
 
 왼쪽 위 $C_{e,e}=1$ 은 $P(e\cdot\lambda)=M(e\cdot\lambda)=L(e\cdot\lambda)$ 라는 뜻이다. $e\cdot\lambda$ 는 Bruhat 순서의 맨 아래라 Verma 가 이미 단순하며 동시에 사영이다.
 
-오른쪽 아래 $C_{w_0,w_0}=|W|$ 는 큰 사영가군의 크기다. $P(w_0\cdot\lambda)$ 는 모든 Verma 가군을 한 번씩 여과로 갖고 $L(w_0\cdot\lambda)$ 를 $|W|$ 번 포함한다. $\mathfrak{sl}_2$ 에서 $P(-2)$ 가 $L(-2)$ 를 두 번 갖던 것의 일반형이며, 이 대상이 블록의 사영생성원이자 단사 대상이다.
+오른쪽 아래 $C_{w_0,w_0}=|W|$ 는 큰 사영가군의 크기다. $P(w_0\cdot\lambda)$ 는 모든 Verma 가군을 한 번씩 여과로 갖고 $L(w_0\cdot\lambda)$ 를 $|W|$ 번 포함한다. $\mathfrak{sl}\_2$ 에서 $P(-2)$ 가 $L(-2)$ 를 두 번 갖던 것의 일반형이며, 이 대상이 블록의 사영생성원이자 단사 대상이다.
 
 첫 행이 전부 $1$ 인 것은 $M(e\cdot\lambda)$ 가 블록의 모든 단순가군을 한 번씩 포함한다는 뜻이다.
 

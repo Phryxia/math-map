@@ -2,7 +2,7 @@
 
 # 개요
 
-[Langlands 강령](langlands-program.md)의 대상인 Galois 표현 $\rho\colon G_K\to\mathrm{GL}_n(E)$ 는 기하에서 온다.
+[Langlands 강령](langlands-program.md)의 대상인 Galois 표현 $\rho\colon G_K\to\mathrm{GL}\_n(E)$ 는 기하에서 온다.
 
 계수를 $\mathbb C$ 로 잡으면 상이 유한군이라 유한 Galois 확대의 표현만 나온다. 공급원은 $\ell$ 진 계수다. 대수다양체 $X$ 에 위상적 [코호몰로지](homology.md) 대신 $\mathbb Q_\ell$ 계수의 에탈 코호몰로지를 붙이면
 
@@ -64,14 +64,14 @@ $\zeta$ 함수의 유리성은 대각합의 생성함수가 유리함수라는 �
 $G_K$ 는 profinite 군이다. 연속 준동형
 
 $$
-\rho\colon G_K\to\mathrm{GL}_n(\mathbb Q_\ell)
+\rho\colon G_K\to\mathrm{GL}\_n(\mathbb Q_\ell)
 $$
 
 을 $\ell$ 진 표현이라 한다. $\mathbb Q_\ell$ 의 위상이 profinite 위상과 어울려 상이 무한할 수 있고, 이 점이 $\mathbb C$ 계수와 다르다.
 
 다음 용어가 표준이다.
 
-- **불분기.** $\mathfrak p$ 에서의 관성군이 자명하게 작용하면 $\rho$ 가 $\mathfrak p$ 에서 불분기다. 그때 $\rho(\mathrm{Frob}_{\mathfrak p})$ 가 켤레를 빼고 정해진다.
+- **불분기.** $\mathfrak p$ 에서의 관성군이 자명하게 작용하면 $\rho$ 가 $\mathfrak p$ 에서 불분기다. 그때 $\rho(\mathrm{Frob}\_{\mathfrak p})$ 가 켤레를 빼고 정해진다.
 - **도체.** 분기가 얼마나 나쁜지를 재는 아이디얼. 유한 개의 소수에서만 분기한다.
 - **기하적 Frobenius.** 산술 Frobenius 의 역원. 부호 관례는 문헌마다 다르다.
 
@@ -87,7 +87,7 @@ $$
 이다. $G_K$ 가 꼬임점에 작용하므로 2 차원 표현 $\rho_{E,\ell}\colon G_K\to\mathrm{GL}\_2(\mathbb Q_\ell)$ 이 나오고, 이것이 $H^1_{\mathrm{et}}(E_{\bar K},\mathbb Q_\ell)$ 의 쌍대다. 좋은 환원을 갖는 $\mathfrak p$ 에서
 
 $$
-\mathrm{tr}\thinspace\rho_{E,\ell}(\mathrm{Frob}_{\mathfrak p})=a_{\mathfrak p}=N\mathfrak p+1-\char35{}E(\mathbb F_{\mathfrak p})
+\mathrm{tr}\thinspace\rho_{E,\ell}(\mathrm{Frob}\_{\mathfrak p})=a_{\mathfrak p}=N\mathfrak p+1-\char35{}E(\mathbb F_{\mathfrak p})
 $$
 
 가 성립한다.
@@ -128,7 +128,7 @@ $$
 
 ## 모듈러성과의 연결
 
-Deligne 은 무게 $k\ge2$ 의 Hecke 고유형식마다 2 차원 $\ell$ 진 표현 $\rho_f$ 를 모듈러 곡선의 에탈 코호몰로지에서 잘라냈다. $\mathrm{tr}\thinspace\rho_f(\mathrm{Frob}_p)=a_p$ 이고, 계수의 크기 상계인 Ramanujan 추측이 Weil 추측의 Riemann 가설에서 따라온다.
+Deligne 은 무게 $k\ge2$ 의 Hecke 고유형식마다 2 차원 $\ell$ 진 표현 $\rho_f$ 를 모듈러 곡선의 에탈 코호몰로지에서 잘라냈다. $\mathrm{tr}\thinspace\rho_f(\mathrm{Frob}\_p)=a_p$ 이고, 계수의 크기 상계인 Ramanujan 추측이 Weil 추측의 Riemann 가설에서 따라온다.
 
 주어진 Galois 표현이 어떤 고유형식에서 오는지를 보이는 것이 모듈러성이고, 그 도구가 변형 이론이다. mod $\ell$ 표현 $\bar\rho$ 를 고정하고 그것으로 환원되는 $\ell$ 진 표현들의 보편 변형환 $R$ 을 만든 뒤 모듈러 표현만 모은 Hecke 대수 $T$ 와 비교한다. $R=T$ 를 증명하면 모든 변형이 모듈러이고, 이것이 Wiles 의 전략이다.
 

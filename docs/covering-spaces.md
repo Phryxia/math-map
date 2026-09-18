@@ -51,7 +51,7 @@ $X$ 가 연결, 국소 경로연결이고 준국소 단순연결이면 보편덮
 $X$ 가 위 조건을 만족하면 밑점을 가진 연결 덮개들의 동형류와 $\pi_1(X,x_0)$ 의 부분군들 사이에 전단사가 있다.
 
 $$
-(\tilde X,\tilde x_0)\ \longmapsto\ p_*\pi_1(\tilde X,\tilde x_0)\ \le\ \pi_1(X,x_0)
+(\tilde X,\tilde x_0)\ \longmapsto\ p_\ast\pi_1(\tilde X,\tilde x_0)\ \le\ \pi_1(X,x_0)
 $$
 
 이 대응은 포함관계를 뒤집어 보존한다.
@@ -106,7 +106,7 @@ $\mathbb R$ 이 단순연결이고 $\mathbb R\to S^1$ 이 덮개이므로 이것
 연결, 국소 경로연결 공간 $Y$ 와 사상 $f:Y\to X$ 에 대해 $f$ 가 $\tilde X$ 로 들어 올려질 필요충분조건은 다음이다.
 
 $$
-f_*\pi_1(Y,y_0)\subseteq p_*\pi_1(\tilde X,\tilde x_0)
+f_\ast\pi_1(Y,y_0)\subseteq p_\ast\pi_1(\tilde X,\tilde x_0)
 $$
 
 $Y$ 가 단순연결이면 조건이 자동으로 만족된다. 경로와 호모토피 들어 올림이 이 판정의 특수한 경우다.

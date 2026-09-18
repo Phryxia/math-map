@@ -55,7 +55,7 @@ $\mu_r\subset\mathbb F_{q^k}^\times$ 이므로 $r\mid q^k-1$ 이고 $k$ 는 이�
 ## 비틀림 부분군
 
 $$
-E[r]=\lbrace P\in E(\bar{\mathbb F}_q):rP=O\rbrace
+E[r]=\lbrace P\in E(\bar{\mathbb F}\_q):rP=O\rbrace
 $$
 
 $\gcd(r,q)=1$ 이면 $E[r]\cong\mathbb Z/r\mathbb Z\times\mathbb Z/r\mathbb Z$ 다. 비틀림 부분군이 계수 2 인 자유 가군이므로 두 개의 독립한 부분군에서 인수를 취하는 쌍이 정의된다.

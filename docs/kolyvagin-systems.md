@@ -36,7 +36,7 @@ Selmer 군은 자리마다 부분군 $H^1_{\mathcal F}(K_v,T)\subseteq H^1(K_v,T
 [국소 Tate 쌍대성](poitou-tate.md) 아래 조건을 넓히면 그 소멸자가 좁아져 쌍대 Selmer 군 $H^1_{\mathcal F^\ast}(K,T^\ast)$ 가 작아지고, 두 변화량이 정확히 상쇄된다.
 
 $$
-\frac{|H^1_{\mathcal F'}(K,T)|}{|H^1_{\mathcal F}(K,T)|}\cdot\frac{|H^1_{\mathcal F^*}(K,T^*)|}{|H^1_{\mathcal F'^*}(K,T^*)|}=\frac{|H^1_{\mathcal F'}(K_\ell,T)|}{|H^1_{\mathcal F}(K_\ell,T)|}
+\frac{|H^1_{\mathcal F'}(K,T)|}{|H^1_{\mathcal F}(K,T)|}\cdot\frac{|H^1_{\mathcal F^\ast}(K,T^\ast)|}{|H^1_{\mathcal F'^\ast}(K,T^\ast)|}=\frac{|H^1_{\mathcal F'}(K_\ell,T)|}{|H^1_{\mathcal F}(K_\ell,T)|}
 $$
 
 한쪽이 올라간 만큼 다른 쪽이 내려가고 기울기는 국소적으로 읽힌다. $\ell$ 자리를 하나 열어 $s$ 의 국소 성분을 죽이는 Kolyvagin 논법이 이 조작이다.
@@ -75,7 +75,7 @@ $$
 이다. **쌍대 구조** $\mathcal F^\ast$ 는 각 자리에서 국소 Tate 쌍대성의 소멸자로 정의한다.
 
 $$
-H^1_{\mathcal F^*}(K_v,T^*):=H^1_{\mathcal F}(K_v,T)^{\perp}
+H^1_{\mathcal F^\ast}(K_v,T^\ast):=H^1_{\mathcal F}(K_v,T)^{\perp}
 $$
 
 $\mathcal F=\mathcal F^\ast$ 이면 **자기쌍대**라 한다. 타원곡선의 $T=E[p^k]$ 에 Weil 쌍이 주는 구조가 대표적이다.
@@ -90,7 +90,7 @@ $\mathcal F=\mathcal F^\ast$ 이면 **자기쌍대**라 한다. 타원곡선의 
 | 엄격(strict) | $0$ | $\mathcal F_{\ell}$ |
 | 가로지름(transverse) | 아래 정의 | $\mathcal F(\ell)$ |
 
-**Kolyvagin 소수**란 $\ell\notin\Sigma$ 이면서 $\ell\equiv1\ (\mathrm{mod}\ p^k)$ 이고 $\mathrm{Fr}_\ell$ 이 $T$ 위에 자명하게 작용하는 소수다. 이때 국소 코호몰로지가 두 조각으로 갈린다.
+**Kolyvagin 소수**란 $\ell\notin\Sigma$ 이면서 $\ell\equiv1\ (\mathrm{mod}\ p^k)$ 이고 $\mathrm{Fr}\_\ell$ 이 $T$ 위에 자명하게 작용하는 소수다. 이때 국소 코호몰로지가 두 조각으로 갈린다.
 
 $$
 H^1(K_\ell,T)=H^1_{\mathrm{f}}(K_\ell,T)\oplus H^1_{\mathrm{tr}}(K_\ell,T),\qquad H^1_{\mathrm{f}}\cong T\cong H^1_{\mathrm{tr}}
@@ -126,7 +126,7 @@ $$
 ## Kolyvagin 계
 
 $$
-\mathbf{KS}(T,\mathcal F,\mathcal P)=\Big\lbrace\kappa=(\kappa_n)_{n\in\mathcal N}\ :\ \kappa_n\in H^1_{\mathcal F(n)}(K,T),\ \ \phi_\ell^{\mathrm{fs}}\big(\mathrm{loc}_\ell(\kappa_n)\big)=\mathrm{loc}_\ell(\kappa_{n\ell})\ \ (\forall\thinspace\ell\mid n\ell)\Big\rbrace
+\mathbf{KS}(T,\mathcal F,\mathcal P)=\Big\lbrace\kappa=(\kappa_n)\_{n\in\mathcal N}\ :\ \kappa_n\in H^1_{\mathcal F(n)}(K,T),\ \ \phi_\ell^{\mathrm{fs}}\big(\mathrm{loc}\_\ell(\kappa_n)\big)=\mathrm{loc}\_\ell(\kappa_{n\ell})\ \ (\forall\thinspace\ell\mid n\ell)\Big\rbrace
 $$
 
 $\mathcal P$ 는 허용하는 Kolyvagin 소수의 집합이고 위 집합은 $R$ 가군을 이룬다. 정의에 대수적 원소의 탑이 나오지 않고 코호몰로지와 국소 조건만 쓰인다.
@@ -136,7 +136,7 @@ $\mathcal P$ 는 허용하는 Kolyvagin 소수의 집합이고 위 집합은 $R$
 $R=\mathbb F_p$ 인 경우(일반 $R$ 은 잔여체로 환원한다) **핵심계수**를
 
 $$
-\chi(\mathcal F):=\dim_{\mathbb F_p}H^1_{\mathcal F}(K,T)-\dim_{\mathbb F_p}H^1_{\mathcal F^*}(K,T^*)
+\chi(\mathcal F):=\dim_{\mathbb F_p}H^1_{\mathcal F}(K,T)-\dim_{\mathbb F_p}H^1_{\mathcal F^\ast}(K,T^\ast)
 $$
 
 로 정의한다. 정의는 대역적이지만 아래 Greenberg–Wiles 공식이 국소 데이터로 계산해 준다.
@@ -148,13 +148,13 @@ $$
 Selmer 군의 대역 Euler 표수 공식은 다음과 같다.
 
 $$
-\frac{|H^1_{\mathcal F}(K,T)|}{|H^1_{\mathcal F^*}(K,T^*)|}=\frac{|H^0(K,T)|}{|H^0(K,T^*)|}\prod_{v}\frac{|H^1_{\mathcal F}(K_v,T)|}{|H^0(K_v,T)|}
+\frac{|H^1_{\mathcal F}(K,T)|}{|H^1_{\mathcal F^\ast}(K,T^\ast)|}=\frac{|H^0(K,T)|}{|H^0(K,T^\ast)|}\prod_{v}\frac{|H^1_{\mathcal F}(K_v,T)|}{|H^0(K_v,T)|}
 $$
 
 곱은 모든 자리에 걸치고 $v\notin\Sigma$ 에서 항이 $1$ 이라 유한 곱이다. 증명은 [Poitou–Tate 완전열](poitou-tate.md)에 국소 Euler 표수 공식을 결합하는 것이다. 양변에 $\log_p$ 를 씌우면
 
 $$
-\chi(\mathcal F)=\sum_v\Big(\dim H^1_{\mathcal F}(K_v,T)-\dim H^0(K_v,T)\Big)+\dim H^0(K,T)-\dim H^0(K,T^*)
+\chi(\mathcal F)=\sum_v\Big(\dim H^1_{\mathcal F}(K_v,T)-\dim H^0(K_v,T)\Big)+\dim H^0(K,T)-\dim H^0(K,T^\ast)
 $$
 
 가 되고 우변은 전부 국소 계산이다.
@@ -164,7 +164,7 @@ $$
 $\mathcal F\subseteq\mathcal F'$ 가 자리 $\ell$ 하나에서만 다르다 하자. Greenberg–Wiles 를 두 구조에 적용해 나누면 다른 모든 자리의 항이 지워지고 직관 절의 항등식이 남는다.
 
 $$
-\frac{|H^1_{\mathcal F'}(K,T)|}{|H^1_{\mathcal F}(K,T)|}\cdot\frac{|H^1_{\mathcal F^*}(K,T^*)|}{|H^1_{\mathcal F'^*}(K,T^*)|}=\frac{|H^1_{\mathcal F'}(K_\ell,T)|}{|H^1_{\mathcal F}(K_\ell,T)|}
+\frac{|H^1_{\mathcal F'}(K,T)|}{|H^1_{\mathcal F}(K,T)|}\cdot\frac{|H^1_{\mathcal F^\ast}(K,T^\ast)|}{|H^1_{\mathcal F'^\ast}(K,T^\ast)|}=\frac{|H^1_{\mathcal F'}(K_\ell,T)|}{|H^1_{\mathcal F}(K_\ell,T)|}
 $$
 
 따름결과는 둘이다.
@@ -233,13 +233,13 @@ $\chi=1$ 이면 서로 다른 Euler 계에서 나온 Kolyvagin 계가 서로 상
 $\chi=1$ 이고 $\kappa$ 가 $\mathbf{KS}$ 의 생성원이라 하자. 각 $i\ge0$ 에 대해
 
 $$
-\partial_i(\kappa):=\min\lbrace\thinspace\mathrm{ord}_p(\kappa_n)\ :\ n\in\mathcal N,\ \nu(n)\le i\thinspace\rbrace
+\partial_i(\kappa):=\min\lbrace\thinspace\mathrm{ord}\_p(\kappa_n)\ :\ n\in\mathcal N,\ \nu(n)\le i\thinspace\rbrace
 $$
 
 로 두면($\nu(n)$ 은 $n$ 의 소인수 개수, $\mathrm{ord}\_p$ 는 $\kappa_n$ 이 $p$ 로 나누어지는 횟수), $\partial_i$ 는 감소하다가 $0$ 에서 멈추는 열이고, 그 감소 폭이 쌍대 Selmer 군 $H^1_{\mathcal F^\ast}(K,T^\ast)$ 의 초등인자를 그대로 준다. 특히 길이가
 
 $$
-\mathrm{length}_R\thinspace H^1_{\mathcal F^*}(K,T^*)=\sum_{i\ge0}\partial_i(\kappa)
+\mathrm{length}\_R\thinspace H^1_{\mathcal F^\ast}(K,T^\ast)=\sum_{i\ge0}\partial_i(\kappa)
 $$
 
 로 등식이 나온다. Euler 계가 주던 부등식이 여기서 등식이 된다. 남는 것은 $\kappa$ 가 생성원인지, 곧 $\partial_0(\kappa)$ 가 최소값인지를 확인하는 문제이고 이것이 Euler 계 쪽에서 넘어오는 유일한 입력이다.

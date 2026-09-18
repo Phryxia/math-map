@@ -78,7 +78,7 @@ $d\omega=0$ 이면 **Kähler 다양체**다. 다음은 동치인 조건이다.
 ## Dolbeault 코호몰로지와 Hodge 수
 
 $$
-H^{p,q}_{\bar\partial}(M)=\frac{\ker\bar\partial|_{\Omega^{p,q}}}{\mathrm{im}\thinspace\bar\partial|_{\Omega^{p,q-1}}},\qquad h^{p,q}=\dim_{\mathbb C}H^{p,q}
+H^{p,q}\_{\bar\partial}(M)=\frac{\ker\bar\partial|\_{\Omega^{p,q}}}{\mathrm{im}\thinspace\bar\partial|\_{\Omega^{p,q-1}}},\qquad h^{p,q}=\dim_{\mathbb C}H^{p,q}
 $$
 
 $h^{p,q}$ 를 격자 모양으로 배열한 것이 Hodge 다이아몬드다.
@@ -90,7 +90,7 @@ $h^{p,q}$ 를 격자 모양으로 배열한 것이 Hodge 다이아몬드다.
 $L\alpha=\omega\wedge\alpha$ 와 그 딸림 $\Lambda=L^\ast$ 를 쓰면 다음이 성립한다.
 
 $$
-[\Lambda,\bar\partial]=-i\partial^*,\qquad [\Lambda,\partial]=i\bar\partial^*
+[\Lambda,\bar\partial]=-i\partial^\ast,\qquad [\Lambda,\partial]=i\bar\partial^\ast
 $$
 
 증명은 $\mathbb C^n$ 에서 확인한 뒤 Kähler 계량이 각 점에서 2 차까지 평탄하다는 사실로 일반 경우에 옮기는 것이다. 여기서 다음이 따라온다.

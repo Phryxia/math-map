@@ -30,7 +30,7 @@ $$
 
 와 대응하고 이 이중잉여류는 유한 개이며 그 개수가 $h$ 다. 왼쪽 몫공간에 Haar 측도를 주면 각 이중잉여류의 부피가 $1/|\mathrm{Aut}L_i|$ 에 비례한다. 질량은 개수가 아니라 부피이고, 부피는 국소 부피의 곱으로 쪼개지지만 개수는 그렇지 않다.
 
-이 관점에서 질량 공식은 $\mathrm{SO}_n$ 의 Tamagawa 수가 2 라는 진술과 같다. Weil 이 이 동치를 지적했고, 반단순군의 Tamagawa 수가 1 이라는 추측이 증명되면서 질량 공식이 그 따름정리가 되었다.
+이 관점에서 질량 공식은 $\mathrm{SO}\_n$ 의 Tamagawa 수가 2 라는 진술과 같다. Weil 이 이 동치를 지적했고, 반단순군의 Tamagawa 수가 1 이라는 추측이 증명되면서 질량 공식이 그 따름정리가 되었다.
 
 ## 류와 동치류 사이
 
@@ -64,7 +64,7 @@ graph TD
 $V$ 를 $\mathbb Q$ 위의 $n$ 차원 이차공간, $L\subset V$ 를 그 위의 격자라 한다.
 
 - $L\cong L'$ (**동치**): $\sigma(L)=L'$ 인 $\sigma\in O(V)$ 가 있다.
-- $L'\in\mathrm{gen}\thinspace L$ (**같은 류**): 모든 소수 $p$ 에 대해 $L_p\cong L'_p$ 이고 $V\otimes\mathbb R$ 위에서도 동치다.
+- $L'\in\mathrm{gen}\thinspace L$ (**같은 류**): 모든 소수 $p$ 에 대해 $L_p\cong L'\_p$ 이고 $V\otimes\mathbb R$ 위에서도 동치다.
 - $L'\in\mathrm{spn}\thinspace L$ (**같은 스피너 류**): 위에 더해 국소 동치를 주는 사상들을 스피너 노름이 자명한 회전 $\sigma_p\in O'(V_p)$ 로 고를 수 있다.
 
 포함관계는 $[L]\subset\mathrm{spn}\thinspace L\subset\mathrm{gen}\thinspace L$ 이고, 류는 유한 개의 동치류로 이루어진다.
@@ -87,7 +87,7 @@ $$
 =2\thinspace\pi^{-n(n+1)/4}\prod_{j=1}^{n}\Gamma\negthinspace\left(\frac j2\right)\cdot\prod_{p}\frac{2}{\alpha_p(L)}
 $$
 
-$\alpha_p(L)$ 는 $L$ 이 자기 자신을 $\mathbb Z_p$ 위에서 표현하는 국소 밀도다. 앞의 상수 2 가 $\mathrm{SO}_n$ 의 Tamagawa 수이고, 거의 모든 $p$ 에서 $\alpha_p$ 가 1 에 가까워 곱이 수렴한다. Conway 와 Sloane 이 $\alpha_p$ 를 Jordan 분해에서 읽는 절차를 정리했다.
+$\alpha_p(L)$ 는 $L$ 이 자기 자신을 $\mathbb Z_p$ 위에서 표현하는 국소 밀도다. 앞의 상수 2 가 $\mathrm{SO}\_n$ 의 Tamagawa 수이고, 거의 모든 $p$ 에서 $\alpha_p$ 가 1 에 가까워 곱이 수렴한다. Conway 와 Sloane 이 $\alpha_p$ 를 Jordan 분해에서 읽는 절차를 정리했다.
 
 $8\mid n$ 인 **짝수 유니모듈러 격자**에서는 국소 인자가 모두 자명해져 Bernoulli 수만 남는다.
 

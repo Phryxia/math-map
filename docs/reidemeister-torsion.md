@@ -32,7 +32,7 @@ Reidemeister 비틀림은 그 정보를 [행렬식](determinants.md)으로 꺼�
 비순환 복합체 $C_\ast$ 에서는 $\ker\partial_i=\mathrm{im}\partial_{i+1}$ 이므로 각 $C_i$ 가 두 조각으로 쪼개진다. 쪼갠 뒤 기저를 비교해 나온 행렬식들을 교대로 곱한 것이 비틀림이다.
 
 $$
-\tau(C_*)=\prod_i\big[\det(\cdots)\big]^{(-1)^i}
+\tau(C_\ast)=\prod_i\big[\det(\cdots)\big]^{(-1)^i}
 $$
 
 교대곱인 것은 Euler 지표가 교대합인 것과 같은 이유다. 조각을 다르게 잘라도 이웃한 항에서 같은 인자가 한 번은 분자로 한 번은 분모로 들어와 상쇄된다.
@@ -71,7 +71,7 @@ $b_i$ 의 선택에 의존하지 않는다는 것은 교대곱의 상쇄에서 �
 $M$ 을 유한 CW 복합체, $\rho:\pi_1(M)\to\mathrm{GL}\_n(\mathbb C)$ 를 표현이라 하자. 보편덮개 $\widetilde M$ 의 세포 사슬복합체 $C_\ast(\widetilde M)$ 은 $\mathbb Z[\pi_1]$ 가군이고, 여기에 $\rho$ 를 먹여
 
 $$
-C_*^\rho(M)=\mathbb C^n\otimes_{\rho}C_*(\widetilde M)
+C_\ast^\rho(M)=\mathbb C^n\otimes_{\rho}C_\ast(\widetilde M)
 $$
 
 를 만든다. 이것이 비순환이면 $\rho$ 를 **비순환 표현**이라 하고, 그때 $\tau_\rho(M)$ 이 정의된다.
@@ -85,7 +85,7 @@ $$
 $L(p,q)$ 의 표준 CW 구조에서 계산이 끝까지 된다. $\pi_1=\mathbb Z/p$ 의 생성원을 $\zeta=e^{2\pi ij/p}$ 로 보내는 1 차원 표현 $\rho_j$ 를 쓰면, $qq^\ast\equiv1\pmod p$ 인 $q^\ast$ 에 대해
 
 $$
-\tau_{\rho_j}(L(p,q))=(\zeta^j-1)(\zeta^{jq^*}-1)
+\tau_{\rho_j}(L(p,q))=(\zeta^j-1)(\zeta^{jq^\ast}-1)
 $$
 
 이다. 단위원 곱만큼의 애매성이 남는다. $q$ 가 $q^{\ast}$ 를 통해 이 식에 들어오므로 답에 $p$ 와 $q$ 가 함께 남는다. 호몰로지는 $p$ 만 본다.

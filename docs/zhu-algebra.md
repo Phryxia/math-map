@@ -5,7 +5,7 @@
 [정점작용소대수](vertex-operator-algebras.md) $V$ 의 가군 $M$ 에 지표를 붙인다.
 
 $$
-\mathrm{ch}_M(\tau)=\mathrm{tr}_Mq^{L_0-c/24},\qquad q=e^{2\pi i\tau}
+\mathrm{ch}\_M(\tau)=\mathrm{tr}\_Mq^{L_0-c/24},\qquad q=e^{2\pi i\tau}
 $$
 
 정의상 이것은 등급 차원의 생성함수이고 $q$ 의 형식급수다. 그런데 알려진 예마다 모듈러 성질을 갖는다. 격자 VOA 에서 theta 급수를 $\eta$ 로 나눈 꼴이 나오고, Virasoro 최소모형에서 Rocha-Caridi 공식이 나오고, [괴물 달빛](monstrous-moonshine.md)에서는 $j-744$ 가 나온다. Zhu 는 1996 년에 이것이 정리임을 증명했다.
@@ -13,7 +13,7 @@ $$
 > $V$ 가 $C_2$ 여유한이고 유리적이면 기약가군은 유한개이고 지표들이 상반평면에서 수렴하며, 그 유한차원 span 위에서 $\mathrm{SL}\_2(\mathbb Z)$ 가 작용한다.
 
 $$
-\mathrm{ch}_{M_i}\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_j\rho(\gamma)_{ij}\mathrm{ch}_{M_j}(\tau)
+\mathrm{ch}\_{M_i}\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_j\rho(\gamma)\_{ij}\mathrm{ch}\_{M_j}(\tau)
 $$
 
 대수적 대상에서 나온 급수가 모듈러 형식이 되는 조건을 대수 쪽에서 준 정리이며, 달빛 현상의 기반이다.
@@ -27,7 +27,7 @@ $$
 $C_2$ 여유한 조건은 $C_2(V)=\mathrm{span}\lbrace a_{-2}b:a,b\in V\rbrace$ 에 대해 $\dim V/C_2(V)\lt\infty$ 를 요구한다. $V/C_2(V)$ 가 유한차원이면 그 위의 연산이 유한 단계에서 선형종속을 만들고, 그것이 모듈러 형식을 계수로 갖는 선형상미분방정식으로 번역된다.
 
 $$
-\left(\partial_q^{(n)}+g_2(\tau)\partial_q^{(n-2)}+\cdots+g_n(\tau)\right)f=0,\qquad g_k\in M_{2k}(\mathrm{SL}_2(\mathbb Z))
+\left(\partial_q^{(n)}+g_2(\tau)\partial_q^{(n-2)}+\cdots+g_n(\tau)\right)f=0,\qquad g_k\in M_{2k}(\mathrm{SL}\_2(\mathbb Z))
 $$
 
 계수가 모듈러 형식이므로 방정식이 $\mathrm{SL}\_2(\mathbb Z)$ 에 불변이고, 따라서 유한차원 해공간도 불변이다. 지표들이 그 해공간에 들어 있으므로 모듈러 변환 아래에서 서로 섞인다. 수렴성은 정칙특이점만 갖는 방정식의 해가 첨점 근처에서 다항 증가한다는 데서 따라온다.
@@ -39,8 +39,8 @@ $$
 $V=\bigoplus_nV_n$ 을 등급 VOA 라 하고 동차원소 $a\in V_{\mathrm{wt}\thinspace a}$ 에 대해 두 연산을 정의한다.
 
 $$
-a*b=\mathop{\mathrm{Res}}_z\left(Y(a,z)b\thinspace\frac{(1+z)^{\mathrm{wt}\thinspace a}}{z}\right),\qquad
-a\circ b=\mathop{\mathrm{Res}}_z\left(Y(a,z)b\thinspace\frac{(1+z)^{\mathrm{wt}\thinspace a}}{z^2}\right)
+a\astb=\mathop{\mathrm{Res}}\_z\left(Y(a,z)b\thinspace\frac{(1+z)^{\mathrm{wt}\thinspace a}}{z}\right),\qquad
+a\circ b=\mathop{\mathrm{Res}}\_z\left(Y(a,z)b\thinspace\frac{(1+z)^{\mathrm{wt}\thinspace a}}{z^2}\right)
 $$
 
 $O(V)=\mathrm{span}\lbrace a\circ b\rbrace$ 로 두고
@@ -105,7 +105,7 @@ $C_2$ 여유한 가정을 빼면 2 가 무너진다. 아핀 VOA 의 승인가능
 Zhu 정리는 괴물 달빛에서 $j$ 가 나오는 자리를 설명한다. $V^\natural$ 이 홀로모픽이므로 지표가 $\mathrm{SL}\_2(\mathbb Z)$ 아래 불변인 무게 0 함수이고, 등급이 $-1$ 에서 시작하므로 첨점에서 단순극을 가지며, $V^\natural_1=0$ 이라 상수항이 0 이다. 이 세 조건을 만족하는 함수는 하나뿐이다.
 
 $$
-\mathrm{ch}_{V^\natural}(\tau)=J(\tau)=j(\tau)-744=q^{-1}+196884q+\cdots
+\mathrm{ch}\_{V^\natural}(\tau)=J(\tau)=j(\tau)-744=q^{-1}+196884q+\cdots
 $$
 
 홀로모픽 $c=24$ VOA 이면 $j$ 가 반드시 나오므로, 달빛의 남은 내용은 그 VOA 위에 괴물군이 작용한다는 쪽이다.

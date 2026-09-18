@@ -7,7 +7,7 @@
 한 자리에서는 사정이 다르다. [$p$ 진수](p-adic-numbers.md)를 완비화해 얻는 국소체 $K$ 에 대해서는 아벨 확대 전체를 손으로 만들 수 있다.
 
 $$
-\mathrm{Art}_K\colon K^\times\longrightarrow\mathrm{Gal}(K^{\mathrm{ab}}/K),\qquad
+\mathrm{Art}\_K\colon K^\times\longrightarrow\mathrm{Gal}(K^{\mathrm{ab}}/K),\qquad
 K^{\mathrm{ab}}=K^{\mathrm{ur}}\cdot K_\pi
 $$
 
@@ -93,14 +93,14 @@ $$
 
 > **국소 상호법칙.** 연속 준동형
 > $$
-> \mathrm{Art}_K\colon K^\times\to\mathrm{Gal}(K^{\mathrm{ab}}/K)
+> \mathrm{Art}\_K\colon K^\times\to\mathrm{Gal}(K^{\mathrm{ab}}/K)
 > $$
 > 가 유일하게 존재해 다음을 만족한다.
 > 1. $\mathrm{Art}\_K(\pi)|\_{K^{\mathrm{ur}}}=\mathrm{Frob}$ 이 모든 소원 $\pi$ 에서 성립한다.
 > 2. 유한 아벨 확대 $L/K$ 마다 동형 $K^\times/N_{L/K}L^\times\cong\mathrm{Gal}(L/K)$ 를 유도한다.
-> 3. $\mathrm{Art}_K(\mathcal O^\times)$ 가 관성군 $\mathrm{Gal}(K^{\mathrm{ab}}/K^{\mathrm{ur}})$ 이다.
+> 3. $\mathrm{Art}\_K(\mathcal O^\times)$ 가 관성군 $\mathrm{Gal}(K^{\mathrm{ab}}/K^{\mathrm{ur}})$ 이다.
 
-$\mathrm{Art}_K$ 자체는 동형이 아니다. $K^\times$ 의 부치 부분이 $\mathbb Z$ 인데 Galois 쪽은 $\hat{\mathbb Z}$ 라 상이 조밀하기만 하다. 노름군에 대한 완비화를 취하면 동형이 된다.
+$\mathrm{Art}\_K$ 자체는 동형이 아니다. $K^\times$ 의 부치 부분이 $\mathbb Z$ 인데 Galois 쪽은 $\hat{\mathbb Z}$ 라 상이 조밀하기만 하다. 노름군에 대한 완비화를 취하면 동형이 된다.
 
 $$
 \widehat{K^\times}=\varprojlim_{L}K^\times/N_{L/K}L^\times\thickspace\cong\thickspace\hat{\mathbb Z}\times\mathcal O^\times\thickspace\cong\thickspace\mathrm{Gal}(K^{\mathrm{ab}}/K)
@@ -124,14 +124,14 @@ $$
 
 $\mathcal F_\pi$ 를 $f\equiv\pi X\ (\deg2)$ 와 $f\equiv X^q\ (\mathfrak m)$ 을 만족하는 $f\in\mathcal O[[X]]$ 의 집합이라 하자.
 
-> **Lubin–Tate.** $f\in\mathcal F_\pi$ 마다 형식군 법칙 $F_f$ 가 유일하게 존재해 $f$ 가 $F_f$ 의 자기준동형이 된다. 또 환 준동형 $\mathcal O\to\mathrm{End}(F_f)$ , $a\mapsto[a]_f$ 가 유일하게 있어 $[a]_f(X)\equiv aX\ (\deg2)$ 이고 $[\pi]_f=f$ 다.
+> **Lubin–Tate.** $f\in\mathcal F_\pi$ 마다 형식군 법칙 $F_f$ 가 유일하게 존재해 $f$ 가 $F_f$ 의 자기준동형이 된다. 또 환 준동형 $\mathcal O\to\mathrm{End}(F_f)$ , $a\mapsto[a]\_f$ 가 유일하게 있어 $[a]\_f(X)\equiv aX\ (\deg2)$ 이고 $[\pi]\_f=f$ 다.
 
 구성은 차수에 대한 귀납이다. $F\equiv X+Y$ 에서 시작해 $\Delta=f(F)-F(f(X),f(Y))$ 의 $n$ 차 동차부분을 $\pi^n-\pi$ 로 나눈 것을 더한다. 잔여체에서 $f$ 가 Frobenius 이므로 $\Delta\equiv0\ (\mathfrak m)$ 이고, $\pi^n-\pi=\pi(\pi^{n-1}-1)$ 의 $\pi$ 가 그만큼 상쇄되어 나눗셈이 $\mathcal O$ 안에서 이루어진다.
 
 **분할점**은 $[\pi^n]$ 의 핵이다.
 
 $$
-\Lambda_n=\lbrace x\in\mathfrak m_{\bar K}:[\pi^n]_f(x)=0\rbrace,\qquad
+\Lambda_n=\lbrace x\in\mathfrak m_{\bar K}:[\pi^n]\_f(x)=0\rbrace,\qquad
 \Lambda_n\cong\mathcal O/\pi^n\ (\mathcal O\text{-가군으로})
 $$
 
@@ -142,12 +142,12 @@ $K_{\pi,n}=K(\Lambda_n)$ 으로 두고 $K_\pi=\bigcup_nK_{\pi,n}$ 이라 쓴다.
 ## Lubin–Tate 정리
 
 > 1. $K_{\pi,n}/K$ 는 완전분기 아벨 확대이고 $\mathcal O$ 작용이 동형 $\mathrm{Gal}(K_{\pi,n}/K)\cong(\mathcal O/\pi^n)^\times$ 를 준다.
-> 2. $u\in\mathcal O^\times$ 에 대해 $\mathrm{Art}_K(u)$ 가 $\Lambda_n$ 위에서 $[u^{-1}]_f$ 로 작용한다.
+> 2. $u\in\mathcal O^\times$ 에 대해 $\mathrm{Art}\_K(u)$ 가 $\Lambda_n$ 위에서 $[u^{-1}]\_f$ 로 작용한다.
 > 3. $K^{\mathrm{ab}}=K^{\mathrm{ur}}\cdot K_\pi$ 이고 $K_{\pi,n}$ 은 $f$ 의 선택에 의존하지 않는다.
 
 첫 줄의 $\Lambda_n\cong\mathcal O/\pi^n$ 은 $[\pi^n]\_f$ 가 차수 $q^n$ 의 멱급수이고 $\Lambda_1$ 의 원소가 $f(X)/X$ 의 근이라는 데서 나온다. $f=\pi X+X^q$ 이면 $f(X)/X=\pi+X^{q-1}$ 이 Eisenstein 다항식이므로 $K_{\pi,1}$ 이 차수 $q-1$ 의 완전분기 확대이고, $|(\mathcal O/\pi)^\times|=q-1$ 과 맞는다.
 
-둘째 줄의 역원 $u^{-1}$ 은 정규화의 문제다. $\mathrm{Art}_K(\pi)$ 를 Frobenius 로 둘 것인지 그 역으로 둘 것인지에 따라 부호가 뒤집히고 문헌마다 규약이 갈린다.
+둘째 줄의 역원 $u^{-1}$ 은 정규화의 문제다. $\mathrm{Art}\_K(\pi)$ 를 Frobenius 로 둘 것인지 그 역으로 둘 것인지에 따라 부호가 뒤집히고 문헌마다 규약이 갈린다.
 
 ## 원분체와의 비교
 
@@ -155,8 +155,8 @@ $K=\mathbb Q_p$ , $\pi=p$ , $f(X)=(1+X)^p-1$ 을 넣으면 표의 오른쪽 열�
 
 | Lubin–Tate | $K=\mathbb Q_p,\ f=(1+X)^p-1$ |
 |---|---|
-| $F_f(X,Y)$ | 형식 곱군 $\hat{\mathbb G}_m$ 의 $X+Y+XY$ |
-| $[a]_f(X)$ | $(1+X)^a-1$ |
+| $F_f(X,Y)$ | 형식 곱군 $\hat{\mathbb G}\_m$ 의 $X+Y+XY$ |
+| $[a]\_f(X)$ | $(1+X)^a-1$ |
 | $\Lambda_n$ | $\lbrace\zeta-1:\zeta^{p^n}=1\rbrace$ |
 | $K_{\pi,n}$ | $\mathbb Q_p(\mu_{p^n})$ |
 | $\mathrm{Gal}\cong(\mathcal O/\pi^n)^\times$ | $(\mathbb Z/p^n)^\times$ |
@@ -169,7 +169,7 @@ $K=\mathbb Q_p$ , $\pi=p$ , $f(X)=(1+X)^p-1$ 을 넣으면 표의 오른쪽 열�
 $\mathcal O^\times$ 의 여과 $U^{(0)}=\mathcal O^\times\supset U^{(n)}=1+\mathfrak m^n$ 이 Galois 쪽의 상첨자 분기군으로 옮겨 간다.
 
 $$
-\mathrm{Art}_K\big(U^{(n)}\big)=G^n\quad(\text{상첨자 번호매김})
+\mathrm{Art}\_K\big(U^{(n)}\big)=G^n\quad(\text{상첨자 번호매김})
 $$
 
 $n=0$ 이 관성군, $n\ge1$ 이 야생 분기다. 상호사상이 분기 구조까지 보존하므로 국소 $\varepsilon$ 인자나 도체 계산이 여기에 기댄다. 지표 $\chi$ 의 도체 지수는 $\chi(U^{(n)})=1$ 이 되는 최소의 $n$ 이고, 이것이 대응하는 Galois 표현의 도체와 일치한다.
@@ -180,10 +180,10 @@ $n=0$ 이 관성군, $n\ge1$ 이 야생 분기다. 상호사상이 분기 구조
 
 $$
 \psi_K\colon\mathbb A_K^\times\to\mathrm{Gal}(K^{\mathrm{ab}}/K),\qquad
-\psi_K\big((x_v)_v\big)=\prod_v\mathrm{Art}_{K_v}(x_v)
+\psi_K\big((x_v)\_v\big)=\prod_v\mathrm{Art}\_{K_v}(x_v)
 $$
 
-거의 모든 자리에서 $x_v\in\mathcal O_v^\times$ 이고 그 자리가 비분기이므로 곱이 유한하다. 대역 상호법칙은 이 곱이 $K^\times$ 의 대각선 원소에서 자명하다는 진술, 곧 $\psi_K$ 가 이델류군 $K^\times\backslash\mathbb A_K^\times$ 에서 정의된다는 진술이다. 이차체로 내리면 $\prod_v|x|_v=1$ 과 같은 모양의 곱 공식이 되고, 이차 상호법칙의 Hilbert 기호 형태가 이 진술이다.
+거의 모든 자리에서 $x_v\in\mathcal O_v^\times$ 이고 그 자리가 비분기이므로 곱이 유한하다. 대역 상호법칙은 이 곱이 $K^\times$ 의 대각선 원소에서 자명하다는 진술, 곧 $\psi_K$ 가 이델류군 $K^\times\backslash\mathbb A_K^\times$ 에서 정의된다는 진술이다. 이차체로 내리면 $\prod_v|x|\_v=1$ 과 같은 모양의 곱 공식이 되고, 이차 상호법칙의 Hilbert 기호 형태가 이 진술이다.
 
 증명은 국소에서 대역으로 간다. 국소 유체론을 Galois 코호몰로지로 세운 뒤($H^2(\mathrm{Gal}(L/K),L^\times)\cong\frac1{[L:K]}\mathbb Z/\mathbb Z$ 를 계산한다) 그 위에서 대역 정리를 얻는다. Lubin–Tate 는 그 국소 단계를 코호몰로지 없이 명시적으로 해내는 길이다.
 
@@ -210,7 +210,7 @@ $$
 - **Galois 표현의 국소 조건.** $\mathrm{Gal}(\bar K_v/K_v)$ 의 표현에서 아벨 부분은 $K_v^\times$ 의 지표로 번역된다. 대역 [Galois 표현](galois-representations.md)의 도체와 $L$ 인자를 자리마다 계산하는 근거다.
 - **국소 $\varepsilon$ 인자.** 자기동형 $L$ 함수의 함수방정식에 나오는 근 수가 분기 지표의 Gauss 합으로 주어지고, 그 계산이 분기 여과 위에서 이루어진다.
 - **$p$ 진 Hodge 이론.** $K_\pi$ 를 붙여 만든 탑이 $p$ 진 표현을 $\varphi$ 가군으로 바꾸는 장의 원형이다. Fontaine 의 주기환과 Coleman 의 노름 사상이 Lubin–Tate 탑 위에서 세워진다.
-- **국소 Langlands 대응.** $\mathrm{GL}_1$ 의 국소 Langlands 대응이 국소 상호법칙이다. $\mathrm{GL}\_n$ 으로 올린 진술을 Harris–Taylor 와 Henniart 가 증명했고, [Langlands 강령](langlands-program.md)의 국소 성분을 이룬다.
+- **국소 Langlands 대응.** $\mathrm{GL}\_1$ 의 국소 Langlands 대응이 국소 상호법칙이다. $\mathrm{GL}\_n$ 으로 올린 진술을 Harris–Taylor 와 Henniart 가 증명했고, [Langlands 강령](langlands-program.md)의 국소 성분을 이룬다.
 
 [^1]: Jonathan Lubin, John Tate, *Formal Complex Multiplication in Local Fields*, Annals of Mathematics 81 (1965), 380–387. 형식군의 존재와 유일성은 Lemma 1 과 그 따름정리, 분할점의 $\mathcal O$ 가군 구조와 Galois 군 계산은 Theorem 2 다.
 [^2]: R. P. Langlands, *Some contemporary problems with origins in the Jugendtraum*, Mathematical Developments Arising from Hilbert Problems, Proc. Sympos. Pure Math. **28** (1976), 401–418. 유리수체와 허수 이차체 밖에서 Hilbert 의 12 번 문제가 풀리지 않은 채임을 전제로 그 너머의 접근을 논한다.

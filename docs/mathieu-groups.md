@@ -85,7 +85,7 @@ $\mathcal G_{24}$ 는 자기쌍대이고($\mathcal C=\mathcal C^\perp$ ) 모든 
 다섯 개 모두 단순군이다. $M_{24}$ 의 위수는 5-중 추이성에서 읽힌다.
 
 $$
-|M_{24}|=24\cdot23\cdot22\cdot21\cdot20\cdot|M_{24}|_{(5\text{점 고정})}=24\cdot23\cdot22\cdot21\cdot20\cdot48
+|M_{24}|=24\cdot23\cdot22\cdot21\cdot20\cdot|M_{24}|\_{(5\text{점 고정})}=24\cdot23\cdot22\cdot21\cdot20\cdot48
 $$
 
 5 개 점을 고정한 부분군의 위수가 48 이다.
@@ -114,7 +114,7 @@ $$
 
 에 보정 벡터를 더한 것이 **Leech 격자**다. Golay 부호의 최소거리 8 이 격자의 최소노름 4 로 번역되고 노름 2 인 벡터가 없다. 이 성질이 [theta 급수](theta-functions.md)와 [구 채우기](sphere-packing.md)에서 쓰이고 [정점작용소대수](vertex-operator-algebras.md) $V^\natural$ 의 구성에서도 같은 자리에 있다.
 
-Leech 격자의 자기동형군이 Conway 군 $\mathrm{Co}_0$ 이고 그 몫과 안정자에서 산재군 여러 개가 나온다. 산재군 26 개 중 12 개가 Leech 주변에 모여 있다.
+Leech 격자의 자기동형군이 Conway 군 $\mathrm{Co}\_0$ 이고 그 몫과 안정자에서 산재군 여러 개가 나온다. 산재군 26 개 중 12 개가 Leech 주변에 모여 있다.
 
 # 활용
 

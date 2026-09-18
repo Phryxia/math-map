@@ -2,10 +2,10 @@
 
 # 개요
 
-[Weyl 지표 공식](weyl-character-formula.md)을 $\mathfrak{gl}_n$ 에 적용하면 분모가 Vandermonde 행렬식이 되고, 지표가 두 행렬식의 비로 떨어진다.
+[Weyl 지표 공식](weyl-character-formula.md)을 $\mathfrak{gl}\_n$ 에 적용하면 분모가 Vandermonde 행렬식이 되고, 지표가 두 행렬식의 비로 떨어진다.
 
 $$
-s_\lambda(x_1,\dots,x_n)=\frac{\det\negthinspace\big(x_i^{\lambda_j+n-j}\big)_{1\le i,j\le n}}{\det\negthinspace\big(x_i^{n-j}\big)_{1\le i,j\le n}}
+s_\lambda(x_1,\dots,x_n)=\frac{\det\negthinspace\big(x_i^{\lambda_j+n-j}\big)\_{1\le i,j\le n}}{\det\negthinspace\big(x_i^{n-j}\big)\_{1\le i,j\le n}}
 $$
 
 이것이 **Schur 다항식**이다. 표현론에서는 기약표현의 지표이지만, 정의만 보면 대칭다항식 하나이고 실제로 대칭다항식 공간의 가장 자연스러운 기저다.
@@ -14,7 +14,7 @@ $$
 
 | 관점 | 정의 |
 |---|---|
-| 표현론 | $\mathrm{GL}_n$ 기약표현의 지표, 위의 bialternant 공식 |
+| 표현론 | $\mathrm{GL}\_n$ 기약표현의 지표, 위의 bialternant 공식 |
 | 조합론 | 모양 $\lambda$ 인 반표준 Young 대각표들의 무게 합 |
 | 대수 | 완전 동차 대칭다항식의 행렬식 (Jacobi–Trudi) |
 
@@ -26,7 +26,7 @@ $$
 
 ## 무게 다이어그램과 대각표
 
-$\mathrm{GL}\_n$ 의 기약표현 $V_\lambda$ 의 무게 다이어그램을 생각하자. 무게 $\mu$ 의 중복도가 $\dim(V_\lambda)_\mu$ 이고, 지표는 그것을 $x^\mu$ 에 실어 모은 것이다.
+$\mathrm{GL}\_n$ 의 기약표현 $V_\lambda$ 의 무게 다이어그램을 생각하자. 무게 $\mu$ 의 중복도가 $\dim(V_\lambda)\_\mu$ 이고, 지표는 그것을 $x^\mu$ 에 실어 모은 것이다.
 
 $$
 s_\lambda(x)=\sum_\mu K_{\lambda\mu}\thinspace x^\mu
@@ -42,7 +42,7 @@ $$
 
 가 된다. $K_{\lambda\mu}$ 는 내용이 $\mu$ 인 대각표의 개수다. 음이 아닌 정수임이 정의에서 바로 보인다.
 
-두 조건의 방향이 다른 것에 이유가 있다. 행의 약증가는 대칭성(같은 값이 반복 가능)에서, 열의 강증가는 반대칭성(교대곱에서 같은 값이 죽음)에서 나온다. $\mathrm{GL}_n$ 표현이 대칭곱과 외적의 조합으로 만들어지는 구조가 대각표의 두 규칙으로 번역된 것이다.
+두 조건의 방향이 다른 것에 이유가 있다. 행의 약증가는 대칭성(같은 값이 반복 가능)에서, 열의 강증가는 반대칭성(교대곱에서 같은 값이 죽음)에서 나온다. $\mathrm{GL}\_n$ 표현이 대칭곱과 외적의 조합으로 만들어지는 구조가 대각표의 두 규칙으로 번역된 것이다.
 
 ## 세 정의가 같다는 것의 무게
 
@@ -68,18 +68,18 @@ $\lambda=(\lambda_1\ge\lambda_2\ge\cdots\ge\lambda_\ell\gt 0)$ 을 **분할**이
 $$
 s_\lambda(x_1,\dots,x_n)=\frac{\det\big(x_i^{\lambda_j+n-j}\big)}{\det\big(x_i^{n-j}\big)}
 =\sum_{T\in\mathrm{SSYT}(\lambda,n)}x^T
-=\det\big(h_{\lambda_i-i+j}\big)_{1\le i,j\le\ell}
+=\det\big(h_{\lambda_i-i+j}\big)\_{1\le i,j\le\ell}
 $$
 
 여기서 $h_k$ 는 완전 동차 대칭다항식, 곧 차수 $k$ 의 모든 단항식의 합이며 $h_0=1$ 과 $h_{k\lt 0}=0$ 이다. 마지막 등식이 **Jacobi–Trudi 항등식**이다. 기본 대칭다항식 $e_k$ 로 쓰는 쌍대 판본도 있다.
 
 $$
-s_\lambda=\det\big(e_{\lambda'_i-i+j}\big),\qquad \lambda'=\text{전치 분할}
+s_\lambda=\det\big(e_{\lambda'\_i-i+j}\big),\qquad \lambda'=\text{전치 분할}
 $$
 
 ## 표현론과의 사전
 
-$\ell(\lambda)\le n$ 인 분할과 $\mathrm{GL}_n(\mathbb C)$ 의 다항식 기약표현이 대응한다. $\mathfrak{sl}_n$ 의 Dynkin 라벨로는
+$\ell(\lambda)\le n$ 인 분할과 $\mathrm{GL}\_n(\mathbb C)$ 의 다항식 기약표현이 대응한다. $\mathfrak{sl}\_n$ 의 Dynkin 라벨로는
 
 $$
 (a_1,\dots,a_{n-1})=(\lambda_1-\lambda_2,\ \lambda_2-\lambda_3,\ \dots,\ \lambda_{n-1}-\lambda_n)
@@ -109,7 +109,7 @@ $$
 \mathrm{ch}:\bigoplus_n R(S_n)\ \xrightarrow{\ \sim\ }\ \Lambda,\qquad [S^\lambda]\mapsto s_\lambda
 $$
 
-$\mathrm{GL}_n$ 의 표현론과 $S_n$ 의 표현론이 같은 대상 위에서 만나는 이 현상이 **Schur–Weyl 쌍대성**의 대칭함수 판본이다.
+$\mathrm{GL}\_n$ 의 표현론과 $S_n$ 의 표현론이 같은 대상 위에서 만나는 이 현상이 **Schur–Weyl 쌍대성**의 대칭함수 판본이다.
 
 ## Littlewood–Richardson 규칙
 
@@ -137,7 +137,7 @@ $$
 
 **Robinson–Schensted–Knuth 대응**이고, 개수를 세면 $n!=\sum_\lambda(f^\lambda)^2$ 이 나온다. 대칭군의 표현론에서 아는 항등식을 순수하게 조합적으로 증명하는 셈이다.
 
-이 대응은 순열의 통계량을 대각표의 모양으로 번역한다. $\lambda_1$ 이 가장 긴 증가 부분열의 길이이고 $\lambda'_1$ 이 가장 긴 감소 부분열의 길이다(Schensted 정리). 무작위 순열의 가장 긴 증가 부분열이 $2\sqrt n$ 에 접근하고 요동이 Tracy–Widom 분포를 따른다는 결과가 이 번역 위에서 증명되었고, 랜덤 행렬 이론과 조합론을 잇는 다리가 되었다.
+이 대응은 순열의 통계량을 대각표의 모양으로 번역한다. $\lambda_1$ 이 가장 긴 증가 부분열의 길이이고 $\lambda'\_1$ 이 가장 긴 감소 부분열의 길이다(Schensted 정리). 무작위 순열의 가장 긴 증가 부분열이 $2\sqrt n$ 에 접근하고 요동이 Tracy–Widom 분포를 따른다는 결과가 이 번역 위에서 증명되었고, 랜덤 행렬 이론과 조합론을 잇는 다리가 되었다.
 
 # 활용
 
@@ -146,7 +146,7 @@ $$
 Grassmann 다양체 $\mathrm{Gr}(k,n)$ 의 코호몰로지 환은 Schubert 순환으로 생성되고, $\sigma_\lambda\mapsto s_\lambda$ 가 환 동형을 준다(단, 큰 분할은 0 으로 보낸다).
 
 $$
-H^*(\mathrm{Gr}(k,n))\cong\Lambda/(s_\lambda:\lambda\not\subseteq k\times(n-k))
+H^\ast(\mathrm{Gr}(k,n))\cong\Lambda/(s_\lambda:\lambda\not\subseteq k\times(n-k))
 $$
 
 그래서 "일반 위치의 선 넷과 만나는 직선은 몇 개인가" 같은 고전적 셈 문제가 $s_1^4$ 를 전개하는 계산이 된다. LR 수가 곧 교차수다.
@@ -174,7 +174,7 @@ Schur 다항식을 한 방향으로 변형한 것들이 각각 다른 이론을 
 
 모두 $q,t$ 를 특수화하면 $s_\lambda$ 로 돌아오고, 위의 세 정의가 각각 대응물을 갖는다. Macdonald 다항식의 전개 계수가 음이 아닌 정수라는 추측(Macdonald 양성 추측)이 Haiman 의 Hilbert 스킴 기하로 증명된 것이 이 방향의 대표적 성과다.
 
-[^1]: 표준 참고서는 I. Macdonald, *Symmetric Functions and Hall Polynomials* (2판, 1995) 1 장과 R. Stanley, *Enumerative Combinatorics II* (1999) 7 장. LR 규칙의 현대적 증명과 hive 모형은 A. Knutson–T. Tao, *The honeycomb model of $\mathrm{GL}_n(\mathbb C)$ tensor products I*, J. Amer. Math. Soc. 12 (1999). RSK 와 가장 긴 증가 부분열의 점근은 J. Baik–P. Deift–K. Johansson, J. Amer. Math. Soc. 12 (1999). Macdonald 양성은 M. Haiman, J. Amer. Math. Soc. 14 (2001).
+[^1]: 표준 참고서는 I. Macdonald, *Symmetric Functions and Hall Polynomials* (2판, 1995) 1 장과 R. Stanley, *Enumerative Combinatorics II* (1999) 7 장. LR 규칙의 현대적 증명과 hive 모형은 A. Knutson–T. Tao, *The honeycomb model of $\mathrm{GL}\_n(\mathbb C)$ tensor products I*, J. Amer. Math. Soc. 12 (1999). RSK 와 가장 긴 증가 부분열의 점근은 J. Baik–P. Deift–K. Johansson, J. Amer. Math. Soc. 12 (1999). Macdonald 양성은 M. Haiman, J. Amer. Math. Soc. 14 (2001).
 
 # 연관 문서
 

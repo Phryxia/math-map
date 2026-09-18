@@ -83,7 +83,7 @@ $$
 [격자](lattices.md) $L\subset\mathbb R^{d}$ 와 쌍대격자 $L^{\ast}=\lbrace\mu:\langle\mu,\lambda\rangle\in\mathbb Z\ \forall\lambda\in L\rbrace$ 에 대해
 
 $$
-\sum_{\lambda\in L}f(\lambda)=\frac1{\mathrm{covol}(L)}\sum_{\mu\in L^{*}}\hat f(\mu)
+\sum_{\lambda\in L}f(\lambda)=\frac1{\mathrm{covol}(L)}\sum_{\mu\in L^{\ast}}\hat f(\mu)
 $$
 
 $L$ 이 촘촘하면 $L^{\ast}$ 는 성기다. 기본영역의 크기가 바뀌므로 부피 인자가 붙고, $L=\mathbb Z^{d}$ 이면 $\mathrm{covol}=1$ 이라 원래 공식이 된다.

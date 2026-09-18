@@ -13,7 +13,7 @@ $$
 기하학적 Satake 대응은 같은 등식을 범주 수준에서 준다. $\mathcal H(G,K)$ 의 원소인 함수 자리에 층을 놓는다.
 
 $$
-\mathrm{Perv}_{G(\mathcal O)}\bigl(\mathrm{Gr}_G\bigr)
+\mathrm{Perv}\_{G(\mathcal O)}\bigl(\mathrm{Gr}\_G\bigr)
 \thickspace\simeq\thickspace
 \mathrm{Rep}(\widehat G)
 $$
@@ -23,7 +23,7 @@ $$
 왼쪽은 $G$ 만으로 정의되고 $\widehat G$ 를 쓰지 않는다. 오른쪽을 Tannaka 형식주의로 복원하면 쌍대군이 근계를 뒤집은 구성이 아니라 $G$ 의 고리 공간의 기하에서 나오는 대상이 된다.
 
 $$
-\widehat G=\mathrm{Aut}^{\otimes}\bigl(\text{올림자 } H^*\bigr)
+\widehat G=\mathrm{Aut}^{\otimes}\bigl(\text{올림자 } H^\ast\bigr)
 $$
 
 이 정리가 Langlands 강령에서 쌍대군이 등장하는 근거이고, 기하학적 Langlands 강령이 이를 바탕으로 세워진다.
@@ -35,7 +35,7 @@ $$
 유한체 위의 다양체에서 함수와 층은 서로 오간다. $\ell$ 진 층 $\mathcal F$ 가 있으면 각 유리점에서 Frobenius 자취를 재어 함수를 얻는다.
 
 $$
-f_{\mathcal F}(x)=\mathrm{tr}\bigl(\mathrm{Frob}_x,\mathcal F_{\bar x}\bigr)
+f_{\mathcal F}(x)=\mathrm{tr}\bigl(\mathrm{Frob}\_x,\mathcal F_{\bar x}\bigr)
 $$
 
 이것이 **함수-층 사전**(Grothendieck)이다. 층의 합성곱은 함수의 합성곱으로, 층의 직합은 함수의 합으로 가고, 층 수준의 진술이 더 많은 정보를 담는다.
@@ -59,7 +59,7 @@ $F=\mathbb C((t))$ 와 $\mathcal O=\mathbb C[[t]]$ 로 둔다. $\mathrm{Gr}\_G=G
 Cartan 분해가 $G(\mathcal O)$ 궤도를 분류한다.
 
 $$
-\mathrm{Gr}_G=\bigsqcup_{\lambda\in X_*(T)^+}\mathrm{Gr}^\lambda,
+\mathrm{Gr}\_G=\bigsqcup_{\lambda\in X_\ast(T)^+}\mathrm{Gr}^\lambda,
 \qquad
 \mathrm{Gr}^\lambda=G(\mathcal O)\cdot t^\lambda
 $$
@@ -91,7 +91,7 @@ $\mathrm{Gr}^\lambda$ 는 열린 궤도이고 그 폐포는 특이점을 가진�
 층의 합성곱은 함수의 합성곱에 대응한다. 곱사상 $m:G(F)\times^{G(\mathcal O)}\mathrm{Gr}\_G\to\mathrm{Gr}\_G$ 을 따라 밀어내는 것이다.
 
 $$
-\mathcal F\ast\mathcal G=m_*\bigl(\mathcal F\thinspace\widetilde\boxtimes\thinspace\mathcal G\bigr)
+\mathcal F\ast\mathcal G=m_\ast\bigl(\mathcal F\thinspace\widetilde\boxtimes\thinspace\mathcal G\bigr)
 $$
 
 이 곱은 정의상 교환적으로 보이지 않지만 표현의 텐서곱은 교환적이므로 교환 제약이 필요하다.
@@ -103,9 +103,9 @@ $$
 Tannaka 쌍대성은 텐서 범주와 벡터공간으로 가는 충실한 텐서 함자(**올림자**)에서 군을 복원한다. 여기서 올림자는 전체 코호몰로지다.
 
 $$
-H^*:\mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\to\mathrm{Vect},
+H^\ast:\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\to\mathrm{Vect},
 \qquad
-\mathcal F\mapsto\bigoplus_kH^k(\mathrm{Gr}_G,\mathcal F)
+\mathcal F\mapsto\bigoplus_kH^k(\mathrm{Gr}\_G,\mathcal F)
 $$
 
 Künneth 공식이 $H^\ast(\mathcal F\ast\mathcal G)\cong H^\ast(\mathcal F)\otimes H^\ast(\mathcal G)$ 를 주므로 이것이 텐서 함자이고, 그 텐서 자기동형군이 $\widehat G$ 다. 쌍대군은 아핀 Grassmann 다양체의 코호몰로지의 대칭군이다.
@@ -135,7 +135,7 @@ graph TD
 $k$ 를 체라 하고 $F=k((t))$ 와 $\mathcal O=k[[t]]$ 로 두고 $G$ 를 $k$ 위의 연결 환원군이라 하자. **아핀 Grassmann 다양체**는 함자
 
 $$
-\mathrm{Gr}_G(R)=\bigl\lbrace(\mathcal E,\beta)\bigr\rbrace/\cong
+\mathrm{Gr}\_G(R)=\bigl\lbrace(\mathcal E,\beta)\bigr\rbrace/\cong
 $$
 
 로 정의된다. $\mathcal E$ 는 $\mathrm{Spec}\thinspace R[[t]]$ 위의 $G$ 다발이고 $\beta$ 는 $\mathrm{Spec}\thinspace R((t))$ 위의 자명화다. 이 함자가 ind-사영 ind-스킴으로 표현되고 $k$ 점이 $G(F)/G(\mathcal O)$ 다.
@@ -158,7 +158,7 @@ $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 를 $G(\mathcal O)$ 동변 퍼�
 
 > **정리 (Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 는 대칭 텐서 범주이고, 전체 코호몰로지 $H^\ast$ 를 올림자로 하는 Tannaka 쌍대성에 의해
 > $$
-> \mathrm{Perv}_{G(\mathcal O)}(\mathrm{Gr}_G)\thickspace\simeq\thickspace\mathrm{Rep}(\widehat G)
+> \mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\thickspace\simeq\thickspace\mathrm{Rep}(\widehat G)
 > $$
 > 가 텐서 범주의 동치로 성립한다. $\mathcal{IC}\_\lambda$ 가 최고무게 $\lambda$ 의 기약표현 $V_\lambda$ 에 대응한다.[^1]
 
@@ -171,8 +171,8 @@ Mirković–Vilonen 은 임의의 가환환 계수에서 이를 증명했고, �
 표현 $V_\lambda$ 의 무게 공간 분해를 기하 쪽에서 실현하는 것이 **반무한 낟가리**(semi-infinite cell)다. 멱단군 $N(F)$ 궤도로 자르면
 
 $$
-H^*\bigl(\mathrm{Gr}_G,\mathcal{IC}_\lambda\bigr)
-=\bigoplus_{\mu}H^{*}_{S_\mu}\bigl(\mathcal{IC}_\lambda\bigr),
+H^\ast\bigl(\mathrm{Gr}\_G,\mathcal{IC}\_\lambda\bigr)
+=\bigoplus_{\mu}H^{\ast}\_{S_\mu}\bigl(\mathcal{IC}\_\lambda\bigr),
 \qquad
 S_\mu=N(F)\cdot t^\mu
 $$
@@ -216,7 +216,7 @@ Langlands 쌍대군의 원래 정의는 근 자료 $(X^\ast,\Phi,X_\ast,\Phi^\ve
 고전적 Langlands 강령에서 자기동형 형식은 $\mathrm{Bun}\_G$ 위의 함수이고 기하학적 판에서는 층이다. Hecke 작용소 자리에 오는 **Hecke 함자**를 $\widehat G$ 의 표현으로 매개하는 것이 기하학적 Satake 다.
 
 $$
-\mathrm{Hecke}_V:\mathrm{D}(\mathrm{Bun}_G)\to\mathrm{D}(\mathrm{Bun}_G\times X),
+\mathrm{Hecke}\_V:\mathrm{D}(\mathrm{Bun}\_G)\to\mathrm{D}(\mathrm{Bun}\_G\times X),
 \qquad V\in\mathrm{Rep}(\widehat G)
 $$
 

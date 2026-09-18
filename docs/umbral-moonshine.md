@@ -28,7 +28,7 @@ $$
 Zwegers 가 2002 년에 답을 냈다. mock 모듈러 형식 $H$ 에는 **shadow** 라 부르는 정칙 모듈러 형식 $g$ 가 있고, $H$ 에 $g$ 로 만든 비정칙 적분을 더하면 변환법칙이 정확히 맞는다.
 
 $$
-\widehat H(\tau)=H(\tau)+\underbrace{\text{(}g\text{ 의 비정칙 Eichler 적분)}}_{\text{정칙성을 깨고 모듈러성을 복구}}
+\widehat H(\tau)=H(\tau)+\underbrace{\text{(}g\text{ 의 비정칙 Eichler 적분)}}\_{\text{정칙성을 깨고 모듈러성을 복구}}
 $$
 
 $\widehat H$ 는 모듈러이지만 정칙이 아니고, $H$ 는 정칙이지만 모듈러가 아니다. 둘 중 하나를 포기해야 하는 상황이고, 어느 쪽을 포기했는지를 재는 양이 shadow 다. $g=0$ 이면 보통 모듈러 형식으로 돌아온다.
@@ -67,7 +67,7 @@ Weyl 군을 나눠 버리는 것이 핵심이다. 근계의 대칭 중 "자명�
 콤팩트 초켈러 곡면 $X$ 의 **타원 종수**는 두 변수 함수다.
 
 $$
-Z_X(\tau,z)=\mathrm{tr}_{\mathcal H_{RR}}\left((-1)^Fy^{J_0}q^{L_0-c/24}\bar q^{\bar L_0-c/24}\right),\qquad q=e^{2\pi i\tau},\ y=e^{2\pi iz}
+Z_X(\tau,z)=\mathrm{tr}\_{\mathcal H_{RR}}\left((-1)^Fy^{J_0}q^{L_0-c/24}\bar q^{\bar L_0-c/24}\right),\qquad q=e^{2\pi i\tau},\ y=e^{2\pi iz}
 $$
 
 우변은 물리적 표현이지만 결과는 순수하게 위상적이고, $X$ 의 변형에 불변이다. K3 곡면에 대해 이것은 무게 $0$ 과 지표 $1$ 의 약한 Jacobi 형식이고 그런 형식의 공간이 1 차원이라 정규화 하나로 결정된다.
@@ -83,7 +83,7 @@ $z=0$ 을 넣으면 $Z_{K3}(\tau,0)=24=\chi(K3)$ 로 Euler 지표가 나온다.
 $Z_{K3}$ 를 $c=6$ 인 $N=4$ 초등각대수의 지표로 분해한다. 짧은 지표 하나와 긴 지표들의 무한합으로 갈라진다.
 
 $$
-Z_{K3}(\tau,z)=24\thinspace\mathrm{ch}_{\frac14,0}(\tau,z)+\sum_{n\ge0}A_n\thinspace\mathrm{ch}_{n+\frac14,\frac12}(\tau,z)
+Z_{K3}(\tau,z)=24\thinspace\mathrm{ch}\_{\frac14,0}(\tau,z)+\sum_{n\ge0}A_n\thinspace\mathrm{ch}\_{n+\frac14,\frac12}(\tau,z)
 $$
 
 계수를 모은 생성함수를 놓는다.
@@ -104,7 +104,7 @@ $$
 G^X=\mathrm{Aut}(N^X)/W^X
 $$
 
-를 **umbral 군**이라 한다. $m=h(X)$ 를 $X$ 의 공통 Coxeter 수라 할 때, 각 $g\in G^X$ 에 대응하는 무게 $1/2$ 와 지표 $m$ 의 벡터값 mock 모듈러 형식 $H^X_g=(H^X_{g,r})_{r\bmod 2m}$ 이 정해지고 그 shadow 는 $X$ 의 근계 theta 급수에 $g$ 의 작용을 얹은 것이다.
+를 **umbral 군**이라 한다. $m=h(X)$ 를 $X$ 의 공통 Coxeter 수라 할 때, 각 $g\in G^X$ 에 대응하는 무게 $1/2$ 와 지표 $m$ 의 벡터값 mock 모듈러 형식 $H^X_g=(H^X_{g,r})\_{r\bmod 2m}$ 이 정해지고 그 shadow 는 $X$ 의 근계 theta 급수에 $g$ 의 작용을 얹은 것이다.
 
 > **Umbral moonshine 추측 (CDH 2012).** 각 $X$ 마다 무한차원 등급 $G^X$ 가군 $K^X$ 가 있어, 그 등급 지표의 생성함수가 정확히 $H^X_g$ 다.
 
@@ -126,8 +126,8 @@ Niemeier 근계가 만족하는 두 조건, 곧 **랭크 합이 24** 이고 **�
 |---|---|---|
 | $A_1^{24}$ | 2 | $M_{24}$ |
 | $A_2^{12}$ | 3 | $2.M_{12}$ |
-| $A_3^{8}$ | 4 | $2.\mathrm{AGL}_3(2)$ |
-| $D_4^{6}$ | 6 | $\mathrm{GL}_2(3)$ |
+| $A_3^{8}$ | 4 | $2.\mathrm{AGL}\_3(2)$ |
+| $D_4^{6}$ | 6 | $\mathrm{GL}\_2(3)$ |
 | $A_{24}$ | 25 | $\mathbb Z/2$ |
 | $D_{24}$ | 46 | 자명군 |
 
@@ -167,7 +167,7 @@ Ramanujan 의 mock theta 함수는 오랫동안 고립된 호기심이었다. Zw
 
 ## 산재군을 보는 새로운 창
 
-괴물 달빛이 끝났을 때 남은 질문은 "다른 산재군에도 비슷한 것이 있는가" 였다. umbral moonshine 은 $M_{24}$ 와 $M_{12}$ 를 포함한 여러 군에 대해 그렇다고 답했고, 이후 Conway 군 $\mathrm{Co}_0$ 에 대한 달빛, Thompson 군 달빛, $O'Nan$ 군 달빛이 이어졌다. 마지막 것은 특히 흥미로운데, $O'Nan$ 달빛의 계수가 [타원곡선](elliptic-curves.md)의 계급수와 Selmer 군 정보를 담고 있어 산재군이 산술적 대상과 연결된다.
+괴물 달빛이 끝났을 때 남은 질문은 "다른 산재군에도 비슷한 것이 있는가" 였다. umbral moonshine 은 $M_{24}$ 와 $M_{12}$ 를 포함한 여러 군에 대해 그렇다고 답했고, 이후 Conway 군 $\mathrm{Co}\_0$ 에 대한 달빛, Thompson 군 달빛, $O'Nan$ 군 달빛이 이어졌다. 마지막 것은 특히 흥미로운데, $O'Nan$ 달빛의 계수가 [타원곡선](elliptic-curves.md)의 계급수와 Selmer 군 정보를 담고 있어 산재군이 산술적 대상과 연결된다.
 
 [유한 단순군 분류](finite-simple-groups.md)가 26 개의 산재군을 예외로 남긴 뒤, 그 예외들이 왜 존재하는지는 여전히 설명되지 않았다. 달빛 현상들은 그 설명이 군론 바깥, 모듈러 형식과 등각장론 쪽에 있으리라는 가장 강한 증거다.
 

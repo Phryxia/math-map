@@ -159,7 +159,7 @@ $L^1$ 유계성과 UI 의 차이를 보이는 세 예다.
 [martingale](martingales.md) $M_n$ 이 $L^1$ 유계이면 거의 확실히 어떤 $M_\infty$ 로 수렴한다(Doob). $L^1$ 수렴과 $\mathbb E[M_n]=\mathbb E[M_\infty]$ 는 따라오지 않고, 그 필요충분조건이 $\lbrace M_n\rbrace$ 의 균등적분가능성이다. 이때 martingale 은 닫힌 형태
 
 $$
-M_n = \mathbb{E}[M_\infty \mid \mathcal{F}_n]
+M_n = \mathbb{E}[M_\infty \mid \mathcal{F}\_n]
 $$
 
 를 가지므로, UI martingale 은 적분가능한 확률변수 하나를 [조건부 기댓값](conditional-expectation.md)으로 펼친 것이다. optional stopping 정리의 성립 여부도 정지시각까지의 족이 UI 인지로 판정된다.

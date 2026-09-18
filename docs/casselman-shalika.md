@@ -10,7 +10,7 @@ $$
 
 $\alpha_i$ 는 $\pi_v$ 의 Satake 매개변수, $\lambda$ 는 지배적 여무게이고, $\lambda$ 가 지배적이 아니면 값이 0 이다.
 
-[Whittaker 모형](whittaker-models.md)은 $\mathrm{GL}_n$ 첨점형식의 Fourier 계수를 대신하는 함수 $W(g)$ 를 주고, 유일성 덕분에 $W$ 가 자리마다의 곱으로 쪼개져 $L$ 함수가 Euler 곱이 된다. 각 자리의 $W$ 값을 [Schur 다항식](schur-polynomials.md)이 답한다. $p$ 진군 위의 조화해석이 낳은 값이 복소 Lie 군의 기약지표다.
+[Whittaker 모형](whittaker-models.md)은 $\mathrm{GL}\_n$ 첨점형식의 Fourier 계수를 대신하는 함수 $W(g)$ 를 주고, 유일성 덕분에 $W$ 가 자리마다의 곱으로 쪼개져 $L$ 함수가 Euler 곱이 된다. 각 자리의 $W$ 값을 [Schur 다항식](schur-polynomials.md)이 답한다. $p$ 진군 위의 조화해석이 낳은 값이 복소 Lie 군의 기약지표다.
 
 이 등식이 두 가지를 설명한다.
 
@@ -21,7 +21,7 @@ $\alpha_i$ 는 $\pi_v$ 의 Satake 매개변수, $\lambda$ 는 지배적 여무�
 
 ## 값이 놓이는 자리
 
-비분기 자리에서 $W^\circ$ 는 오른쪽으로 $K=\mathrm{GL}_n(\mathcal O)$ 불변이고 왼쪽으로 $N$ 에 대해 $\psi_N$ 변환한다. Iwasawa 분해 $G=NAK$ 를 쓰면 $W^\circ$ 는 $A$ 위의 값으로 결정되고, $A\cap K$ 불변이므로 값이 다음 자리에만 놓인다.
+비분기 자리에서 $W^\circ$ 는 오른쪽으로 $K=\mathrm{GL}\_n(\mathcal O)$ 불변이고 왼쪽으로 $N$ 에 대해 $\psi_N$ 변환한다. Iwasawa 분해 $G=NAK$ 를 쓰면 $W^\circ$ 는 $A$ 위의 값으로 결정되고, $A\cap K$ 불변이므로 값이 다음 자리에만 놓인다.
 
 $$
 \varpi^\lambda=\mathrm{diag}(\varpi^{\lambda_1},\dots,\varpi^{\lambda_n}),\qquad\lambda\in\mathbb Z^n
@@ -31,7 +31,7 @@ $W^\circ$ 는 $\mathbb Z^n$ 위의 함수 하나다. $\psi_N$ 의 비퇴화성�
 
 | | 왼쪽 ($p$ 진군) | 오른쪽 (복소 Lie 군) |
 |---|---|---|
-| 매개변수의 집합 | $A/(A\cap K)=X_\ast(T)$ 의 지배적 부분 | $\widehat G=\mathrm{GL}_n(\mathbb C)$ 의 최고무게 $X^\ast(\widehat T)^+$ |
+| 매개변수의 집합 | $A/(A\cap K)=X_\ast(T)$ 의 지배적 부분 | $\widehat G=\mathrm{GL}\_n(\mathbb C)$ 의 최고무게 $X^\ast(\widehat T)^+$ |
 | 변수 | Satake 매개변수 $\alpha_i$ | 쌍대 토러스의 좌표 |
 | 값 | $W^\circ(\varpi^\lambda)$ | 기약지표 $s_\lambda(\alpha)$ |
 
@@ -43,7 +43,7 @@ Hecke 대수의 원소 $f$ 가 $W^\circ$ 에 작용하면 Satake 변환의 값 $
 
 $\lambda$ 로 매겨진 함수족이 기약표현으로 매겨진 지표족과 같은 대수 위에서 같은 방식으로 변환하므로 남는 것은 정규화 $\delta_B^{1/2}$ 뿐이다. 표현환의 자연 기저가 $\lbrace s_\lambda\rbrace$ 이므로 답도 $s_\lambda$ 다.
 
-Casselman–Shalika 는 Whittaker 함수를 $\mathrm{Ind}_B^G$ 에서 교차 작용소의 합으로 쓰고, Weyl 군에 걸친 합이 Weyl 지표 공식의 bialternant 꼴로 접히는 것을 보인다.
+Casselman–Shalika 는 Whittaker 함수를 $\mathrm{Ind}\_B^G$ 에서 교차 작용소의 합으로 쓰고, Weyl 군에 걸친 합이 Weyl 지표 공식의 bialternant 꼴로 접히는 것을 보인다.
 
 $$
 W^\circ(\varpi^\lambda)\ \propto\ \sum_{w\in W}(-1)^{\ell(w)}\frac{\cdots}{\cdots}\ \longrightarrow\ \frac{\det(\alpha_i^{\lambda_j+n-j})}{\det(\alpha_i^{n-j})}
@@ -55,7 +55,7 @@ $\lambda$ 가 지배적이 아닐 때 합이 상쇄되어 0 이 되는 것도 �
 
 ## 설정
 
-$F$ 를 비아르키메데스 국소체, $\mathcal O$ 를 정수환, $\varpi$ 를 소원, $q=|\mathcal O/\varpi|$ 라 하자. $G=\mathrm{GL}_n(F)$ 와 $K=\mathrm{GL}_n(\mathcal O)$ 를 두고 $B=TN$ 을 Borel 부분군이라 한다.
+$F$ 를 비아르키메데스 국소체, $\mathcal O$ 를 정수환, $\varpi$ 를 소원, $q=|\mathcal O/\varpi|$ 라 하자. $G=\mathrm{GL}\_n(F)$ 와 $K=\mathrm{GL}\_n(\mathcal O)$ 를 두고 $B=TN$ 을 Borel 부분군이라 한다.
 
 $\pi$ 를 비분기 기약 허용가능 표현이라 하고 그 Satake 매개변수를 $A_\pi=\mathrm{diag}(\alpha_1,\dots,\alpha_n)$ 이라 한다. $\psi$ 를 $\mathcal O$ 에서 자명하고 $\varpi^{-1}\mathcal O$ 에서 자명하지 않은 가법 지표로 두고, $\psi_N$ 을 그로부터 만든 비퇴화 지표라 하자.
 
@@ -150,7 +150,7 @@ Langlands 강령의 적분 표현은 거의 전부 이 공식을 거친다. 국�
 
 어느 $L$ 함수를 얻느냐가 어느 대칭함수 항등식을 쓰느냐로 결정된다.
 
-[^1]: W. Casselman, J. Shalika, *The unramified principal series of p-adic groups II: the Whittaker function*, Compositio Math. **41** (1980), 207–231. 표준 서술과 $\mathrm{GL}_n$ 의 Rankin–Selberg 계산은 D. Bump, *Automorphic Forms and Representations* (1997) 4.6 절과 J. Cogdell 의 강의록 *L-functions and converse theorems for GL(n)*.
+[^1]: W. Casselman, J. Shalika, *The unramified principal series of p-adic groups II: the Whittaker function*, Compositio Math. **41** (1980), 207–231. 표준 서술과 $\mathrm{GL}\_n$ 의 Rankin–Selberg 계산은 D. Bump, *Automorphic Forms and Representations* (1997) 4.6 절과 J. Cogdell 의 강의록 *L-functions and converse theorems for GL(n)*.
 [^2]: Gelfand–Tsetlin 쪽 해석과 메타플렉틱 일반화는 B. Brubaker, D. Bump, S. Friedberg, *Weyl Group Multiple Dirichlet Series: Type A Combinatorial Theory*, Ann. of Math. Studies **175** (2011). 기하적 판은 I. Frenkel, D. Gaitsgory, K. Vilonen 계열의 작업과 Mirković–Vilonen 이론.
 
 # 연관 문서

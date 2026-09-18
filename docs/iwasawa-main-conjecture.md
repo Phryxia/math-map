@@ -7,7 +7,7 @@
 그러면 $h_n$ 의 증가가 규칙적으로 보인다. 충분히 큰 $n$ 에서
 
 $$
-\mathrm{ord}_p(h_n)=\mu\thinspace p^{n}+\lambda\thinspace n+\nu
+\mathrm{ord}\_p(h_n)=\mu\thinspace p^{n}+\lambda\thinspace n+\nu
 $$
 
 가 성립한다. 세 상수는 특성 멱급수에서 읽는다.
@@ -61,7 +61,7 @@ Rubin 의 증명은 한 방향의 나눔을 [Euler 계](euler-systems.md)로 얻
 
 $$
 c_n=1-\zeta_{p^{n}},\qquad
-\mathrm{N}_{\mathbb Q(\mu_{p^{n+1}})/\mathbb Q(\mu_{p^{n}})}\big(1-\zeta_{p^{n+1}}\big)=1-\zeta_{p^{n}}
+\mathrm{N}\_{\mathbb Q(\mu_{p^{n+1}})/\mathbb Q(\mu_{p^{n}})}\big(1-\zeta_{p^{n+1}}\big)=1-\zeta_{p^{n}}
 $$
 
 는 탑 위에 이미 놓여 있는 대수적 원소이고, 도체를 곱해 가며 자취 관계를 보면 Euler 인자 $1-\mathrm{Fr}\_\ell^{-1}$ 이 나타난다. 곧 $T=\mathbb Z_p(1)$ 에 대한 Euler 계다. Kolyvagin 유도를 씌우면 이데알류군을 위에서 누르는 부등식이 나오고, 그 부등식이 $\mathrm{char}\thinspace X_\infty$ 가 $f(T,\chi)$ 로 나뉜다는 진술이 된다.
@@ -110,7 +110,7 @@ $$
 가 존재한다. $f_j$ 는 구별다항식(모닉이고 최고차 외의 계수가 $p$ 로 나뉨)이다. $X$ 가 비틀림이면 $r=0$ 이고
 
 $$
-\mathrm{char}_\Lambda(X)=\Big(p^{\sum_i m_i}\prod_j f_j^{n_j}\Big),\qquad
+\mathrm{char}\_\Lambda(X)=\Big(p^{\sum_i m_i}\prod_j f_j^{n_j}\Big),\qquad
 \mu=\sum_i m_i,\quad \lambda=\sum_j n_j\deg f_j
 $$
 
@@ -121,7 +121,7 @@ $$
 **정리.** $A_n$ 을 $\mathbb Q_n$ 의 이데알류군의 $p$ 부분이라 하면, 충분히 큰 $n$ 에서
 
 $$
-\mathrm{ord}_p\char35{}A_n=\mu\thinspace p^{n}+\lambda\thinspace n+\nu
+\mathrm{ord}\_p\char35{}A_n=\mu\thinspace p^{n}+\lambda\thinspace n+\nu
 $$
 
 이다. $\mu,\lambda$ 는 $X_\infty=\varprojlim A_n$ 의 불변량이고 $\nu$ 는 상수다.
@@ -143,7 +143,7 @@ $\omega$ 는 Teichmüller 지표다. Mazur 는 이 함수를 $\Gamma$ 위의 $p$
 $\chi$ 를 $\Delta$ 의 홀수 지표라 하고 $X_\infty^{(\chi)}$ 를 $\chi$ 고유성분이라 하자.
 
 $$
-\mathrm{char}_\Lambda\big(X_\infty^{(\chi)}\big)=\big(f(T,\chi^{-1}\omega)\big)
+\mathrm{char}\_\Lambda\big(X_\infty^{(\chi)}\big)=\big(f(T,\chi^{-1}\omega)\big)
 $$
 
 짝수 지표 쪽은 단수 가군과 순환체 단수의 몫으로 같은 진술을 쓴다. 양변 모두 $\Lambda$ 의 아이디얼이고, 등식은 "크기" 가 아니라 "가군 구조" 수준의 일치를 주장한다.
@@ -178,7 +178,7 @@ $1-\zeta_{p^{n}}$ 자체는 $p$ 위의 소원소이고 단수가 되는 것은 �
 
 ## Rubin 증명의 요지
 
-1. **Euler 계의 확보.** $c_n=\frac{1-\zeta_{n}^{a}}{1-\zeta_n}$ 들이 $H^1(\mathbb Q(\mu_n),\mathbb Z_p(1))$ 안에서 자취 관계 $\mathrm{cor}(c_{n\ell})=(1-\mathrm{Fr}_\ell^{-1})c_n$ 을 만족한다. Kummer 이론으로 단수군이 곧 $H^1(\cdot,\mathbb Z_p(1))$ 이므로 대수적 원소가 그대로 코호몰로지 류다.
+1. **Euler 계의 확보.** $c_n=\frac{1-\zeta_{n}^{a}}{1-\zeta_n}$ 들이 $H^1(\mathbb Q(\mu_n),\mathbb Z_p(1))$ 안에서 자취 관계 $\mathrm{cor}(c_{n\ell})=(1-\mathrm{Fr}\_\ell^{-1})c_n$ 을 만족한다. Kummer 이론으로 단수군이 곧 $H^1(\cdot,\mathbb Z_p(1))$ 이므로 대수적 원소가 그대로 코호몰로지 류다.
 2. **유도.** Kolyvagin 유도 연산자로 $\kappa_n$ 을 만든다. 각 $\kappa_n$ 은 $n$ 밖에서만 국소 조건을 만족한다.
 3. **상호법칙.** [Poitou–Tate](poitou-tate.md) 의 대역 상호법칙으로 이데알류군의 원소를 하나씩 죽인다. $\ell$ 을 Chebotarev 로 고르는 자유가 여기서 쓰인다.
 4. **결론.** $\char35{}X_\infty^{(\chi)}$ 가 $L_p$ 쪽이 허용하는 크기 이하임을 얻어 한쪽 나눔이 나온다.
@@ -217,7 +217,7 @@ $p$ 가 $h$ 를 나누지 않는 정칙소수일 조건이 $p\nmid B_2B_4\cdots 
 
 $L$ 함수의 특수값이 대수적 원소로 실현된다는 Stark 의 예측은 순환체 단수를 일반 수체로 확장하려는 시도다. Rubin–Stark 원소가 예측대로 존재한다면 그것이 Euler 계를 이루고, 총실체 위의 주추측과 Gross–Stark 추측이 같은 논법으로 정리될 것이다. 아직 존재성 자체가 추측 단계이고, 알려진 Euler 계의 목록이 짧다는 [Euler 계](euler-systems.md)의 한계가 여기서도 나타난다.
 
-[^1]: 표준 교재는 L. Washington, *Introduction to Cyclotomic Fields* (2판, Springer 1997) 7, 13, 15 장. 주추측의 두 증명은 B. Mazur, A. Wiles, *Class fields of abelian extensions of* $\mathbb Q$ (Invent. Math. **76**, 1984) 와 K. Rubin 의 부록(Washington 2판 15 장). Ferrero–Washington 은 Ann. of Math. **109** (1979). 총실체는 A. Wiles, *The Iwasawa conjecture for totally real fields*, Ann. of Math. **131** (1990). 타원곡선 쪽은 C. Skinner, E. Urban, *The Iwasawa main conjectures for* $\mathrm{GL}_2$ (Invent. Math. **195**, 2014).
+[^1]: 표준 교재는 L. Washington, *Introduction to Cyclotomic Fields* (2판, Springer 1997) 7, 13, 15 장. 주추측의 두 증명은 B. Mazur, A. Wiles, *Class fields of abelian extensions of* $\mathbb Q$ (Invent. Math. **76**, 1984) 와 K. Rubin 의 부록(Washington 2판 15 장). Ferrero–Washington 은 Ann. of Math. **109** (1979). 총실체는 A. Wiles, *The Iwasawa conjecture for totally real fields*, Ann. of Math. **131** (1990). 타원곡선 쪽은 C. Skinner, E. Urban, *The Iwasawa main conjectures for* $\mathrm{GL}\_2$ (Invent. Math. **195**, 2014).
 
 # 연관 문서
 

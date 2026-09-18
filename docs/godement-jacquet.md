@@ -7,7 +7,7 @@
 그 논문은 $\mathrm{GL}\_1$ 을 다루고, Godement 와 Jacquet 이 1972 년에 같은 일을 $\mathrm{GL}\_n$ 에서 했다.
 
 $$
-Z(s,\Phi,\varphi)=\int_{\mathrm{GL}_n(\mathbb A)}\Phi(g)\thinspace\varphi(g)\thinspace
+Z(s,\Phi,\varphi)=\int_{\mathrm{GL}\_n(\mathbb A)}\Phi(g)\thinspace\varphi(g)\thinspace
 \lvert\det g\rvert^{\thinspace s+\frac{n-1}2}\thinspace dg
 $$
 
@@ -18,7 +18,7 @@ Tate 가 $\mathbb A^\times$ 위의 적분을 다룰 수 있었던 것은 $\mathb
 $$
 \mathbb G_m\subset\mathbb A^1
 \qquad\longleftrightarrow\qquad
-\mathrm{GL}_n\subset M_n
+\mathrm{GL}\_n\subset M_n
 $$
 
 $M_n$ 은 $n^2$ 차원 벡터공간이고 $\mathrm{GL}\_n$ 은 그 안에서 $\det\ne0$ 인 열린 부분집합이다. 곱셈 지표 $\chi$ 의 자리에 표현의 행렬 계수가, $\lvert x\rvert^s$ 의 자리에 $\lvert\det g\rvert^s$ 가 들어가고 나머지는 Tate 의 구성과 같다.
@@ -70,7 +70,7 @@ $M_n$ 은 다음 세 조건을 만족한다.
 거의 모든 자리에서 $\pi_v$ 는 비분기이고, 그 표현은 **[Satake 매개변수](satake-isomorphism.md)**라 부르는 대각행렬
 
 $$
-A_{\pi_v}=\mathrm{diag}(\alpha_1,\dots,\alpha_n)\in\mathrm{GL}_n(\mathbb C)
+A_{\pi_v}=\mathrm{diag}(\alpha_1,\dots,\alpha_n)\in\mathrm{GL}\_n(\mathbb C)
 $$
 
 의 켤레류로 완전히 결정된다. 이 자리에서 국소 적분을 계산하면
@@ -89,7 +89,7 @@ $$
 $F$ 를 국소체, $\pi$ 를 $\mathrm{GL}\_n(F)$ 의 기약 허용 표현, $\varphi$ 를 그 행렬 계수, $\Phi\in\mathcal S(M_n(F))$ 라 하자.
 
 $$
-Z(s,\Phi,\varphi)=\int_{\mathrm{GL}_n(F)}\Phi(g)\thinspace\varphi(g)\thinspace
+Z(s,\Phi,\varphi)=\int_{\mathrm{GL}\_n(F)}\Phi(g)\thinspace\varphi(g)\thinspace
 \lvert\det g\rvert^{\thinspace s+\frac{n-1}2}\thinspace dg
 $$
 

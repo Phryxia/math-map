@@ -8,7 +8,7 @@ $$
 \theta\negthinspace\left(\frac{-1}{4\tau}\right)=\sqrt{-2i\tau}\thinspace\theta(\tau)
 $$
 
-[Weil 표현](weil-representation.md)에서 이 제곱근은 메타플렉틱 2 겹 덮개의 흔적이고, 반정수 무게 형식은 $\mathrm{Mp}_2$ 위의 형식이다.
+[Weil 표현](weil-representation.md)에서 이 제곱근은 메타플렉틱 2 겹 덮개의 흔적이고, 반정수 무게 형식은 $\mathrm{Mp}\_2$ 위의 형식이다.
 
 Shimura 는 1973 년에 반정수 무게 형식과 정수 무게 형식의 대응을 세웠다. 무게 $k+1/2$ 의 Hecke 고유형식 $g$ 마다 무게 $2k$ 의 고유형식 $f$ 가 대응하고 Hecke 고윳값이 일치한다.
 
@@ -49,7 +49,7 @@ $$
 
 Shimura 의 증명은 Rankin–Selberg 적분으로 위 Dirichlet 급수의 해석적 성질을 확보하고 Weil 의 역정리를 적용한다.
 
-Shintani 와 Niwa 는 theta 올림으로 다른 증명을 주었다. 쌍대쌍 $(\mathrm{Mp}_2,\mathrm{PGL}_2)$ 에 Weil 표현을 제한하면 두 군의 표현 사이에 사전이 생기고, 그 사전이 Shimura 대응이다.
+Shintani 와 Niwa 는 theta 올림으로 다른 증명을 주었다. 쌍대쌍 $(\mathrm{Mp}\_2,\mathrm{PGL}\_2)$ 에 Weil 표현을 제한하면 두 군의 표현 사이에 사전이 생기고, 그 사전이 Shimura 대응이다.
 
 # 정의
 
@@ -84,14 +84,14 @@ $g\in S_{k+1/2}(\Gamma_0(4N))$ 이 모든 $T(p^2)$ 의 고유형식이고 고윳
 ## Kohnen 플러스 공간
 
 $$
-S^+_{k+1/2}(\Gamma_0(4))
+S^+\_{k+1/2}(\Gamma_0(4))
 =\Bigl\lbrace g=\sum c(n)q^n:\ c(n)=0\ \text{ unless }\ (-1)^kn\equiv0,1\ (\mathrm{mod}\ 4)\Bigr\rbrace
 $$
 
 계수를 기본판별식이 될 수 있는 $n$ 에만 남기는 조건이다. Kohnen 의 정리는 이 부분공간 위에서 Shimura 대응이 Hecke 작용과 교환하는 동형이라는 것이다.
 
 $$
-S^+_{k+1/2}(\Gamma_0(4))\ \cong\ S_{2k}(\mathrm{SL}_2(\mathbb Z))
+S^+\_{k+1/2}(\Gamma_0(4))\ \cong\ S_{2k}(\mathrm{SL}\_2(\mathbb Z))
 $$
 
 # 성질
@@ -121,7 +121,7 @@ for (let k = 5; k <= 14; k++)
 
 ## 플러스 조건
 
-플러스 조건은 $\mathrm{Mp}_2$ 의 국소 표현이 2 에서 비분기적으로 행동하는 조건에 해당하고, theta 올림이 내놓는 형식들이 이 조건을 만족한다. 조건이 없으면 대응이 다대일이 되어 Hecke 고유공간이 여러 형식을 담고, 조건을 붙이면 하나만 남는다.
+플러스 조건은 $\mathrm{Mp}\_2$ 의 국소 표현이 2 에서 비분기적으로 행동하는 조건에 해당하고, theta 올림이 내놓는 형식들이 이 조건을 만족한다. 조건이 없으면 대응이 다대일이 되어 Hecke 고유공간이 여러 형식을 담고, 조건을 붙이면 하나만 남는다.
 
 Kohnen–Zagier 는 $S_{k+1/2}$ 에서 플러스 공간으로 떨어뜨리는 Hecke 형 사영자를 명시적으로 구성했다.
 

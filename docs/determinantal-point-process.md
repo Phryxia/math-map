@@ -7,7 +7,7 @@
 **결정점과정**(determinantal point process)은 점들 사이의 모든 상관을 핵 $K$ 하나로 압축하고, $k$ 개의 점이 특정 자리에 함께 있을 밀도를
 
 $$
-\rho_k(x_1,\dots,x_k) = \det\bigl[K(x_i,x_j)\bigr]_{i,j=1}^{k}
+\rho_k(x_1,\dots,x_k) = \det\bigl[K(x_i,x_j)\bigr]\_{i,j=1}^{k}
 $$
 
 라는 [행렬식](determinants.md)으로 쓴다. 행렬식은 인자가 비슷해지면 0 으로 가므로 점들이 서로를 밀어낸다. 반발하는 무작위 배치의 표준 모형이며 [Tracy–Widom 분포](tracy-widom.md)가 Airy 핵의 결정점과정에서 나온다.
@@ -95,7 +95,7 @@ $K_B$ 가 사영이면 모든 $\lambda_i$ 가 0 또는 1 이라 개수가 결정
 구간 $(s,\infty)$ 에 점이 하나도 없을 확률이 다음 Fredholm 행렬식이다.
 
 $$
-\Pr[\char35{}(s,\infty) = 0] = \det\bigl(I - K\bigr)_{L^2(s,\infty)}
+\Pr[\char35{}(s,\infty) = 0] = \det\bigl(I - K\bigr)\_{L^2(s,\infty)}
 $$
 
 최대 점의 분포함수가 이 값이므로 Airy 핵에 적용하면 [Tracy–Widom 분포](tracy-widom.md) $F_2$ 가 정의된다. 최댓값의 분포를 구하는 문제가 작용소의 행렬식 계산이 된다.

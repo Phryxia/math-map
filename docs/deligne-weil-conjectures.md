@@ -97,11 +97,11 @@ $$
 Deligne 이 1969 년에 만든 구성이 연결고리다. 무게 $k\ge2$ 의 Hecke 고유형식 $f$ 마다 [Galois 표현](galois-representations.md)
 
 $$
-\rho_f:\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q)\to\mathrm{GL}_2(\mathbb Q_\ell),
+\rho_f:\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\mathbb Q_\ell),
 \qquad
-\mathrm{tr}\thinspace\rho_f(\mathrm{Frob}_p)=a_p,
+\mathrm{tr}\thinspace\rho_f(\mathrm{Frob}\_p)=a_p,
 \quad
-\det\rho_f(\mathrm{Frob}_p)=p^{k-1}
+\det\rho_f(\mathrm{Frob}\_p)=p^{k-1}
 $$
 
 가 [모듈러 곡선](modular-curves.md) 위 어떤 다발의 에탈 코호몰로지 안에서 잘려 나온다. 그 코호몰로지가 무게 $k-1$ 이므로 Deligne 의 정리가 $|\alpha_p|=|\beta_p|=p^{(k-1)/2}$ 를 준다. 따라서

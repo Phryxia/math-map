@@ -62,7 +62,7 @@ $\rho:\mathbb C[S_k]\to\mathrm{End}(V^{\otimes k})$ 와 $\pi:\mathbb C[\mathrm{G
 **정리 (Schur, 1901; Weyl, 1939)**
 
 $$
-\mathrm{End}_{\mathcal G}(V^{\otimes k})=\mathcal S,\qquad \mathrm{End}_{\mathcal S}(V^{\otimes k})=\mathcal G
+\mathrm{End}\_{\mathcal G}(V^{\otimes k})=\mathcal S,\qquad \mathrm{End}\_{\mathcal S}(V^{\otimes k})=\mathcal G
 $$
 
 따라서 $(\mathcal G,\mathcal S)$ 이중가군으로서
@@ -100,7 +100,7 @@ $$
 두 작용의 지표를 동시에 취하면 대칭함수 항등식이 나온다. $g\in\mathrm{GL}\_n$ 의 고윳값을 $x_1,\dots,x_n$ 으로, $\sigma\in S_k$ 의 순환형을 $\mu$ 라 할 때
 
 $$
-\mathrm{tr}\left((g\otimes\sigma)\big|_{V^{\otimes k}}\right)=p_{\mu}(x)=\sum_{\lambda\vdash k}\chi^{\lambda}(\mu)\thinspace s_{\lambda}(x)
+\mathrm{tr}\left((g\otimes\sigma)\big|\_{V^{\otimes k}}\right)=p_{\mu}(x)=\sum_{\lambda\vdash k}\chi^{\lambda}(\mu)\thinspace s_{\lambda}(x)
 $$
 
 가 된다. 왼쪽은 직접 계산되고(각 순환이 대각합 하나를 주어 거듭제곱합 $p_\mu$ 가 나온다) 오른쪽은 분해에서 나온다. 이것이 거듭제곱합을 Schur 함수로 전개하는 고전적 공식이고, 계수가 대칭군 지표표다. 두 표현론을 잇는 사전의 본문이 이 한 줄이다.

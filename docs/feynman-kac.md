@@ -13,7 +13,7 @@ Feynman–Kac 공식은 포물형 편미분방정식의 해를 확산 과정에 
 방정식의 해를 $u(t,x)$ 라 하고 확산 과정 $X$ 를 따라 $u(t,X_t)$ 를 본다. Itô 공식이 이 값의 변화를 두 부분으로 나눈다.
 
 $$
-du(t,X_t)=\underbrace{\Big(\partial_tu+b\thinspace\partial_xu+\tfrac12\sigma^2\partial_x^2u\Big)dt}_{\text{표류}}+\underbrace{\sigma\thinspace\partial_xu\thinspace dB_t}_{\text{요동}}
+du(t,X_t)=\underbrace{\Big(\partial_tu+b\thinspace\partial_xu+\tfrac12\sigma^2\partial_x^2u\Big)dt}\_{\text{표류}}+\underbrace{\sigma\thinspace\partial_xu\thinspace dB_t}\_{\text{요동}}
 $$
 
 괄호 안은 풀려는 방정식의 좌변이다. $u$ 가 해이면 이 항이 0 이므로 표류가 사라지고 $u(t,X_t)$ 가 martingale 이 된다. martingale 의 기댓값은 시간에 무관하므로 지금 값과 만기 값의 기댓값이 같다.
@@ -57,7 +57,7 @@ $$
 의 생성원을 다음 이차 미분연산자로 정의한다.
 
 $$
-\mathcal L_t f(x)=\sum_ib_i(t,x)\thinspace\partial_if(x)+\frac12\sum_{i,j}\big(\sigma\sigma^{\mathsf T}\big)_{ij}(t,x)\thinspace\partial_i\partial_jf(x)
+\mathcal L_t f(x)=\sum_ib_i(t,x)\thinspace\partial_if(x)+\frac12\sum_{i,j}\big(\sigma\sigma^{\mathsf T}\big)\_{ij}(t,x)\thinspace\partial_i\partial_jf(x)
 $$
 
 $X$ 가 표준 Brown 운동이면 $\mathcal L = \tfrac12\Delta$ 이고, 열방정식과 Brown 운동이 이 등식으로 대응한다.

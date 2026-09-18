@@ -7,12 +7,12 @@ Riemann 은 $\zeta(s)$ 의 함수방정식을 theta 함수 $\theta(t)=\sum_ne^{-
 Tate 의 학위논문[^1]은 계산을 [아델](adeles.md) 위로 옮긴다. theta 변환식이 Poisson 합공식의 특수한 경우가 되고 $\zeta_K(s)$ 가 이델군 위의 적분 하나가 된다.
 
 $$
-Z(f,\chi,s)=\int_{\mathbb A_K^\times}f(x)\thinspace\chi(x)\thinspace|x|_{\mathbb A}^{s}\thickspace d^\times x
+Z(f,\chi,s)=\int_{\mathbb A_K^\times}f(x)\thinspace\chi(x)\thinspace|x|\_{\mathbb A}^{s}\thickspace d^\times x
 $$
 
 이 적분이 자리마다 쪼개지면서 Euler 인자와 감마 인자가 **같은 종류의 국소 적분**으로 통일되고, 함수방정식은 아델군의 자기쌍대성에서 자동으로 나온다. 판별식은 자기쌍대 측도를 정규화할 때 생기는 부피 인자다.
 
-수론의 해석적 정리를 국소콤팩트군 위의 조화해석으로 번역하는 방식이 여기서 시작했고, [Langlands 강령](langlands-program.md)의 $\mathrm{GL}_1$ 사례가 바로 이 논문이다.
+수론의 해석적 정리를 국소콤팩트군 위의 조화해석으로 번역하는 방식이 여기서 시작했고, [Langlands 강령](langlands-program.md)의 $\mathrm{GL}\_1$ 사례가 바로 이 논문이다.
 
 # 직관
 
@@ -23,7 +23,7 @@ $$
 각 자리 $v$ 에서 국소 zeta 적분을 같은 모양으로 정의한다.
 
 $$
-Z_v(f_v,s)=\int_{K_v^\times}f_v(x)\thinspace|x|_v^{s}\thickspace d^\times x
+Z_v(f_v,s)=\int_{K_v^\times}f_v(x)\thinspace|x|\_v^{s}\thickspace d^\times x
 $$
 
 자리마다 그 자리에서 가장 자연스러운 시험함수를 넣으면 된다. 유한 자리에서는 정수환의 정의함수 $\mathbf 1_{\mathbb Z_p}$ 이고 무한 자리에서는 Gauss 함수 $e^{-\pi x^2}$ 다. 둘 다 그 자리의 덧셈 Fourier 변환에 대해 자기쌍대인 함수라는 점에서 같은 선택이다.
@@ -43,7 +43,7 @@ Tate 의 zeta 적분은 이 관찰을 이델류군으로 일반화한 것이다.
 
 ## 함수방정식이 나오는 자리
 
-적분을 $|x|_{\mathbb A}=t$ 로 잘라 본다. $t\ge1$ 쪽은 $f$ 의 급감 때문에 모든 $s$ 에서 수렴해 정함수를 준다. 문제는 $t\lt 1$ 쪽인데, 여기에 Poisson 합공식을 쓰면 $t$ 를 $1/t$ 로 뒤집어 $t\ge1$ 쪽 적분으로 되돌릴 수 있다. 되돌린 결과에서 $f$ 가 $\hat f$ 로, $s$ 가 $1-s$ 로 바뀐다. 그것이 함수방정식의 전부다.
+적분을 $|x|\_{\mathbb A}=t$ 로 잘라 본다. $t\ge1$ 쪽은 $f$ 의 급감 때문에 모든 $s$ 에서 수렴해 정함수를 준다. 문제는 $t\lt 1$ 쪽인데, 여기에 Poisson 합공식을 쓰면 $t$ 를 $1/t$ 로 뒤집어 $t\ge1$ 쪽 적분으로 되돌릴 수 있다. 되돌린 결과에서 $f$ 가 $\hat f$ 로, $s$ 가 $1-s$ 로 바뀐다. 그것이 함수방정식의 전부다.
 
 ```mermaid
 graph TD
@@ -90,14 +90,14 @@ $$
 $f\in\mathcal S(\mathbb A_K)$ 와 Hecke 지표 $\chi$ 에 대해 **대역 zeta 적분**을 정의한다.
 
 $$
-Z(f,\chi,s)=\int_{\mathbb A_K^\times}f(x)\thinspace\chi(x)\thinspace|x|_{\mathbb A}^{s}\thickspace d^\times x,\qquad
-d^\times x=\prod_v\frac{dx_v}{|x_v|_v}\ (\text{정규화})
+Z(f,\chi,s)=\int_{\mathbb A_K^\times}f(x)\thinspace\chi(x)\thinspace|x|\_{\mathbb A}^{s}\thickspace d^\times x,\qquad
+d^\times x=\prod_v\frac{dx_v}{|x_v|\_v}\ (\text{정규화})
 $$
 
 $\chi$ 가 유니터리이면 $\mathrm{Re}(s)\gt 1$ 에서 절대수렴한다. $f=\bigotimes f_v$ 이면 적분이 자리마다 쪼개진다.
 
 $$
-Z(f,\chi,s)=\prod_vZ_v(f_v,\chi_v,s),\qquad Z_v(f_v,\chi_v,s)=\int_{K_v^\times}f_v(x)\chi_v(x)|x|_v^{s}\thinspace d^\times x
+Z(f,\chi,s)=\prod_vZ_v(f_v,\chi_v,s),\qquad Z_v(f_v,\chi_v,s)=\int_{K_v^\times}f_v(x)\chi_v(x)|x|\_v^{s}\thinspace d^\times x
 $$
 
 # 성질
@@ -143,7 +143,7 @@ $\gamma_v$ 는 국소 $L$ 인자의 비와 근 수 $\varepsilon_v(\chi_v,s)$ 로
 2. $t\ge1$ 부분은 $f$ 의 급감으로 모든 $s$ 에서 수렴하는 정함수다.
 3. $t\lt 1$ 부분에 **Riemann–Roch 항등식**을 쓴다. $\mathrm{vol}(\mathbb A_K/K)=1$ 인 Poisson 합공식을 $x$ 배 만큼 늘린 것이다.
    $$
-   \sum_{\alpha\in K}f(\alpha x)=\frac1{|x|_{\mathbb A}}\sum_{\alpha\in K}\hat f\negthinspace\left(\frac\alpha x\right)
+   \sum_{\alpha\in K}f(\alpha x)=\frac1{|x|\_{\mathbb A}}\sum_{\alpha\in K}\hat f\negthinspace\left(\frac\alpha x\right)
    $$
    양변을 $t\lt 1$ 구간에서 적분하면 $x\mapsto x^{-1}$ 치환으로 $t\ge1$ 구간의 $\hat f$ 적분이 나온다. 이 과정에서 $\alpha=0$ 항이 따로 남아 $f(0)/s$ 와 $\hat f(0)/(1-s)$ 꼴의 극 두 개를 만든다.
 
@@ -164,7 +164,7 @@ $$
 $\chi$ 가 자명할 때 $s=1$ 의 유수가 $\kappa=\mathrm{vol}(\mathbb A_K^1/K^\times)$ 라는 것이 위 정리의 내용이다. 이 부피를 [아델](adeles.md) 문서의 콤팩트성에서 실제로 계산하면 이델류군의 구조가 그대로 나온다. 유수는 유수 $h$ 와 조절자 $R$ 과 단원근 개수 $w$ 와 판별식으로 표현된다.
 
 $$
-\mathop{\mathrm{Res}}_{s=1}\zeta_K(s)=\frac{2^{r_1}(2\pi)^{r_2}hR}{w\sqrt{|d_K|}}
+\mathop{\mathrm{Res}}\_{s=1}\zeta_K(s)=\frac{2^{r_1}(2\pi)^{r_2}hR}{w\sqrt{|d_K|}}
 $$
 
 Dirichlet 의 유수 공식이 "노름 1 이델류군의 부피" 한 줄로 정리된다. 유수는 이델류군의 성분 개수, 조절자는 단원 격자의 공변량, $w$ 와 $\sqrt{|d_K|}$ 는 측도 정규화에서 온다.
@@ -188,10 +188,10 @@ $\mathbb F_q(T)$ 같은 함수체에서도 아델과 이델이 그대로 정의�
 
 ## 이후의 발전
 
-Godement 와 Jacquet 이 이 논문을 $\mathrm{GL}_n$ 으로 올렸다. 시험함수를 행렬 공간 $M_n(\mathbb A)$ 위에서 잡고 자기동형 표현 $\pi$ 의 행렬 계수를 곱해 적분하면
+Godement 와 Jacquet 이 이 논문을 $\mathrm{GL}\_n$ 으로 올렸다. 시험함수를 행렬 공간 $M_n(\mathbb A)$ 위에서 잡고 자기동형 표현 $\pi$ 의 행렬 계수를 곱해 적분하면
 
 $$
-Z(f,\pi,s)=\int_{\mathrm{GL}_n(\mathbb A)}f(g)\thinspace\langle\pi(g)v,\tilde v\rangle\thinspace|\det g|^{s+\frac{n-1}2}\thinspace dg
+Z(f,\pi,s)=\int_{\mathrm{GL}\_n(\mathbb A)}f(g)\thinspace\langle\pi(g)v,\tilde v\rangle\thinspace|\det g|^{s+\frac{n-1}2}\thinspace dg
 $$
 
 가 되고, 같은 논법이 $L(s,\pi)$ 의 해석적 접속과 함수방정식을 준다. $n=1$ 이 Tate 의 논문이다. [Langlands 강령](langlands-program.md)이 $L$ 함수를 급수가 아니라 군 위의 적분으로 정의하는 전략을 쓰는 것이 이 계보에서 나왔다. 자기동형 쪽에는 Poisson 합공식이 있으므로, Galois 쪽에서 보이지 않던 해석적 성질이 그쪽에서 나온다.

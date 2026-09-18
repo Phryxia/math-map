@@ -48,7 +48,7 @@ $$
 K/k \text{ Galois} \iff K^{\mathrm{Aut}(K/k)}=k \iff \lvert\mathrm{Aut}(K/k)\rvert=[K:k]
 $$
 
-동치인 조건은 $K$ 가 $k$ 위 어떤 separable 다항식의 분해체라는 것이다. 다항식이 separable이라는 것은 각 기약인수가 중근을 갖지 않는다는 뜻이고, 표수 0이거나 [유한체](finite-fields.md)에서는 기약다항식이 항상 separable이므로 분해체는 곧 Galois 확대다. 표수 $p$ 에서 $\mathbb{F}_p(t)$ 위의 $x^p-t$ 같은 예는 separable이 아니다.
+동치인 조건은 $K$ 가 $k$ 위 어떤 separable 다항식의 분해체라는 것이다. 다항식이 separable이라는 것은 각 기약인수가 중근을 갖지 않는다는 뜻이고, 표수 0이거나 [유한체](finite-fields.md)에서는 기약다항식이 항상 separable이므로 분해체는 곧 Galois 확대다. 표수 $p$ 에서 $\mathbb{F}\_p(t)$ 위의 $x^p-t$ 같은 예는 separable이 아니다.
 
 거듭제곱근 확대(radical extension)는 각 층이 어떤 원소의 $n$ 제곱근을 추가해 얻어지는 확대의 탑이다.
 
@@ -101,10 +101,10 @@ $$
 유한체의 경우 Galois 군이 Frobenius가 생성하는 순환군이므로 대응이 특히 단순하다.
 
 $$
-\mathrm{Gal}(\mathbb{F}_{p^n}/\mathbb{F}_p)\cong\mathbb{Z}/n\mathbb{Z}
+\mathrm{Gal}(\mathbb{F}\_{p^n}/\mathbb{F}\_p)\cong\mathbb{Z}/n\mathbb{Z}
 $$
 
-부분군은 $n$ 의 약수 $m$ 에 대응하고 그 고정체가 부분체 $\mathbb{F}_{p^m}$ 이다.
+부분군은 $n$ 의 약수 $m$ 에 대응하고 그 고정체가 부분체 $\mathbb{F}\_{p^m}$ 이다.
 
 ## 가해성
 

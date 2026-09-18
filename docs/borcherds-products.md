@@ -4,7 +4,7 @@
 
 Borcherds 곱은 약정칙 모듈러 형식의 계수를 지수로 삼아 만든 무한곱이며, 서명 $(2,n)$ 직교군의 자기동형 형식이 된다.
 
-[Mock 모듈러 형식](mock-modular-forms.md)에 나오는 **약정칙 형식** $M^!_k$ 는 첨점에서 극을 허용하는 모듈러 형식이고, $q$ 전개에 음수 차수 항이 있어 계수가 빠르게 자란다. 무게 $1-n/2$ 의 약정칙 형식
+[Mock 모듈러 형식](mock-modular-forms.md)에 나오는 **약정칙 형식** $M^!\_k$ 는 첨점에서 극을 허용하는 모듈러 형식이고, $q$ 전개에 음수 차수 항이 있어 계수가 빠르게 자란다. 무게 $1-n/2$ 의 약정칙 형식
 
 $$
 f=\sum_{m\gg-\infty}c(m)\thinspace q^m
@@ -34,7 +34,7 @@ Ramanujan 의 $\tau$ 가 나온다. Borcherds 곱은 이 상수 24 를 약정칙
 theta 올림은
 
 $$
-\Phi(v,f)=\int_{\mathrm{SL}_2(\mathbb Z)\backslash\mathbb H}f(\tau)\thinspace\overline{\Theta(\tau,v)}\ \frac{du\thinspace dv}{v^2}
+\Phi(v,f)=\int_{\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H}f(\tau)\thinspace\overline{\Theta(\tau,v)}\ \frac{du\thinspace dv}{v^2}
 $$
 
 꼴이고, $f$ 가 첨점형식이면 수렴하며 첨점에서 극을 가지면 발산한다.
@@ -72,7 +72,7 @@ $$
 
 ## 입력
 
-$L$ 을 서명 $(2,n)$ 의 짝수 격자, $f\in M^!_{1-n/2}\bigl(\rho_L\bigr)$ 를 Weil 표현 $\rho_L$ 에 대한 벡터값 약정칙 형식이라 한다. $f$ 의 주요부 계수 $c(\gamma,-m)$ 은 정수라고 가정한다.
+$L$ 을 서명 $(2,n)$ 의 짝수 격자, $f\in M^!\_{1-n/2}\bigl(\rho_L\bigr)$ 를 Weil 표현 $\rho_L$ 에 대한 벡터값 약정칙 형식이라 한다. $f$ 의 주요부 계수 $c(\gamma,-m)$ 은 정수라고 가정한다.
 
 ## Borcherds 곱
 

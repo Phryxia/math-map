@@ -65,7 +65,7 @@ $$
 동치인 서술 하나가 유용하다. $M$ 이 $R$ 가군이라는 것은 환 준동형
 
 $$
-\rho : R \to \mathrm{End}_{\mathbb{Z}}(M)
+\rho : R \to \mathrm{End}\_{\mathbb{Z}}(M)
 $$
 
 가 주어진 것과 같다. 즉 가군은 "아벨군의 자기준동형환으로 가는 환 준동형" 이고, 이는 군 작용을 "대칭군으로 가는 준동형" 으로 보는 [군 작용](group-actions.md)의 관점과 정확히 평행하다.
@@ -82,7 +82,7 @@ $$
 
 부분집합 $N \subseteq M$ 이 덧셈에 대해 부분군이고 $rN \subseteq N$ 이면 부분가군이다. 이때 몫 아벨군 $M/N$ 에 $r(m + N) = rm + N$ 로 스칼라 곱을 주면 몫가군이 된다.
 
-사상 $f:M\to N$ 이 $f(m+m')=f(m)+f(m')$ , $f(rm)=rf(m)$ 을 만족하면 $R$ 준동형이라 하고, 그 전체를 $\mathrm{Hom}_R(M,N)$ 으로 쓴다. $R$ 이 가환이면 $\mathrm{Hom}_R(M,N)$ 자체가 다시 $R$ 가군이다. 체 위에서는 이것이 [선형사상](linear-maps.md)의 공간이다.
+사상 $f:M\to N$ 이 $f(m+m')=f(m)+f(m')$ , $f(rm)=rf(m)$ 을 만족하면 $R$ 준동형이라 하고, 그 전체를 $\mathrm{Hom}\_R(M,N)$ 으로 쓴다. $R$ 이 가환이면 $\mathrm{Hom}\_R(M,N)$ 자체가 다시 $R$ 가군이다. 체 위에서는 이것이 [선형사상](linear-maps.md)의 공간이다.
 
 ## 동형정리
 
@@ -195,7 +195,7 @@ $$
 
 ## 선형대수의 일반화
 
-[텐서곱](tensor-products.md)은 두 가군에서 쌍선형 사상을 선형화하는 구성이고, 그 결과 $\mathrm{Hom}_R(M \otimes N, P) \cong \mathrm{Hom}_R(M, \mathrm{Hom}_R(N, P))$ 라는 adjunction이 생긴다. 스칼라 확장 $S \otimes_R M$ 은 계수환을 바꿔 가면서 같은 대상을 다르게 보는 장치로, 실수 표현을 복소수로 확장하거나 정수 격자를 유리수 공간에 넣는 조작이 모두 여기에 해당한다.
+[텐서곱](tensor-products.md)은 두 가군에서 쌍선형 사상을 선형화하는 구성이고, 그 결과 $\mathrm{Hom}\_R(M \otimes N, P) \cong \mathrm{Hom}\_R(M, \mathrm{Hom}\_R(N, P))$ 라는 adjunction이 생긴다. 스칼라 확장 $S \otimes_R M$ 은 계수환을 바꿔 가면서 같은 대상을 다르게 보는 장치로, 실수 표현을 복소수로 확장하거나 정수 격자를 유리수 공간에 넣는 조작이 모두 여기에 해당한다.
 
 ## 표현론과 그 너머
 

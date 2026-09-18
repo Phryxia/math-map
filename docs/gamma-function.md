@@ -95,7 +95,7 @@ $$
 $\Gamma$ 는 $\mathbb C$ 에서 유리형이고 영점이 없다. 극점은 $n\ge0$ 인 정수에 대한 $s=-n$ 의 단순극점뿐이며
 
 $$
-\mathop{\mathrm{Res}}_{s=-n}\Gamma(s)=\frac{(-1)^{n}}{n!}
+\mathop{\mathrm{Res}}\_{s=-n}\Gamma(s)=\frac{(-1)^{n}}{n!}
 $$
 
 영점이 없으므로 $\Gamma$ 로 나누는 조작이 언제나 허용되고, 함수방정식에서 감마 인자를 옮겨 붙이는 계산에 제약이 없다.

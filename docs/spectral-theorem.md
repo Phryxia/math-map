@@ -20,15 +20,15 @@ $Av=\lambda v$ , $Aw=\mu w$ 이고 $\lambda\neq\mu$ 이면 대칭성에서 $\lam
 $V$ 를 실수체 또는 복소수체 위의 유한차원 내적 공간, $T$ 를 $V$ 의 선형연산자라 하자. $T$ 의 수반연산자 $T^{\ast}$ 는 다음 항등식으로 유일하게 정해진다.
 
 $$
-\langle Tv,w\rangle=\langle v,T^{*}w\rangle\quad\text{모든 }v,w\in V
+\langle Tv,w\rangle=\langle v,T^{\ast}w\rangle\quad\text{모든 }v,w\in V
 $$
 
 정규직교기저에서 $T^{\ast}$ 의 행렬은 켤레전치다. $T^{\ast}=T$ 이면 자기수반(실수에서는 대칭, 복소수에서는 Hermitian)이라 하고, $T^{\ast}T=TT^{\ast}$ 이면 normal 이라 한다.
 
 $$
-A^{*}=\overline{A}^{\mathsf T},\qquad
+A^{\ast}=\overline{A}^{\mathsf T},\qquad
 \text{대칭: }A^{\mathsf T}=A,\qquad
-\text{Hermitian: }A^{*}=A
+\text{Hermitian: }A^{\ast}=A
 $$
 
 $Q$ 의 열이 정규직교기저이면 $Q$ 는 직교행렬(복소수에서는 unitary)이고 역행렬이 전치다.

@@ -2,7 +2,7 @@
 
 # 개요
 
-[Whittaker 모형의 유일성](whittaker-models.md)은 $\mathrm{GL}_n$ 에서 성립한다. 직교군, 유니터리군, 심플렉틱군에서는 Whittaker 모형이 없는 표현이 흔하고 있어도 유일하지 않으므로, 중복도 1 을 얻으려면 모형을 바꾼다.
+[Whittaker 모형의 유일성](whittaker-models.md)은 $\mathrm{GL}\_n$ 에서 성립한다. 직교군, 유니터리군, 심플렉틱군에서는 Whittaker 모형이 없는 표현이 흔하고 있어도 유일하지 않으므로, 중복도 1 을 얻으려면 모형을 바꾼다.
 
 **Gan–Gross–Prasad 추측**은 한 군의 표현이 아니라 군의 쌍을 본다. 크기가 하나 차이나는 고전군의 쌍 $G_{n+1}\supset G_n$ 에서 $G_{n+1}$ 의 표현을 $G_n$ 으로 제한했을 때 $G_n$ 의 주어진 표현이 나타나는 횟수, 곧 **분지 중복도**가 대상이다.
 
@@ -26,7 +26,7 @@ $$
 콤팩트 유니터리군 $U(n+1)\supset U(n)$ 의 분지 법칙은 완전히 조합적이다. 최고무게 $\lambda=(\lambda_1\ge\cdots\ge\lambda_{n+1})$ 의 기약표현을 $U(n)$ 으로 제한하면
 
 $$
-\mathrm{Res}^{U(n+1)}_{U(n)}V_\lambda=\bigoplus_{\mu\ \text{interlaces}\ \lambda}V_\mu,
+\mathrm{Res}^{U(n+1)}\_{U(n)}V_\lambda=\bigoplus_{\mu\ \text{interlaces}\ \lambda}V_\mu,
 \qquad
 \lambda_1\ge\mu_1\ge\lambda_2\ge\mu_2\ge\cdots\ge\mu_n\ge\lambda_{n+1}
 $$
@@ -34,7 +34,7 @@ $$
 이고 각 $\mu$ 가 정확히 한 번씩 나온다. Gelfand–Tsetlin 패턴이 이 분해를 기저 수준에서 구현한다.
 
 $$
-\dim\mathrm{Hom}_{U(n)}\bigl(V_\lambda\otimes V_\mu^\vee,\mathbb C\bigr)\le1
+\dim\mathrm{Hom}\_{U(n)}\bigl(V_\lambda\otimes V_\mu^\vee,\mathbb C\bigr)\le1
 $$
 
 GGP 는 이 부등식이 $p$ 진군과 아델군에서도 성립하는지, 성립한다면 그 1 이 어디에 있는지를 묻는다.
@@ -43,7 +43,7 @@ $p$ 진 고전군에서는 기약표현이 무한차원이고, 같은 [Langlands
 
 ## 모형의 교체
 
-$\mathrm{GL}_n$ 에서 Whittaker 모형이 유일한 것은 $N\backslash G/N$ 에서 비퇴화 지표가 살아남는 궤도가 하나뿐이기 때문이다. 고전군에서는 멱단근기 위의 지표 궤도가 여러 개다. 고전군의 표현 중 Whittaker 모형을 갖는 일반 표현은 L 꾸러미 안에서 보통 하나다.
+$\mathrm{GL}\_n$ 에서 Whittaker 모형이 유일한 것은 $N\backslash G/N$ 에서 비퇴화 지표가 살아남는 궤도가 하나뿐이기 때문이다. 고전군에서는 멱단근기 위의 지표 궤도가 여러 개다. 고전군의 표현 중 Whittaker 모형을 갖는 일반 표현은 L 꾸러미 안에서 보통 하나다.
 
 대신 더 작은 군을 짝지은 모형을 쓴다.
 
@@ -103,7 +103,7 @@ $$
 $F$ 가 국소체일 때, $G_{n+1}\times G_n$ 의 기약 매끄러운 표현 $\pi=\pi_{n+1}\otimes\pi_n$ 에 대해
 
 $$
-m(\pi)=\dim\mathrm{Hom}_{H(F)}\bigl(\pi\otimes\nu,\ \mathbb C\bigr)
+m(\pi)=\dim\mathrm{Hom}\_{H(F)}\bigl(\pi\otimes\nu,\ \mathbb C\bigr)
 $$
 
 로 둔다. Fourier–Jacobi 경우에는 $\pi$ 자리에 $\pi\otimes\omega_\psi$ 를 넣는다. 국소 GGP 는 두 부분이다.
@@ -186,10 +186,10 @@ console.log(dimU(lambda), total, mus.length)
 
 국소 GGP 의 (a) 는 정리로 확립되어 있다.
 
-- **비아르키메데스 자리**: Aizenbud–Gourevitch–Rallis–Schiffmann 이 $(\mathrm{GL}_{n+1},\mathrm{GL}_n)$ 을, Waldspurger 와 Jiang–Sun–Zhu 가 고전군의 Bessel 경우를 처리했다. 증명은 Gelfand–Kazhdan 식 대합을 분포에 적용하며 $\mathrm{GL}_n$ 의 논법과 구조가 같다.
+- **비아르키메데스 자리**: Aizenbud–Gourevitch–Rallis–Schiffmann 이 $(\mathrm{GL}\_{n+1},\mathrm{GL}\_n)$ 을, Waldspurger 와 Jiang–Sun–Zhu 가 고전군의 Bessel 경우를 처리했다. 증명은 Gelfand–Kazhdan 식 대합을 분포에 적용하며 $\mathrm{GL}\_n$ 의 논법과 구조가 같다.
 - **아르키메데스 자리**: Sun–Zhu 가 실군과 복소군에서 증명했다.[^1]
 
-대합은 $\mathrm{GL}_n$ 의 $g\mapsto{}^tg^{-1}$ 에 해당한다. 관련된 분포가 모두 이 대합에 대해 불변이면 $\mathrm{Hom}$ 공간이 2 차원 이상일 수 없다. 이 구조가 $(G\times H, H)$ 가 **Gelfand 쌍**이라는 조건이다.
+대합은 $\mathrm{GL}\_n$ 의 $g\mapsto{}^tg^{-1}$ 에 해당한다. 관련된 분포가 모두 이 대합에 대해 불변이면 $\mathrm{Hom}$ 공간이 2 차원 이상일 수 없다. 이 구조가 $(G\times H, H)$ 가 **Gelfand 쌍**이라는 조건이다.
 
 ## 지표 공식과 증명된 범위
 
@@ -207,9 +207,9 @@ console.log(dimU(lambda), total, mus.length)
 
 $n$ 이 작은 경우에 알려진 정리들이 나온다.
 
-- $\mathrm{SO}(3)\times\mathrm{SO}(2)$ 곧 $\mathrm{PGL}_2\times$ 토러스의 경우: **Waldspurger 정리**다. 토릭 주기(허수이차체 관련 토러스 위의 적분)가 0 이 아닌 것이 $L(1/2,\pi\times\chi)\ne0$ 과 동치이고, 주기의 제곱이 중심값과 명시적 상수배로 같다.
+- $\mathrm{SO}(3)\times\mathrm{SO}(2)$ 곧 $\mathrm{PGL}\_2\times$ 토러스의 경우: **Waldspurger 정리**다. 토릭 주기(허수이차체 관련 토러스 위의 적분)가 0 이 아닌 것이 $L(1/2,\pi\times\chi)\ne0$ 과 동치이고, 주기의 제곱이 중심값과 명시적 상수배로 같다.
 - $U(3)\times U(2)$ 의 경우: Gross–Prasad 가 1992 년에 처음 제기한 형태다.[^3]
-- $\mathrm{SO}(4)\times\mathrm{SO}(3)$ 의 경우: $\mathrm{GL}_2\times\mathrm{GL}_2$ 의 삼중곱 $L$ 함수와 연결되어 Ichino 의 삼중곱 공식이 된다.
+- $\mathrm{SO}(4)\times\mathrm{SO}(3)$ 의 경우: $\mathrm{GL}\_2\times\mathrm{GL}\_2$ 의 삼중곱 $L$ 함수와 연결되어 Ichino 의 삼중곱 공식이 된다.
 
 ## Ichino–Ikeda 정련
 
@@ -252,7 +252,7 @@ GGP 는 분지 법칙을 $L$ 함수로 번역한다. 콤팩트군에서 [Weyl �
 
 [^2]: R. Beuzart-Plessis, P.-H. Chaudouard, M. Zydor, *The global Gan–Gross–Prasad conjecture for unitary groups: the endoscopic case*, Publ. IHÉS 135 (2022).
 
-[^3]: B. Gross, D. Prasad, *On the decomposition of a representation of $\mathrm{SO}_n$ when restricted to* $\mathrm{SO}_{n-1}$ (Canad. J. Math. 44, 1992). 일반형은 W. T. Gan, B. Gross, D. Prasad, Astérisque 346 (2012).
+[^3]: B. Gross, D. Prasad, *On the decomposition of a representation of $\mathrm{SO}\_n$ when restricted to* $\mathrm{SO}\_{n-1}$ (Canad. J. Math. 44, 1992). 일반형은 W. T. Gan, B. Gross, D. Prasad, Astérisque 346 (2012).
 
 # 연관 문서
 

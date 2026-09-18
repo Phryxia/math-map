@@ -5,7 +5,7 @@
 [Chern–Simons 이론](chern-simons.md)의 작용은 게이지 불변이 아니다. 닫힌 3 다양체에서는 게이지 변환에 따른 변화가 $2\pi\mathbb Z$ 라서 $e^{iS}$ 가 불변이고, 레벨 $k$ 의 정수성이 거기서 나왔다. 3 다양체에 경계가 있으면 변화량에 경계 적분 항이 남고 그 항은 사라지지 않는다.
 
 $$
-M=\text{3 다양체},\quad \partial M=\Sigma \ \Longrightarrow\ \delta_{\text{gauge}}S_{\mathrm{CS}}\big|_{\Sigma}\ne0
+M=\text{3 다양체},\quad \partial M=\Sigma \ \Longrightarrow\ \delta_{\text{gauge}}S_{\mathrm{CS}}\big|\_{\Sigma}\ne0
 $$
 
 남은 항이 경계 곡면 $\Sigma$ 위에 사는 2 차원 장론의 작용이고, 그 이론이 **Wess–Zumino–Witten 모형**이다. 벌크의 게이지 자유도가 경계에서 물리적 자유도가 되는 현상이 **벌크–경계 대응**이며, 3 차원 위상장론과 2 차원 등각장론이 같은 자료의 두 표현임을 말한다.
@@ -87,7 +87,7 @@ $$
 $\mathfrak g$ 의 루프대수 $\mathfrak g\otimes\mathbb C[t,t^{-1}]$ 에 중심원소 $K$ 를 더한 다음 대수를 **아핀 Lie 대수** $\hat{\mathfrak g}$ 라 한다.
 
 $$
-[J^a_m,J^b_n]=f^{ab}{}_c\thinspace J^c_{m+n}+m\thinspace\delta^{ab}\delta_{m+n,0}\thinspace K
+[J^a_m,J^b_n]=f^{ab}{}\_c\thinspace J^c_{m+n}+m\thinspace\delta^{ab}\delta_{m+n,0}\thinspace K
 $$
 
 표현에서 $K$ 가 스칼라 $k$ 로 작용할 때 그 표현의 **레벨**이 $k$ 다. $m\delta_{m+n,0}K$ 항이 중심확대이고, 이것이 없으면 이론이 자명해진다.
@@ -109,7 +109,7 @@ $$
 \phi_i\times\phi_j=\sum_l N_{ij}^{\thickspace l}\thinspace\phi_l
 $$
 
-$\mathfrak{su}(2)_k$ 에서는 스핀 덧셈에 상한이 하나 더 붙는다.
+$\mathfrak{su}(2)\_k$ 에서는 스핀 덧셈에 상한이 하나 더 붙는다.
 
 $$
 j_1\times j_2=\sum_{j=|j_1-j_2|}^{\min(j_1+j_2,\thickspace k-j_1-j_2)}j
@@ -132,12 +132,12 @@ $\Sigma$ 위의 상관함수는 정칙 조각과 반정칙 조각의 쌍선형 �
 **정리 (Verlinde).** 융합 계수는
 
 $$
-N_{ij}^{\thickspace l}=\sum_{m}\frac{S_{im}S_{jm}S^*_{lm}}{S_{0m}}
+N_{ij}^{\thickspace l}=\sum_{m}\frac{S_{im}S_{jm}S^\ast\_{lm}}{S_{0m}}
 $$
 
 이고, 종수 $g$ 곡면의 블록 차원은 $\dim\mathcal V_g=\sum_m(S_{0m})^{2-2g}$ 이다.
 
-$S$ 는 지표의 모듈러 변환 $\tau\mapsto-1/\tau$ 를 나타내는 행렬이다. $\mathfrak{su}(2)_k$ 에서 라벨 $a=2j$ 에 대해 다음이다.
+$S$ 는 지표의 모듈러 변환 $\tau\mapsto-1/\tau$ 를 나타내는 행렬이다. $\mathfrak{su}(2)\_k$ 에서 라벨 $a=2j$ 에 대해 다음이다.
 
 $$
 S_{ab}=\sqrt{\frac{2}{k+2}}\thinspace\sin\frac{\pi(a+1)(b+1)}{k+2}
@@ -145,7 +145,7 @@ $$
 
 왼쪽 $N_{ij}^{\thickspace l}$ 은 표현의 곱을 분해한 음이 아닌 정수이고 오른쪽은 사인 값들의 비의 합이다.
 
-$S_{a0}/S_{00}$ 을 **양자차원**이라 한다. $\mathfrak{su}(2)_k$ 에서 $a=1$ 의 양자차원은
+$S_{a0}/S_{00}$ 을 **양자차원**이라 한다. $\mathfrak{su}(2)\_k$ 에서 $a=1$ 의 양자차원은
 
 $$
 d_{1}=\frac{\sin(2\pi/(k+2))}{\sin(\pi/(k+2))}=2\cos\frac{\pi}{k+2}

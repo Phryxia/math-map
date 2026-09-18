@@ -31,13 +31,13 @@ flowchart TD
 
 ## 쌍곡 구조와 표현
 
-완비 쌍곡 계량을 가진 $M$ 을 보편덮개로 올리면 $\mathbb H^3$ 이고 데크 변환은 등거리사상이다. $\mathrm{Isom}^+(\mathbb H^3)=\mathrm{PSL}_2(\mathbb C)$ 이므로 계량 하나가 표현 하나를 준다.
+완비 쌍곡 계량을 가진 $M$ 을 보편덮개로 올리면 $\mathbb H^3$ 이고 데크 변환은 등거리사상이다. $\mathrm{Isom}^+(\mathbb H^3)=\mathrm{PSL}\_2(\mathbb C)$ 이므로 계량 하나가 표현 하나를 준다.
 
 $$
-\rho:\pi_1(M)\longrightarrow \mathrm{PSL}_2(\mathbb C),\qquad M\cong \mathbb H^3/\rho(\pi_1 M)
+\rho:\pi_1(M)\longrightarrow \mathrm{PSL}\_2(\mathbb C),\qquad M\cong \mathbb H^3/\rho(\pi_1 M)
 $$
 
-이 $\rho$ 는 충실이고 상이 이산이다. 거꾸로 이산 충실 표현이 있으면 몫이 쌍곡 다양체다. 쌍곡 구조를 찾는 문제가 표현을 찾는 대수 문제가 되고, Mostow 강직성은 그 표현이 $\mathrm{PSL}_2(\mathbb C)$ 켤레를 빼고 하나뿐이라는 진술이 된다.
+이 $\rho$ 는 충실이고 상이 이산이다. 거꾸로 이산 충실 표현이 있으면 몫이 쌍곡 다양체다. 쌍곡 구조를 찾는 문제가 표현을 찾는 대수 문제가 되고, Mostow 강직성은 그 표현이 $\mathrm{PSL}\_2(\mathbb C)$ 켤레를 빼고 하나뿐이라는 진술이 된다.
 
 $\rho(\gamma)$ 의 자취는 켤레 불변이므로 위상 불변량이고, 자취들이 생성하는 불변 자취체는 대수적 수체다. 부피는 초월수인데 자취체는 수체라는 대비가 [Bloch 군](algebraic-k-theory.md)과 조절자로 이어진다.
 
@@ -62,7 +62,7 @@ $$
 무한원 경계 $\partial\mathbb H^3=\widehat{\mathbb C}$ 위에서 등거리사상은 Möbius 변환으로 작용하고
 
 $$
-\mathrm{Isom}^+(\mathbb H^3)\cong \mathrm{PSL}_2(\mathbb C),\qquad
+\mathrm{Isom}^+(\mathbb H^3)\cong \mathrm{PSL}\_2(\mathbb C),\qquad
 \begin{pmatrix}a&b\cr c&d\end{pmatrix}\cdot w=\frac{aw+b}{cw+d}
 $$
 
@@ -70,7 +70,7 @@ $$
 
 ## 쌍곡 다양체와 Kleinian 군
 
-> **정의.** $\Gamma\le\mathrm{PSL}_2(\mathbb C)$ 가 이산이고 비틀림이 없으면 **Kleinian 군**이라 하고, $M=\mathbb H^3/\Gamma$ 를 완비 쌍곡 3 다양체라 한다. $\mathrm{Vol}(M)\lt\infty$ 이면 유한 부피다.
+> **정의.** $\Gamma\le\mathrm{PSL}\_2(\mathbb C)$ 가 이산이고 비틀림이 없으면 **Kleinian 군**이라 하고, $M=\mathbb H^3/\Gamma$ 를 완비 쌍곡 3 다양체라 한다. $\mathrm{Vol}(M)\lt\infty$ 이면 유한 부피다.
 
 비틀림이 없다는 조건이 타원형 원소를 배제하므로 작용이 자유롭고 몫이 다양체가 된다. 유한 부피이면 $M$ 은 콤팩트한 부분과 유한개의 **cusp**(원환면 $\times[0,\infty)$ 꼴, 포물형 원소들이 만든다)로 나뉜다.
 
@@ -89,7 +89,7 @@ $$
 
 $$
 \mathrm{Vol}(M)=\sum_{i=1}^n D(z_i),\qquad
-D(z)=\mathrm{Im}\mathrm{Li}_2(z)+\arg(1-z)\log|z|
+D(z)=\mathrm{Im}\mathrm{Li}\_2(z)+\arg(1-z)\log|z|
 $$
 
 인 **Bloch–Wigner 이중로그**로 주어진다. 이상 사면체의 세 이면각이 $\alpha,\beta,\gamma$ 이면 $D(z)=\Lambda(\alpha)+\Lambda(\beta)+\Lambda(\gamma)$ 로 [Lobachevsky 함수](lobachevsky-function.md)가 된다.
@@ -151,7 +151,7 @@ cusp 를 메우면 부피가 줄고, 복잡하게 메울수록 원래 부피에 
 
 > **정리 (Thurston 의 기하화 추측, Perelman 증명).** 모든 닫힌 방향 가능 3 다양체는 소수 분해와 원환면 분해를 거쳐 8 개 모형 기하 중 하나를 갖는 조각으로 잘린다.
 
-8 개는 $\mathbb H^3,\ \mathbb E^3,\ S^3,\ S^2\times\mathbb R,\ \mathbb H^2\times\mathbb R,\ \widetilde{\mathrm{SL}_2\mathbb R},\ \mathrm{Nil},\ \mathrm{Sol}$ 이고 이 가운데 $\mathbb H^3$ 조각이 압도적으로 많다. 나머지 일곱은 Seifert 올뭉치거나 원환면 다발로 분류되어 있어 3 차원 위상수학의 내용이 쌍곡 조각에 몰린다. 강직성이 그 조각들을 기하로 식별하므로 3 다양체의 분류가 Kleinian 군의 분류가 된다.
+8 개는 $\mathbb H^3,\ \mathbb E^3,\ S^3,\ S^2\times\mathbb R,\ \mathbb H^2\times\mathbb R,\ \widetilde{\mathrm{SL}\_2\mathbb R},\ \mathrm{Nil},\ \mathrm{Sol}$ 이고 이 가운데 $\mathbb H^3$ 조각이 압도적으로 많다. 나머지 일곱은 Seifert 올뭉치거나 원환면 다발로 분류되어 있어 3 차원 위상수학의 내용이 쌍곡 조각에 몰린다. 강직성이 그 조각들을 기하로 식별하므로 3 다양체의 분류가 Kleinian 군의 분류가 된다.
 
 # 활용
 
@@ -175,7 +175,7 @@ $$
 
 붙임 방정식의 해가 주어지면 부피 계산은 Bloch–Wigner 함수의 수치 계산이다.
 
-$|z|=1$ 인 정이면체 해에서는 $\log|z|=0$ 이라 둘째 항이 사라지고 $D(e^{i\theta})=\mathrm{Im}\mathrm{Li}_2(e^{i\theta})=2\Lambda(\theta/2)$ 가 된다.[^1]
+$|z|=1$ 인 정이면체 해에서는 $\log|z|=0$ 이라 둘째 항이 사라지고 $D(e^{i\theta})=\mathrm{Im}\mathrm{Li}\_2(e^{i\theta})=2\Lambda(\theta/2)$ 가 된다.[^1]
 
 ## 매듭 구별
 
@@ -185,11 +185,11 @@ SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자
 
 ## 다른 분야와의 연결
 
-- **산술 쌍곡 다양체.** $\Gamma$ 가 사원수 대수의 정수원에서 오면 Bianchi 군 $\mathrm{PSL}_2(\mathcal O_d)$ 류가 되고 부피가 [Dedekind zeta 함수](dirichlet-l-functions.md)의 값으로 계산된다. [Selberg 대각합 공식](selberg-trace-formula.md)이 길이 스펙트럼과 Laplace 스펙트럼을 잇는다.
-- **Chern–Simons 이론.** 쌍곡 구조는 $\mathrm{SL}_2(\mathbb C)$ 평탄 접속이므로 [Chern–Simons](chern-simons.md) 불변량이 정의되고 $\mathrm{CS}+i\thinspace\mathrm{Vol}/2\pi$ 라는 복소수 하나로 묶인다. [Witten 점근](witten-asymptotics.md)과 볼륨 추측이 이 복소수의 실수부와 허수부를 본다.
+- **산술 쌍곡 다양체.** $\Gamma$ 가 사원수 대수의 정수원에서 오면 Bianchi 군 $\mathrm{PSL}\_2(\mathcal O_d)$ 류가 되고 부피가 [Dedekind zeta 함수](dirichlet-l-functions.md)의 값으로 계산된다. [Selberg 대각합 공식](selberg-trace-formula.md)이 길이 스펙트럼과 Laplace 스펙트럼을 잇는다.
+- **Chern–Simons 이론.** 쌍곡 구조는 $\mathrm{SL}\_2(\mathbb C)$ 평탄 접속이므로 [Chern–Simons](chern-simons.md) 불변량이 정의되고 $\mathrm{CS}+i\thinspace\mathrm{Vol}/2\pi$ 라는 복소수 하나로 묶인다. [Witten 점근](witten-asymptotics.md)과 볼륨 추측이 이 복소수의 실수부와 허수부를 본다.
 - **$K$ 이론.** 사면체 모양들이 정하는 Bloch 군의 원소가 있고 그 Borel 조절자가 부피다. [대수적 K 이론](algebraic-k-theory.md)과 3 다양체를 잇는 다리다.
 
-[^1]: $\mathrm{Im}\mathrm{Li}_2(e^{i\theta})=\sum_n\sin(n\theta)/n^2$ 이고 $\Lambda(\theta)=\tfrac12\sum_n\sin(2n\theta)/n^2$ 이므로 $\mathrm{Im}\mathrm{Li}_2(e^{i\theta})=2\Lambda(\theta/2)$ 다. $\theta=\pi/3$ 에서 $2\Lambda(\pi/6)=1.0149416\ldots=V_3$ 이 나온다.
+[^1]: $\mathrm{Im}\mathrm{Li}\_2(e^{i\theta})=\sum_n\sin(n\theta)/n^2$ 이고 $\Lambda(\theta)=\tfrac12\sum_n\sin(2n\theta)/n^2$ 이므로 $\mathrm{Im}\mathrm{Li}\_2(e^{i\theta})=2\Lambda(\theta/2)$ 다. $\theta=\pi/3$ 에서 $2\Lambda(\pi/6)=1.0149416\ldots=V_3$ 이 나온다.
 
 # 연관 문서
 

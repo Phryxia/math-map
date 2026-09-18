@@ -5,7 +5,7 @@
 Brauer 군 $\mathrm{Br}(K)$ 는 체 $K$ 위의 중심단순대수를 Brauer 동치로 분류하는 군이며, [유체론](class-field-theory.md)이 이 군을 완전히 계산한다.
 
 $$
-0\longrightarrow\mathrm{Br}(K)\longrightarrow\bigoplus_v\mathrm{Br}(K_v)\xrightarrow{\ \sum\mathrm{inv}_v\ }\mathbb Q/\mathbb Z\longrightarrow0
+0\longrightarrow\mathrm{Br}(K)\longrightarrow\bigoplus_v\mathrm{Br}(K_v)\xrightarrow{\ \sum\mathrm{inv}\_v\ }\mathbb Q/\mathbb Z\longrightarrow0
 $$
 
 가운데 사상이 [아델](adeles.md)적이다. 각 자리의 불변량을 모두 더하면 $0$ 이라는 이 완전열이 유체론의 압축된 형태이고, Hasse 원리가 언제 성립하고 언제 깨지는지를 재는 자다.
@@ -19,13 +19,13 @@ $$
 $a,b\in K^\times$ 에 대해 사원수대수를 정의한다.
 
 $$
-(a,b)_K=K\langle i,j\rangle/(i^2=a,\ j^2=b,\ ij=-ji)
+(a,b)\_K=K\langle i,j\rangle/(i^2=a,\ j^2=b,\ ij=-ji)
 $$
 
 $K=\mathbb R$ 이고 $a=b=-1$ 이면 Hamilton 의 사원수다. 이 4 차원 대수는 $2\times2$ 행렬대수 $M_2(K)$ 와 동형이거나(**분해**) 나눗셈대수다.
 
 $$
-(a,b)_K\cong M_2(K)\quad\Longleftrightarrow\quad ax^2+by^2=z^2\ \text{가 }K\text{ 에서 자명하지 않은 해를 갖는다}
+(a,b)\_K\cong M_2(K)\quad\Longleftrightarrow\quad ax^2+by^2=z^2\ \text{가 }K\text{ 에서 자명하지 않은 해를 갖는다}
 $$
 
 대수의 노름형식이 이 이차형식이다. 원뿔곡선에 점이 있는가와 대수가 분해되는가가 같은 질문이다. 국소적으로만 점이 있고 대역적으로는 없다면, 모든 $K_v$ 에서 분해되지만 $K$ 에서는 분해되지 않는 대수가 있다는 뜻이다.
@@ -35,17 +35,17 @@ $$
 국소체 $K_v$ 위에서 Brauer 군을 유체론이 계산해 준다.
 
 $$
-\mathrm{inv}_v\colon\mathrm{Br}(K_v)\xrightarrow{\ \sim\ }
+\mathrm{inv}\_v\colon\mathrm{Br}(K_v)\xrightarrow{\ \sim\ }
 \begin{cases}\mathbb Q/\mathbb Z&v\ \text{유한}\cr \tfrac12\mathbb Z/\mathbb Z&v\ \text{실수}\cr 0&v\ \text{복소}\end{cases}
 $$
 
 사원수대수는 위수 2 의 원소이므로 불변량이 $0$ 아니면 $1/2$ 이고, $1/2$ 인 자리를 **분기 자리**라 한다. 대역적으로 정의된 대수는 분기 자리가 유한 개이며 불변량의 합이 $0$ 이다.
 
 $$
-\sum_v\mathrm{inv}_v(A)=0\quad\text{in }\mathbb Q/\mathbb Z
+\sum_v\mathrm{inv}\_v(A)=0\quad\text{in }\mathbb Q/\mathbb Z
 $$
 
-사원수대수에서 이 진술은 Hilbert 기호의 곱 공식 $\prod_v(a,b)_v=1$ 이며, 부호가 $-1$ 인 자리의 개수가 짝수라는 뜻이다. 이차 상호법칙을 자리 전체의 대칭으로 다시 쓴 형태다.
+사원수대수에서 이 진술은 Hilbert 기호의 곱 공식 $\prod_v(a,b)\_v=1$ 이며, 부호가 $-1$ 인 자리의 개수가 짝수라는 뜻이다. 이차 상호법칙을 자리 전체의 대칭으로 다시 쓴 형태다.
 
 한 자리에서만 분기하는 대수는 없다. 한 자리만 $1/2$ 이면 합이 $1/2\ne0$ 이다. 모든 자리에서 분해되면 전체가 분해되므로 사원수대수에 대해 Hasse 원리가 성립한다.
 
@@ -66,7 +66,7 @@ graph TD
 
 $X$ 가 $K$ 위의 다양체이고 $K$ 유리점 $P$ 가 있으면, $X$ 위의 Brauer 군 원소 $\alpha$ 를 $P$ 에서 평가해 $\alpha(P)\in\mathrm{Br}(K)$ 를 얻고 불변량의 합이 $0$ 이어야 한다.
 
-$X$ 가 모든 자리에서 국소점을 갖는다고 하자. 국소점들의 모음 $(P_v)_v$ 마다 합 $\sum_v\mathrm{inv}_v\alpha(P_v)$ 를 계산할 수 있다. 이 합이 모든 국소점 모음에 대해 $0$ 이 아니면 어떤 국소점 모음도 대역점에서 오지 않으므로 $X(K)=\emptyset$ 이다.
+$X$ 가 모든 자리에서 국소점을 갖는다고 하자. 국소점들의 모음 $(P_v)\_v$ 마다 합 $\sum_v\mathrm{inv}\_v\alpha(P_v)$ 를 계산할 수 있다. 이 합이 모든 국소점 모음에 대해 $0$ 이 아니면 어떤 국소점 모음도 대역점에서 오지 않으므로 $X(K)=\emptyset$ 이다.
 
 이것이 **Brauer–Manin 장애**이며, 알려진 반례 대부분이 이 장애로 설명된다.
 
@@ -89,23 +89,23 @@ $$
 $K_v$ 위에서 사원수대수의 분해 여부를 $\pm1$ 로 적은 것이 **Hilbert 기호**다.
 
 $$
-(a,b)_v=\begin{cases}+1&ax^2+by^2=z^2\ \text{가 }K_v\ \text{에서 자명하지 않게 풀린다}\cr-1&\text{그렇지 않다}\end{cases}
+(a,b)\_v=\begin{cases}+1&ax^2+by^2=z^2\ \text{가 }K_v\ \text{에서 자명하지 않게 풀린다}\cr-1&\text{그렇지 않다}\end{cases}
 $$
 
 $\mathbb Q$ 위에서는 명시적 공식이 있다. $a=p^\alpha u$ 와 $b=p^\beta v$ 로 쓰면 홀수 소수 $p$ 에서
 
 $$
-(a,b)_p=(-1)^{\alpha\beta\varepsilon(p)}\left(\frac up\right)^{\negthinspace\beta}\left(\frac vp\right)^{\negthinspace\alpha},\qquad
+(a,b)\_p=(-1)^{\alpha\beta\varepsilon(p)}\left(\frac up\right)^{\negthinspace\beta}\left(\frac vp\right)^{\negthinspace\alpha},\qquad
 \varepsilon(p)=\frac{p-1}2\bmod2
 $$
 
-이고, $p=2$ 에서는 $\varepsilon(u)=\frac{u-1}2$ 와 $\omega(u)=\frac{u^2-1}8$ 로 $(a,b)_2=(-1)^{\varepsilon(u)\varepsilon(v)+\alpha\omega(v)+\beta\omega(u)}$ 다. 실수 자리에서는 $a,b$ 가 둘 다 음수일 때만 $-1$ 이다.
+이고, $p=2$ 에서는 $\varepsilon(u)=\frac{u-1}2$ 와 $\omega(u)=\frac{u^2-1}8$ 로 $(a,b)\_2=(-1)^{\varepsilon(u)\varepsilon(v)+\alpha\omega(v)+\beta\omega(u)}$ 다. 실수 자리에서는 $a,b$ 가 둘 다 음수일 때만 $-1$ 이다.
 
 ## 불변량 사상과 기본 완전열
 
 > **유체론(Brauer 군 판).** 대역체 $K$ 에 대해 다음이 완전열이다.
 > $$
-> 0\to\mathrm{Br}(K)\to\bigoplus_v\mathrm{Br}(K_v)\xrightarrow{\ \sum\mathrm{inv}_v\ }\mathbb Q/\mathbb Z\to0
+> 0\to\mathrm{Br}(K)\to\bigoplus_v\mathrm{Br}(K_v)\xrightarrow{\ \sum\mathrm{inv}\_v\ }\mathbb Q/\mathbb Z\to0
 > $$
 
 왼쪽의 단사성이 **Albert–Brauer–Hasse–Noether 정리**다[^1]. 모든 자리에서 분해되는 중심단순대수는 분해된다는 뜻이며 중심단순대수에 대한 Hasse 원리다. 가운데의 완전성이 불변량 합 공식이고, 오른쪽의 전사성은 불변량을 미리 정해 대수를 만들 수 있다는 존재정리다.
@@ -135,7 +135,7 @@ $$
 $X/K$ 가 매끄러운 사영다양체일 때 아델 점 집합 안에 부분집합을 정의한다.
 
 $$
-X(\mathbb A_K)^{\mathrm{Br}}=\Big\lbrace(P_v)\in X(\mathbb A_K)\ :\ \sum_v\mathrm{inv}_v\thinspace\alpha(P_v)=0\ \ \text{모든 }\alpha\in\mathrm{Br}(X)\Big\rbrace
+X(\mathbb A_K)^{\mathrm{Br}}=\Big\lbrace(P_v)\in X(\mathbb A_K)\ :\ \sum_v\mathrm{inv}\_v\thinspace\alpha(P_v)=0\ \ \text{모든 }\alpha\in\mathrm{Br}(X)\Big\rbrace
 $$
 
 $X(K)\subset X(\mathbb A_K)^{\mathrm{Br}}\subset X(\mathbb A_K)$ 가 항상 성립한다. 가운데가 비어 있는데 오른쪽이 비어 있지 않으면 Hasse 원리가 깨지고 그 깨짐이 Brauer 군으로 설명된다.

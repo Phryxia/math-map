@@ -46,16 +46,16 @@ $e^{-Ax}$ 가 주도항에 비해 가장 작은 방향에서 항이 켜지고, �
 $x \to \infty$ 에서의 점근급수 $\tilde f(x) = \sum_{n \ge 0} a_n x^{-n-1}$ 에 대해 **Borel 변환**은
 
 $$
-\mathcal{B}[\tilde f](\zeta) \thickspace=\thickspace \sum_{n \ge 0} \frac{a_n}{n!}\thinspace\zeta^{n}
+\mathcal{B}\lbrack\tilde f\rbrack(\zeta) \thickspace=\thickspace \sum_{n \ge 0} \frac{a_n}{n!}\thinspace\zeta^{n}
 $$
 
 이다. $a_n$ 이 $n!$ 규모로 커져도 $\mathcal{B}[\tilde f]$ 는 양의 수렴 반경을 가진다. 이 함수를 해석적으로 연장한 뒤
 
 $$
-\mathcal{S}_\theta \tilde f(x) \thickspace=\thickspace \int_0^{e^{i\theta}\infty} e^{-x\zeta}\thinspace\mathcal{B}[\tilde f](\zeta)\thinspace d\zeta
+\mathcal{S}\_\theta \tilde f(x) \thickspace=\thickspace \int_0^{e^{i\theta}\infty} e^{-x\zeta}\thinspace\mathcal{B}\lbrack\tilde f\rbrack(\zeta)\thinspace d\zeta
 $$
 
-를 방향 $\theta$ 의 **Borel 합**이라 한다. 적분이 수렴하면 $\mathcal{S}_\theta \tilde f$ 는 해석함수이고 그 점근전개가 원래 급수다.
+를 방향 $\theta$ 의 **Borel 합**이라 한다. 적분이 수렴하면 $\mathcal{S}\_\theta \tilde f$ 는 해석함수이고 그 점근전개가 원래 급수다.
 
 ## Stokes 선과 anti-Stokes 선
 

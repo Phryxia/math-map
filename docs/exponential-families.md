@@ -91,13 +91,13 @@ $$
 $\eta$ 가 $\mathcal N$ 의 내부점이면 $A$ 는 그 근방에서 해석적이고 적분과 미분을 교환할 수 있다. 그러면
 
 $$
-\nabla A(\eta) = \mathbb{E}_{\eta}[T(X)], \qquad \nabla^{2} A(\eta) = \mathrm{Cov}_{\eta}\big(T(X)\big).
+\nabla A(\eta) = \mathbb{E}\_{\eta}[T(X)], \qquad \nabla^{2} A(\eta) = \mathrm{Cov}\_{\eta}\big(T(X)\big).
 $$
 
 첫 식의 계산은 다음과 같다.
 
 $$
-\nabla A(\eta) = \frac{\int h(x)\thinspace T(x)\thinspace e^{\eta^{\top}T(x)}d\nu}{\int h(x)\thinspace e^{\eta^{\top}T(x)}d\nu} = \mathbb{E}_{\eta}[T(X)].
+\nabla A(\eta) = \frac{\int h(x)\thinspace T(x)\thinspace e^{\eta^{\top}T(x)}d\nu}{\int h(x)\thinspace e^{\eta^{\top}T(x)}d\nu} = \mathbb{E}\_{\eta}[T(X)].
 $$
 
 한 번 더 미분하면 두 번째 식이 나오고, 고차 미분은 고차 cumulant 를 준다. Poisson 에서 $A(\eta) = e^{\eta}$ 이므로 모든 차수의 cumulant 가 $\lambda = e^{\eta}$ 로 같고, Bernoulli 에서 $A'(\eta) = e^{\eta}/(1+e^{\eta})$ 는 로지스틱 함수이며 $A''(\eta) = p(1-p)$ 다.
@@ -119,7 +119,7 @@ $$
 $$
 \nabla \ell(\eta) = S_n - n\nabla A(\eta) = 0
 \quad\Longleftrightarrow\quad
-\mathbb{E}_{\hat\eta}[T(X)] = \frac{1}{n}\sum_{i=1}^{n} T(x_i).
+\mathbb{E}\_{\hat\eta}[T(X)] = \frac{1}{n}\sum_{i=1}^{n} T(x_i).
 $$
 
 MLE 는 모형의 이론적 모멘트를 표본 모멘트에 맞춘다. 최소 표현에서는 $\ell$ 이 엄격오목이므로 해가 존재하면 유일하다. 존재는 표본 평균 $S_n/n$ 이 평균모수 공간의 내부에 있을 때 보장되고, 경계에 있으면 MLE 가 발산한다. Bernoulli 표본이 전부 1 인 경우와 로지스틱 회귀에서 데이터가 완전분리되는 경우가 그렇다.
@@ -131,7 +131,7 @@ Fisher 정보는 $I(\eta) = \nabla^2 A(\eta) = \mathrm{Cov}(T)$ 이므로 점근
 $\nabla A$ 는 최소·정칙 지수족에서 자연모수공간의 내부를 평균모수공간의 내부로 보내는 전단사이고, 그 역이 볼록켤레
 
 $$
-A^{*}(\mu) = \sup_{\eta}\big(\eta^{\top}\mu - A(\eta)\big)
+A^{\ast}(\mu) = \sup_{\eta}\big(\eta^{\top}\mu - A(\eta)\big)
 $$
 
 의 기울기다. $A^\ast$ 는 음의 엔트로피에 해당한다([Shannon entropy](entropy.md)). 또한 두 분포 사이의 [KL divergence](kl-divergence.md)는 $A$ 가 만드는 Bregman divergence 로 정확히 표현된다.
@@ -164,7 +164,7 @@ $$
 $T$ 의 평균이 $\mu$ 로 고정된 분포 중 엔트로피를 최대화하는 것을 찾는 문제
 
 $$
-\max_{p}\thickspace H(p) \quad \text{s.t.} \quad \mathbb{E}_{p}[T(X)] = \mu, \thickspace\thickspace \int p \thinspace d\nu = 1
+\max_{p}\thickspace H(p) \quad \text{s.t.} \quad \mathbb{E}\_{p}[T(X)] = \mu, \thickspace\thickspace \int p \thinspace d\nu = 1
 $$
 
 의 해는 제약의 Lagrange 승수를 $\eta$ 로 하는 지수족 분포 $p(x \mid \eta) = h(x)\exp(\eta^{\top}T(x) - A(\eta))$ 다([Lagrange 쌍대성과 KKT 조건](lagrange-duality.md)). 목표 분포 $p$ 와 지수족 분포 $q$ 의 KL divergence 가 비음이고 모멘트 제약 아래에서 교차항이 상쇄되므로

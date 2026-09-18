@@ -44,7 +44,7 @@ $x\to0$ 에서 $f(x)\sim\sum_k c_kx^{\alpha_k}$ 이면 $\tilde f$ 는 $s=-\alpha
 
 $$
 \tilde f\ \text{의}\ s=s_0\ \text{에서의 단순극점, 유수}\ r
-\ \longleftrightarrow\
+\thinspace\longleftrightarrow\thinspace
 f(x)\ \text{에}\ r\thinspace x^{-s_0}\ \text{항}
 $$
 
@@ -106,7 +106,7 @@ $$
 $\tilde f$ 가 띠 바깥으로 유리형으로 이어지고 수직선 위에서 충분히 빨리 감쇠하면 윤곽을 왼쪽으로 $\mathrm{Re}s=d$ 까지 밀어 다음을 얻는다.
 
 $$
-f(x)=\sum_{d\lt\mathrm{Re}s_0\lt c}\mathop{\mathrm{Res}}_{s=s_0}\big(\tilde f(s)x^{-s}\big)+O\negthinspace\left(x^{-d}\right)
+f(x)=\sum_{d\lt\mathrm{Re}s_0\lt c}\mathop{\mathrm{Res}}\_{s=s_0}\big(\tilde f(s)x^{-s}\big)+O\negthinspace\left(x^{-d}\right)
 $$
 
 점근전개를 얻는 작업이 유수 계산이 된다. 차수 $m$ 의 극점에서 나오는 항은 $x^{-s_0}$ 곱하기 $\log x$ 의 $m-1$ 차 다항식이다.
@@ -138,7 +138,7 @@ $$
 마지막 합이 $\log_2x$ 에 대해 주기 1 로 진동하는 항이고 진폭은 다음이다.
 
 $$
-\frac2{\log2}\left|\Gamma\negthinspace\left(\frac{2\pi i}{\log2}\right)\right|=\frac{2}{\log 2}\sqrt{\frac{\pi}{y\sinh\pi y}}\Big|_{y=2\pi/\log2}=1.573\times10^{-6}
+\frac2{\log2}\left|\Gamma\negthinspace\left(\frac{2\pi i}{\log2}\right)\right|=\frac{2}{\log 2}\sqrt{\frac{\pi}{y\sinh\pi y}}\Big|\_{y=2\pi/\log2}=1.573\times10^{-6}
 $$
 
 주도항 $\log_2(1/x)$ 에 백만 분의 일 수준의 주기 떨림이 얹힌다.

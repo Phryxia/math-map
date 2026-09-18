@@ -43,7 +43,7 @@ $$
 가 주어졌다고 하자. $F$ 가 $G$ 의 left adjoint라는 것은 전단사족
 
 $$
-\varphi_{c,d} : \mathrm{Hom}_{\mathcal{D}}(Fc, d) \thickspace\xrightarrow{\ \sim\ }\thickspace \mathrm{Hom}_{\mathcal{C}}(c, Gd)
+\varphi_{c,d} : \mathrm{Hom}\_{\mathcal{D}}(Fc, d) \thickspace\xrightarrow{\ \sim\ }\thickspace \mathrm{Hom}\_{\mathcal{C}}(c, Gd)
 $$
 
 이 존재하고, 이것이 $c$ 와 $d$ 양쪽에 대해 자연스럽다는 뜻이다. 자연성은 임의의 $u:c'\to c$ 와 $v:d\to d'$ 에 대해
@@ -61,7 +61,7 @@ $$
 범주론적으로 정확히 말하면, 두 functor
 
 $$
-\mathrm{Hom}_{\mathcal{D}}(F-, -), \quad \mathrm{Hom}_{\mathcal{C}}(-, G-) \thickspace : \thickspace \mathcal{C}^{\mathrm{op}} \times \mathcal{D} \to \mathbf{Set}
+\mathrm{Hom}\_{\mathcal{D}}(F-, -), \quad \mathrm{Hom}\_{\mathcal{C}}(-, G-) \thickspace : \thickspace \mathcal{C}^{\mathrm{op}} \times \mathcal{D} \to \mathbf{Set}
 $$
 
 사이의 자연동형을 주는 것이 adjunction이다.
@@ -71,13 +71,13 @@ $$
 $F\dashv G$ 이면 두 자연변환
 
 $$
-\eta : \mathrm{id}_{\mathcal{C}} \Rightarrow GF, \qquad \varepsilon : FG \Rightarrow \mathrm{id}_{\mathcal{D}}
+\eta : \mathrm{id}\_{\mathcal{C}} \Rightarrow GF, \qquad \varepsilon : FG \Rightarrow \mathrm{id}\_{\mathcal{D}}
 $$
 
 이 정해진다. $\eta_c = \varphi(\mathrm{id}\_{Fc})$ 와 $\varepsilon_d = \varphi^{-1}(\mathrm{id}\_{Gd})$ 로 두면 된다. 이들은 triangle identity를 만족한다.
 
 $$
-(\varepsilon F) \circ (F \eta) = \mathrm{id}_F, \qquad (G \varepsilon) \circ (\eta G) = \mathrm{id}_G
+(\varepsilon F) \circ (F \eta) = \mathrm{id}\_F, \qquad (G \varepsilon) \circ (\eta G) = \mathrm{id}\_G
 $$
 
 ```mermaid
@@ -130,7 +130,7 @@ $$
 Right adjoint는 존재하면 자연동형을 제외하고 유일하다. $G$ , $G'$ 가 모두 $F$ 의 right adjoint이면
 
 $$
-\mathrm{Hom}_{\mathcal{C}}(c, Gd) \cong \mathrm{Hom}_{\mathcal{D}}(Fc, d) \cong \mathrm{Hom}_{\mathcal{C}}(c, G'd)
+\mathrm{Hom}\_{\mathcal{C}}(c, Gd) \cong \mathrm{Hom}\_{\mathcal{D}}(Fc, d) \cong \mathrm{Hom}\_{\mathcal{C}}(c, G'd)
 $$
 
 가 $c$ 에 대해 자연스러우므로 [Yoneda lemma](yoneda-lemma.md)의 따름정리(Yoneda 매장의 충실충만성)에 의해 $Gd \cong G'd$ 이고, 이 동형은 $d$ 에 대해 자연스럽다. Left adjoint도 같은 이유로 유일하다.
@@ -151,7 +151,7 @@ Adjunction은 표현가능성의 언어로 다시 쓸 수 있다.
 *증명 스케치.* $\mathcal D$ 안의 도형 $d_i$ 가 극한 $\lim d_i$ 를 가진다고 하자. 임의의 $c$ 에 대해
 
 $$
-\mathrm{Hom}_{\mathcal{C}}(c, G(\lim_i d_i)) \cong \mathrm{Hom}_{\mathcal{D}}(Fc, \lim_i d_i) \cong \lim_i \mathrm{Hom}_{\mathcal{D}}(Fc, d_i) \cong \lim_i \mathrm{Hom}_{\mathcal{C}}(c, G d_i)
+\mathrm{Hom}\_{\mathcal{C}}(c, G(\lim_i d_i)) \cong \mathrm{Hom}\_{\mathcal{D}}(Fc, \lim_i d_i) \cong \lim_i \mathrm{Hom}\_{\mathcal{D}}(Fc, d_i) \cong \lim_i \mathrm{Hom}\_{\mathcal{C}}(c, G d_i)
 $$
 
 이다. 가운데 등호는 hom-functor가 두 번째 변수에서 극한을 보존한다는 사실이고, 나머지는 adjunction이다. 오른쪽 끝은 $\mathrm{Hom}(c, \lim G d_i)$ 와 같으므로 Yoneda에 의해 $G(\lim d_i) \cong \lim G d_i$ 다. 여극한 쪽은 반대 범주에서 같은 논증을 한다. ∎
@@ -220,13 +220,13 @@ Unit $\eta_X : X \to (X \times A)^A$ 는 $x$ 를 $a \mapsto (x, a)$ 로 보내�
 이때
 
 $$
-\mathrm{Hom}_{S}(S \otimes_R M, N) \cong \mathrm{Hom}_{R}(M, f^{*}N)
+\mathrm{Hom}\_{S}(S \otimes_R M, N) \cong \mathrm{Hom}\_{R}(M, f^{\ast}N)
 $$
 
 이 성립하여 $S \otimes_R - \dashv f^\ast$ 다. 여기서 나오는 일반형이 tensor-hom adjunction
 
 $$
-\mathrm{Hom}_{S}(M \otimes_R N, P) \cong \mathrm{Hom}_{R}(M, \mathrm{Hom}_{S}(N, P))
+\mathrm{Hom}\_{S}(M \otimes_R N, P) \cong \mathrm{Hom}\_{R}(M, \mathrm{Hom}\_{S}(N, P))
 $$
 
 이고, 자세한 구성은 [텐서곱](tensor-products.md)에서 다룬다. 이 adjunction에서 곧바로 "텐서곱은 여극한을 보존하므로 우완전" 이라는 결론이 나온다. 반대로 Hom은 극한을 보존하므로 좌완전이다. 환의 [국소화](localization-rings.md) 역시 같은 틀에서 left adjoint로 나타난다.

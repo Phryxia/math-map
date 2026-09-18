@@ -106,7 +106,7 @@ $$
 이것이 **Levi-Civita 접속**이고, 좌표에서의 성분이 **Christoffel 기호**다.
 
 $$
-\Gamma^{k}_{ij} = \frac{1}{2} \sum_{l} g^{kl} \left( \partial_i g_{jl} + \partial_j g_{il} - \partial_l g_{ij} \right),
+\Gamma^{k}\_{ij} = \frac{1}{2} \sum_{l} g^{kl} \left( \partial_i g_{jl} + \partial_j g_{il} - \partial_l g_{ij} \right),
 $$
 
 여기서 $g^{kl}$ 은 계량 행렬의 역행렬 성분이다. Christoffel 기호는 텐서가 아니다. 좌표변환에서 추가 항이 붙으며, 임의의 한 점에서는 좌표를 잘 잡아 모두 0으로 만들 수 있다(normal coordinates). 그래서 곡률은 기호 자체가 아니라 그 미분의 조합으로 정의되어야 한다.
@@ -116,7 +116,7 @@ $$
 곡선이 **측지선**이라는 것은 속도장의 공변미분이 0이라는 뜻이며, 좌표에서는 다음 2계 연립 비선형 [상미분방정식](ordinary-differential-equations.md)이다.
 
 $$
-\ddot{x}^k + \sum_{i,j} \Gamma^{k}_{ij}\thinspace \dot{x}^i \dot{x}^j = 0 .
+\ddot{x}^k + \sum_{i,j} \Gamma^{k}\_{ij}\thinspace \dot{x}^i \dot{x}^j = 0 .
 $$
 
 Christoffel 기호가 매끄러우므로 Picard–Lindelöf 정리에 의해 초기 위치와 초기 속도가 주어지면 해가 국소적으로 유일하게 존재한다. 이로부터 **지수 사상**을 정의한다. 점 $p$ 와 접벡터 $v$ 에 대해, $p$ 에서 속도 $v$ 로 출발한 측지선을 시간 $1$ 만큼 따라간 지점을 대응시키는 사상이다. 원점 근방에서 지수 사상은 미분동형이며, 그 상을 normal neighborhood라 한다.

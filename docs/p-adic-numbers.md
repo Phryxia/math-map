@@ -27,7 +27,7 @@ $p=3$ 에서 $1,\ 1+3,\ 1+3+9,\ 1+3+9+27,\dots$ 는 연속한 두 항의 차가 
 $|\cdot|\_p$ 는 삼각부등식보다 강한 초거리 부등식을 만족한다.
 
 $$
-|x+y|_p\le\max(|x|_p,|y|_p)
+|x+y|\_p\le\max(|x|\_p,|y|\_p)
 $$
 
 모든 삼각형이 이등변이고, 공 안의 모든 점이 그 공의 중심이며, 두 공은 겹치거나 하나가 다른 하나를 포함할 뿐 반쯤 겹치지 않는다. 모든 공이 열린집합이면서 닫힌집합이라 공간이 완전히 분리된다.
@@ -80,7 +80,7 @@ $|x|\_p=p^{-v_p(x)}$ 로 두면 비아르키메데스 절댓값이 되고, $v_p(
 절댓값의 동치류가 **자리**이고 $v$ 로 쓴다. $\mathbb Q$ 의 자리는 소수들과 하나의 무한 자리 $\infty$ 다. 이 목록이 완전하므로 다음 항등식이 성립한다.
 
 $$
-\prod_v|x|_v=1\qquad(x\in\mathbb Q^\times)
+\prod_v|x|\_v=1\qquad(x\in\mathbb Q^\times)
 $$
 
 **곱 공식**이다. $x=p_1^{e_1}\cdots p_k^{e_k}$ 의 소인수분해를 다시 쓴 것이지만 모든 자리를 대등하게 놓아야 성립하는 형태라 국소-대역 관점의 출발점이 된다.
@@ -90,7 +90,7 @@ $$
 $|\cdot|\_p$ 에 대한 $\mathbb Q$ 의 완비화가 $\mathbb Q_p$ 다. 그 안의 **정수환**은 다음이다.
 
 $$
-\mathbb Z_p=\lbrace x\in\mathbb Q_p:|x|_p\le1\rbrace=\lbrace x:v_p(x)\ge0\rbrace
+\mathbb Z_p=\lbrace x\in\mathbb Q_p:|x|\_p\le1\rbrace=\lbrace x:v_p(x)\ge0\rbrace
 $$
 
 - 국소환이다. 유일한 극대 아이디얼이 $p\mathbb Z_p$ 이고 잉여체가 $\mathbb Z_p/p\mathbb Z_p\cong\mathbb F_p$ 다.

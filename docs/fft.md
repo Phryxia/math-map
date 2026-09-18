@@ -15,7 +15,7 @@
 $\omega = e^{-2\pi i/N}$ 의 제곱은 $e^{-2\pi i/(N/2)}$ 로, 정확히 절반 길이의 단위근이다. 그래서 입력을 짝수 인덱스와 홀수 인덱스로 나누면 각각이 길이 $N/2$ 의 같은 문제가 된다.
 
 $$
-X[k]=\underbrace{\sum_{t\text{ 짝수}}x[t]\omega^{kt}}_{E[k]}+\omega^k\underbrace{\sum_{t\text{ 홀수}}x[t']\omega^{kt'}}_{O[k]}
+X[k]=\underbrace{\sum_{t\text{ 짝수}}x[t]\omega^{kt}}\_{E[k]}+\omega^k\underbrace{\sum_{t\text{ 홀수}}x[t']\omega^{kt'}}\_{O[k]}
 $$
 
 $\omega^{k+N/2} = -\omega^k$ 를 쓰면 나머지 절반이 추가 곱셈 없이 나온다.
@@ -45,7 +45,7 @@ graph TB
 두 수열의 순환 합성곱은 정의대로 하면 $O(N^2)$ 이다. Fourier 기저에서는 순환 이동이 대각화되어 합성곱이 성분별 곱이 된다.
 
 $$
-\mathcal F(x*y)=\mathcal F(x)\cdot\mathcal F(y)
+\mathcal F(x\asty)=\mathcal F(x)\cdot\mathcal F(y)
 $$
 
 변환하고 곱하고 되돌리면 $O(N\log N)$ 이다. 다항식 곱셈이 합성곱이므로 다항식과 큰 정수의 곱셈이 같은 방법으로 빨라진다.

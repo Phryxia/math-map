@@ -42,27 +42,27 @@ $$
 " $n$ 은 $T$ 에서의 증명의 부호이고 그 결론은 $m$ 이다"라는 관계는 순수하게 구문적 검사이므로 primitive recursive하다. 따라서 산술 논리식으로 표현된다. 이를 써서 증명 가능성 술어를 정의한다.
 
 $$
-\mathrm{Pr}_T(m)\ :\equiv\ \exists n\ \mathrm{Proof}_T(n,m)
+\mathrm{Pr}\_T(m)\ :\equiv\ \exists n\ \mathrm{Proof}\_T(n,m)
 $$
 
 증명 가능성 술어는 다음 세 성질(Hilbert–Bernays–Löb 파생 조건)을 만족한다.
 
 $$
-T\vdash\varphi \implies T\vdash \mathrm{Pr}_T(\ulcorner\varphi\urcorner)
+T\vdash\varphi \implies T\vdash \mathrm{Pr}\_T(\ulcorner\varphi\urcorner)
 $$
 
 $$
-T\vdash \mathrm{Pr}_T(\ulcorner\varphi\to\psi\urcorner)\to\bigl(\mathrm{Pr}_T(\ulcorner\varphi\urcorner)\to \mathrm{Pr}_T(\ulcorner\psi\urcorner)\bigr)
+T\vdash \mathrm{Pr}\_T(\ulcorner\varphi\to\psi\urcorner)\to\bigl(\mathrm{Pr}\_T(\ulcorner\varphi\urcorner)\to \mathrm{Pr}\_T(\ulcorner\psi\urcorner)\bigr)
 $$
 
 $$
-T\vdash \mathrm{Pr}_T(\ulcorner\varphi\urcorner)\to \mathrm{Pr}_T(\ulcorner \mathrm{Pr}_T(\ulcorner\varphi\urcorner)\urcorner)
+T\vdash \mathrm{Pr}\_T(\ulcorner\varphi\urcorner)\to \mathrm{Pr}\_T(\ulcorner \mathrm{Pr}\_T(\ulcorner\varphi\urcorner)\urcorner)
 $$
 
 무모순성 문장은 모순이 증명되지 않는다는 진술로 정의한다.
 
 $$
-\mathrm{Con}(T)\ :\equiv\ \neg\thinspace\mathrm{Pr}_T(\ulcorner 0=1\urcorner)
+\mathrm{Con}(T)\ :\equiv\ \neg\thinspace\mathrm{Pr}\_T(\ulcorner 0=1\urcorner)
 $$
 
 ## 대각선 보조정리
@@ -84,7 +84,7 @@ $T$ 가 효과적으로 공리화된 무모순 이론이고 Robinson 산술을 �
 대각선 보조정리를 $\psi(x)$ 로 " $x$ 는 증명 불가능"을 두어 적용하면 Gödel 문장 $G$ 를 얻는다.
 
 $$
-T\vdash\ G\ \leftrightarrow\ \neg\thinspace\mathrm{Pr}_T(\ulcorner G\urcorner)
+T\vdash\ G\ \leftrightarrow\ \neg\thinspace\mathrm{Pr}\_T(\ulcorner G\urcorner)
 $$
 
 **$G$ 는 증명되지 않는다**: $T$ 가 $G$ 를 증명하면 첫 번째 파생 조건으로 $T$ 는 증명 가능성도 증명하고, $G$ 의 동치에서 그 부정도 증명한다. 이는 $T$ 의 무모순성에 반한다.
@@ -106,7 +106,7 @@ $$
 만약 $T$ 가 $\mathrm{Con}(T)$ 를 증명하면 $G$ 도 증명하게 되어 제1정리에 모순이다. 세 파생 조건만으로 이 결론이 나오므로, 증명은 산술의 세부가 아니라 증명 가능성 술어의 형식적 성질에만 의존한다. 같은 조건에서 Löb 정리가 따라 나온다.
 
 $$
-T\vdash \mathrm{Pr}_T(\ulcorner\varphi\urcorner)\to\varphi\ \Longrightarrow\ T\vdash\varphi
+T\vdash \mathrm{Pr}\_T(\ulcorner\varphi\urcorner)\to\varphi\ \Longrightarrow\ T\vdash\varphi
 $$
 
 ## 정지 문제와의 관계

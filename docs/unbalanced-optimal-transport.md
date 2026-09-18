@@ -55,7 +55,7 @@ $\tau\to\infty$ 는 균형 최적 수송이고 $\tau\to0$ 은 아무것도 옮�
 $a\in\mathbb R^n_{\gt 0}$ 과 $b\in\mathbb R^m_{\gt 0}$ 은 총질량이 달라도 된다. $C\in\mathbb R^{n\times m}\_{\ge0}$ 에 대해
 
 $$
-\mathrm{UOT}_{\varepsilon,\tau}(a,b)=\min_{P\ge0}\ \langle C,P\rangle
+\mathrm{UOT}\_{\varepsilon,\tau}(a,b)=\min_{P\ge0}\ \langle C,P\rangle
 +\varepsilon\thinspace\mathrm{KL}(P\thinspace\Vert\thinspace a\otimes b)
 +\tau\thinspace\mathrm{KL}(P\mathbf 1\thinspace\Vert\thinspace a)+\tau\thinspace\mathrm{KL}(P^\top\mathbf 1\thinspace\Vert\thinspace b)
 $$

@@ -21,9 +21,9 @@ $$
 $x_i\in\lbrace-1,1\rbrace$ 이므로 $x_i^2=1$ 이고 어떤 다변수 다항식도 각 변수의 차수를 $1$ 이하로 줄일 수 있다. 자유도가 $2^n$ 이고 함수도 $2^n$ 개 점에서의 값으로 결정되므로 모든 부울 함수는 중복차수 $1$ 의 다항식으로 유일하게 표현된다.
 
 $$
-\mathrm{Dict}_i(x)=x_i,\qquad
+\mathrm{Dict}\_i(x)=x_i,\qquad
 \mathrm{XOR}(x)=x_1x_2\cdots x_n,\qquad
-\mathrm{AND}_2(x)=\tfrac{-1+x_1+x_2+x_1x_2}{2}
+\mathrm{AND}\_2(x)=\tfrac{-1+x_1+x_2+x_1x_2}{2}
 $$
 
 독재자는 준위 $1$ 에 무게를 전부 싣고 XOR 은 준위 $n$ 에 전부 싣는다. 무게가 낮은 준위에 몰리면 함수가 매끄럽고 높은 준위에 몰리면 요동친다.
@@ -33,8 +33,8 @@ $$
 좌표 $i$ 의 **영향력**은 $i$ 를 뒤집었을 때 값이 바뀔 확률이다.
 
 $$
-\mathrm{Inf}_i[f]=\sum_{S\ni i}\hat f(S)^2,\qquad
-\mathbf I[f]=\sum_i\mathrm{Inf}_i[f]=\sum_S|S|\thinspace\hat f(S)^2
+\mathrm{Inf}\_i[f]=\sum_{S\ni i}\hat f(S)^2,\qquad
+\mathbf I[f]=\sum_i\mathrm{Inf}\_i[f]=\sum_S|S|\thinspace\hat f(S)^2
 $$
 
 총 영향력은 분포 $\hat f(S)^2$ 아래에서 준위 $|S|$ 의 기댓값이므로, 무게가 낮은 준위에 있다는 것과 총 영향력이 작다는 것이 같은 말이다.
@@ -50,10 +50,10 @@ $$
 잡음 연산자 $T_\rho$ 는 준위 $k$ 의 계수를 $\rho^k$ 배 하는 대각 연산자다. 잡음 안정성이 곧바로 나온다.
 
 $$
-\mathrm{Stab}_\rho[f]=\mathbb E[f(x)f(y)]=\sum_S\rho^{|S|}\hat f(S)^2
+\mathrm{Stab}\_\rho[f]=\mathbb E[f(x)f(y)]=\sum_S\rho^{|S|}\hat f(S)^2
 $$
 
-높은 준위의 계수는 $\rho^{|S|}$ 로 빠르게 죽는다. 안정성이 크다는 것은 무게가 낮은 준위에 있다는 것이고, $\mathrm{Stab}_\rho=\rho$ 를 달성하는 것은 준위 $1$ 에 무게를 몰아 준 독재자뿐이다. 검사하려는 성질이 부등식의 등호 조건으로 나타나므로 독재자 검사가 가능해진다.
+높은 준위의 계수는 $\rho^{|S|}$ 로 빠르게 죽는다. 안정성이 크다는 것은 무게가 낮은 준위에 있다는 것이고, $\mathrm{Stab}\_\rho=\rho$ 를 달성하는 것은 준위 $1$ 에 무게를 몰아 준 독재자뿐이다. 검사하려는 성질이 부등식의 등호 조건으로 나타나므로 독재자 검사가 가능해진다.
 
 ## 근사 불가능성과의 연결
 
@@ -79,7 +79,7 @@ $$
 ## 영향력과 잡음
 
 $$
-\mathrm{Inf}_i[f]=\Pr_x\bigl[f(x)\ne f(x^{\oplus i})\bigr]=\sum_{S\ni i}\hat f(S)^2
+\mathrm{Inf}\_i[f]=\Pr_x\bigl[f(x)\ne f(x^{\oplus i})\bigr]=\sum_{S\ni i}\hat f(S)^2
 $$
 
 $x^{\oplus i}$ 는 $i$ 번째 좌표를 뒤집은 것이다. 잡음 연산자는 다음과 같다.
@@ -87,7 +87,7 @@ $x^{\oplus i}$ 는 $i$ 번째 좌표를 뒤집은 것이다. 잡음 연산자는
 $$
 T_\rho f(x)=\mathbb E_{y\sim N_\rho(x)}[f(y)]=\sum_S\rho^{|S|}\hat f(S)\chi_S,
 \qquad
-\mathrm{Stab}_\rho[f]=\langle f,T_\rho f\rangle=\sum_S\rho^{|S|}\hat f(S)^2
+\mathrm{Stab}\_\rho[f]=\langle f,T_\rho f\rangle=\sum_S\rho^{|S|}\hat f(S)^2
 $$
 
 $y\sim N_\rho(x)$ 는 각 좌표가 독립적으로 확률 $\frac{1+\rho}{2}$ 로 $x_i$ 와 같은 분포다.
@@ -104,10 +104,10 @@ $$
 
 ## Majority is Stablest
 
-**정리(Mossel–O'Donnell–Oleszkiewicz, 2010).** $\rho\in[0,1)$ 과 $\varepsilon\gt 0$ 에 대해 $\tau\gt 0$ 이 있어, $\mathbb E[f]=0$ 이고 모든 $i$ 에서 $\mathrm{Inf}_i[f]\le\tau$ 이면
+**정리(Mossel–O'Donnell–Oleszkiewicz, 2010).** $\rho\in[0,1)$ 과 $\varepsilon\gt 0$ 에 대해 $\tau\gt 0$ 이 있어, $\mathbb E[f]=0$ 이고 모든 $i$ 에서 $\mathrm{Inf}\_i[f]\le\tau$ 이면
 
 $$
-\mathrm{Stab}_\rho[f]\thickspace\le\thickspace 1-\frac2\pi\arccos\rho+\varepsilon
+\mathrm{Stab}\_\rho[f]\thickspace\le\thickspace 1-\frac2\pi\arccos\rho+\varepsilon
 $$
 
 이다. 우변은 $n\to\infty$ 에서 다수결 함수의 안정성의 극한값이다.
@@ -118,11 +118,11 @@ $$
 
 ## 세 기준 함수
 
-| 함수 | 무게 분포 | 총 영향력 | $\mathrm{Stab}_\rho$ |
+| 함수 | 무게 분포 | 총 영향력 | $\mathrm{Stab}\_\rho$ |
 |---|---|---|---|
-| $\mathrm{Dict}_i$ | 준위 $1$ 에 전부 | $1$ | $\rho$ |
-| $\mathrm{XOR}_n$ | 준위 $n$ 에 전부 | $n$ | $\rho^n$ |
-| $\mathrm{Maj}_n$ | 홀수 준위에 $\Theta(k^{-3/2})$ | $\sim\sqrt{2n/\pi}$ | $\to1-\frac2\pi\arccos\rho$ |
+| $\mathrm{Dict}\_i$ | 준위 $1$ 에 전부 | $1$ | $\rho$ |
+| $\mathrm{XOR}\_n$ | 준위 $n$ 에 전부 | $n$ | $\rho^n$ |
+| $\mathrm{Maj}\_n$ | 홀수 준위에 $\Theta(k^{-3/2})$ | $\sim\sqrt{2n/\pi}$ | $\to1-\frac2\pi\arccos\rho$ |
 
 독재자와 XOR 이 두 극단이고 다수결이 그 사이의 기준점이다. 다수결의 총 영향력이 $\sqrt n$ 규모라는 것은 무게가 낮은 준위에 몰려 있되 독재자만큼은 아니라는 뜻이다.
 
@@ -136,7 +136,7 @@ $$
 
 ## 복잡도에서의 위치
 
-- **독재자 검사.** 완전성은 $\mathrm{Stab}_\rho[\mathrm{Dict}]=\rho$ 에서, 건전성은 Majority is Stablest 에서 나온다.
+- **독재자 검사.** 완전성은 $\mathrm{Stab}\_\rho[\mathrm{Dict}]=\rho$ 에서, 건전성은 Majority is Stablest 에서 나온다.
 - **최적 근사비.** [유일게임 추측](unique-games.md) 아래에서 최대 절단의 근사 임계가 $\alpha_{\mathrm{GW}}=0.878\ldots$ 로 확정된다. 같은 틀이 최대 $k$ 절단과 여러 제약 만족 문제에 적용되어, 반정부호 완화의 값이 최적 근사비라는 Raghavendra 의 정리로 이어진다.
 - **학습.** 무게가 낮은 준위에 몰린 함수는 낮은 준위 계수만 추정하면 배울 수 있다. Low-Degree 알고리즘과 Goldreich–Levin 이 그 구현이다.
 - **회로 하한.** $\mathsf{AC}^0$ 회로가 계산하는 함수는 낮은 준위에 무게가 몰린다는 Linial–Mansour–Nisan 의 정리와, XOR 이 준위 $n$ 에 무게를 전부 싣는다는 사실에서 패리티가 $\mathsf{AC}^0$ 밖임이 따라온다.
@@ -149,7 +149,7 @@ Walsh–Hadamard 변환으로 $2^n$ 개 계수를 $O(n2^n)$ 에 뽑고, Parseval
 
 독재자는 준위 $1$ 에 계수 하나를 두고, XOR 은 준위 $n$ 에 계수 하나를 두며, 다수결은 홀수 준위에 퍼져 있되 준위 $1$ 이 지배한다. 총 영향력이 $1$ , $n$ , $\sqrt{2n/\pi}$ 로 갈린다.
 
-유한 $n$ 에서 $\mathrm{Maj}_n$ 의 안정성은 극한값 $1-\frac2\pi\arccos\rho$ 보다 크고 차이가 단조로 줄어든다. $\mathrm{Maj}_n$ 은 각 좌표의 영향력이 $\Theta(1/\sqrt n)$ 이라 $n$ 이 크면 정리의 조건을 만족하고 극한에서 상한을 달성하므로, 정리는 개선될 수 없다. $\rho$ 가 $1$ 에 가까울수록 수렴이 느린 것은 높은 준위 계수가 $\rho^{|S|}$ 로 충분히 죽지 않기 때문이며, 그 꼬리를 통제하는 것이 초축약성이다.
+유한 $n$ 에서 $\mathrm{Maj}\_n$ 의 안정성은 극한값 $1-\frac2\pi\arccos\rho$ 보다 크고 차이가 단조로 줄어든다. $\mathrm{Maj}\_n$ 은 각 좌표의 영향력이 $\Theta(1/\sqrt n)$ 이라 $n$ 이 크면 정리의 조건을 만족하고 극한에서 상한을 달성하므로, 정리는 개선될 수 없다. $\rho$ 가 $1$ 에 가까울수록 수렴이 느린 것은 높은 준위 계수가 $\rho^{|S|}$ 로 충분히 죽지 않기 때문이며, 그 꼬리를 통제하는 것이 초축약성이다.
 
 ## 쓰이는 자리
 

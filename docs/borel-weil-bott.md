@@ -7,7 +7,7 @@ Borel–Weil–Bott 정리는 깃발다양체 $G/B$ 위 직선다발의 코호�
 [Weyl 지표 공식](weyl-character-formula.md)은 컴팩트 Lie 군의 기약표현을 최고무게로 분류하고 지표를 닫힌 식으로 주지만, 그 벡터공간을 만드는 방법은 주지 않는다. Borel–Weil 정리의 답은 기하적이다. $G$ 를 복소 반단순군, $B$ 를 Borel 부분군이라 하자. 지배적 무게 $\lambda$ 는 $B$ 의 일차원 표현을 주고, 그것으로 $G/B$ 위에 직선다발 $\mathcal L_\lambda$ 를 꼬아 만들면
 
 $$
-H^0(G/B,\mathcal L_\lambda)\cong V_\lambda^{*}
+H^0(G/B,\mathcal L_\lambda)\cong V_\lambda^{\ast}
 $$
 
 가 $G$ 가군으로 성립한다. 차원 계산은 [Riemann–Roch](riemann-roch.md) 유형의 코호몰로지 계산이 된다.
@@ -42,7 +42,7 @@ $$
 - 그렇지 않으면 $w(\lambda+\rho)$ 를 지배적으로 만드는 $w\in W$ 가 유일하게 있고 다음이 성립한다.
 
 $$
-H^{\ell(w)}(G/B,\mathcal L_\lambda)\cong V_{w\cdot\lambda}^{*},\qquad H^{i}=0\ (i\ne\ell(w))
+H^{\ell(w)}(G/B,\mathcal L_\lambda)\cong V_{w\cdot\lambda}^{\ast},\qquad H^{i}=0\ (i\ne\ell(w))
 $$
 
 $\ell(w)$ 는 $w$ 를 단순반사로 쓴 최단 단어의 길이다. $\lambda+\rho$ 를 지배적 방으로 밀어 넣는 데 넘은 벽의 개수가 코호몰로지가 사는 차수다. $\lambda$ 가 이미 지배적이면 $w=e$ 이고 Borel–Weil 로 되돌아온다.
@@ -54,7 +54,7 @@ $\ell(w)$ 는 $w$ 를 단순반사로 쓴 최단 단어의 길이다. $\lambda+\
 각 $\lambda$ 에 대해 Euler 표수를 쓰면
 
 $$
-\chi(G/B,\mathcal L_\lambda)=\sum_i(-1)^i\mathrm{ch}H^i(G/B,\mathcal L_\lambda)=(-1)^{\ell(w)}\mathrm{ch}V_{w\cdot\lambda}^*
+\chi(G/B,\mathcal L_\lambda)=\sum_i(-1)^i\mathrm{ch}H^i(G/B,\mathcal L_\lambda)=(-1)^{\ell(w)}\mathrm{ch}V_{w\cdot\lambda}^\ast
 $$
 
 이고, 왼쪽은 Atiyah–Bott 고정점 공식이나 등변 Riemann–Roch 로 계산된다. 결과가 Weyl 지표 공식의 우변이다. 교대합 $\sum_w(-1)^{\ell(w)}$ 은 고정점 $wB\in(G/B)^T$ 들의 기여를 모은 것이다.
@@ -69,7 +69,7 @@ $$
 \dim_{\mathbb C}G/B=|\Phi^+|=\frac{\dim G-\mathrm{rank}G}{2}
 $$
 
-$G=\mathrm{SL}_2$ 면 $G/B=\mathbb P^1$ 이고, $G=\mathrm{SL}_3$ 면 $G/B$ 는 $\mathbb P^2$ 안의 깃발들이 이루는 3 차원 다양체다.
+$G=\mathrm{SL}\_2$ 면 $G/B=\mathbb P^1$ 이고, $G=\mathrm{SL}\_3$ 면 $G/B$ 는 $\mathbb P^2$ 안의 깃발들이 이루는 3 차원 다양체다.
 
 ## 직선다발 $\mathcal L_\lambda$
 
@@ -107,7 +107,7 @@ $$
 \sum_k \dim H^{2k}(G/B)\thinspace q^{k}=\sum_{w\in W}q^{\ell(w)}=\prod_{i=1}^{r}\frac{1-q^{d_i}}{1-q}
 $$
 
-$d_i$ 는 $W$ 의 기본 불변식 차수다. $\mathrm{SL}_n$ 에서 $W=S_n$ 이고 우변은 $q$ 계승 $[n]_q!$ 이다.
+$d_i$ 는 $W$ 의 기본 불변식 차수다. $\mathrm{SL}\_n$ 에서 $W=S_n$ 이고 우변은 $q$ 계승 $[n]\_q!$ 이다.
 
 # 성질
 
@@ -128,7 +128,7 @@ Borel–Weil 의 $H^0$ 부분은 표수 $p$ 인 체 위에서도 성립한다. $
 
 ## 포물형 판본
 
-$B$ 대신 포물형 부분군 $P$ 를 쓰면 $G/P$ 도 사영다양체이고 같은 정리가 $W$ 를 $W_P$ 로 나눈 잉여류 대표들로 성립한다. $G=\mathrm{GL}_n$ 이고 $P$ 가 $k$ 차원 부분공간의 안정자이면 $G/P$ 는 Grassmann 다양체 $\mathrm{Gr}(k,n)$ 이고 Schubert 세포 분해가 Schubert 계산이 된다. 코호몰로지환의 구조상수가 Littlewood–Richardson 계수이며 [Schur 다항식](schur-polynomials.md) 조합론과 같은 표를 만든다.
+$B$ 대신 포물형 부분군 $P$ 를 쓰면 $G/P$ 도 사영다양체이고 같은 정리가 $W$ 를 $W_P$ 로 나눈 잉여류 대표들로 성립한다. $G=\mathrm{GL}\_n$ 이고 $P$ 가 $k$ 차원 부분공간의 안정자이면 $G/P$ 는 Grassmann 다양체 $\mathrm{Gr}(k,n)$ 이고 Schubert 세포 분해가 Schubert 계산이 된다. 코호몰로지환의 구조상수가 Littlewood–Richardson 계수이며 [Schur 다항식](schur-polynomials.md) 조합론과 같은 표를 만든다.
 
 ## 무한차원 확장
 

@@ -235,7 +235,7 @@ $$
 약허용성은 필요조건이면서 충분조건이다[^2].
 
 $$
-D_{\mathrm{st}}\colon\ \mathrm{Rep}^{\mathrm{st}}_{\mathbb Q_p}(G_K)\ \xrightarrow{\ \sim\ }\ \mathrm{MF}^{\varphi,N}_K(\text{약허용})
+D_{\mathrm{st}}\colon\ \mathrm{Rep}^{\mathrm{st}}\_{\mathbb Q_p}(G_K)\ \xrightarrow{\ \sim\ }\ \mathrm{MF}^{\varphi,N}\_K(\text{약허용})
 $$
 
 가 범주 동치이고, $N=0$ 으로 제한하면 결정적 표현과 약허용 여과 $\varphi$ 가군의 동치가 된다. $p$ 진 표현이 유한한 선형대수 자료로 번역되며, 역함자는 $V_{\mathrm{st}}(D)=\mathrm{Fil}^0(B_{\mathrm{st}}\otimes_{K_0}D)^{\varphi=1,N=0}$ 이다.
@@ -266,7 +266,7 @@ $$
 V\ \text{de Rham}\ \Longleftrightarrow\ V\ \text{잠재적으로 반안정}
 $$
 
-곧 어떤 유한확대 $L/K$ 위에서 $V|_{G_L}$ 가 반안정이다. Berger 가 이를 $p$ 진 미분방정식의 Crew 추측(André, Kedlaya, Mebkhout 이 독립적으로 증명)으로 환원해 해결했다. 이 정리로 de Rham 표현에서도 Weil–Deligne 표현을 뽑을 수 있고 $p$ 에서의 국소 Langlands 대응을 $\ell\ne p$ 와 같은 언어로 쓴다.
+곧 어떤 유한확대 $L/K$ 위에서 $V|\_{G_L}$ 가 반안정이다. Berger 가 이를 $p$ 진 미분방정식의 Crew 추측(André, Kedlaya, Mebkhout 이 독립적으로 증명)으로 환원해 해결했다. 이 정리로 de Rham 표현에서도 Weil–Deligne 표현을 뽑을 수 있고 $p$ 에서의 국소 Langlands 대응을 $\ell\ne p$ 와 같은 언어로 쓴다.
 
 ## $(\varphi,\Gamma)$ 가군
 
@@ -279,7 +279,7 @@ $$
 표수 $0$ 의 탑을 올라가면 표수 $p$ 의 체가 나타난다. 그 결과 다음이 동치가 된다.
 
 $$
-\mathrm{Rep}_{\mathbb Z_p}(G_K)\thickspace\cong\thickspace\lbrace\text{에탈 }\varphi\text{–}\Gamma\text{ 가군 over }\mathbf A_K\rbrace
+\mathrm{Rep}\_{\mathbb Z_p}(G_K)\thickspace\cong\thickspace\lbrace\text{에탈 }\varphi\text{–}\Gamma\text{ 가군 over }\mathbf A_K\rbrace
 $$
 
 Galois 코호몰로지는 Herr 복체 $D\xrightarrow{(\varphi-1,\gamma-1)}D\oplus D\to D$ 로 계산되어, 프로유한군의 코호몰로지가 두 작용소의 유한 복체가 된다.
@@ -315,7 +315,7 @@ Kisin 은 이 조건을 변형 공간 위의 닫힌 부분스킴(결정적 변�
 
 ## Fontaine–Mazur 추측
 
-$\rho\colon G_{\mathbb Q}\to\mathrm{GL}_n(\bar{\mathbb Q}_p)$ 가 기약이고
+$\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_n(\bar{\mathbb Q}\_p)$ 가 기약이고
 
 1. 유한 개의 소수를 제외하고 비분기이며
 2. $G_{\mathbb Q_p}$ 로 제한하면 de Rham

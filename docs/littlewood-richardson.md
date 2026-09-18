@@ -173,7 +173,7 @@ $$
 hive 삼각형의 세 변은 대등하다. $\lambda,\mu,\nu$ 를 순환시키거나 뒤집는 조작이 삼각형의 대칭군 $S_3$ 작용에 해당하고, 부등식 계는 그 작용에 불변이다. 따라서
 
 $$
-c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}=c^{\nu^{\negthinspace*}}_{\lambda^{\negthinspace*}\mu^{\negthinspace*}}
+c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}=c^{\nu^{\negthinspace\ast}}\_{\lambda^{\negthinspace\ast}\mu^{\negthinspace\ast}}
 $$
 
 같은 항등식이 부등식 계의 대칭에서 바로 나온다. 원래 규칙에서는 각각 별도의 전단사를 요구하던 것들이다.

@@ -30,7 +30,7 @@ $$
 
 ## 반사와 닫힘
 
-각 근 $\alpha$ 마다 $\mathfrak{sl}\_2$ 부분대수 $\lbrace E_\alpha,F_\alpha,H_\alpha\rbrace$ 가 있다. $\mathfrak g$ 를 이 $\mathfrak{sl}_2$ 의 표현으로 보면 올림·내림 논법으로 무게가 $2$ 씩 오르내리는 정수 사슬이 나오고, 정수성 조건이 따라온다.
+각 근 $\alpha$ 마다 $\mathfrak{sl}\_2$ 부분대수 $\lbrace E_\alpha,F_\alpha,H_\alpha\rbrace$ 가 있다. $\mathfrak g$ 를 이 $\mathfrak{sl}\_2$ 의 표현으로 보면 올림·내림 논법으로 무게가 $2$ 씩 오르내리는 정수 사슬이 나오고, 정수성 조건이 따라온다.
 
 무게열의 양 끝을 맞바꾸는 것이 초평면 $\alpha^\perp$ 에 대한 **반사**다.
 
@@ -127,10 +127,10 @@ $A_n$ 에서는 $\mathbb Z/(n+1)$ 이고 $E_8$ 에서는 자명군이다. $E_8$ 
 
 | 형 | 랭크 | 근 개수 | Weyl 군 위수 | 대응 Lie 대수 |
 |---|---|---|---|---|
-| $A_n$ | $n$ | $n(n+1)$ | $(n+1)!$ | $\mathfrak{sl}_{n+1}$ |
-| $B_n$ | $n\ge2$ | $2n^2$ | $2^nn!$ | $\mathfrak{so}_{2n+1}$ |
-| $C_n$ | $n\ge3$ | $2n^2$ | $2^nn!$ | $\mathfrak{sp}_{2n}$ |
-| $D_n$ | $n\ge4$ | $2n(n-1)$ | $2^{n-1}n!$ | $\mathfrak{so}_{2n}$ |
+| $A_n$ | $n$ | $n(n+1)$ | $(n+1)!$ | $\mathfrak{sl}\_{n+1}$ |
+| $B_n$ | $n\ge2$ | $2n^2$ | $2^nn!$ | $\mathfrak{so}\_{2n+1}$ |
+| $C_n$ | $n\ge3$ | $2n^2$ | $2^nn!$ | $\mathfrak{sp}\_{2n}$ |
+| $D_n$ | $n\ge4$ | $2n(n-1)$ | $2^{n-1}n!$ | $\mathfrak{so}\_{2n}$ |
 | $G_2$ | 2 | 12 | 12 | $\mathfrak g_2$ |
 | $F_4$ | 4 | 48 | 1152 | $\mathfrak f_4$ |
 | $E_6$ | 6 | 72 | 51840 | $\mathfrak e_6$ |
@@ -161,7 +161,7 @@ $$
 \dim V_\lambda=\prod_{\alpha\in\Phi^+}\frac{(\lambda+\rho,\alpha)}{(\rho,\alpha)}
 $$
 
-표현의 지표가 유한군 $W$ 위의 합으로 계산된다. $\mathfrak{sl}_2$ 의 올림·내림 논법을 근계 전체로 조직화한 결과다.
+표현의 지표가 유한군 $W$ 위의 합으로 계산된다. $\mathfrak{sl}\_2$ 의 올림·내림 논법을 근계 전체로 조직화한 결과다.
 
 ## ADE 현상
 
