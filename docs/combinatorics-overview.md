@@ -34,6 +34,7 @@ graph TD
 ## 극단 조합론과 확률적 방법
 
 - [Ramsey 이론](ramsey-theory.md): 충분히 크면 질서가 강제된다
+- [Dilworth 정리](dilworth-theorem.md): 사슬 덮개와 반사슬의 최소최대 정리, Erdős–Szekeres 정리
 - [확률적 방법](probabilistic-method.md): 무작위 대상이 존재를 증명한다
 - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위의 조화해석, 복잡도 이론의 도구
 
