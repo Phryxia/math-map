@@ -27,7 +27,8 @@ graph TD
   MC --> SEA["Schoof–Elkies–Atkin 알고리즘"]
   DW["Dwork 의 유리성 정리"] --> KED["Kedlaya 알고리즘"]
   DL --> PQC["격자 기반 후양자 암호"]
-  LAT["격자와 최단벡터"] --> PQC
+  LAT["격자"] --> SVP["최단벡터 문제"]
+  SVP --> PQC
   PQC --> FHE["완전동형암호"]
   ST["Sato–Tate 분포"] --> LT["Lang–Trotter 추측"]
   LT --> SIG["초특이 동종사상 그래프"]
@@ -56,7 +57,8 @@ graph TD
 
 ## 격자 기반 암호
 
-- [격자와 최단벡터 문제](lattices.md) — 같은 점집합을 짧고 거의 직교하는 기저와 길고 거의 평행한 기저가 함께 나타낸다. 기저 축소와 최단벡터 문제
+- [격자](lattices.md) — 같은 점집합을 짧고 거의 직교하는 기저와 길고 거의 평행한 기저가 함께 나타낸다. 기저 축소와 Minkowski 정리
+- [최단벡터 문제](shortest-vector-problem.md) — 근사율 $\gamma$ 에 따라 난해성이 갈리고, 암호는 $\gamma$ 가 다항식인 구간을 쓴다
 - [격자 기반 후양자 암호](post-quantum-cryptography.md) — 무작위로 뽑은 사례가 최악의 사례만큼 어렵다는 환산이 파라미터 선택의 근거가 된다
 - [완전동형암호](homomorphic-encryption.md) — 암호문을 복호하지 않고 덧셈과 곱셈을 수행한다. 연산마다 커지는 잡음을 재부팅으로 초기화한다
 

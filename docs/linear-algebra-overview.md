@@ -60,7 +60,7 @@ graph TD
 
 ## 격자와 부호
 
-- [격자와 최단벡터 문제](lattices.md) → [격자 기반 후양자 암호](post-quantum-cryptography.md)
+- [격자](lattices.md) → [최단벡터 문제](shortest-vector-problem.md) → [격자 기반 후양자 암호](post-quantum-cryptography.md)
 - [오류정정부호](error-correcting-codes.md): 유한체 위의 선형 부분공간
 - [질량 공식](mass-formula.md) → [Niemeier 격자](niemeier-lattices.md)
 

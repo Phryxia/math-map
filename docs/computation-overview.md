@@ -34,7 +34,8 @@ graph TD
   UF["서로소 집합 자료구조"] --> DC["동적 연결성"]
   DC --> LCT["Link-cut tree"]
   DL["이산로그와 Diffie–Hellman"] --> PQ["격자 기반 후양자 암호"]
-  LA["격자와 최단벡터 문제"] --> PQ
+  LA["격자"] --> SVP["최단벡터 문제"]
+  SVP --> PQ
   PQ --> HE["완전동형암호"]
   DL --> EC["타원곡선"]
   EC --> PBC["Weil 쌍과 쌍선형 암호"]
@@ -62,6 +63,7 @@ graph TD
 - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위의 Fourier 전개, 영향력과 잡음 안정성
 - [유일게임 추측과 2-to-2 정리](unique-games.md): 최적 근사 비율을 결정하는 추측
 - [그래프 동형](graph-isomorphism.md): P 와 NP-완전 사이에 놓인 문제, 준다항시간 알고리즘
+- [최단벡터 문제](shortest-vector-problem.md): 근사율에 따라 갈리는 난해성, 최악 경우에서 평균 경우로 가는 환산
 
 ## 알고리즘
 

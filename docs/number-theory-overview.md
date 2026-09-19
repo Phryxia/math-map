@@ -51,7 +51,7 @@ graph TD
 - [타원곡선과 군 구성](elliptic-curves.md), [Weil 쌍과 쌍선형 암호](pairing-based-cryptography.md): 곡선 위의 암호
 - [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md), [Kedlaya 알고리즘](kedlaya-algorithm.md): 유한체 위 곡선의 점 세기
 - [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md), [Deuring 대응](deuring-correspondence.md): 동종사상 기반 암호와 그 파괴
-- [격자와 최단벡터 문제](lattices.md): 격자 기반 암호의 토대
+- [격자](lattices.md): 격자 기반 암호의 토대
 
 ## 대수적 정수론
 
@@ -122,7 +122,7 @@ graph TD
 
 - [정수의 합동과 나머지 연산](modular-arithmetic.md)
 - [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md)
-- [격자와 최단벡터 문제](lattices.md)
+- [격자](lattices.md)
 - [모듈러 형식](modular-forms.md)
 
 #number_theory #overview

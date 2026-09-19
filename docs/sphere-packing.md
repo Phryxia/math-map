@@ -127,7 +127,7 @@ Leech 격자의 자기동형군에서 Conway 군이 나오고 그 몫과 부분�
 
 ## 선수지식
 
-- [격자와 최단벡터 문제](lattices.md)
+- [격자](lattices.md)
 - [오류정정부호](error-correcting-codes.md)
 
 ## 더 알아보기

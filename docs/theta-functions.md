@@ -191,7 +191,7 @@ $$
 ## 선수지식
 
 - [모듈러 형식](modular-forms.md)
-- [격자와 최단벡터 문제](lattices.md)
+- [격자](lattices.md)
 - [Poisson 합 공식](poisson-summation.md)
 
 ## 더 알아보기
