@@ -18,7 +18,7 @@ $$
 
 다. Deligne 의 정리는 각이 이 구간 안에 있다는 것이고, Sato–Tate 는 $p$ 를 키울 때 각들이 흩어지는 방식을 말한다.
 
-Sato 는 수치 실험으로, Tate 는 이론적 근거로 1960 년대에 같은 답에 도달했다. $E$ 가 복소곱셈을 갖지 않으면
+Sato 는 수치 실험으로, Tate 는 이론적 근거로 1960 년대에 같은 답에 도달했다. $E$ 가 복소곱셈(complex multiplication, CM)을 갖지 않으면
 
 $$
 \theta_p\ \sim\ \frac2\pi\sin^2\theta\thinspace d\theta
@@ -156,7 +156,7 @@ $y^2=x^3+1$ 은 $j=0$ 이고 $\mathbb Z[\zeta_3]$ 에 의한 복소곱셈을 갖
 
 ## 쓰이는 자리
 
-- **추측의 발견.** Sato 의 원래 작업이 수치 실험이었다. 이런 표는 [SEA](sea-algorithm.md)나 [Kedlaya](kedlaya-algorithm.md) 알고리즘으로 만들고, LMFDB 의 곡선 자료가 그 결과다.
+- **추측의 발견.** Sato 의 원래 작업이 수치 실험이었다. 이런 표는 [SEA](sea-algorithm.md)(Schoof–Elkies–Atkin)나 [Kedlaya](kedlaya-algorithm.md) 알고리즘으로 만들고, LMFDB(L-functions and Modular Forms Database)의 곡선 자료가 그 결과다.
 - **CM 판정.** $a_p=0$ 인 소수의 비율이 $\tfrac12$ 에 가까우면 복소곱셈이 있다.
 - **Sato–Tate 군 분류.** 아벨 다양체와 일반 동기에 대해 어떤 콤팩트군이 나타나는지를 분류하는 작업이 진행 중이고, 종수 2 의 $52$ 개 목록이 그 결과다.
 - **모듈러성 올림.** 증명에 쓰인 $R=T$ 형 정리는 [Langlands 강령](langlands-program.md)의 표준 도구다.

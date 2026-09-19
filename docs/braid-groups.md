@@ -99,7 +99,7 @@ $\sigma_i\mapsto(i\ i{+}1)$ 은 전사 준동형 $B_n\to S_n$ 을 주고 그 핵
 
 ## 닫힘과 지표
 
-$\beta\in B_n$ 의 닫힘 $\hat\beta$ 는 위아래 끝점을 짝지어 이어 만든 링크다. $\hat\beta$ 를 주는 최소의 $n$ 이 $\hat\beta$ 의 **땋임 지표**이고 링크 불변량이다. Morton–Franks–Williams 부등식이 HOMFLY 다항식의 차수로 그 하계를 준다.
+$\beta\in B_n$ 의 닫힘 $\hat\beta$ 는 위아래 끝점을 짝지어 이어 만든 링크다. $\hat\beta$ 를 주는 최소의 $n$ 이 $\hat\beta$ 의 **땋임 지표**이고 링크 불변량이다. Morton–Franks–Williams 부등식이 HOMFLY(Hoste–Ocneanu–Millett–Freyd–Lickorish–Yetter) 다항식의 차수로 그 하계를 준다.
 
 ## Markov 정리
 
@@ -151,7 +151,7 @@ $\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ 는 Yang–Baxte
 | $\mathbb Z[t^{\pm1}]$ 위 Burau | 행렬식 | Alexander 다항식 |
 | Temperley–Lieb $TL_n(\delta)$ | Jones 자취 | Jones 다항식 |
 | Hecke 대수 $H_n(q)$ | Ocneanu 자취 | HOMFLY 다항식 |
-| BMW 대수 | Markov 자취 | Kauffman 다항식 |
+| BMW(Birman–Murakami–Wenzl) 대수 | Markov 자취 | Kauffman 다항식 |
 
 표의 각 행이 하나의 논문이었고, 공통 구조가 드러난 뒤 양자군의 표현으로 통일되었다.
 

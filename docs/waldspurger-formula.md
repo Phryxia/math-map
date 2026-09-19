@@ -125,9 +125,9 @@ $$
 | --- | --- | --- |
 | 중심값 | 보통 $\ne0$ | 항상 $=0$ |
 | 살아남는 양 | 토릭 주기 $\mathcal P_\chi$ | 주기는 0, 대신 도함수 |
-| 기하 | 사원수 대수 위의 유한집합 | Shimura 곡선 위의 CM 점 |
+| 기하 | 사원수 대수 위의 유한집합 | Shimura 곡선 위의 복소곱셈(complex multiplication, CM) 점 |
 | 정리 | Waldspurger | Gross–Zagier |
-| BSD 계수 | 0 | 1 |
+| BSD(Birch–Swinnerton-Dyer) 계수 | 0 | 1 |
 
 같은 데이터 $(\pi,K,\chi)$ 에서 부호에 따라 두 정리 중 하나가 작동한다. [Heegner 점](heegner-points.md)의 높이가 $L'(1/2)$ 를 주는 것은 주기가 0 이 되어 한 차수 위로 밀려난 결과이고, 이를 고계수 고전군으로 일반화한 것이 산술 GGP 다.
 

@@ -16,7 +16,7 @@ $$
 \bigl(P(\lambda):M(\mu)\bigr)=\bigl[M(\mu):L(\lambda)\bigr]
 $$
 
-이것이 **BGG 상반성**이다. 좌변은 사영분해 쪽 자료이고 우변은 조성열 쪽 자료인데 두 계산이 같은 수를 주고, 그 결과 Cartan 행렬이 대칭이 된다.
+이것이 **BGG 상반성**(Bernstein–Gelfand–Gelfand)이다. 좌변은 사영분해 쪽 자료이고 우변은 조성열 쪽 자료인데 두 계산이 같은 수를 주고, 그 결과 Cartan 행렬이 대칭이 된다.
 
 우변의 계산은 [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)이 답한다. $\bigl[M(y\cdot\lambda):L(w\cdot\lambda)\bigr]=P_{w_0y,\thinspace w_0w}(1)$ 이라는 KL 추측을 Beilinson–Bernstein 과 Brylinski–Kashiwara 가 증명했고, 범주 $\mathcal O$ 에서 KL 다항식이 표현론적 의미를 얻는다.
 

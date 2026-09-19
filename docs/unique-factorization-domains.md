@@ -2,7 +2,7 @@
 
 # 개요
 
-유일분해정역(UFD)은 $0$ 이 아닌 비단위 원소가 기약원의 곱으로 쓰이고 그 분해가 순서와 단위원 배수를 무시하면 유일한 정역이다. [소수와 유일분해](primes.md)에서 정수에 대해 성립한 산술의 기본정리를 환 일반으로 옮긴 조건이다.
+유일분해정역(unique factorization domain, UFD)은 $0$ 이 아닌 비단위 원소가 기약원의 곱으로 쓰이고 그 분해가 순서와 단위원 배수를 무시하면 유일한 정역이다. [소수와 유일분해](primes.md)에서 정수에 대해 성립한 산술의 기본정리를 환 일반으로 옮긴 조건이다.
 
 정역 가운데 이 성질을 갖는 것을 가려내는 기준이 Euclid 정역과 주아이디얼정역이다. 셋은 포함 사슬을 이루고, [다항식환](polynomial-rings.md)은 계수환이 무엇이냐에 따라 사슬의 어느 칸에 놓일지가 갈린다. [대수적 수체](algebraic-number-fields.md)의 정수환은 이 사슬에서 떨어져 나가며, 분해의 대상을 원소에서 아이디얼로 바꾸어 유일성을 복구한 것이 [Dedekind 정역](dedekind-domains.md)이다.
 
@@ -31,7 +31,7 @@ $$
 a = u\thinspace p_1\cdots p_m,\qquad u\in R^{\times},\ p_i \text{ 기약}
 $$
 
-**주아이디얼정역**(PID)은 모든 [아이디얼](ideals-quotient-rings.md)이 한 원소로 생성되는 정역이다. **Euclid 정역**(ED)은 함수 $N\colon R\setminus\lbrace 0\rbrace \to \mathbb Z\_{\ge 0}$ 가 있어 $b \ne 0$ 인 임의의 $a,b$ 에 대해 $a=qb+r$ 이고 $r=0$ 이거나 $N(r)\lt N(b)$ 인 $q,r$ 가 존재하는 정역이다.
+**주아이디얼정역**(principal ideal domain, PID)은 모든 [아이디얼](ideals-quotient-rings.md)이 한 원소로 생성되는 정역이다. **Euclid 정역**(Euclidean domain, ED)은 함수 $N\colon R\setminus\lbrace 0\rbrace \to \mathbb Z\_{\ge 0}$ 가 있어 $b \ne 0$ 인 임의의 $a,b$ 에 대해 $a=qb+r$ 이고 $r=0$ 이거나 $N(r)\lt N(b)$ 인 $q,r$ 가 존재하는 정역이다.
 
 # 성질
 
