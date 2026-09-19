@@ -4,7 +4,7 @@
 
 정보이론은 확률분포의 불확실성을 수 하나로 재고, 그 수를 압축과 통신의 한계로 삼는다. 압축률, 통신 속도, 추정의 정확도가 모두 같은 양에 대한 부등식이 된다.
 
-[Shannon entropy](entropy.md)에서 시작한다. 두 분포의 차이를 재는 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)와 두 확률변수가 공유하는 정보를 재는 상호정보량이 여기서 나온다. 이 세 양이 Shannon 의 두 정리의 양변을 이룬다. [무손실 부호화 정리](source-coding.md)에서 압축의 하한이 entropy 이고, [채널 부호화 정리](channel-coding.md)에서 잡음 있는 통신로의 상한이 상호정보량의 최댓값이다.
+[Shannon entropy](entropy.md)에서 시작한다. entropy 로 두 분포의 차이를 재는 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)와 두 확률변수가 공유하는 정보를 재는 상호정보량을 정의한다. 이 세 양이 Shannon 의 두 정리의 양변을 이룬다. [무손실 부호화 정리](source-coding.md)에서 압축의 하한이 entropy 이고, [채널 부호화 정리](channel-coding.md)에서 잡음 있는 통신로의 상한이 상호정보량의 최댓값이다.
 
 두 정리는 부호의 존재만 주장한다. 실제 부호는 [오류정정부호](error-correcting-codes.md)가 유한체 위의 선형대수로 구성하고, 그 조합 구조가 [Mathieu 군과 Golay 부호](mathieu-groups.md), [구 채우기](sphere-packing.md)로 이어진다.
 
