@@ -47,17 +47,6 @@ $\tfrac14$ 는 쌍곡평면 $\mathbb H$ 자체의 Laplace 스펙트럼의 바닥
 
 정칙 형식 쪽에서 Deligne 이 증명한 Ramanujan–Petersson 추측 $|a_p|\le2p^{(k-1)/2}$ 의 **아르키메데스 자리 판본**이다. 유한 자리의 Satake 매개변수가 단위원 위에 있어야 한다는 조건이, 무한 자리에서는 $r$ 이 실수여야 한다는 조건으로 나타난다. 유한 자리 쪽은 Weil 추측으로 해결되었고 무한 자리 쪽은 증명되지 않았다[^1]. 현재까지의 최선은 $\lambda\ge\tfrac14-(\tfrac7{64})^2$ 다[^2].
 
-```mermaid
-graph TD
-  L2["L^2(SL_2(Z)\\H)"] --> CONST["상수함수 (λ=0)"]
-  L2 --> DISC["이산 스펙트럼<br/>Maass 첨점형식 u_j"]
-  L2 --> CONT["연속 스펙트럼<br/>E(z, 1/2+ir)"]
-  DISC --> TEMP["λ ≥ 1/4 (온도적)<br/>Selberg 추측이 주장하는 전부"]
-  DISC --> EXC["λ < 1/4 (예외적)<br/>SL_2(Z) 에는 없다"]
-  CONT --> ZETA["ζ 함수로 완전히 기술됨"]
-  DISC --> TRACE["Selberg 대각합 공식이<br/>존재와 개수를 준다"]
-```
-
 ## $\zeta$ 영점과의 닮음
 
 Maass 형식의 $L$ 함수를 쓰면 정칙 형식과 같은 모양이 나오고, 첫 고윳값들의 목록
