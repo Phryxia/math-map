@@ -132,6 +132,7 @@ $L^1(\mu)$ 는 $\lVert f \rVert_1 = \int \lvert f \rvert\thinspace d\mu$ 로 완
 ## 더 알아보기
 
 - [단조 수렴 정리](monotone-convergence.md)
+- [유계변동 함수](bounded-variation.md)
 - [Radon–Nikodym 정리](radon-nikodym.md)
 - [확률변수와 기댓값](random-variables.md)
 

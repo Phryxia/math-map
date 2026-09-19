@@ -56,6 +56,7 @@ graph TD
 - [상측도와 확률분포](pushforward-measure.md): 가측사상이 옮기는 측도, 변수변환 공식
 - [Radon–Nikodym 정리](radon-nikodym.md): 절대연속인 두 측도의 도함수, Lebesgue 분해
 - [측도변환과 우도비](change-of-measure.md): Radon–Nikodym 도함수로서의 우도비, 중요도 표본추출
+- [유계변동 함수](bounded-variation.md): Jordan 분해, 절대연속과 미적분의 기본정리, Cantor 함수
 
 ## 다른 분야에서의 쓰임
 

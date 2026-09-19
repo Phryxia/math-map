@@ -105,6 +105,7 @@ $$
 ### 해석
 
 - [미적분학의 기본 정리](fundamental-calculus.md)
+- [유계변동 함수](bounded-variation.md)
 - [역함수 정리](inverse-function-theorem.md)
 - [멱급수](power-series.md)
 - [상미분방정식](ordinary-differential-equations.md)
