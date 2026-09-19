@@ -139,7 +139,7 @@ $$
 
 이고 소수가 $\varphi(q)$ 개의 잉여류에 고르게 나뉜다. 증명의 핵심은 $\mathrm{Re}\thinspace s=1$ 위에 $L$ 함수의 0 점이 없다는 것이다.
 
-오차항을 $q$ 에 대해 고르게 잡는 것은 어렵다. Siegel–Walfisz 정리가 $q\le(\ln x)^A$ 범위에서 이를 주지만 상수가 비유효적이다. 실수 지표의 Siegel 0 점을 배제하지 못하기 때문이다. $q\le x^{1/2-\epsilon}$ 범위의 평균에 대해서는 Bombieri–Vinogradov 정리가 GRH 에 준하는 결과를 무조건적으로 준다.
+오차항을 $q$ 에 대해 고르게 잡는 것은 어렵다. Siegel–Walfisz 정리가 $q\le(\ln x)^A$ 범위에서 이를 주지만 상수가 비유효적이다. 실수 지표의 Siegel 0 점을 배제하지 못하기 때문이다. $q\le x^{1/2-\epsilon}$ 범위의 평균에 대해서는 Bombieri–Vinogradov 정리가 **GRH**(generalized Riemann hypothesis)에 준하는 결과를 무조건적으로 준다.
 
 ## 함수체의 경우
 
