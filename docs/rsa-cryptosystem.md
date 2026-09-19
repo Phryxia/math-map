@@ -155,7 +155,6 @@ $$
 
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)
 - [중국인의 나머지 정리](chinese-remainder-theorem.md)
-- [계산 개관](computation-overview.md)
 - [암호 개관](cryptography-overview.md)
 
 ## 더 알아보기
