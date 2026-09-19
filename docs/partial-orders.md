@@ -16,7 +16,7 @@ $\lbrace 1\rbrace$ 과 $\lbrace 2\rbrace$ 는 어느 쪽도 다른 쪽을 포함
 
 ## Hasse 도형
 
-부분순서는 $x\lt y$ 일 때 화살표를 그린 그래프로 볼 수 있고, 추이성으로 따라오는 화살표를 지우면 Hasse 도형이 남는다. 반대칭성과 추이성은 이 그래프에 방향 순환이 없다는 조건과 같으므로 부분순서와 [DAG](dag-topological.md)는 같은 대상이다.
+부분순서는 $x\lt y$ 일 때 화살표를 그린 그래프로 볼 수 있고, 추이성으로 따라오는 화살표를 지우면 Hasse 도형이 남는다. 반대칭성과 추이성은 이 그래프에 방향 순환이 없다는 조건과 같으므로 부분순서와 [DAG](dag-topological.md)(directed acyclic graph)는 같은 대상이다.
 
 ```mermaid
 graph BT

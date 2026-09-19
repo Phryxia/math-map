@@ -52,7 +52,7 @@ $$
 
 ## 표본 버전과 SVD
 
-$n \times p$ 데이터행렬의 각 열에서 그 열의 평균을 뺀 것을 $Z$ 라 하면 표본공분산은 $S = Z^T Z / (n-1)$ 이다. $Z = U\Sigma_s V^T$ 가 SVD 이면 다음이 성립한다.
+$n \times p$ 데이터행렬의 각 열에서 그 열의 평균을 뺀 것을 $Z$ 라 하면 표본공분산은 $S = Z^T Z / (n-1)$ 이다. $Z = U\Sigma_s V^T$ 가 **SVD**(singular value decomposition)이면 다음이 성립한다.
 
 $$
 S=V\frac{\Sigma_s^{\mathsf T}\Sigma_s}{n-1}V^{\mathsf T}
