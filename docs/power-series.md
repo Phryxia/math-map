@@ -169,7 +169,7 @@ $$
 
 ## 더 알아보기
 
-- [Laurent 급수와 유수 정리](residue-theorem.md)
+- [유수 정리](residue-theorem.md)
 - [해석적 연속](analytic-continuation.md)
 - [Bernoulli 수와 von Staudt–Clausen 정리](bernoulli-numbers.md)
 

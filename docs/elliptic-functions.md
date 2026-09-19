@@ -80,7 +80,7 @@ $$\wp(z_1+z_2)=\frac14\left(\frac{\wp'(z_1)-\wp'(z_2)}{\wp(z_1)-\wp(z_2)}\right)
 
 ## 선수지식
 
-- [Laurent 급수와 유수 정리](residue-theorem.md)
+- [유수 정리](residue-theorem.md)
 
 ## 더 알아보기
 

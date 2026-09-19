@@ -64,7 +64,7 @@ $a$ 가 $f$ 의 본질적 특이점이면, $a$ 의 임의의 뚫린 근방에서
 
 ## 선수지식
 
-- [Laurent 급수와 유수 정리](residue-theorem.md)
+- [유수 정리](residue-theorem.md)
 - [Weierstrass 인수분해 정리](weierstrass-factorization.md)
 
 ## 더 알아보기

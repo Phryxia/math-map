@@ -184,7 +184,7 @@ Stirling 근사를 세 번 써서 얻는 이 식을 [확률](probability.md)의 
 
 ## 선수지식
 
-- [Laurent 급수와 유수 정리](residue-theorem.md)
+- [유수 정리](residue-theorem.md)
 - [해석적 연속](analytic-continuation.md)
 - [Euler–Maclaurin 공식과 점근급수](euler-maclaurin.md)
 

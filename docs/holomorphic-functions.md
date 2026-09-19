@@ -132,7 +132,7 @@ $$
 
 ### 복소해석의 줄기
 
-- [Laurent 급수와 유수 정리](residue-theorem.md)
+- [유수 정리](residue-theorem.md)
 - [해석적 연속](analytic-continuation.md)
 - [조화함수](harmonic-functions.md)
 - [등각사상](conformal-mapping.md)
