@@ -103,7 +103,7 @@ $$
 
 이고, Markov 부등식이 $\mu(|f|\gt M)\le C/M$ 을 주므로 $M$ 을 키우면 균등하게 0 으로 간다. 단, $p=1$ 유계만으로는 UI 가 아니다(위의 높이 도피 예가 $L^1$ 유계이면서 UI 가 아니다).
 
-- **조건부 기댓값족**: 적분가능한 $Z$ 에 대해 부분 sigma-대수 전체를 훑는 족
+- **조건부 기댓값족**: 적분가능한 $Z$ 에 대해 부분 $\sigma$ 대수 전체를 훑는 족
 
 $$
 \lbrace \mathbb{E}[Z \mid \mathcal{G}] : \mathcal{G} \subseteq \mathcal{F} \ \text{sub-sigma-algebra} \rbrace

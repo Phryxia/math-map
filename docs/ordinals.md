@@ -18,7 +18,7 @@ $$
 0,1,2,\dots\ \to\ \omega,\ \omega+1,\ \omega+2,\dots\ \to\ \omega\cdot 2,\ \dots\ \to\ \omega^2,\ \dots\ \to\ \omega^\omega,\ \dots
 $$
 
-omega는 앞에 바로 오는 원소가 없다. 이런 서수를 극한 서수라 하고, 어떤 서수의 후속자인 것을 후속 서수라 한다. 초한귀납법은 이 두 경우를 나누어 처리한다.
+$\omega$ 는 앞에 바로 오는 원소가 없다. 이런 서수를 극한 서수라 하고, 어떤 서수의 후속자인 것을 후속 서수라 한다. 초한귀납법은 이 두 경우를 나누어 처리한다.
 
 자연수 귀납법은 후속 단계만 다루고, 초한귀납법은 극한 순서수에서 그 아래 전부를 가정하는 단계를 더한다. 정렬성은 반례들 중 최소 반례를 고를 수 있음을 보장하고, 증명은 그 최소 반례에서 모순을 얻는다.
 
@@ -56,7 +56,7 @@ $$
 \sup S=\bigcup S,\qquad \lambda \text{ 극한} \iff \lambda\neq 0 \wedge \lambda=\bigcup\lambda
 $$
 
-최소의 무한 극한 서수가 omega, 즉 폰 노이만 자연수 전체다.
+최소의 무한 극한 서수가 $\omega$ , 즉 폰 노이만 자연수 전체다.
 
 ## 서수 산술
 
@@ -114,7 +114,7 @@ $$
 1+\omega=\omega \neq \omega+1,\qquad 2\cdot\omega=\omega \neq \omega\cdot 2
 $$
 
-앞쪽 식의 이유: 자연수 순서 앞에 원소 하나를 붙여도 순서형은 여전히 omega다. 반면 뒤에 붙이면 최대 원소가 생겨 omega와 동형이 아니다. 왼쪽 덧셈은 순증가·연속이지만 오른쪽 덧셈은 그렇지 않다.
+앞쪽 식의 이유: 자연수 순서 앞에 원소 하나를 붙여도 순서형은 여전히 $\omega$ 다. 반면 뒤에 붙이면 최대 원소가 생겨 $\omega$ 와 동형이 아니다. 왼쪽 덧셈은 순증가·연속이지만 오른쪽 덧셈은 그렇지 않다.
 
 ## Cantor normal form
 
@@ -134,7 +134,7 @@ $\varepsilon_0$ 는 가산 서수다. Gentzen은 Peano 산술의 무모순성이
 
 ## 서수와 기수
 
-각 서수는 자기 크기의 최소 서수와 대응시킬 수 있고, 그 최소 서수를 기수로 정의한다. omega, omega+1, omega 곱하기 2, omega의 omega승은 모두 가산이며 기수로는 하나다([기수](cardinality.md)). 즉 서수는 기수보다 훨씬 촘촘하다.
+각 서수는 자기 크기의 최소 서수와 대응시킬 수 있고, 그 최소 서수를 기수로 정의한다. $\omega$ , $\omega+1$ , $\omega\cdot 2$ , $\omega^\omega$ 는 모두 가산이며 기수로는 하나다([기수](cardinality.md)). 즉 서수는 기수보다 훨씬 촘촘하다.
 
 # 활용
 
@@ -152,7 +152,7 @@ $$
 (\omega^2\cdot 3+\omega\cdot 5+7)+(\omega\cdot 2+1)=\omega^2\cdot 3+\omega\cdot 7+1
 $$
 
-흡수 규칙이 곧 1 더하기 omega가 omega인 이유다.
+흡수 규칙이 곧 $1+\omega=\omega$ 인 이유다.
 
 ## 정렬 정리와의 관계
 
