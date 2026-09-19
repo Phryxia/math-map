@@ -2,7 +2,7 @@
 
 # 개요
 
-근사 알고리즘은 최적해 대신 최적해와의 비율이 증명된 해를 다항시간에 내놓는 알고리즘이다. [NP-완전](np-completeness.md) 문제에서 최적성을 포기하되 얼마나 포기하는지를 증명과 함께 밝힌다.
+근사 알고리즘은 최적해 대신 최적해와의 비율이 증명된 해를 다항시간에 내놓는 알고리즘이다. [NP-완전](np-completeness.md)(nondeterministic polynomial time) 문제에서 최적성을 포기하되 얼마나 포기하는지를 증명과 함께 밝힌다.
 
 최소화 문제에서 근사비 $\rho$ 를 보장한다는 것은 모든 입력에 대해 다음이 성립한다는 뜻이다.
 
@@ -44,9 +44,9 @@ $\mathrm{NP}$ 난해 문제 앞에서 포기할 수 있는 것은 셋이다.
 
 | 등급 | 뜻 | 예 |
 |---|---|---|
-| FPTAS | 임의의 $\varepsilon$ 에 대해 $1+\varepsilon$ 근사를 $1/\varepsilon$ 의 다항시간에 | 배낭 문제 |
-| PTAS | 임의의 $\varepsilon$ 에 대해 $1+\varepsilon$ 근사, 시간은 $\varepsilon$ 에 지수적이어도 됨 | 유클리드 TSP |
-| APX | 어떤 상수 $\rho$ 로 근사 가능 | 정점 덮개, 최대 절단 |
+| **FPTAS**(fully polynomial-time approximation scheme) | 임의의 $\varepsilon$ 에 대해 $1+\varepsilon$ 근사를 $1/\varepsilon$ 의 다항시간에 | 배낭 문제 |
+| **PTAS**(polynomial-time approximation scheme) | 임의의 $\varepsilon$ 에 대해 $1+\varepsilon$ 근사, 시간은 $\varepsilon$ 에 지수적이어도 됨 | 유클리드 TSP(traveling salesman problem) |
+| **APX**(approximable) | 어떤 상수 $\rho$ 로 근사 가능 | 정점 덮개, 최대 절단 |
 | 로그 근사 | $\Theta(\log n)$ 이 최선 | 집합 덮개 |
 | 근사 불가 | 어떤 상수배로도 근사 불가($\mathrm{P} \ne \mathrm{NP}$ 가정) | 일반 TSP, 최대 클릭 |
 
@@ -71,13 +71,13 @@ $$
 ## 기법
 
 - **탐욕과 국소 탐색.** 집합 덮개, 최대 절단의 1/2 근사.
-- **LP 완화와 반올림.** 정수 제약을 풀어 [선형계획법](linear-programming.md)으로 푼 뒤 반올림한다. 최적 LP 값과 정수 최적값의 비(적분성 간극)가 근사비의 한계를 준다.
+- **LP**(linear programming) **완화와 반올림.** 정수 제약을 풀어 [선형계획법](linear-programming.md)으로 푼 뒤 반올림한다. 최적 LP 값과 정수 최적값의 비(적분성 간극)가 근사비의 한계를 준다.
 - **원시-쌍대.** LP 쌍대해를 함께 키우며 해를 구성한다. [Lagrange 쌍대성](lagrange-duality.md)의 조합적 판본이다.
 - **무작위화와 비무작위화.** 각 변수를 확률로 정하면 기댓값 보장이 나오고, 조건부 기댓값을 따라가면 결정적 알고리즘이 된다. 최대 절단의 0.878 근사는 반정부호 계획법을 반올림해 얻는다.
 
 ## 근사 불가능성의 근거
 
-근사 불가능성 증명은 PCP 정리에 기댄다. 모든 NP 문제의 증명을 상수 개의 비트만 무작위로 읽고 검증할 수 있다는 이 정리는 간극이 있는 판정 문제로 번역된다. 참인 사례와 거짓인 사례 사이에 값의 간극이 생기도록 환원을 만들면, 그 간극보다 정밀한 근사 알고리즘은 판정 문제를 풀어 버리므로 존재할 수 없다.
+근사 불가능성 증명은 PCP(probabilistically checkable proof) 정리를 쓴다. 모든 NP 문제의 증명을 상수 개의 비트만 무작위로 읽고 검증할 수 있다는 이 정리는 간극이 있는 판정 문제로 번역된다. 참인 사례와 거짓인 사례 사이에 값의 간극이 생기도록 환원을 만들면, 그 간극보다 정밀한 근사 알고리즘은 판정 문제를 풀어 버리므로 존재할 수 없다.
 
 # 활용
 
