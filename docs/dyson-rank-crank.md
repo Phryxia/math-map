@@ -58,18 +58,13 @@ $$
 
 이고 $z$ 가 $1$ 의 거듭제곱근이면 Ramanujan 의 mock theta 함수가 된다. 두 통계량의 차이가 모듈러와 mock 의 차이다. crank 의 정의가 복잡해 보이는 것은 무한곱을 조합적으로 읽어낸 결과이기 때문이다.
 
-## 두 통계량이 가리키는 곳
+## rank 와 crank 의 비교
 
-```mermaid
-graph TD
-  P["분할 λ"] --> R["rank = 최대부분 - 부분개수"]
-  P --> C["crank = (1 의 개수로 갈린 규칙)"]
-  R -->|"5, 7 을 설명"| R5["11 에서는 실패"]
-  C -->|"5, 7, 11 을 모두 설명"| C5["세 합동식 완결"]
-  R --> M["생성함수가 mock 모듈러<br/>(Ramanujan 의 f(q))"]
-  C --> J["생성함수가 Jacobi 형식<br/>(완전한 모듈러성)"]
-  M --> B["Bringmann–Ono:<br/>조화 Maass 형식으로 rank 를 다룬다"]
-```
+| | rank | crank |
+| --- | --- | --- |
+| 정의 | 최대 부분 빼기 부분의 개수 | 1 의 개수로 갈린 규칙 |
+| 설명하는 합동식 | 법 5, 법 7 | 법 5, 법 7, 법 11 |
+| 생성함수 | mock 모듈러(Ramanujan 의 $f(q)$ ) | Jacobi 형식 |
 
 Dyson 이 rank 를 정의했을 때 그 생성함수가 Ramanujan 의 유작과 같은 대상이라는 것은 알려져 있지 않았다. 두 이야기가 합쳐진 것은 2000 년대이고, Bringmann–Ono 가 조화 Maass 형식으로 rank 의 계수에 정확 공식을 세우면서 Andrews–Dragonette 추측이 풀렸다.
 
