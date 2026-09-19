@@ -2,7 +2,7 @@
 
 # 개요
 
-복소 반단순 [Lie 대수](lie-algebras.md)는 Cartan 부분대수 $\mathfrak h$ 의 동시 고유공간으로 분해된다.
+복소 반단순 [Lie 대수](lie-algebras.md)는 Cartan 부분대수 $\mathfrak h$ 의 동시 고유공간으로 분해된다[^1].
 
 $$
 \mathfrak g=\mathfrak h\oplus\bigoplus_{\alpha\in\Phi}\mathfrak g_\alpha

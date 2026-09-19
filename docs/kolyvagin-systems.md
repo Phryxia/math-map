@@ -6,7 +6,7 @@
 
 Mazur 와 Rubin 은 Euler 계 자체를 버리고 거기서 나온 유도류의 족만 남겨 공리화했다. 이것이 **Kolyvagin 계**이고, 물음이 그런 족의 존재에서 그런 족 전체가 이루는 가군의 구조로 바뀐다.
 
-Selmer 구조 $\mathcal F$ 에 **핵심계수** $\chi(\mathcal F)\in\mathbb Z$ 라는 정수 하나가 붙고 이 수가 가군을 결정한다.
+Selmer 구조 $\mathcal F$ 에 **핵심계수** $\chi(\mathcal F)\in\mathbb Z$ 라는 정수 하나가 붙고 이 수가 가군을 결정한다[^1].
 
 | $\chi(\mathcal F)$ | Kolyvagin 계의 가군 $\mathbf{KS}(T,\mathcal F)$ |
 | --- | --- |

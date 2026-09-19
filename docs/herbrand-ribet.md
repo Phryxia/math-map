@@ -114,7 +114,7 @@ $$
 
 ## Eisenstein 합동
 
-**정리.** $p$ 가 홀소수, $k$ 가 짝수, $2\le k\le p-3$ 이고 $p\mid B_k$ 라 하자. 그러면 레벨 1, 무게 $k$ 의 고유첨점형식 $f$ 와 그 계수체의 $p$ 위 소 아이디얼 $\mathfrak p$ 가 존재해
+**정리**[^1]**.** $p$ 가 홀소수, $k$ 가 짝수, $2\le k\le p-3$ 이고 $p\mid B_k$ 라 하자. 그러면 레벨 1, 무게 $k$ 의 고유첨점형식 $f$ 와 그 계수체의 $p$ 위 소 아이디얼 $\mathfrak p$ 가 존재해
 
 $$
 a_\ell(f)\equiv1+\ell^{k-1}\pmod{\mathfrak p}\qquad(\forall\ell\ne p)

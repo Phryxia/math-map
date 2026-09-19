@@ -2,7 +2,7 @@
 
 # 개요
 
-[Selmer 군](selmer-groups.md)은 대역 코호몰로지 $H^1(K,M)$ 을 모든 자리의 국소 코호몰로지 $H^1(K_v,M)$ 로 보내고 국소 조건으로 걸러 정의한다. Poitou–Tate 완전열은 이 국소화 사상의 핵과 상을 결정한다.
+[Selmer 군](selmer-groups.md)은 대역 코호몰로지 $H^1(K,M)$ 을 모든 자리의 국소 코호몰로지 $H^1(K_v,M)$ 로 보내고 국소 조건으로 걸러 정의한다. Poitou–Tate 완전열[^1]은 이 국소화 사상의 핵과 상을 결정한다.
 
 $$
 \begin{aligned}

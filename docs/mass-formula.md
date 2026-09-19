@@ -4,7 +4,7 @@
 
 정부호 이차형식의 분류에서 판별식과 차원을 고정해도 $\mathbb Z$ 위의 동치류 개수 $h$ 는 알 수 없다. $h$ 는 차원에 따라 불규칙하게 튀고 이 값을 주는 닫힌 공식은 없다.
 
-**질량 공식**은 개수 대신 가중 개수에 닫힌 식을 준다.
+**질량 공식**은 개수 대신 가중 개수에 닫힌 식을 준다[^1].
 
 $$
 \mathrm{mass}(\mathrm{gen}\thinspace L)=\sum_{[L']\in\mathrm{gen}\thinspace L}\frac1{|\mathrm{Aut}L'|}
