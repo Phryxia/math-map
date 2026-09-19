@@ -24,7 +24,7 @@ $\log|2\sin t|=-\sum_n\cos(2nt)/n$ 이라는 고전적 전개를 항별로 적�
 
 상반공간 모형에서 쌍곡 계량은 $ds=|dx|/x_3$ 이다. 부피형식이 $dV=dx_1dx_2dx_3/x_3^3$ 이므로, 무한대로 뻗은 영역의 부피를 재면 $x_3$ 에 대한 적분에서 $1/x_3^3$ 이 나오고, 밑면의 넓이가 각도에 따라 $\sin$ 으로 변한다. 두 효과가 합쳐져 $\int\log\sin$ 꼴이 나온다.
 
-**이상 사면체**(꼭짓점이 전부 무한원점에 있는 사면체)에서 이 계산이 가장 깨끗하게 끝난다. 이상 사면체는 마주 보는 모서리의 이면각이 같고, 세 각 $\alpha,\beta,\gamma$ 가 $\alpha+\beta+\gamma=\pi$ 를 만족한다. 모양은 그 각들로 완전히 결정되고, 부피가
+**이상 사면체**(꼭짓점이 전부 무한원점에 있는 사면체)에서 이 계산이 가장 깨끗하게 끝난다[^1]. 이상 사면체는 마주 보는 모서리의 이면각이 같고, 세 각 $\alpha,\beta,\gamma$ 가 $\alpha+\beta+\gamma=\pi$ 를 만족한다. 모양은 그 각들로 완전히 결정되고, 부피가
 
 $$
 \mathrm{Vol}=\Lambda(\alpha)+\Lambda(\beta)+\Lambda(\gamma)
@@ -63,7 +63,7 @@ $$
 - **배각 공식.** $\Lambda(2\theta)=2\Lambda(\theta)+2\Lambda\big(\theta+\tfrac\pi2\big)$ 다. 이 관계가 여러 부피 항등식의 출처다.
 - **Fourier 급수.** $\Lambda(\theta)=\tfrac12\sum_{n\ge1}\frac{\sin 2n\theta}{n^2}$ 다. 수치 계산은 대개 이 급수로 한다.
 
-$\Lambda$ 는 이중로그 $\mathrm{Li}\_2$ 의 허수부와 같다. 정확히는 $\Lambda(\theta)=\tfrac12\mathrm{Im}\mathrm{Li}\_2(e^{2i\theta})$ 이고, 그래서 쌍곡 부피가 이중로그의 값으로 표현되는 현상(Bloch 군, Borel 조절자)의 가장 구체적인 사례가 된다.
+$\Lambda$ 는 이중로그 $\mathrm{Li}\_2$ 의 허수부와 같다[^2]. 정확히는 $\Lambda(\theta)=\tfrac12\mathrm{Im}\mathrm{Li}\_2(e^{2i\theta})$ 이고, 그래서 쌍곡 부피가 이중로그의 값으로 표현되는 현상(Bloch 군, Borel 조절자)의 가장 구체적인 사례가 된다.
 
 ## 사면체의 부피
 
