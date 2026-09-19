@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-09-18T20:58:17.878Z",
-  "nextSeq": 586,
+  "savedAt": "2026-09-19T01:01:14.399Z",
+  "nextSeq": 600,
   "items": [
     {
       "id": "a4a71183",
@@ -28,12 +28,12 @@
       "seq": 571
     },
     {
-      "id": "e6da6e95",
-      "title": "나열형 mermaid 가 남은 문서 훑기 (6차)",
+      "id": "212c06a3",
+      "title": "나열형 mermaid 가 남은 문서 훑기 (7차)",
       "priority": 40,
-      "note": "2026-09-18 네 번째 회차에 5차를 했다. 검사기는 스크래치패드 mermaid5.mjs 로 4 차 노트가 제안한 두 기준을 구현했다: A 화살표 라벨이 하나도 없고 노드 라벨이 전부 한 단어, B subgraph 없는 graph/flowchart LR 에 노드 3~5 개. 후보 22 건(A 4, B 18)을 전부 눈으로 판정했다. 지운 것 4 개: supersingular-isogeny-graphs(E 에서 이웃 l+1 개로 뻗는 부채꼴, 앞뒤 문장이 담고 있어 몫곡선 표기만 문장으로 옮김), schubert-calculus(Gr -> 세포 -> 다양체 -> 류 -> 곱 사슬, 뒤의 절들이 전부 담음), bayes(사전 x 우도 -> 정규화 -> 사후 계산 흐름, 바로 아래 문장이 축차 갱신까지 담음), beilinson-bernstein(범주 O -> D 가군 -> 편향층 -> KL 다항식 대응 사슬, Kazhdan-Lusztig 절이 담음). 남긴 것 18 개는 4 절이 허용하는 구조 도형이다: 가환도와 보편성질(category monads natural-transformations tensor-products kleisli-eilenberg-moore conditional-expectation manifolds), 함의 관계 그래프(expander-graphs fontaine-mazur), Hasse 도형과 확대의 탑(fields finite-fields), 실제 그래프나 트리의 예(dynamic-programming fermat-euler-theorem), 알고리즘의 두 경로 비교(deuring-correspondence). 판정을 보류하고 남긴 경계 사례 넷은 6 차에서 다시 볼 것: domain-theory(Kleene 사슬), error-correcting-codes(부호화-채널-복호 파이프라인), wkb-approximation(영역별 해와 연결), serre-conjecture(분기 -> 레벨/무게 -> 고유형식 두 경로). 이 두 기준으로 남은 후보는 없다. 다음 기준 후보: subgraph 를 쓰는 큰 그림 가운데 노드가 전부 절 제목인 것",
-      "createdAt": "2026-09-18T20:53:37.516Z",
-      "seq": 582
+      "note": "2026-09-19 회차에 6차를 했다. 5차가 보류한 경계 사례 넷을 전부 지웠다: domain-theory(Kleene 사슬), error-correcting-codes(부호화-채널-신드롬-복호 파이프라인), wkb-approximation(영역별 해와 연결), serre-conjecture 둘(레벨/무게 두 경로와 Khare-Wintenberger 증명 단계 순환). 각 경우 앞뒤 문단이나 뒤의 절이 그림의 내용을 그대로 담고 있음을 확인하고 지웠다. subgraph 를 쓰는 16 개도 훑어 둘을 표로 바꿨다(adeles 의 R 안의 Z 와 A_Q 안의 Q 평행 비교, p-adic-hodge-theory 의 네 주기환). 남긴 14 개는 가환도, 실제 그래프의 예, Hasse 도형, 자료구조 트리다. 같은 회차에 노드 라벨이 전부 서술문인 기준으로 airy-functions 의 정의 사슬(방정식 -> 표준형 -> 안장점 -> 세 경우)을 지우고 두 경우를 문장으로 옮겼다. 7차는 이 기준을 전수로 돌릴 차례다: mermaid 블록에서 노드 라벨에 <br/> 가 있고 라벨이 명사구가 아닌 서술문인 그래프. 후보 확인 중 발견한 것 하나를 고쳤다. mermaid 노드 라벨 안의 부등호(euler-systems 의 <loc_v c, loc_v s>)는 렌더러가 태그로 읽으므로 둥근 괄호로 바꿨고, 4절의 grep -n '<[a-zA-Z]' 가 잡는 306 건은 전부 mermaid 의 <br/> 라 오검출이다",
+      "createdAt": "2026-09-19T01:01:00.874Z",
+      "seq": 599
     },
     {
       "id": "700234d5",
@@ -52,36 +52,28 @@
       "seq": 549
     },
     {
-      "id": "33878de9",
-      "title": "'A와 B' 제목 177 개의 규격 판정",
+      "id": "5ddd9419",
+      "title": "'A와 B' 제목 후보의 규격 판정 (2차)",
       "priority": 20,
-      "note": "2026-09-18 두 번째 회차에 검사만 했다. 검사법은 4절의 grep 이 아니라 첫 줄 기준이어야 한다(grep -l '^# .*[와과] ' 는 모든 문서의 '# 연관 문서' 에 걸려 385 개를 낸다). for f in docs/*.md; do head -1 $f | grep -qE '^# .*[와과] ' && echo $f; done 으로 177 개다. 표본을 보면 대부분 4절이 예외로 둔 꼴이다: 정리 이름과 그 정리가 답하는 개념(algebraic-k-theory '대수적 K 이론과 Quillen–Lichtenbaum', axiom-of-choice '선택공리와 Zorn 보조정리', bernoulli-numbers), 한 개념의 두 이름이나 쌍(adeles '아델과 이델', borel-pade). 실제 위반은 파일명이 둘 중 하나만 가리키는 경우이므로 판정은 제목이 아니라 파일명 대조로 해야 한다. 후보 추출법: 제목을 '와/과' 로 갈라 두 조각을 만들고, 파일명 id 의 영문이 한쪽에만 대응하며 다른 쪽이 독립 문서가 될 만한 분량(그 주제의 절이 3 개 이상)인지 본다",
-      "createdAt": "2026-09-18T12:57:52.896Z",
-      "seq": 564
+      "note": "2026-09-19 회차에 후보 177 개를 전부 눈으로 훑었다. 검사법은 for f in docs/*.md; do head -1 $f | grep -qE '^# .*[와과] ' && echo $f; done 이다. 실제 위반으로 판정해 고친 것 넷: lattices(격자와 최단벡터 문제 -> 8절 분할, 새 문서 shortest-vector-problem), cardinality(가산성과 비가산성 -> 기수), airy-functions(Airy 함수와 회전점 -> Airy 함수), residue-theorem(Laurent 급수와 유수 정리 -> 유수 정리), lowenheim-skolem(Compactness 정리와 Löwenheim–Skolem 정리 -> Löwenheim–Skolem 정리). 판정 기준은 파일명 id 가 제목의 한쪽만 가리키고 다른 쪽이 문서의 절 하나나 둘에 그치는 경우다. 나머지 172 개는 4절이 예외로 둔 꼴이라 그대로 둔다: 정리 이름과 그 정리가 답하는 개념(sphere-packing, np-completeness, weyl-character-formula 등 다수), 한 개념의 두 이름이나 쌍(adeles 아델과 이델, eigenvalues 고윳값과 고유벡터), 대상과 그 대상을 규정하는 정리(riemann-surfaces, hyperbolic-3-manifolds). 남은 후보 하나: kl-divergence(KL divergence와 상호정보량)는 별도 큐 항목 05b73afa 로 있다. 제목을 바꿀 때마다 grep -rn '](<id>.md)' docs README.md 로 들어오는 라벨과 개관 지도 mermaid 의 노드 라벨을 함께 고쳐야 한다",
+      "createdAt": "2026-09-19T00:50:21.462Z",
+      "seq": 589
     },
     {
-      "id": "cc5b9b43",
-      "title": "lattices 의 제목을 파일명의 개념으로 좁힐지 판정",
+      "id": "d1ad9457",
+      "title": "리프 문서 후속 간선 훑기 (4차)",
       "priority": 20,
-      "note": "2026-09-18 세 번째 회차에 확인했다. docs/lattices.md 의 제목이 '격자와 최단벡터 문제' 인데 파일명은 격자만 가리킨다. 4절의 'A와 B' 규칙에서 최단벡터 문제(SVP, CVP, 근사판, 어려움)가 문서의 절 여럿을 차지하므로 8절 분할 후보로 볼 여지가 있다. 같은 회차에 만든 order-lattices(순서론의 격자)와 이름이 겹치지 않게, 분할하거나 제목을 좁힐 때 id 도 함께 볼 것",
-      "createdAt": "2026-09-18T16:47:10.457Z",
-      "seq": 572
+      "note": "2026-09-19 회차에 3차를 했다. 2차 노트가 남긴 새 주제 후보 넷 가운데 '절대연속과 유계변동' 을 bounded-variation 하나로 썼다(제목을 파일명의 개념으로 좁혀 'A와 B' 를 피했고 절대연속은 정의 절의 한 항목이다). 남은 후보 셋은 그대로다: Lipschitz 사상(analysis, uniform-continuity 아래), Montel 정리와 Riemann 사상 정리(complex_analysis), Peano 존재정리(analysis, ordinary-differential-equations 아래). 이번 회차에 새로 생긴 리프는 shortest-vector-problem 의 자식 자리(LWE, SIS)와 bounded-variation 이다",
+      "createdAt": "2026-09-19T00:52:32.564Z",
+      "seq": 592
     },
     {
-      "id": "6c348c06",
-      "title": "영문 용어가 섞인 범주론 문서 훑기",
+      "id": "9ab4be14",
+      "title": "영문 용어가 섞인 범주론 문서 훑기 (3차)",
       "priority": 20,
-      "note": "2026-09-18 네 번째 회차에 db0dba5f(여극한/쌍대극한)를 끝냈다. 여극한은 tensor-products 1 건뿐이었고 쌍대극한으로 고쳤다. 좌수반/우수반은 heyting-algebras 3 건이었고 왼쪽 수반/오른쪽 수반으로 고쳤다(700234d5 의 판정을 따랐다). 같은 문서 안에서 함자와 functor 가 섞이므로 tensor-products 의 functor 4 건도 함자로 옮겼다. 남은 후보: grep -ln 'functor\\|adjoint\\|adjunction' docs/*.md 로 나오는 문서 가운데 같은 문서에 한국어 표기가 함께 있는 것. unit/counit 은 monads 가 영문으로 쓰므로 영문을 유지한다",
-      "createdAt": "2026-09-18T20:47:58.221Z",
-      "seq": 578
-    },
-    {
-      "id": "a93f9446",
-      "title": "리프 문서 103 개의 후속 간선 훑기 (3차)",
-      "priority": 20,
-      "note": "2026-09-18 네 번째 회차에 2차를 했다. 노트가 실제 구멍으로 지목한 셋 가운데 uniform-continuity 를 메웠다: Arzelà–Ascoli 정리(arzela-ascoli)를 새로 쓰고 uniform-continuity 와 banach-spaces 를 부모로 달았다. 나머지 둘은 후속이 저장소에 없다는 판정이다. shortest-paths 는 network-flow 가 최단경로를 언급조차 하지 않아 간선 근거가 없고(최소비용흐름 문서가 생기면 다시 볼 것), spherical-harmonics 는 peter-weyl 과 weyl-character-formula 가 형제·조상이라 후속이 아니다. 새 주제 후보로 남은 것: 절대연속과 유계변동, Lipschitz 사상, Montel 정리와 Riemann 사상 정리, Peano 존재정리. 앞의 둘은 measure-theory, 뒤의 둘은 complex-analysis 와 analysis 가 붙을 자리다",
-      "createdAt": "2026-09-18T20:50:49.770Z",
-      "seq": 579
+      "note": "2026-09-19 회차에 2차를 했다. functor -> 함자, adjunction -> 수반, left/right adjoint -> 왼쪽/오른쪽 수반 으로 고친 문서 10 개: natural-transformations(18건), kleisli-eilenberg-moore(14), monads, category, limits-colimits, modules, dual-space, fundamental-group, connectedness, category-theory-overview. 남긴 영문은 monad 와 unit/counit(monads 가 영문으로 쓴다는 700234d5 의 판정), 정리 이름(RAPL = right adjoints preserve limits, Freyd adjoint functor theorem), nLab URL, Yoneda lemma 다. 주의: sed 로 일괄 치환할 때 링크 주소 functors.md 가 함께 바뀌어 [함자](함자s.md) 가 되는 사고가 났다. functors.md 를 자리표시자로 보호한 뒤 치환하고, 치환 후 '함자 를', '함자 가', '수반 이' 같은 띄어쓰기 잔여를 grep 으로 확인해야 한다. 3차 후보: grep -ln 'morphism|isomorphism|natural transformation' 으로 남은 영문 용어를 본다",
+      "createdAt": "2026-09-19T00:55:08.049Z",
+      "seq": 593
     },
     {
       "id": "a393c19c",
@@ -148,14 +140,6 @@
       "seq": 512
     },
     {
-      "id": "05b73afa",
-      "title": "kl-divergence 의 제목을 좁히거나 상호정보량을 분리할지 검토",
-      "priority": 12,
-      "note": "2026-09-17 여섯 번째 회차 신설. 제목이 'KL divergence와 상호정보량' 인데 파일명은 kl-divergence 다. 4절 제목 규칙의 세 번째 경우(파일명이 둘 중 하나만 가리킴)일 수 있다. 상호정보량은 I(X;Y)=D(P_XY||P_X P_Y) 로 KL 의 특수 사례라 한 문서로 볼 여지도 있지만, 문서에 '## 상호정보량', '## 상호정보량의 성질', '## 특징 선택과 표현 학습' 세 절이 있어 독립 문서가 될 만하다. 나누면 mutual-information 이 kl-divergence 의 자식이 되고, entropy 와 data-processing 쪽 간선을 어디로 돌릴지 함께 정해야 한다. 현재 170 줄이라 1000 줄 기준으로는 나눌 이유가 없으니 제목을 좁히는 쪽이 가벼운 선택이다",
-      "createdAt": "2026-09-17T20:51:37.949Z",
-      "seq": 515
-    },
-    {
       "id": "0af77e68",
       "title": "이번 회차에 보강한 26 개 문서의 4절 문체 회귀 점검",
       "priority": 12,
@@ -170,14 +154,6 @@
       "note": "2026-09-18 회차에 큐의 '수치 확인 코드가 남은 문서 9 개' 를 소진했다. 처리: chern-simons(Gauss 이음수 적분 코드를 지우고 lk 값 세 개와 차수 사상 해석만 산문으로), kedlaya-algorithm(브루트포스 a_p 대조를 지우고 Hasse 불변량+Weil 복원을 코드 하나로 합침), lobachevsky-function(급수와 적분 대조 절 삭제, Fourier 급수는 정의 절 성질로 올림), pairing-based-cryptography(Miller 알고리즘은 남기고 쌍선형성 True 표와 on_curve 삭제), post-quantum-cryptography(Regev 복호 2000 회 시뮬레이션을 mB/2 < q/4 잡음 예산 부등식으로 교체), reidemeister-torsion(렌즈 공간 비교를 마크다운 표로), sea-algorithm(a_p_count 브루트포스와 '일치' 열 삭제, on/assert 제거), unbalanced-optimal-transport(Sinkhorn 실험을 문장으로). borel-pade 는 Pade 계산이 곧 알고리즘이라 (2) 판정으로 손대지 않았다. 검사법을 다시 돌리면 2 건이 남는데 둘 다 오검출이다: borel-pade 의 '작용 차이 A = 2'(차이), sea-algorithm 의 CRT 종료 조건 출력 'M > 4√p : False'(False). 다음 회차에는 코드펜스 안이 아니라 산문에서 검증투('확인해 보자', '직접 확인', '~와 일치한다')를 찾는 쪽으로 옮겨야 한다",
       "createdAt": "2026-09-18T00:43:45.050Z",
       "seq": 525
-    },
-    {
-      "id": "0bba4575",
-      "title": "태그가 분야 하나뿐인 문서 회귀 점검",
-      "priority": 12,
-      "note": "2026-09-18 회차에 42 개를 모두 채워 0 이 되었다. 6절대로 활용 절에서 실제로 쓰거나 응용되는 분야만 근거로 삼고 첫 태그(주 분야)는 바꾸지 않았다. 첫 태그를 바꾸면 4.5절 개관 갈래의 소속이 달라지므로 그때는 개관도 함께 고쳐야 한다. 새 문서나 보강 문서가 태그 하나로 들어오는지 회차마다 다음으로 본다: for f in docs/*.md; do [ $(tail -1 $f | grep -o '#[a-z0-9_]*' | wc -l) -le 1 ] && echo $f; done. 태그 수는 35 개로 늘지 않았고 untagged 0 이다",
-      "createdAt": "2026-09-18T00:55:42.864Z",
-      "seq": 530
     },
     {
       "id": "468c4958",
@@ -202,14 +178,6 @@
       "note": "'## 쓰이는 자리', '## 계산되는 예', '## 응용되는 정리들' 같은 헤딩이 여러 문서의 활용 절에 있다. 4절은 헤딩을 개념 이름으로 요구하지만 활용 절은 성격상 개념 하나를 가리키지 않는다. 후보 검사: grep -n '^## (쓰이는 자리|쓰임|계산되는 예|응용되는 정리들|이 틀의 쓰임)' docs/*.md. 규격을 좁게 읽으면 활용 절의 H2 를 없애고 목록만 두는 것이 맞고, 넓게 읽으면 그대로 둔다. 독자의 판단이 필요한 항목이라 이번 회차에는 손대지 않았다",
       "createdAt": "2026-09-18T08:54:53.434Z",
       "seq": 550
-    },
-    {
-      "id": "5bfe6aab",
-      "title": "개관 갈래 누락 회귀 점검",
-      "priority": 12,
-      "note": "2026-09-18 회차에 다시 돌려 누락 0 을 확인했다. 검사법: 분야 태그마다 개관 id 를 연관배열로 두고, 첫 태그가 그 분야인 문서 id 가 개관 본문에 '(id.md)' 로 나오는지 본다. 보고 16 건은 전부 개관이 자기 자신을 링크하지 않는다는 오검출이므로 id != 개관 id 조건을 넣으면 0 이다. 이번 회차에 새로 쓴 dual-space, perron-frobenius, exterior-algebra(선형대수), polya-enumeration(조합론)은 각 개관 갈래에 넣었다. 태그가 하나뿐인 문서도 0 이다",
-      "createdAt": "2026-09-18T08:58:39.094Z",
-      "seq": 552
     },
     {
       "id": "432b29ca",
@@ -268,14 +236,6 @@
       "seq": 570
     },
     {
-      "id": "33bd27a7",
-      "title": "4절 금지 표현 grep 회귀 점검 (다음 차수)",
-      "priority": 12,
-      "note": "2026-09-18 세 번째 회차에 '여기서 나온다' 14 건을 전부 고쳤다(derivative dilworth-theorem first-order-logic functors godement-jacquet groups hilbert-spaces index-theorem intuitionism kahler-manifolds langlands-program lobachevsky-function proofs tate-thesis). 고친 방식은 지시어를 없애고 무엇에서 따라오는지를 명시하는 것이다. 이 회차에 돌린 grep 은 다음 하나다: grep -rnoE '이 (비대칭|대응|일치|성질)은 우연이 아니|놀랍지 않다|흥미롭게도|놀랍게도|에 다름 아니다|에 지나지 않는다|짚고 넘어가|기억하자|주목할 것은|강조할 점이|다음이 핵심이다|해 보자|생각해 보면|인 셈이다|말해 준다|의 출발점이다|여기서 나온다|이 점이 중요하다' docs/*.md. '여기서 나온다' 외에는 0 건이었다. 아직 안 돌린 4절 표현: '이기 때문이다' 로 앞 문장을 다시 설명하는 꼴, '본질적으로', '자연스럽게', '직관적으로 말하면', '이것이 바로', '이는 곧', '다시 말해', '말하자면', '라는 사실은', '라는 것이 밝혀졌다', 독자를 부르는 '우리'. 이것들은 오검출이 많으므로(자연스럽다/자연변환, 우리는 인용 안) 한 표현씩 세어 보고 들어갈 것",
-      "createdAt": "2026-09-18T16:48:31.216Z",
-      "seq": 573
-    },
-    {
       "id": "39c24d20",
       "title": "수식 다섯 경로 전수 점검 회귀 (3차)",
       "priority": 12,
@@ -314,6 +274,62 @@
       "note": "2026-09-18 네 번째 회차에 검사했다. 4 절은 '닫는 $ 뒤에는 공백 1 개를 둔다' 고 하는데, 그것을 어긴 자리가 31 곳이다. 문자 분포는 쉼표 27, 닫는 괄호 2, 하이픈 1, 마침표 1 로 전부 문장부호이고 영숫자나 한글이 바로 오는 사례는 0 이다. KaTeX 점검에서 오류가 나지 않고 GitHub 도 $x$, 를 정상 렌더하므로 렌더 사고는 없다. 규칙을 문자 그대로 적용해 31 곳에 공백을 넣을지, 문장부호를 예외로 두고 4 절 문구를 '뒤에 영숫자나 한글이 오면 공백을 둔다' 로 읽을지는 독자의 판단이다. 검사기는 스크래치패드 spacecheck.mjs 다(코드펜스와 $$ 블록과 인라인 코드를 건너뛰고 인라인 $...$ 다음 한 글자를 본다). 문서 목록은 peano-axioms perron-frobenius polya-enumeration riemann-roch uniform-integrability weierstrass-factorization 등이다",
       "createdAt": "2026-09-18T20:58:11.086Z",
       "seq": 585
+    },
+    {
+      "id": "7480e5e6",
+      "title": "shortest-vector-problem 의 후속 간선 보강",
+      "priority": 12,
+      "note": "2026-09-19 회차에 lattices 를 8절대로 나눴다. lattices 는 제목을 '격자' 로 좁히고 계산 문제와 어려움 절을 새 문서 shortest-vector-problem(최단벡터 문제, 103줄)으로 옮겼다. 부모는 lattices 하나, 자식은 post-quantum-cryptography 하나이고 lattices -> post-quantum-cryptography 간선은 그 사이에 SVP 가 들어와 지웠다. 개관 셋(computation cryptography linear-algebra)의 갈래와 지도 mermaid, 링크 라벨 9 곳을 새 제목에 맞췄다. 후속 후보: 오류 있는 학습(LWE)과 짧은 정수해(SIS)가 각자 문서가 될 만하고 둘 다 SVP 의 자식 자리다. 격자 열거와 체 알고리즘, BKZ 도 계산 쪽 후속이다",
+      "createdAt": "2026-09-19T00:44:41.782Z",
+      "seq": 587
+    },
+    {
+      "id": "7c8e6304",
+      "title": "lowenheim-skolem 의 후속 간선",
+      "priority": 12,
+      "note": "리프 문서다. 모형론(기본 부분구조, 초곱, 범주성, 안정성 이론)이나 비표준 해석학 문서가 생기면 그 부모 자리다. 본문의 Morley 정리, Tennenbaum 정리, Lindström 정리가 후속 주제 후보다. 분야는 logic",
+      "createdAt": "2026-09-19T00:50:21.580Z",
+      "seq": 590
+    },
+    {
+      "id": "e14ced57",
+      "title": "lipschitz-maps 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-19 회차에 새로 썼다(부모 uniform-continuity, 해석학 개관 '극한과 연속' 갈래). 리프다. 후속 후보: Rademacher 정리(거의 어디서나 미분가능, 단독 문서가 될 분량), McShane/Kirszbraun 확장, Hölder 연속과 Sobolev 매장. banach-fixed-point 는 본문 링크로만 걸었고 간선은 긋지 않았다. 그 문서의 부모가 completeness 계열이라 Lipschitz 를 부모로 더하면 부모가 셋이 된다. 다음 회차에 그 간선이 5절 기준에 맞는지 볼 것",
+      "createdAt": "2026-09-19T00:56:52.514Z",
+      "seq": 594
+    },
+    {
+      "id": "5f74192f",
+      "title": "개관 갈래 누락 회귀 점검",
+      "priority": 12,
+      "note": "2026-09-19 회차에 개관 21 개 전부를 for 문으로 훑어 누락 0 을 확인했다. 검사법은 4.5절의 스크립트를 태그별로 돌리는 것이다: 문서의 태그 줄 첫 태그가 그 분야이면 해당 개관에 (id.md) 링크가 있어야 한다. 유일한 보고는 개관 문서 자신이 자기 갈래에 없다는 오검출 21 건이므로 다음 회차에는 id 가 -overview 로 끝나는 문서를 걸러야 한다. foundations-overview 는 logic 과 set_theory 두 태그를 함께 받는다. 이번 회차에 더한 세 문서(shortest-vector-problem, bounded-variation, lipschitz-maps)는 각각 computation, measure_theory, analysis 개관 갈래에 넣었다",
+      "createdAt": "2026-09-19T00:58:08.181Z",
+      "seq": 595
+    },
+    {
+      "id": "e704bfd9",
+      "title": "태그가 분야 하나뿐인 문서 회귀 점검",
+      "priority": 12,
+      "note": "2026-09-19 회차에 확인했다. for f in docs/*.md; do n=$(tail -1 $f | grep -o '#[a-z0-9_]*' | wc -l); [ $n -le 1 ] && echo $f; done 이 아무것도 내놓지 않는다. 태그가 하나뿐인 문서는 없다. 이번 회차에 lowenheim-skolem 을 #logic #theorem 에서 #logic #set_theory #foundations #theorem 으로 채웠다(성격 태그 #theorem 만 있으면 분야가 하나인 문서다). 다음 점검에서는 분야 태그만 세도록 성격 태그(theorem construction example paper overview)를 빼고 세는 편이 낫다",
+      "createdAt": "2026-09-19T00:58:08.421Z",
+      "seq": 596
+    },
+    {
+      "id": "16a79ee6",
+      "title": "4절 금지 표현 grep 회귀 점검 (다음 차수)",
+      "priority": 12,
+      "note": "2026-09-19 회차에 전수로 돌려 위반 0 을 확인했다. 돌린 grep 넷: 문학적 비유 목록(은탄환 사다리 열쇠 씨앗 뼈대 심장 지름길 함정 공짜 무기 마법 등), 열린 문제 절 이름과 뭉뚱그린 범위 표현, 코드블록 언어(javascript typescript mermaid js ts 외), 금지 매크로(operatorname bm newcommand def). 비유 grep 의 보고 5 건은 전부 4절이 예외로 둔 용어다: Montgomery 사다리(elliptic-curves), 사다리 연산자(lie-algebras), 함정문 trapdoor(post-quantum-cryptography), Viazovska 의 마법함수(theta-functions). 영문 번역체·예고문 grep 의 보고 6 건도 전부 '식을 정리하면' 이라는 수식 조작이라 오검출이다(gradient-descent jacquet-langlands linear-regression probabilistic-method quadratic-reciprocity weyl-character-formula). 다음 차수 후보: '~이기 때문이다' 로 앞 문장을 되풀이하는 문장, 조언투('알고 쓰기'), 독자 호칭",
+      "createdAt": "2026-09-19T00:58:08.655Z",
+      "seq": 597
+    },
+    {
+      "id": "0e4525c0",
+      "title": "상호정보량을 kl-divergence 에서 분리할지 판정",
+      "priority": 12,
+      "note": "2026-09-19 회차에 제목만 'KL divergence' 로 좁혔다(05b73afa 해소). 상호정보량은 결합분포와 곱분포 사이의 divergence 로 정의되므로 KL 의 특수 사례이고, 그래서 8절 분할 대신 문서 안에 남겼다. 다만 상호정보량 관련 절이 셋(정의 20줄, 성질 20줄, 활용 7줄)이라 분량으로는 독립 문서가 될 수 있다. 분할한다면 id 는 mutual-information, 부모는 kl-divergence 이고, 조건부 상호정보량, 데이터 처리 부등식, 채널 용량, InfoNCE 를 더해 쓸 자리가 있다. 채널 용량은 information-theory-overview 의 갈래에 문서가 없는 자리이기도 하다",
+      "createdAt": "2026-09-19T00:59:27.312Z",
+      "seq": 598
     },
     {
       "id": "c535c656",
@@ -882,6 +898,22 @@
       "note": "해석학. arzela-ascoli 의 활용 절 첫 항목이 Peano 존재정리의 논증이다. Lipschitz 조건을 쓰는 Picard–Lindelöf 와 대비해 쓸 것. 부모 후보는 arzela-ascoli 와 banach-fixed-point",
       "createdAt": "2026-09-18T20:50:49.998Z",
       "seq": 581
+    },
+    {
+      "id": "505dd346",
+      "title": "오류 있는 학습(LWE) 문서",
+      "priority": 10,
+      "note": "분야는 computation/cryptography. 부모는 shortest-vector-problem. 최악 경우 GapSVP, SIVP 에서 평균 경우로 가는 Regev 의 양자 환산, 잡음 분포와 파라미터, 격자 암호와 완전동형암호의 공통 가정. post-quantum-cryptography 와 homomorphic-encryption 이 본문에서 LWE 를 언급만 하고 있다",
+      "createdAt": "2026-09-19T00:44:41.902Z",
+      "seq": 588
+    },
+    {
+      "id": "89c5bd52",
+      "title": "유계변동 함수의 후속 문서",
+      "priority": 10,
+      "note": "2026-09-19 회차에 bounded-variation 을 새로 썼다(부모 derivative, lebesgue-integral, 측도론 개관 갈래 '측도 사이의 비교'). 리프이고 후속 후보가 셋이다: Lebesgue 미분정리(증가함수가 거의 어디서나 미분가능, Vitali 덮개 보조정리), Riemann-Stieltjes 적분과 Riesz 표현정리(C[a,b] 의 쌍대공간), Cantor 함수와 특이 측도. 앞의 둘은 measure_theory, 셋째는 예시 문서다. 본문이 전부 이름만 쓰고 링크가 없다",
+      "createdAt": "2026-09-19T00:52:32.439Z",
+      "seq": 591
     },
     {
       "id": "dfb3e493",
