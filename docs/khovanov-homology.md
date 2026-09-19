@@ -53,7 +53,7 @@ $$
 \Delta(1)=1\otimes X+X\otimes1,\qquad \Delta(X)=X\otimes X
 $$
 
-$A$ 는 $H^\ast(S^2)$ 와 같은 꼴이다. 원 몇 개가 합쳐지고 갈라지는 것은 2 차원 cobordism 이므로, 원의 모임에 벡터공간을 cobordism 에 사상을 붙이는 일은 1+1 차원 TQFT 를 고르는 일이다. 1+1 차원 TQFT 는 가환 Frobenius 대수와 같고, Khovanov 의 $A$ 는 그중 가장 작은 비자명한 것이다. 면에 해당하는 두 cobordism 이 동위이므로 정육면체의 면이 가환이다.
+$A$ 는 $H^\ast(S^2)$ 와 같은 꼴이다. 원 몇 개가 합쳐지고 갈라지는 것은 2 차원 cobordism 이므로, 원의 모임에 벡터공간을 cobordism 에 사상을 붙이는 일은 1+1 차원 **TQFT**(topological quantum field theory)를 고르는 일이다. 1+1 차원 TQFT 는 가환 Frobenius 대수와 같고, Khovanov 의 $A$ 는 그중 가장 작은 비자명한 것이다. 면에 해당하는 두 cobordism 이 동위이므로 정육면체의 면이 가환이다.
 
 ## Euler 지표
 
