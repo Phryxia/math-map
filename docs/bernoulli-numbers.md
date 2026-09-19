@@ -2,7 +2,7 @@
 
 # 개요
 
-Bernoulli 수 $B_j$ 는 거듭제곱의 합을 닫힌 꼴로 쓸 때 나타나는 유리수열이다.
+Bernoulli 수 $B_j$ 는 거듭제곱의 합을 닫힌 꼴로 쓸 때 나타나는 유리수열이다[^1].
 
 $$
 \sum_{a=0}^{n-1}a^{k}=\frac1{k+1}\sum_{j=0}^{k}\binom{k+1}{j}B_j\thinspace n^{\thinspace k+1-j}
