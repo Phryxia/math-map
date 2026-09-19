@@ -62,13 +62,13 @@ PCP 의 검사자는 증명의 몇 비트만 읽고 판정한다. 증명을 부�
 - 독재자라면 반드시 통과해야 한다(완전성).
 - 좌표 몇 개에 의존하지 않는 함수는 낮은 확률로만 통과해야 한다(건전성).
 
-두 조건을 잡음 안정성으로 쓰면 영향력이 모두 작은 함수의 안정성 상한이 필요하다. Majority is Stablest 가 그 상한을 $1-\frac2\pi\arccos\rho$ 로 주고, 이 값이 Goemans–Williamson 의 [반정부호 계획법](semidefinite-programming.md) 근사비 $0.878\ldots$ 와 일치한다.
+두 조건을 잡음 안정성으로 쓰면 영향력이 모두 작은 함수의 안정성 상한이 필요하다. Majority is Stablest 가 그 상한을 $1-\frac2\pi\arccos\rho$ 로 주고[^4], 이 값이 Goemans–Williamson 의 [반정부호 계획법](semidefinite-programming.md) 근사비 $0.878\ldots$ 와 일치한다.
 
 # 정의
 
 ## Fourier 전개
 
-정의역 $\lbrace-1,1\rbrace^n$ 에 균등분포를 주고 내적을 $\langle f,g\rangle=\mathbb E_x[f(x)g(x)]$ 로 둔다. 지표 $\chi_S(x)=\prod_{i\in S}x_i$ 는 정규직교기저를 이루고
+정의역 $\lbrace-1,1\rbrace^n$ 에 균등분포를 주고[^1] 내적을 $\langle f,g\rangle=\mathbb E_x[f(x)g(x)]$ 로 둔다. 지표 $\chi_S(x)=\prod_{i\in S}x_i$ 는 정규직교기저를 이루고
 
 $$
 f=\sum_{S\subseteq[n]}\hat f(S)\thinspace\chi_S,\qquad \hat f(S)=\mathbb E_x\bigl[f(x)\chi_S(x)\bigr]
@@ -100,11 +100,11 @@ $$
 \Vert T_\rho f\Vert_q\le\Vert f\Vert_p
 $$
 
-이다. 특히 준위 $k$ 이하의 함수에 대해 $\Vert f\Vert_4\le\sqrt3^{\thinspace k}\Vert f\Vert_2$ 가 나온다. 저차 다항식의 값이 크게 흩어질 수 없다는 뜻이며, 이 분야의 해석적 논법이 이 부등식에서 나온다. KKL(Kahn–Kalai–Linial) 정리의 증명도 이것을 쓴다.
+이다. 특히 준위 $k$ 이하의 함수에 대해 $\Vert f\Vert_4\le\sqrt3^{\thinspace k}\Vert f\Vert_2$ 가 나온다. 저차 다항식의 값이 크게 흩어질 수 없다는 뜻이며, 이 분야의 해석적 논법이 이 부등식에서 나온다. KKL(Kahn–Kalai–Linial) 정리[^3]의 증명도 이것을 쓴다.
 
 ## Majority is Stablest
 
-**정리(Mossel–O'Donnell–Oleszkiewicz, 2010).** $\rho\in[0,1)$ 과 $\varepsilon\gt 0$ 에 대해 $\tau\gt 0$ 이 있어, $\mathbb E[f]=0$ 이고 모든 $i$ 에서 $\mathrm{Inf}\_i[f]\le\tau$ 이면
+**정리(Mossel–O'Donnell–Oleszkiewicz, 2010)**[^2]**.** $\rho\in[0,1)$ 과 $\varepsilon\gt 0$ 에 대해 $\tau\gt 0$ 이 있어, $\mathbb E[f]=0$ 이고 모든 $i$ 에서 $\mathrm{Inf}\_i[f]\le\tau$ 이면
 
 $$
 \mathrm{Stab}\_\rho[f]\thickspace\le\thickspace 1-\frac2\pi\arccos\rho+\varepsilon

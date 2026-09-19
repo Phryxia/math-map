@@ -28,7 +28,7 @@ Reidemeister 의 정리가 이 대응을 통제한다. 두 도식이 같은 매�
 
 ## Kauffman 괄호
 
-교차점 하나를 골라 위아래 정보를 지우고 두 가지 방식으로 이어 붙인다.
+교차점 하나를 골라 위아래 정보를 지우고 두 가지 방식으로 이어 붙인다[^2].
 
 $$
 \text{교차}\ \longmapsto\ A\cdot(\text{A-이음})\thickspace+\thickspace A^{-1}\cdot(\text{B-이음})
@@ -125,11 +125,11 @@ $$
 
 ## 작용소대수와의 관계
 
-Jones 는 $\mathrm{II}\_1$ 인자의 부분인자 지표를 연구하다 Temperley–Lieb 대수의 자취 함수에서 이 불변량을 얻었다. 땋임군 $B_n$ 의 표현이 Temperley–Lieb 대수를 거쳐 나오고 땋임의 닫힘이 링크를 주므로(Alexander 정리) 자취가 링크 불변량이 된다. 지표가 $4$ 아래에서 $4\cos^2(\pi/n)$ 값만 가진다는 정리와 $\delta=-A^2-A^{-2}$ 의 제약이 같은 사실을 달리 쓴 것이다.
+Jones 는[^1] $\mathrm{II}\_1$ 인자의 부분인자 지표를 연구하다 Temperley–Lieb 대수의 자취 함수에서 이 불변량을 얻었다. 땋임군 $B_n$ 의 표현이 Temperley–Lieb 대수를 거쳐 나오고 땋임의 닫힘이 링크를 주므로(Alexander 정리) 자취가 링크 불변량이 된다. 지표가 $4$ 아래에서 $4\cos^2(\pi/n)$ 값만 가진다는 정리와 $\delta=-A^2-A^{-2}$ 의 제약이 같은 사실을 달리 쓴 것이다.
 
 ## Chern–Simons 이론에서의 해석
 
-Witten 은 1989 년에 $V$ 를 3 차원 Chern–Simons 이론의 Wilson 고리 기댓값으로 해석했다. 이 관점에서 Jones 다항식은 3 차원 다양체의 불변량이고 $t$ 는 준위 $k$ 의 $1$ 의 거듭제곱근이다. Reshetikhin–Turaev 가 이 그림을 수학적으로 구성했고 필요한 대수적 입력이 [모듈러 텐서범주](modular-tensor-categories.md)다. Jones 다항식은 그 구성을 $\mathfrak{sl}\_2$ 의 준위 $1$ 에 적용한 결과다.
+Witten 은 1989 년에[^3] $V$ 를 3 차원 Chern–Simons 이론의 Wilson 고리 기댓값으로 해석했다. 이 관점에서 Jones 다항식은 3 차원 다양체의 불변량이고 $t$ 는 준위 $k$ 의 $1$ 의 거듭제곱근이다. Reshetikhin–Turaev 가 이 그림을 수학적으로 구성했고 필요한 대수적 입력이 [모듈러 텐서범주](modular-tensor-categories.md)다. Jones 다항식은 그 구성을 $\mathfrak{sl}\_2$ 의 준위 $1$ 에 적용한 결과다.
 
 ## 계산 복잡도
 

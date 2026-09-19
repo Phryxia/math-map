@@ -71,7 +71,7 @@ $$
 \mathrm{End}\_{G}(\bar\rho)=\mathbb F_p\qquad(\text{예컨대 }\bar\rho\ \text{가 절대기약})
 $$
 
-이 조건이 있으면 Schlessinger 의 판정이 통과하고 $R_{\bar\rho}$ 가 존재한다. 없으면 기저까지 기억하는 **틀 붙인 변형**을 쓴다. 틀 변형 함자는 언제나 표현가능하고 $\mathrm{PGL}\_n$ 만큼 차원이 늘어난 $R^{\square}\_{\bar\rho}$ 를 준다. Kisin 이 국소 조건을 다룰 때 쓰는 것이 이쪽이다.
+이 조건이 있으면 Schlessinger 의 판정[^2]이 통과하고 $R_{\bar\rho}$ 가 존재한다. 없으면 기저까지 기억하는 **틀 붙인 변형**을 쓴다. 틀 변형 함자는 언제나 표현가능하고 $\mathrm{PGL}\_n$ 만큼 차원이 늘어난 $R^{\square}\_{\bar\rho}$ 를 준다. Kisin 이 국소 조건을 다룰 때 쓰는 것이 이쪽이다.
 
 # 정의
 
@@ -130,7 +130,7 @@ $$
 
 - **$S$ 밖 비분기**: $G_{\mathbb Q,S}$ 를 쓰는 것으로 반영된다.
 - **행렬식 고정**: $\det\rho=\chi^{k-1}\cdot(\text{유한 지표})$ 를 요구한다.
-- **$p$ 자리의 국소 조건**: 평탄, 결정적, 반안정, 또는 Hodge–Tate 무게를 지정한 것. [Fontaine–Mazur](fontaine-mazur.md) 의 de Rham 조건을 변형환의 언어로 옮긴 것이다.
+- **$p$ 자리의 국소 조건**: 평탄, 결정적, 반안정, 또는 Hodge–Tate 무게를 지정한 것. [Fontaine–Mazur](fontaine-mazur.md) 의 de Rham 조건을 변형환의 언어로 옮긴 것이다[^4].
 - **$\ell\ne p$ 자리의 국소 조건**: 도체의 형태를 지정한다.
 
 각 조건은 국소 틀 변형환 $R^{\square}\_v$ 의 닫힌 부분스킴에 대응하고 전역 변형환은 그 교차로 잘린다. Kisin 은 $p$ 자리 국소 틀 변형환의 기약 성분을 분류했고, 그 성분들이 $p$ 진 국소 Langlands 대응의 표현론적 자료와 맞물려 모듈러성 올림 정리의 국소 입력이 되었다.
@@ -147,7 +147,7 @@ $$
 
 을 준다. 모듈러성은 이 사상의 전사성에 해당하고 **$R=T$ 정리**는 동형이라는 주장이다. 동형이면 조건을 만족하는 $\bar\rho$ 의 모든 변형이 모듈러다.
 
-Wiles 와 Taylor 의 증명은 수치 판정을 쓴다. $R$ 이 완전교차이고 $\mathbb T$ 의 합동 가군의 크기가 $R$ 의 여접공간 크기와 맞으면 동형이라는 가환대수 보조정리를 만들고, Taylor–Wiles 계가 그 조건을 공급한다. 보조 소수를 무한히 붙였다 극한을 취해 $R$ 을 $\Lambda[[x_1,\dots,x_g]]$ 위에서 통제하는 패칭 논법이며, Diamond, Fujiwara, Kisin, Calegari–Geraghty 를 거쳐 $\mathrm{GL}\_n$ 과 수체로 확장되었다.
+Wiles 와 Taylor 의 증명[^3]은 수치 판정을 쓴다. $R$ 이 완전교차이고 $\mathbb T$ 의 합동 가군의 크기가 $R$ 의 여접공간 크기와 맞으면 동형이라는 가환대수 보조정리를 만들고, Taylor–Wiles 계가 그 조건을 공급한다. 보조 소수를 무한히 붙였다 극한을 취해 $R$ 을 $\Lambda[[x_1,\dots,x_g]]$ 위에서 통제하는 패칭 논법이며, Diamond, Fujiwara, Kisin, Calegari–Geraghty 를 거쳐 $\mathrm{GL}\_n$ 과 수체로 확장되었다.
 
 ## 장애 없는 변형
 
