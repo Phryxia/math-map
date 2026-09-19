@@ -151,7 +151,7 @@ $$
 \mathrm{ch}\thinspace L_w=\sum_{x\le w}(-1)^{\ell(w)-\ell(x)}P_{x,w}(1)\thinspace\mathrm{ch}\thinspace M_x
 $$
 
-$M_x$ 는 Verma 가군이다. Beilinson–Bernstein 과 Brylinski–Kashiwara 가 1981 년에 독립적으로 증명했고 요지는 국소화다. 리 대수 가군의 범주를 깃발다양체 위 $\mathcal D$ 가군의 범주와 동치로 만든 뒤 Riemann–Hilbert 대응으로 편향층으로 옮기면 지표 계수가 IC 층의 줄기 차원이 되고, 기하 쪽에서는 Deligne 의 순수성 정리가 결론을 준다.
+$M_x$ 는 Verma 가군이다. Beilinson–Bernstein 과 Brylinski–Kashiwara 가 1981 년에 독립적으로 증명했고 요지는 국소화다. 리 대수 가군의 범주를 깃발다양체 위 $\mathcal D$ 가군의 범주와 동치로 만든 뒤 Riemann–Hilbert 대응으로 편향층으로 옮기면 지표 계수가 IC(intersection cohomology) 층의 줄기 차원이 되고, 기하 쪽에서는 Deligne 의 순수성 정리가 결론을 준다.
 
 ## 계수의 양수성
 
@@ -175,7 +175,7 @@ $P_{x,w}$ 의 계산은 $\char35{}\mathrm P$ 난해로 여겨진다. 재귀가 B
 
 ## 기약 지표의 계산
 
-범주 $\mathcal O$ 와 유한 Chevalley 군의 지표표에서 Weyl 지표 공식이 주지 못하는 자리를 KL 다항식이 채운다. $\mathcal O$ 의 사영가군 $P_x$ 의 Verma 여과 중복도가 $[P_x:M_w]=P_{x,w}(1)$ 이라는 BGG 상반성이 있어, 다항식 표 하나가 지표, 사영분해, Ext 군을 동시에 준다.
+범주 $\mathcal O$ 와 유한 Chevalley 군의 지표표에서 Weyl 지표 공식이 주지 못하는 자리를 KL 다항식이 채운다. $\mathcal O$ 의 사영가군 $P_x$ 의 Verma 여과 중복도가 $[P_x:M_w]=P_{x,w}(1)$ 이라는 BGG(Bernstein–Gelfand–Gelfand) 상반성이 있어, 다항식 표 하나가 지표, 사영분해, Ext 군을 동시에 준다.
 
 ## Schubert 다양체의 기하
 
@@ -183,7 +183,7 @@ $X_w$ 의 특이점 판정, 국소 교차 코호몰로지, 유리 매끄러움 �
 
 ## 정준기저의 원형
 
-양자군 $U_q(\mathfrak g)$ 의 정준기저(Lusztig), 결정기저(Kashiwara), KLR 대수의 범주화가 자기쌍대성과 삼각성으로 기저를 고정하는 KL 의 도식을 따른다. 그 기저들의 구조상수가 음이 아닌 정수라는 것도 적절한 범주에서 대상의 차원으로 실현해 증명된다. KL 다항식이 이 방법론이 처음 작동한 자리다.
+양자군 $U_q(\mathfrak g)$ 의 정준기저(Lusztig), 결정기저(Kashiwara), KLR(Khovanov–Lauda–Rouquier) 대수의 범주화가 자기쌍대성과 삼각성으로 기저를 고정하는 KL 의 도식을 따른다. 그 기저들의 구조상수가 음이 아닌 정수라는 것도 적절한 범주에서 대상의 차원으로 실현해 증명된다. KL 다항식이 이 방법론이 처음 작동한 자리다.
 
 ## 범주화라는 관점
 

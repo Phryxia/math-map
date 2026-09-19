@@ -34,8 +34,8 @@ $$
 
 | 채널 | 동작 | 용량 |
 |---|---|---|
-| 이진 대칭 채널 BSC($p$ ) | 확률 $p$ 로 비트가 뒤집힘 | $1-h(p)$ |
-| 이진 소거 채널 BEC( $\varepsilon$ ) | 확률 $\varepsilon$ 로 비트가 지워짐 | $1 - \varepsilon$ |
+| 이진 대칭 채널(binary symmetric channel, BSC) $\mathrm{BSC}(p)$ | 확률 $p$ 로 비트가 뒤집힘 | $1-h(p)$ |
+| 이진 소거 채널(binary erasure channel, BEC) $\mathrm{BEC}(\varepsilon)$ | 확률 $\varepsilon$ 로 비트가 지워짐 | $1 - \varepsilon$ |
 
 $h$ 는 이진 entropy 함수다. BSC(0.5) 의 용량은 0 이고, 출력이 입력과 독립이라 아무 정보도 전달되지 않는다.
 

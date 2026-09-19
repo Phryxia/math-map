@@ -175,7 +175,7 @@ Hasse 불변량이 $0$ 이면 $a_p\equiv0\pmod p$ 이고, [Newton 다각형](new
 | Lauder–Wan (Dwork 직계) | $p$ 에 다항식 | 일반 다양체 |
 | Harvey (Kedlaya 개량) | $\tilde O(p^{1/2})$ | 중간 크기 $p$ |
 
-$p=2$ 에서는 Kedlaya 의 가설이 깨져서 Mestre 의 AGM 이나 Satoh 의 정준 올림이 쓰인다. 암호 실무에서 $\mathbb F_{2^n}$ 곡선을 다룰 때 이 계열이 표준이었다.
+$p=2$ 에서는 Kedlaya 의 가설이 깨져서 Mestre 의 AGM(arithmetic-geometric mean)이나 Satoh 의 정준 올림이 쓰인다. 암호 실무에서 $\mathbb F_{2^n}$ 곡선을 다룰 때 이 계열이 표준이었다.
 
 # 활용
 

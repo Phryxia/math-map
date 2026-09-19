@@ -87,7 +87,7 @@ $$
 - 필요성. 강쌍대성이 성립하고 양쪽 최적해가 달성되면, 볼록이 아니어도 최적해는 KKT 조건을 만족한다. 최적 $x^\star$ 는 $L(\cdot,\lambda^\star,\nu^\star)$ 를 최소화하므로 기울기가 $0$ 이고, $p=d$ 에서 $\sum_i\lambda_i^\star g_i(x^\star)=0$ 인데 각 항이 $0$ 이하이므로 모두 $0$ 이다.
 - 충분성. 볼록 문제에서 KKT 조건을 만족하는 $(x^\star,\lambda^\star,\nu^\star)$ 는 원 문제와 쌍대 문제의 최적해 쌍이고 간극이 $0$ 이다. $L(\cdot,\lambda^\star,\nu^\star)$ 가 볼록함수이므로 정상성이 전역 최소를 뜻하고, 상보 여유로 쌍대 값이 목적값과 같아진다.
 
-Slater 조건을 만족하는 미분가능 볼록 문제에서 KKT 조건은 최적성의 필요충분조건이다.[^2] 비볼록 문제에서는 KKT 점이 최적해가 아닐 수 있고, LICQ 나 MFCQ 같은 정칙성 조건이 없으면 최적해가 KKT 조건을 만족하지 않을 수 있다.
+Slater 조건을 만족하는 미분가능 볼록 문제에서 KKT 조건은 최적성의 필요충분조건이다.[^2] 비볼록 문제에서는 KKT 점이 최적해가 아닐 수 있고, LICQ(linear independence constraint qualification)나 MFCQ(Mangasarian–Fromovitz constraint qualification) 같은 정칙성 조건이 없으면 최적해가 KKT 조건을 만족하지 않을 수 있다.
 
 # 활용
 
@@ -110,7 +110,7 @@ $\lambda\ge 0$ 에서 최대화하면 최적 승수는 $2$ , $d=2$ 다. 승수�
 - 쌍대 문제가 원 문제보다 변수가 적거나 구조가 좋으면 쌍대 문제를 풀어 원 문제의 해를 복원한다. support vector machine 의 kernel 형태가 그 예다.
 - 부등식 제약 아래의 해를 손으로 구할 때 KKT 조건을 푼다. 통신 전력배분의 water-filling 해는 상보 여유에서 나온다.
 - 쌍대함수는 임의의 승수에서 하한이므로 정수계획법의 분기한정법에서 하한을 만든다.
-- [경사하강법](gradient-descent.md)으로 쌍대 문제를 올리는 dual ascent 와 augmented Lagrangian, ADMM 계열 알고리즘의 기본 구조다.
+- [경사하강법](gradient-descent.md)으로 쌍대 문제를 올리는 dual ascent 와 augmented Lagrangian, ADMM(alternating direction method of multipliers) 계열 알고리즘의 기본 구조다.
 - [Shannon entropy](entropy.md)를 최대화하는 최대엔트로피 추정에서 지수족 분포가 KKT 조건의 해로 나온다.
 
 [^1]: S. Boyd and L. Vandenberghe, Convex Optimization, Chapter 5 (Duality) 강의 슬라이드. https://web.mit.edu/~jadbabai/www/EE605/lectures/duality.pdf

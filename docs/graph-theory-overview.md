@@ -41,7 +41,7 @@ graph TD
 ## 기본 구조
 
 - [그래프](graphs.md): 정점과 간선, 차수, 경로와 연결성
-- [그래프 탐색](graph-search.md): DFS 와 BFS, 탐색 트리와 간선 분류, 강연결성분
+- [그래프 탐색](graph-search.md): DFS(depth-first search)와 BFS(breadth-first search), 탐색 트리와 간선 분류, 강연결성분
 - [DAG와 위상정렬](dag-topological.md): 방향 비순환 그래프와 선형 순서
 - [평면 그래프](planar-graphs.md): Euler 공식과 Kuratowski 정리
 

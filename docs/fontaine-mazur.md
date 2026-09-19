@@ -130,8 +130,8 @@ $$
 | 상황 | 결과 |
 |---|---|
 | $n=1$ | 정리. 유체론과 Kronecker–Weber |
-| $n=2$ 이고 홀수, 서로 다른 HT 무게, $\bar\rho\vert\_{\mathbb Q(\zeta_p)}$ 기약 | Kisin, Emerton (대체로 해결)[^2] |
-| $n=2$ 이고 HT 무게 같음 | 증명되지 않음[^1]. Artin 추측과 얽힘 |
+| $n=2$ 이고 홀수, 서로 다른 Hodge–Tate 무게, $\bar\rho\vert\_{\mathbb Q(\zeta_p)}$ 기약 | Kisin, Emerton (대체로 해결)[^2] |
+| $n=2$ 이고 Hodge–Tate 무게 같음 | 증명되지 않음[^1]. Artin 추측과 얽힘 |
 | $n=2$ 이고 짝수 | 결론이 "그런 것은 없다" 쪽. 부분 결과만 |
 | $n\ge3$ | 증명되지 않음[^1]. 자기쌍대 경우에 부분 결과 |
 

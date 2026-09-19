@@ -100,7 +100,7 @@ $$
 \Vert T_\rho f\Vert_q\le\Vert f\Vert_p
 $$
 
-이다. 특히 준위 $k$ 이하의 함수에 대해 $\Vert f\Vert_4\le\sqrt3^{\thinspace k}\Vert f\Vert_2$ 가 나온다. 저차 다항식의 값이 크게 흩어질 수 없다는 뜻이며, 이 분야의 해석적 논법이 이 부등식에서 나온다. KKL 정리의 증명도 이것을 쓴다.
+이다. 특히 준위 $k$ 이하의 함수에 대해 $\Vert f\Vert_4\le\sqrt3^{\thinspace k}\Vert f\Vert_2$ 가 나온다. 저차 다항식의 값이 크게 흩어질 수 없다는 뜻이며, 이 분야의 해석적 논법이 이 부등식에서 나온다. KKL(Kahn–Kalai–Linial) 정리의 증명도 이것을 쓴다.
 
 ## Majority is Stablest
 
@@ -130,7 +130,7 @@ $$
 
 - **KKL.** $\mathbb E[f]$ 가 상수에서 떨어져 있으면 어떤 좌표는 영향력이 $\Omega(\log n/n)$ 이상이다. 증명이 초축약성의 첫 큰 응용이었다.
 - **Friedgut.** 총 영향력이 $k$ 이면 $f$ 는 $2^{O(k/\varepsilon)}$ 개 좌표에만 의존하는 함수로 $\varepsilon$ 근사된다.
-- **FKN.** 무게가 거의 전부 준위 $1$ 에 있으면 $f$ 는 독재자에 가깝다. 독재자 검사의 안정성 보증이 이 형태다.
+- **FKN**(Friedgut–Kalai–Naor)**.** 무게가 거의 전부 준위 $1$ 에 있으면 $f$ 는 독재자에 가깝다. 독재자 검사의 안정성 보증이 이 형태다.
 - **Kindler–Safra.** 무게가 거의 준위 $k$ 이하에 있으면 $f$ 는 차수 $k$ 의 junta 에 가깝다.
 - **Arrow 의 정리.** 세 후보 선거에서 순환하지 않는 집계 규칙은 독재자뿐이라는 결론을 Kalai 가 순환 확률의 Fourier 계산으로 얻었다.
 
