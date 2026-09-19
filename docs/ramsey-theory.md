@@ -124,7 +124,7 @@ $$
 S(r)=\min\bigl\lbrace N\ \bigm|\ \forall c:[N]\to[r],\ \exists\thinspace x,y,z\ \text{같은 색},\ x+y=z\bigr\rbrace
 $$
 
-*증명.* Ramsey 정리로 환원한다. $r$ 색 삼각형 Ramsey 수로 $N=R_r(3)-1$ 이라 두고 색칠 $c$ 가 주어지면, 완전그래프 $K_{N+1}$ 의 간선 $\lbrace i,j\rbrace$ 에 색 $c(\vert i-j\vert)$ 를 부여한다. Ramsey 정리가 단색 삼각형 $\lbrace i\lt j\lt k\rbrace$ 를 주므로 $x=j-i,\ y=k-j,\ z=k-i$ 로 두면 $x+y=z$ 이고 세 수의 색이 같다. 알려진 Schur 수는 $S(1)=2,\ S(2)=5,\ S(3)=14,\ S(4)=45$ 이고, $S(5)=161$ 은 2017년에 SAT 풀이기로 확정되었다.
+*증명.* Ramsey 정리로 환원한다. $r$ 색 삼각형 Ramsey 수로 $N=R_r(3)-1$ 이라 두고 색칠 $c$ 가 주어지면, 완전그래프 $K_{N+1}$ 의 간선 $\lbrace i,j\rbrace$ 에 색 $c(\vert i-j\vert)$ 를 부여한다. Ramsey 정리가 단색 삼각형 $\lbrace i\lt j\lt k\rbrace$ 를 주므로 $x=j-i,\ y=k-j,\ z=k-i$ 로 두면 $x+y=z$ 이고 세 수의 색이 같다. 알려진 Schur 수는 $S(1)=2,\ S(2)=5,\ S(3)=14,\ S(4)=45$ 이고, $S(5)=161$ 은 2017년에 **SAT**(Boolean satisfiability) 풀이기로 확정되었다.
 
 Schur 정리는 van der Waerden 정리(색칠하면 단색 등차수열이 생긴다)와 함께 산술적 Ramsey 이론을 이루고, 둘을 포괄하는 Rado 정리가 어떤 선형 방정식계가 "분할 정칙적(partition regular)"인지 완전히 판정한다.
 

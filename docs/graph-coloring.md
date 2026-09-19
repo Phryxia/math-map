@@ -176,7 +176,7 @@ $$
 
 $k \ge 3$ 고정에 대해 $k$ 색칠 가능성 판정은 NP-완전이다(Karp 의 21 개 문제 목록에 포함[^3]). $\chi(G)$ 계산은 [P 대 NP 문제](p-np.md)에 걸린다. 근사도 어렵다. 임의의 $\varepsilon \gt 0$ 에 대해 $\chi(G)$ 를 $\lvert V \rvert^{1-\varepsilon}$ 배 이내로 근사하는 것이 NP-난해다. 3-색칠 가능한 그래프를 다항 시간에 칠하는 알고리즘이 쓰는 색 수는 $\lvert V \rvert$ 의 작은 거듭제곱 꼴이고, 현재 최선은 $O(\lvert V\rvert^{0.199})$ 색이다[^4].
 
-실무에서는 정확 해를 포기하고 DSATUR 같은 휴리스틱, 정수계획법, SAT 솔버를 쓴다.
+실무에서는 정확 해를 포기하고 DSATUR 같은 휴리스틱, 정수계획법, **SAT**(Boolean satisfiability) 솔버를 쓴다.
 
 # 활용
 
