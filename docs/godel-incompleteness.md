@@ -20,7 +20,7 @@ Gödel 불완전성 정리는 산술을 충분히 담을 수 있는 무모순 �
 
 - $T$ 는 [1차 논리](first-order-logic.md)의 이론이고 공리 집합이 recursively enumerable하다(효과적 공리화).
 - $T$ 는 무모순이다.
-- $T$ 는 충분히 강하다. 구체적으로는 Robinson 산술 Q 하나만 해석할 수 있으면 된다. Peano 산술 PA, [ZFC](zfc-axioms.md), Q 자신 모두 해당한다.
+- $T$ 는 충분히 강하다. 구체적으로는 Robinson 산술 Q 하나만 해석할 수 있으면 된다. Peano 산술(Peano arithmetic, PA), [ZFC](zfc-axioms.md)(Zermelo–Fraenkel 집합론에 선택공리를 더한 것), Q 자신 모두 해당한다.
 
 ## 산술화
 

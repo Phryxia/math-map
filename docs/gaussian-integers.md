@@ -40,7 +40,7 @@ $\beta \ne 0$ 인 임의의 $\alpha,\beta$ 에 대해 $\alpha=\gamma\beta+\rho$ 
 
 증명. $\alpha/\beta = u+vi$ 를 복소수로 계산하고 $u,v$ 를 각각 가장 가까운 정수로 반올림해 $\gamma$ 를 잡는다. 그러면 $|\alpha/\beta-\gamma|^2 \le \tfrac14+\tfrac14=\tfrac12$ 이므로 $\rho=\alpha-\gamma\beta$ 는 $N(\rho)\le \tfrac12 N(\beta)\lt N(\beta)$ 를 만족한다.
 
-따라서 $\mathbb Z[i]$ 는 Euclid 정역이고, ED $\subset$ PID $\subset$ UFD 사슬에 의해 유일분해정역이다.
+따라서 $\mathbb Z[i]$ 는 Euclid 정역이고, 유클리드 정역(ED) $\subset$ 주아이디얼정역(PID) $\subset$ 유일분해정역(UFD) 사슬에 의해 유일분해정역이다.
 
 ## 소원의 분류
 
