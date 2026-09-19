@@ -29,9 +29,9 @@ $$
 ```mermaid
 graph LR
   X["X (F-가측)"] -->|"정사영 / 평균화"| CE["E[X | G] (G-가측)"]
-  CE -->|"추가 평균화 E[· | H]"| CE2["E[X | H], H ⊆ G"]
+  CE -->|"H 로 다시 평균화"| CE2["E[X | H], H ⊆ G"]
   X -->|"직접 평균화"| CE2
-  CE -->|"오차 X - E[X|G]"| ORT["G-가측 변수 전체와 직교"]
+  CE -->|"오차"| ORT["G-가측 변수 전체와 직교"]
 ```
 
 세 번째 직관은 예측이다. 제곱오차를 최소화하는 $\mathcal G$ 가측 예측기가 정확히 $E[X \mid \mathcal G]$ 이다. [최대가능도 추정](maximum-likelihood.md)이나 [선형회귀](linear-regression.md)에서 "회귀함수"라고 부르는 대상이 바로 이것이다.
