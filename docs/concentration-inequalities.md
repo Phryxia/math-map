@@ -22,20 +22,6 @@ $$
 
 기하적으로는 "고차원에서 평균은 거의 상수"라는 현상이다. 각 항이 $[0, 1]$ 에 갇혀 있으면 합의 변동 폭은 최악의 경우 $n$ 이지만 전형적인 변동은 $\sqrt n$ 에 불과하다. 서로 다른 방향으로 흔들리는 독립 성분들이 상쇄되기 때문이며, 이 상쇄를 지수 모멘트로 정량화한 것이 아래의 부등식들이다.
 
-```mermaid
-graph TD
-  M["Markov: P(X ≥ t) ≤ E[X]/t"] --> C["Chebyshev: 2차 모멘트"]
-  M --> CH["Chernoff 기법: e^{λX} 에 Markov 적용"]
-  CH --> MGF["적률생성함수 상한이 필요"]
-  MGF --> HL["Hoeffding 보조정리 (유계 변수)"]
-  MGF --> BER["Bernstein/Bennett (분산 정보 활용)"]
-  HL --> HOEFF["Hoeffding 부등식"]
-  HOEFF --> SG["sub-Gaussian 성질"]
-  SG --> AZ["Azuma (martingale 증분)"]
-  HOEFF --> APP["표본 복잡도, 무작위 알고리즘"]
-  C --> WLLN["약한 큰 수의 법칙"]
-```
-
 # 정의
 
 ## Markov 와 Chebyshev
@@ -125,7 +111,7 @@ P\big(S_n - E[S_n] \ge t\big) \thickspace\le\thickspace
 \exp\negthinspace\left(-\frac{t^2}{2\big(\sum_i \mathrm{Var}(X_i) + bt/3\big)}\right)
 $$
 
-를 쓴다. 작은 편차에서는 분산이 지배해 Gaussian 꼴, 큰 편차에서는 유계 상수 $b$ 가 지배해 지수 꼴이 된다[^1].
+를 쓴다. 작은 편차에서는 분산이 지배해 Gaussian 꼴, 큰 편차에서는 유계 상수 $b$ 가 지배해 지수 꼴이 된다[^1]. 같은 분산 정보로 더 날카로운 상한을 주는 것이 Bennett 부등식이고, 그 지수를 $t$ 의 2차식으로 완화하면 위 형태가 나온다.
 
 # 성질
 

@@ -26,20 +26,6 @@ $$
 
 세 번째 직관은 수렴이다. 경로가 수렴하지 않으려면 어떤 구간 $[a,b]$ 를 무한히 여러 번 아래에서 위로 가로질러야 한다. 그런데 "구간 아래에서 사서 위에서 판다"는 전략이 만드는 이익은 가로지른 횟수에 비례하고, 공정한 게임에서는 그 기대 이익이 커질 수 없다. 따라서 가로지르기 횟수의 기댓값이 유한하고, 경로는 결국 진동을 멈춘다. Doob 의 upcrossing 논증이다.
 
-```mermaid
-graph TD
-  CE["조건부 기댓값 E[· | F_n]"] --> MG["martingale 정의"]
-  MG --> OST["선택적 정지 정리"]
-  MG --> DOOB["Doob 최대부등식"]
-  MG --> UP["upcrossing 부등식"]
-  UP --> CONV["martingale 수렴 정리 (a.s.)"]
-  DOOB --> LP["L^p 수렴 (p > 1)"]
-  UI["균등적분성"] --> L1["L^1 수렴, 닫힌 martingale"]
-  CONV --> L1
-  OST --> APP["도박꾼 파산, 도달확률, 정지시간 항등식"]
-  CONV --> APP2["Azuma, 강수렴 결과"]
-```
-
 # 정의
 
 ## Filtration 과 adapted 과정
