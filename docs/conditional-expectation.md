@@ -113,7 +113,7 @@ $$
 E\big[\thinspace E[X \mid \mathcal{G}] \thinspace\big|\thinspace \mathcal{H}\thinspace\big] \thickspace=\thickspace E[X \mid \mathcal{H}].
 $$
 
-증명: 좌변은 $\mathcal H$ 가측이다. $A \in \mathcal H \subseteq \mathcal G$ 에 대해 $\int_A E[E[X \mid \mathcal G] \mid \mathcal H] \thinspace dP = \int_A E[X \mid \mathcal G] \thinspace dP = \int_A X \thinspace dP$ 이며, 첫 등식은 $\mathcal H$ 에 대한 정의, 둘째 등식은 $A \in \mathcal G$ 이므로 $\mathcal G$ 에 대한 정의다. 유일성으로 결론이 난다. "정보를 적게 가진 쪽이 이긴다"는 이 성질이 [Martingale](martingales.md) 이론 전체의 계산 엔진이다.
+증명: 좌변은 $\mathcal H$ 가측이다. $A \in \mathcal H \subseteq \mathcal G$ 에 대해 $\int_A E[E[X \mid \mathcal G] \mid \mathcal H] \thinspace dP = \int_A E[X \mid \mathcal G] \thinspace dP = \int_A X \thinspace dP$ 이며, 첫 등식은 $\mathcal H$ 에 대한 정의, 둘째 등식은 $A \in \mathcal G$ 이므로 $\mathcal G$ 에 대한 정의다. 유일성으로 결론이 난다. 두 번 조건을 걸면 거친 쪽만 남는 이 성질을 [Martingale](martingales.md) 이론의 계산에서 되풀이해 쓴다.
 
 **끌어내기 (taking out what is known).** $W$ 가 $\mathcal G$ 가측이고 $XW$ 가 적분 가능하면
 

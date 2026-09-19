@@ -126,7 +126,7 @@ L 꾸러미와 달리 Arthur 꾸러미에는 다음 성질이 있다.
 
 ## 일반화 Ramanujan 추측과의 관계
 
-$\mathrm{GL}\_n$ 의 첨점 표현이 템퍼드라는 추측은 Arthur 의 언어로 첨점 매개변수의 둘째 $\mathrm{SL}\_2$ 가 자명하다는 진술이다. 고전군에서는 거짓이다. 둘째 $\mathrm{SL}\_2$ 가 자명하지 않은 첨점 표현(CAP 표현)이 존재하고 Saito–Kurokawa 올림이 그 예다. Ramanujan 추측은 $\mathrm{GL}\_n$ 의 성질이지 자기동형 형식 일반의 성질이 아니다.
+$\mathrm{GL}\_n$ 의 첨점 표현이 템퍼드라는 추측은 Arthur 의 언어로 첨점 매개변수의 둘째 $\mathrm{SL}\_2$ 가 자명하다는 진술이다. 고전군에서는 거짓이다. 둘째 $\mathrm{SL}\_2$ 가 자명하지 않은 첨점 표현, 곧 CAP(cuspidal associated to parabolic) 표현이 존재하고 Saito–Kurokawa 올림이 그 예다. Ramanujan 추측은 $\mathrm{GL}\_n$ 의 성질이지 자기동형 형식 일반의 성질이 아니다.
 
 # 활용
 

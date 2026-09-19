@@ -100,7 +100,7 @@ $$
 \Vert T_\rho f\Vert_q\le\Vert f\Vert_p
 $$
 
-이다. 특히 준위 $k$ 이하의 함수에 대해 $\Vert f\Vert_4\le\sqrt3^{\thinspace k}\Vert f\Vert_2$ 가 나온다. 저차 다항식의 값이 크게 흩어질 수 없다는 뜻이며, 이 분야 정리 대부분의 해석적 엔진이다. KKL 정리의 증명도 이 부등식을 쓴다.
+이다. 특히 준위 $k$ 이하의 함수에 대해 $\Vert f\Vert_4\le\sqrt3^{\thinspace k}\Vert f\Vert_2$ 가 나온다. 저차 다항식의 값이 크게 흩어질 수 없다는 뜻이며, 이 분야의 해석적 논법이 이 부등식에서 나온다. KKL 정리의 증명도 이것을 쓴다.
 
 ## Majority is Stablest
 
