@@ -57,9 +57,9 @@ graph TD
 ## 복잡도와 근사 한계
 
 - [P 대 NP 문제](p-np.md): 다항시간 판정과 다항시간 검증의 분리 문제
-- [NP-완전성과 Cook–Levin 정리](np-completeness.md): 환원과 완전성, SAT 의 보편성
+- [NP-완전성과 Cook–Levin 정리](np-completeness.md): 환원과 완전성, SAT(satisfiability) 의 보편성
 - [근사 알고리즘](approximation-algorithms.md): 최적해 대신 보장된 비율의 해
-- [PCP 정리와 근사 불가능성](pcp-theorem.md): 상수 개의 비트만 읽는 검증, 근사 하한
+- [PCP 정리와 근사 불가능성](pcp-theorem.md): PCP(probabilistically checkable proof), 곧 상수 개의 비트만 읽는 검증과 근사 하한
 - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위의 Fourier 전개, 영향력과 잡음 안정성
 - [유일게임 추측과 2-to-2 정리](unique-games.md): 최적 근사 비율을 결정하는 추측
 - [그래프 동형](graph-isomorphism.md): P 와 NP-완전 사이에 놓인 문제, 준다항시간 알고리즘
@@ -67,9 +67,9 @@ graph TD
 
 ## 알고리즘
 
-- [동적 계획법](dynamic-programming.md): 부분문제의 DAG 위에서 값을 위상순으로 채운다
+- [동적 계획법](dynamic-programming.md): 부분문제의 DAG(directed acyclic graph) 위에서 값을 위상순으로 채운다
 - [최단경로와 Bellman 방정식](shortest-paths.md): Bellman–Ford, Dijkstra, 고정점으로서의 최단거리
-- [LP 완화와 반올림](lp-rounding.md): 정수 제약을 푼 뒤 해를 되돌리는 근사 설계
+- [LP 완화와 반올림](lp-rounding.md): LP(linear programming) 완화로 정수 제약을 푼 뒤 해를 되돌리는 근사 설계
 - [고속 Fourier 변환과 합성곱](fft.md): 분할정복으로 $O(n\log n)$ 에 이산 Fourier 변환
 - [오류정정부호](error-correcting-codes.md): 부호의 구성과 복호 알고리즘, 거리와 한계
 - [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md): 유한체 위 타원곡선의 점 개수를 다항시간에 센다
@@ -87,22 +87,22 @@ graph TD
 - [Shannon entropy](entropy.md): 부호화 길이의 하한이 되는 불확실성의 척도
 - [무손실 부호화 정리](source-coding.md): 압축률의 한계가 entropy 다
 - [채널 부호화 정리](channel-coding.md): 잡음 있는 채널의 용량과 신뢰 전송
-- [KL divergence](kl-divergence.md): 두 분포의 부호화 손실과 그 결합 형태
+- [KL divergence](kl-divergence.md): KL(Kullback–Leibler) divergence, 두 분포의 부호화 손실과 그 결합 형태
 
 ## 생성모형
 
-- [변분 오토인코더](variational-autoencoder.md): ELBO 와 재매개화로 잠재변수 모형을 학습한다
+- [변분 오토인코더](variational-autoencoder.md): ELBO(evidence lower bound)와 재매개화로 잠재변수 모형을 학습한다
 - [확산모형](diffusion-models.md): 잡음을 더하는 과정을 되돌려 표본을 만든다
 - [흐름 정합](flow-matching.md): 확률 경로의 속도장을 회귀로 학습한다
 
 ## 암호
 
-- [RSA 암호](rsa-cryptosystem.md): 소인수분해의 난해성 위에 세운 공개키 암호
+- [RSA 암호](rsa-cryptosystem.md): RSA(Rivest–Shamir–Adleman), 소인수분해의 난해성 위에 세운 공개키 암호
 - [이산로그와 Diffie–Hellman](discrete-logarithm.md): 순환군의 이산로그 문제와 키 교환
 - [Weil 쌍과 쌍선형 암호](pairing-based-cryptography.md): 타원곡선의 쌍선형 사상과 신원 기반 암호
-- [격자 기반 후양자 암호](post-quantum-cryptography.md): LWE 와 SIS, 양자 알고리즘에 견디는 가정
+- [격자 기반 후양자 암호](post-quantum-cryptography.md): LWE(learning with errors)와 SIS(short integer solution), 양자 알고리즘에 견디는 가정
 - [완전동형암호](homomorphic-encryption.md): 암호문 위에서 덧셈과 곱셈, 잡음 관리와 부트스트래핑
-- [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md): 동종사상 그래프 위의 걷기를 어려운 문제로 삼는 가정
+- [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md): SIDH(supersingular isogeny Diffie–Hellman), 동종사상 그래프 위의 걷기를 어려운 문제로 삼는 가정
 
 # 연관 문서
 
