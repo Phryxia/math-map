@@ -13,6 +13,7 @@ graph TD
   G["군"] --> GA["군 작용"] --> SY["Sylow 정리"] --> FS["유한 단순군 분류"] --> GE["군 확대"]
   GA --> GT["Galois 이론"]
   GA --> GR["군의 표현과 지표"]
+  G --> GP["군의 표시"] --> CX["Coxeter 군"]
   G --> R["환"] --> ID["아이디얼과 몫환"] --> PI["소 아이디얼"] --> LZ["환의 국소화"]
   ID --> UFD["유일분해정역"] --> DD["Dedekind 정역"]
   ID --> NO["Noether 환"]
@@ -28,6 +29,7 @@ graph TD
   M --> NK["Nakayama 보조정리"]
   LZ --> NK
   LA["Lie 대수"] --> RS["근계와 Weyl 군"] --> WC["Weyl 지표 공식"] --> BWB["Borel–Weil–Bott"]
+  RS --> CX
   LA --> LG["Lie 군"] --> PW["Peter–Weyl 정리"] --> WC
   LA --> VOA["정점작용소대수"] --> ZA["Zhu 대수"]
 ```
