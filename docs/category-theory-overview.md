@@ -2,9 +2,9 @@
 
 # 개요
 
-범주론은 대상의 내부가 아니라 대상 사이의 사상으로 구조를 기술한다. 물음은 "이 구성이 어떤 보편성질로 결정되는가" 이고, 답은 대개 표현 가능 함자나 adjunction 으로 온다. 같은 구성을 여러 분야에서 따로 발견하는 일이 보편성질 하나로 설명된다.
+범주론은 대상의 내부가 아니라 대상 사이의 사상으로 구조를 기술한다. 물음은 "이 구성이 어떤 보편성질로 결정되는가" 이고, 답은 대개 표현 가능 함자나 수반으로 온다. 같은 구성을 여러 분야에서 따로 발견하는 일이 보편성질 하나로 설명된다.
 
-범주론의 갈래는 네 줄기다. 범주와 함자의 기본 언어, Yoneda lemma 에서 adjunction 으로 가는 보편성질, monad 와 그 대수, 그리고 텐서범주에서 위상적 양자계산으로 이어지는 응용이다. 호몰로지 대수 쪽 응용은 [de Rham 코호몰로지](de-rham-cohomology.md)와 [대수적 K 이론](algebraic-k-theory.md)에, 프로그래밍 언어와의 대응은 [Curry–Howard 대응](curry-howard.md)에 있다.
+범주론의 갈래는 네 줄기다. 범주와 함자의 기본 언어, Yoneda lemma 에서 수반으로 가는 보편성질, monad 와 그 대수, 그리고 텐서범주에서 위상적 양자계산으로 이어지는 응용이다. 호몰로지 대수 쪽 응용은 [de Rham 코호몰로지](de-rham-cohomology.md)와 [대수적 K 이론](algebraic-k-theory.md)에, 프로그래밍 언어와의 대응은 [Curry–Howard 대응](curry-howard.md)에 있다.
 
 시작은 [범주](category.md)다. 거기서 [함자](functors.md)와 [자연변환](natural-transformations.md)이 언어를 세우고, [Yoneda lemma](yoneda-lemma.md)가 대상을 사상으로 바꿔 읽는 원리를 준다.
 
@@ -45,8 +45,8 @@ graph TD
 
 ## Monad 와 대수
 
-- [Monad](monads.md): adjunction 이 남기는 자기함자와 두 자연변환
-- [Kleisli 범주와 Eilenberg–Moore 범주](kleisli-eilenberg-moore.md): monad 를 다시 adjunction 으로 분해하는 두 방법
+- [Monad](monads.md): 수반이 남기는 자기함자와 두 자연변환
+- [Kleisli 범주와 Eilenberg–Moore 범주](kleisli-eilenberg-moore.md): monad 를 다시 수반으로 분해하는 두 방법
 
 ## 텐서범주와 응용
 
