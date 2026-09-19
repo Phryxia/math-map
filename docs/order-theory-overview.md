@@ -40,7 +40,7 @@ graph TD
 
 ## 순서의 기초
 
-- [동치관계와 동치류](relations.md) — 반사성, 대칭성, 추이성. 대칭성을 반대칭성으로 바꾸면 순서가 된다
+- [동치관계](equivalence-relations.md) — 반사성, 대칭성, 추이성. 대칭성을 반대칭성으로 바꾸면 순서가 된다
 - [부분순서](partial-orders.md) — 반사슬, 사슬, Hasse 도형, 상한과 하한, 극대원소와 최대원소의 구별
 - [DAG와 위상정렬](dag-topological.md) — 유한 부분순서를 방향 비순환 그래프(directed acyclic graph, DAG)로 실현하고 선형 확장을 계산한다
 

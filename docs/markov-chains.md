@@ -47,7 +47,7 @@ $$
 ## 보조 정의
 
 - $n$ 단계 전이확률: $P$ 의 $n$ 제곱의 $(i,j)$ 성분을 $p_{ij}^{(n)}$ 로 쓴다.
-- $i$ 에서 $j$ 로 도달 가능: 어떤 $n\ge 0$ 에 대해 $p_{ij}^{(n)}\gt 0$ 이다. 서로 도달 가능한 관계는 [동치관계](relations.md)이고 그 동치류를 communicating class 라 한다.
+- $i$ 에서 $j$ 로 도달 가능: 어떤 $n\ge 0$ 에 대해 $p_{ij}^{(n)}\gt 0$ 이다. 서로 도달 가능한 관계는 [동치관계](equivalence-relations.md)이고 그 동치류를 communicating class 라 한다.
 - 기약(irreducible): 상태 공간 전체가 하나의 communicating class다.
 - 주기: 상태 $i$ 의 주기는 다음 값이고, 기약 연쇄에서는 모든 상태가 같은 주기를 가진다. 주기가 1 이면 비주기적(aperiodic)이다.
 

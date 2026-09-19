@@ -115,7 +115,7 @@ $$
 0=\varnothing,\quad 1=\lbrace 0\rbrace,\quad 2=\lbrace 0,1\rbrace,\quad n+1=n\cup\lbrace n\rbrace,\qquad \omega=\bigcap\lbrace\thinspace I : I \text{ 귀납적}\thinspace\rbrace
 $$
 
-이 정의에서 n의 원소 개수는 정확히 n이고, m이 n의 원소인 것과 m이 n보다 작은 것이 같다. 즉 순서 관계가 원소 관계로 무료로 얻어진다. 외연성과 정칙성 덕분에 각 자연수는 유일하게 결정되고, 수학적 귀납법은 최소성에서 바로 나온다. 정수·유리수는 [동치류](relations.md)로, 실수는 유리수 Cauchy 수열의 동치류나 Dedekind 절단으로 구성한다.
+이 정의에서 n의 원소 개수는 정확히 n이고, m이 n의 원소인 것과 m이 n보다 작은 것이 같다. 즉 순서 관계가 원소 관계로 무료로 얻어진다. 외연성과 정칙성 덕분에 각 자연수는 유일하게 결정되고, 수학적 귀납법은 최소성에서 바로 나온다. 정수·유리수는 [동치류](equivalence-relations.md)로, 실수는 유리수 Cauchy 수열의 동치류나 Dedekind 절단으로 구성한다.
 
 ## 순서쌍과 함수
 

@@ -52,7 +52,7 @@ $$
 \gamma : [0,1] \to X, \qquad \gamma(0) = a,\ \gamma(1) = b
 $$
 
-이다. 임의의 두 점 사이에 경로가 존재하면 $X$ 를 **경로연결**(path-connected)이라 한다. 경로의 존재는 동치관계를 이루며([동치관계와 동치류](relations.md)), 그 동치류를 **경로 성분**이라 한다. 이 동치관계가 [기본군](fundamental-group.md)의 출발점이기도 하다.
+이다. 임의의 두 점 사이에 경로가 존재하면 $X$ 를 **경로연결**(path-connected)이라 한다. 경로의 존재는 동치관계를 이루며([동치관계](equivalence-relations.md)), 그 동치류를 **경로 성분**이라 한다. 이 동치관계가 [기본군](fundamental-group.md)의 출발점이기도 하다.
 
 ## 연결 성분
 

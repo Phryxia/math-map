@@ -50,7 +50,7 @@ $$
 A\times B=\lbrace(a,b):a\in A,\ b\in B\rbrace
 $$
 
-$(a,b)=(c,d)\iff a=c,\ b=d$ 이다. 순서쌍이 [함수](functions.md)와 [관계](relations.md)를 집합으로 정의하는 재료다.
+$(a,b)=(c,d)\iff a=c,\ b=d$ 이다. 순서쌍이 [함수](functions.md)와 [동치관계](equivalence-relations.md)를 집합으로 정의하는 재료다.
 
 ## 인덱스족
 
@@ -91,7 +91,7 @@ $R=\lbrace x:x\notin x\rbrace$ 를 집합으로 인정하면 $R\in R\iff R\notin
 # 활용
 
 - 함수의 정의역과 공역, 확률의 표본공간, 그래프의 정점 집합, 벡터 공간의 바탕 집합은 모두 집합이다. 조건의 결합과 분리는 집합 연산으로 계산한다.
-- 순서가 필요하면 순서쌍이나 수열, 출현 횟수가 필요하면 다중집합, 원소 사이의 관계가 필요하면 [관계](relations.md)를 쓴다.[^1]
+- 순서가 필요하면 순서쌍이나 수열, 출현 횟수가 필요하면 다중집합, 원소 사이의 같음을 새로 정하려면 [동치관계](equivalence-relations.md)를 쓴다.[^1]
 
 [^1]: OpenStax, *Contemporary Mathematics*, §1.1 Basic Set Concepts. https://openstax.org/books/contemporary-mathematics/pages/1-1-basic-set-concepts
 
@@ -106,7 +106,7 @@ $R=\lbrace x:x\notin x\rbrace$ 를 집합으로 인정하면 $R\in R\iff R\notin
 ### 집합 위의 구조
 
 - [함수](functions.md)
-- [동치관계와 동치류](relations.md)
+- [동치관계](equivalence-relations.md)
 - [그래프](graphs.md)
 
 ### 세기와 논리

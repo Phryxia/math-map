@@ -101,7 +101,7 @@ $$
 
 다. [Kripke 의미론](kripke-semantics.md)의 강제 조건을 대수화한 것이다.
 
-**Lindenbaum–Tarski 대수.** 직관주의 명제논리의 논리식을 상호 도출 가능성으로 나눈 몫은 Heyting algebra 이고 $[\varphi] \le [\psi]$ 는 $\varphi \vdash \psi$ 를 뜻한다. [동치관계](relations.md)로 나누는 전형적인 구성이다.
+**Lindenbaum–Tarski 대수.** 직관주의 명제논리의 논리식을 상호 도출 가능성으로 나눈 몫은 Heyting algebra 이고 $[\varphi] \le [\psi]$ 는 $\varphi \vdash \psi$ 를 뜻한다. [동치관계](equivalence-relations.md)로 나누는 전형적인 구성이다.
 
 # 성질
 

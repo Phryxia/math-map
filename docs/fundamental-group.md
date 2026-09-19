@@ -28,7 +28,7 @@ $$
 H:[0,1]\times[0,1]\to X\ \text{연속},\quad H(s,0)=f(s),\ H(s,1)=g(s),\ H(0,t)=H(1,t)=x_0
 $$
 
-경로 호모토피는 loop 들 사이의 [동치관계](relations.md)이고, $f$ 의 동치류를 $[f]$ 로 표기한다. 연접은 다음으로 정의된다.
+경로 호모토피는 loop 들 사이의 [동치관계](equivalence-relations.md)이고, $f$ 의 동치류를 $[f]$ 로 표기한다. 연접은 다음으로 정의된다.
 
 $$
 (f\ast g)(s)=\begin{cases} f(2s), & 0\le s\le \tfrac12\cr g(2s-1), & \tfrac12\le s\le 1\end{cases}

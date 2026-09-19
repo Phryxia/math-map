@@ -46,7 +46,7 @@ graph TD
 
 ## 집합론
 
-- [집합](sets.md) → [함수](functions.md), [동치관계](relations.md) → [부분순서](partial-orders.md)
+- [집합](sets.md) → [함수](functions.md), [동치관계](equivalence-relations.md) → [부분순서](partial-orders.md)
 - [기수](cardinality.md): 대각선 논법과 무한의 크기
 - [ZFC 공리계](zfc-axioms.md) → [서수와 초한귀납법](ordinals.md) → [선택공리와 Zorn 보조정리](axiom-of-choice.md), [연속체 가설과 독립성](continuum-hypothesis.md)
 
