@@ -2,7 +2,7 @@
 
 # 개요
 
-**Reshetikhin–Turaev 구성**은 [모듈러 텐서범주](modular-tensor-categories.md) 하나를 입력으로 받아 3 차원 위상 불변량을 내놓는다. 출력은 둘이다. 닫힌 유향 3 차원 다양체 $M$ 에 붙는 수 $\tau(M)\in\mathbb C$ 와, $M$ 안에 놓인 라벨 붙은 링크에 붙는 수다. MTC 와 3 차원 TQFT 의 대응 가운데 대수에서 위상으로 가는 방향이 이 구성이다.
+**Reshetikhin–Turaev 구성**은 [모듈러 텐서범주](modular-tensor-categories.md) 하나를 입력으로 받아 3 차원 위상 불변량을 내놓는다. 출력은 둘이다. 닫힌 유향 3 차원 다양체 $M$ 에 붙는 수 $\tau(M)\in\mathbb C$ 와, $M$ 안에 놓인 라벨 붙은 링크에 붙는 수다. MTC(modular tensor category)와 3 차원 TQFT(topological quantum field theory)의 대응 가운데 대수에서 위상으로 가는 방향이 이 구성이다.
 
 구성의 요지는 [매듭 불변량](knot-invariants.md)에서 Jones 다항식을 Kauffman 괄호로 만드는 절차와 같고, 차원이 하나 높다.
 
@@ -123,7 +123,7 @@ $$
 \Delta_+\Delta_-=\mathcal D^2,\qquad \frac{\Delta_+}{\mathcal D}=e^{2\pi ic/8}
 $$
 
-첫 식은 $\Delta_+/\mathcal D$ 가 절댓값 1 임을 뜻하고, 둘째 식이 그 위상각의 정체를 밝힌다. $c$ 는 순수하게 범주에서 정의되는 유리수인데, 그 범주가 정점작용소대수에서 왔다면 $c$ 가 그 VOA 의 중심 전하와 일치한다. $\mathrm{SU}(2)\_k$ 라면
+첫 식은 $\Delta_+/\mathcal D$ 가 절댓값 1 임을 뜻하고, 둘째 식이 그 위상각의 정체를 밝힌다. $c$ 는 순수하게 범주에서 정의되는 유리수인데, 그 범주가 정점작용소대수(vertex operator algebra, VOA)에서 왔다면 $c$ 가 그 VOA 의 중심 전하와 일치한다. $\mathrm{SU}(2)\_k$ 라면
 
 $$
 c=\frac{3k}{k+2}
@@ -171,7 +171,7 @@ $$
 
 이고, 그 결과 $S^3$ 안의 매듭 $K$ 에 대한 라벨 1 불변량이 Jones 다항식 $V_K(t)$ 를 $t=q$ 에서 평가한 값이 된다. [매듭 불변량](knot-invariants.md) 문서에서 상태합으로 구한 삼엽매듭의 $V(t)=-t^{-4}+t^{-3}+t^{-1}$ 을 이 1 의 거듭제곱근에서 평가한 수가 곧 $\mathrm{SU}(2)\_k$ 의 불변량이다.
 
-라벨을 $n$ 으로 올리면 색 Jones 다항식이 나오고, $\mathfrak{sl}\_N$ 을 쓰면 HOMFLY, 직교·심플렉틱 계열에서는 Kauffman 다항식이 나온다. Jones 가 작용소대수에서 우연히 발견한 다항식이 왜 하필 그런 형태인지에 대한 답이 이 사전이다. **Jones 다항식은 $\mathrm{SU}(2)\_1$ 에서 뽑은 하나의 열이고, 3 차원 다양체 불변량은 같은 기계를 수술까지 밀어 올린 결과다.**
+라벨을 $n$ 으로 올리면 색 Jones 다항식이 나오고, $\mathfrak{sl}\_N$ 을 쓰면 HOMFLY(Hoste–Ocneanu–Millett–Freyd–Lickorish–Yetter), 직교·심플렉틱 계열에서는 Kauffman 다항식이 나온다. Jones 가 작용소대수에서 우연히 발견한 다항식이 왜 하필 그런 형태인지에 대한 답이 이 사전이다. **Jones 다항식은 $\mathrm{SU}(2)\_1$ 에서 뽑은 하나의 열이고, 3 차원 다양체 불변량은 같은 기계를 수술까지 밀어 올린 결과다.**
 
 ## 계산 복잡도
 

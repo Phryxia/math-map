@@ -41,13 +41,13 @@ $$
 
 잡음 낀 관측에서 원본의 조건부 평균과 점수함수가 서로를 결정한다. 신경망에 $\epsilon$ 을 예측하는 최소제곱 회귀를 시키면 그 최적해가 $-\sigma_t\nabla\log q_t$ 다.
 
-ELBO 를 전개해 나오는 KL 항들의 가중합이 이 회귀로 정리되면서 학습에 필요한 것은 데이터에 잡음을 더하고 그 잡음을 맞히는 것뿐이 되었다.
+ELBO 를 전개해 나오는 KL(Kullback–Leibler) 항들의 가중합이 이 회귀로 정리되면서 학습에 필요한 것은 데이터에 잡음을 더하고 그 잡음을 맞히는 것뿐이 되었다.
 
 # 정의
 
 ## 전방 과정
 
-분산 폭발(VE) 형식은 다음과 같다.
+분산 폭발(variance exploding, VE) 형식은 다음과 같다.
 
 $$
 x_t=x_0+\sqrt t\thinspace\epsilon,\qquad\epsilon\sim\mathcal N(0,I)
@@ -55,7 +55,7 @@ $$
 
 $q_t$ 는 데이터 분포에 분산 $t$ 인 Gauss 를 합성곱한 것이고, $t$ 가 크면 $\mathcal N(0,tI)$ 와 구별되지 않는다.
 
-실무에서는 분산 보존(VP) 형식을 쓴다.
+실무에서는 분산 보존(variance preserving, VP) 형식을 쓴다.
 
 $$
 x_t=\sqrt{\bar\alpha_t}\thinspace x_0+\sqrt{1-\bar\alpha_t}\thinspace\epsilon
@@ -127,7 +127,7 @@ $$
 
 표본 하나에 신경망을 수십에서 수천 번 통과시켜야 한다. 적대적 생성망이 한 번으로 끝나는 것과 대비된다.
 
-단계를 줄이는 방법으로 결정적 표본기(DDIM), 고차 ODE 해법, 다단계 모형을 한두 단계로 압축하는 증류가 쓰인다. 일관성 모형처럼 한 단계 생성을 목표로 설계된 변형도 있다.
+단계를 줄이는 방법으로 결정적 표본기(denoising diffusion implicit model, DDIM), 고차 ODE 해법, 다단계 모형을 한두 단계로 압축하는 증류가 쓰인다. 일관성 모형처럼 한 단계 생성을 목표로 설계된 변형도 있다.
 
 ## 한계
 

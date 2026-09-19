@@ -62,7 +62,7 @@ $$
 \log \Lambda(x_1, \dots, x_n) = \sum_{i=1}^{n} \log \frac{p_1(x_i)}{p_0(x_i)} .
 $$
 
-$P_0$ 아래에서 이 합의 기댓값은 음수이고, 그 크기가 정확히 [KL divergence](kl-divergence.md)다.
+$P_0$ 아래에서 이 합의 기댓값은 음수이고, 그 크기가 정확히 [KL divergence](kl-divergence.md)(Kullback–Leibler)다.
 
 $$
 \mathbb{E}\_{P_1}\Big[ \log \frac{dP_1}{dP_0} \Big] = D_{\mathrm{KL}}(P_1 \Vert P_0) \ \ge 0 .
@@ -107,7 +107,7 @@ $$
 여기서 두 가지가 읽힌다.
 
 - **최적 제안분포**: $f$ 가 비음일 때 분산을 0 으로 만드는 $P$ 는 $dP$ 가 $f\thinspace dQ$ 에 비례하는 경우다. 정규화 상수가 바로 구하려는 값이므로 실제로 쓸 수는 없지만, "$f$ 가 큰 곳에 표본을 몰아라"라는 설계 지침을 준다.
-- **위험**: $L$ 이 큰 곳에서 $f$ 가 0 이 아니면 분산이 폭발한다. $L$ 이 유계가 아니면 추정량의 분산이 무한일 수 있고, 이때 표본평균은 [중심극한정리](central-limit-theorem.md)가 적용되지 않아 신뢰구간이 거짓말을 한다. 실무에서는 유효표본크기
+- **위험**: $L$ 이 큰 곳에서 $f$ 가 0 이 아니면 분산이 폭발한다. $L$ 이 유계가 아니면 추정량의 분산이 무한일 수 있고, 이때 표본평균은 [중심극한정리](central-limit-theorem.md)가 적용되지 않아 신뢰구간이 거짓말을 한다. 실무에서는 유효표본크기(effective sample size, ESS)
 
 $$
 \mathrm{ESS} = \frac{\big( \sum_i L(X_i) \big)^2}{\sum_i L(X_i)^2}
@@ -149,12 +149,12 @@ $Q\ll P$ 가 깨지면 밀도가 존재하지 않는다. 예를 들어 연속분
 
 - **가설검정**: 우도비 검정통계량과 Wilks 정리(로그우도비의 점근 카이제곱 분포).
 - **Bayes 추론**: 사후분포를 사전분포에 대한 밀도로 쓰면 밀도가 정확히 우도이며, 정규화 상수가 증거(evidence)다. [Bayes 정리](bayes.md)의 측도론적 서술이 측도변환 공식 그 자체다.
-- **정보량**: [KL divergence](kl-divergence.md)는 로그 밀도의 기댓값이고, [Shannon entropy](entropy.md)와 함께 두 측도의 구별 가능성을 정량화한다. 로그 밀도의 [martingale](martingales.md) 구조가 순차검정(SPRT)의 최적성을 준다.
+- **정보량**: [KL divergence](kl-divergence.md)는 로그 밀도의 기댓값이고, [Shannon entropy](entropy.md)와 함께 두 측도의 구별 가능성을 정량화한다. 로그 밀도의 [martingale](martingales.md) 구조가 순차검정(sequential probability ratio test, SPRT)의 최적성을 준다.
 
 ## 계산
 
 - **희귀사건 시뮬레이션**: 통신 오류율, 보험 파산확률, 대기행렬 과부하 확률. 대편차 이론(large deviations)이 최적 기울임 방향을 알려준다.
-- **MCMC 와 재가중**: Metropolis–Hastings 의 수락확률이 제안분포에 대한 밀도비이며, [Markov 연쇄](markov-chains.md)의 detailed balance 조건이 그 형태를 강제한다.
+- **MCMC 와 재가중**: Markov chain Monte Carlo(MCMC)에서 Metropolis–Hastings 의 수락확률이 제안분포에 대한 밀도비이며, [Markov 연쇄](markov-chains.md)의 detailed balance 조건이 그 형태를 강제한다.
 - **강화학습의 off-policy 보정**: 행동 정책에서 모은 데이터로 목표 정책의 기댓값을 추정할 때 각 시점의 정책 비를 곱한다. 시간 길이에 따라 밀도가 곱으로 쌓여 분산이 지수적으로 커지는 문제가 위에서 본 ESS 붕괴와 같은 현상이다.[^2]
 
 [^1]: Steven E. Shreve, *Stochastic Calculus for Finance II: Continuous-Time Models*, Springer, 5장 (Risk-Neutral Pricing, Girsanov), https://link.springer.com/book/10.1007/978-0-387-40101-0

@@ -20,7 +20,7 @@ $E[\ell]$ 은 **나눗셈 다항식** $\psi_\ell(x)$ 로 다룬다. 차수가 $(
 
 Elkies 와 Atkin 의 개선은 $\psi_\ell$ 의 차수를 $(\ell^2-1)/2$ 에서 $(\ell-1)/2$ 로 줄인다. $\varphi$ 의 특성다항식이 $\bmod\ell$ 에서 근을 가지면(**Elkies 소수**) $E[\ell]$ 안에 $\varphi$ 가 보존하는 1 차원 부분군이 있고 그 부분군만 다루면 된다. 부분군을 찾는 도구가 [모듈러 곡선](modular-curves.md) $X_0(\ell)$ 의 모듈러 다항식이다. $X_0(\ell)$ 이 $\ell$ 등분 구조를 분류하므로 모듈러 곡선이 알고리즘의 부품이 된다.
 
-[Kedlaya 알고리즘](kedlaya-algorithm.md)은 $p$ 에 선형이라 작은 표수를 맡고 SEA 는 $\log p$ 의 다항식이라 큰 $p$ 를 맡는다. 둘 다 정수의 크기를 미리 알고 잉여를 모아 확정하는 논법을 쓰며, Kedlaya 는 $p$ 진 정밀도를 쌓고 SEA 는 여러 $\ell$ 의 잉여를 쌓는다.
+[Kedlaya 알고리즘](kedlaya-algorithm.md)은 $p$ 에 선형이라 작은 표수를 맡고 SEA(Schoof–Elkies–Atkin)는 $\log p$ 의 다항식이라 큰 $p$ 를 맡는다. 둘 다 정수의 크기를 미리 알고 잉여를 모아 확정하는 논법을 쓰며, Kedlaya 는 $p$ 진 정밀도를 쌓고 SEA 는 여러 $\ell$ 의 잉여를 쌓는다.
 
 # 직관
 
@@ -150,7 +150,7 @@ $\mathbb F_p$ 에서 $\Phi_\ell(j(E),Y)$ 의 근의 개수는 $0,1,2,\ell+1$ 중
    - **Schoof.** $R=\mathbb F_p[x,y]/(\psi_\ell,y^2-f)$ 에서 $(x^{p^2},y^{p^2})+p(x,y)=t(x^p,y^p)$ 를 $t$ 마다 시험한다.
    - **Elkies.** $\Phi_\ell(j(E),Y)$ 에 근이 있으면 차수 $(\ell-1)/2$ 의 인수 $g_\ell$ 을 만들고, $\mathbb F_p[x]/(g_\ell)$ 에서 고윳값 $\lambda$ 를 찾아 $t_\ell\equiv\lambda+p/\lambda$ 로 얻는다.
    - **Atkin.** 근이 없으면 $\ell$ 차 확대에서의 위수 정보로 $t_\ell$ 의 후보 집합을 얻고, 마지막에 baby-step giant-step 으로 조합을 고른다.
-3. CRT 로 $a_p\bmod\prod\ell$ 을 얻고 Hasse 한계로 정수를 확정한다.
+3. CRT(Chinese remainder theorem)로 $a_p\bmod\prod\ell$ 을 얻고 Hasse 한계로 정수를 확정한다.
 
 Schoof 원본은 $\tilde O(\log^5p)$ 이고 Elkies–Atkin 개선으로 $\tilde O(\log^4p)$ 다.
 
@@ -205,10 +205,10 @@ $p$ 가 $5$ 에서 $2^{61}-1$ 로 $18$ 자리 커지는 동안 필요한 가장 
 
 ## 쓰이는 자리
 
-- **곡선 선택.** NIST P-256, secp256k1 같은 표준 곡선의 위수를 이 계열 알고리즘으로 검증했다. 무작위 곡선을 뽑아 위수를 세고 소수이거나 작은 보조인자만 갖는지 확인한다.
+- **곡선 선택.** NIST(National Institute of Standards and Technology) P-256, secp256k1 같은 표준 곡선의 위수를 이 계열 알고리즘으로 검증했다. 무작위 곡선을 뽑아 위수를 세고 소수이거나 작은 보조인자만 갖는지 확인한다.
 - **안전성 조건 확인.** $\char35{}E(\mathbb F_p)=p$ 인 **비정상(anomalous)** 곡선은 이산로그가 선형시간에 풀리고, $\char35{}E$ 가 $p^k-1$ 을 작은 $k$ 에서 나누면 MOV 공격으로 유한체 이산로그로 환원된다. 위수를 알아야 이 조건들을 검사할 수 있다.
 - **곡선 개수 세기.** 주어진 위수를 갖는 곡선을 찾거나(복소곱셈법의 역방향), 위수 분포를 실험적으로 조사하는 데 쓰인다.
-- **수치 실험.** 대량의 $a_p$ 표가 Sato–Tate 분포나 BSD 추측의 수치 검증에 쓰이고, 큰 $p$ 영역의 표를 SEA 가 만든다.
+- **수치 실험.** 대량의 $a_p$ 표가 Sato–Tate 분포나 BSD(Birch–Swinnerton-Dyer) 추측의 수치 검증에 쓰이고, 큰 $p$ 영역의 표를 SEA 가 만든다.
 - **$\ell$ 진 표현의 계산.** $\varphi|\_{E[\ell]}$ 의 행렬이 [Galois 표현](galois-representations.md) $\rho_{E,\ell}$ 의 Frobenius 에서의 상이다. 상이 $\mathrm{GL}\_2(\mathbb F_\ell)$ 전체인지 판정하는 Serre 의 문제를 계산할 때 이 행렬을 쓴다.
 
 [^1]: R. Schoof, *Elliptic curves over finite fields and the computation of square roots mod p*, Math. Comp. **44** (1985), 483–494, 그리고 *Counting points on elliptic curves over finite fields*, J. Théor. Nombres Bordeaux **7** (1995), 219–254. Elkies–Atkin 개선의 표준 서술은 R. Lercier, F. Morain 의 논문들과 I. Blake, G. Seroussi, N. Smart, *Elliptic Curves in Cryptography* (1999) VII장. 나눗셈 다항식과 Hasse 정리는 J. Silverman, *The Arithmetic of Elliptic Curves* (2판, 2009) III, V장. 모듈러 다항식과 $X_0(\ell)$ 의 모듈러 해석은 F. Diamond, J. Shurman, *A First Course in Modular Forms* (2005) 8장.
