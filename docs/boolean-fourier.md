@@ -12,7 +12,7 @@ $$
 
 [유한 확률 공간](probability.md)의 언어가 필요하다. 정의역에 균등분포를 주면 $\lbrace\chi_S\rbrace$ 가 정규직교기저가 되고 Parseval 항등식이 $\sum_S\hat f(S)^2=1$ 이 된다. $\hat f(S)^2$ 가 확률분포가 되어 무게가 어느 준위에 실려 있는지를 물을 수 있다.
 
-[PCP 정리](pcp-theorem.md)의 검증자를 설계할 때 필요한 **독재자 검사**, 곧 함수가 한 좌표에만 의존하는지를 상수 개의 질의로 판정하는 절차의 완전성과 건전성이 잡음 안정성의 부등식으로 계산된다. [유일게임 추측](unique-games.md) 아래에서 최대 절단의 최적 근사비를 정하는 **Majority is Stablest** 정리가 이 계통의 정점이다.
+[PCP 정리](pcp-theorem.md)(probabilistically checkable proof)의 검증자를 설계할 때 필요한 **독재자 검사**, 곧 함수가 한 좌표에만 의존하는지를 상수 개의 질의로 판정하는 절차의 완전성과 건전성이 잡음 안정성의 부등식으로 계산된다. [유일게임 추측](unique-games.md) 아래에서 최대 절단의 최적 근사비를 정하는 **Majority is Stablest** 정리가 이 계통의 정점이다.
 
 # 직관
 

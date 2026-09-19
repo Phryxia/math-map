@@ -2,7 +2,7 @@
 
 # 개요
 
-Birch–Swinnerton-Dyer 추측은 타원곡선 $E/\mathbb Q$ 의 $L$ 함수가 $s=1$ 에서 소멸하는 차수가 Mordell–Weil 군의 계수와 같다고 주장한다.
+Birch–Swinnerton-Dyer(BSD) 추측은 타원곡선 $E/\mathbb Q$ 의 $L$ 함수가 $s=1$ 에서 소멸하는 차수가 Mordell–Weil 군의 계수와 같다고 주장한다.
 
 $$
 \mathrm{ord}\_{s=1}L(E,s)\thickspace=\thickspace\mathrm{rank}\thinspace E(\mathbb Q)
@@ -93,7 +93,7 @@ $$
 
 | 결과 | 내용 |
 |---|---|
-| Coates–Wiles (1977) | CM 곡선에서 $r\gt 0\Rightarrow L(E,1)=0$ |
+| Coates–Wiles (1977) | [복소 곱셈](complex-multiplication.md)(complex multiplication, CM)을 가진 곡선에서 $r\gt 0\Rightarrow L(E,1)=0$ |
 | Gross–Zagier (1986) | $L'(E,1)$ 이 Heegner 점의 정준 높이와 같다 |
 | Kolyvagin (1988) | 해석적 순위 $\le1$ 이면 대수적 순위가 같고 $\text{Ш}$ 가 유한 |
 | Skinner–Urban, Kato | Iwasawa 주추측을 통해 순위 $0$ 의 강한 BSD 를 여러 경우에 |
