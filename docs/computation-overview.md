@@ -86,7 +86,7 @@ graph TD
 - [Shannon entropy](entropy.md): 부호화 길이의 하한이 되는 불확실성의 척도
 - [무손실 부호화 정리](source-coding.md): 압축률의 한계가 entropy 다
 - [채널 부호화 정리](channel-coding.md): 잡음 있는 채널의 용량과 신뢰 전송
-- [KL divergence와 상호정보량](kl-divergence.md): 두 분포의 부호화 손실과 그 결합 형태
+- [KL divergence](kl-divergence.md): 두 분포의 부호화 손실과 그 결합 형태
 
 ## 생성모형
 

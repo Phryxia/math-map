@@ -12,7 +12,7 @@ $$
 
 남은 일은 $u,v$ 를 주변분포에 맞추는 것이고, 두 조건을 번갈아 강제하는 것이 **Sinkhorn 반복**이다. 행렬-벡터 곱만 쓰므로 GPU 에서 빠르다.
 
-해가 대각 스케일링 꼴인 것은 볼록쌍대가 설명하고, 반복의 수렴은 [KL 발산](kl-divergence.md)에 대한 교대 사영과 Hilbert 사영 거리의 축약성이 설명한다. 작은 $\varepsilon$ 에서의 수치적 언더플로는 로그 영역 구현이, $\varepsilon\gt 0$ 이 남기는 편향은 Sinkhorn 발산이 고친다.
+해가 대각 스케일링 꼴인 것은 볼록쌍대가 설명하고, 반복의 수렴은 [KL divergence](kl-divergence.md)에 대한 교대 사영과 Hilbert 사영 거리의 축약성이 설명한다. 작은 $\varepsilon$ 에서의 수치적 언더플로는 로그 영역 구현이, $\varepsilon\gt 0$ 이 남기는 편향은 Sinkhorn 발산이 고친다.
 
 # 직관
 
@@ -49,7 +49,7 @@ $$
 \langle C,P\rangle-\varepsilon H(P)=\varepsilon\thinspace\mathrm{KL}(P\thinspace\Vert\thinspace K)+\text{상수}
 $$
 
-이므로 엔트로피 정규화 최적 수송은 $K$ 에 KL 발산으로 가장 가까운 결합을 찾는 문제다. 제약 집합은 아핀집합 두 개의 교집합이다.
+이므로 엔트로피 정규화 최적 수송은 $K$ 에 KL divergence으로 가장 가까운 결합을 찾는 문제다. 제약 집합은 아핀집합 두 개의 교집합이다.
 
 $$
 \mathcal C_1=\lbrace P:P\mathbf 1=a\rbrace,\qquad \mathcal C_2=\lbrace P:P^\top\mathbf 1=b\rbrace
@@ -188,7 +188,7 @@ $$
 ## 선수지식
 
 - [최적 수송과 Wasserstein 거리](optimal-transport.md)
-- [KL divergence와 상호정보량](kl-divergence.md)
+- [KL divergence](kl-divergence.md)
 
 ## 더 알아보기
 

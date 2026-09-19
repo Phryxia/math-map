@@ -1,4 +1,4 @@
-# KL divergence와 상호정보량
+# KL divergence
 
 # 개요
 
@@ -36,7 +36,7 @@ $$
 D(P\thinspace\Vert\thinspace Q) = \int \log\negthinspace\left(\frac{dP}{dQ}\right) dP ,
 $$
 
-단 $P$ 가 $Q$ 에 대해 절대연속일 때만 유한할 수 있다. 로그의 밑이 2면 단위는 비트, 자연로그면 nat이다.[^1]
+단 $P$ 가 $Q$ 에 대해 절대연속일 때만 유한할 수 있다. 로그의 밑이 2면 단위는 비트, 자연로그면 nat이다.[^1] **상대엔트로피**가 같은 양의 다른 이름이다.
 
 ## 조건부 divergence와 연쇄법칙
 

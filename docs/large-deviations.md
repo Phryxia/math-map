@@ -98,7 +98,7 @@ $$
 ## 선수지식
 
 - [집중부등식](concentration-inequalities.md)
-- [KL divergence와 상호정보량](kl-divergence.md)
+- [KL divergence](kl-divergence.md)
 
 ## 더 알아보기
 

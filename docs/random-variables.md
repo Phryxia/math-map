@@ -185,7 +185,7 @@ $$
 
 ### 정보와 통계
 
-- [KL divergence와 상호정보량](kl-divergence.md)
+- [KL divergence](kl-divergence.md)
 - [최대가능도 추정](maximum-likelihood.md)
 - [Bayes 추론과 사후분포](bayesian-inference.md)
 - [가설검정과 p-값](hypothesis-testing.md)
