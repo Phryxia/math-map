@@ -59,7 +59,7 @@ graph TD
   H["상반평면 H"] -->|"Γ_0(N) 로 나눈다"| Y["Y_0(N), 비콤팩트"]
   Y -->|"첨점을 붙인다"| X["X_0(N), 콤팩트 Riemann 곡면"]
   X -->|"모듈라이 해석 (E,C)"| Q["Q 위의 대수곡선"]
-  Q --> GAL["Galois 작용이 가능해진다"]
+  Q --> GAL["Galois 군의 작용"]
   X -->|"무게 2 첨점형식 = 정칙 1 형식"| G["dim S_2 = g(X_0(N))"]
   RH["Riemann–Hurwitz<br/>μ, ν₂, ν₃, ν_∞"] --> G
   X -->|"Jacobian"| J["J_0(N), 차원 g"]
