@@ -138,7 +138,7 @@ $n\ge k$ 이면 $\mathbb C[S_k]\to\mathcal S$ 가 단사이고 $\mathcal S\cong\
 ## 두 표현론 사이의 사전
 
 - **표현론의 사전**: 대칭군 표현론(조합적, Young 배열)과 $\mathrm{GL}\_n$ 표현론(기하적, 최고무게)을 서로 번역한다. 한쪽의 정리가 다른 쪽 정리를 곧바로 준다.
-- **대칭함수 이론의 근거**: 거듭제곱합–Schur 전개, Cauchy 항등식, Littlewood–Richardson 규칙이 전부 이 분해의 그림자다. [Schur 다항식](schur-polynomials.md)의 여러 정의가 왜 일치하는지가 여기서 설명된다.
+- **대칭함수 이론의 근거**: 거듭제곱합–Schur 전개, Cauchy 항등식, Littlewood–Richardson 규칙이 전부 이 분해에서 따라 나온다. [Schur 다항식](schur-polynomials.md)의 여러 정의가 왜 일치하는지가 여기서 설명된다.
 - **양자정보**: Schur–Weyl 변환이 $k$ 개 복사본에서 스펙트럼을 추정하는 최적 측정을 주고, 양자 자료 압축과 얽힘 농축에 쓰인다.
 - **통계물리와 적분가능계**: 스핀 사슬의 대칭성을 두 방향에서 쪼개는 표준 기법이고, 양자군 판본이 Yang–Baxter 방정식과 직접 연결된다.
 

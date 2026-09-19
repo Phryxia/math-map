@@ -183,7 +183,7 @@ $$
 \dim V_\lambda(\mu)=\char35{}\bigl\lbrace\text{MV 순환}\bigr\rbrace
 $$
 
-무게 중복도가 기하적 순환의 개수다. Kostant 분할 함수나 Littelmann 경로가 세던 수를 기하가 직접 준다. MV 다면체가 이 순환들의 조합적 그림자이고 결정 기저(crystal basis)와 맞물린다.
+무게 중복도가 기하적 순환의 개수다. Kostant 분할 함수나 Littelmann 경로가 세던 수를 기하가 직접 준다. MV 다면체가 이 순환들을 조합적으로 나타낸 것이고 결정 기저(crystal basis)와 맞물린다.
 
 ## 고전적 Satake 의 회복
 
