@@ -2,7 +2,7 @@
 
 # 개요
 
-Chern–Simons 작용은 3 차원 다양체 위에서 계량 없이 정의되는 접속의 범함수다.
+Chern–Simons 작용[^1]은 3 차원 다양체 위에서 계량 없이 정의되는 접속의 범함수다.
 
 $$
 \mathrm{CS}(A)=\frac1{8\pi^2}\int_M\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)
@@ -34,7 +34,7 @@ $$
 
 ## 게이지 변환과 권선수
 
-게이지 변환 $A\mapsto g^{-1}Ag+g^{-1}dg$ 에서 작용은 다음과 같이 변한다.
+게이지 변환 $A\mapsto g^{-1}Ag+g^{-1}dg$ 에서 작용은 다음과 같이 변한다[^2].
 
 $$
 \mathrm{CS}(A^g)=\mathrm{CS}(A)-\frac1{24\pi^2}\int_M\mathrm{tr}\big((g^{-1}dg)^{\wedge3}\big)

@@ -75,7 +75,7 @@ $\mathrm{ch}\thinspace L(0)=\mathrm{ch}\thinspace M(0)-\mathrm{ch}\thinspace M(-
 
 ## 범주 $\mathcal O$
 
-$\mathfrak g$ 를 복소 반단순 Lie 대수, $\mathfrak h\subset\mathfrak b\subset\mathfrak g$ 를 Cartan 과 Borel 이라 하자. $\mathcal O$ 의 대상은 다음 셋을 만족하는 $U(\mathfrak g)$ 가군 $M$ 이다.
+$\mathfrak g$ 를 복소 반단순 Lie 대수, $\mathfrak h\subset\mathfrak b\subset\mathfrak g$ 를 Cartan 과 Borel 이라 하자. $\mathcal O$ 의 대상은 다음 셋을 만족하는 $U(\mathfrak g)$ 가군 $M$ 이다[^2].
 
 1. $M$ 은 유한생성이다.
 2. $M=\bigoplus_{\mu\in\mathfrak h^\ast}M_\mu$ 로 $\mathfrak h$ 무게 분해가 되고 각 $M_\mu$ 는 유한차원이다.
@@ -132,7 +132,7 @@ $$
 \mathrm{ch}\thinspace L(w\cdot\lambda)=\sum_{y\ge w}(-1)^{\ell(y)-\ell(w)}P_{w_0y,\thinspace w_0w}(1)\thinspace\mathrm{ch}\thinspace M(y\cdot\lambda)
 $$
 
-Beilinson–Bernstein 과 Brylinski–Kashiwara 가 깃발다양체 위의 $D$ 가군으로 증명했다. 중복도가 교차 코호몰로지 층의 줄기 차원으로 계산되므로 양수성이 따라온다.
+Beilinson–Bernstein 과 Brylinski–Kashiwara 가 깃발다양체 위의 $D$ 가군으로 증명했다[^3]. 중복도가 교차 코호몰로지 층의 줄기 차원으로 계산되므로 양수성이 따라온다.
 
 # 성질
 

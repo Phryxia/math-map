@@ -2,7 +2,7 @@
 
 # 개요
 
-Casson 불변량 $\lambda(M)$ 은 정수 호몰로지 3 구면 $M$ 의 불가약 $\mathrm{SU}(2)$ 표현을 부호를 붙여 센 수다.
+Casson 불변량[^1] $\lambda(M)$ 은 정수 호몰로지 3 구면 $M$ 의 불가약 $\mathrm{SU}(2)$ 표현을 부호를 붙여 센 수다.
 
 $$
 \lambda(M)=\tfrac12\cdot\char35{}^{\text{대수적}}\big\lbrace\rho:\pi_1(M)\to\mathrm{SU}(2)\ \text{불가약}\big\rbrace
@@ -94,7 +94,7 @@ Casson 불변량은 세 언어로 같은 것을 말한다. 게이지 이론에�
 ## 확장
 
 - **Walker–Lescop.** 유리 호몰로지 구면, 나아가 모든 닫힌 유향 3 다양체로 확장된다. Lescop 의 확장은 명시적인 수술 공식을 갖는다.
-- **Floer 호몰로지.** $\lambda$ 가 Euler 지표로 올라간다. 정보량이 크게 늘고, $\lambda=0$ 이지만 Floer 호몰로지가 자명하지 않은 예가 있다.
+- **Floer 호몰로지.**[^2] $\lambda$ 가 Euler 지표로 올라간다. 정보량이 크게 늘고, $\lambda=0$ 이지만 Floer 호몰로지가 자명하지 않은 예가 있다.
 - **$\mathrm{SU}(n)$ 판.** 더 큰 게이지군으로 같은 셈을 하려는 시도가 있고, 표현공간의 특이점 때문에 어렵다.
 
 # 활용
