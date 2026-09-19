@@ -14,19 +14,6 @@ Cantor 는 실수 집합이 자연수 집합보다 크다는 것을 보인 뒤 �
 
 독립성 증명 둘은 이 자유도를 정반대로 쓴다. Gödel 은 멱집합을 정의 가능한 것만 남기도록 좁혀 CH 가 성립하는 우주를 만들었고, Cohen 은 바깥에서 새 실수를 밀어 넣어 실수의 개수를 늘렸다. 두 조작 모두 ZFC 의 공리를 지킨다.
 
-```mermaid
-graph TD
-  Z["ZFC (무모순이라 가정)"] --> L["구성가능 우주 L (Gödel 1938)"]
-  Z --> F["forcing 확장 M[G] (Cohen 1963)"]
-  L --> A["L 은 ZFC + GCH 의 모형"]
-  F --> B["M[G] 는 ZFC + not CH 의 모형"]
-  A --> C1["Con(ZFC) -> Con(ZFC + CH)"]
-  B --> C2["Con(ZFC) -> Con(ZFC + not CH)"]
-  C1 --> I["CH 는 ZFC 와 독립"]
-  C2 --> I
-  I --> N["새 공리 탐색: 거대기수, forcing 공리, Ultimate L"]
-```
-
 # 정의
 
 ## 연속체 가설
