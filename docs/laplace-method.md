@@ -139,7 +139,7 @@ $$
 \log p(D)\approx\log p(D\mid\hat\theta)-\frac{d}2\log n+\cdots
 $$
 
-두 번째 식의 $-\tfrac d2\log n$ 이 BIC 의 벌점항이고, 모형 선택 기준이 Gauss 적분의 부피에서 나온다. [Bayes 추론](bayesian-inference.md)의 실무 계산과 [최대가능도](maximum-likelihood.md)의 점근 정규성이 같은 전개의 두 면이다.
+두 번째 식의 $-\tfrac d2\log n$ 이 **BIC**(Bayesian information criterion)의 벌점항이고, 모형 선택 기준이 Gauss 적분의 부피에서 나온다. [Bayes 추론](bayesian-inference.md)의 실무 계산과 [최대가능도](maximum-likelihood.md)의 점근 정규성이 같은 전개의 두 면이다.
 
 ## 통계역학의 최대항 방법
 

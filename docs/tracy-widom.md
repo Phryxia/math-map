@@ -130,7 +130,7 @@ $$
 \frac{\ell_n - 2\sqrt n}{n^{1/6}} \thickspace\longrightarrow\thickspace \mathrm{TW}\_2
 $$
 
-를 준다. 순열에는 행렬도 고윳값도 없지만 같은 분포가 나온다. 무작위 성장 모형(모서리 성장, ASEP, 방향성 중합체)에서도 요동이 $t^{1/3}$ 규모이고 극한이 Tracy–Widom 이며, 이 부류를 **KPZ 보편성류**라 한다.
+를 준다. 순열에는 행렬도 고윳값도 없지만 같은 분포가 나온다. 무작위 성장 모형(모서리 성장, ASEP, 방향성 중합체)에서도 요동이 $t^{1/3}$ 규모이고 극한이 Tracy–Widom 이며, 이 부류를 **KPZ**(Kardar–Parisi–Zhang) **보편성류**라 한다.
 
 # 활용
 

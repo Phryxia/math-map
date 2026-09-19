@@ -152,7 +152,7 @@ $$
 
 - **모듈러성 정리와 Fermat.** 타원곡선의 $a_p$ 수열이 어느 새형식에서 오는지를 묻는 것이 모듈러성이다. 다중도 1 에 의해 그 새형식은 있다면 하나뿐이고 레벨은 도체로 결정된다. Ribet 의 레벨 낮추기 정리가 가상의 Frey 곡선을 레벨 2 의 새형식으로 보내는데 $S_2(\Gamma_0(2))=0$ 이므로 Fermat 마지막 정리가 따라온다.
 - **Galois 표현의 변형.** Hecke 대수 $\mathbb T$ 가 변형환 $R$ 과 동형이라는 $R=\mathbb T$ 정리가 Wiles 의 증명 구조다. $\mathbb T$ 가 유한 $\mathbb Z$ 가군이라는 성질이 그 논증의 전제다.
-- **계산 정수론.** 모듈러 기호로 $\mathbb T$ 의 행렬 표현을 얻어 새형식을 유한 계산으로 열거한다. LMFDB 의 새형식 표가 이 방법으로 만들어진다.
+- **계산 정수론.** 모듈러 기호로 $\mathbb T$ 의 행렬 표현을 얻어 새형식을 유한 계산으로 열거한다. **LMFDB**(L-functions and Modular Forms Database)의 새형식 표가 이 방법으로 만들어진다.
 - **자기동형 표현.** 이중 잉여류 정의를 아델화하면 $T_p$ 는 국소 Hecke 대수의 원소이고 고유값은 [Satake 매개변수](satake-isomorphism.md)다. [아델](adeles.md) 위의 서술에서 $\mathrm{GL}\_n$ 으로 올라가는 길이 열린다.
 
 [^1]: A. O. L. Atkin, J. Lehner, *Hecke Operators on* $\Gamma_0(m)$ (Mathematische Annalen 185, 1970), 134–160. 옛부분공간의 정의와 직교여공간의 다중도 1 은 Theorem 5, $p\mid N$ 에서의 $a_p$ 값은 Theorem 3 이다.
