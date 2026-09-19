@@ -110,7 +110,7 @@ Deuring 대응의 존재는 정리지만 $E$ 가 주어졌을 때 $\mathrm{End}(
 
 ## SQIsign
 
-SIDH 가 2022 년에 깨진 뒤에도 살아남은 동종사상 기반 서명이 SQIsign 이고 구조는 $\Sigma$ 규약이다.
+**SIDH**(supersingular isogeny Diffie–Hellman)가 2022 년에 깨진 뒤에도 살아남은 동종사상 기반 서명이 SQIsign 이고 구조는 $\Sigma$ 규약이다.
 
 1. 비밀키는 기준 곡선 $E_0$ 에서 비밀 곡선 $E_A$ 로 가는 비밀 동종사상이며, 이를 알면 $\mathrm{End}(E_A)$ 를 안다. 공개키는 $E_A$ 뿐이다.
 2. 서명자가 임의의 곡선 $E_1$ 로 걸어가 약속으로 보낸다.
