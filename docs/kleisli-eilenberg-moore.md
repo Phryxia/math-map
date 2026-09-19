@@ -37,7 +37,7 @@ $f : X \to T(Y)$ 와 $g : Y \to T(Z)$ 는 치역과 정의역이 맞지 않아 �
 
 ## 최소와 최대
 
-$T$ 를 낳는 분해가 주어지면 자유대수가 그 안에 있어야 하므로 Kleisli 에서 그쪽으로 가는 functor 가 항상 있다. 임의의 분해에 등장하는 대상은 $T$ 로 계산되는 구조를 가지므로 Eilenberg–Moore 로 보낼 수 있다.
+$T$ 를 낳는 분해가 주어지면 자유대수가 그 안에 있어야 하므로 Kleisli 에서 그쪽으로 가는 함자가 항상 있다. 임의의 분해에 등장하는 대상은 $T$ 로 계산되는 구조를 가지므로 Eilenberg–Moore 로 보낼 수 있다.
 
 # 정의
 
@@ -45,7 +45,7 @@ $T$ 를 낳는 분해가 주어지면 자유대수가 그 안에 있어야 하�
 
 monad $T$ 를 고정한다. 대상은 $T = GF$ 이고 unit 과 $\mu$ 가 monad 의 것과 일치하는 수반 $F \dashv G : \mathcal D \to \mathcal C$ 이다.
 
-사상 $(\mathcal D, F, G) \to (\mathcal D', F', G')$ 은 functor $K : \mathcal D \to \mathcal D'$ 로 $KF = F'$ 와 $G'K = G$ 를 만족하는 것이다. 이 범주를 $\mathrm{Adj}(T)$ 라 쓴다.
+사상 $(\mathcal D, F, G) \to (\mathcal D', F', G')$ 은 함자 $K : \mathcal D \to \mathcal D'$ 로 $KF = F'$ 와 $G'K = G$ 를 만족하는 것이다. 이 범주를 $\mathrm{Adj}(T)$ 라 쓴다.
 
 ## Kleisli 범주
 
@@ -61,7 +61,7 @@ $$
 g\odot f=\mu_Z\circ T(g)\circ f
 $$
 
-monad 법칙이 이 합성의 결합법칙과 단위법칙이다. 자유 functor $F_T : \mathcal C \to \mathcal C_T$ 는 대상에 항등이고 사상 $f$ 를 $\eta\circ f$ 로 보내며, 망각 functor $G_T$ 는 $X \mapsto T(X)$ 다.
+monad 법칙이 이 합성의 결합법칙과 단위법칙이다. 자유 함자 $F_T : \mathcal C \to \mathcal C_T$ 는 대상에 항등이고 사상 $f$ 를 $\eta\circ f$ 로 보내며, 망각 함자 $G_T$ 는 $X \mapsto T(X)$ 다.
 
 ## Eilenberg–Moore 범주
 
@@ -71,9 +71,9 @@ $$
 a\circ\eta_A=\mathrm{id}\_A,\qquad a\circ\mu_A=a\circ T(a)
 $$
 
-사상 $(A,a) \to (B,b)$ 는 $h : A \to B$ 로 $h\circ a = b\circ T(h)$ 를 만족하는 것이다. 망각 functor $G^T : \mathcal C^T \to \mathcal C$ 는 $(A,a)\mapsto A$ 이고, 그 left adjoint 는 자유대수 $X \mapsto (T(X), \mu_X)$ 다.
+사상 $(A,a) \to (B,b)$ 는 $h : A \to B$ 로 $h\circ a = b\circ T(h)$ 를 만족하는 것이다. 망각 함자 $G^T : \mathcal C^T \to \mathcal C$ 는 $(A,a)\mapsto A$ 이고, 그 왼쪽 수반은 자유대수 $X \mapsto (T(X), \mu_X)$ 다.
 
-## 비교 functor
+## 비교 함자
 
 임의의 분해 $F \dashv G : \mathcal D \to \mathcal C$ 에 대해 다음이 $\mathrm{Adj}(T)$ 의 사상이다.
 
@@ -81,7 +81,7 @@ $$
 K:\mathcal D\to\mathcal C^T,\qquad D\mapsto\big(G(D),\ G(\varepsilon_D)\big)
 $$
 
-$\varepsilon$ 은 counit 이다. 이 $K$ 를 비교 functor 라 한다.
+$\varepsilon$ 은 counit 이다. 이 $K$ 를 비교 함자 라 한다.
 
 # 성질
 
@@ -95,7 +95,7 @@ $\mathcal C_T$ 는 $\mathrm{Adj}(T)$ 의 시작대상이고 $\mathcal C^T$ 는 �
 
 ## Kleisli 범주의 매장
 
-$\mathcal C^T$ 로 가는 비교 functor 를 $\mathcal C_T$ 에 적용하면 $X \mapsto (T(X),\mu_X)$ 이고 충만하고 충실하다. $\mathcal C_T$ 는 자유대수들이 이루는 $\mathcal C^T$ 의 충만한 부분범주와 동치다.
+$\mathcal C^T$ 로 가는 비교 함자를 $\mathcal C_T$ 에 적용하면 $X \mapsto (T(X),\mu_X)$ 이고 충만하고 충실하다. $\mathcal C_T$ 는 자유대수들이 이루는 $\mathcal C^T$ 의 충만한 부분범주와 동치다.
 
 $$
 \mathcal C^T\big((T(X),\mu_X),(T(Y),\mu_Y)\big)\cong\mathcal C(X,T(Y))=\mathcal C_T(X,Y)
@@ -105,17 +105,17 @@ $$
 
 ## 극한과 쌍대극한
 
-$\mathcal C^T$ 는 $\mathcal C$ 가 가진 모든 극한을 가지며 망각 functor 가 그것을 보존하고 반사한다. 대수의 곱은 밑바탕 대상의 곱에 성분별 구조를 준 것이다. 쌍대극한은 일반적으로 존재가 보장되지 않고, 군의 자유곱이 집합의 합집합과 다른 것이 그 예다.
+$\mathcal C^T$ 는 $\mathcal C$ 가 가진 모든 극한을 가지며 망각 함자가 그것을 보존하고 반사한다. 대수의 곱은 밑바탕 대상의 곱에 성분별 구조를 준 것이다. 쌍대극한은 일반적으로 존재가 보장되지 않고, 군의 자유곱이 집합의 합집합과 다른 것이 그 예다.
 
 $\mathcal C_T$ 는 $\mathcal C$ 의 쌍대극한을 물려받지만 극한은 대개 갖지 못한다.
 
 ## Monadicity
 
-비교 functor $K$ 가 동치일 때 $G$ 를 monadic 하다고 한다. 이 경우 $\mathcal D$ 는 $\mathcal C$ 위의 대수 범주로 완전히 재구성된다.
+비교 함자 $K$ 가 동치일 때 $G$ 를 monadic 하다고 한다. 이 경우 $\mathcal D$ 는 $\mathcal C$ 위의 대수 범주로 완전히 재구성된다.
 
-Beck 의 monadicity 정리가 판정 기준을 준다. $G$ 가 left adjoint 를 가지고, 동형을 반사하며, $G$ 가 분할 쌍대평행쌍을 가지는 평행쌍의 여핵을 만들고 보존하면 monadic 이다.
+Beck 의 monadicity 정리가 판정 기준을 준다. $G$ 가 왼쪽 수반을 가지고, 동형을 반사하며, $G$ 가 분할 쌍대평행쌍을 가지는 평행쌍의 여핵을 만들고 보존하면 monadic 이다.
 
-| 망각 functor | monadic 인가 |
+| 망각 함자 | monadic 인가 |
 |---|---|
 | $\mathbf{Grp}\to\mathbf{Set}$ | 예 |
 | $\mathbf{Ring}\to\mathbf{Set}$ | 예 |
@@ -123,7 +123,7 @@ Beck 의 monadicity 정리가 판정 기준을 준다. $G$ 가 left adjoint 를 
 | $\mathbf{Top}\to\mathbf{Set}$ | 아니오 |
 | $\mathbf{Field}\to\mathbf{Set}$ | 아니오 |
 
-위상공간에서는 같은 밑바탕 집합에 서로 다른 위상이 있고 연속 전단사가 동형이 아닐 수 있어 동형을 반사하지 못한다. 체는 left adjoint 가 없다.
+위상공간에서는 같은 밑바탕 집합에 서로 다른 위상이 있고 연속 전단사가 동형이 아닐 수 있어 동형을 반사하지 못한다. 체는 왼쪽 수반 가 없다.
 
 콤팩트 Hausdorff 공간의 범주가 초필터 monad 에 대해 monadic 이라는 것이 이 정리의 대표적 응용이다.
 
