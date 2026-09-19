@@ -126,7 +126,7 @@ $$
 \varphi_{S_n}(t)=\Bigl[1-\frac{t^2}{2n}+o\bigl(1/n\bigr)\Bigr]^n\longrightarrow e^{-t^2/2}
 $$
 
-우변이 $N(0,1)$ 의 특성함수이고 0 에서 연속이므로 Lévy 연속성 정리가 분포 수렴을 준다. 희박 극한에서 이항분포가 푸아송으로 가는 것도 같은 골격이다. $\bigl(1-\lambda/n+\lambda e^{it}/n\bigr)^n\to\exp\bigl(\lambda(e^{it}-1)\bigr)$ 이다.
+우변이 $N(0,1)$ 의 특성함수이고 0 에서 연속이므로 Lévy 연속성 정리가 분포 수렴을 준다. 희박 극한에서 이항분포가 푸아송으로 가는 것도 같은 방식이다. $\bigl(1-\lambda/n+\lambda e^{it}/n\bigr)^n\to\exp\bigl(\lambda(e^{it}-1)\bigr)$ 이다.
 
 ## 안정분포와 무한분해가능성
 

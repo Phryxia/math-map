@@ -82,7 +82,7 @@ $$
 
 ## 일치성
 
-모형이 식별가능하고 정칙 조건이 만족되면 MLE는 참값으로 확률수렴한다. 증명의 골격은 다음이다. [큰 수의 법칙](law-of-large-numbers.md)에 의해 $1/n$ 을 곱한 로그가능도가 참값 $\theta_0$ 에서의 기댓값으로 수렴한다.
+모형이 식별가능하고 정칙 조건이 만족되면 MLE는 참값으로 확률수렴한다. 증명의 요지는 다음이다. [큰 수의 법칙](law-of-large-numbers.md)에 의해 $1/n$ 을 곱한 로그가능도가 참값 $\theta_0$ 에서의 기댓값으로 수렴한다.
 
 $$
 \frac1n\ell(\theta)\thinspace\xrightarrow{\thinspace P\thinspace}\thinspace

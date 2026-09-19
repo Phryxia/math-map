@@ -64,7 +64,7 @@ $$
 \mathrm{Gr}^\lambda=G(\mathcal O)\cdot t^\lambda
 $$
 
-궤도가 지배적 쌍대지표로 매겨지고 $\widehat G$ 의 기약표현도 같은 집합으로 매겨진다. 이 일치가 대응의 골격이다.
+궤도가 지배적 쌍대지표로 매겨지고 $\widehat G$ 의 기약표현도 같은 집합으로 매겨진다. 이 일치가 대응을 규정한다.
 
 | | $\mathrm{Gr}\_G$ 쪽 | $\mathrm{Rep}(\widehat G)$ 쪽 |
 |---|---|---|
