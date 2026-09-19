@@ -77,6 +77,6 @@ $y'=F(x,y)$ 에서 $F$ 가 연속이기만 하면 Euler 꺾은선으로 만든 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Peano 존재정리](peano-existence-theorem.md)
 
 #analysis #functional_analysis #topology

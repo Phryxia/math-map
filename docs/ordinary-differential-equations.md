@@ -147,6 +147,7 @@ f가 Lipschitz이고 해가 두 번 미분가능한 구간에서 전역 오차�
 
 ## 더 알아보기
 
+- [Peano 존재정리](peano-existence-theorem.md)
 - [Airy 함수](airy-functions.md)
 - [WKB 근사와 연결 공식](wkb-approximation.md)
 
