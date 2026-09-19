@@ -145,6 +145,6 @@ $$
 ## 더 알아보기
 
 - [Witten 점근 추측과 Ohtsuki 급수](witten-asymptotics.md)
-- [Airy 함수와 회전점](airy-functions.md)
+- [Airy 함수](airy-functions.md)
 
 #analysis #complex_analysis #computation

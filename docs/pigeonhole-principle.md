@@ -40,7 +40,7 @@ $$
 |A|\gt |B|,\ |B|\lt\aleph_0,\ A=\bigsqcup_{b\in B}f^{-1}(b)\ \text{이고 }A\text{가 무한이면}\ \exists\thinspace b:\ f^{-1}(b)\ \text{무한}
 $$
 
-[가산성](cardinality.md)의 언어로는 가산 집합을 유한 개 조각으로 나누면 적어도 하나가 가산 무한이라는 뜻이다.
+[기수](cardinality.md)의 언어로는 가산 집합을 유한 개 조각으로 나누면 적어도 하나가 가산 무한이라는 뜻이다.
 
 ## 측도형
 

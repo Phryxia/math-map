@@ -134,7 +134,7 @@ epsilon_0는 가산 서수다. Gentzen은 Peano 산술의 무모순성이 epsilo
 
 ## 서수와 기수
 
-각 서수는 자기 크기의 최소 서수와 대응시킬 수 있고, 그 최소 서수를 기수로 정의한다. omega, omega+1, omega 곱하기 2, omega의 omega승은 모두 가산이며 기수로는 하나다([가산성과 비가산성](cardinality.md)). 즉 서수는 기수보다 훨씬 촘촘하다.
+각 서수는 자기 크기의 최소 서수와 대응시킬 수 있고, 그 최소 서수를 기수로 정의한다. omega, omega+1, omega 곱하기 2, omega의 omega승은 모두 가산이며 기수로는 하나다([기수](cardinality.md)). 즉 서수는 기수보다 훨씬 촘촘하다.
 
 # 활용
 

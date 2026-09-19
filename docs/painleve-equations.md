@@ -142,7 +142,7 @@ $$
 
 ## 선수지식
 
-- [Airy 함수와 회전점](airy-functions.md)
+- [Airy 함수](airy-functions.md)
 
 ## 더 알아보기
 

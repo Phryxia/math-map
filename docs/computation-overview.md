@@ -13,7 +13,7 @@
 ```mermaid
 graph TD
   PF["명제와 증명"] --> CB["계산 가능성과 정지 문제"]
-  CA["가산성과 비가산성"] --> CB
+  CA["기수"] --> CB
   CB --> FA["유한 오토마타"]
   CB --> RT["Rice 정리"]
   CB --> LC["Lambda calculus"]

@@ -6,7 +6,7 @@
 
 모든 부분집합에 크기를 주면서 가산 가법성과 평행이동 불변성을 동시에 지킬 수는 없다. 그래서 측도론은 크기를 줄 집합부터 정한다. 그 집합들의 모임인 $\sigma$ 대수가 정의의 절반을 차지한다.
 
-[유한 확률 공간](probability.md)에서 쓰던 정의, 곧 각 결과의 확률을 더하는 방식은 무한으로 넘어가면 통하지 않는다. [위상 공간](topology.md)의 열린집합과 [가산성](cardinality.md)의 구별도 여기서 필요해진다.
+[유한 확률 공간](probability.md)에서 쓰던 정의, 곧 각 결과의 확률을 더하는 방식은 무한으로 넘어가면 통하지 않는다. [위상 공간](topology.md)의 열린집합과 가산·비가산의 구별([기수](cardinality.md))도 여기서 필요해진다.
 
 # 직관
 
@@ -97,7 +97,7 @@ Lebesgue 측도 외에도 목적에 따라 다른 측도를 쓴다. Hausdorff �
 
 - [유한 확률 공간](probability.md)
 - [위상 공간](topology.md)
-- [가산성과 비가산성](cardinality.md)
+- [기수](cardinality.md)
 - [측도론 개관](measure-theory-overview.md)
 
 ## 더 알아보기

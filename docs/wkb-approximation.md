@@ -158,7 +158,7 @@ WKB 는 특이 섭동의 가장 단순한 비자명 예다. 지수 어깨 위의
 ## 선수지식
 
 - [상미분방정식](ordinary-differential-equations.md)
-- [Airy 함수와 회전점](airy-functions.md)
+- [Airy 함수](airy-functions.md)
 
 ## 더 알아보기
 

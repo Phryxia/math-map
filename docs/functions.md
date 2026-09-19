@@ -74,7 +74,7 @@ $A$ 가 비어 있지 않을 때 $f$ 가 단사인 것은 $g \circ f = \mathrm{i
 
 유한집합 사이의 함수는 $|B|^{|A|}$ 개다. 각 입력에 대해 출력을 독립으로 고르므로 [셈의 기본 원리](counting-principles.md)의 곱 법칙이 적용된다. $A$ 에서 $\lbrace 0,1\rbrace$ 로 가는 함수는 부분집합과 일대일 대응하고, 특성함수가 $2^A$ 와 $\mathcal P(A)$ 를 같은 것으로 만든다.
 
-전단사의 존재를 크기가 같다는 것의 정의로 삼으면 유한집합의 직관이 무한집합으로 확장되고, [가산성과 비가산성](cardinality.md)이 이 정의를 쓴다.
+전단사의 존재를 크기가 같다는 것의 정의로 삼으면 유한집합의 직관이 무한집합으로 확장되고, [기수](cardinality.md) 이론이 이 정의를 쓴다.
 
 # 활용
 
@@ -94,7 +94,7 @@ $A$ 가 비어 있지 않을 때 $f$ 가 단사인 것은 $g \circ f = \mathrm{i
 
 ### 집합론과 계산
 
-- [가산성과 비가산성](cardinality.md)
+- [기수](cardinality.md)
 - [셈의 기본 원리](counting-principles.md)
 - [계산 가능성과 정지 문제](computability.md)
 - [Lambda calculus](lambda-calculus.md)

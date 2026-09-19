@@ -114,6 +114,6 @@ $$
 ### 증명 기법의 대표 사례
 
 - [비둘기집 원리](pigeonhole-principle.md)
-- [가산성과 비가산성](cardinality.md)
+- [기수](cardinality.md)
 
 #logic #foundations

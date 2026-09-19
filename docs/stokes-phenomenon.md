@@ -144,7 +144,7 @@ Borel 변환을 유리함수로 근사(Padé)한 뒤 Laplace 적분하는 방식
 
 ## 더 알아보기
 
-- [Airy 함수와 회전점](airy-functions.md)
+- [Airy 함수](airy-functions.md)
 - [Resurgence 와 alien 미분](resurgence.md)
 - [Padé 근사와 Borel 재합산](borel-pade.md)
 
