@@ -108,7 +108,7 @@ $6\Lambda(\pi/3)$ 이 볼륨 추측에서 색 Jones 다항식의 증가율로 �
 
 - **부피 계산.** 3 다양체를 이상 사면체로 분할하고 각 사면체의 각을 붙임 방정식으로 푼 뒤 $\Lambda$ 를 더하는 것이 표준 알고리즘이다. SnapPy 같은 도구가 하는 일이 이것이다.
 - **강직성의 확인.** Mostow 강직성 때문에 부피는 위상 불변량이므로, 두 다양체의 부피가 다르면 동형이 아니다. 계산 가능한 완전 불변량에 가까운 도구다.
-- **양자 위상수학과의 다리.** 조합적 합의 점근에서 $\Lambda$ 가 나타나는 현상이 볼륨 추측, 양자 이중로그, 재정리 이론으로 이어진다.
+- **양자 위상수학과의 관계.** 조합적 합의 점근에서 $\Lambda$ 가 나타나는 현상이 볼륨 추측, 양자 이중로그, 재정리 이론으로 이어진다.
 
 [^1]: 이상 사면체의 부피 공식과 8 자매듭의 분할은 W. Thurston, *The Geometry and Topology of Three-Manifolds* (강의록, 1978), 특히 4 장과 7 장. $\Lambda$ 의 성질에 대한 표준 참고문헌은 J. Milnor, *Hyperbolic geometry: the first 150 years*, Bull. AMS 6 (1982).
 [^2]: 이중로그 및 Bloch 군과의 관계는 D. Zagier, *The dilogarithm function*, in *Frontiers in Number Theory, Physics and Geometry II* (2007). 부피 스펙트럼의 정렬성은 Jørgensen–Thurston 의 결과다.

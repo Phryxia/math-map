@@ -112,7 +112,7 @@ $\Delta''(1)$ 은 언제나 짝수다. $\Delta(t)=\Delta(t^{-1})$ 이라 계수�
 ## 쓰이는 자리
 
 - **단일 연결성의 판정.** $\lambda\ne0$ 이면 기본군이 자명하지 않다. 3 차원 Poincaré 추측이 증명되기 전 이 방향의 주요 도구였고, 구체적 다양체에 대해서는 지금도 가장 값싼 판정이다.
-- **4 차원으로의 다리.** Rokhlin 불변량을 정수로 들어 올리는 성질이 4 차원 다양체의 존재 문제와 이어진다.
+- **4 차원과의 관계.** Rokhlin 불변량을 정수로 들어 올리는 성질이 4 차원 다양체의 존재 문제와 이어진다.
 - **범주화의 출발점.** Floer 호몰로지가 이 수를 Euler 지표로 갖는다는 관점이 게이지 이론적 3 다양체 불변량의 틀이 되었다.
 
 [^1]: Casson 의 강의는 출판되지 않았고, 표준 참고문헌은 S. Akbulut–J. McCarthy, *Casson's Invariant for Oriented Homology 3-Spheres: An Exposition*, Princeton Univ. Press (1990). 수술 공식과 특성화가 여기 있다.

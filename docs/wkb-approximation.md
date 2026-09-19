@@ -8,7 +8,7 @@ $$
 \epsilon^2 y''(x) = Q(x)\thinspace y(x)
 $$
 
-에는 [상미분방정식](ordinary-differential-equations.md)의 표준적인 해법이 통하지 않는다. $\epsilon\to0$ 에서 방정식의 계수(階數)가 떨어지므로 정칙 섭동이 아니다. WKB 근사는 해를 거듭제곱이 아니라 지수의 어깨 위에서 전개해 이 특이성을 다룬다.
+에는 [상미분방정식](ordinary-differential-equations.md)의 표준적인 해법이 통하지 않는다. $\epsilon\to0$ 에서 방정식의 계수(階數)가 떨어지므로 정칙 섭동이 아니다. WKB 근사는 해를 거듭제곱이 아니라 지수부에서 전개해 이 특이성을 다룬다.
 
 결과는 $Q(x)^{-1/4}\exp\bigl(\pm\epsilon^{-1}\negthinspace\int\negthinspace\sqrt{Q}\bigr)$ 이고, $Q$ 의 부호에 따라 지수적으로 감쇠하거나 진동한다. 부호가 바뀌는 **회전점**(turning point)에서는 근사가 무너지고, 회전점 양쪽의 해를 잇는 규칙이 **연결 공식**이다. 연결 공식은 [Stokes 현상](stokes-phenomenon.md)의 구체적 형태이며, 감쇠하는 해와 진동하는 해가 같은 함수를 다른 영역에서 본 것이고 그 사이에서 지수적으로 작은 항이 켜진다.
 
@@ -24,7 +24,7 @@ $Q\lt 0$ 인 영역에서 해는 파수 $k(x)=\sqrt{-Q(x)}/\epsilon$ 로 진동�
 
 # 정의
 
-## 지수 어깨 위의 전개
+## 지수부의 전개
 
 해를 다음으로 놓고 대입한 뒤 $\epsilon$ 의 거듭제곱별로 맞춘다.
 
@@ -149,7 +149,7 @@ $V=\lvert x\rvert$ 의 정확한 준위는 Airy 함수의 영점으로 주어진
 
 ## 점근해석의 도구
 
-WKB 는 특이 섭동의 가장 단순한 비자명 예다. 지수 어깨 위의 전개, 영역별 근사와 정합 전개, 국소적으로 정확히 풀리는 모형 방정식(Airy), 연결 공식으로서의 Stokes 현상이 한 문제 안에 모두 나타난다.[^1]
+WKB 는 특이 섭동의 가장 단순한 비자명 예다. 지수부의 전개, 영역별 근사와 정합 전개, 국소적으로 정확히 풀리는 모형 방정식(Airy), 연결 공식으로서의 Stokes 현상이 한 문제 안에 모두 나타난다.[^1]
 
 [^1]: Carl M. Bender, Steven A. Orszag, *Advanced Mathematical Methods for Scientists and Engineers I*, Chapter 10 (WKB Theory), §§10.1–10.4. 지수 전개, 타당성 조건, 회전점과 연결 공식, 양자화 조건의 유도.
 
