@@ -147,7 +147,7 @@ $$
 - **연결성 판정.** 무향 그래프의 $s\text{-}t$ 연결성은 random walk 를 $O(n^3)$ 단계 돌리는 것으로 로그 공간에서 판정할 수 있다(Aleliunas 등의 커버 시간 경계). 커버 시간의 상한이 유효저항으로 표현되므로 분석이 회로 계산이 된다.
 - **희소화와 표본추출.** 변을 유효저항에 비례한 확률로 뽑으면 스펙트럼적으로 동등한 희소 그래프를 얻는다. 이 결과의 오차 분석에는 [집중부등식](concentration-inequalities.md)의 행렬 버전이 쓰인다.
 - **추천과 클러스터링.** commute time 을 정점 사이 유사도로 쓰는 방법은 위 항등식에 근거한다. 다만 큰 그래프에서는 commute time 이 차수에만 의존하는 값으로 퇴화하는 현상이 알려져 있어 보정이 필요하다.
-- **MCMC.** 가역 연쇄의 혼합 속도 분석에서 전기적 양(저항, 흐름)은 conductance 경계와 함께 표준 도구다.
+- **MCMC**(Markov chain Monte Carlo). 가역 연쇄의 혼합 속도 분석에서 전기적 양(저항, 흐름)은 conductance 경계와 함께 표준 도구다.
 
 [^1]: Peter G. Doyle and J. Laurie Snell, Random Walks and Electric Networks, https://arxiv.org/abs/math/0001057
 
