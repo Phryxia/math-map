@@ -161,7 +161,7 @@ $V^\natural$ 은 중심전하 $24$ 의 등각장론이고 $\mathbb M$ 은 그 �
 
 ## 선수지식
 
-- [theta 급수와 Dedekind eta](theta-functions.md)
+- [theta 급수](theta-series.md)
 - [유한 단순군 분류](finite-simple-groups.md)
 - [정점작용소대수](vertex-operator-algebras.md)
 

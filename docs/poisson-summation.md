@@ -42,7 +42,7 @@ $$
 \theta(t)=\sum_ne^{-\pi n^{2}t}=\frac1{\sqrt t}\thinspace\theta\negthinspace\left(\frac1t\right)
 $$
 
-$t$ 가 크면 좌변이 항 몇 개로 끝나고 $t$ 가 작으면 우변이 그렇다. $t$ 와 $1/t$ 가운데 계산하기 쉬운 쪽을 고를 수 있다. 이 항등식이 [theta 급수](theta-functions.md)의 모듈러 변환 $\tau\mapsto-1/\tau$ 이고, 모듈러성은 Fourier 쌍대성에서 온다.
+$t$ 가 크면 좌변이 항 몇 개로 끝나고 $t$ 가 작으면 우변이 그렇다. $t$ 와 $1/t$ 가운데 계산하기 쉬운 쪽을 고를 수 있다. 이 항등식이 [theta 급수](theta-series.md)의 모듈러 변환 $\tau\mapsto-1/\tau$ 이고, 모듈러성은 Fourier 쌍대성에서 온다.
 
 ## 사다리꼴 오차의 정체
 
@@ -159,7 +159,7 @@ $\mathbb R/\mathbb Z$ 위의 Laplace 작용소에서 좌변은 고윳값 쪽 합
 
 ## 더 알아보기
 
-- [theta 급수와 Dedekind eta](theta-functions.md)
+- [theta 급수](theta-series.md)
 - [Mellin 변환과 Perron 공식](mellin-transform.md)
 
 #analysis #number_theory #theorem

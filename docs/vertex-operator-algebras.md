@@ -54,7 +54,7 @@ $$
 \mathrm{ch}V(\tau)=\mathrm{tr}\_Vq^{L_0-c/24}=q^{-c/24}\sum_n(\dim V_n)q^n
 $$
 
-보정 $-c/24$ 는 원기둥 위의 Casimir 에너지에서 나오며, 이 보정이 있어야 지표가 모듈러 성질을 갖는다. [Dedekind eta](theta-functions.md)의 $q^{1/24}$ 와 같은 자리다. $c$ 가 24 의 배수이면 $q^{-c/24}$ 가 정수 거듭제곱이 되어 지표가 $q$ 의 Laurent 급수가 된다. 달빛의 $c=24$ 가 그 경우다.
+보정 $-c/24$ 는 원기둥 위의 Casimir 에너지에서 나오며, 이 보정이 있어야 지표가 모듈러 성질을 갖는다. [Dedekind eta](theta-series.md)의 $q^{1/24}$ 와 같은 자리다. $c$ 가 24 의 배수이면 $q^{-c/24}$ 가 정수 거듭제곱이 되어 지표가 $q$ 의 Laurent 급수가 된다. 달빛의 $c=24$ 가 그 경우다.
 
 # 정의
 
@@ -100,7 +100,7 @@ $$
 Y(e^\alpha,z)=e^{\alpha}z^{\alpha_{(0)}}\exp\negthinspace\left(\sum_{k\gt 0}\frac{\alpha_{(-k)}}{k}z^k\right)\exp\negthinspace\left(-\sum_{k\gt 0}\frac{\alpha_{(k)}}{k}z^{-k}\right)
 $$
 
-지표는 [theta 급수](theta-functions.md)를 $\eta$ 의 거듭제곱으로 나눈 것이다.
+지표는 [theta 급수](theta-series.md)를 $\eta$ 의 거듭제곱으로 나눈 것이다.
 
 $$
 \mathrm{ch}V_L(\tau)=\frac{\Theta_L(\tau)}{\eta(\tau)^{n}}

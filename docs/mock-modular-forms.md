@@ -14,7 +14,7 @@ $$
 
 > mock 모듈러 형식 $h$ 에는 **shadow** 라 부르는 모듈러 형식 $g$ 가 딸려 있고, $g$ 로 만든 비정칙 항을 $h$ 에 더하면 변환법칙이 정확히 맞는다.
 
-완성된 $\widehat h=h+(\text{보정항})$ 은 모듈러이지만 정칙이 아니고, 원래의 $h$ 는 정칙이지만 모듈러가 아니다. 정칙성과 모듈러성 중 하나를 포기해야 하고 포기한 양을 재는 것이 shadow 다. $g=0$ 이면 [모듈러 형식](modular-forms.md)으로 돌아온다. 모듈러 형식 공간을 한 겹 넓힌 것이고 넓힌 방향을 [theta 급수](theta-functions.md)가 통제한다.
+완성된 $\widehat h=h+(\text{보정항})$ 은 모듈러이지만 정칙이 아니고, 원래의 $h$ 는 정칙이지만 모듈러가 아니다. 정칙성과 모듈러성 중 하나를 포기해야 하고 포기한 양을 재는 것이 shadow 다. $g=0$ 이면 [모듈러 형식](modular-forms.md)으로 돌아온다. 모듈러 형식 공간을 한 겹 넓힌 것이고 넓힌 방향을 [theta 급수](theta-series.md)가 통제한다.
 
 이 문서는 완성 과정을 Appell–Lerch 합, 부정부호 theta 급수, [Eisenstein 급수](eisenstein-series.md)의 무게 $3/2$ 판본에서 따라간다. 셋 모두 같은 형태의 보정항을 요구하고 그 공통 구조가 조화 Maass 형식이다.
 
@@ -179,7 +179,7 @@ Ramanujan 의 mock theta 함수는 전부 무게 $1/2$ 이고 shadow 는 무게 
 
 ## 선수지식
 
-- [theta 급수와 Dedekind eta](theta-functions.md)
+- [theta 급수](theta-series.md)
 - [Eisenstein 급수와 스펙트럼 분해](eisenstein-series.md)
 
 ## 더 알아보기

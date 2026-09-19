@@ -75,7 +75,7 @@ graph TD
 
 상반평면 위의 대칭 함수가 정수론의 생성함수 노릇을 한다.
 
-- [모듈러 형식](modular-forms.md) → [Eisenstein 급수](eisenstein-series.md), [Hecke 작용소와 새형식](hecke-operators.md), [theta 급수와 Dedekind eta](theta-functions.md)
+- [모듈러 형식](modular-forms.md) → [Eisenstein 급수](eisenstein-series.md), [Hecke 작용소와 새형식](hecke-operators.md), [theta 급수](theta-series.md)
 - [Maass 형식](maass-forms.md), [Selberg 대각합 공식](selberg-trace-formula.md): 비정칙 스펙트럼
 - [모듈러 곡선](modular-curves.md) → [모듈러 기호](modular-symbols.md), [과수렴 모듈러 기호와 p 진 L 함수](overconvergent-modular-symbols.md)
 - [분할수와 원법](partitions.md), [Mock 모듈러 형식](mock-modular-forms.md), [Dyson 의 rank 와 crank](dyson-rank-crank.md), [Borcherds 곱](borcherds-products.md): 조합론과의 접점

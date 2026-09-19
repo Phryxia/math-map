@@ -2,7 +2,7 @@
 
 # 개요
 
-[theta 급수](theta-functions.md)의 모듈러성은 Poisson 합 공식으로 $\theta(-1/\tau)=\sqrt{-i\tau}\thinspace\theta(\tau)$ 를 계산해 얻을 수도 있고, 이 변환을 일으키는 군의 표현에서 얻을 수도 있다. 그 표현이 **Weil 표현**이다.
+[theta 급수](theta-series.md)의 모듈러성은 Poisson 합 공식으로 $\theta(-1/\tau)=\sqrt{-i\tau}\thinspace\theta(\tau)$ 를 계산해 얻을 수도 있고, 이 변환을 일으키는 군의 표현에서 얻을 수도 있다. 그 표현이 **Weil 표현**이다.
 
 심플렉틱 공간 $W$ 에서 Heisenberg 군 $H(W)$ 를 만들고 중심 지표 $\psi$ 를 고정하면, Stone–von Neumann 정리에 따라 그런 기약 유니터리 표현이 하나뿐이다. $\mathrm{Sp}(W)$ 가 $H(W)$ 에 중심을 고정하며 작용하므로 유일성에 의해 $\mathrm{Sp}(W)$ 의 모든 원소가 그 표현을 자기 자신으로 옮기고 사영표현이 생긴다.
 
@@ -164,7 +164,7 @@ $$
 
 ## 선수지식
 
-- [theta 급수와 Dedekind eta](theta-functions.md)
+- [theta 급수](theta-series.md)
 - [Peter–Weyl 정리](peter-weyl.md)
 
 ## 더 알아보기

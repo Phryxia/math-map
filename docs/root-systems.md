@@ -105,7 +105,7 @@ $$
 P/Q\cong Z(\tilde G)
 $$
 
-$A_n$ 에서는 $\mathbb Z/(n+1)$ 이고 $E_8$ 에서는 자명군이다. $E_8$ 의 근격자는 무게격자와 같아 자기쌍대, 곧 유니모듈러다. [구 채우기](sphere-packing.md)와 [theta 급수](theta-functions.md)에서의 $E_8$ 격자의 성질이 여기에 기댄다.
+$A_n$ 에서는 $\mathbb Z/(n+1)$ 이고 $E_8$ 에서는 자명군이다. $E_8$ 의 근격자는 무게격자와 같아 자기쌍대, 곧 유니모듈러다. [구 채우기](sphere-packing.md)와 [theta 급수](theta-series.md)에서의 $E_8$ 격자의 성질이 여기에 기댄다.
 
 # 성질
 

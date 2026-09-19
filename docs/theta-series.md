@@ -1,4 +1,4 @@
-# theta 급수와 Dedekind eta
+# theta 급수
 
 # 개요
 

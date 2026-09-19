@@ -167,7 +167,7 @@ graph TD
   E --> G2["G_2"]
 ```
 
-$E_8$ 은 248 차원이고 근이 240 개다. 그 240 개의 근이 이루는 [격자](lattices.md)가 8 차원 [구 채우기](sphere-packing.md)의 최적 격자이며, [theta 급수](theta-functions.md)에서 $\Theta_{E_8}=E_4$ 로 나타나는 대상이다.
+$E_8$ 은 248 차원이고 근이 240 개다. 그 240 개의 근이 이루는 [격자](lattices.md)가 8 차원 [구 채우기](sphere-packing.md)의 최적 격자이며, [theta 급수](theta-series.md)에서 $\Theta_{E_8}=E_4$ 로 나타나는 대상이다.
 
 ## 무한차원 확장
 

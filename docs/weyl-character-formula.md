@@ -184,7 +184,7 @@ $$
 \sum_{w\in W}(-1)^{\ell(w)}e^{w\rho}=\prod_{\alpha\in\Phi^+}\left(e^{\alpha/2}-e^{-\alpha/2}\right)
 $$
 
-$A_1$ 에서는 $x-x^{-1}$ 이고, 같은 항등식을 아핀 근계로 확장하면 Macdonald 항등식이 되며 $A_1^{(1)}$ 의 경우가 Jacobi 삼중곱 공식, 곧 [세타 함수](theta-functions.md)의 고전적 항등식이다.
+$A_1$ 에서는 $x-x^{-1}$ 이고, 같은 항등식을 아핀 근계로 확장하면 Macdonald 항등식이 되며 $A_1^{(1)}$ 의 경우가 Jacobi 삼중곱 공식, 곧 [theta 급수](theta-series.md)의 고전적 항등식이다.
 
 **기하.** $\lambda$ 에 대응하는 깃발다양체 $G/B$ 위의 직선다발 $\mathcal L_\lambda$ 에 대해 $H^0(G/B,\mathcal L_\lambda)\cong V_\lambda^\ast$ 다(Borel–Weil). 이 관점에서 지표 공식은 Atiyah–Bott 고정점 공식의 결과이고, 분모의 $\prod(e^{\alpha/2}-e^{-\alpha/2})$ 는 고정점에서의 접공간 기여이며 $W$ 위의 합은 $T$ 고정점 $|W|$ 개 위의 합이다.
 
