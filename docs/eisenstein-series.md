@@ -82,23 +82,7 @@ $$
 
 로 $z$ 에 의존하지 않는 상수함수다. 유수도 $\Gamma$ 불변이고 고윳값이 $s(1-s)\to0$ 이라 조화함수이며, 유계인 조화함수는 상수다.
 
-이 상수가 부피의 역수라는 것이 Rankin–Selberg 방법의 급소다. $f\bar g y^k$ 에 $E(z,s)$ 를 곱해 적분한 것의 $s=1$ 유수가 Petersson 내적 $\langle f,g\rangle/\mathrm{vol}$ 이 된다.
-
-```mermaid
-graph TD
-  AVG["평균화<br/>Σ_{Γ_∞\\Γ} Im(γz)^s"] --> E["E(z,s)"]
-  E --> FOU["Fourier 전개"]
-  FOU --> A0["상수항 y^s + φ(s) y^{1-s}"]
-  FOU --> AN["n≠0 항 : K-Bessel, σ_{1-2s}(n)"]
-  ZETA["ζ 의 함수방정식 ξ(s)=ξ(1-s)"] --> PHI["φ(s) = ξ(2s-1)/ξ(2s)"]
-  PHI --> A0
-  A0 --> FE["E*(z,s) = E*(z,1-s)"]
-  PHI --> POLE["s=1 단순극<br/>유수 = 3/π = 1/vol"]
-  FE --> RS["Rankin–Selberg 가<br/>이 성질을 빌려 쓴다"]
-  POLE --> RS
-  E --> SPEC["임계선 위의 E(z,1/2+it)<br/>= 연속 스펙트럼"]
-  SPEC --> DEC["L² = 상수 ⊕ 첨점 ⊕ 연속"]
-```
+Rankin–Selberg 방법이 이 상수가 부피의 역수라는 것을 쓴다. $f\bar g y^k$ 에 $E(z,s)$ 를 곱해 적분한 것의 $s=1$ 유수가 Petersson 내적 $\langle f,g\rangle/\mathrm{vol}$ 이 된다.
 
 # 정의
 
