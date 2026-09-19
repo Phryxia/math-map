@@ -28,14 +28,6 @@ Kohnen 은 **플러스 공간**이라는 부분공간 위에서 이 대응을 �
 
 $n=D\thinspace m^2$ 으로 쪼개면($D$ 는 제곱인수가 없는 부분) $n\mapsto np$ 는 $D$ 를 바꾸어 서로 다른 판별식 세계를 뒤섞고, $n\mapsto np^2$ 는 $D$ 를 고정한 채 $m$ 만 움직인다.
 
-```mermaid
-graph LR
-  N["계수 c(n), n = D·m²"] --> D["D: 판별식 방향<br/>이차 뒤틀림 chi_D 를 고른다"]
-  N --> M["m: 제곱 방향<br/>T(p²) 가 여기서 움직인다"]
-  M --> F["f 의 Hecke 고윳값 a_p"]
-  D --> L["L(1/2, f ⊗ chi_D)<br/>Waldspurger"]
-```
-
 $D$ 방향은 뒤틀림을 고르고 $m$ 방향은 Hecke 구조를 담는다. Shimura 대응은 $D$ 를 고정하고 $m$ 방향의 Dirichlet 급수를 보는 것이다.
 
 $$
