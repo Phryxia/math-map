@@ -148,7 +148,7 @@ $$
 
 ## 더 알아보기
 
-- [Weil 쌍과 쌍선형 암호](pairing-based-cryptography.md)
+- [쌍선형 암호](pairing-based-cryptography.md)
 - [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
 - [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md)
 - [Langlands 강령](langlands-program.md)

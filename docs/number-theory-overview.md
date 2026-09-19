@@ -48,7 +48,7 @@ graph TD
 정수론의 어려운 문제가 곧 암호의 안전성이다. 계산 알고리즘도 여기 둔다.
 
 - [이산로그와 Diffie–Hellman](discrete-logarithm.md), [RSA 암호](rsa-cryptosystem.md): 고전 공개키 암호
-- [타원곡선과 군 구성](elliptic-curves.md), [Weil 쌍과 쌍선형 암호](pairing-based-cryptography.md): 곡선 위의 암호
+- [타원곡선과 군 구성](elliptic-curves.md), [쌍선형 암호](pairing-based-cryptography.md): 곡선 위의 암호
 - [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md), [Kedlaya 알고리즘](kedlaya-algorithm.md): 유한체 위 곡선의 점 세기
 - [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md)(supersingular isogeny Diffie–Hellman), [Deuring 대응](deuring-correspondence.md): 동종사상 기반 암호와 그 파괴
 - [격자](lattices.md): 격자 기반 암호의 토대
