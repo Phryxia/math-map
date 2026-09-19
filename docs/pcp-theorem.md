@@ -2,7 +2,7 @@
 
 # 개요
 
-[근사 알고리즘](approximation-algorithms.md)은 NP-어려운 문제에 대해 보장된 비율의 답을 낸다. 어떤 문제는 임의로 좋은 근사가 가능하고(FPTAS) 어떤 문제는 어느 비율에서 멈춘다. 알고리즘 설계만으로는 그 경계를 알 수 없다.
+[근사 알고리즘](approximation-algorithms.md)은 NP-어려운 문제에 대해 보장된 비율의 답을 낸다. 어떤 문제는 임의로 좋은 근사가 가능하고(FPTAS, fully polynomial-time approximation scheme) 어떤 문제는 어느 비율에서 멈춘다. 알고리즘 설계만으로는 그 경계를 알 수 없다.
 
 1992 년에 완성된 **PCP 정리**(probabilistically checkable proof)가 경계를 준다.
 
@@ -93,7 +93,7 @@ MAX-3LIN(법 $2$ 선형방정식 최대 만족)에서 $\frac12+\varepsilon$ 근�
 
 PCP 정리만으로 최적 상수가 나오지 않는 문제가 많다. MAX-CUT 은 [반정부호 계획법](semidefinite-programming.md)의 Goemans–Williamson 알고리즘이 $\alpha_{GW}\approx0.878$ 을 주는데, PCP 만으로는 $16/17\approx0.941$ 아래로 하한을 내리지 못한다.
 
-Khot 의 **유일게임 추측**은 한 변수의 값이 다른 변수의 값을 유일하게 정하는 2 변수 제약으로 된 간극 문제가 임의의 $\varepsilon,\delta$ 에 대해 $\mathsf{Gap}[1-\varepsilon,\delta]$ 수준에서 NP-어렵다고 주장한다. 이 추측 아래에서 Goemans–Williamson 의 $0.878$ 이 최적이 되고, 넓은 종류의 제약충족 문제에서 기본 SDP 완화가 최적 근사 알고리즘이 된다.
+Khot 의 **유일게임 추측**은 한 변수의 값이 다른 변수의 값을 유일하게 정하는 2 변수 제약으로 된 간극 문제가 임의의 $\varepsilon,\delta$ 에 대해 $\mathsf{Gap}[1-\varepsilon,\delta]$ 수준에서 NP-어렵다고 주장한다. 이 추측 아래에서 Goemans–Williamson 의 $0.878$ 이 최적이 되고, 넓은 종류의 제약충족 문제에서 기본 SDP(semidefinite programming) 완화가 최적 근사 알고리즘이 된다.
 
 이 추측의 절반에 해당하는 **2-to-2 게임 정리**는 Khot, Minzer, Safra 가 증명했다[^4].
 
@@ -106,8 +106,8 @@ PCP 정리 이후 NP-어려운 최적화 문제들이 근사 가능성에 따라
 | 부류 | 뜻 | 예 |
 |---|---|---|
 | FPTAS | 임의의 $1+\varepsilon$ 에 대해 시간이 $1/\varepsilon$ 에 다항 | 배낭 문제 |
-| PTAS | 임의의 $1+\varepsilon$ 에 대해 시간이 $1/\varepsilon$ 에 지수여도 됨 | 유클리드 TSP |
-| APX | 어떤 상수 비율은 되지만 PTAS 는 없음 | MAX-3SAT, 정점 덮개 |
+| PTAS(polynomial-time approximation scheme) | 임의의 $1+\varepsilon$ 에 대해 시간이 $1/\varepsilon$ 에 지수여도 됨 | 유클리드 TSP(traveling salesman problem) |
+| APX(approximable) | 어떤 상수 비율은 되지만 PTAS 는 없음 | MAX-3SAT, 정점 덮개 |
 | 상수 불가 | 상수 비율 근사조차 NP-어려움 | 일반 TSP, 최대 클릭 |
 
 경계는 PCP 정리로 그어진다. 최대 클릭은 $n^{1-\varepsilon}$ 보다 좋은 근사가 NP-어렵고, 집합 덮개는 $(1-\varepsilon)\ln n$ 이 하한이며 탐욕 알고리즘의 $\ln n$ 이 정확히 최적이다.
@@ -132,8 +132,8 @@ Dinur 증명의 핵심 연산은 제약 그래프 $G$ 를 $t$ 거듭제곱해 �
 
 - **근사 하한**: 새 최적화 문제의 근사 한계는 알려진 간극 문제에서 간극을 보존하는 환원으로 증명한다.
 - **최적 비율의 결정**: 상한과 하한이 만나면 근사 가능성이 완전히 결정된다. MAX-3SAT 의 $7/8$ , 집합 덮개의 $\ln n$ , MAX-3LIN 의 $1/2$ 가 그런 예다.
-- **부호 이론**: 국소 검사 가능 부호(LTC)와 국소 복호 가능 부호(LDC)가 PCP 구성에서 나왔고 상수 비율 LTC 구성으로 이어졌다.
-- **위임 계산**: 짧은 증명을 조금만 읽고 검증하는 구조가 SNARK 류 증명 시스템의 기본 구조다.
+- **부호 이론**: 국소 검사 가능 부호(locally testable code, LTC)와 국소 복호 가능 부호(locally decodable code, LDC)가 PCP 구성에서 나왔고 상수 비율 LTC 구성으로 이어졌다.
+- **위임 계산**: 짧은 증명을 조금만 읽고 검증하는 구조가 SNARK(succinct non-interactive argument of knowledge) 류 증명 시스템의 기본 구조다.
 
 [^1]: S. Arora, S. Safra, *Probabilistic checking of proofs*, JACM 45 (1998), 그리고 S. Arora, C. Lund, R. Motwani, M. Sudan, M. Szegedy, *Proof verification and the hardness of approximation problems*, JACM 45 (1998). 원 증명.
 [^2]: I. Dinur, *The PCP theorem by gap amplification*, JACM 54 (2007). 간극 증폭에 의한 조합적 증명.
