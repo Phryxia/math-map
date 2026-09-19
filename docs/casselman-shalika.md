@@ -2,7 +2,7 @@
 
 # 개요
 
-Casselman–Shalika 공식은 비분기 자리에서 구면 Whittaker 함수의 값을 쌍대군의 기약지표로 준다.
+Casselman–Shalika 공식[^1]은 비분기 자리에서 구면 Whittaker 함수의 값을 쌍대군의 기약지표로 준다.
 
 $$
 W^\circ(\varpi^\lambda)=\delta_B^{1/2}(\varpi^\lambda)\thickspace s_\lambda(\alpha_1,\dots,\alpha_n)
@@ -122,7 +122,7 @@ $$
 
 $\mathrm{GL}\_n$ 에서 $\chi_\lambda=s_\lambda$ 이고 [Weyl 지표 공식](weyl-character-formula.md)이 그 bialternant 표현을 준다.
 
-분기 자리에서는 명시적 공식이 없고 등급이 있는 벡터에 대한 부분적 결과만 있다. 메타플렉틱 덮개군에서는 Whittaker 모형의 유일성이 실패하고 공식의 자리에 Weyl 군 다중 Dirichlet 급수가 들어온다. 그 합이 결정 기저의 조합론과 이어지는 것이 최근 연구의 한 줄기다.
+분기 자리에서는 명시적 공식이 없고 등급이 있는 벡터에 대한 부분적 결과만 있다. 메타플렉틱 덮개군에서는 Whittaker 모형의 유일성이 실패하고[^2] 공식의 자리에 Weyl 군 다중 Dirichlet 급수가 들어온다. 그 합이 결정 기저의 조합론과 이어지는 것이 최근 연구의 한 줄기다.
 
 # 활용
 

@@ -72,7 +72,7 @@ $$
 \sigma_\lambda\cdot\sigma_\mu=\sum_{\nu\subseteq k\times(n-k)}c^{\nu}\_{\lambda\mu}\thinspace\sigma_\nu
 $$
 
-$c^\nu_{\lambda\mu}$ 는 Littlewood–Richardson 계수이고 $|\nu|=|\lambda|+|\mu|$ 인 항만 남는다. 두 특수한 경우를 쓴다.
+$c^\nu_{\lambda\mu}$ 는 Littlewood–Richardson 계수이고[^1] $|\nu|=|\lambda|+|\mu|$ 인 항만 남는다. 두 특수한 경우를 쓴다.
 
 - **Pieri**: $\sigma_p\cdot\sigma_\lambda=\sum\sigma_\mu$ 이고, 합은 $\lambda\subseteq\mu$ 이며 $|\mu|=|\lambda|+p$ 이고 $\mu/\lambda$ 가 각 열에 많아야 한 상자인(수평 띠) $\mu$ 들.
 - **Giambelli**: 임의의 $\sigma_\lambda$ 가 특수류 $\sigma_p$ 들의 행렬식으로 쓰인다. $\sigma_\lambda=\det(\sigma_{\lambda_i+j-i})\_{1\le i,j\le k}$ 이다.
@@ -127,7 +127,7 @@ $\sigma_1^{k(n-k)}$ 은 일반 위치의 여차원 $1$ 조건을 차원만큼 �
 
 - **열거기하**: 이차곡면에 놓인 직선, 주어진 곡선과 만나는 평면 같은 고전 문제가 이 틀에서 계산된다.
 - **표현론과의 사전**: 구조상수가 $\mathrm{GL}\_n$ 텐서곱 분해의 Littlewood–Richardson 계수와 같다. 한쪽 계산이 다른 쪽 답을 준다.
-- **행렬 스펙트럼**: Horn 문제와 saturation 정리를 통해 Hermite 행렬 합의 고윳값 문제로 이어진다.
+- **행렬 스펙트럼**: Horn 문제와 saturation 정리[^2]를 통해 Hermite 행렬 합의 고윳값 문제로 이어진다.
 - **양자 코호몰로지와 등각장론**: 양자 변형의 구조상수가 $\widehat{\mathfrak{sl}}\_n$ 준위 $k$ 의 융합 규칙과 일치한다.
 
 [^1]: W. Fulton, *Young Tableaux*, Cambridge, 1997. 9 장이 Schubert 계산과 Littlewood–Richardson 규칙의 표준 서술이다.
