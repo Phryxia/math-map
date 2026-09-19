@@ -40,20 +40,14 @@ $\prod_p\mathbb Z_p$ 는 Tychonoff 정리로 콤팩트하다. 그러나 $\prod_p
 
 ## 아델 안의 격자 $\mathbb Q$
 
-```mermaid
-graph TD
-  subgraph 고전["R 안의 Z"]
-    R["R"] --> Z["Z 는 이산"]
-    Z --> T["R/Z ≅ 원, 콤팩트"]
-    T --> F["Fourier 급수"]
-  end
-  subgraph 아델["A_Q 안의 Q"]
-    A["A_Q = R × A_f"] --> QQ["Q 는 대각으로 이산"]
-    QQ --> C["A_Q/Q 콤팩트"]
-    C --> FA["아델 Fourier 해석<br/>Poisson 합공식"]
-  end
-  F -.->|"같은 구조"| FA
-```
+$\mathbb Q$ 가 $\mathbb A_{\mathbb Q}$ 안에 놓이는 방식은 $\mathbb Z$ 가 $\mathbb R$ 안에 놓이는 방식과 같다.
+
+| 자리 | $\mathbb R$ 안의 $\mathbb Z$ | $\mathbb A_{\mathbb Q}$ 안의 $\mathbb Q$ |
+| --- | --- | --- |
+| 전체 | $\mathbb R$ | $\mathbb A_{\mathbb Q}=\mathbb R\times\mathbb A_f$ |
+| 이산 부분군 | $\mathbb Z$ | 대각으로 들어간 $\mathbb Q$ |
+| 콤팩트 몫 | 원 $\mathbb R/\mathbb Z$ | $\mathbb A_{\mathbb Q}/\mathbb Q$ |
+| 조화해석 | Fourier 급수 | Poisson 합공식 |
 
 $\mathbb A_{\mathbb Q}=\mathbb Q+\big([0,1)\times\hat{\mathbb Z}\big)$ 가 성립한다. 아델 하나에서 유한 자리들의 분모를 유리수 하나로 털어내고 실수 자리를 $[0,1)$ 로 밀어 넣으면 된다. $\mathbb R=\mathbb Z+[0,1)$ 의 아델 판이며 $[0,1)\times\hat{\mathbb Z}$ 가 기본영역이다. 기본영역이 콤팩트하므로 몫이 콤팩트하다.
 
