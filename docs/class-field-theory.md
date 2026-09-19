@@ -56,7 +56,7 @@ graph TD
 
 유수군에 대응하는 확대는 분기가 전혀 없는 것뿐인데 $\mathbb Q(i)/\mathbb Q$ 처럼 유용한 아벨 확대는 대개 어딘가에서 분기한다. $\mathbb Q$ 의 유수는 1 이므로 유수군만 보면 $\mathbb Q$ 에 아벨 확대가 없다는 잘못된 결론이 나온다.
 
-어디까지 분기를 허용할지 미리 정하는 지정이 모듈러스 $\mathfrak m$ 이고, $\mathfrak m$ 을 크게 잡을수록 더 많은 아벨 확대가 시야에 들어온다. $K=\mathbb Q$ 이고 $\mathfrak m=(m)\infty$ 로 두면 광선유군이 $(\mathbb Z/m\mathbb Z)^\times$ 가 되어 원분체 이야기가 복원된다. 모든 $\mathfrak m$ 을 한꺼번에 담는 그릇이 이델류군이다.
+어디까지 분기를 허용할지 미리 정하는 지정이 모듈러스 $\mathfrak m$ 이고, $\mathfrak m$ 을 크게 잡을수록 더 많은 아벨 확대가 시야에 들어온다. $K=\mathbb Q$ 이고 $\mathfrak m=(m)\infty$ 로 두면 광선유군이 $(\mathbb Z/m\mathbb Z)^\times$ 가 되어 원분체 이야기가 복원된다. 모든 $\mathfrak m$ 의 광선유군을 한꺼번에 담은 것이 이델류군이다.
 
 # 정의
 
