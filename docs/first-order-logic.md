@@ -134,7 +134,7 @@ $$
 
 ### 형식 체계와 모형
 
-- [Compactness 정리와 Löwenheim–Skolem 정리](lowenheim-skolem.md)
+- [Löwenheim–Skolem 정리](lowenheim-skolem.md)
 - [Peano 공리](peano-axioms.md)
 - [Gödel 불완전성 정리](godel-incompleteness.md)
 
