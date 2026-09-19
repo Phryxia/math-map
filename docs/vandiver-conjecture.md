@@ -58,17 +58,14 @@ $E_\infty$ 는 단수의 극한, $C_\infty$ 는 순환체 단수의 극한이다
 
 같은 발견법이 $A^{-}$ 에서는 $p\mid h^{-}$ 확률을 $p^{-1}$ 로 주고 실제로 비정칙 소수가 39% 다. 지수 하나 차이가 흔한 일과 드문 일을 가른다.
 
-```mermaid
-flowchart TD
-  A["A = 류군의 p 부분"] --> AM["A^- (홀 성분)"]
-  A --> AP["A^+ (짝 성분)"]
-  ST["Stickelberger 소멸자"] --> AM
-  HR["Herbrand-Ribet"] --> AM
-  MC["주추측: char = L_p"] --> AM
-  CU["순환체 단수 E/C"] --> AP
-  MC2["주추측: char(E/C) = char(X)"] --> AP
-  VD["Vandiver: A^+ = 0"] -.->|"증명 없음"| AP
-```
+류군의 $p$ 부분 $A$ 를 홀짝 성분으로 나누면 두 성분에 붙는 도구가 다르다.
+
+| 성분 | 그 성분을 다루는 도구 |
+| --- | --- |
+| $A^{-}$ | Stickelberger 소멸자, Herbrand–Ribet 정리, 주추측 $\mathrm{char}=L_p$ |
+| $A^{+}$ | 순환체 단수 $E/C$, 주추측 $\mathrm{char}(E/C)=\mathrm{char}(X)$, Vandiver 추측 $A^{+}=0$ |
+
+$A^{-}$ 쪽 도구들은 구조를 결정하고, $A^{+}$ 쪽에서 같은 자리를 맡는 것이 Vandiver 추측이다.
 
 # 정의
 

@@ -47,16 +47,13 @@ $\mathrm{GL}\_n$ 에서 Whittaker 모형이 유일한 것은 $N\backslash G/N$ �
 
 대신 더 작은 군을 짝지은 모형을 쓴다.
 
-```mermaid
-graph TD
-  W["Whittaker 모형<br/>N 과 비퇴화 지표<br/>GL_n"]
-  B["Bessel 모형<br/>G(V_n) 또는 N ⋊ G(V_n)<br/>SO, U"]
-  F["Fourier–Jacobi 모형<br/>Weil 표현 ω_ψ 를 끼운다<br/>Sp/Mp, U"]
-  W -->|"짝수 여차원, 지표 대신 더 작은 군"| B
-  W -->|"홀수 여차원, 지표 대신 Weil 표현"| F
-  B --> G["GGP 중복도<br/>dim Hom_H(π ⊗ π' ⊗ ν, C)"]
-  F --> G
-```
+| 모형 | 부분군과 끼우는 것 | 해당 군 | Whittaker 에서의 교체 |
+| --- | --- | --- | --- |
+| Whittaker | 멱단근기 $N$ 과 비퇴화 지표 | $\mathrm{GL}\_n$ | 없음 |
+| Bessel | $G(V_n)$ 또는 $N\rtimes G(V_n)$ | $\mathrm{SO}$, $\mathrm U$ | 짝수 여차원, 지표 대신 더 작은 군 |
+| Fourier–Jacobi | Weil 표현 $\omega_\psi$ | $\mathrm{Sp}/\mathrm{Mp}$, $\mathrm U$ | 홀수 여차원, 지표 대신 Weil 표현 |
+
+세 모형이 모두 재는 것은 중복도 $\dim\mathrm{Hom}\_H(\pi\otimes\pi'\otimes\nu,\mathbb C)$ 다.
 
 Whittaker 모형은 $G_n$ 이 자명군까지 줄어든 극단이고, 반대쪽 극단이 여차원 0 인 $G\times G$ 의 대각 부분군이다. 후자에서는 Weil 표현을 끼워야 중복도 1 이 회복된다.
 
