@@ -140,7 +140,7 @@ $[0,1]$ 위에서 $f_n$ 을 길이 $1/n$ 인 구간 위의 값 $n^{1/2}$ 로 두
 
 ## Dunford–Pettis 정리
 
-$L^1$ 부분집합이 약위상에서 상대적으로 compact 인 것과 그 집합이 UI 이고 무한 측도에서는 tight 인 것이 동치다. UI 가 $L^1$ 에서 [콤팩트성](compactness.md)를 대신하며, 확률측도열의 tightness 와 Prokhorov 정리가 [상측도](pushforward-measure.md) 수준에서 하는 역할을 밀도 수준에서 한다.
+$L^1$ 부분집합이 약위상에서 상대적으로 콤팩트인 것과 그 집합이 UI 이고 무한 측도에서는 tight 인 것이 동치다. UI 가 $L^1$ 에서 [콤팩트성](compactness.md)을 대신하며, 확률측도열의 tightness 와 Prokhorov 정리가 [상측도](pushforward-measure.md) 수준에서 하는 역할을 밀도 수준에서 한다.
 
 ## 반례
 
@@ -170,7 +170,7 @@ $$
 
 ## 함수해석에서의 위치
 
-UI 는 $L^1$ 이 재귀적(reflexive)이지 않아 유계 집합이 약compact 하지 않다는 결함을 메우는 조건이다. 편미분방정식의 변분해법, 최적수송, 확률측도열의 극한 구성에서 극한이 여전히 밀도를 갖는다는 것을 보장한다.[^1][^2]
+UI 는 $L^1$ 이 재귀적(reflexive)이지 않아 유계 집합이 약콤팩트하지 않다는 결함을 메우는 조건이다. 편미분방정식의 변분해법, 최적수송, 확률측도열의 극한 구성에서 극한이 여전히 밀도를 갖는다는 것을 보장한다.[^1][^2]
 
 [^1]: David Williams, *Probability with Martingales*, Cambridge University Press, 13장 (Uniform Integrability), https://www.cambridge.org/core/books/probability-with-martingales/B4CFCE0D08930FB46C6E93E775503863
 [^2]: Gerald B. Folland, *Real Analysis: Modern Techniques and Their Applications*, Wiley, 6장 연습문제 (Vitali convergence theorem), https://www.wiley.com/en-us/Real+Analysis%3A+Modern+Techniques+and+Their+Applications%2C+2nd+Edition-p-9780471317166

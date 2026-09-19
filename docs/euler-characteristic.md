@@ -87,13 +87,13 @@ $p$ 나 $q$ 가 6 이상이면 나머지가 3일 때조차 합이 $1/2$ 을 넘�
 
 ## 곡면의 분류
 
-compact 연결 곡면은 구면, 원환면의 연결합, 실사영평면의 연결합 중 하나와 위상동형이다[^3]. Euler 지표는 다음과 같다.
+콤팩트 연결 곡면은 구면, 원환면의 연결합, 실사영평면의 연결합 중 하나와 위상동형이다[^3]. Euler 지표는 다음과 같다.
 
 $$
 \chi=2-2g\ (\text{방향지음 가능, genus } g),\qquad \chi=2-k\ (\text{방향지음 불가능, 사영평면 } k \text{개})
 $$
 
-구면은 2, 원환면은 0, Klein 병은 0, 실사영평면은 1이다. 방향지음 가능 여부와 Euler 지표 두 값이 compact 연결 곡면을 완전히 분류한다. 원환면의 Betti 수 1, 2, 1 의 교대합도 0 이다.
+구면은 2, 원환면은 0, Klein 병은 0, 실사영평면은 1이다. 방향지음 가능 여부와 Euler 지표 두 값이 콤팩트 연결 곡면을 완전히 분류한다. 원환면의 Betti 수 1, 2, 1 의 교대합도 0 이다.
 
 ## 곱과 합의 규칙
 
@@ -105,7 +105,7 @@ $$
 
 ## Gauss–Bonnet
 
-compact 방향지음 가능 곡면에서 Gauss 곡률의 총합은 Euler 지표로 결정된다([곡률](curvature.md)).
+콤팩트 방향지음 가능 곡면에서 Gauss 곡률의 총합은 Euler 지표로 결정된다([곡률](curvature.md)).
 
 $$
 \iint_{M}K\thinspace dA=2\pi\chi(M)
@@ -122,7 +122,7 @@ $$
 
 [^1]: 삼각화의 단체 개수 교대합이 Betti 수의 교대합과 같다는 진술. J. R. Munkres, *Elements of Algebraic Topology*, §22. 요약: "Euler characteristic", Schools Wikipedia. https://landsurvival.com/schools-wikipedia/wp/e/Euler_characteristic.htm
 [^2]: 정다면체 다섯 개의 분류를 Euler 공식과 pF=2E=qV에서 얻는 논법. Wolfram MathWorld, "Platonic Solid". https://mathworld.wolfram.com/PlatonicSolid.html
-[^3]: compact 연결 곡면의 분류와 genus g 방향지음 가능 곡면의 지표가 2-2g라는 사실. Wolfram MathWorld, "Surface Classification Theorem". https://mathworld.wolfram.com/SurfaceClassificationTheorem.html
+[^3]: 콤팩트 연결 곡면의 분류와 genus g 방향지음 가능 곡면의 지표가 2-2g라는 사실. Wolfram MathWorld, "Surface Classification Theorem". https://mathworld.wolfram.com/SurfaceClassificationTheorem.html
 
 # 연관 문서
 

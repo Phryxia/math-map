@@ -122,7 +122,7 @@ $$
 
 [그래프 Laplacian](graph-laplacian.md)은 대칭 양의 준정부호이므로 실고윳값과 직교 고유기저를 갖는다. 최소 고윳값 0 의 중복도가 연결성분 개수이고, 두 번째 고윳값이 확장성과 clustering 을 재며, [유효저항](effective-resistance.md)과 [스펙트럼 sparsification](spectral-sparsification.md)의 보증이 이 스펙트럼으로 서술된다. 순환행렬은 [이산 Fourier 변환](fourier.md) 행렬로 대각화되므로 convolution 이 곱셈이 된다.
 
-무한차원으로의 확장은 compact 자기수반 연산자와 Hilbert 공간의 스펙트럼 이론으로 이어지며, 고윳값 없이 연속 스펙트럼만 있는 경우가 생긴다.
+무한차원으로의 확장은 콤팩트 자기수반 연산자와 Hilbert 공간의 스펙트럼 이론으로 이어지며, 고윳값 없이 연속 스펙트럼만 있는 경우가 생긴다.
 
 [^1]: Anne Schilling et al., MAT067 — The Spectral Theorem for normal linear maps, University of California, Davis. https://www.math.ucdavis.edu/~anne/WQ2007/mat67-Ll-Spectral_Theorem.pdf
 [^2]: Ron Freiwald, Orthogonally Diagonalizable Matrices, Washington University in St. Louis. https://www.math.wustl.edu/~freiwald/309orthogdiag.pdf

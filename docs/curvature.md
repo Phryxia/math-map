@@ -88,7 +88,7 @@ $$
 \iint_{R}K\thinspace dA+\oint_{\partial R}\kappa_g\thinspace ds+\sum_i \alpha_i=2\pi\chi(R)
 $$
 
-여기서 $\kappa_g$ 는 경계의 geodesic curvature, $\alpha_i$ 는 꼭짓점에서의 외각, $\chi$ 는 [Euler 지표](euler-characteristic.md)다. 경계가 없는 compact 방향지음 가능 곡면에서는 경계항이 사라지고
+여기서 $\kappa_g$ 는 경계의 geodesic curvature, $\alpha_i$ 는 꼭짓점에서의 외각, $\chi$ 는 [Euler 지표](euler-characteristic.md)다. 경계가 없는 콤팩트 방향지음 가능 곡면에서는 경계항이 사라지고
 
 $$
 \iint_{M}K\thinspace dA=2\pi\chi(M)=2\pi(2-2g)

@@ -127,11 +127,11 @@ $$
 
 점별수렴을 균등수렴으로 끌어올리는 조건이다.
 
-**정리.** $K$ 가 compact, $f_n$ 과 $f$ 가 연속, $f_n$ 이 $f$ 로 점별수렴하며 각 점에서 $f_n(x)$ 가 $n$ 에 대해 단조이면, 수렴은 균등하다.
+**정리.** $K$ 가 콤팩트, $f_n$ 과 $f$ 가 연속, $f_n$ 이 $f$ 로 점별수렴하며 각 점에서 $f_n(x)$ 가 $n$ 에 대해 단조이면, 수렴은 균등하다.
 
 **증명 스케치.** $g_n = |f_n - f|$ 는 연속이고 점별로 0 으로 단조 감소한다. 임의의 $\varepsilon$ 에 대해 열린집합 $U_n = \lbrace x : g_n(x) \lt\varepsilon\rbrace$ 는 증가하는 열린덮개이고, [콤팩트성](compactness.md)에 의해 유한 부분덮개가 있으므로 어떤 $N$ 에서 $U_N$ 이 $K$ 전체를 덮는다. 단조성으로 그 이후 모든 $n$ 에서도 성립한다.
 
-세 가정 중 하나라도 빼면 거짓이다. $x^n$ 은 $[0,1)$ 위에서 단조이지만 정의역이 compact 가 아니고, $[0,1]$ 위에서는 극한함수의 연속성 가정이 깨진다.
+세 가정 중 하나라도 빼면 거짓이다. $x^n$ 은 $[0,1)$ 위에서 단조이지만 정의역이 콤팩트가 아니고, $[0,1]$ 위에서는 극한함수의 연속성 가정이 깨진다.
 
 ## 반례 모음
 
@@ -149,15 +149,15 @@ $$
 
 ## 함수 근사와 급수 전개
 
-- **Weierstrass 근사 정리**: compact 구간 위의 연속함수는 다항식으로 균등근사된다. Bernstein 다항식에 [큰 수의 법칙](law-of-large-numbers.md)을 적용하는 확률적 증명이 유명하다.
+- **Weierstrass 근사 정리**: 콤팩트 구간 위의 연속함수는 다항식으로 균등근사된다. Bernstein 다항식에 [큰 수의 법칙](law-of-large-numbers.md)을 적용하는 확률적 증명이 유명하다.
 - **[멱급수](power-series.md)**: 수렴반경 내부에서 균등수렴하므로 항별 미분과 적분이 정당화된다.
 - **[Fourier 급수](fourier-series.md)**: 균등수렴은 일반적으로 보장되지 않고(연속함수의 Fourier 급수가 발산할 수 있다), Gibbs 현상이 불연속점 근처에서 균등수렴을 막는다. 그래서 [내적 공간](inner-product-spaces.md)의 $L^2$ 수렴을 대신 쓴다.
 
 ## 해석학에서의 쓰임
 
 - **미분방정식**: Picard–Lindelöf 정리는 연속함수 공간의 완비성과 [축약사상 고정점 정리](banach-fixed-point.md)를 쓰며, 반복열의 균등수렴이 해를 만든다.
-- **함수해석**: sup 노름 공간 $C(K)$ 는 Banach 공간의 기본 예이고, Arzelà–Ascoli 정리가 $C(K)$ 의 compact 집합을 균등유계성과 등연속성(equicontinuity)으로 특징짓는다. 등연속성은 정의역 방향의 균등화이며 [균등적분가능성](uniform-integrability.md)이 $L^1$ 에서 하는 역할과 구조가 같다.[^1]
-- **[정칙함수](holomorphic-functions.md)**: 복소해석에서는 compact 집합 위의 균등수렴만으로 극한이 정칙이고 도함수열도 수렴한다(Weierstrass 수렴 정리). Cauchy 적분 공식이 미분을 적분으로 바꾸므로 실해석과 달리 미분이 보존된다.[^2]
+- **함수해석**: sup 노름 공간 $C(K)$ 는 Banach 공간의 기본 예이고, Arzelà–Ascoli 정리가 $C(K)$ 의 콤팩트 집합을 균등유계성과 등연속성(equicontinuity)으로 특징짓는다. 등연속성은 정의역 방향의 균등화이며 [균등적분가능성](uniform-integrability.md)이 $L^1$ 에서 하는 역할과 구조가 같다.[^1]
+- **[정칙함수](holomorphic-functions.md)**: 복소해석에서는 콤팩트 집합 위의 균등수렴만으로 극한이 정칙이고 도함수열도 수렴한다(Weierstrass 수렴 정리). Cauchy 적분 공식이 미분을 적분으로 바꾸므로 실해석과 달리 미분이 보존된다.[^2]
 
 [^1]: Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 7장 (Sequences and Series of Functions), https://archive.org/details/RudinW.PrinciplesOfMathematicalAnalysis3e
 [^2]: Terence Tao, *Analysis II*, Hindustan Book Agency, 3장 (Uniform convergence), https://terrytao.wordpress.com/books/analysis-ii/

@@ -82,7 +82,7 @@ $$
 S^{-1}M \thickspace\cong\thickspace S^{-1}R \otimes_R M
 $$
 
-이 성립한다([텐서곱](tensor-products.md)). 즉 국소화는 $S^{-1}R$ 과의 텐서곱 functor이며, 아래에서 보듯 완전(exact)하다.
+이 성립한다([텐서곱](tensor-products.md)). 즉 국소화는 $S^{-1}R$ 과의 텐서곱 함자이며, 아래에서 보듯 완전(exact)하다.
 
 # 성질
 
@@ -128,7 +128,7 @@ flowchart LR
 
 ## 완전성
 
-**정리.** $S^{-1}(-)$ 는 완전 functor다. 즉 $R$ 가군의 완전열 $M' \to M \to M''$ 에 대해 $S^{-1}M' \to S^{-1}M \to S^{-1}M''$ 도 완전하다.
+**정리.** $S^{-1}(-)$ 는 완전 함자다. 즉 $R$ 가군의 완전열 $M' \to M \to M''$ 에 대해 $S^{-1}M' \to S^{-1}M \to S^{-1}M''$ 도 완전하다.
 
 증명 스케치. 합성이 0임은 명백하다. $m/s$ 가 오른쪽 사상의 핵에 있으면 $g(m)/s = 0$ 이므로 어떤 $u \in S$ 에 대해 $g(um) = 0$ 이고, 즉 $um = f(m')$ 인 $m'$ 이 있어 $m/s = f(m')/(us)$ 이다.
 
@@ -197,7 +197,7 @@ $p=5$ 에서 유리수의 부치 $v_5$ 와 $\mathbb Z_{(5)}$ 에서의 가역 �
 
 - 대수기하: 아핀 스킴 $\mathrm{Spec}R$ 의 구조층은 국소화로 정의되고, 줄기 $\mathcal O_{X,p}=R_p$ 가 국소적 성질(정칙점, 차원, 중복도)을 재는 자리다.
 - 대수적 수론: 대역체의 정수환을 각 소 아이디얼에서 국소화하면 이산 valuation ring이 되고, 여기서 완비화하면 국소체가 된다. 국소-대역 원리(Hasse 원리)의 대수적 골격이 이 구성이다.[^1]
-- 호몰로지 대수: 국소화가 완전 functor이므로 $\mathrm{Ext}$ 와 $\mathrm{Tor}$ 등의 계산이 국소화와 교환한다. 평탄성과 국소 판정은 가군 이론의 표준 기법이다.[^2]
+- 호몰로지 대수: 국소화가 완전 함자이므로 $\mathrm{Ext}$ 와 $\mathrm{Tor}$ 등의 계산이 국소화와 교환한다. 평탄성과 국소 판정은 가군 이론의 표준 기법이다.[^2]
 - [체의 확대](field-extensions.md)와의 관계: 정역의 분수체는 국소화의 특수한 경우이며, 몫환과 국소화를 조합해 잉여체 $R_p/pR_p$ 를 만드는 것이 "점에서의 값"을 정의하는 방법이다.
 
 [^1]: J. S. Milne, Algebraic Number Theory (course notes), https://www.jmilne.org/math/CourseNotes/ant.html
