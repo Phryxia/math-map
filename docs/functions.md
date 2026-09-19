@@ -96,14 +96,12 @@ $A$ 가 비어 있지 않을 때 $f$ 가 단사인 것은 $g \circ f = \mathrm{i
 
 - [기수](cardinality.md)
 - [셈의 기본 원리](counting-principles.md)
-- [계산 가능성과 정지 문제](computability.md)
 - [Lambda calculus](lambda-calculus.md)
 
 ### 대수 구조
 
 - [군](groups.md)
 - [벡터 공간](vector-spaces.md)
-- [범주](category.md)
 
 ### 해석과 확률
 

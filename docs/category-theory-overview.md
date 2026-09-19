@@ -62,6 +62,5 @@ graph TD
 ## 더 알아보기
 
 - [범주](category.md)
-- [모듈러 텐서범주와 3 차원 TQFT](modular-tensor-categories.md)
 
 #category_theory #algebra #overview

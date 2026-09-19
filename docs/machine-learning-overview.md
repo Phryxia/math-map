@@ -77,6 +77,5 @@ graph TD
 ## 더 알아보기
 
 - [경사하강법](gradient-descent.md)
-- [변분 오토인코더](variational-autoencoder.md)
 
 #machine_learning #statistics #optimization #probability #overview

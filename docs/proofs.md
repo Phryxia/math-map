@@ -109,7 +109,6 @@ $$
 - [1차 논리](first-order-logic.md)
 - [직관주의](intuitionism.md)
 - [수학적 플라톤주의](mathematical-platonism.md)
-- [계산 가능성과 정지 문제](computability.md)
 
 ### 증명 기법의 대표 사례
 

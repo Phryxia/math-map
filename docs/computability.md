@@ -90,8 +90,6 @@ $A$ 의 입력을 $B$ 의 입력으로 바꾸는 계산 가능한 함수 $f$ 가
 
 ## 선수지식
 
-- [함수](functions.md)
-- [명제와 증명](proofs.md)
 - [기수](cardinality.md)
 - [계산 개관](computation-overview.md)
 

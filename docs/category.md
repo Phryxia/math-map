@@ -88,7 +88,6 @@ $\mathbf{Set}$ 에서 mono 는 단사함수, epi 는 전사함수와 일치하�
 
 ## 선수지식
 
-- [함수](functions.md)
 - [부분순서](partial-orders.md)
 - [군](groups.md)
 - [범주론 개관](category-theory-overview.md)
