@@ -2,7 +2,7 @@
 
 # 개요
 
-Euler 정리는 법 $n$ 과 서로 소인 정수 $a$ 에 대해 $a^{\varphi(n)}\equiv 1 \pmod n$ 이라는 정리이고, Fermat 소정리는 $n$ 이 소수인 경우다. 두 정리는 모듈러 거듭제곱이 지수에 관해 주기적임을 말하며, 근거는 [군](groups.md)의 Lagrange 정리다. 이 주기성을 모듈러 역원 계산, 큰 지수의 축약, RSA 의 정확성, 확률적 소수판정이 쓴다.
+Euler 정리는 법 $n$ 과 서로 소인 정수 $a$ 에 대해 $a^{\varphi(n)}\equiv 1 \pmod n$ 이라는 정리이고, Fermat 소정리는 $n$ 이 소수인 경우다. 두 정리는 모듈러 거듭제곱이 지수에 관해 주기적임을 말하며, 근거는 [군](groups.md)의 Lagrange 정리다. 이 주기성을 모듈러 역원 계산, 큰 지수의 축약, **RSA**(Rivest–Shamir–Adleman)의 정확성, 확률적 소수판정이 쓴다.
 
 # 직관
 
@@ -124,7 +124,7 @@ $$
 (m^{e})^{d}=m^{1+k\varphi(N)}=m\cdot\big(m^{\varphi(N)}\big)^{k}\equiv m \pmod{N}
 $$
 
-$m$ 이 $p$ 나 $q$ 의 배수인 경우도 각 소인수를 법으로 따로 보면 성립한다. 구현은 $\varphi(N)$ 대신 $\mathrm{lcm}(p-1,q-1)$ 을 쓰고 복호를 CRT 로 분할한다.
+$m$ 이 $p$ 나 $q$ 의 배수인 경우도 각 소인수를 법으로 따로 보면 성립한다. 구현은 $\varphi(N)$ 대신 $\mathrm{lcm}(p-1,q-1)$ 을 쓰고 복호를 **CRT**(Chinese remainder theorem)로 분할한다.
 
 ## 확률적 소수판정
 
