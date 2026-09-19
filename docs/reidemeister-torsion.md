@@ -110,7 +110,7 @@ $\mathrm{Wh}(\mathbb Z/p)$ 가 자명하지 않으므로 렌즈 공간에서 두
 
 **s-코보디즘 정리**는 코보디즘이 곱과 동형일 조건으로 Whitehead 비틀림의 소멸을 요구하고, 차원 $\ge5$ 의 Poincaré 추측이 그 위에서 증명된다.
 
-## 다른 얼굴들
+## 다른 정의와의 일치
 
 - **Alexander 다항식.** 매듭 여집합의 비틀림이 Alexander 다항식이다(Milnor).
 - **해석적 비틀림.** Ray–Singer 가 Laplace 작용소의 행렬식으로 같은 양을 정의했고, Cheeger 와 Müller 가 두 양의 일치를 증명했다.

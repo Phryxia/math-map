@@ -64,7 +64,7 @@ $$
 \star\thinspace dx=dy\wedge dz,\qquad \star(dx\wedge dy)=dz,\qquad\star1=dx\wedge dy\wedge dz
 $$
 
-이고, 벡터 해석의 회전과 발산이 같은 $d$ 의 다른 얼굴인 까닭이 여기에 있다. Riemann 계량에서 $\star\star=(-1)^{k(n-k)}$ 다.
+이고, 벡터 해석의 회전과 발산이 같은 $d$ 를 차수만 달리해 쓴 것인 까닭이 여기에 있다. Riemann 계량에서 $\star\star=(-1)^{k(n-k)}$ 다.
 
 ## $L^2$ 내적과 딸림미분
 

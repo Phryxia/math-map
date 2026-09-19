@@ -107,7 +107,7 @@ $$
 u_k = \frac{(6k-5)(6k-3)(6k-1)}{216\thinspace k\thinspace(2k-1)}\thinspace u_{k-1}
 $$
 
-로 정해진다. 앞인자 $x^{-1/4}$ 는 WKB 해의 $Q^{-1/4}$ 가 $Q = x$ 인 경우이고, 진동 쪽의 $\pi/4$ 는 연결 공식의 위상 이동 그 자체다. 두 방향의 점근이 같은 정함수의 두 얼굴이라는 사실이 연결 공식의 내용 전부다.
+로 정해진다. 앞인자 $x^{-1/4}$ 는 WKB 해의 $Q^{-1/4}$ 가 $Q = x$ 인 경우이고, 진동 쪽의 $\pi/4$ 는 연결 공식의 위상 이동 그 자체다. 두 방향의 점근이 같은 정함수를 두 영역에서 쓴 것이고, 그 관계가 연결 공식의 내용 전부다.
 
 ## Stokes 선의 배치
 
@@ -168,7 +168,7 @@ $$
 I\sim 2\pi e^{i\lambda\eta}\Big[\frac{p_0}{\lambda^{1/3}}\mathrm{Ai}\big(\lambda^{2/3}\zeta\big)+\frac{i\thinspace q_0}{\lambda^{2/3}}\mathrm{Ai}'\big(\lambda^{2/3}\zeta\big)\Big]
 $$
 
-가 되고, $\zeta$ 는 두 임계값의 차이 $\tfrac43|\zeta|^{3/2}=|\varphi(x_1)-\varphi(x_2)|$ 로 정해진다. 이것이 Chester–Friedman–Ursell 의 균등 점근이다. 이 $\zeta$ 는 위 「두 안장점의 합류」에서 본 작용 차이 $A$ 와 같은 양이고, 미분방정식 쪽 회전점과 적분 쪽 퇴화 정상점이 같은 대상의 두 얼굴이라는 점이 여기서 드러난다.
+가 되고, $\zeta$ 는 두 임계값의 차이 $\tfrac43|\zeta|^{3/2}=|\varphi(x_1)-\varphi(x_2)|$ 로 정해진다. 이것이 Chester–Friedman–Ursell 의 균등 점근이다. 이 $\zeta$ 는 위 「두 안장점의 합류」에서 본 작용 차이 $A$ 와 같은 양이고, 미분방정식 쪽 회전점과 적분 쪽 퇴화 정상점이 같은 대상임이 여기서 드러난다.
 
 # 활용
 

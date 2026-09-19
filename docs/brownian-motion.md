@@ -59,7 +59,7 @@ $$
 p_t(x)=\frac{1}{\sqrt{2\pi t}}\exp\negthinspace\Big(-\frac{x^2}{2t}\Big)
 $$
 
-이 함수는 $\partial_t p = \tfrac12 \partial_x^2 p$ 를 만족한다. Brown 운동과 열방정식이 같은 대상의 두 얼굴이라는 사실이 여기서 시작된다.
+이 함수는 $\partial_t p = \tfrac12 \partial_x^2 p$ 를 만족한다. Brown 운동과 열방정식이 같은 대상을 확률과 편미분방정식으로 쓴 것이고, 그 대응이 여기서 시작된다.
 
 # 성질
 

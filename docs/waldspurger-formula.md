@@ -17,7 +17,7 @@ $$
 =\frac{1}{2}\cdot\frac{L\negthinspace\left(\tfrac12,\pi_K\times\chi\right)}{L(1,\pi,\mathrm{Ad})}\cdot\prod_v\alpha_v
 $$
 
-고전적 판본은 반정수 무게 모듈러 형식의 Fourier 계수 제곱이 중심 $L$ 값과 같다는 Kohnen–Zagier 공식이다. 두 얼굴을 잇는 것이 Shimura 대응, 곧 theta 올림이다.
+고전적 판본은 반정수 무게 모듈러 형식의 Fourier 계수 제곱이 중심 $L$ 값과 같다는 Kohnen–Zagier 공식이다. 두 판본을 잇는 것이 Shimura 대응, 곧 theta 올림이다.
 
 $L(1/2)$ 가 함수방정식의 부호 때문에 0 이 되는 경우에는 주기도 0 이 되고, 도함수와 [Heegner 점](heegner-points.md)의 세계로 넘어간다. Waldspurger 와 Gross–Zagier 는 $\varepsilon=+1$ 과 $\varepsilon=-1$ 로 갈라진 분업 관계다.
 
@@ -54,7 +54,7 @@ $$
 |c(|D|)|^2\ \sim\ |D|^{k-1/2}\thinspace\frac{L\negthinspace\left(\tfrac12,\ f\otimes\chi_D\right)}{\langle f,f\rangle}
 $$
 
-좌변은 $q$ 전개 계수라 계산으로 뽑을 수 있고 우변은 $L$ 함수의 중심값이다. 두 얼굴이 같은 정리인 근거는 Shimura 대응이 theta 대응이라는 데 있다. 쌍대쌍 $(\widetilde{\mathrm{SL}}\_2,\mathrm{PGL}\_2)$ 의 theta 올림이 한쪽에서는 반정수 무게 형식의 계수를, 다른 쪽에서는 토릭 주기를 내놓는다([theta 급수](theta-series.md)).
+좌변은 $q$ 전개 계수라 계산으로 뽑을 수 있고 우변은 $L$ 함수의 중심값이다. 두 식이 같은 정리인 근거는 Shimura 대응이 theta 대응이라는 데 있다. 쌍대쌍 $(\widetilde{\mathrm{SL}}\_2,\mathrm{PGL}\_2)$ 의 theta 올림이 한쪽에서는 반정수 무게 형식의 계수를, 다른 쪽에서는 토릭 주기를 내놓는다([theta 급수](theta-series.md)).
 
 # 정의
 
