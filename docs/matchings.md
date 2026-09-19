@@ -139,7 +139,7 @@ $$
 - **흐름과 절단**: 이분 매칭은 소스에서 $X$ 로, $Y$ 에서 싱크로 용량 1의 간선을 붙이면 최대유량 문제가 된다. König 정리는 그 경우의 최대유량 최소절단 정리다([네트워크 흐름](network-flow.md)).
 - **선형계획과 다면체**: 이분 매칭 다면체는 $x_e \ge 0$ 과 정점별 차수 제약만으로 기술되며 꼭짓점이 모두 정수점이다(Birkhoff–von Neumann 정리: 이중확률행렬은 순열행렬의 볼록결합). 일반 그래프에서는 홀수 집합 제약이 추가로 필요하고, 이것이 Edmonds의 매칭 다면체 정리다([볼록성](convexity.md), [선형계획법](linear-programming.md)).
 - **Matroid 교차**: 이분 매칭은 두 분할 matroid의 교차 문제이며, [matroid](matroids.md) 교차 정리의 min-max 공식이 König 정리를 일반화한다.
-- **극값 조합론**: Hall 정리는 서로 다른 대표계(SDR)의 존재 정리이며, [셈의 기본 원리](counting-principles.md)와 [비둘기집 원리](pigeonhole-principle.md)로 필요조건을 세우고 귀납으로 충분성을 얻는 전형적인 형태를 보여준다. Latin square의 확장, 이분 그래프의 간선 색칠([그래프 색칠](graph-coloring.md))이 모두 이 따름정리다.
+- **극값 조합론**: Hall 정리는 서로 다른 대표계(system of distinct representatives, SDR)의 존재 정리다. [셈의 기본 원리](counting-principles.md)와 [비둘기집 원리](pigeonhole-principle.md)로 필요조건을 세우고 귀납으로 충분성을 얻는다. Latin square의 확장, 이분 그래프의 간선 색칠([그래프 색칠](graph-coloring.md))이 모두 이 따름정리다.
 - **경제학과 알고리즘 설계**: 가중 매칭은 배정 문제이고, 안정 매칭(Gale–Shapley)은 선호 순서를 다루는 다른 방향의 확장이다. 안정 매칭은 항상 존재하지만 최대 매칭과는 다른 개념임에 주의한다.
 
 ## 실전 감각
