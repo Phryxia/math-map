@@ -96,7 +96,7 @@ graph TD
 - [Fredholm 행렬식](fredholm-determinant.md): 핵 작용소의 행렬식과 적분방정식
 - [Peter–Weyl 정리](peter-weyl.md): 콤팩트군 위 $L^2$ 의 기약표현 분해
 
-## 다른 분야로 가는 다리
+## 다른 분야와의 접점
 
 - [Lobachevsky 함수](lobachevsky-function.md): Fourier 급수가 쌍곡 부피를 계산한다
 - [Lebesgue 적분](lebesgue-integral.md): 적분을 측도로 다시 세운다

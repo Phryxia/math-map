@@ -55,7 +55,7 @@ graph TD
 - [Fredholm 작용소와 지표](fredholm-operators.md) — 핵과 여핵이 유한차원인 작용소. 지표가 연속 변형에 불변이다
 - [Fredholm 행렬식](fredholm-determinant.md) — 대각합 유한 작용소의 행렬식. 적분방정식의 해와 결정점과정에 쓴다
 
-## 표현론으로 가는 길
+## 표현론과의 접점
 
 - [Peter–Weyl 정리](peter-weyl.md) — 콤팩트 군의 정칙 표현이 기약 표현의 직합으로 분해되고 행렬계수가 $L^2$ 의 기저가 된다
 - [구면조화함수와 SO(3) 의 표현](spherical-harmonics.md) — 구면 위 $L^2$ 공간의 회전군 표현에 따른 분해
