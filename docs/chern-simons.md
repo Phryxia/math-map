@@ -99,7 +99,7 @@ $$
 
 평탄 접속 $\alpha$ 에서 $\mathrm{CS}(\alpha)\in\mathbb R/\mathbb Z$ 는 게이지류만으로 정해지는 수다. 이것이 **Chern–Simons 불변량**이며 $M$ 과 $\pi_1(M)$ 의 표현이 함께 결정한다.
 
-렌즈 공간에서는 명시적이다. $\pi_1(L(p,1))=\mathbb Z/p$ 의 $\mathrm{SU}(2)$ 표현은 생성원을 $\mathrm{diag}(e^{2\pi ib/p},e^{-2\pi ib/p})$ 로 보내는 것들이고 $b$ 와 $p-b$ 가 켤레라 같은 접속을 준다. 그 CS 값은 다음과 같다.
+렌즈 공간에서는 명시적이다. $\pi_1(L(p,1))=\mathbb Z/p$ 의 $\mathrm{SU}(2)$ 표현은 생성원을 $\mathrm{diag}(e^{2\pi ib/p},e^{-2\pi ib/p})$ 로 보내는 것들이고 $b$ 와 $p-b$ 가 켤레라 같은 접속을 준다. 그 CS(Chern–Simons) 값은 다음과 같다.
 
 $$
 \mathrm{CS}(\rho_b)=-\frac{b^2}{p}\ \ \mathrm{mod}1

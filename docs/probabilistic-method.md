@@ -122,7 +122,7 @@ $$
 
 나쁜 사건이 매우 많아 $\sum \Pr[A_i] \ge 1$ 이 되더라도, 각 사건이 소수의 다른 사건에만 의존한다면 전부 피할 수 있다.
 
-**정리 (대칭형 LLL; Erdős–Lovász, 1975).** 사건 $A_1, \ldots, A_m$ 이 각각 $\Pr[A_i] \le p$ 를 만족하고, 의존성 그래프의 최대차수가 $d$ 이며
+**정리 (대칭형 LLL, Lovász local lemma; Erdős–Lovász, 1975).** 사건 $A_1, \ldots, A_m$ 이 각각 $\Pr[A_i] \le p$ 를 만족하고, 의존성 그래프의 최대차수가 $d$ 이며
 
 $$
 e\thinspace p\thinspace (d + 1) \le 1

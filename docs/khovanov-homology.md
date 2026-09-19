@@ -136,7 +136,7 @@ $\mathbb Z$ 계수 정육면체 복합체의 크기는 $\sum_\alpha 2^{k_\alpha}
 
 ## 일반화
 
-- $\mathfrak{sl}\_2$ 를 $\mathfrak{sl}\_N$ 으로 바꾸면 Khovanov–Rozansky 호몰로지가 나오고 HOMFLY 다항식을 범주화한다. 재료는 행렬 인수분해다.
+- $\mathfrak{sl}\_2$ 를 $\mathfrak{sl}\_N$ 으로 바꾸면 Khovanov–Rozansky 호몰로지가 나오고 HOMFLY(Hoste–Ocneanu–Millett–Freyd–Lickorish–Yetter) 다항식을 범주화한다. 재료는 행렬 인수분해다.
 - 홀수 Khovanov 호몰로지는 같은 Euler 지표를 주면서 다른 꼬임을 갖는다. $\mathbb Z/2$ 계수에서 둘이 만난다.
 - Khovanov 호몰로지에서 Heegaard Floer 계열의 불변량으로 가는 스펙트럼 열이 여럿 있고, 두 세계를 잇는 주된 통로 노릇을 한다.
 - 안정 호모토피 유형까지 들어 올린 Lipshitz–Sarkar 의 구성이 있다. Steenrod 연산이 실제로 새 정보를 주는 예가 있다.

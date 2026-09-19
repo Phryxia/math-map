@@ -136,7 +136,7 @@ Reshetikhin–Turaev 구성은 MTC 에서 다음을 만든다.
 
 $\mathrm{SU}(2)\_k$ 에서 라벨 1, 곧 스핀 $1/2$ 를 단 매듭의 불변량이 Jones 다항식을 $q=e^{2\pi i/(k+2)}$ 에서 평가한 값이다. Witten 이 Jones 다항식을 3 차원 Chern–Simons 이론의 Wilson 고리 기댓값으로 설명했고 Reshetikhin–Turaev 가 그것을 수학적으로 구성했으며, MTC 가 그 구성의 대수적 입력이다.
 
-라벨을 바꾸면 색 Jones 다항식이, 다른 Lie 군을 쓰면 HOMFLY 나 Kauffman 다항식이 나온다.
+라벨을 바꾸면 색 Jones 다항식이, 다른 Lie 군을 쓰면 HOMFLY(Hoste–Ocneanu–Millett–Freyd–Lickorish–Yetter) 나 Kauffman 다항식이 나온다.
 
 ## 위상적 양자계산
 
