@@ -50,7 +50,7 @@ graph TD
 
 ## 텐서범주와 응용
 
-- [모듈러 텐서범주와 3 차원 TQFT](modular-tensor-categories.md): 짜임과 모듈러 $S$ 행렬을 가진 범주
+- [모듈러 텐서범주와 3 차원 TQFT](modular-tensor-categories.md)(topological quantum field theory): 짜임과 모듈러 $S$ 행렬을 가진 범주
 - [애니온과 위상적 양자계산](anyons.md): 준입자의 교환 통계가 범주의 짜임으로 기술된다
 
 # 연관 문서

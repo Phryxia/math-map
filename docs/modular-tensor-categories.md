@@ -16,7 +16,7 @@ $$
 S=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix},\qquad T=\begin{pmatrix}1&1\cr 0&1\end{pmatrix}
 $$
 
-이 공리계에서 MTC 하나가 3 차원 위상적 장론(TQFT) 하나와 대응한다. Reshetikhin–Turaev 구성이 MTC 에서 3 차원 다양체와 그 안의 매듭에 대한 불변량을 만들고, 역으로 3 차원 TQFT 에서 원환면에 붙는 벡터공간과 그 위의 $\mathrm{SL}\_2(\mathbb Z)$ 작용이 MTC 를 복원한다.
+이 공리계에서 MTC(modular tensor category) 하나가 3 차원 위상적 장론(topological quantum field theory, TQFT) 하나와 대응한다. Reshetikhin–Turaev 구성이 MTC 에서 3 차원 다양체와 그 안의 매듭에 대한 불변량을 만들고, 역으로 3 차원 TQFT 에서 원환면에 붙는 벡터공간과 그 위의 $\mathrm{SL}\_2(\mathbb Z)$ 작용이 MTC 를 복원한다.
 
 $$
 \lbrace\text{MTC}\rbrace\ \longleftrightarrow\ \lbrace\text{3 차원 TQFT}\rbrace
@@ -146,7 +146,7 @@ Fibonacci 애니온의 꼬임 연산은 유니터리 군에서 조밀한 부분�
 
 ## 정점작용소대수와의 왕복
 
-강유리 VOA 의 가군 범주가 MTC 라는 Huang 의 정리가 두 이론을 잇는다. [Zhu 정리](zhu-algebra.md)가 준 $S$ 행렬이 범주 쪽 $S$ 행렬과 같고, 거꾸로 MTC 의 분류 결과가 어떤 VOA 가 존재할 수 있는지를 제한한다. 주어진 MTC 를 실현하는 VOA 가 항상 있는지는 열린 문제다.
+강유리 VOA(vertex operator algebra) 의 가군 범주가 MTC 라는 Huang 의 정리가 두 이론을 잇는다. [Zhu 정리](zhu-algebra.md)가 준 $S$ 행렬이 범주 쪽 $S$ 행렬과 같고, 거꾸로 MTC 의 분류 결과가 어떤 VOA 가 존재할 수 있는지를 제한한다. 주어진 MTC 를 실현하는 VOA 가 항상 있는지는 열린 문제다.
 
 [^1]: 기초 구성은 N. Reshetikhin–V. Turaev, *Invariants of 3-manifolds via link polynomials and quantum groups*, Invent. Math. 103 (1991) 와 V. Turaev, *Quantum Invariants of Knots and 3-Manifolds* (1994). 물리적 기원은 E. Witten, *Quantum field theory and the Jones polynomial*, Commun. Math. Phys. 121 (1989). 랭크 유한성은 P. Bruillard, S.-H. Ng, E. Rowell, Z. Wang, *Rank-finiteness for modular categories*, J. Amer. Math. Soc. 29 (2016). 위상적 양자계산은 Z. Wang, *Topological Quantum Computation* (2010).
 

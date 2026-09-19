@@ -44,7 +44,7 @@ graph TD
 ## 모형
 
 - [선형회귀와 최소제곱법](linear-regression.md): 정규방정식과 사영, Gauss–Markov 정리, 정칙화
-- [확률적 PCA](probabilistic-pca.md): 저차원 잠재변수를 둔 Gauss 모형, 주성분과의 관계
+- [확률적 PCA](probabilistic-pca.md)(principal component analysis): 저차원 잠재변수를 둔 Gauss 모형, 주성분과의 관계
 
 # 연관 문서
 
