@@ -175,4 +175,4 @@ Mathieu 군 $M_{24}$ 는 확장 이진 Golay 부호 $[24,12,8]$ 의 자기동형
 - [Mathieu 군과 Golay 부호](mathieu-groups.md)
 - [괴물 달빛 추측](monstrous-moonshine.md)
 
-#group_theory #theorem
+#group_theory #algebra #combinatorics #theorem

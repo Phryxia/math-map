@@ -152,4 +152,4 @@ Monte Carlo 추정의 표준오차는 표본표준편차를 $n$ 의 제곱근으
 - [Brown 운동](brownian-motion.md)
 - [Wigner 반원법칙](wigner-semicircle.md)
 
-#probability #theorem
+#probability #statistics #measure_theory #theorem

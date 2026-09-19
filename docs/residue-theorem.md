@@ -128,4 +128,4 @@ Laplace 변환과 z-변환의 역변환은 유수의 합이다. 선형 시불변
 - [Picard 정리](picard-theorems.md)
 - [감마 함수와 Stirling 근사](gamma-function.md)
 
-#complex_analysis #theorem
+#complex_analysis #analysis #theorem

@@ -148,4 +148,4 @@ $$
 
 - [RSA 암호](rsa-cryptosystem.md)
 
-#number_theory #theorem
+#number_theory #algebra #cryptography #theorem

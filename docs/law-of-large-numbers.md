@@ -139,4 +139,4 @@ $$
 - [중심극한정리](central-limit-theorem.md)
 - [집중부등식](concentration-inequalities.md)
 
-#probability #theorem
+#probability #statistics #measure_theory #theorem

@@ -159,4 +159,4 @@ Kleisli 범주를 층층이 쌓아 여러 효과를 조합하는 것이 monad �
 
 아직 연결한 문서가 없다.
 
-#category_theory #construction
+#category_theory #computation #algebra #construction

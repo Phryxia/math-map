@@ -121,4 +121,4 @@ $$
 
 아직 연결한 문서가 없다.
 
-#category_theory #construction
+#category_theory #set_theory #algebra #construction

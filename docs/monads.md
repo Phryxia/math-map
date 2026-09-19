@@ -111,4 +111,4 @@ $T$ 를 주는 모든 수반의 범주에서 Kleisli 는 시작대상, Eilenberg
 
 - [Kleisli 범주와 Eilenberg–Moore 범주](kleisli-eilenberg-moore.md)
 
-#category_theory #construction
+#category_theory #computation #probability #construction

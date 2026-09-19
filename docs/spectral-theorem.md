@@ -142,4 +142,4 @@ $$
 - [Hecke 작용소와 새형식](hecke-operators.md)
 - [유계 작용소와 스펙트럼](bounded-operators.md)
 
-#linear_algebra #theorem
+#linear_algebra #analysis #optimization #theorem

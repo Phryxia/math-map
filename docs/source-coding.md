@@ -122,4 +122,4 @@ $p=(0.45,0.25,0.15,0.10,0.05)$ 에서 얻는 부호는 길이 $(1,2,3,4,4)$ 로 
 
 - [채널 부호화 정리](channel-coding.md)
 
-#information_theory #theorem
+#information_theory #probability #computation #theorem

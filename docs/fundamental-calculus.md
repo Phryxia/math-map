@@ -126,4 +126,4 @@ $\int_0^3 2t\thinspace dt = 9$ 이고, 원시함수에 더한 상수는 양 끝�
 - [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
 - [상미분방정식](ordinary-differential-equations.md)
 
-#analysis #theorem
+#analysis #complex_analysis #theorem

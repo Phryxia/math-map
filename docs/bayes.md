@@ -130,4 +130,4 @@ $$
 
 - [Bayes 추론과 사후분포](bayesian-inference.md)
 
-#probability #theorem
+#probability #statistics #machine_learning #theorem

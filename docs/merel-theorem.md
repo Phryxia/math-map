@@ -136,4 +136,4 @@ $$
 
 - 아직 연결한 문서가 없다.
 
-#number_theory #theorem
+#number_theory #algebra #theorem

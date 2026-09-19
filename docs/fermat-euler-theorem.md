@@ -168,4 +168,4 @@ $$
 - [RSA 암호](rsa-cryptosystem.md)
 - [이차 상호법칙](quadratic-reciprocity.md)
 
-#number_theory #theorem
+#number_theory #cryptography #group_theory #theorem

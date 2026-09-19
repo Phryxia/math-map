@@ -120,4 +120,4 @@ Kolyvagin 의 Euler 계가 Selmer 군의 크기를 위에서 누르는 데 비�
 
 - [Merel 의 일양 유계성 정리](merel-theorem.md)
 
-#number_theory #theorem
+#number_theory #algebra #theorem
