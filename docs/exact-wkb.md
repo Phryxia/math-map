@@ -2,7 +2,7 @@
 
 # 개요
 
-[WKB 근사](wkb-approximation.md)는 발산하는 급수를 잘라 쓰고 회전점에서 Airy 함수로 이어 붙이며, 연결 공식을 규칙으로 외워 쓴다.
+[WKB 근사](wkb-approximation.md)(Wentzel–Kramers–Brillouin)는 발산하는 급수를 잘라 쓰고 회전점에서 Airy 함수로 이어 붙이며, 연결 공식을 규칙으로 외워 쓴다.
 
 **정확한 WKB**(exact WKB)는 급수를 자르는 대신 [Borel 재합산](borel-pade.md)한다. 합한 결과가 각 영역에서 정의된 정확한 해이고, 연결 공식은 외우는 규칙이 아니라 계산되는 대상이 된다. Voros 가 시작하고 Écalle 의 [resurgence](resurgence.md) 가 언어를 준 뒤 Delabaere–Dillinger–Pham 이 정리했다.
 
@@ -110,7 +110,7 @@ $$
 
 ## 연결 공식
 
-단순 회전점 하나를 놓고 DDP 공식을 적용하면 [Airy 함수](airy-functions.md)의 Stokes 자료가 그대로 나오고, 이를 파동함수 수준에서 풀어 쓰면 WKB 의 연결 공식이 된다. 감쇠해에서 진동해로 갈 때 붙던 계수 $\tfrac12$ 과 위상 $\pi/4$ 가 자동사상의 행렬 성분으로 자리를 잡는다.
+단순 회전점 하나를 놓고 DDP(Delabaere–Dillinger–Pham) 공식을 적용하면 [Airy 함수](airy-functions.md)의 Stokes 자료가 그대로 나오고, 이를 파동함수 수준에서 풀어 쓰면 WKB 의 연결 공식이 된다. 감쇠해에서 진동해로 갈 때 붙던 계수 $\tfrac12$ 과 위상 $\pi/4$ 가 자동사상의 행렬 성분으로 자리를 잡는다.
 
 연결 공식이 방향에 따라 달랐던 것은, 큰 항이 지배하는 쪽에서 작은 항의 계수가 Borel 합 이전에는 정의되지 않았기 때문이다. Borel 합 이후에는 양쪽 모두 정확한 해이므로 변환이 가역이고 비대칭이 사라진다.
 
@@ -138,13 +138,13 @@ $$
 
 정확한 양자화 조건은 퍼텐셜에서 스펙트럼으로 가는 명시적 사상이다. 역방향인 스펙트럼에서 퍼텐셜을 복원하는 문제에서도 Voros 기호가 자료가 된다. 준위 전체를 알면 모든 사이클의 기호를 읽을 수 있고, 기호가 만족하는 관계식이 퍼텐셜의 계수를 제약한다.
 
-$-\psi'' + x^{2M}\psi = E\psi$ 류에서 Voros 기호가 만족하는 함수방정식은 가해 격자모형의 Bethe 방정식과 같은 꼴이고, 이 대응이 **ODE–IM 대응**이다.
+$-\psi'' + x^{2M}\psi = E\psi$ 류에서 Voros 기호가 만족하는 함수방정식은 가해 격자모형의 Bethe 방정식과 같은 꼴이고, 이 대응이 **ODE–IM 대응**(ordinary differential equation–integrable model)이다.
 
 ## 좌표로서의 Voros 기호
 
 DDP 공식의 형태는 클러스터 변수의 뒤집기 규칙과 같다. 이 대응에서 Stokes 그래프는 곡면 위의 삼각분할, Voros 기호는 그 삼각분할에 붙은 좌표, 안장 연결의 통과는 뒤집기가 된다.
 
-물리에서는 같은 그림이 스펙트럼 네트워크라는 이름으로 4 차원 게이지 이론의 BPS 상태 세기와 같은 자료를 기술한다.
+물리에서는 같은 그림이 스펙트럼 네트워크라는 이름으로 4 차원 게이지 이론의 BPS(Bogomolny–Prasad–Sommerfield) 상태 세기와 같은 자료를 기술한다.
 
 [^1]: André Voros, *The return of the quartic oscillator: the complex WKB method*, Annales de l'I.H.P. Physique théorique 39 (1983), §§3–6. 주기 기호의 정의, quartic 진동자에서의 정확한 양자화 조건, 기호가 만족하는 함수방정식. DDP 공식의 형태와 안장 연결에서의 점프는 Eric Delabaere, Hervé Dillinger, Frédéric Pham, *Résurgence de Voros et périodes des courbes hyperelliptiques*, Annales de l'Institut Fourier 43 (1993), §§2–3.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-[PCP 정리](pcp-theorem.md)는 어떤 문제를 특정 비율보다 잘 근사하는 것이 $\mathrm{NP}$ 난해임을 보인다. 그 한계선과 [반정부호 계획법](semidefinite-programming.md)이 주는 알고리즘의 성능 사이에는 대체로 간극이 남고, 최대 절단이 대표적이다.
+[PCP 정리](pcp-theorem.md)(probabilistically checkable proof)는 어떤 문제를 특정 비율보다 잘 근사하는 것이 $\mathrm{NP}$ 난해임을 보인다. 그 한계선과 [반정부호 계획법](semidefinite-programming.md)이 주는 알고리즘의 성능 사이에는 대체로 간극이 남고, 최대 절단이 대표적이다.
 
 | 방향 | 값 |
 |---|---|
@@ -18,7 +18,7 @@ $$
 \text{"}1-\varepsilon\text{ 이상 만족 가능" 과 "}\varepsilon\text{ 이하만 만족 가능" 을 구별하는 것이 }\mathrm{NP}\text{-난해}
 $$
 
-UGC 가 참이면 최대 절단의 최적 근사비가 $\alpha_{\mathrm{GW}}$ 이고, 모든 제약 충족 문제에 대해 기본 SDP 완화가 최적 알고리즘이다. 하나의 알고리즘 틀이 넓은 문제군에서 더 개선될 수 없다는 통일 정리가 된다.
+UGC(unique games conjecture)가 참이면 최대 절단의 최적 근사비가 $\alpha_{\mathrm{GW}}$ 이고, 모든 제약 충족 문제에 대해 기본 SDP(semidefinite programming) 완화가 최적 알고리즘이다. 하나의 알고리즘 틀이 넓은 문제군에서 더 개선될 수 없다는 통일 정리가 된다.
 
 2018 년에 Khot–Minzer–Safra 등이 **2-to-2 게임 정리**를 증명해 추측의 절반에 해당하는 형태를 확립했다[^1]. 완전한 UGC 는 증명되지 않았다[^1].
 
@@ -54,7 +54,7 @@ $$
 
 ## 근사비 $\alpha_{\mathrm{GW}}$
 
-GW 알고리즘은 절단 문제를 단위구 위 벡터 배치로 완화하고, 무작위 초평면으로 자른다. 두 벡터의 각이 $\theta$ 면 잘릴 확률이 $\theta/\pi$ 인 반면 SDP 목적값 기여는 $(1-\cos\theta)/2$ 다. 비율의 최솟값이 근사비다.
+GW(Goemans–Williamson) 알고리즘은 절단 문제를 단위구 위 벡터 배치로 완화하고, 무작위 초평면으로 자른다. 두 벡터의 각이 $\theta$ 면 잘릴 확률이 $\theta/\pi$ 인 반면 SDP 목적값 기여는 $(1-\cos\theta)/2$ 다. 비율의 최솟값이 근사비다.
 
 $$
 \alpha_{\mathrm{GW}}=\min_{0\lt \theta\le\pi}\frac{\theta/\pi}{(1-\cos\theta)/2}=0.878567\ldots
@@ -100,7 +100,7 @@ Sum-of-Squares 위계도 반증 경로로 검토되었다. 낮은 차수의 SoS 
 
 ## 소집합 확장 추측과의 관계
 
-UGC 는 **소집합 확장 추측**(SSEH)에서 따라온다[^2]. 그래프의 작은 집합들이 모두 잘 확장되는지 판정하는 문제의 난해성이며 더 조합적이다. 알려진 함의는 이 한 방향뿐이고 역방향은 증명되어 있지 않다[^2].
+UGC 는 **소집합 확장 추측**(small set expansion hypothesis, SSEH)에서 따라온다[^2]. 그래프의 작은 집합들이 모두 잘 확장되는지 판정하는 문제의 난해성이며 더 조합적이다. 알려진 함의는 이 한 방향뿐이고 역방향은 증명되어 있지 않다[^2].
 
 # 활용
 

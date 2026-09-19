@@ -2,7 +2,7 @@
 
 # 개요
 
-RSA는 1977년에 제안된 최초의 실용적 공개키 암호이자 서명 방식이다[^1]. 두 소수의 곱 $n=pq$ 를 공개하고 소인수 $p$ , $q$ 는 비밀로 둔다. $n$ 만 아는 사람은 거듭제곱 $m\mapsto m^e\bmod n$ 을 계산할 수 있지만, 그 역연산은 $p$ , $q$ 를 아는 사람만 효율적으로 할 수 있다.
+RSA(Rivest–Shamir–Adleman)는 1977년에 제안된 최초의 실용적 공개키 암호이자 서명 방식이다[^1]. 두 소수의 곱 $n=pq$ 를 공개하고 소인수 $p$ , $q$ 는 비밀로 둔다. $n$ 만 아는 사람은 거듭제곱 $m\mapsto m^e\bmod n$ 을 계산할 수 있지만, 그 역연산은 $p$ , $q$ 를 아는 사람만 효율적으로 할 수 있다.
 
 수학적 재료는 두 개뿐이다. [Euler 정리](fermat-euler-theorem.md)가 지수의 주기를 정해 주고, [중국인의 나머지 정리](chinese-remainder-theorem.md)가 $\bmod n$ 계산을 $\bmod p$ 와 $\bmod q$ 로 쪼개 준다. 정당성 증명과 복호화 가속이 모두 이 두 도구로 나온다.
 
@@ -75,7 +75,7 @@ $$
 
 같은 논증이 $q$ 를 법으로 해도 성립한다. 따라서 $m^{ed} - m$ 은 $p$ 로도 $q$ 로도 나누어떨어지고, $p \ne q$ 이므로 [중국인의 나머지 정리](chinese-remainder-theorem.md)(또는 유일분해)에 의해 $n = pq$ 로 나누어떨어진다. 즉 $m^{ed} \equiv m \pmod{n}$ 이다. ∎
 
-Euler 정리만 쓰면 $\gcd(m,n)=1$ 인 경우만 처리되지만, 위처럼 소수별로 나눈 뒤 CRT로 합치면 $m$ 이 $p$ 나 $q$ 의 배수인 예외적인 경우까지 포함된다. 이 "소수별로 확인하고 CRT로 합친다"는 패턴은 RSA 분석 전반에서 반복된다.
+Euler 정리만 쓰면 $\gcd(m,n)=1$ 인 경우만 처리되지만, 위처럼 소수별로 나눈 뒤 CRT(Chinese remainder theorem)로 합치면 $m$ 이 $p$ 나 $q$ 의 배수인 예외적인 경우까지 포함된다. 이 "소수별로 확인하고 CRT로 합친다"는 패턴은 RSA 분석 전반에서 반복된다.
 
 ## CRT를 이용한 복호화 가속
 
@@ -127,7 +127,7 @@ $$
 - **작은 개인지수.** $d\lt n^{1/4}/3$ 정도로 작으면 연분수 전개로 $d$ 가 복원된다(Wiener 공격). 복호화를 빠르게 하려고 $d$ 를 작게 잡아서는 안 된다.
 - **CRT 고장 공격.** CRT 복호화 도중 $\bmod p$ 계산만 오류가 나면 잘못된 서명 $s'$ 에 대해 $\gcd(s'^e-m,n)=q$ 가 되어 즉시 인수분해된다. 구현은 결과를 재검증해야 한다.
 
-이 공격들은 대부분 대수적 구조를 그대로 노출한 데서 온다. 표준 대응은 무작위화된 패딩(암호화는 OAEP, 서명은 PSS)을 써서 평문이 대수적 관계를 갖지 않게 만드는 것이다[^2].
+이 공격들은 대부분 대수적 구조를 그대로 노출한 데서 온다. 표준 대응은 무작위화된 패딩(암호화는 OAEP, optimal asymmetric encryption padding, 서명은 PSS, probabilistic signature scheme)을 써서 평문이 대수적 관계를 갖지 않게 만드는 것이다[^2].
 
 ## 구조적 관찰
 
@@ -143,7 +143,7 @@ $$
 - **수론 알고리즘.** 확장 [유클리드 알고리즘](euclidean-algorithm.md), 반복 제곱법, Montgomery 곱셈이 구현의 기본 요소다.
 - **계산 이론.** RSA의 존재 자체가 일방향함수의 존재를 가정한다. 일방향함수가 존재하면 $\mathrm P\ne\mathrm{NP}$ 이므로, RSA의 안전성은 [P 대 NP 문제](p-np.md)보다 강한 가정이다. 반대로 $\mathrm P\ne\mathrm{NP}$ 라 해도 RSA가 안전하다는 보장은 없다.
 - **후속 암호계.** 이산로그 기반(Diffie–Hellman, 타원곡선)과 격자 기반 방식은 같은 공개키 틀에 다른 난제를 끼운 것이다. 양자 내성 표준화는 격자·부호·해시 기반으로 이동 중이다.
-- **프로토콜 위치.** 실제 TLS에서 RSA는 대칭키 교환과 인증서 서명에 쓰이고, 대량 데이터는 대칭 암호가 처리한다. 공개키 연산이 느리기 때문이다.
+- **프로토콜 위치.** 실제 TLS(transport layer security)에서 RSA는 대칭키 교환과 인증서 서명에 쓰이고, 대량 데이터는 대칭 암호가 처리한다. 공개키 연산이 느리기 때문이다.
 
 [^1]: R. L. Rivest, A. Shamir, L. Adleman, A Method for Obtaining Digital Signatures and Public-Key Cryptosystems, Communications of the ACM 21(2), 1978, https://people.csail.mit.edu/rivest/Rsapaper.pdf
 [^2]: D. Boneh, Twenty Years of Attacks on the RSA Cryptosystem, Notices of the AMS 46(2), 1999, https://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf

@@ -117,7 +117,7 @@ Birch–Swinnerton-Dyer 추측은 $r$ 이 곡선의 $L$ 함수가 $s=1$ 에서 �
 
 타원곡선의 이점은 키 길이다. 한 번의 점 덧셈이 여러 번의 체 연산이라 연산 자체는 무겁지만 다루는 수가 작아 전체적으로 이득이다.
 
-$\char35{}E(\mathbb F_p)=p$ 인 이상 곡선에서는 가법군으로의 동형이 있어 이산로그가 다항시간에 풀리고, 매장 차수가 작으면 Weil 쌍으로 문제를 유한체로 옮기는 MOV 공격이 통한다. 그래서 표준 곡선을 쓰거나 생성 시 이 조건들을 검사한다.
+$\char35{}E(\mathbb F_p)=p$ 인 이상 곡선에서는 가법군으로의 동형이 있어 이산로그가 다항시간에 풀리고, 매장 차수가 작으면 Weil 쌍으로 문제를 유한체로 옮기는 MOV(Menezes–Okamoto–Vanstone) 공격이 통한다. 그래서 표준 곡선을 쓰거나 생성 시 이 조건들을 검사한다.
 
 ## 쌍선형 쌍
 
@@ -131,10 +131,10 @@ $$
 
 # 활용
 
-- TLS, SSH, 비트코인, Signal 이 타원곡선을 쓴다. 키 교환에 X25519, 서명에 Ed25519 나 ECDSA 가 표준이고, Curve25519 계열은 상수 시간 구현이 쉽게 설계되었다. 스칼라 곱에서 비트에 따라 다른 연산을 하면 시간과 전력으로 비밀이 새므로 Montgomery 사다리처럼 비트와 무관한 구현을 쓴다.
+- TLS(transport layer security), SSH(secure shell), 비트코인, Signal 이 타원곡선을 쓴다. 키 교환에 X25519, 서명에 Ed25519 나 ECDSA(elliptic curve digital signature algorithm)가 표준이고, Curve25519 계열은 상수 시간 구현이 쉽게 설계되었다. 스칼라 곱에서 비트에 따라 다른 연산을 하면 시간과 전력으로 비밀이 새므로 Montgomery 사다리처럼 비트와 무관한 구현을 쓴다.
 - Lenstra 의 타원곡선 소인수분해는 합성수를 법으로 하는 곡선에서 역원 계산이 실패하는 지점을 이용하며, 곡선을 바꿔 가며 반복할 수 있어 중간 크기 인수를 찾는 데 최선이다. 타원곡선 소수 증명은 위수 계산으로 검증 가능한 증명서를 만든다.
 - Fermat 마지막 정리의 증명은 가상의 반례에서 타원곡선을 만들고 그 곡선이 모듈러일 수 없음을 보인다. 모든 유리 타원곡선이 모듈러라는 모듈러성 정리가 Wiles 와 Taylor 의 결과다. 합동수 문제도 특정 타원곡선의 계수가 양수인지의 문제로 번역된다.
-- Shor 알고리즘은 타원곡선 이산로그도 다항시간에 풀고, 키가 짧아 필요한 큐비트 수가 적다. 한편 곡선들 사이의 아이소제니 그래프에서 경로를 찾는 문제는 양자 다항시간 알고리즘이 알려져 있지 않아 CSIDH 와 SQIsign 같은 후양자 구성이 연구되고 있다[^2].
+- Shor 알고리즘은 타원곡선 이산로그도 다항시간에 풀고, 키가 짧아 필요한 큐비트 수가 적다. 한편 곡선들 사이의 아이소제니 그래프에서 경로를 찾는 문제는 양자 다항시간 알고리즘이 알려져 있지 않아 CSIDH(commutative supersingular isogeny Diffie–Hellman)와 SQIsign 같은 후양자 구성이 연구되고 있다[^2].
 
 [^1]: J. Park, B. Poonen, J. Voight, M. M. Wood, *A heuristic for boundedness of ranks of elliptic curves*, Journal of the European Mathematical Society **21** (2019), 2859–2903. 계수의 유계성이 판정되지 않은 채임을 밝히고 유계라고 예측하는 휴리스틱을 세운다.
 [^2]: W. Castryck, T. Lange, C. Martindale, L. Panny, J. Renes, *CSIDH: An Efficient Post-Quantum Commutative Group Action*, ASIACRYPT 2018, LNCS **11274**, 395–427. 아이소제니 경로 찾기에 알려진 양자 알고리즘의 비용을 안전성 근거로 정리한다.
