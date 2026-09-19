@@ -84,19 +84,7 @@ $$
 P_\ell(x)=\det\negthinspace\left(1-\mathrm{Fr}\_\ell\thinspace x\ \middle|\ T^{\ast}\right)
 $$
 
-이고, $P_\ell$ 은 그 표현의 $L$ 함수의 $\ell$ 번째 Euler 인자다. Euler 계는 $L$ 함수의 Euler 곱을 계수로 지니고 탑 위에 놓인 원소들의 열이다. $L$ 함수와 Selmer 군을 잇는 다리가 이 계수이며, BSD 와 Iwasawa 주추측의 증명이 이를 쓴다.
-
-```mermaid
-flowchart TD
-  ALG["탑 위의 대수적 원소<br/>단수 · Heegner 점 · Beilinson 원소"]
-  TR["자취 정합성<br/>Tr = (Euler 인자) x (아래 층)"]
-  DER["Kolyvagin 유도<br/>D = sum i sigma^i"]
-  KAP["유도류 kappa_n<br/>n 밖에서만 Selmer 조건 만족"]
-  REC["대역 상호법칙<br/>sum_v (loc_v c, loc_v s) = 0"]
-  SEL["Selmer 군의 상계"]
-  ALG --> TR --> DER --> KAP --> REC --> SEL
-  CHE["Chebotarev 로<br/>loc_l(s) != 0 인 l 선택"] --> REC
-```
+이고, $P_\ell$ 은 그 표현의 $L$ 함수의 $\ell$ 번째 Euler 인자다. Euler 계는 $L$ 함수의 Euler 곱을 계수로 지니고 탑 위에 놓인 원소들의 열이다. 이 계수가 $L$ 함수와 Selmer 군을 잇고, BSD 와 Iwasawa 주추측의 증명이 그 연결을 쓴다.
 
 # 정의
 
