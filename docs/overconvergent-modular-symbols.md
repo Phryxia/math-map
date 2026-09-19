@@ -126,7 +126,7 @@ $$
 
 ## 타원곡선의 p 진 BSD 실험
 
-$E/\mathbb Q$ 와 소수 $p$ 를 주면 무게 2 기호에서 $L_p(E,s)$ 의 계수를 뽑는다. $s=1$ 에서의 소멸 차수를 $p$ 진 BSD 추측이 예측하는 $\mathrm{rank}\thinspace E(\mathbb Q)$ 와 비교하고, 주항에서 $p$ 진 조절자와 Tate–Shafarevich 군의 $p$ 부분을 읽는다. 고전 BSD 와 달리 양변이 모두 유한 계산으로 접근되므로 수치 실험의 범위가 넓다.
+$E/\mathbb Q$ 와 소수 $p$ 를 주면 무게 2 기호에서 $L_p(E,s)$ 의 계수를 뽑는다. $s=1$ 에서의 소멸 차수를 $p$ 진 BSD(Birch–Swinnerton-Dyer) 추측이 예측하는 $\mathrm{rank}\thinspace E(\mathbb Q)$ 와 비교하고, 주항에서 $p$ 진 조절자와 Tate–Shafarevich 군의 $p$ 부분을 읽는다. 고전 BSD 와 달리 양변이 모두 유한 계산으로 접근되므로 수치 실험의 범위가 넓다.
 
 ## Sage 의 구현
 

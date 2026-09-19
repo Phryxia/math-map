@@ -91,7 +91,7 @@ $n$ 이 **합동수**라는 것은 세 변이 유리수인 직각삼각형의 �
 
 > $n$ 이 홀수 무제곱수일 때, $n$ 이 합동수이면 다음이 성립한다.
 > $$2\thinspace\char35{}\lbrace(x,y,z)\in\mathbb Z^3: n=2x^2+y^2+32z^2\rbrace=\char35{}\lbrace(x,y,z)\in\mathbb Z^3: n=2x^2+y^2+8z^2\rbrace$$
-> BSD 추측을 가정하면 역도 성립한다.
+> BSD(Birch–Swinnerton-Dyer) 추측을 가정하면 역도 성립한다.
 
 짝수 $n=2m$ 에서는 $4x^2+y^2+32z^2$ 과 $4x^2+y^2+8z^2$ 을 쓴다. 판정이 유한 계산으로 끝난다.
 

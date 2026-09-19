@@ -14,7 +14,7 @@ $$
 
 를 만족한다. 항 대부분이 0 이 되도록 $c$ 를 고르면 남은 한 항이 $s$ 의 국소 성분을 0 으로 만든다. 그런 $c$ 를 자리마다 하나씩 공급하는 장치가 Euler 계다.
 
-Euler 계의 정의는 수체의 탑 위에 얹힌 대수적 원소들이 **자취 정합성**만 만족하면 되도록 짜여 있고, 자취 관계에서 필요한 류를 뽑아내는 것이 **Kolyvagin 유도 연산자**다. [Heegner 점](heegner-points.md)의 족이 이 도식의 원형이고, 거기서 해석적 순위 $\le1$ 인 [BSD](birch-swinnerton-dyer.md) 가 나온다.
+Euler 계의 정의는 수체의 탑 위에 얹힌 대수적 원소들이 **자취 정합성**만 만족하면 되도록 짜여 있고, 자취 관계에서 필요한 류를 뽑아내는 것이 **Kolyvagin 유도 연산자**다. [Heegner 점](heegner-points.md)의 족이 이 도식의 원형이고, 거기서 해석적 순위 $\le1$ 인 [BSD(Birch–Swinnerton-Dyer)](birch-swinnerton-dyer.md) 가 나온다.
 
 # 직관
 
@@ -224,7 +224,7 @@ $$
 | Beilinson–Kato 원소 | 모듈러 형식의 $T$ | $L(E,1)\ne0\Rightarrow$ 순위 0, 주추측의 한쪽 나눔 |
 | Rubin–Stark 원소 | 일반 $\mathbb Z_p(1)$ 꼬임 | 추측 단계 |
 
-Kato 의 Euler 계는 모듈러 곡선의 $K_2$ 안의 Beilinson 원소에서 오고, $K$ 나 CM 을 쓰지 않아 [모듈러 형식](modular-forms.md) 일반으로 확장된다. 얻는 방향은 반대다. Heegner 쪽이 $L'\ne0\Rightarrow$ 순위 1 을, Kato 쪽이 $L\ne0\Rightarrow$ 순위 0 과 주추측의 한쪽 나눔을 준다. 나머지 한쪽은 Skinner–Urban 이 Eisenstein 합동으로 채웠다.
+Kato 의 Euler 계는 모듈러 곡선의 $K_2$ 안의 Beilinson 원소에서 오고, $K$ 나 CM(complex multiplication) 을 쓰지 않아 [모듈러 형식](modular-forms.md) 일반으로 확장된다. 얻는 방향은 반대다. Heegner 쪽이 $L'\ne0\Rightarrow$ 순위 1 을, Kato 쪽이 $L\ne0\Rightarrow$ 순위 0 과 주추측의 한쪽 나눔을 준다. 나머지 한쪽은 Skinner–Urban 이 Eisenstein 합동으로 채웠다.
 
 알려진 Euler 계는 순위 1 까지의 Selmer 군만 누른다.
 

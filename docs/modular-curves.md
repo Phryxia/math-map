@@ -142,7 +142,7 @@ $$
 \varphi\colon X_0(N)\longrightarrow E
 $$
 
-가 있다는 뜻이고, 이 사상의 차수인 **모듈러 차수**가 BSD 추측의 정량적 형태에 나타난다.
+가 있다는 뜻이고, 이 사상의 차수인 **모듈러 차수**가 BSD(Birch–Swinnerton-Dyer) 추측의 정량적 형태에 나타난다.
 
 ## 계산 도구
 

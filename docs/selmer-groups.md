@@ -123,11 +123,11 @@ $\text{Ш}(E/K)$ 의 유한성은 추측이며 알려진 것은 부분적이다.
 
 | 결과 | 조건 |
 |---|---|
-| Rubin (1987) | CM 타원곡선, 해석적 순위 $0$ |
+| Rubin (1987) | CM(complex multiplication) 타원곡선, 해석적 순위 $0$ |
 | Kolyvagin (1988) | 모듈러 곡선, 해석적 순위 $\le1$ |
 | Kato, Skinner–Urban | Iwasawa 주추측 경유, 순위 $0$ 의 여러 경우 |
 
-$\text{Ш}$ 가 나눌 수 있는 부분군을 갖지 않는 것이 유한성과 동치이며, 이것이 BSD 추측의 일부다.
+$\text{Ш}$ 가 나눌 수 있는 부분군을 갖지 않는 것이 유한성과 동치이며, 이것이 BSD(Birch–Swinnerton-Dyer) 추측의 일부다.
 
 ## Cassels–Tate 쌍
 

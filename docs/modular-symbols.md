@@ -161,7 +161,7 @@ $$
 \langle\lbrace 0,\infty\rbrace,f\rangle=\int_0^{i\infty}2\pi i\thinspace f(z)\thinspace dz=L(f,1)
 $$
 
-$\lbrace 0,\alpha\rbrace$ 꼴 기호가 꼬인 $L$ 값 $L(f,\chi,1)$ 을 주고, 무게 $k$ 에서는 $V_{k-2}$ 의 성분이 $1\le j\le k-1$ 인 임계점 $L(f,j)$ 를 준다. 이 값들은 주기 $\Omega_f^\pm$ 로 나누면 유리수이고 그 유리수가 모듈러 기호 격자에서 직접 읽힌다. BSD 추측의 수치 검증이 이 성질 위에서 이루어진다.
+$\lbrace 0,\alpha\rbrace$ 꼴 기호가 꼬인 $L$ 값 $L(f,\chi,1)$ 을 주고, 무게 $k$ 에서는 $V_{k-2}$ 의 성분이 $1\le j\le k-1$ 인 임계점 $L(f,j)$ 를 준다. 이 값들은 주기 $\Omega_f^\pm$ 로 나누면 유리수이고 그 유리수가 모듈러 기호 격자에서 직접 읽힌다. BSD(Birch–Swinnerton-Dyer) 추측의 수치 검증이 이 성질 위에서 이루어진다.
 
 ## 정수 구조
 
