@@ -32,7 +32,7 @@ $$
 
 ## 사원수 대수와 Hecke 고윳값
 
-LPS 구성은 그래프를 군의 Cayley 그래프로 만든다. 소수 $p,q$ 를 잡고
+LPS(Lubotzky–Phillips–Sarnak) 구성은 그래프를 군의 Cayley 그래프로 만든다. 소수 $p,q$ 를 잡고
 
 $$
 G=\mathrm{PGL}\_2(\mathbb F_q)\ \text{또는}\ \mathrm{PSL}\_2(\mathbb F_q),

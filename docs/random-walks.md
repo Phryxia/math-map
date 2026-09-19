@@ -162,6 +162,6 @@ $$
 
 ## 더 알아보기
 
-- [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md)
+- [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md)(supersingular isogeny Diffie–Hellman)
 
 #probability #graph_theory

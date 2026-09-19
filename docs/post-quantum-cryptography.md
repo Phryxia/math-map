@@ -145,7 +145,7 @@ ML-KEM-768 의 공개키는 1184 바이트로 타원곡선의 32 바이트보다
 
 격자 기반 구성이 안전하다는 증명은 없다. 최악 경우 환산은 실무보다 훨씬 큰 파라미터에서만 적용되고 구조화된 변형에는 온전히 적용되지 않는다. 구현에서는 이산 Gauss 표본 추출과 거부 표본 추출이 부채널 공격에 취약하고, 서명 구현의 실제 사고가 대부분 여기서 일어났다.
 
-대안 계열을 함께 유지한다. 해시 기반 서명은 해시 함수의 안전성만 가정하므로 가장 보수적이고, 부호 기반과 아이소제니 기반이 격자와 독립적인 가정을 준다. 2022 년 아이소제니 계열의 SIDH 가 고전 알고리즘으로 깨졌다.
+대안 계열을 함께 유지한다. 해시 기반 서명은 해시 함수의 안전성만 가정하므로 가장 보수적이고, 부호 기반과 아이소제니 기반이 격자와 독립적인 가정을 준다. 2022 년 아이소제니 계열의 SIDH(supersingular isogeny Diffie–Hellman)가 고전 알고리즘으로 깨졌다.
 
 [^1]: G. Kuperberg, "A subexponential-time quantum algorithm for the dihedral hidden subgroup problem", SIAM Journal on Computing 35 (2005), 170–188. 이면체군 숨은 부분군 문제의 $2^{O(\sqrt{\log N})}$ 알고리즘. https://arxiv.org/abs/quant-ph/0302112
 

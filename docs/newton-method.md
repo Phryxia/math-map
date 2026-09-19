@@ -141,7 +141,7 @@ $a=2$ 에서 초기값 $1$ 로 시작하면 오차가 대략 $0.08$ , $0.002$ , 
 
 - 비선형 [상미분방정식](ordinary-differential-equations.md)의 암시적 시간 적분(후진 Euler, BDF)에서는 매 시간 단계마다 비선형 방정식이 나오고, 이를 Newton 법으로 푼다.
 - 유한요소법으로 이산화한 비선형 편미분방정식도 같은 구조다. 이때 선형계는 직접 분해 대신 반복법으로 풀며, Jacobian 벡터 곱만 필요로 하는 Newton–Krylov 방식이 쓰인다.
-- 통계에서 최대가능도 추정의 정규방정식을 풀 때 Fisher 정보 행렬을 Hessian 대신 쓰면 Fisher 점수법이 된다. 일반화선형모형의 표준 적합 절차인 IRLS가 그 구체형이다.
+- 통계에서 최대가능도 추정의 정규방정식을 풀 때 Fisher 정보 행렬을 Hessian 대신 쓰면 Fisher 점수법이 된다. 일반화선형모형의 표준 적합 절차인 IRLS(iteratively reweighted least squares)가 그 구체형이다.
 - 다항식의 근을 구할 때는 동반행렬의 [고윳값과 고유벡터](eigenvalues.md)를 쓰는 방법이 더 안정적이지만, 근을 정밀하게 다듬는 마지막 단계는 여전히 Newton 법이다.
 
 ## 볼록 최적화에서

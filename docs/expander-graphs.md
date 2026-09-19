@@ -87,7 +87,7 @@ $$
 \lambda_2\ge\frac{2\sqrt{d-1}}{d}-o_n(1)
 $$
 
-이다. $\max(|\lambda_2|,|\lambda_n|)\le\frac{2\sqrt{d-1}}{d}$ 인 그래프를 **Ramanujan 그래프**라 한다. 무한족의 구성은 $d=p+1$ ($p$ 소수)에서 LPS 가 주었고, 모든 $d\ge3$ 에 대한 이분 Ramanujan 족의 존재는 Marcus–Spielman–Srivastava 가 교대 다항식 방법으로 증명했다.
+이다. $\max(|\lambda_2|,|\lambda_n|)\le\frac{2\sqrt{d-1}}{d}$ 인 그래프를 **Ramanujan 그래프**라 한다. 무한족의 구성은 $d=p+1$ ($p$ 소수)에서 LPS(Lubotzky–Phillips–Sarnak)가 주었고, 모든 $d\ge3$ 에 대한 이분 Ramanujan 족의 존재는 Marcus–Spielman–Srivastava 가 교대 다항식 방법으로 증명했다.
 
 # 성질
 

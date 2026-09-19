@@ -103,7 +103,7 @@ $$
 
 ## 분리초평면 정리
 
-서로소인 두 볼록집합 $A,B\subseteq\mathbb{R}^n$ 에 대해 모든 $x\in A$ , $y\in B$ 에서 $a^{\mathsf{T}}x\le b\le a^{\mathsf{T}}y$ 인 $a\ne0$ 과 $b$ 가 있다. 최적해가 아닌 점에서는 개선 방향의 집합과 허용 영역을 분리하는 초평면이 있고, 그 법선이 쌍대 변수다. [선형계획법](linear-programming.md)의 강쌍대성과 KKT 조건이 이 정리에서 나온다.
+서로소인 두 볼록집합 $A,B\subseteq\mathbb{R}^n$ 에 대해 모든 $x\in A$ , $y\in B$ 에서 $a^{\mathsf{T}}x\le b\le a^{\mathsf{T}}y$ 인 $a\ne0$ 과 $b$ 가 있다. 최적해가 아닌 점에서는 개선 방향의 집합과 허용 영역을 분리하는 초평면이 있고, 그 법선이 쌍대 변수다. [선형계획법](linear-programming.md)의 강쌍대성과 KKT(Karush–Kuhn–Tucker) 조건이 이 정리에서 나온다.
 
 # 활용
 

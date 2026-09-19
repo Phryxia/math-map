@@ -105,7 +105,7 @@ $$
 
 ## 그래프와 수치계산
 
-[그래프 Laplacian](graph-laplacian.md)의 고윳값은 연결성과 확장성을 잰다. [유효저항](effective-resistance.md)과 [랜덤 워크](random-walks.md)의 혼합시간이 이 스펙트럼으로 표현된다. 수치 계산에서는 특성다항식의 근을 구하지 않고 QR 알고리즘이나 거듭제곱 반복을 쓴다. 특성다항식의 근을 직접 구하는 방식은 계수의 미소 오차가 근을 크게 흔들어 쓰이지 않는다.
+[그래프 Laplacian](graph-laplacian.md)의 고윳값은 연결성과 확장성을 잰다. [유효저항](effective-resistance.md)과 [랜덤 워크](random-walks.md)의 혼합시간이 이 스펙트럼으로 표현된다. 수치 계산에서는 특성다항식의 근을 구하지 않고 QR(orthogonal-triangular) 분해를 쓰는 QR 알고리즘이나 거듭제곱 반복을 쓴다. 특성다항식의 근을 직접 구하는 방식은 계수의 미소 오차가 근을 크게 흔들어 쓰이지 않는다.
 
 실대칭행렬은 고유벡터를 직교로 고를 수 있고, 그 진술이 [스펙트럼 정리](spectral-theorem.md)다[^2].
 

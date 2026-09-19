@@ -4,7 +4,7 @@
 
 그래프 신경망은 각 정점이 이웃의 특징을 모아 자기 특징을 갱신하는 일을 반복한다.
 
-Xu, Hu, Leskovec, Jegelka 는 이 모형의 표현력을 규정했다. 이웃을 집계하는 모든 그래프 신경망은 [color refinement](color-refinement.md), 곧 1-WL 보다 강할 수 없고, 집계와 갱신이 단사이면 그 상한에 도달한다.
+Xu, Hu, Leskovec, Jegelka 는 이 모형의 표현력을 규정했다. 이웃을 집계하는 모든 그래프 신경망은 [color refinement](color-refinement.md), 곧 1-WL(Weisfeiler–Leman) 보다 강할 수 없고, 집계와 갱신이 단사이면 그 상한에 도달한다.
 
 설계 지침이 따라 나온다. 집계 함수는 multiset 에 대해 단사여야 하며 평균과 최댓값은 이 조건을 깨뜨린다. 논문은 조건을 만족하는 Graph Isomorphism Network 를 제시한다[^1].
 
