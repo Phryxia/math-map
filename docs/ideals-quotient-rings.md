@@ -113,7 +113,7 @@ $$
 R/(I\cap J)\thickspace\cong\thickspace R/I\times R/J
 $$
 
-가 성립한다. 정수에서 $\gcd(m,n) = 1$ 일 때의 [중국인의 나머지 정리](chinese-remainder-theorem.md)가 이 진술의 특수한 경우다. 몫환을 더 작은 조각의 곱으로 쪼개는 이 정리는 다항식 보간, RSA 의 복호 가속, 병렬 산술 구현에 그대로 쓰인다.
+가 성립한다. 정수에서 $\gcd(m,n) = 1$ 일 때의 [중국인의 나머지 정리](chinese-remainder-theorem.md)가 이 진술의 특수한 경우다. 몫환을 더 작은 조각의 곱으로 쪼개는 이 정리는 다항식 보간, RSA(Rivest–Shamir–Adleman)의 복호 가속, 병렬 산술 구현에 그대로 쓰인다.
 
 # 활용
 
