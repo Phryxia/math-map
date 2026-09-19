@@ -83,7 +83,7 @@ $t$ 는 순환지표 $\chi$ 에 대한 고유벡터이고, 복소 쪽에서 복�
 | 조건 | 대응하는 환원 | 남는 선형대수 자료 |
 | --- | --- | --- |
 | 결정적 | 좋은 환원 | Frobenius $\varphi$ 와 여과 |
-| 반안정 | 반안정 환원 | $\varphi$, 단일(monodromy) 작용소 $N$, 여과 |
+| 반안정 | 반안정 환원 | $\varphi$ , 단일(monodromy) 작용소 $N$ , 여과 |
 | de Rham | 임의 환원 | 여과 |
 | Hodge–Tate | 임의 환원 | Hodge–Tate 무게 |
 

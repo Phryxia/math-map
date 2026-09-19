@@ -26,7 +26,7 @@ $$E_0(z)=1-z,\qquad E_p(z)=(1-z)\exp\left(z+\frac{z^2}2+\cdots+\frac{z^p}p\right
 
 $$\rho=\limsup_{r\to\infty}\frac{\log\log M(r)}{\log r}$$
 
-를 $f$ 의 **위수**라 한다. 다항식은 위수 $0$, $e^z$ 는 위수 $1$, $e^{z^2}$ 는 위수 $2$ 다.
+를 $f$ 의 **위수**라 한다. 다항식은 위수 $0$ , $e^z$ 는 위수 $1$ , $e^{z^2}$ 는 위수 $2$ 다.
 
 # 성질
 

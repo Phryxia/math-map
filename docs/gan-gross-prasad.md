@@ -50,8 +50,8 @@ $\mathrm{GL}\_n$ 에서 Whittaker 모형이 유일한 것은 $N\backslash G/N$ �
 | 모형 | 부분군과 끼우는 것 | 해당 군 | Whittaker 에서의 교체 |
 | --- | --- | --- | --- |
 | Whittaker | 멱단근기 $N$ 과 비퇴화 지표 | $\mathrm{GL}\_n$ | 없음 |
-| Bessel | $G(V_n)$ 또는 $N\rtimes G(V_n)$ | $\mathrm{SO}$, $\mathrm U$ | 짝수 여차원, 지표 대신 더 작은 군 |
-| Fourier–Jacobi | Weil 표현 $\omega_\psi$ | $\mathrm{Sp}/\mathrm{Mp}$, $\mathrm U$ | 홀수 여차원, 지표 대신 Weil 표현 |
+| Bessel | $G(V_n)$ 또는 $N\rtimes G(V_n)$ | $\mathrm{SO}$ , $\mathrm U$ | 짝수 여차원, 지표 대신 더 작은 군 |
+| Fourier–Jacobi | Weil 표현 $\omega_\psi$ | $\mathrm{Sp}/\mathrm{Mp}$ , $\mathrm U$ | 홀수 여차원, 지표 대신 Weil 표현 |
 
 세 모형이 모두 재는 것은 중복도 $\dim\mathrm{Hom}\_H(\pi\otimes\pi'\otimes\nu,\mathbb C)$ 다.
 

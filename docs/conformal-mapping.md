@@ -30,7 +30,7 @@ Möbius 변환은 원과 직선을 원과 직선으로 옮기고, 서로 다른 
 
 ## Schwarz 보조정리
 
-$\mathbb D=\lbrace z:\vert z\vert\lt 1\rbrace$ 에서 정칙이고 $f(\mathbb D)\subset\mathbb D$, $f(0)=0$ 인 $f$ 는 모든 $z\in\mathbb D$ 에서
+$\mathbb D=\lbrace z:\vert z\vert\lt 1\rbrace$ 에서 정칙이고 $f(\mathbb D)\subset\mathbb D$ , $f(0)=0$ 인 $f$ 는 모든 $z\in\mathbb D$ 에서
 
 $$\vert f(z)\vert\le\vert z\vert,\qquad \vert f'(0)\vert\le1$$
 

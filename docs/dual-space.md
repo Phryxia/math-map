@@ -20,7 +20,7 @@ $V$ 의 **쌍대 공간** $V^\ast$ 는 $V$ 에서 $F$ 로 가는 [선형사상](
 
 $$V^\ast = \mathrm{Hom}\_F(V, F)$$
 
-덧셈과 스칼라곱은 점별로 정의한다. $(\varphi+\psi)(v)=\varphi(v)+\psi(v)$, $(c\varphi)(v)=c\thinspace\varphi(v)$. $V^\ast$ 의 원소를 **선형 범함수**라 한다.
+덧셈과 스칼라곱은 점별로 정의한다. $(\varphi+\psi)(v)=\varphi(v)+\psi(v)$ , $(c\varphi)(v)=c\thinspace\varphi(v)$ . $V^\ast$ 의 원소를 **선형 범함수**라 한다.
 
 ## 쌍대 기저
 
@@ -80,7 +80,7 @@ $W\subseteq V$ 가 부분공간이고 $V$ 가 유한차원이면 다음이 성�
 
 $$\dim W+\dim W^\circ=\dim V$$
 
-제한 사상 $V^\ast\to W^\ast$, $\varphi\mapsto \varphi\vert_W$ 를 본다. $W$ 의 기저를 $V$ 의 기저로 확장하면 이 사상은 전사이고, 핵은 정의상 $W^\circ$ 다. 차원 등식과 계수-퇴화차수 정리로 위 식이 나온다.
+제한 사상 $V^\ast\to W^\ast$ , $\varphi\mapsto \varphi\vert_W$ 를 본다. $W$ 의 기저를 $V$ 의 기저로 확장하면 이 사상은 전사이고, 핵은 정의상 $W^\circ$ 다. 차원 등식과 계수-퇴화차수 정리로 위 식이 나온다.
 
 따름정리로 $W^{\circ\circ}=W$ 다. $W\subseteq W^{\circ\circ}$ 는 정의에서 나오고 차원이 같다.
 
@@ -94,7 +94,7 @@ $\mathrm{im}(f^\ast)=(\ker f)^\circ$ 를 보인다. $\varphi\circ f$ 는 $\ker f
 
 ## 쌍선형 형식과의 대응
 
-$V$ 위의 쌍선형 형식 $B\colon V\times V\to F$ 는 사상 $V\to V^\ast$, $v\mapsto B(v,\cdot\thinspace)$ 를 준다. 이 사상이 동형인 것이 $B$ 가 비퇴화라는 조건이다. [내적 공간](inner-product-spaces.md)에서 내적이 그런 형식이고, 그래서 유한차원 내적 공간은 자기 쌍대와 동일시된다.
+$V$ 위의 쌍선형 형식 $B\colon V\times V\to F$ 는 사상 $V\to V^\ast$ , $v\mapsto B(v,\cdot\thinspace)$ 를 준다. 이 사상이 동형인 것이 $B$ 가 비퇴화라는 조건이다. [내적 공간](inner-product-spaces.md)에서 내적이 그런 형식이고, 그래서 유한차원 내적 공간은 자기 쌍대와 동일시된다.
 
 # 활용
 

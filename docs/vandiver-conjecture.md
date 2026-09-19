@@ -63,7 +63,7 @@ $E_\infty$ 는 단수의 극한, $C_\infty$ 는 순환체 단수의 극한이다
 | 성분 | 그 성분을 다루는 도구 |
 | --- | --- |
 | $A^{-}$ | Stickelberger 소멸자, Herbrand–Ribet 정리, 주추측 $\mathrm{char}=L_p$ |
-| $A^{+}$ | 순환체 단수 $E/C$, 주추측 $\mathrm{char}(E/C)=\mathrm{char}(X)$, Vandiver 추측 $A^{+}=0$ |
+| $A^{+}$ | 순환체 단수 $E/C$ , 주추측 $\mathrm{char}(E/C)=\mathrm{char}(X)$ , Vandiver 추측 $A^{+}=0$ |
 
 $A^{-}$ 쪽 도구들은 구조를 결정하고, $A^{+}$ 쪽에서 같은 자리를 맡는 것이 Vandiver 추측이다.
 

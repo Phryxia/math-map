@@ -93,7 +93,7 @@ $$
 \dim\mathfrak m_{(m,n)}=c(mn),\qquad c(n)=\dim V^\natural_n
 $$
 
-이다. 여기서 $(m,n)\ne(0,0)$ 이고 $c(-1)=1$, $c(0)=0$, $c(1)=196884$ 다. 보통의 Kac–Moody 대수와 달리 허근(imaginary simple root)을 허용하는 것이 일반화의 내용이다.
+이다. 여기서 $(m,n)\ne(0,0)$ 이고 $c(-1)=1$ , $c(0)=0$ , $c(1)=196884$ 다. 보통의 Kac–Moody 대수와 달리 허근(imaginary simple root)을 허용하는 것이 일반화의 내용이다.
 
 # 성질
 

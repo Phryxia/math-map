@@ -18,7 +18,7 @@ $f(x)=\sqrt x$ 는 $\lbrack 0,1\rbrack$ 에서 균등연속이지만 원점 근�
 
 ## Lipschitz 조건
 
-거리공간 $(X,d_X)$, $(Y,d_Y)$ 사이의 사상 $f$ 가 **Lipschitz** 라 함은 상수 $L\ge0$ 이 있어 모든 $x,x'$ 에서 다음이 성립하는 것이다.
+거리공간 $(X,d_X)$ , $(Y,d_Y)$ 사이의 사상 $f$ 가 **Lipschitz** 라 함은 상수 $L\ge0$ 이 있어 모든 $x,x'$ 에서 다음이 성립하는 것이다.
 
 $$
 d_Y\bigl(f(x),f(x')\bigr)\le L\thinspace d_X(x,x')

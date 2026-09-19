@@ -70,7 +70,7 @@ $$\Lambda^n f=\det(f)\cdot \mathrm{id}\_{\Lambda^n V}$$
 
 ## 차수 붙은 가환성
 
-$\alpha\in\Lambda^k V$, $\beta\in\Lambda^l V$ 이면 다음이 성립한다.
+$\alpha\in\Lambda^k V$ , $\beta\in\Lambda^l V$ 이면 다음이 성립한다.
 
 $$\alpha\wedge\beta=(-1)^{kl}\thinspace\beta\wedge\alpha$$
 
