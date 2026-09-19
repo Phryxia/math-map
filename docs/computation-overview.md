@@ -74,6 +74,7 @@ graph TD
 - [오류정정부호](error-correcting-codes.md): 부호의 구성과 복호 알고리즘, 거리와 한계
 - [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md): 유한체 위 타원곡선의 점 개수를 다항시간에 센다
 - [Kedlaya 알고리즘과 p 진 점 세기](kedlaya-algorithm.md): Monsky–Washnitzer 코호몰로지로 Frobenius 자취를 계산한다
+- [Todd–Coxeter 알고리즘](todd-coxeter.md): 군의 표시에서 잉여류를 열거해 부분군의 지표를 구한다
 
 ## 자료구조
 
