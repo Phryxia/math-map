@@ -155,7 +155,7 @@ $$
 \mathbb{Z} \xrightarrow{\ \times 2\ } \mathbb{Z} \quad \Longrightarrow \quad \mathbb{Z}/2\mathbb{Z} \xrightarrow{\ 0\ } \mathbb{Z}/2\mathbb{Z}
 $$
 
-왼쪽은 단사지만 오른쪽은 영사상이다. 이 실패의 정도를 재는 것이 Tor 함자이고, 예컨대 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) = \mathbb Z/2\mathbb Z$ 다. $- \otimes N$ 이 항상 단사성을 보존하는 가군 $N$ 을 평탄(flat) 가군이라 한다. 자유가군은 평탄하고, PID 위에서는 torsion-free와 평탄이 같다.
+왼쪽은 단사지만 오른쪽은 영사상이다. 이 실패의 정도를 재는 것이 Tor 함자이고, 예컨대 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) = \mathbb Z/2\mathbb Z$ 다. $- \otimes N$ 이 항상 단사성을 보존하는 가군 $N$ 을 평탄(flat) 가군이라 한다. 자유가군은 평탄하고, **PID**(principal ideal domain) 위에서는 torsion-free와 평탄이 같다.
 
 ## 스칼라 확장
 
