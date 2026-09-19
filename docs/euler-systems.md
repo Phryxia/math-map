@@ -92,7 +92,7 @@ flowchart TD
   TR["자취 정합성<br/>Tr = (Euler 인자) x (아래 층)"]
   DER["Kolyvagin 유도<br/>D = sum i sigma^i"]
   KAP["유도류 kappa_n<br/>n 밖에서만 Selmer 조건 만족"]
-  REC["대역 상호법칙<br/>sum_v <loc_v c, loc_v s> = 0"]
+  REC["대역 상호법칙<br/>sum_v (loc_v c, loc_v s) = 0"]
   SEL["Selmer 군의 상계"]
   ALG --> TR --> DER --> KAP --> REC --> SEL
   CHE["Chebotarev 로<br/>loc_l(s) != 0 인 l 선택"] --> REC
