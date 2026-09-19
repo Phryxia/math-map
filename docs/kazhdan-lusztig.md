@@ -199,6 +199,7 @@ Soergel 쌍가군의 범주는 $P_{x,w}$ 를 수의 열이 아니라 벡터공�
 
 ## 선수지식
 
+- [Coxeter 군](coxeter-groups.md)
 - [Borel–Weil–Bott 정리와 깃발다양체](borel-weil-bott.md)
 
 ## 더 알아보기
