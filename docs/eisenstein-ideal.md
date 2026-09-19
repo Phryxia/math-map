@@ -152,7 +152,7 @@ Merel 의 정리는 목록이 아니라 유계를 준다. 명시적 목록은 $d
 
 # 활용
 
-- 비틀림군이 15 개뿐이라는 사실이 타원곡선 데이터베이스의 구조를 정한다. 주어진 곡선의 비틀림군은 Nagell–Lutz 나 좋은 환원에서의 위수 계산으로 확정되고 Mazur 의 목록이 후보를 자른다. [BSD](birch-swinnerton-dyer.md) 공식에서 비틀림 항이 분모에 들어가므로 순위 계산의 전처리이기도 하다.
+- 비틀림군이 15 개뿐이라는 사실이 타원곡선 데이터베이스의 구조를 정한다. 주어진 곡선의 비틀림군은 Nagell–Lutz 나 좋은 환원에서의 위수 계산으로 확정되고 Mazur 의 목록이 후보를 자른다. [BSD](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer) 공식에서 비틀림 항이 분모에 들어가므로 순위 계산의 전처리이기도 하다.
 - Frey 곡선의 $\bmod\ p$ 표현이 기약임을 보이는 단계에서 이 정리가 쓰인다. 표현이 가약이면 Eisenstein 상황이 되고 위 목록이 그 가능성을 배제한다.
 - $\mathbb T/I$ 의 크기를 $L$ 값으로 계산하는 방식이 이후 합동으로 Selmer 원소를 만드는 논법의 틀이 되었다. [Iwasawa 주추측](iwasawa-main-conjecture.md)의 Mazur–Wiles 증명이 직접적인 후속이다.
 

@@ -207,7 +207,7 @@ $p$ 가 $h$ 를 나누지 않는 정칙소수일 조건이 $p\nmid B_2B_4\cdots 
 
 ## 타원곡선의 주추측과 BSD
 
-같은 도식이 [타원곡선](elliptic-curves.md)에 옮겨진다. $E$ 의 Selmer 군을 순환 $\mathbb Z_p$ 탑 위에서 모아 $\Lambda$ 가군을 만들고, 그 특성 아이디얼이 Mazur–Swinnerton-Dyer 의 $p$ 진 $L$ 함수와 같다는 것이 타원곡선 주추측이다. Kato 의 Euler 계가 한쪽 나눔을, Skinner–Urban 이 Eisenstein 합동으로 반대쪽을 주었다. 이 정리에서 $p$ 진 [BSD](birch-swinnerton-dyer.md) 와 조건부로 고전적 BSD 의 일부가 따라 나온다. Euler 계가 상한을, 합동이 하한을 주는 구도는 순환체에서와 같다.
+같은 도식이 [타원곡선](elliptic-curves.md)에 옮겨진다. $E$ 의 Selmer 군을 순환 $\mathbb Z_p$ 탑 위에서 모아 $\Lambda$ 가군을 만들고, 그 특성 아이디얼이 Mazur–Swinnerton-Dyer 의 $p$ 진 $L$ 함수와 같다는 것이 타원곡선 주추측이다. Kato 의 Euler 계가 한쪽 나눔을, Skinner–Urban 이 Eisenstein 합동으로 반대쪽을 주었다. 이 정리에서 $p$ 진 [BSD](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer)와 조건부로 고전적 BSD 의 일부가 따라 나온다. Euler 계가 상한을, 합동이 하한을 주는 구도는 순환체에서와 같다.
 
 ## $p$ 진 $L$ 함수의 계산
 
