@@ -1,63 +1,39 @@
 {
   "version": 1,
-  "savedAt": "2026-09-19T09:05:16.149Z",
-  "nextSeq": 639,
+  "savedAt": "2026-09-19T13:02:48.346Z",
+  "nextSeq": 658,
   "items": [
     {
-      "id": "99b38173",
-      "title": "prime-number-theorem 을 riemann-zeta 와 소수 정리로 분할",
-      "priority": 50,
-      "note": "2026-09-19 회차에 분할로 판정했고 회차 끝이라 실행을 다음 회차로 넘겼다. 회차 앞쪽에 시간이 넉넉할 때 잡는다. 근거: 188 줄이라 1000 줄 기준에는 못 미치지만 8절의 다른 기준('제목이 A와 B 인데 A 와 B 가 각자 문서가 될 만하면')에 해당한다. zeta 함수가 직관 절 둘(17,33줄), 정의 절 둘(41 Riemann zeta 함수, 57 0 점), 성질 절 둘(83 Euler 곱, 102 명시 공식)을 차지한다. 들어오는 링크 18 개 가운데 2 개가 이미 라벨을 '[Riemann zeta]' 로 달아 zeta 문서를 가리키려 한다. 실행 계획: (1) 새 문서 riemann-zeta.md 제목 'Riemann zeta 함수' 에 정의(Dirichlet 급수와 해석적 연속, 함수방정식, 자명한 0 점과 임계띠), 성질(Euler 곱, 특수값과 Bernoulli 수, 임계선), 활용을 담는다. 부모는 analytic-continuation 과 primes. (2) prime-number-theorem 은 제목을 '소수 정리' 로 좁히고 zeta 절들을 옮긴 뒤 소수 계수 함수, 로그 적분, 증명의 핵심 단계, 오차항, pi(x) 와 Li(x) 의 부호만 남긴다. 부모에 riemann-zeta 를 넣고 analytic-continuation 은 조상이 되므로 5절대로 뺀다. (3) 자식 넷(bernoulli-numbers, dirichlet-l-functions, eisenstein-series, tate-thesis)을 riemann-zeta 로 옮긴다. (4) 들어오는 링크 18 곳의 라벨을 대상에 맞춰 나눈다. (5) number-theory-overview 의 갈래와 지도 mermaid 를 맞춘다",
-      "createdAt": "2026-09-19T09:00:22.833Z",
-      "seq": 635
+      "id": "f66a8955",
+      "title": "두문자어 첫 등장 풀이 전수 점검 (7차)",
+      "priority": 13,
+      "note": "2026-09-19 회차 6차에 검사기를 2판으로 고쳐(여러 줄 $$ 블록 상태 추적, 링크 주소 제거 후 약어 근처 120자에서 괄호 풀네임 탐색) 보고가 339 에서 253 건이 되었다. 처리: ZF(banach-spaces, boolean-algebras), ZFC(boolean-algebras, cardinality, category), GRH(dirichlet-l-functions), FFT, MLE, GCD, PID. 남은 보고에서 실제 위반으로 보이는 것: dynamic-programming DAG 7줄과 FPTAS 69줄, eisenstein-ideal BSD 155줄, error-correcting-codes MDS 51줄, exact-wkb DDP 97줄과 BPS 147줄, expander-graphs PCP 20줄과 LPS 90줄과 LDPC 114줄, exponential-families UMVU 148줄과 IRLS 186줄과 EM 188줄, fermat-euler-theorem RSA 5줄과 CRT 127줄, feynman-kac BSDE 150줄, first-order-logic PA 103줄과 SMT 111줄, finite-fields AES 115줄. 판정이 갈리는 것: 프로토콜 이름(TLS SSH RFC AES JPEG RAID)과 QR 분해의 QR 은 고유명사로 굳었다고 볼 여지가 있다. 한 회차에 기준을 정하고 일괄 적용하는 편이 낫다",
+      "createdAt": "2026-09-19T12:55:05.928Z",
+      "seq": 654
     },
     {
-      "id": "fc43dddf",
-      "title": "부모가 넷인 문서의 5절 정리 (2차)",
-      "priority": 20,
-      "note": "2026-09-19 회차에 1차를 했다. 검사법: for f in docs/*.md 로 '## 선수지식' 과 '## 더 알아보기' 사이의 '](' 개수를 세면 부모가 넷 이상인 문서가 나온다. 처리한 둘은 개관이 부모에 둘 들어간 경우였다. rsa-cryptosystem 과 discrete-logarithm 에서 computation-overview 간선을 빼고 주 분야인 cryptography-overview 만 남겼다(계산 개관의 갈래 목록에는 본문 링크로 남아 있으니 독자 동선은 그대로다). 남은 여섯의 판정이 2차다. computability(cardinality, computation-overview, functions, proofs) — cardinality 의 조상이 functions 와 proofs 이므로 5절의 '다른 부모의 조상인 것을 뺀다' 에 정확히 해당한다. 둘을 빼면 부모가 둘이 된다. category(category-theory-overview, functions, groups, partial-orders) 와 measure(cardinality, measure-theory-overview, probability, topology) 는 조상 관계를 graph.mjs ancestors 로 먼저 확인해야 한다. umbral-moonshine(mathieu-groups, mock-modular-forms, monstrous-moonshine, niemeier-lattices)은 네 부모 사이에 조상 관계가 없고 넷이 다 필요하므로 그대로 두는 것으로 1차에서 판정했다. langlands-program, modular-tensor-categories, variational-autoencoder 는 아직 안 봤다",
-      "createdAt": "2026-09-19T09:04:58.824Z",
-      "seq": 638
+      "id": "a462beed",
+      "title": "나열형 mermaid 훑기 (16차)",
+      "priority": 13,
+      "note": "2026-09-19 회차 15차 결과. 지운 것: godel-incompleteness(부호화에서 제2정리까지의 증명 단계). 남긴 것: heegner-points, modular-tensor-categories, rings(근거는 커밋 메시지에). 12차 검사기 출력 36 개 가운데 남은 미판정은 점수 4 묶음 열넷이다: counting-principles euclidean-algorithm finite-simple-groups fontaine-mazur geometric-satake greenberg-conjecture hyperbolic-3-manifolds kernel-pca langlands-program modules monstrous-moonshine mv-cycles sea-algorithm union-find weyl-character-formula. 열다섯 회차를 돌아보면 지운 것의 공통 형태는 둘뿐이다: (1) 직관 절 끝에서 뒤따르는 H2 제목을 화살표로 다시 나열한 요약 그림 (2) 'A 에서 B 가 따라 나온다' 를 이은 증명 단계 사슬. 남긴 것은 가환도, 포함 계층(Hasse), 데이터 흐름, 한 대상에서 여러 이론으로 뻗는 대응이다. 16차부터는 이 두 형태에 해당하는지만 보고 빠르게 판정해도 된다",
+      "createdAt": "2026-09-19T12:55:44.982Z",
+      "seq": 655
     },
     {
-      "id": "e7747c14",
-      "title": "나열형 mermaid 가 남은 문서 훑기 (9차)",
-      "priority": 15,
-      "note": "2026-09-19 회차에 8차를 했다. 검사법을 바꿔 스크래치패드 summary.mjs 로 mermaid 노드 라벨과 그 문서의 H2/H3 제목을 대조해 '절 제목을 옮겨 놓은 요약 그림'을 찾았다(노드 8 개 이상, 절 제목 일치 수로 정렬). 처리: connectedness 의 '## 함의 관계 요약' 절을 절째로 삭제(앞선 다섯 절의 화살표 재나열이고 노드 정보가 전부 본문 105~119줄에 있었다), logicism 의 Frege 연표 삭제(그림에만 있던 저작 셋과 연도를 '## Frege 의 수 정의' 절의 문단으로 옮겼다), riemannian-metrics 의 정의 사슬 삭제(여덟 노드가 모두 절 제목과 개요 목록에 있었다). 남긴 것: np-completeness 의 환원 그래프(화살표마다 실제 환원 방법이 라벨이라 정점과 간선이 곧 내용), 개관의 지도 mermaid 전부(4.5절이 요구). 9차 후보는 summary.mjs 출력의 다음 줄들이다: concentration-inequalities(노드 11, 일치 3), martingales(11, 3), planar-graphs(10, 3), bernoulli-numbers(9, 3), continuum-hypothesis(9, 3), determinants(9, 3), exact-wkb(8, 3), fourier-series(8, 3), fundamental-lemma(8, 3). 일치 수가 3 이면 오검출이 섞이므로 그림을 직접 보고 판정해야 한다",
-      "createdAt": "2026-09-19T08:58:18.467Z",
-      "seq": 632
+      "id": "e1be7ffb",
+      "title": "두문자어 첫 등장 풀이 전수 점검 (8차)",
+      "priority": 13,
+      "note": "2026-09-19 회차 7차에 보고를 253 에서 192 건으로 줄였다(검사기 2판 기준). 이번 회차에 정한 기준 둘을 다음 차수에도 쓴다. (1) 프로토콜과 표준 이름(AES, TLS, RSA)도 두문자어이므로 푼다. (2) 사람 이름 이니셜도 저장소가 BSD 를 푼 전례가 있으므로 푼다(KKT, MOV, AKS, NBG 를 같은 기준으로 풀었다). 예외는 본문이 이미 이름을 풀어 쓴 경우(intuitionism 의 BHK)와 수식 안 \\mathrm 기호뿐이다. 남은 192 건에서 눈에 띄는 것: lattices BKZ CVP, laplace-method BIC, lie-groups BCH, link-cut-trees LCA, marchenko-pastur BBP, source-coding ANS, sphere-packing CVP, supersingular-isogeny-graphs CGL CSIDH, tensor-products PID, tracy-widom KPZ, umbral-moonshine ADE, niemeier-lattices ADE, volume-conjecture AJ, weil-representation ABCD, witten-asymptotics LMO, graph-isomorphism GNN, hecke-operators LMFDB. LMFDB 는 데이터베이스 이름이므로 처음 나오는 문서에서 L-functions and Modular Forms Database 로 푼다",
+      "createdAt": "2026-09-19T12:59:58.836Z",
+      "seq": 656
     },
     {
-      "id": "0545bfff",
-      "title": "두문자어 첫 등장 풀이 전수 점검 (3차)",
-      "priority": 14,
-      "note": "2026-09-19 회차에 전수 검사를 처음 돌리고 문서 여덟을 처리했다. 검사기는 파이썬으로 코드펜스, 인라인 코드, 달러 수식, 링크 주소를 지운 뒤 문서마다 대문자 두 글자 이상 토큰의 첫 등장을 찾고, 문서 어디에도 괄호 풀네임이 없으면 보고한다. 필터 넷(로마 숫자, 각주 줄, 수식 기호 SL GL SU SO PGL SP, 문서 안 다른 줄의 풀네임)으로 583 건에서 531 건이 되었다. 처리한 문서 여덟: matchings(SDR), abstract-algebra-overview(ED, PID, UFD 와 맨 텍스트 포함기호를 수식으로), approximation-algorithms(FPTAS, PTAS, APX, TSP, PCP, LP, NP), axiom-of-choice(ZFC, ZF, WO, ZL), boolean-algebras(DNF, SAT), anyons 와 knot-invariants(BQP), bayesian-inference(MAP, MCMC), algebraic-number-fields(RSA, LWE). 남은 오검출 유형 셋을 다음 차수에 더 걸러야 한다. (1) 사람 이름의 이니셜로 굳은 정리 이름(KKL, FKN, BLR, BGG, RAPL, KL)은 4절의 고유명사 예외다. (2) mermaid 노드 라벨과 더 알아보기의 링크 표시 제목은 본문이 아니라 푸는 자리가 아니다. (3) 검사기가 수식과 링크를 지운 뒤의 줄 번호를 보고해 원본 줄 번호와 어긋난다. 보고를 그대로 믿지 말고 grep 으로 다시 찾아야 한다. 다음 후보: boolean-fourier(PCP, XOR), birch-swinnerton-dyer(BSD, CM), braid-groups(HOMFLY, BMW), arthur-parameters(GGP, CAP), beilinson-bernstein(BGG)",
-      "createdAt": "2026-09-19T05:02:09.227Z",
-      "seq": 618
-    },
-    {
-      "id": "e3fcc720",
-      "title": "한국어 문장에 끼인 영문 용어 훑기 (6차)",
-      "priority": 14,
-      "note": "2026-09-19 회차에 5차를 했고 후보를 전부 판정만 하고 고치지 않았다. 판정 결과, 남기는 것: martingale(문서 제목이 'Martingale' 이고 130 곳에서 일관되게 쓰인다. 음역 마팅게일뿐이고 굳은 번역어가 없으므로 4절의 '굳은 한국어 용어가 없으면 원어' 에 해당. monads 의 monad 와 같은 판정), hauptmodul(독일어 고유 용어. monstrous-moonshine 41줄 첫 등장에서 정의로 풀고 있다), crystal basis(geometric-satake 186줄에서 '결정 기저(crystal basis)' 로 병기), support vector machine(고유명사), moduli(논문 제목). 남은 실작업은 tightness 하나이고 4차 노트에 적었다. 6차는 영문 용어보다 용어 통일 쪽이 남았다: underlying 을 바탕집합(functors)과 밑바탕 집합(mathematical-structuralism, kleisli-eilenberg-moore)으로 다르게 옮긴다",
-      "createdAt": "2026-09-19T08:55:33.902Z",
-      "seq": 630
-    },
-    {
-      "id": "f3a97ce1",
-      "title": "문학적 비유 grep 회귀 점검 (5차)",
-      "priority": 14,
-      "note": "2026-09-19 회차에 4차를 했다. 고친 것: 개관 갈래 이름 셋의 비유(analysis-overview '다른 분야로 가는 다리', functional-analysis-overview '표현론으로 가는 길', order-theory-overview '집합론과 범주론으로 가는 길' -> 모두 '~와의 접점'), underlying 의 번역 통일(밑바탕 집합/대상 4 곳과 '바탕 집합' 1 곳을 다수형 바탕집합/바탕 대상으로). 개관 갈래 이름은 grep -n '^## ' docs/*-overview.md 로 전수를 훑었고 남은 것은 전부 분야 이름이나 개념 이름이다(linear-algebra-overview 의 '표현론으로' 는 비유가 아니라 생략형이라 남겼다). 4절 grep 목록과 목록 밖 후보어(골격, 그림자, 얼굴, 발판, 그물, 그릇, 울타리)는 2~4차에서 소진되었다. 5차는 본문 헤딩 쪽을 같은 방식으로 훑을 차례다. 후보: grep -n '^## ' docs/*.md 로 전체 H2 를 뽑아 명사가 아닌 것과 비유어를 찾는다",
-      "createdAt": "2026-09-19T08:56:17.022Z",
-      "seq": 631
-    },
-    {
-      "id": "eec7ba92",
-      "title": "두문자어 첫 등장 풀이 전수 점검 (4차)",
-      "priority": 14,
-      "note": "2026-09-19 회차에 3차를 했다. 2차 노트의 후보 다섯을 전부 판정했다. 푼 것: pcp-theorem 과 boolean-fourier 의 PCP(probabilistically checkable proof), birch-swinnerton-dyer 의 BSD 와 CM(complex multiplication, complex-multiplication 문서를 함께 링크), arthur-parameters 의 CAP(cuspidal associated to parabolic). 예외로 판정한 것: 사람 이름 이니셜로 굳은 것(HOMFLY, BMW, GGP, BGG, KKL, FKN, BLR, RAPL), 수식 안의 기호(XOR 의 \\\\mathrm{XOR}, GW 의 alpha_{GW}, AC 의 AC^0, SL GL SU SO PGL SP), 로마 숫자(II, III). 이 예외 셋이 2차 노트가 적은 오검출 유형과 같으므로 4차 검사기는 이 셋을 필터로 넣고 돌린다. 4차 후보: 아직 안 본 문서에서 두 글자 이상 대문자 토큰의 첫 등장을 뽑되, 링크 표시 제목과 mermaid 노드 라벨은 푸는 자리가 아니므로 제외한다. 곁들여 발견한 것: boolean-fourier 103줄, chebotarev 95줄, conditional-expectation 116줄의 '엔진' 비유를 같은 회차에 고쳤다",
-      "createdAt": "2026-09-19T09:02:05.595Z",
-      "seq": 636
+      "id": "d3c1180d",
+      "title": "두문자어 첫 등장 풀이 전수 점검 (9차)",
+      "priority": 13,
+      "note": "2026-09-19 회차 8차까지 진행해 검사기 2판 보고가 339 -> 253 -> 192 -> 152 건으로 줄었다. 이번 회차에 푼 것 전부: VAE ELBO SDE ODE DAG DFS LP LDPC WKB PAC VC ECPP SIDH ZF ZFC GRH FFT MLE GCD PID RSA CRT PA AES PCP MDS EM BSDE SMT BSD KKT SDP AKS UFD CNF SVD LWE SVP MOV SAT ETCS PDE UI NBG WZW CVP BCH LCA GNN ANS LMFDB KPZ BIC CGL BBP PSPACE ED. 기준 둘을 유지한다: 프로토콜·표준 이름도 푼다, 사람 이름 이니셜도 푼다(본문이 이미 이름을 풀어 쓴 BHK, LMO 는 예외). 남은 152 건의 성격: 수식 기호 오검출(GF FG UV XW LG RT AJ), 데이터베이스와 고유명사(EDSAC ISBN CRC RAID JPEG GPU IBM SMILES), 아직 안 본 실제 위반(BKZ SIS TFHE DGHV BGV BFV CKKS DDH CDH BLS SNARK STARK IRLS UMVU AIC MAP GLS ANOVA QQ ADE ABCD VQ JKO EVI HWI TSP APX PTAS FPTAS CLIQUE VERTEX CUT). 9차는 post-quantum-cryptography 와 pairing-based-cryptography 와 linear-regression 처럼 한 문서에 여럿 몰린 곳부터 하면 효율이 좋다",
+      "createdAt": "2026-09-19T13:02:30.023Z",
+      "seq": 657
     },
     {
       "id": "1c4e03aa",
@@ -282,6 +258,38 @@
       "note": "2026-09-19 회차에 8차를 했다. 검사기를 스크래치패드 plaintext.mjs 로 다시 만들어 돌렸고 실질 위반은 하나였다: weierstrass-factorization 55줄이 문장 중간에 $$ 블록을 넣어 목록 항목 안에서 식이 끊겼다(인라인으로 고쳤다). 검사기 주의점 둘. (1) $$ 블록을 줄 단위로 토글해 마스킹하지 않으면 블록 안 모든 줄이 'LaTeX 명령' 으로 걸려 3683 건이 나온다. 7차 노트가 적은 마스킹을 빠뜨려 이 사고가 재현됐다. (2) 인용문 안의 한 줄 블록 '> $$...$$' 는 정규식 ^\\s*\\$\\$.*\\$\\$\\s*$ 에 걸리지 않으므로 >\\s* 접두를 허용해야 한다. 이것을 넣으면 남는 보고가 0 이 된다. 지난 노트가 적은 유니코드 화살표 필터(line.includes(' → '))와 각주 줄 제외(/^\\[\\^/)와 표 줄 제외(/^\\s*\\|/)는 효과가 확인됐다",
       "createdAt": "2026-09-19T09:03:06.879Z",
       "seq": 637
+    },
+    {
+      "id": "af8ed232",
+      "title": "riemann-zeta 를 정수론 개관 갈래 점검에 넣고 Riemann 가설 문서 신설 검토",
+      "priority": 12,
+      "note": "2026-09-19 회차에 prime-number-theorem 을 분할해 riemann-zeta 를 신설했다. 후속 둘. (1) riemann-zeta 의 주 태그가 #number_theory 이므로 4.5절의 '첫 태그가 그 분야인 문서를 빠짐없이' 검사에 걸린다. 정수론 개관 69줄 갈래에는 넣었으니 확인만 하면 된다. (2) Riemann 가설이 riemann-zeta 의 정의 절 한 문단과 prime-number-theorem 의 오차항 절에 나뉘어 있다. 별도 문서가 될 만한지 판단하려면 임계선 밀도 정리, 일반화된 Riemann 가설, 유한체 판본(Weil 추측)을 한 문서에 모을 분량이 되는지 본다. 부모 후보는 riemann-zeta",
+      "createdAt": "2026-09-19T12:41:41.395Z",
+      "seq": 639
+    },
+    {
+      "id": "0804f1c4",
+      "title": "한국어 문장에 끼인 영문 용어 훑기 (7차)",
+      "priority": 12,
+      "note": "2026-09-19 회차 6차 결과. 5차 노트가 남긴 실작업 둘을 모두 닫았다. (1) underlying 번역 통일은 이미 끝나 있다. grep 으로 확인하니 '밑바탕 집합'/'밑바탕 대상' 은 한 건도 없고 adjunctions, functors, kleisli-eilenberg-moore, limits-colimits, mathematical-structuralism, sets 모두 '바탕집합'/'바탕 대상' 으로 통일되어 있다. (2) tightness 는 원어 유지로 판정했다. weak-convergence 60줄이 굵은 글씨로 정의하고 이 용어를 쓰는 characteristic-functions 와 uniform-integrability 가 그 문서를 링크하므로 4절의 '굳은 한국어 용어가 없으면 원어' 에 해당한다. 같은 회차에 weak-convergence 의 판정형 mermaid 와 메타 문장도 지웠다. 7차는 새 후보를 뽑는 데서 시작한다. 검사법: 한글과 로마자가 한 문장에 섞인 줄을 grep -nE '[가-힣][^가-힣]{0,3}[a-z]{4,}' 로 뽑고, 문서 제목·고유명사·수식 기호·링크 표시 제목을 거른다",
+      "createdAt": "2026-09-19T12:50:16.077Z",
+      "seq": 650
+    },
+    {
+      "id": "62d6ff5b",
+      "title": "문학적 비유 grep 회귀 점검 (6차)",
+      "priority": 12,
+      "note": "2026-09-19 회차 5차에 전체 H2 를 훑어(grep -n '^## ' docs/*.md 에서 선수지식·더 알아보기를 뺀 뒤 비유어 목록으로 거름) 비유 헤딩 여섯과 본문 한 곳을 고쳤다. 4절 grep 목록은 이제 예외 넷만 남는다(사다리 연산자, Montgomery 사다리, 함정문, 마법함수). 6차에 볼 것은 H2 가운데 명사가 아닌 것이다. 이번 훑기에서 눈에 띈 서술형 후보: riemann-surfaces 13줄 '가지를 펴는 구성', structural-set-theory 13줄 '화살표로 본 집합', supersingular-isogeny-graphs 139줄 '살아남은 설계', fargues-scholze 25줄 '곡선과 여행 작용소'(여행 작용소가 용어인지 먼저 확인). 헤딩에 '~한', '~로 본', '~는' 이 들어가면 서술이다. 검사법: grep -n '^## ' docs/*.md | grep -E '한 |로 본 |는 |을 |를 ' 로 뽑고 용어를 거른다",
+      "createdAt": "2026-09-19T12:51:17.383Z",
+      "seq": 651
+    },
+    {
+      "id": "ba633db7",
+      "title": "4절 목록 밖 비유어 회귀 점검 (2차)",
+      "priority": 12,
+      "note": "2026-09-19 회차에 '다리·어깨' 류를 전수로 훑어 15 곳을 고쳤다(커밋 참조). 검사법: grep -noE '.{0,25}(다리|어깨|올라타|발판|건너뛰|넘나드).{0,25}' docs/*.md 로 뽑고 사다리·다리꼴·가장자리·머리·허리·기다리·Brown 다리·그래프의 다리를 거른다. 2차에 볼 목록 밖 후보어: 통로, 관문, 창, 거울, 그늘, 온상, 토대, 바탕돌, 밑거름, 실마리, 단서, 물꼬, 수문, 관절, 매듭(용어 제외), 줄기, 갈래(개관의 절 이름이라 예외), 흐름(용어), 파고들다, 헤집다, 빗장, 자물쇠. 이번에 배운 것: 비유를 다른 비유로 바꾸기 쉽다. schur-polynomials 의 '잇는 다리' 를 '잇는 통로' 로 고쳤다가 다시 '이었다' 로 고쳤다. 고친 뒤 같은 grep 을 다시 돌려야 한다",
+      "createdAt": "2026-09-19T12:53:33.401Z",
+      "seq": 653
     },
     {
       "id": "1c511c2c",
@@ -874,6 +882,22 @@
       "note": "2026-09-19 회차에 개관 21 개의 지도 화살표 438 개를 대조해 위반 0 을 확인했다(라벨 해석 실패 26 건은 개관이 쓰는 약칭이라 손댈 것이 없다). 같은 내용의 큐 항목이 둘(7252bb5c, a393c19c) 있어 하나로 합쳤다. 검사기는 스크래치패드 mapcheck.mjs 이고 지난 노트가 적은 주의 넷을 반영했다. (1) '# 지도' 뒤가 한글이라 정규식에 단어 경계를 쓰면 매치가 안 되므로 지도 헤딩부터 첫 mermaid 펜스까지를 비탐욕 매치로 잡는다. (2) 한 줄에 A --> B --> C 체인이 오므로 줄 단위가 아니라 순차 파싱을 한다. (3) 라벨이 여러 문서 제목의 접두사일 수 있으므로(Galois 표현) 후보를 전부 모아 하나라도 실제 간선이면 통과로 본다. (4) 노드 정의가 화살표 줄 안에 인라인으로 오는 경우와 앞줄에서 따로 정의되는 경우를 함께 처리한다. 실제 간선은 각 문서의 더 알아보기 절 링크만 모아 만든다",
       "createdAt": "2026-09-19T04:54:54.736Z",
       "seq": 612
+    },
+    {
+      "id": "74b0613d",
+      "title": "riemann-zeta 활용 절의 Dedekind zeta 와 류수 공식을 받을 문서 확인",
+      "priority": 10,
+      "note": "2026-09-19 회차 신설. riemann-zeta 활용 절에서 Dedekind zeta 함수와 류수 공식을 링크 없이 이름만 썼다(0절). algebraic-number-fields 나 class-field-theory 에 류수 공식이 이미 있는지 grep 으로 보고, 있으면 본문 링크를 달고 없으면 dedekind-zeta 문서를 만들지 판단한다. 부모 후보는 riemann-zeta 와 algebraic-number-fields",
+      "createdAt": "2026-09-19T12:41:41.518Z",
+      "seq": 640
+    },
+    {
+      "id": "86129ea2",
+      "title": "부모가 넷인 문서 셋의 재판정 (3차)",
+      "priority": 10,
+      "note": "2026-09-19 회차에 2차를 마쳐 후보 일곱 가운데 넷을 처리했다(functions/proofs->computability, functions->category, category-theory-overview->modular-tensor-categories, machine-learning-overview->variational-autoencoder). 남은 셋 measure(cardinality, measure-theory-overview, probability, topology), langlands-program(class-field-theory, elliptic-curves, group-representations, modular-forms), umbral-moonshine 은 네 부모 사이에 조상 관계가 없어 5절의 기계적 규칙으로는 줄일 수 없다. 3차에 볼 것은 규칙이 아니라 내용이다: 각 부모가 자식의 개요나 직관에서 실제로 쓰이는지(5절 마지막 항목) 확인하고, 쓰이지 않는 것이 있으면 그것만 뺀다. measure 는 개요 7줄이 셋을 다 쓰므로 이미 확인했고 langlands-program 과 umbral-moonshine 이 남았다. 검사법: for f in docs/*.md 로 선수지식 절의 '](' 개수를 센다",
+      "createdAt": "2026-09-19T12:43:04.412Z",
+      "seq": 641
     },
     {
       "id": "dfb3e493",
