@@ -30,7 +30,7 @@ graph LR
 
 ## 성분과 naturality
 
-$C$ 와 $D$ 를 범주, $F, G : C \to D$ 를 functor 라 하자. 자연변환 $\alpha : F \Rightarrow G$ 는 $C$ 의 각 대상 $c$ 마다 $D$ 의 사상 $\alpha_c : F(c) \to G(c)$ 를 지정하되 $C$ 의 모든 사상 $f : c \to c'$ 에 대해 다음을 만족하는 것이다.
+$C$ 와 $D$ 를 범주, $F, G : C \to D$ 를 함자라 하자. 자연변환 $\alpha : F \Rightarrow G$ 는 $C$ 의 각 대상 $c$ 마다 $D$ 의 사상 $\alpha_c : F(c) \to G(c)$ 를 지정하되 $C$ 의 모든 사상 $f : c \to c'$ 에 대해 다음을 만족하는 것이다.
 
 $$
 \alpha_{c'}\circ F(f)=G(f)\circ\alpha_c
@@ -43,11 +43,11 @@ $\alpha_c$ 가 $\alpha$ 의 $c$ 성분이다. 모든 성분이 동형사상이�
 - **수직 합성.** $\alpha : F \Rightarrow G$ 와 $\beta : G \Rightarrow H$ 에 대해 $(\beta \circ \alpha)\_c = \beta_c \circ \alpha_c$ 로 정의한다. 두 naturality 사각형을 옆으로 붙이면 합성의 naturality 가 나온다.
 - **수평 합성.** $C \to D$ 위의 $\alpha : F \Rightarrow G$ 와 $D \to E$ 위의 $\beta : H \Rightarrow K$ 에 대해 $(\beta \ast \alpha)\_c = K(\alpha_c) \circ \beta_{F(c)} = \beta_{G(c)} \circ H(\alpha_c)$ 로 정의한다. 두 표현이 같다는 것이 $\beta$ 의 naturality 다.
 
-두 합성은 교환법칙(interchange law)으로 맞물리고, 이 구조가 범주·functor·자연변환을 2-범주로 만든다.
+두 합성은 교환법칙(interchange law)으로 맞물리고, 이 구조가 범주·함자·자연변환을 2-범주로 만든다.
 
 ## Functor 범주
 
-$C$ 에서 $D$ 로 가는 functor 들을 대상으로, 자연변환들을 사상으로, 수직 합성을 합성으로 삼으면 범주 $[C, D]$ 가 된다. 항등 자연변환은 각 성분이 항등사상인 것이고 이 범주에서의 동형이 자연동형이다.
+$C$ 에서 $D$ 로 가는 함자들을 대상으로, 자연변환들을 사상으로, 수직 합성을 합성으로 삼으면 범주 $[C, D]$ 가 된다. 항등 자연변환은 각 성분이 항등사상인 것이고 이 범주에서의 동형이 자연동형이다.
 
 # 성질
 
@@ -57,22 +57,22 @@ Functor $F : C \to D$ 와 $G : D \to C$ 에 대해 $GF \cong \mathrm{id}\_C$ 이
 
 ## 예와 반례
 
-- **멱집합.** 집합 $X$ 를 $P(X)$ 로, 함수를 직접상으로 보내는 functor $P$ 에 대해 $\eta_X(x) = \lbrace x\rbrace$ 는 항등 functor 에서 $P$ 로 가는 자연변환이다. $P(h)(\eta_X(x)) = \lbrace h(x)\rbrace = \eta_Y(h(x))$ 이므로 사각형이 닫힌다.
-- **이중쌍대.** $V \mapsto V^{\ast\ast}$ 는 유한차원 벡터 공간 위에서 항등 functor 와 자연동형이다. $V \mapsto V^\ast$ 는 반변 functor 라 항등 functor 와 비교할 수 없고, 차원이 같다는 사실로 만든 동형은 기저 선택에 의존해 naturality 가 깨진다.
-- **행렬식.** 가환환 $R$ 에 $\mathrm{GL}\_n(R)$ 을 대응시키는 functor 와 단원군 $R^\times$ 를 대응시키는 functor 사이에서 $\det$ 은 자연변환이다. 환 준동형을 성분별로 적용한 뒤 행렬식을 재나 행렬식을 잰 뒤 준동형을 적용하나 같다. 행렬식 공식이 환에 의존하지 않는다는 말의 정확한 형태다.
+- **멱집합.** 집합 $X$ 를 $P(X)$ 로, 함수를 직접상으로 보내는 함자 $P$ 에 대해 $\eta_X(x) = \lbrace x\rbrace$ 는 항등 함자에서 $P$ 로 가는 자연변환이다. $P(h)(\eta_X(x)) = \lbrace h(x)\rbrace = \eta_Y(h(x))$ 이므로 사각형이 닫힌다.
+- **이중쌍대.** $V \mapsto V^{\ast\ast}$ 는 유한차원 벡터 공간 위에서 항등 함자와 자연동형이다. $V \mapsto V^\ast$ 는 반변 함자라 항등 함자와 비교할 수 없고, 차원이 같다는 사실로 만든 동형은 기저 선택에 의존해 naturality 가 깨진다.
+- **행렬식.** 가환환 $R$ 에 $\mathrm{GL}\_n(R)$ 을 대응시키는 함자와 단원군 $R^\times$ 를 대응시키는 함자 사이에서 $\det$ 은 자연변환이다. 환 준동형을 성분별로 적용한 뒤 행렬식을 재나 행렬식을 잰 뒤 준동형을 적용하나 같다. 행렬식 공식이 환에 의존하지 않는다는 말의 정확한 형태다.
 - **역행렬.** $A \mapsto A^{-1}$ 은 $\mathrm{GL}\_n$ 에서 $\mathrm{GL}\_n$ 으로 가는 자연변환이 아니다. 순서를 뒤집으므로 반변으로 놓아야 한다.
 
 ## 다형성과 naturality
 
-리스트를 뒤집는 `reverse` 는 원소가 무엇인지 보지 않고 위치만 다루므로 `map f (reverse xs) = reverse (map f xs)` 가 항상 성립한다. List functor 에서 자기 자신으로 가는 자연변환이다.
+리스트를 뒤집는 `reverse` 는 원소가 무엇인지 보지 않고 위치만 다루므로 `map f (reverse xs) = reverse (map f xs)` 가 항상 성립한다. List 함자에서 자기 자신으로 가는 자연변환이다.
 
 값을 들여다보는 연산은 자연변환이 아니다. $x\gt 1$ 인 원소만 남기는 연산은 $xs=[0,1,2]$ 와 $f(x)=x+10$ 에서 `map f` 를 먼저 하면 $[10,11,12]$ 를, 나중에 하면 $[12]$ 를 준다. 원소를 $f$ 로 옮기고 나면 조건을 만족하는 원소가 달라지기 때문이다. 타입 변수에 대해 다형인 함수가 대체로 자연변환인 것도 같은 이유다.
 
 ## 자연변환이 쓰이는 자리
 
-- [Yoneda lemma](yoneda-lemma.md)는 hom functor 에서 나가는 자연변환 전체를 한 원소로 분류한다.
+- [Yoneda lemma](yoneda-lemma.md)는 hom 함자에서 나가는 자연변환 전체를 한 원소로 분류한다.
 - [수반](adjunctions.md)의 unit 과 counit 은 자연변환이고 삼각항등식은 그들의 합성에 대한 조건이다.
-- [제한과 쌍대제한](limits-colimits.md)의 원뿔은 상수 functor 에서 도형 functor 로 가는 자연변환이다.
+- [제한과 쌍대제한](limits-colimits.md)의 원뿔은 상수 함자에서 도형 함자로 가는 자연변환이다.
 
 # 활용
 
