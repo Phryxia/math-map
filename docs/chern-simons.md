@@ -133,7 +133,7 @@ $$
 Z_k(M)=\int\mathcal DA\thinspace e^{2\pi ik\thinspace\mathrm{CS}(A)}
 $$
 
-에 적용하면 $k\to\infty$ 의 점근이 임계점마다 한 항이고 각 항의 위상이 $e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}$ 다. $\mathrm{CS}(\alpha)$ 가 분모 $p$ 의 유리수이므로 위상이 $k$ 에 대해 주기 $p$ 로 순환하며, 렌즈 공간의 RT 불변량이 $k$ 에 따라 진동한다.
+에 적용하면 $k\to\infty$ 의 점근이 임계점마다 한 항이고 각 항의 위상이 $e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}$ 다. $\mathrm{CS}(\alpha)$ 가 분모 $p$ 의 유리수이므로 위상이 $k$ 에 대해 주기 $p$ 로 순환하며, 렌즈 공간의 RT(Reshetikhin–Turaev) 불변량이 $k$ 에 따라 진동한다.
 
 ## 경계와 등각장론
 

@@ -16,7 +16,7 @@ $$
 \dim V_\lambda(\mu)=\char35{}\lbrace\text{무게 }\mu\text{ 의 MV 순환}\rbrace
 $$
 
-[Weyl 지표 공식](weyl-character-formula.md)은 무게 중복도를 교대합으로 준다. Kostant 중복도 공식이 그 한 형태이고, 부호가 엇갈리는 합이라 값이 왜 음이 아닌지가 공식만 보아서는 보이지 않는다. MV 순환은 그 수를 **세는 대상**으로 바꾼다. 교대합 대신 집합이 놓이므로 음이 아님이 자명해진다.
+[Weyl 지표 공식](weyl-character-formula.md)은 무게 중복도를 교대합으로 준다. Kostant 중복도 공식이 그 한 형태이고, 부호가 엇갈리는 합이라 값이 왜 음이 아닌지가 공식만 보아서는 보이지 않는다. MV(Mirkovic–Vilonen) 순환은 그 수를 **세는 대상**으로 바꾼다. 교대합 대신 집합이 놓이므로 음이 아님이 자명해진다.
 
 같은 일을 하는 조합론적 장치가 여럿 있다. 대각표, Gelfand–Tsetlin 패턴, Littelmann 경로, Lusztig–Kashiwara 의 결정 기저. MV 순환은 그것들의 **기하적 실현**이고, 다른 장치들이 왜 같은 수를 세는지에 대한 통일된 이유를 준다.
 

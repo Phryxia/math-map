@@ -177,7 +177,7 @@ H^\ast\bigl(\mathrm{Gr}\_G,\mathcal{IC}\_\lambda\bigr)
 S_\mu=N(F)\cdot t^\mu
 $$
 
-이고 오른쪽 $\mu$ 항이 무게 $\mu$ 의 무게 공간이다. 그 차원을 세는 것이 $\overline{\mathrm{Gr}^\lambda}\cap\overline{S_\mu}$ 의 기약성분들, 곧 **MV 순환**이다.
+이고 오른쪽 $\mu$ 항이 무게 $\mu$ 의 무게 공간이다. 그 차원을 세는 것이 $\overline{\mathrm{Gr}^\lambda}\cap\overline{S_\mu}$ 의 기약성분들, 곧 **MV 순환**(Mirkovic–Vilonen)이다.
 
 $$
 \dim V_\lambda(\mu)=\char35{}\bigl\lbrace\text{MV 순환}\bigr\rbrace

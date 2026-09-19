@@ -6,7 +6,7 @@
 
 Witten 의 답은 $k\to\infty$ 에 있다. 그 극한에서 $\tau_k(M)$ 은 $M$ 위의 평탄 $\mathrm{SU}(2)$ 접속마다 붙는 항들의 합으로 분해되고, 각 항의 위상은 그 접속의 Chern–Simons 작용값, 진폭은 Reidemeister 비틀림이다.
 
-증명 대상은 RT 불변량이고, 답을 적는 언어는 [Chern–Simons 이론](chern-simons.md)의 평탄 접속과 작용값이며, 답의 모양을 예언하는 어림은 [정상위상법](stationary-phase.md)이다.
+증명 대상은 RT(Reshetikhin–Turaev) 불변량이고, 답을 적는 언어는 [Chern–Simons 이론](chern-simons.md)의 평탄 접속과 작용값이며, 답의 모양을 예언하는 어림은 [정상위상법](stationary-phase.md)이다.
 
 증명이 되는 경우에 실제로 쓰이는 도구는 [이차 Gauss 합](gauss-sums.md)의 상호법칙이다. 상호법칙은 $O(k)$ 개 항의 합을 $O(p)$ 개 항의 합으로 바꾸며, 왼쪽은 정의이고 오른쪽은 평탄 접속들이다. 렌즈 공간에서 점근 추측이 참인 근거가 [이차 상호법칙](quadratic-reciprocity.md) 배후의 항등식이다.
 

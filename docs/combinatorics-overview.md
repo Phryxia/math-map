@@ -54,7 +54,7 @@ graph TD
 - [근계와 Weyl 군](root-systems.md) → [Weyl 지표 공식](weyl-character-formula.md) → [Schur 다항식과 대칭함수](schur-polynomials.md)
 - [Littlewood–Richardson 규칙](littlewood-richardson.md), [Schubert 계산](schubert-calculus.md): Schur 다항식의 곱을 세기
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md) → [Brauer 대수](brauer-algebras.md)
-- [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md) → [범주 O](category-o.md), [MV 순환](mv-cycles.md), [Casselman–Shalika 공식](casselman-shalika.md): 표현론 깊은 곳의 조합론
+- [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md) → [범주 O](category-o.md), [MV 순환](mv-cycles.md)(Mirkovic–Vilonen), [Casselman–Shalika 공식](casselman-shalika.md): 표현론 깊은 곳의 조합론
 
 ## 격자, 부호, 설계
 

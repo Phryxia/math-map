@@ -107,7 +107,7 @@ graph TD
 유체론을 비가환 군으로 확장하려는 프로그램. 국소 적분, 대각합 공식, 기하화가 도구다.
 
 - [Langlands 강령](langlands-program.md) → [Godement–Jacquet 적분](godement-jacquet.md) → [Rankin–Selberg 적분](rankin-selberg.md) → [Whittaker 모형](whittaker-models.md) → [Casselman–Shalika 공식](casselman-shalika.md)
-- [Satake 동형](satake-isomorphism.md) → [기하학적 Satake 대응](geometric-satake.md) → [MV 순환](mv-cycles.md), [기하학적 Langlands 강령](geometric-langlands.md) → [Fargues–Scholze 기하화](fargues-scholze.md)
+- [Satake 동형](satake-isomorphism.md) → [기하학적 Satake 대응](geometric-satake.md) → [MV 순환](mv-cycles.md)(Mirkovic–Vilonen), [기하학적 Langlands 강령](geometric-langlands.md) → [Fargues–Scholze 기하화](fargues-scholze.md)
 - [Jacquet–Langlands 대응](jacquet-langlands.md), [기본 보조정리와 대각합 공식의 안정화](fundamental-lemma.md)
 - [Vogan L 꾸러미](vogan-packets.md) → [Arthur 매개변수](arthur-parameters.md) → [Speh 표현](speh-representations.md)
 - [Gan–Gross–Prasad 추측](gan-gross-prasad.md) → [Waldspurger 정리](waldspurger-formula.md) → [Tunnell–Saito 공식](tunnell-saito.md)
