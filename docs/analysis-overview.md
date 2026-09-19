@@ -84,7 +84,7 @@ graph TD
 - [Padé 근사와 Borel 재합산](borel-pade.md): 발산급수에 값을 주는 두 방법
 - [Resurgence 와 alien 미분](resurgence.md): 섭동급수와 비섭동 효과의 연결
 - [Airy 함수](airy-functions.md): 회전점 근방의 표준형
-- [WKB 근사와 연결 공식](wkb-approximation.md): 작은 매개변수를 가진 방정식의 지수적 해
+- [WKB 근사와 연결 공식](wkb-approximation.md)(Wentzel–Kramers–Brillouin): 작은 매개변수를 가진 방정식의 지수적 해
 - [정확한 WKB 와 Voros 기호](exact-wkb.md): WKB 급수를 Borel 재합산으로 엄밀화
 - [Painlevé 방정식과 등모노드로미 변형](painleve-equations.md): 가동 특이점이 극뿐인 비선형 방정식
 

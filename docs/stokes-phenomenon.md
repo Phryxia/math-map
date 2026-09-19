@@ -116,7 +116,7 @@ $$
 \mathrm{Ai}(z) \thickspace\sim\thickspace \frac{e^{-\frac23 z^{3/2}}}{2\sqrt{\pi}\thinspace z^{1/4}}\sum_{n\ge0} (-1)^n\frac{c_n}{(\tfrac23 z^{3/2})^{n}}
 $$
 
-이고, 음의 실축 쪽으로 돌아가면 두 안장점의 기여가 합쳐져 진동한다. 그 사이 $\arg z = \pm 2\pi/3$ 에서 두 번째 지수항이 켜진다. 지수적으로 감쇠하는 해와 진동하는 해가 같은 함수의 두 영역이라는 것이 [WKB 근사](wkb-approximation.md)의 연결 공식이 하는 일이고, Stokes 가 1857 년에 본 현상이다.
+이고, 음의 실축 쪽으로 돌아가면 두 안장점의 기여가 합쳐져 진동한다. 그 사이 $\arg z = \pm 2\pi/3$ 에서 두 번째 지수항이 켜진다. 지수적으로 감쇠하는 해와 진동하는 해가 같은 함수의 두 영역이라는 것이 [WKB 근사](wkb-approximation.md)(Wentzel–Kramers–Brillouin)의 연결 공식이 하는 일이고, Stokes 가 1857 년에 본 현상이다.
 
 # 활용
 

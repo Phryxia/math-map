@@ -72,7 +72,7 @@ $$
 \epsilon_\psi(s)=\prod_i\varepsilon\negthinspace\left(\tfrac12,\ \pi_i\times\pi_j\right)^{\cdots}
 $$
 
-매개변수를 쪼갠 조각들의 Rankin–Selberg $\varepsilon$ 인자로 만든 부호이며, 중심값의 부호가 나타난다는 점에서 [GGP 지표 공식](gan-gross-prasad.md)과 같은 자리에 있다.
+매개변수를 쪼갠 조각들의 Rankin–Selberg $\varepsilon$ 인자로 만든 부호이며, 중심값의 부호가 나타난다는 점에서 [GGP 지표 공식](gan-gross-prasad.md)(Gan–Gross–Prasad)과 같은 자리에 있다.
 
 ## 중복도 공식
 

@@ -8,7 +8,7 @@ $$
 \epsilon^2 y''(x) = Q(x)\thinspace y(x)
 $$
 
-에는 [상미분방정식](ordinary-differential-equations.md)의 표준적인 해법이 통하지 않는다. $\epsilon\to0$ 에서 방정식의 계수(階數)가 떨어지므로 정칙 섭동이 아니다. WKB 근사는 해를 거듭제곱이 아니라 지수부에서 전개해 이 특이성을 다룬다.
+에는 [상미분방정식](ordinary-differential-equations.md)의 표준적인 해법이 통하지 않는다. $\epsilon\to0$ 에서 방정식의 계수(階數)가 떨어지므로 정칙 섭동이 아니다. WKB(Wentzel–Kramers–Brillouin) 근사는 해를 거듭제곱이 아니라 지수부에서 전개해 이 특이성을 다룬다.
 
 결과는 $Q(x)^{-1/4}\exp\bigl(\pm\epsilon^{-1}\negthinspace\int\negthinspace\sqrt{Q}\bigr)$ 이고, $Q$ 의 부호에 따라 지수적으로 감쇠하거나 진동한다. 부호가 바뀌는 **회전점**(turning point)에서는 근사가 무너지고, 회전점 양쪽의 해를 잇는 규칙이 **연결 공식**이다. 연결 공식은 [Stokes 현상](stokes-phenomenon.md)의 구체적 형태이며, 감쇠하는 해와 진동하는 해가 같은 함수를 다른 영역에서 본 것이고 그 사이에서 지수적으로 작은 항이 켜진다.
 

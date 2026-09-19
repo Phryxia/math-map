@@ -137,7 +137,7 @@ alien 미분들은 자유 Lie 대수를 이루고 그 지수사상이 Stokes 자
 
 ## 정확한 WKB
 
-[WKB 근사](wkb-approximation.md)의 급수를 자르지 않고 Borel 합으로 다루는 이론이 exact WKB 다. Voros 기호와 그 Stokes 자동사상 아래에서의 변환이 resurgence 구조이고, 연결 공식이 특정 Stokes 자동사상을 적은 것이 된다.
+[WKB 근사](wkb-approximation.md)(Wentzel–Kramers–Brillouin)의 급수를 자르지 않고 Borel 합으로 다루는 이론이 exact WKB 다. Voros 기호와 그 Stokes 자동사상 아래에서의 변환이 resurgence 구조이고, 연결 공식이 특정 Stokes 자동사상을 적은 것이 된다.
 
 ## 매개변수 없는 예측
 

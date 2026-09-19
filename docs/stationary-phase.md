@@ -18,7 +18,7 @@ Laplace 방법과 형태는 같되 셋이 다르다.
 - 각 정상점의 기여에 위상 인자 $e^{i\pi\mathrm{sgn}\varphi''(x_0)/4}$ 가 붙는다. 고차원에서 이것이 Hessian 의 부호수, 곧 Morse 지표가 된다.
 - 정상점이 여럿이면 전부 같은 크기로 기여해 서로 간섭한다.
 
-세 번째가 파동의 간섭, WKB 근사에서 여러 고전 궤도가 더해지는 현상, [Witten 점근 추측](witten-asymptotics.md)에서 여러 평탄 접속이 답에 나타나는 현상의 공통 원인이다.
+세 번째가 파동의 간섭, WKB(Wentzel–Kramers–Brillouin) 근사에서 여러 고전 궤도가 더해지는 현상, [Witten 점근 추측](witten-asymptotics.md)에서 여러 평탄 접속이 답에 나타나는 현상의 공통 원인이다.
 
 # 직관
 

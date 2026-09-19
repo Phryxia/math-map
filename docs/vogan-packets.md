@@ -49,7 +49,7 @@ graph TD
 
 $\Pi_\varphi\leftrightarrow\mathrm{Irr}(\mathcal S_\varphi)$ 는 표준적인 대응이 아니다. 양쪽 모두 유한집합이라 짝짓는 방법이 여럿이고, 하나를 고정하려면 **기저점**을 정해야 한다. 관례는 Whittaker 데이터를 쓴다. 유사분열형 $G$ 위에서 주어진 Whittaker 데이터에 대해 [일반 표현](whittaker-models.md)인 원소를 $\mathcal S_\varphi$ 의 자명 지표에 대응시킨다.
 
-꾸러미마다 그런 일반 표현이 정확히 하나 있다는 Shahidi 의 일반성 추측이 이 정규화의 근거다. GGP 의 지표 공식을 구체적인 $\varepsilon$ 부호로 적으려면 이 정규화가 먼저 고정되어야 한다.
+꾸러미마다 그런 일반 표현이 정확히 하나 있다는 Shahidi 의 일반성 추측이 이 정규화의 근거다. GGP(Gan–Gross–Prasad) 의 지표 공식을 구체적인 $\varepsilon$ 부호로 적으려면 이 정규화가 먼저 고정되어야 한다.
 
 # 정의
 
