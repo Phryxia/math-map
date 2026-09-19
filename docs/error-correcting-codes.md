@@ -48,7 +48,7 @@ $$
 
 ## 한계
 
-- **Singleton 한계.** $d \le n - k + 1$ . 등호를 달성하는 부호가 MDS 이고 잉여 기호 하나가 소실 하나를 막는다.
+- **Singleton 한계.** $d \le n - k + 1$ . 등호를 달성하는 부호가 **MDS**(maximum distance separable)이고 잉여 기호 하나가 소실 하나를 막는다.
 - **Hamming 한계.** 반지름 $t$ 인 공들이 겹치지 않으므로 다음이 성립한다.
 
 $$
