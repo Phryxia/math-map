@@ -2,7 +2,7 @@
 
 # 개요
 
-Monad 는 한 범주 $\mathcal C$ 위에서 무언가를 형식적으로 덧붙였다가 두 겹으로 쌓인 것을 한 겹으로 평탄화하는 구조다. 데이터는 자기 functor $T : \mathcal C \to \mathcal C$ 와 두 [자연변환](natural-transformations.md) $\eta : \mathrm{id} \Rightarrow T$ , $\mu : T^2 \Rightarrow T$ 이고 조건은 결합법칙과 단위법칙이다.
+Monad 는 한 범주 $\mathcal C$ 위에서 무언가를 형식적으로 덧붙였다가 두 겹으로 쌓인 것을 한 겹으로 평탄화하는 구조다. 데이터는 자기 함자 $T : \mathcal C \to \mathcal C$ 와 두 [자연변환](natural-transformations.md) $\eta : \mathrm{id} \Rightarrow T$ , $\mu : T^2 \Rightarrow T$ 이고 조건은 결합법칙과 단위법칙이다.
 
 [수반](adjunctions.md)과의 관계가 이 구조의 위치를 정한다. 모든 수반 $F \dashv G$ 는 $T = GF$ 로 monad 를 남기고, 모든 monad 는 그것을 낳는 수반으로 분해된다. monad 는 수반이 한쪽 범주에 남긴 그림자이고, 그 그림자에서 원래 수반을 복원하는 방법이 Kleisli 와 Eilenberg–Moore 둘이다.
 
@@ -16,7 +16,7 @@ $$
 \eta_X(x)=[x],\qquad \mu_X\big([[1,2],[\thinspace],[3]]\big)=[1,2,3]
 $$
 
-$\mu$ 는 두 조건을 지킨다. 세 겹을 두 겹으로 줄이는 순서가 달라도 결과가 같아야 하고(결합법칙), $\eta$ 로 한 겹을 끼워 넣었다가 평탄화하면 아무 일도 없어야 한다(단위법칙). 모노이드의 곱과 항등원이 만족하는 조건과 같은 모양이고, monad 는 자기 functor 들의 범주 안의 모노이드다.
+$\mu$ 는 두 조건을 지킨다. 세 겹을 두 겹으로 줄이는 순서가 달라도 결과가 같아야 하고(결합법칙), $\eta$ 로 한 겹을 끼워 넣었다가 평탄화하면 아무 일도 없어야 한다(단위법칙). 모노이드의 곱과 항등원이 만족하는 조건과 같은 모양이고, monad 는 자기 함자들의 범주 안의 모노이드다.
 
 ## 문맥을 품은 계산
 
@@ -36,7 +36,7 @@ $f : X \to T(Y)$ 꼴의 사상을 이으려면 $f$ 를 적용한 뒤 $T(g)$ 를 
 
 ## 세 쌍 $(T,\eta,\mu)$
 
-범주 $\mathcal C$ 위의 monad 는 functor $T : \mathcal C \to \mathcal C$ 와 자연변환 $\eta : \mathrm{id}\_{\mathcal C} \Rightarrow T$ , $\mu : T \circ T \Rightarrow T$ 로 다음 두 등식을 모든 대상에서 만족하는 것이다.
+범주 $\mathcal C$ 위의 monad 는 함자 $T : \mathcal C \to \mathcal C$ 와 자연변환 $\eta : \mathrm{id}\_{\mathcal C} \Rightarrow T$ , $\mu : T \circ T \Rightarrow T$ 로 다음 두 등식을 모든 대상에서 만족하는 것이다.
 
 $$
 \mu\circ T\mu=\mu\circ\mu T,\qquad \mu\circ T\eta=\mathrm{id}\_T=\mu\circ\eta T
@@ -82,8 +82,8 @@ $F \dashv G$ 에 unit $\eta$ 와 counit $\varepsilon$ 이 있으면 $T = GF$ 와
 
 역방향은 유일하지 않고 분해의 양 끝이 존재한다.
 
-- **Kleisli 범주** $\mathcal C_T$ 는 대상이 $\mathcal C$ 와 같고 $X$ 에서 $Y$ 로 가는 사상이 $\mathcal C$ 의 사상 $X \to T(Y)$ 다. 합성은 $g^\ast \circ f$ 다. 자유 functor $\mathcal C \to \mathcal C_T$ 와 망각 functor 가 이루는 수반이 $T$ 를 준다.
-- **Eilenberg–Moore 범주** $\mathcal C^T$ 는 $T$ 대수 범주다. 망각 functor $\mathcal C^T \to \mathcal C$ 는 자유대수 functor 의 right adjoint 이고 이 수반도 $T$ 를 준다.
+- **Kleisli 범주** $\mathcal C_T$ 는 대상이 $\mathcal C$ 와 같고 $X$ 에서 $Y$ 로 가는 사상이 $\mathcal C$ 의 사상 $X \to T(Y)$ 다. 합성은 $g^\ast \circ f$ 다. 자유 함자 $\mathcal C \to \mathcal C_T$ 와 망각 함자가 이루는 수반이 $T$ 를 준다.
+- **Eilenberg–Moore 범주** $\mathcal C^T$ 는 $T$ 대수 범주다. 망각 함자 $\mathcal C^T \to \mathcal C$ 는 자유대수 함자의 오른쪽 수반이고 이 수반도 $T$ 를 준다.
 
 $T$ 를 주는 모든 수반의 범주에서 Kleisli 는 시작대상, Eilenberg–Moore 는 종단대상이다. Kleisli 범주는 $\mathcal C^T$ 에서 자유대수만 모은 충만한 부분범주와 동치다.
 

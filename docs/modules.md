@@ -110,7 +110,7 @@ $$
 M \cong R^{(S)} = \bigoplus_{s \in S} R
 $$
 
-과 동형이며, 다음 보편성질로 특징지어진다. 집합 사상 $S\to N$ 은 $R$ 준동형 $R^{(S)}\to N$ 으로 유일하게 확장된다. 이것이 자유가군 functor와 망각 functor의 [수반](adjunctions.md)이다.
+과 동형이며, 다음 보편성질로 특징지어진다. 집합 사상 $S\to N$ 은 $R$ 준동형 $R^{(S)}\to N$ 으로 유일하게 확장된다. 이것이 자유가군 함자와 망각 함자의 [수반](adjunctions.md)이다.
 
 가환환 위에서는 자유가군의 계수(rank)가 잘 정의된다. $R^m \cong R^n$ 이면 극대 아이디얼 $\mathfrak{m}$ 하나를 잡아 $R/\mathfrak{m}$ 를 텐서하면 체 위 벡터 공간의 차원 비교가 되어 $m = n$ 이다.
 
@@ -195,7 +195,7 @@ $$
 
 ## 선형대수의 일반화
 
-[텐서곱](tensor-products.md)은 두 가군에서 쌍선형 사상을 선형화하는 구성이고, 그 결과 $\mathrm{Hom}\_R(M \otimes N, P) \cong \mathrm{Hom}\_R(M, \mathrm{Hom}\_R(N, P))$ 라는 adjunction이 생긴다. 스칼라 확장 $S \otimes_R M$ 은 계수환을 바꿔 가면서 같은 대상을 다르게 보는 장치로, 실수 표현을 복소수로 확장하거나 정수 격자를 유리수 공간에 넣는 조작이 모두 여기에 해당한다.
+[텐서곱](tensor-products.md)은 두 가군에서 쌍선형 사상을 선형화하는 구성이고, 그 결과 $\mathrm{Hom}\_R(M \otimes N, P) \cong \mathrm{Hom}\_R(M, \mathrm{Hom}\_R(N, P))$ 라는 수반이 생긴다. 스칼라 확장 $S \otimes_R M$ 은 계수환을 바꿔 가면서 같은 대상을 다르게 보는 장치로, 실수 표현을 복소수로 확장하거나 정수 격자를 유리수 공간에 넣는 조작이 모두 여기에 해당한다.
 
 ## 표현론과 그 너머
 
