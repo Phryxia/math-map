@@ -1,72 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-19T17:02:33.420Z",
-  "nextSeq": 672,
+  "savedAt": "2026-09-19T21:04:11.492Z",
+  "nextSeq": 683,
   "items": [
-    {
-      "id": "87a5de8d",
-      "title": "두문자어 첫 등장 풀이 전수 점검 (20차)",
-      "priority": 13,
-      "note": "2026-09-19 회차 19차에 SIDH KKT CW LPS IRLS WL QR 을 열세 자리에서 풀어 보고가 108 건, 약어 96 종이 되었다. 회차 6차의 339 건에서 3분의 1 아래로 내려왔고 이제 약어 하나에 자리 하나뿐인 것이 대부분이다. 20차부터는 약어별 묶음이 사라지므로 검사기 출력(스크래치패드 acronym.mjs 는 문서별, by-acronym.mjs 는 약어별)을 위에서부터 차례로 처리하면 된다. 지금까지 쌓인 판정 기준을 한자리에 모은다. (1) 프로토콜·표준·기관 이름은 푼다(TLS SSH RFC NIST AES). (2) 사람 이름 이니셜은 푼다(KKT MOV BSD HOMFLY LPS BGG). (3) 복잡도 클래스(P NP PSPACE)는 풀지 않는다. (4) 회사·저널·매체 규격 고유명사는 풀지 않는다(IBM SIAM QR 코드 CD DVD RAID JPEG MP3 GPU). (5) 수식 안 \\mathrm 기호와 mermaid 노드 이름과 기호 첨자는 세지 않는다. (6) 기호에 붙은 번호(R1 E8 K3)와 로마 숫자(II III)는 두문자어가 아니다. (7) 헤딩과 '# 연관 문서' 절과 각주 정의 줄은 푸는 자리가 아니다. (8) 같은 줄이 이미 풀네임을 풀어 쓴 경우는 예외다. (9) 한국어 용어가 있으면 그것을 앞에 두고 원어와 약어를 괄호에 함께 넣고, 없으면 약어를 앞에 두고 풀네임을 괄호에 넣는다. (10) 같은 약어라도 문서마다 뜻이 다를 수 있으므로 줄마다 확인한다(KL LLL RT)",
-      "createdAt": "2026-09-19T17:02:08.021Z",
-      "seq": 671
-    },
-    {
-      "id": "1c4e03aa",
-      "title": "판정 순서도형 mermaid 가 남은 문서 훑기 — 후보 목록 소진",
-      "priority": 12,
-      "note": "2026-09-17 세 번째 회차에 원래 후보 30 개를 전부 처리해 목록이 비었다. 지운 것 21 개: algebraic-number-fields de-rham-cohomology power-series radon-nikodym classification-of-surfaces network-flow probabilistic-method stationary-phase matchings newton-method sphere-packing boolean-fourier marchenko-pastur sato-tate ramanujan-graphs s-cobordism unique-games flow-matching gnn-expressivity homomorphic-encryption post-quantum-cryptography speh-representations formalism-hilbert-program. 표로 바꾼 것 1 개: mathematical-structuralism(세 입장). 남긴 것 5 개는 4절이 허용하는 구조 도형이다: galois-connections(단위·여단위 가환도), yoneda-lemma(자연성 사각형), heyting-algebras(격자 포함관계 Hasse 도형과 Kripke 쌍대 대응), kripke-semantics(실제 프레임의 예), sea-algorithm(Elkies/Atkin 분기는 알고리즘의 실제 상태 전이이고 나눗셈·모듈러 다항식 차수가 그림에만 있다). 저장소 전체에서 mermaid 를 가진 문서는 229 개이고, 이번에 쓴 판정 노드 grep(grep -ln '인가\"]|는가\"]|{\"')은 그중 판정형만 잡는다. 다른 나열형(정의의 사슬, 증명 단계)은 이 grep 에 안 걸리므로 다음에는 mermaid 보유 229 개를 다른 기준으로 훑어야 한다. 후보 기준: 화살표 라벨이 논증의 접속사('따라서', '그러므로')이거나 노드가 전부 문장인 그림",
-      "createdAt": "2026-09-17T08:59:39.897Z",
-      "seq": 479
-    },
-    {
-      "id": "330454b2",
-      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (8차)",
-      "priority": 12,
-      "note": "2026-09-17 네 번째 회차에 node 판 검사기(스크래치패드 plaintext.mjs)를 다시 만들어 돌려 실질 위반 여섯을 고쳤다. network-flow(동치 증명 머리 (1) => (2) 꼴 셋과 증명 끝 기호 하나), uniform-integrability(증명 스케치 머리 둘), generating-functions(Catalan 함수방정식 C(x) = 1 + x C(x)^2 와 (1-4x)^(1/2)). 남는 보고 78 건은 전부 오검출 한 종류다: 개관 갈래 목록이 읽는 순서에 쓰는 유니코드 화살표. 지난 회차 노트가 ASCII ' -> ' 라고 적었는데 실제로는 유니코드다. 다음 회차에는 line.includes(' → ') 로 걸러야 78 건이 사라진다. 각주 줄 제외(/^\\[\\^/)는 이번에 넣어 효과를 봤다. 검사기는 코드펜스, 인라인 코드, $$ 블록, 인라인 수식, 링크 목적지를 마스킹한 뒤 유니코드 수학기호, 로마자 그리스 문자+첨자, LaTeX 명령, ASCII 비교연산, 맨 텍스트 지수, 맨 텍스트 곱셈을 찾는다",
-      "createdAt": "2026-09-17T13:01:17.225Z",
-      "seq": 496
-    },
-    {
-      "id": "0eacd1a9",
-      "title": "riemann-roch 를 대수기하 개관의 갈래에 세울 자리 검토",
-      "priority": 12,
-      "note": "2026-09-17 다섯 번째 회차. 저장소에 #algebraic_geometry 태그가 없어 riemann-roch 의 태그를 #differential_geometry #complex_analysis #number_theory 로 채웠다. 인자, 표준인자, 층 코호몰로지, 사영 매장, 모듈라이를 다루는 문서들(riemann-roch, borel-weil-bott, elliptic-curves, de-rham-cohomology, classification-of-surfaces 등)이 #algebra 와 #differential_geometry 와 #number_theory 로 흩어져 있다. 새 분야 태그를 만들지 결정하려면 먼저 대수기하가 주 분야인 문서를 세어야 한다. 10 개가 넘으면 4.5 절에 따라 개관이 필요하다",
-      "createdAt": "2026-09-17T16:37:59.080Z",
-      "seq": 501
-    },
-    {
-      "id": "a3bcd028",
-      "title": "네 번째 회차 의문형 헤딩 문서 열둘의 후속 점검",
-      "priority": 12,
-      "note": "2026-09-17 다섯 번째 회차에 열 개를 모두 4절 문체로 고쳤다: riemann-roch, marchenko-pastur, monstrous-moonshine, zhu-algebra, littlewood-richardson, fargues-scholze, rice-theorem, mv-cycles, adjunctions, link-cut-trees. 손질 내용은 서술형·비유형 헤딩의 명사구 전환, 검증 과정 산문과 실행되지 않는 예시 코드 제거, 나열형 mermaid 제거, 첨자 이스케이프, 분야 태그 채우기다. 다음 회차에는 고친 문서들이 4절 문체를 유지하는지만 확인하면 된다. adjunctions 와 link-cut-trees 는 아직 280~300 줄로 길어 8절 분할 후보인지 따로 볼 만하다",
-      "createdAt": "2026-09-17T16:53:55.526Z",
-      "seq": 507
-    },
-    {
-      "id": "be0749a7",
-      "title": "문체·수식 회귀 점검 묶음",
-      "priority": 12,
-      "note": "2026-09-17 다섯 번째 회차에 일곱 검사를 돌려 전부 0 건이다: 금지 매크로, 열린 문제 절 이름, '대부분 열려' 류, 빈자리·할 일 절, 문장형 헤딩, 백슬래시+문장부호 이스케이프. 의문사 헤딩 grep 만 2 건인데 둘 다 측도론 용어 '거의 어디서나' 오검출이다(lebesgue-integral, measurable-functions). 별표와 닫는 $ 뒤 공백과 인라인 코드블록 안 수식은 스크래치패드 regcheck.mjs 로 보는데 이번 회차에는 다시 만들지 않았다. 함정 하나: 한 줄짜리 $$...$$ 블록을 인라인으로 읽으면 닫는 $ 뒤 공백 위반이 오검출로 뜬다. 인라인 코드를 마스킹한 뒤 $$ 블록도 함께 마스킹해야 한다. 이번 회차에 새로 만든 검사기는 subcheck.mjs(첨자 이스케이프 누락)이고 별도 항목에 적었다",
-      "createdAt": "2026-09-17T16:57:54.439Z",
-      "seq": 511
-    },
-    {
-      "id": "a6591090",
-      "title": "제목과 파일명이 어긋난 문서 훑기",
-      "priority": 12,
-      "note": "2026-09-17 다섯 번째 회차 신설. CLAUDE.md 2절이 주는 grep -l '^# .*[와과] ' docs/*.md 는 로케일 탓에 문서 377 개를 전부 잡는다(한글 문자 클래스가 UTF-8 바이트로 쪼개진다). 제목 줄만 파이썬으로 뽑아 '와 ' 또는 '과 ' 를 찾으면 169 건이다. 대부분은 4절이 허용하는 형태이므로 일괄 처리 대상이 아니다. 판정 기준: (1) 정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목('Néron–Tate 높이와 Mordell–Weil 정리', 'Bernoulli 수와 von Staudt–Clausen 정리')은 한 주제이므로 그대로 둔다. (2) 한 개념의 두 면이고 파일명이 그것을 포괄하면 둔다('가산성과 비가산성'/cardinality, 'Cauchy 수열과 완비성'/completeness, '계산 가능성과 정지 문제'/computability). (3) 파일명이 둘 중 하나만 가리키고 나머지가 독립 문서가 될 만하면 4절대로 제목을 좁히거나 파일명을 바꾸거나 8절대로 나눈다. 세 번째에 해당하는 것을 한 회차에 한둘씩 처리한다. 검사 코드는 첫 줄이 '# ' 로 시작하는지 본 뒤 re.search(r'(와|과) ', 제목) 이다",
-      "createdAt": "2026-09-17T16:58:28.489Z",
-      "seq": 512
-    },
-    {
-      "id": "0af77e68",
-      "title": "이번 회차에 보강한 26 개 문서의 4절 문체 회귀 점검",
-      "priority": 12,
-      "note": "2026-09-17 여섯 번째 회차 신설. 보강한 문서 목록: whittaker-models rankin-selberg godement-jacquet satake-isomorphism dwork-rationality euler-maclaurin yoneda-lemma natural-transformations tensor-products khovanov-homology class-field-theory kl-divergence exponential-families poisson-summation localization-rings gamma-function mellin-transform laplace-method np-completeness sato-tate kahler-manifolds fft channel-coding flow-matching newton-method stickelberger schur-multipliers niemeier-lattices. 함께 고친 것: 맨 텍스트 수식 헤딩(rankin-selberg 의 'GL_n 의 Whittaker 함수', '국소 인자와 전역 L 함수', '계수의 합과 L 함수의 차이', godement-jacquet 의 '표준 L 함수', satake-isomorphism 의 'GL_2 의 명시적 상'), 4절이 금지하는 방향형 절 이름(rankin-selberg '이어지는 주제', dwork-rationality '이어지는 줄기'), 비유형 헤딩(natural-transformations '상위 이론으로 가는 입구', laplace-method '확률에서의 두 얼굴'), 검산형 절 이름(np-completeness '환원을 코드로 확인하기', niemeier-lattices '질량 공식에 의한 검산'), 분야 태그가 하나뿐이던 문서(yoneda-lemma natural-transformations kl-divergence). 주의할 부수효과 둘: 코드를 지우면 각주 참조가 끊길 수 있다(kl-divergence 의 [^1] 을 정의 절로 옮겼다). 본문 링크를 더할 때 4절의 '최초 1회' 규칙을 어기기 쉽다(laplace-method 에 euler-maclaurin 링크를 더하려다 이미 두 곳에 있어 취소했다)",
-      "createdAt": "2026-09-17T21:02:44.084Z",
-      "seq": 521
-    },
     {
       "id": "ec8b3eb2",
       "title": "수치 확인 코드 회귀 점검",
@@ -274,6 +210,62 @@
       "note": "2026-09-19 회차 18차에 검사기 3판(스크래치패드 mermaid-echo.mjs, 셈법은 18차 항목 노트에 적었다) 보고 25 건을 전부 판정해 목록을 비웠다. 지운 것 둘: poincare-hopf(지표의 합과 Gauss 곡률 적분이 둘 다 χ(M) 이라는 문장 하나), boolean-algebras(직관 절 끝에서 유한 구조 정리와 Stone 표현 정리를 노드로 되풀이). 남긴 것 스물셋: fft rings np-completeness brauer-groups exact-wkb fundamental-lemma heyting-algebras mass-formula modular-tensor-categories p-adic-numbers resurgence sea-algorithm bayesian-inference bernoulli-numbers finite-simple-groups langlands-program mathieu-groups modules monstrous-moonshine mv-cycles union-find diffusion-models eisenstein-ideal. 검사기 3판의 명중률은 25 건 중 2 건이라 낮다. 원인은 '메아리' 점수가 H2 제목과 노드 라벨의 부분 문자열 일치로 생기는데, 한 대상에서 뻗는 대응 그림도 그 대상의 후속 정리를 H2 로 다루므로 똑같이 걸린다는 것이다. 19차에는 메아리 대신 다른 신호를 쓴다. 후보: (a) 노드 라벨에 등호나 수식이 없고 순수 한국어 명사구뿐인 그림(구성이 아니라 요약일 확률이 높다), (b) 화살표에 라벨이 하나도 없는 그림(구성 방법이 그림에 없으면 문장으로 충분하다), (c) 간선 수가 노드 수보다 적거나 같은 그림(분기도 합류도 없는 일직선 사슬). (c) 가 15차 기준의 증명 단계 사슬을 가장 곧게 잡을 것으로 보인다",
       "createdAt": "2026-09-19T16:47:21.680Z",
       "seq": 662
+    },
+    {
+      "id": "d564475d",
+      "title": "각주 정합 회귀 점검",
+      "priority": 12,
+      "note": "2026-09-19 회차 20차에 저장소 전체를 0 건으로 만들었다. 4절의 '각주는 본문에서 참조한 것만 정의한다' 를 어긴 문서가 29 개였고 전부 처리했다. 검사법: defs=re.findall(r'^\\[\\^(\\w+)\\]:', s, re.M), refs=re.findall(r'\\[\\^(\\w+)\\](?!:)', s) 로 defs-refs(참조 없는 정의)와 refs-defs(정의 없는 참조)를 본다. 처리한 29 개: khovanov-homology godement-jacquet bernoulli-numbers brauer-algebras eisenstein-ideal fargues-scholze finite-simple-groups herbrand-ribet kedlaya-algorithm kolyvagin-systems mass-formula poitou-tate ramanujan-graphs root-systems sea-algorithm borel-weil-bott lobachevsky-function galois-connections deuring-correspondence euler-systems reidemeister-torsion schubert-calculus casselman-shalika casson-invariant category-o chern-simons boolean-fourier pcp-theorem knot-invariants deformation-rings domain-theory. 자리를 고르는 요령: 원논문 각주는 그 개념이나 정리를 처음 진술하는 문장 끝에, 표준 참고서 각주는 정의 절의 주 정의 문장 끝에, 특정 결과의 각주는 그 결과를 말하는 목록 항목에 단다. 주의 셋. (1) 정리 진술이 '**정리.**' 로 시작하면 '**정리**[^1]**.**' 꼴로 굵은 글씨를 쪼갠다. (2) 목록 항목의 '**이름.**' 뒤에는 '**이름.**[^2]' 로 붙인다. (3) 각주를 콜론 바로 앞에 두면 안 된다. '**국소 조건**[^4]:' 은 검사기의 정의 줄 정규식에 걸려 참조로 세어지지 않고, 렌더링에서도 어색하다. 문장이나 항목 끝으로 옮긴다. 반대 방향(정의 없는 참조)은 렌더링에서 깨진 링크가 되어 독자에게 바로 보이므로 회차마다 refs-defs 를 먼저 본다. 이번에 martingales 133 줄의 그런 [^1] 을 지웠다. 출처를 알 수 없고 문장이 이미 이유를 말하고 있었다",
+      "createdAt": "2026-09-19T21:03:49.636Z",
+      "seq": 682
+    },
+    {
+      "id": "d2720772",
+      "title": "두문자어 첫 등장 풀이 전수 점검 (21차)",
+      "priority": 11,
+      "note": "2026-09-19 회차 20차에 검사기를 고쳐 오검출을 걷어내고(문서별 acronym.mjs: 링크 목적지는 .md 와 http 만 마스킹, 약어 뒤 강조기호·대괄호가 낀 풀네임 괄호도 통과, 약어 글자를 머리로 하는 낱말이 같은 줄에 연달아 있으면 기준 8 예외로 통과) 실질 위반 35 건을 스물일곱 문서에서 풀었다. KKL FKN BSC BEC KLPT P2P PRA RBF SGD DFS BFS SDE(2) IC BGG KLR AGM PD LICQ MFCQ ADMM BKZ LR(2) MP LDPC PID BFGS WGAN PA ARS CNF LLT MOV GOE GUE QAM WZW BPS BTZ LMFDB(4). 약어를 쓰지 않는 쪽이 나은 자리 셋은 풀이 대신 지웠다: flow-matching 의 OT 는 문서가 이미 쓰는 '최적 수송' 으로, fontaine-mazur 표의 HT 는 본문과 같은 'Hodge–Tate' 로 되돌렸다. 검사기가 이제 내놓는 17 건은 전부 판정상 풀지 않는 것이고 다음 회차에는 그대로 두면 된다: EDSAC(기계 이름) QR SMILES ISBN CRC ATLAS(책 제목) BN254 BN381 BLS12(곡선 규격) 는 기준 4, ADE(근계 분류 기호) 는 기준 6, MISSISSIPPI(단어) INSERT CONNECTED DELETE(연산 이름) MAX(MAX-3SAT 의 일부) ABCD(광학 행렬 성분) 는 오검출, AJ 는 항목 본문이 A 다항식과 Jones 다항식을 함께 설명하므로 둔다. 21차에는 이 17 건을 SKIP 목록에 넣은 채로 돌려 새로 들어온 문서만 보면 된다",
+      "createdAt": "2026-09-19T20:42:03.285Z",
+      "seq": 672
+    },
+    {
+      "id": "9fef12e0",
+      "title": "나열형 mermaid 훑기 (차기)",
+      "priority": 11,
+      "note": "2026-09-19 회차 20차. 검사기를 스크래치패드 m2.mjs 로 다시 만들었다. mermaid 블록을 뽑아 (1) 화살표 라벨이 논증 접속사(따라서/그러므로/이므로/하면/증명/단계), (2) 노드 라벨의 과반이 종결어미로 끝나는 문장, (3) 노드 3~5 개에 간선이 노드-1 인 선형 사슬, 셋으로 후보를 낸다. 저장소의 mermaid 블록은 150 개이고 세 기준이 낸 후보는 넷뿐이었다. 처리: brauer-groups(Br(K) 곱 공식에서 Hasse 원리로, Br(X) 에서 Brauer–Manin 장애로 가는 두 사슬. 앞뒤 문단이 같은 내용을 이미 서술하고 그림에만 있는 정보가 없어 지웠다), gan-gross-prasad(Whittaker/Bessel/Fourier–Jacobi 세 모형 비교를 4 열 표로. 여차원 조건과 해당 군이 그림에만 있던 정보라 표로 옮겼다), vandiver-conjecture(A 의 홀짝 성분에 붙는 도구 짝짓기를 2 열 표로). 남긴 것 하나: field-extensions 의 Q(√2) → Q(√2,√3) → Q(√2,√3,∛5) 는 4절이 허용하는 확대의 탑이다. 세 기준으로는 더 나오지 않으므로 다음 회차에는 다른 기준이 필요하다. 후보 기준안: 노드가 전부 명사인데도 간선이 '포함'이나 '사상' 이 아니라 시간 순서인 그림, 같은 정보가 바로 앞뒤 문단에 문장으로도 있는 그림(그림과 본문의 낱말 중복률로 잰다)",
+      "createdAt": "2026-09-19T20:45:02.591Z",
+      "seq": 673
+    },
+    {
+      "id": "57f485f2",
+      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (9차)",
+      "priority": 11,
+      "note": "2026-09-19 회차 20차. 검사기(스크래치패드 plaintext.mjs)에 지난 노트의 지침 셋을 넣어 오검출을 걷었다. (1) line.includes(' → ') 로 개관 갈래의 읽는 순서 78 건이 사라졌다. (2) 가운뎃점 · 을 유니코드 수학기호 목록에서 뺐다. 한국어 낱말 병렬('교환·결합·분배', '제1종·제2종')이지 수학기호가 아니어서 40 건 가까이 오검출이었다. (3) 1992 블록 판정을 /^\\s*>?\\s*\\$\\$\\s*$/ 로 고쳤다. 인용문 안의 '> 1992' 를 못 잡아 블록 안 LaTeX 명령이 전부 보고됐다. 이 셋으로 125 건이 1 건이 되었다. 로마자 그리스 문자 검사를 새로 넣었는데 theta zeta eta 는 목록에서 빼야 한다. 'theta 급수', 'zeta 함수' 는 문서 id(theta-series)와 맞는 굳은 용어여서 168 건이 전부 오검출이었다. 남긴 목록으로 실질 위반 둘을 고쳤다: ordinals 의 omega 다섯 자리와 epsilon_0 세 자리(1992 블록은 제대로 \\omega 를 쓰는데 산문만 맨 텍스트였다), uniform-integrability 의 '부분 sigma-대수'. 남는 보고 27 건은 전부 lambda-calculus 의 'lambda 항' 'lambda calculus' 와 uniform-convergence 의 'three epsilon' 으로 용어 이름이라 오검출이다. 손대지 않은 것 하나: uniform-integrability 109 줄 1992 블록 안의 \\text{sub-sigma-algebra} 는 수식 안 텍스트라 규격 위반은 아니지만 \\sigma 기호로 쓰는 편이 읽기 좋다",
+      "createdAt": "2026-09-19T20:47:24.278Z",
+      "seq": 674
+    },
+    {
+      "id": "9c77fb25",
+      "title": "문체 회귀 점검 묶음 (차기)",
+      "priority": 11,
+      "note": "2026-09-19 회차 20차. 네 번째 회차 의문형 헤딩 문서 열(riemann-roch marchenko-pastur monstrous-moonshine zhu-algebra littlewood-richardson fargues-scholze rice-theorem mv-cycles adjunctions link-cut-trees)에 문장형 헤딩, 번역체·수사, 방향형 절 세 검사를 돌려 전부 0 건이다. 다섯 번째 회차의 손질이 유지되고 있다. 8절 분할 후보로 적어 둔 둘은 해당 없다. adjunctions 253 줄, link-cut-trees 176 줄로 1000 줄 기준에 한참 못 미친다(지난 노트의 '280~300 줄' 은 그 뒤 손질로 줄어든 듯하다). 저장소 전체 검사도 돌렸다. 금지 매크로 0 건. 문장형 헤딩 grep 의 보고 10 건은 전부 '## 증명의 요지' 꼴로 4절이 직접 권하는 표현이니 grep 에서 '요지 *$' 를 빼야 한다. 문학적 비유 grep 의 보고 5 건도 전부 용어의 일부라 4절의 예외다: elliptic-curves 의 Montgomery 사다리(알고리즘 이름), lie-algebras 의 사다리 연산자, post-quantum-cryptography 의 함정문(trapdoor, 두 자리), theta-series 의 Viazovska 마법함수(magic function). 이 다섯을 다음 회차에도 다시 보지 않도록 제외 목록에 둔다",
+      "createdAt": "2026-09-19T20:50:03.471Z",
+      "seq": 676
+    },
+    {
+      "id": "6f4de33b",
+      "title": "문체·수식 회귀 점검 묶음 (차기)",
+      "priority": 11,
+      "note": "2026-09-19 회차 20차. 지난 노트가 미뤄 둔 regcheck.mjs 를 스크래치패드에 다시 만들어 세 검사를 돌렸다. 별표 0 건, 인라인 코드블록 안 수식 0 건, 닫는 $ 뒤 공백 42 건. 지난 노트가 경고한 함정(한 줄짜리 $$...$$ 를 인라인으로 읽어 오검출)은 인라인 코드를 마스킹한 뒤 /\\$\\$[^$]*\\$\\$/ 를 함께 마스킹해 피했고, 여러 줄 블록은 /^\\s*>?\\s*\\$\\$\\s*$/ 로 토글한다. 42 건 중 40 건을 고쳤다(쉼표 38, 닫는 괄호 2). 저장소가 이미 '$ ,' 를 155 개 문서에서 쓰고 있어 관례와 규격이 같은 쪽이다. 문서 20 개: analytic-continuation conformal-mapping dual-space exterior-algebra gaussian-processes hodge-theory monstrous-moonshine p-adic-hodge-theory peano-axioms perron-frobenius polya-enumeration riemann-roch uniform-integrability vandiver-conjecture weierstrass-factorization 등. 남긴 것 둘: dual-space 23 줄의 문장 끝 마침표는 '$ .' 로 고쳤고(이 관례를 쓰는 문서가 15 개다), dilworth-theorem 62 줄의 '$k$-families' 는 각주에 적은 논문 제목의 하이픈 합성어라 공백을 넣으면 제목이 끊어지므로 예외로 둔다. 다음 회차에는 이 한 건을 제외 목록에 두고 돌리면 0 건이어야 한다",
+      "createdAt": "2026-09-19T20:52:05.850Z",
+      "seq": 677
+    },
+    {
+      "id": "6407c726",
+      "title": "제목과 파일명이 어긋난 문서 훑기 (차기)",
+      "priority": 11,
+      "note": "2026-09-19 회차 20차. 제목에 '와/과' 가 든 문서는 158 개이고, 그중 뒷부분이 정리·공식·추측·부등식·알고리즘 이름이 아닌 것이 130 개다(기준 1 로 걸러진 28 개가 차이다). 130 개를 훑어 기준 3 에 해당하는 것, 곧 파일명이 둘 중 하나만 가리키고 나머지가 독립 개념인 것을 찾으면 pairing-based-cryptography 하나가 뚜렷했다. 제목이 'Weil 쌍과 쌍선형 암호' 인데 파일명은 뒤쪽만 가리켰다. 172 줄 중 Weil 쌍과 Tate 쌍의 정의는 25 줄이고 나머지가 MOV 환산, 파라미터 균형, 활용 다섯 절이라 문서의 주제는 암호 쪽이다. 8절 분할 기준에는 한참 못 미치므로 제목을 '쌍선형 암호' 로 좁히고 링크 표시 제목 넷(cryptography-overview number-theory-overview computation-overview elliptic-curves)을 맞췄다. 나머지 129 개는 기준 2 에 해당한다. 파일명이 '와/과' 양쪽을 모두 담은 것(dag-topological lp-rounding borel-pade kleisli-eilenberg-moore ideals-quotient-rings limits-colimits formalism-hilbert-program), 한 개념의 두 면인 것(eigenvalues 의 고윳값·고유벡터, modular-arithmetic 의 합동·나머지 연산), 앞이 주제이고 뒤가 그 주제의 한 측면이거나 예인 것(sphere-packing 의 E8·Leech 격자, supersingular-isogeny-graphs 의 SIDH)이 그것이다. 다음 회차에 다시 볼 것 하나: proofs 의 제목 '명제와 증명' 은 파일명이 뒤만 가리키지만 루트 문서라 파일명을 바꾸면 README 뿌리 목록과 모든 선수지식 링크가 함께 움직인다. 제목을 좁힐지 파일명을 바꿀지 따로 판단이 필요하다",
+      "createdAt": "2026-09-19T20:53:30.791Z",
+      "seq": 678
     },
     {
       "id": "1c511c2c",
@@ -884,6 +876,14 @@
       "seq": 641
     },
     {
+      "id": "5d8f0a56",
+      "title": "여섯 번째 회차 보강 26 개 문서의 문체 회귀 점검 (차기)",
+      "priority": 10,
+      "note": "2026-09-19 회차 20차에 26 개 전부에 네 검사를 돌려 문체 쪽은 0 건이다: 문장형·서술형 헤딩, 방향형·검산형 절 이름, 태그 2 개 미만. 여섯 번째 회차의 손질이 유지되고 있다. 다만 지난 노트가 경고한 '코드를 지우면 각주 참조가 끊길 수 있다' 가 실제 문제로 확인되어 별도 항목(참조 없는 각주 정의가 남은 문서 29 개, priority 100)으로 옮겼다. 이 26 개 중에서는 godement-jacquet 과 khovanov-homology 가 걸렸고 둘 다 이번에 고쳤다. 다음 회차에는 문체 검사 대신 각주 항목을 먼저 소진하는 편이 낫다",
+      "createdAt": "2026-09-19T20:56:05.644Z",
+      "seq": 680
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -914,6 +914,14 @@
       "note": "2026-09-19 회차에 bd57c884 의 후보 (1) Coxeter 군을 coxeter-groups 로 썼다(커밋 c023c7c). 부모는 group-presentations 와 root-systems 이고 자식은 kazhdan-lusztig 다. 남은 후보 셋은 그대로다. (2) 쌍곡군: 낱말 문제가 선형 시간에 풀리는 군. 얇은 삼각형 조건과 Dehn 함수가 정의이고 저장소에 기하적 군론 문서가 없어 분야 판단이 필요하다. (3) Todd-Coxeter 알고리즘: 잉여류 열거. computation 태그로 group-presentations 아래. (4) 자유군을 별도 문서로 뗄지 판정: 지금은 group-presentations 의 정의 절 한 항목이고 Nielsen-Schreier 정리도 그 안에 있다. free-groups id 는 비어 있다. coxeter-groups 에서 새로 생긴 후보 둘: 아핀 Coxeter 군과 알코브 기하, Bruhat 분해(대수군 쪽 문서가 있는지 먼저 확인)",
       "createdAt": "2026-09-19T04:50:49.207Z",
       "seq": 609
+    },
+    {
+      "id": "fed1b9b8",
+      "title": "대수기하 분야 태그 신설 판단 — 지금은 만들지 않는다",
+      "priority": 9,
+      "note": "2026-09-19 회차 20차에 세었다. 대수기하 용어(스킴, 사영/아핀 다양체, 인자류, 표준인자, 층 코호몰로지, 연접층, 모듈라이, 특이점 해소, Zariski, 아이디얼 층, Grothendieck)가 네 번 이상 나오는 문서는 13 개다: teichmuller-space riemann-roch riemann-surfaces p-adic-hodge-theory kahler-manifolds wasserstein-gradient-flow modular-curves geometric-satake galois-representations geometric-langlands fontaine-mazur fargues-scholze deligne-weil-conjectures. 그런데 이 중 대수기하가 주 분야인 것, 곧 문서의 대상이 대수다양체나 스킴 자체인 것은 riemann-roch 정도뿐이다. Langlands 계열 여섯(p-adic-hodge-theory geometric-satake galois-representations geometric-langlands fontaine-mazur fargues-scholze)과 modular-curves, deligne-weil-conjectures 는 정수론이 주 분야이고 대수기하를 도구로 쓴다. riemann-surfaces teichmuller-space kahler-manifolds 는 복소해석과 미분기하가 주 분야다. wasserstein-gradient-flow 는 '다양체' 낱말 때문에 걸린 오검출이다. 4.5 절의 기준인 10 개에 못 미치므로 #algebraic_geometry 태그와 개관을 지금은 만들지 않는다. riemann-roch 는 첫 태그가 #differential_geometry 이고 differential-geometry-overview 의 갈래에 이미 있으므로 자리 문제도 없다. 다시 볼 조건: 스킴, 연접층, 사영 매장, 특이점 해소, 교차이론, 모듈라이 공간을 주제로 하는 새 문서가 여섯 이상 생기면 그때 태그와 개관을 함께 만든다",
+      "createdAt": "2026-09-19T20:48:26.448Z",
+      "seq": 675
     },
     {
       "id": "0aaf9d9d",
