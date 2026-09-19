@@ -24,7 +24,7 @@ $$
 
 유한차원 Morse 호몰로지는 함수 $f$ 의 임계점을 생성원으로 놓고, 지표 차이가 1 인 두 임계점을 잇는 기울기 흐름선을 세어 미분을 정의한다. 호몰로지는 $f$ 에 의존하지 않는다.
 
-Floer 는 이 절차를 무한차원 공간에 적용했다. 무대는 $\Sigma$ 위 $\mathrm{SU}(2)$ 접속들의 공간을 게이지군으로 나눈 것이고 함수는 Chern–Simons 범함수다.
+Floer 는 이 절차를 무한차원 공간에 적용했다. 정의역은 $\Sigma$ 위 $\mathrm{SU}(2)$ 접속들의 공간을 게이지군으로 나눈 것이고 함수는 Chern–Simons 범함수다.
 
 $$
 \mathrm{CS}(A)=\frac1{8\pi^2}\int_\Sigma\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)

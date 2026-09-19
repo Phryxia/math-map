@@ -64,7 +64,7 @@ graph TD
   RH["Riemann–Hurwitz<br/>μ, ν₂, ν₃, ν_∞"] --> G
   X -->|"Jacobian"| J["J_0(N), 차원 g"]
   J -->|"Hecke 대응"| EI["Eichler–Shimura<br/>Galois 표현"]
-  Q --> MOD["모듈러성 정리의 무대"]
+  Q --> MOD["모듈러성 정리의 진술 대상"]
 ```
 
 # 정의

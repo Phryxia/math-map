@@ -99,7 +99,7 @@ $$
 
 ## 완비성
 
-$L^1(\mu)$ 는 $\lVert f \rVert_1 = \int \lvert f \rvert\thinspace d\mu$ 로 완비 노름공간이 된다. 이것이 Riesz–Fischer 정리이고 지배수렴 정리가 증명의 도구다. Riemann 적분으로 같은 노름을 주면 완비가 되지 않으므로, Lebesgue 이론이 빠진 극한을 채운다. 같은 방식으로 $L^2$ 가 Hilbert 공간이 되고 Fourier 해석의 무대가 된다.
+$L^1(\mu)$ 는 $\lVert f \rVert_1 = \int \lvert f \rvert\thinspace d\mu$ 로 완비 노름공간이 된다. 이것이 Riesz–Fischer 정리이고 지배수렴 정리가 증명의 도구다. Riemann 적분으로 같은 노름을 주면 완비가 되지 않으므로, Lebesgue 이론이 빠진 극한을 채운다. 같은 방식으로 $L^2$ 가 Hilbert 공간이 되고 Fourier 해석의 기본 공간이 된다.
 
 ## 측도의 교체
 

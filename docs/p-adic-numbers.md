@@ -168,7 +168,7 @@ $$
 \mathbb A_{\mathbb Q}=\Big\lbrace(x_v)\in\mathbb R\times\prod_p\mathbb Q_p:\text{거의 모든 } p \text{ 에서 } x_v\in\mathbb Z_p\Big\rbrace
 $$
 
-아델 환이다. $\mathbb Q$ 가 그 안에 이산 부분군으로 들어가고 몫이 콤팩트해지며, 곱군 쪽에서 만든 이델류군이 [유체론](class-field-theory.md)의 무대가 된다.
+아델 환이다. $\mathbb Q$ 가 그 안에 이산 부분군으로 들어가고 몫이 콤팩트해지며, 곱군 쪽에서 만든 이델류군이 [유체론](class-field-theory.md)의 기본 대상이 된다.
 
 ## 자리들의 대등성
 

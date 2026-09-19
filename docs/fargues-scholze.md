@@ -2,7 +2,7 @@
 
 # 개요
 
-[기하학적 Langlands 강령](geometric-langlands.md)은 곡선 $X$ 위의 다발 모듈라이 $\mathrm{Bun}\_G$ 를 무대로 삼는다. 함수체 쪽에는 곡선이 실제로 있다. $\mathbb Q_p$ 같은 $p$ 진체에는 곡선이 없다. 국소체 하나는 점 하나처럼 보이고, 그 위에 다발을 얹을 공간이 없다.
+[기하학적 Langlands 강령](geometric-langlands.md)은 곡선 $X$ 위의 다발 모듈라이 $\mathrm{Bun}\_G$ 위에서 전개된다. 함수체 쪽에는 곡선이 실제로 있다. $\mathbb Q_p$ 같은 $p$ 진체에는 곡선이 없다. 국소체 하나는 점 하나처럼 보이고, 그 위에 다발을 얹을 공간이 없다.
 
 Fargues 와 Scholze 의 출발점은 **곡선을 만들어내는 것**이었다. Fargues–Fontaine 곡선
 
