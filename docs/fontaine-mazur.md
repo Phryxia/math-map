@@ -139,15 +139,7 @@ $n=2$ 증명은 두 단계다. [Serre 추측](serre-conjecture.md)(Khare–Winte
 
 ## 고전점과 족
 
-$p$ 진 자기동형 형식의 족(Hida 족, eigenvariety)에서 난점이 드러난다. 족의 점들은 모두 거의 모든 곳 비분기인 Galois 표현을 주지만, de Rham 인 점은 고전점뿐이고 그 집합은 족 안에서 조밀하되 여집합이 훨씬 크다.
-
-```mermaid
-graph TD
-  E["eigenvariety<br/>p 진 해석적 족"] --> C["고전점<br/>de Rham, 기하적"]
-  E --> NC["나머지 점<br/>de Rham 아님"]
-  C --> W["정수 무게"]
-  NC --> NW["p 진 무게"]
-```
+$p$ 진 자기동형 형식의 족(Hida 족, eigenvariety)에서 난점이 드러난다. 족의 점들은 모두 거의 모든 곳 비분기인 Galois 표현을 주지만, de Rham 인 점은 정수 무게를 갖는 고전점뿐이고 그 집합은 족 안에서 조밀하되 여집합이 훨씬 크다. 나머지 점의 무게는 $p$ 진 무게 공간의 값이다.
 
 추측은 de Rham 인 점이 모두 고전점이라고 주장한다. de Rham 성은 $p$ 자리의 국소 조건이고 고전성은 전역적인 자기동형 자료라, 국소 조건 하나가 족 안의 위치를 결정한다는 진술이다. Kisin 과 Emerton 은 $\mathrm{GL}\_2(\mathbb Q_p)$ 의 $p$ 진 국소 Langlands 대응으로 그 국소 조건을 표현론적 조건으로 번역했다.
 
