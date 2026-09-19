@@ -43,7 +43,7 @@ Gentry 가 2009 년에 재부팅으로 이 벽을 넘었다. 암호화된 상태
 
 ## DGHV: 정수 위의 구성
 
-비밀키가 큰 홀수 $p$ 다. 비트 $m\in\lbrace 0,1\rbrace$ 의 암호문은
+DGHV(van Dijk–Gentry–Halevi–Vaikuntanathan) 방식의 비밀키는 큰 홀수 $p$ 다. 비트 $m\in\lbrace 0,1\rbrace$ 의 암호문은
 
 $$
 c=qp+2r+m
@@ -61,10 +61,10 @@ $|2r+m|\lt p/2$ 인 동안 정확하다. 덧셈과 곱셈이 평문의 XOR 과 A
 
 실무 방식은 모두 Ring-**LWE**(learning with errors) 위에 있다. 평문이 $R_t=\mathbb Z_t[x]/(x^n+1)$ 의 원소이고 암호문이 $R_q$ 의 다항식 쌍이다.
 
-- BGV: 모듈러스 전환으로 각 층마다 잡음을 깎는다. 정수 산술에 적합하다.
-- BFV: 평문을 $q/t$ 로 스케일해 넣는다. BGV 와 이론적으로 동치이나 잡음 관리 방식이 다르다.
-- CKKS: 복소수 근사 산술을 지원한다. 잡음을 평문의 하위 비트로 흡수해 고정소수점 연산처럼 다루며 기계학습 응용의 표준이다.
-- TFHE: 비트 단위로 수십 밀리초의 재부팅을 제공한다. 임의 불리언 회로에 적합하다.
+- BGV(Brakerski–Gentry–Vaikuntanathan): 모듈러스 전환으로 각 층마다 잡음을 깎는다. 정수 산술에 적합하다.
+- BFV(Brakerski–Fan–Vercauteren): 평문을 $q/t$ 로 스케일해 넣는다. BGV 와 이론적으로 동치이나 잡음 관리 방식이 다르다.
+- CKKS(Cheon–Kim–Kim–Song): 복소수 근사 산술을 지원한다. 잡음을 평문의 하위 비트로 흡수해 고정소수점 연산처럼 다루며 기계학습 응용의 표준이다.
+- TFHE(fast fully homomorphic encryption over the torus): 비트 단위로 수십 밀리초의 재부팅을 제공한다. 임의 불리언 회로에 적합하다.
 
 평문 공간이 $R_t$ 이므로 한 암호문에 여러 값을 담을 수 있다. 중국인의 나머지 정리로 $R_t$ 를 여러 슬롯으로 쪼개면 한 번의 연산이 수천 개 값에 동시에 적용되고, 이 일괄 처리가 실용 성능을 좌우한다.
 

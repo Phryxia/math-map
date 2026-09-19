@@ -6,7 +6,7 @@
 
 대체 가정은 아벨 숨은 부분군으로 환원되지 않아야 한다. [격자](lattices.md)의 근사 최단벡터 문제가 가장 유력한 후보다. 최선의 알고리즘이 고전이든 양자든 $2^{\Theta(n)}$ 시간을 쓰고 양자가 주는 이득은 상수배다.
 
-격자 문제에는 무작위로 뽑은 사례가 최악의 사례만큼 어렵다는 정리도 있다. NIST 가 2024 년에 표준화한 후양자 알고리즘의 주류가 격자 기반이다.
+격자 문제에는 무작위로 뽑은 사례가 최악의 사례만큼 어렵다는 정리도 있다. NIST(National Institute of Standards and Technology)가 2024 년에 표준화한 후양자 알고리즘의 주류가 격자 기반이다.
 
 # 직관
 
@@ -18,7 +18,7 @@ $$
 b = As + e,\qquad \Vert e\Vert\ \text{작음}
 $$
 
-소거를 하면 계수가 커지면서 잡음이 증폭되고, 몇 단계 지나면 잡음이 법 $q$ 전체를 덮어 정보가 남지 않는다. 이것이 **LWE**(learning with errors) 문제이고, 격자 언어로는 $A$ 가 정하는 격자에서 $b$ 에 가장 가까운 점을 찾는 CVP 다.
+소거를 하면 계수가 커지면서 잡음이 증폭되고, 몇 단계 지나면 잡음이 법 $q$ 전체를 덮어 정보가 남지 않는다. 이것이 **LWE**(learning with errors) 문제이고, 격자 언어로는 $A$ 가 정하는 격자에서 $b$ 에 가장 가까운 점을 찾는 **CVP**(closest vector problem)다.
 
 ## 짧은 비밀
 
@@ -49,7 +49,7 @@ $$
 
 ## SIS
 
-SIS 는 LWE 의 쌍대 문제다. 균등한 $A\in\mathbb Z_q^{n\times m}$ 이 주어질 때 다음을 만족하는 짧은 비영 정수벡터를 찾아라.
+**SIS**(short integer solution)는 LWE 의 쌍대 문제다. 균등한 $A\in\mathbb Z_q^{n\times m}$ 이 주어질 때 다음을 만족하는 짧은 비영 정수벡터를 찾아라.
 
 $$
 Az=0 \bmod q,\qquad 0\lt\Vert z\Vert\le\beta
@@ -64,7 +64,7 @@ $m$ 이 충분히 크면 비둘기집 원리로 해가 존재하지만 찾기가
 - Ring-LWE: $\mathbb Z_q^n$ 대신 $R_q=\mathbb Z_q[x]/(x^n+1)$ 을 쓴다. 행렬 곱이 다항식 곱이 되어 키가 $n$ 개 계수로 줄고, 수론 변환([FFT](fft.md)의 유한체판)으로 곱셈이 $O(n\log n)$ 에 끝난다.
 - Module-LWE: 위 환 위의 작은 차원 가군을 쓴다. 둘 사이의 절충이며, 환의 차수를 고정한 채 가군 차수만 바꿔 보안 수준을 조절할 수 있다.
 
-표준이 된 ML-KEM 과 ML-DSA 의 M 이 module 이다. 구조는 효율을 올리지만 공격 표면도 늘린다. 이상 격자에 특화된 공격이 일부 파라미터에서 성공한 전례가 있다.
+표준이 된 ML-KEM(module-lattice key encapsulation mechanism)과 ML-DSA(module-lattice digital signature algorithm)의 M 이 module 이다. 구조는 효율을 올리지만 공격 표면도 늘린다. 이상 격자에 특화된 공격이 일부 파라미터에서 성공한 전례가 있다.
 
 ## Regev 암호
 
@@ -119,17 +119,17 @@ $$
 - 원시 공격: $(A,b)$ 에서 $b$ 가 격자에 아주 가깝다는 사실을 이용해 CVP 를 푼다.
 - 쌍대 공격: 쌍대격자의 짧은 벡터를 찾아 $b$ 와 내적을 취하고, 분포가 균등한지 치우쳤는지로 판정한다.
 
-둘 다 격자 축소로 환원되므로 비용이 BKZ 의 블록 크기 $\beta$ 로 결정된다. $\beta$ 차원 SVP 를 $2^{0.292\beta}$ (고전) 또는 $2^{0.265\beta}$ (양자) 시간에 푼다고 가정하고 목표 보안 수준을 주는 $\beta$ 를 역산한다. 이 상수가 개선될 여지가 있어 파라미터에 여유를 둔다.
+둘 다 격자 축소로 환원되므로 비용이 BKZ(block Korkine–Zolotarev) 축소의 블록 크기 $\beta$ 로 결정된다. $\beta$ 차원 SVP 를 $2^{0.292\beta}$ (고전) 또는 $2^{0.265\beta}$ (양자) 시간에 푼다고 가정하고 목표 보안 수준을 주는 $\beta$ 를 역산한다. 이 상수가 개선될 여지가 있어 파라미터에 여유를 둔다.
 
 # 활용
 
 ## 표준과 실제 배치
 
-NIST 가 2024 년에 세 표준을 확정했다. 키 교환용 ML-KEM(CRYSTALS-Kyber)과 서명용 ML-DSA(CRYSTALS-Dilithium)가 격자 기반이고 서명용 SLH-DSA(SPHINCS+)는 해시 기반이다. Falcon 계열이 뒤이어 표준화되었다.
+NIST 가 2024 년에 세 표준을 확정했다. 키 교환용 ML-KEM(CRYSTALS-Kyber)과 서명용 ML-DSA(CRYSTALS-Dilithium)가 격자 기반이고, 여기서 CRYSTALS 는 Cryptographic Suite for Algebraic Lattices 다. 서명용 SLH-DSA(stateless hash-based digital signature algorithm, SPHINCS+)는 해시 기반이다. Falcon 계열이 뒤이어 표준화되었다.
 
 ML-KEM-768 의 공개키는 1184 바이트로 타원곡선의 32 바이트보다 크다. 연산은 다항식 곱과 덧셈만 쓰고 큰 수 모듈러 거듭제곱이 없어 더 빠르다.
 
-현장 배치는 혼합 방식이다. 기존 타원곡선 키 교환과 ML-KEM 을 함께 수행해 두 비밀을 결합하므로 격자 가정이 무너져도 기존 안전성이 남는다. TLS 와 Signal 이 이 형태로 전환했다.
+현장 배치는 혼합 방식이다. 기존 타원곡선 키 교환과 ML-KEM 을 함께 수행해 두 비밀을 결합하므로 격자 가정이 무너져도 기존 안전성이 남는다. TLS(transport layer security)와 Signal 이 이 형태로 전환했다.
 
 ## 저장 후 복호 공격
 

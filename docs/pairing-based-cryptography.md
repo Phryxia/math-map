@@ -26,7 +26,7 @@ $$
 
 ## 간극 Diffie–Hellman 군
 
-$(P,aP,bP,cP)$ 에서 $c=ab$ 인지 판정하는 문제가 DDH 다. 쌍이 있으면 $e(aP,bP)=e(P,cP)$ 인지 확인해 풀린다. 반면 $abP$ 를 계산하는 CDH 는 어렵다. $e(P,P)^{ab}$ 는 얻어도 그것을 곡선으로 되돌릴 수 없다.
+$(P,aP,bP,cP)$ 에서 $c=ab$ 인지 판정하는 문제가 **DDH**(decisional Diffie–Hellman)다. 쌍이 있으면 $e(aP,bP)=e(P,cP)$ 인지 확인해 풀린다. 반면 $abP$ 를 계산하는 **CDH**(computational Diffie–Hellman)는 어렵다. $e(P,P)^{ab}$ 는 얻어도 그것을 곡선으로 되돌릴 수 없다.
 
 DDH 는 쉽고 CDH 는 어려운 군을 **간극 Diffie–Hellman 군**이라 한다. 쌍 기반 구성은 이 비대칭에 기댄다.
 
@@ -145,15 +145,15 @@ $$
 
 ## 짧은 서명과 집계
 
-BLS 서명은 $\sigma=xH(m)$ 이고 검증은 $e(\sigma,P)=e(H(m),xP)$ 다. 서명이 곡선 점 하나이므로 같은 안전성에서 ECDSA 의 절반 길이다.
+BLS(Boneh–Lynn–Shacham) 서명은 $\sigma=xH(m)$ 이고 검증은 $e(\sigma,P)=e(H(m),xP)$ 다. 서명이 곡선 점 하나이므로 같은 안전성에서 ECDSA(elliptic curve digital signature algorithm)의 절반 길이다.
 
 여러 서명을 더하면 하나의 짧은 서명이 되고 검증도 쌍 계산 한 묶음으로 끝난다. 이 집계 성질 때문에 수십만 명이 참여하는 지분증명 합의 프로토콜의 표준 서명이 되었다.
 
 ## 영지식 증명
 
-zk-SNARK 의 검증식은 쌍의 등식이다. 증명자가 다항식의 값을 곡선 점으로 약속하면 검증자는 그 점들 사이의 곱셈 관계를 쌍으로 확인한다. 곡선 군만으로는 덧셈밖에 확인할 수 없다.
+zk-SNARK(zero-knowledge succinct non-interactive argument of knowledge)의 검증식은 쌍의 등식이다. 증명자가 다항식의 값을 곡선 점으로 약속하면 검증자는 그 점들 사이의 곱셈 관계를 쌍으로 확인한다. 곡선 군만으로는 덧셈밖에 확인할 수 없다.
 
-증명 크기가 수백 바이트로 상수이고 검증이 쌍 몇 번으로 끝난다. 쌍 기반 SNARK 는 양자 공격에 취약하고 신뢰 설정이 필요하므로 해시 기반 STARK 계열이 대안으로 연구된다.
+증명 크기가 수백 바이트로 상수이고 검증이 쌍 몇 번으로 끝난다. 쌍 기반 SNARK 는 양자 공격에 취약하고 신뢰 설정이 필요하므로 해시 기반 STARK(scalable transparent argument of knowledge) 계열이 대안으로 연구된다.
 
 ## 양자 내성
 
