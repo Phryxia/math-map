@@ -114,6 +114,5 @@ graph TD
 
 - [계산 가능성과 정지 문제](computability.md)
 - [동적 계획법](dynamic-programming.md)
-- [이산로그와 Diffie–Hellman](discrete-logarithm.md)
 
 #computation #complexity #algorithms #cryptography #overview
