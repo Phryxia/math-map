@@ -2,7 +2,7 @@
 
 # 개요
 
-다양체(manifold)는 국소적으로 Euclidean 공간과 구별할 수 없는 위상 공간이다. 전역 좌표계 하나를 요구하는 대신 작은 영역마다 좌표계를 붙이고 겹치는 부분에서 좌표 변환이 맞물리도록 요구한다. 그러면 구면이나 원환면처럼 평면 위에 한 장으로 펼 수 없는 대상에서도 미분을 말할 수 있다. 좌표 변환이 매끄러우면 smooth manifold 가 되고 접공간, 벡터장, 미분형식이 따라 정의된다. 미분기하학, 일반상대성이론, 제약조건이 있는 최적화가 이 언어를 쓴다.
+다양체(manifold)는 국소적으로 Euclidean 공간과 구별할 수 없는 위상 공간이다. 전역 좌표계 하나를 요구하는 대신 작은 영역마다 좌표계를 붙이고 겹치는 부분에서 좌표 변환이 맞물리도록 요구한다. 그러면 구면이나 원환면처럼 평면 위에 한 장으로 펼 수 없는 대상에서도 미분을 말할 수 있다. 좌표 변환이 매끄러우면 매끄러운 다양체가 되고 접공간, 벡터장, 미분형식이 따라 정의된다. 미분기하학, 일반상대성이론, 제약조건이 있는 최적화가 이 언어를 쓴다.
 
 # 직관
 
@@ -11,28 +11,28 @@
 ```mermaid
 flowchart LR
   M["다양체 M 의 겹치는 영역 U1 ∩ U2"]
-  A["R^n 의 열린집합 (chart 1 좌표)"]
-  B["R^n 의 열린집합 (chart 2 좌표)"]
+  A["R^n 의 열린집합 (좌표근방 1)"]
+  B["R^n 의 열린집합 (좌표근방 2)"]
   M -->|"phi_1 (위상동형)"| A
   M -->|"phi_2 (위상동형)"| B
-  A -->|"transition map phi_2 ∘ phi_1^-1"| B
+  A -->|"좌표변환 phi_2 ∘ phi_1^-1"| B
 ```
 
-transition map 은 Euclidean 공간 사이의 함수이므로 매끄러움을 다변수 미적분으로 판정하고, 그 판정을 다양체 위의 구조로 옮긴다.
+좌표변환은 Euclidean 공간 사이의 함수이므로 매끄러움을 다변수 미적분으로 판정하고, 그 판정을 다양체 위의 구조로 옮긴다.
 
 원 전체를 하나의 좌표로 덮으려 하면 시작점과 끝점이 붙어 실패한다. 위쪽 반원과 아래쪽 반원, 또는 북극과 남극을 각각 뺀 두 조각으로 덮으면 각 조각이 열린 구간과 위상동형이다.
 
 # 정의
 
-$M$ 을 위상공간, $n$ 을 음이 아닌 정수라 하자. $M$ 이 $n$ 차원 위상다양체(topological manifold)라는 것은 $M$ 이 Hausdorff 이고 second countable 이며 국소적으로 Euclidean 이라는 뜻이다[^1]. 국소 Euclidean 조건은 다음이다.
+$M$ 을 위상공간, $n$ 을 음이 아닌 정수라 하자. $M$ 이 $n$ 차원 위상다양체(topological manifold)라는 것은 $M$ 이 Hausdorff 이고 제2 가산(second countable)이며 국소적으로 Euclidean 이라는 뜻이다[^1]. 국소 Euclidean 조건은 다음이다.
 
 $$
 \forall p\in M\ \exists\thinspace U\subseteq M \text{ 열린집합},\ p\in U,\ \exists\thinspace \varphi:U\xrightarrow{\ \cong\ }\varphi(U)\subseteq\mathbb{R}^{n}
 $$
 
-화살표는 위상동형(homeomorphism)이고 상 집합은 $\mathbb{R}^n$ 의 열린집합이다. 쌍 $(U,\varphi)$ 가 chart, $\varphi$ 가 국소좌표계다. Hausdorff 조건은 점들을 분리하고 second countable 조건은 공간이 지나치게 커지는 것을 막는다. 두 조건을 빼면 국소 Euclidean 만으로는 아래 정리들이 성립하지 않는다.
+화살표는 위상동형(homeomorphism)이고 상 집합은 $\mathbb{R}^n$ 의 열린집합이다. 쌍 $(U,\varphi)$ 가 **좌표근방**(chart), $\varphi$ 가 국소좌표계다. Hausdorff 조건은 점들을 분리하고 제2 가산 조건은 공간이 지나치게 커지는 것을 막는다. 두 조건을 빼면 국소 Euclidean 만으로는 아래 정리들이 성립하지 않는다.
 
-$M$ 을 덮는 chart 들의 모음이 atlas 이고, 두 chart 가 겹칠 때 좌표를 바꾸는 함수가 transition map 이다.
+$M$ 을 덮는 좌표근방들의 모음이 **지도책**(atlas)이고, 두 좌표근방이 겹칠 때 좌표를 바꾸는 함수가 **좌표변환**(transition map)이다.
 
 $$
 \varphi_\beta\circ\varphi_\alpha^{-1}:\ \varphi_\alpha(U_\alpha\cap U_\beta)\longrightarrow \varphi_\beta(U_\alpha\cap U_\beta)
@@ -40,9 +40,9 @@ $$
 
 ## 매끄러운 구조
 
-atlas 의 모든 transition map 이 무한히 미분가능하면 그 atlas 가 smooth atlas 다. transition map 은 Euclidean 공간의 열린집합 사이의 함수이므로 이 조건은 [미분](derivative.md)의 통상적 의미로 검사된다. 서로 합쳐도 smooth atlas 가 되는 atlas 들을 동일시하면 각 류에 극대 smooth atlas 가 하나 있고, 이것이 매끄러운 구조(smooth structure)다. 위상다양체에 매끄러운 구조를 지정한 것이 smooth manifold 다.
+지도책의 모든 좌표변환이 무한히 미분가능하면 그 지도책이 매끄러운 지도책이다. 좌표변환은 Euclidean 공간의 열린집합 사이의 함수이므로 이 조건은 [미분](derivative.md)의 통상적 의미로 검사된다. 서로 합쳐도 매끄러운 지도책이 되는 것들을 동일시하면 각 류에 극대 매끄러운 지도책이 하나 있고, 이것이 **매끄러운 구조**(smooth structure)다. 위상다양체에 매끄러운 구조를 지정한 것이 매끄러운 다양체다.
 
-$M$ , $N$ 을 smooth manifold 라 하자. $F:M\to N$ 이 매끄러운 사상이라는 것은 각 점에서 적절한 chart 로 표현한 합성이 매끄럽다는 뜻이다.
+$M$ , $N$ 을 매끄러운 다양체라 하자. $F:M\to N$ 이 매끄러운 사상이라는 것은 각 점에서 적절한 좌표근방으로 표현한 합성이 매끄럽다는 뜻이다.
 
 $$
 \psi\circ F\circ\varphi^{-1}\ \text{가 } C^{\infty}
@@ -56,7 +56,7 @@ $$
 T_pM=\bigl\lbrace\thinspace X:C^{\infty}(M)\to\mathbb{R}\ \big|\ X \text{ 는 선형},\ X(fg)=X(f)\thinspace g(p)+f(p)\thinspace X(g)\thinspace\bigr\rbrace
 $$
 
-오른쪽 조건이 Leibniz 규칙이다. $T_pM$ 은 [벡터 공간](vector-spaces.md)이고 차원은 $n$ 이며, chart $(U,\varphi)$ 의 좌표 $x$ 로부터 다음이 기저가 된다.
+오른쪽 조건이 Leibniz 규칙이다. $T_pM$ 은 [벡터 공간](vector-spaces.md)이고 차원은 $n$ 이며, 좌표근방 $(U,\varphi)$ 의 좌표 $x$ 로부터 다음이 기저가 된다.
 
 $$
 \left.\frac{\partial}{\partial x^{1}}\right|\_{p},\ \dots,\ \left.\frac{\partial}{\partial x^{n}}\right|\_{p}
@@ -82,11 +82,11 @@ $$
 S^{n}=\Bigl\lbrace\thinspace x\in\mathbb{R}^{n+1}\ \Big|\ \textstyle\sum_{i=1}^{n+1}x_i^{2}=1\thinspace\Bigr\rbrace
 $$
 
-는 $n$ 차원 smooth manifold 다. 같은 방식으로 직교행렬 전체와 행렬식이 1 인 행렬 전체가 다양체가 된다.
+는 $n$ 차원 매끄러운 다양체다. 같은 방식으로 직교행렬 전체와 행렬식이 1 인 행렬 전체가 다양체가 된다.
 
 ## 표준 예시
 
-- 구면: 북극과 남극을 각각 제거하는 stereographic projection 두 개의 chart 로 덮인다.
+- 구면: 북극과 남극을 각각 제거하는 입체사영(stereographic projection) 두 개의 좌표근방으로 덮인다.
 - 원환면: 원의 곱공간이며 2차원 콤팩트 다양체다.
 - 실사영공간: $\mathbb{R}^{n+1}$ 에서 원점을 지나는 직선들의 집합으로 $n$ 차원 콤팩트 다양체다. 구면의 대칭점을 동일시한 몫공간이며 [동치관계](equivalence-relations.md)의 전형적 사용이다.
 - 열린집합: Euclidean 공간의 임의의 열린집합은 그 자체로 다양체다.
@@ -98,7 +98,7 @@ $$
 
 ## 콤팩트 다양체
 
-콤팩트 다양체는 유한 개의 chart 로 덮인다. 2차원 콤팩트 연결 다양체는 [Euler 지표](euler-characteristic.md)와 방향성만으로 완전히 분류된다.
+콤팩트 다양체는 유한 개의 좌표근방으로 덮인다. 2차원 콤팩트 연결 다양체는 [Euler 지표](euler-characteristic.md)와 방향성만으로 완전히 분류된다.
 
 # 활용
 
