@@ -2,7 +2,7 @@
 
 # 개요
 
-Hilbert 공간은 내적이 주어져 있고, 그 내적이 만드는 거리에 대해 완비인 벡터 공간이다. 즉 [내적 공간](inner-product-spaces.md)과 [Cauchy 수열과 완비성](completeness.md)을 한 자리에 모은 구조다.
+Hilbert 공간은 내적이 주어져 있고, 그 내적이 만드는 거리에 대해 완비인 벡터 공간이다. 즉 [내적 공간](inner-product-spaces.md)과 [완비성](completeness.md)을 한 자리에 모은 구조다.
 
 이 두 조건만으로 유한차원 유클리드 공간의 기하가 거의 전부 무한차원으로 옮겨온다. 직교, 정사영, 피타고라스 정리, 좌표(정규직교기저)와 좌표의 길이 보존(Parseval)이 모두 성립한다. 무한차원 [벡터 공간](vector-spaces.md) 가운데 이런 대접을 받는 것은 사실상 Hilbert 공간뿐이며, 그래서 [Fourier 급수](fourier-series.md), 편미분방정식, 양자역학, 통계적 추정이 모두 같은 언어로 서술된다.
 
@@ -193,7 +193,7 @@ $L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개�
 ## 선수지식
 
 - [내적 공간](inner-product-spaces.md)
-- [Cauchy 수열과 완비성](completeness.md)
+- [완비성](completeness.md)
 - [함수해석 개관](functional-analysis-overview.md)
 
 ## 더 알아보기

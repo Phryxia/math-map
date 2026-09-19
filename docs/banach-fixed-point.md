@@ -116,7 +116,7 @@ $$
 
 ## 선수지식
 
-- [Cauchy 수열과 완비성](completeness.md)
+- [완비성](completeness.md)
 - [연속함수](continuity.md)
 
 ## 더 알아보기

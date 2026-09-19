@@ -18,7 +18,7 @@ graph TD
   FAO --> BS["Banach 공간"]
   VS["벡터 공간"] --> IPS["내적 공간"]
   MS["거리 공간"] --> IPS
-  COMP["Cauchy 수열과 완비성"] --> HS
+  COMP["완비성"] --> HS
   IPS --> HS
   COMP --> BS
   VS --> BS

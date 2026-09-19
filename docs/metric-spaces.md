@@ -125,7 +125,7 @@ Cauchy 수열이 모두 수렴하면 [완비](completeness.md)라 한다. 완비
 ## 더 알아보기
 
 - [연속함수](continuity.md)
-- [Cauchy 수열과 완비성](completeness.md)
+- [완비성](completeness.md)
 - [볼록성](convexity.md)
 - [내적 공간](inner-product-spaces.md)
 
