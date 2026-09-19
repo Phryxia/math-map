@@ -1,39 +1,15 @@
 {
   "version": 1,
-  "savedAt": "2026-09-19T13:02:48.346Z",
-  "nextSeq": 658,
+  "savedAt": "2026-09-19T17:02:33.420Z",
+  "nextSeq": 672,
   "items": [
     {
-      "id": "f66a8955",
-      "title": "두문자어 첫 등장 풀이 전수 점검 (7차)",
+      "id": "87a5de8d",
+      "title": "두문자어 첫 등장 풀이 전수 점검 (20차)",
       "priority": 13,
-      "note": "2026-09-19 회차 6차에 검사기를 2판으로 고쳐(여러 줄 $$ 블록 상태 추적, 링크 주소 제거 후 약어 근처 120자에서 괄호 풀네임 탐색) 보고가 339 에서 253 건이 되었다. 처리: ZF(banach-spaces, boolean-algebras), ZFC(boolean-algebras, cardinality, category), GRH(dirichlet-l-functions), FFT, MLE, GCD, PID. 남은 보고에서 실제 위반으로 보이는 것: dynamic-programming DAG 7줄과 FPTAS 69줄, eisenstein-ideal BSD 155줄, error-correcting-codes MDS 51줄, exact-wkb DDP 97줄과 BPS 147줄, expander-graphs PCP 20줄과 LPS 90줄과 LDPC 114줄, exponential-families UMVU 148줄과 IRLS 186줄과 EM 188줄, fermat-euler-theorem RSA 5줄과 CRT 127줄, feynman-kac BSDE 150줄, first-order-logic PA 103줄과 SMT 111줄, finite-fields AES 115줄. 판정이 갈리는 것: 프로토콜 이름(TLS SSH RFC AES JPEG RAID)과 QR 분해의 QR 은 고유명사로 굳었다고 볼 여지가 있다. 한 회차에 기준을 정하고 일괄 적용하는 편이 낫다",
-      "createdAt": "2026-09-19T12:55:05.928Z",
-      "seq": 654
-    },
-    {
-      "id": "a462beed",
-      "title": "나열형 mermaid 훑기 (16차)",
-      "priority": 13,
-      "note": "2026-09-19 회차 15차 결과. 지운 것: godel-incompleteness(부호화에서 제2정리까지의 증명 단계). 남긴 것: heegner-points, modular-tensor-categories, rings(근거는 커밋 메시지에). 12차 검사기 출력 36 개 가운데 남은 미판정은 점수 4 묶음 열넷이다: counting-principles euclidean-algorithm finite-simple-groups fontaine-mazur geometric-satake greenberg-conjecture hyperbolic-3-manifolds kernel-pca langlands-program modules monstrous-moonshine mv-cycles sea-algorithm union-find weyl-character-formula. 열다섯 회차를 돌아보면 지운 것의 공통 형태는 둘뿐이다: (1) 직관 절 끝에서 뒤따르는 H2 제목을 화살표로 다시 나열한 요약 그림 (2) 'A 에서 B 가 따라 나온다' 를 이은 증명 단계 사슬. 남긴 것은 가환도, 포함 계층(Hasse), 데이터 흐름, 한 대상에서 여러 이론으로 뻗는 대응이다. 16차부터는 이 두 형태에 해당하는지만 보고 빠르게 판정해도 된다",
-      "createdAt": "2026-09-19T12:55:44.982Z",
-      "seq": 655
-    },
-    {
-      "id": "e1be7ffb",
-      "title": "두문자어 첫 등장 풀이 전수 점검 (8차)",
-      "priority": 13,
-      "note": "2026-09-19 회차 7차에 보고를 253 에서 192 건으로 줄였다(검사기 2판 기준). 이번 회차에 정한 기준 둘을 다음 차수에도 쓴다. (1) 프로토콜과 표준 이름(AES, TLS, RSA)도 두문자어이므로 푼다. (2) 사람 이름 이니셜도 저장소가 BSD 를 푼 전례가 있으므로 푼다(KKT, MOV, AKS, NBG 를 같은 기준으로 풀었다). 예외는 본문이 이미 이름을 풀어 쓴 경우(intuitionism 의 BHK)와 수식 안 \\mathrm 기호뿐이다. 남은 192 건에서 눈에 띄는 것: lattices BKZ CVP, laplace-method BIC, lie-groups BCH, link-cut-trees LCA, marchenko-pastur BBP, source-coding ANS, sphere-packing CVP, supersingular-isogeny-graphs CGL CSIDH, tensor-products PID, tracy-widom KPZ, umbral-moonshine ADE, niemeier-lattices ADE, volume-conjecture AJ, weil-representation ABCD, witten-asymptotics LMO, graph-isomorphism GNN, hecke-operators LMFDB. LMFDB 는 데이터베이스 이름이므로 처음 나오는 문서에서 L-functions and Modular Forms Database 로 푼다",
-      "createdAt": "2026-09-19T12:59:58.836Z",
-      "seq": 656
-    },
-    {
-      "id": "d3c1180d",
-      "title": "두문자어 첫 등장 풀이 전수 점검 (9차)",
-      "priority": 13,
-      "note": "2026-09-19 회차 8차까지 진행해 검사기 2판 보고가 339 -> 253 -> 192 -> 152 건으로 줄었다. 이번 회차에 푼 것 전부: VAE ELBO SDE ODE DAG DFS LP LDPC WKB PAC VC ECPP SIDH ZF ZFC GRH FFT MLE GCD PID RSA CRT PA AES PCP MDS EM BSDE SMT BSD KKT SDP AKS UFD CNF SVD LWE SVP MOV SAT ETCS PDE UI NBG WZW CVP BCH LCA GNN ANS LMFDB KPZ BIC CGL BBP PSPACE ED. 기준 둘을 유지한다: 프로토콜·표준 이름도 푼다, 사람 이름 이니셜도 푼다(본문이 이미 이름을 풀어 쓴 BHK, LMO 는 예외). 남은 152 건의 성격: 수식 기호 오검출(GF FG UV XW LG RT AJ), 데이터베이스와 고유명사(EDSAC ISBN CRC RAID JPEG GPU IBM SMILES), 아직 안 본 실제 위반(BKZ SIS TFHE DGHV BGV BFV CKKS DDH CDH BLS SNARK STARK IRLS UMVU AIC MAP GLS ANOVA QQ ADE ABCD VQ JKO EVI HWI TSP APX PTAS FPTAS CLIQUE VERTEX CUT). 9차는 post-quantum-cryptography 와 pairing-based-cryptography 와 linear-regression 처럼 한 문서에 여럿 몰린 곳부터 하면 효율이 좋다",
-      "createdAt": "2026-09-19T13:02:30.023Z",
-      "seq": 657
+      "note": "2026-09-19 회차 19차에 SIDH KKT CW LPS IRLS WL QR 을 열세 자리에서 풀어 보고가 108 건, 약어 96 종이 되었다. 회차 6차의 339 건에서 3분의 1 아래로 내려왔고 이제 약어 하나에 자리 하나뿐인 것이 대부분이다. 20차부터는 약어별 묶음이 사라지므로 검사기 출력(스크래치패드 acronym.mjs 는 문서별, by-acronym.mjs 는 약어별)을 위에서부터 차례로 처리하면 된다. 지금까지 쌓인 판정 기준을 한자리에 모은다. (1) 프로토콜·표준·기관 이름은 푼다(TLS SSH RFC NIST AES). (2) 사람 이름 이니셜은 푼다(KKT MOV BSD HOMFLY LPS BGG). (3) 복잡도 클래스(P NP PSPACE)는 풀지 않는다. (4) 회사·저널·매체 규격 고유명사는 풀지 않는다(IBM SIAM QR 코드 CD DVD RAID JPEG MP3 GPU). (5) 수식 안 \\mathrm 기호와 mermaid 노드 이름과 기호 첨자는 세지 않는다. (6) 기호에 붙은 번호(R1 E8 K3)와 로마 숫자(II III)는 두문자어가 아니다. (7) 헤딩과 '# 연관 문서' 절과 각주 정의 줄은 푸는 자리가 아니다. (8) 같은 줄이 이미 풀네임을 풀어 쓴 경우는 예외다. (9) 한국어 용어가 있으면 그것을 앞에 두고 원어와 약어를 괄호에 함께 넣고, 없으면 약어를 앞에 두고 풀네임을 괄호에 넣는다. (10) 같은 약어라도 문서마다 뜻이 다를 수 있으므로 줄마다 확인한다(KL LLL RT)",
+      "createdAt": "2026-09-19T17:02:08.021Z",
+      "seq": 671
     },
     {
       "id": "1c4e03aa",
@@ -290,6 +266,14 @@
       "note": "2026-09-19 회차에 '다리·어깨' 류를 전수로 훑어 15 곳을 고쳤다(커밋 참조). 검사법: grep -noE '.{0,25}(다리|어깨|올라타|발판|건너뛰|넘나드).{0,25}' docs/*.md 로 뽑고 사다리·다리꼴·가장자리·머리·허리·기다리·Brown 다리·그래프의 다리를 거른다. 2차에 볼 목록 밖 후보어: 통로, 관문, 창, 거울, 그늘, 온상, 토대, 바탕돌, 밑거름, 실마리, 단서, 물꼬, 수문, 관절, 매듭(용어 제외), 줄기, 갈래(개관의 절 이름이라 예외), 흐름(용어), 파고들다, 헤집다, 빗장, 자물쇠. 이번에 배운 것: 비유를 다른 비유로 바꾸기 쉽다. schur-polynomials 의 '잇는 다리' 를 '잇는 통로' 로 고쳤다가 다시 '이었다' 로 고쳤다. 고친 뒤 같은 grep 을 다시 돌려야 한다",
       "createdAt": "2026-09-19T12:53:33.401Z",
       "seq": 653
+    },
+    {
+      "id": "df0807a7",
+      "title": "나열형 mermaid 훑기 (19차)",
+      "priority": 12,
+      "note": "2026-09-19 회차 18차에 검사기 3판(스크래치패드 mermaid-echo.mjs, 셈법은 18차 항목 노트에 적었다) 보고 25 건을 전부 판정해 목록을 비웠다. 지운 것 둘: poincare-hopf(지표의 합과 Gauss 곡률 적분이 둘 다 χ(M) 이라는 문장 하나), boolean-algebras(직관 절 끝에서 유한 구조 정리와 Stone 표현 정리를 노드로 되풀이). 남긴 것 스물셋: fft rings np-completeness brauer-groups exact-wkb fundamental-lemma heyting-algebras mass-formula modular-tensor-categories p-adic-numbers resurgence sea-algorithm bayesian-inference bernoulli-numbers finite-simple-groups langlands-program mathieu-groups modules monstrous-moonshine mv-cycles union-find diffusion-models eisenstein-ideal. 검사기 3판의 명중률은 25 건 중 2 건이라 낮다. 원인은 '메아리' 점수가 H2 제목과 노드 라벨의 부분 문자열 일치로 생기는데, 한 대상에서 뻗는 대응 그림도 그 대상의 후속 정리를 H2 로 다루므로 똑같이 걸린다는 것이다. 19차에는 메아리 대신 다른 신호를 쓴다. 후보: (a) 노드 라벨에 등호나 수식이 없고 순수 한국어 명사구뿐인 그림(구성이 아니라 요약일 확률이 높다), (b) 화살표에 라벨이 하나도 없는 그림(구성 방법이 그림에 없으면 문장으로 충분하다), (c) 간선 수가 노드 수보다 적거나 같은 그림(분기도 합류도 없는 일직선 사슬). (c) 가 15차 기준의 증명 단계 사슬을 가장 곧게 잡을 것으로 보인다",
+      "createdAt": "2026-09-19T16:47:21.680Z",
+      "seq": 662
     },
     {
       "id": "1c511c2c",
