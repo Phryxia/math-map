@@ -4,7 +4,7 @@
 
 [Tate 의 논문](tate-thesis.md)은 Hecke 의 $L$ 함수를 아델 위의 적분 하나로 다시 썼다. 해석적 접속과 함수방정식이 Fourier 해석과 Poisson 합공식에서 나오고, 자리마다의 국소 인자와 근 수가 국소 적분에서 읽힌다.
 
-그 논문은 $\mathrm{GL}\_1$ 을 다루고, Godement 와 Jacquet 이 1972 년에 같은 일을 $\mathrm{GL}\_n$ 에서 했다.
+그 논문은 $\mathrm{GL}\_1$ 을 다루고, Godement 와 Jacquet 이 1972 년에 같은 일을 $\mathrm{GL}\_n$ 에서 했다[^1].
 
 $$
 Z(s,\Phi,\varphi)=\int_{\mathrm{GL}\_n(\mathbb A)}\Phi(g)\thinspace\varphi(g)\thinspace

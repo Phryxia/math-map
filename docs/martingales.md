@@ -130,7 +130,7 @@ $$
 
 *증명 스케치.* 수렴하지 않는 경로는 어떤 유리수 쌍 $a \lt b$ 에 대해 $U_\infty[a,b] = \infty$ 를 만족한다. upcrossing 부등식과 단조수렴으로 $E[U_\infty[a,b]] \lt\infty$ 이므로 각 쌍마다 그 사건은 영집합이고, 유리수 쌍이 가산이므로 합집합도 영집합이다. Fatou 보조정리로 극한의 적분가능성이 나온다.
 
-거의 확실한 수렴이 $L^1$ 수렴을 함의하지는 않는다. 반례로 $P(\xi_k = 2) = P(\xi_k = 0) = 1/2$ 인 곱 martingale $X_n = \prod \xi_k$ 는 $X_n \to 0$ 이지만 $E[X_n] = 1$ 이다. $L^1$ 수렴과 $X_n = E[X_\infty \mid \mathcal F_n]$ 형태의 표현(닫힌 martingale)을 얻으려면 [균등적분성](uniform-integrability.md)이 필요하며, 이는 Doob martingale 이 언제나 균등적분 가능하다는 사실과 짝을 이룬다. $p \gt 1$ 에서는 $L^p$ 유계성만으로 $L^p$ 수렴이 따르는데, 최대부등식이 지배함수를 제공하기 때문이다[^1].
+거의 확실한 수렴이 $L^1$ 수렴을 함의하지는 않는다. 반례로 $P(\xi_k = 2) = P(\xi_k = 0) = 1/2$ 인 곱 martingale $X_n = \prod \xi_k$ 는 $X_n \to 0$ 이지만 $E[X_n] = 1$ 이다. $L^1$ 수렴과 $X_n = E[X_\infty \mid \mathcal F_n]$ 형태의 표현(닫힌 martingale)을 얻으려면 [균등적분성](uniform-integrability.md)이 필요하며, 이는 Doob martingale 이 언제나 균등적분 가능하다는 사실과 짝을 이룬다. $p \gt 1$ 에서는 $L^p$ 유계성만으로 $L^p$ 수렴이 따르는데, 최대부등식이 지배함수를 제공하기 때문이다.
 
 # 활용
 
