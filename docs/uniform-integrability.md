@@ -170,7 +170,7 @@ $$
 
 ## 함수해석에서의 위치
 
-UI 는 $L^1$ 이 재귀적(reflexive)이지 않아 유계 집합이 약콤팩트하지 않다는 결함을 메우는 조건이다. 편미분방정식의 변분해법, 최적수송, 확률측도열의 극한 구성에서 극한이 여전히 밀도를 갖는다는 것을 보장한다.[^1][^2]
+UI 는 $L^1$ 이 [반사적](banach-spaces.md)이지 않아 유계 집합이 약콤팩트하지 않다는 결함을 메우는 조건이다. 편미분방정식의 변분해법, 최적수송, 확률측도열의 극한 구성에서 극한이 여전히 밀도를 갖는다는 것을 보장한다.[^1][^2]
 
 [^1]: David Williams, *Probability with Martingales*, Cambridge University Press, 13장 (Uniform Integrability), https://www.cambridge.org/core/books/probability-with-martingales/B4CFCE0D08930FB46C6E93E775503863
 [^2]: Gerald B. Folland, *Real Analysis: Modern Techniques and Their Applications*, Wiley, 6장 연습문제 (Vitali convergence theorem), https://www.wiley.com/en-us/Real+Analysis%3A+Modern+Techniques+and+Their+Applications%2C+2nd+Edition-p-9780471317166
