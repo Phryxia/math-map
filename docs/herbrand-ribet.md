@@ -155,7 +155,7 @@ $k$ 가 짝수이므로 $1-k$ 는 홀수이고, 이 정리는 류군의 홀수 �
 
 $k=p-1$ 이면 $\omega^{k-1}$ 이 자명해져 표현이 $\begin{pmatrix}1&\ast\cr 0&1\end{pmatrix}$ 가 되고 위 논법이 무너진다. von Staudt–Clausen 에 의해 $(p-1)\mid k$ 이면 $B_k$ 의 분모가 $p$ 를 포함하므로 $p\mid B_k$ 의 뜻도 달라진다. 가정 $2\le k\le p-3$ 이 [Bernoulli 수](bernoulli-numbers.md)의 $p$ 진 성질을 반영한다.
 
-## Mazur–Wiles 로 가는 길
+## Mazur–Wiles 정리로의 강화
 
 Ribet 의 논법은 원소 하나를 만든다. 주추측은 성분의 크기까지 요구하므로 Mazur–Wiles 는 다음을 바꾼다.
 
