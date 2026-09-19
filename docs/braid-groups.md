@@ -170,6 +170,7 @@ $B_n$ 이 구멍 뚫린 원판의 사상류군이라는 사실이 [곡면의 분
 
 ## 선수지식
 
+- [군의 표시](group-presentations.md)
 - [매듭 불변량과 Jones 다항식](knot-invariants.md)
 
 ## 더 알아보기
