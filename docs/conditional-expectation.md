@@ -2,39 +2,21 @@
 
 # 개요
 
-조건부 기댓값은 "부분적인 정보만 주어졌을 때 확률변수의 최선의 예측값"을 수학적으로 정식화한 것이다. 초등적인 확률론에서는 사건 $B$ 에 대해
+조건부 기댓값 $E[X\mid\mathcal G]$ 는 부분 $\sigma$ 대수 $\mathcal G$ 에 담긴 정보만으로 $X$ 를 예측한 확률변수다. 정의는 두 조건이다. $\mathcal G$ 가측이고, $\mathcal G$ 의 모든 사건 위에서 $X$ 와 적분값이 같다. 존재와 거의 확실한 유일성은 [Radon–Nikodym 정리](radon-nikodym.md)에서 나온다.
 
-$$
-E[X \mid B] = \frac{E[X \mathbf{1}\_B]}{P(B)}, \qquad P(B) \gt 0
-$$
-
-로 정의하지만, 이 정의는 $P(B) = 0$ 인 사건에 대해 무력하고, "관측할 정보 전체"를 하나의 대상으로 다루지 못한다. 현대적인 정의는 조건을 거는 대상을 사건이 아니라 **$\sigma$ -대수** $\mathcal G$ 로 잡고, 조건부 기댓값을 $\mathcal G$ 가측 확률변수로 정의한다.
-
-핵심은 두 줄로 요약된다. 조건부 기댓값 $E[X \mid \mathcal G]$ 는 (1) $\mathcal G$ 가측이며 (2) $\mathcal G$ 안의 모든 사건 위에서 $X$ 와 같은 적분값을 갖는 확률변수다. 존재성과 거의 확실한 유일성은 [Radon–Nikodym 정리](radon-nikodym.md)가 보장한다. 이 정의가 있어야 [Markov 연쇄](markov-chains.md)의 연속시간·일반상태 버전, [Martingale](martingales.md), 그리고 [상측도와 확률분포](pushforward-measure.md) 위의 조건부 분포 이론이 성립한다.
+사건 $B$ 에 대한 초등 조건부 기댓값 $E[X\mid B]=E[X\mathbf 1_B]/P(B)$ 는 $P(B)=0$ 이면 정의되지 않는다. $\sigma$ 대수로 조건을 거는 정의는 이 경우를 포함한다. [마팅게일](martingales.md)과 일반 상태공간의 [Markov 연쇄](markov-chains.md), [상측도](pushforward-measure.md) 위의 조건부 분포를 이 정의로 세운다.
 
 # 직관
 
-정보를 $\sigma$ -대수로 부호화한다. 확률공간 $(\Omega, \mathcal F, P)$ 에서 부분 $\sigma$ -대수 $\mathcal G \subseteq \mathcal F$ 는 "지금 알 수 있는 질문들의 모음"이다. $\mathcal G$ 에 속한 사건 $A$ 에 대해서는 $\omega$ 가 $A$ 에 들어 있는지 여부를 관측으로 판정할 수 있고, $\mathcal G$ 에 없는 사건은 판정할 수 없다.
+## 조각 위의 평균
 
-가장 투명한 경우는 $\mathcal G$ 가 가산 분할 $\Omega = B_1 \sqcup B_2 \sqcup \dots$ 로 생성될 때다. 이때 관측이 알려주는 것은 "지금 어느 조각 안에 있는가" 뿐이므로, 예측값은 각 조각 위에서 상수여야 하고 그 상수는 조각 위의 평균이어야 한다.
+주사위 두 개를 던져 합 $S$ 를 본다. 첫 눈 $i$ 만 알려 주었을 때 $S$ 의 예측값은, 첫 눈이 $i$ 인 순서쌍 여섯 개 위에서 $S$ 를 평균한 $i+3.5$ 다. 사건 $\lbrace i=1\rbrace,\dots,\lbrace i=6\rbrace$ 이 표본공간을 여섯 조각으로 나누고, 예측값은 조각마다 상수이며 그 상수는 조각 위의 평균이다.
 
-$$
-E\lbrack X \mid \mathcal{G}\rbrack(\omega) \thickspace=\thickspace \sum_{k} \frac{E[X \mathbf{1}\_{B_k}]}{P(B_k)} \thinspace \mathbf{1}\_{B_k}(\omega).
-$$
+조각마다 상수라는 것은 이 조각들이 생성하는 $\sigma$ 대수 $\mathcal G$ 에 대해 가측이라는 것이고, 조각 위의 평균이라는 것은 $\mathcal G$ 의 사건마다 $X$ 와 적분이 같다는 것이다. 일반적인 $\mathcal G$ 에는 조각이 없지만 이 두 조건은 그대로 쓸 수 있어 정의로 삼는다.
 
-"조각 위에서 상수"가 곧 $\mathcal G$ 가측성이고, "조각 위의 평균"이 곧 적분 일치 조건이다. 일반적인 $\mathcal G$ 에는 분할이 없지만 두 조건은 그대로 살아남는다. 그래서 정의는 공식이 아니라 **특성화**의 형태를 띤다.
+## 정사영
 
-두 번째 직관은 기하다. 제곱적분 가능한 확률변수들의 공간은 [내적 공간](inner-product-spaces.md)이고 사실 완비, 즉 [Hilbert 공간](hilbert-spaces.md)이다. $\mathcal G$ 가측 원소들은 닫힌 부분공간을 이루고, $E[X \mid \mathcal G]$ 는 $X$ 를 그 부분공간 위로 내린 **정사영**이다. 오차 $X - E[X \mid \mathcal G]$ 가 모든 $\mathcal G$ 가측 변수와 직교한다는 사실이 적분 일치 조건과 같은 말이다.
-
-```mermaid
-graph LR
-  X["X (F-가측)"] -->|"정사영 / 평균화"| CE["E[X | G] (G-가측)"]
-  CE -->|"H 로 다시 평균화"| CE2["E[X | H], H ⊆ G"]
-  X -->|"직접 평균화"| CE2
-  CE -->|"오차"| ORT["G-가측 변수 전체와 직교"]
-```
-
-세 번째 직관은 예측이다. 제곱오차를 최소화하는 $\mathcal G$ 가측 예측기가 정확히 $E[X \mid \mathcal G]$ 이다. [최대가능도 추정](maximum-likelihood.md)이나 [선형회귀](linear-regression.md)에서 "회귀함수"라고 부르는 대상이 바로 이것이다.
+제곱적분 가능한 확률변수의 공간은 [Hilbert 공간](hilbert-spaces.md)이고 $\mathcal G$ 가측인 것들은 닫힌 부분공간이다. $E[X\mid\mathcal G]$ 는 $X$ 를 이 부분공간에 내린 정사영이다. 오차 $X-E[X\mid\mathcal G]$ 가 모든 $\mathcal G$ 가측 변수와 직교한다는 것이 적분 일치 조건과 같은 말이다. 그래서 $E[X\mid\mathcal G]$ 는 제곱오차를 가장 작게 만드는 $\mathcal G$ 가측 예측이고, [선형회귀](linear-regression.md)의 회귀함수가 이것이다.
 
 # 정의
 

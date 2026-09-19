@@ -100,7 +100,7 @@ $L^1(\mu)$ 는 $\lVert f \rVert_1 = \int \lvert f \rvert\thinspace d\mu$ 로 완
 
 ## 밀도와 측도의 비교
 
-[Radon–Nikodym 정리](radon-nikodym.md)는 한 측도가 다른 측도에 절대연속이면 둘 사이의 밀도가 있다고 말한다. 그 밀도가 확률에서 확률밀도함수, 통계에서 [우도비](change-of-measure.md), 정보이론에서 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)의 피적분함수다.
+[Radon–Nikodym 정리](radon-nikodym.md)에 따르면 한 측도가 다른 측도에 절대연속이면 둘 사이의 밀도가 있다. 그 밀도가 확률에서 확률밀도함수, 통계에서 [우도비](change-of-measure.md), 정보이론에서 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)의 피적분함수다.
 
 ## 교환의 조건
 
