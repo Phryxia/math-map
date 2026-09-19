@@ -150,7 +150,7 @@ $\pi$ 와 $\pi'$ 가 $\mathrm{GL}\_n$ 의 첨점 자기동형 표현이고 거�
 
 - **적분 표현의 기반.** Rankin–Selberg 적분, Godement–Jacquet 의 $\mathrm{GL}\_n\times\mathrm{GL}\_1$ 꼬임, Bump–Friedberg 적분이 Whittaker 전개에서 출발한다. 전역 적분을 국소 적분의 곱으로 바꾸는 단계마다 유일성을 쓴다.
 - **국소 Langlands 대응의 정규화.** 국소 $L$ 인자와 $\varepsilon$ 인자는 국소 적분들이 생성하는 아이디얼로 정의되고 그 적분의 재료가 Whittaker 함수다. 정의는 일반적 표현에 대해 먼저 세우고, 비일반 표현의 $L$ 인자는 거기서 유도한다.
-- **계산 정수론.** Maass 형식과 $\mathrm{GL}\_3$ 자기동형 형식의 수치 계산은 Whittaker 함수의 전개로 한다. 아르키메데스 부분(Bessel 함수의 일반화)을 계산하고 나머지 자리는 Casselman–Shalika 로 Satake 매개변수에서 얻으며, LMFDB 의 $\mathrm{GL}\_3$ 자료가 이 방식으로 만들어진다.
+- **계산 정수론.** Maass 형식과 $\mathrm{GL}\_3$ 자기동형 형식의 수치 계산은 Whittaker 함수의 전개로 한다. 아르키메데스 부분(Bessel 함수의 일반화)을 계산하고 나머지 자리는 Casselman–Shalika 로 Satake 매개변수에서 얻으며, LMFDB(L-functions and modular forms database) 의 $\mathrm{GL}\_3$ 자료가 이 방식으로 만들어진다.
 - **다른 모형.** 부분군 $H$ 와 지표 $\chi$ 에 대해 $\dim\mathrm{Hom}\_H(\pi,\chi)\le1$ 이 성립하면 그에 맞는 적분 표현과 주기가 생긴다. Gan–Gross–Prasad 추측은 이런 중복도 1 현상을 고전군 전반에서 예측하고 중복도가 1 이 되는 조건을 $L$ 매개변수로 기술한다.
 
 [^1]: I. M. Gelfand, D. A. Kazhdan, *Representations of the group $\mathrm{GL}(n,K)$ where $K$ is a local field*, Lie Groups and Their Representations (1975). J. A. Shalika, *The multiplicity one theorem for* $\mathrm{GL}\_n$ (Ann. of Math. **100**, 1974), 171–193. Casselman–Shalika 공식은 W. Casselman, J. Shalika, *The unramified principal series of p-adic groups II*, Compositio Math. **41** (1980), 207–231. 유한군판 Gelfand–Graev 표현은 R. Carter, *Finite Groups of Lie Type* (1985) 8장.

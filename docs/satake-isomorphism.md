@@ -295,7 +295,7 @@ $\mathrm{Gr}\_G$ 의 $G(\mathcal O)$ 궤도가 $X_\ast(T)^+$ 로 매겨지고 �
 
 ## 계산
 
-LMFDB 의 자기동형 형식 표가 저장하는 것이 Satake 매개변수다. 각 자리의 켤레류만 있으면 $L$ 함수의 모든 Euler 인자, 모든 대칭 거듭제곱 $L$ 함수, 함수성 올림의 매개변수가 유한 계산으로 나온다.
+LMFDB(L-functions and modular forms database) 의 자기동형 형식 표가 저장하는 것이 Satake 매개변수다. 각 자리의 켤레류만 있으면 $L$ 함수의 모든 Euler 인자, 모든 대칭 거듭제곱 $L$ 함수, 함수성 올림의 매개변수가 유한 계산으로 나온다.
 
 [^1]: I. Satake, *Theory of spherical functions on reductive algebraic groups over p-adic fields*, Publ. Math. IHÉS **18** (1963), 5–69. 정리의 현대적 서술과 $\mathrm{GL}\_n$ 의 명시적 공식은 D. Bump, *Automorphic Forms and Representations* (1997) 4.6 절, 또는 W. Casselman 의 미출간 노트 *Introduction to the theory of admissible representations of p-adic reductive groups*. Macdonald 공식은 I. G. Macdonald, *Spherical functions on a group of p-adic type* (1971). 기하학적 판은 I. Mirković, K. Vilonen, *Geometric Langlands duality and representations of algebraic groups over commutative rings*, Ann. of Math. **166** (2007). 기본 보조정리는 Ngô Bảo Châu, *Le lemme fondamental pour les algèbres de Lie*, Publ. Math. IHÉS **111** (2010).
 [^2]: P. Sarnak, *Notes on the generalized Ramanujan conjectures*, Clay Mathematics Proceedings **4** (2005), 659–685. 어느 경우가 증명되었고 일반 경우가 어디까지 와 있는지 정리한다.

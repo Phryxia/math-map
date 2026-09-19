@@ -206,7 +206,7 @@ $p$ 가 $5$ 에서 $2^{61}-1$ 로 $18$ 자리 커지는 동안 필요한 가장 
 ## 쓰이는 자리
 
 - **곡선 선택.** NIST(National Institute of Standards and Technology) P-256, secp256k1 같은 표준 곡선의 위수를 이 계열 알고리즘으로 검증했다. 무작위 곡선을 뽑아 위수를 세고 소수이거나 작은 보조인자만 갖는지 확인한다.
-- **안전성 조건 확인.** $\char35{}E(\mathbb F_p)=p$ 인 **비정상(anomalous)** 곡선은 이산로그가 선형시간에 풀리고, $\char35{}E$ 가 $p^k-1$ 을 작은 $k$ 에서 나누면 MOV 공격으로 유한체 이산로그로 환원된다. 위수를 알아야 이 조건들을 검사할 수 있다.
+- **안전성 조건 확인.** $\char35{}E(\mathbb F_p)=p$ 인 **비정상(anomalous)** 곡선은 이산로그가 선형시간에 풀리고, $\char35{}E$ 가 $p^k-1$ 을 작은 $k$ 에서 나누면 MOV(Menezes–Okamoto–Vanstone) 공격으로 유한체 이산로그로 환원된다. 위수를 알아야 이 조건들을 검사할 수 있다.
 - **곡선 개수 세기.** 주어진 위수를 갖는 곡선을 찾거나(복소곱셈법의 역방향), 위수 분포를 실험적으로 조사하는 데 쓰인다.
 - **수치 실험.** 대량의 $a_p$ 표가 Sato–Tate 분포나 BSD(Birch–Swinnerton-Dyer) 추측의 수치 검증에 쓰이고, 큰 $p$ 영역의 표를 SEA 가 만든다.
 - **$\ell$ 진 표현의 계산.** $\varphi|\_{E[\ell]}$ 의 행렬이 [Galois 표현](galois-representations.md) $\rho_{E,\ell}$ 의 Frobenius 에서의 상이다. 상이 $\mathrm{GL}\_2(\mathbb F_\ell)$ 전체인지 판정하는 Serre 의 문제를 계산할 때 이 행렬을 쓴다.

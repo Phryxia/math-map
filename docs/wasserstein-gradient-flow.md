@@ -56,7 +56,7 @@ $$
 \partial_t\rho=\nabla\negthinspace\cdot\negthinspace\big(\rho\thinspace\nabla\log\rho\big)=\nabla\negthinspace\cdot\negthinspace\Big(\rho\thinspace\frac{\nabla\rho}{\rho}\Big)=\Delta\rho
 $$
 
-퍼텐셜 항 $\int V\rho$ 를 더하면 속도장에 $-\nabla V$ 가 붙어 Fokker–Planck 방정식이 되고, 이것이 SDE $dX_t=-\nabla V(X_t)dt+\sqrt2\thinspace dB_t$ 의 밀도 방정식이다.
+퍼텐셜 항 $\int V\rho$ 를 더하면 속도장에 $-\nabla V$ 가 붙어 Fokker–Planck 방정식이 되고, 이것이 확률미분방정식(stochastic differential equation, SDE) $dX_t=-\nabla V(X_t)dt+\sqrt2\thinspace dB_t$ 의 밀도 방정식이다.
 
 # 정의
 

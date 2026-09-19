@@ -40,7 +40,7 @@ $$
 
 ## Stieltjes 변환
 
-증명과 일반화는 Stieltjes 변환 $m(z) = \int (x-z)^{-1}d\mu(x)$ 로 한다. MP 분포의 변환은 이차방정식
+증명과 일반화는 Stieltjes 변환 $m(z) = \int (x-z)^{-1}d\mu(x)$ 로 한다. MP(Marchenko–Pastur) 분포의 변환은 이차방정식
 
 $$
 \gamma z\thinspace m(z)^2 + \bigl(z + \gamma - 1\bigr)m(z) + 1 = 0

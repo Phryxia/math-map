@@ -172,7 +172,7 @@ Ramanujan 의 mock theta 함수는 전부 무게 $1/2$ 이고 shadow 는 무게 
 
 - **[Umbral moonshine](umbral-moonshine.md).** K3 타원 종수를 $N=4$ 지표로 분해하면 짧은 지표 쪽 계수가 mock 모듈러 형식을 이룬다. 23 개 사례 각각에서 shadow 가 Niemeier 격자의 근계 theta 급수이며, 이 점이 괴물 달빛과의 차이다.
 - **분할수의 계수 합동.** rank 생성함수의 합동이 mock 모듈러성으로 설명된다. Dyson 의 rank 는 mock 을, crank 는 보통 Jacobi 형식을 준다.
-- **블랙홀 엔트로피.** $N=4$ 끈이론에서 단일중심 BPS 상태의 축퇴도가 mock Jacobi 형식의 계수로 나온다. 다중중심 상태를 빼는 조작이 $\mathrm{sgn}$ 을 넣는 자리다.
+- **블랙홀 엔트로피.** $N=4$ 끈이론에서 단일중심 BPS(Bogomolny–Prasad–Sommerfield) 상태의 축퇴도가 mock Jacobi 형식의 계수로 나온다. 다중중심 상태를 빼는 조작이 $\mathrm{sgn}$ 을 넣는 자리다.
 - **Gross–Zagier 와 높이.** Zagier 의 무게 $3/2$ Eisenstein 급수가 Heegner 점 높이 생성함수의 Eisenstein 부분으로 등장하고, 계급수가 거기서 기하적 의미를 얻는다.
 
 # 연관 문서

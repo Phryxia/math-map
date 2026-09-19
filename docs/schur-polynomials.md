@@ -113,7 +113,7 @@ $\mathrm{GL}\_n$ 의 표현론과 $S_n$ 의 표현론이 같은 대상 위에서
 
 ## Littlewood–Richardson 규칙
 
-두 Schur 다항식의 곱을 전개한 계수가 LR 수다.
+두 Schur 다항식의 곱을 전개한 계수가 LR(Littlewood–Richardson) 수다.
 
 $$
 s_\lambda s_\mu=\sum_\nu c^\nu_{\lambda\mu}s_\nu
@@ -170,7 +170,7 @@ Schur 다항식을 한 방향으로 변형한 것들이 각각 다른 이론을 
 | Hall–Littlewood | $t$ | $p$ 진 군의 구면함수, Satake 동형 |
 | Jack | $\alpha$ | 랜덤 행렬의 $\beta$ 앙상블 |
 | Macdonald | $q,t$ | 이중 아핀 Hecke 대수, $n!$ 정리 |
-| LLT, 비대칭 Macdonald | 여럿 | 아핀 결정 기저, 대각조화함수 |
+| LLT(Lascoux–Leclerc–Thibon), 비대칭 Macdonald | 여럿 | 아핀 결정 기저, 대각조화함수 |
 
 모두 $q,t$ 를 특수화하면 $s_\lambda$ 로 돌아오고, 위의 세 정의가 각각 대응물을 갖는다. Macdonald 다항식의 전개 계수가 음이 아닌 정수라는 추측(Macdonald 양성 추측)이 Haiman 의 Hilbert 스킴 기하로 증명된 것이 이 방향의 대표적 성과다.
 

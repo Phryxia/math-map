@@ -124,7 +124,7 @@ $$
 
 ## 적분가능성 판별
 
-새로운 비선형 방정식의 적분가능성은 $\mathbf{P}$ 성질 검사로 먼저 시험한다. 해를 Laurent 급수로 놓고 움직이는 특이점 주변의 전개가 자유 매개변수를 충분히 가지는지 보는 ARS 알고리즘이 표준이며, 편미분방정식에는 진행파 환원을 거쳐 적용한다. KdV 와 비선형 Schrödinger 방정식의 유사 환원이 Painlevé 방정식이 된다.
+새로운 비선형 방정식의 적분가능성은 $\mathbf{P}$ 성질 검사로 먼저 시험한다. 해를 Laurent 급수로 놓고 움직이는 특이점 주변의 전개가 자유 매개변수를 충분히 가지는지 보는 ARS(Ablowitz–Ramani–Segur) 알고리즘이 표준이며, 편미분방정식에는 진행파 환원을 거쳐 적용한다. KdV 와 비선형 Schrödinger 방정식의 유사 환원이 Painlevé 방정식이 된다.
 
 [^1]: Athanassios S. Fokas, Alexander R. Its, Andrei A. Kapaev, Victor Yu. Novokshenov, *Painlevé Transcendents: The Riemann–Hilbert Approach*, AMS (2006), 제1장(분류와 $\mathbf{P}$ 성질), 제4–5장(등모노드로미 변형과 $\mathrm{P}\_{\mathrm{II}}$ 의 연결 문제).
 

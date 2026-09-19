@@ -161,7 +161,7 @@ $$
 
 분모 $\sinh(k\ell_\gamma/2)$ 는 긴 측지선의 기여를 지수적으로 줄이고, 그런 측지선의 개수는 $e^L/L$ 로 지수적으로 는다. 두 지수가 상쇄되어 공식이 수렴하며, 이 균형이 고윳값 통계를 결정한다.
 
-혼돈계의 고윳값 간격은 랜덤 행렬 통계(GOE)를 따르리라 예상되지만 산술 곡면은 Poisson 통계를 보인다. 원인은 Hecke 대칭에서 오는 측지선 길이의 큰 중복도다. Riemann zeta 영점의 간격이 GUE 를 따른다는 Montgomery–Odlyzko 관측과 대비된다.
+혼돈계의 고윳값 간격은 랜덤 행렬 통계(GOE, Gaussian orthogonal ensemble)를 따르리라 예상되지만 산술 곡면은 Poisson 통계를 보인다. 원인은 Hecke 대칭에서 오는 측지선 길이의 큰 중복도다. Riemann zeta 영점의 간격이 GUE(Gaussian unitary ensemble)를 따른다는 Montgomery–Odlyzko 관측과 대비된다.
 
 [^1]: A. Selberg, *Harmonic analysis and discontinuous groups in weakly symmetric Riemannian spaces*, J. Indian Math. Soc. **20** (1956). 표준 서술은 H. Iwaniec, *Spectral Methods of Automorphic Forms* (2판) 10–11장. 일반화는 J. Arthur, *An introduction to the trace formula* (Clay Math. Proc. 4, 2005).
 [^2]: A. Selberg, "On the estimation of Fourier coefficients of modular forms", Proceedings of Symposia in Pure Mathematics VIII (1965), 1–15. $\lambda\_1\ge\tfrac14$ 추측의 원 진술이다.

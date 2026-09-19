@@ -12,7 +12,7 @@ $$
 
 가 $S_2(\Gamma_0(N))$ 의 쌍대이고 Hecke 작용소가 이 격자 위에 정수 행렬로 작용한다.
 
-Manin 은 이 군의 완전한 유한 표현을 주었다. 생성원은 $\mathbb P^1(\mathbb Z/N)$ 의 원소로 매개되고 개수가 $[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]$ 이며 관계식은 두 줄이다. 컴퓨터가 $N$ 을 받아 $S_2(\Gamma_0(N))$ 의 Hecke 고유형식을 뽑아낼 수 있고, Cremona 의 타원곡선 표와 LMFDB 의 모듈러 형식 자료가 이 알고리즘에서 나왔다.
+Manin 은 이 군의 완전한 유한 표현을 주었다. 생성원은 $\mathbb P^1(\mathbb Z/N)$ 의 원소로 매개되고 개수가 $[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]$ 이며 관계식은 두 줄이다. 컴퓨터가 $N$ 을 받아 $S_2(\Gamma_0(N))$ 의 Hecke 고유형식을 뽑아낼 수 있고, Cremona 의 타원곡선 표와 LMFDB(L-functions and modular forms database) 의 모듈러 형식 자료가 이 알고리즘에서 나왔다.
 
 # 직관
 

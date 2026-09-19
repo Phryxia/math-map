@@ -106,7 +106,7 @@ $$
 W_1(\mu,\nu)=\sup_{\Vert f\Vert_{\mathrm{Lip}}\le1}\Big(\int f\thinspace d\mu-\int f\thinspace d\nu\Big)
 $$
 
-**Kantorovich–Rubinstein 공식**이다. WGAN 의 판별자가 1-Lipschitz 로 제한되는 것은 그 판별자가 쌍대해 $f$ 를 근사하기 때문이다.
+**Kantorovich–Rubinstein 공식**이다. WGAN(Wasserstein generative adversarial network)의 판별자가 1-Lipschitz 로 제한되는 것은 그 판별자가 쌍대해 $f$ 를 근사하기 때문이다.
 
 # 성질
 

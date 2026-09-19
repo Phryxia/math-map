@@ -124,13 +124,13 @@ $$
 \alpha=\omega^{\beta_1}c_1+\cdots+\omega^{\beta_k}c_k,\qquad \beta_1\gt\cdots\gt\beta_k\ge 0,\ 0\lt c_i\lt\omega
 $$
 
-지수와 서수가 같아지는 최소의 서수를 epsilon_0라 한다.
+지수와 서수가 같아지는 최소의 서수를 $\varepsilon_0$ 라 한다.
 
 $$
 \varepsilon_0=\min\lbrace\alpha : \omega^{\alpha}=\alpha\rbrace=\sup\lbrace\omega,\ \omega^{\omega},\ \omega^{\omega^{\omega}},\dots\rbrace
 $$
 
-epsilon_0는 가산 서수다. Gentzen은 Peano 산술의 무모순성이 epsilon_0까지의 초한귀납법으로 증명됨을 보였고, 이 서수가 PA의 증명론적 강도를 재는 척도가 된다([Gödel 불완전성 정리](godel-incompleteness.md) 참조).
+$\varepsilon_0$ 는 가산 서수다. Gentzen은 Peano 산술의 무모순성이 $\varepsilon_0$ 까지의 초한귀납법으로 증명됨을 보였고, 이 서수가 Peano 산술(PA)의 증명론적 강도를 재는 척도가 된다([Gödel 불완전성 정리](godel-incompleteness.md) 참조).
 
 ## 서수와 기수
 

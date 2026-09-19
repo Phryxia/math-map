@@ -120,7 +120,7 @@ Jacobian이나 Hessian을 계산하고 분해하는 비용이 큰 경우, 근사
 
 - 할선법(secant). 스칼라에서 도함수를 차분으로 대체한다. 수렴 차수는 황금비 약 1.618이다.
 - Broyden 법. 다변수에서 $\Delta$ 와 $F$ 의 변화만으로 Jacobian 근사를 계급 1 갱신한다.
-- BFGS 및 L-BFGS. 최적화에서 Hessian의 역을 대칭 양정부호로 유지하며 갱신한다. 큰 규모 문제의 표준이다.
+- BFGS(Broyden–Fletcher–Goldfarb–Shanno) 및 L-BFGS. 최적화에서 Hessian의 역을 대칭 양정부호로 유지하며 갱신한다. 큰 규모 문제의 표준이다.
 - Gauss–Newton과 Levenberg–Marquardt. 최소제곱 구조를 이용해 Hessian을 Jacobian의 곱으로 근사하고 감쇠항을 더한다. 제약이 붙은 문제에서는 [Lagrange 쌍대성과 KKT 조건](lagrange-duality.md)(Karush–Kuhn–Tucker)의 정류 조건에 Newton 법을 적용하는 것이 내부점 방법의 기본 절차다.
 
 # 활용
