@@ -206,7 +206,7 @@ $E(z,s)$ 의 유수가 상수라는 사실에서 기본영역의 부피가 계�
 ## 선수지식
 
 - [모듈러 형식](modular-forms.md)
-- [소수 정리와 Riemann zeta 함수](prime-number-theorem.md)
+- [Riemann zeta 함수](riemann-zeta.md)
 
 ## 더 알아보기
 

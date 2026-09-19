@@ -65,7 +65,8 @@ graph TD
 ## 다른 분야에서의 쓰임
 
 - [감마 함수와 Stirling 근사](gamma-function.md): 함수방정식을 거꾸로 읽어 얻는 유리형 확장과 점근전개
-- [소수 정리와 Riemann zeta 함수](prime-number-theorem.md): 직선 $\mathrm{Re}\thinspace s=1$ 위의 비영점성이 주는 소수 계수 함수의 점근
+- [Riemann zeta 함수](riemann-zeta.md): Euler 곱, 함수방정식, 임계띠의 영점
+- [소수 정리](prime-number-theorem.md): 직선 $\mathrm{Re}\thinspace s=1$ 위의 비영점성이 주는 소수 계수 함수의 점근
 - [Dirichlet 지표와 L 함수](dirichlet-l-functions.md): 등차수열의 소수 정리
 - [모듈러 형식](modular-forms.md): 상반평면 위의 변환 규칙을 가진 정칙함수
 - [Riemann–Roch 정리](riemann-roch.md): 곡면 위 유리형함수 공간의 차원

@@ -15,7 +15,7 @@ graph TD
   MA["정수의 합동"] --> EA["유클리드 알고리즘"] --> PR["소수와 유일분해"]
   MA --> FE["Fermat–Euler 정리"] --> QR["이차 상호법칙"]
   MA --> PA["p 진수"] --> LCFT["국소 유체론"]
-  PR --> PNT["소수 정리와 zeta"] --> DL["Dirichlet L 함수"]
+  PR --> RZ["Riemann zeta"] --> PNT["소수 정리"] --> DL["Dirichlet L 함수"]
   DD["Dedekind 정역"] --> ANF["대수적 수체"] --> CFT["유체론"]
   QR --> CFT --> LCFT
   QR --> DL
@@ -66,7 +66,7 @@ graph TD
 
 소수를 세려면 복소함수가 필요하다. $\zeta$ 에서 $L$ 함수로, 다시 Tate 의 아델적 재해석으로.
 
-- [소수 정리와 Riemann zeta 함수](prime-number-theorem.md) → [Dirichlet 지표와 L 함수](dirichlet-l-functions.md) → [Gauss 합과 국소 근 수](gauss-sums.md)
+- [Riemann zeta 함수](riemann-zeta.md) → [소수 정리](prime-number-theorem.md) → [Dirichlet 지표와 L 함수](dirichlet-l-functions.md) → [Gauss 합과 국소 근 수](gauss-sums.md)
 - [Poisson 합 공식](poisson-summation.md), [Mellin 변환과 Perron 공식](mellin-transform.md), [Euler–Maclaurin 공식](euler-maclaurin.md): 해석적 도구
 - [Bernoulli 수와 von Staudt–Clausen 정리](bernoulli-numbers.md) → [Stickelberger 원소와 Gauss 합](stickelberger.md)
 - [논문: Tate 의 박사논문](tate-thesis.md): $\zeta$ 함수의 아델적 증명

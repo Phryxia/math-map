@@ -203,7 +203,7 @@ $$
 ## 선수지식
 
 - [아델과 이델](adeles.md)
-- [소수 정리와 Riemann zeta 함수](prime-number-theorem.md)
+- [Riemann zeta 함수](riemann-zeta.md)
 
 ## 더 알아보기
 

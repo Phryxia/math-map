@@ -112,7 +112,7 @@ $$
 \zeta(1-n)=-\frac{B_n}{n}
 $$
 
-두 식은 함수방정식으로 서로 옮겨진다. 앞의 것이 [Riemann zeta](prime-number-theorem.md)의 짝수 값, 뒤의 것이 음의 정수 값이다. 홀수 $\zeta(3),\zeta(5),\dots$ 에 대응하는 초등적 표현은 없다.
+두 식은 함수방정식으로 서로 옮겨진다. 앞의 것이 [Riemann zeta](riemann-zeta.md)의 짝수 값, 뒤의 것이 음의 정수 값이다. 홀수 $\zeta(3),\zeta(5),\dots$ 에 대응하는 초등적 표현은 없다.
 
 # 성질
 
@@ -202,7 +202,7 @@ $B_n$ 은 Todd 류의 계수로 Hirzebruch–Riemann–Roch 공식에 들어가�
 ## 선수지식
 
 - [멱급수](power-series.md)
-- [소수 정리와 Riemann zeta 함수](prime-number-theorem.md)
+- [Riemann zeta 함수](riemann-zeta.md)
 
 ## 더 알아보기
 
