@@ -68,7 +68,7 @@ $$
 H(X\mid Y)\le H(X)
 $$
 
-차이 $I(X;Y)=H(X)-H(X\mid Y)$ 가 상호정보량이고, 연쇄법칙과 결합하면 $I(X;Y)=H(X)+H(Y)-H(X,Y)$ 가 된다. 이 값은 결합분포와 주변분포 곱 사이의 [KL divergence](kl-divergence.md)이므로 음이 아니다. 독립이면 $I=0$ 이고 $H(X,Y)=H(X)+H(Y)$ 다. $Y=X$ 이면 $H(X,Y)=H(X)$ 라 정보량이 두 배가 되지 않는다.
+차이 $I(X;Y)=H(X)-H(X\mid Y)$ 가 상호정보량이고, 연쇄법칙과 결합하면 $I(X;Y)=H(X)+H(Y)-H(X,Y)$ 가 된다. 이 값은 결합분포와 주변분포 곱 사이의 [KL divergence](kl-divergence.md)(Kullback–Leibler)이므로 음이 아니다. 독립이면 $I=0$ 이고 $H(X,Y)=H(X)+H(Y)$ 다. $Y=X$ 이면 $H(X,Y)=H(X)$ 라 정보량이 두 배가 되지 않는다.
 
 ## 처리 부등식
 

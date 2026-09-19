@@ -12,7 +12,7 @@ $$
 W_p(\mu,\nu)=\Big(\inf_{\pi\in\Pi(\mu,\nu)}\int|x-y|^p\thinspace d\pi\Big)^{1/p}
 $$
 
-이 거리는 [KL divergence](kl-divergence.md)이나 총변동과 달리 바닥 공간의 기하를 본다. 지지집합이 겹치지 않는 두 분포에도 유한한 값을 주고 얼마나 멀리 떨어져 있는지를 말한다. 생성모형이 최적 수송을 쓰는 근거가 이 성질이다.
+이 거리는 [KL divergence](kl-divergence.md)(Kullback–Leibler)이나 총변동과 달리 바닥 공간의 기하를 본다. 지지집합이 겹치지 않는 두 분포에도 유한한 값을 주고 얼마나 멀리 떨어져 있는지를 말한다. 생성모형이 최적 수송을 쓰는 근거가 이 성질이다.
 
 # 직관
 

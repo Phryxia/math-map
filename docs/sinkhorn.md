@@ -12,7 +12,7 @@ $$
 
 남은 일은 $u,v$ 를 주변분포에 맞추는 것이고, 두 조건을 번갈아 강제하는 것이 **Sinkhorn 반복**이다. 행렬-벡터 곱만 쓰므로 GPU 에서 빠르다.
 
-해가 대각 스케일링 꼴인 것은 볼록쌍대가 설명하고, 반복의 수렴은 [KL divergence](kl-divergence.md)에 대한 교대 사영과 Hilbert 사영 거리의 축약성이 설명한다. 작은 $\varepsilon$ 에서의 수치적 언더플로는 로그 영역 구현이, $\varepsilon\gt 0$ 이 남기는 편향은 Sinkhorn 발산이 고친다.
+해가 대각 스케일링 꼴인 것은 볼록쌍대가 설명하고, 반복의 수렴은 [KL divergence](kl-divergence.md)(Kullback–Leibler)에 대한 교대 사영과 Hilbert 사영 거리의 축약성이 설명한다. 작은 $\varepsilon$ 에서의 수치적 언더플로는 로그 영역 구현이, $\varepsilon\gt 0$ 이 남기는 편향은 Sinkhorn 발산이 고친다.
 
 # 직관
 

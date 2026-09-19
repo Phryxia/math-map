@@ -99,7 +99,7 @@ $$
 f(\mathbb{E}[X])\le\mathbb{E}[f(X)]
 $$
 
-이다. 선분 부등식을 두 점의 가중평균에서 확률측도의 평균으로 일반화한 것이다. 산술·기하평균 부등식, [KL divergence](kl-divergence.md)가 음이 아니라는 것, [Shannon entropy](entropy.md)가 균등분포에서 최대라는 것이 이 부등식에서 나온다.
+이다. 선분 부등식을 두 점의 가중평균에서 확률측도의 평균으로 일반화한 것이다. 산술·기하평균 부등식, [KL divergence](kl-divergence.md)(Kullback–Leibler)가 음이 아니라는 것, [Shannon entropy](entropy.md)가 균등분포에서 최대라는 것이 이 부등식에서 나온다.
 
 ## 분리초평면 정리
 

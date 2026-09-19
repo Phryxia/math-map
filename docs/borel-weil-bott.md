@@ -165,7 +165,7 @@ $$
 
 - **표현의 실현.** 분류된 $V_\lambda$ 를 함수공간으로 얻는다. 물리에서 스핀 $j$ 표현을 $\mathbb P^1$ 위 $\mathcal O(2j)$ 의 단면으로 보는 것이 $\mathrm{SU}(2)$ 판본이다.
 - **Schubert 계산.** $G/P$ 의 코호몰로지환에서 Schubert 류의 곱이 고전 열거기하의 문제를 푼다.
-- **Kazhdan–Lusztig 이론.** Schubert 다양체는 특이점을 가지며 그 국소 구조를 재는 것이 KL 다항식이다. 표수 $p$ 에서 Bott 정리가 깨지는 방식이 이 다항식으로 기술된다.
+- **Kazhdan–Lusztig 이론.** Schubert 다양체는 특이점을 가지며 그 국소 구조를 재는 것이 KL(Kazhdan–Lusztig) 다항식이다. 표수 $p$ 에서 Bott 정리가 깨지는 방식이 이 다항식으로 기술된다.
 - **기하학적 표현론.** 표현을 공간 위 층으로 실현하는 강령의 최초 사례이며, [기하학적 Satake](geometric-satake.md)와 Beilinson–Bernstein 국소화가 이 길을 잇는다.
 
 [^1]: R. Bott, *Homogeneous vector bundles*, Ann. of Math. 66 (1957). 소멸 정리와 이동 규칙의 원전.

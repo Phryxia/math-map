@@ -8,7 +8,7 @@ $$
 H(X)\le L^{\ast}\lt H(X)+1
 $$
 
-entropy 는 비트 단위로 측정되는 압축의 한계다. 하한은 Kraft 부등식과 KL divergence 의 비음수성에서 나오고, 상한은 길이를 $\lceil -\log p \rceil$ 로 잡는 부호가 달성한다. 기호를 묶어서 부호화하면 $+1$ 의 손해도 기호당 0 으로 줄어든다.
+entropy 는 비트 단위로 측정되는 압축의 한계다. 하한은 Kraft 부등식과 KL(Kullback–Leibler) divergence 의 비음수성에서 나오고, 상한은 길이를 $\lceil -\log p \rceil$ 로 잡는 부호가 달성한다. 기호를 묶어서 부호화하면 $+1$ 의 손해도 기호당 0 으로 줄어든다.
 
 # 직관
 

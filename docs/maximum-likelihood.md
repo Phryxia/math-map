@@ -90,7 +90,7 @@ $$
 =-H(\theta_0)-D_{\mathrm{KL}}\negthinspace\left(f_{\theta_0}\thinspace\Vert\thinspace f_\theta\right)
 $$
 
-Kullback–Leibler divergence는 음이 아니고 두 분포가 같을 때만 $0$ 이므로, 극한 목적함수는 $\theta_0$ 에서 유일하게 최대다. 여기에 최대점의 수렴을 보장하는 균등수렴 조건을 더하면 일치성이 나온다. MLE가 사실상 KL divergence를 최소화하고 있다는 이 해석은 [Shannon entropy](entropy.md)와 직접 연결된다.
+Kullback–Leibler divergence는 음이 아니고 두 분포가 같을 때만 $0$ 이므로, 극한 목적함수는 $\theta_0$ 에서 유일하게 최대다. 여기에 최대점의 수렴을 보장하는 균등수렴 조건을 더하면 일치성이 나온다. MLE가 사실상 KL(Kullback–Leibler) divergence를 최소화하고 있다는 이 해석은 [Shannon entropy](entropy.md)와 직접 연결된다.
 
 ## 점근정규성
 
