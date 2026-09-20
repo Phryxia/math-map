@@ -44,6 +44,7 @@ graph TD
 - [그래프 탐색](graph-search.md): DFS(depth-first search)와 BFS(breadth-first search), 탐색 트리와 간선 분류, 강연결성분
 - [DAG와 위상정렬](dag-topological.md): 방향 비순환 그래프와 선형 순서
 - [평면 그래프](planar-graphs.md): Euler 공식과 Kuratowski 정리
+- [Hamilton 순환](hamiltonian-cycles.md): Dirac 과 Ore 의 차수 조건, 닫힘, 판정의 NP-완전성
 
 ## 색칠과 매칭
 
