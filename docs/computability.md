@@ -95,11 +95,20 @@ $A$ 의 입력을 $B$ 의 입력으로 바꾸는 계산 가능한 함수 $f$ 가
 
 ## 더 알아보기
 
-- [P 대 NP 문제](p-np.md)
+### 결정 불가능성과 논리
+
 - [Rice 정리](rice-theorem.md)
-- [영역 이론과 Kleene 고정점 정리](domain-theory.md)
 - [Gödel 불완전성 정리](godel-incompleteness.md)
+- [역수학](reverse-mathematics.md)
+
+### 계산 모형
+
+- [영역 이론과 Kleene 고정점 정리](domain-theory.md)
 - [유한 오토마타와 정규언어](finite-automata.md)
 - [Lambda calculus](lambda-calculus.md)
+
+### 복잡도
+
+- [P 대 NP 문제](p-np.md)
 
 #computation #logic
