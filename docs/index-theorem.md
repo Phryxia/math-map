@@ -48,15 +48,12 @@ Gauss–Bonnet 은 de Rham 복합체에 대한 지표 정리다.
 
 ## 특수 사례
 
-```mermaid
-graph TD
-  AS["Atiyah–Singer<br/>ind(D) = ∫ ch(σ) Td"] --> GB["de Rham 복합체<br/>→ Gauss–Bonnet, χ"]
-  AS --> SIG["부호수 작용소<br/>→ Hirzebruch 부호수 정리"]
-  AS --> RR["Dolbeault 복합체<br/>→ Hirzebruch–Riemann–Roch"]
-  AS --> DIR["Dirac 작용소<br/>→ Â 종수, Rokhlin 정리"]
-  GB --> PH["Poincaré–Hopf<br/>벡터장의 지표 합"]
-  RR --> CRR["곡선의 Riemann–Roch<br/>ℓ(D) - ℓ(K-D) = deg D + 1 - g"]
-```
+| 타원 복합체와 작용소 | 나오는 정리 |
+| --- | --- |
+| de Rham 복합체 | Gauss–Bonnet 과 Euler 지표 $\chi$ , 벡터장 쪽으로 Poincaré–Hopf |
+| 부호수 작용소 | Hirzebruch 부호수 정리 |
+| Dolbeault 복합체 | Hirzebruch–Riemann–Roch, 곡선에서 $\ell(D)-\ell(K-D)=\deg D+1-g$ |
+| Dirac 작용소 | $\hat A$ 종수와 Rokhlin 정리 |
 
 같은 다양체 위에서 어떤 타원 복합체를 고르느냐에 따라 다른 고전 정리가 나오고, 지표 정리는 이들이 한 등식의 특수화임을 보인다.
 
