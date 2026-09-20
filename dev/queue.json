@@ -1,48 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-20T09:06:40.368Z",
-  "nextSeq": 724,
+  "savedAt": "2026-09-20T13:03:25.003Z",
+  "nextSeq": 747,
   "items": [
-    {
-      "id": "d564475d",
-      "title": "각주 정합 회귀 점검",
-      "priority": 12,
-      "note": "2026-09-19 회차 20차에 저장소 전체를 0 건으로 만들었다. 4절의 '각주는 본문에서 참조한 것만 정의한다' 를 어긴 문서가 29 개였고 전부 처리했다. 검사법: defs=re.findall(r'^\\[\\^(\\w+)\\]:', s, re.M), refs=re.findall(r'\\[\\^(\\w+)\\](?!:)', s) 로 defs-refs(참조 없는 정의)와 refs-defs(정의 없는 참조)를 본다. 처리한 29 개: khovanov-homology godement-jacquet bernoulli-numbers brauer-algebras eisenstein-ideal fargues-scholze finite-simple-groups herbrand-ribet kedlaya-algorithm kolyvagin-systems mass-formula poitou-tate ramanujan-graphs root-systems sea-algorithm borel-weil-bott lobachevsky-function galois-connections deuring-correspondence euler-systems reidemeister-torsion schubert-calculus casselman-shalika casson-invariant category-o chern-simons boolean-fourier pcp-theorem knot-invariants deformation-rings domain-theory. 자리를 고르는 요령: 원논문 각주는 그 개념이나 정리를 처음 진술하는 문장 끝에, 표준 참고서 각주는 정의 절의 주 정의 문장 끝에, 특정 결과의 각주는 그 결과를 말하는 목록 항목에 단다. 주의 셋. (1) 정리 진술이 '**정리.**' 로 시작하면 '**정리**[^1]**.**' 꼴로 굵은 글씨를 쪼갠다. (2) 목록 항목의 '**이름.**' 뒤에는 '**이름.**[^2]' 로 붙인다. (3) 각주를 콜론 바로 앞에 두면 안 된다. '**국소 조건**[^4]:' 은 검사기의 정의 줄 정규식에 걸려 참조로 세어지지 않고, 렌더링에서도 어색하다. 문장이나 항목 끝으로 옮긴다. 반대 방향(정의 없는 참조)은 렌더링에서 깨진 링크가 되어 독자에게 바로 보이므로 회차마다 refs-defs 를 먼저 본다. 이번에 martingales 133 줄의 그런 [^1] 을 지웠다. 출처를 알 수 없고 문장이 이미 이유를 말하고 있었다",
-      "createdAt": "2026-09-19T21:03:49.636Z",
-      "seq": 682
-    },
-    {
-      "id": "9b179bea",
-      "title": "산문 검증투 회귀 점검 (5차)",
-      "priority": 12,
-      "note": "2026-09-20 회차에 산문 쪽으로 옮겨 돌렸다. 검사법: grep -noE '확인해 보자|직접 확인|해 보면|확인할 수 있다|실제로 계산하면|와 일치한다|시뮬레이션' docs/*.md. 보고 52 건 가운데 고친 것은 넷이다. fundamental-lemma('실제로 해 보면'과 '문제의 전부다'), random-variables('~점이 중요하다'), confidence-intervals('교훈은 일반적이다' 조언투 두 문장 삭제), ideals-quotient-rings('확인할 수 있다 ... 때문이다' 를 인과 한 문장으로). 남은 것은 전부 오검출이다: (1) '직접 확인한다/확인된다' 가 증명의 한 단계를 가리키는 것(graph-coloring 의 delta<=2 경우, network-flow 의 흐름 보존, conditional-expectation 의 지시함수). (2) '유체 시뮬레이션', '희귀사건 시뮬레이션' 처럼 응용 분야 이름. (3) '와 일치한다' 33 건은 두 계산의 결과가 같다는 수학적 진술이라 검증 서술이 아니다. 다음 회차에는 '~인 셈이다', '여기서 나온다', '~의 출발점이다' 쪽 4 절 금지 표현을 훑을 것",
-      "createdAt": "2026-09-20T00:36:20.596Z",
-      "seq": 683
-    },
-    {
-      "id": "decb4915",
-      "title": "forcing 의 후속 간선과 보강",
-      "priority": 12,
-      "note": "2026-09-20 회차에 새로 썼다(부모 continuum-hypothesis, foundations-overview 집합론 갈래, 135줄). continuum-hypothesis 의 '## forcing' 정의 절을 축약해 옮기고 '## forcing 조건의 확장' 중복 절을 지웠으며 본문의 영문 forcing 넷을 한국어로 바꿨다. 리프다. 후속 후보: Martin 의 공리(ccc 강제 공리, 반복 강제법 절에서 이름만 썼다), Boolean 값 모형(활용 절 마지막 항목, boolean-algebras 와 forcing 사이의 자식 자리), 거대기수(Levy-Solovay 를 활용 절에서 언급했고 continuum-hypothesis 에도 절이 있다), 대칭 확대와 선택공리 독립성. lowenheim-skolem 은 본문 링크로만 걸었다. 5절의 '그저 부모를 도구로 한 번 쓰는가' 판정으로 간선은 긋지 않았는데, 모형론 문서가 생기면 lowenheim-skolem 의 자식 자리를 다시 볼 것",
-      "createdAt": "2026-09-20T00:42:44.973Z",
-      "seq": 684
-    },
-    {
-      "id": "05039229",
-      "title": "네 문서 보강의 잔여 항목",
-      "priority": 12,
-      "note": "2026-09-20 회차에 432b29ca(새 네 문서의 후속 보강)를 소진했다. 넣은 것: dual-space 의 차원 등식 절에 Vandermonde 논법과 Erdős–Kaplansky 정리, perron-frobenius 의 Collatz–Wielandt 절에 min-max 쌍대형(양벡터 하나로 하한과 상한이 동시에 나온다)과 반복 곱 절에 거듭제곱법 오차 (|lambda_2|/rho)^k, exterior-algebra 의 새 절 Plücker 관계, polya-enumeration 의 이면체군 반사 순환 구조 표와 홀짝별 순환 지표(n=4, m=2 에서 6 으로 회전만 쓴 값과 같다). 남은 것: dual-space 의 무한차원 이중쌍대가 전사가 아닌 이유의 증명 요지, perron-frobenius 의 Perron 근 상하한 절을 Collatz–Wielandt 쌍대형으로 다시 유도할지, polya-enumeration 의 정육면체 면 색칠 절과 새 이면체군 표의 중복 점검",
-      "createdAt": "2026-09-20T00:45:22.244Z",
-      "seq": 687
-    },
-    {
-      "id": "8805932c",
-      "title": "개관 개요의 저장소 자체 언급 회귀 점검 (차기)",
-      "priority": 12,
-      "note": "2026-09-20 회차에 다시 돌렸다. 검사법: grep -n '이 지도|이 저장소|에 두었다|문서가 없다|여기서 한 줄로' docs/*.md. 새 위반은 없다. 보고 107 건 가운데 105 건이 4 절이 허용한 예외 문구 '아직 연결한 문서가 없다.' 이고 manifolds 의 '지도책' 은 atlas 의 번역어라 오검출이다. 이번 회차에 찾은 실제 어긋남은 그 규격 문구에 목록 하이픈이 붙은 문서 넷(algebraic-k-theory greenberg-conjecture mellin-transform merel-theorem)이고 하이픈을 지웠다. 검사에 '^- 아직 연결한' 을 함께 넣을 것. manifolds 직관 절의 '이 지도책의 공리화이며, chart 와 transition map 이 두 재료다' 도 이 회차에 고쳤다(확인할 수 없는 주장 + 정의 전 영문 용어)",
-      "createdAt": "2026-09-20T00:46:16.862Z",
-      "seq": 688
-    },
     {
       "id": "aca6b6e8",
       "title": "로마자로 쓴 그리스 문자 훑기 (5차)",
@@ -156,6 +116,118 @@
       "seq": 723
     },
     {
+      "id": "2f3c1d82",
+      "title": "각주 정합 회귀 점검",
+      "priority": 12,
+      "note": "2026-09-20 회차에 다시 돌려 0 건. 검사법: 문서마다 정의 줄 /^\\[\\^([\\w-]+)\\]:/gm 과 참조 /\\[\\^([\\w-]+)\\](?!:)/g 를 모아 defs-refs(참조 없는 정의), refs-defs(정의 없는 참조), 정의 중복 셋을 본다. 405 문서 전부 통과했다. 자리를 고르는 요령과 주의 셋은 2026-09-19 note 그대로다: 원논문 각주는 그 개념을 처음 진술하는 문장 끝, 표준 참고서 각주는 정의 절의 주 정의 문장 끝, 특정 결과의 각주는 그 결과를 말하는 목록 항목. '**정리.**' 로 시작하면 '**정리**[^1]**.**' 로 쪼개고, 콜론 바로 앞에는 두지 않는다",
+      "createdAt": "2026-09-20T12:35:20.017Z",
+      "seq": 724
+    },
+    {
+      "id": "ab50641f",
+      "title": "산문 금지 표현 회귀 점검 (6차)",
+      "priority": 12,
+      "note": "2026-09-20 회차. 5차 note 가 지시한 '~인 셈이다|여기서 나온다|~의 출발점이다|이 점이 중요하다|~을 말해 준다|생각해 보면' 은 0 건이었다. 이어서 번역체·예고문 쪽 '흥미롭게도|놀랍게도|놀랍지 않|본질적으로|직관적으로 말하면|이것이 바로|에 다름 아니다|에 지나지 않는다|이는 곧|다시 말해|말하자면|라는 것이 밝혀졌다|주목할 것은|짚고 넘어가자|다음이 핵심이다|점을 기억하자|정리하면|요약하면|우연이 아니다' 를 돌려 6 건이 나왔고 전부 오검출이다. gradient-descent 63, jacquet-langlands 31, linear-regression 67, probabilistic-method 117, quadratic-reciprocity 118, weyl-character-formula 82 의 '정리하면' 은 모두 '식을 정리하면'(rearrange) 이라 4 절이 금지하는 예고문 '정리하면'(summarize) 이 아니다. 다음 회차에는 '~때문이다' 로 앞 문장을 되풀이하는 문장과 '우리' 호칭, '~해 보자' 를 훑을 것",
+      "createdAt": "2026-09-20T12:35:43.449Z",
+      "seq": 725
+    },
+    {
+      "id": "7f9a7b0b",
+      "title": "baire-category 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-20 회차에 새로 썼다(부모 completeness, analysis-overview 극한과 연속 갈래, 118줄). banach-spaces 9줄의 Baire 언급에 본문 링크를 걸었고 martins-axiom 측도와 범주 절에서도 링크한다. 리프다. 후속 후보: Banach-Steinhaus 를 독립 문서로 뗄지(지금은 baire-category 성질 절과 banach-spaces 양쪽에 증명 요지가 있다. 뗄 경우 두 문서의 중복 절을 정리할 것), 일반적 성질(generic property)과 Baire 공간의 위상적 성격, Polish 공간",
+      "createdAt": "2026-09-20T12:42:44.560Z",
+      "seq": 730
+    },
+    {
+      "id": "ae5c368a",
+      "title": "reverse-mathematics 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-20 회차에 새로 썼다(부모 peano-axioms, foundations-overview 논리 갈래, 119줄). baire-category, computability, intuitionism, formalism-hilbert-program 을 본문에서 링크했다. 리프다. 후속 후보: Ramsey 정리의 역수학적 위치(RT^2_2 가 WKL_0 과 비교 불가능하다는 Seetapun 결과), WKL_0 의 원시재귀 산술 보존성(Friedman), 계산 가능성 이론의 튜링 차수 문서가 생기면 '모형과 독립성' 절에서 간선을 그을 것",
+      "createdAt": "2026-09-20T12:46:11.034Z",
+      "seq": 734
+    },
+    {
+      "id": "d33b9e15",
+      "title": "model-theory 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-20 회차에 새로 썼다(부모 lowenheim-skolem, foundations-overview 논리 갈래, 101줄). 콤팩트성 정리와 초곱, 비표준 실수 구성은 lowenheim-skolem 에 이미 있어 중복을 피하고 참조만 했다. 리프다. 후속 후보: o-최소성(실폐체 양화사 소거의 후속, 활용 절 둘째 항목), 안정성 이론과 분류(Morley 정리 다음 단계), 정의 가능 집합과 Chevalley 정리를 대수기하 쪽 문서와 이을지. nonstandard-analysis 는 lowenheim-skolem 의 자식이라 model-theory 의 자식으로 중복해 긋지 않았다",
+      "createdAt": "2026-09-20T12:48:11.152Z",
+      "seq": 735
+    },
+    {
+      "id": "f6418359",
+      "title": "sperner-theorem 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-20 회차에 새로 썼다(부모 dilworth-theorem, combinatorics-overview 극단 조합론 갈래, 104줄). 리프다. 후속 후보: Erdős–Ko–Rado(별도 큐 항목), Dedekind 문제와 단조 부울 함수 세기(활용 절 셋째 항목, boolean-fourier 와 이을 수 있다), Littlewood–Offord 문제와 그 확률적 확장(Erdős 의 반사슬 논법과 Kleitman 의 일반화)",
+      "createdAt": "2026-09-20T12:49:56.612Z",
+      "seq": 737
+    },
+    {
+      "id": "791d59ff",
+      "title": "continued-fractions 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-20 회차에 새로 썼다(부모 euclidean-algorithm, number-theory-overview 갈래, 107줄). euclidean-algorithm 98줄의 연분수 언급에 본문 링크를 걸었고 rsa-cryptosystem, modular-symbols 를 활용 절에서 링크했다. 리프다. 후속 후보: Pell 방정식(별도 큐 항목), Diophantine 근사와 무리수 측도(Liouville 수, Roth 정리), Stern-Brocot 트리와 Farey 수열",
+      "createdAt": "2026-09-20T12:51:46.059Z",
+      "seq": 739
+    },
+    {
+      "id": "1433764e",
+      "title": "matrix-factorizations 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-20 회차에 새로 썼다(부모 linear-maps 의 '행렬의 불변량' 묶음, linear-algebra-overview 기초 갈래, 109줄). singular-value-decomposition, linear-regression, gaussian-processes, eigenvalues 를 본문에서 링크했다. 리프다. 후속 후보: QR 알고리즘과 고윳값 계산(활용 절 넷째 항목, eigenvalues 의 자식 자리일 수도 있다), Krylov 부분공간 방법(공액기울기법, GMRES), 희소행렬과 채우기 순서. singular-value-decomposition 은 spectral-theorem 의 자식이라 여기서 중복해 긋지 않았다",
+      "createdAt": "2026-09-20T12:53:29.519Z",
+      "seq": 740
+    },
+    {
+      "id": "894d8157",
+      "title": "vector-bundles 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-20 회차에 새로 썼다(부모 manifolds, differential-geometry-overview 다양체와 미분형식 갈래, 100줄). curvature, de-rham-cohomology, chern-simons, fredholm-operators 를 활용 절에서 링크했다. 리프다. 후속 후보: 특성류와 Chern-Weil 이론(활용 절 둘째 항목, de-rham-cohomology 와 vector-bundles 의 공통 자식 자리), 주다발과 게이지 이론, K 이론의 위상 쪽(algebraic-k-theory 와 구별할 것). curvature 의 Levi-Civita 접속 절과 이 문서의 접속 정의가 겹치는지 다음에 볼 것",
+      "createdAt": "2026-09-20T12:55:05.142Z",
+      "seq": 741
+    },
+    {
+      "id": "949657e3",
+      "title": "block-designs 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-20 회차에 새로 썼다(부모 counting-principles, combinatorics-overview 극단 조합론 갈래, 97줄). finite-fields, mathieu-groups, error-correcting-codes 를 본문에서 링크했다. 리프다. 후속 후보: Latin 방진과 직교족(활용 절 마지막 항목, Euler 의 36 장교 문제와 Bose-Shrikhande-Parker 의 반증), 차분집합과 Singer 정리, 유한 사영평면을 독립 문서로 뗄지. mathieu-groups 의 S(5,8,24) 절과 이 문서의 Steiner 계 정의가 겹치는지 다음에 볼 것",
+      "createdAt": "2026-09-20T12:56:30.159Z",
+      "seq": 742
+    },
+    {
+      "id": "b9826c4b",
+      "title": "stirling-numbers 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-20 회차에 새로 썼다(부모 counting-principles, combinatorics-overview 극단 조합론 갈래, 108줄). inclusion-exclusion, generating-functions, partitions 를 본문에서 링크했다. 리프다. 후속 후보: Bell 수와 Dobinski 공식(생성함수 절 마지막 문장), 유한 차분과 Newton 보간(활용 절 셋째 항목), Eulerian 수(순열 통계의 다른 축). partitions 의 분할수와 이 문서의 구별 여부 대비가 활용 절 첫 항목에 있으니 partitions 쪽에도 한 줄 넣을지 볼 것",
+      "createdAt": "2026-09-20T12:57:44.614Z",
+      "seq": 743
+    },
+    {
+      "id": "1a964083",
+      "title": "topos-theory 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-20 회차에 새로 썼다(부모 limits-colimits, adjunctions, category-theory-overview 보편성질 갈래, 99줄). heyting-algebras, intuitionism, boolean-algebras, forcing, structural-set-theory, kripke-semantics, curry-howard, galois-representations 를 본문에서 링크했다. 리프다. 후속 후보: 층과 층화(에탈 토포스로 가는 길, 활용 절 둘째 항목이 부른다), Lawvere-Tierney 위상, 분류 토포스와 기하적 이론. kripke-semantics 를 토포스의 자식으로 볼지는 방향이 반대라 긋지 않았다",
+      "createdAt": "2026-09-20T12:59:16.465Z",
+      "seq": 744
+    },
+    {
+      "id": "b7a2f16c",
+      "title": "boolean-valued-models 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-20 회차에 새로 썼다(부모 forcing, boolean-algebras, foundations-overview 집합론 갈래, 90줄). forcing 활용 절 마지막 항목과 continuum-hypothesis 112줄에 본문 링크를 걸었다. 리프다. 후속 후보: Heyting 값 모형(활용 절 셋째 항목, intuitionism 과 이을 자리), 무작위 실수 강제법과 측도 대수(활용 절 넷째 항목), 초곱과 Los 정리(몫과 초곱 절이 부른다. model-theory 에서 콤팩트성 증명으로도 언급된다)",
+      "createdAt": "2026-09-20T13:02:04.018Z",
+      "seq": 745
+    },
+    {
+      "id": "3d10c75c",
+      "title": "suslin-problem 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-20 회차에 새로 썼다(부모 martins-axiom, foundations-overview 집합론 갈래, 90줄). martins-axiom 81줄의 Suslin 가설 언급에 본문 링크를 걸었다. 리프다. 후속 후보: 마름모 원리와 구성가능 우주(Jensen 의 구성이 부른다. constructible-universe 문서가 없어 본문에서 이름만 썼다), Aronszajn 나무와 Kurepa 나무(활용 절 셋째 항목), 나무의 조합론 일반",
+      "createdAt": "2026-09-20T13:03:04.719Z",
+      "seq": 746
+    },
+    {
       "id": "d2720772",
       "title": "두문자어 첫 등장 풀이 전수 점검 (21차)",
       "priority": 11,
@@ -228,12 +300,28 @@
       "seq": 694
     },
     {
-      "id": "1c511c2c",
-      "title": "이항계수와 Stirling 수의 항등식",
-      "priority": 10,
-      "note": "combinatorics 개관에서 옮김. counting-principles 다음 단계",
-      "createdAt": "2026-09-16T13:05:27.773Z",
-      "seq": 329
+      "id": "418dac51",
+      "title": "개관 개요의 저장소 자체 언급 회귀 점검 (차기)",
+      "priority": 11,
+      "note": "2026-09-20 회차에 다시 돌렸다. 검사법에 '^- 아직 연결한' 을 넣어 규격 문구에 하이픈이 붙은 경우까지 잡도록 했고, 이번에는 그런 문서가 없었다. 보고 3 건은 전부 오검출이다: kazhdan-lusztig 7줄, lang-trotter 13줄, weyl-character-formula 194줄의 '빈자리' 는 각각 이론의 공백과 무게 다이어그램의 자리를 가리키는 수학 문맥이라 0 절이 금지한 '## 빈자리' 절과 무관하다. 다음에는 개관 문서만 따로 골라 '## 갈래' 아래에 없는 문서를 가리키는 줄이 있는지 볼 것",
+      "createdAt": "2026-09-20T12:43:02.707Z",
+      "seq": 731
+    },
+    {
+      "id": "9d7fa71a",
+      "title": "문학적 비유 grep 회귀 점검 (9차)",
+      "priority": 11,
+      "note": "2026-09-20 회차. 4절 grep 전체를 돌려 5 건이 나왔고 전부 용어 예외다. elliptic-curves 134 'Montgomery 사다리'(Montgomery ladder), lie-algebras 185 '사다리 연산자'(ladder operator), post-quantum-cryptography 142 '함정문' 둘(trapdoor), theta-series 167 'Viazovska 의 마법함수'(magic function). 이 다섯은 다음 회차에도 같은 자리에서 나오므로 새 건만 보면 된다",
+      "createdAt": "2026-09-20T12:44:00.590Z",
+      "seq": 732
+    },
+    {
+      "id": "4381417a",
+      "title": "'A와 B' 제목 후보 훑기 (차기)",
+      "priority": 11,
+      "note": "2026-09-20 회차. CLAUDE.md 4절의 grep -l '^# .*[와과] ' 은 '# 연관 문서'의 '관 ' 에도 걸려 전 문서를 보고한다. 제목 줄만 보는 for f in docs/*.md; do head -1 $f | grep -qE '^# .*[가-힣A-Za-z0-9)]\\s*(와|과) ' && echo $f; done 로 바꾸면 152 건이 나온다. 대부분은 4절이 예외로 둔 '정리 이름과 그 정리가 답하는 개념' 꼴이라 그대로 두어야 한다. 다음 회차에는 152 건에서 파일명이 제목의 한쪽만 가리키는 것만 골라낼 것. 후보 선별법: 제목의 '와/과' 앞뒤 두 개념 가운데 파일명 id 가 뒤쪽만 가리키는 경우(예: 파일명은 A 인데 제목이 'B와 C')",
+      "createdAt": "2026-09-20T12:44:00.742Z",
+      "seq": 733
     },
     {
       "id": "c5a45a48",
@@ -244,46 +332,6 @@
       "seq": 330
     },
     {
-      "id": "30bd112a",
-      "title": "극단 집합론(Sperner, Erdős–Ko–Rado)",
-      "priority": 10,
-      "note": "combinatorics 개관에서 옮김. ramsey-theory 옆 줄기",
-      "createdAt": "2026-09-16T13:05:28.080Z",
-      "seq": 331
-    },
-    {
-      "id": "08e76449",
-      "title": "벡터다발과 접속",
-      "priority": 10,
-      "note": "differential-geometry-overview 의 빈자리 첫 줄. manifolds 아래, chern-simons 와 index-theorem 이 전제한다. 국소 자명화, 전이함수, 공변미분, 곡률 2 형식, 평행이동. 이어서 특성류(Chern 류) 문서로 간다",
-      "createdAt": "2026-09-16T13:03:08.649Z",
-      "seq": 332
-    },
-    {
-      "id": "31c12c8a",
-      "title": "조합적 설계와 유한 기하",
-      "priority": 10,
-      "note": "combinatorics 개관에서 옮김. Mathieu 군 문서가 Steiner 계를 언급만 한다",
-      "createdAt": "2026-09-16T13:05:28.392Z",
-      "seq": 333
-    },
-    {
-      "id": "b9888513",
-      "title": "모형론 입문(구조, 기본 확대, 양화사 소거)",
-      "priority": 10,
-      "note": "foundations 개관에서 옮김. Löwenheim–Skolem 다음 단계",
-      "createdAt": "2026-09-16T13:05:28.710Z",
-      "seq": 335
-    },
-    {
-      "id": "2852b11e",
-      "title": "강제법(forcing)",
-      "priority": 10,
-      "note": "foundations 개관에서 옮김. 연속체 가설 문서가 결과만 인용한다",
-      "createdAt": "2026-09-16T13:05:28.873Z",
-      "seq": 336
-    },
-    {
       "id": "9902eee3",
       "title": "역수학",
       "priority": 10,
@@ -292,36 +340,12 @@
       "seq": 337
     },
     {
-      "id": "a1450c6d",
-      "title": "범주론적 기초와 토포스",
-      "priority": 10,
-      "note": "foundations 개관에서 옮김. 구조적 집합론에서 이어질 줄기",
-      "createdAt": "2026-09-16T13:05:29.185Z",
-      "seq": 338
-    },
-    {
       "id": "14a84d4d",
       "title": "타입 이론과 일가성 공리(HoTT)",
       "priority": 10,
       "note": "foundations 개관에서 옮김. curry-howard 와 구조주의가 만나는 자리",
       "createdAt": "2026-09-16T13:05:29.350Z",
       "seq": 339
-    },
-    {
-      "id": "1b09b275",
-      "title": "행렬 분해와 수치 선형대수(LU, QR, Cholesky, 조건수)",
-      "priority": 10,
-      "note": "linear-algebra 개관에서 옮김. 응용 문서들이 전제한다",
-      "createdAt": "2026-09-16T13:05:29.827Z",
-      "seq": 342
-    },
-    {
-      "id": "235b8fbf",
-      "title": "연분수와 Diophantine 근사",
-      "priority": 10,
-      "note": "number-theory 개관에서 옮김. Pell 방정식, Roth 정리. 초등 정수론과 격자를 잇는다",
-      "createdAt": "2026-09-16T13:05:30.287Z",
-      "seq": 345
     },
     {
       "id": "c09f1b8a",
@@ -844,14 +868,6 @@
       "seq": 680
     },
     {
-      "id": "df51c208",
-      "title": "Martin 의 공리",
-      "priority": 10,
-      "note": "분야는 집합론. 부모는 forcing(강제법). ccc 순서에 대한 강제 공리이고 연속체 가설의 부정과 함께 무모순이다(Solovay-Tennenbaum, 유한 지지 반복). 내용 후보: MA(kappa) 의 진술, MA + CH 부정에서 따라 나오는 결과(Suslin 가설의 부정, Lebesgue 측도의 가산 가법성 확장, 위상공간의 성질), 강제 공리의 사다리에서 Martin 의 최대 원리까지. continuum-hypothesis 의 활용 절과 이후의 논쟁 절에서 이름만 쓰고 링크를 걸지 못했다",
-      "createdAt": "2026-09-20T00:42:45.115Z",
-      "seq": 685
-    },
-    {
       "id": "3f7ce72e",
       "title": "dual-space 와 exterior-algebra 의 Grassmann 후속",
       "priority": 10,
@@ -938,6 +954,30 @@
       "note": "분야는 number_theory/probability, 부모는 riemann-hypothesis. 2026-09-20 회차에 riemann-hypothesis 의 중복 절 정리를 끝냈다. (1) dirichlet-l-functions 79줄과 prime-number-theorem 97줄에 riemann-hypothesis 로 가는 본문 링크를 넣는 것으로 처리했고, 두 절 모두 자기 문서의 맥락에서 필요한 진술이라 축약하지 않았다. dirichlet-l-functions 를 riemann-hypothesis 의 자식으로 두는 안은 버렸다. GRH 를 진술하려면 Dirichlet L 함수를 먼저 알아야 하므로 방향이 반대이고, riemann-hypothesis 의 부모를 3 개로 늘릴 만큼 본문 의존도 크지 않다. (2) 남은 것은 riemann-hypothesis 의 자식 자리다. 이 항목이 그중 가장 큰 것으로, Montgomery 의 쌍 상관 추측, Odlyzko 의 수치 계산, Katz-Sarnak 의 대칭형 분류, 유한체 위 곡선족의 monodromy 를 모은다. riemann-hypothesis 활용 절의 Montgomery-Dyson 대응이 이 문서를 부르는 자리이고, wigner-semicircle 과 tracy-widom 이 이미 있어 확률 쪽 부모를 댈 수 있다. 다른 자식 후보는 Mertens 추측(riemann-hypothesis 의 M(x) 동치 절), Weil 명시 공식이다",
       "createdAt": "2026-09-20T08:51:23.901Z",
       "seq": 715
+    },
+    {
+      "id": "dccba5a1",
+      "title": "거대기수 공리",
+      "priority": 10,
+      "note": "집합론. 부모 후보는 ordinals 와 forcing. 도달 불가능 기수, 측도 가능 기수, 콤팩트 기수의 계층과 무모순성 세기의 순서. forcing 활용 절의 Levy-Solovay 항목과 continuum-hypothesis 의 거대기수 절이 이 문서를 부른다",
+      "createdAt": "2026-09-20T12:39:09.422Z",
+      "seq": 728
+    },
+    {
+      "id": "4b881cb9",
+      "title": "Erdős–Ko–Rado 정리",
+      "priority": 10,
+      "note": "조합론. 부모 후보는 sperner-theorem(같은 사슬 세기 구조, 활용 절 첫 항목에서 이름만 썼다). 교차하는 k 원소 부분집합족의 최대 크기가 n>=2k 에서 binom(n-1,k-1) 이고, Katona 의 원형 배열 논법이 Lubell 의 사슬 세기와 같은 꼴이다. 등호 조건(별 모양 족)과 n=2k 의 예외도 함께",
+      "createdAt": "2026-09-20T12:49:56.467Z",
+      "seq": 736
+    },
+    {
+      "id": "7b5a66d5",
+      "title": "Pell 방정식",
+      "priority": 10,
+      "note": "정수론. 부모는 continued-fractions(활용 절 첫 항목에서 이름만 썼다). sqrt(d) 연분수 전개의 순환 마디가 기본해를 주고, 해들이 기본해의 거듭제곱으로 무한 생성되는 구조(실이차체 단수군의 rank 1). x^2-dy^2=-1 의 풀림 여부와 순환 길이의 홀짝. algebraic-number-fields 의 Dirichlet 단수 정리와 이을 것",
+      "createdAt": "2026-09-20T12:51:45.913Z",
+      "seq": 738
     },
     {
       "id": "dfb3e493",
