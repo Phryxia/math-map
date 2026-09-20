@@ -172,5 +172,6 @@ $$
 ## 더 알아보기
 
 - [멱급수](power-series.md)
+- [Stone–Weierstrass 정리](stone-weierstrass.md)
 
 #analysis #functional_analysis #probability
