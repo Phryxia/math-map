@@ -85,6 +85,6 @@ $E_n$ 을 $\vert f(t)-f(s)\vert \le n\vert t-s\vert$ 가 모든 $s$ 에 대해 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Martin 의 공리](martins-axiom.md)
 
 #analysis #topology #functional_analysis
