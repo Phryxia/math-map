@@ -1,104 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-20T16:57:53.603Z",
-  "nextSeq": 763,
+  "savedAt": "2026-09-20T21:01:10.278Z",
+  "nextSeq": 775,
   "items": [
-    {
-      "id": "8ce8b117",
-      "title": "자리표시자 헤딩 훑기 (5차)",
-      "priority": 12,
-      "note": "2026-09-20 회차에 4차를 했다. 4절 공식 grep 은 '증명의 요지' 꼴 11 건뿐이고 전부 4절이 권장하는 명사구다. 실제로 고친 것은 자리표시자 헤딩 22 건이다. '## 쓰이는 자리' 20 건을 문서마다 내용에 맞는 명사구로 바꿨고(활용 절의 유일한 H2 였던 spherical-harmonics, theta-series 는 헤딩 자체를 지웠다. 나머지는 활용 절이 '한 예제 + 응용 분야 목록' 구조라 뒤쪽을 분야 이름으로 명명했다), dwork-rationality 의 'Dwork 이론이 쓰이는 자리'와 natural-transformations 의 '자연변환이 쓰이는 자리'도 같이 처리했다. tracy-widom 의 '~라는 것이 이 주제의 요점이다' 메타 문장도 지웠다. 5차에 볼 남은 후보: (1) '## 예', '## 예제', '## 예시' 21 건. '예' 는 명사라 4절 위반은 아니지만 문서마다 '## 몫 구성의 예' 처럼 구체화한 곳이 있어 표기가 갈린다. 통일할지 판단한다. (2) grep -n '^## ' docs/*.md | grep -vE '## (선수지식|더 알아보기)' | grep -E '(하는|되는|보는|있는|없는) ' 의 40여 건. 대부분 '경계가 있는 곡면', '잴 수 없는 집합' 처럼 개념 이름이라 오검출이고, 실제 후보는 casson-invariant 76줄 '계산되는 예', deformation-rings 156줄 '응용되는 정리들', eisenstein-series 198줄 '반복되는 구도' 셋이다",
-      "createdAt": "2026-09-20T08:38:39.411Z",
-      "seq": 710
-    },
-    {
-      "id": "606c1216",
-      "title": "'A와 B' 제목 후보 훑기",
-      "priority": 12,
-      "note": "2026-09-20 회차에 random-variables 를 판정했다. 결론은 분할하지 않고 제목을 '확률변수' 로 좁히는 것이었다. 근거: 기댓값은 확률변수의 적분이라 8절의 통합 기준('두 문서가 서로 없이는 설명되지 않는다')에 걸리고, 나누면 random-variables 쪽 성질 절이 비어 양쪽이 다 얇아진다. 제목을 바꾸면 17개 문서의 링크 표시 제목을 함께 고쳐야 한다(sed 로 일괄 처리했고, probability-overview 9줄의 조사 '확률변수으로' 를 '확률변수로' 로 손봤다). 같은 회차에 활용 절도 손봤다: '## 표준 예시'를 '## Bernoulli 분포와 이항분포'로, 0절이 금지하는 저장소 자기언급 헤딩 '## 다른 문서와의 연결'을 '## 확률론의 다른 개념' 목록으로, 맨 텍스트로 있던 n·i·1·−log p 를 LaTeX 로 옮겼다. 다음 후보는 grep -l '^# .*[와과] ' docs/*.md 의 나머지다. 판정 기준: 두 이름이 한 대상의 두 측면이면(정리와 그 정리가 답하는 개념, 대상과 그 대상 위의 연산) 제목을 파일명 쪽으로 좁힌다. 두 대상이 각자 부모와 자식을 따로 거느릴 만하면 8절대로 나눈다",
-      "createdAt": "2026-09-20T08:41:37.822Z",
-      "seq": 711
-    },
-    {
-      "id": "3db78ffa",
-      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (10차)",
-      "priority": 12,
-      "note": "2026-09-20 회차에 9차를 했다. 검사기(스크래치패드 plaintext.mjs)에 8차의 마스킹 외에 신호 하나를 더 넣었다: 인라인 코드와 링크를 마스킹한 뒤 /(^|[^A-Za-z0-9_$§\\\\/-])([a-zA-Z])(?=[가-힣])/ 로 '한글에 바로 붙은 홑글자 변수'를 뽑는다(x에, n개, f가 꼴). 8차까지의 신호(LaTeX 명령, 유니코드 수학기호, 맨 위첨자·아래첨자)는 태그 줄 제외와 한 줄짜리 $$ 블록 선마스킹을 넣으면 오검출이 사라지고 실질 1 건만 남는다. 홑글자 신호로 49 건이 나왔고 27 건을 고쳤다: ordinary-differential-equations(8 곳, 'autonomous 라 한다'도 '자율 방정식'으로 옮기고 중복된 ODE 풀이를 지웠다), maximum-likelihood(3), inclusion-exclusion(2, 1_A 를 $\\mathbf 1_A$ 로), zfc-axioms(2, '무료로 얻어진다'도 '자동으로 따라온다'로), generating-functions(4), counting-principles(4), curvature(1), determinants(1), ordinals(1, 'transitive' 를 '추이적(transitive)' 으로). 10차에 남은 22 건: (1) 오검출 4 건은 Erdős/Turán 의 악센트 문자와 인라인 코드 is_root/find_root 다. 검사기의 부정 선행 클래스에 비 ASCII 글자를 넣으면 앞 둘이 사라진다. (2) 실제 후보 18 건은 first-order-logic(6), np-completeness(5), galois-theory(3), fundamental-group(2), counting-principles 잔여. np-completeness 는 P, NP, co-NP, #P 가 복잡도 부류 이름이라 수식으로 감쌀지 고유명사로 둘지 먼저 판정해야 한다. 같은 문서가 본문에서 $\\mathrm P=\\mathrm{NP}$ 와 맨 텍스트 'P에 속하면' 을 섞어 쓰고 있어 어느 쪽이든 통일이 필요하다",
-      "createdAt": "2026-09-20T08:46:51.285Z",
-      "seq": 713
-    },
-    {
-      "id": "66fe5671",
-      "title": "한국어 문장에 끼인 영문 용어 훑기 (8차)",
-      "priority": 12,
-      "note": "2026-09-20 회차 7차. 검사법을 바꿨다. 링크 주소, 인라인 코드, 수식, URL 을 먼저 마스킹한 뒤 /[가-힣][^가-힣\\n]{0,2}\\b([a-z]{4,})\\b[^가-힣\\n]{0,2}[가-힣]/ 로 뽑아 단어별로 센다. 마스킹 없이 뽑으면 파일명(-theory.md, -overview.md)과 인명이 상위를 다 차지해 쓸모가 없다. 고친 것 셋. (1) first-order-logic 의 맨 'compactness' 넷을 '콤팩트성 정리' 로 옮겼다(헤딩 '## 대수에서의 compactness 논법' 포함). 같은 문서 19줄이 이미 [콤팩트성](compactness.md) 을 링크하고 있었고 lowenheim-skolem 과 compactness 가 '콤팩트성 정리' 를 쓰므로 표기가 갈려 있었다. (2) dynamic-connectivity 의 'forest' 아홉을 '숲' 으로 옮겼다(헤딩 둘 포함). 첫 등장만 '숲(forest)' 이다. minimum-spanning-tree 와 computation-overview 가 이미 '숲' 을 쓴다. (3) color-refinement 와 gnn-expressivity 의 'multiset' 열여덟을 '중복집합' 으로 옮겼다. finite-simple-groups 76줄이 선례다. 8차에 볼 남은 후보(횟수, 대표 문서): theta 76(adeles), martingale 70(brownian-motion), monad 40(adjunctions), zeta 30, matroid 29, rank 26, mock 23, entropy 22, shadow 19, span 13, tightness 11(6차에 원어 유지로 판정 완료), expander 11, saturation 10. 대부분 굳은 한국어 용어가 없거나 문서 제목 자체가 원어라 오검출이다. 실제 후보는 entropy(엔트로피), span(생성), chain(사슬, axiom-of-choice 에 여섯), torsion(비틀림, curvature 43줄은 이미 '비틀림(torsion)' 이라 오검출), naturality(자연성, limits-colimits) 정도다",
-      "createdAt": "2026-09-20T08:53:38.839Z",
-      "seq": 716
-    },
-    {
-      "id": "dca1797c",
-      "title": "문학적 비유 grep 회귀 점검 (7차)",
-      "priority": 12,
-      "note": "2026-09-20 회차 6차. 4절 grep 목록은 예외 다섯만 남는다(사다리 연산자 lie-algebras 185, 사다리 elliptic-curves 134, 함정문 post-quantum-cryptography 142 둘, 마법함수 theta-series 167). 6차에 고친 것은 서술형·의문형 H2 일곱이다: riemann-surfaces '가지를 펴는 구성'→'제곱근 함수의 Riemann 곡면', structural-set-theory '화살표로 본 집합'→'원소와 화살표', supersingular-isogeny-graphs '살아남은 설계'→'CGL 해시, CSIDH, SQIsign', airy-functions '발산률이 가리키는 것'→'점근급수 계수의 증가율'(의인화), approximation-algorithms '하한 대리물'→'최적해의 하한', change-of-measure '표본을 다른 분포에서 뽑기'→'희귀사건의 몬테카를로'(동명사), change-of-measure '관측이 어느 분포에서 왔는가'→'우도비에 의한 판별'(4절이 금지한 의문형). fargues-scholze 25줄 '곡선과 여행 작용소' 는 여행 작용소가 V. Lafforgue 의 excursion operator 번역어라 남겼다. 7차에 볼 남은 후보: casselman-shalika 22줄 '값이 놓이는 자리' 와 40줄 '지표가 나오는 경로', casson-invariant 76줄 '계산되는 예', deformation-rings 156줄 '응용되는 정리들', eisenstein-series 198줄 '반복되는 구도', algebraic-k-theory 29줄 '위상의 수가 나타나는 경로', lobachevsky-function 35줄 '조합 쪽에서 나타나는 경로'. '~가 나오는/나타나는 경로' 가 반복되는 꼴이라 한 번에 정리할 만하다. 의문형 헤딩 전수 검사법: grep -n '^#\\{2,3\\} ' docs/*.md | grep -E '(가|까|나)\\?? *$' 로 뽑고 '증가', '어디서나' 같은 명사 끝을 거른다",
-      "createdAt": "2026-09-20T08:55:29.860Z",
-      "seq": 717
-    },
-    {
-      "id": "af09aca1",
-      "title": "문학적 비유 grep 회귀 점검 (8차)",
-      "priority": 12,
-      "note": "2026-09-20 회차에 6차와 7차를 연달아 했다. 7차에 처리한 것: casselman-shalika '값이 놓이는 자리'→'토러스 위의 값', '지표가 나오는 경로'→'Hecke 작용과 Satake 변환', casson-invariant '계산되는 예'→'Poincaré 구면과 Brieskorn 구면', deformation-rings '응용되는 정리들'→'Serre 추측과 모듈러성 올림', algebraic-k-theory '위상의 수가 나타나는 경로'→'Bernoulli 수의 분모', lobachevsky-function '조합 쪽에서 나타나는 경로'→'1 의 거듭제곱근의 곱'. eisenstein-series 198줄 '## 반복되는 구도' 는 헤딩만이 아니라 절 전체를 지웠다. '명시적으로 아는 대상을 만들어 두고 미지의 대상을 다루는 구도가 여러 분야에 나타난다' 는 4절이 금지한 범위 과장이고 독자가 확인할 수 없는 주장이다. 8차에 볼 것: 이 회차에 쓴 서술형 검사법(grep -n '^## ' docs/*.md | grep -vE '## (선수지식|더 알아보기)' | grep -E '한 |로 본 |는 |을 |를 ')의 나머지 200여 건을 문서 순으로 훑는다. 지금까지 걸린 꼴은 넷이다: '~가 나오는/나타나는 경로', '~되는 예/정리들', '~로 본 X', 동명사 '~하기'. 대부분은 '경계가 있는 곡면', '잴 수 없는 집합' 처럼 개념 이름이라 오검출이므로, 헤딩만 보고 그 절의 내용을 한 단어로 부를 수 있으면 오검출로 넘긴다",
-      "createdAt": "2026-09-20T08:56:38.664Z",
-      "seq": 718
-    },
-    {
-      "id": "ccc2b520",
-      "title": "4절 목록 밖 비유어 회귀 점검 (3차)",
-      "priority": 12,
-      "note": "2026-09-20 회차 2차. 목록 밖 후보어 가운데 '통로'가 실제 비유로 14개 문서 16곳에 있었고 전부 고쳤다(euler-systems graph-coloring graphs ideals-quotient-rings kolyvagin-logachev lobachevsky-function riemann-surfaces vandiver-conjecture geometric-langlands sphere-packing khovanov-homology hecke-operators hodge-theory gamma-function supersingular-isogeny-graphs 둘). 1차 노트의 교훈대로 다른 비유로 바꾸지 않으려고 '통로다'를 대부분 동사문('~에 쓴다', '~로 옮긴다', '~을 잇는다')으로 풀었고, 명사가 필요한 두 자리만 '자리'와 '연결 고리'를 썼다. forcing 15-17줄의 '관문'도 고쳤다. 직관 절이 조밀집합을 '관문'이라는 지어낸 비유로 네 번 부르고 마지막에 정체를 밝히는 구성이었는데, 4절의 '새 용어는 동작을 다 보인 뒤 이름으로만 붙인다'에 맞춰 처음부터 '조밀하다'로 부르게 고쳤다. 판정해서 남긴 것: '거울'(coxeter-groups 의 반사군, knot-invariants 의 거울상, kahler-manifolds 의 거울대칭은 모두 용어), '다리'(그래프의 bridge 와 Brown 다리), '토대'(intuitionism, number-theory-overview 의 일상어 용법), '단서'(조건이라는 뜻), '파고들다'(graph-search 의 DFS 서술). 3차에 볼 목록 밖 후보어: 창, 그늘, 온상, 밑거름, 실마리, 수문, 관절, 매듭(용어 제외), 줄기, 빗장, 자물쇠, 그리고 새로 떠오른 것으로 '노릇', '몫'(용어 제외), '무대 장치', '축', '기둥', '뿌리'(용어 제외), '허리', '문턱'(threshold 는 용어)",
-      "createdAt": "2026-09-20T08:58:41.604Z",
-      "seq": 719
-    },
-    {
-      "id": "03fdf451",
-      "title": "나열형 mermaid 훑기 (20차)",
-      "priority": 12,
-      "note": "2026-09-20 회차 19차. 검사기(스크래치패드 mermaid-chain.mjs): mermaid 블록마다 화살표로 쪼개 노드 id 를 세고, 간선 수 <= 노드 수 - 1 이면서 화살표 라벨(|...|)이 하나도 없는 그림만 남긴다. 보고 33 건. 후보 (a)(순수 한국어 라벨)까지 걸면 0 건이 되므로 쓰지 않는다. 처리한 것 여덟. 지운 것 여섯: rings 17(정의의 사슬. 문단에 PID 와 포함 관계를 넣었다), fields 15(같은 꼴. '조건을 계단식으로 강화하는 것으로 보면 된다' 메타 문장도 지웠다), zfc-axioms 23(누적 위계 사슬. 점화식 17995 블록으로 옮기니 극한서수까지 정확해졌다), confidence-intervals 17(단계 나열. 정의 45줄과 성질 117줄이 이미 다룬다. 같은 문서 '## 다른 곳으로의 연결'도 '## 회귀와 비모수 구간'으로), bayesian-inference 19(사전×가능도→사후 흐름. 위 문단과 정의 58, 80줄에 있다), group-extensions 69(Zassenhaus→Schreier→Jordan-Hölder→두 문제 사슬. 두 문단으로 옮겼다). 표로 바꾼 것 둘: brauer-algebras 41(GL 과 O 의 Schur-Weyl 비교를 4열 표로), index-theorem 51(Atiyah-Singer 의 특수 사례를 2열 표로. 그림에만 있던 Poincaré-Hopf 와 곡선 Riemann-Roch 도 표 안에 남겼다). 배운 것: 나열형 그림을 지울 때 그림에만 있던 정보를 문단에 넣으면 문단이 길어지고, 항목이 셋 이상이면 표가 낫다. 4절도 '문장이나 표'라고 적고 있다. 남긴 것과 근거: tensor-products 51(보편성질 도형), adjunctions 83(가환도), localization-rings 111(Spec 포함 구조), markov-chains 15(상태 기계), union-find 27(경로 압축 전후의 실제 트리), link-cut-trees 22(표현 대상과 내부 표현), source-coding 29(실제 접두부호 트리), heyting-algebras 25(격자 종류의 Hasse 도형. 분기가 있어 사슬이 아니다), mass-formula 47(류/스피너 류/동치류 세분. 점선 라벨이 내용이다), 개관 넷(4.5절이 요구하는 지도 DAG). 20차에 판정할 나머지 14 건: algebraic-k-theory 45, bernoulli-numbers 65, borel-pade 29(재합산 파이프라인. 계산 절차의 단계 나열이지만 분기가 있어 판정이 갈린다), color-refinement 19, eisenstein-ideal 68, finite-simple-groups 56, geometric-satake 113, kolyvagin-logachev 34, lie-algebras 156, merel-theorem 35, spherical-harmonics 37, wigner-semicircle 40",
-      "createdAt": "2026-09-20T09:06:14.171Z",
-      "seq": 723
-    },
-    {
-      "id": "ab50641f",
-      "title": "산문 금지 표현 회귀 점검 (6차)",
-      "priority": 12,
-      "note": "2026-09-20 회차. 5차 note 가 지시한 '~인 셈이다|여기서 나온다|~의 출발점이다|이 점이 중요하다|~을 말해 준다|생각해 보면' 은 0 건이었다. 이어서 번역체·예고문 쪽 '흥미롭게도|놀랍게도|놀랍지 않|본질적으로|직관적으로 말하면|이것이 바로|에 다름 아니다|에 지나지 않는다|이는 곧|다시 말해|말하자면|라는 것이 밝혀졌다|주목할 것은|짚고 넘어가자|다음이 핵심이다|점을 기억하자|정리하면|요약하면|우연이 아니다' 를 돌려 6 건이 나왔고 전부 오검출이다. gradient-descent 63, jacquet-langlands 31, linear-regression 67, probabilistic-method 117, quadratic-reciprocity 118, weyl-character-formula 82 의 '정리하면' 은 모두 '식을 정리하면'(rearrange) 이라 4 절이 금지하는 예고문 '정리하면'(summarize) 이 아니다. 다음 회차에는 '~때문이다' 로 앞 문장을 되풀이하는 문장과 '우리' 호칭, '~해 보자' 를 훑을 것",
-      "createdAt": "2026-09-20T12:35:43.449Z",
-      "seq": 725
-    },
-    {
-      "id": "7f9a7b0b",
-      "title": "baire-category 의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-20 회차에 새로 썼다(부모 completeness, analysis-overview 극한과 연속 갈래, 118줄). banach-spaces 9줄의 Baire 언급에 본문 링크를 걸었고 martins-axiom 측도와 범주 절에서도 링크한다. 리프다. 후속 후보: Banach-Steinhaus 를 독립 문서로 뗄지(지금은 baire-category 성질 절과 banach-spaces 양쪽에 증명 요지가 있다. 뗄 경우 두 문서의 중복 절을 정리할 것), 일반적 성질(generic property)과 Baire 공간의 위상적 성격, Polish 공간",
-      "createdAt": "2026-09-20T12:42:44.560Z",
-      "seq": 730
-    },
-    {
-      "id": "ae5c368a",
-      "title": "reverse-mathematics 의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-20 회차에 새로 썼다(부모 peano-axioms, foundations-overview 논리 갈래, 119줄). baire-category, computability, intuitionism, formalism-hilbert-program 을 본문에서 링크했다. 리프다. 후속 후보: Ramsey 정리의 역수학적 위치(RT^2_2 가 WKL_0 과 비교 불가능하다는 Seetapun 결과), WKL_0 의 원시재귀 산술 보존성(Friedman), 계산 가능성 이론의 튜링 차수 문서가 생기면 '모형과 독립성' 절에서 간선을 그을 것",
-      "createdAt": "2026-09-20T12:46:11.034Z",
-      "seq": 734
-    },
-    {
-      "id": "d33b9e15",
-      "title": "model-theory 의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-20 회차에 새로 썼다(부모 lowenheim-skolem, foundations-overview 논리 갈래, 101줄). 콤팩트성 정리와 초곱, 비표준 실수 구성은 lowenheim-skolem 에 이미 있어 중복을 피하고 참조만 했다. 리프다. 후속 후보: o-최소성(실폐체 양화사 소거의 후속, 활용 절 둘째 항목), 안정성 이론과 분류(Morley 정리 다음 단계), 정의 가능 집합과 Chevalley 정리를 대수기하 쪽 문서와 이을지. nonstandard-analysis 는 lowenheim-skolem 의 자식이라 model-theory 의 자식으로 중복해 긋지 않았다",
-      "createdAt": "2026-09-20T12:48:11.152Z",
-      "seq": 735
-    },
     {
       "id": "f6418359",
       "title": "sperner-theorem 의 후속 간선",
@@ -226,6 +130,86 @@
       "note": "2026-09-20 회차. 지난 노트가 남긴 '조언투' 갈래를 돌렸다. grep -noE '알고 쓰기|해 보자|해 보면|확인해 보자|직접 확인|생각해 보면|이 점이 중요하다|여기서 나온다|의 출발점이다|을 말해 준다|인 셈이다' 로 6 건이 나왔고 넷을 고쳤다: stone-weierstrass 76 의 '진술이 여기서 나온다' 를 '이 정리가 준다' 로(이번 회차에 내가 쓴 문장이다), network-flow 81 의 '증가함은 직접 확인된다' 를 단언 '증가한다' 로, graph-coloring 119 의 '직접 확인한다' 를 '따로 확인한다' 로, conditional-expectation 124 의 '직접 확인한 뒤' 를 '확인한 뒤' 로. 남긴 것 둘은 오검출이다: dwork-rationality 161 의 '직접 확인하는 대신 우회한다' 는 Dwork 의 증명 전략을 말하는 수학적 서술이고, riemann-surfaces 86 의 '해 보면' 은 '통해 보면' 의 부분 문자열이다. 다음 차수 후보로 남은 것: (1) '~이기 때문이다' 로 앞 문장을 되풀이하는 문장. 정규식으로 걸러지지 않아 눈으로 봐야 한다. 후보를 좁히려면 '때문이다\\.?$' 로 끝나는 짧은 문장(40자 이하)만 뽑아 앞 문장과 견주는 방법을 쓸 것. (2) '무엇을 버리는지 알고 쓰기' 류의 조언투 헤딩. 이번 grep 에 '알고 쓰기' 는 0 건이었다. (3) 4절 번역체 표의 '~에 의해' 피동",
       "createdAt": "2026-09-20T16:57:37.837Z",
       "seq": 762
+    },
+    {
+      "id": "55ca4f5f",
+      "title": "자리표시자 헤딩 훑기 (6차)",
+      "priority": 12,
+      "note": "2026-09-20 회차에 5차를 했다. '## 예/예제/예시' 14 건을 전부 절 내용에 맞는 명사구로 바꿨다: boolean-algebras '멱집합 대수, Lindenbaum–Tarski 대수, Boolean 환', category '집합, 군, 부분순서, 반대 범주', characteristic-functions '표준 분포의 특성함수', exponential-families '표준 분포의 지수족 표현', functors '망각 함자, 단조사상, 군 작용', galois-theory '이차 확대의 합성과 유한체', group-presentations '순환군, 이면체군, 삼각군의 표시', lagrange-duality '이차 목적함수의 쌍대함수', linear-programming '두 변수 문제와 그 쌍대', martingales '랜덤워크, 곱 martingale, Doob martingale', newton-polygon '3차 다항식의 다각형', ordinary-differential-equations '로지스틱 방정식', riemannian-metrics 'Euclid 공간, 구, 쌍곡 반평면', zhu-algebra 'Virasoro 대수와 격자 VOA 의 Zhu 대수'. 판정 기준: 표 형태의 예 절은 표의 열이 무엇인지로 이름을 짓고(특성함수, 지수족 표현), 목록 형태는 대표 항목 둘셋을 나열한다. 같은 회차에 umbral-moonshine 168줄 '## 산재군을 보는 새로운 창'(비유어 '창')을 '## 다른 산재군의 달빛'으로 바꾸고 그 절의 '마지막 것은 특히 흥미로운데'와 출처 없는 열린 문제 서술('왜 존재하는지는 여전히 설명되지 않았다', '가장 강한 증거다')을 사실 진술로 고쳤다. 6차에 볼 것: 4절 공식 grep 은 0 건이므로 '^## ' 전수 목록에서 절 내용을 한 단어로 부를 수 없는 헤딩을 찾는다. 5차에 확인한 '(하는|되는|보는) ' 40여 건은 '발산하는 적분의 정규화' 처럼 관형절이 붙은 명사구라 전부 오검출이다. 남은 후보 꼴은 '## 쓰임'(lagrange-duality 104 등), '## 기타', '## 일반화' 같은 한 단어 자리표시자다",
+      "createdAt": "2026-09-20T20:38:12.385Z",
+      "seq": 763
+    },
+    {
+      "id": "8dee6289",
+      "title": "'A와 B' 제목 후보 훑기 (3차)",
+      "priority": 12,
+      "note": "2026-09-20 회차에 adeles 를 판정했다. 결론은 분할하지 않고 제목을 '아델' 로 좁히는 것이었다. 근거: 이델군은 아델환의 가역원군이고 이델류군은 그 몫이라 4절의 '대상과 그 대상 위의 연산' 예외에 걸리지 않으며, 이델 없이 아델의 활용 절(유체론, Tate 논문)이 설명되지 않아 8절 통합 기준에 해당한다. 본문 링크는 이미 전부 '아델' 이었고 연관 문서 절의 표시 제목 5 곳만 고쳤다(algebraic-number-fields, number-theory-overview, brauer-groups, p-adic-numbers, tate-thesis). 같은 회차에 같은 문서의 비유 셋도 고쳤다: '첫 수확'→'첫 적용', 'Langlands 강령이 이 전략을 물려받았다'(의인화)→'도 같은 전략을 쓴다', 수체·함수체 평행 절의 '아델은 두 세계를 같은 문장으로 서술하는 언어이며 이 유비를 따라가는 것이 Weil 이래 정수론의 전략이었다'(범위 과장)→사실 진술. tate-thesis 187줄 '증명 한 편이 두 세계를 덮는다' 도 함께 고쳤다. 3차에 볼 남은 후보: 제목만 뽑는 검사법은 for f in docs/*.md; do t=$(head -1 $f); case \"$t\" in *'와 '*|*'과 '*) echo $f;; esac; done 다(grep -l 은 본문 H1 까지 걸려 쓸모가 없다). 150여 건 가운데 대부분은 4절이 명시한 예외(정리 이름 + 그 정리가 답하는 개념)다. 파일명이 한쪽만 가리키는 실제 후보: root-systems '근계와 Weyl 군', prime-ideals '소 아이디얼과 극대 아이디얼', pushforward-measure '상측도와 확률분포', primes '소수와 유일분해', ordinals '서수와 초한귀납법', modular-arithmetic '정수의 합동과 나머지 연산'. eigenvalues '고윳값과 고유벡터' 와 limits-colimits '제한과 쌍대제한' 은 한 정의의 짝이라 오검출이다",
+      "createdAt": "2026-09-20T20:40:40.940Z",
+      "seq": 764
+    },
+    {
+      "id": "4804107b",
+      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (11차)",
+      "priority": 12,
+      "note": "2026-09-20 회차에 10차를 했다. 검사기(스크래치패드 plaintext.mjs)의 부정 선행 클래스에 비 ASCII 라틴 문자 범위 À-ɏ 를 넣어 Erdos/Turan 악센트 오검출을 없앴고, 한 줄 $$ 블록과 인라인 코드 마스킹을 그대로 뒀다. 9차가 남긴 18 건을 전부 처리했다. (1) np-completeness 를 먼저 판정했다. 관례는 p-np 문서가 정한 것을 따른다: 부류를 단독으로 언급하면 수식($\\mathrm{NP}$ 는, $\\mathrm P$ 에), 합성어는 맨 텍스트(NP-완전, NP-hard, NP-complete, NP-중간). 13 곳을 고쳤고 co-NP 는 p-np 표기인 $\\mathrm{coNP}$ 로, #P 는 4절이 요구하는 $\\char35{}\\mathrm P$ 로 썼다. 문제 이름 A, B 도 $A$, $B$ 로 감쌌다. 링크 표시 제목 '[P 대 NP 문제](p-np.md)' 는 문서 제목이라 그대로 뒀다. (2) first-order-logic 6 곳(변수 x, 언어 L, 이론 T, 소수 p. 'L-구조 M은' 은 닫는 $ 뒤 공백 규칙과 하이픈이 부딪혀 '언어 $L$ 위의 구조 $M$ 은' 으로 문장을 고쳤다. 54줄 $$ 블록의 \\text{T의 모든 모델이 } 도 T 를 \\text 밖으로 뺐다). (3) galois-theory 3 곳(체 k, 다항식 f, n제곱근, 맨 텍스트 Z/nZ 를 $\\mathbb Z/n\\mathbb Z$ 로. '정n각형' 은 '정 $n$ 각형' 으로 했다. 저장소에 다른 사례가 없어 이것이 선례다). (4) fundamental-group 2 곳(loop f, 차수 n, 점 x, r∘i 를 $r\\circ i$ 로). 11차에 볼 것: 이 검사기 신호는 이제 kedlaya-algorithm 203줄과 sea-algorithm 214줄의 각주 서지정보 이탤릭 두 건만 남고 0 건에 가깝다. 새 신호를 하나 더 붙일 것: 마스킹 뒤 /[가-힣] ?[0-9]+ ?[가-힣]/ 로 '한글에 붙은 맨 숫자'(3차원, 2배 같은 정상 용법이 대다수라 오검출이 많을 것이니 먼저 표본을 세어 볼 것)",
+      "createdAt": "2026-09-20T20:43:39.721Z",
+      "seq": 765
+    },
+    {
+      "id": "55769098",
+      "title": "한국어 문장에 끼인 영문 용어 훑기 (9차)",
+      "priority": 12,
+      "note": "2026-09-20 회차 8차. 7차가 남긴 후보 가운데 둘을 처리했다. (1) entropy 48 곳을 '엔트로피' 로 옮겼다. 9개 문서(exponential-families, information-theory-overview, kl-divergence, lagrange-duality, large-deviations, machine-learning-overview, random-variables, source-coding, wasserstein-gradient-flow)가 한 문서 안에서 두 표기를 섞어 쓰고 있었고 '엔트로피' 가 다수였다(kl-divergence 10:2, wasserstein 5:1). entropy.md 제목도 'Shannon entropy'→'Shannon 엔트로피' 로 바꿨고 링크 표시 제목 10여 곳과 개관 둘의 mermaid 노드 라벨도 함께 고쳤다. 남긴 것 둘은 영문 서지(ramsey-theory 156줄 논문 제목)와 약어 풀이(wasserstein-gradient-flow 142줄 HWI 의 H 가 entropy 라는 설명)다. 배운 것: 영문 용어를 한국어로 옮기면 저장소가 영문·수식 뒤에 두는 조사 앞 공백('entropy 는')이 남는다. 한국어 용어 뒤에는 붙여 쓰는 것이 기존 관례(sinkhorn, kl-divergence 의 '엔트로피를', '엔트로피의')이므로 치환 뒤 /엔트로피 (는|다|가|의|와|에|를|로|이고)(?![가-힣])/ 로 22 곳의 공백을 지웠다. 뒤에 명사가 오는 '엔트로피 정규화', '엔트로피 항' 은 공백을 유지한다. (2) axiom-of-choice 의 chain 7 곳을 '사슬' 로 옮겼다. dilworth-theorem, partial-orders 를 비롯해 20여 문서가 이미 '사슬' 을 쓴다. 직관 절 17줄의 '올라가는 길(chain)마다' 는 4절이 직관 절에 일상어를 요구하므로 괄호 원어를 떼고, 정의 절 47줄을 '전순서 부분집합, 곧 사슬(chain)마다' 로 첫 등장 자리로 삼았다. $$ 블록 안의 \\text{ chain} 도 \\text{ 사슬} 로 고쳤다. 9차에 볼 남은 후보: naturality 8(natural-transformations 셋, limits-colimits 하나. '자연성' 으로 옮길 만하다. 같은 문서가 '자연변환', '자연동형' 은 한국어로 쓰면서 naturality 만 원어라 표기가 갈려 있다), span 15, rank 31, saturation 10, shadow 19(mock 모듈러 형식의 용어라 원어 유지가 맞을 것). theta, martingale, monad, matroid, mock, hive, alien, cusp, instanton, resurgence, crank, splay, poset 은 굳은 한국어 용어가 없거나 문서 제목 자체가 원어다",
+      "createdAt": "2026-09-20T20:47:09.966Z",
+      "seq": 766
+    },
+    {
+      "id": "50a1c71c",
+      "title": "4절 목록 밖 비유어 회귀 점검 (4차)",
+      "priority": 12,
+      "note": "2026-09-20 회차 3차. 4절 공식 grep 은 예외 다섯(사다리 연산자 lie-algebras 185, 사다리 elliptic-curves 134, 함정문 post-quantum-cryptography 142 둘, 마법함수 theta-series 167) 외에 새 문서 suslin-problem 17줄의 '가산 뼈대' 를 잡았다. 그 자리에 4절이 금지한 '~인 셈이다' 도 있었다. 직관 절 전체를 4절의 일상어 규칙대로 고쳤다: '가산'→'셀 수 있는', '서로소인'→'겹치지 않는'(용어는 정의 절 26줄에 그대로 있다), '가산 뼈대'→'유리수에 해당하는 조밀 부분집합'. 3차 note 가 지시한 목록 밖 후보어(창, 그늘, 온상, 밑거름, 실마리, 수문, 관절, 줄기, 빗장, 자물쇠, 노릇, 무대, 기둥, 허리)를 돌린 결과와 판정: '창' 은 fourier 31줄 '창 함수'(window function 번역어)와 np-completeness 70줄 '2x3 창(window)'(Cook-Levin 증명의 용어)이 용어라 남기고, laplace-method 11줄 '좁은 창' 과 23줄 헤딩 '## 최대점 주위의 창' 은 구간을 창이라 부른 비유라 '좁은 구간' 과 '## 최대점 근방의 폭' 으로 고쳤다. '줄기' 는 localization-rings 198, kazhdan-lusztig 46·96, beilinson-bernstein 73 이 모두 층의 stalk 번역어라 남기고, link-cut-trees 16 과 modular-arithmetic 82 는 동사 '줄다' 의 활용이라 오검출이다. holomorphic-functions 133줄의 더 알아보기 묶음 이름 '### 복소해석의 줄기' 만 비유라 '### 복소해석의 주요 정리' 로 고쳤다. 4차에 볼 목록 밖 후보어: 그물, 사슬(용어 제외), 나사, 저울, 도르래, 용광로, 곳간, 서랍, 울타리, 그리고 동사형 비유 '길을 열다', '문을 두드리다', '손을 들다', '벽에 부딪히다'",
+      "createdAt": "2026-09-20T20:49:40.629Z",
+      "seq": 767
+    },
+    {
+      "id": "33bea03c",
+      "title": "나열형 mermaid 훑기 (21차)",
+      "priority": 12,
+      "note": "2026-09-20 회차 20차. 19차 note 의 줄 번호는 그 뒤 회차들의 수정으로 밀려 쓸 수 없었다. 검사기를 스크래치패드 mermaid-chain.mjs 로 다시 썼다(mermaid 블록마다 노드 id 를 /(^|\\s|>)([A-Za-z_][A-Za-z0-9_]*)\\s*(\\[|\\(|\\{|--|==)/ 로 세고, 간선 수 <= 노드 수 - 1 이면서 화살표 라벨이 없는 것만 보고). 보고 30 건. 처리한 것 둘. (1) eisenstein-ideal 68줄(노드 11, 간선 8)을 지웠다. 비틀림점→X_1(N) 유리점→Jacobian→Eisenstein 몫→유리점 없음 이라는 증명 단계 나열이고, 그림의 모든 정보가 개요 14줄(모듈러 곡선으로의 환원), 정의 절(Eisenstein 아이디얼 생성원, 첨점군 크기 num((p-1)/12)), Mazur 정리 A/B/C 에 이미 있다. Herbrand-Ribet 대비는 바로 위 문단이 말한다. (2) kolyvagin-logachev 34줄(노드 10, 간선 8)을 지웠다. L(f,1)≠0→Euler 계→유도류→Selmer 유한→Mordell-Weil/Sha→겨냥 몫→Merel 나열이고 본문 11, 17, 19, 26줄과 증명 단계 목록 74-75줄에 있다. 그림에만 있던 Merel 로의 연결은 11줄이 이미 링크한다. 같은 자리 28줄의 'L 함수가 Euler 계의 시동을 걸고 Euler 계가 Selmer 군을 누른다'(자동차 비유)도 사실 진술로 고쳤다. 남긴 것과 근거: finite-simple-groups 56(Sylow 2-부분군 구조에 따른 경우 분할. 분기 트리 자체가 분류의 구조이고 다음 문단이 '첫 갈림길' 로 그림을 받는다), color-refinement 19(정점과 이웃의 실제 그래프 + 갱신 규칙). 21차에 판정할 나머지: borel-pade 29, color-refinement 45, geometric-satake 113, lie-algebras 156, merel-theorem 35, dynamic-connectivity 19, effective-resistance 17, fft 29, order-lattices 88, resurgence 41, root-systems 51, tracy-widom 35, umbral-moonshine 42, vogan-packets 37. 19차 note 가 이미 남기기로 판정한 adjunctions 83, tensor-products 51, localization-rings 111, link-cut-trees 22, source-coding 29, heyting-algebras 25, mass-formula 47, union-find 27 과 개관 넷은 건너뛴다",
+      "createdAt": "2026-09-20T20:53:16.585Z",
+      "seq": 768
+    },
+    {
+      "id": "b13a5f4d",
+      "title": "산문 금지 표현 회귀 점검 (7차)",
+      "priority": 12,
+      "note": "2026-09-20 회차 6차. 5차 note 가 지시한 세 가지를 돌렸다. '우리' 호칭은 0 건이다(검사법: grep -rnoE '(^|[^가-힣])우리([가-힣]{0,2})([ .,]|$)' docs/*.md). '~해 보자' 는 8 건이 나왔고 전부 고쳤다: connectedness 17('실직선의 부분집합 두 개를 보자. 구간 하나와,'→'실직선에서 구간 하나와 ... 합집합을 견준다'), connectedness 133('경로 성분 P 를 보자'→'경로 성분을 P 라 하자'), curvature 9('시간으로 보자'→'시간으로 놓는다'), finite-simple-groups 27('위수 12 인 군을 예로 보자'→'위수 12 인 군이 예다'), index-theorem 35('작용소로 보자'→'작용소라 하자'), matchings 78('이제 ... 부분그래프를 보자'→'남은 부분은 ... 부분그래프다'), ordinary-differential-equations 99('Jacobian을 보자'→'Jacobian 을 계산한다'. 'autonomous 계' 도 '자율 방정식' 으로 옮겼다. 9차 회차가 같은 문서에서 이미 한 번 옮긴 표현이 한 곳 남아 있었다), serre-conjecture 46('을 보자'→'을 예로 든다'). 배운 것: '~라 하자'(let)는 수학 관례라 4절이 금지하지 않고, 금지 대상은 권유형 '보자' 다. '~기 때문이다' 는 문서마다 1 건 정도로 흩어져 있어 문서별 판정이 필요하다(4절이 금지하는 것은 앞 문장을 되풀이하는 경우뿐이고 정당한 인과 설명은 허용). 7차에 훑을 것: '~기 때문이다' 를 grep -rnE '기 때문이다' 로 뽑아 앞 문장과 견주어 되풀이인지 판정, 그리고 '~라는 사실은', '~이 중요하다', '~할 필요가 있다', '~라고 할 수 있다' 같은 완곡·군더더기 표현",
+      "createdAt": "2026-09-20T20:54:27.888Z",
+      "seq": 769
+    },
+    {
+      "id": "6c1fba71",
+      "title": "baire-category 의 후속 간선 (2차)",
+      "priority": 12,
+      "note": "2026-09-20 회차. 1차 note 의 후속 후보 셋을 판정했다. (1) Banach-Steinhaus 를 독립 문서로 떼지 않는다. baire-category 가 91줄이고 균등유계성 원리가 그 안에서 7줄짜리 한 절이라 8절의 분할 기준(1000줄)에 한참 못 미친다. 1차 note 가 적은 '양쪽에 증명 요지가 있다' 는 지금 사실이 아니다. banach-spaces 에는 Steinhaus 언급이 없고 baire-category 59줄에만 있다. (2) 대신 baire-category → martins-axiom 간선을 그었다. martins-axiom 73줄이 이미 'Baire 범주 정리를 가산 개에서 kappa 개로 올린 것' 이라 적고 있어 5절의 일반화 관계에 정확히 맞는다. martins-axiom 의 부모가 forcing 하나뿐이라 4개 제한에도 여유가 있다. 5절이 요구하는 '왜 그 부모인지가 자식의 개요나 직관에서 드러나야 한다' 에 맞춰 개요에 한 문장('위상 쪽에서 보면 이 주장은 Baire 범주 정리의 가산 조건을 비가산 개로 올린 것이다')을 넣고, 4절의 본문 링크 최초 1회 규칙에 맞춰 73줄의 링크는 평문으로 바꿨다. README 간선 수도 790→791 로 맞췄다. 2차에 볼 것: baire-category 의 남은 후속 후보는 Polish 공간(완비 분리가능 거리공간. 부모는 baire-category 보다 completeness 와 metric-spaces 가 자연스러워 baire-category 의 자식으로 긋기 전에 판정할 것)과 일반적 성질(generic property). open mapping 정리와 closed graph 정리는 문서가 없고, 둘을 합친 'Banach 공간의 세 기본 정리' 문서를 만들면 baire-category 의 자식 자리가 분명해진다",
+      "createdAt": "2026-09-20T20:56:19.400Z",
+      "seq": 770
+    },
+    {
+      "id": "bed75969",
+      "title": "reverse-mathematics 의 후속 간선 (2차)",
+      "priority": 12,
+      "note": "2026-09-20 회차. 1차 note 의 후속 후보(Ramsey 정리의 역수학적 위치, WKL_0 의 원시재귀 산술 보존성, 튜링 차수)는 모두 새 문서를 요구해 이번 회차에 간선을 긋지 못했다. 대신 부모를 판정했다. (1) formalism-hilbert-program 은 부모가 아니다. 역수학의 활용 절 96줄이 Hilbert 프로그램의 부분 수행을 말하지만, 개요와 직관이 Bolzano-Weierstrass 로 시작해 Hilbert 언급 없이 그대로 읽히므로 5절의 '부모를 빼도 자식의 개요가 그대로 읽히는가. 그렇다면 배경이다' 에 걸린다. (2) computability 를 부모로 더했다. RCA_0 의 뜻(재귀적 이해)과 직관 절 마지막 문단의 '계산 가능한 집합만 인정하는 약한 체계' 가 계산 가능성 없이는 읽히지 않는다. 역수학은 계산 가능성 이론의 응용이라 5절의 더 알아보기 기준도 통과한다. 이 간선으로 computability 의 자식이 7개가 되어 5절대로 H3 묶음을 넣었다: '결정 불가능성과 논리'(rice-theorem, godel-incompleteness, reverse-mathematics), '계산 모형'(domain-theory, finite-automata, lambda-calculus), '복잡도'(p-np). 묶음 안에서는 원래 상대 순서를 유지해 order-check 를 통과시켰다. README 간선 수 791→792. 2차에 볼 것: reverse-mathematics 는 여전히 리프다. 자식 자리를 만들려면 튜링 차수 문서(computability 의 자식이자 역수학 '모형과 독립성' 절 90줄의 저차 기저 정리가 부르는 자리)를 먼저 써야 한다. Ramsey 정리 쪽은 ramsey-theory 를 역수학의 자식으로 두면 방향이 반대가 되므로(Ramsey 이론을 이해하는 데 역수학이 필요하지 않다) 간선이 아니라 본문 링크로 둘 것",
+      "createdAt": "2026-09-20T20:57:58.558Z",
+      "seq": 771
+    },
+    {
+      "id": "4091a5a5",
+      "title": "model-theory 의 후속 간선 (2차)",
+      "priority": 12,
+      "note": "2026-09-20 회차. 자식이 될 만한 기존 문서가 없음을 확인했다. 활용 절 네 항목이 부르는 것은 o-최소성, 안정성 이론, Ax-Grothendieck 정리, Chevalley 정리인데 모두 문서가 없다. nonstandard-analysis 를 model-theory 의 자식으로 옮길지 재판정했고 결론은 옮기지 않는다. 근거: nonstandard-analysis 개요 7줄이 '무한소를 가진 체의 존재는 Löwenheim-Skolem 정리의 콤팩트성 논증에서 나온다' 고 적어 5절이 요구하는 부모의 이유를 lowenheim-skolem 이 이미 만족한다. model-theory 의 기본 확대는 이전 원리를 세우는 데 쓰이지만 체의 존재 근거는 콤팩트성이다. lowenheim-skolem 이 model-theory 의 조상이므로 둘을 함께 부모로 두는 것도 5절의 조상 중복에 걸린다. 2차에 볼 것: model-theory 의 리프를 풀려면 새 문서가 필요하다. 우선순위는 o-최소성(부모 model-theory, 활용 절 둘째 항목이 부르고 Tarski 의 결정 절차와 실폐체 양화사 소거가 정의 절 57줄에 이미 있어 선수지식이 갖춰졌다) > Ax-Grothendieck 정리(부모 model-theory, 대수적 폐체의 양화사 소거 응용. 유한체 위의 논증이라 finite-fields 도 부모 후보) > 안정성 이론(Morley 정리 다음 단계지만 분류 이론 전체를 담아야 해 한 회차에 쓰기 어렵다)",
+      "createdAt": "2026-09-20T20:58:53.012Z",
+      "seq": 772
     },
     {
       "id": "d2720772",
@@ -962,6 +946,22 @@
       "note": "2026-09-20 회차에 새로 썼다(부모 ordinary-differential-equations, analysis-overview 의 '미분과 적분' 갈래에서 상미분방정식 바로 뒤, 127줄). 직관 절은 길이 pi 인 줄의 진동 하나를 끝까지 끌고 가, 계수가 변하면 해가 사인이 아니지만 직교성은 부분적분 두 번의 항등식에서 그대로 나온다는 데까지 갔다. 성질 절은 직교성, 이산성과 완전성(Green 함수로 콤팩트 자기수반 작용소로 바꾸는 절차), Sturm 진동정리 셋이다. hilbert-spaces, spherical-harmonics, bounded-operators 를 본문 링크했다. 리프다. 후속 후보: 특이 Sturm-Liouville 문제와 Weyl 의 극한점·극한원 분류, Prufer 변환과 고유값의 수치 계산, 1 차원 Schrodinger 작용소와 산란 이론, Legendre 와 Bessel 을 각각 문서로 뗄지",
       "createdAt": "2026-09-20T16:55:53.401Z",
       "seq": 759
+    },
+    {
+      "id": "18b16b60",
+      "title": "o-minimality 의 후속 간선",
+      "priority": 10,
+      "note": "2026-09-20 회차에 새로 썼다(부모 model-theory, foundations-overview 논리 갈래, 91줄). model-theory 의 리프를 풀려고 그 활용 절 둘째 항목(실폐체 양화사 소거와 Tarski 결정 절차)을 독립 문서로 뗀 것이다. lie-groups 를 활용 절에서 링크했다. 리프다. 후속 후보: Pila-Wilkie 셈 정리(활용 절 셋째 항목. Manin-Mumford 와 André-Oort 로 이어지고 elliptic-curves, modular-curves 쪽과 이을 수 있다), Wilkie 정리와 Pfaffian 함수(성질 절 'o-최소인 구조' 가 부른다), 준해석적 집합과 tame 위상(활용 절 둘째 항목). 셀 분해 정리의 증명 요지를 두 문단으로 줄여 두었으니 별도 문서로 떼면 그쪽에서 단조성 정리까지 다룰 것. 같은 회차에 판정한 것: 안정성 이론과 Ax-Grothendieck 정리도 model-theory 의 자식 자리이지만 아직 문서가 없다",
+      "createdAt": "2026-09-20T21:00:48.450Z",
+      "seq": 773
+    },
+    {
+      "id": "5908f904",
+      "title": "Ax-Grothendieck 정리",
+      "priority": 10,
+      "note": "부모 model-theory(대수적 폐체의 양화사 소거 응용), finite-fields 도 부모 후보다. model-theory 활용 절 첫 항목이 '복소 아핀 공간의 단사 다항식 사상이 전사' 라고 진술만 해 두었다. 증명이 유한체 위에서 단사=전사를 보이고 콤팩트성으로 표수 0 으로 옮기는 것이라 first-order-logic 의 '표수 0 에서 참이면 큰 표수에서도 참' 이전 논법(107줄)과 같은 구조다. 분야는 논리와 대수기하 양쪽",
+      "createdAt": "2026-09-20T21:00:48.555Z",
+      "seq": 774
     },
     {
       "id": "dfb3e493",
