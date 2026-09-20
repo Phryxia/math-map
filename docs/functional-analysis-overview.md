@@ -41,6 +41,7 @@ graph TD
 - [내적 공간](inner-product-spaces.md) — 내적이 정하는 노름과 직교성. Cauchy–Schwarz 부등식과 Gram–Schmidt 직교화
 - [Hilbert 공간](hilbert-spaces.md) — 완비 내적 공간. 닫힌 부분공간으로의 직교사영과 Riesz 표현 정리
 - [Banach 공간](banach-spaces.md) — 완비 노름 공간. 열린사상 정리, 닫힌 그래프 정리, 균등유계성 원리
+- [$L^p$ 공간](lp-spaces.md) — 측도공간 위의 적분가능 함수들이 이루는 Banach 공간. Hölder 와 Minkowski 부등식, 쌍대성
 - [쌍대 공간](dual-space.md) — 선형범함수 전체가 이루는 공간. 유한차원과 달리 원공간과 표준적으로 동형이 아니다
 
 ## 수렴과 직교기저

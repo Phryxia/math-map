@@ -137,6 +137,7 @@ Banach 공간에는 직교성, 사영 정리, 쌍대공간과 자기 자신의 �
 
 ## 더 알아보기
 
+- [$L^p$ 공간](lp-spaces.md)
 - [Arzelà–Ascoli 정리](arzela-ascoli.md)
 
 #functional_analysis #analysis #topology
