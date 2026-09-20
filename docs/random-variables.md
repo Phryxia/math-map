@@ -1,4 +1,4 @@
-# 확률변수와 기댓값
+# 확률변수
 
 # 개요
 
@@ -87,7 +87,7 @@ $$
 \mathbb E[aX+bY]=a\thinspace\mathbb E[X]+b\thinspace\mathbb E[Y]
 $$
 
-증명은 Lebesgue 적분의 표준적인 단계 논법을 따른다[^1]. 지시함수에서는 측도의 가법성이 곧 등식이고, 음이 아닌 단순함수에서는 유한합이므로 직접 확인되며, 음이 아닌 가측함수에서는 단순함수의 증가열을 잡아 [단조 수렴 정리](monotone-convergence.md)로 극한을 교환한다. 일반 적분 가능 함수는 양의 부분과 음의 부분으로 나누어 적용한다. 이 증명에 독립성은 쓰이지 않는다.
+증명은 Lebesgue 적분의 표준적인 단계 논법을 따른다[^1]. 지시함수에서는 측도의 가법성이 곧 등식이고, 음이 아닌 단순함수에서는 유한합이므로 바로 따라오며, 음이 아닌 가측함수에서는 단순함수의 증가열을 잡아 [단조 수렴 정리](monotone-convergence.md)로 극한을 교환한다. 일반 적분 가능 함수는 양의 부분과 음의 부분으로 나누어 적용한다. 이 증명에 독립성은 쓰이지 않는다.
 
 ## 곱과 분산의 가법성
 
@@ -118,12 +118,12 @@ $$
 $$
 P(Z\ge a)\le \frac{\mathbb E[Z]}{a},
 \qquad
-P\big(|X-\mathbb E X|\ge \varepsilon\big)\le\frac{\mathrm{Var}(X)}{\varepsilon^2}
+P\big(\vert X-\mathbb E X\vert\ge \varepsilon\big)\le\frac{\mathrm{Var}(X)}{\varepsilon^2}
 $$
 
 ## Jensen 부등식
 
-$\varphi$ 가 볼록함수이고 $X$ 와 $\varphi(X)$ 가 적분 가능하면 다음이 성립한다. 증명 개요: $\mathbb E X$ 에서의 지지 직선 $\varphi(t)\ge\varphi(\mathbb E X)+c(t-\mathbb E X)$ 를 잡고 $t=X$ 를 대입한 뒤 기댓값을 취한다. [볼록성](convexity.md)의 지지 직선 존재가 핵심이다.
+$\varphi$ 가 볼록함수이고 $X$ 와 $\varphi(X)$ 가 적분 가능하면 다음이 성립한다. 증명의 요지는 지지 직선이다. [볼록함수](convexity.md)는 각 점에서 지지 직선을 가지므로 $\mathbb E X$ 에서 $\varphi(t)\ge\varphi(\mathbb E X)+c(t-\mathbb E X)$ 를 잡고, $t=X$ 를 대입한 뒤 양변에 기댓값을 취한다.
 
 $$
 \varphi\big(\mathbb E[X]\big)\le\mathbb E\big[\varphi(X)\big]
@@ -141,26 +141,30 @@ Cauchy 분포는 양의 부분과 음의 부분의 적분이 모두 무한해서
 
 # 활용
 
-## 표준 예시
+## Bernoulli 분포와 이항분포
 
-베르누이 시행에서 $X$ 가 $1$ 을 확률 $p$ 로, $0$ 을 확률 $1-p$ 로 가지면 다음이 성립한다.
+Bernoulli 시행에서 $X$ 가 $1$ 을 확률 $p$ 로, $0$ 을 확률 $1-p$ 로 가지면 다음이 성립한다.
 
 $$
 \mathbb E[X]=p,\qquad \mathrm{Var}(X)=p(1-p)
 $$
 
-독립인 베르누이 n개의 합인 이항분포는 선형성과 분산의 가법성으로 즉시 계산된다.
+독립인 Bernoulli 확률변수 $n$ 개의 합인 이항분포는 선형성과 분산의 가법성으로 계산된다.
 
 $$
 \mathbb E\negthinspace\left[\sum_{i=1}^n X_i\right]=np,\qquad
 \mathrm{Var}\negthinspace\left(\sum_{i=1}^n X_i\right)=np(1-p)
 $$
 
-지시함수로 쪼개는 기법은 조합론적 계산에서 강력하다. 예를 들어 n명의 사람에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 사람 수의 기댓값은, 사람 i가 자기 모자를 받는 사건의 지시함수 합으로 보고 선형성을 쓰면 곧바로 1이다. 이때 지시함수들은 독립이 아니지만 선형성은 독립성을 요구하지 않는다.
+## 지시함수 분해
 
-## 다른 문서와의 연결
+$n$ 명에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 사람 수 $N$ 의 기댓값을 구한다. 사람 $i$ 가 자기 모자를 받는 사건의 지시함수를 $\mathbf 1_i$ 라 하면 $N=\sum_{i=1}^n \mathbf 1_i$ 이고 $\mathbb E[\mathbf 1_i]=1/n$ 이므로 선형성으로 $\mathbb E[N]=1$ 이 나온다. 지시함수들은 독립이 아니지만 선형성은 독립성을 요구하지 않는다.
 
-조건부확률을 확률변수 층위로 올리면 조건부기댓값이 되고, 여기서 [Bayes 정리](bayes.md)의 측도론적 형태가 나온다. 이산 확률변수의 분포에 −log p를 기댓값으로 취한 양이 [Shannon entropy](entropy.md)다. 확률변수열의 기댓값 극한 교환에는 [지배 수렴 정리](dominated-convergence.md)가 기본 도구로 쓰인다.
+## 확률론의 다른 개념
+
+- **[조건부 기댓값](conditional-expectation.md).** 조건부확률을 확률변수 층위로 올린 양이며, [Bayes 정리](bayes.md)의 측도론적 형태를 이 언어로 쓴다.
+- **[Shannon entropy](entropy.md).** 이산 확률변수 $X$ 의 질량함수를 $p$ 라 할 때 $\mathbb E\lbrack -\log p(X)\rbrack$ 이 엔트로피다.
+- **[지배 수렴 정리](dominated-convergence.md).** 확률변수열의 기댓값과 극한을 바꿀 때 쓴다.
 
 [^1]: Marco Taboga, "Expected value and the Lebesgue integral", StatLect. https://www.statlect.com/fundamentals-of-probability/expected-value-and-Lebesgue-integral
 [^2]: Terence Tao, "275A, Notes 1: Integration and expectation". https://terrytao.wordpress.com/2015/10/03/275a-notes-1-integration-and-expectation/

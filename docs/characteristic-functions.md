@@ -139,7 +139,7 @@ $\varphi_X(t)^n=\varphi_X(c_nt)e^{id_nt}$ 꼴을 요구하면 **안정분포**�
 ## 선수지식
 
 - [분포 수렴과 Prokhorov 정리](weak-convergence.md)
-- [확률변수와 기댓값](random-variables.md)
+- [확률변수](random-variables.md)
 
 ## 더 알아보기
 

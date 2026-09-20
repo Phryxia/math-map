@@ -124,7 +124,7 @@ $$
 ## 선수지식
 
 - [특이값 분해](singular-value-decomposition.md)
-- [확률변수와 기댓값](random-variables.md)
+- [확률변수](random-variables.md)
 
 ## 더 알아보기
 

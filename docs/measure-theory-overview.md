@@ -60,7 +60,7 @@ graph TD
 
 ## 다른 분야에서의 쓰임
 
-- [확률변수와 기댓값](random-variables.md): 가측함수로서의 확률변수, 적분으로서의 기댓값
+- [확률변수](random-variables.md): 가측함수로서의 확률변수, 적분으로서의 기댓값
 - [조건부 기댓값](conditional-expectation.md): Radon–Nikodym 정리로 정의하는 부분 $\sigma$ 대수 위의 사영
 - [분포 수렴과 Prokhorov 정리](weak-convergence.md): 측도의 약수렴과 tightness
 - [최적 수송과 Wasserstein 거리](optimal-transport.md): 두 측도를 잇는 결합과 수송비용

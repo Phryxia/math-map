@@ -186,7 +186,7 @@ $$
 
 ## 선수지식
 
-- [확률변수와 기댓값](random-variables.md)
+- [확률변수](random-variables.md)
 - [Radon–Nikodym 정리](radon-nikodym.md)
 
 ## 더 알아보기

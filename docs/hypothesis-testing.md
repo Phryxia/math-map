@@ -152,7 +152,7 @@ $$
 
 ## 선수지식
 
-- [확률변수와 기댓값](random-variables.md)
+- [확률변수](random-variables.md)
 - [중심극한정리](central-limit-theorem.md)
 - [최대가능도 추정](maximum-likelihood.md)
 

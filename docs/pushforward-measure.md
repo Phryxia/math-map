@@ -121,7 +121,7 @@ $$
 
 ## 더 알아보기
 
-- [확률변수와 기댓값](random-variables.md)
+- [확률변수](random-variables.md)
 - [측도변환과 우도비](change-of-measure.md)
 - [분포 수렴과 Prokhorov 정리](weak-convergence.md)
 - [최적 수송과 Wasserstein 거리](optimal-transport.md)

@@ -155,7 +155,7 @@ $$
 
 ## 선수지식
 
-- [확률변수와 기댓값](random-variables.md)
+- [확률변수](random-variables.md)
 - [미분](derivative.md)
 - [통계 개관](statistics-overview.md)
 

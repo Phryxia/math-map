@@ -32,7 +32,7 @@ $$
 P(X \ge t) \thickspace\le\thickspace \frac{E[X]}{t}.
 $$
 
-증명은 한 줄이다. $X \ge t \cdot \mathbf 1\lbrace X \ge t\rbrace$ 의 양변에 기댓값을 취하면 된다([확률변수와 기댓값](random-variables.md)의 단조성).
+증명은 한 줄이다. $X \ge t \cdot \mathbf 1\lbrace X \ge t\rbrace$ 의 양변에 기댓값을 취하면 된다([확률변수](random-variables.md)의 단조성).
 
 **Chebyshev 부등식.** $\mathrm{Var}(X) \lt\infty$ 이면
 
@@ -177,7 +177,7 @@ $$
 
 ## 선수지식
 
-- [확률변수와 기댓값](random-variables.md)
+- [확률변수](random-variables.md)
 - [큰 수의 법칙](law-of-large-numbers.md)
 
 ## 더 알아보기

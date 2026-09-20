@@ -127,7 +127,7 @@ $$
 ## 선수지식
 
 - [Fredholm 행렬식](fredholm-determinant.md)
-- [확률변수와 기댓값](random-variables.md)
+- [확률변수](random-variables.md)
 
 ## 더 알아보기
 

@@ -6,7 +6,7 @@
 
 확률론의 갈래는 네 줄기다. 유한 확률 공간에서 시작하는 기초와 극한정리, 조건부 기댓값 위에 세운 이산시간 확률과정, Brown 운동과 확률적분의 연속시간 이론, 그리고 고윳값의 극한 법칙을 다루는 무작위 행렬이다. 측도론적 기반은 [측도](measure.md)와 [Lebesgue 적분](lebesgue-integral.md)에, 추론 쪽은 [Bayes 추론](bayesian-inference.md)과 [가설검정](hypothesis-testing.md)에 있다.
 
-시작은 [유한 확률 공간](probability.md)이다. 거기서 [확률변수와 기댓값](random-variables.md)으로 넘어가면 [큰 수의 법칙](law-of-large-numbers.md)과 [중심극한정리](central-limit-theorem.md)의 두 극한정리가 나오고, [조건부 기댓값](conditional-expectation.md)에서 [Martingale](martingales.md)을 거쳐 확률과정으로 갈라진다.
+시작은 [유한 확률 공간](probability.md)이다. 거기서 [확률변수](random-variables.md)로 넘어가면 [큰 수의 법칙](law-of-large-numbers.md)과 [중심극한정리](central-limit-theorem.md)의 두 극한정리가 나오고, [조건부 기댓값](conditional-expectation.md)에서 [Martingale](martingales.md)을 거쳐 확률과정으로 갈라진다.
 
 # 지도
 
@@ -49,7 +49,7 @@ graph TD
 
 - [유한 확률 공간](probability.md): 표본공간, 사건, 확률측도
 - [Bayes 정리](bayes.md): 조건부확률의 역전
-- [확률변수와 기댓값](random-variables.md): 가측함수로서의 확률변수와 적분으로서의 기댓값
+- [확률변수](random-variables.md): 가측함수로서의 확률변수와 적분으로서의 기댓값
 - [분포 수렴과 Prokhorov 정리](weak-convergence.md): 분포의 수렴과 tightness
 - [특성함수와 Lévy 연속성 정리](characteristic-functions.md): Fourier 변환으로 분포 수렴을 판정
 - [큰 수의 법칙](law-of-large-numbers.md): 표본평균이 기댓값으로

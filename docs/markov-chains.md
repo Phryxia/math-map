@@ -173,7 +173,7 @@ $$
 
 ## 선수지식
 
-- [확률변수와 기댓값](random-variables.md)
+- [확률변수](random-variables.md)
 - [선형사상](linear-maps.md)
 
 ## 더 알아보기

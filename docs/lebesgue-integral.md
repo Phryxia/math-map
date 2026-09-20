@@ -121,6 +121,6 @@ $f_n = n \cdot \mathbf{1}\_{(0,1/n)}$ 은 점별로 $0$ 에 수렴하지만 모�
 - [단조 수렴 정리](monotone-convergence.md)
 - [유계변동 함수](bounded-variation.md)
 - [Radon–Nikodym 정리](radon-nikodym.md)
-- [확률변수와 기댓값](random-variables.md)
+- [확률변수](random-variables.md)
 
 #measure_theory #analysis #probability

@@ -35,7 +35,7 @@ graph TD
 
 ## 정보량
 
-- [확률변수와 기댓값](random-variables.md) — 정보량은 확률변수의 함수를 평균한 값이다
+- [확률변수](random-variables.md) — 정보량은 확률변수의 함수를 평균한 값이다
 - [Shannon entropy](entropy.md) — 연속성, 단조성, 가법성을 요구하면 $-\sum p\log p$ 가 상수배를 빼고 유일하다
 - [KL divergence](kl-divergence.md) — 두 분포의 차이와 두 변수가 공유하는 정보. 비음수성에서 정보이론의 부등식들이 나온다
 
