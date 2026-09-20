@@ -131,6 +131,6 @@ $\mathbb Z_p^{d}$ 확대나 비가환 $p$ 진 Lie 확대 위에서 Iwasawa 가�
 
 ## 더 알아보기
 
-- 아직 연결한 문서가 없다.
+아직 연결한 문서가 없다.
 
 #number_theory #algebra

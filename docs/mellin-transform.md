@@ -186,6 +186,6 @@ $\theta$ 의 변환식을 Mellin 으로 읽으면 $\zeta$ 의 함수방정식이
 
 ## 더 알아보기
 
-- 아직 연결한 문서가 없다.
+아직 연결한 문서가 없다.
 
 #analysis #number_theory #computation
