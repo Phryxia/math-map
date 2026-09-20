@@ -82,7 +82,7 @@ $$
 (\mathbb{Z}/N)^{\times}\ \cong\ \prod_{i=1}^{k}(\mathbb{Z}/n_i)^{\times}
 $$
 
-원소 개수를 세면 Euler phi의 곱셈성이 따라온다.
+원소 개수를 세면 $\varphi$ 의 곱셈성이 따라온다.
 
 $$
 \varphi(mn)=\varphi(m)\varphi(n)\qquad (\gcd(m,n)=1)

@@ -66,7 +66,7 @@ $$
 \forall A\thinspace\exists S\thinspace\forall x\thinspace\bigl(x\in S\leftrightarrow (x\in A\wedge \varphi(x,\vec p))\bigr)
 $$
 
-6. 치환 스킴(replacement): 각 논리식 phi마다 하나의 공리. phi가 A 위에서 함수처럼 행동하면 그 상이 집합을 이룬다.
+6. 치환 스킴(replacement): 각 논리식 $\varphi$ 마다 하나의 공리. $\varphi$ 가 $A$ 위에서 함수처럼 행동하면 그 상이 집합을 이룬다.
 
 $$
 \forall x\in A\thinspace\exists! y\thinspace\varphi(x,y)\ \Longrightarrow\ \exists B\thinspace\forall y\thinspace\bigl(y\in B\leftrightarrow\exists x\in A\thinspace\varphi(x,y)\bigr)
