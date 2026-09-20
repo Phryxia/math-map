@@ -163,7 +163,7 @@ $n$ 명에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 �
 ## 확률론의 다른 개념
 
 - **[조건부 기댓값](conditional-expectation.md).** 조건부확률을 확률변수 층위로 올린 양이며, [Bayes 정리](bayes.md)의 측도론적 형태를 이 언어로 쓴다.
-- **[Shannon entropy](entropy.md).** 이산 확률변수 $X$ 의 질량함수를 $p$ 라 할 때 $\mathbb E\lbrack -\log p(X)\rbrack$ 이 엔트로피다.
+- **[Shannon 엔트로피](entropy.md).** 이산 확률변수 $X$ 의 질량함수를 $p$ 라 할 때 $\mathbb E\lbrack -\log p(X)\rbrack$ 이 엔트로피다.
 - **[지배 수렴 정리](dominated-convergence.md).** 확률변수열의 기댓값과 극한을 바꿀 때 쓴다.
 
 [^1]: Marco Taboga, "Expected value and the Lebesgue integral", StatLect. https://www.statlect.com/fundamentals-of-probability/expected-value-and-Lebesgue-integral

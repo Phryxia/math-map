@@ -19,7 +19,7 @@ graph TD
   CVX["볼록성"] --> GD
   DER["미분"] --> GD
   GD --> VAE
-  ENT["Shannon entropy"] --> KL["KL divergence"]
+  ENT["Shannon 엔트로피"] --> KL["KL divergence"]
   KL --> VAE
   PCA["주성분 분석"] --> PPCA["확률적 PCA"]
   PCA --> KPCA["커널 PCA"]
@@ -61,7 +61,7 @@ graph TD
 
 - [KL divergence](kl-divergence.md) — 밀도의 비를 평균한 양. 증거 하한과 변분 추론의 손실을 이 양으로 쓴다
 - [최적 수송과 Wasserstein 거리](optimal-transport.md) — 질량을 옮기는 최소 비용. 받침이 겹치지 않는 분포 사이에서도 유한하다
-- [Sinkhorn 알고리즘과 엔트로피 정규화](sinkhorn.md) — entropy 항을 더한 수송 문제를 행렬 스케일링 반복으로 푼다
+- [Sinkhorn 알고리즘과 엔트로피 정규화](sinkhorn.md) — 엔트로피 항을 더한 수송 문제를 행렬 스케일링 반복으로 푼다
 - [불균형 최적 수송](unbalanced-optimal-transport.md) — 총질량이 다른 두 측도 사이로 수송을 확장한다
 
 ## 그래프 학습

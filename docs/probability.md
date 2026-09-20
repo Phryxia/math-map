@@ -94,7 +94,7 @@ $$
 
 ## 정보 갱신
 
-관측이 들어올 때마다 조건부 확률로 믿음을 갱신하는 절차가 Bayes 추론이고, 남은 불확실성을 수로 재는 것이 [Shannon entropy](entropy.md)다.
+관측이 들어올 때마다 조건부 확률로 믿음을 갱신하는 절차가 Bayes 추론이고, 남은 불확실성을 수로 재는 것이 [Shannon 엔트로피](entropy.md)다.
 
 ## 모형화의 전제
 
@@ -111,7 +111,7 @@ $$
 
 ## 더 알아보기
 
-- [Shannon entropy](entropy.md)
+- [Shannon 엔트로피](entropy.md)
 - [논문: Graph Sparsification by Effective Resistances](spectral-sparsification.md)
 - [Bayes 정리](bayes.md)
 - [측도](measure.md)
