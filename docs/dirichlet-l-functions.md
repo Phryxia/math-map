@@ -78,7 +78,7 @@ $\chi=\chi_0$ 이면 $L(s,\chi_0)=\zeta(s)\prod_{p\mid q}(1-p^{-s})$ 이다. $\c
 
 ## 일반화된 Riemann 가설
 
-모든 Dirichlet 지표 $\chi$ 에 대해 $L(s,\chi)$ 의 비자명한 0 점이 전부 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 주장이다. $\chi=\chi_0$ 인 경우가 원래 Riemann 가설이다.
+모든 Dirichlet 지표 $\chi$ 에 대해 $L(s,\chi)$ 의 비자명한 0 점이 전부 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 주장이다. $\chi=\chi_0$ 인 경우가 [Riemann 가설](riemann-hypothesis.md)이다.
 
 # 성질
 

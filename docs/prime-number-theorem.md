@@ -94,7 +94,7 @@ $$
 \pi(x)=\mathrm{Li}(x)+O\big(\sqrt x\thinspace\ln x\big)
 $$
 
-명시 공식에서 $\lvert x^\rho\rvert=x^{1/2}$ 가 되기 때문이다. 역도 성립하므로 이 오차 한계는 Riemann 가설과 동치다.
+명시 공식에서 $\lvert x^\rho\rvert=x^{1/2}$ 가 되기 때문이다. 역도 성립하므로 이 오차 한계는 [Riemann 가설](riemann-hypothesis.md)과 동치다.
 
 ## $\pi(x)$ 와 $\mathrm{Li}(x)$ 의 부호
 
