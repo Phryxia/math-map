@@ -6,7 +6,7 @@
 
 [부분순서](partial-orders.md)에서 시작한다. 여기서 세 방향으로 갈린다. 상한과 하한을 늘 가지도록 요구하면 [순서론의 격자](order-lattices.md)가 되고, 여기에 보수나 함의를 얹으면 [Boolean algebra](boolean-algebras.md)와 [Heyting algebra](heyting-algebras.md)가 되어 고전 논리와 직관주의 논리의 대수적 대응물을 준다. 순서를 보존하는 사상의 쌍을 보면 [Galois 연결](galois-connections.md)이 되고, 그 고정점에서 [영역 이론](domain-theory.md)과 [추상해석](abstract-interpretation.md)이 나온다. 순서집합을 사슬과 반사슬로 쪼개면 [Dilworth 정리](dilworth-theorem.md)의 조합론이 된다.
 
-순서는 범주의 특수한 경우이기도 하다. 사상이 각 쌍마다 최대 하나인 범주가 부분순서집합이고, 그 위의 수반이 Galois 연결이며, 상한과 하한이 쌍대극한과 극한이다.
+순서는 범주의 특수한 경우이기도 하다. 사상이 각 쌍마다 최대 하나인 범주가 부분순서집합이다. 그 위의 수반이 Galois 연결이고 상한과 하한이 쌍대극한과 극한이다.
 
 # 지도
 
