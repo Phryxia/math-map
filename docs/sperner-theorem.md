@@ -81,6 +81,6 @@ $n$ 이 짝수이면 크기 $n/2$ 인 부분집합 전체가 유일한 최대 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Erdős–Ko–Rado 정리](erdos-ko-rado.md)
 
 #combinatorics #order_theory
