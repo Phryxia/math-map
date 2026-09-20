@@ -70,6 +70,6 @@ Dilworth 정리와 Mirsky 정리는 사슬 $k$ 개의 합집합에 대한 하나
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Sperner 정리](sperner-theorem.md)
 
 #order_theory #combinatorics #graph_theory
