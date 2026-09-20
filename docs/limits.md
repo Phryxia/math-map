@@ -85,10 +85,16 @@ $$
 
 ## 더 알아보기
 
+### 수렴을 다루는 틀
+
 - [거리 공간](metric-spaces.md)
+- [균등수렴](uniform-convergence.md)
+- [비표준 해석학](nonstandard-analysis.md)
+
+### 급수와 응용
+
+- [멱급수](power-series.md)
 - [생성함수](generating-functions.md)
 - [큰 수의 법칙](law-of-large-numbers.md)
-- [균등수렴](uniform-convergence.md)
-- [멱급수](power-series.md)
 
 #analysis #topology #algorithms
