@@ -249,5 +249,6 @@ $$
 ## 더 알아보기
 
 - [Monad](monads.md)
+- [토포스](topos-theory.md)
 
 #category_theory #algebra #logic

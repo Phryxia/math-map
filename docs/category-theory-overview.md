@@ -42,6 +42,7 @@ graph TD
 - [Yoneda lemma](yoneda-lemma.md): 대상이 그것이 받는 사상 전체로 결정된다
 - [제한과 쌍대제한](limits-colimits.md): 곱, 당김, 쌍대곱을 하나의 보편성질로
 - [수반](adjunctions.md): 자유 구성과 망각 함자의 쌍, 단위와 쌍대단위
+- [토포스](topos-theory.md): 집합의 범주를 공리로 뽑아낸 범주, 부분대상 분류자와 내부 논리
 
 ## Monad 와 대수
 
