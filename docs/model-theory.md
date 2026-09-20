@@ -96,6 +96,6 @@ $T$ 가 완전하지 않으면 $\sigma$ 와 $\neg\sigma$ 의 모형이 따로 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [o-최소성](o-minimality.md)
 
 #logic #foundations #algebra
