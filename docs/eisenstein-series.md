@@ -195,10 +195,6 @@ Weyl 법칙으로 Maass 첨점형식의 개수를 셀 때 이 항을 빼야 하�
 
 $E(z,s)$ 의 유수가 상수라는 사실에서 기본영역의 부피가 계산된다. Langlands 의 Eisenstein 급수 이론에서 잉여 스펙트럼을 계산하면 산술 군의 공변량 부피(Siegel–Weil, Langlands 부피 공식)가 나온다. $\mathrm{vol}(\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H)=\pi/3$ 에 $\zeta(2)=\pi^2/6$ 가 들어 있는 것이 그 예다.
 
-## 반복되는 구도
-
-명시적으로 아는 대상을 만들어 두고 그것과의 관계에서 미지의 대상을 다루는 구도가 여러 분야에 나타난다. 해석적 정수론은 $\zeta$ 를 알고 $L$ 함수를 다루고, 표현론은 유도표현을 알고 초첨점 표현을 다루며, 대수기하는 사영공간을 알고 일반 다양체를 다룬다. Langlands 강령은 Eisenstein 쪽이 이미 알려졌고 첨점 쪽만 새롭다는 원리 위에 있다.
-
 [^1]: 함수방정식과 Fourier 전개는 H. Iwaniec, *Spectral Methods of Automorphic Forms* (2 판, 2002) 3장과 6장. 스펙트럼 분해는 같은 책 4장, 또는 A. Selberg, *Harmonic analysis and discontinuous groups*, J. Indian Math. Soc. **20** (1956). 정칙 쪽과 $691$ 합동은 J.-P. Serre, *A Course in Arithmetic* (1973) 7장. $\mathrm{GL}\_n$ 의 Eisenstein 급수는 R. Langlands, *On the Functional Equations Satisfied by Eisenstein Series*, Lecture Notes in Math. 544 (1976), 해설은 C. Mœglin, J.-L. Waldspurger, *Spectral Decomposition and Eisenstein Series* (1995).
 
 # 연관 문서

@@ -73,7 +73,7 @@ $$
 
 # 성질
 
-## 계산되는 예
+## Poincaré 구면과 Brieskorn 구면
 
 - **Poincaré 구면.** $\Sigma(2,3,5)=S^3_{-1}(3_1)$ 이고 삼엽매듭의 $\Delta''(1)=2$ 이므로 $\lambda=-1$ 이다. $\lambda\bmod2=1$ 이 Rokhlin 불변량과 맞는다. $\pi_1$ 이 위수 120 의 이진 정이십면체군이고 불가약 $\mathrm{SU}(2)$ 표현이 두 개 있다.
 - **Brieskorn 구면.** $\Sigma(p,q,r)$ 의 불가약 표현은 유한개이고 개수가 $(p-1)(q-1)(r-1)/4$ 다. Casson 불변량은 그 표현들을 부호를 붙여 센 값이고 Dedekind 합으로 닫힌 형태가 있다.

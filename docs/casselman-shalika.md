@@ -19,7 +19,7 @@ $\alpha_i$ 는 $\pi_v$ 의 Satake 매개변수, $\lambda$ 는 지배적 여무�
 
 # 직관
 
-## 값이 놓이는 자리
+## 토러스 위의 값
 
 비분기 자리에서 $W^\circ$ 는 오른쪽으로 $K=\mathrm{GL}\_n(\mathcal O)$ 불변이고 왼쪽으로 $N$ 에 대해 $\psi_N$ 변환한다. Iwasawa 분해 $G=NAK$ 를 쓰면 $W^\circ$ 는 $A$ 위의 값으로 결정되고, $A\cap K$ 불변이므로 값이 다음 자리에만 놓인다.
 
@@ -37,7 +37,7 @@ $W^\circ$ 는 $\mathbb Z^n$ 위의 함수 하나다. $\psi_N$ 의 비퇴화성�
 
 $X_\ast(T)=X^\ast(\widehat T)$ 는 [Satake 동형](satake-isomorphism.md)이 쌍대군을 만들 때 쓴 동일시다. 두 집합이 같은 격자이므로 두 함수의 비교가 뜻을 갖고, 공식은 그 비교가 등식이라고 말한다.
 
-## 지표가 나오는 경로
+## Hecke 작용과 Satake 변환
 
 Hecke 대수의 원소 $f$ 가 $W^\circ$ 에 작용하면 Satake 변환의 값 $\hat f(\alpha)$ 를 곱한 것이 나온다. $W^\circ$ 는 Hecke 대수의 동시 고유벡터이고 그 고유값이 $R(\widehat G)\cong\mathbb C[\alpha]^{S_n}$ 의 원소다.
 
