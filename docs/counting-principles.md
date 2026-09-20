@@ -147,6 +147,7 @@ $$
 
 - [생성함수](generating-functions.md)
 - [포함배제 원리](inclusion-exclusion.md)
+- [조합적 설계](block-designs.md)
 - [비둘기집 원리](pigeonhole-principle.md)
 - [매칭과 Hall 정리](matchings.md)
 
