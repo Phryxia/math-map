@@ -56,7 +56,7 @@ $\Omega\subsetneq\mathbb C$ 가 공집합이 아닌 단순연결 영역이면 $\
 
 ## 경계 대응
 
-$\partial\Omega$ 가 Jordan 곡선이면 Riemann 사상은 $\overline\Omega$ 에서 $\overline{\mathbb D}$ 로 가는 위상동형으로 확장된다(Carathéodory 정리)[^1]. 경계에서의 값이 정해지므로 Dirichlet 문제를 원판에서 풀고 되돌릴 수 있다.
+$\partial\Omega$ 가 Jordan 곡선이면 Riemann 사상은 $\overline\Omega$ 에서 $\overline{\mathbb D}$ 로 가는 위상동형으로 확장된다(Carathéodory 정리)[^1]. 경계에서의 값이 정해지므로 [Dirichlet 문제](dirichlet-problem.md)를 원판에서 풀고 되돌릴 수 있다.
 
 다각형 영역에서는 사상이 명시적이다. Schwarz–Christoffel 공식
 
