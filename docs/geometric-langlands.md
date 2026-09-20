@@ -142,7 +142,7 @@ $G=\mathrm{GL}\_1$ 이면 $\mathrm{Bun}\_{\mathrm{GL}\_1}=\mathrm{Pic}(X)$ 이�
 
 기하 쪽 정리는 수체 Langlands 를 직접 주지 않는다. $\mathbb F_q$ 계수로 옮기면 함수체 Langlands 에 대한 정보가 나오고, V. Lafforgue 의 함수체 Langlands(모든 환원군, 자기동형에서 Galois 방향)가 기하적 기법의 산술판이다. 그의 방법은 층 이론 대신 잉여 작용소를 써서 대각합 공식 없이 Galois 매개변수를 만든다.
 
-국소 Langlands 도 통로다. Fargues–Scholze 가 $p$ 진 체 위의 국소 Langlands 를 Fargues–Fontaine 곡선 위의 기하적 Langlands 로 재구성했고, 기하 쪽 언어가 산술 쪽 정리의 증명 도구가 되었다.
+국소 Langlands 도 두 쪽을 잇는다. Fargues–Scholze 가 $p$ 진 체 위의 국소 Langlands 를 Fargues–Fontaine 곡선 위의 기하적 Langlands 로 재구성했고, 기하 쪽 언어가 산술 쪽 정리의 증명 도구가 되었다.
 
 ## 물리와의 관계
 

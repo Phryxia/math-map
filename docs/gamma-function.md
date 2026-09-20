@@ -36,7 +36,7 @@ $$
 \sum_{n\ge1}\frac{1}{n^{s}}\cdot\Gamma(s)=\int_0^{\infty}\frac{t^{s-1}}{e^{t}-1}dt
 $$
 
-오른쪽 식이 $\zeta(s)$ 를 적분으로 바꾸는 표준 통로이고, 감마가 $\zeta$ 의 무한 자리 인자로 불리는 근거다. 이 관점의 일반화가 [Tate 논문](tate-thesis.md)이다.
+오른쪽 식이 $\zeta(s)$ 를 적분으로 바꾸는 표준 수법이고, 감마가 $\zeta$ 의 무한 자리 인자로 불리는 근거다. 이 관점의 일반화가 [Tate 논문](tate-thesis.md)이다.
 
 ## 극점의 출처
 

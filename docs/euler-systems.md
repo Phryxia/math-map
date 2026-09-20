@@ -70,7 +70,7 @@ $$
 (\sigma-1)Dy=m\thinspace y-Ny=m\thinspace y-\mathrm{Tr}(y)
 $$
 
-이므로 $p\mid m$ 이고 $p\mid \mathrm{Tr}(y)$ 이면 $(\sigma-1)Dy\in p\thinspace E(K_\ell)$ 이다. 곧 $Dy$ 가 $p$ 를 법으로 Galois 불변이 되고, 이 불변성이 코호몰로지 류로 내려가는 통로다.
+이므로 $p\mid m$ 이고 $p\mid \mathrm{Tr}(y)$ 이면 $(\sigma-1)Dy\in p\thinspace E(K_\ell)$ 이다. 곧 $Dy$ 가 $p$ 를 법으로 Galois 불변이 되고, 이 불변성으로 코호몰로지 류로 내려간다.
 
 $m=\ell+1$ 과 $a_\ell$ 이 모두 $p$ 로 나뉘는 소수 $\ell$ 이 **Kolyvagin 소수**이며, 두 조건은 위 항등식의 두 항에 대응한다.
 

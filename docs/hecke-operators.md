@@ -146,7 +146,7 @@ $$
 \mathrm{tr}\thinspace\rho_{f,\ell}(\mathrm{Frob}\_p)=a_p,\qquad \det\rho_{f,\ell}(\mathrm{Frob}\_p)=\chi(p)p^{k-1}
 $$
 
-를 만족한다. 해석적으로 정의된 $a_p$ 가 산술적 의미를 얻는 지점이고, [Galois 표현](galois-representations.md)과 모듈러 형식을 잇는 통로다. 모듈러성 정리는 이 통로를 거꾸로 건너는 진술이다.
+를 만족한다. 해석적으로 정의된 $a_p$ 가 산술적 의미를 얻는 지점이고, [Galois 표현](galois-representations.md)과 모듈러 형식을 잇는다. 모듈러성 정리는 이 대응을 거꾸로 읽은 진술이다.
 
 # 활용
 
