@@ -42,6 +42,7 @@ graph TD
 ## 다양체와 미분형식
 
 - [다양체](manifolds.md): 국소적으로 유클리드 공간인 위상공간과 매끄러운 구조
+- [벡터다발](vector-bundles.md): 점마다 붙인 벡터 공간, 전이함수와 접속, 곡률
 - [미분형식과 Stokes 정리](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
 
 ## 계량과 곡률
