@@ -59,7 +59,7 @@ Dilworth 정리와 Mirsky 정리는 사슬 $k$ 개의 합집합에 대한 하나
 - **완전그래프.** 비교가능성 그래프는 [완전그래프](perfect-graphs.md)이고, Dilworth 정리는 그 여그래프에서 색칠수와 클릭수가 같다는 진술에 해당한다.
 - **최대유량 최소절단.** 사슬 덮개 문제를 [네트워크 유량](network-flow.md)으로 옮기면 최소절단이 최대 반사슬에 대응한다. 최소최대 쌍대성이 유량 문제의 쌍대성과 같은 근원임을 보여 주는 대응이다.
 
-[^1]: Greene and Kleitman, "The structure of Sperner $k$-families", *Journal of Combinatorial Theory, Series A* 20 (1976), 41–68.
+[^1]: Greene and Kleitman, "The structure of Sperner k-families", *Journal of Combinatorial Theory, Series A* 20 (1976), 41–68.
 
 # 연관 문서
 

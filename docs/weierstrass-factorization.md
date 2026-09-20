@@ -53,7 +53,7 @@ $f$ 의 위수 $\rho$ 가 유한하면 위 표현에서 $g$ 는 차수 $\le\rho$
 # 활용
 
 - 사인의 곱 공식: $\sin\pi z$ 는 위수 $1$ 이고 영점이 정수 전체이므로 $\sin\pi z=\pi z\prod_{n\ge1}\left(1-\frac{z^2}{n^2}\right)$ 로 인수분해된다. 양변의 로그 미분에서 $\pi\cot\pi z$ 의 부분분수 전개가 나오고, $z^2$ 계수를 비교하면 $\sum n^{-2}=\pi^2/6$ 이 나온다.
-- [감마 함수와 Stirling 근사](gamma-function.md): $1/\Gamma$ 는 위수 $1$ 의 전해석함수이고 영점이 $0,-1,-2,\dots$ 다. Hadamard 인수분해가 $$\frac1{\Gamma(z)}=z\thinspace e^{\gamma z}\prod_{n\ge1}\left(1+\frac zn\right)e^{-z/n}$$ 을 준다. $\gamma$ 는 Euler–Mascheroni 상수다.
+- [감마 함수와 Stirling 근사](gamma-function.md): $1/\Gamma$ 는 위수 $1$ 의 전해석함수이고 영점이 $0,-1,-2,\dots$ 다. Hadamard 인수분해가 $\frac1{\Gamma(z)}=z\thinspace e^{\gamma z}\prod_{n\ge1}\left(1+\frac zn\right)e^{-z/n}$ 을 준다. $\gamma$ 는 Euler–Mascheroni 상수다.
 - [Riemann zeta 함수](riemann-zeta.md): 완비 zeta 함수 $\xi$ 는 위수 $1$ 의 전해석함수이므로 영점 위의 Hadamard 곱으로 쓰이고, 그 로그 미분이 소수 계수 함수의 명시 공식에서 영점 항을 만든다.
 - [타원함수](elliptic-functions.md): Weierstrass 시그마 함수는 격자점을 영점으로 갖는 기본 인수 곱이고, 그 로그 미분이 제타 함수와 페 함수로 이어진다.
 

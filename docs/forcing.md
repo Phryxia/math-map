@@ -30,7 +30,7 @@ $D \subseteq P$ 가 **조밀**하다는 것은 모든 $p \in P$ 에 대해 $q \l
 
 $G \subseteq P$ 가 **필터**라는 것은 다음 둘이 성립한다는 뜻이다.
 
-- $p \in G$ 이고 $p \le q$ 이면 $q \in G$.
+- $p \in G$ 이고 $p \le q$ 이면 $q \in G$ 다.
 - $p, q \in G$ 이면 $r \le p$ 이고 $r \le q$ 인 $r \in G$ 가 있다.
 
 필터 $G$ 가 $M$ 에 속하는 모든 조밀집합 $D$ 에 대해 $G \cap D \neq \varnothing$ 을 만족하면 $M$ 위의 **일반 필터**라 한다.
