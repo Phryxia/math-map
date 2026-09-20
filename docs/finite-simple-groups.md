@@ -30,7 +30,7 @@ $$
 1\triangleleft\mathbb Z/2\triangleleft V_4\triangleleft A_4
 $$
 
-이고 조각이 $\mathbb Z/2,\mathbb Z/2,\mathbb Z/3$ 이다. 순환군 $\mathbb Z/12$ 도 조각이 같다. 두 군은 동형이 아니다. 곧 조각 목록은 군을 **결정하지 못한다**. 정수의 소인수분해와 다른 점이다.
+이고 조각이 $\mathbb Z/2,\mathbb Z/2,\mathbb Z/3$ 이다. 순환군 $\mathbb Z/12$ 도 조각이 같다. 두 군은 동형이 아니다. 곧 조각 목록은 군을 결정하지 못한다. 정수의 소인수분해와 다른 점이다.
 
 그래도 분류가 의미 있는 이유는 두 단계로 나뉘기 때문이다.
 
