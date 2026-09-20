@@ -114,6 +114,5 @@ $$
 
 - [미분](derivative.md)
 - [Riemann 적분](riemann-integral.md)
-- [축약사상 고정점 정리](banach-fixed-point.md)
 
 #analysis #topology

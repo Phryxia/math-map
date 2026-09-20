@@ -84,6 +84,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [축약사상 고정점 정리](banach-fixed-point.md)
 
 #analysis #topology #optimization
