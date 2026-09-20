@@ -67,6 +67,7 @@ graph TD
 - [Riemann 적분](riemann-integral.md): 분할과 상하합, 적분 가능성의 판정
 - [미적분학의 기본 정리](fundamental-calculus.md): 미분과 적분의 역관계
 - [상미분방정식](ordinary-differential-equations.md): Picard–Lindelöf 존재 정리와 선형 이론
+- [Sturm–Liouville 이론](sturm-liouville.md): 2 계 고유값 문제의 직교성과 완전성, Sturm 진동정리
 - [Peano 존재정리](peano-existence-theorem.md): 연속성만으로 얻는 해의 존재, 유일성의 실패와 Osgood 조건
 
 ## 급수와 변환
