@@ -42,19 +42,6 @@ $$
 
 우변은 Galois 코호몰로지로 계산되고, 수체에서 그것은 류군과 단수군의 정보다. 이 사상이 동형이라는 것이 Quillen–Lichtenbaum 추측이며, Voevodsky 의 노름 잉여 동형 정리 이후 정리가 되었다.
 
-```mermaid
-flowchart TD
-  RING["환 R"] --> K0["K_0: 사영가군"]
-  RING --> K1["K_1: GL 의 아벨화"]
-  RING --> QUILLEN["Quillen: BGL(R)^+ 의 호모토피군"]
-  QUILLEN --> KN["K_n(R), n >= 0"]
-  KN --> QL["Quillen-Lichtenbaum<br/>에탈 코호몰로지와 비교"]
-  QL --> ET["Galois 코호몰로지<br/>류군과 단수군"]
-  ET --> ZETA["zeta 의 특수값"]
-  ET --> VAND["K_{4k}(Z) = 0 <-> Vandiver"]
-  KN --> TOP["구면의 안정 호모토피<br/>im J 와 같은 분모"]
-```
-
 # 정의
 
 ## 낮은 차수

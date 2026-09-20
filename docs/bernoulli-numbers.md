@@ -62,18 +62,6 @@ $B_k$ 의 분자에 $p$ 가 숨어 있는 일은 드물지만 일어나고, 그�
 
 $(\mathbb Z/p)^{\times}$ 의 위수가 $p-1$ 이다. $\sum_{a=1}^{p-1}a^{n}$ 은 $(p-1)\mid n$ 일 때만 $\bmod p$ 에서 $-1$ 이고 아니면 $0$ 이다. 거듭제곱 합 공식의 $\bmod p$ 판이 von Staudt–Clausen 이고, Kummer 합동의 $p-1$ 주기도 같은 직교성에서 온다.
 
-```mermaid
-flowchart TD
-  GEN["생성함수 t/(e^t - 1)"] --> B["B_n"]
-  B --> ZETA["zeta(1-n) = -B_n/n<br/>zeta(2k) 의 pi^{2k} 배"]
-  B --> VSC["von Staudt-Clausen<br/>분모 결정"]
-  VSC --> KUM["Kummer 합동<br/>분자의 p 진 연속성"]
-  KUM --> LP["Kubota-Leopoldt L_p(s, chi)"]
-  LP --> IW["Iwasawa 주추측"]
-  B --> REG["정칙소수 판정"]
-  REG --> FLT["Kummer 의 FLT 첫째 경우"]
-```
-
 # 정의
 
 ## Bernoulli 수와 Bernoulli 다항식
