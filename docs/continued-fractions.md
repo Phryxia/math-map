@@ -86,7 +86,7 @@ $\sqrt 2 = \lbrack 1; \overline{2}\rbrack$ 과 황금비 $\varphi = \lbrack 1; \
 
 # 활용
 
-- Pell 방정식 $x^2 - dy^2 = 1$ 의 기본해가 $\sqrt d$ 의 연분수 전개의 순환 마디 끝에서 나온다. 순환 길이가 홀수인지 짝수인지가 $-1$ 을 우변에 둔 방정식의 풀림 여부를 정한다.
+- [Pell 방정식](pell-equation.md) $x^2 - dy^2 = 1$ 의 기본해가 $\sqrt d$ 의 연분수 전개의 순환 마디 끝에서 나온다. 순환 길이가 홀수인지 짝수인지가 $-1$ 을 우변에 둔 방정식의 풀림 여부를 정한다.
 - [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 Wiener 공격이 공개지수와 법의 비를 연분수로 펼쳐 작은 개인지수를 복원한다. 개인지수가 작으면 그 분수가 수렴분으로 나타나므로 Legendre 판정이 근거가 된다.
 - 달력의 윤년 규칙과 음계의 평균율이 각각 회귀년과 하루의 비, 완전5도와 옥타브의 비를 수렴분으로 끊은 결과다.
 - [모듈러 기호](modular-symbols.md)에서 두 첨점을 잇는 경로를 수렴분을 따라 쪼개면 각 조각이 모듈러 군의 원소 하나로 표현된다. 이것이 모듈러 기호의 계산을 유한하게 만드는 절차다.
@@ -102,6 +102,6 @@ $\sqrt 2 = \lbrack 1; \overline{2}\rbrack$ 과 황금비 $\varphi = \lbrack 1; \
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Pell 방정식](pell-equation.md)
 
 #number_theory #algorithms #analysis
