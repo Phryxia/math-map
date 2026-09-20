@@ -116,7 +116,7 @@ ccc 순서의 유한 지지 반복은 다시 ccc 를 만족한다. Solovay 와 T
 - 연속체 가설의 독립성 증명에서 Cohen 순서가 새 실수를 더한다. [연속체 가설](continuum-hypothesis.md) 문서의 Cohen 의 결과 절이 이 구성이다.
 - Suslin 가설과 Whitehead 문제가 ZFC 와 독립임을 보이는 데 반복 강제법이 쓰인다. 두 문제 모두 한쪽 방향은 구성가능 우주에서, 다른 쪽은 강제 확대에서 나온다.
 - 강제 공리는 특정 종류의 순서에 대해 조밀집합을 충분히 많이 만나는 필터가 실제로 존재한다고 주장한다. Martin 의 공리는 ccc 순서에 대한 강제 공리이고, 여기서 Lebesgue [측도](measure.md)와 위상공간의 여러 성질이 따라 나온다.
-- Levy 와 Solovay 는 크기가 작은 강제 확대가 거대기수의 성질을 보존함을 보였다. 거대기수 공리를 가정해도 연속체 가설을 참으로도 거짓으로도 만드는 확대가 있다는 결론이 여기서 나온다.
+- Levy 와 Solovay 는 크기가 작은 강제 확대가 거대기수의 성질을 보존함을 보였다. 따라서 거대기수 공리를 가정해도 연속체 가설을 참으로도 거짓으로도 만드는 확대가 있다.
 - 강제 순서를 완비 [Boolean 대수](boolean-algebras.md)로 바꾸면 확대 모형이 Boolean 값 모형이 되고, 일반 필터를 고르는 단계 없이 대수적으로 다룰 수 있다.
 
 [^1]: Kenneth Kunen, *Set Theory: An Introduction to Independence Proofs*, North-Holland (1980), Ch. VII. 이름, 강제 관계, ccc 기수 보존의 표준적인 전개다.
