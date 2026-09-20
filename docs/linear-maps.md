@@ -94,6 +94,7 @@ $$
 
 - [행렬식](determinants.md)
 - [고윳값과 고유벡터](eigenvalues.md)
+- [행렬 분해](matrix-factorizations.md)
 
 ### 선형성이 나타나는 곳
 
