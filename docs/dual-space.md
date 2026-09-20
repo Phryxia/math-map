@@ -68,7 +68,7 @@ $\dim V=\aleph_0$ 이지만 $F^{\mathbb N}$ 의 차원은 그보다 크다. 무�
 
 $V\cong V^\ast$ 를 주는 동형은 기저의 선택에 의존한다. 기저 $e_i$ 를 $e^i$ 로 보내는 사상은 동형이지만, 기저를 $e_1'=2e_1$ 로 바꾸면 $e^{1\prime}=\tfrac12 e^1$ 이어서 같은 벡터에 다른 범함수가 대응한다.
 
-반면 유한차원에서 $\mathrm{ev}\colon V\to V^{\ast\ast}$ 는 동형이고 기저와 무관하다. 단사성은 $v\neq 0$ 을 기저의 원소로 확장해 $\varphi(v)=1$ 인 $\varphi$ 를 잡으면 나오고, 차원 등식을 두 번 쓰면 $\dim V^{\ast\ast}=\dim V$ 이므로 전사다. 무한차원에서는 $\mathrm{ev}$ 가 단사이지만 전사가 아니다.
+반면 유한차원에서 $\mathrm{ev}\colon V\to V^{\ast\ast}$ 는 동형이고 기저와 무관하다. 단사성은 $v\neq 0$ 을 기저의 원소로 확장해 $\varphi(v)=1$ 인 $\varphi$ 를 잡으면 나오고, 차원 등식을 두 번 쓰면 $\dim V^{\ast\ast}=\dim V$ 이므로 전사다. 무한차원에서는 $\mathrm{ev}$ 가 단사이지만 전사가 아니다. 차원 등식 절의 Erdős–Kaplansky 정리를 두 번 쓰면 $\dim V^{\ast}=\vert F\vert^{\dim V}$ 이고 $\dim V^{\ast\ast}=\vert F\vert^{\dim V^{\ast}}$ 이다. 뒤의 값은 $\dim V^{\ast}$ 보다 크고 $\dim V^{\ast}$ 는 $\dim V$ 보다 크므로 $\dim V^{\ast\ast}\gt \dim V$ 이고, 단사 선형사상이 전사가 될 수 없다.
 
 ## 전치의 반변성
 
