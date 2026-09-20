@@ -16,7 +16,7 @@ $$
 
 세 집합에서 세 겹 영역의 계수는 세 개를 더할 때 3, 쌍 교집합 셋을 뺄 때 -3 이라 합이 0 이다. 삼중 교집합을 다시 더해야 1 이 된다.
 
-일반적으로 정확히 m개의 집합에 속하는 원소의 계수는 이항정리에 의해 다음과 같이 1 이 된다($m\ge1$ 일 때).
+일반적으로 정확히 $m$ 개의 집합에 속하는 원소의 계수는 이항정리로 계산하면 $m\ge1$ 일 때 1 이 된다.
 
 $$
 \sum_{j=1}^{m}(-1)^{j-1}\binom{m}{j}=1-\sum_{j=0}^{m}(-1)^{j}\binom{m}{j}=1-0=1
@@ -102,27 +102,27 @@ $$
 \varphi(n)=\sum_{S\subseteq[r]}(-1)^{|S|}\frac{n}{\prod_{i\in S}p_i}=n\prod_{i=1}^{r}\Bigl(1-\frac{1}{p_i}\Bigr)
 $$
 
-예를 들어 phi(60) = 60(1-1/2)(1-1/3)(1-1/5) = 16이다. 이 곱 형태에서 phi 가 곱셈적(multiplicative)임이 보인다. phi 의 산술적 성질은 [Fermat–Euler 정리](fermat-euler-theorem.md)에서 쓴다.
+$\varphi(60)=60\bigl(1-\tfrac12\bigr)\bigl(1-\tfrac13\bigr)\bigl(1-\tfrac15\bigr)=16$ 이다. 곱 형태에서 $\varphi$ 가 곱셈적(multiplicative)임이 보인다. $\varphi$ 의 산술적 성질은 [Fermat–Euler 정리](fermat-euler-theorem.md)에서 쓴다.
 
 ## 전사함수의 개수
 
-크기 n의 집합에서 크기 m의 집합으로 가는 전사 [함수](functions.md)의 개수는 상이 i번째 값을 빠뜨리는 사건에 포함배제를 적용해 얻는다.
+크기 $n$ 인 집합에서 크기 $m$ 인 집합으로 가는 전사 [함수](functions.md)의 개수는 상이 $i$ 번째 값을 빠뜨리는 사건에 포함배제를 적용해 얻는다.
 
 $$
 \bigl|\lbrace f:[n]\twoheadrightarrow[m]\rbrace\bigr|=\sum_{j=0}^{m}(-1)^{j}\binom{m}{j}(m-j)^{n}=m!\thinspace S(n,m)
 $$
 
-여기서 S(n,m)은 제2종 Stirling 수다.
+여기서 $S(n,m)$ 은 제2종 Stirling 수다.
 
 ## Möbius 반전
 
-포함배제는 국소 유한 [부분순서](partial-orders.md) 집합 위의 Möbius 반전의 특수한 경우다. 부분집합 격자에서 Möbius 함수가 다음 값을 가지기 때문에 부호 (-1)^|S|가 나타난다.
+포함배제는 국소 유한 [부분순서](partial-orders.md) 집합 위의 Möbius 반전의 특수한 경우다. 부분집합 격자의 Möbius 함수가 다음 값을 가지므로 부호 $(-1)^{\vert S\vert}$ 가 나타난다.
 
 $$
 \mu(S,T)=(-1)^{|T\setminus S|}\quad (S\subseteq T)
 $$
 
-정수의 나눗셈 순서에서 같은 반전을 적용하면 수론적 Möbius 반전 공식이 되고, phi 계산의 또 다른 유도가 된다.
+정수의 나눗셈 순서에서 같은 반전을 적용하면 수론적 Möbius 반전 공식이 되고, $\varphi$ 계산의 또 다른 유도가 된다.
 
 ## 항 수의 폭발
 
