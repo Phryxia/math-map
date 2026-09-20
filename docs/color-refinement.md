@@ -2,7 +2,7 @@
 
 # 개요
 
-Color refinement 는 각 정점에 색을 붙이고 이웃 색의 multiset 으로 색을 쪼개는 일을 더 쪼개지지 않을 때까지 반복하는 절차다. 1-dimensional Weisfeiler–Leman refinement, 줄여서 1-WL 이라고도 한다.
+Color refinement 는 각 정점에 색을 붙이고 이웃 색의 중복집합(multiset)으로 색을 쪼개는 일을 더 쪼개지지 않을 때까지 반복하는 절차다. 1-dimensional Weisfeiler–Leman refinement, 줄여서 1-WL 이라고도 한다.
 
 [그래프 동형](graph-isomorphism.md) 판정은 정점 이름표를 지운 뒤 두 그래프가 같은지 묻는 문제이고, 모든 대응을 시도하면 정점 수의 계승만큼 경우가 생긴다. Color refinement 는 국소 정보만으로 정점을 구분해 대응 후보를 줄인다. 이웃의 이웃까지 정보가 번지므로 몇 번의 반복으로 먼 구조가 색에 반영된다.
 
@@ -27,14 +27,14 @@ graph LR
   a --- n1
   a --- n2
   a --- n3
-  n1 --> m["multiset<br/>{{c_t(u₁), c_t(u₂), c_t(u₃)}}"]
+  n1 --> m["중복집합<br/>{{c_t(u₁), c_t(u₂), c_t(u₃)}}"]
   n2 --> m
   n3 --> m
-  a --> new["c_{t+1}(v) = ID(c_t(v), multiset)"]
+  a --> new["c_{t+1}(v) = ID(c_t(v), 중복집합)"]
   m --> new
 ```
 
-이웃을 집합이 아니라 multiset 으로 모은다. 같은 색 이웃이 둘인지 셋인지가 구별에 쓰이는 정보다.
+이웃을 집합이 아니라 중복집합으로 모은다. 같은 색 이웃이 둘인지 셋인지가 구별에 쓰이는 정보다.
 
 ## 집계의 한계
 
@@ -65,7 +65,7 @@ $$
 c_{t+1}(v)=\mathrm{ID}\left(c_t(v),\lbrace\negthinspace\lbrace c_t(u):u\in N(v)\rbrace\negthinspace\rbrace\right)
 $$
 
-$\mathrm{ID}$ 는 서로 다른 입력 쌍에 서로 다른 새 색을 배정하는 단사 함수이고, $\lbrace\negthinspace\lbrace\cdot\rbrace\negthinspace\rbrace$ 는 원소의 중복도를 보존하는 multiset 이다.
+$\mathrm{ID}$ 는 서로 다른 입력 쌍에 서로 다른 새 색을 배정하는 단사 함수이고, $\lbrace\negthinspace\lbrace\cdot\rbrace\negthinspace\rbrace$ 는 원소의 중복도를 보존하는 중복집합이다.
 
 두 그래프를 비교할 때는 같은 `ID` 규칙을 써야 하며, 두 그래프의 분리 합집합 위에서 색을 함께 갱신하면 보장된다.
 
@@ -87,7 +87,7 @@ $\mathrm{ID}$ 는 서로 다른 입력 쌍에 서로 다른 새 색을 배정하
 
 $\varphi: G \to H$ 가 동형사상이면 모든 $t$ 와 모든 $v$ 에 대해 $c_t(v) = c_t(\varphi(v))$ 다.
 
-*증명.* $t$ 에 대한 귀납으로 보인다. $t=0$ 은 초기 라벨이 대응한다는 가정이다. $t$ 에서 성립하면 $\varphi$ 가 $N(v)$ 를 $N(\varphi(v))$ 로 전단사로 옮기므로 이웃 색의 multiset 이 같고, 같은 $\mathrm{ID}$ 를 쓰므로 $c_{t+1}$ 도 같다.
+*증명.* $t$ 에 대한 귀납으로 보인다. $t=0$ 은 초기 라벨이 대응한다는 가정이다. $t$ 에서 성립하면 $\varphi$ 가 $N(v)$ 를 $N(\varphi(v))$ 로 전단사로 옮기므로 이웃 색의 중복집합이 같고, 같은 $\mathrm{ID}$ 를 쓰므로 $c_{t+1}$ 도 같다.
 
 대우가 이 절차를 쓰는 근거다.
 
@@ -129,7 +129,7 @@ $C_6$ 와 $2K_3$ 는 모든 정점이 초기 색이 같고 차수가 2 다. 귀�
 
 ## 표현력의 상한
 
-이웃의 정보를 모아 자기 표현을 갱신하는 구조는 1-WL 보다 강할 수 없고, 갱신 함수가 단사가 아니면 더 약해진다. [그래프 신경망의 표현력](gnn-expressivity.md)을 규정하는 결과이며, 이웃 집계를 multiset 에 대한 단사 함수로 설계해야 한다는 지침이 따라온다.
+이웃의 정보를 모아 자기 표현을 갱신하는 구조는 1-WL 보다 강할 수 없고, 갱신 함수가 단사가 아니면 더 약해진다. [그래프 신경망의 표현력](gnn-expressivity.md)을 규정하는 결과이며, 이웃 집계를 중복집합에 대한 단사 함수로 설계해야 한다는 지침이 따라온다.
 
 [^1]: Berkholz, Bonsma, Grohe, *Tight Lower and Upper Bounds for the Complexity of Canonical Colour Refinement* (2015), https://arxiv.org/abs/1509.08251. 안정 분할과 정준적 refinement 의 정확한 복잡도.
 
