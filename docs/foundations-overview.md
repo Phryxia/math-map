@@ -12,7 +12,7 @@
 graph TD
   S["집합"] --> F["함수"] --> CD["가산성"] --> CM["계산 가능성"] --> GD["Gödel 불완전성"]
   P["명제와 증명"] --> FOL["1차 논리"] --> ZFC["ZFC 공리계"] --> OR["서수"] --> AC["선택공리"]
-  ZFC --> CH["연속체 가설"]
+  ZFC --> CH["연속체 가설"] --> FC["강제법"]
   FOL --> GD --> FM["형식주의"]
   FOL --> LG["논리주의"]
   PL["플라톤주의"] --> LG
@@ -48,7 +48,7 @@ graph TD
 
 - [집합](sets.md) → [함수](functions.md), [동치관계](equivalence-relations.md) → [부분순서](partial-orders.md)
 - [기수](cardinality.md): 대각선 논법과 무한의 크기
-- [ZFC 공리계](zfc-axioms.md) → [서수와 초한귀납법](ordinals.md) → [선택공리와 Zorn 보조정리](axiom-of-choice.md), [연속체 가설과 독립성](continuum-hypothesis.md)
+- [ZFC 공리계](zfc-axioms.md) → [서수와 초한귀납법](ordinals.md) → [선택공리와 Zorn 보조정리](axiom-of-choice.md), [연속체 가설과 독립성](continuum-hypothesis.md) → [강제법](forcing.md)
 
 ## 계산 가능성
 
