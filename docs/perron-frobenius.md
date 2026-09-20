@@ -48,7 +48,13 @@ $A\ge 0$ 이 기약이면 Perron 근이 다음 변분 표현을 갖는다.
 
 $$\rho(A)=\max\_{x\ge 0,\thinspace x\neq 0}\thinspace \min\_{i\thinspace :\thinspace x_i\gt 0}\frac{(Ax)\_i}{x_i}$$
 
-우변의 값을 $r(x)$ 라 하면 $r(x)x\le Ax$ 이므로 $r(x)\le\rho(A)$ 이고, $x$ 를 Perron 벡터로 두면 등호가 된다. 이 공식은 고유벡터를 모르는 채로 Perron 근의 하한을 주므로 수치 계산에 쓴다.
+우변의 값을 $r(x)$ 라 하면 $r(x)x\le Ax$ 이므로 $r(x)\le\rho(A)$ 이고, $x$ 를 Perron 벡터로 두면 등호가 된다. 이 공식은 고유벡터를 모르는 채로 Perron 근의 하한을 준다.
+
+범위를 성분이 모두 양수인 $x$ 로 좁히면 최대와 최소를 맞바꾼 표현이 나온다.
+
+$$\rho(A)=\min\_{x\gt 0}\thinspace\max\_{i}\frac{(Ax)\_i}{x_i}$$
+
+우변의 값을 $R(x)$ 라 하면 $Ax\le R(x)x$ 이므로 $\rho(A)\le R(x)$ 이고, 여기서도 Perron 벡터에서 등호가 된다. 두 표현을 함께 쓰면 양벡터 하나를 대입할 때마다 $r(x)\le\rho(A)\le R(x)$ 로 하한과 상한이 동시에 나온다.
 
 ## 기약 행렬의 경우
 
@@ -64,7 +70,9 @@ $A$ 가 원시적이고 $\rho=\rho(A)$ , $Av=\rho v$ , $w^{T}A=\rho w^{T}$ , $w^
 
 $$\lim\_{k\to\infty}\left(\frac{A}{\rho}\right)^{k}=v\thinspace w^{T}$$
 
-증명의 요지는 $A/\rho$ 의 다른 고윳값이 절댓값 1 보다 작으므로 Jordan 분해에서 그 블록의 거듭제곱이 0 으로 간다는 것이다. 수렴 속도는 둘째로 큰 절댓값과 $\rho$ 의 비로 정해진다.
+증명의 요지는 $A/\rho$ 의 다른 고윳값이 절댓값 1 보다 작으므로 Jordan 분해에서 그 블록의 거듭제곱이 0 으로 간다는 것이다.
+
+거듭제곱법이 이 수렴을 그대로 쓴다. 양벡터 $x_0$ 에서 시작해 $x_{k+1}=Ax_k/\Vert Ax_k\Vert$ 로 반복하면 $x_k$ 가 Perron 벡터로 간다. 절댓값이 둘째로 큰 고윳값을 $\lambda_2$ 라 하면 오차는 $(\vert\lambda_2\vert/\rho)^k$ 의 크기이고, 두 값이 가까울수록 반복 횟수가 늘어난다.
 
 ## Perron 근의 상하한
 

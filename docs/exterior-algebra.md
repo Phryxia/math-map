@@ -54,6 +54,16 @@ $v_1,\dots,v_k\in V$ 에 대해 $v_1\wedge\cdots\wedge v_k\neq 0$ 과 이 벡터
 
 일차종속이면 한 벡터를 나머지의 선형결합으로 바꿔 넣고 반대칭성을 쓰면 모든 항에 같은 벡터가 두 번 들어가 0 이 된다. 독립이면 기저로 확장해 위 기저 원소 하나로 만들 수 있으므로 0 이 아니다.
 
+## Plücker 관계
+
+$\omega\in\Lambda^k V$ 가 어떤 $v_1,\dots,v_k$ 에 대해 $v_1\wedge\cdots\wedge v_k$ 로 쓰이면 **분해가능**하다고 한다. $k\ge 2$ 이고 $\dim V\gt k+1$ 이면 분해가능하지 않은 원소가 있다. 기저 $e_1,\dots,e_n$ 에 대한 $\omega$ 의 좌표 $p_{i_1\dots i_k}$ 를 **Plücker 좌표**라 하고, 분해가능성은 이 좌표들의 이차식으로 표현된다.
+
+$n=4$ , $k=2$ 가 가장 작은 예다. $\omega=\sum_{i\lt j}p_{ij}\thinspace e_i\wedge e_j$ 가 분해가능할 필요충분조건은 $\omega\wedge\omega=0$ 이고, 좌표로 쓰면 이차식 하나가 된다.
+
+$$p_{12}p_{34}-p_{13}p_{24}+p_{14}p_{23}=0$$
+
+분해가능한 $\omega$ 들이 이루는 집합은 이런 이차식들로 정의되고, 사영화하면 $V$ 의 $k$ 차원 부분공간 전체를 가리킨다. 부분공간 $W$ 에 기저 $v_1,\dots,v_k$ 를 잡아 $v_1\wedge\cdots\wedge v_k$ 를 대응시키면 기저를 바꿀 때 행렬식배만큼만 달라지므로 대응이 사영공간 안에서 잘 정의된다.
+
 ## 교대 다중선형사상의 보편성질
 
 $k$ 개의 변수를 가진 교대 다중선형사상 $\varphi\colon V^k\to W$ 는 선형사상 $\tilde\varphi\colon \Lambda^k V\to W$ 와 일대일로 대응한다. 대응은 $\varphi(v_1,\dots,v_k)=\tilde\varphi(v_1\wedge\cdots\wedge v_k)$ 다.
