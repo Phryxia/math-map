@@ -25,23 +25,11 @@ Euler 계가 정보를 주려면 첫 원소가 0 이 아니어야 하고, 그 �
 - 해석 순위 0 은 $L(E,1)\ne0$ 인 경우다. 겨냥 원소의 성분이 0 이 아니라는 모듈러 기호 쪽 사실과 같은 이야기다.
 - 해석 순위 1: Gross–Zagier 공식이 Heegner 점의 정준 높이를 $L'(E,1)$ 로 계산해 준다. $L'\ne0$ 이면 높이가 0 이 아니므로 그 점이 무한위수다.
 
-$L$ 함수가 Euler 계의 시동을 걸고 Euler 계가 Selmer 군을 누른다. 두 단계를 잇는 것이 Gross–Zagier 와 모듈러 기호의 계산이다.
+$L$ 함수의 비소멸이 Euler 계의 첫 원소를 주고, Euler 계가 Selmer 군의 크기를 제한한다. 두 단계를 잇는 것이 Gross–Zagier 공식과 모듈러 기호의 계산이다.
 
 ## 순위 2 의 한계
 
 Heegner 점은 한 점만 준다. 계수가 2 이상이면 독립인 점을 둘 이상 만들어야 하는데 그런 구성이 없어서 이 방법은 순위 1 에서 멈춘다.
-
-```mermaid
-flowchart TD
-  L["L(f,1) != 0"] --> NONZ["Euler 계의 첫 원소 != 0"]
-  GZ["Gross-Zagier<br/>L'(E,1) = 높이"] --> NONZ
-  NONZ --> EU["Kolyvagin 유도류"]
-  EU --> SEL["Selmer 군 유한"]
-  SEL --> MW["Mordell-Weil 유한 / 순위 1"]
-  SEL --> SHA["Sha 유한"]
-  MW --> JE["겨냥 몫 J_e(Q) 유한"]
-  JE --> MEREL["Merel: 차수 d 점의 배제"]
-```
 
 # 정의
 

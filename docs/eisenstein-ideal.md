@@ -65,18 +65,6 @@ $$
 
 [Herbrand–Ribet](herbrand-ribet.md) 에서는 Eisenstein 합동으로 류군의 원소를 만들고, 여기서는 같은 합동으로 Jacobian 의 유리점을 없앤다. 둘 다 Eisenstein 아이디얼 근처에서 Hecke 대수가 얼마나 큰지를 묻는다. Mazur 는 $\mathbb T/I\cong\mathbb Z/n$ 임을 보였고 그 계산이 두 응용의 바탕이다.
 
-```mermaid
-flowchart TD
-  TOR["E/Q 의 위수 N 비틀림점"] --> Y1["X_1(N) 의 유리점"]
-  Y1 --> J["Jacobian J_0(N)"]
-  HECKE["Hecke 대수 T"] --> I["Eisenstein 아이디얼<br/>I = (T_l - 1 - l)"]
-  I --> Q["Eisenstein 몫 J/IJ<br/>유한 순환군"]
-  J --> Q
-  CUSP["첨점군 = num((p-1)/12)"] --> Q
-  Q --> NO["유리점 없음"]
-  I --> HR["Herbrand-Ribet:<br/>류군의 원소 생산"]
-```
-
 # 정의
 
 ## Hecke 대수와 Eisenstein 아이디얼
