@@ -136,7 +136,7 @@ $p=17$ 은 [Kedlaya 알고리즘](kedlaya-algorithm.md)에서 Hasse 불변량이
 
 띠의 비율은 Sato–Tate 예측과 맞고, 점의 비율은 $X$ 를 키우면 $0$ 으로 줄어든다. 띠는 Sato–Tate 가 예측하고 점은 예측하지 못한다.
 
-## 쓰이는 자리
+## [lang-trotter]
 
 - **암호에서의 곡선 선택.** 초특이 곡선은 MOV(Menezes–Okamoto–Vanstone) 공격으로 [이산로그](discrete-logarithm.md)가 유한체 이산로그로 환원되므로 배제한다. 무작위 곡선이 초특이일 확률은 $\asymp1/\sqrt p$ 로 작지만 검사는 한다.
 - **초특이 동종사상 암호.** 반대로 초특이 곡선만 모아 그 사이의 동종사상 그래프를 쓰는 암호 계열(SIDH, supersingular isogeny Diffie–Hellman 과 SIKE, supersingular isogeny key encapsulation 및 그 후속)이 있다. 초특이 $j$ 불변량이 $\mathbb F_{p^2}$ 에 $\approx p/12$ 개라는 사실이 설계의 근거다.

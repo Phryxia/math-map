@@ -154,7 +154,7 @@ $y^2=x^3+1$ 은 $j=0$ 이고 $\mathbb Z[\zeta_3]$ 에 의한 복소곱셈을 갖
 
 측도는 곡선의 대칭군이 정한다. $\mathrm{SU}(2)$ 이면 $\sin^2$ 이고 $\mathrm{U}(1)$ 이면 균등이다.
 
-## 쓰이는 자리
+## [sato-tate]
 
 - **추측의 발견.** Sato 의 원래 작업이 수치 실험이었다. 이런 표는 [SEA](sea-algorithm.md)(Schoof–Elkies–Atkin)나 [Kedlaya](kedlaya-algorithm.md) 알고리즘으로 만들고, LMFDB(L-functions and Modular Forms Database)의 곡선 자료가 그 결과다.
 - **CM 판정.** $a_p=0$ 인 소수의 비율이 $\tfrac12$ 에 가까우면 복소곱셈이 있다.
