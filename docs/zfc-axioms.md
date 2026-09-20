@@ -47,7 +47,7 @@ $$
 \forall A\thinspace\forall B\thinspace\bigl(\forall x\thinspace(x\in A\leftrightarrow x\in B)\to A=B\bigr)
 $$
 
-2. 짝(pairing): 임의의 a, b에 대해 둘만을 원소로 갖는 집합이 있다.
+2. 짝(pairing): 임의의 $a$ , $b$ 에 대해 둘만을 원소로 갖는 집합이 있다.
 
 $$
 \forall a\thinspace\forall b\thinspace\exists P\thinspace\forall x\thinspace\bigl(x\in P\leftrightarrow (x=a\vee x=b)\bigr)
@@ -115,7 +115,7 @@ $$
 0=\varnothing,\quad 1=\lbrace 0\rbrace,\quad 2=\lbrace 0,1\rbrace,\quad n+1=n\cup\lbrace n\rbrace,\qquad \omega=\bigcap\lbrace\thinspace I : I \text{ 귀납적}\thinspace\rbrace
 $$
 
-이 정의에서 n의 원소 개수는 정확히 n이고, m이 n의 원소인 것과 m이 n보다 작은 것이 같다. 즉 순서 관계가 원소 관계로 무료로 얻어진다. 외연성과 정칙성 덕분에 각 자연수는 유일하게 결정되고, 수학적 귀납법은 최소성에서 바로 나온다. 정수·유리수는 [동치류](equivalence-relations.md)로, 실수는 유리수 Cauchy 수열의 동치류나 Dedekind 절단으로 구성한다.
+이 정의에서 $n$ 의 원소 개수는 정확히 $n$ 이고, $m$ 이 $n$ 의 원소인 것과 $m$ 이 $n$ 보다 작은 것이 같다. 순서 관계가 원소 관계에서 자동으로 따라온다. 외연성과 정칙성 덕분에 각 자연수는 유일하게 결정되고, 수학적 귀납법은 최소성에서 바로 나온다. 정수·유리수는 [동치류](equivalence-relations.md)로, 실수는 유리수 Cauchy 수열의 동치류나 Dedekind 절단으로 구성한다.
 
 ## 순서쌍과 함수
 

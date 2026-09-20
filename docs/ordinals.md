@@ -30,7 +30,7 @@ $$
 \forall B\subseteq A\ \bigl(B\neq\varnothing \to \exists m\in B\ \forall b\in B\ (m\le b)\bigr)
 $$
 
-집합 x가 transitive라는 것은 원소의 원소가 다시 원소라는 뜻이다.
+집합 $x$ 가 추이적(transitive)이라는 것은 원소의 원소가 다시 원소라는 뜻이다.
 
 $$
 \forall y\thinspace(y\in x \to y\subseteq x)
