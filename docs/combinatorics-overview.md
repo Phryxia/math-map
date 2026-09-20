@@ -41,6 +41,7 @@ graph TD
 - [Stirling 수](stirling-numbers.md): 집합 분할과 순열의 순환을 세는 수, 거듭제곱과 내림 계승의 기저 변환
 - [조합적 설계](block-designs.md): 원소쌍이 고르게 나타나는 블록족, Fisher 부등식과 유한 사영평면
 - [확률적 방법](probabilistic-method.md): 무작위 대상이 존재를 증명한다
+- [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md): 문턱 현상, 연결성과 거대 성분
 - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위의 조화해석, 복잡도 이론의 도구
 
 ## 그래프와 매트로이드

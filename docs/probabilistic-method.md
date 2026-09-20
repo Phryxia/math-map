@@ -194,6 +194,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md)
 
 #combinatorics #probability
