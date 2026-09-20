@@ -121,7 +121,7 @@ $$
 E[XW \mid \mathcal{G}] \thickspace=\thickspace W \thinspace E[X \mid \mathcal{G}].
 $$
 
-$B \in \mathcal G$ 인 지시함수 $W = \mathbf 1_B$ 에 대해 직접 확인한 뒤 단순함수, 단조극한([단조 수렴 정리](monotone-convergence.md))의 순서로 확장한다.
+$B \in \mathcal G$ 인 지시함수 $W = \mathbf 1_B$ 에 대해 확인한 뒤 단순함수, 단조극한([단조 수렴 정리](monotone-convergence.md))의 순서로 확장한다.
 
 **독립성.** $X$ 가 $\mathcal G$ 와 독립이면 $E[X \mid \mathcal G] = E[X]$ 다. 상수는 $\mathcal G$ 가측이고, $A \in \mathcal G$ 에 대해 $E[X \mathbf 1_A] = E[X] P(A)$ 이기 때문이다. 반대 극단으로 $X$ 가 $\mathcal G$ 가측이면 $E[X \mid \mathcal G] = X$ 다.
 
