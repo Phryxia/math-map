@@ -8,7 +8,7 @@ $$
 I(\lambda)=\int_a^{b}g(x)\thinspace e^{\lambda\varphi(x)}\thinspace dx\qquad(\lambda\to\infty)
 $$
 
-의 크기는 한 점이 결정한다. $e^{\lambda\varphi}$ 가 $\varphi$ 의 최대점에서 다른 모든 곳을 압도하므로 적분 전체가 그 점 주위의 좁은 창에서 나온다. 창 안에서 $\varphi$ 를 2 차까지 전개해 Gauss 적분으로 바꾸면 주도항이 나오고, 더 전개하면 점근전개가 나온다. 이것이 **Laplace 방법**이다.
+의 크기는 한 점이 결정한다. $e^{\lambda\varphi}$ 가 $\varphi$ 의 최대점에서 다른 모든 곳을 압도하므로 적분 전체가 그 점 주위의 좁은 구간에서 나온다. 그 구간에서 $\varphi$ 를 2 차까지 전개해 Gauss 적분으로 바꾸면 주도항이 나오고, 더 전개하면 점근전개가 나온다. 이것이 **Laplace 방법**이다.
 
 $$
 I(\lambda)\sim g(x_0)e^{\lambda\varphi(x_0)}\sqrt{\frac{2\pi}{\lambda|\varphi''(x_0)|}}
@@ -20,7 +20,7 @@ $$
 
 # 직관
 
-## 최대점 주위의 창
+## 최대점 근방의 폭
 
 $\varphi$ 의 최대값이 $x_0$ 에서 $\varphi(x_0)$ 라 하자. 다른 점 $x$ 의 기여는 $e^{\lambda(\varphi(x)-\varphi(x_0))}$ 배로 줄어들고, 지수가 음수이므로 $\lambda$ 가 커지면 기하급수적으로 사라진다. 살아남는 폭은 $\lambda(\varphi(x)-\varphi(x_0))\approx-1$ 인 범위, 곧
 

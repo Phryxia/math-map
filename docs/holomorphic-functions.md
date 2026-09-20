@@ -130,7 +130,7 @@ $$
 
 ## 더 알아보기
 
-### 복소해석의 줄기
+### 복소해석의 주요 정리
 
 - [유수 정리](residue-theorem.md)
 - [해석적 연속](analytic-continuation.md)
