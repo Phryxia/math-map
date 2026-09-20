@@ -60,7 +60,7 @@ graph TD
 정수환을 아이디얼로 다시 세우고, 아벨 확대를 정수환의 산술로 기술한다.
 
 - [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md) → [대수적 수체와 정수환](algebraic-number-fields.md)
-- [p 진수와 부치](p-adic-numbers.md) → [Newton 다각형](newton-polygon.md), [아델과 이델](adeles.md)
+- [p 진수와 부치](p-adic-numbers.md) → [Newton 다각형](newton-polygon.md), [아델](adeles.md)
 - [유체론](class-field-theory.md) → [국소 유체론과 Lubin–Tate 형식군](local-class-field-theory.md), [Chebotarev 밀도 정리](chebotarev.md), [복소 곱셈](complex-multiplication.md)
 - [Brauer 군과 Hasse 원리](brauer-groups.md), [Poitou–Tate 완전열](poitou-tate.md): 국소–대역 원리의 코호몰로지
 

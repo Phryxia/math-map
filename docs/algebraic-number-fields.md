@@ -203,6 +203,6 @@ Ring-LWE(learning with errors) 가 쓰는 $\mathbb Z[x]/(x^n+1)$ 은 $\mathbb Z[
 ## 더 알아보기
 
 - [유체론](class-field-theory.md)
-- [아델과 이델](adeles.md)
+- [아델](adeles.md)
 
 #number_theory #ring_theory #field_theory

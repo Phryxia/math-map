@@ -184,7 +184,7 @@ Dirichlet 의 유수 공식이 "노름 1 이델류군의 부피" 한 줄로 정�
 | Hecke 지표 | 법과 무한 성분의 조건 | 이델류군의 지표 하나 |
 | 적용 범위 | 수체마다 다시 계산 | 함수체까지 같은 증명 |
 
-$\mathbb F_q(T)$ 같은 함수체에서도 아델과 이델이 그대로 정의되고 Riemann–Roch 항등식이 곡선의 [Riemann–Roch 정리](riemann-roch.md)가 되므로, 증명 한 편이 두 세계를 덮는다. 이 대응이 항등식 이름의 유래다.
+$\mathbb F_q(T)$ 같은 함수체에서도 아델과 이델이 그대로 정의되고 Riemann–Roch 항등식이 곡선의 [Riemann–Roch 정리](riemann-roch.md)가 되므로, 한 증명이 수체와 함수체를 함께 다룬다. 이 대응이 항등식 이름의 유래다.
 
 ## 이후의 발전
 
@@ -202,7 +202,7 @@ $$
 
 ## 선수지식
 
-- [아델과 이델](adeles.md)
+- [아델](adeles.md)
 - [Riemann zeta 함수](riemann-zeta.md)
 
 ## 더 알아보기
