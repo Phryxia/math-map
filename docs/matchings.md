@@ -75,7 +75,7 @@ $$
 
 *경우 1: 모든 공집합 아닌 진부분집합 $S \subsetneq X$ 에 대해 $\lvert N(S) \rvert \ge \lvert S \rvert + 1$ (여유가 있음).* 임의의 간선 $xy$ 를 고르고 $G' = G - x - y$ 를 본다. $S \subseteq X \setminus \lbrace x\rbrace$ 에 대해 $y$ 하나만 잃으므로 $\lvert N_{G'}(S) \rvert \ge \lvert N_G(S) \rvert - 1 \ge \lvert S \rvert$ 다. 귀납 가정으로 $G'$ 에 포화 매칭이 있고 거기에 $xy$ 를 더한다.
 
-*경우 2: 어떤 공집합 아닌 $S \subsetneq X$ 가 $\lvert N(S) \rvert = \lvert S \rvert$ 를 만족(빡빡함).* $S$ 와 $N(S)$ 가 이루는 부분그래프는 Hall 조건을 물려받으므로 귀납 가정으로 $S$ 포화 매칭 $M_1$ 을 가진다. 이제 $X \setminus S$ 와 $Y \setminus N(S)$ 가 이루는 부분그래프를 보자. $T \subseteq X \setminus S$ 에 대해 $\lvert N(S \cup T) \rvert \ge \lvert S \cup T \rvert = \lvert S \rvert + \lvert T \rvert$ 이고 $N(S \cup T) = N(S) \cup N(T)$ 이므로 $Y \setminus N(S)$ 안에서 $T$ 의 이웃은 최소 $\lvert T \rvert$ 개다. 귀납 가정으로 매칭 $M_2$ 를 얻고, $M_1 \cup M_2$ 가 $X$ 포화 매칭이다. ∎
+*경우 2: 어떤 공집합 아닌 $S \subsetneq X$ 가 $\lvert N(S) \rvert = \lvert S \rvert$ 를 만족(빡빡함).* $S$ 와 $N(S)$ 가 이루는 부분그래프는 Hall 조건을 물려받으므로 귀납 가정으로 $S$ 포화 매칭 $M_1$ 을 가진다. 남은 부분은 $X \setminus S$ 와 $Y \setminus N(S)$ 가 이루는 부분그래프다. $T \subseteq X \setminus S$ 에 대해 $\lvert N(S \cup T) \rvert \ge \lvert S \cup T \rvert = \lvert S \rvert + \lvert T \rvert$ 이고 $N(S \cup T) = N(S) \cup N(T)$ 이므로 $Y \setminus N(S)$ 안에서 $T$ 의 이웃은 최소 $\lvert T \rvert$ 개다. 귀납 가정으로 매칭 $M_2$ 를 얻고, $M_1 \cup M_2$ 가 $X$ 포화 매칭이다. ∎
 
 **따름정리.** 이분 그래프에서 $|X|=|Y|$ 이고 모든 정점의 차수가 같은 $k$ 정규 그래프라면 완전 매칭이 존재한다. (간선 세기로 Hall 조건을 확인한다. 이로부터 정규 이분 그래프의 간선 집합이 $k$ 개의 완전 매칭으로 분해되고, König의 간선 색칠 정리가 따라온다.)
 

@@ -24,7 +24,7 @@ $$
 
 ## 합성열과 단순군
 
-위수 12 인 군을 예로 보자. $A_4$ 의 합성열은
+위수 12 인 군이 예다. $A_4$ 의 합성열은
 
 $$
 1\triangleleft\mathbb Z/2\triangleleft V_4\triangleleft A_4
