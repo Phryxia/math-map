@@ -46,7 +46,7 @@ $\delta=\varepsilon/L$ 로 두면 Lipschitz 에서 균등연속이 따라온다.
 
 ## Rademacher 정리
 
-$\mathbb R^n$ 의 열린집합에서 정의된 Lipschitz 사상은 Lebesgue 측도로 거의 모든 점에서 미분가능하다. 한 변수에서는 Lipschitz 함수가 절대연속이므로 [유계변동 함수](bounded-variation.md)에 대한 미분정리로 따라오고, 그때 $\lvert f'\rvert\le\mathrm{Lip}(f)$ 가 거의 어디서나 성립한다.
+$\mathbb R^n$ 의 열린집합에서 정의된 Lipschitz 사상은 Lebesgue 측도로 거의 모든 점에서 미분가능하다([Rademacher 정리](rademacher-theorem.md)). 한 변수에서는 Lipschitz 함수가 절대연속이므로 [유계변동 함수](bounded-variation.md)에 대한 미분정리로 따라오고, 그때 $\lvert f'\rvert\le\mathrm{Lip}(f)$ 가 거의 어디서나 성립한다.
 
 ## 확장
 
@@ -85,5 +85,6 @@ $$
 ## 더 알아보기
 
 - [축약사상 고정점 정리](banach-fixed-point.md)
+- [Rademacher 정리](rademacher-theorem.md)
 
 #analysis #topology #optimization
