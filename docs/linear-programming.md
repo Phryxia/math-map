@@ -88,7 +88,7 @@ $$
 
 # 활용
 
-## 예제
+## 두 변수 문제와 그 쌍대
 
 $$
 \max\ x_1+x_2\quad\text{subject to}\quad x_1+2x_2\le 4,\ \ 3x_1+2x_2\le 6,\ \ x\ge 0

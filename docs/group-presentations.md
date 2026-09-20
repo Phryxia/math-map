@@ -34,7 +34,7 @@ $$
 
 관계자 $r\in R$ 을 등식으로 적는 관행이 있다. $\langle a,b\mid aba^{-1}b^{-1}\rangle$ 과 $\langle a,b\mid ab=ba\rangle$ 는 같은 군 $\mathbb Z^2$ 를 가리킨다.
 
-## 예
+## 순환군, 이면체군, 삼각군의 표시
 
 | 표시 | 군 |
 | --- | --- |

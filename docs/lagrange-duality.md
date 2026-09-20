@@ -91,7 +91,7 @@ Slater 조건을 만족하는 미분가능 볼록 문제에서 KKT 조건은 최
 
 # 활용
 
-## 예제
+## 이차 목적함수의 쌍대함수
 
 $$
 \min\ x_1^2+x_2^2\quad\text{subject to}\quad 2-x_1-x_2\le 0

@@ -165,11 +165,11 @@ Ramanujan 의 mock theta 함수는 오랫동안 고립된 호기심이었다. Zw
 
 타원 종수는 BPS 상태의 지표 세기이고, 블랙홀 엔트로피의 미시적 계산이 같은 형태의 급수로 나온다. $N=4$ 초대칭 끈 이론의 dyon 세기 함수가 Siegel 모듈러 형식이고, 그것을 분해할 때 나오는 조각이 mock 모듈러 형식이라는 것을 Dabholkar, Murthy, Zagier 가 보였다. 벽 넘기 현상(모듈라이를 바꾸면 상태 수가 점프하는 것)이 mock 성질, 곧 shadow 의 존재와 대응한다. 세기 함수가 왜 순수한 모듈러 형식이 아닌지가 물리적 이유를 갖는다.
 
-## 산재군을 보는 새로운 창
+## 다른 산재군의 달빛
 
-괴물 달빛이 끝났을 때 남은 질문은 "다른 산재군에도 비슷한 것이 있는가" 였다. umbral moonshine 은 $M_{24}$ 와 $M_{12}$ 를 포함한 여러 군에 대해 그렇다고 답했고, 이후 Conway 군 $\mathrm{Co}\_0$ 에 대한 달빛, Thompson 군 달빛, $O'Nan$ 군 달빛이 이어졌다. 마지막 것은 특히 흥미로운데, $O'Nan$ 달빛의 계수가 [타원곡선](elliptic-curves.md)의 계급수와 Selmer 군 정보를 담고 있어 산재군이 산술적 대상과 연결된다.
+umbral moonshine 은 $M_{24}$ 와 $M_{12}$ 를 포함한 여러 군에 달빛 대응을 준다. 이후 Conway 군 $\mathrm{Co}\_0$ 에 대한 달빛, Thompson 군 달빛, O'Nan 군 달빛이 이어졌다. O'Nan 달빛의 계수는 [타원곡선](elliptic-curves.md)의 계급수와 Selmer 군 정보를 담는다.
 
-[유한 단순군 분류](finite-simple-groups.md)가 26 개의 산재군을 예외로 남긴 뒤, 그 예외들이 왜 존재하는지는 여전히 설명되지 않았다. 달빛 현상들은 그 설명이 군론 바깥, 모듈러 형식과 등각장론 쪽에 있으리라는 가장 강한 증거다.
+[유한 단순군 분류](finite-simple-groups.md)는 26 개의 산재군을 예외로 남긴다. 달빛 현상은 그 가운데 여럿에 모듈러 형식과 등각장론 쪽 대응을 붙인다.
 
 [^1]: 원 관찰은 T. Eguchi, H. Ooguri, Y. Tachikawa, *Notes on the K3 surface and the Mathieu group M_24*, Exper. Math. 20 (2011). 일반화는 M. Cheng, J. Duncan, J. Harvey, *Umbral moonshine*, Commun. Number Theory Phys. 8 (2014). 존재 증명은 J. Duncan, M. Griffin, K. Ono, *Proof of the umbral moonshine conjecture*, Res. Math. Sci. 2 (2015) 와 $M_{24}$ 경우의 T. Gannon, *Much ado about Mathieu*, Adv. Math. 301 (2016). mock 모듈러 형식의 기초는 S. Zwegers 의 2002 년 학위논문과 D. Zagier 의 Bourbaki 강연 986 (2009). K3 시그마 모형 대칭의 분류는 M. Gaberdiel, S. Hohenegger, R. Volpato, *Mathieu twining characters for K3*, JHEP (2010). 본문의 근계 열거는 직접 계산한 것이다.
 

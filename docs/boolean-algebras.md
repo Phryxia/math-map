@@ -54,7 +54,7 @@ $$
 a \to b \thickspace:=\thickspace \neg a \vee b
 $$
 
-## 예
+## 멱집합 대수, Lindenbaum–Tarski 대수, Boolean 환
 
 **멱집합 대수.** 집합 $X$ 에 대해 $P(X)$ 는 합집합, 교집합, 여집합으로 Boolean algebra 다. 이것이 원형이다. 더 일반적으로 $X$ 의 부분집합들 중 합집합, 교집합, 여집합에 닫힌 족을 field of sets 라 하며, 이것도 Boolean algebra 다. 유한집합과 여유한집합들만 모은 족이 대표적인 부분 예다.
 

@@ -33,7 +33,7 @@ $$
 - $\varphi_{-X}(t)=\overline{\varphi_X(t)}$ 이므로 $\varphi$ 가 실함수인 것과 $X$ 가 $-X$ 와 같은 분포인 것이 동치다.
 - $\varphi_{aX+b}(t)=e^{itb}\varphi_X(at)$ 다.
 
-## 예
+## 표준 분포의 특성함수
 
 | 분포 | 특성함수 |
 | --- | --- |

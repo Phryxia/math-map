@@ -50,7 +50,7 @@ $$
 
 $(X_n)$ 이 martingale 이고 $\varphi$ 가 [볼록](convexity.md)함수이며 $E\lvert \varphi(X_n) \rvert \lt\infty$ 이면 조건부 Jensen 부등식으로 $(\varphi(X_n))$ 은 submartingale 이다. $\varphi(x) = \lvert x \rvert$ 나 $\varphi(x) = x^2$ 가 대표적이다.
 
-## 예
+## 랜덤워크, 곱 martingale, Doob martingale
 
 - **랜덤워크.** $\xi_1, \xi_2, \dots$ 가 독립이고 $E[\xi_k] = 0$ 이면 $S_n = \sum_{k \le n} \xi_k$ 는 martingale 이다. $E[\xi_k] \ge 0$ 이면 submartingale 이다. [Random walk와 전기 네트워크](random-walks.md)에서 다루는 단순 대칭 랜덤워크가 여기 속한다.
 - **분산 보정.** 위의 상황에서 $\mathrm{Var}(\xi_k) = \sigma^2$ 이면 $S_n^2 - n\sigma^2$ 이 martingale 이다. 전개하면 교차항이 조건부로 사라진다.
