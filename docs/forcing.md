@@ -109,7 +109,7 @@ $\mathrm{Add}(\omega, \kappa)$ 는 조건이 유한이므로 ccc 를 만족한�
 
 한 번의 확대로 얻은 모형에서 다시 강제하는 조작을 **반복 강제법**이라 한다. 극한 단계에서 앞 단계들의 조건을 어떻게 이어 붙일지가 선택 사항이고, 유한 개의 좌표에서만 자명하지 않은 값을 갖게 하는 것이 유한 지지 반복이다.
 
-ccc 순서의 유한 지지 반복은 다시 ccc 를 만족한다. Solovay 와 Tennenbaum 은 이 성질로 Martin 의 공리와 연속체 가설의 부정이 함께 무모순임을 보였다.[^2]
+ccc 순서의 유한 지지 반복은 다시 ccc 를 만족한다. Solovay 와 Tennenbaum 은 이 성질로 [Martin 의 공리](martins-axiom.md)와 연속체 가설의 부정이 함께 무모순임을 보였다.[^2]
 
 # 활용
 
@@ -130,6 +130,6 @@ ccc 순서의 유한 지지 반복은 다시 ccc 를 만족한다. Solovay 와 T
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Martin 의 공리](martins-axiom.md)
 
 #set_theory #logic #foundations
