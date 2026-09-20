@@ -57,7 +57,7 @@ $$
 
 피적분함수가 $t=0$ 에서 $-\infty$ 로 발산하지만 로그 특이점이라 적분은 수렴한다. 기본 성질은 다음과 같다.
 
-- **홀함수이고 주기가 $\pi$ 다.** 곧 $\Lambda(-\theta)=-\Lambda(\theta)$ 이고 $\Lambda(\theta+\pi)=\Lambda(\theta)$ 다.
+- 홀함수이고 주기가 $\pi$ 다. 곧 $\Lambda(-\theta)=-\Lambda(\theta)$ 이고 $\Lambda(\theta+\pi)=\Lambda(\theta)$ 다.
 - **$\pi$ 의 배수에서 영.** 곧 $\Lambda(0)=\Lambda(\pi/2)=\Lambda(\pi)=0$ 이다.
 - **최대와 최소.** $\theta=\pi/6$ 에서 최대 $0.5074708\ldots$ 이고 $\theta=5\pi/6$ 에서 최소다.
 - **배각 공식.** $\Lambda(2\theta)=2\Lambda(\theta)+2\Lambda\big(\theta+\tfrac\pi2\big)$ 다. 이 관계가 여러 부피 항등식의 출처다.
