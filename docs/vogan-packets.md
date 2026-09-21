@@ -34,15 +34,6 @@ $\mathrm{SL}\_2$ 에서는 다르다. $\mathrm{GL}\_2(F)$ 의 기약 표현을 $
 
 실군이 가장 선명한 예다. $\mathrm{PGL}\_2(\mathbb R)$ 의 이산계열은 $\mathrm{SL}\_2(\mathbb R)$ 에서 정칙/반정칙 두 조각으로 갈라져 성분군 $\mathbb Z/2$ 의 두 지표를 채운다. 매개변수에 따라서는 $\mathrm{PGL}\_2(\mathbb R)$ 쪽에 표현이 하나뿐이고, 남은 지표에 해당하는 표현은 **콤팩트 내부형식** $\mathrm{PB}^\times=\mathrm{SU}(2)/\lbrace\pm1\rbrace$ 의 유한차원 표현이다.
 
-```mermaid
-graph TD
-  phi["L 매개변수 phi"] --> S["성분군 S_phi 의 지표들"]
-  S --> A["지표 1<br/>분열형 PGL_2(R) 의 표현"]
-  S --> B["지표 sgn<br/>콤팩트형 SU(2)/± 의 표현"]
-  A --> V["Vogan 꾸러미<br/>두 군의 표현을 합쳐야 지표와 일대일"]
-  B --> V
-```
-
 무한차원 표현과 유한차원 표현을 같은 이름표 아래 두는 것은 [Jacquet–Langlands 대응](jacquet-langlands.md)이 이미 하던 일이고, Vogan 꾸러미는 그것을 이름표 체계 안에 넣은 것이다.
 
 ## 기저점

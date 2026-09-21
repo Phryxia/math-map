@@ -38,17 +38,6 @@ $$
 
 Bridge equation 은 두 연산이 상수배만큼만 다르다고 말한다. 두 연산 모두 원래 방정식을 선형화한 **변분방정식**의 해를 내놓고 그 해공간이 1차원이기 때문이다. 이 관계가 resurgence 를 계산 도구로 만든다.
 
-```mermaid
-graph TD
-  T["형식해의 transseries<br/>F(x, sigma)"] --> S["sigma 미분<br/>해의 족을 따라"]
-  T --> A["alien 미분 Δ_ω<br/>Borel 특이점을 봄"]
-  S --> V["변분방정식의 해<br/>1차원 공간"]
-  A --> V
-  V --> B["bridge equation<br/>Δ_ω F = S_ω ∂F/∂sigma"]
-  B --> L["large-order 관계<br/>계수 점근이 닫힌 식으로"]
-  B --> M["Stokes 상수 S_ω<br/>가 유일한 자유도"]
-```
-
 # 정의
 
 ## Transseries 대수
