@@ -78,7 +78,7 @@ $$
 
 ## 켤레사전분포
 
-사전분포족 $\mathcal{P}$ 가 가능도 $p(x \mid \theta)$ 에 대해 켤레(conjugate)라는 것은, 사전분포가 $\mathcal{P}$ 에 속하면 사후분포도 $\mathcal{P}$ 에 속한다는 뜻이다. 켤레족은 [지수족과 충분통계량](exponential-families.md)에서 자연스럽게 나온다. 가능도가 자연모수 $\eta$ 의 지수족이면
+사전분포족 $\mathcal{P}$ 가 가능도 $p(x \mid \theta)$ 에 대해 켤레(conjugate)라는 것은, 사전분포가 $\mathcal{P}$ 에 속하면 사후분포도 $\mathcal{P}$ 에 속한다는 뜻이다. 켤레족은 [지수족과 충분통계량](exponential-families.md)에서 나온다. 가능도가 자연모수 $\eta$ 의 지수족이면
 
 $$
 \pi(\eta \mid \tau, n_0) \thickspace\propto\thickspace \exp\negthinspace\big(\eta^{\top}\tau - n_0 A(\eta)\big)
