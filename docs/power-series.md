@@ -163,7 +163,7 @@ $$
 
 ## 선수지식
 
-- [수열의 극한](limits.md)
+- [급수의 수렴판정](series-convergence.md)
 - [미분](derivative.md)
 - [균등수렴](uniform-convergence.md)
 
