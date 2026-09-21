@@ -102,5 +102,6 @@ $$
 
 - [자연변환](natural-transformations.md)
 - [유도 함자](derived-functors.md)
+- [층](sheaves.md)
 
 #category_theory #algebraic_topology #computation

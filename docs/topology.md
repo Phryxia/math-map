@@ -97,11 +97,20 @@ $$
 
 ## 더 알아보기
 
+### 공간의 성질
+
 - [콤팩트성](compactness.md)
-- [측도](measure.md)
+- [연결성](connectedness.md)
+
+### 대수적 불변량
+
 - [기본군](fundamental-group.md)
 - [단체 호몰로지](homology.md)
+
+### 공간 위의 구조
+
+- [측도](measure.md)
 - [다양체](manifolds.md)
-- [연결성](connectedness.md)
+- [층](sheaves.md)
 
 #topology #set_theory #analysis
