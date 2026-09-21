@@ -26,7 +26,7 @@ graph TD
   RV --> CE["조건부 기댓값"]
   CE --> MG["Martingale"]
   RV --> MC["Markov 연쇄"]
-  MC --> RW["Random walk"]
+  MC --> RW["무작위 걷기"]
   MC --> PP["Poisson 과정"]
   MG --> BM["Brown 운동"]
   CLT --> BM
@@ -63,7 +63,7 @@ graph TD
 - [조건부 기댓값](conditional-expectation.md): 부분 $\sigma$ 대수 위로의 사영
 - [Martingale](martingales.md): 공정한 도박의 형식화, 선택적 정지와 수렴정리
 - [Markov 연쇄](markov-chains.md): 전이행렬, 정상분포, 수렴정리
-- [Random walk와 전기 네트워크](random-walks.md): 재귀성을 유효저항으로 읽는 대응
+- [무작위 걷기](random-walks.md): 재귀성을 유효저항으로 읽는 대응
 - [Poisson 과정](poisson-process.md): 독립·정상 증분을 가진 계수과정, 지수 대기시간
 
 ## 연속시간 확률과정

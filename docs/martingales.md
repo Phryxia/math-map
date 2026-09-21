@@ -50,9 +50,9 @@ $$
 
 $(X_n)$ 이 martingale 이고 $\varphi$ 가 [볼록](convexity.md)함수이며 $E\lvert \varphi(X_n) \rvert \lt\infty$ 이면 조건부 Jensen 부등식으로 $(\varphi(X_n))$ 은 submartingale 이다. $\varphi(x) = \lvert x \rvert$ 나 $\varphi(x) = x^2$ 가 대표적이다.
 
-## 랜덤워크, 곱 martingale, Doob martingale
+## 무작위 걷기, 곱 martingale, Doob martingale
 
-- **랜덤워크.** $\xi_1, \xi_2, \dots$ 가 독립이고 $E[\xi_k] = 0$ 이면 $S_n = \sum_{k \le n} \xi_k$ 는 martingale 이다. $E[\xi_k] \ge 0$ 이면 submartingale 이다. [Random walk와 전기 네트워크](random-walks.md)에서 다루는 단순 대칭 랜덤워크가 여기 속한다.
+- **무작위 걷기.** $\xi_1, \xi_2, \dots$ 가 독립이고 $E[\xi_k] = 0$ 이면 $S_n = \sum_{k \le n} \xi_k$ 는 martingale 이다. $E[\xi_k] \ge 0$ 이면 submartingale 이다. [무작위 걷기](random-walks.md)에서 다루는 단순 대칭 무작위 걷기가 여기 속한다.
 - **분산 보정.** 위의 상황에서 $\mathrm{Var}(\xi_k) = \sigma^2$ 이면 $S_n^2 - n\sigma^2$ 이 martingale 이다. 전개하면 교차항이 조건부로 사라진다.
 - **곱 martingale.** $\xi_k \gt 0$ 이 독립이고 $E[\xi_k] = 1$ 이면 $M_n = \prod_{k \le n} \xi_k$ 는 martingale 이다. 우도비(likelihood ratio)가 이 꼴이며, [측도 변환](change-of-measure.md)의 밀도과정이 바로 곱 martingale 이다.
 - **Doob martingale.** 적분 가능한 $Z$ 와 임의의 filtration 에 대해 $X_n = E[Z \mid \mathcal F_n]$ 은 martingale 이다(탑 성질). 정보가 점점 드러나면서 예측이 갱신되는 과정이며, Azuma 부등식의 표준 재료다.
@@ -78,11 +78,11 @@ $$
 2. $T \lt\infty$ 가 거의 확실하고 $(X_{T \wedge n})$ 이 유계다.
 3. $E[T] \lt\infty$ 이고 증분이 $\lvert X_{n+1} - X_n \rvert \le c$ 로 유계다.
 
-*증명 스케치.* 정지된 과정이 martingale 이므로 $E[X_{T \wedge n}] = E[X_0]$ 는 모든 $n$ 에서 성립한다. 남은 일은 $n \to \infty$ 에서 극한과 기댓값을 교환하는 것뿐이고, 세 조건은 각각 즉시 성립·[지배 수렴 정리](dominated-convergence.md)·증분 합의 지배를 제공한다. 조건이 없으면 정리는 거짓이다. 대칭 랜덤워크에서 $T = \inf\lbrace n : S_n = 1\rbrace$ 은 거의 확실하게 유한하지만 $E[S_T] = 1 \neq 0 = E[S_0]$ 이다. 이른바 마팅게일 배팅 전략(두 배로 걸기)이 "확실한 이익"처럼 보이는 착시의 정체가 이것이며, 실제로는 $E[T] = \infty$ 이거나 무한한 자금이 필요하다.
+*증명 스케치.* 정지된 과정이 martingale 이므로 $E[X_{T \wedge n}] = E[X_0]$ 는 모든 $n$ 에서 성립한다. 남은 일은 $n \to \infty$ 에서 극한과 기댓값을 교환하는 것뿐이고, 세 조건은 각각 즉시 성립·[지배 수렴 정리](dominated-convergence.md)·증분 합의 지배를 제공한다. 조건이 없으면 정리는 거짓이다. 대칭 무작위 걷기에서 $T = \inf\lbrace n : S_n = 1\rbrace$ 은 거의 확실하게 유한하지만 $E[S_T] = 1 \neq 0 = E[S_0]$ 이다. 이른바 마팅게일 배팅 전략(두 배로 걸기)이 "확실한 이익"처럼 보이는 착시의 정체가 이것이며, 실제로는 $E[T] = \infty$ 이거나 무한한 자금이 필요하다.
 
 ## 도박꾼 파산
 
-$S_n$ 을 대칭 단순 랜덤워크라 하고 $S_0 = k$ 와 $T = \inf\lbrace n : S_n \in \lbrace 0, N\rbrace\rbrace$ 로 둔다. $T$ 는 거의 확실하게 유한하고 $(S_{T \wedge n})$ 은 $[0, N]$ 에 유계이므로 선택적 정지 정리를 쓸 수 있다.
+$S_n$ 을 대칭 단순 무작위 걷기라 하고 $S_0 = k$ 와 $T = \inf\lbrace n : S_n \in \lbrace 0, N\rbrace\rbrace$ 로 둔다. $T$ 는 거의 확실하게 유한하고 $(S_{T \wedge n})$ 은 $[0, N]$ 에 유계이므로 선택적 정지 정리를 쓸 수 있다.
 
 $$
 k \thickspace=\thickspace E[S_T] \thickspace=\thickspace N \cdot P(S_T = N) \thickspace\Rightarrow\thickspace P(S_T = N) = \frac{k}{N}.
@@ -112,7 +112,7 @@ $$
 E\Big[\max_{k \le n} |X_k|^p\Big] \thickspace\le\thickspace \Big(\frac{p}{p-1}\Big)^p E\big[|X_n|^p\big]
 $$
 
-은 위 부등식과 층 공식(layer cake), Hölder 부등식으로 얻는다. $p = 2$ 인 경우가 가장 많이 쓰이며, 랜덤워크의 최대 편차 추정과 확률적분의 등거리 성질(Itô isometry)의 이산 대응물이 된다.
+은 위 부등식과 층 공식(layer cake), Hölder 부등식으로 얻는다. $p = 2$ 인 경우가 가장 많이 쓰이며, 무작위 걷기의 최대 편차 추정과 확률적분의 등거리 성질(Itô isometry)의 이산 대응물이 된다.
 
 ## Upcrossing 부등식과 수렴 정리
 
@@ -146,7 +146,7 @@ $$
 
 ## 확률과정과 다른 분야
 
-- **조화함수와 도달 확률.** [Markov 연쇄](markov-chains.md)에서 경계값 문제의 해는 $h(X_n)$ 이 martingale 이라는 사실과 선택적 정지 정리로 표현된다. [Random walk와 전기 네트워크](random-walks.md)의 전압-도달확률 대응이 이 원리의 물리적 표현이다.
+- **조화함수와 도달 확률.** [Markov 연쇄](markov-chains.md)에서 경계값 문제의 해는 $h(X_n)$ 이 martingale 이라는 사실과 선택적 정지 정리로 표현된다. [무작위 걷기](random-walks.md)의 전압-도달확률 대응이 이 원리의 물리적 표현이다.
 - **강한 수렴 결과.** 독립 합의 [큰 수의 법칙](law-of-large-numbers.md)은 $\sum \xi_k / k$ 형태의 martingale 수렴과 Kronecker 보조정리로 증명할 수 있다. Lévy 의 0-1 법칙, Kolmogorov 0-1 법칙도 Doob martingale 의 수렴으로 나온다.
 - **통계.** 순차적 검정(SPRT)의 우도비는 곱 martingale 이고, 정지 규칙의 오류 확률 경계는 선택적 정지 정리와 최대부등식에서 직접 나온다. [측도 변환](change-of-measure.md)의 Radon–Nikodym 밀도과정도 같은 구조다.
 - **연속시간.** Brownian motion 에서 $B_t$ 와 $B_t^2 - t$ 그리고 $\exp(\theta B_t - \theta^2 t / 2)$ 는 모두 martingale 이며, Itô 적분은 "martingale 변환"의 연속시간 판이다. 금융의 무차익 가격결정은 할인된 가격과정을 martingale 로 만드는 측도의 존재로 서술된다.

@@ -11,7 +11,7 @@ $$
 \varepsilon_p=\begin{cases}0&p\equiv1\cr 1&p\equiv5,7\cr 2&p\equiv11\end{cases}\pmod{12}
 $$
 
-로 유한하다. 이 유한집합을 정점으로 두고 $\ell$ 차 동종사상을 간선으로 두면 $(\ell+1)$ 정규 그래프가 되고, 그것이 **Ramanujan 그래프**다. 스펙트럼 간극이 이론적 최댓값에 도달해 [random walk](random-walks.md)가 가장 빠르게 섞인다.
+로 유한하다. 이 유한집합을 정점으로 두고 $\ell$ 차 동종사상을 간선으로 두면 $(\ell+1)$ 정규 그래프가 되고, 그것이 **Ramanujan 그래프**다. 스펙트럼 간극이 이론적 최댓값에 도달해 [무작위 걷기](random-walks.md)가 가장 빠르게 섞인다.
 
 빠르게 섞이는 그래프에서 두 정점 사이의 경로를 찾는 일은 어렵다. 이 어려움을 가정으로 **CGL**(Charles–Goren–Lauter) 해시함수와 **SIDH**(supersingular isogeny Diffie–Hellman) 키교환이 설계되었고, 후자는 NIST 후양자 표준화의 최종 후보(SIKE)까지 올라갔다가 2022 년에 깨졌다.
 
@@ -61,7 +61,7 @@ $$
 |a_\ell|\le2\sqrt\ell
 $$
 
-이 Ramanujan 조건을 준다[^1]. 그 결과 이 그래프 위의 random walk 는 $O(\log p)$ 걸음이면 거의 균등분포에 도달한다.
+이 Ramanujan 조건을 준다[^1]. 그 결과 이 그래프 위의 무작위 걷기는 $O(\log p)$ 걸음이면 거의 균등분포에 도달한다.
 
 ## 경로 문제의 비대칭
 
@@ -173,7 +173,7 @@ SIDH 의 붕괴는 그래프 자체의 어려움과 그 그래프를 쓰는 프�
 ## 선수지식
 
 - [Lang–Trotter 추측과 초특이 소수](lang-trotter.md)
-- [Random walk와 전기 네트워크](random-walks.md)
+- [무작위 걷기](random-walks.md)
 
 ## 더 알아보기
 

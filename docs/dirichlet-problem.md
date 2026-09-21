@@ -69,7 +69,7 @@ $\partial\Omega$ 의 모든 점이 정칙이면 Perron 해가 $u\in C(\overline\
 # 활용
 
 - [Brown 운동](brownian-motion.md)의 확률적 해법. $\Omega$ 에서 출발한 경로가 처음 경계에 닿는 점의 $g$ 값을 평균하면 Perron 해와 같다. 경계점의 정칙성은 그 점에서 출발한 경로가 즉시 $\Omega$ 를 벗어난다는 조건과 같다.
-- [Random walk와 전기 네트워크](random-walks.md)의 이산판. 격자에서 도달 확률과 전위가 이산 Laplace 방정식의 경계값 문제의 해다.
+- [무작위 걷기](random-walks.md)의 이산판. 격자에서 도달 확률과 전위가 이산 Laplace 방정식의 경계값 문제의 해다.
 - [등각사상](conformal-mapping.md)과 Riemann 사상정리. 단순연결 영역에서 $\log\vert z-a\vert$ 의 경계값을 갖는 Dirichlet 문제를 풀면 Green 함수가 나오고, 거기서 사상을 만든다.
 - [Riemann 곡면과 균일화 정리](riemann-surfaces.md)의 증명이 곡면 위에서 같은 구성을 쓴다.
 

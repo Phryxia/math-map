@@ -32,7 +32,7 @@ graph TD
   GL --> EG["Expander 그래프"]
   EV["고윳값과 고유벡터"] --> EG
   ER --> SS["스펙트럼 희소화"]
-  ER --> RW["Random walk"]
+  ER --> RW["무작위 걷기"]
   EG --> RG["Ramanujan 그래프"]
 ```
 
