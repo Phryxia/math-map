@@ -43,6 +43,7 @@ graph TD
 - [Bell 수](bell-numbers.md): 집합 분할 전체의 수, 지수생성함수와 Dobinski 공식
 - [조합적 설계](block-designs.md): 원소쌍이 고르게 나타나는 블록족, Fisher 부등식과 유한 사영평면
 - [Latin 방진](latin-squares.md): 직교하는 방진의 최대 개수, Euler 추측의 반증
+- [유한 사영평면](finite-projective-planes.md): 차수 $n$ 평면의 존재 문제와 직교 방진 $n-1$ 개의 동치
 - [확률적 방법](probabilistic-method.md): 무작위 대상이 존재를 증명한다
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md): 문턱 현상, 연결성과 거대 성분
 - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위의 조화해석, 복잡도 이론의 도구

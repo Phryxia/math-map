@@ -36,7 +36,7 @@ $X$ 의 크기 $t$ 인 부분집합마다 그것을 담는 블록이 정확히 �
 
 ## 유한 사영평면
 
-차수 $n$ 인 **유한 사영평면**은 $S(2, n+1, n^2+n+1)$ 이다. 점이 $n^2+n+1$ 개, 직선이 같은 개수이고, 두 점이 한 직선을 정하며 두 직선이 한 점에서 만난다.
+차수 $n$ 인 [유한 사영평면](finite-projective-planes.md)은 $S(2, n+1, n^2+n+1)$ 이다. 점이 $n^2+n+1$ 개, 직선이 같은 개수이고, 두 점이 한 직선을 정하며 두 직선이 한 점에서 만난다. 어떤 $n$ 에서 이런 설계가 존재하는지는 대칭 설계의 존재 문제 가운데 가장 많이 연구된 경우다.
 
 ## 대칭 설계
 
@@ -62,12 +62,6 @@ $$
 
 $J$ 는 모든 성분이 $1$ 인 행렬이다. $r \gt \lambda$ 이므로 이 행렬의 고윳값이 모두 양수이고 계수가 $v$ 다. $N$ 의 계수가 $v$ 이상이므로 $b \ge v$ 다. ∎
 
-## Bruck–Ryser–Chowla 정리
-
-**정리.** 차수 $n$ 인 사영평면이 존재하고 $n \equiv 1$ 또는 $2 \pmod 4$ 이면 $n = x^2 + y^2$ 인 정수 $x, y$ 가 있다.
-
-증명은 결합행렬의 등식을 이차형식의 등가로 읽고 Hasse–Minkowski 정리를 적용하는 것이다. 이 조건으로 $n = 6$ 과 $n = 14$ 인 사영평면이 배제된다. $n = 10$ 은 조건을 통과하지만 Lam 과 공저자들이 계산기 탐색으로 그런 평면이 없음을 증명했다.[^2]
-
 ## 구성
 
 차수 $q$ 인 [유한체](finite-fields.md)가 있으면 3차원 벡터 공간의 1차원 부분공간을 점, 2차원 부분공간을 직선으로 삼아 차수 $q$ 인 사영평면을 얻는다. 점의 개수는 $(q^3-1)/(q-1) = q^2+q+1$ 이다.
@@ -82,7 +76,6 @@ $J$ 는 모든 성분이 $1$ 인 행렬이다. $r \gt \lambda$ 이므로 이 행
 - 유한 사영평면이 상호 직교 [Latin 방진](latin-squares.md)과 대응한다. 차수 $n$ 인 사영평면이 있는 것과 크기 $n$ 인 직교 Latin 방진이 $n-1$ 개 있는 것이 동치다.
 
 [^1]: T. P. Kirkman, "On a problem in combinations", *Cambridge and Dublin Mathematical Journal* 2 (1847), 191–204. Steiner 삼중계의 존재 조건과 구성이 이 논문의 내용이다.
-[^2]: C. W. H. Lam, L. Thiel and S. Swiercz, "The non-existence of finite projective planes of order 10", *Canadian Journal of Mathematics* 41 (1989), 1117–1123.
 
 # 연관 문서
 

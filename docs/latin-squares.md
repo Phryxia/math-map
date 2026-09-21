@@ -85,6 +85,6 @@ $N(n)$ 은 $n$ 이 커지면 함께 커진다. 알려진 하한은 $n$ 이 충�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [유한 사영평면](finite-projective-planes.md)
 
 #combinatorics #statistics #algebra
