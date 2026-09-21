@@ -94,7 +94,7 @@ $\mathrm{WKL}\_0$ 은 계산 가능한 집합만으로는 모형을 얻지 못�
 - 정리의 증명 강도를 눈금으로 잰다. 어느 정리가 $\mathrm{WKL}\_0$ 에 놓이는지 $\mathrm{ACA}\_0$ 에 놓이는지가 그 정리가 쓰는 비구성적 단계의 세기를 알려주는 값이다.
 - 구성적 증명의 한계를 정한다. $\mathrm{RCA}\_0$ 에서 증명되는 정리는 계산 가능한 입력에 대해 계산 가능한 출력을 주고, [직관주의](intuitionism.md)가 인정하는 증명과 가까운 자리에 있다.
 - Hilbert 프로그램의 부분적 수행을 뒷받침한다. $\mathrm{WKL}\_0$ 은 원시재귀 산술에 대해 보존적이므로, 이 체계에서 증명되는 $\Pi^0_2$ 진술은 유한적 방법으로도 증명된다. [형식주의와 Hilbert 프로그램](formalism-hilbert-program.md) 문서의 유한적 관점이 이 결과로 되살아난다.
-- Ramsey 이론의 정리들이 다섯 체계 어디에도 놓이지 않는 사례를 준다. 쌍에 대한 무한 Ramsey 정리는 $\mathrm{ACA}\_0$ 보다 약하고 $\mathrm{WKL}\_0$ 과 비교 불가능하다.
+- [Ramsey 이론](ramsey-theory.md)의 정리들이 다섯 체계 어디에도 놓이지 않는 사례를 준다. 쌍에 대한 무한 Ramsey 정리는 $\mathrm{ACA}\_0$ 보다 약하고 $\mathrm{WKL}\_0$ 과 비교 불가능하다.
 
 [^1]: Stephen G. Simpson, *Subsystems of Second Order Arithmetic*, 2nd ed., Cambridge University Press (2009). 다섯 체계의 정의와 동치 목록, 모형 구성이 이 책의 전개다.
 

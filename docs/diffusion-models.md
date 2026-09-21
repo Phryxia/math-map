@@ -109,7 +109,7 @@ $$
 
 ## 조건부 생성과 안내
 
-조건 $y$ 가 있으면 Bayes 정리로 점수가 갈린다.
+조건 $y$ 가 있으면 [Bayes 정리](bayes.md)로 점수가 갈린다.
 
 $$
 \nabla_x\log q_t(x\mid y)=\nabla_x\log q_t(x)+\nabla_x\log q_t(y\mid x)

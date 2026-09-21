@@ -155,7 +155,7 @@ Fermat 마지막 정리로 가는 길은 다음과 같다.
 
 Wiles 가 메운 칸은 Frey 곡선이 모듈러라는 부분이다. 그 증명은 변형환과 Hecke 대수의 동형 $R=T$ 를 세우는 방식이고 모듈러성 올림 정리의 시작이 되었다.
 
-## Sato–Tate 분포
+## [Sato–Tate 분포](sato-tate.md)
 
 모듈러성은 $a_p$ 의 값을 하나씩 주지만 분포는 주지 않는다. Hasse 정리의 $|a_p|\le2\sqrt p$ 에서 $a_p=2\sqrt p\cos\theta_p$ 로 쓰고, 복소곱셈이 없는 $E$ 에서 $\theta_p$ 의 분포를 묻는 것이 Sato–Tate 추측이다.
 
@@ -173,7 +173,7 @@ $\mathrm{Sym}^k$ 함자성으로 $\mathrm{Sym}^k\pi_E$ 가 자기동형임을 �
 
 - **Artin 추측**: 자명하지 않은 기약 Artin 표현의 $L$ 함수는 정함수다. 2 차원 홀수 경우는 모듈러성으로 해결되었다.
 - **Ramanujan–Petersson 추측**: 첨점형식의 계수 상계. 무게 $k$ 고유형식에서 $|a_p|\le2p^{(k-1)/2}$ 이고, Deligne 이 Weil 추측에서 유도했다.
-- **Birch–Swinnerton-Dyer 추측**: $L(s,E)$ 의 $s=1$ 에서의 영점 차수가 계수와 같다는 추측. 모듈러성이 있어야 $L(s,E)$ 가 $s=1$ 에서 정의되기부터 한다.
+- **[Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)**: $L(s,E)$ 의 $s=1$ 에서의 영점 차수가 계수와 같다는 추측. 모듈러성이 있어야 $L(s,E)$ 가 $s=1$ 에서 정의되기부터 한다.
 
 수체의 산술을 해석과 표현론의 언어로 옮기는 사전이 있다는 것이 강령의 주장이고 그 사전의 첫 항목이 유체론이다. $\mathrm{GL}\_1$ 에서 확인된 원리를 모든 환원군으로 옮기려는 시도가 반세기 넘게 이어지고 있다.
 

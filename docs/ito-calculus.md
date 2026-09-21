@@ -101,7 +101,7 @@ $M_t = \exp(\int \theta\thinspace dB - \tfrac12 \int \theta^2\thinspace ds)$ 는
 
 ## 편미분방정식과의 대응
 
-Feynman–Kac 공식은 포물형 편미분방정식의 해를 확산 과정의 기댓값으로 표현한다. Itô 공식을 해에 적용해 $dt$ 항이 방정식 때문에 사라지게 하면 남은 확률적분이 martingale 이므로 기댓값만 남는다. 이 대응으로 고차원 방정식을 Monte Carlo 로 풀 수 있다.
+[Feynman–Kac 공식](feynman-kac.md)은 포물형 편미분방정식의 해를 확산 과정의 기댓값으로 표현한다. Itô 공식을 해에 적용해 $dt$ 항이 방정식 때문에 사라지게 하면 남은 확률적분이 martingale 이므로 기댓값만 남는다. 이 대응으로 고차원 방정식을 Monte Carlo 로 풀 수 있다.
 
 ## 필터링과 추정
 

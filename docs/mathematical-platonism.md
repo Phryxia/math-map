@@ -55,7 +55,7 @@ Benacerraf의 "Mathematical Truth"는 두 요구가 동시에 충족되기 어�
 
 ## 동일화 문제
 
-Benacerraf의 다른 논문 "What Numbers Could Not Be"는 자연수를 집합으로 구현하는 방식이 여러 가지임을 지적한다. von Neumann 순서수와 Zermelo 표현은 모두 Peano 공리를 만족한다.
+Benacerraf의 다른 논문 "What Numbers Could Not Be"는 자연수를 집합으로 구현하는 방식이 여러 가지임을 지적한다. von Neumann 순서수와 Zermelo 표현은 모두 [Peano 공리](peano-axioms.md)를 만족한다.
 
 $$
 0=\varnothing,\quad n+1=n\cup\lbrace n\rbrace

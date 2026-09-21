@@ -102,7 +102,7 @@ $$
 p(\theta\mid x)=\frac{p(x\mid\theta)\thinspace p(\theta)}{\int p(x\mid\theta')p(\theta')\thinspace d\theta'}
 $$
 
-분모의 적분이 대개 닫힌 형태로 계산되지 않으므로 켤레 사전분포, Markov 연쇄 몬테카를로, 변분 근사를 쓴다. 조건화가 확률 $0$ 인 사건에 대해서도 잘 정의되려면 [조건부 기댓값](conditional-expectation.md)의 측도론적 정의가 필요하다.
+분모의 적분이 대개 닫힌 형태로 계산되지 않으므로 켤레 사전분포, [Markov 연쇄](markov-chains.md) 몬테카를로, 변분 근사를 쓴다. 조건화가 확률 $0$ 인 사건에 대해서도 잘 정의되려면 [조건부 기댓값](conditional-expectation.md)의 측도론적 정의가 필요하다.
 
 # 활용
 

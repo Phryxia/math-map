@@ -72,7 +72,7 @@ $$
 L-H(X)=\sum_ap(a)\log_2\frac{p(a)}{q(a)}-\log_2 S=D(p\thinspace\Vert\thinspace q)-\log_2S\ \ge 0
 $$
 
-이다. KL divergence 가 0 이상이고 Kraft 부등식에서 $S \le 1$ 이므로 $-\log_2 S \ge 0$ 이다. 등호는 $S = 1$ 이고 $p = q$ , 곧 모든 확률이 2 의 거듭제곱의 역수이고 $\ell(a) = -\log_2 p(a)$ 일 때만 성립한다. 틀린 분포 $q$ 로 부호를 짜면 $D(p\Vert q)$ 비트만큼 손해를 본다.
+이다. [KL divergence](kl-divergence.md) 가 0 이상이고 Kraft 부등식에서 $S \le 1$ 이므로 $-\log_2 S \ge 0$ 이다. 등호는 $S = 1$ 이고 $p = q$ , 곧 모든 확률이 2 의 거듭제곱의 역수이고 $\ell(a) = -\log_2 p(a)$ 일 때만 성립한다. 틀린 분포 $q$ 로 부호를 짜면 $D(p\Vert q)$ 비트만큼 손해를 본다.
 
 ## Shannon 부호
 

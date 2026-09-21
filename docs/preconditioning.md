@@ -102,7 +102,7 @@ $A = D - E - F$ 를 대각, 아래삼각, 위삼각으로의 분할이라 할 �
 
 - 편미분방정식을 이산화한 계에서 반복 횟수를 정한다. 확산 항이 지배하는 문제는 다중격자가, 이류 항이 섞이면 방향을 따르는 불완전 분해가 쓰인다.
 - 내부점 방법의 각 단계에서 나오는 Newton 계가 진행에 따라 조건수가 커지므로, 장벽 항의 구조를 반영한 $M$ 을 쓴다. [경사하강법](gradient-descent.md)에서 좌표 변환으로 조건수를 낮추는 것과 같은 조작이다.
-- 그래프 Laplacian 계를 풀 때 [스펙트럼 희소화](spectral-sparsification.md)로 얻은 간선 수가 적은 그래프의 Laplacian 을 $M$ 으로 쓴다. 이차형식이 $1 \pm \epsilon$ 배 안에 들어간다는 보장이 그대로 스펙트럼 등가 상수다.
+- [그래프 Laplacian](graph-laplacian.md) 계를 풀 때 [스펙트럼 희소화](spectral-sparsification.md)로 얻은 간선 수가 적은 그래프의 Laplacian 을 $M$ 으로 쓴다. 이차형식이 $1 \pm \epsilon$ 배 안에 들어간다는 보장이 그대로 스펙트럼 등가 상수다.
 - [고윳값](eigenvalues.md) 계산에서 $\sigma$ 근처의 고윳값을 찾을 때 $(A - \sigma I)^{-1}$ 을 곱하는 대신 그 계를 전처리된 반복법으로 푼다.
 
 [^1]: I. Gustafsson, "A class of first order factorization methods", *BIT Numerical Mathematics* 18 (1978), 142–156. 수정 불완전 Cholesky 분해가 2차원 격자 문제의 조건수를 $h^{-2}$ 에서 $h^{-1}$ 규모로 낮춤을 보인다.

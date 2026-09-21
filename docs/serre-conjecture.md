@@ -72,7 +72,7 @@ $$
 \det\bar\rho(\mathrm{Frob}\_\ell)\equiv \varepsilon(\ell)\ell^{k-1}\pmod\lambda
 $$
 
-가 성립하는 것이다. Chebotarev 밀도 정리가 거의 모든 $\ell$ 에서의 자취 일치로 표현이 결정됨을 보장한다.
+가 성립하는 것이다. [Chebotarev 밀도 정리](chebotarev.md)가 거의 모든 $\ell$ 에서의 자취 일치로 표현이 결정됨을 보장한다.
 
 ## 추측의 두 형태
 

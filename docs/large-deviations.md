@@ -64,7 +64,7 @@ $$
 \lim_{n\to\infty}\frac{1}{n}\log\mathbb P\lbrack L_n \in A\rbrack = -\inf_{\nu\in A}\mathrm{KL}(\nu\Vert\mu)
 $$
 
-이다. $\mathrm{KL}(\nu\Vert\mu)$ 는 $\nu$ 의 $\mu$ 에 대한 상대엔트로피(Kullback–Leibler divergence)이고 $H$ 는 Shannon 엔트로피다. 유한 알파벳에서는 형 계수 세기로 증명된다. 경험분포가 $\nu$ 인 표본열의 개수가 $e^{nH(\nu)}$ 규모이고 각 열의 확률이 $e^{-n(H(\nu)+\mathrm{KL}(\nu\Vert\mu))}$ 규모이므로 곱이 $e^{-n\mathrm{KL}(\nu\Vert\mu)}$ 가 된다.
+이다. $\mathrm{KL}(\nu\Vert\mu)$ 는 $\nu$ 의 $\mu$ 에 대한 상대엔트로피(Kullback–Leibler divergence)이고 $H$ 는 [Shannon 엔트로피](entropy.md)다. 유한 알파벳에서는 형 계수 세기로 증명된다. 경험분포가 $\nu$ 인 표본열의 개수가 $e^{nH(\nu)}$ 규모이고 각 열의 확률이 $e^{-n(H(\nu)+\mathrm{KL}(\nu\Vert\mu))}$ 규모이므로 곱이 $e^{-n\mathrm{KL}(\nu\Vert\mu)}$ 가 된다.
 
 ## 축약 원리
 

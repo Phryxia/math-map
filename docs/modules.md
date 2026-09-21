@@ -133,7 +133,7 @@ $$
 | 기저 | 항상 존재 | 대체로 없음 ($\mathbb Z/2\mathbb Z$ 는 $\mathbb Z$ 위에서 비자유) |
 | 부분구조 | 항상 직합 인자 | 아님 ( $2\mathbb{Z} \subset \mathbb{Z}$ ) |
 | 생성집합 | 기저로 축소 가능 | 축소 불가능할 수 있음 |
-| 유한생성 부분구조 | 항상 유한생성 | 비Noether 환에서는 실패 |
+| 유한생성 부분구조 | 항상 유한생성 | 비[Noether 환](noetherian-rings.md)에서는 실패 |
 | 불변량 | 차원 하나 | 계수 + torsion 구조 |
 
 세 번째 줄은 실제로 자주 발목을 잡는다. $\mathbb Z$ 위에서 $\mathbb Q$ 는 어떤 유한집합으로도 생성되지 않으면서 torsion-free다.
@@ -175,7 +175,7 @@ $$
 ## 두 따름정리
 
 - $R=\mathbb Z$ 로 두면 유한생성 아벨군의 분류가 된다. 모든 유한생성 아벨군은 $\mathbb Z^n$ 과 순환군들의 직합이다.
-- $R=k[x]$ 로 두고 $M$ 을 선형변환 $T$ 를 가진 유한차원 벡터 공간으로 보면, 초등인자가 곧 $T$ 의 Jordan 블록이다. [고윳값과 고유벡터](eigenvalues.md)의 이론과 유리 표준형, Jordan 표준형이 이 정리의 특수한 경우다.
+- $R=k[x]$ 로 두고 $M$ 을 선형변환 $T$ 를 가진 유한차원 벡터 공간으로 보면, 초등인자가 곧 $T$ 의 Jordan 블록이다. [고윳값과 고유벡터](eigenvalues.md)의 이론과 유리 표준형, [Jordan 표준형](jordan-canonical-form.md)이 이 정리의 특수한 경우다.
 
 ## Noether 조건
 

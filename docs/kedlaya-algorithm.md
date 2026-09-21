@@ -66,7 +66,7 @@ graph TD
 
 ## 약수렴 대수
 
-$\mathbb F_q$ 위 곡선의 $p$ 진 코호몰로지를 만들려면 곡선을 $\mathbb Z_q$ 로 들어올려야 한다. 좌표환 $\mathbb F_q[x,y]/(y^2-f)$ 를 그대로 들어올린 $\mathbb Z_q$ 대수의 de Rham 코호몰로지는 너무 크고, $p$ 진 완비화를 취하면 수렴반경이 정확히 $1$ 인 급수까지 들어와 코호몰로지가 무한차원이 된다.
+$\mathbb F_q$ 위 곡선의 $p$ 진 코호몰로지를 만들려면 곡선을 $\mathbb Z_q$ 로 들어올려야 한다. 좌표환 $\mathbb F_q[x,y]/(y^2-f)$ 를 그대로 들어올린 $\mathbb Z_q$ 대수의 [de Rham 코호몰로지](de-rham-cohomology.md)는 너무 크고, $p$ 진 완비화를 취하면 수렴반경이 정확히 $1$ 인 급수까지 들어와 코호몰로지가 무한차원이 된다.
 
 Monsky 와 Washnitzer 는 수렴반경이 $1$ 보다 조금 큰 급수만 남긴다. 이 **약수렴 대수** $A^\dagger$ 의 de Rham 코호몰로지는 유한차원이고 차원이 위상적으로 기대되는 값과 같다. 종수 $g$ 인 홀수차 초타원곡선의 아핀 조각에서 $H^1$ 의 기저가
 
@@ -197,7 +197,7 @@ $p\le71$ 에서 이 곡선이 초특이가 되는 소수는 $17$ 하나다. 초�
 
 - **곡선 암호.** [타원곡선](elliptic-curves.md)이나 초타원곡선으로 암호를 세우려면 군의 위수를 알아야 한다. 위수가 작은 소인수를 가지면 Pohlig–Hellman 으로 [이산로그](discrete-logarithm.md)가 깨진다. 곡선을 무작위로 뽑고 위수를 세어 조건에 맞을 때까지 반복하는 것이 표준 절차이고, 그 "세기" 가 이 알고리즘이다.
 - **$p$ 진 불변량 계산.** 초특이성, Newton 다각형, 형식군의 높이, $p$ 진 높이와 $p$ 진 $L$ 함수의 수치 실험이 전부 이 계산에 의존한다.
-- **수치 실험.** 대량의 $a_p$ 표가 Sato–Tate 분포와 BSD(Birch–Swinnerton-Dyer) 추측의 수치 검증, 모듈러성 판정의 근거가 된다. LMFDB(L-functions and modular forms database) 의 곡선 자료가 이 계열 알고리즘의 산출물이다.
+- **수치 실험.** 대량의 $a_p$ 표가 [Sato–Tate 분포](sato-tate.md)와 BSD(Birch–Swinnerton-Dyer) 추측의 수치 검증, 모듈러성 판정의 근거가 된다. LMFDB(L-functions and modular forms database) 의 곡선 자료가 이 계열 알고리즘의 산출물이다.
 - **일반 다양체로.** Lauder–Wan 은 Dwork 의 원래 방법을 되살려 임의의 다양체에 대한 $p$ 다항시간 알고리즘을 주었고, Lauder 의 변형법은 매개변수를 움직이며 미분방정식을 푸는 방식으로 비용을 더 낮췄다.
 
 [^1]: K. Kedlaya, *Counting points on hyperelliptic curves using Monsky–Washnitzer cohomology*, J. Ramanujan Math. Soc. **16** (2001), 323–338 (errata 18 (2003)). 약수렴 대수와 코호몰로지는 P. Monsky, G. Washnitzer, *Formal cohomology I*, Ann. of Math. **88** (1968), 181–217. 일반 다양체는 A. Lauder, D. Wan, *Counting points on varieties over finite fields of small characteristic*, in *Algorithmic Number Theory* (MSRI, 2008). 개량된 비용은 D. Harvey, *Kedlaya's algorithm in larger characteristic*, IMRN (2007). Hasse 불변량과 초특이 소수는 J. Silverman, *The Arithmetic of Elliptic Curves* (2판, 2009) V장.
