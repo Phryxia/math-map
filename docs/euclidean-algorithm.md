@@ -104,11 +104,11 @@ $\gcd(p,a)=1$ 인 소수 $p$ 가 $ab$ 를 나누면 $sp+ta=1$ 의 양변에 $b$ 
 
 ## 선수지식
 
-- [정수의 합동과 나머지 연산](modular-arithmetic.md)
+- [정수의 합동](modular-arithmetic.md)
 
 ## 더 알아보기
 
-- [소수와 유일분해](primes.md)
+- [소수](primes.md)
 - [연분수](continued-fractions.md)
 
 #number_theory #algorithms

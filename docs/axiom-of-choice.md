@@ -120,7 +120,7 @@ AC 의 약한 형태들은 강도가 다르다. 가산 선택, 종속 선택, �
 
 - [ZFC 공리계](zfc-axioms.md)
 - [부분순서](partial-orders.md)
-- [서수와 초한귀납법](ordinals.md)
+- [서수](ordinals.md)
 
 ## 더 알아보기
 

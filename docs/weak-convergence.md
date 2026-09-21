@@ -136,7 +136,7 @@ $$
 
 ## 선수지식
 
-- [상측도와 확률분포](pushforward-measure.md)
+- [상측도](pushforward-measure.md)
 - [균등적분가능성](uniform-integrability.md)
 - [확률론 개관](probability-overview.md)
 

@@ -28,7 +28,7 @@ graph TD
   UFD --> FG
   M --> NK["Nakayama 보조정리"]
   LZ --> NK
-  LA["Lie 대수"] --> RS["근계와 Weyl 군"] --> WC["Weyl 지표 공식"] --> BWB["Borel–Weil–Bott"]
+  LA["Lie 대수"] --> RS["근계"] --> WC["Weyl 지표 공식"] --> BWB["Borel–Weil–Bott"]
   RS --> CX
   LA --> LG["Lie 군"] --> PW["Peter–Weyl 정리"] --> WC
   LA --> VOA["정점작용소대수"] --> ZA["Zhu 대수"]
@@ -47,7 +47,7 @@ graph TD
 
 ## 환과 가군
 
-- [환](rings.md) → [아이디얼과 몫환](ideals-quotient-rings.md) → [소 아이디얼과 극대 아이디얼](prime-ideals.md) → [환의 국소화](localization-rings.md)
+- [환](rings.md) → [아이디얼과 몫환](ideals-quotient-rings.md) → [소 아이디얼](prime-ideals.md) → [환의 국소화](localization-rings.md)
 - [다항식환](polynomial-rings.md) → [유일분해정역](unique-factorization-domains.md): 환 위의 다항식과 나눗셈, 그리고 Euclid 정역(ED) $\subset$ 주아이디얼정역(principal ideal domain, PID) $\subset$ 유일분해정역(unique factorization domain, UFD) 사슬
 - [Noether 환](noetherian-rings.md): 오름사슬 조건과 Hilbert 기저정리
 - [가군](modules.md) → [텐서곱](tensor-products.md) → [유도 함자](derived-functors.md): 환 위의 벡터 공간과 완전성의 실패를 재는 Tor, Ext
@@ -65,7 +65,7 @@ graph TD
 
 ## Lie 이론과 표현론
 
-- [Lie 대수](lie-algebras.md) → [근계와 Weyl 군](root-systems.md) → [Weyl 지표 공식과 최고무게 이론](weyl-character-formula.md)
+- [Lie 대수](lie-algebras.md) → [근계](root-systems.md) → [Weyl 지표 공식과 최고무게 이론](weyl-character-formula.md)
 - [Lie 군과 지수사상](lie-groups.md) → [Peter–Weyl 정리](peter-weyl.md) → [구면조화함수](spherical-harmonics.md)
 - [Borel–Weil–Bott 정리](borel-weil-bott.md) → [Beilinson–Bernstein 국소화](beilinson-bernstein.md), [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md) → [범주 O](category-o.md), [Schubert 계산](schubert-calculus.md)
 - [Schur 다항식](schur-polynomials.md) → [Littlewood–Richardson 규칙](littlewood-richardson.md), [Schur–Weyl 쌍대성](schur-weyl-duality.md) → [Brauer 대수](brauer-algebras.md)

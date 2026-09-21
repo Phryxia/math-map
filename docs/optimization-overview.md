@@ -27,7 +27,7 @@ graph TD
   SD --> LT["Lovász 세타 함수"]
   GC["그래프 색칠"] --> LT
   LD --> OT["최적 수송과 Wasserstein 거리"]
-  PM["상측도와 확률분포"] --> OT
+  PM["상측도"] --> OT
   OT --> SK["Sinkhorn 알고리즘"]
   SK --> UO["불균형 최적 수송"]
   OT --> WG["Wasserstein 기울기 흐름"]

@@ -135,7 +135,7 @@ $\mathbb{F}\_q$ 위의 사영평면은 위수 $q$ 의 유한사영평면을 주�
 ## 선수지식
 
 - [체의 확대](field-extensions.md)
-- [정수의 합동과 나머지 연산](modular-arithmetic.md)
+- [정수의 합동](modular-arithmetic.md)
 
 ## 더 알아보기
 

@@ -201,7 +201,7 @@ $A_1$ 에서는 $x-x^{-1}$ 이고, 같은 항등식을 아핀 근계로 확장�
 
 ## 선수지식
 
-- [근계와 Weyl 군](root-systems.md)
+- [근계](root-systems.md)
 - [Peter–Weyl 정리](peter-weyl.md)
 
 ## 더 알아보기

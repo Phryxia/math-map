@@ -165,7 +165,7 @@ $Q\ll P$ 가 깨지면 밀도가 존재하지 않는다. 예를 들어 연속분
 ## 선수지식
 
 - [Radon–Nikodym 정리](radon-nikodym.md)
-- [상측도와 확률분포](pushforward-measure.md)
+- [상측도](pushforward-measure.md)
 
 ## 더 알아보기
 

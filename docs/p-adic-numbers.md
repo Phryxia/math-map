@@ -179,7 +179,7 @@ $\mathbb R$ 와 $\mathbb Q_p$ 는 $\mathbb Q$ 의 완비화로서 대등하다. 
 ## 선수지식
 
 - [완비성](completeness.md)
-- [정수의 합동과 나머지 연산](modular-arithmetic.md)
+- [정수의 합동](modular-arithmetic.md)
 
 ## 더 알아보기
 

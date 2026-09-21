@@ -103,7 +103,7 @@ $$
 
 ## 다른 측도
 
-Hausdorff 측도는 프랙탈의 차원을 재고, Haar 측도는 군 위에서 평행이동 불변인 측도를 준다. 상측도는 확률변수가 유도하는 분포를 만든다([상측도와 확률분포](pushforward-measure.md)). 두 측도의 관계를 밀도로 표현하는 것이 [Radon–Nikodym 정리](radon-nikodym.md)다.[^1]
+Hausdorff 측도는 프랙탈의 차원을 재고, Haar 측도는 군 위에서 평행이동 불변인 측도를 준다. 상측도는 확률변수가 유도하는 분포를 만든다([상측도](pushforward-measure.md)). 두 측도의 관계를 밀도로 표현하는 것이 [Radon–Nikodym 정리](radon-nikodym.md)다.[^1]
 
 [^1]: Terence Tao, *A quick review of measure and integration theory* (245B Notes 0). 가측공간·측도·확률측도와 기본 예시. https://terrytao.wordpress.com/2009/01/01/245b-notes-0-a-quick-review-of-measure-and-integration-theory/
 
@@ -120,7 +120,7 @@ Hausdorff 측도는 프랙탈의 차원을 재고, Haar 측도는 군 위에서 
 
 - [가측함수](measurable-functions.md)
 - [Lebesgue 적분](lebesgue-integral.md)
-- [상측도와 확률분포](pushforward-measure.md)
+- [상측도](pushforward-measure.md)
 - [Radon–Nikodym 정리](radon-nikodym.md)
 
 #measure_theory #probability #analysis #set_theory

@@ -118,7 +118,7 @@ $n$ 자리 난수가 소수일 확률이 대략 $1/(n\ln 10)$ 이므로 [RSA 암
 
 ## 선수지식
 
-- [소수와 유일분해](primes.md)
+- [소수](primes.md)
 - [유수 정리](residue-theorem.md)
 - [Riemann zeta 함수](riemann-zeta.md)
 

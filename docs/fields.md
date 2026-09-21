@@ -56,7 +56,7 @@ $$
 \mathrm{char}F=p \Rightarrow \text{소체}\cong\mathbb{F}\_p=\mathbb{Z}/p\mathbb{Z},\qquad \mathrm{char}F=0 \Rightarrow \text{소체}\cong\mathbb{Q}
 $$
 
-따라서 모든 체는 $\mathbb{Q}$ 또는 어떤 $\mathbb{F}\_p$ 의 확대체다. $\mathbb{F}\_p$ 의 연산은 [정수의 합동과 나머지 연산](modular-arithmetic.md)에서 $p$ 가 [소수](primes.md)일 때의 나머지 연산이다.
+따라서 모든 체는 $\mathbb{Q}$ 또는 어떤 $\mathbb{F}\_p$ 의 확대체다. $\mathbb{F}\_p$ 의 연산은 [정수의 합동](modular-arithmetic.md)에서 $p$ 가 [소수](primes.md)일 때의 나머지 연산이다.
 
 ## 아이디얼과 준동형
 
@@ -110,7 +110,7 @@ $$
 ## 선수지식
 
 - [환](rings.md)
-- [소 아이디얼과 극대 아이디얼](prime-ideals.md)
+- [소 아이디얼](prime-ideals.md)
 
 ## 더 알아보기
 

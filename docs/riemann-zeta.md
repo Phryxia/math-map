@@ -144,7 +144,7 @@ Montgomery 와 Dyson 은 임계선 위 영점의 간격 분포가 Gauss 유니�
 
 ## 선수지식
 
-- [소수와 유일분해](primes.md)
+- [소수](primes.md)
 - [해석적 연속](analytic-continuation.md)
 
 ## 더 알아보기

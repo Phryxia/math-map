@@ -123,7 +123,7 @@ Woodin 은 후자의 입장에서 작업해 왔다. 2000년 전후에는 Omega-�
 
 - [기수](cardinality.md)
 - [ZFC 공리계](zfc-axioms.md)
-- [서수와 초한귀납법](ordinals.md)
+- [서수](ordinals.md)
 
 ## 더 알아보기
 

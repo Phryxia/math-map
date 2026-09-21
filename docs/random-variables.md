@@ -174,7 +174,7 @@ $n$ 명에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 �
 ## 선수지식
 
 - [유한 확률 공간](probability.md)
-- [상측도와 확률분포](pushforward-measure.md)
+- [상측도](pushforward-measure.md)
 - [Lebesgue 적분](lebesgue-integral.md)
 
 ## 더 알아보기

@@ -88,7 +88,7 @@ $\lbrack x\rbrack$ 이 $x$ 의 **동치류**, $A/R$ 이 **몫집합**, $x \mapst
 - [부분순서](partial-orders.md)
 - [그래프 동형](graph-isomorphism.md)
 - [군 작용](group-actions.md)
-- [정수의 합동과 나머지 연산](modular-arithmetic.md)
+- [정수의 합동](modular-arithmetic.md)
 - [서로소 집합 자료구조](union-find.md)
 - [유한 오토마타와 정규언어](finite-automata.md)
 

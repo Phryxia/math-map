@@ -16,7 +16,7 @@ graph TD
   PR --> BY["Bayes 정리"]
   PR --> RV["확률변수와 기댓값"]
   LI["Lebesgue 적분"] --> RV
-  PM["상측도와 확률분포"] --> WC["분포 수렴과 Prokhorov"]
+  PM["상측도"] --> WC["분포 수렴과 Prokhorov"]
   RV --> LLN["큰 수의 법칙"]
   LLN --> CLT["중심극한정리"]
   WC --> CLT

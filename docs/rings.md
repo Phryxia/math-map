@@ -126,7 +126,7 @@ $6$ 을 법으로 $2x = 2$ 를 풀 때 양변을 $2$ 로 나누면 해를 잃는
 ## 선수지식
 
 - [군](groups.md)
-- [정수의 합동과 나머지 연산](modular-arithmetic.md)
+- [정수의 합동](modular-arithmetic.md)
 
 ## 더 알아보기
 

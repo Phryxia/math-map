@@ -185,7 +185,7 @@ WGAN 은 판별자를 1-Lipschitz 로 제한해 $W_1$ 의 쌍대해를 근사하
 
 ## 선수지식
 
-- [상측도와 확률분포](pushforward-measure.md)
+- [상측도](pushforward-measure.md)
 - [분포 수렴과 Prokhorov 정리](weak-convergence.md)
 - [Lagrange 쌍대성과 KKT 조건](lagrange-duality.md)
 

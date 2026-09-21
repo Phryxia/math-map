@@ -150,6 +150,6 @@ $$
 - [Hilbert 공간](hilbert-spaces.md)
 - [선형회귀와 최소제곱법](linear-regression.md)
 - [격자](lattices.md)
-- [근계와 Weyl 군](root-systems.md)
+- [근계](root-systems.md)
 
 #linear_algebra #analysis #functional_analysis

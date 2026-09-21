@@ -151,7 +151,7 @@ ZFC로 판정되지 않는 문장을 다루기 위해 도달 불가능 기수, �
 
 ## 더 알아보기
 
-- [서수와 초한귀납법](ordinals.md)
+- [서수](ordinals.md)
 - [선택공리와 Zorn 보조정리](axiom-of-choice.md)
 - [구조적 집합론과 동형 불변성](structural-set-theory.md)
 - [연속체 가설과 독립성](continuum-hypothesis.md)

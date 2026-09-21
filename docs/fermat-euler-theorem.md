@@ -159,9 +159,9 @@ $$
 
 ## 선수지식
 
-- [정수의 합동과 나머지 연산](modular-arithmetic.md)
+- [정수의 합동](modular-arithmetic.md)
 - [군](groups.md)
-- [소수와 유일분해](primes.md)
+- [소수](primes.md)
 
 ## 더 알아보기
 

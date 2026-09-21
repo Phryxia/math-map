@@ -141,7 +141,7 @@ $$
 
 ## 선수지식
 
-- [정수의 합동과 나머지 연산](modular-arithmetic.md)
+- [정수의 합동](modular-arithmetic.md)
 - [아이디얼과 몫환](ideals-quotient-rings.md)
 
 ## 더 알아보기
