@@ -170,7 +170,7 @@ $$
 
 ## 더 알아보기
 
-- [선택공리와 Zorn 보조정리](axiom-of-choice.md)
+- [선택공리](axiom-of-choice.md)
 - [연속체 가설과 독립성](continuum-hypothesis.md)
 
 #set_theory #logic #analysis

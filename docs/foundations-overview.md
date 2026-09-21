@@ -54,7 +54,7 @@ graph TD
 
 - [집합](sets.md) → [함수](functions.md), [동치관계](equivalence-relations.md) → [부분순서](partial-orders.md)
 - [기수](cardinality.md): 대각선 논법과 무한의 크기
-- [ZFC 공리계](zfc-axioms.md) → [서수](ordinals.md) → [선택공리와 Zorn 보조정리](axiom-of-choice.md), [연속체 가설과 독립성](continuum-hypothesis.md) → [강제법](forcing.md) → [Martin 의 공리](martins-axiom.md) → [Suslin 문제](suslin-problem.md), [Boolean 값 모형](boolean-valued-models.md)
+- [ZFC 공리계](zfc-axioms.md) → [서수](ordinals.md) → [선택공리](axiom-of-choice.md), [연속체 가설과 독립성](continuum-hypothesis.md) → [강제법](forcing.md) → [Martin 의 공리](martins-axiom.md) → [Suslin 문제](suslin-problem.md), [Boolean 값 모형](boolean-valued-models.md)
 
 ## 계산 가능성
 

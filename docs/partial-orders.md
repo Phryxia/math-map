@@ -129,7 +129,7 @@ $P$ 의 원소를 대상으로 삼고 $x \le y$ 일 때 $x$ 에서 $y$ 로 가�
 ### 집합론
 
 - [서수](ordinals.md)
-- [선택공리와 Zorn 보조정리](axiom-of-choice.md)
+- [선택공리](axiom-of-choice.md)
 
 ### 그래프, 범주, 논리
 

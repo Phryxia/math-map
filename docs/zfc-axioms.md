@@ -84,7 +84,7 @@ $$
 \forall A\thinspace\bigl(A\neq\varnothing \to \exists m\in A\ (m\cap A=\varnothing)\bigr)
 $$
 
-9. 선택(choice): 공집합을 원소로 갖지 않는 집합족에는 선택함수가 있다([선택공리와 Zorn 보조정리](axiom-of-choice.md)).
+9. 선택(choice): 공집합을 원소로 갖지 않는 집합족에는 선택함수가 있다([선택공리](axiom-of-choice.md)).
 
 $$
 \forall F\thinspace\bigl(\varnothing\notin F \to \exists f:F\to\bigcup F\ \ \forall A\in F\ f(A)\in A\bigr)
@@ -152,7 +152,7 @@ ZFC로 판정되지 않는 문장을 다루기 위해 도달 불가능 기수, �
 ## 더 알아보기
 
 - [서수](ordinals.md)
-- [선택공리와 Zorn 보조정리](axiom-of-choice.md)
+- [선택공리](axiom-of-choice.md)
 - [구조적 집합론과 동형 불변성](structural-set-theory.md)
 - [연속체 가설과 독립성](continuum-hypothesis.md)
 
