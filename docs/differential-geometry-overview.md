@@ -30,7 +30,7 @@ graph TD
   HT --> KM["Kähler 다양체"]
   IX --> RR["Riemann–Roch 정리"]
   RM --> H3["쌍곡 3 다양체"]
-  LA["Lie 대수"] --> LG["Lie 군과 지수사상"]
+  LA["Lie 대수"] --> LG["Lie 군"]
   CS2["덮개공간"] --> LG
   LG --> CS["Chern–Simons 이론"]
   DR --> CS
@@ -56,14 +56,14 @@ graph TD
 
 ## Hodge 이론과 지표 정리
 
-- [Hodge 이론과 조화형식](hodge-theory.md): 코호몰로지류마다 조화형식 대표원이 하나
+- [Hodge 이론](hodge-theory.md): 코호몰로지류마다 조화형식 대표원이 하나
 - [Kähler 다양체와 Hodge 분해](kahler-manifolds.md): 복소구조와 계량이 양립할 때의 분해
 - [지표 정리](index-theorem.md): 타원작용소의 해석적 지표가 위상적 지표와 같다
 - [Riemann–Roch 정리](riemann-roch.md): 곡선 위 선다발의 단면 차원을 세는 공식
 
 ## Lie 군과 게이지 이론
 
-- [Lie 군과 지수사상](lie-groups.md): 군 구조와 매끄러운 구조를 함께 가진 공간
+- [Lie 군](lie-groups.md): 군 구조와 매끄러운 구조를 함께 가진 공간
 - [Chern–Simons 이론과 레벨 양자화](chern-simons.md): 3 차원 다양체 위의 위상적 게이지 이론
 - [Wess–Zumino–Witten 모형과 벌크–경계 대응](wess-zumino-witten.md): 경계의 공형장론과의 대응
 
@@ -77,6 +77,6 @@ graph TD
 
 - [다양체](manifolds.md)
 - [곡률](curvature.md)
-- [Lie 군과 지수사상](lie-groups.md)
+- [Lie 군](lie-groups.md)
 
 #differential_geometry #topology #overview

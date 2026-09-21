@@ -99,7 +99,7 @@ graph TD
 
 - [유계 작용소와 스펙트럼](bounded-operators.md): 작용소 노름, 스펙트럼과 분해 스펙트럼
 - [비유계 작용소와 Stone 정리](unbounded-operators.md): 조밀한 정의역, 자기수반성, 한 모수 유니터리 군
-- [Fredholm 작용소와 지표](fredholm-operators.md): 핵과 여핵이 유한차원인 작용소의 정수 불변량
+- [Fredholm 작용소](fredholm-operators.md): 핵과 여핵이 유한차원인 작용소의 정수 불변량
 - [Fredholm 행렬식](fredholm-determinant.md): 핵 작용소의 행렬식과 적분방정식
 - [Peter–Weyl 정리](peter-weyl.md): 콤팩트군 위 $L^2$ 의 기약표현 분해
 

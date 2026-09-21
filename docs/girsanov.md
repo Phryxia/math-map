@@ -146,7 +146,7 @@ $\Phi$ 가 유럽형 콜의 지급이면 이 기댓값이 닫힌 꼴로 계산�
 
 ## 선수지식
 
-- [Itô 적분과 확률미분방정식](ito-calculus.md)
+- [Itô 적분](ito-calculus.md)
 - [측도변환](change-of-measure.md)
 
 ## 더 알아보기

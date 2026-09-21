@@ -178,7 +178,7 @@ Hopf 링크에서 값이 $\pm1$ , 풀린 두 원에서 $0$ , 원환면 위를 �
 ## 선수지식
 
 - [de Rham 코호몰로지](de-rham-cohomology.md)
-- [Lie 군과 지수사상](lie-groups.md)
+- [Lie 군](lie-groups.md)
 
 ## 더 알아보기
 

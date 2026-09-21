@@ -69,7 +69,7 @@ graph TD
 ## 연속시간 확률과정
 
 - [Brown 운동](brownian-motion.md): 연속시간 Gauss 과정과 경로의 성질
-- [Itô 적분과 확률미분방정식](ito-calculus.md): 유계변동이 없는 경로 위의 적분과 Itô 공식
+- [Itô 적분](ito-calculus.md): 유계변동이 없는 경로 위의 적분과 Itô 공식
 - [Girsanov 정리](girsanov.md): 측도변환으로 표류항을 바꾼다
 - [Feynman–Kac 공식](feynman-kac.md): 편미분방정식의 해를 경로 적분의 기댓값으로
 

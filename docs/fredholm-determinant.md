@@ -12,7 +12,7 @@ $$
 
 Fredholm 은 1900 년에 유한차원 행렬식이 만족하는 급수 전개를 무한차원으로 옮겼다. 그 급수는 커널이 충분히 좋으면 수렴하고, 값 $\det(I-K)$ 는 유한차원 행렬식처럼 행동한다. 0 이 아니면 $I-K$ 가 가역이고, 곱에 대해 곱셈적이며, $K$ 에 대해 해석적이다.
 
-[결정점과정](determinantal-point-process.md)의 간격 확률, Tracy–Widom 분포, 산란 이론의 위상 이동, 제타 함수의 정규화가 $\det(I-K)$ 로 표현된다. 가역성 판정의 근거는 [Fredholm 작용소와 지표](fredholm-operators.md)에서 $I - K$ 가 콤팩트 섭동이라 지표가 0 이라는 사실이다. 지표가 0 이면 단사와 전사가 동치이므로 판정할 조건이 하나다.
+[결정점과정](determinantal-point-process.md)의 간격 확률, Tracy–Widom 분포, 산란 이론의 위상 이동, 제타 함수의 정규화가 $\det(I-K)$ 로 표현된다. 가역성 판정의 근거는 [Fredholm 작용소](fredholm-operators.md)에서 $I - K$ 가 콤팩트 섭동이라 지표가 0 이라는 사실이다. 지표가 0 이면 단사와 전사가 동치이므로 판정할 조건이 하나다.
 
 # 직관
 
@@ -168,7 +168,7 @@ Laplace 작용소처럼 자취류가 아닌 대상에는 제타 정규화 행렬
 ## 선수지식
 
 - [행렬식](determinants.md)
-- [Fredholm 작용소와 지표](fredholm-operators.md)
+- [Fredholm 작용소](fredholm-operators.md)
 
 ## 더 알아보기
 

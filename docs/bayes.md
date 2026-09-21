@@ -128,6 +128,6 @@ $$
 
 ## 더 알아보기
 
-- [Bayes 추론과 사후분포](bayesian-inference.md)
+- [Bayes 추론](bayesian-inference.md)
 
 #probability #statistics #machine_learning #theorem

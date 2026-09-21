@@ -174,7 +174,7 @@ Kähler 다양체의 기본군에는 제약이 따른다. 자유군 $F_n$ 은 $n
 
 ## 선수지식
 
-- [Hodge 이론과 조화형식](hodge-theory.md)
+- [Hodge 이론](hodge-theory.md)
 - [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
 
 ## 더 알아보기

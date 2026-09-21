@@ -186,7 +186,7 @@ $$
 ## 확장과 연결
 
 - **일반화선형모형**: 반응이 이항이나 계수(count)면 정규 가정이 맞지 않는다. [지수족](exponential-families.md)의 분포족에 연결함수를 붙이면 로지스틱 회귀, Poisson 회귀가 나오고, 추정은 반복 가중최소제곱(iteratively reweighted least squares, IRLS)으로 귀결된다. 닫힌 해가 없어 [경사하강법](gradient-descent.md)이나 Newton 계열 최적화를 쓴다.
-- **정규화와 Bayes**: 계수에 $N(0, \tau^2)$ 사전분포를 두면 MAP(maximum a posteriori) 추정이 ridge 회귀가 되고, Laplace 사전분포는 lasso 가 된다. [Bayes 추론과 사후분포](bayesian-inference.md)의 축소 구조가 그대로 나타난다.
+- **정규화와 Bayes**: 계수에 $N(0, \tau^2)$ 사전분포를 두면 MAP(maximum a posteriori) 추정이 ridge 회귀가 되고, Laplace 사전분포는 lasso 가 된다. [Bayes 추론](bayesian-inference.md)의 축소 구조가 그대로 나타난다.
 - **가중최소제곱과 GLS**: 일반화최소제곱(generalized least squares, GLS)은 오차의 분산이 다르거나 상관이 있을 때 쓴다. $\mathrm{Var}(\varepsilon) = \sigma^2 \Sigma$ 로 두고 $\Sigma^{-1}$ 을 내적으로 쓰는 정사영을 한다. 즉 내적을 바꾸면 같은 기하가 유지된다.
 - **분산분석**: 분산분석(analysis of variance, ANOVA)은 지시변수로 부호화한 선형회귀이고, 제곱합의 분해가 중첩된 부분공간들의 직교분해다.
 - **진단**: 잔차 대 적합값 그림으로 비선형성과 이분산을, leverage 와 Cook 거리로 영향점을, 분위수-분위수 그림(quantile-quantile plot, QQ 플롯)으로 정규성을 본다. 회귀계수는 다른 변수를 통제한 조건부 연관이며, 관측 데이터에서 인과로 읽으려면 설계에 대한 별도의 가정이 필요하다.[^1]

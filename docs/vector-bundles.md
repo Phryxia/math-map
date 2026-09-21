@@ -82,7 +82,7 @@ $$
 - [곡률](curvature.md)의 Riemann 곡률 텐서는 접다발 위 Levi-Civita 접속의 곡률이다. 계량이 접속을 하나로 정하고, 그 접속의 곡률이 계량의 휘어짐을 잰다.
 - [특성류](characteristic-classes.md)가 곡률의 불변 다항식으로 쓰인다. Chern–Weil 이론이 곡률 2형식의 대칭 다항식을 [de Rham 코호몰로지](de-rham-cohomology.md)류로 보내고, 그 류가 접속의 선택에 의존하지 않는다.
 - 게이지 이론이 주다발 위의 접속을 물리의 장으로 쓴다. 곡률이 장세기이고, [Chern–Simons 이론](chern-simons.md)의 작용이 접속형식으로 쓰인다.
-- 지표 정리가 다발의 위상 불변량과 그 위 타원 작용소의 해석적 지표를 같게 놓는다. [Fredholm 작용소와 지표](fredholm-operators.md)의 지표가 해석 쪽 값이다.
+- 지표 정리가 다발의 위상 불변량과 그 위 타원 작용소의 해석적 지표를 같게 놓는다. [Fredholm 작용소](fredholm-operators.md)의 지표가 해석 쪽 값이다.
 - 선다발의 단면 공간이 대수기하에서 사상을 만든다. 사영공간으로 가는 사상이 선다발과 그 단면의 선택에 대응한다.
 
 [^1]: John M. Lee, *Introduction to Smooth Manifolds*, 2nd ed., Springer (2012), Ch. 10. 벡터다발의 정의, 국소 자명화, 전이함수에 의한 구성이 이 장에 있다.

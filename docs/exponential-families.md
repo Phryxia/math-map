@@ -157,7 +157,7 @@ $$
 \pi(\eta \mid \tau, n_0) \thickspace\propto\thickspace \exp\negthinspace\big(\eta^{\top}\tau - n_0 A(\eta)\big)
 $$
 
-족이 켤레다. 관측 $x$ 에서 $\tau \leftarrow \tau + T(x)$ 와 $n_0 \leftarrow n_0 + 1$ 로 갱신되어 사후분포가 같은 족에 머문다. Beta–Binomial, Gamma–Poisson, Normal–Normal 이 이 식의 특수경우다([Bayes 추론과 사후분포](bayesian-inference.md)).
+족이 켤레다. 관측 $x$ 에서 $\tau \leftarrow \tau + T(x)$ 와 $n_0 \leftarrow n_0 + 1$ 로 갱신되어 사후분포가 같은 족에 머문다. Beta–Binomial, Gamma–Poisson, Normal–Normal 이 이 식의 특수경우다([Bayes 추론](bayesian-inference.md)).
 
 ## 최대엔트로피 표현
 

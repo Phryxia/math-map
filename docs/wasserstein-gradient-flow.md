@@ -151,7 +151,7 @@ $$
 ## 선수지식
 
 - [최적 수송과 Wasserstein 거리](optimal-transport.md)
-- [Itô 적분과 확률미분방정식](ito-calculus.md)
+- [Itô 적분](ito-calculus.md)
 
 ## 더 알아보기
 

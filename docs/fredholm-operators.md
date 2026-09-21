@@ -1,4 +1,4 @@
-# Fredholm 작용소와 지표
+# Fredholm 작용소
 
 # 개요
 

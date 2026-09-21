@@ -54,7 +54,7 @@ graph TD
 
 ## 무한차원
 
-- [Hilbert 공간](hilbert-spaces.md) → [유계 작용소와 스펙트럼](bounded-operators.md) → [Fredholm 작용소와 지표](fredholm-operators.md) → [Fredholm 행렬식](fredholm-determinant.md)
+- [Hilbert 공간](hilbert-spaces.md) → [유계 작용소와 스펙트럼](bounded-operators.md) → [Fredholm 작용소](fredholm-operators.md) → [Fredholm 행렬식](fredholm-determinant.md)
 - [비유계 작용소](unbounded-operators.md): 미분 작용소의 자기수반성
 
 ## 랜덤 행렬
@@ -71,7 +71,7 @@ graph TD
 ## 표현론으로
 
 - [군의 표현](group-representations.md): 군을 행렬로
-- [Lie 대수](lie-algebras.md) → [근계](root-systems.md), [Lie 군과 지수사상](lie-groups.md)
+- [Lie 대수](lie-algebras.md) → [근계](root-systems.md), [Lie 군](lie-groups.md)
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md), [Schur 다항식](schur-polynomials.md): 텐서 거듭제곱의 분해
 - [Hecke 작용소](hecke-operators.md), [Sen 이론](sen-theory.md), [Reidemeister 비틀림](reidemeister-torsion.md): 다른 분야가 선형대수를 쓰는 자리
 

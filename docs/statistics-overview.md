@@ -15,7 +15,7 @@ graph TD
   DV["미분"] --> ML["최대가능도 추정"]
   RV["확률변수와 기댓값"] --> ML
   ML --> EF["지수족"]
-  BY["Bayes 정리"] --> BI["Bayes 추론과 사후분포"]
+  BY["Bayes 정리"] --> BI["Bayes 추론"]
   RV --> BI
   ML --> HT["가설검정"]
   RV --> HT
@@ -34,7 +34,7 @@ graph TD
 
 - [최대가능도 추정](maximum-likelihood.md): 가능도함수, 점근 정규성, Fisher 정보량과 Cramér–Rao 하한
 - [지수족](exponential-families.md): 자연모수와 로그분배함수, 충분통계량, 켤레 사전분포
-- [Bayes 추론과 사후분포](bayesian-inference.md): 사전분포와 사후분포, 사후예측분포, 최대사후추정
+- [Bayes 추론](bayesian-inference.md): 사전분포와 사후분포, 사후예측분포, 최대사후추정
 
 ## 검정과 구간
 
@@ -55,7 +55,7 @@ graph TD
 ## 더 알아보기
 
 - [최대가능도 추정](maximum-likelihood.md)
-- [Bayes 추론과 사후분포](bayesian-inference.md)
+- [Bayes 추론](bayesian-inference.md)
 - [확률적 PCA](probabilistic-pca.md)
 
 #statistics #probability #machine_learning #overview

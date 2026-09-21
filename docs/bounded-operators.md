@@ -176,6 +176,6 @@ $\mathcal B(H)$ 의 부분대수로 노름 닫힌 것이 $C^\ast$ 대수, 약작
 ## 더 알아보기
 
 - [비유계 작용소와 Stone 정리](unbounded-operators.md)
-- [Fredholm 작용소와 지표](fredholm-operators.md)
+- [Fredholm 작용소](fredholm-operators.md)
 
 #functional_analysis #analysis #linear_algebra

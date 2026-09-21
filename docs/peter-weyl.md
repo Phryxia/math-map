@@ -141,7 +141,7 @@ $$
 
 ## 선수지식
 
-- [Lie 군과 지수사상](lie-groups.md)
+- [Lie 군](lie-groups.md)
 - [Hilbert 공간](hilbert-spaces.md)
 
 ## 더 알아보기

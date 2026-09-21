@@ -147,7 +147,7 @@ $$
 ## 선수지식
 
 - [변분 오토인코더](variational-autoencoder.md)
-- [Itô 적분과 확률미분방정식](ito-calculus.md)
+- [Itô 적분](ito-calculus.md)
 
 ## 더 알아보기
 

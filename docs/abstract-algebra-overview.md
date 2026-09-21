@@ -66,7 +66,7 @@ graph TD
 ## Lie 이론과 표현론
 
 - [Lie 대수](lie-algebras.md) → [근계](root-systems.md) → [Weyl 지표 공식과 최고무게 이론](weyl-character-formula.md)
-- [Lie 군과 지수사상](lie-groups.md) → [Peter–Weyl 정리](peter-weyl.md) → [구면조화함수](spherical-harmonics.md)
+- [Lie 군](lie-groups.md) → [Peter–Weyl 정리](peter-weyl.md) → [구면조화함수](spherical-harmonics.md)
 - [Borel–Weil–Bott 정리](borel-weil-bott.md) → [Beilinson–Bernstein 국소화](beilinson-bernstein.md), [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md) → [범주 O](category-o.md), [Schubert 계산](schubert-calculus.md)
 - [Schur 다항식](schur-polynomials.md) → [Littlewood–Richardson 규칙](littlewood-richardson.md), [Schur–Weyl 쌍대성](schur-weyl-duality.md) → [Brauer 대수](brauer-algebras.md)
 

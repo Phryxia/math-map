@@ -194,7 +194,7 @@ $$
 
 ## 더 알아보기
 
-- [Lie 군과 지수사상](lie-groups.md)
+- [Lie 군](lie-groups.md)
 - [근계](root-systems.md)
 - [정점작용소대수](vertex-operator-algebras.md)
 - [Wess–Zumino–Witten 모형과 벌크–경계 대응](wess-zumino-witten.md)
