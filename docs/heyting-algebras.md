@@ -193,7 +193,7 @@ frame 은 점 없이 공간을 다루는 locale 이론의 기본 대상이다. �
 
 ## 타입 이론과 프로그램
 
-[Curry–Howard 대응](curry-howard.md)에서 직관주의 함의는 함수 타입에 대응한다. [람다 대수](lambda-calculus.md)의 단순 타입 체계에서 타입이 붙는 항의 존재와 그 타입에 해당하는 명제의 IPC 증명 가능성이 같다. Heyting algebra 는 증명 대상들의 범주에서 사상의 개수를 잊고 얻는다. topos 에서는 부분대상 분류자가 내부 Heyting algebra 가 되어 topos 안의 수학이 직관주의 논리를 따른다.
+[Curry–Howard 대응](curry-howard.md)에서 직관주의 함의는 함수 타입에 대응한다. [Lambda calculus](lambda-calculus.md)의 단순 타입 체계에서 타입이 붙는 항의 존재와 그 타입에 해당하는 명제의 IPC 증명 가능성이 같다. Heyting algebra 는 증명 대상들의 범주에서 사상의 개수를 잊고 얻는다. topos 에서는 부분대상 분류자가 내부 Heyting algebra 가 되어 topos 안의 수학이 직관주의 논리를 따른다.
 
 ## 다른 기초론과의 위치
 
