@@ -37,6 +37,7 @@ graph TD
 - [단체 호몰로지](homology.md) → [Euler 지표](euler-characteristic.md) → [평면 그래프](planar-graphs.md), [곡면의 분류](classification-of-surfaces.md)
 - [de Rham 코호몰로지](de-rham-cohomology.md) → [Hodge 이론](hodge-theory.md) → [Kähler 다양체](kahler-manifolds.md), [지표 정리](index-theorem.md)
 - [Reidemeister 비틀림](reidemeister-torsion.md) → [s-코보디즘 정리](s-cobordism.md): 단순 호모토피와 고차원 분류
+- [분류공간](classifying-spaces.md): 주다발을 사상의 호모토피류로 세고, 특성류가 그 코호몰로지에서 나온다
 
 ## 다양체와 기하
 

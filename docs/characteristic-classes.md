@@ -100,6 +100,6 @@ Euler 류를 곡률로 쓴 것이 Gauss–Bonnet 정리의 일반화이고, 짝�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [분류공간](classifying-spaces.md)
 
 #differential_geometry #algebraic_topology #topology
