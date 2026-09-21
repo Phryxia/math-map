@@ -101,6 +101,6 @@ $\psi(q) = q^{-\varepsilon}$ 을 넣으면 급수가 수렴하므로, 거의 모
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [초월수](transcendental-numbers.md)
 
 #number_theory #analysis #measure_theory
