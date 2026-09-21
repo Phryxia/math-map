@@ -118,7 +118,7 @@ MV 순환이 주는 것은 기저이지 표준적인 하나의 기저가 아니�
 
 ## 기하학적 Satake 의 정련
 
-기하학적 Satake 는 범주 동치를 준다. MV 이론은 그 동치를 무게 수준까지 정련해, $\mathrm{Rep}(\widehat G)$ 의 대상뿐 아니라 그 대상의 무게 분해까지 층 쪽에서 읽게 한다. 텐서곱의 분해인 [Littlewood–Richardson 계수](littlewood-richardson.md)도 MV 순환들의 교차 자료로 표현되며, saturation 정리의 기하적 증명이 이 표현을 쓴다.
+기하학적 Satake 는 범주 동치를 준다. MV 이론은 그 동치를 무게 수준까지 정련해, $\mathrm{Rep}(\widehat G)$ 의 대상뿐 아니라 그 대상의 무게 분해까지 층 쪽에서 읽게 한다. 텐서곱의 분해인 [Littlewood–Richardson 계수](littlewood-richardson.md)도 MV 순환들의 교차 자료로 표현되며, 포화 정리의 기하적 증명이 이 표현을 쓴다.
 
 ## 아핀 Grassmann 다양체의 특이점
 

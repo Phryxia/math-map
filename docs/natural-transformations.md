@@ -12,7 +12,7 @@
 
 $V$ 에서 $V^\ast$ 로 가려면 기저를 정해야 하고 기저를 바꾸면 대응도 바뀌므로 이 동형은 선형사상들과 일관되게 어울리지 않는다. $V$ 에서 $V^{\ast\ast}$ 로 가는 대응은 $v$ 를 $\varphi \mapsto \varphi(v)$ 로 보내면 되고 선택이 필요 없다. 전자는 자연동형이 아니고 후자는 자연동형이다.
 
-## naturality 사각형
+## 자연성 사각형
 
 $C$ 의 사상 $f$ 를 먼저 따라간 뒤 옮기는 것과, 옮긴 뒤 $D$ 쪽에서 따라가는 것이 같아야 한다.
 
@@ -28,7 +28,7 @@ graph LR
 
 # 정의
 
-## 성분과 naturality
+## 성분과 자연성
 
 $C$ 와 $D$ 를 범주, $F, G : C \to D$ 를 함자라 하자. 자연변환 $\alpha : F \Rightarrow G$ 는 $C$ 의 각 대상 $c$ 마다 $D$ 의 사상 $\alpha_c : F(c) \to G(c)$ 를 지정하되 $C$ 의 모든 사상 $f : c \to c'$ 에 대해 다음을 만족하는 것이다.
 
@@ -36,12 +36,12 @@ $$
 \alpha_{c'}\circ F(f)=G(f)\circ\alpha_c
 $$
 
-$\alpha_c$ 가 $\alpha$ 의 $c$ 성분이다. 모든 성분이 동형사상이면 $\alpha$ 가 자연동형이고, 이때 성분별 역 $\alpha_c^{-1}$ 도 naturality 를 만족해 $G \Rightarrow F$ 인 역 자연변환이 된다.
+$\alpha_c$ 가 $\alpha$ 의 $c$ 성분이다. 모든 성분이 동형사상이면 $\alpha$ 가 자연동형이고, 이때 성분별 역 $\alpha_c^{-1}$ 도 자연성을 만족해 $G \Rightarrow F$ 인 역 자연변환이 된다.
 
 ## 두 가지 합성
 
-- **수직 합성.** $\alpha : F \Rightarrow G$ 와 $\beta : G \Rightarrow H$ 에 대해 $(\beta \circ \alpha)\_c = \beta_c \circ \alpha_c$ 로 정의한다. 두 naturality 사각형을 옆으로 붙이면 합성의 naturality 가 나온다.
-- **수평 합성.** $C \to D$ 위의 $\alpha : F \Rightarrow G$ 와 $D \to E$ 위의 $\beta : H \Rightarrow K$ 에 대해 $(\beta \ast \alpha)\_c = K(\alpha_c) \circ \beta_{F(c)} = \beta_{G(c)} \circ H(\alpha_c)$ 로 정의한다. 두 표현이 같다는 것이 $\beta$ 의 naturality 다.
+- **수직 합성.** $\alpha : F \Rightarrow G$ 와 $\beta : G \Rightarrow H$ 에 대해 $(\beta \circ \alpha)\_c = \beta_c \circ \alpha_c$ 로 정의한다. 두 자연성 사각형을 옆으로 붙이면 합성의 자연성이 나온다.
+- **수평 합성.** $C \to D$ 위의 $\alpha : F \Rightarrow G$ 와 $D \to E$ 위의 $\beta : H \Rightarrow K$ 에 대해 $(\beta \ast \alpha)\_c = K(\alpha_c) \circ \beta_{F(c)} = \beta_{G(c)} \circ H(\alpha_c)$ 로 정의한다. 두 표현이 같다는 것이 $\beta$ 의 자연성이다.
 
 두 합성은 교환법칙(interchange law)으로 맞물리고, 이 구조가 범주·함자·자연변환을 2-범주로 만든다.
 
@@ -58,11 +58,11 @@ Functor $F : C \to D$ 와 $G : D \to C$ 에 대해 $GF \cong \mathrm{id}\_C$ 이
 ## 예와 반례
 
 - **멱집합.** 집합 $X$ 를 $P(X)$ 로, 함수를 직접상으로 보내는 함자 $P$ 에 대해 $\eta_X(x) = \lbrace x\rbrace$ 는 항등 함자에서 $P$ 로 가는 자연변환이다. $P(h)(\eta_X(x)) = \lbrace h(x)\rbrace = \eta_Y(h(x))$ 이므로 사각형이 닫힌다.
-- **이중쌍대.** $V \mapsto V^{\ast\ast}$ 는 유한차원 벡터 공간 위에서 항등 함자와 자연동형이다. $V \mapsto V^\ast$ 는 반변 함자라 항등 함자와 비교할 수 없고, 차원이 같다는 사실로 만든 동형은 기저 선택에 의존해 naturality 가 깨진다.
+- **이중쌍대.** $V \mapsto V^{\ast\ast}$ 는 유한차원 벡터 공간 위에서 항등 함자와 자연동형이다. $V \mapsto V^\ast$ 는 반변 함자라 항등 함자와 비교할 수 없고, 차원이 같다는 사실로 만든 동형은 기저 선택에 의존해 자연성이 깨진다.
 - **행렬식.** 가환환 $R$ 에 $\mathrm{GL}\_n(R)$ 을 대응시키는 함자와 단원군 $R^\times$ 를 대응시키는 함자 사이에서 $\det$ 은 자연변환이다. 환 준동형을 성분별로 적용한 뒤 행렬식을 재나 행렬식을 잰 뒤 준동형을 적용하나 같다. 행렬식 공식이 환에 의존하지 않는다는 말의 정확한 형태다.
 - **역행렬.** $A \mapsto A^{-1}$ 은 $\mathrm{GL}\_n$ 에서 $\mathrm{GL}\_n$ 으로 가는 자연변환이 아니다. 순서를 뒤집으므로 반변으로 놓아야 한다.
 
-## 다형성과 naturality
+## 다형성과 자연성
 
 리스트를 뒤집는 `reverse` 는 원소가 무엇인지 보지 않고 위치만 다루므로 `map f (reverse xs) = reverse (map f xs)` 가 항상 성립한다. List 함자에서 자기 자신으로 가는 자연변환이다.
 
@@ -76,9 +76,9 @@ Functor $F : C \to D$ 와 $G : D \to C$ 에 대해 $GF \cong \mathrm{id}\_C$ 이
 
 # 활용
 
-- **구성의 일관성.** 이 동형이 표준적이다, 이 공식은 좌표에 의존하지 않는다, 이 최적화는 언제나 안전하다 같은 문장이 모두 어떤 자연변환의 naturality 로 번역된다. 증명할 것이 사각형 하나로 고정된다.
+- **구성의 일관성.** 이 동형이 표준적이다, 이 공식은 좌표에 의존하지 않는다, 이 최적화는 언제나 안전하다 같은 문장이 모두 어떤 자연변환의 자연성으로 번역된다. 증명할 것이 사각형 하나로 고정된다.
 - **이론 사이의 번역.** 호몰로지 이론의 연결 준동형, 대수적 구성의 표준 사상, 표현론의 지표 대응이 자연변환으로 서술된다. 사상이 모든 경우에 동시에 정의된다는 점이 정리의 진술을 짧게 만든다.
-- **프로그램 변환.** 컨테이너의 구조만 바꾸는 함수(뒤집기, 앞뒤 자르기, 리스트를 옵션으로 바꾸기)는 자연변환이고 naturality 등식이 컴파일러의 재작성 규칙이 된다. `map` 을 자연변환 앞으로 옮기거나 뒤로 미루는 변환이 그래서 안전하다.[^1]
+- **프로그램 변환.** 컨테이너의 구조만 바꾸는 함수(뒤집기, 앞뒤 자르기, 리스트를 옵션으로 바꾸기)는 자연변환이고 자연성 등식이 컴파일러의 재작성 규칙이 된다. `map` 을 자연변환 앞으로 옮기거나 뒤로 미루는 변환이 그래서 안전하다.[^1]
 
 [^1]: Emily Riehl, *Category Theory in Context*, §1.4 (Definition 1.4.1·1.4.3, Example 1.4.4). 자연변환, 자연동형, singleton 및 double-dual 예시. https://emilyriehl.github.io/files/context.pdf
 

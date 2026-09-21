@@ -105,7 +105,7 @@ Schubert 기저는 교차 쌍에 대해 자기 쌍대 기저를 갖는다. 열�
 
 Littlewood–Richardson 계수는 비음 정수다. 조합적으로는 격자 낱말 조건을 만족하는 반표준 배열의 개수이고 기하적으로는 실제 교차점의 개수다. 이 계수가 $0$ 인지 묻는 조합 질문이 기하 질문이 된다.
 
-Hermite 행렬 세 개의 고윳값이 언제 $A+B=C$ 를 만족할 수 있는지 묻는 Horn 문제가 $c^\nu_{\lambda\mu}\gt 0$ 인 조건으로 환원되고, Knutson–Tao 의 saturation 정리가 그 조건을 선형 부등식으로 기술한다.
+Hermite 행렬 세 개의 고윳값이 언제 $A+B=C$ 를 만족할 수 있는지 묻는 Horn 문제가 $c^\nu_{\lambda\mu}\gt 0$ 인 조건으로 환원되고, Knutson–Tao 의 포화 정리가 그 조건을 선형 부등식으로 기술한다.
 
 ## 실수체 위의 해
 
@@ -127,11 +127,11 @@ $\sigma_1^{k(n-k)}$ 은 일반 위치의 여차원 $1$ 조건을 차원만큼 �
 
 - **열거기하**: 이차곡면에 놓인 직선, 주어진 곡선과 만나는 평면 같은 고전 문제가 이 틀에서 계산된다.
 - **표현론과의 사전**: 구조상수가 $\mathrm{GL}\_n$ 텐서곱 분해의 Littlewood–Richardson 계수와 같다. 한쪽 계산이 다른 쪽 답을 준다.
-- **행렬 스펙트럼**: Horn 문제와 saturation 정리[^2]를 통해 Hermite 행렬 합의 고윳값 문제로 이어진다.
+- **행렬 스펙트럼**: Horn 문제와 포화 정리[^2]를 통해 Hermite 행렬 합의 고윳값 문제로 이어진다.
 - **양자 코호몰로지와 등각장론**: 양자 변형의 구조상수가 $\widehat{\mathfrak{sl}}\_n$ 준위 $k$ 의 융합 규칙과 일치한다.
 
 [^1]: W. Fulton, *Young Tableaux*, Cambridge, 1997. 9 장이 Schubert 계산과 Littlewood–Richardson 규칙의 표준 서술이다.
-[^2]: A. Knutson, T. Tao, *The honeycomb model of GL_n(C) tensor products I*, JAMS 12 (1999). saturation 정리.
+[^2]: A. Knutson, T. Tao, *The honeycomb model of GL_n(C) tensor products I*, JAMS 12 (1999). 포화 정리.
 
 # 연관 문서
 
