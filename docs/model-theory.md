@@ -96,6 +96,7 @@ $T$ 가 완전하지 않으면 $\sigma$ 와 $\neg\sigma$ 의 모형이 따로 �
 
 ## 더 알아보기
 
+- [초곱](ultraproducts.md)
 - [o-최소성](o-minimality.md)
 
 #logic #foundations #algebra
