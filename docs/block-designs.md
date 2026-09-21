@@ -79,7 +79,7 @@ $J$ 는 모든 성분이 $1$ 인 행렬이다. $r \gt \lambda$ 이므로 이 행
 - [Mathieu 군](mathieu-groups.md)이 Steiner 계 $S(5,8,24)$ 의 자기동형군으로 나타난다. 설계의 고른 구조가 군의 다중 추이성으로 옮겨진다.
 - [오류정정부호](error-correcting-codes.md)와 설계가 서로를 준다. Golay 부호의 무게 $8$ 인 부호어들이 $S(5,8,24)$ 의 블록이고, 반대로 설계의 결합행렬이 부호를 정의한다.
 - 통계 실험 설계에서 처리를 블록에 배치하는 문제가 균형 불완전 블록 설계다. 모든 처리쌍이 같은 횟수로 비교되므로 추정량의 분산이 처리쌍마다 같아진다.
-- 유한 사영평면이 상호 직교 Latin 방진과 대응한다. 차수 $n$ 인 사영평면이 있는 것과 크기 $n$ 인 직교 Latin 방진이 $n-1$ 개 있는 것이 동치다.
+- 유한 사영평면이 상호 직교 [Latin 방진](latin-squares.md)과 대응한다. 차수 $n$ 인 사영평면이 있는 것과 크기 $n$ 인 직교 Latin 방진이 $n-1$ 개 있는 것이 동치다.
 
 [^1]: T. P. Kirkman, "On a problem in combinations", *Cambridge and Dublin Mathematical Journal* 2 (1847), 191–204. Steiner 삼중계의 존재 조건과 구성이 이 논문의 내용이다.
 [^2]: C. W. H. Lam, L. Thiel and S. Swiercz, "The non-existence of finite projective planes of order 10", *Canadian Journal of Mathematics* 41 (1989), 1117–1123.
@@ -92,6 +92,6 @@ $J$ 는 모든 성분이 $1$ 인 행렬이다. $r \gt \lambda$ 이므로 이 행
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Latin 방진](latin-squares.md)
 
 #combinatorics #algebra #number_theory
