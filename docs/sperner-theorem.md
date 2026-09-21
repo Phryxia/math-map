@@ -67,7 +67,7 @@ $n$ 이 짝수이면 크기 $n/2$ 인 부분집합 전체가 유일한 최대 �
 # 활용
 
 - [Erdős–Ko–Rado 정리](erdos-ko-rado.md)가 같은 계산 구조를 갖는다. 크기 $k$ 인 부분집합 가운데 서로 교집합이 비지 않는 것을 고르면 $n \ge 2k$ 일 때 최대 개수가 $\binom{n-1}{k-1}$ 이고, 원형 배열 위의 사슬을 세는 논법으로 증명된다.
-- Littlewood–Offord 문제의 해가 Sperner 정리다. 절댓값이 $1$ 이상인 실수 $a_1,\dots,a_n$ 에 대해 부호를 골라 만든 합 $\sum_{i \in S} a_i$ 가 길이 $2$ 미만인 구간에 들어가는 $S$ 의 개수는 $\binom{n}{\lfloor n/2\rfloor}$ 을 넘지 않는다. 그런 $S$ 들이 반사슬을 이루기 때문이다.
+- [Littlewood–Offord 문제](littlewood-offord.md)의 해가 Sperner 정리다. 절댓값이 $1$ 이상인 실수 $a_1,\dots,a_n$ 에 대해 부호를 골라 만든 합 $\sum_{i \in S} a_i$ 가 길이 $2$ 미만인 구간에 들어가는 $S$ 의 개수는 $\binom{n}{\lfloor n/2\rfloor}$ 을 넘지 않는다. 그런 $S$ 들이 반사슬을 이루기 때문이다.
 - 단조 부울 함수의 개수를 세는 Dedekind 문제에서 반사슬이 셈의 대상이다. 단조 함수가 그 함수를 $1$ 로 만드는 극소 집합들의 반사슬로 정해진다.
 - 분배 격자와 [순서 이론](order-theory-overview.md)의 최소최대 정리를 잇는 예를 준다. 사슬 덮개의 크기와 반사슬의 크기가 맞아떨어지는 구조가 여기서 명시적으로 구성된다.
 
@@ -82,5 +82,6 @@ $n$ 이 짝수이면 크기 $n/2$ 인 부분집합 전체가 유일한 최대 �
 ## 더 알아보기
 
 - [Erdős–Ko–Rado 정리](erdos-ko-rado.md)
+- [Littlewood–Offord 문제](littlewood-offord.md)
 
 #combinatorics #order_theory
