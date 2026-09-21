@@ -168,6 +168,7 @@ $$
 
 ## 더 알아보기
 
+- [조합적 종](combinatorial-species.md)
 - [Laplace 방법과 안장점](laplace-method.md)
 - [분할수와 원법](partitions.md)
 

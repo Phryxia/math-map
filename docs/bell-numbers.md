@@ -98,6 +98,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [조합적 종](combinatorial-species.md)
 
 #combinatorics #probability #number_theory
