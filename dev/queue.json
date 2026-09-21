@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-09-21T04:58:17.008Z",
-  "nextSeq": 808,
+  "savedAt": "2026-09-21T05:00:20.688Z",
+  "nextSeq": 810,
   "items": [
     {
       "id": "a6ae98a4",
@@ -322,6 +322,22 @@
       "note": "2026-09-21 회차에 4.5절 요구사항을 전수로 확인했고 누락 0 건이다. 검사법: 분야 태그를 개관 id 로 옮기는 표를 bash 연상 배열로 만들고, 개관이 아닌 문서마다 태그 줄의 첫 태그(주 분야)를 읽어 그 분야 개관이 해당 문서를 링크하는지 grep 으로 본다. 결과는 두 가지다. (1) 개관 링크 누락 0 건. 이번 회차에 새로 쓴 open-mapping-theorem, turing-degrees, ax-grothendieck 셋도 각각 함수해석·계산·기초론 개관 갈래에 넣었다. (2) 개관이 따로 없는 주 분야 태그 셋은 전부 4.5절의 10개 기준에 못 미친다: complexity 5(approximation-algorithms, np-completeness, p-np, pcp-theorem, unique-games), philosophy_of_math 4(formalism-hilbert-program, logicism, mathematical-platonism, mathematical-structuralism), data_structures 2(link-cut-trees, union-find). 이 11 개 문서는 모두 다른 개관(computation-overview, foundations-overview, graph-theory-overview, optimization-overview)의 갈래에 이미 들어가 있으므로 8절이 말하는 '서로 이웃이 아닌 채 놓인' 상태가 아니다. 주분야 문서가 10개 이상인데 전용 개관이 없는 태그 넷(group_theory 11, ring_theory 12, set_theory 12, logic 14)도 확인했고, 각각 abstract-algebra-overview 와 foundations-overview 가 빠짐없이 거두고 있어 새 개관이 필요하지 않다. 다음 차수에 볼 것: complexity 가 10개를 넘으면 computation-overview 에서 떼어 낼지 판정한다. 지금 computation-overview 의 갈래는 '계산가능성과 계산 모형', '복잡도', '알고리즘' 등으로 나뉘어 있어 복잡도 갈래가 커지면 분할 신호가 된다. 검사 자체는 새 문서를 여러 개 쓴 회차 뒤에 다시 돌릴 것",
       "createdAt": "2026-09-21T04:58:00.853Z",
       "seq": 807
+    },
+    {
+      "id": "d024feed",
+      "title": "axiom-of-choice 의 후속 간선",
+      "priority": 11,
+      "note": "2026-09-21 회차에 판정만 했다. 결론은 지금 기존 문서 가운데 자식이 될 것이 없다는 것이다. axiom-of-choice(선택공리와 Zorn 보조정리, 130줄, 부모 ordinals/partial-orders/zfc-axioms)는 리프인데, 본문에서 이 문서를 링크하는 문서가 21 개나 된다(banach-spaces, boolean-algebras, compactness, continuum-hypothesis, first-order-logic, functions, godel-incompleteness, heyting-algebras, hilbert-spaces, intuitionism, localization-rings, lowenheim-skolem, open-mapping-theorem, ordinals, partial-orders, prime-ideals, topology, vector-spaces, zfc-axioms 등). 21 개를 모두 검토한 결과 전부 5절이 말하는 '그저 부모를 도구로 한 번 쓰는' 관계다. Zorn 보조정리로 기저나 극대 아이디얼의 존재를 얻는 자리이지, 선택공리의 특수 사례나 확장이나 부분이 아니다. 따라서 본문 링크로 충분하고 간선은 긋지 않는다. 개별 판정: ultraproducts 는 비주 초필터의 존재에 선택공리를 쓰지만 초곱 자체는 모형론의 구성이라 부모가 model-theory 다. martins-axiom 은 선택공리와 다른 독립 공리이고 부모가 baire-category 다. continuum-hypothesis 는 ZFC 안에서 논의되므로 부모가 cardinality 와 zfc-axioms 다. 자식 자리를 만들려면 새 문서가 필요하고 후보는 셋이다: (1) Banach-Tarski 분해. 선택공리의 가장 유명한 귀결이고 5절의 '응용' 에 정확히 맞는다. 선수지식은 axiom-of-choice 와 group-actions(자유군의 작용), measure 다. (2) Tychonoff 정리. 활용 절 '완전한 AC' 항목이 부르고 compactness 가 공동 부모가 된다. 선택공리와 동치라는 점이 문서의 골자가 된다. (3) 선택공리의 약한 형태(가산 선택, 의존 선택). 활용 절 '사용 여부 판별' 이 이미 세 등급을 나눠 놓아 그 확장이 된다. 우선순위는 Banach-Tarski > Tychonoff > 약한 선택 순이다",
+      "createdAt": "2026-09-21T04:59:06.623Z",
+      "seq": 808
+    },
+    {
+      "id": "168d1d3c",
+      "title": "'A와 B' 제목 후보 훑기 (5차)",
+      "priority": 11,
+      "note": "2026-09-21 회차 4차(같은 회차 3차에 이어). 3차가 처리한 6 개 외에 axiom-of-choice '선택공리와 Zorn 보조정리'→'선택공리' 를 추가로 좁혔다. 이 문서는 지난 회차의 후보 목록에 없었는데, 본문이 선택공리·정렬 정리·Zorn 보조정리 세 동치 진술을 나란히 다루면서 제목에는 그중 둘만 들어가 있어 제목이 내용도 파일명도 가리키지 못했다. 링크 표시 제목은 이미 '선택공리' 가 16 곳으로 다수였고 '선택공리와 Zorn 보조정리' 7 곳을 그쪽으로 맞췄다. Zorn 보조정리를 가리키는 본문 링크 1 곳은 문맥에 맞아 그대로 뒀다. 같은 회차에 검사법을 다시 돌린 결과 제목에 '와/과' 가 든 문서가 148 개이고, 그중 정리·공식·추측·대응·법칙·원리·가설·문제·보조정리·알고리즘·모형·부등식이 든 제목을 빼면 후보가 여전히 100 개 안팎이다. 표본을 훑어 보니 남은 것은 대부분 '대상과 그 대상의 구조' 꼴이라 4절 예외다: algebraic-number-fields '대수적 수체와 정수환'(정수환은 수체 안의 부분환), bounded-operators '유계 작용소와 스펙트럼'(스펙트럼은 작용소의 성질), elliptic-curves '타원곡선과 군 구성'(군 구성은 곡선 위의 구조), dedekind-domains 'Dedekind 정역과 아이디얼의 유일분해'(유일분해가 정역의 정의적 성질), exponential-families '지수족과 충분통계량'. dag-topological 'DAG와 위상정렬' 은 파일명이 두 낱말을 모두 담아 오검출이다. 5차에 볼 것: 기계적 grep 으로는 더 좁혀지지 않으므로, 이번에 axiom-of-choice 를 찾은 방식을 쓸 것. 곧 제목의 두 낱말이 본문 절 구성과 맞는지 보는 것이다. 본문에 세 개 이상의 대등한 절이 있는데 제목이 그중 둘만 이름 대는 경우가 진짜 신호다. 검사법 초안: 제목의 '와/과' 앞뒤 낱말을 뽑아 그 문서의 '^## ' 헤딩 목록과 대조하고, 헤딩에는 있는데 제목에 없는 대등 개념이 있는지 본다",
+      "createdAt": "2026-09-21T05:00:09.488Z",
+      "seq": 809
     },
     {
       "id": "c5a45a48",
