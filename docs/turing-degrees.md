@@ -52,7 +52,7 @@ $$
 
 $A\le_T A'$ 는 $A'$ 신탁으로 $A$ 의 물음을 흉내 내면 된다. 역방향이 성립하지 않는 것은 대각선 논법이다. $A'\le_T A$ 라면 $A$ 신탁으로 $\Phi_e^A(e)$ 의 정지 여부를 판정하는 기계가 있고, 그것을 뒤집은 기계 $\Phi_d^A$ 에 대해 $\Phi_d^A(d)$ 가 멈추는 것과 멈추지 않는 것이 동치가 되어 모순이다. ∎
 
-반복 도약 $\mathbf 0,\mathbf 0',\mathbf 0'',\dots$ 이 무한 증가열을 준다. 이 열을 초한으로 잇는 것이 [서수](ordinals.md) 색인의 산술적 계층이다.
+반복 도약 $\mathbf 0,\mathbf 0',\mathbf 0'',\dots$ 이 무한 증가열을 준다. 이 열의 $n$ 번째 항이 [산술적 계층](arithmetical-hierarchy.md)의 $n$ 층에 대응하고, 열을 [서수](ordinals.md)로 색인해 초한으로 이으면 초산술적 계층이 나온다.
 
 ## Post 문제
 
@@ -83,6 +83,6 @@ $A'$ 가 $\mathbf 0'$ 를 넘지 않는 집합을 **저차**라 한다. 저차 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [산술적 계층](arithmetical-hierarchy.md)
 
 #computation #logic #set_theory

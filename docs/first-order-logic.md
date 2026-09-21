@@ -137,6 +137,7 @@ $$
 - [Löwenheim–Skolem 정리](lowenheim-skolem.md)
 - [Peano 공리](peano-axioms.md)
 - [Gödel 불완전성 정리](godel-incompleteness.md)
+- [산술적 계층](arithmetical-hierarchy.md)
 
 ### 기초 프로그램
 
