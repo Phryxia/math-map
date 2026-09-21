@@ -42,6 +42,7 @@ graph TD
 - [분류공간](classifying-spaces.md): 주다발을 사상의 호모토피류로 세고, 특성류가 그 코호몰로지에서 나온다
 - [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md): 호모토피군이 한 차수에만 있는 공간, 코호몰로지의 표현가능성과 Postnikov 탑
 - [층 코호몰로지](sheaf-cohomology.md): 전역 단면 함자의 유도 함자, 국소에서 전역으로 가는 장애
+- [Picard 군](picard-group.md): 가역층의 동형류가 이루는 군, 지수열이 가르는 위상적 조각과 정칙 조각
 
 ## 다양체와 기하
 
