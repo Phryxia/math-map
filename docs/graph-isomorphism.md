@@ -6,7 +6,7 @@
 
 정의는 [동치관계](equivalence-relations.md)의 사례다. 이름 바꾸기로 옮겨 가는 그래프들을 한 부류로 묶고 그 부류를 연구 대상으로 삼는다. 자기 자신으로 가는 이름 바꾸기들이 [군](groups.md)을 이루어 그래프의 대칭을 기술한다.
 
-계산에서는 다항시간 알고리즘도, NP-완전이라는 증거도 알려져 있지 않다[^1]. Babai 의 준다항시간 알고리즘이 현재까지의 최선이며, P 와 NP-완전 사이에 놓인 문제의 드문 예다.
+계산에서는 다항시간 알고리즘도, NP-완전이라는 증거도 알려져 있지 않다[^1]. Babai 의 준다항시간 알고리즘이 현재까지의 최선이며, $\mathrm P$ 와 NP-완전 사이에 놓인 문제의 드문 예다.
 
 # 직관
 
@@ -91,7 +91,7 @@ $G$ 가 $H$ 의 부분그래프로 들어가는가를 묻는 문제는 NP-완전
 
 $\mathrm{Aut}(G)$ 를 알면 대칭적으로 동등한 경우를 한 번만 계산해 탐색 공간을 줄인다. 조합 최적화의 대칭 깨기, 제약 충족 문제의 가지치기, 물리 시뮬레이션의 계산 절약이 이 방법을 쓴다. 동형 판정 도구가 자기동형군을 함께 출력하는 것도 이 용도다.
 
-[^1]: László Babai, *Graph Isomorphism in Quasipolynomial Time*, arXiv:1512.03547. 서론이 이 문제가 P 에 속하는지도 NP-완전인지도 알려지지 않았음을 밝히고 $\exp(O((\log n)^c))$ 시간 알고리즘을 준다. 이 문서는 문제의 정의를 다루며 해당 논문의 증명은 별도 주제다. https://arxiv.org/abs/1512.03547
+[^1]: László Babai, *Graph Isomorphism in Quasipolynomial Time*, arXiv:1512.03547. 서론이 이 문제가 $\mathrm P$ 에 속하는지도 NP-완전인지도 알려지지 않았음을 밝히고 $\exp(O((\log n)^c))$ 시간 알고리즘을 준다. 이 문서는 문제의 정의를 다루며 해당 논문의 증명은 별도 주제다. https://arxiv.org/abs/1512.03547
 [^2]: O. Goldreich, S. Micali, A. Wigderson, "Proofs that yield nothing but their validity", Journal of the ACM 38 (1991), 690–728. 그래프 비동형의 영지식 대화형 증명이 §2 에 있다.
 [^3]: R. Boppana, J. Håstad, S. Zachos, "Does co-NP have short interactive proofs?", Information Processing Letters 25 (1987), 127–132. 그래프 동형이 NP-완전이면 다항 계층이 $\Sigma_2^p$ 로 붕괴한다.
 
