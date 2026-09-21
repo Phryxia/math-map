@@ -42,13 +42,7 @@ GCH 는 CH 를 포함한다. Sierpiński 는 GCH 에서 [선택공리](axiom-of-
 
 ## 구성가능 우주
 
-집합 $X$ 에 대해 $\mathrm{Def}(X)$ 는 $X$ 를 논의 영역으로 하는 1차 논리식으로 매개변수를 써서 정의되는 $X$ 의 부분집합 전체다. 초한 재귀로 다음을 정의한다.
-
-$$
-L_0 = \varnothing, \qquad L_{\alpha+1} = \mathrm{Def}(L_\alpha), \qquad L_\lambda = \bigcup_{\alpha \lt\lambda} L_\alpha
-$$
-
-모든 서수에 걸친 합집합이 **구성가능 우주** $L$ 이다. 일반 멱집합 대신 정의 가능한 부분집합만 취한다.
+[구성가능 우주](constructible-universe.md) $L$ 은 각 단계에서 1차 논리식으로 정의되는 부분집합만 취해 초한 재귀로 쌓은 모임이다. 일반 멱집합 대신 정의 가능한 부분집합만 취하므로 단계마다 크기를 셀 수 있다.
 
 ## 강제법
 
