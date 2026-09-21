@@ -95,7 +95,7 @@ $m$ 색이면 궤도 개수가 $(m^6+3m^4+12m^3+8m^2)/24$ 이고, $m=2$ 에서 1
 
 ## 선수지식
 
-- [군 작용](group-actions.md)
+- [Burnside 보조정리](burnside-lemma.md)
 
 ## 더 알아보기
 

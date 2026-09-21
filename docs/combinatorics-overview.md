@@ -29,6 +29,7 @@ graph TD
 - [셈의 기본 원리](counting-principles.md): 합·곱 법칙, 이중 계산, 전단사 논법
 - [비둘기집 원리](pigeonhole-principle.md), [포함배제 원리](inclusion-exclusion.md): 존재와 개수의 두 기본 도구
 - [생성함수](generating-functions.md) → [분할수와 원법](partitions.md): 수열을 함수로 바꿔 세기
+- [Burnside 보조정리](burnside-lemma.md): 궤도 개수를 고정점 개수의 평균으로 세기
 - [Pólya 세기 정리](polya-enumeration.md): 대칭을 무시한 색칠의 개수
 - [Laplace 방법과 안장점](laplace-method.md): 세는 수의 점근
 

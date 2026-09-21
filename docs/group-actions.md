@@ -103,9 +103,7 @@ $$
 \mathrm{Fix}(g)=\lbrace x: g\cdot x=x\rbrace
 $$
 
-증명은 $\lbrace(g,x) : g \cdot x = x\rbrace$ 를 두 방향으로 세는 것이다. $x$ 로 먼저 세면 $\sum |\mathrm{Stab}(x)|$ 이고 궤도-안정자 정리로 정리된다. 계산에서는 각 대칭이 고정하는 배치의 개수만 세면 된다.
-
-$2$ 색 $4$ 구슬은 배치가 $16$ 개이고 궤도가 $6$ 개다. $16/4=4$ 가 아니므로 단순한 나눗셈은 틀린 값을 준다.
+증명은 $\lbrace(g,x) : g \cdot x = x\rbrace$ 를 두 방향으로 세는 것이고, $x$ 로 먼저 세는 쪽이 궤도-안정자 정리로 정리된다. 계산과 응용은 [Burnside 보조정리](burnside-lemma.md)에 있다.
 
 # 활용
 
@@ -141,7 +139,7 @@ Klein 의 관점에서 기하학은 어떤 변환군 아래 불변인 성질의 
 
 ### 세기와 다른 분야
 
-- [Pólya 세기 정리](polya-enumeration.md)
+- [Burnside 보조정리](burnside-lemma.md)
 - [Galois 이론](galois-theory.md)
 - [덮개공간](covering-spaces.md)
 - [모듈러 형식](modular-forms.md)
