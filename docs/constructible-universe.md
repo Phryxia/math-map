@@ -73,7 +73,7 @@ $L$ 에는 서수의 정의 가능한 정렬순서가 있으므로 선택공리�
 - 상대적 무모순성 증명의 첫 방법이다. 명제 $\varphi$ 가 $L$ 에서 성립함을 보이면 ZFC 에 $\varphi$ 를 더한 이론의 무모순성이 나온다. [강제법](forcing.md)이 반대 방향, 곧 $\varphi$ 의 부정이 무모순임을 보이는 방법이다.
 - 다이아몬드 원리가 $L$ 에서 성립한다. 이 원리로 Suslin 나무를 구성할 수 있고, 그 결과 [Suslin 문제](suslin-problem.md)의 답이 부정인 모형이 나온다.[^3]
 - 사영 집합의 성질을 가른다. $V = L$ 이면 Lebesgue 가측이 아닌 $\Delta^1\_2$ 집합이 있고, 따라서 모든 사영 집합이 가측이라는 명제는 ZFC 에서 증명되지 않는다.
-- 미세구조 이론의 출발점이다. $L$ 의 각 단계를 세밀하게 분석해 조합적 원리를 끌어내는 방법이 더 큰 내부 모형으로 확장된다.
+- 미세구조 이론이 $L$ 의 각 단계를 분석해 조합적 원리를 끌어낸다. 같은 분석이 더 큰 내부 모형으로 확장된다.
 
 [^1]: K. Gödel, *The Consistency of the Axiom of Choice and of the Generalized Continuum-Hypothesis with the Axioms of Set Theory*, Annals of Mathematics Studies 3, Princeton University Press (1940).
 
