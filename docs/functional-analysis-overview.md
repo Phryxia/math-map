@@ -23,6 +23,7 @@ graph TD
   COMP --> BS
   VS --> BS
   LM["선형사상"] --> DS["쌍대 공간"]
+  BS --> OMT["열린 사상 정리"]
   HS --> BO["유계 작용소"]
   ST["스펙트럼 정리"] --> BO
   BO --> UBO["비유계 작용소"]
@@ -40,7 +41,7 @@ graph TD
 
 - [내적 공간](inner-product-spaces.md) — 내적이 정하는 노름과 직교성. Cauchy–Schwarz 부등식과 Gram–Schmidt 직교화
 - [Hilbert 공간](hilbert-spaces.md) — 완비 내적 공간. 닫힌 부분공간으로의 직교사영과 Riesz 표현 정리
-- [Banach 공간](banach-spaces.md) — 완비 노름 공간. 열린사상 정리, 닫힌 그래프 정리, 균등유계성 원리
+- [Banach 공간](banach-spaces.md) — 완비 노름 공간. 열린 사상 정리, 닫힌 그래프 정리, 균등유계성 원리
 - [$L^p$ 공간](lp-spaces.md) — 측도공간 위의 적분가능 함수들이 이루는 Banach 공간. Hölder 와 Minkowski 부등식, 쌍대성
 - [쌍대 공간](dual-space.md) — 선형범함수 전체가 이루는 공간. 유한차원과 달리 원공간과 표준적으로 동형이 아니다
 
@@ -51,6 +52,7 @@ graph TD
 
 ## 작용소와 스펙트럼
 
+- [열린 사상 정리](open-mapping-theorem.md) — Banach 공간 사이의 전사 유계 작용소는 열린 사상이다. 유계 역작용소 정리와 닫힌 그래프 정리가 따라온다
 - [유계 작용소와 스펙트럼](bounded-operators.md) — 연속과 유계가 동치이고, 스펙트럼이 점·연속·잔여로 갈린다
 - [비유계 작용소와 Stone 정리](unbounded-operators.md) — 조밀한 정의역에서만 정의되는 자기수반 작용소와 한 매개변수 유니터리 군의 대응
 - [Fredholm 작용소와 지표](fredholm-operators.md) — 핵과 여핵이 유한차원인 작용소. 지표가 연속 변형에 불변이다
