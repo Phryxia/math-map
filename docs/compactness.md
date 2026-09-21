@@ -102,6 +102,7 @@ $(0,1)$ 전체를 목표로 하면 좌단에서 막히고 좌단을 조금만 �
 
 ## 더 알아보기
 
+- [분리공리](separation-axioms.md)
 - [균등연속](uniform-continuity.md)
 - [곡면의 분류](classification-of-surfaces.md)
 

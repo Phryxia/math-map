@@ -100,6 +100,7 @@ $$
 ### 공간의 성질
 
 - [콤팩트성](compactness.md)
+- [분리공리](separation-axioms.md)
 - [연결성](connectedness.md)
 
 ### 대수적 불변량
