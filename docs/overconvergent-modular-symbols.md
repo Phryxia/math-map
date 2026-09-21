@@ -24,7 +24,7 @@ $$
 \mathrm{Symb}\_\Gamma(\mathcal D_k)^{\le h}
 $$
 
-무한 차원 공간을 통째로 다루는 대신 기울기 $h$ 이하 조각만 떼어 유한 차원 문제로 만든다. [Newton 다각형](newton-polygon.md)이 Fredholm 행렬식의 기울기를 읽어 그 조각의 차원을 준다.
+무한 차원 공간을 통째로 다루는 대신 기울기 $h$ 이하 조각만 떼어 유한 차원 문제로 만든다. [Newton 다각형](newton-polygon.md)이 [Fredholm 행렬식](fredholm-determinant.md)의 기울기를 읽어 그 조각의 차원을 준다.
 
 ## 기울기 조건의 출처
 

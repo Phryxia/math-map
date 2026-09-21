@@ -112,7 +112,7 @@ $$
 \bigl|\lbrace f:[n]\twoheadrightarrow[m]\rbrace\bigr|=\sum_{j=0}^{m}(-1)^{j}\binom{m}{j}(m-j)^{n}=m!\thinspace S(n,m)
 $$
 
-여기서 $S(n,m)$ 은 제2종 Stirling 수다.
+여기서 $S(n,m)$ 은 제2종 [Stirling 수](stirling-numbers.md)다.
 
 ## Möbius 반전
 

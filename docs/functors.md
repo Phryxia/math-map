@@ -38,7 +38,7 @@ $$
 
 ## Hom 함자
 
-대상 $c$ 를 고정한 $\mathrm{Hom}\_C(c, -)$ 는 대상 $d$ 를 집합 $\mathrm{Hom}(c, d)$ 로, 사상 $f : d \to d'$ 를 뒤에 $f$ 를 합성하는 사상으로 보내는 공변 함자다. 두 번째 변수를 고정한 $\mathrm{Hom}\_C(-, d)$ 는 앞에 합성하는 반변 함자다. Yoneda lemma 가 이 두 함자를 다룬다.
+대상 $c$ 를 고정한 $\mathrm{Hom}\_C(c, -)$ 는 대상 $d$ 를 집합 $\mathrm{Hom}(c, d)$ 로, 사상 $f : d \to d'$ 를 뒤에 $f$ 를 합성하는 사상으로 보내는 공변 함자다. 두 번째 변수를 고정한 $\mathrm{Hom}\_C(-, d)$ 는 앞에 합성하는 반변 함자다. [Yoneda lemma](yoneda-lemma.md) 가 이 두 함자를 다룬다.
 
 ## 충실성과 충만성
 

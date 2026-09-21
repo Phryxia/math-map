@@ -170,7 +170,7 @@ $L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개�
 
 ## 재생핵 Hilbert 공간
 
-점 평가 범함수가 연속인 함수 공간에서는 Riesz 표현 정리가 각 점마다 대표 벡터를 주고, 그것이 커널 함수다. 커널 기법과 Gauss 과정 회귀가 이 구조 위에서 돌아간다. 정사영 정리가 곧 정규화된 회귀의 해가 유한 차원 문제로 줄어든다는 표현자 정리로 나타난다.
+점 평가 범함수가 연속인 함수 공간에서는 Riesz 표현 정리가 각 점마다 대표 벡터를 주고, 그것이 커널 함수다. 커널 기법과 [Gauss 과정](gaussian-processes.md) 회귀가 이 구조 위에서 돌아간다. 정사영 정리가 곧 정규화된 회귀의 해가 유한 차원 문제로 줄어든다는 표현자 정리로 나타난다.
 
 [^1]: Wikipedia, "Hilbert space", https://en.wikipedia.org/wiki/Hilbert_space
 [^2]: Wikipedia, "Riesz representation theorem", https://en.wikipedia.org/wiki/Riesz_representation_theorem

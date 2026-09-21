@@ -114,7 +114,7 @@ $K_1(\mathbb Z[\pi])$ 의 몫인 Whitehead 군 $\mathrm{Wh}(\pi)$ 가 $h$ 코보
 
 ## 정규화자와 특수값
 
-$K$ 군의 유리계수 부분에서 정의되는 Borel 정규화자가 $\zeta_F$ 의 특수값을 준다. Dirichlet 단수 정리가 $K_1$ 단계의 진술이라면 Borel 의 정리는 그 모든 차수 판본이며, 이 관점이 Beilinson 예상의 출발이다.
+$K$ 군의 유리계수 부분에서 정의되는 Borel 정규화자가 $\zeta_F$ 의 특수값을 준다. [Dirichlet 단수 정리](dirichlet-unit-theorem.md)가 $K_1$ 단계의 진술이라면 Borel 의 정리는 그 모든 차수 판본이며, 이 관점이 Beilinson 예상의 출발이다.
 
 ## 동기 코호몰로지와의 연결
 

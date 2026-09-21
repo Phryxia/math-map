@@ -48,7 +48,7 @@ Dirichlet 의 비둘기집 논법이 $\vert x - y\sqrt d\vert \lt 1/y$ 인 쌍�
 
 노름이 $1$ 인 $\alpha \gt 1$ 이 있고 $\varepsilon^n \le \alpha \lt \varepsilon^{n+1}$ 이면 $\alpha\varepsilon^{-n}$ 도 노름이 $1$ 이고 $1 \le \alpha\varepsilon^{-n} \lt \varepsilon$ 이다. 기본해의 최소성에서 이 값이 $1$ 이므로 $\alpha = \varepsilon^n$ 이다. ∎
 
-이 구조가 Dirichlet 단수 정리의 가장 작은 경우다. 실이차체의 단수군은 $\lbrace \pm 1\rbrace$ 과 무한순환군의 곱이고, 무한순환군을 낳는 원소가 기본단수다.
+이 구조가 [Dirichlet 단수 정리](dirichlet-unit-theorem.md)의 가장 작은 경우다. 실이차체의 단수군은 $\lbrace \pm 1\rbrace$ 과 무한순환군의 곱이고, 무한순환군을 낳는 원소가 기본단수다.
 
 ## 연분수의 수렴분
 

@@ -171,7 +171,7 @@ $L^2$ 오차는 0으로 가지만 오버슈트는 약 0.179에 머문다. 도약
 ## 다른 방향으로의 확장
 
 - 비주기 함수에는 Fourier 변환, 격자 위에서는 Poisson 합 공식이 대응한다.
-- 구면 위에서는 구면 조화함수, 일반 콤팩트 군에서는 Peter–Weyl 정리가 같은 역할을 한다. 어느 경우든 "적당한 연산자의 고유함수가 정규직교기저를 이룬다"는 구조가 공통이다.
+- 구면 위에서는 구면 조화함수, 일반 콤팩트 군에서는 [Peter–Weyl 정리](peter-weyl.md)가 같은 역할을 한다. 어느 경우든 "적당한 연산자의 고유함수가 정규직교기저를 이룬다"는 구조가 공통이다.
 - 계수 자체를 다루는 조화해석은 [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)와도 만난다. 단위원 위의 Fourier 급수에서 음의 지수를 버리면 원판 위의 정칙함수가 된다.
 
 [^1]: Wikipedia, "Carleson's theorem", https://en.wikipedia.org/wiki/Carleson%27s_theorem

@@ -60,7 +60,7 @@ $$
 \lambda(M)=\tfrac12\chi\big(HF_\ast^{\text{inst}}(M)\big)
 $$
 
-세는 수가 범주화된 대상의 Euler 지표가 되는 구조는 Jones 다항식과 Khovanov 호몰로지의 관계와 같다.
+세는 수가 범주화된 대상의 Euler 지표가 되는 구조는 Jones 다항식과 [Khovanov 호몰로지](khovanov-homology.md)의 관계와 같다.
 
 ## 특성에 의한 정의
 

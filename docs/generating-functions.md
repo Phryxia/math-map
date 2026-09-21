@@ -129,7 +129,7 @@ $$
 \sum_{n\ge 0}D_n\frac{x^{n}}{n!}=\frac{e^{-x}}{1-x}
 $$
 
-$B_n$ 은 Bell 수(집합 분할의 개수), $D_n$ 은 완전순열의 개수다. 두 번째 식은 [포함배제 원리](inclusion-exclusion.md)로 얻은 부호 교대 합의 EGF 형태다. $1/(1-x)$ 는 모든 순열의 EGF 이고 $e^{-x}$ 가 고정점을 제거하는 인자다. 지수 공식(exponential formula)이 이 패턴을 일반화한다. 연결된 조각의 EGF 가 $C(x)$ 면 그 조각들의 집합의 EGF 는 $\exp(C(x))$ 다.
+$B_n$ 은 [Bell 수](bell-numbers.md)(집합 분할의 개수), $D_n$ 은 완전순열의 개수다. 두 번째 식은 [포함배제 원리](inclusion-exclusion.md)로 얻은 부호 교대 합의 EGF 형태다. $1/(1-x)$ 는 모든 순열의 EGF 이고 $e^{-x}$ 가 고정점을 제거하는 인자다. 지수 공식(exponential formula)이 이 패턴을 일반화한다. 연결된 조각의 EGF 가 $C(x)$ 면 그 조각들의 집합의 EGF 는 $\exp(C(x))$ 다.
 
 ## 형식적 조작의 한계
 

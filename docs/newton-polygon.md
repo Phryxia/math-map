@@ -91,7 +91,7 @@ $$
 f(x)=P(x)\thinspace u(x),\qquad \deg P=d,\ u\ \text{는 원판에서 단위}
 $$
 
-무한차원이 유한차원으로 잘리므로 [Dwork 이론](dwork-rationality.md)에서 Fredholm 행렬식을 다룰 수 있다. 완전연속 작용소의 특성급수가 정함수이고 그 Newton 다각형이 고윳값의 부치를 층층이 준다.
+무한차원이 유한차원으로 잘리므로 [Dwork 이론](dwork-rationality.md)에서 [Fredholm 행렬식](fredholm-determinant.md)을 다룰 수 있다. 완전연속 작용소의 특성급수가 정함수이고 그 Newton 다각형이 고윳값의 부치를 층층이 준다.
 
 ## $p$ 진 exp 의 수렴반경
 

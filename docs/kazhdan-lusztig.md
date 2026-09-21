@@ -187,7 +187,7 @@ $X_w$ 의 특이점 판정, 국소 교차 코호몰로지, 유리 매끄러움 �
 
 ## 범주화라는 관점
 
-Soergel 쌍가군의 범주는 $P_{x,w}$ 를 수의 열이 아니라 벡터공간의 열로 본다. 다항식의 등식이 대상의 동형으로 올라가고 계수의 양수성이 차원의 음이 아님으로 환원된다. Khovanov 호몰로지가 Jones 다항식에 대해 하는 것과 같은 상승이며, 현대 표현론의 표준 도구다.
+Soergel 쌍가군의 범주는 $P_{x,w}$ 를 수의 열이 아니라 벡터공간의 열로 본다. 다항식의 등식이 대상의 동형으로 올라가고 계수의 양수성이 차원의 음이 아님으로 환원된다. [Khovanov 호몰로지](khovanov-homology.md)가 Jones 다항식에 대해 하는 것과 같은 상승이며, 현대 표현론의 표준 도구다.
 
 [^1]: D. Kazhdan, G. Lusztig, *Representations of Coxeter groups and Hecke algebras*, Invent. Math. **53** (1979), 165–184. 기하적 해석은 같은 저자의 *Schubert varieties and Poincaré duality*, Proc. Sympos. Pure Math. **36** (1980).
 

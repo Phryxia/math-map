@@ -132,7 +132,7 @@ $$
 \mathrm{ind}(D)=\int_M\mathrm{ch}(\sigma(D))\thinspace\mathrm{Td}(TM\otimes\mathbb C)
 $$
 
-우변은 주기호의 위상적 데이터로만 이루어진다. 이 구조가 Gauss–Bonnet 정리와 Riemann–Roch 정리를 특수한 경우로 포함하고, Fredholm 지표가 그 틀의 기초 층이다.
+우변은 주기호의 위상적 데이터로만 이루어진다. 이 구조가 Gauss–Bonnet 정리와 [Riemann–Roch 정리](riemann-roch.md)를 특수한 경우로 포함하고, Fredholm 지표가 그 틀의 기초 층이다.
 
 # 활용
 

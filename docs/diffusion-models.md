@@ -75,7 +75,7 @@ $$
 dx=\big[f(x,t)-g(t)^2\nabla_x\log q_t(x)\big]dt+g(t)\thinspace d\bar w
 $$
 
-$dt$ 가 음수이고 $\bar w$ 가 역시간 Brown 운동이다. 점수함수를 알면 생성이 이 SDE 의 수치적분이 된다.
+$dt$ 가 음수이고 $\bar w$ 가 역시간 [Brown 운동](brownian-motion.md)이다. 점수함수를 알면 생성이 이 SDE 의 수치적분이 된다.
 
 ## 확률흐름 ODE
 

@@ -171,7 +171,7 @@ $$
 
 유한체 $\mathbb F_q$ 위에서 함수-층 사전을 적용하면 $\mathcal{IC}\_\lambda$ 의 Frobenius 자취 함수가 나온다. 그것이 $\mathcal H(G,K)$ 의 원소이고, 그 Satake 상이 기약지표 $\chi_\lambda$ 다.
 
-고전적 Satake 동형에서 $1_{K t^\lambda K}$ 의 상은 $\chi_\lambda$ 가 아니라 낮은 항이 $q^{-1}$ 배로 섞인 꼴이다. $1_{Kt^\lambda K}$ 가 궤도 $\mathrm{Gr}^\lambda$ 의 상수층에, $\chi_\lambda$ 가 폐포의 $\mathcal{IC}$ 층에 대응하고, 둘의 차이가 교차 코호몰로지 줄기의 차원인 Kazhdan–Lusztig 다항식이다.
+고전적 Satake 동형에서 $1_{K t^\lambda K}$ 의 상은 $\chi_\lambda$ 가 아니라 낮은 항이 $q^{-1}$ 배로 섞인 꼴이다. $1_{Kt^\lambda K}$ 가 궤도 $\mathrm{Gr}^\lambda$ 의 상수층에, $\chi_\lambda$ 가 폐포의 $\mathcal{IC}$ 층에 대응하고, 둘의 차이가 교차 코호몰로지 줄기의 차원인 [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)이다.
 
 $$
 \chi_\lambda=\sum_{\mu\le\lambda}P_{\mu\lambda}(q^{-1})\cdot\bigl[1_{Kt^\mu K}\bigr]

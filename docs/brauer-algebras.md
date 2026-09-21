@@ -86,7 +86,7 @@ $\delta=n$ 이 작은 정수이고 $k$ 가 크면 반단순성이 깨진다. 이
 | $\mathbb C[S_k]$ | $\mathrm{GL}\_n$ | $k!$ |
 | $B_k(\delta)$ | $\mathrm O_n$ 과 $\mathrm{Sp}\_{2m}$ | $(2k-1)!!$ |
 | 벽 있는 Brauer | $\mathrm{GL}\_n$ (혼합 텐서) | 조합적 |
-| 분할 대수 | $S_n$ | Bell 수 |
+| 분할 대수 | $S_n$ | [Bell 수](bell-numbers.md) |
 
 군을 줄이면 중심화대수가 커지고, 커진 만큼이 도형으로 기술된다.
 

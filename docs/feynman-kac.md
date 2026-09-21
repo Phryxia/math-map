@@ -52,7 +52,7 @@ $$
 \mathcal L_t f(x)=\sum_ib_i(t,x)\thinspace\partial_if(x)+\frac12\sum_{i,j}\big(\sigma\sigma^{\mathsf T}\big)\_{ij}(t,x)\thinspace\partial_i\partial_jf(x)
 $$
 
-$X$ 가 표준 Brown 운동이면 $\mathcal L = \tfrac12\Delta$ 이고, 열방정식과 Brown 운동이 이 등식으로 대응한다.
+$X$ 가 표준 [Brown 운동](brownian-motion.md)이면 $\mathcal L = \tfrac12\Delta$ 이고, 열방정식과 Brown 운동이 이 등식으로 대응한다.
 
 ## 정리
 
