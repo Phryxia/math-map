@@ -33,7 +33,7 @@ graph TD
 - [논리주의와 Frege 프로그램](logicism.md): 수학은 논리로 환원된다
 - [형식주의와 Hilbert 프로그램](formalism-hilbert-program.md): 수학은 규칙이 지배하는 기호이고 무모순성이 전부다
 - [직관주의](intuitionism.md): 대상은 정신의 구성이고 참은 증명을 가졌다는 뜻이다
-- [수학적 구조주의](mathematical-structuralism.md) → [구조적 집합론과 동형 불변성](structural-set-theory.md): 대상은 구조 안의 자리다
+- [수학적 구조주의](mathematical-structuralism.md) → [구조적 집합론](structural-set-theory.md): 대상은 구조 안의 자리다
 
 ## 논리
 

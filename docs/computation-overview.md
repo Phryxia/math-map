@@ -29,7 +29,7 @@ graph TD
   LPR --> SDP["반정부호 계획법"]
   SDP --> UG
   DAG["DAG와 위상정렬"] --> DP["동적 계획법"]
-  DP --> SP["최단경로와 Bellman 방정식"]
+  DP --> SP["최단경로"]
   DT --> SP
   UF["서로소 집합 자료구조"] --> DC["동적 연결성"]
   DC --> LCT["Link-cut tree"]
@@ -70,7 +70,7 @@ graph TD
 ## 알고리즘
 
 - [동적 계획법](dynamic-programming.md): 부분문제의 DAG(directed acyclic graph) 위에서 값을 위상순으로 채운다
-- [최단경로와 Bellman 방정식](shortest-paths.md): Bellman–Ford, Dijkstra, 고정점으로서의 최단거리
+- [최단경로](shortest-paths.md): Bellman–Ford, Dijkstra, 고정점으로서의 최단거리
 - [LP 완화와 반올림](lp-rounding.md): LP(linear programming) 완화로 정수 제약을 푼 뒤 해를 되돌리는 근사 설계
 - [고속 Fourier 변환과 합성곱](fft.md): 분할정복으로 $O(n\log n)$ 에 이산 Fourier 변환
 - [오류정정부호](error-correcting-codes.md): 부호의 구성과 복호 알고리즘, 거리와 한계

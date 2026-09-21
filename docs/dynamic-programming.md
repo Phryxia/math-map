@@ -99,6 +99,6 @@ Bellman 방정식은 원래 동적 계획법에서 나온 식이고, 유한 시�
 
 ## 더 알아보기
 
-- [최단경로와 Bellman 방정식](shortest-paths.md)
+- [최단경로](shortest-paths.md)
 
 #algorithms #computation

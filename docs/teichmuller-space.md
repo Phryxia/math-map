@@ -1,8 +1,8 @@
-# Teichmüller 공간과 곡면의 모듈라이
+# Teichmüller 공간
 
 # 개요
 
-[곡면의 분류](classification-of-surfaces.md)는 닫힌 유향 곡면이 종수 $g$ 하나로 결정된다고 말한다. 위상만 보면 그것으로 끝이다. 그런데 같은 곡면에 [Riemann 계량](riemannian-metrics.md)을 주면 이야기가 다시 시작된다. 종수는 같지만 모양이 다른 곡면들이 연속적으로 많다.
+[곡면의 분류](classification-of-surfaces.md)는 닫힌 유향 곡면이 종수 $g$ 하나로 결정된다고 말한다. 같은 곡면에 [Riemann 계량](riemannian-metrics.md)을 주면 종수는 같지만 모양이 다른 곡면이 연속적으로 많다.
 
 곡률을 $-1$ 로 고정해도 그렇다. $g\ge2$ 이면 종수 $g$ 곡면 위의 쌍곡 계량은 유일하지 않고, 등거리를 같은 것으로 세어도 $6g-6$ 개의 실수 매개변수가 남는다. 그 매개변수 공간이 **Teichmüller 공간** $\mathcal T_g$ 이고, 좌표를 잊고 곡면 자체만 세면 **모듈라이 공간** $\mathcal M_g$ 가 된다.
 
@@ -10,7 +10,7 @@ $$
 \dim_{\mathbb R}\mathcal T_g=6g-6,\qquad \mathcal T_g\cong\mathbb R^{6g-6},\qquad \mathcal M_g=\mathcal T_g/\mathrm{Mod}(S_g)
 $$
 
-차원이 0 이 아니라는 사실 자체가 정리다. 한 차원 위로 올라가면 정반대가 되기 때문이다. [쌍곡 3 다양체](hyperbolic-3-manifolds.md)에서는 Mostow 강직성이 유한부피 쌍곡 구조를 **유일하게** 만든다. 모양을 고를 자유가 2 차원에는 있고 3 차원에는 없다. 이 대비가 두 차원의 기하를 전혀 다른 학문으로 갈라놓는다.
+차원이 0 이 아닌 것은 2 차원에 한정된 현상이다. [쌍곡 3 다양체](hyperbolic-3-manifolds.md)에서는 Mostow 강직성이 유한부피 쌍곡 구조를 유일하게 만든다. 모양을 고를 자유가 2 차원에는 있고 3 차원에는 없다.
 
 # 직관
 

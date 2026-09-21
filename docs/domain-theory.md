@@ -135,6 +135,6 @@ $\mathrm{loop}$ 의 방정식은 모든 함수를 해로 받아들이므로 해�
 
 ## 더 알아보기
 
-- [최단경로와 Bellman 방정식](shortest-paths.md)
+- [최단경로](shortest-paths.md)
 
 #order_theory #computation #logic

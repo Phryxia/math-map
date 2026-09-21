@@ -153,7 +153,7 @@ ZFC로 판정되지 않는 문장을 다루기 위해 도달 불가능 기수, �
 
 - [서수](ordinals.md)
 - [선택공리](axiom-of-choice.md)
-- [구조적 집합론과 동형 불변성](structural-set-theory.md)
+- [구조적 집합론](structural-set-theory.md)
 - [연속체 가설과 독립성](continuum-hypothesis.md)
 - [구성가능 우주](constructible-universe.md)
 
