@@ -166,6 +166,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [그래프 마이너](graph-minors.md)
 
 #graph_theory #topology
