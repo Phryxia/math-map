@@ -65,7 +65,7 @@ $$
 
 # 정의
 
-## 설정
+## 쌍곡 곡면과 Laplace 작용소
 
 $\Gamma\subset\mathrm{PSL}\_2(\mathbb R)$ 는 유한 공부피 이산군, $X=\Gamma\backslash\mathbb H$ 는 쌍곡 곡면, $\Delta=-y^2(\partial_x^2+\partial_y^2)$ 는 Laplace 작용소다. 이산 스펙트럼을 $\lambda_j=\tfrac14+r_j^2$ 로 쓴다.
 

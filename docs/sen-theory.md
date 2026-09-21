@@ -62,7 +62,7 @@ $$
 
 # 정의
 
-## 설정
+## 순환분체 확대와 $\mathbb C_p$ 표현
 
 $K/\mathbb Q_p$ 를 유한 확장, $K_\infty=K(\mu_{p^\infty})$ , $\Gamma=\mathrm{Gal}(K_\infty/K)$ 로 두고, $\chi:\Gamma\to\mathbb Z_p^\times$ 를 순환분체 지표, $\widehat{K_\infty}$ 를 $K_\infty$ 의 완비화라 한다. $W$ 는 $\mathbb C_p$ 위의 유한차원 반선형 $G_K$ 표현이며, 예를 들어 $W=\mathbb C_p\otimes_{\mathbb Q_p}V$ 다.
 

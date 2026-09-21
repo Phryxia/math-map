@@ -53,7 +53,7 @@ $\lambda$ 가 지배적이 아닐 때 합이 상쇄되어 0 이 되는 것도 �
 
 # 정의
 
-## 설정
+## 국소체와 Borel 부분군
 
 $F$ 를 비아르키메데스 국소체, $\mathcal O$ 를 정수환, $\varpi$ 를 소원, $q=|\mathcal O/\varpi|$ 라 하자. $G=\mathrm{GL}\_n(F)$ 와 $K=\mathrm{GL}\_n(\mathcal O)$ 를 두고 $B=TN$ 을 Borel 부분군이라 한다.
 
