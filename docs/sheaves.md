@@ -95,6 +95,7 @@ $$
 
 ## 더 알아보기
 
+- [층 코호몰로지](sheaf-cohomology.md)
 - [토포스](topos-theory.md)
 
 #category_theory #topology #algebraic_topology
