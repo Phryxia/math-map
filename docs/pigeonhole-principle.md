@@ -90,7 +90,7 @@ $$
 \lbrace 0\cdot\alpha\rbrace,\lbrace\alpha\rbrace,\dots,\lbrace Q\alpha\rbrace\in[0,1)=\bigsqcup_{u=0}^{Q-1}\Bigl[\frac{u}{Q},\frac{u+1}{Q}\Bigr)
 $$
 
-비둘기집 원리로 $q_1\lt q_2$ 이면서 $\lbrace q_1\alpha\rbrace$ 와 $\lbrace q_2\alpha\rbrace$ 가 같은 구간에 드는 두 첨자가 있다. $q=q_2-q_1,\ p=\lfloor q_2\alpha\rfloor-\lfloor q_1\alpha\rfloor$ 로 두면 주장이 따른다. $\alpha$ 가 무리수이면 $Q$ 를 키워가며 분모가 무한히 커지는 근사열을 얻는다. 지수 2 는 무리수 전체에 대해 개선할 수 없다. 황금비류의 badly approximable 수가 그 장벽이고, 대수적 무리수에 한정하면 Roth 정리가 지수 $2+\varepsilon$ 을 준다.
+비둘기집 원리로 $q_1\lt q_2$ 이면서 $\lbrace q_1\alpha\rbrace$ 와 $\lbrace q_2\alpha\rbrace$ 가 같은 구간에 드는 두 첨자가 있다. $q=q_2-q_1,\ p=\lfloor q_2\alpha\rfloor-\lfloor q_1\alpha\rfloor$ 로 두면 주장이 따른다. $\alpha$ 가 무리수이면 $Q$ 를 키워가며 분모가 무한히 커지는 근사열을 얻는다. 지수 2 는 무리수 전체에 대해 개선할 수 없다. 황금비처럼 나쁘게 근사되는 수가 개선을 막고, 대수적 무리수에 한정하면 [Diophantine 근사](diophantine-approximation.md)의 Roth 정리가 지수 $2+\varepsilon$ 을 준다.
 
 ## 이중 계산과의 관계
 
