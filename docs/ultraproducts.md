@@ -95,6 +95,6 @@ $T$ 의 유한 부분집합 전체를 $I$ 로 두고, 각 $i \in I$ 에 $i$ 의 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [비표준 해석학](nonstandard-analysis.md)
 
 #logic #set_theory #foundations

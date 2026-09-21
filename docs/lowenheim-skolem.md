@@ -132,6 +132,5 @@ Skolem 역설은 형식 집합론이 하나의 집합 우주를 지목하지 못
 ## 더 알아보기
 
 - [모형론](model-theory.md)
-- [비표준 해석학](nonstandard-analysis.md)
 
 #logic #set_theory #foundations #theorem
