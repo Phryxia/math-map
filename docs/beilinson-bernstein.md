@@ -89,7 +89,7 @@ $\lambda$ 가 벽 위에 있으면 $\mathcal D_X^\lambda$ 의 전역단면은 �
 
 # 활용
 
-## 범주 O 의 구조
+## 범주 $\mathcal O$ 의 구조
 
 범주 $\mathcal O$ 의 BGG(Bernstein–Gelfand–Gelfand) 상반성, 사영 대상의 존재, 블록 분해가 기하 쪽에서 층의 함자적 성질로 나온다. 사영 대상은 세포를 따라 밀어낸 층의 확장이고, 상반성은 편향층의 쌍대성이다.
 
