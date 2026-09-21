@@ -46,6 +46,7 @@ graph TD
 ## 계산가능성과 계산 모형
 
 - [계산 가능성과 정지 문제](computability.md): Turing 기계, 대각선 논법, 결정 불가능성
+- [Turing 차수](turing-degrees.md): 결정 불가능성의 정도를 재는 순서, 도약과 Post 문제
 - [Rice 정리](rice-theorem.md): 자명하지 않은 의미론적 성질은 모두 결정 불가능
 - [유한 오토마타와 정규언어](finite-automata.md): 유한 상태 모형, Myhill–Nerode 정리, 펌핑 보조정리
 - [Lambda calculus](lambda-calculus.md): 함수 적용만으로 세운 계산 모형, $\beta$ 축약과 Church–Rosser 정리
