@@ -226,7 +226,7 @@ Rademacher 는 같은 방법으로 $p(n)$ 을 정확히 주는 수렴급수를 �
 ## 더 알아보기
 
 - [Langlands 강령](langlands-program.md)
-- [분할수와 원법](partitions.md)
+- [분할수](partitions.md)
 - [Hecke 작용소와 새형식](hecke-operators.md)
 - [theta 급수](theta-series.md)
 - [모듈러 곡선](modular-curves.md)

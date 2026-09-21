@@ -219,7 +219,7 @@ $$
 
 ## 선수지식
 
-- [p 진수와 부치](p-adic-numbers.md)
+- [p 진수](p-adic-numbers.md)
 - [유체론](class-field-theory.md)
 
 ## 더 알아보기

@@ -143,7 +143,7 @@ Pollack–Stevens 알고리즘은 Sage 에 있다. 입력은 타원곡선과 소
 ## 선수지식
 
 - [모듈러 기호](modular-symbols.md)
-- [p 진수와 부치](p-adic-numbers.md)
+- [p 진수](p-adic-numbers.md)
 
 ## 더 알아보기
 

@@ -145,7 +145,7 @@ crank 의 모멘트 $\sum_m m^{2k}M(m,n)$ 이 rank 의 모멘트보다 크다는
 
 ## 선수지식
 
-- [분할수와 원법](partitions.md)
+- [분할수](partitions.md)
 - [Mock 모듈러 형식과 Zwegers 이론](mock-modular-forms.md)
 
 ## 더 알아보기

@@ -144,7 +144,7 @@ Eisenstein 다항식 $x^n+pa_{n-1}x^{n-1}+\dots+pa_0$ ( $p\nmid a_0$ ) 의 다�
 
 ## 선수지식
 
-- [p 진수와 부치](p-adic-numbers.md)
+- [p 진수](p-adic-numbers.md)
 
 ## 더 알아보기
 
