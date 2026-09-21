@@ -62,7 +62,7 @@ graph TD
 - [등각사상](conformal-mapping.md): Möbius 변환, Schwarz 보조정리, Riemann 사상정리, Schwarz–Christoffel 공식
 - [Riemann 곡면과 균일화 정리](riemann-surfaces.md): 다가함수를 단일가치로 만드는 곡면, 구면·평면·원판의 삼분법
 
-## 다른 분야에서의 쓰임
+## 해석적 수론
 
 - [감마 함수와 Stirling 근사](gamma-function.md): 함수방정식을 거꾸로 읽어 얻는 유리형 확장과 점근전개
 - [Riemann zeta 함수](riemann-zeta.md): Euler 곱, 함수방정식, 임계띠의 영점

@@ -58,7 +58,7 @@ graph TD
 - [측도변환](change-of-measure.md): Radon–Nikodym 도함수로서의 우도비, 중요도 표본추출
 - [유계변동 함수](bounded-variation.md): Jordan 분해, 절대연속과 미적분의 기본정리, Cantor 함수
 
-## 다른 분야에서의 쓰임
+## 확률론과 최적수송
 
 - [확률변수](random-variables.md): 가측함수로서의 확률변수, 적분으로서의 기댓값
 - [조건부 기댓값](conditional-expectation.md): Radon–Nikodym 정리로 정의하는 부분 $\sigma$ 대수 위의 사영

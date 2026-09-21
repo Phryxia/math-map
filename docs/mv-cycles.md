@@ -124,7 +124,7 @@ MV 순환이 주는 것은 기저이지 표준적인 하나의 기저가 아니�
 
 $\overline{\mathrm{Gr}^\lambda}$ 는 일반적으로 특이점을 갖고, 그 특이점의 성격이 표현론의 자료로 읽힌다. $\mathcal{IC}$ 층의 국소 코호몰로지 차원이 [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)(아핀판)으로 주어지고, MV 순환은 그 층을 자른 조각이다. 특이점을 푸는 문제와 무게 중복도를 세는 문제가 같은 대상의 두 면이다.
 
-## 다른 분야에서의 쓰임
+## 게이지 이론, 적분가능계, 산술
 
 - **Coulomb 가지와 대칭 쌍대성**: 물리에서 나온 3 차원 게이지 이론의 Coulomb 가지가 $\mathrm{Gr}\_G$ 의 변종으로 구성되고, MV 이론의 기법이 그대로 쓰인다.
 - **적분가능계**: MV 다면체의 조합론이 Berenstein–Zelevinsky 의 tropical 자료, 나아가 cluster 대수와 이어진다.
