@@ -153,19 +153,14 @@ $$
 
 $\Phi\subset\mathfrak h^\ast$ 가 **근계**이고 각 $\dim\mathfrak g_\alpha=1$ 이다. 근계는 Weyl 군이 작용하는 조합적 대상이라 조합론으로 분류되며, 단순근 사이의 각도를 그린 그래프가 **Dynkin 도표**다.
 
-```mermaid
-graph TD
-  G["복소 단순 Lie 대수"] --> A["A_n = sl(n+1)"]
-  G --> B["B_n = so(2n+1)"]
-  G --> C["C_n = sp(2n)"]
-  G --> D["D_n = so(2n)"]
-  G --> E["예외형 5 개"]
-  E --> E6["E_6"]
-  E --> E7["E_7"]
-  E --> E8["E_8"]
-  E --> F4["F_4"]
-  E --> G2["G_2"]
-```
+네 무한 계열은 고전 Lie 대수이고, 예외형 다섯 $E_6,E_7,E_8,F_4,G_2$ 는 계열 밖에 홀로 선다.
+
+| 계열 | Lie 대수 | 차원 |
+| --- | --- | --- |
+| $A_n$ | $\mathfrak{sl}\_{n+1}$ | $n(n+2)$ |
+| $B_n$ | $\mathfrak{so}\_{2n+1}$ | $n(2n+1)$ |
+| $C_n$ | $\mathfrak{sp}\_{2n}$ | $n(2n+1)$ |
+| $D_n$ | $\mathfrak{so}\_{2n}$ | $n(2n-1)$ |
 
 $E_8$ 은 248 차원이고 근이 240 개다. 그 240 개의 근이 이루는 [격자](lattices.md)가 8 차원 [구 채우기](sphere-packing.md)의 최적 격자이며, [theta 급수](theta-series.md)에서 $\Theta_{E_8}=E_4$ 로 나타나는 대상이다.
 

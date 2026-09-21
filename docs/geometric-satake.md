@@ -110,24 +110,6 @@ $$
 
 Künneth 공식이 $H^\ast(\mathcal F\ast\mathcal G)\cong H^\ast(\mathcal F)\otimes H^\ast(\mathcal G)$ 를 주므로 이것이 텐서 함자이고, 그 텐서 자기동형군이 $\widehat G$ 다. 쌍대군은 아핀 Grassmann 다양체의 코호몰로지의 대칭군이다.
 
-```mermaid
-graph TD
-  G["환원군 G 와 고리군 G(F)"] --> GR["Gr_G = G(F)/G(O)"]
-  GR --> ORB["G(O) 궤도 Gr^λ<br/>λ ∈ X_*(T)^+"]
-  ORB --> IC["IC_λ : 교차 코호몰로지 층"]
-  IC --> PERV["Perv_{G(O)}(Gr_G)<br/>아벨 범주"]
-  CONV["합성곱 F * G = m_*(F ⊠̃ G)"] --> PERV
-  FUS["융합 (BD Grassmann)<br/>두 점의 충돌"] --> COMM["교환 제약"]
-  COMM --> TENS["텐서 범주"]
-  PERV --> TENS
-  H["올림자 H^*(Gr_G, −)"] --> TANN["Tannaka 재구성"]
-  TENS --> TANN
-  TANN --> DUAL["Ĝ = Aut^⊗(H^*)"]
-  DUAL --> REP["Perv ≃ Rep(Ĝ)"]
-  REP --> FUN["함수-층 사전<br/>→ 고전적 Satake 동형"]
-  DUAL --> LANG["기하학적 Langlands 강령"]
-```
-
 # 정의
 
 ## 아핀 Grassmann 다양체
