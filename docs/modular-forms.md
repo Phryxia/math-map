@@ -107,7 +107,7 @@ $$
 \Delta=\frac{E_4^3-E_6^2}{1728}=q\prod_{n\ge1}(1-q^n)^{24}=\sum_{n\ge1}\tau(n)q^n
 $$
 
-은 $\mathbb H$ 에서 영점을 갖지 않는다. 계수 $\tau(n)$ 이 Ramanujan 의 tau 함수다.
+은 $\mathbb H$ 에서 영점을 갖지 않는다. 계수 $\tau(n)$ 이 Ramanujan 의 $\tau$ 함수다.
 
 **$j$ 불변량.** $j=E_4^3/\Delta$ 는 무게 0 이고 $\mathbb H$ 에서 정칙이지만 첨점에서 극을 갖는다. $\mathrm{SL}\_2(\mathbb Z)$ 불변 함수의 체를 생성하며 격자의 동형류를 완전히 분류한다.
 

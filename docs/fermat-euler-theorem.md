@@ -21,7 +21,7 @@ graph LR
 
 # 정의
 
-$n\ge2$ 에 대해 **Euler phi 함수** $\varphi(n)$ 은 $n$ 이하이면서 $n$ 과 서로 소인 양의 정수의 개수다.
+$n\ge2$ 에 대해 **Euler 함수** $\varphi(n)$ 은 $n$ 이하이면서 $n$ 과 서로 소인 양의 정수의 개수다.
 
 $$
 \varphi(n)=\char35{}\lbrace\thinspace 1\le k\le n : \gcd(k,n)=1\thinspace\rbrace
