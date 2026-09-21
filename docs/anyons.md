@@ -120,7 +120,7 @@ $\nu=5/2$ 의 Moore–Read 상태는 준입자가 Ising 유형일 것으로 예�
 
 ## 매듭 불변량 계산
 
-땋임 표현의 대각합이 매듭 불변량이다. Fibonacci 애니온에서 그 값은 Jones 다항식을 1 의 5 제곱근에서 평가한 것이며, Reshetikhin–Turaev 불변량의 특수한 경우다. 방향을 뒤집으면 Jones 다항식의 근사 계산이 BQP(bounded-error quantum polynomial time) 완전 문제라는 Freedman–Kitaev–Wang 의 정리가 된다.[^1]
+땋임 표현의 대각합이 매듭 불변량이다. Fibonacci 애니온에서 그 값은 Jones 다항식을 1 의 5 제곱근에서 평가한 것이며, [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)의 특수한 경우다. 방향을 뒤집으면 Jones 다항식의 근사 계산이 BQP(bounded-error quantum polynomial time) 완전 문제라는 Freedman–Kitaev–Wang 의 정리가 된다.[^1]
 
 [^1]: 개관은 C. Nayak, S. Simon, A. Stern, M. Freedman, S. Das Sarma, *Non-Abelian anyons and topological quantum computation*, Rev. Mod. Phys. **80** (2008), 1083. 보편성 증명은 M. Freedman, M. Larsen, Z. Wang, *A modular functor which is universal for quantum computation*, Comm. Math. Phys. **227** (2002). 매듭 불변량과의 동치는 M. Freedman, A. Kitaev, Z. Wang, *Simulation of topological field theories by quantum computers*, Comm. Math. Phys. **227** (2002). 범주론적 배경은 B. Bakalov, A. Kirillov, *Lectures on Tensor Categories and Modular Functors* (2001).
 

@@ -131,7 +131,7 @@ $$
 
 ## 대수와 정수론
 
-[군](groups.md)의 Lagrange 정리는 잉여류가 같은 크기라는 나눗셈 원리다. [군 작용](group-actions.md)에서 궤도-안정자 정리도 같은 형태이며, Burnside 보조정리는 대칭을 무시한 셈에 쓰인다. [정수의 합동](modular-arithmetic.md)에서 이항계수의 소수 나눗셈 성질(Kummer, Lucas 정리)이 나온다.
+[군](groups.md)의 Lagrange 정리는 잉여류가 같은 크기라는 나눗셈 원리다. [군 작용](group-actions.md)에서 궤도-안정자 정리도 같은 형태이며, [Burnside 보조정리](burnside-lemma.md)는 대칭을 무시한 셈에 쓰인다. [정수의 합동](modular-arithmetic.md)에서 이항계수의 소수 나눗셈 성질(Kummer, Lucas 정리)이 나온다.
 
 [^1]: MIT OpenCourseWare, Mathematics for Computer Science (6.042J), Chapter 15 "Cardinality Rules". https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-spring-2015/
 

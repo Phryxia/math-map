@@ -177,7 +177,7 @@ $$
 
 ## 수체와 함수체의 평행
 
-함수체 $\mathbb F_q(X)$ 에도 자리와 아델이 있다. 자리는 곡선의 닫힌 점이고, $\mathbb A/K$ 의 콤팩트성은 곡선의 사영성에 해당하며, 곱 공식은 인자의 차수가 0 이라는 사실이 된다. $\mathbb A_K^{\times}/K^\times\mathcal O^\times$ 가 Picard 군이고, 유수의 유한성이 Picard 군의 유한생성성이 된다.
+함수체 $\mathbb F_q(X)$ 에도 자리와 아델이 있다. 자리는 곡선의 닫힌 점이고, $\mathbb A/K$ 의 콤팩트성은 곡선의 사영성에 해당하며, 곱 공식은 인자의 차수가 0 이라는 사실이 된다. $\mathbb A_K^{\times}/K^\times\mathcal O^\times$ 가 [Picard 군](picard-group.md)이고, 유수의 유한성이 Picard 군의 유한생성성이 된다.
 
 아델을 쓰면 수체와 함수체의 정리를 같은 진술로 적을 수 있다. 함수체 쪽에서는 그 진술이 곡선의 대수기하로 증명된다.
 

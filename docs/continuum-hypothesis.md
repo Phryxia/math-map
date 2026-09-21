@@ -68,7 +68,7 @@ CH 는 ZFC 에서 반증 불가능하다. 중간 크기 집합의 존재는 ZFC 
 
 기수 붕괴는 일어나지 않는다. 조건이 유한이므로 $P$ 는 가산 반사슬 조건을 만족하고, $M$ 의 기수가 $M[G]$ 에서도 기수로 남는다. 따라서 $M[G]$ 에서 실수는 적어도 알레프 둘 개이고 CH 는 거짓이다.
 
-강제법은 이후 집합론의 표준 기법이 되었다. Boolean 값 모형으로 다시 쓰면 [Boolean algebra](boolean-algebras.md) 위의 값매김이 되어 순수 대수적으로 다룰 수 있다.
+강제법은 이후 집합론의 표준 기법이 되었다. [Boolean 값 모형](boolean-valued-models.md)으로 다시 쓰면 [Boolean algebra](boolean-algebras.md) 위의 값매김이 되어 순수 대수적으로 다룰 수 있다.
 
 ## 연속체 크기의 자유도
 

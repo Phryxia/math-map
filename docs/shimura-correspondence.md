@@ -39,7 +39,7 @@ $$
 
 ## 대응의 근거
 
-Shimura 의 증명은 Rankin–Selberg 적분으로 위 Dirichlet 급수의 해석적 성질을 확보하고 Weil 의 역정리를 적용한다.
+Shimura 의 증명은 [Rankin–Selberg 적분](rankin-selberg.md)으로 위 Dirichlet 급수의 해석적 성질을 확보하고 Weil 의 역정리를 적용한다.
 
 Shintani 와 Niwa 는 theta 올림으로 다른 증명을 주었다. 쌍대쌍 $(\mathrm{Mp}\_2,\mathrm{PGL}\_2)$ 에 Weil 표현을 제한하면 두 군의 표현 사이에 사전이 생기고, 그 사전이 Shimura 대응이다.
 

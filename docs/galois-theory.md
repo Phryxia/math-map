@@ -130,7 +130,7 @@ $S_n$ 은 $n\ge 5$ 에서 가해가 아니다. $A_n$ 이 $n\ge 5$ 에서 비가�
 
 ## 대수적 수론
 
-$\mathbb{Q}$ 의 Galois 확대에서 [소수](primes.md)의 분해 양상이 Galois 군의 부분군으로 기술된다. 각 소수에 Frobenius 켤레류가 대응하고, class field theory 와 Chebotarev 밀도 정리가 이 대응을 쓴다.
+$\mathbb{Q}$ 의 Galois 확대에서 [소수](primes.md)의 분해 양상이 Galois 군의 부분군으로 기술된다. 각 소수에 Frobenius 켤레류가 대응하고, class field theory 와 [Chebotarev 밀도 정리](chebotarev.md)가 이 대응을 쓴다.
 
 ## 작은 차수의 판정
 

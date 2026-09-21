@@ -10,7 +10,7 @@ $$
 \Theta=\lim_{n\to\infty}\frac{\log\bigl(\gamma^{p^n}\bigr)}{p^n\log\chi(\gamma)}
 $$
 
-곧 **Sen 작용소**다. $V$ 가 Hodge–Tate 인 것과 $\Theta$ 가 대각화 가능하고 고유값이 정수인 것이 동치이며, 그때 고유값이 정확히 Hodge–Tate 무게다. $\Gamma$ 가 $p$ 진 Lie 군이므로 군 작용을 Lie 대수 작용으로 미분하는 구도가 그대로 쓰인다.
+곧 **Sen 작용소**다. $V$ 가 Hodge–Tate 인 것과 $\Theta$ 가 대각화 가능하고 고유값이 정수인 것이 동치이며, 그때 고유값이 정확히 Hodge–Tate 무게다. $\Gamma$ 가 $p$ 진 Lie 군이므로 군 작용을 [Lie 대수](lie-algebras.md) 작용으로 미분하는 구도가 그대로 쓰인다.
 
 판정이 선형대수가 되어 계산 가능해지고, Hodge–Tate 가 아닌 표현에도 $\Theta$ 가 존재하므로 **일반화된 Hodge–Tate 무게**라는 개념이 생긴다. $p$ 진 자기동형 형식의 족에서 무게가 정수 아닌 $p$ 진수로 변할 때도 Sen 작용소는 정의된다.
 
@@ -102,7 +102,7 @@ $\Theta$ 는 Hodge–Tate 무게만 본다. $B_{\mathrm{dR}}$ 이 보는 여과�
 
 ## de Rham 성의 검사
 
-Fontaine–Mazur 추측 쪽 작업에서 표현이 기하에서 오는지 판정하려면 de Rham 성을 확인해야 한다. $\Theta$ 의 고유값이 정수가 아니거나 대각화되지 않으면 즉시 탈락이므로, 계산 가능한 필요조건으로 쓰인다.
+[Fontaine–Mazur 추측](fontaine-mazur.md) 쪽 작업에서 표현이 기하에서 오는지 판정하려면 de Rham 성을 확인해야 한다. $\Theta$ 의 고유값이 정수가 아니거나 대각화되지 않으면 즉시 탈락이므로, 계산 가능한 필요조건으로 쓰인다.
 
 ## 국소 Langlands 의 $p$ 진 판
 

@@ -169,7 +169,7 @@ Kummer 의 기준, 곧 $p\nmid B_2B_4\cdots B_{p-3}$ 이면 $p\nmid h$ 라는 �
 
 ## Jacobi 합과 곡선의 점 개수
 
-Gauss 합의 분해는 Jacobi 합 $J(\chi,\psi)=g(\chi)g(\psi)/g(\chi\psi)$ 의 분해를 준다. Jacobi 합은 [유한체](finite-fields.md) 위의 Fermat 곡선 $x^{n}+y^{n}=1$ 의 점 개수를 세는 Weil 수이고, 그 절댓값이 $\sqrt q$ 라는 사실이 Weil 추측의 가장 이른 사례다. Stickelberger 의 분해는 그 Weil 수의 소 아이디얼별 지수까지 주어 곡선의 Newton 다각형과 Hodge 수를 조합적으로 계산하게 한다.
+Gauss 합의 분해는 Jacobi 합 $J(\chi,\psi)=g(\chi)g(\psi)/g(\chi\psi)$ 의 분해를 준다. Jacobi 합은 [유한체](finite-fields.md) 위의 Fermat 곡선 $x^{n}+y^{n}=1$ 의 점 개수를 세는 Weil 수이고, 그 절댓값이 $\sqrt q$ 인 것이 Weil 추측의 가장 이른 사례다. Stickelberger 의 분해는 그 Weil 수의 소 아이디얼별 지수까지 주어 곡선의 [Newton 다각형](newton-polygon.md)과 Hodge 수를 조합적으로 계산하게 한다.
 
 ## 류군 계산
 

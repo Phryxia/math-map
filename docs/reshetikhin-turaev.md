@@ -182,7 +182,7 @@ $\tau$ 를 정확히 계산하는 것은 어렵다. $\mathrm{SU}(2)\_k$ 에서 $
 ## 그 다음
 
 - **Ohtsuki 급수**: $q=e^{h}$ 로 두고 $h$ 에 대해 전개하면 유한형 불변량(Vassiliev 이론의 3 차원판)의 생성함수가 나온다. 1 차항이 [Casson 불변량](casson-invariant.md)이다.
-- **범주화**: Khovanov 호몰로지가 Jones 다항식을 사슬복합체의 Euler 지표로 올려놓듯, $\tau$ 를 범주화하는 시도가 이어지고 있다.
+- **범주화**: [Khovanov 호몰로지](khovanov-homology.md)가 Jones 다항식을 사슬복합체의 [Euler 지표](euler-characteristic.md)로 올려놓듯, $\tau$ 를 범주화하는 시도가 이어지고 있다.
 - **기하학적 대응**: 점근에서 나타나는 평탄 접속의 모듈라이가 [기하학적 Langlands](geometric-langlands.md) 쪽 이야기와 같은 재료를 쓴다.
 
 # 연관 문서
