@@ -70,7 +70,7 @@ $$
 
 - 실수의 1차 이론의 결정 절차가 정의 가능 집합의 모양에서 나온다. 양화사 소거가 결정성을 주고, o-최소성이 그 결과를 기하적 진술로 옮긴다.
 - 실해석적 기하의 유한성 정리를 1차 논리로 서술한다. 준해석적 집합의 성분 유한성과 위상적 사소성이 셀 분해의 따름정리다.
-- Pila–Wilkie 의 셈 정리가 o-최소 집합 위의 유리점 개수를 제한하고, 이것이 Manin–Mumford 추측과 André–Oort 추측의 증명에 쓰인다. 초월적 부분의 유리점이 드물다는 진술을 차원 논증으로 얻는다.
+- [Pila–Wilkie 의 셈 정리](pila-wilkie-theorem.md)가 o-최소 집합 위의 유리점 개수를 제한하고, 이것이 Manin–Mumford 추측과 André–Oort 추측의 증명에 쓰인다. 초월적 부분의 유리점이 드물다는 진술을 차원 논증으로 얻는다.
 - [Lie 군](lie-groups.md)의 지수사상이 정의 가능한 구조에서 부분군의 분류가 유한 자료로 환원된다. $\exp$ 를 더한 구조의 o-최소성이 그 전제다.
 
 [^1]: Lou van den Dries, *Tame Topology and O-minimal Structures*, Cambridge University Press, London Mathematical Society Lecture Note Series 248 (1998), Ch. 3. 셀 분해 정리와 단조성 정리, 차원 이론이 이 장에 있다.
@@ -85,6 +85,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Pila–Wilkie 정리](pila-wilkie-theorem.md)
 
 #logic #foundations #algebra #topology
