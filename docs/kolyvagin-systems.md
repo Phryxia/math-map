@@ -202,7 +202,7 @@ $$
 $T$ 가 잔여 표현의 상이 충분히 크다는 조건을 만족한다고 하자. Mazur–Rubin 의 결론은 셋이다.
 
 - $\chi(\mathcal F)=0$ 이면 $\mathbf{KS}(T,\mathcal F,\mathcal P)=0$ 이다. 정합 조건이 너무 많아 $0$ 만 살아남는다.
-- $\chi(\mathcal F)=1$ 이면 $\mathbf{KS}(T,\mathcal F,\mathcal P)$ 는 **자유 순위 $1$ 인** $R$ 가군이다.
+- $\chi(\mathcal F)=1$ 이면 $\mathbf{KS}(T,\mathcal F,\mathcal P)$ 는 자유 순위 $1$ 인 $R$ 가군이다.
 - $\chi(\mathcal F)\ge2$ 이면 가군이 매우 크고, 원소 하나가 나머지를 결정하지 못한다.
 
 $\chi=1$ 이면 서로 다른 Euler 계에서 나온 Kolyvagin 계가 서로 상수배다. 어떤 Euler 계를 썼는가가 사라지고 그 계가 $p$ 로 몇 번 나누어지는가만 남는다.
