@@ -57,6 +57,7 @@ graph TD
 - [기수](cardinality.md): 대각선 논법과 무한의 크기
 - [ZFC 공리계](zfc-axioms.md) → [서수](ordinals.md) → [선택공리](axiom-of-choice.md), [연속체 가설과 독립성](continuum-hypothesis.md) → [강제법](forcing.md) → [Martin 의 공리](martins-axiom.md) → [Suslin 문제](suslin-problem.md), [Boolean 값 모형](boolean-valued-models.md)
 - [무작위 실수 강제법](random-real-forcing.md): 측도 대수를 조건으로 쓰는 강제법, Cohen 실수와의 대비
+- [기수 불변량](cardinal-characteristics.md): 영집합과 제1범주 아이디얼의 네 기수, Cichoń 도표
 - [구성가능 우주](constructible-universe.md): 정의 가능한 부분집합만 쌓은 내부 모형, GCH 와 선택공리가 정리가 된다
 
 ## 계산 가능성
