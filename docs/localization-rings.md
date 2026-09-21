@@ -168,7 +168,7 @@ $$
 
 이고, 극대 아이디얼은 $p\mathbb Z_{(p)}$ 이고 잉여체는 $\mathbb Z/p\mathbb Z$ 라는 [유한체](finite-fields.md)다. 이 환의 모든 0이 아닌 아이디얼은 $p^n\mathbb Z_{(p)}$ 꼴이므로 이산 부치환(discrete valuation ring)이 되고, 이는 정수의 $p$ 진 자릿수 전개와 $p$ 진 부치 $v_p$ 의 대수적 기반이다([소수](primes.md)).
 
-반대 극단으로 $S=\mathbb Z\setminus\lbrace 0\rbrace$ 을 취하면 유리수체 $\mathbb Q$ 가 나오고, $S=\lbrace 1,2,4,\dots\rbrace$ 를 취하면 이진 유리수의 환이 나온다. 서로 다른 $p$ 에 대한 $\mathbb Z_{(p)}$ 들의 교집합이 $\mathbb Z$ 라는 사실은 위 국소-대역 원리의 가장 익숙한 실례다. [합동식](modular-arithmetic.md)과 [중국인의 나머지 정리](chinese-remainder-theorem.md)가 소수별 정보를 모으는 것과 같은 구도다.
+반대 극단으로 $S=\mathbb Z\setminus\lbrace 0\rbrace$ 을 취하면 유리수체 $\mathbb Q$ 가 나오고, $S=\lbrace 1,2,4,\dots\rbrace$ 를 취하면 이진 유리수의 환이 나온다. 서로 다른 $p$ 에 대한 $\mathbb Z_{(p)}$ 들의 교집합이 $\mathbb Z$ 인 것이 위 국소-대역 원리의 가장 익숙한 실례다. [합동식](modular-arithmetic.md)과 [중국인의 나머지 정리](chinese-remainder-theorem.md)가 소수별 정보를 모으는 것과 같은 구도다.
 
 ## 다항식환과 유리함수
 
