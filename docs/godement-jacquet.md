@@ -192,7 +192,7 @@ $c_{p^m}=\sum_{k=0}^m\alpha^k\beta^{m-k}$ 는 $\mathrm{GL}\_2(\mathbb C)$ 의 $m
 
 ## 선수지식
 
-- [논문: Fourier Analysis in Number Fields and Hecke's Zeta-Functions](tate-thesis.md)
+- [Tate 의 논문](tate-thesis.md)
 - [Langlands 강령](langlands-program.md)
 
 ## 더 알아보기

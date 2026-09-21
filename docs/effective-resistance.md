@@ -151,7 +151,7 @@ $$
 
 ## 더 알아보기
 
-- [논문: Graph Sparsification by Effective Resistances](spectral-sparsification.md)
+- [스펙트럼 희소화](spectral-sparsification.md)
 - [Random walk와 전기 네트워크](random-walks.md)
 
 #graph_theory #linear_algebra

@@ -1,4 +1,4 @@
-# 논문: Fourier Analysis in Number Fields and Hecke's Zeta-Functions
+# Tate 의 논문
 
 # 개요
 

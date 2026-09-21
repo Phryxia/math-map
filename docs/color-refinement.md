@@ -141,6 +141,6 @@ $C_6$ 와 $2K_3$ 는 모든 정점이 초기 색이 같고 차수가 2 다. 귀�
 
 ## 더 알아보기
 
-- [논문: How Powerful are Graph Neural Networks?](gnn-expressivity.md)
+- [그래프 신경망의 표현력](gnn-expressivity.md)
 
 #graph_theory #algorithms

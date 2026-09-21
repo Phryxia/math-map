@@ -76,7 +76,7 @@ graph TD
 - [Riemann 가설](riemann-hypothesis.md): 영점의 실수부와 소수 계량 함수의 오차, GRH 의 응용
 - [Poisson 합 공식](poisson-summation.md), [Mellin 변환과 Perron 공식](mellin-transform.md), [Euler–Maclaurin 공식](euler-maclaurin.md): 해석적 도구
 - [Bernoulli 수와 von Staudt–Clausen 정리](bernoulli-numbers.md) → [Stickelberger 원소와 Gauss 합](stickelberger.md)
-- [논문: Tate 의 박사논문](tate-thesis.md): $\zeta$ 함수의 아델적 증명
+- [Tate 의 논문](tate-thesis.md): $\zeta$ 함수의 아델적 증명
 
 ## 모듈러 형식
 

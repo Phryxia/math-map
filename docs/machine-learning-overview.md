@@ -66,7 +66,7 @@ graph TD
 
 ## 그래프 학습
 
-- [논문: How Powerful are Graph Neural Networks?](gnn-expressivity.md) — 메시지 전달 신경망의 구별 능력이 Color refinement 를 넘지 못한다
+- [그래프 신경망의 표현력](gnn-expressivity.md) — 메시지 전달 신경망의 구별 능력이 Color refinement 를 넘지 못한다
 
 # 연관 문서
 

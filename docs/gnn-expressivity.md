@@ -1,4 +1,4 @@
-# 논문: How Powerful are Graph Neural Networks?
+# 그래프 신경망의 표현력
 
 # 개요
 

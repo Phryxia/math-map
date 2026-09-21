@@ -1,4 +1,4 @@
-# 논문: Graph Sparsification by Effective Resistances
+# 스펙트럼 희소화
 
 # 개요
 

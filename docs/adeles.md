@@ -190,7 +190,7 @@ $$
 
 ## 더 알아보기
 
-- [논문: Fourier Analysis in Number Fields and Hecke's Zeta-Functions](tate-thesis.md)
+- [Tate 의 논문](tate-thesis.md)
 - [Brauer 군과 Hasse 원리](brauer-groups.md)
 
 #number_theory #field_theory #analysis

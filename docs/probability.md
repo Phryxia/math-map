@@ -112,7 +112,7 @@ $$
 ## 더 알아보기
 
 - [Shannon 엔트로피](entropy.md)
-- [논문: Graph Sparsification by Effective Resistances](spectral-sparsification.md)
+- [스펙트럼 희소화](spectral-sparsification.md)
 - [Bayes 정리](bayes.md)
 - [측도](measure.md)
 - [확률변수](random-variables.md)

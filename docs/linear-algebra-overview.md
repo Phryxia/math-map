@@ -49,7 +49,7 @@ graph TD
 
 ## 그래프의 스펙트럼
 
-- [그래프 Laplacian](graph-laplacian.md) → [유효저항](effective-resistance.md) → [논문: Graph Sparsification by Effective Resistances](spectral-sparsification.md)
+- [그래프 Laplacian](graph-laplacian.md) → [유효저항](effective-resistance.md) → [스펙트럼 희소화](spectral-sparsification.md)
 - [Expander 그래프와 스펙트럼 간극](expander-graphs.md): 두 번째 고윳값이 연결성을 잰다
 
 ## 무한차원

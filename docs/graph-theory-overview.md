@@ -63,7 +63,7 @@ graph TD
 
 - [그래프 동형](graph-isomorphism.md): 라벨을 잊은 동일성과 그 판정 문제
 - [Color refinement](color-refinement.md): 1차원 Weisfeiler–Leman 알고리즘과 그 한계
-- [논문: How Powerful are Graph Neural Networks?](gnn-expressivity.md): 메시지 전달 신경망의 구별력이 색 세분과 같다
+- [그래프 신경망의 표현력](gnn-expressivity.md): 메시지 전달 신경망의 구별력이 색 세분과 같다
 
 ## 스펙트럼 그래프 이론
 
@@ -71,7 +71,7 @@ graph TD
 - [유효저항](effective-resistance.md): 그래프를 전기 회로로 읽는다
 - [Expander 그래프와 스펙트럼 간극](expander-graphs.md): 성김과 강한 연결성의 공존
 - [Ramanujan 그래프의 명시적 구성](ramanujan-graphs.md): 스펙트럼 간극의 최적 경계를 달성하는 구성
-- [논문: Graph Sparsification by Effective Resistances](spectral-sparsification.md): 유효저항 표본추출로 간선 수를 줄인다
+- [스펙트럼 희소화](spectral-sparsification.md): 유효저항 표본추출로 간선 수를 줄인다
 
 # 연관 문서
 

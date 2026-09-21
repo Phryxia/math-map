@@ -166,7 +166,7 @@ Deligne 은 국소 근 수가 Galois 표현의 자료만으로 정해지는 방�
 
 ## 선수지식
 
-- [논문: Fourier Analysis in Number Fields and Hecke's Zeta-Functions](tate-thesis.md)
+- [Tate 의 논문](tate-thesis.md)
 - [Dirichlet 지표와 L 함수](dirichlet-l-functions.md)
 
 ## 더 알아보기
