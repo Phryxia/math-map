@@ -112,6 +112,7 @@ $$
 
 ## 더 알아보기
 
+- [Tutte 다항식](tutte-polynomial.md)
 - [최소 신장트리](minimum-spanning-tree.md)
 
 #combinatorics #graph_theory #linear_algebra

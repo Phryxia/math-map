@@ -49,6 +49,7 @@ graph TD
 ## 색칠과 매칭
 
 - [그래프 색칠](graph-coloring.md): 채색수, 탐욕 상한, 4색 정리
+- [Tutte 다항식](tutte-polynomial.md): 채색 다항식과 신장트리 개수를 함께 거두는 두 변수 불변량
 - [매칭과 Hall 정리](matchings.md): 이분그래프의 완전매칭 조건
 - [완전그래프와 강한 완전그래프 정리](perfect-graphs.md): 채색수와 클릭 수가 모든 유도부분그래프에서 같은 그래프
 
