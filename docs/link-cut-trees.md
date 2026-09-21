@@ -153,7 +153,7 @@ Link-cut tree가 처음 만들어진 동기가 이것이다[^1]. Dinic 류 알�
 
 그 결과 blocking flow 한 단계가 $O(E\log V)$ 가 되고 전체가 $O(VE\log V)$ 가 된다. 같은 아이디어가 [네트워크 흐름과 최대유량 최소절단 정리](network-flow.md)의 여러 변형과 최소비용 유량에도 쓰인다.
 
-## 그 밖의 쓰임
+## 트리 경로 질의와 동적 그래프 알고리즘
 
 - **트리 경로 질의의 온라인 버전.** 트리 모양이 고정이면 heavy-light 분해로 충분하지만, 간선이 바뀌면 link-cut tree가 필요하다. **LCA**(lowest common ancestor)도 `access`의 반환값으로 얻는다.
 - **동적 그래프 알고리즘의 부품.** 신장 forest를 link-cut tree로 유지하고 나머지 간선을 계층적으로 관리하는 방식이 [동적 연결성](dynamic-connectivity.md)과 동적 이중연결성 알고리즘의 표준 구성이다.
