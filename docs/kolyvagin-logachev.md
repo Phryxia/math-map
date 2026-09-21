@@ -2,7 +2,7 @@
 
 # 개요
 
-[Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)은 $L$ 함수의 $s=1$ 에서의 소멸 차수가 Mordell–Weil 군의 계수와 같다고 말한다. 이 추측에서 실제로 증명된 것은 **해석 순위가 0 이나 1 인 경우의 한쪽 방향**뿐이고, 그 증명이 Kolyvagin 의 정리다.
+[Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)은 $L$ 함수의 $s=1$ 에서의 소멸 차수가 Mordell–Weil 군의 계수와 같다고 말한다. 이 추측에서 실제로 증명된 것은 해석 순위가 0 이나 1 인 경우의 한쪽 방향뿐이고, 그 증명이 Kolyvagin 의 정리다.
 
 > **정리(Kolyvagin).** $E/\mathbb Q$ 가 타원곡선이고 $L(E,1)\ne0$ 이면 $E(\mathbb Q)$ 가 유한하고 $\text{Ш}(E/\mathbb Q)$ 도 유한하다. $L(E,1)=0$ 이고 $L'(E,1)\ne0$ 이면 $\mathrm{rank}E(\mathbb Q)=1$ 이고 Heegner 점이 유한 지표의 부분군을 생성한다.
 

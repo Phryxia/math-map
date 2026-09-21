@@ -137,7 +137,7 @@ $$
 \ell(\beta, \sigma^{2}) = -\frac{n}{2}\log(2\pi\sigma^{2}) - \frac{1}{2\sigma^{2}}\lVert y - X\beta \rVert^{2}
 $$
 
-이다. $\beta$ 에 대한 부분이 $-\mathrm{RSS}/(2\sigma^2)$ 뿐이므로 가능도 최대화가 잔차제곱합 최소화와 같은 문제이고, **최소제곱추정량이 정규오차 모형의 MLE**(maximum likelihood estimation)다. 분산에 대해서는 미분해서
+이다. $\beta$ 에 대한 부분이 $-\mathrm{RSS}/(2\sigma^2)$ 뿐이므로 가능도 최대화가 잔차제곱합 최소화와 같은 문제이고, 최소제곱추정량이 정규오차 모형의 MLE(maximum likelihood estimation)다. 분산에 대해서는 미분해서
 
 $$
 \hat\sigma^{2}\_{\mathrm{MLE}} = \frac{\mathrm{RSS}}{n}
