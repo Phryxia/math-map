@@ -85,6 +85,6 @@ $\mathrm{Gr}\_n$ 의 Schubert 세포 분할로 코호몰로지를 계산하고, 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)
 
 #algebraic_topology #topology #differential_geometry

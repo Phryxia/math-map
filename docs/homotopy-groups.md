@@ -92,6 +92,6 @@ $\pi_{n+k}(S^n)$ 은 $n\gt k+1$ 에서 $n$ 에 무관하고, 그 값을 $k$ 차 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)
 
 #algebraic_topology #topology #group_theory
