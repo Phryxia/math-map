@@ -75,17 +75,6 @@ $c$ 가 정의하는 확대가 $p$ 밖에서 불분기여야 류군의 원소가
 
 따라서 $c$ 는 $\mathbb Q(\mu_p)$ 의 $p$ 밖 불분기 확대를 주고, Galois 작용의 고유성분을 추적하면 그 확대의 류가 $A^{(\omega^{1-k})}$ 에 놓인다.
 
-```mermaid
-flowchart TD
-  BK["p | B_k"] --> CONST["E_k 의 상수항이 mod p 로 소멸"]
-  CONST --> CONG["Eisenstein 합동<br/>a_l = 1 + l^{k-1} mod p"]
-  CONG --> RED["rho_f mod p 가 가약"]
-  RED --> EXT["불분해 -> 비자명 코사이클 c"]
-  EXT --> UNR["p 밖 불분기 확대"]
-  UNR --> CL["A^{omega^{1-k}} != 0"]
-  ST["Stickelberger 소멸자"] -->|"반대 방향, 쉬움"| BK
-```
-
 # 정의
 
 ## 지표 성분
