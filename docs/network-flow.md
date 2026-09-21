@@ -52,7 +52,7 @@ $$
 \mathrm{cap}(S, T) \thickspace=\thickspace \sum_{\substack{e = (u,v) \in E \cr u \in S,\ v \in T}} c(e)
 $$
 
-로 정의한다. 역방향 간선은 세지 않는다는 점이 중요하다.
+로 정의한다. 역방향 간선은 세지 않는다.
 
 ## 잔여 그래프
 

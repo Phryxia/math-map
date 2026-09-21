@@ -28,7 +28,7 @@ $$
 F \approx G \thickspace:=\thickspace \exists R \thinspace\big[\thinspace \text{R is a bijection between } F \text{ and } G \thinspace\big]
 $$
 
-여기에 집합 개념이 전혀 쓰이지 않는다는 점이 중요하다. 필요한 것은 관계에 대한 양화뿐이다.
+여기에 집합 개념이 쓰이지 않는다. 필요한 것은 관계에 대한 양화뿐이다.
 
 ## Hume 원리
 
