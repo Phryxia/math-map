@@ -53,7 +53,7 @@ graph TD
 ## 확률과 통계
 
 - [대편차 원리](large-deviations.md) — 표본평균이 기댓값에서 벗어날 확률의 지수 감소율이 KL divergence 다
-- [지수족과 충분통계량](exponential-families.md) — 로그분배함수의 Legendre 변환이 KL divergence 를 준다
+- [지수족](exponential-families.md) — 로그분배함수의 Legendre 변환이 KL divergence 를 준다
 
 ## 최적화와 학습
 

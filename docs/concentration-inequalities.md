@@ -167,7 +167,7 @@ $$
 n \thickspace\ge\thickspace \frac{1}{2\varepsilon^2}\Big(\log |\mathcal{H}| + \log \frac{2}{\delta}\Big)
 $$
 
-이면 충분하다. 가설 개수에 로그로만 의존하므로 유한 가설류는 **PAC**(probably approximately correct) 학습 가능하다. 무한 가설류에서는 $\log|H|$ 자리에 VC(Vapnik–Chervonenkis) 차원이나 Rademacher 복잡도가 들어가고, 경험 과정 전체의 상한에 McDiarmid 부등식을 적용해 집중을 보장한다. [가설검정과 p-값](hypothesis-testing.md)이나 [신뢰구간](confidence-intervals.md)에서 분포 가정 없이 유한 표본 보장을 얻고 싶을 때도 같은 부등식을 쓴다.
+이면 충분하다. 가설 개수에 로그로만 의존하므로 유한 가설류는 **PAC**(probably approximately correct) 학습 가능하다. 무한 가설류에서는 $\log|H|$ 자리에 VC(Vapnik–Chervonenkis) 차원이나 Rademacher 복잡도가 들어가고, 경험 과정 전체의 상한에 McDiarmid 부등식을 적용해 집중을 보장한다. [가설검정](hypothesis-testing.md)이나 [신뢰구간](confidence-intervals.md)에서 분포 가정 없이 유한 표본 보장을 얻고 싶을 때도 같은 부등식을 쓴다.
 
 [^1]: Gábor Lugosi, Concentration-of-measure inequalities (lecture notes), https://www.upf.edu/documents/298368705/0/anu.pdf
 

@@ -78,7 +78,7 @@ $$
 
 ## 켤레사전분포
 
-사전분포족 $\mathcal{P}$ 가 가능도 $p(x \mid \theta)$ 에 대해 켤레(conjugate)라는 것은, 사전분포가 $\mathcal{P}$ 에 속하면 사후분포도 $\mathcal{P}$ 에 속한다는 뜻이다. 켤레족은 [지수족과 충분통계량](exponential-families.md)에서 나온다. 가능도가 자연모수 $\eta$ 의 지수족이면
+사전분포족 $\mathcal{P}$ 가 가능도 $p(x \mid \theta)$ 에 대해 켤레(conjugate)라는 것은, 사전분포가 $\mathcal{P}$ 에 속하면 사후분포도 $\mathcal{P}$ 에 속한다는 뜻이다. 켤레족은 [지수족](exponential-families.md)에서 나온다. 가능도가 자연모수 $\eta$ 의 지수족이면
 
 $$
 \pi(\eta \mid \tau, n_0) \thickspace\propto\thickspace \exp\negthinspace\big(\eta^{\top}\tau - n_0 A(\eta)\big)
@@ -145,7 +145,7 @@ $$
 | 사전정보 | 모형 선택에 암묵적으로만 | 사전분포로 명시 |
 | 다중비교 | 별도 보정 필요 | 계층모형의 축소로 흡수 |
 
-[가설검정과 p-값](hypothesis-testing.md)의 p-값은 "귀무가설이 참일 때 이만큼 극단적인 데이터가 나올 확률"이고, Bayes 쪽 대응물은 Bayes 인자
+[가설검정](hypothesis-testing.md)의 p-값은 "귀무가설이 참일 때 이만큼 극단적인 데이터가 나올 확률"이고, Bayes 쪽 대응물은 Bayes 인자
 
 $$
 BF_{10} = \frac{m_1(x)}{m_0(x)} = \frac{\int p(x\mid\theta)\thinspace\pi_1(\theta)\thinspace d\theta}{\int p(x\mid\theta)\thinspace\pi_0(\theta)\thinspace d\theta}

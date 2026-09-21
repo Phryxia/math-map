@@ -169,7 +169,7 @@ flowchart TD
 
 ## 선수지식
 
-- [계산 가능성과 정지 문제](computability.md)
+- [계산 가능성](computability.md)
 - [함수](functions.md)
 
 ## 더 알아보기

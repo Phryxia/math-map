@@ -6,13 +6,13 @@
 
 계산 이론의 갈래는 다섯 줄기다. 계산 모형과 결정 불가능성, 복잡도류와 환원, 구체적 알고리즘 설계, 그 알고리즘이 쓰는 자료구조, 그리고 계산 난해성을 안전성의 근거로 삼는 암호다. 최적화 쪽의 완화와 쌍대성은 [최적화 개관](optimization-overview.md)에, 논리 쪽의 대응은 [수학기초론 개관](foundations-overview.md)에 있다.
 
-시작은 [계산 가능성과 정지 문제](computability.md)다. 거기서 [P 대 NP 문제](p-np.md)로 가면 [NP-완전성](np-completeness.md)과 [근사 알고리즘](approximation-algorithms.md)을 거쳐 근사 불가능성으로 이어지고, [유한 오토마타](finite-automata.md)와 [Lambda calculus](lambda-calculus.md)로는 계산 모형의 두 갈래가 갈라진다.
+시작은 [계산 가능성](computability.md)다. 거기서 [P 대 NP 문제](p-np.md)로 가면 [NP-완전성](np-completeness.md)과 [근사 알고리즘](approximation-algorithms.md)을 거쳐 근사 불가능성으로 이어지고, [유한 오토마타](finite-automata.md)와 [Lambda calculus](lambda-calculus.md)로는 계산 모형의 두 갈래가 갈라진다.
 
 # 지도
 
 ```mermaid
 graph TD
-  PF["명제와 증명"] --> CB["계산 가능성과 정지 문제"]
+  PF["명제와 증명"] --> CB["계산 가능성"]
   CA["기수"] --> CB
   CB --> FA["유한 오토마타"]
   CB --> RT["Rice 정리"]
@@ -45,7 +45,7 @@ graph TD
 
 ## 계산가능성과 계산 모형
 
-- [계산 가능성과 정지 문제](computability.md): Turing 기계, 대각선 논법, 결정 불가능성
+- [계산 가능성](computability.md): Turing 기계, 대각선 논법, 결정 불가능성
 - [Turing 차수](turing-degrees.md): 결정 불가능성의 정도를 재는 순서, 도약과 Post 문제
 - [Rice 정리](rice-theorem.md): 자명하지 않은 의미론적 성질은 모두 결정 불가능
 - [유한 오토마타와 정규언어](finite-automata.md): 유한 상태 모형, Myhill–Nerode 정리, 펌핑 보조정리
@@ -113,7 +113,7 @@ graph TD
 
 ## 더 알아보기
 
-- [계산 가능성과 정지 문제](computability.md)
+- [계산 가능성](computability.md)
 - [동적 계획법](dynamic-programming.md)
 
 #computation #complexity #algorithms #cryptography #overview

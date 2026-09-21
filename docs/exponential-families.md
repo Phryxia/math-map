@@ -1,4 +1,4 @@
-# 지수족과 충분통계량
+# 지수족
 
 # 개요
 
@@ -147,7 +147,7 @@ $$
 - **Rao–Blackwell**: 불편추정량을 충분통계량으로 조건화하면 분산이 줄거나 같다. 좋은 추정량은 $T$ 의 함수 중에 있다.
 - **완비성과 Lehmann–Scheffé**: 최소 표현의 정칙 지수족에서 $T$ 는 완비충분통계량이고, $T$ 의 함수인 불편추정량이 유일한 UMVU(uniformly minimum variance unbiased) 추정량이다.
 - **Pitman–Koopman–Darmois 정리**: 지지집합이 모수에 의존하지 않는 매끄러운 모수족 중 표본크기와 무관하게 차원이 고정된 충분통계량을 갖는 것은 지수족뿐이다.
-- **검정**: 단조가능도비 성질에서 단측 검정의 UMP(uniformly most powerful) 성이 따른다([가설검정과 p-값](hypothesis-testing.md)).
+- **검정**: 단조가능도비 성질에서 단측 검정의 UMP(uniformly most powerful) 성이 따른다([가설검정](hypothesis-testing.md)).
 
 ## 켤레사전분포
 

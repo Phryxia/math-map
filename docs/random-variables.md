@@ -196,7 +196,7 @@ $n$ 명에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 �
 - [KL divergence](kl-divergence.md)
 - [최대가능도 추정](maximum-likelihood.md)
 - [Bayes 추론과 사후분포](bayesian-inference.md)
-- [가설검정과 p-값](hypothesis-testing.md)
+- [가설검정](hypothesis-testing.md)
 - [주성분 분석](principal-component-analysis.md)
 
 #probability #measure_theory #information_theory

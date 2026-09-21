@@ -131,7 +131,7 @@ $\mathrm{loop}$ 의 방정식은 모든 함수를 해로 받아들이므로 해�
 ## 선수지식
 
 - [Galois 연결과 완비 격자](galois-connections.md)
-- [계산 가능성과 정지 문제](computability.md)
+- [계산 가능성](computability.md)
 
 ## 더 알아보기
 

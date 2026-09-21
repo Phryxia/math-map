@@ -168,7 +168,7 @@ $4k+1$ 과 $4k+3$ 소수의 개수 비는 $1$ 로 수렴하지만 차이의 부�
 ## 선수지식
 
 - [소수 정리](prime-number-theorem.md)
-- [군의 표현과 지표](group-representations.md)
+- [군의 표현](group-representations.md)
 - [이차 상호법칙](quadratic-reciprocity.md)
 
 ## 더 알아보기

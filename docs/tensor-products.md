@@ -213,7 +213,7 @@ $$
 \chi_{V \otimes W}(g) = \chi_V(g)\thinspace \chi_W(g)
 $$
 
-이 성질이 [군의 표현과 지표](group-representations.md)에서 기약표현의 곱을 분해하는 계산의 출발점이며, 물리의 각운동량 합성 규칙이 같은 계산이다.
+이 성질이 [군의 표현](group-representations.md)에서 기약표현의 곱을 분해하는 계산의 출발점이며, 물리의 각운동량 합성 규칙이 같은 계산이다.
 
 ## 대수와 기하
 

@@ -146,7 +146,7 @@ $$
 
 ## 다른 추론 방식과의 관계
 
-가능도에 사전분포를 곱해 최대화하면 최대사후확률(MAP) 추정이 되고, 사전분포가 균등하면 MLE와 같다. 이 관계는 [Bayes 정리](bayes.md)에서 직접 읽힌다. 정규분포 사전분포를 쓴 MAP는 제곱 벌점(ridge)과 같고, Laplace 사전분포는 절댓값 벌점(lasso)과 같다. 가능도비를 검정통계량으로 쓰면 [가설검정과 p-값](hypothesis-testing.md)의 가능도비 검정이 되며, Wilks 정리가 그 점근분포를 준다.
+가능도에 사전분포를 곱해 최대화하면 최대사후확률(MAP) 추정이 되고, 사전분포가 균등하면 MLE와 같다. 이 관계는 [Bayes 정리](bayes.md)에서 직접 읽힌다. 정규분포 사전분포를 쓴 MAP는 제곱 벌점(ridge)과 같고, Laplace 사전분포는 절댓값 벌점(lasso)과 같다. 가능도비를 검정통계량으로 쓰면 [가설검정](hypothesis-testing.md)의 가능도비 검정이 되며, Wilks 정리가 그 점근분포를 준다.
 
 [^1]: Michal Kulich, "Maximum Likelihood Estimation Theory", NMST432 lecture notes, Charles University (정칙 조건, score, Fisher 정보, 점근 결과). https://www.karlin.mff.cuni.cz/~kulich/vyuka/glm/doc/mle_summary.pdf
 [^2]: Gregory Gundersen, "Asymptotic Normality of Maximum Likelihood Estimators" (Taylor 전개 증명 개요와 Fisher 정보의 역수 형태 점근분산). https://gregorygundersen.com/blog/2019/11/28/asymptotic-normality-mle/
@@ -161,8 +161,8 @@ $$
 
 ## 더 알아보기
 
-- [가설검정과 p-값](hypothesis-testing.md)
+- [가설검정](hypothesis-testing.md)
 - [선형회귀와 최소제곱법](linear-regression.md)
-- [지수족과 충분통계량](exponential-families.md)
+- [지수족](exponential-families.md)
 
 #statistics #probability #optimization

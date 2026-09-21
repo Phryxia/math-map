@@ -114,7 +114,7 @@ $$
 \left[\ \overline X_n-1.96\frac{s}{\sqrt n},\ \ \overline X_n+1.96\frac{s}{\sqrt n}\ \right]
 $$
 
-$\sigma$ 를 $s$ 로 바꿔도 되는 근거는 $s$ 가 $\sigma$ 로 확률수렴하고 Slutsky 정리가 이를 허용한다는 것이다. 같은 구조가 [가설검정과 p-값](hypothesis-testing.md)의 z-검정과 [최대가능도 추정](maximum-likelihood.md)의 점근정규성에 재사용된다.
+$\sigma$ 를 $s$ 로 바꿔도 되는 근거는 $s$ 가 $\sigma$ 로 확률수렴하고 Slutsky 정리가 이를 허용한다는 것이다. 같은 구조가 [가설검정](hypothesis-testing.md)의 z-검정과 [최대가능도 추정](maximum-likelihood.md)의 점근정규성에 재사용된다.
 
 ## 이항분포의 정규근사
 
@@ -147,7 +147,7 @@ Monte Carlo 추정의 표준오차는 표본표준편차를 $n$ 의 제곱근으
 
 ## 더 알아보기
 
-- [가설검정과 p-값](hypothesis-testing.md)
+- [가설검정](hypothesis-testing.md)
 - [신뢰구간](confidence-intervals.md)
 - [Brown 운동](brownian-motion.md)
 - [Wigner 반원법칙](wigner-semicircle.md)

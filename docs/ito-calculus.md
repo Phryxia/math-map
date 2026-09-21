@@ -91,7 +91,7 @@ $a$ 와 $b$ 가 $x$ 에 대해 Lipschitz 이고 선형 증가 조건을 만족�
 
 ## 지수 martingale과 측도변환
 
-$M_t = \exp(\int \theta\thinspace dB - \tfrac12 \int \theta^2\thinspace ds)$ 는 Novikov 조건에서 martingale 이고, 이것을 밀도로 삼아 확률측도를 바꾸면 Brown 운동에 표류를 더하거나 뺄 수 있다. 이것이 Girsanov 정리이고, [측도변환과 우도비](change-of-measure.md)의 밀도 변경을 연속시간 과정으로 옮긴 것이다. 금융의 위험중립측도가 이 기술로 만들어진다.
+$M_t = \exp(\int \theta\thinspace dB - \tfrac12 \int \theta^2\thinspace ds)$ 는 Novikov 조건에서 martingale 이고, 이것을 밀도로 삼아 확률측도를 바꾸면 Brown 운동에 표류를 더하거나 뺄 수 있다. 이것이 Girsanov 정리이고, [측도변환](change-of-measure.md)의 밀도 변경을 연속시간 과정으로 옮긴 것이다. 금융의 위험중립측도가 이 기술로 만들어진다.
 
 # 활용
 

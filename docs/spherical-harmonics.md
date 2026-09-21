@@ -127,7 +127,7 @@ $$
 
 ## 선수지식
 
-- [군의 표현과 지표](group-representations.md)
+- [군의 표현](group-representations.md)
 - [Hilbert 공간](hilbert-spaces.md)
 
 ## 더 알아보기

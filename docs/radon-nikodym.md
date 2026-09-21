@@ -139,7 +139,7 @@ $$
 
 ## 더 알아보기
 
-- [측도변환과 우도비](change-of-measure.md)
+- [측도변환](change-of-measure.md)
 - [조건부 기댓값](conditional-expectation.md)
 
 #measure_theory #probability #statistics #theorem

@@ -45,7 +45,7 @@ $$
 - 어떤 NP-complete 문제가 $\mathrm P$ 에 속하면 $\mathrm P=\mathrm{NP}$ 다.
 - $P \ne NP$ 이면 어떤 NP-complete 문제도 다항시간 알고리즘을 갖지 않는다.
 
-NP-hard는 $\mathrm{NP}$ 안에 있을 필요가 없다. 정지 문제는 NP-hard이지만 결정가능조차 하지 않다([계산 가능성과 정지 문제](computability.md)). 최적화 버전(예: 최소 정점덮개의 크기 구하기)도 보통 NP-hard이지만 판정 문제가 아니므로 NP-complete라 부르지 않는다.
+NP-hard는 $\mathrm{NP}$ 안에 있을 필요가 없다. 정지 문제는 NP-hard이지만 결정가능조차 하지 않다([계산 가능성](computability.md)). 최적화 버전(예: 최소 정점덮개의 크기 구하기)도 보통 NP-hard이지만 판정 문제가 아니므로 NP-complete라 부르지 않는다.
 
 ## SAT과 3SAT
 

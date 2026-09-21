@@ -156,7 +156,7 @@ Sylow 정리는 유한군을 소수별 조각으로 나누어 보는 첫 단계�
 
 ## 표현론, Galois 이론, 계산군론
 
-- 표현론에서 $p$ 부분군으로의 제한은 modular representation theory의 핵심 도구이며, [군의 표현과 지표](group-representations.md)에서 지표를 Sylow 부분군 위에서 검사하는 기법으로 나타난다.
+- 표현론에서 $p$ 부분군으로의 제한은 modular representation theory의 핵심 도구이며, [군의 표현](group-representations.md)에서 지표를 Sylow 부분군 위에서 검사하는 기법으로 나타난다.
 - [Galois 이론](galois-theory.md)에서 Galois 군의 Sylow 부분군은 고정체의 탑에 대응한다. 대수적으로 닫힌 체로 가는 확대의 차수를 제한하는 논증(예: 대수학의 기본정리의 대수적 증명)이 Sylow 정리를 그대로 쓴다.
 - 계산군론 소프트웨어는 Sylow 부분군 계산을 기본 연산으로 제공하며, 치환군의 구조 분석에서 되풀이해 호출된다.[^2]
 

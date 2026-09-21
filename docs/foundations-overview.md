@@ -60,7 +60,7 @@ graph TD
 
 ## 계산 가능성
 
-- [계산 가능성과 정지 문제](computability.md) → [Lambda calculus](lambda-calculus.md), [Rice 정리](rice-theorem.md), [유한 오토마타](finite-automata.md)
+- [계산 가능성](computability.md) → [Lambda calculus](lambda-calculus.md), [Rice 정리](rice-theorem.md), [유한 오토마타](finite-automata.md)
 - [영역 이론과 Kleene 고정점 정리](domain-theory.md): 재귀의 의미론
 - [Galois 연결](galois-connections.md) → [추상해석](abstract-interpretation.md): 순서 이론이 프로그램 분석이 되는 자리
 

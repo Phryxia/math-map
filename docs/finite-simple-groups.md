@@ -163,7 +163,7 @@ Mathieu 군 $M_{24}$ 는 확장 이진 Golay 부호 $[24,12,8]$ 의 자기동형
 ## 선수지식
 
 - [Sylow 정리](sylow-theorems.md)
-- [군의 표현과 지표](group-representations.md)
+- [군의 표현](group-representations.md)
 
 ## 더 알아보기
 

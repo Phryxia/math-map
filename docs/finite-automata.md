@@ -153,7 +153,7 @@ NFA에 대해서는 이야기가 달라진다. NFA의 동치성·전체성 판�
 
 ## 선수지식
 
-- [계산 가능성과 정지 문제](computability.md)
+- [계산 가능성](computability.md)
 - [동치관계](equivalence-relations.md)
 
 ## 더 알아보기

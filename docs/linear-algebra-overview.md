@@ -69,7 +69,7 @@ graph TD
 
 ## 표현론으로
 
-- [군의 표현과 지표](group-representations.md): 군을 행렬로
+- [군의 표현](group-representations.md): 군을 행렬로
 - [Lie 대수](lie-algebras.md) → [근계](root-systems.md), [Lie 군과 지수사상](lie-groups.md)
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md), [Schur 다항식](schur-polynomials.md): 텐서 거듭제곱의 분해
 - [Hecke 작용소](hecke-operators.md), [Sen 이론](sen-theory.md), [Reidemeister 비틀림](reidemeister-torsion.md): 다른 분야가 선형대수를 쓰는 자리
