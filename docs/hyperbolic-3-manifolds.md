@@ -174,7 +174,7 @@ SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자
 
 수치 계산은 증명이 아니다. 붙임 방정식의 근사해가 진짜 해 근처에 있음을 구간 산술로 검증하는 절차(HIKMOT 류)를 통과해야 그 다양체가 쌍곡이라는 것이 정리가 된다.
 
-## 다른 분야와의 연결
+## 산술 다양체, Chern–Simons 이론, $K$ 이론
 
 - **산술 쌍곡 다양체.** $\Gamma$ 가 사원수 대수의 정수원에서 오면 Bianchi 군 $\mathrm{PSL}\_2(\mathcal O_d)$ 류가 되고 부피가 [Dedekind zeta 함수](dirichlet-l-functions.md)의 값으로 계산된다. [Selberg 대각합 공식](selberg-trace-formula.md)이 길이 스펙트럼과 Laplace 스펙트럼을 잇는다.
 - **Chern–Simons 이론.** 쌍곡 구조는 $\mathrm{SL}\_2(\mathbb C)$ 평탄 접속이므로 [Chern–Simons](chern-simons.md) 불변량이 정의되고 $\mathrm{CS}+i\thinspace\mathrm{Vol}/2\pi$ 라는 복소수 하나로 묶인다. [Witten 점근](witten-asymptotics.md)과 볼륨 추측이 이 복소수의 실수부와 허수부를 본다.

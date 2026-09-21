@@ -154,7 +154,7 @@ Sylow 정리는 유한군을 소수별 조각으로 나누어 보는 첫 단계�
 - 유한 단순군 분류의 초반 논증은 대부분 Sylow 세기와 융합(fusion) 분석으로 이루어진다.
 - 군의 위수에서 $p$ 부분만 남기는 조작은 [정수의 합동](modular-arithmetic.md)과 [소수](primes.md)의 산술이 군론으로 직접 번역되는 지점이다.
 
-## 다른 분야와의 연결
+## 표현론, Galois 이론, 계산군론
 
 - 표현론에서 $p$ 부분군으로의 제한은 modular representation theory의 핵심 도구이며, [군의 표현과 지표](group-representations.md)에서 지표를 Sylow 부분군 위에서 검사하는 기법으로 나타난다.
 - [Galois 이론](galois-theory.md)에서 Galois 군의 Sylow 부분군은 고정체의 탑에 대응한다. 대수적으로 닫힌 체로 가는 확대의 차수를 제한하는 논증(예: 대수학의 기본정리의 대수적 증명)이 Sylow 정리를 그대로 쓴다.
