@@ -32,20 +32,6 @@ Merel 은 모듈러 기호 $e=\lbrace 0,\infty\rbrace$ 가 만드는 겨냥 몫 
 
 몫으로 보내는 사상이 차수 $d$ 점들 위에서 단사이면 모순이 나온다. 단사성 판정은 Hecke 작용소 $T_\ell$ 을 겨냥 원소에 작용시켜 얻은 벡터들의 일차독립성으로 환원된다. Kamienny 의 착상이고, Merel 은 $p$ 가 $d$ 에 비해 충분히 크면 그 독립성이 항상 성립하도록 명시적으로 제어했다.
 
-```mermaid
-flowchart TD
-  TORS["E/K 의 위수 p 비틀림점<br/>[K:Q] = d"] --> X1["X_1(p) 의 차수 d 점"]
-  X1 --> SYM["대칭곱 X_1(p)^{(d)} 의 유리점"]
-  SYM --> JAC["Jacobian J_1(p)"]
-  WIND["겨냥 원소 e = {0, infty}<br/>모듈러 기호"] --> JE["겨냥 몫 J_e"]
-  JAC --> JE
-  LVAL["L(f,1) != 0"] --> KL["Kolyvagin-Logachev"]
-  KL --> FIN["J_e(Q) 유한"]
-  JE --> FIN
-  FIN --> INJ["Hecke 작용소로 단사성 판정"]
-  INJ --> BOUND["p 가 크면 모순 -> p <= B(d)"]
-```
-
 # 정의
 
 ## 일양 유계성
