@@ -108,7 +108,7 @@ $$
 
 ## 측도를 바꾸는 다른 방법
 
-상측도는 공간을 바꾸고 측도를 따라 옮긴다. 공간을 그대로 두고 측도만 밀도로 다시 저울질하는 것은 [측도변환](change-of-measure.md)이다. 앞의 것은 다른 것을 관측하는 조작이고 뒤의 것은 같은 것을 다른 확률로 보는 조작이다. 중요도 표본추출, 위험중립 가격결정, 우도비 검정이 뒤의 것을 쓴다.[^1]
+상측도는 공간을 바꾸고 측도를 따라 옮긴다. 공간을 그대로 두고 측도에 밀도를 곱하는 것은 [측도변환](change-of-measure.md)이다. 앞의 것은 다른 것을 관측하는 조작이고 뒤의 것은 같은 것을 다른 확률로 보는 조작이다. 중요도 표본추출, 위험중립 가격결정, 우도비 검정이 뒤의 것을 쓴다.[^1]
 
 [^1]: Terence Tao, *245A Notes 3: Integration on abstract measure spaces and the convergence theorems*, Exercise 36. 상측도의 정의와 적분 변환 공식. https://terrytao.wordpress.com/2010/09/25/245a-notes-3-integration-on-abstract-measure-spaces-and-the-convergence-theorems/
 

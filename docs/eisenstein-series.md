@@ -67,7 +67,7 @@ L^2(\Gamma\backslash\mathbb H)=
 \underbrace{\int_{\mathrm{Re}(s)=1/2}^{\oplus}\mathbb C\thinspace E(z,s)\thinspace ds}\_{\text{연속 스펙트럼}}
 $$
 
-연속 부분을 만드는 것이 임계선 위의 $E(z,s)$ 다. $E(z,\tfrac12+it)$ 는 상수항이 $y^{1/2}$ 크기라 $L^2$ 에 속하지 않지만 자유 입자의 평면파처럼 일반화 고유함수 노릇을 한다. Selberg 의 스펙트럼 분해 정리가 이 분해를 서술한다.
+연속 부분을 만드는 것이 임계선 위의 $E(z,s)$ 다. $E(z,\tfrac12+it)$ 는 상수항이 $y^{1/2}$ 크기라 $L^2$ 에 속하지 않지만 자유 입자의 평면파처럼 일반화 고유함수 역할을 한다. Selberg 의 스펙트럼 분해 정리가 이 분해를 서술한다.
 
 첨점형식의 존재는 Selberg 의 대각합 공식이 무한히 많음을 보이기 전에는 자명하지 않았고, 연속 쪽은 $\zeta$ 함수로 손에 잡힌다.
 

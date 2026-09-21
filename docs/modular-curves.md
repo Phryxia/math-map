@@ -163,7 +163,7 @@ $N=11$ 에서 $g=1$ 이므로 $\dim S_2(\Gamma_0(11))=1$ 이고, 그 1 차원 �
 - **비틀림점의 분류.** Mazur 의 정리와 그 일반화가 $X_0(N)$ 이나 $X_1(N)$ 의 유리점 계산이다.
 - **모듈러성과 Fermat.** Frey 곡선이 레벨 2 의 새형식에서 와야 하는데 $g(X_0(2))=0$ 이라 그런 형식이 없고, 이것이 모순의 마지막 고리다.
 - **새형식 계산.** 모듈러 기호로 $H_1(X_0(N))$ 과 Hecke 행렬을 구해 새형식을 열거하며, 행렬의 크기를 종수 공식이 미리 준다.
-- **Galois 표현.** $J_0(N)$ 의 $\ell$ 진 Tate 가군이 2 차원 Galois 표현들의 곳간이고 Eichler–Shimura 관계가 $T_p$ 와 Frobenius 를 잇는다.
+- **Galois 표현.** $J_0(N)$ 의 $\ell$ 진 Tate 가군이 2 차원 Galois 표현들을 담고 Eichler–Shimura 관계가 $T_p$ 와 Frobenius 를 잇는다.
 
 [^1]: 종수 공식과 첨점·타원점의 개수는 F. Diamond, J. Shurman, *A First Course in Modular Forms* (2005) 3.7절. 모듈라이 해석은 같은 책 1.5절과 8장. 종수 0 과 1 인 레벨 목록은 같은 책의 표와 B. Birch, W. Kuyk 편, *Modular Functions of One Variable IV* (1975) 에 있다. Mazur 의 정리는 B. Mazur, *Modular curves and the Eisenstein ideal*, Publ. IHÉS 47 (1977).
 
