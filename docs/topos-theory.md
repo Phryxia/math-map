@@ -70,7 +70,7 @@ $$
 
 **정리.** 적절한 토포스에서 선택공리가 성립하지 않는다.
 
-$\mathbf{Set}$ 이 아닌 토포스를 고르면 전사사상이 갈라지지 않는 예가 나온다. 완비 [Boolean 대수](boolean-algebras.md) 위의 층 토포스를 잡으면 [강제법](forcing.md)의 Boolean 값 모형이 토포스의 말로 다시 쓰이고, 연속체 가설의 독립성 증명이 층의 구성으로 옮겨진다.
+$\mathbf{Set}$ 이 아닌 토포스를 고르면 전사사상이 갈라지지 않는 예가 나온다. 완비 [Boolean 대수](boolean-algebras.md) 위의 층 토포스를 잡으면 [강제법](forcing.md)의 [Boolean 값 모형](boolean-valued-models.md)이 토포스의 말로 다시 쓰이고, 연속체 가설의 독립성 증명이 층의 구성으로 옮겨진다.
 
 # 활용
 

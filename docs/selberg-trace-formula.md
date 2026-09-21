@@ -12,13 +12,13 @@ $$
 
 왼쪽은 해석, 오른쪽은 [Riemann 계량](riemannian-metrics.md)이 정하는 측지선의 길이다. 이 등식에서 Weyl 법칙, 소측지선 정리, Maass 형식의 존재가 따라 나온다.
 
-공식의 구조는 소수 정리의 명시공식과 같다. 거기서 $\zeta$ 의 영점과 소수의 거듭제곱이 짝을 이루듯, 여기서는 Laplace 고윳값과 닫힌 측지선이 짝을 이룬다. Selberg 는 이 유비를 따라 Riemann 가설이 성립하는 zeta 함수를 만들었다.
+공식의 구조는 소수 정리의 명시공식과 같다. 거기서 $\zeta$ 의 영점과 소수의 거듭제곱이 짝을 이루듯, 여기서는 Laplace 고윳값과 닫힌 측지선이 짝을 이룬다. Selberg 는 이 유비를 따라 [Riemann 가설](riemann-hypothesis.md)이 성립하는 zeta 함수를 만들었다.
 
 # 직관
 
 ## Poisson 합 공식
 
-원 $\mathbb R/L\mathbb Z$ 에서 Laplace 고윳값은 $n\in\mathbb Z$ 마다 $(2\pi n/L)^2$ 이고, 닫힌 측지선은 원을 $m$ 바퀴 도는 길이 $mL$ 의 곡선이다. 두 자료를 잇는 등식이 Poisson 합 공식이다.
+원 $\mathbb R/L\mathbb Z$ 에서 Laplace 고윳값은 $n\in\mathbb Z$ 마다 $(2\pi n/L)^2$ 이고, 닫힌 측지선은 원을 $m$ 바퀴 도는 길이 $mL$ 의 곡선이다. 두 자료를 잇는 등식이 [Poisson 합 공식](poisson-summation.md)이다.
 
 $$
 \sum_{n\in\mathbb Z}h\Big(\frac{2\pi n}{L}\Big)=L\sum_{m\in\mathbb Z}g(mL),\qquad
@@ -61,7 +61,7 @@ $$
 -\frac1{4\pi}\int_{-\infty}^\infty h(r)\thinspace\frac{\varphi'}{\varphi}\Big(\frac12+ir\Big)dr+\frac14h(0)\varphi\Big(\frac12\Big)
 $$
 
-가 들어온다. $\varphi$ 는 Eisenstein 급수의 산란 행렬식이고 $\mathrm{SL}\_2(\mathbb Z)$ 에서는 $\varphi(s)=\xi(2s-1)/\xi(2s)$ 다. Riemann zeta 함수가 대각합 공식 안에 직접 등장하는 자리다.
+가 들어온다. $\varphi$ 는 Eisenstein 급수의 산란 행렬식이고 $\mathrm{SL}\_2(\mathbb Z)$ 에서는 $\varphi(s)=\xi(2s-1)/\xi(2s)$ 다. [Riemann zeta 함수](riemann-zeta.md)가 대각합 공식 안에 직접 등장하는 자리다.
 
 # 정의
 
