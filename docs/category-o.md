@@ -183,7 +183,7 @@ $A_3$ 부터는 이 표를 Bruhat 순서만으로 채울 수 없다. 어떤 자�
 
 [^1]: I. N. Bernstein, I. M. Gelfand, S. I. Gelfand, *A certain category of g-modules*, Funkcional. Anal. i Priložen. **10** (1976), 1–8. 범주의 정의, 사영 대상의 존재, 상반성.
 
-[^2]: J. E. Humphreys, *Representations of Semisimple Lie Algebras in the BGG Category O*, GSM 94, AMS (2008). 이 문서의 정의와 정리 진술은 이 책의 1–8 장을 따른다.
+[^2]: J. E. Humphreys, *Representations of Semisimple Lie Algebras in the BGG Category O*, GSM 94, AMS (2008). 정의와 정리 진술은 이 책의 1–8 장을 따른다.
 
 [^3]: A. Beilinson, J. Bernstein, *Localisation de g-modules*, C. R. Acad. Sci. Paris **292** (1981), 15–18; J.-L. Brylinski, M. Kashiwara, *Kazhdan–Lusztig conjecture and holonomic systems*, Invent. Math. **64** (1981), 387–410. KL 추측의 증명.
 

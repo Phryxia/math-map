@@ -158,7 +158,7 @@ Walsh–Hadamard 변환으로 $2^n$ 개 계수를 $O(n2^n)$ 에 뽑고, Parseval
 - **사회선택이론.** Arrow, Gibbard–Satterthwaite 계열의 정리와 그 정량적 판본이 Fourier 계산으로 증명된다.
 - **학습이론과 회로 하한.** 저차 근사 가능성이 학습 알고리즘과 하한 증명을 동시에 낳는다.
 
-[^1]: R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press (2014). 이 문서의 정의와 정리 진술은 이 책의 1–11 장을 따른다. 저자 공개본이 있다.
+[^1]: R. O'Donnell, *Analysis of Boolean Functions*, Cambridge University Press (2014). 정의와 정리 진술은 이 책의 1–11 장을 따른다. 저자 공개본이 있다.
 
 [^2]: E. Mossel, R. O'Donnell, K. Oleszkiewicz, *Noise stability of functions with low influences: invariance and optimality*, Ann. of Math. **171** (2010), 295–341. Majority is Stablest 와 불변 원리.
 
