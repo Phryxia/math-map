@@ -10,7 +10,7 @@ $$
 
 첨점형식 $S_k$ 는 첨점에서 사라지고 Eisenstein 급수 $E_k$ 는 사라지지 않는다. Eisenstein 급수의 계수는 $\sigma_{k-1}(n)=\sum_{d\mid n}d^{k-1}$ 로 완전히 명시적이다.
 
-그 명시성이 쓸모다. $E_4^3-E_6^2=1728\Delta$ 처럼 명시적인 것들의 조합으로 첨점형식이 만들어지고, 무게 대신 복소 매개변수 $s$ 를 넣은 실해석적 Eisenstein 급수 $E(z,s)$ 는 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 의 Laplace 작용소의 연속 스펙트럼을 전부 만든다. 이산 스펙트럼인 Maass 형식이 미지인 것과 달리 연속 쪽은 $\zeta$ 함수로 기술된다.
+그 명시성이 쓸모다. $E_4^3-E_6^2=1728\Delta$ 처럼 명시적인 것들의 조합으로 첨점형식이 만들어지고, 무게 대신 복소 매개변수 $s$ 를 넣은 실해석적 Eisenstein 급수 $E(z,s)$ 는 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 의 Laplace 작용소의 [연속 스펙트럼](speh-representations.md)을 전부 만든다. 이산 스펙트럼인 Maass 형식이 미지인 것과 달리 연속 쪽은 $\zeta$ 함수로 기술된다.
 
 $$
 E^\ast(z,s)=\xi(2s)E(z,s)\qquad\Longrightarrow\qquad E^\ast(z,s)=E^\ast(z,1-s)

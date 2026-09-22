@@ -144,7 +144,7 @@ Whittaker 함수가 첨점형식을 복원하므로 두 첨점형식의 Whittake
 
 $\pi$ 와 $\pi'$ 가 $\mathrm{GL}\_n$ 의 첨점 자기동형 표현이고 거의 모든 자리에서 $\pi_v\cong\pi'\_v$ 이면 $\pi\cong\pi'$ 다.
 
-이것이 **강한 중복도 1**(Jacquet–Shalika)이고, $\mathrm{GL}\_n$ 의 자기동형 스펙트럼에 중복이 없다는 진술이다. 다른 군에서는 거짓이다. 그 실패를 조직한 것이 Arthur 의 $L$ 꾸러미 이론이다.
+이것이 **강한 중복도 1**(Jacquet–Shalika)이고, $\mathrm{GL}\_n$ 의 [자기동형 스펙트럼](speh-representations.md)에 중복이 없다는 진술이다. 다른 군에서는 거짓이다. 그 실패를 조직한 것이 Arthur 의 $L$ 꾸러미 이론이다.
 
 # 활용
 

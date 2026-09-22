@@ -113,7 +113,7 @@ $$
 \psi:W_F\times\mathrm{SL}\_2(\mathbb C)\times\mathrm{SL}\_2(\mathbb C)\to{}^LG
 $$
 
-둘째 $\mathrm{SL}\_2$ 가 비템퍼드성을 담당한다. Arthur 꾸러미는 L 꾸러미보다 크고 유니터리가 아닌 원소를 포함할 수도 있다. 고전군에 대한 Arthur 의 분류는 전역 중복도 공식을 성분군의 언어로 적는다. 전역 자기동형 표현 $\pi=\otimes\pi_v$ 가 이산 스펙트럼에 나타나는지는 국소 지표들의 곱
+둘째 $\mathrm{SL}\_2$ 가 비템퍼드성을 담당한다. Arthur 꾸러미는 L 꾸러미보다 크고 유니터리가 아닌 원소를 포함할 수도 있다. 고전군에 대한 Arthur 의 분류는 전역 중복도 공식을 성분군의 언어로 적는다. 전역 자기동형 표현 $\pi=\otimes\pi_v$ 가 [이산 스펙트럼](speh-representations.md)에 나타나는지는 국소 지표들의 곱
 
 $$
 \prod_v\chi_{\pi_v}\ \overset{?}{=}\ \text{자명}
