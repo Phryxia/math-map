@@ -191,7 +191,7 @@ $p$ 진 부치는 유리성보다 미세한 정보를 준다. 다항식 $\sum c_
 
 ## Gauss 합과 만나는 자리
 
-$\mathbb Q(\zeta_p)$ 에서 $p$ 위의 유일한 소 아이디얼이 $(\zeta_p-1)$ 이고 $\pi$ 는 그 생성원과 결부된다. [Gauss 합](gauss-sums.md)의 $p$ 진 크기는 Stickelberger 정리가 준다. $\omega$ 를 Teichmüller 지표라 할 때
+$\mathbb Q(\zeta_p)$ 에서 $p$ 위의 유일한 [소 아이디얼](prime-ideals.md)이 $(\zeta_p-1)$ 이고 $\pi$ 는 그 생성원과 결부된다. [Gauss 합](gauss-sums.md)의 $p$ 진 크기는 Stickelberger 정리가 준다. $\omega$ 를 Teichmüller 지표라 할 때
 
 $$
 \mathrm{ord}\_p\thinspace g(\omega^{-a})=\frac{a}{p-1},\qquad 0\le a\lt p-1

@@ -4,7 +4,7 @@
 
 $\mathbb Z$ 에서 성립하는 소인수분해의 유일성은 정수를 조금만 넓혀도 깨진다. $\mathbb Z[\sqrt{-5}]$ 가 [유일분해정역](unique-factorization-domains.md)이 아니라는 것이 그 예다.
 
-Dedekind 의 복구 방법은 분해의 대상을 원소에서 [아이디얼](ideals-quotient-rings.md)로 바꾸는 것이다. 유일성이 성립하는 환의 부류가 Dedekind 정역이고, 조건은 Noether 이고, 정수적으로 닫혀 있고, 0 이 아닌 소 아이디얼이 모두 극대라는 세 줄이다.
+Dedekind 의 복구 방법은 분해의 대상을 원소에서 [아이디얼](ideals-quotient-rings.md)로 바꾸는 것이다. 유일성이 성립하는 환의 부류가 Dedekind 정역이고, 조건은 Noether 이고, 정수적으로 닫혀 있고, 0 이 아닌 [소 아이디얼](prime-ideals.md)이 모두 극대라는 세 줄이다.
 
 세 조건의 의미는 [국소화](localization-rings.md)에서 드러난다. 각 소 아이디얼에서 국소화하면 이산 부치환이 나오고 거기서는 모든 아이디얼이 한 원소의 거듭제곱으로 생성된다. 전역적 유일분해는 국소적으로 자명한 사실들을 붙인 결과이며, 대수적 정수론과 대수기하가 공유하는 구조다.
 

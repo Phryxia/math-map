@@ -67,7 +67,7 @@ $M$ 이 Noether 가군인 것과 $M$ 의 모든 부분가군이 유한생성인 
 
 ## 대수적 정수론
 
-[Dedekind 정역](dedekind-domains.md)의 세 조건 가운데 첫째가 Noether 다. 수체의 정수환이 유한생성 $\mathbb Z$ 가군이라는 사실에서 이 조건이 따라오고, 아이디얼의 소 아이디얼 분해가 유한 곱으로 끝나는 근거가 된다.
+[Dedekind 정역](dedekind-domains.md)의 세 조건 가운데 첫째가 Noether 다. 수체의 정수환이 유한생성 $\mathbb Z$ 가군이라는 사실에서 이 조건이 따라오고, 아이디얼의 [소 아이디얼](prime-ideals.md) 분해가 유한 곱으로 끝나는 근거가 된다.
 
 ## 대수기하
 

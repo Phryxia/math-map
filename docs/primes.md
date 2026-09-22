@@ -27,7 +27,7 @@ $$
 
 ## 아이디얼 수준의 유일분해
 
-$\mathbb{Z}[\sqrt{-5}]$ 에서 원소 대신 [아이디얼](ideals-quotient-rings.md)을 분해하면 유일성이 돌아온다. 위 식의 두 분해는 같은 소 아이디얼들을 다르게 묶은 것이다. Dedekind 가 이 관찰로 대수적 정수론을 세웠다.
+$\mathbb{Z}[\sqrt{-5}]$ 에서 원소 대신 [아이디얼](ideals-quotient-rings.md)을 분해하면 유일성이 돌아온다. 위 식의 두 분해는 같은 [소 아이디얼](prime-ideals.md)들을 다르게 묶은 것이다. Dedekind 가 이 관찰로 대수적 정수론을 세웠다.
 
 # 정의
 

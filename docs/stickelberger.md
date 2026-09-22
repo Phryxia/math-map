@@ -24,7 +24,7 @@ $\theta_m$ 의 지표 성분이 $L(0,\chi)$ 이므로, 이 정리는 $L$ 함수�
 
 ## 절댓값과 소인수분해
 
-$g(\chi)=\sum_{a}\chi(a)\zeta_p^{a}$ 는 $\mathbb Q(\mu_{p-1},\mu_p)$ 의 원소이고 $|g(\chi)|=\sqrt p$ 다. 이 절댓값은 무한 자리의 정보다. 유한 자리에서는 $g(\chi)\overline{g(\chi)}=\pm p$ 에서 $(g(\chi))$ 가 $p$ 위의 소 아이디얼들로만 이루어진다는 것까지 나오지만, 각 소 아이디얼의 지수는 나오지 않는다.
+$g(\chi)=\sum_{a}\chi(a)\zeta_p^{a}$ 는 $\mathbb Q(\mu_{p-1},\mu_p)$ 의 원소이고 $|g(\chi)|=\sqrt p$ 다. 이 절댓값은 무한 자리의 정보다. 유한 자리에서는 $g(\chi)\overline{g(\chi)}=\pm p$ 에서 $(g(\chi))$ 가 $p$ 위의 [소 아이디얼](prime-ideals.md)들로만 이루어진다는 것까지 나오지만, 각 소 아이디얼의 지수는 나오지 않는다.
 
 $p$ 는 $\mathbb Q(\mu_p)$ 에서 완전히 분기해 $(p)=(\pi)^{p-1}$ 이므로 물음은 $g(\chi)$ 가 $\pi$ 로 몇 번 나뉘는가가 되고, 답이 $\chi=\omega^{-k}$ 의 $k$ 다.
 

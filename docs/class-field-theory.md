@@ -28,7 +28,7 @@ $$
 
 ## 아벨 조건의 역할
 
-분기하지 않는 $\mathfrak p$ 위의 Frobenius 는 $\mathfrak p$ 위에 있는 $L$ 의 소 아이디얼을 골라야 정해지고, 다른 것을 고르면 Galois 군의 켤레원이 나온다. 일반적으로 $\mathrm{Frob}\_{\mathfrak p}$ 는 원소가 아니라 켤레류다.
+분기하지 않는 $\mathfrak p$ 위의 Frobenius 는 $\mathfrak p$ 위에 있는 $L$ 의 [소 아이디얼](prime-ideals.md)을 골라야 정해지고, 다른 것을 고르면 Galois 군의 켤레원이 나온다. 일반적으로 $\mathrm{Frob}\_{\mathfrak p}$ 는 원소가 아니라 켤레류다.
 
 군이 아벨이면 켤레류가 한원소라 모호함이 사라진다. $\mathrm{Frob}\_{\mathfrak p}$ 가 $\mathfrak p$ 만의 함수가 되고, 아이디얼의 곱에 대해 곱셈적으로 확장하면 아이디얼군에서 Galois 군으로 가는 준동형이 생긴다. 유체론이 아벨 확대에서 멈추는 이유다.
 
