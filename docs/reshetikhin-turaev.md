@@ -190,7 +190,7 @@ $\tau$ 를 정확히 계산하는 것은 어렵다. $\mathrm{SU}(2)\_k$ 에서 $
 ## 선수지식
 
 - [모듈러 텐서범주와 3 차원 TQFT](modular-tensor-categories.md)
-- [매듭 불변량과 Jones 다항식](knot-invariants.md)
+- [매듭 불변량](knot-invariants.md)
 
 ## 더 알아보기
 

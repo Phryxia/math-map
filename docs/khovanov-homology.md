@@ -174,7 +174,7 @@ $Kh^{3,7}=\mathbb Z/2$ 는 Euler 지표에 기여하지 않으므로 Jones 다�
 
 ## 선수지식
 
-- [매듭 불변량과 Jones 다항식](knot-invariants.md)
+- [매듭 불변량](knot-invariants.md)
 - [단체 호몰로지](homology.md)
 
 ## 더 알아보기

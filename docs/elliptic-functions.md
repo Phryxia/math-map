@@ -73,7 +73,7 @@ $$\wp(z_1+z_2)=\frac14\left(\frac{\wp'(z_1)-\wp'(z_2)}{\wp(z_1)-\wp(z_2)}\right)
 
 - [모듈러 형식](modular-forms.md): $G_k$ 를 격자 대신 격자의 모듈라이 $\tau=\omega_2/\omega_1$ 의 함수로 보면 무게 $k$ 의 모듈러 형식이 된다. $\Delta$ 는 무게 $12$ 의 첨점형식이다.
 - [타원곡선](elliptic-curves.md): 복소수체 위의 타원곡선은 모두 어떤 $\mathbb C/\Lambda$ 와 동형이다. 뒤틀림점은 $\Lambda$ 의 유리점에 대응한다.
-- [복소 곱셈과 허수이차체의 유체론](complex-multiplication.md): $\lambda\Lambda\subset\Lambda$ 인 정수 아닌 $\lambda$ 가 있으면 $\mathbb C/\Lambda$ 의 자기준동형환이 $\mathbb Z$ 보다 커지고, 그 $\lambda$ 는 허수이차체에 든다.
+- [복소 곱셈](complex-multiplication.md): $\lambda\Lambda\subset\Lambda$ 인 정수 아닌 $\lambda$ 가 있으면 $\mathbb C/\Lambda$ 의 자기준동형환이 $\mathbb Z$ 보다 커지고, 그 $\lambda$ 는 허수이차체에 든다.
 - 타원적분: 곡선 $y^2=4x^3-g_2x-g_3$ 위의 적분 $\int dx/y$ 의 역함수가 $\wp$ 다. 타원함수는 타원적분을 뒤집어 얻은 함수라는 역사적 경로가 여기 있다.
 
 # 연관 문서

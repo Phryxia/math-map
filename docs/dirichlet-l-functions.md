@@ -164,6 +164,6 @@ $4k+1$ 과 $4k+3$ 소수의 개수 비는 $1$ 로 수렴하지만 차이의 부�
 
 - [Chebotarev 밀도 정리](chebotarev.md)
 - [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)
-- [Gauss 합과 국소 근 수](gauss-sums.md)
+- [Gauss 합](gauss-sums.md)
 
 #number_theory #complex_analysis #group_theory

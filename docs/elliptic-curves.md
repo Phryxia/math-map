@@ -153,6 +153,6 @@ $$
 - [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md)
 - [Langlands 강령](langlands-program.md)
 - [모듈러 곡선](modular-curves.md)
-- [복소 곱셈과 허수이차체의 유체론](complex-multiplication.md)
+- [복소 곱셈](complex-multiplication.md)
 
 #number_theory #cryptography #group_theory

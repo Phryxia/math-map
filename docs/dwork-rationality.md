@@ -232,7 +232,7 @@ $n=1$ 하나가 모든 확대체의 값을 결정하며, 이것이 $L$ 함수가
 ## 선수지식
 
 - [Galois 표현](galois-representations.md)
-- [Gauss 합과 국소 근 수](gauss-sums.md)
+- [Gauss 합](gauss-sums.md)
 - [Newton 다각형](newton-polygon.md)
 
 ## 더 알아보기

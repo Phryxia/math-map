@@ -257,7 +257,7 @@ CM(complex multiplication) 방법은 원하는 위수를 갖는 타원곡선을 
 - [Langlands 강령](langlands-program.md)
 - [Chebotarev 밀도 정리](chebotarev.md)
 - [국소 유체론과 Lubin–Tate 형식군](local-class-field-theory.md)
-- [복소 곱셈과 허수이차체의 유체론](complex-multiplication.md)
+- [복소 곱셈](complex-multiplication.md)
 - [Brauer 군](brauer-groups.md)
 
 #number_theory #field_theory #group_theory #theorem
