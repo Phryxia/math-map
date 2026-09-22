@@ -84,7 +84,7 @@ $$
 
 ## 기하 밖에서의 쓰임
 
-대수기하의 Zariski 위상, 계산 가능성 이론의 Scott 위상, 자료형 이론의 도메인은 모두 거리와 무관한 위상이다. "가까움" 을 정보의 근사로 읽는 이 관점 덕분에 위상수학의 언어가 계산과 논리에서도 쓰인다.[^1]
+대수기하의 Zariski 위상, [계산 가능성](computability.md) 이론의 Scott 위상, 자료형 이론의 도메인은 모두 거리와 무관한 위상이다. "가까움" 을 정보의 근사로 읽는 이 관점 덕분에 위상수학의 언어가 계산과 논리에서도 쓰인다.[^1]
 
 [^1]: University of Toronto, *MAT327 Lecture Notes 1*. 열린집합의 합집합·교집합 공리와 연속성의 연결. https://www.math.toronto.edu/~herzig/MAT327-lecturenotes01.pdf
 

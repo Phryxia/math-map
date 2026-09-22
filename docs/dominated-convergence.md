@@ -89,7 +89,7 @@ $$
 \frac{d}{dt}\int_X f(x,t)\thinspace d\mu=\int_X\frac{\partial f}{\partial t}(x,t)\thinspace d\mu
 $$
 
-이다. 미분몫이 평균값 정리로 도함수에 지배된다. 적률생성함수의 미분, 최대가능도 추정의 점수함수 계산이 이 형태다.
+이다. 미분몫이 평균값 정리로 도함수에 지배된다. 적률생성함수의 미분, [최대가능도 추정](maximum-likelihood.md)의 점수함수 계산이 이 형태다.
 
 ## 흔한 오용
 

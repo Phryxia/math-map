@@ -137,7 +137,7 @@ $2\pi\log J_N/N$ 은 참값보다 $2\pi\cdot\tfrac32\log N/N$ 만큼 크다. 이
 
 - **매듭 검출.** 추측이 참이면 색 Jones 다항식 전체가 풀린 매듭을 검출한다.
 - **부피의 계산.** 부피를 구하는 실용적 방법은 사면체 분할이고, 이 방향은 양자 불변량이 기하를 얼마나 아는지를 재는 시금석이다.
-- **$\mathrm{SL}\_2(\mathbb C)$ 로의 확장.** 복소 안장점을 다루는 틀이 $\mathrm{SU}(2)$ 대신 $\mathrm{SL}\_2(\mathbb C)$ Chern–Simons 이론을 요구한다.[^1][^2]
+- **$\mathrm{SL}\_2(\mathbb C)$ 로의 확장.** 복소 안장점을 다루는 틀이 $\mathrm{SU}(2)$ 대신 $\mathrm{SL}\_2(\mathbb C)$ [Chern–Simons 이론](chern-simons.md)을 요구한다.[^1][^2]
 
 [^1]: R. Kashaev, *The hyperbolic volume of knots from quantum dilogarithm*, Lett. Math. Phys. 39 (1997) 가 원래 형태이고, H. Murakami–J. Murakami, *The colored Jones polynomials and the simplicial volume of a knot*, Acta Math. 186 (2001) 이 색 Jones 다항식의 진술로 옮겼다.
 [^2]: 8 자매듭에 대한 엄밀한 증명은 T. Ekholm 의 미출판 논증이 널리 인용되며, 상세한 해석적 취급은 H. Murakami 의 개관 *An introduction to the volume conjecture* (2010) 에 정리되어 있다. 정련된 판본과 위상 항은 H. Murakami–J. Murakami–M. Okamoto–T. Takata–Y. Yokota, Experiment. Math. 11 (2002).

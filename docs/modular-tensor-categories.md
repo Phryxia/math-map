@@ -2,7 +2,7 @@
 
 # 개요
 
-[Zhu 대수](zhu-algebra.md)에서 강유리 정점작용소대수의 기약가군들은 서로 곱해지는 **융합 구조**와 지표의 모듈러 변환에서 나오는 $S$ 행렬을 동시에 갖고, Verlinde 공식이 둘을 묶는다.
+[Zhu 대수](zhu-algebra.md)에서 강유리 [정점작용소대수](vertex-operator-algebras.md)의 기약가군들은 서로 곱해지는 **융합 구조**와 지표의 모듈러 변환에서 나오는 $S$ 행렬을 동시에 갖고, Verlinde 공식이 둘을 묶는다.
 
 이 자료를 정점작용소대수에서 떼어내 공리로 세운 것이 **모듈러 텐서범주**(modular tensor category, MTC)다. [범주](category.md) 하나에 다음이 얹힌다.
 
@@ -134,7 +134,7 @@ Reshetikhin–Turaev 구성은 MTC 에서 다음을 만든다.
 
 ## 매듭 불변량
 
-$\mathrm{SU}(2)\_k$ 에서 라벨 1, 곧 스핀 $1/2$ 를 단 매듭의 불변량이 Jones 다항식을 $q=e^{2\pi i/(k+2)}$ 에서 평가한 값이다. Witten 이 Jones 다항식을 3 차원 Chern–Simons 이론의 Wilson 고리 기댓값으로 설명했고 Reshetikhin–Turaev 가 그것을 수학적으로 구성했으며, MTC 가 그 구성의 대수적 입력이다.
+$\mathrm{SU}(2)\_k$ 에서 라벨 1, 곧 스핀 $1/2$ 를 단 매듭의 불변량이 Jones 다항식을 $q=e^{2\pi i/(k+2)}$ 에서 평가한 값이다. Witten 이 Jones 다항식을 3 차원 [Chern–Simons 이론](chern-simons.md)의 Wilson 고리 기댓값으로 설명했고 Reshetikhin–Turaev 가 그것을 수학적으로 구성했으며, MTC 가 그 구성의 대수적 입력이다.
 
 라벨을 바꾸면 색 Jones 다항식이, 다른 Lie 군을 쓰면 HOMFLY(Hoste–Ocneanu–Millett–Freyd–Lickorish–Yetter) 나 Kauffman 다항식이 나온다.
 

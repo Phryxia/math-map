@@ -130,7 +130,7 @@ alien 미분들은 자유 [Lie 대수](lie-algebras.md)를 이루고 그 지수�
 
 ## 매개변수 없는 예측
 
-행렬모형, 위상적 끈, Chern–Simons 이론의 자유에너지에서도 같은 구조가 나타난다. 섭동 전개의 계수를 계산해 Stokes 상수를 읽고, 그 값을 독립적으로 계산된 막 instanton 이나 복소 안장점의 작용과 비교한다. 발산하는 급수가 다른 물리량의 예측 도구가 된다.
+행렬모형, 위상적 끈, [Chern–Simons 이론](chern-simons.md)의 자유에너지에서도 같은 구조가 나타난다. 섭동 전개의 계수를 계산해 Stokes 상수를 읽고, 그 값을 독립적으로 계산된 막 instanton 이나 복소 안장점의 작용과 비교한다. 발산하는 급수가 다른 물리량의 예측 도구가 된다.
 
 [^1]: Inês Aniceto, Gökçe Başar, Ricardo Schiappa, *A Primer on Resurgent Transseries and Their Asymptotics*, Physics Reports 809 (2019), §§2–4. transseries 대수, alien 미분의 정의와 Leibniz 법칙, bridge equation 의 유도와 large-order 관계의 도출.
 
