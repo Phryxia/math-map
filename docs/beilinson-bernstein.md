@@ -2,7 +2,7 @@
 
 # 개요
 
-Beilinson–Bernstein 국소화는 깃발다양체 $X=G/B$ 위의 $\mathcal D$ 가군 범주와 자명한 중심 지표를 갖는 $U(\mathfrak g)$ 가군 범주 사이의 동치다.
+Beilinson–Bernstein 국소화는 깃발다양체 $X=G/B$ 위의 $\mathcal D$ [가군](modules.md) 범주와 자명한 중심 지표를 갖는 $U(\mathfrak g)$ 가군 범주 사이의 동치다.
 
 $$
 \Gamma:\ \mathrm{Mod}(\mathcal D_X)\ \rightleftarrows\ \mathrm{Mod}\bigl(U(\mathfrak g)\_{\chi_0}\bigr)\ :\mathrm{Loc}
@@ -58,7 +58,7 @@ $X=G/B$ 로 두고 $\chi_0$ 를 자명한 중심 지표라 한다.
 
 ## 비틀린 판본
 
-일반 중심 지표 $\chi_\lambda$ 에 대해서는 비틀린 미분작용소의 층 $\mathcal D_X^\lambda$ 를 쓴다. $\lambda$ 가 우세 정칙이면 같은 결론이 성립하고, 벽 위에 있으면 동치가 깨져 더 약한 진술만 남는다. 이 조건이 Weyl 군 점 작용의 벽과 같은 자리다.
+일반 중심 지표 $\chi_\lambda$ 에 대해서는 비틀린 미분작용소의 [층](sheaves.md) $\mathcal D_X^\lambda$ 를 쓴다. $\lambda$ 가 우세 정칙이면 같은 결론이 성립하고, 벽 위에 있으면 동치가 깨져 더 약한 진술만 남는다. 이 조건이 Weyl 군 점 작용의 벽과 같은 자리다.
 
 # 성질
 

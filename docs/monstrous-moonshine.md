@@ -53,7 +53,7 @@ graph TD
 
 ## McKay–Thompson 급수
 
-$\mathbb M$ 등급 가군 $V=\bigoplus_{n\ge-1}V_n$ 이 주어졌을 때 각 $g\in\mathbb M$ 에 대해
+$\mathbb M$ 등급 [가군](modules.md) $V=\bigoplus_{n\ge-1}V_n$ 이 주어졌을 때 각 $g\in\mathbb M$ 에 대해
 
 $$
 T_g(\tau)=\sum_{n\ge-1}\mathrm{tr}\negthinspace\left(g\mid V_n\right)q^n,\qquad q=e^{2\pi i\tau}

@@ -111,7 +111,7 @@ $$
 \alpha_V\colon B\otimes_E D_B(V)\longrightarrow B\otimes_{\mathbb Q_p}V
 $$
 
-가 동형인 것과 같고 이것이 비교동형의 추상적 형태다. $B$ 허용 표현들은 부분표현, 몫, 텐서곱, 쌍대에 닫혀 탄나키안 부분범주를 이룬다.
+가 동형인 것과 같고 이것이 비교동형의 추상적 형태다. $B$ 허용 표현들은 부분표현, 몫, [텐서곱](tensor-products.md), 쌍대에 닫혀 탄나키안 부분범주를 이룬다.
 
 ## $\mathbb C_p$ 와 Hodge–Tate 환
 

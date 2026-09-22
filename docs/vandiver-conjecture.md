@@ -10,7 +10,7 @@ A^{-}=\bigoplus_{i\ \text{홀}}A^{(\omega^{i})},\quad
 A^{+}=\bigoplus_{i\ \text{짝}}A^{(\omega^{i})}
 $$
 
-홀수 쪽 $A^{-}$ 는 완전히 이해되어 있다. [Herbrand–Ribet](herbrand-ribet.md) 이 각 성분이 0 인지를 Bernoulli 수로 판정하고, [Iwasawa 주추측](iwasawa-main-conjecture.md)이 크기와 $\Lambda$ 가군 구조까지 $p$ 진 $L$ 함수로 기술한다.
+홀수 쪽 $A^{-}$ 는 완전히 이해되어 있다. [Herbrand–Ribet](herbrand-ribet.md) 이 각 성분이 0 인지를 Bernoulli 수로 판정하고, [Iwasawa 주추측](iwasawa-main-conjecture.md)이 크기와 $\Lambda$ [가군](modules.md) 구조까지 $p$ 진 $L$ 함수로 기술한다.
 
 짝수 쪽에 대한 예측은 하나뿐이고, 1920 년대에 제기된 뒤 아직 증명되지 않았다[^1].
 

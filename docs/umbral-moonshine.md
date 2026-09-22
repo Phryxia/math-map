@@ -95,7 +95,7 @@ $$
 
 를 **umbral 군**이라 한다. $m=h(X)$ 를 $X$ 의 공통 Coxeter 수라 할 때, 각 $g\in G^X$ 에 대응하는 무게 $1/2$ 와 지표 $m$ 의 벡터값 mock 모듈러 형식 $H^X_g=(H^X_{g,r})\_{r\bmod 2m}$ 이 정해지고 그 shadow 는 $X$ 의 근계 theta 급수에 $g$ 의 작용을 얹은 것이다.
 
-> **Umbral moonshine 추측 (CDH 2012).** 각 $X$ 마다 무한차원 등급 $G^X$ 가군 $K^X$ 가 있어, 그 등급 지표의 생성함수가 정확히 $H^X_g$ 다.
+> **Umbral moonshine 추측 (CDH 2012).** 각 $X$ 마다 무한차원 등급 $G^X$ [가군](modules.md) $K^X$ 가 있어, 그 등급 지표의 생성함수가 정확히 $H^X_g$ 다.
 
 $X=A_1^{24}$ 이면 $m=2$ 이고 $G^X=M_{24}$ 이며 앞의 Mathieu 달빛이 된다.
 

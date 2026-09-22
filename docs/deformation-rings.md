@@ -183,7 +183,7 @@ $\mathbb Z_p$ 쪽은 계수환을 한 층 키울 때마다 변형이 $p$ 배로 
 
 구체적인 $\bar\rho$ 에 대해 $\dim H^1(G_{\mathbb Q,S},\mathrm{ad}^0\bar\rho)$ 를 구하는 것이 첫 단계다.
 
-1. $\bar\rho$ 의 상을 결정하고 $\mathrm{ad}^0$ 의 $G$ -가군 분해를 본다.
+1. $\bar\rho$ 의 상을 결정하고 $\mathrm{ad}^0$ 의 $G$ -[가군](modules.md) 분해를 본다.
 2. $H^0$ 를 읽는다. 상이 충분히 크면 $H^0(\mathrm{ad}^0)=0$ 이다.
 3. Tate 의 전역 Euler 표수 공식으로 $\dim H^1-\dim H^2$ 를 얻는다. 홀수 $\bar\rho$ 와 $\mathrm{ad}^0$ 에서 이 값은 $S$ 와 무한소수 자리의 기여로 정해진다.
 4. Poitou–Tate 완전열로 국소 조건을 단 Selmer 군과 쌍대 Selmer 군을 연결하고 조건이 자른 $H^1$ 을 센다.

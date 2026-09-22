@@ -83,7 +83,7 @@ Euler 류를 곡률로 쓴 것이 [Gauss–Bonnet 정리](gauss-bonnet.md)의 �
 - [지표 정리](index-theorem.md)의 우변이 특성류의 적분이다. Todd 류와 $\hat A$ 류가 그 자리에 들어가고, 좌변의 해석적 지표와 같다는 것이 정리의 내용이다.
 - [Chern–Simons 이론](chern-simons.md)의 작용이 4차원 특성류 $\mathrm{tr}(F \wedge F)$ 의 원시함수다. 레벨의 양자화가 그 특성류의 적분이 정수라는 데서 나온다.
 - 게이지 이론에서 순간자 수가 $c_2$ 의 적분이다. 이 정수가 접속의 모듈라이 공간을 성분으로 나눈다.
-- 복소 대수다양체의 수치 불변량을 준다. Hirzebruch–Riemann–Roch 공식이 층 코호몰로지의 교대합을 접다발과 층의 Chern 류로 계산한다.
+- 복소 대수다양체의 수치 불변량을 준다. Hirzebruch–Riemann–Roch 공식이 [층](sheaves.md) 코호몰로지의 교대합을 접다발과 층의 Chern 류로 계산한다.
 
 [^1]: J. W. Milnor and J. D. Stasheff, *Characteristic Classes*, Annals of Mathematics Studies 76, Princeton University Press (1974), §14. Chern 류를 결정하는 공리와 그 유일성이 이 절에 있다.
 

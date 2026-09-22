@@ -146,7 +146,7 @@ Fibonacci 애니온의 꼬임 연산은 유니터리 군에서 조밀한 부분�
 
 ## 정점작용소대수와의 왕복
 
-강유리 VOA(vertex operator algebra) 의 가군 범주가 MTC 라는 Huang 의 정리가 두 이론을 잇는다. [Zhu 정리](zhu-algebra.md)가 준 $S$ 행렬이 범주 쪽 $S$ 행렬과 같고, 거꾸로 MTC 의 분류 결과가 어떤 VOA 가 존재할 수 있는지를 제한한다. 주어진 MTC 를 실현하는 VOA 가 항상 있는지는 열린 문제다.
+강유리 VOA(vertex operator algebra) 의 [가군](modules.md) 범주가 MTC 라는 Huang 의 정리가 두 이론을 잇는다. [Zhu 정리](zhu-algebra.md)가 준 $S$ 행렬이 범주 쪽 $S$ 행렬과 같고, 거꾸로 MTC 의 분류 결과가 어떤 VOA 가 존재할 수 있는지를 제한한다. 주어진 MTC 를 실현하는 VOA 가 항상 있는지는 열린 문제다.
 
 [^1]: 기초 구성은 N. Reshetikhin–V. Turaev, *Invariants of 3-manifolds via link polynomials and quantum groups*, Invent. Math. 103 (1991) 와 V. Turaev, *Quantum Invariants of Knots and 3-Manifolds* (1994). 물리적 기원은 E. Witten, *Quantum field theory and the Jones polynomial*, Commun. Math. Phys. 121 (1989). 랭크 유한성은 P. Bruillard, S.-H. Ng, E. Rowell, Z. Wang, *Rank-finiteness for modular categories*, J. Amer. Math. Soc. 29 (2016). 위상적 양자계산은 Z. Wang, *Topological Quantum Computation* (2010).
 

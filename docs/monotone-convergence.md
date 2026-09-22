@@ -30,7 +30,7 @@ $f_n = n \cdot \mathbf 1_{(0,1/n)}$ 은 증가하지도 않고 적분 가능한 
 
 ## 진술
 
-측도 공간 $(X, \Sigma, \mu)$ 에서 각 $n$ 에 대해 $f_n : X \to [0,\infty]$ 가 가측이고 모든 $x$ 에서 다음이 성립한다고 하자.
+[측도](measure.md) 공간 $(X, \Sigma, \mu)$ 에서 각 $n$ 에 대해 $f_n : X \to [0,\infty]$ 가 가측이고 모든 $x$ 에서 다음이 성립한다고 하자.
 
 $$
 0\le f_1(x)\le f_2(x)\le\cdots

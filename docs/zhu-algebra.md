@@ -2,7 +2,7 @@
 
 # 개요
 
-[정점작용소대수](vertex-operator-algebras.md) $V$ 의 가군 $M$ 에 지표를 붙인다.
+[정점작용소대수](vertex-operator-algebras.md) $V$ 의 [가군](modules.md) $M$ 에 지표를 붙인다.
 
 $$
 \mathrm{ch}\_M(\tau)=\mathrm{tr}\_Mq^{L_0-c/24},\qquad q=e^{2\pi i\tau}

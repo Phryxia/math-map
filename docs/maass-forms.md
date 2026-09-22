@@ -145,7 +145,7 @@ $\Gamma\backslash\mathbb H$ 는 음곡률 곡면이므로 측지선 흐름이 �
 
 > **양자 유일 에르고딕성 (Lindenstrauss 2006, Soundararajan–Holowinsky 2010).** $\mathrm{SL}\_2(\mathbb Z)$ 의 Hecke–Maass 형식에 대해 $|u_j(z)|^2d\mu$ 가 $\lambda_j\to\infty$ 에서 균등측도로 약수렴한다.
 
-곧 고유함수가 곡면 위에 고르게 퍼지고, 어느 곳에도 몰리지 않는다. Lindenstrauss 는 에르고딕 이론(측도 강직성)으로, Soundararajan–Holowinsky 는 $L$ 함수의 부분볼록 경계로 증명했다. 두 증명 모두 Hecke 대칭을 쓴다. 산술적이지 않은 일반 음곡률 곡면에 대한 대응 진술은 Rudnick–Sarnak 의 추측으로 남아 있다[^3].
+곧 고유함수가 곡면 위에 고르게 퍼지고, 어느 곳에도 몰리지 않는다. Lindenstrauss 는 에르고딕 이론([측도](measure.md) 강직성)으로, Soundararajan–Holowinsky 는 $L$ 함수의 부분볼록 경계로 증명했다. 두 증명 모두 Hecke 대칭을 쓴다. 산술적이지 않은 일반 음곡률 곡면에 대한 대응 진술은 Rudnick–Sarnak 의 추측으로 남아 있다[^3].
 
 ## Artin 추측과의 연결
 

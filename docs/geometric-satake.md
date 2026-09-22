@@ -32,7 +32,7 @@ $$
 
 ## 함수에서 층으로
 
-유한체 위의 다양체에서 함수와 층은 서로 오간다. $\ell$ 진 층 $\mathcal F$ 가 있으면 각 유리점에서 Frobenius 자취를 재어 함수를 얻는다.
+유한체 위의 다양체에서 함수와 [층](sheaves.md)은 서로 오간다. $\ell$ 진 층 $\mathcal F$ 가 있으면 각 유리점에서 Frobenius 자취를 재어 함수를 얻는다.
 
 $$
 f_{\mathcal F}(x)=\mathrm{tr}\bigl(\mathrm{Frob}\_x,\mathcal F_{\bar x}\bigr)
@@ -71,7 +71,7 @@ $$
 | 매개변수 | 궤도 $\mathrm{Gr}^\lambda$ | 기약표현 $V_\lambda$ |
 | 대상 | 교차 코호몰로지 층 $\mathcal{IC}\_\lambda$ | $V_\lambda$ |
 | 차원 | $\dim\mathrm{Gr}^\lambda=\langle\lambda,2\rho\rangle$ | 최고무게 $\lambda$ |
-| 곱 | 합성곱 $\ast$ | 텐서곱 $\otimes$ |
+| 곱 | 합성곱 $\ast$ | [텐서곱](tensor-products.md) $\otimes$ |
 | 전체 코호몰로지 | $H^\ast(\mathrm{Gr}\_G,\mathcal{IC}\_\lambda)$ | 기저가 있는 벡터공간 $V_\lambda$ |
 
 ## 퍼버스 층의 선택

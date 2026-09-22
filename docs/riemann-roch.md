@@ -16,7 +16,7 @@ $$
 
 가 성립한다. $K$ 는 표준인자다. 좌변은 해공간의 차원에서 장애의 차원을 뺀 값이고, 우변은 인자의 차수와 곡선의 종수만으로 정해진다.
 
-이 등식은 Dolbeault 복합체에 대한 [지표 정리](index-theorem.md)의 복소 1 차원 사례다. 층 코호몰로지로 옮기면 $\ell(D)=h^0(\mathcal O(D))$ 이고 $\ell(K-D)=h^1(\mathcal O(D))$ 이므로 좌변이 Euler 표수 $\chi(\mathcal O(D))$ 가 된다.
+이 등식은 Dolbeault 복합체에 대한 [지표 정리](index-theorem.md)의 복소 1 차원 사례다. [층](sheaves.md) 코호몰로지로 옮기면 $\ell(D)=h^0(\mathcal O(D))$ 이고 $\ell(K-D)=h^1(\mathcal O(D))$ 이므로 좌변이 Euler 표수 $\chi(\mathcal O(D))$ 가 된다.
 
 # 직관
 

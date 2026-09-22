@@ -8,7 +8,7 @@ Mazur 와 Rubin 은 Euler 계 자체를 버리고 거기서 나온 유도류의 
 
 Selmer 구조 $\mathcal F$ 에 **핵심계수** $\chi(\mathcal F)\in\mathbb Z$ 라는 정수 하나가 붙고 이 수가 가군을 결정한다[^1].
 
-| $\chi(\mathcal F)$ | Kolyvagin 계의 가군 $\mathbf{KS}(T,\mathcal F)$ |
+| $\chi(\mathcal F)$ | Kolyvagin 계의 [가군](modules.md) $\mathbf{KS}(T,\mathcal F)$ |
 | --- | --- |
 | $0$ | $0$ (쓸 수 있는 계가 없다) |
 | $1$ | 자유 순위 $1$ — 생성원 하나가 Selmer 군을 **정확히** 계산한다 |

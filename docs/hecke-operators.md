@@ -39,7 +39,7 @@ $$
 \langle f,g\rangle=\int_{\Gamma\backslash\mathbb H}f(\tau)\overline{g(\tau)}\thinspace y^k\thinspace\frac{dx\thinspace dy}{y^2}
 $$
 
-이 필요한 자기수반성을 준다. 측도 $dx\thinspace dy/y^2$ 가 $\mathrm{SL}\_2(\mathbb R)$ 불변이고 $f\bar gy^k$ 가 $\Gamma$ 불변이라 적분이 잘 정의되며, 첨점형식의 급감으로 수렴한다. 이 내적에 대해 $p\nmid N$ 인 $T_p$ 는 자기수반이고, 가환하는 자기수반 연산자족은 동시에 대각화된다.
+이 필요한 자기수반성을 준다. [측도](measure.md) $dx\thinspace dy/y^2$ 가 $\mathrm{SL}\_2(\mathbb R)$ 불변이고 $f\bar gy^k$ 가 $\Gamma$ 불변이라 적분이 잘 정의되며, 첨점형식의 급감으로 수렴한다. 이 내적에 대해 $p\nmid N$ 인 $T_p$ 는 자기수반이고, 가환하는 자기수반 연산자족은 동시에 대각화된다.
 
 ```mermaid
 graph TD

@@ -76,7 +76,7 @@ graph TD
   LEECH -->|"Z/2 오비폴드"| MOON
 ```
 
-Niemeier 격자 $L$ 에서 격자 VOA $V_L$ 을 만들면 $\dim (V_L)\_1=24+|\lbrace L\text{ 의 근}\rbrace|$ 이고 근계가 $V_1$ 의 Lie 대수가 된다. 근이 없는 유일한 Niemeier 격자가 Leech 격자이고 거기서 나온 $V_\Lambda$ 는 $\dim V_1=24$ 다. $\mathbb Z/2$ 오비폴드를 취해 $V_1$ 을 없애면 달빛 가군 $V^\natural$ 이 된다.
+Niemeier 격자 $L$ 에서 격자 VOA $V_L$ 을 만들면 $\dim (V_L)\_1=24+|\lbrace L\text{ 의 근}\rbrace|$ 이고 근계가 $V_1$ 의 Lie 대수가 된다. 근이 없는 유일한 Niemeier 격자가 Leech 격자이고 거기서 나온 $V_\Lambda$ 는 $\dim V_1=24$ 다. $\mathbb Z/2$ 오비폴드를 취해 $V_1$ 을 없애면 달빛 [가군](modules.md) $V^\natural$ 이 된다.
 
 # 정의
 

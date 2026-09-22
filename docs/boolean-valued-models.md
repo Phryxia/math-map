@@ -73,9 +73,9 @@ $B$ 의 극대 필터 $U$ 로 $V^B$ 를 나누면 두 값 모형이 되고, 이 
 # 활용
 
 - 독립성 증명을 값 계산으로 바꾼다. 연속체 가설, Suslin 가설, [Martin 의 공리](martins-axiom.md)의 무모순성을 가산 추이 모형 없이 보일 수 있다.
-- [토포스](topos-theory.md)의 한 사례를 준다. 완비 Boolean 대수 위의 층 토포스가 Boolean 값 모형에 대응하고, 내부 논리가 고전 논리인 토포스가 된다.
+- [토포스](topos-theory.md)의 한 사례를 준다. 완비 Boolean 대수 위의 [층](sheaves.md) 토포스가 Boolean 값 모형에 대응하고, 내부 논리가 고전 논리인 토포스가 된다.
 - Heyting 대수로 값을 바꾸면 직관주의 집합론의 모형이 나온다. 이 경우 배중률의 값이 $1$ 이 아니고, [직관주의](intuitionism.md) 논리의 독립성 결과가 같은 방법으로 나온다.
-- 확률과의 대응을 준다. 측도 대수 위의 Boolean 값 모형이 [무작위 실수 강제법](random-real-forcing.md)에 대응하고, 값이 사건의 확률처럼 다루어진다.
+- 확률과의 대응을 준다. [측도](measure.md) 대수 위의 Boolean 값 모형이 [무작위 실수 강제법](random-real-forcing.md)에 대응하고, 값이 사건의 확률처럼 다루어진다.
 
 [^1]: John L. Bell, *Set Theory: Boolean-Valued Models and Independence Proofs*, 3rd ed., Oxford University Press (2005), Ch. 1–2. Boolean 값 우주의 구성과 ZFC 공리의 값이 $1$ 임이 이 장들의 내용이다.
 

@@ -97,7 +97,7 @@ flowchart LR
 
 ## 국소 Tate 쌍대성
 
-$K_v$ 를 국소체, $M$ 을 $\char35{}M$ 이 $\mathrm{char}$ 과 서로소인 유한 $G_{K_v}$ 가군, $M^{\ast}=\mathrm{Hom}(M,\mu_{\char35{}M})$ 이라 하자.
+$K_v$ 를 국소체, $M$ 을 $\char35{}M$ 이 $\mathrm{char}$ 과 서로소인 유한 $G_{K_v}$ [가군](modules.md), $M^{\ast}=\mathrm{Hom}(M,\mu_{\char35{}M})$ 이라 하자.
 
 **정리(국소 Tate 쌍대성).** 컵곱과 불변량 사상
 

@@ -67,7 +67,7 @@ $$
 
 Peter–Weyl 이 주는 직교관계 $\int_G\chi_\lambda\overline{\chi_\mu}=\delta_{\lambda\mu}$ 는 $\chi_\lambda\Delta$ 들이 $T$ 위에서 정규직교라는 말이 된다. 반대칭 지수합들도 정규직교이므로 $\chi_\lambda\Delta$ 가 그중 어느 것인지 고르면 증명이 끝난다.
 
-대수적 노선은 Verma 가군 $M_\mu$ 의 지표가 Kostant 분할 함수로 나온다는 관찰에서 출발한다.
+대수적 노선은 Verma [가군](modules.md) $M_\mu$ 의 지표가 Kostant 분할 함수로 나온다는 관찰에서 출발한다.
 
 $$
 \mathrm{ch}M_\mu=\frac{e^\mu}{\prod_{\alpha\in\Phi^+}(1-e^{-\alpha})}
@@ -165,7 +165,7 @@ $$
 s_\lambda(x_1,\dots,x_n)=\frac{\det\negthinspace\big(x_i^{\lambda_j+n-j}\big)}{\det\negthinspace\big(x_i^{n-j}\big)}
 $$
 
-대칭함수론이 $A_{n-1}$ 형 지표 공식의 특수한 경우이고, Littlewood–Richardson 계수는 텐서곱 분해의 중복도다.
+대칭함수론이 $A_{n-1}$ 형 지표 공식의 특수한 경우이고, Littlewood–Richardson 계수는 [텐서곱](tensor-products.md) 분해의 중복도다.
 
 **Weyl 분모 항등식.** $\lambda=0$ 을 넣으면 좌변이 $1$ 이라 분자와 분모가 같아진다.
 

@@ -108,7 +108,7 @@ $$
 \prod_{i,j}\frac1{1-\alpha_i\beta_jq^{-s}}=\det\bigl(1-(A_\pi\otimes A_{\pi'})q^{-s}\bigr)^{-1}=L(s,\pi\times\pi')
 $$
 
-국소 $L$ 인자가 텐서곱 행렬의 특성다항식인 이유가 Cauchy 항등식이다. 자기동형 쪽 적분과 Galois 쪽 $L$ 인자가 같은 수임을 조합론적 항등식 하나가 보인다.
+국소 $L$ 인자가 [텐서곱](tensor-products.md) 행렬의 특성다항식인 이유가 Cauchy 항등식이다. 자기동형 쪽 적분과 Galois 쪽 $L$ 인자가 같은 수임을 조합론적 항등식 하나가 보인다.
 
 $t$ 가 작을수록, 곧 $\mathrm{Re}(s)$ 가 클수록 수렴이 빠르다. [Rankin–Selberg 적분](rankin-selberg.md)이 $\mathrm{Re}(s)$ 가 클 때만 수렴하고 나머지 영역을 해석적 접속으로 얻는 사정이 산술 쪽에 나타난 것이다.
 
@@ -138,7 +138,7 @@ $p$ 진 적분의 값이 모양 $\lambda$ 의 반표준 대각표를 무게로 �
 
 ## 기하적 판본
 
-기하학적 Satake 의 언어로 옮기면 공식이 층의 코호몰로지 계산이 된다. Whittaker 조건을 층 쪽에서 부과하면 아핀 Grassmann 다양체의 $N$ 궤도와 $G(\mathcal O)$ 궤도의 교차가 나오고, 그 교차의 점 개수가 지표의 무게 중복도를 준다. Mirković–Vilonen 순환이 무게 공간의 기저를 주는 그림의 함수 수준 판본이다.
+기하학적 Satake 의 언어로 옮기면 공식이 [층](sheaves.md)의 코호몰로지 계산이 된다. Whittaker 조건을 층 쪽에서 부과하면 아핀 Grassmann 다양체의 $N$ 궤도와 $G(\mathcal O)$ 궤도의 교차가 나오고, 그 교차의 점 개수가 지표의 무게 중복도를 준다. Mirković–Vilonen 순환이 무게 공간의 기저를 주는 그림의 함수 수준 판본이다.
 
 ## 적분 표현의 설계
 

@@ -34,7 +34,7 @@ $\pi$ 의 첫 좌표 주변분포가 $\mu$ , 둘째 좌표 주변분포가 $\nu$
 
 $\mu=\delta_0$ 과 $\nu=\delta_t$ 를 비교한다.
 
-| 측도 | 값 |
+| [측도](measure.md) | 값 |
 |---|---|
 | KL divergence | $t\ne0$ 이면 $\infty$ |
 | 총변동 | $t\ne0$ 이면 2 |

@@ -2,7 +2,7 @@
 
 # 개요
 
-범주 $\mathcal O$ 는 반단순 [Lie 대수](lie-algebras.md)의 가군 가운데 무게 분해가 되고 무게 공간이 유한차원이며 Borel 부분대수의 작용이 국소적으로 유한한 것들의 범주다. Bernstein–Gelfand–Gelfand 가 1976 년에 정의했다.[^1]
+범주 $\mathcal O$ 는 반단순 [Lie 대수](lie-algebras.md)의 [가군](modules.md) 가운데 무게 분해가 되고 무게 공간이 유한차원이며 Borel 부분대수의 작용이 국소적으로 유한한 것들의 범주다. Bernstein–Gelfand–Gelfand 가 1976 년에 정의했다.[^1]
 
 유한차원 표현은 완전가약이라 분류가 최고무게 하나로 끝나지만 제한 없는 $\mathfrak g$ 가군의 범주는 거칠다. 위 세 조건이 그 중간 지대를 잘라낸다.
 

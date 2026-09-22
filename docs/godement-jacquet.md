@@ -133,7 +133,7 @@ $n=1$ 의 자명한 지표에서는 $\zeta$ 함수에 극점이 생기고, $n\ge
 | 군 $\mathbb A^\times$ | $\mathrm{GL}\_n(\mathbb A)$ |
 | 지표 $\chi$ | 행렬 계수 $\langle\pi(g)v,\tilde v\rangle$ |
 | $\lvert x\rvert^s$ | $\lvert\det g\rvert^{s+(n-1)/2}$ |
-| Fourier 변환 $f\mapsto\hat f$ | $\Phi\mapsto\widehat\Phi$ (자기쌍대 측도) |
+| Fourier 변환 $f\mapsto\hat f$ | $\Phi\mapsto\widehat\Phi$ (자기쌍대 [측도](measure.md)) |
 | Poisson 합공식 | 같은 공식, $M_n$ 위에서 |
 | $L$ 인자 $(1-\chi(\varpi)q^{-s})^{-1}$ | $\det(1-q^{-s}A_\pi)^{-1}$ |
 | 근 수 $\varepsilon$ | 같은 꼴의 $\varepsilon(s,\pi)$ |

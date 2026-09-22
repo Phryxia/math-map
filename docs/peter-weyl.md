@@ -8,7 +8,7 @@ $$
 \mathbb C[G]\cong\bigoplus_i V_i^{\oplus\dim V_i}
 $$
 
-증명의 핵심 도구는 군 위의 평균 $\frac1{|G|}\sum_{g\in G}$ 이다. 콤팩트 [Lie 군](lie-groups.md) $G$ 에는 전체 부피가 1 인 불변 측도(Haar 측도)가 있어 이 합을 적분으로 바꿀 수 있고, **Peter–Weyl 정리**가 위 동형을 [Hilbert 공간](hilbert-spaces.md)의 직교분해로 옮긴다.
+증명의 핵심 도구는 군 위의 평균 $\frac1{|G|}\sum_{g\in G}$ 이다. 콤팩트 [Lie 군](lie-groups.md) $G$ 에는 전체 부피가 1 인 불변 [측도](measure.md)(Haar 측도)가 있어 이 합을 적분으로 바꿀 수 있고, **Peter–Weyl 정리**가 위 동형을 [Hilbert 공간](hilbert-spaces.md)의 직교분해로 옮긴다.
 
 $$
 L^2(G)\cong\widehat{\bigoplus_{i}}\ V_i\otimes V_i^\ast

@@ -81,7 +81,7 @@ $$
 
 ## 군 코호몰로지의 낮은 차수
 
-$Q$ 가군 $A$ (곧 $Q$ 가 작용하는 가환군)에 대해
+$Q$ [가군](modules.md) $A$ (곧 $Q$ 가 작용하는 가환군)에 대해
 
 $$
 C^n(Q,A)=\lbrace f:Q^n\to A\rbrace,\qquad

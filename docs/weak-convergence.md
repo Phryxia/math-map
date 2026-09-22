@@ -75,7 +75,7 @@ $$
 | $L^1$ 안의 밀도족 | 균등적분가능 (+ tight) | Dunford–Pettis |
 | $\mathcal P(S)$ 안의 측도족 | tight | Prokhorov |
 
-밀도 수준에서 "높이로 도망가는" 것을 막는 조건이 **UI**(uniform integrability)이고, 측도 수준에서 "멀리 밀려나는" 것을 막는 조건이 tightness 다.
+밀도 수준에서 "높이로 도망가는" 것을 막는 조건이 **UI**(uniform integrability)이고, [측도](measure.md) 수준에서 "멀리 밀려나는" 것을 막는 조건이 tightness 다.
 
 ## Lévy 연속성 정리
 

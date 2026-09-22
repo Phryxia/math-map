@@ -16,7 +16,7 @@ $$
 \mathrm{D}(\mathrm{Bun}\_G)\thickspace\simeq\thickspace\mathrm{QCoh}\big(\mathrm{LocSys}\_{\hat G}\big)\quad(\text{대략})
 $$
 
-왼쪽은 $G$ 다발의 모듈라이 위의 $D$ 가군, 오른쪽은 쌍대군 $\hat G$ 의 국소계가 이루는 스택 위의 준연접층이다. 2024년에 Gaitsgory, Raskin 과 공저자들이 이 진술(비분기, 표수 0)의 증명을 아홉 편의 논문으로 발표했다[^1].
+왼쪽은 $G$ 다발의 모듈라이 위의 $D$ [가군](modules.md), 오른쪽은 쌍대군 $\hat G$ 의 국소계가 이루는 스택 위의 준연접층이다. 2024년에 Gaitsgory, Raskin 과 공저자들이 이 진술(비분기, 표수 0)의 증명을 아홉 편의 논문으로 발표했다[^1].
 
 # 직관
 
@@ -36,7 +36,7 @@ graph TB
 
 ## 함수의 층으로의 승격
 
-유한체 위에서 층 $\mathcal F$ 와 함수 $f_{\mathcal F}$ 를 잇는 사전이 있다.
+유한체 위에서 [층](sheaves.md) $\mathcal F$ 와 함수 $f_{\mathcal F}$ 를 잇는 사전이 있다.
 
 $$
 f_{\mathcal F}(x)=\mathrm{tr}\big(\mathrm{Frob}\_x\mid\mathcal F_{\bar x}\big)

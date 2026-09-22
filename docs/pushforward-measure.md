@@ -26,7 +26,7 @@
 
 ## 상측도
 
-측도 공간 $(X, \Sigma, \mu)$ 와 가측 공간 $(Y, T)$ , 가측함수 $\varphi : X \to Y$ 에 대해
+[측도](measure.md) 공간 $(X, \Sigma, \mu)$ 와 가측 공간 $(Y, T)$ , 가측함수 $\varphi : X \to Y$ 에 대해
 
 $$
 (\phi_\ast\mu)(B)=\mu\negthinspace\left(\phi^{-1}(B)\right),\qquad B\in\mathcal T

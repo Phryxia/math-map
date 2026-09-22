@@ -101,7 +101,7 @@ $$
 
 ## 구조정리와 특성 아이디얼
 
-**정리.** 유한생성 $\Lambda$ 가군 $X$ 에 대해 유한 핵과 여핵을 갖는 사상
+**정리.** 유한생성 $\Lambda$ [가군](modules.md) $X$ 에 대해 유한 핵과 여핵을 갖는 사상
 
 $$
 X\ \longrightarrow\ \Lambda^{r}\oplus\bigoplus_{i}\Lambda/(p^{m_i})\oplus\bigoplus_{j}\Lambda/(f_j^{n_j})

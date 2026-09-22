@@ -53,7 +53,7 @@ $$
 
 ## Stieltjes 변환
 
-측도 $\mu$ 의 **Stieltjes 변환**을 $z\in\mathbb C^+$ 에 대해 다음으로 정의한다.
+[측도](measure.md) $\mu$ 의 **Stieltjes 변환**을 $z\in\mathbb C^+$ 에 대해 다음으로 정의한다.
 
 $$
 m_\mu(z) = \int \frac{d\mu(x)}{x - z} = \frac1N\mathrm{tr}\bigl(A - zI\bigr)^{-1}

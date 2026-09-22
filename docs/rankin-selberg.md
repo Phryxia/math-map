@@ -32,7 +32,7 @@ L(s,\pi_v\times\pi'\_v)=\det\bigl(1-q^{-s}A_{\pi_v}\otimes A_{\pi'\_v}\bigr)^{-1
 =\prod_{i=1}^{n}\prod_{j=1}^{m}\bigl(1-\alpha_i\beta_j\thinspace q^{-s}\bigr)^{-1}
 $$
 
-가 나온다. 쌍대군의 텐서곱 표현에 붙은 $L$ 함수가 적분 하나에서 나온다.
+가 나온다. 쌍대군의 [텐서곱](tensor-products.md) 표현에 붙은 $L$ 함수가 적분 하나에서 나온다.
 
 # 직관
 

@@ -145,7 +145,7 @@ $\ell(w)-\ell(x)$ 가 홀수일 때의 최고차 계수 $\mu(x,w)$ 가 KL 그래
 
 ## Kazhdan–Lusztig 추측
 
-원래 추측은 범주 $\mathcal O$ 의 기약 최고무게 가군 $L_w$ 의 지표에 관한 것이다.
+원래 추측은 범주 $\mathcal O$ 의 기약 최고무게 [가군](modules.md) $L_w$ 의 지표에 관한 것이다.
 
 $$
 \mathrm{ch}\thinspace L_w=\sum_{x\le w}(-1)^{\ell(w)-\ell(x)}P_{x,w}(1)\thinspace\mathrm{ch}\thinspace M_x
