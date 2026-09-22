@@ -151,7 +151,7 @@ $$
 
 ## 선수지식
 
-- [감마 함수와 Stirling 근사](gamma-function.md)
+- [감마 함수](gamma-function.md)
 - [생성함수](generating-functions.md)
 
 ## 더 알아보기

@@ -152,7 +152,7 @@ Montgomery 와 Dyson 은 임계선 위 영점의 간격 분포가 Gauss 유니�
 - [소수 정리](prime-number-theorem.md)
 - [Riemann 가설](riemann-hypothesis.md)
 - [Bernoulli 수와 von Staudt–Clausen 정리](bernoulli-numbers.md)
-- [Eisenstein 급수와 스펙트럼 분해](eisenstein-series.md)
+- [Eisenstein 급수](eisenstein-series.md)
 - [Tate 의 논문](tate-thesis.md)
 
 #number_theory #complex_analysis #analysis

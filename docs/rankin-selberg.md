@@ -260,7 +260,7 @@ $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 의 $L$ 함수는 자기동형 형식의 �
 
 - [Godement–Jacquet 적분](godement-jacquet.md)
 - [Satake 동형과 비분기 Hecke 대수](satake-isomorphism.md)
-- [Eisenstein 급수와 스펙트럼 분해](eisenstein-series.md)
+- [Eisenstein 급수](eisenstein-series.md)
 
 ## 더 알아보기
 

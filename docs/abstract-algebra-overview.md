@@ -61,7 +61,7 @@ graph TD
 - [체](fields.md) → [체의 확대](field-extensions.md) → [유한체](finite-fields.md), [Galois 이론](galois-theory.md)
 - [오류정정부호](error-correcting-codes.md): 유한체 위의 선형 부호, 대수가 통신에 쓰이는 첫 자리
 - [p 진수](p-adic-numbers.md) → [Newton 다각형](newton-polygon.md): 완비화한 체
-- [대수적 수체와 정수환](algebraic-number-fields.md) → [유체론](class-field-theory.md): 이후는 정수론 개관
+- [대수적 수체](algebraic-number-fields.md) → [유체론](class-field-theory.md): 이후는 정수론 개관
 
 ## Lie 이론과 표현론
 

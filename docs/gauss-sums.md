@@ -167,7 +167,7 @@ Deligne 은 국소 근 수가 [Galois 표현](galois-representations.md)의 자�
 ## 선수지식
 
 - [Tate 의 논문](tate-thesis.md)
-- [Dirichlet 지표와 L 함수](dirichlet-l-functions.md)
+- [Dirichlet L 함수](dirichlet-l-functions.md)
 
 ## 더 알아보기
 

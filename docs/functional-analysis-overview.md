@@ -53,7 +53,7 @@ graph TD
 ## 작용소와 스펙트럼
 
 - [열린 사상 정리](open-mapping-theorem.md) — Banach 공간 사이의 전사 유계 작용소는 열린 사상이다. 유계 역작용소 정리와 닫힌 그래프 정리가 따라온다
-- [유계 작용소와 스펙트럼](bounded-operators.md) — 연속과 유계가 동치이고, 스펙트럼이 점·연속·잔여로 갈린다
+- [유계 작용소](bounded-operators.md) — 연속과 유계가 동치이고, 스펙트럼이 점·연속·잔여로 갈린다
 - [비유계 작용소와 Stone 정리](unbounded-operators.md) — 조밀한 정의역에서만 정의되는 자기수반 작용소와 한 매개변수 유니터리 군의 대응
 - [Fredholm 작용소](fredholm-operators.md) — 핵과 여핵이 유한차원인 작용소. 지표가 연속 변형에 불변이다
 - [Fredholm 행렬식](fredholm-determinant.md) — 대각합 유한 작용소의 행렬식. 적분방정식의 해와 결정점과정에 쓴다

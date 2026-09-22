@@ -231,6 +231,6 @@ Rademacher 는 같은 방법으로 $p(n)$ 을 정확히 주는 수렴급수를 �
 - [theta 급수](theta-series.md)
 - [모듈러 곡선](modular-curves.md)
 - [정점작용소대수](vertex-operator-algebras.md)
-- [Eisenstein 급수와 스펙트럼 분해](eisenstein-series.md)
+- [Eisenstein 급수](eisenstein-series.md)
 
 #number_theory #complex_analysis #group_theory

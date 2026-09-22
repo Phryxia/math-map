@@ -249,7 +249,7 @@ CM(complex multiplication) 방법은 원하는 위수를 갖는 타원곡선을 
 
 ## 선수지식
 
-- [대수적 수체와 정수환](algebraic-number-fields.md)
+- [대수적 수체](algebraic-number-fields.md)
 - [이차 상호법칙](quadratic-reciprocity.md)
 
 ## 더 알아보기

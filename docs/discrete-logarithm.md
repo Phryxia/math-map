@@ -138,7 +138,7 @@ Shor 알고리즘은 소인수분해와 이산로그를 다항시간에 푼다. 
 
 ## 더 알아보기
 
-- [타원곡선과 군 구성](elliptic-curves.md)
+- [타원곡선](elliptic-curves.md)
 - [격자 기반 후양자 암호](post-quantum-cryptography.md)
 
 #cryptography #number_theory #group_theory

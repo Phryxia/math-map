@@ -79,7 +79,7 @@ graph TD
 - [Fourier 급수](fourier-series.md): 직교계 전개와 $L^2$ 수렴
 - [이산 Fourier 변환](fourier.md): 유한 순환군 위의 Fourier 해석
 - [Euler–Maclaurin 공식과 점근급수](euler-maclaurin.md): 합과 적분의 차이를 Bernoulli 수로 전개
-- [감마 함수와 Stirling 근사](gamma-function.md): 계승의 해석적 연속
+- [감마 함수](gamma-function.md): 계승의 해석적 연속
 - [Poisson 합 공식](poisson-summation.md): 격자 합과 쌍대격자 합의 등식
 - [Mellin 변환](mellin-transform.md): 곱셈적 구조 위의 적분변환
 
@@ -97,7 +97,7 @@ graph TD
 
 ## 작용소와 함수해석
 
-- [유계 작용소와 스펙트럼](bounded-operators.md): 작용소 노름, 스펙트럼과 분해 스펙트럼
+- [유계 작용소](bounded-operators.md): 작용소 노름, 스펙트럼과 분해 스펙트럼
 - [비유계 작용소와 Stone 정리](unbounded-operators.md): 조밀한 정의역, 자기수반성, 한 모수 유니터리 군
 - [Fredholm 작용소](fredholm-operators.md): 핵과 여핵이 유한차원인 작용소의 정수 불변량
 - [Fredholm 행렬식](fredholm-determinant.md): 핵 작용소의 행렬식과 적분방정식

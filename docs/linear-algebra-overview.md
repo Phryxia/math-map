@@ -54,7 +54,7 @@ graph TD
 
 ## 무한차원
 
-- [Hilbert 공간](hilbert-spaces.md) → [유계 작용소와 스펙트럼](bounded-operators.md) → [Fredholm 작용소](fredholm-operators.md) → [Fredholm 행렬식](fredholm-determinant.md)
+- [Hilbert 공간](hilbert-spaces.md) → [유계 작용소](bounded-operators.md) → [Fredholm 작용소](fredholm-operators.md) → [Fredholm 행렬식](fredholm-determinant.md)
 - [비유계 작용소](unbounded-operators.md): 미분 작용소의 자기수반성
 
 ## 랜덤 행렬

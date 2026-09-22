@@ -180,7 +180,7 @@ Ramanujan 의 mock theta 함수는 전부 무게 $1/2$ 이고 shadow 는 무게 
 ## 선수지식
 
 - [theta 급수](theta-series.md)
-- [Eisenstein 급수와 스펙트럼 분해](eisenstein-series.md)
+- [Eisenstein 급수](eisenstein-series.md)
 
 ## 더 알아보기
 

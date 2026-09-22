@@ -210,7 +210,7 @@ Hilbert 12 번 문제는 임의의 수체 $K$ 의 $K^{\mathrm{ab}}$ 를 해석�
 
 ## 선수지식
 
-- [타원곡선과 군 구성](elliptic-curves.md)
+- [타원곡선](elliptic-curves.md)
 - [유체론](class-field-theory.md)
 
 ## 더 알아보기

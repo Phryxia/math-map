@@ -2,7 +2,7 @@
 
 # 개요
 
-[Galois 표현과 에탈 코호몰로지](galois-representations.md)의 그림에서 Weil 추측의 유리성과 함수방정식은 코호몰로지 이론이 있으면 형식적으로 따라 나오고 [Riemann 가설](riemann-hypothesis.md)만 어렵다.
+[Galois 표현](galois-representations.md)의 그림에서 Weil 추측의 유리성과 함수방정식은 코호몰로지 이론이 있으면 형식적으로 따라 나오고 [Riemann 가설](riemann-hypothesis.md)만 어렵다.
 
 역사는 반대 순서였다. Weil 이 추측을 낸 1949 년부터 11 년 동안 그 코호몰로지가 만들어지지 않았고, 1960 년에 Dwork 가 코호몰로지 없이 유리성을 증명했다. 도구는 $\ell\ne p$ 인 $\ell$ 진 계수가 아니라 표수와 같은 $p$ 의 $p$ 진 해석학이었다.
 
@@ -231,7 +231,7 @@ $n=1$ 하나가 모든 확대체의 값을 결정하며, 이것이 $L$ 함수가
 
 ## 선수지식
 
-- [Galois 표현과 에탈 코호몰로지](galois-representations.md)
+- [Galois 표현](galois-representations.md)
 - [Gauss 합과 국소 근 수](gauss-sums.md)
 - [Newton 다각형](newton-polygon.md)
 

@@ -186,7 +186,7 @@ $L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개�
 ## 더 알아보기
 
 - [Fourier 급수](fourier-series.md)
-- [유계 작용소와 스펙트럼](bounded-operators.md)
+- [유계 작용소](bounded-operators.md)
 - [Peter–Weyl 정리](peter-weyl.md)
 - [구면조화함수](spherical-harmonics.md)
 

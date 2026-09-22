@@ -170,7 +170,7 @@ Kudla–Rallis 는 Eisenstein 급수를 $s$ 의 함수로 놓고 유수를 취�
 ## 선수지식
 
 - [Weil 표현과 theta 대응](weil-representation.md)
-- [Eisenstein 급수와 스펙트럼 분해](eisenstein-series.md)
+- [Eisenstein 급수](eisenstein-series.md)
 
 ## 더 알아보기
 

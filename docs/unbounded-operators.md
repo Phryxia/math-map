@@ -153,7 +153,7 @@ Schrödinger 방정식뿐 아니라 열방정식과 파동방정식도 같은 �
 
 ## 선수지식
 
-- [유계 작용소와 스펙트럼](bounded-operators.md)
+- [유계 작용소](bounded-operators.md)
 
 ## 더 알아보기
 

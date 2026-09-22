@@ -1,4 +1,4 @@
-# 고속 Fourier 변환과 합성곱
+# 고속 Fourier 변환
 
 # 개요
 

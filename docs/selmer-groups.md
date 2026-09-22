@@ -210,7 +210,7 @@ Kato 의 Euler 계는 모듈러 단위에서 오고, Iwasawa 주추측을 통해
 
 ## 선수지식
 
-- [타원곡선과 군 구성](elliptic-curves.md)
+- [타원곡선](elliptic-curves.md)
 - [Brauer 군과 Hasse 원리](brauer-groups.md)
 
 ## 더 알아보기

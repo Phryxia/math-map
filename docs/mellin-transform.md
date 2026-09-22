@@ -181,7 +181,7 @@ $\theta$ 의 변환식을 Mellin 으로 읽으면 $\zeta$ 의 함수방정식이
 
 ## 선수지식
 
-- [감마 함수와 Stirling 근사](gamma-function.md)
+- [감마 함수](gamma-function.md)
 - [Poisson 합 공식](poisson-summation.md)
 
 ## 더 알아보기

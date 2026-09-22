@@ -87,7 +87,7 @@ $h_K$ 는 류수, $w_K$ 는 $\mu_K$ 의 위수, $d_K$ 는 판별식이다. 류�
 
 ## 선수지식
 
-- [대수적 수체와 정수환](algebraic-number-fields.md)
+- [대수적 수체](algebraic-number-fields.md)
 
 ## 더 알아보기
 

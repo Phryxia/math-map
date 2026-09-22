@@ -132,7 +132,7 @@ $$
 ## 선수지식
 
 - [Langlands 강령](langlands-program.md)
-- [Galois 표현과 에탈 코호몰로지](galois-representations.md)
+- [Galois 표현](galois-representations.md)
 
 ## 더 알아보기
 

@@ -147,7 +147,7 @@ Baker 의 방법이 타원곡선 위 정수점의 크기에 유효한 상한을 
 
 ## 선수지식
 
-- [타원곡선과 군 구성](elliptic-curves.md)
+- [타원곡선](elliptic-curves.md)
 
 ## 더 알아보기
 

@@ -131,6 +131,6 @@ Dedekind 정역인 것.
 
 ## 더 알아보기
 
-- [대수적 수체와 정수환](algebraic-number-fields.md)
+- [대수적 수체](algebraic-number-fields.md)
 
 #ring_theory #algebra #number_theory

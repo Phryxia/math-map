@@ -113,7 +113,7 @@ $\left(\frac{-23}p\right)=-1$ 인 소수에서는 Frobenius 가 호환이어야 
 ## 선수지식
 
 - [유체론](class-field-theory.md)
-- [Dirichlet 지표와 L 함수](dirichlet-l-functions.md)
+- [Dirichlet L 함수](dirichlet-l-functions.md)
 
 ## 더 알아보기
 

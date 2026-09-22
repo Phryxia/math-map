@@ -169,7 +169,7 @@ $\Gamma\backslash\mathbb H$ 는 음곡률 곡면이므로 측지선 흐름이 �
 
 ## 선수지식
 
-- [Eisenstein 급수와 스펙트럼 분해](eisenstein-series.md)
+- [Eisenstein 급수](eisenstein-series.md)
 - [Hecke 작용소](hecke-operators.md)
 
 ## 더 알아보기

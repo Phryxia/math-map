@@ -171,7 +171,7 @@ $$
 
 ## 선수지식
 
-- [Eisenstein 급수와 스펙트럼 분해](eisenstein-series.md)
+- [Eisenstein 급수](eisenstein-series.md)
 - [Maass 형식과 Laplace 스펙트럼](maass-forms.md)
 - [Riemann 계량과 측지선](riemannian-metrics.md)
 

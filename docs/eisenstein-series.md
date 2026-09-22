@@ -1,4 +1,4 @@
-# Eisenstein 급수와 스펙트럼 분해
+# Eisenstein 급수
 
 # 개요
 

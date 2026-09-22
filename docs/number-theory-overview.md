@@ -53,7 +53,7 @@ graph TD
 정수론의 어려운 문제가 곧 암호의 안전성이다. 계산 알고리즘도 여기 둔다.
 
 - [이산로그와 Diffie–Hellman](discrete-logarithm.md), [RSA 암호](rsa-cryptosystem.md): 고전 공개키 암호
-- [타원곡선과 군 구성](elliptic-curves.md), [쌍선형 암호](pairing-based-cryptography.md): 곡선 위의 암호
+- [타원곡선](elliptic-curves.md), [쌍선형 암호](pairing-based-cryptography.md): 곡선 위의 암호
 - [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md), [Kedlaya 알고리즘](kedlaya-algorithm.md): 유한체 위 곡선의 점 세기
 - [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md)(supersingular isogeny Diffie–Hellman), [Deuring 대응](deuring-correspondence.md): 동종사상 기반 암호와 그 파괴
 - [격자](lattices.md): 격자 기반 암호의 토대
@@ -62,8 +62,8 @@ graph TD
 
 정수환을 아이디얼로 다시 세우고, 아벨 확대를 정수환의 산술로 기술한다.
 
-- [Dedekind 정역](dedekind-domains.md) → [대수적 수체와 정수환](algebraic-number-fields.md)
-- [대수적 수체와 정수환](algebraic-number-fields.md) → [Dirichlet 단수 정리](dirichlet-unit-theorem.md): 단수군의 계수와 조절자, 류수 공식
+- [Dedekind 정역](dedekind-domains.md) → [대수적 수체](algebraic-number-fields.md)
+- [대수적 수체](algebraic-number-fields.md) → [Dirichlet 단수 정리](dirichlet-unit-theorem.md): 단수군의 계수와 조절자, 류수 공식
 - [p 진수](p-adic-numbers.md) → [Newton 다각형](newton-polygon.md), [아델](adeles.md)
 - [유체론](class-field-theory.md) → [국소 유체론과 Lubin–Tate 형식군](local-class-field-theory.md), [Chebotarev 밀도 정리](chebotarev.md), [복소 곱셈](complex-multiplication.md)
 - [Brauer 군과 Hasse 원리](brauer-groups.md), [Poitou–Tate 완전열](poitou-tate.md): 국소–대역 원리의 코호몰로지
@@ -72,7 +72,7 @@ graph TD
 
 소수를 세려면 복소함수가 필요하다. $\zeta$ 에서 $L$ 함수로, 다시 Tate 의 아델적 재해석으로.
 
-- [Riemann zeta 함수](riemann-zeta.md) → [소수 정리](prime-number-theorem.md) → [Dirichlet 지표와 L 함수](dirichlet-l-functions.md) → [Gauss 합과 국소 근 수](gauss-sums.md)
+- [Riemann zeta 함수](riemann-zeta.md) → [소수 정리](prime-number-theorem.md) → [Dirichlet L 함수](dirichlet-l-functions.md) → [Gauss 합과 국소 근 수](gauss-sums.md)
 - [Riemann 가설](riemann-hypothesis.md): 영점의 실수부와 소수 계량 함수의 오차, GRH 의 응용
 - [Poisson 합 공식](poisson-summation.md), [Mellin 변환](mellin-transform.md), [Euler–Maclaurin 공식](euler-maclaurin.md): 해석적 도구
 - [Bernoulli 수와 von Staudt–Clausen 정리](bernoulli-numbers.md) → [Stickelberger 원소와 Gauss 합](stickelberger.md)
@@ -93,7 +93,7 @@ graph TD
 
 곡선의 유리점을 세는 문제가 $L$ 함수의 영점 차수와 만난다.
 
-- [타원곡선과 군 구성](elliptic-curves.md) → [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md), [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
+- [타원곡선](elliptic-curves.md) → [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md), [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
 - [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md) → [Heegner 점과 Gross–Zagier 공식](heegner-points.md), [Kolyvagin–Logachev 정리](kolyvagin-logachev.md)
 - [Euler 계와 Kolyvagin 유도류](euler-systems.md) → [Kolyvagin 계](kolyvagin-systems.md), [Iwasawa 주추측](iwasawa-main-conjecture.md) → [Vandiver 추측](vandiver-conjecture.md), [Greenberg 추측](greenberg-conjecture.md)
 - [Eisenstein 아이디얼과 Mazur 의 비틀림점 정리](eisenstein-ideal.md) → [Merel 의 일양 유계성 정리](merel-theorem.md)
@@ -103,7 +103,7 @@ graph TD
 
 정수론의 대상을 Galois 군의 표현으로 바꿔 읽는다. 모듈러성 정리가 사는 곳이다.
 
-- [Galois 표현과 에탈 코호몰로지](galois-representations.md) → [Galois 표현의 변형과 보편 변형환](deformation-rings.md) → [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
+- [Galois 표현](galois-representations.md) → [Galois 표현의 변형과 보편 변형환](deformation-rings.md) → [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
 - [Fontaine–Mazur 추측](fontaine-mazur.md), [p 진 Hodge 이론](p-adic-hodge-theory.md) → [Sen 이론](sen-theory.md)
 - [Herbrand–Ribet 정리](herbrand-ribet.md): 류수와 모듈러 형식의 합동
 - [Dwork 의 유리성 정리](dwork-rationality.md) → [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)

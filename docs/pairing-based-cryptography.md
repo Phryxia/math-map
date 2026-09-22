@@ -163,7 +163,7 @@ zk-SNARK(zero-knowledge succinct non-interactive argument of knowledge)의 검�
 
 ## 선수지식
 
-- [타원곡선과 군 구성](elliptic-curves.md)
+- [타원곡선](elliptic-curves.md)
 
 ## 더 알아보기
 

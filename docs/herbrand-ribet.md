@@ -175,7 +175,7 @@ Skinner–Urban 은 $\mathrm{GL}\_2$ 의 Eisenstein 급수를 $\mathrm{GSp}\_4$ 
 ## 선수지식
 
 - [Stickelberger 원소와 Gauss 합](stickelberger.md)
-- [Galois 표현과 에탈 코호몰로지](galois-representations.md)
+- [Galois 표현](galois-representations.md)
 
 ## 더 알아보기
 

@@ -147,7 +147,7 @@ $$
 
 ## 선수지식
 
-- [유계 작용소와 스펙트럼](bounded-operators.md)
+- [유계 작용소](bounded-operators.md)
 
 ## 더 알아보기
 

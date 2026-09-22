@@ -133,7 +133,7 @@ $$
 ## 선수지식
 
 - [단체 호몰로지](homology.md)
-- [Galois 표현과 에탈 코호몰로지](galois-representations.md)
+- [Galois 표현](galois-representations.md)
 
 ## 더 알아보기
 

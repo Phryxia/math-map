@@ -152,7 +152,7 @@ $$
 
 - [Euler 지표](euler-characteristic.md)
 - [de Rham 코호몰로지](de-rham-cohomology.md)
-- [Galois 표현과 에탈 코호몰로지](galois-representations.md)
+- [Galois 표현](galois-representations.md)
 - [Khovanov 호몰로지](khovanov-homology.md)
 - [Reidemeister 비틀림과 렌즈 공간](reidemeister-torsion.md)
 - [대수적 K 이론과 Quillen–Lichtenbaum](algebraic-k-theory.md)

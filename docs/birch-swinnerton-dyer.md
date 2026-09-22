@@ -144,7 +144,7 @@ BSD 가 참이면 순위 계산이 유한 시간에 끝난다. $L$ 함수 쪽에
 ## 선수지식
 
 - [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
-- [Dirichlet 지표와 L 함수](dirichlet-l-functions.md)
+- [Dirichlet L 함수](dirichlet-l-functions.md)
 - [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md)
 
 ## 더 알아보기

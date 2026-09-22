@@ -1,4 +1,4 @@
-# Dirichlet 지표와 L 함수
+# Dirichlet L 함수
 
 # 개요
 

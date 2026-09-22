@@ -332,7 +332,7 @@ Fontaine–Wintenberger 의 노름체 대응은 $p$ 진 탑을 충분히 올라�
 ## 선수지식
 
 - [국소 유체론과 Lubin–Tate 형식군](local-class-field-theory.md)
-- [Galois 표현과 에탈 코호몰로지](galois-representations.md)
+- [Galois 표현](galois-representations.md)
 
 ## 더 알아보기
 

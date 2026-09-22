@@ -140,7 +140,7 @@ $\mathbb{F}\_q$ 위의 사영평면은 위수 $q$ 의 유한사영평면을 주�
 ## 더 알아보기
 
 - [오류정정부호](error-correcting-codes.md)
-- [타원곡선과 군 구성](elliptic-curves.md)
+- [타원곡선](elliptic-curves.md)
 - [이차 상호법칙](quadratic-reciprocity.md)
 - [Ax–Grothendieck 정리](ax-grothendieck.md)
 
