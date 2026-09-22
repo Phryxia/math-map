@@ -18,7 +18,7 @@ Fredholm 은 1900 년에 유한차원 행렬식이 만족하는 급수 전개를
 
 ## 자취류 조건
 
-대각화 가능한 유한차원 행렬에서 $\det(I - K) = \prod_i (1 - \lambda_i)$ 다. 무한차원에서 이 곱이 수렴하려면 $\sum_i|\lambda_i| \lt\infty$ 여야 한다. 이것이 **자취류**(trace class) 조건이다.
+[대각화](eigenvalues.md) 가능한 유한차원 행렬에서 $\det(I - K) = \prod_i (1 - \lambda_i)$ 다. 무한차원에서 이 곱이 수렴하려면 $\sum_i|\lambda_i| \lt\infty$ 여야 한다. 이것이 **자취류**(trace class) 조건이다.
 
 콤팩트성만으로는 부족하다. 콤팩트이면 $\lambda_i \to 0$ 이지만 $\lambda_i = 1/i$ 처럼 느리게 갈 수 있고 그러면 $\prod(1-\lambda_i)$ 가 0 으로 발산한다. 고유값이 합할 수 있을 만큼 빨리 줄어야 하고, 자취류가 그 조건이다.
 

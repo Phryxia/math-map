@@ -32,7 +32,7 @@ $$
 
 ## 합성곱과 성분별 곱
 
-두 수열의 순환 합성곱은 정의대로 하면 $O(N^2)$ 이다. Fourier 기저에서는 순환 이동이 대각화되어 합성곱이 성분별 곱이 된다.
+두 수열의 순환 합성곱은 정의대로 하면 $O(N^2)$ 이다. Fourier 기저에서는 순환 이동이 [대각화](eigenvalues.md)되어 합성곱이 성분별 곱이 된다.
 
 $$
 \mathcal F(x\ast y)=\mathcal F(x)\cdot\mathcal F(y)
