@@ -95,7 +95,7 @@ $$\text{minimize}\thinspace\sum_{s}V(s)\quad\text{subject to}\quad V(s)\ge r(s,a
 # 활용
 
 - **최단경로.** 전이가 결정적이고 $\gamma=1$ 이면 Bellman 최적 방정식이 최단경로의 완화 식이 된다. 값 반복이 Bellman–Ford 반복이고, 할인율이 수축을 주는 자리에 음수 사이클의 부재가 들어간다.
-- **강화학습.** $P$ 와 $r$ 을 모르고 표본만 얻는 경우다. Bellman 작용소를 표본으로 근사한 것이 Q 학습의 갱신식이고, 축약성이 그 수렴 증명의 근거다.
+- **강화학습.** $P$ 와 $r$ 을 모르고 표본만 얻는 경우다. Bellman 작용소를 표본으로 근사한 것이 [Q 학습](q-learning.md)의 갱신식이고, 축약성이 그 수렴 증명의 근거다.
 - **재고와 대기행렬의 제어.** 재고 수준이 상태, 주문량이 행동, 보관비와 품절비의 합이 보상이다. 최적 정책이 기준값 하나로 적히는 조건을 이 틀에서 찾는다.
 - **[최적 정지](optimal-stopping.md).** 행동이 "멈춘다" 와 "계속한다" 둘뿐인 경우이고, 계속의 가치와 멈춤의 보상을 비교하는 것이 Bellman 방정식이다. [Martingale](martingales.md)의 선택적 정지가 다루는 문제와 같은 대상이다.
 
@@ -113,6 +113,7 @@ $$\text{minimize}\thinspace\sum_{s}V(s)\quad\text{subject to}\quad V(s)\ge r(s,a
 
 ## 더 알아보기
 
+- [Q 학습](q-learning.md)
 - [최적 정지](optimal-stopping.md)
 
 #probability #optimization #algorithms #machine_learning
