@@ -1,4 +1,4 @@
-# Dedekind 정역과 아이디얼의 유일분해
+# Dedekind 정역
 
 # 개요
 

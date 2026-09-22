@@ -212,6 +212,6 @@ $p=5$ 에서 유리수의 부치 $v_5$ 와 $\mathbb Z_{(5)}$ 에서의 가역 �
 ## 더 알아보기
 
 - [Nakayama 보조정리](nakayama-lemma.md)
-- [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md)
+- [Dedekind 정역](dedekind-domains.md)
 
 #ring_theory #algebra #number_theory

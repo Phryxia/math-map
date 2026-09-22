@@ -304,7 +304,7 @@ LMFDB(L-functions and modular forms database) 의 자기동형 형식 표가 저
 
 ## 선수지식
 
-- [Hecke 작용소와 새형식](hecke-operators.md)
+- [Hecke 작용소](hecke-operators.md)
 - [Godement–Jacquet 적분](godement-jacquet.md)
 
 ## 더 알아보기

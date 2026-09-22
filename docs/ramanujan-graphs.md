@@ -104,7 +104,7 @@ Friedman 의 정리는 무작위 $d$ 정규 그래프가 높은 확률로 $\lamb
 
 ## 선수지식
 
-- [Expander 그래프와 스펙트럼 간극](expander-graphs.md)
+- [Expander 그래프](expander-graphs.md)
 
 ## 더 알아보기
 

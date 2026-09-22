@@ -196,7 +196,7 @@ Pollack–Stevens 의 **과수렴 모듈러 기호**는 계수 가군 $V_{k-2}$ 
 ## 선수지식
 
 - [모듈러 곡선](modular-curves.md)
-- [Hecke 작용소와 새형식](hecke-operators.md)
+- [Hecke 작용소](hecke-operators.md)
 
 ## 더 알아보기
 

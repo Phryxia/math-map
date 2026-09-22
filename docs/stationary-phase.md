@@ -140,7 +140,7 @@ $$
 
 ## 선수지식
 
-- [Laplace 방법과 안장점](laplace-method.md)
+- [Laplace 방법](laplace-method.md)
 
 ## 더 알아보기
 

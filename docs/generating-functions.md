@@ -170,7 +170,7 @@ $$
 
 - [Lagrange 반전 공식](lagrange-inversion.md)
 - [조합적 종](combinatorial-species.md)
-- [Laplace 방법과 안장점](laplace-method.md)
+- [Laplace 방법](laplace-method.md)
 - [분할수](partitions.md)
 
 #combinatorics #analysis #probability

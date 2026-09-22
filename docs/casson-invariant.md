@@ -122,7 +122,7 @@ $\Delta''(1)$ 은 언제나 짝수다. $\Delta(t)=\Delta(t^{-1})$ 이라 계수�
 
 ## 선수지식
 
-- [Chern–Simons 이론과 레벨 양자화](chern-simons.md)
+- [Chern–Simons 이론](chern-simons.md)
 
 ## 더 알아보기
 

@@ -69,7 +69,7 @@ graph TD
 
 - [그래프 Laplacian](graph-laplacian.md): 차수행렬과 인접행렬의 차, 고윳값과 연결성분
 - [유효저항](effective-resistance.md): 그래프를 전기 회로로 읽는다
-- [Expander 그래프와 스펙트럼 간극](expander-graphs.md): 성김과 강한 연결성의 공존
+- [Expander 그래프](expander-graphs.md): 성김과 강한 연결성의 공존
 - [Ramanujan 그래프의 명시적 구성](ramanujan-graphs.md): 스펙트럼 간극의 최적 경계를 달성하는 구성
 - [스펙트럼 희소화](spectral-sparsification.md): 유효저항 표본추출로 간선 수를 줄인다
 

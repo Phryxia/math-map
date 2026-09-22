@@ -130,7 +130,7 @@ $$
 ### 스펙트럼이 쓰이는 곳
 
 - [Perron–Frobenius 정리](perron-frobenius.md)
-- [Expander 그래프와 스펙트럼 간극](expander-graphs.md)
+- [Expander 그래프](expander-graphs.md)
 - [군의 표현](group-representations.md)
 - [Wigner 반원법칙](wigner-semicircle.md)
 

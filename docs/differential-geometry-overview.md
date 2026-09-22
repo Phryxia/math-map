@@ -64,7 +64,7 @@ graph TD
 ## Lie 군과 게이지 이론
 
 - [Lie 군](lie-groups.md): 군 구조와 매끄러운 구조를 함께 가진 공간
-- [Chern–Simons 이론과 레벨 양자화](chern-simons.md): 3 차원 다양체 위의 위상적 게이지 이론
+- [Chern–Simons 이론](chern-simons.md): 3 차원 다양체 위의 위상적 게이지 이론
 - [Wess–Zumino–Witten 모형과 벌크–경계 대응](wess-zumino-witten.md): 경계의 공형장론과의 대응
 
 # 연관 문서

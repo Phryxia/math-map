@@ -145,7 +145,7 @@ Dinur 증명[^2]의 핵심 연산은 제약 그래프 $G$ 를 $t$ 거듭제곱�
 ## 선수지식
 
 - [근사 알고리즘](approximation-algorithms.md)
-- [Expander 그래프와 스펙트럼 간극](expander-graphs.md)
+- [Expander 그래프](expander-graphs.md)
 
 ## 더 알아보기
 

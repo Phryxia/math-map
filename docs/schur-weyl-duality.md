@@ -151,6 +151,6 @@ $n\ge k$ 이면 $\mathbb C[S_k]\to\mathcal S$ 가 단사이고 $\mathcal S\cong\
 
 ## 더 알아보기
 
-- [Brauer 대수와 직교군 쌍대성](brauer-algebras.md)
+- [Brauer 대수](brauer-algebras.md)
 
 #algebra #group_theory #combinatorics #linear_algebra

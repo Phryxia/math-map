@@ -1,4 +1,4 @@
-# Laplace 방법과 안장점
+# Laplace 방법
 
 # 개요
 

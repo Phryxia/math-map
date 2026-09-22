@@ -62,7 +62,7 @@ graph TD
 
 정수환을 아이디얼로 다시 세우고, 아벨 확대를 정수환의 산술로 기술한다.
 
-- [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md) → [대수적 수체와 정수환](algebraic-number-fields.md)
+- [Dedekind 정역](dedekind-domains.md) → [대수적 수체와 정수환](algebraic-number-fields.md)
 - [대수적 수체와 정수환](algebraic-number-fields.md) → [Dirichlet 단수 정리](dirichlet-unit-theorem.md): 단수군의 계수와 조절자, 류수 공식
 - [p 진수](p-adic-numbers.md) → [Newton 다각형](newton-polygon.md), [아델](adeles.md)
 - [유체론](class-field-theory.md) → [국소 유체론과 Lubin–Tate 형식군](local-class-field-theory.md), [Chebotarev 밀도 정리](chebotarev.md), [복소 곱셈](complex-multiplication.md)
@@ -74,7 +74,7 @@ graph TD
 
 - [Riemann zeta 함수](riemann-zeta.md) → [소수 정리](prime-number-theorem.md) → [Dirichlet 지표와 L 함수](dirichlet-l-functions.md) → [Gauss 합과 국소 근 수](gauss-sums.md)
 - [Riemann 가설](riemann-hypothesis.md): 영점의 실수부와 소수 계량 함수의 오차, GRH 의 응용
-- [Poisson 합 공식](poisson-summation.md), [Mellin 변환과 Perron 공식](mellin-transform.md), [Euler–Maclaurin 공식](euler-maclaurin.md): 해석적 도구
+- [Poisson 합 공식](poisson-summation.md), [Mellin 변환](mellin-transform.md), [Euler–Maclaurin 공식](euler-maclaurin.md): 해석적 도구
 - [Bernoulli 수와 von Staudt–Clausen 정리](bernoulli-numbers.md) → [Stickelberger 원소와 Gauss 합](stickelberger.md)
 - [Tate 의 논문](tate-thesis.md): $\zeta$ 함수의 아델적 증명
 
@@ -82,7 +82,7 @@ graph TD
 
 상반평면 위의 대칭 함수가 정수론의 생성함수 역할을 한다.
 
-- [모듈러 형식](modular-forms.md) → [Eisenstein 급수](eisenstein-series.md), [Hecke 작용소와 새형식](hecke-operators.md), [theta 급수](theta-series.md)
+- [모듈러 형식](modular-forms.md) → [Eisenstein 급수](eisenstein-series.md), [Hecke 작용소](hecke-operators.md), [theta 급수](theta-series.md)
 - [Maass 형식](maass-forms.md), [Selberg 대각합 공식](selberg-trace-formula.md): 비정칙 스펙트럼
 - [모듈러 곡선](modular-curves.md) → [모듈러 기호](modular-symbols.md), [과수렴 모듈러 기호와 p 진 L 함수](overconvergent-modular-symbols.md)
 - [분할수](partitions.md), [Mock 모듈러 형식](mock-modular-forms.md), [Dyson 의 rank 와 crank](dyson-rank-crank.md), [Borcherds 곱](borcherds-products.md): 조합론과의 접점
@@ -128,7 +128,7 @@ graph TD
 ## 더 알아보기
 
 - [정수의 합동](modular-arithmetic.md)
-- [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md)
+- [Dedekind 정역](dedekind-domains.md)
 - [격자](lattices.md)
 - [모듈러 형식](modular-forms.md)
 

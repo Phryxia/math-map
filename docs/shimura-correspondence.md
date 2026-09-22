@@ -145,7 +145,7 @@ $n$ 이 직각삼각형의 넓이가 될 수 있는지는 타원곡선 $y^2=x^3-
 ## 선수지식
 
 - [Weil 표현과 theta 대응](weil-representation.md)
-- [Hecke 작용소와 새형식](hecke-operators.md)
+- [Hecke 작용소](hecke-operators.md)
 
 ## 더 알아보기
 

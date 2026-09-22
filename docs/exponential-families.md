@@ -167,7 +167,7 @@ $$
 \max_{p}\thickspace H(p) \quad \text{s.t.} \quad \mathbb{E}\_{p}[T(X)] = \mu, \thickspace\thickspace \int p \thinspace d\nu = 1
 $$
 
-의 해는 제약의 Lagrange 승수를 $\eta$ 로 하는 지수족 분포 $p(x \mid \eta) = h(x)\exp(\eta^{\top}T(x) - A(\eta))$ 다([Lagrange 쌍대성과 KKT 조건](lagrange-duality.md)). 목표 분포 $p$ 와 지수족 분포 $q$ 의 KL divergence 가 비음이고 모멘트 제약 아래에서 교차항이 상쇄되므로
+의 해는 제약의 Lagrange 승수를 $\eta$ 로 하는 지수족 분포 $p(x \mid \eta) = h(x)\exp(\eta^{\top}T(x) - A(\eta))$ 다([Lagrange 쌍대성](lagrange-duality.md)). 목표 분포 $p$ 와 지수족 분포 $q$ 의 KL divergence 가 비음이고 모멘트 제약 아래에서 교차항이 상쇄되므로
 
 $$
 H(p) = H(q) - D_{\mathrm{KL}}(p \thinspace\Vert\thinspace q) \le H(q)

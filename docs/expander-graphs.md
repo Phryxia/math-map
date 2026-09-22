@@ -1,4 +1,4 @@
-# Expander 그래프와 스펙트럼 간극
+# Expander 그래프
 
 # 개요
 

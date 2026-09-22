@@ -160,7 +160,7 @@ Rice 정리는 정확한 분석을 금지할 뿐 한쪽으로 치우친 분석�
 
 ## 선수지식
 
-- [Galois 연결과 완비 격자](galois-connections.md)
+- [Galois 연결](galois-connections.md)
 - [Rice 정리](rice-theorem.md)
 
 ## 더 알아보기

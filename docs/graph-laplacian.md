@@ -136,6 +136,6 @@ $dx/dt = -Lx$ 는 그래프 위의 열방정식이고 해가 $e^{-tL}x_0$ 다. �
 ## 더 알아보기
 
 - [유효저항](effective-resistance.md)
-- [Expander 그래프와 스펙트럼 간극](expander-graphs.md)
+- [Expander 그래프](expander-graphs.md)
 
 #graph_theory #linear_algebra

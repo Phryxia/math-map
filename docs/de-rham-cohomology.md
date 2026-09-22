@@ -148,6 +148,6 @@ $$
 
 - [Hodge 이론](hodge-theory.md)
 - [특성류](characteristic-classes.md)
-- [Chern–Simons 이론과 레벨 양자화](chern-simons.md)
+- [Chern–Simons 이론](chern-simons.md)
 
 #algebraic_topology #differential_geometry #analysis

@@ -1,4 +1,4 @@
-# Lagrange 쌍대성과 KKT 조건
+# Lagrange 쌍대성
 
 # 개요
 

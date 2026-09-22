@@ -31,7 +31,7 @@ graph TD
 - [생성함수](generating-functions.md) → [분할수](partitions.md): 수열을 함수로 바꿔 세기
 - [Burnside 보조정리](burnside-lemma.md): 궤도 개수를 고정점 개수의 평균으로 세기
 - [Pólya 세기 정리](polya-enumeration.md): 대칭을 무시한 색칠의 개수
-- [Laplace 방법과 안장점](laplace-method.md): 세는 수의 점근
+- [Laplace 방법](laplace-method.md): 세는 수의 점근
 
 ## 극단 조합론과 확률적 방법
 

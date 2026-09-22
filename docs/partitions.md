@@ -160,7 +160,7 @@ Hardy–Littlewood 가 원법을 가법적 문제 전반으로 확장했다.
 
 - [생성함수](generating-functions.md)
 - [모듈러 형식](modular-forms.md)
-- [Laplace 방법과 안장점](laplace-method.md)
+- [Laplace 방법](laplace-method.md)
 
 ## 더 알아보기
 

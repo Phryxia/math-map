@@ -81,11 +81,11 @@ graph TD
 - [Euler–Maclaurin 공식과 점근급수](euler-maclaurin.md): 합과 적분의 차이를 Bernoulli 수로 전개
 - [감마 함수와 Stirling 근사](gamma-function.md): 계승의 해석적 연속
 - [Poisson 합 공식](poisson-summation.md): 격자 합과 쌍대격자 합의 등식
-- [Mellin 변환과 Perron 공식](mellin-transform.md): 곱셈적 구조 위의 적분변환
+- [Mellin 변환](mellin-transform.md): 곱셈적 구조 위의 적분변환
 
 ## 점근해석과 재합산
 
-- [Laplace 방법과 안장점](laplace-method.md): 지수적으로 집중된 적분의 주항
+- [Laplace 방법](laplace-method.md): 지수적으로 집중된 적분의 주항
 - [정상위상법과 안장점 근사](stationary-phase.md): 진동적분의 위상이 멈추는 자리
 - [Stokes 현상과 재합산](stokes-phenomenon.md): 점근전개의 계수가 불연속으로 바뀌는 선
 - [Padé 근사와 Borel 재합산](borel-pade.md): 발산급수에 값을 주는 두 방법

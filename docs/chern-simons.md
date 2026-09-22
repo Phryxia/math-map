@@ -1,4 +1,4 @@
-# Chern–Simons 이론과 레벨 양자화
+# Chern–Simons 이론
 
 # 개요
 

@@ -6,7 +6,7 @@
 
 최적화 문서는 네 줄기다. 볼록성과 쌍대성의 이론, 반복법으로 해를 찾는 알고리즘, 조합 문제를 완화해 푸는 선형·반정부호 계획법, 그리고 확률분포 사이의 거리를 최소화하는 최적 수송이다. 근사 알고리즘의 복잡도 쪽은 [PCP 정리](pcp-theorem.md)(probabilistically checkable proof)와 [유일게임 추측](unique-games.md)에 있다.
 
-시작은 [볼록성](convexity.md)이다. 거기서 [Lagrange 쌍대성과 KKT 조건](lagrange-duality.md)(Karush–Kuhn–Tucker)이 이론의 축으로, [경사하강법](gradient-descent.md)이 알고리즘의 축으로, [선형계획법](linear-programming.md)이 조합 최적화의 축으로 갈라진다.
+시작은 [볼록성](convexity.md)이다. 거기서 [Lagrange 쌍대성](lagrange-duality.md)이 이론의 축으로, [경사하강법](gradient-descent.md)이 알고리즘의 축으로, [선형계획법](linear-programming.md)이 조합 최적화의 축으로 갈라진다.
 
 # 지도
 
@@ -38,7 +38,7 @@ graph TD
 ## 볼록성과 쌍대성
 
 - [볼록성](convexity.md): 볼록집합과 볼록함수, 국소 최적해가 전역 최적해가 되는 조건
-- [Lagrange 쌍대성과 KKT 조건](lagrange-duality.md): 제약을 쌍대변수로 옮기는 변환과 최적성 조건
+- [Lagrange 쌍대성](lagrange-duality.md): 제약을 쌍대변수로 옮기는 변환과 최적성 조건
 
 ## 반복 알고리즘
 

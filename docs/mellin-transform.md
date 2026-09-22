@@ -1,4 +1,4 @@
-# Mellin 변환과 Perron 공식
+# Mellin 변환
 
 # 개요
 

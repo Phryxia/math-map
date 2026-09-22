@@ -197,7 +197,7 @@ Ring-LWE(learning with errors) 가 쓰는 $\mathbb Z[x]/(x^n+1)$ 은 $\mathbb Z[
 
 ## 선수지식
 
-- [Dedekind 정역과 아이디얼의 유일분해](dedekind-domains.md)
+- [Dedekind 정역](dedekind-domains.md)
 - [Galois 이론](galois-theory.md)
 
 ## 더 알아보기
