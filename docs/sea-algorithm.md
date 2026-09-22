@@ -158,7 +158,7 @@ Schoof 원본은 $\tilde O(\log^5p)$ 이고 Elkies–Atkin 개선으로 $\tilde 
 
 ## 대각합과 행렬식
 
-> $\ell\ne p$ 인 소수에 대해 $\varphi$ 는 $E[\ell]\cong(\mathbb Z/\ell)^2$ 위의 $\mathbb F_\ell$ 선형사상이고
+> $\ell\ne p$ 인 소수에 대해 $\varphi$ 는 $E[\ell]\cong(\mathbb Z/\ell)^2$ 위의 $\mathbb F_\ell$ [선형사상](linear-maps.md)이고
 > $$\mathrm{tr}\equiv a_p\pmod\ell,\qquad\det\equiv p\pmod\ell$$
 
 $\ell=p$ 를 뺀 것은 $E[p]$ 가 $(\mathbb Z/p)^2$ 가 아니기 때문이다. 보통 곡선이면 $\mathbb Z/p$ 이고 초특이면 자명군이다. 이 퇴화가 [Newton 다각형](newton-polygon.md)의 보통과 초특이 구분에 대응한다.

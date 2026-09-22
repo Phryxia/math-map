@@ -2,7 +2,7 @@
 
 # 개요
 
-유계 작용소는 Hilbert 공간 사이의 연속 선형사상이고, 그 스펙트럼은 $T-\lambda I$ 가 가역이 아닌 $\lambda$ 들의 집합이다.
+유계 작용소는 Hilbert 공간 사이의 연속 [선형사상](linear-maps.md)이고, 그 스펙트럼은 $T-\lambda I$ 가 가역이 아닌 $\lambda$ 들의 집합이다.
 
 유한차원에서 [스펙트럼 정리](spectral-theorem.md)는 자기수반 행렬을 고유벡터의 정규직교기저로 대각화하고, 고유값은 [특성다항식](eigenvalues.md)의 근이므로 반드시 존재한다. 무한차원 [Hilbert 공간](hilbert-spaces.md)에는 특성다항식이 없고 고유값이 하나도 없는 자기수반 작용소가 있다. $L^2[0,1]$ 의 $f(x)\mapsto xf(x)$ 는 자기수반이지만 $xf = \lambda f$ 를 만족하는 0 이 아닌 $f$ 가 없다.
 

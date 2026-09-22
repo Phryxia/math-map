@@ -138,7 +138,7 @@ $$
 
 ## shadow 가 남기는 자유도
 
-$\xi_k$ 는 조화 Maass 형식 공간에서 무게 $2-k$ 모듈러 형식 공간으로 가는 전사 선형사상이고 핵은 약정칙 모듈러 형식이다.
+$\xi_k$ 는 조화 Maass 형식 공간에서 무게 $2-k$ 모듈러 형식 공간으로 가는 전사 [선형사상](linear-maps.md)이고 핵은 약정칙 모듈러 형식이다.
 
 $$
 0\to M^!\_k(\Gamma)\to H_k(\Gamma)\xrightarrow{\ \xi_k\ } M_{2-k}(\Gamma)\to 0

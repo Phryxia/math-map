@@ -2,7 +2,7 @@
 
 # 개요
 
-유한 차원에서 선형사상 $T\colon V\to W$ 의 지표
+유한 차원에서 [선형사상](linear-maps.md) $T\colon V\to W$ 의 지표
 
 $$
 \mathrm{ind}(T)=\dim\ker T-\dim\mathrm{coker}\thinspace T

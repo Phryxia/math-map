@@ -84,7 +84,7 @@ $$
 
 ## Whittaker 모형
 
-$(\pi,V)$ 를 $\mathrm{GL}\_n(F)$ 의 기약 허용 표현이라 하자. **Whittaker 범함수**는 다음을 만족하는 선형사상 $\lambda:V\to\mathbb C$ 다.
+$(\pi,V)$ 를 $\mathrm{GL}\_n(F)$ 의 기약 허용 표현이라 하자. **Whittaker 범함수**는 다음을 만족하는 [선형사상](linear-maps.md) $\lambda:V\to\mathbb C$ 다.
 
 $$
 \lambda(\pi(u)v)=\psi_N(u)\thinspace\lambda(v),\qquad u\in N_n(F)

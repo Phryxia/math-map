@@ -43,7 +43,7 @@ $$
 f \circ \rho(g) = \sigma(g) \circ f \quad (\forall g \in G)
 $$
 
-를 만족하는 선형사상 $f : V \to W$ 다. 그 전체를 $\mathrm{Hom}\_G(V, W)$ 로 쓴다.
+를 만족하는 [선형사상](linear-maps.md) $f : V \to W$ 다. 그 전체를 $\mathrm{Hom}\_G(V, W)$ 로 쓴다.
 
 ## 지표
 
