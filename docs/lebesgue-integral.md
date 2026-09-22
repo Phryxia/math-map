@@ -86,7 +86,7 @@ $$
 
 ## 완비성
 
-$L^1(\mu)$ 는 $\lVert f \rVert_1 = \int \lvert f \rvert\thinspace d\mu$ 로 완비 노름공간이다(Riesz–Fischer 정리). 증명에 지배수렴 정리를 쓴다. Riemann 적분 가능한 함수에 같은 노름을 주면 완비가 아니다. 같은 방식으로 $L^2$ 는 Hilbert 공간이고 Fourier 해석은 이 공간에서 한다.
+$L^1(\mu)$ 는 $\lVert f \rVert_1 = \int \lvert f \rvert\thinspace d\mu$ 로 완비 노름공간이다(Riesz–Fischer 정리). 증명에 지배수렴 정리를 쓴다. Riemann 적분 가능한 함수에 같은 노름을 주면 완비가 아니다. 같은 방식으로 $L^2$ 는 [Hilbert 공간](hilbert-spaces.md)이고 Fourier 해석은 이 공간에서 한다.
 
 ## 측도의 교체
 

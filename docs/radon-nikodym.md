@@ -56,7 +56,7 @@ $\sigma$ -유한성은 뺄 수 없다. $\mathbb R$ 의 Borel 집합에 $\mu$ 를
 
 $\mu(E) = 0$ 이면 $E$ 위의 적분이 $0$ 이므로 $\nu(E) = 0$ 이다. 정리의 내용은 $\sigma$ -유한성 아래에서 이 조건이 충분하다는 것이다.
 
-표준 증명은 $\lbrace g \ge 0 : \int_E g \thinspace d\mu \le \nu(E) \text{ for all } E\rbrace$ 라는 함수족의 상한을 취하고, [단조수렴 정리](monotone-convergence.md)로 그 상한이 밀도임을 보인다. Hilbert 공간의 사영을 쓰는 von Neumann 의 증명은 조건부 기댓값이 사영이라는 관점으로 이어진다.
+표준 증명은 $\lbrace g \ge 0 : \int_E g \thinspace d\mu \le \nu(E) \text{ for all } E\rbrace$ 라는 함수족의 상한을 취하고, [단조수렴 정리](monotone-convergence.md)로 그 상한이 밀도임을 보인다. [Hilbert 공간](hilbert-spaces.md)의 사영을 쓰는 von Neumann 의 증명은 조건부 기댓값이 사영이라는 관점으로 이어진다.
 
 ## 도함수의 연산 규칙
 

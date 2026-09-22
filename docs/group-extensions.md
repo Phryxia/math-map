@@ -135,7 +135,7 @@ $n\ge8$ 인 $A_n$ 의 Schur 곱셈자는 $\mathbb Z/2$ 이고 그 이중덮개�
 
 ## 사영표현과 중심확대
 
-양자역학에서 대칭군 $Q$ 는 Hilbert 공간의 사영공간에 작용하므로 표현이 위상 인자만큼 어긋날 수 있다.
+양자역학에서 대칭군 $Q$ 는 [Hilbert 공간](hilbert-spaces.md)의 사영공간에 작용하므로 표현이 위상 인자만큼 어긋날 수 있다.
 
 $$
 \rho(q_1)\rho(q_2)=c(q_1,q_2)\thinspace\rho(q_1q_2),\qquad |c|=1

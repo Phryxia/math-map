@@ -13,7 +13,7 @@ $$
 | 3 차원 Chern–Simons | ↔ | 2 차원 WZW(Wess–Zumino–Witten) |
 |---|---|---|
 | 레벨 $k$ | ↔ | 아핀 Lie 대수의 레벨 $k$ |
-| $\Sigma$ 에 붙는 Hilbert 공간 | ↔ | $\Sigma$ 위의 공형 블록 공간 |
+| $\Sigma$ 에 붙는 [Hilbert 공간](hilbert-spaces.md) | ↔ | $\Sigma$ 위의 공형 블록 공간 |
 | Wilson 선의 라벨 | ↔ | 레벨 $k$ 적분가능 표현 |
 | 선을 합치는 규칙 | ↔ | 융합 규칙 |
 

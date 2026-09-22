@@ -75,7 +75,7 @@ $$
 \lVert u+v\rVert^2+\lVert u-v\rVert^2=2\lVert u\rVert^2+2\lVert v\rVert^2
 $$
 
-역으로 평행사변형 법칙을 만족하는 노름은 내적에서 유도된다(Jordan–von Neumann 정리). 거리에 대해 [완비](completeness.md)인 내적 공간을 Hilbert 공간이라 한다.
+역으로 평행사변형 법칙을 만족하는 노름은 내적에서 유도된다(Jordan–von Neumann 정리). 거리에 대해 [완비](completeness.md)인 내적 공간을 [Hilbert 공간](hilbert-spaces.md)이라 한다.
 
 ## Gram–Schmidt 과정
 

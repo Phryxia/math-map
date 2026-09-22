@@ -62,7 +62,7 @@ $$
 
 ## Fredholm 작용소
 
-Hilbert 공간 사이의 [유계 작용소](bounded-operators.md) $T\colon H_1\to H_2$ 가 **Fredholm** 이라는 것은
+[Hilbert 공간](hilbert-spaces.md) 사이의 [유계 작용소](bounded-operators.md) $T\colon H_1\to H_2$ 가 **Fredholm** 이라는 것은
 
 $$
 \dim\ker T\lt\infty,\qquad \dim\mathrm{coker}\thinspace T=\dim(H_2/\overline{\mathrm{ran}\thinspace T})\lt\infty

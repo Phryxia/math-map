@@ -57,7 +57,7 @@ graph TD
 
 ## 자취류 작용소
 
-Hilbert 공간 위의 콤팩트 작용소 $K$ 의 특이값을 $s_1 \ge s_2 \ge \cdots$ 라 할 때
+[Hilbert 공간](hilbert-spaces.md) 위의 콤팩트 작용소 $K$ 의 특이값을 $s_1 \ge s_2 \ge \cdots$ 라 할 때
 
 $$
 \lVert K\rVert_1 = \sum_i s_i \lt\infty

@@ -56,7 +56,7 @@ $$
 \tilde f(x)=\inf_{a\in A}\bigl(f(a)+L\thinspace d(x,a)\bigr)
 $$
 
-이 식이 $A$ 에서 $f$ 와 일치하고 상수 $L$ 을 유지한다. 치역이 Hilbert 공간인 경우의 확장이 Kirszbraun 정리다.
+이 식이 $A$ 에서 $f$ 와 일치하고 상수 $L$ 을 유지한다. 치역이 [Hilbert 공간](hilbert-spaces.md)인 경우의 확장이 Kirszbraun 정리다.
 
 # 활용
 

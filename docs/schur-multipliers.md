@@ -145,7 +145,7 @@ $$
 
 ## 스핀과 대칭의 표현
 
-양자 상태가 Hilbert 공간의 직선이므로 대칭군은 $\mathrm{PU}(\mathcal H)$ 에 작용하고, 그것을 $\mathrm{U}(\mathcal H)$ 로 들어올릴 때 곱셈자가 걸린다.
+양자 상태가 [Hilbert 공간](hilbert-spaces.md)의 직선이므로 대칭군은 $\mathrm{PU}(\mathcal H)$ 에 작용하고, 그것을 $\mathrm{U}(\mathcal H)$ 로 들어올릴 때 곱셈자가 걸린다.
 
 - 회전군 $\mathrm{SO}(3)$ 의 곱셈자가 $\mathbb Z/2$ 라 반정수 스핀이 존재한다. 들어올린 군이 $\mathrm{SU}(2)$ 다.
 - Galilei 군에서는 질량이 곱셈자의 매개변수로 나타난다. 비상대론적 양자역학에서 질량이 중심전하로 등장하는 이유다.

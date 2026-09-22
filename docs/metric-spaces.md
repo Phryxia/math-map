@@ -110,7 +110,7 @@ Cauchy 수열이 모두 수렴하면 [완비](completeness.md)라 한다. 완비
 
 - **근사와 오차.** 수치해석의 오차 한계, 반복법의 수렴 판정, 신호 재구성의 정확도가 적절한 거리에서의 부등식으로 서술된다. 완비 거리 공간 위 축약사상의 유일한 부동점을 주는 [Banach 부동점 정리](banach-fixed-point.md)에 미분방정식의 해의 존재와 유일성이 기댄다.
 - **데이터와 검색.** 최근접 이웃 탐색, 계층적 군집화, 이상 탐지가 거리를 전제한다. 이미 계산한 거리로 후보를 배제하는 가지치기가 삼각부등식에서 정당화된다.
-- **함수 공간.** 함수들의 집합에 거리를 주면 함수열의 수렴을 다루고, 선형구조와 [내적](inner-product-spaces.md)을 더하면 Hilbert 공간이 된다. 근사 이론, Fourier 해석, 편미분방정식의 약해는 어떤 거리에서 수렴하는지를 먼저 정한 뒤 전개된다.[^1]
+- **함수 공간.** 함수들의 집합에 거리를 주면 함수열의 수렴을 다루고, 선형구조와 [내적](inner-product-spaces.md)을 더하면 [Hilbert 공간](hilbert-spaces.md)이 된다. 근사 이론, Fourier 해석, 편미분방정식의 약해는 어떤 거리에서 수렴하는지를 먼저 정한 뒤 전개된다.[^1]
 
 [^1]: Jiří Lebl, *Basic Analysis*, Metric spaces / Sequences and convergence. 거리의 공리, 열린 공, 수렴과 극한의 유일성. https://www.jirka.org/ra/html/sec_metric.html
 
