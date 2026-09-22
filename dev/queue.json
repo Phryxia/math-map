@@ -1,39 +1,31 @@
 {
   "version": 1,
-  "savedAt": "2026-09-22T00:57:16.173Z",
-  "nextSeq": 892,
+  "savedAt": "2026-09-22T04:56:12.107Z",
+  "nextSeq": 906,
   "items": [
     {
-      "id": "1e137a01",
+      "id": "bc0421bf",
       "title": "정의 없이 쓴 용어 훑기 (다음 차수)",
       "priority": 20,
-      "note": "2026-09-22 회차 다섯째 묶음. '다양체' 를 돌렸다. 검사기 unlinked4.mjs 에 대수다양체 필터를 넣었다: 용어 '다양체' 앞 12자에 Grassmann|아벨|사영|대수|모듈라이|아핀|Calabi 등이 오면 variety 로 보고 제외한다. 31 건 가운데 manifolds 가 맞는 17 자리에 링크했다(3 다양체 불변량, 콤팩트 다양체 위 작용소 등). 제외 14: 각주 서지(baker-theorem 72 group varieties), 표 셀(de-rham-cohomology 87, instanton-floer-homology 37, kedlaya-algorithm 175, teichmuller-space 115, volume-conjecture 25), 대수다양체(galois-representations 27 복소·기약 다양체, geometric-satake 57 ind-다양체, ideals-quotient-rings 130 기약 다양체, kazhdan-lusztig 15 Schubert 다양체, sato-tate 125 Calabi-Yau 다양체 족. 필터가 'Calabi–Yau' 의 '–Yau' 로 끝나 못 걸러 수동 제외했다. 필터에 Yau 를 더할 것), 굵은 정의(kahler-manifolds 7, schubert-calculus 67), 인용문 정리 진술(hyperbolic-3-manifolds 119). '군 작용' 은 0 건이었다. 지금까지 다섯 묶음에서 250 자리를 걸었다. 다음 후보: '스펙트럼'(작용소 스펙트럼과 위상수학 스펙트럼이 섞여 층·다양체 같은 갈래 판정이 필요), '격자'(순서론 lattice 와 기하 lattice), '범주', '분포'(확률분포와 Schwartz 분포). 이쯤에서 이 훑기를 계속할지, 기초 용어가 거의 다 걸렸으니 우선순위를 낮출지 한 번 판단할 것.",
-      "createdAt": "2026-09-22T00:54:39.276Z",
-      "seq": 889
+      "note": "2026-09-22 둘째 회차 열두째 묶음. 범주론 기초 용어 셋을 이어서 돌렸다. functors 로 9 자리 가운데 6: combinatorial-species 5, deformation-rings 13, beilinson-bernstein 11, geometric-satake 103, category-o 154, geometric-langlands 63. natural-transformations 로 2: eilenberg-maclane-spaces 52, vector-spaces 70. adjunctions 로 1: curry-howard 88. 열두 묶음에서 313 자리를 걸었다. 판정에서 배운 것: '수반' 은 걸린 것의 대부분이 작용소의 자기수반(self-adjoint)이라 범주론 수반과 동음이의다. functional-analysis 쪽 문서 전체가 그 뜻으로 쓰므로 '수반' 단독 검사는 소득이 적고, 범주론 문서에서만 본다. '함자' 에서 남긴 것: 신호자 함자 정리(finite-simple-groups 62. signalizer functor 로 다른 개념), '함자성' 만 쓰는 자리(algebraic-k-theory 27, classifying-spaces 69, complex-multiplication 204. 함자 자체가 논의 대상이 아니다), 표 셀(fargues-scholze 99), 헤딩(de-rham-cohomology 51). 다음 후보: 'monad'(monads.md), '극한'(limits-colimits. 해석학의 극한 limits.md 와 갈린다. 격자와 같은 두 갈래 판정), '층'(sheaves), '스펙트럼'",
+      "createdAt": "2026-09-22T04:54:01.012Z",
+      "seq": 903
     },
     {
-      "id": "89cde728",
-      "title": "제목 규칙 위반 훑기 (다음 차수)",
+      "id": "724ab8ad",
+      "title": "정의 없이 쓴 용어 훑기 (다음 차수)",
       "priority": 20,
-      "note": "2026-09-22 회차에 네 개를 더 좁혔다: geometrization '기하화 정리'(8 개 모형 기하는 34·59·68줄 절), knot-invariants '매듭 불변량'(Jones 다항식은 89·107줄 절이자 대표 예), gauss-sums 'Gauss 합'(국소 근 수는 99·111줄 절), complex-multiplication '복소 곱셈'(허수이차체의 유체론은 응용 절). 참조를 치환하고 링크 밖 변경 0, 링크 뒤 괄호 풀이 0(birch-swinnerton-dyer 96 의 '(complex multiplication, CM)' 은 원래 있던 두문자어 정의라 무관)을 확인했다. 절차: LC_ALL=C.utf8 grep -h '^# .*[와과] ' docs/*.md 로 뽑고, 개념 뒤에 정리 이름이 오는 제목은 4절 예외라 그대로 두며(differential-forms, holomorphic-functions, braid-groups, domain-theory 등), 뒤 항목이 한 절이면 앞 개념으로 좁힌다. 아직 안 본 후보: abstract-interpretation '추상해석과 정적 분석의 건전성', algebraic-k-theory, arthur-parameters, borcherds-products, category-o '범주 O 와 BGG 상반성', exact-wkb, hyperbolic-3-manifolds '쌍곡 3 다양체와 Mostow 강직성', kleisli-eilenberg-moore '두 범주가 한 문서', limits-colimits(파일명이 두 항목을 담아 예외). 예외 목록은 앞 note 참조.",
-      "createdAt": "2026-09-22T00:56:44.693Z",
-      "seq": 891
+      "note": "2026-09-22 둘째 회차 열셋째 묶음. '층' 을 돌려 sheaves 로 5 자리를 걸었다: borel-weil-bott 135, category-o 135, fargues-scholze 13, galois-representations 27(상수층), kazhdan-lusztig 15. 열세 묶음에서 318 자리를 걸었다. '층' 은 동음이의가 가장 많은 용어다. 검사 결과에서 걸러야 할 것: 계층·층위(computability 35, dedekind-domains 25, fields 99, heyting-algebras 200, homomorphic-encryption 35, lambda-calculus 162), 탑의 각 층(field-extensions 17, galois-theory 53, greenberg-conjecture 5, euler-systems 109), 층화 sheafification(adjunctions 171), 겹층 Bruhat cell(coxeter-groups 83), 엽층 foliation(index-theorem 127), 다층 퍼셉트론(gnn-expressivity 49), 전이층(airy-functions 163), 덮개의 층 sheet(covering-spaces 23), 위상정렬의 층 분해(dag-topological 92), 정육면체의 층(khovanov-homology 43). 그러므로 '층' 은 grep 뒤 눈 판정이 필수이고 자동 필터로는 '계층|층층|층위|층화|겹층|엽층|다층|전이층' 을 뺀다. 같은 회차에 '극한' 도 시험했으나 걸린 것의 대부분이 해석학의 극한(limits.md)이고 해석학 문서 거의 전부가 걸려 링크 가치가 낮다고 보고 건너뛰었다. 범주론의 극한(limits-colimits)만 따로 볼 자리는 adjunctions 7 과 deformation-rings 67(역극한)이다. 다음 후보: 'monad', '스펙트럼', 그리고 범주론의 극한 두 자리",
+      "createdAt": "2026-09-22T04:54:56.660Z",
+      "seq": 904
     },
     {
-      "id": "be092d8e",
-      "title": "constructible-universe 의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-21 회차에 썼다(부모 ordinals, zfc-axioms, foundations-overview 집합론 갈래, 96줄). 큐 항목 ca606d36 이 남긴 8절 분할 판단을 수행했다: continuum-hypothesis 43-51줄 '## 구성가능 우주' 절의 Def 정의와 계층 식을 새 문서로 옮기고 그 자리는 두 문장 요약과 링크로 줄였다. 63-65줄 Gödel 무모순성 정리와 증명 스케치는 CH 문서의 독립성 서술이라 남겼다(새 문서 GCH 절과 논증이 같으므로 다음 회차에 한쪽을 더 줄일지 볼 것). zfc-axioms 와 ordinals 의 더 알아보기 순서도 정돈했다. 리프다. 후속 후보: 다이아몬드 원리와 Suslin 나무(활용 둘째. suslin-problem 의 자식 자리와 겹치는지 볼 것), 큰 기수와 내부 모형 계획(큰 기수 문서가 없다. Scott 정리 절이 부른다), 사영 집합과 기술적 집합론(활용 셋째), 미세구조(활용 넷째). 측도 가능 기수와 기본 매장을 정의 없이 Scott 정리 절에서 썼다",
-      "createdAt": "2026-09-21T08:57:11.038Z",
-      "seq": 819
-    },
-    {
-      "id": "8de74375",
-      "title": "4절 문체 회귀 점검 (다음 차수)",
-      "priority": 12,
-      "note": "2026-09-21 둘째 회차에 이 회차의 새 문서 아홉에 예고문·조언투·범위 과장 grep 을 돌려 3 건을 고쳤다. 패턴은 '강조할|주목할 것|짚고 넘어|먼저 ~을 보자|이제 ~을 정의|다음이 핵심|점을 기억|정리하면|요약하면|이 점이 중요|여기서 나온다|출발점이다|말해 준다|인 셈이다|생각해 보면|거의 모든 정의|수학 전체의|당연히|뻔하다|해 보면 안다' 이고, 고친 것은 transcendental-numbers 94(해를 모두 찾는 절차가 여기서 나온다 -> Roth 정리는 해의 개수만 묶지만 이 하한은 해를 모두 찾는 절차를 준다), random-real-forcing 57(두 아이디얼의 비대칭이 여기서 나온다 -> 어느 조건이 다른지를 진술), constructible-universe 76(미세구조 이론의 출발점이다 -> 무엇을 하는지 진술)이다. 셋 다 앞 문장을 다시 설명하는 꼴이었다. 다음 차수에 볼 것: 이 패턴을 docs 전체에 돌리면 몇 건인지, '여기서 나온다' 와 '출발점이다' 는 오검출이 적어 전수 검사 후보다",
-      "createdAt": "2026-09-21T08:58:10.226Z",
-      "seq": 821
+      "id": "ecdaba72",
+      "title": "정의 없이 쓴 용어 훑기 (스펙트럼 차수)",
+      "priority": 20,
+      "note": "2026-09-22 둘째 회차 열넷째 묶음으로 'monad' 를 끝냈다(monads 로 4 자리: adjunctions 181, category 83, functors 76, yoneda-lemma 97). 같은 커밋에 범주론의 극한도 걸었다(limits-colimits 로 adjunctions 7 의 '극한과 쌍대극한'). 열네 묶음에서 323 자리를 걸었다. deformation-rings 67 의 '극한으로 넘긴다' 는 역극한이라 limits-colimits 가 맞는지 다음 차수에 판정한다. 다음은 '스펙트럼' 인데 시작하기 전에 목표부터 정해야 한다. 검사기를 spectral-theorem 으로 돌리면 60 건 남짓이 나오고 갈래가 다섯이다. (1) 작용소의 스펙트럼(functional-analysis-overview 9, feynman-kac 148, fredholm-operators 142, fredholm-determinant 160, gradient-descent 37 의 Hessian 스펙트럼). spectral-theorem 이 목표로 맞지만 그 문서는 정리 문서이지 '스펙트럼' 개념 문서가 아니라서, 먼저 스펙트럼을 정의하는 문서가 어디인지 정해야 한다(bounded-operators 나 unbounded-operators 가 후보다). (2) 스펙트럼열·스펙트럼 수열(algebraic-k-theory 73, borel-weil-bott 121, eilenberg-maclane-spaces 54)은 spectral-sequences 가 목표인 다른 개념이다. (3) 자기동형 형식의 스펙트럼 분해와 이산·연속·잔여 스펙트럼(adeles 175, arthur-parameters 11, eisenstein-series 13, fundamental-lemma 5, speh-representations)은 또 다른 갈래로, speh-representations 가 잔여 스펙트럼을 정의한다. (4) 그래프의 스펙트럼(expander-graphs 10, concentration-inequalities 9 의 스펙트럼 희소화)은 graph-laplacian 이나 spectral-sparsification 이 목표다. (5) 신호의 스펙트럼 분석(fft 114, fourier 121)은 수학적 대상이 아니라 제외한다. 다음 차수의 첫 일은 갈래 (1) 의 목표 문서를 정하는 것이다",
+      "createdAt": "2026-09-22T04:55:56.610Z",
+      "seq": 905
     },
     {
       "id": "3ead4890",
@@ -234,6 +226,38 @@
       "note": "2026-09-22 회차에 혼입 검사(/^#+ .*\\]\\([a-z0-9-]+\\.md\\)/)를 돌려 한 자리를 찾았다: langlands-program 158 '## [Sato–Tate 분포](sato-tate.md)'. 4절 헤딩 규칙은 헤딩이 개념 이름이어야 한다고만 정하고 링크를 금지하지는 않지만, 다른 문서의 헤딩에는 링크가 없어 이 자리만 어긋난다. 판정할 것: 헤딩에서 링크를 빼고 그 절 본문 첫 문장에 링크를 거는 것이 맞는지, 아니면 docs 전체에 헤딩 링크가 이 하나뿐인지 먼저 확인하고 규칙으로 세울지",
       "createdAt": "2026-09-22T00:45:49.624Z",
       "seq": 883
+    },
+    {
+      "id": "5c19715d",
+      "title": "자리표시자 헤딩 훑기 (다음 차수)",
+      "priority": 12,
+      "note": "2026-09-22 둘째 회차에 '## [<id>]' 꼴 자리표시자 헤딩 16 개를 전부 없앴다. grep -n '^## \\[' docs/*.md 로 뽑았고 남은 건수 0 이다. 전부 '# 활용' 절 끝의 목록이라 8a5eefd 의 관행대로 그 절이 나열하는 분야 이름을 헤딩으로 삼았다: boolean-fourier '계산 복잡도, 사회선택이론, 학습이론', borel-weil-bott '표현론과 열거기하', casson-invariant '3 차원과 4 차원 위상', category-o '지표 계산과 범주화', domain-theory '프로그램 의미론과 정적 분석', kedlaya-algorithm '곡선 암호와 $p$ 진 계산', khovanov-homology '4 차원 위상과 범주화', knot-invariants 'Tait 추측, DNA 위상학, 양자계산', lang-trotter '곡선 암호와 수치 검증', pcp-theorem '근사 하한, 부호 이론, 위임 계산', reidemeister-torsion '다양체 분류, 매듭 이론, 양자 불변량', sato-tate '수치 실험, CM 판정, 군 분류', schubert-calculus '열거기하, 표현론, 행렬 스펙트럼', sea-algorithm '곡선 암호와 수치 실험', sinkhorn '기계학습과 유전체학', unbalanced-optimal-transport '유전체학, 형상 정합, 생성모형'. 같은 grep 이 걸어 준 langlands-program 158 의 '## [Sato-Tate 분포](sato-tate.md)' 도 함께 고쳐, 헤딩에서 링크를 빼고 그 절 본문의 'Sato-Tate 추측' 에 링크를 옮겼다(큐 항목 4bb505f5 가 물은 헤딩 링크 판정의 한 사례다. 판정 기준: 헤딩은 개념 이름이므로 링크는 본문 최초 등장으로 내린다). 다음 차수에 볼 것: 같은 grep 이 0 건인지 확인하고, 문장형 헤딩 grep(4절)을 docs 전체에 돌려 남은 건수를 센다",
+      "createdAt": "2026-09-22T04:44:58.224Z",
+      "seq": 895
+    },
+    {
+      "id": "c7c7b4e4",
+      "title": "헤딩에 든 개념을 본문으로 내리는 판정",
+      "priority": 12,
+      "note": "2026-09-22 둘째 회차의 '범주' 훑기가 남긴 자리 둘이다. deformation-rings 65 '## 계수환의 범주' 와 zhu-algebra 113 '## 모듈러 텐서범주와 Verlinde 공식' 은 헤딩에만 그 용어가 나오고 본문 첫 등장이 그 뒤에 있다. 4절은 헤딩을 개념 이름으로 두라고 하므로 링크는 헤딩이 아니라 그 절 본문의 첫 등장에 건다. 이번 회차에 langlands-program 158 을 같은 방식으로 처리했다(헤딩 '## [Sato-Tate 분포](sato-tate.md)' 에서 링크를 빼고 절 본문의 'Sato-Tate 추측' 에 걸었다). 큐 항목 4bb505f5 '헤딩에 링크가 든 자리 판정' 과 같은 주제이므로 그 항목이 나오면 함께 처리할 것. 검사는 grep -n '^#\\+ .*](.*\\.md)' docs/*.md 로 헤딩 안 링크를 뽑는다",
+      "createdAt": "2026-09-22T04:50:46.313Z",
+      "seq": 899
+    },
+    {
+      "id": "985c1b5f",
+      "title": "4절 문체 회귀 점검 (다음 차수)",
+      "priority": 12,
+      "note": "2026-09-22 둘째 회차에 앞 note 가 요청한 대로 예고문·조언투 패턴을 docs 전체에 돌렸고 0 건이다. 돌린 것: 여기서 나온다|출발점이다|말해 준다|인 셈이다|생각해 보면|이 점이 중요|다음이 핵심|점을 기억|요약하면(전부 0 건), 흥미롭게도|놀랍게도|놀랍지 않|우연이 아니|본질적으로|직관적으로 말하면|이것이 바로|다름 아니|지나지 않는다|이는 곧|다시 말해|말하자면|밝혀졌다|주목할|강조할|짚고 넘어|해 보자(전부 0 건). 오검출 둘을 기록해 둔다. '정리하면' 은 7 건이 걸리지만 전부 식을 정리한다는 수학 용어이고(continued-fractions 77, gradient-descent 63, jacquet-langlands 31, linear-regression 67, probabilistic-method 117, quadratic-reciprocity 118, weyl-character-formula 82) 예고문이 아니다. '우리' 패턴은 '봉우리' 를 잡는다(dominated-convergence 80, stirling-numbers 87). 같은 회차에 함께 돌린 4절 검사도 전부 0 건이다: 금지 매크로, 비 JavaScript 코드블록, 언어 없는 코드블록, 추측성 절 헤딩, 범위 뭉뚱그림, 헤딩 안 링크. 문장형 헤딩 grep 은 14 건을 내놓지만 전부 '증명의 요지' 꼴 명사구이고 4절이 권장하는 표현이라 '지' 로 끝나는 패턴의 오검출이다. 문학적 비유 grep 5 건도 앞 차수 판정대로 전부 용어의 일부다(Montgomery 사다리, 사다리 연산자, 함정문 두 번, Viazovska 의 마법함수). 다음 차수에 볼 것: 이 패턴들은 여러 차수 연속 0 건이므로 우선순위를 낮추고, 새 문서가 여러 개 들어온 회차 뒤에만 돌린다. 대신 아직 전수로 돌리지 않은 4절 항목을 찾는다(번역체 표의 피동·명사화 패턴이 후보다)",
+      "createdAt": "2026-09-22T04:51:40.111Z",
+      "seq": 900
+    },
+    {
+      "id": "fd93f275",
+      "title": "constructible-universe 의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-22 둘째 회차에 앞 note 가 남긴 지적 하나를 처리했다. 67줄 Scott 정리의 증명 요지에서 정의 없이 쓰던 용어를 풀었다: 'kappa 완비' 를 'kappa 개 미만의 만남에 닫힌' 으로 풀고, 초필터를 boolean-algebras 81줄 정의로, 초곱을 ultraproducts 로 링크했으며, 기본 매장(모든 논리식의 참을 보존하는 사상)과 임계점(j(alpha)!=alpha 인 가장 작은 서수)을 굵은 정의로 세웠다. 마지막 문장도 'V=L 이면 M=L 이 되어' 로 논증의 단계를 드러냈다. 이 문서는 아직 리프다. 후속 후보는 앞 note 그대로: 다이아몬드 원리와 Suslin 나무(활용 둘째. suslin-problem 의 자식 자리와 겹치는지 볼 것), 큰 기수(문서가 없다. 이 회차에 푼 측도 가능 기수와 기본 매장이 그 문서의 정의 절이 될 만하고, 63줄 '큰 기수와의 충돌' 절이 그 문서를 부른다), 사영 집합과 기술적 집합론(활용 셋째), 미세구조(활용 넷째). 다음 차수에는 '큰 기수' 문서를 쓰는 것이 낫다. 부모는 ordinals 와 constructible-universe 이고 분야는 집합론이다",
+      "createdAt": "2026-09-22T04:52:41.877Z",
+      "seq": 901
     },
     {
       "id": "d2720772",
@@ -1098,6 +1122,22 @@
       "note": "분야: 확률론(#probability #analysis). 붙일 부모: ito-calculus(Itô 적분), brownian-motion. 2026-09-21 셋째 회차에 ito-calculus 제목을 'Itô 적분' 으로 좁히며 확인했다. 현재 SDE 서술은 ito-calculus 63줄 '## 확률미분방정식', 82줄 '## 대표적인 해', 102줄 '## 편미분방정식과의 대응' 에 있다. 강한 해와 약한 해, 존재·유일성의 Lipschitz 조건, Ornstein–Uhlenbeck 과 기하 Brown 운동, Euler–Maruyama 이산화, Fokker–Planck 방정식을 절로 둘 수 있다. 문서를 만들면 ito-calculus 의 그 세 절을 요약과 링크로 줄일 것",
       "createdAt": "2026-09-21T20:50:58.623Z",
       "seq": 869
+    },
+    {
+      "id": "b21e6f13",
+      "title": "제목 규칙 위반 훑기 (다음 차수)",
+      "priority": 10,
+      "note": "2026-09-22 둘째 회차에 앞 note 가 남긴 후보 넷을 마저 판정해 셋을 좁혔다: algebraic-k-theory '대수적 K 이론'(Quillen-Lichtenbaum 은 65줄 절과 85줄 Vandiver 동치 절), borcherds-products 'Borcherds 곱'(특이 theta 올림은 32·51줄 절), hyperbolic-3-manifolds '쌍곡 3 다양체'(Mostow 강직성은 17·90줄 절). kleisli-eilenberg-moore 는 파일명이 두 범주를 다 담으므로 limits-colimits 와 같은 4절 예외로 두었다. 참조 표시 제목도 치환했다(algebraic-k-theory 4, borcherds-products 1, hyperbolic-3-manifolds 7. 나머지 참조는 이미 좁은 제목을 쓰고 있었다). 우선순위를 20 에서 10 으로 낮춘다. LC_ALL=C.utf8 grep -l '^# .*[와과] ' docs/*.md 가 아직 100 개 남짓을 내놓지만, 표본을 보면 남은 것은 대부분 4절이 예외로 정한 '개념 + 그 개념을 다루는 정리 이름' 꼴이다(differential-forms '미분형식과 Stokes 정리', holomorphic-functions, canonical-height, network-flow, np-completeness 등). 다음 차수에는 좁힐 것을 찾기보다 예외 판정을 목록으로 확정하는 편이 낫다. 예외로 확정한 것: 정리 이름이 뒤에 오는 제목, 파일명이 두 항목을 모두 담은 제목(limits-colimits, kleisli-eilenberg-moore, ideals-quotient-rings, eigenvalues, proofs 등), 한 쌍이 한 개념인 제목(dyson-rank-crank 의 rank 와 crank)",
+      "createdAt": "2026-09-22T04:45:36.007Z",
+      "seq": 896
+    },
+    {
+      "id": "99f25064",
+      "title": "큰 기수",
+      "priority": 10,
+      "note": "신규 주제. 분야는 집합론(#set_theory #logic #foundations)이고 부모는 ordinals 와 constructible-universe 다. foundations-overview 의 집합론 갈래에 넣는다. constructible-universe 63-69줄 '큰 기수와의 충돌' 절이 측도 가능 기수, 기본 매장, 임계점을 정의하고 Scott 정리를 진술하므로 그 자리가 이 문서의 씨앗이다(2026-09-22 둘째 회차에 그 절의 용어를 다 풀어 두었다). 다룰 것: 도달 불가능 기수(axiom-of-choice 86 이 Solovay 모형에서 언급한다), Mahlo, 약콤팩트, 측도 가능, 강기수, 초콤팩트의 사다리와 무모순성 강도의 선형순서, 각 층이 주는 내부 모형, Scott 정리가 왜 V=L 과 충돌하는지. 이미 큰 기수를 언급하는 문서: constructible-universe, axiom-of-choice 86, continuum-hypothesis, cardinal-characteristics, martins-axiom. 쓰고 나면 이들 본문의 첫 언급에 링크한다",
+      "createdAt": "2026-09-22T04:52:41.984Z",
+      "seq": 902
     },
     {
       "id": "dfb3e493",
