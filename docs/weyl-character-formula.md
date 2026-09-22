@@ -10,7 +10,7 @@ $$
 \lbrace\text{유한차원 기약표현}\rbrace/\cong\ \ \longleftrightarrow\ \ P^+=\Big\lbrace\lambda\in P:\langle\lambda,\alpha_i^\vee\rangle\in\mathbb Z_{\ge0}\Big\rbrace
 $$
 
-오른쪽은 무게격자의 한 모서리에 있는 격자점들, 곧 음이 아닌 정수 $n$ 개다.
+오른쪽은 무게[격자](lattices.md)의 한 모서리에 있는 격자점들, 곧 음이 아닌 정수 $n$ 개다.
 
 표현 $V_\lambda$ 를 무게공간으로 쪼갠 정보를 담은 형식합이 지표이고, **Weyl 지표 공식**이 그것을 닫힌 꼴로 준다.
 

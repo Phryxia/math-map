@@ -32,7 +32,7 @@ $\Gamma_0(N)$ 이 $\mathbb H$ 에 불연속으로 작용하므로 몫이 Riemann
 
 ## 모듈라이 해석
 
-$\tau\in\mathbb H$ 에 격자 $L_\tau=\mathbb Z+\mathbb Z\tau$ 와 타원곡선 $E_\tau=\mathbb C/L_\tau$ 를 대응시킨다. $\mathrm{SL}\_2(\mathbb Z)$ 의 작용은 격자의 기저를 바꾸므로 $E_\tau$ 를 바꾸지 않고, $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 가 타원곡선의 동형류 전체, 곧 $j$ 불변량의 값들이다.
+$\tau\in\mathbb H$ 에 [격자](lattices.md) $L_\tau=\mathbb Z+\mathbb Z\tau$ 와 타원곡선 $E_\tau=\mathbb C/L_\tau$ 를 대응시킨다. $\mathrm{SL}\_2(\mathbb Z)$ 의 작용은 격자의 기저를 바꾸므로 $E_\tau$ 를 바꾸지 않고, $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 가 타원곡선의 동형류 전체, 곧 $j$ 불변량의 값들이다.
 
 $\Gamma_0(N)$ 으로 좁히면 부분군 $\langle1/N\rangle\subset E_\tau$ 를 보존하는 변환만 남으므로 $\Gamma_0(N)\backslash\mathbb H$ 의 점이 쌍 $(E,C)$ 를 분류한다.
 

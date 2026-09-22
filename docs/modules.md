@@ -195,7 +195,7 @@ $$
 
 ## 선형대수의 일반화
 
-[텐서곱](tensor-products.md)은 두 가군에서 쌍선형 사상을 선형화하는 구성이고, 그 결과 $\mathrm{Hom}\_R(M \otimes N, P) \cong \mathrm{Hom}\_R(M, \mathrm{Hom}\_R(N, P))$ 라는 수반이 생긴다. 스칼라 확장 $S \otimes_R M$ 은 계수환을 바꿔 가면서 같은 대상을 다르게 보는 장치로, 실수 표현을 복소수로 확장하거나 정수 격자를 유리수 공간에 넣는 조작이 모두 여기에 해당한다.
+[텐서곱](tensor-products.md)은 두 가군에서 쌍선형 사상을 선형화하는 구성이고, 그 결과 $\mathrm{Hom}\_R(M \otimes N, P) \cong \mathrm{Hom}\_R(M, \mathrm{Hom}\_R(N, P))$ 라는 수반이 생긴다. 스칼라 확장 $S \otimes_R M$ 은 계수환을 바꿔 가면서 같은 대상을 다르게 보는 장치로, 실수 표현을 복소수로 확장하거나 정수 [격자](lattices.md)를 유리수 공간에 넣는 조작이 모두 여기에 해당한다.
 
 ## 표현론과 그 너머
 

@@ -32,7 +32,7 @@ $$
 \tilde f(c+it)=\int_{-\infty}^{\infty}f(e^{u})e^{cu}\thinspace e^{itu}\thinspace du
 $$
 
-$\tilde f$ 는 $f(e^{u})e^{cu}$ 의 Fourier 변환이므로 Mellin 변환의 정리들은 Fourier 이론의 번역이다. [Poisson 합](poisson-summation.md)이 덧셈격자 $\mathbb Z$ 에 대해 하는 일을 Mellin 은 곱셈적 스케일에 대해 한다.
+$\tilde f$ 는 $f(e^{u})e^{cu}$ 의 Fourier 변환이므로 Mellin 변환의 정리들은 Fourier 이론의 번역이다. [Poisson 합](poisson-summation.md)이 덧셈[격자](lattices.md) $\mathbb Z$ 에 대해 하는 일을 Mellin 은 곱셈적 스케일에 대해 한다.
 
 ## 수렴 띠
 

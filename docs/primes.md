@@ -90,7 +90,7 @@ $$
 \mathrm{lcm}(a,b)=\prod_p p^{\max(v_p(a),v_p(b))}
 $$
 
-$\min + \max$ 가 합이므로 $\gcd(a,b) \cdot \mathrm{lcm}(a,b) = ab$ 다. 약수의 개수는 $\prod(v_p + 1)$ 이고, $a \mid b$ 인 것은 모든 $p$ 에 대해 $v_p(a) \le v_p(b)$ 인 것과 동치다. 나눔 관계가 지수 벡터의 [부분순서](partial-orders.md)로 번역되고, 이 격자에서 $\gcd$ 가 하한이고 $\mathrm{lcm}$ 이 상한이다.
+$\min + \max$ 가 합이므로 $\gcd(a,b) \cdot \mathrm{lcm}(a,b) = ab$ 다. 약수의 개수는 $\prod(v_p + 1)$ 이고, $a \mid b$ 인 것은 모든 $p$ 에 대해 $v_p(a) \le v_p(b)$ 인 것과 동치다. 나눔 관계가 지수 벡터의 [부분순서](partial-orders.md)로 번역되고, 이 [격자](order-lattices.md)에서 $\gcd$ 가 하한이고 $\mathrm{lcm}$ 이 상한이다.
 
 $360 = 2^3 \cdot 3^2 \cdot 5$ 이고 $84 = 2^2 \cdot 3 \cdot 7$ 이므로 $\gcd = 2^2 \cdot 3 = 12$ , $\mathrm{lcm} = 2^3 \cdot 3^2 \cdot 5 \cdot 7 = 2520$ 이다.
 

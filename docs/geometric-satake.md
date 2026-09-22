@@ -54,7 +54,7 @@ $$
 
 ## 아핀 Grassmann 다양체
 
-$F=\mathbb C((t))$ 와 $\mathcal O=\mathbb C[[t]]$ 로 둔다. $\mathrm{Gr}\_G=G(F)/G(\mathcal O)$ 는 무한차원이고 유한차원 사영다양체들의 증가 합집합(ind-다양체)이다. $G=\mathrm{GL}\_n$ 이면 $\mathrm{Gr}\_G$ 의 점이 $F^n$ 안의 $\mathcal O$ 격자다.
+$F=\mathbb C((t))$ 와 $\mathcal O=\mathbb C[[t]]$ 로 둔다. $\mathrm{Gr}\_G=G(F)/G(\mathcal O)$ 는 무한차원이고 유한차원 사영다양체들의 증가 합집합(ind-다양체)이다. $G=\mathrm{GL}\_n$ 이면 $\mathrm{Gr}\_G$ 의 점이 $F^n$ 안의 $\mathcal O$ [격자](lattices.md)다.
 
 Cartan 분해가 $G(\mathcal O)$ 궤도를 분류한다.
 

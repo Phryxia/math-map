@@ -40,7 +40,7 @@ $$
 \tilde B_n(x)=-\frac{n!}{(2\pi i)^{n}}\sum_{m\ne0}\frac{e^{2\pi imx}}{m^{n}}
 $$
 
-이므로 공식의 계수는 정수격자의 [Fourier 급수](fourier-series.md)를 차수별로 푼 것이다. $x=0$ , $n=2k$ 를 넣으면 $B_{2k}$ 와 $\zeta(2k)$ 의 관계가 나온다.
+이므로 공식의 계수는 정수[격자](lattices.md)의 [Fourier 급수](fourier-series.md)를 차수별로 푼 것이다. $x=0$ , $n=2k$ 를 넣으면 $B_{2k}$ 와 $\zeta(2k)$ 의 관계가 나온다.
 
 $$
 \frac{|B_{2k}|}{(2k)!}=\frac{2\zeta(2k)}{(2\pi)^{2k}}\ \approx\ \frac{2}{(2\pi)^{2k}}

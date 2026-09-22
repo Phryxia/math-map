@@ -52,7 +52,7 @@ $$
 
 - $\mathbb C$ 와 그 열린부분집합.
 - **Riemann 구** $\widehat{\mathbb C}=\mathbb C\cup\lbrace\infty\rbrace$ 다. 좌표는 $z$ 와 $1/z$ 두 장이고 전이함수가 $z\mapsto1/z$ 다. 콤팩트 Riemann 곡면 가운데 종수 0 인 유일한 것이다.
-- **복소 토러스** $\mathbb C/\Lambda$ 다. 여기서 $\Lambda=\mathbb Z+\tau\mathbb Z$ 는 격자이고 $\tau\in\mathbb H$ 다. 종수 1 이며, [타원곡선](elliptic-curves.md)의 복소해석적 모습이다.
+- **복소 토러스** $\mathbb C/\Lambda$ 다. 여기서 $\Lambda=\mathbb Z+\tau\mathbb Z$ 는 [격자](lattices.md)이고 $\tau\in\mathbb H$ 다. 종수 1 이며, [타원곡선](elliptic-curves.md)의 복소해석적 모습이다.
 - 평면곡선 $\lbrace(z,w):P(z,w)=0\rbrace$ 의 비특이점 집합. 콤팩트 Riemann 곡면은 전부 이런 대수곡선으로 실현된다.
 
 ## 균일화 정리

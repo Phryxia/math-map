@@ -62,7 +62,7 @@ $$
 
 ## 입력
 
-$L$ 을 서명 $(2,n)$ 의 짝수 격자, $f\in M^!\_{1-n/2}\bigl(\rho_L\bigr)$ 를 Weil 표현 $\rho_L$ 에 대한 벡터값 약정칙 형식이라 한다. $f$ 의 주요부 계수 $c(\gamma,-m)$ 은 정수라고 가정한다.
+$L$ 을 서명 $(2,n)$ 의 짝수 [격자](lattices.md), $f\in M^!\_{1-n/2}\bigl(\rho_L\bigr)$ 를 Weil 표현 $\rho_L$ 에 대한 벡터값 약정칙 형식이라 한다. $f$ 의 주요부 계수 $c(\gamma,-m)$ 은 정수라고 가정한다.
 
 ## Borcherds 곱
 

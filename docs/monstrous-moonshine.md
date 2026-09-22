@@ -22,7 +22,7 @@ $$
 21493760=1+196883+21296876
 $$
 
-**괴물 달빛**(monstrous moonshine)은 이 대응이 $\mathbb M$ 의 원소 전체로 확장된다는 Conway–Norton (1979) 의 추측이고, Borcherds 가 1992 년에 증명했다. 두 세계를 잇는 대상은 Leech 격자에서 만든 [정점작용소대수](vertex-operator-algebras.md) $V^\natural$ 다. 이 무한차원 등급 벡터공간은 $\mathbb M$ 의 표현이면서 등급 차원의 생성함수가 $j-744$ 다. 증명의 도구는 $V^\natural$ 에서 만든 무한차원 [Lie 대수](lie-algebras.md)이고, 그 분모 공식이 $j$ 의 계수들을 서로 묶는다.
+**괴물 달빛**(monstrous moonshine)은 이 대응이 $\mathbb M$ 의 원소 전체로 확장된다는 Conway–Norton (1979) 의 추측이고, Borcherds 가 1992 년에 증명했다. 두 세계를 잇는 대상은 Leech [격자](lattices.md)에서 만든 [정점작용소대수](vertex-operator-algebras.md) $V^\natural$ 다. 이 무한차원 등급 벡터공간은 $\mathbb M$ 의 표현이면서 등급 차원의 생성함수가 $j-744$ 다. 증명의 도구는 $V^\natural$ 에서 만든 무한차원 [Lie 대수](lie-algebras.md)이고, 그 분모 공식이 $j$ 의 계수들을 서로 묶는다.
 
 moonshine 은 Conway 가 고른 단어다. 밀주라는 뜻과 달빛이라는 뜻이 겹쳐 있고, 실체가 의심스러운 관찰이라는 당시의 평가를 담았다.
 

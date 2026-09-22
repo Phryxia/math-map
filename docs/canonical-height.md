@@ -84,7 +84,7 @@ $$
 \mathrm{Reg}\_E=\det\bigl(\langle P_i,P_j\rangle\bigr)\_{1\le i,j\le r}
 $$
 
-가 **조절자**이며, 격자 $E(\mathbb Q)/\mathrm{tors}$ 가 얼마나 성긴지를 재는 부피다.
+가 **조절자**이며, [격자](lattices.md) $E(\mathbb Q)/\mathrm{tors}$ 가 얼마나 성긴지를 재는 부피다.
 
 ## 국소 분해
 
