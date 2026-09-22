@@ -6,7 +6,7 @@
 
 전개 순서는 거의 고정되어 있다. Markov 부등식에서 출발해 2차 모멘트를 쓰면 Chebyshev 부등식이 되고, 지수 모멘트를 쓰면 Chernoff 기법이 된다. Chernoff 기법을 실제로 쓰려면 적률생성함수의 상한이 필요한데, 그 상한을 유계 확률변수에 대해 제공하는 것이 Hoeffding 보조정리이고 결과가 Hoeffding 부등식이다. 이 구조를 추상화한 것이 sub-Gaussian 개념이다.
 
-이 부등식들은 무작위 알고리즘의 성공 확률 증폭, 해싱과 부하 분산 분석, [확률적 방법](probabilistic-method.md)의 존재 증명, 통계적 학습이론의 표본 복잡도 경계, [유효저항](effective-resistance.md) 기반 스펙트럼 희소화의 오차 분석 등에서 도구가 아니라 전제로 쓰인다.
+이 부등식들은 무작위 알고리즘의 성공 확률 증폭, 해싱과 부하 분산 분석, [확률적 방법](probabilistic-method.md)의 존재 증명, 통계적 학습이론의 표본 복잡도 경계, [유효저항](effective-resistance.md) 기반 [스펙트럼 희소화](spectral-sparsification.md)의 오차 분석 등에서 도구가 아니라 전제로 쓰인다.
 
 # 직관
 
