@@ -58,7 +58,7 @@ $\sum\lvert a_n\rvert$ 가 수렴하면 $\sum a_n$ 이 **절대수렴**한다고
 
 **정리.** $f$ 가 $[1,\infty)$ 에서 음이 아니고 감소하며 $a_n=f(n)$ 이면, $\sum a_n$ 과 $\int_1^{\infty}f(x)\thinspace dx$ 의 수렴 여부가 같다.
 
-**증명의 요지.** $f$ 가 감소하므로 $f(n+1)\le\int_n^{n+1}f\le f(n)$ 이고, 이를 더하면 부분합과 적분이 서로를 위아래로 묶는다.
+**증명의 요지.** $f$ 가 감소하므로 $f(n+1)\le\int_n^{n+1}f\le f(n)$ 이고, 이를 더하면 부분합과 [적분](riemann-integral.md)이 서로를 위아래로 묶는다.
 
 $f(x)=x^{-p}$ 에 적용하면 $\sum n^{-p}$ 가 $p\gt 1$ 에서 수렴하고 $p\le1$ 에서 발산한다. 이 급수가 [Riemann zeta 함수](riemann-zeta.md)의 정의역을 정한다.
 
