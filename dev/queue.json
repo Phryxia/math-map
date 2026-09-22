@@ -1,23 +1,15 @@
 {
   "version": 1,
-  "savedAt": "2026-09-22T12:53:54.565Z",
-  "nextSeq": 931,
+  "savedAt": "2026-09-22T16:56:59.978Z",
+  "nextSeq": 940,
   "items": [
     {
-      "id": "70eb360b",
-      "title": "정의 없이 쓴 용어 훑기 (적분과 확률 차수)",
+      "id": "f449c18d",
+      "title": "정의 없이 쓴 용어 훑기 (새 문서 차수)",
       "priority": 20,
-      "note": "2026-09-22 넷째 회차 스물다섯째 묶음. '볼록' 과 '측도' 를 돌려 다섯 자리를 걸었다: convexity 로 optimal-transport 31(실행가능집합이 볼록), semidefinite-programming 7(선형이 아니지만 볼록), sinkhorn 7(엔트로피 항이 목적함수를 강볼록하게). measure 로 lp-spaces 5(측도공간 (X,M,mu)), characteristic-functions 7(확률측도를 결정한다). 스물다섯 묶음에서 385 자리다. 판정 결과. (1) '볼록' 에서 건너뛴 것: newton-polygon 10 의 '아래쪽 볼록포' 는 958 블록 안이라 링크를 걸 수 없다(수식 안의 용어는 이 훑기의 대상이 아니다. 앞 차수들에서도 mermaid 안의 자리를 같은 이유로 건너뛰었다), wasserstein-gradient-flow 15 의 'W_2 를 따라 잰 볼록성' 은 측지적 볼록성이고 convexity 가 그것을 다루지 않아 미뤘다. sinkhorn 의 '강볼록' 은 복합 용어이지만 convexity 110 줄이 강볼록성을 언급하므로 걸었고, 링크 표시를 '강볼록' 전체로 잡아 '강[볼록]' 처럼 갈라지지 않게 했다. (2) '측도' 는 걸린 수가 많지만 대부분이 복합 용어이거나 이미 다른 측도 문서로 링크가 있다. girsanov 와 change-of-measure 는 측도변환이 주제라 change-of-measure 가 목표이고, sato-tate 와 lang-trotter 는 Sato-Tate 측도와 Haar 측도라 갈래가 다르다. random-variables 5 와 conditional-expectation 7 은 같은 문장에 measurable-functions, pushforward-measure, lebesgue-integral 링크가 이미 둘 이상 있어 건너뛰었다. 다음 용어 후보: '적분'(riemann-integral 과 lebesgue-integral 두 갈래이고 복소해석의 경로적분이 셋째 갈래다), '확률'(probability 가 목표. 확률측도, 확률변수, 확률공간이 복합 용어라 단독 등장만 고를 것), '동형'(스물네째 묶음 note 의 (1) 대로 세 갈래 판정이 먼저), '함수'(너무 흔해 대상이 아니다). 훑기 전반에 대한 기록: 스물다섯 묶음을 지나며 남은 용어는 대부분 (a) 목표 문서가 없거나(rank, isomorphism) (b) 갈래가 셋 이상이거나(측도, 완비, 노름) (c) 복합 용어다. 새 문서가 들어올 때마다 그 문서의 용어를 훑는 쪽이 남은 용어를 계속 파는 것보다 수확이 클 수 있다",
-      "createdAt": "2026-09-22T12:52:20.161Z",
-      "seq": 929
-    },
-    {
-      "id": "624d3268",
-      "title": "LaTeX 렌더 오류 회귀 점검 (KaTeX 파싱, 다음 차수)",
-      "priority": 12,
-      "note": "2026-09-21 회차에 새 문서 40 개가 들어온 뒤 다시 돌려 수식 36427 개 가운데 오류 0 개를 확인했다(직전 35507 개에서 920 개 증가). 함께 돌린 검사도 전부 통과다: 금지 매크로 0 건, 비 JavaScript 코드블록 0 건, 언어 없는 코드블록 0 건. 문학적 비유 grep 은 5 건이 걸렸으나 전부 용어의 일부라 남겼다(elliptic-curves 134 'Montgomery 사다리', lie-algebras 180 '사다리 연산자', post-quantum-cryptography 142 '함정문' 두 번, theta-series 167 'Viazovska 의 마법함수'). 검사기는 스크래치패드 katexcheck.mjs 이고 npm i katex --no-save 로 설치하면 package.json 과 package-lock.json 이 그대로다. import 는 절대경로 /home/user/math-map/node_modules/katex/dist/katex.mjs 다. 검사기가 하는 일 넷은 그대로다: 코드펜스 건너뛰기, 인용문 접두 '> ' 제거, 인라인 코드 마스킹, 마크다운이 \\_ 를 _ 로 푸는 것을 흉내 낸 뒤 KaTeX 에 넘기기. 한 줄 $$...$$ 도 블록으로 따로 잡는다. 다음 차수는 새 문서를 여러 개 쓴 회차 뒤에 돌린다",
-      "createdAt": "2026-09-21T12:40:45.750Z",
-      "seq": 826
+      "note": "2026-09-22 다섯째 회차 스물여덟째 묶음. '코호몰로지' 를 돌려 세 자리를 걸었다: cohomology 로 eilenberg-maclane-spaces 7(코호몰로지는 사슬 복합체로 정의되지만), classifying-spaces 7(BG 의 코호몰로지 원소), differential-forms 135(위상적 특이 코호몰로지와 동형. 표시를 '특이 코호몰로지' 로 잡았다). 이 회차에 cohomology 문서를 새로 써서 목표가 생긴 자리들이다. 스물여덟 묶음에서 394 자리다. 판정 결과. (1) '노름' 차수는 취소했다. 목표 문서가 없다. banach-spaces 는 '노름이 주어지고 완비한 벡터공간' 으로 시작해 노름 자체를 정의하지 않고, normed-spaces 도 inner-product-spaces 도 노름 일반을 다루지 않는다. 목표 문서가 없는 용어 목록에 '노름' 을 확정해 넣는다(앞서 확정한 것: rank, 동형, 확률). (2) '코호몰로지' 에서 건너뛴 것이 많다. 단독 등장 문서 60 여 개 가운데 대부분이 에탈 코호몰로지, 군 코호몰로지, 층 코호몰로지, 교차 코호몰로지, Galois 코호몰로지처럼 갈래가 다른 복합 용어다. cohomology 는 특이 코호몰로지를 다루므로 그 갈래에만 걸었다. brauer-groups 72, deformation-rings 21, fundamental-lemma 134 처럼 정수론 문서에서 '코호몰로지' 가 단독으로 나오는 자리는 Galois 코호몰로지를 줄여 쓴 것이라 걸지 않았다. (3) 앞 묶음에서 확인한 방침(새 문서가 들어올 때마다 그 문서의 용어를 훑는다)에 하나를 더한다. 새 문서가 들어오면 그 문서가 목표가 되는 자리도 함께 훑는다. 이번 차수의 세 자리가 그렇게 나왔고, 남은 일반 용어를 계속 파는 것보다 수확이 컸다. 다음 차수: 다음 회차에 들어오는 새 문서들, 그리고 그 문서들이 목표가 되는 기존 자리들",
+      "createdAt": "2026-09-22T16:53:16.804Z",
+      "seq": 937
     },
     {
       "id": "15513ef8",
@@ -282,6 +274,46 @@
       "note": "2026-09-22 넷째 회차. 8차 note 가 남긴 (b) 갈래 대신 저장소 전체 규칙 grep 을 먼저 돌렸고 결과를 기록한다. 통과한 것: 금지 매크로 0 건, 비 JavaScript 코드블록 0 건, 언어 없는 코드블록 0 건, 줄 끝 백슬래시 0 건, 이스케이프 검사(awk) 0 건, 링크로 읽히는 대괄호 0 건, 추측성 절 헤딩 0 건, 범위를 뭉뚱그린 열린 문제 0 건, 번역체 관용구 grep('우연이 아니다|놀랍지 않다|흥미롭게도|놀랍게도|본질적으로|에 다름 아니다|에 지나지 않는다|말하자면|라는 것이 밝혀졌다') 0 건. 태그로 읽히는 부등호 grep 은 걸리는 것이 전부 mermaid 의 <br/> 라 오검출이고, 줄 단위 grep -v mermaid 로는 걸러지지 않는다(다음 차수에 코드펜스 안을 건너뛰는 awk 로 바꿀 것). 문학적 비유 grep 은 5 건이고 8차 note 와 같은 자리로 전부 용어의 일부다(elliptic-curves 134 'Montgomery 사다리', lie-algebras 180 '사다리 연산자', post-quantum-cryptography 142 '함정문' 두 번, theta-series 167 'Viazovska 의 마법함수'). 새로 판정한 것 하나: 메타 서술 grep 의 '정리하면' 이 6 건 걸렸는데(continued-fractions 77, gradient-descent 63, jacquet-langlands 31, linear-regression 67, probabilistic-method 117, quadratic-reciprocity 118) 전부 식을 정리한다는 계산 동사이고 4절이 금지한 '요약하면' 뜻의 메타 서술이 아니다. 여섯 자리 다 남겼다. 다음 차수에 메타 서술 grep 에서 '정리하면' 을 빼거나 앞에 '를|을|으로' 가 오는 경우를 제외할 것. 9차에 볼 것: 8차 note 의 (a) because.mjs 를 '앞 문장에 려면|이려면|하려면|므로|따라서|그러므로 가 있고 뒷 문장이 때문이다 로 끝나는 조합' 패턴으로 바꾸는 것, (b) 남은 완곡 표현 후보 '~할 수 있음을 알 수 있다|~라고 할 수 있다|~인 것으로 보인다|~라고 보아도 좋다|~라 하겠다'",
       "createdAt": "2026-09-22T12:53:41.434Z",
       "seq": 930
+    },
+    {
+      "id": "50fe77c8",
+      "title": "Markov 결정 과정의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-22 다섯째 회차에 새로 썼다(부모 markov-chains, shortest-paths, banach-fixed-point 셋, 확률 개관 '조건부 구조와 이산시간 확률과정' 갈래 무작위 걷기 다음 줄, 118줄). 부모 판정: dynamic-programming 도 후보였으나 shortest-paths 의 조상이라 5절대로 뺐다. shortest-paths 의 리프 상태가 풀렸다. 본문 링크를 세 자리에 걸었다: shortest-paths 활용 절 '강화학습의 값 반복', banach-fixed-point 107줄, dynamic-programming 91줄. 셋 다 이 문서가 없어 '강화학습' 이라는 말로 두루뭉술하게 가리키던 자리다. README 를 466/851 로 맞췄다. 문서 구성: 개요, 직관(격자 최단경로를 완화 반복으로 풀다가 바람이 불어 도착 칸이 셋이 되면 1+d(s_a) 를 계산할 수 없다는 데서 막히고, 세 값을 확률로 평균하는 것으로 풀었다. 경로 대신 칸마다 방향을 정하는 함수가 필요하다는 데까지 한 예로 끌고 갔다), 정의(다섯 짝, 정책과 가치함수, Bellman 최적 방정식과 작용소 T, 값 반복 JavaScript 의사코드), 성질(T 가 상한 노름에서 gamma 축약이라는 증명 요지, 결정적 정상 정책의 최적성, 정책 반복의 유한 종료, 선형계획 표현), 활용(최단경로가 특수 사례, 강화학습, 재고와 대기행렬 제어, 최적 정지). 리프다. 후속 후보: Q 학습과 시간차 학습(활용 둘째가 한 줄로 다룬다. 확률근사 정리가 그 문서의 수렴 근거이고 machine-learning-overview 가 강화학습 갈래를 아직 갖고 있지 않다), 최적 정지와 비서 문제(활용 넷째. martingales 의 선택적 정지와 겹침을 먼저 볼 것), 부분관측 MDP(상태를 믿음 분포로 바꾸면 연속 상태 MDP 가 된다. conditional-expectation 이 부모 후보), 평균 보상 기준과 Blackwell 최적성(정의 절 가치함수 다음 문장이 한 줄로 다룬다). 확률근사와 수축사상의 확률적 판본을 정의 없이 활용 절에서 썼다",
+      "createdAt": "2026-09-22T16:45:38.466Z",
+      "seq": 932
+    },
+    {
+      "id": "a1d7e52c",
+      "title": "최적 정지의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-22 다섯째 회차에 새로 썼다(부모 martingales 와 markov-decision-process 둘, 확률 개관 '조건부 구조와 이산시간 확률과정' 갈래 Markov 결정 과정 다음 줄, 83줄). markov-decision-process 활용 넷째 항목에 본문 링크를 걸었고 그 문서의 리프 상태가 한 회차 만에 풀렸다. martingales 와 겹치는지 먼저 판정했다: martingales 는 정지시간과 선택적 정지 정리(언제 멈춰도 기대 이득이 0)를 다루고 최적 정지는 어느 정지시간이 기대 보상을 최대로 하는지를 다루므로 주제가 다르다. 겹치는 것은 선택적 정지 정리를 증명에 쓰는 대목 하나뿐이다. README 를 467/853 으로 맞췄다. 문서 구성: 개요, 직관(비서 문제 하나를 처음부터 끝까지 끌고 갔다. 전부 보고 고르는 것이 규칙이 아니라는 데서 시작해 k번째가 전체 1위일 확률이 k/n 이라는 세기, 문턱 r 규칙, p(r) 의 합, x ln(1/x) 의 최대 1/e 까지), 정의(정지시간, sup E[Y_tau], Snell 포락의 역방향 귀납, tau^ast), 성질(Snell 포락이 Y 를 지배하는 최소 supermartingale, 멈춘 과정이 martingale 이라는 최적성 증명 요지, 단조 문제와 한 단계 예측, 무한 시계), 활용(비서 문제, 미국형 옵션, 순차적 검정, MDP 의 두 행동 특수 사례). 리프다. 후속 후보: 미국형 옵션과 자유경계 문제(활용 둘째. Black-Scholes 문서가 없어 부모가 얇고, 연속시간 판이라 brownian-motion 과 ito-calculus 가 부모 후보다), 순차확률비 검정 SPRT(활용 셋째. martingales 151줄이 이미 한 줄로 다루고 hypothesis-testing 이 부모 후보다), 다중 슬롯머신과 Gittins 지표(탐색과 활용의 균형. markov-decision-process 가 부모이고 최적 정지의 지표 규칙이 그 특수 사례다), Doob 분해와 supermartingale 의 분해(성질 첫 절이 부른다. martingales 가 부모). 위험중립 측도를 정의 없이 활용 절에서 썼다(change-of-measure 가 그 자리를 가질 수 있는지 볼 것)",
+      "createdAt": "2026-09-22T16:47:53.200Z",
+      "seq": 933
+    },
+    {
+      "id": "d7001406",
+      "title": "코호몰로지의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-22 다섯째 회차에 새로 썼다(부모 homology 하나, 위상 개관 대수적 위상 갈래 단체 호몰로지 줄 다음, 87줄). obstruction-theory 5줄과 postnikov-tower 15줄의 '코호몰로지' 첫 등장에 본문 링크를 걸었다. 둘 다 코호몰로지류로 분류를 진술하면서 그 용어에 목표가 없던 자리다. de-rham-cohomology 와 겹치는지 먼저 판정했다: de Rham 은 미분형식 갈래이고 일반론(쌍대 사슬, 컵곱, 보편계수, Poincare 쌍대성)은 비어 있었다. de-rham-cohomology 의 부모는 differential-forms 와 homology 그대로 두었다(cohomology 를 부모로 더하면 부모가 셋이 되고, de Rham 은 특이 코호몰로지를 거치지 않고 정의된다). README 를 468/854 로 맞췄다. 문서 구성: 개요, 직관(CP^2 와 S^2 wedge S^4 의 호몰로지군이 같다는 데서 시작해 2차 순환 둘에서 4차 정보를 얻으려면 곱셈이 있어야 하고, 순환은 못 곱해도 순환 위의 함수는 곱할 수 있다는 데까지 한 예로 끌고 갔다. 마지막에 x cup x 로 두 공간이 갈린다), 정의(쌍대 사슬 복합체와 코경계, 반변 함자성, 컵곱의 앞면 뒷면 공식과 코호몰로지환), 성질(보편계수 정리와 분해가 자연스럽지 않다는 점, 등급 가환성, CP^2 와 wedge 의 구별, Poincare 쌍대성과 교차수), 활용(장애류, 특성류, de Rham 정리, 군 코호몰로지). 리프다. 후속 후보: 스펙트럼 수열(성질 절이 Mayer-Vietoris 를 쓰지 않았고 계산 도구가 비어 있다. spectral-sequences 문서가 있는지 먼저 볼 것), 층 코호몰로지(sheaf-cohomology 가 이미 있고 부모가 이 문서일 수 있는지 볼 것. 지금 부모가 무엇인지 확인이 먼저다), 군 코호몰로지(활용 넷째. group-extensions 의 H^2 분류와 겹치므로 그 문서를 먼저 읽을 것), Poincare 쌍대성과 교차형식(성질 넷째가 한 문단이고 4 다양체의 교차형식이 그 문서의 내용). Ext 함자와 cap 곱을 정의 없이 썼다",
+      "createdAt": "2026-09-22T16:51:21.918Z",
+      "seq": 936
+    },
+    {
+      "id": "e5e8daeb",
+      "title": "Q 학습의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-22 다섯째 회차에 새로 썼다(부모 markov-decision-process 하나, 기계학습 개관에 '순차 결정' 갈래를 새로 만들어 Markov 결정 과정 다음 줄에 넣었다, 94줄). markov-decision-process 활용 둘째 항목에 본문 링크를 걸었다. 같은 회차에 쓴 markov-decision-process 의 후속 후보 첫째를 바로 처리한 것이다. 기계학습 개관에 강화학습 갈래가 없다는 점을 그 note 에 적었는데 '순차 결정' 이라는 이름으로 갈래를 세우고 MDP, Q 학습, 최적 정지 셋을 넣었다. README 를 469/856 으로 맞췄다. 문서 구성: 개요, 직관(값 반복의 합을 쓰려면 P 를 알아야 하는데 한 번 행동해 얻는 것은 도착 상태 하나와 보상 하나뿐이라는 데서 막히고, 그 한 표본의 기댓값이 구하려던 합이라는 것으로 풀었다. 평균을 나중에 내는 대신 볼 때마다 조금씩 옮기는 데까지), 정의(행동 가치함수 Q^ast 와 V^ast 의 관계, 시간차 오차 갱신식, JavaScript 의사코드), 성질(Jaakkola-Jordan-Singh 의 수렴 조건과 확률근사로 쓴 증명 요지, 정책에서 떨어진 학습과 SARSA 와의 차이, 최댓값 편의), 활용(모형 없는 제어, 탐색과 활용, 함수 근사의 발산). 리프다. 후속 후보: 확률근사와 Robbins-Monro(성질 첫 절의 증명 요지가 통째로 그 정리다. 문서가 없어 증명 요지에서 정의 없이 썼고 부모는 banach-fixed-point 와 martingales 후보), 다중 슬롯머신과 후회 한계(활용 둘째. UCB 와 Thompson 표집이 그 문서의 내용이고 concentration-inequalities 가 부모 후보), 정책 경사(Q 를 거치지 않고 정책을 직접 미분하는 갈래. REINFORCE 가 그 문서의 이름이고 4절 두문자어 규칙의 예외로 이미 적혀 있다), 이중 Q 학습(성질 셋째 최댓값 편의가 부른다. 한 문단뿐이라 8절 기준에 못 미칠 수 있다)",
+      "createdAt": "2026-09-22T16:55:19.010Z",
+      "seq": 938
+    },
+    {
+      "id": "51de6b1e",
+      "title": "확률근사의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-22 다섯째 회차에 새로 썼다(부모 martingales 하나, q-learning 의 부모로도 넣어 그 문서의 부모가 markov-decision-process 와 둘이 되었다. 기계학습 개관 순차 결정 갈래 Q 학습 앞 줄, 74줄). q-learning 성질 절의 증명 요지에서 본문 링크를 걸었다. 같은 회차에 q-learning 을 쓰며 note 에 남긴 후속 후보 첫째를 바로 처리했다. README 를 470/858 로 맞췄다. 문서 구성: 개요, 직관(반응률 50% 투여량 찾기를 하나로 끌고 갔다. 투여량마다 표본을 많이 쓰는 이분법이 비싸다는 데서 시작해 관측 하나의 기댓값이 M(theta) 라는 것으로 풀고, 보폭을 줄이는 두 조건이 왜 그 꼴인지까지), 정의(Robbins-Monro 절차와 보폭 조건, Kiefer-Wolfowitz 차분 판본), 성질(수렴 정리와 supermartingale 수렴으로 쓴 증명 요지, sqrt t 점근정규성과 반복값 평균, 축약사상 판본), 활용(확률적 경사하강법, 시간차 학습, 분위수 추정, 적응 제어). 후속 후보: 확률적 경사하강법을 독립 문서로 뗄지(활용 첫째. gradient-descent 가 결정적 판만 다루는지 먼저 볼 것. 미니배치, 분산 축소, Polyak-Ruppert 평균이 그 문서의 내용), Polyak-Ruppert 평균(성질 둘째가 한 문장으로 다룬다), 확률적 근사의 ODE 방법(Ljung 과 Kushner-Clark. 반복을 미분방정식의 이산화로 보는 관점이고 ordinary-differential-equations 가 부모 후보), Kiefer-Wolfowitz 와 영차 최적화(정의 둘째 절이 세 줄뿐이고 SPSA 가 그 문서의 내용). 조건부 분산 유계 조건과 supermartingale 수렴 정리를 martingales 에 기대고 있다",
+      "createdAt": "2026-09-22T16:56:42.610Z",
+      "seq": 939
     },
     {
       "id": "d2720772",
