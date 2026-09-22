@@ -65,6 +65,7 @@ graph TD
 - [Markov 연쇄](markov-chains.md): 전이행렬, 정상분포, 수렴정리
 - [무작위 걷기](random-walks.md): 재귀성을 유효저항으로 읽는 대응
 - [Markov 결정 과정](markov-decision-process.md): 행동으로 전이를 고르는 연쇄, Bellman 방정식과 값 반복
+- [최적 정지](optimal-stopping.md): Snell 포락과 문턱 규칙, 비서 문제
 - [Poisson 과정](poisson-process.md): 독립·정상 증분을 가진 계수과정, 지수 대기시간
 
 ## 연속시간 확률과정

@@ -159,6 +159,7 @@ $$
 
 ## 더 알아보기
 
+- [최적 정지](optimal-stopping.md)
 - [Brown 운동](brownian-motion.md)
 
 #probability #measure_theory #statistics
