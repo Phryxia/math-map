@@ -180,7 +180,7 @@ $$
 
 ## 조합론과 위상
 
-$B_n$ 은 Todd 류의 계수로 Hirzebruch–Riemann–Roch 공식에 들어가고, $\zeta(1-n)=-B_n/n$ 을 통해 구면의 안정 호모토피군의 위수, 곧 Adams 의 $\mathrm{im}\thinspace J$ 부분에도 나타난다. 이들은 모두 $\zeta$ 의 특수값을 계산한다.
+$B_n$ 은 Todd 류의 계수로 Hirzebruch–Riemann–Roch 공식에 들어가고, $\zeta(1-n)=-B_n/n$ 을 통해 구면의 안정 [호모토피군](homotopy-groups.md)의 위수, 곧 Adams 의 $\mathrm{im}\thinspace J$ 부분에도 나타난다. 이들은 모두 $\zeta$ 의 특수값을 계산한다.
 
 [^1]: 표준 참고는 K. Ireland, M. Rosen, *A Classical Introduction to Modern Number Theory* (2판) 15 장과 L. Washington, *Introduction to Cyclotomic Fields* (2판) 5 장. 비정칙 소수의 밀도 추정은 C. L. Siegel 의 발상이며, 비정칙 소수의 무한성은 K. L. Jensen (1915).
 [^2]: L. Washington, *Introduction to Cyclotomic Fields* (2판, 1997) 5 장. 정칙소수가 무한히 많은지 알려져 있지 않다고 적혀 있다.

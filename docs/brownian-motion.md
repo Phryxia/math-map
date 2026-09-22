@@ -114,7 +114,7 @@ $$
 
 ## 편미분방정식과의 대응
 
-전이밀도가 열핵이라는 사실에서 나아가, 영역 $D$ 에서 경계에 닿을 때까지 Brown 운동을 흘려 보내고 경계값의 기댓값을 취하면 [Dirichlet 문제](dirichlet-problem.md)의 해가 된다. 조화함수의 평균값 성질이 확률 쪽에서는 정지된 과정이 martingale 이라는 진술이 되고, 퍼텐셜 이론과 확률론이 같은 언어를 쓰게 된다. [Random walk 와 전기 네트워크](random-walks.md)의 이산 그림을 연속으로 옮긴 것이 이 대응이다.
+전이밀도가 열핵이라는 사실에서 나아가, 영역 $D$ 에서 경계에 닿을 때까지 Brown 운동을 흘려 보내고 경계값의 기댓값을 취하면 [Dirichlet 문제](dirichlet-problem.md)의 해가 된다. [조화함수](harmonic-functions.md)의 평균값 성질이 확률 쪽에서는 정지된 과정이 martingale 이라는 진술이 되고, 퍼텐셜 이론과 확률론이 같은 언어를 쓰게 된다. [Random walk 와 전기 네트워크](random-walks.md)의 이산 그림을 연속으로 옮긴 것이 이 대응이다.
 
 ## 통계와 극한정리
 

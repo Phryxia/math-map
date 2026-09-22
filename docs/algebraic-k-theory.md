@@ -10,7 +10,7 @@ K_1(R)=\mathrm{GL}(R)^{\mathrm{ab}},\quad
 K_2(R)=\text{Steinberg 군의 중심 확대}
 $$
 
-$R=\mathbb Z$ 면 $K_0=\mathbb Z$ , $K_1=\mathbb Z/2$ , $K_2=\mathbb Z/2$ 로 모두 산술적인 양이다. 차수를 올리면 $K_3(\mathbb Z)=\mathbb Z/48$ 이고, 이 48 은 구면의 안정 호모토피군에 나타나는 수와 같다.
+$R=\mathbb Z$ 면 $K_0=\mathbb Z$ , $K_1=\mathbb Z/2$ , $K_2=\mathbb Z/2$ 로 모두 산술적인 양이다. 차수를 올리면 $K_3(\mathbb Z)=\mathbb Z/48$ 이고, 이 48 은 구면의 안정 [호모토피군](homotopy-groups.md)에 나타나는 수와 같다.
 
 Quillen 이 $K_n$ 을 분류공간의 호모토피군으로 정의하면서 [호몰로지](homology.md)의 기법이 들어왔고, Quillen–Lichtenbaum 정리가 $K_n(\mathbb Z)$ 를 에탈 코호몰로지로 계산 가능하게 만들면서 [Galois 표현](galois-representations.md)과 순환체의 산술이 들어왔다. 그 결과 $K_{4k}(\mathbb Z)$ 의 소멸이 [Vandiver 추측](vandiver-conjecture.md)과 동치가 된다.
 
