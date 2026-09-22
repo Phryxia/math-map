@@ -12,7 +12,7 @@ $$
 
 **Kazhdan–Lusztig 다항식**이다. 정의는 조합적이어서 Coxeter 군의 Bruhat 순서와 길이 함수만 쓴다.
 
-같은 다항식이 다른 두 곳에서도 나타난다. 기하에서는 Schubert 다양체 $X_w$ 의 교차 코호몰로지 층의 줄기 차원이고, 표현론에서는 [범주 $\mathcal O$](category-o.md) 의 기약가군을 Verma 가군으로 전개한 계수다. 세 세계의 일치가 Kazhdan–Lusztig 추측이었고 지금은 정리다.
+같은 다항식이 다른 두 곳에서도 나타난다. 기하에서는 Schubert 다양체 $X_w$ 의 교차 코호몰로지 [층](sheaves.md)의 줄기 차원이고, 표현론에서는 [범주 $\mathcal O$](category-o.md) 의 기약가군을 Verma 가군으로 전개한 계수다. 세 세계의 일치가 Kazhdan–Lusztig 추측이었고 지금은 정리다.
 
 # 직관
 

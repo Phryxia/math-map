@@ -132,7 +132,7 @@ $B$ 대신 포물형 부분군 $P$ 를 쓰면 $G/P$ 도 사영다양체이고 �
 
 ## 무한차원 확장
 
-$G$ 를 아핀 Kac–Moody 군으로 바꾸면 $G/B$ 가 무한차원 아핀 깃발다양체가 되고 같은 정리가 성립한다. 얻는 표현이 아핀 Lie 대수의 적분 최고무게 표현이고, 그 지표가 [모듈러 형식](modular-forms.md)의 성질을 갖는 Weyl–Kac 지표 공식으로 나온다. [기하학적 Satake 대응](geometric-satake.md)은 아핀 Grassmann 다양체 위 층으로 표현[범주](category.md) 전체를 복원한다.
+$G$ 를 아핀 Kac–Moody 군으로 바꾸면 $G/B$ 가 무한차원 아핀 깃발다양체가 되고 같은 정리가 성립한다. 얻는 표현이 아핀 Lie 대수의 적분 최고무게 표현이고, 그 지표가 [모듈러 형식](modular-forms.md)의 성질을 갖는 Weyl–Kac 지표 공식으로 나온다. [기하학적 Satake 대응](geometric-satake.md)은 아핀 Grassmann 다양체 위 [층](sheaves.md)으로 표현[범주](category.md) 전체를 복원한다.
 
 # 활용
 
