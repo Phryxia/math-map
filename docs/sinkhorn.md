@@ -4,7 +4,7 @@
 
 이산 Kantorovich [최적 수송](optimal-transport.md) 문제는 선형계획이다. $n$ 개 점에 대해 $\tilde O(n^3)$ 이 들고, 최적해가 심플렉스의 꼭짓점이라 입력을 조금 흔들면 해가 튀며 미분가능하지 않다.
 
-엔트로피 항을 더하면 목적함수가 강볼록해져 해가 유일하고 매끄러워지며, 최적해가 닫힌 꼴을 갖는다.
+엔트로피 항을 더하면 목적함수가 [강볼록](convexity.md)해져 해가 유일하고 매끄러워지며, 최적해가 닫힌 꼴을 갖는다.
 
 $$
 P^\star=\mathrm{diag}(u)\thinspace K\thinspace\mathrm{diag}(v),\qquad K=e^{-C/\varepsilon}
