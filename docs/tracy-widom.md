@@ -125,7 +125,7 @@ $$
 
 ## Fredholm 행렬식의 수치 계산
 
-[Fredholm 행렬식](fredholm-determinant.md) 문서의 Nyström 구적을 Airy 핵에 적용하면 분포를 정의에서 직접 계산한다. 무한구간 $(s,\infty)$ 은 $x = s + L\tan(\pi u/4)$ 로 옮기고, 필요한 것은 $\mathrm{Ai}$ 와 $\mathrm{Ai}'$ 뿐이라 작은 $\lvert x\rvert$ 에서는 전평면 수렴 급수를 큰 $x$ 에서는 점근급수를 쓴다.
+[Fredholm 행렬식](fredholm-determinant.md)의 Nyström 구적을 Airy 핵에 적용하면 분포를 정의에서 직접 계산한다. 무한구간 $(s,\infty)$ 은 $x = s + L\tan(\pi u/4)$ 로 옮기고, 필요한 것은 $\mathrm{Ai}$ 와 $\mathrm{Ai}'$ 뿐이라 작은 $\lvert x\rvert$ 에서는 전평면 수렴 급수를 큰 $x$ 에서는 점근급수를 쓴다.
 
 핵이 해석적이므로 Nyström 근사가 지수적으로 수렴하고, 무한차원 행렬식이 마디 스무 개의 행렬식 하나로 열두 자리 정확도에 도달한다. 같은 구적으로 평균과 분산을 적분하면 위 표의 $-1.7710868074$ 와 $0.8131947928$ 을 열 자리까지 재현한다. 쓰인 재료는 $\mathrm{Ai}$ 의 급수와 Gauss 구적과 LU(lower–upper) 분해뿐이다.
 
