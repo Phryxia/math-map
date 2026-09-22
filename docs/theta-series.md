@@ -143,7 +143,7 @@ $$
 \eta(\tau)\eta(23\tau)\in S_1(\Gamma_0(23),\chi)
 $$
 
-두 번째가 [Hecke 작용소](hecke-operators.md) 문서에서 다룬 레벨 11 새형식이고 $X_0(11)$ 의 정칙 미분형식이다. 무한곱 하나가 타원곡선의 점 개수를 담는다.
+두 번째가 [Hecke 작용소](hecke-operators.md) 문서에서 다룬 레벨 11 새형식이고 $X_0(11)$ 의 정칙 미분형식이다. 무한곱 하나가 [타원곡선](elliptic-curves.md)의 점 개수를 담는다.
 
 ## 분할수와 오각수
 

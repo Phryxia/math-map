@@ -84,7 +84,7 @@ $$
 \left\vert\char35{}C(\mathbb F_q)-(q+1)\right\vert\le 2g\sqrt q
 $$
 
-Hasse 가 타원곡선에서, Weil 이 일반 곡선에서 증명했다. 고차원 다양체로 올린 진술이 [Weil 추측](deligne-weil-conjectures.md)의 마지막 항목이고 Deligne 가 증명했다.
+Hasse 가 [타원곡선](elliptic-curves.md)에서, Weil 이 일반 곡선에서 증명했다. 고차원 다양체로 올린 진술이 [Weil 추측](deligne-weil-conjectures.md)의 마지막 항목이고 Deligne 가 증명했다.
 
 # 활용
 

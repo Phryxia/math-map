@@ -77,7 +77,7 @@ $$
 
 ## Tate 가군
 
-$E$ 가 $K$ 위의 타원곡선이고 $\ell\ne\mathrm{char}\thinspace K$ 일 때
+$E$ 가 $K$ 위의 [타원곡선](elliptic-curves.md)이고 $\ell\ne\mathrm{char}\thinspace K$ 일 때
 
 $$
 T_\ell E=\varprojlim_nE\lbrack\ell^n\rbrack(\bar K)\cong\mathbb Z_\ell^2,

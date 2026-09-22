@@ -2,7 +2,7 @@
 
 # 개요
 
-[Mazur](eisenstein-ideal.md)는 $\mathbb Q$ 위 타원곡선의 비틀림군이 15 가지뿐임을 보였다. 체의 차수만 고정했을 때도 비틀림군의 크기가 유계인지가 다음 물음이다.
+[Mazur](eisenstein-ideal.md)는 $\mathbb Q$ 위 [타원곡선](elliptic-curves.md)의 비틀림군이 15 가지뿐임을 보였다. 체의 차수만 고정했을 때도 비틀림군의 크기가 유계인지가 다음 물음이다.
 
 > **정리(Merel, 1996).** $d\ge1$ 에 대해 상수 $B(d)$ 가 있어, 차수 $d$ 인 임의의 수체 $K$ 와 임의의 타원곡선 $E/K$ 에 대해 $|E(K)\_{\mathrm{tors}}|\le B(d)$ 이다.
 

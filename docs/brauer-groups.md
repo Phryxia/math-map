@@ -134,7 +134,7 @@ $X(K)\subset X(\mathbb A_K)^{\mathrm{Br}}\subset X(\mathbb A_K)$ 가 항상 성�
 # 활용
 
 - **이차형식의 분류.** 대역체 위의 이차형식은 차원, 판별식, Hasse 불변량으로 완전히 분류되고, 그 Hasse 불변량이 Hilbert 기호의 곱이다.
-- **타원곡선의 하강.** Selmer 군과 Tate–Shafarevich 군이 아델적 코호몰로지로 정의되며, $\mathrm{Sha}$ 의 원소가 Hasse 원리를 깨는 주동차공간이다. Cassels–Tate 쌍대성이 Brauer 군의 곱 공식과 같은 구조를 갖는다.
+- **[타원곡선](elliptic-curves.md)의 하강.** Selmer 군과 Tate–Shafarevich 군이 아델적 코호몰로지로 정의되며, $\mathrm{Sha}$ 의 원소가 Hasse 원리를 깨는 주동차공간이다. Cassels–Tate 쌍대성이 Brauer 군의 곱 공식과 같은 구조를 갖는다.
 - **유리점의 존재 판정.** 곡면이나 고차원 다양체에 유리점이 있는지 판정하는 알고리즘이 국소 조건과 Brauer–Manin 계산을 결합한다.
 - **나눗셈대수의 분류.** $K$ 위의 나눗셈대수 전체를 불변량의 모음으로 적을 수 있다는 것이 위 완전열의 내용이다.
 

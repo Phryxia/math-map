@@ -19,7 +19,7 @@ $$
 
 ## 초특이 곡선
 
-표수 $p$ 의 타원곡선 $E$ 에서 $p$ 비틀림은 두 가지만 가능하다.
+표수 $p$ 의 [타원곡선](elliptic-curves.md) $E$ 에서 $p$ 비틀림은 두 가지만 가능하다.
 
 $$
 E\lbrack p\rbrack(\overline{\mathbb F_p})\cong\mathbb Z/p\ \ (\text{보통})\qquad\text{또는}\qquad E\lbrack p\rbrack=0\ \ (\text{초특이})

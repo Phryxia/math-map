@@ -2,7 +2,7 @@
 
 # 개요
 
-[Deligne 의 정리](deligne-weil-conjectures.md)는 Frobenius 고윳값의 절댓값을 확정한다. 타원곡선 $E/\mathbb Q$ 와 좋은 환원의 소수 $p$ 에서
+[Deligne 의 정리](deligne-weil-conjectures.md)는 Frobenius 고윳값의 절댓값을 확정한다. [타원곡선](elliptic-curves.md) $E/\mathbb Q$ 와 좋은 환원의 소수 $p$ 에서
 
 $$
 a_p=p+1-\char35{}E(\mathbb F_p),

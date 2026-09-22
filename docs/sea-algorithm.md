@@ -2,7 +2,7 @@
 
 # 개요
 
-타원곡선 암호는 $\char35{}E(\mathbb F_p)$ 를 알아야 한다. 위수가 작은 소인수로 쪼개지면 Pohlig–Hellman 으로 [이산로그](discrete-logarithm.md)가 무너지므로 곡선을 고른 뒤 위수를 센다. 암호에 쓰는 $p$ 는 $2^{256}$ 규모여서 점을 하나씩 세는 $O(p)$ 도, Shanks 의 $O(p^{1/4})$ 도 쓸 수 없다.
+[타원곡선](elliptic-curves.md) 암호는 $\char35{}E(\mathbb F_p)$ 를 알아야 한다. 위수가 작은 소인수로 쪼개지면 Pohlig–Hellman 으로 [이산로그](discrete-logarithm.md)가 무너지므로 곡선을 고른 뒤 위수를 센다. 암호에 쓰는 $p$ 는 $2^{256}$ 규모여서 점을 하나씩 세는 $O(p)$ 도, Shanks 의 $O(p^{1/4})$ 도 쓸 수 없다.
 
 Schoof 가 1985 년에 $\log p$ 의 다항식 시간으로 도는 알고리즘을 주었다[^1].
 

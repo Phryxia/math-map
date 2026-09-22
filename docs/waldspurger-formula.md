@@ -144,7 +144,7 @@ $$
 # 활용
 
 - **중심값의 수치 계산.** 중심 $L$ 값을 직접 계산하려면 근사 함수방정식으로 급수를 자르고 오차를 관리해야 한다. 반정수 무게 형식의 Fourier 계수는 theta 급수의 곱으로 표현되어 정수 연산만으로 나오고, 한 번의 $q$ 전개로 여러 판별식 $D$ 의 중심값을 얻는다. BSD 추측의 수치 검증, 이차 뒤틀림 족의 계수 0 분포 조사, 합동수 판정에 쓰인다. Tunnell 정리가 합동수를 삼항이차형식의 표현수로 판정하는 것도 이 계산의 사례다.
-- **비소멸의 통계.** $\chi$ 나 $D$ 를 움직이며 중심값의 비소멸 비율을 묻는 문제는 Waldspurger 로 옮기면 반정수 무게 형식 계수의 비소멸 문제가 되고, Fourier 계수의 크기 추정과 합 공식을 쓸 수 있다. 계수 0 인 타원곡선이 양의 비율을 차지한다는 결과들이 이 경로를 지난다.
+- **비소멸의 통계.** $\chi$ 나 $D$ 를 움직이며 중심값의 비소멸 비율을 묻는 문제는 Waldspurger 로 옮기면 반정수 무게 형식 계수의 비소멸 문제가 되고, Fourier 계수의 크기 추정과 합 공식을 쓸 수 있다. 계수 0 인 [타원곡선](elliptic-curves.md)이 양의 비율을 차지한다는 결과들이 이 경로를 지난다.
 - **BSD 로의 입력.** $L(E,1)\ne0$ 이면 Mordell–Weil 계수가 0 이라는 [BSD](birch-swinnerton-dyer.md)의 절반은 Kolyvagin 의 Euler 계 논법이 준다. 그 논법에 필요한 비소멸 조건의 확인을 Waldspurger 가 계수 계산으로 바꾼다.
 
 [^1]: J. Tunnell, *Local epsilon factors and characters of GL(2)*, Amer. J. Math. **105** (1983). H. Saito, *On Tunnell's formula for characters of* $\mathrm{GL}(2)$ (Compositio Math. **85**, 1993).

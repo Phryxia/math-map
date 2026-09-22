@@ -149,7 +149,7 @@ $i^\delta$ 는 무한 자리의 근 수다. 지표가 홀이면 감마 인자가
 
 ## 중심값과 패리티
 
-$W(\chi)=-1$ 이면 함수방정식이 $\Lambda(\frac12)=-\Lambda(\frac12)$ 를 강제해 중심값이 $0$ 이 된다. 타원곡선의 $L$ 함수에서 이 부호가 **패리티**이고, [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)을 통해 계수의 홀짝을 예측한다.
+$W(\chi)=-1$ 이면 함수방정식이 $\Lambda(\frac12)=-\Lambda(\frac12)$ 를 강제해 중심값이 $0$ 이 된다. [타원곡선](elliptic-curves.md)의 $L$ 함수에서 이 부호가 **패리티**이고, [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)을 통해 계수의 홀짝을 예측한다.
 
 Deligne 은 국소 근 수가 [Galois 표현](galois-representations.md)의 자료만으로 정해지는 방식을 확립했다. 자기동형 쪽의 $\varepsilon$ 과 Galois 쪽의 $\varepsilon$ 이 일치해야 한다는 조건이 [Langlands 강령](langlands-program.md)에서 대응을 특정한다.
 

@@ -149,7 +149,7 @@ $4k+1$ 과 $4k+3$ 소수의 개수 비는 $1$ 로 수렴하지만 차이의 부�
 # 활용
 
 - 실수 원시 지표는 이차 수체 $\mathbb Q(\sqrt d)$ 와 일대일로 대응하고 그 지표가 Kronecker 기호다. $d\lt 0$ 에서 $L(1,\chi_d)=\frac{2\pi h(d)}{w\sqrt{|d|}}$ 이며 $h(d)$ 는 유수, $w$ 는 단원근의 개수다. 유수가 양의 정수이므로 $L(1,\chi_d)\gt 0$ 이 따라오고, 이것이 실수 지표의 난관을 뚫는 Dirichlet 의 해법이다. 해석적 양과 대수적 불변량을 잇는 같은 형식의 등식이 Birch–Swinnerton-Dyer 추측까지 이어진다.
-- $p\equiv3\pmod4$ 인 소수는 제곱근 계산이 $a^{(p+1)/4}$ 한 번으로 끝나 [RSA](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 Rabin 변형과 타원곡선 좌표 압축에 쓰이고, $p\equiv1\pmod{2^k}$ 인 소수는 $2^k$ 차 단위근을 가져 [고속 Fourier 변환](fft.md)을 유한체에서 수행하는 수론 변환의 법이 된다. 산술수열의 소수 정리가 밀도를 $1/\varphi(q)$ 로 보장하므로 후보를 무작위로 뽑아 소수판정을 반복하면 $\varphi(q)\ln x$ 번 남짓에 성공한다.
+- $p\equiv3\pmod4$ 인 소수는 제곱근 계산이 $a^{(p+1)/4}$ 한 번으로 끝나 [RSA](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 Rabin 변형과 [타원곡선](elliptic-curves.md) 좌표 압축에 쓰이고, $p\equiv1\pmod{2^k}$ 인 소수는 $2^k$ 차 단위근을 가져 [고속 Fourier 변환](fft.md)을 유한체에서 수행하는 수론 변환의 법이 된다. 산술수열의 소수 정리가 밀도를 $1/\varphi(q)$ 로 보장하므로 후보를 무작위로 뽑아 소수판정을 반복하면 $\varphi(q)\ln x$ 번 남짓에 성공한다.
 - 아벨이 아닌 Galois 군의 표현으로 같은 구성을 하면 Artin $L$ 함수, 타원곡선의 점 개수로 하면 Hasse–Weil $L$ 함수가 된다. Langlands 강령은 이 $L$ 함수들이 자기동형 표현의 $L$ 함수와 일치한다고 예측하며, 그 대응에서 해석적 연속과 함수방정식이 따라온다. Wiles 의 증명도 특정 타원곡선의 $L$ 함수가 [모듈러 형식](modular-forms.md)의 $L$ 함수와 같음을 보인 것이다.
 
 # 연관 문서

@@ -2,7 +2,7 @@
 
 # 개요
 
-Birch–Swinnerton-Dyer(BSD) 추측은 타원곡선 $E/\mathbb Q$ 의 $L$ 함수가 $s=1$ 에서 소멸하는 차수가 Mordell–Weil 군의 계수와 같다고 주장한다.
+Birch–Swinnerton-Dyer(BSD) 추측은 [타원곡선](elliptic-curves.md) $E/\mathbb Q$ 의 $L$ 함수가 $s=1$ 에서 소멸하는 차수가 Mordell–Weil 군의 계수와 같다고 주장한다.
 
 $$
 \mathrm{ord}\_{s=1}L(E,s)\thickspace=\thickspace\mathrm{rank}\thinspace E(\mathbb Q)

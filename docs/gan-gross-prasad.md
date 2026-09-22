@@ -204,7 +204,7 @@ $\Delta$ 는 $\mathrm{Sh}(U(n))\hookrightarrow\mathrm{Sh}(U(n+1)\times U(n))$ �
 
 ## BSD 추측
 
-$n=1$ 의 Waldspurger 정리와 Gross–Zagier 를 합치면 타원곡선 $E/\mathbb Q$ 에서 $L(E,1)\ne0$ 이면 주기가 0 이 아니고, $L(E,1)=0$ 이면서 $L'(E,1)\ne0$ 이면 Heegner 점이 무한위수다. 이것이 계수 $\le1$ 에서 BSD(Birch–Swinnerton-Dyer) 의 절반을 증명한 Gross–Zagier–Kolyvagin 논법의 입력이고 [Selmer 군](selmer-groups.md) 쪽 통제와 맞물린다. GGP 는 같은 구조를 고전군 전반으로 확장한다.
+$n=1$ 의 Waldspurger 정리와 Gross–Zagier 를 합치면 [타원곡선](elliptic-curves.md) $E/\mathbb Q$ 에서 $L(E,1)\ne0$ 이면 주기가 0 이 아니고, $L(E,1)=0$ 이면서 $L'(E,1)\ne0$ 이면 Heegner 점이 무한위수다. 이것이 계수 $\le1$ 에서 BSD(Birch–Swinnerton-Dyer) 의 절반을 증명한 Gross–Zagier–Kolyvagin 논법의 입력이고 [Selmer 군](selmer-groups.md) 쪽 통제와 맞물린다. GGP 는 같은 구조를 고전군 전반으로 확장한다.
 
 ## 비소멸 판정의 도구
 

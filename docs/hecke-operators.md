@@ -130,7 +130,7 @@ $$
 
 Ramanujan–Petersson 추측이라 불리던 이 부등식을 Deligne 이 Weil 추측에서 끌어냈다. $a_p$ 는 어떤 $\ell$ 진 Galois 표현의 Frobenius 자취이고, 그 표현의 고윳값이 절댓값 $p^{(k-1)/2}$ 를 갖는다는 것이 Weil 추측의 [Riemann 가설](riemann-hypothesis.md) 부분이다.
 
-무게 $k=2$ 에서 $|a_p|\le2\sqrt p$ 는 타원곡선의 Hasse 경계와 같은 정리다.
+무게 $k=2$ 에서 $|a_p|\le2\sqrt p$ 는 [타원곡선](elliptic-curves.md)의 Hasse 경계와 같은 정리다.
 
 ## Eichler–Shimura 관계
 
