@@ -153,6 +153,7 @@ $$
 ### 위상 불변량
 
 - [Euler 지표](euler-characteristic.md)
+- [코호몰로지](cohomology.md)
 - [de Rham 코호몰로지](de-rham-cohomology.md)
 - [Reidemeister 비틀림과 렌즈 공간](reidemeister-torsion.md)
 - [Khovanov 호몰로지](khovanov-homology.md)
