@@ -44,7 +44,7 @@ $$
 \xi_k\widehat h=g
 $$
 
-$h$ 는 $\widehat h$ 의 정칙 부분이고 $g$ 는 그 그림자다. 보통 모듈러 형식을 더해도 shadow 가 같으므로 대응은 $h \bmod M_k$ 수준에서 일대일이다.
+$h$ 는 $\widehat h$ 의 정칙 부분이고 $g$ 는 그 shadow 다. 보통 모듈러 형식을 더해도 shadow 가 같으므로 대응은 $h \bmod M_k$ 수준에서 일대일이다.
 
 ## 보정항의 출처
 
@@ -158,7 +158,7 @@ Andrews–Dragonette 추측이 이 공식의 따름결과로 해결되었다. [�
 
 ## Ramanujan 의 17 개와 차수
 
-Ramanujan 의 mock theta 함수는 전부 무게 $1/2$ 이고 shadow 는 무게 $3/2$ 의 단항 theta 급수다. 함수마다 붙어 있던 차수(order) 3, 5, 7 은 Zwegers 이후 shadow 의 준위로 읽힌다. 차수 $\ell$ 의 mock theta 함수는 준위가 $\ell$ 을 나누는 자리에서 사는 theta 급수를 그림자로 갖는다.
+Ramanujan 의 mock theta 함수는 전부 무게 $1/2$ 이고 shadow 는 무게 $3/2$ 의 단항 theta 급수다. 함수마다 붙어 있던 차수(order) 3, 5, 7 은 Zwegers 이후 shadow 의 준위로 읽힌다. 차수 $\ell$ 의 mock theta 함수는 준위가 $\ell$ 을 나누는 자리에서 사는 theta 급수를 shadow 로 갖는다.
 
 ## 곱셈 구조의 부재
 
