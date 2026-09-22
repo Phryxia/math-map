@@ -8,7 +8,7 @@ $$
 \mathrm{Cl}\_{\mathfrak m}(K)/H \thickspace\xrightarrow{\ \sim\ }\thickspace \mathrm{Gal}(L/K)
 $$
 
-$K$ 의 아벨 확대 $L$ 마다 광선유군의 부분군 하나가 대응하고 그 몫이 $\mathrm{Gal}(L/K)$ 와 동형이다. 확대체를 만들어 보지 않고 $K$ 의 아이디얼 산술만으로 아벨 확대의 목록을 읽어낼 수 있다.
+$K$ 의 아벨 확대 $L$ 마다 광선유군의 부분군 하나가 대응하고 그 몫이 $\mathrm{Gal}(L/K)$ 와 동형이다. 확대체를 만들어 보지 않고 $K$ 의 [아이디얼](ideals-quotient-rings.md) 산술만으로 아벨 확대의 목록을 읽어낼 수 있다.
 
 [이차 상호법칙](quadratic-reciprocity.md)은 $p$ 가 법 $q$ 에서 제곱수인지와 $q$ 가 법 $p$ 에서 제곱수인지를 잇는다. 유체론의 언어로는 소수 $p$ 가 아벨 확대 $L/K$ 에서 분해하는 방식이 $p$ 의 합동조건으로 결정된다는 진술이며, Gauss 의 정리는 $K=\mathbb Q$ 이고 $L$ 이 이차체인 경우다.
 

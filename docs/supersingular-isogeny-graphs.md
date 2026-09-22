@@ -89,7 +89,7 @@ $$
 \lbrace\text{초특이 }E/\overline{\mathbb F_p}\rbrace\ \longleftrightarrow\ \lbrace B_{p,\infty}\ \text{의 극대차수}\rbrace/\text{공액}
 $$
 
-$B_{p,\infty}$ 는 $p$ 와 $\infty$ 에서만 분지하는 유일한 유리 사원수대수다. 이 대응에서 동종사상은 좌아이디얼이 되고 그래프는 아이디얼 류의 그래프가 된다. 곡선 쪽 문제를 격자 쪽으로 옮기는 데 쓰이며 공격과 방어 양쪽의 핵심 도구다.
+$B_{p,\infty}$ 는 $p$ 와 $\infty$ 에서만 분지하는 유일한 유리 사원수대수다. 이 대응에서 동종사상은 좌아이디얼이 되고 그래프는 [아이디얼](ideals-quotient-rings.md) 류의 그래프가 된다. 곡선 쪽 문제를 격자 쪽으로 옮기는 데 쓰이며 공격과 방어 양쪽의 핵심 도구다.
 
 ## SIDH 키교환
 

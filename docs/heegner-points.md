@@ -26,7 +26,7 @@ Kolyvagin 은 반대 부등식을 얻었다. $y_K$ 가 무한위수이면 그것
 
 $X_0(N)$ 의 점은 순환 $N$ 등원사상 $E_1\to E_2$ 다. Heegner 의 착상은 이 자료를 허수이차체에서 통째로 만들어 내는 것이다.
 
-허수이차체 $K=\mathbb Q(\sqrt D)$ ($D\lt 0$ 기본판별식)의 정수환 $\mathcal O_K$ 는 $\mathbb C$ 안의 격자이므로 타원곡선 $\mathbb C/\mathcal O_K$ 를 준다. 지표 $N$ 의 아이디얼 $\mathfrak n\subset\mathcal O_K$ 로
+허수이차체 $K=\mathbb Q(\sqrt D)$ ($D\lt 0$ 기본판별식)의 정수환 $\mathcal O_K$ 는 $\mathbb C$ 안의 격자이므로 타원곡선 $\mathbb C/\mathcal O_K$ 를 준다. 지표 $N$ 의 [아이디얼](ideals-quotient-rings.md) $\mathfrak n\subset\mathcal O_K$ 로
 
 $$
 \mathbb C/\mathcal O_K\thickspace\longrightarrow\thickspace\mathbb C/\mathfrak n^{-1}

@@ -71,7 +71,7 @@ $$
 
 가 $\mathbb A_K$ 와 그 쌍대군 사이의 동형이 된다. 아델 환은 자기쌍대다. 게다가 $K$ 의 소멸자가 정확히 $K$ 자신이다. 이것이 $K$ 가 이산이고 몫이 콤팩트하다는 사실의 쌍대판이다.
 
-Haar [측도](measure.md)는 Fourier 반전이 $\hat{\hat f}(x)=f(-x)$ 로 딱 떨어지도록 잡는다. 이 **자기쌍대 측도**에서 $\mathrm{vol}(\mathbb A_K/K)=1$ 이고, 국소 성분으로 내려가면 유한 자리마다 $\mathrm{vol}(\mathcal O_v)=N\mathfrak d_v^{-1/2}$ 가 되어 다른 아이디얼 $\mathfrak d$ 의 노름, 곧 판별식의 제곱근이 등장한다.
+Haar [측도](measure.md)는 Fourier 반전이 $\hat{\hat f}(x)=f(-x)$ 로 딱 떨어지도록 잡는다. 이 **자기쌍대 측도**에서 $\mathrm{vol}(\mathbb A_K/K)=1$ 이고, 국소 성분으로 내려가면 유한 자리마다 $\mathrm{vol}(\mathcal O_v)=N\mathfrak d_v^{-1/2}$ 가 되어 다른 [아이디얼](ideals-quotient-rings.md) $\mathfrak d$ 의 노름, 곧 판별식의 제곱근이 등장한다.
 
 ## Schwartz–Bruhat 공간
 

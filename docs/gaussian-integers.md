@@ -74,7 +74,7 @@ $$
 
 ## 이차 정수환과의 비교
 
-$d$ 가 제곱인수 없는 정수일 때 $\mathbb Z[\sqrt d\thinspace]$ 나 그 정수적 폐포도 같은 방식으로 다룬다. 허수 이차체 $\mathbb Q(\sqrt{-d}\thinspace)$ 의 정수환이 UFD 인 것은 $d=1,2,3,7,11,19,43,67,163$ 아홉 경우뿐이다[^3]. $\mathbb Z[\sqrt{-5}\thinspace]$ 에서 $6$ 의 분해가 둘인 것이 UFD 가 아닌 첫 예이고, 이 실패를 아이디얼 수준에서 복구한 것이 [Dedekind 정역](dedekind-domains.md)과 [대수적 수체](algebraic-number-fields.md)의 유수 이론이다.
+$d$ 가 제곱인수 없는 정수일 때 $\mathbb Z[\sqrt d\thinspace]$ 나 그 정수적 폐포도 같은 방식으로 다룬다. 허수 이차체 $\mathbb Q(\sqrt{-d}\thinspace)$ 의 정수환이 UFD 인 것은 $d=1,2,3,7,11,19,43,67,163$ 아홉 경우뿐이다[^3]. $\mathbb Z[\sqrt{-5}\thinspace]$ 에서 $6$ 의 분해가 둘인 것이 UFD 가 아닌 첫 예이고, 이 실패를 [아이디얼](ideals-quotient-rings.md) 수준에서 복구한 것이 [Dedekind 정역](dedekind-domains.md)과 [대수적 수체](algebraic-number-fields.md)의 유수 이론이다.
 
 ## 정수론의 계산
 

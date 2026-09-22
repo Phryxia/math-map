@@ -40,7 +40,7 @@ $$
 
 이다. $p\mid B_k$ 이면 상수항이 $p$ 를 법으로 0 이므로 $E_k\bmod p$ 는 $q$ 로 시작하는 급수다. 무게 $k$ 의 [모듈러 형식](modular-forms.md) 공간에서 Eisenstein 부분과 첨점 부분은 $\mathbb Q$ 위에서 갈라지지만, $\mathbb Z_p$ 위에서는 $B_k$ 가 분모에 들어 있어 갈라지지 않는다.
 
-따라서 어떤 고유첨점형식 $f=\sum a_nq^{n}$ 과 소 아이디얼 $\mathfrak p\mid p$ 가 있어
+따라서 어떤 고유첨점형식 $f=\sum a_nq^{n}$ 과 소 [아이디얼](ideals-quotient-rings.md) $\mathfrak p\mid p$ 가 있어
 
 $$
 a_\ell\equiv1+\ell^{k-1}\pmod{\mathfrak p}\qquad(\ell\ne p\ \text{소수})

@@ -100,7 +100,7 @@ $$
 \mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/m\mathbb Z, \mathbb Z/n\mathbb Z) \cong \mathbb Z/\gcd(m, n)\mathbb Z
 $$
 
-$n \ge 2$ 에서는 $\mathrm{Tor}\_n^{\mathbb Z} = 0$ 이다. $\mathbb Z$ 가 주 아이디얼 정역이라 모든 가군이 길이 1 의 자유 분해를 가지기 때문이다.
+$n \ge 2$ 에서는 $\mathrm{Tor}\_n^{\mathbb Z} = 0$ 이다. $\mathbb Z$ 가 주 [아이디얼](ideals-quotient-rings.md) 정역이라 모든 가군이 길이 1 의 자유 분해를 가지기 때문이다.
 
 ## 소멸에 의한 특성화
 

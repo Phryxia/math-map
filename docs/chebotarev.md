@@ -8,7 +8,7 @@ $$
 \delta\Big(\Big\lbrace\mathfrak p:\Big[\tfrac{L/K}{\mathfrak p}\Big]=C\Big\rbrace\Big)=\frac{|C|}{[L:K]}
 $$
 
-분기하지 않는 소 아이디얼 $\mathfrak p$ 마다 Frobenius 켤레류 $\left[\frac{L/K}{\mathfrak p}\right]\subseteq\mathrm{Gal}(L/K)$ 가 정해져 소수를 Galois 군의 원소로 번역한다. 위 등식은 Galois 군에서 원소를 무작위로 뽑는 것과 소수를 무작위로 뽑아 Frobenius 를 보는 것이 구별되지 않는다는 뜻이다. [유체론](class-field-theory.md)이 아벨 확대에서 Frobenius 가 무엇인지를 알려 준다면 이 정리는 그것의 분포를 알려 준다.
+분기하지 않는 소 [아이디얼](ideals-quotient-rings.md) $\mathfrak p$ 마다 Frobenius 켤레류 $\left[\frac{L/K}{\mathfrak p}\right]\subseteq\mathrm{Gal}(L/K)$ 가 정해져 소수를 Galois 군의 원소로 번역한다. 위 등식은 Galois 군에서 원소를 무작위로 뽑는 것과 소수를 무작위로 뽑아 Frobenius 를 보는 것이 구별되지 않는다는 뜻이다. [유체론](class-field-theory.md)이 아벨 확대에서 Frobenius 가 무엇인지를 알려 준다면 이 정리는 그것의 분포를 알려 준다.
 
 $L=\mathbb Q(\zeta_m)$ 이면 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathrm{Frob}\_p=p\bmod m$ 이므로 정리가 [Dirichlet 의 등차수열 정리](dirichlet-l-functions.md)가 된다. Chebotarev 는 이것을 비아벨 확대로 넓혔고 증명도 일반 경우를 원분체 경우로 환원한다.
 

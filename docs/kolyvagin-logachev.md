@@ -35,7 +35,7 @@ Heegner 점은 한 점만 준다. 계수가 2 이상이면 독립인 점을 둘 
 
 ## 겨냥 몫
 
-$X_0(N)$ 의 모듈러 기호 $e=\lbrace 0,\infty\rbrace$ 가 정하는 Hecke 아이디얼 $I_e=\mathrm{Ann}\_{\mathbb T}(e)$ 로 몫을 취한 아벨 다양체
+$X_0(N)$ 의 모듈러 기호 $e=\lbrace 0,\infty\rbrace$ 가 정하는 Hecke [아이디얼](ideals-quotient-rings.md) $I_e=\mathrm{Ann}\_{\mathbb T}(e)$ 로 몫을 취한 아벨 다양체
 
 $$
 J_e=J_0(N)\big/I_eJ_0(N)

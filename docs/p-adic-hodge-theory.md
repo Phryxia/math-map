@@ -151,7 +151,7 @@ $$
 \theta\Big(\sum p^n[x_n]\Big)=\sum p^nx_n^\sharp
 $$
 
-가 있고 그 핵은 주 아이디얼 $(\xi)$ 다. $[\thinspace\cdot\thinspace]$ 이 Teichmüller 올림이다. 핵으로 완비화하고 $p$ 를 뒤집으면 다음을 얻는다.
+가 있고 그 핵은 주 [아이디얼](ideals-quotient-rings.md) $(\xi)$ 다. $[\thinspace\cdot\thinspace]$ 이 Teichmüller 올림이다. 핵으로 완비화하고 $p$ 를 뒤집으면 다음을 얻는다.
 
 $$
 B_{\mathrm{dR}}^+=\varprojlim_n A_{\mathrm{inf}}[1/p]/(\ker\theta)^n,\qquad

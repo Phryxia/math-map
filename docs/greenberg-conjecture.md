@@ -57,7 +57,7 @@ $\mu_{p^{n}}$ 을 차례로 붙여 만든 $\mathbb Q_\infty=\bigcup\mathbb Q(\mu
 
 ## 불변량
 
-$A_n$ 을 $F_n$ 의 류군의 $p$ 부분이라 하고 $X_\infty=\varprojlim A_n$ 이라 하면 $X_\infty$ 는 $\Lambda=\mathbb Z_p[[T]]$ 위의 유한생성 비틀림 가군이다. 그 특성 아이디얼
+$A_n$ 을 $F_n$ 의 류군의 $p$ 부분이라 하고 $X_\infty=\varprojlim A_n$ 이라 하면 $X_\infty$ 는 $\Lambda=\mathbb Z_p[[T]]$ 위의 유한생성 비틀림 가군이다. 그 특성 [아이디얼](ideals-quotient-rings.md)
 
 $$
 \mathrm{char}\_\Lambda(X_\infty)=\big(p^{\mu}f(T)\big),\qquad \lambda=\deg f

@@ -149,7 +149,7 @@ $\mathcal O=\mathcal O_K$ 인 경우다.
 
 ## 제2 주정리와 Shimura 상호법칙
 
-$E/H$ 를 $\mathcal O_K$ 로 CM(complex multiplication) 을 갖는 곡선, $\mathfrak h\colon E\to E/\mathrm{Aut}(E)\cong\mathbb P^1$ 를 Weber 함수라 하자. 아이디얼 $\mathfrak m$ 에 대해
+$E/H$ 를 $\mathcal O_K$ 로 CM(complex multiplication) 을 갖는 곡선, $\mathfrak h\colon E\to E/\mathrm{Aut}(E)\cong\mathbb P^1$ 를 Weber 함수라 하자. [아이디얼](ideals-quotient-rings.md) $\mathfrak m$ 에 대해
 
 $$
 K_{\mathfrak m}=H\bigl(\mathfrak h(P)\thinspace:\thinspace P\in E[\mathfrak m]\bigr)

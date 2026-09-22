@@ -2,7 +2,7 @@
 
 # 개요
 
-Nakayama 보조정리는 유한생성 [가군](modules.md) $M$ 과 Jacobson 근기에 들어가는 아이디얼 $I$ 에 대해 $IM=M$ 이면 $M=0$ 이라는 진술이다. 국소환에서는 $I$ 를 극대 아이디얼 $\mathfrak m$ 으로 잡아 쓴다.
+Nakayama 보조정리는 유한생성 [가군](modules.md) $M$ 과 Jacobson 근기에 들어가는 [아이디얼](ideals-quotient-rings.md) $I$ 에 대해 $IM=M$ 이면 $M=0$ 이라는 진술이다. 국소환에서는 $I$ 를 극대 아이디얼 $\mathfrak m$ 으로 잡아 쓴다.
 
 이 보조정리가 국소환 위의 가군을 잉여체 위의 벡터 공간으로 내려 읽게 한다. $M/\mathfrak mM$ 은 체 $k=R/\mathfrak m$ 위의 벡터 공간이고, 그 기저를 들어 올린 것이 $M$ 의 최소 생성계가 된다. 선형대수에서만 성립하던 차원 논증이 [국소환](localization-rings.md) 위에서 되살아난다.
 
