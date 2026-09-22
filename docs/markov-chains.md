@@ -180,5 +180,6 @@ $$
 
 - [무작위 걷기](random-walks.md)
 - [Poisson 과정](poisson-process.md)
+- [Markov 결정 과정](markov-decision-process.md)
 
 #probability #linear_algebra #statistics #computation

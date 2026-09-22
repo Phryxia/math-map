@@ -104,7 +104,7 @@ $$
 
 ## 수치 알고리즘
 
-비선형 방정식의 반복해법, 선형계의 Jacobi 와 Gauss–Seidel 반복, 강화학습의 가치 반복이 모두 축약사상의 반복이다. 가치 반복에서 Bellman 작용소가 할인율 $\gamma \lt 1$ 을 계수로 하는 축약이며, 그 사실이 최적 가치함수의 존재와 유일성과 수렴 속도를 준다.
+비선형 방정식의 반복해법, 선형계의 Jacobi 와 Gauss–Seidel 반복, [Markov 결정 과정](markov-decision-process.md)의 가치 반복이 모두 축약사상의 반복이다. 가치 반복에서 Bellman 작용소가 할인율 $\gamma \lt 1$ 을 계수로 하는 축약이며, 그 사실이 최적 가치함수의 존재와 유일성과 수렴 속도를 준다.
 
 ## 정의의 정당화
 
@@ -123,5 +123,6 @@ $$
 
 - [상미분방정식](ordinary-differential-equations.md)
 - [Newton 법](newton-method.md)
+- [Markov 결정 과정](markov-decision-process.md)
 
 #analysis #functional_analysis #computation #theorem
