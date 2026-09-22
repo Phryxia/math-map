@@ -61,7 +61,7 @@ $$
 \mathrm{II}=\begin{pmatrix}e&f\cr f&g\end{pmatrix},\quad e=r_{uu}\cdot n,\ f=r_{uv}\cdot n,\ g=r_{vv}\cdot n
 $$
 
-주곡률은 $\mathrm{I}$ 의 역행렬과 $\mathrm{II}$ 의 곱(shape operator)의 [고윳값](eigenvalues.md)이며, Gauss 곡률과 평균곡률은 각각 그 행렬식과 대각합의 절반이다.
+주곡률은 $\mathrm{I}$ 의 역행렬과 $\mathrm{II}$ 의 곱(shape operator)의 [고윳값](eigenvalues.md)이며, Gauss 곡률과 평균곡률은 각각 그 [행렬식](determinants.md)과 대각합의 절반이다.
 
 $$
 K=k_1k_2=\frac{eg-f^{2}}{EG-F^{2}},\qquad H=\frac{k_1+k_2}{2}

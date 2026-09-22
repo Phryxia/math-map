@@ -62,7 +62,7 @@ $\dim V=n$ 이 유한이면 $\dim V^\ast=n$ 이다.
 
 무한차원에서는 등식이 깨진다. $F$ 계수 유한지지 수열의 공간 $V$ 의 쌍대는 모든 수열의 공간 $F^{\mathbb N}$ 이고, 그 차원은 $\dim V$ 보다 크다.
 
-$\dim V=\aleph_0$ 이지만 $F^{\mathbb N}$ 의 차원은 그보다 크다. 무한체 $F$ 의 원소 $t$ 마다 기하 수열 $v_t=(1,t,t^2,\dots)$ 를 잡으면, 서로 다른 $t$ 를 유한 개 골랐을 때 앞부분이 이루는 Vandermonde 행렬식이 $0$ 이 아니므로 그 벡터들은 일차독립이다. 이런 벡터가 $\vert F\vert$ 개 있다. 일반적으로 Erdős–Kaplansky 정리가 무한차원 $V$ 에 대해 $\dim V^\ast=\vert F\vert^{\dim V}$ 를 준다.
+$\dim V=\aleph_0$ 이지만 $F^{\mathbb N}$ 의 차원은 그보다 크다. 무한체 $F$ 의 원소 $t$ 마다 기하 수열 $v_t=(1,t,t^2,\dots)$ 를 잡으면, 서로 다른 $t$ 를 유한 개 골랐을 때 앞부분이 이루는 Vandermonde [행렬식](determinants.md)이 $0$ 이 아니므로 그 벡터들은 일차독립이다. 이런 벡터가 $\vert F\vert$ 개 있다. 일반적으로 Erdős–Kaplansky 정리가 무한차원 $V$ 에 대해 $\dim V^\ast=\vert F\vert^{\dim V}$ 를 준다.
 
 ## 자연 동형의 부재
 
