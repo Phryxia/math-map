@@ -61,7 +61,7 @@ $n+1$ 번 원소가 속한 덩어리에 함께 들어갈 원소를 나머지 $n$
 
 **정리(Dobinski)**[^1]**.** $B_n = \dfrac{1}{e}\sum_{k \ge 0} \dfrac{k^n}{k!}$ 다.
 
-평균이 $1$ 인 Poisson 분포를 따르는 확률변수 $X$ 의 $n$ 차 적률이 우변이다. $X$ 의 내림 계승 적률이 $E\lbrack X(X-1)\cdots(X-k+1)\rbrack = 1$ 이고, 거듭제곱을 내림 계승으로 펼치는 계수가 제2종 Stirling 수이므로 $E\lbrack X^n\rbrack = \sum_k S(n,k)$ 다. 이것이 $B_n$ 이다. ∎
+평균이 $1$ 인 Poisson 분포를 따르는 [확률변수](random-variables.md) $X$ 의 $n$ 차 적률이 우변이다. $X$ 의 내림 계승 적률이 $E\lbrack X(X-1)\cdots(X-k+1)\rbrack = 1$ 이고, 거듭제곱을 내림 계승으로 펼치는 계수가 제2종 Stirling 수이므로 $E\lbrack X^n\rbrack = \sum_k S(n,k)$ 다. 이것이 $B_n$ 이다. ∎
 
 ## Touchard 합동
 

@@ -99,7 +99,7 @@ $$
 
 ## 확률론의 기초
 
-확률은 전체 측도가 $1$ 인 측도다. 결과가 유한 개인 확률, 셀 수 있는 무한 개인 확률, 연속인 확률이 한 정의에 들어오고, 확률변수는 [가측함수](measurable-functions.md), 기댓값은 적분, [조건부 기댓값](conditional-expectation.md)은 부분 $\sigma$ 대수 위로의 사영이 된다. 확률과정과 martingale 이론은 $\sigma$ 대수를 지금까지 알게 된 정보로 해석한다.
+확률은 전체 측도가 $1$ 인 측도다. 결과가 유한 개인 확률, 셀 수 있는 무한 개인 확률, 연속인 확률이 한 정의에 들어오고, [확률변수](random-variables.md)는 [가측함수](measurable-functions.md), 기댓값은 적분, [조건부 기댓값](conditional-expectation.md)은 부분 $\sigma$ 대수 위로의 사영이 된다. 확률과정과 martingale 이론은 $\sigma$ 대수를 지금까지 알게 된 정보로 해석한다.
 
 ## 다른 측도
 

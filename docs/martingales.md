@@ -60,7 +60,7 @@ $(X_n)$ 이 martingale 이고 $\varphi$ 가 [볼록](convexity.md)함수이며 $
 
 ## 정지시간
 
-확률변수 $T : \Omega \to \lbrace 0, 1, \dots, \infty\rbrace$ 가 모든 $n$ 에 대해 $\lbrace T \le n\rbrace \in \mathcal F_n$ 이면 정지시간(stopping time)이라 한다. "지금 멈출지를 지금까지의 정보만으로 결정한다"는 뜻이고, 미래를 내다보는 규칙(예: 최고점에서 팔기)은 정지시간이 아니다. 정지된 과정은
+[확률변수](random-variables.md) $T : \Omega \to \lbrace 0, 1, \dots, \infty\rbrace$ 가 모든 $n$ 에 대해 $\lbrace T \le n\rbrace \in \mathcal F_n$ 이면 정지시간(stopping time)이라 한다. "지금 멈출지를 지금까지의 정보만으로 결정한다"는 뜻이고, 미래를 내다보는 규칙(예: 최고점에서 팔기)은 정지시간이 아니다. 정지된 과정은
 
 $$
 X_n^T \thickspace=\thickspace X_{T \wedge n}

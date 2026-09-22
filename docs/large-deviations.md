@@ -34,7 +34,7 @@ $$
 
 ## Legendre 변환
 
-확률변수 $X$ 의 **로그 적률생성함수**와 그 **Legendre 변환**을 다음으로 둔다.
+[확률변수](random-variables.md) $X$ 의 **로그 적률생성함수**와 그 **Legendre 변환**을 다음으로 둔다.
 
 $$
 \Lambda(\lambda) = \log \mathbb E\lbrack e^{\lambda X}\rbrack, \qquad \Lambda^\ast(x) = \sup_{\lambda\in\mathbb R}\bigl(\lambda x - \Lambda(\lambda)\bigr)

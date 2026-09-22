@@ -89,7 +89,7 @@ $k$ 에 대해 더하면 집합을 아무 개수의 덩어리로 나누는 방�
 # 활용
 
 - 집합의 [분할수](partitions.md)와 구별이 뚜렷하다. Stirling 수는 원소가 구별되는 집합의 분할을 세고, 분할수는 구별되지 않는 것의 분할을 센다.
-- 적률 계산에서 원적률과 계승적률을 잇는다. 확률변수 $X$ 에 대해 $E\lbrack X^n\rbrack = \sum_k S(n,k)\thinspace E\lbrack X^{\underline{k}}\rbrack$ 이고, Poisson 분포는 계승적률이 간단하므로 이 식으로 원적률이 나온다.
+- 적률 계산에서 원적률과 계승적률을 잇는다. [확률변수](random-variables.md) $X$ 에 대해 $E\lbrack X^n\rbrack = \sum_k S(n,k)\thinspace E\lbrack X^{\underline{k}}\rbrack$ 이고, Poisson 분포는 계승적률이 간단하므로 이 식으로 원적률이 나온다.
 - 유한 차분법에서 차분 공식의 계수로 나타난다. 다항식 보간과 수치 미분의 오차항 계산이 내림 계승 기저에서 이루어진다.
 - 순열의 순환 개수 분포를 준다. 무작위 순열의 순환 개수는 평균이 $\log n$ 이고 $c(n,k)/n!$ 이 그 분포다.
 

@@ -47,7 +47,7 @@ $$
 
 ## 1차 적률법과 2차 적률법
 
-음이 아닌 정수값 확률변수 $X$ 에 대해 Markov 부등식이
+음이 아닌 정수값 [확률변수](random-variables.md) $X$ 에 대해 Markov 부등식이
 
 $$
 \Pr\lbrack X\ge 1\rbrack\thinspace\le\thinspace\mathbb E\lbrack X\rbrack

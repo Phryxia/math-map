@@ -81,7 +81,7 @@ $\lvert \sin(nx)/(1+nx^2) \rvert \le 1$ 은 지배되어 적분이 $0$ 으로 �
 
 ## 따름정리
 
-- **유계 수렴 정리.** $\mu(X) \lt\infty$ 이고 $\lvert f_n \rvert \le M$ 이면 상수함수 $M$ 이 지배함수다. 확률공간의 유계 확률변수열에 바로 쓴다.
+- **유계 수렴 정리.** $\mu(X) \lt\infty$ 이고 $\lvert f_n \rvert \le M$ 이면 상수함수 $M$ 이 지배함수다. 확률공간의 유계 [확률변수](random-variables.md)열에 바로 쓴다.
 - **급수의 교환.** $\sum_n \int \lvert g_n \rvert \lt\infty$ 이면 $\int \sum_n g_n = \sum_n \int g_n$ 이다. 부분합이 $\sum_n \lvert g_n \rvert$ 에 지배되기 때문이며, 부호가 섞인 급수에서 쓰인다.
 - **적분 기호 아래 미분.** $\lvert \partial f/\partial t\thinspace(x,t) \rvert \le G(x)$ 이면
 

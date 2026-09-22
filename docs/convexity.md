@@ -93,7 +93,7 @@ $$
 
 ## Jensen 부등식
 
-볼록함수 $f$ 와 확률변수 $X$ 에 대해
+볼록함수 $f$ 와 [확률변수](random-variables.md) $X$ 에 대해
 
 $$
 f(\mathbb{E}[X])\le\mathbb{E}[f(X)]

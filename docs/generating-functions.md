@@ -154,7 +154,7 @@ $$
 
 ## 확률에서의 생성함수
 
-확률에서 확률생성함수와 적률생성함수는 같은 장치이며, 독립 확률변수의 합이 생성함수의 곱이 되는 성질을 [중심극한정리](central-limit-theorem.md)류 논증에 쓴다. [Markov chain](markov-chains.md)의 첫 도달 시간 분포도 생성함수로 푼다. [이산 Fourier 변환](fourier.md)은 유한 수열에 대한 생성함수를 단위근에서 평가한 것이고, 이 관점에서 합성곱 정리와 급수의 곱이 같은 사실이다. Analytic Combinatorics는 구조의 재귀적 문법에서 생성함수를 기계적으로 유도하고 특이점으로 점근을 읽는 체계적 방법론이다[^2].
+확률에서 확률생성함수와 적률생성함수는 같은 장치이며, 독립 [확률변수](random-variables.md)의 합이 생성함수의 곱이 되는 성질을 [중심극한정리](central-limit-theorem.md)류 논증에 쓴다. [Markov chain](markov-chains.md)의 첫 도달 시간 분포도 생성함수로 푼다. [이산 Fourier 변환](fourier.md)은 유한 수열에 대한 생성함수를 단위근에서 평가한 것이고, 이 관점에서 합성곱 정리와 급수의 곱이 같은 사실이다. Analytic Combinatorics는 구조의 재귀적 문법에서 생성함수를 기계적으로 유도하고 특이점으로 점근을 읽는 체계적 방법론이다[^2].
 
 [^1]: Euler's pentagonal number theorem, 진술과 분할수 점화식: https://en.wikipedia.org/wiki/Pentagonal_number_theorem
 [^2]: P. Flajolet and R. Sedgewick, Analytic Combinatorics, Cambridge University Press, 2009 (Part A: Symbolic methods). https://algo.inria.fr/flajolet/Publications/book.pdf

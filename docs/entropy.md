@@ -2,7 +2,7 @@
 
 # 개요
 
-Shannon 엔트로피는 확률분포가 담고 있는 불확실성을 하나의 수로 재는 양이다. [유한 확률 공간](probability.md) 위의 확률변수 $X$ 에 대해
+Shannon 엔트로피는 확률분포가 담고 있는 불확실성을 하나의 수로 재는 양이다. [유한 확률 공간](probability.md) 위의 [확률변수](random-variables.md) $X$ 에 대해
 
 $$
 H(X)=-\sum_{a\in A}p(a)\log_2p(a)
