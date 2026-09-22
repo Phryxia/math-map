@@ -1,23 +1,15 @@
 {
   "version": 1,
-  "savedAt": "2026-09-22T08:58:02.745Z",
-  "nextSeq": 922,
+  "savedAt": "2026-09-22T12:53:54.565Z",
+  "nextSeq": 931,
   "items": [
     {
-      "id": "06555ef7",
-      "title": "정의 없이 쓴 용어 훑기 (자취와 행렬식 차수)",
+      "id": "70eb360b",
+      "title": "정의 없이 쓴 용어 훑기 (적분과 확률 차수)",
       "priority": 20,
-      "note": "2026-09-22 셋째 회차 열아홉째 묶음. '대각화' 와 '특성다항식' 을 eigenvalues 로 돌려 다섯 자리를 걸었다: fft 35(순환 이동의 대각화), fredholm-determinant 21(대각화 가능한 유한차원 행렬), probabilistic-pca 96(대각화된 좌표), bounded-operators 7(고유값은 특성다항식의 근), ramanujan-graphs 79(교대 특성다항식). 열아홉 묶음에서 351 자리를 걸었다. 목표를 eigenvalues 로 정한 근거는 그 문서 46 줄 '## 중복도 부등식과 대각화 판정' 이 대각화 가능 조건을 특성다항식의 분해와 중복도 일치로 진술한다는 것이다. spectral-theorem 은 자기수반일 때의 직교 대각화만 다루므로 일반 대각화의 목표가 아니다. 중요한 동음이의 하나: continuum-hypothesis 107 의 '대각화로 만든 인위적인 것' 은 Godel 문장을 만드는 대각선 논법이지 행렬 대각화가 아니다. '대각화' 검사에서는 이 뜻을 반드시 걸러야 한다. 건너뛴 것: fourier 11 은 헤딩('## 이동을 대각화하는 기저')이고, maass-forms 92, modular-symbols 180, jacquet-langlands 106, modular-tensor-categories 103, sen-theory 13, fontaine-mazur 148, peter-weyl 130, spherical-harmonics 100, witten-asymptotics 101 은 동시대각화를 도구로 한 번 쓰는 고급 문서라 eigenvalues 가 안내가 되지 않는다. '특성다항식' 쪽에서 건너뛴 것도 같은 이유다(casselman-shalika 111, fundamental-lemma 136, godement-jacquet 83, kedlaya-algorithm 7, langlands-program 21, sea-algorithm 21. 전부 Frobenius 나 Satake 매개변수의 특성다항식이다). 다음 차수 용어: '자취'(대각합으로도 쓰므로 두 표기를 함께 찾는다. 목표는 eigenvalues 의 '## 대각합과 행렬식' 절인지 따로 문서가 있는지 먼저 본다), '행렬식'(determinants 가 목표. 동음이의가 많다. Fredholm 행렬식(fredholm-determinant), Jacobi 행렬식, 그리고 결정점과정의 행렬식)",
-      "createdAt": "2026-09-22T08:51:50.055Z",
-      "seq": 916
-    },
-    {
-      "id": "d38ba240",
-      "title": "정의 없이 쓴 용어 훑기 (노름과 계수 차수)",
-      "priority": 20,
-      "note": "2026-09-22 셋째 회차 스무째 묶음. '대각합' 과 '행렬식' 을 돌려 네 자리를 걸었다: determinants 로 curvature 64(Gauss 곡률이 shape operator 의 행렬식), dual-space 65(Vandermonde 행렬식), fft 106(Morgenstern 하한의 행렬식 증가율 논증), eigenvalues 로 flow-matching 114(발산의 대각합 추정). 스무 묶음에서 355 자리를 걸었다. '대각합' 의 목표를 eigenvalues 로 한 근거는 그 문서 56 줄 '## 대각합과 행렬식' 절이다. 이 두 용어는 걸린 수(대각합 36, 행렬식 42)에 비해 실제로 건 자리가 적은데, 걸린 것의 대부분이 두 갈래이기 때문이다. (1) 대각합 공식(trace formula)은 자기동형 형식의 도구이고 선형대수의 대각합이 아니다. selberg-trace-formula 가 목표인 다른 개념이므로 '대각합' 검사에서 '대각합 공식' 을 먼저 뺀다(adeles 175, arthur-parameters 115, eisenstein-series 72, fundamental-lemma 이 그 자리다). (2) 'Fredholm 행렬식' 과 'Jacobi 행렬식' 은 복합 용어이고 앞엣것은 fredholm-determinant 문서가 따로 있다. curvature 64 에서는 같은 문장에 이미 eigenvalues 링크가 있어 대각합에는 링크를 걸지 않았다. 한 문장에 같은 문서로 가는 링크 둘을 두지 않는다는 판정이다. 건너뛴 자리 하나를 기록해 둔다: finitely-generated-modules 59 의 '$ 차 소행렬식' 은 minor 이고 determinants 가 소행렬식을 다루는지 확인하지 못해 미뤘다. 다음 차수에 그 문서의 성질 절을 보고 판정한다. 다음 용어 후보: '노름'(수론의 체 노름 Norm 과 해석학의 노름 norm 이 동음이의다. 앞은 algebraic-number-fields, 뒤는 banach-spaces 나 normed-spaces 가 목표이므로 두 갈래 판정이 먼저다), '계수'(rank 와 coefficient 가 동음이의다), '기저', '차원'",
-      "createdAt": "2026-09-22T08:54:36.994Z",
-      "seq": 919
+      "note": "2026-09-22 넷째 회차 스물다섯째 묶음. '볼록' 과 '측도' 를 돌려 다섯 자리를 걸었다: convexity 로 optimal-transport 31(실행가능집합이 볼록), semidefinite-programming 7(선형이 아니지만 볼록), sinkhorn 7(엔트로피 항이 목적함수를 강볼록하게). measure 로 lp-spaces 5(측도공간 (X,M,mu)), characteristic-functions 7(확률측도를 결정한다). 스물다섯 묶음에서 385 자리다. 판정 결과. (1) '볼록' 에서 건너뛴 것: newton-polygon 10 의 '아래쪽 볼록포' 는 958 블록 안이라 링크를 걸 수 없다(수식 안의 용어는 이 훑기의 대상이 아니다. 앞 차수들에서도 mermaid 안의 자리를 같은 이유로 건너뛰었다), wasserstein-gradient-flow 15 의 'W_2 를 따라 잰 볼록성' 은 측지적 볼록성이고 convexity 가 그것을 다루지 않아 미뤘다. sinkhorn 의 '강볼록' 은 복합 용어이지만 convexity 110 줄이 강볼록성을 언급하므로 걸었고, 링크 표시를 '강볼록' 전체로 잡아 '강[볼록]' 처럼 갈라지지 않게 했다. (2) '측도' 는 걸린 수가 많지만 대부분이 복합 용어이거나 이미 다른 측도 문서로 링크가 있다. girsanov 와 change-of-measure 는 측도변환이 주제라 change-of-measure 가 목표이고, sato-tate 와 lang-trotter 는 Sato-Tate 측도와 Haar 측도라 갈래가 다르다. random-variables 5 와 conditional-expectation 7 은 같은 문장에 measurable-functions, pushforward-measure, lebesgue-integral 링크가 이미 둘 이상 있어 건너뛰었다. 다음 용어 후보: '적분'(riemann-integral 과 lebesgue-integral 두 갈래이고 복소해석의 경로적분이 셋째 갈래다), '확률'(probability 가 목표. 확률측도, 확률변수, 확률공간이 복합 용어라 단독 등장만 고를 것), '동형'(스물네째 묶음 note 의 (1) 대로 세 갈래 판정이 먼저), '함수'(너무 흔해 대상이 아니다). 훑기 전반에 대한 기록: 스물다섯 묶음을 지나며 남은 용어는 대부분 (a) 목표 문서가 없거나(rank, isomorphism) (b) 갈래가 셋 이상이거나(측도, 완비, 노름) (c) 복합 용어다. 새 문서가 들어올 때마다 그 문서의 용어를 훑는 쪽이 남은 용어를 계속 파는 것보다 수확이 클 수 있다",
+      "createdAt": "2026-09-22T12:52:20.161Z",
+      "seq": 929
     },
     {
       "id": "624d3268",
@@ -76,14 +68,6 @@
       "seq": 851
     },
     {
-      "id": "5255050d",
-      "title": "Eilenberg-MacLane 공간의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-21 회차에 새로 썼다(부모 homotopy-groups 와 classifying-spaces 둘. 둘 다 리프였고 이 문서가 두 리프를 함께 풀었다. 위상 개관 대수적 위상 갈래 분류공간 다음 줄, 90줄). characteristic-classes 를 활용 절에서 링크했다. README 를 458/838 로 맞췄다. 문서 구성: 개요, 직관(S^1 로 가는 사상을 세면 H^1 이 나온다는 것을 원과 원환면 두 예로 보이고 왜 그런지를 세포 확장의 장애로 설명), 정의(K(G,n) 과 존재·유일성, 예 표 S^1/RP^inf/CP^inf/BG, 기본류 iota), 성질(표현가능성 정리와 세포 귀납 증명, 코호몰로지 연산이 H^m(K(G,n);G') 이라는 Yoneda 판, 고리 공간과 EM 스펙트럼, Postnikov 탑과 k-불변량), 활용(선다발 분류와 첫 Chern 류, 군 코호몰로지, 장애 계산). 배운 것: 개요에 [장애 이론](obstruction-theory.md) 링크를 걸었다가 문서가 없어 지웠다(validate 는 없는 대상 링크를 보고하지 않으므로 본문 링크를 걸 때는 ls 로 먼저 확인할 것). 4절 비유어 grep 이 CW 복합체의 'n 뼈대'(n-skeleton)를 잡아 '차원 n 이하인 세포' 로 풀어 썼다. 후속 후보: 장애 이론(개요와 활용 셋째가 부른다. 이 문서 표현가능성 증명이 장애의 정의를 이미 쓰고 있어 독립 문서 자리가 분명하다), Postnikov 탑과 k-불변량(성질 절 한 문단뿐이다), Steenrod 제곱과 Steenrod 대수(코호몰로지 연산 절이 부른다. Serre 의 계산이 그 문서의 내용), 군 코호몰로지(활용 둘째. classifying-spaces 큐 항목과 겹치고 부모가 homology 나 group-actions 일 수 있다), 스펙트럼과 안정 호모토피론(고리 공간 절이 부른다)",
-      "createdAt": "2026-09-21T16:48:55.942Z",
-      "seq": 852
-    },
-    {
       "id": "8e79b91b",
       "title": "Zarankiewicz 문제의 후속 간선",
       "priority": 12,
@@ -114,14 +98,6 @@
       "note": "2026-09-21 회차에 새로 썼다(부모 random-real-forcing 하나, 기초론 개관 집합론 갈래 무작위 실수 강제법 다음 줄, 92줄). continuum-hypothesis 와 martins-axiom 을 본문에서 링크했고 random-real-forcing 활용 절 첫 항목의 '기수 불변량' 에 본문 링크를 걸었다(그 큐 항목 note 가 지시한 자리다). README 를 462/843 으로 맞췄다. 문서 구성: 개요, 직관(실직선을 영집합으로 덮는 최소 개수가 aleph_1 과 연속체 사이에 있고 CH 없이는 따로 물어야 한다는 데서 시작해 non 과 제1범주 쪽 물음까지), 정의(sigma 아이디얼의 add/cov/non/cof 표, b 와 d), 성질(Cichon 도표 mermaid Hasse 도형, add(M)=min(b,cov(M)) 두 등식, 정의에서 나오는 부등식과 측도-범주 분해에서 나오는 부등식, 무작위 실수와 Cohen 실수가 cov(N) 과 non(N) 의 대소를 양쪽으로 만든다), 활용(강제법 분류, Martin 공리가 전부를 연속체로 올린다, Erdos-Sierpinski 쌍대성). 4절 다이어그램 규칙에 맞는 mermaid 다(Hasse 도형이고 화살표가 실제 부등식이다). 배운 것: 각주 [^2] 로 Roslanowski-Shelah 를 달았다가 그 논문이 creature forcing 쪽이라 cov(N)/non(N) 값의 표준 출처가 아니어서 지우고 Bartoszynski-Judah 한 개로 정리했다. 출처를 기억에 기대 달지 말고 내용이 실제로 그 문헌에 있는지 먼저 따질 것. 후속 후보: 반복 강제법과 proper forcing(도표의 각 화살표가 역이 아님을 보이는 모형이 유한 지지 반복이나 가산 지지 반복을 쓴다. random-real-forcing 큐 항목도 이 후보를 남겼다), Cichon 의 최대 모형(열 개 값을 모두 다르게 만드는 구성. 2019 년 이후 결과라 문헌 확인이 먼저다), 분할 수와 탑 수 등 조합적 불변량(s, t, p, a. 이 문서는 측도-범주 쪽 불변량만 다뤘다), Erdos-Sierpinski 쌍대성 정리(활용 셋째)",
       "createdAt": "2026-09-21T16:56:57.855Z",
       "seq": 856
-    },
-    {
-      "id": "b8443f65",
-      "title": "nonstandard-analysis 의 후속 간선 (2차)",
-      "priority": 12,
-      "note": "2026-09-21 회차. 앞 항목 note 가 남긴 보강 과제 '초유한(hyperfinite)을 정의 없이 도함수 절과 활용 절에서 썼다' 를 처리했다. 정의 절 전이 원리 다음에 '## 초유한 집합' 을 넣었다(N in *N 에 대해 {1,...,N} 과 전단사가 있는 집합. 표준 기준으로 무한집합이지만 전이 원리가 유한집합의 성질을 옮기므로 합과 최댓값이 있다). 자리를 성질 절 내부집합 다음이 아니라 정의 절에 둔 이유는 초유한을 처음 쓰는 곳이 성질 절 연속과 미분(적분을 무한소 폭 구간 초유한 개의 합으로 쓴다)이어서 그보다 앞이어야 하기 때문이다. 문서는 여전히 리프다. 2차에 볼 것: 앞 note 의 후보 그대로다. Loeb 측도와 초유한 확률(활용 둘째가 부르고 이제 초유한 정의가 문서 안에 있어 쓰기 쉬워졌다. measure-theory-overview 쪽 문서일 수도 있으니 주 분야를 먼저 정할 것. Brown 운동을 무작위 걸음의 표준부분으로 구성하는 것이 그 문서의 핵심), 내부집합론 IST 와 Nelson 의 공리화(내부집합 절이 부른다. 초곱을 쓰지 않고 공리로 무한소를 도입하는 길이라 이 문서와 대비가 된다), 포화성과 초유한 조합론(Szemeredi 정리의 비표준 증명)",
-      "createdAt": "2026-09-21T16:57:56.210Z",
-      "seq": 857
     },
     {
       "id": "477ae4a4",
@@ -274,6 +250,38 @@
       "note": "2026-09-22 셋째 회차 6차. 5차 note 가 남긴 두 가지를 했다. (1) 4절 공식 grep 을 LC_ALL=C.utf8 로 다시 돌렸다. 5 건이고 5차와 같은 자리이며 전부 용어의 일부라 남겼다(elliptic-curves 134 Montgomery 사다리, lie-algebras 180 사다리 연산자, post-quantum-cryptography 142 함정문 두 번, theta-series 167 Viazovska 의 마법함수). 로케일을 붙여도 결과가 같으므로 이 grep 자체는 로케일 영향을 받지 않는다. 로케일이 문제가 되는 것은 '[와과]' 처럼 한글 문자 클래스를 대괄호로 쓸 때다. 이번 회차에 '^# .*[와과] ' 를 로케일 없이 돌려 462 개 문서 전부가 걸리는 것을 확인했고, '(와|과)' 로 바꾸고 LC_ALL=C.utf8 을 붙이니 97 건으로 정상 동작했다. 앞으로 한글 문자 클래스는 대괄호 대신 교대로 쓴다. (2) 6차 후보어 열을 돌려 7 건이 걸렸고 전부 오검출이라 하나도 고치지 않았다. '그림자' 6 건은 shadow 의 역어(mock-modular-forms, umbral-moonshine), 경제학 용어 그림자 가격(linear-programming 103), 빛의 그림자라는 물리 현상(airy-functions 200)이고, '어두운' 1 건도 무지개의 어두운 쪽을 가리키는 물리적 기술이다. 다만 이 검사에서 다른 유형 하나를 찾아 고쳤다. mock-modular-forms 가 15 줄과 87 줄에서 '**shadow**' 를 굵게 정의해 열한 자리에서 원어로 쓰는데 47 줄과 161 줄만 '그림자' 였다. 원어 쪽으로 통일했다(11차 note 의 용어 불일치 검사와 같은 유형이고 방향만 반대다. 정의된 용어가 원어일 때는 원어로 모은다). 7차에 볼 후보어: 4절 목록이 사물 은유와 색채어를 다뤘으므로 다음은 신체어와 친족어다. '손발', '눈길', '발판', '목덜미', '허리', '형제', '사촌', '부모 자식' 이 수학적 대상을 가리키는 자리를 본다(부모와 자식은 이 저장소가 DAG 간선을 가리키는 말로 쓰므로 docs 본문에서만 걸러야 한다)",
       "createdAt": "2026-09-22T08:57:49.040Z",
       "seq": 921
+    },
+    {
+      "id": "341d4e4d",
+      "title": "장애 이론의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-22 넷째 회차에 obstruction-theory(장애 이론)를 새로 썼다(부모 eilenberg-maclane-spaces 하나, 위상 개관 대수적 위상 갈래 Eilenberg-MacLane 공간 다음 줄, 109줄). characteristic-classes 를 활용 절에서 링크했고 eilenberg-maclane-spaces 개요 7줄의 '장애 이론' 에 본문 링크를 걸었다(그 문서 큐 항목 note 가 '표현가능성 증명이 장애의 정의를 이미 쓰고 있어 독립 문서 자리가 분명하다' 고 지목한 자리다). README 를 463/845 로 맞췄다. 부모 판정: homotopy-groups 도 후보였으나 eilenberg-maclane-spaces 의 부모라 5절대로 뺐다. 문서 구성: 개요, 직관(S^2 위의 영점 없는 접벡터장을 북극을 뺀 원판에서 만든 뒤 북극 원판으로 늘리려다 감는 수 2 에 막히는 계산 하나를 끝까지 끌고 갔다), 정의(장애 코사슬 c(f)(e)=[f∘phi_e] in C^{n+1}(X;pi_n(Y)), pi_1 작용이 자명하지 않으면 국소계수, 장애류), 성질(확장 정리의 두 판과 c(f_d)=c(f)+delta d 를 쓴 증명 요지, 올다발 단면의 장애와 (n-1) 연결일 때 첫 장애가 특성류, 호모토피의 장애와 K(G,n) 에서 표현가능성이 나오는 대목), 활용(Euler 류와 털난 공, Stiefel-Whitney 류 w_{n-k+1}, Postnikov k-불변량, 사상의 올림). 리프다. 후속 후보: Postnikov 탑과 k-불변량(eilenberg-maclane-spaces 성질 절과 이 문서 활용 셋째가 둘 다 한 문단씩만 갖고 있어 독립 문서 자리가 분명하다. 두 문서가 부모가 된다), Stiefel-Whitney 류와 Wu 공식(characteristic-classes 가 이미 있으므로 겹침을 먼저 볼 것), 올다발과 올림 성질(활용 넷째가 부르고 covering-spaces 의 올림 판정이 그 특수 사례다. fibration 문서가 저장소에 없다), 국소계수 코호몰로지(정의 절이 한 문장으로 미뤘다). 배운 것: CW 복합체는 저장소 관행이 'CW 복합체(CW complex)' 이고(homotopy-groups 69, eilenberg-maclane-spaces 23) 두문자어 grep 이 이것을 잡으므로 새 문서에서도 그대로 따랐다",
+      "createdAt": "2026-09-22T12:43:04.247Z",
+      "seq": 924
+    },
+    {
+      "id": "5ff88db9",
+      "title": "Postnikov 탑의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-22 넷째 회차에 새로 썼다(부모 obstruction-theory 하나, 위상 개관 대수적 위상 갈래 장애 이론 다음 줄, 118줄). eilenberg-maclane-spaces 를 정의 절에서 링크했고, 그 문서 64-68 줄 '## Postnikov 탑' 절과 obstruction-theory 개요 7 줄에 본문 링크를 걸었다. README 를 464/846 으로 맞췄다. 부모 판정: eilenberg-maclane-spaces 도 후보였으나 obstruction-theory 의 부모라 5절대로 뺐다. 문서 구성: 개요, 직관(S^2 의 3 유형이 K(Z,2)xK(Z,3) 인지 물어 CP^inf 의 H^4 가 iota^2 로 생성되는 Z 라는 계산 하나로 가른다. 이 예를 성질 절 '## 분해된 탑' 까지 끌고 갔다), 정의(탑의 두 조건과 n 유형, k_n in H^{n+1}(X_{n-1};pi_n X) 와 국소계수 단서), 성질(존재는 n+2 이상 세포 붙이기로 유일성은 장애 이론의 확장 정리로, 약호모토피 동치로의 수렴, k-불변량이 전부 0 이면 EM 공간의 곱이고 역은 거짓, 2 유형이 (G, A, 작용, H^3(G;A)) 로 분류), 활용(구면 호모토피군 계산, 사상의 올림, 군 확장과 H^3, 유리 호모토피론의 최소 모형). 리프다. 후속 후보: 유리 호모토피론과 Sullivan 최소 모형(활용 넷째가 한 줄로 다룬다. 이 문서와 de-rham-cohomology 가 부모가 된다), Whitehead 탑과 연결 덮개(Postnikov 탑의 쌍대. homotopy-groups 도 부모 후보다), 스펙트럼 수열(활용 첫째와 eilenberg-maclane-spaces 코호몰로지 연산 절이 둘 다 Serre 스펙트럼 수열을 이름만 쓰고 넘어간다. 저장소에 스펙트럼 수열 문서가 없다), 교차가군과 2 유형(성질 절 넷째. group-cohomology 문서가 없어 부모가 얇다). 배운 것: 위상 개관 43-47 줄은 '# 갈래' 절이라 본문 링크이고 간선이 아니다. 개관의 '## 더 알아보기' 에 넣을 필요가 없다",
+      "createdAt": "2026-09-22T12:46:42.598Z",
+      "seq": 926
+    },
+    {
+      "id": "be03f451",
+      "title": "Loeb 측도의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-22 넷째 회차에 새로 썼다(부모 measure 와 nonstandard-analysis 둘. nonstandard-analysis 는 리프였고 이 문서가 그 리프를 풀었다. 측도론 개관 '측도와 가측성' 갈래 가측함수 다음 줄, 108줄). brownian-motion 을 활용 절에서 링크했고 nonstandard-analysis 78 줄 활용 항목의 'Loeb 측도' 에 본문 링크를 걸었다(그 문서 큐 항목 note 가 지시한 자리다). measure 의 더 알아보기에 다섯째로 넣었다(조상관계가 없어 먼 후속으로 끝에 두었고 order-check 통과). README 를 465/848 로 맞췄다. 문서 구성: 개요, 직관([0,1] 을 N 등분해 점을 세는 방법이 유리수 집합에서 비율 1 을 주며 막히고, N 을 무한히 큰 초자연수로 바꾸면 비율이 초실수로 확정된다는 계산 하나를 끝까지 끌고 갔다), 정의(내부 유한가법측도의 표준부분 mu_L, Caratheodory 확장과 완비화), 성질(sigma 가법성 정리와 감소 내부집합열 B_k=A minus union A_n 에 가산 포화성을 쓰는 증명 요지, 내부집합 근사 L(mu)(A triangle B)=0, N 등분 격자에서 표준부분사상으로 Lebesgue 측도 구성, S 적분가능성과 초유한 합), 활용(Anderson 의 Brown 운동 구성, 원자 없고 포화된 확률공간, 극한 정리, 측도 존재 증명의 대안). 리프다. 후속 후보: Anderson 의 Brown 운동 구성을 독립 문서로 뗄지(활용 첫째. brownian-motion 과 겹침을 먼저 볼 것. 초유한 무작위 걸음의 표준부분이 그 문서의 내용이고 ito-calculus 도 부모 후보다), Keisler 의 확률논리와 포화 확률공간(활용 둘째. model-theory 쪽 문서일 수 있다), 비표준 측도론의 Anderson-Rashid 극한정리(활용 셋째), 내부집합론 IST(nonstandard-analysis 큐 항목이 남긴 후보 그대로다). 배운 것: nonstandard-analysis 의 태그 줄 첫 태그가 #analysis 라 측도론 개관 갈래 점검에는 걸리지 않는다. 이 문서는 첫 태그를 #measure_theory 로 두어 측도론 개관이 거두게 했다",
+      "createdAt": "2026-09-22T12:51:15.770Z",
+      "seq": 928
+    },
+    {
+      "id": "799a76af",
+      "title": "산문 금지 표현 회귀 점검 (9차)",
+      "priority": 12,
+      "note": "2026-09-22 넷째 회차. 8차 note 가 남긴 (b) 갈래 대신 저장소 전체 규칙 grep 을 먼저 돌렸고 결과를 기록한다. 통과한 것: 금지 매크로 0 건, 비 JavaScript 코드블록 0 건, 언어 없는 코드블록 0 건, 줄 끝 백슬래시 0 건, 이스케이프 검사(awk) 0 건, 링크로 읽히는 대괄호 0 건, 추측성 절 헤딩 0 건, 범위를 뭉뚱그린 열린 문제 0 건, 번역체 관용구 grep('우연이 아니다|놀랍지 않다|흥미롭게도|놀랍게도|본질적으로|에 다름 아니다|에 지나지 않는다|말하자면|라는 것이 밝혀졌다') 0 건. 태그로 읽히는 부등호 grep 은 걸리는 것이 전부 mermaid 의 <br/> 라 오검출이고, 줄 단위 grep -v mermaid 로는 걸러지지 않는다(다음 차수에 코드펜스 안을 건너뛰는 awk 로 바꿀 것). 문학적 비유 grep 은 5 건이고 8차 note 와 같은 자리로 전부 용어의 일부다(elliptic-curves 134 'Montgomery 사다리', lie-algebras 180 '사다리 연산자', post-quantum-cryptography 142 '함정문' 두 번, theta-series 167 'Viazovska 의 마법함수'). 새로 판정한 것 하나: 메타 서술 grep 의 '정리하면' 이 6 건 걸렸는데(continued-fractions 77, gradient-descent 63, jacquet-langlands 31, linear-regression 67, probabilistic-method 117, quadratic-reciprocity 118) 전부 식을 정리한다는 계산 동사이고 4절이 금지한 '요약하면' 뜻의 메타 서술이 아니다. 여섯 자리 다 남겼다. 다음 차수에 메타 서술 grep 에서 '정리하면' 을 빼거나 앞에 '를|을|으로' 가 오는 경우를 제외할 것. 9차에 볼 것: 8차 note 의 (a) because.mjs 를 '앞 문장에 려면|이려면|하려면|므로|따라서|그러므로 가 있고 뒷 문장이 때문이다 로 끝나는 조합' 패턴으로 바꾸는 것, (b) 남은 완곡 표현 후보 '~할 수 있음을 알 수 있다|~라고 할 수 있다|~인 것으로 보인다|~라고 보아도 좋다|~라 하겠다'",
+      "createdAt": "2026-09-22T12:53:41.434Z",
+      "seq": 930
     },
     {
       "id": "d2720772",
