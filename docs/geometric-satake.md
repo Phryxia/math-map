@@ -195,7 +195,7 @@ Langlands 쌍대군의 원래 정의는 근 자료 $(X^\ast,\Phi,X_\ast,\Phi^\ve
 
 ## 기하학적 Langlands 강령
 
-고전적 Langlands 강령에서 자기동형 형식은 $\mathrm{Bun}\_G$ 위의 함수이고 기하학적 판에서는 층이다. Hecke 작용소 자리에 오는 **Hecke 함자**를 $\widehat G$ 의 표현으로 매개하는 것이 기하학적 Satake 다.
+고전적 Langlands 강령에서 자기동형 형식은 $\mathrm{Bun}\_G$ 위의 함수이고 기하학적 판에서는 층이다. [Hecke 작용소](hecke-operators.md) 자리에 오는 **Hecke 함자**를 $\widehat G$ 의 표현으로 매개하는 것이 기하학적 Satake 다.
 
 $$
 \mathrm{Hecke}\_V:\mathrm{D}(\mathrm{Bun}\_G)\to\mathrm{D}(\mathrm{Bun}\_G\times X),

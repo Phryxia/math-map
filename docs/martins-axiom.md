@@ -4,7 +4,7 @@
 
 Martin 의 공리는 조건이 좋은 부분순서에서 조밀집합을 연속체 개수 미만으로 만나는 필터가 실제로 존재한다는 주장이다. [강제법](forcing.md)은 가산 개의 조밀집합을 만나는 필터를 가산 추이 모형 위에서 만든다. Martin 의 공리는 그 개수를 연속체 미만까지 올리고, 모형을 바꾸지 않고 지금의 우주 안에서 필터를 준다.
 
-연속체 가설이 참이면 이 주장은 Rasiowa–Sikorski 보조정리와 같아진다. 연속체 가설이 거짓인 모형에서는 새 주장이 되고, 그 경우도 ZFC(Zermelo–Fraenkel with choice)와 무모순이다.
+[연속체 가설](continuum-hypothesis.md)이 참이면 이 주장은 Rasiowa–Sikorski 보조정리와 같아진다. 연속체 가설이 거짓인 모형에서는 새 주장이 되고, 그 경우도 ZFC(Zermelo–Fraenkel with choice)와 무모순이다.
 
 위상 쪽에서 보면 이 주장은 [Baire 범주 정리](baire-category.md)의 가산 조건을 비가산 개로 올린 것이다.
 

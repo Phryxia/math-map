@@ -4,7 +4,7 @@
 
 Suslin 문제는 실직선을 순서의 성질만으로 특징지을 수 있는지 묻는다. 조밀하고 끝점이 없으며 순서 완비인 선형순서에서 가산 조밀 부분집합이 있다는 조건을 가산 반사슬 조건으로 바꾸어도 실직선이 나오는가가 물음이다.
 
-답은 ZFC(Zermelo–Fraenkel with choice)에서 정해지지 않는다. 구성가능 우주에서는 반례가 있고, [Martin 의 공리](martins-axiom.md)와 연속체 가설의 부정 아래에서는 반례가 없다.
+답은 ZFC(Zermelo–Fraenkel with choice)에서 정해지지 않는다. 구성가능 우주에서는 반례가 있고, [Martin 의 공리](martins-axiom.md)와 [연속체 가설](continuum-hypothesis.md)의 부정 아래에서는 반례가 없다.
 
 # 직관
 

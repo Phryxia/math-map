@@ -125,7 +125,7 @@ SIDH 를 깬 Castryck–Decru 공격은 비밀 동종사상의 비틀림점 상�
 
 ## 질량 공식과 그래프의 정규성
 
-좌이념 류의 개수를 세는 Eichler 의 질량 공식이 Deuring 대응을 통해 초특이 곡선의 개수 공식이 된다. 이념 류 위의 Brandt 행렬은 동종사상 그래프의 인접 행렬과 같고, 그 행렬이 무게 2 첨점형식 위의 Hecke 작용소와 같은 고윳값을 갖는다. 그래프가 Ramanujan 인 근거인 Deligne 경계가 그 고윳값에 적용된다.
+좌이념 류의 개수를 세는 Eichler 의 질량 공식이 Deuring 대응을 통해 초특이 곡선의 개수 공식이 된다. 이념 류 위의 Brandt 행렬은 동종사상 그래프의 인접 행렬과 같고, 그 행렬이 무게 2 첨점형식 위의 [Hecke 작용소](hecke-operators.md)와 같은 고윳값을 갖는다. 그래프가 Ramanujan 인 근거인 Deligne 경계가 그 고윳값에 적용된다.
 
 [^1]: 대응의 원형은 M. Deuring, *Die Typen der Multiplikatorenringe elliptischer Funktionenkörper* (Abh. Math. Sem. Univ. Hamburg **14**, 1941). 현대적 서술과 이념 사전은 J. Voight, *Quaternion Algebras* (2021) 42 장. 알고리즘 쪽은 D. Kohel, K. Lauter, C. Petit, J.-P. Tignol, *On the quaternion l-isogeny path problem* (LMS J. Comput. Math. **17**, 2014). 자기준동형환 계산과 경로 찾기의 동치는 B. Wesolowski, *The supersingular isogeny path and endomorphism ring problems are equivalent*, FOCS 2021. 서명은 L. De Feo, D. Kohel, A. Leroux, C. Petit, B. Wesolowski, *SQISign*, ASIACRYPT 2020.
 

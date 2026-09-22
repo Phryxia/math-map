@@ -54,7 +54,7 @@ $$
 
 ## Hecke 작용소와 다발의 수정
 
-고전적 Hecke 작용소는 한 자리 $x$ 에서 준위 구조를 바꾸는 평균이고, 기하적으로는 $G$ 다발을 점 $x$ 에서만 수정한다.
+고전적 [Hecke 작용소](hecke-operators.md)는 한 자리 $x$ 에서 준위 구조를 바꾸는 평균이고, 기하적으로는 $G$ 다발을 점 $x$ 에서만 수정한다.
 
 $$
 \mathrm{Hecke}=\lbrace(\mathcal P,\mathcal P',x,\ \varphi\colon\mathcal P|\_{X\setminus x}\xrightarrow{\sim}\mathcal P'|\_{X\setminus x})\rbrace

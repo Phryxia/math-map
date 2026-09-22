@@ -81,7 +81,7 @@ $$
 
 ## 스펙트럼 작용과 매개변수
 
-$\Lambda$ 계수 에탈층 범주 $D(\mathrm{Bun}\_G,\Lambda)$ 위에 Hecke 작용소가 작용하고, 여행 작용소의 대수가 그 중심에 사상한다. 이 사상을 통해 기약 표현 $\pi$ 마다
+$\Lambda$ 계수 에탈층 범주 $D(\mathrm{Bun}\_G,\Lambda)$ 위에 [Hecke 작용소](hecke-operators.md)가 작용하고, 여행 작용소의 대수가 그 중심에 사상한다. 이 사상을 통해 기약 표현 $\pi$ 마다
 
 $$
 \varphi_\pi:\ W_{\mathbb Q_p}\longrightarrow{}^LG(\overline{\mathbb Q}\_\ell)

@@ -130,7 +130,7 @@ $$
 f\Big(\frac{az+b}{cz+d}\Big)=(cz+d)^kf(z)\quad\Big(\begin{smallmatrix}a&b\cr c&d\end{smallmatrix}\Big)\in\Gamma_0(N)
 $$
 
-를 만족하고 첨점에서 0 이 되는 것이다. Hecke 작용소의 동시 고유벡터를 잡고 $q=e^{2\pi iz}$ 전개 $f=\sum a_nq^n$ 을 $a_1=1$ 로 정규화하면, 고유값이 곧 $a_p$ 이고
+를 만족하고 첨점에서 0 이 되는 것이다. [Hecke 작용소](hecke-operators.md)의 동시 고유벡터를 잡고 $q=e^{2\pi iz}$ 전개 $f=\sum a_nq^n$ 을 $a_1=1$ 로 정규화하면, 고유값이 곧 $a_p$ 이고
 
 $$
 L(s,f)=\sum_{n\ge1}\frac{a_n}{n^s}=\prod_p\big(1-a_pp^{-s}+p^{k-1-2s}\big)^{-1}

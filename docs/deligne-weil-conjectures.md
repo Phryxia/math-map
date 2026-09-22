@@ -150,7 +150,7 @@ $d=1$ 인 곡선은 Weil 이 1948 년에 증명했다. 곡면에는 부분적 �
 
 $\Delta$ 가 Hecke 고유형식이라 $\tau$ 가 곱셈적이고, 소수에서의 한계가 모든 $n$ 으로 퍼진다.
 
-$\tau(p^2)=\tau(p)^2-p^{11}$ 은 $\alpha_p+\beta_p=\tau(p)$ 와 $\alpha_p\beta_p=p^{11}$ 에서 나오는 $\alpha_p^2+\beta_p^2$ 이며, Frobenius 고윳값이 Hecke 작용소의 고윳값으로 보이는 자리다.
+$\tau(p^2)=\tau(p)^2-p^{11}$ 은 $\alpha_p+\beta_p=\tau(p)$ 와 $\alpha_p\beta_p=p^{11}$ 에서 나오는 $\alpha_p^2+\beta_p^2$ 이며, Frobenius 고윳값이 [Hecke 작용소](hecke-operators.md)의 고윳값으로 보이는 자리다.
 
 ## 이어지는 결과들
 

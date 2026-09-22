@@ -84,7 +84,7 @@ $$
 
 $\Sigma\ne\varnothing$ 이면 $B^\times(F)Z(\mathbb A)\backslash B^\times(\mathbb A)$ 가 콤팩트다. $L^2$ 가 전부 이산 스펙트럼이고 각 표현의 중복도가 유한하며, 열린 콤팩트 부분군의 불변벡터 공간이 유한차원이 되어 계산이 유한 행렬의 고윳값 문제가 된다.
 
-확정 사원수 대수에서는 극대차수 $\mathcal O\subset B$ 의 좌이념류가 유한개이고, 그 집합 위의 함수공간에 Hecke 작용소가 **Brandt 행렬**로 작용한다.
+확정 사원수 대수에서는 극대차수 $\mathcal O\subset B$ 의 좌이념류가 유한개이고, 그 집합 위의 함수공간에 [Hecke 작용소](hecke-operators.md)가 **Brandt 행렬**로 작용한다.
 
 ## 류수와 종수
 

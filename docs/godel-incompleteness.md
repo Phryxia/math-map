@@ -120,7 +120,7 @@ Gödel 문장은 인공적이지만, 자연스러운 수학 문장 중에도 PA�
 
 - Goodstein 정리: 어떤 자연수에서 시작하는 Goodstein 수열도 유한 단계에서 0에 도달한다. 증명은 각 항에 서수를 배정해 감소함을 보이는 것으로, $\varepsilon_0$ 까지의 초한귀납법을 요구하며 PA에서 증명되지 않는다.
 - Paris–Harrington 정리: Ramsey 정리의 강화판으로, PA에서 독립이다([Ramsey 이론](ramsey-theory.md)).
-- ZFC에서는 연속체 가설과 [선택공리](axiom-of-choice.md)의 독립성이 forcing으로 증명되었다. 다만 이 독립성은 불완전성 정리의 논법과는 다른 방법의 결과다.
+- ZFC에서는 [연속체 가설](continuum-hypothesis.md)과 [선택공리](axiom-of-choice.md)의 독립성이 forcing으로 증명되었다. 다만 이 독립성은 불완전성 정리의 논법과는 다른 방법의 결과다.
 
 ## 증명 가능성 논리
 

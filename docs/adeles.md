@@ -166,7 +166,7 @@ $$
 \mathrm{GL}\_2(\mathbb Q)\backslash\mathrm{GL}\_2(\mathbb A_{\mathbb Q})/K_0(N)\ \cong\ \Gamma_0(N)\backslash\mathbb H
 $$
 
-를 준다. Hecke 작용소는 이중 잉여류 $K_0(N)\thinspace\mathrm{diag}(1,p)\thinspace K_0(N)$ 이 된다.
+를 준다. [Hecke 작용소](hecke-operators.md)는 이중 잉여류 $K_0(N)\thinspace\mathrm{diag}(1,p)\thinspace K_0(N)$ 이 된다.
 
 # 활용
 

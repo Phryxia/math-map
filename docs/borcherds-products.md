@@ -121,7 +121,7 @@ Heegner 인자들의 산술적 교차수가 [Eisenstein 급수](eisenstein-serie
 
 ## 달빛과 Lie 대수
 
-괴물 Lie 대수의 분모 공식이 Borcherds 곱이라는 사실이 괴물 달빛 추측 증명의 마지막 조각이었다. 무한곱의 지수가 $j$ 의 계수이므로 곱을 전개해 얻은 항등식이 Hecke 작용소가 주는 재귀식과 같아진다. 그 재귀식이 계수를 유일하게 결정하므로 괴물군의 지표와 일치함이 확인된다.[^1]
+괴물 Lie 대수의 분모 공식이 Borcherds 곱이라는 사실이 괴물 달빛 추측 증명의 마지막 조각이었다. 무한곱의 지수가 $j$ 의 계수이므로 곱을 전개해 얻은 항등식이 [Hecke 작용소](hecke-operators.md)가 주는 재귀식과 같아진다. 그 재귀식이 계수를 유일하게 결정하므로 괴물군의 지표와 일치함이 확인된다.[^1]
 
 [^1]: R. Borcherds, *Automorphic forms with singularities on Grassmannians*, Invent. Math. **132** (1998), 491–562. 분모 공식과 달빛은 같은 저자의 *Monstrous moonshine and monstrous Lie superalgebras*, Invent. Math. **109** (1992). 해설과 조화 Maass 형식과의 관계는 J. Bruinier, J. Funke, *On two geometric theta lifts*, Duke Math. J. **125** (2004), 그리고 K. Ono, *Unearthing the visions of a master: harmonic Maass forms and number theory* (2009). Gross–Kohnen–Zagier 의 원논문은 *Heegner points and derivatives of L-series II*, Math. Ann. **278** (1987).
 

@@ -154,7 +154,7 @@ $$
 L(s,\pi_f)=\prod_p\big(1-a_pp^{-s}+p^{k-1-2s}\big)^{-1}=\sum_{n\ge1}\frac{a_n}{n^s}
 $$
 
-이다. 오일러 곱과 Dirichlet 급수가 같다는 이 등식이 Hecke 작용소의 곱셈성이고, 국소 인자가 $2\times2$ 행렬의 특성다항식이라는 진술이다.
+이다. 오일러 곱과 Dirichlet 급수가 같다는 이 등식이 [Hecke 작용소](hecke-operators.md)의 곱셈성이고, 국소 인자가 $2\times2$ 행렬의 특성다항식이라는 진술이다.
 
 # 활용
 
