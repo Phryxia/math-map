@@ -204,6 +204,6 @@ Soergel 쌍가군의 범주는 $P_{x,w}$ 를 수의 열이 아니라 벡터공�
 
 ## 더 알아보기
 
-- [범주 O 와 BGG 상반성](category-o.md)
+- [범주 O](category-o.md)
 
 #algebra #combinatorics #group_theory #construction

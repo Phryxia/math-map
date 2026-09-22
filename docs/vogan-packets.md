@@ -137,6 +137,6 @@ $$
 ## 더 알아보기
 
 - [Gan–Gross–Prasad 추측](gan-gross-prasad.md)
-- [Arthur 매개변수와 비템퍼드 표현](arthur-parameters.md)
+- [Arthur 매개변수](arthur-parameters.md)
 
 #number_theory #group_theory #field_theory

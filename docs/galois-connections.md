@@ -181,7 +181,7 @@ $2^5=32$ 개의 객체 부분집합 가운데 닫힌 것은 8 개다. {박쥐, �
 
 ## 더 알아보기
 
-- [추상해석과 정적 분석의 건전성](abstract-interpretation.md)
+- [추상해석](abstract-interpretation.md)
 - [영역 이론과 Kleene 고정점 정리](domain-theory.md)
 
 #order_theory #logic #computation

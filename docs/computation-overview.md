@@ -53,7 +53,7 @@ graph TD
 - [Lambda calculus](lambda-calculus.md): 함수 적용만으로 세운 계산 모형, $\beta$ 축약과 Church–Rosser 정리
 - [Curry–Howard 대응](curry-howard.md): 증명과 프로그램, 명제와 타입의 대응
 - [영역 이론과 Kleene 고정점 정리](domain-theory.md): 재귀 정의의 의미를 최소 고정점으로
-- [추상해석과 정적 분석의 건전성](abstract-interpretation.md): Galois 연결로 맺은 구체와 추상 의미, 고정점 근사
+- [추상해석](abstract-interpretation.md): Galois 연결로 맺은 구체와 추상 의미, 고정점 근사
 - [애니온](anyons.md): 꼬임군의 표현으로 만드는 결맞음 오류에 강한 계산 모형
 
 ## 복잡도와 근사 한계

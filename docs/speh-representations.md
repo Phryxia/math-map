@@ -131,7 +131,7 @@ $\mathrm{Speh}(\sigma,2)$ 의 $\mathrm{Sp}\_{2m}$ 주기는 $\sigma$ 의 외곱 
 
 ## 선수지식
 
-- [Arthur 매개변수와 비템퍼드 표현](arthur-parameters.md)
+- [Arthur 매개변수](arthur-parameters.md)
 
 ## 더 알아보기
 

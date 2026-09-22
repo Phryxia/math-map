@@ -109,6 +109,6 @@ $I_P$ 가 결정 가능하지 않아도 인식 가능할 수는 있다. "어떤 
 
 ## 더 알아보기
 
-- [추상해석과 정적 분석의 건전성](abstract-interpretation.md)
+- [추상해석](abstract-interpretation.md)
 
 #computation #logic #theorem

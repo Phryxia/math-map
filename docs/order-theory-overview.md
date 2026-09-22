@@ -55,7 +55,7 @@ graph TD
 
 - [Galois 연결](galois-connections.md) — 순서 보존 사상의 쌍과 Knaster–Tarski 고정점 정리
 - [영역 이론과 Kleene 고정점 정리](domain-theory.md) — 재귀 정의의 의미를 최소 고정점으로 주는 틀
-- [추상해석과 정적 분석의 건전성](abstract-interpretation.md) — 구체 의미론과 추상 영역을 Galois 연결로 잇고 과대근사의 건전성을 얻는다
+- [추상해석](abstract-interpretation.md) — 구체 의미론과 추상 영역을 Galois 연결로 잇고 과대근사의 건전성을 얻는다
 
 ## 순서의 조합론
 

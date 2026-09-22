@@ -193,6 +193,6 @@ Kottwitz 의 계획은 Shimura 다양체의 Hasse–Weil zeta 함수를 자기�
 ## 더 알아보기
 
 - [Gan–Gross–Prasad 추측](gan-gross-prasad.md)
-- [Arthur 매개변수와 비템퍼드 표현](arthur-parameters.md)
+- [Arthur 매개변수](arthur-parameters.md)
 
 #number_theory #group_theory #algebra #theorem

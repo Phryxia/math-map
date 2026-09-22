@@ -103,6 +103,6 @@ Airy 는 음의 실축에서 가장 가까운 극점이 $[6/6]$ 에서 $-2.068$ 
 
 ## 더 알아보기
 
-- [정확한 WKB 와 Voros 기호](exact-wkb.md)
+- [정확한 WKB](exact-wkb.md)
 
 #analysis #complex_analysis #computation

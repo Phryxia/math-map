@@ -142,6 +142,6 @@ alien 미분들은 자유 [Lie 대수](lie-algebras.md)를 이루고 그 지수�
 
 ## 더 알아보기
 
-- [정확한 WKB 와 Voros 기호](exact-wkb.md)
+- [정확한 WKB](exact-wkb.md)
 
 #analysis #complex_analysis #computation

@@ -162,6 +162,6 @@ WKB 는 특이 섭동의 가장 단순한 비자명 예다. 지수부의 전개,
 
 ## 더 알아보기
 
-- [정확한 WKB 와 Voros 기호](exact-wkb.md)
+- [정확한 WKB](exact-wkb.md)
 
 #analysis #computation
