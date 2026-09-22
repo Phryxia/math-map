@@ -108,6 +108,6 @@ Friedman 의 정리는 무작위 $d$ 정규 그래프가 높은 확률로 $\lamb
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md)
 
 #graph_theory #number_theory #construction
