@@ -111,7 +111,7 @@ $$
 
 **$j$ 불변량.** $j=E_4^3/\Delta$ 는 무게 0 이고 $\mathbb H$ 에서 정칙이지만 첨점에서 극을 갖는다. $\mathrm{SL}\_2(\mathbb Z)$ 불변 함수의 체를 생성하며 격자의 동형류를 완전히 분류한다.
 
-$\mathrm{SL}\_2(\mathbb Z)$ 전체에 대한 형식들의 등급환은 자유 다항식환이다.
+$\mathrm{SL}\_2(\mathbb Z)$ 전체에 대한 형식들의 등급환은 자유 [다항식환](polynomial-rings.md)이다.
 
 $$
 \bigoplus_kM_k(\mathrm{SL}\_2(\mathbb Z))=\mathbb C[E_4,E_6]

@@ -102,7 +102,7 @@ $R$ 이 [대수적 수체](algebraic-number-fields.md)의 정수환이면 유수
 
 Dedekind 정역인 것.
 
-- $\mathbb Z$ 와 체 위의 다항식환 $k[t]$ 를 비롯한 모든 주 아이디얼 정역.
+- $\mathbb Z$ 와 체 위의 [다항식환](polynomial-rings.md) $k[t]$ 를 비롯한 모든 주 아이디얼 정역.
 - 수체의 정수환 $\mathcal O_K$ .
 - 체 위의 비특이 아핀 곡선의 좌표환.
 

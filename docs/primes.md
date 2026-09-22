@@ -118,7 +118,7 @@ Diophantus 방정식의 해 존재, 제곱수 판정, 약수 함수의 계산이
 
 ## 대수적 정수로의 확장
 
-유일분해가 성립하는 환이 **UFD**(unique factorization domain)다. 정수와 체 위의 다항식환은 UFD 이고 다항식의 인수분해도 유일하다. $\mathbb{Z}[\sqrt{-5}]$ 처럼 UFD 가 아닌 환에서는 유일성을 아이디얼 수준으로 옮기며, 그 실패를 재는 양이 유수군이다. Fermat 의 마지막 정리에 대한 19 세기의 시도들이 이 실패를 다루면서 대수적 정수론이 나왔다.[^1]
+유일분해가 성립하는 환이 **UFD**(unique factorization domain)다. 정수와 체 위의 [다항식환](polynomial-rings.md)은 UFD 이고 다항식의 인수분해도 유일하다. $\mathbb{Z}[\sqrt{-5}]$ 처럼 UFD 가 아닌 환에서는 유일성을 아이디얼 수준으로 옮기며, 그 실패를 재는 양이 유수군이다. Fermat 의 마지막 정리에 대한 19 세기의 시도들이 이 실패를 다루면서 대수적 정수론이 나왔다.[^1]
 
 [^1]: Euclid, *Elements* IX.20 (David E. Joyce 해설). 소수가 어떤 유한 목록보다도 많다는 명제와 증명. https://mathcs.clarku.edu/~djoyce/elements/bookIX/propIX20.html
 

@@ -127,7 +127,7 @@ $\mathbb R[x]/(x^2+1) \cong \mathbb C$ 가 복소수를 만드는 가장 깔끔�
 
 ## 기하와의 사전
 
-다항식환의 아이디얼과 대수적 집합이 서로 뒤집힌 순서로 대응한다. 큰 아이디얼이 작은 집합에 해당하고, 소 아이디얼이 기약 다양체에, 극대 아이디얼이 점에 해당한다. 몫환 $k[x_1,\dots,x_n]/I$ 는 그 다양체 위의 다항식 함수들의 환이며, 이 사전을 정확히 진술한 것이 Hilbert 영점정리다. 대수와 기하를 서로 번역하는 데 아이디얼을 쓴다.[^1]
+[다항식환](polynomial-rings.md)의 아이디얼과 대수적 집합이 서로 뒤집힌 순서로 대응한다. 큰 아이디얼이 작은 집합에 해당하고, 소 아이디얼이 기약 다양체에, 극대 아이디얼이 점에 해당한다. 몫환 $k[x_1,\dots,x_n]/I$ 는 그 다양체 위의 다항식 함수들의 환이며, 이 사전을 정확히 진술한 것이 Hilbert 영점정리다. 대수와 기하를 서로 번역하는 데 아이디얼을 쓴다.[^1]
 
 [^1]: MIT OpenCourseWare 18.703, *Lecture 16: Ring Homomorphisms and Ideals*, Definition-Lemma 16.4, Proposition 16.5, Theorem 16.6–16.7. https://ocw.mit.edu/courses/18-703-modern-algebra-spring-2013/3d284ce730e27a52b1fbdb5cbcebedf6_MIT18_703S13_pra_l_16.pdf
 

@@ -166,7 +166,7 @@ $E_8$ 은 248 차원이고 근이 240 개다. 그 240 개의 근이 이루는 [�
 
 ## 무한차원 확장
 
-- **affine Kac–Moody 대수.** 유한차원 $\mathfrak g$ 에 Laurent 다항식환을 텐서하고 중심 확대를 붙인 $\hat{\mathfrak g}=\mathfrak g\otimes\mathbb C[t,t^{-1}]\oplus\mathbb Cc$ 다. 확장된 Dynkin 도표로 분류되며 표현의 지표가 [모듈러 형식](modular-forms.md)이 된다.
+- **affine Kac–Moody 대수.** 유한차원 $\mathfrak g$ 에 Laurent [다항식환](polynomial-rings.md)을 텐서하고 중심 확대를 붙인 $\hat{\mathfrak g}=\mathfrak g\otimes\mathbb C[t,t^{-1}]\oplus\mathbb Cc$ 다. 확장된 Dynkin 도표로 분류되며 표현의 지표가 [모듈러 형식](modular-forms.md)이 된다.
 - **Virasoro 대수.** 원 위의 벡터장 대수의 중심 확대다.
 
 $$

@@ -4,7 +4,7 @@
 
 분류공간은 다발을 세는 문제를 사상의 호모토피류를 세는 문제로 바꾸는 공간이다. 위상군 $G$ 마다 공간 $BG$ 와 그 위의 주다발 $EG \to BG$ 가 있어, 파라콤팩트 공간 $X$ 위의 주 $G$ 다발이 연속사상 $X \to BG$ 의 호모토피류와 일대일로 대응한다.
 
-[특성류](characteristic-classes.md)는 이 대응에서 $BG$ 의 [코호몰로지](cohomology.md) 원소를 당긴 것이다. $H^\ast(BU(n))$ 이 Chern 류로 생성되는 다항식환이라는 계산이 Chern 류의 항등식을 전부 담는다.
+[특성류](characteristic-classes.md)는 이 대응에서 $BG$ 의 [코호몰로지](cohomology.md) 원소를 당긴 것이다. $H^\ast(BU(n))$ 이 Chern 류로 생성되는 [다항식환](polynomial-rings.md)이라는 계산이 Chern 류의 항등식을 전부 담는다.
 
 # 직관
 

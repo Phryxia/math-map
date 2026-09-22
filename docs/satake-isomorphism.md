@@ -17,7 +17,7 @@ $$
 \thickspace=\thickspace R\bigl(\widehat G\bigr)
 $$
 
-오른쪽은 $n$ 변수 대칭 Laurent 다항식환이고 **쌍대군** $\widehat G=\mathrm{GL}\_n(\mathbb C)$ 의 유한차원 표현이 이루는 표현환이다. 이중 잉여류를 세는 조합론과 복소 [Lie 군](lie-groups.md)의 표현론이 같은 환을 준다.
+오른쪽은 $n$ 변수 대칭 Laurent [다항식환](polynomial-rings.md)이고 **쌍대군** $\widehat G=\mathrm{GL}\_n(\mathbb C)$ 의 유한차원 표현이 이루는 표현환이다. 이중 잉여류를 세는 조합론과 복소 [Lie 군](lie-groups.md)의 표현론이 같은 환을 준다.
 
 이 동형에서 두 가지가 나온다.
 
