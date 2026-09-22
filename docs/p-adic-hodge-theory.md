@@ -83,7 +83,7 @@ $t$ 는 순환지표 $\chi$ 에 대한 고유벡터이고, 복소 쪽에서 복�
 | 조건 | 대응하는 환원 | 남는 선형대수 자료 |
 | --- | --- | --- |
 | 결정적 | 좋은 환원 | Frobenius $\varphi$ 와 여과 |
-| 반안정 | 반안정 환원 | $\varphi$ , 단일(monodromy) 작용소 $N$ , 여과 |
+| 반안정 | 반안정 환원 | $\varphi$ , 모노드로미(monodromy) 작용소 $N$ , 여과 |
 | de Rham | 임의 환원 | 여과 |
 | Hodge–Tate | 임의 환원 | Hodge–Tate 무게 |
 
@@ -184,7 +184,7 @@ B_{\mathrm{st}}=B_{\mathrm{cris}}[u],\qquad
 \varphi(u)=pu,\qquad N=-\frac{d}{du}
 $$
 
-$N$ 은 단일(monodromy) 작용소이고 $N\varphi=p\varphi N$ 을 만족한다. $u$ 를 $\log p$ 의 어떤 값으로 보내는 선택마다 $B_{\mathrm{st}}\hookrightarrow B_{\mathrm{dR}}$ 이 달라지지만 허용성 판정은 그 선택에 의존하지 않는다.
+$N$ 은 모노드로미 작용소이고 $N\varphi=p\varphi N$ 을 만족한다. $u$ 를 $\log p$ 의 어떤 값으로 보내는 선택마다 $B_{\mathrm{st}}\hookrightarrow B_{\mathrm{dR}}$ 이 달라지지만 허용성 판정은 그 선택에 의존하지 않는다.
 
 $$
 D_{\mathrm{cris}}(V)=(B_{\mathrm{cris}}\otimes V)^{G_K},\qquad
