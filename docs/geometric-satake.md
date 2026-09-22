@@ -100,7 +100,7 @@ $$
 
 ## Tannaka 재구성
 
-Tannaka 쌍대성은 텐서 범주와 벡터공간으로 가는 충실한 텐서 함자(**올림자**)에서 군을 복원한다. 여기서 올림자는 전체 코호몰로지다.
+Tannaka 쌍대성은 텐서 범주와 벡터공간으로 가는 충실한 텐서 [함자](functors.md)(**올림자**)에서 군을 복원한다. 여기서 올림자는 전체 코호몰로지다.
 
 $$
 H^\ast:\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\to\mathrm{Vect},

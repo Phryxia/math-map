@@ -60,7 +60,7 @@ $$
 \mathrm{Hecke}=\lbrace(\mathcal P,\mathcal P',x,\ \varphi\colon\mathcal P|\_{X\setminus x}\xrightarrow{\sim}\mathcal P'|\_{X\setminus x})\rbrace
 $$
 
-이 대응 스택이 $\mathrm{Bun}\_G\times\mathrm{Bun}\_G\times X$ 로 사상하고, 두 사영을 따라 당기고 미는 것이 Hecke 작용이다. 수정의 종류는 아핀 Grassmannian 의 궤도가 분류하고 기하적 Satake 가 그 궤도를 $\hat G$ 의 기약표현 $V$ 로 이름 붙이므로, Hecke 함자가 $\hat G$ 의 표현으로 매개된다.
+이 대응 스택이 $\mathrm{Bun}\_G\times\mathrm{Bun}\_G\times X$ 로 사상하고, 두 사영을 따라 당기고 미는 것이 Hecke 작용이다. 수정의 종류는 아핀 Grassmannian 의 궤도가 분류하고 기하적 Satake 가 그 궤도를 $\hat G$ 의 기약표현 $V$ 로 이름 붙이므로, Hecke [함자](functors.md)가 $\hat G$ 의 표현으로 매개된다.
 
 $$
 H^V_x\colon\ \mathrm{D}(\mathrm{Bun}\_G)\longrightarrow\mathrm{D}(\mathrm{Bun}\_G)

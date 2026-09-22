@@ -10,7 +10,7 @@ $$
 \bar\rho\colon G\longrightarrow \mathrm{GL}\_n(\mathbb F_p)
 $$
 
-로 환원되는 $p$ 진 표현을 하나씩 찾는 대신 전부 한꺼번에 다루는 것이다. 완비 국소환 $A$ 마다 $A$ 계수 올림의 집합 $D(A)$ 를 대응시키면 함자가 되고, 적당한 조건 아래 표현가능하다. 환 $R_{\bar\rho}$ 와 그 위의 표현 하나가 있어
+로 환원되는 $p$ 진 표현을 하나씩 찾는 대신 전부 한꺼번에 다루는 것이다. 완비 국소환 $A$ 마다 $A$ 계수 올림의 집합 $D(A)$ 를 대응시키면 [함자](functors.md)가 되고, 적당한 조건 아래 표현가능하다. 환 $R_{\bar\rho}$ 와 그 위의 표현 하나가 있어
 
 $$
 D(A)\thickspace\cong\thickspace\mathrm{Hom}\_{\text{연속}}(R_{\bar\rho},A)
