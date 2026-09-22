@@ -16,7 +16,7 @@ $$
 
 완성된 $\widehat h=h+(\text{보정항})$ 은 모듈러이지만 정칙이 아니고, 원래의 $h$ 는 정칙이지만 모듈러가 아니다. 정칙성과 모듈러성 중 하나를 포기해야 하고 포기한 양을 재는 것이 shadow 다. $g=0$ 이면 [모듈러 형식](modular-forms.md)으로 돌아온다. 모듈러 형식 공간을 한 겹 넓힌 것이고 넓힌 방향을 [theta 급수](theta-series.md)가 통제한다.
 
-이 문서는 완성 과정을 Appell–Lerch 합, 부정부호 theta 급수, [Eisenstein 급수](eisenstein-series.md)의 무게 $3/2$ 판본에서 따라간다. 셋 모두 같은 형태의 보정항을 요구하고 그 공통 구조가 조화 Maass 형식이다.
+완성 과정은 Appell–Lerch 합, 부정부호 theta 급수, [Eisenstein 급수](eisenstein-series.md)의 무게 $3/2$ 판본에서 같은 모습으로 나타난다. 셋 모두 같은 형태의 보정항을 요구하고 그 공통 구조가 조화 Maass 형식이다.
 
 # 직관
 

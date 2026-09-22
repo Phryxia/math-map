@@ -6,8 +6,6 @@
 
 핵심 결과는 **최대유량 최소절단 정리**다. 최대로 흘릴 수 있는 양은 $s$ 와 $t$ 를 갈라놓는 가장 싼 절단의 용량과 정확히 같다. 한쪽은 최대화 문제, 다른 쪽은 최소화 문제이고 두 최적값이 일치한다는 min-max 정리이며, [선형계획법](linear-programming.md) 쌍대성의 가장 깨끗한 조합론적 사례다.
 
-이 문서는 흐름과 절단을 정의하고, 약 쌍대성에서 출발해 Ford–Fulkerson의 잔여 그래프 논증으로 정리를 증명한다. 이어 Edmonds–Karp의 복잡도, **LP**(linear programming)로서의 정식화, 그리고 이분 매칭과 Menger 정리로의 환원을 다룬다.
-
 # 직관
 
 가장 굵은 경로에 용량만큼 흘리고 남은 용량으로 반복하는 탐욕은 최대 흐름을 주지 않는다. 앞서 잘못 흘린 양을 되돌릴 수단이 없기 때문이다.
@@ -118,7 +116,7 @@ $$
 \max \sum_{p \in P} x_p \quad \text{s.t.} \quad \sum_{p \ni e} x_p \le c(e) \ (\forall e), \quad x \ge 0
 $$
 
-이다. 이 LP의 쌍대는 간선마다 변수 $y_e \ge 0$ 을 두고
+이다. 이 **LP**(linear programming)의 쌍대는 간선마다 변수 $y_e \ge 0$ 을 두고
 
 $$
 \min \sum_{e \in E} c(e)\thinspace y_e \quad \text{s.t.} \quad \sum_{e \in p} y_e \ge 1 \ (\forall p \in P), \quad y \ge 0
