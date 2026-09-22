@@ -118,7 +118,7 @@ $$
 \mathbb{E}[X]=\int_0^\infty P(X\gt t)\thinspace dt\qquad(X\ge0)
 $$
 
-이 모두 이 정리에서 나온다. 마팅게일 수렴 정리와 조건부 기댓값의 성질을 세울 때도 쓰인다.
+이 모두 이 정리에서 나온다. 마팅게일 수렴 정리와 [조건부 기댓값](conditional-expectation.md)의 성질을 세울 때도 쓰인다.
 
 ## 구성의 정당화
 

@@ -84,7 +84,7 @@ $$
 
 ## Bridge equation
 
-$F(x,\sigma)$ 가 비선형 상미분방정식의 1-매개변수 transseries 해이면
+$F(x,\sigma)$ 가 비선형 [상미분방정식](ordinary-differential-equations.md)의 1-매개변수 transseries 해이면
 
 $$
 \dot\Delta_{mA}F = S_m\thinspace\sigma^{\thinspace m+1}\frac{\partial F}{\partial\sigma}, \qquad m \ge -1

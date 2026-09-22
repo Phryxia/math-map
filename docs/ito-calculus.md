@@ -68,7 +68,7 @@ $$
 X_t=X_0+\int_0^ta(s,X_s)\thinspace ds+\int_0^tb(s,X_s)\thinspace dB_s
 $$
 
-$a$ 와 $b$ 가 $x$ 에 대해 Lipschitz 이고 선형 증가 조건을 만족하면 강해가 유일하게 존재한다. 증명은 상미분방정식의 Picard 반복과 같은 구조이고, 수축을 확인하는 자리에서 Itô 등거리가 쓰인다.
+$a$ 와 $b$ 가 $x$ 에 대해 Lipschitz 이고 선형 증가 조건을 만족하면 강해가 유일하게 존재한다. 증명은 [상미분방정식](ordinary-differential-equations.md)의 Picard 반복과 같은 구조이고, 수축을 확인하는 자리에서 Itô 등거리가 쓰인다.
 
 # 성질
 

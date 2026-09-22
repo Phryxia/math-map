@@ -71,7 +71,7 @@ $\Gamma\subset\mathrm{SL}\_2(\mathbb Z)$ 를 유한 지표 부분군이라 하�
 
 ## Fourier 전개
 
-$u(z+1)=u(z)$ 이므로 $x$ 에 대해 Fourier 전개할 수 있다. 계수함수가 만족하는 상미분방정식을 풀면 $y$ 방향의 모양이 결정된다. $\lambda=\tfrac14+r^2$ 일 때
+$u(z+1)=u(z)$ 이므로 $x$ 에 대해 Fourier 전개할 수 있다. 계수함수가 만족하는 [상미분방정식](ordinary-differential-equations.md)을 풀면 $y$ 방향의 모양이 결정된다. $\lambda=\tfrac14+r^2$ 일 때
 
 $$
 u(z)=\sqrt y\sum_{n\neq0}a_n\thinspace K_{ir}(2\pi|n|y)\thinspace e^{2\pi inx}

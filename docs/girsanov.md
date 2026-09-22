@@ -94,7 +94,7 @@ $$
 \mathbb E_P[Z]=\mathbb E_Q\negthinspace\left[\frac{Z}{L_T}\right],\qquad \mathbb E_Q[Z]=\mathbb E_P[Z\thinspace L_T]
 $$
 
-조건부 기댓값에는 밀도 과정이 들어간다. $s \le t$ 에 대해
+[조건부 기댓값](conditional-expectation.md)에는 밀도 과정이 들어간다. $s \le t$ 에 대해
 
 $$
 \mathbb E_Q[Z\mid\mathcal F_s]=\frac{\mathbb E_P[Z\thinspace L_t\mid\mathcal F_s]}{L_s}

@@ -85,7 +85,7 @@ $$
 \frac{dx}{dt}=f(x,t)-\tfrac12g(t)^2\nabla_x\log q_t(x)
 $$
 
-이 상미분방정식(ordinary differential equation, ODE)에는 잡음 항이 없어 잠재점과 표본이 일대일로 대응하고 가능도를 연속 정규화 흐름으로 정확히 계산할 수 있다. 고차 ODE 해법으로 단계 수를 줄이는 가속 표본기들이 이 형식 위에서 만들어진다.
+이 [상미분방정식](ordinary-differential-equations.md)(ordinary differential equation, ODE)에는 잡음 항이 없어 잠재점과 표본이 일대일로 대응하고 가능도를 연속 정규화 흐름으로 정확히 계산할 수 있다. 고차 ODE 해법으로 단계 수를 줄이는 가속 표본기들이 이 형식 위에서 만들어진다.
 
 ## 학습 목적함수
 

@@ -67,7 +67,7 @@ $$
 
 ## Painlevé II 표현
 
-Tracy 와 Widom 의 정리는 이 행렬식을 상미분방정식으로 바꾼다. Painlevé II 방정식
+Tracy 와 Widom 의 정리는 이 행렬식을 [상미분방정식](ordinary-differential-equations.md)으로 바꾼다. Painlevé II 방정식
 
 $$
 q''(x) = x\thinspace q(x) + 2q(x)^3
