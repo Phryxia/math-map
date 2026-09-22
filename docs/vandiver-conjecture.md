@@ -71,7 +71,7 @@ $A^{-}$ 쪽 도구들은 구조를 결정하고, $A^{+}$ 쪽에서 같은 자리
 
 ## 실부분체와 두 류수
 
-$K=\mathbb Q(\mu_p)$ 와 $K^{+}=\mathbb Q(\zeta_p+\zeta_p^{-1})$ 를 두고 류수를 각각 $h$ 와 $h^{+}$ 라 하자. $h^{-}=h/h^{+}$ 를 **상대류수**라 한다. $h^{-}$ 은 [Stickelberger](stickelberger.md) 문서의 지표 공식으로 명시적으로 계산되지만 $h^{+}$ 에는 그런 공식이 없다.
+$K=\mathbb Q(\mu_p)$ 와 $K^{+}=\mathbb Q(\zeta_p+\zeta_p^{-1})$ 를 두고 류수를 각각 $h$ 와 $h^{+}$ 라 하자. $h^{-}=h/h^{+}$ 를 **상대류수**라 한다. $h^{-}$ 은 [Stickelberger 정리](stickelberger.md)의 지표 공식으로 명시적으로 계산되지만 $h^{+}$ 에는 그런 공식이 없다.
 
 ## Vandiver 추측
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-[Lang–Trotter 추측](lang-trotter.md)이 고정된 곡선 $E/\mathbb Q$ 를 여러 $p$ 로 환원하며 초특이가 되는 때를 물었다면, 이 문서는 $p$ 를 고정하고 표수 $p$ 의 초특이 곡선 전체를 모아 그 사이의 관계를 본다.
+[Lang–Trotter 추측](lang-trotter.md)이 고정된 곡선 $E/\mathbb Q$ 를 여러 $p$ 로 환원하며 초특이가 되는 때를 묻는다. 여기서는 $p$ 를 고정하고 표수 $p$ 의 초특이 곡선 전체를 모아 그 사이의 관계를 본다.
 
 $\overline{\mathbb F_p}$ 위의 초특이 $j$ 불변량은 모두 $\mathbb F_{p^2}$ 에 있고 개수가
 

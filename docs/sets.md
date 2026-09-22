@@ -86,7 +86,7 @@ $|A|=n$ 이면 $|\mathcal P(A)|=2^n$ 이다. 각 원소의 포함 여부를 독�
 
 ## Russell 의 역설
 
-$R=\lbrace x:x\notin x\rbrace$ 를 집합으로 인정하면 $R\in R\iff R\notin R$ 이다. 그래서 ZFC 는 조건으로 집합을 만드는 것을 기존 집합의 부분집합을 고르는 분리 공리로 제한한다. 이 문서의 연산은 모두 ZFC 안에서 정당화된다.
+$R=\lbrace x:x\notin x\rbrace$ 를 집합으로 인정하면 $R\in R\iff R\notin R$ 이다. 그래서 ZFC 는 조건으로 집합을 만드는 것을 기존 집합의 부분집합을 고르는 분리 공리로 제한한다. 위의 집합 연산은 모두 ZFC 안에서 정당화된다.
 
 # 활용
 

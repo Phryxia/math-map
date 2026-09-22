@@ -2,7 +2,7 @@
 
 # 개요
 
-[Fontaine–Mazur 추측](fontaine-mazur.md)은 어떤 $p$ 진 [Galois 표현](galois-representations.md)이 기하에서 오는지를 국소 조건으로 판정한다. 그 진술을 정리로 바꾸는 기계가 $R=T$ 이고, 이 문서는 그 $R$ 쪽인 **변형환**을 만든다.
+[Fontaine–Mazur 추측](fontaine-mazur.md)은 어떤 $p$ 진 [Galois 표현](galois-representations.md)이 기하에서 오는지를 국소 조건으로 판정한다. 그 진술을 정리로 바꾸는 기계가 $R=T$ 이고, 그 $R$ 쪽이 **변형환**이다.
 
 Mazur 의 착상은[^1] 유한체 위의 표현
 

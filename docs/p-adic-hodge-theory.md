@@ -321,7 +321,7 @@ $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_n(\bar{\mathbb Q}\_p)$ 가 기약이고
 
 ## 완전체에서 프리즘으로
 
-Fontaine–Wintenberger 의 노름체 대응은 $p$ 진 탑을 충분히 올라가면 표수 $p$ 가 보인다는 현상이다. Scholze 는 이를 공간 차원으로 올려 perfectoid 공간을 정의하고 틸팅 $X\mapsto X^\flat$ 이 에탈 위치를 보존한다는 정리로 이 이론을 기하화했다. $A_{\mathrm{inf}}$ 와 $\theta$ 가 프리즘 $(A_{\mathrm{inf}},(\xi))$ 의 원형 예가 되고, Bhatt–Scholze 의 프리즘 코호몰로지는 결정 코호몰로지, de Rham 코호몰로지, 에탈 코호몰로지를 하나의 대상에서 특수화로 얻는다. 이 문서의 비교동형들이 그 이론에서는 한 코호몰로지의 여러 올이다.
+Fontaine–Wintenberger 의 노름체 대응은 $p$ 진 탑을 충분히 올라가면 표수 $p$ 가 보인다는 현상이다. Scholze 는 이를 공간 차원으로 올려 perfectoid 공간을 정의하고 틸팅 $X\mapsto X^\flat$ 이 에탈 위치를 보존한다는 정리로 이 이론을 기하화했다. $A_{\mathrm{inf}}$ 와 $\theta$ 가 프리즘 $(A_{\mathrm{inf}},(\xi))$ 의 원형 예가 되고, Bhatt–Scholze 의 프리즘 코호몰로지는 결정 코호몰로지, de Rham 코호몰로지, 에탈 코호몰로지를 하나의 대상에서 특수화로 얻는다. 위의 비교동형들이 그 이론에서는 한 코호몰로지의 여러 올이다.
 
 [^1]: 무게의 부호 관례는 문헌마다 다르다. 여기서는 $\mathbb C_p\otimes V\cong\bigoplus\mathbb C_p(-h_i)$ 로 $h_i$ 를 정해 $\mathbb Q_p(1)$ 의 무게가 $-1$ 이고 $D_{\mathrm{dR}}$ 의 여과 점프와 부호가 맞도록 했다. 모듈러성 쪽 문헌은 반대 부호를 써서 순환지표의 무게를 $1$ 로 하고 무게 $k$ 형식의 무게를 $\lbrace 0,k-1\rbrace$ 로 적는 경우가 많다.
 

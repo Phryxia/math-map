@@ -40,7 +40,7 @@ $$
 L=\Big\lbrace\sum_{i=1}^m z_ib_i\ :\ z_i\in\mathbb Z\Big\rbrace
 $$
 
-$B$ 를 $b_i$ 를 행으로 갖는 행렬이라 하면 $L=\lbrace zB:z\in\mathbb Z^m\rbrace$ 이다. $m=n$ 이면 완전계수라 하고, 이 문서는 그 경우만 다룬다.
+$B$ 를 $b_i$ 를 행으로 갖는 행렬이라 하면 $L=\lbrace zB:z\in\mathbb Z^m\rbrace$ 이다. $m=n$ 이면 완전계수라 한다. 아래에서는 완전계수만 다룬다.
 
 동치인 정의로 격자는 $\mathbb R^n$ 의 이산 부분군이다. $(1,\sqrt2)$ 가 생성하는 $\mathbb Z$ 결합은 $\mathbb R^2$ 에서 조밀하므로 격자가 아니다.
 
