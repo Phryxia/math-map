@@ -1,15 +1,31 @@
 {
   "version": 1,
-  "savedAt": "2026-09-22T16:56:59.978Z",
-  "nextSeq": 940,
+  "savedAt": "2026-09-22T20:59:39.700Z",
+  "nextSeq": 947,
   "items": [
     {
-      "id": "f449c18d",
-      "title": "정의 없이 쓴 용어 훑기 (새 문서 차수)",
+      "id": "b19c818c",
+      "title": "본문 링크가 수식 안에 들어가는 사고의 검사",
+      "priority": 100,
+      "note": "2026-09-22 여섯째 회차에 실제로 냈다가 같은 회차에 되돌린 사고다. elliptic-curves 목표로 타원곡선 링크를 31 문서에 걸 때 deuring-correspondence 8줄의 $$ 블록 안 \\text{초특이 타원곡선} 에 링크가 들어갔다. 렌더 결과에 '[타원곡선](elliptic-curves.md)' 이 글자 그대로 나온다. 4절 수식 규칙의 여섯 검사가 전부 통과시켰다: render-check 는 수식 스팬이 남아 있으면 통과시키고, awk 이스케이프 검사는 백슬래시 뒤 문장부호만 보고, 링크 검사 grep -nE '\\]\\(' 는 .md 로 끝나는 링크를 정상으로 보아 거른다. 검사기(스크래치패드 node 인라인): 코드펜스를 건너뛰고 $$ 블록 안의 줄과 인라인 $...$ 스팬을 모아 그 안에 /\\]\\([a-z0-9-]+\\.md\\)/ 가 있으면 보고한다. 이 회차 마지막에 전수로 돌려 0 건임을 확인했다. 본문 링크를 문자열 위치로 삽입하는 작업(link.mjs 처럼 첫 등장에 거는 방식)을 할 때마다 이 검사를 함께 돌릴 것. 근본 대책은 삽입 전에 그 위치가 수식 스팬 안인지 보는 것이고, 지금 방식은 삽입 뒤 검사다. 같은 문서에 산문 등장이 없으면(deuring-correspondence 가 그랬다. 타원곡선이 수식 안 한 번뿐이다) 그 문서는 걸지 않고 넘어간다. dev/ 스크립트는 고치지 않는 것이 0절이므로 render-check 에 이 검사를 넣자는 제안은 독자에게 남긴다",
+      "createdAt": "2026-09-22T20:53:12.921Z",
+      "seq": 944
+    },
+    {
+      "id": "8eb6a247",
+      "title": "문서 자신을 가리키는 문장 훑기 (2차)",
+      "priority": 50,
+      "note": "2026-09-22 여섯째 회차에 1차를 돌렸다. 4절 문체 규칙('문장이 내용 대신 문서 자신을 가리키면 지운다')과 0절('저장소나 탐사 절차 자체에 대한 언급')에 걸리는 문장을 grep '이 문서의|이 문서는|이 문서가|) 문서의|] 문서의|측도 문서' 로 뽑아 30 건을 고쳤다. 유형별 처리. (1) 개요의 목차 서술 '이 문서는 A, B, C 를 다룬다' 7 건(bayesian-inference 9, chern-simons 13, dyson-rank-crank 23, graph-coloring 9, matchings 9, mock-modular-forms 19, network-flow 9)은 통째로 지웠다. 지울 때 그 문장에만 있던 본문 링크와 두문자어 풀이를 먼저 확인할 것: bayesian-inference 는 maximum-likelihood 본문 링크를 잃었으나 그 개념을 실제로 쓰는 자리가 없어 그대로 뒀고, network-flow 는 LP(linear programming) 풀이가 그 문장에 있어 본문 첫 등장인 121줄로 옮겼다. mock-modular-forms 는 뒤 문장의 '셋 모두' 가 앞 문장을 받으므로 지우지 않고 '완성 과정은 ... 같은 모습으로 나타난다' 로 고쳤다. (2) 다른 문서의 구조를 가리키는 'X 문서의 Y 절' 6 건(baire-category 73, forcing 116, ideals-quotient-rings 104, tate-thesis 164, tracy-widom 128, measurable-functions 13)은 '문서의' 를 빼고 개념 자체를 가리키게 고쳤다. (3) '이 문서의 주제다/중심이다/규약에서/부모인 것은' 5 건(fargues-scholze 21, finite-automata 7, hodge-theory 95, mv-cycles 13, p-adic-hodge-theory 320). fargues-scholze 21 은 그래프의 부모 관계를 본문에 적은 것이라 0절 위반이기도 하다. (4) 범위 한정 '이 문서는 X 쪽을 다룬다' 12 건(bounded-operators 17, deformation-rings 5, groups 7, intuitionism 9, lattices 43, newton-polygon 67, p-adic-hodge-theory 324, random-walks 140, reverse-mathematics 96, sets 89, supersingular-isogeny-graphs 5, vandiver-conjecture 74). 용어 규약은 '아래에서 환은 모두 가환환이고'(localization-rings 9, rings 27)처럼 '아래에서' 로 바꾸면 문서를 가리키지 않는다. (5) 각주의 '이 문서의 정의와 정리 진술은 이 책의 N 장을 따른다' 2 건(boolean-fourier 161, category-o 186)은 '이 문서의' 만 뗐다. (6) dag-topological 94 는 '이 문서 그래프는 선수지식에서 후속으로 가는 DAG 여야 한다. 간선을 더하기 전에 자식에서 부모로 가는 경로가 있는지 검사하는 것이 dev/graph.mjs check-cycle 의 일이다' 로 저장소의 탐사 절차를 활용 절에 적은 것이라 항목을 통째로 지웠다. 그 항목에만 달려 있던 각주 [^1](Sedgewick Algorithms)은 지우지 않고 바로 위 항목 끝으로 옮겼다(4절 각주 규칙). 배운 것 둘. (a) 고친 문장을 다시 읽어 예고문이 생기지 않았는지 볼 것. mv-cycles 13 을 'Mirković–Vilonen 의 답은 다음이다' 로 고쳤다가 4절이 금지한 예고문이라 'Mirković–Vilonen 은 반무한 낟가리라 부르는 궤도와 층으로 답했다' 로 다시 고쳤다. (b) queue.mjs push 의 note 에 백틱을 넣지 말 것. 셸이 명령 치환으로 실행해 그 구절이 통째로 사라진다. 이 note 의 1차 판에서 실제로 그렇게 잃었고 파일에서 읽어 다시 넣었다. 2차에 볼 것: 같은 유형의 다른 표현을 grep 으로 찾는다. 후보는 '여기서는|아래에서는|이 절은|이 절에서는|위에서 본|앞에서 본|앞 절의|뒤에서 다룬다|뒤에서 본다' 다. 이 가운데 '여기서는', '아래에서는' 은 1차에서 고침말로 쓴 표현이므로 문서 자신을 가리키는 것으로 볼지 먼저 판정할 것",
+      "createdAt": "2026-09-22T20:59:13.101Z",
+      "seq": 946
+    },
+    {
+      "id": "9c218b73",
+      "title": "정의 없이 쓴 용어 훑기 (전체 훑기 2차)",
       "priority": 20,
-      "note": "2026-09-22 다섯째 회차 스물여덟째 묶음. '코호몰로지' 를 돌려 세 자리를 걸었다: cohomology 로 eilenberg-maclane-spaces 7(코호몰로지는 사슬 복합체로 정의되지만), classifying-spaces 7(BG 의 코호몰로지 원소), differential-forms 135(위상적 특이 코호몰로지와 동형. 표시를 '특이 코호몰로지' 로 잡았다). 이 회차에 cohomology 문서를 새로 써서 목표가 생긴 자리들이다. 스물여덟 묶음에서 394 자리다. 판정 결과. (1) '노름' 차수는 취소했다. 목표 문서가 없다. banach-spaces 는 '노름이 주어지고 완비한 벡터공간' 으로 시작해 노름 자체를 정의하지 않고, normed-spaces 도 inner-product-spaces 도 노름 일반을 다루지 않는다. 목표 문서가 없는 용어 목록에 '노름' 을 확정해 넣는다(앞서 확정한 것: rank, 동형, 확률). (2) '코호몰로지' 에서 건너뛴 것이 많다. 단독 등장 문서 60 여 개 가운데 대부분이 에탈 코호몰로지, 군 코호몰로지, 층 코호몰로지, 교차 코호몰로지, Galois 코호몰로지처럼 갈래가 다른 복합 용어다. cohomology 는 특이 코호몰로지를 다루므로 그 갈래에만 걸었다. brauer-groups 72, deformation-rings 21, fundamental-lemma 134 처럼 정수론 문서에서 '코호몰로지' 가 단독으로 나오는 자리는 Galois 코호몰로지를 줄여 쓴 것이라 걸지 않았다. (3) 앞 묶음에서 확인한 방침(새 문서가 들어올 때마다 그 문서의 용어를 훑는다)에 하나를 더한다. 새 문서가 들어오면 그 문서가 목표가 되는 자리도 함께 훑는다. 이번 차수의 세 자리가 그렇게 나왔고, 남은 일반 용어를 계속 파는 것보다 수확이 컸다. 다음 차수: 다음 회차에 들어오는 새 문서들, 그리고 그 문서들이 목표가 되는 기존 자리들",
-      "createdAt": "2026-09-22T16:53:16.804Z",
-      "seq": 937
+      "note": "2026-09-22 여섯째 회차 서른한째 묶음. 서른째 묶음이 남긴 '제목 길이 문턱을 6에서 4~5로 낮춘다' 를 실행했다. scanall.mjs 문턱 4 로 893 자리(목표 92개)에서 시작해 662 자리(목표 82개)로 줄였다. 이 회차에 건 것은 전체 문서 기준 200 자리 남짓이다. 문턱 4 에서 새로 걸린 목표와 건 자리: measurable-functions 8, metric-spaces 4, axiom-of-choice 13, partial-orders 8, uniform-convergence 14, lie-groups 9, homotopy-groups 5, harmonic-functions 6, vector-spaces 12, random-variables 17, linear-maps 16, polynomial-rings 11, prime-number-theorem 5, first-order-logic 6. 서른째 묶음의 다섯 제외 유형에 여섯째를 더한다. (6) 제목이 '{수식어}의 {명사}' 나 두 낱말인 목표는 앞에 다른 낱말이 붙어 통째로 다른 용어가 되는 자리가 많다. group-representations 제목 '군의 표현' 이 그 예로, 26 자리 가운데 걸 자리가 없었다: 땋임군의 표현, 성분군의 표현, 기본군의 표현, 대칭군의 표현, 유한군의 표현, 고전군의 표현론처럼 전부 앞 낱말과 한 용어다. 링크를 걸면 '땋임[군의 표현](group-representations.md)' 으로 용어를 쪼갠다. group-actions '군 작용' 도 같은 이유로 통째로 건너뛰었다(유한군 작용, 대칭군 작용). 같은 판정으로 제외한 개별 자리: jacquet-langlands 85 '불변벡터 공간', vector-bundles 28 '가역선형사상', partitions 144 '삼소수 정리', class-field-theory 207 '등차수열 소수 정리'(Dirichlet 정리 갈래), logicism 85 'Dedekind–Peano 공리'. 배운 것: 목표 제목이 한 낱말이 아니면 one.mjs 출력에서 용어 앞 두세 글자를 반드시 눈으로 본다. grep -o 의 앞뒤 문맥 폭을 30자 이상 잡아야 이 판정이 된다. 남은 662 자리의 큰 목표와 그 성격: cohomology 227(앞 묶음이 판정한 대로 에탈·군·층·Galois 코호몰로지 등 갈래가 다른 복합 용어가 대부분이고, 특이 코호몰로지 갈래만 건다), elliptic-curves 69, continuity 48(연속함수. 균등연속·절대연속 등 복합 용어를 걸러야 한다), generating-functions 42(확률생성함수·적률생성함수·지수생성함수가 섞여 있어 (6) 유형 위험이 크다), compactness 30(위상 콤팩트성과 1차 논리의 콤팩트성 정리가 갈래가 다르다. ax-grothendieck 57, peano-axioms 61, ultraproducts 7, logicism 109 는 논리 쪽이라 제외 대상), group-representations 26(위 (6)으로 전부 제외 확정), harmonic-functions 18(구면조화함수가 별도 문서라 '구면조화|구면 조화' 를 먼저 걸러야 한다). 다음 차수: elliptic-curves 와 continuity 를 돌린다. 둘 다 자리가 많으므로 one.mjs 출력을 문서별 첫 등장으로 줄인 뒤 (5)(6) 유형을 먼저 걸러내고 남은 것만 눈으로 판정한다",
+      "createdAt": "2026-09-22T20:51:25.306Z",
+      "seq": 943
     },
     {
       "id": "15513ef8",
