@@ -53,7 +53,7 @@ $$
 
 ## Ramanujan 성질
 
-$k$ 정규 그래프의 인접행렬 고윳값은 $k=\lambda_1\ge\lambda_2\ge\dots$ 이고, Alon–Boppana 가 $\lambda_2\ge2\sqrt{k-1}-o(1)$ 이라는 하한을 준다. 자명한 것을 뺀 모든 고윳값에서 이 하한을 달성하는 그래프가 Ramanujan 그래프다.
+$k$ 정규 그래프의 인접행렬 [고윳값](eigenvalues.md)은 $k=\lambda_1\ge\lambda_2\ge\dots$ 이고, Alon–Boppana 가 $\lambda_2\ge2\sqrt{k-1}-o(1)$ 이라는 하한을 준다. 자명한 것을 뺀 모든 고윳값에서 이 하한을 달성하는 그래프가 Ramanujan 그래프다.
 
 초특이 $\ell$ 동종사상 그래프의 인접행렬은 사원수대수의 Brandt 행렬이고 그 고윳값은 무게 $2$ 새형식의 Hecke 고윳값 $a_\ell$ 이다. Jacquet–Langlands 대응이 둘을 잇고 Deligne 이 증명한 Ramanujan 추정
 

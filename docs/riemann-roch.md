@@ -2,7 +2,7 @@
 
 # 개요
 
-Riemann–Roch 정리는 곡선 위에서 극의 위치와 차수를 지정했을 때 그 조건을 만족하는 유리함수가 이루는 공간의 차원을 주는 등식이다. 인자 $D=\sum n_PP$ 에 대해
+Riemann–Roch 정리는 곡선 위에서 극의 위치와 차수를 지정했을 때 그 조건을 만족하는 유리함수가 이루는 공간의 [차원](vector-spaces.md)을 주는 등식이다. 인자 $D=\sum n_PP$ 에 대해
 
 $$
 L(D)=\lbrace f : \mathrm{div}(f)+D\ge0\rbrace\cup\lbrace 0\rbrace
