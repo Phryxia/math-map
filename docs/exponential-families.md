@@ -24,7 +24,7 @@ $A(\eta)$ 는 밀도를 1 로 만드는 정규화 비용이고, 이 비용이 $\
 
 ## 지수족
 
-기준측도 $\nu$ 가 주어진 표본공간 $\mathcal X$ 위에서, 가측함수 $h : \mathcal X \to [0, \infty)$ 와 $T : \mathcal X \to \mathbb R^k$ 를 고정한다. 자연모수 $\eta \in \mathbb R^k$ 에 대해
+기준측도 $\nu$ 가 주어진 표본공간 $\mathcal X$ 위에서, [가측함수](measurable-functions.md) $h : \mathcal X \to [0, \infty)$ 와 $T : \mathcal X \to \mathbb R^k$ 를 고정한다. 자연모수 $\eta \in \mathbb R^k$ 에 대해
 
 $$
 A(\eta) \thickspace=\thickspace \log \int_{\mathcal{X}} h(x)\thinspace e^{\eta^{\top}T(x)}\thinspace d\nu(x)

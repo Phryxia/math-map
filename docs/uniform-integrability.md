@@ -4,7 +4,7 @@
 
 [Lebesgue 적분](lebesgue-integral.md)에서 극한과 적분을 바꾸는 정리들은 질량이 새지 않는다는 조건을 요구한다. [단조 수렴 정리](monotone-convergence.md)는 단조성으로, [지배 수렴 정리](dominated-convergence.md)는 적분가능한 지배함수 하나로 그 조건을 만든다. 균등적분가능성(uniform integrability, UI)은 같은 조건을 함수족 전체에 대한 최소한의 형태로 뽑아낸 것이다.
 
-가측함수열이 [측도](measure.md) 수렴하고 균등적분가능한 것이 $L^1$ 수렴과 동치다. 이것이 Vitali 수렴 정리이고 지배 수렴 정리가 그 특수한 경우다. 확률론에서는 [martingale](martingales.md)의 수렴, [조건부 기댓값](conditional-expectation.md)족의 성질, 극한에서 기댓값이 보존되는지 여부가 모두 UI 로 판정된다.
+[가측함수](measurable-functions.md)열이 [측도](measure.md) 수렴하고 균등적분가능한 것이 $L^1$ 수렴과 동치다. 이것이 Vitali 수렴 정리이고 지배 수렴 정리가 그 특수한 경우다. 확률론에서는 [martingale](martingales.md)의 수렴, [조건부 기댓값](conditional-expectation.md)족의 성질, 극한에서 기댓값이 보존되는지 여부가 모두 UI 로 판정된다.
 
 # 직관
 

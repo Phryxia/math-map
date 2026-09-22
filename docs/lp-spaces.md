@@ -2,7 +2,7 @@
 
 # 개요
 
-$L^p$ 공간은 [측도](measure.md)공간 $(X,\mathcal M,\mu)$ 위에서 $\vert f\vert^p$ 가 적분가능한 가측함수들을 모아 만든 노름공간이다. $1\le p\le\infty$ 에서 노름은
+$L^p$ 공간은 [측도](measure.md)공간 $(X,\mathcal M,\mu)$ 위에서 $\vert f\vert^p$ 가 적분가능한 [가측함수](measurable-functions.md)들을 모아 만든 노름공간이다. $1\le p\le\infty$ 에서 노름은
 
 $$
 \Vert f\Vert\_p=\Bigl(\int_X\vert f\vert^p\thinspace d\mu\Bigr)^{1/p}

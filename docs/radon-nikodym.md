@@ -34,7 +34,7 @@ $$
 
 ## 정리
 
-$\mu$ 와 $\nu$ 가 $\sigma$ -유한이고 $\nu \ll \mu$ 이면 음이 아닌 가측함수 $f$ 가 존재해 모든 가측집합 $E$ 에서
+$\mu$ 와 $\nu$ 가 $\sigma$ -유한이고 $\nu \ll \mu$ 이면 음이 아닌 [가측함수](measurable-functions.md) $f$ 가 존재해 모든 가측집합 $E$ 에서
 
 $$
 \nu(E)=\int_E f\thinspace d\mu

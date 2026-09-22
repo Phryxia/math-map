@@ -12,7 +12,7 @@
 
 # 정의
 
-거리 공간 $(X,d_X)$ 와 $(Y,d_Y)$ 사이의 함수 $f\colon X\to Y$ 에 대해 다음이 성립하면 $f$ 가 **균등연속**이다.
+[거리 공간](metric-spaces.md) $(X,d_X)$ 와 $(Y,d_Y)$ 사이의 함수 $f\colon X\to Y$ 에 대해 다음이 성립하면 $f$ 가 **균등연속**이다.
 
 $$
 \forall\varepsilon\gt 0\thickspace\exists\delta\gt 0\thickspace\forall x,y\in X:\ d_X(x,y)\lt\delta\Rightarrow d_Y(f(x),f(y))\lt\varepsilon
