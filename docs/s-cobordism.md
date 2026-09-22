@@ -2,7 +2,7 @@
 
 # 개요
 
-두 닫힌 다양체 $M_0,M_1$ 사이에 $\partial W=M_0\sqcup M_1$ 이고 양쪽 경계로 변형수축되는 다양체 $W$ 가 **h-코보디즘**이다. 호모토피만 보면 $W$ 는 원기둥 $M_0\times[0,1]$ 과 구별되지 않는다. $W$ 가 실제로 원기둥인지를 다음 정리가 판정한다.
+두 닫힌 [다양체](manifolds.md) $M_0,M_1$ 사이에 $\partial W=M_0\sqcup M_1$ 이고 양쪽 경계로 변형수축되는 다양체 $W$ 가 **h-코보디즘**이다. 호모토피만 보면 $W$ 는 원기둥 $M_0\times[0,1]$ 과 구별되지 않는다. $W$ 가 실제로 원기둥인지를 다음 정리가 판정한다.
 
 > **s-코보디즘 정리 (Barden–Mazur–Stallings).** $\dim W\ge6$ 이면, h-코보디즘 $W$ 가 $M_0\times[0,1]$ 과 미분동형일 필요충분조건은 [Whitehead 비틀림](reidemeister-torsion.md) $\tau(W,M_0)\in\mathrm{Wh}(\pi_1M_0)$ 이 0 인 것이다.
 

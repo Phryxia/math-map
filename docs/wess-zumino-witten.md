@@ -17,7 +17,7 @@ $$
 | Wilson 선의 라벨 | ↔ | 레벨 $k$ 적분가능 표현 |
 | 선을 합치는 규칙 | ↔ | 융합 규칙 |
 
-[Lie 대수](lie-algebras.md) $\mathfrak g$ 의 기약표현은 무한히 많지만 레벨을 $k$ 로 고정하면 유한개만 남는다. 그 유한성 덕분에 [모듈러 텐서범주](modular-tensor-categories.md)가 되고 3 다양체 불변량이 유한합으로 계산된다.
+[Lie 대수](lie-algebras.md) $\mathfrak g$ 의 기약표현은 무한히 많지만 레벨을 $k$ 로 고정하면 유한개만 남는다. 그 유한성 덕분에 [모듈러 텐서범주](modular-tensor-categories.md)가 되고 3 [다양체](manifolds.md) 불변량이 유한합으로 계산된다.
 
 # 직관
 

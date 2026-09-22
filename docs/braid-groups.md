@@ -140,7 +140,7 @@ $B_n$ 의 낱말 문제는 Garside 구조, 곧 양의 땋임 반군과 기본 �
 
 ## Yang–Baxter 방정식
 
-$\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ 는 Yang–Baxter 방정식의 군론적 형태다. 땋임군의 표현은 적분가능 격자모형의 전달행렬, 양자군의 $R$ 행렬, 등각장론의 융합 규칙에서 같은 모양으로 나타난다. [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)은 양자군의 표현범주 하나에서 링크와 3 다양체 불변량을 동시에 뽑아낸다.
+$\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ 는 Yang–Baxter 방정식의 군론적 형태다. 땋임군의 표현은 적분가능 격자모형의 전달행렬, 양자군의 $R$ 행렬, 등각장론의 융합 규칙에서 같은 모양으로 나타난다. [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)은 양자군의 표현범주 하나에서 링크와 3 [다양체](manifolds.md) 불변량을 동시에 뽑아낸다.
 
 # 활용
 

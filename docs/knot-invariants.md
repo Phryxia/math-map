@@ -148,7 +148,7 @@ $V\ne1$ 이므로 삼엽매듭은 풀린 매듭이 아니고, $V(t)\ne V(t^{-1})
 - **Tait 추측**: 교대 매듭의 기약 도식은 교차수가 최소이고, 같은 매듭의 두 기약 교대 도식은 비틀림수가 같다. Kauffman, Murasugi, Thistlethwaite 가 Jones 다항식의 지수 폭 논법으로 증명했다.
 - **DNA 위상학**: 고리형 DNA 의 얽힘과 초나선을 재조합 효소가 어떻게 바꾸는지를 매듭과 tangle 의 언어로 기술한다. 전자현미경 사진에서 읽은 매듭형이 효소의 작용 기작을 판별한다.
 - **양자계산**: 준위 $5$ 에서 Jones 다항식을 근사하는 문제가 BQP(bounded-error quantum polynomial time) 완전이고, 위상적 양자계산 모형은 아예 애니온을 땋아 이 값을 계산하는 기계로 설계된다.
-- **3 차원 다양체 불변량**: Witten–Reshetikhin–Turaev 불변량은 매듭 위 수술로 얻은 3 차원 다양체에 수를 붙인다. 그 재료가 [모듈러 텐서범주](modular-tensor-categories.md)이고, 매듭 다항식은 그 이론의 색칠된 고리 하나에 해당한다.
+- **3 차원 [다양체](manifolds.md) 불변량**: Witten–Reshetikhin–Turaev 불변량은 매듭 위 수술로 얻은 3 차원 다양체에 수를 붙인다. 그 재료가 [모듈러 텐서범주](modular-tensor-categories.md)이고, 매듭 다항식은 그 이론의 색칠된 고리 하나에 해당한다.
 
 [^1]: V. F. R. Jones, *A polynomial invariant for knots via von Neumann algebras*, Bull. AMS 12 (1985). 원전.
 [^2]: L. H. Kauffman, *State models and the Jones polynomial*, Topology 26 (1987). 괄호를 통한 초등적 재구성.

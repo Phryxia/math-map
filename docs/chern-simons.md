@@ -2,7 +2,7 @@
 
 # 개요
 
-Chern–Simons 작용[^1]은 3 차원 다양체 위에서 계량 없이 정의되는 접속의 범함수다.
+Chern–Simons 작용[^1]은 3 차원 [다양체](manifolds.md) 위에서 계량 없이 정의되는 접속의 범함수다.
 
 $$
 \mathrm{CS}(A)=\frac1{8\pi^2}\int_M\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)

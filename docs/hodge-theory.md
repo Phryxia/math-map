@@ -12,7 +12,7 @@ Hodge 정리는 구멍의 개수라는 위상 불변량과 타원형 편미분�
 
 ## 류 안의 최소 노름 형식
 
-콤팩트 다양체 위의 $k$ 형식들에 $L^2$ 내적이 있다고 하자. 코호몰로지류 $[\omega]$ 안에서 노름 $\Vert\omega+d\eta\Vert$ 를 최소화하는 문제는 유한차원 최소제곱과 같은 그림이다. 아핀 부분공간 $\omega+d\Omega^{k-1}$ 에 원점에서 수선의 발을 내리는 것이고, 최소점은 $d\Omega^{k-1}$ 에 수직인 점이다. 수직 조건은 모든 $\eta$ 에 대해 $\langle\omega,d\eta\rangle=0$ 이고, $d$ 의 딸림작용소를 $\delta$ 라 하면 $\delta\omega=0$ 이다.
+콤팩트 [다양체](manifolds.md) 위의 $k$ 형식들에 $L^2$ 내적이 있다고 하자. 코호몰로지류 $[\omega]$ 안에서 노름 $\Vert\omega+d\eta\Vert$ 를 최소화하는 문제는 유한차원 최소제곱과 같은 그림이다. 아핀 부분공간 $\omega+d\Omega^{k-1}$ 에 원점에서 수선의 발을 내리는 것이고, 최소점은 $d\Omega^{k-1}$ 에 수직인 점이다. 수직 조건은 모든 $\eta$ 에 대해 $\langle\omega,d\eta\rangle=0$ 이고, $d$ 의 딸림작용소를 $\delta$ 라 하면 $\delta\omega=0$ 이다.
 
 닫힘형식이면서 $\delta$ 로도 죽는 형식이 최소점이고, 두 조건이 $\Delta\omega=0$ 과 같다.
 

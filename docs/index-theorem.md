@@ -2,7 +2,7 @@
 
 # 개요
 
-$D$ 가 콤팩트 다양체 위의 타원 미분작용소면 해공간이 유한차원이므로 정수 하나가 정의된다.
+$D$ 가 콤팩트 [다양체](manifolds.md) 위의 타원 미분작용소면 해공간이 유한차원이므로 정수 하나가 정의된다.
 
 $$
 \mathrm{ind}(D)=\dim\ker D-\dim\mathrm{coker}\thinspace D

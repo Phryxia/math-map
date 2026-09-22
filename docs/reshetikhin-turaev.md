@@ -2,7 +2,7 @@
 
 # 개요
 
-**Reshetikhin–Turaev 구성**은 [모듈러 텐서범주](modular-tensor-categories.md) 하나를 입력으로 받아 3 차원 위상 불변량을 내놓는다. 출력은 둘이다. 닫힌 유향 3 차원 다양체 $M$ 에 붙는 수 $\tau(M)\in\mathbb C$ 와, $M$ 안에 놓인 라벨 붙은 링크에 붙는 수다. MTC(modular tensor category)와 3 차원 TQFT(topological quantum field theory)의 대응 가운데 대수에서 위상으로 가는 방향이 이 구성이다.
+**Reshetikhin–Turaev 구성**은 [모듈러 텐서범주](modular-tensor-categories.md) 하나를 입력으로 받아 3 차원 위상 불변량을 내놓는다. 출력은 둘이다. 닫힌 유향 3 차원 [다양체](manifolds.md) $M$ 에 붙는 수 $\tau(M)\in\mathbb C$ 와, $M$ 안에 놓인 라벨 붙은 링크에 붙는 수다. MTC(modular tensor category)와 3 차원 TQFT(topological quantum field theory)의 대응 가운데 대수에서 위상으로 가는 방향이 이 구성이다.
 
 구성의 요지는 [매듭 불변량](knot-invariants.md)에서 Jones 다항식을 Kauffman 괄호로 만드는 절차와 같고, 차원이 하나 높다.
 

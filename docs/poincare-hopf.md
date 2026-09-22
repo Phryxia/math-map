@@ -2,7 +2,7 @@
 
 # 개요
 
-Poincaré–Hopf 정리는 콤팩트 다양체 위 접벡터장의 특이점에 붙는 정수(지표)의 합이 벡터장과 무관하다고 말한다.
+Poincaré–Hopf 정리는 콤팩트 [다양체](manifolds.md) 위 접벡터장의 특이점에 붙는 정수(지표)의 합이 벡터장과 무관하다고 말한다.
 
 $$
 \sum_{p:\thinspace V(p)=0}\mathrm{ind}\_p(V)=\chi(M)
