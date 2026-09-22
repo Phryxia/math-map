@@ -142,7 +142,7 @@ $$
 \Pr[A_i] \le x_i \prod_{j \sim i} (1 - x_j)
 $$
 
-이면 같은 결론이 성립한다. 증명은 $Pr[A_i | ∩\_{j ∈ J} \overline{A_j}] ≤ x_i$ 를 $|J|$ 에 대한 귀납으로 보이는 것이다.
+이면 같은 결론이 성립한다. 증명은 $\Pr\lbrack A_i\mid\bigcap\_{j\in J}\overline{A_j}\rbrack\le x_i$ 를 $\vert J\vert$ 에 대한 귀납으로 보이는 것이다.
 
 **응용 1 ($k\text{-SAT}$ ).** 각 절이 정확히 $k$ 개의 리터럴을 갖고, 각 절이 다른 절과 변수를 공유하는 횟수가 $2^k/(ek)$ 이하인 CNF(conjunctive normal form) 식은 항상 충족 가능하다. 변수를 독립적으로 균등하게 배정하면 절 하나가 거짓일 확률이 $2^{-k}$ 이고 LLL 조건이 위 형태가 된다.
 
