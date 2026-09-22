@@ -134,7 +134,7 @@ $$
 \pi^{-s/2}\Gamma\negthinspace\left(\frac s2\right)\zeta(s)=\int_0^{\infty}\frac{\theta(t)-1}{2}\thinspace t^{s/2-1}dt
 $$
 
-로 쓰고 적분을 $t=1$ 에서 자른 뒤 앞쪽 조각에 $t\mapsto1/t$ 와 $\theta(1/t)=\sqrt t\thinspace\theta(t)$ 를 적용하면 $s\mapsto1-s$ 에 대해 대칭인 표현이 남는다. 이것이 Riemann 의 두 번째 증명이고 대칭의 근원은 Poisson 합이다. [Riemann zeta 함수](riemann-zeta.md)의 해석적 연속과 소수 정리의 증명이 이 함수방정식을 쓴다.
+로 쓰고 적분을 $t=1$ 에서 자른 뒤 앞쪽 조각에 $t\mapsto1/t$ 와 $\theta(1/t)=\sqrt t\thinspace\theta(t)$ 를 적용하면 $s\mapsto1-s$ 에 대해 대칭인 표현이 남는다. 이것이 Riemann 의 두 번째 증명이고 대칭의 근원은 Poisson 합이다. [Riemann zeta 함수](riemann-zeta.md)의 [해석적 연속](analytic-continuation.md)과 소수 정리의 증명이 이 함수방정식을 쓴다.
 
 ## 표본화와 에일리어싱
 

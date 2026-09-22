@@ -176,7 +176,7 @@ $$
 \binom{2n}{n}=\frac{(2n)!}{(n!)^{2}}\sim\frac{4^{n}}{\sqrt{\pi n}}
 $$
 
-Stirling 근사를 세 번 써서 얻는 이 식을 [확률](probability.md)의 중심극한형 계산이 쓴다. $4^{n}$ 이 주도항이고 $\sqrt{n}$ 이 보정인 구조가 대칭 무작위 걷기의 되돌아옴 확률, 이항분포의 최대값, 엔트로피 계산에 나타난다.[^1]
+Stirling 근사를 세 번 써서 얻는 이 식을 [확률](probability.md)의 중심극한형 계산이 쓴다. $4^{n}$ 이 주도항이고 $\sqrt{n}$ 이 보정인 구조가 대칭 [무작위 걷기](random-walks.md)의 되돌아옴 확률, 이항분포의 최대값, 엔트로피 계산에 나타난다.[^1]
 
 [^1]: 표준 참고는 E. Artin, *The Gamma Function* (Bohr–Mollerup 을 중심에 둔 짧은 고전)과 E. T. Whittaker, G. N. Watson, *A Course of Modern Analysis* 12 장. 수치구현은 W. Press 외, *Numerical Recipes* 6.1 절의 Lanczos 근사에 있다.
 

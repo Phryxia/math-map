@@ -99,7 +99,7 @@ $$
 Z(s)=\prod_{\lbrace\gamma\rbrace_{\mathrm{prim}}}\prod_{n=0}^{\infty}\big(1-e^{-(s+n)\ell_\gamma}\big),\qquad \mathrm{Re}(s)\gt 1
 $$
 
-로 정의한다. 측지선이 소수의 자리를, $\ell_\gamma$ 가 $\log p$ 의 자리를 차지한 Euler 곱이다. 대각합 공식은 $Z$ 가 $\mathbb C$ 전체로 해석적 연속되고 함수방정식을 가짐을 준다.
+로 정의한다. 측지선이 소수의 자리를, $\ell_\gamma$ 가 $\log p$ 의 자리를 차지한 Euler 곱이다. 대각합 공식은 $Z$ 가 $\mathbb C$ 전체로 [해석적 연속](analytic-continuation.md)되고 함수방정식을 가짐을 준다.
 
 # 성질
 

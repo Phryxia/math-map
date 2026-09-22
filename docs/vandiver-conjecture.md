@@ -24,7 +24,7 @@ $$
 
 $\mathbb Q(\mu_p)$ 는 총허수체이고 복소켤레 $J$ 가 Galois 군의 중심에 있는 위수 2 원소다. $p$ 가 홀수이므로 $\mathbb Z_p[J]$ 에서 $\frac{1\pm J}2$ 가 멱등원이 되어 모든 $\mathbb Z_p[\Delta]$ 가군이 $\pm$ 로 쪼개진다.
 
-$-$ 쪽은 허수 방향이고 $+$ 쪽은 실부분체의 산술이다. 단수는 실부분체에 거의 다 들어 있어($E=\mu\cdot E^{+}$ 에 가깝다) 단수가 만드는 제약이 $+$ 쪽에만 걸리고, Gauss 합과 [Stickelberger](stickelberger.md) 원소는 $-$ 쪽만 본다.
+$-$ 쪽은 허수 방향이고 $+$ 쪽은 실부분체의 산술이다. 단수는 실부분체에 거의 다 들어 있어($E=\mu\cdot E^{+}$ 에 가깝다) 단수가 만드는 제약이 $+$ 쪽에만 걸리고, [Gauss 합](gauss-sums.md)과 [Stickelberger](stickelberger.md) 원소는 $-$ 쪽만 본다.
 
 | 쪽 | 통제하는 대상 | 도구 | 결과 |
 |---|---|---|---|

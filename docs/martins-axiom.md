@@ -80,7 +80,7 @@ $\kappa$ 개의 실수 $\lbrace x_\alpha : \alpha \lt \kappa\rbrace$ 를 잡고 
 
 Suslin 나무는 가산 반사슬과 가산 사슬만 갖는 높이 $\omega_1$ 의 나무다. 그런 나무가 있으면 그것을 거꾸로 세운 순서가 ccc 를 만족하고, 높이 $\alpha$ 이상의 마디들의 모임이 $\alpha \lt \omega_1$ 마다 조밀집합이 된다. $\mathrm{MA}(\aleph_1)$ 을 쓰면 이 $\aleph_1$ 개의 조밀집합을 만나는 필터가 나오고, 그 필터는 나무 안의 길이 $\omega_1$ 인 사슬이므로 가산 사슬 조건에 어긋난다.
 
-이 정리와 구성가능 우주에서 Suslin 나무를 짓는 Jensen 의 구성을 합치면, 조밀하고 끝점이 없으며 분리 가능성 대신 ccc 만 만족하는 완비 선형순서가 실직선과 동형인가 하는 [Suslin 가설](suslin-problem.md)이 ZFC 와 독립임이 나온다.
+이 정리와 [구성가능 우주](constructible-universe.md)에서 Suslin 나무를 짓는 Jensen 의 구성을 합치면, 조밀하고 끝점이 없으며 분리 가능성 대신 ccc 만 만족하는 완비 선형순서가 실직선과 동형인가 하는 [Suslin 가설](suslin-problem.md)이 ZFC 와 독립임이 나온다.
 
 # 활용
 

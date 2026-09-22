@@ -183,7 +183,7 @@ $$
 \psi_K\big((x_v)\_v\big)=\prod_v\mathrm{Art}\_{K_v}(x_v)
 $$
 
-거의 모든 자리에서 $x_v\in\mathcal O_v^\times$ 이고 그 자리가 비분기이므로 곱이 유한하다. 대역 상호법칙은 이 곱이 $K^\times$ 의 대각선 원소에서 자명하다는 진술, 곧 $\psi_K$ 가 이델류군 $K^\times\backslash\mathbb A_K^\times$ 에서 정의된다는 진술이다. 이차체로 내리면 $\prod_v|x|\_v=1$ 과 같은 모양의 곱 공식이 되고, 이차 상호법칙의 Hilbert 기호 형태가 이 진술이다.
+거의 모든 자리에서 $x_v\in\mathcal O_v^\times$ 이고 그 자리가 비분기이므로 곱이 유한하다. 대역 상호법칙은 이 곱이 $K^\times$ 의 대각선 원소에서 자명하다는 진술, 곧 $\psi_K$ 가 이델류군 $K^\times\backslash\mathbb A_K^\times$ 에서 정의된다는 진술이다. 이차체로 내리면 $\prod_v|x|\_v=1$ 과 같은 모양의 곱 공식이 되고, [이차 상호법칙](quadratic-reciprocity.md)의 Hilbert 기호 형태가 이 진술이다.
 
 증명은 국소에서 대역으로 간다. 국소 유체론을 Galois 코호몰로지로 세운 뒤($H^2(\mathrm{Gal}(L/K),L^\times)\cong\frac1{[L:K]}\mathbb Z/\mathbb Z$ 를 계산한다) 그 위에서 대역 정리를 얻는다. Lubin–Tate 는 그 국소 단계를 코호몰로지 없이 명시적으로 해내는 길이다.
 
@@ -208,7 +208,7 @@ $$
 ## 도구로서의 쓰임
 
 - **Galois 표현의 국소 조건.** $\mathrm{Gal}(\bar K_v/K_v)$ 의 표현에서 아벨 부분은 $K_v^\times$ 의 지표로 번역된다. 대역 [Galois 표현](galois-representations.md)의 도체와 $L$ 인자를 자리마다 계산하는 근거다.
-- **국소 $\varepsilon$ 인자.** 자기동형 $L$ 함수의 함수방정식에 나오는 근 수가 분기 지표의 Gauss 합으로 주어지고, 그 계산이 분기 여과 위에서 이루어진다.
+- **국소 $\varepsilon$ 인자.** 자기동형 $L$ 함수의 함수방정식에 나오는 근 수가 분기 지표의 [Gauss 합](gauss-sums.md)으로 주어지고, 그 계산이 분기 여과 위에서 이루어진다.
 - **$p$ 진 Hodge 이론.** $K_\pi$ 를 붙여 만든 탑이 $p$ 진 표현을 $\varphi$ 가군으로 바꾸는 장의 원형이다. Fontaine 의 주기환과 Coleman 의 노름 사상이 Lubin–Tate 탑 위에서 세워진다.
 - **국소 Langlands 대응.** $\mathrm{GL}\_1$ 의 국소 Langlands 대응이 국소 상호법칙이다. $\mathrm{GL}\_n$ 으로 올린 진술을 Harris–Taylor 와 Henniart 가 증명했고, [Langlands 강령](langlands-program.md)의 국소 성분을 이룬다.
 

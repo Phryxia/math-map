@@ -36,7 +36,7 @@ $\tilde f$ 는 $f(e^{u})e^{cu}$ 의 Fourier 변환이므로 Mellin 변환의 정
 
 ## 수렴 띠
 
-적분 $\int_0^\infty f\thinspace x^{s-1}dx$ 는 $x\to0$ 에서 $f=O(x^{-a})$ 이고 $x\to\infty$ 에서 $f=O(x^{-b})$ 일 때 $a\lt\mathrm{Re}s\lt b$ 에서 수렴한다. Mellin 변환의 정의역은 수직 띠이고 띠의 양 끝을 $f$ 의 양 끝 거동이 정한다. 해석적 연속으로 띠 바깥에서 만나는 극점이 원래 함수의 전개 항에 대응한다.
+적분 $\int_0^\infty f\thinspace x^{s-1}dx$ 는 $x\to0$ 에서 $f=O(x^{-a})$ 이고 $x\to\infty$ 에서 $f=O(x^{-b})$ 일 때 $a\lt\mathrm{Re}s\lt b$ 에서 수렴한다. Mellin 변환의 정의역은 수직 띠이고 띠의 양 끝을 $f$ 의 양 끝 거동이 정한다. [해석적 연속](analytic-continuation.md)으로 띠 바깥에서 만나는 극점이 원래 함수의 전개 항에 대응한다.
 
 ## 극점과 점근항의 대응
 
