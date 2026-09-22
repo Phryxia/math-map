@@ -148,7 +148,7 @@ $Q\ll P$ 가 깨지면 밀도가 존재하지 않는다. 예를 들어 연속분
 ## 통계
 
 - **가설검정**: 우도비 검정통계량과 Wilks 정리(로그우도비의 점근 카이제곱 분포).
-- **Bayes 추론**: 사후분포를 사전분포에 대한 밀도로 쓰면 밀도가 정확히 우도이며, 정규화 상수가 증거(evidence)다. [Bayes 정리](bayes.md)의 측도론적 서술이 측도변환 공식 그 자체다.
+- **[Bayes 추론](bayesian-inference.md)**: 사후분포를 사전분포에 대한 밀도로 쓰면 밀도가 정확히 우도이며, 정규화 상수가 증거(evidence)다. [Bayes 정리](bayes.md)의 측도론적 서술이 측도변환 공식 그 자체다.
 - **정보량**: [KL divergence](kl-divergence.md)는 로그 밀도의 기댓값이고, [Shannon 엔트로피](entropy.md)와 함께 두 측도의 구별 가능성을 정량화한다. 로그 밀도의 [martingale](martingales.md) 구조가 순차검정(sequential probability ratio test, SPRT)의 최적성을 준다.
 
 ## 계산

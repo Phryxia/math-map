@@ -55,7 +55,7 @@ $$
 Az=0 \bmod q,\qquad 0\lt\Vert z\Vert\le\beta
 $$
 
-$m$ 이 충분히 크면 비둘기집 원리로 해가 존재하지만 찾기가 어렵다. LWE 는 암호화에, SIS 는 서명과 해시에 쓰인다.
+$m$ 이 충분히 크면 [비둘기집 원리](pigeonhole-principle.md)로 해가 존재하지만 찾기가 어렵다. LWE 는 암호화에, SIS 는 서명과 해시에 쓰인다.
 
 ## 구조화된 변형
 

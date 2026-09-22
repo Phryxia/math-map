@@ -46,7 +46,7 @@ $$
 
 ## 낮은 차수
 
-- $K_0(R)$ 은 유한생성 사영 $R$ 가군의 동형류가 직합에 대해 만드는 Grothendieck 군이다. $R$ 이 Dedekind 정역이면 $K_0(R)\cong\mathbb Z\oplus\mathrm{Cl}(R)$ 이다.
+- $K_0(R)$ 은 유한생성 사영 $R$ 가군의 동형류가 직합에 대해 만드는 Grothendieck 군이다. $R$ 이 [Dedekind 정역](dedekind-domains.md)이면 $K_0(R)\cong\mathbb Z\oplus\mathrm{Cl}(R)$ 이다.
 - $K_1(R)=\mathrm{GL}(R)/E(R)$ 이다. 가환환이면 $\det$ 이 $R^{\times}$ 로의 분해를 주고, $\mathcal O_F$ 에서는 $K_1=\mathcal O_F^{\times}$ 다.
 - $K_2(R)$ 은 Steinberg 군 $St(R)\to E(R)$ 의 핵이다. 체에서는 Matsumoto 정리로 기호 $\lbrace a,b\rbrace$ 와 관계 $\lbrace a,1-a\rbrace=1$ 만으로 제시된다.
 
