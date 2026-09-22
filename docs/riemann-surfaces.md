@@ -89,7 +89,7 @@ $$
 \lbrace\text{콤팩트 Riemann 곡면}\rbrace\ \leftrightarrow\ \lbrace\mathbb C\text{ 위 비특이 사영곡선}\rbrace\ \leftrightarrow\ \lbrace\mathbb C\text{ 의 초월차수 }1\text{ 확대체}\rbrace
 $$
 
-유리형함수의 존재는 $\bar\partial$ 방정식의 해결이나 Hodge 이론으로 증명되고, 그 결과가 [Riemann–Roch](riemann-roch.md) 정리다.
+유리형함수의 존재는 $\bar\partial$ 방정식의 해결이나 [Hodge 이론](hodge-theory.md)으로 증명되고, 그 결과가 [Riemann–Roch](riemann-roch.md) 정리다.
 
 ## Riemann–Hurwitz 공식
 

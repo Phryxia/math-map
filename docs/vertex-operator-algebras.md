@@ -152,7 +152,7 @@ Schellekens 는 $c=24$ 인 홀로모픽 VOA 의 무게 1 Lie 대수가 71 개의
 # 활용
 
 - **괴물 달빛.** $V^\natural$ 은 Leech 격자 VOA 의 $\mathbb Z/2$ 궤도체이고 $\mathrm{Aut}(V^\natural)=\mathbb M$ 이다. 지표가 $j-744$ 이므로 $\mathbb M$ 의 등급 표현이 된다. Borcherds 의 증명은 $V^\natural$ 에 쌍곡격자 VOA 를 텐서해 무한차원 Lie 대수를 만드는 데서 출발한다.
-- **등각장론과 위상적 장론.** VOA 는 2 차원 등각장론의 손지기(chiral) 부분을 정의한다. 유리 VOA 의 가군 [범주](category.md)는 [모듈러 텐서범주](modular-tensor-categories.md)이고, 그것이 3 차원 Chern–Simons 이론과 매듭 불변량을 준다.
+- **등각장론과 위상적 장론.** VOA 는 2 차원 등각장론의 손지기(chiral) 부분을 정의한다. 유리 VOA 의 가군 [범주](category.md)는 [모듈러 텐서범주](modular-tensor-categories.md)이고, 그것이 3 차원 Chern–Simons 이론과 [매듭 불변량](knot-invariants.md)을 준다.
 - **W-대수.** Virasoro 대수를 고차 스핀 장으로 확장한 VOA 들이다. Drinfeld–Sokolov 축소로 affine VOA 에서 만들어지고 기하학적 Langlands 의 국소 이론에 쓰인다.
 - **손지기 대수와 인수분해 대수.** Beilinson–Drinfeld 가 VOA 를 대수곡선 위의 층으로 재정식화했다. 좌표에 의존하지 않는 정의라 기하학적 Langlands 로 이어진다.
 - **4 차원 판본.** 4 차원 $\mathcal N=2$ 초등각 이론에 VOA 를 대응시키는 구성이 2013 년 이후 연구되고 있다.

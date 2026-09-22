@@ -17,7 +17,7 @@ $$
 =\prod_{v}\delta_v(n)
 $$
 
-Weil 은 이를 표현론적 등식으로 다시 읽었다. [Weil 표현](weil-representation.md)에서 만든 theta 급수를 직교군 방향으로 적분하면 [Eisenstein 급수](eisenstein-series.md)가 나온다.
+Weil 은 이를 표현론적 등식으로 다시 읽었다. [Weil 표현](weil-representation.md)에서 만든 [theta 급수](theta-series.md)를 직교군 방향으로 적분하면 [Eisenstein 급수](eisenstein-series.md)가 나온다.
 
 $$
 \int_{O(V)(F)\backslash O(V)(\mathbb A)}\Theta_\varphi(g,h)\thinspace dh\ =\ E(g,\varphi)

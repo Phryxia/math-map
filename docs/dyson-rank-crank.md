@@ -114,7 +114,7 @@ $$
 
 여기서 $(a;q)\_n=\prod_{j=0}^{n-1}(1-aq^j)$ 이고, $z=1$ 에서 둘 다 $\sum p(n)q^n$ 이 된다.
 
-$R(-1;q)$ 는 Ramanujan 의 세 번째 차수 mock theta 함수 $f(q)$ 다. 일반적으로 $z$ 가 $1$ 의 $k$ 제곱근이면 $R(z;q)$ 가 무게 $1/2$ 의 mock 모듈러 형식이고 shadow 는 $k$ 에 따른 theta 급수다.
+$R(-1;q)$ 는 Ramanujan 의 세 번째 차수 mock theta 함수 $f(q)$ 다. 일반적으로 $z$ 가 $1$ 의 $k$ 제곱근이면 $R(z;q)$ 가 무게 $1/2$ 의 mock 모듈러 형식이고 shadow 는 $k$ 에 따른 [theta 급수](theta-series.md)다.
 
 # 성질
 

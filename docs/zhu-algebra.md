@@ -8,7 +8,7 @@ $$
 \mathrm{ch}\_M(\tau)=\mathrm{tr}\_Mq^{L_0-c/24},\qquad q=e^{2\pi i\tau}
 $$
 
-정의상 이것은 등급 차원의 생성함수이고 $q$ 의 형식급수다. 그런데 알려진 예마다 모듈러 성질을 갖는다. 격자 VOA(vertex operator algebra) 에서 theta 급수를 $\eta$ 로 나눈 꼴이 나오고, Virasoro 최소모형에서 Rocha-Caridi 공식이 나오고, [괴물 달빛](monstrous-moonshine.md)에서는 $j-744$ 가 나온다. Zhu 는 1996 년에 이것이 정리임을 증명했다.
+정의상 이것은 등급 차원의 생성함수이고 $q$ 의 형식급수다. 그런데 알려진 예마다 모듈러 성질을 갖는다. 격자 VOA(vertex operator algebra) 에서 [theta 급수](theta-series.md)를 $\eta$ 로 나눈 꼴이 나오고, Virasoro 최소모형에서 Rocha-Caridi 공식이 나오고, [괴물 달빛](monstrous-moonshine.md)에서는 $j-744$ 가 나온다. Zhu 는 1996 년에 이것이 정리임을 증명했다.
 
 > $V$ 가 $C_2$ 여유한이고 유리적이면 기약가군은 유한개이고 지표들이 상반평면에서 수렴하며, 그 유한차원 span 위에서 $\mathrm{SL}\_2(\mathbb Z)$ 가 작용한다.
 
@@ -118,7 +118,7 @@ $$
 N_{ij}^k=\sum_m\frac{S_{im}S_{jm}\overline{S_{km}}}{S_{0m}}
 $$
 
-대수의 표현론인 왼쪽이 해석적 변환 행렬인 오른쪽으로 계산된다. 이 등식을 진술하려면 지표의 모듈러성이 먼저 있어야 한다. Huang 이 강유리 VOA 에 대해 증명했고, 3 차원 위상적 장론과 매듭 불변량으로 이어진다.
+대수의 표현론인 왼쪽이 해석적 변환 행렬인 오른쪽으로 계산된다. 이 등식을 진술하려면 지표의 모듈러성이 먼저 있어야 한다. Huang 이 강유리 VOA 에 대해 증명했고, 3 차원 위상적 장론과 [매듭 불변량](knot-invariants.md)으로 이어진다.
 
 ## 등각장론의 분류
 

@@ -77,7 +77,7 @@ $\delta=n$ 이 작은 정수이고 $k$ 가 크면 반단순성이 깨진다. 이
 
 ## Temperley–Lieb 대수
 
-도형에서 선이 교차하지 않는 것만 남기면 **Temperley–Lieb 대수** $TL_k(\delta)$ 가 된다. $B_k(\delta)$ 의 몫이고 차원이 Catalan 수 $C_k$ 다. $\mathrm{SL}\_2$ 의 텐서 [범주](category.md)와 매듭 불변량에 쓰이는 대수가 여기서 갈라진다.
+도형에서 선이 교차하지 않는 것만 남기면 **Temperley–Lieb 대수** $TL_k(\delta)$ 가 된다. $B_k(\delta)$ 의 몫이고 차원이 Catalan 수 $C_k$ 다. $\mathrm{SL}\_2$ 의 텐서 [범주](category.md)와 [매듭 불변량](knot-invariants.md)에 쓰이는 대수가 여기서 갈라진다.
 
 ## 도형 대수의 가족
 

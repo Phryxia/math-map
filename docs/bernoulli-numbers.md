@@ -158,7 +158,7 @@ $$
 |B_{2n}|=\frac{2\thinspace(2n)!}{(2\pi)^{2n}}\zeta(2n)\ \sim\ 4\sqrt{\pi n}\left(\frac{n}{\pi e}\right)^{2n}
 $$
 
-계승보다 빠르게 자라므로 $B_n$ 을 유리수로 다루는 계산은 금방 한계에 부딪힌다. 실제 계산은 von Staudt–Clausen 으로 분모를 알아낸 뒤 여러 소수를 법으로 분자를 구해 중국인의 나머지 정리로 복원한다.
+계승보다 빠르게 자라므로 $B_n$ 을 유리수로 다루는 계산은 금방 한계에 부딪힌다. 실제 계산은 von Staudt–Clausen 으로 분모를 알아낸 뒤 여러 소수를 법으로 분자를 구해 [중국인의 나머지 정리](chinese-remainder-theorem.md)로 복원한다.
 
 # 활용
 

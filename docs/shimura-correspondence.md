@@ -2,7 +2,7 @@
 
 # 개요
 
-[모듈러 형식](modular-forms.md)의 무게는 보통 정수이지만, theta 급수 $\theta(\tau)=\sum_{n\in\mathbb Z}q^{n^2}$ 의 무게는 변환식에 붙는 제곱근 때문에 $1/2$ 이다.
+[모듈러 형식](modular-forms.md)의 무게는 보통 정수이지만, [theta 급수](theta-series.md) $\theta(\tau)=\sum_{n\in\mathbb Z}q^{n^2}$ 의 무게는 변환식에 붙는 제곱근 때문에 $1/2$ 이다.
 
 $$
 \theta\negthinspace\left(\frac{-1}{4\tau}\right)=\sqrt{-2i\tau}\thinspace\theta(\tau)
