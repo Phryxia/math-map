@@ -155,9 +155,9 @@ Fermat 마지막 정리로 가는 길은 다음과 같다.
 
 Wiles 가 메운 칸은 Frey 곡선이 모듈러라는 부분이다. 그 증명은 변형환과 Hecke 대수의 동형 $R=T$ 를 세우는 방식이고 모듈러성 올림 정리의 시작이 되었다.
 
-## [Sato–Tate 분포](sato-tate.md)
+## Sato–Tate 분포
 
-모듈러성은 $a_p$ 의 값을 하나씩 주지만 분포는 주지 않는다. Hasse 정리의 $|a_p|\le2\sqrt p$ 에서 $a_p=2\sqrt p\cos\theta_p$ 로 쓰고, 복소곱셈이 없는 $E$ 에서 $\theta_p$ 의 분포를 묻는 것이 Sato–Tate 추측이다.
+모듈러성은 $a_p$ 의 값을 하나씩 주지만 분포는 주지 않는다. Hasse 정리의 $|a_p|\le2\sqrt p$ 에서 $a_p=2\sqrt p\cos\theta_p$ 로 쓰고, 복소곱셈이 없는 $E$ 에서 $\theta_p$ 의 분포를 묻는 것이 [Sato–Tate 추측](sato-tate.md)이다.
 
 $$
 \mu_{ST}=\frac2\pi\sin^2\theta\thinspace d\theta,\qquad \theta\in[0,\pi]

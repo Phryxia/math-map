@@ -161,7 +161,7 @@ $$
 
 차수의 상한은 $\dim G/B=|\Phi^+|=3$ 이고 $\lambda=-2\rho$ 에서 도달한다. $\mathcal L_{-2\rho}$ 가 $G/B$ 의 표준다발이고 $H^3(G/B,K)\cong\mathbb C$ 는 Serre 쌍대성이 주는 값이므로, Bott 규칙이 쌍대성과 맞는다.
 
-## [borel-weil-bott]
+## 표현론과 열거기하
 
 - **표현의 실현.** 분류된 $V_\lambda$ 를 함수공간으로 얻는다. 물리에서 스핀 $j$ 표현을 $\mathbb P^1$ 위 $\mathcal O(2j)$ 의 단면으로 보는 것이 $\mathrm{SU}(2)$ 판본이다.
 - **Schubert 계산.** $G/P$ 의 코호몰로지환에서 Schubert 류의 곱이 고전 열거기하의 문제를 푼다.
