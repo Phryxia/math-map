@@ -12,7 +12,7 @@ $$
 
 $\mathbb Q_p$ 의 정수환 $\mathbb Z_p$ 는 $\mathbb Z/p^n\mathbb Z$ 의 역극한이다. [합동 산술](modular-arithmetic.md)에서 법을 $p,p^2,p^3,\dots$ 로 올려 가며 쌓은 정보가 $p$ 진수이고, 법 $p^n$ 에서 풀린다는 무한히 많은 조건이 한 체의 한 방정식으로 합쳐지며 Hensel 보조정리가 그 해를 한 자리씩 올린다.
 
-방정식의 유리수 해를 찾을 때 모든 $\mathbb Q_v$ 에서 먼저 풀어 보는 국소-대역 전략이 여기서 나오고, 유체론과 Langlands 강령이 아델 위에서 서술되는 것도 같은 이유다.
+방정식의 유리수 해를 찾을 때 모든 $\mathbb Q_v$ 에서 먼저 풀어 보는 국소-대역 전략이 여기서 나오고, 유체론과 [Langlands 강령](langlands-program.md)이 아델 위에서 서술되는 것도 같은 이유다.
 
 # 직관
 

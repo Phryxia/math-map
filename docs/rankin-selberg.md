@@ -8,7 +8,7 @@ $$
 L(s,\pi\times\pi'),\qquad \pi \text{ 는 } \mathrm{GL}\_n,\quad \pi' \text{ 는 } \mathrm{GL}\_m
 $$
 
-에는 그런 벡터공간이 없다. 차수가 $nm$ 인 이 $L$ 함수는 Langlands 강령에서 자주 쓰이지만 정의만으로는 해석적 성질이 나오지 않는다.
+에는 그런 벡터공간이 없다. 차수가 $nm$ 인 이 $L$ 함수는 [Langlands 강령](langlands-program.md)에서 자주 쓰이지만 정의만으로는 해석적 성질이 나오지 않는다.
 
 Rankin 과 Selberg 가 1939–40 년에 각각 찾은 방법은 두 첨점형식의 곱에 **Eisenstein 급수**를 곱해 적분한다.
 

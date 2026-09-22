@@ -16,7 +16,7 @@ $$
 m(\pi)=\bigl|\lbrace\text{국소 지표의 곱이 }\psi\text{ 의 지표와 맞는 경우}\rbrace\bigr|
 $$
 
-Langlands 강령이 어떤 표현이 존재하는지를 예측한다면 Arthur 의 분류는 몇 개 있는지까지 답한다.
+[Langlands 강령](langlands-program.md)이 어떤 표현이 존재하는지를 예측한다면 Arthur 의 분류는 몇 개 있는지까지 답한다.
 
 # 직관
 

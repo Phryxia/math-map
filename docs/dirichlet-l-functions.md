@@ -6,7 +6,7 @@
 
 Dirichlet 은 1837 년에 $\gcd(a,q)=1$ 이면 $a \bmod q$ 인 소수가 무한히 많음을 증명했다. 전략은 zeta 함수와 같이 소수의 정보를 담은 해석적 함수를 만들고 $s=1$ 근처의 행동을 읽는 것이다. $\zeta$ 는 모든 소수를 똑같이 취급하므로 잉여류를 구별하지 못한다.
 
-잉여류를 골라내는 필터가 Dirichlet 지표이고, 지표를 붙여 만든 급수가 $L$ 함수다. 지표는 $(\mathbb Z/q\mathbb Z)^\times$ 라는 유한 아벨군의 [기약 표현의 지표](group-representations.md)이며, 유한군의 표현론이 소수의 분포를 결정하는 첫 사례다. 같은 구도가 Artin $L$ 함수와 Langlands 강령으로 이어진다.
+잉여류를 골라내는 필터가 Dirichlet 지표이고, 지표를 붙여 만든 급수가 $L$ 함수다. 지표는 $(\mathbb Z/q\mathbb Z)^\times$ 라는 유한 아벨군의 [기약 표현의 지표](group-representations.md)이며, 유한군의 표현론이 소수의 분포를 결정하는 첫 사례다. 같은 구도가 Artin $L$ 함수와 [Langlands 강령](langlands-program.md)으로 이어진다.
 
 # 직관
 

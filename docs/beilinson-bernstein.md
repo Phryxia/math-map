@@ -99,7 +99,7 @@ Soergel 은 편향층의 초코호몰로지가 불변식환 위의 쌍가군이 
 
 ## 기하적 Langlands
 
-아핀 판본의 국소화가 임계 준위 $\widehat{\mathfrak g}$ 가군과 오퍼(oper) 사이의 대응을 준다. 이 대응이 기하학적 Langlands 강령의 자기동형 쪽을 기술하는 언어가 된다.[^1]
+아핀 판본의 국소화가 임계 준위 $\widehat{\mathfrak g}$ 가군과 오퍼(oper) 사이의 대응을 준다. 이 대응이 [기하학적 Langlands 강령](geometric-langlands.md)의 자기동형 쪽을 기술하는 언어가 된다.[^1]
 
 [^1]: A. Beĭlinson, J. Bernstein, *Localisation de g-modules* (C. R. Acad. Sci. Paris **292**, 1981), 15–18. 독립적 증명은 J.-L. Brylinski, M. Kashiwara, *Kazhdan-Lusztig conjecture and holonomic systems*, Invent. Math. **64** (1981). 교과서 서술은 R. Hotta, K. Takeuchi, T. Tanisaki, *D-Modules, Perverse Sheaves, and Representation Theory* (2008) 11–12장. 표수 $p$ 판본은 R. Bezrukavnikov, I. Mirković, D. Rumynin, *Localization of modules for a semisimple Lie algebra in prime characteristic*, Ann. of Math. **167** (2008).
 
