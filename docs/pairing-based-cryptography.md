@@ -157,7 +157,7 @@ zk-SNARK(zero-knowledge succinct non-interactive argument of knowledge)의 검�
 
 ## 양자 내성
 
-쌍의 안전성은 이산로그에 의존하므로 Shor 알고리즘 앞에서 무너진다. [후양자 암호](post-quantum-cryptography.md)로의 전환에서 쌍 기반 구성은 전부 대체 대상이고, 격자 기반 신원 기반 암호와 해시 기반 서명이 후보다. 집계 서명과 상수 크기 증명을 격자에서 같은 효율로 재현하는 방법은 아직 없다.
+쌍의 안전성은 이산로그에 의존하므로 Shor 알고리즘 앞에서 무너진다. [후양자 암호](post-quantum-cryptography.md)로의 전환에서 쌍 기반 구성은 전부 대체 대상이고, [격자](lattices.md) 기반 신원 기반 암호와 해시 기반 서명이 후보다. 집계 서명과 상수 크기 증명을 격자에서 같은 효율로 재현하는 방법은 아직 없다.
 
 # 연관 문서
 
