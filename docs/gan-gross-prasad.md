@@ -59,7 +59,7 @@ Whittaker 모형은 $G_n$ 이 자명군까지 줄어든 극단이고, 반대쪽 
 
 ## 중심값의 출현
 
-주기 적분을 펼치면 자리마다의 국소 적분의 곱이 되고, 비분기 자리의 국소 적분은 [Satake 매개변수](satake-isomorphism.md)로 계산되어 $L$ 함수의 국소 인자를 준다. [Rankin–Selberg 적분](rankin-selberg.md)과 달리 주기 적분에는 Eisenstein 급수가 들어가지 않아 복소 변수 $s$ 를 움직일 자유가 없고, 결과가 함수방정식의 대칭점 $s=1/2$ 의 값으로 고정된다.
+주기 적분을 펼치면 자리마다의 국소 적분의 곱이 되고, 비분기 자리의 국소 적분은 [Satake 매개변수](satake-isomorphism.md)로 계산되어 $L$ 함수의 국소 인자를 준다. [Rankin–Selberg 적분](rankin-selberg.md)과 달리 주기 적분에는 [Eisenstein 급수](eisenstein-series.md)가 들어가지 않아 복소 변수 $s$ 를 움직일 자유가 없고, 결과가 함수방정식의 대칭점 $s=1/2$ 의 값으로 고정된다.
 
 중심값이 0 이면 주기가 사라지고 정보가 도함수로 옮겨간다. 산술 GGP 가 그 경우를 다룬다.
 

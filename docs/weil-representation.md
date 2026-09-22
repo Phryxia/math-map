@@ -139,7 +139,7 @@ $$
 
 ## Siegel–Weil 공식
 
-theta 급수를 $O(V)$ 방향으로 적분하면 Eisenstein 급수가 나온다.
+theta 급수를 $O(V)$ 방향으로 적분하면 [Eisenstein 급수](eisenstein-series.md)가 나온다.
 
 $$
 \int_{O(V)(F)\backslash O(V)(\mathbb A)}\Theta_\varphi(g,h)\thinspace dh

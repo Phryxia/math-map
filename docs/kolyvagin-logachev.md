@@ -6,7 +6,7 @@
 
 > **정리(Kolyvagin).** $E/\mathbb Q$ 가 타원곡선이고 $L(E,1)\ne0$ 이면 $E(\mathbb Q)$ 가 유한하고 $\text{Ш}(E/\mathbb Q)$ 도 유한하다. $L(E,1)=0$ 이고 $L'(E,1)\ne0$ 이면 $\mathrm{rank}E(\mathbb Q)=1$ 이고 Heegner 점이 유한 지표의 부분군을 생성한다.
 
-Kolyvagin–Logachev 는 이것을 [모듈러 형식](modular-forms.md)에서 만들어지는 아벨 다양체 $A_f$ 로 확장해, 차원이 1 보다 커도 $L(f,1)\ne0$ 이면 $A_f(\mathbb Q)$ 가 유한함을 보인다. 이 일반화로 모듈러 곡선의 Jacobian 에서 유리점이 유한한 몫을 만들 수 있다.
+Kolyvagin–Logachev 는 이것을 [모듈러 형식](modular-forms.md)에서 만들어지는 아벨 다양체 $A_f$ 로 확장해, 차원이 1 보다 커도 $L(f,1)\ne0$ 이면 $A_f(\mathbb Q)$ 가 유한함을 보인다. 이 일반화로 [모듈러 곡선](modular-curves.md)의 Jacobian 에서 유리점이 유한한 몫을 만들 수 있다.
 
 그 몫이 **겨냥 몫**이다. $J_0(N)$ 에서 $L(f,1)\ne0$ 인 성분만 남긴 것이므로 Mordell–Weil 군이 유한하고, 모듈러 곡선 위의 점의 개수를 제한한다. [Merel 의 일양 유계성 정리](merel-theorem.md)가 이 제한을 쓴 예다. 해석적 비소멸이 기하적 유한성이 되고, 그 유한성이 산술적 유계를 낳는다.
 

@@ -16,7 +16,7 @@ $$
 
 > **Iwasawa 주추측.** 두 원소가 생성하는 $\Lambda$ 의 아이디얼은 같다.
 
-유수 공식이 "류수 $\times$ 조절자 $=L$ 함수의 값" 이라는 한 층의 등식이라면 주추측은 그 탑 판본이다. Mazur 와 Wiles 가 모듈러 곡선의 Eisenstein 합동으로 먼저 증명했고, Rubin 이 [Euler 계](euler-systems.md)로 더 짧은 두 번째 증명을 주었다.
+유수 공식이 "류수 $\times$ 조절자 $=L$ 함수의 값" 이라는 한 층의 등식이라면 주추측은 그 탑 판본이다. Mazur 와 Wiles 가 [모듈러 곡선](modular-curves.md)의 Eisenstein 합동으로 먼저 증명했고, Rubin 이 [Euler 계](euler-systems.md)로 더 짧은 두 번째 증명을 주었다.
 
 # 직관
 
@@ -160,7 +160,7 @@ $$
 p\mid B_k\quad\Longleftrightarrow\quad A^{(\omega^{1-k})}\ne0
 $$
 
-Herbrand 가 $\Leftarrow$ 를, Ribet 이 $\Rightarrow$ 를 증명했다. Herbrand 쪽은 Stickelberger 원소가 류군을 소멸시킨다는 사실에서 바로 나오고, Ribet 쪽은 Eisenstein 급수와 첨점형식의 합동에서 불분해 확대를 만들어 류군의 원소를 생산해야 한다. 이 이론에서 어려운 방향은 늘 군이 크다는 쪽이다.
+Herbrand 가 $\Leftarrow$ 를, Ribet 이 $\Rightarrow$ 를 증명했다. Herbrand 쪽은 Stickelberger 원소가 류군을 소멸시킨다는 사실에서 바로 나오고, Ribet 쪽은 [Eisenstein 급수](eisenstein-series.md)와 첨점형식의 합동에서 불분해 확대를 만들어 류군의 원소를 생산해야 한다. 이 이론에서 어려운 방향은 늘 군이 크다는 쪽이다.
 
 Mazur–Wiles 는 Ribet 의 방법을 탑 전체로 밀어 올렸고, Rubin 은 군이 작다는 반대 방향을 Euler 계로 잡아 남은 절반을 채웠다.
 

@@ -68,7 +68,7 @@ $$f(z)=A+C\int_0^z\prod_{k=1}^{n}(\zeta-x_k)^{\alpha_k-1}\thinspace d\zeta$$
 
 - [조화함수](harmonic-functions.md): 조화성은 등각사상으로 보존된다. 임의의 단순연결 영역의 Dirichlet 문제를 원판으로 옮겨 Poisson 공식으로 푼다.
 - [Riemann 곡면과 균일화 정리](riemann-surfaces.md): 균일화 정리는 Riemann 사상정리의 곡면판이다. 모든 단순연결 Riemann 곡면은 구면, 평면, 원판 셋 중 하나와 등각동치다.
-- [모듈러 형식](modular-forms.md): 상반평면 위의 $\mathrm{SL}\_2(\mathbb Z)$ 작용이 Möbius 변환이고, 그 몫이 모듈러 곡선이다.
+- [모듈러 형식](modular-forms.md): 상반평면 위의 $\mathrm{SL}\_2(\mathbb Z)$ 작용이 Möbius 변환이고, 그 몫이 [모듈러 곡선](modular-curves.md)이다.
 - [쌍곡 3차원 다양체](hyperbolic-3-manifolds.md): $\widehat{\mathbb C}$ 의 Möbius 변환군이 쌍곡 3차원 공간의 등거리변환군과 같아서, 무한원 구면 위의 등각구조가 다양체의 기하를 결정한다.
 
 [^1]: W. Rudin, *Real and Complex Analysis*, 3rd ed., 14장 (Riemann 사상정리와 경계 거동).

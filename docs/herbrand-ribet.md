@@ -12,7 +12,7 @@ $$
 
 이고, 군의 원소를 실제로 만들어 내야 한다. 소멸자는 비자명한 원소를 생산하지 못한다. Ribet 은 1976 년에 그 원소를 모듈러 형식에서 가져왔다.
 
-무게 $k$ 의 Eisenstein 급수 $E_k$ 의 상수항은 $-B_k/2k$ 다. $p\mid B_k$ 이면 상수항이 $p$ 를 법으로 사라져 $E_k$ 가 첨점형식처럼 보이고, $E_k$ 와 합동인 첨점형식 $f$ 가 존재한다. $f$ 에 붙는 [Galois 표현](galois-representations.md) $\rho_f$ 를 $\bmod p$ 로 줄이면
+무게 $k$ 의 [Eisenstein 급수](eisenstein-series.md) $E_k$ 의 상수항은 $-B_k/2k$ 다. $p\mid B_k$ 이면 상수항이 $p$ 를 법으로 사라져 $E_k$ 가 첨점형식처럼 보이고, $E_k$ 와 합동인 첨점형식 $f$ 가 존재한다. $f$ 에 붙는 [Galois 표현](galois-representations.md) $\rho_f$ 를 $\bmod p$ 로 줄이면
 
 $$
 \bar\rho_f\sim\begin{pmatrix}1&\ast\cr 0&\omega^{k-1}\end{pmatrix}
@@ -148,7 +148,7 @@ $k=p-1$ 이면 $\omega^{k-1}$ 이 자명해져 표현이 $\begin{pmatrix}1&\ast\
 
 Ribet 의 논법은 원소 하나를 만든다. 주추측은 성분의 크기까지 요구하므로 Mazur–Wiles 는 다음을 바꾼다.
 
-- 레벨 1 대신 레벨 $Np^{r}$ 의 모듈러 곡선을 쓰고 탑을 따라 올린다.
+- 레벨 1 대신 레벨 $Np^{r}$ 의 [모듈러 곡선](modular-curves.md)을 쓰고 탑을 따라 올린다.
 - 코사이클 하나 대신 모듈러 곡선의 Jacobian 안에서 Eisenstein 아이디얼로 잘라낸 부분을 통째로 쓴다.
 - 그 결과 $\char35{}A^{(\chi)}$ 가 $L_p$ 의 예측 크기 이상임을 얻고, 반대 부등식은 해석적 유수 공식이 준다.
 

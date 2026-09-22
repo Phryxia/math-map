@@ -227,7 +227,7 @@ $$
 c(\chi)=\prod_{\alpha\gt 0}\frac{1-q^{-1}\chi(\alpha^\vee(\varpi))^{-1}}{1-\chi(\alpha^\vee(\varpi))^{-1}}
 $$
 
-$c$ 인자는 Harish-Chandra 의 $c$ 함수의 $p$ 진 판이고, Eisenstein 급수의 상수항과 국소 얽힘 작용소의 분모에 같은 것이 나온다. $q^{-1}$ 항은 위 $\mathcal S(T(p^a))$ 공식의 $-p^{-1}$ 보정과 같은 뿌리다.
+$c$ 인자는 Harish-Chandra 의 $c$ 함수의 $p$ 진 판이고, [Eisenstein 급수](eisenstein-series.md)의 상수항과 국소 얽힘 작용소의 분모에 같은 것이 나온다. $q^{-1}$ 항은 위 $\mathcal S(T(p^a))$ 공식의 $-p^{-1}$ 보정과 같은 뿌리다.
 
 ## 온도성과 Ramanujan
 

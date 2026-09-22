@@ -19,7 +19,7 @@ $$
 I=\big(T_\ell-1-\ell\ :\ \ell\nmid N\big)\subset\mathbb T
 $$
 
-가 Eisenstein 급수의 고유값을 자른다. $J_0(N)$ 의 $I$ 소멸 부분 $J_0(N)[I]$ 는 첨점의 차이가 생성하는 유한 순환군과 밀접하고, 그 구조를 계산하면 유리점의 존재가 모순으로 이어진다. [Herbrand–Ribet](herbrand-ribet.md) 의 Eisenstein 합동이 표현을 가약으로 만드는 원리가 여기서는 Jacobian 의 산술을 통제한다.
+가 [Eisenstein 급수](eisenstein-series.md)의 고유값을 자른다. $J_0(N)$ 의 $I$ 소멸 부분 $J_0(N)[I]$ 는 첨점의 차이가 생성하는 유한 순환군과 밀접하고, 그 구조를 계산하면 유리점의 존재가 모순으로 이어진다. [Herbrand–Ribet](herbrand-ribet.md) 의 Eisenstein 합동이 표현을 가약으로 만드는 원리가 여기서는 Jacobian 의 산술을 통제한다.
 
 # 직관
 

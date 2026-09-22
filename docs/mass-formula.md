@@ -153,7 +153,7 @@ Eichler 의 질량 공식은 확정 사원수 대수의 좌이념류에 같은 �
 
 ## 가중 질량
 
-$\sum 1/|\mathrm{Aut}L_i|$ 대신 각 격자에 조화 다항식 값을 곱해 더하면 가중 질량이 되고, 이것이 theta 급수의 류 평균이다. Siegel 공식 우변의 Eisenstein 급수 계수가 그 값이며, 질량 공식은 이 가족의 상수항에 해당한다.
+$\sum 1/|\mathrm{Aut}L_i|$ 대신 각 격자에 조화 다항식 값을 곱해 더하면 가중 질량이 되고, 이것이 theta 급수의 류 평균이다. Siegel 공식 우변의 [Eisenstein 급수](eisenstein-series.md) 계수가 그 값이며, 질량 공식은 이 가족의 상수항에 해당한다.
 
 [^1]: 일반 공식과 국소 밀도의 계산 절차는 J. Conway–N. Sloane, *Low-dimensional lattices IV: the mass formula*, Proc. R. Soc. Lond. A 419 (1988). 짝수 유니모듈러 판과 자기동형군 위수 표는 같은 저자의 *Sphere Packings, Lattices and Groups* (3판, 1999) 16 장. 스피너 류와 Eichler 의 정리는 J. Cassels, *Rational Quadratic Forms* (1978) 11 장. Tamagawa 수와의 동치는 A. Weil, *Adeles and Algebraic Groups* (1982). 부호 쪽 질량 공식은 C. Mallows–N. Sloane, *An upper bound for self-dual codes*, Inform. and Control 22 (1973).
 

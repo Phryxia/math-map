@@ -19,7 +19,7 @@ $$
 
 $j$ 함수의 계수가 $j$ 함수에 대한 항등식의 지수로 나타난다.
 
-구성의 장치는 **특이 theta 올림**이다. 약정칙 형식과 theta 급수를 곱해 모듈러 곡선 위에서 적분하면 $f$ 의 극 때문에 발산하고, Harvey–Moore 식으로 정규화하면 특이점을 갖는 유한한 값이 나온다. 특이점이 놓인 자리가 **Heegner 인자**이며 지수를 취하면 무한곱이 나온다.
+구성의 장치는 **특이 theta 올림**이다. 약정칙 형식과 theta 급수를 곱해 [모듈러 곡선](modular-curves.md) 위에서 적분하면 $f$ 의 극 때문에 발산하고, Harvey–Moore 식으로 정규화하면 특이점을 갖는 유한한 값이 나온다. 특이점이 놓인 자리가 **Heegner 인자**이며 지수를 취하면 무한곱이 나온다.
 
 # 직관
 
@@ -117,7 +117,7 @@ $$
 
 ## Kudla 강령
 
-Heegner 인자들의 산술적 교차수가 Eisenstein 급수의 Fourier 계수와 같으리라는 것이 Kudla 의 추측이다. Borcherds 곱은 인자가 주인자가 되는 경우를 다루고, 산술적 판본에서는 $\log\Vert\Psi_f\Vert$ 가 Arakelov 이론의 Green 함수 역할을 한다.
+Heegner 인자들의 산술적 교차수가 [Eisenstein 급수](eisenstein-series.md)의 Fourier 계수와 같으리라는 것이 Kudla 의 추측이다. Borcherds 곱은 인자가 주인자가 되는 경우를 다루고, 산술적 판본에서는 $\log\Vert\Psi_f\Vert$ 가 Arakelov 이론의 Green 함수 역할을 한다.
 
 ## 달빛과 Lie 대수
 

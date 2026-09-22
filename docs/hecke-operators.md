@@ -134,7 +134,7 @@ Ramanujan–Petersson 추측이라 불리던 이 부등식을 Deligne 이 Weil �
 
 ## Eichler–Shimura 관계
 
-Hecke 작용소는 모듈러 곡선 $X_0(N)$ 위의 **대응**으로 실현된다. $X_0(Np)$ 에서 두 사영 $\alpha,\beta\colon X_0(Np)\to X_0(N)$ 을 잡고 $T_p=\beta_\ast\alpha^\ast$ 로 둔다. 이 대응이 Jacobian $J_0(N)$ 의 자기준동형을 유도하고, 표수 $p$ 로 환원하면 Frobenius 와 연결된다.
+Hecke 작용소는 [모듈러 곡선](modular-curves.md) $X_0(N)$ 위의 **대응**으로 실현된다. $X_0(Np)$ 에서 두 사영 $\alpha,\beta\colon X_0(Np)\to X_0(N)$ 을 잡고 $T_p=\beta_\ast\alpha^\ast$ 로 둔다. 이 대응이 Jacobian $J_0(N)$ 의 자기준동형을 유도하고, 표수 $p$ 로 환원하면 Frobenius 와 연결된다.
 
 $$
 T_p\equiv\mathrm{Frob}\_p+p\langle p\rangle\mathrm{Frob}\_p^{\vee}\pmod p

@@ -128,7 +128,7 @@ $$
 
 ## 모듈러성과의 연결
 
-Deligne 은 무게 $k\ge2$ 의 Hecke 고유형식마다 2 차원 $\ell$ 진 표현 $\rho_f$ 를 모듈러 곡선의 에탈 코호몰로지에서 잘라냈다. $\mathrm{tr}\thinspace\rho_f(\mathrm{Frob}\_p)=a_p$ 이고, 계수의 크기 상계인 Ramanujan 추측이 Weil 추측의 Riemann 가설에서 따라온다.
+Deligne 은 무게 $k\ge2$ 의 Hecke 고유형식마다 2 차원 $\ell$ 진 표현 $\rho_f$ 를 [모듈러 곡선](modular-curves.md)의 에탈 코호몰로지에서 잘라냈다. $\mathrm{tr}\thinspace\rho_f(\mathrm{Frob}\_p)=a_p$ 이고, 계수의 크기 상계인 Ramanujan 추측이 Weil 추측의 Riemann 가설에서 따라온다.
 
 주어진 Galois 표현이 어떤 고유형식에서 오는지를 보이는 것이 모듈러성이고, 그 도구가 변형 이론이다. mod $\ell$ 표현 $\bar\rho$ 를 고정하고 그것으로 환원되는 $\ell$ 진 표현들의 보편 변형환 $R$ 을 만든 뒤 모듈러 표현만 모은 Hecke 대수 $T$ 와 비교한다. $R=T$ 를 증명하면 모든 변형이 모듈러이고, 이것이 Wiles 의 전략이다.
 

@@ -138,7 +138,7 @@ $$
 
 가 된다. 오른쪽의 이차 인자가 2 차원 표현의 특성다항식과 같은 모양이다.
 
-Deligne 은 모듈러 곡선의 코호몰로지에서 잘라내는 방식으로, 무게 $k\ge2$ 의 고유형식마다 $\mathrm{tr}\thinspace\rho_f(\mathrm{Frob}\_p)=a_p$ 인 2 차원 $\ell$ 진 Galois 표현이 있음을 증명했다. 자기동형에서 Galois 로 가는 방향이고, 어려운 것은 반대 방향이다.
+Deligne 은 [모듈러 곡선](modular-curves.md)의 코호몰로지에서 잘라내는 방식으로, 무게 $k\ge2$ 의 고유형식마다 $\mathrm{tr}\thinspace\rho_f(\mathrm{Frob}\_p)=a_p$ 인 2 차원 $\ell$ 진 Galois 표현이 있음을 증명했다. 자기동형에서 Galois 로 가는 방향이고, 어려운 것은 반대 방향이다.
 
 ## 모듈러성 정리와 Fermat
 

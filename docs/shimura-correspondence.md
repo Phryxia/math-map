@@ -124,7 +124,7 @@ $m$ 방향이 Hecke 구조, 곧 $f$ 자신을 주고 $D$ 방향이 $f$ 의 이�
 
 ## Cohen–Eisenstein 급수
 
-Cohen 이 만든 무게 $k+1/2$ 의 Eisenstein 급수는 계수가 Hurwitz 류수 $H(k-1,|D|)$ 이고, Shimura 대응으로 무게 $2k$ 의 Eisenstein 급수에 대응한다. 류수가 반정수 무게 형식의 계수로 나타나는 자리이며, Gauss 의 세 제곱수 정리와 [Siegel–Weil 공식](siegel-weil.md)이 만난다.
+Cohen 이 만든 무게 $k+1/2$ 의 [Eisenstein 급수](eisenstein-series.md)는 계수가 Hurwitz 류수 $H(k-1,|D|)$ 이고, Shimura 대응으로 무게 $2k$ 의 Eisenstein 급수에 대응한다. 류수가 반정수 무게 형식의 계수로 나타나는 자리이며, Gauss 의 세 제곱수 정리와 [Siegel–Weil 공식](siegel-weil.md)이 만난다.
 
 # 활용
 
