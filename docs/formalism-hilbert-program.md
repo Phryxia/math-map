@@ -82,7 +82,7 @@ PRA 에 $\varepsilon\_0$ 까지의 초한귀납법을 더한 체계는 PA 의 �
 
 - 증명 보조기와 형식 검증. 형식체계로 환원한다는 발상은 Coq · Lean · Isabelle 같은 체계에서 실제 기술이 되었다. 증명의 정당성이 유한한 규칙 검사로 귀결된다는 Hilbert의 관점이 커널 설계 원리 그대로다.
 - 체계 강도 비교. 어떤 정리를 증명하려면 어떤 공리가 필요한지 묻는 실천적 습관. Goodstein 정리는 PA 에서 증명할 수 없고 $\varepsilon\_0$ 까지의 귀납법을 요구한다.
-- 무모순성의 상대화. 큰 기수 공리를 다룰 때 "ZFC(Zermelo–Fraenkel 집합론에 선택공리를 더한 공리계)가 무모순이면 ZFC + 공리도 무모순"이라는 형태의 상대적 무모순성만 목표로 삼는 관행은 제2정리 이후의 표준이다.
+- 무모순성의 상대화. 큰 기수 공리를 다룰 때 "ZFC(Zermelo–Fraenkel 집합론에 [선택공리](axiom-of-choice.md)를 더한 공리계)가 무모순이면 ZFC + 공리도 무모순"이라는 형태의 상대적 무모순성만 목표로 삼는 관행은 제2정리 이후의 표준이다.
 - 계산 가능성과의 접점. 결정 가능한 증명 술어라는 요구는 [계산 가능성](computability.md)의 언어로 정확히 표현된다. Hilbert의 Entscheidungsproblem이 부정적으로 해결된 것도 같은 맥락이다.
 
 [^1]: Richard Zach, Hilbert's Program, Stanford Encyclopedia of Philosophy, §1–§3 (유한주의, real/ideal 구분, 보존성 목표, Gödel 정리의 영향과 Bernays의 관찰). https://plato.stanford.edu/entries/hilbert-program/

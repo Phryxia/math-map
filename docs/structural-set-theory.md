@@ -2,7 +2,7 @@
 
 # 개요
 
-[ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel 집합론에 선택공리를 더한 것)에서 모든 것은 집합이고 원소도 집합이므로 $2 \in 3$ 같은 물음을 던질 수 있고, 자연수를 어떻게 구현했느냐에 따라 답이 달라진다. [수학적 구조주의](mathematical-structuralism.md)는 이런 물음이 수학의 내용이 아니라고 본다.
+[ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel 집합론에 [선택공리](axiom-of-choice.md)를 더한 것)에서 모든 것은 집합이고 원소도 집합이므로 $2 \in 3$ 같은 물음을 던질 수 있고, 자연수를 어떻게 구현했느냐에 따라 답이 달라진다. [수학적 구조주의](mathematical-structuralism.md)는 이런 물음이 수학의 내용이 아니라고 본다.
 
 구조적 집합론은 그런 물음을 표현할 수 없는 기초를 세우려는 시도다. 집합의 원소가 무엇인지 묻지 않고 집합과 함수와 합성만으로 모든 것을 서술한다. Lawvere 의 **ETCS**(elementary theory of the category of sets)가 대표적이며 [범주](category.md)의 언어로 집합론을 다시 쓴 것이다.
 
