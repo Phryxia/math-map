@@ -42,7 +42,7 @@ $$
 \rho_k(x_1,\dots,x_k) = \det\bigl[K(x_i,x_j)\bigr]
 $$
 
-를 만족하는 핵 $K$ 가 있으면 이 과정이 **결정점과정**이다. $K$ 가 자기수반 작용소이고 $0 \preceq K \preceq I$ 이면 그런 과정이 존재하고 유일하다는 것이 Macchi–Soshnikov 정리다. $K$ 의 고윳값이 1 을 넘으면 어떤 $k$ 에서 행렬식이 음수가 되어 $\rho_k \ge 0$ 이 깨진다.
+를 만족하는 핵 $K$ 가 있으면 이 과정이 **결정점과정**이다. $K$ 가 [자기수반 작용소](bounded-operators.md)이고 $0 \preceq K \preceq I$ 이면 그런 과정이 존재하고 유일하다는 것이 Macchi–Soshnikov 정리다. $K$ 의 고윳값이 1 을 넘으면 어떤 $k$ 에서 행렬식이 음수가 되어 $\rho_k \ge 0$ 이 깨진다.
 
 ## 유한 집합 위의 결정점과정
 

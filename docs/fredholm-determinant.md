@@ -65,7 +65,7 @@ $$
 
 이면 $K$ 가 **자취류**다. 임의의 정규직교기저에 대해 $\sum_i \langle Ke_i, e_i\rangle$ 가 절대수렴하고 기저에 의존하지 않으므로 **자취** $\mathrm{tr}K$ 가 정의된다. 자취류 작용소들은 $\lVert\cdot\rVert_1$ 에 대해 [Banach 공간](banach-spaces.md)을 이루고, 유계 작용소를 곱해도 자취류로 남는 양쪽 아이디얼이다.
 
-Lidskii 의 정리는 자취류 $K$ 에 대해 $\mathrm{tr}K = \sum_i\lambda_i$ 라고 진술한다. 우변은 대수적 중복도를 세어 절대수렴하며, 등식은 $K$ 가 자기수반이 아닐 때도 성립한다.
+Lidskii 의 정리는 자취류 $K$ 에 대해 $\mathrm{tr}K = \sum_i\lambda_i$ 라고 진술한다. 우변은 대수적 중복도를 세어 절대수렴하며, 등식은 $K$ 가 [자기수반](bounded-operators.md)이 아닐 때도 성립한다.
 
 ## Fredholm 행렬식
 

@@ -133,7 +133,7 @@ $$
 \lambda_j\ge\tfrac14\ \Longrightarrow\ Z(s)\ \text{의 영점이 }\mathrm{Re}(s)=\tfrac12\ \text{위에 있다}
 $$
 
-콤팩트 곡면에서는 $\lambda_1\gt 0$ 만으로 예외 영점이 $[0,1]$ 의 실축 위 유한 개뿐임이 나온다. 영점이 자기수반 작용소의 스펙트럼에서 오므로, Hilbert–Pólya 가 $\zeta$ 에 대해 바라던 구조가 $Z$ 에서는 성립한다.
+콤팩트 곡면에서는 $\lambda_1\gt 0$ 만으로 예외 영점이 $[0,1]$ 의 실축 위 유한 개뿐임이 나온다. 영점이 [자기수반 작용소](unbounded-operators.md)의 스펙트럼에서 오므로, Hilbert–Pólya 가 $\zeta$ 에 대해 바라던 구조가 $Z$ 에서는 성립한다.
 
 산술 곡면에서 $\lambda_1\ge\tfrac14$ 인지가 **Selberg 1/4 추측**이고, 증명되지 않았다[^2]. 현재 최선은 $\lambda_1\ge\tfrac{975}{4096}\approx0.238$ 다[^3]. 이 추측은 Ramanujan 추측의 아르키메데스 자리 판본이다.
 
