@@ -8,7 +8,7 @@ $$
 \lambda(\Sigma)=\sum_{\alpha\in R^\ast(\Sigma)}\pm1
 $$
 
-세는 대상이 유한집합이고 각 원소에 $\pm1$ 이 붙으므로 어떤 사슬복체의 Euler 지표의 꼴이다. Floer 가 그 복체를 만들었다. 생성원은 평탄 접속이고 미분은 두 평탄 접속을 잇는 **순간자**(반자기쌍대 접속)의 개수다.
+세는 대상이 유한집합이고 각 원소에 $\pm1$ 이 붙으므로 어떤 사슬복체의 [Euler 지표](euler-characteristic.md)의 꼴이다. Floer 가 그 복체를 만들었다. 생성원은 평탄 접속이고 미분은 두 평탄 접속을 잇는 **순간자**(반자기쌍대 접속)의 개수다.
 
 $$
 \chi\big(HF_\ast(\Sigma)\big)=2\thinspace\lambda(\Sigma)

@@ -90,7 +90,7 @@ $(0,1)$ 전체를 목표로 하면 좌단에서 막히고 좌단을 조금만 �
 
 ## 분류 문제의 전제
 
-[곡면의 분류](classification-of-surfaces.md)는 콤팩트하고 경계가 없는 곡면에 대한 정리다. 콤팩트성이 없으면 무한히 많은 손잡이를 붙인 곡면 같은 대상이 들어와 유한한 불변량으로 분류할 수 없다. Euler 지표가 유한한 값으로 정의되고 삼각분할이 유한 개의 조각으로 끝나는 것이 콤팩트성의 결과다.[^1]
+[곡면의 분류](classification-of-surfaces.md)는 콤팩트하고 경계가 없는 곡면에 대한 정리다. 콤팩트성이 없으면 무한히 많은 손잡이를 붙인 곡면 같은 대상이 들어와 유한한 불변량으로 분류할 수 없다. [Euler 지표](euler-characteristic.md)가 유한한 값으로 정의되고 삼각분할이 유한 개의 조각으로 끝나는 것이 콤팩트성의 결과다.[^1]
 
 [^1]: Jiří Lebl, *Basic Analysis*, Completeness and compactness. 거리 공간의 콤팩트성, 수열 조건과의 동치, Heine–Borel 정리. https://www.jirka.org/ra/html/sec_metcompact.html
 

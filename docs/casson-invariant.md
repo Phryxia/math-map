@@ -54,7 +54,7 @@ $$
 > $$
 > 여기 $\langle\cdot,\cdot\rangle$ 은 대수적 교차수다.
 
-$R^\ast(\Sigma)$ 가 심플렉틱 다양체이고 $R^\ast(H_i)$ 가 그 안의 Lagrangian 부분다양체이므로 이 정의가 Floer 이론으로 이어진다. Casson 불변량은 순간자 Floer 호몰로지의 Euler 지표다.
+$R^\ast(\Sigma)$ 가 심플렉틱 다양체이고 $R^\ast(H_i)$ 가 그 안의 Lagrangian 부분다양체이므로 이 정의가 Floer 이론으로 이어진다. Casson 불변량은 순간자 Floer 호몰로지의 [Euler 지표](euler-characteristic.md)다.
 
 $$
 \lambda(M)=\tfrac12\chi\big(HF_\ast^{\text{inst}}(M)\big)

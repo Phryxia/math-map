@@ -65,7 +65,7 @@ $$
 Z_{K3}(\tau,z)=8\left[\left(\frac{\theta_2(\tau,z)}{\theta_2(\tau,0)}\right)^2+\left(\frac{\theta_3(\tau,z)}{\theta_3(\tau,0)}\right)^2+\left(\frac{\theta_4(\tau,z)}{\theta_4(\tau,0)}\right)^2\right]
 $$
 
-$z=0$ 을 넣으면 $Z_{K3}(\tau,0)=24=\chi(K3)$ 로 Euler 지표가 나온다.
+$z=0$ 을 넣으면 $Z_{K3}(\tau,0)=24=\chi(K3)$ 로 [Euler 지표](euler-characteristic.md)가 나온다.
 
 ## EOT 분해와 $H(\tau)$
 

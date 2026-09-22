@@ -2,7 +2,7 @@
 
 # 개요
 
-[곡면의 분류](classification-of-surfaces.md)의 기하 판본에서 닫힌 곡면은 구면기하, 유클리드기하, 쌍곡기하 가운데 하나를 갖고 Euler 지표의 부호가 그것을 정한다. 종수 2 이상이면 쌍곡이다.
+[곡면의 분류](classification-of-surfaces.md)의 기하 판본에서 닫힌 곡면은 구면기하, 유클리드기하, 쌍곡기하 가운데 하나를 갖고 [Euler 지표](euler-characteristic.md)의 부호가 그것을 정한다. 종수 2 이상이면 쌍곡이다.
 
 3 차원에서는 두 가지가 달라진다.
 
