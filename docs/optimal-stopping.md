@@ -20,7 +20,7 @@ $r-1=xn$ 으로 두고 $n$ 을 키우면 $p\to -x\ln x$ 이고, 이 값은 $x=1/
 
 # 정의
 
-보상열 $(Y_n)\_{n\ge 0}$ 과 [filtration](martingales.md) $(\mathcal F_n)$ 이 주어지고 $Y_n$ 은 $\mathcal F_n$ 가측이라 하자. 확률변수 $\tau$ 가 모든 $n$ 에 대해 $\lbrace\tau=n\rbrace\in\mathcal F_n$ 을 만족하면 **정지시간**이다. **최적 정지 문제**는 다음 값을 주는 정지시간을 찾는 문제다.
+보상열 $(Y_n)\_{n\ge 0}$ 과 [filtration](martingales.md) $(\mathcal F_n)$ 이 주어지고 $Y_n$ 은 $\mathcal F_n$ [가측](measurable-functions.md)이라 하자. 확률변수 $\tau$ 가 모든 $n$ 에 대해 $\lbrace\tau=n\rbrace\in\mathcal F_n$ 을 만족하면 **정지시간**이다. **최적 정지 문제**는 다음 값을 주는 정지시간을 찾는 문제다.
 
 $$V=\sup_{\tau\le N}\mathbb E\lbrack Y_\tau\rbrack$$
 

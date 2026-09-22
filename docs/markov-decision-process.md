@@ -72,7 +72,7 @@ $$\Vert TV-TW\Vert\_\infty\le\gamma\thinspace\Vert V-W\Vert\_\infty$$
 
 증명의 요지. 두 최댓값의 차는 같은 $a$ 에서 잰 차의 최댓값 이하다. 그 차는 $\gamma\sum_{s'}P(s'\mid s,a)\lvert V(s')-W(s')\rvert$ 이하이고, 확률의 합이 $1$ 이므로 $\gamma\thinspace\Vert V-W\Vert\_\infty$ 이하다.
 
-유한집합 위의 함수들은 상한 노름에서 완비이므로 [축약사상 고정점 정리](banach-fixed-point.md)가 적용된다. $T$ 의 고정점은 유일하고 값 반복은 어느 $V_0$ 에서 출발해도 그 고정점으로 수렴한다. 수렴 속도는 $\Vert V_k-V^\ast\Vert\_\infty\le\gamma^k\thinspace\Vert V_0-V^\ast\Vert\_\infty$ 다.
+유한집합 위의 함수들은 상한 노름에서 [완비](completeness.md)이므로 [축약사상 고정점 정리](banach-fixed-point.md)가 적용된다. $T$ 의 고정점은 유일하고 값 반복은 어느 $V_0$ 에서 출발해도 그 고정점으로 수렴한다. 수렴 속도는 $\Vert V_k-V^\ast\Vert\_\infty\le\gamma^k\thinspace\Vert V_0-V^\ast\Vert\_\infty$ 다.
 
 ## 결정적 정상 정책의 최적성
 
