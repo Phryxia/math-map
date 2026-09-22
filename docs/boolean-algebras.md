@@ -102,7 +102,7 @@ $F$ 가 초필터일 필요충분조건은 모든 $a$ 에 대해 $a \in F$ 와 $
 
 *증명 스케치.* 각 $a$ 에 대해 $U_a$ 를 $a$ 를 포함하는 초필터들의 집합이라 하자. 이 집합들을 기저로 삼아 [위상](topology.md)을 준다. 사상 $a \mapsto U_a$ 가 연산을 보존함은 초필터의 성질에서 바로 나온다. 단사성이 핵심인데, $a \ne b$ 이면 어느 한쪽만 포함하는 초필터가 존재해야 한다. 이것이 Boolean 소 아이디얼 정리이며, [선택공리](axiom-of-choice.md)보다 약하지만 **ZF**(Zermelo–Fraenkel 집합론) 만으로는 증명되지 않는다.
 
-이 대응은 Boolean algebra 의 범주와 Stone 공간의 범주 사이의 쌍대 동치로 확장된다. 대수의 질문이 위상의 질문으로 바뀌며, 예를 들어 $S(B)$ 의 [콤팩트성](compactness.md)는 명제논리의 compactness 정리와 같은 사실이다.
+이 대응은 Boolean algebra 의 [범주](category.md)와 Stone 공간의 범주 사이의 쌍대 동치로 확장된다. 대수의 질문이 위상의 질문으로 바뀌며, 예를 들어 $S(B)$ 의 [콤팩트성](compactness.md)는 명제논리의 compactness 정리와 같은 사실이다.
 
 ## 완전성과 고전 명제논리
 

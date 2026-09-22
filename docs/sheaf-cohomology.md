@@ -20,7 +20,7 @@ $f(z) = z$ 에서는 그런 $b\_i$ 가 없다. 원점을 한 바퀴 도는 동�
 
 ## 유도 함자로서의 정의
 
-위상공간 $X$ 위의 아벨군 값 [층](sheaves.md)의 범주는 아벨 범주이고 단사 대상을 충분히 갖는다. 층 $\mathcal F$ 의 단사 분해 $0 \to \mathcal F \to \mathcal I^0 \to \mathcal I^1 \to \cdots$ 를 잡고 전역 단면 함자 $\Gamma(X,-)$ 를 적용한 복합체의 코호몰로지를 **층 코호몰로지**라 한다.
+위상공간 $X$ 위의 아벨군 값 [층](sheaves.md)의 [범주](category.md)는 아벨 범주이고 단사 대상을 충분히 갖는다. 층 $\mathcal F$ 의 단사 분해 $0 \to \mathcal F \to \mathcal I^0 \to \mathcal I^1 \to \cdots$ 를 잡고 전역 단면 함자 $\Gamma(X,-)$ 를 적용한 복합체의 코호몰로지를 **층 코호몰로지**라 한다.
 
 $$
 H^i(X, \mathcal F) \thinspace=\thinspace H^i(\Gamma(X, \mathcal I^\bullet))

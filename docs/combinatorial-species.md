@@ -20,7 +20,7 @@ $k$ 를 모두 더하면 $\sum_{k \ge 0}(e^x-1)^k/k! = e^{e^x-1}$ 이다. 순환
 
 ## 종
 
-유한집합과 전단사의 범주에서 유한집합의 범주로 가는 함자 $F$ 를 **종**이라 한다. 유한집합 $U$ 에 유한집합 $F\lbrack U\rbrack$ 을 주고, 전단사 $\sigma : U \to V$ 에 전단사 $F\lbrack\sigma\rbrack : F\lbrack U\rbrack \to F\lbrack V\rbrack$ 을 주며 합성과 항등을 보존한다. $F\lbrack U\rbrack$ 의 원소를 $U$ 위의 $F$ 구조라 한다.
+유한집합과 전단사의 [범주](category.md)에서 유한집합의 범주로 가는 함자 $F$ 를 **종**이라 한다. 유한집합 $U$ 에 유한집합 $F\lbrack U\rbrack$ 을 주고, 전단사 $\sigma : U \to V$ 에 전단사 $F\lbrack\sigma\rbrack : F\lbrack U\rbrack \to F\lbrack V\rbrack$ 을 주며 합성과 항등을 보존한다. $F\lbrack U\rbrack$ 의 원소를 $U$ 위의 $F$ 구조라 한다.
 
 함자성은 구조가 라벨의 이름에 의존하지 않는다는 조건이다. 따라서 $\vert F\lbrack U\rbrack\vert$ 는 $\vert U\vert$ 에만 의존하고 그 값을 $f\_n$ 으로 쓴다.
 

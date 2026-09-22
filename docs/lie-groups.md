@@ -16,7 +16,7 @@ $$
 \lbrace\text{단연결 Lie 군}\rbrace\ \xrightarrow{\ \sim\ }\ \lbrace\text{유한차원 실 Lie 대수}\rbrace
 $$
 
-단연결을 요구하면 이 대응이 범주 동치다.
+단연결을 요구하면 이 대응이 [범주](category.md) 동치다.
 
 # 직관
 
