@@ -58,7 +58,7 @@ Riemann 가설은 $N_0(T)=N(T)$ 와 같은 말이다.
 
 증명의 요지는 명시 공식이다. 실수부의 상한을 $\theta$ 라 하면 합의 크기가 $x^\theta$ 규모이므로 오차 한계가 $x^{\theta+\varepsilon}$ 이 되고, 거꾸로 오차 한계 $x^{\theta+\varepsilon}$ 에서 $\zeta$ 의 Mellin 적분 표현을 $\mathrm{Re}\thinspace s\gt\theta$ 까지 이어 그 범위에 영점이 없음을 얻는다.
 
-Möbius 함수의 합 $M(x)=\sum_{n\le x}\mu(n)$ 으로 쓴 판본도 동치다. 모든 $\varepsilon\gt 0$ 에 대해 $M(x)=O\big(x^{1/2+\varepsilon}\big)$ 인 것과 Riemann 가설이 같다. $1/\zeta(s)$ 가 $M$ 의 Mellin 변환이므로 두 진술이 옮겨진다.
+Möbius 함수의 합 $M(x)=\sum_{n\le x}\mu(n)$ 으로 쓴 판본도 동치다. 모든 $\varepsilon\gt 0$ 에 대해 $M(x)=O\big(x^{1/2+\varepsilon}\big)$ 인 것과 Riemann 가설이 같다. $1/\zeta(s)$ 가 $M$ 의 [Mellin 변환](mellin-transform.md)이므로 두 진술이 옮겨진다.
 
 ## 임계선 위의 영점
 

@@ -17,7 +17,7 @@ $$
 
 왼쪽 부등식은 고윳값이 크게 벌어져 있으면 모든 절단이 크다는 것이고, 오른쪽은 모든 절단이 크면 고윳값이 벌어진다는 것이다. 부분집합 $2^n$ 개를 보는 대신 행렬 하나의 고윳값을 계산하면 확장성을 판정할 수 있다.
 
-간극은 [그래프 Laplacian](graph-laplacian.md)의 두 번째로 작은 고윳값이기도 하다. Expander 는 무작위성을 아껴 쓰는 알고리즘, 오류정정부호, **PCP**(probabilistically checkable proof) 정리의 조합적 증명에서 간극을 증폭하는 장치로 쓰인다.
+간극은 [그래프 Laplacian](graph-laplacian.md)의 두 번째로 작은 고윳값이기도 하다. Expander 는 무작위성을 아껴 쓰는 알고리즘, [오류정정부호](error-correcting-codes.md), **PCP**(probabilistically checkable proof) 정리의 조합적 증명에서 간극을 증폭하는 장치로 쓰인다.
 
 # 직관
 
