@@ -156,7 +156,7 @@ $$
 ## 해석학에서의 쓰임
 
 - **미분방정식**: Picard–Lindelöf 정리는 연속함수 공간의 완비성과 [축약사상 고정점 정리](banach-fixed-point.md)를 쓰며, 반복열의 균등수렴이 해를 만든다.
-- **함수해석**: sup 노름 공간 $C(K)$ 는 Banach 공간의 기본 예이고, [Arzelà–Ascoli 정리](arzela-ascoli.md)가 $C(K)$ 의 콤팩트 집합을 균등유계성과 등연속성(equicontinuity)으로 특징짓는다. 등연속성은 정의역 방향의 균등화이며 [균등적분가능성](uniform-integrability.md)이 $L^1$ 에서 하는 역할과 구조가 같다.[^1]
+- **함수해석**: sup 노름 공간 $C(K)$ 는 [Banach 공간](banach-spaces.md)의 기본 예이고, [Arzelà–Ascoli 정리](arzela-ascoli.md)가 $C(K)$ 의 콤팩트 집합을 균등유계성과 등연속성(equicontinuity)으로 특징짓는다. 등연속성은 정의역 방향의 균등화이며 [균등적분가능성](uniform-integrability.md)이 $L^1$ 에서 하는 역할과 구조가 같다.[^1]
 - **[정칙함수](holomorphic-functions.md)**: 복소해석에서는 콤팩트 집합 위의 균등수렴만으로 극한이 정칙이고 도함수열도 수렴한다(Weierstrass 수렴 정리). Cauchy 적분 공식이 미분을 적분으로 바꾸므로 실해석과 달리 미분이 보존된다.[^2]
 
 [^1]: Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 7장 (Sequences and Series of Functions), https://archive.org/details/RudinW.PrinciplesOfMathematicalAnalysis3e

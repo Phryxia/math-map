@@ -19,7 +19,7 @@ $$
 \begin{cases}1&n\equiv a\pmod q\cr 0&\text{그 외}\end{cases}
 $$
 
-가 나온다. 유한군 위의 Fourier 급수를 한 점에 집중시킨 델타 함수다.
+가 나온다. 유한군 위의 [Fourier 급수](fourier-series.md)를 한 점에 집중시킨 델타 함수다.
 
 ## 지표 전체에 대한 합
 

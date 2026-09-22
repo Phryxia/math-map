@@ -166,7 +166,7 @@ $$
 
 ## 기하학과의 연결
 
-Gauss–Bonnet 정리는 분류를 기하로 옮긴다. 닫힌 곡면 위의 임의의 Riemann 계량에 대해 Gauss [곡률](curvature.md)의 적분이 위상만으로 결정된다.
+[Gauss–Bonnet 정리](gauss-bonnet.md)는 분류를 기하로 옮긴다. 닫힌 곡면 위의 임의의 Riemann 계량에 대해 Gauss [곡률](curvature.md)의 적분이 위상만으로 결정된다.
 
 $$
 \int_S K \thinspace dA = 2\pi \chi(S)

@@ -34,7 +34,7 @@ $$
 
 ## 완비 거리 공간
 
-$X$ 안의 모든 Cauchy 수열이 $X$ 의 원소로 수렴하면 $X$ 는 **완비 거리 공간**이다. 완비인 노름공간을 Banach 공간, 완비인 내적공간을 [Hilbert 공간](hilbert-spaces.md)이라 한다.
+$X$ 안의 모든 Cauchy 수열이 $X$ 의 원소로 수렴하면 $X$ 는 **완비 거리 공간**이다. 완비인 노름공간을 [Banach 공간](banach-spaces.md), 완비인 내적공간을 [Hilbert 공간](hilbert-spaces.md)이라 한다.
 
 # 성질
 

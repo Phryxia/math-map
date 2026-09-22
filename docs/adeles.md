@@ -47,7 +47,7 @@ $\mathbb Q$ 가 $\mathbb A_{\mathbb Q}$ 안에 놓이는 방식은 $\mathbb Z$ �
 | 전체 | $\mathbb R$ | $\mathbb A_{\mathbb Q}=\mathbb R\times\mathbb A_f$ |
 | 이산 부분군 | $\mathbb Z$ | 대각으로 들어간 $\mathbb Q$ |
 | 콤팩트 몫 | 원 $\mathbb R/\mathbb Z$ | $\mathbb A_{\mathbb Q}/\mathbb Q$ |
-| 조화해석 | Fourier 급수 | Poisson 합공식 |
+| 조화해석 | [Fourier 급수](fourier-series.md) | Poisson 합공식 |
 
 $\mathbb A_{\mathbb Q}=\mathbb Q+\big([0,1)\times\hat{\mathbb Z}\big)$ 가 성립한다. 아델 하나에서 유한 자리들의 분모를 유리수 하나로 털어내고 실수 자리를 $[0,1)$ 로 밀어 넣으면 된다. $\mathbb R=\mathbb Z+[0,1)$ 의 아델 판이며 $[0,1)\times\hat{\mathbb Z}$ 가 기본영역이다. 기본영역이 콤팩트하므로 몫이 콤팩트하다.
 

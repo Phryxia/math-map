@@ -77,7 +77,7 @@ $$
 # 활용
 
 - **연립방정식.** $Ax = b$ 의 가해성은 $b$ 가 상에 속하는지 여부이고, 해가 존재하면 해집합은 특수해 하나에 핵을 더한 것이다. 핵의 차원이 해의 자유도다.
-- **선형 근사.** [미분](derivative.md)은 함수를 한 점 근처에서 선형사상으로 근사한다. 안정성 분석, Newton 법, 신경망의 한 층이 이 구도를 따른다.
+- **선형 근사.** [미분](derivative.md)은 함수를 한 점 근처에서 선형사상으로 근사한다. 안정성 분석, [Newton 법](newton-method.md), 신경망의 한 층이 이 구도를 따른다.
 - **구조를 보존하는 사상.** 핵과 상, 동형정리, 차원 정리의 형태가 군과 환에서 반복되고, [함자](functors.md)는 그 반복을 사상 개념 자체로 다룬다.[^1]
 
 [^1]: MIT, *18.06SC Linear Algebra*, Linear Transformations and their Matrices. 선형사상과 행렬 표현, 기저 변환. https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/positive-definite-matrices-and-applications/linear-transformations-and-their-matrices/

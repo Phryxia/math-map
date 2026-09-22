@@ -170,7 +170,7 @@ $$
 \int_S K \thinspace dA + \int_{\partial S} k_g \thinspace ds = 2\pi \chi(S) .
 $$
 
-이 Gauss–Bonnet 정리가 [Euler 지표](euler-characteristic.md)와 계량을 잇고, [곡면의 분류](classification-of-surfaces.md)에 기하적 해석을 준다. [균일화 정리](riemann-surfaces.md)에 따라 닫힌 곡면은 곡률이 $1$ 과 $0$ 과 $-1$ 중 하나로 일정한 계량을 가지며, 어느 것인지는 Euler 지표의 부호가 결정한다.
+이 [Gauss–Bonnet 정리](gauss-bonnet.md)가 [Euler 지표](euler-characteristic.md)와 계량을 잇고, [곡면의 분류](classification-of-surfaces.md)에 기하적 해석을 준다. [균일화 정리](riemann-surfaces.md)에 따라 닫힌 곡면은 곡률이 $1$ 과 $0$ 과 $-1$ 중 하나로 일정한 계량을 가지며, 어느 것인지는 Euler 지표의 부호가 결정한다.
 
 # 활용
 

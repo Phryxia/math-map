@@ -73,7 +73,7 @@ $$
 \Vert x+y\Vert^2 + \Vert x-y\Vert^2 = 2\Vert x\Vert^2 + 2\Vert y\Vert^2.
 $$
 
-역도 참이다(Jordan–von Neumann). 이 등식을 만족하는 노름 공간은 편극 항등식으로 내적을 복원할 수 있다. 그러므로 Banach 공간 가운데 Hilbert 공간은 "평행사변형 법칙을 만족하는 것"으로 정확히 특징지어진다.
+역도 참이다(Jordan–von Neumann). 이 등식을 만족하는 노름 공간은 편극 항등식으로 내적을 복원할 수 있다. 그러므로 [Banach 공간](banach-spaces.md) 가운데 Hilbert 공간은 "평행사변형 법칙을 만족하는 것"으로 정확히 특징지어진다.
 
 # 성질
 
