@@ -64,6 +64,11 @@ graph TD
 - [Sinkhorn 알고리즘과 엔트로피 정규화](sinkhorn.md) — 엔트로피 항을 더한 수송 문제를 행렬 스케일링 반복으로 푼다
 - [불균형 최적 수송](unbalanced-optimal-transport.md) — 총질량이 다른 두 [측도](measure.md) 사이로 수송을 확장한다
 
+## 순차 결정
+
+- [Markov 결정 과정](markov-decision-process.md) — 상태마다 행동을 고르는 연쇄. Bellman 방정식의 값 반복이 강화학습의 기반이다
+- [최적 정지](optimal-stopping.md) — 행동이 멈춤과 계속 둘뿐인 경우. Snell 포락이 언제 멈출지를 정한다
+
 ## 그래프 학습
 
 - [그래프 신경망의 표현력](gnn-expressivity.md) — 메시지 전달 신경망의 구별 능력이 Color refinement 를 넘지 못한다
