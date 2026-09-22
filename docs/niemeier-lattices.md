@@ -129,7 +129,7 @@ Leech 격자는 목록에서 근이 없는 유일한 원소다.
 
 - 최소 노름이 4 이고 24 차원 격자 채움의 밀도가 최대다.
 - 근이 없으므로 Weyl 군이 자명하고 자기동형군 전체가 순열 부분이다. 그것이 Conway 군 $\mathrm{Co}\_0$ 이고 위수가 $8315553613086720000$ 이다. 중심 $\lbrace\pm1\rbrace$ 로 나눈 $\mathrm{Co}\_1$ 이 산재 단순군이며 벡터의 안정자에서 $\mathrm{Co}\_2,\mathrm{Co}\_3$ 와 여러 산재군이 나온다.
-- [정점작용소대수](vertex-operator-algebras.md) $V^\natural$ 의 구성이 Leech 격자에서 출발하는 것도 근이 없기 때문이다. 근이 있으면 무게 1 부분공간에 Lie 대수가 생기는데 $V^\natural$ 은 그 부분이 비어야 괴물군이 작용한다.
+- [정점작용소대수](vertex-operator-algebras.md) $V^\natural$ 의 구성이 Leech 격자에서 출발하는 것도 근이 없기 때문이다. 근이 있으면 무게 1 부분공간에 [Lie 대수](lie-algebras.md)가 생기는데 $V^\natural$ 은 그 부분이 비어야 괴물군이 작용한다.
 
 목록이 24 개뿐이므로 근이 없다는 조건이 사실상 유일성 조건이다.
 

@@ -71,7 +71,7 @@ $$
 (w,t)\cdot(w',t')=\Bigl(w+w',\ t+t'+\tfrac12\langle w,w'\rangle\Bigr)
 $$
 
-중심은 $\lbrace 0\rbrace\times F$ 이고 교환자가 $[(w,0),(w',0)]=(0,\langle w,w'\rangle)$ 이라 심플렉틱 형식이 군의 비가환성이 된다. 양자역학의 정준교환관계 $[\hat q,\hat p]=i\hbar$ 가 이 군의 Lie 대수 판본이다.
+중심은 $\lbrace 0\rbrace\times F$ 이고 교환자가 $[(w,0),(w',0)]=(0,\langle w,w'\rangle)$ 이라 심플렉틱 형식이 군의 비가환성이 된다. 양자역학의 정준교환관계 $[\hat q,\hat p]=i\hbar$ 가 이 군의 [Lie 대수](lie-algebras.md) 판본이다.
 
 ## Stone–von Neumann 정리
 
