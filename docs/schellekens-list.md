@@ -2,7 +2,7 @@
 
 # 개요
 
-[Zhu 대수와 모듈러 불변성](zhu-algebra.md)에 따라 $C_2$ 여유한 유리 VOA(vertex operator algebra) 의 지표는 모듈러 형식처럼 변환한다. 이 정리가 분류 도구가 된다.
+[Zhu 대수와 모듈러 불변성](zhu-algebra.md)에 따라 $C_2$ 여유한 유리 VOA(vertex operator algebra) 의 지표는 [모듈러 형식](modular-forms.md)처럼 변환한다. 이 정리가 분류 도구가 된다.
 
 기약가군이 자기 자신뿐인 VOA 가 **홀로모픽**(자기쌍대) VOA 다. 지표가 하나뿐이므로 모듈러 불변성이 지표를 $\mathrm{SL}\_2(\mathbb Z)$ 불변 함수로 만든다. 이 제약이 중심전하를 $c\in24\mathbb Z$ 로 강제하고 $c=24$ 에서는 지표를 완전히 결정한다.
 

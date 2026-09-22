@@ -132,7 +132,7 @@ Deligne 은 무게 $k\ge2$ 의 Hecke 고유형식마다 2 차원 $\ell$ 진 표�
 
 주어진 Galois 표현이 어떤 고유형식에서 오는지를 보이는 것이 모듈러성이고, 그 도구가 변형 이론이다. mod $\ell$ 표현 $\bar\rho$ 를 고정하고 그것으로 환원되는 $\ell$ 진 표현들의 보편 변형환 $R$ 을 만든 뒤 모듈러 표현만 모은 Hecke 대수 $T$ 와 비교한다. $R=T$ 를 증명하면 모든 변형이 모듈러이고, 이것이 Wiles 의 전략이다.
 
-Serre 추측은 $\bar\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\bar{\mathbb F}\_\ell)$ 이 기약이고 홀수면 어떤 모듈러 형식의 mod $\ell$ 표현이며 그 무게와 레벨이 $\bar\rho$ 의 분기 자료로 정해진다는 진술이다. Khare 와 Wintenberger 가 2009 년에 증명했다.
+Serre 추측은 $\bar\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\bar{\mathbb F}\_\ell)$ 이 기약이고 홀수면 어떤 [모듈러 형식](modular-forms.md)의 mod $\ell$ 표현이며 그 무게와 레벨이 $\bar\rho$ 의 분기 자료로 정해진다는 진술이다. Khare 와 Wintenberger 가 2009 년에 증명했다.
 
 ## 세 방향의 난이도
 

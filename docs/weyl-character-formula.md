@@ -192,7 +192,7 @@ $A_1$ 에서는 $x-x^{-1}$ 이고, 같은 항등식을 아핀 근계로 확장�
 # 활용
 
 - **물리의 다중항.** $\mathrm{SU}(3)$ 맛깔 대칭에서 쿼크 세 종류는 $(1,0)$ 의 3 차원 표현이고, 중간자는 $3\otimes\bar3=8\oplus1$ , 바리온 10 중항은 $(3,0)$ 이다. Gell-Mann 과 Ne'eman 이 알려진 입자를 무게 다이어그램에 배치했을 때 10 중항의 빈자리를 차원 공식이 지목했고, 그 자리의 $\Omega^-$ 가 1964 년에 발견되었다.
-- **텐서곱과 융합 규칙.** 텐서곱의 기약 분해는 지표를 곱해 다시 지표 기저로 펼치는 계산이고, 이를 조합적으로 수행하는 것이 Littlewood–Richardson 규칙($A$ 형)과 Littelmann 경로 모형(일반)이다. 레벨 $k$ 를 고정한 아핀 Lie 대수나 양자군에서는 같은 계산이 유한 집합 안에서 닫히고 구조상수를 Verlinde 공식이 준다. [정점작용소대수](vertex-operator-algebras.md)와 등각장론에서 지표가 모듈러 형식이 되는 현상의 근거가 Weyl–Kac 공식이다.
+- **텐서곱과 융합 규칙.** 텐서곱의 기약 분해는 지표를 곱해 다시 지표 기저로 펼치는 계산이고, 이를 조합적으로 수행하는 것이 Littlewood–Richardson 규칙($A$ 형)과 Littelmann 경로 모형(일반)이다. 레벨 $k$ 를 고정한 아핀 Lie 대수나 양자군에서는 같은 계산이 유한 집합 안에서 닫히고 구조상수를 Verlinde 공식이 준다. [정점작용소대수](vertex-operator-algebras.md)와 등각장론에서 지표가 [모듈러 형식](modular-forms.md)이 되는 현상의 근거가 Weyl–Kac 공식이다.
 - **조화해석.** $L^2(G)$ 분해에서 각 조각의 크기가 $(\dim V_\lambda)^2$ 이므로 차원 공식이 $G$ 위 조화해석의 스펙트럼 밀도를 준다. $G=\mathrm{SU}(2)$ 에서 $\dim V_n=n+1$ 이라 $S^3$ 위 Laplace 작용소의 고윳값 중복도가 나오고, $S^2=\mathrm{SU}(2)/T$ 로 내리면 구면조화함수의 $2\ell+1$ 이 된다. 열핵 전개, 격자 게이지 이론의 분배함수, 랜덤 행렬의 적률 계산이 같은 형태의 합으로 표현된다.
 
 [^1]: 표준 참고서는 J. Humphreys, *Introduction to Lie Algebras and Representation Theory* (1972) 6 장(대수적 노선)과 T. Bröcker–T. tom Dieck, *Representations of Compact Lie Groups* (1985) 6 장(해석적 노선). Kostant 와 Freudenthal 공식은 Humphreys 24 절. Lusztig 추측의 반례는 G. Williamson, *Schubert calculus and torsion explosion*, J. Amer. Math. Soc. 30 (2017).

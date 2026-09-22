@@ -47,7 +47,7 @@ $$
 \lambda_2\ge\frac{2\sqrt{d-1}}{d}-o(1)
 $$
 
-이 성립한다(Alon–Boppana). 한계를 달성하는 그래프가 **Ramanujan 그래프**이고, 이름은 Lubotzky–Phillips–Sarnak 의 구성이 사원수 대수와 모듈러 형식의 계수 평가, 곧 Deligne 이 증명한 Ramanujan 추측을 쓰는 데서 왔다.
+이 성립한다(Alon–Boppana). 한계를 달성하는 그래프가 **Ramanujan 그래프**이고, 이름은 Lubotzky–Phillips–Sarnak 의 구성이 사원수 대수와 [모듈러 형식](modular-forms.md)의 계수 평가, 곧 Deligne 이 증명한 Ramanujan 추측을 쓰는 데서 왔다.
 
 무작위 $d$ 정규 그래프는 거의 확실히 좋은 expander 이고 Friedman 의 정리로 거의 Ramanujan 이다. 그러나 명시적으로 하나를 적어 내는 데는 정수론이 필요하다.
 

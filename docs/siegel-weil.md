@@ -35,7 +35,7 @@ $Q$ 와 $Q'$ 가 같은 류라는 것은 모든 $\mathbb Z_p$ 와 $\mathbb R$ �
 
 ## 주항과 오차항
 
-무게 $m/2$ 의 모듈러 형식 공간은 Eisenstein 부분과 첨점 부분의 직합이다.
+무게 $m/2$ 의 [모듈러 형식](modular-forms.md) 공간은 Eisenstein 부분과 첨점 부분의 직합이다.
 
 $$
 \Theta_Q=\underbrace{E_Q}\_{\text{류에만 의존}}+\underbrace{f_Q}\_{\text{개별 형식}}

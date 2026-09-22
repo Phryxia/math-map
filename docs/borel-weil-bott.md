@@ -95,7 +95,7 @@ $$
 X_w=\bigsqcup_{v\le w}C_v
 $$
 
-세포가 전부 짝수 실차원이므로 세포 호몰로지의 경계사상이 모두 $0$ 이다.
+세포가 전부 짝수 실차원이므로 세포 [호몰로지](homology.md)의 경계사상이 모두 $0$ 이다.
 
 $$
 H^{2k}(G/B,\mathbb Z)=\bigoplus_{\ell(w)=k}\mathbb Z[X_w],\qquad H^{\text{홀}}=0

@@ -34,7 +34,7 @@ $$
 V_\gamma = \exp\left(\oint_\gamma S_{\mathrm{odd}}(x,\epsilon)\thinspace dx\right)
 $$
 
-라는 수를 붙인다. 이것이 **Voros 기호**다. 지수 안은 발산급수이고 Borel 합을 취해 수가 된다. 경로를 연속적으로 움직여도 값이 변하지 않으므로 호몰로지류만 중요하고, 유한 개의 수가 문제 전체를 기술한다.
+라는 수를 붙인다. 이것이 **Voros 기호**다. 지수 안은 발산급수이고 Borel 합을 취해 수가 된다. 경로를 연속적으로 움직여도 값이 변하지 않으므로 [호몰로지](homology.md)류만 중요하고, 유한 개의 수가 문제 전체를 기술한다.
 
 ```mermaid
 graph TD

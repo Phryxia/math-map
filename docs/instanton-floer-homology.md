@@ -2,7 +2,7 @@
 
 # 개요
 
-[Casson 불변량](casson-invariant.md)은 호몰로지 3 구 $\Sigma$ 위의 기약 $\mathrm{SU}(2)$ 평탄 접속을 부호와 함께 센 정수다.
+[Casson 불변량](casson-invariant.md)은 [호몰로지](homology.md) 3 구 $\Sigma$ 위의 기약 $\mathrm{SU}(2)$ 평탄 접속을 부호와 함께 센 정수다.
 
 $$
 \lambda(\Sigma)=\sum_{\alpha\in R^\ast(\Sigma)}\pm1

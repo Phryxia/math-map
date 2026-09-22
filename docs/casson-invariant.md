@@ -2,7 +2,7 @@
 
 # 개요
 
-Casson 불변량[^1] $\lambda(M)$ 은 정수 호몰로지 3 구면 $M$ 의 불가약 $\mathrm{SU}(2)$ 표현을 부호를 붙여 센 수다.
+Casson 불변량[^1] $\lambda(M)$ 은 정수 [호몰로지](homology.md) 3 구면 $M$ 의 불가약 $\mathrm{SU}(2)$ 표현을 부호를 붙여 센 수다.
 
 $$
 \lambda(M)=\tfrac12\cdot\char35{}^{\text{대수적}}\big\lbrace\rho:\pi_1(M)\to\mathrm{SU}(2)\ \text{불가약}\big\rbrace

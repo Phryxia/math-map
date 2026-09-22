@@ -6,7 +6,7 @@
 
 [유한체](finite-fields.md) 위의 삼차 곡선에 놓인 점들에 기하적인 덧셈을 정의하면 아벨군이 되고, 이 군에는 작은 소수로 쪼개진다는 개념이 없다. 그래서 같은 안전성에 훨씬 짧은 키를 쓴다.
 
-유리수 위의 타원곡선은 Mordell–Weil 정리로 유한생성 아벨군이 되고, 그 계수를 예측하는 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)이 밀레니엄 문제 중 하나다. Fermat 마지막 정리의 증명도 타원곡선과 모듈러 형식의 대응을 통해 이루어졌다.
+유리수 위의 타원곡선은 Mordell–Weil 정리로 유한생성 아벨군이 되고, 그 계수를 예측하는 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)이 밀레니엄 문제 중 하나다. Fermat 마지막 정리의 증명도 타원곡선과 [모듈러 형식](modular-forms.md)의 대응을 통해 이루어졌다.
 
 # 직관
 

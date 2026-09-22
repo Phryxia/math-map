@@ -141,7 +141,7 @@ $p=17$ 은 [Kedlaya 알고리즘](kedlaya-algorithm.md)에서 Hasse 불변량이
 - **암호에서의 곡선 선택.** 초특이 곡선은 MOV(Menezes–Okamoto–Vanstone) 공격으로 [이산로그](discrete-logarithm.md)가 유한체 이산로그로 환원되므로 배제한다. 무작위 곡선이 초특이일 확률은 $\asymp1/\sqrt p$ 로 작지만 검사는 한다.
 - **초특이 동종사상 암호.** 반대로 초특이 곡선만 모아 그 사이의 동종사상 그래프를 쓰는 암호 계열(SIDH, supersingular isogeny Diffie–Hellman 과 SIKE, supersingular isogeny key encapsulation 및 그 후속)이 있다. 초특이 $j$ 불변량이 $\mathbb F_{p^2}$ 에 $\approx p/12$ 개라는 사실이 설계의 근거다.
 - **수치 검증.** Lang–Trotter 상수의 검증은 대량의 $a_p$ 표를 요구하고 그 표를 [SEA](sea-algorithm.md)(Schoof–Elkies–Atkin) 알고리즘이 만든다. 정밀한 검증에는 $X$ 를 $10^{10}$ 이상으로 올려야 한다.
-- **일반화.** 아벨 다양체와 모듈러 형식의 $a_p$ 와 수체 위의 곡선으로 같은 꼴의 추측이 확장되어 있다.
+- **일반화.** 아벨 다양체와 [모듈러 형식](modular-forms.md)의 $a_p$ 와 수체 위의 곡선으로 같은 꼴의 추측이 확장되어 있다.
 
 [^1]: S. Lang, H. Trotter, *Frobenius Distributions in GL₂-Extensions*, Lecture Notes in Math. 504 (1976). 초특이 소수의 무한성은 N. Elkies, *The existence of infinitely many supersingular primes for every elliptic curve over Q*, Invent. Math. **89** (1987), 561–567. 상계는 E. Fouvry, M. R. Murty 및 V. K. Murty 의 일련의 논문, 요약은 A. Cojocaru, *Questions about the reductions modulo primes of an elliptic curve*, in *Number Theory* (CRM Proc. 36, 2004). 초특이 동종사상 그래프는 D. Jao, L. De Feo, PQCrypto 2011.
 

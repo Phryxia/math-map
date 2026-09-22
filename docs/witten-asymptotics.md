@@ -60,7 +60,7 @@ $$
 
 ## 다른 방향의 극한
 
-$q=e^h$ 로 두고 $h\to0$ 에서 형식적 멱급수로 전개할 수도 있다. 유리 호몰로지 구면 $M$ 에 대해
+$q=e^h$ 로 두고 $h\to0$ 에서 형식적 멱급수로 전개할 수도 있다. 유리 [호몰로지](homology.md) 구면 $M$ 에 대해
 
 $$
 \tau^{\mathrm{Ohtsuki}}(M)=\sum_{n\ge0}\lambda_n(M)\thinspace h^n

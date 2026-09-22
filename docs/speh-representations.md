@@ -109,7 +109,7 @@ Tadić 의 $\mathrm{GL}\_n$ 유니터리 쌍대 분류는 Speh 표현과 그 보
 
 $\mathrm{GL}\_n$ 에서는 비템퍼드 표현이 전부 잔여 스펙트럼으로 밀려나므로 Ramanujan 추측이 분류와 모순되지 않는다.
 
-$\mathrm{GSp}\_4$ 에는 첨점이면서 Arthur 매개변수의 둘째 $\mathrm{SL}\_2$ 가 자명하지 않은 표현이 있다. 포물형 부분군에서 올라온 Eisenstein 급수와 거의 모든 자리에서 Satake 매개변수가 같다는 뜻에서 **CAP 표현**(cuspidal associated to parabolic)이라 부르고, 대표가 무게 $2k-2$ 의 타원 첨점형식에서 만든 무게 $k$ 의 Siegel 모듈러 형식인 **Saito–Kurokawa 올림**이다.
+$\mathrm{GSp}\_4$ 에는 첨점이면서 Arthur 매개변수의 둘째 $\mathrm{SL}\_2$ 가 자명하지 않은 표현이 있다. 포물형 부분군에서 올라온 Eisenstein 급수와 거의 모든 자리에서 Satake 매개변수가 같다는 뜻에서 **CAP 표현**(cuspidal associated to parabolic)이라 부르고, 대표가 무게 $2k-2$ 의 타원 첨점형식에서 만든 무게 $k$ 의 Siegel [모듈러 형식](modular-forms.md)인 **Saito–Kurokawa 올림**이다.
 
 $$
 \psi_{\mathrm{SK}}=\bigl(\sigma\boxtimes[1]\bigr)\ \boxplus\ \bigl(\mathbf 1\boxtimes[2]\bigr)

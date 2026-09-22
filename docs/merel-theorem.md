@@ -44,7 +44,7 @@ Merel 의 정리는 $B(d)\lt\infty$ 라는 진술이다. 동치로, 차수 $d$ �
 
 ## 겨냥 원소와 겨냥 몫
 
-$X_0(p)$ 의 호몰로지에서 0 과 $\infty$ 를 잇는 경로가 정하는 원소
+$X_0(p)$ 의 [호몰로지](homology.md)에서 0 과 $\infty$ 를 잇는 경로가 정하는 원소
 
 $$
 e=\lbrace 0,\infty\rbrace\in H_1\big(X_0(p),\mathbb Q\big)

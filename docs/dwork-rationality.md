@@ -221,7 +221,7 @@ $n=1$ 하나가 모든 확대체의 값을 결정하며, 이것이 $L$ 함수가
 
 - **점 세기 알고리즘.** Dwork 의 방법을 Monsky–Washnitzer 코호몰로지로 다듬은 것이 Kedlaya 알고리즘(2001)이다. 초타원곡선의 zeta 함수를 $p$ 진 정밀도로 계산하며 비용이 $p$ 에 선형이고 확대차수에 다항식이라 작은 $p$ 와 큰 $n$ 을 맡고, 큰 $p$ 를 맡는 Schoof–Elkies–Atkin 과 상보적이다. Lauder–Wan 이 일반 다양체로 확장했다.
 - **암호.** 위 알고리즘이 곡선 암호의 군 위수를 정하는 실무 도구다. [타원곡선](elliptic-curves.md) 위수를 모르면 안전성을 논할 수 없다.
-- **해석적 정수론.** Kloosterman 합은 사원 이차형식의 표현수를 원법으로 다루면서 나왔다. Weil 한계 $2\sqrt q$ 가 원법의 오차항을 결정하고 Kuznetsov 공식을 거쳐 모듈러 형식의 해석적 이론으로 들어간다.
+- **해석적 정수론.** Kloosterman 합은 사원 이차형식의 표현수를 원법으로 다루면서 나왔다. Weil 한계 $2\sqrt q$ 가 원법의 오차항을 결정하고 Kuznetsov 공식을 거쳐 [모듈러 형식](modular-forms.md)의 해석적 이론으로 들어간다.
 - **Newton 다각형의 기하.** 지수합의 $p$ 진 부치를 다면체로 예측하는 Adolphson–Sperber 이론과 Katz 의 Newton 다각형 도약 문제가 이 줄기에 있다.
 - **에탈 코호몰로지.** Grothendieck 의 에탈 코호몰로지가 유리성과 함수방정식을 다시 증명했고 1974 년 Deligne 이 Riemann 가설을 닫았다.
 
