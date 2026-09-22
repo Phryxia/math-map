@@ -1,31 +1,23 @@
 {
   "version": 1,
-  "savedAt": "2026-09-21T21:02:40.112Z",
-  "nextSeq": 879,
+  "savedAt": "2026-09-22T00:57:16.173Z",
+  "nextSeq": 892,
   "items": [
     {
-      "id": "fedf3e1f",
+      "id": "1e137a01",
       "title": "정의 없이 쓴 용어 훑기 (다음 차수)",
       "priority": 20,
-      "note": "2026-09-21 셋째 회차 셋째·넷째 작업. 앞 작업의 검사기(스크래치패드 unlinked3.mjs)로 남은 특수 개념 61 자리에 본문 링크를 걸어 보고가 172 -> 117 -> 85 건으로 줄었다. 셋째 작업의 29 자리는 한 용어가 여러 문서에 걸린 묶음들이다(Brown 운동 5: change-of-measure 128·diffusion-models 78·feynman-kac 55·girsanov 7·nonstandard-analysis 78, Fredholm 행렬식 5: dwork-rationality 15·kedlaya-algorithm 7·newton-polygon 94·overconvergent-modular-symbols 27·painleve-equations 121, Bell 수 3, Dirichlet 단수 정리 2, Khovanov 호몰로지 2, Stirling 수 2, Kazhdan–Lusztig 다항식 2, Gauss 과정 2, 그 밖 Poisson 과정·Peter–Weyl 정리·Riemann–Roch 정리·Burnside 보조정리·Rankin–Selberg 적분·Yoneda lemma). 넷째 작업의 32 자리는 빈도 2 이하 특수 개념이다(Peano 공리, KL divergence, Jordan 표준형, 그래프 Laplacian, Dilworth 정리, Arzelà–Ascoli 정리, de Rham 코호몰로지, Sato–Tate 분포, Birch–Swinnerton-Dyer 추측, Noether 환, Markov 연쇄, Picard 군, Bayes 정리, Lebesgue 적분, Riemann zeta 함수, Feynman–Kac 공식, Shannon 엔트로피, Casselman–Shalika 공식, Galois 이론, Girsanov 정리, Ramsey 이론, Teichmüller 공간, Chebotarev 밀도 정리). 중요한 사고와 그 대책: 치환 스크립트는 마스킹 없이 indexOf 로 첫 등장을 찾으므로 검사기(마스킹 후 탐색)와 자리가 어긋날 수 있다. modules 의 'Jordan 표준형' 이 그 경우로, 검사기는 178줄 본문을 보고했는데 치환은 38줄 mermaid 노드 라벨에 링크를 넣었다(mermaid 라벨에서 마크다운 링크는 작동하지 않는다). 되돌리고 178줄에 다시 넣었다. 그러므로 묶음 치환 뒤에는 반드시 두 검사를 돌릴 것: 스크립트가 찍은 줄 번호와 검사기 보고 줄 번호가 다른 항목을 눈으로 보고, 코드펜스 안('/^\\s*(```|~~~)/ 토글 후 \\]\\([a-z0-9-]+\\.md\\)')과 수식 안(인라인 $...$ 와 $$ 블록에 '](' 포함)에 링크가 들어갔는지 전수로 본다. 이 회차에 둘 다 0 건으로 확인했다. logicism 85 의 'Peano 공리' 는 'Dedekind–Peano 공리' 라 앞 문자 en dash 안전장치가 걸러냈다. 다음 차수에 볼 것: 남은 85 건은 Euler 지표 13, Hilbert 공간 12, Lie 대수 11, Langlands 강령 11, Riemann 가설 10, Fourier 급수 6, Banach 공간 6, Gauss–Bonnet 정리 5, Riemann 적분 3, Newton 법 3 으로 기초 용어 반복만 남았다. 이것들은 자리마다 링크 가치가 달라 묶음 치환이 맞지 않는다. 한 용어씩(예: Euler 지표 13 자리) 그 문장이 용어를 정의 없이 쓰는지, 아니면 이미 아는 것으로 두고 지나가는지 눈으로 갈라 링크할 것",
-      "createdAt": "2026-09-21T20:49:03.665Z",
-      "seq": 867
+      "note": "2026-09-22 회차 다섯째 묶음. '다양체' 를 돌렸다. 검사기 unlinked4.mjs 에 대수다양체 필터를 넣었다: 용어 '다양체' 앞 12자에 Grassmann|아벨|사영|대수|모듈라이|아핀|Calabi 등이 오면 variety 로 보고 제외한다. 31 건 가운데 manifolds 가 맞는 17 자리에 링크했다(3 다양체 불변량, 콤팩트 다양체 위 작용소 등). 제외 14: 각주 서지(baker-theorem 72 group varieties), 표 셀(de-rham-cohomology 87, instanton-floer-homology 37, kedlaya-algorithm 175, teichmuller-space 115, volume-conjecture 25), 대수다양체(galois-representations 27 복소·기약 다양체, geometric-satake 57 ind-다양체, ideals-quotient-rings 130 기약 다양체, kazhdan-lusztig 15 Schubert 다양체, sato-tate 125 Calabi-Yau 다양체 족. 필터가 'Calabi–Yau' 의 '–Yau' 로 끝나 못 걸러 수동 제외했다. 필터에 Yau 를 더할 것), 굵은 정의(kahler-manifolds 7, schubert-calculus 67), 인용문 정리 진술(hyperbolic-3-manifolds 119). '군 작용' 은 0 건이었다. 지금까지 다섯 묶음에서 250 자리를 걸었다. 다음 후보: '스펙트럼'(작용소 스펙트럼과 위상수학 스펙트럼이 섞여 층·다양체 같은 갈래 판정이 필요), '격자'(순서론 lattice 와 기하 lattice), '범주', '분포'(확률분포와 Schwartz 분포). 이쯤에서 이 훑기를 계속할지, 기초 용어가 거의 다 걸렸으니 우선순위를 낮출지 한 번 판단할 것.",
+      "createdAt": "2026-09-22T00:54:39.276Z",
+      "seq": 889
     },
     {
-      "id": "fee868c7",
+      "id": "89cde728",
       "title": "제목 규칙 위반 훑기 (다음 차수)",
       "priority": 20,
-      "note": "2026-09-21 셋째 회차 다섯째 작업. LC_ALL=C.utf8 grep -h '^# .*[와과] ' docs/*.md 로 147 건을 다시 뽑아, 파일명이 앞 항목만 가리키고 뒤 항목이 그 문서의 한 절인 다섯을 좁혔다. 'Bayes 추론과 사후분포'->'Bayes 추론'(bayesian-inference, 194줄. 사후분포는 31줄 한 절), 'Itô 적분과 확률미분방정식'->'Itô 적분'(ito-calculus, 122줄. 확률미분방정식은 63줄 한 절), 'Lie 군과 지수사상'->'Lie 군'(lie-groups, 176줄. 지수사상은 59·79줄 두 절의 도구), 'Hodge 이론과 조화형식'->'Hodge 이론'(hodge-theory, 203줄. 조화형식은 83·99줄 두 절의 대상), 'Fredholm 작용소와 지표'->'Fredholm 작용소'(fredholm-operators, 157줄. 지표는 그 작용소의 불변량이고 37·125줄 두 절). 참조 34 파일을 문자열 치환으로 한 번에 고쳤고 전부 링크 표시 제목이거나 개관 mermaid 노드 라벨이었다(git diff 에서 링크 밖 문장이 바뀐 자리가 없음을 확인했다). 다음 차수에 볼 것: 147 건 가운데 같은 꼴로 남은 후보는 'Dedekind 정역과 아이디얼의 유일분해'(dedekind-domains, 136줄), 'Expander 그래프와 스펙트럼 간극'(expander-graphs, 136줄), 'Galois 연결과 완비 격자'(galois-connections, 187줄), 'Laplace 방법과 안장점'(laplace-method, 163줄), 'Lagrange 쌍대성과 KKT 조건'(lagrange-duality, 130줄), 'Hecke 작용소와 새형식', 'Chern–Simons 이론과 레벨 양자화', 'LP 완화와 반올림', 'PCP 정리와 근사 불가능성', 'Brauer 대수와 직교군 쌍대성', 'Mellin 변환과 Perron 공식' 이다. 예외로 둘 것은 파일명이 두 항목을 함께 담은 것(dag-topological 'DAG와 위상정렬', fermat-euler-theorem 'Fermat 소정리와 Euler 정리', dyson-rank-crank 'Dyson 의 rank 와 crank', borel-pade 'Padé 근사와 Borel 재합산')과 4절이 명시한 정리 이름 꼴('Néron–Tate 높이와 Mordell–Weil 정리', 'NP-완전성과 Cook–Levin 정리', 'Bernoulli 수와 von Staudt–Clausen 정리', 'Heegner 점과 Gross–Zagier 공식' 등)이다. 판정 절차는 이 회차와 같다: 문서 줄 수로 8절 분할 기준을 먼저 보고, 뒤 항목이 차지하는 절 수를 세고, 좁힌 뒤 참조를 문자열 치환으로 한 번에 고치고 git diff 로 링크 밖 문장이 바뀌지 않았는지 본다",
-      "createdAt": "2026-09-21T20:50:58.497Z",
-      "seq": 868
-    },
-    {
-      "id": "e01d32df",
-      "title": "제목 규칙 위반 훑기 (다음 차수, 'A와 B' 항목 통합)",
-      "priority": 20,
-      "note": "2026-09-21 셋째 회차에 큐 항목 ''A와 B' 제목 후보 훑기 (5차)'(92a8ad01)를 이 항목으로 통합하고 제거했다. 두 항목이 같은 4절 제목 규칙을 같은 방법으로 훑고 있었다. 그 항목이 남긴 후보 다섯의 판정은 이 회차에 끝냈다: 좁힌 둘 'p 진수와 부치'->'p 진수'(p-adic-numbers), '분할수와 원법'->'분할수'(partitions). 그대로 둔 셋과 근거 eigenvalues '고윳값과 고유벡터'(한 정의에서 동시에 나오는 쌍), proofs '명제와 증명'(같은 쌍이고 루트 문서라 제목이 README 뿌리 목록에 들어간다), random-walks 'Random walk와 전기 네트워크'(앞 항목이 영문이라 좁히면 제목이 'Random walk' 가 되어 한국어 제목 규격과 어긋난다. 표기 결정이 선행 작업이고 'lambda calculus 를 람다 대수로 옮길지' 와 한 묶음이다). 다섯째 작업에서 다섯을 더 좁혔다: bayesian-inference 'Bayes 추론', ito-calculus 'Itô 적분', lie-groups 'Lie 군', hodge-theory 'Hodge 이론', fredholm-operators 'Fredholm 작용소'. 다음 차수에 볼 후보와 예외 판정, 작업 절차는 앞 note(fee868c7)에 적은 그대로다: dedekind-domains, expander-graphs, galois-connections, laplace-method, lagrange-duality, hecke-operators, chern-simons, lp-relaxation, pcp-theorem, brauer-algebras, mellin-transform 을 줄 수와 뒤 항목의 절 수로 판정하고, 파일명이 두 항목을 함께 담은 것과 정리 이름 꼴은 예외로 둔다",
-      "createdAt": "2026-09-21T20:51:48.382Z",
-      "seq": 870
+      "note": "2026-09-22 회차에 네 개를 더 좁혔다: geometrization '기하화 정리'(8 개 모형 기하는 34·59·68줄 절), knot-invariants '매듭 불변량'(Jones 다항식은 89·107줄 절이자 대표 예), gauss-sums 'Gauss 합'(국소 근 수는 99·111줄 절), complex-multiplication '복소 곱셈'(허수이차체의 유체론은 응용 절). 참조를 치환하고 링크 밖 변경 0, 링크 뒤 괄호 풀이 0(birch-swinnerton-dyer 96 의 '(complex multiplication, CM)' 은 원래 있던 두문자어 정의라 무관)을 확인했다. 절차: LC_ALL=C.utf8 grep -h '^# .*[와과] ' docs/*.md 로 뽑고, 개념 뒤에 정리 이름이 오는 제목은 4절 예외라 그대로 두며(differential-forms, holomorphic-functions, braid-groups, domain-theory 등), 뒤 항목이 한 절이면 앞 개념으로 좁힌다. 아직 안 본 후보: abstract-interpretation '추상해석과 정적 분석의 건전성', algebraic-k-theory, arthur-parameters, borcherds-products, category-o '범주 O 와 BGG 상반성', exact-wkb, hyperbolic-3-manifolds '쌍곡 3 다양체와 Mostow 강직성', kleisli-eilenberg-moore '두 범주가 한 문서', limits-colimits(파일명이 두 항목을 담아 예외). 예외 목록은 앞 note 참조.",
+      "createdAt": "2026-09-22T00:56:44.693Z",
+      "seq": 891
     },
     {
       "id": "be092d8e",
@@ -234,6 +226,14 @@
       "note": "2026-09-21 셋째 회차 8차. 두 묶음 12 건을 고쳤다. (1) '## 비용' 7 건을 절이 재는 대상 이름으로: color-refinement 108 '시간 복잡도', diffusion-models 126 '표본 생성 횟수', dynamic-programming 55 '시간과 공간 복잡도', homomorphic-encryption 85 '연산 속도와 암호문 크기', kernel-pca 108 '저장과 고유분해 비용', multigrid 56 '사이클 한 번의 연산량', semidefinite-programming 110 '변수 개수와 반복 비용'. (2) '## 다른 분야에서의 쓰임' 5 건을 절이 드는 분야 나열로(7차가 같은 이름 8 건에 쓴 방식): complex-analysis-overview 65 '해석적 수론'(감마 함수, zeta, 소수 정리, Dirichlet L, 모듈러 형식을 든다), measure-theory-overview 61 '확률론과 최적수송', mv-cycles 127 '게이지 이론, 적분가능계, 산술', power-series 148 '복소해석, 미분방정식, 조합론', ramsey-theory 141 '계산 복잡도와 기하'. 개관 문서의 H2 는 4.5절이 정한 소분야 이름 자리이므로 분야 이름으로 바꾸는 것이 규격에도 맞다. 남긴 묶음과 근거: '## 정리' 14, '## 증명' 7, '## 알고리즘' 10, '## 따름정리' 7, '## 기본 성질' 6, '## 계산 복잡도' 5 는 수학 문서의 관행이고, '## 증명의 요지' 11 은 4절 규격이 정한 이름이다. 9차에 볼 것: '## 일반화' 8 건이다(birch-swinnerton-dyer 108, eisenstein-series 166, heegner-points 211, khovanov-homology 137, schur-polynomials 164, schur-weyl-duality 114, serre-conjecture 121, stickelberger 148). 이 회차에 헤딩만 훑고 미뤘다. 각 절의 목록 항목을 전부 읽어 일반화의 방향을 이름으로 뽑아야 하기 때문이다(예: birch-swinnerton-dyer 는 p 진 BSD 와 고차원 확장, khovanov-homology 는 sl_N 과 HOMFLY, stickelberger 는 Brumer–Stark). schur-polynomials 164 와 schur-weyl-duality 114 는 절 첫 문장이 '한 방향으로 변형한 것들이 각각 다른 이론을 연다', '같은 구조가 여러 방향으로 퍼진다' 로 4절 금지 수사에 가까우므로 헤딩과 함께 그 문장도 볼 것. 그 다음 묶음은 '## 연산' 5 와 '## 존재 정리' 5 다",
       "createdAt": "2026-09-21T21:02:22.546Z",
       "seq": 878
+    },
+    {
+      "id": "4bb505f5",
+      "title": "헤딩에 링크가 든 자리 판정",
+      "priority": 12,
+      "note": "2026-09-22 회차에 혼입 검사(/^#+ .*\\]\\([a-z0-9-]+\\.md\\)/)를 돌려 한 자리를 찾았다: langlands-program 158 '## [Sato–Tate 분포](sato-tate.md)'. 4절 헤딩 규칙은 헤딩이 개념 이름이어야 한다고만 정하고 링크를 금지하지는 않지만, 다른 문서의 헤딩에는 링크가 없어 이 자리만 어긋난다. 판정할 것: 헤딩에서 링크를 빼고 그 절 본문 첫 문장에 링크를 거는 것이 맞는지, 아니면 docs 전체에 헤딩 링크가 이 하나뿐인지 먼저 확인하고 규칙으로 세울지",
+      "createdAt": "2026-09-22T00:45:49.624Z",
+      "seq": 883
     },
     {
       "id": "d2720772",
