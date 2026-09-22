@@ -145,11 +145,16 @@ $$
 
 ## 더 알아보기
 
+### 세는 방법
+
 - [생성함수](generating-functions.md)
 - [포함배제 원리](inclusion-exclusion.md)
 - [Stirling 수](stirling-numbers.md)
-- [조합적 설계](block-designs.md)
+
+### 존재와 구조
+
 - [비둘기집 원리](pigeonhole-principle.md)
 - [매칭과 Hall 정리](matchings.md)
+- [조합적 설계](block-designs.md)
 
 #combinatorics #probability #group_theory

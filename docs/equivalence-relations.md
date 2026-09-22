@@ -84,11 +84,19 @@ $\lbrack x\rbrack$ 이 $x$ 의 **동치류**, $A/R$ 이 **몫집합**, $x \mapst
 
 ## 더 알아보기
 
-- [수학적 구조주의](mathematical-structuralism.md)
+### 관계의 다른 꼴
+
 - [부분순서](partial-orders.md)
-- [그래프 동형](graph-isomorphism.md)
+- [수학적 구조주의](mathematical-structuralism.md)
+
+### 동치류를 만드는 구성
+
 - [군 작용](group-actions.md)
+- [그래프 동형](graph-isomorphism.md)
 - [정수의 합동](modular-arithmetic.md)
+
+### 계산에서의 쓰임
+
 - [서로소 집합 자료구조](union-find.md)
 - [유한 오토마타](finite-automata.md)
 

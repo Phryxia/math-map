@@ -111,12 +111,17 @@ $$
 
 ## 더 알아보기
 
-- [Shannon 엔트로피](entropy.md)
-- [스펙트럼 희소화](spectral-sparsification.md)
+### 확률의 기초
+
 - [Bayes 정리](bayes.md)
 - [측도](measure.md)
 - [확률변수](random-variables.md)
+- [Shannon 엔트로피](entropy.md)
+
+### 조합과 알고리즘
+
 - [확률적 방법](probabilistic-method.md)
 - [부울 함수의 Fourier 해석](boolean-fourier.md)
+- [스펙트럼 희소화](spectral-sparsification.md)
 
 #probability #measure_theory #statistics #algorithms
