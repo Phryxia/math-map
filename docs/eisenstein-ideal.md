@@ -101,7 +101,7 @@ $$
 
 ## 계수 0 의 증명
 
-$\tilde J$ 위의 유리점은 $I$ 를 소멸시키는 Galois 표현을 준다. 그런 표현은 가약이고 반단순화가 $1\oplus\chi_{\mathrm{cyc}}$ 다. 계수가 양수라면 $\mathbb Q$ 위에 $\mathbb Z$ 만큼의 점이 있어야 하고, 하강을 Eisenstein 방향으로 수행하면 그 점들이 순환체의 불분기 확대를 만든다. 첨점군의 위수가 작다는 계산이 그런 확대의 존재를 막는다.
+$\tilde J$ 위의 유리점은 $I$ 를 소멸시키는 [Galois 표현](galois-representations.md)을 준다. 그런 표현은 가약이고 반단순화가 $1\oplus\chi_{\mathrm{cyc}}$ 다. 계수가 양수라면 $\mathbb Q$ 위에 $\mathbb Z$ 만큼의 점이 있어야 하고, 하강을 Eisenstein 방향으로 수행하면 그 점들이 순환체의 불분기 확대를 만든다. 첨점군의 위수가 작다는 계산이 그런 확대의 존재를 막는다.
 
 정리 A 의 계산이 정리 B 의 유한성으로 번역되는 구조이며, 순환체의 류군이 작다는 사실이 Jacobian 의 계수를 0 으로 강제한다. 여기서 [Bernoulli 수](bernoulli-numbers.md)와 $\frac{p-1}{12}$ 의 분자가 다시 등장한다.
 

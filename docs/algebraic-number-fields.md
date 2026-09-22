@@ -8,7 +8,7 @@
 
 Dedekind 의 해결책은 원소 대신 [아이디얼](ideals-quotient-rings.md)을 분해하는 것이다. 원소의 분해는 깨져도 아이디얼의 소 아이디얼 분해는 언제나 유일하다. 깨진 정도를 재는 유한군이 유수군이고, 그 크기인 유수가 수체의 기본 불변량이다.
 
-수체가 [Galois 확대](galois-theory.md)면 Galois 군이 소 아이디얼들에 작용하고, 각 소수의 분해가 군론의 언어로 서술된다. 이 대응이 유체론의 출발점이며 [이차 상호법칙](quadratic-reciprocity.md)이 그 최소 사례다.
+수체가 [Galois 확대](galois-theory.md)면 Galois 군이 소 아이디얼들에 작용하고, 각 소수의 분해가 군론의 언어로 서술된다. 이 대응이 [유체론](class-field-theory.md)의 출발점이며 [이차 상호법칙](quadratic-reciprocity.md)이 그 최소 사례다.
 
 # 직관
 

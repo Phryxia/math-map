@@ -38,7 +38,7 @@ $$
 \chi\colon G_K^{\mathrm{ab}}\cong\widehat{K^\times}\longrightarrow\mathbb Z_p^\times
 $$
 
-인데 국소 유체론이 $K^\times\cong\pi^{\mathbb Z}\times\mathcal O_K^\times$ 를 주고 $\mathcal O_K^\times$ 가 $\mathbb Z_p^{[K:\mathbb Q_p]}$ 를 포함하므로 연속 지표가 양의 차원의 족을 이룬다.
+인데 국소 [유체론](class-field-theory.md)이 $K^\times\cong\pi^{\mathbb Z}\times\mathcal O_K^\times$ 를 주고 $\mathcal O_K^\times$ 가 $\mathbb Z_p^{[K:\mathbb Q_p]}$ 를 포함하므로 연속 지표가 양의 차원의 족을 이룬다.
 
 이 무한함은 정보량이기도 하다. 좋은 환원을 가진 다양체의 $\ell$ 진 코호몰로지는 관성이 자명하다는 사실만 말하지만, $p$ 진 코호몰로지는 특수 올의 결정 코호몰로지 전체를 Frobenius 와 Hodge 여과까지 포함해 기억한다. $p$ 진 Hodge 이론은 그 자료를 읽는 언어다.
 

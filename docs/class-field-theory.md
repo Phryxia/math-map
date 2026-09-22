@@ -32,7 +32,7 @@ $$
 
 군이 아벨이면 켤레류가 한원소라 모호함이 사라진다. $\mathrm{Frob}\_{\mathfrak p}$ 가 $\mathfrak p$ 만의 함수가 되고, 아이디얼의 곱에 대해 곱셈적으로 확장하면 아이디얼군에서 Galois 군으로 가는 준동형이 생긴다. 유체론이 아벨 확대에서 멈추는 이유다.
 
-비아벨로 넘어가면 켤레류 정보만 남는다. 켤레류에서 수를 뽑으려면 [표현의 지표](group-representations.md)가 필요하고, 거기서 Galois 표현과 $L$ 함수의 세계가 열린다.
+비아벨로 넘어가면 켤레류 정보만 남는다. 켤레류에서 수를 뽑으려면 [표현의 지표](group-representations.md)가 필요하고, 거기서 [Galois 표현](galois-representations.md)과 $L$ 함수의 세계가 열린다.
 
 ## 대응의 구조
 

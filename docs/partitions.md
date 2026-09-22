@@ -134,7 +134,7 @@ $$
 
 Dyson 은 분할에 rank 라는 통계량을 붙여 $5,7$ 의 경우 분할 집합을 다섯 덩이와 일곱 덩이로 실제로 나눌 수 있다고 추측했고, $11$ 에는 rank 가 통하지 않아 crank 가 필요하다고 예측했다. crank 는 1988 년 Andrews 와 Garvan 이 찾았다.
 
-합동은 이 셋으로 끝나지 않는다. Ono 는 5 이상의 모든 소수 $\ell$ 에 대해 어떤 등차수열에서 $p(n)\equiv0\pmod\ell$ 이 성립함을 $\eta$ 몫에 붙는 Galois 표현으로 증명했다.
+합동은 이 셋으로 끝나지 않는다. Ono 는 5 이상의 모든 소수 $\ell$ 에 대해 어떤 등차수열에서 $p(n)\equiv0\pmod\ell$ 이 성립함을 $\eta$ 몫에 붙는 [Galois 표현](galois-representations.md)으로 증명했다.
 
 ## 원법의 적용 범위
 

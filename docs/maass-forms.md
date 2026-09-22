@@ -149,7 +149,7 @@ $\Gamma\backslash\mathbb H$ 는 음곡률 곡면이므로 측지선 흐름이 �
 
 ## Artin 추측과의 연결
 
-2 차원 Galois 표현 $\rho:\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\mathbb C)$ 를 자기동형 형식에 대응시킬 때, $\rho(c)$ 의 행렬식으로 두 경우가 갈린다.
+2 차원 [Galois 표현](galois-representations.md) $\rho:\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\mathbb C)$ 를 자기동형 형식에 대응시킬 때, $\rho(c)$ 의 행렬식으로 두 경우가 갈린다.
 
 - **홀수** 곧 $\det\rho(c)=-1$ 인 경우는 무게 1 의 정칙 첨점형식에 대응한다. Khare–Wintenberger 의 Serre 추측 증명으로 해결되었다.
 - **짝수** 곧 $\det\rho(c)=+1$ 인 경우는 **고윳값 $\lambda=\tfrac14$ 인 Maass 형식**에 대응한다.

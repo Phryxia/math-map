@@ -165,7 +165,7 @@ $$
 D=-4:\ y^2=x^3-x\ (j=1728),\qquad D=-3:\ y^2=x^3+1\ (j=0)
 $$
 
-$\mathrm{End}$ 는 $\mathbb Q$ 위에서 $\mathbb Z$ 이고 $K$ 로 기저확대해야 $\mathcal O_K$ 전체가 보인다. 그래서 $\mathbb Q$ 위 CM 곡선의 Galois 표현은 기약이 아니라 $K$ 의 Hecke 지표 $\psi$ 에서 유도된 것이다.
+$\mathrm{End}$ 는 $\mathbb Q$ 위에서 $\mathbb Z$ 이고 $K$ 로 기저확대해야 $\mathcal O_K$ 전체가 보인다. 그래서 $\mathbb Q$ 위 CM 곡선의 [Galois 표현](galois-representations.md)은 기약이 아니라 $K$ 의 Hecke 지표 $\psi$ 에서 유도된 것이다.
 
 $$
 \rho_{E,\ell}\cong\mathrm{Ind}\_{G_K}^{G_{\mathbb Q}}\psi

@@ -68,7 +68,7 @@ $$
 
 ## Hecke 고유층
 
-고전 쪽에서 자기동형 형식은 Hecke 고유함수이고 고윳값의 모임이 Galois 표현을 결정한다. 기하 쪽의 대응물이 **Hecke 고유층**이다. $\hat G$ 국소계 $\sigma$ 에 대해
+고전 쪽에서 자기동형 형식은 Hecke 고유함수이고 고윳값의 모임이 [Galois 표현](galois-representations.md)을 결정한다. 기하 쪽의 대응물이 **Hecke 고유층**이다. $\hat G$ 국소계 $\sigma$ 에 대해
 
 $$
 H^V_x(\mathcal F)\thickspace\cong\thickspace\mathcal F\boxtimes V_\sigma\qquad(\text{모든 }V,\ x\ \text{에 대해 정합적으로})

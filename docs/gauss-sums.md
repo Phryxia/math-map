@@ -151,14 +151,14 @@ $i^\delta$ 는 무한 자리의 근 수다. 지표가 홀이면 감마 인자가
 
 $W(\chi)=-1$ 이면 함수방정식이 $\Lambda(\frac12)=-\Lambda(\frac12)$ 를 강제해 중심값이 $0$ 이 된다. 타원곡선의 $L$ 함수에서 이 부호가 **패리티**이고, [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)을 통해 계수의 홀짝을 예측한다.
 
-Deligne 은 국소 근 수가 Galois 표현의 자료만으로 정해지는 방식을 확립했다. 자기동형 쪽의 $\varepsilon$ 과 Galois 쪽의 $\varepsilon$ 이 일치해야 한다는 조건이 [Langlands 강령](langlands-program.md)에서 대응을 특정한다.
+Deligne 은 국소 근 수가 [Galois 표현](galois-representations.md)의 자료만으로 정해지는 방식을 확립했다. 자기동형 쪽의 $\varepsilon$ 과 Galois 쪽의 $\varepsilon$ 이 일치해야 한다는 조건이 [Langlands 강령](langlands-program.md)에서 대응을 특정한다.
 
 # 활용
 
 - **$L$ 함수의 계산.** 함수방정식으로 임계띠 안의 값을 계산하려면 $W(\chi)$ 가 필요하므로, $L$ 함수를 다루는 코드가 근 수를 먼저 구한다.
 - **패리티와 BSD(Birch–Swinnerton-Dyer).** 타원곡선 $L$ 함수의 근 수가 $-1$ 이면 중심값이 $0$ 이고, BSD 추측에 따라 계수가 홀수다. 근 수는 국소 자료에서 계산되므로 계수의 홀짝을 곡선의 환원 자료만으로 예측할 수 있다.
 - **지수합 추정.** Gauss 합과 Jacobi 합의 절댓값 $\sqrt p$ 가 유한체 위 방정식의 점 개수 추정을 준다. Weil 추측의 곡선 사례가 이 계산의 일반화다.
-- **상호법칙.** 이차 Gauss 합의 부호에서 이차 상호법칙이, 높은 차수의 Gauss 합에서 삼차와 사차 상호법칙이 나온다. 유체론 이전의 고전적 경로다.
+- **상호법칙.** 이차 Gauss 합의 부호에서 이차 상호법칙이, 높은 차수의 Gauss 합에서 삼차와 사차 상호법칙이 나온다. [유체론](class-field-theory.md) 이전의 고전적 경로다.
 
 [^1]: Gauss 합의 기본 성질과 부호 정리는 K. Ireland, M. Rosen, *A Classical Introduction to Modern Number Theory* (2판, 1990) 6장과 8장. 국소 근 수의 정의와 Tate 의 국소 함수방정식은 J. Tate, *Local Constants*, in *Algebraic Number Fields* (Durham 1975), 89–131. Galois 쪽 근 수와의 일치는 P. Deligne, *Les constantes des équations fonctionnelles des fonctions L*, Antwerp II (1973).
 

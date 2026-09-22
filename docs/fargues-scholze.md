@@ -125,7 +125,7 @@ $$
 
 ## 모듈러성 올림의 국소 조건
 
-$p$ 진 Galois 표현의 국소 조건, 이를테면 de Rham 조건은 [Fontaine–Mazur 추측](fontaine-mazur.md)의 증명에서 다루기 까다로운 부분이다. 기하화 틀에서는 이 조건이 매개변수 스택의 부분대상으로 번역되고, 변형환과 Hecke 대수를 비교하는 논법의 국소 부분이 개념적으로 다시 쓰인다.
+$p$ 진 [Galois 표현](galois-representations.md)의 국소 조건, 이를테면 de Rham 조건은 [Fontaine–Mazur 추측](fontaine-mazur.md)의 증명에서 다루기 까다로운 부분이다. 기하화 틀에서는 이 조건이 매개변수 스택의 부분대상으로 번역되고, 변형환과 Hecke 대수를 비교하는 논법의 국소 부분이 개념적으로 다시 쓰인다.
 
 ## 고전적 군의 매개변수
 

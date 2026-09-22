@@ -13,7 +13,7 @@ $$
 
 유한차원성이 도구가 된다. 다른 방식으로 만든 두 모듈러 형식이 같은 작은 공간에 있으면 몇 개의 계수만 맞춰 보아도 둘이 같고, 나머지 무한히 많은 계수의 항등식이 따라온다. 약수 함수의 합성곱 항등식, 분할수의 점근식, 격자의 theta 급수, 타원곡선의 점 개수가 이 방식으로 연결된다.
 
-이 대칭이 $\mathrm{GL}\_2$ 자기동형 표현을 고전적으로 쓴 것이며, [Langlands 강령](langlands-program.md)에서 Galois 표현과 짝지어지는 쪽이다.
+이 대칭이 $\mathrm{GL}\_2$ 자기동형 표현을 고전적으로 쓴 것이며, [Langlands 강령](langlands-program.md)에서 [Galois 표현](galois-representations.md)과 짝지어지는 쪽이다.
 
 # 직관
 

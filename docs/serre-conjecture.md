@@ -2,7 +2,7 @@
 
 # 개요
 
-[모듈러 형식](modular-forms.md)의 고유형식 $f$ 는 각 소수 $\lambda\mid p$ 마다 Galois 표현 $\rho_{f,\lambda}$ 를 낳고, 그것을 잉여체로 환원하면 2 차원 mod $p$ 표현
+[모듈러 형식](modular-forms.md)의 고유형식 $f$ 는 각 소수 $\lambda\mid p$ 마다 [Galois 표현](galois-representations.md) $\rho_{f,\lambda}$ 를 낳고, 그것을 잉여체로 환원하면 2 차원 mod $p$ 표현
 
 $$
 \bar\rho_f\colon G_{\mathbb Q}\longrightarrow \mathrm{GL}\_2(\overline{\mathbb F}\_p)

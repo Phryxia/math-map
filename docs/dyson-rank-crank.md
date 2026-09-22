@@ -128,7 +128,7 @@ $R(z;q)$ 를 $z=\zeta_{11}$ 에서 보면 $\Gamma_0(11)$ 관련 준위에서 sha
 
 ## 더 큰 합동식
 
-Ramanujan 합동식은 고립된 세 개가 아니다. $p(n)$ 은 $5^a7^b11^c$ 꼴의 법에서 합동식 족을 갖고(Watson, Atkin), Ono 는 $5$ 이상의 모든 소수 $\ell$ 에 대해 $p(An+B)\equiv0\pmod\ell$ 인 산술급수가 존재함을 보였다. 증명은 분할 생성함수를 반정수 무게 모듈러 형식으로 보고 Galois 표현과 Serre 의 소멸 정리를 쓴다. 조합적 설명이 있는 것은 작은 법뿐이다.
+Ramanujan 합동식은 고립된 세 개가 아니다. $p(n)$ 은 $5^a7^b11^c$ 꼴의 법에서 합동식 족을 갖고(Watson, Atkin), Ono 는 $5$ 이상의 모든 소수 $\ell$ 에 대해 $p(An+B)\equiv0\pmod\ell$ 인 산술급수가 존재함을 보였다. 증명은 분할 생성함수를 반정수 무게 모듈러 형식으로 보고 [Galois 표현](galois-representations.md)과 Serre 의 소멸 정리를 쓴다. 조합적 설명이 있는 것은 작은 법뿐이다.
 
 ## 모멘트
 
