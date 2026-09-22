@@ -4,7 +4,7 @@
 
 표본 $n$ 개로 $p$ 차원 공변량의 공분산을 추정할 때, 고전 통계는 $p$ 를 고정하고 $n \to \infty$ 를 보내며 표본공분산행렬 $S$ 가 참값 $\Sigma$ 로 수렴한다고 본다. 유전자 $2$ 만 개를 표본 $200$ 개로 재거나 자산 $500$ 개의 상관을 두 해치 일간 수익률로 재는 자료에서는 $p$ 도 함께 커지므로 비 $p/n$ 을 무시할 수 없다.
 
-**Marchenko–Pastur 법칙**은 $p/n \to \gamma$ 인 체제에서 $S$ 의 고윳값 분포를 준다. $\Sigma = I$ 이어도 고윳값은 $1$ 에 모이지 않고 $\bigl[(1-\sqrt\gamma)^2,\thinspace(1+\sqrt\gamma)^2\bigr]$ 에 퍼지며, 극한 분포가 $\gamma$ 하나로 정해진다. $\gamma = 0.5$ 에서 잡음만 있는 고윳값이 $0.086$ 부터 $2.91$ 까지 벌어진다.
+**Marchenko–Pastur 법칙**은 $p/n \to \gamma$ 인 체제에서 $S$ 의 [고윳값](eigenvalues.md) 분포를 준다. $\Sigma = I$ 이어도 고윳값은 $1$ 에 모이지 않고 $\bigl[(1-\sqrt\gamma)^2,\thinspace(1+\sqrt\gamma)^2\bigr]$ 에 퍼지며, 극한 분포가 $\gamma$ 하나로 정해진다. $\gamma = 0.5$ 에서 잡음만 있는 고윳값이 $0.086$ 부터 $2.91$ 까지 벌어진다.
 
 [Wigner 반원법칙](wigner-semicircle.md)과 같은 자리의 정리다. 항목이 독립인 큰 무작위 행렬의 고윳값 분포가 항목의 세부 분포와 무관하게 정해진다는 점이 같고, 대칭행렬 대신 $XX^{\mathsf T}$ 라는 곱 구조를 보므로 극한이 반원 대신 한쪽으로 치우친 모양이 된다. [주성분 분석](principal-component-analysis.md)에서 어느 고윳값이 신호인지 판정하는 영점 기준선이 이 분포의 받침이다.
 

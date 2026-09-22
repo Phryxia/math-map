@@ -56,7 +56,7 @@ $$
 
 $J$ 는 모든 성분이 1 인 행렬이다. $X$ 를 랭크 1 인 $xx^{\mathsf T}$ 로 제한하면 독립집합 문제 자체가 되고, 랭크 제약을 푼 것이 이 완화다.
 
-쌍대는 고윳값 문제다.
+쌍대는 [고윳값](eigenvalues.md) 문제다.
 
 $$
 \vartheta(G)=\min\ \lbrace\thinspace\lambda_{\max}(A)\ :\ A=A^{\mathsf T},\ A_{ij}=1\ \text{if}\ i=j\ \text{or}\ ij\notin E\thinspace\rbrace
