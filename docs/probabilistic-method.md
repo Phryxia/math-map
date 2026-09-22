@@ -174,7 +174,7 @@ $$
 
 - **무작위 알고리즘**: 확률적 존재 증명은 그대로 알고리즘의 설계 원리다. 무작위 quicksort, 무작위 반올림(randomized rounding)으로 [선형계획법](linear-programming.md) 완화를 정수해로 바꾸는 근사 알고리즘, 해시 기반 자료구조가 모두 같은 사고방식이다.
 - **극값 그래프 이론**: Turán 정리, Ramsey 수, 초그래프 색칠 등 하한의 대부분이 확률적 논증으로 얻어진다. 상한은 보통 세기 논법과 [포함배제 원리](inclusion-exclusion.md)로 얻으므로 두 축이 짝을 이룬다.
-- **부호 이론**: Shannon의 채널 부호화 정리는 무작위 부호가 용량을 달성함을 보이는 확률적 방법이며, [Shannon 엔트로피](entropy.md)가 계산의 언어를 제공한다.
+- **부호 이론**: Shannon의 [채널 부호화 정리](channel-coding.md)는 무작위 부호가 용량을 달성함을 보이는 확률적 방법이며, [Shannon 엔트로피](entropy.md)가 계산의 언어를 제공한다.
 - **집중과 고차원**: 기댓값만으로 부족할 때 [집중 부등식](concentration-inequalities.md)(Chernoff, Azuma, Talagrand)이 무작위 변수를 기댓값 근처에 묶어 준다. Azuma 부등식은 [martingale](martingales.md) 구조를 요구하므로, 확률적 방법은 martingale 이론과 만난다.
 - **위상수학과 기하**: 무작위 단체복합체, 무작위 다면체, 고차원 구면 위의 [측도](measure.md) 집중 현상은 같은 방법을 다른 대상에서 쓴 것이다.
 

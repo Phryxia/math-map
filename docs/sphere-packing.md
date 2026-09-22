@@ -105,7 +105,7 @@ $n=1,2,3,8,24$ 외의 차원에서는 최적 밀도를 모르고 상계와 하�
 
 ## 통신의 변조 설계
 
-Gauss 잡음 채널에서 신호를 격자점으로 보내면 복호가 **CVP**(closest vector problem)가 된다. 채널 부호화 정리의 용량에 접근하려면 고차원에서 밀도가 높은 격자가 필요하다. 실무의 변조 방식도 저차원 격자이며, QAM(quadrature amplitude modulation)이 $\mathbb Z^2$ 를 쓰고 일부 방식이 $D_4$ 나 $E_8$ 을 쓴다.
+Gauss 잡음 채널에서 신호를 격자점으로 보내면 복호가 **CVP**(closest vector problem)가 된다. [채널 부호화 정리](channel-coding.md)의 용량에 접근하려면 고차원에서 밀도가 높은 격자가 필요하다. 실무의 변조 방식도 저차원 격자이며, QAM(quadrature amplitude modulation)이 $\mathbb Z^2$ 를 쓰고 일부 방식이 $D_4$ 나 $E_8$ 을 쓴다.
 
 ## 양자화와 압축
 
