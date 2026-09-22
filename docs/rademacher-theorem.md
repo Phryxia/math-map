@@ -66,7 +66,7 @@ $$
 Q(x,v,t)=\frac{f(x+tv)-f(x)}{t}-\nabla f(x)\cdot v
 $$
 
-가 각 $v_k$ 에서 $t\to0$ 일 때 $0$ 으로 간다. $Q$ 는 $v$ 에 대해 Lipschitz 상수 $2L$ 로 Lipschitz 이므로 조밀한 방향에서의 수렴이 모든 방향에서의 균등수렴으로 올라가고, 이것이 전미분의 정의다.
+가 각 $v_k$ 에서 $t\to0$ 일 때 $0$ 으로 간다. $Q$ 는 $v$ 에 대해 Lipschitz 상수 $2L$ 로 Lipschitz 이므로 조밀한 방향에서의 수렴이 모든 방향에서의 [균등수렴](uniform-convergence.md)으로 올라가고, 이것이 전미분의 정의다.
 
 ## 도함수의 크기
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-단조 수렴 정리는 음이 아닌 [가측함수](measurable-functions.md)열 $f_n$ 이 점마다 증가해 $f$ 로 가면 $\int f_n\to\int f$ 라는 정리다. 균등수렴도 지배함수도 요구하지 않는다.
+단조 수렴 정리는 음이 아닌 [가측함수](measurable-functions.md)열 $f_n$ 이 점마다 증가해 $f$ 로 가면 $\int f_n\to\int f$ 라는 정리다. [균등수렴](uniform-convergence.md)도 지배함수도 요구하지 않는다.
 
 [Lebesgue 적분](lebesgue-integral.md)은 아래에 놓인 단순함수들의 상한으로 정의해서 선형성조차 정의에서 바로 나오지 않는다. 선형성, 급수와 적분의 교환, Fatou 보조정리, [지배수렴 정리](dominated-convergence.md)를 이 정리로 증명한다.
 

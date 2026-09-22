@@ -4,7 +4,7 @@
 
 지배 수렴 정리는 [가측함수](measurable-functions.md)열 $f_n$ 이 점마다 $f$ 로 가고 적분 가능한 $g$ 하나가 모든 $n$ 에서 $\lvert f_n\rvert\le g$ 를 만족하면 $\int f_n\to\int f$ 라는 정리다. [단조 수렴 정리](monotone-convergence.md)와 달리 부호가 섞이고 오르내리는 열에 쓴다.
 
-[Riemann 적분](riemann-integral.md)에서 같은 결론을 얻으려면 균등수렴이 필요했다. 여기서는 점별 수렴과 지배함수 $g$ 로 충분하다.
+[Riemann 적분](riemann-integral.md)에서 같은 결론을 얻으려면 [균등수렴](uniform-convergence.md)이 필요했다. 여기서는 점별 수렴과 지배함수 $g$ 로 충분하다.
 
 # 직관
 

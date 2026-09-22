@@ -4,7 +4,7 @@
 
 Borel–Weil–Bott 정리는 깃발다양체 $G/B$ 위 직선다발의 코호몰로지를 기약표현으로 계산한다.
 
-[Weyl 지표 공식](weyl-character-formula.md)은 콤팩트 Lie 군의 기약표현을 최고무게로 분류하고 지표를 닫힌 식으로 주지만, 그 벡터공간을 만드는 방법은 주지 않는다. Borel–Weil 정리의 답은 기하적이다. $G$ 를 복소 반단순군, $B$ 를 Borel 부분군이라 하자. 지배적 무게 $\lambda$ 는 $B$ 의 일차원 표현을 주고, 그것으로 $G/B$ 위에 직선다발 $\mathcal L_\lambda$ 를 꼬아 만들면
+[Weyl 지표 공식](weyl-character-formula.md)은 콤팩트 [Lie 군](lie-groups.md)의 기약표현을 최고무게로 분류하고 지표를 닫힌 식으로 주지만, 그 벡터공간을 만드는 방법은 주지 않는다. Borel–Weil 정리의 답은 기하적이다. $G$ 를 복소 반단순군, $B$ 를 Borel 부분군이라 하자. 지배적 무게 $\lambda$ 는 $B$ 의 일차원 표현을 주고, 그것으로 $G/B$ 위에 직선다발 $\mathcal L_\lambda$ 를 꼬아 만들면
 
 $$
 H^0(G/B,\mathcal L_\lambda)\cong V_\lambda^{\ast}

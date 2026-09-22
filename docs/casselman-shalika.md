@@ -10,7 +10,7 @@ $$
 
 $\alpha_i$ 는 $\pi_v$ 의 Satake 매개변수, $\lambda$ 는 지배적 여무게이고, $\lambda$ 가 지배적이 아니면 값이 0 이다.
 
-[Whittaker 모형](whittaker-models.md)은 $\mathrm{GL}\_n$ 첨점형식의 Fourier 계수를 대신하는 함수 $W(g)$ 를 주고, 유일성 덕분에 $W$ 가 자리마다의 곱으로 쪼개져 $L$ 함수가 Euler 곱이 된다. 각 자리의 $W$ 값을 [Schur 다항식](schur-polynomials.md)이 답한다. $p$ 진군 위의 조화해석이 낳은 값이 복소 Lie 군의 기약지표다.
+[Whittaker 모형](whittaker-models.md)은 $\mathrm{GL}\_n$ 첨점형식의 Fourier 계수를 대신하는 함수 $W(g)$ 를 주고, 유일성 덕분에 $W$ 가 자리마다의 곱으로 쪼개져 $L$ 함수가 Euler 곱이 된다. 각 자리의 $W$ 값을 [Schur 다항식](schur-polynomials.md)이 답한다. $p$ 진군 위의 조화해석이 낳은 값이 복소 [Lie 군](lie-groups.md)의 기약지표다.
 
 이 등식이 두 가지를 설명한다.
 

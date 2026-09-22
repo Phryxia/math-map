@@ -68,7 +68,7 @@ flowchart TD
 
 ## 작용
 
-콤팩트 단순 Lie 군 $G$ 와 정수 $k$ 에 대해 장 $g:\Sigma\to G$ 의 **WZW 작용**은 다음이고 $\Gamma$ 는 위의 Wess–Zumino 항이다.
+콤팩트 단순 [Lie 군](lie-groups.md) $G$ 와 정수 $k$ 에 대해 장 $g:\Sigma\to G$ 의 **WZW 작용**은 다음이고 $\Gamma$ 는 위의 Wess–Zumino 항이다.
 
 $$
 S_k(g)=\frac{k}{16\pi}\int_\Sigma\mathrm{tr}\big(g^{-1}\partial^\mu g\thinspace g^{-1}\partial_\mu g\big)\thinspace d^2x\thickspace+\thickspace k\thinspace\Gamma(g)

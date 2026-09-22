@@ -16,7 +16,7 @@ $f$ 가 뚫린 원판 $0\lt\vert z-a\vert\lt r$ 에서 정칙이고 $a$ 에서�
 
 ## 정규족
 
-영역 $\Omega$ 위의 정칙함수족 $\mathcal F$ 가 **정규족**이라는 것은 $\mathcal F$ 의 모든 수열이 $\Omega$ 의 콤팩트 부분집합마다 균등수렴하는 부분수열을 갖는다는 뜻이다. 극한을 $\widehat{\mathbb C}$ 에서 잡으면 상수 $\infty$ 로의 수렴도 허용한다.
+영역 $\Omega$ 위의 정칙함수족 $\mathcal F$ 가 **정규족**이라는 것은 $\mathcal F$ 의 모든 수열이 $\Omega$ 의 콤팩트 부분집합마다 [균등수렴](uniform-convergence.md)하는 부분수열을 갖는다는 뜻이다. 극한을 $\widehat{\mathbb C}$ 에서 잡으면 상수 $\infty$ 로의 수렴도 허용한다.
 
 # 성질
 

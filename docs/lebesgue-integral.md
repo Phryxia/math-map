@@ -70,7 +70,7 @@ $$
 | Fatou | $f_n \ge 0$ | $\int \liminf f_n \le \liminf \int f_n$ |
 | [지배수렴](dominated-convergence.md) | $f_n \to f$ 거의 어디서나이고 $\lvert f_n \rvert \le g \in L^1$ | $\int f_n \to \int f$ 이고 $\int \lvert f_n - f \rvert \to 0$ |
 
-세 정리 모두 점별 수렴만 가정한다. Riemann 적분에서는 균등수렴이 필요했다. 급수와 적분의 교환, 매개변수 미분과 적분의 교환을 이 정리들로 증명한다.
+세 정리 모두 점별 수렴만 가정한다. Riemann 적분에서는 [균등수렴](uniform-convergence.md)이 필요했다. 급수와 적분의 교환, 매개변수 미분과 적분의 교환을 이 정리들로 증명한다.
 
 단조수렴 정리의 따름정리로 음이 아닌 항의 급수와 적분을 항상 교환할 수 있다.
 
