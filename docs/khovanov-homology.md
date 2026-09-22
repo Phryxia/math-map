@@ -140,7 +140,7 @@ $\mathbb Z$ 계수 정육면체 복합체의 크기는 $\sum_\alpha 2^{k_\alpha}
 - 홀수 Khovanov 호몰로지는 같은 Euler 지표를 주면서 다른 꼬임을 갖는다. $\mathbb Z/2$ 계수에서 둘이 만난다.
 - Khovanov 호몰로지에서 Heegaard Floer 계열의 불변량으로 가는 스펙트럼 열이 여럿 있고, 두 이론을 잇는 주된 수단이다.
 - 안정 호모토피 유형까지 들어 올린 Lipshitz–Sarkar 의 구성이 있다. Steenrod 연산이 실제로 새 정보를 주는 예가 있다.
-- [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)과의 관계는 한 층 위에 있다. RT(Reshetikhin–Turaev) 는 모듈러 텐서범주에서 수를 뽑고 Khovanov 는 그 수의 범주화를 노린다. 3 차원 [다양체](manifolds.md) 불변량의 범주화는 훨씬 어렵고 부분적으로만 알려져 있다.
+- [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)과의 관계는 한 층 위에 있다. RT(Reshetikhin–Turaev) 는 [모듈러 텐서범주](modular-tensor-categories.md)에서 수를 뽑고 Khovanov 는 그 수의 범주화를 노린다. 3 차원 [다양체](manifolds.md) 불변량의 범주화는 훨씬 어렵고 부분적으로만 알려져 있다.
 
 # 활용
 

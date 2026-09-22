@@ -2,7 +2,7 @@
 
 # 개요
 
-[Reshetikhin–Turaev 불변량](reshetikhin-turaev.md) $\tau_k(M)$ 의 정의는 대수적이다. 모듈러 텐서범주의 $S$ 행렬과 비틀림을 수술 링크 위에서 유한합으로 묶으면 수 하나가 나오지만, 그 수가 $M$ 의 어떤 기하를 담는지는 정의에 나타나지 않는다.
+[Reshetikhin–Turaev 불변량](reshetikhin-turaev.md) $\tau_k(M)$ 의 정의는 대수적이다. [모듈러 텐서범주](modular-tensor-categories.md)의 $S$ 행렬과 비틀림을 수술 링크 위에서 유한합으로 묶으면 수 하나가 나오지만, 그 수가 $M$ 의 어떤 기하를 담는지는 정의에 나타나지 않는다.
 
 Witten 의 답은 $k\to\infty$ 에 있다. 그 극한에서 $\tau_k(M)$ 은 $M$ 위의 평탄 $\mathrm{SU}(2)$ 접속마다 붙는 항들의 합으로 분해되고, 각 항의 위상은 그 접속의 Chern–Simons 작용값, 진폭은 Reidemeister 비틀림이다.
 

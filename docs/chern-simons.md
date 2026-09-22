@@ -167,7 +167,7 @@ Hopf 링크에서 값이 $\pm1$ , 풀린 두 원에서 $0$ , 원환면 위를 �
 ## 양자 불변량과 2 차 특성류
 
 - 임계점의 CS 값이 양자 불변량의 점근 위상으로 나타나는 것이 Witten 점근 추측이다.
-- $\pi_3(G)=\mathbb Z$ 가 레벨을 양자화하듯 경계 이론의 레벨이 아핀 Lie 대수의 표현론을 유한하게 만들고, 모듈러 텐서범주의 단순대상이 유한개가 된다.
+- $\pi_3(G)=\mathbb Z$ 가 레벨을 양자화하듯 경계 이론의 레벨이 아핀 Lie 대수의 표현론을 유한하게 만들고, [모듈러 텐서범주](modular-tensor-categories.md)의 단순대상이 유한개가 된다.
 - 4 차원에서 한 차원 내려 3 차원 작용을 얻는 조작은 임의의 특성류에 대해 가능하며 그렇게 얻는 부류가 2 차 특성류다.
 
 [^1]: 원전은 S.-S. Chern–J. Simons, *Characteristic forms and geometric invariants*, Ann. of Math. 99 (1974). 물리적 해석과 매듭 이론과의 연결은 E. Witten, *Quantum field theory and the Jones polynomial*, Comm. Math. Phys. 121 (1989).
