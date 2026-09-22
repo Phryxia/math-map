@@ -156,7 +156,7 @@ $\tau(p^2)=\tau(p)^2-p^{11}$ 은 $\alpha_p+\beta_p=\tau(p)$ 와 $\alpha_p\beta_p
 
 - *Weil II* 의 무게 정리가 편향 층, 교차 코호몰로지, 혼합 Hodge 가군으로 이어졌다.
 - [Kloosterman 합](dwork-rationality.md)을 비롯한 지수합의 최적 상계가 이 정리에서 나온다. Katz 의 *Gauss Sums, Kloosterman Sums and Monodromy Groups* 가 이 응용을 체계화했다.
-- Ramanujan 한계가 [모듈러 형식](modular-forms.md)의 $L$ 함수 추정에 들어간다. 볼록성 깨기, 부분합 추정, 소수 정리의 변형이 이에 의존한다.
+- Ramanujan 한계가 [모듈러 형식](modular-forms.md)의 $L$ 함수 추정에 들어간다. 볼록성 깨기, 부분합 추정, [소수 정리](prime-number-theorem.md)의 변형이 이에 의존한다.
 - Goppa 의 대수기하 부호의 성능은 $\char35{}X(\mathbb F_q)$ 의 하계인 Weil 한계에서 나온다. Tsfasman–Vlăduţ–Zink 한계가 Gilbert–Varshamov 한계를 넘은 것이 그 산물이다.
 - Grothendieck 의 표준 추측은 증명되지 않은 채로 남아 있다[^2]. Deligne 의 증명은 그것을 우회했을 뿐 대체하지 않았다.
 
