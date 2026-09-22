@@ -18,7 +18,7 @@
 
 ## Robbins–Monro 절차
 
-$f:\mathbb R^d\to\mathbb R^d$ 의 값을 직접 얻을 수 없고, 각 $\theta$ 에서 $\mathbb E\lbrack Y(\theta)\rbrack=f(\theta)$ 인 확률변수 $Y(\theta)$ 만 뽑을 수 있다고 하자. $f(\theta)=0$ 의 해를 찾는 **Robbins–Monro 절차**는 다음 반복이다[^1].
+$f:\mathbb R^d\to\mathbb R^d$ 의 값을 직접 얻을 수 없고, 각 $\theta$ 에서 $\mathbb E\lbrack Y(\theta)\rbrack=f(\theta)$ 인 [확률변수](random-variables.md) $Y(\theta)$ 만 뽑을 수 있다고 하자. $f(\theta)=0$ 의 해를 찾는 **Robbins–Monro 절차**는 다음 반복이다[^1].
 
 $$\theta_{t+1}=\theta_t+\alpha_t\thinspace Y_t,\qquad Y_t=f(\theta_t)+w_t$$
 

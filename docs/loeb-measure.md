@@ -78,7 +78,7 @@ $$
 
 - **Brown 운동의 구성.** 걸음 수가 초유한 개이고 각 걸음이 $\pm1/\sqrt N$ 인 무작위 걸음을 잡고 표준부분을 취하면 [Brown 운동](brownian-motion.md)이 나온다. 경로의 연속성과 측도의 존재가 이 한 구성에서 동시에 나온다.[^2]
 - **확률공간의 성질.** Loeb 확률공간은 원자가 없고 포화되어 있다. 분포가 주어진 [확률변수](random-variables.md)를 항상 실현할 수 있으므로 분포에 대한 진술을 확률변수에 대한 진술로 바꾸는 논증이 쉬워진다.
-- **극한 정리.** 확률변수열의 약수렴을 초유한 지표에서의 등식으로 바꾼다. 중심극한정리를 초유한 무작위 걸음의 한 시점에서 읽는 것이 그 예다.
+- **극한 정리.** 확률변수열의 약수렴을 초유한 지표에서의 등식으로 바꾼다. [중심극한정리](central-limit-theorem.md)를 초유한 무작위 걸음의 한 시점에서 읽는 것이 그 예다.
 - **측도의 존재 증명.** 내부 대상에서 시작해 $\sigma$ 가법성을 포화성으로 얻으므로, 측도의 구성에서 Carathéodory 외측도 논증을 대신하는 길이 된다.
 
 [^1]: Peter A. Loeb, *Conversion from nonstandard to standard measure spaces and applications in probability theory*, Transactions of the American Mathematical Society 211 (1975), 113–122.

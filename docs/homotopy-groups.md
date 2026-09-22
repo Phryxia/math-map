@@ -79,7 +79,7 @@ $\pi_{n+k}(S^n)$ 은 $n\gt k+1$ 에서 $n$ 에 무관하고, 그 값을 $k$ 차 
 # 활용
 
 - **올뭉치의 분류.** 밑공간이 $S^n$ 인 올뭉치는 구조군의 $\pi_{n-1}$ 원소로 분류된다. $S^2$ 위의 원 올뭉치가 $\pi_1(S^1)=\mathbb Z$ 로 분류되고 Hopf 올뭉치가 생성원이다.
-- **장애 이론.** 사상을 한 차원씩 올려 가며 확장할 때 각 단계의 장애가 호모토피군에 값을 갖는 코호몰로지류로 나타난다.
+- **[장애 이론](obstruction-theory.md).** 사상을 한 차원씩 올려 가며 확장할 때 각 단계의 장애가 호모토피군에 값을 갖는 코호몰로지류로 나타난다.
 - **물리의 위상 결함.** 질서 매개변수 공간의 $\pi_1$ 이 선 결함을, $\pi_2$ 가 점 결함을 분류한다. 순간자의 분류에 $\pi_3(\mathrm{SU}(2))=\mathbb Z$ 가 쓰인다([순간자 Floer 호몰로지](instanton-floer-homology.md)).
 
 [^1]: J.-P. Serre, "Homologie singulière des espaces fibrés. Applications", Annals of Mathematics 54 (1951), https://doi.org/10.2307/1969485

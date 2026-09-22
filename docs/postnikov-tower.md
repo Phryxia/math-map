@@ -12,7 +12,7 @@ $S^2$ 의 호모토피군은 $\pi_2=\mathbb Z$ 이고 $\pi_3=\mathbb Z$ 다. 뒤
 
 가장 단순한 후보는 두 군을 각각 한 차수에 갖는 공간의 곱 $K(\mathbb Z,2)\times K(\mathbb Z,3)$ 이다. $\pi_2$ 와 $\pi_3$ 이 $S^2$ 와 같고 그보다 높은 호모토피군은 없다.
 
-두 공간이 같은지 보려면 [코호몰로지](cohomology.md)를 비교한다. $K(\mathbb Z,2)=\mathbb{CP}^{\infty}$ 의 정수 코호몰로지는 $\iota$ 하나가 생성하는 다항식환이므로 $H^4$ 가 $\iota^2$ 으로 생성되는 $\mathbb Z$ 다. 곱 공간에서 이 $\iota^2$ 은 그대로 살아남는다.
+두 공간이 같은지 보려면 [코호몰로지](cohomology.md)를 비교한다. $K(\mathbb Z,2)=\mathbb{CP}^{\infty}$ 의 정수 코호몰로지는 $\iota$ 하나가 생성하는 [다항식환](polynomial-rings.md)이므로 $H^4$ 가 $\iota^2$ 으로 생성되는 $\mathbb Z$ 다. 곱 공간에서 이 $\iota^2$ 은 그대로 살아남는다.
 
 $S^2$ 쪽에서는 그렇지 않다. $\pi_3$ 을 붙이는 단계가 $K(\mathbb Z,2)$ 위의 올다발이고, 그 올다발은 $H^4(K(\mathbb Z,2);\mathbb Z)$ 의 원소 하나로 정해진다. 그 원소가 $\iota^2$ 이며 $0$ 이 아니다. 원소가 $0$ 일 때만 올다발이 곱이 되므로 $S^2$ 의 3차 자료는 곱이 아니다.
 
