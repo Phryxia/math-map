@@ -60,7 +60,7 @@ $\Vert f(t,x)-f(t,y)\Vert\le\omega(\Vert x-y\Vert)$ 인 증가함수 $\omega$ �
 
 ## 무한차원에서의 실패
 
-$\mathbb R^n$ 을 일반적인 Banach 공간으로 바꾸면 정리가 거짓이 된다. Dieudonné 는 수열공간 $c_0$ 에서 연속인 $f$ 로 해가 존재하지 않는 초기값 문제를 만들었다.[^3] 증명이 닫힌 유계집합의 콤팩트성을 쓰는데 무한차원에서는 그것이 성립하지 않는다. Picard–Lindelöf 정리는 축약사상만 쓰므로 [Banach 공간](banach-spaces.md)에서도 그대로 성립한다.
+$\mathbb R^n$ 을 일반적인 Banach 공간으로 바꾸면 정리가 거짓이 된다. Dieudonné 는 수열공간 $c_0$ 에서 연속인 $f$ 로 해가 존재하지 않는 초기값 문제를 만들었다.[^3] 증명이 닫힌 유계집합의 [콤팩트성](compactness.md)을 쓰는데 무한차원에서는 그것이 성립하지 않는다. Picard–Lindelöf 정리는 축약사상만 쓰므로 [Banach 공간](banach-spaces.md)에서도 그대로 성립한다.
 
 # 활용
 

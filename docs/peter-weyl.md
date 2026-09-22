@@ -36,7 +36,7 @@ $$
 \langle u,v\rangle=\int_G\langle gu,gv\rangle_0\thinspace dg
 $$
 
-콤팩트성은 여기에 쓰인다. Haar 측도의 전체 질량이 유한해야 평균이 정의된다. $G=\mathbb R$ 에서는 전체 질량이 무한이어서 이 논법이 무너지고, 유니터리 표현이 직합이 아니라 직적분으로 분해되어 [연속 스펙트럼](bounded-operators.md)이 나온다.
+[콤팩트성](compactness.md)은 여기에 쓰인다. Haar 측도의 전체 질량이 유한해야 평균이 정의된다. $G=\mathbb R$ 에서는 전체 질량이 무한이어서 이 논법이 무너지고, 유니터리 표현이 직합이 아니라 직적분으로 분해되어 [연속 스펙트럼](bounded-operators.md)이 나온다.
 
 ## 행렬계수
 

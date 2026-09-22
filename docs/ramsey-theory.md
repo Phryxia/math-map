@@ -130,7 +130,7 @@ Schur 정리는 van der Waerden 정리(색칠하면 단색 등차수열이 생�
 
 ## 무한과 유한의 관계
 
-무한 Ramsey 정리에서 콤팩트성 논증으로 유한 버전을 얻을 수 있다. 반대로 유한 버전들의 모음에서 무한 버전을 얻는 것은 자동이 아니다. Paris–Harrington 정리는 유한 Ramsey 정리의 어떤 강화가 Peano 산술에서 증명 불가능함을 보였고, 이것이 [Gödel 불완전성](godel-incompleteness.md)의 조합론적 예다.
+무한 Ramsey 정리에서 [콤팩트성](compactness.md) 논증으로 유한 버전을 얻을 수 있다. 반대로 유한 버전들의 모음에서 무한 버전을 얻는 것은 자동이 아니다. Paris–Harrington 정리는 유한 Ramsey 정리의 어떤 강화가 Peano 산술에서 증명 불가능함을 보였고, 이것이 [Gödel 불완전성](godel-incompleteness.md)의 조합론적 예다.
 
 # 활용
 
