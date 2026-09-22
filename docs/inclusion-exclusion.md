@@ -116,7 +116,7 @@ $$
 
 ## Möbius 반전
 
-포함배제는 국소 유한 [부분순서](partial-orders.md) 집합 위의 Möbius 반전의 특수한 경우다. 부분집합 격자의 Möbius 함수가 다음 값을 가지므로 부호 $(-1)^{\vert S\vert}$ 가 나타난다.
+포함배제는 국소 유한 [부분순서](partial-orders.md) 집합 위의 Möbius 반전의 특수한 경우다. 부분집합 [격자](order-lattices.md)의 Möbius 함수가 다음 값을 가지므로 부호 $(-1)^{\vert S\vert}$ 가 나타난다.
 
 $$
 \mu(S,T)=(-1)^{|T\setminus S|}\quad (S\subseteq T)
