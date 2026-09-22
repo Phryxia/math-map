@@ -56,7 +56,7 @@ function qLearning(env, A, gamma, episodes) {
 
 $S$ 와 $A$ 가 유한하고 모든 짝 $(s,a)$ 가 무한히 자주 방문되며 학습률이 $\sum_t\alpha_t=\infty$ 와 $\sum_t\alpha_t^2\lt\infty$ 를 만족하면 $Q$ 는 확률 $1$ 로 $Q^\ast$ 에 수렴한다[^1].
 
-증명의 요지. 갱신식을 확률근사의 형태 $Q\_{t+1}=(1-\alpha_t)Q_t+\alpha_t(\mathcal T Q_t+w_t)$ 로 쓴다. $\mathcal T$ 는 $Q$ 에 대한 Bellman 작용소이고 상한 노름에서 계수 $\gamma$ 의 [축약사상](banach-fixed-point.md)이다. $w_t$ 는 한 표본과 그 기댓값의 차이라 조건부 평균이 $0$ 이고 분산이 유계다. 축약사상에 평균이 $0$ 인 잡음을 더한 확률근사는 고정점으로 수렴한다.
+증명의 요지. 갱신식을 [확률근사](stochastic-approximation.md)의 형태 $Q\_{t+1}=(1-\alpha_t)Q_t+\alpha_t(\mathcal T Q_t+w_t)$ 로 쓴다. $\mathcal T$ 는 $Q$ 에 대한 Bellman 작용소이고 상한 노름에서 계수 $\gamma$ 의 [축약사상](banach-fixed-point.md)이다. $w_t$ 는 한 표본과 그 기댓값의 차이라 조건부 평균이 $0$ 이고 분산이 유계다. 축약사상에 평균이 $0$ 인 잡음을 더한 확률근사는 고정점으로 수렴한다.
 
 ## 정책에서 떨어진 학습
 
@@ -79,6 +79,7 @@ $\max_{a'}Q(s',a')$ 는 잡음이 섞인 추정값들의 최댓값이므로 기�
 ## 선수지식
 
 - [Markov 결정 과정](markov-decision-process.md)
+- [확률근사](stochastic-approximation.md)
 
 ## 더 알아보기
 

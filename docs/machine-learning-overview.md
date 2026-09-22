@@ -67,6 +67,7 @@ graph TD
 ## 순차 결정
 
 - [Markov 결정 과정](markov-decision-process.md) — 상태마다 행동을 고르는 연쇄. Bellman 방정식의 값 반복이 강화학습의 기반이다
+- [확률근사](stochastic-approximation.md) — 잡음이 섞인 관측만으로 방정식의 해를 찾는 반복. 보폭 조건이 수렴을 준다
 - [Q 학습](q-learning.md) — 전이확률을 모르고 표본 하나마다 시간차 오차로 갱신한다
 - [최적 정지](optimal-stopping.md) — 행동이 멈춤과 계속 둘뿐인 경우. Snell 포락이 언제 멈출지를 정한다
 
