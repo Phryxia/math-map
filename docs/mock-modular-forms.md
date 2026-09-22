@@ -186,6 +186,6 @@ Ramanujan 의 mock theta 함수는 전부 무게 $1/2$ 이고 shadow 는 무게 
 
 - [Dyson 의 rank 와 crank](dyson-rank-crank.md)
 - [Umbral moonshine 과 Mathieu 달빛](umbral-moonshine.md)
-- [Borcherds 곱과 특이 theta 올림](borcherds-products.md)
+- [Borcherds 곱](borcherds-products.md)
 
 #number_theory #complex_analysis #combinatorics

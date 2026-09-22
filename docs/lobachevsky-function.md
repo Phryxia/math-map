@@ -121,7 +121,7 @@ $6\Lambda(\pi/3)$ 이 볼륨 추측에서 색 Jones 다항식의 증가율로 �
 
 ## 더 알아보기
 
-- [쌍곡 3 다양체와 Mostow 강직성](hyperbolic-3-manifolds.md)
+- [쌍곡 3 다양체](hyperbolic-3-manifolds.md)
 - [볼륨 추측과 색 Jones 다항식](volume-conjecture.md)
 
 #analysis #differential_geometry #topology #computation

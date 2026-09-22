@@ -214,7 +214,7 @@ $$
 - [Gauss–Bonnet 정리](gauss-bonnet.md)
 - [Hodge 이론](hodge-theory.md)
 - [Selberg 대각합 공식](selberg-trace-formula.md)
-- [쌍곡 3 다양체와 Mostow 강직성](hyperbolic-3-manifolds.md)
+- [쌍곡 3 다양체](hyperbolic-3-manifolds.md)
 - [Teichmüller 공간](teichmuller-space.md)
 
 #differential_geometry #optimization #statistics

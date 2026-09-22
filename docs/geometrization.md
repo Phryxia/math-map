@@ -167,7 +167,7 @@ Thurston 의 정리가 이 목록의 완전성을 준다. 교차수 16 이하의
 
 ## 선수지식
 
-- [쌍곡 3 다양체와 Mostow 강직성](hyperbolic-3-manifolds.md)
+- [쌍곡 3 다양체](hyperbolic-3-manifolds.md)
 
 ## 더 알아보기
 

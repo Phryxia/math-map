@@ -155,6 +155,6 @@ $$
 - [Galois 표현](galois-representations.md)
 - [Khovanov 호몰로지](khovanov-homology.md)
 - [Reidemeister 비틀림과 렌즈 공간](reidemeister-torsion.md)
-- [대수적 K 이론과 Quillen–Lichtenbaum](algebraic-k-theory.md)
+- [대수적 K 이론](algebraic-k-theory.md)
 
 #algebraic_topology #topology #algebra #graph_theory

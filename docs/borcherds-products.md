@@ -1,4 +1,4 @@
-# Borcherds 곱과 특이 theta 올림
+# Borcherds 곱
 
 # 개요
 

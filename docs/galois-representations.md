@@ -163,7 +163,7 @@ Serre 추측은 $\bar\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\bar{\mathbb F}\_
 - [Dwork 의 유리성 정리와 지수합](dwork-rationality.md)
 - [p 진 Hodge 이론과 Fontaine 주기환](p-adic-hodge-theory.md)
 - [Herbrand–Ribet 정리와 Eisenstein 합동](herbrand-ribet.md)
-- [대수적 K 이론과 Quillen–Lichtenbaum](algebraic-k-theory.md)
+- [대수적 K 이론](algebraic-k-theory.md)
 - [Vogan L 꾸러미와 순수 내부형식](vogan-packets.md)
 
 #number_theory #algebraic_topology #group_theory

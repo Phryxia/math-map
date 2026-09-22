@@ -54,7 +54,7 @@ graph TD
 ## 3 차원과 매듭
 
 - [매듭 불변량](knot-invariants.md) → [땋임군](braid-groups.md), [Khovanov 호몰로지](khovanov-homology.md)
-- [쌍곡 3 다양체와 Mostow 강직성](hyperbolic-3-manifolds.md) → [기하화 정리](geometrization.md)
+- [쌍곡 3 다양체](hyperbolic-3-manifolds.md) → [기하화 정리](geometrization.md)
 - [Lobachevsky 함수](lobachevsky-function.md) → [볼륨 추측](volume-conjecture.md): 양자 불변량이 쌍곡 부피를 본다
 - [Casson 불변량](casson-invariant.md) → [순간자 Floer 호몰로지](instanton-floer-homology.md)
 

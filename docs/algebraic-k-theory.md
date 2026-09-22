@@ -1,4 +1,4 @@
-# 대수적 K 이론과 Quillen–Lichtenbaum
+# 대수적 K 이론
 
 # 개요
 
