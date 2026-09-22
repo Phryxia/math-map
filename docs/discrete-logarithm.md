@@ -1,4 +1,4 @@
-# 이산로그와 Diffie–Hellman
+# 이산로그
 
 # 개요
 

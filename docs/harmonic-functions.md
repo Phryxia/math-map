@@ -74,7 +74,7 @@ $$\frac{R-r}{R+r}\thinspace u(0)\le u(z)\le\frac{R+r}{R-r}\thinspace u(0)$$
 - [해석적 연속](analytic-continuation.md): Schwarz 반사 원리의 조화판은 실축에서 $0$ 인 조화함수를 홀함수로 확장한다.
 - [Brown 운동](brownian-motion.md): 영역 $\Omega$ 에서 출발한 Brown 운동을 경계에 닿을 때까지 흘려 경계값의 기댓값을 취하면 Dirichlet 문제의 해가 된다. 평균값 성질이 확률 쪽에서는 정지된 과정이 martingale 이라는 진술이 된다.
 - [무작위 걷기](random-walks.md): 이산 Laplace 연산자의 영공간이 조화함수의 이산판이고, 전위가 그 역할을 한다.
-- [Kähler 다양체와 Hodge 분해](kahler-manifolds.md): 조화형식은 Laplace–Beltrami 연산자의 핵이고, 각 [de Rham 코호몰로지](de-rham-cohomology.md)류에 조화 대표원이 하나씩 있다.
+- [Kähler 다양체](kahler-manifolds.md): 조화형식은 Laplace–Beltrami 연산자의 핵이고, 각 [de Rham 코호몰로지](de-rham-cohomology.md)류에 조화 대표원이 하나씩 있다.
 
 # 연관 문서
 

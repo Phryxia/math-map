@@ -33,7 +33,7 @@ graph TD
   DT --> SP
   UF["서로소 집합 자료구조"] --> DC["동적 연결성"]
   DC --> LCT["Link-cut tree"]
-  DL["이산로그와 Diffie–Hellman"] --> PQ["격자 기반 후양자 암호"]
+  DL["이산로그"] --> PQ["격자 기반 후양자 암호"]
   LA["격자"] --> SVP["최단벡터 문제"]
   SVP --> PQ
   PQ --> HE["완전동형암호"]
@@ -49,12 +49,12 @@ graph TD
 - [Turing 차수](turing-degrees.md): 결정 불가능성의 정도를 재는 순서, 도약과 Post 문제
 - [산술적 계층](arithmetical-hierarchy.md): 한정기호 교대 횟수로 매긴 층, Post 정리와 각 층의 완전 집합
 - [Rice 정리](rice-theorem.md): 자명하지 않은 의미론적 성질은 모두 결정 불가능
-- [유한 오토마타와 정규언어](finite-automata.md): 유한 상태 모형, Myhill–Nerode 정리, 펌핑 보조정리
+- [유한 오토마타](finite-automata.md): 유한 상태 모형, Myhill–Nerode 정리, 펌핑 보조정리
 - [Lambda calculus](lambda-calculus.md): 함수 적용만으로 세운 계산 모형, $\beta$ 축약과 Church–Rosser 정리
 - [Curry–Howard 대응](curry-howard.md): 증명과 프로그램, 명제와 타입의 대응
 - [영역 이론과 Kleene 고정점 정리](domain-theory.md): 재귀 정의의 의미를 최소 고정점으로
 - [추상해석과 정적 분석의 건전성](abstract-interpretation.md): Galois 연결로 맺은 구체와 추상 의미, 고정점 근사
-- [애니온과 위상적 양자계산](anyons.md): 꼬임군의 표현으로 만드는 결맞음 오류에 강한 계산 모형
+- [애니온](anyons.md): 꼬임군의 표현으로 만드는 결맞음 오류에 강한 계산 모형
 
 ## 복잡도와 근사 한계
 
@@ -100,7 +100,7 @@ graph TD
 ## 암호
 
 - [RSA 암호](rsa-cryptosystem.md): RSA(Rivest–Shamir–Adleman), 소인수분해의 난해성 위에 세운 공개키 암호
-- [이산로그와 Diffie–Hellman](discrete-logarithm.md): 순환군의 이산로그 문제와 키 교환
+- [이산로그](discrete-logarithm.md): 순환군의 이산로그 문제와 키 교환
 - [쌍선형 암호](pairing-based-cryptography.md): 타원곡선의 쌍선형 사상과 신원 기반 암호
 - [격자 기반 후양자 암호](post-quantum-cryptography.md): LWE(learning with errors)와 SIS(short integer solution), 양자 알고리즘에 견디는 가정
 - [완전동형암호](homomorphic-encryption.md): 암호문 위에서 덧셈과 곱셈, 잡음 관리와 부트스트래핑

@@ -57,7 +57,7 @@ graph TD
 ## Hodge 이론과 지표 정리
 
 - [Hodge 이론](hodge-theory.md): 코호몰로지류마다 조화형식 대표원이 하나
-- [Kähler 다양체와 Hodge 분해](kahler-manifolds.md): 복소구조와 계량이 양립할 때의 분해
+- [Kähler 다양체](kahler-manifolds.md): 복소구조와 계량이 양립할 때의 분해
 - [지표 정리](index-theorem.md): 타원작용소의 해석적 지표가 위상적 지표와 같다
 - [Riemann–Roch 정리](riemann-roch.md): 곡선 위 선다발의 단면 차원을 세는 공식
 

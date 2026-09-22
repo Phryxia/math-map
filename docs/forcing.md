@@ -126,7 +126,7 @@ ccc 순서의 유한 지지 반복은 다시 ccc 를 만족한다. Solovay 와 T
 
 ## 선수지식
 
-- [연속체 가설과 독립성](continuum-hypothesis.md)
+- [연속체 가설](continuum-hypothesis.md)
 
 ## 더 알아보기
 

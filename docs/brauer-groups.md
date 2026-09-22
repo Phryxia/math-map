@@ -1,4 +1,4 @@
-# Brauer 군과 Hasse 원리
+# Brauer 군
 
 # 개요
 

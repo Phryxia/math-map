@@ -157,7 +157,7 @@ $$
 ### 정수론
 
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)
-- [이산로그와 Diffie–Hellman](discrete-logarithm.md)
+- [이산로그](discrete-logarithm.md)
 
 ### 위상과 그래프
 

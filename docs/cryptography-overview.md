@@ -46,7 +46,7 @@ graph TD
 ## 공개키의 두 가정
 
 - [RSA 암호](rsa-cryptosystem.md) — 소인수분해의 어려움. Euler 정리가 지수의 주기를 주고 중국인의 나머지 정리가 복호를 가속한다
-- [이산로그와 Diffie–Hellman](discrete-logarithm.md) — 유한군에서 $g^x$ 로부터 $x$ 를 되찾는 문제. Pohlig–Hellman 환산과 지표 계산법이 안전한 군의 조건을 정한다
+- [이산로그](discrete-logarithm.md) — 유한군에서 $g^x$ 로부터 $x$ 를 되찾는 문제. Pohlig–Hellman 환산과 지표 계산법이 안전한 군의 조건을 정한다
 
 ## 타원곡선 암호
 
@@ -76,7 +76,7 @@ graph TD
 
 ## 더 알아보기
 
-- [이산로그와 Diffie–Hellman](discrete-logarithm.md)
+- [이산로그](discrete-logarithm.md)
 - [RSA 암호](rsa-cryptosystem.md)
 
 #cryptography #number_theory #computation #overview

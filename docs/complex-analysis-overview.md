@@ -34,7 +34,7 @@ graph TD
   PNT --> DL["Dirichlet L 함수"]
   HF --> MF["모듈러 형식"]
   HF --> RR["Riemann–Roch 정리"]
-  HF --> KM["Kähler 다양체와 Hodge 분해"]
+  HF --> KM["Kähler 다양체"]
 ```
 
 # 갈래
@@ -70,7 +70,7 @@ graph TD
 - [Dirichlet L 함수](dirichlet-l-functions.md): 등차수열의 소수 정리
 - [모듈러 형식](modular-forms.md): 상반평면 위의 변환 규칙을 가진 정칙함수
 - [Riemann–Roch 정리](riemann-roch.md): 곡면 위 유리형함수 공간의 차원
-- [Kähler 다양체와 Hodge 분해](kahler-manifolds.md): 조화형식으로 읽는 코호몰로지
+- [Kähler 다양체](kahler-manifolds.md): 조화형식으로 읽는 코호몰로지
 
 # 연관 문서
 

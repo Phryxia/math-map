@@ -52,7 +52,7 @@ graph TD
 
 정수론의 어려운 문제가 곧 암호의 안전성이다. 계산 알고리즘도 여기 둔다.
 
-- [이산로그와 Diffie–Hellman](discrete-logarithm.md), [RSA 암호](rsa-cryptosystem.md): 고전 공개키 암호
+- [이산로그](discrete-logarithm.md), [RSA 암호](rsa-cryptosystem.md): 고전 공개키 암호
 - [타원곡선](elliptic-curves.md), [쌍선형 암호](pairing-based-cryptography.md): 곡선 위의 암호
 - [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md), [Kedlaya 알고리즘](kedlaya-algorithm.md): 유한체 위 곡선의 점 세기
 - [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md)(supersingular isogeny Diffie–Hellman), [Deuring 대응](deuring-correspondence.md): 동종사상 기반 암호와 그 파괴
@@ -66,7 +66,7 @@ graph TD
 - [대수적 수체](algebraic-number-fields.md) → [Dirichlet 단수 정리](dirichlet-unit-theorem.md): 단수군의 계수와 조절자, 류수 공식
 - [p 진수](p-adic-numbers.md) → [Newton 다각형](newton-polygon.md), [아델](adeles.md)
 - [유체론](class-field-theory.md) → [국소 유체론과 Lubin–Tate 형식군](local-class-field-theory.md), [Chebotarev 밀도 정리](chebotarev.md), [복소 곱셈](complex-multiplication.md)
-- [Brauer 군과 Hasse 원리](brauer-groups.md), [Poitou–Tate 완전열](poitou-tate.md): 국소–대역 원리의 코호몰로지
+- [Brauer 군](brauer-groups.md), [Poitou–Tate 완전열](poitou-tate.md): 국소–대역 원리의 코호몰로지
 
 ## 해석적 정수론과 L 함수
 

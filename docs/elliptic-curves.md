@@ -143,7 +143,7 @@ $$
 
 ## 선수지식
 
-- [이산로그와 Diffie–Hellman](discrete-logarithm.md)
+- [이산로그](discrete-logarithm.md)
 - [유한체](finite-fields.md)
 
 ## 더 알아보기

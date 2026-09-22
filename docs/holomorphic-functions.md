@@ -142,6 +142,6 @@ $$
 
 - [모듈러 형식](modular-forms.md)
 - [Riemann–Roch 정리](riemann-roch.md)
-- [Kähler 다양체와 Hodge 분해](kahler-manifolds.md)
+- [Kähler 다양체](kahler-manifolds.md)
 
 #complex_analysis #analysis #number_theory

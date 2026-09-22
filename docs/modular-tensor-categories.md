@@ -161,6 +161,6 @@ Fibonacci 애니온의 꼬임 연산은 유니터리 군에서 조밀한 부분�
 ## 더 알아보기
 
 - [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)
-- [애니온과 위상적 양자계산](anyons.md)
+- [애니온](anyons.md)
 
 #category_theory #algebra #topology

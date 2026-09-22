@@ -154,7 +154,7 @@ ML-KEM-768 의 공개키는 1184 바이트로 타원곡선의 32 바이트보다
 ## 선수지식
 
 - [최단벡터 문제](shortest-vector-problem.md)
-- [이산로그와 Diffie–Hellman](discrete-logarithm.md)
+- [이산로그](discrete-logarithm.md)
 
 ## 더 알아보기
 

@@ -61,7 +61,7 @@ graph TD
 ## 양자 위상
 
 - [Chern–Simons 이론](chern-simons.md) → [Wess–Zumino–Witten 모형](wess-zumino-witten.md), [Witten 점근 추측](witten-asymptotics.md)
-- [모듈러 텐서범주와 3 차원 TQFT](modular-tensor-categories.md)(topological quantum field theory) → [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md), [애니온과 위상적 양자계산](anyons.md)
+- [모듈러 텐서범주와 3 차원 TQFT](modular-tensor-categories.md)(topological quantum field theory) → [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md), [애니온](anyons.md)
 
 # 연관 문서
 

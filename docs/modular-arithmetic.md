@@ -117,7 +117,7 @@ $$
 
 - [유클리드 알고리즘](euclidean-algorithm.md)
 - [환](rings.md)
-- [이산로그와 Diffie–Hellman](discrete-logarithm.md)
+- [이산로그](discrete-logarithm.md)
 - [중국인의 나머지 정리](chinese-remainder-theorem.md)
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)
 - [유한체](finite-fields.md)

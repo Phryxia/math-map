@@ -1,4 +1,4 @@
-# Kähler 다양체와 Hodge 분해
+# Kähler 다양체
 
 # 개요
 

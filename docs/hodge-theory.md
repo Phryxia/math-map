@@ -197,7 +197,7 @@ Hodge 분해는 게이지 고정의 기하적 정체다. 퍼텐셜 $A$ 의 $d\Om
 
 ## 더 알아보기
 
-- [Kähler 다양체와 Hodge 분해](kahler-manifolds.md)
+- [Kähler 다양체](kahler-manifolds.md)
 - [지표 정리](index-theorem.md)
 
 #differential_geometry #algebraic_topology #analysis
