@@ -40,7 +40,7 @@ $$v\wedge w=-w\wedge v$$
 
 ## 기저와 차원
 
-$\dim V=n$ 이고 $e_1,\dots,e_n$ 이 기저이면 다음이 $\Lambda^k V$ 의 기저다.
+$\dim V=n$ 이고 $e_1,\dots,e_n$ 이 [기저](vector-spaces.md)이면 다음이 $\Lambda^k V$ 의 기저다.
 
 $$\lbrace e\_{i_1}\wedge\cdots\wedge e\_{i_k} : 1\le i_1\lt \cdots\lt i_k\le n\rbrace$$
 
