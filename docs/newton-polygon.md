@@ -120,7 +120,7 @@ $$
 | $p\nmid a_p$ | 꺾인 두 변 | $0,\ 1$ | 보통(ordinary) |
 | $p\mid a_p$ | 곧은 한 변 | $\tfrac12,\ \tfrac12$ | 초특이(supersingular) |
 
-부치 $0$ 인 고윳값이 **단위근**이고, 그 존재 여부가 형식군의 높이, $p$ 진 $L$ 함수의 보간, 곡선의 $p$ 진 성질을 가른다. Weil 추측의 Riemann 가설이 아르키메데스 절댓값 $|\alpha|=\sqrt p$ 를 말하는 동안 Newton 다각형은 같은 수의 $p$ 진 크기를 말한다.
+부치 $0$ 인 고윳값이 **단위근**이고, 그 존재 여부가 형식군의 높이, $p$ 진 $L$ 함수의 보간, 곡선의 $p$ 진 성질을 가른다. Weil 추측의 [Riemann 가설](riemann-hypothesis.md)이 아르키메데스 절댓값 $|\alpha|=\sqrt p$ 를 말하는 동안 Newton 다각형은 같은 수의 $p$ 진 크기를 말한다.
 
 # 활용
 

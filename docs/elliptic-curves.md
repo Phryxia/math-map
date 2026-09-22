@@ -82,7 +82,7 @@ $$
 \big|\thinspace\char35{}E(\mathbb F_q)-(q+1)\thinspace\big|\le2\sqrt q
 $$
 
-각 $x$ 에 대해 $x^3+ax+b$ 가 제곱수일 확률이 대략 절반이고 그때 $y$ 가 둘이므로 점이 평균 $q$ 개 남짓이라는 어림이 맞다는 진술이다. 오차가 $\sqrt q$ 규모라는 것이 유한체 위의 Riemann 가설에 해당하며 Hasse 가 증명하고 Weil 이 일반화했다.
+각 $x$ 에 대해 $x^3+ax+b$ 가 제곱수일 확률이 대략 절반이고 그때 $y$ 가 둘이므로 점이 평균 $q$ 개 남짓이라는 어림이 맞다는 진술이다. 오차가 $\sqrt q$ 규모라는 것이 유한체 위의 [Riemann 가설](riemann-hypothesis.md)에 해당하며 Hasse 가 증명하고 Weil 이 일반화했다.
 
 $\char35{}E(\mathbb F_q)$ 는 Schoof 알고리즘으로 다항시간에 정확히 센다. 암호용 곡선의 위수가 큰 소인수를 갖는지 확인하는 절차가 이것이다.
 

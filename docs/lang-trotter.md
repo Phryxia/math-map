@@ -95,7 +95,7 @@ $$
 \pi_{E,r}(X)\ \ll\ \frac{X\thinspace(\log\log X)^2}{(\log X)^2}
 $$
 
-추측값 $\sqrt X/\log X$ 와 거의 $\sqrt X$ 만큼 떨어져 있다. 일반화 Riemann 가설을 가정하면 $X^{4/5}$ 규모까지 내려간다. CM 이 있으면 허수이차체의 Hecke 지표로 환원되어 $\pi_{E,0}(X)\sim\frac12\pi(X)$ 라는 정확한 답이 나온다.
+추측값 $\sqrt X/\log X$ 와 거의 $\sqrt X$ 만큼 떨어져 있다. 일반화 [Riemann 가설](riemann-hypothesis.md)을 가정하면 $X^{4/5}$ 규모까지 내려간다. CM 이 있으면 허수이차체의 Hecke 지표로 환원되어 $\pi_{E,0}(X)\sim\frac12\pi(X)$ 라는 정확한 답이 나온다.
 
 # 성질
 

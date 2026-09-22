@@ -62,7 +62,7 @@ $s=-2,-4,-6,\dots$ 에서 함수방정식의 사인 인자가 $0$ 이 되고 $\z
 
 나머지 영점은 모두 임계띠 $0\lt\mathrm{Re}\thinspace s\lt 1$ 안에 있고 비자명한 영점이라고 부른다. $\xi(s)=\xi(1-s)$ 와 $\overline{\zeta(\bar s)}=\zeta(s)$ 가 이들을 직선 $\mathrm{Re}\thinspace s=1/2$ 과 실축 양쪽에 대칭으로 배치한다.
 
-Riemann 가설은 비자명한 영점이 전부 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 추측이다.
+[Riemann 가설](riemann-hypothesis.md)은 비자명한 영점이 전부 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 추측이다.
 
 # 성질
 
