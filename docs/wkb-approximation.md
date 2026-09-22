@@ -123,7 +123,7 @@ $$
 \psi\sim\sum_{\text{궤도}}A_j\thinspace\exp\Big(\frac i\hbar S_j-\frac{i\pi}{2}\mu_j\Big)
 $$
 
-기하적으로 $\mu_j$ 는 궤도가 위치공간으로 사영될 때 접히는 횟수, 곧 화선(caustic)을 지나는 횟수다. 접힐 때마다 $A_j$ 의 분모가 0 이 되어 WKB 진폭이 발산하고, 그 자리를 [Airy 함수](airy-functions.md)로 이어 붙이면 $\pi/2$ 의 위상 손실이 남는다. 주기 궤도의 합으로 상태밀도를 쓰는 Gutzwiller 대각합 공식에서도 각 궤도에 이 지표가 붙는다.
+기하적으로 $\mu_j$ 는 궤도가 위치공간으로 사영될 때 접히는 횟수, 곧 초곡선(caustic)을 지나는 횟수다. 접힐 때마다 $A_j$ 의 분모가 0 이 되어 WKB 진폭이 발산하고, 그 자리를 [Airy 함수](airy-functions.md)로 이어 붙이면 $\pi/2$ 의 위상 손실이 남는다. 주기 궤도의 합으로 상태밀도를 쓰는 Gutzwiller 대각합 공식에서도 각 궤도에 이 지표가 붙는다.
 
 ## 장벽 투과
 
