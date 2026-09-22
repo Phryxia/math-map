@@ -90,7 +90,7 @@ $R=\lbrace x:x\notin x\rbrace$ 를 집합으로 인정하면 $R\in R\iff R\notin
 
 # 활용
 
-- 함수의 정의역과 공역, 확률의 표본공간, 그래프의 정점 집합, 벡터 공간의 바탕집합은 모두 집합이다. 조건의 결합과 분리는 집합 연산으로 계산한다.
+- 함수의 정의역과 공역, 확률의 표본공간, 그래프의 정점 집합, [벡터 공간](vector-spaces.md)의 바탕집합은 모두 집합이다. 조건의 결합과 분리는 집합 연산으로 계산한다.
 - 순서가 필요하면 순서쌍이나 수열, 출현 횟수가 필요하면 다중집합, 원소 사이의 같음을 새로 정하려면 [동치관계](equivalence-relations.md)를 쓴다.[^1]
 
 [^1]: OpenStax, *Contemporary Mathematics*, §1.1 Basic Set Concepts. https://openstax.org/books/contemporary-mathematics/pages/1-1-basic-set-concepts

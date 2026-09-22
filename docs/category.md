@@ -40,7 +40,7 @@ $$
 | 범주 | 대상 | 사상 |
 |---|---|---|
 | $\mathbf{Set}$ | 집합 | 함수 |
-| $\mathbf{Grp},\ \mathbf{Vect},\ \mathbf{Top}$ | 군, 벡터 공간, 위상공간 | 준동형, 선형사상, 연속함수 |
+| $\mathbf{Grp},\ \mathbf{Vect},\ \mathbf{Top}$ | 군, [벡터 공간](vector-spaces.md), 위상공간 | 준동형, 선형사상, 연속함수 |
 | 부분순서 집합 | 원소 | $A \le B$ 일 때 사상 하나 |
 | 군 | 대상 하나 | 군의 원소, 합성은 군의 곱 |
 | $C^{\mathrm{op}}$ | $C$ 의 대상 | $C$ 의 사상을 뒤집은 것 |
