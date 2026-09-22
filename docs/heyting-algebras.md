@@ -61,7 +61,7 @@ $$
 
 으로 정의한다.
 
-수반 조건은 [부분순서](partial-orders.md)의 언어로 Galois 연결이다. 각 $a$ 마다 $(-) \wedge a$ 가 왼쪽 수반이고 $a \to (-)$ 가 오른쪽 수반이다. [범주](category.md)의 관점에서는 $H$ 를 얇은 범주로 볼 때 $(-) \wedge a$ 가 왼쪽 수반 [함자](functors.md) 라는 진술과 같다.
+수반 조건은 [부분순서](partial-orders.md)의 언어로 [Galois 연결](galois-connections.md)이다. 각 $a$ 마다 $(-) \wedge a$ 가 왼쪽 수반이고 $a \to (-)$ 가 오른쪽 수반이다. [범주](category.md)의 관점에서는 $H$ 를 얇은 범주로 볼 때 $(-) \wedge a$ 가 왼쪽 수반 [함자](functors.md) 라는 진술과 같다.
 
 ## 동치인 공리적 정의
 

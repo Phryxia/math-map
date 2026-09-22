@@ -89,7 +89,7 @@ $$
 
 ## 회전불변 작용소와 Funk–Hecke
 
-회전과 교환하는 유계 작용소는 각 $\mathcal H_\ell$ 에서 스칼라 $\lambda_\ell$ 배다. 특히 핵이 $k(\hat x\cdot\hat y)$ 꼴인 적분작용소에서
+회전과 교환하는 [유계 작용소](bounded-operators.md)는 각 $\mathcal H_\ell$ 에서 스칼라 $\lambda_\ell$ 배다. 특히 핵이 $k(\hat x\cdot\hat y)$ 꼴인 적분작용소에서
 
 $$
 \int_{S^2}k(\hat x\cdot\hat y)Y_{\ell m}(\hat y)\thinspace d\sigma(\hat y)=\lambda_\ell\thinspace Y_{\ell m}(\hat x),
