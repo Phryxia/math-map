@@ -79,6 +79,6 @@ $M$ 이 닫힌 유향 $n$ 다양체이면 기본류 $\lbrack M\rbrack\in H_n(M)$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)
 
 #algebraic_topology #topology #algebra
