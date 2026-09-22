@@ -2,7 +2,7 @@
 
 # 개요
 
-[기하학적 Satake 대응](geometric-satake.md)은 Hecke 대수의 등식을 층의 범주 사이 동치로 올린다. 기하학적 Langlands 강령은 같은 승격을 Langlands 대응 전체에 적용한다.
+[기하학적 Satake 대응](geometric-satake.md)은 Hecke 대수의 등식을 층의 [범주](category.md) 사이 동치로 올린다. 기하학적 Langlands 강령은 같은 승격을 Langlands 대응 전체에 적용한다.
 
 출발점은 세 열의 유비다. 수체와 함수체가 나란하고, 함수체 $\mathbb F_q(X)$ 가 곡선 $X/\mathbb F_q$ 의 함수체이므로 곡선 자체를 다룰 수 있다. 계수체를 $\mathbb C$ 로 바꾸면 산술이 사라지고 기하만 남는다.
 

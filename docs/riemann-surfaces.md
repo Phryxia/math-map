@@ -83,7 +83,7 @@ $\widehat{\mathbb C}$ 의 자기동형은 모두 고정점을 가지므로 자�
 
 ## 콤팩트 곡면과 대수곡선
 
-콤팩트 Riemann 곡면 위에는 유리형함수가 충분히 많아 곡면을 사영공간에 매장할 수 있고, 그 상이 대수곡선이다. 거꾸로 비특이 사영곡선은 Riemann 곡면이다. 함수체를 통해 보면 다음 세 범주가 같다.
+콤팩트 Riemann 곡면 위에는 유리형함수가 충분히 많아 곡면을 사영공간에 매장할 수 있고, 그 상이 대수곡선이다. 거꾸로 비특이 사영곡선은 Riemann 곡면이다. 함수체를 통해 보면 다음 세 [범주](category.md)가 같다.
 
 $$
 \lbrace\text{콤팩트 Riemann 곡면}\rbrace\ \leftrightarrow\ \lbrace\mathbb C\text{ 위 비특이 사영곡선}\rbrace\ \leftrightarrow\ \lbrace\mathbb C\text{ 의 초월차수 }1\text{ 확대체}\rbrace

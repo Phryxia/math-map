@@ -10,7 +10,7 @@ $$
 
 표현환은 Grothendieck 군이라 $V\oplus W$ 와 $V'\oplus W'$ 이 같은 원소를 줄 수 있고, 텐서곱의 분해 중복도는 기억하지만 분해를 실현하는 사상은 잊는다.
 
-기하학적 Satake 대응은 같은 등식을 범주 수준에서 준다. $\mathcal H(G,K)$ 의 원소인 함수 자리에 층을 놓는다.
+기하학적 Satake 대응은 같은 등식을 [범주](category.md) 수준에서 준다. $\mathcal H(G,K)$ 의 원소인 함수 자리에 층을 놓는다.
 
 $$
 \mathrm{Perv}\_{G(\mathcal O)}\bigl(\mathrm{Gr}\_G\bigr)

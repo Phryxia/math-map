@@ -285,7 +285,7 @@ $$
 
 ## 기하학적 Satake
 
-동형의 오른쪽이 표현환이라는 것은 Grothendieck 군 수준의 진술이다. 이것을 범주 수준으로 올린 것이 **기하학적 Satake 대응**이다. 아핀 Grassmann 다양체 $\mathrm{Gr}\_G=G(F)/G(\mathcal O)$ 위의 $G(\mathcal O)$ 동변 퍼버스 층의 범주가 텐서 범주로서 $\widehat G$ 의 표현 범주와 동치다.
+동형의 오른쪽이 표현환이라는 것은 Grothendieck 군 수준의 진술이다. 이것을 [범주](category.md) 수준으로 올린 것이 **기하학적 Satake 대응**이다. 아핀 Grassmann 다양체 $\mathrm{Gr}\_G=G(F)/G(\mathcal O)$ 위의 $G(\mathcal O)$ 동변 퍼버스 층의 범주가 텐서 범주로서 $\widehat G$ 의 표현 범주와 동치다.
 
 $$
 \mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\thickspace\simeq\thickspace\mathrm{Rep}(\widehat G)

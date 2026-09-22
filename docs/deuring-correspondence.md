@@ -78,7 +78,7 @@ $$
 
 ## Deuring 대응
 
-$E\mapsto\mathrm{End}(E)$ 가 초특이 곡선의 동형류에서 $B_{p,\infty}$ 의 극대차수의 형류로의 전단사를 준다. 더 나아가 범주 사이의 반대응이다. $E$ 를 고정하고 $\mathcal O=\mathrm{End}(E)$ 라 하면
+$E\mapsto\mathrm{End}(E)$ 가 초특이 곡선의 동형류에서 $B_{p,\infty}$ 의 극대차수의 형류로의 전단사를 준다. 더 나아가 [범주](category.md) 사이의 반대응이다. $E$ 를 고정하고 $\mathcal O=\mathrm{End}(E)$ 라 하면
 
 $$
 \lbrace E\ \text{에서 나가는 동종사상}\rbrace\ \longleftrightarrow\ \lbrace\mathcal O\ \text{의 좌이념}\rbrace

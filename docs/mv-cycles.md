@@ -2,7 +2,7 @@
 
 # 개요
 
-[기하학적 Satake 대응](geometric-satake.md)은 아핀 Grassmann 다양체 위의 퍼버스 층의 범주가 쌍대군의 표현 범주와 같다고 말한다.
+[기하학적 Satake 대응](geometric-satake.md)은 아핀 Grassmann 다양체 위의 퍼버스 층의 [범주](category.md)가 쌍대군의 표현 범주와 같다고 말한다.
 
 $$
 \mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\ \simeq\ \mathrm{Rep}(\widehat G)
