@@ -46,7 +46,7 @@ $m \times n$ 행렬 $A$ 에 대해 $A = QR$ 이고 $Q$ 의 열이 정규직교, 
 
 ## 조건수
 
-가역행렬 $A$ 의 **조건수**는 작용소 노름으로 다음과 같이 정의한다.
+가역행렬 $A$ 의 **조건수**는 [작용소 노름](banach-spaces.md)으로 다음과 같이 정의한다.
 
 $$
 \kappa(A) = \lVert A\rVert\thinspace\lVert A^{-1}\rVert
