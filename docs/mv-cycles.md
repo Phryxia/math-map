@@ -10,7 +10,7 @@ $$
 
 동치가 있으면 양쪽의 모든 것이 옮겨진다. 그러면 표현의 무게 공간이 [층](sheaves.md) 쪽에서 무엇인지 묻게 된다.
 
-Mirković–Vilonen 의 답이 이 문서의 주제다. 반무한 낟가리라 부르는 궤도와 층을 자르면, 무게 공간 $V_\lambda(\mu)$ 의 기저가 어떤 대수적 순환들의 집합으로 나온다.
+Mirković–Vilonen 은 반무한 낟가리라 부르는 궤도와 층으로 답했다. 그렇게 자르면 무게 공간 $V_\lambda(\mu)$ 의 기저가 어떤 대수적 순환들의 집합으로 나온다.
 
 $$
 \dim V_\lambda(\mu)=\char35{}\lbrace\text{무게 }\mu\text{ 의 MV 순환}\rbrace

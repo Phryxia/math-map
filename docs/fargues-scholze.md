@@ -18,7 +18,7 @@ $$
 
 성과는 구체적이다. 임의의 축소군 $G$ 와 임의의 기약 스무스 표현 $\pi$ 에 대해, 반단순 $L$ 매개변수 $\varphi_\pi$ 가 **무조건적으로** 구성된다. 그전까지 국소 Langlands 는 $\mathrm{GL}\_n$ 과 일부 고전군에서만 알려져 있었다.
 
-[$p$ 진 Hodge 이론](p-adic-hodge-theory.md)이 이 문서의 또 다른 부모인 것은 재료 때문이다. $B_{\mathrm{cris}}$ 와 $A_{\mathrm{inf}}$ 와 틸팅과 perfectoid 가 전부 곡선의 부품으로 쓰인다. 그 이론에서 손으로 다루던 주기환들이 여기서는 한 곡선의 국소 구조로 정리된다.
+[$p$ 진 Hodge 이론](p-adic-hodge-theory.md)의 재료가 여기에 그대로 쓰인다. $B_{\mathrm{cris}}$ 와 $A_{\mathrm{inf}}$ 와 틸팅과 perfectoid 가 전부 곡선의 부품으로 쓰인다. 그 이론에서 손으로 다루던 주기환들이 여기서는 한 곡선의 국소 구조로 정리된다.
 
 # 직관
 

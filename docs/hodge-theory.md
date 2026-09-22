@@ -92,7 +92,7 @@ $$
 \Delta f=-\frac1{\sqrt{|g|}}\partial_i\big(\sqrt{|g|}\thinspace g^{ij}\partial_j f\big)
 $$
 
-이고 계량이 유클리드면 $-\sum\partial_i^2$ 다. 이 문서의 규약에서 $\Delta$ 는 양의 준정부호다.
+이고 계량이 유클리드면 $-\sum\partial_i^2$ 다. $\Delta$ 는 양의 준정부호다.
 
 # 성질
 
