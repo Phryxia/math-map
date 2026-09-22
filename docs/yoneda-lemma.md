@@ -94,7 +94,7 @@ $$
 
 - **함자적 관점.** 대수기하에서 스킴을 각 환에 그 환 위의 점들을 대응시키는 함자로 다룬다. 모듈라이 공간은 분류 문제를 표현하는 대상으로 정의되고, 그 존재는 해당 함자의 표현가능성 문제가 된다. 표현가능하지 않을 때 스택으로 확장하는 것도 같은 틀 안에 있다.
 - **계산의 축약.** 자연변환 전체 대신 한 대상의 한 원소만 보면 된다. 코호몰로지 연산의 분류, 자유 대상의 구성, [수반](adjunctions.md)의 존재 판정이 이 축약을 쓰고, 수반 함자 정리도 각 대상마다 어떤 함자가 표현가능한지를 묻는 형태로 서술된다.
-- **프로그래밍.** 연속 전달 방식의 변환 $(\forall r.\ (a\to r)\to r)\cong a$ 가 Yoneda lemma 의 특수한 경우다. 자유 monad 구성, lens 의 여러 표현이 동등하다는 사실, 함자를 감싸 map 연산의 합성을 지연시키는 Yoneda 변환이 같은 정리의 적용이다.[^1]
+- **프로그래밍.** 연속 전달 방식의 변환 $(\forall r.\ (a\to r)\to r)\cong a$ 가 Yoneda lemma 의 특수한 경우다. 자유 [monad](monads.md) 구성, lens 의 여러 표현이 동등하다는 사실, 함자를 감싸 map 연산의 합성을 지연시키는 Yoneda 변환이 같은 정리의 적용이다.[^1]
 
 [^1]: Emily Riehl, *Category Theory in Context*, §2.2. Yoneda lemma 와 Yoneda 매장의 full faithfulness. https://emilyriehl.github.io/files/context.pdf
 
