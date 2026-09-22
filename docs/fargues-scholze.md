@@ -10,7 +10,7 @@ $$
 X_{\mathrm{FF}}=\mathrm{Proj}\Bigl(\bigoplus_{d\ge0}B^{\varphi=p^d}\Bigr)
 $$
 
-는 $p$ 진 주기환에서 대수기하의 곡선처럼 행동하는 대상을 뽑아낸 것이다. 이 곡선 위에서 $G$ 다발의 모듈라이 $\mathrm{Bun}\_G$ 를 만들고, 그 위의 에탈층 범주를 보면 $G(\mathbb Q_p)$ 의 스무스 표현론이 통째로 들어 있다. 국소 Langlands 대응이 기하학적 Langlands 의 $p$ 진 판본으로 다시 쓰인다.
+는 $p$ 진 주기환에서 대수기하의 곡선처럼 행동하는 대상을 뽑아낸 것이다. 이 곡선 위에서 $G$ 다발의 모듈라이 $\mathrm{Bun}\_G$ 를 만들고, 그 위의 에탈층 [범주](category.md)를 보면 $G(\mathbb Q_p)$ 의 스무스 표현론이 통째로 들어 있다. 국소 Langlands 대응이 기하학적 Langlands 의 $p$ 진 판본으로 다시 쓰인다.
 
 $$
 D\bigl(\mathrm{Bun}\_G,\Lambda\bigr)\ \supset\ \text{기본 층화}\ \longleftrightarrow\ \mathrm{Rep}\bigl(G(\mathbb Q_p)\bigr)

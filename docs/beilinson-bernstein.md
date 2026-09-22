@@ -2,7 +2,7 @@
 
 # 개요
 
-Beilinson–Bernstein 국소화는 깃발다양체 $X=G/B$ 위의 $\mathcal D$ [가군](modules.md) 범주와 자명한 중심 지표를 갖는 $U(\mathfrak g)$ 가군 범주 사이의 동치다.
+Beilinson–Bernstein 국소화는 깃발다양체 $X=G/B$ 위의 $\mathcal D$ [가군](modules.md) [범주](category.md)와 자명한 중심 지표를 갖는 $U(\mathfrak g)$ 가군 범주 사이의 동치다.
 
 $$
 \Gamma:\ \mathrm{Mod}(\mathcal D_X)\ \rightleftarrows\ \mathrm{Mod}\bigl(U(\mathfrak g)\_{\chi_0}\bigr)\ :\mathrm{Loc}

@@ -125,7 +125,7 @@ $\Sigma$ 위의 상관함수는 정칙 조각과 반정칙 조각의 쌍선형 �
 
 **벌크–경계 대응.** Chern–Simons 이론이 곡면 $\Sigma$ (Wilson 선이 뚫고 지나간 점들에 라벨 $\lambda_i$ 가 붙은)에 붙이는 Hilbert 공간은 같은 자료의 WZW 공형 블록 공간과 표준적으로 동형이다.
 
-3 차원 쪽의 상태가 2 차원 쪽의 함수에 대응한다. 3 다양체를 손잡이체 둘로 가르면 각 조각이 그 Hilbert 공간의 벡터를 주고, 둘을 붙이는 사상이 모듈러 군의 작용이 된다. [Reshetikhin–Turaev](reshetikhin-turaev.md) 불변량의 구성이 이 그림의 범주론 판본이다.
+3 차원 쪽의 상태가 2 차원 쪽의 함수에 대응한다. 3 다양체를 손잡이체 둘로 가르면 각 조각이 그 Hilbert 공간의 벡터를 주고, 둘을 붙이는 사상이 모듈러 군의 작용이 된다. [Reshetikhin–Turaev](reshetikhin-turaev.md) 불변량의 구성이 이 그림의 [범주](category.md)론 판본이다.
 
 ## Verlinde 공식
 

@@ -123,7 +123,7 @@ $$
 \Delta_+\Delta_-=\mathcal D^2,\qquad \frac{\Delta_+}{\mathcal D}=e^{2\pi ic/8}
 $$
 
-첫 식은 $\Delta_+/\mathcal D$ 가 절댓값 1 임을 뜻하고, 둘째 식이 그 위상각의 정체를 밝힌다. $c$ 는 순수하게 범주에서 정의되는 유리수인데, 그 범주가 정점작용소대수(vertex operator algebra, VOA)에서 왔다면 $c$ 가 그 VOA 의 중심 전하와 일치한다. $\mathrm{SU}(2)\_k$ 라면
+첫 식은 $\Delta_+/\mathcal D$ 가 절댓값 1 임을 뜻하고, 둘째 식이 그 위상각의 정체를 밝힌다. $c$ 는 순수하게 [범주](category.md)에서 정의되는 유리수인데, 그 범주가 정점작용소대수(vertex operator algebra, VOA)에서 왔다면 $c$ 가 그 VOA 의 중심 전하와 일치한다. $\mathrm{SU}(2)\_k$ 라면
 
 $$
 c=\frac{3k}{k+2}

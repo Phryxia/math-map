@@ -95,7 +95,7 @@ $$
 
 ## 사상의 텐서곱
 
-$f : M \to M'$ 과 $g : N \to N'$ 이 선형이면 $f \otimes g : M \otimes N \to M' \otimes N'$ 이 $(f \otimes g)(m \otimes n) = f(m) \otimes g(n)$ 으로 잘 정의된다. 이로써 $- \otimes N$ 은 가군 범주 위의 함자가 된다.
+$f : M \to M'$ 과 $g : N \to N'$ 이 선형이면 $f \otimes g : M \otimes N \to M' \otimes N'$ 이 $(f \otimes g)(m \otimes n) = f(m) \otimes g(n)$ 으로 잘 정의된다. 이로써 $- \otimes N$ 은 가군 [범주](category.md) 위의 함자가 된다.
 
 ## 기본 동형
 
