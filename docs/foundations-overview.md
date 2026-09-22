@@ -75,11 +75,16 @@ graph TD
 
 ## 더 알아보기
 
+### 수리철학의 입장
+
 - [수학적 플라톤주의](mathematical-platonism.md)
 - [논리주의와 Frege 프로그램](logicism.md)
 - [형식주의와 Hilbert 프로그램](formalism-hilbert-program.md)
 - [직관주의](intuitionism.md)
 - [수학적 구조주의](mathematical-structuralism.md)
+
+### 공리계
+
 - [ZFC 공리계](zfc-axioms.md)
 
 #foundations #philosophy_of_math #logic #set_theory #overview

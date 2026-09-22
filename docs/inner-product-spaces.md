@@ -145,10 +145,15 @@ $$
 
 ## 더 알아보기
 
-- [곡률](curvature.md)
+### 직교분해와 스펙트럼
+
 - [스펙트럼 정리](spectral-theorem.md)
 - [Hilbert 공간](hilbert-spaces.md)
 - [선형회귀와 최소제곱법](linear-regression.md)
+
+### 기하와 대수
+
+- [곡률](curvature.md)
 - [격자](lattices.md)
 - [근계](root-systems.md)
 

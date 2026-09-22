@@ -148,11 +148,19 @@ $$
 
 ## 더 알아보기
 
-- [쌍선형 암호](pairing-based-cryptography.md)
-- [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
+### 유리점의 산술
+
 - [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md)
-- [Langlands 강령](langlands-program.md)
+- [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
+
+### 모듈러성과 복소 곱셈
+
 - [모듈러 곡선](modular-curves.md)
 - [복소 곱셈](complex-multiplication.md)
+- [Langlands 강령](langlands-program.md)
+
+### 암호에서의 쓰임
+
+- [쌍선형 암호](pairing-based-cryptography.md)
 
 #number_theory #cryptography #group_theory

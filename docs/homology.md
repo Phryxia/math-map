@@ -150,11 +150,16 @@ $$
 
 ## 더 알아보기
 
+### 위상 불변량
+
 - [Euler 지표](euler-characteristic.md)
 - [de Rham 코호몰로지](de-rham-cohomology.md)
-- [Galois 표현](galois-representations.md)
-- [Khovanov 호몰로지](khovanov-homology.md)
 - [Reidemeister 비틀림과 렌즈 공간](reidemeister-torsion.md)
+- [Khovanov 호몰로지](khovanov-homology.md)
+
+### 대수와 수론에서의 쓰임
+
+- [Galois 표현](galois-representations.md)
 - [대수적 K 이론](algebraic-k-theory.md)
 
 #algebraic_topology #topology #algebra #graph_theory
