@@ -82,7 +82,7 @@ $$
 \Vert S_N f - f\Vert \xrightarrow[N\to\infty]{} 0,\qquad \sum_{n\in\mathbb{Z}} |\hat{f}(n)|^2 = \frac{1}{2\pi}\int_{-\pi}^{\pi} |f(x)|^2\thinspace dx .
 $$
 
-완비성 증명의 표준 경로는 Fejér 정리다. 연속 주기함수에 대해 Cesàro 평균이 균등수렴하므로 삼각다항식이 연속함수 공간에서 조밀하고, 연속함수가 $L^2$ 에서 조밀하므로 삼각함수계에 직교하는 벡터는 0뿐이다. 따라서 Parseval은 [Hilbert 공간](hilbert-spaces.md)의 일반론에서 자동으로 따라온다.
+완비성 증명의 표준 경로는 Fejér 정리다. 연속 주기함수에 대해 Cesàro 평균이 균등수렴하므로 삼각다항식이 [연속함수](continuity.md) 공간에서 조밀하고, 연속함수가 $L^2$ 에서 조밀하므로 삼각함수계에 직교하는 벡터는 0뿐이다. 따라서 Parseval은 [Hilbert 공간](hilbert-spaces.md)의 일반론에서 자동으로 따라온다.
 
 편극하면 다음 형태(Parseval 항등식)도 얻는다.
 

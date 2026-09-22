@@ -64,7 +64,7 @@ $$
 | 거리 $\int \lvert f-g \rvert$ 를 준 $C\lbrack a,b\rbrack$ | 아님 |
 | $L^1(\mu)$ , $L^2(\mu)$ | 완비 |
 
-$\mathbb{R}$ 의 완비성은 상한 공리와 동치다. $C\lbrack a,b\rbrack$ 는 sup 거리에서 [균등수렴](uniform-convergence.md) 극한이 연속이라 완비이고, 적분 거리에서는 연속함수열이 불연속 함수로 수렴할 수 있어 완비가 아니다. 그 빠진 극한을 채운 것이 [Lebesgue 적분](lebesgue-integral.md)으로 만든 $L^1$ 이다.
+$\mathbb{R}$ 의 완비성은 상한 공리와 동치다. $C\lbrack a,b\rbrack$ 는 sup 거리에서 [균등수렴](uniform-convergence.md) 극한이 연속이라 완비이고, 적분 거리에서는 [연속함수](continuity.md)열이 불연속 함수로 수렴할 수 있어 완비가 아니다. 그 빠진 극한을 채운 것이 [Lebesgue 적분](lebesgue-integral.md)으로 만든 $L^1$ 이다.
 
 ## 닫힌 부분집합과 완비성
 

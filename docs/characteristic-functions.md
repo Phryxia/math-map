@@ -108,7 +108,7 @@ $\varphi:\mathbb R^d\to\mathbb C$ 가 어떤 확률측도의 특성함수인 것
 - $\varphi$ 가 연속,
 - $\varphi$ 가 **양정치**다. 곧 임의의 $t_1,\dots,t_n$ 과 복소수 $c_1,\dots,c_n$ 에 대해 $\sum_{j,k}c_j\overline{c_k}\thinspace\varphi(t_j-t_k)\ge0$ .
 
-양정치성은 $\bigl|\sum_jc_je^{i\langle t_j,X\rangle}\bigr|^2$ 의 기댓값이 음수가 될 수 없다는 사실이고, 위 합을 전개하면 나온다. 어려운 방향은 양정치 연속함수에서 측도를 복원하는 쪽이다. Gauss 과정의 공분산 핵을 설계할 때 정상 핵이 유효할 조건이 이 정리다.
+양정치성은 $\bigl|\sum_jc_je^{i\langle t_j,X\rangle}\bigr|^2$ 의 기댓값이 음수가 될 수 없다는 사실이고, 위 합을 전개하면 나온다. 어려운 방향은 양정치 [연속함수](continuity.md)에서 측도를 복원하는 쪽이다. Gauss 과정의 공분산 핵을 설계할 때 정상 핵이 유효할 조건이 이 정리다.
 
 # 활용
 

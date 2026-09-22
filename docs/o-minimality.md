@@ -28,7 +28,7 @@ $I_j$ 는 끝점이 $M \cup \lbrace \pm\infty\rbrace$ 에 있는 열린구간이
 
 ## 셀
 
-$M^n$ 의 **셀**을 $n$ 에 대한 재귀로 정의한다. $M^1$ 의 셀은 한 점이나 열린구간이다. $C \subseteq M^n$ 이 셀이고 $f, g$ 가 $C$ 위의 정의 가능 연속함수일 때 다음이 $M^{n+1}$ 의 셀이다.
+$M^n$ 의 **셀**을 $n$ 에 대한 재귀로 정의한다. $M^1$ 의 셀은 한 점이나 열린구간이다. $C \subseteq M^n$ 이 셀이고 $f, g$ 가 $C$ 위의 정의 가능 [연속함수](continuity.md)일 때 다음이 $M^{n+1}$ 의 셀이다.
 
 $$
 \Gamma(f) = \lbrace (x,f(x)) : x \in C\rbrace,

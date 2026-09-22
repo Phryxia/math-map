@@ -28,7 +28,7 @@ $$
 \left\lVert f(t,x)-f(t,y)\right\rVert\le K\left\lVert x-y\right\rVert
 $$
 
-미분방정식과 적분방정식은 동치다. $f$ 가 연속이면, $x$ 가 위 초기값 문제의 해인 것과 $x$ 가 다음 적분방정식을 만족하는 연속함수인 것은 같다([미적분학의 기본 정리](fundamental-calculus.md)).
+미분방정식과 적분방정식은 동치다. $f$ 가 연속이면, $x$ 가 위 초기값 문제의 해인 것과 $x$ 가 다음 적분방정식을 만족하는 [연속함수](continuity.md)인 것은 같다([미적분학의 기본 정리](fundamental-calculus.md)).
 
 $$
 x(t)=x_0+\int_{t_0}^{t}f\bigl(s,x(s)\bigr)\thinspace ds

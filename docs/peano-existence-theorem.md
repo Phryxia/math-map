@@ -20,7 +20,7 @@ $$
 x'(t)=f(t,x(t))\thickspace (t\in I),\qquad x(t_0)=x_0
 $$
 
-$f$ 가 연속이면 이 조건은 적분방정식 $x(t)=x_0+\int_{t_0}^t f(s,x(s))\thinspace ds$ 를 만족하는 연속함수 $x$ 를 찾는 것과 같다.
+$f$ 가 연속이면 이 조건은 적분방정식 $x(t)=x_0+\int_{t_0}^t f(s,x(s))\thinspace ds$ 를 만족하는 [연속함수](continuity.md) $x$ 를 찾는 것과 같다.
 
 ## Peano 존재정리
 

@@ -14,7 +14,7 @@
 
 ## 확인해야 하는 집합
 
-실수값 함수는 모든 $c$ 에 대해 $\lbrace f\gt c\rbrace$ 만 가측이면 된다. $\lbrace f\ge c\rbrace$ 는 $\lbrace f\gt c-1/n\rbrace$ 들의 교집합이고 $\lbrace a\lt f\le b\rbrace$ 는 차집합이라 $\sigma$ 대수의 연산으로 따라온다. 열린집합은 이런 구간의 셀 수 있는 합집합이므로 열린집합의 역상까지 가측이다. 연속함수는 열린집합의 역상이 열린집합이고 열린집합은 가측집합이니 가측함수다.
+실수값 함수는 모든 $c$ 에 대해 $\lbrace f\gt c\rbrace$ 만 가측이면 된다. $\lbrace f\ge c\rbrace$ 는 $\lbrace f\gt c-1/n\rbrace$ 들의 교집합이고 $\lbrace a\lt f\le b\rbrace$ 는 차집합이라 $\sigma$ 대수의 연산으로 따라온다. 열린집합은 이런 구간의 셀 수 있는 합집합이므로 열린집합의 역상까지 가측이다. [연속함수](continuity.md)는 열린집합의 역상이 열린집합이고 열린집합은 가측집합이니 가측함수다.
 
 ## $\sigma$ 대수에 따라 달라지는 가측성
 
