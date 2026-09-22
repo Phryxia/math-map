@@ -122,5 +122,6 @@ Hausdorff 측도는 프랙탈의 차원을 재고, Haar 측도는 군 위에서 
 - [Lebesgue 적분](lebesgue-integral.md)
 - [상측도](pushforward-measure.md)
 - [Radon–Nikodym 정리](radon-nikodym.md)
+- [Loeb 측도](loeb-measure.md)
 
 #measure_theory #probability #analysis #set_theory
