@@ -62,7 +62,7 @@ graph TD
 
 - [Schauder 고정점 정리](schauder-fixed-point.md) — 콤팩트 볼록집합 위의 연속사상이 갖는 고정점. 유한차원 근사로 Brouwer 정리에서 얻는다
 
-## 표현론과의 접점
+## 표현론
 
 - [Peter–Weyl 정리](peter-weyl.md) — 콤팩트 군의 정칙 표현이 기약 표현의 직합으로 분해되고 행렬계수가 $L^2$ 의 기저가 된다
 - [구면조화함수](spherical-harmonics.md) — 구면 위 $L^2$ 공간의 회전군 표현에 따른 분해

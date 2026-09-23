@@ -41,7 +41,7 @@ Mellin 변환 $\int_0^\infty f(t)t^s\thinspace dt/t$ 에서 $dt/t$ 는 곱군 $\
 
 Tate 의 zeta 적분은 이 관찰을 이델류군으로 일반화한 것이다. $\mathbb R_{\gt 0}$ 자리에 $K^\times\backslash\mathbb A_K^\times$ 를 놓고, $t^s$ 자리에 Hecke 지표 $\chi\cdot|\cdot|^s$ 를 놓는다. Dirichlet 지표로 잘게 쪼개던 작업과 Mellin 변환이 하나의 조화해석으로 합쳐진다.
 
-## 함수방정식이 나오는 자리
+## Poisson 합공식과 함수방정식
 
 적분을 $|x|\_{\mathbb A}=t$ 로 잘라 본다. $t\ge1$ 쪽은 $f$ 의 급감 때문에 모든 $s$ 에서 수렴해 정함수를 준다. 문제는 $t\lt 1$ 쪽인데, 여기에 Poisson 합공식을 쓰면 $t$ 를 $1/t$ 로 뒤집어 $t\ge1$ 쪽 적분으로 되돌릴 수 있다. 되돌린 결과에서 $f$ 가 $\hat f$ 로, $s$ 가 $1-s$ 로 바뀐다. 그것이 함수방정식의 전부다.
 
@@ -149,7 +149,7 @@ $\gamma_v$ 는 국소 $L$ 인자의 비와 근 수 $\varepsilon_v(\chi_v,s)$ 로
 
 적분이 이미 자리별 곱으로 쪼개져 있으므로, 하나의 함수방정식에서 모든 $L$ 함수의 함수방정식이 동시에 나온다.
 
-## 판별식이 나오는 자리
+## 측도 정규화와 판별식
 
 $\mathrm{vol}(\mathbb A_K/K)=1$ 이라는 정규화를 국소 측도의 곱으로 풀어 쓰면, 유한 자리에서 $\mathrm{vol}(\mathcal O_v)=1$ 이 아니라 $N\mathfrak d_v^{-1/2}$ 여야 한다. 다른 아이디얼 $\mathfrak d$ 의 노름이 판별식 $|d_K|$ 이므로 전체에서 $|d_K|^{-1/2}$ 가 빠져나오고, $|x|^s$ 를 곱한 뒤에는 $|d_K|^{s/2}$ 로 나타난다. 완비 zeta 함수
 
