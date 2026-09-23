@@ -1,80 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-23T16:54:21.571Z",
-  "nextSeq": 1033,
+  "savedAt": "2026-09-23T20:55:50.472Z",
+  "nextSeq": 1051,
   "items": [
-    {
-      "id": "a1d7e52c",
-      "title": "최적 정지의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-22 다섯째 회차에 새로 썼다(부모 martingales 와 markov-decision-process 둘, 확률 개관 '조건부 구조와 이산시간 확률과정' 갈래 Markov 결정 과정 다음 줄, 83줄). markov-decision-process 활용 넷째 항목에 본문 링크를 걸었고 그 문서의 리프 상태가 한 회차 만에 풀렸다. martingales 와 겹치는지 먼저 판정했다: martingales 는 정지시간과 선택적 정지 정리(언제 멈춰도 기대 이득이 0)를 다루고 최적 정지는 어느 정지시간이 기대 보상을 최대로 하는지를 다루므로 주제가 다르다. 겹치는 것은 선택적 정지 정리를 증명에 쓰는 대목 하나뿐이다. README 를 467/853 으로 맞췄다. 문서 구성: 개요, 직관(비서 문제 하나를 처음부터 끝까지 끌고 갔다. 전부 보고 고르는 것이 규칙이 아니라는 데서 시작해 k번째가 전체 1위일 확률이 k/n 이라는 세기, 문턱 r 규칙, p(r) 의 합, x ln(1/x) 의 최대 1/e 까지), 정의(정지시간, sup E[Y_tau], Snell 포락의 역방향 귀납, tau^ast), 성질(Snell 포락이 Y 를 지배하는 최소 supermartingale, 멈춘 과정이 martingale 이라는 최적성 증명 요지, 단조 문제와 한 단계 예측, 무한 시계), 활용(비서 문제, 미국형 옵션, 순차적 검정, MDP 의 두 행동 특수 사례). 리프다. 후속 후보: 미국형 옵션과 자유경계 문제(활용 둘째. Black-Scholes 문서가 없어 부모가 얇고, 연속시간 판이라 brownian-motion 과 ito-calculus 가 부모 후보다), 순차확률비 검정 SPRT(활용 셋째. martingales 151줄이 이미 한 줄로 다루고 hypothesis-testing 이 부모 후보다), 다중 슬롯머신과 Gittins 지표(탐색과 활용의 균형. markov-decision-process 가 부모이고 최적 정지의 지표 규칙이 그 특수 사례다), Doob 분해와 supermartingale 의 분해(성질 첫 절이 부른다. martingales 가 부모). 위험중립 측도를 정의 없이 활용 절에서 썼다(change-of-measure 가 그 자리를 가질 수 있는지 볼 것)",
-      "createdAt": "2026-09-22T16:47:53.200Z",
-      "seq": 933
-    },
-    {
-      "id": "d7001406",
-      "title": "코호몰로지의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-22 다섯째 회차에 새로 썼다(부모 homology 하나, 위상 개관 대수적 위상 갈래 단체 호몰로지 줄 다음, 87줄). obstruction-theory 5줄과 postnikov-tower 15줄의 '코호몰로지' 첫 등장에 본문 링크를 걸었다. 둘 다 코호몰로지류로 분류를 진술하면서 그 용어에 목표가 없던 자리다. de-rham-cohomology 와 겹치는지 먼저 판정했다: de Rham 은 미분형식 갈래이고 일반론(쌍대 사슬, 컵곱, 보편계수, Poincare 쌍대성)은 비어 있었다. de-rham-cohomology 의 부모는 differential-forms 와 homology 그대로 두었다(cohomology 를 부모로 더하면 부모가 셋이 되고, de Rham 은 특이 코호몰로지를 거치지 않고 정의된다). README 를 468/854 로 맞췄다. 문서 구성: 개요, 직관(CP^2 와 S^2 wedge S^4 의 호몰로지군이 같다는 데서 시작해 2차 순환 둘에서 4차 정보를 얻으려면 곱셈이 있어야 하고, 순환은 못 곱해도 순환 위의 함수는 곱할 수 있다는 데까지 한 예로 끌고 갔다. 마지막에 x cup x 로 두 공간이 갈린다), 정의(쌍대 사슬 복합체와 코경계, 반변 함자성, 컵곱의 앞면 뒷면 공식과 코호몰로지환), 성질(보편계수 정리와 분해가 자연스럽지 않다는 점, 등급 가환성, CP^2 와 wedge 의 구별, Poincare 쌍대성과 교차수), 활용(장애류, 특성류, de Rham 정리, 군 코호몰로지). 리프다. 후속 후보: 스펙트럼 수열(성질 절이 Mayer-Vietoris 를 쓰지 않았고 계산 도구가 비어 있다. spectral-sequences 문서가 있는지 먼저 볼 것), 층 코호몰로지(sheaf-cohomology 가 이미 있고 부모가 이 문서일 수 있는지 볼 것. 지금 부모가 무엇인지 확인이 먼저다), 군 코호몰로지(활용 넷째. group-extensions 의 H^2 분류와 겹치므로 그 문서를 먼저 읽을 것), Poincare 쌍대성과 교차형식(성질 넷째가 한 문단이고 4 다양체의 교차형식이 그 문서의 내용). Ext 함자와 cap 곱을 정의 없이 썼다",
-      "createdAt": "2026-09-22T16:51:21.918Z",
-      "seq": 936
-    },
-    {
-      "id": "e5e8daeb",
-      "title": "Q 학습의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-22 다섯째 회차에 새로 썼다(부모 markov-decision-process 하나, 기계학습 개관에 '순차 결정' 갈래를 새로 만들어 Markov 결정 과정 다음 줄에 넣었다, 94줄). markov-decision-process 활용 둘째 항목에 본문 링크를 걸었다. 같은 회차에 쓴 markov-decision-process 의 후속 후보 첫째를 바로 처리한 것이다. 기계학습 개관에 강화학습 갈래가 없다는 점을 그 note 에 적었는데 '순차 결정' 이라는 이름으로 갈래를 세우고 MDP, Q 학습, 최적 정지 셋을 넣었다. README 를 469/856 으로 맞췄다. 문서 구성: 개요, 직관(값 반복의 합을 쓰려면 P 를 알아야 하는데 한 번 행동해 얻는 것은 도착 상태 하나와 보상 하나뿐이라는 데서 막히고, 그 한 표본의 기댓값이 구하려던 합이라는 것으로 풀었다. 평균을 나중에 내는 대신 볼 때마다 조금씩 옮기는 데까지), 정의(행동 가치함수 Q^ast 와 V^ast 의 관계, 시간차 오차 갱신식, JavaScript 의사코드), 성질(Jaakkola-Jordan-Singh 의 수렴 조건과 확률근사로 쓴 증명 요지, 정책에서 떨어진 학습과 SARSA 와의 차이, 최댓값 편의), 활용(모형 없는 제어, 탐색과 활용, 함수 근사의 발산). 리프다. 후속 후보: 확률근사와 Robbins-Monro(성질 첫 절의 증명 요지가 통째로 그 정리다. 문서가 없어 증명 요지에서 정의 없이 썼고 부모는 banach-fixed-point 와 martingales 후보), 다중 슬롯머신과 후회 한계(활용 둘째. UCB 와 Thompson 표집이 그 문서의 내용이고 concentration-inequalities 가 부모 후보), 정책 경사(Q 를 거치지 않고 정책을 직접 미분하는 갈래. REINFORCE 가 그 문서의 이름이고 4절 두문자어 규칙의 예외로 이미 적혀 있다), 이중 Q 학습(성질 셋째 최댓값 편의가 부른다. 한 문단뿐이라 8절 기준에 못 미칠 수 있다)",
-      "createdAt": "2026-09-22T16:55:19.010Z",
-      "seq": 938
-    },
-    {
-      "id": "51de6b1e",
-      "title": "확률근사의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-22 다섯째 회차에 새로 썼다(부모 martingales 하나, q-learning 의 부모로도 넣어 그 문서의 부모가 markov-decision-process 와 둘이 되었다. 기계학습 개관 순차 결정 갈래 Q 학습 앞 줄, 74줄). q-learning 성질 절의 증명 요지에서 본문 링크를 걸었다. 같은 회차에 q-learning 을 쓰며 note 에 남긴 후속 후보 첫째를 바로 처리했다. README 를 470/858 로 맞췄다. 문서 구성: 개요, 직관(반응률 50% 투여량 찾기를 하나로 끌고 갔다. 투여량마다 표본을 많이 쓰는 이분법이 비싸다는 데서 시작해 관측 하나의 기댓값이 M(theta) 라는 것으로 풀고, 보폭을 줄이는 두 조건이 왜 그 꼴인지까지), 정의(Robbins-Monro 절차와 보폭 조건, Kiefer-Wolfowitz 차분 판본), 성질(수렴 정리와 supermartingale 수렴으로 쓴 증명 요지, sqrt t 점근정규성과 반복값 평균, 축약사상 판본), 활용(확률적 경사하강법, 시간차 학습, 분위수 추정, 적응 제어). 후속 후보: 확률적 경사하강법을 독립 문서로 뗄지(활용 첫째. gradient-descent 가 결정적 판만 다루는지 먼저 볼 것. 미니배치, 분산 축소, Polyak-Ruppert 평균이 그 문서의 내용), Polyak-Ruppert 평균(성질 둘째가 한 문장으로 다룬다), 확률적 근사의 ODE 방법(Ljung 과 Kushner-Clark. 반복을 미분방정식의 이산화로 보는 관점이고 ordinary-differential-equations 가 부모 후보), Kiefer-Wolfowitz 와 영차 최적화(정의 둘째 절이 세 줄뿐이고 SPSA 가 그 문서의 내용). 조건부 분산 유계 조건과 supermartingale 수렴 정리를 martingales 에 기대고 있다",
-      "createdAt": "2026-09-22T16:56:42.610Z",
-      "seq": 939
-    },
-    {
-      "id": "a15b7173",
-      "title": "정의 없이 쓴 용어 훑기 (전체 훑기 10차)",
-      "priority": 12,
-      "note": "2026-09-23 회차에 9차로 '콤팩트성'(compactness) 4 자리, '군 작용'(group-actions) 5 자리, '볼록성'(convexity) 6 자리를 끝냈다. 한 회차에 다섯 차수를 연달아 돌았으므로 우선순위를 12 로 낮춰 다른 종류의 작업과 섞이게 했다. 판정 (19): 같은 낱말이 분야마다 다른 개념을 가리키면 그 문서의 주제와 맞는 자리에만 건다. compactness 는 위상 개념이므로 논리의 콤팩트성 정리를 쓴 자리를 뺐다(ax-grothendieck 57, foundations-overview 43, logicism 109, ultraproducts 7). convexity 는 볼록집합이므로 해석적 정수론의 convexity bound 를 가리키는 '볼록성 깨기'와 '볼록성 한계'를 뺐다(deligne-weil-conjectures 159, rankin-selberg 245). 판정 (17) 대로 앞말이 붙은 '국소콤팩트성'(adeles 7), '비콤팩트성'(selberg-trace-formula 158), '유한군 작용'(geometrization 162), '대칭군 작용'(schur-polynomials 53), 'Weyl 군 작용'(borel-weil-bott 15)을 뺐다. 띄어 쓴 '국소 콤팩트성'(baire-category 49)은 걸었다. 헤딩에만 있고 산문 등장이 없는 문서는 통째로 건너뛴다(jacquet-langlands 83, nonstandard-analysis 61 의 콤팩트성). 한 줄에 두 용어를 걸 때는 link2.mjs 를 용어마다 따로 돌린다. 매번 파일을 다시 읽으므로 앞 삽입으로 밀린 위치를 알아서 찾는다(schauder-fixed-point 5 에 콤팩트성과 볼록성을 걸었다). 남은 상위 후보: 그래프(graphs) 90, 다양체(manifolds) 79, 연결성(connectedness) 35, 완비성(completeness) 16, 생성함수(generating-functions) 10, 지표 정리(index-theorem) 8, Hodge 이론(hodge-theory) 7, 동치관계(equivalence-relations) 7, 벡터다발(vector-bundles) 6, 전처리(preconditioning) 6, 이산로그(discrete-logarithm) 6. '그래프'와 '연결성'과 '완비성'은 판정 (19) 가 걸리는 대표 후보다. 함수의 그래프, 위상의 연결성 대 그래프의 연결성, 거리공간의 완비성 대 논리의 완전성을 갈라야 한다",
-      "createdAt": "2026-09-23T04:41:57.551Z",
-      "seq": 966
-    },
-    {
-      "id": "83525d26",
-      "title": "수치 실험 절 전수 훑기 (3차)",
-      "priority": 12,
-      "note": "2026-09-23 회차 2차에서 남은 후보를 전부 보았고 고칠 것이 없었다. 오탐으로 확정한 절(다음 차수에서 다시 열지 않는다): riemannian-metrics 177 구면 측지선의 수치 계산은 측지선 방정식과 푸는 절차의 서술이다. overconvergent-modular-symbols 127 타원곡선의 p 진 BSD 실험과 133 Sage 의 구현은 알고리즘의 입출력과 비용 서술이다. lang-trotter 139 곡선 암호와 수치 검증, sea-algorithm 206 곡선 암호와 수치 실험은 활용 목록이다. 소수 세 자리 이상이 네 개 넘게 나오는 다섯 문서도 전부 문헌의 상수값이었다. semidefinite-programming 의 0.878 과 0.87856 은 Goemans-Williamson 근사비, channel-coding 74 의 0.531 은 이진대칭채널의 용량, lobachevsky-function 95 와 hyperbolic-3-manifolds 11, 160, 183 의 2.029883 과 1.0149416 은 8 자매듭 여집합의 부피와 정사면체 부피다. 1차에서 고친 넷과 합쳐 헤딩과 소수 자릿수로 뽑을 수 있는 후보는 소진했다. 3차에 볼 것이 있다면 다른 신호로 찾아야 한다. 후보 신호: \"실제로\", \"돌려 보면\", \"해 보면\", \"맞아떨어진다\", \"재현한다\", \"검증했다\" 가 든 문장, 그리고 오차나 정확도를 자릿수로 말하는 문장(\"열 자리\", \"유효숫자\", \"상대오차\"). 우선순위를 12 로 낮춘다",
-      "createdAt": "2026-09-23T04:46:30.909Z",
-      "seq": 972
-    },
-    {
-      "id": "b6d675b5",
-      "title": "문서 자신을 가리키는 문장 훑기 (7차)",
-      "priority": 12,
-      "note": "2026-09-23 회차에 6차를 돌렸다. 표적은 \"~인 셈이다\" 와 평가어였고 6 건을 고쳤다. finite-simple-groups 135 \"추측을 낳은 셈이다\" 를 \"추측을 낳았다\" 로, lambda-calculus 15 \"정의되는 셈이다\" 를 \"정의한다\" 로, logicism 77 \"단사를 요구하는 셈이다\" 를 \"단사가 있어야 한다\" 로, schur-polynomials 138 \"조합적으로 증명하는 셈이다\" 를 \"조합적으로 증명한다\" 로, weak-convergence 92 의 \"대신한다는 점이 묘미다\" 를 \"대신한다\" 로 그리고 \"번역해 주는 셈이다\" 를 \"번역한다\" 로, theta-series 167 \"theta 급수가 핵심 재료다\" 를 \"theta 급수를 쓴다\" 로 고쳤다. 오탐: pila-wilkie-theorem 68 \"평면 곡선 셈이다\", primes 76 \"나머지 있는 나눗셈이다\", sea-algorithm 68 \"다항식 곱셈이다\" 는 낱말의 일부다. 같은 회차에 4절의 금지 표현 grep(이것이 바로, 다시 말해, 말하자면, 본질적으로, 흥미롭게도, 놀랍게도, 에 다름 아니, 직관적으로 말하면, 요약하면, 주목할 것은, 짚고 넘어가, 강조할 점, 생각해 보면, 이 점이 중요, 의 출발점이다, 말해 준다)과 조언투 grep(우리가/는/를, 해 보자, 살펴보자, 생각해 보자)과 기타 grep(라는 사실은, 것이 밝혀졌다, 놀랍지 않, 우연이 아니, 이는 곧)을 전부 돌렸고 0 건이었다. 4절 문학적 비유 grep 은 네 자리가 걸렸으나 전부 용어의 일부라 예외다: elliptic-curves 134 Montgomery 사다리, lie-algebras 180 사다리 연산자, post-quantum-cryptography 142 함정문, theta-series 167 마법함수(Viazovska 의 magic function). 다음 차수에 볼 후보: \"~라는 점이다\" 로 끝나는 문장, \"~하는 대목이다\", \"~가 드러난다\", \"~를 보여 준다\". 문체 검사가 여러 차수째 거의 깨끗하므로 우선순위를 12 로 낮춘다",
-      "createdAt": "2026-09-23T04:47:47.452Z",
-      "seq": 974
-    },
-    {
-      "id": "88facd21",
-      "title": "본문 링크가 수식 안에 들어가는 사고의 검사",
-      "priority": 12,
-      "note": "상시 항목. 링크를 문자열 위치로 삽입하는 작업을 하는 회차에서는 그 작업과 함께 돌리고, 그런 작업이 없는 회차에서는 건너뛴다. 이번 회차에 이 항목이 세 번 연달아 pop 되어 우선순위를 12 로 낮췄다. 다시 링크 삽입을 하는 회차에서는 그 작업의 일부로 돌리면 되고 따로 pop 할 필요가 없다. 2026-09-23 회차에 링크를 건 다섯 작업(유한체 41 자리, 행렬식 22 자리, 기본군과 균등연속 24 자리, 멱급수와 군의 표현 24 자리, 콤팩트성과 군 작용과 볼록성 15 자리)마다 커밋 전에 전수로 돌려 매번 0 건을 확인했고 회차 끝에 한 번 더 돌려 0 건이었다. 검사기는 코드펜스를 건너뛰고 달러 두 개 블록 안의 줄과 인라인 달러 스팬을 모아 그 안에 /\\]\\([a-z0-9-]+\\.md\\)/ 가 있으면 보고한다(스크래치패드 mathlink.mjs, 20줄). 삽입기 쪽에도 같은 방어를 두었다. link2.mjs 는 줄 앞에서부터 짝이 맞지 않는 달러의 개수를 세어 삽입 위치가 인라인 수식 스팬 안이면 MATH 로 보고하고 거른다. 헤딩(^#)도 HEAD 로 거른다. 2026-09-22 여섯째 회차에 elliptic-curves 링크를 31 문서에 걸 때 deuring-correspondence 8줄 블록 안 \\text{초특이 타원곡선} 에 링크가 들어가 렌더 결과에 링크 문법이 글자 그대로 나온 사고가 있었다. 4절 수식 규칙의 여섯 검사가 전부 이것을 통과시킨다. dev/ 는 고치지 않는 것이 0절이므로 render-check 에 넣자는 제안은 독자에게 남긴다",
-      "createdAt": "2026-09-23T04:48:07.866Z",
-      "seq": 975
-    },
-    {
-      "id": "5615742e",
-      "title": "산문 금지 표현 회귀 점검 (10차)",
-      "priority": 12,
-      "note": "2026-09-23 회차 9차. 8차 note 의 (a) 와 (b) 를 돌렸다. (a) 8차가 제안한 \"결론 문장이 앞, 전제 문장이 뒤\" 패턴을 직접 잡는 검사기를 짰다. 문장을 \"다.\" 뒤에서 자르고, 뒷 문장이 \"때문이다.\" 로 끝나면서 앞 문장에 \"려면|이려면|하려면|므로|따라서|그러므로\" 가 있는 조합을 보고한다(스크래치패드 node 인라인, 12줄). 전체 12 건이 걸렸고 3 건을 고쳤다. bounded-variation 63 \"Cantor 함수는 연속이고 증가하므로 유계변동이지만 절대연속이 아니다. 도함수가 ... 오르기 때문이다.\" 를 유계변동과 절대연속을 두 문장으로 갈라 각각 근거를 앞에 놓는 꼴로 고쳤다. brownian-motion 13 \"분산이 ... 무관하다. 걸음 크기를 ... 잡았기 때문이다.\" 를 한 문장으로 합쳐 근거를 앞에 놓았다. maximum-likelihood 141 \"분산의 MLE 는 ... 편향되어 있다. 평균을 데이터에서 추정하면서 자유도 하나를 잃기 때문이다.\" 를 자유도를 잃는다는 사실을 먼저 놓는 두 문장으로 고쳤다. 남긴 9 건의 판정: 뒷 문장이 앞 문장에 없는 새 정보를 주면 남긴다(model-theory 75 대수적 폐체가 초월 차수로 결정된다, modular-curves 29 SL2(Z) 의 유한 위수 원소, girsanov 127 표류는 바뀌고 시그마는 안 바뀐다). \"~도 이 때문이다\" 는 앞의 이유를 다른 사실에 적용하는 꼴이라 되풀이가 아니다(functions 67, poitou-tate 82). martingales 17 과 133, stickelberger 21, weak-convergence 110 은 문장 분할이 어긋난 오탐이다. (b) 완곡 표현 grep \"할 수 있음을 알 수 있다|음을 알 수 있다|라고 할 수 있다|인 것으로 보인다|라고 보아도 좋다|라 하겠다|것을 알 수 있다|라 할 수 있다\" 는 0 건이다. \"볼 수 있다.\" 만 9 건인데(adeles 161, bernoulli-numbers 51, boolean-algebras 7, canonical-height 51, exponential-families 21, exterior-algebra 91, group-actions 7, localization-rings 155, power-series 157) 전부 \"X 를 Y 로 볼 수 있다\" 꼴의 관점 전환이라 완곡 표현이 아니다. 오탐으로 확정하고 다음 차수에서 다시 열지 않는다. 10차에 볼 것: 같은 검사기의 앞 문장 조건을 넓혀 본다. 지금은 연결어미가 있는 문장만 보므로, 단언으로 끝난 문장 뒤에 \"때문이다\" 가 오는 조합(전체 \"때문이다\" 130 여 건의 대부분)은 걸리지 않는다. 그 조합에서 되풀이를 가려내려면 앞뒤 어간 겹침을 함께 보아야 한다. 8차의 because.mjs 와 이번 검사기를 합치는 것이 다음 걸음이다",
-      "createdAt": "2026-09-23T04:48:58.373Z",
-      "seq": 976
-    },
     {
       "id": "728bad87",
       "title": "해석적 계층의 후속 간선",
@@ -362,6 +290,30 @@
       "note": "2026-09-23 첫째 회차 12차. 11차 note 가 지시한 대로 검사기(스크래치패드 engterm.mjs)의 정규식에 조사 제거를 넣고 다시 돌렸다. 30 건이 걸렸고 눈으로 걸러 넷을 통일했다. (1) simply connected: 세 역어가 흩어져 있었다. 단순연결 38 곳(13 문서), 단일연결 5 곳(fundamental-group, analytic-continuation), 단연결 13 곳(7 문서, casson-invariant 의 '단일 연결' 포함). 다수이자 한국어 관행인 단순연결로 모았다. 정의 문서 fundamental-group 43 이 소수 쪽이었는데 11차의 '정의하는 문서를 따른다' 규칙을 뒤집어 다수를 따랐다. minimum-spanning-tree 79 의 '단일 연결 군집화' 는 single-linkage 라 건드리지 않았다. (2) ordinary: 보통 3 문서(complex-multiplication, dwork-rationality, newton-polygon 이 표에서 병기로 정의) 대 순종 2 문서(herbrand-ribet 74, overconvergent-modular-symbols 37·109). 보통으로 모으고 herbrand-ribet 첫 등장에 병기를 붙였다. kolyvagin-systems 99 의 '순종 확대' 는 tame extension 이라 남겼다(저장소에서 tame 은 그 한 곳뿐이라 통일할 짝이 없다). (3) normal form: classification-of-surfaces 51·107·119 의 '일반형' 을 정규형으로 고쳤다. 저장소의 normal form 다수 역어가 정규형이고(analytical-hierarchy, boolean-algebras, burnside-lemma, curry-howard, equivalence-relations, lambda-calculus), '일반형' 은 adjunctions 224, counting-principles 76, pigeonhole-principle 25, umbral-moonshine 88 이 general form 뜻으로 쓰고 있어 저장소 안에서 뜻이 충돌했다. (4) annulus: classification-of-surfaces 159 '원환' 을 fundamental-group 76 의 '원환 영역' 에 맞췄다(저장소가 torus 를 원환면이라 부르므로 '원환' 은 혼동된다). 오검출 판정: genus 는 곡면 종수와 이차형식 류가 다른 개념, contraction 은 작용소 수축·아이디얼 축소·간선 축약 셋이 다른 개념, exact 는 신뢰구간의 정확과 열의 완전이 다르다. extension 판정도 같은 회차에 끝냈다: 저장소는 체와 군의 extension 을 '확대'(76 곳), 스칼라와 함수의 extension 을 '확장'(스칼라 확장 4, 확장 정리 4, 연속 확장 1)으로 일관되게 갈라 쓴다. 그러므로 localization-rings 91 의 아이디얼 '확대' 와 adjunctions 216 의 스칼라 '확장' 은 둘 다 정당하고 통일 대상이 아니다. 같은 회차에 올뭉치/올다발도 판정했다. 저장소 어미가 벡터다발 30, 주다발 10, 올다발 24 로 '다발' 에 굳어 있어 homotopy-groups 의 일반명사 '올뭉치' 6 곳을 올다발로 바꿨고, Hitchin 올뭉치(fundamental-lemma, geometric-satake, satake-isomorphism)와 Seifert 올뭉치(geometrization, hyperbolic-3-manifolds)는 고유명 붙은 용어라 남겼다. sed 로 일괄 치환하면 조사가 어긋나므로(올다발를, 올다발는, 올다발가) 치환 뒤 '올다발(를|는|가)' grep 으로 반드시 확인할 것. 13차에 볼 새 축: 지금 검사기는 병기가 있는 자리만 본다. 병기로 확인된 역어 목록을 사전으로 삼아 그 짝(예: 단일연결)이 병기 없이 본문에 남아 있는지 훑는 것이 다음 축이다. 어미가 갈린 쌍도 후보다(뭉치/다발 유형. 몫공간과 상공간, 가군과 모듈 같은 쌍을 같은 방법으로 셀 것)",
       "createdAt": "2026-09-23T16:53:30.745Z",
       "seq": 1032
+    },
+    {
+      "id": "8a8ec28b",
+      "title": "정의 없이 쓴 용어 훑기 (전체 훑기 11차)",
+      "priority": 12,
+      "note": "2026-09-23 회차에 10차로 '동치관계'(equivalence-relations) 8 자리, '이산로그'(discrete-logarithm) 4 자리, '벡터다발'(vector-bundles) 6 자리, '생성함수'(generating-functions) 1 자리, '지표 정리'(index-theorem) 5 자리를 끝냈다. 노트가 지시한 node dev/link2.mjs 가 저장소에 없어 손으로 우회했다(별도 큐 항목 p100). 우회 방법: 문서마다 '# 연관 문서' 앞의 본문만 보고, 그 문서에 목표 id 로의 링크가 이미 있으면 건너뛰고, 헤딩이 아닌 첫 등장 줄만 치환하는 20 줄짜리 스크립트를 스크래치패드에 두고 돌렸다. 새 판정 (20): 이미 부모나 자식으로 간선이 있는 문서는 본문 링크를 걸지 않는다. 독자가 연관 문서 절에서 바로 찾기 때문이다. 이 판정으로 groups 와 modular-arithmetic 의 이산로그, gauss-bonnet 과 hodge-theory 와 de-rham-cohomology 의 지표 정리, combinatorial-species 의 생성함수를 뺐다. 판정 (19) 의 사례가 이번에 셋 나왔다: '지표 정리'가 group-actions 25 의 표 셀에서는 군론의 부분군 지표 정리라 뺐고, '생성함수'는 후보 10 자리 가운데 9 자리가 '적률생성함수' '지수생성함수' 'cumulant 생성함수' 같은 복합어이거나 kl-divergence 114 의 Bregman divergence 생성함수라 한 자리만 남았으며, 'Hodge 이론'은 후보 7 자리가 전부 'p 진 Hodge 이론'(p-adic-hodge-theory 로 이미 링크됨)이거나 beilinson-bernstein 98 의 조합적 Hodge 이론이라 한 자리도 걸지 않았다. 판정 (17) 의 예외: 'Atiyah-Singer 지표 정리'(poincare-hopf 53)는 앞말이 붙었지만 index-theorem 문서 그 자체의 정식 이름이므로 걸었다. 헤딩에만 있고 산문 등장이 없어 건너뛴 것: bernoulli-numbers 21 의 생성함수, de-rham-cohomology 119 의 Hodge 이론. 남은 상위 후보: 그래프(graphs) 90, 다양체(manifolds) 79, 연결성(connectedness) 35, 완비성(completeness) 16, 전처리(preconditioning) 6. '그래프'와 '연결성'과 '완비성'은 판정 (19) 가 걸리는 대표 후보이고, '다양체'는 '대수다양체' '복소다양체' 'Kahler 다양체' 'Riemann 다양체' 같은 복합어가 많아 판정 (17) 을 먼저 적용해야 한다",
+      "createdAt": "2026-09-23T20:50:41.287Z",
+      "seq": 1043
+    },
+    {
+      "id": "a5b46717",
+      "title": "문서 자신을 가리키는 문장 훑기 (8차)",
+      "priority": 12,
+      "note": "2026-09-23 회차에 7차를 돌렸다. 표적은 6차 노트가 남긴 네 후보였고 9 건을 고쳤다. '~를 보여 준다' 7 건: ideals-quotient-rings 36 '마지막 줄이 극단을 보여 준다' 를 '마지막 줄이 극단이다' 로, 38 '기하로 읽는 법을 보여 준다' 를 '기하적 뜻이 있다' 로, modules 41 '이 그림의 마지막 두 줄이 가군 언어의 값어치를 보여 준다' 문장을 없애고 뒤 문장에 '그림의 마지막 두 줄에서' 를 붙여 합쳤다, tensor-products 29 '다음 계산이 스칼라환의 영향을 보여 준다' 를 지웠다(절 제목 '스칼라가 소멸시키는 예' 가 이미 그 말이다), confidence-intervals 123 의 '이 관점의 실용적 귀결이 두 가지다' 예고문과 '첫째/둘째' 를 없애고 '~가 구간에서 읽힌다' 로, boolean-algebras 133 '어떤 구조가 남는지를 보여 준다' 를 '포기하는 법칙마다 남는 구조가 다르다' 로, cardinality 106 '크기가 관점에 상대적임을 보여 준다' 를 '크기는 모형에 상대적이다' 로, supersingular-isogeny-graphs 161 'SIDH 의 붕괴는 ~ 보여 준다' 를 사실 문장 뒤 'SIDH 의 붕괴가 그 예다' 로 갈랐다. 예고문 1 건: mathematical-platonism 74 '철학적 입장은 실제 수학적 실천에 다음과 같이 드러난다' 를 지웠다(목록 항목이 제 이름을 갖고 있어 맥락이 남는다). 오탐으로 확정한 것: '~가 드러난다' 는 4절 금지 목록에 없고, category 63, euler-maclaurin 13, principal-component-analysis 112, tensor-products 220 은 수학적 사실 진술이라 그대로 둔다. '~라는 점이다' 는 fargues-scholze 46 한 자리뿐이고 강조 구문으로 정상이다. '~대목이다' 는 groups 74 와 stickelberger 146 두 자리이고 둘 다 설명의 위치를 가리키는 정상 용법이다. 다음 차수에 볼 후보: '~라고 할 수 있다', '~인 것이다', '~하는 것이 좋다', '~할 필요가 있다' 같은 완곡 어미와 '여기서', '앞서 본', '위에서 본' 으로 시작해 앞 절을 되짚는 문장",
+      "createdAt": "2026-09-23T20:53:57.342Z",
+      "seq": 1047
+    },
+    {
+      "id": "16505d45",
+      "title": "본문 링크가 수식 안에 들어가는 사고의 검사",
+      "priority": 12,
+      "note": "상시 항목. 링크를 문자열 위치로 삽입하는 작업을 하는 회차에서는 그 작업과 함께 돌리고, 그런 작업이 없는 회차에서는 건너뛴다. 2026-09-23 회차에 링크를 건 세 작업(동치관계와 이산로그 12 자리, 벡터다발과 생성함수 7 자리, 지표 정리 5 자리) 뒤에 전수로 돌려 0 건이었다. 이 회차의 삽입기는 link2.mjs 가 아니라 손으로 쓴 20 줄 스크립트였고 헤딩(^#)만 걸렀으므로, 수식 스팬 방어는 삽입기가 아니라 이 검사기가 사후로 맡았다. 검사기는 코드펜스를 건너뛰고 달러 두 개 블록 안의 줄과 인라인 달러 스팬을 모아 그 안에 /\\]\\([a-z0-9-]+\\.md\\)/ 가 있으면 보고한다(스크래치패드 mathlink.mjs, 20줄. 회차마다 스크래치패드가 비므로 다시 쓴다). 2026-09-22 여섯째 회차에 elliptic-curves 링크를 31 문서에 걸 때 deuring-correspondence 8줄 블록 안 \\text{초특이 타원곡선} 에 링크가 들어가 렌더 결과에 링크 문법이 글자 그대로 나온 사고가 있었다. 4절 수식 규칙의 여섯 검사가 전부 이것을 통과시킨다. dev/ 는 고치지 않는 것이 0절이므로 render-check 에 넣자는 제안은 독자에게 남긴다",
+      "createdAt": "2026-09-23T20:54:21.022Z",
+      "seq": 1048
     },
     {
       "id": "d2720772",
@@ -1292,6 +1244,78 @@
       "seq": 1018
     },
     {
+      "id": "f6e1c1d7",
+      "title": "군축차 설계와 알파 소비 함수",
+      "priority": 10,
+      "note": "sequential-probability-ratio-test 활용 첫째 항목. 정해진 시점에만 중간분석하는 설계, O'Brien-Fleming 과 Pocock 경계, 알파 소비 함수, hypothesis-testing 과 sequential-probability-ratio-test 가 부모. #statistics",
+      "createdAt": "2026-09-23T20:40:18.977Z",
+      "seq": 1033
+    },
+    {
+      "id": "ef838fad",
+      "title": "Doob 분해와 supermartingale",
+      "priority": 10,
+      "note": "martingales 아래. 예측가능 증가과정으로의 분해, Snell 포락의 분해와 optimal-stopping 의 최적성 증명이 쓰는 도구, Doob-Meyer 로의 연속시간 확장. #probability",
+      "createdAt": "2026-09-23T20:40:19.132Z",
+      "seq": 1034
+    },
+    {
+      "id": "530f0750",
+      "title": "미국형 옵션과 자유경계 문제",
+      "priority": 10,
+      "note": "optimal-stopping 활용 둘째 항목이 부른다. 연속시간 판이라 brownian-motion 과 ito-calculus 가 부모 후보이고 optimal-stopping 도 부모. 위험중립 측도를 change-of-measure 로 잇는다. 행사 경계와 Stefan 문제. #probability #optimization",
+      "createdAt": "2026-09-23T20:40:19.342Z",
+      "seq": 1035
+    },
+    {
+      "id": "ea24144a",
+      "title": "Tate 코호몰로지와 Herbrand 몫",
+      "priority": 10,
+      "note": "group-cohomology 순환군 주기성 절이 부른다. 완전군의 norm 사상으로 음의 차수까지 잇기, 주기성, Herbrand 몫의 곱셈성, class-field-theory 의 지표 계산이 쓰는 도구. 부모는 group-cohomology. #group_theory #number_theory",
+      "createdAt": "2026-09-23T20:43:35.685Z",
+      "seq": 1036
+    },
+    {
+      "id": "be38bf75",
+      "title": "Hilbert 정리 90 과 Brauer 군",
+      "priority": 10,
+      "note": "group-cohomology 활용 둘째 항목. H^1(G,L^times)=0 의 증명(선형 독립성), 순환 확대의 norm 기술, H^2 와 중심단순대수의 대응, class-field-theory 와 group-cohomology 가 부모 후보. #number_theory #algebra",
+      "createdAt": "2026-09-23T20:43:35.841Z",
+      "seq": 1037
+    },
+    {
+      "id": "83d62260",
+      "title": "신뢰영역 정책 최적화와 근접 정책 최적화",
+      "priority": 10,
+      "note": "policy-gradient 활용 넷째 항목. 대리 목적의 하한, KL 제약과 잘라내기, 단조 개선 보장. 부모는 policy-gradient. #machine_learning #optimization",
+      "createdAt": "2026-09-23T20:45:55.723Z",
+      "seq": 1038
+    },
+    {
+      "id": "ce6949d3",
+      "title": "행위자-비평자와 시간차 학습",
+      "priority": 10,
+      "note": "policy-gradient 활용 셋째 항목과 q-learning 갱신식이 만나는 자리. 비평자의 TD(0) 갱신, 적격 흔적, 편의와 분산의 맞바꿈. 부모는 policy-gradient 와 q-learning. #machine_learning",
+      "createdAt": "2026-09-23T20:45:55.890Z",
+      "seq": 1039
+    },
+    {
+      "id": "503d2fe5",
+      "title": "분산 축소 경사법",
+      "priority": 10,
+      "note": "stochastic-gradient-descent 성질 마지막 절이 한 문단으로 다룬다. SAG 와 SVRG 의 갱신식, 불편성 유지와 분산이 0 으로 가는 이유, 고정 보폭 선형 수렴의 증명 요지, 유한합 제약. 부모는 stochastic-gradient-descent. #optimization #machine_learning",
+      "createdAt": "2026-09-23T20:47:56.907Z",
+      "seq": 1040
+    },
+    {
+      "id": "fbed365b",
+      "title": "Kiefer-Wolfowitz 절차와 영차 최적화",
+      "priority": 10,
+      "note": "stochastic-approximation 정의 둘째 절이 세 줄뿐이다. 유한차분 기울기 추정, SPSA 의 동시 섭동, 차분폭과 보폭의 동시 일정, 수렴률이 1차 방법보다 느린 이유. 부모는 stochastic-approximation. #optimization #statistics",
+      "createdAt": "2026-09-23T20:47:57.070Z",
+      "seq": 1041
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -1410,6 +1434,14 @@
       "note": "2026-09-23 회차에 4절 번역체 표 여덟 행을 전수로 한 바퀴 돌고 남긴 회귀 검사다. 새 문서를 30 개쯤 더 쓴 뒤에 돌린다. 이 순서로 돌린다: grep -n '^#\\+ .*에 의한' docs/*.md(기준선 0), grep -n '^#\\+ .*로의' docs/*.md(기준선 0. '경로의', '회로의' 오검출 제외), grep -noE '에 의해 [^,.]*(된다|되고|되어|진다)' docs/*.md(기준선 0), grep -noE '(가능해진다|필요해진다|위험해진다|안전해진다|깔끔하게 된다)' docs/*.md(기준선 0), grep -noE '[가-힣]+(한|인|되는|하는) 것은 [^.]{0,35}이다' docs/*.md(기준선 11. 전부 '~뿐이다' 강조, 동치 진술, 이유 추가라 남긴 것이다). 판정 원칙: 글자가 아니라 문장 구조를 본다. '정리에 의해'(근거 부사구), 'W 로의 정사영'(사상의 공역), '이론이 모형을 가진다'(수학 표준 표기), '정해진다·더해진다'(자동사)는 번역체가 아니므로 고치지 않는다. 고칠 것은 행위자가 있는데 대상을 주어로 세운 피동, become 직역, 강조 없는 분열문, 추상명사 주어 + 만능동사 넷이다",
       "createdAt": "2026-09-23T08:56:49.806Z",
       "seq": 999
+    },
+    {
+      "id": "0b8f18eb",
+      "title": "산문 금지 표현 회귀 점검 (11차)",
+      "priority": 8,
+      "note": "2026-09-23 회차 10차. 9차 note 의 다음 걸음(단언 문장 뒤의 '때문이다' 를 어간 겹침으로 거르기)과 그 자리에서 떠오른 다른 어미까지 돌렸고 고칠 것이 0 건이었다. 검사기(스크래치패드 because2.mjs, 22줄): 코드펜스와 헤딩과 표 줄을 건너뛰고, 줄을 '다.' 뒤에서 잘라 근거 어미로 끝나는 문장 S2 와 그 앞 문장 S1 을 짝짓는다. 한글 2 글자 이상 토큰을 앞 두 글자로 자른 집합을 만들고(이것은/그것은/따라서/그러므로/여기서/이때/그리고/하지만 제외) S2 의 토큰 가운데 S1 에도 있는 비율을 센다. (1) '때문이다': 겹침 45% 이상 0 건, 25% 이상 15 건이고 15 건 모두 새 정보를 주는 정상 근거 문장이었다. 오탐 확정: algebraic-varieties 53, connectedness 141, curry-howard 76, curvature 101, galois-theory 121, hecke-operators 26, prime-ideals 68, pushforward-measure 23, quadratic-reciprocity 162, s-cobordism 126, schur-polynomials 52, structural-set-theory 80, turan-theorem 11, ultraproducts 19, weak-konig-lemma 13. (2) '까닭이다|이유다|탓이다|덕분이다': 같은 검사기로 1 건(serre-conjecture 125)이고 홀수 조건이라는 새 정보를 주므로 정상이다. 따로 grep 한 '~인 이유다' 20 여 건은 앞 사실을 뒤 사실의 이유로 지목하는 연결이지 되풀이가 아니고, 4절 금지 목록에도 없다. 판정 기준: 4절이 금하는 것은 앞 문장에 이미 있는 말을 어순만 바꿔 되풀이하는 근거 문장이고, 앞 문장에 없던 사실(정리 이름, 세는 값, 반례, 구조)을 대면 남긴다. 결론: 8차부터 쌓인 네 검사기(because.mjs, 결론-전제 순서, because2.mjs, 어미 확장)로 근거 문장 계열이 소진되었다. 우선순위를 8 로 낮춘다. 다시 열려면 근거 어미가 아닌 다른 계열을 찾아야 한다",
+      "createdAt": "2026-09-23T20:55:34.144Z",
+      "seq": 1050
     },
     {
       "id": "fb947ff9",
@@ -1538,6 +1570,14 @@
       "note": "2026-09-20 회차에 확인했더니 docs/curvature.md 에 mermaid 가 하나도 없다. 곡률 분류는 이미 K 의 부호, 모양, 예를 열로 둔 표로 바뀌어 있다. 이전 항목(b3efb83e)은 큐에서 지웠다. 기록만 남긴다",
       "createdAt": "2026-09-20T04:42:28.679Z",
       "seq": 699
+    },
+    {
+      "id": "1bf37c1f",
+      "title": "dev/link2.mjs 가 저장소에 없다",
+      "priority": 5,
+      "note": "전체 훑기 회차의 노트가 node dev/link2.mjs 로 본문 링크를 건다고 적는데 dev/ 에 그 파일이 없다(graph, order-check, queue, render-check, timer 만 있다). 0절이 dev/ 를 고치지 말라 하므로 Claude 가 처리할 수 없는 항목이고, 독자의 결정을 기다린다. 우선순위를 100 에서 5 로 낮춘 이유가 이것이다(p100 이면 매 회차 이 항목이 먼저 나와 탐사가 막힌다). 손으로 우회하는 방법은 훑기 11차 항목의 note 에 적어 두었다. 독자가 dev/ 에 스크립트를 두기로 정하면 그때 만들고, 아니면 훑기 노트에서 link2.mjs 지시를 지울 것",
+      "createdAt": "2026-09-23T20:51:06.994Z",
+      "seq": 1045
     },
     {
       "id": "50f81215",
@@ -1954,6 +1994,14 @@
       "note": "marchenko-pastur 아래. Ledoit-Wolf 축소, 관측 스펙트럼에서 참 스펙트럼을 Stieltjes 변환으로 역산, 역행렬이 필요한 응용에서 왜 중요한지",
       "createdAt": "2026-09-15T00:58:41.457Z",
       "seq": 247
+    },
+    {
+      "id": "66f11efb",
+      "title": "수치 실험 절 전수 훑기 (소진 판정)",
+      "priority": 3,
+      "note": "2026-09-23 회차 3차에서 2차 노트가 제시한 새 신호를 전부 돌렸고 고칠 것이 사실상 없었다. 돌린 신호: '실제로 돌려|돌려 보면|해 보면|맞아떨어진|재현한다|재현했다|검증했다|확인했다|확인해 보' 18 자리, '유효숫자|상대오차|자리까지 맞|소수점 N 자리|오차가 N|1e-N|10^{-N}' 20 자리, 헤딩의 '수치|시뮬레이션|실험|계산으로 확인|직접 확인' 20 자리. 오탐으로 확정한 종류(다음 차수에서 다시 열지 않는다): (1) 수학적 '재현·일치' 진술. fermat-euler-theorem 73, geometric-satake 184, gnn-expressivity 69, heyting-algebras 5, hyperbolic-3-manifolds 163, instanton-floer-homology 88, newton-polygon 79, semidefinite-programming 78. (2) 역사적 사실로서의 계산. graph-coloring 143 의 4 색 정리, latin-squares 61 의 Tarry, monstrous-moonshine 19 의 McKay, sphere-packing 35 의 Viazovska, vandiver-conjecture 56, greenberg-conjecture 92 의 문헌 계산 표. (3) 수치해석 지식으로서의 오차 분석. airy-functions 181, derivative 86, fft 82, gamma-function 141, laplace-method 96, matrix-factorizations 73, euler-maclaurin 181, channel-coding 78-82 의 부호율 표. 헤딩에 '수치'가 든 문서 20 개는 전부 알고리즘의 절차나 안정성 서술이었다. 고친 것은 painleve-equations 109 한 줄뿐이다('적분한 해는' 을 '이 해는' 으로. 저자의 실행을 가리키던 주어를 대상으로 바꿨다). 결론: 헤딩, 소수 자릿수, 검증 동사 세 신호로 뽑을 수 있는 후보가 소진되었다. 우선순위를 3 으로 낮춘다. 다시 열려면 새 신호가 있어야 하고, 지금 남은 것은 표에 든 수치가 문헌 상수인지 저자 계산인지를 각주 유무로 가르는 방법뿐이다",
+      "createdAt": "2026-09-23T20:52:03.802Z",
+      "seq": 1046
     }
   ]
 }
