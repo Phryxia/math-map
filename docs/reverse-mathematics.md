@@ -107,6 +107,6 @@ $\mathrm{WKL}\_0$ 은 계산 가능한 집합만으로는 모형을 얻지 못�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [약한 König 보조정리](weak-konig-lemma.md)
 
 #logic #foundations #computation
