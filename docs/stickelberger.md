@@ -145,7 +145,7 @@ Stickelberger 는 $I_m$ 이 류군을 죽인다고만 말하므로 $\char35{}\ma
 
 [Euler 계](euler-systems.md)가 필요한 지점이 1 에서 3 으로 올라가는 대목이다. Stickelberger 원소 하나는 방정식 하나를 주지만 Euler 계는 층마다 새 방정식을 공급한다.
 
-## 일반화
+## Stickelberger 원소의 유사물
 
 - **Brumer–Stark 추측.** 임의의 아벨 확대 $L/K$ 에 대해 $\theta$ 의 유사물이 류군을 소멸시키고, 그 소멸을 실현하는 원소가 명시적 조건을 만족한다는 예측이다. 총실체 위에서는 Dasgupta–Kakde 가 증명했다.
 - **Gross–Koblitz 공식.** Stickelberger 합동의 $\pi$ 진 정밀판으로, Gauss 합을 Morita 의 $p$ 진 감마함수 값의 곱으로 표현해 합동을 등식으로 올린다.

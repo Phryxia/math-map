@@ -163,7 +163,7 @@ $$
 
 자기동형 표현 가운데 더 작은 군에서 유도된 Eisenstein 쪽은 온도성을 깨고 첨점 쪽만 온도적일 것으로 기대된다. Arthur 의 분류에서 이 구분이 $A$ 매개변수와 $L$ 매개변수의 차이다.
 
-## 일반화
+## 높은 계수와 Langlands–Shahidi 방법
 
 - **레벨과 첨점.** $\Gamma_0(N)$ 은 첨점이 여러 개이고 각 첨점마다 Eisenstein 급수가 있다. 산란 행렬이 진짜 행렬이 되고 그 행렬식이 스펙트럼 이론의 중심 대상이다.
 - **더 높은 계수.** $\mathrm{GL}\_n$ 에서는 포물 부분군 $P$ 마다, 그 Levi 위의 첨점형식 $\sigma$ 마다 Eisenstein 급수 $E(g,s;\sigma,P)$ 가 있다. Langlands 가 이들의 해석적 접속을 증명했고 그것이 $L^2(\mathrm{GL}\_n(\mathbb Q)\backslash\mathrm{GL}\_n(\mathbb A))$ 의 스펙트럼 분해를 준다.

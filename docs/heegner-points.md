@@ -208,7 +208,7 @@ Elkies 는 이 방법으로 좌표 분자의 자릿수가 수천에 이르는 �
 
 $D$ 를 잘못 고르면 $y_K$ 가 비틀림 점이 되어 정보를 주지 않는다. 곡선 $389a$ 는 순위 $2$ 라 어떤 $K$ 에서도 $L'(E/K,1)=0$ 이고 공식이 $\hat h(y_K)=0$ 을 준다. 순위 $\ge2$ 에서 방법이 막힌다는 사실이 공식 자체에 적혀 있다.
 
-## 일반화
+## Gross–Zagier 공식의 확장
 
 - **Gross–Zagier–Zhang.** Zhang 이 공식을 총실체 위의 Shimura 곡선으로 확장했고, Yuan–Zhang–Zhang 이 자기동형 표현의 언어로 일반화했다. 그 형태에서 공식은 Waldspurger 공식의 미분판이다.
 - **$p$ 진 Gross–Zagier.** Perrin-Riou 가 $p$ 진 $L$ 함수의 미분과 $p$ 진 높이를 잇는 판본을 얻었다. Iwasawa 주추측과 결합해 $\text{Ш}$ 의 $p$ 부분을 재는 데 쓰인다.

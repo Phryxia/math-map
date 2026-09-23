@@ -134,7 +134,7 @@ $\mathbb R^3\times[0,1]$ 안의 매끄러운 곡면 $\Sigma$ 가 $K_0$ 와 $K_1$
 
 $\mathbb Z$ 계수 정육면체 복합체의 크기는 $\sum_\alpha 2^{k_\alpha}$ 로 교차수에 지수적이다. 도식을 tangle 로 잘라 각 조각의 복합체를 소거로 줄이고 이어 붙이는 Bar–Natan 의 국소 알고리즘이 수십 교차 매듭까지 다룬다. 소거 없이 Smith 표준형만 쓰면 십여 교차에서 막힌다.
 
-## 일반화
+## 변형과 다른 이론과의 관계
 
 - $\mathfrak{sl}\_2$ 를 $\mathfrak{sl}\_N$ 으로 바꾸면 Khovanov–Rozansky 호몰로지가 나오고 HOMFLY(Hoste–Ocneanu–Millett–Freyd–Lickorish–Yetter) 다항식을 범주화한다. 재료는 행렬 인수분해다.
 - 홀수 Khovanov 호몰로지는 같은 Euler 지표를 주면서 다른 꼬임을 갖는다. $\mathbb Z/2$ 계수에서 둘이 만난다.
