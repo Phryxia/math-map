@@ -8,23 +8,15 @@ $$
 E[X_{n+1} \mid \mathcal{F}\_n] \thickspace=\thickspace X_n .
 $$
 
-이 한 줄이 주는 힘은 놀라울 정도로 크다. 겉보기에 아무 구조도 없어 보이지만, 이 조건만으로 (1) 기댓값이 시간에 대해 불변이고, (2) 적절한 조건에서 임의의 **정지시간**까지 그 불변성이 유지되며(선택적 정지 정리), (3) 최댓값의 꼬리가 제어되고(Doob 부등식), (4) 유계성 가정 아래 거의 확실하게 수렴한다(martingale 수렴 정리). 조건은 [조건부 기댓값](conditional-expectation.md)의 언어로만 쓸 수 있으므로 martingale 이론은 측도론적 조건부 기댓값 위에 바로 얹힌다.
+이 조건 하나에서 기댓값이 시간에 대해 불변이고, 적절한 조건에서 임의의 **정지시간**까지 그 불변성이 유지되며(선택적 정지 정리), 최댓값의 꼬리가 제어되고(Doob 부등식), 유계성 가정 아래 경로가 거의 확실하게 수렴한다(martingale 수렴 정리). 조건은 [조건부 기댓값](conditional-expectation.md)의 언어로만 쓸 수 있으므로 martingale 이론은 측도론적 조건부 기댓값 위에 바로 얹힌다.
 
 응용 범위는 도박꾼 파산 문제와 [Markov 연쇄](markov-chains.md)의 도달 확률 계산에서 시작해, [큰 수의 법칙](law-of-large-numbers.md)의 강화, [집중부등식](concentration-inequalities.md)의 의존성 있는 버전(Azuma–Hoeffding), 확률적분과 금융 수리의 무차익 이론까지 이어진다.
 
 # 직관
 
-세 판돈을 생각하면 정의가 자연스럽다. 매 판 공정한 동전을 던져 $\pm1$ 을 얻는 게임에서 누적 재산 $S_n$ 은 martingale 이다. 다음 판의 기대 이득이 0 이므로 현재 재산이 곧 미래 재산의 예측값이다. 유리한 게임이면 예측값이 현재보다 크고(submartingale), 불리하면 작다(supermartingale). 이름과 부등호 방향이 반대로 느껴지는 것은 supermartingale 이 "위에서 눌리는", 즉 감소 경향을 갖는 과정이기 때문이다. [조화함수](harmonic-functions.md)·우조화함수(superharmonic) 용법과 맞춘 관례다.
+공정한 동전을 던져 매 판 $1$ 원을 따거나 잃는 게임을 한다. $k$ 원으로 시작해 재산이 $0$ 원이 되거나 $N$ 원이 되면 그만둔다. $N$ 원에 먼저 닿을 확률을 구한다. $n$ 판 뒤의 재산을 $S_n$ 이라 하면 매 판의 기대 이득이 $0$ 이므로 모든 $n$ 에서 $E[S_n]=k$ 다.
 
-두 번째 직관은 "전략으로는 공정함을 이길 수 없다"는 것이다. 매 시각 얼마를 걸지를 과거 정보만 보고 정하는 전략 $H_n$ 을 세워도, 결과 과정
-
-$$
-(H \cdot X)\_n \thickspace=\thickspace \sum_{k=1}^{n} H_k (X_k - X_{k-1})
-$$
-
-은 다시 martingale 이다. 판돈을 언제 그만둘지 정하는 것(정지시간) 역시 일종의 전략이므로, 유계성 조건만 갖추면 기대 이득은 여전히 0 이다. 도박 시스템의 불가능성 정리라 할 만하며, 이것이 선택적 정지 정리의 내용이다.
-
-세 번째 직관은 수렴이다. 경로가 수렴하지 않으려면 어떤 구간 $[a,b]$ 를 무한히 여러 번 아래에서 위로 가로질러야 한다. 그런데 "구간 아래에서 사서 위에서 판다"는 전략이 만드는 이익은 가로지른 횟수에 비례하고, 공정한 게임에서는 그 기대 이익이 커질 수 없다. 따라서 가로지르기 횟수의 기댓값이 유한하고, 경로는 결국 진동을 멈춘다. Doob 의 upcrossing 논증이다.
+그만두는 시각 $T$ 는 경로마다 다르다. 고정된 $n$ 이 아니라 $T$ 에서도 $E[S_T]=k$ 가 성립한다면, 그만둘 때 재산이 $0$ 이나 $N$ 이므로 $k=N\cdot P(S_T=N)$ 이고 구하는 확률은 $k/N$ 이다. 이 교체가 언제나 되지는 않는다. 이길 때까지 판돈을 두 배로 올리는 전략에서는 그만두는 순간의 재산이 언제나 $1$ 원이어서 $E[S_T]=1$ 이고 $E[S_0]=0$ 이다. 기댓값을 어떤 $T$ 까지 옮길 수 있는지 정하는 것이 선택적 정지 정리다.
 
 # 정의
 
@@ -42,6 +34,8 @@ E[X_{n+1} \mid \mathcal{F}\_n] \ge X_n, \qquad
 E[X_{n+1} \mid \mathcal{F}\_n] \le X_n .
 $$
 
+유리한 게임이면 예측값이 현재보다 크고(submartingale), 불리하면 작다(supermartingale). 이름과 부등호 방향이 반대인 것은 supermartingale 이 감소 경향을 갖는 과정이어서이고, [조화함수](harmonic-functions.md)·우조화함수(superharmonic) 용법과 맞춘 관례다.
+
 탑 성질에 의해 $m \le n$ 이면 $E[X_n \mid \mathcal F_m] = X_m$ 이 따라 나오고(부등식 버전도 동일), 특히 martingale 의 기댓값은 상수다.
 
 $$
@@ -58,6 +52,16 @@ $(X_n)$ 이 martingale 이고 $\varphi$ 가 [볼록](convexity.md)함수이며 $
 - **Doob martingale.** 적분 가능한 $Z$ 와 임의의 filtration 에 대해 $X_n = E[Z \mid \mathcal F_n]$ 은 martingale 이다(탑 성질). 정보가 점점 드러나면서 예측이 갱신되는 과정이며, Azuma 부등식의 표준 재료다.
 - **조화함수.** [Markov 연쇄](markov-chains.md)의 전이행렬 $P$ 와 $Ph = h$ 를 만족하는 조화함수 $h$ 에 대해 $h(X_n)$ 은 martingale 이다. 우조화함수면 supermartingale 이다.
 
+## Martingale 변환
+
+매 시각의 판돈을 과거 정보만으로 정하는 과정 $(H_n)$ 이 모든 $n$ 에서 $\mathcal F_{n-1}$ 가측이면 **예측 가능**하다고 한다. 예측 가능하고 유계인 $(H_n)$ 과 martingale $(X_n)$ 에 대해
+
+$$
+(H \cdot X)\_n \thickspace=\thickspace \sum_{k=1}^{n} H_k (X_k - X_{k-1})
+$$
+
+은 다시 martingale 이다. 조건부 기댓값에서 $\mathcal F_{k-1}$ 가측인 $H_k$ 를 밖으로 꺼내면 $H_k\thinspace E[X_k - X_{k-1} \mid \mathcal F_{k-1}] = 0$ 이다. $(X_n)$ 이 supermartingale 이고 $H_k \ge 0$ 이면 변환도 supermartingale 이다.
+
 ## 정지시간
 
 [확률변수](random-variables.md) $T : \Omega \to \lbrace 0, 1, \dots, \infty\rbrace$ 가 모든 $n$ 에 대해 $\lbrace T \le n\rbrace \in \mathcal F_n$ 이면 정지시간(stopping time)이라 한다. "지금 멈출지를 지금까지의 정보만으로 결정한다"는 뜻이고, 미래를 내다보는 규칙(예: 최고점에서 팔기)은 정지시간이 아니다. 정지된 과정은
@@ -66,7 +70,7 @@ $$
 X_n^T \thickspace=\thickspace X_{T \wedge n}
 $$
 
-로 정의하며, $(X_n)$ 이 martingale 이면 $(X_{T \wedge n})$ 도 martingale 이다. 이는 예측 가능한 전략 $H_k = \mathbf 1\lbrace T \ge k\rbrace$ 에 대한 martingale 변환이기 때문이다.
+로 정의하며, $(X_n)$ 이 martingale 이면 $(X_{T \wedge n})$ 도 martingale 이다. 정지된 과정이 예측 가능한 $H_k = \mathbf 1\lbrace T \ge k\rbrace$ 에 대한 martingale 변환이다.
 
 # 성질
 
@@ -104,7 +108,7 @@ $$
 P\Big(\max_{0 \le k \le n} X_k \ge \lambda\Big) \thickspace\le\thickspace \frac{E[X_n]}{\lambda}.
 $$
 
-*증명 스케치.* $T = \inf\lbrace k : X_k \ge \lambda\rbrace$ 로 두고 사건 $A = \lbrace\max_{k \le n} X_k \ge \lambda\rbrace$ 를 $\lbrace T \le n\rbrace$ 과 동일시한다. $A$ 위에서 $X_T \ge \lambda$ 이고, submartingale 성질로 $E[X_n \mathbf 1_A] \ge E[X_T \mathbf 1_A] \ge \lambda P(A)$ 이다. Markov 부등식의 "경로 전체" 버전이며, $X_n$ 대신 최댓값을 다루면서도 대가가 없다는 점이 핵심이다.
+*증명 스케치.* $T = \inf\lbrace k : X_k \ge \lambda\rbrace$ 로 두고 사건 $A = \lbrace\max_{k \le n} X_k \ge \lambda\rbrace$ 를 $\lbrace T \le n\rbrace$ 과 동일시한다. $A$ 위에서 $X_T \ge \lambda$ 이고, submartingale 성질로 $E[X_n \mathbf 1_A] \ge E[X_T \mathbf 1_A] \ge \lambda P(A)$ 이다. 우변은 Markov 부등식의 것과 같고 좌변만 최댓값으로 바뀐다.
 
 $p \gt 1$ 에 대한 $L^p$ 최대부등식
 
@@ -142,13 +146,13 @@ $$
 P\big(X_n - X_0 \ge t\big) \thickspace\le\thickspace \exp\negthinspace\left(-\frac{t^2}{2 \sum_{k=1}^n c_k^2}\right)
 $$
 
-가 성립한다(Azuma–Hoeffding). 증명은 조건부 Hoeffding 보조정리를 지수 모멘트에 반복 적용하는 것으로, 독립 합에 대한 Hoeffding 부등식의 논증을 조건부 기댓값으로 바꿔 쓴 것이다. 이 관점의 실익은 독립성을 요구하지 않는다는 데 있다. 함수 $f(Z_1, \dots, Z_n)$ 에 대해 Doob martingale $X_k = E[f \mid Z_1, \dots, Z_k]$ 를 만들고 각 좌표를 바꿀 때 $f$ 의 변화가 제한된다는 조건(bounded differences)을 쓰면 McDiarmid 부등식이 나온다. 자세한 독립 경우는 [집중부등식](concentration-inequalities.md)에서 다룬다.
+가 성립한다(Azuma–Hoeffding). 증명은 조건부 Hoeffding 보조정리를 지수 모멘트에 반복 적용하는 것으로, 독립 합에 대한 Hoeffding 부등식의 논증을 조건부 기댓값으로 바꿔 쓴 것이다. 이 부등식은 독립성을 요구하지 않는다. 함수 $f(Z_1, \dots, Z_n)$ 에 대해 Doob martingale $X_k = E[f \mid Z_1, \dots, Z_k]$ 를 만들고 각 좌표를 바꿀 때 $f$ 의 변화가 제한된다는 조건(bounded differences)을 쓰면 McDiarmid 부등식이 나온다. 자세한 독립 경우는 [집중부등식](concentration-inequalities.md)에서 다룬다.
 
 ## 확률과정과 다른 분야
 
 - **조화함수와 도달 확률.** [Markov 연쇄](markov-chains.md)에서 경계값 문제의 해는 $h(X_n)$ 이 martingale 이라는 사실과 선택적 정지 정리로 표현된다. [무작위 걷기](random-walks.md)의 전압-도달확률 대응이 이 원리의 물리적 표현이다.
 - **강한 수렴 결과.** 독립 합의 [큰 수의 법칙](law-of-large-numbers.md)은 $\sum \xi_k / k$ 형태의 martingale 수렴과 Kronecker 보조정리로 증명할 수 있다. Lévy 의 0-1 법칙, Kolmogorov 0-1 법칙도 Doob martingale 의 수렴으로 나온다.
-- **통계.** 순차적 검정(SPRT)의 우도비는 곱 martingale 이고, 정지 규칙의 오류 확률 경계는 선택적 정지 정리와 최대부등식에서 직접 나온다. [측도 변환](change-of-measure.md)의 Radon–Nikodym 밀도과정도 같은 구조다.
+- **통계.** 순차적 검정(sequential probability ratio test, SPRT)의 우도비는 곱 martingale 이고, 정지 규칙의 오류 확률 경계는 선택적 정지 정리와 최대부등식에서 직접 나온다. [측도 변환](change-of-measure.md)의 Radon–Nikodym 밀도과정도 같은 구조다.
 - **연속시간.** Brownian motion 에서 $B_t$ 와 $B_t^2 - t$ 그리고 $\exp(\theta B_t - \theta^2 t / 2)$ 는 모두 martingale 이며, Itô 적분은 "martingale 변환"의 연속시간 판이다. 금융의 무차익 가격결정은 할인된 가격과정을 martingale 로 만드는 측도의 존재로 서술된다.
 
 # 연관 문서
