@@ -165,7 +165,7 @@ $$
 
 ## 계산
 
-닫힌 형태가 없으면 정규화상수 $m(x)$ 의 적분이 문제가 된다. 실무의 표준 도구는 사후분포를 불변분포로 갖는 [Markov 연쇄](markov-chains.md)를 설계해 표본을 얻는 MCMC(Metropolis–Hastings, Gibbs, Hamiltonian Monte Carlo)이고, 여기서는 존재와 역할만 언급한다. 대안으로는 사후분포를 다루기 쉬운 분포족으로 근사하되 [KL divergence](kl-divergence.md)를 최소화하는 변분추론, 그리고 MAP 주변의 이차근사인 Laplace 근사가 있다.
+닫힌 형태가 없으면 정규화상수 $m(x)$ 의 적분이 문제가 된다. 실무의 표준 도구는 사후분포를 불변분포로 갖는 [Markov 연쇄](markov-chains.md)를 설계해 표본을 얻는 MCMC(Metropolis–Hastings, Gibbs, Hamiltonian Monte Carlo)다. 대안으로는 사후분포를 다루기 쉬운 분포족으로 근사하되 [KL divergence](kl-divergence.md)(Kullback–Leibler)를 최소화하는 변분추론, 그리고 MAP 주변의 이차근사인 Laplace 근사가 있다.
 
 ## 응용
 

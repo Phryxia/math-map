@@ -102,7 +102,7 @@ $\mathrm{LocSys}\_{\hat G}$ 는 $\pi_1(X)\to\hat G$ 의 표현 다양체를 공�
 
 ## Hecke 스택과 함자
 
-앞 절의 $\mathrm{Hecke}$ 스택에서 두 사영 $p,q$ 와 $X$ 로의 사상 $\pi$ 를 두면
+$\mathrm{Hecke}$ 스택에서 두 사영 $p,q$ 와 $X$ 로의 사상 $\pi$ 를 두면
 
 $$
 H^V_x(\mathcal F)=q_\ast\big(p^\ast\mathcal F\otimes\mathcal S^V\big)

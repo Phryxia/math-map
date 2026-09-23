@@ -79,7 +79,7 @@ $$
 \mathrm{ch}V_\lambda=\sum_{w\in W}(-1)^{\ell(w)}\mathrm{ch}M_{w\cdot\lambda},\qquad w\cdot\lambda:=w(\lambda+\rho)-\rho
 $$
 
-여기 나오는 이동 작용 $w\cdot\lambda$ 가 앞 절의 $\rho$ 이동이고, 이 식을 정리하면 지표 공식이 나온다.
+이동 작용 $w\cdot\lambda$ 가 $\rho$ 이동이고, 이 식을 정리하면 지표 공식이 나온다.
 
 # 정의
 

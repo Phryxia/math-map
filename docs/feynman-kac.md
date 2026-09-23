@@ -68,7 +68,7 @@ $$
 u(t,x)=\mathbb E^{t,x}\left[\varphi(X_T)\thinspace e^{-\int_t^Tc(s,X_s)ds}+\int_t^Tg(r,X_r)\thinspace e^{-\int_t^rc(s,X_s)ds}\thinspace dr\right]
 $$
 
-$\mathbb E^{t,x}$ 는 $X_t = x$ 에서 출발한 확산에 대한 기댓값이다. $c = g = 0$ 이면 앞 절의 꼴이 된다.
+$\mathbb E^{t,x}$ 는 $X_t = x$ 에서 출발한 확산에 대한 기댓값이다. $c = g = 0$ 이면 $u(t,x)=\mathbb E^{t,x}\lbrack\varphi(X_T)\rbrack$ 다.
 
 ## 시간 방향
 

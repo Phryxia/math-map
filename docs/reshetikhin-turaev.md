@@ -100,7 +100,7 @@ $\mathcal D=\sqrt{\sum_id_i^2}$ 는 MTC 의 전체 차원이다. 빈 링크 곧 
 
 > **정리 (Reshetikhin–Turaev 1991).** $\tau(M_L)$ 은 $M_L$ 의 수술 표현에 의존하지 않는다. 곧 닫힌 유향 3 차원 다양체의 불변량이다.
 
-증명은 Kirby I, II 에 대한 불변성 확인이고, 그 재료가 앞 절의 소멸 성질과 $\Delta_\pm$ 의 상쇄다.
+증명은 Kirby I, II 에 대한 불변성 확인이고, 그 재료가 $\omega$ 고리의 소멸 성질과 $\Delta_\pm$ 의 상쇄다.
 
 ## TQFT 로의 확장
 

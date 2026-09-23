@@ -96,7 +96,7 @@ $$
 \langle\times\rangle=A\langle\asymp\rangle+A^{-1}\langle\smile\frown\rangle
 $$
 
-세 번째 규칙을 모든 교차점에 적용해 펼치면 앞 절의 상태합이 된다. 방향을 준 도식의 비틀림수 $w(D)$ 를 써서
+세 번째 규칙을 모든 교차점에 적용해 펼치면 상태합 $\sum_{s}A^{\thinspace a(s)-b(s)}\thinspace\delta^{\thinspace\vert s\vert-1}$ 이 된다. 방향을 준 도식의 비틀림수 $w(D)$ 를 써서
 
 $$
 V(K)(t)=\left[(-A^3)^{-w(D)}\langle D\rangle\right]\_{A=t^{-1/4}}

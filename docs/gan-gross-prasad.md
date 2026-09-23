@@ -83,7 +83,7 @@ $$
 \bigl(U(n+1)\times U(n),\ U(n)\bigr)
 $$
 
-이다. 앞 절의 인터레이싱 상황이 이 경우다.
+이다. 인터레이싱 분지 법칙이 이 경우다.
 
 **Fourier–Jacobi 경우 ($d$ 짝수).** $G(W)$ 만으로는 부족하고 Heisenberg 군과 [Weil 표현](weil-representation.md) $\omega_\psi$ 를 끼운다. $d=0$ 에서 쌍은
 

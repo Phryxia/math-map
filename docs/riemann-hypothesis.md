@@ -93,7 +93,7 @@ Hasse 가 [타원곡선](elliptic-curves.md)에서, Weil 이 일반 곡선에서
 - **이차체의 유수.** 허수 이차체의 유수 문제에서 Siegel 영점을 배제하는 데 GRH 를 쓴다.
 - **무작위 행렬 대응.** Montgomery 가 계산한 임계선 위 영점의 쌍 상관함수가 Gauss 유니터리 앙상블의 고윳값 쌍 상관함수와 같은 꼴이다. [Wigner 반원법칙](wigner-semicircle.md)이 주는 고윳값 통계를 $L$ 함수의 평균값 예측에 쓰는 근거가 이 관찰이다.
 
-[^1]: Enrico Bombieri, *Problems of the Millennium: the Riemann Hypothesis*, Clay Mathematics Institute (2000). 문제의 공식 진술과 배경. 이 추측이 미해결이라는 것도 이 문서가 명시한다.
+[^1]: Enrico Bombieri, *Problems of the Millennium: the Riemann Hypothesis*, Clay Mathematics Institute (2000). 문제의 공식 진술과 배경. Bombieri 가 이 추측이 미해결임을 명시한다.
 
 [^2]: E. C. Titchmarsh, *The Theory of the Riemann Zeta-Function*, 2nd ed. (revised by D. R. Heath-Brown), Oxford University Press (1986). 영점 세기 공식, 무영점 영역, 오차항과의 동치.
 

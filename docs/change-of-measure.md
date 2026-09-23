@@ -155,7 +155,7 @@ $Q\ll P$ 가 깨지면 밀도가 존재하지 않는다. 예를 들어 연속분
 
 - **희귀사건 시뮬레이션**: 통신 오류율, 보험 파산확률, 대기행렬 과부하 확률. 대편차 이론(large deviations)이 최적 기울임 방향을 알려준다.
 - **MCMC 와 재가중**: MCMC(Markov chain Monte Carlo)에서 Metropolis–Hastings 의 수락확률이 제안분포에 대한 밀도비이며, [Markov 연쇄](markov-chains.md)의 detailed balance 조건이 그 형태를 강제한다.
-- **강화학습의 off-policy 보정**: 행동 정책에서 모은 데이터로 목표 정책의 기댓값을 추정할 때 각 시점의 정책 비를 곱한다. 시간 길이에 따라 밀도가 곱으로 쌓여 분산이 지수적으로 커지는 문제가 위에서 본 ESS 붕괴와 같은 현상이다.[^2]
+- **강화학습의 off-policy 보정**: 행동 정책에서 모은 데이터로 목표 정책의 기댓값을 추정할 때 각 시점의 정책 비를 곱한다. 시간 길이에 따라 밀도가 곱으로 쌓여 분산이 지수적으로 커지는 문제가 ESS 붕괴와 같은 현상이다.[^2]
 
 [^1]: Steven E. Shreve, *Stochastic Calculus for Finance II: Continuous-Time Models*, Springer, 5장 (Risk-Neutral Pricing, Girsanov), https://link.springer.com/book/10.1007/978-0-387-40101-0
 [^2]: Art B. Owen, *Monte Carlo theory, methods and examples*, 9장 (Importance sampling), https://artowen.su.domains/mc/
