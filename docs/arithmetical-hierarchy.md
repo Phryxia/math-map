@@ -96,6 +96,6 @@ $n=0$ 은 $\Sigma^0_1$ 집합이 재귀적 열거 가능하다는 정의다. 귀
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [해석적 계층](analytical-hierarchy.md)
 
 #computation #logic #set_theory
