@@ -132,7 +132,7 @@ $\mathrm{PSL}\_2(7)\cong\mathrm{PSL}\_3(2)$ 도 있다. 위수 168 인 이 군�
 
 Conway, Curtis, Norton, Parker, Wilson 이 1985 년에 낸 *ATLAS of Finite Groups* 는 작은 단순군들의 지표표, 극대부분군, 자기동형군을 표로 정리한 책이다. 괴물군의 $194\times194$ 지표표도 여기 있다.
 
-[괴물 달빛](monstrous-moonshine.md)의 출발점인 $196883$ 이라는 수도 이 표에서 읽은 것이다. 분류 작업의 부산물로 만들어진 데이터가 전혀 다른 분야의 추측을 낳은 셈이다.
+[괴물 달빛](monstrous-moonshine.md)의 출발점인 $196883$ 이라는 수도 이 표에서 읽은 것이다. 분류 작업이 만든 자료가 전혀 다른 분야의 추측을 낳았다.
 
 # 활용
 

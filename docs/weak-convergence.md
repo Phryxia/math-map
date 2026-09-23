@@ -89,7 +89,7 @@ $$
 
 이며, 더 강하게 다음이 성립한다. $\varphi_n$ 이 각 점에서 어떤 함수 $\varphi$ 로 수렴하고 $\varphi$ 가 0 에서 연속이면, $\varphi$ 는 어떤 확률측도의 특성함수이고 $\mu_n$ 은 그 측도로 약수렴한다.
 
-0 에서의 연속성이 tightness 를 대신한다는 점이 묘미다. $\mu_n=\delta_n$ 이면 $\varphi_n(t)=e^{int}$ 는 $t=0$ 에서만 수렴하므로 가정이 깨진다. [Fourier 변환](fourier.md)이 tightness 를 원점 근방의 국소적 성질로 번역해 주는 셈이다. 중심극한정리의 표준 증명이 이 정리에 기댄다.
+0 에서의 연속성이 tightness 를 대신한다. $\mu_n=\delta_n$ 이면 $\varphi_n(t)=e^{int}$ 는 $t=0$ 에서만 수렴하므로 가정이 깨진다. [Fourier 변환](fourier.md)이 tightness 를 원점 근방의 국소적 성질로 번역한다. 중심극한정리의 표준 증명이 이 정리에 기댄다.
 
 ## 약수렴이 보존하지 않는 것
 
