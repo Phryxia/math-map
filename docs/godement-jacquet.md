@@ -67,7 +67,7 @@ $M_n$ 은 다음 세 조건을 만족한다.
 
 ## 비분기 자리의 국소 인자
 
-거의 모든 자리에서 $\pi_v$ 는 비분기이고, 그 표현은 **[Satake 매개변수](satake-isomorphism.md)**라 부르는 대각행렬
+거의 모든 자리에서 $\pi_v$ 는 비분기이고, 그 표현은 [Satake 매개변수](satake-isomorphism.md)라 부르는 대각행렬
 
 $$
 A_{\pi_v}=\mathrm{diag}(\alpha_1,\dots,\alpha_n)\in\mathrm{GL}\_n(\mathbb C)
