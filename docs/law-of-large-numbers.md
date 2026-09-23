@@ -69,7 +69,7 @@ $$
 P\negthinspace\left(\lim_{n\to\infty}\overline X_n=\mu\right)=1
 $$
 
-두 정리 모두 분산의 유한성을 요구하지 않는다. 분산 조건은 아래 Chebyshev 증명에 필요한 편의상의 강화일 뿐이다.
+두 정리 모두 분산의 유한성을 요구하지 않는다. 분산 조건은 아래 Chebyshev 증명에서만 쓴다.
 
 # 성질
 
