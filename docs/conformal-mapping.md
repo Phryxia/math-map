@@ -62,7 +62,7 @@ $\partial\Omega$ 가 Jordan 곡선이면 Riemann 사상은 $\overline\Omega$ 에
 
 $$f(z)=A+C\int_0^z\prod_{k=1}^{n}(\zeta-x_k)^{\alpha_k-1}\thinspace d\zeta$$
 
-는 상반평면을 내각이 $\pi\alpha_k$ 인 $n$ 각형으로 옮긴다. $x_k$ 는 실축 위의 사전점이고, 그 위치를 정하는 것은 초월방정식이다.
+는 상반평면을 내각이 $\pi\alpha_k$ 인 $n$ 각형으로 옮긴다. $x_k$ 는 실축 위의 사전점이고, 그 위치는 초월방정식이 정한다.
 
 # 활용
 

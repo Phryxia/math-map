@@ -2,7 +2,7 @@
 
 # 개요
 
-$\mathbb Q$ 에서 $\mathbb R$ 를 만드는 방법은 Cauchy 수열로 [완비화](completeness.md)하는 것이고, 그 구성에서 가까움을 판단하는 것은 절댓값 $|x|$ 이다.
+$\mathbb Q$ 에서 $\mathbb R$ 를 만드는 방법은 Cauchy 수열로 [완비화](completeness.md)하는 것이고, 그 구성에서는 절댓값 $|x|$ 로 가까움을 판단한다.
 
 소수 $p$ 마다 다른 절댓값이 있다. $x$ 가 $p$ 로 많이 나누어질수록 $x$ 를 작다고 보는 $|\cdot|\_p$ 다. 이 절댓값으로 $\mathbb Q$ 를 완비화하면 $\mathbb R$ 와 다른 체 $\mathbb Q_p$ 가 나온다. Ostrowski 정리에 따르면 $\mathbb Q$ 위의 절댓값은 $|\cdot|\_\infty$ 와 $|\cdot|\_p$ 들뿐이다.
 
