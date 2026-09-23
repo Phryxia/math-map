@@ -118,7 +118,7 @@ $g\ge2$ 에서는 이 족이 복소차원 $3g-3$ 이다. 그 공간을 다루는
 - **모듈라이와 변형.** 종수 $g\ge2$ 곡면의 복소구조가 이루는 공간이 Teichmüller 공간이고, 사상류군으로 몫을 취하면 모듈라이 공간이 된다. 준등각 사상과 Beltrami 방정식이 그 공간에 좌표를 준다.
 - **정수론.** 종수 1 의 모듈라이가 모듈러 곡선이고, 거기서 [모듈러 형식](modular-forms.md)과 [Galois 표현](galois-representations.md)이 나온다. 콤팩트 Riemann 곡면이 대수곡선이라는 사실을 여기에 쓴다.
 - **3 차원으로.** 쌍곡 곡면의 등거리군이 $\mathrm{PSL}\_2(\mathbb R)$ 의 이산부분군이듯 쌍곡 3 다양체는 $\mathrm{PSL}\_2(\mathbb C)$ 의 이산부분군으로 기술된다. [쌍곡 3 다양체](hyperbolic-3-manifolds.md)에서는 Mostow 강직성으로 구조가 굳고, 곡면에서는 모듈라이가 움직인다.
-- **해석적 도구.** 균일화의 증명은 [Dirichlet 문제](dirichlet-problem.md)의 Perron 방법이나 Dirichlet 원리, 곧 타원형 편미분방정식의 해결이다. 같은 기법이 Hodge 이론과 지표 정리에 쓰인다.
+- **해석적 도구.** 균일화의 증명은 [Dirichlet 문제](dirichlet-problem.md)의 Perron 방법이나 Dirichlet 원리, 곧 타원형 편미분방정식의 해결이다. 같은 기법이 Hodge 이론과 [지표 정리](index-theorem.md)에 쓰인다.
 
 # 연관 문서
 
