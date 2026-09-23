@@ -81,6 +81,6 @@ $\Lambda$ 가 작다고 가정하고, 계수를 미지수로 둔 지수다항식
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Thue 방정식](thue-equation.md)
 
 #number_theory #field_theory #analysis
