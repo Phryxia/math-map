@@ -38,7 +38,7 @@ $\ker\delta^n$ 의 원소를 코사이클, $\mathrm{im}\thinspace\delta^{n-1}$ �
 
 $$(\varphi\cup\psi)(\sigma)=\varphi(\sigma\vert\_{\lbrack 0..n\rbrack})\thinspace\psi(\sigma\vert\_{\lbrack n..n+m\rbrack})$$
 
-이 곱은 $\delta(\varphi\cup\psi)=\delta\varphi\cup\psi+(-1)^n\varphi\cup\delta\psi$ 를 만족하므로 코호몰로지로 내려가고, $H^\ast(X;R)=\bigoplus_n H^n(X;R)$ 은 등급환이 된다. 이것이 **코호몰로지환**이다.
+이 곱은 $\delta(\varphi\cup\psi)=\delta\varphi\cup\psi+(-1)^n\varphi\cup\delta\psi$ 를 만족하므로 코호몰로지로 내려가고, $H^\ast(X;R)=\bigoplus_n H^n(X;R)$ 은 등급환이 된다. 이것이 **코호몰로지환**이다.[^1]
 
 # 성질
 
