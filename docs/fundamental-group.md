@@ -122,5 +122,6 @@ Seifert–van Kampen 정리는 공간을 열린집합 두 개로 덮었을 때 �
 - [곡면의 분류](classification-of-surfaces.md)
 - [덮개공간](covering-spaces.md)
 - [매듭 불변량](knot-invariants.md)
+- [Brouwer 고정점 정리](brouwer-fixed-point.md)
 
 #algebraic_topology #topology #group_theory

@@ -158,6 +158,10 @@ $$
 - [Reidemeister 비틀림과 렌즈 공간](reidemeister-torsion.md)
 - [Khovanov 호몰로지](khovanov-homology.md)
 
+### 해석학에서의 쓰임
+
+- [Brouwer 고정점 정리](brouwer-fixed-point.md)
+
 ### 대수와 수론에서의 쓰임
 
 - [Galois 표현](galois-representations.md)
