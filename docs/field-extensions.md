@@ -8,7 +8,7 @@
 
 # 직관
 
-$\mathbb{Q}$ 에 $2$ 의 제곱근을 넣으면 $a+b\sqrt2$ 꼴의 수 전체가 필요해진다. 곱셈에서 $2$ 가 다시 유리수로 돌아오므로 이보다 큰 집합은 필요하지 않다. 즉 $\mathbb{Q}(\sqrt2)$ 는 $\mathbb{Q}$ 위에서 $1$ 과 $\sqrt2$ 를 기저로 갖는 2차원 벡터 공간이다.
+$\mathbb{Q}$ 에 $2$ 의 제곱근을 넣으면 $a+b\sqrt2$ 꼴의 수 전체가 있어야 한다. 곱셈에서 $2$ 가 다시 유리수로 돌아오므로 이보다 큰 집합은 필요하지 않다. 즉 $\mathbb{Q}(\sqrt2)$ 는 $\mathbb{Q}$ 위에서 $1$ 과 $\sqrt2$ 를 기저로 갖는 2차원 벡터 공간이다.
 
 $$
 \mathbb{Q}(\sqrt2)=\lbrace a+b\sqrt2: a,b\in\mathbb{Q}\rbrace,\qquad [\mathbb{Q}(\sqrt2):\mathbb{Q}]=2
