@@ -183,7 +183,7 @@ $p=2$ 에서는 Kedlaya 의 가설이 깨져서 Mestre 의 AGM(arithmetic-geomet
 
 $y^2=x^3+x+1$ 에서 Hasse 불변량은 $(x^3+x+1)^{(p-1)/2}$ 의 $x^{p-1}$ 계수이고, 이 계수 하나가 $a_p\bmod p$ 를 담는다.
 
-## Weil 한계에 의한 복원
+## Weil 한계를 쓴 복원
 
 구간 $(-2\sqrt p,2\sqrt p)$ 의 길이가 $4\sqrt p$ 이므로 $4\sqrt p\lt p$ 이면 후보가 유일하다. 충분조건이므로 더 작은 $p$ 에서도 유일할 수 있다.
 

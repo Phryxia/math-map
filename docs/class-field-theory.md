@@ -114,7 +114,7 @@ $$
 
 $H$ 가 자명군일 때 나오는 확대 $K_{\mathfrak m}$ 가 **광선유체**다. $\mathfrak m$ 밖에서 불분기인 아벨 확대 전체를 품는 최대 확대이며 $\mathrm{Gal}(K_{\mathfrak m}/K)\cong\mathrm{Cl}\_{\mathfrak m}(K)$ 다.
 
-## 이델류군에 의한 서술
+## 이델류군을 쓴 서술
 
 모든 자리 $v$ 를 한꺼번에 다루는 것이 이델이다.
 

@@ -42,7 +42,7 @@ $$
 
 두 연장 $B,B'$ 를 붙이면 닫힌 3 다양체가 되고 그 위의 적분은 $\pi_3(G)=\mathbb Z$ 를 세는 정수의 $2\pi$ 배다. $\Gamma$ 는 $2\pi\mathbb Z$ 만큼 모호하므로 $e^{ik\Gamma}$ 가 잘 정의되려면 $k\in\mathbb Z$ 여야 한다. Chern–Simons 쪽에서 큰 게이지 변환이 강요하던 정수성과 출처가 $\pi_3(G)=\mathbb Z$ 로 같다.
 
-## 레벨에 의한 절단
+## 레벨이 주는 절단
 
 아핀 대수 $\hat{\mathfrak g}$ 의 최고무게 표현에 유니터리성을 요구하면 최고무게 $\lambda$ 가 조건
 
