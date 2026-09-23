@@ -72,6 +72,6 @@ $\mathrm{Pic}(\mathbb P^n)\cong\mathbb Z$ 이고 생성원이 초평면에 대�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Jacobi 다양체](jacobian-variety.md)
 
 #algebraic_topology #complex_analysis #category_theory

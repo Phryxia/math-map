@@ -130,6 +130,7 @@ $g\ge2$ 에서는 이 족이 복소차원 $3g-3$ 이다. 그 공간을 다루는
 
 ## 더 알아보기
 
+- [Jacobi 다양체](jacobian-variety.md)
 - [Teichmüller 공간](teichmuller-space.md)
 - [모듈러 곡선](modular-curves.md)
 
