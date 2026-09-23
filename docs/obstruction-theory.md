@@ -64,7 +64,7 @@ $F$ 가 $(n-1)$ 연결이면 $n$ 골격까지는 장애가 없으므로 $n$ 골�
 
 두 사상 $f,g\colon X\to Y$ 가 $X^{(n)}$ 위에서 호모토픽할 때 그 호모토피를 $X^{(n+1)}$ 로 늘리는 장애는 $H^{n+1}(X\times I,X\times\partial I;\pi_{n+1}(Y))$ 에 있고, 이는 $H^{n}(X;\pi_n(Y))$ 과 같다. 확장 정리를 쌍 $(X\times I,X\times\partial I)$ 에 적용한 것이다.
 
-$Y=K(G,n)$ 이면 $\pi_i(Y)$ 가 $i=n$ 에서만 $0$ 이 아니므로 장애가 한 차수에서만 나온다. 그 한 번의 장애가 $H^n(X;G)$ 의 원소이고, [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)의 표현가능성 정리가 여기서 나온다.
+$Y=K(G,n)$ 이면 $\pi_i(Y)$ 가 $i=n$ 에서만 $0$ 이 아니므로 장애가 한 차수에서만 나온다. 그 한 번의 장애가 $H^n(X;G)$ 의 원소이고, 이것이 [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)의 표현가능성 정리다.
 
 # 활용
 

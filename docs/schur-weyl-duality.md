@@ -2,7 +2,7 @@
 
 # 개요
 
-$V=\mathbb C^n$ 을 잡고 그 $k$ 중 [텐서곱](tensor-products.md) $V^{\otimes k}$ 를 본다. 이 공간에는 두 군이 자연스럽게 작용한다.
+$V=\mathbb C^n$ 을 잡고 그 $k$ 중 [텐서곱](tensor-products.md) $V^{\otimes k}$ 를 본다. 이 공간에는 두 군이 작용한다.
 
 - $\mathrm{GL}\_n(\mathbb C)$ 가 각 자리에 똑같이 작용한다. $g\cdot(v_1\otimes\cdots\otimes v_k)=gv_1\otimes\cdots\otimes gv_k$ 이다.
 - 대칭군 $S_k$ 가 자리를 바꾼다. $\sigma\cdot(v_1\otimes\cdots\otimes v_k)=v_{\sigma^{-1}(1)}\otimes\cdots\otimes v_{\sigma^{-1}(k)}$ 이다.
