@@ -26,8 +26,6 @@ $$
 
 ## 스칼라가 소멸시키는 예
 
-다음 계산이 스칼라환의 영향을 보여 준다.
-
 $$
 \mathbb{Z}/2\mathbb{Z} \otimes_{\mathbb{Z}} \mathbb{Z}/3\mathbb{Z} = 0
 $$

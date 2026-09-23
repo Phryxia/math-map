@@ -103,7 +103,7 @@ $|A| \le |B|$ 이고 $|B| \le |A|$ 이면 $|A| = |B|$ 다. 양방향 단사에�
 
 ## 논리에서의 상대성
 
-1 계 논리의 언어가 가산이면 모형도 가산인 것을 잡을 수 있다는 것이 [Löwenheim–Skolem 정리](lowenheim-skolem.md)다. 비가산 집합의 존재를 증명하는 ZFC 에도 가산 모형이 있다는 Skolem 역설이 생긴다. 전단사의 존재가 모형 안에서 판정되므로 역설이 아니며, 크기가 관점에 상대적임을 보여 준다.[^1]
+1 계 논리의 언어가 가산이면 모형도 가산인 것을 잡을 수 있다는 것이 [Löwenheim–Skolem 정리](lowenheim-skolem.md)다. 비가산 집합의 존재를 증명하는 ZFC 에도 가산 모형이 있다는 Skolem 역설이 생긴다. 전단사의 존재가 모형 안에서 판정되므로 역설이 아니고, 크기는 모형에 상대적이다.[^1]
 
 [^1]: Jiří Lebl, *Basic Analysis*, Basic set theory / Intervals and the size of R. 기수와 가산성, 유리수의 가산성, 실수의 비가산성(정리 1.4.2). https://www.jirka.org/ra/html/sec_basicset.html
 

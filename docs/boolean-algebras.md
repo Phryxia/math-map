@@ -130,7 +130,7 @@ $$
 
 ## 순서론에서의 위치
 
-Boolean algebra 는 격자 이론의 여러 계층 중 가장 강한 조건을 만족하는 층에 있다. 분배성만 요구하면 분배격자, 여기에 상대 의사보수를 요구하면 Heyting algebra, 보수까지 요구하면 Boolean algebra 다. 이 계층은 각각 고전논리 이하의 논리 체계들과 정확히 대응하며, 어떤 법칙을 포기하면 어떤 구조가 남는지를 보여 준다[^2].
+Boolean algebra 는 격자 이론의 여러 계층 중 가장 강한 조건을 만족하는 층에 있다. 분배성만 요구하면 분배격자, 여기에 상대 의사보수를 요구하면 Heyting algebra, 보수까지 요구하면 Boolean algebra 다. 이 계층은 각각 고전논리 이하의 논리 체계들과 정확히 대응하고, 포기하는 법칙마다 남는 구조가 다르다[^2].
 
 [^1]: Stanford Encyclopedia of Philosophy, "The Mathematics of Boolean Algebra", https://plato.stanford.edu/entries/boolalg-math/
 [^2]: Stanford Encyclopedia of Philosophy, "Intuitionistic Logic", https://plato.stanford.edu/entries/logic-intuitionistic/
