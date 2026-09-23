@@ -170,7 +170,7 @@ $$
 
 ## 국소 인자와 특성다항식
 
-$1-\tau(p)X+p^{11}X^2=\det(1-X\thinspace A_{\pi_p})$ 에서 $A_{\pi_p}$ 의 고윳값이 $\alpha_p,\beta_p$ 이고, 대각합이 $\tau(p)$ , 행렬식이 $p^{11}$ 이다. 이 행렬이 Satake 매개변수이고 $\mathrm{GL}\_n$ 에서는 $n\times n$ 이 된다.
+$1-\tau(p)X+p^{11}X^2=\det(1-X\thinspace A_{\pi_p})$ 에서 $A_{\pi_p}$ 의 고윳값이 $\alpha_p,\beta_p$ 이고, 대각합이 $\tau(p)$ , [행렬식](determinants.md)이 $p^{11}$ 이다. 이 행렬이 Satake 매개변수이고 $\mathrm{GL}\_n$ 에서는 $n\times n$ 이 된다.
 
 ## 계수와 대칭곱 지표
 

@@ -64,7 +64,7 @@ Venkov 의 논증은 위 theta 급수 항등식을 각 성분에 적용해 $|\Ph
 
 $L\subset\mathbb R^n$ 을 랭크 $n$ 의 격자, $L^\ast=\lbrace x:(x,y)\in\mathbb Z\ \forall y\in L\rbrace$ 를 쌍대격자라 한다.
 
-- $L=L^\ast$ 이면 **유니모듈러**. 동치로 Gram 행렬의 행렬식이 $\pm1$ 이다.
+- $L=L^\ast$ 이면 **유니모듈러**. 동치로 Gram 행렬의 [행렬식](determinants.md)이 $\pm1$ 이다.
 - 모든 $x\in L$ 에 대해 $(x,x)\in2\mathbb Z$ 이면 **짝수**.
 
 양의정부호 짝수 유니모듈러 격자는 $8\mid n$ 일 때만 존재한다.

@@ -82,7 +82,7 @@ $$
 S^{n}=\Bigl\lbrace\thinspace x\in\mathbb{R}^{n+1}\ \Big|\ \textstyle\sum_{i=1}^{n+1}x_i^{2}=1\thinspace\Bigr\rbrace
 $$
 
-는 $n$ 차원 매끄러운 다양체다. 같은 방식으로 직교행렬 전체와 행렬식이 1 인 행렬 전체가 다양체가 된다.
+는 $n$ 차원 매끄러운 다양체다. 같은 방식으로 직교행렬 전체와 [행렬식](determinants.md)이 1 인 행렬 전체가 다양체가 된다.
 
 ## 표준 예시
 

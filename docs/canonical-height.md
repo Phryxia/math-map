@@ -12,7 +12,7 @@ $$
 
 그 장치가 **높이**다. 유리점에 적는 데 드는 비용을 재는 실수를 붙이고 점을 두 배 하면 비용이 네 배가 됨을 보이면 무한강하법이 작동한다. 순진하게 정의한 높이는 이 관계를 오차 범위 안에서만 만족하고, Tate 의 극한 조작이 오차를 지운다. 그 결과가 정확한 이차형식인 **Néron–Tate 높이** $\hat h$ 다.
 
-생성원들의 높이 쌍 행렬식이 조절자 $\mathrm{Reg}\_E$ 이고 [BSD 추측](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer)의 선행계수에 들어간다. Gross–Zagier 공식이 $L'(E,1)$ 과 같다고 말하는 대상도 Heegner 점의 정준 높이다.
+생성원들의 높이 쌍 [행렬식](determinants.md)이 조절자 $\mathrm{Reg}\_E$ 이고 [BSD 추측](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer)의 선행계수에 들어간다. Gross–Zagier 공식이 $L'(E,1)$ 과 같다고 말하는 대상도 Heegner 점의 정준 높이다.
 
 # 직관
 

@@ -56,7 +56,7 @@ $$
 \mathrm{tr}\thinspace\rho_f(\mathrm{Fr}\_\ell)=a_\ell,\qquad \det\rho_f(\mathrm{Fr}\_\ell)=\ell^{k-1}
 $$
 
-를 만족한다. $\bmod\mathfrak p$ 로 줄이면 자취가 $1+\ell^{k-1}$ 이고 행렬식이 $\ell^{k-1}$ 이므로 Brauer–Nesbitt 로 반단순화가 $1\oplus\omega^{k-1}$ 이고 $\bar\rho_f$ 는 가약이다.
+를 만족한다. $\bmod\mathfrak p$ 로 줄이면 자취가 $1+\ell^{k-1}$ 이고 [행렬식](determinants.md)이 $\ell^{k-1}$ 이므로 Brauer–Nesbitt 로 반단순화가 $1\oplus\omega^{k-1}$ 이고 $\bar\rho_f$ 는 가약이다.
 
 $\bar\rho_f$ 가 분해되면 $f$ 가 Eisenstein 급수여야 하는데 $f$ 는 첨점형식이다. 그러므로 적당한 기저에서
 

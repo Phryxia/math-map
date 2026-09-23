@@ -43,7 +43,7 @@ $$
 \pmod\ell
 $$
 
-다. 행렬식은 검산에 쓴다.
+다. [행렬식](determinants.md)은 검산에 쓴다.
 
 이 행렬은 [Galois 표현](galois-representations.md) $\rho_{E,\ell}:\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\mathbb F_\ell)$ 의 Frobenius 에서의 값이다. 이론의 등식 $\mathrm{tr}\thinspace\rho(\mathrm{Frob}\_p)=a_p$ 를 알고리즘에서는 행렬을 만들어 대각합으로 계산한다.
 

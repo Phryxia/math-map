@@ -68,7 +68,7 @@ $$
 
 ## Burau 표현과 Alexander 다항식
 
-감소 Burau $\bar\rho\colon B_n\to\mathrm{GL}\_{n-1}(\mathbb Z[t^{\pm1}])$ 를 쓰면 Alexander 다항식이 행렬식으로 나온다.
+감소 Burau $\bar\rho\colon B_n\to\mathrm{GL}\_{n-1}(\mathbb Z[t^{\pm1}])$ 를 쓰면 Alexander 다항식이 [행렬식](determinants.md)으로 나온다.
 
 $$
 \Delta_{\hat\beta}(t)\thickspace\doteq\thickspace\det\bigl(I-\bar\rho(\beta)\bigr)\cdot\frac{1-t}{1-t^{n}}

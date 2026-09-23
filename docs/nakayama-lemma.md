@@ -73,7 +73,7 @@ $(R,\mathfrak m)$ 이 Noether 국소환일 때 $\mathfrak m/\mathfrak m^2$ 는 �
 
 ## 정수적 확대
 
-$R\subseteq S$ 가 환의 확대이고 $S$ 가 $R$ 가군으로 유한생성이면, 위 행렬식 꼴이 $S$ 의 원소가 $R$ 계수 일계수 다항식을 만족함을 준다. 정수적 확대의 기본 성질을 이 논증으로 얻는다. [Dedekind 정역](dedekind-domains.md)의 정수적 폐포 조건도 같은 행렬식 꼴로 다룬다.
+$R\subseteq S$ 가 환의 확대이고 $S$ 가 $R$ 가군으로 유한생성이면, 위 [행렬식](determinants.md) 꼴이 $S$ 의 원소가 $R$ 계수 일계수 다항식을 만족함을 준다. 정수적 확대의 기본 성질을 이 논증으로 얻는다. [Dedekind 정역](dedekind-domains.md)의 정수적 폐포 조건도 같은 행렬식 꼴로 다룬다.
 
 [^1]: M. Atiyah and I. Macdonald, *Introduction to Commutative Algebra*, Proposition 2.6 과 Corollary 2.7. Nakayama 보조정리와 생성원의 올림. 행렬식 꼴은 Proposition 2.4.
 

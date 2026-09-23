@@ -118,7 +118,7 @@ $$
 T_p[x]=\Big[x\begin{pmatrix}p&0\cr 0&1\end{pmatrix}\Big]+\sum_{r=0}^{p-1}\Big[x\begin{pmatrix}1&r\cr 0&p\end{pmatrix}\Big]
 $$
 
-각 항은 행렬식이 $p$ 라 $\mathrm{SL}\_2(\mathbb Z)$ 밖이므로 다시 Manin 기호로 환원해야 하고, Merel 의 Heilbronn 행렬이 그 환원을 한 번에 한다. 결과는 정수 성분 행렬이다.
+각 항은 [행렬식](determinants.md)이 $p$ 라 $\mathrm{SL}\_2(\mathbb Z)$ 밖이므로 다시 Manin 기호로 환원해야 하고, Merel 의 Heilbronn 행렬이 그 환원을 한 번에 한다. 결과는 정수 성분 행렬이다.
 
 ## 무게 $k$ 로의 확장
 

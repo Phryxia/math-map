@@ -75,7 +75,7 @@ $$
 $c^\nu_{\lambda\mu}$ 는 Littlewood–Richardson 계수이고[^1] $|\nu|=|\lambda|+|\mu|$ 인 항만 남는다. 두 특수한 경우를 쓴다.
 
 - **Pieri**: $\sigma_p\cdot\sigma_\lambda=\sum\sigma_\mu$ 이고, 합은 $\lambda\subseteq\mu$ 이며 $|\mu|=|\lambda|+p$ 이고 $\mu/\lambda$ 가 각 열에 많아야 한 상자인(수평 띠) $\mu$ 들.
-- **Giambelli**: 임의의 $\sigma_\lambda$ 가 특수류 $\sigma_p$ 들의 행렬식으로 쓰인다. $\sigma_\lambda=\det(\sigma_{\lambda_i+j-i})\_{1\le i,j\le k}$ 이다.
+- **Giambelli**: 임의의 $\sigma_\lambda$ 가 특수류 $\sigma_p$ 들의 [행렬식](determinants.md)으로 쓰인다. $\sigma_\lambda=\det(\sigma_{\lambda_i+j-i})\_{1\le i,j\le k}$ 이다.
 
 두 규칙에서 환 $H^\ast(\mathrm{Gr}(k,n))$ 이 $\sigma_1,\dots,\sigma_{n-k}$ 로 생성됨이 나온다.
 
