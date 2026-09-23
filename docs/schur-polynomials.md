@@ -143,7 +143,7 @@ $$
 
 ## Schubert 셈법
 
-Grassmann 다양체 $\mathrm{Gr}(k,n)$ 의 코호몰로지 환은 Schubert 순환으로 생성되고, $\sigma_\lambda\mapsto s_\lambda$ 가 환 동형을 준다(단, 큰 분할은 0 으로 보낸다).
+Grassmann 다양체 $\mathrm{Gr}(k,n)$ 의 [코호몰로지](cohomology.md) 환은 Schubert 순환으로 생성되고, $\sigma_\lambda\mapsto s_\lambda$ 가 환 동형을 준다(단, 큰 분할은 0 으로 보낸다).
 
 $$
 H^\ast(\mathrm{Gr}(k,n))\cong\Lambda/(s_\lambda:\lambda\not\subseteq k\times(n-k))

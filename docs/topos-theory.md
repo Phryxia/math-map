@@ -75,7 +75,7 @@ $\mathbf{Set}$ 이 아닌 토포스를 고르면 전사사상이 갈라지지 �
 # 활용
 
 - 집합론의 대안 기초를 준다. Lawvere 의 집합 범주 공리는 원소 대신 사상으로 집합론을 세우고, [구조적 집합론](structural-set-theory.md)이 그 틀이다.
-- 대수기하에서 층 토포스가 공간을 대신한다. 에탈 토포스는 점집합이 없는 상황에서도 코호몰로지를 정의하고, 그 코호몰로지가 [Galois 표현](galois-representations.md)을 만든다.
+- 대수기하에서 층 토포스가 공간을 대신한다. 에탈 토포스는 점집합이 없는 상황에서도 [코호몰로지](cohomology.md)를 정의하고, 그 코호몰로지가 [Galois 표현](galois-representations.md)을 만든다.
 - 직관주의 논리의 의미론을 준다. [Kripke 의미론](kripke-semantics.md)은 전순서 위의 함자 범주가 토포스인 특수한 경우다.
 - 프로그래밍 언어 의미론에서 데카르트 닫힌 구조가 타입과 함수를 해석한다. [Curry–Howard 대응](curry-howard.md)의 범주 쪽 대응물이 지수 대상이다.
 

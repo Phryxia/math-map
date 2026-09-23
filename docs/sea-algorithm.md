@@ -178,7 +178,7 @@ $$
 | | Schoof–Elkies–Atkin | [Kedlaya](kedlaya-algorithm.md) |
 |---|---|---|
 | 정보를 모으는 축 | 여러 소수 $\ell$ 의 잉여 | 하나의 소수 $p$ 의 정밀도 |
-| 쓰는 코호몰로지 | $\ell$ 진 (등분점) | $p$ 진 (Monsky–Washnitzer) |
+| 쓰는 [코호몰로지](cohomology.md) | $\ell$ 진 (등분점) | $p$ 진 (Monsky–Washnitzer) |
 | 비용 | $\log p$ 의 다항식 | $p$ 에 선형 |
 | 잘하는 영역 | 종수 1 과 큰 $p$ | 임의 종수와 작은 $p$ 와 큰 확대 |
 | 확정하는 근거 | CRT + Hasse 한계 | $p$ 진 정밀도 + Weil 한계 |
