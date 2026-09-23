@@ -159,7 +159,7 @@ $\mathfrak m=1$ 에 대응하는 확대 $H$ 를 **힐베르트 유체**라 한�
 
 $\mathbb Q$ 의 아벨 확대 $L$ 의 도체를 $\mathfrak m\mid(m)\infty$ 로 잡으면 $L$ 이 광선유체 안에 들어가야 하는데, $\mathrm{Cl}\_{(m)\infty}(\mathbb Q)\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathbb Q(\zeta_m)$ 이 그 광선유체다.
 
-이 정리를 일반 $K$ 로 옮기는 것이 Hilbert 의 12 번 문제다. $K^{\mathrm{ab}}$ 를 생성하는 해석적 함수를 찾는 문제이며, $K=\mathbb Q$ 에서는 $e^{2\pi ix}$ 가 답이고 허수 이차체에서는 타원 모듈러 함수와 [타원곡선](elliptic-curves.md)의 복소곱셈 이론이 답을 준다. 그 밖의 수체에서는 그런 함수가 알려져 있지 않다[^1].
+이 정리를 일반 $K$ 로 옮기는 것이 Hilbert 의 12 번 문제다. $K^{\mathrm{ab}}$ 를 생성하는 해석적 함수를 찾는 문제이며, $K=\mathbb Q$ 에서는 $e^{2\pi ix}$ 가 답이고 허수 이차체에서는 타원 모듈러 함수와 [타원곡선](elliptic-curves.md)의 복소곱셈 이론에서 답이 나온다. 그 밖의 수체에서는 그런 함수가 알려져 있지 않다[^1].
 
 ## 이차 상호법칙의 재증명
 
