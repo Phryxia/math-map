@@ -30,7 +30,7 @@ $$\wp'(z)=-2\sum_{\omega\in\Lambda}\frac1{(z-\omega)^3}$$
 
 은 홀 타원함수다.
 
-격자의 **Eisenstein 급수**는 $k\ge3$ 에서 $G_k(\Lambda)=\sum_{\omega\in\Lambda\setminus\lbrace 0\rbrace}\omega^{-k}$ 다. 홀수 $k$ 에서는 $\omega$ 와 $-\omega$ 가 상쇄되어 $0$ 이다.
+격자의 [Eisenstein 급수](eisenstein-series.md)는 $k\ge3$ 에서 $G_k(\Lambda)=\sum_{\omega\in\Lambda\setminus\lbrace 0\rbrace}\omega^{-k}$ 다. 홀수 $k$ 에서는 $\omega$ 와 $-\omega$ 가 상쇄되어 $0$ 이다.
 
 # 성질
 
