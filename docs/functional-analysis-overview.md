@@ -58,6 +58,10 @@ graph TD
 - [Fredholm 작용소](fredholm-operators.md) — 핵과 여핵이 유한차원인 작용소. 지표가 연속 변형에 불변이다
 - [Fredholm 행렬식](fredholm-determinant.md) — 대각합 유한 작용소의 행렬식. 적분방정식의 해와 결정점과정에 쓴다
 
+## 고정점과 존재정리
+
+- [Schauder 고정점 정리](schauder-fixed-point.md) — 콤팩트 볼록집합 위의 연속사상이 갖는 고정점. 유한차원 근사로 Brouwer 정리에서 얻는다
+
 ## 표현론과의 접점
 
 - [Peter–Weyl 정리](peter-weyl.md) — 콤팩트 군의 정칙 표현이 기약 표현의 직합으로 분해되고 행렬계수가 $L^2$ 의 기저가 된다

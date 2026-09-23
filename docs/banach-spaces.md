@@ -139,6 +139,7 @@ Banach 공간에는 직교성, 사영 정리, 쌍대공간과 자기 자신의 �
 
 - [$L^p$ 공간](lp-spaces.md)
 - [Arzelà–Ascoli 정리](arzela-ascoli.md)
+- [Schauder 고정점 정리](schauder-fixed-point.md)
 - [열린 사상 정리](open-mapping-theorem.md)
 
 #functional_analysis #analysis #topology
