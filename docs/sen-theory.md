@@ -10,7 +10,7 @@ $$
 \Theta=\lim_{n\to\infty}\frac{\log\bigl(\gamma^{p^n}\bigr)}{p^n\log\chi(\gamma)}
 $$
 
-곧 **Sen 작용소**다. $V$ 가 Hodge–Tate 인 것과 $\Theta$ 가 대각화 가능하고 고유값이 정수인 것이 동치이며, 그때 고유값이 정확히 Hodge–Tate 무게다. $\Gamma$ 가 $p$ 진 [Lie 군](lie-groups.md)이므로 군 작용을 [Lie 대수](lie-algebras.md) 작용으로 미분하는 구도가 그대로 쓰인다.
+곧 **Sen 작용소**다. $V$ 가 Hodge–Tate 인 것과 $\Theta$ 가 대각화 가능하고 고유값이 정수인 것이 동치이며, 그때 고유값이 정확히 Hodge–Tate 무게다. $\Gamma$ 가 $p$ 진 [Lie 군](lie-groups.md)이므로 [군 작용](group-actions.md)을 [Lie 대수](lie-algebras.md) 작용으로 미분하는 구도가 그대로 쓰인다.
 
 판정이 선형대수가 되어 계산 가능해지고, Hodge–Tate 가 아닌 표현에도 $\Theta$ 가 존재하므로 **일반화된 Hodge–Tate 무게**라는 개념이 생긴다. $p$ 진 자기동형 형식의 족에서 무게가 정수 아닌 $p$ 진수로 변할 때도 Sen 작용소는 정의된다.
 

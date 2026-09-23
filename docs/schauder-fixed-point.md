@@ -2,7 +2,7 @@
 
 # 개요
 
-Schauder 고정점 정리는 [Banach 공간](banach-spaces.md)의 콤팩트 볼록집합 위에서 연속사상이 고정점을 갖는다는 정리다. 유한차원에서 정의역의 콤팩트성과 볼록성만으로 고정점을 주는 [Brouwer 고정점 정리](brouwer-fixed-point.md)를 무한차원으로 옮긴 것이고, 옮기는 대가로 사상의 상이 콤팩트라는 조건이 붙는다. 증명은 콤팩트집합을 유한차원 조각으로 근사해 Brouwer 정리를 쓰고 근사를 지우는 것이다.
+Schauder 고정점 정리는 [Banach 공간](banach-spaces.md)의 콤팩트 볼록집합 위에서 연속사상이 고정점을 갖는다는 정리다. 유한차원에서 정의역의 [콤팩트성](compactness.md)과 [볼록성](convexity.md)만으로 고정점을 주는 [Brouwer 고정점 정리](brouwer-fixed-point.md)를 무한차원으로 옮긴 것이고, 옮기는 대가로 사상의 상이 콤팩트라는 조건이 붙는다. 증명은 콤팩트집합을 유한차원 조각으로 근사해 Brouwer 정리를 쓰고 근사를 지우는 것이다.
 
 # 직관
 

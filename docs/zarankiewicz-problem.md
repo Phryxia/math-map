@@ -48,7 +48,7 @@ $$
 \sum_{v}\binom{d_v}{s}\ \le\ (t-1)\binom{n}{s}
 $$
 
-$\binom{d}{s}$ 의 볼록성으로 왼쪽을 $n\binom{2m/n}{s}$ 아래로 묶고 식을 풀면 위 부등식이 나온다. ∎
+$\binom{d}{s}$ 의 [볼록성](convexity.md)으로 왼쪽을 $n\binom{2m/n}{s}$ 아래로 묶고 식을 풀면 위 부등식이 나온다. ∎
 
 ## 사각형 없는 그래프
 

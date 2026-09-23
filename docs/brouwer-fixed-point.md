@@ -58,7 +58,7 @@ $f(x)\ne x$ 인 각 $x$ 에서 $r(x)$ 를 $f(x)$ 에서 $x$ 방향으로 나가�
 
 ## 볼록집합으로의 확장
 
-비어 있지 않은 콤팩트 볼록집합 $K\subset\mathbb R^n$ 을 담는 공 $D$ 를 잡는다. $K$ 로의 최근접점 사상 $p\colon D\to K$ 는 볼록성 때문에 잘 정의되고 $\Vert p(x)-p(y)\Vert\le\Vert x-y\Vert$ 를 만족해 연속이다. $f\colon K\to K$ 가 연속이면 $f\circ p\colon D\to D$ 가 연속이고 고정점 $x$ 를 갖는다. 그 값이 $K$ 안에 있으므로 $p(x)=x$ 이고 $f(x)=x$ 다.
+비어 있지 않은 콤팩트 볼록집합 $K\subset\mathbb R^n$ 을 담는 공 $D$ 를 잡는다. $K$ 로의 최근접점 사상 $p\colon D\to K$ 는 [볼록성](convexity.md) 때문에 잘 정의되고 $\Vert p(x)-p(y)\Vert\le\Vert x-y\Vert$ 를 만족해 연속이다. $f\colon K\to K$ 가 연속이면 $f\circ p\colon D\to D$ 가 연속이고 고정점 $x$ 를 갖는다. 그 값이 $K$ 안에 있으므로 $p(x)=x$ 이고 $f(x)=x$ 다.
 
 ## 구성 불가능성
 
