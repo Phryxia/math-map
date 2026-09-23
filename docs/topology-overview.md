@@ -40,6 +40,7 @@ graph TD
 - [단체 호몰로지](homology.md) → [코호몰로지](cohomology.md): 사슬 위의 함수, 컵곱이 주는 환 구조와 Poincaré 쌍대성
 - [단체 호몰로지](homology.md) → [Brouwer 고정점 정리](brouwer-fixed-point.md): 수축의 부재가 고정점의 존재를 준다
 - [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Sperner 보조정리](sperner-lemma.md), [Kakutani 고정점 정리](kakutani-fixed-point.md): 조합적 증명과 집합값 사상으로의 확장
+- [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Lefschetz 고정점 정리](lefschetz-fixed-point.md): 호몰로지 대각합의 교대합이 고정점의 존재를 판정한다
 - [de Rham 코호몰로지](de-rham-cohomology.md) → [Hodge 이론](hodge-theory.md) → [Kähler 다양체](kahler-manifolds.md), [지표 정리](index-theorem.md)
 - [Reidemeister 비틀림](reidemeister-torsion.md) → [s-코보디즘 정리](s-cobordism.md): 단순 호모토피와 고차원 분류
 - [분류공간](classifying-spaces.md): 주다발을 사상의 호모토피류로 세고, 특성류가 그 코호몰로지에서 나온다

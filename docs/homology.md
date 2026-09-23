@@ -161,6 +161,7 @@ $$
 ### 해석학에서의 쓰임
 
 - [Brouwer 고정점 정리](brouwer-fixed-point.md)
+- [Lefschetz 고정점 정리](lefschetz-fixed-point.md)
 
 ### 대수와 수론에서의 쓰임
 
