@@ -40,6 +40,7 @@ graph TD
 - [Sperner 정리](sperner-theorem.md): 부분집합 격자의 최대 반사슬과 LYM 부등식
 - [Erdős–Ko–Rado 정리](erdos-ko-rado.md): 교차족의 최대 크기, Katona 의 순환 배열 세기
 - [Littlewood–Offord 문제](littlewood-offord.md): 부호합의 반집중, 반사슬 논법이 주는 상한
+- [Sperner 보조정리](sperner-lemma.md): 단체의 이름표가 강제하는 완전 단체, Brouwer 고정점 정리의 조합적 증명
 - [Stirling 수](stirling-numbers.md): 집합 분할과 순열의 순환을 세는 수, 거듭제곱과 내림 계승의 기저 변환
 - [Bell 수](bell-numbers.md): 집합 분할 전체의 수, 지수생성함수와 Dobinski 공식
 - [조합적 종](combinatorial-species.md): 구조를 배정하는 규칙의 합·곱·합성이 지수생성함수의 연산이 된다
