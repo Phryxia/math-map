@@ -8,7 +8,7 @@ $$
 p(5n+4)\equiv0\ (\mathrm{mod}\ 5),\qquad p(7n+5)\equiv0\ (\mathrm{mod}\ 7),\qquad p(11n+6)\equiv0\ (\mathrm{mod}\ 11)
 $$
 
-증명은 생성함수 조작으로 나오지만, $p(5n+4)$ 개의 분할을 다섯 무더기로 똑같이 나누는 방법은 알려 주지 않는다.
+증명은 [생성함수](generating-functions.md) 조작으로 나오지만, $p(5n+4)$ 개의 분할을 다섯 무더기로 똑같이 나누는 방법은 알려 주지 않는다.
 
 1944 년 Freeman Dyson 이 그 무더기를 짓는 통계량으로 **rank** 를 제안했다.
 

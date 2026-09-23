@@ -152,7 +152,7 @@ $$
 - **알고리즘**: 평면 그래프에서는 최대유량, 최단 경로, [그래프 동형](graph-isomorphism.md)이 일반 그래프보다 빠르게 풀리고 분리자 정리가 동적 계획법의 근거를 준다. 회로 배선(VLSI), 지도 렌더링, 지리 정보 시스템이 응용이다.
 - **조합 최적화**: 평면 그래프에서의 최대 절단은 다항 시간에 풀리며(쌍대 그래프의 $T$ 조인 문제), 이는 일반 그래프에서 NP-난해인 것과 대비된다.
 - **색칠**: 평면성이 채색수를 4 로 묶는다는 4 색 정리가 있다([그래프 색칠](graph-coloring.md)).
-- **스펙트럼**: 평면 그래프의 [그래프 Laplacian](graph-laplacian.md) 고윳값은 분리자 크기와 연결되며, Tutte의 스프링 그리기는 Laplacian 조화함수로 볼록 그리기를 만든다.
+- **스펙트럼**: 평면 그래프의 [그래프 Laplacian](graph-laplacian.md) 고윳값은 분리자 크기와 연결되며, Tutte의 스프링 그리기는 Laplacian [조화함수](harmonic-functions.md)로 볼록 그리기를 만든다.
 
 [^1]: N. Robertson, P. Seymour, "Graph Minors. XX. Wagner's conjecture", Journal of Combinatorial Theory Series B 92 (2004), https://doi.org/10.1016/j.jctb.2004.08.001
 [^2]: K. Appel, W. Haken, "Every planar map is four colorable", Bulletin of the American Mathematical Society 82 (1976), https://www.ams.org/journals/bull/1976-82-05/S0002-9904-1976-14122-5/

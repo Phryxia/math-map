@@ -101,7 +101,7 @@ $$
 H^{2k}(G/B,\mathbb Z)=\bigoplus_{\ell(w)=k}\mathbb Z[X_w],\qquad H^{\text{홀}}=0
 $$
 
-Poincaré 다항식은 Weyl 군의 길이 생성함수다.
+Poincaré 다항식은 Weyl 군의 길이 [생성함수](generating-functions.md)다.
 
 $$
 \sum_k \dim H^{2k}(G/B)\thinspace q^{k}=\sum_{w\in W}q^{\ell(w)}=\prod_{i=1}^{r}\frac{1-q^{d_i}}{1-q}

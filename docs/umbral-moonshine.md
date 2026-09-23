@@ -75,7 +75,7 @@ $$
 Z_{K3}(\tau,z)=24\thinspace\mathrm{ch}\_{\frac14,0}(\tau,z)+\sum_{n\ge0}A_n\thinspace\mathrm{ch}\_{n+\frac14,\frac12}(\tau,z)
 $$
 
-계수를 모은 생성함수를 놓는다.
+계수를 모은 [생성함수](generating-functions.md)를 놓는다.
 
 $$
 H(\tau)=2q^{-1/8}\left(-1+\sum_{n\ge1}A_nq^n\right)=2q^{-1/8}\left(-1+45q+231q^2+770q^3+2277q^4+5796q^5+\cdots\right)

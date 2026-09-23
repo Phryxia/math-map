@@ -2,7 +2,7 @@
 
 # 개요
 
-[격자](lattices.md) $L\subset\mathbb R^n$ 의 벡터를 길이별로 세어 생성함수로 묶은 것이 **theta 급수**다.
+[격자](lattices.md) $L\subset\mathbb R^n$ 의 벡터를 길이별로 세어 [생성함수](generating-functions.md)로 묶은 것이 **theta 급수**다.
 
 $$
 \Theta_L(\tau)=\sum_{x\in L}q^{|x|^2/2},\qquad q=e^{2\pi i\tau}

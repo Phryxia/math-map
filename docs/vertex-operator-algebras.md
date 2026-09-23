@@ -48,7 +48,7 @@ $k=0$ 항만 남는 경우가 Lie 대수의 괄호이고 나머지가 고차 보
 
 ## 등급과 모듈러성
 
-$V=\bigoplus_{n}V_n$ 의 등급은 Virasoro 원소의 $L_0$ 고유값이다. 지표를 생성함수로 쓰면 다음과 같다.
+$V=\bigoplus_{n}V_n$ 의 등급은 Virasoro 원소의 $L_0$ 고유값이다. 지표를 [생성함수](generating-functions.md)로 쓰면 다음과 같다.
 
 $$
 \mathrm{ch}V(\tau)=\mathrm{tr}\_Vq^{L_0-c/24}=q^{-c/24}\sum_n(\dim V_n)q^n

@@ -123,7 +123,7 @@ Borel 변환을 유리함수로 근사(Padé)한 뒤 Laplace 적분하는 방식
 
 ## 계수 성장에서 읽는 구조
 
-조합론에서 생성함수의 계수 점근에도 같은 사전이 쓰인다. 주도항 뒤에 숨은 지수적으로 작은 보정은 다른 특이점의 흔적이고, 그 위치는 계수 수열의 성장에서 역산된다.[^1]
+조합론에서 [생성함수](generating-functions.md)의 계수 점근에도 같은 사전이 쓰인다. 주도항 뒤에 숨은 지수적으로 작은 보정은 다른 특이점의 흔적이고, 그 위치는 계수 수열의 성장에서 역산된다.[^1]
 
 [^1]: John P. Boyd, *The Devil's Invention: Asymptotic, Superasymptotic and Hyperasymptotic Series*, Acta Applicandae Mathematicae 56 (1999), §§1–8. 최적 절단, 지수적으로 작은 항, Stokes 현상과 hyperasymptotic 전개의 개관.
 

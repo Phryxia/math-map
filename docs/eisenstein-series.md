@@ -80,7 +80,7 @@ $$
 =\frac1{\mathrm{vol}(\Gamma\backslash\mathbb H)}
 $$
 
-로 $z$ 에 의존하지 않는 상수함수다. 유수도 $\Gamma$ 불변이고 고윳값이 $s(1-s)\to0$ 이라 조화함수이며, 유계인 조화함수는 상수다.
+로 $z$ 에 의존하지 않는 상수함수다. 유수도 $\Gamma$ 불변이고 고윳값이 $s(1-s)\to0$ 이라 [조화함수](harmonic-functions.md)이며, 유계인 조화함수는 상수다.
 
 Rankin–Selberg 방법이 이 상수가 부피의 역수라는 것을 쓴다. $f\bar g y^k$ 에 $E(z,s)$ 를 곱해 적분한 것의 $s=1$ 유수가 Petersson 내적 $\langle f,g\rangle/\mathrm{vol}$ 이 된다.
 

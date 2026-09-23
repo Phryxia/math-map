@@ -157,7 +157,7 @@ $r_3(n)$ 을 중심 $L$ 값과 잇는 것이 [Waldspurger 정리](waldspurger-fo
 
 ## 정칙화와 확장
 
-Kudla–Rallis 는 Eisenstein 급수를 $s$ 의 함수로 놓고 유수를 취해 Weil 조건을 크게 완화했다. 정칙화된 Siegel–Weil 공식은 theta 올림의 비소멸 판정과 [GGP](gan-gross-prasad.md)(Gan–Gross–Prasad) 계열 주기 문제의 표준 도구다. Kudla 는 좌변의 theta 적분을 Shimura 다양체 위 사이클의 생성함수로 바꾸는 **산술 Siegel–Weil 공식**을 제안했다.
+Kudla–Rallis 는 Eisenstein 급수를 $s$ 의 함수로 놓고 유수를 취해 Weil 조건을 크게 완화했다. 정칙화된 Siegel–Weil 공식은 theta 올림의 비소멸 판정과 [GGP](gan-gross-prasad.md)(Gan–Gross–Prasad) 계열 주기 문제의 표준 도구다. Kudla 는 좌변의 theta 적분을 Shimura 다양체 위 사이클의 [생성함수](generating-functions.md)로 바꾸는 **산술 Siegel–Weil 공식**을 제안했다.
 
 # 활용
 
