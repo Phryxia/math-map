@@ -91,7 +91,7 @@ $$
 
 ## 원의 기본군
 
-$\mathbb R$ 이 단순연결이고 $\mathbb R\to S^1$ 이 덮개이므로 이것이 보편덮개다. 갑판 변환군이 $\mathbb Z$ 이므로 $\pi_1(S^1)\cong\mathbb Z$ 다. 고리의 들어 올림의 끝점이 정수이고 이 대응이 준동형이며 전단사임을 확인해도 같은 결과가 나온다. Brouwer 고정점 정리와 대수학의 기본정리가 이 결과에서 따라온다.
+$\mathbb R$ 이 단순연결이고 $\mathbb R\to S^1$ 이 덮개이므로 이것이 보편덮개다. 갑판 변환군이 $\mathbb Z$ 이므로 $\pi_1(S^1)\cong\mathbb Z$ 다. 고리의 들어 올림의 끝점이 정수이고 이 대응이 준동형이며 전단사임을 확인해도 같은 결과가 나온다. [Brouwer 고정점 정리](brouwer-fixed-point.md)와 대수학의 기본정리가 이 결과에서 따라온다.
 
 ## Nielsen–Schreier 정리
 

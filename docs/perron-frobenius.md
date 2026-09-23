@@ -40,7 +40,7 @@ $A\gt 0$ 이면 다음이 성립한다.
 - 성분이 모두 양인 고유벡터 $v$ 가 있고, 양의 고유벡터는 $v$ 의 상수배뿐이다.
 - 다른 모든 고윳값 $\lambda$ 는 $\vert\lambda\vert\lt \rho(A)$ 를 만족한다.
 
-증명의 요지는 원뿔의 불변성이다. 단체 $\Delta=\lbrace x\ge 0 : \sum_i x_i=1\rbrace$ 위에서 사상 $x\mapsto Ax/\Vert Ax\Vert\_1$ 을 본다. $A\gt 0$ 이므로 이 사상은 $\Delta$ 를 그 내부로 보내고, 연속이며 $\Delta$ 가 콤팩트 볼록이므로 Brouwer 고정점정리로 고정점이 있다. 고정점이 양의 고유벡터이고, 그 고윳값이 최대임은 아래 공식에서 나온다.
+증명의 요지는 원뿔의 불변성이다. 단체 $\Delta=\lbrace x\ge 0 : \sum_i x_i=1\rbrace$ 위에서 사상 $x\mapsto Ax/\Vert Ax\Vert\_1$ 을 본다. $A\gt 0$ 이므로 이 사상은 $\Delta$ 를 그 내부로 보내고, 연속이며 $\Delta$ 가 콤팩트 볼록이므로 [Brouwer 고정점정리](brouwer-fixed-point.md)로 고정점이 있다. 고정점이 양의 고유벡터이고, 그 고윳값이 최대임은 아래 공식에서 나온다.
 
 ## Collatz–Wielandt 공식
 
