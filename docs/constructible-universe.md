@@ -90,6 +90,6 @@ $\kappa$ 위에 $\kappa$ 개 미만의 만남에 닫힌 비주요 [초필터](bo
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [큰 기수](large-cardinals.md)
 
 #set_theory #logic #foundations

@@ -62,6 +62,7 @@ graph TD
 - [기수 불변량](cardinal-characteristics.md): 영집합과 제1범주 아이디얼의 네 기수, Cichoń 도표
 - [Erdős–Sierpiński 쌍대성](erdos-sierpinski-duality.md): 연속체 가설 아래에서 두 아이디얼을 맞바꾸는 대합
 - [구성가능 우주](constructible-universe.md): 정의 가능한 부분집합만 쌓은 내부 모형, GCH 와 선택공리가 정리가 된다
+- [큰 기수](large-cardinals.md): 도달 불가능 기수부터 측도 가능 기수까지, 무모순성 강도를 재는 눈금
 
 ## 계산 가능성
 
