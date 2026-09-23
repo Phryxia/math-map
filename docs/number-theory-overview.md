@@ -81,7 +81,7 @@ graph TD
 
 ## 모듈러 형식
 
-상반평면 위의 대칭 함수가 정수론의 생성함수 역할을 한다.
+상반평면 위의 대칭 함수가 정수론의 [생성함수](generating-functions.md) 역할을 한다.
 
 - [모듈러 형식](modular-forms.md) → [Eisenstein 급수](eisenstein-series.md), [Hecke 작용소](hecke-operators.md), [theta 급수](theta-series.md)
 - [Maass 형식](maass-forms.md), [Selberg 대각합 공식](selberg-trace-formula.md): 비정칙 스펙트럼

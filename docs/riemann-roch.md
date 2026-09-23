@@ -49,7 +49,7 @@ $L(D)$ 는 유한차원이다. $\deg D\lt 0$ 이면 $L(D)=0$ 인데, 0 이 아�
 
 ## Hirzebruch–Riemann–Roch 정리
 
-Hirzebruch 는 위 등식을 임의 차원의 사영다양체와 벡터다발로 확장했다.
+Hirzebruch 는 위 등식을 임의 차원의 사영다양체와 [벡터다발](vector-bundles.md)로 확장했다.
 
 $$
 \chi(X,\mathcal E)=\int_X\mathrm{ch}(\mathcal E)\thinspace\mathrm{Td}(TX)

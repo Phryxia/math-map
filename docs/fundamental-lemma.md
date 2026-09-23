@@ -133,7 +133,7 @@ $$
 
 이제 문제는 두 다양체의 점 개수 비교가 되었고, 그것은 [코호몰로지](cohomology.md) 비교로 하면 된다. 그런데 아핀 Springer 올은 국소적이고 특이해서 직접 다루기 어렵다. Ngô 의 방법은 이 국소 대상들을 대역적으로 묶는다.
 
-곡선 $X/\mathbb F_q$ 위의 **Hitchin 올뭉치**를 생각한다. 점은 벡터다발과 그 위의 Higgs 장 $(E,\phi)$ 이고, Hitchin 사상은 $\phi$ 의 특성다항식을 취한다.
+곡선 $X/\mathbb F_q$ 위의 **Hitchin 올뭉치**를 생각한다. 점은 [벡터다발](vector-bundles.md)과 그 위의 Higgs 장 $(E,\phi)$ 이고, Hitchin 사상은 $\phi$ 의 특성다항식을 취한다.
 
 $$
 h:\mathcal M\longrightarrow\mathcal A

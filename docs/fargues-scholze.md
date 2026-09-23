@@ -37,7 +37,7 @@ $X_{\mathrm{FF}}$ 는 대수곡선이 아니다. [Noether 환](noetherian-rings.
 - $\mathrm{Pic}(X_{\mathrm{FF}})\cong\mathbb Z$ 이고 차수가 잘 정의된다.
 - 닫힌점들이 $\mathbb C_p$ 의 틸팅에서 오는 "미지의" 점들이다.
 
-벡터다발이 분류된다. 대수곡선에서 $\mathbb P^1$ 위 다발이 $\bigoplus\mathcal O(n_i)$ 로 쪼개지는 것처럼, $X_{\mathrm{FF}}$ 위의 다발은
+[벡터다발](vector-bundles.md)이 분류된다. 대수곡선에서 $\mathbb P^1$ 위 다발이 $\bigoplus\mathcal O(n_i)$ 로 쪼개지는 것처럼, $X_{\mathrm{FF}}$ 위의 다발은
 
 $$
 \mathcal E\cong\bigoplus_i\mathcal O(\lambda_i),\qquad \lambda_i\in\mathbb Q
