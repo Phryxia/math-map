@@ -228,7 +228,7 @@ Kato 의 Euler 계는 모듈러 곡선의 $K_2$ 안의 Beilinson 원소에서 �
 
 알려진 Euler 계는 순위 1 까지의 Selmer 군만 누른다.
 
-## Kolyvagin 계로의 추상화
+## Kolyvagin 계 추상화
 
 Mazur 와 Rubin 은 유도류만 남기고 원래의 Euler 계를 지우는 형식화를 제안했다. **Kolyvagin 계**란 $\kappa=\lbrace\kappa_n\rbrace$ 의 족으로, 각 $\kappa_n$ 이 $n$ 에서 변형된 Selmer 군에 속하고 위의 제 2 상호법칙에 해당하는 관계를 공리로 만족하는 것이다.
 

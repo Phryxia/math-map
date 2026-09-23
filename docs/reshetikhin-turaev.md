@@ -102,7 +102,7 @@ $\mathcal D=\sqrt{\sum_id_i^2}$ 는 MTC 의 전체 차원이다. 빈 링크 곧 
 
 증명은 Kirby I, II 에 대한 불변성 확인이고, 그 재료가 $\omega$ 고리의 소멸 성질과 $\Delta_\pm$ 의 상쇄다.
 
-## TQFT 로의 확장
+## TQFT 확장
 
 경계가 있는 다양체까지 확장하면 곡면 $\Sigma$ 마다 벡터공간 $Z(\Sigma)$ 가 생기고 다음 공리를 만족한다.
 

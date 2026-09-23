@@ -122,7 +122,7 @@ $$
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)
 - [이산로그](discrete-logarithm.md)
 
-### 대수 구조로의 확장
+### 대수 구조 확장
 
 - [환](rings.md)
 - [유한체](finite-fields.md)

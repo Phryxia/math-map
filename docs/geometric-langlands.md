@@ -34,7 +34,7 @@ graph TB
 
 기하학적 Langlands 는 오른쪽 열의 진술이다. 산술적 결론을 직접 주지 않고 대응의 구조를 드러낸다.
 
-## 함수의 층으로의 승격
+## 함수–층 사전
 
 [유한체](finite-fields.md) 위에서 [층](sheaves.md) $\mathcal F$ 와 함수 $f_{\mathcal F}$ 를 잇는 사전이 있다.
 
@@ -138,7 +138,7 @@ $G=\mathrm{GL}\_1$ 이면 $\mathrm{Bun}\_{\mathrm{GL}\_1}=\mathrm{Pic}(X)$ 이�
 
 2024 년 증명은 $\mathrm{Bun}\_G$ 를 Whittaker 정규화된 조각으로 분해하고, 각 조각에서 대응을 세운 뒤 열 정리(trace)로 붙인다. Poincaré 층의 구성과 국소 기하 Langlands 가 재료다.
 
-## 산술로의 환원
+## 산술 환원
 
 기하 쪽 정리는 수체 Langlands 를 직접 주지 않는다. $\mathbb F_q$ 계수로 옮기면 함수체 Langlands 에 대한 정보가 나오고, V. Lafforgue 의 함수체 Langlands(모든 환원군, 자기동형에서 Galois 방향)가 기하적 기법의 산술판이다. 그의 방법은 층 이론 대신 잉여 작용소를 써서 대각합 공식 없이 Galois 매개변수를 만든다.
 
@@ -163,7 +163,7 @@ Kapustin–Witten 은 4 차원 $\mathcal N=4$ 초대칭 게이지 이론을 곡�
 
 $L$ 함수는 Frobenius 고윳값으로 만든 산술적 양이라 계수를 $\mathbb C$ 로 바꾸면 사라지고, 오른쪽 열에 대응물이 없다.
 
-## 표현론으로의 환류
+## 표현론 환류
 
 아핀 Grassmannian 과 아핀 flag 다양체의 층 이론, 인수분해 대수(factorization algebra), 파생 대수기하의 스택 이론이 이 강령의 필요에서 나왔다. 기하적 Satake 도 그중 하나이고, 지금은 모듈러 표현론과 $p$ 진 [군의 표현](group-representations.md)론에 독립적으로 쓰인다.
 

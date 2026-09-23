@@ -101,7 +101,7 @@ Khot, Kindler, Mossel, O'Donnell 은 유일 게임 추측 아래에서 $\alpha+\
 
 Lovász 세타 함수는 $\alpha(G)\le\vartheta(G)\le\chi(\bar G)$ 라는 샌드위치를 준다. 두 NP-어려운 양 사이에 다항시간에 계산되는 값이 끼어 있고, 완전그래프에서는 부등식이 등식이 되어 최대 독립집합이 다항시간에 풀린다.
 
-## 계층으로의 확장
+## 계층 확장
 
 Lasserre 와 Sum-of-Squares 계층은 $k$ 차 모멘트까지의 상관을 담아 $n^{O(k)}$ 시간에 풀리는 완화들의 열을 준다. $k$ 가 커지면 정확해지지만 비용이 커진다.
 

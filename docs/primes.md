@@ -116,7 +116,7 @@ Diophantus 방정식의 해 존재, 제곱수 판정, 약수 함수의 계산이
 
 이 간극이 [RSA](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 전제다. 큰 소수 두 개를 찾는 것은 쉽고 그 곱을 되돌리는 것은 어렵다.
 
-## 대수적 정수로의 확장
+## 대수적 정수 확장
 
 유일분해가 성립하는 환이 **UFD**(unique factorization domain)다. 정수와 체 위의 [다항식환](polynomial-rings.md)은 UFD 이고 다항식의 인수분해도 유일하다. $\mathbb{Z}[\sqrt{-5}]$ 처럼 UFD 가 아닌 환에서는 유일성을 아이디얼 수준으로 옮기며, 그 실패를 재는 양이 유수군이다. Fermat 의 마지막 정리에 대한 19 세기의 시도들이 이 실패를 다루면서 대수적 정수론이 나왔다.[^1]
 

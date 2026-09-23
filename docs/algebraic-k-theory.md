@@ -32,7 +32,7 @@ $K_3(\mathbb Z)=\mathbb Z/48$ 의 48 과 $K_7(\mathbb Z)=\mathbb Z/240$ 의 240 
 
 $\mathbb Z$ 의 $K$ 군이 $\zeta$ 의 특수값을 재고 있다는 것이 현대적 설명이며, 그것을 정리로 만든 것이 Quillen–Lichtenbaum 이다. 분모는 [Bernoulli 수](bernoulli-numbers.md)의 von Staudt–Clausen 이 결정하고, 분자는 순환체의 류군이 결정한다.
 
-## 에탈 코호몰로지로의 환원
+## 에탈 코호몰로지 환원
 
 $K$ 군을 직접 계산하기는 어렵다. 대신 $K$ 이론에서 에탈 코호몰로지로 가는 사상을 만들고 차수가 충분히 높으면 동형임을 보인다.
 

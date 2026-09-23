@@ -120,7 +120,7 @@ Fibonacci 범주에서 $d_\tau$ 가 황금비인 것은 $d_\tau^2=1+d_\tau$ 에�
 
 증명은 $S,T$ 가 $\mathrm{SL}\_2(\mathbb Z)$ 의 표현을 이루며 그 핵이 유한 지표라는 Ng–Schauenburg 의 Galois 대칭에서 나온다. 랭크 5 까지 완전한 목록이 알려져 있다.[^1]
 
-## 3 차원 TQFT 로의 번역
+## 3 차원 TQFT 번역
 
 Reshetikhin–Turaev 구성은 MTC 에서 다음을 만든다.
 
