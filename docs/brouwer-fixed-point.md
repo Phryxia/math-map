@@ -70,7 +70,7 @@ $f(x)\ne x$ 인 각 $x$ 에서 $r(x)$ 를 $f(x)$ 에서 $x$ 방향으로 나가�
 
 # 활용
 
-- **게임의 균형.** Nash 는 혼합전략들이 이루는 콤팩트 볼록집합 위에서 최적반응을 주는 사상을 만들고 그 고정점이 균형임을 보였다. 최적반응이 집합값이므로 실제로 쓰는 것은 집합값 사상으로 확장한 Kakutani 고정점 정리다.
+- **게임의 균형.** Nash 는 혼합전략들이 이루는 콤팩트 볼록집합 위에서 최적반응을 주는 사상을 만들고 그 고정점이 균형임을 보였다. 최적반응이 집합값이므로 실제로 쓰는 것은 집합값 사상으로 확장한 [Kakutani 고정점 정리](kakutani-fixed-point.md)다.
 - **[Perron–Frobenius 정리](perron-frobenius.md).** 양행렬 $A$ 에 대해 단체 $\Delta$ 위의 사상 $x\mapsto Ax/\Vert Ax\Vert\_1$ 에 정리를 적용하면 고정점이 양의 고유벡터다.
 - **미분방정식의 해.** [Peano 존재정리](peano-existence-theorem.md)의 증명은 적분작용소의 고정점을 찾는 것이고, 그 작용소가 정의된 함수공간이 무한차원이므로 Schauder 판본을 쓴다.
 - **경제의 일반균형.** 초과수요가 0 이 되는 가격을 찾는 문제를 가격 단체 위의 연속사상의 고정점 문제로 바꾼다.
@@ -86,5 +86,6 @@ $f(x)\ne x$ 인 각 $x$ 에서 $r(x)$ 를 $f(x)$ 에서 $x$ 방향으로 나가�
 
 - [Sperner 보조정리](sperner-lemma.md)
 - [Schauder 고정점 정리](schauder-fixed-point.md)
+- [Kakutani 고정점 정리](kakutani-fixed-point.md)
 
 #topology #algebraic_topology #analysis #theorem
