@@ -112,7 +112,7 @@ $A=\mathbb Z_q[x_1,\dots,x_m]/I$ 라 할 때 **약수렴 대수** $A^\dagger$ �
 
 - 유한차원이다.
 - $\mathbb F_q$ 위의 원래 대수만으로 결정된다(들어올림 선택에 무관하다).
-- Frobenius 가 작용하고, 그 대각합이 Lefschetz 공식으로 점 개수를 준다.
+- Frobenius 가 작용하고, 그 대각합이 [Lefschetz 공식](lefschetz-fixed-point.md)으로 점 개수를 준다.
 
 $$
 \char35{}C(\mathbb F_{q^k})=\sum_{i}(-1)^i\thinspace\mathrm{tr}\big(\mathrm{Frob}^k\mid H^i_{\mathrm{MW}}\big)
