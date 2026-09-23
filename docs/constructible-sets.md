@@ -60,6 +60,7 @@ $$
 
 ## 선수지식
 
+- [대수다양체](algebraic-varieties.md)
 - [모형론](model-theory.md)
 
 ## 더 알아보기
