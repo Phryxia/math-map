@@ -87,6 +87,6 @@ $\mathrm{cov}(\mathcal N)$ 과 $\mathrm{non}(\mathcal N)$ 사이에는 도표의
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Erdős–Sierpiński 쌍대성](erdos-sierpinski-duality.md)
 
 #set_theory #measure_theory #logic
