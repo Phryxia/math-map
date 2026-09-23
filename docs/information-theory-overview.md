@@ -48,7 +48,7 @@ graph TD
 
 - [오류정정부호](error-correcting-codes.md) — 유한체 위의 선형부호. 최소거리가 검출과 정정의 능력을 정한다
 - [Mathieu 군과 Golay 부호](mathieu-groups.md) — 이진 Golay 부호의 자기동형군이 산재 단순군이다
-- [구 채우기와 E8, Leech 격자](sphere-packing.md) — 부호를 격자로 올리면 채우기 밀도 문제가 된다
+- [구 채우기](sphere-packing.md) — 부호를 격자로 올리면 채우기 밀도 문제가 된다
 
 ## 확률과 통계
 

@@ -94,6 +94,6 @@ Hamming 쪽은 부호어가 $2^4$ 개이고 최소거리가 3 이라 $[7,4,3]$ �
 
 - [채널 부호화 정리](channel-coding.md)
 - [Mathieu 군과 Golay 부호](mathieu-groups.md)
-- [구 채우기와 E8, Leech 격자](sphere-packing.md)
+- [구 채우기](sphere-packing.md)
 
 #field_theory #linear_algebra #computation
