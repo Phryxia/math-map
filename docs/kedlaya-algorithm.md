@@ -179,7 +179,7 @@ $p=2$ 에서는 Kedlaya 의 가설이 깨져서 Mestre 의 AGM(arithmetic-geomet
 
 # 활용
 
-## Hasse 불변량에 의한 점 세기
+## Hasse 불변량과 점 개수
 
 $y^2=x^3+x+1$ 에서 Hasse 불변량은 $(x^3+x+1)^{(p-1)/2}$ 의 $x^{p-1}$ 계수이고, 이 계수 하나가 $a_p\bmod p$ 를 담는다.
 
