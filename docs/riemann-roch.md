@@ -89,7 +89,7 @@ $\deg D\ge2g+1$ 이면 완비선형계 $\vert D\vert$ 가 $X$ 를 $\mathbb P^{\e
 
 ## 함수체와 수체의 유비
 
-Riemann–Roch 는 유한체 위의 곡선에서도 성립한다. $\deg D\gt 2g-2$ 인 인자로 만든 대수기하 부호는 길이 $n$ , 차원 $k=\deg D+1-g$ , 최소거리 $d\ge n-\deg D$ 를 갖는다. Goppa 부호가 Gilbert–Varshamov 한계를 넘어선 최초의 구성이다.
+Riemann–Roch 는 [유한체](finite-fields.md) 위의 곡선에서도 성립한다. $\deg D\gt 2g-2$ 인 인자로 만든 대수기하 부호는 길이 $n$ , 차원 $k=\deg D+1-g$ , 최소거리 $d\ge n-\deg D$ 를 갖는다. Goppa 부호가 Gilbert–Varshamov 한계를 넘어선 최초의 구성이다.
 
 수체 쪽에는 $\zeta_K$ 의 유수 공식이 대응한다. 함수체의 Riemann–Roch 와 수체의 유수 공식이 같은 자리를 차지한다는 유비가 $\mathbb F_q(X)$ 와 $\mathbb Q$ 를 같은 언어로 다루는 근거다.
 

@@ -173,7 +173,7 @@ $$
 
 ## Shimura 다양체의 zeta 함수
 
-Kottwitz 의 계획은 Shimura 다양체의 Hasse–Weil zeta 함수를 자기동형 $L$ 함수로 표현하는 것이었다. 유한체 위의 점 개수를 [Lefschetz 자취 공식](lefschetz-fixed-point.md)으로 세면 궤도적분의 합이 나오고, 그것을 안정화해야 자기동형 쪽으로 옮겨진다. 그 안정화가 기본 보조정리에 걸려 있었다. 보조정리가 증명되면서 여러 경우에 이 계획이 완결되었다.
+Kottwitz 의 계획은 Shimura 다양체의 Hasse–Weil zeta 함수를 자기동형 $L$ 함수로 표현하는 것이었다. [유한체](finite-fields.md) 위의 점 개수를 [Lefschetz 자취 공식](lefschetz-fixed-point.md)으로 세면 궤도적분의 합이 나오고, 그것을 안정화해야 자기동형 쪽으로 옮겨진다. 그 안정화가 기본 보조정리에 걸려 있었다. 보조정리가 증명되면서 여러 경우에 이 계획이 완결되었다.
 
 ## 다른 결과들
 

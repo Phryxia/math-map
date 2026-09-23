@@ -78,7 +78,7 @@ $T$ 의 유한 부분집합 전체를 $I$ 로 두고, 각 $i \in I$ 에 $i$ 의 
 
 - 콤팩트성 정리의 모형을 직접 구성한다. 증명 체계를 쓰지 않으므로 증명 가능성과 만족 가능성을 분리해 다룰 수 있다.
 - 비표준 해석학이 $\mathbb R$ 의 초거듭제곱을 쓴다. 상수열보다 절댓값이 작은 양수가 무한소이고, 이 구조가 $\mathbb R$ 과 기본 동치이므로 일차논리로 쓴 실수의 성질이 그대로 옮겨진다.[^3]
-- [Ax–Grothendieck 정리](ax-grothendieck.md)가 유한체의 초곱을 쓴다. 특성 $p$ 인 대수적 닫힌 체들의 초곱이 특성 $0$ 인 대수적 닫힌 체가 되므로, 유한체에서 확인한 일차논리 문장이 복소수체로 옮겨진다.
+- [Ax–Grothendieck 정리](ax-grothendieck.md)가 [유한체](finite-fields.md)의 초곱을 쓴다. 특성 $p$ 인 대수적 닫힌 체들의 초곱이 특성 $0$ 인 대수적 닫힌 체가 되므로, 유한체에서 확인한 일차논리 문장이 복소수체로 옮겨진다.
 - [모형론](model-theory.md)에서 포화 모형을 만든다. 적절한 초필터로 초거듭제곱을 취하면 기수에 맞는 포화성을 얻고, 이것이 유형을 실현하는 표준 수단이다.
 
 [^1]: J. Łoś, "Quelques remarques, théorèmes et problèmes sur les classes définissables d'algèbres", in *Mathematical Interpretation of Formal Systems*, North-Holland (1955), 98–113.

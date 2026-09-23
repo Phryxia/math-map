@@ -144,7 +144,7 @@ Deligne 은 [모듈러 곡선](modular-curves.md)의 코호몰로지에서 잘�
 
 > $\mathbb Q$ 위의 모든 타원곡선 $E$ 는 모듈러다. 곧 무게 2, 레벨 $N=\mathrm{cond}(E)$ 의 고유형식 $f$ 가 있어 모든 $p\nmid N$ 에서 $a_p(E)=a_p(f)$ 다.
 
-$a_p(E)=p+1-\char35{}E(\mathbb F_p)$ 이므로 좌변은 유한체 위의 점 개수이고 우변은 복소해석적 대상의 Fourier 계수다.
+$a_p(E)=p+1-\char35{}E(\mathbb F_p)$ 이므로 좌변은 [유한체](finite-fields.md) 위의 점 개수이고 우변은 복소해석적 대상의 Fourier 계수다.
 
 Fermat 마지막 정리로 가는 길은 다음과 같다.
 

@@ -14,7 +14,7 @@ $$
 \prod_{p\le X}\frac{N_p}{p}\ \sim\ C\thinspace(\log X)^{r}
 $$
 
-를 관측했다. 좌변은 유한체 위의 점 세기이고 우변의 $r$ 은 $E(\mathbb Q)$ 의 계수다. 이 곱을 정돈한 것이 [Dirichlet $L$ 함수](dirichlet-l-functions.md)와 같은 꼴의 $L(E,s)$ 이고, $\log X$ 의 거듭제곱이 $s=1$ 에서의 소멸 차수로 번역된다.
+를 관측했다. 좌변은 [유한체](finite-fields.md) 위의 점 세기이고 우변의 $r$ 은 $E(\mathbb Q)$ 의 계수다. 이 곱을 정돈한 것이 [Dirichlet $L$ 함수](dirichlet-l-functions.md)와 같은 꼴의 $L(E,s)$ 이고, $\log X$ 의 거듭제곱이 $s=1$ 에서의 소멸 차수로 번역된다.
 
 위 등식이 약한 BSD 이며 밀레니엄 문제의 하나다. 강한 형태는 선행계수까지 명시해 $\char35{}\text{Ш}$ 를 포함한 공식으로 쓴다.
 

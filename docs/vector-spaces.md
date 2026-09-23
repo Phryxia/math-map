@@ -76,7 +76,7 @@ $\dim V=n$ 인 $F$ 위의 벡터 공간은 기저를 고르면 $F^n$ 과 동형�
 # 활용
 
 - 연립 일차방정식의 해집합, 데이터의 좌표 표현, 신호의 합성이 벡터 공간의 언어로 쓰인다. 부분공간은 제약을 만족하는 것들의 모임이고 차원은 남은 자유도다. [주성분 분석](principal-component-analysis.md)은 데이터를 저차원 부분공간으로 사영한다.
-- 체의 확대를 바탕체 위의 벡터 공간으로 보면 확대 차수가 정의된다([체의 확대](field-extensions.md)). 부호를 유한체 위의 부분공간으로 보면 부호율과 최소거리가 정의된다([오류정정부호](error-correcting-codes.md)). 독립성 개념만 추출하면 [Matroid](matroids.md)다.
+- 체의 확대를 바탕체 위의 벡터 공간으로 보면 확대 차수가 정의된다([체의 확대](field-extensions.md)). 부호를 [유한체](finite-fields.md) 위의 부분공간으로 보면 부호율과 최소거리가 정의된다([오류정정부호](error-correcting-codes.md)). 독립성 개념만 추출하면 [Matroid](matroids.md)다.
 - 길이, 각도, 수렴은 벡터 공간 구조만으로 말할 수 없고 노름, 내적, 위상을 추가해야 한다.[^1]
 
 [^1]: MIT, *ZoomNotes for Linear Algebra*, Part 3. 부분공간·기저·차원의 설명과 증명. https://ocw.mit.edu/courses/18-06-linear-algebra-spring-2010/4d876a9159e32543eb0d73b4d4382f4c_MIT18_06S10ZoomNotes.pdf

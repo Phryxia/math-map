@@ -2,7 +2,7 @@
 
 # 개요
 
-[Dwork](dwork-rationality.md)는 유한체 위 다양체의 zeta 함수가 유리함수임을 $p$ 진 해석학으로 증명했다. 남는 문제는 그 유리함수를 실제로 계산하는 것이다.
+[Dwork](dwork-rationality.md)는 [유한체](finite-fields.md) 위 다양체의 zeta 함수가 유리함수임을 $p$ 진 해석학으로 증명했다. 남는 문제는 그 유리함수를 실제로 계산하는 것이다.
 
 Dwork 의 증명은 구성적이다. 완전연속 작용소의 [Fredholm 행렬식](fredholm-determinant.md)을 유한 정밀도로 잘라 내면 Frobenius 의 특성다항식이 나온다. 다만 Dwork 의 급수는 수렴이 느리고 정밀도 관리가 복잡해 실제 계산에 쓰기 어려웠다. Monsky–Washnitzer 코호몰로지가 그 간극을 메웠고, 그것으로 초타원곡선의 zeta 함수를 계산한 것이 Kedlaya 알고리즘(2001)이다.
 

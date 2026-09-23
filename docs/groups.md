@@ -129,7 +129,7 @@ $$
 
 ## 산술과 암호
 
-정수의 나머지 연산은 덧셈에 대해 순환군 $\mathbb{Z}/n\mathbb{Z}$ 를, 가역인 나머지들은 곱셈에 대해 군 $(\mathbb{Z}/n\mathbb{Z})^\times$ 를 이룬다. 위수가 $\varphi(n)$ 이라는 사실과 Lagrange 정리에서 Euler 정리가 나오고, 이것이 RSA(Rivest–Shamir–Adleman)의 복호화가 왜 원래 메시지를 돌려주는지를 설명한다. 유한체의 곱셈군이 순환군이므로 이산로그 기반 암호가 성립한다.
+정수의 나머지 연산은 덧셈에 대해 순환군 $\mathbb{Z}/n\mathbb{Z}$ 를, 가역인 나머지들은 곱셈에 대해 군 $(\mathbb{Z}/n\mathbb{Z})^\times$ 를 이룬다. 위수가 $\varphi(n)$ 이라는 사실과 Lagrange 정리에서 Euler 정리가 나오고, 이것이 RSA(Rivest–Shamir–Adleman)의 복호화가 왜 원래 메시지를 돌려주는지를 설명한다. [유한체](finite-fields.md)의 곱셈군이 순환군이므로 이산로그 기반 암호가 성립한다.
 
 ## 방정식과 분류
 

@@ -22,7 +22,7 @@ Weil 추측의 진술과 Frobenius 고윳값 언어는 [Galois 표현](galois-re
 
 ## 지수합으로의 번역
 
-유한체에서 방정식의 해를 세는 표준 기법은 덧셈 지표다. $\psi:\mathbb F_p\to\mu_p$ 를 비자명한 덧셈 지표라 하면 직교성이 지시함수를 준다.
+[유한체](finite-fields.md)에서 방정식의 해를 세는 표준 기법은 덧셈 지표다. $\psi:\mathbb F_p\to\mu_p$ 를 비자명한 덧셈 지표라 하면 직교성이 지시함수를 준다.
 
 $$
 \frac1p\sum_{t\in\mathbb F_p}\psi(tu)=

@@ -153,7 +153,7 @@ $$
 \tau(mn)=\tau(m)\tau(n)\ (\gcd(m,n)=1),\qquad \tau(p^{r+1})=\tau(p)\tau(p^r)-p^{11}\tau(p^{r-1})
 $$
 
-크기에 대한 Ramanujan 의 추측 $|\tau(p)|\le2p^{11/2}$ 는 Deligne 이 Weil 추측을 증명하면서 따라 나왔다. 유한체 위 다양체의 점 개수에 대한 정리가 복소해석적 대상의 Fourier 계수를 통제한다.
+크기에 대한 Ramanujan 의 추측 $|\tau(p)|\le2p^{11/2}$ 는 Deligne 이 Weil 추측을 증명하면서 따라 나왔다. [유한체](finite-fields.md) 위 다양체의 점 개수에 대한 정리가 복소해석적 대상의 Fourier 계수를 통제한다.
 
 무게 12 의 Eisenstein 급수 $E_{12}$ 의 계수에 691 이 분모로 등장하는 데서 합동이 나온다.
 

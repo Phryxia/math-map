@@ -2,7 +2,7 @@
 
 # 개요
 
-Riemann 가설은 [Riemann zeta 함수](riemann-zeta.md)의 비자명한 영점이 전부 직선 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 추측이다.[^1] 영점의 실수부가 [소수 정리](prime-number-theorem.md)의 오차 크기를 정하므로, 이 추측은 소수 계량 함수의 오차가 $\sqrt x$ 규모라는 진술과 동치다. 여러 $L$ 함수로 일반화한 판본이 있고, 유한체 위 곡선에 대한 판본은 증명되었다.
+Riemann 가설은 [Riemann zeta 함수](riemann-zeta.md)의 비자명한 영점이 전부 직선 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 추측이다.[^1] 영점의 실수부가 [소수 정리](prime-number-theorem.md)의 오차 크기를 정하므로, 이 추측은 소수 계량 함수의 오차가 $\sqrt x$ 규모라는 진술과 동치다. 여러 $L$ 함수로 일반화한 판본이 있고, [유한체](finite-fields.md) 위 곡선에 대한 판본은 증명되었다.
 
 # 직관
 

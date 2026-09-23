@@ -36,7 +36,7 @@ graph TB
 
 ## 함수의 층으로의 승격
 
-유한체 위에서 [층](sheaves.md) $\mathcal F$ 와 함수 $f_{\mathcal F}$ 를 잇는 사전이 있다.
+[유한체](finite-fields.md) 위에서 [층](sheaves.md) $\mathcal F$ 와 함수 $f_{\mathcal F}$ 를 잇는 사전이 있다.
 
 $$
 f_{\mathcal F}(x)=\mathrm{tr}\big(\mathrm{Frob}\_x\mid\mathcal F_{\bar x}\big)

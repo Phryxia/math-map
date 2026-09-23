@@ -90,7 +90,7 @@ $\gcd(p,a)=1$ 인 소수 $p$ 가 $ab$ 를 나누면 $sp+ta=1$ 의 양변에 $b$ 
 
 ## 다른 환으로의 확장
 
-같은 절차가 체 위의 [다항식환](polynomial-rings.md)에서도 작동한다. 차수가 나머지의 크기를 대신하고, 최대공약다항식과 Bézout 항등식이 같은 형태로 나온다. 부분분수 분해, 유한체 구현의 역원 계산, [Reed–Solomon 부호](error-correcting-codes.md)의 복호 알고리즘이 이를 쓴다. Gauss 정수 $\mathbb{Z}[i]$ 에서도 노름을 크기로 삼아 작동한다.
+같은 절차가 체 위의 [다항식환](polynomial-rings.md)에서도 작동한다. 차수가 나머지의 크기를 대신하고, 최대공약다항식과 Bézout 항등식이 같은 형태로 나온다. 부분분수 분해, [유한체](finite-fields.md) 구현의 역원 계산, [Reed–Solomon 부호](error-correcting-codes.md)의 복호 알고리즘이 이를 쓴다. Gauss 정수 $\mathbb{Z}[i]$ 에서도 노름을 크기로 삼아 작동한다.
 
 # 활용
 

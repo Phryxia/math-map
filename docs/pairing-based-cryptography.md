@@ -2,7 +2,7 @@
 
 # 개요
 
-[타원곡선](elliptic-curves.md)의 비틀림점 사이에는 쌍선형 사상이 정의된다. 이 사상은 곡선의 군을 유한체의 곱셈군으로 옮긴다.
+[타원곡선](elliptic-curves.md)의 비틀림점 사이에는 쌍선형 사상이 정의된다. 이 사상은 곡선의 군을 [유한체](finite-fields.md)의 곱셈군으로 옮긴다.
 
 $$
 e:E[r]\times E[r]\to\mu_r\subset\mathbb F_{q^k}^\times

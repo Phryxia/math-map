@@ -34,7 +34,7 @@ $$
 \end{array}
 $$
 
-비분기 쪽은 유한체 $\mathbb F_q$ 의 확대 이론이다. 유한체의 확대는 차수마다 하나뿐이고 Galois 군이 Frobenius 로 생성되는 순환군이다. 남는 일은 $\mathcal O^\times$ 에 대응하는 완전분기 확대를 만드는 것이다.
+비분기 쪽은 [유한체](finite-fields.md) $\mathbb F_q$ 의 확대 이론이다. 유한체의 확대는 차수마다 하나뿐이고 Galois 군이 Frobenius 로 생성되는 순환군이다. 남는 일은 $\mathcal O^\times$ 에 대응하는 완전분기 확대를 만드는 것이다.
 
 ## 원분체의 대체물
 

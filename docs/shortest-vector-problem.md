@@ -79,7 +79,7 @@ LLL 축소로 얻은 짧은 벡터가 주어진 실수들 사이의 정수 관�
 
 ## 부호의 복호
 
-선형부호의 최대우도 복호가 유한체 위의 CVP 이고, 실수 격자의 BDD 와 같은 구조다. 다중안테나 통신의 신호 검출에도 같은 열거 알고리즘을 쓴다.
+선형부호의 최대우도 복호가 [유한체](finite-fields.md) 위의 CVP 이고, 실수 격자의 BDD 와 같은 구조다. 다중안테나 통신의 신호 검출에도 같은 열거 알고리즘을 쓴다.
 
 [^1]: Miklós Ajtai, "The shortest vector problem in $L_2$ is NP-hard for randomized reductions", STOC 1998. 상수 인자 근사판으로의 확장은 Daniele Micciancio, "The shortest vector in a lattice is hard to approximate to within some constant", FOCS 1998.
 

@@ -32,7 +32,7 @@ $$
 
 ## 함수에서 층으로
 
-유한체 위의 다양체에서 함수와 [층](sheaves.md)은 서로 오간다. $\ell$ 진 층 $\mathcal F$ 가 있으면 각 유리점에서 Frobenius 자취를 재어 함수를 얻는다.
+[유한체](finite-fields.md) 위의 다양체에서 함수와 [층](sheaves.md)은 서로 오간다. $\ell$ 진 층 $\mathcal F$ 가 있으면 각 유리점에서 Frobenius 자취를 재어 함수를 얻는다.
 
 $$
 f_{\mathcal F}(x)=\mathrm{tr}\bigl(\mathrm{Frob}\_x,\mathcal F_{\bar x}\bigr)

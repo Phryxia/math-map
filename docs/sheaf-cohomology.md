@@ -69,7 +69,7 @@ $H^i(X,\mathcal A) = 0$ 이 모든 $i \ge 1$ 에서 성립하는 층을 **비순
 - de Rham 정리와 Dolbeault 정리가 비순환 분해의 두 경우다. 상수층을 미분형식의 층으로 분해하면 [de Rham 코호몰로지](de-rham-cohomology.md)가, 정칙함수의 층을 $(0,q)$ 형식의 층으로 분해하면 Dolbeault 코호몰로지가 나온다.
 - 지수열 $0 \to \mathbb Z \to \mathcal O \to \mathcal O^{\ast} \to 0$ 의 긴 완전열이 선다발을 분류한다. $H^1(X,\mathcal O^{\ast})$ 가 [Picard 군](picard-group.md)이고 첫 Chern 류가 $H^2(X,\mathbb Z)$ 로 가는 연결 사상이다.
 - 연접층의 [Euler 지표](euler-characteristic.md) $\sum_i (-1)^i \dim H^i(X,\mathcal F)$ 가 [Riemann–Roch](riemann-roch.md) 공식의 왼쪽 항이다. 고차 항의 소멸을 보이면 전역 단면의 차원이 계산된다.
-- 에탈 위상 위에서 같은 구성을 하면 유한체 위 다양체의 점의 개수를 세는 코호몰로지가 나오고, Frobenius 의 대각합 공식이 Weil 추측의 증명에 쓰인다.
+- 에탈 위상 위에서 같은 구성을 하면 [유한체](finite-fields.md) 위 다양체의 점의 개수를 세는 코호몰로지가 나오고, Frobenius 의 대각합 공식이 Weil 추측의 증명에 쓰인다.
 
 [^1]: J. Leray, "L'anneau spectral et l'anneau filtré d'homologie d'un espace localement compact et d'une application continue", *Journal de Mathématiques Pures et Appliquées* 29 (1950), 1–139.
 

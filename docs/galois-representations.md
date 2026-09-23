@@ -12,7 +12,7 @@ $$
 
 가 유한차원 $\mathbb Q_\ell$ 벡터공간이면서 $G_K$ 의 연속 작용을 받는다.
 
-대수다양체의 Zariski 위상은 코호몰로지를 만들기에 너무 성기다. Grothendieck 은 열린 부분집합을 에탈 사상으로 바꿔 위상 없이 코호몰로지를 세웠다. 그 결과가 Weil 추측의 증명이고, 유한체 위에서 점을 세는 일이 [Lefschetz 고정점 공식](lefschetz-fixed-point.md)으로 환원된다.
+대수다양체의 Zariski 위상은 코호몰로지를 만들기에 너무 성기다. Grothendieck 은 열린 부분집합을 에탈 사상으로 바꿔 위상 없이 코호몰로지를 세웠다. 그 결과가 Weil 추측의 증명이고, [유한체](finite-fields.md) 위에서 점을 세는 일이 [Lefschetz 고정점 공식](lefschetz-fixed-point.md)으로 환원된다.
 
 $$
 \char35{}X(\mathbb F_{q^n})=\sum_i(-1)^i\mathrm{tr}\big(\mathrm{Frob}^n\mid H^i_{\mathrm{et}}\big)

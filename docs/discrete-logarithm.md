@@ -30,7 +30,7 @@ $$
 | Baby-step giant-step | $O(\sqrt p)$ | $O(\sqrt p)$ | 모든 군 |
 | Pollard rho | $O(\sqrt p)$ | $O(1)$ | 모든 군 |
 | Pohlig–Hellman | 가장 큰 소인수 $q$ 에 대해 $O(\sqrt q)$ | $O(1)$ | 위수가 매끄러운 군 |
-| 지표 계산법 | 준지수 | 준지수 | 유한체의 곱셈군 |
+| 지표 계산법 | 준지수 | 준지수 | [유한체](finite-fields.md)의 곱셈군 |
 
 ## 군 위수의 소인수
 
