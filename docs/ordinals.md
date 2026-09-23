@@ -156,7 +156,7 @@ $$
 
 ## 정렬 정리와의 관계
 
-모든 집합에 정렬순서를 줄 수 있다는 정렬 정리는 선택공리와 동치이고, 정렬순서가 주어지면 그 집합은 서수로 색인된다. 이로써 초한귀납법을 임의의 집합 위의 구성에 쓸 수 있게 된다. 예컨대 [벡터 공간](vector-spaces.md)의 기저 존재 증명은 원소를 서수로 줄 세운 뒤 차례로 독립성을 확인하는 방식으로도 쓸 수 있다.
+모든 집합에 정렬순서를 줄 수 있다는 정렬 정리는 선택공리와 동치이고, 정렬순서가 주어지면 그 집합은 서수로 색인된다. 그러면 초한귀납법을 임의의 집합 위의 구성에 쓴다. 예컨대 [벡터 공간](vector-spaces.md)의 기저 존재 증명은 원소를 서수로 줄 세운 뒤 차례로 독립성을 확인하는 방식으로도 쓸 수 있다.
 
 [^1]: Ordinal Number, Wolfram MathWorld. https://mathworld.wolfram.com/OrdinalNumber.html
 [^2]: Transfinite induction, Wikipedia. https://en.wikipedia.org/wiki/Transfinite_induction

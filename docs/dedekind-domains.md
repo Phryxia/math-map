@@ -84,7 +84,7 @@ $$
 
 유한 개의 $\mathfrak p$ 에서만 지수가 0 이 아니다. 분수 아이디얼에서는 지수가 음수일 수 있고, 분수 아이디얼군은 소 아이디얼을 기저로 하는 자유 아벨군 $\bigoplus_{\mathfrak p}\mathbb Z$ 와 동형이다.
 
-포함관계와 나눗셈이 일치한다. $\mathfrak a\subseteq\mathfrak b\iff\mathfrak b\mid\mathfrak a$ 이며, 나누는 것이 품는 것이라는 표어로 불린다.
+포함관계와 나눗셈이 일치한다. $\mathfrak a\subseteq\mathfrak b\iff\mathfrak b\mid\mathfrak a$ 이고, 이를 "나누는 것이 품는 것"이라는 표어로 쓴다.
 
 ## 유수군
 
