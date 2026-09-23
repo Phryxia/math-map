@@ -64,7 +64,7 @@ $$
 (\sigma-1)\thinspace D\thickspace=\thickspace m-N
 $$
 
-증명은 지수를 한 칸 밀어 상쇄시키는 것이다. 점 $y$ 에 $D$ 를 씌우고 $\sigma-1$ 을 먹이면
+증명은 지수를 한 칸 밀어 상쇄시키는 것이다. 점 $y$ 에 $D$ 를 씌우고 $\sigma-1$ 을 적용하면
 
 $$
 (\sigma-1)Dy=m\thinspace y-Ny=m\thinspace y-\mathrm{Tr}(y)

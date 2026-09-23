@@ -7,7 +7,7 @@ $V=\mathbb C^n$ 을 잡고 그 $k$ 중 [텐서곱](tensor-products.md) $V^{\otim
 - $\mathrm{GL}\_n(\mathbb C)$ 가 각 자리에 똑같이 작용한다. $g\cdot(v_1\otimes\cdots\otimes v_k)=gv_1\otimes\cdots\otimes gv_k$ 이다.
 - 대칭군 $S_k$ 가 자리를 바꾼다. $\sigma\cdot(v_1\otimes\cdots\otimes v_k)=v_{\sigma^{-1}(1)}\otimes\cdots\otimes v_{\sigma^{-1}(k)}$ 이다.
 
-두 작용은 서로 교환한다. 자리를 바꾸고 같은 행렬을 먹이나, 먹이고 자리를 바꾸나 결과가 같기 때문이다. 여기까지는 확인만 하면 되는 사실이다.
+두 작용은 서로 교환한다. 자리를 바꾸고 같은 행렬을 곱하나, 곱하고 자리를 바꾸나 결과가 같기 때문이다. 여기까지는 확인만 하면 되는 사실이다.
 
 Schur–Weyl 쌍대성은 이 관계가 가능한 한 팽팽하다고 말한다.
 

@@ -68,7 +68,7 @@ $b_i$ 의 선택에 의존하지 않는다는 것은 교대곱의 상쇄에서 �
 
 ## 다양체의 비틀림
 
-$M$ 을 유한 CW(closure-finite weak topology) 복합체, $\rho:\pi_1(M)\to\mathrm{GL}\_n(\mathbb C)$ 를 표현이라 하자. 보편덮개 $\widetilde M$ 의 세포 사슬복합체 $C_\ast(\widetilde M)$ 은 $\mathbb Z[\pi_1]$ 가군이고, 여기에 $\rho$ 를 먹여
+$M$ 을 유한 CW(closure-finite weak topology) 복합체, $\rho:\pi_1(M)\to\mathrm{GL}\_n(\mathbb C)$ 를 표현이라 하자. 보편덮개 $\widetilde M$ 의 세포 사슬복합체 $C_\ast(\widetilde M)$ 은 $\mathbb Z[\pi_1]$ 가군이고, 여기에 $\rho$ 를 적용해
 
 $$
 C_\ast^\rho(M)=\mathbb C^n\otimes_{\rho}C_\ast(\widetilde M)

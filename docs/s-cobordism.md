@@ -57,7 +57,7 @@ $\pi_1$ 이 자명하면 $\mathbb Z[\pi_1]=\mathbb Z$ 이고 행렬식으로 다
 
 $\pm g$ 로 나누는 것은 그 변환들이 손잡이의 방향을 뒤집거나 덮개에서 기준점을 옮기는 것에 해당해 기하적 내용이 없기 때문이다.
 
-호모토피 동치 $f:X\to Y$ 마다 이 군의 원소 $\tau(f)$ 가 정해지고 h-코보디즘에서는 $\tau(W,M_0)$ 로 쓴다. [Reidemeister 비틀림](reidemeister-torsion.md)은 여기에 표현 $\rho$ 를 먹여 수로 내린 것이다.
+호모토피 동치 $f:X\to Y$ 마다 이 군의 원소 $\tau(f)$ 가 정해지고 h-코보디즘에서는 $\tau(W,M_0)$ 로 쓴다. [Reidemeister 비틀림](reidemeister-torsion.md)은 여기에 표현 $\rho$ 를 적용해 수로 내린 것이다.
 
 ## 정리
 
