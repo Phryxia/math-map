@@ -18,7 +18,7 @@ $K$ 에서 $K'$ 로 가는 조작에 끝이 없으므로 결정 불가능한 문
 
 집합 $A\subseteq\mathbb N$ 을 신탁으로 쓰는 기계가 $B$ 의 특성함수를 계산하면 $B$ 가 $A$ 로 **Turing 환원**된다고 하고 $B\le_T A$ 로 쓴다. 신탁 기계는 계산 도중 "$n\in A$ 인가" 를 물어 답을 즉시 받는다.
 
-$B\le_T A$ 이고 $A\le_T B$ 이면 $A\equiv_T B$ 로 쓴다. 이것이 동치관계이고 그 동치류가 **Turing 차수**다. 차수들의 집합을 $\mathcal D$ 라 하고 $\le_T$ 가 유도하는 [부분순서](partial-orders.md)를 그대로 쓴다.
+$B\le_T A$ 이고 $A\le_T B$ 이면 $A\equiv_T B$ 로 쓴다. 이것이 [동치관계](equivalence-relations.md)이고 그 동치류가 **Turing 차수**다. 차수들의 집합을 $\mathcal D$ 라 하고 $\le_T$ 가 유도하는 [부분순서](partial-orders.md)를 그대로 쓴다.
 
 계산 가능한 집합 전체가 하나의 차수를 이루고 이를 $\mathbf 0$ 으로 쓴다. 최소 원소다.
 

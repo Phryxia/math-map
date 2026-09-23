@@ -147,7 +147,7 @@ $$
 ## 순환 소수와 이산로그
 
 - 순환 소수의 주기. $1/p$ 의 십진 전개 주기는 법 $p$ 에서 10 의 위수이고 $p-1$ 을 나눈다.
-- 원시근과 이산로그. $(\mathbb Z/p)^{\times}$ 가 순환군이라는 사실이 Diffie–Hellman 키 교환의 기반이고, 위수가 $p-1$ 의 약수라는 제약이 안전한 소수의 선택 기준을 준다.
+- 원시근과 [이산로그](discrete-logarithm.md). $(\mathbb Z/p)^{\times}$ 가 순환군이라는 사실이 Diffie–Hellman 키 교환의 기반이고, 위수가 $p-1$ 의 약수라는 제약이 안전한 소수의 선택 기준을 준다.
 - 지수 축약. 법 1000 에서 $7^{2024}$ 는 $\varphi(1000)=400$ 이므로 $7^{24}$ 로 줄어든다.
 
 [^1]: Fermat's little theorem, Wikipedia (진술의 두 형태와 Euler 정리로의 일반화). https://en.wikipedia.org/wiki/Fermat%27s_little_theorem

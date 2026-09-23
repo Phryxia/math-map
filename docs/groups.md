@@ -63,7 +63,7 @@ $$
 
 ## 잉여류와 몫군
 
-$H \le G$ 와 $a \in G$ 에 대해 $aH = \lbrace ah : h \in H \rbrace$ 를 왼쪽 잉여류라 한다. 잉여류들은 $G$ 를 빈틈없이 겹치지 않게 덮으며, 이것이 $a \sim b \iff a^{-1}b \in H$ 라는 동치관계의 동치류다.
+$H \le G$ 와 $a \in G$ 에 대해 $aH = \lbrace ah : h \in H \rbrace$ 를 왼쪽 잉여류라 한다. 잉여류들은 $G$ 를 빈틈없이 겹치지 않게 덮으며, 이것이 $a \sim b \iff a^{-1}b \in H$ 라는 [동치관계](equivalence-relations.md)의 동치류다.
 
 잉여류들 위에 $(aH)(bH)=abH$ 로 곱을 정의하려면 대표원 선택과 무관해야 하고, 그 조건이 정규성이다.
 
