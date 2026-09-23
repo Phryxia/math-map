@@ -108,7 +108,7 @@ $P$ 는 함수방정식 때문에 자기역수적이다. 그러므로 계수 $2g
 
 ## 약수렴 대수
 
-$A=\mathbb Z_q[x_1,\dots,x_m]/I$ 라 할 때 **약수렴 대수** $A^\dagger$ 는 계수가 지수적으로 빨리 $0$ 으로 가는 멱급수, 곧 어떤 $\rho\gt 1$ 에 대해 반경 $\rho$ 에서 수렴하는 급수들의 대수다. $A^\dagger\otimes\mathbb Q$ 의 de Rham 코호몰로지를 $A$ 의 **Monsky–Washnitzer 코호몰로지**라 한다.
+$A=\mathbb Z_q[x_1,\dots,x_m]/I$ 라 할 때 **약수렴 대수** $A^\dagger$ 는 계수가 지수적으로 빨리 $0$ 으로 가는 [멱급수](power-series.md), 곧 어떤 $\rho\gt 1$ 에 대해 반경 $\rho$ 에서 수렴하는 급수들의 대수다. $A^\dagger\otimes\mathbb Q$ 의 de Rham 코호몰로지를 $A$ 의 **Monsky–Washnitzer 코호몰로지**라 한다.
 
 - 유한차원이다.
 - $\mathbb F_q$ 위의 원래 대수만으로 결정된다(들어올림 선택에 무관하다).

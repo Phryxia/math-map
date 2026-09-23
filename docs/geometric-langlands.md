@@ -165,7 +165,7 @@ $L$ 함수는 Frobenius 고윳값으로 만든 산술적 양이라 계수를 $\m
 
 ## 표현론으로의 환류
 
-아핀 Grassmannian 과 아핀 flag 다양체의 층 이론, 인수분해 대수(factorization algebra), 파생 대수기하의 스택 이론이 이 강령의 필요에서 나왔다. 기하적 Satake 도 그중 하나이고, 지금은 모듈러 표현론과 $p$ 진 군의 표현론에 독립적으로 쓰인다.
+아핀 Grassmannian 과 아핀 flag 다양체의 층 이론, 인수분해 대수(factorization algebra), 파생 대수기하의 스택 이론이 이 강령의 필요에서 나왔다. 기하적 Satake 도 그중 하나이고, 지금은 모듈러 표현론과 $p$ 진 [군의 표현](group-representations.md)론에 독립적으로 쓰인다.
 
 [^1]: 개설로는 E. Frenkel, *Lectures on the Langlands program and conformal field theory* (2005) 과 D. Gaitsgory, *Progrès récents dans la théorie de Langlands géométrique*, Séminaire Bourbaki (2015). 범주적 진술은 D. Arinkin, D. Gaitsgory, *Singular support of coherent sheaves and the geometric Langlands conjecture*, Selecta Math. (2015). 2024년 증명은 D. Gaitsgory, S. Raskin 외, *Proof of the geometric Langlands conjecture* I–V (2024). 물리 쪽은 A. Kapustin, E. Witten, *Electric-magnetic duality and the geometric Langlands program*, Commun. Number Theory Phys. **1** (2007).
 

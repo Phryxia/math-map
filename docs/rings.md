@@ -117,7 +117,7 @@ $6$ 을 법으로 $2x = 2$ 를 풀 때 양변을 $2$ 로 나누면 해를 잃는
 
 ## 비가환의 세계
 
-행렬환, 군환, 미분작용소환은 곱셈이 교환적이지 않다. 왼쪽 아이디얼과 오른쪽 아이디얼이 갈라지고 영인자가 흔하다. [가군](modules.md)이 중심 대상이 되고 군의 표현론이 군환 위의 가군론으로 번역된다.[^1]
+행렬환, 군환, 미분작용소환은 곱셈이 교환적이지 않다. 왼쪽 아이디얼과 오른쪽 아이디얼이 갈라지고 영인자가 흔하다. [가군](modules.md)이 중심 대상이 되고 [군의 표현](group-representations.md)론이 군환 위의 가군론으로 번역된다.[^1]
 
 [^1]: Thomas W. Judson, *Abstract Algebra: Theory and Applications*, Rings. 환의 공리와 기본 성질. 본문은 단위원을 추가로 요구하는 관례를 따른다. https://math.libretexts.org/Bookshelves/Abstract_and_Geometric_Algebra/Abstract_Algebra%3A_Theory_and_Applications_%28Judson%29/16%3A_Rings/16.03%3A_Rings
 

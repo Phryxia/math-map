@@ -24,7 +24,7 @@ $$
 X_\infty\ \sim\ \bigoplus_i\Lambda/(p^{m_i})\ \oplus\ \bigoplus_j\Lambda/(f_j(T))
 $$
 
-로 분해된다. $\mu=\sum m_i$ 는 $p$ 로 나뉘는 부분의 크기이고 $\lambda=\sum\deg f_j$ 는 비틀림 멱급수 부분의 차수다. $\lambda=\mu=0$ 은 $X_\infty$ 가 유한가군이라는 뜻이고, 탑의 류군이 어느 층부터 자라지 않는다는 뜻이다.
+로 분해된다. $\mu=\sum m_i$ 는 $p$ 로 나뉘는 부분의 크기이고 $\lambda=\sum\deg f_j$ 는 비틀림 [멱급수](power-series.md) 부분의 차수다. $\lambda=\mu=0$ 은 $X_\infty$ 가 유한가군이라는 뜻이고, 탑의 류군이 어느 층부터 자라지 않는다는 뜻이다.
 
 ## 실수 쪽과 허수 쪽의 차이
 

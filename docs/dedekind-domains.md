@@ -50,7 +50,7 @@ $\mathfrak p$ 에서 국소화한 $\mathcal O_{\mathfrak p}$ 는 극대 아이�
 - 극대 아이디얼이 $(\pi)$ 로 생성되고 0 이 아닌 모든 아이디얼이 $(\pi^k)$ 다.
 - 분수체에 전사인 부치 $v:K^\times\to\mathbb Z$ 가 있어 $R=\lbrace x:v(x)\ge0\rbrace\cup\lbrace 0\rbrace$ 이다.
 
-$\pi$ 를 균등화원이라 한다. $\mathbb Z_{(p)}$ , $p$ 진 정수환 $\mathbb Z_p$ , 형식적 멱급수환 $k[[t]]$ 가 표준 예다.
+$\pi$ 를 균등화원이라 한다. $\mathbb Z_{(p)}$ , $p$ 진 정수환 $\mathbb Z_p$ , 형식적 [멱급수](power-series.md)환 $k[[t]]$ 가 표준 예다.
 
 ## 분수 아이디얼
 

@@ -142,7 +142,7 @@ $$
 
 ## 확률과 조합 최적화
 
-생일 문제류의 적어도 하나 사건, 체를 이용한 정수론적 추정, [최소 신장트리](minimum-spanning-tree.md)류 문제의 계수 계산, 색칠 다항식(chromatic polynomial)의 삭제-축약 전개가 포함배제 구조를 갖는다. [생성함수](generating-functions.md)와 결합하면 부호 교대 합을 멱급수의 곱으로 다룬다.
+생일 문제류의 적어도 하나 사건, 체를 이용한 정수론적 추정, [최소 신장트리](minimum-spanning-tree.md)류 문제의 계수 계산, 색칠 다항식(chromatic polynomial)의 삭제-축약 전개가 포함배제 구조를 갖는다. [생성함수](generating-functions.md)와 결합하면 부호 교대 합을 [멱급수](power-series.md)의 곱으로 다룬다.
 
 [^1]: J. H. van Lint and R. M. Wilson, A Course in Combinatorics, 2nd ed., Cambridge University Press, Chapter 10 (Sieve methods). https://www.cambridge.org/core/books/course-in-combinatorics/BD3F62F231B5CC1E9E06915EF0E0E1DC
 

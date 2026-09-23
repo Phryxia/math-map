@@ -68,7 +68,7 @@ $$
 t=\log[\varepsilon]
 $$
 
-로 둔다. $[\varepsilon]$ 은 아래에서 정의할 Teichmüller 올림이고 $\log$ 는 $1$ 근방의 멱급수다. $g\in G_K$ 가 $\zeta_{p^n}\mapsto\zeta_{p^n}^{\chi(g)}$ 로 작용하므로 다음이 성립한다.
+로 둔다. $[\varepsilon]$ 은 아래에서 정의할 Teichmüller 올림이고 $\log$ 는 $1$ 근방의 [멱급수](power-series.md)다. $g\in G_K$ 가 $\zeta_{p^n}\mapsto\zeta_{p^n}^{\chi(g)}$ 로 작용하므로 다음이 성립한다.
 
 $$
 g(t)=\chi(g)\thinspace t

@@ -48,7 +48,7 @@ $$
 F(X,Y)\in\mathcal O[[X,Y]],\qquad F(X,Y)=X+Y+(\text{고차항})
 $$
 
-은 대수다양체가 아니라 원점 근방의 멱급수이지만, $\bar K$ 의 극대 [아이디얼](ideals-quotient-rings.md) $\mathfrak m_{\bar K}$ 에 대입하면 수렴해 그 위에 아벨군 구조를 준다. 곱군의 형식판은 $F(X,Y)=X+Y+XY$ 이고, 좌표를 $x=\zeta-1$ 로 잡으면 $\zeta$ 들의 곱셈이 이 식이다.
+은 대수다양체가 아니라 원점 근방의 [멱급수](power-series.md)이지만, $\bar K$ 의 극대 [아이디얼](ideals-quotient-rings.md) $\mathfrak m_{\bar K}$ 에 대입하면 수렴해 그 위에 아벨군 구조를 준다. 곱군의 형식판은 $F(X,Y)=X+Y+XY$ 이고, 좌표를 $x=\zeta-1$ 로 잡으면 $\zeta$ 들의 곱셈이 이 식이다.
 
 ## 소원에 의한 형식군의 결정
 

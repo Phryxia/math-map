@@ -42,7 +42,7 @@ $$
 
 으로 두고 생성원을 사원수 대수에서 가져온다. $p$ 를 네 제곱수의 합으로 쓰는 방법의 개수가 $8(p+1)$ 이라는 Jacobi 의 정리가 $p+1$ 개의 생성원을 준다.
 
-이 Cayley 그래프의 고윳값은 군의 표현론으로 계산되고 그 값이 사원수 대수 위 자기동형 형식의 Hecke 고윳값이다. Jacquet–Langlands 대응으로 이를 무게 2 첨점형식의 계수로 옮기면 Deligne 의 경계
+이 Cayley 그래프의 고윳값은 [군의 표현](group-representations.md)론으로 계산되고 그 값이 사원수 대수 위 자기동형 형식의 Hecke 고윳값이다. Jacquet–Langlands 대응으로 이를 무게 2 첨점형식의 계수로 옮기면 Deligne 의 경계
 
 $$
 |a_p|\le 2\sqrt p
