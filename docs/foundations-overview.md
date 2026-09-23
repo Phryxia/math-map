@@ -46,6 +46,7 @@ graph TD
 - [Pila–Wilkie 정리](pila-wilkie-theorem.md): 정의 가능 집합의 초월적 부분에 놓인 유리점의 셈, 산술기하에의 응용
 - [Ax–Grothendieck 정리](ax-grothendieck.md): 단사 다항식 사상은 전사, 유한체에서 특성 $0$ 으로의 이전
 - [비표준 해석학](nonstandard-analysis.md): 무한소를 가진 순서체 위에서 극한을 대수 계산으로 바꾼다
+- [내부집합론](internal-set-theory.md): 초곱 대신 표준 술어와 공리꼴 셋으로 무한소를 세우는 공리계
 - [Peano 공리](peano-axioms.md): 자연수의 공리계, 2차 형태의 범주성과 1차 형태의 비표준 모형
 - [Gödel 불완전성 정리](godel-incompleteness.md): 산술을 담는 체계는 자기 무모순성을 증명하지 못한다
 - [역수학](reverse-mathematics.md): 정리마다 그것을 증명하는 데 필요한 공리를 되돌려 찾는다

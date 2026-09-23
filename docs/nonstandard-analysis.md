@@ -92,6 +92,7 @@ ${}^\ast\mathbb R$ 의 부분집합 가운데 $\mathbb R$ 의 부분집합족을
 
 ## 더 알아보기
 
+- [내부집합론](internal-set-theory.md)
 - [Loeb 측도](loeb-measure.md)
 
 #analysis #logic #measure_theory
