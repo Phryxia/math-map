@@ -26,7 +26,7 @@ $$
 \exists\thinspace\omega(g)\in\mathrm{GL}(\mathcal S)\ \text{ with }\ \rho_\psi(g\cdot h)=\omega(g)\thinspace\rho_\psi(h)\thinspace\omega(g)^{-1}
 $$
 
-Schur 보조정리에 의해 $\omega(g)$ 는 스칼라 차이로 결정되고, 그래서 $\omega$ 는 표현이 아니라 사영표현이다. [Whittaker 모형의 유일성](whittaker-models.md)이 전역 적분의 Euler 곱 분해를 낳은 것과 같은 요령이다.
+Schur 보조정리가 $\omega(g)$ 를 스칼라 차이까지 정하고, 그래서 $\omega$ 는 표현이 아니라 사영표현이다. [Whittaker 모형의 유일성](whittaker-models.md)이 전역 적분의 Euler 곱 분해를 낳은 것과 같은 요령이다.
 
 ## 2 겹 덮개
 

@@ -85,7 +85,7 @@ $$
 \char35{}C=n=\mathrm{num}\negthinspace\left(\frac{p-1}{12}\right)
 $$
 
-이다. $C$ 는 $I$ 에 의해 소멸된다.
+이다. $I$ 가 $C$ 를 소멸시킨다.
 
 ## Mazur 의 정리들
 
