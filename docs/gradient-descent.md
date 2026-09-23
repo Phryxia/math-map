@@ -151,6 +151,7 @@ $$
 
 ## 더 알아보기
 
+- [확률적 경사하강법](stochastic-gradient-descent.md)
 - [변분 오토인코더](variational-autoencoder.md)
 
 #optimization #machine_learning #statistics

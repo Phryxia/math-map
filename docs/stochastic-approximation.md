@@ -69,6 +69,7 @@ $f(\theta)=\mathcal T\theta-\theta$ 이고 $\mathcal T$ 가 어떤 노름에서 
 
 ## 더 알아보기
 
+- [확률적 경사하강법](stochastic-gradient-descent.md)
 - [Q 학습](q-learning.md)
 - [정책 경사](policy-gradient.md)
 
