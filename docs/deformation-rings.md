@@ -18,7 +18,7 @@ $$
 
 가 모든 $A$ 에서 자연스럽게 성립한다. $\bar\rho$ 의 모든 올림이 $R_{\bar\rho}$ 위의 **보편 변형** 하나의 특수화이고, 표현론의 질문이 가환대수의 질문이 된다.
 
-환의 모양은 코호몰로지가 정한다. 접공간은 $H^1(G,\mathrm{ad}\thinspace\bar\rho)$ 이고 관계식의 장애는 $H^2(G,\mathrm{ad}\thinspace\bar\rho)$ 에 산다. [군 확대](group-extensions.md)를 $H^2$ 로 분류하고 $H^1$ 로 자기동형을 재던 기계가, 여기서는 계수환을 $\mathbb Z/p^m$ 으로 한 층씩 올리는 데 쓰인다.
+환의 모양은 [코호몰로지](cohomology.md)가 정한다. 접공간은 $H^1(G,\mathrm{ad}\thinspace\bar\rho)$ 이고 관계식의 장애는 $H^2(G,\mathrm{ad}\thinspace\bar\rho)$ 에 산다. [군 확대](group-extensions.md)를 $H^2$ 로 분류하고 $H^1$ 로 자기동형을 재던 기계가, 여기서는 계수환을 $\mathbb Z/p^m$ 으로 한 층씩 올리는 데 쓰인다.
 
 # 직관
 

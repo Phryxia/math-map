@@ -10,7 +10,7 @@ $$
 
 전역단면 [함자](functors.md)가 동치이고 역함자는 국소화 $\mathrm{Loc}(M)=\mathcal D_X\otimes_{U(\mathfrak g)}M$ 이다.
 
-[Borel–Weil–Bott 정리](borel-weil-bott.md)는 $X$ 위 선다발 $\mathcal L_\lambda$ 의 코호몰로지를 계산하고, 그것이 기약 표현이거나 0 이며 어느 차수에 나타나는지를 Weyl 군의 점 작용이 결정한다. 국소화 정리는 선다발 대신 모든 $\mathcal D_X$ 가군으로 이 계산을 확장한다. [Lie 대수](lie-algebras.md)의 표현론이 깃발다양체 위의 기하 문제로 번역되어 표현의 구조를 층의 지지집합과 특이점으로 읽을 수 있고, 이 번역이 Kazhdan–Lusztig 추측의 증명을 낳았다.
+[Borel–Weil–Bott 정리](borel-weil-bott.md)는 $X$ 위 선다발 $\mathcal L_\lambda$ 의 [코호몰로지](cohomology.md)를 계산하고, 그것이 기약 표현이거나 0 이며 어느 차수에 나타나는지를 Weyl 군의 점 작용이 결정한다. 국소화 정리는 선다발 대신 모든 $\mathcal D_X$ 가군으로 이 계산을 확장한다. [Lie 대수](lie-algebras.md)의 표현론이 깃발다양체 위의 기하 문제로 번역되어 표현의 구조를 층의 지지집합과 특이점으로 읽을 수 있고, 이 번역이 Kazhdan–Lusztig 추측의 증명을 낳았다.
 
 # 직관
 

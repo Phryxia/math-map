@@ -119,7 +119,7 @@ $\mathrm{Ext}\_R^1(C, A)$ 의 원소는 $0 \to A \to B \to C \to 0$ 꼴 확대�
 # 활용
 
 - **보편계수 정리.** 사슬 복합체의 정수 계수 호몰로지에서 임의 계수 호몰로지를 얻는 짧은 완전열의 가운데 항에 $\mathrm{Tor}\_1^{\mathbb Z}$ 항이 들어간다. 계수를 바꿀 때 생기는 비틀림 보정이 이 항이다.
-- **군 코호몰로지.** 군 $G$ 의 코호몰로지는 군환 위의 $\mathrm{Ext}$ 로 정의한다. $H^n(G, M) = \mathrm{Ext}\_{\mathbb Z G}^n(\mathbb Z, M)$ 이고, $H^2$ 가 [군의 확대](group-extensions.md)를 분류한다.
+- **군 [코호몰로지](cohomology.md).** 군 $G$ 의 코호몰로지는 군환 위의 $\mathrm{Ext}$ 로 정의한다. $H^n(G, M) = \mathrm{Ext}\_{\mathbb Z G}^n(\mathbb Z, M)$ 이고, $H^2$ 가 [군의 확대](group-extensions.md)를 분류한다.
 - **평탄성 판정.** 가군의 평탄성을 직접 검사하는 대신 $\mathrm{Tor}\_1$ 의 소멸을 확인한다. [국소화](localization-rings.md)가 평탄이라는 사실을 이 판정으로 보인다.
 - **국소환의 차원 이론.** [Noether 환](noetherian-rings.md)의 국소환에서 정칙성은 유한 대역 차원과 동치이고, 증명에 Koszul 복합체로 계산한 $\mathrm{Tor}$ 을 쓴다.
 

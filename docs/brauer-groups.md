@@ -69,7 +69,7 @@ $$
 [A]\cdot[B]=[A\otimes_KB],\qquad [A]^{-1}=[A^{\mathrm{op}}],\qquad 1=[M_n(K)]
 $$
 
-이 군이 **Brauer 군** $\mathrm{Br}(K)$ 다. 코호몰로지로는 $\mathrm{Br}(K)\cong H^2(\mathrm{Gal}(\bar K/K),\bar K^\times)$ 이고, 이 동형이 유체론의 계산과 대수의 분류를 잇는다.
+이 군이 **Brauer 군** $\mathrm{Br}(K)$ 다. [코호몰로지](cohomology.md)로는 $\mathrm{Br}(K)\cong H^2(\mathrm{Gal}(\bar K/K),\bar K^\times)$ 이고, 이 동형이 유체론의 계산과 대수의 분류를 잇는다.
 
 ## Hilbert 기호
 

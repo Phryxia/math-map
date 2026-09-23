@@ -136,7 +136,7 @@ $\mathbb F_q$ 위의 [다항식환](polynomial-rings.md) $\mathbb F_q[t]$ 는 �
 
 차이는 계수가 유한하다는 점이다. $\mathbb F_q[t]$ 의 zeta 함수는 유리함수이고 유한체 위 곡선의 $L$ 함수는 다항식이라 0 점이 유한 개다. Weil 이 1948 년에 곡선에 대해, Deligne 이 1974 년에 일반 다양체에 대해 그 0 점들의 절댓값이 $q^{-1/2}$ 임을 증명했다.
 
-증명이 정수로 옮겨 오지 않는 것은 도구가 기하적이기 때문이다. 유한체 위의 다양체에는 코호몰로지와 Frobenius 작용이 있고 0 점이 그 고윳값으로 나온다. $\mathrm{Spec}\thinspace\mathbb Z$ 에 대응하는 기하를 세우려는 시도는 아직 성공하지 못했다.
+증명이 정수로 옮겨 오지 않는 것은 도구가 기하적이기 때문이다. 유한체 위의 다양체에는 [코호몰로지](cohomology.md)와 Frobenius 작용이 있고 0 점이 그 고윳값으로 나온다. $\mathrm{Spec}\thinspace\mathbb Z$ 에 대응하는 기하를 세우려는 시도는 아직 성공하지 못했다.
 
 ## Chebyshev 편향
 

@@ -140,7 +140,7 @@ Saito–Kurokawa, Ikeda, Miyawaki 올림처럼 한 군의 형식에서 다른 �
 
 ## 산술적 응용의 입력
 
-고전군의 자기동형 표현을 [Galois 표현](galois-representations.md)과 잇는 작업(Shimura 다양체의 코호몰로지 분해)은 어떤 표현이 이산 스펙트럼에 있는지를 먼저 알아야 한다. 최근의 모듈러성 올림 정리와 Langlands 상호성의 부분적 결과들이 Arthur 의 분류를 입력으로 쓴다.
+고전군의 자기동형 표현을 [Galois 표현](galois-representations.md)과 잇는 작업(Shimura 다양체의 [코호몰로지](cohomology.md) 분해)은 어떤 표현이 이산 스펙트럼에 있는지를 먼저 알아야 한다. 최근의 모듈러성 올림 정리와 Langlands 상호성의 부분적 결과들이 Arthur 의 분류를 입력으로 쓴다.
 
 # 연관 문서
 
