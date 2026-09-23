@@ -70,7 +70,7 @@ $\mathbf{Set}$ 에서 mono 는 단사함수, epi 는 전사함수와 일치하�
 
 ## 크기 문제
 
-모든 집합의 집합이 존재할 수 없듯이 큰 범주를 다룰 때는 크기에 주의해야 한다. 국소적으로 작음을 요구하거나 Grothendieck 우주를 도입하는 것이 표준 처방이며, [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel 집합론에 [선택공리](axiom-of-choice.md)를 더한 것)에서 제한한 것과 같은 종류의 문제다.
+모든 집합의 집합이 존재할 수 없듯이 큰 범주에서도 크기가 문제가 된다. 국소적으로 작음을 요구하거나 Grothendieck 우주를 도입하는 것이 표준 처방이며, [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel 집합론에 [선택공리](axiom-of-choice.md)를 더한 것)에서 제한한 것과 같은 종류의 문제다.
 
 # 활용
 

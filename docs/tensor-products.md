@@ -115,7 +115,7 @@ $$
 
 ## 텐서–Hom 수반
 
-가장 중요한 성질은 다음 자연동형이다.
+다음 자연동형이 성립한다.
 
 $$
 \mathrm{Hom}\_R(M \otimes_R N, P) \thickspace\cong\thickspace \mathrm{Hom}\_R\big(M, \mathrm{Hom}\_R(N, P)\big)
