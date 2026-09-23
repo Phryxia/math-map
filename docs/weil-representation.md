@@ -42,7 +42,7 @@ $$
 \int_{\mathbb R}e^{-\pi i x^2}\thinspace dx=e^{-\pi i/4}
 $$
 
-$e^{-\pi i/4}$ 가 Weil 지표라 불리는 8 차 근이고, 제곱근의 가지 선택이 2 겹 덮개를 만든다. 실 [Lie 군](lie-groups.md) 수준에서는 $\mathrm{SL}\_2(\mathbb R)$ 의 기본군이 $\mathbb Z$ 라 덮개가 존재한다는 말과 같다. 이 2 겹에서 무게가 반정수가 되며, 반정수 무게 형식은 메타플렉틱군의 형식이다.
+$e^{-\pi i/4}$ 가 Weil 지표라 불리는 8 차 근이고, 제곱근의 가지 선택이 2 겹 덮개를 만든다. 실 [Lie 군](lie-groups.md) 수준에서는 $\mathrm{SL}\_2(\mathbb R)$ 의 [기본군](fundamental-group.md)이 $\mathbb Z$ 라 덮개가 존재한다는 말과 같다. 이 2 겹에서 무게가 반정수가 되며, 반정수 무게 형식은 메타플렉틱군의 형식이다.
 
 ## 불변 범함수로서의 theta
 

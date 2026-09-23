@@ -34,7 +34,7 @@ $$
 \sum_i\lvert f(b_i)-f(a_i)\rvert\lt \varepsilon
 $$
 
-구간을 하나만 쓰면 균등연속의 정의이고, 유한 개를 한꺼번에 재는 점이 다르다.
+구간을 하나만 쓰면 [균등연속](uniform-continuity.md)의 정의이고, 유한 개를 한꺼번에 재는 점이 다르다.
 
 # 성질
 

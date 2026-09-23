@@ -136,7 +136,7 @@ $$
 n\ \longmapsto\ \big(1-p^{n-1}\big)\frac{B_n}{n}
 $$
 
-가 $p$ 진 균등연속임을 뜻하고, 따라서 $\mathbb Z_p$ 전체로 유일하게 연장된다. 그 연장이 $L_p(1-s,\omega^{n})$ 이다. $p$ 진 $L$ 함수는 Bernoulli 수열의 완비화다.
+가 $p$ 진 [균등연속](uniform-continuity.md)임을 뜻하고, 따라서 $\mathbb Z_p$ 전체로 유일하게 연장된다. 그 연장이 $L_p(1-s,\omega^{n})$ 이다. $p$ 진 $L$ 함수는 Bernoulli 수열의 완비화다.
 
 ## 정칙소수
 

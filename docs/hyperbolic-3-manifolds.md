@@ -95,7 +95,7 @@ Mostow 가 닫힌 경우를, Prasad 가 cusp 가 있는 유한 부피 경우를 
 
 증명의 요지는 다음과 같다.
 
-1. 기본군의 동형이 준등거리사상 $\mathbb H^n\to\mathbb H^n$ 을 유도한다.
+1. [기본군](fundamental-group.md)의 동형이 준등거리사상 $\mathbb H^n\to\mathbb H^n$ 을 유도한다.
 2. 준등거리사상은 무한원 경계 $S^{n-1}$ 위의 유사등각 사상으로 확장된다 (Efremovič–Tihomirova, Mostow).
 3. 군 작용이 극한집합 위에서 에르고딕이므로 그 유사등각 사상의 Beltrami 계수가 거의 어디서나 0 이다.
 4. 등각 자기사상은 Möbius 변환이고 $\mathbb H^n$ 의 등거리사상에서 온다.

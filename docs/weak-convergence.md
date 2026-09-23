@@ -37,7 +37,7 @@ $$
 다음이 모두 동치다. 약수렴을 실제로 확인할 때 쓰는 도구 상자다.
 
 1. 모든 $f\in C_b(S)$ 에 대해 $\int f\thinspace d\mu_n\to\int f\thinspace d\mu$ .
-2. 모든 유계 균등연속 $f$ 에 대해 같은 수렴.
+2. 모든 유계 [균등연속](uniform-continuity.md) $f$ 에 대해 같은 수렴.
 3. 모든 닫힌집합 $F$ 에 대해 $\limsup_n\mu_n(F)\le\mu(F)$ .
 4. 모든 열린집합 $G$ 에 대해 $\liminf_n\mu_n(G)\ge\mu(G)$ .
 5. $\mu(\partial A)=0$ 인 모든 Borel 집합 $A$ 에 대해 $\mu_n(A)\to\mu(A)$ .

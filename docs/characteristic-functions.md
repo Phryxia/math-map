@@ -29,7 +29,7 @@ $$
 기본 성질은 정의에서 나온다.
 
 - $\varphi(0)=1$ 이고 모든 $t$ 에 대해 $|\varphi(t)|\le1$ 이다.
-- $\varphi$ 는 $\mathbb R^d$ 전체에서 균등연속이다. $|\varphi(t+h)-\varphi(t)|\le\mathbb E\bigl[|e^{i\langle h,X\rangle}-1|\bigr]$ 이고 우변이 [지배 수렴 정리](dominated-convergence.md)로 $h\to0$ 일 때 0 이 되며 이 평가에 $t$ 가 나타나지 않는다.
+- $\varphi$ 는 $\mathbb R^d$ 전체에서 [균등연속](uniform-continuity.md)이다. $|\varphi(t+h)-\varphi(t)|\le\mathbb E\bigl[|e^{i\langle h,X\rangle}-1|\bigr]$ 이고 우변이 [지배 수렴 정리](dominated-convergence.md)로 $h\to0$ 일 때 0 이 되며 이 평가에 $t$ 가 나타나지 않는다.
 - $\varphi_{-X}(t)=\overline{\varphi_X(t)}$ 이므로 $\varphi$ 가 실함수인 것과 $X$ 가 $-X$ 와 같은 분포인 것이 동치다.
 - $\varphi_{aX+b}(t)=e^{itb}\varphi_X(at)$ 다.
 

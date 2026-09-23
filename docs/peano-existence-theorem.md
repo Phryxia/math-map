@@ -36,7 +36,7 @@ $R=\lbrace (t,x):\vert t-t_0\vert\le a,\thickspace \Vert x-x_0\Vert\le b\rbrace$
 
 - 폭 $h$ 의 분할에서 $x_h(t_0)=x_0$ 으로 두고 각 칸에서 기울기를 직전 절점의 값 $f(t_j,x_h(t_j))$ 로 고정해 꺾은선 $x_h$ 를 만든다. 기울기가 $M$ 이하이므로 $\Vert x_h(t)-x_h(s)\Vert\le M\vert t-s\vert$ 이고, 따라서 $\lbrace x_h\rbrace$ 는 동등연속이며 $\Vert x_h-x_0\Vert\le b$ 로 균등유계다.
 - Arzelà–Ascoli 정리로 균등수렴하는 부분열 $x_{h_k}\to x$ 를 얻는다.
-- $f$ 는 콤팩트집합 $R$ 위에서 균등연속이므로 $f(s,x_{h_k}(s))$ 가 $f(s,x(s))$ 로 균등수렴한다. 꺾은선이 만족하는 적분 항등식에서 극한을 취하면 $x$ 가 적분방정식을 만족한다.
+- $f$ 는 콤팩트집합 $R$ 위에서 [균등연속](uniform-continuity.md)이므로 $f(s,x_{h_k}(s))$ 가 $f(s,x(s))$ 로 균등수렴한다. 꺾은선이 만족하는 적분 항등식에서 극한을 취하면 $x$ 가 적분방정식을 만족한다.
 
 세 번째 단계가 균등수렴을 요구하므로 점별수렴만으로는 증명이 끝나지 않는다.
 

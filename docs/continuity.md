@@ -10,7 +10,7 @@
 
 ## 오차의 전파
 
-$f(a)$ 를 오차 $\varepsilon$ 안에서 알려면 입력을 $\delta$ 안에서만 알면 된다는 것이 연속성이다. $\varepsilon$ 를 먼저 받고 $\delta$ 를 고르며, $\delta$ 는 $\varepsilon$ 뿐 아니라 기준점 $a$ 에 따라 달라도 된다. 모든 $a$ 에 같은 $\delta$ 를 쓸 수 있으면 균등연속이다.
+$f(a)$ 를 오차 $\varepsilon$ 안에서 알려면 입력을 $\delta$ 안에서만 알면 된다는 것이 연속성이다. $\varepsilon$ 를 먼저 받고 $\delta$ 를 고르며, $\delta$ 는 $\varepsilon$ 뿐 아니라 기준점 $a$ 에 따라 달라도 된다. 모든 $a$ 에 같은 $\delta$ 를 쓸 수 있으면 [균등연속](uniform-continuity.md)이다.
 
 ## 병리적 예
 

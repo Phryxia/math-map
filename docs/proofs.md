@@ -47,7 +47,7 @@ $$
 \forall n\thinspace\exists m\thickspace(m\gt n)\quad\text{참},\qquad \exists m\thinspace\forall n\thickspace(m\gt n)\quad\text{거짓}
 $$
 
-앞쪽은 $n$ 마다 다른 $m$ 을 골라도 되고 뒤쪽은 공통의 $m$ 하나를 요구한다. 해석학의 $\varepsilon\text{-}\delta$ 정의, 균등연속과 연속의 차이, [균등수렴](uniform-convergence.md)과 점별수렴의 차이가 모두 이 순서 하나에 달려 있다.
+앞쪽은 $n$ 마다 다른 $m$ 을 골라도 되고 뒤쪽은 공통의 $m$ 하나를 요구한다. 해석학의 $\varepsilon\text{-}\delta$ 정의, [균등연속](uniform-continuity.md)과 연속의 차이, [균등수렴](uniform-convergence.md)과 점별수렴의 차이가 모두 이 순서 하나에 달려 있다.
 
 # 성질
 

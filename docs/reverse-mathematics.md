@@ -63,7 +63,7 @@ $\mathrm{RCA}\_0$ 에서 중간값 정리, 가산체의 대수적 폐포의 존�
 - 약한 König 보조정리
 - 닫힌 유계 구간의 Heine–Borel [콤팩트성](compactness.md)
 - $\lbrack 0,1\rbrack$ 위 연속함수가 최댓값을 갖는다
-- $\lbrack 0,1\rbrack$ 위 연속함수가 균등연속이다
+- $\lbrack 0,1\rbrack$ 위 연속함수가 [균등연속](uniform-continuity.md)이다
 - [1차 논리](first-order-logic.md)의 Gödel 완전성 정리
 - 가산 가환환이 [소 아이디얼](prime-ideals.md)을 갖는다
 
