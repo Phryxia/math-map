@@ -47,7 +47,7 @@ $$
 
 이 행렬은 [Galois 표현](galois-representations.md) $\rho_{E,\ell}:\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\mathbb F_\ell)$ 의 Frobenius 에서의 값이다. 이론의 등식 $\mathrm{tr}\thinspace\rho(\mathrm{Frob}\_p)=a_p$ 를 알고리즘에서는 행렬을 만들어 대각합으로 계산한다.
 
-## 나눗셈 다항식
+## 등분점을 구하지 않는 계산
 
 $\ell$ 등분점이 정의되는 확대체의 차수는 클 수 있다. Schoof 의 방법은 점을 구하지 않는 것이다.
 

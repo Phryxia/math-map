@@ -44,7 +44,7 @@ $$
 
 밀도가 $\sin^2$ 이므로 $a_p$ 가 Hasse 한계에 닿는 $\theta=0$ 이나 $\theta=\pi$ 근처가 드물고 $a_p\approx0$ 근처가 가장 흔하다.
 
-## Sato–Tate 군
+## 복소곱셈과 군의 크기
 
 곡선마다 **Sato–Tate 군** $\mathrm{ST}(E)$ 라는 콤팩트군이 붙고, 정규화된 Frobenius 가 그 군의 켤레류에서 Haar 측도로 등분포한다.
 

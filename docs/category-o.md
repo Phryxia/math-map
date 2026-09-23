@@ -34,7 +34,7 @@ Poincaré–Birkhoff–Witt 에 의해 $M(\lambda)$ 는 음근 벡터들의 단�
 
 $\mathrm{ch}\thinspace M(\lambda)$ 는 Weyl 분모로 나눈 지수 하나로 닫힌 꼴이다. $\mathrm{ch}\thinspace L(\lambda)$ 를 Verma 지표의 정수결합으로 쓰면 단순가군의 지표를 안 것이 되고, 중복도 $[M(\mu):L(\lambda)]$ 가 그 결합계수다.
 
-## 블록 분해
+## 중심지표와 무게 궤도
 
 중심 $Z(\mathfrak g)$ 가 각 대상에 작용하므로 범주가 중심지표에 따라 갈라진다. Harish-Chandra 동형이 그 지표를 무게의 점작용 궤도로 번역한다.
 

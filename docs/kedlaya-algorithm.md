@@ -64,7 +64,7 @@ graph TD
   LIFT --> Z["zeta 함수 확정"]
 ```
 
-## 약수렴 대수
+## 수렴반경의 제한
 
 $\mathbb F_q$ 위 곡선의 $p$ 진 코호몰로지를 만들려면 곡선을 $\mathbb Z_q$ 로 들어올려야 한다. 좌표환 $\mathbb F_q[x,y]/(y^2-f)$ 를 그대로 들어올린 $\mathbb Z_q$ 대수의 [de Rham 코호몰로지](de-rham-cohomology.md)는 너무 크고, $p$ 진 완비화를 취하면 수렴반경이 정확히 $1$ 인 급수까지 들어와 코호몰로지가 무한차원이 된다.
 

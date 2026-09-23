@@ -140,7 +140,7 @@ $$
 
 $-\psi'' + x^{2M}\psi = E\psi$ 류에서 Voros 기호가 만족하는 함수방정식은 가해 격자모형의 Bethe 방정식과 같은 꼴이고, 이 대응이 **ODE–IM 대응**(ordinary differential equation–integrable model)이다.
 
-## 좌표로서의 Voros 기호
+## 클러스터 대수와 스펙트럼 네트워크
 
 DDP 공식의 형태는 클러스터 변수의 뒤집기 규칙과 같다. 이 대응에서 Stokes 그래프는 곡면 위의 삼각분할, Voros 기호는 그 삼각분할에 붙은 좌표, 안장 연결의 통과는 뒤집기가 된다.
 
