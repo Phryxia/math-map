@@ -99,7 +99,7 @@ flowchart TD
   HC --> TSP["TSP (판정형)"]
 ```
 
-## SAT에서 3SAT으로
+## 3SAT 환원
 
 임의의 CNF 절을 길이 3의 절들로 바꾼다. 절 $(l_1 \vee l_2 \vee \cdots \vee l_k)$ 에 대해 $k \ge 4$ 이면 새 변수 $y_1, \ldots, y_{k-3}$ 를 도입해
 

@@ -132,7 +132,7 @@ Klein 의 관점에서 기하학은 어떤 변환군 아래 불변인 성질의 
 
 ## 더 알아보기
 
-### 군론 안에서
+### 군론
 
 - [Sylow 정리](sylow-theorems.md)
 - [군의 표현](group-representations.md)

@@ -319,7 +319,7 @@ $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_n(\bar{\mathbb Q}\_p)$ 가 기약이고
 
 이면 $\rho$ 는 어떤 대수다양체의 에탈 코호몰로지에서 Tate 꼬임을 허용해 온다는 추측이다. 조건 2 가 기하에서 오는 표현을 국소적 조건으로 특징짓는다. 2차원 홀수 경우는 Kisin, Emerton 등이 대체로 해결했다.
 
-## 완전체에서 프리즘으로
+## perfectoid 공간과 프리즘 코호몰로지
 
 Fontaine–Wintenberger 의 노름체 대응은 $p$ 진 탑을 충분히 올라가면 표수 $p$ 가 보인다는 현상이다. Scholze 는 이를 공간 차원으로 올려 perfectoid 공간을 정의하고 틸팅 $X\mapsto X^\flat$ 이 에탈 위치를 보존한다는 정리로 이 이론을 기하화했다. $A_{\mathrm{inf}}$ 와 $\theta$ 가 프리즘 $(A_{\mathrm{inf}},(\xi))$ 의 원형 예가 되고, Bhatt–Scholze 의 프리즘 코호몰로지는 결정 코호몰로지, de Rham 코호몰로지, 에탈 코호몰로지를 하나의 대상에서 특수화로 얻는다. 위의 비교동형들이 그 이론에서는 한 코호몰로지의 여러 올이다.
 

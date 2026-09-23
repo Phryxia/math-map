@@ -69,7 +69,7 @@ graph TD
 - [오류정정부호](error-correcting-codes.md): 유한체 위의 선형 부분공간
 - [질량 공식](mass-formula.md) → [Niemeier 격자](niemeier-lattices.md)
 
-## 표현론으로
+## 표현론
 
 - [군의 표현](group-representations.md): 군을 행렬로
 - [Lie 대수](lie-algebras.md) → [근계](root-systems.md), [Lie 군](lie-groups.md)
