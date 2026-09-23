@@ -134,6 +134,7 @@ $\mathrm{Ext}\_R^1(C, A)$ 의 원소는 $0 \to A \to B \to C \to 0$ 꼴 확대�
 
 ## 더 알아보기
 
+- [군 코호몰로지](group-cohomology.md)
 - [층 코호몰로지](sheaf-cohomology.md)
 
 #algebra #ring_theory #category_theory #algebraic_topology

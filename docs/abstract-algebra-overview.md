@@ -39,7 +39,7 @@ graph TD
 ## 군론
 
 - [군](groups.md) → [군 작용](group-actions.md): 대칭의 공리화와 궤도–안정자
-- [Sylow 정리](sylow-theorems.md) → [유한 단순군 분류](finite-simple-groups.md) → [군 확대와 Jordan–Hölder 정리](group-extensions.md) → [Schur 곱셈자](schur-multipliers.md)
+- [Sylow 정리](sylow-theorems.md) → [유한 단순군 분류](finite-simple-groups.md) → [군 확대와 Jordan–Hölder 정리](group-extensions.md) → [군 코호몰로지](group-cohomology.md), [Schur 곱셈자](schur-multipliers.md)
 - [군의 표현](group-representations.md): 군을 행렬로 보는 기본 도구
 - [군의 표시](group-presentations.md): 생성원과 관계자로 군을 적는 방법, 낱말 문제
 - [Coxeter 군](coxeter-groups.md): 반사로 생성된 군의 표시, 길이 함수와 Bruhat 순서
