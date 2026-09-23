@@ -98,6 +98,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [영역 분할법](domain-decomposition.md)
 
 #linear_algebra #algorithms #computation

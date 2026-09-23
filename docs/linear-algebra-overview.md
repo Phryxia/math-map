@@ -37,6 +37,7 @@ graph TD
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복
 - [전처리](preconditioning.md): 스펙트럼을 모아 반복 횟수를 줄이는 행렬의 선택
 - [다중격자](multigrid.md): 주파수대마다 격자 단계를 맡기는 V 사이클, 격자 간격과 무관한 수렴률
+- [영역 분할법](domain-decomposition.md): 부분영역마다 작은 계를 풀어 더하는 가법 Schwarz, 성긴 공간이 주는 조건수 상한
 - [쌍대 공간](dual-space.md): 벡터를 재는 범함수와 전치
 - [텐서곱](tensor-products.md): 다중선형을 선형으로
 - [외대수](exterior-algebra.md): 반대칭 곱과 좌표 없는 행렬식
