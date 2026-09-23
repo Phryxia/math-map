@@ -281,9 +281,9 @@ $$
 
 Galois 코호몰로지는 Herr 복체 $D\xrightarrow{(\varphi-1,\gamma-1)}D\oplus D\to D$ 로 계산되어, 프로유한군의 코호몰로지가 두 작용소의 유한 복체가 된다.
 
-## 예: [타원곡선](elliptic-curves.md)의 Tate 가군
+## 예: 타원곡선의 Tate 가군
 
-$E/K$ 가 타원곡선이고 $V=V_p(E)^\ast\cong H^1_{\mathrm{et}}$ 라 하자. Hodge–Tate 무게는 $\lbrace 0,1\rbrace$ 이고 $t_H=1$ 이다.
+$E/K$ 가 [타원곡선](elliptic-curves.md)이고 $V=V_p(E)^\ast\cong H^1_{\mathrm{et}}$ 라 하자. Hodge–Tate 무게는 $\lbrace 0,1\rbrace$ 이고 $t_H=1$ 이다.
 
 | 환원 | $V$ | $D_{\mathrm{cris}}$ 의 Frobenius 부치 |
 |---|---|---|
