@@ -159,5 +159,6 @@ $$
 ## 더 알아보기
 
 - [신뢰구간](confidence-intervals.md)
+- [순차확률비 검정](sequential-probability-ratio-test.md)
 
 #statistics #probability

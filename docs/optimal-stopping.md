@@ -78,6 +78,6 @@ $N=\infty$ 이면 역방향 귀납의 출발점이 없다. $\sup_n\lvert Y_n\rve
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [순차확률비 검정](sequential-probability-ratio-test.md)
 
 #probability #optimization #statistics
