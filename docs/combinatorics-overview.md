@@ -36,6 +36,7 @@ graph TD
 ## 극단 조합론과 확률적 방법
 
 - [Ramsey 이론](ramsey-theory.md): 충분히 크면 질서가 강제된다
+- [Turán 정리](turan-theorem.md): $K_{r+1}$ 을 금지한 그래프의 최대 간선 수와 그 값을 주는 Turán 그래프
 - [Dilworth 정리](dilworth-theorem.md): 사슬 덮개와 반사슬의 최소최대 정리, Erdős–Szekeres 정리
 - [Sperner 정리](sperner-theorem.md): 부분집합 격자의 최대 반사슬과 LYM 부등식
 - [Erdős–Ko–Rado 정리](erdos-ko-rado.md): 교차족의 최대 크기, Katona 의 순환 배열 세기
