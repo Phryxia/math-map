@@ -66,6 +66,6 @@ $H$ 가 이분그래프이면 $r=1$ 이라 주항이 사라지고 이 식이 아
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Zarankiewicz 문제](zarankiewicz-problem.md)
 
 #combinatorics #graph_theory

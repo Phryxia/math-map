@@ -74,7 +74,7 @@ $t\gt(s-1)!$ 이면 [유한체](finite-fields.md) 위의 노름그래프가 간�
 
 ## 선수지식
 
-- [그래프](graphs.md)
+- [Turán 정리](turan-theorem.md)
 - [유한 사영평면](finite-projective-planes.md)
 
 ## 더 알아보기
