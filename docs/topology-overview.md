@@ -47,6 +47,7 @@ graph TD
 - [올화](fibrations.md): 호모토피를 올릴 수 있는 사상, 올과 전체공간과 밑공간의 호모토피군을 잇는 긴 완전열
 - [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md): 호모토피군이 한 차수에만 있는 공간, 코호몰로지의 표현가능성과 Postnikov 탑
 - [장애 이론](obstruction-theory.md): 사상을 세포 하나씩 늘릴 때 나오는 코호몰로지류가 확장과 단면의 존재를 판정한다
+- [스펙트럼 수열](spectral-sequences.md): 여과에서 나오는 페이지의 열, 올화에서 올과 밑공간의 코호몰로지로 전체공간의 것을 계산한다
 - [Postnikov 탑](postnikov-tower.md): 호모토피군을 차수별로 쌓은 탑, k-불변량이 호모토피군 목록에 없는 정보를 담는다
 - [층 코호몰로지](sheaf-cohomology.md): 전역 단면 함자의 유도 함자, 국소에서 전역으로 가는 장애
 - [Picard 군](picard-group.md): 가역층의 동형류가 이루는 군, 지수열이 가르는 위상적 조각과 정칙 조각

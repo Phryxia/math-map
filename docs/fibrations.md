@@ -80,7 +80,7 @@ $$
 - **[Postnikov 탑](postnikov-tower.md).** 탑의 각 단계 $X_n\to X_{n-1}$ 이 올이 [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)인 올화이고, 그 올화를 분류하는 것이 k-불변량이다.
 - **[장애 이론](obstruction-theory.md).** 올다발의 단면을 세포 하나씩 늘릴 때 나오는 장애가 올의 호모토피군에 값을 갖는 코호몰로지류이며, 올림 성질이 그 늘리기를 가능하게 한다.
 - **[벡터다발](vector-bundles.md)의 분류.** 밑공간이 $S^k$ 인 올다발은 구조군의 $\pi_{k-1}$ 원소로 분류되고, 이 대응이 긴 완전열에서 나온다.
-- **스펙트럼 수열.** 올화 하나에서 올과 밑공간의 코호몰로지가 전체공간의 코호몰로지로 모이는 절차가 Serre 스펙트럼 수열이다.
+- **[스펙트럼 수열](spectral-sequences.md).** 올화 하나에서 올과 밑공간의 코호몰로지가 전체공간의 코호몰로지로 모이는 절차가 Serre 스펙트럼 수열이다.
 
 # 연관 문서
 
@@ -91,6 +91,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [스펙트럼 수열](spectral-sequences.md)
 
 #algebraic_topology #topology
