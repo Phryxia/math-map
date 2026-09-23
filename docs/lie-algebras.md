@@ -8,10 +8,10 @@ $$
 [X,Y]=XY-YX
 $$
 
-이 **괄호**를 갖춘 벡터공간이 **Lie 대수**다. 결합법칙 대신 Jacobi 항등식을 만족하는 비결합 대수이며, Lie 군의 문제를 [선형사상](linear-maps.md)의 문제로 옮긴다. 군의 부분군은 부분대수에, 정규부분군은 아이디얼에, 준동형은 준동형에 대응하고, 단연결 Lie 군에 대해서는 이 대응이 [범주](category.md) 동치다.
+이 **괄호**를 갖춘 벡터공간이 **Lie 대수**다. 결합법칙 대신 Jacobi 항등식을 만족하는 비결합 대수이며, Lie 군의 문제를 [선형사상](linear-maps.md)의 문제로 옮긴다. 군의 부분군은 부분대수에, 정규부분군은 아이디얼에, 준동형은 준동형에 대응하고, 단순연결 Lie 군에 대해서는 이 대응이 [범주](category.md) 동치다.
 
 $$
-\lbrace\text{단연결 Lie 군}\rbrace\ \simeq\ \lbrace\text{유한차원 실 Lie 대수}\rbrace
+\lbrace\text{단순연결 Lie 군}\rbrace\ \simeq\ \lbrace\text{유한차원 실 Lie 대수}\rbrace
 $$
 
 복소수 위의 단순 Lie 대수는 완전히 분류되어 있고, 목록은 네 개의 무한 계열 $A_n,B_n,C_n,D_n$ 과 다섯 개의 예외 $E_6,E_7,E_8,F_4,G_2$ 다. 이 목록은 [군의 표현](group-representations.md)에서 유한군의 지표표가 하는 역할을 연속군 쪽에서 맡는다.

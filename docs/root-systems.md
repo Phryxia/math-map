@@ -99,7 +99,7 @@ $m_{ii}=1$ 이고 $m_{ij}$ 는 $\alpha_i,\alpha_j$ 사이의 각도가 정한다
 
 ## 근격자와 무게격자
 
-단순근이 생성하는 [격자](lattices.md)를 **근격자** $Q$ 라 하고, 모든 근과의 Cartan 정수가 정수인 벡터들의 격자를 **무게격자** $P$ 라 한다. $Q\subset P$ 이고 몫 $P/Q$ 는 유한군으로, 대응하는 단연결 [Lie 군](lie-groups.md)의 중심과 같다.
+단순근이 생성하는 [격자](lattices.md)를 **근격자** $Q$ 라 하고, 모든 근과의 Cartan 정수가 정수인 벡터들의 격자를 **무게격자** $P$ 라 한다. $Q\subset P$ 이고 몫 $P/Q$ 는 유한군으로, 대응하는 단순연결 [Lie 군](lie-groups.md)의 중심과 같다.
 
 $$
 P/Q\cong Z(\tilde G)

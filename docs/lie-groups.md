@@ -13,10 +13,10 @@ $\exp$ 는 $0$ 의 근방에서 미분동형이므로 국소적으로는 완전�
 남는 차이는 위상적이다. 같은 Lie 대수를 갖는 연결 Lie 군들은 하나의 보편덮개를 공유하고 서로는 이산 중심부분군에 의한 몫이므로, [덮개공간](covering-spaces.md) 이론이 대응 정리의 요지가 된다.
 
 $$
-\lbrace\text{단연결 Lie 군}\rbrace\ \xrightarrow{\ \sim\ }\ \lbrace\text{유한차원 실 Lie 대수}\rbrace
+\lbrace\text{단순연결 Lie 군}\rbrace\ \xrightarrow{\ \sim\ }\ \lbrace\text{유한차원 실 Lie 대수}\rbrace
 $$
 
-단연결을 요구하면 이 대응이 [범주](category.md) 동치다.
+단순연결을 요구하면 이 대응이 [범주](category.md) 동치다.
 
 # 직관
 
@@ -40,7 +40,7 @@ $$
 \mathfrak{su}(2)\cong\mathfrak{so}(3)
 $$
 
-군으로는 다르다. $\mathrm{SU}(2)$ 는 $S^3$ 이라 단연결이고 $\mathrm{SO}(3)$ 은 $\mathbb{RP}^3$ 이라 $\pi_1=\mathbb Z/2$ 다. 둘을 잇는 것이 이중덮개다.
+군으로는 다르다. $\mathrm{SU}(2)$ 는 $S^3$ 이라 단순연결이고 $\mathrm{SO}(3)$ 은 $\mathbb{RP}^3$ 이라 $\pi_1=\mathbb Z/2$ 다. 둘을 잇는 것이 이중덮개다.
 
 $$
 1\to\lbrace\pm I\rbrace\to\mathrm{SU}(2)\to\mathrm{SO}(3)\to1
@@ -103,16 +103,16 @@ $$
 ## 대응 정리
 
 - **함자성.** Lie 군 준동형 $\varphi:G\to H$ 는 Lie 대수 준동형 $d\varphi:\mathfrak g\to\mathfrak h$ 를 유도하고 $\varphi(\exp X)=\exp(d\varphi\thinspace X)$ 가 성립한다.
-- **단연결에서의 역방향.** $G$ 가 단연결이면 임의의 Lie 대수 준동형 $\psi:\mathfrak g\to\mathfrak h$ 에 대해 $d\varphi=\psi$ 인 군 준동형 $\varphi:G\to H$ 가 유일하게 존재한다.
+- **단순연결에서의 역방향.** $G$ 가 단순연결이면 임의의 Lie 대수 준동형 $\psi:\mathfrak g\to\mathfrak h$ 에 대해 $d\varphi=\psi$ 인 군 준동형 $\varphi:G\to H$ 가 유일하게 존재한다.
 - **부분대수 대응.** 부분대수 $\mathfrak h\subset\mathfrak g$ 마다 $\mathrm{Lie}(H)=\mathfrak h$ 인 연결 부분군 $H\subset G$ 가 유일하게 대응한다. $H$ 가 닫힌 부분군일 필요는 없고, 비합리 기울기의 원환면 감기가 반례다.
 - **Lie 세 번째 정리.** 모든 유한차원 실 Lie 대수는 어떤 Lie 군의 Lie 대수다. Ado 정리로 행렬대수에 넣은 뒤 부분대수 대응을 쓴다.
 - **Cartan 닫힌 부분군 정리.** 위상적으로 닫힌 부분군은 자동으로 매끄러운 부분다양체, 곧 Lie 부분군이다.
 
-둘째 항목에서 단연결 Lie 군의 범주와 유한차원 실 Lie 대수의 범주가 $\mathrm{Lie}$ 함자로 동치임이 따른다.
+둘째 항목에서 단순연결 Lie 군의 범주와 유한차원 실 Lie 대수의 범주가 $\mathrm{Lie}$ 함자로 동치임이 따른다.
 
 ```mermaid
 graph TD
-  LA["유한차원 실 Lie 대수 g"] -->|"Lie 세 번째 정리"| SC["단연결 Lie 군 G~"]
+  LA["유한차원 실 Lie 대수 g"] -->|"Lie 세 번째 정리"| SC["단순연결 Lie 군 G~"]
   SC -->|"중심의 이산부분군 Γ 로 몫"| CG["연결 Lie 군 G~/Γ"]
   CG -->|"Lie 함자"| LA
   SC -->|"보편덮개"| COV["덮개공간 이론"]

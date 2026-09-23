@@ -116,7 +116,7 @@ $$
 
 ## 기본군
 
-[기본군](fundamental-group.md)의 표시는 일반형 단어에서 읽힌다. 다각형이 단연결이고 변 동일시가 1 차원 복합체에 2-cell 하나를 붙인 꼴이므로, van Kampen 정리에 의해 생성원이 변이고 관계식이 둘레 단어 하나다.
+[기본군](fundamental-group.md)의 표시는 일반형 단어에서 읽힌다. 다각형이 단순연결이고 변 동일시가 1 차원 복합체에 2-cell 하나를 붙인 꼴이므로, van Kampen 정리에 의해 생성원이 변이고 관계식이 둘레 단어 하나다.
 
 $$
 \pi_1(gT) = \bigl\langle a_1, b_1, \dots, a_g, b_g \ \big| \ \textstyle\prod_{i=1}^{g} [a_i, b_i] = 1 \bigr\rangle
