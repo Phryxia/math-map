@@ -4,7 +4,7 @@
 
 조건부 기댓값 $E[X\mid\mathcal G]$ 는 부분 $\sigma$ 대수 $\mathcal G$ 에 담긴 정보만으로 $X$ 를 예측한 확률변수다. 정의는 두 조건이다. $\mathcal G$ 가측이고, $\mathcal G$ 의 모든 사건 위에서 $X$ 와 적분값이 같다. 존재와 거의 확실한 유일성은 [Radon–Nikodym 정리](radon-nikodym.md)에서 나온다.
 
-사건 $B$ 에 대한 초등 조건부 기댓값 $E[X\mid B]=E[X\mathbf 1_B]/P(B)$ 는 $P(B)=0$ 이면 정의되지 않는다. $\sigma$ 대수로 조건을 거는 정의는 이 경우를 포함한다. [마팅게일](martingales.md)과 일반 상태공간의 [Markov 연쇄](markov-chains.md), [상측도](pushforward-measure.md) 위의 조건부 분포를 이 정의로 세운다.
+사건 $B$ 에 대한 초등 조건부 기댓값 $E[X\mid B]=E[X\mathbf 1_B]/P(B)$ 는 $P(B)=0$ 이면 정의되지 않는다. $\sigma$ 대수로 조건을 거는 정의는 이 경우를 포함한다. [Martingale](martingales.md)과 일반 상태공간의 [Markov 연쇄](markov-chains.md), [상측도](pushforward-measure.md) 위의 조건부 분포를 이 정의로 세운다.
 
 # 직관
 

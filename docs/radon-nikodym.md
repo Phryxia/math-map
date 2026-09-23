@@ -4,7 +4,7 @@
 
 Radon–Nikodym 정리는 [측도](measure.md) $\nu$ 를 다른 측도 $\mu$ 로 적분해 쓸 수 있는 조건을 준다. $\nu(B)=\int_B f\thinspace d\mu$ 가 모든 가측집합 $B$ 에서 성립하는 함수 $f$ 가 $\nu$ 의 $\mu$ 에 대한 밀도다. 확률밀도함수는 분포를 Lebesgue 측도로 적분해 쓴 밀도다.
 
-조건은 하나다. $\mu(B)=0$ 이면 $\nu(B)=0$ 이다. 확률밀도함수, [조건부 기댓값](conditional-expectation.md), [우도비](change-of-measure.md), 마팅게일의 밀도과정이 모두 이 정리로 얻는 밀도다.
+조건은 하나다. $\mu(B)=0$ 이면 $\nu(B)=0$ 이다. 확률밀도함수, [조건부 기댓값](conditional-expectation.md), [우도비](change-of-measure.md), martingale 의 밀도과정이 모두 이 정리로 얻는 밀도다.
 
 # 직관
 

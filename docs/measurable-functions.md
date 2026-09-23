@@ -104,7 +104,7 @@ Lebesgue 적분은 단순함수 근사로 정의하므로 피적분함수가 가
 
 ## 정보로서의 $\sigma$ -대수
 
-$\sigma$ -대수가 클수록 답할 수 있는 사건이 많다. [조건부 기댓값](conditional-expectation.md)은 큰 $\sigma$ -대수에서 가측인 함수를 작은 $\sigma$ -대수에서 가측인 함수로 가장 가깝게 근사한 것이다. [마팅게일](martingales.md)은 시간에 따라 커지는 $\sigma$ -대수의 열로 정의한다.[^1]
+$\sigma$ -대수가 클수록 답할 수 있는 사건이 많다. [조건부 기댓값](conditional-expectation.md)은 큰 $\sigma$ -대수에서 가측인 함수를 작은 $\sigma$ -대수에서 가측인 함수로 가장 가깝게 근사한 것이다. [Martingale](martingales.md)은 시간에 따라 커지는 $\sigma$ -대수의 열로 정의한다.[^1]
 
 [^1]: Terence Tao, *245A Notes 3: Integration on abstract measure spaces and the convergence theorems*, §4 정의 8, 연습문제 28, 참고 8. 가측함수의 정의, 생성 판정법, 연산과 극한에 대한 닫힘성. https://terrytao.wordpress.com/2010/09/25/245a-notes-3-integration-on-abstract-measure-spaces-and-the-convergence-theorems/
 
