@@ -115,6 +115,7 @@ $$\text{minimize}\thinspace\sum_{s}V(s)\quad\text{subject to}\quad V(s)\ge r(s,a
 
 - [다중 슬롯머신](multi-armed-bandits.md)
 - [Q 학습](q-learning.md)
+- [정책 경사](policy-gradient.md)
 - [최적 정지](optimal-stopping.md)
 
 #probability #optimization #algorithms #machine_learning

@@ -70,5 +70,6 @@ $f(\theta)=\mathcal T\theta-\theta$ 이고 $\mathcal T$ 가 어떤 노름에서 
 ## 더 알아보기
 
 - [Q 학습](q-learning.md)
+- [정책 경사](policy-gradient.md)
 
 #probability #optimization #statistics #machine_learning
