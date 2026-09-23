@@ -113,6 +113,7 @@ $$\text{minimize}\thinspace\sum_{s}V(s)\quad\text{subject to}\quad V(s)\ge r(s,a
 
 ## 더 알아보기
 
+- [다중 슬롯머신](multi-armed-bandits.md)
 - [Q 학습](q-learning.md)
 - [최적 정지](optimal-stopping.md)
 

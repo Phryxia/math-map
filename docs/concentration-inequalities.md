@@ -183,5 +183,6 @@ $$
 ## 더 알아보기
 
 - [대편차 원리](large-deviations.md)
+- [다중 슬롯머신](multi-armed-bandits.md)
 
 #probability #algorithms #machine_learning
