@@ -101,6 +101,7 @@ $$
 
 ## 더 알아보기
 
+- [대수다양체](algebraic-varieties.md)
 - [유일분해정역](unique-factorization-domains.md)
 - [Noether 환](noetherian-rings.md)
 - [체의 확대](field-extensions.md)
