@@ -112,7 +112,7 @@ $$
 
 ## 모듈러 텐서범주와 Verlinde 공식
 
-기약가군들이 융합곱으로 텐서범주를 이루고, 지표의 $S$ 행렬이 그 범주의 $S$ 행렬과 일치한다. Verlinde 공식은 융합 구조상수를 $S$ 행렬로 준다.
+기약가군들이 융합곱으로 [모듈러 텐서범주](modular-tensor-categories.md)를 이루고, 지표의 $S$ 행렬이 그 범주의 $S$ 행렬과 일치한다. Verlinde 공식은 융합 구조상수를 $S$ 행렬로 준다.
 
 $$
 N_{ij}^k=\sum_m\frac{S_{im}S_{jm}\overline{S_{km}}}{S_{0m}}
