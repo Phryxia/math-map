@@ -18,7 +18,7 @@ $$
 \mathrm{O}^\kappa_\gamma(f)\thickspace\stackrel?=\thickspace\Delta(\gamma_H,\gamma)\thickspace\mathrm{SO}\_{\gamma_H}(f^H)
 $$
 
-가장 기본이 되는 경우, 곧 $f$ 가 극대 콤팩트 부분군의 특성함수이고 $f^H$ 가 [Satake 동형](satake-isomorphism.md)으로 정의된 기본 사상 $b$ 의 상일 때 이 등식이 성립한다는 것이 **기본 보조정리**다. Satake 동형이 여기서 필수인 이유는 $f\mapsto f^H$ 라는 대응이 달리 정의될 방법이 없기 때문이다. 쌍대군 준동형 $\widehat H\to\widehat G$ 를 표현환 사이의 사상으로 읽고, 양쪽에서 Satake 동형으로 Hecke 대수로 끌어내린다.
+가장 기본이 되는 경우, 곧 $f$ 가 극대 콤팩트 부분군의 특성함수이고 $f^H$ 가 [Satake 동형](satake-isomorphism.md)으로 정의된 기본 사상 $b$ 의 상일 때 이 등식이 성립한다는 것이 **기본 보조정리**다. $f\mapsto f^H$ 라는 대응은 Satake 동형으로만 정의된다. 쌍대군 준동형 $\widehat H\to\widehat G$ 를 표현환 사이의 사상으로 읽고, 양쪽에서 Satake 동형으로 Hecke 대수로 끌어내린다.
 
 $$
 \mathcal H(G,K)\thickspace\xrightarrow{\ \mathcal S\ }\thickspace R(\widehat G)\thickspace\longrightarrow\thickspace R(\widehat H)\thickspace\xrightarrow{\ \mathcal S^{-1}\ }\thickspace\mathcal H(H,K_H)

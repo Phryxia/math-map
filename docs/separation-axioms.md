@@ -75,7 +75,7 @@ Hausdorff 공간으로 제한한 판본은 더 약한 초필터 보조정리로 
 - **연속함수의 공급.** Urysohn 보조정리가 정규 공간 위에 충분히 많은 연속함수를 준다. 그 함수들이 만드는 대수에 [Stone–Weierstrass 정리](stone-weierstrass.md)를 적용해 근사를 얻는다.
 - **콤팩트화.** 완전정칙 공간을 $\lbrack0,1\rbrack$ 값 연속함수들의 곱에 심고 닫힘을 취하면 Stone–Čech 콤팩트화가 된다. Tychonoff 정리가 그 곱의 콤팩트성을 보증한다.
 - **함수해석.** 단위공이 약 $\ast$ 위상에서 콤팩트라는 Banach–Alaoglu 정리의 증명이 Tychonoff 정리를 쓴다([Banach 공간](banach-spaces.md)).
-- **다양체.** [다양체](manifolds.md)의 정의에 Hausdorff 조건을 넣는 이유는 그것이 없으면 수렴하는 점열의 극한이 유일하지 않고 매끄러운 분할이 만들어지지 않기 때문이다.
+- **다양체.** Hausdorff 조건이 없으면 수렴하는 점열의 극한이 유일하지 않고 매끄러운 분할이 만들어지지 않는다. 그래서 [다양체](manifolds.md)의 정의에 이 조건을 넣는다.
 
 # 연관 문서
 

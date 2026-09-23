@@ -42,7 +42,7 @@ $$\vert R^D/G\vert=Z_G(m,m,\dots,m)$$
 
 $$\sum\_{\text{궤도}}w(\text{궤도})=Z_G\Big(\sum_r w_r,\thinspace \sum_r w_r^2,\thinspace\dots,\thinspace \sum_r w_r^n\Big)$$
 
-$k$ 번째 변수에 $\sum_r w_r^k$ 를 넣는 이유는 길이 $k$ 인 순환이 한 색으로 칠해지면 그 색이 $k$ 번 쓰이기 때문이다. 모든 $w_r$ 를 1 로 두면 앞의 궤도 개수 공식이 된다.
+길이 $k$ 인 순환이 한 색으로 칠해지면 그 색이 $k$ 번 쓰이므로 $k$ 번째 변수에 $\sum_r w_r^k$ 를 넣는다. 모든 $w_r$ 를 1 로 두면 앞의 궤도 개수 공식이 된다.
 
 ## 순환군과 목걸이
 

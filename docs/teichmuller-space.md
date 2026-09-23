@@ -102,7 +102,7 @@ $\mathcal T_g$ 에는 성격이 다른 계량이 여럿 있다.
 - **Teichmüller 계량.** $d(X,Y)=\tfrac12\log K$ 로 두고, $K$ 는 표시를 지키는 준등각 사상의 최소 팽창률이다. [완비](completeness.md)이고 Finsler 이며, 측지선이 이차미분으로 기술된다.
 - **Weil–Petersson 계량.** 여이차미분의 $L^2$ 내적에서 오는 Kähler 계량이다. 완비가 아니고 단면곡률이 음이며, 부피가 유한하다. Mirzakhani 의 부피 재귀가 이 계량에서 나온다.
 
-완비성이 갈리는 이유는 곡선 하나의 길이를 $0$ 으로 보내는 경로가 Weil–Petersson 거리에서는 유한하기 때문이다. 그 극한은 마디가 생긴 곡면이고, 여기에 극한점을 붙인 것이 Deligne–Mumford 콤팩트화 $\overline{\mathcal M}\_g$ 다.
+곡선 하나의 길이를 $0$ 으로 보내는 경로가 Weil–Petersson 거리에서는 유한하므로 완비성이 갈린다. 그 극한은 마디가 생긴 곡면이고, 여기에 극한점을 붙인 것이 Deligne–Mumford 콤팩트화 $\overline{\mathcal M}\_g$ 다.
 
 ## 작용과 특이점
 
