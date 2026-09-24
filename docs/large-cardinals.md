@@ -70,7 +70,7 @@ $\kappa$ 가 특이하면 $\kappa$ 를 $\mathrm{cf}(\kappa)$ 개의 작은 조�
 
 ## 결정성 공리
 
-$\omega$ 위의 무한 게임에서 두 참가자 중 한쪽이 필승 전략을 갖는다는 명제가 결정성이다. Woodin 기수가 무한히 많으면 $L(\mathbb R)$ 에서 모든 게임이 결정된다[^2]. 실수의 부분집합이 전부 Lebesgue [가측](measurable-functions.md)이라는 결론이 여기서 나온다.
+$\omega$ 위의 무한 게임에서 두 참가자 중 한쪽이 필승 전략을 갖는다는 명제가 결정성이다. Woodin 기수가 무한히 많으면 $L(\mathbb R)$ 에서 모든 게임이 결정된다[^2]. 결정성에서 실수의 부분집합이 전부 Lebesgue [가측](measurable-functions.md)이라는 결론이 따라 나온다.
 
 ## Grothendieck 우주
 

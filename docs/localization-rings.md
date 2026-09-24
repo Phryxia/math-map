@@ -82,7 +82,7 @@ $$
 S^{-1}M \thickspace\cong\thickspace S^{-1}R \otimes_R M
 $$
 
-이 성립한다([텐서곱](tensor-products.md)). 즉 국소화는 $S^{-1}R$ 과의 텐서곱 함자이며, 아래에서 보듯 완전(exact)하다.
+이 성립한다([텐서곱](tensor-products.md)). 국소화는 $S^{-1}R$ 과의 텐서곱 함자이고 완전(exact)하다.
 
 # 성질
 
