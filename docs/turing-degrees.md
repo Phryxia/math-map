@@ -86,5 +86,6 @@ $A'$ 가 $\mathbf 0'$ 를 넘지 않는 집합을 **저차**라 한다. 저차 �
 ## 더 알아보기
 
 - [산술적 계층](arithmetical-hierarchy.md)
+- [$\Pi^0_1$ 부류](pi01-classes.md)
 
 #computation #logic #set_theory
