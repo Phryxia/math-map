@@ -51,7 +51,7 @@ $$
 
 $H^n(-;G)$ 에서 $H^m(-;G')$ 로 가는 [자연변환](natural-transformations.md) 전체는 $H^m(K(G,n);G')$ 과 일대일 대응한다. 표현가능성을 Yoneda 보조정리에 넣은 결과다.
 
-이 대응이 연산을 찾는 문제를 한 공간의 코호몰로지 계산으로 바꾼다. Serre 가 $K(\mathbb Z/2,n)$ 의 mod 2 코호몰로지를 [스펙트럼 수열](spectral-sequences.md)로 계산해 Steenrod 제곱이 그 코호몰로지를 생성함을 보였다.[^2]
+이 대응이 연산을 찾는 문제를 한 공간의 코호몰로지 계산으로 바꾼다. Serre 가 $K(\mathbb Z/2,n)$ 의 mod 2 코호몰로지를 [스펙트럼 수열](spectral-sequences.md)로 계산해 [Steenrod 제곱](steenrod-operations.md)이 그 코호몰로지를 생성함을 보였다.[^2]
 
 ## 고리 공간
 

@@ -79,6 +79,7 @@ $M$ 이 닫힌 유향 $n$ 다양체이면 기본류 $\lbrack M\rbrack\in H_n(M)$
 
 ## 더 알아보기
 
+- [Steenrod 연산](steenrod-operations.md)
 - [Hopf 불변량](hopf-invariant.md)
 - [군 코호몰로지](group-cohomology.md)
 - [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)
