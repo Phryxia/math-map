@@ -86,6 +86,6 @@ $\mathbb P^2$ 에서 차수 $m$ 과 $n$ 인 두 곡선이 공통 성분을 갖�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [아벨 다양체](abelian-varieties.md)
 
 #algebra #ring_theory #topology

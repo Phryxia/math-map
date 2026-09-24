@@ -63,6 +63,7 @@ graph TD
 
 - [대수다양체](algebraic-varieties.md): 다항식의 해집합, 영점정리가 잇는 근기 아이디얼과의 대응, Zariski 위상
 - [사영다양체](projective-varieties.md): 동차좌표로 넓힌 공간 위의 대수적 집합, 완비성과 Bezout 정리
+- [아벨 다양체](abelian-varieties.md): 군 구조를 갖춘 완비 다양체, 강체성에서 따라 나오는 교환성, Tate 가군
 
 ## 체와 Galois 이론
 

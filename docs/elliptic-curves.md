@@ -154,6 +154,10 @@ $$
 - [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
 - [Siegel 의 정수점 정리](siegel-integral-points.md)
 
+### 고차원 일반화
+
+- [아벨 다양체](abelian-varieties.md)
+
 ### 모듈러성과 복소 곱셈
 
 - [모듈러 곡선](modular-curves.md)
