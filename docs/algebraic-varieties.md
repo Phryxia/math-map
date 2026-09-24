@@ -70,6 +70,7 @@ $X$ 의 **좌표환**은 $k\lbrack X\rbrack=k\lbrack x_1,\dots,x_n\rbrack/I(X)$ 
 
 ## 더 알아보기
 
+- [사영다양체](projective-varieties.md)
 - [구성가능 집합](constructible-sets.md)
 
 #algebra #ring_theory #topology
