@@ -32,6 +32,18 @@ $k$ 를 모두 더하면 $\sum_{k \ge 0}(e^x-1)^k/k! = e^{e^x-1}$ 이다. 순환
 | $C$ | $U$ 의 순환배열 | $\log(1/(1-x))$ |
 | $X$ | $\vert U\vert = 1$ 일 때만 한 개 | $x$ |
 
+## 종의 사상
+
+종 $F$ 에서 $G$ 로 가는 **사상**은 자연변환이다. 유한집합 $U$ 마다 함수 $\alpha_U:F\lbrack U\rbrack\to G\lbrack U\rbrack$ 을 주고, 모든 전단사 $\sigma:U\to V$ 에서
+
+$$
+\alpha_V\circ F\lbrack\sigma\rbrack=G\lbrack\sigma\rbrack\circ\alpha_U
+$$
+
+를 만족한다. 라벨을 바꾼 뒤 사상을 적용한 결과가 사상을 적용한 뒤 라벨을 바꾼 결과와 같다는 조건이다.
+
+모든 $\alpha_U$ 가 전단사이면 $\alpha$ 를 **동형**이라 하고 $F=G$ 로 쓴다. 종에 관한 등식은 이 뜻이며, 구조의 개수가 같다는 것보다 강한 조건이다. $X\cdot X$ 와 $E_2+E_2$ 는 모든 $n$ 에서 구조의 개수가 같지만 동형이 아니고, 이 구별을 [분자종](molecular-species.md)이 다룬다.
+
 ## 지수생성함수
 
 종 $F$ 의 **지수생성함수**는 $F(x) = \sum_{n \ge 0} f\_n x^n/n!$ 이다.
