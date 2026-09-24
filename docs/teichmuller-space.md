@@ -53,7 +53,7 @@ $$
 \mathcal T_g\cong\lbrace\rho\colon\pi_1(S)\to\mathrm{PSL}\_2(\mathbb R)\ \text{이산 충실}\rbrace/\mathrm{PSL}\_2(\mathbb R)
 $$
 
-쌍곡 곡면은 상반평면을 Fuchs 군 $\rho(\pi_1(S))$ 로 나눈 것이고, 표시는 곧 $\pi_1$ 의 생성원을 어디로 보낼지 정한 것이다. 이 그림에서 $\mathcal T_g$ 는 표현다양체의 한 연결성분으로 나타난다.
+쌍곡 곡면은 상반평면을 Fuchs 군 $\rho(\pi_1(S))$ 로 나눈 것이고, 표시는 곧 $\pi_1$ 의 생성원을 어디로 보낼지 정한 것이다. 이 그림에서 $\mathcal T_g$ 는 표현다양체의 한 [연결성분](connectedness.md)으로 나타난다.
 
 ## Fenchel–Nielsen 좌표
 

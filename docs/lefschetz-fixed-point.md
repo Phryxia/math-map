@@ -40,7 +40,7 @@ $L(f)$ 는 $f$ 의 호모토피류만으로 정해진다. 호모토픽한 두 �
 
 ## Brouwer 정리의 유도
 
-$X=D^n$ 이면 $H_0(D^n;\mathbb Q)=\mathbb Q$ 이고 나머지 차수는 $0$ 이다. 연속사상 $f\colon D^n\to D^n$ 이 $H_0$ 에 주는 사상은 연결성분을 보존하므로 항등이고, $L(f)=1\ne 0$ 이다. 따라서 고정점이 있고, 이것이 [Brouwer 고정점 정리](brouwer-fixed-point.md)다. 같은 계산이 유리수 호몰로지가 한 점의 것과 같은 모든 공간, 곧 $\mathbb Q$ 비순환 공간에서 성립한다.
+$X=D^n$ 이면 $H_0(D^n;\mathbb Q)=\mathbb Q$ 이고 나머지 차수는 $0$ 이다. 연속사상 $f\colon D^n\to D^n$ 이 $H_0$ 에 주는 사상은 [연결성분](connectedness.md)을 보존하므로 항등이고, $L(f)=1\ne 0$ 이다. 따라서 고정점이 있고, 이것이 [Brouwer 고정점 정리](brouwer-fixed-point.md)다. 같은 계산이 유리수 호몰로지가 한 점의 것과 같은 모든 공간, 곧 $\mathbb Q$ 비순환 공간에서 성립한다.
 
 ## 매끄러운 경우의 국소화
 

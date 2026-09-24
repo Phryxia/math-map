@@ -82,7 +82,7 @@ $$
 
 $\mathrm{CS}(\alpha)\in\mathbb R/\mathbb Z$ 는 Chern–Simons 불변량, $T_\alpha$ 는 $\alpha$ 로 비꼰 Reidemeister 비틀림, $I_\alpha$ 는 스펙트럼 흐름에서 오는 정수, $h^i_\alpha$ 는 비꼰 코호몰로지의 차원이다. 세 자료가 모두 고전 위상수학의 양이고 $\mathrm{CS}$ 는 게이지 이론, $T$ 는 조합적 위상수학, $I$ 는 지표 이론에서 온다.
 
-모듈라이가 고립되지 않으면 $\alpha$ 에 대한 합이 연결성분 위의 적분이 되고 멱 $k^{(h^1-h^0)/2}$ 가 그 성분의 차원을 읽는다. 자명한 접속은 $h^0\neq0$ 이라 따로 다루며 그 기여의 전개가 Ohtsuki 급수다.
+모듈라이가 고립되지 않으면 $\alpha$ 에 대한 합이 [연결성분](connectedness.md) 위의 적분이 되고 멱 $k^{(h^1-h^0)/2}$ 가 그 성분의 차원을 읽는다. 자명한 접속은 $h^0\neq0$ 이라 따로 다루며 그 기여의 전개가 Ohtsuki 급수다.
 
 ## Ohtsuki 급수
 
