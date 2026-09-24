@@ -35,25 +35,37 @@ graph TD
 - [직관주의](intuitionism.md): 대상은 정신의 구성이고 참은 증명을 가졌다는 뜻이다
 - [수학적 구조주의](mathematical-structuralism.md) → [구조적 집합론](structural-set-theory.md): 대상은 구조 안의 자리다
 
-## 논리
+## 논리의 체계
 
 - [명제와 증명](proofs.md) → [1차 논리](first-order-logic.md): 구문과 의미, 건전성과 완전성
 - [Löwenheim–Skolem 정리](lowenheim-skolem.md): 1차 논리가 크기를 구별하지 못한다
+- [Peano 공리](peano-axioms.md): 자연수의 공리계, 2차 형태의 범주성과 1차 형태의 비표준 모형
+- [Gödel 불완전성 정리](godel-incompleteness.md): 산술을 담는 체계는 자기 무모순성을 증명하지 못한다
+
+## 모형론
+
 - [모형론](model-theory.md): 구조와 논리식의 관계, 양화사 소거와 범주성
-- [구성가능 집합](constructible-sets.md): 대수적 집합의 Boolean 조합, Chevalley 정리와 양화사 소거의 동치
 - [초곱](ultraproducts.md): 초필터로 묶은 구조, Łoś 정리와 콤팩트성의 모형 구성
 - [안정 이론](stable-theories.md): 매개변수 위의 타입 개수로 매긴 조건, 순서 성질의 부재와 갈래짓기 독립
 - [o-최소성](o-minimality.md): 정의 가능 집합이 구간과 점의 유한 합집합이라는 조건, 셀 분해와 차원
+- [구성가능 집합](constructible-sets.md): 대수적 집합의 Boolean 조합, Chevalley 정리와 양화사 소거의 동치
 - [Pila–Wilkie 정리](pila-wilkie-theorem.md): 정의 가능 집합의 초월적 부분에 놓인 유리점의 셈, 산술기하에의 응용
 - [Ax–Grothendieck 정리](ax-grothendieck.md): 단사 다항식 사상은 전사, 유한체에서 특성 $0$ 으로의 이전
+
+## 무한소
+
 - [비표준 해석학](nonstandard-analysis.md): 무한소를 가진 순서체 위에서 극한을 대수 계산으로 바꾼다
 - [내부집합론](internal-set-theory.md): 초곱 대신 표준 술어와 공리꼴 셋으로 무한소를 세우는 공리계
-- [Peano 공리](peano-axioms.md): 자연수의 공리계, 2차 형태의 범주성과 1차 형태의 비표준 모형
-- [Gödel 불완전성 정리](godel-incompleteness.md): 산술을 담는 체계는 자기 무모순성을 증명하지 못한다
-- [역수학](reverse-mathematics.md): 정리마다 그것을 증명하는 데 필요한 공리를 되돌려 찾는다
-- [약한 König 보조정리](weak-konig-lemma.md): 무한 이진 나무의 가지, $\mathrm{WKL}\_0$ 과 동치인 정리와 원시재귀 산술 보존성
+
+## 구성적 논리
+
 - [직관주의](intuitionism.md) → [Kripke 의미론](kripke-semantics.md) → [Heyting algebra](heyting-algebras.md); [Boolean algebra](boolean-algebras.md)는 고전 쪽 대응물
 - [Curry–Howard 대응](curry-howard.md): 증명이 프로그램이다
+
+## 역수학
+
+- [역수학](reverse-mathematics.md): 정리마다 그것을 증명하는 데 필요한 공리를 되돌려 찾는다
+- [약한 König 보조정리](weak-konig-lemma.md): 무한 이진 나무의 가지, $\mathrm{WKL}\_0$ 과 동치인 정리와 원시재귀 산술 보존성
 
 ## 집합론의 기초
 
