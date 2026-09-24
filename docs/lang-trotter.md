@@ -153,6 +153,6 @@ $p=17$ 은 [Kedlaya 알고리즘](kedlaya-algorithm.md)에서 Hasse 불변량이
 
 ## 더 알아보기
 
-- [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md)
+- [초특이 동종사상 그래프](supersingular-isogeny-graphs.md)
 
 #number_theory #probability #cryptography #computation

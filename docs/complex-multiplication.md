@@ -187,7 +187,7 @@ $E$ 가 $\mathcal O_K$ 로 CM 을 갖고 $p$ 에서 좋은 환원을 가지면 �
 
 분열하는 경우 $p=\pi\bar\pi=N(\pi)$ 이므로 $p$ 를 $K$ 의 노름으로 쓰는 것과 점 개수 $\char35{}\tilde E(\mathbb F_p)=p+1-(\pi+\bar\pi)$ 는 같은 자료다. $p=x^2+ny^2$ 꼴 표현 문제가 CM 이론으로 풀린다. $p=x^2+27y^2$ 인 것은 $p\equiv1\pmod3$ 이고 $2$ 가 $\bmod\thinspace p$ 세제곱잉여인 것과 동치이며, $h(-108)=3$ 인 순서환의 유체 다항식 $X^3-2$ 가 이를 설명한다.
 
-초특이 쪽은 [초특이 등원사상 그래프](supersingular-isogeny-graphs.md)로 이어진다. CM 곡선을 여러 소수에서 환원하는 것이 그 그래프의 정점을 얻는 표준 방법이다.
+초특이 쪽은 [초특이 동종사상 그래프](supersingular-isogeny-graphs.md)로 이어진다. CM 곡선을 여러 소수에서 환원하는 것이 그 그래프의 정점을 얻는 표준 방법이다.
 
 ## 류수 1 판별식의 유한성
 

@@ -108,6 +108,6 @@ Expander 그래프 위의 [무작위 걷기](random-walks.md)는 짧은 시간�
 
 ## 더 알아보기
 
-- [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md)
+- [초특이 동종사상 그래프](supersingular-isogeny-graphs.md)
 
 #graph_theory #number_theory #construction

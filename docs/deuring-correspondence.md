@@ -133,7 +133,7 @@ SIDH 를 깬 Castryck–Decru 공격은 비밀 동종사상의 비틀림점 상�
 
 ## 선수지식
 
-- [초특이 동종사상 그래프와 SIDH](supersingular-isogeny-graphs.md)
+- [초특이 동종사상 그래프](supersingular-isogeny-graphs.md)
 - [Brauer 군](brauer-groups.md)
 
 ## 더 알아보기
