@@ -66,6 +66,7 @@ $$
 
 ## 선수지식
 
+- [Schur 보수](schur-complement.md)
 - [다중격자](multigrid.md)
 
 ## 더 알아보기

@@ -104,6 +104,7 @@ $QR$ 분해는 직교행렬이 2 노름을 보존하므로 오차를 키우지 �
 
 ## 더 알아보기
 
+- [Schur 보수](schur-complement.md)
 - [Krylov 부분공간 방법](krylov-subspace-methods.md)
 
 #linear_algebra #algorithms #optimization
