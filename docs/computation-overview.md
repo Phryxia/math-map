@@ -43,7 +43,7 @@ graph TD
 
 # 갈래
 
-## 계산가능성과 계산 모형
+## 계산 가능성과 계층
 
 - [계산 가능성](computability.md): Turing 기계, 대각선 논법, 결정 불가능성
 - [Turing 차수](turing-degrees.md): 결정 불가능성의 정도를 재는 순서, 도약과 Post 문제
@@ -52,6 +52,9 @@ graph TD
 - [초산술적 계층](hyperarithmetical-hierarchy.md): 계산가능한 서수까지 밀어 올린 도약, Kleene 의 $\mathcal O$ 와 $\Delta^1_1$
 - [$\Pi^0_1$ 부류](pi01-classes.md): 계산가능한 나무의 가지 집합, 기저 정리와 PA 차수
 - [Rice 정리](rice-theorem.md): 자명하지 않은 의미론적 성질은 모두 결정 불가능
+
+## 계산 모형과 의미론
+
 - [유한 오토마타](finite-automata.md): 유한 상태 모형, Myhill–Nerode 정리, 펌핑 보조정리
 - [Lambda calculus](lambda-calculus.md): 함수 적용만으로 세운 계산 모형, $\beta$ 축약과 Church–Rosser 정리
 - [Curry–Howard 대응](curry-howard.md): 증명과 프로그램, 명제와 타입의 대응
