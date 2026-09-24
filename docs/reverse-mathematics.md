@@ -103,8 +103,7 @@ $\mathrm{WKL}\_0$ 은 계산 가능한 집합만으로는 모형을 얻지 못�
 ## 선수지식
 
 - [계산 가능성](computability.md)
-- [Peano 공리](peano-axioms.md)
-- [2계 산술](second-order-arithmetic.md)
+- [2차 산술](second-order-arithmetic.md)
 
 ## 더 알아보기
 
