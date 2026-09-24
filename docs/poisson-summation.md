@@ -52,7 +52,7 @@ $$
 h\sum_{n\in\mathbb Z}f(nh)-\int_{\mathbb R}f=\sum_{k\ne0}\hat f\negthinspace\left(\frac kh\right)
 $$
 
-$f$ 가 매끄러울수록 $\hat f$ 는 빨리 죽고, $f$ 가 해석적이면 $\hat f$ 가 지수적으로 죽어 오차가 $e^{-c/h}$ 규모가 된다.
+$f$ 가 매끄러울수록 $\hat f$ 는 빨리 작아지고, $f$ 가 해석적이면 $\hat f$ 가 지수적으로 작아져 오차가 $e^{-c/h}$ 규모가 된다.
 
 # 정의
 

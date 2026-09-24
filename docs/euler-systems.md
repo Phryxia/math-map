@@ -4,7 +4,7 @@
 
 [Selmer 군](selmer-groups.md)은 계산되는 군이지만 순위의 상한만 준다. 순위를 확정하려면 Selmer 군의 상계를 낮추어야 하는데, 국소 조건으로 잘라낸 부분군이라는 정의는 어떤 원소가 없다는 정보를 주지 않는다.
 
-**Euler 계**는 그 상계를 낮추는 도구다. 대역 코호몰로지 류 하나가 Selmer 군 위에 선형 방정식 한 줄을 부과하고, 방정식을 충분히 모으면 군이 죽는다.
+**Euler 계**는 그 상계를 낮추는 도구다. 대역 코호몰로지 류 하나가 Selmer 군 위에 선형 방정식 한 줄을 부과하고, 방정식을 충분히 모으면 군이 $0$ 이 된다.
 
 방정식의 출처는 대역 상호법칙이다. [유체론](class-field-theory.md)의 진술 "국소 불변량의 합은 0" 이 코호몰로지로 올라가면 두 대역류의 국소 짝의 합이 0 이라는 항등식이 된다. 대역류 $c$ 에 대해 미지의 Selmer 원소 $s$ 는
 
@@ -194,7 +194,7 @@ $$
 
 이다.
 
-**증명의 요지.** $s\in \mathrm{Sel}^p(E/K)$ 가 $\kappa_1$ 이 생성하는 부분군 밖에 있다고 하자. Chebotarev 로 Kolyvagin 소수 $\ell$ 을 골라 $\mathrm{loc}\_\ell(s)\ne0$ 이면서 $\mathrm{loc}\_\ell^{\thinspace f}(\kappa_1)\ne0$ 이 되게 한다. 상호법칙을 $c=\kappa_\ell$ 과 $s$ 에 적용하면 $\ell$ 을 뺀 모든 자리에서 두 류가 서로 소멸자에 놓이므로 항이 죽고
+**증명의 요지.** $s\in \mathrm{Sel}^p(E/K)$ 가 $\kappa_1$ 이 생성하는 부분군 밖에 있다고 하자. Chebotarev 로 Kolyvagin 소수 $\ell$ 을 골라 $\mathrm{loc}\_\ell(s)\ne0$ 이면서 $\mathrm{loc}\_\ell^{\thinspace f}(\kappa_1)\ne0$ 이 되게 한다. 상호법칙을 $c=\kappa_\ell$ 과 $s$ 에 적용하면 $\ell$ 을 뺀 모든 자리에서 두 류가 서로 소멸자에 놓이므로 항이 사라지고
 
 $$
 \big\langle \mathrm{loc}\_\ell^{\thinspace s}(\kappa_\ell),\ \mathrm{loc}\_\ell^{\thinspace f}(s)\big\rangle_\ell=0
@@ -202,7 +202,7 @@ $$
 
 만 남는다. 제 2 상호법칙으로 왼쪽 성분이 $\mathrm{loc}\_\ell^{\thinspace f}(\kappa_1)\ne0$ 과 같고 국소 짝이 완전하므로 $\mathrm{loc}\_\ell(s)=0$ 이며, $\ell$ 을 고른 방식과 모순이다. 따라서 $\mathrm{Sel}^p(E/K)$ 가 $\kappa_1$ 이 생성하는 것에 가깝고, $y_K$ 가 무한위수라는 가정과 합쳐 순위 1 과 $\text{Ш}$ 의 유한성이 나온다. $\square$
 
-$K$ 의 복소켤레에 대해 $E(K)$ 와 $\mathrm{Sel}$ 이 $\pm$ 고유공간으로 쪼개지고 $y_K$ 는 한쪽에만 산다. Kolyvagin 소수의 조건이 $\mathrm{Fr}\_\ell$ 을 복소켤레와 묶어 두며, 부호가 맞지 않으면 상호법칙의 항이 죽어 정보가 사라진다.
+$K$ 의 복소켤레에 대해 $E(K)$ 와 $\mathrm{Sel}$ 이 $\pm$ 고유공간으로 쪼개지고 $y_K$ 는 한쪽에만 놓인다. Kolyvagin 소수의 조건이 $\mathrm{Fr}\_\ell$ 을 복소켤레와 묶어 두며, 부호가 맞지 않으면 상호법칙의 항이 $0$ 이 되어 정보가 사라진다.
 
 ## 명시적 상계: Kolyvagin 지표
 

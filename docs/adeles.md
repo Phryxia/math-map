@@ -49,7 +49,7 @@ $\mathbb Q$ 가 $\mathbb A_{\mathbb Q}$ 안에 놓이는 방식은 $\mathbb Z$ �
 | 콤팩트 몫 | 원 $\mathbb R/\mathbb Z$ | $\mathbb A_{\mathbb Q}/\mathbb Q$ |
 | 조화해석 | [Fourier 급수](fourier-series.md) | Poisson 합공식 |
 
-$\mathbb A_{\mathbb Q}=\mathbb Q+\big([0,1)\times\hat{\mathbb Z}\big)$ 가 성립한다. 아델 하나에서 유한 자리들의 분모를 유리수 하나로 털어내고 실수 자리를 $[0,1)$ 로 밀어 넣으면 된다. $\mathbb R=\mathbb Z+[0,1)$ 의 아델 판이며 $[0,1)\times\hat{\mathbb Z}$ 가 기본영역이다. 기본영역이 콤팩트하므로 몫이 콤팩트하다.
+$\mathbb A_{\mathbb Q}=\mathbb Q+\big([0,1)\times\hat{\mathbb Z}\big)$ 가 성립한다. 아델 하나에서 유한 자리들의 분모를 유리수 하나로 없애고 실수 자리를 $[0,1)$ 로 옮기면 된다. $\mathbb R=\mathbb Z+[0,1)$ 의 아델 판이며 $[0,1)\times\hat{\mathbb Z}$ 가 기본영역이다. 기본영역이 콤팩트하므로 몫이 콤팩트하다.
 
 $\mathbb R/\mathbb Z$ 가 콤팩트라서 Fourier 급수가 있듯, $\mathbb A_{\mathbb Q}/\mathbb Q$ 가 콤팩트라서 아델 위의 Poisson 합공식이 성립한다. Tate 는 이 합공식으로 $\zeta$ 함수의 함수방정식을 유도했다.
 
@@ -110,7 +110,7 @@ $$
 
 > **정리.** $K$ 는 $\mathbb A_K$ 의 이산 부분군이고 $\mathbb A_K/K$ 는 콤팩트하다.
 
-증명의 요지는 $\mathbb Q$ 에서의 분해와 같다. $\mathcal O_K$ 를 $\prod_{v\mid\infty}K_v$ 의 격자로 실현하는 Minkowski 논증에, 유한 자리에서 분모를 털어내는 중국인의 나머지 정리를 붙인다.
+증명의 요지는 $\mathbb Q$ 에서의 분해와 같다. $\mathcal O_K$ 를 $\prod_{v\mid\infty}K_v$ 의 격자로 실현하는 Minkowski 논증에, 유한 자리에서 분모를 없애는 중국인의 나머지 정리를 붙인다.
 
 > **정리.** $\mathbb A_K^{\times,1}/K^\times$ 는 콤팩트하다.
 

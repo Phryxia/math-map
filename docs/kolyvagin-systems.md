@@ -96,7 +96,7 @@ $$
 H^1(K_\ell,T)=H^1_{\mathrm{f}}(K_\ell,T)\oplus H^1_{\mathrm{tr}}(K_\ell,T),\qquad H^1_{\mathrm{f}}\cong T\cong H^1_{\mathrm{tr}}
 $$
 
-$H^1_{\mathrm{f}}$ 는 불분기 부분이고 $H^1_{\mathrm{tr}}$ 는 $\ell$ 의 차수 $p^k$ 순종 확대 $K_\ell(\ell^{1/p^k})$ 에서 죽는 류들이며, 둘은 크기가 같다. **가로지름 조건**은 $\ell$ 에서 $H^1_{\mathrm{f}}$ 대신 $H^1_{\mathrm{tr}}$ 를 쓰는 것이다.
+$H^1_{\mathrm{f}}$ 는 불분기 부분이고 $H^1_{\mathrm{tr}}$ 는 $\ell$ 의 차수 $p^k$ 순종 확대 $K_\ell(\ell^{1/p^k})$ 에서 소멸하는 류들이며, 둘은 크기가 같다. **가로지름 조건**은 $\ell$ 에서 $H^1_{\mathrm{f}}$ 대신 $H^1_{\mathrm{tr}}$ 를 쓰는 것이다.
 
 $n$ 이 Kolyvagin 소수들의 곱일 때 $\mathcal F(n)$ 은 $n$ 의 모든 소인수에서 가로지름으로 바꾼 구조다. $\mathcal N$ 을 그런 $n$ 들의 집합이라 하면, $\mathcal N$ 은 $n$ 과 $n\ell$ 을 잇는 간선으로 그래프가 된다.
 
@@ -223,7 +223,7 @@ $$
 
 로 등식이 나온다. Euler 계가 주던 부등식이 여기서 등식이 된다. 남는 것은 $\kappa$ 가 생성원인지, 곧 $\partial_0(\kappa)$ 가 최소값인지를 확인하는 문제이고 이것이 Euler 계 쪽에서 넘어오는 유일한 입력이다.
 
-$\kappa_1\not\equiv0\ (\mathrm{mod}\ p)$ 이면 모든 $\partial_i=0$ 이라 $H^1_{\mathcal F^\ast}(K,T^\ast)=0$ 이다. 유도류가 $p$ 로 나누어지지 않으면 Selmer 군이 죽는다는 Kolyvagin 의 고전적 결론이 이 형식에서 한 줄이다.
+$\kappa_1\not\equiv0\ (\mathrm{mod}\ p)$ 이면 모든 $\partial_i=0$ 이라 $H^1_{\mathcal F^\ast}(K,T^\ast)=0$ 이다. 유도류가 $p$ 로 나누어지지 않으면 Selmer 군이 $0$ 이 된다는 Kolyvagin 의 고전적 결론이 이 형식에서 한 줄이다.
 
 ## 핵심 정점
 
