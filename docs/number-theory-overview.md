@@ -30,12 +30,23 @@ graph TD
 
 # 갈래
 
-## 초등 정수론
+## 합동과 소수
 
 합동과 소수, 그리고 둘을 잇는 상호법칙. 다른 줄기들이 이 셋을 전제한다.
 
 - [정수의 합동](modular-arithmetic.md): 정수를 나머지로 분류하는 첫 도구
 - [유클리드 알고리즘](euclidean-algorithm.md): 최대공약수와 Bézout 항등식
+- [소수](primes.md): 산술의 기본 정리
+- [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
+- [중국인의 나머지 정리](chinese-remainder-theorem.md): 서로소 법의 합동식 결합
+- [이차 상호법칙](quadratic-reciprocity.md): 제곱잉여의 대칭성, 유체론의 시작점
+- [Gauss 정수환](gaussian-integers.md): 소수의 분해 유형과 두 제곱수의 합
+- [유한체](finite-fields.md): 소수 위수의 체와 그 확대
+
+## Diophantine 근사와 방정식
+
+실수를 유리수로 얼마나 잘 근사할 수 있는지가 방정식의 해의 유한성을 통제한다.
+
 - [연분수](continued-fractions.md): 실수를 정수 몫의 열로 펼쳐 최적 유리수 근사를 얻는다
 - [Pell 방정식](pell-equation.md): $x^2-dy^2=1$ 의 해가 기본해의 거듭제곱으로 전부 나온다
 - [Diophantine 근사](diophantine-approximation.md): 근사 지수가 대수적 수와 초월수를 가른다
@@ -43,12 +54,6 @@ graph TD
 - [Baker 정리](baker-theorem.md): 로그의 일차형식에 대한 유효 하한, Diophantus 방정식의 해 상한
 - [Thue 방정식](thue-equation.md): 차수 3 이상 이진형식의 정수해, 유한성과 Baker 하한이 주는 유효 상한
 - [Siegel 의 정수점 정리](siegel-integral-points.md): 종수와 무한원점의 개수로 가른 정수점의 유한성, 유효 상한의 두 길
-- [소수](primes.md): 산술의 기본 정리
-- [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
-- [중국인의 나머지 정리](chinese-remainder-theorem.md): 서로소 법의 합동식 결합
-- [이차 상호법칙](quadratic-reciprocity.md): 제곱잉여의 대칭성, 유체론의 시작점
-- [Gauss 정수환](gaussian-integers.md): 소수의 분해 유형과 두 제곱수의 합
-- [유한체](finite-fields.md): 소수 위수의 체와 그 확대
 
 ## 암호와 계산
 
