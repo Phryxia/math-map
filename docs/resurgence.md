@@ -1,4 +1,4 @@
-# Resurgence 와 alien 미분
+# Resurgence 이론
 
 # 개요
 

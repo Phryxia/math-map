@@ -89,7 +89,7 @@ graph TD
 - [정상위상법과 안장점 근사](stationary-phase.md): 진동적분의 위상이 멈추는 자리
 - [Stokes 현상과 재합산](stokes-phenomenon.md): 점근전개의 계수가 불연속으로 바뀌는 선
 - [Padé 근사와 Borel 재합산](borel-pade.md): 발산급수에 값을 주는 두 방법
-- [Resurgence 와 alien 미분](resurgence.md): 섭동급수와 비섭동 효과의 연결
+- [Resurgence 이론](resurgence.md): 섭동급수와 비섭동 효과의 연결
 - [Airy 함수](airy-functions.md): 회전점 근방의 표준형
 - [WKB 근사와 연결 공식](wkb-approximation.md)(Wentzel–Kramers–Brillouin): 작은 매개변수를 가진 방정식의 지수적 해
 - [정확한 WKB](exact-wkb.md): WKB 급수를 Borel 재합산으로 엄밀화

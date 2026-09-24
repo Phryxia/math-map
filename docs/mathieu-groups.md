@@ -143,6 +143,6 @@ $M_{24}$ 는 Conway 군과 함께 행복한 가족의 첫 두 층을 이룬다. 
 
 ## 더 알아보기
 
-- [Umbral moonshine 과 Mathieu 달빛](umbral-moonshine.md)
+- [Umbral moonshine](umbral-moonshine.md)
 
 #group_theory #combinatorics #information_theory

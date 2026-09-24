@@ -167,6 +167,6 @@ $V^\natural$ 은 중심전하 $24$ 의 등각장론이고 $\mathbb M$ 은 그 �
 
 ## 더 알아보기
 
-- [Umbral moonshine 과 Mathieu 달빛](umbral-moonshine.md)
+- [Umbral moonshine](umbral-moonshine.md)
 
 #number_theory #group_theory #complex_analysis #algebra
