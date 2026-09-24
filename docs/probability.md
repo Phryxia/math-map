@@ -117,6 +117,7 @@ $$
 - [측도](measure.md)
 - [확률변수](random-variables.md)
 - [Shannon 엔트로피](entropy.md)
+- [Radically elementary 확률론](radically-elementary-probability.md)
 
 ### 조합과 알고리즘
 

@@ -101,6 +101,6 @@ $A=\lbrace t:t$ 가 표준이고 $t\le x\rbrace$ 를 표준화로 걸러 표준 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Radically elementary 확률론](radically-elementary-probability.md)
 
 #logic #analysis #set_theory
