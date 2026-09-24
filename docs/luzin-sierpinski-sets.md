@@ -40,7 +40,7 @@ $L$ 이 제1범주이면 정의를 $M=L$ 에 적용해 $L=L\cap L$ 이 가산이
 
 ## 강 측도 영집합
 
-$X\subseteq\mathbb R$ 이 **강 측도 영집합**이라 함은 양수열 $(\varepsilon\_n)$ 이 무엇이든 길이 $\varepsilon\_n$ 인 구간 $I\_n$ 을 잡아 $X\subseteq\bigcup\_n I\_n$ 으로 할 수 있는 것이다.
+[강 측도 영집합](strong-measure-zero.md)은 양수열 $(\varepsilon\_n)$ 이 무엇이든 길이 $\varepsilon\_n$ 인 구간 $I\_n$ 을 잡아 $X\subseteq\bigcup\_n I\_n$ 으로 덮을 수 있는 집합 $X$ 다.
 
 **정리.** Luzin 집합은 강 측도 영집합이다.
 

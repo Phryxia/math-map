@@ -118,10 +118,16 @@ Hausdorff 측도는 프랙탈의 차원을 재고, Haar 측도는 군 위에서 
 
 ## 더 알아보기
 
+### 적분과 밀도
+
 - [가측함수](measurable-functions.md)
 - [Lebesgue 적분](lebesgue-integral.md)
 - [상측도](pushforward-measure.md)
 - [Radon–Nikodym 정리](radon-nikodym.md)
+
+### 영집합과 다른 구성
+
+- [강 측도 영집합](strong-measure-zero.md)
 - [Loeb 측도](loeb-measure.md)
 
 #measure_theory #probability #analysis #set_theory
