@@ -1,47 +1,15 @@
 {
   "version": 1,
-  "savedAt": "2026-09-24T08:56:10.401Z",
-  "nextSeq": 1103,
+  "savedAt": "2026-09-24T13:06:23.128Z",
+  "nextSeq": 1115,
   "items": [
     {
-      "id": "8a8ec28b",
-      "title": "정의 없이 쓴 용어 훑기 (전체 훑기 11차)",
-      "priority": 12,
-      "note": "2026-09-23 회차에 10차로 '동치관계'(equivalence-relations) 8 자리, '이산로그'(discrete-logarithm) 4 자리, '벡터다발'(vector-bundles) 6 자리, '생성함수'(generating-functions) 1 자리, '지표 정리'(index-theorem) 5 자리를 끝냈다. 노트가 지시한 node dev/link2.mjs 가 저장소에 없어 손으로 우회했다(별도 큐 항목 p100). 우회 방법: 문서마다 '# 연관 문서' 앞의 본문만 보고, 그 문서에 목표 id 로의 링크가 이미 있으면 건너뛰고, 헤딩이 아닌 첫 등장 줄만 치환하는 20 줄짜리 스크립트를 스크래치패드에 두고 돌렸다. 새 판정 (20): 이미 부모나 자식으로 간선이 있는 문서는 본문 링크를 걸지 않는다. 독자가 연관 문서 절에서 바로 찾기 때문이다. 이 판정으로 groups 와 modular-arithmetic 의 이산로그, gauss-bonnet 과 hodge-theory 와 de-rham-cohomology 의 지표 정리, combinatorial-species 의 생성함수를 뺐다. 판정 (19) 의 사례가 이번에 셋 나왔다: '지표 정리'가 group-actions 25 의 표 셀에서는 군론의 부분군 지표 정리라 뺐고, '생성함수'는 후보 10 자리 가운데 9 자리가 '적률생성함수' '지수생성함수' 'cumulant 생성함수' 같은 복합어이거나 kl-divergence 114 의 Bregman divergence 생성함수라 한 자리만 남았으며, 'Hodge 이론'은 후보 7 자리가 전부 'p 진 Hodge 이론'(p-adic-hodge-theory 로 이미 링크됨)이거나 beilinson-bernstein 98 의 조합적 Hodge 이론이라 한 자리도 걸지 않았다. 판정 (17) 의 예외: 'Atiyah-Singer 지표 정리'(poincare-hopf 53)는 앞말이 붙었지만 index-theorem 문서 그 자체의 정식 이름이므로 걸었다. 헤딩에만 있고 산문 등장이 없어 건너뛴 것: bernoulli-numbers 21 의 생성함수, de-rham-cohomology 119 의 Hodge 이론. 남은 상위 후보: 그래프(graphs) 90, 다양체(manifolds) 79, 연결성(connectedness) 35, 완비성(completeness) 16, 전처리(preconditioning) 6. '그래프'와 '연결성'과 '완비성'은 판정 (19) 가 걸리는 대표 후보이고, '다양체'는 '대수다양체' '복소다양체' 'Kahler 다양체' 'Riemann 다양체' 같은 복합어가 많아 판정 (17) 을 먼저 적용해야 한다",
-      "createdAt": "2026-09-23T20:50:41.287Z",
-      "seq": 1043
-    },
-    {
-      "id": "a5b46717",
-      "title": "문서 자신을 가리키는 문장 훑기 (8차)",
-      "priority": 12,
-      "note": "2026-09-23 회차에 7차를 돌렸다. 표적은 6차 노트가 남긴 네 후보였고 9 건을 고쳤다. '~를 보여 준다' 7 건: ideals-quotient-rings 36 '마지막 줄이 극단을 보여 준다' 를 '마지막 줄이 극단이다' 로, 38 '기하로 읽는 법을 보여 준다' 를 '기하적 뜻이 있다' 로, modules 41 '이 그림의 마지막 두 줄이 가군 언어의 값어치를 보여 준다' 문장을 없애고 뒤 문장에 '그림의 마지막 두 줄에서' 를 붙여 합쳤다, tensor-products 29 '다음 계산이 스칼라환의 영향을 보여 준다' 를 지웠다(절 제목 '스칼라가 소멸시키는 예' 가 이미 그 말이다), confidence-intervals 123 의 '이 관점의 실용적 귀결이 두 가지다' 예고문과 '첫째/둘째' 를 없애고 '~가 구간에서 읽힌다' 로, boolean-algebras 133 '어떤 구조가 남는지를 보여 준다' 를 '포기하는 법칙마다 남는 구조가 다르다' 로, cardinality 106 '크기가 관점에 상대적임을 보여 준다' 를 '크기는 모형에 상대적이다' 로, supersingular-isogeny-graphs 161 'SIDH 의 붕괴는 ~ 보여 준다' 를 사실 문장 뒤 'SIDH 의 붕괴가 그 예다' 로 갈랐다. 예고문 1 건: mathematical-platonism 74 '철학적 입장은 실제 수학적 실천에 다음과 같이 드러난다' 를 지웠다(목록 항목이 제 이름을 갖고 있어 맥락이 남는다). 오탐으로 확정한 것: '~가 드러난다' 는 4절 금지 목록에 없고, category 63, euler-maclaurin 13, principal-component-analysis 112, tensor-products 220 은 수학적 사실 진술이라 그대로 둔다. '~라는 점이다' 는 fargues-scholze 46 한 자리뿐이고 강조 구문으로 정상이다. '~대목이다' 는 groups 74 와 stickelberger 146 두 자리이고 둘 다 설명의 위치를 가리키는 정상 용법이다. 다음 차수에 볼 후보: '~라고 할 수 있다', '~인 것이다', '~하는 것이 좋다', '~할 필요가 있다' 같은 완곡 어미와 '여기서', '앞서 본', '위에서 본' 으로 시작해 앞 절을 되짚는 문장",
-      "createdAt": "2026-09-23T20:53:57.342Z",
-      "seq": 1047
-    },
-    {
-      "id": "16505d45",
-      "title": "본문 링크가 수식 안에 들어가는 사고의 검사",
-      "priority": 12,
-      "note": "상시 항목. 링크를 문자열 위치로 삽입하는 작업을 하는 회차에서는 그 작업과 함께 돌리고, 그런 작업이 없는 회차에서는 건너뛴다. 2026-09-23 회차에 링크를 건 세 작업(동치관계와 이산로그 12 자리, 벡터다발과 생성함수 7 자리, 지표 정리 5 자리) 뒤에 전수로 돌려 0 건이었다. 이 회차의 삽입기는 link2.mjs 가 아니라 손으로 쓴 20 줄 스크립트였고 헤딩(^#)만 걸렀으므로, 수식 스팬 방어는 삽입기가 아니라 이 검사기가 사후로 맡았다. 검사기는 코드펜스를 건너뛰고 달러 두 개 블록 안의 줄과 인라인 달러 스팬을 모아 그 안에 /\\]\\([a-z0-9-]+\\.md\\)/ 가 있으면 보고한다(스크래치패드 mathlink.mjs, 20줄. 회차마다 스크래치패드가 비므로 다시 쓴다). 2026-09-22 여섯째 회차에 elliptic-curves 링크를 31 문서에 걸 때 deuring-correspondence 8줄 블록 안 \\text{초특이 타원곡선} 에 링크가 들어가 렌더 결과에 링크 문법이 글자 그대로 나온 사고가 있었다. 4절 수식 규칙의 여섯 검사가 전부 이것을 통과시킨다. dev/ 는 고치지 않는 것이 0절이므로 render-check 에 넣자는 제안은 독자에게 남긴다",
-      "createdAt": "2026-09-23T20:54:21.022Z",
-      "seq": 1048
-    },
-    {
-      "id": "f6d1d2ee",
-      "title": "기술집합론의 Borel 계층",
-      "priority": 12,
-      "note": "analytical-hierarchy 활용 절과 hyperarithmetical-hierarchy 활용 절이 Suslin 정리와 효과적 Borel 계층을 이름만 쓰고 지나간다. 분야는 #set_theory #topology #measure_theory. 부모 후보는 sigma-algebra 와 metric-spaces 또는 baire-category. 내용: Baire 공간, Sigma^0_alpha/Pi^0_alpha 의 초한 계층, 계층이 무너지지 않음, Borel 집합의 연속상이 해석적 집합, Suslin 정리(Delta^1_1 = Borel)",
-      "createdAt": "2026-09-24T00:38:33.391Z",
-      "seq": 1051
-    },
-    {
-      "id": "72319cbf",
-      "title": "2계 산술의 언어",
-      "priority": 12,
-      "note": "reverse-mathematics 가 다섯 체계를 다루고 arithmetical-hierarchy, analytical-hierarchy, hyperarithmetical-hierarchy 가 모두 '2계 산술의 논리식' 을 전제하는데 언어 자체를 정의한 문서가 없다. 분야는 #logic #foundations #computation. 부모 후보는 first-order-logic 과 peano-axioms. 내용: 수 변수와 집합 변수, 내포 공리꼴, 완전 체계 Z_2, RCA_0 부터 Pi^1_1-CA_0 까지의 부분체계가 내포를 제한하는 방식, 모형은 (N, S) 꼴의 omega 모형",
-      "createdAt": "2026-09-24T00:38:33.525Z",
-      "seq": 1052
+      "id": "15d1b300",
+      "title": "2차 산술과 계층 문서들의 간선 검토",
+      "priority": 30,
+      "note": "2026-09-24 회차에 second-order-arithmetic 을 만들었다. 본문 링크는 analytical-hierarchy 27 한 자리만 걸었다. arithmetical-hierarchy 와 hyperarithmetical-hierarchy 와 weak-konig-lemma 는 체계 이름을 전부 수식으로 쓰므로(\\mathrm{WKL}\\_0 꼴) 본문 링크를 걸 자리가 없다. 수식 안에 링크를 넣으면 렌더 결과에 링크 문법이 글자로 나오는 사고가 되므로 넣지 않는다. 검토할 것: weak-konig-lemma 를 second-order-arithmetic 의 자식으로 둘지. 그 문서는 WKL_0 이라는 2차 산술의 부분체계 자체를 다루므로 5절의 특수화 간선 후보다. 지금 부모가 무엇인지 보고, 2차 산술을 더하면 부모가 몇 개가 되는지 확인한 뒤 판단한다. analytical-hierarchy 와 hyperarithmetical-hierarchy 도 2차 산술의 논리식 계층을 다루므로 같은 검토 대상이지만, 두 문서는 arithmetical-hierarchy 계열의 사슬에 이미 놓여 있어 2차 산술을 부모로 더하면 부모가 늘어난다. 더 알아보기의 기준(5절)을 적용해 판단한다",
+      "createdAt": "2026-09-24T13:05:58.602Z",
+      "seq": 1114
     },
     {
       "id": "d8f9c98b",
@@ -226,6 +194,30 @@
       "note": "2026-09-24 회차 13차. 12차 note 가 지시한 두 축 가운데 어미가 갈린 쌍을 돌렸고, 그 과정에서 영문 잔존 쪽으로 소득이 나왔다. (a) 어미 쌍 판정: 몫공간/상공간은 통일 대상이 아니다. '상공간' 44 건 가운데 42 건이 '위상공간' 의 부분 문자열이고(12차 note 가 경고한 단어 경계 문제다. 반드시 grep -oE '[^위]상공간' 으로 셀 것), 나머지 둘(open-mapping-theorem 68, singular-value-decomposition 74)은 image space 뜻이라 몫공간과 다른 개념이다. 가군/모듈도 같다. '가군' 311 건에 '모듈' 은 셋뿐이었고 그중 matroids 77·101 의 '열등모듈성'(submodular)은 복합 용어라 예외다. (b) 고친 것 다섯: singular-value-decomposition 74 'kernel의'->'핵의', 89 'kernel은'->'핵은' 과 'spectral 노름'->'스펙트럼 노름'(저장소의 정의 문서 제목이 '스펙트럼 정리' 다), spectral-theorem 62 'kernel 에서'->'핵에서'(저장소에 '의 핵' 이 70 곳으로 굳어 있다), fields 89 'pivot 나눗셈'->'피벗 나눗셈' 과 '유한생성 모듈'->'유한생성 가군', polynomial-rings 92 '$k[x]$ -모듈 구조'->'$k[x]$ 가군 구조'. 판정 보류 둘: tracy-widom 138 의 'Airy kernel' 은 각주의 논문 제목이라 그대로 두었고, lagrange-duality 110 의 'support vector machine 의 kernel 형태' 는 영문 용어가 둘 겹쳐 있어 손대지 않았다(여기 kernel 은 선형대수의 핵이 아니라 커널 트릭 쪽이고 저장소가 kernel-pca 를 '커널 PCA' 로 쓰므로 '커널' 이 역어다. support vector machine 의 역어를 먼저 정해야 한 문장을 한 번에 고칠 수 있다). 14차에 볼 것: 첫째, 12차 note 가 남긴 나머지 축(병기로 확인된 역어의 짝이 병기 없이 본문에 남아 있는지)은 아직 돌리지 않았다. 둘째, 이번에 드러난 새 축이 더 굵다. 한국어 문장 안에 영문 단어가 조사와 붙어 있는 자리다. 검사기는 grep -noE '[가-힣] [A-Za-z]{3,}(의|은|는|이|가|를|을|에|로) ' 이고, 수식·코드블록·각주의 논문 제목을 빼야 한다. 이번 다섯 건이 전부 이 꼴이었으므로 남은 것이 더 있을 것이다. 판정 기준은 '저장소에 그 개념의 한국어 역어가 이미 다수로 굳어 있는가' 다",
       "createdAt": "2026-09-24T08:55:53.761Z",
       "seq": 1102
+    },
+    {
+      "id": "e224cc9d",
+      "title": "정의 없이 쓴 용어 훑기 (전체 훑기 12차)",
+      "priority": 12,
+      "note": "2026-09-24 회차에 11차로 노트의 남은 상위 후보 다섯을 모두 끝냈다. '완비성'(completeness) 9 자리, '전처리'(preconditioning) 1 자리, '연결성'(connectedness) 7 자리, '다양체'(manifolds) 13 자리, '그래프'(graphs) 39 자리. 우회 스크립트는 10차와 같은 방식으로 스크래치패드에 두 개 두고 돌렸다(후보 추출 cand.mjs: 본문만 보고 목표 id 링크 있으면 스킵하고 부모/자식은 EDGE 로 표시, 치환 link.mjs: 지정한 file:line 의 첫 등장만 치환). 새 판정 (21): 목표 문서에 그 용어의 변형을 다루는 절이 있으면 변형을 링크 텍스트로 쓴다. 위상 문맥의 '연결성분'을 connectedness 의 '## 연결 성분' 절 근거로 걸었고(homology, lefschetz-fixed-point, teichmuller-space, witten-asymptotics, fredholm-operators), 그래프 문맥의 '연결성분'(euler-characteristic, mass-formula, kazhdan-lusztig 등)은 판정 19 로 뺐다. 새 판정 (22): 붙여 쓴 수식어는 링크 텍스트에 포함한다. shortest-paths 의 '유향그래프'를 통째로 걸었다. 판정 19 가 이번에 가장 많이 걸렸다. '전처리' 후보 4 자리 가운데 3 자리(eisenstein-ideal, kernel-pca, merel-theorem)가 수치해석의 전처리가 아니라 일반어 '사전 처리'였고, '완비성'은 대수기하의 완비성(projective-varieties, abstract-algebra-overview), 통계의 완비충분통계량(exponential-families), 완비 Boolean 대수(boolean-valued-models), 완비격자(galois-connections)를 뺐다. '연결성'은 후보 35 자리 가운데 7 자리만 남았고 나머지는 그래프의 연결성이거나 '단순연결성'(판정 17)이었다. '다양체'는 후보 79 자리 가운데 13 자리만 남았다. 대수다양체, 아벨 다양체, Grassmann 다양체, 깃발다양체, Shimura 다양체, Jacobi 다양체, 복소다양체, Kähler 다양체가 판정 17 로 빠졌고, '부분다양체'(de-rham-cohomology, kernel-pca)도 앞말이 붙어 뺐다. '그래프'는 함수의 그래프(baire-category, banach-spaces, open-mapping-theorem, unbounded-operators, kakutani-fixed-point, continuity, convexity, derivative, lebesgue-integral, measure, uniform-convergence, domain-theory)와 이미 링크된 텍스트 안의 '그래프'('[그래프 동형]', '[평면 그래프]', '[그래프 Laplacian]', '[동종사상 그래프]', '[Expander 그래프]', '[그래프 신경망]')를 뺐다. 링크 텍스트 안의 자리는 치환하면 링크가 중첩되므로 반드시 뺀다. 개관의 갈래 목록 줄(information-theory-overview, linear-algebra-overview, order-theory-overview)도 이미 그 문서로 가는 링크가 붙은 줄이라 뺐다. 다음 회차 후보는 스크래치패드의 rank.mjs 로 뽑았다(한글 단독 제목만 세고, 목표 링크가 이미 있는 문서는 제외). 상위: 함수(functions) 386, 집합(sets) 323, 미분(derivative) 145, 소수(primes) 134, 격자(lattices) 86, 측도(measure) 59, 코호몰로지(cohomology) 47, 범주(category) 39, 기수(cardinality) 38, 함자(functors) 32, 수반(adjunctions) 27, 가군(modules) 25, 행렬식(determinants) 22, 곡률(curvature) 21. '함수'와 '집합'과 '미분'은 일반어로 쓰이는 자리가 압도적이라 판정 19 가 대부분 걸릴 것이고, '소수'는 수론 문서 대부분이 primes 와 조상관계여서 판정 20 을 먼저 볼 것을 권한다. '격자'는 lattices 문서가 순서론의 격자인지 정수격자인지 먼저 확인해야 한다. 실질 후보는 측도, 코호몰로지, 기수, 함자, 수반, 가군, 행렬식, 곡률이다",
+      "createdAt": "2026-09-24T12:45:06.806Z",
+      "seq": 1103
+    },
+    {
+      "id": "558bc5b2",
+      "title": "문서 자신을 가리키는 문장 훑기 (9차)",
+      "priority": 12,
+      "note": "2026-09-24 회차에 8차를 돌렸다. 표적은 7차 노트가 남긴 네 후보였고 4 건을 고쳤다. matchings 145 의 '## 실전 감각' 절을 '## 알고리즘의 선택' 으로 바꾸고 조언투를 없앴다('실무에서 매칭을 쓸 때 확인할 것은 세 가지다' 예고문, '첫째/둘째/셋째', '함께 출력하는 것이 좋다', '디버깅과 설명 모두에 쓸 수 있다'). 지식은 세 항목으로 남겼다(Hopcroft-Karp 와 blossom, Hungarian 과 최소비용 최대유량, Hall 위반 집합과 Koenig 덮개). network-flow 73 의 '여기까지는 계산이지 정리가 아니다' 를 지웠고(문서 자신을 평가하는 문장), 127 의 '앞서 본 등호 조건' 을 '최대유량 최소절단 정리의 등호 조건' 으로 바꿨다. unbalanced-optimal-transport 76 의 '앞서 본 완화된 갱신' 에서 '앞서 본' 을 지웠다(같은 문서에 '## 완화된 갱신' 절이 있어 이름만으로 가리켜진다). 오탐으로 확정한 것: '~인 것이다' 는 저장소에 42 개 문서에 있으나 거의 전부 '필요충분조건은 ~인 것이다' 꼴의 정상 수학 구문이다(arzela-ascoli 35, bounded-variation 87, category-o 79, class-field-theory 150, connectedness 73 등). '정리하면' 은 linear-regression 67, probabilistic-method 117, weyl-character-formula 82 처럼 식을 정리한다는 뜻이라 그대로 둔다. '셈이다' 는 '나눗셈이다', '곱셈이다', '곡선 셈이다' 만 걸리는 오탐 패턴이다. '라고 할 수 있다' 와 '할 필요가 있다' 는 한 자리도 없다. '지금까지 본' 은 optimal-stopping 9, 13 에서 문제 상황(면접한 사람)을 가리키므로 정상이다. kolyvagin-systems 192 의 '위 표에서' 는 표를 특정하는 기능이 있어 판정을 다음 차수로 넘긴다. 다음 차수에 볼 후보: '~로 충분하다', '~에 주의한다', '주의할 것은', '~하면 된다' 같은 조언투 잔재와, 4절이 금지한 '~의 출발점이다', '~을 말해 준다', '이 점이 중요하다', '여기서 나온다' 의 잔존 여부. grep 표적이 거의 소진되어 다음 차수는 한 분야(예: 최적화나 계산)의 문서를 통독하며 잡는 방식이 나을 수 있다",
+      "createdAt": "2026-09-24T12:47:29.261Z",
+      "seq": 1104
+    },
+    {
+      "id": "fb35f27d",
+      "title": "본문 링크가 수식 안에 들어가는 사고의 검사",
+      "priority": 12,
+      "note": "상시 항목. 링크를 문자열 위치로 삽입하는 작업을 하는 회차에서는 그 작업과 함께 돌리고, 그런 작업이 없는 회차에서는 건너뛴다. 2026-09-24 회차에 링크 63 자리를 건 뒤(완비성 9, 전처리 1, 연결성 7, 다양체 13, 그래프 39) 전수로 돌려 0 건이었다. 이 회차의 삽입기도 손으로 쓴 스크래치패드 스크립트(link.mjs)였고 지정한 file:line 의 첫 등장만 치환하므로, 수식 스팬 방어는 이 검사기가 사후로 맡았다. 검사기는 코드펜스를 건너뛰고 달러 두 개 블록 안의 줄과 인라인 달러 스팬을 모아 그 안에 /\\]\\([a-z0-9-]+\\.md\\)/ 가 있으면 보고한다(스크래치패드 mathlink.mjs, 20줄. 회차마다 스크래치패드가 비므로 다시 쓴다). 2026-09-22 여섯째 회차에 elliptic-curves 링크를 31 문서에 걸 때 deuring-correspondence 8줄 블록 안 \\text{초특이 타원곡선} 에 링크가 들어가 렌더 결과에 링크 문법이 글자 그대로 나온 사고가 있었다. 4절 수식 규칙의 여섯 검사가 전부 이것을 통과시킨다. dev/ 는 고치지 않는 것이 0절이므로 render-check 에 넣자는 제안은 독자에게 남긴다. 이번 회차에 링크 텍스트 안의 자리를 치환하면 링크가 중첩되는 사고(예: '[[그래프](graphs.md) 동형](graph-isomorphism.md)')도 확인했다. 후보 판정 단계에서 뺐고 사고는 없었지만, 이 검사기에 '링크 텍스트 안의 링크' 판정을 더하면 그 사고까지 잡을 수 있다",
+      "createdAt": "2026-09-24T12:47:56.241Z",
+      "seq": 1105
     },
     {
       "id": "d2720772",
@@ -1372,6 +1364,14 @@
       "seq": 1101
     },
     {
+      "id": "571a3b53",
+      "title": "기술집합론의 사영 계층",
+      "priority": 10,
+      "note": "borel-hierarchy 가 사영 계층의 첫 단계(Sigma^1_1 해석적 집합, Pi^1_1 여해석적 집합)만 정의하고 지나간다. 분야는 #set_theory #logic #topology. 부모는 borel-hierarchy. 내용: Sigma^1_n/Pi^1_n 의 계층, 사영 결정성, 완전집합 성질과 Lebesgue 가측성이 계층의 어느 단계까지 ZFC 에서 증명되는지, Sigma^1_1 의 완전집합 성질(Suslin), Pi^1_1 집합의 서수 분석(나무와 유계 정리). analytical-hierarchy 와 hyperarithmetical-hierarchy 의 효과적 판본과 나란히 둔다",
+      "createdAt": "2026-09-24T12:52:41.915Z",
+      "seq": 1107
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -1530,6 +1530,14 @@
       "note": "molecular-species 활용 넷째. 먼저 polya-enumeration 과 겹치는지 8절 기준으로 볼 것(2026-09-23 회차 note 가 남긴 판정 대상이다). 겹치면 새 문서 대신 polya-enumeration 에 한 절로 넣거나 molecular-species 쪽 활용 절을 보강한다. 내용: 종의 순환 지표 급수 Z_F, 분자종 X^n/H 의 순환 지표가 H 의 순환 지표와 같다는 것, 지수생성함수와 동형류 보통생성함수가 순환 지표의 특수화라는 것",
       "createdAt": "2026-09-24T01:03:47.506Z",
       "seq": 1072
+    },
+    {
+      "id": "9f77fbd9",
+      "title": "개관의 갈래 크기 재확인",
+      "priority": 8,
+      "note": "상시 항목. 2026-09-24 회차에 갈래가 열 줄을 넘던 개관 일곱을 모두 나눴다. foundations-overview(집합론 18줄 → 집합론의 기초/독립성과 강제법/기술집합론, 논리 17줄 → 논리의 체계/모형론/무한소/구성적 논리/역수학), combinatorics-overview(극단 조합론과 확률적 방법 20줄 → 극단 조합론/분할과 조합적 종/설계와 접촉 구조/확률적 방법과 무작위 구조, 겹치는 이름이던 격자·부호·설계 갈래는 격자와 부호로 좁혔다), topology-overview(대수적 위상 19줄 → 호모토피와 호몰로지/코호몰로지와 비틀림/호모토피론의 도구/층과 가역층), number-theory-overview(초등 정수론 15줄 → 합동과 소수/Diophantine 근사와 방정식), linear-algebra-overview(기초 14줄 → 공간과 사상/고윳값과 스펙트럼/수치 선형대수), computation-overview(계산가능성과 계산 모형 13줄 → 계산 가능성과 계층/계산 모형과 의미론), analysis-overview(극한과 연속 11줄 → 극한과 연속/함수공간의 정리/Lipschitz 조건), probability-overview(기초와 극한정리 11줄 → 확률 공간과 확률변수/극한정리/편차와 Gauss 구조), abstract-algebra-overview(환과 가군 10줄 → 환과 아이디얼/가군/대수기하로 가는 문). 회차 끝에 확인한 결과 열 줄 이상인 갈래는 하나도 남지 않았다. 새 문서를 개관 갈래에 더하는 회차마다 그 갈래가 다시 열 줄을 넘는지 보고, 넘으면 나눈다. 나눌 때 원래 목록의 화살표 사슬은 한 줄로 유지하고, 갈래 이름은 명사구로 짓고 같은 개관 안에서 이름이 겹치지 않게 한다. 갈래 줄은 본문 링크라 간선에 영향이 없으므로 검사는 render-check 와 헤딩 문장 grep 으로 충분하다",
+      "createdAt": "2026-09-24T13:01:14.099Z",
+      "seq": 1111
     },
     {
       "id": "fb947ff9",
