@@ -100,5 +100,6 @@ $T$ 가 완전하지 않으면 $\sigma$ 와 $\neg\sigma$ 의 모형이 따로 �
 - [o-최소성](o-minimality.md)
 - [구성가능 집합](constructible-sets.md)
 - [Ax–Grothendieck 정리](ax-grothendieck.md)
+- [안정 이론](stable-theories.md)
 
 #logic #foundations #algebra

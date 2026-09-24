@@ -42,6 +42,7 @@ graph TD
 - [모형론](model-theory.md): 구조와 논리식의 관계, 양화사 소거와 범주성
 - [구성가능 집합](constructible-sets.md): 대수적 집합의 Boolean 조합, Chevalley 정리와 양화사 소거의 동치
 - [초곱](ultraproducts.md): 초필터로 묶은 구조, Łoś 정리와 콤팩트성의 모형 구성
+- [안정 이론](stable-theories.md): 매개변수 위의 타입 개수로 매긴 조건, 순서 성질의 부재와 갈래짓기 독립
 - [o-최소성](o-minimality.md): 정의 가능 집합이 구간과 점의 유한 합집합이라는 조건, 셀 분해와 차원
 - [Pila–Wilkie 정리](pila-wilkie-theorem.md): 정의 가능 집합의 초월적 부분에 놓인 유리점의 셈, 산술기하에의 응용
 - [Ax–Grothendieck 정리](ax-grothendieck.md): 단사 다항식 사상은 전사, 유한체에서 특성 $0$ 으로의 이전
