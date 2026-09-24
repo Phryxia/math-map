@@ -61,6 +61,7 @@ graph TD
 - [기수](cardinality.md): 대각선 논법과 무한의 크기
 - [ZFC 공리계](zfc-axioms.md) → [서수](ordinals.md) → [선택공리](axiom-of-choice.md), [연속체 가설](continuum-hypothesis.md) → [강제법](forcing.md) → [Martin 의 공리](martins-axiom.md) → [Suslin 문제](suslin-problem.md), [Boolean 값 모형](boolean-valued-models.md)
 - [무작위 실수 강제법](random-real-forcing.md): [측도](measure.md) 대수를 조건으로 쓰는 강제법, Cohen 실수와의 대비
+- [Borel 계층](borel-hierarchy.md): 열린집합에서 가산 연산을 초한으로 되풀이한 단계, Suslin 정리
 - [기수 불변량](cardinal-characteristics.md): 영집합과 제1범주 아이디얼의 네 기수, Cichoń 도표
 - [Erdős–Sierpiński 쌍대성](erdos-sierpinski-duality.md): 연속체 가설 아래에서 두 아이디얼을 맞바꾸는 대합
 - [Luzin 집합과 Sierpiński 집합](luzin-sierpinski-sets.md): 한쪽 뜻으로만 작은 비가산 집합, 연속체 가설 아래의 구성

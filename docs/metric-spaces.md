@@ -124,8 +124,14 @@ Cauchy 수열이 모두 수렴하면 [완비](completeness.md)라 한다. 완비
 
 ## 더 알아보기
 
+### 거리에서 나오는 개념
+
 - [연속함수](continuity.md)
 - [완비성](completeness.md)
+- [Borel 계층](borel-hierarchy.md)
+
+### 노름과 내적
+
 - [볼록성](convexity.md)
 - [내적 공간](inner-product-spaces.md)
 
