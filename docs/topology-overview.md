@@ -32,7 +32,7 @@ graph TD
 - [콤팩트성](compactness.md), [연결성](connectedness.md): 두 기본 불변량
 - [분리공리](separation-axioms.md): Hausdorff 부터 정규까지, Urysohn 보조정리와 Tychonoff 정리
 
-## 대수적 위상
+## 호모토피와 호몰로지
 
 - [기본군](fundamental-group.md) → [덮개공간](covering-spaces.md): 고리와 그 들어 올림
 - [기본군](fundamental-group.md) → [호모토피군](homotopy-groups.md): 고리를 고차원 구면으로 올린 불변량
@@ -41,8 +41,12 @@ graph TD
 - [단체 호몰로지](homology.md) → [Brouwer 고정점 정리](brouwer-fixed-point.md): 수축의 부재가 고정점의 존재를 준다
 - [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Sperner 보조정리](sperner-lemma.md), [Kakutani 고정점 정리](kakutani-fixed-point.md): 조합적 증명과 집합값 사상으로의 확장
 - [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Lefschetz 고정점 정리](lefschetz-fixed-point.md): 호몰로지 대각합의 교대합이 고정점의 존재를 판정한다
+## 코호몰로지와 비틀림
+
 - [de Rham 코호몰로지](de-rham-cohomology.md) → [Hodge 이론](hodge-theory.md) → [Kähler 다양체](kahler-manifolds.md), [지표 정리](index-theorem.md)
 - [Reidemeister 비틀림](reidemeister-torsion.md) → [s-코보디즘 정리](s-cobordism.md): 단순 호모토피와 고차원 분류
+## 호모토피론의 도구
+
 - [분류공간](classifying-spaces.md): 주다발을 사상의 호모토피류로 세고, 특성류가 그 코호몰로지에서 나온다
 - [올화](fibrations.md): 호모토피를 올릴 수 있는 사상, 올과 전체공간과 밑공간의 호모토피군을 잇는 긴 완전열
 - [Hopf 불변량](hopf-invariant.md): 사상뿔의 컵곱이 주는 정수, 값이 $1$ 인 차원이 넷뿐이라는 Adams 의 정리
@@ -51,6 +55,8 @@ graph TD
 - [장애 이론](obstruction-theory.md): 사상을 세포 하나씩 늘릴 때 나오는 코호몰로지류가 확장과 단면의 존재를 판정한다
 - [스펙트럼 수열](spectral-sequences.md): 여과에서 나오는 페이지의 열, 올화에서 올과 밑공간의 코호몰로지로 전체공간의 것을 계산한다
 - [Postnikov 탑](postnikov-tower.md): 호모토피군을 차수별로 쌓은 탑, k-불변량이 호모토피군 목록에 없는 정보를 담는다
+## 층과 가역층
+
 - [층 코호몰로지](sheaf-cohomology.md): 전역 단면 함자의 유도 함자, 국소에서 전역으로 가는 장애
 - [Picard 군](picard-group.md): 가역층의 동형류가 이루는 군, 지수열이 가르는 위상적 조각과 정칙 조각
 
