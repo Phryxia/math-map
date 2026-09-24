@@ -95,7 +95,7 @@ $$
 
 가 정점 덮개이고 $\lvert C \rvert = \lvert M \rvert$ 임을 확인하면 된다. 덮개임은 $X \cap Z$ 에서 $Y \setminus Z$ 로 가는 간선이 없다는 사실(있으면 $Z$ 가 더 커진다)에서 나오고, 크기는 $C$ 의 각 정점이 $M$ 의 서로 다른 간선에 대응함을 보이면 된다. ∎
 
-König 정리는 Hall 정리와 동치이며, 두 정리 모두 [선형계획법](linear-programming.md) 쌍대성을 조합론에서 구체화한 것이다. 이분 그래프의 간선-정점 접합 행렬은 완전 유니모듈러이므로 매칭 **LP**(linear programming)의 최적해가 정수해가 되고, 그 쌍대가 정점 덮개 LP다. [네트워크 흐름](network-flow.md)의 최대유량 최소절단 정리에서도 같은 구조가 나온다.
+König 정리는 Hall 정리와 동치이며, 두 정리 모두 [선형계획법](linear-programming.md) 쌍대성을 조합론에서 구체화한 것이다. 이분 그래프의 간선-정점 접합 행렬은 완전 유니모듈러이므로 매칭 **LP**(linear programming)의 최적해가 정수해가 되고, 그 쌍대가 정점 덮개 LP다. 네트워크 흐름의 최대유량 최소절단 정리에서도 같은 구조가 나온다.
 
 보완적으로 König–Egerváry로부터 이분 그래프의 최대 독립집합 크기는 $\lvert V \rvert - \nu(G)$ 다.
 
@@ -134,7 +134,7 @@ $$
 
 ## 흐름, 다면체, matroid
 
-- **흐름과 절단**: 이분 매칭은 소스에서 $X$ 로, $Y$ 에서 싱크로 용량 1의 간선을 붙이면 최대유량 문제가 된다. König 정리는 그 경우의 최대유량 최소절단 정리다([네트워크 흐름](network-flow.md)).
+- **흐름과 절단**: 이분 매칭은 소스에서 $X$ 로, $Y$ 에서 싱크로 용량 1의 간선을 붙이면 최대유량 문제가 된다. König 정리는 그 경우의 최대유량 최소절단 정리다.
 - **선형계획과 다면체**: 이분 매칭 다면체는 $x_e \ge 0$ 과 정점별 차수 제약만으로 기술되며 꼭짓점이 모두 정수점이다(Birkhoff–von Neumann 정리: 이중확률행렬은 순열행렬의 볼록결합). 일반 그래프에서는 홀수 집합 제약이 추가로 필요하고, 이것이 Edmonds의 매칭 다면체 정리다([볼록성](convexity.md), [선형계획법](linear-programming.md)).
 - **Matroid 교차**: 이분 매칭은 두 분할 matroid의 교차 문제이며, [matroid](matroids.md) 교차 정리의 min-max 공식이 König 정리를 일반화한다.
 - **극값 조합론**: Hall 정리는 서로 다른 대표계(system of distinct representatives, SDR)의 존재 정리다. [셈의 기본 원리](counting-principles.md)와 [비둘기집 원리](pigeonhole-principle.md)로 필요조건을 세우고 귀납으로 충분성을 얻는다. Latin square의 확장, 이분 그래프의 간선 색칠([그래프 색칠](graph-coloring.md))이 모두 이 따름정리다.

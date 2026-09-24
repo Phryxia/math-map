@@ -91,7 +91,7 @@ $$
 x \equiv_L y \iff \forall z \in \Sigma^\ast,\ \left( xz \in L \iff yz \in L \right).
 $$
 
-이는 [동치관계](equivalence-relations.md)이며, 오른쪽 접합에 대해 불변이다. 즉 $x \equiv_L y$ 이면 모든 $a$ 에 대해 $xa \equiv_L ya$ 다. 동치류의 개수를 $L$ 의 **지수**(index)라 한다.
+이는 동치관계이며, 오른쪽 접합에 대해 불변이다. 즉 $x \equiv_L y$ 이면 모든 $a$ 에 대해 $xa \equiv_L ya$ 다. 동치류의 개수를 $L$ 의 **지수**(index)라 한다.
 
 **정리 (Myhill–Nerode).** $L$ 이 정규언어인 것과 $\equiv_L$ 의 지수가 유한한 것은 동치다. 이때 최소 DFA의 상태 수는 정확히 그 지수이며, 최소 DFA는 동형을 제외하고 유일하다.
 
@@ -142,7 +142,7 @@ NFA에 대해서는 이야기가 달라진다. NFA의 동치성·전체성 판�
 
 ## 이론적 연결
 
-- **[동치관계](equivalence-relations.md).** Myhill–Nerode는 "언어가 스스로 자신의 최소 기계를 정의한다"는 진술이다. 비슷한 구조가 [군](groups.md) 작용의 궤도 분해나 최소 모델 구성에서도 반복된다.
+- **동치관계.** Myhill–Nerode는 "언어가 스스로 자신의 최소 기계를 정의한다"는 진술이다. 비슷한 구조가 [군](groups.md) 작용의 궤도 분해나 최소 모델 구성에서도 반복된다.
 - **대수와 논리.** 정규언어는 문자열 위의 단항 2차 논리(MSO)로 정의 가능한 언어와 일치한다(Büchi–Elgot–Trakhtenbrot 정리). [1차 논리](first-order-logic.md)로만 정의 가능한 언어는 스타 없는 정규언어와 일치한다.
 - **학습 이론.** Angluin의 L* 알고리즘은 소속 질의와 동치 질의만으로 최소 DFA를 다항시간에 학습한다. 관측표의 행이 곧 Myhill–Nerode 동치류의 근사다[^2].
 

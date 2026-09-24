@@ -38,7 +38,7 @@ S_n \thickspace=\thickspace S_0 + \sum_{k=1}^{n} \xi_k, \qquad
 P(\xi_k = \pm e_i) = \frac{1}{2d} \ \ (i = 1, \dots, d)
 $$
 
-로 쓴다. 좌표별 대칭성 때문에 $\mathbb{E}[\xi_k] = 0$ 이고, 따라서 각 좌표는 [Martingale](martingales.md)이다. 일반 그래프 $G = (V, E)$ 위의 단순 무작위 걷기는 현재 정점의 이웃 중 하나를 균등하게 고르는 연쇄이며, 전이확률은 $xy \in E$ 일 때 $P(x, y) = 1/\deg(x)$ 다. 가중 그래프에서는 변 $xy$ 의 컨덕턴스 $c(xy) \gt 0$ 에 비례해 고른다.
+로 쓴다. 좌표별 대칭성 때문에 $\mathbb{E}[\xi_k] = 0$ 이고, 따라서 각 좌표는 Martingale 이다. 일반 그래프 $G = (V, E)$ 위의 단순 무작위 걷기는 현재 정점의 이웃 중 하나를 균등하게 고르는 연쇄이며, 전이확률은 $xy \in E$ 일 때 $P(x, y) = 1/\deg(x)$ 다. 가중 그래프에서는 변 $xy$ 의 컨덕턴스 $c(xy) \gt 0$ 에 비례해 고른다.
 
 $$
 P(x, y) \thickspace=\thickspace \frac{c(xy)}{c(x)}, \qquad c(x) = \sum_{y \sim x} c(xy).
@@ -137,7 +137,7 @@ $$
 ## 관련 구조
 
 - 도달 확률이 조화함수인 것은 연속 세계의 Brownian motion 과 Laplace 방정식의 관계([Dirichlet 문제](dirichlet-problem.md)의 확률적 해법)의 이산판이다.
-- $h(X_n)$ 이 martingale 이라는 관찰과 선택적 정지 정리를 쓰면 도달 확률 공식이 즉시 나온다. [Martingale](martingales.md)과 무작위 걷기는 같은 원리를 서로 다른 언어로 쓴 것이다.
+- $h(X_n)$ 이 martingale 이라는 관찰과 선택적 정지 정리를 쓰면 도달 확률 공식이 즉시 나온다. Martingale 과 무작위 걷기는 같은 원리를 서로 다른 언어로 쓴 것이다.
 - 유효저항은 [그래프 Laplacian](graph-laplacian.md)의 유사역행렬로 표현되므로, 스펙트럼 이론과 확률 이론이 만나는 지점이기도 하다.
 
 # 활용

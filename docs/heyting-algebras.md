@@ -20,7 +20,7 @@ $$
 
 실직선의 열린집합에서 $A$ 를 0 을 뺀 실직선이라 하면 여집합이 한 점이고 그 안의 가장 큰 열린집합은 공집합이므로 $\neg A=\varnothing$ 이고 $A\vee\neg A$ 가 전체가 아니다. 여집합을 취하면 열린집합 밖으로 나가므로 안쪽으로 잘라 들여야 하고, 그 과정에서 경계가 버려진다.
 
-[Kripke 의미론](kripke-semantics.md)에서 명제는 한 번 참이면 이후에도 참인 상향닫힌 집합이다. 상향닫힌 집합의 여집합은 하향닫힌 집합이라 명제가 되지 못하고, 상향닫힌 부분만 남긴 것이 부정이 된다.
+Kripke 의미론에서 명제는 한 번 참이면 이후에도 참인 상향닫힌 집합이다. 상향닫힌 집합의 여집합은 하향닫힌 집합이라 명제가 되지 못하고, 상향닫힌 부분만 남긴 것이 부정이 된다.
 
 ```mermaid
 graph TD
@@ -99,7 +99,7 @@ $$
 U \to V = \lbrace\thinspace w \in W : \forall v \ge w,\thickspace v \in U \Rightarrow v \in V \thinspace\rbrace
 $$
 
-다. [Kripke 의미론](kripke-semantics.md)의 강제 조건을 대수화한 것이다.
+다. Kripke 의미론의 강제 조건을 대수화한 것이다.
 
 **Lindenbaum–Tarski 대수.** 직관주의 명제논리의 논리식을 상호 도출 가능성으로 나눈 몫은 Heyting algebra 이고 $[\varphi] \le [\psi]$ 는 $\varphi \vdash \psi$ 를 뜻한다. [동치관계](equivalence-relations.md)로 나누는 전형적인 구성이다.
 

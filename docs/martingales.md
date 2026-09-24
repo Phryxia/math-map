@@ -50,7 +50,7 @@ $(X_n)$ 이 martingale 이고 $\varphi$ 가 [볼록](convexity.md)함수이며 $
 - **분산 보정.** 위의 상황에서 $\mathrm{Var}(\xi_k) = \sigma^2$ 이면 $S_n^2 - n\sigma^2$ 이 martingale 이다. 전개하면 교차항이 조건부로 사라진다.
 - **곱 martingale.** $\xi_k \gt 0$ 이 독립이고 $E[\xi_k] = 1$ 이면 $M_n = \prod_{k \le n} \xi_k$ 는 martingale 이다. 우도비(likelihood ratio)가 이 꼴이며, [측도 변환](change-of-measure.md)의 밀도과정이 바로 곱 martingale 이다.
 - **Doob martingale.** 적분 가능한 $Z$ 와 임의의 filtration 에 대해 $X_n = E[Z \mid \mathcal F_n]$ 은 martingale 이다(탑 성질). 정보가 점점 드러나면서 예측이 갱신되는 과정이며, Azuma 부등식의 표준 재료다.
-- **조화함수.** [Markov 연쇄](markov-chains.md)의 전이행렬 $P$ 와 $Ph = h$ 를 만족하는 조화함수 $h$ 에 대해 $h(X_n)$ 은 martingale 이다. 우조화함수면 supermartingale 이다.
+- **조화함수.** Markov 연쇄의 전이행렬 $P$ 와 $Ph = h$ 를 만족하는 조화함수 $h$ 에 대해 $h(X_n)$ 은 martingale 이다. 우조화함수면 supermartingale 이다.
 
 ## Martingale 변환
 
@@ -150,7 +150,7 @@ $$
 
 ## 확률과정과 다른 분야
 
-- **조화함수와 도달 확률.** [Markov 연쇄](markov-chains.md)에서 경계값 문제의 해는 $h(X_n)$ 이 martingale 이라는 사실과 선택적 정지 정리로 표현된다. [무작위 걷기](random-walks.md)의 전압-도달확률 대응이 이 원리의 물리적 표현이다.
+- **조화함수와 도달 확률.** Markov 연쇄에서 경계값 문제의 해는 $h(X_n)$ 이 martingale 이라는 사실과 선택적 정지 정리로 표현된다. [무작위 걷기](random-walks.md)의 전압-도달확률 대응이 이 원리의 물리적 표현이다.
 - **강한 수렴 결과.** 독립 합의 [큰 수의 법칙](law-of-large-numbers.md)은 $\sum \xi_k / k$ 형태의 martingale 수렴과 Kronecker 보조정리로 증명할 수 있다. Lévy 의 0-1 법칙, Kolmogorov 0-1 법칙도 Doob martingale 의 수렴으로 나온다.
 - **통계.** 순차적 검정(sequential probability ratio test, SPRT)의 우도비는 곱 martingale 이고, 정지 규칙의 오류 확률 경계는 선택적 정지 정리와 최대부등식에서 직접 나온다. [측도 변환](change-of-measure.md)의 Radon–Nikodym 밀도과정도 같은 구조다.
 - **연속시간.** Brownian motion 에서 $B_t$ 와 $B_t^2 - t$ 그리고 $\exp(\theta B_t - \theta^2 t / 2)$ 는 모두 martingale 이며, Itô 적분은 "martingale 변환"의 연속시간 판이다. 금융의 무차익 가격결정은 할인된 가격과정을 martingale 로 만드는 측도의 존재로 서술된다.

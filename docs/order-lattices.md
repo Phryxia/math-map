@@ -116,7 +116,7 @@ graph BT
 
 *증명의 요지.* $x \in L$ 에 $\lbrace p \in P : p \le x\rbrace$ 를 대응시킨다. 분배법칙에서 이 대응이 이음과 만남을 보존하고, 유한성에서 모든 원소가 자기 아래의 이음기약 원소들의 이음이 되어 단사이며, 하향닫힌 집합족의 원소가 모두 상에 나타나 전사다. ∎
 
-역방향으로 유한 부분순서집합 $P$ 에서 하향닫힌 집합족을 만들면 유한 분배격자가 나오므로, 유한 분배격자와 유한 부분순서집합이 서로 번역된다. [Boolean algebra](boolean-algebras.md)의 Stone 표현 정리는 $P$ 가 반사슬일 때의 경우다.
+역방향으로 유한 부분순서집합 $P$ 에서 하향닫힌 집합족을 만들면 유한 분배격자가 나오므로, 유한 분배격자와 유한 부분순서집합이 서로 번역된다. Boolean algebra 의 Stone 표현 정리는 $P$ 가 반사슬일 때의 경우다.
 
 ## 쌍대성
 
@@ -140,7 +140,7 @@ $$
 
 ## 논리의 대수
 
-명제를 함의로 순서지으면 이접이 이음, 합취가 만남이다. 고전 명제논리의 Lindenbaum–Tarski 대수가 [Boolean algebra](boolean-algebras.md)이고, 직관주의 명제논리의 것이 [Heyting algebra](heyting-algebras.md)다. 두 구조 모두 분배격자이며, 차이는 보원을 요구하는지에 있다.
+명제를 함의로 순서지으면 이접이 이음, 합취가 만남이다. 고전 명제논리의 Lindenbaum–Tarski 대수가 Boolean algebra 이고, 직관주의 명제논리의 것이 [Heyting algebra](heyting-algebras.md)다. 두 구조 모두 분배격자이며, 차이는 보원을 요구하는지에 있다.
 
 ## 정적 분석의 추상 영역
 

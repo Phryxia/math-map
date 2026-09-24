@@ -57,7 +57,7 @@ $\Lambda$ 안에 출신이 다른 두 원소가 놓인다.
 
 ## Euler 계의 역할
 
-Rubin 의 증명은 한 방향의 나눔을 [Euler 계](euler-systems.md)로 얻는다. 순환체의 단수
+Rubin 의 증명은 한 방향의 나눔을 Euler 계로 얻는다. 순환체의 단수
 
 $$
 c_n=1-\zeta_{p^{n}},\qquad
@@ -215,7 +215,7 @@ $p$ 가 $h$ 를 나누지 않는 정칙소수일 조건이 $p\nmid B_2B_4\cdots 
 
 ## Stark 계열 추측 확장
 
-$L$ 함수의 특수값이 대수적 원소로 실현된다는 Stark 의 예측은 순환체 단수를 일반 수체로 확장하려는 시도다. Rubin–Stark 원소가 예측대로 존재한다면 그것이 Euler 계를 이루고, 총실체 위의 주추측과 Gross–Stark 추측이 같은 논법으로 정리될 것이다. 아직 존재성 자체가 추측 단계이고, 알려진 Euler 계의 목록이 짧다는 [Euler 계](euler-systems.md)의 한계가 여기서도 나타난다.
+$L$ 함수의 특수값이 대수적 원소로 실현된다는 Stark 의 예측은 순환체 단수를 일반 수체로 확장하려는 시도다. Rubin–Stark 원소가 예측대로 존재한다면 그것이 Euler 계를 이루고, 총실체 위의 주추측과 Gross–Stark 추측이 같은 논법으로 정리될 것이다. 아직 존재성 자체가 추측 단계이고, 알려진 Euler 계의 목록이 짧다는 Euler 계의 한계가 여기서도 나타난다.
 
 [^1]: 표준 교재는 L. Washington, *Introduction to Cyclotomic Fields* (2판, Springer 1997) 7, 13, 15 장. 주추측의 두 증명은 B. Mazur, A. Wiles, *Class fields of abelian extensions of* $\mathbb Q$ (Invent. Math. **76**, 1984) 와 K. Rubin 의 부록(Washington 2판 15 장). Ferrero–Washington 은 Ann. of Math. **109** (1979). 총실체는 A. Wiles, *The Iwasawa conjecture for totally real fields*, Ann. of Math. **131** (1990). 타원곡선 쪽은 C. Skinner, E. Urban, *The Iwasawa main conjectures for* $\mathrm{GL}\_2$ (Invent. Math. **195**, 2014).
 

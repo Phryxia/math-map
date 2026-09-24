@@ -113,7 +113,7 @@ $$
 E\big[\thinspace E[X \mid \mathcal{G}] \thinspace\big|\thinspace \mathcal{H}\thinspace\big] \thickspace=\thickspace E[X \mid \mathcal{H}].
 $$
 
-증명: 좌변은 $\mathcal H$ 가측이다. $A \in \mathcal H \subseteq \mathcal G$ 에 대해 $\int_A E[E[X \mid \mathcal G] \mid \mathcal H] \thinspace dP = \int_A E[X \mid \mathcal G] \thinspace dP = \int_A X \thinspace dP$ 이며, 첫 등식은 $\mathcal H$ 에 대한 정의, 둘째 등식은 $A \in \mathcal G$ 이므로 $\mathcal G$ 에 대한 정의다. 유일성으로 결론이 난다. 두 번 조건을 걸면 거친 쪽만 남는 이 성질을 [Martingale](martingales.md) 이론의 계산에서 되풀이해 쓴다.
+증명: 좌변은 $\mathcal H$ 가측이다. $A \in \mathcal H \subseteq \mathcal G$ 에 대해 $\int_A E[E[X \mid \mathcal G] \mid \mathcal H] \thinspace dP = \int_A E[X \mid \mathcal G] \thinspace dP = \int_A X \thinspace dP$ 이며, 첫 등식은 $\mathcal H$ 에 대한 정의, 둘째 등식은 $A \in \mathcal G$ 이므로 $\mathcal G$ 에 대한 정의다. 유일성으로 결론이 난다. 두 번 조건을 걸면 거친 쪽만 남는 이 성질을 Martingale 이론의 계산에서 되풀이해 쓴다.
 
 **끌어내기 (taking out what is known).** $W$ 가 $\mathcal G$ 가측이고 $XW$ 가 적분 가능하면
 
@@ -163,7 +163,7 @@ $$
 
 ## Martingale 과 확률과정
 
-시간 축을 가진 $\sigma$ -대수의 증가열 $\mathcal F_0 \subseteq \mathcal F_1 \subseteq \dots$ (filtration)을 두면 $E[X_{n+1} \mid \mathcal F_n]$ 은 "현재까지의 정보로 본 다음 값의 예측"이다. 이 예측이 현재 값과 같으면 [Martingale](martingales.md)이다. 탑 성질은 곧바로 $E[X_n] = E[X_0]$ 를 주고, 여기서 선택적 정지 정리, Doob 부등식, martingale 수렴 정리가 뻗어 나온다. [Markov 연쇄](markov-chains.md)의 Markov 성질도 $E[f(X_{n+1}) \mid \mathcal F_n] = (Pf)(X_n)$ 라는 조건부 기댓값 등식으로 쓰는 것이 표준이다.
+시간 축을 가진 $\sigma$ -대수의 증가열 $\mathcal F_0 \subseteq \mathcal F_1 \subseteq \dots$ (filtration)을 두면 $E[X_{n+1} \mid \mathcal F_n]$ 은 "현재까지의 정보로 본 다음 값의 예측"이다. 이 예측이 현재 값과 같으면 Martingale 이다. 탑 성질은 곧바로 $E[X_n] = E[X_0]$ 를 주고, 여기서 선택적 정지 정리, Doob 부등식, martingale 수렴 정리가 뻗어 나온다. [Markov 연쇄](markov-chains.md)의 Markov 성질도 $E[f(X_{n+1}) \mid \mathcal F_n] = (Pf)(X_n)$ 라는 조건부 기댓값 등식으로 쓰는 것이 표준이다.
 
 ## 통계와 기계학습
 

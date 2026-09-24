@@ -91,7 +91,7 @@ $$
 f(x)=P(x)\thinspace u(x),\qquad \deg P=d,\ u\ \text{는 원판에서 단위}
 $$
 
-무한차원이 유한차원으로 잘리므로 [Dwork 이론](dwork-rationality.md)에서 [Fredholm 행렬식](fredholm-determinant.md)을 다룰 수 있다. 완전연속 작용소의 특성급수가 정함수이고 그 Newton 다각형이 고윳값의 부치를 층층이 준다.
+무한차원이 유한차원으로 잘리므로 Dwork 이론에서 [Fredholm 행렬식](fredholm-determinant.md)을 다룰 수 있다. 완전연속 작용소의 특성급수가 정함수이고 그 Newton 다각형이 고윳값의 부치를 층층이 준다.
 
 ## $p$ 진 exp 의 수렴반경
 
@@ -109,7 +109,7 @@ v(x)\gt\frac1{p-1}
 |x|\_p\lt p^{-1/(p-1)}\lt 1
 $$
 
-다각형의 기울기가 점근적으로 $-1/(p-1)$ 이라는 말과 같다. $\pi^{p-1}=-p$ 이면 $v(\pi)=\frac1{p-1}$ 이라 $\exp(\pi x)$ 는 열린 단위원판에서 겨우 수렴하고, $x^p$ 항을 뺀 $\exp(\pi(x-x^p))$ 가 반경을 $1$ 너머로 민다. 이 경계가 [Dwork 의 분해함수](dwork-rationality.md)가 넘은 벽이다.
+다각형의 기울기가 점근적으로 $-1/(p-1)$ 이라는 말과 같다. $\pi^{p-1}=-p$ 이면 $v(\pi)=\frac1{p-1}$ 이라 $\exp(\pi x)$ 는 열린 단위원판에서 겨우 수렴하고, $x^p$ 항을 뺀 $\exp(\pi(x-x^p))$ 가 반경을 $1$ 너머로 민다. 이 경계가 Dwork 의 분해함수가 넘은 벽이다.
 
 ## Frobenius 고윳값
 
@@ -137,7 +137,7 @@ Eisenstein 다항식 $x^n+pa_{n-1}x^{n-1}+\dots+pa_0$ ( $p\nmid a_0$ ) 의 다�
 - **분기 계산.** 수체나 국소체의 확대에서 소수의 분기를 정의다항식의 계수만으로 읽는다. [Dedekind 정역](dedekind-domains.md)의 분해 이론을 계산할 때 첫 단계다.
 - **다항식 인수분해.** $\mathbb Q_p$ 위의 인수분해 알고리즘(Montes, Ore)이 다각형으로 근을 층층이 나눈 뒤 각 층에서 재귀한다.
 - **$p$ 진 해석.** 멱급수의 영점 개수, Weierstrass 예비정리, Iwasawa 이론의 $\mu$ 와 $\lambda$ 불변량이 다각형의 언어로 진술된다.
-- **산술기하.** [Dwork 이론](dwork-rationality.md)과 결정 코호몰로지에서 Frobenius 고윳값의 부치 분포가 다각형이고, Newton 다각형이 Hodge 다각형 위에 놓인다는 Mazur 의 정리가 두 세계를 잇는다. 여러 변수 지수합의 Adolphson–Sperber 한계가 같은 줄기다.
+- **산술기하.** Dwork 이론과 결정 코호몰로지에서 Frobenius 고윳값의 부치 분포가 다각형이고, Newton 다각형이 Hodge 다각형 위에 놓인다는 Mazur 의 정리가 두 세계를 잇는다. 여러 변수 지수합의 Adolphson–Sperber 한계가 같은 줄기다.
 - **트로피컬 기하.** 최솟값이 두 번 달성된다는 조건은 부치를 트로피컬 반환으로 보는 관점에서 트로피컬 근의 정의다. Newton 다각형은 1 차원 트로피컬 기하다.
 
 # 연관 문서

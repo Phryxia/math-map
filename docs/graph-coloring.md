@@ -100,7 +100,7 @@ $$
 \chi(G) \le d(G) + 1
 $$
 
-를 얻는다. 여기서 $d(G)$ 는 퇴화도다. 평면 그래프는 항상 차수 5 이하 정점을 가지므로 $d \le 5$ 이고, 즉 6색으로 칠할 수 있다는 사실이 즉시 따라온다([평면 그래프](planar-graphs.md)).
+를 얻는다. 여기서 $d(G)$ 는 퇴화도다. 평면 그래프는 항상 차수 5 이하 정점을 가지므로 $d \le 5$ 이고, 즉 6색으로 칠할 수 있다는 사실이 즉시 따라온다.
 
 반대로 탐욕 색칠은 순서에 극도로 민감하다. 완전 이분 그래프에서도 나쁜 순서를 고르면 색을 임의로 많이 쓰게 만들 수 있다. 즉 탐욕은 상한 증명 도구이지 좋은 [근사 알고리즘](approximation-algorithms.md)이 아니다.
 
@@ -142,7 +142,7 @@ $$
 
 평면 그래프는 $\chi \le 4$ 이다(Appel–Haken, 1976[^1]; Robertson–Sanders–Seymour–Thomas의 재증명, 1997[^2]). 두 증명 모두 불가피 집합(unavoidable set)과 축약 가능 배치(reducible configuration)를 컴퓨터로 검사하는 구조이며, 사람 손으로 검증 가능한 증명은 아직 없다. Gonthier가 Coq로 형식 검증했다.
 
-반면 5색 정리는 한 쪽짜리 증명이 있다. 자세한 스케치는 [평면 그래프](planar-graphs.md)에 둔다. 하한 쪽은 $K_4$ 가 평면이므로 4가 최적이다.
+반면 5색 정리는 한 쪽짜리 증명이 있다. 하한 쪽은 $K_4$ 가 평면이므로 4가 최적이다.
 
 ## 삭제-축약 점화식
 
@@ -188,11 +188,11 @@ $k \ge 3$ 고정에 대해 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 
 - **스케줄링과 매칭**: 이분 그래프의 간선 색칠은 작업-기계 배정을 시간 단위로 쪼개는 문제이며, König 정리에 의해 $\Delta$ 개 시간대로 충분하다. 이 결과는 [매칭과 Hall 정리](matchings.md)의 완전 매칭 분해로 증명된다.
 - **독립집합 세기**: $P(G,k)$ 의 계수는 그래프의 구조적 정보를 담고 있고, [생성함수](generating-functions.md)의 관점에서 다루면 부분집합 합 공식이 나온다.
-- **Ramsey 하한**: "클리크도 독립집합도 작다"는 그래프의 존재는 [확률적 방법](probabilistic-method.md)으로 보이며, 그런 그래프는 자동으로 채색수가 큰데 클리크는 작은 예가 된다.
+- **Ramsey 하한**: "클리크도 독립집합도 작다"는 그래프의 존재는 확률적 방법으로 보이며, 그런 그래프는 자동으로 채색수가 큰데 클리크는 작은 예가 된다.
 
 ## 이론적 위치
 
-색칠은 "국소 제약에서 전역 분할을 얻는" 문제의 원형이다. 같은 형태가 [선형계획법](linear-programming.md)의 완화(분수 채색수), 준정부호 계획법(Lovász theta 함수, 완벽 그래프 이론), [확률적 방법](probabilistic-method.md)의 Lovász local lemma 기반 색칠 정리에서 반복된다. 특히 완벽 그래프(모든 유도 부분그래프에서 $\omega = \chi$ 인 그래프)의 이론은 $\omega \le \chi$ 라는 자명한 부등식이 언제 등호가 되는지를 묻는 질문이고, 강한 완벽 그래프 정리(2006)로 답이 나왔다. 색칠의 어려움은 대부분 $\omega$ 와 $\chi$ 사이의 간격에서 나온다는 관점이 여기서 가장 뚜렷하다.
+색칠은 "국소 제약에서 전역 분할을 얻는" 문제의 원형이다. 같은 형태가 [선형계획법](linear-programming.md)의 완화(분수 채색수), 준정부호 계획법(Lovász theta 함수, 완벽 그래프 이론), 확률적 방법의 Lovász local lemma 기반 색칠 정리에서 반복된다. 특히 완벽 그래프(모든 유도 부분그래프에서 $\omega = \chi$ 인 그래프)의 이론은 $\omega \le \chi$ 라는 자명한 부등식이 언제 등호가 되는지를 묻는 질문이고, 강한 완벽 그래프 정리(2006)로 답이 나왔다. 색칠의 어려움은 대부분 $\omega$ 와 $\chi$ 사이의 간격에서 나온다는 관점이 여기서 가장 뚜렷하다.
 
 [^1]: K. Appel, W. Haken, "Every planar map is four colorable", Bulletin of the American Mathematical Society 82 (1976), https://www.ams.org/journals/bull/1976-82-05/S0002-9904-1976-14122-5/
 [^2]: N. Robertson, D. Sanders, P. Seymour, R. Thomas, "The Four-Colour Theorem", Journal of Combinatorial Theory Series B 70 (1997), https://doi.org/10.1006/jctb.1997.1750

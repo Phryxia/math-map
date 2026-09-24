@@ -35,7 +35,7 @@ $$
 \char35{}\lbrace x:f(x)=0\rbrace=\frac1q\sum_{t\in\mathbb F_q}\sum_{x}\psi\big(\mathrm{Tr}\_{\mathbb F_q/\mathbb F_p}(tf(x))\big)
 $$
 
-가 된다. 기하 문제가 $\sum_x\psi(\mathrm{Tr}\thinspace f(x))$ 꼴의 지수합 하나로 바뀐다. [Gauss 합](gauss-sums.md)은 $f(x)=ax$ 에 곱셈 지표를 곁들인 사례이고 Kloosterman 합은 $f(x)=ax+b/x$ 다.
+가 된다. 기하 문제가 $\sum_x\psi(\mathrm{Tr}\thinspace f(x))$ 꼴의 지수합 하나로 바뀐다. Gauss 합은 $f(x)=ax$ 에 곱셈 지표를 곁들인 사례이고 Kloosterman 합은 $f(x)=ax+b/x$ 다.
 
 ## 분해함수
 
@@ -191,7 +191,7 @@ $p$ 진 부치는 유리성보다 미세한 정보를 준다. 다항식 $\sum c_
 
 ## Gauss 합과 Stickelberger 정리
 
-$\mathbb Q(\zeta_p)$ 에서 $p$ 위의 유일한 [소 아이디얼](prime-ideals.md)이 $(\zeta_p-1)$ 이고 $\pi$ 는 그 생성원과 결부된다. [Gauss 합](gauss-sums.md)의 $p$ 진 크기는 Stickelberger 정리가 준다. $\omega$ 를 Teichmüller 지표라 할 때
+$\mathbb Q(\zeta_p)$ 에서 $p$ 위의 유일한 [소 아이디얼](prime-ideals.md)이 $(\zeta_p-1)$ 이고 $\pi$ 는 그 생성원과 결부된다. Gauss 합의 $p$ 진 크기는 Stickelberger 정리가 준다. $\omega$ 를 Teichmüller 지표라 할 때
 
 $$
 \mathrm{ord}\_p\thinspace g(\omega^{-a})=\frac{a}{p-1},\qquad 0\le a\lt p-1

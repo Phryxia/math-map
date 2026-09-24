@@ -109,7 +109,7 @@ $$
 \lbrace \mathbb{E}[Z \mid \mathcal{G}] : \mathcal{G} \subseteq \mathcal{F} \ \text{sub-sigma-algebra} \rbrace
 $$
 
-는 UI 다. Jensen 부등식으로 절단 기댓값을 $Z$ 의 절단 기댓값으로 눌러 얻으며, [조건부 기댓값](conditional-expectation.md)이 정의하는 martingale 이론의 기본 사실이다.
+는 UI 다. Jensen 부등식으로 절단 기댓값을 $Z$ 의 절단 기댓값으로 눌러 얻으며, 조건부 기댓값이 정의하는 martingale 이론의 기본 사실이다.
 
 - **유한합과 볼록결합**: UI 족 두 개의 합, UI 족의 볼록포(convex hull), UI 족의 $L^1$ 폐포는 모두 UI 다.
 
@@ -162,7 +162,7 @@ $$
 M_n = \mathbb{E}[M_\infty \mid \mathcal{F}\_n]
 $$
 
-를 가지므로, UI martingale 은 적분가능한 확률변수 하나를 [조건부 기댓값](conditional-expectation.md)으로 펼친 것이다. optional stopping 정리의 성립 여부도 정지시각까지의 족이 UI 인지로 판정된다.
+를 가지므로, UI martingale 은 적분가능한 확률변수 하나를 조건부 기댓값으로 펼친 것이다. optional stopping 정리의 성립 여부도 정지시각까지의 족이 UI 인지로 판정된다.
 
 ## 통계와 극한정리
 
