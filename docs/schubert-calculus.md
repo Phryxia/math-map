@@ -131,7 +131,7 @@ $\sigma_1^{k(n-k)}$ 은 일반 위치의 여차원 $1$ 조건을 차원만큼 �
 - **양자 코호몰로지와 등각장론**: 양자 변형의 구조상수가 $\widehat{\mathfrak{sl}}\_n$ 준위 $k$ 의 융합 규칙과 일치한다.
 
 [^1]: W. Fulton, *Young Tableaux*, Cambridge, 1997. 9 장이 Schubert 계산과 Littlewood–Richardson 규칙의 표준 서술이다.
-[^2]: A. Knutson, T. Tao, *The honeycomb model of GL_n(C) tensor products I*, JAMS 12 (1999). 포화 정리.
+[^2]: A. Knutson, T. Tao, *The honeycomb model of* $\mathrm{GL}\_n(\mathbb C)$ *tensor products I*, JAMS 12 (1999). 포화 정리.
 
 # 연관 문서
 

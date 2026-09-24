@@ -145,7 +145,7 @@ $$
 실무에서 매칭을 쓸 때 확인할 것은 세 가지다. 첫째, 문제가 정말 이분인가. 이분이면 $O(E\sqrt{V})$ 로 끝나지만 일반 그래프면 blossom이 필요하다. 둘째, 가중치가 있는가. 있으면 Hungarian 또는 최소비용 최대유량으로 간다. 셋째, "불가능하다"는 답이 필요한가. 필요하다면 Hall 위반 집합이나 König 덮개를 함께 출력하는 것이 좋다. 이들은 검증 가능한 증명서이므로 디버깅과 설명 모두에 쓸 수 있다.
 
 [^1]: P. Hall, "On Representatives of Subsets", Journal of the London Mathematical Society s1-10 (1935), https://doi.org/10.1112/jlms/s1-10.37.26
-[^2]: J. E. Hopcroft, R. M. Karp, "An n^{5/2} Algorithm for Maximum Matchings in Bipartite Graphs", SIAM Journal on Computing 2 (1973), https://doi.org/10.1137/0202019
+[^2]: J. E. Hopcroft, R. M. Karp, "An $n^{5/2}$ Algorithm for Maximum Matchings in Bipartite Graphs", SIAM Journal on Computing 2 (1973), https://doi.org/10.1137/0202019
 
 # 연관 문서
 
