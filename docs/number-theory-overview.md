@@ -109,7 +109,7 @@ graph TD
 - [Fontaine–Mazur 추측](fontaine-mazur.md), [p 진 Hodge 이론](p-adic-hodge-theory.md) → [Sen 이론](sen-theory.md)
 - [Herbrand–Ribet 정리](herbrand-ribet.md): 류수와 모듈러 형식의 합동
 - [Dwork 의 유리성 정리](dwork-rationality.md) → [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)
-- [대수적 K 이론](algebraic-k-theory.md)
+- [대수적 K 이론](algebraic-k-theory.md): Quillen–Lichtenbaum 정리가 수체의 $K$ 군을 에탈 코호몰로지로 계산한다
 
 ## Langlands 강령과 자기동형 표현
 
