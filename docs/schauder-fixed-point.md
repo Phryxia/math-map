@@ -58,7 +58,7 @@ $$
 
 ## 다른 고정점 정리와의 관계
 
-[Banach 고정점 정리](banach-fixed-point.md)는 완비성과 축약 조건으로 유일한 고정점과 그것을 찾는 반복을 준다. Schauder 정리는 축약을 요구하지 않는 대신 콤팩트성을 요구하고 존재만 준다. 두 정리를 합친 Krasnoselskii 정리는 $T=T_1+T_2$ 가 축약과 콤팩트 사상의 합일 때 고정점을 준다. 집합값 사상으로 넓힌 것이 Kakutani 정리의 무한차원 판인 Ky Fan–Glicksberg 정리다.
+[Banach 고정점 정리](banach-fixed-point.md)는 [완비성](completeness.md)과 축약 조건으로 유일한 고정점과 그것을 찾는 반복을 준다. Schauder 정리는 축약을 요구하지 않는 대신 콤팩트성을 요구하고 존재만 준다. 두 정리를 합친 Krasnoselskii 정리는 $T=T_1+T_2$ 가 축약과 콤팩트 사상의 합일 때 고정점을 준다. 집합값 사상으로 넓힌 것이 Kakutani 정리의 무한차원 판인 Ky Fan–Glicksberg 정리다.
 
 # 활용
 

@@ -84,7 +84,7 @@ $$
 
 **정리.** $1\le p\le\infty$ 에서 $L^p(\mu)$ 는 [Banach 공간](banach-spaces.md)이다.[^1]
 
-$1\le p\lt\infty$ 에서 완비성은 절대수렴하는 급수가 수렴함을 보이면 된다. $\sum_k\Vert f_k\Vert\_p=M\lt\infty$ 라 하자. $g_n=\sum_{k\le n}\vert f_k\vert$ 는 증가하고 Minkowski 부등식에서 $\Vert g_n\Vert\_p\le M$ 이므로, 단조수렴정리로 $g=\lim g_n$ 이 $\Vert g\Vert\_p\le M$ 을 만족한다. 따라서 $g$ 가 거의 어디서나 유한하고 $\sum_k f_k$ 가 거의 어디서나 절대수렴한다. 그 합을 $f$ 라 하면 $\vert f-\sum_{k\le n}f_k\vert^p\le g^p$ 이므로 [지배수렴정리](dominated-convergence.md)로 $L^p$ 에서도 수렴한다. ∎
+$1\le p\lt\infty$ 에서 [완비성](completeness.md)은 절대수렴하는 급수가 수렴함을 보이면 된다. $\sum_k\Vert f_k\Vert\_p=M\lt\infty$ 라 하자. $g_n=\sum_{k\le n}\vert f_k\vert$ 는 증가하고 Minkowski 부등식에서 $\Vert g_n\Vert\_p\le M$ 이므로, 단조수렴정리로 $g=\lim g_n$ 이 $\Vert g\Vert\_p\le M$ 을 만족한다. 따라서 $g$ 가 거의 어디서나 유한하고 $\sum_k f_k$ 가 거의 어디서나 절대수렴한다. 그 합을 $f$ 라 하면 $\vert f-\sum_{k\le n}f_k\vert^p\le g^p$ 이므로 [지배수렴정리](dominated-convergence.md)로 $L^p$ 에서도 수렴한다. ∎
 
 ## 포함관계와 조밀성
 
