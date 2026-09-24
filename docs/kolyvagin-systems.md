@@ -243,7 +243,7 @@ $$
 
 ## 순환체 주추측
 
-$T=\mathbb Z_p(1)$ 과 순환체 단수의 Euler 계가 원형이다. $\mathbb Q$ 의 단수 계수가 $1$ 이라는 것의 코호몰로지판으로 $\chi=1$ 이 나오고, Kolyvagin 계의 생성원이 순환체 단수가 주는 계와 상수배로 비교된다. 그 상수를 해석적 유수 공식으로 계산하면 [Iwasawa 주추측](iwasawa-main-conjecture.md)이 나오고, Rubin 의 원래 증명이 얻던 한쪽 나눔이 등식으로 강화된다.
+$T=\mathbb Z_p(1)$ 과 순환체 단수의 Euler 계가 원형이다. $\mathbb Q$ 의 단수 계수가 $1$ 이라는 것의 코호몰로지판으로 $\chi=1$ 이 나오고, Kolyvagin 계의 생성원이 순환체 단수가 주는 계와 상수배로 비교된다. 그 상수를 해석적 류수 공식으로 계산하면 [Iwasawa 주추측](iwasawa-main-conjecture.md)이 나오고, Rubin 의 원래 증명이 얻던 한쪽 나눔이 등식으로 강화된다.
 
 ## 타원곡선의 Selmer 군
 

@@ -132,7 +132,7 @@ $$
 x_{\mathfrak a}=\bigl(\mathbb C/\mathfrak a\thickspace\longrightarrow\thickspace\mathbb C/\mathfrak a\mathfrak n^{-1}\bigr)\thickspace\in\thickspace X_0(N)(H)
 $$
 
-가 정의된다. 유수만큼의 점이 나오고 $\mathrm{Gal}(H/K)$ 가 이들을 단순추이적으로 섞는다.
+가 정의된다. 류수만큼의 점이 나오고 $\mathrm{Gal}(H/K)$ 가 이들을 단순추이적으로 섞는다.
 
 ## 모듈러 파라미터화
 
@@ -197,7 +197,7 @@ Gross–Zagier 증명은 같은 양을 두 방식으로 국소 항의 합으로 
 
 공식은 순위 $1$ 인 $E$ 의 생성원을 구하는 알고리즘을 준다. 좌표의 높이가 커지면 막히는 점 탐색과 달리 Heegner 점 방법은 그 높이에 거의 영향을 받지 않는다.
 
-1. Heegner 조건과 유수가 작다는 조건을 만족하는 $D$ 를 고른다.
+1. Heegner 조건과 류수가 작다는 조건을 만족하는 $D$ 를 고른다.
 2. $f$ 의 $q$ 전개로 $\varphi$ 를 복소해석적으로 계산한다. $x_{\mathfrak a}$ 는 상반평면의 이차무리점이므로 $\varphi(x_{\mathfrak a})=\sum_{n\ge1}\frac{a_n}{n}q^n$ 를 수치적으로 더한다.
 3. 자취를 취해 $y_K$ 의 복소 근사를 얻고, $E$ 의 주기격자로 되돌려 좌표의 유리수 복원을 시도한다.
 4. 얻은 점이 $E$ 위에 있는지 정확산술로 확인한다.

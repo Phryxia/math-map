@@ -10,7 +10,7 @@ $$
 \mathbb A_K=\Big\lbrace(x_v)\in\prod_vK_v:\text{거의 모든 } v \text{ 에서 } x_v\in\mathcal O_v\Big\rbrace
 $$
 
-[수체](algebraic-number-fields.md) $K$ 는 $\mathbb A_K$ 안에 이산 부분군으로 들어가고 몫은 콤팩트하다. $\mathbb Z\subset\mathbb R$ 와 같은 그림이다. 곱군 쪽에서는 유수의 유한성과 Dirichlet 단원 정리가 "노름 1 인 이델류군이 콤팩트하다" 는 한 문장으로 합쳐진다.
+[수체](algebraic-number-fields.md) $K$ 는 $\mathbb A_K$ 안에 이산 부분군으로 들어가고 몫은 콤팩트하다. $\mathbb Z\subset\mathbb R$ 와 같은 그림이다. 곱군 쪽에서는 류수의 유한성과 Dirichlet 단원 정리가 "노름 1 인 이델류군이 콤팩트하다" 는 한 문장으로 합쳐진다.
 
 # 직관
 
@@ -102,7 +102,7 @@ $$
 C_K/\thinspace\overline{U}\ \cong\ \mathrm{Cl}(K)
 $$
 
-이고, 더 작은 열린 부분군으로 나누면 [광선유군](class-field-theory.md)이 나온다. $C_K$ 는 모든 모듈러스의 광선유군을 동시에 담으므로 유체론이 모듈러스를 하나씩 고르지 않고 서술된다.
+이고, 더 작은 열린 부분군으로 나누면 [광선류군](class-field-theory.md)이 나온다. $C_K$ 는 모든 모듈러스의 광선류군을 동시에 담으므로 유체론이 모듈러스를 하나씩 고르지 않고 서술된다.
 
 # 성질
 
@@ -114,7 +114,7 @@ $$
 
 > **정리.** $\mathbb A_K^{\times,1}/K^\times$ 는 콤팩트하다.
 
-이 문장은 두 고전 정리와 동치다. 콤팩트성을 유한 자리 쪽으로 밀면 **유수의 유한성**이, 아르키메데스 자리 쪽으로 밀면 **Dirichlet 단원 정리**가 나온다.
+이 문장은 두 고전 정리와 동치다. 콤팩트성을 유한 자리 쪽으로 밀면 **류수의 유한성**이, 아르키메데스 자리 쪽으로 밀면 **Dirichlet 단원 정리**가 나온다.
 
 $|\cdot|\_{\mathbb A}\colon C_K\to\mathbb R_{\gt 0}$ 의 핵이 이 콤팩트군이므로 구조는 다음과 같다.
 
@@ -170,14 +170,14 @@ $$
 
 # 활용
 
-- **모듈러스의 소거.** 유체론을 광선유군으로 쓰면 모듈러스 $\mathfrak m$ 을 매번 고르고 정합성을 확인해야 한다. 이델류군은 모든 $\mathfrak m$ 을 동시에 담아 $C_K\to\mathrm{Gal}(K^{\mathrm{ab}}/K)$ 한 줄로 끝난다.
+- **모듈러스의 소거.** 유체론을 광선류군으로 쓰면 모듈러스 $\mathfrak m$ 을 매번 고르고 정합성을 확인해야 한다. 이델류군은 모든 $\mathfrak m$ 을 동시에 담아 $C_K\to\mathrm{Gal}(K^{\mathrm{ab}}/K)$ 한 줄로 끝난다.
 - **국소와 대역의 통일.** 각 $K_v^\times$ 에서의 국소 유체론과 대역 유체론이 같은 그림의 부분과 전체가 된다. 국소 조건을 붙여 대역 대상을 만드는 절차가 제한직적으로 형식화된다.
 - **해석적 도구.** 국소콤팩트라 Haar 측도와 Fourier 변환이 있다. Tate 논문이 그 첫 적용이고, 자기동형 형식의 스펙트럼 분해와 대각합 공식이 그 위에 세워진다.
 - **군의 교체.** $\mathrm{GL}\_1$ 을 $\mathrm{GL}\_n$ 이나 다른 환원군으로 바꾸어도 서술이 그대로 통한다.
 
 ## 수체와 함수체의 평행
 
-함수체 $\mathbb F_q(X)$ 에도 자리와 아델이 있다. 자리는 곡선의 닫힌 점이고, $\mathbb A/K$ 의 콤팩트성은 곡선의 사영성에 해당하며, 곱 공식은 인자의 차수가 0 이라는 사실이 된다. $\mathbb A_K^{\times}/K^\times\mathcal O^\times$ 가 [Picard 군](picard-group.md)이고, 유수의 유한성이 Picard 군의 유한생성성이 된다.
+함수체 $\mathbb F_q(X)$ 에도 자리와 아델이 있다. 자리는 곡선의 닫힌 점이고, $\mathbb A/K$ 의 콤팩트성은 곡선의 사영성에 해당하며, 곱 공식은 인자의 차수가 0 이라는 사실이 된다. $\mathbb A_K^{\times}/K^\times\mathcal O^\times$ 가 [Picard 군](picard-group.md)이고, 류수의 유한성이 Picard 군의 유한생성성이 된다.
 
 아델을 쓰면 수체와 함수체의 정리를 같은 진술로 적을 수 있다. 함수체 쪽에서는 그 진술이 곡선의 대수기하로 증명된다.
 

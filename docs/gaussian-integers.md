@@ -74,7 +74,7 @@ $$
 
 ## 이차 정수환과의 비교
 
-$d$ 가 제곱인수 없는 정수일 때 $\mathbb Z[\sqrt d\thinspace]$ 나 그 정수적 폐포도 같은 방식으로 다룬다. 허수 이차체 $\mathbb Q(\sqrt{-d}\thinspace)$ 의 정수환이 UFD 인 것은 $d=1,2,3,7,11,19,43,67,163$ 아홉 경우뿐이다[^3]. $\mathbb Z[\sqrt{-5}\thinspace]$ 에서 $6$ 의 분해가 둘인 것이 UFD 가 아닌 첫 예이고, 이 실패를 [아이디얼](ideals-quotient-rings.md) 수준에서 복구한 것이 [Dedekind 정역](dedekind-domains.md)과 [대수적 수체](algebraic-number-fields.md)의 유수 이론이다.
+$d$ 가 제곱인수 없는 정수일 때 $\mathbb Z[\sqrt d\thinspace]$ 나 그 정수적 폐포도 같은 방식으로 다룬다. 허수 이차체 $\mathbb Q(\sqrt{-d}\thinspace)$ 의 정수환이 UFD 인 것은 $d=1,2,3,7,11,19,43,67,163$ 아홉 경우뿐이다[^3]. $\mathbb Z[\sqrt{-5}\thinspace]$ 에서 $6$ 의 분해가 둘인 것이 UFD 가 아닌 첫 예이고, 이 실패를 [아이디얼](ideals-quotient-rings.md) 수준에서 복구한 것이 [Dedekind 정역](dedekind-domains.md)과 [대수적 수체](algebraic-number-fields.md)의 류수 이론이다.
 
 ## 정수론의 계산
 
@@ -86,7 +86,7 @@ $d$ 가 제곱인수 없는 정수일 때 $\mathbb Z[\sqrt d\thinspace]$ 나 그
 
 [^1]: K. Conrad, "The Gaussian integers" — 노름, 단위원, 소원의 분류와 두 제곱수의 합. https://kconrad.math.uconn.edu/blurbs/ugradnumthy/Zinotes.pdf
 [^2]: G. H. Hardy and E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Theorem 278. $r_2(n)=4(d_1(n)-d_3(n))$ 의 진술과 증명.
-[^3]: Stark–Heegner 정리. 허수 이차체의 유수 $1$ 인 판별식이 아홉 개뿐임. H. M. Stark, "A complete determination of the complex quadratic fields of class-number one", Michigan Mathematical Journal 14 (1967), 1–27.
+[^3]: Stark–Heegner 정리. 허수 이차체의 류수 $1$ 인 판별식이 아홉 개뿐임. H. M. Stark, "A complete determination of the complex quadratic fields of class-number one", Michigan Mathematical Journal 14 (1967), 1–27.
 
 # 연관 문서
 

@@ -28,12 +28,12 @@ $$
 
 이면 $\mathrm{End}(\mathbb C/\Lambda)=\mathbb Z[A\tau]$ 가 판별식 $D$ 의 순서환이다. $\tau$ 가 초월수이거나 삼차 이상이면 자기준동형은 정수뿐이다.
 
-## CM 곡선의 개수와 유수
+## CM 곡선의 개수와 류수
 
-판별식 $D$ 인 순서환 $\mathcal O$ 를 고정하면 $\mathcal O$ 를 자기준동형환으로 갖는 곡선 $\mathbb C/\mathfrak a$ 는 아이디얼류 $[\mathfrak a]\in\mathrm{Cl}(\mathcal O)$ 로 분류되고, 그 개수는 $h(D)$ 다. 유수는 축소된 이차형식을 세면 계산된다.
+판별식 $D$ 인 순서환 $\mathcal O$ 를 고정하면 $\mathcal O$ 를 자기준동형환으로 갖는 곡선 $\mathbb C/\mathfrak a$ 는 아이디얼류 $[\mathfrak a]\in\mathrm{Cl}(\mathcal O)$ 로 분류되고, 그 개수는 $h(D)$ 다. 류수는 축소된 이차형식을 세면 계산된다.
 
 ```javascript
-// 판별식 D<0 의 유수: 축소된 원시 이차형식 (a,b,c), |b| ≤ a ≤ c 의 개수
+// 판별식 D<0 의 류수: 축소된 원시 이차형식 (a,b,c), |b| ≤ a ≤ c 의 개수
 function classNumber(D) {
   const gcd = (x, y) => (y ? gcd(y, x % y) : x);
   let h = 0;
@@ -58,7 +58,7 @@ $$
 
 이고 차수는 $h(D)$ 다. 복소해석적으로 정의한 $j$ 값들의 대칭식이 정수 계수를 갖는다.
 
-## 유수 1 이 만드는 거의 정수
+## 류수 1 이 만드는 거의 정수
 
 $h(D)=1$ 이면 $H_D(X)=X-j$ 라 $j$ 가 정수다. $j$ 의 $q$ 전개
 
@@ -189,7 +189,7 @@ $E$ 가 $\mathcal O_K$ 로 CM 을 갖고 $p$ 에서 좋은 환원을 가지면 �
 
 초특이 쪽은 [초특이 등원사상 그래프](supersingular-isogeny-graphs.md)로 이어진다. CM 곡선을 여러 소수에서 환원하는 것이 그 그래프의 정점을 얻는 표준 방법이다.
 
-## 유수 1 판별식의 유한성
+## 류수 1 판별식의 유한성
 
 $h(D)=1$ 인 판별식이 유한하다는 것은 Siegel 의 하계 $h(D)\gg|D|^{1/2-\epsilon}$ 에서 나오지만 그 증명은 비유효적이다. 목록을 아홉 개로 확정하는 데는 유효 하계가 필요했고, Heegner 가 모듈러 함수의 항등식으로, Baker 가 로그의 일차형식 하계로, Stark 가 CM 이론으로 각각 채웠다.
 
@@ -203,7 +203,7 @@ Hilbert 12 번 문제는 임의의 수체 $K$ 의 $K^{\mathrm{ab}}$ 를 해석�
 - [Heegner 점](heegner-points.md)은 $X_0(N)$ 위의 CM 점을 모듈러 파라미터화로 옮긴 것이다. 그 점이 $H$ 위에서 정의되는 것과 Galois 궤도가 유군으로 명시되는 것이 제1 주정리이고, 그래서 자취 $\mathrm{Tr}\_{H/K}$ 로 $K$ 유리점을 얻을 수 있다. Gross–Zagier 공식의 우변에 $\sqrt{|D|}$ 와 $u=|\mathcal O_K^\times|/2$ 가 나타나는 것도 이 구성 때문이다.
 - Deuring 의 정리는 $\mathrm{GL}\_2$ 의 Galois 표현이 $\mathrm{GL}\_1$ 에서 유도된 자기동형 대상과 짝지어진다는 진술이다. [Langlands 강령](langlands-program.md)의 함자성이 확인된 첫 비자명한 사례다.[^1]
 
-[^1]: M. Deuring, *Die Typen der Multiplikatorenringe elliptischer Funktionenkörper*, Abh. Math. Sem. Hamburg **14** (1941). 표준 교재는 J. Silverman, *Advanced Topics in the Arithmetic of Elliptic Curves* (1994) 2 장과 D. Cox, *Primes of the Form* $x^2+ny^2$ (1989). 후자는 유수 1 목록과 $p=x^2+27y^2$ 예제를 CM 이론으로 다룬다.
+[^1]: M. Deuring, *Die Typen der Multiplikatorenringe elliptischer Funktionenkörper*, Abh. Math. Sem. Hamburg **14** (1941). 표준 교재는 J. Silverman, *Advanced Topics in the Arithmetic of Elliptic Curves* (1994) 2 장과 D. Cox, *Primes of the Form* $x^2+ny^2$ (1989). 후자는 류수 1 목록과 $p=x^2+27y^2$ 예제를 CM 이론으로 다룬다.
 [^2]: R. P. Langlands, *Some contemporary problems with origins in the Jugendtraum*, Mathematical Developments Arising from Hilbert Problems, Proc. Sympos. Pure Math. **28** (1976), 401–418. 유리수체와 허수 이차체 밖에서 Hilbert 의 12 번 문제가 풀리지 않은 채임을 전제로 그 너머의 접근을 논한다.
 
 # 연관 문서

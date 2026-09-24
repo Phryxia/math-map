@@ -86,7 +86,7 @@ $$
 
 포함관계와 나눗셈이 일치한다. $\mathfrak a\subseteq\mathfrak b\iff\mathfrak b\mid\mathfrak a$ 이고, 이를 "나누는 것이 품는 것"이라는 표어로 쓴다.
 
-## 유수군
+## 류군
 
 주 분수 아이디얼이 부분군을 이루므로 몫을 취한다.
 
@@ -96,7 +96,7 @@ $$
 
 $\mathrm{Cl}(R)=1$ 인 것과 $R$ 이 주 아이디얼 정역인 것과 유일분해 정역인 것이 동치다. 일반 Noether 정역에서 주 아이디얼 정역은 유일분해 정역보다 강한 조건이지만 Dedekind 정역에서는 두 개념이 일치한다.
 
-$R$ 이 [대수적 수체](algebraic-number-fields.md)의 정수환이면 유수군이 유한하다. 일반 Dedekind 정역에서는 그렇지 않고, Claborn 의 정리에 따르면 임의의 아벨군이 어떤 Dedekind 정역의 유수군이 된다.
+$R$ 이 [대수적 수체](algebraic-number-fields.md)의 정수환이면 류군이 유한하다. 일반 Dedekind 정역에서는 그렇지 않고, Claborn 의 정리에 따르면 임의의 아벨군이 어떤 Dedekind 정역의 류군이 된다.
 
 ## 예와 비예
 
@@ -117,8 +117,8 @@ Dedekind 정역인 것.
 # 활용
 
 - 수체의 정수환이 Dedekind 정역이라는 정리에서 소수의 분해 $p\mathcal O_K=\prod\mathfrak p_i^{e_i}$ , 등식 $\sum e_if_i=n$ , 분기 소수가 판별식을 나누는 유한 개뿐이라는 사실이 나온다. $\mathbb Z[x]/(f)$ 는 정수적으로 닫혀 있지 않은 경우가 흔해 정수적 폐포 계산이 첫 단계이고, Round 2 나 Pohst–Zassenhaus 알고리즘이 그 일을 한다. 판별식의 제곱인수를 찾는 것이 병목이다.
-- 비특이 아핀 곡선의 좌표환이 Dedekind 정역이고 소 아이디얼이 곡선의 점에 대응한다. 부치 $v_{\mathfrak p}(f)$ 는 $f$ 가 점 $\mathfrak p$ 에서 갖는 소멸 차수이고 아이디얼의 유일분해가 인자의 언어가 된다. 이때 유수군은 [Picard 군](picard-group.md)이며 [타원곡선](elliptic-curves.md)의 군 구조가 그 예다.
-- Dedekind 정역 위의 유한생성 가군은 비틀림 부분과 자유 부분으로 갈리고, 계수 $n$ 인 사영 가군은 $R^{n-1}\oplus I$ 꼴이다. 두 가군의 동형은 계수와 유수류가 같은 것과 동치다. [주 아이디얼 정역 위의 가군 구조 정리](finitely-generated-modules.md)가 유수 1 인 특수한 경우다.
+- 비특이 아핀 곡선의 좌표환이 Dedekind 정역이고 소 아이디얼이 곡선의 점에 대응한다. 부치 $v_{\mathfrak p}(f)$ 는 $f$ 가 점 $\mathfrak p$ 에서 갖는 소멸 차수이고 아이디얼의 유일분해가 인자의 언어가 된다. 이때 류군은 [Picard 군](picard-group.md)이며 [타원곡선](elliptic-curves.md)의 군 구조가 그 예다.
+- Dedekind 정역 위의 유한생성 가군은 비틀림 부분과 자유 부분으로 갈리고, 계수 $n$ 인 사영 가군은 $R^{n-1}\oplus I$ 꼴이다. 두 가군의 동형은 계수와 아이디얼류가 같은 것과 동치다. [주 아이디얼 정역 위의 가군 구조 정리](finitely-generated-modules.md)가 류수 1 인 특수한 경우다.
 - 아이디얼과 가군의 성질이 모든 국소화에서의 성질로 환원된다. 같은 사고가 층과 스킴의 언어로 일반화되어 정칙 국소환이 매끄러운 점에, 차원 1 인 경우가 곡선에 대응한다.
 
 # 연관 문서

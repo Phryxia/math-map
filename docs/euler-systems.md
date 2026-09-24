@@ -244,7 +244,7 @@ $$
 
 ## 순환체 Iwasawa 주추측
 
-Rubin 은 순환체 단수의 Euler 계로 Mazur–Wiles 의 주추측을 다시 증명했다. 주추측은 $\mathbb Q(\mu_{p^\infty})$ 의 이데알류군의 $\chi$ 성분이 이루는 Iwasawa 가군의 특성 아이디얼이 $p$ 진 [Dirichlet $L$ 함수](dirichlet-l-functions.md)가 생성하는 아이디얼과 같다는 진술이다. Euler 계 쪽 증명은 단수와 순환체 단수의 지표가 유수라는 사실(Kummer, Sinnott)에서 한쪽 나눔을 얻고 해석적 유수 공식으로 반대쪽을 채운다.
+Rubin 은 순환체 단수의 Euler 계로 Mazur–Wiles 의 주추측을 다시 증명했다. 주추측은 $\mathbb Q(\mu_{p^\infty})$ 의 이데알류군의 $\chi$ 성분이 이루는 Iwasawa 가군의 특성 아이디얼이 $p$ 진 [Dirichlet $L$ 함수](dirichlet-l-functions.md)가 생성하는 아이디얼과 같다는 진술이다. Euler 계 쪽 증명은 단수와 순환체 단수의 지표가 류수라는 사실(Kummer, Sinnott)에서 한쪽 나눔을 얻고 해석적 류수 공식으로 반대쪽을 채운다.
 
 ## BSD 의 $r_{\mathrm{an}}\le1$
 

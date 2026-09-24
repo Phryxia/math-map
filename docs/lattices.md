@@ -133,7 +133,7 @@ $$
 
 Fermat 의 두 제곱수 정리를 Minkowski 로 증명할 수 있다. $p\equiv1\pmod4$ 이면 $x^2\equiv-1\pmod p$ 인 $x$ 가 있고, $(1,x),(0,p)$ 가 생성하는 격자는 행렬식이 $p$ 이며 모든 격자점 $(a,b)$ 가 $a^2+b^2\equiv0\pmod p$ 를 만족한다. 반지름 $\sqrt{2p}$ 인 원의 넓이 $2\pi p\gt 4p$ 이므로 그 안에 격자점이 있고, $0\lt a^2+b^2\lt 2p$ 이면서 $p$ 의 배수이므로 $a^2+b^2=p$ 다.
 
-같은 도구가 [대수적 수체](algebraic-number-fields.md)에서 유수의 유한성과 Dirichlet 단원 정리를 준다. 격자와 볼록체의 관계가 수의 기하학의 바탕이다.
+같은 도구가 [대수적 수체](algebraic-number-fields.md)에서 류수의 유한성과 Dirichlet 단원 정리를 준다. 격자와 볼록체의 관계가 수의 기하학의 바탕이다.
 
 ## LLL 의 응용
 
