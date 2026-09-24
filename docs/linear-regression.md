@@ -183,7 +183,7 @@ $$
 
 이고 $\mathrm{Var}(\hat\beta_j)$ 가 그만큼 커진다. 적합값 $\hat{y}$ 는 안정적이지만 개별 계수의 해석이 불안정해진다. 대응은 변수 제거, 주성분 사용([특이값 분해](singular-value-decomposition.md)), ridge 처럼 $X^\top X+\lambda I$ 로 대각을 키우는 정규화다.
 
-## 확장과 연결
+# 활용
 
 - **일반화선형모형**: 반응이 이항이나 계수(count)면 정규 가정이 맞지 않는다. [지수족](exponential-families.md)의 분포족에 연결함수를 붙이면 로지스틱 회귀, Poisson 회귀가 나오고, 추정은 반복 가중최소제곱(iteratively reweighted least squares, IRLS)으로 귀결된다. 닫힌 해가 없어 [경사하강법](gradient-descent.md)이나 Newton 계열 최적화를 쓴다.
 - **정규화와 Bayes**: 계수에 $N(0, \tau^2)$ 사전분포를 두면 MAP(maximum a posteriori) 추정이 ridge 회귀가 되고, Laplace 사전분포는 lasso 가 된다. [Bayes 추론](bayesian-inference.md)의 축소 구조가 그대로 나타난다.
