@@ -94,7 +94,7 @@ $V$ 에 내적과 방향을 주면 $\Lambda^k V$ 와 $\Lambda^{n-k}V$ 의 차원
 
 # 활용
 
-- 다양체의 각 점에서 여접공간의 외대수를 취하고 그 단면을 모으면 [미분형식](differential-forms.md)이다. 외미분과 Stokes 정리가 이 대수 위에서 서술된다.
+- [다양체](manifolds.md)의 각 점에서 여접공간의 외대수를 취하고 그 단면을 모으면 [미분형식](differential-forms.md)이다. 외미분과 Stokes 정리가 이 대수 위에서 서술된다.
 - $k$ 차원 부분공간에 $v_1\wedge\cdots\wedge v_k$ 를 대응시키면 Grassmann 다양체가 사영공간으로 매장된다. 상의 방정식이 Plücker 관계다.
 - 행렬식의 Laplace 전개와 Cramer 공식은 $\Lambda^{n-1}$ 과 $\Lambda^n$ 사이의 쐐기곱을 좌표로 쓴 것이다.
 - 반대칭 상태로 기술되는 여러 입자 계의 상태공간이 1 입자 공간의 외대수다.

@@ -110,7 +110,7 @@ $K_n(\mathbb Z)$ 는 $n$ 이 커질수록 손으로 계산할 수 없다. 정의
 
 ## 수술 이론과 Whitehead 군
 
-$K_1(\mathbb Z[\pi])$ 의 몫인 Whitehead 군 $\mathrm{Wh}(\pi)$ 가 $h$ 코보르디즘의 분류를 지배한다. $\mathrm{Wh}(\pi)=0$ 이면 $h$ 코보르디즘이 곱과 같아져 고차원 Poincaré 추측의 증명이 작동한다. 군환의 $K$ 이론이 다양체의 기하를 통제하는 사례다.
+$K_1(\mathbb Z[\pi])$ 의 몫인 Whitehead 군 $\mathrm{Wh}(\pi)$ 가 $h$ 코보르디즘의 분류를 지배한다. $\mathrm{Wh}(\pi)=0$ 이면 $h$ 코보르디즘이 곱과 같아져 고차원 Poincaré 추측의 증명이 작동한다. 군환의 $K$ 이론이 [다양체](manifolds.md)의 기하를 통제하는 사례다.
 
 ## 정규화자와 특수값
 

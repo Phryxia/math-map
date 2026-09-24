@@ -60,7 +60,7 @@ $H^\ast(\mathbb{CP}^2;\mathbb Z)=\mathbb Z\lbrack x\rbrack/(x^3)$ 이고 $\deg x
 
 ## Poincaré 쌍대성
 
-$M$ 이 닫힌 유향 $n$ 다양체이면 기본류 $\lbrack M\rbrack\in H_n(M)$ 과의 cap 곱이 동형 $H^k(M;R)\to H_{n-k}(M;R)$ 을 준다. 이 동형 아래 컵곱은 부분다양체의 교차에 대응하고, 상보적 차수의 두 류의 곱을 기본류에서 값매김한 수가 교차수다.
+$M$ 이 닫힌 유향 $n$ [다양체](manifolds.md)이면 기본류 $\lbrack M\rbrack\in H_n(M)$ 과의 cap 곱이 동형 $H^k(M;R)\to H_{n-k}(M;R)$ 을 준다. 이 동형 아래 컵곱은 부분다양체의 교차에 대응하고, 상보적 차수의 두 류의 곱을 기본류에서 값매김한 수가 교차수다.
 
 # 활용
 

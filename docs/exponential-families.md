@@ -44,7 +44,7 @@ $$
 
 가 확률밀도가 되며, 이렇게 얻은 분포족을 지수족이라 한다. $T$ 를 충분통계량, $h$ 를 기저측도(carrier)라 부른다.
 
-$\mathcal N$ 이 열린집합이면 정칙(regular), $T$ 의 성분들과 상수함수 1 이 $\nu$ 거의 어디서나 아핀독립이면 최소(minimal) 표현이다. 최소가 아니면 서로 다른 $\eta$ 가 같은 분포를 주어 항등가능성이 깨진다. 모수가 $\eta = \eta(\theta)$ 로 $k$ 보다 낮은 차원의 다양체를 훑으면 곡선지수족(curved exponential family)이라 한다.
+$\mathcal N$ 이 열린집합이면 정칙(regular), $T$ 의 성분들과 상수함수 1 이 $\nu$ 거의 어디서나 아핀독립이면 최소(minimal) 표현이다. 최소가 아니면 서로 다른 $\eta$ 가 같은 분포를 주어 항등가능성이 깨진다. 모수가 $\eta = \eta(\theta)$ 로 $k$ 보다 낮은 차원의 [다양체](manifolds.md)를 훑으면 곡선지수족(curved exponential family)이라 한다.
 
 ## 표준 분포의 지수족 표현
 

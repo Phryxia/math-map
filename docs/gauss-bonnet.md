@@ -83,7 +83,7 @@ $3F = 2E$ 를 $-\pi F = 2\pi F - 3\pi F = 2\pi F - 2\pi E$ 로 쓰면 우변이 
 
 - **Theorema Egregium.** $K$ 가 내재적 양이므로 좌변이 매장 방식에 의존하지 않는다.
 - **Poincaré–Hopf.** 곡면 위 벡터장의 특이점 지표의 합도 $\chi$ 다. 구면에서 $\chi = 2 \neq 0$ 이므로 영점 없는 접벡터장이 존재하지 않는다.
-- **Gauss–Bonnet–Chern.** 짝수차원 다양체에서 곡률로 만든 형식의 적분이 $\chi$ 를 준다. 이 방향의 종착점이 Atiyah–Singer 지표 정리다.
+- **Gauss–Bonnet–Chern.** 짝수차원 [다양체](manifolds.md)에서 곡률로 만든 형식의 적분이 $\chi$ 를 준다. 이 방향의 종착점이 Atiyah–Singer 지표 정리다.
 
 # 활용
 

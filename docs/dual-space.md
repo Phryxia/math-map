@@ -100,7 +100,7 @@ $V$ 위의 쌍선형 형식 $B\colon V\times V\to F$ 는 사상 $V\to V^\ast$ , 
 
 # 활용
 
-- 다양체의 각 점에서 접공간의 쌍대인 여접공간을 잡으면 그 원소가 1형식이다. [미분형식](differential-forms.md)의 정의가 이 대응 위에 있다.
+- [다양체](manifolds.md)의 각 점에서 접공간의 쌍대인 여접공간을 잡으면 그 원소가 1형식이다. [미분형식](differential-forms.md)의 정의가 이 대응 위에 있다.
 - 유한차원에서 $V^\ast\otimes W$ 와 $\mathrm{Hom}(V,W)$ 가 동형이다. [텐서곱](tensor-products.md)으로 선형사상을 텐서로 다루는 자리에서 쓴다.
 - 노름공간에서는 연속 범함수만 모아 쌍대를 정의한다. [Banach 공간](banach-spaces.md)의 Hahn–Banach 정리가 이 쌍대가 점을 분리함을 보장한다.
 - [Hilbert 공간](hilbert-spaces.md)의 Riesz 표현정리는 연속 쌍대를 자기 자신과 동일시한다. 유한차원 내적 공간의 대응이 [완비성](completeness.md) 아래에서 무한차원으로 확장된 진술이다.

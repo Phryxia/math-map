@@ -34,7 +34,7 @@ $\delta\mathrm{CS}=0$ 이 $F_A=0$ 과 같으므로 임계점이 평탄 접속, �
 
 | 유한차원 Morse | 순간자 Floer |
 |---|---|
-| 다양체 $M$ | 접속공간 $\mathcal A/\mathcal G$ |
+| [다양체](manifolds.md) $M$ | 접속공간 $\mathcal A/\mathcal G$ |
 | 함수 $f$ | Chern–Simons 범함수 |
 | 임계점 | 평탄 접속 = $\pi_1\Sigma\to \mathrm{SU}(2)$ 표현 |
 | 기울기 흐름선 | $\mathbb R\times\Sigma$ 위의 순간자 |

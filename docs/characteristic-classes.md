@@ -74,7 +74,7 @@ $E$ 의 깃발다발을 취하면 된다. 이 정리 덕분에 특성류의 항�
 
 ## Euler 류와 Gauss–Bonnet
 
-**정리.** $M$ 이 콤팩트 방향 다양체이면 $\int_M e(TM) = \chi(M)$ 이다.
+**정리.** $M$ 이 콤팩트 방향 [다양체](manifolds.md)이면 $\int_M e(TM) = \chi(M)$ 이다.
 
 Euler 류를 곡률로 쓴 것이 [Gauss–Bonnet 정리](gauss-bonnet.md)의 일반화이고, 짝수 차원에서 Pfaffian 이 그 불변 다항식이다. 구에서 이 적분이 $2$ 를 주는 것이 직관 절의 계산이다.
 

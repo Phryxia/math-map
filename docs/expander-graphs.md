@@ -77,7 +77,7 @@ $$
 \frac{h(G)^2}{2}\le 1-\lambda_2\le 2h(G)
 $$
 
-미분기하의 Cheeger 부등식(다양체의 등주 상수와 Laplace 작용소 첫 고윳값)의 이산 판본이고 증명 구조가 평행하다.
+미분기하의 Cheeger 부등식([다양체](manifolds.md)의 등주 상수와 Laplace 작용소 첫 고윳값)의 이산 판본이고 증명 구조가 평행하다.
 
 ## Alon–Boppana 와 Ramanujan 그래프
 

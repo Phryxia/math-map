@@ -64,7 +64,7 @@ $H^\ast(K(\mathbb Z/2,n);\mathbb Z/2)$ 는 $n$ 이하의 초과분을 갖는 허
 
 ## Wu 공식
 
-닫힌 다양체 $M$ 에는 모든 $x$ 에 대해 $\langle v\cup x,\lbrack M\rbrack\rangle=\langle\mathrm{Sq}\thinspace x,\lbrack M\rbrack\rangle$ 인 Wu 류 $v$ 가 있고, Stiefel–Whitney 류가 $w=\mathrm{Sq}(v)$ 로 결정된다. 따라서 Stiefel–Whitney 류는 다양체의 호모토피형에만 달려 있다.
+닫힌 [다양체](manifolds.md) $M$ 에는 모든 $x$ 에 대해 $\langle v\cup x,\lbrack M\rbrack\rangle=\langle\mathrm{Sq}\thinspace x,\lbrack M\rbrack\rangle$ 인 Wu 류 $v$ 가 있고, Stiefel–Whitney 류가 $w=\mathrm{Sq}(v)$ 로 결정된다. 따라서 Stiefel–Whitney 류는 다양체의 호모토피형에만 달려 있다.
 
 # 활용
 
