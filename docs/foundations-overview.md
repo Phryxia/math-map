@@ -41,6 +41,7 @@ graph TD
 - [Löwenheim–Skolem 정리](lowenheim-skolem.md): 1차 논리가 크기를 구별하지 못한다
 - [Peano 공리](peano-axioms.md): 자연수의 공리계, 2차 형태의 범주성과 1차 형태의 비표준 모형
 - [Gödel 불완전성 정리](godel-incompleteness.md): 산술을 담는 체계는 자기 무모순성을 증명하지 못한다
+- [2계 산술](second-order-arithmetic.md): 수 변수와 집합 변수를 함께 쓰는 언어, 내포를 제한해 얻는 다섯 부분체계
 
 ## 모형론
 
