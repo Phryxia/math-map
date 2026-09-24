@@ -73,7 +73,7 @@ $$
 -\varepsilon\sum_{i,j}a_ib_j\big(e^{(f_i+g_j-C_{ij})/\varepsilon}-1\big)
 $$
 
-최적해가 $P_{ij}=a_ib_j\thinspace e^{(f_i+g_j-C_{ij})/\varepsilon}$ 이고, 블록 좌표 상승법이 앞서 본 완화된 갱신이다.
+최적해가 $P_{ij}=a_ib_j\thinspace e^{(f_i+g_j-C_{ij})/\varepsilon}$ 이고, 블록 좌표 상승법이 완화된 갱신이다.
 
 $$
 f_i\leftarrow-\lambda\varepsilon\log\sum_jb_je^{(g_j-C_{ij})/\varepsilon},\qquad

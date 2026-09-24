@@ -140,9 +140,11 @@ $$
 - **극값 조합론**: Hall 정리는 서로 다른 대표계(system of distinct representatives, SDR)의 존재 정리다. [셈의 기본 원리](counting-principles.md)와 [비둘기집 원리](pigeonhole-principle.md)로 필요조건을 세우고 귀납으로 충분성을 얻는다. Latin square의 확장, 이분 그래프의 간선 색칠([그래프 색칠](graph-coloring.md))이 모두 이 따름정리다.
 - **경제학과 알고리즘 설계**: 가중 매칭은 배정 문제이고, 안정 매칭(Gale–Shapley)은 선호 순서를 다루는 다른 방향의 확장이다. 안정 매칭은 항상 존재하지만 최대 매칭과는 다른 개념임에 주의한다.
 
-## 실전 감각
+## 알고리즘의 선택
 
-실무에서 매칭을 쓸 때 확인할 것은 세 가지다. 첫째, 문제가 정말 이분인가. 이분이면 $O(E\sqrt{V})$ 로 끝나지만 일반 그래프면 blossom이 필요하다. 둘째, 가중치가 있는가. 있으면 Hungarian 또는 최소비용 최대유량으로 간다. 셋째, "불가능하다"는 답이 필요한가. 필요하다면 Hall 위반 집합이나 König 덮개를 함께 출력하는 것이 좋다. 이들은 검증 가능한 증명서이므로 디버깅과 설명 모두에 쓸 수 있다.
+- 이분 그래프의 최대 매칭은 Hopcroft–Karp 로 $O(E\sqrt{V})$ 다. 일반 그래프에서는 blossom 알고리즘을 쓴다.
+- 가중 매칭은 Hungarian 알고리즘이나 최소비용 최대유량으로 푼다.
+- 완전 매칭이 없다는 답에는 증명서가 따른다. 이분 그래프에서는 Hall 조건을 위반하는 집합이고, 최대 매칭의 크기에 대해서는 König 덮개다.
 
 [^1]: P. Hall, "On Representatives of Subsets", Journal of the London Mathematical Society s1-10 (1935), https://doi.org/10.1112/jlms/s1-10.37.26
 [^2]: J. E. Hopcroft, R. M. Karp, "An $n^{5/2}$ Algorithm for Maximum Matchings in Bipartite Graphs", SIAM Journal on Computing 2 (1973), https://doi.org/10.1137/0202019
