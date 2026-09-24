@@ -82,7 +82,7 @@ $$
 
 에 $\mathrm{GL}\_n(\mathbb A_K)$ 가 오른쪽 평행이동으로 작용한다. 이 작용의 기약 성분을 **자기동형 표현**이라 한다. 특히 상수항이 사라지는 부분공간에서 나오는 것을 첨점 표현이라 하고, 이쪽이 Galois 표현에 대응한다.
 
-모든 자기동형 표현은 국소 표현의 제한 [텐서곱](tensor-products.md) $\pi=\bigotimes'\_v\pi_v$ 로 분해되고, 거의 모든 $v$ 에서 $\pi_v$ 가 불분기라 $n$ 개의 복소수 **[Satake 매개변수](satake-isomorphism.md)** $\alpha_{1,v},\dots,\alpha_{n,v}$ 로 결정된다. $L$ 함수는 이들로 만든다.
+모든 자기동형 표현은 국소 표현의 제한 [텐서곱](tensor-products.md) $\pi=\bigotimes'\_v\pi_v$ 로 분해되고, 거의 모든 $v$ 에서 $\pi_v$ 가 불분기라 $n$ 개의 복소수 [Satake 매개변수](satake-isomorphism.md) $\alpha_{1,v},\dots,\alpha_{n,v}$ 로 결정된다. $L$ 함수는 이들로 만든다.
 
 $$
 L(s,\pi)=\prod_v\prod_{i=1}^n\big(1-\alpha_{i,v}\thinspace q_v^{-s}\big)^{-1}
