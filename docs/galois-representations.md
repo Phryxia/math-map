@@ -44,17 +44,6 @@ $$
 
 유한체 $\mathbb F_q$ 위의 다양체에서 $\mathbb F_{q^n}$ 유리점은 $q^n$ 제곱 Frobenius 사상의 고정점이다. 위상수학에서 고정점을 세는 도구가 Lefschetz 공식이고, 에탈 코호몰로지에서 같은 공식을 세우면 점 개수가 대각합의 교대합이다.
 
-```mermaid
-graph TD
-  X["F_q 위의 다양체 X"] --> ET["에탈 코호몰로지<br/>H^i(X_F̄, Q_ℓ)"]
-  ET --> G["Frobenius 작용<br/>= Galois 표현"]
-  G --> LEF["Lefschetz 고정점 공식<br/>#X(F_qⁿ) = Σ(-1)ⁱ tr(Frobⁿ)"]
-  LEF --> Z["ζ 함수가 유리함수"]
-  G --> W["Frobenius 고윳값의 크기<br/>|α| = q^{i/2}"]
-  W --> RH["곡선/다양체의<br/>Riemann 가설"]
-  Z --> RH
-```
-
 $\zeta$ 함수의 유리성은 대각합의 [생성함수](generating-functions.md)가 유리함수라는 선형대수적 사실이고, 함수방정식은 Poincaré 쌍대성이며, [Riemann 가설](riemann-hypothesis.md)은 Frobenius 고윳값의 절댓값이 $q^{i/2}$ 라는 진술이다. 앞의 둘은 코호몰로지 이론에서 형식적으로 따라 나오고 마지막 하나가 Deligne 의 정리다.
 
 # 정의

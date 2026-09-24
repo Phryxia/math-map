@@ -44,20 +44,6 @@ $$
 
 같은 궤도의 무게들만 서로 얽힌다. 범주 $\mathcal O$ 는 블록의 직합으로 분해되고, 정수 정칙 무게의 블록은 Weyl 군 $W$ 와 크기가 같은 유한 집합 $\lbrace w\cdot\lambda\rbrace_{w\in W}$ 위에 놓인다. 무한차원 가군의 범주를 다루는 문제가 유한군 $W$ 위의 조합 문제로 축소된다.
 
-```mermaid
-flowchart TD
-  O["범주 O"] --> B1["블록 : 중심지표 하나"]
-  B1 --> W["무게 = W 의 점작용 궤도"]
-  W --> M["Verma M(w.lambda)"]
-  W --> L["단순 L(w.lambda)"]
-  W --> P["사영 P(w.lambda)"]
-  M --> D["결정 행렬<br/>[M(y.l) : L(w.l)]"]
-  P --> V["Verma 여과<br/>(P(w.l) : M(y.l))"]
-  D --> BGG["BGG 상반성 : 두 행렬이 전치 관계"]
-  V --> BGG
-  D --> KL["KL 다항식의 1 에서의 값"]
-```
-
 ## $\mathfrak{sl}\_2$ 의 블록
 
 $\lambda=0$ 의 블록에는 무게가 둘 있다. $e\cdot0=0$ 과 $s\cdot0=-2$ 다.
