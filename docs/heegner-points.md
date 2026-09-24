@@ -98,16 +98,6 @@ $$
 
 $E$ 의 군 구조가 있으므로 합이 정의된다.
 
-```mermaid
-graph TD
-  L["격자 O_K 와 아이디얼 n<br/>(Heegner 조건)"] --> X["X_0(N) 의 CM 점 x"]
-  X -->|"허수이차 곱셈론"| H["x ∈ X_0(N)(H)"]
-  H -->|"모듈러 파라미터화 φ"| EH["φ(x) ∈ E(H)"]
-  EH -->|"Tr_{H/K}"| YK["y_K ∈ E(K)"]
-  YK -->|"Gross–Zagier"| LP["ĥ(y_K) ↔ L'(E/K,1)"]
-  YK -->|"Kolyvagin Euler 계"| SEL["Sel(E/K) 의 상계"]
-```
-
 ## 함수방정식의 부호
 
 $K$ 위에서 $L$ 함수가 쪼개진다.
