@@ -152,6 +152,7 @@ $$
 
 - [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md)
 - [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
+- [Siegel 의 정수점 정리](siegel-integral-points.md)
 
 ### 모듈러성과 복소 곱셈
 

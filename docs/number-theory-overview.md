@@ -42,6 +42,7 @@ graph TD
 - [초월수](transcendental-numbers.md): $e$ 와 $\pi$ 의 초월성, 로그의 일차형식
 - [Baker 정리](baker-theorem.md): 로그의 일차형식에 대한 유효 하한, Diophantus 방정식의 해 상한
 - [Thue 방정식](thue-equation.md): 차수 3 이상 이진형식의 정수해, 유한성과 Baker 하한이 주는 유효 상한
+- [Siegel 의 정수점 정리](siegel-integral-points.md): 종수와 무한원점의 개수로 가른 정수점의 유한성, 유효 상한의 두 길
 - [소수](primes.md): 산술의 기본 정리
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
 - [중국인의 나머지 정리](chinese-remainder-theorem.md): 서로소 법의 합동식 결합

@@ -82,6 +82,6 @@ Baker 의 하한이 이 자리를 메운다. 해 $(x,y)$ 에서 $\log$ 의 일�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Siegel 의 정수점 정리](siegel-integral-points.md)
 
 #number_theory #algebra
