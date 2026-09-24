@@ -33,7 +33,7 @@ graph TD
 - [Pólya 세기 정리](polya-enumeration.md): 대칭을 무시한 색칠의 개수
 - [Laplace 방법](laplace-method.md): 세는 수의 점근
 
-## 극단 조합론과 확률적 방법
+## 극단 조합론
 
 - [Ramsey 이론](ramsey-theory.md): 충분히 크면 질서가 강제된다
 - [Turán 정리](turan-theorem.md): $K_{r+1}$ 을 금지한 그래프의 최대 간선 수와 그 값을 주는 Turán 그래프
@@ -42,16 +42,22 @@ graph TD
 - [Erdős–Ko–Rado 정리](erdos-ko-rado.md): 교차족의 최대 크기, Katona 의 순환 배열 세기
 - [Littlewood–Offord 문제](littlewood-offord.md): 부호합의 반집중, 반사슬 논법이 주는 상한
 - [Sperner 보조정리](sperner-lemma.md): 단체의 이름표가 강제하는 완전 단체, Brouwer 고정점 정리의 조합적 증명
+## 분할과 조합적 종
+
 - [Stirling 수](stirling-numbers.md): 집합 분할과 순열의 순환을 세는 수, 거듭제곱과 내림 계승의 기저 변환
 - [Bell 수](bell-numbers.md): 집합 분할 전체의 수, 지수생성함수와 Dobinski 공식
 - [조합적 종](combinatorial-species.md): 구조를 배정하는 규칙의 합·곱·합성이 지수생성함수의 연산이 된다
 - [분자종](molecular-species.md): 합으로 쪼갤 수 없는 종은 $X^n/H$ 뿐이고 모든 종이 그 합으로 유일하게 분해된다
 - [Lagrange 반전 공식](lagrange-inversion.md): $w=z\varphi(w)$ 의 해의 계수를 $\varphi$ 의 거듭제곱에서 읽는다
+## 설계와 접촉 구조
+
 - [조합적 설계](block-designs.md): 원소쌍이 고르게 나타나는 블록족, Fisher 부등식과 유한 사영평면
 - [Latin 방진](latin-squares.md): 직교하는 방진의 최대 개수, Euler 추측의 반증
 - [유한 사영평면](finite-projective-planes.md): 차수 $n$ 평면의 존재 문제와 직교 방진 $n-1$ 개의 동치
 - [Zarankiewicz 문제](zarankiewicz-problem.md): $K_{s,t}$ 를 피하는 그래프의 최대 간선 수, 이중 세기 상한과 대수적 구성
 - [Szemerédi–Trotter 정리](szemeredi-trotter.md): 점과 직선의 접촉수 상한, 교차수 부등식이 이분 그래프 상한을 개선하는 자리
+## 확률적 방법과 무작위 구조
+
 - [확률적 방법](probabilistic-method.md): 무작위 대상이 존재를 증명한다
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md): 문턱 현상, 연결성과 거대 성분
 - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위의 조화해석, 복잡도 이론의 도구
@@ -73,7 +79,7 @@ graph TD
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md) → [Brauer 대수](brauer-algebras.md)
 - [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md) → [범주 O](category-o.md), [MV 순환](mv-cycles.md)(Mirkovic–Vilonen), [Casselman–Shalika 공식](casselman-shalika.md): 표현론 깊은 곳의 조합론
 
-## 격자, 부호, 설계
+## 격자와 부호
 
 - [구 채우기](sphere-packing.md) → [Niemeier 격자](niemeier-lattices.md) → [Schellekens 목록](schellekens-list.md)
 - [Mathieu 군과 Golay 부호](mathieu-groups.md): 부호와 산재 단순군
