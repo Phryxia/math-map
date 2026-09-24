@@ -107,6 +107,6 @@ function ucb(K, T, pull) {
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gittins 지표](gittins-index.md)
 
 #machine_learning #probability #algorithms #optimization
