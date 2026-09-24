@@ -137,7 +137,7 @@ $$
 
 # 활용
 
-- $w_eR(u,v)$ 가 간선의 중요도다. 값이 1 에 가까울수록 대체 불가능하고 0 에 가까울수록 잉여다. 이것이 [spectral sparsification](spectral-sparsification.md)의 샘플링 확률이 되어, 유효저항에 비례해 간선을 뽑으면 $O(n \log n / \epsilon^2)$ 개의 간선으로 Laplacian 이차형식을 근사한다[^1].
+- $w_eR(u,v)$ 가 간선의 중요도다. 값이 1 에 가까울수록 대체 불가능하고 0 에 가까울수록 잉여다. 이것이 [스펙트럼 희소화](spectral-sparsification.md)의 샘플링 확률이 되어, 유효저항에 비례해 간선을 뽑으면 $O(n \log n / \epsilon^2)$ 개의 간선으로 Laplacian 이차형식을 근사한다[^1].
 - 전염, 정보 확산, 혼잡처럼 흐름이 여러 경로로 분산되는 문제에서는 유효저항 거리가 최단 경로보다 적절하다. 모든 쌍의 저항 합 $\sum_{u\lt v} R(u,v)$ 을 Kirchhoff 지표라 하며 네트워크의 견고함을 재는 값으로 쓴다.
 - 정확한 계산은 $L^+$ 를 요구해 큰 그래프에서 비싸다. Johnson–Lindenstrauss 사영과 Laplacian 방정식의 빠른 해법을 결합해 모든 간선의 저항을 근사하고 그 값으로 샘플링한다.
 

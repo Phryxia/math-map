@@ -125,7 +125,7 @@ $$
 
 이 밀도를 앞의 $k$ 번까지의 정보로 제한한 것을 $L_k$ 라 하면 $L_k$ 는 $P_p$ 아래에서 [martingale](martingales.md)이며 $L_0=1$ 이다. 즉 측도변환의 밀도 과정은 언제나 원래 측도에서 평균 1 인 양의 martingale 이고, 역으로 그런 martingale 하나가 새로운 측도 하나를 정의한다.
 
-여기서 $q$ 를 $1/2$ 로 고르면 $S_k-k/2$ 가 새 측도에서 martingale 이 된다. "적당한 밀도를 곱해 표류(drift)를 제거하고 martingale 로 만든다"는 것이 Girsanov 정리의 내용이며, 연속시간에서는 [Brown 운동](brownian-motion.md)의 drift 를 지우는 지수 martingale
+여기서 $q$ 를 $1/2$ 로 고르면 $S_k-k/2$ 가 새 측도에서 martingale 이 된다. "적당한 밀도를 곱해 표류(drift)를 제거하고 martingale 로 만든다"는 것이 Girsanov 정리의 내용이며, 연속시간에서는 [Brown 운동](brownian-motion.md)의 표류를 지우는 지수 martingale
 
 $$
 L_t = \exp\Big( \theta B_t - \tfrac{1}{2} \theta^2 t \Big)

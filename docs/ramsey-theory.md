@@ -146,7 +146,7 @@ Ramsey 수의 하한은 단색 부분그래프가 없는 명시적 색칠(Ramsey
 
 ## 확률적 방법의 확장
 
-union bound 로 존재를 증명하는 기법은 [포함배제 원리](inclusion-exclusion.md)의 절단 부등식을 한 번 적용한 것이다. 같은 논법이 Lovász 국소 보조정리, 알고리즘적 무작위화, [Expander 그래프](expander-graphs.md)의 존재 증명으로 이어진다. [그래프 Laplacian](graph-laplacian.md)과 [Spectral sparsification](spectral-sparsification.md)의 무작위 표본 논증도 여기서 갈라진다.
+union bound 로 존재를 증명하는 기법은 [포함배제 원리](inclusion-exclusion.md)의 절단 부등식을 한 번 적용한 것이다. 같은 논법이 Lovász 국소 보조정리, 알고리즘적 무작위화, [Expander 그래프](expander-graphs.md)의 존재 증명으로 이어진다. [그래프 Laplacian](graph-laplacian.md)과 [스펙트럼 희소화](spectral-sparsification.md)의 무작위 표본 논증도 여기서 갈라진다.
 
 [^1]: F. P. Ramsey, "On a problem of formal logic", Proc. London Math. Soc. 30 (1930), 264–286. 진술 정리: https://en.wikipedia.org/wiki/Ramsey%27s_theorem
 [^2]: P. Erdős, "Some remarks on the theory of graphs", Bull. Amer. Math. Soc. 53 (1947), 292–294.
