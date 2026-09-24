@@ -1,80 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-24T13:06:23.128Z",
-  "nextSeq": 1115,
+  "savedAt": "2026-09-24T16:56:12.237Z",
+  "nextSeq": 1124,
   "items": [
-    {
-      "id": "15d1b300",
-      "title": "2차 산술과 계층 문서들의 간선 검토",
-      "priority": 30,
-      "note": "2026-09-24 회차에 second-order-arithmetic 을 만들었다. 본문 링크는 analytical-hierarchy 27 한 자리만 걸었다. arithmetical-hierarchy 와 hyperarithmetical-hierarchy 와 weak-konig-lemma 는 체계 이름을 전부 수식으로 쓰므로(\\mathrm{WKL}\\_0 꼴) 본문 링크를 걸 자리가 없다. 수식 안에 링크를 넣으면 렌더 결과에 링크 문법이 글자로 나오는 사고가 되므로 넣지 않는다. 검토할 것: weak-konig-lemma 를 second-order-arithmetic 의 자식으로 둘지. 그 문서는 WKL_0 이라는 2차 산술의 부분체계 자체를 다루므로 5절의 특수화 간선 후보다. 지금 부모가 무엇인지 보고, 2차 산술을 더하면 부모가 몇 개가 되는지 확인한 뒤 판단한다. analytical-hierarchy 와 hyperarithmetical-hierarchy 도 2차 산술의 논리식 계층을 다루므로 같은 검토 대상이지만, 두 문서는 arithmetical-hierarchy 계열의 사슬에 이미 놓여 있어 2차 산술을 부모로 더하면 부모가 늘어난다. 더 알아보기의 기준(5절)을 적용해 판단한다",
-      "createdAt": "2026-09-24T13:05:58.602Z",
-      "seq": 1114
-    },
-    {
-      "id": "d8f9c98b",
-      "title": "아벨 다양체",
-      "priority": 12,
-      "note": "stable-theories 활용 절이 Mordell-Lang 함수체 판본에서 이름만 쓰고 지나간다. jacobian-variety, elliptic-curves, modular-curves 가 모두 이 개념을 전제하는데 문서가 없다. 분야는 #algebraic_geometry(새 태그 대신 #algebra 첫째 검토) #number_theory #complex_analysis. 부모 후보는 algebraic-varieties 와 elliptic-curves. 내용: 사영 군다양체, 복소 토러스와 Riemann 관계, 쌍대 다양체와 편극, 동종사상과 Tate 가군, Poincare 완전가약성",
-      "createdAt": "2026-09-24T00:46:29.404Z",
-      "seq": 1056
-    },
-    {
-      "id": "96b2bce2",
-      "title": "안정 이론의 후속 간선 (6차)",
-      "priority": 12,
-      "note": "2026-09-24 회차. model-theory 의 마지막 남은 자식 자리를 stable-theories(안정 이론)로 채웠다(부모 model-theory 하나, foundations-overview 의 모형론 갈래에서 초곱 다음 o-최소성 앞, 120줄). 문서 구성: 개요, 직관(ACF 에서 부분체 위 타입은 기약다항식으로 정해져 가산인데 RCF 에서는 유리수의 가름마다 다른 타입이 생겨 연속체 개다. 차이는 순서), 정의(타입 tp(a/A), lambda-안정, 순서 성질), 성질(Shelah 의 안정성과 순서 성질 동치, 예 7개 표, 안정성 스펙트럼 세 꼴, 갈래짓기 독립과 비갈래 확장, Morley 위수가 Zariski 차원과 일치), 활용(비동형 모형 개수와 2^lambda 하한, 함수체 Mordell-Lang, Malliaris-Shelah 안정 정규성). 리프다. 6차에 볼 것: (1) 후속 후보는 강최소 집합과 Zilber 삼분법(Morley 위수 1 정도 1 의 집합, 조합기하의 세 갈래, Hrushovski 의 반례), 단순 이론과 NIP(순서 성질 대신 독립 성질로 가른 갈래. 무작위 그래프가 여기 들어간다), Morley 범주성 정리(lowenheim-skolem 과 model-theory 가 범주성을 언급하지만 정리 문서가 없다). (2) model-theory 의 자식이 다섯이 되어 6개가 되면 5절의 묶음 규칙이 걸린다. 정의 없이 쓴 용어: 양화사 소거(model-theory 에 있다), 압축성, 미분 닫힌 체, 분리 닫힌 체, Szemeredi 정규성 보조정리",
-      "createdAt": "2026-09-24T00:46:29.513Z",
-      "seq": 1057
-    },
-    {
-      "id": "738a6b41",
-      "title": "사영다양체의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-24 회차. algebraic-varieties 의 후속으로 projective-varieties(사영다양체)를 새로 썼다(부모 algebraic-varieties 하나, abstract-algebra-overview 의 환과 가군 갈래에서 대수다양체 다음 줄, 118줄). elliptic-curves 를 자식으로 삼지 않았다. 순환은 없었으나 5절 기준으로 elliptic-curves 의 개요가 암호학 관점이라 사영다양체를 빼도 그대로 읽히므로 배경이라 판단했고, 활용 절의 본문 링크로 걸었다. 문서 구성: 개요, 직관(y=0 과 y=1 은 아핀에서 만나지 않는데 비로 적어 Y=0 과 Y=Z 로 고치면 (1:0:0) 에서 만난다), 정의(사영공간과 동차좌표, 동차 다항식의 영점이 대표원과 무관, V_+(S), 아핀 덮개와 사영 닫음), 성질(무관 아이디얼을 예외로 둔 사영 영점정리, 완비성과 xy=1 반례, 연결 사영다양체의 정칙함수가 상수, Bezout 정리), 활용(타원곡선의 무한원점, Riemann-Roch 와 종수, Grassmann 다양체의 Plucker 매장). 리프다. 후속 후보: 스킴(prime-ideals 와 localization-rings 가 부모. algebraic-varieties 활용 절 셋째와 projective-varieties 가 함께 부른다), Grassmann 다양체(활용 절 셋째. exterior-algebra 가 부모로 붙는다), 차원 이론과 Krull 차원(algebraic-varieties 와 stable-theories 가 모두 정의 없이 쓴다), 특이점과 매끄러움(Riemann-Roch 항목이 매끄러움을 전제한다), 인자와 선다발. 정의 없이 쓴 용어: 정칙함수, 중복도, 콤팩트 Riemann 면, 인자, 분해 가능한 원소",
-      "createdAt": "2026-09-24T00:48:46.852Z",
-      "seq": 1059
-    },
-    {
-      "id": "8585f372",
-      "title": "다중격자의 후속 간선 (3차)",
-      "priority": 12,
-      "note": "2026-09-24 회차. 2차 note 의 (1) 갈래에서 Schur 보수를 골라 schur-complement 를 새로 썼다. 방향 판정: note 가 이를 domain-decomposition 의 자식 후보로 적었으나 5절의 '도구가 그 도구를 쓰는 정리의 부모' 규칙에 따라 부모로 놓았다. 부모는 matrix-factorizations 하나이고, domain-decomposition 의 부모가 multigrid 하나에서 둘로 늘었다. linear-algebra-overview 의 다중격자 앞줄에 넣었다. 문서 구성: 개요, 직관(2x2 블록 선형계에서 x 를 소거하면 (D-CA^{-1}B)y 계가 남고, 1x1 블록이면 Gauss 소거 한 단계), 정의(M/A, 블록 삼각 분해), 성질(det M = det A det(M/A), 역행렬의 블록 공식, 대칭일 때 양의 정부호성과 관성 가법성), 활용(Cholesky 의 추축, 조건부 공분산, 선형행렬부등식, 경계 미지수 계). 3차에 볼 것: (1) multigrid 의 다른 자식 후보는 1차 note 의 완전 다중격자와 Fourier 국소 해석이 그대로 남아 있다. (2) domain-decomposition 의 후속은 FETI 와 BDDC, 부분공간 보정 정리(multigrid 와 domain-decomposition 둘의 부모가 될 수 있다). (3) preconditioning 의 남은 절 목록을 훑어 더 뗄 것이 있는지 본다. 이 검토는 1차와 2차 note 가 모두 남겼고 아직 하지 않았다. 정의 없이 쓴 용어: 합동변환, 추축, 관성",
-      "createdAt": "2026-09-24T00:56:29.013Z",
-      "seq": 1065
-    },
-    {
-      "id": "9aad5051",
-      "title": "jacobian-variety 의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-23 회차에 새로 썼다(부모 riemann-surfaces 와 picard-group). 후속 후보: 세타 함수와 세타 divisor(theta-series 와 8절 기준으로 겹침을 먼저 볼 것), Abel 정리의 역방향 구성(성질 절 첫째 증명 요지가 '세타 함수를 쓴다' 로 끝난다), 아벨 다양체(별도 큐 항목이 있다. 2026-09-24 회차에 stable-theories 와 projective-varieties 를 쓰면서 같은 빈자리를 다시 만났고 부모 후보를 algebraic-varieties 와 projective-varieties 로 적어 두었다), Chabauty 방법(활용 둘째, 수론 갈래). 2026-09-24 회차에 이 항목을 꺼냈으나 남은 시간이 10분이라 새 문서를 쓰지 않고 되돌렸다",
-      "createdAt": "2026-09-24T01:04:23.698Z",
-      "seq": 1073
-    },
-    {
-      "id": "6a86ec70",
-      "title": "luzin-sierpinski-sets 의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-24 회차에 새로 썼다(부모 erdos-sierpinski-duality 하나, 기초론 개관 집합론 갈래 쌍대성 다음 줄, 89줄). baire-category, martins-axiom, cardinal-characteristics, zfc-axioms 를 본문에서 링크했고 erdos-sierpinski-duality 더 알아보기에 넣었다(그 문서는 리프였다). README 를 503/910 으로 맞췄다. 구성: 개요, 직관(Baire 정리로 제1범주 집합 밖에 점이 남으므로 그 점을 초한귀납으로 계속 집는다. CH 로 제1범주 집합을 omega_1 로 줄 세우면 L = {x_alpha} 가 나오고 L cap M 이 가산임을 계산으로 보인다), 정의(두 집합과 M, N), 성질(존재 정리, 측도와 범주 - L 은 영집합이며 제2범주, S 는 제1범주이며 측도가 양, 강 측도 영집합, 쌍대 사상 아래의 상, Martin 공리 아래의 부재 - non(M) = aleph_1 논법), 활용 3항목. 각주 셋(Oxtoby 19장, Bartoszynski-Judah 2.5/7.3절, Laver 1976). 배운 것: 4절 제목 규칙의 'A와 B' 꼴이지만 두 집합이 쌍대 사상으로 서로 옮겨지는 한 쌍이고 파일명이 둘 다 가리키므로 분할 대상이 아니다. 후속 후보: 강 측도 영집합(이 문서 성질 절 셋째가 정의와 정리 하나다. Borel 추측, Galvin-Mycielski-Solovay 정리까지 가면 문서 하나 분량이고 부모는 이 문서와 measure 둘 다 후보), Cichon 도표(cardinal-characteristics 가 한 절로 다루는데 열 기수의 부등식 전부와 각 화살표의 독립성 결과가 별도 문서 분량이다. 부모는 cardinal-characteristics)",
-      "createdAt": "2026-09-24T04:39:33.049Z",
-      "seq": 1076
-    },
-    {
-      "id": "be52640a",
-      "title": "나열형 mermaid 훑기 (26차)",
-      "priority": 12,
-      "note": "2026-09-24 회차 25차. 24차가 남긴 열다섯 가운데 다섯을 판정했고 넷을 지웠다. 지운 넷과 근거: category-o 47(O->블록->무게 는 45줄 본문이 그대로 쓰는 정의의 사슬이고, M/L/P 세 갈래는 세 가군의 나열, D·V->BGG 합류는 '두 행렬이 전치 관계다' 문장 하나다. 117줄이 V = D^T 를 식으로 쓰고 19·21·125줄이 BGG 상반성과 KL 추측을 상세히 다루므로 정보 손실 없음), fredholm-determinant 45(유한차원 det->주부분행렬->Fredholm 급수 는 개요의 사슬이고 F->가역성/간격확률/Nystrom 은 응용 셋의 나열이다. 100·138·152줄이 각각을 절로 다룬다), galois-representations 47(58줄 본문이 유리성·함수방정식·Riemann 가설 셋을 그대로 문장으로 쓰고 105줄 인용이 Weil 추측 세 항목을 다시 진술한다), hecke-operators 44(5·14·28·34·42줄과 '옛형식의 겹침' 절이 그림의 모든 정점을 문장으로 담는다). 남긴 하나: fundamental-lemma 43 이다. 안정 켤레류 하나가 여러 G(F)-켤레류로 갈라지고 그 조각들이 SO 와 KO 두 무게로 다시 합쳐져 G 의 대각합 공식과 내시군 H 로 가는 구조이고, 갈라짐과 두 방식의 합류 자체가 이 문서의 내용이라 문장으로 풀면 잃는다. 26차에 볼 것: 24차 목록의 남은 열이다. heegner-points 101, kazhdan-lusztig 93, kedlaya-algorithm 55, local-class-field-theory 65, p-adic-numbers 39, poitou-tate 84, sea-algorithm 79, tate-thesis 48, volume-conjecture 55, waldspurger-formula 36. 판정 기준은 그대로이고(비교형은 표로, 분기·합류형과 가환도는 남기고, 정의의 사슬과 응용 나열은 지운다), 지우기 전에 그림의 정점마다 본문에 대응하는 문장이 있는지 grep 으로 확인하는 절차를 25차처럼 지킬 것",
-      "createdAt": "2026-09-24T04:41:07.277Z",
-      "seq": 1077
-    },
-    {
-      "id": "f5b67c57",
-      "title": "4절 금지 표현 grep 회귀 점검 (다음 차수)",
-      "priority": 12,
-      "note": "2026-09-24 회차. 앞 note 가 지시한 예고문·메타 서술 목록을 docs 전체에 처음 돌렸다. (1) '정리하면' 7 건은 전부 오검출이다. 4절이 금지한 것은 요약 예고의 '정리하면' 인데 걸린 것은 모두 식 변형의 rearrange 다(continued-fractions 77, gradient-descent 63, jacquet-langlands 31, linear-regression 67, probabilistic-method 117, quadratic-reciprocity 118, weyl-character-formula 82). 이 패턴은 다시 돌리지 말 것. (2) '강조할 점이|주목할 것은|짚고 넘어가|다음이 핵심|점을 기억하자|요약하면' 은 0 건이다. (3) 축을 넓혀 여섯 건을 고쳤다: internal-set-theory 13 '자연수에서 먼저 본다.' 삭제(다음 문장이 이미 자연수를 주어로 쓴다), localization-rings 85 '아래에서 보듯' 삭제와 '~이며' 연결 해소, finite-automata 108 '보이자'->'보인다', godel-incompleteness 83 '위에서 보았듯' 삭제, large-cardinals 73 '여기서 나온다'->'결정성에서 ... 따라 나온다'(4절 금지 표현 명시 항목), unbalanced-optimal-transport 121 '위에서 말한 특정 비용'->'Hellinger-Kantorovich 비용'(지시어를 실제 이름으로 바꾸니 정보가 늘었다. 86·94줄이 그 거리를 정의한다). (4) '이 점이 중요하다|의 출발점이다|을 말해 준다|인 셈이다|생각해 보면|이 절에서는|이 문서에서는|이 지도에서' 는 0 건이다. 다음 차수에 볼 것: 4절 문체 규칙 가운데 남은 것은 번역체 관용구 목록이다. grep -nE '흥미롭게도|놀랍게도|본질적으로|자연스럽게|직관적으로|이것이 바로|에 다름 아니다|이는 곧|다시 말해|말하자면|라는 사실은|라는 것이 밝혀졌다' docs/*.md 로 시작한다. '자연스럽게' 와 '본질적으로' 는 수학 용어(자연 변환, 본질적 상한)와 섞이므로 문장 단위로 판정할 것. 앞선 차수의 판정(조언투 8 패턴 0 건, 관용구 15 패턴 0 건, '일 뿐이다' 5 건 남김)은 그대로 유효하다",
-      "createdAt": "2026-09-24T04:42:40.203Z",
-      "seq": 1078
-    },
     {
       "id": "ab34e766",
       "title": "각주 정합 회귀 점검 (다음 차수)",
@@ -218,6 +146,70 @@
       "note": "상시 항목. 링크를 문자열 위치로 삽입하는 작업을 하는 회차에서는 그 작업과 함께 돌리고, 그런 작업이 없는 회차에서는 건너뛴다. 2026-09-24 회차에 링크 63 자리를 건 뒤(완비성 9, 전처리 1, 연결성 7, 다양체 13, 그래프 39) 전수로 돌려 0 건이었다. 이 회차의 삽입기도 손으로 쓴 스크래치패드 스크립트(link.mjs)였고 지정한 file:line 의 첫 등장만 치환하므로, 수식 스팬 방어는 이 검사기가 사후로 맡았다. 검사기는 코드펜스를 건너뛰고 달러 두 개 블록 안의 줄과 인라인 달러 스팬을 모아 그 안에 /\\]\\([a-z0-9-]+\\.md\\)/ 가 있으면 보고한다(스크래치패드 mathlink.mjs, 20줄. 회차마다 스크래치패드가 비므로 다시 쓴다). 2026-09-22 여섯째 회차에 elliptic-curves 링크를 31 문서에 걸 때 deuring-correspondence 8줄 블록 안 \\text{초특이 타원곡선} 에 링크가 들어가 렌더 결과에 링크 문법이 글자 그대로 나온 사고가 있었다. 4절 수식 규칙의 여섯 검사가 전부 이것을 통과시킨다. dev/ 는 고치지 않는 것이 0절이므로 render-check 에 넣자는 제안은 독자에게 남긴다. 이번 회차에 링크 텍스트 안의 자리를 치환하면 링크가 중첩되는 사고(예: '[[그래프](graphs.md) 동형](graph-isomorphism.md)')도 확인했다. 후보 판정 단계에서 뺐고 사고는 없었지만, 이 검사기에 '링크 텍스트 안의 링크' 판정을 더하면 그 사고까지 잡을 수 있다",
       "createdAt": "2026-09-24T12:47:56.241Z",
       "seq": 1105
+    },
+    {
+      "id": "d9331fe1",
+      "title": "아벨 다양체의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-24 회차에 abelian-varieties 를 새로 썼다(부모 elliptic-curves 와 projective-varieties, 추상대수 개관의 대수기하로 가는 문 갈래에서 사영다양체 다음 줄, 138줄). 리프다. 검토할 것: (1) jacobian-variety 를 자식으로 둘지. 그 문서는 부모가 picard-group 과 riemann-surfaces 둘이라 셋이 된다. 순환은 없을 것으로 보이나 5절 기준으로 Jacobi 다양체가 아벨 다양체의 특수 사례인 것은 맞고 그 문서 69줄이 결론으로 아벨 다양체를 부른다. 다만 그 문서의 개요는 복소해석 쪽이라 아벨 다양체 없이도 읽힌다. 양쪽 기준이 엇갈리므로 문서를 읽고 판단할 것. (2) 후속 후보: 세타 함수와 세타 divisor(jacobian-variety note 에도 같은 항목이 있다. theta-series 와 8절 기준으로 겹침을 먼저 볼 것), 편극과 모듈라이 공간(Siegel 상반공간과 A_g. 정의 절 쌍대와 편극이 편극만 정의하고 모듈라이는 언급하지 않았다), Tate 가군과 Galois 표현(galois-representations 가 이미 있으니 그 문서와 이 문서 사이의 간선을 볼 것), 동종사상 차수와 Weil 쌍(deuring-correspondence 가 동종사상을 타원곡선에서 다룬다). (3) 정의 없이 쓴 용어: 완비 다양체의 사영성 증명, 충분한 선다발, 대수적으로 자명한 선다발, Hecke 아이디얼, 갈래짓기 독립",
+      "createdAt": "2026-09-24T16:40:21.152Z",
+      "seq": 1115
+    },
+    {
+      "id": "3f227e93",
+      "title": "Morley 범주성 정리의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-24 회차에 morley-categoricity 를 새로 썼다(부모 stable-theories 하나, foundations-overview 모형론 갈래에서 안정 이론 다음 o-최소성 앞, 116줄). 리프다. 안정 이론의 후속 후보 셋 가운데 Morley 범주성 정리를 골랐고 나머지 둘이 남았다. 후속 후보: (1) 강최소 집합과 Zilber 삼분법. 이 문서의 정의 절이 강최소 집합과 대수적 폐포의 프리기하를 이미 정의하므로 부모는 이 문서다. 내용은 조합기하의 세 갈래(자명, 벡터공간, 대수적으로 닫힌 체)와 Hrushovski 의 반례이고 활용 절 넷째가 그 자리를 이름만으로 지나간다. (2) 단순 이론과 NIP. 순서 성질 대신 독립 성질로 가른 갈래이고 무작위 그래프가 거기 들어간다. 부모는 stable-theories. (3) Vaught 추측. 이 문서 성질 절 셋째가 가산 모형 개수를 다루면서 Ehrenfeucht 의 예를 들었다. 다만 추측 자체는 열린 문제이므로 4절 규칙대로 출처 각주를 달아야 하고 Morley 의 부분 결과(개수가 aleph_1 이하이거나 연속체)를 함께 적어야 분량이 된다. 정의 없이 쓴 용어: 초등확대, 소모형, 포화 모형, 프리기하, 나누어지는 꼬임 없는 아벨군",
+      "createdAt": "2026-09-24T16:42:26.157Z",
+      "seq": 1116
+    },
+    {
+      "id": "c214bc89",
+      "title": "Krull 차원의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-24 회차에 krull-dimension 을 새로 썼다(부모 prime-ideals 와 noetherian-rings, 추상대수 개관의 환 갈래에서 Noether 환 다음 Dedekind 정역 앞, 132줄). 리프다. 사영다양체 note 의 '차원 이론과 Krull 차원' 항목을 이것으로 닫았고 같은 note 의 남은 후보는 스킴, Grassmann 다양체, 특이점과 매끄러움, 인자와 선다발이다. 이 문서의 후속 후보: (1) 정칙 국소환. 성질 절 마지막이 정의와 부등식만 주고 Auslander-Buchsbaum 정리(정칙이면 UFD)와 Serre 의 유한 사영차원 판정은 담지 않았다. 부모는 이 문서와 nakayama-lemma 둘 다 후보다. (2) Noether 정규화. 유한생성 대수 정리의 증명 요지에서 이름만 쓰고 지나갔다. 부모는 polynomial-rings 와 이 문서. (3) Hilbert 다항식과 Hilbert-Samuel 함수. 차원 정리의 셋째 값이다. combinatorics 쪽 생성함수 문서와 겹치는지 8절 기준으로 먼저 볼 것. (4) 스킴. algebraic-varieties 와 projective-varieties 와 이 문서가 함께 부르고 부모 후보가 prime-ideals 와 localization-rings 다. 정의 없이 쓴 용어: 가군의 길이, 근기, Noether 정규화, 유한 가군, 접공간, 극대 사슬",
+      "createdAt": "2026-09-24T16:45:29.082Z",
+      "seq": 1117
+    },
+    {
+      "id": "a2660275",
+      "title": "다중격자의 후속 간선 (4차)",
+      "priority": 12,
+      "note": "2026-09-24 회차 3차. 2차와 3차 note 가 미뤄 온 (3) preconditioning 절 목록 훑기를 했다. 결과: 불완전 분해 절이 M-행렬 존재 정리까지 담고 있어 별도 문서 분량이었고 incomplete-lu 로 뗐다(부모 preconditioning 하나, 선형대수 개관 전처리 다음 줄, 140줄). preconditioning 의 그 절은 두 문단으로 줄였고 Meijerink-van der Vorst 각주는 새 문서로 옮겼다. 나머지 절 판정: 스펙트럼 등가와 고전적 분할과 전처리된 공액기울기법은 전처리 문서의 본체라 두었고, 다중격자와 영역 분할 두 절은 각각 한 문단이고 이미 별도 문서가 있어 링크 요약으로 적절하다. 이 축은 닫혔다. 4차에 볼 것: (1) multigrid 의 자식 후보로 완전 다중격자와 Fourier 국소 해석이 1차 note 부터 남아 있다. (2) domain-decomposition 의 후속은 FETI 와 BDDC, 부분공간 보정 정리(multigrid 와 domain-decomposition 둘의 부모가 될 수 있다). (3) incomplete-lu 의 후속 후보는 희소 행렬의 정렬(최소 차수, 중첩 분할. graph-theory 쪽 분리자 정리와 이어진다)과 근사 역행렬 전처리(SPAI. 불완전 분해와 나란한 갈래이고 부모는 preconditioning). 정의 없이 쓴 용어: 채움, 준위, 이류-확산, 빨강-검정 정렬",
+      "createdAt": "2026-09-24T16:48:14.089Z",
+      "seq": 1118
+    },
+    {
+      "id": "c2bac2e9",
+      "title": "Chabauty 방법의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-24 회차에 chabauty-method 를 새로 썼다(부모 jacobian-variety 와 p-adic-numbers, 정수론 개관 타원곡선과 L 함수 갈래 마지막 줄, 116줄). 리프다. 같은 회차에 jacobian-variety note 의 아벨 다양체 항목도 닫았다(abelian-varieties 를 따로 썼고 jacobian-variety 를 그 자식으로 두지 않기로 판정했다. 근거는 그 문서 개요가 복소 토러스 구성으로 끝나 아벨 다양체 없이 읽히므로 5절의 배경에 해당한다는 것이다). jacobian-variety note 에 남은 후보는 세타 함수와 세타 divisor(theta-series 와 8절 기준으로 겹침을 먼저 볼 것)와 Abel 정리 역방향 구성이다. 이 문서의 후속 후보: (1) Coleman 적분. 정의 절이 잔차 원판과 항별 적분만 주고 Frobenius 정합으로 이어 붙이는 부분은 한 문장이다. newton-polygon 이 이미 있으므로 부모 후보가 이 문서와 newton-polygon 둘이다. (2) Chabauty-Kim 방법과 이차 Chabauty. 성질 절 셋째가 r >= g 우회를 두 문장으로 지나간다. 부모는 이 문서. (3) Mordell 추측과 Faltings 정리. 개요 첫 문장이 이름만 쓰고 지나가는데 문서가 없다. 부모 후보는 abelian-varieties 와 이 문서다. 정의 없이 쓴 용어: 좋은 환원, Neron-Severi 군, p 진 Lie 군, 불변 1 형식, 일반화 Fermat 방정식",
+      "createdAt": "2026-09-24T16:50:33.724Z",
+      "seq": 1119
+    },
+    {
+      "id": "fe975e5b",
+      "title": "나열형 mermaid 훑기 (27차)",
+      "priority": 12,
+      "note": "2026-09-24 회차 26차. 24차가 남긴 열을 전부 판정했고 이 목록은 닫혔다. 지운 넷과 근거: heegner-points 101(격자->CM 점->phi(x)->y_K 의 구성 사슬에 Gross-Zagier 와 Kolyvagin 두 응용이 붙은 나열이다. 11줄이 구성 전체를 한 문장으로 쓰고 16·21·35·96·137·147줄이 정점을 하나씩 담는다), p-adic-numbers 39(두 완비화의 갈래이고 그림 바로 아래 49줄이 '해석적으로는 Cauchy 완비화이고 대수적으로는 역극한' 으로 같은 말을 한다. 5·7·13·90·100·108줄이 나머지를 담는다), tate-thesis 48(자기쌍대성->Poisson->반사->함수방정식 은 증명 단계의 나열이고 46줄이 '그것이 함수방정식의 전부다' 로 끝낸다. 국소 적분 갈래는 19·29·36줄이 절로 다룬다. 그림을 가리키던 60줄 '이 그림의 한 점이다' 도 함께 고쳤다), kedlaya-algorithm 55(알고리즘 단계의 사슬이고 5·7·14·19·29·71·79·83줄이 각 단계를 절로 다룬다. WEIL->LIFT 합류도 19줄이 문장으로 쓴다). 남긴 여섯과 근거: kazhdan-lusztig 93(Hecke 대수·Schubert 다양체·범주 O 세 출처가 한 다항식으로 합류하는 구조가 내용이고 아래 문단이 '세 화살표 각각이 하나의 정리다' 로 그 구조를 가리킨다), local-class-field-theory 65(비분기와 완전분기 두 갈래가 K^ab 로 합류하고 Artin 사상이 K^x 를 그 구조에 대응시킨다), poitou-tate 84(대역 상 A 가 자기 소멸자이고 Selmer 조건 L 과 교차해 두 Selmer 군이 나오는 부분공간 관계다), sea-algorithm 79(Elkies 와 Atkin 을 가르는 결정 노드가 있고 세 경로가 CRT 로 합류하는 제어 흐름이다), waldspurger-formula 36(국소 부호 +-1 로 갈리고 분지 집합의 짝홀로 다시 갈리는 이중 분기가 내용이다. 25차가 fundamental-lemma 를 남긴 근거와 같다), volume-conjecture 55(log-Lobachevsky 경로와 안장점 경로가 같은 부피로 합류한다). 27차에 볼 것: 새 목록을 만든다. grep -l mermaid docs/*.md 로 전체를 뽑고 24차까지의 판정 목록에 없는 문서만 추린다. 판정 기준은 그대로다",
+      "createdAt": "2026-09-24T16:53:34.990Z",
+      "seq": 1121
+    },
+    {
+      "id": "6c071b68",
+      "title": "4절 금지 표현 grep 회귀 점검 (다음 차수)",
+      "priority": 12,
+      "note": "2026-09-24 회차. 앞 note 가 지시한 번역체 관용구 목록을 돌렸다. (1) '흥미롭게도|놀랍게도|이것이 바로|에 다름 아니다|이는 곧|말하자면|라는 것이 밝혀졌다|다시 말해|라는 사실은|본질적으로' 는 0 건이다. 이 열 패턴은 다시 돌리지 말 것. (2) '직관적으로' 1 건은 오검출이다. lambda-calculus 129 의 '직관적으로 계산가능하다' 는 Church-Turing 논제의 진술 자체이고 따옴표 안이다. (3) '자연스럽게' 2 건을 고쳤다. adjunctions 5 는 31줄이 설명하는 호환 조건을 가리키므로 '두 대상을 따라 호환되게' 로, deformation-rings 19 는 함자성이므로 '함자적으로' 로 바꿨다. 둘 다 지시어를 실제 내용으로 바꾸니 정보가 늘었다. (4) 축을 넓혀 돌린 것: '되어진다|지어진다|에 의해 ~되' 에서 '특징지어진다' 8 건은 굳은 수학 표현이고 이중 피동이 아니므로 남겼다(complex-multiplication 204 '짝지어진다' 도 같다). '먼저 ~을 보자|이제 ~을 정의한다|살펴보자|알아보자' 는 0 건이다. 다음 차수에 볼 것: 'X 에 의해' 14 건이 남았다. adjunctions 155, category-o 33, euler-systems 121, fontaine-mazur 96, forcing 102, fredholm-operators 59, hecke-operators 138, herbrand-ribet 145, lowenheim-skolem 87, merel-theorem 29, planar-graphs 94, satake-isomorphism 117, uniform-integrability 129, whittaker-models 113 이다. 대부분 '정리 이름 에 의해' 꼴이고 '~로' 나 '~에서' 로 바꾸면 되지만 문장마다 주어와 서술어를 보고 판정할 것(graph-minors 45 를 '위 정리로' 로 고친 것이 예다). 기계적 치환은 하지 말 것",
+      "createdAt": "2026-09-24T16:54:54.612Z",
+      "seq": 1122
+    },
+    {
+      "id": "49f7b5aa",
+      "title": "제목과 파일명이 어긋난 문서 훑기 (1차)",
+      "priority": 12,
+      "note": "2026-09-24 회차. 태그가 분야 하나뿐인 문서는 0 건이다(for f in docs/*.md; do [ $(tail -1 $f | grep -o '#[a-z0-9_]*' | wc -l) -le 1 ] && echo $f; done). 이 축은 닫혔다. 대신 4절 제목 규칙의 'A와 B' 축을 열었다. 주의: CLAUDE.md 4절이 적은 grep -l '^# .*[와과] ' docs/*.md 는 이 환경에서 문서 전부를 내놓는다. 대괄호 문자 클래스가 UTF-8 바이트 집합으로 해석되어 거의 모든 한글에 걸리기 때문이다(dev/ 스크립트가 아니라 CLAUDE.md 의 grep 이므로 고치지 않는다). 제목 줄만 grep -P 로 돌린 것이 맞는 목록이고 94 건이다: for f in docs/*.md; do head -1 $f | grep -qP '^# .+(와|과) ' && basename $f .md; done. 판정 기준은 4절이다. 정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목(Neron-Tate 높이와 Mordell-Weil 정리, Bernoulli 수와 von Staudt-Clausen 정리)은 한 주제이므로 그대로 둔다. 파일명이 두 주제 가운데 하나만 가리키는 것이 고칠 대상이다. 1차에 볼 후보: eigenvalues(고윳값과 고유벡터. 한 개념의 두 면이라 그대로일 가능성이 높다), proofs(명제와 증명. 뿌리 문서이고 파일명이 증명만 가리킨다. 뿌리는 README 와 직결되므로 판단을 신중히 할 것), dag-topological 과 limits-colimits 와 ideals-quotient-rings 는 파일명이 둘 다 가리키므로 통과다. 한 회차에 대여섯 건씩 파일명과 제목을 견주고 판정 결과를 note 에 누적할 것",
+      "createdAt": "2026-09-24T16:55:55.696Z",
+      "seq": 1123
     },
     {
       "id": "d2720772",
@@ -1370,6 +1362,14 @@
       "note": "borel-hierarchy 가 사영 계층의 첫 단계(Sigma^1_1 해석적 집합, Pi^1_1 여해석적 집합)만 정의하고 지나간다. 분야는 #set_theory #logic #topology. 부모는 borel-hierarchy. 내용: Sigma^1_n/Pi^1_n 의 계층, 사영 결정성, 완전집합 성질과 Lebesgue 가측성이 계층의 어느 단계까지 ZFC 에서 증명되는지, Sigma^1_1 의 완전집합 성질(Suslin), Pi^1_1 집합의 서수 분석(나무와 유계 정리). analytical-hierarchy 와 hyperarithmetical-hierarchy 의 효과적 판본과 나란히 둔다",
       "createdAt": "2026-09-24T12:52:41.915Z",
       "seq": 1107
+    },
+    {
+      "id": "12961212",
+      "title": "기수 불변량의 후속 간선",
+      "priority": 10,
+      "note": "2026-09-24 회차. luzin-sierpinski-sets note 가 남긴 두 후보를 판정했다. (1) 강 측도 영집합은 이미 strong-measure-zero 로 존재한다(measure 와 measure-theory-overview 와 luzin-sierpinski-sets 가 모두 링크한다). 그 note 는 문서가 생기기 전에 쓰인 것이다. (2) Cichon 도표는 별도 문서로 떼지 않기로 판정했다. cardinal-characteristics 93줄의 성질 절이 이미 mermaid 도표, add(M) 과 cof(M) 의 두 등식, 정의에서 나오는 부등식의 증명 요지, 무작위 실수 강제법과 Cohen 실수를 쓴 무모순성 결과를 담고 있다. 떼면 그 문서의 성질 절 절반이 사라지고 8절의 분할 기준(1000줄 초과, A와 B 제목)에 해당하지도 않는다. 이 축은 닫혔다. cardinal-characteristics 의 남은 후속 후보: (1) Cohen 실수 강제법. 무모순성 결과 절이 무작위 실수와 나란히 부르는데 random-real-forcing 만 문서가 있다. 부모는 forcing. (2) Tukey 순서와 공종성. add 와 cof 를 아이디얼 사이의 Tukey 사상으로 견주는 틀이고 부모는 이 문서와 order-lattices. (3) Bartoszynski 의 특징짓기. add(N) 과 cof(N) 을 급수의 미끄러짐으로 다시 쓰는 정리이고 그 문서가 각주로만 언급한다",
+      "createdAt": "2026-09-24T16:51:29.075Z",
+      "seq": 1120
     },
     {
       "id": "dfb3e493",
