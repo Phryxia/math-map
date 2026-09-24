@@ -45,18 +45,24 @@ graph TD
 - [Coxeter 군](coxeter-groups.md): 반사로 생성된 군의 표시, 길이 함수와 Bruhat 순서
 - [Mathieu 군과 Golay 부호](mathieu-groups.md), [땋임군](braid-groups.md): 조합론·위상과 맞닿은 군
 
-## 환과 가군
+## 환과 아이디얼
 
 - [환](rings.md) → [아이디얼과 몫환](ideals-quotient-rings.md) → [소 아이디얼](prime-ideals.md) → [환의 국소화](localization-rings.md)
 - [다항식환](polynomial-rings.md) → [유일분해정역](unique-factorization-domains.md): 환 위의 다항식과 나눗셈, 그리고 Euclid 정역(ED) $\subset$ 주아이디얼정역(principal ideal domain, PID) $\subset$ 유일분해정역(unique factorization domain, UFD) 사슬
 - [Noether 환](noetherian-rings.md): 오름사슬 조건과 Hilbert 기저정리
-- [대수다양체](algebraic-varieties.md): 다항식의 해집합, 영점정리가 잇는 근기 아이디얼과의 대응, Zariski 위상
-- [사영다양체](projective-varieties.md): 동차좌표로 넓힌 공간 위의 대수적 집합, 완비성과 Bezout 정리
+- [Dedekind 정역](dedekind-domains.md): 정수론으로 가는 문
+
+## 가군
+
 - [가군](modules.md) → [텐서곱](tensor-products.md) → [유도 함자](derived-functors.md): 환 위의 벡터 공간과 완전성의 실패를 재는 Tor, Ext
 - [PID 위의 유한생성 가군](finitely-generated-modules.md): 구조정리와 Smith 표준형
 - [Nakayama 보조정리](nakayama-lemma.md): 국소환 위의 가군을 잉여체로 내려 읽기
-- [Dedekind 정역](dedekind-domains.md): 정수론으로 가는 문
 - [대수적 K 이론](algebraic-k-theory.md): 환의 사영가군에서 나오는 고차 불변량
+
+## 대수기하로 가는 문
+
+- [대수다양체](algebraic-varieties.md): 다항식의 해집합, 영점정리가 잇는 근기 아이디얼과의 대응, Zariski 위상
+- [사영다양체](projective-varieties.md): 동차좌표로 넓힌 공간 위의 대수적 집합, 완비성과 Bezout 정리
 
 ## 체와 Galois 이론
 
