@@ -52,18 +52,6 @@ $$
 
 Kedlaya 알고리즘은 같은 구조에서 정밀도를 $p^1$ 에서 $p^N$ 으로, 종수 $1$ 을 종수 $g$ 로, 소수체를 $\mathbb F_{p^n}$ 으로 올린 것이다.
 
-```mermaid
-graph TD
-  C["초타원곡선 y²=f(x) / F_q"] --> MW["Monsky–Washnitzer 코호몰로지<br/>약수렴 대수 A†, 기저 x^i dx/y"]
-  MW --> FR["Frobenius 올림 σ<br/>x ↦ x^p,  y ↦ y^p(1+δ)^{1/2}"]
-  FR --> RED["미분형식 환원<br/>x^k dx/y^m → 기저의 일차결합"]
-  RED --> MAT["2g×2g 행렬 M ≡ Frob  (mod p^N)"]
-  MAT --> CP["특성다항식 = P(T) 의 계수 mod p^N"]
-  WEIL["Weil 한계<br/>|계수| ≤ C(2g,i) q^{i/2}"] --> LIFT
-  CP --> LIFT["p^N > 2·상계 이면 정수가 유일"]
-  LIFT --> Z["zeta 함수 확정"]
-```
-
 ## 수렴반경의 제한
 
 $\mathbb F_q$ 위 곡선의 $p$ 진 코호몰로지를 만들려면 곡선을 $\mathbb Z_q$ 로 들어올려야 한다. 좌표환 $\mathbb F_q[x,y]/(y^2-f)$ 를 그대로 들어올린 $\mathbb Z_q$ 대수의 [de Rham 코호몰로지](de-rham-cohomology.md)는 너무 크고, $p$ 진 완비화를 취하면 수렴반경이 정확히 $1$ 인 급수까지 들어와 코호몰로지가 무한차원이 된다.

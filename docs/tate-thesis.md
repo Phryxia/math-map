@@ -45,19 +45,7 @@ Tate 의 zeta 적분은 이 관찰을 이델류군으로 일반화한 것이다.
 
 적분을 $|x|\_{\mathbb A}=t$ 로 잘라 본다. $t\ge1$ 쪽은 $f$ 의 급감 때문에 모든 $s$ 에서 수렴해 정함수를 준다. 문제는 $t\lt 1$ 쪽인데, 여기에 Poisson 합공식을 쓰면 $t$ 를 $1/t$ 로 뒤집어 $t\ge1$ 쪽 적분으로 되돌릴 수 있다. 되돌린 결과에서 $f$ 가 $\hat f$ 로, $s$ 가 $1-s$ 로 바뀐다. 그것이 함수방정식의 전부다.
 
-```mermaid
-graph TD
-  P["아델의 자기쌍대성<br/>Â ≅ A, K^⊥ = K"] --> Q["Poisson 합공식<br/>Σ_{α∈K} f(αx) = |x|⁻¹ Σ_{α∈K} f̂(α/x)"]
-  Q --> R["t &lt; 1 구간을 t ≥ 1 로 반사"]
-  R --> S["Z(f,χ,s) = Z(f̂,χ⁻¹,1−s)"]
-  Q -.->|"K=Q, f = Gauss"| T["θ(1/t) = √t·θ(t)"]
-  T -.-> U["Riemann 의 고전적 증명"]
-  V["국소 적분 Z_v"] --> W["유한 자리 : Euler 인자<br/>무한 자리 : 감마 인자"]
-  W --> X["Λ_K(s) = |d_K|^{s/2}·Γ인자·ζ_K(s)"]
-  S --> X
-```
-
-$K=\mathbb Q$ 이고 $f$ 가 Gauss 함수이면 Poisson 합공식이 theta 변환식이 되고, Riemann 의 증명이 이 그림의 한 점이다.
+$K=\mathbb Q$ 이고 $f$ 가 Gauss 함수이면 Poisson 합공식이 theta 변환식이 되고, 위 계산이 Riemann 의 증명과 같아진다.
 
 # 정의
 
