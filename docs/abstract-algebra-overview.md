@@ -50,6 +50,7 @@ graph TD
 - [환](rings.md) → [아이디얼과 몫환](ideals-quotient-rings.md) → [소 아이디얼](prime-ideals.md) → [환의 국소화](localization-rings.md)
 - [다항식환](polynomial-rings.md) → [유일분해정역](unique-factorization-domains.md): 환 위의 다항식과 나눗셈, 그리고 Euclid 정역(ED) $\subset$ 주아이디얼정역(principal ideal domain, PID) $\subset$ 유일분해정역(unique factorization domain, UFD) 사슬
 - [Noether 환](noetherian-rings.md): 오름사슬 조건과 Hilbert 기저정리
+- [Krull 차원](krull-dimension.md): 소 아이디얼 사슬로 잰 차원, 차원 정리와 높이 정리, 정칙 국소환
 - [Dedekind 정역](dedekind-domains.md): 정수론으로 가는 문
 
 ## 가군

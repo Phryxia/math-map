@@ -84,6 +84,6 @@ $k[x_1,\dots,x_n]$ 이 Noether 이므로 임의의 다항식족이 정의하는 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Krull 차원](krull-dimension.md)
 
 #ring_theory #algebra

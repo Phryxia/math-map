@@ -65,7 +65,7 @@ $$
 
 ## 국소환의 접공간
 
-$(R,\mathfrak m)$ 이 Noether 국소환일 때 $\mathfrak m/\mathfrak m^2$ 는 잉여체 위의 유한차원 벡터 공간이고, 그 차원이 $\mathfrak m$ 의 최소 생성원 개수다. 대수기하에서 이 공간의 쌍대가 점에서의 접공간이고, 차원이 [Krull 차원](prime-ideals.md)과 같은 점을 정칙점이라 한다.
+$(R,\mathfrak m)$ 이 Noether 국소환일 때 $\mathfrak m/\mathfrak m^2$ 는 잉여체 위의 유한차원 벡터 공간이고, 그 차원이 $\mathfrak m$ 의 최소 생성원 개수다. 대수기하에서 이 공간의 쌍대가 점에서의 접공간이고, 차원이 [Krull 차원](krull-dimension.md)과 같은 점을 정칙점이라 한다.
 
 ## 가군의 최소 자유 분해
 
