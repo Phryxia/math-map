@@ -79,6 +79,7 @@ $\Sigma^0_k$ 논리식의 내포는 [산술적 계층](arithmetical-hierarchy.md
 
 ## 더 알아보기
 
+- [해석적 계층](analytical-hierarchy.md)
 - [역수학](reverse-mathematics.md)
 
 #logic #foundations #computation

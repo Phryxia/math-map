@@ -77,6 +77,7 @@ $\Sigma^1_1$ 쪽에는 대응하는 정규형이 있다. $A\in\Sigma^1_1$ 인 �
 ## 선수지식
 
 - [산술적 계층](arithmetical-hierarchy.md)
+- [2차 산술](second-order-arithmetic.md)
 
 ## 더 알아보기
 
