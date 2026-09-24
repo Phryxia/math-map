@@ -76,7 +76,7 @@ $$
 
 ## 선수지식
 
-- [평면 그래프](planar-graphs.md)
+- [교차수 부등식](crossing-number-inequality.md)
 - [Zarankiewicz 문제](zarankiewicz-problem.md)
 
 ## 더 알아보기
