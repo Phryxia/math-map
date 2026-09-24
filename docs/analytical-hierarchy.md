@@ -80,6 +80,6 @@ $\Sigma^1_1$ 쪽에는 대응하는 정규형이 있다. $A\in\Sigma^1_1$ 인 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [초산술적 계층](hyperarithmetical-hierarchy.md)
 
 #computation #logic #set_theory

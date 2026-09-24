@@ -174,5 +174,6 @@ $$
 - [연속체 가설](continuum-hypothesis.md)
 - [구성가능 우주](constructible-universe.md)
 - [큰 기수](large-cardinals.md)
+- [초산술적 계층](hyperarithmetical-hierarchy.md)
 
 #set_theory #logic #analysis
