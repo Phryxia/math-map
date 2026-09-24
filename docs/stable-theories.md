@@ -104,6 +104,6 @@ $\omega$-안정 이론에서 각 타입에 서수 값의 **Morley 위수**와 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Morley 범주성 정리](morley-categoricity.md)
 
 #logic #foundations #algebra
