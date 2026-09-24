@@ -105,6 +105,7 @@ graph TD
 - [Euler 계와 Kolyvagin 유도류](euler-systems.md) → [Kolyvagin 계](kolyvagin-systems.md), [Iwasawa 주추측](iwasawa-main-conjecture.md) → [Vandiver 추측](vandiver-conjecture.md), [Greenberg 추측](greenberg-conjecture.md)
 - [Eisenstein 아이디얼과 Mazur 의 비틀림점 정리](eisenstein-ideal.md) → [Merel 의 일양 유계성 정리](merel-theorem.md)
 - [Sato–Tate 분포](sato-tate.md) → [Lang–Trotter 추측](lang-trotter.md): $a_p$ 의 통계
+- [Chabauty 방법](chabauty-method.md): Jacobi 다양체의 계수가 종수보다 작을 때 유리점을 $p$ 진 적분의 영점으로 세는 방법
 
 ## Galois 표현과 p 진 Hodge 이론
 

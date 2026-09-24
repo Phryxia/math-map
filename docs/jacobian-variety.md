@@ -94,6 +94,6 @@ $g=1$ 이면 $\mathrm{AJ}: X \to J(X)$ 가 동형이다. [타원곡선](elliptic
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Chabauty 방법](chabauty-method.md)
 
 #complex_analysis #algebraic_topology #number_theory
