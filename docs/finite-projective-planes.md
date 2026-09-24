@@ -72,7 +72,7 @@ $\mathbb F\_q$ 위의 3차원 벡터공간에서 1차원 부분공간을 점, 2�
 
 - 직교 Latin 방진의 최대 개수를 판정한다. $N(n) = n-1$ 인지 묻는 문제가 차수 $n$ 평면의 존재 문제와 같은 문제다.
 - 결합행렬이 [오류정정부호](error-correcting-codes.md)를 준다. 차수 $n$ 평면의 직선을 부호어로 읽으면 길이 $n^2+n+1$ 이고 무게가 $n+1$ 인 부호가 되고, 차수 $10$ 의 비존재 증명이 이 부호의 무게 분포를 계산해 모순을 찾는다.
-- 이분 결합 그래프가 길이 $4$ 인 순환을 갖지 않으면서 간선이 많은 그래프의 예다. 정점 $2(n^2+n+1)$ 개에 간선이 $(n^2+n+1)(n+1)$ 개이고, 이 개수가 길이 $4$ 인 순환을 갖지 않는 이분그래프의 [간선 수 상한](zarankiewicz-problem.md)을 상수배 안에서 달성한다.
+- 이분 결합 [그래프](graphs.md)가 길이 $4$ 인 순환을 갖지 않으면서 간선이 많은 그래프의 예다. 정점 $2(n^2+n+1)$ 개에 간선이 $(n^2+n+1)(n+1)$ 개이고, 이 개수가 길이 $4$ 인 순환을 갖지 않는 이분그래프의 [간선 수 상한](zarankiewicz-problem.md)을 상수배 안에서 달성한다.
 - 사영평면의 자기동형군이 유한 단순군의 예를 준다. $\mathrm{PG}(2,q)$ 의 자기동형군은 $\mathrm{PGL}(3,q)$ 에 체 자기동형을 더한 것이다.
 
 [^1]: O. Veblen and J. H. M. Wedderburn, "Non-Desarguesian and non-Pascalian geometries", *Transactions of the American Mathematical Society* 8 (1907), 379–388.

@@ -132,7 +132,7 @@ Monte Carlo 추정의 표준오차는 표본표준편차를 $n$ 의 제곱근으
 
 ## 다른 모형 확장
 
-측정오차가 여러 작은 독립 요인의 합이라는 모형은 오차의 정규성을 설명한다. 요인들이 곱으로 쌓이면 로그를 취해 중심극한정리를 적용하고 극한은 로그정규분포가 된다. 그래프나 조합 구조에서 세는 양의 극한분포에도 같은 정리가 쓰인다.
+측정오차가 여러 작은 독립 요인의 합이라는 모형은 오차의 정규성을 설명한다. 요인들이 곱으로 쌓이면 로그를 취해 중심극한정리를 적용하고 극한은 로그정규분포가 된다. [그래프](graphs.md)나 조합 구조에서 세는 양의 극한분포에도 같은 정리가 쓰인다.
 
 [^1]: F. W. Scholz, "Central Limit Theorems and Proofs", Math/Stat 394 lecture notes, University of Washington (Lindeberg–Lévy 진술과 특성함수 증명). https://faculty.washington.edu/fscholz/DATAFILES394_2019/CLT.pdf
 [^2]: "Lindeberg-Feller Central Limit Theorem", Wolfram MathWorld. https://mathworld.wolfram.com/Lindeberg-FellerCentralLimitTheorem.html

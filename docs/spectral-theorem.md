@@ -90,7 +90,7 @@ $$
 \lambda_n=\min_{x\neq0}\frac{x^{\mathsf T}Ax}{x^{\mathsf T}x}
 $$
 
-중간 고윳값은 Courant–Fischer min–max 정리가 부분공간에 대한 극값으로 표현한다. 이 변분 표현이 고윳값의 섭동 부등식과 그래프 스펙트럼의 상한 하한 논증에 쓰인다.
+중간 고윳값은 Courant–Fischer min–max 정리가 부분공간에 대한 극값으로 표현한다. 이 변분 표현이 고윳값의 섭동 부등식과 [그래프](graphs.md) 스펙트럼의 상한 하한 논증에 쓰인다.
 
 ## 양의 정부호 판정
 

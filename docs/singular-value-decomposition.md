@@ -118,7 +118,7 @@ Eckart–Young에 의해 상위 $k$ 개 성분만 남기면 저장량이 $(m+n+1
 
 ## 수치선형대수와 최적화
 
-조건수 $\sigma_1/\sigma_r$ 이 선형계 해의 민감도와 [gradient descent](gradient-descent.md)의 수렴 속도를 정한다. 계수 결손 문제, 전체 최소제곱, regularization(Tikhonov)에서 작은 특이값을 잘라내거나 감쇠시키는 조작이 표준 도구다. 그래프 쪽에서는 [그래프 Laplacian](graph-laplacian.md)이 대칭이라 SVD와 고유분해가 일치하고, [스펙트럼 sparsification](spectral-sparsification.md)의 보증도 특이값/고윳값 비로 서술된다.
+조건수 $\sigma_1/\sigma_r$ 이 선형계 해의 민감도와 [gradient descent](gradient-descent.md)의 수렴 속도를 정한다. 계수 결손 문제, 전체 최소제곱, regularization(Tikhonov)에서 작은 특이값을 잘라내거나 감쇠시키는 조작이 표준 도구다. [그래프](graphs.md) 쪽에서는 [그래프 Laplacian](graph-laplacian.md)이 대칭이라 SVD와 고유분해가 일치하고, [스펙트럼 sparsification](spectral-sparsification.md)의 보증도 특이값/고윳값 비로 서술된다.
 
 [^1]: Per-Gunnar Martinsson, Matrix factorizations and low rank approximation (course notes ch. 1), UT Austin. https://users.oden.utexas.edu/~pgm/Teaching/2019_393C/linalg.pdf
 [^2]: Zhihua Zhang, "The Singular Value Decomposition, Applications and Beyond", arXiv:1510.08532. https://arxiv.org/abs/1510.08532
