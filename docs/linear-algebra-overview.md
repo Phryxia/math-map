@@ -26,22 +26,28 @@ graph TD
 
 # 갈래
 
-## 기초
+## 공간과 사상
 
 - [벡터 공간](vector-spaces.md) → [선형사상](linear-maps.md): 기저, 차원, 행렬 표현
+- [쌍대 공간](dual-space.md): 벡터를 재는 범함수와 전치
+- [텐서곱](tensor-products.md): 다중선형을 선형으로
+- [외대수](exterior-algebra.md): 반대칭 곱과 좌표 없는 행렬식
+
+## 고윳값과 스펙트럼
+
 - [행렬식](determinants.md) → [고윳값과 고유벡터](eigenvalues.md): 부피와 불변 방향
 - [Jordan 표준형](jordan-canonical-form.md): 대각화가 안 되는 행렬의 유사 불변량
 - [Perron–Frobenius 정리](perron-frobenius.md): 음이 아닌 행렬의 최대 고윳값과 양의 고유벡터
 - [내적 공간](inner-product-spaces.md) → [스펙트럼 정리](spectral-theorem.md) → [특이값 분해](singular-value-decomposition.md)
+
+## 수치 선형대수
+
 - [행렬 분해](matrix-factorizations.md): LU, Cholesky, QR 분해와 조건수, 연립방정식을 푸는 계산
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복
 - [전처리](preconditioning.md): 스펙트럼을 모아 반복 횟수를 줄이는 행렬의 선택
 - [Schur 보수](schur-complement.md): 블록 소거가 남기는 작은 계, 행렬식과 양의 정부호성의 분리
 - [다중격자](multigrid.md): 주파수대마다 격자 단계를 맡기는 V 사이클, 격자 간격과 무관한 수렴률
 - [영역 분할법](domain-decomposition.md): 부분영역마다 작은 계를 풀어 더하는 가법 Schwarz, 성긴 공간이 주는 조건수 상한
-- [쌍대 공간](dual-space.md): 벡터를 재는 범함수와 전치
-- [텐서곱](tensor-products.md): 다중선형을 선형으로
-- [외대수](exterior-algebra.md): 반대칭 곱과 좌표 없는 행렬식
 
 ## 통계와 데이터
 
