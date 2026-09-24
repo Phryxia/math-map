@@ -80,13 +80,9 @@ $A = D - E - F$ 를 대각, 아래삼각, 위삼각으로의 분할이라 할 �
 
 ## 불완전 분해
 
-비영 자리의 집합 $S$ 를 정하고, Gauss 소거를 하되 $(i,j) \notin S$ 인 자리에 생기는 값을 버린 것을 **불완전 $LU$ 분해**라 한다. 대칭 양정부호에서 같은 절차를 Cholesky 분해에 적용한 것이 **불완전 Cholesky 분해**다. $S$ 를 $A$ 의 비영 패턴으로 잡은 것을 $\mathrm{ILU}(0)$, 소거를 $k$ 단계까지 번지게 허용한 것을 $\mathrm{ILU}(k)$ 라 한다.
+비영 자리의 집합을 정하고 Gauss 소거를 하되 그 밖에 생기는 값을 버린 것이 [불완전 $LU$ 분해](incomplete-lu.md)다. 대칭 양정부호에서 같은 절차를 Cholesky 분해에 적용한 것이 불완전 Cholesky 분해다.
 
-비대각 성분이 모두 $0$ 이하이고 역행렬의 성분이 모두 $0$ 이상인 행렬을 **M-행렬**이라 한다. 5점 차분 행렬이 그 예다.
-
-**정리**[^2]**.** $A$ 가 M-행렬이면 $\mathrm{ILU}(0)$ 이 존재하고 두 삼각인자가 모두 가역이다.
-
-소거 과정에서 나오는 축이 양수로 유지됨을 M-행렬의 부호 조건으로 보인다. 일반 대칭 양정부호 행렬에서는 축이 음수가 되어 분해가 끊길 수 있고, 대각을 키워 막는다. ∎
+버린 값 때문에 $LU$ 가 $A$ 와 같지 않지만 저장량이 $A$ 와 같은 차수로 고정되고 $M^{-1}v$ 가 삼각계 두 번 풀이로 계산된다. 무늬를 넓히면 $M$ 이 $A$ 에 가까워지는 대신 저장량이 늘어난다.
 
 ## 다중격자
 
@@ -105,8 +101,6 @@ $A = D - E - F$ 를 대각, 아래삼각, 위삼각으로의 분할이라 할 �
 
 [^1]: I. Gustafsson, "A class of first order factorization methods", *BIT Numerical Mathematics* 18 (1978), 142–156. 수정 불완전 Cholesky 분해가 2차원 격자 문제의 조건수를 $h^{-2}$ 에서 $h^{-1}$ 규모로 낮춤을 보인다.
 
-[^2]: J. A. Meijerink and H. A. van der Vorst, "An iterative solution method for linear systems of which the coefficient matrix is a symmetric M-matrix", *Mathematics of Computation* 31 (1977), 148–162.
-
 # 연관 문서
 
 ## 선수지식
@@ -115,6 +109,7 @@ $A = D - E - F$ 를 대각, 아래삼각, 위삼각으로의 분할이라 할 �
 
 ## 더 알아보기
 
+- [불완전 $LU$ 분해](incomplete-lu.md)
 - [다중격자](multigrid.md)
 
 #linear_algebra #algorithms #computation
