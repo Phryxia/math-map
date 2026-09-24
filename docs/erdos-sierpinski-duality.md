@@ -44,7 +44,7 @@ Cichoń 도표의 부등식 $\mathrm{add}(\mathcal N)\le\mathrm{add}(\mathcal M)
 
 ## Luzin 집합과 Sierpiński 집합
 
-크기가 비가산이고 모든 제1범주 집합과의 교집합이 가산인 집합을 **Luzin 집합**, 모든 영집합과의 교집합이 가산인 집합을 **Sierpiński 집합**이라 한다. 연속체 가설 아래에서 둘 다 존재하고 쌍대 사상이 한쪽을 다른 쪽으로 보낸다.
+크기가 비가산이고 모든 제1범주 집합과의 교집합이 가산인 집합이 [Luzin 집합](luzin-sierpinski-sets.md)이고, 모든 영집합과의 교집합이 가산인 집합이 Sierpiński 집합이다. 연속체 가설 아래에서 둘 다 존재하고 쌍대 사상이 한쪽을 다른 쪽으로 보낸다.
 
 # 활용
 
@@ -62,6 +62,6 @@ Cichoń 도표의 부등식 $\mathrm{add}(\mathcal N)\le\mathrm{add}(\mathcal M)
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Luzin 집합과 Sierpiński 집합](luzin-sierpinski-sets.md)
 
 #set_theory #measure_theory #logic
