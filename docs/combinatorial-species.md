@@ -48,7 +48,7 @@ $$
 
 종 $F$ 의 **지수생성함수**는 $F(x) = \sum_{n \ge 0} f\_n x^n/n!$ 이다.
 
-## 연산
+## 합, 곱, 합성
 
 $$
 (F+G)\lbrack U\rbrack = F\lbrack U\rbrack \sqcup G\lbrack U\rbrack, \qquad (F \cdot G)\lbrack U\rbrack = \bigsqcup_{U = A \sqcup B} F\lbrack A\rbrack \times G\lbrack B\rbrack

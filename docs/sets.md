@@ -28,7 +28,7 @@ $$
 
 원소가 없는 집합이 **공집합** $\varnothing$ 이다. $x\in\varnothing$ 이 거짓이므로 $\varnothing\subseteq A$ 가 모든 $A$ 에 대해 성립한다.
 
-## 연산
+## 합집합, 교집합, 차집합
 
 $$
 \begin{aligned}
