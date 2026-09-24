@@ -79,6 +79,6 @@ $t\gt(s-1)!$ 이면 [유한체](finite-fields.md) 위의 노름그래프가 간�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Szemerédi–Trotter 정리](szemeredi-trotter.md)
 
 #combinatorics #graph_theory #number_theory

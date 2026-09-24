@@ -167,5 +167,6 @@ $$
 ## 더 알아보기
 
 - [그래프 마이너](graph-minors.md)
+- [Szemerédi–Trotter 정리](szemeredi-trotter.md)
 
 #graph_theory #topology

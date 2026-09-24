@@ -51,6 +51,7 @@ graph TD
 - [Latin 방진](latin-squares.md): 직교하는 방진의 최대 개수, Euler 추측의 반증
 - [유한 사영평면](finite-projective-planes.md): 차수 $n$ 평면의 존재 문제와 직교 방진 $n-1$ 개의 동치
 - [Zarankiewicz 문제](zarankiewicz-problem.md): $K_{s,t}$ 를 피하는 그래프의 최대 간선 수, 이중 세기 상한과 대수적 구성
+- [Szemerédi–Trotter 정리](szemeredi-trotter.md): 점과 직선의 접촉수 상한, 교차수 부등식이 이분 그래프 상한을 개선하는 자리
 - [확률적 방법](probabilistic-method.md): 무작위 대상이 존재를 증명한다
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md): 문턱 현상, 연결성과 거대 성분
 - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위의 조화해석, 복잡도 이론의 도구
