@@ -45,19 +45,25 @@ graph TD
 
 # 갈래
 
-## 기초와 극한정리
+## 확률 공간과 확률변수
 
 - [유한 확률 공간](probability.md): 표본공간, 사건, 확률측도
 - [Bayes 정리](bayes.md): 조건부확률의 역전
 - [확률변수](random-variables.md): 가측함수로서의 확률변수와 적분으로서의 기댓값
+- [Radically elementary 확률론](radically-elementary-probability.md): 초유한 크기의 유한 확률공간 위에서 측도 없이 세운 Brown 운동과 확률적분
+
+## 극한정리
+
 - [분포 수렴과 Prokhorov 정리](weak-convergence.md): 분포의 수렴과 tightness
 - [특성함수와 Lévy 연속성 정리](characteristic-functions.md): Fourier 변환으로 분포 수렴을 판정
 - [큰 수의 법칙](law-of-large-numbers.md): 표본평균이 기댓값으로
 - [중심극한정리](central-limit-theorem.md): 요동의 정규분포 근사
+
+## 편차와 Gauss 구조
+
 - [집중부등식](concentration-inequalities.md): 유한 표본에서 평균을 벗어날 확률의 지수적 상한
 - [대편차 원리](large-deviations.md): 벗어날 확률의 지수를 결정하는 rate function, Cramér 정리와 Sanov 정리
 - [Gauss 과정](gaussian-processes.md): 평균함수와 공분산핵으로 결정되는 과정, 조건부분포의 닫힌 형태
-- [Radically elementary 확률론](radically-elementary-probability.md): 초유한 크기의 유한 확률공간 위에서 측도 없이 세운 Brown 운동과 확률적분
 
 ## 조건부 구조와 이산시간 확률과정
 
