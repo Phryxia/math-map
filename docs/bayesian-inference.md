@@ -111,7 +111,7 @@ $$
 \mu_n = \frac{\lambda_0 \mu_0 + n \lambda \bar{x}}{\lambda_0 + n\lambda}.
 $$
 
-정밀도는 더해지고 평균은 정밀도로 가중평균된다. 여기서도 $n \to \infty$ 면 사후평균이 표본평균으로, 사후분산이 $\sigma^2/n$ 으로 수렴한다. 이 축소(shrinkage) 구조는 ridge 회귀의 벌점항과 같은 형태이며, [선형회귀와 최소제곱법](linear-regression.md)에서 정규 사전분포를 놓은 결과로 다시 나온다.
+정밀도는 더해지고 평균은 정밀도로 가중평균된다. 여기서도 $n \to \infty$ 면 사후평균이 표본평균으로, 사후분산이 $\sigma^2/n$ 으로 수렴한다. 이 축소(shrinkage) 구조는 ridge 회귀의 벌점항과 같은 형태이며, [선형회귀](linear-regression.md)에서 정규 사전분포를 놓은 결과로 다시 나온다.
 
 ## 순차 갱신과 충분통계량
 

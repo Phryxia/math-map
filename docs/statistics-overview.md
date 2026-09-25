@@ -22,7 +22,7 @@ graph TD
   CLT["중심극한정리"] --> HT
   HT --> CI["신뢰구간"]
   CLT --> CI
-  IP["내적 공간"] --> LR["선형회귀와 최소제곱법"]
+  IP["내적 공간"] --> LR["선형회귀"]
   ML --> LR
   PCA["주성분 분석"] --> PPCA["확률적 PCA"]
   PPCA --> VAE["변분 오토인코더"]
@@ -44,7 +44,7 @@ graph TD
 
 ## 모형
 
-- [선형회귀와 최소제곱법](linear-regression.md): 정규방정식과 사영, Gauss–Markov 정리, 정칙화
+- [선형회귀](linear-regression.md): 정규방정식과 사영, Gauss–Markov 정리, 정칙화
 - [확률적 PCA](probabilistic-pca.md)(principal component analysis): 저차원 잠재변수를 둔 Gauss 모형, 주성분과의 관계
 
 # 연관 문서

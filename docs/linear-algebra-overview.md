@@ -53,7 +53,7 @@ graph TD
 ## 통계와 데이터
 
 - [주성분 분석](principal-component-analysis.md) → [확률적 PCA](probabilistic-pca.md)(principal component analysis), [커널 PCA](kernel-pca.md)
-- [선형회귀와 최소제곱법](linear-regression.md): 사영으로 푸는 추정
+- [선형회귀](linear-regression.md): 사영으로 푸는 추정
 - [이산 Fourier 변환](fourier.md): 순환 구조의 대각화
 
 ## 그래프의 스펙트럼

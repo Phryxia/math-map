@@ -162,7 +162,7 @@ $$
 ## 더 알아보기
 
 - [가설검정](hypothesis-testing.md)
-- [선형회귀와 최소제곱법](linear-regression.md)
+- [선형회귀](linear-regression.md)
 - [지수족](exponential-families.md)
 
 #statistics #probability #optimization

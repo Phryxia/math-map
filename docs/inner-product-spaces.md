@@ -149,7 +149,7 @@ $$
 
 - [스펙트럼 정리](spectral-theorem.md)
 - [Hilbert 공간](hilbert-spaces.md)
-- [선형회귀와 최소제곱법](linear-regression.md)
+- [선형회귀](linear-regression.md)
 
 ### 기하와 대수
 
