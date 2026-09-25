@@ -48,6 +48,7 @@ graph TD
 - [불완전 $LU$ 분해](incomplete-lu.md): 채움을 버려 저장량을 고정한 근사 분해, M-행렬에서의 존재와 무늬 선택
 - [Schur 보수](schur-complement.md): 블록 소거가 남기는 작은 계, 행렬식과 양의 정부호성의 분리
 - [다중격자](multigrid.md): 주파수대마다 격자 단계를 맡기는 V 사이클, 격자 간격과 무관한 수렴률
+- [대수적 다중격자](algebraic-multigrid.md): 행렬 계수에서 읽은 강한 연결로 성긴 단계를 만드는 방법, C/F 분할과 Galerkin 곱
 - [영역 분할법](domain-decomposition.md): 부분영역마다 작은 계를 풀어 더하는 가법 Schwarz, 성긴 공간이 주는 조건수 상한
 
 ## 통계와 데이터

@@ -85,7 +85,7 @@ $$
 
 - **전처리.** V 사이클 한 번을 $M^{-1}v$ 계산으로 쓰면 [전처리](preconditioning.md)된 공액기울기법이 된다. 수렴률이 $h$ 와 무관하므로 스펙트럼 등가 상수도 그렇다.
 - **편미분방정식.** 확산 항이 지배하는 이산화 계에서 표준 해법이다. 이류 항이 섞이면 완화가 고주파를 지우지 못해 흐름 방향을 따르는 순서로 완화하거나 반방향 성긴 격자를 쓴다.
-- **[그래프 Laplacian](graph-laplacian.md).** 대수적 다중격자를 [그래프](graphs.md)의 Laplacian 계에 적용하면 성긴 단계가 정점을 뭉친 그래프가 된다.
+- **[그래프 Laplacian](graph-laplacian.md).** [대수적 다중격자](algebraic-multigrid.md)를 [그래프](graphs.md)의 Laplacian 계에 적용하면 성긴 단계가 정점을 뭉친 그래프가 된다.
 
 [^1]: Wolfgang Hackbusch, *Multi-Grid Methods and Applications*, Springer Series in Computational Mathematics 4 (1985), 6–7장. 완화 성질과 근사 성질에서 두 단계 수렴을 얻고 V 사이클로 확장하는 논증이 이 장에 있다.
 [^2]: John W. Ruge, Klaus Stüben, *Algebraic multigrid*, in Multigrid Methods, SIAM Frontiers in Applied Mathematics 3 (1987), 73–130.
@@ -98,6 +98,7 @@ $$
 
 ## 더 알아보기
 
+- [대수적 다중격자](algebraic-multigrid.md)
 - [영역 분할법](domain-decomposition.md)
 
 #linear_algebra #algorithms #computation
