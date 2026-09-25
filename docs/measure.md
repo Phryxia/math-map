@@ -130,5 +130,6 @@ Hausdorff 측도는 프랙탈의 차원을 재고, Haar 측도는 군 위에서 
 - [Borel 계층](borel-hierarchy.md)
 - [강 측도 영집합](strong-measure-zero.md)
 - [Loeb 측도](loeb-measure.md)
+- [Banach–Tarski 분해](banach-tarski.md)
 
 #measure_theory #probability #analysis #set_theory

@@ -6,7 +6,7 @@
 
 AC 는 정렬 정리와 Zorn 보조정리와 ZF(선택공리를 뺀 Zermelo–Fraenkel) 안에서 동치다. 실제 수학에서는 Zorn 보조정리를 가장 많이 쓴다. 극대 원소의 존재를 요구하는 형태가 대수와 해석의 존재 정리에 맞는다.
 
-AC 는 구성적 절차 없이 대상의 존재만 주장하며, Banach–Tarski 분해처럼 직관에 반하는 결론을 낳는다. Gödel 과 Cohen 의 결과로 AC 는 ZF 에서 독립임이 확정되었다.
+AC 는 구성적 절차 없이 대상의 존재만 주장하며, [Banach–Tarski 분해](banach-tarski.md)처럼 직관에 반하는 결론을 낳는다. Gödel 과 Cohen 의 결과로 AC 는 ZF 에서 독립임이 확정되었다.
 
 # 직관
 
@@ -124,6 +124,6 @@ AC 의 약한 형태들은 강도가 다르다. 가산 선택, 종속 선택, �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Banach–Tarski 분해](banach-tarski.md)
 
 #set_theory #foundations

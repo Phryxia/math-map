@@ -75,6 +75,7 @@ graph TD
 - [집합](sets.md) → [함수](functions.md), [동치관계](equivalence-relations.md) → [부분순서](partial-orders.md)
 - [기수](cardinality.md): 대각선 논법과 무한의 크기
 - [ZFC 공리계](zfc-axioms.md) → [서수](ordinals.md) → [선택공리](axiom-of-choice.md)
+- [선택공리](axiom-of-choice.md) → [Banach–Tarski 분해](banach-tarski.md): 자유 부분군의 역설적 분해를 구면으로 내린 결과, 조각은 비가측이다
 
 ## 독립성과 강제법
 
