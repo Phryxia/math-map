@@ -22,7 +22,7 @@ Kolyvagin 이 쓴 Euler 계는 허수이차체 위의 [Heegner 점](heegner-poin
 
 Euler 계가 정보를 주려면 첫 원소가 0 이 아니어야 하고, 그 비소멸이 해석적 조건에서 온다.
 
-- 해석 순위 0 은 $L(E,1)\ne0$ 인 경우다. 겨냥 원소의 성분이 0 이 아니라는 [모듈러 기호](modular-symbols.md) 쪽 사실과 같은 이야기다.
+- 해석 순위 0 은 $L(E,1)\ne0$ 인 경우다. 겨냥 원소의 성분이 0 이 아니라는 [모듈러 기호](modular-symbols.md) 쪽 사실과 같다.
 - 해석 순위 1: Gross–Zagier 공식이 Heegner 점의 정준 높이를 $L'(E,1)$ 로 계산해 준다. $L'\ne0$ 이면 높이가 0 이 아니므로 그 점이 무한위수다.
 
 $L$ 함수의 비소멸이 Euler 계의 첫 원소를 주고, Euler 계가 Selmer 군의 크기를 제한한다. 두 단계를 잇는 것이 Gross–Zagier 공식과 모듈러 기호의 계산이다.

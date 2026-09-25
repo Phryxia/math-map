@@ -64,7 +64,7 @@ $$
 | 설명하는 합동식 | 법 5, 법 7 | 법 5, 법 7, 법 11 |
 | 생성함수 | mock 모듈러(Ramanujan 의 $f(q)$ ) | Jacobi 형식 |
 
-Dyson 이 rank 를 정의했을 때 그 생성함수가 Ramanujan 의 유작과 같은 대상이라는 것은 알려져 있지 않았다. 두 이야기가 합쳐진 것은 2000 년대이고, Bringmann–Ono 가 조화 Maass 형식으로 rank 의 계수에 정확 공식을 세우면서 Andrews–Dragonette 추측이 풀렸다.
+Dyson 이 rank 를 정의했을 때 그 생성함수가 Ramanujan 의 유작과 같은 대상이라는 것은 알려져 있지 않았다. 두 대상이 같다는 것은 2000 년대에 확인되었고, Bringmann–Ono 가 조화 Maass 형식으로 rank 의 계수에 정확 공식을 세우면서 Andrews–Dragonette 추측이 풀렸다.
 
 # 정의
 
