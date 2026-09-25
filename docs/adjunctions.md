@@ -152,7 +152,7 @@ $$
 \mathrm{Hom}\_{\mathcal{C}}(c, G(\lim_i d_i)) \cong \mathrm{Hom}\_{\mathcal{D}}(Fc, \lim_i d_i) \cong \lim_i \mathrm{Hom}\_{\mathcal{D}}(Fc, d_i) \cong \lim_i \mathrm{Hom}\_{\mathcal{C}}(c, G d_i)
 $$
 
-이다. 가운데 등호는 hom 함자가 두 번째 변수에서 극한을 보존한다는 사실이고, 나머지는 수반이다. 오른쪽 끝은 $\mathrm{Hom}(c, \lim G d_i)$ 와 같으므로 Yoneda 에 의해 $G(\lim d_i) \cong \lim G d_i$ 다. 쌍대극한 쪽은 반대 범주에서 같은 논증을 한다. ∎
+이다. 가운데 등호는 hom 함자가 두 번째 변수에서 극한을 보존한다는 사실이고, 나머지는 수반이다. 오른쪽 끝은 $\mathrm{Hom}(c, \lim G d_i)$ 와 같으므로 Yoneda 보조정리로 $G(\lim d_i) \cong \lim G d_i$ 다. 쌍대극한 쪽은 반대 범주에서 같은 논증을 한다. ∎
 
 대우를 쓰면 부정 판정이 된다. 어떤 구성이 쌍대극한(몫, 직합)을 깨뜨리면 그 구성은 왼쪽 수반이 아니고, 극한(곱, 핵)을 깨뜨리면 오른쪽 수반이 아니다. [가군](modules.md)에서 텐서곱은 직합을 보존하므로 왼쪽 수반 후보이고, 실제로 Hom 의 왼쪽 수반이다.
 

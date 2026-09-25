@@ -26,7 +26,7 @@ $$
 
 $X^{(d)}\to J$ 의 상이 유한집합에 들어감을 보이려면 유리점이 유한한 아벨 다양체 몫이 필요하다. Mazur 는 첨점군과 Eisenstein 아이디얼로 그런 몫을 만들었고 그 방법은 $\mathbb Q$ 위에서만 충분히 작다.
 
-Merel 은 모듈러 기호 $e=\lbrace 0,\infty\rbrace$ 가 만드는 겨냥 몫 $J_e$ 를 쓴다. 이 원소가 골라내는 성분은 $L(f,1)\ne0$ 인 새형식들에 대응하므로 Kolyvagin–Logachev 에 의해 그 몫의 Mordell–Weil 군이 유한하다.
+Merel 은 모듈러 기호 $e=\lbrace 0,\infty\rbrace$ 가 만드는 겨냥 몫 $J_e$ 를 쓴다. 이 원소가 골라내는 성분은 $L(f,1)\ne0$ 인 새형식들에 대응하므로 Kolyvagin–Logachev 정리로 그 몫의 Mordell–Weil 군이 유한하다.
 
 ## 단사성의 선형대수
 

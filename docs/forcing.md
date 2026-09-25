@@ -99,7 +99,7 @@ $$
 A_\xi = \lbrace \eta \lt \beta : \thinspace\text{ 어떤 } p \in P \thinspace\text{ 가 } \dot f(\xi) = \eta \thinspace\text{ 를 강제한다} \rbrace
 $$
 
-서로 다른 $\eta$ 를 강제하는 조건들은 양립하지 않으므로 반사슬을 이루고, ccc 에 의해 $\vert A_\xi \vert \le \aleph_0$ 이다. $M$ 안에서 $f$ 의 치역이 가산 집합 $\alpha$ 개의 합집합에 들어가므로 $\beta$ 가 $\alpha$ 로 붕괴할 수 없다.
+서로 다른 $\eta$ 를 강제하는 조건들은 양립하지 않으므로 반사슬을 이루고, ccc 조건에서 $\vert A_\xi \vert \le \aleph_0$ 이다. $M$ 안에서 $f$ 의 치역이 가산 집합 $\alpha$ 개의 합집합에 들어가므로 $\beta$ 가 $\alpha$ 로 붕괴할 수 없다.
 
 $\mathrm{Add}(\omega, \kappa)$ 는 조건이 유한이므로 ccc 를 만족한다. 따라서 $\kappa$ 개의 새 실수를 더해도 기수는 그대로이고, $\kappa$ 를 $\aleph_2$ 로 잡으면 확대 모형에서 $2^{\aleph_0} \ge \aleph_2$ 가 되어 연속체 가설이 깨진다.
 

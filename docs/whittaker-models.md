@@ -110,7 +110,7 @@ $$
 \Gamma=\mathrm{Ind}\_N^G\psi_N
 $$
 
-이 **Gelfand–Graev 표현**이다. Frobenius 상호법칙 $\dim\mathrm{Hom}\_G(\Gamma,\pi)=\dim\mathrm{Hom}\_N(\pi,\psi_N)$ 에 의해, Whittaker 모형의 유일성은 $\Gamma$ 가 중복도 없이 분해된다는 진술과 같다. 중복도 $m_i$ 에 대해 $\langle\Gamma,\Gamma\rangle=\sum m_i^2$ 이므로 이 값이 성분의 개수와 같을 때 모든 $m_i$ 가 1 이다.
+이 **Gelfand–Graev 표현**이다. Frobenius 상호법칙 $\dim\mathrm{Hom}\_G(\Gamma,\pi)=\dim\mathrm{Hom}\_N(\pi,\psi_N)$ 에서 Whittaker 모형의 유일성은 $\Gamma$ 가 중복도 없이 분해된다는 진술과 같다. 중복도 $m_i$ 에 대해 $\langle\Gamma,\Gamma\rangle=\sum m_i^2$ 이므로 이 값이 성분의 개수와 같을 때 모든 $m_i$ 가 1 이다.
 
 $\mathrm{GL}\_2(\mathbb F_q)$ 의 기약표현은 1 차원 $q-1$ 개, Steinberg 꼬임 $q-1$ 개, 주계열 $(q-1)(q-2)/2$ 개, 첨점 $q(q-1)/2$ 개다. $\Gamma$ 는 1 차원을 제외한 전부를 한 번씩 담으므로 성분 개수가 다음이고 $\langle\Gamma,\Gamma\rangle$ 와 같다.
 

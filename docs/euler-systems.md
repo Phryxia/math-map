@@ -118,7 +118,7 @@ $$
 p\mid \ell+1,\qquad p\mid a_\ell
 $$
 
-를 만족한다는 뜻이다. 마지막 두 조건은 $\mathrm{Fr}\_\ell$ 이 $\mathbb Q(E[p],\mu_p)$ 위에서 복소켤레와 공액이라는 한 조건으로 묶인다. Chebotarev 에 의해 이런 $\ell$ 은 양의 밀도로 무한히 많고, 추가 조건을 붙여 가며 고를 수 있다. 논법이 쓰는 것은 이 선택의 자유다.
+를 만족한다는 뜻이다. 마지막 두 조건은 $\mathrm{Fr}\_\ell$ 이 $\mathbb Q(E[p],\mu_p)$ 위에서 복소켤레와 공액이라는 한 조건으로 묶인다. Chebotarev 밀도 정리로 이런 $\ell$ 은 양의 밀도로 무한히 많고, 추가 조건을 붙여 가며 고를 수 있다. 논법이 쓰는 것은 이 선택의 자유다.
 
 $n$ 을 Kolyvagin 소수들의 곱이라 하고 $K_n$ 을 도체 $n$ 의 링 유체, $G_n=\mathrm{Gal}(K_n/K_1)\cong\prod_{\ell\mid n}G_\ell$ 라 쓴다. $G_\ell$ 은 위수 $\ell+1$ 인 순환군이다.
 

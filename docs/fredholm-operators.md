@@ -56,7 +56,7 @@ $$
 \mathrm{ind}(T_a)=-\mathrm{wind}(a)
 $$
 
-가 성립한다. 기호가 $0$ 을 지나지 않는 한 $T_a$ 가 Fredholm 을 유지하고 지표가 연속 변형에 불변이므로, 지표는 기호의 호모토피류에만 의존한다. 원에서 $\mathbb C^\times$ 로 가는 연속 함수의 호모토피류는 $\pi_1(\mathbb C^\times)=\mathbb Z$ 에 의해 감음수가 분류한다. 곱셈성 $\mathrm{ind}(T_{ab})=\mathrm{ind}(T_a)+\mathrm{ind}(T_b)$ 에서 그 함수가 선형이고, $a=z$ 에서 값을 맞추면 부호가 정해진다.
+가 성립한다. 기호가 $0$ 을 지나지 않는 한 $T_a$ 가 Fredholm 을 유지하고 지표가 연속 변형에 불변이므로, 지표는 기호의 호모토피류에만 의존한다. 원에서 $\mathbb C^\times$ 로 가는 연속 함수의 호모토피류는 $\pi_1(\mathbb C^\times)=\mathbb Z$ 이므로 감음수가 분류한다. 곱셈성 $\mathrm{ind}(T_{ab})=\mathrm{ind}(T_a)+\mathrm{ind}(T_b)$ 에서 그 함수가 선형이고, $a=z$ 에서 값을 맞추면 부호가 정해진다.
 
 # 정의
 

@@ -114,7 +114,7 @@ $$
 
 이고 단위원이 $1_K$ 다.
 
-**Cartan 분해** $G=\bigsqcup_{\lambda\in X_\ast(T)^+}K\lambda(\varpi)K$ 에 의해 $\lbrace 1_{K\lambda(\varpi)K}\rbrace$ 가 $\mathbb C$ 기저를 이룬다. $\varpi$ 는 소원, $X_\ast(T)$ 는 극대 분열 원환면의 쌍대지표 격자, $X_\ast(T)^+$ 는 고정한 Borel 에 대해 지배적인 것들이다.
+**Cartan 분해** $G=\bigsqcup_{\lambda\in X_\ast(T)^+}K\lambda(\varpi)K$ 에서 $\lbrace 1_{K\lambda(\varpi)K}\rbrace$ 가 $\mathbb C$ 기저를 이룬다. $\varpi$ 는 소원, $X_\ast(T)$ 는 극대 분열 원환면의 쌍대지표 격자, $X_\ast(T)^+$ 는 고정한 Borel 에 대해 지배적인 것들이다.
 
 ## Satake 변환과 정리
 
