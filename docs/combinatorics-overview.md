@@ -74,7 +74,7 @@ graph TD
 
 대칭군과 일반선형군의 표현이 조합적 대상(분할, 표, 격자경로)으로 세어진다.
 
-- [근계](root-systems.md) → [Weyl 지표 공식](weyl-character-formula.md) → [Schur 다항식과 대칭함수](schur-polynomials.md)
+- [근계](root-systems.md) → [Weyl 지표 공식](weyl-character-formula.md) → [Schur 다항식](schur-polynomials.md)
 - [Littlewood–Richardson 규칙](littlewood-richardson.md), [Schubert 계산](schubert-calculus.md): Schur 다항식의 곱을 세기
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md) → [Brauer 대수](brauer-algebras.md)
 - [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md) → [범주 O](category-o.md): 표현론 깊은 곳의 조합론

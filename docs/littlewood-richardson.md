@@ -204,7 +204,7 @@ $c^{N\nu}\_{N\lambda,N\mu}$ 를 $N$ 의 함수로 보면 다면체의 Ehrhart �
 
 ## 선수지식
 
-- [Schur 다항식과 대칭함수](schur-polynomials.md)
+- [Schur 다항식](schur-polynomials.md)
 
 ## 더 알아보기
 

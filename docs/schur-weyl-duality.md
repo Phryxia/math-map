@@ -146,7 +146,7 @@ $n\ge k$ 이면 $\mathbb C[S_k]\to\mathcal S$ 가 단사이고 $\mathcal S\cong\
 
 ## 선수지식
 
-- [Schur 다항식과 대칭함수](schur-polynomials.md)
+- [Schur 다항식](schur-polynomials.md)
 - [군의 표현](group-representations.md)
 
 ## 더 알아보기

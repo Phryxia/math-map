@@ -158,7 +158,7 @@ $p$ 진 적분의 값이 모양 $\lambda$ 의 반표준 대각표를 무게로 �
 ## 선수지식
 
 - [Whittaker 모형과 중복도 1](whittaker-models.md)
-- [Schur 다항식과 대칭함수](schur-polynomials.md)
+- [Schur 다항식](schur-polynomials.md)
 
 ## 더 알아보기
 

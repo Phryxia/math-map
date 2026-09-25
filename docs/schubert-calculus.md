@@ -139,7 +139,7 @@ $\sigma_1^{k(n-k)}$ 은 일반 위치의 여차원 $1$ 조건을 차원만큼 �
 
 - [Grassmann 다양체](grassmannian.md)
 - [Borel–Weil–Bott 정리와 깃발다양체](borel-weil-bott.md)
-- [Schur 다항식과 대칭함수](schur-polynomials.md)
+- [Schur 다항식](schur-polynomials.md)
 
 ## 더 알아보기
 

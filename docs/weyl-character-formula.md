@@ -207,7 +207,7 @@ $A_1$ 에서는 $x-x^{-1}$ 이고, 같은 항등식을 아핀 근계로 확장�
 ## 더 알아보기
 
 - [Borel–Weil–Bott 정리와 깃발다양체](borel-weil-bott.md)
-- [Schur 다항식과 대칭함수](schur-polynomials.md)
+- [Schur 다항식](schur-polynomials.md)
 - [MV 순환과 무게 기저의 기하](mv-cycles.md)
 
 #algebra #group_theory #combinatorics #theorem
