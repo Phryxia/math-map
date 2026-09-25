@@ -2,7 +2,7 @@
 
 # 개요
 
-[Waldspurger 정리](waldspurger-formula.md)는 토릭 주기가 살아남는 사원수 대수가 어느 것인지를 $\varepsilon$ 인자가 결정한다고 말한다. 그 결정 규칙의 국소 성분이 **Tunnell–Saito 공식**이다.
+[Waldspurger 정리](waldspurger-formula.md)는 토릭 주기가 소멸하지 않는 사원수 대수가 어느 것인지를 $\varepsilon$ 인자가 결정한다고 말한다. 그 결정 규칙의 국소 성분이 **Tunnell–Saito 공식**이다.
 
 국소체 $F$ 와 이차 확대 $K/F$ 와 $\mathrm{GL}\_2(F)$ 의 기약 표현 $\pi$ 를 놓자. 토러스 $K^\times$ 위에서 지표 $\chi$ 로 변환하는 범함수가 존재하는지 묻는다.
 

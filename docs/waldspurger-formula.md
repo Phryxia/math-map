@@ -88,7 +88,7 @@ $\eta$ 는 $K/F$ 에 딸린 이차 지표다. 이것이 GGP 국소 지표 공식
 $\Sigma$ 를 위 부호가 $-1$ 인 자리들의 집합이라 하자.
 
 - $|\Sigma|$ 가 짝수이면 정확히 $\Sigma$ 에서 분지된 사원수 대수 $B$ 가 유일하게 존재하고, 그 $B$ 위에서 $\mathcal P_\chi\not\equiv0$ 인 것과 $L(1/2,\pi_K\times\chi)\ne0$ 인 것이 동치다.
-- $|\Sigma|$ 가 홀수이면 어떤 $B$ 위에서도 주기가 살아남지 못하고 $L(1/2,\pi_K\times\chi)=0$ 이다.
+- $|\Sigma|$ 가 홀수이면 모든 $B$ 위에서 주기가 소멸하고 $L(1/2,\pi_K\times\chi)=0$ 이다.
 
 ## 정련된 등식
 
@@ -124,7 +124,7 @@ $$
 | | $\varepsilon=+1$ | $\varepsilon=-1$ |
 | --- | --- | --- |
 | 중심값 | 보통 $\ne0$ | 항상 $=0$ |
-| 살아남는 양 | 토릭 주기 $\mathcal P_\chi$ | 주기는 0, 대신 도함수 |
+| 소멸하지 않는 양 | 토릭 주기 $\mathcal P_\chi$ | 주기는 0, 대신 도함수 |
 | 기하 | 사원수 대수 위의 유한집합 | Shimura 곡선 위의 복소곱셈(complex multiplication, CM) 점 |
 | 정리 | Waldspurger | Gross–Zagier |
 | BSD(Birch–Swinnerton-Dyer) 계수 | 0 | 1 |
