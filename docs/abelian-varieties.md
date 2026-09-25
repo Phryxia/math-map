@@ -130,6 +130,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Siegel 모듈라이 다양체](siegel-modular-variety.md)
 
 #algebra #number_theory #complex_analysis

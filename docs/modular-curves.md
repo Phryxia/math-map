@@ -177,10 +177,19 @@ $N=11$ 에서 $g=1$ 이므로 $\dim S_2(\Gamma_0(11))=1$ 이고, 그 1 차원 �
 
 ## 더 알아보기
 
+### 계산
+
 - [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md)
-- [Eisenstein 아이디얼과 Mazur 의 비틀림점 정리](eisenstein-ideal.md)
 - [모듈러 기호](modular-symbols.md)
-- [Fontaine–Mazur 추측](fontaine-mazur.md)
+
+### 유리점과 Galois 표현
+
+- [Eisenstein 아이디얼과 Mazur 의 비틀림점 정리](eisenstein-ideal.md)
 - [Heegner 점과 Gross–Zagier 공식](heegner-points.md)
+- [Fontaine–Mazur 추측](fontaine-mazur.md)
+
+### 높은 차원
+
+- [Siegel 모듈라이 다양체](siegel-modular-variety.md)
 
 #number_theory #complex_analysis #algebraic_topology
