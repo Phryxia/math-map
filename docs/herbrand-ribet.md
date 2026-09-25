@@ -132,7 +132,7 @@ $\Leftarrow$ 가 Herbrand(1932), $\Rightarrow$ 가 Ribet(1976)이다.
 | $p\nmid B_k\Rightarrow A^{(\omega^{1-k})}=0$ | Stickelberger 소멸자 | 쉬움 |
 | $p\mid B_k\Rightarrow A^{(\omega^{1-k})}\ne0$ | Eisenstein 합동 + Galois 표현 | 어려움 |
 
-상한은 소멸자나 [Euler 계](euler-systems.md)로, 하한은 합동으로 얻는 분담이 산술 기하 전반에서 반복된다. [Iwasawa 주추측](iwasawa-main-conjecture.md)의 두 나눔이 이 두 기술에 대응하고, 타원곡선 쪽에서는 Kato 의 Euler 계와 Skinner–Urban 의 Eisenstein 합동이 같은 역할을 맡는다.
+상한은 소멸자나 [Euler 계](euler-systems.md)로, 하한은 합동으로 얻는 분담이 산술 기하 전반에서 반복된다. Iwasawa 주추측의 두 나눔이 이 두 기술에 대응하고, 타원곡선 쪽에서는 Kato 의 Euler 계와 Skinner–Urban 의 Eisenstein 합동이 같은 역할을 맡는다.
 
 ## 지표 $\omega^{1-k}$
 
@@ -152,7 +152,7 @@ Ribet 의 논법은 원소 하나를 만든다. 주추측은 성분의 크기까
 - 코사이클 하나 대신 모듈러 곡선의 Jacobian 안에서 Eisenstein 아이디얼로 잘라낸 부분을 통째로 쓴다.
 - 그 결과 $\char35{}A^{(\chi)}$ 가 $L_p$ 의 예측 크기 이상임을 얻고, 반대 부등식은 해석적 류수 공식이 준다.
 
-원소 하나에서 충분히 많은 원소로 올라가는 것이 Mazur–Wiles 의 기술적 내용이다. Rubin 의 [Euler 계](euler-systems.md) 증명은 반대쪽에서 같은 결론에 도달한다.
+원소 하나에서 충분히 많은 원소로 올라가는 것이 Mazur–Wiles 의 기술적 내용이다. Rubin 의 Euler 계 증명은 반대쪽에서 같은 결론에 도달한다.
 
 # 활용
 

@@ -85,7 +85,7 @@ $$
 # 활용
 
 - [땋임군](braid-groups.md)의 Artin 표시 $\langle\sigma_1,\dots,\sigma_{n-1}\mid\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1},\thinspace \sigma_i\sigma_j=\sigma_j\sigma_i\thinspace(\vert i-j\vert\ge2)\rangle$ 가 이 군의 정의로 쓰인다. 두 관계자가 각각 가닥의 교차와 멀리 떨어진 교차의 교환을 적는다.
-- [기본군](fundamental-group.md)의 계산에서 Seifert–van Kampen 정리는 두 열린집합의 기본군의 표시를 합치고 교집합에서 오는 관계자를 더한다. 곡면군 $\langle a_1,b_1,\dots,a_g,b_g\mid\prod_i\lbrack a_i,b_i\rbrack\rangle$ 이 이렇게 나온다.
+- 기본군의 계산에서 Seifert–van Kampen 정리는 두 열린집합의 기본군의 표시를 합치고 교집합에서 오는 관계자를 더한다. 곡면군 $\langle a_1,b_1,\dots,a_g,b_g\mid\prod_i\lbrack a_i,b_i\rbrack\rangle$ 이 이렇게 나온다.
 - [Coxeter 군](coxeter-groups.md)은 $\langle s_1,\dots,s_n\mid(s_is_j)^{m_{ij}}\rangle$ 꼴의 표시로 정의되며, [근계](root-systems.md)의 Weyl 군이 그 예다.
 - 계산 군론의 [Todd–Coxeter 알고리즘](todd-coxeter.md)은 표시와 부분군이 주어졌을 때 잉여류를 하나씩 채워 지표를 구한다. 지표가 유한하면 반드시 끝나지만, 무한하면 끝나지 않으며 낱말 문제의 결정불가능성이 그 이유다.
 
