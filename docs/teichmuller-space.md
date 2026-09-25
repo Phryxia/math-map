@@ -4,7 +4,7 @@
 
 [곡면의 분류](classification-of-surfaces.md)는 닫힌 유향 곡면이 종수 $g$ 하나로 결정된다고 말한다. 같은 곡면에 [Riemann 계량](riemannian-metrics.md)을 주면 종수는 같지만 모양이 다른 곡면이 연속적으로 많다.
 
-곡률을 $-1$ 로 고정해도 그렇다. $g\ge2$ 이면 종수 $g$ 곡면 위의 쌍곡 계량은 유일하지 않고, 등거리를 같은 것으로 세어도 $6g-6$ 개의 실수 매개변수가 남는다. 그 매개변수 공간이 **Teichmüller 공간** $\mathcal T_g$ 이고, 좌표를 잊고 곡면 자체만 세면 **모듈라이 공간** $\mathcal M_g$ 가 된다.
+[곡률](curvature.md)을 $-1$ 로 고정해도 그렇다. $g\ge2$ 이면 종수 $g$ 곡면 위의 쌍곡 계량은 유일하지 않고, 등거리를 같은 것으로 세어도 $6g-6$ 개의 실수 매개변수가 남는다. 그 매개변수 공간이 **Teichmüller 공간** $\mathcal T_g$ 이고, 좌표를 잊고 곡면 자체만 세면 **모듈라이 공간** $\mathcal M_g$ 가 된다.
 
 $$
 \dim_{\mathbb R}\mathcal T_g=6g-6,\qquad \mathcal T_g\cong\mathbb R^{6g-6},\qquad \mathcal M_g=\mathcal T_g/\mathrm{Mod}(S_g)

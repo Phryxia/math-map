@@ -2,7 +2,7 @@
 
 # 개요
 
-Gauss–Bonnet 정리는 곡면 위 곡률의 적분이 계량에 무관하게 위상으로 결정된다고 진술한다.
+Gauss–Bonnet 정리는 곡면 위 [곡률](curvature.md)의 적분이 계량에 무관하게 위상으로 결정된다고 진술한다.
 
 $$
 \iint_{M}K\thinspace dA=2\pi\chi(M)

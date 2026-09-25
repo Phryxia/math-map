@@ -8,7 +8,7 @@ $$
 \sum_{p:\thinspace V(p)=0}\mathrm{ind}\_p(V)=\chi(M)
 $$
 
-벡터장에 따라 특이점의 개수와 위치가 달라져도 지표의 합은 [Euler 지표](euler-characteristic.md)로 고정된다. [Gauss–Bonnet 정리](gauss-bonnet.md)에서 곡률의 적분이 위상으로 고정되는 것과 같은 형태이고, 두 정리는 서로를 유도한다.
+벡터장에 따라 특이점의 개수와 위치가 달라져도 지표의 합은 [Euler 지표](euler-characteristic.md)로 고정된다. [Gauss–Bonnet 정리](gauss-bonnet.md)에서 [곡률](curvature.md)의 적분이 위상으로 고정되는 것과 같은 형태이고, 두 정리는 서로를 유도한다.
 
 # 직관
 

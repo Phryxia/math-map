@@ -38,7 +38,7 @@ $$
 \mathrm{ind}(D)=b_0-b_1+b_2=\chi(M)
 $$
 
-이고 해석적 지표가 [Euler 지표](euler-characteristic.md)다. 위상적 지표 쪽은 Gauss–Bonnet 의 곡률 적분이다.
+이고 해석적 지표가 [Euler 지표](euler-characteristic.md)다. 위상적 지표 쪽은 Gauss–Bonnet 의 [곡률](curvature.md) 적분이다.
 
 $$
 \frac1{2\pi}\int_MK\thinspace dA=\chi(M)
