@@ -58,7 +58,7 @@ $$
 A\lbrack n\rbrack(\bar k)\cong(\mathbb Z/n\mathbb Z)^{2g}
 $$
 
-이다. 소수 $\ell\ne\mathrm{char}\thinspace k$ 에 대해 $T_\ell A=\varprojlim_n A\lbrack \ell^n\rbrack(\bar k)$ 를 **Tate 가군**이라 하고, $\mathbb Z_\ell$ 위의 계수 $2g$ 자유가군이다. $k$ 의 절대 [Galois 군](galois-theory.md) $G_k$ 가 이 가군에 작용한다.
+이다. 소수 $\ell\ne\mathrm{char}\thinspace k$ 에 대해 $T_\ell A=\varprojlim_n A\lbrack \ell^n\rbrack(\bar k)$ 를 **Tate 가군**이라 하고, $\mathbb Z_\ell$ 위의 계수 $2g$ 자유가군이다. $k$ 의 절대 [Galois 군](galois-theory.md) $G_k$ 가 이 가군에 작용해 $2g$ 차원 [Galois 표현](galois-representations.md)을 준다.
 
 ## 쌍대와 편극
 
@@ -94,7 +94,7 @@ $B$ 로의 제한 $\hat A\to\hat B$ 의 핵의 연결 성분을 $C$ 로 잡으�
 
 **따름정리.** 모든 아벨 다양체는 단순 아벨 다양체들의 곱과 동종이다. 단순은 자명하지 않은 아벨 부분다양체가 없다는 뜻이다. 그러므로 $\mathrm{End}(A)\otimes\mathbb Q$ 는 반단순 대수다.
 
-## Tate 가군이 결정하는 것
+## 사상과 Tate 가군
 
 **정리.** $k$ 가 유한체이거나 수체이고 $\ell\ne\mathrm{char}\thinspace k$ 이면
 
