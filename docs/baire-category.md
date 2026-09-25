@@ -12,7 +12,7 @@ Baire 범주 정리는 완비 거리공간에서 조밀한 열린집합 가산 �
 
 먼저 $\lbrack 0,1\rbrack$ 의 실수를 $r_1, r_2, r_3, \dots$ 으로 줄 세웠다고 하자. 길이가 양수인 닫힌 구간 $I_1 \subseteq \lbrack 0,1\rbrack$ 을 $r_1$ 이 들어가지 않게 잡는다. $I_1$ 안에서 다시 $r_2$ 를 피한 닫힌 구간 $I_2 \subseteq I_1$ 을 잡는다. 매번 길이를 절반 이하로 줄이면서 이것을 계속한다.
 
-구간이 줄어들며 겹쳐 있으므로 왼쪽 끝점들이 [Cauchy 수열](completeness.md)을 이루고, 완비성에 의해 극한 $x$ 가 있다. $x$ 는 모든 $I_n$ 에 들어가고 각 $I_n$ 은 $r_n$ 을 피했으므로 $x$ 는 어느 $r_n$ 과도 다르다. 줄 세우기가 실수를 전부 담지 못했다.
+구간이 줄어들며 겹쳐 있으므로 왼쪽 끝점들이 [Cauchy 수열](completeness.md)을 이루고, 완비성으로 극한 $x$ 가 있다. $x$ 는 모든 $I_n$ 에 들어가고 각 $I_n$ 은 $r_n$ 을 피했으므로 $x$ 는 어느 $r_n$ 과도 다르다. 줄 세우기가 실수를 전부 담지 못했다.
 
 이 계산에서 쓴 것은 "아무 구간 안에서도 $r_n$ 을 피한 더 작은 구간을 잡을 수 있다" 뿐이다. 점 하나 대신 집합 $F_n$ 을 놓아도, $F_n$ 이 어떤 구간도 통째로 품지 않으면 같은 계산이 돌아간다. 폐포에 내부가 없는 집합이 그런 집합이다.
 
@@ -58,7 +58,7 @@ $\mathbb Q$ 는 가산이고 각 점이 $\mathbb Q$ 안에서 성기므로 자�
 
 **정리(Banach–Steinhaus).** $X$ 가 [Banach 공간](banach-spaces.md), $Y$ 가 노름 공간이고 유계 선형작용소들의 모임 $\mathcal F$ 가 모든 $x \in X$ 에서 $\sup_{T \in \mathcal F}\lVert Tx\rVert \lt \infty$ 를 만족하면, $\sup_{T \in \mathcal F}\lVert T\rVert \lt \infty$ 다.
 
-$E_n = \lbrace x \in X : \lVert Tx\rVert \le n \thinspace\text{ 가 모든 } T \in \mathcal F \thinspace\text{ 에 대해 성립}\rbrace$ 으로 놓는다. 각 $E_n$ 은 닫혀 있고 가정에 의해 $X = \bigcup_n E_n$ 이다. Baire 범주 정리에 의해 어떤 $E_N$ 이 내부를 가지므로 열린 공 $B(x_0, r) \subseteq E_N$ 이 있다. 선형성으로 $\lVert Tz\rVert \le 2N/r$ 이 단위공의 모든 $z$ 에 대해 나온다. ∎
+$E_n = \lbrace x \in X : \lVert Tx\rVert \le n \thinspace\text{ 가 모든 } T \in \mathcal F \thinspace\text{ 에 대해 성립}\rbrace$ 으로 놓는다. 각 $E_n$ 은 닫혀 있고 가정에서 $X = \bigcup_n E_n$ 이다. Baire 범주 정리로 어떤 $E_N$ 이 내부를 가지므로 열린 공 $B(x_0, r) \subseteq E_N$ 이 있다. 선형성으로 $\lVert Tz\rVert \le 2N/r$ 이 단위공의 모든 $z$ 에 대해 나온다. ∎
 
 각 점에서의 유계성이 전체의 유계성을 준다는 점이 이 정리의 내용이고, 같은 논법으로 열린 사상 정리와 닫힌 그래프 정리가 나온다.
 

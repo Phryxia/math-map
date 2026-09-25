@@ -39,7 +39,7 @@ $$
 E[X \mid Z] \thickspace:=\thickspace E[X \mid \sigma(Z)], \qquad \sigma(Z) = \lbrace Z^{-1}(B) : B \in \mathcal{B}(\mathbb{R})\rbrace.
 $$
 
-Doob–Dynkin 보조정리에 의해 $\sigma(Z)$ 가측 확률변수는 어떤 Borel 함수 $g$ 에 대해 $g(Z)$ 의 꼴이므로, $E[X \mid Z] = g(Z)$ 인 함수 $g$ 가 존재한다. 이 $g$ 를 회귀함수라 부른다.
+Doob–Dynkin 보조정리로 $\sigma(Z)$ 가측 확률변수는 어떤 Borel 함수 $g$ 에 대해 $g(Z)$ 의 꼴이므로, $E[X \mid Z] = g(Z)$ 인 함수 $g$ 가 존재한다. 이 $g$ 를 회귀함수라 부른다.
 
 조건부 확률은 지시함수의 조건부 기댓값으로 정의한다.
 
@@ -59,7 +59,7 @@ $$
 \nu(A) \thickspace=\thickspace \int_A X \thinspace dP, \qquad A \in \mathcal{G}
 $$
 
-를 정의한다. $P(A) = 0$ 이면 $\nu(A) = 0$ 이므로 $\nu \ll P\rvert_{\mathcal G}$ 이고, Radon–Nikodym 정리에 의해 $\mathcal G$ 가측 밀도 $Y = d\nu / d(P\rvert_{\mathcal G})$ 가 존재한다. 이 $Y$ 가 정의의 두 조건을 그대로 만족한다. 일반적인 $X$ 는 $X = X^+ - X^-$ 로 분해하고 선형으로 결합한다. 존재성 증명은 전부 Radon–Nikodym 정리에 의존한다.
+를 정의한다. $P(A) = 0$ 이면 $\nu(A) = 0$ 이므로 $\nu \ll P\rvert_{\mathcal G}$ 이고, Radon–Nikodym 정리로 $\mathcal G$ 가측 밀도 $Y = d\nu / d(P\rvert_{\mathcal G})$ 가 존재한다. 이 $Y$ 가 정의의 두 조건을 그대로 만족한다. 일반적인 $X$ 는 $X = X^+ - X^-$ 로 분해하고 선형으로 결합한다. 존재성 증명은 전부 Radon–Nikodym 정리에 의존한다.
 
 ## L2 정사영으로서의 정의
 
@@ -69,7 +69,7 @@ $$
 \langle U, V \rangle \thickspace=\thickspace E[UV]
 $$
 
-를 가진 Hilbert 공간이고, $L^2(\Omega, \mathcal G, P)$ 는 그 닫힌 부분공간이다. 정사영 정리에 의해 $X$ 에 가장 가까운 원소 $Y$ 가 유일하게 존재하며, 최적성의 1차 조건은
+를 가진 Hilbert 공간이고, $L^2(\Omega, \mathcal G, P)$ 는 그 닫힌 부분공간이다. 정사영 정리로 $X$ 에 가장 가까운 원소 $Y$ 가 유일하게 존재하며, 최적성의 1차 조건은
 
 $$
 E[(X - Y) W] = 0 \quad \text{for all } W \in L^2(\Omega, \mathcal{G}, P)

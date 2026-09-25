@@ -133,7 +133,7 @@ $$
 \mathrm{Hom}\_{\mathcal{C}}(c, Gd) \cong \mathrm{Hom}\_{\mathcal{D}}(Fc, d) \cong \mathrm{Hom}\_{\mathcal{C}}(c, G'd)
 $$
 
-가 $c$ 에 대해 자연스러우므로 [Yoneda lemma](yoneda-lemma.md)의 따름정리(Yoneda 매장의 충실충만성)에 의해 $Gd \cong G'd$ 이고, 이 동형은 $d$ 에 대해 자연스럽다. 왼쪽 수반도 같은 이유로 유일하다.
+가 $c$ 에 대해 자연스러우므로 [Yoneda lemma](yoneda-lemma.md)의 따름정리(Yoneda 매장의 충실충만성)으로 $Gd \cong G'd$ 이고, 이 동형은 $d$ 에 대해 자연스럽다. 왼쪽 수반도 같은 이유로 유일하다.
 
 ## Yoneda lemma 와의 관계
 

@@ -82,7 +82,7 @@ $$
 
 $\sigma(T)$ 는 $\lbrace|\lambda|\le\lVert T\rVert\rbrace$ 에 포함되는 닫힌 집합이며 비어 있지 않다.
 
-*증명.* $|\lambda|\gt\lVert T\rVert$ 일 때 Neumann 급수 $\sum \lambda^{-n-1}T^n$ 이 수렴해 역작용소를 주므로 유계다. 가역 작용소들이 열린 집합을 이루므로 닫혀 있다. $\sigma(T)$ 가 비었다면 $R(\lambda)$ 가 전해석이고 무한대에서 0 으로 가므로 Liouville 정리에 의해 항등적으로 0 이 되어 모순이다.
+*증명.* $|\lambda|\gt\lVert T\rVert$ 일 때 Neumann 급수 $\sum \lambda^{-n-1}T^n$ 이 수렴해 역작용소를 주므로 유계다. 가역 작용소들이 열린 집합을 이루므로 닫혀 있다. $\sigma(T)$ 가 비었다면 $R(\lambda)$ 가 전해석이고 무한대에서 0 으로 가므로 Liouville 정리로 항등적으로 0 이 되어 모순이다.
 
 스펙트럼 반지름은 다음과 같다.
 
@@ -164,7 +164,7 @@ Sturm–Liouville 문제의 고유함수 전개가 그 사례다. 미분방정�
 
 ## 작용소 대수
 
-$\mathcal B(H)$ 의 부분대수로 노름 닫힌 것이 $C^\ast$ 대수, 약작용소 위상에서 닫힌 것이 von Neumann 대수다. Gelfand–Naimark 정리에 의해 모든 가환 $C^\ast$ 대수는 콤팩트 Hausdorff 공간 위의 [연속함수](continuity.md) 대수와 동형이므로, 작용소 대수를 비가환 위상공간으로 읽는 관점이 나온다.
+$\mathcal B(H)$ 의 부분대수로 노름 닫힌 것이 $C^\ast$ 대수, 약작용소 위상에서 닫힌 것이 von Neumann 대수다. Gelfand–Naimark 정리로 모든 가환 $C^\ast$ 대수는 콤팩트 Hausdorff 공간 위의 [연속함수](continuity.md) 대수와 동형이므로, 작용소 대수를 비가환 위상공간으로 읽는 관점이 나온다.
 
 # 연관 문서
 

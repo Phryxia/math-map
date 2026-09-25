@@ -69,7 +69,7 @@ $$
 E\big[e^{\lambda Y}\big] \thickspace\le\thickspace \exp\negthinspace\Big(\frac{\lambda^2 (b-a)^2}{8}\Big).
 $$
 
-*증명 스케치.* $\psi(\lambda) = \log E[e^{\lambda Y}]$ 는 매끄럽고 $\psi(0) = 0$ 이며 $\psi'(0) = E[Y] = 0$ 이다. $\psi''(\lambda)$ 는 밀도를 $e^{\lambda y}$ 로 기울인 새 분포에 대한 분산이고, 그 분포는 $[a, b]$ 에 지지되므로 Popoviciu 부등식에 의해 $\psi''(\lambda) \le (b-a)^2/4$ 이다. Taylor 전개 $\psi(\lambda) = \psi(0) + \lambda\psi'(0) + \lambda^2\psi''(\xi)/2$ 에 대입하면 결론이 나온다.
+*증명 스케치.* $\psi(\lambda) = \log E[e^{\lambda Y}]$ 는 매끄럽고 $\psi(0) = 0$ 이며 $\psi'(0) = E[Y] = 0$ 이다. $\psi''(\lambda)$ 는 밀도를 $e^{\lambda y}$ 로 기울인 새 분포에 대한 분산이고, 그 분포는 $[a, b]$ 에 지지되므로 Popoviciu 부등식으로 $\psi''(\lambda) \le (b-a)^2/4$ 이다. Taylor 전개 $\psi(\lambda) = \psi(0) + \lambda\psi'(0) + \lambda^2\psi''(\xi)/2$ 에 대입하면 결론이 나온다.
 
 **Hoeffding 부등식.** $X_1, \dots, X_n$ 이 독립이고 $a_i \le X_i \le b_i$ 이며 $S_n = \sum X_i$ 일 때
 
@@ -123,7 +123,7 @@ $$
 P\big(|\bar{X}\_n - \mu| \ge \varepsilon\big) \thickspace\le\thickspace \frac{\sigma^2}{n \varepsilon^2} \thickspace\to\thickspace 0 .
 $$
 
-유계성을 추가하면 Hoeffding 이 지수 경계를 주고, 이때 우변이 합 가능하므로 Borel–Cantelli 보조정리에 의해 **강한** 수렴까지 바로 얻는다. 즉 유계 경우에는 집중부등식이 강한 큰 수의 법칙의 짧은 증명을 제공한다.
+유계성을 추가하면 Hoeffding 이 지수 경계를 주고, 이때 우변이 합 가능하므로 Borel–Cantelli 보조정리로 **강한** 수렴까지 바로 얻는다. 즉 유계 경우에는 집중부등식이 강한 큰 수의 법칙의 짧은 증명을 제공한다.
 
 정밀도를 역으로 읽으면 표본 크기 공식이 된다. 오차 $\varepsilon$ 와 신뢰수준 $1 - \delta$ 를 원하면
 
