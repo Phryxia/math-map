@@ -44,6 +44,7 @@ graph TD
 
 - [경사하강법](gradient-descent.md): 기울기 방향의 1 차 방법과 그 수렴률
 - [확률적 경사하강법](stochastic-gradient-descent.md): 기울기를 표본으로 추정하는 반복, 잡음 구간과 보폭 일정
+- [적응적 경사 방법](adaptive-gradient-methods.md): 좌표별 기울기 제곱의 누적으로 보폭을 나누는 AdaGrad, RMSProp, Adam
 - [Newton 법](newton-method.md): 2 차 정보를 쓰는 국소 이차수렴
 
 ## 선형·반정부호 계획법

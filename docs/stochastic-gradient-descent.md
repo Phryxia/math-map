@@ -82,6 +82,6 @@ $$\mathbb E\Vert x_k-x^\ast\Vert^2=O\left(\frac{\sigma^2}{\mu^2 k}\right)$$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [적응적 경사 방법](adaptive-gradient-methods.md)
 
 #optimization #machine_learning #probability #statistics
