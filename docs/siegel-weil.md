@@ -174,6 +174,6 @@ Kudla–Rallis 는 Eisenstein 급수를 $s$ 의 함수로 놓고 유수를 취�
 
 ## 더 알아보기
 
-- [질량 공식과 격자의 류](mass-formula.md)
+- [질량 공식](mass-formula.md)
 
 #number_theory #analysis #combinatorics

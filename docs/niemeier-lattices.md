@@ -169,7 +169,7 @@ $C$ 가 자기쌍대이면 $L_C$ 가 유니모듈러이고 모든 부호어 무�
 
 - [theta 급수](theta-series.md)
 - [구 채우기](sphere-packing.md)
-- [질량 공식과 격자의 류](mass-formula.md)
+- [질량 공식](mass-formula.md)
 
 ## 더 알아보기
 
