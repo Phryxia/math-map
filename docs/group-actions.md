@@ -141,6 +141,7 @@ Galois 이론은 같은 발상을 방정식에 적용한다. 체 확대의 자�
 
 - [Burnside 보조정리](burnside-lemma.md)
 - [Galois 이론](galois-theory.md)
+- [순종군](amenable-groups.md)
 - [Banach–Tarski 분해](banach-tarski.md)
 - [덮개공간](covering-spaces.md)
 - [모듈러 형식](modular-forms.md)
