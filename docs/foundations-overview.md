@@ -49,6 +49,7 @@ graph TD
 - [초곱](ultraproducts.md): 초필터로 묶은 구조, Łoś 정리와 콤팩트성의 모형 구성
 - [안정 이론](stable-theories.md): 매개변수 위의 타입 개수로 매긴 조건, 순서 성질의 부재와 갈래짓기 독립
 - [Morley 범주성 정리](morley-categoricity.md): 비가산 기수 하나에서의 범주성이 모든 비가산 기수로 옮겨가는 이유, 강최소 집합과 차원
+- [Zilber 삼분법](zilber-trichotomy.md): 강최소 집합의 프리기하가 자명, 벡터공간, 대수적으로 닫힌 체 셋으로 갈린다는 진술과 Hrushovski 의 반례
 - [o-최소성](o-minimality.md): 정의 가능 집합이 구간과 점의 유한 합집합이라는 조건, 셀 분해와 차원
 - [구성가능 집합](constructible-sets.md): 대수적 집합의 Boolean 조합, Chevalley 정리와 양화사 소거의 동치
 - [Pila–Wilkie 정리](pila-wilkie-theorem.md): 정의 가능 집합의 초월적 부분에 놓인 유리점의 셈, 산술기하에의 응용

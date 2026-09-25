@@ -69,7 +69,7 @@ $\mathcal M\prec\mathcal N$ 이 서로 다른 모형이고 정의 가능 무한�
 - **비가산 범주적 이론의 목록.** 표수가 고정된 대수적으로 닫힌 체, 체 위의 무한 차원 벡터공간, 나누어지는 꼬임 없는 아벨군, 상등만 갖춘 무한 집합이 비가산 범주적이다. 넷 모두 강최소 집합 위의 차원이 초월차수나 선형 차원으로 읽힌다.
 - **$\mathrm{ACF}\_p$ 의 모형 판정.** 두 대수적으로 닫힌 체가 표수와 초월차수로 동형 판정된다. [Ax–Grothendieck 정리](ax-grothendieck.md)의 증명이 이 판정으로 유한체의 대수적 폐포와 복소수체를 잇는다.
 - **안정성 이론의 시작.** 증명 첫 단계가 타입 개수로 이론을 가르는 방법을 내놓았고, 그 축을 모든 기수로 넓힌 것이 [안정 이론](stable-theories.md)의 안정성 스펙트럼이다.
-- **강최소 집합의 조합기하.** 대수적 폐포가 주는 프리기하를 분류하는 작업이 Morley 정리의 둘째 단계에서 갈라져 나왔다. 자명한 기하, 벡터공간의 기하, 대수적으로 닫힌 체의 기하 셋이 기본 예다.
+- **강최소 집합의 조합기하.** 대수적 폐포가 주는 프리기하를 분류하는 작업이 Morley 정리의 둘째 단계에서 갈라져 나왔다. 자명한 기하, 벡터공간의 기하, 대수적으로 닫힌 체의 기하 셋이 기본 예이고, 이 셋이 전부인지를 묻는 것이 [Zilber 삼분법](zilber-trichotomy.md)이다.
 
 [^1]: M. Morley, "Categoricity in power", *Trans. Amer. Math. Soc.* **114** (1965). 교재 서술은 D. Marker, *Model Theory: An Introduction* (2002), 6장.
 [^2]: J. Baldwin, A. Lachlan, "On strongly minimal sets", *J. Symbolic Logic* **36** (1971).
@@ -82,6 +82,6 @@ $\mathcal M\prec\mathcal N$ 이 서로 다른 모형이고 정의 가능 무한�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Zilber 삼분법](zilber-trichotomy.md)
 
 #logic #foundations #algebra
