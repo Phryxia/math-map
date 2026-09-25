@@ -66,7 +66,7 @@ $$
 \mathrm{Gal}(K/k)\hookrightarrow S_n,\qquad n=\deg f
 $$
 
-이 작용이 추이적(transitive)인 것과 $f$ 가 $k$ 위 기약인 것이 동치다. 또 $\alpha$ 와 $\beta$ 가 같은 기약다항식의 근이면 두 원소는 같은 orbit에 있다. 즉 최소다항식이 orbit의 불변량이다.
+이 작용이 추이적(transitive)인 것과 $f$ 가 $k$ 위 기약인 것이 동치다. 또 $\alpha$ 와 $\beta$ 가 같은 기약다항식의 근이면 두 원소는 같은 궤도에 있다. 즉 최소다항식이 궤도의 불변량이다.
 
 ## 기본 정리
 

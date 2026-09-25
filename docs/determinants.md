@@ -30,7 +30,7 @@ $$
 \det A=\sum_{\sigma\in S_n}\mathrm{sgn}(\sigma)\prod_{i=1}^{n}a_{i\thinspace\sigma(i)}
 $$
 
-$A$ 에서 $i$ 행과 $j$ 열을 지운 $(n-1)$ 차 행렬을 $A_{ij}$ 라 쓰면(minor), 고정한 행 $i$ 에 대해 여인수 전개(Laplace 전개)가 성립한다[^2].
+$A$ 에서 $i$ 행과 $j$ 열을 지운 $(n-1)$ 차 행렬을 **소행렬**(minor) $A_{ij}$ 라 쓰면, 고정한 행 $i$ 에 대해 여인수 전개(Laplace 전개)가 성립한다[^2].
 
 $$
 \det A=\sum_{j=1}^{n}(-1)^{i+j}a_{ij}\det A_{ij}
@@ -104,7 +104,7 @@ $$
 
 ## 그래프와 조합론
 
-Kirchhoff의 matrix-tree 정리는 연결 [그래프](graphs.md)의 신장트리 개수가 [그래프 Laplacian](graph-laplacian.md)에서 한 행과 한 열을 지운 minor의 행렬식(부호를 맞춘 값)과 같다고 말한다[^3]. 이 공식에서 [유효저항](effective-resistance.md)이 두 행렬식의 비로 표현되고, [최소 신장트리](minimum-spanning-tree.md)를 세는 문제도 선형대수로 환원된다.
+Kirchhoff의 matrix-tree 정리는 연결 [그래프](graphs.md)의 신장트리 개수가 [그래프 Laplacian](graph-laplacian.md)에서 한 행과 한 열을 지운 소행렬의 행렬식(부호를 맞춘 값)과 같다고 말한다[^3]. 이 공식에서 [유효저항](effective-resistance.md)이 두 행렬식의 비로 표현되고, [최소 신장트리](minimum-spanning-tree.md)를 세는 문제도 선형대수로 환원된다.
 
 ## 다변수 미적분
 
