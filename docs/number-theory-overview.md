@@ -112,7 +112,7 @@ graph TD
 정수론의 대상을 Galois 군의 표현으로 바꿔 읽는다. 모듈러성 정리가 사는 곳이다.
 
 - [Galois 표현](galois-representations.md) → [Galois 표현의 변형과 보편 변형환](deformation-rings.md) → [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
-- [Fontaine–Mazur 추측](fontaine-mazur.md), [p 진 Hodge 이론](p-adic-hodge-theory.md) → [Sen 이론](sen-theory.md)
+- [p 진 Hodge 이론](p-adic-hodge-theory.md) → [Sen 이론](sen-theory.md), [Fontaine–Mazur 추측](fontaine-mazur.md)
 - [Herbrand–Ribet 정리](herbrand-ribet.md): 류수와 모듈러 형식의 합동
 - [Dwork 의 유리성 정리](dwork-rationality.md) → [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)
 - [대수적 K 이론](algebraic-k-theory.md): Quillen–Lichtenbaum 정리가 수체의 $K$ 군을 에탈 코호몰로지로 계산한다
