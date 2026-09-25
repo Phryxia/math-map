@@ -63,7 +63,7 @@ $$
 
 ## Herbrand–Ribet 과의 대비
 
-[Herbrand–Ribet](herbrand-ribet.md) 에서는 Eisenstein 합동으로 류군의 원소를 만들고, 여기서는 같은 합동으로 Jacobian 의 유리점을 없앤다. 둘 다 Eisenstein 아이디얼 근처에서 Hecke 대수가 얼마나 큰지를 묻는다. Mazur 는 $\mathbb T/I\cong\mathbb Z/n$ 임을 보였고 그 계산이 두 응용의 바탕이다.
+Herbrand–Ribet 에서는 Eisenstein 합동으로 류군의 원소를 만들고, 여기서는 같은 합동으로 Jacobian 의 유리점을 없앤다. 둘 다 Eisenstein 아이디얼 근처에서 Hecke 대수가 얼마나 큰지를 묻는다. Mazur 는 $\mathbb T/I\cong\mathbb Z/n$ 임을 보였고 그 계산이 두 응용의 바탕이다.
 
 # 정의
 

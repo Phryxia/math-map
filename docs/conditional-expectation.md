@@ -59,7 +59,7 @@ $$
 \nu(A) \thickspace=\thickspace \int_A X \thinspace dP, \qquad A \in \mathcal{G}
 $$
 
-를 정의한다. $P(A) = 0$ 이면 $\nu(A) = 0$ 이므로 $\nu \ll P\rvert_{\mathcal G}$ 이고, [Radon–Nikodym 정리](radon-nikodym.md)에 의해 $\mathcal G$ 가측 밀도 $Y = d\nu / d(P\rvert_{\mathcal G})$ 가 존재한다. 이 $Y$ 가 정의의 두 조건을 그대로 만족한다. 일반적인 $X$ 는 $X = X^+ - X^-$ 로 분해하고 선형으로 결합한다. 존재성 증명은 전부 Radon–Nikodym 정리에 의존한다.
+를 정의한다. $P(A) = 0$ 이면 $\nu(A) = 0$ 이므로 $\nu \ll P\rvert_{\mathcal G}$ 이고, Radon–Nikodym 정리에 의해 $\mathcal G$ 가측 밀도 $Y = d\nu / d(P\rvert_{\mathcal G})$ 가 존재한다. 이 $Y$ 가 정의의 두 조건을 그대로 만족한다. 일반적인 $X$ 는 $X = X^+ - X^-$ 로 분해하고 선형으로 결합한다. 존재성 증명은 전부 Radon–Nikodym 정리에 의존한다.
 
 ## L2 정사영으로서의 정의
 
@@ -69,7 +69,7 @@ $$
 \langle U, V \rangle \thickspace=\thickspace E[UV]
 $$
 
-를 가진 [Hilbert 공간](hilbert-spaces.md)이고, $L^2(\Omega, \mathcal G, P)$ 는 그 닫힌 부분공간이다. 정사영 정리에 의해 $X$ 에 가장 가까운 원소 $Y$ 가 유일하게 존재하며, 최적성의 1차 조건은
+를 가진 Hilbert 공간이고, $L^2(\Omega, \mathcal G, P)$ 는 그 닫힌 부분공간이다. 정사영 정리에 의해 $X$ 에 가장 가까운 원소 $Y$ 가 유일하게 존재하며, 최적성의 1차 조건은
 
 $$
 E[(X - Y) W] = 0 \quad \text{for all } W \in L^2(\Omega, \mathcal{G}, P)
@@ -163,11 +163,11 @@ $$
 
 ## Martingale 과 확률과정
 
-시간 축을 가진 $\sigma$ -대수의 증가열 $\mathcal F_0 \subseteq \mathcal F_1 \subseteq \dots$ (filtration)을 두면 $E[X_{n+1} \mid \mathcal F_n]$ 은 "현재까지의 정보로 본 다음 값의 예측"이다. 이 예측이 현재 값과 같으면 Martingale 이다. 탑 성질은 곧바로 $E[X_n] = E[X_0]$ 를 주고, 여기서 선택적 정지 정리, Doob 부등식, martingale 수렴 정리가 뻗어 나온다. [Markov 연쇄](markov-chains.md)의 Markov 성질도 $E[f(X_{n+1}) \mid \mathcal F_n] = (Pf)(X_n)$ 라는 조건부 기댓값 등식으로 쓰는 것이 표준이다.
+시간 축을 가진 $\sigma$ -대수의 증가열 $\mathcal F_0 \subseteq \mathcal F_1 \subseteq \dots$ (filtration)을 두면 $E[X_{n+1} \mid \mathcal F_n]$ 은 "현재까지의 정보로 본 다음 값의 예측"이다. 이 예측이 현재 값과 같으면 Martingale 이다. 탑 성질은 곧바로 $E[X_n] = E[X_0]$ 를 주고, 여기서 선택적 정지 정리, Doob 부등식, martingale 수렴 정리가 뻗어 나온다. Markov 연쇄의 Markov 성질도 $E[f(X_{n+1}) \mid \mathcal F_n] = (Pf)(X_n)$ 라는 조건부 기댓값 등식으로 쓰는 것이 표준이다.
 
 ## 통계와 기계학습
 
-회귀 문제에서 목표는 특징 $Z$ 로부터 반응 $X$ 를 예측하는 것이고, 제곱오차 기준의 정답은 회귀함수 $E[X \mid Z]$ 다. [선형회귀](linear-regression.md)는 이 정사영을 $Z$ 의 아핀 함수들이 이루는 부분공간으로 제한한 근사이며, 비모수 회귀는 $E[X \mid Z]$ 자체를 추정한다. [최대가능도 추정](maximum-likelihood.md)의 EM 알고리즘에서 E-단계는 문자 그대로 잠재변수에 대한 조건부 기댓값 계산이고, [KL divergence](kl-divergence.md)(Kullback–Leibler)의 연쇄법칙도 조건부 분포에 대한 기댓값으로 표현된다.
+회귀 문제에서 목표는 특징 $Z$ 로부터 반응 $X$ 를 예측하는 것이고, 제곱오차 기준의 정답은 회귀함수 $E[X \mid Z]$ 다. 선형회귀는 이 정사영을 $Z$ 의 아핀 함수들이 이루는 부분공간으로 제한한 근사이며, 비모수 회귀는 $E[X \mid Z]$ 자체를 추정한다. [최대가능도 추정](maximum-likelihood.md)의 EM 알고리즘에서 E-단계는 문자 그대로 잠재변수에 대한 조건부 기댓값 계산이고, [KL divergence](kl-divergence.md)(Kullback–Leibler)의 연쇄법칙도 조건부 분포에 대한 기댓값으로 표현된다.
 
 ## 연속 조건의 계산
 

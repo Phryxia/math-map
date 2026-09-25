@@ -117,7 +117,7 @@ $$
 
 ## 큰 수의 법칙의 정량화
 
-약한 [큰 수의 법칙](law-of-large-numbers.md)은 Chebyshev 부등식 한 줄로 나온다. $\mathrm{Var}(X_i) = \sigma^2$ 이면
+약한 큰 수의 법칙은 Chebyshev 부등식 한 줄로 나온다. $\mathrm{Var}(X_i) = \sigma^2$ 이면
 
 $$
 P\big(|\bar{X}\_n - \mu| \ge \varepsilon\big) \thickspace\le\thickspace \frac{\sigma^2}{n \varepsilon^2} \thickspace\to\thickspace 0 .
@@ -157,7 +157,7 @@ $$
 
 - **성공 확률 증폭.** 성공 확률이 $2/3$ 인 판정 알고리즘을 $k$ 번 독립 실행하고 다수결을 취하면 오류 확률이 $\exp(-\Theta(k))$ 로 떨어진다. 다수결 실패는 성공 횟수가 $k/2$ 이하인 사건이므로 Chernoff 경계가 바로 적용된다.
 - **부하 분산.** $n$ 개의 공을 $n$ 개의 상자에 무작위로 넣으면 최대 부하가 높은 확률로 $\Theta(\log n / \log\log n)$ 이다. 상한은 한 상자의 부하에 Chernoff 를 적용하고 상자 개수만큼 합집합 경계를 쓰는 표준 논증이다.
-- **차원 축소.** Johnson–Lindenstrauss 보조정리는 무작위 사영이 거리의 제곱을 $1 \pm \varepsilon$ 안에서 보존함을 주장하며, 증명의 핵심이 카이제곱 꼴 확률변수에 대한 지수 집중이다. [유효저항](effective-resistance.md) 계산과 스펙트럼 희소화의 오차 분석도 같은 유형의 행렬 Chernoff 부등식을 쓴다.
+- **차원 축소.** Johnson–Lindenstrauss 보조정리는 무작위 사영이 거리의 제곱을 $1 \pm \varepsilon$ 안에서 보존함을 주장하며, 증명의 핵심이 카이제곱 꼴 확률변수에 대한 지수 집중이다. 유효저항 계산과 스펙트럼 희소화의 오차 분석도 같은 유형의 행렬 Chernoff 부등식을 쓴다.
 
 ## 학습이론의 표본 복잡도
 

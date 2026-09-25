@@ -79,7 +79,7 @@ Bruhat 순서의 구간이 가진 조합적 성질에서 [Kazhdan–Lusztig 다�
 # 활용
 
 - 근계의 Weyl 군은 $m_{ij}\in\lbrace 2,3,4,6\rbrace$ 인 유한 Coxeter 군이다. 이 제한이 근[격자](lattices.md)의 결정학적 조건에서 온다.
-- [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)의 정의가 Coxeter 군의 길이 함수와 Bruhat 순서 위에서 이루어진다. 계수의 음이 아님은 Weyl 군 밖에서는 기하적 해석 없이 증명되었다.
+- Kazhdan–Lusztig 다항식의 정의가 Coxeter 군의 길이 함수와 Bruhat 순서 위에서 이루어진다. 계수의 음이 아님은 Weyl 군 밖에서는 기하적 해석 없이 증명되었다.
 - 대수군의 Bruhat 분해 $G=\bigsqcup_{w\in W}BwB$ 에서 겹층을 Weyl 군의 원소가 매긴다. 겹층의 차원이 $\ell(w)$ 이고 닫힘 관계가 Bruhat 순서다.
 - 아핀 Coxeter 군은 $B$ 가 양의 준정부호이고 퇴화하는 경우에 해당하며, 유클리드 공간의 벽으로 만든 알코브에 작용한다. 유한 Weyl 군과 평행이동 격자의 반직접곱이다.
 - 쌍곡 Coxeter 군은 $B$ 의 부호수가 $(n-1,1)$ 인 경우이고, 쌍곡공간의 다면체를 거울로 삼은 반사군이 된다.

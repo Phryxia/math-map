@@ -64,7 +64,7 @@ $$
 | 정규 덮개 | 정규부분군 |
 | 덮개 사이의 사상 | 부분군의 포함 |
 
-[Galois 이론](galois-theory.md)의 체 확대와 부분군의 대응과 형태가 같고, 두 이론은 Grothendieck 의 Galois 이론으로 통합된다.
+Galois 이론의 체 확대와 부분군의 대응과 형태가 같고, 두 이론은 Grothendieck 의 Galois 이론으로 통합된다.
 
 ## 갑판 변환과 정규 덮개
 
