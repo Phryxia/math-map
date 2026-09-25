@@ -60,7 +60,7 @@ $$
 \cdots\to\bigoplus_{\mathfrak p}K_n(\mathcal O/\mathfrak p)\to K_n(\mathcal O_F)\to K_n(F)\to\bigoplus_{\mathfrak p}K_{n-1}(\mathcal O/\mathfrak p)\to\cdots
 $$
 
-[유한체](finite-fields.md)에서는 $K_{2i-1}(\mathbb F_q)=\mathbb Z/(q^{i}-1)$ 이고 짝수 차수는 0 이므로, 이 열이 수체 쪽 계산의 출발점이 된다.
+[유한체](finite-fields.md)에서는 $K_{2i-1}(\mathbb F_q)=\mathbb Z/(q^{i}-1)$ 이고 짝수 차수는 0 이므로, 수체 쪽 계산이 이 값을 입력으로 쓴다.
 
 ## Quillen–Lichtenbaum
 
