@@ -2,7 +2,7 @@
 
 # 개요
 
-[초특이 동종사상 그래프](supersingular-isogeny-graphs.md)에서 곡선의 자기준동형환은 비가환이다. 그 환의 정체를 밝히는 것이 **Deuring 대응**[^1]이다.
+[초특이 동종사상 그래프](supersingular-isogeny-graphs.md)에서 곡선의 자기준동형환은 비가환이다. 그 환을 사원수대수 안에서 결정하는 것이 **Deuring 대응**[^1]이다.
 
 $$
 \lbrace\text{표수 }p\ \text{초특이 타원곡선}\rbrace\ \longleftrightarrow\ \lbrace\text{사원수대수 }B_{p,\infty}\ \text{의 극대차수}\rbrace

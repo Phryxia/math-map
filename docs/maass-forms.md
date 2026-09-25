@@ -2,7 +2,7 @@
 
 # 개요
 
-[Eisenstein 급수](eisenstein-series.md) 문서에서 $L^2(\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H)$ 가 두 조각으로 갈라지는 것을 보았다. 연속 스펙트럼은 실해석적 Eisenstein 급수 $E(z,\tfrac12+ir)$ 가 전부 만들어 내고, $\zeta$ 함수로 완전히 기술된다. 남는 것이 **이산 스펙트럼**이고, 그것을 이루는 함수가 **Maass 형식**이다.
+[Eisenstein 급수](eisenstein-series.md)는 $L^2(\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H)$ 를 두 조각으로 가른다. 연속 스펙트럼은 실해석적 Eisenstein 급수 $E(z,\tfrac12+ir)$ 가 전부 만들어 내고, $\zeta$ 함수로 완전히 기술된다. 남는 것이 **이산 스펙트럼**이고, 그것을 이루는 함수가 **Maass 형식**이다.
 
 $$
 L^2(\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H)=\mathbb C\oplus\underbrace{\bigoplus_j\mathbb C\thinspace u_j}\_{\text{Maass 첨점형식}}\oplus\underbrace{\int_{(1/2)}E(z,s)\thinspace ds}\_{\text{Eisenstein}}

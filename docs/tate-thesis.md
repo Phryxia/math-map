@@ -26,7 +26,7 @@ $$
 Z_v(f_v,s)=\int_{K_v^\times}f_v(x)\thinspace|x|\_v^{s}\thickspace d^\times x
 $$
 
-자리마다 그 자리에서 가장 자연스러운 시험함수를 넣으면 된다. 유한 자리에서는 정수환의 정의함수 $\mathbf 1_{\mathbb Z_p}$ 이고 무한 자리에서는 Gauss 함수 $e^{-\pi x^2}$ 다. 둘 다 그 자리의 덧셈 Fourier 변환에 대해 자기쌍대인 함수라는 점에서 같은 선택이다.
+자리마다 시험함수를 하나씩 고른다. 유한 자리에서는 정수환의 정의함수 $\mathbf 1_{\mathbb Z_p}$ 이고 무한 자리에서는 Gauss 함수 $e^{-\pi x^2}$ 다. 둘 다 그 자리의 덧셈 Fourier 변환에 대해 자기쌍대인 함수라는 점에서 같은 선택이다.
 
 $$
 Z_p(\mathbf 1_{\mathbb Z_p},s)=\sum_{n\ge0}p^{-ns}=\frac1{1-p^{-s}},\qquad

@@ -91,7 +91,7 @@ $$
 \Big(\frac 2p\Big)=(-1)^{\frac{p^2-1}8}
 $$
 
-첫째는 Euler 판정법에 $a=-1$ 을 넣은 것이다. 곧 $-1$ 이 제곱수인 것과 $p\equiv1\pmod4$ 인 것이 동치이고, [Dirichlet L 함수](dirichlet-l-functions.md) 문서에서 본 두 제곱수 정리의 증명에 이 사실을 쓴다.
+첫째는 Euler 판정법에 $a=-1$ 을 넣은 것이다. 곧 $-1$ 이 제곱수인 것과 $p\equiv1\pmod4$ 인 것이 동치이고, [Dirichlet L 함수](dirichlet-l-functions.md)에 있는 두 제곱수 정리의 증명에 이 사실을 쓴다.
 
 둘째는 $p\equiv\pm1\pmod8$ 일 때만 2 가 제곱수라는 뜻이다. Gauss 보조정리나 $\mathbb Z[\zeta_8]$ 에서 $(\zeta_8+\zeta_8^{-1})^2=2$ 를 쓰는 증명이 있다.
 

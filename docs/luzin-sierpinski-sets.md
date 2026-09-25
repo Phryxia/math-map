@@ -36,7 +36,7 @@ $S\subseteq\mathbb R$ 이 **Sierpiński 집합**이라 함은 $S$ 가 비가산�
 
 **정리.** Luzin 집합은 영집합이면서 제1범주가 아니고, Sierpiński 집합은 제1범주이면서 측도가 양이다.
 
-$L$ 이 제1범주이면 정의를 $M=L$ 에 적용해 $L=L\cap L$ 이 가산이 되어 모순이다. 측도 쪽은 쌍대성 문서의 분해 $\mathbb R=A\sqcup B$ 를 쓴다. $A$ 가 영집합이고 $B$ 가 제1범주이므로 $L\cap B$ 는 가산이고 $L\subseteq A\cup(L\cap B)$ 이라 $L$ 은 영집합이다. $S$ 에 대해서는 같은 분해에서 $S\cap A$ 가 가산이고 $S\subseteq B\cup(S\cap A)$ 이라 $S$ 가 제1범주이며, $S=S\cap S$ 가 가산이 아니므로 $S$ 는 영집합이 아니다. ∎
+$L$ 이 제1범주이면 정의를 $M=L$ 에 적용해 $L=L\cap L$ 이 가산이 되어 모순이다. 측도 쪽은 Erdős–Sierpiński 쌍대성의 분해 $\mathbb R=A\sqcup B$ 를 쓴다. $A$ 가 영집합이고 $B$ 가 제1범주이므로 $L\cap B$ 는 가산이고 $L\subseteq A\cup(L\cap B)$ 이라 $L$ 은 영집합이다. $S$ 에 대해서는 같은 분해에서 $S\cap A$ 가 가산이고 $S\subseteq B\cup(S\cap A)$ 이라 $S$ 가 제1범주이며, $S=S\cap S$ 가 가산이 아니므로 $S$ 는 영집합이 아니다. ∎
 
 ## 강 측도 영집합
 
@@ -60,7 +60,7 @@ Luzin 집합의 비가산 부분집합은 다시 Luzin 집합이므로, Luzin �
 
 # 활용
 
-- 측도와 범주가 서로 다른 뜻임을 보이는 반례를 준다. Luzin 집합은 영집합이면서 제1범주가 아니고 Sierpiński 집합은 그 반대라, [Erdős–Sierpiński 쌍대성](erdos-sierpinski-duality.md)의 활용 절이 말하는 반례 옮기기의 구체적인 예가 된다.
+- 측도와 범주가 서로 다른 뜻임을 보이는 반례를 준다. Luzin 집합은 영집합이면서 제1범주가 아니고 Sierpiński 집합은 그 반대이므로, Erdős–Sierpiński 쌍대성이 반례를 옮기는 구체적인 예가 된다.
 - [기수 불변량](cardinal-characteristics.md)의 값을 정한다. Luzin 집합의 존재가 $\mathrm{non}(\mathcal M)=\aleph\_1$ 을, Sierpiński 집합의 존재가 $\mathrm{non}(\mathcal N)=\aleph\_1$ 을 준다.
 - Borel 추측의 반증에 쓴다. Borel 추측은 모든 강 측도 영집합이 가산이라는 명제이고, 연속체 가설 아래의 Luzin 집합이 비가산인 강 측도 영집합이므로 이 추측이 거짓이 된다.[^3]
 

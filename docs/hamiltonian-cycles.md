@@ -72,7 +72,7 @@ $\mathrm{cl}(G)$ 가 완전그래프이면 $G$ 는 Hamilton 그래프다. Ore �
 
 ## 판정 문제의 복잡도
 
-그래프가 Hamilton 순환을 갖는지 판정하는 문제는 NP-완전이다.[^5] 3-SAT(satisfiability)에서의 환원이 표준이고, 유향 판본과 Hamilton 경로 판본도 같다. 따라서 위의 충분조건들처럼 차수나 다른 구조를 가정하지 않으면 다항 시간 판정 절차를 기대할 수 없다. [NP-완전성](np-completeness.md) 문서가 환원의 틀을 다룬다.
+그래프가 Hamilton 순환을 갖는지 판정하는 문제는 NP-완전이다.[^5] 3-SAT(satisfiability)에서의 환원이 표준이고, 유향 판본과 Hamilton 경로 판본도 같다. 따라서 위의 충분조건들처럼 차수나 다른 구조를 가정하지 않으면 다항 시간 판정 절차를 기대할 수 없다. 환원의 틀은 [NP-완전성](np-completeness.md)에 있다.
 
 # 활용
 
