@@ -70,7 +70,7 @@ $I \ne 0$ 을 아이디얼이라 하고 $N$ 값이 최소인 $b \in I\setminus\l
 
 $R$ 가 UFD 이면 $R[x]$ 도 UFD 다[^2]. 증명의 축은 원시다항식(primitive polynomial)의 곱이 원시라는 Gauss 보조정리이고, 이것이 $\mathrm{Frac}(R)[x]$ 에서의 분해를 $R[x]$ 로 되돌린다.
 
-PID 는 이 성질을 갖지 않는다. $\mathbb Z$ 는 PID 이지만 $\mathbb Z[x]$ 에서 $(2,x)$ 는 주아이디얼이 아니다. 따라서 변수를 늘려도 살아남는 것은 UFD 조건이고, $k[x_1,\dots,x_n]$ 이 UFD 인 근거가 이것이다.
+PID 는 이 성질을 갖지 않는다. $\mathbb Z$ 는 PID 이지만 $\mathbb Z[x]$ 에서 $(2,x)$ 는 주아이디얼이 아니다. 따라서 변수를 늘려도 남는 것은 UFD 조건이고, $k[x_1,\dots,x_n]$ 이 UFD 인 근거가 이것이다.
 
 # 활용
 

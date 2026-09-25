@@ -46,7 +46,7 @@ $\varepsilon$ 을 $\sqrt q$ 로 정규화하므로 근 수의 절댓값이 $1$ �
 
 국소 적분 $\int_{K_v^\times}f_v(x)\chi_v(x)|x|^s\thinspace d^\times x$ 에 $f_v=\mathbf 1_{\mathcal O_v}$ 를 넣고 $\chi_v$ 가 $\mathcal O_v^\times$ 에서 자명하면(비분기) 적분이 단순한 등비급수가 되고, Fourier 변환한 쪽도 마찬가지라 두 결과의 비에 상수가 남지 않는다. 근 수가 $1$ 이다.
 
-$\chi_v$ 가 분기하면 $\mathcal O_v^\times$ 위에서 진동하므로 $\mathbf 1_{\mathcal O_v}$ 를 넣은 적분이 지표의 직교성으로 $0$ 이 된다. $\chi_v$ 가 살아남는 크기의 시험함수를 골라야 하고, 그 함수의 Fourier 변환이 유한 잉여환 위의 지표합, 곧 Gauss 합이다.
+$\chi_v$ 가 분기하면 $\mathcal O_v^\times$ 위에서 진동하므로 $\mathbf 1_{\mathcal O_v}$ 를 넣은 적분이 지표의 직교성으로 $0$ 이 된다. $\chi_v$ 가 남는 크기의 시험함수를 골라야 하고, 그 함수의 Fourier 변환이 유한 잉여환 위의 지표합, 곧 Gauss 합이다.
 
 근 수는 분기가 만드는 위상이고, 분기하지 않으면 대칭이 깨질 곳이 없다.
 

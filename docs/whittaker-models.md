@@ -55,7 +55,7 @@ $$
 \pi^\iota\cong\tilde\pi
 $$
 
-이 대칭이 Whittaker 범함수의 공간 위에 작용해 차원을 1 이하로 묶는다. [Satake 동형](satake-isomorphism.md)의 가환성도 전치라는 반자기동형 하나로 증명한다. 기하적으로는 $N\backslash G/N$ 의 궤도 문제이고, Bruhat 분해로 보면 지표 $\psi_N$ 이 살아남는 궤도가 하나뿐이다.
+이 대칭이 Whittaker 범함수의 공간 위에 작용해 차원을 1 이하로 묶는다. [Satake 동형](satake-isomorphism.md)의 가환성도 전치라는 반자기동형 하나로 증명한다. 기하적으로는 $N\backslash G/N$ 의 궤도 문제이고, Bruhat 분해로 보면 지표 $\psi_N$ 이 남는 궤도가 하나뿐이다.
 
 ## 분해와 Euler 곱
 

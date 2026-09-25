@@ -265,7 +265,7 @@ $$
 
 ## Euler 계 논법의 요지
 
-[Euler 계](euler-systems.md)는 상호법칙의 합에서 한 항만 살아남게 대역류를 설계한다. 유도류 $\kappa_n$ 이 $n$ 밖에서 Selmer 조건을 만족하면 그 자리들에서 짝이 0 이고, 남은 $\ell$ 자리의 짝도 0 이라는 결론이 $\mathrm{loc}\_\ell(s)=0$ 을 강제한다.
+[Euler 계](euler-systems.md)는 상호법칙의 합에서 한 항만 남게 대역류를 설계한다. 유도류 $\kappa_n$ 이 $n$ 밖에서 Selmer 조건을 만족하면 그 자리들에서 짝이 0 이고, 남은 $\ell$ 자리의 짝도 0 이라는 결론이 $\mathrm{loc}\_\ell(s)=0$ 을 강제한다.
 
 ## Hasse 원리의 장애
 

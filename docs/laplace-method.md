@@ -22,7 +22,7 @@ $$
 
 ## 최대점 근방의 폭
 
-$\varphi$ 의 최대값이 $x_0$ 에서 $\varphi(x_0)$ 라 하자. 다른 점 $x$ 의 기여는 $e^{\lambda(\varphi(x)-\varphi(x_0))}$ 배로 줄어들고, 지수가 음수이므로 $\lambda$ 가 커지면 기하급수적으로 사라진다. 살아남는 폭은 $\lambda(\varphi(x)-\varphi(x_0))\approx-1$ 인 범위, 곧
+$\varphi$ 의 최대값이 $x_0$ 에서 $\varphi(x_0)$ 라 하자. 다른 점 $x$ 의 기여는 $e^{\lambda(\varphi(x)-\varphi(x_0))}$ 배로 줄어들고, 지수가 음수이므로 $\lambda$ 가 커지면 기하급수적으로 사라진다. 남는 폭은 $\lambda(\varphi(x)-\varphi(x_0))\approx-1$ 인 범위, 곧
 
 $$
 |x-x_0|\ \lesssim\ \frac1{\sqrt{\lambda|\varphi''(x_0)|}}

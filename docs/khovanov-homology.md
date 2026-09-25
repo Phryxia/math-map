@@ -105,7 +105,7 @@ $A$ 의 관계를 $X^2=0$ 대신 $X^2=1$ 로 바꾸면 Lee 호몰로지 $Kh_{\ma
 
 **정리(Lee).** $\ell$ 성분 링크에서 $\dim_{\mathbb Q}Kh_{\mathrm{Lee}}=2^{\ell}$ 이다[^4]. 특히 매듭이면 $Kh_{\mathrm{Lee}}\cong\mathbb Q^2$ 이고 두 생성원 모두 호몰로지 차수 $0$ 에 있다.
 
-Khovanov 복합체의 $q$ 여과가 Lee 호몰로지에 여과를 남기므로 $\mathbb Q^2$ 의 생성원이 살아남는 여과 준위를 물을 수 있다. 두 준위는 $2$ 만큼 차이가 나고 그 평균이 **Rasmussen 불변량**이다[^3].
+Khovanov 복합체의 $q$ 여과가 Lee 호몰로지에 여과를 남기므로 $\mathbb Q^2$ 의 생성원이 남는 여과 준위를 물을 수 있다. 두 준위는 $2$ 만큼 차이가 나고 그 평균이 **Rasmussen 불변량**이다[^3].
 
 $$
 s(K)\in2\mathbb Z

@@ -107,7 +107,7 @@ $$
 
 - **통계물리.** $q$ 상태 Potts 모형의 분배함수가 $T$ 의 값매김이다. 온도와 상태 수가 $(x,y)$ 평면의 한 곡선을 따라 움직이고, 강자성 영역이 $y\gt 1$ 에 대응한다.
 - **매듭 불변량.** 교대 매듭의 [Jones 다항식](knot-invariants.md)은 매듭 도형에서 만든 그래프의 Tutte 다항식을 한 변수로 특수화한 것이다.
-- **신뢰도.** 각 간선이 독립적으로 확률 $p$ 로 살아남을 때 그래프가 연결로 남을 확률이 $T$ 의 값매김이다.
+- **신뢰도.** 각 간선이 독립적으로 확률 $p$ 로 남을 때 그래프가 연결로 남을 확률이 $T$ 의 값매김이다.
 - **Matroid 불변량.** 정의가 랭크 함수만 쓰므로 벡터 matroid 와 횡단 matroid 에도 같은 다항식이 있고, 삭제-축약과 쌍대 항등식이 그대로 성립한다.
 
 [^1]: W. T. Tutte, "A contribution to the theory of chromatic polynomials", Canadian Journal of Mathematics 6 (1954), https://doi.org/10.4153/CJM-1954-010-9

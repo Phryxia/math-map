@@ -43,7 +43,7 @@ $p$ 진 고전군에서는 기약표현이 무한차원이고, 같은 [Langlands
 
 ## 모형의 교체
 
-$\mathrm{GL}\_n$ 에서 Whittaker 모형이 유일한 것은 $N\backslash G/N$ 에서 비퇴화 지표가 살아남는 궤도가 하나뿐이기 때문이다. 고전군에서는 멱단근기 위의 지표 궤도가 여러 개다. 고전군의 표현 중 Whittaker 모형을 갖는 일반 표현은 L 꾸러미 안에서 보통 하나다.
+$\mathrm{GL}\_n$ 에서 Whittaker 모형이 유일한 것은 $N\backslash G/N$ 에서 비퇴화 지표가 남는 궤도가 하나뿐이기 때문이다. 고전군에서는 멱단근기 위의 지표 궤도가 여러 개다. 고전군의 표현 중 Whittaker 모형을 갖는 일반 표현은 L 꾸러미 안에서 보통 하나다.
 
 대신 더 작은 군을 짝지은 모형을 쓴다.
 
@@ -138,7 +138,7 @@ $$
 L\negthinspace\left(\tfrac12,\pi_{n+1}\times\pi_n\right)\ne0
 $$
 
-이고, 주기가 살아남는 표현을 찾는 일이 자리마다의 국소 GGP 다. 전역 조건이 국소 조건의 곱으로 분해되는 구조는 [Whittaker 유일성](whittaker-models.md)이 Euler 곱을 보장하는 것과 같다.
+이고, 주기가 남는 표현을 찾는 일이 자리마다의 국소 GGP 다. 전역 조건이 국소 조건의 곱으로 분해되는 구조는 [Whittaker 유일성](whittaker-models.md)이 Euler 곱을 보장하는 것과 같다.
 
 # 성질
 

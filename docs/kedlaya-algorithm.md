@@ -42,7 +42,7 @@ $$
 a_p=-\sum_{x\in\mathbb F_p}\chi(f(x)),\qquad \chi(u)=u^{(p-1)/2}
 $$
 
-이고, $\sum_{x\in\mathbb F_p}x^k$ 가 $(p-1)\mid k$ 이고 $k\gt 0$ 일 때만 $-1$ 이라는 사실을 쓰면 $f^{(p-1)/2}$ 의 $x^{p-1}$ 계수 하나만 살아남는다.
+이고, $\sum_{x\in\mathbb F_p}x^k$ 가 $(p-1)\mid k$ 이고 $k\gt 0$ 일 때만 $-1$ 이라는 사실을 쓰면 $f^{(p-1)/2}$ 의 $x^{p-1}$ 계수 하나만 남는다.
 
 $$
 a_p\equiv\big[\thinspace x^{p-1}\thinspace\big]\thinspace f(x)^{(p-1)/2}\pmod p
