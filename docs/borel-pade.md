@@ -99,7 +99,7 @@ Airy 는 음의 실축에서 가장 가까운 극점이 $[6/6]$ 에서 $-2.068$ 
 
 ## 선수지식
 
-- [Stokes 현상과 재합산](stokes-phenomenon.md)
+- [Stokes 현상](stokes-phenomenon.md)
 
 ## 더 알아보기
 

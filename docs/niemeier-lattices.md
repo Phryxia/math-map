@@ -1,4 +1,4 @@
-# Niemeier 격자와 24 차원 분류
+# Niemeier 격자
 
 # 개요
 
@@ -174,6 +174,6 @@ $C$ 가 자기쌍대이면 $L_C$ 가 유니모듈러이고 모든 부호어 무�
 ## 더 알아보기
 
 - [Umbral moonshine](umbral-moonshine.md)
-- [Schellekens 목록과 홀로모픽 c=24 VOA 분류](schellekens-list.md)
+- [Schellekens 목록](schellekens-list.md)
 
 #number_theory #linear_algebra #combinatorics

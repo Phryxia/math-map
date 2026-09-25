@@ -169,7 +169,7 @@ umbral moonshine 은 $M_{24}$ 와 $M_{12}$ 를 포함한 여러 군에 달빛 �
 - [괴물 달빛 추측](monstrous-moonshine.md)
 - [Mathieu 군과 Golay 부호](mathieu-groups.md)
 - [Mock 모듈러 형식과 Zwegers 이론](mock-modular-forms.md)
-- [Niemeier 격자와 24 차원 분류](niemeier-lattices.md)
+- [Niemeier 격자](niemeier-lattices.md)
 
 ## 더 알아보기
 

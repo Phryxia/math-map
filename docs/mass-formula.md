@@ -166,6 +166,6 @@ $\sum 1/|\mathrm{Aut}L_i|$ 대신 각 격자에 조화 다항식 값을 곱해 �
 
 ## 더 알아보기
 
-- [Niemeier 격자와 24 차원 분류](niemeier-lattices.md)
+- [Niemeier 격자](niemeier-lattices.md)
 
 #number_theory #linear_algebra #theorem

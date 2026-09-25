@@ -132,6 +132,6 @@ Leech 격자의 자기동형군에서 Conway 군이 나오고 그 몫과 부분�
 
 ## 더 알아보기
 
-- [Niemeier 격자와 24 차원 분류](niemeier-lattices.md)
+- [Niemeier 격자](niemeier-lattices.md)
 
 #combinatorics #number_theory #information_theory

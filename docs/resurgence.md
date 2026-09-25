@@ -138,7 +138,7 @@ alien 미분들은 자유 [Lie 대수](lie-algebras.md)를 이루고 그 지수�
 
 ## 선수지식
 
-- [Stokes 현상과 재합산](stokes-phenomenon.md)
+- [Stokes 현상](stokes-phenomenon.md)
 
 ## 더 알아보기
 

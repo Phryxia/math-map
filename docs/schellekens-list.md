@@ -1,4 +1,4 @@
-# Schellekens 목록과 홀로모픽 c=24 VOA 분류
+# Schellekens 목록
 
 # 개요
 
@@ -154,7 +154,7 @@ $V^\natural$ 밖의 항목들도 자기동형군을 갖고, 그 군의 원소에
 ## 선수지식
 
 - [Zhu 대수와 모듈러 불변성](zhu-algebra.md)
-- [Niemeier 격자와 24 차원 분류](niemeier-lattices.md)
+- [Niemeier 격자](niemeier-lattices.md)
 
 ## 더 알아보기
 

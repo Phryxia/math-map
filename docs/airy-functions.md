@@ -212,7 +212,7 @@ Airy 는 1838년 무지개의 **과잉 아치**(supernumerary arc)를 설명하�
 ## 선수지식
 
 - [상미분방정식](ordinary-differential-equations.md)
-- [Stokes 현상과 재합산](stokes-phenomenon.md)
+- [Stokes 현상](stokes-phenomenon.md)
 - [정상위상법과 안장점 근사](stationary-phase.md)
 
 ## 더 알아보기

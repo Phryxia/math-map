@@ -157,7 +157,7 @@ $$
 ## 더 알아보기
 
 - [분할수](partitions.md)
-- [Stokes 현상과 재합산](stokes-phenomenon.md)
+- [Stokes 현상](stokes-phenomenon.md)
 - [정상위상법과 안장점 근사](stationary-phase.md)
 
 #analysis #combinatorics #computation
