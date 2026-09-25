@@ -93,7 +93,8 @@ graph TD
 - [Maass 형식](maass-forms.md), [Selberg 대각합 공식](selberg-trace-formula.md): 비정칙 스펙트럼
 - [모듈러 곡선](modular-curves.md) → [모듈러 기호](modular-symbols.md), [과수렴 모듈러 기호와 p 진 L 함수](overconvergent-modular-symbols.md)
 - [분할수](partitions.md), [Mock 모듈러 형식](mock-modular-forms.md), [Dyson 의 rank 와 crank](dyson-rank-crank.md), [Borcherds 곱](borcherds-products.md): 조합론과의 접점
-- [Weil 표현과 theta 대응](weil-representation.md) → [Shimura 대응](shimura-correspondence.md), [Siegel–Weil 공식](siegel-weil.md) → [질량 공식](mass-formula.md) → [Niemeier 격자](niemeier-lattices.md), [구 채우기](sphere-packing.md)
+- [Weil 표현과 theta 대응](weil-representation.md) → [Shimura 대응](shimura-correspondence.md), [Siegel–Weil 공식](siegel-weil.md) → [질량 공식](mass-formula.md) → [Niemeier 격자](niemeier-lattices.md)
+- [구 채우기](sphere-packing.md): 격자와 부호가 정하는 최대 밀도
 - [괴물 달빛 추측](monstrous-moonshine.md), [Umbral moonshine](umbral-moonshine.md): 모듈러 함수와 산재 단순군
 
 ## 타원곡선과 BSD 추측

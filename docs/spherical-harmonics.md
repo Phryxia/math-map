@@ -129,6 +129,7 @@ $$
 
 - [군의 표현](group-representations.md)
 - [Hilbert 공간](hilbert-spaces.md)
+- [Peter–Weyl 정리](peter-weyl.md)
 
 ## 더 알아보기
 
