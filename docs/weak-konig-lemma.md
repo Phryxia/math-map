@@ -60,7 +60,7 @@ $\mathrm{WKL}\_0$ 은 $\mathrm{RCA}\_0$ 에 대해 $\Pi^1_1$ 보존적이고, �
 - **비구성성의 눈금.** 어떤 정리가 $\mathrm{WKL}\_0$ 과 동치이면 그 증명에 계산 불가능한 선택이 정확히 한 겹 들어 있다. $\mathrm{ACA}\_0$ 과 동치인 정리는 한 겹 더 쓴다.
 - **계산가능성의 기저 문제.** 어떤 차수의 집합이 모든 무한 계산가능 이진 나무의 가지를 담는가를 묻는 문제가 저차 기저 정리 계열이고, 이 물음이 [Turing 차수](turing-degrees.md)의 구조 연구로 이어진다.
 
-[^1]: S. G. Simpson, *Subsystems of Second Order Arithmetic*, 2판 (2009), IV장. 동치 목록과 각 증명.
+[^1]: S. G. Simpson, *Subsystems of Second Order Arithmetic*, 2판 (2009), IV 장. 동치 목록과 각 증명.
 
 [^2]: C. G. Jockusch, R. I. Soare, *$\Pi^0_1$ classes and degrees of theories*, Trans. Amer. Math. Soc. **173** (1972), 33–56.
 

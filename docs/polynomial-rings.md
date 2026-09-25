@@ -92,7 +92,7 @@ $$
 정사각행렬 $A$ 에 대해 특성다항식과 최소다항식은 $k[x]$ 의 원소이며, $k[x]$ 의 유일분해가 [Jordan 표준형](jordan-canonical-form.md)과 고윳값 중복도 이론의 기초를 준다. [선형사상](linear-maps.md)을 $k[x]$ 가군 구조로 보는 관점이 그 형식화다.
 
 [^1]: UC Irvine Math 120B, "Rings of Polynomials" — 체 위 다항식환의 나눗셈 알고리즘과 인수 정리. https://www.math.uci.edu/~ndonalds/math120b/2poly.pdf
-[^2]: R. Woodroofe, "Polynomial rings and unique factorization domains" — 유클리드 정역이 PID이고 UFD임, $k[x]$ 의 유일분해. https://osebje.famnit.upr.si/~russ.woodroofe/wustl-notes/ufds.pdf
+[^2]: R. Woodroofe, "Polynomial rings and unique factorization domains" — 유클리드 정역이 PID 이고 UFD 임, $k[x]$ 의 유일분해. https://osebje.famnit.upr.si/~russ.woodroofe/wustl-notes/ufds.pdf
 
 # 연관 문서
 

@@ -62,7 +62,7 @@ $\widetilde C$ 를 $C$ 의 매끄러운 사영 모형이라 하고, $C$ 가 $\wi
 - **Thue 방정식의 기하적 해석.** 차수 $d\ge3$ 인 기약 이진형식이 정의하는 곡선은 종수가 $1$ 이상이거나 뺀 점이 셋 이상이다. Thue 의 유한성 정리가 Siegel 정리의 한 경우로 들어간다.
 - **타원곡선의 정수점 목록.** [Néron–Tate 높이](canonical-height.md)로 생성원을 구한 뒤 각 정수점을 생성원의 정수 결합으로 쓰면, 결합 계수에 대한 선형형식의 하한이 계수의 크기를 제한한다. 이 절차로 주어진 곡선의 정수점을 빠짐없이 나열한다.
 
-[^1]: J. H. Silverman, *The Arithmetic of Elliptic Curves*, 2판 (2009), IX장. 정리의 진술과 근사 정리를 쓰는 증명, $S$-단위 방정식으로의 환원.
+[^1]: J. H. Silverman, *The Arithmetic of Elliptic Curves*, 2판 (2009), IX 장. 정리의 진술과 근사 정리를 쓰는 증명, $S$-단위 방정식으로의 환원.
 
 [^2]: A. Baker, *Transcendental Number Theory* (1975), 5장과 6장. 선형형식 하한에서 나오는 정수점의 명시적 상한.
 

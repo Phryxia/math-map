@@ -90,7 +90,7 @@ $\omega$-안정 이론에서 각 타입에 서수 값의 **Morley 위수**와 �
 - **함수체 위의 Mordell–Lang.** 미분 닫힌 체와 분리 닫힌 체가 안정 이론이고, 그 안에서 갈래짓기 독립과 Morley 위수로 아벨 다양체의 부분군을 분석해 함수체 판본의 Mordell–Lang 추측을 증명한다.[^2]
 - **안정 정규성.** 그래프의 인접 관계를 논리식으로 보아 순서 성질이 없는 족으로 제한하면, Szemerédi 정규성 보조정리의 분할에서 예외 쌍이 사라지고 각 쌍의 밀도가 $0$ 이나 $1$ 에 가까워진다.[^3]
 
-[^1]: S. Shelah, *Classification Theory and the Number of Non-Isomorphic Models*, 2판 (1990), II장과 III장. 순서 성질과의 동치는 II.2, 안정성 스펙트럼은 II.3, 모형 개수의 하한은 VIII장.
+[^1]: S. Shelah, *Classification Theory and the Number of Non-Isomorphic Models*, 2판 (1990), II 장과 III 장. 순서 성질과의 동치는 II.2, 안정성 스펙트럼은 II.3, 모형 개수의 하한은 VIII장.
 
 [^2]: A. Pillay, *Geometric Stability Theory* (1996), 1장과 2장. 갈래짓기 독립의 성질과 Morley 위수. 미분 대수 쪽 응용의 서술은 E. Bouscaren 엮음, *Model Theory and Algebraic Geometry* (1998).
 

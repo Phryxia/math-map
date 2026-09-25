@@ -2,7 +2,7 @@
 
 # 개요
 
-특이값 분해(SVD)는 임의의 직사각행렬을 "정규직교기저 회전 · 축별 확대 · 정규직교기저 회전"의 합성으로 쪼갠다. 정사각·대칭이라는 조건이 전혀 필요 없고, 모든 실(또는 복소)행렬에 대해 존재한다. [스펙트럼 정리](spectral-theorem.md)를 $A^{\mathsf T}A$ 에 적용하면 곧바로 증명되며, 특이값은 $A^{\mathsf T}A$ 의 고윳값의 제곱근이다[^1]. 절단된 SVD가 모든 unitary 불변 노름에서 최적의 저계수 근사라는 Eckart–Young–Mirsky 정리가 압축·잡음 제거·주성분 분석의 이론적 근거다[^2].
+특이값 분해(SVD)는 임의의 직사각행렬을 "정규직교기저 회전 · 축별 확대 · 정규직교기저 회전"의 합성으로 쪼갠다. 정사각·대칭이라는 조건이 전혀 필요 없고, 모든 실(또는 복소)행렬에 대해 존재한다. [스펙트럼 정리](spectral-theorem.md)를 $A^{\mathsf T}A$ 에 적용하면 곧바로 증명되며, 특이값은 $A^{\mathsf T}A$ 의 고윳값의 제곱근이다[^1]. 절단된 SVD 가 모든 unitary 불변 노름에서 최적의 저계수 근사라는 Eckart–Young–Mirsky 정리가 압축·잡음 제거·주성분 분석의 이론적 근거다[^2].
 
 # 직관
 
@@ -12,14 +12,14 @@
 
 # 정의
 
-$A$ 를 $m\times n$ 실행렬, $r$ 을 그 계수라 하자. SVD는 다음 분해다. 여기서 $U$ 는 $m$ 차 직교행렬, $V$ 는 $n$ 차 직교행렬, $\Sigma$ 는 대각 성분이 내림차순으로 음이 아닌 $m\times n$ 행렬이다.
+$A$ 를 $m\times n$ 실행렬, $r$ 을 그 계수라 하자. SVD 는 다음 분해다. 여기서 $U$ 는 $m$ 차 직교행렬, $V$ 는 $n$ 차 직교행렬, $\Sigma$ 는 대각 성분이 내림차순으로 음이 아닌 $m\times n$ 행렬이다.
 
 $$
 A=U\Sigma V^{\mathsf T},\qquad
 \sigma_1\ge\sigma_2\ge\dots\ge\sigma_r\gt 0=\sigma_{r+1}=\dots
 $$
 
-열 단위로 쓰면 rank 1 행렬들의 합이며, 이 형태를 compact SVD라 한다.
+열 단위로 쓰면 rank 1 행렬들의 합이며, 이 형태를 compact SVD 라 한다.
 
 $$
 A=\sum_{i=1}^{r}\sigma_i u_i v_i^{\mathsf T}
@@ -33,7 +33,7 @@ A A^{\mathsf T}u_i=\sigma_i^2 u_i,\qquad
 Av_i=\sigma_i u_i
 $$
 
-계수 $k$ 이하로 자른 절단 SVD와 Moore–Penrose 의사역행렬은 다음과 같다. $\Sigma^{+}$ 는 $0$ 이 아닌 특이값을 역수로 바꾸고 $0$ 은 그대로 두어 전치한 행렬이다[^3].
+계수 $k$ 이하로 자른 절단 SVD 와 Moore–Penrose 의사역행렬은 다음과 같다. $\Sigma^{+}$ 는 $0$ 이 아닌 특이값을 역수로 바꾸고 $0$ 은 그대로 두어 전치한 행렬이다[^3].
 
 $$
 A_k=\sum_{i=1}^{k}\sigma_i u_i v_i^{\mathsf T},
@@ -75,7 +75,7 @@ $0$ 이 아닌 특이값의 개수가 계수이고, $v_{r+1},\dots,v_n$ 이 핵�
 
 ## Eckart–Young–Mirsky
 
-$k\lt r$ 인 $k$ 에 대해, 계수가 $k$ 이하인 모든 행렬 중 절단 SVD가 오차를 최소화한다. 이 최적성은 spectral 노름과 Frobenius 노름에서 각각 다음 값으로 달성되며, 더 일반적으로 모든 unitary 불변 노름에서 성립한다[^2].
+$k\lt r$ 인 $k$ 에 대해, 계수가 $k$ 이하인 모든 행렬 중 절단 SVD 가 오차를 최소화한다. 이 최적성은 spectral 노름과 Frobenius 노름에서 각각 다음 값으로 달성되며, 더 일반적으로 모든 unitary 불변 노름에서 성립한다[^2].
 
 $$
 \min_{\mathrm{rank}B\le k}\lVert A-B\rVert_2=\lVert A-A_k\rVert_2=\sigma_{k+1}
@@ -96,17 +96,17 @@ $$
 x^{\star}=A^{+}b
 $$
 
-$A$ 의 열이 독립이면 $A^{+}$ 는 정규방정식의 해 $(A^{\mathsf T}A)^{-1}A^{\mathsf T}$ 와 일치하고([내적 공간](inner-product-spaces.md)의 정사영), 열이 종속이면 정규방정식이 유일해를 갖지 않는 자리에서 SVD가 최소노름해를 골라 준다. $A^{+}A$ 와 $AA^{+}$ 는 각각 행공간과 열공간으로의 정사영이다.
+$A$ 의 열이 독립이면 $A^{+}$ 는 정규방정식의 해 $(A^{\mathsf T}A)^{-1}A^{\mathsf T}$ 와 일치하고([내적 공간](inner-product-spaces.md)의 정사영), 열이 종속이면 정규방정식이 유일해를 갖지 않는 자리에서 SVD 가 최소노름해를 골라 준다. $A^{+}A$ 와 $AA^{+}$ 는 각각 행공간과 열공간으로의 정사영이다.
 
 ## 다른 분해와의 관계
 
-$A$ 가 대칭 양의 준정부호이면 SVD와 고유분해가 일치한다. 일반 정사각행렬은 극분해 $A=(\text{직교행렬})\cdot(\text{양의 준정부호})$ 로 쓰이고, 여기서 직교 부분이 $UV^{\mathsf T}$ , 양의 준정부호 부분이 $V\Sigma V^{\mathsf T}$ 다. 이 사실이 주어진 행렬에 가장 가까운 직교행렬을 찾는 Procrustes 문제의 해를 준다.
+$A$ 가 대칭 양의 준정부호이면 SVD 와 고유분해가 일치한다. 일반 정사각행렬은 극분해 $A=(\text{직교행렬})\cdot(\text{양의 준정부호})$ 로 쓰이고, 여기서 직교 부분이 $UV^{\mathsf T}$ , 양의 준정부호 부분이 $V\Sigma V^{\mathsf T}$ 다. 이 사실이 주어진 행렬에 가장 가까운 직교행렬을 찾는 Procrustes 문제의 해를 준다.
 
 # 활용
 
 ## 주성분 분석
 
-행이 관측, 열이 변수인 데이터행렬에서 각 열의 평균을 뺀 $X$ 를 만들면 표본공분산이 $X^{\mathsf T}X$ 를 $n-1$ 로 나눈 것이다. 따라서 $X$ 의 오른쪽 특이벡터가 주성분 방향이고, 각 성분이 설명하는 분산이 특이값 제곱을 $n-1$ 로 나눈 값이다. 공분산행렬을 만들지 않고 $X$ 의 SVD를 직접 쓰는 편이 수치적으로 안정적이다. 확률 쪽 해석은 [확률변수](random-variables.md)의 공분산을 내적으로 보는 관점과 같다.
+행이 관측, 열이 변수인 데이터행렬에서 각 열의 평균을 뺀 $X$ 를 만들면 표본공분산이 $X^{\mathsf T}X$ 를 $n-1$ 로 나눈 것이다. 따라서 $X$ 의 오른쪽 특이벡터가 주성분 방향이고, 각 성분이 설명하는 분산이 특이값 제곱을 $n-1$ 로 나눈 값이다. 공분산행렬을 만들지 않고 $X$ 의 SVD 를 직접 쓰는 편이 수치적으로 안정적이다. 확률 쪽 해석은 [확률변수](random-variables.md)의 공분산을 내적으로 보는 관점과 같다.
 
 $$
 \frac{1}{n-1}X^{\mathsf T}X=V\Big(\frac{\Sigma^{\mathsf T}\Sigma}{n-1}\Big)V^{\mathsf T}
@@ -118,7 +118,7 @@ Eckart–Young에 의해 상위 $k$ 개 성분만 남기면 저장량이 $(m+n+1
 
 ## 수치선형대수와 최적화
 
-조건수 $\sigma_1/\sigma_r$ 이 선형계 해의 민감도와 [gradient descent](gradient-descent.md)의 수렴 속도를 정한다. 계수 결손 문제, 전체 최소제곱, regularization(Tikhonov)에서 작은 특이값을 잘라내거나 감쇠시키는 조작이 표준 도구다. [그래프](graphs.md) 쪽에서는 [그래프 Laplacian](graph-laplacian.md)이 대칭이라 SVD와 고유분해가 일치하고, [스펙트럼 sparsification](spectral-sparsification.md)의 보증도 특이값/고윳값 비로 서술된다.
+조건수 $\sigma_1/\sigma_r$ 이 선형계 해의 민감도와 [gradient descent](gradient-descent.md)의 수렴 속도를 정한다. 계수 결손 문제, 전체 최소제곱, regularization(Tikhonov)에서 작은 특이값을 잘라내거나 감쇠시키는 조작이 표준 도구다. [그래프](graphs.md) 쪽에서는 [그래프 Laplacian](graph-laplacian.md)이 대칭이라 SVD 와 고유분해가 일치하고, [스펙트럼 sparsification](spectral-sparsification.md)의 보증도 특이값/고윳값 비로 서술된다.
 
 [^1]: Per-Gunnar Martinsson, Matrix factorizations and low rank approximation (course notes ch. 1), UT Austin. https://users.oden.utexas.edu/~pgm/Teaching/2019_393C/linalg.pdf
 [^2]: Zhihua Zhang, "The Singular Value Decomposition, Applications and Beyond", arXiv:1510.08532. https://arxiv.org/abs/1510.08532

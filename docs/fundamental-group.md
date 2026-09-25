@@ -2,7 +2,7 @@
 
 # 개요
 
-기본군은 위상공간의 한 점을 기준으로 잡은 닫힌 경로들을 연속 변형으로 동일시하여 얻는 [군](groups.md)이다. 구멍을 감아 도는 횟수 같은 정보를 대수적으로 기록하므로, 두 공간이 위상동형이 아님을 증명하는 데 쓸 수 있다. 연속사상은 기본군 사이의 준동형을 유도하므로 기본군은 위상공간의 [범주](category.md)에서 군의 범주로 가는 [함자](functors.md)다. 원의 기본군이 정수군이라는 계산 하나로 원판에서 경계 원으로의 retraction이 없다는 사실이 나오고, 여기서 2차원 Brouwer 고정점 정리와 대수학의 기본정리가 따라 나온다.
+기본군은 위상공간의 한 점을 기준으로 잡은 닫힌 경로들을 연속 변형으로 동일시하여 얻는 [군](groups.md)이다. 구멍을 감아 도는 횟수 같은 정보를 대수적으로 기록하므로, 두 공간이 위상동형이 아님을 증명하는 데 쓸 수 있다. 연속사상은 기본군 사이의 준동형을 유도하므로 기본군은 위상공간의 [범주](category.md)에서 군의 범주로 가는 [함자](functors.md)다. 원의 기본군이 정수군이라는 계산 하나로 원판에서 경계 원으로의 수축(retraction)이 없다는 사실이 나오고, 여기서 2차원 Brouwer 고정점 정리와 대수학의 기본정리가 따라 나온다.
 
 # 직관
 
@@ -83,7 +83,7 @@ $$
 
 닫힌 원판에서 자신으로 가는 연속사상은 고정점을 가진다[^3].
 
-증명 개요. 고정점이 없다고 가정하면 각 점 $x$ 에서 $f(x)$ 에서 $x$ 로 향하는 방향으로 반직선을 그어 경계와 만나는 점을 대응시키는 연속사상을 얻고, 이는 원판에서 경계 원으로의 retraction이 된다. 즉 경계의 포함사상 $i$ 와 이 retraction $r$ 에 대해 $r\circ i$ 가 항등사상이다. 기본군의 함자 성질을 적용하면
+증명 개요. 고정점이 없다고 가정하면 각 점 $x$ 에서 $f(x)$ 에서 $x$ 로 향하는 방향으로 반직선을 그어 경계와 만나는 점을 대응시키는 연속사상을 얻고, 이는 원판에서 경계 원으로의 수축이 된다. 즉 경계의 포함사상 $i$ 와 이 수축 $r$ 에 대해 $r\circ i$ 가 항등사상이다. 기본군의 함자 성질을 적용하면
 
 $$
 \pi_1(S^1)\xrightarrow{\thinspace i_\ast\thinspace}\pi_1(D^2)\xrightarrow{\thinspace r_\ast\thinspace}\pi_1(S^1)
@@ -107,7 +107,7 @@ Seifert–van Kampen 정리는 공간을 열린집합 두 개로 덮었을 때 �
 
 [^1]: J. R. Munkres, *Topology*, 2nd ed., §51–52 (경로 호모토피와 기본군), §53–54 (피복공간과 올림 보조정리). 같은 내용의 강의노트: A. Landesman, "Notes on the fundamental group". https://people.math.harvard.edu/~landesman/assets/fundamental-group.pdf
 [^2]: 원의 기본군이 정수군임을 지수 피복과 올림 보조정리로 증명한 서술. S. Dooley, "Basic algebraic topology: the fundamental group of a circle", UChicago REU. https://www.math.uchicago.edu/~may/VIGRE/VIGRE2011/REUPapers/Dooley.pdf
-[^3]: 기본군의 함자 성질로 retraction의 부재를 보이고 2차원 Brouwer 정리를 얻는 논법. N. Gill, "The fundamental group and the Brouwer fixed point theorem", UChicago REU. http://math.uchicago.edu/~may/REU2013/REUPapers/Gill.pdf
+[^3]: 기본군의 함자 성질로 수축의 부재를 보이고 2차원 Brouwer 정리를 얻는 논법. N. Gill, "The fundamental group and the Brouwer fixed point theorem", UChicago REU. http://math.uchicago.edu/~may/REU2013/REUPapers/Gill.pdf
 
 # 연관 문서
 

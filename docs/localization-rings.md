@@ -153,7 +153,7 @@ flowchart LR
 - $S = \lbrace 1, f, f^2, \dots\rbrace$ 이면 $S^{-1}R \cong R[x]/(fx - 1)$ 이다. 보편성질로 양쪽이 같은 대상임을 보인다.
 - $R$ 이 Noetherian이면 $S^{-1}R$ 도 Noetherian이다. 모든 아이디얼이 확대 아이디얼이고 생성원이 따라 올라가기 때문이다.
 - $R$ 이 정역이면 $0 \notin S$ 인 한 $S^{-1}R$ 도 정역이고, 모두 분수체 $\mathrm{Frac}(R)$ 의 부분환으로 볼 수 있다. 이때 모든 극대 아이디얼에 걸친 교집합으로 $R = \bigcap_m R_m$ 이 성립한다.
-- 유일분해정역(unique factorization domain, UFD)의 국소화는 UFD다.
+- 유일분해정역(unique factorization domain, UFD)의 국소화는 UFD 다.
 - 국소화는 몫과 교환한다. 즉 $S^{-1}(R/I) \cong (S^{-1}R)/(S^{-1}I)$ 이며, 여기서 왼쪽의 곱닫힌 집합은 $S$ 의 상이다([몫환](ideals-quotient-rings.md)).
 
 # 활용

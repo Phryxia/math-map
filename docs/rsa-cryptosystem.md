@@ -75,9 +75,9 @@ $$
 
 같은 논증이 $q$ 를 법으로 해도 성립한다. 따라서 $m^{ed} - m$ 은 $p$ 로도 $q$ 로도 나누어떨어지고, $p \ne q$ 이므로 [중국인의 나머지 정리](chinese-remainder-theorem.md)(또는 유일분해)에 의해 $n = pq$ 로 나누어떨어진다. 즉 $m^{ed} \equiv m \pmod{n}$ 이다. ∎
 
-Euler 정리만 쓰면 $\gcd(m,n)=1$ 인 경우만 처리되지만, 위처럼 소수별로 나눈 뒤 CRT(Chinese remainder theorem)로 합치면 $m$ 이 $p$ 나 $q$ 의 배수인 예외적인 경우까지 포함된다. 이 "소수별로 확인하고 CRT로 합친다"는 패턴은 RSA 분석 전반에서 반복된다.
+Euler 정리만 쓰면 $\gcd(m,n)=1$ 인 경우만 처리되지만, 위처럼 소수별로 나눈 뒤 CRT(Chinese remainder theorem)로 합치면 $m$ 이 $p$ 나 $q$ 의 배수인 예외적인 경우까지 포함된다. 이 "소수별로 확인하고 CRT 로 합친다"는 패턴은 RSA 분석 전반에서 반복된다.
 
-## CRT를 이용한 복호화 가속
+## CRT 를 이용한 복호화 가속
 
 개인키 보유자는 $p$ , $q$ 를 알므로 다음 값들을 미리 계산해 둘 수 있다.
 
@@ -115,7 +115,7 @@ RSA 의 안전성은 여러 가정의 사슬 위에 있다.
 
 교과서 RSA(패딩 없는 순수 거듭제곱)는 그 자체로 안전하지 않다. 결정론적이므로 같은 평문이 같은 암호문을 주고, 곱셈 준동형성 $E(m_1)E(m_2)=E(m_1m_2)$ 때문에 변조가 가능하다.
 
-- **작은 $e$ 와 패딩 부재.** $e=3$ 이고 $m^3\lt n$ 이면 $c$ 의 정수 세제곱근이 곧 $m$ 이다. 같은 $m$ 을 서로 다른 세 개의 모듈러스로 보낸 경우에도 CRT로 $m^3\bmod n_1n_2n_3$ 를 복원해 세제곱근을 취할 수 있다(Håstad 방송 공격).
+- **작은 $e$ 와 패딩 부재.** $e=3$ 이고 $m^3\lt n$ 이면 $c$ 의 정수 세제곱근이 곧 $m$ 이다. 같은 $m$ 을 서로 다른 세 개의 모듈러스로 보낸 경우에도 CRT 로 $m^3\bmod n_1n_2n_3$ 를 복원해 세제곱근을 취할 수 있다(Håstad 방송 공격).
 - **공통 모듈러스 공격.** 같은 $n$ 을 공유하며 서로소인 $e_1$ , $e_2$ 를 쓰는 두 수신자에게 같은 $m$ 이 전송되면, $ae_1+be_2=1$ 인 Bézout 계수로
 
 $$
@@ -131,9 +131,9 @@ $$
 
 ## 구조적 관찰
 
-- $(\mathbb{Z}/n\mathbb{Z})^\ast$ 는 CRT에 의해 $(\mathbb{Z}/p\mathbb{Z})^\ast \times (\mathbb{Z}/q\mathbb{Z})^\ast$ 와 군 동형이다. 각 성분이 순환군이므로 전체 군의 지수(exponent)는 $\lambda(n) = \mathrm{lcm}(p-1, q-1)$ 이며, $ed \equiv 1 \pmod{\lambda(n)}$ 만으로도 정당성 증명이 통과한다.
+- $(\mathbb{Z}/n\mathbb{Z})^\ast$ 는 CRT 에 의해 $(\mathbb{Z}/p\mathbb{Z})^\ast \times (\mathbb{Z}/q\mathbb{Z})^\ast$ 와 군 동형이다. 각 성분이 순환군이므로 전체 군의 지수(exponent)는 $\lambda(n) = \mathrm{lcm}(p-1, q-1)$ 이며, $ed \equiv 1 \pmod{\lambda(n)}$ 만으로도 정당성 증명이 통과한다.
 - 제곱근이 넷이라는 사실이 여러 공격의 근원이다. $x^2 \equiv y^2 \pmod{n}$ 이고 $x \not\equiv \pm y$ 이면 $\gcd(x-y, n)$ 이 진약수다. Fermat 소정리 기반의 소수판정(Miller–Rabin)과 인수분해 알고리즘이 모두 이 성질을 쓴다.
-- $n$ 이 [환](rings.md) $\mathbb{Z}/n\mathbb{Z}$ 을 정의하고 CRT는 환 동형 $\mathbb{Z}/n\mathbb{Z} \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z}$ 를 준다([몫환](ideals-quotient-rings.md)). 두 성분은 [유한체](finite-fields.md)다.
+- $n$ 이 [환](rings.md) $\mathbb{Z}/n\mathbb{Z}$ 을 정의하고 CRT 는 환 동형 $\mathbb{Z}/n\mathbb{Z} \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z}$ 를 준다([몫환](ideals-quotient-rings.md)). 두 성분은 [유한체](finite-fields.md)다.
 
 # 활용
 
@@ -141,9 +141,9 @@ $$
 
 - **소수 생성.** 키 생성은 큰 소수를 뽑는 절차에 의존한다. 무작위 홀수를 뽑아 Miller–Rabin 확률적 소수판정을 통과시키는 방식이 표준이며, [소수 정리](prime-number-theorem.md)가 필요한 시도 횟수(대략 $\ln(2^b)/2$ 회)를 알려 준다.
 - **수론 알고리즘.** 확장 [유클리드 알고리즘](euclidean-algorithm.md), 반복 제곱법, Montgomery 곱셈이 구현의 기본 요소다.
-- **계산 이론.** RSA 의 존재 자체가 일방향함수의 존재를 가정한다. 일방향함수가 존재하면 $\mathrm P\ne\mathrm{NP}$ 이므로, RSA 의 안전성은 [P 대 NP 문제](p-np.md)보다 강한 가정이다. 반대로 $\mathrm P\ne\mathrm{NP}$ 라 해도 RSA가 안전하다는 보장은 없다.
+- **계산 이론.** RSA 의 존재 자체가 일방향함수의 존재를 가정한다. 일방향함수가 존재하면 $\mathrm P\ne\mathrm{NP}$ 이므로, RSA 의 안전성은 [P 대 NP 문제](p-np.md)보다 강한 가정이다. 반대로 $\mathrm P\ne\mathrm{NP}$ 라 해도 RSA 가 안전하다는 보장은 없다.
 - **후속 암호계.** [이산로그](discrete-logarithm.md) 기반(Diffie–Hellman, [타원곡선](elliptic-curves.md))과 [격자](lattices.md) 기반 방식은 같은 공개키 틀에 다른 난제를 끼운 것이다. 양자 내성 표준화는 격자·부호·해시 기반으로 이동 중이다.
-- **프로토콜 위치.** 실제 TLS(transport layer security)에서 RSA는 대칭키 교환과 인증서 서명에 쓰이고, 대량 데이터는 대칭 암호가 처리한다. 공개키 연산이 느리기 때문이다.
+- **프로토콜 위치.** 실제 TLS(transport layer security)에서 RSA 는 대칭키 교환과 인증서 서명에 쓰이고, 대량 데이터는 대칭 암호가 처리한다. 공개키 연산이 느리기 때문이다.
 
 [^1]: R. L. Rivest, A. Shamir, L. Adleman, A Method for Obtaining Digital Signatures and Public-Key Cryptosystems, Communications of the ACM 21(2), 1978, https://people.csail.mit.edu/rivest/Rsapaper.pdf
 [^2]: D. Boneh, Twenty Years of Attacks on the RSA Cryptosystem, Notices of the AMS 46(2), 1999, https://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf

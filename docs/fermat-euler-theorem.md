@@ -110,7 +110,7 @@ Korselt 판정법에 의해 $n$ 이 Carmichael 수인 것은 $n$ 이 square-free
 
 # 활용
 
-## RSA의 정확성
+## RSA 의 정확성
 
 법 $N=pq$ , 공개 지수 $e$ , 비밀 지수 $d$ 가 다음을 만족한다고 하자.
 

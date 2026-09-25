@@ -76,7 +76,7 @@ $\mathcal O$ 는 $\Pi^1_1$ 완전이다.[^1] 셋째 조항이 $\varphi_e$ 의 �
 - **효과적 Borel 계층.** Baire 공간의 Borel 집합에 계산가능한 코드를 붙이면 코드의 순위가 초산술적 계층의 층과 맞는다. 해석적 계층의 활용 절이 드는 Suslin 정리가 이 대응의 상대화된 판본이다.
 - **초산술 환원가능성.** $A$ 가 $B$ 에 상대화한 초산술적 집합일 때 $A\le_h B$ 로 쓴다. $\Pi^1_1$ 집합의 구조를 이 환원으로 재고, $\mathcal O$ 가 그 안에서 완전 원소의 자리에 놓인다.
 
-[^1]: G. E. Sacks, *Higher Recursion Theory* (1990), II장. Spector 유일성 정리는 II.4, Kleene 정리와 $\Sigma^1_1$ 경계 정리는 II.2 와 II.5, $\mathcal O$ 의 $\Pi^1_1$ 완전성은 II.7. 역수학 쪽 대응은 S. G. Simpson, *Subsystems of Second Order Arithmetic*, 2판 (2009), VIII.3.
+[^1]: G. E. Sacks, *Higher Recursion Theory* (1990), II 장. Spector 유일성 정리는 II.4, Kleene 정리와 $\Sigma^1_1$ 경계 정리는 II.2 와 II.5, $\mathcal O$ 의 $\Pi^1_1$ 완전성은 II.7. 역수학 쪽 대응은 S. G. Simpson, *Subsystems of Second Order Arithmetic*, 2판 (2009), VIII.3.
 
 # 연관 문서
 
