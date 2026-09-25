@@ -143,7 +143,7 @@ $$
 ### 기초 프로그램
 
 - [ZFC 공리계](zfc-axioms.md)
-- [논리주의와 Frege 프로그램](logicism.md)
+- [논리주의](logicism.md)
 - [형식주의와 Hilbert 프로그램](formalism-hilbert-program.md)
 
 #logic #set_theory #foundations

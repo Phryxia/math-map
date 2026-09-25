@@ -131,7 +131,7 @@ s-코보디즘 정리 자체는 분류를 주지 않고, 호모토피 정보와 
 
 ## 선수지식
 
-- [Reidemeister 비틀림과 렌즈 공간](reidemeister-torsion.md)
+- [Reidemeister 비틀림](reidemeister-torsion.md)
 - [다양체](manifolds.md)
 
 ## 더 알아보기

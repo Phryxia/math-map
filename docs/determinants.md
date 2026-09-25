@@ -125,6 +125,6 @@ Kirchhoff의 matrix-tree 정리는 연결 [그래프](graphs.md)의 신장트리
 - [고윳값과 고유벡터](eigenvalues.md)
 - [격자](lattices.md)
 - [Fredholm 행렬식](fredholm-determinant.md)
-- [Reidemeister 비틀림과 렌즈 공간](reidemeister-torsion.md)
+- [Reidemeister 비틀림](reidemeister-torsion.md)
 
 #linear_algebra #combinatorics #graph_theory

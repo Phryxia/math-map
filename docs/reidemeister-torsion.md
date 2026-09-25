@@ -1,4 +1,4 @@
-# Reidemeister 비틀림과 렌즈 공간
+# Reidemeister 비틀림
 
 # 개요
 
