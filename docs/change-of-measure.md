@@ -20,7 +20,7 @@ $Q$ 아래에서 확률이 $10^{-6}$ 인 사건 $A$ 의 확률을 몬테카를�
 
 ## 절대연속과 밀도
 
-측도공간 $(X,\mathcal F)$ 위의 두 측도 $Q$ , $P$ 에 대해, $P(A)=0$ 인 모든 가측집합 $A$ 가 $Q(A)=0$ 을 만족할 때 $Q$ 는 $P$ 에 **절대연속**이라 하고 $Q\ll P$ 로 쓴다. $P$ 가 sigma-유한이면 Radon–Nikodym 정리에 의해 거의 어디서나 유일한 비음 [가측함수](measurable-functions.md) $L$ 이 존재하여
+측도공간 $(X,\mathcal F)$ 위의 두 측도 $Q$ , $P$ 에 대해, $P(A)=0$ 인 모든 가측집합 $A$ 가 $Q(A)=0$ 을 만족할 때 $Q$ 는 $P$ 에 **절대연속**이라 하고 $Q\ll P$ 로 쓴다. $P$ 가 $\sigma$ 유한이면 Radon–Nikodym 정리에 의해 거의 어디서나 유일한 비음 [가측함수](measurable-functions.md) $L$ 이 존재하여
 
 $$
 Q(A) = \int_A L \thinspace dP \qquad \text{for all } A \in \mathcal{F}, \qquad L = \frac{dQ}{dP} .
@@ -40,7 +40,7 @@ $$
 \mathbb{E}\_Q[f] = \int f \thinspace dQ = \int f \thinspace \frac{dQ}{dP} \thinspace dP = \mathbb{E}\_P\Big[ f \thinspace \frac{dQ}{dP} \Big] .
 $$
 
-증명은 표시함수에 대해 절대연속 정의를 그대로 쓰고, 단순함수로 선형 확장한 뒤 [단조 수렴 정리](monotone-convergence.md)로 일반 가측함수까지 올리는 표준 3단계다. 조건부 버전(Bayes 공식)은 부분 sigma-대수 $G$ 에 대해
+증명은 표시함수에 대해 절대연속 정의를 그대로 쓰고, 단순함수로 선형 확장한 뒤 [단조 수렴 정리](monotone-convergence.md)로 일반 가측함수까지 올리는 표준 3단계다. 조건부 버전(Bayes 공식)은 부분 $\sigma$ 대수 $G$ 에 대해
 
 $$
 \mathbb{E}\_Q[f \mid \mathcal{G}] = \frac{\mathbb{E}\_P[ f L \mid \mathcal{G} ]}{\mathbb{E}\_P[ L \mid \mathcal{G} ]}

@@ -18,7 +18,7 @@ $[0,1]$ 에서 무작위로 점 $U$ 를 뽑으면 $P(U=u)=0$ 이라 값마다 �
 
 # 정의
 
-확률공간을 $(\Omega,\mathcal F,P)$ 라 하자. 여기서 $\mathcal F$ 는 $\Omega$ 위의 시그마 대수이고 $P$ 는 $P(\Omega)=1$ 인 측도다. 실직선 $\mathbb R$ 에는 Borel 시그마 대수 $\mathcal B$ 를 준다.
+확률공간을 $(\Omega,\mathcal F,P)$ 라 하자. 여기서 $\mathcal F$ 는 $\Omega$ 위의 $\sigma$ 대수이고 $P$ 는 $P(\Omega)=1$ 인 측도다. 실직선 $\mathbb R$ 에는 Borel $\sigma$ 대수 $\mathcal B$ 를 준다.
 
 확률변수란 가측함수 $X:\Omega\to\mathbb R$ , 즉 모든 Borel 집합 $B$ 에 대해 $X$ 의 역상이 $\mathcal F$ 에 속하는 함수다.
 
@@ -71,7 +71,7 @@ $$
 
 ## 독립
 
-확률변수들 $X_1,\dots,X_n$ 이 독립이라는 것은 생성하는 시그마 대수들이 독립이라는 뜻이며, 누적분포함수의 곱 형태로 쓸 수 있다.
+확률변수들 $X_1,\dots,X_n$ 이 독립이라는 것은 생성하는 $\sigma$ 대수들이 독립이라는 뜻이며, 누적분포함수의 곱 형태로 쓸 수 있다.
 
 $$
 P(X_1\le t_1,\dots,X_n\le t_n)=\prod_{i=1}^n P(X_i\le t_i)\qquad(\forall t_1,\dots,t_n\in\mathbb R)

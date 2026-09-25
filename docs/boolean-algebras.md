@@ -118,7 +118,7 @@ $$
 
 ## 집합 연산과 확률
 
-멱집합 대수는 집합론의 기본 계산 도구다. 사건들의 족이 합집합·여집합에 닫혀 있다는 요구가 [측도](measure.md)에서의 대수(algebra of sets) 개념이고, 여기에 가산 연산을 요구하면 sigma-대수가 된다. 측도를 영집합으로 나눈 몫인 measure algebra 는 원자가 없는 완비 Boolean algebra 의 대표적 예이며, [유한 확률 공간](probability.md)에서는 원자가 표본점이 된다. [포함배제 원리](inclusion-exclusion.md)도 이 대수 안의 항등식으로 읽을 수 있다.
+멱집합 대수는 집합론의 기본 계산 도구다. 사건들의 족이 합집합·여집합에 닫혀 있다는 요구가 [측도](measure.md)에서의 대수(algebra of sets) 개념이고, 여기에 가산 연산을 요구하면 $\sigma$ 대수가 된다. 측도를 영집합으로 나눈 몫인 measure algebra 는 원자가 없는 완비 Boolean algebra 의 대표적 예이며, [유한 확률 공간](probability.md)에서는 원자가 표본점이 된다. [포함배제 원리](inclusion-exclusion.md)도 이 대수 안의 항등식으로 읽을 수 있다.
 
 ## 논리회로와 최적화
 

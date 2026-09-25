@@ -106,7 +106,7 @@ $$
 - **조건부 기댓값족**: 적분가능한 $Z$ 에 대해 부분 $\sigma$ 대수 전체를 훑는 족
 
 $$
-\lbrace \mathbb{E}[Z \mid \mathcal{G}] : \mathcal{G} \subseteq \mathcal{F} \ \text{sub-sigma-algebra} \rbrace
+\lbrace \mathbb{E}[Z \mid \mathcal{G}] : \mathcal{G} \subseteq \mathcal{F}\thinspace\text{ 인 부분 }\sigma\text{ 대수} \rbrace
 $$
 
 는 UI 다. Jensen 부등식으로 절단 기댓값을 $Z$ 의 절단 기댓값으로 눌러 얻으며, 조건부 기댓값이 정의하는 martingale 이론의 기본 사실이다.
