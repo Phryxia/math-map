@@ -1,24 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-25T09:02:11.685Z",
-  "nextSeq": 1167,
+  "savedAt": "2026-09-25T12:58:35.983Z",
+  "nextSeq": 1183,
   "items": [
-    {
-      "id": "2b411723",
-      "title": "더 알아보기 묶음 규칙 회귀 점검 (다음 차수)",
-      "priority": 12,
-      "note": "2026-09-25 회차에 516 문서를 돌려 1 건을 찾아 고쳤다. 검사기는 스크래치패드 grouping.mjs 이고 두 축을 본다: 자식 6 개 이상인데 묶음이 없는 문서, 자식 5 개 이하인데 묶음을 쓴 문서. 고친 것은 metric-spaces 다. 자식 5 개에 '### 거리에서 나오는 개념'(continuity, completeness, borel-hierarchy)과 '### 노름과 내적'(convexity, inner-product-spaces) 두 묶음이 있어 5절의 '자식이 5 개 이하면 묶지 않고 정렬만 한다' 에 어긋났다. 묶음 헤딩만 지우고 순서는 그대로 두었다(continuity 가 borel-hierarchy 의 조상이라 이미 선수관계 순이고 order-check 도 통과한다). 앞 차수가 이 문서를 잡지 못한 것은 그 회차 검사기가 6 개 이상 축만 보았기 때문이다. 항목이 1 개뿐인 묶음 축은 앞 차수가 고치지 않기로 판정했으므로 다시 돌리지 말 것(computability '### 복잡도', elliptic-curves '### 암호에서의 쓰임', foundations-overview '### 공리계'). 이번 회차에 forcing 의 자식이 2 에서 3 으로, strong-measure-zero 가 0 에서 1 로 늘었고 둘 다 6 개 미달이라 묶지 않았다. 다음에 돌릴 시점은 그대로다: 새 문서를 여러 개 쓴 회차 뒤, 그리고 한 문서에 자식을 여럿 더한 회차 뒤",
-      "createdAt": "2026-09-25T00:52:25.722Z",
-      "seq": 1133
-    },
-    {
-      "id": "573cb2fd",
-      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (16차)",
-      "priority": 12,
-      "note": "2026-09-25 회차 15차. 검사기(스크래치패드 bare-math.mjs)를 다시 짜며 앞 note 가 몰랐던 오검출 원인 둘을 잡아냈다. 이것이 이 차수의 수확이다. (1) 여러 줄 $$ 블록을 상태로 추적해야 한다. 앞 차수 검사기는 한 줄 $$..$$ 만 지워서 여러 줄 블록 안의 식이 전부 맨 텍스트로 보고되었고 출력이 604KB 였다. 4절 awk 처럼 /^\\s*>?\\s*\\$\\$\\s*$/ 로 토글할 것. (2) 각주 참조 [^1] 의 ^1 이 윗첨자로 읽힌다. 각주 정의 줄과 참조를 모두 지운 뒤 검사할 것. 두 보정을 넣으니 516 문서에 1 건이고 그것도 오검출이었다: rsa-cryptosystem 9 의 '[^2]([P 대 NP 문제](p-np.md) 참조)' 에서 링크 주소 제거 정규식이 각주의 '](' 부터 먹어 '[^2' 를 남겼다. 다만 그 자리는 고칠 값이 있어 고쳤다. '([P 대 NP 문제](p-np.md) 참조)' 는 4절이 금지한 문서 자신을 가리키는 메타 서술이고 내용이 없으므로 괄호째 지웠다. 같은 문서 144 줄이 일방향함수와 P != NP 의 관계를 실제로 설명하며 같은 링크를 걸고 있어 본문 최초 1 회가 그리로 넘어간다. 덧붙여 같은 문서의 'RSA의' 3 곳을 'RSA 의' 로 맞췄다(9 줄은 이미 'RSA 의' 였다). 4절 대괄호 검사 grep -nE '\\]\\(' | grep -v ... 가 이 줄을 놓치는 이유도 기록한다: 줄 단위 필터라 한 줄에 정상 링크와 위반이 함께 있으면 정상 쪽이 줄 전체를 통과시킨다. 16차에 볼 것: 이 검사기를 그대로 써서 0 건을 확인하되 수식이 많이 들어온 회차 뒤에만 돌린다. 12차 note 의 p-np 판정('지금대로 둔다')은 그대로 유효하다",
-      "createdAt": "2026-09-25T00:54:44.396Z",
-      "seq": 1134
-    },
     {
       "id": "856765e0",
       "title": "개관 갈래 화살표 회귀 점검 (다음 차수)",
@@ -220,6 +204,22 @@
       "seq": 1166
     },
     {
+      "id": "55d6e3ff",
+      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (17차)",
+      "priority": 12,
+      "note": "2026-09-25 둘째 회차 16차. 15차 note 의 두 보정(여러 줄 $$ 블록 상태 추적, 각주 참조를 링크보다 먼저 제거)을 그대로 넣고 검사기(스크래치패드 bare-math.mjs)를 전수로 돌렸다. 15차가 몰랐던 오검출 원인 둘을 더 잡았고 이것이 이 차수의 수확이다. (1) 태그 줄이 전부 걸린다. '#number_theory' 의 언더스코어 때문이고 522 문서에서 522 건이 나온다. /^\\s*(#[a-z0-9_]+\\s*)+$/ 인 줄을 건너뛸 것. (2) 화살표 유니코드가 전부 걸린다. 21 개관의 갈래 줄이 'A -> B' 를 유니코드 화살표로 쓰는 것이 저장소 관례이고 증명 산문에서도 '(1) -> (2)' 로 쓴다. 검사 기호 집합에서 화살표와 합성 기호를 뺄 것. 나머지 기호(<=, >=, !=, 원소, 포함, 합집합, 교집합, 텐서, 밑줄, 캐럿, 중괄호, 백슬래시 명령)는 유지한다. 두 보정을 넣으니 522 문서에 1 건이고 실제 위반이라 고쳤다: galois-connections 160 의 '{박쥐, 고래} 는 닫혀 있고 {참새, 고래} 는' 이 한국어 낱말의 집합을 맨 중괄호로 썼다. pushforward-measure 79 가 같은 꼴을 '$\\lbrace\\text{앞},\\text{뒤}\\rbrace$' 로 쓰고 있어 그 관례에 맞췄다. 고친 뒤 검사기는 0 건이다. 17차에 볼 것: 이 검사기를 그대로 써서 0 건을 확인하되 수식이 많이 들어온 회차 뒤에만 돌린다. 12차 note 의 p-np 판정과 15차 note 의 rsa-cryptosystem 판정은 그대로 유효하다",
+      "createdAt": "2026-09-25T12:45:18.099Z",
+      "seq": 1172
+    },
+    {
+      "id": "3e5826eb",
+      "title": "더 알아보기 묶음 규칙 회귀 점검 (다음 차수)",
+      "priority": 12,
+      "note": "2026-09-25 둘째 회차에 두 번 돌렸다(회차 시작과 새 문서 셋을 쓴 뒤). 두 주축 모두 0 건이다: 자식 6 개 이상인데 묶음 없음 0 건, 자식 5 개 이하인데 묶음 있음 0 건. 이번 회차에 자식이 는 문서는 homology(9->10, 묶음 있음), homotopy-groups(2->3), axiom-of-choice(0->2), group-actions(6->7, 묶음 있음), measure(7->9, 묶음 있음)이고 전부 규칙에 맞는다. 셋째 축(항목 1 개짜리 묶음, THIN) 3 건은 전부 앞 차수가 유지하기로 판정한 것이다: computability(4,3,1), elliptic-curves(3,1,3,1), foundations-overview(5,1). elliptic-curves 는 1 짜리 묶음이 둘이므로 이 축을 다시 열 때 그 둘을 각각 판정할 것. 검사기는 스크래치패드 grouping.mjs 다. 다음에 돌릴 시점은 그대로다: 새 문서를 여러 개 쓴 회차 뒤, 그리고 한 문서에 자식을 여럿 더한 회차 뒤",
+      "createdAt": "2026-09-25T12:47:57.872Z",
+      "seq": 1173
+    },
+    {
       "id": "d2720772",
       "title": "두문자어 첫 등장 풀이 전수 점검 (21차)",
       "priority": 11,
@@ -332,14 +332,6 @@
       "seq": 806
     },
     {
-      "id": "8638104b",
-      "title": "분야 개관 누락 전수 점검 (다음 차수)",
-      "priority": 11,
-      "note": "2026-09-21 회차에 4.5절 요구사항을 전수로 확인했고 누락 0 건이다. 검사법: 분야 태그를 개관 id 로 옮기는 표를 bash 연상 배열로 만들고, 개관이 아닌 문서마다 태그 줄의 첫 태그(주 분야)를 읽어 그 분야 개관이 해당 문서를 링크하는지 grep 으로 본다. 결과는 두 가지다. (1) 개관 링크 누락 0 건. 이번 회차에 새로 쓴 open-mapping-theorem, turing-degrees, ax-grothendieck 셋도 각각 함수해석·계산·기초론 개관 갈래에 넣었다. (2) 개관이 따로 없는 주 분야 태그 셋은 전부 4.5절의 10개 기준에 못 미친다: complexity 5(approximation-algorithms, np-completeness, p-np, pcp-theorem, unique-games), philosophy_of_math 4(formalism-hilbert-program, logicism, mathematical-platonism, mathematical-structuralism), data_structures 2(link-cut-trees, union-find). 이 11 개 문서는 모두 다른 개관(computation-overview, foundations-overview, graph-theory-overview, optimization-overview)의 갈래에 이미 들어가 있으므로 8절이 말하는 '서로 이웃이 아닌 채 놓인' 상태가 아니다. 주분야 문서가 10개 이상인데 전용 개관이 없는 태그 넷(group_theory 11, ring_theory 12, set_theory 12, logic 14)도 확인했고, 각각 abstract-algebra-overview 와 foundations-overview 가 빠짐없이 거두고 있어 새 개관이 필요하지 않다. 다음 차수에 볼 것: complexity 가 10개를 넘으면 computation-overview 에서 떼어 낼지 판정한다. 지금 computation-overview 의 갈래는 '계산가능성과 계산 모형', '복잡도', '알고리즘' 등으로 나뉘어 있어 복잡도 갈래가 커지면 분할 신호가 된다. 검사 자체는 새 문서를 여러 개 쓴 회차 뒤에 다시 돌릴 것",
-      "createdAt": "2026-09-21T04:58:00.853Z",
-      "seq": 807
-    },
-    {
       "id": "d024feed",
       "title": "axiom-of-choice 의 후속 간선",
       "priority": 11,
@@ -370,6 +362,30 @@
       "note": "graph_theory. 같은 회차에 tutte-polynomial 과 graph-minors 를 둘 다 썼는데 두 문서가 서로를 모른다. 삭제-축약이 마이너 연산 둘과 같다는 점, 마이너 닫힌 성질의 세기 함수가 Tutte 다항식의 값매김으로 나오는 경우를 정리해 두 문서 사이에 간선을 그을지 판정한다. 방향은 graph-minors 가 부모일 수도 있고 두 문서 모두 planar-graphs 아래 형제로 남을 수도 있으니 check-cycle 로 먼저 본다",
       "createdAt": "2026-09-21T13:01:22.721Z",
       "seq": 845
+    },
+    {
+      "id": "ecb2dfd8",
+      "title": "cw-complexes 의 후속 간선 판정",
+      "priority": 11,
+      "note": "2026-09-25 둘째 회차에 cw-complexes 를 새로 썼고 지금은 리프다. 부모는 homology 와 homotopy-groups 둘이다. 자식 후보는 본문 링크를 건 다섯 문서다: eilenberg-maclane-spaces(정의가 연결 CW 복합체를 요구하고 표현가능성 정리도 X 가 CW 일 때만 성립한다), postnikov-tower(연결 CW 복합체마다 탑이 있다는 것이 문서의 존재 정리다), obstruction-theory(골격 X^(n) 을 따라 세포 하나씩 사상을 늘리는 것이 방법 자체다), spectral-sequences(Serre 판 증명이 밑공간의 CW 구조로 여과한다. 도구로 한 번 쓰는 쪽에 가깝다), reidemeister-torsion(세포 사슬복합체가 정의의 입력이다). 5절 기준으로 재야 한다: 자식이 CW 복합체 주제의 특수 사례·확장·응용·부분인가, 아니면 그저 도구로 한 번 쓰는가. 셋(eilenberg-maclane-spaces, postnikov-tower, obstruction-theory)은 CW 구조를 가정 자체로 삼으므로 응용 쪽이고, 둘(spectral-sequences, reidemeister-torsion)은 증명이나 정의에서 한 번 쓰는 쪽으로 보인다. 다만 이 셋은 이미 부모가 있으므로 5절의 '부모 4 개 이상이면 조상인 것을 뺀다' 를 함께 볼 것. 판정 전에 node dev/graph.mjs node 로 각 문서의 현재 부모 수를 셀 것",
+      "createdAt": "2026-09-25T12:41:27.717Z",
+      "seq": 1168
+    },
+    {
+      "id": "6fc1515a",
+      "title": "분야 개관 누락 전수 점검 (다음 차수)",
+      "priority": 11,
+      "note": "2026-09-25 둘째 회차에 새 문서 셋(cw-complexes, banach-tarski, vitali-set)을 쓴 뒤 전수로 돌려 누락 0 건이다. 셋 다 주 분야 개관의 갈래에 넣었다: cw-complexes -> topology-overview '호모토피와 호몰로지', banach-tarski -> foundations-overview '집합론의 기초', vitali-set -> measure-theory-overview '측도와 가측성'. 검사법은 앞 note 그대로다(분야 태그를 개관 id 로 옮기는 bash 연상 배열을 만들고 개관이 아닌 문서마다 첫 태그를 읽어 그 개관이 링크하는지 grep). 개관이 따로 없는 주 분야 태그 셋은 수가 그대로다: complexity 5(approximation-algorithms, np-completeness, p-np, pcp-theorem, unique-games), philosophy_of_math 4, data_structures 2. 셋 다 4.5절의 10 개 기준에 못 미치고 다른 개관이 이미 거두고 있다. 앞 note 가 남긴 감시 항목(complexity 가 10 개를 넘으면 computation-overview 에서 뗄지 판정)은 아직 5 개이므로 그대로 둔다. 새 문서를 여러 개 쓴 회차 뒤에 다시 돌릴 것",
+      "createdAt": "2026-09-25T12:47:58.122Z",
+      "seq": 1174
+    },
+    {
+      "id": "6e1608d5",
+      "title": "'A와 B' 제목 후보 훑기 (14차)",
+      "priority": 11,
+      "note": "2026-09-25 둘째 회차 13차. 11차 note 의 후보 다섯을 전부 좁혔고(optimal-transport -> '최적 수송', semidefinite-programming -> '반정부호 계획법', schur-polynomials -> 'Schur 다항식', schubert-calculus -> 'Schubert 계산', stationary-phase -> '정상위상법'), 13차에서 새로 뽑은 후보 다섯 가운데 셋을 더 좁혔다. (a) littlewood-richardson 'Littlewood-Richardson 규칙과 hive 모형' -> 'Littlewood-Richardson 규칙'. 절 구조상 hive 와 honeycomb 과 Horn 문제가 본문을 채우지만 hive 는 그 규칙을 계산하는 모형이므로 하위 주제다. 참조 1 곳(schur-polynomials)을 맞췄고, 같은 작업에서 195 줄에 grassmannian 본문 링크를 걸었다. (b) mathieu-groups 'Mathieu 군과 Golay 부호' -> 'Mathieu 군'. Golay 부호 문서가 따로 없고 이 문서에서 Mathieu 군이 Golay 부호의 자기동형군으로 정의되므로 Golay 부호는 정의를 위한 구성이다. 참조 5 곳을 맞췄고, 곁가지로 umbral-moonshine 44 의 '[Mathieu 군 문서](...)에서' 라는 메타 표기를 사실 문장으로 바꾸면서 같은 문서 본문의 두 번째 링크를 풀었다(4절 최초 1 회). Golay 부호를 독립 문서로 뗄지는 별도 큐 항목으로 남겼다. (c) mass-formula '질량 공식과 격자의 류' -> '질량 공식'. 정의 절이 '격자, 류, 스피너 류' 다음에 '질량' 과 'Smith-Minkowski-Siegel 질량 공식' 으로 가므로 격자의 류는 질량을 정의하기 위한 배경이다. 참조 3 곳(bernoulli-numbers, niemeier-lattices, siegel-weil)을 맞췄다. 14차에 볼 것: 후보 둘이 남았다. euler-maclaurin 'Euler-Maclaurin 공식과 점근급수' 는 13차에 보고 판정을 미뤘다. 점근급수 전용 문서가 저장소에 없고, 이 문서의 성질 절 절반('## 점근전개', '## 나머지항의 크기', '## 최적 절단과 초점근 정확도', '## 전개의 비유일성')이 점근급수 일반론이라 좁히면 그 절들이 제목 밖으로 나간다. 8절 분할(asymptotic-series 를 따로 세우고 euler-maclaurin 을 그 자식으로)을 함께 재야 하는 자리이므로 한 회차를 온전히 쓸 것. local-class-field-theory '국소 유체론과 Lubin-Tate 형식군' 은 아직 보지 않았다. 판정 기준은 그대로이고, 절 구조에서 본체와 배경을 가르는 방법이 13차에 잘 통했다",
+      "createdAt": "2026-09-25T12:58:13.319Z",
+      "seq": 1182
     },
     {
       "id": "9902eee3",
@@ -1404,6 +1420,30 @@
       "seq": 1157
     },
     {
+      "id": "a194376d",
+      "title": "Banach-Tarski 분해",
+      "priority": 10,
+      "note": "set_theory/measure_theory. 큐의 'axiom-of-choice 의 후속 간선' 항목이 우선순위 1 위로 꼽은 후보다. 선택공리의 귀결 가운데 5절의 '응용' 에 가장 정확히 맞는다. 선수지식은 axiom-of-choice 와 measure 이고 group-actions(자유군 F_2 의 작용)도 본문에서 쓴다. 부모가 3 개를 넘지 않게 고를 것. 내용의 골자는 F_2 의 역설적 분해를 SO(3) 의 부분군으로 옮기고 구면의 궤도마다 대표원을 선택공리로 뽑는 것이다. 이 문서가 생기면 axiom-of-choice 가 리프에서 벗어난다",
+      "createdAt": "2026-09-25T12:41:27.863Z",
+      "seq": 1169
+    },
+    {
+      "id": "f70953a1",
+      "title": "깃발다양체 문서 분리 판정",
+      "priority": 10,
+      "note": "linear_algebra/algebra. 2026-09-25 둘째 회차에 grassmannian 을 쓰며 드러났다. borel-weil-bott 의 제목이 'Borel-Weil-Bott 정리와 깃발다양체' 인데 깃발다양체는 정리가 사는 공간이지 정리 자체가 아니다. 11차 note 의 판정 기준('뒷말이 정리 이름이면 둔다')과 반대 방향이라 따로 판정해야 한다. 볼 것: borel-weil-bott 본문에서 깃발다양체의 정의와 성질이 차지하는 분량이 독립 문서가 될 만한지, 그렇다면 grassmannian 과 flag-variety 사이에 선수관계를 어느 방향으로 그을지(Grassmann 다양체는 극대 포물형 P 에 대한 GL_n/P 이고 완전 깃발다양체는 Borel B 에 대한 GL_n/B 이므로 둘은 형제이지 조상-후손이 아니다. 공통 부모로 grassmannian 을 두는 것이 맞는지 재야 한다). schubert-calculus 의 부모가 지금 셋(grassmannian, borel-weil-bott, schur-polynomials)이라 5절의 '4 개 이상이면 조상인 것을 뺀다' 에 가까워진 점도 함께 볼 것",
+      "createdAt": "2026-09-25T12:51:04.527Z",
+      "seq": 1176
+    },
+    {
+      "id": "38e128d8",
+      "title": "Golay 부호 문서 분리 판정",
+      "priority": 10,
+      "note": "combinatorics/information_theory. 2026-09-25 둘째 회차에 mathieu-groups 의 제목을 'Mathieu 군과 Golay 부호' 에서 'Mathieu 군' 으로 좁히며 남긴 판정거리다. 그 문서의 정의 절이 '## Golay 부호' 와 '## Mathieu 군' 둘로 나뉘고 Mathieu 군이 Golay 부호의 자기동형군으로 정의되므로, Golay 부호는 지금 Mathieu 군을 정의하기 위한 구성으로 들어가 있다. 8절 분할 기준으로 잴 것: 그 문서가 1000 줄을 넘지 않으므로 분량으로는 나눌 이유가 없고, Golay 부호가 독립 문서가 될 만한지는 완전 부호로서의 성질(무게 분포, 24 차원 이진 확장 Golay, Steiner 계 S(5,8,24) 와의 대응)이 Mathieu 군과 따로 설 수 있는지에 달렸다. 독립시킨다면 부모는 error-correcting-codes 이고 mathieu-groups 가 자식이 된다. 지금 mathieu-groups 를 가리키는 문서 가운데 error-correcting-codes 와 information-theory-overview 는 부호 쪽 관심으로 링크하고 있으므로 그 둘을 새 문서로 돌리게 된다. 나누지 않기로 한다면 이 항목을 지울 것",
+      "createdAt": "2026-09-25T12:57:31.484Z",
+      "seq": 1181
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -2026,6 +2066,14 @@
       "note": "ramanujan-graphs 에서 MSS 기법을 따로 뗀다. 실안정 다항식, 교대 족, 가중 평균의 근 통제, 이산 기하와 프레임 이론",
       "createdAt": "2026-09-15T09:05:05.075Z",
       "seq": 271
+    },
+    {
+      "id": "069a9e93",
+      "title": "grassmannian 과 littlewood-richardson 사이 간선 판정 결과",
+      "priority": 4,
+      "note": "2026-09-25 둘째 회차에 판정했다. 결론은 간선을 긋지 않는 것이다. littlewood-richardson 은 실제로 이 대응을 다룬다(활용 절 '## Schubert 셈법의 구조상수' 가 Gr(k,n) 의 코호몰로지 곱셈 구조상수가 LR 수임을 적고, 183 줄이 puzzle 규칙과 Schubert 계산의 관계를 적는다). 그러나 5절 기준으로 재면 둘은 서로의 특수 사례도 확장도 부분도 아니다. LR 규칙은 조합론의 계수 공식이고 Grassmann 다양체는 그 계수가 나타나는 자리 가운데 하나이므로 '도구로 한 번 쓰는' 관계다. 그래서 양쪽 본문 링크로 마무리했다: grassmannian 의 코호몰로지 절이 littlewood-richardson 을 걸고, littlewood-richardson 195 줄이 grassmannian 을 건다. 같은 회차에 littlewood-richardson 의 제목도 'Littlewood-Richardson 규칙과 hive 모형' 에서 'Littlewood-Richardson 규칙' 으로 좁혔다(hive 는 그 규칙을 계산하는 모형이므로 하위 주제다). 이 항목은 기록용이며 다시 꺼낼 필요가 없다",
+      "createdAt": "2026-09-25T12:56:44.314Z",
+      "seq": 1180
     },
     {
       "id": "c512345c",
