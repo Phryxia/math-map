@@ -1,4 +1,4 @@
-# Schubert 계산과 Grassmann 다양체
+# Schubert 계산
 
 # 개요
 

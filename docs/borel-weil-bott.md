@@ -180,7 +180,7 @@ $$
 
 ## 더 알아보기
 
-- [Schubert 계산과 Grassmann 다양체](schubert-calculus.md)
+- [Schubert 계산](schubert-calculus.md)
 - [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)
 - [Beilinson–Bernstein 국소화](beilinson-bernstein.md)
 
