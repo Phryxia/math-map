@@ -28,7 +28,7 @@ $$
 \mathrm{Sq}^k(x\cup y)=\sum_{i+j=k}\mathrm{Sq}^i x\cup\mathrm{Sq}^j y
 $$
 
-## 구성
+## 대각사상을 통한 구성
 
 $x\in H^n(X;\mathbb Z/2)$ 를 사상 $X\to K(\mathbb Z/2,n)$ 으로 보고, 대각사상 $X\to X\times X$ 가 유도하는 컵제곱을 $\mathbb Z/2$ 의 자리바꿈 작용까지 담아 올린다. 자리바꿈의 호모토피가 만드는 고차 사슬이 $i\lt n$ 인 연산을 준다.
 

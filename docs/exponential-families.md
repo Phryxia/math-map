@@ -181,7 +181,7 @@ $$
 
 모멘트 매칭 $\nabla A(\hat\eta)=\bar T$ 는 일부 족에서 닫힌 형태로 풀린다. Poisson 은 $A(\eta)=e^\eta$ 이므로 $\hat\eta=\log\bar x$ 이고, Bernoulli 는 $A(\eta)=\log(1+e^\eta)$ 이므로 $\hat\eta=\log\frac{\bar y}{1-\bar y}$ 다. 두 경우 모두 평균모수 $\mu=\nabla A(\hat\eta)$ 가 표본평균과 같다.
 
-## 응용
+## 적용 사례
 
 - **일반화선형모형**: 반응분포를 지수족으로 두고 자연모수를 선형예측자 $x^{\top}\beta$ 로 연결하면(정준연결함수) 로그가능도가 $\beta$ 에 대해 오목해지고 추정이 IRLS(iteratively reweighted least squares)가 된다. 정규분포를 넣으면 [선형회귀](linear-regression.md)이 되고, Bernoulli 를 넣으면 로지스틱 회귀, Poisson 을 넣으면 로그선형모형이 된다.
 - **그래프 모형과 변분추론**: 무향 그래프 모형은 퍼텐셜의 로그가 $T$ 인 지수족이고, 추론이 $A$ 의 변분표현을 통해 평균모수 다면체 위의 최적화가 된다. 평균장 근사와 belief propagation 이 이 틀에 속한다.[^1]

@@ -167,7 +167,7 @@ $$
 
 닫힌 형태가 없으면 정규화상수 $m(x)$ 의 적분이 문제가 된다. 실무의 표준 도구는 사후분포를 불변분포로 갖는 [Markov 연쇄](markov-chains.md)를 설계해 표본을 얻는 MCMC(Metropolis–Hastings, Gibbs, Hamiltonian Monte Carlo)다. 대안으로는 사후분포를 다루기 쉬운 분포족으로 근사하되 [KL divergence](kl-divergence.md)(Kullback–Leibler)를 최소화하는 변분추론, 그리고 MAP 주변의 이차근사인 Laplace 근사가 있다.
 
-## 응용
+## 적용 사례
 
 - **온라인 학습과 A/B 테스트**: 전환율에 Beta 사전분포를 두고 방문마다 갱신하면 언제 멈춰 보아도 해석이 일관된다. Thompson sampling 은 사후분포에서 뽑은 표본으로 팔을 고르는 bandit 알고리즘이다.
 - **계층모형**: 여러 집단의 모수에 공통 사전분포를 두면 표본이 적은 집단의 추정이 전체 평균 쪽으로 축소되어 분산이 줄어든다.
