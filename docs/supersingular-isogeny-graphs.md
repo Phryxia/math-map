@@ -178,6 +178,6 @@ $$
 
 ## 더 알아보기
 
-- [Deuring 대응과 사원수 알고리즘](deuring-correspondence.md)
+- [Deuring 대응](deuring-correspondence.md)
 
 #number_theory #cryptography #graph_theory #computation

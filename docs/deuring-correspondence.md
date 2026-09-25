@@ -1,4 +1,4 @@
-# Deuring 대응과 사원수 알고리즘
+# Deuring 대응
 
 # 개요
 

@@ -72,7 +72,7 @@ Noether 환 $R$ 의 모든 소 아이디얼 $\mathfrak p$ 에서 국소화 $R_\m
 - **Dedekind 정역.** 차원 $1$ 인 정칙 Noether 정역이 [Dedekind 정역](dedekind-domains.md)이다. 각 극대 아이디얼에서의 국소화가 이산부값환이므로 아이디얼이 소 아이디얼의 곱으로 분해된다.
 - **높이 $1$ 소 아이디얼의 주성.** 정칙환에서 여차원 $1$ 인 기약 닫힌집합이 함수 하나의 영점집합이다. 인자와 선다발을 다루는 계산이 이 성질 위에 놓인다.
 - **교차중복도.** 정칙 국소환 $R$ 과 유한생성 가군 $M,N$ 에 대해 $\mathrm{Tor}$ 의 길이를 교대합으로 더한 값이 두 부분다양체의 교차중복도다. 정칙성이 이 합을 유한하게 만든다.[^4]
-- **Iwasawa 대수.** $\Lambda=\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 은 차원 $2$ 인 정칙 국소환이고, 유한생성 가군의 구조 정리가 높이 $1$ 소 아이디얼마다의 조각으로 분해한다. [Iwasawa 주 추측](iwasawa-main-conjecture.md)의 정식화가 이 분해를 쓴다.
+- **Iwasawa 대수.** $\Lambda=\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 은 차원 $2$ 인 정칙 국소환이고, 유한생성 가군의 구조 정리가 높이 $1$ 소 아이디얼마다의 조각으로 분해한다. [Iwasawa 주추측](iwasawa-main-conjecture.md)의 정식화가 이 분해를 쓴다.
 
 [^1]: D. Eisenbud, *Commutative Algebra with a View Toward Algebraic Geometry* (1995), 19장.
 [^2]: J.-P. Serre, "Sur la dimension homologique des anneaux et des modules noethériens", *Proc. Int. Symp. Tokyo–Nikko* (1956). 교재 서술은 H. Matsumura, *Commutative Ring Theory* (1986), 19장.

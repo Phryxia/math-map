@@ -1,4 +1,4 @@
-# Iwasawa 주추측과 순환체 단수
+# Iwasawa 주추측
 
 # 개요
 

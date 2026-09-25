@@ -136,7 +136,7 @@ Vandiver 검증은 대규모 Bernoulli 수 계산의 표준 시험대다. $B_k \
 ## 선수지식
 
 - [Herbrand–Ribet 정리와 Eisenstein 합동](herbrand-ribet.md)
-- [Iwasawa 주추측과 순환체 단수](iwasawa-main-conjecture.md)
+- [Iwasawa 주추측](iwasawa-main-conjecture.md)
 
 ## 더 알아보기
 
