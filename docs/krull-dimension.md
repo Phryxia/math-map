@@ -98,7 +98,7 @@ $$
 \dim R\le\dim_\kappa\mathfrak m/\mathfrak m^2
 $$
 
-이다. 오른쪽이 $\mathfrak m$ 의 최소 생성원 개수이고 정의 계열이 될 수 있으므로 차원 정리가 부등식을 준다. 등호가 성립하면 $R$ 을 **정칙 국소환**이라 한다. [Nakayama 보조정리](nakayama-lemma.md)가 오른쪽 값을 생성원 개수로 읽는 자리다.
+이다. 오른쪽이 $\mathfrak m$ 의 최소 생성원 개수이고 정의 계열이 될 수 있으므로 차원 정리가 부등식을 준다. 등호가 성립하면 $R$ 을 [정칙 국소환](regular-local-rings.md)이라 한다. [Nakayama 보조정리](nakayama-lemma.md)가 오른쪽 값을 생성원 개수로 읽는 자리다.
 
 # 활용
 
@@ -120,6 +120,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [정칙 국소환](regular-local-rings.md)
 
 #ring_theory #algebra #topology

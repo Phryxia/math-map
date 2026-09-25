@@ -86,6 +86,6 @@ $R\subseteq S$ 가 환의 확대이고 $S$ 가 $R$ 가군으로 유한생성이�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [정칙 국소환](regular-local-rings.md)
 
 #ring_theory #algebra
