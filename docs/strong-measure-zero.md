@@ -48,7 +48,7 @@ $\varepsilon\_n=\varepsilon/2^n$ 을 주면 얻는 덮개의 길이 합이 $\var
 
 ## Borel 추측
 
-모든 강 측도 영집합이 가산이라는 명제를 **Borel 추측**이라 한다. 연속체 가설 아래에서는 거짓이다. [Luzin 집합](luzin-sierpinski-sets.md)이 비가산이면서 강 측도 영집합이기 때문이다. Laver 는 가산지지 반복 강제법으로 Borel 추측이 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)와 무모순임을 보였다.[^3]
+모든 강 측도 영집합이 가산이라는 명제가 [Borel 추측](borel-conjecture.md)이다. [Luzin 집합](luzin-sierpinski-sets.md)이 비가산이면서 강 측도 영집합이므로 연속체 가설 아래에서는 거짓이다. Laver 는 가산지지 반복 강제법으로 Borel 추측이 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)와 무모순임을 보였다.[^3]
 
 # 활용
 
@@ -70,6 +70,6 @@ $\varepsilon\_n=\varepsilon/2^n$ 을 주면 얻는 덮개의 길이 합이 $\var
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Borel 추측](borel-conjecture.md)
 
 #measure_theory #set_theory #logic
