@@ -36,7 +36,7 @@ $$
 
 $C$ 가 $p$ 에서 좋은 환원을 가지면 환원 사상 $C(\mathbb Q_p)\to C(\mathbb F_p)$ 의 올을 **잔차 원판**이라 한다. 각 원판은 국소 매개변수 $t$ 로 $\mathbb Z_p$ 와 동일시된다.
 
-원판 위에서 $\omega$ 를 $t$ 의 멱급수로 적고 항별로 적분한 것이 **Coleman 적분** $\int_{P_0}^{P}\omega$ 다. 원판마다 이 적분은 $t$ 의 $p$ 진 해석함수이고, 서로 다른 원판의 값은 Frobenius 작용과의 정합성으로 이어 붙인다.
+원판 위에서 $\omega$ 를 $t$ 의 멱급수로 적고 항별로 적분한 것이 [Coleman 적분](coleman-integration.md) $\int_{P_0}^{P}\omega$ 다. 원판마다 이 적분은 $t$ 의 $p$ 진 해석함수이고, 서로 다른 원판의 값은 Frobenius 작용과의 정합성으로 이어 붙인다.
 
 # 성질
 
@@ -82,6 +82,6 @@ $r\ge g$ 이면 $J(\mathbb Q)$ 의 닫음이 $J(\mathbb Q_p)$ 를 다 덮을 수
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Coleman 적분](coleman-integration.md)
 
 #number_theory #algebra #complex_analysis

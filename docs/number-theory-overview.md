@@ -107,6 +107,7 @@ graph TD
 - [Eisenstein 아이디얼과 Mazur 의 비틀림점 정리](eisenstein-ideal.md) → [Merel 의 일양 유계성 정리](merel-theorem.md)
 - [Sato–Tate 분포](sato-tate.md) → [Lang–Trotter 추측](lang-trotter.md): $a_p$ 의 통계
 - [Chabauty 방법](chabauty-method.md): Jacobi 다양체의 계수가 종수보다 작을 때 유리점을 $p$ 진 적분의 영점으로 세는 방법
+- [Coleman 적분](coleman-integration.md): 잔차 원판의 항별 적분을 Frobenius 작용으로 이어 붙인 $p$ 진 적분, 영점 개수의 상한
 
 ## Galois 표현과 p 진 Hodge 이론
 

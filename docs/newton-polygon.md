@@ -148,6 +148,7 @@ Eisenstein 다항식 $x^n+pa_{n-1}x^{n-1}+\dots+pa_0$ ( $p\nmid a_0$ ) 의 다�
 
 ## 더 알아보기
 
+- [Coleman 적분](coleman-integration.md)
 - [Dwork 의 유리성 정리와 지수합](dwork-rationality.md)
 
 #number_theory #analysis #field_theory #computation
