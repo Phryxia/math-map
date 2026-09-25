@@ -127,6 +127,7 @@ Hausdorff 측도는 프랙탈의 차원을 재고, Haar 측도는 군 위에서 
 
 ### 집합의 복잡도와 다른 구성
 
+- [Vitali 집합](vitali-set.md)
 - [Borel 계층](borel-hierarchy.md)
 - [강 측도 영집합](strong-measure-zero.md)
 - [Loeb 측도](loeb-measure.md)

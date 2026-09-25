@@ -75,7 +75,7 @@ ZF 안에서 AC 와 정렬 정리(well-ordering theorem, WO)와 Zorn 보조정�
 
 ## 비구성성
 
-- Vitali 집합. 실수를 유리수 평행이동으로 나눈 [동치류](equivalence-relations.md)에서 대표를 하나씩 고르면 Lebesgue 비가측 집합이 된다.
+- [Vitali 집합](vitali-set.md). 실수를 유리수 평행이동으로 나눈 [동치류](equivalence-relations.md)에서 대표를 하나씩 고르면 Lebesgue 비가측 집합이 된다.
 - Banach–Tarski. 3 차원 단위 구를 유한 개 조각으로 나누어 회전과 평행이동만으로 같은 크기의 구 두 개를 만들 수 있다[^3]. 조각들이 비가측이므로 Lebesgue 측도의 성질과 모순되지 않는다. 2 차원에서는 같은 현상이 일어나지 않으며, 원인은 3 차원 회전군이 자유 부분군을 갖는 데 있다([군 작용](group-actions.md)).
 - 실수 전체의 정렬순서는 AC 로 존재하지만 어떤 명시적 정의로도 주어지지 않는다.
 
@@ -124,6 +124,7 @@ AC 의 약한 형태들은 강도가 다르다. 가산 선택, 종속 선택, �
 
 ## 더 알아보기
 
+- [Vitali 집합](vitali-set.md)
 - [Banach–Tarski 분해](banach-tarski.md)
 
 #set_theory #foundations

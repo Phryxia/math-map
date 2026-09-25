@@ -43,6 +43,7 @@ graph TD
 
 - [측도](measure.md): $\sigma$ 대수, 가산가법성, Lebesgue 측도와 비가측 집합
 - [가측함수](measurable-functions.md): 원상이 가측인 함수, 극한에 닫힌 성질
+- [측도](measure.md) → [Vitali 집합](vitali-set.md): 유리수 평행이동의 대표를 모은 비가측 집합, 측도를 멱집합으로 넓히지 못하는 이유
 - [Borel 계층](borel-hierarchy.md): 열린집합에서 가산 연산을 초한으로 되풀이한 단계, Suslin 정리
 - [강 측도 영집합](strong-measure-zero.md): 구간 길이를 미리 지정해도 덮을 수 있는 집합, Borel 추측
 - [Loeb 측도](loeb-measure.md): 초유한 집합 위의 유한가법측도에서 표준부분으로 얻는 측도, 포화성이 $\sigma$ 가법성을 준다
