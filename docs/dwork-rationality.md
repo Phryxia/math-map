@@ -237,7 +237,7 @@ $n=1$ 하나가 모든 확대체의 값을 결정하며, 이것이 $L$ 함수가
 
 ## 더 알아보기
 
-- [Kedlaya 알고리즘과 p 진 점 세기](kedlaya-algorithm.md)
+- [Kedlaya 알고리즘](kedlaya-algorithm.md)
 - [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)
 
 #number_theory #analysis #theorem #computation

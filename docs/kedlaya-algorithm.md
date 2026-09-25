@@ -1,4 +1,4 @@
-# Kedlaya 알고리즘과 p 진 점 세기
+# Kedlaya 알고리즘
 
 # 개요
 
