@@ -156,7 +156,7 @@ $\vartheta$ 를 연관 스킴 위의 부호에 적용하면 Delsarte 의 선형�
 
 ## 선수지식
 
-- [반정부호 계획법과 최대 절단](semidefinite-programming.md)
+- [반정부호 계획법](semidefinite-programming.md)
 - [그래프 색칠](graph-coloring.md)
 
 ## 더 알아보기

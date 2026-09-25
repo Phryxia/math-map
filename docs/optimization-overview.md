@@ -26,7 +26,7 @@ graph TD
   LR --> SD["반정부호 계획법"]
   SD --> LT["Lovász 세타 함수"]
   GC["그래프 색칠"] --> LT
-  LD --> OT["최적 수송과 Wasserstein 거리"]
+  LD --> OT["최적 수송"]
   PM["상측도"] --> OT
   OT --> SK["Sinkhorn 알고리즘"]
   SK --> UO["불균형 최적 수송"]
@@ -49,12 +49,12 @@ graph TD
 ## 선형·반정부호 계획법
 
 - [선형계획법](linear-programming.md): 다면체 위의 선형 목적함수, 꼭짓점 최적성과 쌍대성
-- [반정부호 계획법과 최대 절단](semidefinite-programming.md): 반정부호 행렬 위의 완화와 Goemans–Williamson 알고리즘
+- [반정부호 계획법](semidefinite-programming.md): 반정부호 행렬 위의 완화와 Goemans–Williamson 알고리즘
 - [Lovász 세타 함수](lovasz-theta.md): 독립수와 채색수 사이에 끼는 반정부호 계획값
 
 ## 최적 수송
 
-- [최적 수송과 Wasserstein 거리](optimal-transport.md): 분포를 옮기는 최소 비용과 Kantorovich 쌍대성
+- [최적 수송](optimal-transport.md): 분포를 옮기는 최소 비용과 Kantorovich 쌍대성
 - [Sinkhorn 알고리즘과 엔트로피 정규화](sinkhorn.md): 엔트로피 항을 더해 행렬 스케일링으로 푼다
 - [불균형 최적 수송](unbalanced-optimal-transport.md): 질량이 보존되지 않는 경우로의 확장
 - [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md): 확률분포 공간 위의 기울기 흐름과 Fokker–Planck 방정식

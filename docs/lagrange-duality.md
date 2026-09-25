@@ -125,6 +125,6 @@ $\lambda\ge 0$ 에서 최대화하면 최적 승수는 $2$ , $d=2$ 다. 승수�
 
 ## 더 알아보기
 
-- [최적 수송과 Wasserstein 거리](optimal-transport.md)
+- [최적 수송](optimal-transport.md)
 
 #optimization #analysis

@@ -139,6 +139,6 @@ LP 쌍대해 하나가 최적값의 하한을 증명한다. 정점 덮개 LP 의
 
 ## 더 알아보기
 
-- [반정부호 계획법과 최대 절단](semidefinite-programming.md)
+- [반정부호 계획법](semidefinite-programming.md)
 
 #algorithms #optimization #complexity

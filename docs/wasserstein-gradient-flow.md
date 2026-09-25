@@ -150,7 +150,7 @@ $$
 
 ## 선수지식
 
-- [최적 수송과 Wasserstein 거리](optimal-transport.md)
+- [최적 수송](optimal-transport.md)
 - [Itô 적분](ito-calculus.md)
 
 ## 더 알아보기

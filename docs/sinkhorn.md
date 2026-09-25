@@ -187,7 +187,7 @@ $$
 
 ## 선수지식
 
-- [최적 수송과 Wasserstein 거리](optimal-transport.md)
+- [최적 수송](optimal-transport.md)
 - [KL divergence](kl-divergence.md)
 
 ## 더 알아보기

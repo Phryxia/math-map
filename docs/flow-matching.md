@@ -140,7 +140,7 @@ $p_0=N(0,1)$ 에서 $p_1=\frac12N(-2,0.3^2)+\frac12N(2,0.3^2)$ 로 가는 1 차�
 ## 선수지식
 
 - [확산모형](diffusion-models.md)
-- [최적 수송과 Wasserstein 거리](optimal-transport.md)
+- [최적 수송](optimal-transport.md)
 
 ## 더 알아보기
 
