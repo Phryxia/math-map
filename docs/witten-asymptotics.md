@@ -126,7 +126,7 @@ Jeffrey 가 렌즈 공간과 원환면 사상 원기둥에서 $\tau_k$ 의 닫�
 
 - [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)
 - [Chern–Simons 이론](chern-simons.md)
-- [정상위상법과 안장점 근사](stationary-phase.md)
+- [정상위상법](stationary-phase.md)
 
 ## 더 알아보기
 

@@ -158,6 +158,6 @@ $$
 
 - [분할수](partitions.md)
 - [Stokes 현상](stokes-phenomenon.md)
-- [정상위상법과 안장점 근사](stationary-phase.md)
+- [정상위상법](stationary-phase.md)
 
 #analysis #combinatorics #computation
