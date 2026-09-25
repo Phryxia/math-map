@@ -44,7 +44,7 @@ graph TD
 - [군의 표현](group-representations.md): 군을 행렬로 보는 기본 도구
 - [군의 표시](group-presentations.md): 생성원과 관계자로 군을 적는 방법, 낱말 문제
 - [Coxeter 군](coxeter-groups.md): 반사로 생성된 군의 표시, 길이 함수와 Bruhat 순서
-- [Mathieu 군과 Golay 부호](mathieu-groups.md), [땋임군](braid-groups.md): 조합론·위상과 맞닿은 군
+- [Mathieu 군](mathieu-groups.md), [땋임군](braid-groups.md): 조합론·위상과 맞닿은 군
 
 ## 환과 아이디얼
 

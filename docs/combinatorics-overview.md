@@ -83,7 +83,7 @@ graph TD
 ## 격자와 부호
 
 - [구 채우기](sphere-packing.md) → [Niemeier 격자](niemeier-lattices.md) → [Schellekens 목록](schellekens-list.md)
-- [Mathieu 군과 Golay 부호](mathieu-groups.md): 부호와 산재 단순군
+- [Mathieu 군](mathieu-groups.md): 부호와 산재 단순군
 - [theta 급수](theta-series.md), [Siegel–Weil 공식](siegel-weil.md): 격자 벡터 세기와 모듈러 형식
 - [Mock 모듈러 형식](mock-modular-forms.md), [Dyson 의 rank 와 crank](dyson-rank-crank.md): 분할수의 합동
 

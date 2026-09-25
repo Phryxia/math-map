@@ -1,4 +1,4 @@
-# Mathieu 군과 Golay 부호
+# Mathieu 군
 
 # 개요
 

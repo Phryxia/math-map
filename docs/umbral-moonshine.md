@@ -41,7 +41,7 @@ $N=4$ 초등각대수의 지표 가운데 **짧은**(BPS) 것은 그 자체로 �
 
 Niemeier 격자 하나를 고르면 나머지가 전부 따라 나온다. 근계 $X$ 가 격자의 근으로 정해지고, 격자의 자기동형군을 Weyl 군으로 나눈 몫이 달빛 군 $G^X$ 이며, 근계에서 만든 theta 급수가 shadow 이고, 그 shadow 를 갖는 mock 모듈러 형식이 $H^X$ 다. $X=A_1^{24}$ 인 경우가 $G^X=M_{24}$ 이고 Mathieu 달빛이다.
 
-Weyl 군으로 나누면 근계의 대칭 가운데 반사가 걷히고 근계 성분들을 뒤섞는 순열 대칭만 남는다. $A_1^{24}$ 에서 그것이 24 개 성분의 순열 중 격자가 허용하는 것들, 곧 Golay 부호의 자기동형군 $M_{24}$ 다. [Mathieu 군 문서](mathieu-groups.md)에서 $M_{24}$ 가 Golay 부호에서 나온 것과 같은 군이 여기서 격자의 몫으로 다시 나타난다.
+Weyl 군으로 나누면 근계의 대칭 가운데 반사가 걷히고 근계 성분들을 뒤섞는 순열 대칭만 남는다. $A_1^{24}$ 에서 그것이 24 개 성분의 순열 중 격자가 허용하는 것들, 곧 Golay 부호의 자기동형군 $M_{24}$ 다. Golay 부호의 자기동형군으로 나온 Mathieu 군이 여기서는 격자의 몫으로 나타난다.
 
 ## 23 이라는 수의 출처
 
@@ -167,7 +167,7 @@ umbral moonshine 은 $M_{24}$ 와 $M_{12}$ 를 포함한 여러 군에 달빛 �
 ## 선수지식
 
 - [괴물 달빛 추측](monstrous-moonshine.md)
-- [Mathieu 군과 Golay 부호](mathieu-groups.md)
+- [Mathieu 군](mathieu-groups.md)
 - [Mock 모듈러 형식과 Zwegers 이론](mock-modular-forms.md)
 - [Niemeier 격자](niemeier-lattices.md)
 
