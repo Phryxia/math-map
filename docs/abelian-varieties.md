@@ -131,5 +131,6 @@ $$
 ## 더 알아보기
 
 - [Siegel 모듈라이 다양체](siegel-modular-variety.md)
+- [Mordell–Lang 추측](mordell-lang.md)
 
 #algebra #number_theory #complex_analysis

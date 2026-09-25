@@ -101,6 +101,6 @@ Zariski 기하는 각 거듭제곱 $D^n$ 에 Noether 위상이 주어지고 다�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Mordell–Lang 추측](mordell-lang.md)
 
 #logic #foundations #algebra
