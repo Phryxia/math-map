@@ -129,7 +129,7 @@ $C_6$ 와 $2K_3$ 는 모든 정점이 초기 색이 같고 차수가 2 다. 귀�
 
 ## 표현력의 상한
 
-이웃의 정보를 모아 자기 표현을 갱신하는 구조는 1-WL 보다 강할 수 없고, 갱신 함수가 단사가 아니면 더 약해진다. [그래프 신경망의 표현력](gnn-expressivity.md)을 규정하는 결과이며, 이웃 집계를 중복집합에 대한 단사 함수로 설계해야 한다는 지침이 따라온다.
+이웃의 정보를 모아 자기 표현을 갱신하는 구조는 1-WL 보다 강할 수 없고, 갱신 함수가 단사가 아니면 더 약해진다. 그래프 신경망의 표현력을 규정하는 결과이며, 이웃 집계를 중복집합에 대한 단사 함수로 설계해야 한다는 지침이 따라온다.
 
 [^1]: Berkholz, Bonsma, Grohe, *Tight Lower and Upper Bounds for the Complexity of Canonical Colour Refinement* (2015), https://arxiv.org/abs/1509.08251. 안정 분할과 정준적 refinement 의 정확한 복잡도.
 

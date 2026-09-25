@@ -121,7 +121,7 @@ $$
 \char35{}\text{Ш}\ \stackrel?=\ \frac{L(E,1)\cdot\char35{}E(\mathbb Q)\_{\mathrm{tors}}^2}{\Omega_E\prod_pc_p}
 $$
 
-가 예측값을 준다. [Cassels–Tate 쌍](selmer-groups.md)이 이 값이 완전제곱수임을 보장하므로 공식의 정합성 검사가 된다. $\char35{}\text{Ш}=4,9,16,\dots$ 인 곡선들이 이렇게 발견되었고 하강으로 확인된 경우도 많다.
+가 예측값을 준다. Cassels–Tate 쌍이 이 값이 완전제곱수임을 보장하므로 공식의 정합성 검사가 된다. $\char35{}\text{Ш}=4,9,16,\dots$ 인 곡선들이 이렇게 발견되었고 하강으로 확인된 경우도 많다.
 
 ## 합동수 문제
 

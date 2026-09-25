@@ -168,7 +168,7 @@ $p$ 가 정칙이면 $x^{p}+y^{p}=z^{p}$ 에 $p\nmid xyz$ 인 해가 없다. 증
 
 ## $p$ 진 $L$ 함수와 Iwasawa 이론
 
-Kummer 합동이 $L_p(s,\chi)$ 의 존재를 주고, 그 함수의 $\Lambda$ 원소로서의 실현이 [Iwasawa 주추측](iwasawa-main-conjecture.md)의 해석적 변이 된다. 주추측을 $T=0$ 에서 읽은 것이 Herbrand–Ribet 이며, 그 진술이 $p\mid B_k$ 라는 조건으로 쓰인다.
+Kummer 합동이 $L_p(s,\chi)$ 의 존재를 주고, 그 함수의 $\Lambda$ 원소로서의 실현이 Iwasawa 주추측의 해석적 변이 된다. 주추측을 $T=0$ 에서 읽은 것이 Herbrand–Ribet 이며, 그 진술이 $p\mid B_k$ 라는 조건으로 쓰인다.
 
 ## Euler–Maclaurin 공식
 

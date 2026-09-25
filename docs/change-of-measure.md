@@ -20,7 +20,7 @@ $Q$ 아래에서 확률이 $10^{-6}$ 인 사건 $A$ 의 확률을 몬테카를�
 
 ## 절대연속과 밀도
 
-측도공간 $(X,\mathcal F)$ 위의 두 측도 $Q$ , $P$ 에 대해, $P(A)=0$ 인 모든 가측집합 $A$ 가 $Q(A)=0$ 을 만족할 때 $Q$ 는 $P$ 에 **절대연속**이라 하고 $Q\ll P$ 로 쓴다. $P$ 가 sigma-유한이면 [Radon–Nikodym 정리](radon-nikodym.md)에 의해 거의 어디서나 유일한 비음 [가측함수](measurable-functions.md) $L$ 이 존재하여
+측도공간 $(X,\mathcal F)$ 위의 두 측도 $Q$ , $P$ 에 대해, $P(A)=0$ 인 모든 가측집합 $A$ 가 $Q(A)=0$ 을 만족할 때 $Q$ 는 $P$ 에 **절대연속**이라 하고 $Q\ll P$ 로 쓴다. $P$ 가 sigma-유한이면 Radon–Nikodym 정리에 의해 거의 어디서나 유일한 비음 [가측함수](measurable-functions.md) $L$ 이 존재하여
 
 $$
 Q(A) = \int_A L \thinspace dP \qquad \text{for all } A \in \mathcal{F}, \qquad L = \frac{dQ}{dP} .
@@ -149,7 +149,7 @@ $Q\ll P$ 가 깨지면 밀도가 존재하지 않는다. 예를 들어 연속분
 
 - **가설검정**: 우도비 검정통계량과 Wilks 정리(로그우도비의 점근 카이제곱 분포).
 - **[Bayes 추론](bayesian-inference.md)**: 사후분포를 사전분포에 대한 밀도로 쓰면 밀도가 정확히 우도이며, 정규화 상수가 증거(evidence)다. [Bayes 정리](bayes.md)의 측도론적 서술이 측도변환 공식 그 자체다.
-- **정보량**: [KL divergence](kl-divergence.md)는 로그 밀도의 기댓값이고, [Shannon 엔트로피](entropy.md)와 함께 두 측도의 구별 가능성을 정량화한다. 로그 밀도의 [martingale](martingales.md) 구조가 순차검정(sequential probability ratio test, SPRT)의 최적성을 준다.
+- **정보량**: KL divergence 는 로그 밀도의 기댓값이고, [Shannon 엔트로피](entropy.md)와 함께 두 측도의 구별 가능성을 정량화한다. 로그 밀도의 martingale 구조가 순차검정(sequential probability ratio test, SPRT)의 최적성을 준다.
 
 ## 계산
 

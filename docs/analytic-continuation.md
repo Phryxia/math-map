@@ -63,7 +63,7 @@ $$F(z)=\begin{cases}f(z)&z\in D^+\cup I\cr \overline{f(\bar z)}&\bar z\in D^+\en
 - [감마 함수](gamma-function.md): 적분 $\Gamma(s)=\int_0^\infty t^{s-1}e^{-t}\thinspace dt$ 는 $\mathrm{Re}\thinspace s\gt 0$ 에서만 수렴한다. 함수방정식 $\Gamma(s+1)=s\Gamma(s)$ 를 $\Gamma(s)=\Gamma(s+1)/s$ 로 거꾸로 읽어 왼쪽으로 한 칸씩 연속하면 $s=0,-1,-2,\dots$ 에 단순극을 갖는 유리형함수가 된다.
 - [Riemann zeta 함수](riemann-zeta.md): $\zeta(s)=\sum_{n\ge1}n^{-s}$ 는 $\mathrm{Re}\thinspace s\gt 1$ 에서 수렴한다. 완비 zeta 함수의 함수방정식 $\xi(s)=\xi(1-s)$ 가 $s=1$ 의 단순극을 제외한 복소평면 전체로의 연속을 준다. [소수 정리](prime-number-theorem.md)의 증명은 연속된 $\zeta$ 가 직선 $\mathrm{Re}\thinspace s=1$ 위에서 영점을 갖지 않는다는 데 기댄다.
 - [Dirichlet L 함수](dirichlet-l-functions.md): $L(s,\chi)$ 도 같은 방식으로 연속되고, 비자명한 $\chi$ 에 대해서는 극이 없는 전해석함수가 된다. $L(1,\chi)\neq0$ 이 등차수열의 소수 정리를 준다.
-- [Riemann 곡면과 균일화 정리](riemann-surfaces.md): 한 함수 요소에서 출발해 도달할 수 있는 모든 함수 요소를 모으면 곡면이 되고, 그 위에서 다가함수가 단일가치가 된다.
+- Riemann 곡면과 균일화 정리: 한 함수 요소에서 출발해 도달할 수 있는 모든 함수 요소를 모으면 곡면이 되고, 그 위에서 다가함수가 단일가치가 된다.
 
 # 연관 문서
 

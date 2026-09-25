@@ -44,7 +44,7 @@ $C(X,\mathbb R)$ 은 상한 노름으로 [Banach 공간](banach-spaces.md)이고
 
 ## 필요조건
 
-상대콤팩트이면 유한 $\varepsilon$ 그물이 존재한다. 그물의 각 함수는 [균등연속](uniform-continuity.md)이고 유한 개이므로 $\delta$ 의 최솟값을 잡을 수 있고, 그 $\delta$ 가 족 전체에 통한다.
+상대콤팩트이면 유한 $\varepsilon$ 그물이 존재한다. 그물의 각 함수는 균등연속이고 유한 개이므로 $\delta$ 의 최솟값을 잡을 수 있고, 그 $\delta$ 가 족 전체에 통한다.
 
 ## 콤팩트가 아닌 정의역
 
