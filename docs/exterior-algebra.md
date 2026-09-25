@@ -107,6 +107,7 @@ $V$ 에 내적과 방향을 주면 $\Lambda^k V$ 와 $\Lambda^{n-k}V$ 의 차원
 
 ## 더 알아보기
 
+- [Grassmann 다양체](grassmannian.md)
 - [미분형식과 Stokes 정리](differential-forms.md)
 
 #linear_algebra #algebra #differential_geometry

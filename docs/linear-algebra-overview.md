@@ -32,6 +32,7 @@ graph TD
 - [쌍대 공간](dual-space.md): 벡터를 재는 범함수와 전치
 - [텐서곱](tensor-products.md): 다중선형을 선형으로
 - [외대수](exterior-algebra.md): 반대칭 곱과 좌표 없는 행렬식
+- [외대수](exterior-algebra.md) → [Grassmann 다양체](grassmannian.md): 부분공간 전체를 점으로 삼은 공간, Plücker 매장과 Schubert 세포
 
 ## 고윳값과 스펙트럼
 
