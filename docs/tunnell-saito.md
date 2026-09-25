@@ -66,7 +66,7 @@ $$
 
 ## 증명의 요령
 
-Saito 의 증명이 개념적으로 가장 깔끔하다. 양쪽 $\mathrm{Hom}$ 공간의 차원을 지표의 적분으로 적으면
+Saito 의 증명은 양쪽 $\mathrm{Hom}$ 공간의 차원을 지표의 적분으로 적는다. 그렇게 적으면
 
 $$
 \dim\mathrm{Hom}\_{K^\times}(\pi,\chi)

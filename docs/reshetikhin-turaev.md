@@ -96,7 +96,7 @@ $$
 > \tau(M_L)=F(L_\omega)\cdot\mathcal D^{-m-1}\cdot\Big(\frac{\Delta_+}{\mathcal D}\Big)^{-\sigma(L)}
 > $$
 
-$\mathcal D=\sqrt{\sum_id_i^2}$ 는 MTC 의 전체 차원이다. 빈 링크 곧 $M=S^3$ 을 넣으면 $\tau(S^3)=\mathcal D^{-1}=S_{00}$ 이 나온다. $\tau(S^3)$ 이 1 이 아니라는 점이 이 규약의 특징이고, 뒤의 곱셈 공식이 깔끔해지는 대가다.
+$\mathcal D=\sqrt{\sum_id_i^2}$ 는 MTC 의 전체 차원이다. 빈 링크 곧 $M=S^3$ 을 넣으면 $\tau(S^3)=\mathcal D^{-1}=S_{00}$ 이 나온다. $\tau(S^3)$ 이 1 이 아니라는 점이 이 규약의 특징이고, 뒤의 곱셈 공식이 보정 인자 없이 성립하게 하는 대가다.
 
 > **정리 (Reshetikhin–Turaev 1991).** $\tau(M_L)$ 은 $M_L$ 의 수술 표현에 의존하지 않는다. 곧 닫힌 유향 3 차원 다양체의 불변량이다.
 

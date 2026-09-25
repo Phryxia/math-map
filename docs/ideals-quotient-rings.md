@@ -119,7 +119,7 @@ $$
 
 ## 새 수 체계의 구성
 
-$\mathbb R[x]/(x^2+1) \cong \mathbb C$ 가 복소수를 만드는 가장 깔끔한 방법이다. $i$ 를 "제곱하면 $-1$ 인 신비한 수" 로 도입하는 대신, 다항식에 $x^2 = -1$ 이라는 관계를 강제한 결과로 정의한다. 같은 절차로 [유한체](finite-fields.md) $\mathbb F_{p^n} = \mathbb F_p[x]/(f)$ 를 만들고, 대수적 수 $\mathbb Q[x]/(f)$ 를 만든다. [체 확대](field-extensions.md)의 구성이 모두 이 형태다.
+$\mathbb R[x]/(x^2+1) \cong \mathbb C$ 가 복소수의 대수적 정의다. $i$ 를 "제곱하면 $-1$ 인 신비한 수" 로 도입하는 대신, 다항식에 $x^2 = -1$ 이라는 관계를 강제한 결과로 정의한다. 같은 절차로 [유한체](finite-fields.md) $\mathbb F_{p^n} = \mathbb F_p[x]/(f)$ 를 만들고, 대수적 수 $\mathbb Q[x]/(f)$ 를 만든다. [체 확대](field-extensions.md)의 구성이 모두 이 형태다.
 
 ## 생성원과 관계를 쓴 제시
 
