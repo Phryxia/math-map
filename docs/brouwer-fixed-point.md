@@ -40,7 +40,7 @@ $\mathbb R^n$ 의 공이 아닌 집합에도 같은 결론이 성립한다.
 
 > **정리.** $n\ge 1$ 에서 $D^n$ 을 경계 구면 $S^{n-1}$ 로 보내는 수축은 없다.
 
-증명은 호몰로지 함자로 옮기는 것이다. $r\circ i=\mathrm{id}$ 에 $H_{n-1}$ 을 적용하면 준동형의 합성
+증명은 호몰로지 [함자](functors.md)로 옮기는 것이다. $r\circ i=\mathrm{id}$ 에 $H_{n-1}$ 을 적용하면 준동형의 합성
 
 $$
 H_{n-1}(S^{n-1})\xrightarrow{i_\ast}H_{n-1}(D^n)\xrightarrow{r_\ast}H_{n-1}(S^{n-1})

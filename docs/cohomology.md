@@ -30,7 +30,7 @@ $\ker\delta^n$ 의 원소를 코사이클, $\mathrm{im}\thinspace\delta^{n-1}$ �
 
 ## 함자성
 
-연속사상 $f:X\to Y$ 는 사슬 사상 $f\_\ast:C\_\bullet(X)\to C\_\bullet(Y)$ 를 주고, 그 쌍대가 $f^\ast:H^n(Y;R)\to H^n(X;R)$ 이다. 화살표가 뒤집히므로 코호몰로지는 반변 함자다.
+연속사상 $f:X\to Y$ 는 사슬 사상 $f\_\ast:C\_\bullet(X)\to C\_\bullet(Y)$ 를 주고, 그 쌍대가 $f^\ast:H^n(Y;R)\to H^n(X;R)$ 이다. 화살표가 뒤집히므로 코호몰로지는 반변 [함자](functors.md)다.
 
 ## 컵곱
 
