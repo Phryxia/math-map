@@ -150,8 +150,9 @@ $$
 
 ## 더 알아보기
 
-### 위상 불변량
+### 세포 구조와 위상 불변량
 
+- [CW 복합체](cw-complexes.md)
 - [Euler 지표](euler-characteristic.md)
 - [코호몰로지](cohomology.md)
 - [de Rham 코호몰로지](de-rham-cohomology.md)

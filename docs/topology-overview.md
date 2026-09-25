@@ -36,6 +36,7 @@ graph TD
 
 - [기본군](fundamental-group.md) → [덮개공간](covering-spaces.md): 고리와 그 들어 올림
 - [기본군](fundamental-group.md) → [호모토피군](homotopy-groups.md): 고리를 고차원 구면으로 올린 불변량
+- [단체 호몰로지](homology.md) → [CW 복합체](cw-complexes.md): 원판을 테두리째 붙여 쌓은 공간, 세포마다 사슬군의 생성원 하나
 - [단체 호몰로지](homology.md) → [Euler 지표](euler-characteristic.md) → [평면 그래프](planar-graphs.md), [곡면의 분류](classification-of-surfaces.md)
 - [단체 호몰로지](homology.md) → [코호몰로지](cohomology.md): 사슬 위의 함수, 컵곱이 주는 환 구조와 Poincaré 쌍대성
 - [단체 호몰로지](homology.md) → [Brouwer 고정점 정리](brouwer-fixed-point.md): 수축의 부재가 고정점의 존재를 준다
