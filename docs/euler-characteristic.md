@@ -26,7 +26,7 @@ $$
 \chi=V-E+F
 $$
 
-이 정의는 삼각형보다 일반적인 다각형 조각(closure-finite weak topology, CW 분할)으로 나누어도 같은 값을 준다.
+이 정의는 삼각형보다 일반적인 조각으로 나누어도 같은 값을 준다. 원판을 테두리째 붙여 쌓는 [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology)의 세포 분할이 그런 조각이다.
 
 ## 호몰로지적 정의
 

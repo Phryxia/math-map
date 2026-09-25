@@ -20,7 +20,7 @@ $2$ 차 코호몰로지를 같은 방식으로 얻으려면 $\pi_2=\mathbb Z$ �
 
 ## K(G,n)
 
-연결 CW 복합체(CW complex) $K$ 가 $\pi_n(K)\cong G$ 이고 $i\ne n$ 에서 $\pi_i(K)=0$ 이면 $K$ 를 **Eilenberg–MacLane 공간**이라 하고 $K(G,n)$ 으로 쓴다. $n=1$ 에서 $G$ 는 임의의 군이고 $n\ge 2$ 에서는 아벨군이다.
+연결 [CW 복합체](cw-complexes.md)(CW complex) $K$ 가 $\pi_n(K)\cong G$ 이고 $i\ne n$ 에서 $\pi_i(K)=0$ 이면 $K$ 를 **Eilenberg–MacLane 공간**이라 하고 $K(G,n)$ 으로 쓴다. $n=1$ 에서 $G$ 는 임의의 군이고 $n\ge 2$ 에서는 아벨군이다.
 
 $G$ 와 $n$ 이 정해지면 $K(G,n)$ 은 호모토피 동치까지 하나뿐이다. 존재는 세포를 붙여 만든다. $n$ 차 호모토피군이 $G$ 인 Moore 공간에서 시작해, 차수가 $n$ 보다 높은 호모토피군의 생성원마다 세포를 붙여 그 원소를 죽인다.
 

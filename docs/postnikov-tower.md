@@ -22,7 +22,7 @@ $S^2$ 쪽에서는 그렇지 않다. $\pi_3$ 을 붙이는 단계가 $K(\mathbb 
 
 ## 탑
 
-$X$ 는 연결 CW 복합체(CW complex)다. $X$ 의 **Postnikov 탑**은 공간과 사상의 열이다.
+$X$ 는 연결 [CW 복합체](cw-complexes.md)(CW complex)다. $X$ 의 **Postnikov 탑**은 공간과 사상의 열이다.
 
 $$
 \dots\longrightarrow X_n\longrightarrow X_{n-1}\longrightarrow\dots\longrightarrow X_1
