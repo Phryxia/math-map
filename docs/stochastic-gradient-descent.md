@@ -26,7 +26,7 @@ $$f(x)=\frac{1}{N}\sum_{i=1}^{N}f_i(x)\qquad\text{또는}\qquad f(x)=\mathbb E_\
 
 $$x_{k+1}=x_k-\eta_k\thinspace g_k,\qquad\mathbb E\lbrack g_k\mid x_k\rbrack=\nabla f(x_k)$$
 
-유한합에서 $i_k$ 를 균등하게 뽑고 $g_k=\nabla f_{i_k}(x_k)$ 로 두면 이 조건이 성립한다. $f=-\nabla g$ 로 보면 [확률근사](stochastic-approximation.md)의 Robbins–Monro 절차다.
+유한합에서 $i_k$ 를 균등하게 뽑고 $g_k=\nabla f_{i_k}(x_k)$ 로 두면 이 조건이 성립한다. [확률근사](stochastic-approximation.md)의 Robbins–Monro 절차에서 대상 함수를 $-\nabla f$ 로 둔 것이 이 반복이다.
 
 ## 미니배치
 
@@ -46,7 +46,7 @@ $f$ 가 $\mu$ 강볼록이고 $\nabla f$ 가 $L$ -Lipschitz 이며 $\mathbb E\Ve
 
 $$\mathbb E\Vert x_k-x^\ast\Vert^2=O\left(\frac{\sigma^2}{\mu^2 k}\right)$$
 
-증명의 요지. 갱신식을 제곱해 조건부 기댓값을 취하면 직관 절의 점화식이 나온다. 보폭이 $c/k$ 이면 $(1-\mu\eta_k)$ 의 곱이 $k$ 의 음의 거듭제곱으로 줄고, 뒤의 항이 만드는 합이 조화급수의 꼬리와 같은 규모라서 두 기여가 모두 $1/k$ 다.
+증명의 요지. 갱신식을 제곱해 조건부 기댓값을 취하면 최소점까지의 거리에 대한 점화식이 나온다. 보폭이 $c/k$ 이면 $(1-\mu\eta_k)$ 의 곱이 $k$ 의 음의 거듭제곱으로 줄고, 뒤의 항이 만드는 합이 조화급수의 꼬리와 같은 규모라서 두 기여가 모두 $1/k$ 다.
 
 잡음이 없으면 같은 가정에서 경사하강법이 기하급수적으로 수렴한다. $1/k$ 로 느려진 원인은 오직 $\sigma^2$ 이다.
 
