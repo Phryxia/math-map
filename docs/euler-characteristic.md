@@ -14,7 +14,7 @@ Euler 지표는 도형을 조각으로 나누었을 때 조각 수의 교대합�
 
 ## 조합적 정의
 
-$K$ 를 유한 [단체복합체](homology.md)라 하고 $m_n$ 을 $n$ 차원 단체의 개수라 하자. Euler 지표는 다음 교대합이다.
+$K$ 를 유한 단체복합체라 하고 $m_n$ 을 $n$ 차원 단체의 개수라 하자. Euler 지표는 다음 교대합이다.
 
 $$
 \chi(K)=\sum_{n\ge 0}(-1)^{n}m_n=m_0-m_1+m_2-m_3+\cdots
@@ -118,7 +118,7 @@ $$
 - 평면성 판정의 상한: 평면 단순그래프는 $V$ 가 $3$ 이상일 때 $E$ 가 $3V-6$ 이하다. 각 면이 최소 3개의 간선으로 둘러싸이고 각 간선이 두 면에 속하므로 $2E$ 가 $3F$ 이상이고, 이를 Euler 공식에 대입하면 얻어진다. 완전그래프 $K_5$ 는 $V=5$ , $E=10$ 으로 이를 위반하므로 평면그래프가 아니다.
 - 지도 색칠: 위 상한에서 차수 5 이하인 꼭짓점의 존재가 따르고, 5색 정리의 증명이 이를 쓴다.
 - 메쉬 처리: 삼각망의 $V$ , $E$ , $F$ 에서 지표를 계산해 구멍의 개수를 추정하고 위상 오류를 검출한다. 닫힌 삼각망에서는 $2E=3F$ 이므로 지표가 $V-F/2$ 로 계산된다.
-- 조합론: 교대합으로 불변량을 얻는 논법이 [포함배제](inclusion-exclusion.md)와 [생성함수](generating-functions.md)에 나타나고, 지표는 그 위상적 대응물이다.
+- 조합론: 교대합으로 불변량을 얻는 논법이 포함배제와 [생성함수](generating-functions.md)에 나타나고, 지표는 그 위상적 대응물이다.
 
 [^1]: 삼각화의 단체 개수 교대합이 Betti 수의 교대합과 같다는 진술. J. R. Munkres, *Elements of Algebraic Topology*, §22. 요약: "Euler characteristic", Schools Wikipedia. https://landsurvival.com/schools-wikipedia/wp/e/Euler_characteristic.htm
 [^2]: 정다면체 다섯 개의 분류를 Euler 공식과 pF=2E=qV에서 얻는 논법. Wolfram MathWorld, "Platonic Solid". https://mathworld.wolfram.com/PlatonicSolid.html

@@ -92,7 +92,7 @@ $$
 E(\mathbb F_q)\cong\mathbb Z/n_1\mathbb Z\times\mathbb Z/n_2\mathbb Z,\qquad n_2\mid n_1,\ n_2\mid q-1
 $$
 
-대개 순환군이거나 순환군에 작은 인자가 붙은 형태다. 암호에서는 위수가 큰 소수인 순환 부분군을 골라 생성원으로 쓴다. [Pohlig–Hellman](discrete-logarithm.md) 때문에 위수에 작은 소인수가 많으면 안 된다.
+대개 순환군이거나 순환군에 작은 인자가 붙은 형태다. 암호에서는 위수가 큰 소수인 순환 부분군을 골라 생성원으로 쓴다. Pohlig–Hellman 때문에 위수에 작은 소인수가 많으면 안 된다.
 
 ## Mordell–Weil 정리
 

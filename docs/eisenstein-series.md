@@ -173,7 +173,7 @@ $$
 
 ## Rankin–Selberg 의 재료
 
-[Rankin–Selberg 적분](rankin-selberg.md)이 쓰는 것은 $E(z,s)$ 의 세 성질이다.
+Rankin–Selberg 적분이 쓰는 것은 $E(z,s)$ 의 세 성질이다.
 
 1. 정의가 $\Gamma_\infty\backslash\Gamma$ 위의 합이라 펼치기가 가능하다.
 2. 해석적 접속과 함수방정식이 있어 $L$ 함수가 그것을 물려받는다.

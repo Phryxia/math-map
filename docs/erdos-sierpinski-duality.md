@@ -49,7 +49,7 @@ Cichoń 도표의 부등식 $\mathrm{add}(\mathcal N)\le\mathrm{add}(\mathcal M)
 # 활용
 
 - 측도에서 증명한 명제를 [Baire 범주](baire-category.md) 쪽으로 옮긴다. 옮긴 진술이 연속체 가설에 기대는지 원래 증명이 ZFC 에서 되는지 구별해야 한다.
-- [기수 불변량](cardinal-characteristics.md)의 도표에서 $\mathcal N$ 쪽과 $\mathcal M$ 쪽이 대칭인 자리에 놓이는 것과, 그 대칭이 ZFC 에서 깨지는 두 자리를 함께 설명한다.
+- 기수 불변량의 도표에서 $\mathcal N$ 쪽과 $\mathcal M$ 쪽이 대칭인 자리에 놓이는 것과, 그 대칭이 ZFC 에서 깨지는 두 자리를 함께 설명한다.
 - 반례를 옮긴다. 제1범주이면서 측도가 양인 집합의 구성을 쌍대 사상으로 보내면 영집합이면서 제2범주인 집합이 나온다.
 
 [^1]: John C. Oxtoby, *Measure and Category*, Springer Graduate Texts in Mathematics 2 (1980), 19장. 쌍대성 정리의 증명과 Luzin 집합, Sierpiński 집합의 구성이 이 장에 있다.
