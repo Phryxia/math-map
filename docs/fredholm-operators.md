@@ -126,7 +126,7 @@ $a(z)=z-c$ 에서 $T_a=S-c$ 의 핵은 $0$ 이고 여핵은 $\ker(S^\ast-\bar c)
 
 닫힌 [다양체](manifolds.md) 위의 타원 미분작용소 $D$ 는 적당한 Sobolev 공간 사이에서 Fredholm 이다. 타원성이 콤팩트 오차를 남기는 유사역원의 존재를 주기 때문이다. $\mathrm{ind}(D)$ 가 정의되고 계수를 연속적으로 흔들어도 변하지 않는다.
 
-[지표 정리](index-theorem.md)는 이 정수를 명시적으로 계산한다.
+지표 정리는 이 정수를 명시적으로 계산한다.
 
 $$
 \mathrm{ind}(D)=\int_M\mathrm{ch}(\sigma(D))\thinspace\mathrm{Td}(TM\otimes\mathbb C)

@@ -88,7 +88,7 @@ $\sigma$ 가 다른 두 확산은 서로 특이하다. 이차변동이 다르면
 
 ## 기댓값의 변환
 
-기댓값을 옮기는 공식은 [측도변환](change-of-measure.md)의 일반 공식 그대로다.
+기댓값을 옮기는 공식은 측도변환의 일반 공식 그대로다.
 
 $$
 \mathbb E_P[Z]=\mathbb E_Q\negthinspace\left[\frac{Z}{L_T}\right],\qquad \mathbb E_Q[Z]=\mathbb E_P[Z\thinspace L_T]

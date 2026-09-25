@@ -63,7 +63,7 @@ Gauss 과정의 유한 선형결합, 적분, 미분(존재하면)은 다시 Gaus
 
 ## Brown 운동과 확률해석
 
-[Brown 운동](brownian-motion.md)은 $m=0,\ k(s,t)=\min(s,t)$ 인 Gauss 과정이다. Brown 다리, 분수 Brown 운동도 핵을 바꾼 Gauss 과정으로 정의한다.
+Brown 운동은 $m=0,\ k(s,t)=\min(s,t)$ 인 Gauss 과정이다. Brown 다리, 분수 Brown 운동도 핵을 바꾼 Gauss 과정으로 정의한다.
 
 ## 무작위 장의 모형
 

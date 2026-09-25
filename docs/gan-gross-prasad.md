@@ -138,7 +138,7 @@ $$
 L\negthinspace\left(\tfrac12,\pi_{n+1}\times\pi_n\right)\ne0
 $$
 
-이고, 주기가 남는 표현을 찾는 일이 자리마다의 국소 GGP 다. 전역 조건이 국소 조건의 곱으로 분해되는 구조는 [Whittaker 유일성](whittaker-models.md)이 Euler 곱을 보장하는 것과 같다.
+이고, 주기가 남는 표현을 찾는 일이 자리마다의 국소 GGP 다. 전역 조건이 국소 조건의 곱으로 분해되는 구조는 Whittaker 유일성이 Euler 곱을 보장하는 것과 같다.
 
 # 성질
 
@@ -192,7 +192,7 @@ $$
 
 ## 산술 GGP
 
-중심값이 0 이면 주기도 0 이고 정보가 도함수에 있다. **산술 GGP** 는 [Gross–Zagier 공식](heegner-points.md)의 일반화로, $L'(1/2,\pi_{n+1}\times\pi_n)$ 이 유니터리 Shimura 다양체 안의 **순환 사이클의 높이 쌍**과 같다고 예측한다.
+중심값이 0 이면 주기도 0 이고 정보가 도함수에 있다. **산술 GGP** 는 Gross–Zagier 공식의 일반화로, $L'(1/2,\pi_{n+1}\times\pi_n)$ 이 유니터리 Shimura 다양체 안의 **순환 사이클의 높이 쌍**과 같다고 예측한다.
 
 $$
 L'\negthinspace\left(\tfrac12,\pi_{n+1}\times\pi_n\right)\ \sim\ \langle\thinspace\Delta,\ \Delta\thinspace\rangle_{\mathrm{NT}}

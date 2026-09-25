@@ -78,7 +78,7 @@ $$
 \frac1{\Gamma(s)}=s\thinspace e^{\gamma s}\prod_{n\ge1}\Big(1+\frac sn\Big)e^{-s/n}
 $$
 
-두 번째 식에서 $1/\Gamma$ 가 위수 1 의 정함수다. 수렴인자 $e^{-s/n}$ 을 넣는 자리에 [Euler 상수](euler-maclaurin.md) $\gamma$ 가 나타나며, 이는 $\sum1/n$ 과 $\log n$ 의 차이다.
+두 번째 식에서 $1/\Gamma$ 가 위수 1 의 정함수다. 수렴인자 $e^{-s/n}$ 을 넣는 자리에 Euler 상수 $\gamma$ 가 나타나며, 이는 $\sum1/n$ 과 $\log n$ 의 차이다.
 
 ## 베타 함수
 
