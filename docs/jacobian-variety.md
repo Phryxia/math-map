@@ -80,7 +80,7 @@ $g=1$ 이면 $\mathrm{AJ}: X \to J(X)$ 가 동형이다. [타원곡선](elliptic
 
 - [Riemann–Roch 정리](riemann-roch.md)에서 특수 divisor 를 다룬다. 세타 divisor 위의 점이 전역 단면을 여분으로 갖는 류에 대응하고, Riemann 특이점 정리가 그 여분을 세타 함수의 중복도로 준다.
 - 곡선의 유리점을 센다. 수체 위의 곡선에서 $J(X)$ 의 유리점이 Mordell–Weil 정리로 유한생성이고, 계수가 $g$ 보다 작으면 Chabauty 방법이 곡선의 유리점을 유한 개로 묶는다.
-- 세타 함수를 정의한다. 주기 행렬로 쓴 [세타 급수](theta-series.md)가 $J(X)$ 위의 단면이 되고, 적분가능계의 해를 이 함수로 적는다.
+- 세타 함수를 정의한다. 주기 행렬로 쓴 [theta 급수](theta-series.md)가 $J(X)$ 위의 단면이 되고, 적분가능계의 해를 이 함수로 적는다.
 - 곡면의 모듈라이를 비교한다. Torelli 정리로 곡선의 모듈라이 공간이 주편극 아벨 다양체의 모듈라이 공간에 들어간다.
 
 [^1]: Phillip Griffiths, Joseph Harris, *Principles of Algebraic Geometry*, Wiley (1978), 2장. 주기 격자, Abel 정리, Jacobi 역 정리가 이 장에 있다.
