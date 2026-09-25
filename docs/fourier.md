@@ -118,7 +118,7 @@ DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 Fourier 변환이다. 지수�
 
 ## 선형 연산의 대각화
 
-순환 구조를 가진 행렬은 DFT 기저에서 대각행렬이 된다. 순환 행렬의 역행렬 계산, 상수계수 편미분방정식의 스펙트럴 해법, 정상 확률과정의 스펙트럼 분해가 이를 쓴다. 격자 위의 Poisson 방정식을 FFT 로 푸는 것이 그 예다.[^1]
+순환 구조를 가진 행렬은 DFT 기저에서 대각행렬이 된다. 순환 행렬의 역행렬 계산, 상수계수 편미분방정식의 스펙트럼 해법, 정상 확률과정의 스펙트럼 분해가 이를 쓴다. 격자 위의 Poisson 방정식을 FFT 로 푸는 것이 그 예다.[^1]
 
 [^1]: MIT 18.06SC, *Complex Matrices; Fast Fourier Transform*. Fourier 행렬, 직교성과 빠른 변환. https://ocw.mit.edu/courses/18-06sc-linear-algebra-fall-2011/pages/positive-definite-matrices-and-applications/complex-matrices-fast-fourier-transform-fft/
 
