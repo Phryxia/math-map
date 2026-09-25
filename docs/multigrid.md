@@ -98,6 +98,7 @@ $$
 
 ## 더 알아보기
 
+- [Fourier 국소 해석](local-fourier-analysis.md)
 - [대수적 다중격자](algebraic-multigrid.md)
 - [영역 분할법](domain-decomposition.md)
 
