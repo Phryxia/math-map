@@ -1,4 +1,4 @@
-# Littlewood–Richardson 규칙과 hive 모형
+# Littlewood–Richardson 규칙
 
 # 개요
 
@@ -192,7 +192,7 @@ Berenstein–Zelevinsky 다면체, Gelfand–Tsetlin 패턴, puzzle 규칙이 �
 
 ## Schubert 셈법의 구조상수
 
-$\mathrm{Gr}(k,n)$ 의 코호몰로지 곱셈 구조상수가 LR 수이므로, hive 모형은 Schubert 순환의 교차수를 다면체의 정수점으로 세는 방법이 된다. 교차수가 음이 아니라는 기하적 사실이 부등식 계의 해 개수라는 형태로 다시 나타난다.
+[Grassmann 다양체](grassmannian.md) $\mathrm{Gr}(k,n)$ 의 코호몰로지 곱셈 구조상수가 LR 수이므로, hive 모형은 Schubert 순환의 교차수를 다면체의 정수점으로 세는 방법이 된다. 교차수가 음이 아니라는 기하적 사실이 부등식 계의 해 개수라는 형태로 다시 나타난다.
 
 ## 표현론의 포화 현상
 

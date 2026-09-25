@@ -187,6 +187,6 @@ Schur 다항식에 매개변수를 하나나 둘 넣으면 다음 다항식족�
 - [Casselman–Shalika 공식](casselman-shalika.md)
 - [Schubert 계산](schubert-calculus.md)
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md)
-- [Littlewood–Richardson 규칙과 hive 모형](littlewood-richardson.md)
+- [Littlewood–Richardson 규칙](littlewood-richardson.md)
 
 #combinatorics #algebra #linear_algebra
