@@ -88,6 +88,6 @@ Noether 환 $R$ 의 모든 소 아이디얼 $\mathfrak p$ 에서 국소화 $R_\m
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Cohen–Macaulay 환](cohen-macaulay-rings.md)
 
 #ring_theory #algebra #topology
