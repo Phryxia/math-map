@@ -120,7 +120,7 @@ $$
 - **동치성.** $L(A) = L(B)$ 는 대칭차 $(A \cap B^c) \cup (A^c \cap B)$ 의 공허성과 같다. 또는 최소화 후 동형 판정, 또는 Hopcroft–Karp 방식으로 상태 쌍을 합병하며 확인한다.
 - **최소화.** Hopcroft 알고리즘이 $O(n \log n)$ 에 최소 DFA 를 만든다. 구분 불가능한 상태들을 반복적으로 병합하는 과정이며, 결과는 Myhill–Nerode 동치류와 일치한다.
 
-NFA 의 동치성·전체성 판정은 PSPACE(polynomial space)-complete 이며([NP-완전성](np-completeness.md)(nondeterministic polynomial time)의 개념을 PSPACE 로 옮긴 것), 결정적으로 바꿀 때의 지수적 상태 폭발이 그 비용의 원천이다.
+NFA 의 동치성·전체성 판정은 PSPACE(polynomial space)-완전이며([NP-완전성](np-completeness.md)(nondeterministic polynomial time)의 개념을 PSPACE 로 옮긴 것), 결정적으로 바꿀 때의 지수적 상태 폭발이 그 비용의 원천이다.
 
 ## 계산 모델 계층에서의 위치
 

@@ -4,7 +4,7 @@
 
 유일분해정역(unique factorization domain, UFD)은 $0$ 이 아닌 비단위 원소가 기약원의 곱으로 쓰이고 그 분해가 순서와 단위원 배수를 무시하면 유일한 정역이다. [소수](primes.md)에서 정수에 대해 성립한 산술의 기본정리를 환 일반으로 옮긴 조건이다.
 
-정역 가운데 이 성질을 갖는 것을 가려내는 기준이 Euclid 정역과 주아이디얼정역이다. 셋은 포함 사슬을 이루고, [다항식환](polynomial-rings.md)은 계수환이 무엇이냐에 따라 사슬의 어느 칸에 놓일지가 갈린다. [대수적 수체](algebraic-number-fields.md)의 정수환은 이 사슬에서 떨어져 나가며, 분해의 대상을 원소에서 아이디얼로 바꾸어 유일성을 복구한 것이 [Dedekind 정역](dedekind-domains.md)이다.
+정역 가운데 이 성질을 갖는 것을 가려내는 기준이 유클리드 정역과 주아이디얼정역이다. 셋은 포함 사슬을 이루고, [다항식환](polynomial-rings.md)은 계수환이 무엇이냐에 따라 사슬의 어느 칸에 놓일지가 갈린다. [대수적 수체](algebraic-number-fields.md)의 정수환은 이 사슬에서 떨어져 나가며, 분해의 대상을 원소에서 아이디얼로 바꾸어 유일성을 복구한 것이 [Dedekind 정역](dedekind-domains.md)이다.
 
 # 직관
 
@@ -31,7 +31,7 @@ $$
 a = u\thinspace p_1\cdots p_m,\qquad u\in R^{\times},\ p_i \text{ 기약}
 $$
 
-**주아이디얼정역**(principal ideal domain, PID)은 모든 [아이디얼](ideals-quotient-rings.md)이 한 원소로 생성되는 정역이다. **Euclid 정역**(Euclidean domain, ED)은 함수 $N\colon R\setminus\lbrace 0\rbrace \to \mathbb Z\_{\ge 0}$ 가 있어 $b \ne 0$ 인 임의의 $a,b$ 에 대해 $a=qb+r$ 이고 $r=0$ 이거나 $N(r)\lt N(b)$ 인 $q,r$ 가 존재하는 정역이다.
+**주아이디얼정역**(principal ideal domain, PID)은 모든 [아이디얼](ideals-quotient-rings.md)이 한 원소로 생성되는 정역이다. **유클리드 정역**(Euclidean domain, ED)은 함수 $N\colon R\setminus\lbrace 0\rbrace \to \mathbb Z\_{\ge 0}$ 가 있어 $b \ne 0$ 인 임의의 $a,b$ 에 대해 $a=qb+r$ 이고 $r=0$ 이거나 $N(r)\lt N(b)$ 인 $q,r$ 가 존재하는 정역이다.
 
 # 성질
 
@@ -86,7 +86,7 @@ PID 는 이 성질을 갖지 않는다. $\mathbb Z$ 는 PID 이지만 $\mathbb Z
 
 UFD 에서는 두 원소의 최대공약수가 지수별 최솟값으로 정의되고 단위원 배수를 무시하면 유일하다. PID 에서는 여기에 더해 $\gcd(a,b)=d$ 가 $(a,b)=(d)$ 를 만족하므로 $d=ax+by$ 꼴로 쓰인다. ED 에서는 그 $x,y$ 를 [유클리드 알고리즘](euclidean-algorithm.md)의 확장형으로 실제로 계산한다.
 
-[^1]: P. M. Cohn, "On the structure of the $\mathrm{GL}\_2$ of a ring", Publications mathématiques de l'IHÉS 30 (1966), 5–53. $\mathbb Z\bigl[\tfrac{1+\sqrt{-19}}{2}\bigr]$ 가 Euclid 정역이 아닌 PID 라는 확인. http://www.numdam.org/item/PMIHES_1966__30__5_0/
+[^1]: P. M. Cohn, "On the structure of the $\mathrm{GL}\_2$ of a ring", Publications mathématiques de l'IHÉS 30 (1966), 5–53. $\mathbb Z\bigl[\tfrac{1+\sqrt{-19}}{2}\bigr]$ 가 유클리드 정역이 아닌 PID 라는 확인. http://www.numdam.org/item/PMIHES_1966__30__5_0/
 [^2]: S. Lang, *Algebra*, 3rd ed., Springer GTM 211, Chapter IV §2. Gauss 보조정리와 $R$ UFD $\Rightarrow$ $R[x]$ UFD.
 
 # 연관 문서

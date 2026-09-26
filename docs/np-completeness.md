@@ -85,7 +85,7 @@ Levin의 원 논문은 같은 결과를 탐색 문제(search problem)의 형태�
 
 ## 환원의 사슬
 
-NP-완전성을 새로 증명할 때는 Cook–Levin을 반복하지 않는다. 이미 NP-complete인 문제 $B$ 에서 새 문제 $C$ 로의 환원 $B \le_p C$ 를 만들고 $C \in NP$ 를 확인하면, 추이성에 의해 $C$ 도 NP-complete다. 환원의 방향을 뒤집으면(즉 $C \le_p B$ 를 보이면) 아무것도 증명되지 않는다는 점이 가장 흔한 실수다.
+NP-완전성을 새로 증명할 때는 Cook–Levin을 반복하지 않는다. 이미 NP-완전인 문제 $B$ 에서 새 문제 $C$ 로의 환원 $B \le_p C$ 를 만들고 $C \in NP$ 를 확인하면, 추이성에 의해 $C$ 도 NP-complete다. 환원의 방향을 뒤집으면(즉 $C \le_p B$ 를 보이면) 아무것도 증명되지 않는다는 점이 가장 흔한 실수다.
 
 ```mermaid
 flowchart TD
