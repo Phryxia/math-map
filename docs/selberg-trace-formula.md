@@ -172,7 +172,7 @@ $$
 ## 선수지식
 
 - [Eisenstein 급수](eisenstein-series.md)
-- [Maass 형식과 Laplace 스펙트럼](maass-forms.md)
+- [Maass 형식](maass-forms.md)
 - [Riemann 계량](riemannian-metrics.md)
 
 ## 더 알아보기

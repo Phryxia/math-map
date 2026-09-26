@@ -1,4 +1,4 @@
-# Maass 형식과 Laplace 스펙트럼
+# Maass 형식
 
 # 개요
 

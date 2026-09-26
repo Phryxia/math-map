@@ -206,7 +206,7 @@ $E(z,s)$ 의 유수가 상수라는 사실에서 기본영역의 부피가 계�
 
 ## 더 알아보기
 
-- [Maass 형식과 Laplace 스펙트럼](maass-forms.md)
+- [Maass 형식](maass-forms.md)
 - [Mock 모듈러 형식과 Zwegers 이론](mock-modular-forms.md)
 - [Rankin–Selberg 적분](rankin-selberg.md)
 - [Selberg 대각합 공식](selberg-trace-formula.md)
