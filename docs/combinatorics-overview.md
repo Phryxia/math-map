@@ -38,7 +38,7 @@ graph TD
 - [Ramsey 이론](ramsey-theory.md): 충분히 크면 질서가 강제된다
 - [Turán 정리](turan-theorem.md): $K_{r+1}$ 을 금지한 그래프의 최대 간선 수와 그 값을 주는 Turán 그래프
 - [Dilworth 정리](dilworth-theorem.md): 사슬 덮개와 반사슬의 최소최대 정리, Erdős–Szekeres 정리
-- [Sperner 정리](sperner-theorem.md): 부분집합 격자의 최대 반사슬과 LYM 부등식
+- [Sperner 정리](sperner-theorem.md): 부분집합 격자의 최대 반사슬과 LYM(Lubell–Yamamoto–Meshalkin) 부등식
 - [Erdős–Ko–Rado 정리](erdos-ko-rado.md): 교차족의 최대 크기, Katona 의 순환 배열 세기
 - [Littlewood–Offord 문제](littlewood-offord.md): 부호합의 반집중, 반사슬 논법이 주는 상한
 - [Sperner 보조정리](sperner-lemma.md): 단체의 이름표가 강제하는 완전 단체, Brouwer 고정점 정리의 조합적 증명

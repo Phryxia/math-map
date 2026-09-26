@@ -48,7 +48,7 @@ $a_p=0$ 은 점이다. $p$ 가 커질수록 $a_p$ 가 놓일 자리가 $4\sqrt p
 
 ## 상수의 오일러 곱
 
-$a_p=r$ 을 확인하려면 모든 $\ell$ 에서 $a_p\equiv r\pmod\ell$ 이어야 한다. [Galois 표현](galois-representations.md) $\rho_{E,\ell}$ 의 상 안에서 대각합이 $r$ 인 원소의 비율이 그 확률을 준다. 상이 $\mathrm{GL}\_2(\mathbb F_\ell)$ 전체라면(CM 이 없으면 거의 모든 $\ell$ 에서 그렇다, Serre) 그 비율은 초등적으로 계산된다.
+$a_p=r$ 을 확인하려면 모든 $\ell$ 에서 $a_p\equiv r\pmod\ell$ 이어야 한다. [Galois 표현](galois-representations.md) $\rho_{E,\ell}$ 의 상 안에서 대각합이 $r$ 인 원소의 비율이 그 확률을 준다. 상이 $\mathrm{GL}\_2(\mathbb F_\ell)$ 전체라면 그 비율은 초등적으로 계산된다. 복소 곱셈(complex multiplication, CM)이 없으면 거의 모든 $\ell$ 에서 상이 전체다(Serre).
 
 그리고 [Chebotarev 밀도 정리](chebotarev.md)가 각 $\ell$ 에서의 밀도를 실제 소수의 밀도로 바꿔 준다. 서로 다른 $\ell$ 들이 독립이라 가정하면 확률이 곱해지고, 아르키메데스 쪽의 $1/\sqrt p$ 와 합쳐
 
