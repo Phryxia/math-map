@@ -142,7 +142,7 @@ $$
 
 ## 같은 틀을 쓰는 분야와 대안 기준
 
-임상시험의 우월성과 비열등성 검정, A/B 테스트, 품질관리의 관리도, 난수 생성기의 적합도 검정이 같은 틀을 쓴다. 입자물리의 5 시그마 기준은 표준정규분포의 단측 꼬리 확률 약 $3\times10^{-7}$ 에 해당하며, 동시에 살펴보는 가설이 많다는 사실을 반영한 관례다. 대안으로 사후확률과 Bayes factor 를 보고하는 방식, [Shannon 엔트로피](entropy.md) 기반의 정보량 기준(AIC 등)으로 모형을 비교하는 방식이 있다.
+임상시험의 우월성과 비열등성 검정, A/B 테스트, 품질관리의 관리도, 난수 생성기의 적합도 검정이 같은 틀을 쓴다. 입자물리의 5 시그마 기준은 표준정규분포의 단측 꼬리 확률 약 $3\times10^{-7}$ 에 해당하며, 동시에 살펴보는 가설이 많다는 사실을 반영한 관례다. 대안으로 사후확률과 Bayes factor 를 보고하는 방식, [Shannon 엔트로피](entropy.md) 기반의 정보량 기준(Akaike information criterion, AIC) 등으로 모형을 비교하는 방식이 있다.
 
 [^1]: R. L. Wasserstein and N. A. Lazar, "The ASA Statement on p-Values: Context, Process, and Purpose", The American Statistician 70(2), 2016. https://www.tandfonline.com/doi/full/10.1080/00031305.2016.1154108
 [^2]: American Statistical Association, "ASA Statement on Statistical Significance and P-Values", 2016 (여섯 원칙). https://www.amstat.org/asa/files/pdfs/p-valuestatement.pdf
