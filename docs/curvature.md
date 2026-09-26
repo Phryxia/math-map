@@ -124,6 +124,6 @@ $$
 
 ## 더 알아보기
 
-- [Riemann 계량과 측지선](riemannian-metrics.md)
+- [Riemann 계량](riemannian-metrics.md)
 
 #differential_geometry #topology #computation

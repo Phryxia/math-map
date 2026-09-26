@@ -146,7 +146,7 @@ $\mathcal T_g$ 는 $\mathbb C^{3g-3}$ 안의 유계영역으로 실현되며(Ber
 ## 선수지식
 
 - [곡면의 분류](classification-of-surfaces.md)
-- [Riemann 계량과 측지선](riemannian-metrics.md)
+- [Riemann 계량](riemannian-metrics.md)
 - [Riemann 곡면과 균일화 정리](riemann-surfaces.md)
 
 ## 더 알아보기

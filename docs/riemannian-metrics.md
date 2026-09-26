@@ -1,4 +1,4 @@
-# Riemann 계량과 측지선
+# Riemann 계량
 
 # 개요
 

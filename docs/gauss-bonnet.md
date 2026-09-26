@@ -95,7 +95,7 @@ $3F = 2E$ 를 $-\pi F = 2\pi F - 3\pi F = 2\pi F - 2\pi E$ 로 쓰면 우변이 
 
 ## 선수지식
 
-- [Riemann 계량과 측지선](riemannian-metrics.md)
+- [Riemann 계량](riemannian-metrics.md)
 - [Euler 지표](euler-characteristic.md)
 
 ## 더 알아보기

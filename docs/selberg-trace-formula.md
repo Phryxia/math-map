@@ -173,7 +173,7 @@ $$
 
 - [Eisenstein 급수](eisenstein-series.md)
 - [Maass 형식과 Laplace 스펙트럼](maass-forms.md)
-- [Riemann 계량과 측지선](riemannian-metrics.md)
+- [Riemann 계량](riemannian-metrics.md)
 
 ## 더 알아보기
 

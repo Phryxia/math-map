@@ -149,7 +149,7 @@ $$
 - 연결 열린집합 위에서 도함수가 항상 $0$ 인 함수는 상수다. 증명의 핵심은 "국소상수 함수는 연결 공간에서 상수"라는 동치 조건이다([미분](derivative.md)).
 - [정칙함수](holomorphic-functions.md)의 항등 정리는 연결 열린집합(영역)에서만 성립한다. 영점 집합이 집적점을 가지면 "함수가 항등적으로 0인 점들의 집합"이 clopen이 되어 전체로 퍼진다.
 - [상미분방정식](ordinary-differential-equations.md)의 최대 해의 정의역이 구간인 것도 연결성 논증이다.
-- [곡면의 분류](classification-of-surfaces.md)와 [Riemann 계량과 측지선](riemannian-metrics.md)은 모두 연결 다양체를 기본 대상으로 삼는다. 연결 가정이 없으면 분류 정리는 성분별 진술로 흩어진다.
+- [곡면의 분류](classification-of-surfaces.md)와 [Riemann 계량](riemannian-metrics.md)은 모두 연결 다양체를 기본 대상으로 삼는다. 연결 가정이 없으면 분류 정리는 성분별 진술로 흩어진다.
 
 ## 이산 구조와의 대비
 

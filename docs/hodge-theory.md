@@ -193,7 +193,7 @@ Hodge 분해는 게이지 고정의 기하적 정체다. 퍼텐셜 $A$ 의 $d\Om
 ## 선수지식
 
 - [de Rham 코호몰로지](de-rham-cohomology.md)
-- [Riemann 계량과 측지선](riemannian-metrics.md)
+- [Riemann 계량](riemannian-metrics.md)
 
 ## 더 알아보기
 
