@@ -150,7 +150,7 @@ $$
 P=\mathrm{diag}(u)\thinspace K\thinspace\mathrm{diag}(v),\qquad K_{ij}=e^{-C_{ij}/\varepsilon}
 $$
 
-$u,v$ 를 주변분포 조건에 맞추는 일만 남고, 두 조건을 번갈아 강제하는 것이 **Sinkhorn 반복**이다. 행렬-벡터 곱만 쓰므로 GPU 에서 빠르고 반복 전체가 미분가능해 신경망 손실함수로 쓰인다.
+$u,v$ 를 주변분포 조건에 맞추는 일만 남고, 두 조건을 번갈아 강제하는 것이 **Sinkhorn 반복**이다. 행렬-벡터 곱만 쓰므로 GPU(graphics processing unit) 에서 빠르고 반복 전체가 미분가능해 신경망 손실함수로 쓰인다.
 
 대가는 편향이다. $\varepsilon\gt 0$ 이면 해가 퍼져서 비용이 실제 $W$ 보다 크고, $\varepsilon\to0$ 에서 참값으로 수렴하지만 $K$ 가 수치적으로 무너지므로 로그영역 계산이 필요하다.
 

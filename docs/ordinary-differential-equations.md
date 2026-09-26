@@ -128,7 +128,7 @@ $$
 x_{k+1}=x_k+h\thinspace f(t_k,x_k),\qquad t_{k+1}=t_k+h
 $$
 
-$f$ 가 Lipschitz 이고 해가 두 번 미분가능한 구간에서 전역 오차는 $h$ 에 비례한다(1차 정확도). 국소 절단오차는 $h^2$ 규모이지만 단계 수가 $1/h$ 규모라서 한 차수 손실이 생긴다. 실무에서는 4차 Runge–Kutta나, 강성(stiff) 문제에서 안정성이 좋은 음함수 방법(implicit Euler, BDF)을 쓴다.
+$f$ 가 Lipschitz 이고 해가 두 번 미분가능한 구간에서 전역 오차는 $h$ 에 비례한다(1차 정확도). 국소 절단오차는 $h^2$ 규모이지만 단계 수가 $1/h$ 규모라서 한 차수 손실이 생긴다. 실무에서는 4차 Runge–Kutta나, 강성(stiff) 문제에서 안정성이 좋은 음함수 방법을 쓴다. 후진 Euler 와 BDF(backward differentiation formula)가 그 예다.
 
 ## 모형화와 이웃 분야
 
