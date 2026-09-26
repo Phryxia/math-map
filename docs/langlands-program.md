@@ -4,7 +4,7 @@
 
 [유체론](class-field-theory.md)은 수체 $K$ 의 아벨 확대를 $K$ 안의 산술로 완전히 분류했다. 이 분류는 Galois 군이 아벨일 때 Frobenius 원소가 소 [아이디얼](ideals-quotient-rings.md) 하나마다 잘 정의된다는 점에 기댄다. 비아벨 확대에서는 이 사상이 무너진다. $\mathrm{Frob}\_{\mathfrak p}$ 가 원소가 아니라 켤레류이기 때문이다.
 
-Langlands 강령은 켤레류를 다룰 수 있는 대상으로 바꾼다. 켤레류에서 수를 뽑는 표준적인 방법은 [표현의 지표](group-representations.md)를 취하는 것이므로, Galois 군의 표현 $\rho\colon\mathrm{Gal}(\bar K/K)\to\mathrm{GL}\_n$ 을 대상으로 삼는다. 그리고 각 $\rho$ 에 전혀 다른 세계의 대상, 곧 $\mathrm{GL}\_n(\mathbb A_K)$ 위의 자기동형 표현 $\pi$ 가 대응한다고 예측한다.
+Langlands 강령은 켤레류를 다룰 수 있는 대상으로 바꾼다. 켤레류에서 수를 뽑는 표준적인 방법은 [표현의 지표](group-representations.md)를 취하는 것이므로, Galois 군의 표현 $\rho\colon\mathrm{Gal}(\bar K/K)\to\mathrm{GL}\_n$ 을 대상으로 삼는다. 그리고 각 $\rho$ 에 전혀 다른 종류의 대상, 곧 $\mathrm{GL}\_n(\mathbb A_K)$ 위의 자기동형 표현 $\pi$ 가 대응한다고 예측한다.
 
 $$
 \rho \thickspace\longleftrightarrow\thickspace \pi,\qquad L(s,\rho)=L(s,\pi)
@@ -26,32 +26,17 @@ $$
 
 $n=1$ 이면 Hecke $L$ 함수이고 $K=\mathbb Q$ 로 내려오면 [Dirichlet L 함수](dirichlet-l-functions.md)다.
 
-## 두 세계의 비대칭
+## 두 정의의 비대칭
 
 $L(s,\rho)$ 의 정의는 $\mathrm{Re}(s)\gt 1$ 에서만 수렴한다. Artin 은 $\rho$ 가 자명하지 않은 기약 표현이면 $L(s,\rho)$ 가 복소평면 전체의 정함수라고 추측했지만, Euler 곱은 국소 정보를 모아 놓은 것이라 Galois 쪽 정의만으로는 해석적 접속이 보이지 않는다.
 
 모듈러 형식의 $L$ 함수는 반대다. 형식의 변환 규칙에 [Mellin 변환](mellin-transform.md)을 적용하면 해석적 접속과 함수방정식이 바로 나오지만, 계수의 산술적 의미가 보이지 않는다.
 
-```mermaid
-graph LR
-  subgraph G["산술의 세계"]
-    G1["Galois 표현 ρ"] --> G2["Frob_p 의 특성다항식"]
-    G2 --> G3["L(s,ρ)"]
-    G3 -.->|"안 보임"| G4["해석적 접속<br/>함수방정식"]
-  end
-  subgraph A["해석의 세계"]
-    A1["자기동형 표현 π<br/>(모듈러 형식 등)"] --> A2["Hecke 고유값"]
-    A2 --> A3["L(s,π)"]
-    A3 -->|"변환식에서<br/>바로 나옴"| A4["해석적 접속<br/>함수방정식"]
-  end
-  G1 <===>|"Langlands 대응<br/>L 함수가 일치"| A1
-```
-
 대응이 성립하면 Galois 쪽이 해석적 성질을 얻고(Artin 추측) 자기동형 쪽이 계수의 산술적 의미를 얻는다.
 
 ## 대응의 근거
 
-두 세계가 주는 데이터의 모양이 같다. Galois 쪽은 소수마다 $n$ 개의 Frobenius 고윳값을 주고 자기동형 쪽은 소수마다 $n$ 개의 [Satake 매개변수](satake-isomorphism.md)를 주며, $n=1$ 에서 유체론이 둘의 일치를 증명했다.
+양쪽이 주는 데이터의 모양이 같다. Galois 쪽은 소수마다 $n$ 개의 Frobenius 고윳값을 주고 자기동형 쪽은 소수마다 $n$ 개의 [Satake 매개변수](satake-isomorphism.md)를 주며, $n=1$ 에서 유체론이 둘의 일치를 증명했다.
 
 강한 다중도 1 정리에 따르면 거의 모든 자리에서 국소 성분이 같은 두 자기동형 표현은 같으므로, $\rho$ 에 대응하는 $\pi$ 는 존재하면 하나뿐이다. 남은 것은 존재이고 그것이 강령의 내용이다.
 
