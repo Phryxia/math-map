@@ -22,13 +22,23 @@ $g(x)=\lambda\Vert x\Vert\_1$ 이면 이 최소화가 좌표마다 갈라지고 
 
 $F=f+g$ 를 최소화한다. $f$ 는 미분가능한 볼록 함수이고 $\nabla f$ 가 $L$ -Lipschitz, $g$ 는 볼록이고 하반연속이며 어딘가에서 유한한 값을 갖는다. 최솟값을 $F^\star$ , 최소점을 $x^\star$ 로 쓴다.
 
+## 부분미분
+
+볼록 함수 $g$ 의 점 $u$ 에서의 **부분미분** $\partial g(u)$ 는 다음을 만족하는 벡터 $p$ 전부의 집합이다.
+
+$$
+g(x)\ge g(u)+\langle p,\thinspace x-u\rangle\qquad(\forall x)
+$$
+
+$g$ 가 $u$ 에서 미분가능하면 $\partial g(u)=\lbrace\nabla g(u)\rbrace$ 다. $g$ 가 $u$ 에서 최솟값을 가지는 것과 $0\in\partial g(u)$ 인 것이 동치다. $g(x)=\vert x\vert$ 는 $u=0$ 에서 $\partial g(0)=\lbrack -1,1\rbrack$ 이다.
+
 ## 근접 연산자
 
 $$
 \mathrm{prox}\_{\eta g}(z)=\mathop{\mathrm{arg\thinspace min}}\_{x}\Bigl(g(x)+\frac{1}{2\eta}\Vert x-z\Vert^2\Bigr)
 $$
 
-이 사상을 $g$ 의 **근접 연산자**(proximal operator) 라 한다. 괄호 안이 $1/\eta$ 강볼록이므로 최소점이 하나뿐이고 연산자가 잘 정의된다. $g$ 가 볼록집합 $C$ 의 지시함수이면 $\mathrm{prox}\_{\eta g}$ 는 $C$ 로의 사영이다.
+이 사상을 $g$ 의 **근접 연산자**(proximal operator) 라 한다. 괄호 안이 $1/\eta$ 강볼록이므로 최소점이 하나뿐이고 연산자가 잘 정의된다. $g$ 가 $C$ 안에서 $0$ 이고 밖에서 $+\infty$ 인 함수, 곧 볼록집합 $C$ 의 지시함수이면 $\mathrm{prox}\_{\eta g}$ 는 $C$ 로의 사영이다.
 
 ## 근접 경사 반복
 
@@ -64,7 +74,7 @@ $$
 
 정리. 모든 $z,w$ 에 대해 $\Vert\mathrm{prox}\_{\eta g}(z)-\mathrm{prox}\_{\eta g}(w)\Vert\le\Vert z-w\Vert$ 다[^1].
 
-증명의 요지. $u=\mathrm{prox}\_{\eta g}(z)$ , $v=\mathrm{prox}\_{\eta g}(w)$ 로 두면 $(z-u)/\eta\in\partial g(u)$ 이고 $(w-v)/\eta\in\partial g(v)$ 다. 볼록 함수의 부분미분은 단조이므로 $\langle (z-u)-(w-v),\thinspace u-v\rangle\ge 0$ 이다. 정리하면 $\Vert u-v\Vert^2\le\langle z-w,\thinspace u-v\rangle$ 이고 Cauchy–Schwarz 부등식으로 결론이 나온다.
+증명의 요지. $u=\mathrm{prox}\_{\eta g}(z)$ , $v=\mathrm{prox}\_{\eta g}(w)$ 로 두면 $(z-u)/\eta\in\partial g(u)$ 이고 $(w-v)/\eta\in\partial g(v)$ 다. 부분미분의 정의 부등식을 두 점에서 쓰고 더하면 $\langle p-q,\thinspace u-v\rangle\ge 0$ 이 모든 $p\in\partial g(u)$ , $q\in\partial g(v)$ 에서 성립하므로 $\langle (z-u)-(w-v),\thinspace u-v\rangle\ge 0$ 이다. 정리하면 $\Vert u-v\Vert^2\le\langle z-w,\thinspace u-v\rangle$ 이고 Cauchy–Schwarz 부등식으로 결론이 나온다.
 
 ## 고정점과 최적성
 
