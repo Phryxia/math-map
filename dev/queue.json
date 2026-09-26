@@ -1,23 +1,15 @@
 {
   "version": 1,
-  "savedAt": "2026-09-26T09:03:02.503Z",
-  "nextSeq": 1245,
+  "savedAt": "2026-09-26T13:07:59.837Z",
+  "nextSeq": 1249,
   "items": [
     {
-      "id": "5e748333",
-      "title": "나열형 mermaid 전수 훑기 2차 (남은 경계 판정)",
+      "id": "928038bd",
+      "title": "나열형 mermaid 전수 훑기 5차 (br/> 없는 목록 이어서)",
       "priority": 50,
-      "note": "2026-09-26 회차가 1차다. grep -l 'br/>' docs/*.md 로 뽑은 30 건(개관 제외)을 전수 판정해 16 건을 지웠다. 지운 것: exact-wkb, kernel-pca, probabilistic-pca, volume-conjecture, witten-asymptotics, fontaine-mazur, greenberg-conjecture, hodge-theory, modular-tensor-categories, mv-cycles, kazhdan-lusztig, waldspurger-formula, schellekens-list, fundamental-lemma, poitou-tate, iwasawa-main-conjecture, elliptic-curves, modular-curves, wess-zumino-witten, geometrization, pairing-based-cryptography, complex-multiplication, langlands-program. 판정 기준으로 쓸 만했던 것: 그림의 라벨 문구가 본문 문단에 거의 그대로 있으면(elliptic-curves 가 극단적인 예로 두 문장을 그대로 옮겨 놓았다) 지워도 잃는 것이 없다. 증명 단계 나열(hodge-theory, volume-conjecture, witten-asymptotics, iwasawa-main-conjecture), 두 이론의 평행 비교(langlands-program), 개념 관계 방사형 나열(modular-tensor-categories, modular-curves, wess-zumino-witten)이 전형적인 위반 유형이다. 남긴 것과 근거: khovanov-homology(입방체 000-111 의 실제 그래프), kleisli-eilenberg-moore(수반 분해의 시작과 종단, 보편성질 도형), local-class-field-theory(확대의 탑), mass-formula(류에서 스피너 류로 내려가는 분할 계층, Hasse 도형 성격), newton-polygon(볼록포의 변과 기울기가 내용), sea-algorithm(Elkies/Atkin 분기와 CRT 합류가 실제 알고리즘의 흐름), class-field-theory(산술 쪽과 체 쪽을 subgraph 로 나눈 대응 구조), deuring-correspondence(기하와 대수 두 변, KLPT 우회 경로가 사각형 가환도). 뒤 둘은 경계이므로 2 차에서 다시 볼 것: 판정 기준은 subgraph 두 개를 표 두 열로 바꿔 쓸 수 있는지다. 곁들여 고친 비유: volume-conjecture '시금석', fontaine-mazur '사슬' 두 곳, langlands-program '세계' 세 곳, exact-wkb '해가 산다', 번역체 헤딩 '~로서의' 세 곳(exact-wkb, witten-asymptotics, probabilistic-pca). 2 차에 볼 것: br/> 가 없는 mermaid 문서 67 개가 아직 미판정이다. grep -l mermaid docs/*.md 에서 br/> 있는 것과 개관을 뺀 목록으로 시작할 것",
-      "createdAt": "2026-09-26T09:02:24.395Z",
-      "seq": 1243
-    },
-    {
-      "id": "aec08998",
-      "title": "헤딩 검사 정규식의 '지' 오검출",
-      "priority": 50,
-      "note": "2026-09-26 회차에 poitou-tate 를 고치다 발견했다. 4절 문체 규칙의 헤딩 검사 grep -n '^##' | grep -E '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) *$' 가 '## Euler 계 논법의 요지' 를 잡는다. '요지' 는 명사이므로 오검출이다. 전수로 확인할 것: grep -n '^##.*요지 *$' docs/*.md. 다른 명사 어미 '~지' 후보도 함께 볼 것(취지, 근거지, 소재지). 규칙 자체는 dev/ 가 아니라 CLAUDE.md 의 문구이므로 고치려면 독자에게 알려야 하고, 회차에서는 오검출임을 알고 넘기면 된다",
-      "createdAt": "2026-09-26T09:02:24.540Z",
-      "seq": 1244
+      "note": "2026-09-26 둘째 회차가 4차다(한 회차에 2차, 3차, 4차를 연달아 했다). 4차는 46 건 목록의 link-cut-trees 부터 여덟을 판정했다. 지운 셋: mathieu-groups 53(x^23+1 인수분해 -> Golay G23 -> 패리티 확장 G24 -> 무게 8 부호어 759 개 -> Steiner 계 -> M24 -> 점 고정 M23/M22, 그리고 Construction B -> Leech -> Conway 의 구성 단계 나열이다. 그림의 모든 정보가 본문에 있다: 인수분해는 '## Golay 부호' 68 줄, G23 과 G24 의 패리티 확장은 74 줄, 759 옥타드는 41 과 48 줄, Steiner 계와 자기동형군은 45 와 51 줄, 점 고정 부분군과 Leech-Conway 경로는 개요 17 줄), modules 29(아벨군 + 환 R -> R-가군 -> R 이 체면 벡터 공간 / R=Z 면 아벨군 / R=k[x] 면 선형변환 / R=k[G] 면 표현 의 특수화 나열이다. 4절이 '세 개념의 비교, 정의의 사슬은 다이어그램이 아니라 문장이나 표' 라고 명시한 유형 그대로이고, 같은 내용이 78-79 줄 목록과 137 줄 표와 178 줄 Jordan 표준형 항목에 이미 있다), monstrous-moonshine 43(Leech 격자 -> 격자 VOA -> Z/2 궤도체 -> V natural -> 괴물군 / j-744 / 괴물 Lie 대수 의 구성 단계와 개념 방사형 나열이다. 궤도체 구성은 80 줄, 자기동형군과 등급 차원은 77 줄 식, 무게 1 소멸과 j-744 는 86 줄, 괴물 Lie 대수는 '## 괴물 Lie 대수' 88 줄). 남긴 다섯과 근거: link-cut-trees 22(표현 대상 트리와 preferred path 별 splay tree 를 두 subgraph 로 그렸고 path parent 포인터가 그림에서만 보이는 실제 자료구조 그래프다), localization-rings 111(Spec R 과 Spec R_p 의 소 아이디얼 포함 격자 둘을 대응시키고 S 와 만나는 소 아이디얼이 '소멸 -> 없음' 으로 사라지는 것이 국소화의 효과를 정점으로 보인다. 2차 기준 (3) 의 경계 사례이지만 소멸하는 정점이 표 두 열로는 나오지 않아 남겼다), manifolds 11(M 에서 두 좌표근방으로 가고 좌표변환이 합성인 가환 삼각형), markov-chains 15(stateDiagram 이고 4절이 상태 기계를 명시 허용), monads 47(T^3X 에서 Tmu 와 muT 로 갈라져 mu 로 합류하는 결합법칙 가환도). 곁들여 고친 것: monstrous-moonshine 25 줄의 '두 세계를 잇는 대상은' 을 '양쪽을 잇는 대상은' 으로(4절 비유 금지, 1차 note 가 langlands-program 의 '세계' 세 곳을 고친 것과 같은 축). 5차에 볼 것: 46 건 목록의 id 순으로 natural-transformations 부터 이어서 여덟씩 판정할 것. 그 다음은 np-completeness order-lattices partial-orders principal-component-analysis random-walks root-systems schur-multipliers 다. 그 뒤로 source-coding sylow-theorems tensor-products uniform-integrability union-find vertex-operator-algebras yoneda-lemma 가 남고, 목록 앞쪽의 미판정 넷 adjunctions braid-groups cardinal-characteristics category 도 그대로 남아 있다(범주론 문서 넷이라 3차 기준 (4) 가 적용될 가능성이 높으므로 함께 볼 것). 판정 기준은 2차 note 의 셋과 3차 note 의 (4) 를 그대로 쓴다. 4차에 확인한 것: 대수 구조의 특수화 나열(modules)과 구성 단계 나열(mathieu-groups, monstrous-moonshine)은 화살표가 '~이면', '~을 거치면' 같은 논리 연결이므로 3차 기준 (4) 의 실제 사상 조건을 만족하지 않는다. 반면 monads 의 Tmu 와 muT 는 실제 자연변환이므로 남는다. 이 구별이 4차에서 잘 작동했다",
+      "createdAt": "2026-09-26T13:07:12.436Z",
+      "seq": 1248
     },
     {
       "id": "836bd89b",
