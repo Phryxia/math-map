@@ -152,6 +152,7 @@ $$
 ## 더 알아보기
 
 - [Nesterov 가속법](nesterov-acceleration.md)
+- [근접 경사법](proximal-gradient-method.md)
 - [확률적 경사하강법](stochastic-gradient-descent.md)
 - [변분 오토인코더](variational-autoencoder.md)
 

@@ -44,6 +44,7 @@ graph TD
 
 - [경사하강법](gradient-descent.md): 기울기 방향의 1 차 방법과 그 수렴률
 - [Nesterov 가속법](nesterov-acceleration.md): 직전 변위를 더해 조건수 의존을 제곱근으로 낮추는 1 차 방법
+- [근접 경사법](proximal-gradient-method.md): 미분 불가능한 볼록 항을 근접 연산자로 처리하는 반복, 연성 문턱과 ISTA
 - [확률적 경사하강법](stochastic-gradient-descent.md): 기울기를 표본으로 추정하는 반복, 잡음 구간과 보폭 일정
 - [적응적 경사 방법](adaptive-gradient-methods.md): 좌표별 기울기 제곱의 누적으로 보폭을 나누는 AdaGrad, RMSProp, Adam
 - [Newton 법](newton-method.md): 2 차 정보를 쓰는 국소 이차수렴

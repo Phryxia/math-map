@@ -100,7 +100,7 @@ $$
 
 ## 복합 목적함수의 근접 가속
 
-목적함수가 $f+g$ 꼴이고 $f$ 가 미분가능, $g$ 가 볼록이며 근접 연산자를 계산할 수 있으면, 가속 경사법의 걸음 $x_{k+1}=y_k-\nabla f(y_k)/L$ 을 근접 걸음으로 바꾼다. 이것이 FISTA(fast iterative shrinkage-thresholding algorithm) 이고 $O(1/k^2)$ 를 그대로 가진다. $g(x)=\lambda\Vert x\Vert\_1$ 로 두면 $\ell^1$ 정칙화 회귀를 푸는 표준 반복이 된다.
+목적함수가 $f+g$ 꼴이고 $f$ 가 미분가능, $g$ 가 볼록이며 [근접 연산자](proximal-gradient-method.md)를 계산할 수 있으면, 가속 경사법의 걸음 $x_{k+1}=y_k-\nabla f(y_k)/L$ 을 근접 걸음으로 바꾼다. 이것이 FISTA(fast iterative shrinkage-thresholding algorithm) 이고 $O(1/k^2)$ 를 그대로 가진다. $g(x)=\lambda\Vert x\Vert\_1$ 로 두면 $\ell^1$ 정칙화 회귀를 푸는 표준 반복이 된다.
 
 ## 신경망 학습
 
