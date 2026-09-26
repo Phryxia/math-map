@@ -24,7 +24,7 @@ $\mathrm{GL}\_n(K)$ 가 부분공간을 옮겨 추이적으로 작용하고, 표
 
 ## Plücker 매장
 
-$W\in\mathrm{Gr}(k,V)$ 의 기저 $w_1,\dots,w_k$ 에 대해 외적 $w_1\wedge\cdots\wedge w_k$ 를 잡는다. 기저를 바꾸면 이 값이 기저변환 행렬의 행렬식 배로만 달라지므로 사영공간의 점 하나가 정해진다.
+$W\in\mathrm{Gr}(k,V)$ 의 기저 $w_1,\dots,w_k$ 에 대해 외적 $w_1\wedge\cdots\wedge w_k$ 를 잡는다. 기저를 바꾸면 이 값이 기저변환 행렬의 [행렬식](determinants.md) 배로만 달라지므로 사영공간의 점 하나가 정해진다.
 
 $$\mathrm{Gr}(k,V)\hookrightarrow\mathbb P\bigl(\Lambda^k V\bigr),\qquad W\mapsto\lbrack w_1\wedge\cdots\wedge w_k\rbrack$$
 
