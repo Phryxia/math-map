@@ -1,72 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-25T21:01:16.848Z",
-  "nextSeq": 1207,
+  "savedAt": "2026-09-26T00:57:21.256Z",
+  "nextSeq": 1220,
   "items": [
-    {
-      "id": "6378ecee",
-      "title": "중복 H2 회귀 점검 (다음 차수)",
-      "priority": 12,
-      "note": "2026-09-25 회차에 세 검사를 520 문서에 돌려 전부 0 건이다. (1) 중복 H2: for f in docs/*.md; do grep -o '^## .*' $f | sort | uniq -d; done. (2) 중복 H3(더 알아보기 아래 묶음 이름 제외): sed -n '1,/^## 더 알아보기/p' $f | grep -o '^### .*' | sort | uniq -d. (3) H1 규격: 스크래치패드 h1.mjs 로 코드펜스를 건너뛰고 첫 H1(제목)과 '연관 문서' 를 뺀 나머지가 개요/직관/정의/성질/활용의 부분수열인지 본다(개관은 개요/지도/갈래). 직전 차수 515 문서에서 5 개 늘었고 회귀 없음. 이 회차에 새로 쓴 넷(zilber-trichotomy, regular-local-rings, algebraic-multigrid, coleman-integration)도 통과했다. 앞 note 가 함께 보라고 한 'A와 B' 제목 축은 같은 회차에 따로 열었다(큐의 '제목과 파일명이 어긋난 문서 훑기' 항목으로 옮겼고, 정확한 목록 명령은 for f in docs/*.md; do head -1 $f | grep -qP '^# .+(와|과) ' && basename $f .md; done 이다). 다음 차수는 새 문서가 여러 개 들어온 뒤 세 검사를 함께 돌린다",
-      "createdAt": "2026-09-25T08:56:00.929Z",
-      "seq": 1160
-    },
-    {
-      "id": "40c53354",
-      "title": "자리표시자 헤딩 훑기 (13차)",
-      "priority": 12,
-      "note": "2026-09-25 회차 12차. 11차가 지시한 일곱 짧은 헤딩을 셌다('## 역사|일반화|관계|비교' 는 0 건, '## 확장' 4 건, '## 특수 사례' 2 건, '## 반례' 2 건). 고친 셋: dominated-convergence 70 '## 반례'->'## 지배 조건의 필요성'(같은 문서 11·15 줄에 '지배함수가 없는 열'·'있는 열' 이 이미 있어 함수열 이름을 피했다. 절 내용이 반례와 '조건은 충분조건' 두 문장이므로 필요성이 맞는 이름이다), lipschitz-maps 51 '## 확장'->'## McShane 확장'(절이 McShane 확장 정리 하나를 다룬다), uniform-integrability 145 '## 반례'->'## $L^1$ 유계이지만 UI 가 아닌 함수열'(표가 L^1 유계성과 UI 의 차이를 보이는 세 예다). 남긴 다섯과 근거: casson-invariant 94·index-theorem 123·principal-component-analysis 118 의 '## 확장' 과 chebotarev 74·index-theorem 49 의 '## 특수 사례' 는 목록 항목마다 굵은 글씨 고유 이름이 붙어 있어 헤딩이 묶음 이름 역할만 한다. 자리표시자가 아니다. 13차에 볼 것: 아직 세지 않은 짧은 헤딩은 '## 응용 사례', '## 예제', '## 정리와 증명', '## 보조정리', '## 관찰', '## 논의', '## 기타' 다. grep -cE 로 세고 판정할 것. 다시 보지 않는 목록(8차·10차·11차·12차가 관행으로 판정): '## 정리' 14, '## 증명' 7, '## 알고리즘' 10, '## 따름정리' 7, '## 기본 성질' 6, '## 계산 복잡도' 5, '## 증명의 요지' 11, '## 존재 정리' 6, '## 정의|동기|배경|성질|예시|개요|활용|예|구성' 0, '## 역사|일반화|관계|비교' 0, 위 남긴 다섯. 함께 볼 것(9차 note 에서 이어짐): khovanov-homology 137 절의 '3 차원 다양체 불변량의 범주화는 훨씬 어렵고 부분적으로만 알려져 있다' 는 4절 열린 문제 규칙에 걸리므로 그 문서를 보강할 때 판정할 것",
-      "createdAt": "2026-09-25T08:58:50.678Z",
-      "seq": 1162
-    },
-    {
-      "id": "7a248870",
-      "title": "헤딩 안 링크 회귀 점검 (다음 차수)",
-      "priority": 12,
-      "note": "2026-09-25 회차에 네 축을 520 문서에 돌렸고 회귀가 없다. (1) 헤딩 안 링크 grep -n '^#\\+ .*](.*\\.md)' 0 건(docs 와 README 양쪽). (2) 중첩 링크 0 건. 주의: grep -rnE '\\[[^]]*\\[' 은 수식의 [[T]] 와 [X,[Y,Z]] 와 [0,1) 을 잡아 60 건 넘게 오검출한다. 정확한 패턴은 grep -rnE '\\[[^]]*\\[[^]]+\\]\\([a-z0-9-]+\\.md\\)' 이고 이것도 measure 86 한 건을 오검출하지만(같은 줄에 $[0,1)$ 수식과 링크가 함께 있다) 검토 대상이 한 건뿐이라 쓸 만하다. (3) 없는 링크 대상 0 건(graph.mjs validate 가 같은 축을 본다). (4) 굵은 글씨 안 링크는 8 건이고 목록이 직전 차수와 완전히 같다: change-of-measure 1, langlands-program 1, power-series 3, uniform-convergence 3. 전부 앞 회차가 예외로 확정한 '- **[제목](id.md)**: 설명' 꼴 목록 표제다. 판정 기준은 확정이다: 문장 안이면 굵은 표시를 빼고 목록 표제면 둔다. 다음 차수는 새 문서가 여러 개 들어온 회차 뒤에 네 축을 함께 돌리고, 굵은 글씨 축은 위 8 건 목록과 견주어 늘었는지만 본다",
-      "createdAt": "2026-09-25T08:59:25.844Z",
-      "seq": 1163
-    },
-    {
-      "id": "6cc5b551",
-      "title": "중첩 링크 회귀 점검 (다음 차수)",
-      "priority": 12,
-      "note": "2026-09-25 회차에 돌렸고 전부 0 건이다. 이 회차도 링크를 58 개 푼 회차라 규칙대로 커밋 전에 돌렸다. (1) 중첩 링크 0 건(정확한 패턴은 grep -rnE '\\[[^]]*\\[[^]]+\\]\\([a-z0-9-]+\\.md\\)' 이고 measure 86 한 건만 오검출한다. 같은 줄에 $[0,1)$ 수식과 링크가 함께 있다). (2) 빈 표시 제목과 빈 대상 0 건. (3) 존재하지 않는 링크 대상 0 건(docs 와 README 양쪽. graph.mjs validate 가 같은 축을 본다). 앞 note 가 확정한 것 그대로: 조사 공백 누락을 저장소 전수로 찾는 검사는 쓸 수 없고(정상 표기가 대부분이다) 링크를 푼 자리만 git diff -U0 로 본다. 이번 회차에 그렇게 찾아 고친 것은 fredholm-determinant 91 의 겹친 공백 하나다(표시 제목이 '$I - K$ ' 로 끝 공백을 품고 있었다). 확인용 grep 두 개를 본문 링크 중복 정돈 항목의 note 에 적어 두었다. 앞 note 가 남긴 판단 요청(이 검사를 render-check 나 validate 에 넣을지)은 0절이 dev/ 수정을 금지하므로 독자에게 물을 항목으로 그대로 남는다. 링크를 대량으로 걸거나 푸는 회차마다 이 항목을 꺼내 돌리는 방식이 다섯 차수 연속 0 건이므로 유지한다",
-      "createdAt": "2026-09-25T09:01:29.238Z",
-      "seq": 1165
-    },
-    {
-      "id": "497e29a8",
-      "title": "본문 링크 중복 정돈 (2회 중복, 3차)",
-      "priority": 12,
-      "note": "2026-09-25 회차 2차. 3 회 이상 중복은 0 건을 유지해 회귀가 없다. 문턱 2 로 218 쌍/159 문서에서 시작해 id 순으로 42 개 문서의 58 쌍을 풀어 155 쌍/117 문서가 남았다. 처리 구간은 concentration-inequalities 부터 heyting-algebras 까지다(concentration-inequalities~eisenstein-ideal 12 개 21 쌍, eisenstein-series~finite-automata 10 개 13 쌍, finite-simple-groups~girsanov 10 개 12 쌍, gittins-index~heyting-algebras 10 개 12 쌍). 검사기 dup-links.mjs 를 스크래치패드에 다시 짰고 앞 차수가 놓친 버그를 고쳤다: 한 줄에 풀 자리가 둘 이상이면 앞에서부터 치환할 때 인덱스가 밀려 링크가 깨진다(connectedness 의 서로소 집합 자료구조와 동적 연결성 두 자리에서 실제로 깨졌다). 같은 줄의 자리를 (줄, 인덱스) 내림차순으로 정렬해 뒤에서부터 고치도록 바꿨다. 스크립트 요지: 개관 제외, '# 연관 문서' 앞 본문만, 코드펜스 건너뜀, 문턱과 대상 문서를 인자로 받는다. 보정 둘은 그대로다(괄호가 링크만 감싼 자리는 괄호째 지운다. 라틴문자로 끝나는 표시 제목 뒤 조사는 공백을 하나 넣는다). 손으로 고친 하나: fredholm-determinant 91 은 표시 제목이 '$I - K$ ' 로 끝 공백을 품고 있어 해제 뒤 공백이 둘 남았고 하나로 줄였다. 표시 제목이 수식으로 끝나는 자리는 해제 뒤 공백을 확인할 것. 3차는 id 순으로 hilbert-spaces 다음부터 20 개 문서를 친다. 해제 뒤 git diff -U0 로 바뀐 줄을 전부 눈으로 확인할 것(이번에 버그와 공백을 그렇게 잡았다). 확인용 grep: git diff -U0 | grep -E '^\\+[^+]' | grep -E '\\]\\([a-z0-9-]+\\.[^m)]|\\]\\S*\\]\\S*\\]' 로 깨진 링크를, git diff -U0 | grep -E '^\\+.*  ' 로 겹친 공백을 본다. 링크를 대량으로 푼 회차이므로 커밋 전에 큐의 '중첩 링크 회귀 점검' 항목도 함께 돌릴 것. mermaid 라벨 안의 <br/> 와 밑줄은 수식 규칙 대상이 아니므로 4절 grep 두 개가 잡아도 무시해도 된다",
-      "createdAt": "2026-09-25T09:01:49.250Z",
-      "seq": 1166
-    },
-    {
-      "id": "55d6e3ff",
-      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (17차)",
-      "priority": 12,
-      "note": "2026-09-25 둘째 회차 16차. 15차 note 의 두 보정(여러 줄 $$ 블록 상태 추적, 각주 참조를 링크보다 먼저 제거)을 그대로 넣고 검사기(스크래치패드 bare-math.mjs)를 전수로 돌렸다. 15차가 몰랐던 오검출 원인 둘을 더 잡았고 이것이 이 차수의 수확이다. (1) 태그 줄이 전부 걸린다. '#number_theory' 의 언더스코어 때문이고 522 문서에서 522 건이 나온다. /^\\s*(#[a-z0-9_]+\\s*)+$/ 인 줄을 건너뛸 것. (2) 화살표 유니코드가 전부 걸린다. 21 개관의 갈래 줄이 'A -> B' 를 유니코드 화살표로 쓰는 것이 저장소 관례이고 증명 산문에서도 '(1) -> (2)' 로 쓴다. 검사 기호 집합에서 화살표와 합성 기호를 뺄 것. 나머지 기호(<=, >=, !=, 원소, 포함, 합집합, 교집합, 텐서, 밑줄, 캐럿, 중괄호, 백슬래시 명령)는 유지한다. 두 보정을 넣으니 522 문서에 1 건이고 실제 위반이라 고쳤다: galois-connections 160 의 '{박쥐, 고래} 는 닫혀 있고 {참새, 고래} 는' 이 한국어 낱말의 집합을 맨 중괄호로 썼다. pushforward-measure 79 가 같은 꼴을 '$\\lbrace\\text{앞},\\text{뒤}\\rbrace$' 로 쓰고 있어 그 관례에 맞췄다. 고친 뒤 검사기는 0 건이다. 17차에 볼 것: 이 검사기를 그대로 써서 0 건을 확인하되 수식이 많이 들어온 회차 뒤에만 돌린다. 12차 note 의 p-np 판정과 15차 note 의 rsa-cryptosystem 판정은 그대로 유효하다",
-      "createdAt": "2026-09-25T12:45:18.099Z",
-      "seq": 1172
-    },
-    {
-      "id": "3e5826eb",
-      "title": "더 알아보기 묶음 규칙 회귀 점검 (다음 차수)",
-      "priority": 12,
-      "note": "2026-09-25 둘째 회차에 두 번 돌렸다(회차 시작과 새 문서 셋을 쓴 뒤). 두 주축 모두 0 건이다: 자식 6 개 이상인데 묶음 없음 0 건, 자식 5 개 이하인데 묶음 있음 0 건. 이번 회차에 자식이 는 문서는 homology(9->10, 묶음 있음), homotopy-groups(2->3), axiom-of-choice(0->2), group-actions(6->7, 묶음 있음), measure(7->9, 묶음 있음)이고 전부 규칙에 맞는다. 셋째 축(항목 1 개짜리 묶음, THIN) 3 건은 전부 앞 차수가 유지하기로 판정한 것이다: computability(4,3,1), elliptic-curves(3,1,3,1), foundations-overview(5,1). elliptic-curves 는 1 짜리 묶음이 둘이므로 이 축을 다시 열 때 그 둘을 각각 판정할 것. 검사기는 스크래치패드 grouping.mjs 다. 다음에 돌릴 시점은 그대로다: 새 문서를 여러 개 쓴 회차 뒤, 그리고 한 문서에 자식을 여럿 더한 회차 뒤",
-      "createdAt": "2026-09-25T12:47:57.872Z",
-      "seq": 1173
-    },
-    {
-      "id": "28c51a39",
-      "title": "산문 금지 표현 회귀 점검 (13차)",
-      "priority": 12,
-      "note": "2026-09-25 12차. 11차 note 가 지목한 후보 다섯(schubert-calculus, schur-polynomials, stationary-phase, semidefinite-programming, optimal-transport)은 같은 날 다른 세션이 이미 전부 좁혀 놓았다. 검사기 for f in docs/*.md; do head -1 $f | grep -qP '^# .+(와|과) ' && basename $f .md; done 는 이제 80 건이고, 정리·법칙·공식·추측·부등식·원리·보조정리·대응·문제·알고리즘·변환·판정·기준·이론 이 뒷말인 것을 뺀 37 건이 남는다. 이번에 둘을 좁혔다. reidemeister-torsion 'Reidemeister 비틀림과 렌즈 공간' -> 'Reidemeister 비틀림'(렌즈 공간은 이 불변량이 분류하는 대상, 곧 응용 사례다. 문서 안의 절로 남는다. 연관 문서 절 참조 셋을 맞췄다: determinants 128, s-cobordism 134, homology 159). logicism '논리주의와 Frege 프로그램' -> '논리주의'(Frege 프로그램은 논리주의를 실행한 계획이고 개요 첫 문장이 이미 '논리주의는 ~ 주장이다' 로 시작한다. 연관 문서 절 참조 넷을 맞췄다: first-order-logic 146, foundations-overview 33·114, mathematical-platonism 94). 13차의 후보는 파일명이 앞말만 가리키는 것들이다. deformation-rings 'Galois 표현의 변형과 보편 변형환', euler-systems 'Euler 계와 Kolyvagin 유도류'(kolyvagin-systems 문서가 따로 있다), local-class-field-theory '국소 유체론과 Lubin–Tate 형식군', maass-forms 'Maass 형식과 Laplace 스펙트럼', modular-tensor-categories '모듈러 텐서범주와 3 차원 TQFT', overconvergent-modular-symbols '과수렴 모듈러 기호와 p 진 L 함수', p-adic-hodge-theory 'p 진 Hodge 이론과 Fontaine 주기환', riemannian-metrics 'Riemann 계량과 측지선', selmer-groups 'Selmer 군과 Tate–Shafarevich 군'. 판정 기준은 뒷말이 앞말의 특수 사례나 되풀이이면 좁히고 뒷말이 정리 이름이면 두는 것이다. 통과로 판정된 것(다시 열지 않는다): borel-pade, dag-topological, dyson-rank-crank, eigenvalues, formalism-hilbert-program, ideals-quotient-rings, kleisli-eilenberg-moore, limits-colimits, lp-rounding, luzin-sierpinski-sets 는 파일명이 양쪽을 모두 가리킨다. proofs 는 뿌리 문서이고 README 와 직결되므로 신중히 볼 것",
-      "createdAt": "2026-09-25T16:49:12.646Z",
-      "seq": 1185
-    },
     {
       "id": "9a2929af",
       "title": "서사투 문단이 남은 문서 훑기 (4차)",
@@ -106,14 +42,6 @@
       "note": "2026-09-25 회차에 '문서 자신을 가리키는 문장 훑기' 를 통독 방식으로 바꾸고 첫 문서를 끝냈다. 최적화 주 분야 문서는 13 개이고 줄 수 순으로 optimal-transport 198, sinkhorn 197, newton-method 166, lovasz-theta 166, wasserstein-gradient-flow 160, gradient-descent 157, unbalanced-optimal-transport 152, semidefinite-programming 134, lagrange-duality 130, convexity 130, linear-programming 128, stochastic-gradient-descent 87, optimization-overview 73 이다. 끝낸 것은 stochastic-gradient-descent 이고 고친 것 둘이다. 29 줄 'f=-nabla g 로 보면 확률근사의 Robbins-Monro 절차다' 는 이 문서가 손실을 f 로 쓰고 있어 기호가 충돌했다(stochastic-approximation 21·57 줄은 대상 함수를 f, 손실을 g 로 쓴다). '확률근사의 Robbins-Monro 절차에서 대상 함수를 -nabla f 로 둔 것이 이 반복이다' 로 고쳤다. 49 줄 '직관 절의 점화식이 나온다' 는 문서 자신의 절을 가리키므로 '최소점까지의 거리에 대한 점화식이 나온다' 로 고쳤다. 이 문서의 나머지는 4절 문체를 따르고 있었다. 다음 문서는 convexity 나 lagrange-duality 처럼 130 줄대인 것부터 볼 것. 통독에서 볼 것은 셋이다. 절 전체가 독자에게 절차를 권하는 구성, 정리 진술 뒤에 같은 말을 풀어 쓴 문단, 표와 본문이 같은 내용을 두 번 말하는 자리. 기호 충돌도 함께 볼 것(같은 개념을 다루는 두 문서가 다른 문자를 쓰면 한쪽이 상대 표기를 그대로 옮겨 적어 충돌이 생긴다)",
       "createdAt": "2026-09-25T17:02:50.439Z",
       "seq": 1191
-    },
-    {
-      "id": "c3bc5aee",
-      "title": "적응적 경사 방법의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-25 회차에 adaptive-gradient-methods 를 새로 썼다(부모 stochastic-gradient-descent 하나, 최적화 개관 반복 알고리즘 갈래에서 확률적 경사하강법 다음 Newton 법 앞, 98줄). 리프다. stochastic-gradient-descent note 의 후보 (1) 적응적 방법을 이것으로 닫았고 같은 note 에 남은 것은 (2) 분산 축소 알고리즘(SVRG, SAGA. 그 문서 63 줄의 분산 축소 절이 이미 원리를 적어 두었다. 부모는 stochastic-gradient-descent), (3) 연합 학습의 국소 SGD 다. 이 문서의 후속 후보: (a) AdamW 와 가중치 감쇠의 분리. 활용 절 첫째가 신경망 학습을 다루지만 정칙화는 언급하지 않는다. 부모는 이 문서 하나로 충분하나 분량이 되는지 먼저 볼 것. (b) 온라인 볼록 최적화와 후회. 후회 한계 절이 온라인 경사하강법의 표준 분석을 이름만 쓰고 지나간다. 저장소에 online 이나 regret 이름의 문서가 없고 후회 자체는 multi-armed-bandits 23 줄이 정의한다. 8절 기준으로 그 문서와 겹치는지 먼저 볼 것. 부모 후보는 convexity 와 gradient-descent. (c) 모멘텀과 Nesterov 가속. Adam 의 m_k 가 곧 모멘텀인데 이 문서는 그것을 정의 없이 쓴다. 부모는 gradient-descent 이고 이 문서의 부모가 될 수도 있어 간선 방향을 먼저 정할 것. 정의 없이 쓴 용어: 지수이동평균, 온라인 경사하강법, 최대 노름 지름, 재모수화, 점수 함수 추정량, 단어 임베딩",
-      "createdAt": "2026-09-25T20:40:05.014Z",
-      "seq": 1193
     },
     {
       "id": "e9021baa",
@@ -218,6 +146,70 @@
       "note": "2026-09-25 둘째 회차가 13차다. 12차가 지시한 그리스 문자 로마자 표기 축을 열었다. 검사기: grep -rnoE '(^|[^\\\\a-zA-Z/.-])(alpha|beta|gamma|delta|epsilon|lambda|tau|phi|psi|omega|zeta|theta|kappa|rho|chi|xi)([^a-zA-Z]|$)' docs/*.md 에 파일명 필터를 더하면 문서별 상위가 theta-series 17, mock-modular-forms 15, lambda-calculus 14, weil-representation 12, niemeier-lattices 12, tate-thesis 11, waldspurger-formula 10, siegel-weil 10, umbral-moonshine 9, krylov-subspace-methods 9, poisson-summation 8, shimura-correspondence 7 이다. 13차에 theta 축만 판정하고 4 건을 고쳤다. 빈도: 'theta 급수' 71 대 '세타 급수' 4 로 로마자가 압도적 다수파이고 문서 제목도 'theta 급수' 다. 고친 자리: jacobian-variety 83 과 siegel-modular-variety 76 은 링크 표시 제목이 '[세타 급수](theta-series.md)' 여서 문서 제목과 어긋나 있었고 '[theta 급수]' 로 맞췄다. sphere-packing 118 의 본문 두 자리도 같이 고쳤다. 14차에 볼 것: 아직 판정하지 않은 축이 둘이다. (1) 'theta 함수' 17 대 '세타 함수' 16 으로 거의 반반이라 다수파 판정이 안 선다. 이 축은 건수가 많아 한 회차의 앞쪽에 열고, 어느 쪽으로 정할지 먼저 판정한 뒤 일괄로 칠 것. 판정 근거 후보는 theta-series 문서 본문이 자기 문서에서 어느 표기를 쓰는지다. (2) 나머지 그리스 문자(lambda, zeta, gamma, tau, phi 등)의 본문 표기. lambda-calculus 는 제목이 'Lambda calculus' 이고 본문이 'lambda 항', 'lambda 식' 을 쓰는데 한글 음차 '람다' 는 0 건이라 혼용이 아니다. 이 문서는 통과다. 한글 음차 쪽 전수는 grep -rno '람다\\|엡실론\\|델타\\|감마\\|베타\\|알파\\|세타\\|파이\\|뮤\\|누' docs/*.md 로 따로 셀 것. 12차가 닫은 축(-al 형용사 음차)은 다시 돌리지 말 것. 12차가 남기기로 판정한 굳은 용어도 그대로다: 시그마 모형(umbral-moonshine 139·141, wess-zumino-witten 77), Weierstrass 시그마 함수(weierstrass-factorization 58), 5 시그마(hypothesis-testing 145)",
       "createdAt": "2026-09-25T21:01:01.085Z",
       "seq": 1206
+    },
+    {
+      "id": "52f60312",
+      "title": "중복 H2 회귀 점검 (다음 차수)",
+      "priority": 12,
+      "note": "2026-09-26 회차에 세 검사를 530 문서에 돌려 전부 0 건이다. (1) 중복 H2: for f in docs/*.md; do grep -o '^## .*' $f | sort | uniq -d; done. (2) 중복 H3(더 알아보기 아래 묶음 이름 제외): sed -n '1,/^## 더 알아보기/p' $f | grep -o '^### .*' | sort | uniq -d. (3) H1 규격: 스크래치패드 h1.mjs 로 코드펜스를 건너뛰고 첫 H1(제목)과 '연관 문서' 를 뺀 나머지가 개요/직관/정의/성질/활용의 부분수열인지 본다(개관은 개요/지도/갈래). 직전 차수 520 문서에서 10 개 늘었고 회귀 없음. 검사 자체는 세 명령이 전부이고 530 문서에 1 초 안에 끝나므로 새 문서가 여러 개 들어온 회차 뒤에 돌리는 방식을 유지한다. 'A와 B' 제목 축은 큐의 '제목과 파일명이 어긋난 문서 훑기' 항목이 따로 들고 있다",
+      "createdAt": "2026-09-26T00:37:02.477Z",
+      "seq": 1207
+    },
+    {
+      "id": "a75fb2b3",
+      "title": "자리표시자 헤딩 훑기 (14차)",
+      "priority": 12,
+      "note": "2026-09-26 회차 13차. 12차가 지시한 일곱 짧은 헤딩을 530 문서에 셌다. 0 건인 것 다섯: '## 응용 사례', '## 예제', '## 관찰', '## 논의', '## 기타'. 2 건을 고쳤다. banach-fixed-point 49 '## 정리와 증명' -> '## 고정점의 존재와 유일성'(절이 존재·유일성·반복열 수렴 정리 하나와 그 증명이고 뒤따르는 '## 오차 한계'·'## 수렴 속도'·'## 변형' 과 나란해진다). nakayama-lemma 27 '## 보조정리' -> '## 유한생성 가군의 소멸'(문서 제목이 이미 'Nakayama 보조정리' 라 절 이름이 제목의 되풀이였다. 절의 결론은 IM=M 이면 M=0 이고, 같은 문서 '## 행렬식 꼴' 절이 '소멸시키는' 이라는 어휘를 이미 쓴다. 본문 46·52 줄의 '보조정리로'·'보조정리가' 는 절 이름 참조가 아니라 Nakayama 보조정리를 가리키는 일반 지칭이라 그대로 두었다). 14차에 볼 것: 아직 세지 않은 짧은 헤딩은 '## 기본 정리', '## 성질과 예', '## 주요 결과', '## 응용', '## 배경', '## 구조', '## 방법' 이다. grep -rnE '^## <이름> *$' docs/\\*.md 로 세고 판정할 것. 다시 보지 않는 목록(8차~13차가 관행으로 판정): '## 정리' 14, '## 증명' 7, '## 알고리즘' 10, '## 따름정리' 7, '## 기본 성질' 6, '## 계산 복잡도' 5, '## 증명의 요지' 11, '## 존재 정리' 6, '## 정의|동기|배경|성질|예시|개요|활용|예|구성' 0, '## 역사|일반화|관계|비교' 0, '## 응용 사례|예제|관찰|논의|기타' 0, 그리고 12차가 남긴 다섯(casson-invariant 94·index-theorem 123·principal-component-analysis 118 의 '## 확장', chebotarev 74·index-theorem 49 의 '## 특수 사례'. 항목마다 굵은 글씨 고유 이름이 붙어 헤딩이 묶음 이름 역할만 한다). 함께 볼 것(9차 note 에서 이어짐): khovanov-homology 137 절의 '3 차원 다양체 불변량의 범주화는 훨씬 어렵고 부분적으로만 알려져 있다' 는 4절 열린 문제 규칙에 걸리므로 그 문서를 보강할 때 판정할 것",
+      "createdAt": "2026-09-26T00:38:27.023Z",
+      "seq": 1208
+    },
+    {
+      "id": "53de21e6",
+      "title": "헤딩 안 링크 회귀 점검 (다음 차수)",
+      "priority": 12,
+      "note": "2026-09-26 회차에 네 축을 532 문서와 README 에 돌렸고 회귀가 없다. (1) 헤딩 안 링크 grep -n '^#\\+ .*](.*\\.md)' 0 건(docs 와 README 양쪽). (2) 중첩 링크 0 건. grep -rnE '\\[[^]]*\\[[^]]+\\]\\([a-z0-9-]+\\.md\\)' 의 오검출이 앞 차수의 measure 86 하나에서 둘로 늘었다. vitali-set 23 이 같은 꼴이다(인라인 수식 '$[0,1)$' 의 대괄호와 같은 줄의 링크를 한 링크로 묶어 읽는다). 이 grep 은 이제 오검출 둘을 눈으로 걸러야 하므로, 대신 스크래치패드 nested.mjs 를 쓰는 것이 확실하다. 그 검사기는 코드펜스를 건너뛰고 인라인 수식 스팬을 같은 길이 공백으로 마스킹한 뒤 판정하며 $$ 블록 안의 줄은 수식 안 링크만 본다. 이번 차수에 그것으로 IN_MATH 0 건, NESTED 0 건을 확인했고 오검출이 없다. (3) 없는 링크 대상 0 건(graph.mjs validate 가 같은 축을 본다). (4) 굵은 글씨 안 링크 8 건이고 목록이 직전 차수와 완전히 같다: change-of-measure 1, langlands-program 1, power-series 3, uniform-convergence 3. 전부 앞 회차가 예외로 확정한 '- **[제목](id.md)**: 설명' 꼴 목록 표제다. 판정 기준은 확정이다: 문장 안이면 굵은 표시를 빼고 목록 표제면 둔다. 다음 차수는 새 문서가 여러 개 들어온 회차 뒤에 네 축을 함께 돌리고, (2) 는 grep 대신 nested.mjs 를 쓰고, 굵은 글씨 축은 위 8 건 목록과 견주어 늘었는지만 본다. 큐의 '중첩 링크 회귀 점검' 항목이 같은 (2) 축을 들고 있으므로 두 항목을 한 회차에 함께 꺼낼 것",
+      "createdAt": "2026-09-26T00:48:52.753Z",
+      "seq": 1214
+    },
+    {
+      "id": "e325ebf1",
+      "title": "중첩 링크 회귀 점검 (다음 차수)",
+      "priority": 12,
+      "note": "2026-09-26 회차에 돌렸고 전부 0 건이다. 이 회차는 문서 둘을 새로 쓰면서 본문 링크 아홉 자리를 손으로 넣은 회차다. (1) 중첩 링크 0 건. 앞 차수가 쓴 grep -rnE '\\[[^]]*\\[[^]]+\\]\\([a-z0-9-]+\\.md\\)' 의 오검출이 measure 86 하나에서 둘로 늘었다(vitali-set 23 이 같은 꼴이다. 인라인 수식 '$[0,1)$' 의 대괄호와 같은 줄의 링크를 한 링크로 묶어 읽는다). 이제 grep 대신 스크래치패드 nested.mjs 를 쓴다. 인라인 수식 스팬을 같은 길이 공백으로 마스킹하고 코드펜스를 건너뛰며 $$ 블록 안의 줄은 수식 안 링크만 보는 검사기이고, 이번 차수에 IN_MATH 0 건 NESTED 0 건으로 오검출이 없다. 이 판정은 큐의 '헤딩 안 링크 회귀 점검' 항목 note 와 같다. (2) 빈 표시 제목 grep -rnE '\\[\\]\\([a-z0-9-]*\\.md\\)' 와 빈 대상 grep -rnE '\\[[^]]*\\]\\(\\)' 0 건. (3) 존재하지 않는 링크 대상 0 건(docs 와 README 양쪽. graph.mjs validate 가 같은 축을 본다). 앞 note 가 확정한 것 그대로: 조사 공백 누락을 저장소 전수로 찾는 검사는 쓸 수 없고 링크를 넣거나 푼 자리만 git diff -U0 로 본다. 이번 회차에 그렇게 확인했고(git diff -U0 <회차 시작 커밋>..HEAD -- docs README.md 에 깨진 링크 grep 과 겹친 공백 grep 을 걸었다) 고칠 것이 없었다. 앞 note 가 남긴 판단 요청(이 검사를 render-check 나 validate 에 넣을지)은 0절이 dev/ 수정을 금지하므로 독자에게 물을 항목으로 그대로 남는다. 링크를 대량으로 걸거나 푸는 회차마다 이 항목을 꺼내 돌리는 방식이 여섯 차수 연속 0 건이므로 유지한다",
+      "createdAt": "2026-09-26T00:49:28.954Z",
+      "seq": 1215
+    },
+    {
+      "id": "1ccee0de",
+      "title": "본문 링크 중복 정돈 (2회 중복, 4차)",
+      "priority": 12,
+      "note": "2026-09-26 회차 3차. 3 회 이상 중복은 0 건을 유지해 회귀가 없다. 문턱 2 로 164 쌍/121 문서에서 시작해(앞 차수 155 쌍/117 문서에서 문서가 12 개 늘어 조금 증가했다) id 순으로 hodge-theory 부터 linear-programming 까지 20 개 문서의 26 쌍을 풀어 138 쌍/101 문서가 남았다. 처리한 20 개: hodge-theory, homology, homotopy-groups, hopf-invariant, hyperbolic-3-manifolds, intuitionism, inverse-function-theorem, jacquet-langlands, jordan-canonical-form, kakutani-fixed-point, kazhdan-lusztig, kedlaya-algorithm, knot-invariants, kolyvagin-systems, lambda-calculus, lang-trotter, langlands-program, laplace-method, large-deviations, linear-programming. 검사기 dup-links.mjs 를 스크래치패드에 다시 짰다. 앞 차수의 요건을 전부 넣었고(개관 제외, '# 연관 문서' 앞 본문만, 코드펜스 건너뜀, 문턱과 대상 문서를 인자로 받음, 같은 줄의 자리를 내림차순으로 뒤에서부터 고침, 보정 둘) 인라인 수식 스팬 마스킹을 더했다. 새 판정 하나: 표 셀 안의 링크도 본문 중복이면 푼다(intuitionism 147·149 의 플라톤주의·형식주의 행, lang-trotter 의 Sato-Tate 행. 셋 다 같은 문서 앞쪽에 링크가 이미 있다). 4차는 id 순으로 linear-programming 다음부터 20 개 문서를 친다. 해제 뒤 git diff -U0 로 바뀐 줄을 전부 눈으로 확인할 것. 확인용 검사 넷: git diff -U0 | grep -E '^\\+[^+]' | grep -E '\\]\\([a-z0-9-]+\\.[^m)]|\\]\\S*\\]\\S*\\]' 로 깨진 링크, git diff -U0 | grep -E '^\\+.*  ' 로 겹친 공백, python3 로 '[A-Za-z][가-힣]' 을 찾아 라틴문자 뒤 조사 붙음(grep -oE 는 멀티바이트를 잘라 쓸 수 없다), 그리고 스크래치패드 nested.mjs. 이번 차수에 넷 다 통과했고 고칠 것이 없었다. 부수로 찾은 것: lambda-calculus 157·162 의 'lambda calculus는' 은 소문자 영문 용어에 조사가 붙은 자리이고 내 변경과 무관한 기존 표기다. 큐의 '한국어 문장에 끼인 영문 용어 훑기' 항목이 15차 note 에서 그 축을 열어 두었으므로 그 항목이 판정할 것. 링크를 대량으로 푼 회차이므로 커밋 전에 큐의 '중첩 링크 회귀 점검' 항목도 함께 돌릴 것(이번 차수에 그렇게 했다). mermaid 라벨 안의 <br/> 와 밑줄은 수식 규칙 대상이 아니므로 4절 grep 두 개가 잡아도 무시해도 된다",
+      "createdAt": "2026-09-26T00:52:21.882Z",
+      "seq": 1216
+    },
+    {
+      "id": "aff216e2",
+      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (18차)",
+      "priority": 12,
+      "note": "2026-09-26 회차 17차. 수식이 많은 새 문서 둘(nesterov-acceleration, proximal-gradient-method)이 들어온 뒤에 돌렸다. 검사기 bare-math.mjs 를 스크래치패드에 다시 짰고 16차 note 의 두 보정(태그 줄 건너뛰기, 검사 기호에서 화살표와 합성 기호 제외)과 15차의 두 보정(여러 줄 $$ 블록 상태 추적, 각주 참조를 링크보다 먼저 제거)을 전부 넣었다. 그런데 532 문서에서 74 건이 나왔고 전부 오검출이라, 앞 note 들이 적지 않은 보정 하나가 더 필요함을 확인했다. 이것이 이 차수의 수확이다. (3) URL 안의 언더스코어와 퍼센트 이스케이프가 걸린다. 각주의 참고문헌 URL 이 원인이고 'Zorn%27s_lemma' 나 'Semisimple_module' 처럼 밑줄을 품은 주소가 74 개 문서에 있다. s.replace(/https?:\\/\\/\\S+/g, '') 를 인라인 코드 제거 다음에 넣을 것. 이 보정을 넣으니 532 문서에 0 건이고 고칠 문서가 없다. 검사기의 제거 순서는 이것이 확정이다: 각주 정의 머리, 각주 참조, 인라인 수식, 인라인 코드, URL, 링크(표시 제목만 남김). 건너뛰는 줄은 코드펜스 안, $$ 블록 안, 태그 줄, 표 구분선이다. 검사 기호 집합은 <=, >=, !=, 원소·포함·합집합·교집합·텐서·직합 유니코드, 밑줄과 캐럿 뒤 영숫자나 중괄호, 중괄호, 백슬래시 명령이다. 18차에 볼 것: 이 검사기를 그대로 써서 0 건을 확인하되 수식이 많이 들어온 회차 뒤에만 돌린다. 12차 note 의 p-np 판정과 15차 note 의 rsa-cryptosystem 판정, 16차가 고친 galois-connections 160 은 그대로 유효하다",
+      "createdAt": "2026-09-26T00:53:23.692Z",
+      "seq": 1217
+    },
+    {
+      "id": "695d5b17",
+      "title": "더 알아보기 묶음 규칙 회귀 점검 (다음 차수)",
+      "priority": 12,
+      "note": "2026-09-26 회차에 새 문서 둘을 쓴 뒤 돌렸다. 두 주축 모두 0 건이다: 자식 6 개 이상인데 묶음 없음 0 건, 자식 5 개 이하인데 묶음 있음 0 건. 이번 회차에 자식이 는 문서는 gradient-descent(2->4, 5 개 이하라 묶음 없음이 맞다) 하나다. 검사기 grouping.mjs 를 스크래치패드에 다시 짰고 축 하나를 더했다: MIXED(묶음이 있는데 묶음 밖에 링크 줄이 남은 문서)이고 0 건이다. 셋째 축(항목 1 개짜리 묶음, THIN) 이 3 건에서 4 건으로 늘었다. 새로 걸린 것은 modular-curves(2,3,1)이고 판정은 유지다. 1 짜리 묶음이 '높은 차원'(Siegel 모듈라이 다양체)이고 나머지 둘('계산', '유리점과 Galois 표현')과 성격이 다른 갈래를 가리키므로 다른 묶음에 넣으면 그 묶음의 뜻이 흐려진다. 앞 note 가 판정하라고 남긴 elliptic-curves(3,1,3,1)의 1 짜리 묶음 둘도 이 회차에 판정했고 둘 다 유지다. '고차원 일반화'(아벨 다양체)는 차원을 올린 방향이고 '암호에서의 쓰임'(쌍선형 암호)은 5절이 묶음 이름의 예로 든 '다른 분야에서의 쓰임' 꼴이다. 이로써 THIN 4 건 전부 유지로 확정되었고 이 축은 닫는다: computability(4,3,1), elliptic-curves(3,1,3,1), foundations-overview(5,1), modular-curves(2,3,1). 판정 기준도 확정이다. 1 짜리 묶음의 이름이 나머지 묶음과 다른 갈래나 다른 분야를 가리키면 유지하고, 같은 갈래를 잘게 쪼갠 것이면 합친다. THIN 이 5 건 이상으로 늘면 새로 걸린 것만 이 기준으로 판정할 것. 다음에 돌릴 시점은 그대로다: 새 문서를 여러 개 쓴 회차 뒤, 그리고 한 문서에 자식을 여럿 더한 회차 뒤",
+      "createdAt": "2026-09-26T00:54:27.194Z",
+      "seq": 1218
+    },
+    {
+      "id": "d9c4f8d6",
+      "title": "산문 금지 표현 회귀 점검 (14차)",
+      "priority": 12,
+      "note": "2026-09-26 회차 13차. 12차 note 가 지목한 후보 아홉 가운데 둘을 좁혔다. riemannian-metrics 'Riemann 계량과 측지선' -> 'Riemann 계량'(측지선은 계량이 정하는 대상이고 문서 안에 '## 측지선' 절로 이미 있다. 참조 12 자리를 맞췄다: 연관 문서 절 여덟(curvature 127, differential-geometry-overview 52, gauss-bonnet 98, hodge-theory 196, hyperbolic-3-manifolds 189, manifolds 128, selberg-trace-formula 176, teichmuller-space 149)과 본문 링크 넷(calculus-of-variations 98, classification-of-surfaces 175, connectedness 152, differential-geometry-overview 9). 그 문서를 가리키는 다른 본문 링크는 이미 '[Riemann 계량]' 으로 좁혀 쓰고 있었다). maass-forms 'Maass 형식과 Laplace 스펙트럼' -> 'Maass 형식'(Laplace 스펙트럼은 Maass 형식들이 이루는 이산 스펙트럼이고 문서 안에 '## Maass 형식' 정의 절이 있다. number-theory-overview 93 이 이미 '[Maass 형식]' 으로 쓰고 있어 개관과도 맞았다. 연관 문서 절 참조 셋을 맞췄다: eisenstein-series 209, hecke-operators 154, selberg-trace-formula 175). 새로 배운 것: 제목을 좁힐 때 그 문서가 개관의 mermaid 라벨에 있으면 라벨도 고쳐야 한다(differential-geometry-overview 20 의 RM 노드가 그랬다). grep 으로 옛 제목 문자열을 docs 와 README 전체에서 찾아 잔여 0 건을 확인할 것. 14차의 남은 후보 일곱: deformation-rings 'Galois 표현의 변형과 보편 변형환'(파일명이 뒷말을 가리키므로 앞말을 버릴지 파일명을 바꿀지 먼저 정할 것), euler-systems 'Euler 계와 Kolyvagin 유도류'(kolyvagin-systems 문서가 따로 있다), local-class-field-theory '국소 유체론과 Lubin-Tate 형식군', modular-tensor-categories '모듈러 텐서범주와 3 차원 TQFT', overconvergent-modular-symbols '과수렴 모듈러 기호와 p 진 L 함수', p-adic-hodge-theory 'p 진 Hodge 이론과 Fontaine 주기환', selmer-groups 'Selmer 군과 Tate-Shafarevich 군'(Tate-Shafarevich 군이 Selmer 군의 몫으로 정의되지만 BSD 추측의 주인공이라 되풀이는 아니다. 신중히 볼 것). 판정 기준은 그대로다: 뒷말이 앞말의 특수 사례나 되풀이이면 좁히고 뒷말이 정리 이름이면 둔다. 통과로 판정된 것(다시 열지 않는다): borel-pade, dag-topological, dyson-rank-crank, eigenvalues, formalism-hilbert-program, ideals-quotient-rings, kleisli-eilenberg-moore, limits-colimits, lp-rounding, luzin-sierpinski-sets. proofs 는 뿌리 문서이고 README 와 직결되므로 신중히 볼 것",
+      "createdAt": "2026-09-26T00:56:45.955Z",
+      "seq": 1219
     },
     {
       "id": "d2720772",
@@ -386,6 +378,14 @@
       "note": "2026-09-25 둘째 회차 13차. 11차 note 의 후보 다섯을 전부 좁혔고(optimal-transport -> '최적 수송', semidefinite-programming -> '반정부호 계획법', schur-polynomials -> 'Schur 다항식', schubert-calculus -> 'Schubert 계산', stationary-phase -> '정상위상법'), 13차에서 새로 뽑은 후보 다섯 가운데 셋을 더 좁혔다. (a) littlewood-richardson 'Littlewood-Richardson 규칙과 hive 모형' -> 'Littlewood-Richardson 규칙'. 절 구조상 hive 와 honeycomb 과 Horn 문제가 본문을 채우지만 hive 는 그 규칙을 계산하는 모형이므로 하위 주제다. 참조 1 곳(schur-polynomials)을 맞췄고, 같은 작업에서 195 줄에 grassmannian 본문 링크를 걸었다. (b) mathieu-groups 'Mathieu 군과 Golay 부호' -> 'Mathieu 군'. Golay 부호 문서가 따로 없고 이 문서에서 Mathieu 군이 Golay 부호의 자기동형군으로 정의되므로 Golay 부호는 정의를 위한 구성이다. 참조 5 곳을 맞췄고, 곁가지로 umbral-moonshine 44 의 '[Mathieu 군 문서](...)에서' 라는 메타 표기를 사실 문장으로 바꾸면서 같은 문서 본문의 두 번째 링크를 풀었다(4절 최초 1 회). Golay 부호를 독립 문서로 뗄지는 별도 큐 항목으로 남겼다. (c) mass-formula '질량 공식과 격자의 류' -> '질량 공식'. 정의 절이 '격자, 류, 스피너 류' 다음에 '질량' 과 'Smith-Minkowski-Siegel 질량 공식' 으로 가므로 격자의 류는 질량을 정의하기 위한 배경이다. 참조 3 곳(bernoulli-numbers, niemeier-lattices, siegel-weil)을 맞췄다. 14차에 볼 것: 후보 둘이 남았다. euler-maclaurin 'Euler-Maclaurin 공식과 점근급수' 는 13차에 보고 판정을 미뤘다. 점근급수 전용 문서가 저장소에 없고, 이 문서의 성질 절 절반('## 점근전개', '## 나머지항의 크기', '## 최적 절단과 초점근 정확도', '## 전개의 비유일성')이 점근급수 일반론이라 좁히면 그 절들이 제목 밖으로 나간다. 8절 분할(asymptotic-series 를 따로 세우고 euler-maclaurin 을 그 자식으로)을 함께 재야 하는 자리이므로 한 회차를 온전히 쓸 것. local-class-field-theory '국소 유체론과 Lubin-Tate 형식군' 은 아직 보지 않았다. 판정 기준은 그대로이고, 절 구조에서 본체와 배경을 가르는 방법이 13차에 잘 통했다",
       "createdAt": "2026-09-25T12:58:13.319Z",
       "seq": 1182
+    },
+    {
+      "id": "98968685",
+      "title": "적응적 경사 방법의 후속 간선",
+      "priority": 11,
+      "note": "2026-09-26 회차에 앞 note 의 후보 (c) 모멘텀과 Nesterov 가속을 nesterov-acceleration 으로 닫았다(부모 gradient-descent 하나, 최적화 개관 반복 알고리즘 갈래에서 경사하강법 다음 확률적 경사하강법 앞, 127줄, 리프). 간선 방향은 gradient-descent -> nesterov-acceleration 으로 정했다. adaptive-gradient-methods 를 부모로 두지 않은 이유는 Adam 의 m_k 가 모멘텀을 쓰는 쪽이고 가속이 그것을 설명하는 쪽이라 방향이 반대이기 때문이다. 대신 nesterov-acceleration 활용 절 '신경망 학습' 이 adaptive-gradient-methods 로 본문 링크를 건다. 남은 후보: (a) AdamW 와 가중치 감쇠의 분리(adaptive-gradient-methods 활용 절 첫째가 신경망 학습을 다루지만 정칙화는 언급하지 않는다. 분량이 되는지 먼저 볼 것), (b) 온라인 볼록 최적화와 후회(adaptive-gradient-methods 63 줄 후회 한계 절이 온라인 경사하강법의 표준 분석을 이름만 쓰고 지나간다. 후회 자체는 multi-armed-bandits 23 줄이 정의하므로 8절 기준으로 그 문서와 겹치는지 먼저 볼 것. 부모 후보는 convexity 와 gradient-descent), (c) 분산 축소 알고리즘 SVRG·SAGA(stochastic-gradient-descent 63 줄 분산 축소 절이 이미 원리를 적어 두었다. 부모는 stochastic-gradient-descent), (d) 연합 학습의 국소 SGD. adaptive-gradient-methods 에서 정의 없이 쓴 용어로 남은 것: 지수이동평균, 온라인 경사하강법, 최대 노름 지름, 재모수화, 점수 함수 추정량, 단어 임베딩",
+      "createdAt": "2026-09-26T00:43:37.636Z",
+      "seq": 1211
     },
     {
       "id": "9902eee3",
@@ -1442,6 +1442,38 @@
       "note": "combinatorics/information_theory. 2026-09-25 둘째 회차에 mathieu-groups 의 제목을 'Mathieu 군과 Golay 부호' 에서 'Mathieu 군' 으로 좁히며 남긴 판정거리다. 그 문서의 정의 절이 '## Golay 부호' 와 '## Mathieu 군' 둘로 나뉘고 Mathieu 군이 Golay 부호의 자기동형군으로 정의되므로, Golay 부호는 지금 Mathieu 군을 정의하기 위한 구성으로 들어가 있다. 8절 분할 기준으로 잴 것: 그 문서가 1000 줄을 넘지 않으므로 분량으로는 나눌 이유가 없고, Golay 부호가 독립 문서가 될 만한지는 완전 부호로서의 성질(무게 분포, 24 차원 이진 확장 Golay, Steiner 계 S(5,8,24) 와의 대응)이 Mathieu 군과 따로 설 수 있는지에 달렸다. 독립시킨다면 부모는 error-correcting-codes 이고 mathieu-groups 가 자식이 된다. 지금 mathieu-groups 를 가리키는 문서 가운데 error-correcting-codes 와 information-theory-overview 는 부호 쪽 관심으로 링크하고 있으므로 그 둘을 새 문서로 돌리게 된다. 나누지 않기로 한다면 이 항목을 지울 것",
       "createdAt": "2026-09-25T12:57:31.484Z",
       "seq": 1181
+    },
+    {
+      "id": "f75685c7",
+      "title": "근접 경사법과 근접 연산자",
+      "priority": 10,
+      "note": "최적화 분야. 2026-09-26 회차에 nesterov-acceleration 을 쓰면서 그 문서 103 줄(활용 절 '복합 목적함수의 근접 가속')이 근접 연산자와 근접 걸음을 정의 없이 이름으로만 쓴다. FISTA 의 걸음이 그것이다. 저장소에 proximal 이나 근접 이름의 문서가 없고 convexity 문서가 근접 연산자를 정의하는지 먼저 확인할 것. 부모 후보는 convexity(근접 연산자의 정의와 유일성이 강볼록성에서 나온다) 하나이고, nesterov-acceleration 을 부모로 둘지는 간선 방향을 먼저 정할 것(근접 걸음 자체는 가속과 독립이고 가속이 그것을 쓰므로 근접 경사법이 가속의 부모가 아니라 형제일 가능성이 크다). 다룰 것: 근접 연산자의 정의와 firm nonexpansiveness, 근접 경사법(ISTA)의 O(1/k) 수렴, 연성 문턱 연산자가 l1 노름의 근접 연산자라는 계산, FISTA 와의 관계. 이 문서를 쓰면 최적화 개관의 반복 알고리즘 갈래에 한 줄을 더할 것",
+      "createdAt": "2026-09-26T00:43:22.957Z",
+      "seq": 1209
+    },
+    {
+      "id": "0e64308f",
+      "title": "l1 정칙화와 희소 회복",
+      "priority": 10,
+      "note": "최적화 또는 통계 분야. 2026-09-26 회차에 nesterov-acceleration 활용 절이 'l1 정칙화 회귀' 를 링크 없이 이름만 쓴다(0절대로 링크를 걸지 않았다). 저장소에 compressed-sensing, sparse, lasso, l1 이름의 문서가 전부 없다. 다룰 것: LASSO 의 정의, l1 최소화가 희소해를 주는 기하(l1 공의 꼭짓점이 좌표축에 있다), 제한 등거리 성질과 l0-l1 동치 정리, 연성 문턱. 부모 후보는 convexity 와 linear-regression(있는지 확인할 것). 근접 경사법 문서를 먼저 쓰면 그것도 부모 후보다",
+      "createdAt": "2026-09-26T00:43:23.077Z",
+      "seq": 1210
+    },
+    {
+      "id": "aba74a55",
+      "title": "l1 정칙화와 희소 회복",
+      "priority": 10,
+      "note": "2026-09-26 회차에 proximal-gradient-method 를 쓰면서 이 항목의 부모 후보가 하나 늘었다. 그 문서의 활용 절 첫째가 l1 정칙화 회귀의 반복(연성 문턱)을 이미 다루므로 새 문서는 알고리즘이 아니라 l1 최소화가 왜 희소해를 주는지를 다뤄야 한다. 다룰 것: LASSO 의 정의, l1 공의 꼭짓점이 좌표축에 있다는 기하, 제한 등거리 성질과 l0-l1 동치 정리, 표본 수 하한. 부모 후보는 proximal-gradient-method(알고리즘 쪽)와 convexity. 8절 기준으로 proximal-gradient-method 의 활용 절과 겹치는지 먼저 판정할 것. 저장소에 compressed-sensing, sparse, lasso, l1 이름의 문서가 없고 linear-regression 이 있는지도 확인할 것",
+      "createdAt": "2026-09-26T00:46:48.537Z",
+      "seq": 1212
+    },
+    {
+      "id": "04f70d38",
+      "title": "근접 경사법의 후속 간선",
+      "priority": 10,
+      "note": "2026-09-26 회차에 proximal-gradient-method 를 새로 썼다(부모 gradient-descent 하나, 최적화 개관 반복 알고리즘 갈래에서 Nesterov 가속법 다음 확률적 경사하강법 앞, 122줄). 리프다. 이 문서에서 정의 없이 쓴 용어: 부분미분(partial subdifferential 이 아니라 볼록해석의 subdifferential. 저장소에 문서가 있는지 확인할 것. 이 문서 성질 절 셋이 전부 그것을 쓰므로 부모 후보다), 하반연속, 지시함수, 핵 노름, 낮은 계수 행렬 복원. 후속 후보: (a) 부분미분과 볼록 쌍대성. convexity 문서가 접선 하한 절에서 그것을 다루는지 먼저 볼 것. (b) 사영 경사법. 이 문서 활용 절 둘째가 지시함수의 근접 연산자로 그것을 두 문장으로 줄여 놓았으므로 별 문서가 될 분량인지 판정할 것. (c) 행렬 완성과 핵 노름 최소화. 활용 절 셋째가 이름만 쓴다. 부모 후보는 이 문서와 singular-value-decomposition",
+      "createdAt": "2026-09-26T00:46:48.660Z",
+      "seq": 1213
     },
     {
       "id": "dfb3e493",
