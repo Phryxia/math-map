@@ -68,12 +68,12 @@ $$\mathcal A_g^\ast=\mathcal A_g\sqcup\mathcal A_{g-1}\sqcup\cdots\sqcup\mathcal
 
 종수 $g$ 의 콤팩트 [Riemann 곡면](riemann-surfaces.md)에 그 Jacobian 을 대응시키면 곡선의 모듈라이 공간에서 $\mathcal A_g$ 로 가는 사상 $t:\mathcal M_g\to\mathcal A_g$ 가 나온다. Torelli 정리는 $t$ 가 단사임을 말한다. 곧 주편극 Jacobian 이 곡선의 동형류를 결정한다.
 
-두 공간의 차원은 $g\ge 2$ 에서 $\dim\mathcal M_g=3g-3$ 과 $\dim\mathcal A_g=g(g+1)/2$ 다. $g=2,3$ 에서 두 수가 같고 $g\ge 4$ 에서 앞이 작으므로 $t$ 의 상이 진부분다양체다. 어떤 $\tau$ 가 Jacobian 에서 오는지를 방정식으로 가리는 것이 **Schottky 문제**이고, $g=4$ 에서는 세타 상수들의 다항식 하나가 그 상의 닫힘을 정의한다[^2].
+두 공간의 차원은 $g\ge 2$ 에서 $\dim\mathcal M_g=3g-3$ 과 $\dim\mathcal A_g=g(g+1)/2$ 다. $g=2,3$ 에서 두 수가 같고 $g\ge 4$ 에서 앞이 작으므로 $t$ 의 상이 진부분다양체다. 어떤 $\tau$ 가 Jacobian 에서 오는지를 방정식으로 가리는 것이 **Schottky 문제**이고, $g=4$ 에서는 theta 상수들의 다항식 하나가 그 상의 닫힘을 정의한다[^2].
 
 # 활용
 
 - **Siegel 모듈러 형식.** $\mathbb H_g$ 위의 정칙함수로 $f(\gamma\cdot\tau)=\det(C\tau+D)^k f(\tau)$ 를 만족하는 것이 가중치 $k$ 의 Siegel 모듈러 형식이고, $\mathcal A_g$ 위 선다발의 절단이다. $g=1$ 이면 [모듈러 형식](modular-forms.md)의 정의와 같다.
-- **세타 함수.** [theta 급수](theta-series.md)의 변수 $\tau$ 가 $\mathbb H_g$ 를 달리고, 등분점에서 잰 세타 상수들이 $\mathcal A_g(N)$ 을 사영공간에 넣는다. Schottky 문제의 방정식도 이 상수들로 쓴다.
+- **theta 함수.** [theta 급수](theta-series.md)의 변수 $\tau$ 가 $\mathbb H_g$ 를 달리고, 등분점에서 잰 theta 상수들이 $\mathcal A_g(N)$ 을 사영공간에 넣는다. Schottky 문제의 방정식도 이 상수들로 쓴다.
 - **Shimura 다양체.** $\mathcal A_g$ 는 심플렉틱 군에 딸린 Shimura 다양체이고, 그 코호몰로지 위의 Hecke 작용과 [Galois 표현](galois-representations.md)의 대응이 Langlands 대응의 한 경우다.
 - **아벨 곡면의 산술.** $g=2$ 에서 $\mathcal A_2$ 의 유리점 계산이 종수 $2$ 곡선의 Jacobian 분류로 옮겨진다.
 

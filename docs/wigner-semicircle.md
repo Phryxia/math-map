@@ -100,7 +100,7 @@ $$
 - 원래 동기는 무거운 원자핵의 에너지 준위였다. Hamilton 연산자의 행렬 성분을 무작위로 놓고 통계만 예측하는 방식이었고, 준위 간격의 분포가 실측과 맞았다.
 - 무작위 그래프의 인접행렬 스펙트럼이 반원법칙을 따르고, 그 가장자리 성질이 [Expander 그래프](expander-graphs.md)의 스펙트럼 간극과 연결된다.
 - 자료분석에서는 표본공분산행렬의 고윳값 분포([Marchenko–Pastur 법칙](marchenko-pastur.md))를 잡음의 기준선으로 삼아 주성분의 유의성을 판정한다.
-- 무선통신의 채널 용량, 무질서계의 국소화, Riemann 제타함수 영점의 간격 통계에서도 같은 종류의 예측이 쓰인다.[^1]
+- 무선통신의 채널 용량, 무질서계의 국소화, Riemann zeta 함수 영점의 간격 통계에서도 같은 종류의 예측이 쓰인다.[^1]
 
 [^1]: Greg W. Anderson, Alice Guionnet, Ofer Zeitouni, *An Introduction to Random Matrices*, Cambridge (2010), §2.1 (적률법에 의한 반원법칙), §2.4 (Stieltjes 변환과 자기무모순 방정식).
 

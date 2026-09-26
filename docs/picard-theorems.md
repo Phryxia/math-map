@@ -36,7 +36,7 @@ $a$ 가 $f$ 의 본질적 특이점이면 임의의 뚫린 근방의 상이 $\ma
 
 상수가 아닌 전해석함수 $f$ 에 대해 $\mathbb C\setminus f(\mathbb C)$ 는 많아야 한 점이다.
 
-고전적 증명은 모듈러 람다 함수를 쓴다. $\lambda$ 는 상반평면 $\mathbb H$ 에서 $\mathbb C\setminus\lbrace 0,1\rbrace$ 로 가는 보편 덮개다. $f$ 가 두 값 $\alpha\neq\beta$ 를 피하면 아핀 변환으로 그 둘을 $0,1$ 로 옮길 수 있고, $\mathbb C$ 가 단순연결이므로 $f$ 는 $\mathbb H$ 로 가는 전해석함수 $F$ 로 들어올려진다. $\mathbb H$ 는 단위원판과 등각동치이므로 $F$ 는 유계이고, Liouville 정리로 상수다.
+고전적 증명은 모듈러 $\lambda$ 함수를 쓴다. $\lambda$ 는 상반평면 $\mathbb H$ 에서 $\mathbb C\setminus\lbrace 0,1\rbrace$ 로 가는 보편 덮개다. $f$ 가 두 값 $\alpha\neq\beta$ 를 피하면 아핀 변환으로 그 둘을 $0,1$ 로 옮길 수 있고, $\mathbb C$ 가 단순연결이므로 $f$ 는 $\mathbb H$ 로 가는 전해석함수 $F$ 로 들어올려진다. $\mathbb H$ 는 단위원판과 등각동치이므로 $F$ 는 유계이고, Liouville 정리로 상수다.
 
 $e^z$ 는 $0$ 을 빼고 모든 값을 취하므로 "많아야 한 점" 은 개선되지 않는다.
 

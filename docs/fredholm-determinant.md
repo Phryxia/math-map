@@ -12,7 +12,7 @@ $$
 
 Fredholm 은 1900 년에 유한차원 행렬식이 만족하는 급수 전개를 무한차원으로 옮겼다. 그 급수는 커널이 충분히 좋으면 수렴하고, 값 $\det(I-K)$ 는 유한차원 행렬식처럼 행동한다. 0 이 아니면 $I-K$ 가 가역이고, 곱에 대해 곱셈적이며, $K$ 에 대해 해석적이다.
 
-[결정점과정](determinantal-point-process.md)의 간격 확률, Tracy–Widom 분포, 산란 이론의 위상 이동, 제타 함수의 정규화가 $\det(I-K)$ 로 표현된다. 가역성 판정의 근거는 [Fredholm 작용소](fredholm-operators.md)에서 $I - K$ 가 콤팩트 섭동이라 지표가 0 이라는 사실이다. 지표가 0 이면 단사와 전사가 동치이므로 판정할 조건이 하나다.
+[결정점과정](determinantal-point-process.md)의 간격 확률, Tracy–Widom 분포, 산란 이론의 위상 이동, zeta 함수의 정규화가 $\det(I-K)$ 로 표현된다. 가역성 판정의 근거는 [Fredholm 작용소](fredholm-operators.md)에서 $I - K$ 가 콤팩트 섭동이라 지표가 0 이라는 사실이다. 지표가 0 이면 단사와 전사가 동치이므로 판정할 조건이 하나다.
 
 # 직관
 
@@ -148,7 +148,7 @@ $$
 
 산란 이론에서 Jost 함수가 섭동 작용소의 Fredholm 행렬식으로 쓰이고, 그 위상의 증가가 속박 상태의 개수를 센다. Birman–Krein 공식이 $\det$ 의 위상과 스펙트럼 이동 함수를 잇는 형태로 이 관계를 정리한다.
 
-Laplace 작용소처럼 자취류가 아닌 대상에는 제타 정규화 행렬식 $\exp(-\zeta'(0))$ 을 쓴다. 정의는 Fredholm 행렬식과 다르지만 발산하는 고유값 곱에 유한한 값을 지정한다는 점에서 ${\det}\_p$ 정규화와 같은 계열이다. 해석적 비틀림과 곡면 위의 행렬식 공식이 이 틀에 속한다.[^1]
+Laplace 작용소처럼 자취류가 아닌 대상에는 zeta 정규화 행렬식 $\exp(-\zeta'(0))$ 을 쓴다. 정의는 Fredholm 행렬식과 다르지만 발산하는 고유값 곱에 유한한 값을 지정한다는 점에서 ${\det}\_p$ 정규화와 같은 계열이다. 해석적 비틀림과 곡면 위의 행렬식 공식이 이 틀에 속한다.[^1]
 
 [^1]: Barry Simon, *Trace Ideals and Their Applications*, 2nd ed., Chapters 3 and 5. 자취류 아이디얼, Lidskii 정리, Fredholm 행렬식의 정의와 곱셈성, 정규화 행렬식 $\det\_p$ . 수치 계산은 Folkmar Bornemann, *On the numerical evaluation of Fredholm determinants*, Mathematics of Computation 79 (2010), §§1–3.
 

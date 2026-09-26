@@ -54,7 +54,7 @@ $$
 
 **정리.** 차수 $0$ 인 divisor $D$ 가 주 divisor 일 필요충분조건은 $\mathrm{AJ}(D)=0$ 이다.
 
-한 방향은 직관 절의 계산을 종수 $g$ 로 옮긴 것이다. $D = \mathrm{div}(f)$ 이면 $f$ 를 $\mathbb P^1$ 로 가는 사상으로 보고 $0$ 과 $\infty$ 를 잇는 경로를 당겨 올려 적분값이 주기가 됨을 본다. 반대 방향은 $\mathrm{AJ}(D)=0$ 에서 나오는 자료로 유리형 함수를 구성하는 것이고 Riemann 세타 함수를 쓴다. ∎
+한 방향은 직관 절의 계산을 종수 $g$ 로 옮긴 것이다. $D = \mathrm{div}(f)$ 이면 $f$ 를 $\mathbb P^1$ 로 가는 사상으로 보고 $0$ 과 $\infty$ 를 잇는 경로를 당겨 올려 적분값이 주기가 됨을 본다. 반대 방향은 $\mathrm{AJ}(D)=0$ 에서 나오는 자료로 유리형 함수를 구성하는 것이고 Riemann theta 함수를 쓴다. ∎
 
 **따름정리.** $\mathrm{AJ}$ 가 군 동형 $\mathrm{Pic}^0(X) \cong J(X)$ 를 준다.
 
@@ -66,7 +66,7 @@ $J(X)$ 의 어느 점도 곡면 위의 점 $g$ 개로 표현된다. 차원이 �
 
 ## 편극
 
-주기 행렬은 Riemann 쌍선형 관계를 만족하고, 그 관계가 $J(X)$ 위에 주편극을 준다. 편극을 갖춘 복소 토러스는 사영공간에 매장되므로 $J(X)$ 는 아벨 다양체다. 편극의 세타 divisor 는 $\mathrm{Sym}^{g-1}X$ 의 상이다.
+주기 행렬은 Riemann 쌍선형 관계를 만족하고, 그 관계가 $J(X)$ 위에 주편극을 준다. 편극을 갖춘 복소 토러스는 사영공간에 매장되므로 $J(X)$ 는 아벨 다양체다. 편극의 theta divisor 는 $\mathrm{Sym}^{g-1}X$ 의 상이다.
 
 ## Torelli 정리
 
@@ -78,9 +78,9 @@ $g=1$ 이면 $\mathrm{AJ}: X \to J(X)$ 가 동형이다. [타원곡선](elliptic
 
 # 활용
 
-- [Riemann–Roch 정리](riemann-roch.md)에서 특수 divisor 를 다룬다. 세타 divisor 위의 점이 전역 단면을 여분으로 갖는 류에 대응하고, Riemann 특이점 정리가 그 여분을 세타 함수의 중복도로 준다.
+- [Riemann–Roch 정리](riemann-roch.md)에서 특수 divisor 를 다룬다. theta divisor 위의 점이 전역 단면을 여분으로 갖는 류에 대응하고, Riemann 특이점 정리가 그 여분을 theta 함수의 중복도로 준다.
 - 곡선의 유리점을 센다. 수체 위의 곡선에서 $J(X)$ 의 유리점이 Mordell–Weil 정리로 유한생성이고, 계수가 $g$ 보다 작으면 Chabauty 방법이 곡선의 유리점을 유한 개로 묶는다.
-- 세타 함수를 정의한다. 주기 행렬로 쓴 [theta 급수](theta-series.md)가 $J(X)$ 위의 단면이 되고, 적분가능계의 해를 이 함수로 적는다.
+- theta 함수를 정의한다. 주기 행렬로 쓴 [theta 급수](theta-series.md)가 $J(X)$ 위의 단면이 되고, 적분가능계의 해를 이 함수로 적는다.
 - 곡면의 모듈라이를 비교한다. Torelli 정리로 곡선의 모듈라이 공간이 주편극 아벨 다양체의 모듈라이 공간에 들어간다.
 
 [^1]: Phillip Griffiths, Joseph Harris, *Principles of Algebraic Geometry*, Wiley (1978), 2장. 주기 격자, Abel 정리, Jacobi 역 정리가 이 장에 있다.

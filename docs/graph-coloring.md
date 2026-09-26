@@ -180,7 +180,7 @@ $k \ge 3$ 고정에 대해 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 
 ## 이론적 위치
 
-색칠은 "국소 제약에서 전역 분할을 얻는" 문제의 원형이다. 같은 형태가 [선형계획법](linear-programming.md)의 완화(분수 채색수), 준정부호 계획법(Lovász theta 함수, 완벽 그래프 이론), 확률적 방법의 Lovász local lemma 기반 색칠 정리에서 반복된다. 특히 완벽 그래프(모든 유도 부분그래프에서 $\omega = \chi$ 인 그래프)의 이론은 $\omega \le \chi$ 라는 자명한 부등식이 언제 등호가 되는지를 묻는 질문이고, 강한 완벽 그래프 정리(2006)로 답이 나왔다. 색칠의 어려움은 대부분 $\omega$ 와 $\chi$ 사이의 간격에서 나온다는 관점이 여기서 가장 뚜렷하다.
+색칠은 "국소 제약에서 전역 분할을 얻는" 문제의 원형이다. 같은 형태가 [선형계획법](linear-programming.md)의 완화(분수 채색수), 준정부호 계획법(Lovász 세타 함수, 완벽 그래프 이론), 확률적 방법의 Lovász local lemma 기반 색칠 정리에서 반복된다. 특히 완벽 그래프(모든 유도 부분그래프에서 $\omega = \chi$ 인 그래프)의 이론은 $\omega \le \chi$ 라는 자명한 부등식이 언제 등호가 되는지를 묻는 질문이고, 강한 완벽 그래프 정리(2006)로 답이 나왔다. 색칠의 어려움은 대부분 $\omega$ 와 $\chi$ 사이의 간격에서 나온다는 관점이 여기서 가장 뚜렷하다.
 
 [^1]: K. Appel, W. Haken, "Every planar map is four colorable", Bulletin of the American Mathematical Society 82 (1976), https://www.ams.org/journals/bull/1976-82-05/S0002-9904-1976-14122-5/
 [^2]: N. Robertson, D. Sanders, P. Seymour, R. Thomas, "The Four-Colour Theorem", Journal of Combinatorial Theory Series B 70 (1997), https://doi.org/10.1006/jctb.1997.1750

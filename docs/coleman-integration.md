@@ -76,7 +76,7 @@ $\phi^\ast$ 의 de Rham 코호몰로지 위의 행렬을 구하면 적분상수�
 - **Chabauty–Coleman 상한.** 소멸 미분형식 $\omega$ 를 잡으면 $C(\mathbb Q)$ 의 점이 모두 $\int\omega=0$ 을 만족하므로 위 영점 정리가 유리점 개수의 상한을 준다. [Chabauty 방법](chabauty-method.md)의 상한이 이것이다.
 - **이차 Chabauty.** 계수가 종수 이상이어서 한 겹 적분으로 조건이 모자랄 때 반복 적분을 쓴다. 이중 적분이 $p$ 진 높이함수를 표현하고, 그 함수의 영점 조건이 조건을 $r\lt g+s-1$ 로 바꾼다.
 - **$p$ 진 높이.** 아벨 다양체 위의 $p$ 진 높이쌍이 반복 Coleman 적분으로 적힌다. $p$ 진 $L$ 함수와 잇는 $p$ 진 Birch–Swinnerton-Dyer 추측의 정식화가 이 표현을 쓴다.
-- **$p$ 진 다중제타값.** 사영직선에서 $0,1,\infty$ 를 뺀 공간의 반복 적분이 $p$ 진 다중제타값을 준다. 복소수에서 다중제타값을 반복 적분으로 얻는 것과 같은 꼴이다.
+- **$p$ 진 다중 zeta 값.** 사영직선에서 $0,1,\infty$ 를 뺀 공간의 반복 적분이 $p$ 진 다중 zeta 값을 준다. 복소수에서 다중 zeta 값을 반복 적분으로 얻는 것과 같은 꼴이다.
 
 [^1]: R. Coleman, "Torsion points on curves and $p$-adic abelian integrals", *Ann. of Math.* **121** (1985), 111–168.
 [^2]: R. Coleman, "Effective Chabauty", *Duke Math. J.* **52** (1985), 765–770.
