@@ -43,7 +43,7 @@ $$
 B(x,r)=\lbrace y\in X: d(x,y)\lt r\rbrace,\qquad r\gt 0
 $$
 
-$U \subseteq X$ 의 모든 점 $x$ 에 대해 $B(x, r) \subseteq U$ 인 $r \gt 0$ 이 있으면 $U$ 가 열린 집합이다. 열린 집합의 모임은 임의 합집합과 유한 교집합에 닫혀 있어 [위상](topology.md)을 이루고, 이것이 $d$ 가 유도한 위상이다.
+$U \subseteq X$ 의 모든 점 $x$ 에 대해 $B(x, r) \subseteq U$ 인 $r \gt 0$ 이 있으면 $U$ 가 열린 집합이다. 열린 집합의 모임은 임의 합집합과 유한 교집합에 닫혀 있어 위상을 이루고, 이것이 $d$ 가 유도한 위상이다.
 
 ## 수렴과 연속
 

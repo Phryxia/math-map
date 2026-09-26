@@ -118,7 +118,7 @@ $\overline{\mathrm{Gr}^\lambda}$ 는 일반적으로 특이점을 갖고, 그 �
 - **적분가능계**: MV 다면체의 조합론이 Berenstein–Zelevinsky 의 tropical 자료, 나아가 cluster 대수와 이어진다.
 - **산술 쪽으로의 되돌림**: [Casselman–Shalika 공식](casselman-shalika.md)처럼 함수 수준에서 계산되던 것들이 층 수준 진술에서 점을 센 결과로 이해된다. $\mathbb F_q$ 점을 세면 다시 $p$ 진 적분이 나온다.
 
-[기하학적 Satake](geometric-satake.md) 에서 함수를 층으로 올리고 MV 이론에서 무게까지 내리면, Kostant 공식이 교대합으로 주던 무게 중복도가 세는 대상을 갖는다.
+기하학적 Satake 에서 함수를 층으로 올리고 MV 이론에서 무게까지 내리면, Kostant 공식이 교대합으로 주던 무게 중복도가 세는 대상을 갖는다.
 
 # 연관 문서
 
