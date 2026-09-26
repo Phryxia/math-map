@@ -106,7 +106,7 @@ $a_p$ 에 관한 진술은 다음 층으로 나뉜다.
 | 층위 | 진술 | 상태 |
 |---|---|---|
 | 크기 | $\lvert a_p\rvert\le2\sqrt p$ | [Hasse, Deligne](deligne-weil-conjectures.md) — 정리 |
-| 분포(띠) | $\theta_p\sim\frac2\pi\sin^2\theta\thinspace d\theta$ | [Sato–Tate](sato-tate.md) — 정리 |
+| 분포(띠) | $\theta_p\sim\frac2\pi\sin^2\theta\thinspace d\theta$ | Sato–Tate — 정리 |
 | 분포(점) | $\char35{}\lbrace a_p=r\rbrace\sim C\sqrt X/\log X$ | Lang–Trotter — 추측[^1] |
 | 점의 무한성 | $a_p=0$ 이 무한히 많다 | Elkies — 정리 |
 

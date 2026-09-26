@@ -83,7 +83,7 @@ $$
 D(z)=\mathrm{Im}\mathrm{Li}\_2(z)+\arg(1-z)\log|z|
 $$
 
-인 **Bloch–Wigner 이중로그**로 주어진다. 이상 사면체의 세 이면각이 $\alpha,\beta,\gamma$ 이면 $D(z)=\Lambda(\alpha)+\Lambda(\beta)+\Lambda(\gamma)$ 로 [Lobachevsky 함수](lobachevsky-function.md)가 된다.
+인 **Bloch–Wigner 이중로그**로 주어진다. 이상 사면체의 세 이면각이 $\alpha,\beta,\gamma$ 이면 $D(z)=\Lambda(\alpha)+\Lambda(\beta)+\Lambda(\gamma)$ 로 Lobachevsky 함수가 된다.
 
 # 성질
 
@@ -170,7 +170,7 @@ $|z|=1$ 인 정이면체 해에서는 $\log|z|=0$ 이라 둘째 항이 사라지
 
 ## 매듭 구별
 
-SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자동으로 만들고 붙임 방정식을 [Newton 법](newton-method.md)으로 푼다. 얻은 부피, cusp 모양, 자취체가 위상 불변량이므로 매듭표에서 항목을 가르는 1 차 기준이 된다. [Alexander 다항식](knot-invariants.md)이나 [Jones 다항식](knot-invariants.md)이 같은 값을 주는 매듭 쌍도 부피가 다르면 갈린다.
+SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자동으로 만들고 붙임 방정식을 [Newton 법](newton-method.md)으로 푼다. 얻은 부피, cusp 모양, 자취체가 위상 불변량이므로 매듭표에서 항목을 가르는 1 차 기준이 된다. [Alexander 다항식](knot-invariants.md)이나 Jones 다항식이 같은 값을 주는 매듭 쌍도 부피가 다르면 갈린다.
 
 수치 계산은 증명이 아니다. 붙임 방정식의 근사해가 진짜 해 근처에 있음을 구간 산술로 검증하는 절차(HIKMOT 류)를 통과해야 그 다양체가 쌍곡이라는 것이 정리가 된다.
 
@@ -178,7 +178,7 @@ SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자
 
 - **산술 쌍곡 다양체.** $\Gamma$ 가 사원수 대수의 정수원에서 오면 Bianchi 군 $\mathrm{PSL}\_2(\mathcal O_d)$ 류가 되고 부피가 [Dedekind zeta 함수](dirichlet-l-functions.md)의 값으로 계산된다. [Selberg 대각합 공식](selberg-trace-formula.md)이 길이 스펙트럼과 Laplace 스펙트럼을 잇는다.
 - **Chern–Simons 이론.** 쌍곡 구조는 $\mathrm{SL}\_2(\mathbb C)$ 평탄 접속이므로 [Chern–Simons](chern-simons.md) 불변량이 정의되고 $\mathrm{CS}+i\thinspace\mathrm{Vol}/2\pi$ 라는 복소수 하나로 묶인다. [Witten 점근](witten-asymptotics.md)과 볼륨 추측이 이 복소수의 실수부와 허수부를 본다.
-- **$K$ 이론.** 사면체 모양들이 정하는 Bloch 군의 원소가 있고 그 Borel 조절자가 부피다. [대수적 K 이론](algebraic-k-theory.md)이 3 다양체의 부피와 이렇게 이어진다.
+- **$K$ 이론.** 사면체 모양들이 정하는 Bloch 군의 원소가 있고 그 Borel 조절자가 부피다. 대수적 K 이론이 3 다양체의 부피와 이렇게 이어진다.
 
 [^1]: $\mathrm{Im}\mathrm{Li}\_2(e^{i\theta})=\sum_n\sin(n\theta)/n^2$ 이고 $\Lambda(\theta)=\tfrac12\sum_n\sin(2n\theta)/n^2$ 이므로 $\mathrm{Im}\mathrm{Li}\_2(e^{i\theta})=2\Lambda(\theta/2)$ 다. $\theta=\pi/3$ 에서 $2\Lambda(\pi/6)=1.0149416\ldots=V_3$ 이 나온다.
 

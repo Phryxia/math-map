@@ -58,7 +58,7 @@ $$
 | 최소다항식 | $\prod\_\lambda(x-\lambda)^{e\_\lambda}$ , $e\_\lambda$ 는 $\lambda$ 블록 중 최대 크기 |
 | 대각화 가능 | 모든 $e\_\lambda=1$ |
 
-최소다항식이 특성다항식을 나누므로 [Cayley–Hamilton 정리](eigenvalues.md)가 따라 나온다.
+최소다항식이 특성다항식을 나누므로 Cayley–Hamilton 정리가 따라 나온다.
 
 ## 유사 판정
 

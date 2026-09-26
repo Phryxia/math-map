@@ -151,7 +151,7 @@ $$
 \frac{|H^1_{\mathcal F}(K,T)|}{|H^1_{\mathcal F^\ast}(K,T^\ast)|}=\frac{|H^0(K,T)|}{|H^0(K,T^\ast)|}\prod_{v}\frac{|H^1_{\mathcal F}(K_v,T)|}{|H^0(K_v,T)|}
 $$
 
-곱은 모든 자리에 걸치고 $v\notin\Sigma$ 에서 항이 $1$ 이라 유한 곱이다. 증명은 [Poitou–Tate 완전열](poitou-tate.md)에 국소 Euler 표수 공식을 결합하는 것이다. 양변에 $\log_p$ 를 씌우면
+곱은 모든 자리에 걸치고 $v\notin\Sigma$ 에서 항이 $1$ 이라 유한 곱이다. 증명은 Poitou–Tate 완전열에 국소 Euler 표수 공식을 결합하는 것이다. 양변에 $\log_p$ 를 씌우면
 
 $$
 \chi(\mathcal F)=\sum_v\Big(\dim H^1_{\mathcal F}(K_v,T)-\dim H^0(K_v,T)\Big)+\dim H^0(K,T)-\dim H^0(K,T^\ast)
@@ -195,7 +195,7 @@ $$
 \chi(\mathcal F^{p})=-1+2=1
 $$
 
-이다. 실수 자리의 $-1$ 이 남아 균형을 한 칸 어긋나게 만든다. 이 완화된 구조의 쌍대는 $p$ 에서 엄격한 구조이므로 결론은 엄격 Selmer 군의 정확한 크기이고, [Kato](euler-systems.md) 의 zeta 원소가 사는 자리다.
+이다. 실수 자리의 $-1$ 이 남아 균형을 한 칸 어긋나게 만든다. 이 완화된 구조의 쌍대는 $p$ 에서 엄격한 구조이므로 결론은 엄격 Selmer 군의 정확한 크기이고, Kato 의 zeta 원소가 사는 자리다.
 
 ## 주정리
 

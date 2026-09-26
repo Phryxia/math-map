@@ -88,7 +88,7 @@ $$
 
 # 활용
 
-- **Chernoff 한계.** Cramér 정리의 상계 부분이 유한 $n$ 에서도 성립하므로 $\mathbb P\lbrack S_n/n \ge x\rbrack \le e^{-n\Lambda^\ast(x)}$ 를 그대로 쓴다. [집중부등식](concentration-inequalities.md)의 여러 꼬리 한계가 이 형태의 특수 사례다.
+- **Chernoff 한계.** Cramér 정리의 상계 부분이 유한 $n$ 에서도 성립하므로 $\mathbb P\lbrack S_n/n \ge x\rbrack \le e^{-n\Lambda^\ast(x)}$ 를 그대로 쓴다. 집중부등식의 여러 꼬리 한계가 이 형태의 특수 사례다.
 - **가설검정의 오류지수.** 두 분포를 구별하는 검정에서 제2종 오류의 확률이 $e^{-n\mathrm{KL}}$ 규모로 감소하고 그 지수가 Stein 보조정리로 주어진다. 표본 수를 정할 때 이 지수가 기준이 된다.
 - **통계역학의 자유에너지.** Gibbs 측도의 자유에너지가 Varadhan 보조정리의 우변에 해당하며 상전이는 rate function 의 최소점이 갈라지는 자리에 대응한다.
 - **무작위 [그래프](graphs.md)의 드문 부분구조.** Erdős–Rényi 그래프에서 삼각형 수가 기댓값보다 크게 나올 확률의 지수를 대편차 원리로 계산한다.

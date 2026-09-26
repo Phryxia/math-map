@@ -112,7 +112,7 @@ $m_n$ 은 n-단체의 개수다. 이 계산은 [선형사상](linear-maps.md)의
 
 ## 기본군과의 관계
 
-경로연결 공간에서 1차 호몰로지는 [기본군](fundamental-group.md)의 아벨화와 동형이다(Hurewicz).
+경로연결 공간에서 1차 호몰로지는 기본군의 아벨화와 동형이다(Hurewicz).
 
 $$
 H_1(X)\cong\pi_1(X)^{\mathrm{ab}}=\pi_1(X)/[\pi_1(X),\pi_1(X)]
@@ -126,7 +126,7 @@ n 차원 구면의 n 차 호몰로지가 정수군이고 n 차원 원판의 것�
 
 # 활용
 
-- Euler 지표의 위상적 정의. 단체 개수의 교대합이 Betti 수의 교대합과 같다. 자세한 진술은 [Euler 지표](euler-characteristic.md)에 있다.
+- Euler 지표의 위상적 정의. 단체 개수의 교대합이 Betti 수의 교대합과 같다. 자세한 진술은 Euler 지표에 있다.
 
 $$
 \chi(K)=\sum_{n\ge 0}(-1)^{n}m_n=\sum_{n\ge 0}(-1)^{n}\beta_n
