@@ -34,18 +34,6 @@ $$
 
 핵심은 이 교차가 **순수 차원**이라는 것이다. 차원이 고르므로 최고차원 기약성분들이 코호몰로지의 기저를 곧바로 준다. 그 성분들의 닫힘이 **MV 순환**이다.
 
-```mermaid
-graph TD
-  GR["아핀 Grassmann Gr_G"] --> ORB["G(O) 궤도 Gr^λ<br/>→ 기약표현 V_λ"]
-  GR --> SEMI["반무한 낟가리 S_μ<br/>(N(F) 궤도)"]
-  ORB --> INT["교차 S_μ ∩ Gr^λ-bar"]
-  SEMI --> INT
-  INT --> MV["최고차원 기약성분<br/>= MV 순환"]
-  MV --> BASIS["무게 공간 V_λ(μ) 의 기저"]
-  BASIS --> CRY["결정 기저와 일치<br/>(Braverman–Gaitsgory)"]
-  BASIS --> POLY["MV 다면체<br/>(Anderson, Kamnitzer)"]
-```
-
 ## Kostant 공식과의 대비
 
 Kostant 중복도 공식은 이렇다.
