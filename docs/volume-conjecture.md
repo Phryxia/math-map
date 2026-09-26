@@ -52,19 +52,6 @@ $$
 
 $-\int\log|2\sin(\theta/2)|d\theta$ 가 **Lobachevsky 함수**이고 쌍곡 사면체의 부피가 이 함수로 표현된다. 8 자매듭 여집합은 정이면체 사면체 두 개로 분할되고 그 부피가 $2.0298\ldots$ 다. 합의 최대항을 찾는 안장점 조건이 사면체의 이면각을 정하는 붙임 방정식과 같은 식이 된다.
 
-```mermaid
-flowchart TD
-  JN["색 Jones J_N(K; q)<br/>조합적 정의"] --> EVAL["q = e^{2πi/N} 에서 평가"]
-  EVAL --> SUM["q-이항곱의 합"]
-  SUM --> LOG["log → Σ log|1-q^j|"]
-  LOG --> LOB["적분 → Lobachevsky 함수 Λ"]
-  LOB --> VOL["쌍곡 사면체의 부피"]
-  SUM --> SAD["최대항 = 안장점"]
-  SAD --> GLUE["사면체 붙임 방정식"]
-  GLUE --> VOL
-  VOL --> HYP["Vol(S³ \\ K)<br/>Mostow 강직성으로 위상 불변량"]
-```
-
 # 정의
 
 ## 색 Jones 다항식
@@ -136,7 +123,7 @@ $2\pi\log J_N/N$ 은 참값보다 $2\pi\cdot\tfrac32\log N/N$ 만큼 크다. 이
 ## 매듭 검출과 부피 계산
 
 - **매듭 검출.** 추측이 참이면 색 Jones 다항식 전체가 풀린 매듭을 검출한다.
-- **부피의 계산.** 부피를 구하는 실용적 방법은 사면체 분할이고, 이 방향은 양자 불변량이 기하를 얼마나 아는지를 재는 시금석이다.
+- **부피의 계산.** 부피를 구하는 실용적 방법은 사면체 분할이고, 이 방향은 양자 불변량이 기하를 얼마나 결정하는지 재는 기준이다.
 - **$\mathrm{SL}\_2(\mathbb C)$ 로의 확장.** 복소 안장점을 다루는 틀이 $\mathrm{SU}(2)$ 대신 $\mathrm{SL}\_2(\mathbb C)$ [Chern–Simons 이론](chern-simons.md)을 요구한다.[^1][^2]
 
 [^1]: R. Kashaev, *The hyperbolic volume of knots from quantum dilogarithm*, Lett. Math. Phys. 39 (1997) 가 원래 형태이고, H. Murakami–J. Murakami, *The colored Jones polynomials and the simplicial volume of a knot*, Acta Math. 186 (2001) 이 색 Jones 다항식의 진술로 옮겼다.

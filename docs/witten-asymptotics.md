@@ -12,7 +12,7 @@ Witten 의 답은 $k\to\infty$ 에 있다. 그 극한에서 $\tau_k(M)$ 은 $M$ 
 
 # 직관
 
-## 임계점으로서의 평탄 접속
+## 평탄 접속
 
 Witten 의 출발점은 다음 형식적 적분이다.
 
@@ -30,20 +30,6 @@ $$
 이므로 임계점은 $F_A=0$ , 곧 **평탄 접속**이다. 평탄 접속의 게이지류는 $\pi_1(M)\to\mathrm{SU}(2)$ 준동형의 켤레류와 같으므로 유한하거나 유한차원이고, 무한차원 적분이 $\pi_1$ 의 표현으로 내려온다.
 
 각 임계점의 기여는 정상위상법의 표준형을 따른다. 위상은 임계값 $e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}$ 이고 진폭은 2 차 변분의 [행렬식](determinants.md)의 $-1/2$ 승이다. 그 행렬식을 정규화하면 비꼬인 de Rham 복합체의 [Reidemeister 비틀림](reidemeister-torsion.md) $T_\alpha$ 가 되고, 행렬식의 부호에서 스펙트럼 흐름(Atiyah–Patodi–Singer 의 $\eta$ 불변량)이 위상으로 따라 나온다.
-
-```mermaid
-graph TD
-  PI["경로적분 ∫ DA e^{2πik CS(A)}<br/>(정의되지 않음)"] --> SP["정상위상법"]
-  SP --> CRIT["임계점 = 평탄 접속<br/>π₁(M) → SU(2)"]
-  CRIT --> PH["위상: e^{2πik CS(α)}"]
-  CRIT --> AM["진폭: √T_α (Reidemeister 비틀림)"]
-  CRIT --> ET["부호: η 불변량 / 스펙트럼 흐름"]
-  PH --> ASY["점근전개의 선행항"]
-  AM --> ASY
-  ET --> ASY
-  RT["τ_k(M): 유한합, 엄밀하게 정의됨"] --> GAUSS["Gauss 합 상호법칙"]
-  GAUSS -->|"k 개 항 → 평탄 접속 개수만큼의 항"| ASY
-```
 
 ## Gauss 합 상호법칙
 
