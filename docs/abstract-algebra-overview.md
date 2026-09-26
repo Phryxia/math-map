@@ -63,7 +63,7 @@ graph TD
 - [Nakayama 보조정리](nakayama-lemma.md): 국소환 위의 가군을 잉여체로 내려 읽기
 - [대수적 K 이론](algebraic-k-theory.md): 환의 사영가군에서 나오는 고차 불변량
 
-## 대수기하로 가는 문
+## 대수다양체
 
 - [대수다양체](algebraic-varieties.md): 다항식의 해집합, 영점정리가 잇는 근기 아이디얼과의 대응, Zariski 위상
 - [사영다양체](projective-varieties.md): 동차좌표로 넓힌 공간 위의 대수적 집합, 완비성과 Bezout 정리

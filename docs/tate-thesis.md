@@ -35,7 +35,7 @@ $$
 
 왼쪽은 Euler 인자, 오른쪽은 감마 인자다. $\zeta(s)$ 는 자리를 하나 빼먹은 곱이고 $\Lambda(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 가 모든 자리에 걸친 곱이므로, 완비 zeta 함수 쪽이 대칭적이다.
 
-## Mellin 변환의 정체
+## 곱군 위의 Fourier 변환
 
 Mellin 변환 $\int_0^\infty f(t)t^s\thinspace dt/t$ 에서 $dt/t$ 는 곱군 $\mathbb R_{\gt 0}$ 의 Haar 측도이고 $t\mapsto t^s$ 는 그 군의 준지표다. Mellin 변환은 $\mathbb R_{\gt 0}$ 위의 Fourier 변환이다.
 
