@@ -106,18 +106,6 @@ $$
 
 이다. Galois 군의 원소가 격자에 아이디얼을 곱하는 조작으로 실현된다. $\mathbb Q$ 위의 $\sigma_a(\zeta_n)=\zeta_n^{a}$ 와 같은 종류의 명시성이고, [Heegner 점](heegner-points.md)의 구성이 이 등식에 의존한다.
 
-```mermaid
-graph LR
-  K["허수이차체 K"] --> CL["Cl(K)"]
-  CL -->|"Artin 사상"| G["Gal(H/K)"]
-  CL -->|"[a] ↦ C/a"| E["CM 곡선들"]
-  E -->|"j"| J["j(a) 들"]
-  G -->|"σ_a j(b) = j(a⁻¹b)"| J
-  J --> H["힐베르트 유체 H = K(j)"]
-  T["비틀림점 좌표<br/>(Weber 함수)"] --> R["광선 유체 K_m"]
-  H --> R
-```
-
 ## 광선 유체와 비틀림점
 
 $H$ 는 $K$ 의 최대 비분기 아벨확대다. 분기를 허용하는 광선 유체에는 재료가 하나 더 필요하고 그것이 비틀림점이다. $E$ 가 $\mathcal O_K$ 로 복소 곱셈을 가질 때 $\mathfrak m$ 등분점 $E[\mathfrak m]$ 의 좌표를 자기동형으로 정규화한 Weber 함수 $\mathfrak h$ 의 값을 $H$ 에 붙이면 도체 $\mathfrak m$ 의 광선 유체가 나온다. $\zeta_n$ 이 곱셈군 $\mathbb G_m$ 의 $n$ 등분점이었던 자리에 타원곡선의 등분점이 들어간다.
