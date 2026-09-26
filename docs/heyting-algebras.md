@@ -22,17 +22,6 @@ $$
 
 Kripke 의미론에서 명제는 한 번 참이면 이후에도 참인 상향닫힌 집합이다. 상향닫힌 집합의 여집합은 하향닫힌 집합이라 명제가 되지 못하고, 상향닫힌 부분만 남긴 것이 부정이 된다.
 
-```mermaid
-graph TD
-  L["유계 격자"] --> D["분배격자"]
-  D --> H["Heyting algebra"]
-  H --> B["Boolean algebra"]
-  H --> F["complete Heyting algebra (frame)"]
-  D --> DL["유한 분배격자 = 유한 Heyting algebra"]
-  B --> P["멱집합 대수"]
-  F --> O["위상공간의 열린집합 격자"]
-```
-
 # 정의
 
 ## 상대 의사보수
