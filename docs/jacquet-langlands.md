@@ -88,7 +88,7 @@ $\Sigma\ne\varnothing$ 이면 $B^\times(F)Z(\mathbb A)\backslash B^\times(\mathb
 
 ## 류수와 종수
 
-$\Sigma=\lbrace\infty,p\rbrace$ 인 확정 사원수 대수의 좌이념류 수 $h(p)$ 는 Eichler 의 질량 공식과 타원점 계산으로 닫힌 식이 된다. Eichler 의 정리에 의해 무게 2 레벨 $p$ 의 첨점형식 공간의 차원이 $h(p)-1$ 이고, 이는 모듈러 곡선 $X_0(p)$ 의 종수다.
+$\Sigma=\lbrace\infty,p\rbrace$ 인 확정 사원수 대수의 좌이념류 수 $h(p)$ 는 Eichler 의 질량 공식과 타원점 계산으로 닫힌 식이 된다. Eichler 의 정리로 무게 2 레벨 $p$ 의 첨점형식 공간의 차원이 $h(p)-1$ 이고, 이는 모듈러 곡선 $X_0(p)$ 의 종수다.
 
 $$
 h(p)=\frac{p-1}{12}+\frac14\Bigl(1-\Bigl(\frac{-4}{p}\Bigr)\Bigr)+\frac13\Bigl(1-\Bigl(\frac{-3}{p}\Bigr)\Bigr)
@@ -121,7 +121,7 @@ Waldspurger 정리는 토릭 주기를 사원수 대수 위에서 잰다. 어느
 
 ## 초특이 타원곡선과 계산 정수론
 
-Deuring 대응에 의해 확정 사원수 대수의 극대차수는 표수 $p$ 의 초특이 [타원곡선](elliptic-curves.md)의 자기준동형환이다. 위에서 센 이념류가 초특이 곡선들과 대응하고, Brandt 행렬은 그 곡선들을 잇는 등원사상 그래프의 인접행렬이다. 모듈러 형식의 Hecke 작용소, 사원수 대수의 이념류, 초특이 곡선의 등원사상 그래프가 같은 유한 행렬로 만난다. 이 그래프는 Ramanujan 그래프이고 등원사상 기반 암호가 여기서 구성된다.
+Deuring 대응으로 확정 사원수 대수의 극대차수는 표수 $p$ 의 초특이 [타원곡선](elliptic-curves.md)의 자기준동형환이다. 위에서 센 이념류가 초특이 곡선들과 대응하고, Brandt 행렬은 그 곡선들을 잇는 등원사상 그래프의 인접행렬이다. 모듈러 형식의 Hecke 작용소, 사원수 대수의 이념류, 초특이 곡선의 등원사상 그래프가 같은 유한 행렬로 만난다. 이 그래프는 Ramanujan 그래프이고 등원사상 기반 암호가 여기서 구성된다.
 
 # 연관 문서
 
