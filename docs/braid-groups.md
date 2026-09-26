@@ -37,17 +37,7 @@ $$
 \text{안정화}\ \colon\ \beta\sim\beta\sigma_n^{\pm1}\ (\beta\in B_n\subset B_{n+1})
 $$
 
-켤레는 닫힘을 취하면 앞뒤가 이어지므로 그림이 변하지 않고, 안정화는 가닥을 하나 늘리면서 Reidemeister 1 이동으로 없앨 수 있는 꼬임을 붙인다. Markov 정리는 이 둘 말고는 없다고 말한다.
-
-```mermaid
-graph LR
-  D["링크 도식"] -->|"Alexander"| BR["땋임 β ∈ B_n"]
-  BR -->|"닫힘"| L["링크 L"]
-  BR -->|"켤레 / 안정화"| BR2["다른 땋임"]
-  BR2 -->|"닫힘"| L
-  BR --> TR["Markov 자취"]
-  TR --> INV["링크 불변량"]
-```
+켤레는 닫힘을 취하면 앞뒤가 이어지므로 그림이 변하지 않고, 안정화는 가닥을 하나 늘리면서 Reidemeister 1 이동으로 없앨 수 있는 꼬임을 붙인다. Markov 정리에 따르면 이 둘 말고는 없다.
 
 ## 불변량의 구성 조건
 
