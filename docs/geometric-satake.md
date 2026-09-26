@@ -82,7 +82,7 @@ $\mathrm{Gr}^\lambda$ 는 열린 궤도이고 그 폐포는 특이점을 가진�
 
 - 단순 대상이 정확히 $\mathcal{IC}\_\lambda$ 들이라 기약표현과 짝이 맞는다.
 - 합성곱이 퍼버스 범주 안에 머문다(**완전성**). 이것이 정리의 가장 어려운 부분이고, $\mathrm{Gr}\_G$ 의 궤도 차원의 홀짝성 같은 특별한 기하가 필요하다.
-- 분해 정리에 의해 합성곱이 $\mathcal{IC}$ 들의 직합으로 쪼개지고, 그 중복도가 텐서곱 분해의 중복도가 된다.
+- 분해 정리로 합성곱이 $\mathcal{IC}$ 들의 직합으로 쪼개지고, 그 중복도가 텐서곱 분해의 중복도가 된다.
 
 일반적인 층에서는 합성곱이 아벨 범주 밖으로 나가 텐서 범주 구조를 얻지 못한다.
 
@@ -138,7 +138,7 @@ $$
 
 $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 를 $G(\mathcal O)$ 동변 퍼버스 층들의 범주라 하고, 합성곱을 위와 같이 정의한다.
 
-> **정리 (Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 는 대칭 텐서 범주이고, 전체 코호몰로지 $H^\ast$ 를 올림자로 하는 Tannaka 쌍대성에 의해
+> **정리 (Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 는 대칭 텐서 범주이고, 전체 코호몰로지 $H^\ast$ 를 올림자로 하는 Tannaka 쌍대성으로
 > $$
 > \mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\thickspace\simeq\thickspace\mathrm{Rep}(\widehat G)
 > $$

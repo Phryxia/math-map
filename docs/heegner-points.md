@@ -126,7 +126,7 @@ $$
 
 ## 모듈러 파라미터화
 
-모듈러성 정리에 의해 무게 $2$ 준위 $N$ 의 첨점 고유형식 $f$ 가 있어 $E$ 가 $J_0(N)$ 의 몫이 되고, $X_0(N)\hookrightarrow J_0(N)\twoheadrightarrow E$ 의 합성이 $\mathbb Q$ 위에서 정의된 사상
+모듈러성 정리로 무게 $2$ 준위 $N$ 의 첨점 고유형식 $f$ 가 있어 $E$ 가 $J_0(N)$ 의 몫이 되고, $X_0(N)\hookrightarrow J_0(N)\twoheadrightarrow E$ 의 합성이 $\mathbb Q$ 위에서 정의된 사상
 
 $$
 \varphi\colon X_0(N)\to E,\qquad \varphi(\infty)=O

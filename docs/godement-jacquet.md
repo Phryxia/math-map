@@ -51,7 +51,7 @@ $$
 \varphi(g)=\langle\pi(g)v,\tilde v\rangle
 $$
 
-가 $\mathrm{GL}\_n$ 위의 함수이고, $n=1$ 이면 $\varphi=\chi$ 다. 행렬 계수는 표현의 정보를 함수 하나로 압축하며 Schur 직교성에 의해 지표와 같은 역할을 한다.
+가 $\mathrm{GL}\_n$ 위의 함수이고, $n=1$ 이면 $\varphi=\chi$ 다. 행렬 계수는 표현의 정보를 함수 하나로 압축하며 Schur 직교성으로 지표와 같은 역할을 한다.
 
 $\lvert x\rvert^s$ 자리에는 $\det\colon\mathrm{GL}\_n\to\mathbb G_m$ 을 써서 $\lvert\det g\rvert^s$ 를 넣는다. 지수를 $s+\frac{n-1}2$ 로 옮기는 것은 함수방정식이 $s\leftrightarrow1-s$ 가 되게 하는 정규화다.
 

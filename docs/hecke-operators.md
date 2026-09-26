@@ -25,7 +25,7 @@ $$
 
 지표 $p$ 의 부분격자는 $p+1$ 개다. $L/pL\cong(\mathbb Z/p)^2$ 의 지표 $p$ 부분군, 곧 $\mathbb F_p^2$ 의 직선 개수이기 때문이다. 좌표로 적으면 $\langle e_1,pe_2\rangle$ 과 $\langle e_1+je_2,pe_2\rangle$ 꼴이고, $q$ 전개로 옮기면 $a_{np}+p^{k-1}a_{n/p}$ 가 된다. 두 항은 서로 다른 두 종류의 부분격자에서 온 기여다.
 
-$\gcd(m,n)=1$ 일 때 지표 $mn$ 의 부분격자는 [중국인의 나머지 정리](chinese-remainder-theorem.md)에 의해 지표 $m$ 인 것과 지표 $n$ 인 것으로 유일하게 쪼개지므로 $T_mT_n=T_{mn}$ 이다. $\gcd$ 이 1 이 아니면 겹침이 생겨 관계식이 하나 더 붙는다.
+$\gcd(m,n)=1$ 일 때 지표 $mn$ 의 부분격자는 [중국인의 나머지 정리](chinese-remainder-theorem.md)로 지표 $m$ 인 것과 지표 $n$ 인 것으로 유일하게 쪼개지므로 $T_mT_n=T_{mn}$ 이다. $\gcd$ 이 1 이 아니면 겹침이 생겨 관계식이 하나 더 붙는다.
 
 $$
 T_pT_{p^r}=T_{p^{r+1}}+p^{k-1}T_{p^{r-1}}

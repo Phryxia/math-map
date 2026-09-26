@@ -40,7 +40,7 @@ $n\ge 3$ 인 그래프 $G$ 에서 인접하지 않은 두 정점 $u,v$ 가 $d(u)
 
 **정리(Ore).** $n\ge 3$ 이고 인접하지 않은 임의의 두 정점 $u,v$ 에 대해 $d(u)+d(v)\ge n$ 이면 $G$ 는 Hamilton 그래프다.[^2]
 
-Hamilton 순환이 없는 반례 가운데 간선이 가장 많은 것을 $G$ 라 하자. $G$ 는 완전그래프가 아니므로 인접하지 않은 $u,v$ 가 있고, 간선 $uv$ 를 더하면 최대성에 의해 Hamilton 순환이 생긴다. 그 순환에서 $uv$ 를 빼면 $u=v_1,\dots,v_n=v$ 인 Hamilton 경로가 남는다.
+Hamilton 순환이 없는 반례 가운데 간선이 가장 많은 것을 $G$ 라 하자. $G$ 는 완전그래프가 아니므로 인접하지 않은 $u,v$ 가 있고, 간선 $uv$ 를 더하면 최대성으로 Hamilton 순환이 생긴다. 그 순환에서 $uv$ 를 빼면 $u=v_1,\dots,v_n=v$ 인 Hamilton 경로가 남는다.
 
 $$
 S=\lbrace i : v_1v_{i+1}\in E\rbrace,\qquad T=\lbrace i : v_iv_n\in E\rbrace
