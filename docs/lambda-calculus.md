@@ -159,7 +159,7 @@ flowchart TD
 ## 관련 개념과의 경계
 
 - **combinator 논리.** 변수 속박을 없애고 $S = \lambda x.\lambda y.\lambda z.\thinspace x\thinspace z\thinspace(y\thinspace z)$ 와 $K = \lambda x.\lambda y.\thinspace x$ 두 combinator만으로 같은 계산 능력을 얻는다. 변수 이름 처리를 피하려는 구현에서 쓰인다.
-- **계산 복잡도.** lambda calculus는 계산 가능성을 논하기에는 좋지만 비용 모델이 자명하지 않다. 축약 단계 수와 실제 시간의 관계는 별도 연구 주제이며, 여기서의 결과들은 계산 가능성의 층위이지 [NP-완전성](np-completeness.md)의 층위가 아니다.
+- **계산 복잡도.** lambda calculus는 계산 가능성을 논하기에는 좋지만 비용 모델이 자명하지 않다. 축약 단계 수와 실제 시간의 관계는 별도 연구 주제이며, 여기서의 결과들은 계산 가능성의 층위이지 [NP-완전성](np-completeness.md)(nondeterministic polynomial time)의 층위가 아니다.
 - **논리와의 관계.** Church는 원래 lambda calculus를 수학의 기초 체계로 제안했으나 초기 체계가 Kleene–Rosser 역설로 무너졌고, 계산 부분만 떼어낸 것이 오늘날의 형태다. 이 경험이 타입 도입의 동기가 되었으며, 그 연장선에서 [Gödel 불완전성 정리](godel-incompleteness.md)와 같은 계열의 자기 지시 현상이 고정점 combinator로 나타난다.
 
 [^1]: A. M. Turing, Computability and λ-Definability, Journal of Symbolic Logic 2(4), 1937, https://www.jstor.org/stable/2268280

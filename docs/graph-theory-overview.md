@@ -4,7 +4,7 @@
 
 그래프 이론은 정점과 간선만으로 이루어진 구조를 다룬다. 물음은 "연결 관계만 남겼을 때 무엇을 말할 수 있는가" 이고, 답은 세 방향에서 온다. 조합적 논증, 다항시간 알고리즘, 그리고 인접행렬의 스펙트럼이다.
 
-그래프 이론의 갈래는 다섯 줄기다. 기본 구조와 평면성, 색칠과 매칭, 최적화 알고리즘, 동형 판정, 그리고 스펙트럼 그래프 이론이다. 그래프 알고리즘의 계산복잡도 쪽은 [NP-완전성](np-completeness.md)에, 조합적 세기 쪽은 [조합론 개관](combinatorics-overview.md)에 있다.
+그래프 이론의 갈래는 다섯 줄기다. 기본 구조와 평면성, 색칠과 매칭, 최적화 알고리즘, 동형 판정, 그리고 스펙트럼 그래프 이론이다. 그래프 알고리즘의 계산복잡도 쪽은 [NP-완전성](np-completeness.md)(nondeterministic polynomial time)에, 조합적 세기 쪽은 [조합론 개관](combinatorics-overview.md)에 있다.
 
 시작은 [그래프](graphs.md)다. 거기서 [그래프 색칠](graph-coloring.md)과 [매칭](matchings.md)이 조합적 갈래로, [네트워크 흐름](network-flow.md)이 알고리즘 갈래로, [그래프 Laplacian](graph-laplacian.md)이 스펙트럼 갈래로 갈라진다.
 

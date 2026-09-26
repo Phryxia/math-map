@@ -2,7 +2,7 @@
 
 # 개요
 
-[그래프](graphs.md)의 최대 독립집합 크기 $\alpha(G)$ 와 채색수 $\chi(G)$ 는 둘 다 계산이 NP-난해다. [그래프 색칠](graph-coloring.md)의 부등식 $\omega(G)\le\chi(G)$ 는 두 값 사이의 간격이 얼마든지 커질 수 있어 쓸모가 제한된다.
+[그래프](graphs.md)의 최대 독립집합 크기 $\alpha(G)$ 와 채색수 $\chi(G)$ 는 둘 다 계산이 NP(nondeterministic polynomial time)-난해다. [그래프 색칠](graph-coloring.md)의 부등식 $\omega(G)\le\chi(G)$ 는 두 값 사이의 간격이 얼마든지 커질 수 있어 쓸모가 제한된다.
 
 Lovász 는 1979 년에 이 둘 사이에 끼면서 다항시간에 계산되는 양을 찾았다.
 

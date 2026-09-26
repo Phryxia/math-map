@@ -2,7 +2,7 @@
 
 # 개요
 
-NP-완전성은 [P 대 NP 문제](p-np.md)를 개별 문제 수준으로 내려놓는 도구다. $\mathrm{NP}$ 에 속하는 문제들 가운데 "가장 어려운" 것들을 골라내면, 그중 하나만 다항시간에 풀려도 $\mathrm{NP}$ 전체가 $\mathrm P$ 와 같아진다. 이런 문제를 NP-완전(NP-complete)이라 한다.
+NP(nondeterministic polynomial time)-완전성은 [P 대 NP 문제](p-np.md)를 개별 문제 수준으로 내려놓는 도구다. $\mathrm{NP}$ 에 속하는 문제들 가운데 "가장 어려운" 것들을 골라내면, 그중 하나만 다항시간에 풀려도 $\mathrm{NP}$ 전체가 $\mathrm P$ 와 같아진다. 이런 문제를 NP-완전(NP-complete)이라 한다.
 
 이 개념이 성립하려면 그런 가장 어려운 문제가 실제로 존재해야 한다. Cook–Levin 정리가 그것을 보장한다: 명제논리식의 충족가능성 문제 SAT 이 NP-완전이다[^1]. 증명은 비결정적 Turing 기계의 계산 과정을 시간-공간 표(tableau)로 펼친 뒤 그 표의 국소 규칙을 **CNF**(conjunctive normal form) 절로 부호화하는 것이다.
 

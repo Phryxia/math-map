@@ -73,7 +73,7 @@ $$
 | 경로 개수 | $\mathrm{cnt}[v] = \sum \mathrm{cnt}[u]$ |
 | 도달 가능성 | 역위상순으로 비트집합 합집합 |
 
-일반 그래프에서 최장 경로는 NP-난해이고 DAG 에서는 선형 시간이다. [동적 계획법](dynamic-programming.md)의 상태 그래프가 DAG 여야 하는 것도 같은 이유다. 부분문제 의존 관계에 순환이 있으면 계산 순서를 정할 수 없다.
+일반 그래프에서 최장 경로는 NP(nondeterministic polynomial time)-난해이고 DAG 에서는 선형 시간이다. [동적 계획법](dynamic-programming.md)의 상태 그래프가 DAG 여야 하는 것도 같은 이유다. 부분문제 의존 관계에 순환이 있으면 계산 순서를 정할 수 없다.
 
 ## 임계 경로
 

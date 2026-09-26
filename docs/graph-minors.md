@@ -72,7 +72,7 @@ $\mathcal P$ 에 속하지 않는 그래프 가운데 마이너 관계에서 극
 
 ## 나무폭 위의 알고리즘
 
-나무폭이 $k$ 로 묶인 그래프에서는 나무 분해를 따라 주머니 단위로 [동적 계획법](dynamic-programming.md)을 돌릴 수 있다. 독립집합, 지배집합, [그래프 색칠](graph-coloring.md)처럼 일반 그래프에서 NP-난해인 문제들이 $k$ 에 지수이고 정점 수에 선형인 시간에 풀린다.
+나무폭이 $k$ 로 묶인 그래프에서는 나무 분해를 따라 주머니 단위로 [동적 계획법](dynamic-programming.md)을 돌릴 수 있다. 독립집합, 지배집합, [그래프 색칠](graph-coloring.md)처럼 일반 그래프에서 NP(nondeterministic polynomial time)-난해인 문제들이 $k$ 에 지수이고 정점 수에 선형인 시간에 풀린다.
 
 # 활용
 
