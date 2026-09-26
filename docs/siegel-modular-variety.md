@@ -50,7 +50,7 @@ $\dim\mathcal A_g=g(g+1)/2$ 다. $g=1$ 이면 차원이 $1$ 이고 $\mathcal A_1
 
 ## 준사영성
 
-$\mathcal A_g$ 는 $\mathbb Q$ 위에서 정의된 준사영 대수다양체의 복소점 집합이다[^1]. 증명의 요지. 가중치가 충분히 큰 Siegel 모듈러 형식들이 몫 위의 함수를 주고, 그 형식들이 만드는 등급환의 $\mathrm{Proj}$ 가 $\mathcal A_g$ 를 열린 부분집합으로 포함하는 사영다양체다.
+$\mathcal A_g$ 는 $\mathbb Q$ 위에서 정의된 준사영 대수다양체의 복소점 집합이다[^1]. 증명의 요지. 가중치가 충분히 큰 [Siegel 모듈러 형식](siegel-modular-forms.md)들이 몫 위의 함수를 주고, 그 형식들이 만드는 등급환의 $\mathrm{Proj}$ 가 $\mathcal A_g$ 를 열린 부분집합으로 포함하는 사영다양체다.
 
 ## 궤도체 구조
 
@@ -90,6 +90,6 @@ $$\mathcal A_g^\ast=\mathcal A_g\sqcup\mathcal A_{g-1}\sqcup\cdots\sqcup\mathcal
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Siegel 모듈러 형식](siegel-modular-forms.md)
 
 #number_theory #algebra #complex_analysis
