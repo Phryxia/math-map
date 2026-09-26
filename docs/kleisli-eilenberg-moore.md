@@ -18,15 +18,6 @@ monoid 에는 집합 $X$ 위의 자유 monoid $X^\ast$ 처럼 $T$ 가 만들어 
 
 Kleisli 범주는 자유대수만 모은 것이고 Eilenberg–Moore 범주는 모든 대수를 모은 것이므로, 전자가 후자의 충만한 부분범주가 된다.
 
-```mermaid
-graph LR
-  CT["C_T (Kleisli)<br/>자유대수만"] -->|"충만한 매장"| EM["C^T (Eilenberg-Moore)<br/>모든 T-대수"]
-  CT -->|"시작"| D["T 를 낳는<br/>임의의 수반 분해"]
-  D -->|"종단"| EM
-  C["C"] -.->|"자유 F"| CT
-  EM -.->|"망각 G"| C
-```
-
 ## Kleisli 사상
 
 $X$ 에서 $Y$ 로 가는 Kleisli 사상은 $C$ 의 사상 $X \to T(Y)$ 다. $T$ 가 "실패할 수 있음" 이면 부분함수이고, "여럿을 반환함" 이면 비결정적 함수이며, "로그를 남김" 이면 부작용이 있는 함수다.
