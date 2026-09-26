@@ -81,18 +81,6 @@ Selmer 를 줄이려면 쌍대 쪽을 키우고, 쌍대를 죽이려면 그쪽 �
 
 비분기부는 국소 짝에 대해 스스로의 소멸자다. 거의 모든 자리에서 짝이 0 이 되므로 상호법칙의 무한합은 유한합이다. 조건의 기본값이 $L_v=H^1_{\mathrm{ur}}$ 인 것도 이 때문이다.
 
-```mermaid
-flowchart LR
-  G["대역 H^1(K,M)"] -->|loc| V["국소 제한곱<br/>prod' H^1(K_v,M)"]
-  V -->|"짝 <,>"| VD["쌍대 H^1(K,M*)^"]
-  A["상 A = im(loc)<br/>A = A 의 소멸자"] -.-> V
-  L["Selmer 조건 L = prod L_v"] -.-> V
-  A --> SEL["Sel_L = A ∩ L"]
-  L --> SEL
-  A --> DSEL["Sel_L* = A ∩ L 의 소멸자"]
-  L --> DSEL
-```
-
 # 정의
 
 ## 국소 Tate 쌍대성
