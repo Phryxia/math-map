@@ -87,6 +87,6 @@ $A\subseteq R$ 가 Noether 정규화, 곧 $A$ 가 정칙 국소환이고 $R$ 가
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gorenstein 환](gorenstein-rings.md)
 
 #ring_theory #algebra #combinatorics

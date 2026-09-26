@@ -54,6 +54,7 @@ graph TD
 - [Krull 차원](krull-dimension.md): 소 아이디얼 사슬로 잰 차원, 차원 정리와 높이 정리, 정칙 국소환
 - [정칙 국소환](regular-local-rings.md): 차원과 접공간 차원이 같은 국소환, Serre 의 호몰로지 판정과 유일분해
 - [Cohen–Macaulay 환](cohen-macaulay-rings.md): 깊이와 차원이 같은 국소환, 박힌 성분의 부재와 Auslander–Buchsbaum 공식
+- [Gorenstein 환](gorenstein-rings.md): 유형이 1 인 Cohen–Macaulay 환, 표준 가군의 자유성과 국소 쌍대성
 - [Dedekind 정역](dedekind-domains.md): 정수론으로 가는 문
 
 ## 가군
