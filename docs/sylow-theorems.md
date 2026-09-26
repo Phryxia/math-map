@@ -64,22 +64,7 @@ $$
 
 ## 증명의 요지
 
-세 정리는 모두 같은 재료로 증명된다.
-
-```mermaid
-graph TD
-  OS["궤도-안정자 정리: |궤도| = [G : 안정자]"] --> FIX["p-군 작용의 고정점 세기"]
-  FIX --> CAUCHY["Cauchy 정리: p | |G| 이면 위수 p 원소 존재"]
-  CAUCHY --> EXIST["정리 1: 존재"]
-  OS --> EXIST
-  EXIST --> CONJ["정리 2: 켤레"]
-  FIX --> CONJ
-  CONJ --> COUNT["정리 3: n_p = [G:N(P)], n_p = 1 (mod p)"]
-  OS --> COUNT
-  COUNT --> SIMPLE["단순성 판정, 작은 위수 분류"]
-```
-
-기본 보조정리를 먼저 적는다. $P$ 가 $p$ 군이고 유한집합 $X$ 에 작용하면
+세 정리는 모두 같은 재료로 증명된다. $P$ 가 $p$ 군이고 유한집합 $X$ 에 작용하면
 
 $$
 |X| \equiv |X^{P}| \pmod{p}
