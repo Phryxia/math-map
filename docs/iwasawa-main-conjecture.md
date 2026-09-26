@@ -74,19 +74,6 @@ $$
 
 에서 나온다. 이 지표 공식이 전체 크기를 고정하므로 한쪽 나눔에 크기 일치를 더하면 등호가 된다. Euler 계가 상한을 주고 류수 공식이 총량을 주는 이 구도는 타원곡선 주추측에서도 반복된다.
 
-```mermaid
-flowchart TD
-  TOW["순환체 탑 Q(mu_{p^n})"] --> LIM["극한 X_inf = lim A_n<br/>유한생성 Lambda 가군"]
-  LIM --> CH["특성 멱급수 char(X_inf)"]
-  BER["Bernoulli 수 B_{n,chi}"] --> LP["p 진 L 함수 L_p(s,chi)"]
-  LP --> FT["멱급수 f(T,chi)"]
-  CYC["순환체 단수 1 - zeta"] --> EUL["Euler 계 + Kolyvagin 유도"]
-  EUL -->|"나눔 한 방향"| MC["char = (f)"]
-  IDX["지표 공식 [E:C] = h+"] -->|"총량 일치"| MC
-  CH --> MC
-  FT --> MC
-```
-
 # 정의
 
 ## 순환 $\mathbb Z_p$ 확대와 Iwasawa 대수
