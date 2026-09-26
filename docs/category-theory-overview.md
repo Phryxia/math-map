@@ -40,6 +40,7 @@ graph TD
 ## 보편성질
 
 - [Yoneda lemma](yoneda-lemma.md): 대상이 그것이 받는 사상 전체로 결정된다
+- [표현 가능 함자](representable-functors.md): 보편 성질로 정의한 대상을 함자의 표현으로 읽는다
 - [제한과 쌍대제한](limits-colimits.md): 곱, 당김, 쌍대곱을 하나의 보편성질로
 - [수반](adjunctions.md): 자유 구성과 망각 함자의 쌍, 단위와 쌍대단위
 - [층](sheaves.md): 국소 데이터를 붙이는 조건을 만족하는 전층, 줄기와 층화

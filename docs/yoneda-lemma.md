@@ -106,6 +106,7 @@ $$
 
 ## 더 알아보기
 
+- [표현 가능 함자](representable-functors.md)
 - [수반](adjunctions.md)
 
 #category_theory #order_theory #algebra #theorem
