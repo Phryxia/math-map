@@ -17,13 +17,13 @@ $$
 
 정칙 첨점형식은 명시적으로 구성되지만 Maass 첨점형식에는 그런 구성이 없다. $\Delta$ 와 무게 $12$ 를 알면 $\Delta(z)=q\prod(1-q^n)^{24}$ 를 쓸 수 있지만, $\mathrm{SL}\_2(\mathbb Z)$ 의 첫 Maass 고윳값 $r_1=9.533695\dots$ 는 수치 계산으로 높은 정밀도까지 구해졌고, 그 값이 만족하는 대수적 관계는 알려진 것이 없다[^5].
 
-그런데도 이것들이 존재한다는 것은 안다. [Selberg 대각합 공식](selberg-trace-formula.md)이 개별 고윳값을 하나도 주지 않으면서 그 개수를 세어 주기 때문이다. 존재는 알고 정체는 모르는 대상이고, $L$ 함수와 [Langlands 강령](langlands-program.md)에서 정칙 형식과 정확히 같은 자격으로 등장한다.
+[Selberg 대각합 공식](selberg-trace-formula.md)은 개별 고윳값을 하나도 주지 않으면서 그 개수를 센다. $L$ 함수와 [Langlands 강령](langlands-program.md)에서는 정칙 형식과 같은 자격으로 등장한다.
 
 # 직관
 
 ## 표현론에서 본 정칙성
 
-$\mathrm{SL}\_2(\mathbb R)$ 의 작용에서 보면 이유가 분명해진다. 자기동형 형식은 $L^2(\Gamma\backslash\mathrm{SL}\_2(\mathbb R))$ 를 $\mathrm{SL}\_2(\mathbb R)$ 의 기약 표현으로 분해할 때 나오는 조각들이다. 그런데 $\mathrm{SL}\_2(\mathbb R)$ 의 유니터리 쌍대에는 서로 다른 계열이 있다.
+자기동형 형식은 $L^2(\Gamma\backslash\mathrm{SL}\_2(\mathbb R))$ 를 $\mathrm{SL}\_2(\mathbb R)$ 의 기약 표현으로 분해할 때 나오는 조각들이다. $\mathrm{SL}\_2(\mathbb R)$ 의 유니터리 쌍대에는 서로 다른 계열이 있다.
 
 | 표현 계열 | 대응하는 자기동형 형식 |
 |---|---|

@@ -8,7 +8,7 @@ $$
 \Lambda(\theta)=-\int_0^\theta\log\big|2\sin t\big|\thinspace dt
 $$
 
-이것이 Lobachevsky 함수다. [Fourier 급수](fourier-series.md)로 보면 정체가 분명해진다.
+이것이 Lobachevsky 함수다. [Fourier 급수](fourier-series.md)로 전개하면 다음과 같다.
 
 $$
 \Lambda(\theta)=\frac12\sum_{n=1}^{\infty}\frac{\sin2n\theta}{n^2}
