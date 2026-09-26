@@ -149,7 +149,7 @@ $$
 
 이 알려져 있다. $S_\varepsilon$ 은 앞선 항들이 상쇄되어 $\varepsilon$ 의 더 높은 차수로 접근하므로, 같은 $\varepsilon$ 에서 더 정확하고 같은 정확도를 더 큰 $\varepsilon$ 으로 얻어 반복 수도 줄어든다.
 
-$S_\varepsilon$ 은 $\varepsilon\to0$ 에서 최적 수송 비용으로, $\varepsilon\to\infty$ 에서 커널 $-C$ 로 정의되는 최대평균불일치(MMD)로 수렴해 두 극한을 보간한다.
+$S_\varepsilon$ 은 $\varepsilon\to0$ 에서 최적 수송 비용으로, $\varepsilon\to\infty$ 에서 커널 $-C$ 로 정의되는 최대평균불일치(maximum mean discrepancy, MMD)로 수렴해 두 극한을 보간한다.
 
 ## 미분가능성
 

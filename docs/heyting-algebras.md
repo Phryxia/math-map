@@ -139,7 +139,7 @@ $\neg\neg a = a$ 인 원소를 **정칙**이라 한다. 정칙 원소 전체는 
 
 ## 건전성과 완전성
 
-**정리.** 직관주의 명제논리(IPC)에 대해
+**정리.** 직관주의 명제논리(intuitionistic propositional calculus, IPC)에 대해
 
 $$
 \mathrm{IPC} \vdash \varphi \iff v(\varphi) = 1 \ \text{for every Heyting algebra } H \text{ and valuation } v
