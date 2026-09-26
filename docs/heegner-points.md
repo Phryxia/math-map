@@ -237,7 +237,7 @@ Heegner 점은 특수값을 대수적 순환류로 실현하는 도식의 예다
 
 ## 더 알아보기
 
-- [Euler 계와 Kolyvagin 유도류](euler-systems.md)
+- [Euler 계](euler-systems.md)
 - [Waldspurger 정리와 토릭 주기](waldspurger-formula.md)
 
 #number_theory #theorem #complex_analysis

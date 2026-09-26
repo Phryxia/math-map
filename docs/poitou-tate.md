@@ -270,7 +270,7 @@ $\text{Ш}^{2}(K,M)\cong \text{Ш}^{1}(K,M^{\ast})^{\vee}$ 는 국소적으로 �
 
 ## 더 알아보기
 
-- [Euler 계와 Kolyvagin 유도류](euler-systems.md)
-- [Galois 표현의 변형과 보편 변형환](deformation-rings.md)
+- [Euler 계](euler-systems.md)
+- [Galois 표현의 변형환](deformation-rings.md)
 
 #number_theory #theorem #algebra

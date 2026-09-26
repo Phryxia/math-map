@@ -128,7 +128,7 @@ $\nu=5/2$ 의 Moore–Read 상태는 준입자가 Ising 유형일 것으로 예�
 
 ## 선수지식
 
-- [모듈러 텐서범주와 3 차원 TQFT](modular-tensor-categories.md)
+- [모듈러 텐서범주](modular-tensor-categories.md)
 
 ## 더 알아보기
 

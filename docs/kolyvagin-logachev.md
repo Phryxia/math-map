@@ -101,7 +101,7 @@ Kolyvagin 의 Euler 계가 Selmer 군의 크기를 위에서 누르는 데 비�
 
 ## 선수지식
 
-- [Euler 계와 Kolyvagin 유도류](euler-systems.md)
+- [Euler 계](euler-systems.md)
 - [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)
 
 ## 더 알아보기

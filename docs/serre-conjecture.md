@@ -140,7 +140,7 @@ Khare–Wintenberger 의 증명은 세 부품을 귀납으로 엮는다.
 
 ## 선수지식
 
-- [Galois 표현의 변형과 보편 변형환](deformation-rings.md)
+- [Galois 표현의 변형환](deformation-rings.md)
 - [Hecke 작용소](hecke-operators.md)
 
 ## 더 알아보기

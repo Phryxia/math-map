@@ -1,4 +1,4 @@
-# Euler 계와 Kolyvagin 유도류
+# Euler 계
 
 # 개요
 

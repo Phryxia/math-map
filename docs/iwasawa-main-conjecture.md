@@ -210,7 +210,7 @@ $L$ 함수의 특수값이 대수적 원소로 실현된다는 Stark 의 예측�
 
 ## 선수지식
 
-- [Euler 계와 Kolyvagin 유도류](euler-systems.md)
+- [Euler 계](euler-systems.md)
 - [Stickelberger 원소와 Gauss 합](stickelberger.md)
 
 ## 더 알아보기

@@ -233,6 +233,6 @@ $$
 
 - [외대수](exterior-algebra.md)
 - [유도 함자](derived-functors.md)
-- [모듈러 텐서범주와 3 차원 TQFT](modular-tensor-categories.md)
+- [모듈러 텐서범주](modular-tensor-categories.md)
 
 #ring_theory #linear_algebra #construction

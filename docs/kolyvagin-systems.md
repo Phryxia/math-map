@@ -263,7 +263,7 @@ Kolyvagin 계의 문법에 필요한 것은 Galois 가군 하나와 국소 조�
 
 ## 선수지식
 
-- [Euler 계와 Kolyvagin 유도류](euler-systems.md)
+- [Euler 계](euler-systems.md)
 
 ## 더 알아보기
 

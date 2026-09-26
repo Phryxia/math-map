@@ -134,7 +134,7 @@ $c$ 를 고정하고 홀로모픽 VOA 를 분류하는 문제는 격자 분류�
 
 ## 더 알아보기
 
-- [모듈러 텐서범주와 3 차원 TQFT](modular-tensor-categories.md)
+- [모듈러 텐서범주](modular-tensor-categories.md)
 - [Schellekens 목록](schellekens-list.md)
 
 #algebra #complex_analysis #number_theory #theorem

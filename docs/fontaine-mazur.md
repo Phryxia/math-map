@@ -180,6 +180,6 @@ Wiles 의 반안정 타원곡선 모듈러성, Breuil–Conrad–Diamond–Taylo
 
 ## 더 알아보기
 
-- [Galois 표현의 변형과 보편 변형환](deformation-rings.md)
+- [Galois 표현의 변형환](deformation-rings.md)
 
 #number_theory #field_theory #theorem

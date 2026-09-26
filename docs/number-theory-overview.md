@@ -104,7 +104,7 @@ graph TD
 
 - [타원곡선](elliptic-curves.md) → [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md), [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
 - [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md) → [Heegner 점과 Gross–Zagier 공식](heegner-points.md), [Kolyvagin–Logachev 정리](kolyvagin-logachev.md)
-- [Euler 계와 Kolyvagin 유도류](euler-systems.md) → [Kolyvagin 계](kolyvagin-systems.md), [Iwasawa 주추측](iwasawa-main-conjecture.md) → [Vandiver 추측](vandiver-conjecture.md), [Greenberg 추측](greenberg-conjecture.md)
+- [Euler 계](euler-systems.md) → [Kolyvagin 계](kolyvagin-systems.md), [Iwasawa 주추측](iwasawa-main-conjecture.md) → [Vandiver 추측](vandiver-conjecture.md), [Greenberg 추측](greenberg-conjecture.md)
 - [Eisenstein 아이디얼과 Mazur 의 비틀림점 정리](eisenstein-ideal.md) → [Merel 의 일양 유계성 정리](merel-theorem.md)
 - [Sato–Tate 분포](sato-tate.md) → [Lang–Trotter 추측](lang-trotter.md): $a_p$ 의 통계
 - [Chabauty 방법](chabauty-method.md): Jacobi 다양체의 계수가 종수보다 작을 때 유리점을 $p$ 진 적분의 영점으로 세는 방법
@@ -115,7 +115,7 @@ graph TD
 
 정수론의 대상을 Galois 군의 표현으로 바꿔 읽는다. 모듈러성 정리가 사는 곳이다.
 
-- [Galois 표현](galois-representations.md) → [Galois 표현의 변형과 보편 변형환](deformation-rings.md) → [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
+- [Galois 표현](galois-representations.md) → [Galois 표현의 변형환](deformation-rings.md) → [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
 - [p 진 Hodge 이론](p-adic-hodge-theory.md) → [Sen 이론](sen-theory.md), [Fontaine–Mazur 추측](fontaine-mazur.md)
 - [Herbrand–Ribet 정리](herbrand-ribet.md): 류수와 모듈러 형식의 합동
 - [Dwork 의 유리성 정리](dwork-rationality.md) → [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)
