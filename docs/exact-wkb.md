@@ -24,9 +24,9 @@ $$
 \mathrm{Im}\int_{x_0}^{x}\sqrt{Q(t)}\thinspace dt = 0
 $$
 
-이다. 이 곡선 위에서 두 WKB 해 $e^{\pm\phi/\epsilon}$ 의 크기 비가 최대로 벌어져 작은 쪽의 계수가 결정되지 않는다. 이 곡선이 **Stokes 곡선**이고 전체 그림이 **Stokes 그래프**다. 그래프가 복소평면을 영역으로 나누고, 각 영역 안에서는 Borel 합이 정의되어 정확한 해가 산다.
+이다. 이 곡선 위에서 두 WKB 해 $e^{\pm\phi/\epsilon}$ 의 크기 비가 최대로 벌어져 작은 쪽의 계수가 결정되지 않는다. 이 곡선이 **Stokes 곡선**이고 전체 그림이 **Stokes 그래프**다. 그래프가 복소평면을 영역으로 나누고, 각 영역 안에서는 Borel 합이 정의되어 정확한 해를 준다.
 
-## 좌표로서의 Voros 기호
+## Voros 기호
 
 각 영역의 해를 직접 비교하는 대신, 회전점들을 감싸는 닫힌 경로 $\gamma$ 마다
 
@@ -35,18 +35,6 @@ V_\gamma = \exp\left(\oint_\gamma S_{\mathrm{odd}}(x,\epsilon)\thinspace dx\righ
 $$
 
 라는 수를 붙인다. 이것이 **Voros 기호**다. 지수 안은 발산급수이고 Borel 합을 취해 수가 된다. 경로를 연속적으로 움직여도 값이 변하지 않으므로 [호몰로지](homology.md)류만 중요하고, 유한 개의 수가 문제 전체를 기술한다.
-
-```mermaid
-graph TD
-  W["WKB 급수<br/>발산"] --> B["Borel 합<br/>영역마다 정확한 해"]
-  B --> V["Voros 기호 V_gamma<br/>주기적분의 Borel 합"]
-  G["Stokes 그래프<br/>회전점에서 뻗는 곡선"] --> B
-  G --> C["사이클 gamma 의 호몰로지"]
-  C --> V
-  V --> D["DDP 공식<br/>Stokes 선을 건널 때의 점프"]
-  D --> F["연결 공식<br/>= 자동사상 하나"]
-  D --> Q["정확한 양자화 조건<br/>V_gamma = -1"]
-```
 
 # 정의
 
