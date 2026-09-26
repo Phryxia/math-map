@@ -104,7 +104,7 @@ $\varepsilon$ 근사해에 필요한 반복 수는 $\kappa\log(1/\varepsilon)$ �
 
 ## 한계와 개선
 
-- 1 차 방법의 정보 하한 때문에 강볼록이고 $L$ -smooth 인 부류에서 어떤 1 차 방법도 조건수의 제곱근보다 좋은 의존성을 가질 수 없고, Nesterov 가속법이 이 하한을 달성한다.
+- 1 차 방법의 정보 하한 때문에 강볼록이고 $L$ -smooth 인 부류에서 어떤 1 차 방법도 조건수의 제곱근보다 좋은 의존성을 가질 수 없고, [Nesterov 가속법](nesterov-acceleration.md)이 이 하한을 달성한다.
 - $\eta\gt 2/L$ 이면 이차함수에서도 발산한다. 실제로는 backtracking line search 로 $\eta$ 를 적응적으로 정한다.
 - 미분 불가능한 볼록 함수에서는 subgradient 를 쓰고 수렴률이 $K^{-1/2}$ 로 떨어진다. 제약이 있으면 projected gradient 나 [Lagrange 쌍대성](lagrange-duality.md)을 쓴다.
 
@@ -151,6 +151,7 @@ $$
 
 ## 더 알아보기
 
+- [Nesterov 가속법](nesterov-acceleration.md)
 - [확률적 경사하강법](stochastic-gradient-descent.md)
 - [변분 오토인코더](variational-autoencoder.md)
 
