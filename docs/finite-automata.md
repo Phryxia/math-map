@@ -4,7 +4,7 @@
 
 유한 오토마타는 기억 용량이 상수인 계산 모델이다. 입력을 왼쪽에서 오른쪽으로 한 번 훑으면서 유한 개의 상태 중 하나만 유지하고, 다 읽은 뒤의 상태로 수용 여부를 결정한다. 이 모델이 인식하는 언어를 정규언어(regular language)라 한다.
 
-제약이 극단적인데도 이론이 유난히 잘 맞아떨어진다. 결정적 모델(DFA)과 비결정적 모델(NFA)이 같은 표현력을 갖고, 정규 표현식이라는 문법적 기술과도 일치하며(Kleene 정리), 각 정규언어에는 상태 수가 최소인 DFA 가 동형을 제외하고 유일하게 존재한다(Myhill–Nerode 정리). 이 마지막 결과는 [동치관계](equivalence-relations.md)로 언어 자체를 분석해 얻어지며, 최소 DFA 의 상태가 곧 동치류다.
+제약이 극단적인데도 이론이 유난히 잘 맞아떨어진다. 결정적 모델(deterministic finite automaton, DFA)과 비결정적 모델(nondeterministic finite automaton, NFA)이 같은 표현력을 갖고, 정규 표현식이라는 문법적 기술과도 일치하며(Kleene 정리), 각 정규언어에는 상태 수가 최소인 DFA 가 동형을 제외하고 유일하게 존재한다(Myhill–Nerode 정리). 이 마지막 결과는 [동치관계](equivalence-relations.md)로 언어 자체를 분석해 얻어지며, 최소 DFA 의 상태가 곧 동치류다.
 
 [계산 가능성](computability.md)의 관점에서는 유한 오토마타가 Turing 기계의 가장 약한 극단이다. 정지 문제 같은 결정불가능성이 여기서는 전혀 나타나지 않는다. 공허성, 동치성, 포함관계가 모두 결정가능하며, 그 대가로 $0^n1^n$ 같은 간단한 언어조차 인식하지 못한다.
 
@@ -120,7 +120,7 @@ $$
 - **동치성.** $L(A) = L(B)$ 는 대칭차 $(A \cap B^c) \cup (A^c \cap B)$ 의 공허성과 같다. 또는 최소화 후 동형 판정, 또는 Hopcroft–Karp 방식으로 상태 쌍을 합병하며 확인한다.
 - **최소화.** Hopcroft 알고리즘이 $O(n \log n)$ 에 최소 DFA 를 만든다. 구분 불가능한 상태들을 반복적으로 병합하는 과정이며, 결과는 Myhill–Nerode 동치류와 일치한다.
 
-NFA 의 동치성·전체성 판정은 PSPACE-complete 이며([NP-완전성](np-completeness.md)(nondeterministic polynomial time)의 개념을 PSPACE 로 옮긴 것), 결정적으로 바꿀 때의 지수적 상태 폭발이 그 비용의 원천이다.
+NFA 의 동치성·전체성 판정은 PSPACE(polynomial space)-complete 이며([NP-완전성](np-completeness.md)(nondeterministic polynomial time)의 개념을 PSPACE 로 옮긴 것), 결정적으로 바꿀 때의 지수적 상태 폭발이 그 비용의 원천이다.
 
 ## 계산 모델 계층에서의 위치
 
@@ -137,13 +137,13 @@ NFA 의 동치성·전체성 판정은 PSPACE-complete 이며([NP-완전성](np-
 - **어휘 분석.** 컴파일러의 토크나이저는 각 토큰 종류를 정규 표현식으로 적고, Thompson 구성과 부분집합 구성을 거쳐 하나의 DFA 로 합친다. lex/flex가 이 과정을 자동화한다.
 - **문자열 검색.** Knuth–Morris–Pratt의 실패 함수는 패턴에 대한 DFA 를 암묵적으로 만든 것이고, Aho–Corasick은 여러 패턴을 동시에 처리하는 오토마타다.
 - **정규 표현식 엔진.** 역참조 없는 표준 정규 표현식은 DFA 로 컴파일해 입력 길이에 선형으로 매칭할 수 있다. 반면 역참조를 허용하는 확장 문법은 정규언어를 벗어나고 백트래킹이 지수 시간까지 갈 수 있다.
-- **모델 검사와 프로토콜 검증.** 유한 상태 시스템의 명세를 오토마타로 적고 교집합의 공허성으로 위반 여부를 판정한다. 무한 문자열을 다루는 Büchi 오토마타로 확장하면 선형 시제 논리(LTL) 검증이 된다.
+- **모델 검사와 프로토콜 검증.** 유한 상태 시스템의 명세를 오토마타로 적고 교집합의 공허성으로 위반 여부를 판정한다. 무한 문자열을 다루는 Büchi 오토마타로 확장하면 선형 시제 논리(linear temporal logic, LTL) 검증이 된다.
 - **하드웨어.** 순차 논리 회로는 문자 그대로 유한 상태 기계이며, 상태 최소화는 플립플롭 개수를 줄이는 합성 기법이다.
 
 ## 이론적 연결
 
 - **동치관계.** Myhill–Nerode는 "언어가 스스로 자신의 최소 기계를 정의한다"는 진술이다. 비슷한 구조가 [군](groups.md) 작용의 궤도 분해나 최소 모델 구성에서도 반복된다.
-- **대수와 논리.** 정규언어는 문자열 위의 단항 2차 논리(MSO)로 정의 가능한 언어와 일치한다(Büchi–Elgot–Trakhtenbrot 정리). [1차 논리](first-order-logic.md)로만 정의 가능한 언어는 스타 없는 정규언어와 일치한다.
+- **대수와 논리.** 정규언어는 문자열 위의 단항 2차 논리(monadic second-order logic, MSO)로 정의 가능한 언어와 일치한다(Büchi–Elgot–Trakhtenbrot 정리). [1차 논리](first-order-logic.md)로만 정의 가능한 언어는 스타 없는 정규언어와 일치한다.
 - **학습 이론.** Angluin의 L* 알고리즘은 소속 질의와 동치 질의만으로 최소 DFA 를 다항시간에 학습한다. 관측표의 행이 곧 Myhill–Nerode 동치류의 근사다[^2].
 
 [^1]: J. E. Hopcroft, R. Motwani, J. D. Ullman, Introduction to Automata Theory, Languages, and Computation, https://archive.org/details/introductiontoau0000hopc
