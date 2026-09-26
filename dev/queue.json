@@ -1,23 +1,23 @@
 {
   "version": 1,
-  "savedAt": "2026-09-26T05:06:12.492Z",
-  "nextSeq": 1237,
+  "savedAt": "2026-09-26T09:03:02.503Z",
+  "nextSeq": 1245,
   "items": [
     {
-      "id": "36483f48",
-      "title": "Siegel 모듈라이 다양체의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-25 둘째 회차에 siegel-modular-variety 를 새로 썼다(부모 abelian-varieties 와 modular-curves, 정수론 개관 모듈러 형식 갈래에서 모듈러 곡선 다음 줄, 95줄). 리프다. abelian-varieties 2차 note 의 후보 (a) 편극과 모듈라이 공간을 이것으로 닫았고 같은 note 에 남은 것은 (b) 세타 함수와 세타 divisor(theta-series 와 8절 겹침 판정 먼저. jacobian-variety note 에도 같은 항목이 있어 한쪽에서만 처리할 것), (c) 동종사상 차수와 Weil 쌍이다. 같은 회차에 modular-curves 의 더 알아보기가 6 개가 되어 5절대로 H3 세 묶음으로 나눴다(계산: sea-algorithm, modular-symbols / 유리점과 Galois 표현: eisenstein-ideal, heegner-points, fontaine-mazur / 높은 차원: siegel-modular-variety). 이 문서의 후속 후보: (a) Siegel 모듈러 형식. 활용 절 첫째가 정의를 한 문장으로 담고 있어 그것만으로는 부족하고 Koecher 원리, Siegel Phi 연산자, Maass 승강이 분량이 된다. 부모는 이 문서와 modular-forms. (b) Shimura 다양체. 활용 절 셋째가 이름만 쓰고 지나간다. 부모 후보는 이 문서와 langlands-program 이고 이 문서가 그 특수 사례이므로 간선 방향을 먼저 정할 것(일반 개념이 특수 사례의 부모라는 5절에 따르면 Shimura 다양체가 부모여야 하는데 그러면 이 문서와 순환하지 않는지 check-cycle 로 볼 것). (c) 곡선의 모듈라이 공간 M_g. Torelli 사상 절이 정의 없이 쓴다. 부모는 riemann-surfaces 이고 이 문서와는 형제다. (d) Schottky 문제. Torelli 사상 절 마지막 문단이 정의와 g=4 의 답을 담았고 각주 둘이 이미 있다. 8절 기준으로 이 문서에서 떼어낼 분량이 되는지 먼저 볼 것. 정의 없이 쓴 용어: 주기행렬, 교대형식, 등분점, 심플렉틱 기저, 원환면 매장 콤팩트화, 세타 상수, 등급환의 Proj, 곡선의 모듈라이 공간",
-      "createdAt": "2026-09-25T20:44:52.961Z",
-      "seq": 1195
+      "id": "5e748333",
+      "title": "나열형 mermaid 전수 훑기 2차 (남은 경계 판정)",
+      "priority": 50,
+      "note": "2026-09-26 회차가 1차다. grep -l 'br/>' docs/*.md 로 뽑은 30 건(개관 제외)을 전수 판정해 16 건을 지웠다. 지운 것: exact-wkb, kernel-pca, probabilistic-pca, volume-conjecture, witten-asymptotics, fontaine-mazur, greenberg-conjecture, hodge-theory, modular-tensor-categories, mv-cycles, kazhdan-lusztig, waldspurger-formula, schellekens-list, fundamental-lemma, poitou-tate, iwasawa-main-conjecture, elliptic-curves, modular-curves, wess-zumino-witten, geometrization, pairing-based-cryptography, complex-multiplication, langlands-program. 판정 기준으로 쓸 만했던 것: 그림의 라벨 문구가 본문 문단에 거의 그대로 있으면(elliptic-curves 가 극단적인 예로 두 문장을 그대로 옮겨 놓았다) 지워도 잃는 것이 없다. 증명 단계 나열(hodge-theory, volume-conjecture, witten-asymptotics, iwasawa-main-conjecture), 두 이론의 평행 비교(langlands-program), 개념 관계 방사형 나열(modular-tensor-categories, modular-curves, wess-zumino-witten)이 전형적인 위반 유형이다. 남긴 것과 근거: khovanov-homology(입방체 000-111 의 실제 그래프), kleisli-eilenberg-moore(수반 분해의 시작과 종단, 보편성질 도형), local-class-field-theory(확대의 탑), mass-formula(류에서 스피너 류로 내려가는 분할 계층, Hasse 도형 성격), newton-polygon(볼록포의 변과 기울기가 내용), sea-algorithm(Elkies/Atkin 분기와 CRT 합류가 실제 알고리즘의 흐름), class-field-theory(산술 쪽과 체 쪽을 subgraph 로 나눈 대응 구조), deuring-correspondence(기하와 대수 두 변, KLPT 우회 경로가 사각형 가환도). 뒤 둘은 경계이므로 2 차에서 다시 볼 것: 판정 기준은 subgraph 두 개를 표 두 열로 바꿔 쓸 수 있는지다. 곁들여 고친 비유: volume-conjecture '시금석', fontaine-mazur '사슬' 두 곳, langlands-program '세계' 세 곳, exact-wkb '해가 산다', 번역체 헤딩 '~로서의' 세 곳(exact-wkb, witten-asymptotics, probabilistic-pca). 2 차에 볼 것: br/> 가 없는 mermaid 문서 67 개가 아직 미판정이다. grep -l mermaid docs/*.md 에서 br/> 있는 것과 개관을 뺀 목록으로 시작할 것",
+      "createdAt": "2026-09-26T09:02:24.395Z",
+      "seq": 1243
     },
     {
-      "id": "dd896e53",
-      "title": "문장형 헤딩 훑기 (헤딩 검사기 확장 2차)",
-      "priority": 12,
-      "note": "2026-09-25 둘째 회차가 2차다. 1차 note 가 남긴 어미 후보 다섯을 전수로 돌려 판정했다. 결론: 쓸 만한 어미는 '것', '것들', 그리고 명사화 'ㅁ'(함 됨 임 음) 셋뿐이고 나머지는 버릴 것. 어미별 판정. (1) '것'/'것들': 이번 전수에서 0 건. 1차에 고친 셋(groups 78, lowenheim-skolem 93, abelian-varieties 97) 이후 새로 생긴 것이 없다. 계속 쓸 것. (2) '인가' 0 건, '보다' 0 건. 돌릴 값어치가 없으나 비용이 없으므로 같이 돌려도 된다. (3) '하기' 0 건. (4) '기': 오검출이 압도적이라 쓰지 말 것. 규격 헤딩 '## 더 알아보기' 가 500 건 넘게 걸리고 '크기'(멱집합의 크기, 고유값의 크기, 기본해의 크기 등 15 건 이상)도 정상 명사다. 남는 실제 후보는 전부 용어이거나 명사구로 굳은 것이었다: cw-complexes 21 '세포 붙이기', discrete-logarithm 17 '중간에서 만나기', channel-coding 15 '출력 공간의 구 채우기', planar-graphs 23 '평면 그래프와 평면 그리기', random-walks 32 '격자 위 단순 무작위 걷기', rankin-selberg 39 '펼치기'(unfolding), p-adic-numbers 143 '전개와 Hensel 올리기', sheaves 38 '줄기'(stalk). 전부 남긴다. (5) 'ㅁ' 명사화(정규식 '(함|됨|임|음) *$'): 39 건이 걸렸고 그 가운데 절 형태는 1 건뿐이었다. 오검출의 정체는 '쓰임'(15 건), '모음', '모임', '묶음', '잡음', '닮음', '같음', '포함', '결함', '게임', '움직임', '프레임' 으로 전부 정상 명사다. 고친 것: characteristic-classes 53 '## 접속에 의존하지 않음' -> '## 접속 선택의 무관성'(절 내용이 Chern-Weil 정리이고 요점이 코호몰로지류가 접속 선택에 의존하지 않는다는 것이다). 곁들여 hyperarithmetical-hierarchy 53 '## 표기의 무관함' -> '## 표기 선택의 무관성'(같은 개념이라 표현을 맞췄다. '무관함' 도 명사형이라 위반은 아니었다). 남기기로 판정한 것과 근거: banach-tarski 29 '## 조각내어 같음' 은 본문이 '**G-조각내어 같다**' 로 굵게 정의하는 용어의 명사형이므로 개념 이름이다. equivalence-relations 49 '## 잘 정의됨' 과 modular-arithmetic 55 '## 연산의 잘 정의됨' 은 well-definedness 의 굳은 한국어다. 3차에 볼 것: 어미 축은 사실상 소진됐다. 남은 것은 어미가 아니라 길이와 구조로 문장형 헤딩을 찾는 축이다. 후보 정규식 둘을 제안한다. 첫째, 조사가 든 긴 헤딩: grep -n '^## .\\{12,\\}' docs/*.md 로 12 자 넘는 헤딩을 뽑아 '을 를 이 가 은 는' 뒤에 용언이 오는 것을 손으로 가릴 것. 둘째, 쉼표가 든 헤딩: grep -n '^##.*,' docs/*.md 는 두 개념을 나열한 헤딩을 잡는데 4절은 헤딩을 개념 하나로 하라고 하지 않으므로 이쪽은 우선순위가 낮다. 첫째부터 할 것",
-      "createdAt": "2026-09-25T20:46:32.545Z",
-      "seq": 1196
+      "id": "aec08998",
+      "title": "헤딩 검사 정규식의 '지' 오검출",
+      "priority": 50,
+      "note": "2026-09-26 회차에 poitou-tate 를 고치다 발견했다. 4절 문체 규칙의 헤딩 검사 grep -n '^##' | grep -E '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) *$' 가 '## Euler 계 논법의 요지' 를 잡는다. '요지' 는 명사이므로 오검출이다. 전수로 확인할 것: grep -n '^##.*요지 *$' docs/*.md. 다른 명사 어미 '~지' 후보도 함께 볼 것(취지, 근거지, 소재지). 규칙 자체는 dev/ 가 아니라 CLAUDE.md 의 문구이므로 고치려면 독자에게 알려야 하고, 회차에서는 오검출임을 알고 넘기면 된다",
+      "createdAt": "2026-09-26T09:02:24.540Z",
+      "seq": 1244
     },
     {
       "id": "836bd89b",
@@ -204,6 +204,22 @@
       "seq": 1236
     },
     {
+      "id": "183b408c",
+      "title": "Siegel 모듈러 형식의 후속 간선",
+      "priority": 12,
+      "note": "2026-09-26 회차에 siegel-modular-forms 를 새로 썼다(부모 modular-forms 와 siegel-modular-variety, 정수론 개관 모듈러 형식 갈래에서 siegel-modular-variety 줄에 화살표로 붙임, 97줄). 리프다. 후속 후보: (a) Jacobi 형식. Maass 승강 절이 판별식으로 정해지는 계수 공간을 말하는데 Eichler-Zagier 의 Jacobi 형식이 그 대응의 매개다. 부모는 이 문서와 modular-forms. (b) Igusa 불변량. 활용 절 첫째가 이름만 쓴다. 종수 2 곡선의 판정에 쓰는 J2, J4, J6, J8, J10 과 절대 불변량, 부모는 이 문서와 elliptic-curves 계열 대신 hyperelliptic 쪽을 볼 것(hyperelliptic-curves 문서 존재 여부 확인 필요). (c) Satake 콤팩트화와 Siegel 연산자의 완전열. 유한 차원성 절과 Phi 연산자의 핵 절이 각각 한 문단이고 합쳐서 문서가 될 분량인지 8절 기준으로 판정할 것. (d) 차수 g 의 theta 급수. 활용 절 둘째가 정의를 담고 있어 theta-series 를 보강하는 쪽이 나을 수 있다(8절 겹침 판정 먼저). 정의 없이 쓴 용어: 반정수 대칭행렬, 양정부호, 등급환의 Proj, 선다발의 절단, Hecke 고윳값, 일반적이지 않은 자동형 표현, 초타원적, 유니모듈러 격자, 절대 불변량",
+      "createdAt": "2026-09-26T08:41:06.824Z",
+      "seq": 1237
+    },
+    {
+      "id": "debfab85",
+      "title": "문장형 헤딩 훑기 (헤딩 검사기 확장 4차)",
+      "priority": 12,
+      "note": "2026-09-26 회차가 3차다. 3차 note 가 제안한 축 둘을 돌려 판정했다. (1) 긴 헤딩 + 조사: grep -n '^## .\\{12,\\}' 에 조사 필터를 얹으면 'A와 B' 명사구가 압도적이라 쓸 수 없다. 목적격으로 좁힌 grep -nE '^## .*(을|를) ' 는 61 건이고 이 가운데 실제 위반은 4 건뿐이었다. '~를 쓴 계산', '~를 고르는 조건' 처럼 관형형 + 명사로 끝나는 것은 전부 명사구이므로 정상이다. 결론: 목적격 축은 61 건 대비 4 건이라 효율이 낮지만 전수가 한 화면이라 회차마다 돌려도 된다. (2) 새로 찾은 축이 더 생산적이었다: 비유적 명사로 끝나는 헤딩. grep -nE '^##.*(세계|무대|여행|관문|얼굴|목소리|이야기|정체|비밀) *$' 로 7 건을 잡아 전부 고쳤고 지금은 0 건이다. 주의: 같은 정규식에 '사전' 을 넣으면 20 건이 걸리는데 Langlands 대응, 부호와 격자, 함수-층 등 두 이론의 대응표를 가리키는 수학 관용어이고 저장소 전체가 일관되게 쓰므로 전부 남겼다. 4절이 금지하는 '사전 은유' 는 dictionary 가 아니라 dead metaphor(잠식, 청사진, 적신호)를 말한다. '그림' 도 가환도와 실제 도형을 가리키므로 남겼다. 이번에 고친 11 건: rings 110 '다항식과 수를 같은 언어로' -> '정수와 다항식환의 공통 정리', rings 114 '기하와의 사전' -> '가환환의 스펙트럼'(이 문서 안에서 중복된 은유라 예외로 고쳤다), rings 118 '비가환의 세계' -> '비가환환', groups 11 '정사각형을 제자리로 돌려놓는 방법' -> '정사각형의 대칭', exact-wkb 19 '평면을 나누는 그림' -> 'Stokes 곡선과 Stokes 그래프', measure 23 '길이를 재는 규칙' -> '조각의 합과 집합의 모임', abstract-algebra-overview 66 '대수기하로 가는 문' -> '대수다양체', post-quantum-cryptography 23 '짧은 비밀' -> '짧은 비밀키', poisson-summation 47 '사다리꼴 오차의 정체' -> '사다리꼴 규칙의 오차', stickelberger 58 '소멸자의 정체' -> '류군의 소멸', tate-thesis 38 'Mellin 변환의 정체' -> '곱군 위의 Fourier 변환'. 4차에 볼 것: 비유 축을 명사 목록을 넓혀 한 번 더 돌릴 것(후보: 축, 둥지, 창, 거울, 그늘, 흔적, 자취, 손, 발, 옷, 껍질, 알맹이, 속살, 골격, 윤곽, 지평). 단 '자취'(trace) 와 '흔적' 은 용어일 수 있으니 본문을 볼 것. 그 다음은 조사가 아니라 헤딩 안의 쉼표 축(grep -n '^##.*,' docs/*.md)인데 4절이 헤딩을 개념 하나로 강제하지 않아 우선순위가 낮다",
+      "createdAt": "2026-09-26T08:45:05.232Z",
+      "seq": 1239
+    },
+    {
       "id": "d2720772",
       "title": "두문자어 첫 등장 풀이 전수 점검 (21차)",
       "priority": 11,
@@ -378,6 +394,14 @@
       "note": "2026-09-26 회차에 앞 note 의 후보 (c) 모멘텀과 Nesterov 가속을 nesterov-acceleration 으로 닫았다(부모 gradient-descent 하나, 최적화 개관 반복 알고리즘 갈래에서 경사하강법 다음 확률적 경사하강법 앞, 127줄, 리프). 간선 방향은 gradient-descent -> nesterov-acceleration 으로 정했다. adaptive-gradient-methods 를 부모로 두지 않은 이유는 Adam 의 m_k 가 모멘텀을 쓰는 쪽이고 가속이 그것을 설명하는 쪽이라 방향이 반대이기 때문이다. 대신 nesterov-acceleration 활용 절 '신경망 학습' 이 adaptive-gradient-methods 로 본문 링크를 건다. 남은 후보: (a) AdamW 와 가중치 감쇠의 분리(adaptive-gradient-methods 활용 절 첫째가 신경망 학습을 다루지만 정칙화는 언급하지 않는다. 분량이 되는지 먼저 볼 것), (b) 온라인 볼록 최적화와 후회(adaptive-gradient-methods 63 줄 후회 한계 절이 온라인 경사하강법의 표준 분석을 이름만 쓰고 지나간다. 후회 자체는 multi-armed-bandits 23 줄이 정의하므로 8절 기준으로 그 문서와 겹치는지 먼저 볼 것. 부모 후보는 convexity 와 gradient-descent), (c) 분산 축소 알고리즘 SVRG·SAGA(stochastic-gradient-descent 63 줄 분산 축소 절이 이미 원리를 적어 두었다. 부모는 stochastic-gradient-descent), (d) 연합 학습의 국소 SGD. adaptive-gradient-methods 에서 정의 없이 쓴 용어로 남은 것: 지수이동평균, 온라인 경사하강법, 최대 노름 지름, 재모수화, 점수 함수 추정량, 단어 임베딩",
       "createdAt": "2026-09-26T00:43:37.636Z",
       "seq": 1211
+    },
+    {
+      "id": "c36c5e73",
+      "title": "Siegel 모듈라이 다양체의 남은 후속 간선",
+      "priority": 11,
+      "note": "2026-09-26 회차에 앞선 큐 항목(36483f48)의 후보 (a) Siegel 모듈러 형식을 siegel-modular-forms 로 닫았다. 같은 note 에 남은 것: (b) Shimura 다양체. siegel-modular-variety 활용 절 셋째가 이름만 쓰고 지나간다. 부모 후보는 langlands-program 이고 siegel-modular-variety 가 그 특수 사례이므로 5절대로 Shimura 다양체가 부모여야 하는데 그러면 기존 간선과 순환하지 않는지 check-cycle 로 먼저 볼 것. (c) 곡선의 모듈라이 공간 M_g. Torelli 사상 절이 정의 없이 쓴다. 부모는 riemann-surfaces 이고 siegel-modular-variety 와는 형제다. (d) Schottky 문제. Torelli 사상 절 마지막 문단이 정의와 g=4 의 답을 담았고 각주 둘이 이미 있어 8절 기준으로 떼어낼 분량이 되는지 먼저 볼 것. siegel-modular-variety 에서 정의 없이 쓴 용어: 주기행렬, 교대형식, 등분점, 심플렉틱 기저, 원환면 매장 콤팩트화, 세타 상수, 등급환의 Proj, 곡선의 모듈라이 공간",
+      "createdAt": "2026-09-26T08:41:07.005Z",
+      "seq": 1238
     },
     {
       "id": "9902eee3",
@@ -1466,6 +1490,14 @@
       "note": "2026-09-26 회차에 proximal-gradient-method 를 새로 썼다(부모 gradient-descent 하나, 최적화 개관 반복 알고리즘 갈래에서 Nesterov 가속법 다음 확률적 경사하강법 앞, 122줄). 리프다. 이 문서에서 정의 없이 쓴 용어: 부분미분(partial subdifferential 이 아니라 볼록해석의 subdifferential. 저장소에 문서가 있는지 확인할 것. 이 문서 성질 절 셋이 전부 그것을 쓰므로 부모 후보다), 하반연속, 지시함수, 핵 노름, 낮은 계수 행렬 복원. 후속 후보: (a) 부분미분과 볼록 쌍대성. convexity 문서가 접선 하한 절에서 그것을 다루는지 먼저 볼 것. (b) 사영 경사법. 이 문서 활용 절 둘째가 지시함수의 근접 연산자로 그것을 두 문장으로 줄여 놓았으므로 별 문서가 될 분량인지 판정할 것. (c) 행렬 완성과 핵 노름 최소화. 활용 절 셋째가 이름만 쓴다. 부모 후보는 이 문서와 singular-value-decomposition",
       "createdAt": "2026-09-26T00:46:48.660Z",
       "seq": 1213
+    },
+    {
+      "id": "e53327f3",
+      "title": "정확한 WKB 의 후속 간선",
+      "priority": 10,
+      "note": "2026-09-26 회차에 exact-wkb 의 나열형 mermaid 를 지우고 문체를 손봤다(151줄). 후속 후보: (a) ODE-IM 대응. 활용 절의 스펙트럼 결정 문제 절이 정의를 한 문장으로 담고 이름을 풀어 놓았다. 부모는 이 문서와 가해 격자모형 쪽 문서(존재 여부 확인 필요). (b) 스펙트럼 네트워크. 클러스터 대수와 스펙트럼 네트워크 절이 이름만 쓰고 지나가며 BPS 상태 세기와 이어진다. 부모는 이 문서와 cluster-algebras(존재 여부 확인 필요). (c) Stokes 자동사상이 이루는 군. DDP 공식 절 마지막 항목이 비가환성을 말하고 끝난다. 정의 없이 쓴 용어: 안장 연결, 회전점, 준위 분열, instanton 기여, 클러스터 변수의 뒤집기, 삼각분할",
+      "createdAt": "2026-09-26T08:47:35.134Z",
+      "seq": 1242
     },
     {
       "id": "dfb3e493",
