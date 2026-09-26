@@ -46,7 +46,7 @@ $$
 \hat\beta \thickspace=\thickspace \arg\min_{b \in \mathbb{R}^{p}} \thickspace \lVert y - Xb \rVert^{2}
 $$
 
-로 정의된다. $Xb$ 의 집합이 $X$ 의 열공간 $C(X)$ 이므로 이 문제는 부분공간 위의 최근접점 찾기다. [내적 공간](inner-product-spaces.md)의 정사영 정리에 의해 최근접점이 유일하게 존재하고, 그 점 $\hat y$ 는
+로 정의된다. $Xb$ 의 집합이 $X$ 의 열공간 $C(X)$ 이므로 이 문제는 부분공간 위의 최근접점 찾기다. [내적 공간](inner-product-spaces.md)의 정사영 정리로 최근접점이 유일하게 존재하고, 그 점 $\hat y$ 는
 
 $$
 y - \hat{y} \thickspace\perp\thickspace C(X), \qquad \text{즉}\quad X^{\top}(y - X\hat\beta) = 0

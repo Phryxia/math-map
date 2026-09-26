@@ -36,7 +36,7 @@ $$
 
 유리한 게임이면 예측값이 현재보다 크고(submartingale), 불리하면 작다(supermartingale). 이름과 부등호 방향이 반대인 것은 supermartingale 이 감소 경향을 갖는 과정이어서이고, [조화함수](harmonic-functions.md)·우조화함수(superharmonic) 용법과 맞춘 관례다.
 
-탑 성질에 의해 $m \le n$ 이면 $E[X_n \mid \mathcal F_m] = X_m$ 이 따라 나오고(부등식 버전도 동일), 특히 martingale 의 기댓값은 상수다.
+탑 성질로 $m \le n$ 이면 $E[X_n \mid \mathcal F_m] = X_m$ 이 따라 나오고(부등식 버전도 동일), 특히 martingale 의 기댓값은 상수다.
 
 $$
 E[X_n] = E[X_0] \quad \text{for all } n.

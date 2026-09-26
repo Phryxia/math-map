@@ -73,7 +73,7 @@ $$
 
 ## 일치성
 
-모형이 식별가능하고 정칙 조건이 만족되면 MLE 는 참값으로 확률수렴한다. 증명의 요지는 다음이다. [큰 수의 법칙](law-of-large-numbers.md)에 의해 $1/n$ 을 곱한 로그가능도가 참값 $\theta_0$ 에서의 기댓값으로 수렴한다.
+모형이 식별가능하고 정칙 조건이 만족되면 MLE 는 참값으로 확률수렴한다. 증명의 요지는 다음이다. [큰 수의 법칙](law-of-large-numbers.md)으로 $1/n$ 을 곱한 로그가능도가 참값 $\theta_0$ 에서의 기댓값으로 수렴한다.
 
 $$
 \frac1n\ell(\theta)\thinspace\xrightarrow{\thinspace P\thinspace}\thinspace
@@ -100,7 +100,7 @@ $$
 \frac{n^{-1/2}\ell'(\theta_0)}{-n^{-1}\ell''(\theta_0)}
 $$
 
-분자는 평균 $0$ , 분산 $I(\theta_0)$ 인 i.i.d. score의 표준화된 합이므로 [중심극한정리](central-limit-theorem.md)에 의해 정규분포로 수렴하고, 분모는 큰 수의 법칙에 의해 $I(\theta_0)$ 로 수렴한다. 두 결과를 Slutsky 정리로 합치면 결론이 나온다. 나머지항의 통제에 일치성과 3차 미분의 국소적 유계성이 쓰인다.
+분자는 평균 $0$ , 분산 $I(\theta_0)$ 인 i.i.d. score의 표준화된 합이므로 [중심극한정리](central-limit-theorem.md)로 정규분포로 수렴하고, 분모는 큰 수의 법칙으로 $I(\theta_0)$ 로 수렴한다. 두 결과를 Slutsky 정리로 합치면 결론이 나온다. 나머지항의 통제에 일치성과 3차 미분의 국소적 유계성이 쓰인다.
 
 점근분산이 Cramér–Rao 하한(불편추정량의 분산은 표본 전체의 Fisher 정보 $nI(\theta)$ 의 역수 이상)과 일치하므로 MLE 는 점근적으로 효율적이다. 다만 유한 표본에서는 MLE 보다 평균제곱오차가 작은 추정량이 존재할 수 있다.
 
