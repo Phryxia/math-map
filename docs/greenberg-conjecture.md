@@ -36,19 +36,6 @@ $A^{+}$ 쪽에는 그런 소멸자가 없다. 주추측은 류군을 단수와 �
 
 총실수체 $F$ 의 $\mathbb Z_p$ 확대 후보는 $1+\delta$ 개이고 $\delta$ 는 $p$ 진 조절자의 소멸 차수다. Leopoldt 추측 $\delta=0$ 이 참이면 $\mathbb Z_p$ 확대가 순환 확대 하나뿐이고 Greenberg 추측의 진술이 확정된다.
 
-```mermaid
-flowchart TD
-  ZP["Z_p 확대 탑 F_n"] --> IW["Iwasawa 공식<br/>e_n = lambda n + mu p^n + nu"]
-  IW --> X["X_inf = lim A_n<br/>Lambda 가군"]
-  X --> MU["mu: p 멱 부분"]
-  X --> LA["lambda: 멱급수 부분"]
-  MU --> FW["Ferrero-Washington<br/>아벨체에서 mu = 0"]
-  LA --> GR["Greenberg 추측<br/>총실수체에서 lambda = 0"]
-  VD["Vandiver: A^+ = 0"] --> GR
-  MC["주추측"] --> NEG["허수 쪽 lambda^- = deg L_p<br/>자주 양수"]
-  LEO["Leopoldt 추측"] -.->|배경| GR
-```
-
 # 정의
 
 ## 순환 $\mathbb Z_p$ 확대
