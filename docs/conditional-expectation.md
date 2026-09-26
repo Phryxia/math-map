@@ -61,7 +61,7 @@ $$
 
 를 정의한다. $P(A) = 0$ 이면 $\nu(A) = 0$ 이므로 $\nu \ll P\rvert_{\mathcal G}$ 이고, Radon–Nikodym 정리로 $\mathcal G$ 가측 밀도 $Y = d\nu / d(P\rvert_{\mathcal G})$ 가 존재한다. 이 $Y$ 가 정의의 두 조건을 그대로 만족한다. 일반적인 $X$ 는 $X = X^+ - X^-$ 로 분해하고 선형으로 결합한다. 존재성 증명은 전부 Radon–Nikodym 정리에 의존한다.
 
-## L2 정사영으로서의 정의
+## L2 정사영 정의
 
 $E[X^2] \lt\infty$ 인 경우에는 측도론 없이도 구성할 수 있다. $L^2(\Omega, \mathcal F, P)$ 는 내적
 

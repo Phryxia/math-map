@@ -90,7 +90,7 @@ $$
 
 이 목록이 완전하다는 것이 Heegner–Stark–Baker 정리이고, 증명은 초월수론과 $L$ 함수의 비소실을 쓴다.
 
-## 아이디얼 곱셈으로서의 Galois 작용
+## Galois 작용의 아이디얼 곱셈
 
 $H=K(j(\mathcal O_K))$ 는 $K$ 의 아벨확대이고 Artin 사상이
 

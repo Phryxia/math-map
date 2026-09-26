@@ -51,7 +51,7 @@ Atkin–Lehner 는 옛형식들이 만드는 부분공간의 Petersson 직교여
 
 # 정의
 
-## 이중 잉여류로서의 Hecke 작용소
+## 이중 잉여류
 
 $\Gamma=\Gamma_0(N)$ 과 $\alpha\in\mathrm{GL}\_2^+(\mathbb Q)$ 에 대해 이중 잉여류 $\Gamma\alpha\Gamma$ 를 우잉여류로 쪼갠다.
 
