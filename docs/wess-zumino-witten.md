@@ -52,18 +52,6 @@ $$
 
 를 만족해야 한다. $\theta$ 는 최고근이고, 좌변이 음이 아닌 정수들의 유계 조합이므로 해가 유한개다. $\mathfrak{su}(2)$ 에서는 스핀 $j$ 에 대해 $2j\le k$ 이므로 목록이 $j=0,\tfrac12,\dots,\tfrac k2$ 로 $k+1$ 개다. $\langle\lambda,\theta^\vee\rangle\gt k$ 이면 Verma [가군](modules.md) 안에 노름이 음인 벡터가 나타나 유니터리 표현이 남지 않는다. 이 유한 목록이 Chern–Simons Wilson 선의 라벨 목록이다.
 
-```mermaid
-flowchart TD
-  CS["Chern-Simons on M<br/>∂M = Σ"] -->|"경계항이 남는다"| WZW["WZW on Σ<br/>장 g: Σ → G"]
-  CS -->|"큰 게이지 변환"| K["k ∈ Z"]
-  WZW -->|"WZ 항의 연장 모호성"| K
-  K --> INT["레벨 k 적분가능 표현<br/>유한개"]
-  INT --> CB["공형 블록 공간<br/>= CS 의 Hilbert 공간"]
-  INT --> MTC["모듈러 텐서범주<br/>단순대상"]
-  CB --> V["Verlinde 공식"]
-  MTC --> V
-```
-
 # 정의
 
 ## 작용
