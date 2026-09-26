@@ -51,7 +51,7 @@ $$
 T \nvdash \mathrm{Con}(T)\qquad (T \supseteq \mathrm{PA},\ T\ \text{무모순},\ T\ \text{재귀적 공리화})
 $$
 
-유한주의적 방법이 $T$ 안에서 형식화된다면(PRA 는 PA 에 포함된다), $S$ 에서의 $\mathrm{Con}(T)$ 증명은 $T$ 에서의 $\mathrm{Con}(T)$ 증명을 낳으므로 $T$ 는 모순이다. 자세한 진술과 증명 개요는 [Gödel 불완전성 정리](godel-incompleteness.md)에 있다.
+PRA 는 Peano 산술(Peano arithmetic, PA)에 포함된다. 유한주의적 방법이 $T$ 안에서 형식화된다면 $S$ 에서의 $\mathrm{Con}(T)$ 증명은 $T$ 에서의 $\mathrm{Con}(T)$ 증명을 낳으므로 $T$ 는 모순이다. 자세한 진술과 증명 개요는 [Gödel 불완전성 정리](godel-incompleteness.md)에 있다.
 
 논리적으로 남는 빈틈은 "유한주의가 PA 안에서 형식화된다"는 전제뿐이다. 이 전제를 부정하는 입장도 있으나 널리 받아들여지지는 않는다.
 

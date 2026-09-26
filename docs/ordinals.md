@@ -130,7 +130,7 @@ $$
 \varepsilon_0=\min\lbrace\alpha : \omega^{\alpha}=\alpha\rbrace=\sup\lbrace\omega,\ \omega^{\omega},\ \omega^{\omega^{\omega}},\dots\rbrace
 $$
 
-$\varepsilon_0$ 는 가산 서수다. Gentzen은 Peano 산술의 무모순성이 $\varepsilon_0$ 까지의 초한귀납법으로 증명됨을 보였고, 이 서수가 Peano 산술(PA)의 증명론적 강도를 재는 척도가 된다([Gödel 불완전성 정리](godel-incompleteness.md) 참조).
+$\varepsilon_0$ 는 가산 서수다. Gentzen은 Peano 산술의 무모순성이 $\varepsilon_0$ 까지의 초한귀납법으로 증명됨을 보였고, 이 서수가 Peano 산술(Peano arithmetic, PA)의 증명론적 강도를 재는 척도가 된다([Gödel 불완전성 정리](godel-incompleteness.md) 참조).
 
 ## 서수와 기수
 
