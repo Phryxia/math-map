@@ -22,7 +22,7 @@ $$
 21493760=1+196883+21296876
 $$
 
-**괴물 달빛**(monstrous moonshine)은 이 대응이 $\mathbb M$ 의 원소 전체로 확장된다는 Conway–Norton (1979) 의 추측이고, Borcherds 가 1992 년에 증명했다. 두 세계를 잇는 대상은 Leech [격자](lattices.md)에서 만든 [정점작용소대수](vertex-operator-algebras.md) $V^\natural$ 다. 이 무한차원 등급 벡터공간은 $\mathbb M$ 의 표현이면서 등급 차원의 [생성함수](generating-functions.md)가 $j-744$ 다. 증명의 도구는 $V^\natural$ 에서 만든 무한차원 [Lie 대수](lie-algebras.md)이고, 그 분모 공식이 $j$ 의 계수들을 서로 묶는다.
+**괴물 달빛**(monstrous moonshine)은 이 대응이 $\mathbb M$ 의 원소 전체로 확장된다는 Conway–Norton (1979) 의 추측이고, Borcherds 가 1992 년에 증명했다. 양쪽을 잇는 대상은 Leech [격자](lattices.md)에서 만든 [정점작용소대수](vertex-operator-algebras.md) $V^\natural$ 다. 이 무한차원 등급 벡터공간은 $\mathbb M$ 의 표현이면서 등급 차원의 [생성함수](generating-functions.md)가 $j-744$ 다. 증명의 도구는 $V^\natural$ 에서 만든 무한차원 [Lie 대수](lie-algebras.md)이고, 그 분모 공식이 $j$ 의 계수들을 서로 묶는다.
 
 moonshine 은 Conway 가 고른 단어다. 밀주라는 뜻과 달빛이라는 뜻이 겹쳐 있고, 실체가 의심스러운 관찰이라는 당시의 평가를 담았다.
 
@@ -39,15 +39,6 @@ $$
 > 모든 $g\in\mathbb M$ 에 대해 $T_g$ 는 어떤 이산부분군 $\Gamma_g\lt\mathrm{SL}\_2(\mathbb R)$ 의 **hauptmodul** 이다.
 
 hauptmodul 은 $\Gamma_g$ 에 의한 상반평면의 몫이 구면(종수 genus 0)일 때 그 구면의 좌표를 주는 유일한 함수다. 종수 0 인 모듈러 곡선이 드물므로 194 개의 켤레류 각각에서 이런 군이 존재한다는 조건은 강하다. 계수 다섯 개가 작은 음이 아닌 정수 계수로 분해되고 194 개 켤레류 전부에서 종수 0 이 나오는 것을 $V^\natural$ 하나가 설명한다. $\mathbb M$ 은 $V^\natural$ 의 자기동형군으로 나타나고, 모듈러성은 $V^\natural$ 이 등각장론의 공리를 만족하는 데서 나온다.
-
-```mermaid
-graph TD
-  L["Leech 격자 Λ"] --> VL["격자 VOA V_Λ"]
-  VL -->|"Z/2 궤도체"| VN["moonshine 가군 V♮"]
-  VN -->|"자기동형군"| M["괴물군 M"]
-  VN -->|"등급 차원"| J["j - 744"]
-  VN --> ML["괴물 Lie 대수 m"]
-```
 
 # 정의
 
