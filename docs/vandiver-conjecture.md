@@ -96,7 +96,7 @@ $p$ 에 대해 다음이 서로 동치다.
 |---|---|
 | $A^{-}$ 의 구조 | $\mathbb Z_p[\Delta]$ 순환, 각 성분이 $\mathbb Z/p^{n_i}$ |
 | Iwasawa 가군 | $X_\infty^{-}$ 가 $\Lambda$ 위 순환, 특성 멱급수가 $L_p$ 그 자체 |
-| FLT 둘째 경우 | $p\mid xyz$ 인 해가 없음(Vandiver 의 정리) |
+| FLT(Fermat's Last Theorem) 둘째 경우 | $p\mid xyz$ 인 해가 없음(Vandiver 의 정리) |
 | $K_{2i}(\mathbb Z)$ 의 계산 | 짝수 $K$ 군의 위수가 $\zeta(1-i)$ 로 결정 |
 
 Quillen–Lichtenbaum 이후 $\mathbb Z$ 의 대수적 $K$ 군은 순환체의 류군으로 환원되고, 짝수 지표 성분의 소멸 여부가 $K_{4k}(\mathbb Z)=0$ 여부다. Vandiver 추측은 위상수학 쪽에서 $K_{4k}(\mathbb Z)$ 의 소멸로 나타난다.

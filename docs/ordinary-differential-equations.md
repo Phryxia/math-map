@@ -132,7 +132,7 @@ $f$ 가 Lipschitz 이고 해가 두 번 미분가능한 구간에서 전역 오�
 
 ## 모형화와 이웃 분야
 
-역학(Newton 방정식), 회로, 화학반응 속도론, 개체군 동역학, 전염병 모형(SIR), 제어이론이 모두 ODE 로 표현된다. 해의 장기 거동을 궤적 집합의 기하로 연구하는 분야가 동역학계 이론이고, 무작위 요동을 더하면 확률미분방정식으로, 상태공간이 이산이면 [Markov 연쇄](markov-chains.md)로 이어진다. 편미분방정식은 독립변수가 둘 이상인 경우로 방법론이 크게 달라진다.
+역학(Newton 방정식), 회로, 화학반응 속도론, 개체군 동역학, 전염병 모형(susceptible–infected–recovered, SIR), 제어이론이 모두 ODE(ordinary differential equation) 로 표현된다. 해의 장기 거동을 궤적 집합의 기하로 연구하는 분야가 동역학계 이론이고, 무작위 요동을 더하면 확률미분방정식으로, 상태공간이 이산이면 [Markov 연쇄](markov-chains.md)로 이어진다. 편미분방정식은 독립변수가 둘 이상인 경우로 방법론이 크게 달라진다.
 
 [^1]: Picard–Lindelöf theorem, Wikipedia (정리 진술과 Banach 고정점 증명). https://en.wikipedia.org/wiki/Picard%E2%80%93Lindel%C3%B6f_theorem
 [^2]: A. Seeger, An existence and uniqueness theorem (Math 522 강의노트), University of Wisconsin–Madison. https://people.math.wisc.edu/~aseeger/522/picard.pdf

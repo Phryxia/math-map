@@ -137,7 +137,7 @@ $G$ 의 정점 집합 $S$ 가 클릭인 것과, 여그래프 $G'$ (같은 정점
 
 - 실무에서 풀 수 없다는 뜻이 아니다. 현대 SAT solver는 수백만 변수의 산업 인스턴스를 일상적으로 처리한다. 최악의 경우 지수 시간이라는 사실과 실제 인스턴스의 난이도는 별개다.
 - 모든 인스턴스가 어렵다는 뜻이 아니다. 특수한 입력 구조(트리 너비가 작은 그래프, 이분 그래프 등)에서는 다항시간에 풀리는 경우가 많다.
-- 근사도 어렵다는 뜻이 아니다. 근사 난이도는 별도의 이론(PCP 정리)이 필요하며, 같은 NP-완전 문제라도 근사 가능성은 천차만별이다.
+- 근사도 어렵다는 뜻이 아니다. 근사 난이도는 별도의 이론이 필요하다. PCP(probabilistically checkable proof) 정리가 그것이고, 같은 NP-완전 문제라도 근사 가능성은 천차만별이다.
 - $\mathrm{NP}$ 에 속하는 모든 문제가 NP-완전은 아니다. $\mathrm P\ne\mathrm{NP}$ 라면 Ladner 정리에 의해 두 부류 어디에도 속하지 않는 NP-중간(NP-intermediate) 문제가 존재한다. [그래프 동형](graph-isomorphism.md) 문제와 소인수분해([RSA 암호](rsa-cryptosystem.md)의 기반)가 그런 후보로 거론된다.
 - 결정불가능성과 다르다. NP-완전 문제는 모두 결정가능하며 지수 시간에 풀린다. [Rice 정리](rice-theorem.md)가 다루는 종류의 절대적 불가능성이 아니다.
 
@@ -153,7 +153,7 @@ $G$ 의 정점 집합 $S$ 가 클릭인 것과, 여그래프 $G'$ (같은 정점
 ## 이론적 확장
 
 - **다른 환원.** Karp 환원 대신 Turing 환원(신탁 질의를 여러 번 허용)을 쓰면 NP-hard의 범위가 넓어진다. 최적화 문제와 판정 문제를 함께 다룰 때 편하다.
-- **완전성의 일반화.** 각 복잡도 부류마다 완전 문제가 있다. $\mathrm{PSPACE}$ 에는 양화된 불식(QBF), $\mathrm{coNP}$ 에는 tautology 판정, $\char35{}\mathrm P$ 에는 영구식(permanent) 계산이 대응한다.
+- **완전성의 일반화.** 각 복잡도 부류마다 완전 문제가 있다. $\mathrm{PSPACE}$ 에는 양화된 불식(quantified Boolean formula, QBF), $\mathrm{coNP}$ 에는 tautology 판정, $\char35{}\mathrm P$ 에는 영구식(permanent) 계산이 대응한다.
 - **Ladner 정리.** $\mathrm P\ne\mathrm{NP}$ 이면 NP-완전도 $\mathrm P$ 도 아닌 문제가 존재한다. 대각선 논법을 다항시간 틀에서 수행한 결과다.
 - **상대화 장벽.** Cook–Levin의 증명은 신탁 기계에도 그대로 상대화되므로, 이런 종류의 논증만으로는 $\mathrm P$ 와 $\mathrm{NP}$ 를 분리할 수 없다(Baker–Gill–Solovay). [P 대 NP 문제](p-np.md)에 대해 알려진 첫 번째 장벽 결과다.
 
