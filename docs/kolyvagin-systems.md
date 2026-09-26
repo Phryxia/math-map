@@ -1,4 +1,4 @@
-# Kolyvagin 계와 핵심계수
+# Kolyvagin 계
 
 # 개요
 

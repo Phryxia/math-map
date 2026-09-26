@@ -1,4 +1,4 @@
-# Kolyvagin–Logachev 정리와 겨냥 몫
+# Kolyvagin–Logachev 정리
 
 # 개요
 

@@ -28,7 +28,7 @@ graph TD
   PO --> AC["선택공리"]
   PO --> CAT["범주"]
   PO --> DAG["DAG와 위상정렬"]
-  MAT["매칭과 Hall 정리"] --> DW
+  MAT["매칭"] --> DW
   GC --> DT["영역 이론"]
   GC --> AI["추상해석"]
   COMP["계산 가능성"] --> DT

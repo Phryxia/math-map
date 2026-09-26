@@ -64,7 +64,7 @@ graph TD
 
 ## 동종사상 암호
 
-- [Lang–Trotter 추측과 초특이 소수](lang-trotter.md) — 고정된 곡선을 여러 소수로 환원할 때 초특이가 되는 빈도
+- [Lang–Trotter 추측](lang-trotter.md) — 고정된 곡선을 여러 소수로 환원할 때 초특이가 되는 빈도
 - [초특이 동종사상 그래프](supersingular-isogeny-graphs.md) — 초특이 $j$ 불변량을 정점으로 하는 정규 그래프. 그 위의 무작위 걸음이 SIDH(supersingular isogeny Diffie–Hellman)의 가정이다
 - [Deuring 대응](deuring-correspondence.md) — 초특이 곡선의 자기준동형환이 사원수대수의 극대차수와 대응한다. 이 대응의 계산이 동종사상 문제의 난이도를 결정한다
 

@@ -266,7 +266,7 @@ $\text{Ш}^{2}(K,M)\cong \text{Ш}^{1}(K,M^{\ast})^{\vee}$ 는 국소적으로 �
 ## 선수지식
 
 - [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
-- [국소 유체론과 Lubin–Tate 형식군](local-class-field-theory.md)
+- [국소 유체론](local-class-field-theory.md)
 
 ## 더 알아보기
 

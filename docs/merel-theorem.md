@@ -116,7 +116,7 @@ $$
 
 - [Eisenstein 아이디얼과 Mazur 의 비틀림점 정리](eisenstein-ideal.md)
 - [모듈러 기호](modular-symbols.md)
-- [Kolyvagin–Logachev 정리와 겨냥 몫](kolyvagin-logachev.md)
+- [Kolyvagin–Logachev 정리](kolyvagin-logachev.md)
 
 ## 더 알아보기
 

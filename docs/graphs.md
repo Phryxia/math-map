@@ -105,7 +105,7 @@ $$
 ### 색칠, 매칭, 극단
 
 - [그래프 색칠](graph-coloring.md)
-- [매칭과 Hall 정리](matchings.md)
+- [매칭](matchings.md)
 - [Hamilton 순환](hamiltonian-cycles.md)
 - [Ramsey 이론](ramsey-theory.md)
 - [Turán 정리](turan-theorem.md)

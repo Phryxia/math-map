@@ -13,7 +13,7 @@ graph TD
   CP["셈의 기본 원리"] --> PH["비둘기집 원리"] --> RM["Ramsey 이론"] --> PM["확률적 방법"]
   CP --> IE["포함배제 원리"]
   CP --> GF["생성함수"] --> PT["분할수"] --> DR["Dyson rank, crank"]
-  CP --> MT["매칭과 Hall 정리"]
+  CP --> MT["매칭"]
   GF --> LM["Laplace 방법"] --> PT
   RS["근계"] --> WC["Weyl 지표 공식"] --> SP["Schur 다항식"]
   SP --> LR["Littlewood–Richardson"]
@@ -66,7 +66,7 @@ graph TD
 
 그래프의 정의와 기본 성질은 [그래프](graphs.md)에 있다. 매칭과 색칠, 독립성의 공리화가 조합 구조로 이어진다.
 
-- [매칭과 Hall 정리](matchings.md): 이분 그래프의 완전 매칭 조건
+- [매칭](matchings.md): 이분 그래프의 완전 매칭 조건
 - [Matroid](matroids.md): 독립성의 공리화, 탐욕 알고리즘이 통하는 이유
 - [완전그래프와 강한 완전그래프 정리](perfect-graphs.md): 색칠수와 클릭수가 일치하는 그래프
 

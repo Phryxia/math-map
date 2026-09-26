@@ -169,6 +169,6 @@ $y^2=x^3+1$ 은 $j=0$ 이고 $\mathbb Z[\zeta_3]$ 에 의한 복소곱셈을 갖
 
 ## 더 알아보기
 
-- [Lang–Trotter 추측과 초특이 소수](lang-trotter.md)
+- [Lang–Trotter 추측](lang-trotter.md)
 
 #number_theory #probability #analysis #computation

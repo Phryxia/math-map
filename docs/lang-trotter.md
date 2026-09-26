@@ -1,4 +1,4 @@
-# Lang–Trotter 추측과 초특이 소수
+# Lang–Trotter 추측
 
 # 개요
 

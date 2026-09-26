@@ -172,7 +172,7 @@ $$
 
 ## 선수지식
 
-- [Lang–Trotter 추측과 초특이 소수](lang-trotter.md)
+- [Lang–Trotter 추측](lang-trotter.md)
 - [Ramanujan 그래프의 명시적 구성](ramanujan-graphs.md)
 - [무작위 걷기](random-walks.md)
 

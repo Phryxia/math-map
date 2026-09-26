@@ -238,7 +238,7 @@ $$
 \chi(\mathcal F)=1\ \Longrightarrow\ \text{Kolyvagin 계}\ \leftrightarrow\ \text{Selmer 군의 크기}
 $$
 
-가 일대일 대응이 되고, 충분히 좋은 Kolyvagin 계가 Selmer 군의 크기를 정확히 계산한다. 핵심계수는 국소 데이터만으로 계산되므로 논법의 적용 가능 여부가 유한한 선형대수 문제가 된다. 자세한 내용은 [Kolyvagin 계와 핵심계수](kolyvagin-systems.md)에 있다. 남은 어려움은 존재성이다.
+가 일대일 대응이 되고, 충분히 좋은 Kolyvagin 계가 Selmer 군의 크기를 정확히 계산한다. 핵심계수는 국소 데이터만으로 계산되므로 논법의 적용 가능 여부가 유한한 선형대수 문제가 된다. 자세한 내용은 [Kolyvagin 계](kolyvagin-systems.md)에 있다. 남은 어려움은 존재성이다.
 
 # 활용
 
@@ -270,7 +270,7 @@ Kolyvagin 계의 형식화는 타원곡선 밖에서도 쓰인다. 변형환의 
 ## 더 알아보기
 
 - [Iwasawa 주추측](iwasawa-main-conjecture.md)
-- [Kolyvagin 계와 핵심계수](kolyvagin-systems.md)
-- [Kolyvagin–Logachev 정리와 겨냥 몫](kolyvagin-logachev.md)
+- [Kolyvagin 계](kolyvagin-systems.md)
+- [Kolyvagin–Logachev 정리](kolyvagin-logachev.md)
 
 #number_theory #theorem #algebra

@@ -66,7 +66,7 @@ Dilworth 정리와 Mirsky 정리는 사슬 $k$ 개의 합집합에 대한 하나
 ## 선수지식
 
 - [부분순서](partial-orders.md)
-- [매칭과 Hall 정리](matchings.md)
+- [매칭](matchings.md)
 
 ## 더 알아보기
 

@@ -72,7 +72,7 @@ graph TD
 - [Dedekind 정역](dedekind-domains.md) → [대수적 수체](algebraic-number-fields.md)
 - [대수적 수체](algebraic-number-fields.md) → [Dirichlet 단수 정리](dirichlet-unit-theorem.md): 단수군의 계수와 조절자, 류수 공식
 - [p 진수](p-adic-numbers.md) → [Newton 다각형](newton-polygon.md), [아델](adeles.md)
-- [유체론](class-field-theory.md) → [국소 유체론과 Lubin–Tate 형식군](local-class-field-theory.md), [Chebotarev 밀도 정리](chebotarev.md), [복소 곱셈](complex-multiplication.md)
+- [유체론](class-field-theory.md) → [국소 유체론](local-class-field-theory.md), [Chebotarev 밀도 정리](chebotarev.md), [복소 곱셈](complex-multiplication.md)
 - [Brauer 군](brauer-groups.md), [Poitou–Tate 완전열](poitou-tate.md): 국소–대역 원리의 코호몰로지
 
 ## 해석적 정수론과 L 함수
