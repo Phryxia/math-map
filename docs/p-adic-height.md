@@ -79,7 +79,7 @@ $v=p$ 항은 [Kedlaya 알고리즘](kedlaya-algorithm.md)으로 구한 Frobenius
 # 활용
 
 - **$p$ 진 BSD 추측.** Mazur, Tate, Teitelbaum 은 $p$ 에서 좋은 순서 환원을 갖는 $E$ 에 대해 $L_p(E,s)$ 가 $s=1$ 에서 계수 $r$ 만큼 소멸하고, 그 선행계수가 고전 BSD 우변에서 실수 조절자를 $R_p(E)$ 로 바꾸고 실주기를 Frobenius 단위근의 오일러 인자로 바꾼 꼴이라고 추측했다.[^3] 이 진술이 $R_p(E)\ne 0$ 을 요구하고, 그것이 Schneider 추측이다.
-- **이차 Chabauty.** 전역 높이 $h_p$ 는 이차형식이고 동시에 국소 항의 합이다. $v=p$ 항은 반복 Coleman 적분으로 적히고 나머지 자리의 항은 유한 개의 값만 갖는다. 두 표현을 견주면 유리점이 만족하는 방정식이 나오고, [Chabauty 방법](chabauty-method.md)의 계수 조건이 $r\lt g+s-1$ 로 느슨해진다.[^4]
+- **[이차 Chabauty](chabauty-kim.md).** 전역 높이 $h_p$ 는 이차형식이고 동시에 국소 항의 합이다. $v=p$ 항은 반복 Coleman 적분으로 적히고 나머지 자리의 항은 유한 개의 값만 갖는다. 두 표현을 견주면 유리점이 만족하는 방정식이 나오고, [Chabauty 방법](chabauty-method.md)의 계수 조건이 $r\lt g+s-1$ 로 느슨해진다.[^4]
 - **Iwasawa 이론.** [Iwasawa 주추측](iwasawa-main-conjecture.md)의 타원곡선 판에서 $p$ 진 BSD 추측이 따라 나오고, 그 선행계수가 $R_p(E)$ 를 담는다. Selmer 군의 확장류로 같은 쌍을 얻는 구성도 있다.
 
 [^1]: R. Coleman, B. Gross, "$p$-adic heights on curves", in *Algebraic Number Theory — in honor of K. Iwasawa*, Adv. Stud. Pure Math. **17** (1989), 73–81. 국소 항의 정의와 선형동치류 의존성이 여기 있다.
@@ -96,6 +96,6 @@ $v=p$ 항은 [Kedlaya 알고리즘](kedlaya-algorithm.md)으로 구한 Frobenius
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Chabauty–Kim 방법](chabauty-kim.md)
 
 #number_theory #algebra #computation

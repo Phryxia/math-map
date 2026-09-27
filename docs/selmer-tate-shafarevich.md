@@ -217,5 +217,6 @@ Kato 의 Euler 계는 모듈러 단위에서 오고, Iwasawa 주추측을 통해
 
 - [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)
 - [Poitou–Tate 완전열과 대역 상호법칙](poitou-tate.md)
+- [Chabauty–Kim 방법](chabauty-kim.md)
 
 #number_theory #group_theory #theorem
