@@ -149,7 +149,7 @@ $X(K)\subset X(\mathbb A_K)^{\mathrm{Br}}\subset X(\mathbb A_K)$ 가 항상 성�
 
 ## 더 알아보기
 
-- [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
+- [Selmer 군과 Tate–Shafarevich 군](selmer-tate-shafarevich.md)
 - [Deuring 대응](deuring-correspondence.md)
 
 #number_theory #ring_theory #algebra

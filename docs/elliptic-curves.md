@@ -143,7 +143,7 @@ $$
 ### 유리점의 산술
 
 - [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md)
-- [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
+- [Selmer 군과 Tate–Shafarevich 군](selmer-tate-shafarevich.md)
 - [Siegel 의 정수점 정리](siegel-integral-points.md)
 
 ### 고차원 일반화

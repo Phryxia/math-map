@@ -8,7 +8,7 @@ $$
 \mathrm{ord}\_{s=1}L(E,s)\thickspace=\thickspace\mathrm{rank}\thinspace E(\mathbb Q)
 $$
 
-[Selmer 군](selmer-groups.md)을 통한 하강은 순위의 상한만 주고, 그 상한의 정확성이 $\text{Ш}$ 에 막힌다. Birch 와 Swinnerton-Dyer 는 1960 년대 초 EDSAC 으로 각 소수에서 환원한 점의 개수 $N_p=\char35{}E(\mathbb F_p)$ 를 모아
+[Selmer 군](selmer-tate-shafarevich.md)을 통한 하강은 순위의 상한만 주고, 그 상한의 정확성이 $\text{Ш}$ 에 막힌다. Birch 와 Swinnerton-Dyer 는 1960 년대 초 EDSAC 으로 각 소수에서 환원한 점의 개수 $N_p=\char35{}E(\mathbb F_p)$ 를 모아
 
 $$
 \prod_{p\le X}\frac{N_p}{p}\ \sim\ C\thinspace(\log X)^{r}
@@ -143,7 +143,7 @@ BSD 가 참이면 순위 계산이 유한 시간에 끝난다. $L$ 함수 쪽에
 
 ## 선수지식
 
-- [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
+- [Selmer 군과 Tate–Shafarevich 군](selmer-tate-shafarevich.md)
 - [Dirichlet L 함수](dirichlet-l-functions.md)
 - [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md)
 

@@ -67,7 +67,7 @@ $r\ge g$ 이면 $J(\mathbb Q)$ 의 닫음이 $J(\mathbb Q_p)$ 를 다 덮을 수
 - **유리점의 결정.** 상한이 이미 찾은 점의 개수와 같으면 목록이 완결된다. 종수 $2$ 곡선에서 계수가 $0$ 이나 $1$ 인 경우가 이 방법으로 계산된다.
 - **Fermat 형 방정식.** 지수가 고정된 일반화 Fermat 방정식이 종수 $2$ 이상 곡선을 주고, 그 곡선에 Chabauty 방법을 적용해 정수해를 전부 결정한다.
 - **분할 Cartan 모듈러 곡선.** 이중 Coleman 적분을 쓴 이차 Chabauty 로 $X\_{\mathrm{s}}^{+}(13)$ 의 유리점이 결정되었고, 이것이 [모듈러 곡선](modular-curves.md)의 유리점 분류에서 남아 있던 경우 가운데 하나다.[^3]
-- **계수가 큰 경우의 우회.** [Selmer 군](selmer-groups.md)의 계산으로 계수 상한을 얻은 뒤 그 값이 $g$ 보다 작은지 먼저 확인한다. 이 단계가 방법의 적용 가능 여부를 가른다.
+- **계수가 큰 경우의 우회.** [Selmer 군](selmer-tate-shafarevich.md)의 계산으로 계수 상한을 얻은 뒤 그 값이 $g$ 보다 작은지 먼저 확인한다. 이 단계가 방법의 적용 가능 여부를 가른다.
 
 [^1]: C. Chabauty, "Sur les points rationnels des courbes algébriques de genre supérieur à l'unité", *C. R. Acad. Sci. Paris* **212** (1941).
 [^2]: R. Coleman, "Effective Chabauty", *Duke Math. J.* **52** (1985).

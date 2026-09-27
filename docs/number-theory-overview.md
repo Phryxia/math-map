@@ -103,7 +103,7 @@ graph TD
 
 곡선의 유리점을 세는 문제가 $L$ 함수의 영점 차수와 만난다.
 
-- [타원곡선](elliptic-curves.md) → [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md), [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
+- [타원곡선](elliptic-curves.md) → [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md), [Selmer 군과 Tate–Shafarevich 군](selmer-tate-shafarevich.md)
 - [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md) → [Heegner 점과 Gross–Zagier 공식](heegner-points.md), [Kolyvagin–Logachev 정리](kolyvagin-logachev.md)
 - [Euler 계](euler-systems.md) → [Kolyvagin 계](kolyvagin-systems.md), [Iwasawa 주추측](iwasawa-main-conjecture.md) → [Vandiver 추측](vandiver-conjecture.md), [Greenberg 추측](greenberg-conjecture.md)
 - [Eisenstein 아이디얼과 Mazur 의 비틀림점 정리](eisenstein-ideal.md) → [Merel 의 일양 유계성 정리](merel-theorem.md)

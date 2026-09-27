@@ -2,7 +2,7 @@
 
 # 개요
 
-[Selmer 군](selmer-groups.md)은 대역 코호몰로지 $H^1(K,M)$ 을 모든 자리의 국소 코호몰로지 $H^1(K_v,M)$ 로 보내고 국소 조건으로 걸러 정의한다. Poitou–Tate 완전열[^1]은 이 국소화 사상의 핵과 상을 결정한다.
+[Selmer 군](selmer-tate-shafarevich.md)은 대역 코호몰로지 $H^1(K,M)$ 을 모든 자리의 국소 코호몰로지 $H^1(K_v,M)$ 로 보내고 국소 조건으로 걸러 정의한다. Poitou–Tate 완전열[^1]은 이 국소화 사상의 핵과 상을 결정한다.
 
 $$
 \begin{aligned}
@@ -138,7 +138,7 @@ $$
 \text{Ш}^{2}(K,M)\ \cong\ \text{Ш}^{1}(K,M^{\ast})^{\vee}
 $$
 
-가 나온다. $E[p]$ 에 적용하면 [Selmer 군](selmer-groups.md)의 $\text{Ш}(E/K)$ 가 자기쌍대이고 그 위수가 제곱수임이 따라온다.
+가 나온다. $E[p]$ 에 적용하면 [Selmer 군](selmer-tate-shafarevich.md)의 $\text{Ш}(E/K)$ 가 자기쌍대이고 그 위수가 제곱수임이 따라온다.
 
 ## Selmer 구조와 쌍대 구조
 
@@ -265,7 +265,7 @@ $\text{Ш}^{2}(K,M)\cong \text{Ш}^{1}(K,M^{\ast})^{\vee}$ 는 국소적으로 �
 
 ## 선수지식
 
-- [Selmer 군과 Tate–Shafarevich 군](selmer-groups.md)
+- [Selmer 군과 Tate–Shafarevich 군](selmer-tate-shafarevich.md)
 - [국소 유체론](local-class-field-theory.md)
 
 ## 더 알아보기
