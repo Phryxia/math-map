@@ -51,6 +51,7 @@ graph TD
 - [다중격자](multigrid.md): 주파수대마다 격자 단계를 맡기는 V 사이클, 격자 간격과 무관한 수렴률
 - [Fourier 국소 해석](local-fourier-analysis.md): 격자 모드마다 반복의 증폭률을 계산해 평활률과 수렴률을 예측하는 방법
 - [대수적 다중격자](algebraic-multigrid.md): 행렬 계수에서 읽은 강한 연결로 성긴 단계를 만드는 방법, C/F 분할과 Galerkin 곱
+- [평활 응집](smoothed-aggregation.md): 변수를 덩어리로 묶고 지시벡터를 완화해 보간을 만드는 방법, 영에너지 모드의 보존
 - [영역 분할법](domain-decomposition.md): 부분영역마다 작은 계를 풀어 더하는 가법 Schwarz, 성긴 공간이 주는 조건수 상한
 
 ## 통계와 데이터

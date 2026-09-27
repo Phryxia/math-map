@@ -125,6 +125,6 @@ Ruge–Stüben 의 보간 공식은 비대각 성분이 음이 아닌 것을 전
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [평활 응집](smoothed-aggregation.md)
 
 #linear_algebra #algorithms #computation #graph_theory
