@@ -153,5 +153,6 @@ $\mathbb{Q}$ 의 Galois 확대에서 [소수](primes.md)의 분해 양상이 Gal
 ## 더 알아보기
 
 - [대수적 수체](algebraic-number-fields.md)
+- [미분 Galois 이론](differential-galois-theory.md)
 
 #field_theory #group_theory

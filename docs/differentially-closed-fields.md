@@ -89,6 +89,6 @@ DCF$\_0$ 는 모형완전하다. 미분체의 언어에 상수만 더해도 양�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [미분 Galois 이론](differential-galois-theory.md)
 
 #logic #foundations #algebra
