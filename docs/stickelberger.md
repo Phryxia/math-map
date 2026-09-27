@@ -1,4 +1,4 @@
-# Stickelberger 원소와 Gauss 합
+# Stickelberger 원소
 
 # 개요
 
