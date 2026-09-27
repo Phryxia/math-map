@@ -77,7 +77,7 @@ $$
 # 활용
 
 - **자유 대상.** 망각 함자 $U:\mathbf{Grp}\to\mathbf{Set}$ 에 대해 $\mathrm{Hom}\_{\mathbf{Set}}(S,U-)$ 를 표현하는 군이 $S$ 위의 자유군이고, 보편원소는 생성원을 넣는 함수 $S\to UF(S)$ 다.
-- **텐서곱.** 가군 $A,B$ 를 고정하고 $C$ 에 쌍선형 사상의 집합을 주는 함자를 표현하는 대상이 [텐서곱](tensor-products.md) $A\otimes B$ 이고, 보편원소는 $(a,b)\mapsto a\otimes b$ 다.
+- **텐서곱.** [가군](modules.md) $A,B$ 를 고정하고 $C$ 에 쌍선형 사상의 집합을 주는 함자를 표현하는 대상이 [텐서곱](tensor-products.md) $A\otimes B$ 이고, 보편원소는 $(a,b)\mapsto a\otimes b$ 다.
 - **극한.** [제한과 쌍대제한](limits-colimits.md)의 정의도 표현이다. 원뿔 전체를 주는 함자를 표현하는 대상이 제한이다.
 - **코호몰로지.** $H^n(X;G)\cong\lbrack X,K(G,n)\rbrack$ 는 [코호몰로지](cohomology.md) 함자를 [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)이 표현한다는 뜻이다.
 
