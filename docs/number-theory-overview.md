@@ -110,6 +110,7 @@ graph TD
 - [Sato–Tate 분포](sato-tate.md) → [Lang–Trotter 추측](lang-trotter.md): $a_p$ 의 통계
 - [Chabauty 방법](chabauty-method.md): Jacobi 다양체의 계수가 종수보다 작을 때 유리점을 $p$ 진 적분의 영점으로 세는 방법
 - [Coleman 적분](coleman-integration.md): 잔차 원판의 항별 적분을 Frobenius 작용으로 이어 붙인 $p$ 진 적분, 영점 개수의 상한
+- [p 진 L 함수](p-adic-l-function.md): 모듈러 기호로 만든 $\mathbb Z_p^\times$ 위 측도의 적분, 복소 특수값을 보간하고 Iwasawa 주추측의 해석적 변에 놓이는 함수
 - [p 진 높이](p-adic-height.md): 국소 분해의 로그를 $p$ 진 로그로 바꾸고 $p$ 자리를 Coleman 적분으로 채운 높이쌍, $p$ 진 BSD 의 조절자
 - [Chabauty–Kim 방법](chabauty-kim.md): 기본군의 깊은 몫으로 Chabauty 를 반복해 계수 조건을 $r\lt g+s-1$ 로 느슨하게 만든 방법
 - [Mordell–Lang 추측](mordell-lang.md): 유한생성 부분군과 부분다양체의 교집합이 아벨 부분다양체의 잉여류 유한 개로 설명된다는 진술, Mordell 추측을 포함한다

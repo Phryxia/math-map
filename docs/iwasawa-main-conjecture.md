@@ -12,7 +12,7 @@ $$
 
 가 성립한다. 세 상수는 특성 멱급수에서 읽는다.
 
-[Dirichlet $L$ 함수](dirichlet-l-functions.md)의 특수값을 $p$ 진적으로 보간해 얻는 Kubota–Leopoldt $p$ 진 $L$ 함수 $L_p(s,\chi)$ 도 같은 $\Lambda$ 안의 원소로 실현된다. 한쪽은 이데알류군의 극한이고 다른 쪽은 Bernoulli 수의 보간이다.
+[Dirichlet $L$ 함수](dirichlet-l-functions.md)의 특수값을 $p$ 진적으로 보간해 얻는 Kubota–Leopoldt [$p$ 진 $L$ 함수](p-adic-l-function.md) $L_p(s,\chi)$ 도 같은 $\Lambda$ 안의 원소로 실현된다. 한쪽은 이데알류군의 극한이고 다른 쪽은 Bernoulli 수의 보간이다.
 
 > **Iwasawa 주추측.** 두 원소가 생성하는 $\Lambda$ 의 아이디얼은 같다.
 
@@ -212,6 +212,7 @@ $L$ 함수의 특수값이 대수적 원소로 실현된다는 Stark 의 예측�
 
 - [Euler 계](euler-systems.md)
 - [Stickelberger 원소](stickelberger.md)
+- [p 진 L 함수](p-adic-l-function.md)
 
 ## 더 알아보기
 

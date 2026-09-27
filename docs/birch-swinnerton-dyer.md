@@ -107,7 +107,7 @@ Heegner 점은 하나뿐이다. $L'(E,1)$ 하나에 점 하나가 대응하므�
 
 ## $p$ 진 판본과 Bloch–Kato 추측
 
-- **$p$ 진 BSD.** $L$ 함수 대신 $p$ 진 $L$ 함수를 쓰고 Selmer 군의 특성 아이디얼과 비교한다. Iwasawa 주추측이 그 기본 도구이고 고전 BSD 보다 증명된 부분이 많다.
+- **$p$ 진 BSD.** $L$ 함수 대신 [$p$ 진 $L$ 함수](p-adic-l-function.md)를 쓰고 Selmer 군의 특성 아이디얼과 비교한다. Iwasawa 주추측이 그 기본 도구이고 고전 BSD 보다 증명된 부분이 많다.
 - **Bloch–Kato 추측.** 임의의 모티브 $M$ 에 대해 $L(M,s)$ 의 소멸 차수와 선행계수를 Selmer 군과 행렬식으로 예측한다. BSD 는 $M=h^1(E)(1)$ 인 경우다.
 - **수체 위의 BSD.** $\text{Ш}$ 와 조절자의 정의가 그대로 확장된다.
 
@@ -151,5 +151,6 @@ BSD 가 참이면 순위 계산이 유한 시간에 끝난다. $L$ 함수 쪽에
 
 - [Heegner 점과 Gross–Zagier 공식](heegner-points.md)
 - [Kolyvagin–Logachev 정리](kolyvagin-logachev.md)
+- [p 진 L 함수](p-adic-l-function.md)
 
 #number_theory #complex_analysis #theorem

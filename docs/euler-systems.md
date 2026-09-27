@@ -256,7 +256,7 @@ Kolyvagin 지표는 계산 가능한 양이다. Heegner 점을 수치적으로 �
 
 ## Selmer 군 계산의 일반 틀
 
-Kolyvagin 계의 형식화는 타원곡선 밖에서도 쓰인다. 변형환의 접공간 계산, [모듈러 기호](modular-symbols.md)가 주는 $p$ 진 $L$ 함수와 Selmer 군의 비교, 고차 무게 모듈러 형식의 Bloch–Kato 추측이 같은 문법을 쓴다. 공통의 물음은 국소 조건 하나를 바꿀 때 Selmer 군의 크기가 얼마나 변하는가이고, 그 답이 핵심계수다.
+Kolyvagin 계의 형식화는 타원곡선 밖에서도 쓰인다. 변형환의 접공간 계산, [모듈러 기호](modular-symbols.md)가 주는 [$p$ 진 $L$ 함수](p-adic-l-function.md)와 Selmer 군의 비교, 고차 무게 모듈러 형식의 Bloch–Kato 추측이 같은 문법을 쓴다. 공통의 물음은 국소 조건 하나를 바꿀 때 Selmer 군의 크기가 얼마나 변하는가이고, 그 답이 핵심계수다.
 
 [^1]: V. Kolyvagin, *Euler systems*, in **The Grothendieck Festschrift II**, Birkhäuser (1990), 435–483. 체계적 서술은 K. Rubin, *Euler Systems* (Annals of Math. Studies 147, 2000) 과 B. Mazur, K. Rubin, *Kolyvagin Systems* (Memoirs AMS 168, 2004). Kato 의 구성은 K. Kato, *p-adic Hodge theory and values of zeta functions of modular forms*, Astérisque **295** (2004). 이분 Euler 계는 B. Howard, *Bipartite Euler systems*, J. reine angew. Math. **597** (2006).
 

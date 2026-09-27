@@ -201,7 +201,7 @@ $$
 
 Kolyvagin 의 방법은 $\text{Ш}$ 를 위에서 누르는 알려진 일반적 도구다. 모듈러 곡선 위의 Heegner 점들이 허수이차체의 환체 탑을 따라 정합적인 족을 이루고, 이 족이 **Euler 계**를 이루어 Selmer 군의 원소를 소거한다. 결론은 해석적 순위가 $\le1$ 이면 대수적 순위가 그와 같고 $\text{Ш}$ 가 유한하다는 것이다.
 
-Kato 의 Euler 계는 모듈러 단위에서 오고, Iwasawa 주추측을 통해 $p$ 진 $L$ 함수와 Selmer 군의 특성 아이디얼을 잇는다.
+Kato 의 Euler 계는 모듈러 단위에서 오고, Iwasawa 주추측을 통해 [$p$ 진 $L$ 함수](p-adic-l-function.md)와 Selmer 군의 특성 아이디얼을 잇는다.
 
 [^1]: D. Lind (1940) 과 H. Reichardt (1942) 가 독립적으로 든 예다. Cassels 의 *Lectures on Elliptic Curves* 와 Silverman 의 *The Arithmetic of Elliptic Curves* X 장에 하강과 $\text{Ш}$ 의 표준적 서술이 있다.
 [^2]: A. Wiles, *The Birch and Swinnerton-Dyer Conjecture*, Clay Mathematics Institute 공식 문제 설명. $\text{Ш}$ 의 유한성이 BSD 추측의 일부로 남아 있음을 밝힌다. https://www.claymath.org/wp-content/uploads/2022/06/birchswin.pdf

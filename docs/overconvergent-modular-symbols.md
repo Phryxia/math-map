@@ -10,7 +10,7 @@ $$
 \mathrm{Symb}\_\Gamma(\mathcal D_k)\ \xrightarrow{\ \rho\ }\ \mathrm{Symb}\_\Gamma(V_{k-2})
 $$
 
-이것이 **Stevens 의 조절 정리**다. 고전 고유기호 하나를 유일하게 위로 올릴 수 있고, 올린 기호가 담은 분포를 $\mathbb Z_p^\times$ 로 제한하면 $p$ 진 $L$ 함수가 된다.
+이것이 **Stevens 의 조절 정리**다. 고전 고유기호 하나를 유일하게 위로 올릴 수 있고, 올린 기호가 담은 분포를 $\mathbb Z_p^\times$ 로 제한하면 [$p$ 진 $L$ 함수](p-adic-l-function.md)가 된다.
 
 $p$ 진 $L$ 함수는 원래 고전 $L$ 값들을 보간해 존재를 증명하던 대상이다. 과수렴 기호는 같은 것을 유한 번의 선형대수로 만든다. [$p$ 진수](p-adic-numbers.md) 위의 수렴이 기하급수적이라 자릿수를 원하는 만큼 얻고, Iwasawa 이론의 $\lambda,\mu$ 불변량을 표로 만드는 일이 가능해졌다.
 

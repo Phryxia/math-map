@@ -4,7 +4,7 @@
 
 [Néron–Tate 높이](canonical-height.md)는 타원곡선의 유리점에 실수를 붙이고, 생성원들의 높이쌍 행렬식이 [BSD 추측](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer)의 선행계수에 들어가는 조절자다.
 
-**$p$ 진 높이**는 같은 점에 $\mathbb Q_p$ 의 원소를 붙이는 쌍선형 형식이다. $p$ 진 $L$ 함수의 값이 $\mathbb Q_p$ 에 있으므로 그 선행계수와 견줄 조절자도 $\mathbb Q_p$ 값이어야 한다. 정준 높이의 국소 분해에서 실수 로그를 $p$ 진 로그로 바꾸고, $p$ 자리의 항은 [Coleman 적분](coleman-integration.md)으로 정한다.
+**$p$ 진 높이**는 같은 점에 $\mathbb Q_p$ 의 원소를 붙이는 쌍선형 형식이다. [$p$ 진 $L$ 함수](p-adic-l-function.md)의 값이 $\mathbb Q_p$ 에 있으므로 그 선행계수와 견줄 조절자도 $\mathbb Q_p$ 값이어야 한다. 정준 높이의 국소 분해에서 실수 로그를 $p$ 진 로그로 바꾸고, $p$ 자리의 항은 [Coleman 적분](coleman-integration.md)으로 정한다.
 
 # 직관
 
