@@ -7,7 +7,7 @@ $n$ 가닥 땋임군 $B_n$ 은 가닥을 꼬는 조작들이 이루는 유한표
 - **Alexander 정리.** 모든 링크는 어떤 땋임의 닫힘으로 얻어진다.
 - **Markov 정리.** 두 땋임의 닫힘이 같은 링크인 것은 두 땋임이 켤레 이동과 안정화 이동의 유한 열로 연결되는 것과 같다.
 
-[매듭 불변량](knot-invariants.md)은 도식과 Reidemeister 이동으로 정의되므로 불변량을 만들 때마다 세 이동 아래 값이 변하지 않는지를 손으로 확인해야 한다. 위 두 정리를 합치면 링크의 분류가 $\bigsqcup_n B_n$ 을 두 관계로 나눈 몫집합의 분류가 되고, 그림 위의 세 이동이 군 위의 두 이동이 된다. 그 두 이동을 견디는 **Markov 자취**를 하나 찾으면 링크 불변량이 하나 나온다. Jones 다항식이 그렇게 나왔다.
+[매듭 불변량](knot-invariants.md)은 도식과 Reidemeister 이동으로 정의되므로 불변량을 만들 때마다 세 이동 아래 값이 변하지 않는지를 손으로 확인해야 한다. 위 두 정리를 합치면 링크의 분류가 $\bigsqcup_n B_n$ 을 두 관계로 나눈 몫집합의 분류가 되고, 그림 위의 세 이동이 군 위의 두 이동이 된다. 그 두 이동을 견디는 **Markov 대각합**를 하나 찾으면 링크 불변량이 하나 나온다. Jones 다항식이 그렇게 나왔다.
 
 # 직관
 
@@ -41,20 +41,20 @@ $$
 
 ## 불변량의 구성 조건
 
-$B_n$ 의 표현족 $\rho_n\colon B_n\to A_n$ 과 자취 $\mathrm{tr}$ 이
+$B_n$ 의 표현족 $\rho_n\colon B_n\to A_n$ 과 대각합 $\mathrm{tr}$ 이
 
 1. $\mathrm{tr}(ab)=\mathrm{tr}(ba)$ (켤레 불변)
 2. $\mathrm{tr}(\beta\sigma_n^{\pm1})=z^{\pm1}\thinspace\mathrm{tr}(\beta)$ (안정화에서 정해진 상수배)
 
 를 만족하면 적당히 정규화한 $\mathrm{tr}(\rho(\beta))$ 가 링크 불변량이 된다. 조건 1 은 대수에서 거의 자동으로 성립하고 조건 2 만 확인하면 된다.
 
-Jones 는 $\mathrm{II}\_1$ 인자의 부분인자를 연구하다 Temperley–Lieb 대수 $TL_n(\delta)$ 위에서 이 성질을 가진 자취를 찾았다. $B_n\to TL_n$ 은
+Jones 는 $\mathrm{II}\_1$ 인자의 부분인자를 연구하다 Temperley–Lieb 대수 $TL_n(\delta)$ 위에서 이 성질을 가진 대각합를 찾았다. $B_n\to TL_n$ 은
 
 $$
 \sigma_i\longmapsto A+A^{-1}e_i,\qquad e_i^2=\delta e_i,\ e_ie_{i\pm1}e_i=e_i
 $$
 
-로 주어지고 $\delta=-A^2-A^{-2}$ 라는 제약이 자취의 존재를 보장한다. 이 값은 부분인자 지표가 $4\cos^2(\pi/n)$ 만 가질 수 있다는 정리와 같은 사실이다.
+로 주어지고 $\delta=-A^2-A^{-2}$ 라는 제약이 대각합의 존재를 보장한다. 이 값은 부분인자 지표가 $4\cos^2(\pi/n)$ 만 가질 수 있다는 정리와 같은 사실이다.
 
 ## Burau 표현과 Alexander 다항식
 
@@ -102,15 +102,15 @@ $$
 
 어려운 방향은 이 둘로 충분하다는 쪽이다.[^1]
 
-## Markov 자취
+## Markov 대각합
 
-대수족 $\lbrace A_n\rbrace$ 과 준동형 $\rho_n\colon B_n\to A_n^\times$ 과 선형범함수 $\mathrm{tr}\_n\colon A_n\to R$ 이 위 두 조건을 만족하면 $\mathrm{tr}$ 을 **Markov 자취**라 한다. $w(\beta)$ 를 지수합, $n$ 을 가닥 수라 하고 적절한 상수 $a,b$ 를 잡으면
+대수족 $\lbrace A_n\rbrace$ 과 준동형 $\rho_n\colon B_n\to A_n^\times$ 과 선형범함수 $\mathrm{tr}\_n\colon A_n\to R$ 이 위 두 조건을 만족하면 $\mathrm{tr}$ 을 **Markov 대각합**라 한다. $w(\beta)$ 를 지수합, $n$ 을 가닥 수라 하고 적절한 상수 $a,b$ 를 잡으면
 
 $$
 X(\hat\beta)=a^{\thinspace w(\beta)}b^{\thinspace n-1}\thinspace\mathrm{tr}\_n\bigl(\rho_n(\beta)\bigr)
 $$
 
-가 링크 불변량이 된다. $TL_n$ 과 Jones 자취를 넣으면 Jones 다항식, Hecke 대수 $H_n(q)$ 와 Ocneanu 자취를 넣으면 HOMFLY 다항식이 나온다.
+가 링크 불변량이 된다. $TL_n$ 과 Jones 대각합를 넣으면 Jones 다항식, Hecke 대수 $H_n(q)$ 와 Ocneanu 대각합를 넣으면 HOMFLY 다항식이 나온다.
 
 # 성질
 
@@ -136,12 +136,12 @@ $\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ 는 Yang–Baxte
 
 ## 불변량의 목록
 
-| 대수 | 자취 | 불변량 |
+| 대수 | 대각합 | 불변량 |
 |---|---|---|
 | $\mathbb Z[t^{\pm1}]$ 위 Burau | 행렬식 | Alexander 다항식 |
-| Temperley–Lieb $TL_n(\delta)$ | Jones 자취 | Jones 다항식 |
-| Hecke 대수 $H_n(q)$ | Ocneanu 자취 | HOMFLY 다항식 |
-| BMW(Birman–Murakami–Wenzl) 대수 | Markov 자취 | Kauffman 다항식 |
+| Temperley–Lieb $TL_n(\delta)$ | Jones 대각합 | Jones 다항식 |
+| Hecke 대수 $H_n(q)$ | Ocneanu 대각합 | HOMFLY 다항식 |
+| BMW(Birman–Murakami–Wenzl) 대수 | Markov 대각합 | Kauffman 다항식 |
 
 표의 각 행이 하나의 논문이었고, 공통 구조가 드러난 뒤 양자군의 표현으로 통일되었다.
 

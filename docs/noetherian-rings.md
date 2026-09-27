@@ -71,7 +71,7 @@ $M$ 이 Noether 가군인 것과 $M$ 의 모든 부분가군이 유한생성인 
 
 ## 대수기하
 
-$k[x_1,\dots,x_n]$ 이 Noether 이므로 임의의 다항식족이 정의하는 자취는 그 족의 유한 부분집합이 정의하는 자취와 같다. 아핀 공간의 닫힌집합이 내림사슬 조건을 만족한다는 뜻이고, 이것이 대수적 집합을 유한 개의 기약 성분으로 쪼개는 분해의 근거다.
+$k[x_1,\dots,x_n]$ 이 Noether 이므로 임의의 다항식족이 정의하는 영점 집합은 그 족의 유한 부분집합이 정의하는 영점 집합과 같다. 아핀 공간의 닫힌집합이 내림사슬 조건을 만족한다는 뜻이고, 이것이 대수적 집합을 유한 개의 기약 성분으로 쪼개는 분해의 근거다.
 
 [^1]: D. Hilbert, "Über die Theorie der algebraischen Formen", Mathematische Annalen 36 (1890), 473–534. 기저정리의 원 논문. 현대적 진술과 증명은 M. Atiyah and I. Macdonald, *Introduction to Commutative Algebra*, Theorem 7.5.
 
