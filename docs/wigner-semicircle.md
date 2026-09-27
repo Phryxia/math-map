@@ -108,7 +108,7 @@ $$
 
 ## 선수지식
 
-- [고윳값과 고유벡터](eigenvalues.md)
+- [고윳값](eigenvalues.md)
 - [중심극한정리](central-limit-theorem.md)
 
 ## 더 알아보기

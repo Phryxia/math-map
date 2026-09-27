@@ -93,7 +93,7 @@ $x$ 를 전부 1 인 벡터로 두면 $(Ax)\_i/x_i=r_i$ 이므로, $r(x)\le\rho(
 
 ## 선수지식
 
-- [고윳값과 고유벡터](eigenvalues.md)
+- [고윳값](eigenvalues.md)
 
 ## 더 알아보기
 

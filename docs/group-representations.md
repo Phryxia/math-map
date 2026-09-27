@@ -202,7 +202,7 @@ $$
 ## 선수지식
 
 - [군 작용](group-actions.md)
-- [고윳값과 고유벡터](eigenvalues.md)
+- [고윳값](eigenvalues.md)
 
 ## 더 알아보기
 

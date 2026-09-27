@@ -163,7 +163,7 @@ $$
 ## 두 따름정리
 
 - $R=\mathbb Z$ 로 두면 유한생성 아벨군의 분류가 된다. 모든 유한생성 아벨군은 $\mathbb Z^n$ 과 순환군들의 직합이다.
-- $R=k[x]$ 로 두고 $M$ 을 선형변환 $T$ 를 가진 유한차원 벡터 공간으로 보면, 초등인자가 곧 $T$ 의 Jordan 블록이다. [고윳값과 고유벡터](eigenvalues.md)의 이론과 유리 표준형, [Jordan 표준형](jordan-canonical-form.md)이 이 정리의 특수한 경우다.
+- $R=k[x]$ 로 두고 $M$ 을 선형변환 $T$ 를 가진 유한차원 벡터 공간으로 보면, 초등인자가 곧 $T$ 의 Jordan 블록이다. [고윳값](eigenvalues.md)의 이론과 유리 표준형, [Jordan 표준형](jordan-canonical-form.md)이 이 정리의 특수한 경우다.
 
 ## Noether 조건
 

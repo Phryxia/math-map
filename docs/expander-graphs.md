@@ -126,7 +126,7 @@ expander 그래프에서 만든 부호(expander code, Sipser–Spielman)는 선�
 ## 선수지식
 
 - [그래프 Laplacian](graph-laplacian.md)
-- [고윳값과 고유벡터](eigenvalues.md)
+- [고윳값](eigenvalues.md)
 
 ## 더 알아보기
 

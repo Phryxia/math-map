@@ -133,7 +133,7 @@ $$
 
 ## 선수지식
 
-- [고윳값과 고유벡터](eigenvalues.md)
+- [고윳값](eigenvalues.md)
 - [내적 공간](inner-product-spaces.md)
 
 ## 더 알아보기

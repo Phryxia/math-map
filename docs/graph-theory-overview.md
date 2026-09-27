@@ -30,7 +30,7 @@ graph TD
   MT["Matroid"] --> MS["최소 신장트리"]
   GL --> ER["유효저항"]
   GL --> EG["Expander 그래프"]
-  EV["고윳값과 고유벡터"] --> EG
+  EV["고윳값"] --> EG
   ER --> SS["스펙트럼 희소화"]
   ER --> RW["무작위 걷기"]
   EG --> RG["Ramanujan 그래프"]

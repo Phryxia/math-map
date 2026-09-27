@@ -122,7 +122,7 @@ Kirchhoff의 matrix-tree 정리는 연결 [그래프](graphs.md)의 신장트리
 
 ## 더 알아보기
 
-- [고윳값과 고유벡터](eigenvalues.md)
+- [고윳값](eigenvalues.md)
 - [격자](lattices.md)
 - [Fredholm 행렬식](fredholm-determinant.md)
 - [Reidemeister 비틀림](reidemeister-torsion.md)
