@@ -48,7 +48,7 @@ Cohen–Macaulay 환 $R$ 의 **유형**은 $\dim_k\mathrm{Ext}^d_R(k,R)$ 다. Go
 
 **정리.** 정칙 국소환은 Gorenstein 이고 Gorenstein 국소환은 Cohen–Macaulay 다.
 
-*증명의 요지.* 정칙 국소환에서는 $k$ 의 자유분해가 Koszul 복합체로 길이 $d$ 에서 끝나고 $\mathrm{Ext}^d_R(k,R)=k$ 가 직접 계산된다. 두 번째는 단사차원이 유한하면 깊이가 차원과 같다는 Bass 의 정리다. ∎
+*증명의 요지.* 정칙 국소환에서는 $k$ 의 자유분해가 [Koszul 복합체](koszul-complex.md)로 길이 $d$ 에서 끝나고 $\mathrm{Ext}^d_R(k,R)=k$ 가 직접 계산된다. 두 번째는 단사차원이 유한하면 깊이가 차원과 같다는 Bass 의 정리다. ∎
 
 두 포함은 진짜다. $k\lbrack x\rbrack/(x^2)$ 는 Gorenstein 이지만 정칙이 아니고, 위 직관 절의 $S$ 는 Cohen–Macaulay 이지만 Gorenstein 이 아니다.
 

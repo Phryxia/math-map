@@ -50,7 +50,7 @@ Noether 환 $R$ 의 모든 소 아이디얼 $\mathfrak p$ 에서 국소화 $R_\m
 
 **정리.** Noether 국소환 $(R,\mathfrak m)$ 이 정칙인 것은 $\kappa$ 의 사영차원이 유한한 것과 같다. 이때 $R$ 위 모든 가군의 사영차원이 $\dim R$ 이하이고 그 상한에 도달하는 가군이 있다.[^2]
 
-증명의 요지. 정칙이면 정칙 매개변수계 $x_1,\dots,x_d$ 로 만든 Koszul 복합체가 $\kappa$ 의 자유분해이고 길이가 $d$ 다. 역방향은 $\mathrm{Tor}$ 의 소멸에서 최소 자유분해의 길이를 읽어 $\mathfrak m$ 의 최소 생성원 개수를 $d$ 로 내린다. ∎
+증명의 요지. 정칙이면 정칙 매개변수계 $x_1,\dots,x_d$ 로 만든 [Koszul 복합체](koszul-complex.md)가 $\kappa$ 의 자유분해이고 길이가 $d$ 다. 역방향은 $\mathrm{Tor}$ 의 소멸에서 최소 자유분해의 길이를 읽어 $\mathfrak m$ 의 최소 생성원 개수를 $d$ 로 내린다. ∎
 
 **따름정리.** 정칙 국소환의 소 아이디얼에서의 국소화가 다시 정칙 국소환이다.
 
@@ -88,6 +88,7 @@ Noether 환 $R$ 의 모든 소 아이디얼 $\mathfrak p$ 에서 국소화 $R_\m
 
 ## 더 알아보기
 
+- [Koszul 복합체](koszul-complex.md)
 - [Cohen–Macaulay 환](cohen-macaulay-rings.md)
 
 #ring_theory #algebra #topology
