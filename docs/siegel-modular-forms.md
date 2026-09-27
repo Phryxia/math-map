@@ -92,6 +92,6 @@ $k$ 가 짝수일 때 $S_k(\Gamma_2)$ 안에는 Fourier 계수가 판별식 $\de
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Jacobi 형식](jacobi-forms.md)
 
 #number_theory #complex_analysis #algebra
