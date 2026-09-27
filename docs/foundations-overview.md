@@ -4,14 +4,14 @@
 
 수학기초론은 수학 자체를 대상으로 삼는다. 수학적 대상이 무엇인지(수리철학), 무엇을 말할 수 있는지(논리), 무엇 위에 세우는지(집합론), 무엇을 기계적으로 할 수 있는지(계산 가능성)를 묻는다. 네 물음은 20 세기 초 역설의 충격에서 함께 태어났고, Gödel 의 불완전성 정리가 넷을 한 자리에 묶는다.
 
-[집합](sets.md)이 대상을 주고 [명제와 증명](proofs.md)이 그 대상을 논하는 언어를 준다. 거기서 [1차 논리](first-order-logic.md)로 가면 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel 집합론에 선택공리를 더한 것)와 [Gödel 불완전성 정리](godel-incompleteness.md)가 나오고, [기수](cardinality.md)로 가면 [계산 가능성](computability.md)이 나온다. 수리철학의 다섯 입장, 곧 [플라톤주의](mathematical-platonism.md), [논리주의](logicism.md), [형식주의](formalism-hilbert-program.md), [직관주의](intuitionism.md), [구조주의](mathematical-structuralism.md)는 이 기술적 결과에 대한 서로 다른 해석이다.
+[집합](sets.md)이 대상을 주고 [증명](proofs.md)이 그 대상을 논하는 언어를 준다. 거기서 [1차 논리](first-order-logic.md)로 가면 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel 집합론에 선택공리를 더한 것)와 [Gödel 불완전성 정리](godel-incompleteness.md)가 나오고, [기수](cardinality.md)로 가면 [계산 가능성](computability.md)이 나온다. 수리철학의 다섯 입장, 곧 [플라톤주의](mathematical-platonism.md), [논리주의](logicism.md), [형식주의](formalism-hilbert-program.md), [직관주의](intuitionism.md), [구조주의](mathematical-structuralism.md)는 이 기술적 결과에 대한 서로 다른 해석이다.
 
 # 지도
 
 ```mermaid
 graph TD
   S["집합"] --> F["함수"] --> CD["가산성"] --> CM["계산 가능성"] --> GD["Gödel 불완전성"]
-  P["명제와 증명"] --> FOL["1차 논리"] --> ZFC["ZFC 공리계"] --> OR["서수"] --> AC["선택공리"]
+  P["증명"] --> FOL["1차 논리"] --> ZFC["ZFC 공리계"] --> OR["서수"] --> AC["선택공리"]
   ZFC --> CH["연속체 가설"] --> FC["강제법"]
   FOL --> GD --> FM["형식주의"]
   FOL --> LG["논리주의"]
@@ -37,7 +37,7 @@ graph TD
 
 ## 논리의 체계
 
-- [명제와 증명](proofs.md) → [1차 논리](first-order-logic.md): 구문과 의미, 건전성과 완전성
+- [증명](proofs.md) → [1차 논리](first-order-logic.md): 구문과 의미, 건전성과 완전성
 - [Löwenheim–Skolem 정리](lowenheim-skolem.md): 1차 논리가 크기를 구별하지 못한다
 - [Peano 공리](peano-axioms.md): 자연수의 공리계, 2차 형태의 범주성과 1차 형태의 비표준 모형
 - [Gödel 불완전성 정리](godel-incompleteness.md): 산술을 담는 체계는 자기 무모순성을 증명하지 못한다
@@ -106,7 +106,7 @@ graph TD
 ## 선수지식
 
 - [집합](sets.md)
-- [명제와 증명](proofs.md)
+- [증명](proofs.md)
 
 ## 더 알아보기
 

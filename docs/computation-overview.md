@@ -12,7 +12,7 @@
 
 ```mermaid
 graph TD
-  PF["명제와 증명"] --> CB["계산 가능성"]
+  PF["증명"] --> CB["계산 가능성"]
   CA["기수"] --> CB
   CB --> FA["유한 오토마타"]
   CB --> RT["Rice 정리"]
@@ -116,7 +116,7 @@ graph TD
 
 ## 선수지식
 
-- [명제와 증명](proofs.md)
+- [증명](proofs.md)
 
 ## 더 알아보기
 
