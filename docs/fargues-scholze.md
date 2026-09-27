@@ -138,7 +138,7 @@ $p$ 진 [Galois 표현](galois-representations.md)의 국소 조건, 이를테�
 ## 선수지식
 
 - [기하학적 Langlands 강령](geometric-langlands.md)
-- [p 진 Hodge 이론과 Fontaine 주기환](p-adic-hodge-theory.md)
+- [p 진 Hodge 이론](p-adic-hodge-theory.md)
 
 ## 더 알아보기
 

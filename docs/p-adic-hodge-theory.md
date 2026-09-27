@@ -1,4 +1,4 @@
-# p 진 Hodge 이론과 Fontaine 주기환
+# p 진 Hodge 이론
 
 # 개요
 

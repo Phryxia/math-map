@@ -112,7 +112,7 @@ $(\varphi,\Gamma)$ 가군의 언어에서 $\Gamma$ 작용의 미분이 Sen 작�
 
 ## 선수지식
 
-- [p 진 Hodge 이론과 Fontaine 주기환](p-adic-hodge-theory.md)
+- [p 진 Hodge 이론](p-adic-hodge-theory.md)
 
 ## 더 알아보기
 

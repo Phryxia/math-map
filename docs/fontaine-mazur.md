@@ -175,7 +175,7 @@ Wiles 의 반안정 타원곡선 모듈러성, Breuil–Conrad–Diamond–Taylo
 
 ## 선수지식
 
-- [p 진 Hodge 이론과 Fontaine 주기환](p-adic-hodge-theory.md)
+- [p 진 Hodge 이론](p-adic-hodge-theory.md)
 - [모듈러 곡선](modular-curves.md)
 
 ## 더 알아보기

@@ -176,7 +176,7 @@ $\mathbb R$ 와 $\mathbb Q_p$ 는 $\mathbb Q$ 의 완비화로서 대등하다. 
 - [아델](adeles.md)
 - [국소 유체론](local-class-field-theory.md)
 - [Newton 다각형](newton-polygon.md)
-- [과수렴 모듈러 기호와 p 진 L 함수](overconvergent-modular-symbols.md)
+- [과수렴 모듈러 기호](overconvergent-modular-symbols.md)
 - [Chabauty 방법](chabauty-method.md)
 
 #number_theory #analysis #field_theory

@@ -91,7 +91,7 @@ graph TD
 
 - [모듈러 형식](modular-forms.md) → [Eisenstein 급수](eisenstein-series.md), [Hecke 작용소](hecke-operators.md), [theta 급수](theta-series.md)
 - [Maass 형식](maass-forms.md), [Selberg 대각합 공식](selberg-trace-formula.md): 비정칙 스펙트럼
-- [모듈러 곡선](modular-curves.md) → [모듈러 기호](modular-symbols.md), [과수렴 모듈러 기호와 p 진 L 함수](overconvergent-modular-symbols.md)
+- [모듈러 곡선](modular-curves.md) → [모듈러 기호](modular-symbols.md), [과수렴 모듈러 기호](overconvergent-modular-symbols.md)
 - [Siegel 모듈라이 다양체](siegel-modular-variety.md) → [Siegel 모듈러 형식](siegel-modular-forms.md): 주편극 아벨 다양체를 분류하는 Siegel 상반공간의 몫과 그 위 선다발의 절단
 - [Jacobi 형식](jacobi-forms.md): 차수 2 Siegel 형식을 한 변수로 전개한 계수. 지표 1 의 공간이 반정수 가중치 형식과 동형이다
 - [분할수](partitions.md), [Mock 모듈러 형식](mock-modular-forms.md), [Dyson 의 rank 와 crank](dyson-rank-crank.md), [Borcherds 곱](borcherds-products.md): 조합론과의 접점
