@@ -79,6 +79,7 @@ graph TD
 - [p 진수](p-adic-numbers.md) → [Newton 다각형](newton-polygon.md): 완비화한 체
 - [대수적 수체](algebraic-number-fields.md) → [유체론](class-field-theory.md): 이후는 정수론 개관
 - [미분 Galois 이론](differential-galois-theory.md): 선형 미분방정식의 가해성을 선형 대수군으로 판정
+- [에탈 기본군](etale-fundamental-group.md): 유한 에탈 덮개를 분류하는 유한위상군, 한 점에서는 절대 Galois 군이고 복소다양체에서는 기본군의 완비화
 
 ## Lie 이론과 표현론
 

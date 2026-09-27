@@ -131,5 +131,6 @@ $Y$ 가 단순연결이면 조건이 자동으로 만족된다. 경로와 호모
 - [Lie 군](lie-groups.md)
 - [쌍곡 3 다양체](hyperbolic-3-manifolds.md)
 - [Riemann 곡면과 균일화 정리](riemann-surfaces.md)
+- [에탈 기본군](etale-fundamental-group.md)
 
 #algebraic_topology #topology #group_theory

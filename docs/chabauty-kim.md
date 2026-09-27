@@ -20,7 +20,7 @@
 
 ## 단일값 기본군
 
-$X$ 가 $\mathbb Q$ 위의 매끄러운 곡선이고 $b\in X(\mathbb Q)$ 다. [기본군](fundamental-group.md)의 에탈 판을 $\mathbb Q_p$ 계수로 단일값화한 군 $U=\pi_1^{\mathrm{un}}(X\_{\bar{\mathbb Q}},b)$ 는 $G\_{\mathbb Q}=\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)$ 의 작용을 받는다. 하강 중심열 $U=U^{(1)}\supset U^{(2)}\supset\cdots$ 의 몫 $U_n=U/U^{(n+1)}$ 을 **깊이 $n$ 의 몫**이라 한다. $U_1$ 은 Jacobi 다양체의 $p$ 진 Tate 가군 $V_pJ$ 다.
+$X$ 가 $\mathbb Q$ 위의 매끄러운 곡선이고 $b\in X(\mathbb Q)$ 다. [기본군](fundamental-group.md)의 [에탈 판](etale-fundamental-group.md)을 $\mathbb Q_p$ 계수로 단일값화한 군 $U=\pi_1^{\mathrm{un}}(X\_{\bar{\mathbb Q}},b)$ 는 $G\_{\mathbb Q}=\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)$ 의 작용을 받는다. 하강 중심열 $U=U^{(1)}\supset U^{(2)}\supset\cdots$ 의 몫 $U_n=U/U^{(n+1)}$ 을 **깊이 $n$ 의 몫**이라 한다. $U_1$ 은 Jacobi 다양체의 $p$ 진 Tate 가군 $V_pJ$ 다.
 
 ## Selmer 다양체
 
@@ -88,6 +88,7 @@ $1$ 형식의 기저와 Frobenius 행렬을 [Kedlaya 알고리즘](kedlaya-algor
 ## 선수지식
 
 - [Selmer 군과 Tate–Shafarevich 군](selmer-tate-shafarevich.md)
+- [에탈 기본군](etale-fundamental-group.md)
 - [p 진 높이](p-adic-height.md)
 
 ## 더 알아보기
