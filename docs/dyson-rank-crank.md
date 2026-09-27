@@ -54,7 +54,7 @@ $$
 \sum_{\lambda}z^{\mathrm{rank}(\lambda)}q^{|\lambda|}=\sum_{n\ge0}\frac{q^{n^2}}{(zq;q)\_n(z^{-1}q;q)\_n}
 $$
 
-이고 $z$ 가 $1$ 의 거듭제곱근이면 Ramanujan 의 mock theta 함수가 된다. 두 통계량의 차이가 모듈러와 mock 의 차이다. crank 의 정의가 복잡해 보이는 것은 무한곱을 조합적으로 읽어낸 결과이기 때문이다.
+이고 $z$ 가 $1$ 의 거듭제곱근이면 Ramanujan 의 mock theta 함수가 된다. 두 통계량의 차이가 모듈러와 mock 의 차이다. crank 의 정의는 무한곱을 조합적으로 읽어낸 결과다.
 
 ## rank 와 crank 의 비교
 
