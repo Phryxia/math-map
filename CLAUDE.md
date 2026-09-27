@@ -341,7 +341,9 @@ GitHub 은 마크다운을 먼저 파싱하고, 그 결과로 남은 문자열�
 
 ## 4.5. 분야 개관
 
-분야마다 대시보드 문서를 하나 둔다. id 는 `<분야>-overview`, 제목은 "<분야> 개관" 이다. 지금 있는 것은 `abstract-algebra-overview`, `combinatorics-overview`, `foundations-overview`, `linear-algebra-overview`, `number-theory-overview`, `topology-overview` 다. 문서가 10개 이상인 분야 태그(해석학, 확률론, 계산, 미분기하, 복소해석, 그래프 이론, 범주론, 측도론, 최적화 등)에 개관이 없으면 만드는 것이 새 주제보다 우선이다.
+분야마다 대시보드 문서를 하나 둔다. id 는 `<분야>-overview`, 제목은 "<분야> 개관" 이다. 지금 21 개가 있고 목록은 README 의 "지도의 갈래" 절이다.
+
+분야 태그마다 그 태그를 주 분야로 하는 문서를 거두는 개관이 하나 있어야 한다. 한 개관이 여러 태그를 거두어도 된다. 하위 태그마다 개관을 세우면 두 개관이 같은 문서를 거두려 하고 README 의 갈래 목록이 분야가 아니라 태그의 나열이 된다. 개관이 8절의 1000줄 기준에 닿으면 그때 나눈다. 거두는 개관이 없는 태그가 생기면 개관을 만드는 것이 새 주제보다 우선이고, 아래 매핑에 그 태그를 더하는 것도 같은 작업에 든다.
 
 개관의 구조는 4절과 다르다.
 
@@ -363,9 +365,14 @@ GitHub 은 마크다운을 먼저 파싱하고, 그 결과로 남은 문자열�
 
 - 개관에 `# 빈자리` 절을 두지 않는다. 갈래에 있어야 하는데 없는 문서는 큐 항목이다(0절). 갈래에는 실제로 있는 문서만 적는다.
 - 개관에서 진입 문서로 가는 간선은 선수관계가 아니라 포함관계다. 개관을 읽지 않아도 진입 문서를 이해할 수 있지만, 개관이 그 문서를 갈래로 거느린다는 뜻으로 긋는다. 진입 문서의 선수지식에 개관을 적을 때 부모가 4개를 넘지 않게 한다.
-- 갈래에는 그 분야를 주 분야로 하는 문서, 곧 태그 줄의 첫 태그가 그 분야인 문서를 빠짐없이 넣는다. 다른 분야가 주인 문서는 관련이 깊을 때만 넣는다. 새 문서를 만들면 그 분야 개관의 갈래에 한 줄을 더한다. 빠진 문서는 다음으로 찾는다.
+- 갈래에는 그 분야를 주 분야로 하는 문서, 곧 태그 줄의 첫 태그가 그 분야인 문서를 빠짐없이 넣는다. 다른 분야가 주인 문서는 관련이 깊을 때만 넣는다. 새 문서를 만들면 그 분야 개관의 갈래에 한 줄을 더한다. 태그마다 어느 개관이 거두는지는 아래 매핑이 정한다. 빠진 문서와 매핑에 없는 태그를 한 번에 찾는다. 아무것도 내놓지 않아야 한다.
   ```bash
-  for f in docs/*.md; do id=$(basename $f .md); [ "$(tail -1 $f | grep -o '#[a-z0-9_]*' | head -1)" = "#number_theory" ] && ! grep -q "($id.md)" docs/number-theory-overview.md && echo $id; done
+  declare -A M=( [number_theory]=number-theory [analysis]=analysis [algebra]=abstract-algebra [group_theory]=abstract-algebra [field_theory]=abstract-algebra [ring_theory]=abstract-algebra [computation]=computation [algorithms]=computation [complexity]=computation [data_structures]=computation [probability]=probability [topology]=topology [algebraic_topology]=topology [combinatorics]=combinatorics [logic]=foundations [set_theory]=foundations [foundations]=foundations [philosophy_of_math]=foundations [linear_algebra]=linear-algebra [complex_analysis]=complex-analysis [graph_theory]=graph-theory [optimization]=optimization [measure_theory]=measure-theory [differential_geometry]=differential-geometry [statistics]=statistics [category_theory]=category-theory [machine_learning]=machine-learning [functional_analysis]=functional-analysis [cryptography]=cryptography [order_theory]=order-theory [information_theory]=information-theory )
+  for f in docs/*.md; do id=$(basename $f .md); case $id in *-overview) continue;; esac
+    t=$(tail -1 $f | grep -o '#[a-z0-9_]*' | head -1 | tr -d '#'); ov=${M[$t]}
+    [ -z "$ov" ] && { echo "매핑없음 $id ($t)"; continue; }
+    grep -q "($id.md)" docs/$ov-overview.md || echo "미수록 $id -> $ov-overview"
+  done
   ```
 - 지도의 mermaid 는 실제 간선의 부분그래프여야 한다. 문서를 보강하다 간선을 바꿨으면 개관의 지도도 맞춘다.
 - 개관은 README 의 "지도의 갈래" 절에 id 순으로 나열한다. 규칙은 7절.
