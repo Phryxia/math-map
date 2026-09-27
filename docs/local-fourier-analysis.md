@@ -52,7 +52,7 @@ $$\mu=\sup\lbrace\vert\tilde S_h(\theta)\vert:\theta\in\Theta\ \text{고주파}\
 
 ## 적흑 Gauss–Seidel
 
-격자를 두 색으로 나누어 색마다 한 번씩 훑는 Gauss–Seidel 은 기호가 스칼라가 아니라 $2\times 2$ 행렬이다. 두 색의 모드가 $\theta$ 와 앨리어싱 짝 사이에서 섞이기 때문이다. 2 차원 Laplace 연산자에서 이 행렬의 스펙트럼 반지름으로 잰 평활률은 $1/4$ 다[^1].
+격자를 두 색으로 나누어 색마다 한 번씩 훑는 Gauss–Seidel 은 두 색의 모드가 $\theta$ 와 앨리어싱 짝 사이에서 섞이므로 기호가 스칼라가 아니라 $2\times 2$ 행렬이다. 2 차원 Laplace 연산자에서 이 행렬의 스펙트럼 반지름으로 잰 평활률은 $1/4$ 다[^1].
 
 ## 두 격자 해석
 

@@ -14,7 +14,7 @@ $$
 
 [Siegel–Weil 공식](siegel-weil.md)은 류 평균 $\sum_i r_{Q_i}(n)/|\mathrm{Aut}Q_i|$ 를 국소 밀도의 곱으로 주는데, 그 분모의 정규화 인자가 질량이다. 질량 공식은 Siegel 공식의 $n=0$ 자리, 곧 표현수를 묻기 전에 나눠야 하는 상수다.
 
-값이 [Bernoulli 수](bernoulli-numbers.md)로 나오는 것은 국소 인자의 곱이 $\zeta(2),\zeta(4),\dots$ 의 곱으로 모이고 짝수 자리의 zeta 값이 Bernoulli 수이기 때문이다.
+국소 인자의 곱이 $\zeta(2),\zeta(4),\dots$ 의 곱으로 모이고 짝수 자리의 zeta 값이 [Bernoulli 수](bernoulli-numbers.md)이므로 값도 Bernoulli 수로 나온다.
 
 # 직관
 

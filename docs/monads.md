@@ -70,7 +70,7 @@ $$
 a\circ\eta_A=\mathrm{id}\_A,\qquad a\circ\mu_A=a\circ T(a)
 $$
 
-형식적으로 쌓아 둔 것을 실제로 계산해 내는 방법이 대수이고, 두 조건은 그 계산이 $\eta$ 와 $\mu$ 에 모순되지 않는다는 뜻이다. $T$ 가 자유 monoid monad 인 `List` 이면 $T$ 대수는 monoid 다. 리스트를 하나의 값으로 접는 방법이 결합적 곱과 항등원이기 때문이다. $T$ 대수와 그 사이의 사상들이 이루는 범주가 Eilenberg–Moore 범주 $\mathcal C^T$ 다.
+형식적으로 쌓아 둔 것을 실제로 계산해 내는 방법이 대수이고, 두 조건은 그 계산이 $\eta$ 와 $\mu$ 에 모순되지 않는다는 뜻이다. $T$ 가 자유 monoid monad 인 `List` 이면 리스트를 하나의 값으로 접는 방법이 결합적 곱과 항등원이므로 $T$ 대수는 monoid 다. $T$ 대수와 그 사이의 사상들이 이루는 범주가 Eilenberg–Moore 범주 $\mathcal C^T$ 다.
 
 # 성질
 

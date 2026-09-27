@@ -62,7 +62,7 @@ $c(n,r)$ 은 판별식 $D=4nm-r^2$ 과 나머지 $r\bmod 2m$ 에만 의존한다
 
 $$c(n,r)=c(n+\lambda r+\lambda^2m,\thinspace r+2\lambda m)$$
 
-이 모든 $\lambda\in\mathbb Z$ 에서 성립한다. 이 치환은 $r$ 을 $2m$ 으로 나눈 나머지를 바꾸지 않고, 판별식도 바꾸지 않는다. $4(n+\lambda r+\lambda^2m)m-(r+2\lambda m)^2=4nm-r^2$ 이기 때문이다. 거꾸로 $D$ 와 $r\bmod 2m$ 이 같은 두 쌍 $(n,r)$, $(n',r')$ 은 어떤 $\lambda$ 로 옮겨진다.
+이 모든 $\lambda\in\mathbb Z$ 에서 성립한다. 이 치환은 $r$ 을 $2m$ 으로 나눈 나머지를 바꾸지 않고, $4(n+\lambda r+\lambda^2m)m-(r+2\lambda m)^2=4nm-r^2$ 이므로 판별식도 바꾸지 않는다. 거꾸로 $D$ 와 $r\bmod 2m$ 이 같은 두 쌍 $(n,r)$, $(n',r')$ 은 어떤 $\lambda$ 로 옮겨진다.
 
 ## theta 분해
 

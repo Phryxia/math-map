@@ -88,7 +88,7 @@ $$
 \texttt{path}(v, w) : \ \texttt{evert}(v) \ \text{후} \ \texttt{access}(w) \ \text{하면 뿌리의 결합값이 답}.
 $$
 
-`evert(v)`는 `access(v)` 뒤 splay 트리 전체에 뒤집기 표시(lazy reversal)를 달아 구현한다. 깊이 순서가 거꾸로 되는 것이 곧 뿌리 교체이기 때문이다.
+깊이 순서가 거꾸로 되는 것이 곧 뿌리 교체이므로, `evert(v)`는 `access(v)` 뒤 splay 트리 전체에 뒤집기 표시(lazy reversal)를 달아 구현한다.
 
 # 성질
 
