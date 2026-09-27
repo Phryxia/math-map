@@ -336,7 +336,7 @@ Fontaine–Wintenberger 의 노름체 대응은 $p$ 진 탑을 충분히 올라�
 
 ## 더 알아보기
 
-- [Sen 이론과 Hodge–Tate 무게](sen-theory.md)
+- [Sen 이론](sen-theory.md)
 - [Fontaine–Mazur 추측](fontaine-mazur.md)
 - [Fargues–Scholze 기하화와 국소 Langlands](fargues-scholze.md)
 

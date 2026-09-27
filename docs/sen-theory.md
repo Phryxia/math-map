@@ -1,4 +1,4 @@
-# Sen 이론과 Hodge–Tate 무게
+# Sen 이론
 
 # 개요
 

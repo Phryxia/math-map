@@ -1,4 +1,4 @@
-# Mock 모듈러 형식과 Zwegers 이론
+# Mock 모듈러 형식
 
 # 개요
 

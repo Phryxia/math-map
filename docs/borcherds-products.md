@@ -130,7 +130,7 @@ Heegner 인자들의 산술적 교차수가 [Eisenstein 급수](eisenstein-serie
 ## 선수지식
 
 - [Weil 표현과 theta 대응](weil-representation.md)
-- [Mock 모듈러 형식과 Zwegers 이론](mock-modular-forms.md)
+- [Mock 모듈러 형식](mock-modular-forms.md)
 
 ## 더 알아보기
 
