@@ -148,7 +148,7 @@ Stickelberger 는 $I_m$ 이 류군을 죽인다고만 말하므로 $\char35{}\ma
 ## Stickelberger 원소의 유사물
 
 - **Brumer–Stark 추측.** 임의의 아벨 확대 $L/K$ 에 대해 $\theta$ 의 유사물이 류군을 소멸시키고, 그 소멸을 실현하는 원소가 명시적 조건을 만족한다는 예측이다. 총실체 위에서는 Dasgupta–Kakde 가 증명했다.
-- **Gross–Koblitz 공식.** Stickelberger 합동의 $\pi$ 진 정밀판으로, Gauss 합을 Morita 의 $p$ 진 감마함수 값의 곱으로 표현해 합동을 등식으로 올린다.
+- **Gross–Koblitz 공식.** Stickelberger 합동의 $\pi$ 진 정밀판으로, Gauss 합을 Morita 의 $p$ 진 감마 함수 값의 곱으로 표현해 합동을 등식으로 올린다.
 - **Rubin–Stark 원소.** 고차 소실 차수에서의 유사물이다. 존재하면 Euler 계가 되지만 아직 추측이다.
 
 # 활용
