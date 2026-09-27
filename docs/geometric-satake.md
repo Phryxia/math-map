@@ -227,7 +227,7 @@ $$
 
 ## 더 알아보기
 
-- [MV 순환과 무게 기저의 기하](mv-cycles.md)
+- [MV 순환](mv-cycles.md)
 - [기하학적 Langlands 강령](geometric-langlands.md)
 
 #number_theory #category_theory #algebraic_topology #group_theory

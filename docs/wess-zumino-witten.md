@@ -1,4 +1,4 @@
-# Wess–Zumino–Witten 모형과 벌크–경계 대응
+# Wess–Zumino–Witten 모형
 
 # 개요
 

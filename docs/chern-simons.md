@@ -183,7 +183,7 @@ Hopf 링크에서 값이 $\pm1$ , 풀린 두 원에서 $0$ , 원환면 위를 �
 ## 더 알아보기
 
 - [Witten 점근 추측과 Ohtsuki 급수](witten-asymptotics.md)
-- [Wess–Zumino–Witten 모형과 벌크–경계 대응](wess-zumino-witten.md)
+- [Wess–Zumino–Witten 모형](wess-zumino-witten.md)
 - [Casson 불변량](casson-invariant.md)
 
 #differential_geometry #algebraic_topology #topology
