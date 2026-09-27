@@ -63,7 +63,7 @@ $$
 F_2(s) = \det\left(I - K_{\mathrm{Ai}}\right)\_{L^2(s,\infty)}
 $$
 
-다. Fredholm 행렬식은 핵의 자취들로 만든 급수 $\exp\bigl(-\sum_{k\ge1}\tfrac1k\mathrm{tr}K^k\bigr)$ 로 정의된다.
+다. Fredholm 행렬식은 핵의 대각합들로 만든 급수 $\exp\bigl(-\sum_{k\ge1}\tfrac1k\mathrm{tr}K^k\bigr)$ 로 정의된다.
 
 ## Painlevé II 표현
 

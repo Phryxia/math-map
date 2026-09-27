@@ -32,7 +32,7 @@ $$
 
 ## 함수–층 사전
 
-[유한체](finite-fields.md) 위의 다양체에서 함수와 [층](sheaves.md)은 서로 오간다. $\ell$ 진 층 $\mathcal F$ 가 있으면 각 유리점에서 Frobenius 자취를 재어 함수를 얻는다.
+[유한체](finite-fields.md) 위의 다양체에서 함수와 [층](sheaves.md)은 서로 오간다. $\ell$ 진 층 $\mathcal F$ 가 있으면 각 유리점에서 Frobenius 대각합을 재어 함수를 얻는다.
 
 $$
 f_{\mathcal F}(x)=\mathrm{tr}\bigl(\mathrm{Frob}\_x,\mathcal F_{\bar x}\bigr)
@@ -169,7 +169,7 @@ $$
 
 ## 고전적 Satake 의 회복
 
-유한체 $\mathbb F_q$ 위에서 함수-층 사전을 적용하면 $\mathcal{IC}\_\lambda$ 의 Frobenius 자취 함수가 나온다. 그것이 $\mathcal H(G,K)$ 의 원소이고, 그 Satake 상이 기약지표 $\chi_\lambda$ 다.
+유한체 $\mathbb F_q$ 위에서 함수-층 사전을 적용하면 $\mathcal{IC}\_\lambda$ 의 Frobenius 대각합 함수가 나온다. 그것이 $\mathcal H(G,K)$ 의 원소이고, 그 Satake 상이 기약지표 $\chi_\lambda$ 다.
 
 고전적 Satake 동형에서 $1_{K t^\lambda K}$ 의 상은 $\chi_\lambda$ 가 아니라 낮은 항이 $q^{-1}$ 배로 섞인 꼴이다. $1_{Kt^\lambda K}$ 가 궤도 $\mathrm{Gr}^\lambda$ 의 상수층에, $\chi_\lambda$ 가 폐포의 $\mathcal{IC}$ 층에 대응하고, 둘의 차이가 교차 코호몰로지 줄기의 차원인 [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)이다.
 

@@ -72,7 +72,7 @@ $$
 \det\bar\rho(\mathrm{Frob}\_\ell)\equiv \varepsilon(\ell)\ell^{k-1}\pmod\lambda
 $$
 
-가 성립하는 것이다. [Chebotarev 밀도 정리](chebotarev.md)가 거의 모든 $\ell$ 에서의 자취 일치로 표현이 결정됨을 보장한다.
+가 성립하는 것이다. [Chebotarev 밀도 정리](chebotarev.md)가 거의 모든 $\ell$ 에서의 대각합 일치로 표현이 결정됨을 보장한다.
 
 ## 추측의 두 형태
 
@@ -116,7 +116,7 @@ Khare–Wintenberger 의 증명은 세 부품을 귀납으로 엮는다.
 - **Fermat 의 마지막 정리.** Frey 곡선의 mod $p$ 표현이 레벨 $2$ 무게 $2$ 에서 모듈러여야 하는데 그 공간이 $0$ 이다. Serre 추측의 강한 형태만으로 모순이 나온다. 역사적으로는 Ribet 의 레벨 낮추기와 Wiles 의 모듈러성 정리로 따로 증명되었지만, 더 짧은 논리적 경로는 Serre 추측을 거친다.
 - **홀수 2 차원 Artin 추측.** 상이 유한한 홀수 기약 표현 $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\mathbb C)$ 의 Artin $L$ 함수가 정칙이라는 주장. Serre 추측에서 $k(\bar\rho)=1$ 인 경우에 해당하고, 무게 $1$ 형식에서 모듈러성이 나오면 정칙성이 따라온다. 이 방향이 Khare–Wintenberger 이후 정리가 되었다.
 - **[Fontaine–Mazur 추측](fontaine-mazur.md)의 입력.** $\mathrm{GL}\_2$ 경우를 증명하는 Kisin–Emerton 논법은 잔여표현이 모듈러라는 가정에서 출발한다. Serre 추측이 그 가정을 불필요하게 만든다.
-- **계산 가능한 판정.** $\bar\rho$ 를 주면 $(k,N)$ 을 계산하고 유한 차원 공간에서 자취를 맞춰 보면 된다. [모듈러 기호](modular-symbols.md)로 그 공간을 다루므로 절차 전체가 컴퓨터에서 돈다.
+- **계산 가능한 판정.** $\bar\rho$ 를 주면 $(k,N)$ 을 계산하고 유한 차원 공간에서 대각합을 맞춰 보면 된다. [모듈러 기호](modular-symbols.md)로 그 공간을 다루므로 절차 전체가 컴퓨터에서 돈다.
 
 ## 수체와 일반 군
 
@@ -128,7 +128,7 @@ Khare–Wintenberger 의 증명은 세 부품을 귀납으로 엮는다.
 
 ## 모듈러성 판정
 
-- **모듈러성 판정.** [타원곡선](elliptic-curves.md)이나 아벨 다양체에서 나온 $\bar\rho$ 를 만나면 $(k,N)$ 을 계산하고 해당 공간의 고유형식과 자취를 맞춘다. Frey 곡선 논법의 실전 형태다.
+- **모듈러성 판정.** [타원곡선](elliptic-curves.md)이나 아벨 다양체에서 나온 $\bar\rho$ 를 만나면 $(k,N)$ 을 계산하고 해당 공간의 고유형식과 대각합을 맞춘다. Frey 곡선 논법의 실전 형태다.
 - **합동의 원천.** $\tau$ 의 합동처럼 계수 사이의 합동은 대개 mod $p$ 표현의 상이 작아진 흔적이다. 어떤 합동이 가능한지는 상이 될 수 있는 부분군의 분류로 결정된다.
 - **$p$ 진 Langlands 의 잔여 입력.** 모듈러성 올림 정리는 언제나 잔여표현의 모듈러성을 가정에 둔다. Serre 추측이 $\mathrm{GL}\_2/\mathbb Q$ 에서 그 가정을 제거해 주었고, 그 덕에 [Fontaine–Mazur 추측](fontaine-mazur.md)의 $\mathrm{GL}\_2$ 경우가 조건 없는 정리가 되었다.
 
