@@ -72,7 +72,7 @@ $\rho=\beta+i\gamma$ 이면 $\lvert x^\rho\rvert=x^\beta$ 이므로 $\beta$ 가 
 
 ## 증명의 핵심 단계
 
-소수 정리는 $\mathrm{Re}\thinspace s=1$ 위에 $\zeta$ 의 영점이 없다는 것과 동치다. $\zeta(1+it)\ne0$ 은 [Riemann zeta 함수](riemann-zeta.md)의 성질이고, 남는 일은 이것을 $\psi(x)\sim x$ 로 옮기는 것이다.
+소수 정리는 $\mathrm{Re}\thinspace s=1$ 위에 $\zeta$ 의 영점이 없다는 것과 동치다. $\zeta(1+it)\ne0$ 은 Riemann zeta 함수의 성질이고, 남는 일은 이것을 $\psi(x)\sim x$ 로 옮기는 것이다.
 
 명시 공식의 영점 합은 절대수렴하지 않으므로 유한한 높이 $T$ 에서 자르고 꼬리를 따로 추정한다. 잘린 공식은 $\psi(x)=x+O(x(\ln x)^2/T)+O(\sum_{\lvert\gamma\rvert\le T}x^\beta/\lvert\rho\rvert)$ 꼴이고, 무영점 영역이 $\beta$ 를 $1$ 에서 떼어 놓아 둘째 항을 $x$ 보다 작게 만든다. Hadamard 와 de la Vallée Poussin 이 1896 년에 독립적으로 이 길을 완성했다.
 

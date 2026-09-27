@@ -155,7 +155,7 @@ $G$ 의 정점 집합 $S$ 가 클릭인 것과, 여그래프 $G'$ (같은 정점
 - **다른 환원.** Karp 환원 대신 Turing 환원(신탁 질의를 여러 번 허용)을 쓰면 NP-hard의 범위가 넓어진다. 최적화 문제와 판정 문제를 함께 다룰 때 편하다.
 - **완전성의 일반화.** 각 복잡도 부류마다 완전 문제가 있다. $\mathrm{PSPACE}$ 에는 양화된 불식(quantified Boolean formula, QBF), $\mathrm{coNP}$ 에는 tautology 판정, $\char35{}\mathrm P$ 에는 영구식(permanent) 계산이 대응한다.
 - **Ladner 정리.** $\mathrm P\ne\mathrm{NP}$ 이면 NP-완전도 $\mathrm P$ 도 아닌 문제가 존재한다. 대각선 논법을 다항시간 틀에서 수행한 결과다.
-- **상대화 장벽.** Cook–Levin의 증명은 신탁 기계에도 그대로 상대화되므로, 이런 종류의 논증만으로는 $\mathrm P$ 와 $\mathrm{NP}$ 를 분리할 수 없다(Baker–Gill–Solovay). [P 대 NP 문제](p-np.md)에 대해 알려진 첫 번째 장벽 결과다.
+- **상대화 장벽.** Cook–Levin의 증명은 신탁 기계에도 그대로 상대화되므로, 이런 종류의 논증만으로는 $\mathrm P$ 와 $\mathrm{NP}$ 를 분리할 수 없다(Baker–Gill–Solovay). P 대 NP 문제에 대해 알려진 첫 번째 장벽 결과다.
 
 [^1]: S. A. Cook, The Complexity of Theorem-Proving Procedures, STOC 1971, https://dl.acm.org/doi/10.1145/800157.805047
 [^2]: R. M. Karp, Reducibility Among Combinatorial Problems, 1972, https://cs.brown.edu/people/jsavage/book/pdfs/Karp1972.pdf

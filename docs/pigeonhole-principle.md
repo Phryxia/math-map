@@ -114,7 +114,7 @@ $1$ 부터 $2n$ 까지에서 $n+1$ 개를 뽑으면 하나가 다른 하나를 �
 
 ## Ramsey 이론 일반화
 
-상자를 색으로, 비둘기를 그래프의 간선으로 바꾸면 $R(3,3)\le 6$ 의 증명이 나온다. [Ramsey 이론](ramsey-theory.md)은 비둘기집 원리를 조직적으로 일반화한 분야다. 평균 논증을 확률로 바꾸면 확률적 방법이 되어, 셈만으로는 닿지 않는 하한을 얻는다.
+상자를 색으로, 비둘기를 그래프의 간선으로 바꾸면 $R(3,3)\le 6$ 의 증명이 나온다. Ramsey 이론은 비둘기집 원리를 조직적으로 일반화한 분야다. 평균 논증을 확률로 바꾸면 확률적 방법이 되어, 셈만으로는 닿지 않는 하한을 얻는다.
 
 [^1]: P. Erdős and G. Szekeres, "A combinatorial problem in geometry", Compositio Mathematica 2 (1935), 463–470. 진술과 비둘기집 증명 정리: https://en.wikipedia.org/wiki/Erd%C5%91s%E2%80%93Szekeres_theorem
 [^2]: Dirichlet's approximation theorem (1842), 진술과 증명: https://en.wikipedia.org/wiki/Dirichlet%27s_approximation_theorem

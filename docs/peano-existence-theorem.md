@@ -65,7 +65,7 @@ $\mathbb R^n$ 을 일반적인 Banach 공간으로 바꾸면 정리가 거짓이
 # 활용
 
 - 벡터장이 연속이기만 한 제어 문제와 미분포함(differential inclusion)에서 궤적의 존재를 이 정리로 얻는다. Lipschitz 조건은 되먹임이 불연속이면 깨진다.
-- [상미분방정식](ordinary-differential-equations.md)의 수치해석에서 Euler 법의 수렴 증명이 이 정리의 증명과 같은 구조다. 꺾은선 열의 동등연속성과 Arzelà–Ascoli 정리를 쓴다.
+- 상미분방정식의 수치해석에서 Euler 법의 수렴 증명이 이 정리의 증명과 같은 구조다. 꺾은선 열의 동등연속성과 Arzelà–Ascoli 정리를 쓴다.
 - 편미분방정식의 약해를 구성할 때 근사해 열의 콤팩트성에서 극한을 꺼내는 논법이 같은 형태로 반복된다.
 
 [^1]: Philip Hartman, *Ordinary Differential Equations*, 2nd ed., Chapter II §2. Peano 의 존재정리와 Euler 꺾은선을 쓰는 증명.

@@ -140,7 +140,7 @@ $$
 
 ## 논리의 대수
 
-명제를 함의로 순서지으면 이접이 이음, 합취가 만남이다. 고전 명제논리의 Lindenbaum–Tarski 대수가 Boolean algebra 이고, 직관주의 명제논리의 것이 [Heyting algebra](heyting-algebras.md)다. 두 구조 모두 분배격자이며, 차이는 보원을 요구하는지에 있다.
+명제를 함의로 순서지으면 이접이 이음, 합취가 만남이다. 고전 명제논리의 Lindenbaum–Tarski 대수가 Boolean algebra 이고, 직관주의 명제논리의 것이 Heyting algebra 다. 두 구조 모두 분배격자이며, 차이는 보원을 요구하는지에 있다.
 
 ## 정적 분석의 추상 영역
 
@@ -148,7 +148,7 @@ $$
 
 ## 형식 개념 분석
 
-객체와 속성의 표에서 닫힌 쌍들이 이루는 개념 격자는 [Galois 연결](galois-connections.md)의 고정점으로 얻어지며 완비 격자다.
+객체와 속성의 표에서 닫힌 쌍들이 이루는 개념 격자는 Galois 연결의 고정점으로 얻어지며 완비 격자다.
 
 [^1]: G. Birkhoff, *Lattice Theory*, 3rd ed., American Mathematical Society, 1967. 유한 분배격자의 표현 정리.
 

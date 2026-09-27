@@ -112,7 +112,7 @@ $x$ 가 큰 곳에서 Airy 점근으로 초깃값을 잡고 음의 방향으로 
 
 ## 분포함수
 
-[Tracy–Widom 분포](tracy-widom.md)는 Hastings–McLeod 해 $q$ 로
+Tracy–Widom 분포는 Hastings–McLeod 해 $q$ 로
 
 $$
 F_2(s) = \exp\left(-\int_s^\infty (x-s)\thinspace q(x)^2\thinspace dx\right)

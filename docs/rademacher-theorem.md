@@ -88,7 +88,7 @@ $$
 
 # 활용
 
-- [Lipschitz 사상](lipschitz-maps.md)의 집합 $\mathrm{Lip}(U)$ 와 Sobolev 공간 $W^{1,\infty}(U)$ 를 동일시한다. Rademacher 정리가 주는 $\nabla f$ 가 약한 도함수와 같고, 그 $L^\infty$ 노름이 Lipschitz 상수다.
+- Lipschitz 사상의 집합 $\mathrm{Lip}(U)$ 와 Sobolev 공간 $W^{1,\infty}(U)$ 를 동일시한다. Rademacher 정리가 주는 $\nabla f$ 가 약한 도함수와 같고, 그 $L^\infty$ 노름이 Lipschitz 상수다.
 - 기하측도론에서 면적공식과 여면적공식의 가정이 Lipschitz 사상이다. 두 공식 모두 적분 안에 Jacobi 행렬식을 두므로 거의 어디서나의 미분가능성이 먼저 있어야 한다.
 - 비평활 최적화에서 Clarke 준미분은 미분가능한 점들에서의 경사의 극한들이 이루는 볼록껍질로 정의된다. 그런 점이 거의 어디서나 있다는 것이 이 정의가 비어 있지 않은 근거다.
 - 거리공간 사이의 Lipschitz 사상을 다루는 Kirchheim 의 미분정리와 Cheeger 의 미분가능성 이론이 이 정리를 정의역이 $\mathbb R^n$ 이 아닌 곳으로 넓힌 것이다.

@@ -70,7 +70,7 @@ $$
 \min_{\dim W=k}\ \frac{1}{n}\sum_{i=1}^{n}\lVert z_i-P_Wz_i\rVert^2
 $$
 
-직관 절의 피타고라스 등식을 모든 표본에 대해 더하면 두 문제가 같아진다. 행렬 언어로는 [Eckart–Young–Mirsky 정리](singular-value-decomposition.md)가 같은 내용을 저계수 근사의 최적성으로 진술한다. 남은 오차는 버린 고윳값의 합이다.
+직관 절의 피타고라스 등식을 모든 표본에 대해 더하면 두 문제가 같아진다. 행렬 언어로는 Eckart–Young–Mirsky 정리가 같은 내용을 저계수 근사의 최적성으로 진술한다. 남은 오차는 버린 고윳값의 합이다.
 
 $$
 \frac{1}{n-1}\min_{\mathrm{rank}B\le k}\lVert Z-B\rVert_F^2=\lambda_{k+1}+\cdots+\lambda_p

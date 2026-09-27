@@ -138,7 +138,7 @@ $$
 \text{Ш}^{2}(K,M)\ \cong\ \text{Ш}^{1}(K,M^{\ast})^{\vee}
 $$
 
-가 나온다. $E[p]$ 에 적용하면 [Selmer 군](selmer-tate-shafarevich.md)의 $\text{Ш}(E/K)$ 가 자기쌍대이고 그 위수가 제곱수임이 따라온다.
+가 나온다. $E[p]$ 에 적용하면 Selmer 군의 $\text{Ш}(E/K)$ 가 자기쌍대이고 그 위수가 제곱수임이 따라온다.
 
 ## Selmer 구조와 쌍대 구조
 
@@ -253,11 +253,11 @@ $$
 
 ## Euler 계 논법의 요지
 
-[Euler 계](euler-systems.md)는 상호법칙의 합에서 한 항만 남게 대역류를 설계한다. 유도류 $\kappa_n$ 이 $n$ 밖에서 Selmer 조건을 만족하면 그 자리들에서 짝이 0 이고, 남은 $\ell$ 자리의 짝도 0 이라는 결론이 $\mathrm{loc}\_\ell(s)=0$ 을 강제한다.
+Euler 계는 상호법칙의 합에서 한 항만 남게 대역류를 설계한다. 유도류 $\kappa_n$ 이 $n$ 밖에서 Selmer 조건을 만족하면 그 자리들에서 짝이 0 이고, 남은 $\ell$ 자리의 짝도 0 이라는 결론이 $\mathrm{loc}\_\ell(s)=0$ 을 강제한다.
 
 ## Hasse 원리의 장애
 
-$\text{Ш}^{2}(K,M)\cong \text{Ш}^{1}(K,M^{\ast})^{\vee}$ 는 국소적으로 자명한 2 차 류의 개수를 1 차 쪽 계산으로 옮긴다. 매몰 문제의 국소-대역 원리와 [Brauer 군](brauer-groups.md)의 Hasse 원리 반례가 이 대응을 쓴다. $M^{\ast}$ 쪽이 다루기 쉬운 경우가 많아 장애의 존재가 유한 계산으로 바뀐다.
+$\text{Ш}^{2}(K,M)\cong \text{Ш}^{1}(K,M^{\ast})^{\vee}$ 는 국소적으로 자명한 2 차 류의 개수를 1 차 쪽 계산으로 옮긴다. 매몰 문제의 국소-대역 원리와 Brauer 군의 Hasse 원리 반례가 이 대응을 쓴다. $M^{\ast}$ 쪽이 다루기 쉬운 경우가 많아 장애의 존재가 유한 계산으로 바뀐다.
 
 [^1]: 표준 참고는 J. Neukirch, A. Schmidt, K. Wingberg, *Cohomology of Number Fields* (2판, Springer 2008) 8 장, 그리고 J. S. Milne, *Arithmetic Duality Theorems* (2판, 2006) I 장. Greenberg–Wiles 공식은 A. Wiles, *Modular elliptic curves and Fermat's Last Theorem*, Ann. of Math. **141** (1995) 의 명제 1.6 과 R. Greenberg 의 Iwasawa 이론 강의록에 있다. 읽기 쉬운 입문으로 B. Mazur, K. Rubin, *Kolyvagin Systems* (Memoirs AMS 168, 2004) 2 장을 권한다.
 
