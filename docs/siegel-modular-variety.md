@@ -66,7 +66,7 @@ $$\mathcal A_g^\ast=\mathcal A_g\sqcup\mathcal A_{g-1}\sqcup\cdots\sqcup\mathcal
 
 ## Torelli 사상
 
-종수 $g$ 의 콤팩트 [Riemann 곡면](riemann-surfaces.md)에 그 Jacobian 을 대응시키면 곡선의 모듈라이 공간에서 $\mathcal A_g$ 로 가는 사상 $t:\mathcal M_g\to\mathcal A_g$ 가 나온다. Torelli 정리는 $t$ 가 단사임을 말한다. 곧 주편극 Jacobian 이 곡선의 동형류를 결정한다.
+종수 $g$ 의 콤팩트 [Riemann 곡면](riemann-surfaces.md)에 그 Jacobian 을 대응시키면 곡선의 모듈라이 공간에서 $\mathcal A_g$ 로 가는 사상 $t:\mathcal M_g\to\mathcal A_g$ 가 나온다. Torelli 정리에 따르면 $t$ 는 단사다. 곧 주편극 Jacobian 이 곡선의 동형류를 결정한다.
 
 두 공간의 차원은 $g\ge 2$ 에서 $\dim\mathcal M_g=3g-3$ 과 $\dim\mathcal A_g=g(g+1)/2$ 다. $g=2,3$ 에서 두 수가 같고 $g\ge 4$ 에서 앞이 작으므로 $t$ 의 상이 진부분다양체다. 어떤 $\tau$ 가 Jacobian 에서 오는지를 방정식으로 가리는 것이 **Schottky 문제**이고, $g=4$ 에서는 theta 상수들의 다항식 하나가 그 상의 닫힘을 정의한다[^2].
 

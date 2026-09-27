@@ -35,7 +35,7 @@ $W^\circ$ 는 $\mathbb Z^n$ 위의 함수 하나다. $\psi_N$ 의 비퇴화성�
 | 변수 | Satake 매개변수 $\alpha_i$ | 쌍대 토러스의 좌표 |
 | 값 | $W^\circ(\varpi^\lambda)$ | 기약지표 $s_\lambda(\alpha)$ |
 
-$X_\ast(T)=X^\ast(\widehat T)$ 는 [Satake 동형](satake-isomorphism.md)이 쌍대군을 만들 때 쓴 동일시다. 두 집합이 같은 격자이므로 두 함수의 비교가 뜻을 갖고, 공식은 그 비교가 등식이라고 말한다.
+$X_\ast(T)=X^\ast(\widehat T)$ 는 [Satake 동형](satake-isomorphism.md)이 쌍대군을 만들 때 쓴 동일시다. 두 집합이 같은 격자이므로 두 함수의 비교가 뜻을 갖고, 공식은 그 비교를 등식으로 적는다.
 
 ## Hecke 작용과 Satake 변환
 

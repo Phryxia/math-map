@@ -6,7 +6,7 @@
 
 쌍곡 매듭에는 기하 불변량이 따로 있다. 여집합 $S^3\setminus K$ 가 완비 쌍곡 계량을 가지면 Mostow 강직성으로 그 계량이 유일하고, 부피 $\mathrm{Vol}(S^3\setminus K)$ 가 위상 불변량이 된다. 8 자매듭이면 $2.029883\ldots$ 이다.
 
-볼륨 추측은 두 양이 같다고 말한다.
+볼륨 추측은 두 양이 같다는 진술이다.
 
 $$
 \lim_{N\to\infty}\frac{2\pi\log\big|J_N(K;e^{2\pi i/N})\big|}{N}=\mathrm{Vol}(S^3\setminus K)

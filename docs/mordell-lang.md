@@ -18,7 +18,7 @@ Mordell–Lang 추측은 [아벨 다양체](abelian-varieties.md)의 부분다�
 
 $K$ 를 표수 $0$ 인 체, $A$ 를 $K$ 위의 아벨 다양체, $X\subseteq A$ 를 닫힌 부분다양체, $\Gamma\subseteq A(K)$ 를 유한생성 부분군이라 하자.
 
-**Mordell–Lang 추측**은 다음을 말한다. 아벨 부분다양체 $B_1,\dots,B_n\subseteq A$ 와 점 $\gamma_1,\dots,\gamma_n\in\Gamma$ 가 있어 각 $i$ 에서 $\gamma_i+B_i\subseteq X$ 이고 다음이 성립한다.
+**Mordell–Lang 추측**은 다음이다. 아벨 부분다양체 $B_1,\dots,B_n\subseteq A$ 와 점 $\gamma_1,\dots,\gamma_n\in\Gamma$ 가 있어 각 $i$ 에서 $\gamma_i+B_i\subseteq X$ 이고 다음이 성립한다.
 
 $$X\cap\Gamma=\bigcup_{i=1}^{n}\bigl(\gamma_i+(B_i\cap\Gamma)\bigr)$$
 
