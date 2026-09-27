@@ -83,7 +83,7 @@ $$
 \frac{1}{\hbar}\int_{a}^{b}\sqrt{2m\bigl(E - V(x)\bigr)}\thickspace dx \thickspace=\thickspace \pi\left(n + \frac12\right), \qquad n = 0, 1, 2, \dots
 $$
 
-작용이 $\hbar$ 의 반정수배라는 것이 WKB 의 보정이고, $1/2$ 은 회전점 두 개에서 각각 받은 $\pi/4$ 다. 조화진동자에서는 이 조건이 정확한 고윳값 $E_n=\hbar\omega(n+\tfrac12)$ 을 주는데, 그 WKB 급수가 최저 차수 이후 모두 0 이기 때문이다.
+작용이 $\hbar$ 의 반정수배라는 것이 WKB 의 보정이고, $1/2$ 은 회전점 두 개에서 각각 받은 $\pi/4$ 다. 조화진동자에서는 WKB 급수가 최저 차수 이후 모두 0 이므로 이 조건이 정확한 고윳값 $E_n=\hbar\omega(n+\tfrac12)$ 을 준다.
 
 ## Maslov 지표
 

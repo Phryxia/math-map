@@ -97,7 +97,7 @@ $$
 m_\lambda\ (\text{단항식}),\quad e_\lambda\ (\text{기본}),\quad h_\lambda\ (\text{완전 동차}),\quad p_\lambda\ (\text{거듭제곱합}),\quad s_\lambda
 $$
 
-이 중 $s_\lambda$ 가 특별한 것은 **내적에 대해 정규직교**이기 때문이다. Hall 내적 $\langle h_\lambda,m_\mu\rangle=\delta_{\lambda\mu}$ 로 정의하면
+이 가운데 $s_\lambda$ 는 **내적에 대해 정규직교**다. Hall 내적 $\langle h_\lambda,m_\mu\rangle=\delta_{\lambda\mu}$ 로 정의하면
 
 $$
 \langle s_\lambda,s_\mu\rangle=\delta_{\lambda\mu}
