@@ -16,11 +16,11 @@ Fredholm 은 1900 년에 유한차원 행렬식이 만족하는 급수 전개를
 
 # 직관
 
-## 자취류 조건
+## 대각합류 조건
 
-[대각화](eigenvalues.md) 가능한 유한차원 행렬에서 $\det(I - K) = \prod_i (1 - \lambda_i)$ 다. 무한차원에서 이 곱이 수렴하려면 $\sum_i|\lambda_i| \lt\infty$ 여야 한다. 이것이 **자취류**(trace class) 조건이다.
+[대각화](eigenvalues.md) 가능한 유한차원 행렬에서 $\det(I - K) = \prod_i (1 - \lambda_i)$ 다. 무한차원에서 이 곱이 수렴하려면 $\sum_i|\lambda_i| \lt\infty$ 여야 한다. 이것이 **대각합류**(trace class) 조건이다.
 
-[콤팩트성](compactness.md)만으로는 부족하다. 콤팩트이면 $\lambda_i \to 0$ 이지만 $\lambda_i = 1/i$ 처럼 느리게 갈 수 있고 그러면 $\prod(1-\lambda_i)$ 가 0 으로 발산한다. 고유값이 합할 수 있을 만큼 빨리 줄어야 하고, 자취류가 그 조건이다.
+[콤팩트성](compactness.md)만으로는 부족하다. 콤팩트이면 $\lambda_i \to 0$ 이지만 $\lambda_i = 1/i$ 처럼 느리게 갈 수 있고 그러면 $\prod(1-\lambda_i)$ 가 0 으로 발산한다. 고유값이 합할 수 있을 만큼 빨리 줄어야 하고, 대각합류가 그 조건이다.
 
 ## 급수의 의미
 
@@ -40,11 +40,11 @@ $1/k!$ 은 순서 없는 선택을 순서 있는 적분으로 바꾸며 생긴�
 
 ## 수렴 속도
 
-Hadamard 부등식이 $k \times k$ 행렬식을 행 노름의 곱으로 누르므로 급수의 $k$ 번째 항이 $k^{k/2}M^k/k!$ 규모로 눌린다. $k!$ 이 $k^{k/2}$ 를 압도하므로 급수가 모든 $K$ 에 대해 완전함수로 수렴한다. 수렴 반경이 무한대이므로 Fredholm 이론이 임의의 자취류 커널을 다룬다.
+Hadamard 부등식이 $k \times k$ 행렬식을 행 노름의 곱으로 누르므로 급수의 $k$ 번째 항이 $k^{k/2}M^k/k!$ 규모로 눌린다. $k!$ 이 $k^{k/2}$ 를 압도하므로 급수가 모든 $K$ 에 대해 완전함수로 수렴한다. 수렴 반경이 무한대이므로 Fredholm 이론이 임의의 대각합류 커널을 다룬다.
 
 # 정의
 
-## 자취류 작용소
+## 대각합류 작용소
 
 [Hilbert 공간](hilbert-spaces.md) 위의 콤팩트 작용소 $K$ 의 특이값을 $s_1 \ge s_2 \ge \cdots$ 라 할 때
 
@@ -52,21 +52,21 @@ $$
 \lVert K\rVert_1 = \sum_i s_i \lt\infty
 $$
 
-이면 $K$ 가 **자취류**다. 임의의 정규직교기저에 대해 $\sum_i \langle Ke_i, e_i\rangle$ 가 절대수렴하고 기저에 의존하지 않으므로 **자취** $\mathrm{tr}K$ 가 정의된다. 자취류 작용소들은 $\lVert\cdot\rVert_1$ 에 대해 [Banach 공간](banach-spaces.md)을 이루고, 유계 작용소를 곱해도 자취류로 남는 양쪽 아이디얼이다.
+이면 $K$ 가 **대각합류**다. 임의의 정규직교기저에 대해 $\sum_i \langle Ke_i, e_i\rangle$ 가 절대수렴하고 기저에 의존하지 않으므로 **대각합** $\mathrm{tr}K$ 가 정의된다. 대각합류 작용소들은 $\lVert\cdot\rVert_1$ 에 대해 [Banach 공간](banach-spaces.md)을 이루고, 유계 작용소를 곱해도 대각합류로 남는 양쪽 아이디얼이다.
 
-Lidskii 의 정리는 자취류 $K$ 에 대해 $\mathrm{tr}K = \sum_i\lambda_i$ 라고 진술한다. 우변은 대수적 중복도를 세어 절대수렴하며, 등식은 $K$ 가 [자기수반](bounded-operators.md)이 아닐 때도 성립한다.
+Lidskii 의 정리는 대각합류 $K$ 에 대해 $\mathrm{tr}K = \sum_i\lambda_i$ 라고 진술한다. 우변은 대수적 중복도를 세어 절대수렴하며, 등식은 $K$ 가 [자기수반](bounded-operators.md)이 아닐 때도 성립한다.
 
 ## Fredholm 행렬식
 
-자취류 $K$ 에 대해
+대각합류 $K$ 에 대해
 
 $$
 \det(I - zK) = \prod_i (1 - z\lambda_i) = \sum_{k\ge0}\frac{(-z)^k}{k!}\int \det\bigl(K(x_i,x_j)\bigr)\_{i,j\le k}\thickspace d^k x
 $$
 
-로 정의한다. 두 표현이 같다는 것이 **Plemelj–Smithies 항등식**이다. 좌변은 $z$ 의 완전함수이고 그 영점이 $1/\lambda_i$ 다. 커널 형태는 $K$ 가 적분작용소이고 $K(x,y)$ 가 연속일 때 쓴다. 자취류성은 커널의 매끄러움으로 확인하며 $[a,b]$ 위의 $C^1$ 커널이면 충분하다.
+로 정의한다. 두 표현이 같다는 것이 **Plemelj–Smithies 항등식**이다. 좌변은 $z$ 의 완전함수이고 그 영점이 $1/\lambda_i$ 다. 커널 형태는 $K$ 가 적분작용소이고 $K(x,y)$ 가 연속일 때 쓴다. 대각합류성은 커널의 매끄러움으로 확인하며 $[a,b]$ 위의 $C^1$ 커널이면 충분하다.
 
-## 자취를 통한 표현
+## 대각합을 통한 표현
 
 $\lVert K\rVert \lt 1$ 이면 로그를 전개해
 
@@ -74,7 +74,7 @@ $$
 \log\det(I - K) = \mathrm{tr}\log(I - K) = -\sum_{m\ge1}\frac{1}{m}\mathrm{tr}K^m
 $$
 
-를 얻는다. 행렬식의 로그가 로그의 자취라는 이 등식이 계산에서 가장 많이 쓰인다. 우변의 $\mathrm{tr}K^m$ 은 $m$ 중 적분
+를 얻는다. 행렬식의 로그가 로그의 대각합이라는 이 등식이 계산에서 가장 많이 쓰인다. 우변의 $\mathrm{tr}K^m$ 은 $m$ 중 적분
 
 $$
 \mathrm{tr}K^m = \int K(x_1,x_2)K(x_2,x_3)\cdots K(x_m,x_1)\thinspace d^m x
@@ -86,13 +86,13 @@ $$
 
 ## 가역성 판정
 
-자취류 $K$ 에 대해 $I - K$ 가 가역일 필요충분조건은 $\det(I-K) \ne 0$ 이다.
+대각합류 $K$ 에 대해 $I - K$ 가 가역일 필요충분조건은 $\det(I-K) \ne 0$ 이다.
 
 $K$ 가 콤팩트이므로 $I - K$ 는 지표 0 인 Fredholm 작용소이고 단사이면 전사다. 이것이 **Fredholm 대안**이다. 제차 방정식 $\phi = K\phi$ 가 자명해만 가지면 비제차 방정식이 모든 $f$ 에 대해 유일해를 갖고, 그렇지 않으면 해가 없거나 무한히 많다.
 
 ## 곱셈성과 연속성
 
-자취류 $K, L$ 에 대해
+대각합류 $K, L$ 에 대해
 
 $$
 \det\bigl((I-K)(I-L)\bigr) = \det(I-K)\thinspace\det(I-L)
@@ -104,9 +104,9 @@ $$
 \bigl\lvert\det(I-K) - \det(I-L)\bigr\rvert \le \lVert K - L\rVert_1\thinspace\exp\bigl(\lVert K\rVert_1 + \lVert L\rVert_1 + 1\bigr)
 $$
 
-이다. 이 연속성은 자취류 노름에 대한 것이고 작용소 노름에 대한 것이 아니다. 작용소 노름으로 가까운 두 작용소의 행렬식이 크게 다를 수 있다.
+이다. 이 연속성은 대각합류 노름에 대한 것이고 작용소 노름에 대한 것이 아니다. 작용소 노름으로 가까운 두 작용소의 행렬식이 크게 다를 수 있다.
 
-유한 랭크 근사가 자취류 노름으로 수렴하면 행렬식도 같은 속도로 수렴하므로, 이 부등식이 수치 계산의 근거다.
+유한 랭크 근사가 대각합류 노름으로 수렴하면 행렬식도 같은 속도로 수렴하므로, 이 부등식이 수치 계산의 근거다.
 
 ## 지표와의 경계
 
@@ -114,7 +114,7 @@ $I - K$ 는 지표가 항상 0 이라 지표가 정보를 주지 않고 행렬�
 
 ## 정규화 행렬식
 
-$K$ 가 자취류가 아니고 Hilbert–Schmidt 일 뿐이면 곱 $\prod(1-\lambda_i)$ 가 발산할 수 있다. 이때는
+$K$ 가 대각합류가 아니고 Hilbert–Schmidt 일 뿐이면 곱 $\prod(1-\lambda_i)$ 가 발산할 수 있다. 이때는
 
 $$
 {\det}\_2(I - K) = \prod_i (1-\lambda_i)e^{\lambda_i}
@@ -148,9 +148,9 @@ $$
 
 산란 이론에서 Jost 함수가 섭동 작용소의 Fredholm 행렬식으로 쓰이고, 그 위상의 증가가 속박 상태의 개수를 센다. Birman–Krein 공식이 $\det$ 의 위상과 스펙트럼 이동 함수를 잇는 형태로 이 관계를 정리한다.
 
-Laplace 작용소처럼 자취류가 아닌 대상에는 zeta 정규화 행렬식 $\exp(-\zeta'(0))$ 을 쓴다. 정의는 Fredholm 행렬식과 다르지만 발산하는 고유값 곱에 유한한 값을 지정한다는 점에서 ${\det}\_p$ 정규화와 같은 계열이다. 해석적 비틀림과 곡면 위의 행렬식 공식이 이 틀에 속한다.[^1]
+Laplace 작용소처럼 대각합류가 아닌 대상에는 zeta 정규화 행렬식 $\exp(-\zeta'(0))$ 을 쓴다. 정의는 Fredholm 행렬식과 다르지만 발산하는 고유값 곱에 유한한 값을 지정한다는 점에서 ${\det}\_p$ 정규화와 같은 계열이다. 해석적 비틀림과 곡면 위의 행렬식 공식이 이 틀에 속한다.[^1]
 
-[^1]: Barry Simon, *Trace Ideals and Their Applications*, 2nd ed., Chapters 3 and 5. 자취류 아이디얼, Lidskii 정리, Fredholm 행렬식의 정의와 곱셈성, 정규화 행렬식 $\det\_p$ . 수치 계산은 Folkmar Bornemann, *On the numerical evaluation of Fredholm determinants*, Mathematics of Computation 79 (2010), §§1–3.
+[^1]: Barry Simon, *Trace Ideals and Their Applications*, 2nd ed., Chapters 3 and 5. 대각합류 아이디얼, Lidskii 정리, Fredholm 행렬식의 정의와 곱셈성, 정규화 행렬식 $\det\_p$ . 수치 계산은 Folkmar Bornemann, *On the numerical evaluation of Fredholm determinants*, Mathematics of Computation 79 (2010), §§1–3.
 
 # 연관 문서
 
