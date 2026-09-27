@@ -87,7 +87,7 @@ Stirling 급수에서는 Borel 변환의 특이점이 $\zeta = 2\pi i k$ 에 있
 
 ## 최적 절단과 그 너머
 
-점근급수는 항을 $n \approx \lvert A \rvert x$ 개까지 더할 때 오차가 최소가 되고 그 최소값이 $e^{-\lvert A\rvert x}$ 규모이며, 여기까지가 **superasymptotic** 정확도다. 남은 꼬리를 버리지 않고 다시 점근전개하면 정확도가 한 단계 올라가고, 이를 **hyperasymptotic** 전개라 한다. 재합산은 이 계단을 끝까지 올라가 원리적으로 임의의 정확도에 도달한다.
+점근급수는 항을 $n \approx \lvert A \rvert x$ 개까지 더할 때 오차가 최소가 되고 그 최솟값이 $e^{-\lvert A\rvert x}$ 규모이며, 여기까지가 **superasymptotic** 정확도다. 남은 꼬리를 버리지 않고 다시 점근전개하면 정확도가 한 단계 올라가고, 이를 **hyperasymptotic** 전개라 한다. 재합산은 이 계단을 끝까지 올라가 원리적으로 임의의 정확도에 도달한다.
 
 ## Stokes 승수의 매끄러운 전환
 

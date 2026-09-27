@@ -115,7 +115,7 @@ $$
 - 조화함수: 정칙함수의 실부와 허부는 Laplace 방정식을 만족한다. 평면 퍼텐셜 문제, 2차원 유체 흐름, 정전기장 계산에 등각사상을 쓴다.
 - 해석적 수론: [Riemann zeta 함수](riemann-zeta.md)의 [해석적 연속](analytic-continuation.md)과 영점 분포가 소수 분포를 통제한다([소수](primes.md)).
 - 특수함수의 정의역 확장: 해석적 연속은 국소 데이터가 전역 함수를 결정한다는 항등정리의 응용이다.
-- 편각 원리: 경로를 따라가며 함수값이 원점을 감는 횟수가 내부 영점과 극의 개수 차이를 센다. 제어이론의 Nyquist 판정법이 이 정리의 응용이다.
+- 편각 원리: 경로를 따라가며 함숫값이 원점을 감는 횟수가 내부 영점과 극의 개수 차이를 센다. 제어이론의 Nyquist 판정법이 이 정리의 응용이다.
 
 [^1]: Cauchy's integral theorem, Wikipedia (단순연결 영역에서의 진술과 Goursat의 약화된 가정). https://en.wikipedia.org/wiki/Cauchy%27s_integral_theorem
 [^2]: T. Tao, Math 246A Notes 3: Cauchy's theorem and its consequences. https://terrytao.wordpress.com/2016/10/02/math-246a-notes-3-cauchys-theorem-and-its-consequences/

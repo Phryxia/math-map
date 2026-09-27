@@ -20,7 +20,7 @@ $\zeta_n$ 이 하던 일을 $j$ 와 비틀림점이 한다. Kronecker 가 "청�
 
 ## 이차무리수 격자
 
-$\Lambda=\mathbb Z+\mathbb Z\tau\subset\mathbb C$ 에 대해 $\alpha\Lambda\subseteq\Lambda$ 인 복소수 $\alpha$ 가 $\mathbb C/\Lambda$ 의 자기준동형을 준다. $\alpha\cdot1=a+b\tau$ 와 $\alpha\cdot\tau=c+d\tau$ 를 정수로 쓰면 $\alpha$ 는 정수 행렬의 고유값이므로 이차 대수적 정수다. $\alpha\notin\mathbb Z$ 이려면 $\tau$ 가 이차무리수여야 한다.
+$\Lambda=\mathbb Z+\mathbb Z\tau\subset\mathbb C$ 에 대해 $\alpha\Lambda\subseteq\Lambda$ 인 복소수 $\alpha$ 가 $\mathbb C/\Lambda$ 의 자기준동형을 준다. $\alpha\cdot1=a+b\tau$ 와 $\alpha\cdot\tau=c+d\tau$ 를 정수로 쓰면 $\alpha$ 는 정수 행렬의 고윳값이므로 이차 대수적 정수다. $\alpha\notin\mathbb Z$ 이려면 $\tau$ 가 이차무리수여야 한다.
 
 $$
 A\tau^2+B\tau+C=0,\qquad A,B,C\in\mathbb Z,\ \gcd(A,B,C)=1,\ D=B^2-4AC\lt 0

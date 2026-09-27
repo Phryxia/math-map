@@ -2,7 +2,7 @@
 
 # 개요
 
-상미분방정식(ordinary differential equation, ODE)은 한 개의 독립변수에 대한 미지함수와 그 도함수들 사이의 관계식이다. 해를 구하는 문제는 보통 한 시점의 값을 지정한 초기값 문제(initial value problem)로 주어지며, 이때 가장 기본적인 질문은 "해가 존재하는가, 유일한가, 얼마나 오래 존재하는가"다. Picard–Lindelöf 정리는 우변이 연속이고 상태변수에 대해 Lipschitz이면 국소적으로 유일한 해가 존재함을 보장하고, 그 증명은 적분방정식을 [축약사상 고정점 정리](banach-fixed-point.md)로 푸는 것이다. 대부분의 방정식은 닫힌 형태의 해를 갖지 않으므로, 실제 관심은 해의 정성적 거동(평형점, 안정성)과 수치적 근사에 있다.
+상미분방정식(ordinary differential equation, ODE)은 한 개의 독립변수에 대한 미지함수와 그 도함수들 사이의 관계식이다. 해를 구하는 문제는 보통 한 시점의 값을 지정한 초깃값 문제(initial value problem)로 주어지며, 이때 가장 기본적인 질문은 "해가 존재하는가, 유일한가, 얼마나 오래 존재하는가"다. Picard–Lindelöf 정리는 우변이 연속이고 상태변수에 대해 Lipschitz이면 국소적으로 유일한 해가 존재함을 보장하고, 그 증명은 적분방정식을 [축약사상 고정점 정리](banach-fixed-point.md)로 푸는 것이다. 대부분의 방정식은 닫힌 형태의 해를 갖지 않으므로, 실제 관심은 해의 정성적 거동(평형점, 안정성)과 수치적 근사에 있다.
 
 # 직관
 
@@ -14,7 +14,7 @@ Picard 반복은 이 그림의 알고리즘판이다. 상수함수에서 출발�
 
 # 정의
 
-구간 $J$ 위의 미지함수 $x(t)$ 가 $n$ 차원 벡터값일 때, 1차 연립 ODE 의 초기값 문제는 다음과 같다.
+구간 $J$ 위의 미지함수 $x(t)$ 가 $n$ 차원 벡터값일 때, 1차 연립 ODE 의 초깃값 문제는 다음과 같다.
 
 $$
 x'(t)=f\bigl(t,x(t)\bigr),\qquad x(t_0)=x_0
@@ -28,7 +28,7 @@ $$
 \left\lVert f(t,x)-f(t,y)\right\rVert\le K\left\lVert x-y\right\rVert
 $$
 
-미분방정식과 적분방정식은 동치다. $f$ 가 연속이면, $x$ 가 위 초기값 문제의 해인 것과 $x$ 가 다음 적분방정식을 만족하는 [연속함수](continuity.md)인 것은 같다([미적분학의 기본 정리](fundamental-calculus.md)).
+미분방정식과 적분방정식은 동치다. $f$ 가 연속이면, $x$ 가 위 초깃값 문제의 해인 것과 $x$ 가 다음 적분방정식을 만족하는 [연속함수](continuity.md)인 것은 같다([미적분학의 기본 정리](fundamental-calculus.md)).
 
 $$
 x(t)=x_0+\int_{t_0}^{t}f\bigl(s,x(s)\bigr)\thinspace ds
@@ -40,21 +40,21 @@ $$
 (Tx)(t)=x_0+\int_{t_0}^{t}f\bigl(s,x(s)\bigr)\thinspace ds
 $$
 
-자율 방정식에서 $f$ 를 $0$ 으로 만드는 점을 평형점(equilibrium)이라 한다. 평형점이 Lyapunov 안정이라는 것은 초기값을 충분히 가깝게 두면 궤적이 영원히 가까이 머무는 것, 점근 안정이라는 것은 여기에 더해 궤적이 평형점으로 수렴하는 것이다.
+자율 방정식에서 $f$ 를 $0$ 으로 만드는 점을 평형점(equilibrium)이라 한다. 평형점이 Lyapunov 안정이라는 것은 초깃값을 충분히 가깝게 두면 궤적이 영원히 가까이 머무는 것, 점근 안정이라는 것은 여기에 더해 궤적이 평형점으로 수렴하는 것이다.
 
 # 성질
 
 ## Picard–Lindelöf 정리
 
-$f$ 가 초기점의 근방에서 연속이고 $x$ 에 대해 Lipschitz이면, 어떤 양수 $\varepsilon$ 에 대해 구간 $[t_0-\varepsilon,\thinspace t_0+\varepsilon]$ 에서 초기값 문제의 해가 존재하고 유일하다[^1].
+$f$ 가 초기점의 근방에서 연속이고 $x$ 에 대해 Lipschitz이면, 어떤 양수 $\varepsilon$ 에 대해 구간 $[t_0-\varepsilon,\thinspace t_0+\varepsilon]$ 에서 초깃값 문제의 해가 존재하고 유일하다[^1].
 
-증명 개요: $M$ 을 근방에서 $f$ 의 노름 상한, $K$ 를 Lipschitz 상수라 하자. 초기값 중심 폐구 안에 머무는 연속함수들의 집합은 [sup 노름](banach-spaces.md)에서 [완비](completeness.md)이며, $\varepsilon$ 을 충분히 작게 잡으면 $T$ 가 이 집합을 자기 자신으로 보낸다(적분의 크기가 $M\varepsilon$ 이하이기 때문). 두 함수 $x$ , $y$ 에 대해 Lipschitz 조건을 적분에 넣으면 다음을 얻는다.
+증명 개요: $M$ 을 근방에서 $f$ 의 노름 상한, $K$ 를 Lipschitz 상수라 하자. 초깃값 중심 폐구 안에 머무는 연속함수들의 집합은 [sup 노름](banach-spaces.md)에서 [완비](completeness.md)이며, $\varepsilon$ 을 충분히 작게 잡으면 $T$ 가 이 집합을 자기 자신으로 보낸다(적분의 크기가 $M\varepsilon$ 이하이기 때문). 두 함수 $x$ , $y$ 에 대해 Lipschitz 조건을 적분에 넣으면 다음을 얻는다.
 
 $$
 \left\lVert Tx-Ty\right\rVert_{\infty}\le K\varepsilon\thinspace\left\lVert x-y\right\rVert_{\infty}
 $$
 
-따라서 $\varepsilon$ 을 추가로 $1/K$ 보다 작게 잡으면 $T$ 는 축약사상이고, 완비 [거리 공간](metric-spaces.md) 위의 축약사상은 유일한 고정점을 가진다[^2]. 그 고정점이 적분방정식의 해, 즉 초기값 문제의 유일한 해다. (Lipschitz 상수와 무관한 구간을 얻으려면 지수 가중 노름을 쓰거나 Gronwall 부등식을 이용한다.)
+따라서 $\varepsilon$ 을 추가로 $1/K$ 보다 작게 잡으면 $T$ 는 축약사상이고, 완비 [거리 공간](metric-spaces.md) 위의 축약사상은 유일한 고정점을 가진다[^2]. 그 고정점이 적분방정식의 해, 즉 초깃값 문제의 유일한 해다. (Lipschitz 상수와 무관한 구간을 얻으려면 지수 가중 노름을 쓰거나 Gronwall 부등식을 이용한다.)
 
 $f$ 가 연속이지만 Lipschitz 가 아니면 Peano 정리로 존재성은 남지만 유일성은 잃는다. 예를 들어 다음 문제는 해가 여러 개다.
 
@@ -114,7 +114,7 @@ $$
 x'=r\thinspace x\thinspace(1-x),\qquad r\gt 0
 $$
 
-평형점은 x=0과 x=1이다. 우변을 미분한 r(1−2x)를 평가하면 x=0에서 r>0이므로 불안정, x=1에서 −r<0이므로 점근 안정이다. 초기값이 0과 1 사이면 해는 다음과 같다.
+평형점은 x=0과 x=1이다. 우변을 미분한 r(1−2x)를 평가하면 x=0에서 r>0이므로 불안정, x=1에서 −r<0이므로 점근 안정이다. 초깃값이 0과 1 사이면 해는 다음과 같다.
 
 $$
 x(t)=\frac{x_0e^{rt}}{1-x_0+x_0e^{rt}}

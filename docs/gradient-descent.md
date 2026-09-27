@@ -4,7 +4,7 @@
 
 경사하강법(gradient descent)은 미분가능한 목적함수를 기울기의 반대 방향으로 이동하며 최소화하는 1 차 반복법이다. 각 단계가 기울기 한 번 계산과 벡터 덧셈이라 차원이 큰 문제에서도 쓰이고, 수렴 속도는 목적함수의 곡률 조건에 의존한다.
 
-조건을 명시하면 수렴률이 정확히 증명된다. 기울기가 $L$ -Lipschitz 인 볼록 함수에서는 함수값 오차가 반복 횟수의 역수로 줄고, 강볼록성을 더하면 기하급수적으로 줄어든다. 확률적 변형인 SGD(stochastic gradient descent)가 기계학습 학습 알고리즘의 기본 형태다.
+조건을 명시하면 수렴률이 정확히 증명된다. 기울기가 $L$ -Lipschitz 인 볼록 함수에서는 함숫값 오차가 반복 횟수의 역수로 줄고, 강볼록성을 더하면 기하급수적으로 줄어든다. 확률적 변형인 SGD(stochastic gradient descent)가 기계학습 학습 알고리즘의 기본 형태다.
 
 # 직관
 
@@ -52,7 +52,7 @@ $$
 f(x_{k+1})\le f(x_k)-\eta\Bigl(1-\frac{L\eta}{2}\Bigr)\left\lVert \nabla f(x_k)\right\rVert^2
 $$
 
-따라서 $0\lt\eta\lt 2/L$ 이면 기울기가 $0$ 이 아닌 동안 함수값이 엄격히 줄어들고, $\eta=1/L$ 에서 계수가 $1/(2L)$ 이다.
+따라서 $0\lt\eta\lt 2/L$ 이면 기울기가 $0$ 이 아닌 동안 함숫값이 엄격히 줄어들고, $\eta=1/L$ 에서 계수가 $1/(2L)$ 이다.
 
 $$
 f(x_{k+1})\le f(x_k)-\frac{1}{2L}\left\lVert \nabla f(x_k)\right\rVert^2
@@ -76,13 +76,13 @@ $$
 f(x_K)-f^\star\thinspace \le\thinspace \frac{L\left\lVert x_0-x^\star\right\rVert^2}{2K}
 $$
 
-증명은 갱신식을 대입해 최소점까지의 거리 제곱을 전개하고, 볼록성의 1 차 부등식으로 교차항을 막고, 하강 보조정리로 기울기 노름 항을 함수값 감소량으로 바꾸어 다음을 얻는 데서 출발한다.
+증명은 갱신식을 대입해 최소점까지의 거리 제곱을 전개하고, 볼록성의 1 차 부등식으로 교차항을 막고, 하강 보조정리로 기울기 노름 항을 함숫값 감소량으로 바꾸어 다음을 얻는 데서 출발한다.
 
 $$
 \left\lVert x_{k+1}-x^\star\right\rVert^2\le \left\lVert x_k-x^\star\right\rVert^2-\frac{2}{L}\bigl(f(x_{k+1})-f^\star\bigr)
 $$
 
-$k=0$ 부터 $K-1$ 까지 더하면 $f(x_k)-f^\star$ 들의 합이 초기 거리 제곱의 $L/2$ 배 이하다. 함수값이 단조감소하므로 $K$ 개의 항이 모두 $f(x_K)-f^\star$ 이상이고 위 부등식이 따른다. $\varepsilon$ 근사해에 필요한 반복 수는 $\varepsilon^{-1}$ 규모다.
+$k=0$ 부터 $K-1$ 까지 더하면 $f(x_k)-f^\star$ 들의 합이 초기 거리 제곱의 $L/2$ 배 이하다. 함숫값이 단조감소하므로 $K$ 개의 항이 모두 $f(x_K)-f^\star$ 이상이고 위 부등식이 따른다. $\varepsilon$ 근사해에 필요한 반복 수는 $\varepsilon^{-1}$ 규모다.
 
 ## 강볼록 함수의 선형 수렴
 
@@ -136,7 +136,7 @@ $$
 
 ## 학습과 대규모 볼록 최적화
 
-선형회귀와 로지스틱회귀의 학습, 신경망의 역전파 학습, [선형계획법](linear-programming.md)으로 다루기 어려운 대규모 볼록 문제의 1 차 해법, 행렬 분해와 임베딩 학습에 쓰인다. 목적함수가 [볼록](convexity.md)이면 찾은 점이 전역 최소이고, 그렇지 않으면 초기값, 학습률 일정, 정규화가 결과를 좌우한다. [최대가능도 추정](maximum-likelihood.md)처럼 확률모형의 목적함수를 최적화하는 문제에서도 기본 해법이다.
+선형회귀와 로지스틱회귀의 학습, 신경망의 역전파 학습, [선형계획법](linear-programming.md)으로 다루기 어려운 대규모 볼록 문제의 1 차 해법, 행렬 분해와 임베딩 학습에 쓰인다. 목적함수가 [볼록](convexity.md)이면 찾은 점이 전역 최소이고, 그렇지 않으면 초깃값, 학습률 일정, 정규화가 결과를 좌우한다. [최대가능도 추정](maximum-likelihood.md)처럼 확률모형의 목적함수를 최적화하는 문제에서도 기본 해법이다.
 
 [^1]: R. Tibshirani, Gradient Descent (Convex Optimization 10-725 강의노트), Carnegie Mellon University. https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/grad-descent.pdf
 [^2]: M. Schmidt, Rates of Convergence: Linear Convergence of Gradient Descent (CPSC 540 강의노트), UBC. https://www.cs.ubc.ca/~schmidtm/Courses/540-W19/L5.pdf

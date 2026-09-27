@@ -2,7 +2,7 @@
 
 # 개요
 
-Nesterov 가속법은 이전 걸음의 변위를 갱신식에 더해 [경사하강법](gradient-descent.md)의 수렴률을 올린 1 차 방법이다. 기울기가 $L$ -Lipschitz 인 볼록 함수에서 함수값 오차가 $O(1/k^2)$ 로 줄고, $\mu$ 강볼록이면 조건수 $\kappa=L/\mu$ 에 대한 반복 수 의존이 $\kappa$ 에서 $\sqrt\kappa$ 로 내려간다.
+Nesterov 가속법은 이전 걸음의 변위를 갱신식에 더해 [경사하강법](gradient-descent.md)의 수렴률을 올린 1 차 방법이다. 기울기가 $L$ -Lipschitz 인 볼록 함수에서 함숫값 오차가 $O(1/k^2)$ 로 줄고, $\mu$ 강볼록이면 조건수 $\kappa=L/\mu$ 에 대한 반복 수 의존이 $\kappa$ 에서 $\sqrt\kappa$ 로 내려간다.
 
 # 직관
 

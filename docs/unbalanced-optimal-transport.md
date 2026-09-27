@@ -85,7 +85,7 @@ $$
 
 ## Hellinger–Kantorovich 거리
 
-$\varepsilon=0$ 이고 두 벌점의 계수가 같으면, 이 최소값에서 거리가 나온다. 비용을 제곱거리 대신
+$\varepsilon=0$ 이고 두 벌점의 계수가 같으면, 이 최솟값에서 거리가 나온다. 비용을 제곱거리 대신
 
 $$
 C(x,y)=-2\log\cos\big(\min(|x-y|,\tfrac\pi2)\big)

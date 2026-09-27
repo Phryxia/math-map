@@ -2,7 +2,7 @@
 
 # 개요
 
-[Hecke 작용소](hecke-operators.md) $T_p$ 는 이중 잉여류 $\mathrm{SL}\_2(\mathbb Z)\begin{pmatrix}1&0\cr 0&p\end{pmatrix}\mathrm{SL}\_2(\mathbb Z)$ 로 정의된다. 이 정의에서는 작용소들이 서로 가환인 이유도, 고유값이 $L$ 함수의 Euler 인자가 되는 이유도 보이지 않는다.
+[Hecke 작용소](hecke-operators.md) $T_p$ 는 이중 잉여류 $\mathrm{SL}\_2(\mathbb Z)\begin{pmatrix}1&0\cr 0&p\end{pmatrix}\mathrm{SL}\_2(\mathbb Z)$ 로 정의된다. 이 정의에서는 작용소들이 서로 가환인 이유도, 고윳값이 $L$ 함수의 Euler 인자가 되는 이유도 보이지 않는다.
 
 [아델](adeles.md) 위로 올리면 두 사실이 함께 나온다. 자리 $p$ 를 고정하고 $G=\mathrm{GL}\_n(\mathbb Q_p)$ , $K=\mathrm{GL}\_n(\mathbb Z_p)$ 라 하자. 콤팩트 받침을 갖는 양쪽 $K$ 불변 함수들이 합성곱으로 이루는 대수
 
@@ -237,13 +237,13 @@ $\mathrm{GL}\_n$ 의 첨점 자기동형 표현이 모든 자리에서 온도적
 
 ## 국소 $L$ 인자와 Euler 인자
 
-Satake 매개변수가 $L$ 인자를 주고, 그 기하급수 전개가 Hecke 고유값 수열을 준다.
+Satake 매개변수가 $L$ 인자를 주고, 그 기하급수 전개가 Hecke 고윳값 수열을 준다.
 
 $$
 \det(1-A_\pi t)^{-1}=\frac1{(1-\alpha t)(1-\beta t)}=\sum_{m\ge0}h_m(\alpha,\beta)\thinspace t^m
 $$
 
-$h_m(\alpha,\beta)$ 가 정규화된 $T_{p^m}$ 의 고유값이다.
+$h_m(\alpha,\beta)$ 가 정규화된 $T_{p^m}$ 의 고윳값이다.
 
 $\lvert\alpha\rvert=1$ 이 Deligne 의 정리 $\lvert\tau(p)\rvert\le2p^{11/2}$ 다. $\tau(p^m)/p^{11m/2}=h_m(\alpha,\beta)$ 가 성립하므로 $\Delta$ 의 $L$ 함수의 $p$ 인자가 $\det(1-A_{\pi_p}p^{-s})^{-1}$ 이다. 고전적 Hecke 관계식이 2 차 Euler 인자를 주는 것을 Satake 동형이 설명한다.
 

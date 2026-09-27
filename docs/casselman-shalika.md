@@ -39,7 +39,7 @@ $X_\ast(T)=X^\ast(\widehat T)$ 는 [Satake 동형](satake-isomorphism.md)이 쌍
 
 ## Hecke 작용과 Satake 변환
 
-Hecke 대수의 원소 $f$ 가 $W^\circ$ 에 작용하면 Satake 변환의 값 $\hat f(\alpha)$ 를 곱한 것이 나온다. $W^\circ$ 는 Hecke 대수의 동시 고유벡터이고 그 고유값이 $R(\widehat G)\cong\mathbb C[\alpha]^{S_n}$ 의 원소다.
+Hecke 대수의 원소 $f$ 가 $W^\circ$ 에 작용하면 Satake 변환의 값 $\hat f(\alpha)$ 를 곱한 것이 나온다. $W^\circ$ 는 Hecke 대수의 동시 고유벡터이고 그 고윳값이 $R(\widehat G)\cong\mathbb C[\alpha]^{S_n}$ 의 원소다.
 
 $\lambda$ 로 매겨진 함수족이 기약표현으로 매겨진 지표족과 같은 대수 위에서 같은 방식으로 변환하므로 남는 것은 정규화 $\delta_B^{1/2}$ 뿐이다. 표현환의 자연 기저가 $\lbrace s_\lambda\rbrace$ 이므로 답도 $s_\lambda$ 다.
 
@@ -84,7 +84,7 @@ $$
 W^\circ\begin{pmatrix}\varpi^m&\cr&1\end{pmatrix}=q^{-m/2}\thinspace\frac{\alpha^{m+1}-\beta^{m+1}}{\alpha-\beta}
 $$
 
-이다. 오른쪽 분수가 $\mathrm{Sym}^m$ 의 지표이고 고전적으로는 정규화된 Hecke 고유값 $a_{p^m}/p^{m(k-1)/2}$ 다. 이 공식은 $\mathrm{GL}\_2$ 에서 Hecke 재귀 $a_{p^{m+1}}=a_pa_{p^m}-p^{k-1}a_{p^{m-1}}$ 의 일반화다.
+이다. 오른쪽 분수가 $\mathrm{Sym}^m$ 의 지표이고 고전적으로는 정규화된 Hecke 고윳값 $a_{p^m}/p^{m(k-1)/2}$ 다. 이 공식은 $\mathrm{GL}\_2$ 에서 Hecke 재귀 $a_{p^{m+1}}=a_pa_{p^m}-p^{k-1}a_{p^{m-1}}$ 의 일반화다.
 
 # 성질
 

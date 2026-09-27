@@ -20,7 +20,7 @@ Fredholm 은 1900 년에 유한차원 행렬식이 만족하는 급수 전개를
 
 [대각화](eigenvalues.md) 가능한 유한차원 행렬에서 $\det(I - K) = \prod_i (1 - \lambda_i)$ 다. 무한차원에서 이 곱이 수렴하려면 $\sum_i|\lambda_i| \lt\infty$ 여야 한다. 이것이 **대각합류**(trace class) 조건이다.
 
-[콤팩트성](compactness.md)만으로는 부족하다. 콤팩트이면 $\lambda_i \to 0$ 이지만 $\lambda_i = 1/i$ 처럼 느리게 갈 수 있고 그러면 $\prod(1-\lambda_i)$ 가 0 으로 발산한다. 고유값이 합할 수 있을 만큼 빨리 줄어야 하고, 대각합류가 그 조건이다.
+[콤팩트성](compactness.md)만으로는 부족하다. 콤팩트이면 $\lambda_i \to 0$ 이지만 $\lambda_i = 1/i$ 처럼 느리게 갈 수 있고 그러면 $\prod(1-\lambda_i)$ 가 0 으로 발산한다. 고윳값이 합할 수 있을 만큼 빨리 줄어야 하고, 대각합류가 그 조건이다.
 
 ## 급수의 의미
 
@@ -140,7 +140,7 @@ $$
 
 ## 간격 확률과 무작위 행렬
 
-결정점과정에서 구간 $J$ 에 점이 하나도 없을 확률이 정확히 $\det(I - K)\_{L^2(J)}$ 다. 무작위 행렬의 고유값이 결정점과정을 이루므로, 고유값 사이의 간격 분포가 전부 이 행렬식으로 쓰인다. 최대 고유값의 분포인 Tracy–Widom $F_2$ 도 Airy 커널에 대한 $\det(I - K_{\mathrm{Ai}})\_{L^2(s,\infty)}$ 이며, 커널과 구간만 바꾸면 같은 수치 절차로 계산된다.
+결정점과정에서 구간 $J$ 에 점이 하나도 없을 확률이 정확히 $\det(I - K)\_{L^2(J)}$ 다. 무작위 행렬의 고윳값이 결정점과정을 이루므로, 고윳값 사이의 간격 분포가 전부 이 행렬식으로 쓰인다. 최대 고윳값의 분포인 Tracy–Widom $F_2$ 도 Airy 커널에 대한 $\det(I - K_{\mathrm{Ai}})\_{L^2(s,\infty)}$ 이며, 커널과 구간만 바꾸면 같은 수치 절차로 계산된다.
 
 확률에서 나온 양이 해석적으로 다루기 쉬운 결정식으로 표현되고, 그 결정식이 Painlevé 방정식과 이어진다.
 
@@ -148,7 +148,7 @@ $$
 
 산란 이론에서 Jost 함수가 섭동 작용소의 Fredholm 행렬식으로 쓰이고, 그 위상의 증가가 속박 상태의 개수를 센다. Birman–Krein 공식이 $\det$ 의 위상과 스펙트럼 이동 함수를 잇는 형태로 이 관계를 정리한다.
 
-Laplace 작용소처럼 대각합류가 아닌 대상에는 zeta 정규화 행렬식 $\exp(-\zeta'(0))$ 을 쓴다. 정의는 Fredholm 행렬식과 다르지만 발산하는 고유값 곱에 유한한 값을 지정한다는 점에서 ${\det}\_p$ 정규화와 같은 계열이다. 해석적 비틀림과 곡면 위의 행렬식 공식이 이 틀에 속한다.[^1]
+Laplace 작용소처럼 대각합류가 아닌 대상에는 zeta 정규화 행렬식 $\exp(-\zeta'(0))$ 을 쓴다. 정의는 Fredholm 행렬식과 다르지만 발산하는 고윳값 곱에 유한한 값을 지정한다는 점에서 ${\det}\_p$ 정규화와 같은 계열이다. 해석적 비틀림과 곡면 위의 행렬식 공식이 이 틀에 속한다.[^1]
 
 [^1]: Barry Simon, *Trace Ideals and Their Applications*, 2nd ed., Chapters 3 and 5. 대각합류 아이디얼, Lidskii 정리, Fredholm 행렬식의 정의와 곱셈성, 정규화 행렬식 $\det\_p$ . 수치 계산은 Folkmar Bornemann, *On the numerical evaluation of Fredholm determinants*, Mathematics of Computation 79 (2010), §§1–3.
 

@@ -221,7 +221,7 @@ $$
 \mathrm{length}\_R\thinspace H^1_{\mathcal F^\ast}(K,T^\ast)=\sum_{i\ge0}\partial_i(\kappa)
 $$
 
-로 등식이 나온다. Euler 계가 주던 부등식이 여기서 등식이 된다. 남는 것은 $\kappa$ 가 생성원인지, 곧 $\partial_0(\kappa)$ 가 최소값인지를 확인하는 문제이고 이것이 Euler 계 쪽에서 넘어오는 유일한 입력이다.
+로 등식이 나온다. Euler 계가 주던 부등식이 여기서 등식이 된다. 남는 것은 $\kappa$ 가 생성원인지, 곧 $\partial_0(\kappa)$ 가 최솟값인지를 확인하는 문제이고 이것이 Euler 계 쪽에서 넘어오는 유일한 입력이다.
 
 $\kappa_1\not\equiv0\ (\mathrm{mod}\ p)$ 이면 모든 $\partial_i=0$ 이라 $H^1_{\mathcal F^\ast}(K,T^\ast)=0$ 이다. 유도류가 $p$ 로 나누어지지 않으면 Selmer 군이 $0$ 이 된다는 Kolyvagin 의 고전적 결론이 이 형식에서 한 줄이다.
 

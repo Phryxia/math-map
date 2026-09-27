@@ -56,7 +56,7 @@ $$\mathbb E\Vert x_k-x^\ast\Vert^2=O\left(\frac{\sigma^2}{\mu^2 k}\right)$$
 
 ## Polyak–Ruppert 평균
 
-보폭을 $\eta_k=\Theta(k^{-a})$ 로 두되 $1/2\lt a\lt 1$ 로 천천히 줄이고 반복값의 평균 $\bar x_k$ 를 답으로 쓰면, $\sqrt k\thinspace(\bar x_k-x^\ast)$ 가 정규분포로 수렴하고 그 공분산이 $\nabla^2f(x^\ast)^{-1}$ 로 정해지는 최소값에 이른다[^2]. 보폭을 $1/k$ 로 맞추지 않고도 최적의 점근 분산을 얻는다.
+보폭을 $\eta_k=\Theta(k^{-a})$ 로 두되 $1/2\lt a\lt 1$ 로 천천히 줄이고 반복값의 평균 $\bar x_k$ 를 답으로 쓰면, $\sqrt k\thinspace(\bar x_k-x^\ast)$ 가 정규분포로 수렴하고 그 공분산이 $\nabla^2f(x^\ast)^{-1}$ 로 정해지는 최솟값에 이른다[^2]. 보폭을 $1/k$ 로 맞추지 않고도 최적의 점근 분산을 얻는다.
 
 ## 분산 축소
 

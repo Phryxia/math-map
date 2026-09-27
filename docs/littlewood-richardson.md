@@ -20,7 +20,7 @@ Knutson 과 Tao 는 계수를 볼록 다면체의 정수점 개수로 다시 쓰
 
 > **포화 정리(saturation theorem).** $c^{N\nu}\_{N\lambda,N\mu}\ne0$ 인 $N\ge1$ 이 있으면 $c^\nu_{\lambda\mu}\ne0$ 이다.
 
-이 한 줄이 Horn 추측을 해결한다. 두 에르미트 행렬의 합의 고유값이 어떤 값을 가질 수 있는가라는 선형대수 문제가, LR(Littlewood–Richardson) 수가 $0$ 이 아닌 조건과 정확히 같은 것이었기 때문이다.
+이 한 줄이 Horn 추측을 해결한다. 두 에르미트 행렬의 합의 고윳값이 어떤 값을 가질 수 있는가라는 선형대수 문제가, LR(Littlewood–Richardson) 수가 $0$ 이 아닌 조건과 정확히 같은 것이었기 때문이다.
 
 # 직관
 
@@ -54,7 +54,7 @@ hive 의 오목성 조건을 쌍대로 옮기면 평면 위 세 방향 $0^\circ,
 
 ## Horn 문제
 
-에르미트 행렬 $A,B$ 의 고유값을 내림차순으로 $\alpha,\beta$ 라 하고 $C=A+B$ 의 고유값을 $\gamma$ 라 하자. $\gamma$ 는 대각합 조건 $\sum\gamma=\sum\alpha+\sum\beta$ 말고 어떤 제약을 받는가. $n=2$ 에서는 부등식 몇 개로 끝나지만 일반 $n$ 에서는 답이 오래 열려 있었다. Horn 은 1962 년에 재귀적으로 정의되는 부등식 계
+에르미트 행렬 $A,B$ 의 고윳값을 내림차순으로 $\alpha,\beta$ 라 하고 $C=A+B$ 의 고윳값을 $\gamma$ 라 하자. $\gamma$ 는 대각합 조건 $\sum\gamma=\sum\alpha+\sum\beta$ 말고 어떤 제약을 받는가. $n=2$ 에서는 부등식 몇 개로 끝나지만 일반 $n$ 에서는 답이 오래 열려 있었다. Horn 은 1962 년에 재귀적으로 정의되는 부등식 계
 
 $$
 \sum_{k\in K}\gamma_k\le\sum_{i\in I}\alpha_i+\sum_{j\in J}\beta_j
@@ -146,7 +146,7 @@ $$
 
 ## Horn 문제의 답
 
-$\alpha,\beta,\gamma$ 가 $n$ 개씩의 내림차순 실수열이라 하자. $A+B=C$ 이고 고유값이 각각 $\alpha,\beta,\gamma$ 인 에르미트 행렬이 존재할 필요충분조건은
+$\alpha,\beta,\gamma$ 가 $n$ 개씩의 내림차순 실수열이라 하자. $A+B=C$ 이고 고윳값이 각각 $\alpha,\beta,\gamma$ 인 에르미트 행렬이 존재할 필요충분조건은
 
 $$
 \sum\gamma_k=\sum\alpha_i+\sum\beta_j\quad\text{이고}\quad

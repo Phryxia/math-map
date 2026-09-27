@@ -34,7 +34,7 @@ $$
 \sum_n\chi(n)\psi(mn)=\chi^{-1}(m)\thinspace g(\chi)
 $$
 
-$\chi$ 가 덧셈 Fourier 변환의 고유벡터이고 $g(\chi)$ 가 고유값이다. Fourier 변환이 유니터리이고 네 번 하면 항등이므로 고유값의 절댓값이 $\sqrt p$ 다.
+$\chi$ 가 덧셈 Fourier 변환의 고유벡터이고 $g(\chi)$ 가 고윳값이다. Fourier 변환이 유니터리이고 네 번 하면 항등이므로 고윳값의 절댓값이 $\sqrt p$ 다.
 
 $$
 |g(\chi)|=\sqrt p\qquad(\chi\ne\text{자명})

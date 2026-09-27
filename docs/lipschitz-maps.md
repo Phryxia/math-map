@@ -62,7 +62,7 @@ $$
 
 ## 미분방정식 해의 유일성
 
-$y'=F(t,y)$ 에서 $F$ 가 $y$ 에 대해 국소 Lipschitz 이면 초기값 문제의 해가 국소적으로 유일하게 존재한다([상미분방정식](ordinary-differential-equations.md)의 Picard–Lindelöf 정리). 증명은 적분 방정식을 축소사상으로 보고 Banach 고정점 정리를 적용한다. $y'=y^{2/3}$ 처럼 Lipschitz 가 아닌 우변에서는 해가 여럿이다.
+$y'=F(t,y)$ 에서 $F$ 가 $y$ 에 대해 국소 Lipschitz 이면 초깃값 문제의 해가 국소적으로 유일하게 존재한다([상미분방정식](ordinary-differential-equations.md)의 Picard–Lindelöf 정리). 증명은 적분 방정식을 축소사상으로 보고 Banach 고정점 정리를 적용한다. $y'=y^{2/3}$ 처럼 Lipschitz 가 아닌 우변에서는 해가 여럿이다.
 
 ## 최적화의 수렴률
 

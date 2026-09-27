@@ -37,7 +37,7 @@ $$
 
 $\chi^s$ 가 de Rham 인 것은 $s\in\mathbb Z$ 일 때뿐이고, 그때 $\chi^s=\mathbb Q_p(-s)$ 는 기하에서 온다. 조건 2 가 연속체 크기의 족에서 $\mathbb Z$ 만 남긴다.
 
-$s=1/3$ 의 $5$ 진 전개 $2+3\cdot5+1\cdot5^2+3\cdot5^3+\cdots$ 는 끝나지 않는다. 지표 $\chi^{1/3}$ 은 [Sen 작용소](sen-theory.md)의 고유값이 정수가 아니라 Hodge–Tate 도 아니고, 어떤 다양체의 코호몰로지에도 들어 있지 않다.
+$s=1/3$ 의 $5$ 진 전개 $2+3\cdot5+1\cdot5^2+3\cdot5^3+\cdots$ 는 끝나지 않는다. 지표 $\chi^{1/3}$ 은 [Sen 작용소](sen-theory.md)의 고윳값이 정수가 아니라 Hodge–Tate 도 아니고, 어떤 다양체의 코호몰로지에도 들어 있지 않다.
 
 ## 1 차원의 경우
 
@@ -134,7 +134,7 @@ $p$ 진 자기동형 형식의 족(Hida 족, eigenvariety)에서 난점이 드�
 
 ## Sen 무게의 정수성
 
-Hodge–Tate 는 de Rham 보다 약한 조건이다. Sen 작용소의 고유값이 정수이고 대각화되면 Hodge–Tate 지만, de Rham 이 되려면 여과가 $B_{\mathrm{dR}}$ 수준에서 정합해야 한다. 실제로 Hodge–Tate 이지만 de Rham 이 아닌 2 차원 표현이 있다. $\mathbb Q_p(1)$ 에 의한 자명하지 않은 확대
+Hodge–Tate 는 de Rham 보다 약한 조건이다. Sen 작용소의 고윳값이 정수이고 대각화되면 Hodge–Tate 지만, de Rham 이 되려면 여과가 $B_{\mathrm{dR}}$ 수준에서 정합해야 한다. 실제로 Hodge–Tate 이지만 de Rham 이 아닌 2 차원 표현이 있다. $\mathbb Q_p(1)$ 에 의한 자명하지 않은 확대
 
 $$
 0\to\mathbb Q_p(1)\to V\to\mathbb Q_p\to0
@@ -161,7 +161,7 @@ Wiles 의 반안정 타원곡선 모듈러성, Breuil–Conrad–Diamond–Taylo
 주어진 표현이 기하적인지 판정하는 절차는 필요조건을 차례로 검사하는 것이다.
 
 1. 도체가 유한한가. 분기하는 소수를 나열할 수 있는가.
-2. Sen 작용소의 고유값이 정수이고 대각화되는가. 아니면 즉시 탈락.
+2. Sen 작용소의 고윳값이 정수이고 대각화되는가. 아니면 즉시 탈락.
 3. 무게가 서로 다르고 홀수인가. 그러면 그 무게와 도체의 $S_k(\Gamma_0(N))$ 를 실제로 계산해 후보 고유형식을 찾는다.
 4. 몇 개의 소수에서 $a_\ell$ 과 $\mathrm{tr}\thinspace\rho(\mathrm{Frob}\_\ell)$ 을 대조한다.
 

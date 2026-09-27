@@ -2,19 +2,19 @@
 
 # 개요
 
-Peano 존재정리는 초기값 문제 $x'=f(t,x)$ , $x(t_0)=x_0$ 에서 $f$ 의 연속성만으로 해가 하나 이상 존재함을 보장한다. Picard–Lindelöf 정리가 요구하는 Lipschitz 조건이 빠지고, 그 대가로 유일성이 빠진다. 증명은 [축약사상 고정점 정리](banach-fixed-point.md) 대신 [Arzelà–Ascoli 정리](arzela-ascoli.md)로 근사해의 극한을 꺼낸다.
+Peano 존재정리는 초깃값 문제 $x'=f(t,x)$ , $x(t_0)=x_0$ 에서 $f$ 의 연속성만으로 해가 하나 이상 존재함을 보장한다. Picard–Lindelöf 정리가 요구하는 Lipschitz 조건이 빠지고, 그 대가로 유일성이 빠진다. 증명은 [축약사상 고정점 정리](banach-fixed-point.md) 대신 [Arzelà–Ascoli 정리](arzela-ascoli.md)로 근사해의 극한을 꺼낸다.
 
 # 직관
 
-[상미분방정식](ordinary-differential-equations.md)의 초기값 문제 $x'=3x^{2/3}$ , $x(0)=0$ 을 Picard 반복으로 풀어 본다. 반복은 $x_0(t)\equiv 0$ 에서 시작해 $x_{k+1}(t)=\int_0^t 3x_k(s)^{2/3}\thinspace ds$ 를 계산하는데, $x_0\equiv 0$ 을 넣으면 $x_1\equiv 0$ 이 나와 반복이 $0$ 에 멈춘다. 그런데 $x(t)=t^3$ 도 이 문제의 해다. $t\mapsto 3t^{2/3}$ 의 기울기가 원점에서 무한대여서 적분 연산자가 축약사상이 아니고, 그래서 반복이 찾지 못한 해가 있다. Lipschitz 상수 $K$ 가 없으면 구간을 $1/K$ 보다 짧게 잡는 수를 쓸 수 없다.
+[상미분방정식](ordinary-differential-equations.md)의 초깃값 문제 $x'=3x^{2/3}$ , $x(0)=0$ 을 Picard 반복으로 풀어 본다. 반복은 $x_0(t)\equiv 0$ 에서 시작해 $x_{k+1}(t)=\int_0^t 3x_k(s)^{2/3}\thinspace ds$ 를 계산하는데, $x_0\equiv 0$ 을 넣으면 $x_1\equiv 0$ 이 나와 반복이 $0$ 에 멈춘다. 그런데 $x(t)=t^3$ 도 이 문제의 해다. $t\mapsto 3t^{2/3}$ 의 기울기가 원점에서 무한대여서 적분 연산자가 축약사상이 아니고, 그래서 반복이 찾지 못한 해가 있다. Lipschitz 상수 $K$ 가 없으면 구간을 $1/K$ 보다 짧게 잡는 수를 쓸 수 없다.
 
 축약사상이 아니면 수렴하는 반복 대신 수렴하는 부분열을 찾는다. 시간축을 폭 $h$ 로 나누고 각 칸에서 기울기를 상수로 고정한 Euler 꺾은선 $x_h$ 를 그리면, 꺾은선의 기울기는 어디서나 $\max\vert f\vert$ 이하다. 그러므로 $h$ 를 바꿔 얻은 꺾은선들은 모두 같은 상수로 Lipschitz 이고 같은 유계 영역에 들어간다. 이 두 성질이 Arzelà–Ascoli 정리의 가정이고, 정리는 [균등수렴](uniform-convergence.md)하는 부분열을 내준다. 그 극한이 해다.
 
 # 정의
 
-## 초기값 문제
+## 초깃값 문제
 
-$D\subseteq\mathbb R\times\mathbb R^n$ 위에서 정의된 $f$ 와 점 $(t_0,x_0)\in D$ 에 대해, 구간 $I\ni t_0$ 에서 미분가능한 $x:I\to\mathbb R^n$ 이 다음을 만족하면 **초기값 문제의 해**다.
+$D\subseteq\mathbb R\times\mathbb R^n$ 위에서 정의된 $f$ 와 점 $(t_0,x_0)\in D$ 에 대해, 구간 $I\ni t_0$ 에서 미분가능한 $x:I\to\mathbb R^n$ 이 다음을 만족하면 **초깃값 문제의 해**다.
 
 $$
 x'(t)=f(t,x(t))\thickspace (t\in I),\qquad x(t_0)=x_0
@@ -24,7 +24,7 @@ $f$ 가 연속이면 이 조건은 적분방정식 $x(t)=x_0+\int_{t_0}^t f(s,x(
 
 ## Peano 존재정리
 
-$R=\lbrace (t,x):\vert t-t_0\vert\le a,\thickspace \Vert x-x_0\Vert\le b\rbrace$ 에서 $f$ 가 연속이고 $M=\max_R\Vert f\Vert$ 라 하자. $\varepsilon=\min(a,b/M)$ 로 두면 구간 $\lbrack t_0-\varepsilon,\thickspace t_0+\varepsilon\rbrack$ 에서 초기값 문제의 해가 적어도 하나 존재한다.[^1]
+$R=\lbrace (t,x):\vert t-t_0\vert\le a,\thickspace \Vert x-x_0\Vert\le b\rbrace$ 에서 $f$ 가 연속이고 $M=\max_R\Vert f\Vert$ 라 하자. $\varepsilon=\min(a,b/M)$ 로 두면 구간 $\lbrack t_0-\varepsilon,\thickspace t_0+\varepsilon\rbrack$ 에서 초깃값 문제의 해가 적어도 하나 존재한다.[^1]
 
 정리는 존재만 주장하고 유일성은 주장하지 않는다.
 
@@ -60,7 +60,7 @@ $\Vert f(t,x)-f(t,y)\Vert\le\omega(\Vert x-y\Vert)$ 인 증가함수 $\omega$ �
 
 ## 무한차원에서의 실패
 
-$\mathbb R^n$ 을 일반적인 Banach 공간으로 바꾸면 정리가 거짓이 된다. Dieudonné 는 수열공간 $c_0$ 에서 연속인 $f$ 로 해가 존재하지 않는 초기값 문제를 만들었다.[^3] 증명이 닫힌 유계집합의 [콤팩트성](compactness.md)을 쓰는데 무한차원에서는 그것이 성립하지 않는다. Picard–Lindelöf 정리는 축약사상만 쓰므로 [Banach 공간](banach-spaces.md)에서도 그대로 성립한다.
+$\mathbb R^n$ 을 일반적인 Banach 공간으로 바꾸면 정리가 거짓이 된다. Dieudonné 는 수열공간 $c_0$ 에서 연속인 $f$ 로 해가 존재하지 않는 초깃값 문제를 만들었다.[^3] 증명이 닫힌 유계집합의 [콤팩트성](compactness.md)을 쓰는데 무한차원에서는 그것이 성립하지 않는다. Picard–Lindelöf 정리는 축약사상만 쓰므로 [Banach 공간](banach-spaces.md)에서도 그대로 성립한다.
 
 # 활용
 
@@ -72,7 +72,7 @@ $\mathbb R^n$ 을 일반적인 Banach 공간으로 바꾸면 정리가 거짓이
 
 [^2]: Philip Hartman, *Ordinary Differential Equations*, 2nd ed., Chapter III §6. Osgood 의 유일성 판정.
 
-[^3]: Jean Dieudonné, Deux exemples singuliers d'équations différentielles, *Acta Scientiarum Mathematicarum (Szeged)* 12 (1950), 38–40. $c_0$ 에서 연속인 우변으로 해가 없는 초기값 문제.
+[^3]: Jean Dieudonné, Deux exemples singuliers d'équations différentielles, *Acta Scientiarum Mathematicarum (Szeged)* 12 (1950), 38–40. $c_0$ 에서 연속인 우변으로 해가 없는 초깃값 문제.
 
 # 연관 문서
 

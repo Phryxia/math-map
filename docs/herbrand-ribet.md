@@ -46,7 +46,7 @@ $$
 a_\ell\equiv1+\ell^{k-1}\pmod{\mathfrak p}\qquad(\ell\ne p\ \text{소수})
 $$
 
-가 성립한다. 우변은 $E_k$ 의 Hecke 고유값이고, 이 합동이 **Eisenstein 합동**이다.
+가 성립한다. 우변은 $E_k$ 의 Hecke 고윳값이고, 이 합동이 **Eisenstein 합동**이다.
 
 ## 가약 표현과 코사이클
 
@@ -99,7 +99,7 @@ E_k=-\frac{B_k}{2k}+\sum_{n\ge1}\sigma_{k-1}(n)q^{n},
 T_\ell E_k=(1+\ell^{k-1})E_k
 $$
 
-다. 첨점형식이 아닌 유일한 Hecke 고유형식이고, 그 고유값이 Eisenstein 합동의 우변이다.
+다. 첨점형식이 아닌 유일한 Hecke 고유형식이고, 그 고윳값이 Eisenstein 합동의 우변이다.
 
 ## Eisenstein 합동
 

@@ -158,7 +158,7 @@ $$
 \mathrm{Tr}\_{K_{n\ell}/K_n}(y_{n\ell})=a_\ell\thinspace y_n
 $$
 
-을 만족한다. $a_\ell$ 은 $f$ 의 $\ell$ 번째 Hecke 고유값이다. 이 정합성에서 유도류 $\kappa_n\in H^1(K,E[p])$ 를 만들면 각 $\kappa_n$ 이 국소 조건을 하나씩 강제해 Selmer 군의 크기를 위에서 누른다. Euler 계는 정합적인 대수류의 열로 Selmer 군을 조이는 장치다.
+을 만족한다. $a_\ell$ 은 $f$ 의 $\ell$ 번째 Hecke 고윳값이다. 이 정합성에서 유도류 $\kappa_n\in H^1(K,E[p])$ 를 만들면 각 $\kappa_n$ 이 국소 조건을 하나씩 강제해 Selmer 군의 크기를 위에서 누른다. Euler 계는 정합적인 대수류의 열로 Selmer 군을 조이는 장치다.
 
 # 성질
 

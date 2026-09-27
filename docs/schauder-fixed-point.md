@@ -62,7 +62,7 @@ $$
 
 # 활용
 
-- **[Peano 존재정리](peano-existence-theorem.md).** 초기값 문제를 적분방정식 $y(t)=y_0+\int_{t_0}^t F(s,y(s))\thinspace ds$ 로 바꾸면 우변이 연속함수 공간 위의 작용소다. [Arzelà–Ascoli 정리](arzela-ascoli.md)가 그 상의 상대콤팩트성을 주므로 Schauder 정리가 해를 준다. Lipschitz 조건이 없어 유일성은 나오지 않는다.
+- **[Peano 존재정리](peano-existence-theorem.md).** 초깃값 문제를 적분방정식 $y(t)=y_0+\int_{t_0}^t F(s,y(s))\thinspace ds$ 로 바꾸면 우변이 연속함수 공간 위의 작용소다. [Arzelà–Ascoli 정리](arzela-ascoli.md)가 그 상의 상대콤팩트성을 주므로 Schauder 정리가 해를 준다. Lipschitz 조건이 없어 유일성은 나오지 않는다.
 - **비선형 타원 방정식.** 경계값 문제를 선형 문제의 해 작용소와 비선형 항의 합성으로 쓰면 그 합성이 콤팩트 사상이고, 선험적 상한으로 불변 볼록집합을 만들면 약해의 존재가 나온다.
 - **적분방정식.** 핵이 연속인 Hammerstein 형 방정식에서 적분작용소가 콤팩트이므로 같은 논법이 적용된다.
 - **Leray–Schauder 차수.** 고정점의 존재를 넘어 개수를 세는 이론으로, 유한차원 Brouwer 차수를 콤팩트 섭동에 대해 확장한 것이다.
