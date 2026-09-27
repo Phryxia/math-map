@@ -50,7 +50,7 @@ $$
 \eta\Big(-\frac1\tau\Big)=\sqrt{-i\tau}\thinspace\eta(\tau)
 $$
 
-이 $\tau\to0$ 의 문제를 $\tau\to i\infty$ 의 문제로 바꾼다. 후자에서는 $q$ 전개의 첫 항만 보면 거동이 읽힌다. 모듈러 대칭이 어려운 극한을 쉬운 극한으로 옮기는 것이 원법의 기술적 핵심이다.
+이 $\tau\to0$ 의 문제를 $\tau\to i\infty$ 의 문제로 바꾼다. 후자에서는 $q$ 전개의 첫 항만 보면 거동이 읽힌다.
 
 # 정의
 

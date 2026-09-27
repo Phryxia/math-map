@@ -131,7 +131,7 @@ $$
 \omega_\psi\big|\_{G\times H}\ \rightsquigarrow\ \pi\ \longleftrightarrow\ \theta(\pi)
 $$
 
-중복도 1 이 여기서도 핵심이다. Howe 가 이를 예측했고 비아르키메데스 홀수 잔여특성에서 Waldspurger 가, 아르키메데스 자리에서 Howe 자신이 증명했다.[^1] 두 군의 표현론을 잇는 사전이라는 점에서 Langlands 함자성의 구체적 사례다.
+중복도 1 이 여기서도 성립한다. Howe 가 이를 예측했고 비아르키메데스 홀수 잔여특성에서 Waldspurger 가, 아르키메데스 자리에서 Howe 자신이 증명했다.[^1] 두 군의 표현론을 잇는 사전이라는 점에서 Langlands 함자성의 구체적 사례다.
 
 ## Shimura 대응
 

@@ -105,7 +105,7 @@ $$
 
 결론적으로 $m$ 번의 access에서 preferred child 변경의 총합은 $O((n+m)\log n)$ 이다.
 
-**(2) splay의 비용.** 각 변경은 splay 한 번에 대응한다. splay 트리의 접근 정리(access lemma)에 따라 크기 $k$ 의 splay 트리에서 splay 한 번의 분할상환 비용은 $O(\log k)$ 이며, 여러 splay 트리를 오가는 경우에도 전체 정점 수를 가중치로 삼는 잠재함수를 쓰면 각 splay가 $O(\log n)$ 으로 묶인다. 이 부분이 Sleator–Tarjan 분석의 기술적 핵심이다[^1].
+**(2) splay의 비용.** 각 변경은 splay 한 번에 대응한다. splay 트리의 접근 정리(access lemma)에 따라 크기 $k$ 의 splay 트리에서 splay 한 번의 분할상환 비용은 $O(\log k)$ 이며, 여러 splay 트리를 오가는 경우에도 전체 정점 수를 가중치로 삼는 잠재함수를 쓰면 각 splay가 $O(\log n)$ 으로 묶인다. 이 잠재함수 분석이 Sleator–Tarjan 의 것이다[^1].
 
 두 결과를 합치면 연산당 $O(\log n)$ 이 나온다. 여기서 $O(\log n)$ 은 분할상환이며 한 번의 연산은 최악의 경우 선형 시간이 걸릴 수 있다. 최악의 경우에도 $O(\log n)$ 을 보장하려면 splay 대신 globally biased search tree를 쓰면 되지만, 구현이 훨씬 복잡하고 상수가 크다.
 

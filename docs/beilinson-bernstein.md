@@ -28,7 +28,7 @@ $$
 \Gamma(X,\mathcal D_X)\ \cong\ U(\mathfrak g)/\bigl(\ker\chi_0\bigr)=U(\mathfrak g)\_{\chi_0}
 $$
 
-$X$ 는 사영다양체인데도 $\mathcal D_X$ 가 많은 단면을 갖는다. 이 성질을 **$\mathcal D$ 아핀**이라 하며 정리의 기술적 핵심이다. 아핀 다양체 위에서 연접층과 가군이 같아지는 Serre 의 사실이, 깃발다양체에서는 $\mathcal D$ 가군에 대해 성립한다.
+$X$ 는 사영다양체인데도 $\mathcal D_X$ 가 많은 단면을 갖는다. 이 성질을 **$\mathcal D$ 아핀**이라 하고, 정리의 증명이 이것을 쓴다. 아핀 다양체 위에서 연접층과 가군이 같아지는 Serre 의 사실이, 깃발다양체에서는 $\mathcal D$ 가군에 대해 성립한다.
 
 ## Borel–Weil–Bott 와의 관계
 
