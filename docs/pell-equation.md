@@ -54,7 +54,7 @@ Dirichlet 의 비둘기집 논법이 $\vert x - y\sqrt d\vert \lt 1/y$ 인 쌍�
 
 **정리.** $x^2 - dy^2 = 1$ 의 양의 해는 모두 $\sqrt d$ 의 수렴분 $p_k/q_k$ 에서 나온다.
 
-$x^2 - dy^2 = 1$ 이면 $\vert x/y - \sqrt d\vert \lt 1/(2y^2)$ 이 되고, Legendre 판정에 의해 $x/y$ 가 수렴분이다. 거꾸로 $\sqrt d$ 의 연분수는 순환하고, 순환 마디 길이를 $\ell$ 이라 하면 $p_k^2 - dq_k^2 = (-1)^{k+1}$ 이 $k \equiv \ell - 1 \pmod \ell$ 에서 성립한다. ∎
+$x^2 - dy^2 = 1$ 이면 $\vert x/y - \sqrt d\vert \lt 1/(2y^2)$ 이 되고, Legendre 판정으로 $x/y$ 가 수렴분이다. 거꾸로 $\sqrt d$ 의 연분수는 순환하고, 순환 마디 길이를 $\ell$ 이라 하면 $p_k^2 - dq_k^2 = (-1)^{k+1}$ 이 $k \equiv \ell - 1 \pmod \ell$ 에서 성립한다. ∎
 
 **따름정리.** 순환 마디 길이 $\ell$ 이 짝수이면 기본해가 $p_{\ell-1}/q_{\ell-1}$ 에서 나오고 음의 Pell 방정식은 풀리지 않는다. $\ell$ 이 홀수이면 $p_{\ell-1}$ 이 음의 Pell 방정식을 풀고 그 제곱이 Pell 방정식의 기본해다.
 

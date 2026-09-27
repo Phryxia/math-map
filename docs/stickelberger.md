@@ -37,7 +37,7 @@ g(\omega^{-k})=\sum_{a=1}^{p-1}\omega^{-k}(a)(1+\pi)^{a}
 =\sum_{j\ge0}\binom{\cdot}{j}\pi^{j}\sum_{a}\omega^{-k}(a)a^{\thinspace j}\big/j!\ \text{꼴}
 $$
 
-로 전개된다. 안쪽 합 $\sum_a\omega^{-k}(a)a^{j}$ 는 $\omega$ 가 $\bmod p$ 에서 항등이므로 직교성에 의해 $j\equiv k$ 일 때만 $p$ 를 법으로 남고, 가장 낮은 남는 항이 $j=k$ 라 부치가 $k$ 다. 같은 계산을 더 밀면 **Stickelberger 합동**
+로 전개된다. 안쪽 합 $\sum_a\omega^{-k}(a)a^{j}$ 는 $\omega$ 가 $\bmod p$ 에서 항등이므로 직교성으로 $j\equiv k$ 일 때만 $p$ 를 법으로 남고, 가장 낮은 남는 항이 $j=k$ 라 부치가 $k$ 다. 같은 계산을 더 밀면 **Stickelberger 합동**
 
 $$
 \frac{g(\omega^{-k})}{\pi^{k}}\equiv\frac{-1}{k!}\pmod{\pi}
@@ -89,7 +89,7 @@ $$
 
 **정리.** $I_m$ 은 $\mathbb Q(\mu_m)$ 의 이데알류군 $\mathrm{Cl}(K)$ 를 소멸시킨다. 곧 $\alpha\in I_m$ 과 아이디얼류 $[\mathfrak a]$ 에 대해 $[\mathfrak a]^{\alpha}=1$ 이다[^1].
 
-**증명의 요지.** 류군은 $m$ 과 서로소인 1 차 소 아이디얼 $\mathfrak p$ 의 류로 생성된다. $\mathfrak p$ 의 잉여체 위에서 Gauss 합을 만들면 위 분해에 의해 $\mathfrak p^{(c-\sigma_c)\theta}$ 가 $g$ 의 적당한 거듭제곱이 생성하는 주 아이디얼이 되므로 그 류가 자명하다. $\square$
+**증명의 요지.** 류군은 $m$ 과 서로소인 1 차 소 아이디얼 $\mathfrak p$ 의 류로 생성된다. $\mathfrak p$ 의 잉여체 위에서 Gauss 합을 만들면 위 분해로 $\mathfrak p^{(c-\sigma_c)\theta}$ 가 $g$ 의 적당한 거듭제곱이 생성하는 주 아이디얼이 되므로 그 류가 자명하다. $\square$
 
 ## $L$ 값과의 관계
 

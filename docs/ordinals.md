@@ -86,7 +86,7 @@ $$
 \forall\alpha\thinspace\bigl(\forall\beta\lt\alpha\ P(\beta)\ \to\ P(\alpha)\bigr)\ \Longrightarrow\ \forall\alpha\ P(\alpha)
 $$
 
-증명: $P$ 가 거짓인 서수가 있다고 하자. 그중 하나를 $\gamma$ 라 하면 $\gamma+1$ 의 원소 중 $P$ 가 거짓인 것들의 집합은 공집합이 아니고, 정렬성에 의해 최소 원소 $\alpha$ 를 갖는다. $\alpha$ 미만에서는 $P$ 가 성립하므로 가정에 의해 $\alpha$ 에서도 성립하고, 모순이다.
+증명: $P$ 가 거짓인 서수가 있다고 하자. 그중 하나를 $\gamma$ 라 하면 $\gamma+1$ 의 원소 중 $P$ 가 거짓인 것들의 집합은 공집합이 아니고, 정렬성으로 최소 원소 $\alpha$ 를 갖는다. $\alpha$ 미만에서는 $P$ 가 성립하므로 가정에서 $\alpha$ 에서도 성립하고, 모순이다.
 
 실무에서는 0 단계, 후속 단계, 극한 단계 셋으로 나누어 확인하는 형태를 더 많이 쓴다.
 

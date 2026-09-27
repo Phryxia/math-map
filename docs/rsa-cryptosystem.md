@@ -10,7 +10,7 @@ RSA 의 안전성은 "큰 합성수의 인수분해가 어렵다"는 가정에 �
 
 # 직관
 
-[합동 연산](modular-arithmetic.md)에서 가역원들의 곱셈군을 생각하자. $\mathbb{Z}/n\mathbb{Z}$ 의 가역원군 $(\mathbb{Z}/n\mathbb{Z})^\ast$ 의 크기는 Euler 함수 $\varphi(n)$ 이고, 이 [군](groups.md)에서는 Lagrange 정리에 의해 모든 원소가 $\varphi(n)$ 제곱하면 1이 된다. 따라서 지수는 $\varphi(n)$ 을 법으로만 의미가 있다.
+[합동 연산](modular-arithmetic.md)에서 가역원들의 곱셈군을 생각하자. $\mathbb{Z}/n\mathbb{Z}$ 의 가역원군 $(\mathbb{Z}/n\mathbb{Z})^\ast$ 의 크기는 Euler 함수 $\varphi(n)$ 이고, 이 [군](groups.md)에서는 Lagrange 정리로 모든 원소가 $\varphi(n)$ 제곱하면 1이 된다. 따라서 지수는 $\varphi(n)$ 을 법으로만 의미가 있다.
 
 여기서 아이디어가 나온다. $e$ 와 $d$ 를 $ed \equiv 1 \pmod{\varphi(n)}$ 이 되도록 잡으면 $(m^e)^d = m^{1 + k\varphi(n)} = m$ 이다. $e$ 를 공개하고 $d$ 를 숨기면, 누구나 암호화할 수 있고 $d$ 를 가진 사람만 복호화할 수 있다.
 
@@ -67,13 +67,13 @@ $$
 증명. $ed = 1 + k\varphi(n)$ 인 정수 $k\ge0$ 이 있다. $\bmod p$ 에서 두 경우로 나눈다.
 
 - $p$ 가 $m$ 을 나누면 양변이 모두 $0$ 이다.
-- 아니면 [Fermat 소정리](fermat-euler-theorem.md)에 의해 $m^{p-1} \equiv 1 \pmod{p}$ 이고,
+- 아니면 [Fermat 소정리](fermat-euler-theorem.md)로 $m^{p-1} \equiv 1 \pmod{p}$ 이고,
 
 $$
 m^{ed} = m \cdot \left(m^{p-1}\right)^{k(q-1)} \equiv m \pmod p .
 $$
 
-같은 논증이 $q$ 를 법으로 해도 성립한다. 따라서 $m^{ed} - m$ 은 $p$ 로도 $q$ 로도 나누어떨어지고, $p \ne q$ 이므로 [중국인의 나머지 정리](chinese-remainder-theorem.md)(또는 유일분해)에 의해 $n = pq$ 로 나누어떨어진다. 즉 $m^{ed} \equiv m \pmod{n}$ 이다. ∎
+같은 논증이 $q$ 를 법으로 해도 성립한다. 따라서 $m^{ed} - m$ 은 $p$ 로도 $q$ 로도 나누어떨어지고, $p \ne q$ 이므로 [중국인의 나머지 정리](chinese-remainder-theorem.md)(또는 유일분해)로 $n = pq$ 로 나누어떨어진다. 즉 $m^{ed} \equiv m \pmod{n}$ 이다. ∎
 
 Euler 정리만 쓰면 $\gcd(m,n)=1$ 인 경우만 처리되지만, 위처럼 소수별로 나눈 뒤 CRT(Chinese remainder theorem)로 합치면 $m$ 이 $p$ 나 $q$ 의 배수인 예외적인 경우까지 포함된다. 이 "소수별로 확인하고 CRT 로 합친다"는 패턴은 RSA 분석 전반에서 반복된다.
 
@@ -131,7 +131,7 @@ $$
 
 ## 구조적 관찰
 
-- $(\mathbb{Z}/n\mathbb{Z})^\ast$ 는 CRT 에 의해 $(\mathbb{Z}/p\mathbb{Z})^\ast \times (\mathbb{Z}/q\mathbb{Z})^\ast$ 와 군 동형이다. 각 성분이 순환군이므로 전체 군의 지수(exponent)는 $\lambda(n) = \mathrm{lcm}(p-1, q-1)$ 이며, $ed \equiv 1 \pmod{\lambda(n)}$ 만으로도 정당성 증명이 통과한다.
+- $(\mathbb{Z}/n\mathbb{Z})^\ast$ 는 CRT 로 $(\mathbb{Z}/p\mathbb{Z})^\ast \times (\mathbb{Z}/q\mathbb{Z})^\ast$ 와 군 동형이다. 각 성분이 순환군이므로 전체 군의 지수(exponent)는 $\lambda(n) = \mathrm{lcm}(p-1, q-1)$ 이며, $ed \equiv 1 \pmod{\lambda(n)}$ 만으로도 정당성 증명이 통과한다.
 - 제곱근이 넷이라는 사실이 여러 공격의 근원이다. $x^2 \equiv y^2 \pmod{n}$ 이고 $x \not\equiv \pm y$ 이면 $\gcd(x-y, n)$ 이 진약수다. Fermat 소정리 기반의 소수판정(Miller–Rabin)과 인수분해 알고리즘이 모두 이 성질을 쓴다.
 - $n$ 이 [환](rings.md) $\mathbb{Z}/n\mathbb{Z}$ 을 정의하고 CRT 는 환 동형 $\mathbb{Z}/n\mathbb{Z} \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z}$ 를 준다([몫환](ideals-quotient-rings.md)). 두 성분은 [유한체](finite-fields.md)다.
 
