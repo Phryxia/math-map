@@ -101,6 +101,7 @@ Zariski 기하는 각 거듭제곱 $D^n$ 에 Noether 위상이 주어지고 다�
 
 ## 더 알아보기
 
+- [군 배치 정리](group-configuration.md)
 - [미분적으로 닫힌 체](differentially-closed-fields.md)
 - [Mordell–Lang 추측](mordell-lang.md)
 

@@ -50,6 +50,7 @@ graph TD
 - [안정 이론](stable-theories.md): 매개변수 위의 타입 개수로 매긴 조건, 순서 성질의 부재와 갈래짓기 독립
 - [Morley 범주성 정리](morley-categoricity.md): 비가산 기수 하나에서의 범주성이 모든 비가산 기수로 옮겨가는 이유, 강최소 집합과 차원
 - [Zilber 삼분법](zilber-trichotomy.md): 강최소 집합의 프리기하가 자명, 벡터공간, 대수적으로 닫힌 체 셋으로 갈린다는 진술과 Hrushovski 의 반례
+- [군 배치 정리](group-configuration.md): 여섯 원소의 독립성 패턴에서 정의 가능한 군을 해석하는 정리, 삼분법이 군을 얻는 단계
 - [미분적으로 닫힌 체](differentially-closed-fields.md): 미분 방정식의 해를 모두 갖는 체, 미분 닫힘의 유일성과 강최소 집합의 삼분법
 - [Mordell–Lang 추측](mordell-lang.md): 삼분법을 미분체와 차분체에 적용해 아벨 다양체의 유리점을 결정하는 산술 응용
 - [o-최소성](o-minimality.md): 정의 가능 집합이 구간과 점의 유한 합집합이라는 조건, 셀 분해와 차원
