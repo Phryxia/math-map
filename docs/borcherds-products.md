@@ -2,7 +2,7 @@
 
 # 개요
 
-Borcherds 곱은 약정칙 [모듈러 형식](modular-forms.md)의 계수를 지수로 삼아 만든 무한곱이며, 서명 $(2,n)$ 직교군의 자기동형 형식이 된다.
+Borcherds 곱은 약정칙 [모듈러 형식](modular-forms.md)의 계수를 지수로 삼아 만든 무한곱이며, 서명 $(2,n)$ 직교군의 자기동형 형식이 된다. 입력은 짝수 격자의 [Weil 표현](weil-representation.md)에 대한 벡터값 약정칙 형식이고, 그 주요부 계수가 무한곱의 지수와 인자를 함께 정한다.
 
 [Mock 모듈러 형식](mock-modular-forms.md)에 나오는 **약정칙 형식** $M^!\_k$ 는 첨점에서 극을 허용하는 모듈러 형식이고, $q$ 전개에 음수 차수 항이 있어 계수가 빠르게 자란다. 무게 $1-n/2$ 의 약정칙 형식
 
@@ -129,10 +129,11 @@ Heegner 인자들의 산술적 교차수가 [Eisenstein 급수](eisenstein-serie
 
 ## 선수지식
 
+- [Weil 표현과 theta 대응](weil-representation.md)
 - [Mock 모듈러 형식과 Zwegers 이론](mock-modular-forms.md)
 
 ## 더 알아보기
 
 아직 연결한 문서가 없다.
 
-#number_theory #complex_analysis #construction
+#number_theory #complex_analysis #group_theory #construction
