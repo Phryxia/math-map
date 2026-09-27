@@ -2,7 +2,7 @@
 
 # 개요
 
-Gorenstein 환은 [Cohen–Macaulay 환](cohen-macaulay-rings.md) 가운데 자기 쌍대성을 갖는 것이다. Cohen–Macaulay 조건은 깊이와 차원이 같다는 것만 말하고, Gorenstein 조건은 그 위에 최고차 국소 코호몰로지를 나타내는 [가군](modules.md)이 환 자신과 동형이라는 것을 더한다.
+Gorenstein 환은 [Cohen–Macaulay 환](cohen-macaulay-rings.md) 가운데 자기 쌍대성을 갖는 것이다. Cohen–Macaulay 조건은 깊이와 차원이 같다는 것만 말하고, Gorenstein 조건은 그 위에 최고차 [국소 코호몰로지](local-cohomology.md)를 나타내는 [가군](modules.md)이 환 자신과 동형이라는 것을 더한다.
 
 정칙 국소환은 Gorenstein 이고 Gorenstein 환은 Cohen–Macaulay 이며, 두 포함은 모두 진짜다. 이 자리 덕분에 특이점을 가진 대상에도 쌍대성을 쓸 수 있고, 대수기하의 쌍대 층이 가역층이 되는 조건이 이것이다.
 

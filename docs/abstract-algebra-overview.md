@@ -56,6 +56,7 @@ graph TD
 - [Cohen–Macaulay 환](cohen-macaulay-rings.md): 깊이와 차원이 같은 국소환, 박힌 성분의 부재와 Auslander–Buchsbaum 공식
 - [Gorenstein 환](gorenstein-rings.md): 유형이 1 인 Cohen–Macaulay 환, 표준 가군의 자유성과 국소 쌍대성
 - [Koszul 복합체](koszul-complex.md): 원소열로 만든 사슬 복합체, 정칙열 판정과 깊이 계산
+- [국소 코호몰로지](local-cohomology.md): 아이디얼로 소멸되는 부분의 유도 함자, 깊이와 차원이 소멸 차수로 나타나는 것과 국소 쌍대성
 - [Dedekind 정역](dedekind-domains.md): 정수론으로 가는 문
 
 ## 가군
