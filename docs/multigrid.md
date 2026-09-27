@@ -49,7 +49,7 @@ function vcycle(level, b, x) {
 }
 ```
 
-성긴 단계에서 재귀 호출을 두 번 하면 W 사이클이고, 가장 성긴 격자에서 시작해 한 단계씩 내려오며 보간한 값을 초기 근사로 쓰면 완전 다중격자다.
+성긴 단계에서 재귀 호출을 두 번 하면 W 사이클이고, 가장 성긴 격자에서 시작해 한 단계씩 내려오며 보간한 값을 초기 근사로 쓰면 [완전 다중격자](full-multigrid.md)다.
 
 # 성질
 
@@ -99,6 +99,7 @@ $$
 ## 더 알아보기
 
 - [Fourier 국소 해석](local-fourier-analysis.md)
+- [완전 다중격자](full-multigrid.md)
 - [대수적 다중격자](algebraic-multigrid.md)
 - [영역 분할법](domain-decomposition.md)
 
