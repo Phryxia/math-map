@@ -77,7 +77,7 @@ $D_k=\mathrm{diag}(\sqrt{v_k}+\varepsilon)$ 로 두면 갱신이 $x_{k+1}=x_k-\e
 - **신경망 학습.** 층마다 기울기의 규모가 다른 깊은 신경망에서 Adam 이 층별 보폭 조정을 대신한다. 보폭 $\eta$ 하나만 정하면 되고 좌표별 조정은 $v_k$ 가 맡는다.
 - **희소 기울기.** 자연어 모형의 단어 임베딩에서 드문 단어에 대응하는 좌표는 대부분의 걸음에서 기울기가 $0$ 이다. AdaGrad 의 후회 한계에서 그 좌표의 항이 $\sqrt{T_j}$ 로 줄어들고, 실제 갱신에서도 그 좌표의 보폭이 크게 남는다.
 - **변분 추론.** [변분 오토인코더](variational-autoencoder.md)의 목적함수 기울기는 재모수화가 주는 불편 추정량이고, 그 잡음 아래에서 Adam 이 기본 최적화기로 쓰인다.
-- **강화학습.** [정책 경사](policy-gradient.md)의 점수 함수 추정량은 분산이 커서 좌표마다 규모가 크게 다르다.
+- **강화학습.** [정책 경사](policy-gradient.md)의 점수함수 추정량은 분산이 커서 좌표마다 규모가 크게 다르다.
 
 [^1]: D. P. Kingma and J. Ba, "Adam: A Method for Stochastic Optimization", International Conference on Learning Representations (2015).
 

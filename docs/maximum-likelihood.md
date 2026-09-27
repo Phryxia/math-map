@@ -26,9 +26,9 @@ $$
 \hat\theta=\mathop{\mathrm{arg\thinspace max}}\_{\theta\in\Theta}\ \ell(\theta)
 $$
 
-## score와 Fisher 정보
+## 점수함수와 Fisher 정보
 
-로그가능도의 모수에 대한 도함수를 score라 한다. 미분과 적분의 교환이 허용되는 정칙 조건 아래 score의 기댓값은 $0$ 이다.
+로그가능도의 모수에 대한 도함수를 **점수함수**(score)라 한다. 미분과 적분의 교환이 허용되는 정칙 조건 아래 점수함수의 기댓값은 $0$ 이다.
 
 $$
 s(\theta;x)=\frac{\partial}{\partial\theta}\log f(x;\theta),
@@ -36,7 +36,7 @@ s(\theta;x)=\frac{\partial}{\partial\theta}\log f(x;\theta),
 \mathbb E_\theta\big[s(\theta;X)\big]=0
 $$
 
-Fisher 정보는 score의 분산이며, 같은 조건 아래 로그가능도의 2차 도함수의 기댓값의 음수와 같다.
+Fisher 정보는 점수함수의 분산이며, 같은 조건 아래 로그가능도의 2차 도함수의 기댓값의 음수와 같다.
 
 $$
 I(\theta)=\mathbb E_\theta\negthinspace\left[s(\theta;X)^2\right]
@@ -53,13 +53,13 @@ $$
 
 ## 1차 조건
 
-$\Theta$ 가 열린 구간이고 로그가능도가 미분가능하면 내부 최대점에서 score 방정식이 성립한다. 이는 필요조건일 뿐이므로, 2차 도함수가 음수임을 확인하거나 경계값과 비교해야 한다.
+$\Theta$ 가 열린 구간이고 로그가능도가 미분가능하면 내부 최대점에서 점수 방정식이 성립한다. 이는 필요조건일 뿐이므로, 2차 도함수가 음수임을 확인하거나 경계값과 비교해야 한다.
 
 $$
 \ell'(\hat\theta)=\sum_{i=1}^{n}\frac{\partial}{\partial\theta}\log f(x_i;\hat\theta)=0
 $$
 
-최대점이 경계에 놓이는 경우도 흔하다. 균등분포 $U(0,\theta)$ 에서 가능도는 $\theta$ 가 모든 관측값 이상인 구간에서 $\theta^{-n}$ 에 비례하므로 미분으로는 극점이 없고 최대점은 관측값의 최댓값이다. score 방정식을 기계적으로 쓰면 틀린다.
+최대점이 경계에 놓이는 경우도 흔하다. 균등분포 $U(0,\theta)$ 에서 가능도는 $\theta$ 가 모든 관측값 이상인 구간에서 $\theta^{-n}$ 에 비례하므로 미분으로는 극점이 없고 최대점은 관측값의 최댓값이다. 점수 방정식을 기계적으로 쓰면 틀린다.
 
 ## 변환 불변성
 
@@ -91,7 +91,7 @@ $$
 \sqrt n\thinspace(\hat\theta-\theta_0)\ \xrightarrow{\ d\ }\ N\negthinspace\left(0,\ I(\theta_0)^{-1}\right)
 $$
 
-증명 개요: score를 참값 주위에서 1차 Taylor 전개한다.
+증명 개요: 점수함수를 참값 주위에서 1차 Taylor 전개한다.
 
 $$
 0=\ell'(\hat\theta)\approx\ell'(\theta_0)+\ell''(\theta_0)(\hat\theta-\theta_0)
@@ -100,7 +100,7 @@ $$
 \frac{n^{-1/2}\ell'(\theta_0)}{-n^{-1}\ell''(\theta_0)}
 $$
 
-분자는 평균 $0$ , 분산 $I(\theta_0)$ 인 i.i.d. score의 표준화된 합이므로 [중심극한정리](central-limit-theorem.md)로 정규분포로 수렴하고, 분모는 큰 수의 법칙으로 $I(\theta_0)$ 로 수렴한다. 두 결과를 Slutsky 정리로 합치면 결론이 나온다. 나머지항의 통제에 일치성과 3차 미분의 국소적 유계성이 쓰인다.
+분자는 평균 $0$ , 분산 $I(\theta_0)$ 인 i.i.d. 점수함수의 표준화된 합이므로 [중심극한정리](central-limit-theorem.md)로 정규분포로 수렴하고, 분모는 큰 수의 법칙으로 $I(\theta_0)$ 로 수렴한다. 두 결과를 Slutsky 정리로 합치면 결론이 나온다. 나머지항의 통제에 일치성과 3차 미분의 국소적 유계성이 쓰인다.
 
 점근분산이 Cramér–Rao 하한(불편추정량의 분산은 표본 전체의 Fisher 정보 $nI(\theta)$ 의 역수 이상)과 일치하므로 MLE 는 점근적으로 효율적이다. 다만 유한 표본에서는 MLE 보다 평균제곱오차가 작은 추정량이 존재할 수 있다.
 
@@ -142,13 +142,13 @@ $$
 
 ## 수치 최적화
 
-닫힌 해가 없으면 score 방정식을 수치적으로 푼다. Newton–Raphson은 2차 도함수를 쓰고, 그 자리에 Fisher 정보를 넣은 변형이 Fisher scoring이다. 로그가능도가 오목하면(예: 지수족의 자연매개화) 전역해가 보장되고 [볼록성](convexity.md) 기반의 [경사하강법](gradient-descent.md)이 그대로 적용된다.
+닫힌 해가 없으면 점수 방정식을 수치적으로 푼다. Newton–Raphson은 2차 도함수를 쓰고, 그 자리에 Fisher 정보를 넣은 변형이 Fisher scoring이다. 로그가능도가 오목하면(예: 지수족의 자연매개화) 전역해가 보장되고 [볼록성](convexity.md) 기반의 [경사하강법](gradient-descent.md)이 그대로 적용된다.
 
 ## 다른 추론 방식과의 관계
 
 가능도에 사전분포를 곱해 최대화하면 최대사후확률(maximum a posteriori, MAP) 추정이 되고, 사전분포가 균등하면 MLE 와 같다. 이 관계는 [Bayes 정리](bayes.md)에서 직접 읽힌다. 정규분포 사전분포를 쓴 MAP 는 제곱 벌점(ridge)과 같고, Laplace 사전분포는 절댓값 벌점(lasso)과 같다. 가능도비를 검정통계량으로 쓰면 [가설검정](hypothesis-testing.md)의 가능도비 검정이 되며, Wilks 정리가 그 점근분포를 준다.
 
-[^1]: Michal Kulich, "Maximum Likelihood Estimation Theory", NMST432 lecture notes, Charles University (정칙 조건, score, Fisher 정보, 점근 결과). https://www.karlin.mff.cuni.cz/~kulich/vyuka/glm/doc/mle_summary.pdf
+[^1]: Michal Kulich, "Maximum Likelihood Estimation Theory", NMST432 lecture notes, Charles University (정칙 조건, 점수함수, Fisher 정보, 점근 결과). https://www.karlin.mff.cuni.cz/~kulich/vyuka/glm/doc/mle_summary.pdf
 [^2]: Gregory Gundersen, "Asymptotic Normality of Maximum Likelihood Estimators" (Taylor 전개 증명 개요와 Fisher 정보의 역수 형태 점근분산). https://gregorygundersen.com/blog/2019/11/28/asymptotic-normality-mle/
 
 # 연관 문서

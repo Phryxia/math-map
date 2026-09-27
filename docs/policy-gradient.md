@@ -28,13 +28,13 @@ $$J(\theta)=\mathbb E\_{\tau\sim p_\theta}\lbrack R(\tau)\rbrack,\qquad R(\tau)=
 
 **정책 경사법**은 $\nabla_\theta J$ 의 불편추정량 $g$ 를 표본에서 만들어 $\theta\leftarrow\theta+\eta\thinspace g$ 로 올리는 [확률근사](stochastic-approximation.md)다.
 
-## 점수 함수 추정량
+## 점수함수 추정량
 
 $\nabla_\theta p_\theta=p_\theta\thinspace\nabla_\theta\log p_\theta$ 를 쓰면 기울기가 기댓값으로 적힌다.
 
 $$\nabla_\theta J(\theta)=\mathbb E\_{\tau\sim p_\theta}\lbrack R(\tau)\thinspace\nabla_\theta\log p_\theta(\tau)\rbrack$$
 
-$\nabla_\theta\log\pi_\theta$ 를 **점수 함수**라 한다.
+$\nabla_\theta\log\pi_\theta$ 를 **점수함수**(score function)라 한다.
 
 # 성질
 
@@ -44,7 +44,7 @@ $$\nabla_\theta J(\theta)=\mathbb E\_{\pi_\theta}\lbrack\thinspace\nabla_\theta\
 
 이 등식이 정책 경사 정리다[^2].
 
-증명의 요지. 점수 함수 추정량을 시각별로 풀면 $\nabla_\theta\log\pi_\theta(a_t\mid s_t)$ 마다 경로 전체의 보상 $R(\tau)$ 가 곱해진다. 시각 $t$ 보다 앞선 보상은 $s_t$ 가 주어졌을 때 $a_t$ 와 독립이고, 점수 함수의 조건부 기댓값이 $0$ 이므로 그 항들이 사라진다. 남은 것은 $t$ 이후의 할인 보상이고, 그 조건부 기댓값이 $Q^{\pi_\theta}(s_t,a_t)$ 다.
+증명의 요지. 점수함수 추정량을 시각별로 풀면 $\nabla_\theta\log\pi_\theta(a_t\mid s_t)$ 마다 경로 전체의 보상 $R(\tau)$ 가 곱해진다. 시각 $t$ 보다 앞선 보상은 $s_t$ 가 주어졌을 때 $a_t$ 와 독립이고, 점수함수의 조건부 기댓값이 $0$ 이므로 그 항들이 사라진다. 남은 것은 $t$ 이후의 할인 보상이고, 그 조건부 기댓값이 $Q^{\pi_\theta}(s_t,a_t)$ 다.
 
 ## 기준선
 
@@ -80,7 +80,7 @@ function reinforce(policy, env, stepSize, baseline) {
 # 활용
 
 - **연속 행동 제어.** 관절 토크나 조향각처럼 행동이 실수 벡터인 문제에서 Gauss 정책 $\pi_\theta(a\mid s)=\mathcal N(\mu_\theta(s),\sigma^2)$ 을 두고 $\mu_\theta$ 를 올린다.
-- **이산 잠재변수의 미분.** [변분 오토인코더](variational-autoencoder.md)에서 잠재변수가 이산이면 재모수화를 쓸 수 없고, 점수 함수 추정량이 그 자리를 대신한다.
+- **이산 잠재변수의 미분.** [변분 오토인코더](variational-autoencoder.md)에서 잠재변수가 이산이면 재모수화를 쓸 수 없고, 점수함수 추정량이 그 자리를 대신한다.
 - **행위자–비평자.** 이점 함수를 따로 학습한 근사로 대신하면 한 경로가 끝나기를 기다리지 않고 매 단계 갱신한다. 비평자의 갱신이 [Q 학습](q-learning.md)의 시간차 오차와 같은 꼴이다.
 - **보폭의 제한.** 정책이 한 번에 크게 움직이면 표본을 모은 정책과 갱신된 정책이 달라져 추정이 무너진다. 두 정책 사이의 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)를 제약으로 걸어 보폭을 재는 방법을 쓴다.
 

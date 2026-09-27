@@ -93,7 +93,7 @@ $$
 
 ## 축약 전략
 
-한 항에 redex가 여럿 있을 때 어느 것을 먼저 줄일지가 전략이다.
+$\beta$ -축약을 적용할 수 있는 부분항을 **redex**(reducible expression)라 한다. 한 항에 redex가 여럿 있을 때 어느 것을 먼저 줄일지가 전략이다.
 
 - **정규 순서(normal order).** 가장 왼쪽 바깥쪽 redex부터. 지연 평가에 대응한다.
 - **값 호출(applicative order).** 인자를 먼저 정규형으로 만든 뒤 적용한다. 대부분의 실제 언어가 쓴다.
@@ -150,7 +150,7 @@ flowchart TD
 
 ## 언어와 시스템에서의 쓰임
 
-- **함수형 언어의 핵심.** Haskell, OCaml, Scheme의 의미론은 lambda calculus에 상수·자료형·평가 전략을 더한 것으로 정의된다. 컴파일러 중간 표현(GHC 의 Core 등)도 타입 있는 lambda calculus다.
+- **함수형 언어의 핵심.** Haskell, OCaml, Scheme의 의미론은 lambda calculus에 상수·자료형·평가 전략을 더한 것으로 정의된다. 컴파일러의 중간 표현도 타입 있는 lambda calculus다. GHC(Glasgow Haskell Compiler) 의 Core 가 그 예다.
 - **클로저와 고차함수.** 자유변수를 담은 환경과 함께 함수를 값으로 다루는 구현이 곧 $\lambda$ 추상의 기계적 실현이다. 주류 명령형 언어의 람다/클로저 기능도 같은 기원이다.
 - **평가 전략의 설계.** 지연 평가는 정규 순서의 공학적 구현(그래프 축약, thunk)이고, 엄격 평가는 값 호출이다. 두 전략의 종료성 차이가 그대로 언어 설계의 절충으로 나타난다.
 - **증명 보조 도구.** 의존 타입 체계(Calculus of Constructions 등)는 STLC 를 확장한 것이며, 정리 증명은 타입이 붙은 항을 구성하는 일이다. 강한 정규화가 논리적 무모순성과 직결된다.

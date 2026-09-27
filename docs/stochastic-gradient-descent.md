@@ -67,7 +67,7 @@ $$\mathbb E\Vert x_k-x^\ast\Vert^2=O\left(\frac{\sigma^2}{\mu^2 k}\right)$$
 - **신경망 학습.** 역전파가 미니배치 하나의 기울기를 주고 그 기울기로 한 걸음 옮긴다. 배치 크기가 기울기의 분산과 한 걸음의 비용을 동시에 정한다.
 - **온라인 학습.** 자료가 한 번에 하나씩 들어오고 다시 보지 않는 상황에서 기댓값 꼴의 목적함수를 그대로 최소화한다.
 - **변분 추론.** [변분 오토인코더](variational-autoencoder.md)에서 목적함수가 잠재변수에 대한 기댓값이고, 재모수화가 그 기댓값의 불편 기울기 추정량을 만든다.
-- **강화학습.** [정책 경사](policy-gradient.md)의 갱신이 점수 함수 추정량을 기울기로 쓴 이 방법이다.
+- **강화학습.** [정책 경사](policy-gradient.md)의 갱신이 점수함수 추정량을 기울기로 쓴 이 방법이다.
 
 [^1]: A. Nemirovski, A. Juditsky, G. Lan, A. Shapiro, "Robust Stochastic Approximation Approach to Stochastic Programming", SIAM Journal on Optimization **19** (2009), 1574–1609.
 
