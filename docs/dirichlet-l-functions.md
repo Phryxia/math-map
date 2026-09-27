@@ -47,7 +47,7 @@ $\log L(s,\chi)$ 를 다루는데 $L(1,\chi)=0$ 이면 로그가 $-\infty$ 로 �
 
 동치로, 군 준동형 $(\mathbb Z/q\mathbb Z)^\times\to\mathbb C^\times$ 를 $\mathbb Z$ 로 끌어올린 뒤 단원이 아닌 곳에서 $0$ 으로 확장한 것이다. 단원군이 유한하므로 $\chi(n)$ 은 $\varphi(q)$ 제곱근이고 $|\chi(n)|\in\lbrace 0,1\rbrace$ 이다.
 
-법 $q$ 의 지표는 정확히 $\varphi(q)$ 개다. 유한 아벨군 $G$ 와 그 지표군 $\hat G$ 가 동형이기 때문이다. 모든 단원을 $1$ 로 보내는 지표를 주지표 $\chi_0$ 라 한다.
+유한 아벨군 $G$ 와 그 지표군 $\hat G$ 가 동형이므로 법 $q$ 의 지표는 정확히 $\varphi(q)$ 개다. 모든 단원을 $1$ 로 보내는 지표를 주지표 $\chi_0$ 라 한다.
 
 ## 도체와 원시 지표
 
@@ -136,7 +136,7 @@ $\mathbb F_q$ 위의 [다항식환](polynomial-rings.md) $\mathbb F_q[t]$ 는 �
 
 차이는 계수가 유한하다는 점이다. $\mathbb F_q[t]$ 의 zeta 함수는 유리함수이고 [유한체](finite-fields.md) 위 곡선의 $L$ 함수는 다항식이라 0 점이 유한 개다. Weil 이 1948 년에 곡선에 대해, Deligne 이 1974 년에 일반 다양체에 대해 그 0 점들의 절댓값이 $q^{-1/2}$ 임을 증명했다.
 
-증명이 정수로 옮겨 오지 않는 것은 도구가 기하적이기 때문이다. 유한체 위의 다양체에는 [코호몰로지](cohomology.md)와 Frobenius 작용이 있고 0 점이 그 고윳값으로 나온다. $\mathrm{Spec}\thinspace\mathbb Z$ 에 대응하는 기하를 세우려는 시도는 아직 성공하지 못했다.
+도구가 기하적이므로 증명이 정수로 옮겨 오지 않는다. 유한체 위의 다양체에는 [코호몰로지](cohomology.md)와 Frobenius 작용이 있고 0 점이 그 고윳값으로 나온다. $\mathrm{Spec}\thinspace\mathbb Z$ 에 대응하는 기하를 세우려는 시도는 아직 성공하지 못했다.
 
 ## Chebyshev 편향
 
