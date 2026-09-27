@@ -27,7 +27,7 @@ node dev/render-check.mjs           # 마크다운 렌더링에서 깨지는 수
 node dev/order-check.mjs            # 더 알아보기 목록의 순서
 node dev/graph.mjs tags             # 태그 분포
 node dev/graph.mjs leaves           # 더 알아보기가 빈 문서
-ls docs | grep -- '-overview.md'    # 분야 개관 목록. 4.5절의 개관이 없는 분야가 있는지 태그 분포와 견준다
+ls docs | grep -- '-overview.md'    # 분야 개관 목록. 태그마다 거두는 개관이 있는지는 4.5절의 매핑 검사기로 본다
 ```
 
 `validate`, `render-check`, `order-check` 가 문제를 보고하면 그 수정을 이번 회차의 첫 작업으로 삼는다. `npm install` 이 네트워크 때문에 실패하면 `render-check` 는 건너뛰되 4절의 수식 규칙을 손으로 적용하고 커밋 메시지에 검수를 건너뛰었다고 적는다. 큐에 없다면 `node dev/queue.mjs push "..." --priority 100` 으로 넣는다.
