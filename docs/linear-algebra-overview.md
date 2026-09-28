@@ -50,6 +50,7 @@ graph TD
 - [Schur 보수](schur-complement.md): 블록 소거가 남기는 작은 계, 행렬식과 양의 정부호성의 분리
 - [다중격자](multigrid.md): 주파수대마다 격자 단계를 맡기는 V 사이클, 격자 간격과 무관한 수렴률
 - [완전 다중격자](full-multigrid.md): 성긴 격자의 해를 보간해 초기 근사로 쓰는 절차, 미지수 개수에 비례하는 연산으로 이산화 오차에 닿는 것
+- [완전 근사 저장](full-approximation-scheme.md): 비선형 방정식의 다중격자, 성긴 격자가 오차 대신 해 전체를 풀고 tau 보정이 두 격자의 이산화 차이를 메우는 것
 - [Fourier 국소 해석](local-fourier-analysis.md): 격자 모드마다 반복의 증폭률을 계산해 평활률과 수렴률을 예측하는 방법
 - [대수적 다중격자](algebraic-multigrid.md): 행렬 계수에서 읽은 강한 연결로 성긴 단계를 만드는 방법, C/F 분할과 Galerkin 곱
 - [평활 응집](smoothed-aggregation.md): 변수를 덩어리로 묶고 지시벡터를 완화해 보간을 만드는 방법, 영에너지 모드의 보존

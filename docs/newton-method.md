@@ -161,6 +161,6 @@ $a=2$ 에서 초깃값 $1$ 로 시작하면 오차가 대략 $0.08$ , $0.002$ , 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [완전 근사 저장](full-approximation-scheme.md)
 
 #optimization #analysis

@@ -100,6 +100,7 @@ $$
 
 - [Fourier 국소 해석](local-fourier-analysis.md)
 - [완전 다중격자](full-multigrid.md)
+- [완전 근사 저장](full-approximation-scheme.md)
 - [대수적 다중격자](algebraic-multigrid.md)
 - [영역 분할법](domain-decomposition.md)
 
