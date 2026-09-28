@@ -231,7 +231,7 @@ $\chi=1$ 일 때 $\mathcal N$ 의 정점 가운데 $\dim H^1_{\mathcal F(n)}(K,T
 
 # 활용
 
-## Euler 계에서 Kolyvagin 계로
+## Euler 계가 주는 Kolyvagin 계
 
 Euler 계가 주어지면 유도 연산자를 적용해 $\kappa_n$ 을 만들고, 자취 관계가 두 번째 공리로 번역된다. 곧 자연스러운 사상
 

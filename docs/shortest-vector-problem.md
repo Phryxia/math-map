@@ -63,7 +63,7 @@ $\gamma\ge\sqrt{n/\log n}$ 이면 $\mathrm{GapSVP}\_\gamma$ 가 $\mathrm{NP}\cap
 
 LLL 축소는 다항시간에 지수적 근사율을 주고, 블록 크기를 키우는 BKZ 가 근사율과 시간을 잇는 절충을 준다. 정확한 답을 내는 알고리즘은 시간이 차원에 대해 지수적이며, 양자 알고리즘도 지수를 상수배 줄이는 데 그친다. 소인수분해와 [이산로그](discrete-logarithm.md)를 다항시간에 푸는 Shor 알고리즘은 아벨 숨은 부분군 구조를 쓰는데 격자 문제에는 그 구조가 없다.
 
-## 최악 경우에서 평균 경우로
+## 최악 경우 환산
 
 무작위로 뽑은 사례 하나를 푸는 알고리즘에서 모든 격자의 근사 문제를 푸는 알고리즘을 만드는 환산이 있다. 짧은 정수해 문제(short integer solution, SIS)의 평균 경우가 $\mathrm{SIVP}\_\gamma$ 의 최악 경우만큼 어렵고,[^3] 오류 있는 학습(learning with errors, LWE)의 평균 경우가 $\mathrm{GapSVP}\_\gamma$ 와 $\mathrm{SIVP}\_\gamma$ 의 최악 경우만큼 어렵다.[^4] 파라미터를 무작위로 뽑는 암호 구성이 쉬운 사례에 걸릴 위험을 이 환산이 배제한다.
 

@@ -14,7 +14,7 @@ $L=\mathbb Q(\zeta_m)$ 이면 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ �
 
 # 직관
 
-## 소수에서 켤레류로
+## 켤레류와 분해 양상
 
 $\mathfrak p$ 위에 있는 $L$ 의 [소 아이디얼](prime-ideals.md) $\mathfrak P$ 를 하나 고르면 잉여체 확대의 Frobenius 를 들어올려 $\sigma\in\mathrm{Gal}(L/K)$ 를 얻는다. $\mathfrak P$ 를 바꾸면 $\sigma$ 가 켤레로 바뀌므로 $\mathfrak p$ 에 대응하는 것은 원소가 아니라 켤레류다.
 
