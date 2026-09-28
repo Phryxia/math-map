@@ -82,6 +82,6 @@ Zilber 삼분법이 군 배치 정리로 얻는 군은 강최소이므로 이 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [강최소 군](strongly-minimal-groups.md)
 
 #logic #foundations #algebra #group_theory
