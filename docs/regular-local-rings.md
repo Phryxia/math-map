@@ -64,7 +64,7 @@ Noether 환 $R$ 의 모든 소 아이디얼 $\mathfrak p$ 에서 국소화 $R_\m
 
 ## 차원 $1$ 의 경우
 
-차원 $1$ 인 정칙 국소환은 이산부값환이다. $\mathfrak m=(t)$ 가 주 아이디얼이고 $0$ 이 아닌 원소가 단원 $u$ 와 정수 $n\ge0$ 으로 $ut^n$ 꼴로 유일하게 적힌다. $n$ 이 부값이다.
+차원 $1$ 인 정칙 국소환은 [이산부값환](discrete-valuation-rings.md)이다. $\mathfrak m=(t)$ 가 주 아이디얼이고 $0$ 이 아닌 원소가 단원 $u$ 와 정수 $n\ge0$ 으로 $ut^n$ 꼴로 유일하게 적힌다. $n$ 이 부값이다.
 
 # 활용
 
@@ -88,6 +88,7 @@ Noether 환 $R$ 의 모든 소 아이디얼 $\mathfrak p$ 에서 국소화 $R_\m
 
 ## 더 알아보기
 
+- [이산부값환](discrete-valuation-rings.md)
 - [Koszul 복합체](koszul-complex.md)
 - [Cohen–Macaulay 환](cohen-macaulay-rings.md)
 
