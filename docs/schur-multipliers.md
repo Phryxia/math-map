@@ -161,7 +161,7 @@ $K_2$ 는 기본행렬군의 Schur 곱셈자다. Milnor 가 $K_2$ 를 이렇게 
 
 ## 선수지식
 
-- [군 확대와 Jordan–Hölder 정리](group-extensions.md)
+- [군 확대](group-extensions.md)
 
 ## 더 알아보기
 

@@ -105,7 +105,7 @@ Riemann–Roch 는 [유한체](finite-fields.md) 위의 곡선에서도 성립�
 ## 선수지식
 
 - [지표 정리](index-theorem.md)
-- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
+- [정칙함수](holomorphic-functions.md)
 
 ## 더 알아보기
 

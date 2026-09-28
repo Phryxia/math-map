@@ -124,7 +124,7 @@ $$
 
 ### 다양체 위의 구조
 
-- [미분형식과 Stokes 정리](differential-forms.md)
+- [미분형식](differential-forms.md)
 - [Riemann 계량](riemannian-metrics.md)
 - [벡터다발](vector-bundles.md)
 

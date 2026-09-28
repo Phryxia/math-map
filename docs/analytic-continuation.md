@@ -70,7 +70,7 @@ $$F(z)=\begin{cases}f(z)&z\in D^+\cup I\cr \overline{f(\bar z)}&\bar z\in D^+\en
 ## 선수지식
 
 - [멱급수](power-series.md)
-- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
+- [정칙함수](holomorphic-functions.md)
 
 ## 더 알아보기
 

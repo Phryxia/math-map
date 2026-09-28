@@ -6,13 +6,13 @@
 
 복소해석의 갈래는 네 줄기다. 정칙함수와 그 실수판인 조화함수, 멱급수와 Laurent 급수로 특이점을 다루는 유수 계산, 영점의 위치가 함수를 결정하는 인수분해와 값 분포, 그리고 정의역을 넓히거나 영역을 바꿔치는 해석적 연속과 등각사상이다. 이 도구들을 가장 많이 쓰는 곳은 해석적 정수론이고, 그쪽 문서는 [정수론 개관](number-theory-overview.md)에 있다.
 
-시작은 [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)다. 거기서 [유수 정리](residue-theorem.md)로 가면 특이점과 실적분 계산이 나오고, [해석적 연속](analytic-continuation.md)으로 가면 감마 함수와 zeta 함수의 정의역 확장이 나오며, [등각사상](conformal-mapping.md)에서 [Riemann 곡면](riemann-surfaces.md)으로 갈라진다.
+시작은 [정칙함수](holomorphic-functions.md)다. 거기서 [유수 정리](residue-theorem.md)로 가면 특이점과 실적분 계산이 나오고, [해석적 연속](analytic-continuation.md)으로 가면 감마 함수와 zeta 함수의 정의역 확장이 나오며, [등각사상](conformal-mapping.md)에서 [Riemann 곡면](riemann-surfaces.md)으로 갈라진다.
 
 # 지도
 
 ```mermaid
 graph TD
-  DV["미분"] --> HF["정칙함수와 Cauchy 적분 정리"]
+  DV["미분"] --> HF["정칙함수"]
   FC["미적분학의 기본 정리"] --> HF
   PS["멱급수"] --> RT["유수 정리"]
   HF --> RT
@@ -41,7 +41,7 @@ graph TD
 
 ## 정칙함수와 조화함수
 
-- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md): Cauchy–Riemann 방정식, Goursat 논법, 적분 공식, Liouville 정리, 대수학의 기본정리
+- [정칙함수](holomorphic-functions.md): Cauchy–Riemann 방정식, Goursat 논법, 적분 공식, Liouville 정리, 대수학의 기본정리
 - [조화함수](harmonic-functions.md): Laplace 방정식과 조화 켤레, 평균값 성질, 최대 원리, Poisson 적분 공식, Harnack 부등식
 - [Dirichlet 문제](dirichlet-problem.md): 경계값을 갖는 조화함수의 존재, Perron 구성과 장벽
 
@@ -81,6 +81,6 @@ graph TD
 
 ## 더 알아보기
 
-- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
+- [정칙함수](holomorphic-functions.md)
 
 #complex_analysis #analysis #number_theory #overview

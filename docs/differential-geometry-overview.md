@@ -16,7 +16,7 @@ graph TD
   TP["위상 공간"] --> MF
   DV --> CV["곡률"]
   IP["내적 공간"] --> CV
-  MF --> DF["미분형식과 Stokes"]
+  MF --> DF["미분형식"]
   MF --> RM["Riemann 계량"]
   CV --> RM
   DF --> DR["de Rham 코호몰로지"]
@@ -44,7 +44,7 @@ graph TD
 - [다양체](manifolds.md): 국소적으로 유클리드 공간인 위상공간과 매끄러운 구조
 - [벡터다발](vector-bundles.md): 점마다 붙인 벡터 공간, 전이함수와 접속, 곡률
 - [특성류](characteristic-classes.md): 곡률의 불변 다항식이 주는 코호몰로지류, Chern–Weil 이론
-- [미분형식과 Stokes 정리](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
+- [미분형식](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
 
 ## 계량과 곡률
 

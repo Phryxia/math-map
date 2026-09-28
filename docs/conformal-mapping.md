@@ -77,7 +77,7 @@ $$f(z)=A+C\int_0^z\prod_{k=1}^{n}(\zeta-x_k)^{\alpha_k-1}\thinspace d\zeta$$
 
 ## 선수지식
 
-- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
+- [정칙함수](holomorphic-functions.md)
 
 ## 더 알아보기
 

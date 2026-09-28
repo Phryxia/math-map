@@ -141,7 +141,7 @@ $$
 
 ## 선수지식
 
-- [미분형식과 Stokes 정리](differential-forms.md)
+- [미분형식](differential-forms.md)
 - [단체 호몰로지](homology.md)
 
 ## 더 알아보기

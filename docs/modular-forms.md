@@ -219,7 +219,7 @@ Rademacher 는 같은 방법으로 $p(n)$ 을 정확히 주는 수렴급수를 �
 
 ## 선수지식
 
-- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
+- [정칙함수](holomorphic-functions.md)
 - [군 작용](group-actions.md)
 - [정수론 개관](number-theory-overview.md)
 

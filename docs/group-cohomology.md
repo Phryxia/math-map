@@ -79,7 +79,7 @@ $$H^k(G,A)=\begin{cases}A^G & k=0\cr \ker N/(t-1)A & k\ \text{ 홀수}\cr A^G/NA
 
 ## 선수지식
 
-- [군 확대와 Jordan–Hölder 정리](group-extensions.md)
+- [군 확대](group-extensions.md)
 - [코호몰로지](cohomology.md)
 - [유도 함자](derived-functors.md)
 

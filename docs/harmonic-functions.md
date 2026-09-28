@@ -70,7 +70,7 @@ $$\frac{R-r}{R+r}\thinspace u(0)\le u(z)\le\frac{R+r}{R-r}\thinspace u(0)$$
 
 # 활용
 
-- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md): 최대 절댓값 원리는 $\vert f\vert$ 가 열조화라는 사실에서 나오고, Cauchy 적분 공식의 실부가 Poisson 공식이다.
+- [정칙함수](holomorphic-functions.md): 최대 절댓값 원리는 $\vert f\vert$ 가 열조화라는 사실에서 나오고, Cauchy 적분 공식의 실부가 Poisson 공식이다.
 - [해석적 연속](analytic-continuation.md): Schwarz 반사 원리의 조화판은 실축에서 $0$ 인 조화함수를 홀함수로 확장한다.
 - [Brown 운동](brownian-motion.md): 영역 $\Omega$ 에서 출발한 Brown 운동을 경계에 닿을 때까지 흘려 경계값의 기댓값을 취하면 Dirichlet 문제의 해가 된다. 평균값 성질이 확률 쪽에서는 정지된 과정이 martingale 이라는 진술이 된다.
 - [무작위 걷기](random-walks.md): 이산 Laplace 연산자의 영공간이 조화함수의 이산판이고, 전위가 그 역할을 한다.
@@ -80,7 +80,7 @@ $$\frac{R-r}{R+r}\thinspace u(0)\le u(z)\le\frac{R+r}{R-r}\thinspace u(0)$$
 
 ## 선수지식
 
-- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
+- [정칙함수](holomorphic-functions.md)
 
 ## 더 알아보기
 

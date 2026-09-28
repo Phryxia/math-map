@@ -63,7 +63,7 @@ $f$ 의 위수 $\rho$ 가 유한하면 위 표현에서 $g$ 는 차수 $\le\rho$
 
 ## 선수지식
 
-- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
+- [정칙함수](holomorphic-functions.md)
 
 ## 더 알아보기
 

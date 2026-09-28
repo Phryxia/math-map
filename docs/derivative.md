@@ -109,7 +109,7 @@ $$
 - [역함수 정리](inverse-function-theorem.md)
 - [멱급수](power-series.md)
 - [상미분방정식](ordinary-differential-equations.md)
-- [정칙함수와 Cauchy 적분 정리](holomorphic-functions.md)
+- [정칙함수](holomorphic-functions.md)
 
 ### 최적화와 통계
 
