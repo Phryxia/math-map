@@ -118,7 +118,7 @@ $$
 a_p=2p^{(k-1)/2}\cos\theta_p
 $$
 
-이다. $\theta_p\in[0,\pi]$ 를 **Frobenius 각**이라 하고 그 분포가 Sato–Tate 추측의 주제다. Deligne 의 정리는 각이 실수라는 데까지만 말하고 분포는 말하지 않는다.
+이다. $\theta_p\in[0,\pi]$ 를 **Frobenius 각**이라 하고 그 분포가 Sato–Tate 추측의 주제다. Deligne 의 정리에서 나오는 것은 각이 실수라는 데까지이고 분포는 나오지 않는다.
 
 ## 두 절댓값의 비교
 

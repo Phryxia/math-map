@@ -122,7 +122,7 @@ $$
 H^k_{\mathrm{dR}}(M)=\frac{\ker\big(d:\Omega^k\to\Omega^{k+1}\big)}{\mathrm{im}\big(d:\Omega^{k-1}\to\Omega^k\big)}
 $$
 
-Poincaré 보조정리는 수축가능한 열린집합에서 모든 닫힘형식이 완전하다고 말한다. $H^k\ne0$ 은 국소적으로는 메울 수 있고 전역적으로는 메울 수 없는 형식이 있다는 뜻이다.
+Poincaré 보조정리로 수축가능한 열린집합에서 모든 닫힘형식은 완전하다. $H^k\ne0$ 은 국소적으로는 메울 수 있고 전역적으로는 메울 수 없는 형식이 있다는 뜻이다.
 
 $\mathbb R^2\setminus\lbrace 0\rbrace$ 위의 각형식
 
@@ -132,13 +132,13 @@ $$
 
 은 $d\omega=0$ 이지만 단위원에서의 적분이 $2\pi$ 이므로 완전하지 않다. 원점의 구멍이 $H^1$ 을 1 차원으로 만든다.
 
-de Rham 정리는 이 코호몰로지가 위상적 [특이 코호몰로지](cohomology.md)와 동형이라고 말한다. 미분으로 정의한 대상이 위상 불변량이 된다.
+de Rham 정리로 이 코호몰로지는 위상적 [특이 코호몰로지](cohomology.md)와 동형이다. 미분으로 정의한 대상이 위상 불변량이 된다.
 
 ## 방향과 부피
 
 $n$ 형식이 각 점에서 1 차원이므로 어디서도 0 이 되지 않는 $n$ 형식의 존재와 방향을 줄 수 있는 것이 동치다. 뫼비우스 띠에는 그런 형식이 없다.
 
-[Riemann 계량](riemannian-metrics.md)이 있으면 정규직교 틀에서 $1$ 을 주는 부피형식이 유일하게 결정되고 길이, 넓이, 부피가 형식의 적분으로 통일된다. Hodge 별작용소가 $k$ 형식과 $(n-k)$ 형식을 맞바꾸며 $\delta=\pm\negthinspace\star d\star$ 와 $\Delta=d\delta+\delta d$ 로 Laplace 작용소가 나온다. Hodge 정리는 조화형식이 코호몰로지류의 대표원임을 말한다.
+[Riemann 계량](riemannian-metrics.md)이 있으면 정규직교 틀에서 $1$ 을 주는 부피형식이 유일하게 결정되고 길이, 넓이, 부피가 형식의 적분으로 통일된다. Hodge 별작용소가 $k$ 형식과 $(n-k)$ 형식을 맞바꾸며 $\delta=\pm\negthinspace\star d\star$ 와 $\Delta=d\delta+\delta d$ 로 Laplace 작용소가 나온다. Hodge 정리로 조화형식은 코호몰로지류의 대표원이다.
 
 ## 좌표 없는 계산
 
@@ -154,7 +154,7 @@ $$
 
 - Maxwell 방정식 넷이 전자기장 2-형식 $F$ 와 전류 3-형식 $J$ 에 대한 $dF=0$ , $d\star F=J$ 로 줄어든다. 첫 식이 Gauss 자기 법칙과 Faraday 법칙, 둘째가 Gauss 법칙과 Ampère–Maxwell 법칙이다. 좌표계에 의존하지 않으므로 [곡률](curvature.md)이 있는 시공간으로 옮겨도 형태가 같다. $dF=0$ 에서 Poincaré 보조정리로 국소적으로 $F=dA$ 인 퍼텐셜이 존재하고, $A$ 의 게이지 자유도가 $H^1$ 과 연결되어 Aharonov–Bohm 효과로 나타난다.
 - $\omega$ 가 닫혀 있으면 그 적분이 경로의 연속변형에 불변이다. 보존장과 보존량이 이 진술의 변형이고, 닫혀 있지만 완전하지 않은 형식의 적분이 감은 수, 유수, 지표 같은 정수 불변량을 준다.
-- [Gauss–Bonnet 정리](gauss-bonnet.md)는 곡률의 적분이 [Euler 지표](euler-characteristic.md)와 같다는 진술이며 형식의 언어로 쓰인다. [지표 정리](index-theorem.md)들은 해석적 불변량과 위상적 불변량의 일치를 말하고 de Rham 정리가 그 원형이다.
+- [Gauss–Bonnet 정리](gauss-bonnet.md)는 곡률의 적분이 [Euler 지표](euler-characteristic.md)와 같다는 진술이며 형식의 언어로 쓰인다. [지표 정리](index-theorem.md)들에서 해석적 불변량과 위상적 불변량이 일치하고 de Rham 정리가 그 원형이다.
 - Hamilton 역학은 닫힌 비퇴화 2-형식을 가진 다양체 위에서 전개된다. Hamilton 흐름이 이 형식을 보존하므로 Liouville 정리가 그 거듭제곱인 부피형식의 보존으로 따라오고, 정준변환은 형식을 보존하는 사상으로 정의된다.
 
 # 연관 문서

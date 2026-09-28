@@ -2,7 +2,7 @@
 
 # 개요
 
-[Satake 동형](satake-isomorphism.md)은 비분기 Hecke 대수가 쌍대군의 표현환과 같다고 말한다.
+[Satake 동형](satake-isomorphism.md)에서 비분기 Hecke 대수는 쌍대군의 표현환과 같다.
 
 $$
 \mathcal H(G,K)\thickspace\cong\thickspace R(\widehat G)\otimes\mathbb C

@@ -2,7 +2,7 @@
 
 # 개요
 
-Curry–Howard 대응은 논리와 계산이 같은 대상의 두 표기법이라고 말한다.
+Curry–Howard 대응에서 논리와 계산은 같은 대상의 두 표기법이다.
 
 $$
 \text{명제}=\text{타입},\qquad \text{증명}=\text{프로그램},\qquad \text{증명의 정규화}=\text{계산}
