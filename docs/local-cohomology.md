@@ -87,6 +87,6 @@ $$\cdots\to H^i\_I(M)\to H^i(X,\mathcal F)\to H^i(U,\mathcal F)\to H^{i+1}\_I(M)
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hartshorne–Lichtenbaum 소멸 정리](hartshorne-lichtenbaum.md)
 
 #ring_theory #algebra #algebraic_topology #category_theory
