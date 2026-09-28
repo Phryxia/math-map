@@ -87,6 +87,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [완전교차환](complete-intersection-rings.md)
 
 #ring_theory #algebra #combinatorics #topology

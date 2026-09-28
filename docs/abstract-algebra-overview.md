@@ -55,6 +55,7 @@ graph TD
 - [정칙 국소환](regular-local-rings.md): 차원과 접공간 차원이 같은 국소환, Serre 의 호몰로지 판정과 유일분해
 - [Cohen–Macaulay 환](cohen-macaulay-rings.md): 깊이와 차원이 같은 국소환, 박힌 성분의 부재와 Auslander–Buchsbaum 공식
 - [Gorenstein 환](gorenstein-rings.md): 유형이 1 인 Cohen–Macaulay 환, 표준 가군의 자유성과 국소 쌍대성
+- [완전교차환](complete-intersection-rings.md): 정칙 국소환을 정칙열로 나눈 몫, Koszul 자유분해와 Betti 수의 다항식 증가
 - [Koszul 복합체](koszul-complex.md): 원소열로 만든 사슬 복합체, 정칙열 판정과 깊이 계산
 - [국소 코호몰로지](local-cohomology.md): 아이디얼로 소멸되는 부분의 유도 함자, 깊이와 차원이 소멸 차수로 나타나는 것과 국소 쌍대성
 - [Hartshorne–Lichtenbaum 소멸 정리](hartshorne-lichtenbaum.md): 최고차 국소 코호몰로지의 소멸을 $R/I$ 의 차원으로 판정하는 정리, 산술 랭크의 하한
