@@ -48,7 +48,7 @@ $H\le G$ 이고 $B$ 가 $H$ 가군이면 다음이 성립한다.
 
 $$H^n(G,\mathrm{Hom}\_{\mathbb Z H}(\mathbb Z G,B))\cong H^n(H,B)$$
 
-증명의 요지. $\mathbb Z G$ 가 $\mathbb Z H$ 위에서 자유이므로 $\mathbb Z$ 의 사영 $G$ 분해는 사영 $H$ 분해이기도 하다. 수반 관계 $\mathrm{Hom}\_{\mathbb Z G}(P,\mathrm{Hom}\_{\mathbb Z H}(\mathbb Z G,B))\cong\mathrm{Hom}\_{\mathbb Z H}(P,B)$ 가 두 복합체를 같은 것으로 만든다.
+증명의 요지. $\mathbb Z G$ 가 $\mathbb Z H$ 위에서 자유이므로 $\mathbb Z$ 의 사영 $G$ 분해는 사영 $H$ 분해이기도 하다. [수반](adjunctions.md) 관계 $\mathrm{Hom}\_{\mathbb Z G}(P,\mathrm{Hom}\_{\mathbb Z H}(\mathbb Z G,B))\cong\mathrm{Hom}\_{\mathbb Z H}(P,B)$ 가 두 복합체를 같은 것으로 만든다.
 
 ## 유한군에서의 소멸
 
