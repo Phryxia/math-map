@@ -2,7 +2,7 @@
 
 # 개요
 
-형식주의는 수학을 기호 체계와 그 위의 규칙 조작으로 보는 입장이고, Hilbert 프로그램은 그 입장을 구체적 연구 계획으로 만든 것이다. 계획의 핵심은 무한을 다루는 고전 수학 전체를 유한한 형식체계로 공리화하고, 그 체계의 무모순성을 논란 없는 유한주의적(finitary) 방법만으로 증명하는 것이었다. 성공하면 무한에 관한 추론은 유한한 사실을 얻기 위한 안전한 도구로 정당화된다. Gödel의 불완전성 정리는 이 목표의 강한 형태가 불가능함을 보였고[^1], 이후 계획은 "어떤 무한적 방법이 어떤 유한적 · 구성적 방법으로 환원되는가"를 측정하는 증명론으로 재편되었다. 남은 유산은 서수 분석, relativized Hilbert program, reverse mathematics다.
+형식주의는 수학을 기호 체계와 그 위의 규칙 조작으로 보는 입장이고, Hilbert 프로그램은 그 입장을 구체적 연구 계획으로 만든 것이다. 계획의 핵심은 무한을 다루는 고전 수학 전체를 유한한 형식체계로 공리화하고, 그 체계의 무모순성을 논란 없는 유한주의적(finitary) 방법만으로 증명하는 것이었다. 성공하면 무한에 관한 추론은 유한한 사실을 얻기 위한 안전한 도구로 정당화된다. Gödel 의 불완전성 정리는 이 목표의 강한 형태가 불가능함을 보였고[^1], 이후 계획은 "어떤 무한적 방법이 어떤 유한적 · 구성적 방법으로 환원되는가"를 측정하는 증명론으로 재편되었다. 남은 유산은 서수 분석, relativized Hilbert program, reverse mathematics다.
 
 # 직관
 
@@ -55,7 +55,7 @@ PRA 는 Peano 산술(Peano arithmetic, PA)에 포함된다. 유한주의적 방�
 
 논리적으로 남는 빈틈은 "유한주의가 PA 안에서 형식화된다"는 전제뿐이다. 이 전제를 부정하는 입장도 있으나 널리 받아들여지지는 않는다.
 
-## Gentzen의 부분적 성공
+## Gentzen 의 부분적 성공
 
 Gentzen 은 1936 년에 PA 의 무모순성을 증명했다[^2]. 사용한 추가 원리는 서수 $\varepsilon\_0$ 까지의 초한귀납법이다.
 
@@ -72,18 +72,18 @@ PRA 에 $\varepsilon\_0$ 까지의 초한귀납법을 더한 체계는 PA 의 �
 
 - 서수 분석: 체계마다 증명론적 서수를 계산해 강도를 비교한다. PA 와 $\mathrm{ACA}\_0$ 은 $\varepsilon\_0$ , $\mathrm{ATR}\_0$ 은 $\Gamma\_0$ 이다.
 - Relativized Hilbert program: 유한주의 대신 구성적 또는 약한 체계 $S$ 를 기준으로 삼아, $T$ 의 어떤 부류의 정리가 $S$ 로 환원되는지를 본다.
-- Reverse mathematics: 해석학 · 대수학의 표준 정리들이 정확히 어떤 집합존재 공리와 동등한지 분류한다. Hilbert의 "어떤 무한이 실제로 필요한가"라는 물음의 현대적 형태다.
+- Reverse mathematics: 해석학 · 대수학의 표준 정리들이 정확히 어떤 집합존재 공리와 동등한지 분류한다. Hilbert 의 "어떤 무한이 실제로 필요한가"라는 물음의 현대적 형태다.
 
 ## 형식주의 자체에 대한 반론
 
-수학이 순전히 무의미한 기호 놀이라면 왜 그 놀이가 물리 세계에 적용되는지 설명해야 한다. 또 무모순성 주장 자체는 기호열에 관한 실질적 산술 명제이므로, 극단적 형식주의는 자기 기반이 되는 metamathematics의 지위를 설명하지 못한다. 이 때문에 Hilbert 본인의 입장은 순수 형식주의가 아니라 유한적 산술에 관해서는 내용적 실재론을 유지하는 이중 구조로 읽는 것이 보통이다. [플라톤주의](mathematical-platonism.md)와 [직관주의](intuitionism.md)가 각각 반대쪽에서 이 이중 구조를 공격한다.
+수학이 순전히 무의미한 기호 놀이라면 왜 그 놀이가 물리 세계에 적용되는지 설명해야 한다. 또 무모순성 주장 자체는 기호열에 관한 실질적 산술 명제이므로, 극단적 형식주의는 자기 기반이 되는 metamathematics 의 지위를 설명하지 못한다. 이 때문에 Hilbert 본인의 입장은 순수 형식주의가 아니라 유한적 산술에 관해서는 내용적 실재론을 유지하는 이중 구조로 읽는 것이 보통이다. [플라톤주의](mathematical-platonism.md)와 [직관주의](intuitionism.md)가 각각 반대쪽에서 이 이중 구조를 공격한다.
 
 # 활용
 
-- 증명 보조기와 형식 검증. 형식체계로 환원한다는 발상은 Coq · Lean · Isabelle 같은 체계에서 실제 기술이 되었다. 증명의 정당성이 유한한 규칙 검사로 귀결된다는 Hilbert의 관점이 커널 설계 원리 그대로다.
+- 증명 보조기와 형식 검증. 형식체계로 환원한다는 발상은 Coq · Lean · Isabelle 같은 체계에서 실제 기술이 되었다. 증명의 정당성이 유한한 규칙 검사로 귀결된다는 Hilbert 의 관점이 커널 설계 원리 그대로다.
 - 체계 강도 비교. 어떤 정리를 증명하려면 어떤 공리가 필요한지 묻는 실천적 습관. Goodstein 정리는 PA 에서 증명할 수 없고 $\varepsilon\_0$ 까지의 귀납법을 요구한다.
 - 무모순성의 상대화. 큰 기수 공리를 다룰 때 "ZFC(Zermelo–Fraenkel 집합론에 [선택공리](axiom-of-choice.md)를 더한 공리계)가 무모순이면 ZFC + 공리도 무모순"이라는 형태의 상대적 무모순성만 목표로 삼는 관행은 제2정리 이후의 표준이다.
-- 계산 가능성과의 접점. 결정 가능한 증명 술어라는 요구는 [계산 가능성](computability.md)의 언어로 정확히 표현된다. Hilbert의 Entscheidungsproblem이 부정적으로 해결된 것도 같은 맥락이다.
+- 계산 가능성과의 접점. 결정 가능한 증명 술어라는 요구는 [계산 가능성](computability.md)의 언어로 정확히 표현된다. Hilbert 의 Entscheidungsproblem이 부정적으로 해결된 것도 같은 맥락이다.
 
 [^1]: Richard Zach, Hilbert's Program, Stanford Encyclopedia of Philosophy, §1–§3 (유한주의, real/ideal 구분, 보존성 목표, Gödel 정리의 영향과 Bernays의 관찰). https://plato.stanford.edu/entries/hilbert-program/
 [^2]: Jan von Plato, The Development of Proof Theory, Stanford Encyclopedia of Philosophy, §4 (Gentzen 1936: 서수 초한귀납법에 의한 PA 무모순성 증명과 현대 증명론의 출발). https://plato.stanford.edu/entries/proof-theory-development/

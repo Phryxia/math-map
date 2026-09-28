@@ -70,7 +70,7 @@ $\beta_2$ 를 고정한 Adam 이 최적해로 수렴하지 않는 볼록 문제�
 
 ## 대각 전처리
 
-$D_k=\mathrm{diag}(\sqrt{v_k}+\varepsilon)$ 로 두면 갱신이 $x_{k+1}=x_k-\eta D_k^{-1}g_k$ 다. [Newton 법](newton-method.md)이 Hessian의 역행렬을 곱하는 자리에 대각행렬이 들어간 꼴이다. $\sqrt{v_{k,j}}$ 는 곡률이 아니라 기울기 성분의 크기라서 이 대각행렬은 Hessian의 대각을 추정하지 않고, 이차수렴도 주지 않는다.
+$D_k=\mathrm{diag}(\sqrt{v_k}+\varepsilon)$ 로 두면 갱신이 $x_{k+1}=x_k-\eta D_k^{-1}g_k$ 다. [Newton 법](newton-method.md)이 Hessian 의 역행렬을 곱하는 자리에 대각행렬이 들어간 꼴이다. $\sqrt{v_{k,j}}$ 는 곡률이 아니라 기울기 성분의 크기라서 이 대각행렬은 Hessian 의 대각을 추정하지 않고, 이차수렴도 주지 않는다.
 
 # 활용
 

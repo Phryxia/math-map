@@ -46,7 +46,7 @@ Quine–Putnam 논증의 표준 형태는 세 단계다[^2].
 
 ## Benacerraf 딜레마
 
-Benacerraf의 "Mathematical Truth"는 두 요구가 동시에 충족되기 어렵다고 지적한다[^1].
+Benacerraf 의 "Mathematical Truth"는 두 요구가 동시에 충족되기 어렵다고 지적한다[^1].
 
 - 의미론적 요구: 수학적 진리는 다른 담화의 진리와 같은 방식(Tarski식 지시와 만족)으로 설명되어야 한다.
 - 인식론적 요구: 수학적 지식은 일반적인 지식 이론과 양립해야 한다.
@@ -55,7 +55,7 @@ Benacerraf의 "Mathematical Truth"는 두 요구가 동시에 충족되기 어�
 
 ## 동일화 문제
 
-Benacerraf의 다른 논문 "What Numbers Could Not Be"는 자연수를 집합으로 구현하는 방식이 여러 가지임을 지적한다. von Neumann 순서수와 Zermelo 표현은 모두 [Peano 공리](peano-axioms.md)를 만족한다.
+Benacerraf 의 다른 논문 "What Numbers Could Not Be"는 자연수를 집합으로 구현하는 방식이 여러 가지임을 지적한다. von Neumann 순서수와 Zermelo 표현은 모두 [Peano 공리](peano-axioms.md)를 만족한다.
 
 $$
 0=\varnothing,\quad n+1=n\cup\lbrace n\rbrace

@@ -79,7 +79,7 @@ $$
 
 이다. 충족 할당에서 합법적인 계산 표를 읽어 낼 수 있고, 역으로 받아들이는 실행이 표를 통해 할당을 준다. 따라서 $L \le_p \mathrm{SAT}$ 이다. ∎
 
-Levin의 원 논문은 같은 결과를 탐색 문제(search problem)의 형태로 독립적으로 얻었다. 그래서 "보편 탐색 문제"라는 관점이 함께 붙는다.
+Levin 의 원 논문은 같은 결과를 탐색 문제(search problem)의 형태로 독립적으로 얻었다. 그래서 "보편 탐색 문제"라는 관점이 함께 붙는다.
 
 # 성질
 
@@ -145,17 +145,17 @@ $G$ 의 정점 집합 $S$ 가 클릭인 것과, 여그래프 $G'$ (같은 정점
 
 ## 실무에서의 쓰임
 
-- **모델링 언어로서의 SAT.** 하드웨어 검증, 소프트웨어 모델 체킹, 스케줄링, 패키지 의존성 해결이 CNF 로 번역되어 SAT solver에 넘겨진다. Cook–Levin의 환원이 "모든 $\mathrm{NP}$ 문제는 SAT 의 방언"임을 보장하므로 이 전략이 보편적으로 통한다.
+- **모델링 언어로서의 SAT.** 하드웨어 검증, 소프트웨어 모델 체킹, 스케줄링, 패키지 의존성 해결이 CNF 로 번역되어 SAT solver에 넘겨진다. Cook–Levin 의 환원이 "모든 $\mathrm{NP}$ 문제는 SAT 의 방언"임을 보장하므로 이 전략이 보편적으로 통한다.
 - **정수계획법.** [선형계획법](linear-programming.md)은 다항시간에 풀리지만 변수에 정수 조건을 붙이면 NP-hard가 된다. 조합 최적화의 표준 도구인 분기한정(branch and bound)은 이 경계 위에서 동작한다.
 - **암호의 전제.** 암호계의 안전성은 NP-완전성보다 강한 가정(평균적 경우의 난해성)을 요구한다. NP-완전성은 최악의 경우만 말하므로 암호에는 그대로 쓰이지 않는다.
-- **하드니스의 언어.** 새 문제를 만났을 때 먼저 알려진 NP-완전 문제와의 환원을 찾는 것이 표준 절차다. Garey와 Johnson의 목록이 그 출발점 역할을 오래 해 왔다[^3].
+- **하드니스의 언어.** 새 문제를 만났을 때 먼저 알려진 NP-완전 문제와의 환원을 찾는 것이 표준 절차다. Garey와 Johnson 의 목록이 그 출발점 역할을 오래 해 왔다[^3].
 
 ## 이론적 확장
 
-- **다른 환원.** Karp 환원 대신 Turing 환원(신탁 질의를 여러 번 허용)을 쓰면 NP-hard의 범위가 넓어진다. 최적화 문제와 판정 문제를 함께 다룰 때 편하다.
+- **다른 환원.** Karp 환원 대신 Turing 환원(신탁 질의를 여러 번 허용)을 쓰면 NP-hard 의 범위가 넓어진다. 최적화 문제와 판정 문제를 함께 다룰 때 편하다.
 - **완전성의 일반화.** 각 복잡도 부류마다 완전 문제가 있다. $\mathrm{PSPACE}$ 에는 양화된 불식(quantified Boolean formula, QBF), $\mathrm{coNP}$ 에는 tautology 판정, $\char35{}\mathrm P$ 에는 영구식(permanent) 계산이 대응한다.
 - **Ladner 정리.** $\mathrm P\ne\mathrm{NP}$ 이면 NP-완전도 $\mathrm P$ 도 아닌 문제가 존재한다. 대각선 논법을 다항시간 틀에서 수행한 결과다.
-- **상대화 장벽.** Cook–Levin의 증명은 신탁 기계에도 그대로 상대화되므로, 이런 종류의 논증만으로는 $\mathrm P$ 와 $\mathrm{NP}$ 를 분리할 수 없다(Baker–Gill–Solovay). P 대 NP 문제에 대해 알려진 첫 번째 장벽 결과다.
+- **상대화 장벽.** Cook–Levin 의 증명은 신탁 기계에도 그대로 상대화되므로, 이런 종류의 논증만으로는 $\mathrm P$ 와 $\mathrm{NP}$ 를 분리할 수 없다(Baker–Gill–Solovay). P 대 NP 문제에 대해 알려진 첫 번째 장벽 결과다.
 
 [^1]: S. A. Cook, The Complexity of Theorem-Proving Procedures, STOC 1971, https://dl.acm.org/doi/10.1145/800157.805047
 [^2]: R. M. Karp, Reducibility Among Combinatorial Problems, 1972, https://cs.brown.edu/people/jsavage/book/pdfs/Karp1972.pdf

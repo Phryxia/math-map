@@ -135,7 +135,7 @@ NFA 의 동치성·전체성 판정은 PSPACE(polynomial space)-완전이며([NP
 ## 실제 쓰임
 
 - **어휘 분석.** 컴파일러의 토크나이저는 각 토큰 종류를 정규 표현식으로 적고, Thompson 구성과 부분집합 구성을 거쳐 하나의 DFA 로 합친다. lex/flex가 이 과정을 자동화한다.
-- **문자열 검색.** Knuth–Morris–Pratt의 실패 함수는 패턴에 대한 DFA 를 암묵적으로 만든 것이고, Aho–Corasick은 여러 패턴을 동시에 처리하는 오토마타다.
+- **문자열 검색.** Knuth–Morris–Pratt 의 실패 함수는 패턴에 대한 DFA 를 암묵적으로 만든 것이고, Aho–Corasick은 여러 패턴을 동시에 처리하는 오토마타다.
 - **정규 표현식 엔진.** 역참조 없는 표준 정규 표현식은 DFA 로 컴파일해 입력 길이에 선형으로 매칭할 수 있다. 반면 역참조를 허용하는 확장 문법은 정규언어를 벗어나고 백트래킹이 지수 시간까지 갈 수 있다.
 - **모델 검사와 프로토콜 검증.** 유한 상태 시스템의 명세를 오토마타로 적고 교집합의 공허성으로 위반 여부를 판정한다. 무한 문자열을 다루는 Büchi 오토마타로 확장하면 선형 시제 논리(linear temporal logic, LTL) 검증이 된다.
 - **하드웨어.** 순차 논리 회로는 문자 그대로 유한 상태 기계이며, 상태 최소화는 플립플롭 개수를 줄이는 합성 기법이다.
@@ -144,7 +144,7 @@ NFA 의 동치성·전체성 판정은 PSPACE(polynomial space)-완전이며([NP
 
 - **동치관계.** Myhill–Nerode는 "언어가 스스로 자신의 최소 기계를 정의한다"는 진술이다. 비슷한 구조가 [군](groups.md) 작용의 궤도 분해나 최소 모델 구성에서도 반복된다.
 - **대수와 논리.** 정규언어는 문자열 위의 단항 2차 논리(monadic second-order logic, MSO)로 정의 가능한 언어와 일치한다(Büchi–Elgot–Trakhtenbrot 정리). [1차 논리](first-order-logic.md)로만 정의 가능한 언어는 스타 없는 정규언어와 일치한다.
-- **학습 이론.** Angluin의 L* 알고리즘은 소속 질의와 동치 질의만으로 최소 DFA 를 다항시간에 학습한다. 관측표의 행이 곧 Myhill–Nerode 동치류의 근사다[^2].
+- **학습 이론.** Angluin 의 L* 알고리즘은 소속 질의와 동치 질의만으로 최소 DFA 를 다항시간에 학습한다. 관측표의 행이 곧 Myhill–Nerode 동치류의 근사다[^2].
 
 [^1]: J. E. Hopcroft, R. Motwani, J. D. Ullman, Introduction to Automata Theory, Languages, and Computation, https://archive.org/details/introductiontoau0000hopc
 [^2]: D. Angluin, Learning Regular Sets from Queries and Counterexamples, Information and Computation 75(2), 1987, https://www.sciencedirect.com/science/article/pii/0890540187900526

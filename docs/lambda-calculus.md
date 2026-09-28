@@ -4,7 +4,7 @@
 
 Lambda calculus는 Alonzo Church가 1930년대에 도입한 계산 모델이다. 기본 대상은 오직 [함수](functions.md)뿐이고, 연산은 함수를 만드는 추상(abstraction)과 함수를 적용하는 적용(application) 둘뿐이다. 숫자, 진리값, 자료구조, 재귀는 모두 함수로 부호화된다.
 
-이렇게 빈약한 문법이 Turing 기계와 같은 계산 능력을 갖는다는 것이 핵심 사실이다. Church의 $\lambda$ 정의가능성, Kleene의 일반 재귀함수, Turing의 기계가 모두 같은 함수족을 잡아낸다는 결과가 Church–Turing 논제의 경험적 근거이며, 동시에 [계산 가능성](computability.md)의 결정불가능성 결과들이 lambda calculus로도 그대로 옮겨진다.
+이렇게 빈약한 문법이 Turing 기계와 같은 계산 능력을 갖는다는 것이 핵심 사실이다. Church 의 $\lambda$ 정의가능성, Kleene 의 일반 재귀함수, Turing 의 기계가 모두 같은 함수족을 잡아낸다는 결과가 Church–Turing 논제의 경험적 근거이며, 동시에 [계산 가능성](computability.md)의 결정불가능성 결과들이 lambda calculus로도 그대로 옮겨진다.
 
 계산 모델로서의 의의 외에 두 가지 쓰임이 더 있다. 하나는 프로그래밍 언어의 의미론이다. 함수형 언어는 사실상 lambda calculus에 자료형과 최적화를 덧붙인 것이고, 클로저·고차함수·지연 평가의 의미가 여기서 정의된다. 다른 하나는 증명론이다. 단순 타입을 붙이면 항이 증명, 타입이 명제가 되는 Curry–Howard 대응이 나타나고, 이때 계산 능력은 떨어지지만 모든 계산이 반드시 끝난다.
 
@@ -69,7 +69,7 @@ $$
 - 곱셈: $\mathrm{mult} = \lambda m.\lambda n.\lambda f.\thinspace m\thinspace(n\thinspace f)$
 - 거듭제곱: $\mathrm{exp} = \lambda m.\lambda n.\thinspace n\thinspace m$
 
-진리값과 조건은 선택자로 정의한다. $\mathrm{true} = \lambda x.\lambda y.\thinspace x$ 와 $\mathrm{false} = \lambda x.\lambda y.\thinspace y$ 와 $\mathrm{ifelse} = \lambda b.\lambda t.\lambda e.\thinspace b\thinspace t\thinspace e$ 다. 그러면 $\mathrm{iszero} = \lambda n.\thinspace n\thinspace(\lambda z.\thinspace \mathrm{false})\thinspace\mathrm{true}$ 가 된다. 순서쌍은 $\mathrm{pair} = \lambda a.\lambda b.\lambda s.\thinspace s\thinspace a\thinspace b$ 와 $\mathrm{fst} = \lambda p.\thinspace p\thinspace\mathrm{true}$ 와 $\mathrm{snd} = \lambda p.\thinspace p\thinspace\mathrm{false}$ 다. 전자(predecessor)는 Kleene의 기법으로 $(n, n-1)$ 쌍을 반복 갱신해 얻는다.
+진리값과 조건은 선택자로 정의한다. $\mathrm{true} = \lambda x.\lambda y.\thinspace x$ 와 $\mathrm{false} = \lambda x.\lambda y.\thinspace y$ 와 $\mathrm{ifelse} = \lambda b.\lambda t.\lambda e.\thinspace b\thinspace t\thinspace e$ 다. 그러면 $\mathrm{iszero} = \lambda n.\thinspace n\thinspace(\lambda z.\thinspace \mathrm{false})\thinspace\mathrm{true}$ 가 된다. 순서쌍은 $\mathrm{pair} = \lambda a.\lambda b.\lambda s.\thinspace s\thinspace a\thinspace b$ 와 $\mathrm{fst} = \lambda p.\thinspace p\thinspace\mathrm{true}$ 와 $\mathrm{snd} = \lambda p.\thinspace p\thinspace\mathrm{false}$ 다. 전자(predecessor)는 Kleene 의 기법으로 $(n, n-1)$ 쌍을 반복 갱신해 얻는다.
 
 ## 고정점 combinator
 
@@ -131,7 +131,7 @@ flowchart TD
 계산 능력이 같으니 결정불가능성도 따라온다.
 
 - 주어진 항이 정규형을 갖는지는 결정불가능하다(정지 문제에 대응).
-- 두 항이 $=\_\beta$ 인지도 결정불가능하다(Church의 정리). Scott–Curry 정리는 더 강하게, $\beta$ -동치로 닫힌 자명하지 않은 항 집합은 결정불가능하다고 말한다. 이는 [Rice 정리](rice-theorem.md)의 lambda calculus 판본이다.
+- 두 항이 $=\_\beta$ 인지도 결정불가능하다(Church 의 정리). Scott–Curry 정리는 더 강하게, $\beta$ -동치로 닫힌 자명하지 않은 항 집합은 결정불가능하다고 말한다. 이는 [Rice 정리](rice-theorem.md)의 lambda calculus 판본이다.
 - 반면 [유한 오토마타](finite-automata.md)처럼 계산 능력이 제한된 모델에서는 이런 질문들이 모두 결정가능하다. 표현력과 분석가능성의 교환은 여기서도 같다.
 
 ## 단순 타입과 정규화
@@ -140,7 +140,7 @@ flowchart TD
 
 **정리 (강한 정규화).** STLC 의 모든 타입 있는 항은 어떤 축약 순서로도 유한 단계 안에 정규형에 도달한다.
 
-증명은 Tait의 계산가능성 술어(reducibility) 논법이 표준이다. 타입 구조에 대한 귀납으로 "계산가능한 항" 개념을 정의하고, 모든 타입 있는 항이 계산가능함을 보인다. 단순한 항 크기에 대한 귀납으로는 실패한다는 점이 이 증명의 요점이다.
+증명은 Tait 의 계산가능성 술어(reducibility) 논법이 표준이다. 타입 구조에 대한 귀납으로 "계산가능한 항" 개념을 정의하고, 모든 타입 있는 항이 계산가능함을 보인다. 단순한 항 크기에 대한 귀납으로는 실패한다는 점이 이 증명의 요점이다.
 
 강한 정규화의 대가는 표현력이다. $\lambda x.\thinspace x\thinspace x$ 는 타입을 붙일 수 없고(자기 적용은 $A = A \to B$ 를 요구한다), 따라서 $Y$ 도 타입을 갖지 못한다. STLC 에서 표현 가능한 수치 함수는 확장 다항식 수준에 그치므로 Turing 완전하지 않다. 실제 언어는 재귀를 원시 연산으로 추가하거나(`fix`), 다형성·의존 타입 같은 더 강한 체계를 쓴다.
 
@@ -150,7 +150,7 @@ flowchart TD
 
 ## 언어와 시스템에서의 쓰임
 
-- **함수형 언어의 핵심.** Haskell, OCaml, Scheme의 의미론은 lambda calculus에 상수·자료형·평가 전략을 더한 것으로 정의된다. 컴파일러의 중간 표현도 타입 있는 lambda calculus다. GHC(Glasgow Haskell Compiler) 의 Core 가 그 예다.
+- **함수형 언어의 핵심.** Haskell, OCaml, Scheme 의 의미론은 lambda calculus에 상수·자료형·평가 전략을 더한 것으로 정의된다. 컴파일러의 중간 표현도 타입 있는 lambda calculus다. GHC(Glasgow Haskell Compiler) 의 Core 가 그 예다.
 - **클로저와 고차함수.** 자유변수를 담은 환경과 함께 함수를 값으로 다루는 구현이 곧 $\lambda$ 추상의 기계적 실현이다. 주류 명령형 언어의 람다/클로저 기능도 같은 기원이다.
 - **평가 전략의 설계.** 지연 평가는 정규 순서의 공학적 구현(그래프 축약, thunk)이고, 엄격 평가는 값 호출이다. 두 전략의 종료성 차이가 그대로 언어 설계의 절충으로 나타난다.
 - **증명 보조 도구.** 의존 타입 체계(Calculus of Constructions 등)는 STLC 를 확장한 것이며, 정리 증명은 타입이 붙은 항을 구성하는 일이다. 강한 정규화가 논리적 무모순성과 직결된다.

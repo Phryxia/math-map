@@ -104,7 +104,7 @@ $$
 
 이므로 삼각부등식도 성립하지 않는다. KL divergence 는 metric 이 아니므로 거리라 부르지 않는다. 남는 구조는 다음 셋이다.
 
-- 대칭화한 Jensen–Shannon divergence의 제곱근은 실제로 metric이다.
+- 대칭화한 Jensen–Shannon divergence 의 제곱근은 실제로 metric이다.
 - Pinsker 부등식이 총변동거리를 위에서 눌러 준다.[^2]
 
 $$

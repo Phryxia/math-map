@@ -124,11 +124,11 @@ $$
 
 이다.
 
-따라서 모든 단순 그래프는 간선 채색수 기준으로 $\chi' = \Delta$ 인 class 1 또는 $\chi' = \Delta + 1$ 인 class 2 로 딱 두 종류다. 홀수 사이클과 Petersen 그래프는 class 2, 이분 그래프는 König의 간선 색칠 정리로 항상 class 1 이다. 어느 class 인지 판정하는 것 자체는 $\Delta = 3$ 일 때조차 NP-완전이다.
+따라서 모든 단순 그래프는 간선 채색수 기준으로 $\chi' = \Delta$ 인 class 1 또는 $\chi' = \Delta + 1$ 인 class 2 로 딱 두 종류다. 홀수 사이클과 Petersen 그래프는 class 2, 이분 그래프는 König 의 간선 색칠 정리로 항상 class 1 이다. 어느 class 인지 판정하는 것 자체는 $\Delta = 3$ 일 때조차 NP-완전이다.
 
 ## 4색 정리와 5색 정리
 
-평면 그래프는 $\chi \le 4$ 이다(Appel–Haken, 1976[^1]; Robertson–Sanders–Seymour–Thomas의 재증명, 1997[^2]). 두 증명 모두 불가피 집합(unavoidable set)과 축약 가능 배치(reducible configuration)를 컴퓨터로 검사하는 구조이며, 사람 손으로 검증 가능한 증명은 아직 없다. Gonthier가 Coq로 형식 검증했다.
+평면 그래프는 $\chi \le 4$ 이다(Appel–Haken, 1976[^1]; Robertson–Sanders–Seymour–Thomas 의 재증명, 1997[^2]). 두 증명 모두 불가피 집합(unavoidable set)과 축약 가능 배치(reducible configuration)를 컴퓨터로 검사하는 구조이며, 사람 손으로 검증 가능한 증명은 아직 없다. Gonthier가 Coq로 형식 검증했다.
 
 반면 5색 정리는 한 쪽짜리 증명이 있다. 하한 쪽은 $K_4$ 가 평면이므로 4가 최적이다.
 
@@ -148,7 +148,7 @@ $$
 P(G, k) = \sum_{S \subseteq E} (-1)^{|S|} k^{\thinspace c(S)}
 $$
 
-를 얻는다. 여기서 $c(S)$ 는 간선 집합 $S$ 만 남긴 그래프의 연결 성분 수다. 이 표현은 Whitney의 정리이며, 채색 다항식이 Tutte 다항식의 특수화이고 [matroid](matroids.md) 이론과 이어진다.
+를 얻는다. 여기서 $c(S)$ 는 간선 집합 $S$ 만 남긴 그래프의 연결 성분 수다. 이 표현은 Whitney 의 정리이며, 채색 다항식이 Tutte 다항식의 특수화이고 [matroid](matroids.md) 이론과 이어진다.
 
 예: 완전 그래프는 $P(K_n,k)=k(k-1)\cdots(k-n+1)$ , 트리는 $P(T,k)=k(k-1)^{n-1}$ , 길이 $n$ 의 사이클은
 
