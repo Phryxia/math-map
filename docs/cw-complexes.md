@@ -107,8 +107,8 @@ $X$ 의 호모토피군에 생성원마다 세포를 하나 두고, 관계마다
 # 활용
 
 - [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)의 정의는 연결 CW 복합체 $K$ 에 $\pi_n(K)\cong G$ 와 나머지 차수의 소멸을 요구한다. 코호몰로지의 표현가능성 $\lbrack X,K(G,n)\rbrack\cong H^n(X;G)$ 도 $X$ 가 CW 복합체일 때 성립한다.
-- [Postnikov 탑](postnikov-tower.md)은 연결 CW 복합체마다 존재하고 호모토피 동치를 무시하면 유일하다.
-- [장애 이론](obstruction-theory.md)은 골격 $X^{(n)}$ 을 따라 사상을 세포 하나씩 늘리고, 다음 세포로 넘어가는 장애를 코호몰로지류로 읽는다.
+- Postnikov 탑은 연결 CW 복합체마다 존재하고 호모토피 동치를 무시하면 유일하다.
+- 장애 이론은 골격 $X^{(n)}$ 을 따라 사상을 세포 하나씩 늘리고, 다음 세포로 넘어가는 장애를 코호몰로지류로 읽는다.
 - [스펙트럼 열](spectral-sequences.md)의 Serre 판은 밑공간의 CW 구조로 전체공간을 여과해 얻는다. $p$ 골격의 역상까지를 $p$ 단계로 잡는다.
 - [Reidemeister 비틀림](reidemeister-torsion.md)은 보편덮개의 세포 사슬복합체에 표현을 먹여 정의하고, 그 값이 CW 구조에 의존하지 않는다.
 

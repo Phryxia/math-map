@@ -100,7 +100,7 @@ $$
 Y(e^\alpha,z)=e^{\alpha}z^{\alpha_{(0)}}\exp\negthinspace\left(\sum_{k\gt 0}\frac{\alpha_{(-k)}}{k}z^k\right)\exp\negthinspace\left(-\sum_{k\gt 0}\frac{\alpha_{(k)}}{k}z^{-k}\right)
 $$
 
-지표는 [theta 급수](theta-series.md)를 $\eta$ 의 거듭제곱으로 나눈 것이다.
+지표는 theta 급수를 $\eta$ 의 거듭제곱으로 나눈 것이다.
 
 $$
 \mathrm{ch}V_L(\tau)=\frac{\Theta_L(\tau)}{\eta(\tau)^{n}}

@@ -90,7 +90,7 @@ $$
 \prod_v\alpha_v(\varphi_v)
 $$
 
-$\alpha_v$ 는 $K_v^\times$ 위의 행렬계수 적분으로 거의 모든 자리에서 1 이다. 이 형태가 [GGP 의 Ichino–Ikeda 정련](gan-gross-prasad.md)의 원형이다.
+$\alpha_v$ 는 $K_v^\times$ 위의 행렬계수 적분으로 거의 모든 자리에서 1 이다. 이 형태가 GGP 의 Ichino–Ikeda 정련의 원형이다.
 
 # 성질
 
@@ -118,7 +118,7 @@ $$
 | 정리 | Waldspurger | Gross–Zagier |
 | BSD(Birch–Swinnerton-Dyer) 계수 | 0 | 1 |
 
-같은 데이터 $(\pi,K,\chi)$ 에서 부호에 따라 두 정리 중 하나가 작동한다. [Heegner 점](heegner-points.md)의 높이가 $L'(1/2)$ 를 주는 것은 주기가 0 이 되어 한 차수 위로 밀려난 결과이고, 이를 고계수 고전군으로 일반화한 것이 산술 GGP 다.
+같은 데이터 $(\pi,K,\chi)$ 에서 부호에 따라 두 정리 중 하나가 작동한다. Heegner 점의 높이가 $L'(1/2)$ 를 주는 것은 주기가 0 이 되어 한 차수 위로 밀려난 결과이고, 이를 고계수 고전군으로 일반화한 것이 산술 GGP 다.
 
 ## 증명의 계보
 

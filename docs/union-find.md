@@ -106,7 +106,7 @@ $union$ 이 $False$ 를 돌려준다는 것은 두 정점이 이미 연결되어
 
 ## 동치관계의 계산 구현
 
-임의의 관계에서 반사, 대칭, 추이 폐포를 취하면 가장 작은 동치관계가 된다. 이 자료구조는 그 폐포를 점진적으로 계산하며 동치류의 정규형으로 대표원을 쓴다. [동치관계](equivalence-relations.md)의 몫 구성이 계산으로 내려오는 자리다.[^1]
+임의의 관계에서 반사, 대칭, 추이 폐포를 취하면 가장 작은 동치관계가 된다. 이 자료구조는 그 폐포를 점진적으로 계산하며 동치류의 정규형으로 대표원을 쓴다. 동치관계의 몫 구성이 계산으로 내려오는 자리다.[^1]
 
 [^1]: Robert Sedgewick and Kevin Wayne, *Algorithms*, §1.5 Union-Find. quick-union, weighted union, path compression 과 비용 분석. https://algs4.cs.princeton.edu/15uf/
 

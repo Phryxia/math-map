@@ -128,7 +128,7 @@ $$
 W^\circ\bigl(\varpi^\lambda\bigr)=\delta_B^{1/2}(\varpi^\lambda)\thickspace s_\lambda(\alpha_1,\dots,\alpha_n)
 $$
 
-이고 $s_\lambda$ 는 **Schur 다항식**, $(\alpha_i)$ 는 [Satake 매개변수](satake-isomorphism.md)다. $\lambda$ 가 지배적이 아니면 0 이다.
+이고 $s_\lambda$ 는 **Schur 다항식**, $(\alpha_i)$ 는 Satake 매개변수다. $\lambda$ 가 지배적이 아니면 0 이다.
 
 Whittaker 함수의 값이 쌍대군의 기약지표이므로 Rankin–Selberg 국소 적분이 계산된다. 두 Whittaker 함수의 곱을 적분하면 Schur 다항식의 Cauchy 항등식
 

@@ -56,9 +56,9 @@ $\mathrm{Gr}(k,n)$ 위에 각 점 $W$ 의 올을 $W$ 자신으로 두는 계수 
 
 # 활용
 
-- [Schubert 계산](schubert-calculus.md)은 Schubert 류의 곱을 계산해 교차 문제를 푼다. 일반 위치의 네 직선과 만나는 직선이 $\mathbb P^3$ 에 둘이라는 것이 $\mathrm{Gr}(2,4)$ 에서 $\sigma\_1^4=2$ 로 나온다.
-- [외대수](exterior-algebra.md)의 분해가능 원소가 Plücker 매장의 상이다. $\Lambda^k V$ 의 원소가 $k$ 개 벡터의 외적으로 쓰이는지를 판정하는 조건이 Plücker 관계식이다.
-- [분류공간](classifying-spaces.md)의 구성에서 $BO(k)$ 와 $BU(k)$ 를 무한 Grassmann 다양체로 실현한다.
+- Schubert 계산은 Schubert 류의 곱을 계산해 교차 문제를 푼다. 일반 위치의 네 직선과 만나는 직선이 $\mathbb P^3$ 에 둘이라는 것이 $\mathrm{Gr}(2,4)$ 에서 $\sigma\_1^4=2$ 로 나온다.
+- 외대수의 분해가능 원소가 Plücker 매장의 상이다. $\Lambda^k V$ 의 원소가 $k$ 개 벡터의 외적으로 쓰이는지를 판정하는 조건이 Plücker 관계식이다.
+- 분류공간의 구성에서 $BO(k)$ 와 $BU(k)$ 를 무한 Grassmann 다양체로 실현한다.
 - [Borel–Weil–Bott 정리](borel-weil-bott.md)는 $\mathrm{GL}\_n/P$ 위의 선다발 코호몰로지를 표현으로 읽고, $P$ 가 극대 포물형일 때 그 공간이 Grassmann 다양체다.
 
 # 연관 문서

@@ -94,8 +94,8 @@ $\theta_j$ 는 Jacobi theta 함수, $\eta$ 는 Dedekind eta 함수다. 가중치
 
 # 활용
 
-- **Siegel 형식의 Fourier–Jacobi 전개.** 차수 $2$ 의 Siegel 모듈러 형식을 지표별 Jacobi 형식의 열로 본다. [Siegel 모듈러 형식](siegel-modular-forms.md)의 $\Phi$ 연산자가 $m=0$ 항을 뽑는 것이고, Maass 승강의 상은 $\phi_1$ 이 나머지를 정하는 부분공간이다.
-- **반정수 가중치와 격자.** theta 분해가 Jacobi 형식을 [Weil 표현](weil-representation.md)에 대한 벡터값 형식으로 바꾼다. 판별식 형식이 $2m$ 차 순환군인 경우가 지표 $m$ 의 Jacobi 형식이고, 일반 격자의 판별식 형식으로 바꾸면 [theta 급수](theta-series.md)의 벡터값 형식이 나온다.
+- **Siegel 형식의 Fourier–Jacobi 전개.** 차수 $2$ 의 Siegel 모듈러 형식을 지표별 Jacobi 형식의 열로 본다. Siegel 모듈러 형식의 $\Phi$ 연산자가 $m=0$ 항을 뽑는 것이고, Maass 승강의 상은 $\phi_1$ 이 나머지를 정하는 부분공간이다.
+- **반정수 가중치와 격자.** theta 분해가 Jacobi 형식을 Weil 표현에 대한 벡터값 형식으로 바꾼다. 판별식 형식이 $2m$ 차 순환군인 경우가 지표 $m$ 의 Jacobi 형식이고, 일반 격자의 판별식 형식으로 바꾸면 [theta 급수](theta-series.md)의 벡터값 형식이 나온다.
 - **Borcherds 곱의 입력.** [Borcherds 곱](borcherds-products.md)은 Weil 표현에 대한 벡터값 약정칙 형식을 받아 직교군의 자기동형 형식을 내놓는다. 지표 $m$ 의 약한 Jacobi 형식은 theta 분해로 그 꼴이 되고, 약한 조건이 허용하는 $4nm-r^2\lt 0$ 항이 벡터값 형식의 극에 대응한다. 계수는 무한곱의 지수로 들어간다.
 - **Mock 모듈러 형식과의 관계.** [Mock 모듈러 형식](mock-modular-forms.md)의 계수를 담는 함수 가운데 둘째 변수를 붙여야 변환식이 닫히는 것들이 있고, 그 변환식이 Jacobi 형식의 것에서 완비화 항만큼 벗어난다.
 - **복소다양체의 타원 종수.** 콤팩트 복소다양체의 타원 종수가 차원으로 정해지는 가중치와 지표의 약한 Jacobi 형식이다. Chern 수의 관계식을 이 공간의 유한 차원성으로 읽는다.

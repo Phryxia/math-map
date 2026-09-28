@@ -122,7 +122,7 @@ Weierstrass 예비정리가 $\mathcal L_E=p^{\mu}\cdot u\cdot P(T)$ 로 갈라 �
 # 활용
 
 - **$p$ 진 BSD.** [$p$ 진 높이](p-adic-height.md)로 만든 조절자와 $L_p$ 의 선행계수를 견주는 등식이 $p$ 진 BSD 추측이다. 양변이 모두 $\mathbb Q_p$ 의 원소라 등식이 성립할 자리가 있다. split multiplicative 자리에서는 위의 $\mathcal L(E)$ 가 추가 인자로 들어간다[^2].
-- **Iwasawa 주추측.** [Iwasawa 주추측](iwasawa-main-conjecture.md)은 $\mathcal L_E$ 가 생성하는 아이디얼이 원분탑 위 [Selmer 군](selmer-tate-shafarevich.md)의 특성 아이디얼과 같다는 진술이다. Kato 의 [Euler 계](euler-systems.md)가 한쪽 포함을, Skinner 와 Urban 의 Eisenstein 합동이 반대쪽을 준다[^5].
+- **Iwasawa 주추측.** Iwasawa 주추측은 $\mathcal L_E$ 가 생성하는 아이디얼이 원분탑 위 [Selmer 군](selmer-tate-shafarevich.md)의 특성 아이디얼과 같다는 진술이다. Kato 의 [Euler 계](euler-systems.md)가 한쪽 포함을, Skinner 와 Urban 의 Eisenstein 합동이 반대쪽을 준다[^5].
 - **순위 0 의 판정.** Kato 의 포함 하나만으로도 $L(E,1)\neq0$ 에서 $E(\mathbb Q)$ 의 유한성이 따라 나온다. 보간 공식이 $L(E,1)\neq0$ 을 $L_p(E,1)\neq0$ 으로 옮기고, 그것이 $\Lambda$ 가군의 여차원 조건이 된다[^5].
 - **수치 계산.** [과수렴 모듈러 기호](overconvergent-modular-symbols.md)가 $\mathcal L_E$ 의 계수를 유한 번의 선형대수로 준다. 보간으로 정의된 함수를 층마다 따라가지 않고 $\mu,\lambda$ 를 직접 표로 만든다.
 

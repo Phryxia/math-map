@@ -70,8 +70,8 @@ $$\cdots\to H^i\_I(M)\to H^i(X,\mathcal F)\to H^i(U,\mathcal F)\to H^{i+1}\_I(M)
 
 # 활용
 
-- **Cohen–Macaulay 판정.** 깊이와 차원을 따로 계산하는 대신 $H^i\_{\mathfrak m}(R)$ 이 한 차수에만 있는지 본다. [Koszul 복합체](koszul-complex.md)의 깊이 등식이 이 계산의 유한 단계 판본이다.
-- **Gorenstein 조건의 서술.** [Gorenstein 환](gorenstein-rings.md)의 정의에서 소클 자리를 차원이 양수일 때 맡는 것이 $H^d\_{\mathfrak m}(R)$ 이다.
+- **Cohen–Macaulay 판정.** 깊이와 차원을 따로 계산하는 대신 $H^i\_{\mathfrak m}(R)$ 이 한 차수에만 있는지 본다. Koszul 복합체의 깊이 등식이 이 계산의 유한 단계 판본이다.
+- **Gorenstein 조건의 서술.** Gorenstein 환의 정의에서 소클 자리를 차원이 양수일 때 맡는 것이 $H^d\_{\mathfrak m}(R)$ 이다.
 - **여차원의 하한.** $V(I)$ 를 뺀 열린집합의 코호몰로지가 $H^i\_I$ 로 계산되므로, 아이디얼을 생성하는 데 필요한 원소의 개수에 하한이 붙는다. $H^i\_I(R)\neq0$ 인 $i$ 가 있으면 $I$ 는 $i$ 개 미만의 원소로 생성되지 않는다.[^2]
 
 [^1]: M. P. Brodmann and R. Y. Sharp, *Local Cohomology: An Algebraic Introduction with Geometric Applications*, 2판 (2013), 1장, 3장, 6장, 20장. 깊이의 특성화, Grothendieck 소멸과 비소멸, 열린집합의 코호몰로지와의 완전열.

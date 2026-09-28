@@ -90,7 +90,7 @@ $m=2$, $n=3$, $t=2$ 인 경우가 Segre 매장 $\mathbb P^1\times\mathbb P^2\sub
 
 ## 국소 코호몰로지의 계산 목표
 
-어떤 $I$ 에서 $H^i\_I(R)$ 이 소멸하는지를 묻는 문제는 산술 랭크의 하한을 얻으려는 계산에서 나온다. [Hartshorne–Lichtenbaum 소멸 정리](hartshorne-lichtenbaum.md)와 표수별 확장이 그 답의 일부다.
+어떤 $I$ 에서 $H^i\_I(R)$ 이 소멸하는지를 묻는 문제는 산술 랭크의 하한을 얻으려는 계산에서 나온다. Hartshorne–Lichtenbaum 소멸 정리와 표수별 확장이 그 답의 일부다.
 
 [^1]: D. Eisenbud, E. G. Evans, *Every algebraic set in $n$-space is the intersection of $n$ hypersurfaces*, Invent. Math. **19** (1973), 107–112. 같은 해에 U. Storch, *Bemerkung zu einem Satz von M. Kneser*, Arch. Math. **23** (1972), 403–404 이 아핀 경우를 얻었다.
 [^2]: R. Hartshorne, *Complete intersections and connectedness*, Amer. J. Math. **84** (1962), 497–508.

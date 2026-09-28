@@ -76,11 +76,11 @@ PID 는 이 성질을 갖지 않는다. $\mathbb Z$ 는 PID 이지만 $\mathbb Z
 
 ## 대수적 정수론
 
-[대수적 수체](algebraic-number-fields.md)의 정수환은 일반적으로 UFD 가 아니다. 유수(class number)가 그 실패를 재는 유한 불변량이고, 유수가 $1$ 인 것과 정수환이 PID 인 것이 동치이며 이때 UFD 이기도 하다. 원소의 분해 대신 아이디얼의 소 아이디얼 분해를 쓰면 유일성이 회복되고, 그 조건을 공리로 뽑은 것이 [Dedekind 정역](dedekind-domains.md)이다.
+대수적 수체의 정수환은 일반적으로 UFD 가 아니다. 유수(class number)가 그 실패를 재는 유한 불변량이고, 유수가 $1$ 인 것과 정수환이 PID 인 것이 동치이며 이때 UFD 이기도 하다. 원소의 분해 대신 아이디얼의 소 아이디얼 분해를 쓰면 유일성이 회복되고, 그 조건을 공리로 뽑은 것이 Dedekind 정역이다.
 
 ## 다항식과 인수분해
 
-[다항식환](polynomial-rings.md) $k[x]$ 는 차수를 Euclid 함수로 삼는 ED 이므로 기약다항식 분해가 유일하다. 이 유일성이 기약다항식으로 나눈 몫이 체가 된다는 사실과 맞물려 [체의 확대](field-extensions.md)와 [유한체](finite-fields.md)의 구성을 떠받친다. 여러 변수의 경우 $k[x_1,\dots,x_n]$ 은 PID 가 아니지만 Gauss 정리로 UFD 이므로 기약 분해는 여전히 유일하다.
+다항식환 $k[x]$ 는 차수를 Euclid 함수로 삼는 ED 이므로 기약다항식 분해가 유일하다. 이 유일성이 기약다항식으로 나눈 몫이 체가 된다는 사실과 맞물려 [체의 확대](field-extensions.md)와 [유한체](finite-fields.md)의 구성을 떠받친다. 여러 변수의 경우 $k[x_1,\dots,x_n]$ 은 PID 가 아니지만 Gauss 정리로 UFD 이므로 기약 분해는 여전히 유일하다.
 
 ## 최대공약수
 
