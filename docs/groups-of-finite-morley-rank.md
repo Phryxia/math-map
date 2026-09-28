@@ -119,6 +119,6 @@ $1\in X$ 인 정의 가능 집합 $X$ 가 **불가분**이라 함은, 정의 가
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Zilber 불가분성 정리](zilber-indecomposability.md)
 
 #logic #foundations #algebra #group_theory
