@@ -134,6 +134,6 @@ Heegner 인자들의 산술적 교차수가 [Eisenstein 급수](eisenstein-serie
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gross–Kohnen–Zagier 정리](gross-kohnen-zagier.md)
 
 #number_theory #complex_analysis #group_theory #construction
