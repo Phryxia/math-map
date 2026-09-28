@@ -100,6 +100,6 @@ Cherlin–Zilber 추측은 단순 무한 유한 Morley 위수 군이 대수적�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [유한 Morley 위수 군](groups-of-finite-morley-rank.md)
 
 #logic #foundations #algebra #group_theory

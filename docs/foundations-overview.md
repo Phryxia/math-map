@@ -52,6 +52,7 @@ graph TD
 - [Zilber 삼분법](zilber-trichotomy.md): 강최소 집합의 프리기하가 자명, 벡터공간, 대수적으로 닫힌 체 셋으로 갈린다는 진술과 Hrushovski 의 반례
 - [군 배치 정리](group-configuration.md): 여섯 원소의 독립성 패턴에서 정의 가능한 군을 해석하는 정리, 삼분법이 군을 얻는 단계
 - [강최소 군](strongly-minimal-groups.md): 정의 가능한 진부분군이 유한하다는 관찰과 Reineke 의 아벨성 정리, 배치가 해석한 군의 구조
+- [유한 Morley 위수 군](groups-of-finite-morley-rank.md): 위수가 유한한 정의 가능 군, 부분군의 사슬 조건과 연결 성분, Cherlin–Zilber 추측
 - [미분적으로 닫힌 체](differentially-closed-fields.md): 미분 방정식의 해를 모두 갖는 체, 미분 닫힘의 유일성과 강최소 집합의 삼분법
 - [Mordell–Lang 추측](mordell-lang.md): 삼분법을 미분체와 차분체에 적용해 아벨 다양체의 유리점을 결정하는 산술 응용
 - [o-최소성](o-minimality.md): 정의 가능 집합이 구간과 점의 유한 합집합이라는 조건, 셀 분해와 차원
