@@ -10,7 +10,7 @@ $$
 
 이것이 **해석적 지표**다. $D$ 의 계수를 연속적으로 흔들면 $\dim\ker D$ 와 $\dim\mathrm{coker}\thinspace D$ 는 각각 뛰지만 차이는 변하지 않는다.
 
-Atiyah–Singer 지표 정리는 이 정수가 $D$ 의 최고차 기호가 정의하는 **위상적 지표**와 같다고 말한다.
+Atiyah–Singer 지표 정리로 이 정수는 $D$ 의 최고차 기호가 정의하는 **위상적 지표**와 같다.
 
 $$
 \mathrm{ind}(D)=\int_M\mathrm{ch}(\sigma_D)\thinspace\mathrm{Td}(TM\otimes\mathbb C)

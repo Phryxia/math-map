@@ -4,7 +4,7 @@
 
 종수 $g$ 인 콤팩트 [Riemann 곡면](riemann-surfaces.md) $X$ 의 Jacobi 다양체는 정칙 $1$ 형식의 쌍대공간을 주기 격자로 나눈 $g$ 차원 복소 토러스다. Abel–Jacobi 사상이 차수 $0$ 인 divisor 를 이 토러스의 점으로 보낸다.
 
-Abel 정리는 그 점이 $0$ 인 것과 divisor 가 주 divisor 인 것이 동치라고 말한다. 따라서 Jacobi 다양체는 [Picard 군](picard-group.md)의 항등원 성분 $\mathrm{Pic}^0(X)$ 와 같다.
+Abel 정리로 그 점이 $0$ 인 것과 divisor 가 주 divisor 인 것이 동치다. 따라서 Jacobi 다양체는 [Picard 군](picard-group.md)의 항등원 성분 $\mathrm{Pic}^0(X)$ 와 같다.
 
 # 직관
 

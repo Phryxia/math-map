@@ -2,7 +2,7 @@
 
 # 개요
 
-[Sato–Tate 분포](sato-tate.md)는 Frobenius 각 $\theta_p$ 가 $\frac2\pi\sin^2\theta\thinspace d\theta$ 를 따른다고 말한다. 연속측도다. 그러므로 한 점의 질량이 $0$ 이고, 특정한 정수값
+[Sato–Tate 분포](sato-tate.md)에서 Frobenius 각 $\theta_p$ 는 $\frac2\pi\sin^2\theta\thinspace d\theta$ 를 따른다. 연속측도다. 그러므로 한 점의 질량이 $0$ 이고, 특정한 정수값
 
 $$
 a_p=r\qquad(r\ \text{고정})
@@ -44,7 +44,7 @@ $$
 
 $a_p=0$ 은 점이다. $p$ 가 커질수록 $a_p$ 가 놓일 자리가 $4\sqrt p$ 개로 늘어나므로 한 자리를 맞출 확률이 $1/\sqrt p$ 로 줄어든다. 띠는 폭이 $\sqrt p$ 에 비례해 늘어나지만 점은 늘어나지 않는다.
 
-연속측도는 점의 질량이 $0$ 이라고만 말하고 $0$ 으로 가는 속도는 말하지 않으므로, Sato–Tate 가 아무리 정밀해져도 Lang–Trotter 는 따라 나오지 않는다. 속도를 알려면 $\bmod\ell$ 정보를 모든 $\ell$ 에서 모아야 한다.
+연속측도로는 점의 질량이 $0$ 이라는 것만 나오고 $0$ 으로 가는 속도는 나오지 않으므로, Sato–Tate 가 아무리 정밀해져도 Lang–Trotter 는 따라 나오지 않는다. 속도를 알려면 $\bmod\ell$ 정보를 모든 $\ell$ 에서 모아야 한다.
 
 ## 상수의 오일러 곱
 

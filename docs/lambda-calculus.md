@@ -131,7 +131,7 @@ flowchart TD
 계산 능력이 같으니 결정불가능성도 따라온다.
 
 - 주어진 항이 정규형을 갖는지는 결정불가능하다(정지 문제에 대응).
-- 두 항이 $=\_\beta$ 인지도 결정불가능하다(Church 의 정리). Scott–Curry 정리는 더 강하게, $\beta$ -동치로 닫힌 자명하지 않은 항 집합은 결정불가능하다고 말한다. 이는 [Rice 정리](rice-theorem.md)의 lambda calculus 판본이다.
+- 두 항이 $=\_\beta$ 인지도 결정불가능하다(Church 의 정리). Scott–Curry 정리는 더 강해서, $\beta$ -동치로 닫힌 자명하지 않은 항 집합은 결정불가능하다. 이는 [Rice 정리](rice-theorem.md)의 lambda calculus 판본이다.
 - 반면 [유한 오토마타](finite-automata.md)처럼 계산 능력이 제한된 모델에서는 이런 질문들이 모두 결정가능하다. 표현력과 분석가능성의 교환은 여기서도 같다.
 
 ## 단순 타입과 정규화
