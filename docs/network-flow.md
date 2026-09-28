@@ -152,7 +152,7 @@ Menger 정리는 그래프의 연결도(connectivity)를 국소적 경로 개수
 
 ## 구현과 알고리즘 선택
 
-실수 용량으로 Ford–Fulkerson을 그냥 돌리면 종료가 보장되지 않는다. 정수/유리수로 다루거나 BFS(Edmonds–Karp), 용량 스케일링, Dinic을 쓴다. 규모가 커지면 흐름 분해를 명시적으로 유지하지 말고 간선별 흐름값만 관리하는 편이 낫다. 최적성 증명이 필요하면 최소 절단을 함께 출력한다. 잔여 그래프에서 $s$ 의 도달 가능 집합을 한 번 BFS 하면 되므로 비용이 사실상 없고, [최소 신장트리](minimum-spanning-tree.md)의 절단 성질처럼 검증 가능한 증명서가 된다.
+실수 용량으로 Ford–Fulkerson 을 그냥 돌리면 종료가 보장되지 않는다. 정수/유리수로 다루거나 BFS(Edmonds–Karp), 용량 스케일링, Dinic 을 쓴다. 규모가 커지면 흐름 분해를 명시적으로 유지하지 말고 간선별 흐름값만 관리하는 편이 낫다. 최적성 증명이 필요하면 최소 절단을 함께 출력한다. 잔여 그래프에서 $s$ 의 도달 가능 집합을 한 번 BFS 하면 되므로 비용이 사실상 없고, [최소 신장트리](minimum-spanning-tree.md)의 절단 성질처럼 검증 가능한 증명서가 된다.
 
 [^1]: L. R. Ford, D. R. Fulkerson, "Maximal Flow Through a Network", Canadian Journal of Mathematics 8 (1956), https://doi.org/10.4153/CJM-1956-045-5
 [^2]: J. Edmonds, R. M. Karp, "Theoretical Improvements in Algorithmic Efficiency for Network Flow Problems", Journal of the ACM 19 (1972), https://doi.org/10.1145/321694.321699

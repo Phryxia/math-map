@@ -95,7 +95,7 @@ $$
 
 $\beta$ -축약을 적용할 수 있는 부분항을 **redex**(reducible expression)라 한다. 한 항에 redex 가 여럿 있을 때 어느 것을 먼저 줄일지가 전략이다.
 
-- **정규 순서(normal order).** 가장 왼쪽 바깥쪽 redex부터. 지연 평가에 대응한다.
+- **정규 순서(normal order).** 가장 왼쪽 바깥쪽 redex 부터. 지연 평가에 대응한다.
 - **값 호출(applicative order).** 인자를 먼저 정규형으로 만든 뒤 적용한다. 대부분의 실제 언어가 쓴다.
 
 두 전략은 결과가 같지만 종료성이 다르다. 예컨대 $\Omega = (\lambda x.\thinspace x\thinspace x)(\lambda x.\thinspace x\thinspace x)$ 로 둔 $(\lambda x.\thinspace \lambda y.\thinspace y)\thinspace\Omega$ 는 정규 순서에서는 $\lambda y.\thinspace y$ 로 끝나지만 값 호출에서는 $\Omega$ 를 먼저 줄이려다 발산한다.

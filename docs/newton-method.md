@@ -46,15 +46,15 @@ $$
 J(x)\_{ij} = \frac{\partial F_i}{\partial x_j}(x),\qquad J(x_k)\thinspace\Delta_k = -F(x_k),\qquad x_{k+1} = x_k + \Delta_k .
 $$
 
-역행렬을 명시적으로 구하지 않고 매 단계 선형계를 푼다. [행렬식](determinants.md)이 0에 가까우면(즉 Jacobian이 특이에 가까우면) 이 단계가 불안정해진다.
+역행렬을 명시적으로 구하지 않고 매 단계 선형계를 푼다. [행렬식](determinants.md)이 0에 가까우면(즉 Jacobian 이 특이에 가까우면) 이 단계가 불안정해진다.
 
-최적화 문제 $\min f(x)$ 에 적용할 때는 $F=\nabla f$ 로 두므로 Jacobian이 Hessian이 된다.
+최적화 문제 $\min f(x)$ 에 적용할 때는 $F=\nabla f$ 로 두므로 Jacobian 이 Hessian 이 된다.
 
 $$
 x_{k+1} = x_k - H(x_k)^{-1} \nabla f(x_k).
 $$
 
-이것이 [경사하강법](gradient-descent.md)과의 차이다. 경사하강은 일차 정보만 쓰고 보폭을 따로 정해야 하지만, Newton 법은 이차 정보로 보폭과 방향을 동시에 결정한다. 단, Hessian이 양의 정부호가 아니면 그 방향이 하강 방향이 아닐 수 있다.
+이것이 [경사하강법](gradient-descent.md)과의 차이다. 경사하강은 일차 정보만 쓰고 보폭을 따로 정해야 하지만, Newton 법은 이차 정보로 보폭과 방향을 동시에 결정한다. 단, Hessian 이 양의 정부호가 아니면 그 방향이 하강 방향이 아닐 수 있다.
 
 ## 수렴 차수
 
@@ -116,12 +116,12 @@ $$
 
 ## 준Newton 법
 
-Jacobian이나 Hessian을 계산하고 분해하는 비용이 큰 경우, 근사 행렬을 반복적으로 갱신한다.
+Jacobian 이나 Hessian 을 계산하고 분해하는 비용이 큰 경우, 근사 행렬을 반복적으로 갱신한다.
 
 - 할선법(secant). 스칼라에서 도함수를 차분으로 대체한다. 수렴 차수는 황금비 약 1.618이다.
 - Broyden 법. 다변수에서 $\Delta$ 와 $F$ 의 변화만으로 Jacobian 근사를 계급 1 갱신한다.
 - BFGS(Broyden–Fletcher–Goldfarb–Shanno) 및 L-BFGS. 최적화에서 Hessian 의 역을 대칭 양정부호로 유지하며 갱신한다. 큰 규모 문제의 표준이다.
-- Gauss–Newton과 Levenberg–Marquardt. 최소제곱 구조를 이용해 Hessian을 Jacobian 의 곱으로 근사하고 감쇠항을 더한다. 제약이 붙은 문제에서는 [Lagrange 쌍대성](lagrange-duality.md)의 KKT(Karush–Kuhn–Tucker) 정류 조건에 Newton 법을 적용하는 것이 내부점 방법의 기본 절차다.
+- Gauss–Newton 과 Levenberg–Marquardt. 최소제곱 구조를 이용해 Hessian 을 Jacobian 의 곱으로 근사하고 감쇠항을 더한다. 제약이 붙은 문제에서는 [Lagrange 쌍대성](lagrange-duality.md)의 KKT(Karush–Kuhn–Tucker) 정류 조건에 Newton 법을 적용하는 것이 내부점 방법의 기본 절차다.
 
 # 활용
 
@@ -146,7 +146,7 @@ $a=2$ 에서 초깃값 $1$ 로 시작하면 오차가 대략 $0.08$ , $0.002$ , 
 
 ## 볼록 최적화
 
-목적함수가 강볼록하고 Hessian이 Lipschitz 연속이면, 감쇠 Newton 법은 두 국면을 거친다. 처음에는 각 단계마다 목적함수가 일정량 이상 감소하는 감쇠 국면이고, 일정 임계값을 넘어서면 보폭 1이 항상 받아들여지며 이차 수렴하는 국면이다. 이 분석은 좌표 변환에 무관하다는 점에서 [볼록성](convexity.md) 기반 최적화 이론의 모범적인 결과다. 반복 횟수 상한이 문제의 조건수에 거의 의존하지 않는다는 것이 경사하강법 대비 결정적인 이점이다.
+목적함수가 강볼록하고 Hessian 이 Lipschitz 연속이면, 감쇠 Newton 법은 두 국면을 거친다. 처음에는 각 단계마다 목적함수가 일정량 이상 감소하는 감쇠 국면이고, 일정 임계값을 넘어서면 보폭 1이 항상 받아들여지며 이차 수렴하는 국면이다. 이 분석은 좌표 변환에 무관하다는 점에서 [볼록성](convexity.md) 기반 최적화 이론의 모범적인 결과다. 반복 횟수 상한이 문제의 조건수에 거의 의존하지 않는다는 것이 경사하강법 대비 결정적인 이점이다.
 
 [^1]: Wikipedia, "Newton's method", https://en.wikipedia.org/wiki/Newton%27s_method
 [^2]: Wikipedia, "Kantorovich theorem", https://en.wikipedia.org/wiki/Kantorovich_theorem

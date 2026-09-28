@@ -51,7 +51,7 @@ $$
 
 ## 곡면의 두 기본형식
 
-곡면의 국소 매개화를 쓰면 접벡터의 길이를 재는 first fundamental form과 법선 방향으로 휘는 정도를 재는 second fundamental form이 나온다. 단위법벡터를 $n$ 이라 하면
+곡면의 국소 매개화를 쓰면 접벡터의 길이를 재는 first fundamental form 과 법선 방향으로 휘는 정도를 재는 second fundamental form 이 나온다. 단위법벡터를 $n$ 이라 하면
 
 $$
 \mathrm{I}=\begin{pmatrix}E&F\cr F&G\end{pmatrix},\quad E=r_u\cdot r_u,\ F=r_u\cdot r_v,\ G=r_v\cdot r_v
@@ -97,7 +97,7 @@ $$
 
 ## 따름정리
 
-- 구면 삼각형의 내각의 합은 $\pi$ 보다 크고, 초과분이 넓이에 비례한다. 세 변이 geodesic이면 $\kappa_g$ 가 $0$ 이므로 Gauss–Bonnet이 직접 넓이 공식을 준다.
+- 구면 삼각형의 내각의 합은 $\pi$ 보다 크고, 초과분이 넓이에 비례한다. 세 변이 geodesic 이면 $\kappa_g$ 가 $0$ 이므로 Gauss–Bonnet 이 직접 넓이 공식을 준다.
 - 원환면에는 곡률이 어디서도 양수인 계량이 없다. 총 곡률이 $0$ 이어야 하기 때문이다.
 - $K$ 가 항상 $0$ 이면 곡면은 국소적으로 평면과 등거리동형이다(전개 가능 곡면).
 
