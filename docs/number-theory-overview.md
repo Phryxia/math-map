@@ -108,6 +108,7 @@ graph TD
 - [Euler 계](euler-systems.md) → [Kolyvagin 계](kolyvagin-systems.md), [Iwasawa 주추측](iwasawa-main-conjecture.md) → [Vandiver 추측](vandiver-conjecture.md), [Greenberg 추측](greenberg-conjecture.md)
 - [Eisenstein 아이디얼과 Mazur 의 비틀림점 정리](eisenstein-ideal.md) → [Merel 의 일양 유계성 정리](merel-theorem.md)
 - [Sato–Tate 분포](sato-tate.md) → [Lang–Trotter 추측](lang-trotter.md): $a_p$ 의 통계
+- [Tate 곡선](tate-curve.md): 분해 곱셈적 환원을 갖는 곡선의 $p$ 진 균등화 $K^{\times}/q^{\mathbb Z}$ , Tate 주기와 $L$ 불변량
 - [Chabauty 방법](chabauty-method.md): Jacobi 다양체의 계수가 종수보다 작을 때 유리점을 $p$ 진 적분의 영점으로 세는 방법
 - [Coleman 적분](coleman-integration.md): 잔차 원판의 항별 적분을 Frobenius 작용으로 이어 붙인 $p$ 진 적분, 영점 개수의 상한
 - [p 진 L 함수](p-adic-l-function.md): 모듈러 기호로 만든 $\mathbb Z_p^\times$ 위 측도의 적분, 복소 특수값을 보간하고 Iwasawa 주추측의 해석적 변에 놓이는 함수

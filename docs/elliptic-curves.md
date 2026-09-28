@@ -146,6 +146,10 @@ $$
 - [Selmer 군과 Tate–Shafarevich 군](selmer-tate-shafarevich.md)
 - [Siegel 의 정수점 정리](siegel-integral-points.md)
 
+### 국소적 구조
+
+- [Tate 곡선](tate-curve.md)
+
 ### 고차원 일반화
 
 - [아벨 다양체](abelian-varieties.md)
