@@ -58,6 +58,7 @@ graph TD
 - [Koszul 복합체](koszul-complex.md): 원소열로 만든 사슬 복합체, 정칙열 판정과 깊이 계산
 - [국소 코호몰로지](local-cohomology.md): 아이디얼로 소멸되는 부분의 유도 함자, 깊이와 차원이 소멸 차수로 나타나는 것과 국소 쌍대성
 - [Hartshorne–Lichtenbaum 소멸 정리](hartshorne-lichtenbaum.md): 최고차 국소 코호몰로지의 소멸을 $R/I$ 의 차원으로 판정하는 정리, 산술 랭크의 하한
+- [집합론적 완전교차](set-theoretic-complete-intersection.md): 여차원과 같은 개수의 방정식으로 잘리는 대수집합, 산술 랭크의 상한과 코호몰로지가 주는 하한
 - [Dedekind 정역](dedekind-domains.md): 정수론으로 가는 문
 
 ## 가군

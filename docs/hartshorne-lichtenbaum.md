@@ -107,6 +107,6 @@ $X\subseteq\mathbb P^n$ 의 아핀뿔에 정리를 적용하면 $X$ 의 여차�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [집합론적 완전교차](set-theoretic-complete-intersection.md)
 
 #ring_theory #algebra #category_theory
