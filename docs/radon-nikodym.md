@@ -125,7 +125,7 @@ $$
 \frac{d\nu}{d\lambda}(x)=\lim_{r\to0}\frac{\nu(B(x,r))}{\lambda(B(x,r))}
 $$
 
-으로 거의 모든 점에서 복원된다. 이것이 Lebesgue 미분 정리이고, Radon–Nikodym 도함수가 국소적인 밀도임을 말한다. [미적분학의 기본 정리](fundamental-calculus.md)의 가장 일반적인 형태다.[^1]
+으로 거의 모든 점에서 복원된다. 이것이 Lebesgue 미분 정리이고, Radon–Nikodym 도함수는 국소적인 밀도다. [미적분학의 기본 정리](fundamental-calculus.md)의 가장 일반적인 형태다.[^1]
 
 [^1]: Terence Tao, *245B Notes 1: Signed measures and the Radon–Nikodym–Lebesgue theorem*. 절대연속, Radon–Nikodym 도함수와 Lebesgue 분해. https://terrytao.wordpress.com/2009/01/04/245b-notes-1-signed-measures-and-the-radon-nikodym-lebesgue-theorem/
 

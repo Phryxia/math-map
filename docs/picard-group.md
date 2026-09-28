@@ -60,7 +60,7 @@ $\mathrm{Pic}(\mathbb P^n)\cong\mathbb Z$ 이고 생성원이 초평면에 대�
 
 - **Riemann–Roch.** [Riemann–Roch 정리](riemann-roch.md)의 양변이 divisor 의 류에만 의존하므로 정리가 $\mathrm{Pic}(X)$ 위의 등식이다. $\deg$ 가 같은 류들끼리 전역 단면의 차원을 비교한다.
 - **타원곡선의 군 구조.** [타원곡선](elliptic-curves.md)에서 점 $P$ 를 $\mathcal O(P-O)$ 의 류로 보내면 곡선과 $\mathrm{Pic}^0$ 사이의 전단사가 되고, 곡선 위의 덧셈이 divisor 류의 덧셈이 된다.
-- **선다발의 위상적 분류.** $c_1$ 의 상이 어느 $H^2(X,\mathbb Z)$ 원소가 정칙 선다발에서 오는지를 말한다. Lefschetz 의 $(1,1)$ 류 정리가 그 상을 Hodge 분해로 기술한다.
+- **선다발의 위상적 분류.** $c_1$ 의 상이 어느 $H^2(X,\mathbb Z)$ 원소가 정칙 선다발에서 오는지를 가른다. Lefschetz 의 $(1,1)$ 류 정리가 그 상을 Hodge 분해로 기술한다.
 
 [^1]: Robin Hartshorne, *Algebraic Geometry*, Springer Graduate Texts in Mathematics 52 (1977), II.6. divisor 류군과 가역층의 대응, 사영공간의 계산이 이 절에 있다.
 

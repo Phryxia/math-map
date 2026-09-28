@@ -76,7 +76,7 @@ $$
 
 ## 대칭 다항식과의 대응
 
-Cartan 분해는 $\mathcal H(G,K)$ 의 기저가 **지배적 쌍대지표** $\lambda\in X_\ast(T)^+$ 로 매겨진다고 말한다. $\mathrm{GL}\_n$ 이면 $\lambda_1\ge\cdots\ge\lambda_n$ 인 정수열이다.
+Cartan 분해로 $\mathcal H(G,K)$ 의 기저는 **지배적 쌍대지표** $\lambda\in X_\ast(T)^+$ 로 매겨진다. $\mathrm{GL}\_n$ 이면 $\lambda_1\ge\cdots\ge\lambda_n$ 인 정수열이다.
 
 한편 $\widehat G=\mathrm{GL}\_n(\mathbb C)$ 의 기약표현도 최고무게 $\lambda_1\ge\cdots\ge\lambda_n$ 로 매겨진다. 표현환 $R(\widehat G)$ 의 기저가 그 지표 $\chi_\lambda$ 들이다.
 
