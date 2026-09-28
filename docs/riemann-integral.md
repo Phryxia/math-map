@@ -106,7 +106,7 @@ $$
 
 $f_n \to f$ 여도 $\int f_n \to \int f$ 는 일반적으로 성립하지 않는다. [균등수렴](uniform-convergence.md)을 가정하면 성립하지만 강한 조건이다. 적분 가능한 함수들의 점별 극한이 적분 가능하지 않을 수도 있다. $[0,1]$ 의 유리수를 $q_1, q_2, \ldots$ 로 나열하고 $f_n$ 을 $\lbrace q_1,\ldots,q_n\rbrace$ 의 지시함수로 두면 각 $f_n$ 은 적분 가능하고 극한은 Dirichlet 함수다.
 
-[Lebesgue 적분](lebesgue-integral.md)은 [단조수렴](monotone-convergence.md)과 [지배수렴](dominated-convergence.md) 정리로 훨씬 약한 가정에서 교환을 허용하고, 그 결과 함수공간이 완비가 된다. Riemann 적분으로 정의한 함수공간은 완비가 아니다.
+Lebesgue 적분은 [단조수렴](monotone-convergence.md)과 [지배수렴](dominated-convergence.md) 정리로 훨씬 약한 가정에서 교환을 허용하고, 그 결과 함수공간이 완비가 된다. Riemann 적분으로 정의한 함수공간은 완비가 아니다.
 
 ## 수치 적분
 

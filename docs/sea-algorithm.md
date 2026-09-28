@@ -74,7 +74,7 @@ $\varphi$ 의 특성다항식 $X^2-a_pX+p$ 를 $\bmod\ell$ 로 보았을 때 두
 - **Elkies 소수.** 판별식 $a_p^2-4p$ 가 $\bmod\ell$ 에서 제곱이다. $\varphi$ 가 $\mathbb F_\ell$ 안에 고윳값을 갖고 $E[\ell]$ 안에 $\varphi$ 가 보존하는 1 차원 부분군 $C$ 가 있다. $C$ 에 대응하는 인수 $g_\ell(x)$ 는 차수가 $(\ell-1)/2$ 로 $\psi_\ell$ 보다 $\ell$ 배 작다.
 - **Atkin 소수.** 판별식이 제곱이 아니다. 고유부분군이 없으므로 위의 이득이 없다. $\varphi$ 의 $\mathbb F_{\ell^2}$ 안에서의 고윳값의 위수가 $a_p^2/p\bmod\ell$ 의 값을 몇 가지 후보로 좁힌다.
 
-판정과 $g_\ell$ 의 계산에는 모듈러 다항식 $\Phi_\ell(X,Y)$ 를 쓴다. $\Phi_\ell(j(E),Y)$ 가 $\mathbb F_p$ 에서 근을 가지면 Elkies 소수이고, 그 근이 $\ell$ 차 동종사상으로 연결된 곡선의 $j$ 불변량이다. $\Phi_\ell$ 은 [모듈러 곡선](modular-curves.md) $X_0(\ell)$ 의 평면 모델이고, $X_0(\ell)$ 이 $\ell$ 차 부분군을 가진 타원곡선을 매개변수화한다는 사실이 알고리즘의 근거다.
+판정과 $g_\ell$ 의 계산에는 모듈러 다항식 $\Phi_\ell(X,Y)$ 를 쓴다. $\Phi_\ell(j(E),Y)$ 가 $\mathbb F_p$ 에서 근을 가지면 Elkies 소수이고, 그 근이 $\ell$ 차 동종사상으로 연결된 곡선의 $j$ 불변량이다. $\Phi_\ell$ 은 모듈러 곡선 $X_0(\ell)$ 의 평면 모델이고, $X_0(\ell)$ 이 $\ell$ 차 부분군을 가진 타원곡선을 매개변수화한다는 사실이 알고리즘의 근거다.
 
 ```mermaid
 graph TD
@@ -175,7 +175,7 @@ $$
 
 ## 두 알고리즘의 영역
 
-| | Schoof–Elkies–Atkin | [Kedlaya](kedlaya-algorithm.md) |
+| | Schoof–Elkies–Atkin | Kedlaya |
 |---|---|---|
 | 정보를 모으는 축 | 여러 소수 $\ell$ 의 잉여 | 하나의 소수 $p$ 의 정밀도 |
 | 쓰는 [코호몰로지](cohomology.md) | $\ell$ 진 (등분점) | $p$ 진 (Monsky–Washnitzer) |
@@ -209,7 +209,7 @@ $p$ 가 $5$ 에서 $2^{61}-1$ 로 $18$ 자리 커지는 동안 필요한 가장 
 - **안전성 조건 확인.** $\char35{}E(\mathbb F_p)=p$ 인 **비정상(anomalous)** 곡선은 이산로그가 선형시간에 풀리고, $\char35{}E$ 가 $p^k-1$ 을 작은 $k$ 에서 나누면 MOV(Menezes–Okamoto–Vanstone) 공격으로 [유한체](finite-fields.md) 이산로그로 환원된다. 위수를 알아야 이 조건들을 검사할 수 있다.
 - **곡선 개수 세기.** 주어진 위수를 갖는 곡선을 찾거나(복소곱셈법의 역방향), 위수 분포를 실험적으로 조사하는 데 쓰인다.
 - **수치 실험.** 대량의 $a_p$ 표가 [Sato–Tate 분포](sato-tate.md)나 BSD(Birch–Swinnerton-Dyer) 추측의 수치 검증에 쓰이고, 큰 $p$ 영역의 표를 SEA 가 만든다.
-- **$\ell$ 진 표현의 계산.** $\varphi|\_{E[\ell]}$ 의 행렬이 [Galois 표현](galois-representations.md) $\rho_{E,\ell}$ 의 Frobenius 에서의 상이다. 상이 $\mathrm{GL}\_2(\mathbb F_\ell)$ 전체인지 판정하는 Serre 의 문제를 계산할 때 이 행렬을 쓴다.
+- **$\ell$ 진 표현의 계산.** $\varphi|\_{E[\ell]}$ 의 행렬이 Galois 표현 $\rho_{E,\ell}$ 의 Frobenius 에서의 상이다. 상이 $\mathrm{GL}\_2(\mathbb F_\ell)$ 전체인지 판정하는 Serre 의 문제를 계산할 때 이 행렬을 쓴다.
 
 [^1]: R. Schoof, *Elliptic curves over finite fields and the computation of square roots mod p*, Math. Comp. **44** (1985), 483–494, 그리고 *Counting points on elliptic curves over finite fields*, J. Théor. Nombres Bordeaux **7** (1995), 219–254. Elkies–Atkin 개선의 표준 서술은 R. Lercier, F. Morain 의 논문들과 I. Blake, G. Seroussi, N. Smart, *Elliptic Curves in Cryptography* (1999) VII장. 나눗셈 다항식과 Hasse 정리는 J. Silverman, *The Arithmetic of Elliptic Curves* (2판, 2009) III, V장. 모듈러 다항식과 $X_0(\ell)$ 의 모듈러 해석은 F. Diamond, J. Shurman, *A First Course in Modular Forms* (2005) 8장.
 

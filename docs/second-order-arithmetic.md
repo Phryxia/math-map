@@ -65,7 +65,7 @@ $\Sigma^0_k$ 논리식의 내포는 [산술적 계층](arithmetical-hierarchy.md
 # 활용
 
 - 역수학은 정리를 $L_2$ 문장으로 옮기고 위 다섯 체계 가운데 어느 것과 $\mathrm{RCA}\_0$ 위에서 동치인지 찾는다. 유계 증가 수열의 수렴과 Bolzano–Weierstrass 정리는 $\mathrm{ACA}\_0$ 와 동치이고, Heine–Borel 정리와 [Brouwer 고정점 정리](brouwer-fixed-point.md)는 $\mathrm{WKL}\_0$ 과 동치다.
-- [약한 König 보조정리](weak-konig-lemma.md)의 자리가 $\mathrm{WKL}\_0$ 이고, 그 체계가 콤팩트성을 쓰는 정리들을 모은다.
+- 약한 König 보조정리의 자리가 $\mathrm{WKL}\_0$ 이고, 그 체계가 콤팩트성을 쓰는 정리들을 모은다.
 - 해석적 계층의 $\Pi^1_1$ 단계가 $\Pi^1_1\text{-}\mathrm{CA}\_0$ 의 내포를 정하고, 그 위에서 정렬순서의 비교와 귀납적 정의가 형식화된다.
 
 [^1]: S. G. Simpson, *Subsystems of Second Order Arithmetic*, 2판, Cambridge University Press (2009), 9.1절과 9.2절. $\mathrm{RCA}\_0$ 와 $\mathrm{WKL}\_0$ 의 $\Pi^0_2$ 보존성.

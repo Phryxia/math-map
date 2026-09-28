@@ -176,7 +176,7 @@ $$
 
 ## Lie 형 유한 단순군
 
-Chevalley 는 근계와 Cartan 행렬만으로 복소 Lie 대수의 정수 기저를 잡고 그것을 체 $\mathbb F_q$ 로 환원해 유한군을 만들었다. 이렇게 얻은 $A_n(q),\dots,E_8(q)$ 와 뒤틀린 변종이 [유한 단순군 분류](finite-simple-groups.md)의 16 개 무한 계열이다.
+Chevalley 는 근계와 Cartan 행렬만으로 복소 Lie 대수의 정수 기저를 잡고 그것을 체 $\mathbb F_q$ 로 환원해 유한군을 만들었다. 이렇게 얻은 $A_n(q),\dots,E_8(q)$ 와 뒤틀린 변종이 유한 단순군 분류의 16 개 무한 계열이다.
 
 ## Langlands 쌍대
 

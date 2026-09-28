@@ -55,7 +55,7 @@ $$
 \chi(X,\mathcal E)=\int_X\mathrm{ch}(\mathcal E)\thinspace\mathrm{Td}(TX)
 $$
 
-곡선에서 $\mathrm{ch}(\mathcal O(D))=1+D$ 와 $\mathrm{Td}=1-\frac12K$ 를 넣고 적분하면 $\deg D+1-g$ 가 나온다. 이 형태가 [지표 정리](index-theorem.md)의 Dolbeault 사례이며, Grothendieck 은 이를 다시 사상에 대한 상대적 형태로 일반화했다.
+곡선에서 $\mathrm{ch}(\mathcal O(D))=1+D$ 와 $\mathrm{Td}=1-\frac12K$ 를 넣고 적분하면 $\deg D+1-g$ 가 나온다. 이 형태가 지표 정리의 Dolbeault 사례이며, Grothendieck 은 이를 다시 사상에 대한 상대적 형태로 일반화했다.
 
 # 성질
 

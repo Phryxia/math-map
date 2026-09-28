@@ -271,7 +271,7 @@ $$
 A_{\Pi_v}=\varphi\bigl(A_{\pi_v}\bigr)
 $$
 
-함수성은 매개변수를 $\varphi$ 로 밀어 보낸 것이 다시 자기동형 표현에서 나와야 한다는 진술이다. $\mathrm{Sym}^m:\mathrm{GL}\_2(\mathbb C)\to\mathrm{GL}\_{m+1}(\mathbb C)$ 에 대한 함수성이 $\mathrm{Sym}^m$ 올림이고 $(\alpha,\beta)\mapsto(\alpha^m,\alpha^{m-1}\beta,\dots,\beta^m)$ 이다. [Sato–Tate](sato-tate.md) 의 증명이 요구한 $L(s,\mathrm{Sym}^m\pi)$ 의 해석적 성질이 이 올림의 존재 문제였다.
+함수성은 매개변수를 $\varphi$ 로 밀어 보낸 것이 다시 자기동형 표현에서 나와야 한다는 진술이다. $\mathrm{Sym}^m:\mathrm{GL}\_2(\mathbb C)\to\mathrm{GL}\_{m+1}(\mathbb C)$ 에 대한 함수성이 $\mathrm{Sym}^m$ 올림이고 $(\alpha,\beta)\mapsto(\alpha^m,\alpha^{m-1}\beta,\dots,\beta^m)$ 이다. Sato–Tate 의 증명이 요구한 $L(s,\mathrm{Sym}^m\pi)$ 의 해석적 성질이 이 올림의 존재 문제였다.
 
 ## 기본 보조정리와 대각합 공식
 

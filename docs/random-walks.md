@@ -78,7 +78,7 @@ $$
 R_{\mathrm{eff}}(a, z) \thickspace=\thickspace \frac{v(a) - v(z)}{\sum_{y \sim a} i(ay)} .
 $$
 
-직렬 연결에서 저항이 더해지고 병렬 연결에서 컨덕턴스가 더해진다는 규칙, 그리고 변의 저항을 키우면 유효저항이 줄지 않는다는 Rayleigh 단조성이 계산의 전부다. 자세한 변분적 성격(Thomson 원리, Dirichlet 원리)은 [유효저항](effective-resistance.md)에서 다룬다.
+직렬 연결에서 저항이 더해지고 병렬 연결에서 컨덕턴스가 더해진다는 규칙, 그리고 변의 저항을 키우면 유효저항이 줄지 않는다는 Rayleigh 단조성이 계산의 전부다. 자세한 변분적 성격(Thomson 원리, Dirichlet 원리)은 유효저항에서 다룬다.
 
 # 성질
 
@@ -127,7 +127,7 @@ $$
 
 - 도달 확률이 조화함수인 것은 연속 세계의 Brownian motion 과 Laplace 방정식의 관계([Dirichlet 문제](dirichlet-problem.md)의 확률적 해법)의 이산판이다.
 - $h(X_n)$ 이 martingale 이라는 관찰과 선택적 정지 정리를 쓰면 도달 확률 공식이 즉시 나온다. Martingale 과 무작위 걷기는 같은 원리를 서로 다른 언어로 쓴 것이다.
-- 유효저항은 [그래프 Laplacian](graph-laplacian.md)의 유사역행렬로 표현되므로, 스펙트럼 이론과 확률 이론이 만나는 지점이기도 하다.
+- 유효저항은 그래프 Laplacian 의 유사역행렬로 표현되므로, 스펙트럼 이론과 확률 이론이 만나는 지점이기도 하다.
 
 # 활용
 

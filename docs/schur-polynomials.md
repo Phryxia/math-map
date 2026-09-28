@@ -32,7 +32,7 @@ $$
 s_\lambda(x)=\sum_\mu K_{\lambda\mu}\thinspace x^\mu
 $$
 
-이 계수 $K_{\lambda\mu}$ 를 **Kostka 수**라 한다. [Weyl 지표 공식 문서](weyl-character-formula.md)에서 Kostant 공식으로 계산한 것이 바로 이 수이고, 거기서는 Weyl 군 위의 교대합이라 부호가 상쇄되는 형태였다.
+이 계수 $K_{\lambda\mu}$ 를 **Kostka 수**라 한다. Weyl 지표 공식에서 Kostant 공식으로 계산한 것이 바로 이 수이고, 거기서는 Weyl 군 위의 교대합이라 부호가 상쇄되는 형태였다.
 
 조합론적 기술은 상쇄 없이 센다. 모양 $\lambda$ 의 칸에 $1,\dots,n$ 을 채우되 행은 왼쪽에서 오른쪽으로 약증가, 열은 위에서 아래로 강증가하도록 하면 그것이 반표준 Young 대각표(SSYT)이고,
 

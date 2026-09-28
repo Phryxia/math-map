@@ -67,13 +67,13 @@ $$
 증명. $ed = 1 + k\varphi(n)$ 인 정수 $k\ge0$ 이 있다. $\bmod p$ 에서 두 경우로 나눈다.
 
 - $p$ 가 $m$ 을 나누면 양변이 모두 $0$ 이다.
-- 아니면 [Fermat 소정리](fermat-euler-theorem.md)로 $m^{p-1} \equiv 1 \pmod{p}$ 이고,
+- 아니면 Fermat 소정리로 $m^{p-1} \equiv 1 \pmod{p}$ 이고,
 
 $$
 m^{ed} = m \cdot \left(m^{p-1}\right)^{k(q-1)} \equiv m \pmod p .
 $$
 
-같은 논증이 $q$ 를 법으로 해도 성립한다. 따라서 $m^{ed} - m$ 은 $p$ 로도 $q$ 로도 나누어떨어지고, $p \ne q$ 이므로 [중국인의 나머지 정리](chinese-remainder-theorem.md)(또는 유일분해)로 $n = pq$ 로 나누어떨어진다. 즉 $m^{ed} \equiv m \pmod{n}$ 이다. ∎
+같은 논증이 $q$ 를 법으로 해도 성립한다. 따라서 $m^{ed} - m$ 은 $p$ 로도 $q$ 로도 나누어떨어지고, $p \ne q$ 이므로 중국인의 나머지 정리(또는 유일분해)로 $n = pq$ 로 나누어떨어진다. 즉 $m^{ed} \equiv m \pmod{n}$ 이다. ∎
 
 Euler 정리만 쓰면 $\gcd(m,n)=1$ 인 경우만 처리되지만, 위처럼 소수별로 나눈 뒤 CRT(Chinese remainder theorem)로 합치면 $m$ 이 $p$ 나 $q$ 의 배수인 예외적인 경우까지 포함된다. 이 "소수별로 확인하고 CRT 로 합친다"는 패턴은 RSA 분석 전반에서 반복된다.
 
@@ -140,7 +140,7 @@ $$
 ## 다른 주제와의 연결
 
 - **소수 생성.** 키 생성은 큰 소수를 뽑는 절차에 의존한다. 무작위 홀수를 뽑아 Miller–Rabin 확률적 소수판정을 통과시키는 방식이 표준이며, [소수 정리](prime-number-theorem.md)가 필요한 시도 횟수(대략 $\ln(2^b)/2$ 회)를 알려 준다.
-- **수론 알고리즘.** 확장 [유클리드 알고리즘](euclidean-algorithm.md), 반복 제곱법, Montgomery 곱셈이 구현의 기본 요소다.
+- **수론 알고리즘.** 확장 유클리드 알고리즘, 반복 제곱법, Montgomery 곱셈이 구현의 기본 요소다.
 - **계산 이론.** RSA 의 존재 자체가 일방향함수의 존재를 가정한다. 일방향함수가 존재하면 $\mathrm P\ne\mathrm{NP}$ 이므로, RSA 의 안전성은 [P 대 NP 문제](p-np.md)보다 강한 가정이다. 반대로 $\mathrm P\ne\mathrm{NP}$ 라 해도 RSA 가 안전하다는 보장은 없다.
 - **후속 암호계.** [이산로그](discrete-logarithm.md) 기반(Diffie–Hellman, [타원곡선](elliptic-curves.md))과 [격자](lattices.md) 기반 방식은 같은 공개키 틀에 다른 난제를 끼운 것이다. 양자 내성 표준화는 격자·부호·해시 기반으로 이동 중이다.
 - **프로토콜 위치.** 실제 TLS(transport layer security)에서 RSA 는 대칭키 교환과 인증서 서명에 쓰이고, 대량 데이터는 대칭 암호가 처리한다. 공개키 연산이 느리기 때문이다.

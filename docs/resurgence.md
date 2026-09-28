@@ -102,7 +102,7 @@ $$
 a_n^{(0)} \thickspace\sim\thickspace \frac{S_1}{2\pi i}\sum_{m\ge0}\frac{\Gamma(n-m-b)}{A^{\thinspace n-m-b}}\thickspace a_m^{(1)}
 $$
 
-주도항 $\Gamma(n)/A^n$ 이 [Stokes 현상](stokes-phenomenon.md)의 계수 성장이고, $1/n$ 보정이 두 번째 sector 의 급수를 차례로 꺼낸다. 한 sector 를 충분히 계산하면 다른 sector 전체와 Stokes 상수를 수치로 읽을 수 있다.
+주도항 $\Gamma(n)/A^n$ 이 Stokes 현상의 계수 성장이고, $1/n$ 보정이 두 번째 sector 의 급수를 차례로 꺼낸다. 한 sector 를 충분히 계산하면 다른 sector 전체와 Stokes 상수를 수치로 읽을 수 있다.
 
 ## 실수성과 중앙 합
 

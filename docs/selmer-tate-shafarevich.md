@@ -137,7 +137,7 @@ $$
 \langle\ ,\ \rangle\colon \text{Ш}(E/K)\times \text{Ш}(E/K)\longrightarrow\mathbb Q/\mathbb Z
 $$
 
-가 있고, 나눌 수 있는 부분을 나눈 몫 위에서 비퇴화다. 정의는 각 자리의 국소 불변량을 더하는 것으로 [Brauer 군](brauer-groups.md)의 완전열 $\sum_v\mathrm{inv}\_v=0$ 과 같은 구조다. 따라서 $\text{Ш}$ 가 유한하면 위수가 완전제곱수이고, 관측되는 위수는 $1,4,9,16,25,\dots$ 다.
+가 있고, 나눌 수 있는 부분을 나눈 몫 위에서 비퇴화다. 정의는 각 자리의 국소 불변량을 더하는 것으로 Brauer 군의 완전열 $\sum_v\mathrm{inv}\_v=0$ 과 같은 구조다. 따라서 $\text{Ш}$ 가 유한하면 위수가 완전제곱수이고, 관측되는 위수는 $1,4,9,16,25,\dots$ 다.
 
 ## 2 하강
 
