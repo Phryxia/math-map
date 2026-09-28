@@ -81,6 +81,6 @@ $$\rho=\sup\lbrace\varrho(\tilde M(\theta)):\theta\ \text{저주파}\rbrace$$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [선 완화](line-relaxation.md)
 
 #linear_algebra #analysis #computation
