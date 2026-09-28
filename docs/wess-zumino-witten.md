@@ -8,7 +8,7 @@ $$
 M=\text{3 다양체},\quad \partial M=\Sigma \ \Longrightarrow\ \delta_{\text{gauge}}S_{\mathrm{CS}}\big|\_{\Sigma}\ne0
 $$
 
-남은 항이 경계 곡면 $\Sigma$ 위에 사는 2 차원 장론의 작용이고, 그 이론이 **Wess–Zumino–Witten 모형**이다. 벌크의 게이지 자유도가 경계에서 물리적 자유도가 되는 현상이 **벌크–경계 대응**이며, 3 차원 위상장론과 2 차원 등각장론이 같은 자료의 두 표현임을 말한다.
+남은 항이 경계 곡면 $\Sigma$ 위에 사는 2 차원 장론의 작용이고, 그 이론이 **Wess–Zumino–Witten 모형**이다. 벌크의 게이지 자유도가 경계에서 물리적 자유도가 되는 현상이 **벌크–경계 대응**이고, 3 차원 위상장론과 2 차원 등각장론은 같은 자료의 두 표현이다.
 
 | 3 차원 Chern–Simons | ↔ | 2 차원 WZW(Wess–Zumino–Witten) |
 |---|---|---|

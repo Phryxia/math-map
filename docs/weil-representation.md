@@ -53,7 +53,7 @@ $$
 \theta(\varphi)=\sum_{x\in F^n}\varphi(x)
 $$
 
-[Poisson 합 공식](poisson-summation.md)은 이 범함수가 $\mathrm{Sp}(F)$ 의 작용에 불변이라고 말한다. 불변 범함수에서 자기동형 형식이 나온다.
+[Poisson 합 공식](poisson-summation.md)으로 이 범함수는 $\mathrm{Sp}(F)$ 의 작용에 불변이다. 불변 범함수에서 자기동형 형식이 나온다.
 
 $$
 \Theta_\varphi(g)=\theta\bigl(\omega_\psi(g)\varphi\bigr)

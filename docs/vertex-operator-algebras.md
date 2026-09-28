@@ -127,7 +127,7 @@ $\mathfrak h$ 에서 오는 $n$ 차원 Cartan 부분대수와 최소벡터에서
 - **유리성**: 모든 가군이 기약가군의 직합으로 완전분해된다.
 - **$C_2$ 여유한**: $C_2(V)=\mathrm{span}\lbrace a_{(-2)}b\rbrace$ 에 대해 $\dim V/C_2(V)\lt\infty$ 다.
 
-Zhu 정리는 이런 $V$ 의 기약가군 $M_1,\dots,M_r$ 의 지표들이 $\mathrm{SL}\_2(\mathbb Z)$ 의 작용에 닫혀 있다고 말한다.
+Zhu 정리로 이런 $V$ 의 기약가군 $M_1,\dots,M_r$ 의 지표들은 $\mathrm{SL}\_2(\mathbb Z)$ 의 작용에 닫혀 있다.
 
 $$
 \mathrm{ch}M_i\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_{j}\rho(\gamma)\_{ij}\mathrm{ch}M_j(\tau)

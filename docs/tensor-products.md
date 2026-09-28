@@ -216,7 +216,7 @@ $$
 ## 대수와 기하
 
 - 두 $R$ 대수 $A$ 와 $B$ 의 텐서곱 $A \otimes_R B$ 는 다시 대수이고, 기하적으로는 두 스킴의 올곱에 해당한다. [체의 확대](field-extensions.md)에서 $K \otimes_k L$ 을 계산하면 두 확대가 얼마나 독립적인지가 드러난다.
-- 다항식환끼리의 관계 $k[x] \otimes_k k[y] \cong k[x, y]$ 는 [다항식환](polynomial-rings.md)의 변수 추가가 텐서곱임을 말한다.
+- 다항식환끼리의 관계 $k[x] \otimes_k k[y] \cong k[x, y]$ 에서 [다항식환](polynomial-rings.md)의 변수 추가는 텐서곱이다.
 - 기계학습과 수치계산에서 고차원 배열의 분해(CP 분해, Tucker 분해)는 텐서곱 공간의 낮은 랭크 근사이며, 행렬에서의 [특이값 분해](singular-value-decomposition.md)를 다중선형으로 밀어 올린 것이다.[^2]
 
 [^1]: Wikipedia, Kronecker product, https://en.wikipedia.org/wiki/Kronecker_product

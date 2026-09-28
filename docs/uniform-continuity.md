@@ -18,7 +18,7 @@ $$
 \forall\varepsilon\gt 0\thickspace\exists\delta\gt 0\thickspace\forall x,y\in X:\ d_X(x,y)\lt\delta\Rightarrow d_Y(f(x),f(y))\lt\varepsilon
 $$
 
-[연속](continuity.md)의 정의와 다른 점은 $\delta$ 가 $\varepsilon$ 에만 의존하고 점 $x$ 에는 의존하지 않는다는 것뿐이다. 양화사의 순서로 말하면 $\forall x\thickspace\exists\delta$ 가 $\exists\delta\thickspace\forall x$ 로 바뀌었다.
+[연속](continuity.md)의 정의와 다른 점은 $\delta$ 가 $\varepsilon$ 에만 의존하고 점 $x$ 에는 의존하지 않는다는 것뿐이다. 양화사의 순서로는 $\forall x\thickspace\exists\delta$ 가 $\exists\delta\thickspace\forall x$ 로 바뀌었다.
 
 ## Lipschitz 조건과의 관계
 

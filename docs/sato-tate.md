@@ -16,7 +16,7 @@ $$
 \frac{a_p}{2\sqrt p}=\cos\theta_p\in[-1,1],\qquad\theta_p\in[0,\pi]
 $$
 
-다. Deligne 의 정리는 각이 이 구간 안에 있다는 것이고, Sato–Tate 는 $p$ 를 키울 때 각들이 흩어지는 방식을 말한다.
+다. Deligne 의 정리는 각이 이 구간 안에 있다는 것이고, Sato–Tate 는 $p$ 를 키울 때 각들이 흩어지는 방식을 정한다.
 
 Sato 는 수치 실험으로, Tate 는 이론적 근거로 1960 년대에 같은 답에 도달했다. $E$ 가 복소곱셈(complex multiplication, CM)을 갖지 않으면
 

@@ -10,7 +10,7 @@ $$
 \mathcal P_\chi(\varphi)=\int_{\mathbb A_F^\times K^\times\backslash\thinspace\mathbb A_K^\times}\varphi(t)\thinspace\chi^{-1}(t)\thinspace dt
 $$
 
-정리는 이 적분의 비소멸과 중심값 $L(1/2,\pi_K\times\chi)$ 의 비소멸이 동치라고 말한다. 나아가 주기의 절댓값 제곱이 중심값과 명시적인 상수배로 같다.
+정리로 이 적분의 비소멸과 중심값 $L(1/2,\pi_K\times\chi)$ 의 비소멸이 동치다. 나아가 주기의 절댓값 제곱이 중심값과 명시적인 상수배로 같다.
 
 $$
 \frac{|\mathcal P_\chi(\varphi)|^2}{\langle\varphi,\varphi\rangle}

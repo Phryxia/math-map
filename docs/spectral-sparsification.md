@@ -72,7 +72,7 @@ $$
 \frac1{\sqrt n}\lt\varepsilon\lt 1,\qquad q=\left\lceil\frac{Cn\log n}{\varepsilon^2}\right\rceil
 $$
 
-이면 위 절차로 얻은 $H$ 가 $G$ 의 $\epsilon$ spectral sparsifier 일 확률이 적어도 $1/2$ 라고 말한다. 성공 확률은 독립 반복과 검증으로 올린다.
+이면 위 절차로 얻은 $H$ 가 $G$ 의 $\epsilon$ spectral sparsifier 일 확률이 적어도 $1/2$ 다. 성공 확률은 독립 반복과 검증으로 올린다.
 
 간선 수는 $q$ 이하이므로 $O(n \log n / \epsilon^2)$ 이고 원래 간선 수 $m$ 과 무관하다. 완전그래프에서는 $m = \Theta(n^2)$ 이 $O(n \log n)$ 으로 줄어든다.
 

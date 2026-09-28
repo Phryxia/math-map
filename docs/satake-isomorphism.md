@@ -84,7 +84,7 @@ $$
 \lbrace\thinspace KgK\thinspace\rbrace\thickspace\longleftrightarrow\thickspace X_\ast(T)^+\thickspace\longleftrightarrow\thickspace\lbrace\thinspace\text{기약표현}\thinspace\rbrace
 $$
 
-Satake 의 정리는 기저의 대응을 넘어 곱셈까지 일치한다고 말한다. 격자를 세서 얻은 구조상수가 복소 표현의 [텐서곱](tensor-products.md) 분해 계수와 같은 환을 만든다.
+Satake 의 정리로 기저의 대응을 넘어 곱셈까지 일치한다. 격자를 세서 얻은 구조상수가 복소 표현의 [텐서곱](tensor-products.md) 분해 계수와 같은 환을 만든다.
 
 대응은 기저를 기저로 보내지 않는다. $1_{K p^\lambda K}$ 의 상은 $\chi_\lambda$ 에 더 낮은 항들이 $p^{-1}$ 배로 섞인 꼴이다. 삼각행렬이므로 동형이라는 결론은 그대로다.
 
