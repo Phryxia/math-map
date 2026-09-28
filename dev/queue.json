@@ -1,104 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-28T01:02:00.453Z",
-  "nextSeq": 1351,
+  "savedAt": "2026-09-28T05:00:47.013Z",
+  "nextSeq": 1366,
   "items": [
-    {
-      "id": "d9f89b28",
-      "title": "Borcherds 곱의 후속 간선",
-      "priority": 12,
-      "note": "2026-09-27 회차에 다시 꺼냈으나 새 문서를 규격대로 쓸 시간이 남지 않아 되돌린다(타이머 15분 남은 시점). 이 항목은 새 문서를 하나 쓰는 작업이므로 회차 앞쪽에서 꺼낼 것. 아래는 앞 note 그대로다.\n\n2026-09-27 회차에 borcherds-products 의 선수지식에 weil-representation 을 더했다(정의의 입력 절이 서명 (2,n) 짝수 격자의 Weil 표현에 대한 벡터값 약정칙 형식을 쓰므로 그것 없이 정의를 읽을 수 없다). lattices 는 weil-representation 의 조상이라 넣지 않았다. 개요에 입력이 무엇인지 한 문장을 더해 왜 그 부모인지 드러나게 했고, 태그에 group_theory 를 채웠다(직교군, Weil 표현, 괴물 Lie 대수를 쓴다). 남은 것: borcherds-products 가 아직 리프다. 후속 후보 셋. (a) Gross-Kohnen-Zagier 정리. 59줄이 Borcherds 판 증명이 유한 개 선형 조건으로 환원된다고 하고 110-116줄이 Heegner 점과 무게 3/2 형식을 서술한다. 각주에 Gross-Kohnen-Zagier 원논문이 이미 있다. 부모는 borcherds-products 와 heegner-points 또는 elliptic-curves 계열을 볼 것(heegner-points 문서는 있다). (b) 직교군의 자기동형 형식. 문서가 출력을 이 이름으로만 부르고 정의하지 않는다. 8절 기준으로 별도 문서가 될 분량인지 판정할 것. (c) Gritsenko-Nikulin 승강. jacobi-forms 활용 절 셋째가 가리키는 경로(약한 Jacobi 형식 -> theta 분해 -> 벡터값 형식 -> 파라모듈러 형식)이고 부모가 jacobi-forms 와 borcherds-products 둘이 된다. borcherds-products 가 정의 없이 쓰는 용어: 정규화된 theta 올림, 주요부, 노름 -m 벡터의 직교여공간, 파라모듈러, 괴물 Lie 대수의 분모 공식.",
-      "createdAt": "2026-09-27T12:56:07.698Z",
-      "seq": 1320
-    },
-    {
-      "id": "dd6641a2",
-      "title": "문장형 헤딩 훑기 (헤딩 검사기 확장 6차)",
-      "priority": 12,
-      "note": "2026-09-27 회차가 5차다. 4차가 남긴 두 축을 돌렸고 셋째 축에서 수확이 나왔다.\n\n(1) 두 글자 이상 비유 명사 확장(나침반, 저울, 자물쇠, 발판, 통로, 관문, 물결, 그림자, 온실, 화석, 등대, 나사, 톱니, 바퀴, 사슬): 걸린 11 건이 전부 '사슬' 이고 전부 유지다. chain 의 정식 역어이고(사슬 복합체, 사슬 조건, 반사슬, 대칭 사슬 분해) cohen-macaulay-rings 53, cohomology 19, dilworth-theorem 19, homology 30, krull-dimension 27, order-lattices 125, p-adic-hodge-theory 216, partial-orders 84, random-real-forcing 35, sperner-theorem 23·55 에 쓰인다. 4차가 '폭발' 과 '사전' 을 남긴 것과 같은 판정이다. 나머지 14 개 명사는 0 건이다. 이 축은 닫는다. 4차 note 가 경고한 한 글자 명사 금지에 '사슬' 같은 정식 역어도 더한다: 역어로 굳은 두 글자 명사는 목록에 넣어도 전부 유지로 끝난다.\n\n(2) 목적격 축 재확인(grep -nE '^## .*(을|를) ' docs/*.md): 57 건이고 전부 명사구여서 위반 0 건이다('X를 쓴 증명', 'X를 쓰는 계산', 'X를 지우는 상관행렬' 꼴). 4차가 '61 건 대비 위반 4 건, 이미 고쳐졌다' 고 한 것과 맞는다. 이 축도 닫는다.\n\n(3) 조언투 명사 축을 새로 열었다: grep -nE '^##+ .*(전략|요령|팁|접근법|주의점|권장) *$' docs/*.md 로 5 건이다. 고친 셋. union-find 19 '## 두 요령' -> '## 크기로 붙이기와 경로 압축'(절이 굵은 글씨로 정의하는 두 이름을 헤딩으로 올렸다. 본문의 '두 요령을 함께 쓰면' 도 '두 방법을 함께 쓰면' 으로 고쳤다). index-theorem 90 '## 증명 전략' -> '## 증명의 요지'. tunnell-saito 67 '## 증명의 요령' -> '## 증명의 요지'. 유지 둘: lambda-calculus 94 '## 축약 전략' 은 reduction strategy 의 정식 역어다. sea-algorithm 27 '## 잉여를 모으는 전략' 은 '전략' 이 명사구의 끝이고 그 절이 알고리즘의 설계를 다루므로 남겼으나, 6차에 '## 잉여를 모으는 방법' 으로 바꿀지 다시 볼 것.\n\n중요한 검사식 판정 하나. 4절 문체 규칙의 헤딩 검사 grep -n '^##' docs/<id>.md | grep -E '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) *$' 는 '## 증명의 요지' 를 문장형으로 오검출한다. '[^로]지' 패턴에 '요지' 의 '지' 가 걸리기 때문이다. 그러나 이것은 명사구이고, 저장소에 이미 13 건 있는 관행이며, 4절 본문이 '증명의 뼈대 는 증명의 요지 로 쓴다' 고 직접 권하는 말이다. 검사식이 잡아도 유지한다. dev/ 를 고치지 않는 것이 0절이고 이 검사는 CLAUDE.md 의 grep 이므로, 검사식을 '[^로요]지' 로 좁히자는 제안은 독자에게 남긴다. 다음 차수가 이 자리를 다시 고치지 말 것.\n\n6차에 볼 것: '~하기' 꼴 헤딩 축(grep -nE '^##+ .*(하기|되기|짓기|잡기|풀기|쓰기|보기) *$')을 돌리려면 규격 헤딩 '## 더 알아보기' 를 반드시 제외할 것. 제외하지 않으면 542 문서가 전부 걸려 쓸 수 없다. grep -v '더 알아보기' 를 파이프로 붙인다. 4차가 닫은 축(비유 명사 1차 목록, 폭발, 자취)과 5차가 닫은 축(두 글자 비유 명사 확장, 목적격)은 다시 열지 말 것. trace 의 역어 통일(자취 86 대 대각합 123 대 추적 13)은 별도 큐 항목이다.",
-      "createdAt": "2026-09-27T12:58:15.934Z",
-      "seq": 1321
-    },
-    {
-      "id": "f0b98c97",
-      "title": "나열형 mermaid 회귀 점검 (새 mermaid 가 들어왔을 때)",
-      "priority": 12,
-      "note": "2026-09-27 둘째 회차에 회귀 점검을 했고 개관을 뺀 mermaid 문서가 여전히 32 개이며 새로 들어온 것이 없으므로 판정할 것이 없었다.\n\n점검 방법:\ngrep -l mermaid docs/*.md | grep -v -- '-overview.md' | sed 's|docs/||;s|\\.md||' | sort\n이 목록이 아래 32 개와 같으면 볼 것이 없으므로 이 항목을 그대로 되돌려 놓고 다른 작업을 한다. 목록에 없는 id 가 나오면 그것만 판정한다.\n\n전부 남기기로 판정된 32 개: adjunctions cardinal-characteristics class-field-theory color-refinement deuring-correspondence dynamic-connectivity dynamic-programming effective-resistance field-extensions finite-automata finite-fields galois-theory khovanov-homology kolyvagin-systems lambda-calculus limits-colimits link-cut-trees local-class-field-theory localization-rings manifolds markov-chains monads natural-transformations np-completeness order-lattices partial-orders root-systems sea-algorithm source-coding tensor-products union-find yoneda-lemma\n\n판정 기준: 4절에 이름이 명시된 도형 유형(Hasse 도형, Dynkin 도형, 확대의 탑, 가환도, 보편성질의 도형, 상태 기계, 오토마타, 실제 그래프, 자료구조 그래프)이면 남기고, 화살표 이름이 계산 절차나 논리 근거이면 지운다. 보편성질의 도형은 유일한 사상이 점선으로 그려지고 도형이 닫혀야 허용에 든다(tensor-products, limits-colimits). 같은 역할의 대상을 여럿 나열한 부챗살이나 성질 이름을 화살표로 쓴 것은 들지 않는다(schur-multipliers, kleisli-eilenberg-moore 를 그렇게 지웠다). 구조 클래스의 특수화 나열은 지운다(modules, heyting-algebras). 실제 사상과 정의 관계가 섞인 혼합형은 정의 관계 쪽이 본문 식에 있으면 지운다(homology). mermaid 가 좌표를 반영하지 못해 내용이 그림에 나타나지 않는 평면 기하 도형도 지운다(newton-polygon). 지운 그림에만 있던 정보는 4절대로 본문 문장이나 목록으로 옮긴다.",
-      "createdAt": "2026-09-27T16:39:55.830Z",
-      "seq": 1322
-    },
-    {
-      "id": "2497370f",
-      "title": "Zilber 삼분법의 후속 간선 (5차)",
-      "priority": 12,
-      "note": "2026-09-27 둘째 회차에 4차 note 의 후보 (a) 군 배치 정리를 열어 group-configuration 을 새로 썼다(88줄, 리프). 부모는 note 가 권한 대로 zilber-trichotomy 하나다(check-cycle OK). 태그는 #logic #foundations #algebra #group_theory 이고 첫 태그를 zilber-trichotomy 와 같은 #logic 으로 두었다. 개관은 foundations-overview 의 '모형론' 갈래에서 Zilber 삼분법 다음, 미분적으로 닫힌 체 앞에 넣었다(삼분법 증명의 도구이므로 읽는 순서상 삼분법 직후다). zilber-trichotomy 의 더 알아보기 맨 앞에 놓았다(조상관계는 없고 가장 가까운 후속이다).\n\n문서 내용: 직관은 군 G 의 독립 원소 g,h,x 로 g,h,gh,x,hx,ghx 여섯 개를 만들어 두 원소가 셋째를 결정하는 삼중집합이 정확히 넷임을 세고, 곱셈을 지우면 남는 조건만으로 곱셈을 되찾는 것이 정리라고 이어 간다. 정의는 군 배치(위수 1 인 여섯 원소, 위수 2 인 네 삼중집합, 전체 위수 3)와 배치의 동치(대응 원소끼리 서로의 대수적 폐포에 드는 것)다. 여섯 점과 네 삼중집합의 조합 구조가 사면체의 변과 면의 구조와 같다는 것을 적었다. 성질은 군의 해석(유한 Morley 위수에서 정의 가능 군, 안정 이론 일반에서 타입으로 정의 가능한 군, germ 합성으로 세우는 증명 요지), 강최소 군의 아벨성(Reineke), 체 배치다. 활용은 국소 모듈러 기하의 분류, 함수체 위의 Mordell-Lang, 미분 닫힌 체의 강최소 집합이다.\n\nReineke 정리의 증명 요지는 중심화군이 유한한 경우의 배제가 켤레류 하나만 남는 경우까지 다뤄야 완결되므로 문서에 전체를 적지 않고 '여유한 진부분군이 없다' 는 한 단계만 남기고 각주로 넘겼다. 강최소 군을 따로 문서로 열면 그 증명이 그 문서의 성질 절이 된다.\n\n이 축에 남은 후속 후보. zilber-trichotomy 쪽: (c) Fraisse 극한(반례 구성 절이 정의 없이 쓴다. 부모는 model-theory 이고 이 축과 별개로 열 것). group-configuration 쪽으로 새로 생긴 후보: 체 배치와 Zariski 기하(성질 절 셋째가 한 문단으로 담았고 zilber-trichotomy 의 Zariski 기하 정리와 겹치므로 그 정리를 옮겨 갈지 함께 판정할 것. 부모는 group-configuration 과 zilber-trichotomy 둘), 강최소 군(Reineke 정리의 증명과 강최소 군의 분류. 부모는 group-configuration 하나로 둘 것). differentially-closed-fields 쪽: (b) 차분체와 ACFA, (c) Manin 사상(mordell-lang note 의 (b) 와 같은 항목이므로 한쪽에서만 처리할 것), (d) 미분 대수적 군. differential-galois-theory 쪽: Kovacic 알고리즘, Liouville 확대, Fuchs 형 방정식과 Riemann-Hilbert 대응. morley-categoricity note 의 (2) 단순 이론과 NIP, (3) Vaught 추측도 그대로다.\n\ngroup-configuration 이 정의 없이 쓴 용어: germ, 여차원, 여유한, 켤레류, 중심화군, 강최소 군, 사면체의 변과 면.",
-      "createdAt": "2026-09-27T16:45:58.058Z",
-      "seq": 1323
-    },
-    {
-      "id": "8dc254f7",
-      "title": "정칙 국소환의 후속 간선 (5차)",
-      "priority": 12,
-      "note": "2026-09-27 둘째 회차에 4차 note 가 우선 후보로 권한 국소 코호몰로지를 열어 local-cohomology 를 새로 썼다(93줄, 리프). 부모는 note 가 권한 대로 koszul-complex 와 derived-functors 둘이다(check-cycle 둘 다 OK, 서로 조상이 아니다). 태그는 #ring_theory #algebra #algebraic_topology #category_theory 이고 첫 태그를 koszul-complex 와 같은 #ring_theory 로 두었다. 개관은 abstract-algebra-overview 의 '환과 아이디얼' 갈래에서 Koszul 복합체 다음 Dedekind 정역 앞에 넣었다. koszul-complex 는 리프였으므로 첫 자식이 되었고, derived-functors 의 더 알아보기 끝에 놓았다(군 코호몰로지와 층 코호몰로지와 같은 층위의 예이고 층 코호몰로지를 본문에서 쓰므로 그 뒤다).\n\n본문 링크 두 자리를 걸었다: gorenstein-rings 5 와 koszul-complex 96. 정수론 쪽 네 문서(euler-systems, kolyvagin-systems, poitou-tate, mv-cycles)의 '국소 코호몰로지' 는 국소체 위 Galois 코호몰로지를 뜻하는 다른 개념이므로 링크하지 않았다. 이 동명이의는 다시 확인하지 말 것.\n\n문서 내용: 직관은 k[x,y] 에서 원점을 뺀 U 를 두 조각으로 덮고 겹침에서 값이 맞는 쌍이 R 뿐임을 지수 비교로 보인 뒤, 맞추지 못하는 1/(xy) 를 찾아 R_xy/(R_x+R_y) 의 기저가 x^{-a}y^{-b} (a,b>=1) 임을 계산한다. 정의는 꼬임 부분가군의 우유도함자와 확장 Cech 복합체 둘이고, Koszul 복합체의 귀납적 극한도 같다고 적었다. 성질은 깊이의 특성화(min), Grothendieck 소멸과 비소멸(max), 국소 쌍대성(Gorenstein 에서 Matlis 쌍대가 Ext), 열린집합 코호몰로지와의 긴 완전열이다. 활용은 Cohen-Macaulay 판정, Gorenstein 조건의 서술, 생성원 개수의 하한이다.\n\n이 축에 남은 후속 후보. gorenstein-rings 쪽: (a) 표준 가군과 Matlis 쌍대(우선 후보였으나 제목이 'A와 B' 꼴이라 4절 제목 규칙에 걸린다. Matlis 쌍대 하나로 좁히고 표준 가군은 그 안의 절로 둘지, 아니면 canonical-module 과 matlis-duality 둘로 열지 먼저 판정할 것. 부모는 gorenstein-rings 와 local-cohomology 가 될 것), (b) Serre 쌍대성, (c) 유리 이중점. regular-local-rings 쪽: (b) Stanley-Reisner 환(조합론 쪽 단체 복합체 문서가 있는지 먼저 확인할 것), (d) 완전교차환(gorenstein-rings 의 '## 완전교차' 절과 koszul-complex 활용 절 첫째가 둘 다 담았으므로 8절 기준으로 떼어낼 분량이 되는지 먼저 볼 것). 1차 note 의 (c) 이산부값환과 (d) 매끄러움과 특이점, krull-dimension note 의 (2) Noether 정규화, (3) Hilbert 다항식, (4) 스킴도 그대로다. koszul-complex 쪽: 사상뿔과 긴 완전열(부모는 derived-functors 쪽). local-cohomology 쪽으로 새로 생긴 후보: Hartshorne-Lichtenbaum 소멸 정리, 산술 랭크와 집합론적 완전교차(활용 절 셋째가 하한만 담았다. 부모는 local-cohomology 하나).\n\nlocal-cohomology 가 정의 없이 쓴 용어: Matlis 쌍대, 소클, 근기, 귀납적 극한, 비영인자, 좌완전 함자, 우유도함자, 층, Spec.",
-      "createdAt": "2026-09-27T16:49:25.773Z",
-      "seq": 1324
-    },
-    {
-      "id": "1a180da5",
-      "title": "다중격자의 후속 간선 (8차)",
-      "priority": 12,
-      "note": "2026-09-27 둘째 회차에 7차 note 의 후보 (5) 완전 다중격자를 열어 full-multigrid 를 새로 썼다(83줄, 리프). multigrid 52줄이 한 문장으로 담고 있었는데 절차, 보간 차수 조건, 연산량 정리, 이산화 오차 달성의 귀납까지 네 축이 나오므로 별도 문서 분량이 되었다. 부모는 multigrid 하나다(check-cycle OK). 태그는 multigrid 와 같은 #linear_algebra #algorithms #computation 이다. multigrid 의 더 알아보기 맨 앞에 놓았다(사이클을 감싸는 절차라 대수적 다중격자나 영역 분할법보다 가까운 후속이다). 개관은 linear-algebra-overview 에서 다중격자 바로 다음, Fourier 국소 해석 앞에 넣었다. 본문 링크는 multigrid 52 한 자리다.\n\n문서 내용: 직관은 목표가 이산화 오차 O(h^p) 까지임을 먼저 정하고, 초기값 0 에서는 사이클 수가 log 로 늘어 O(n log n) 이 되는 계산을 보인 뒤, 2h 격자의 해를 보간하면 초기 오차가 처음부터 O(h^p) 라서 사이클 한 번으로 넘어선다는 데로 간다. 정의는 재귀 절차(interpolate 는 사이클의 prolong 과 다른 사상이라고 명시)와 보간 차수 조건(이산화 차수보다 높게, 이차 이산화에 선형 보간이 안 되는 이유)이다. 성질은 연산량 O(n) 의 등비급수 증명과 이산화 오차 달성의 단계별 귀납이며, nu_0 을 정하는 조건이 보간과 이산화에서 더해지는 양의 상쇄라고 적었다. 활용은 타원 방정식, Newton 법의 초기값과 완전 근사 저장, 격자 적응의 기준이다.\n\n7차 note 가 경고한 (4) 선 완화와 비등방 문제는 이번에도 열지 않았다. 그 note 의 주의점이 그대로 유효하다: 점 완화 평활률이 eps -> 0 에서 1 이 되는 계산까지는 확실하지만 y 선 완화만으로 평활률이 eps 에 무관해진다고 단정할 수 없고, 반좌표 성긴화나 교대 선 완화가 필요한 조건을 Trottenberg 의 Multigrid 5 장으로 먼저 확인해야 한다. 회차의 앞쪽에 열고 각주 출처를 먼저 확보할 것.\n\n남은 후보. (1) domain-decomposition 의 후속인 FETI 와 BDDC, 부분공간 보정 정리(부모는 multigrid 와 domain-decomposition. 4차 note 부터 남아 있다. 제목이 'A와 B' 꼴이 되지 않게 하나로 좁히거나 두 문서로 열 것). (2) incomplete-lu 의 후속인 희소 행렬의 정렬과 근사 역행렬 전처리. (4) 위의 선 완화와 비등방 문제. (6) 다중격자의 수렴 증명(성질 절이 두 격자 해석까지만 다룬다. 8절 기준으로 multigrid 와 겹치는지 먼저 볼 것). smoothed-aggregation 쪽: 적응적 평활 응집(부모는 smoothed-aggregation 하나), 에지 요소와 Maxwell 계의 다중격자. full-multigrid 쪽으로 새로 생긴 후보: 완전 근사 저장과 비선형 다중격자(활용 절 둘째가 이름만 쓴다. 부모는 full-multigrid 와 newton-method 쪽 문서 둘이 될 것), 격자 적응과 사후 오차 추정(활용 절 셋째가 한 줄이다).\n\nfull-multigrid 가 정의 없이 쓴 용어: 이산화 차수, 유한차분, 유한요소, 완전 근사 저장, 격자 세분, 감소 인자.",
-      "createdAt": "2026-09-27T16:52:10.970Z",
-      "seq": 1325
-    },
-    {
-      "id": "ff8902ca",
-      "title": "각주 정합 회귀 점검 (다음 차수)",
-      "priority": 12,
-      "note": "2026-09-27 둘째 회차에 545 문서를 돌려 0 건이다(직전 차수 540 문서 0 건에서 5 개 늘었고 회귀 없음). 이 회차에 새로 쓴 셋(group-configuration, local-cohomology, full-multigrid)도 포함해 통과했다. 문서 변경이 없어 커밋도 없다. 이제 세 차수 연속 0 건이다(535, 540, 545).\n\n검사 축은 셋이다: 정의 중복(DUP_DEF), 정의만 있고 참조 없음(DEF_NO_REF), 참조만 있고 정의 없음(REF_NO_DEF). 각주 번호가 본문 첫 등장 순서와 어긋난 축은 앞 차수에서 고치지 않기로 판정했으므로 다시 돌리지 말 것(GitHub 이 표시 번호를 등장 순서로 다시 매긴다).\n\n검사기 명세. 스크래치패드는 세션마다 사라지므로 매번 다시 쓴다. docs 의 각 md 를 줄 단위로 훑고, /^\\s*(```|~~~)/ 로 코드펜스를 토글해 펜스 안을 건너뛴다. 정의 줄 판정은 /^\\[\\^([^\\]]+)\\]:/ 이고, 매치한 줄은 콜론 뒤 나머지에서 다시 /\\[\\^([^\\]]+)\\]/g 로 참조를 세야 한 각주가 다른 각주를 참조하는 경우를 놓치지 않는다. 정의 맵과 참조 맵을 문서마다 따로 두고 세 축을 비교한다.\n\n다음 차수는 새 문서를 여러 개 쓴 회차 뒤에 이 세 축만 돌린다. 다섯 차수 연속 0 건이면 우선순위를 낮출 것. 이번이 셋째이므로 두 차수 더 0 건이면 낮춘다.",
-      "createdAt": "2026-09-27T16:52:46.412Z",
-      "seq": 1326
-    },
-    {
-      "id": "1d3b612a",
-      "title": "중복 H2 회귀 점검 (다음 차수)",
-      "priority": 12,
-      "note": "2026-09-27 둘째 회차에 세 검사를 545 문서에 돌려 전부 0 건이다. (1) 중복 H2: for f in docs/*.md; do grep -o '^## .*' $f | sort | uniq -d; done. (2) 중복 H3(더 알아보기 아래 묶음 이름 제외): sed -n '1,/^## 더 알아보기/p' $f | grep -o '^### .*' | sort | uniq -d. (3) H1 규격: 스크래치패드 h1.mjs 로 코드펜스를 건너뛰고 첫 H1(제목)과 '연관 문서' 를 뺀 나머지가 개요/직관/정의/성질/활용의 부분수열인지 본다(개관은 개요/지도/갈래). 직전 차수 540 문서에서 5 개 늘었고 회귀 없음. 세 검사가 545 문서에 1 초 안에 끝나므로 새 문서가 여러 개 들어온 회차 뒤에 돌리는 방식을 유지한다. 'A와 B' 제목 축은 큐의 '제목과 파일명이 어긋난 문서 훑기' 항목이 따로 들고 있다.",
-      "createdAt": "2026-09-27T16:53:10.799Z",
-      "seq": 1327
-    },
-    {
-      "id": "02f95dc0",
-      "title": "Tate 곡선",
-      "priority": 12,
-      "note": "정수론. 2026-09-27 셋째 회차에 p-adic-l-function 을 쓰면서 확인한 빈 자리다. 문서가 없고 p-adic-hodge-theory 와 새 p-adic-l-function 둘이 이름만 쓴다. p-adic-l-function 의 예외적 영점 절이 Tate 주기 q_E 와 L 불변량 log_p(q_E)/ord_p(q_E) 를 쓰는데 q_E 의 정의를 줄 문서가 없다. 부모 후보는 elliptic-curves 와 p-adic-numbers. 쓸 내용: 강체해석적 동형 E(K) = K^x / q^Z, split multiplicative 환원과의 대응, j 불변량에서 q 를 푸는 급수, Galois 작용과 Tate 가군, 예외적 영점에서 L 불변량이 나오는 자리",
-      "createdAt": "2026-09-27T20:43:52.855Z",
-      "seq": 1330
-    },
-    {
-      "id": "6f0eaafa",
-      "title": "에탈 코호몰로지",
-      "priority": 12,
-      "note": "대수/정수론. 2026-09-27 셋째 회차에 etale-fundamental-group 을 쓰면서 확인했다. 단독 문서가 없고 algebraic-k-theory(35 절이 '에탈 코호몰로지 환원' 이라는 절 하나를 통째로 쓴다), deligne-weil-conjectures(61 줄이 l 진 에탈 코호몰로지 위의 Frobenius 로 정리를 진술한다), etale-fundamental-group(활용 절이 1 차 코호몰로지를 연속 준동형의 군이라 한다)이 전제로 쓴다. 부모 후보는 etale-fundamental-group 과 sheaf-cohomology 또는 homological-algebra 계열(먼저 dev/graph.mjs 로 어느 코호몰로지 문서가 있는지 확인할 것). 쓸 내용: Zariski 위상이 상수층에 쓸모없는 이유, 에탈 위치와 층, l 진 계수의 역극한 정의, 유한체 위 Frobenius 자취 공식, 비교 정리",
-      "createdAt": "2026-09-27T20:48:44.043Z",
-      "seq": 1333
-    },
-    {
-      "id": "950b9217",
-      "title": "제목과 파일명이 어긋난 문서 훑기 (6차)",
-      "priority": 12,
-      "note": "2026-09-27 셋째 회차가 5차다. 4차가 고른 후보 넷을 판정했다. (a) mv-cycles 'MV 순환과 무게 기저의 기하' -> 'MV 순환' 으로 좁혔다. 무게 기저는 '## 결정 기저와의 관계' 한 절이고 나머지 열 절이 MV 순환이다. (b) wess-zumino-witten 'Wess-Zumino-Witten 모형과 벌크-경계 대응' -> 'Wess-Zumino-Witten 모형' 으로 좁혔다. 벌크-경계는 '## 대응 사전' 한 절이다. 둘 다 링크 표시 제목을 다섯 문서에서 맞췄고(weyl-character-formula, chern-simons, geometric-satake, differential-geometry-overview, lie-algebras) 개관 mermaid 에는 두 id 가 없어 고칠 노드가 없었다. 두 문서를 이미 좁은 이름으로 부르던 자리(combinatorics-overview, number-theory-overview, topology-overview, abstract-algebra-overview)가 이제 제목과 일치한다. (c) sen-theory 와 (d) 4차가 미래 건으로 지목한 overconvergent-modular-symbols 는 이미 'Sen 이론' 과 '과수렴 모듈러 기호' 로 좁혀져 있어 할 일이 없었다. zhu-algebra 'Zhu 대수와 모듈러 불변성' 은 남겼다. '## 두 정리' 절이 분류 정리와 모듈러 불변성 정리를 나란히 놓고 모듈러 불변성이 Zhu 대수로 증명되는 정리의 결론이므로 4절이 예외로 든 'Neron-Tate 높이와 Mordell-Weil 정리' 와 같은 꼴이다. 6차에 볼 것: 첫 줄에 '와/과' 가 든 문서가 547 개 중 70 개다(3차 63, 4차 64). 5차가 둘을 좁혔으므로 새로 든 여덟 개가 어디서 왔는지 grep -l '^# .*[와과] ' docs/*.md 를 4차 목록과 견줘 가려낼 것. 기준 4 로 남기는 것과 파일명이 이미 둘을 담은 아홉(dyson-rank-crank, ideals-quotient-rings, limits-colimits, dag-topological, kleisli-eilenberg-moore, luzin-sierpinski-sets, borel-pade, fermat-euler-theorem, formalism-hilbert-program)은 다시 보지 않는다",
-      "createdAt": "2026-09-27T20:50:51.598Z",
-      "seq": 1335
-    },
-    {
-      "id": "bdb75a13",
-      "title": "자리표시자 헤딩 훑기 (17차)",
-      "priority": 12,
-      "note": "2026-09-27 셋째 회차가 16차다. 16차가 이 축을 닫았다. 15차가 지시한 다섯 이름을 547 문서에 세어 전부 0 건이다: '## 성질과 활용', '## 정리와 증명', '## 구성과 성질', '## 기본 개념', '## 주요 성질'. 12차가 남긴 다섯 건을 판정해 확정했다. 남긴 넷: casson-invariant 94 '## 확장'(Walker-Lescop, Floer 호몰로지, SU(n) 판 세 확장의 목록이라 하나의 고유 이름이 없다), index-theorem 123 '## 확장'(동변, 족, 비가환 기하, 물리 네 갈래로 같은 이유), index-theorem 49 '## 특수 사례'(타원 복합체와 나오는 정리의 대응표라 이름이 내용과 맞다), chebotarev 74 '## 특수 사례'(Dirichlet 등차수열, 이차체, 분해형, 밀도 1 네 항목으로 같다). 고친 하나: principal-component-analysis 108 '## 확장' -> '## 커널 PCA, 오토인코더, 확률적 PCA'. 한 문단에 정확히 세 변형이 있고 둘은 문서가 있어(kernel-pca, probabilistic-pca) 본문 링크도 함께 걸었다. 기준은 확립됐다. 여러 갈래를 목록으로 늘어놓아 공통 고유명이 없으면 '## 확장' 과 '## 특수 사례' 를 남기고, 변형이 셋 이하로 이름이 뚜렷하면 그 이름들로 바꾼다. 9차부터 끌어온 khovanov-homology 건도 닫았다. 143 줄 '3 차원 다양체 불변량의 범주화는 훨씬 어렵고 부분적으로만 알려져 있다' 를 지웠다. 출처 없이 범위를 뭉뚱그린 문장이고 앞 문장이 이미 RT 와 Khovanov 의 관계를 말한다. 그 문장에만 있던 manifolds.md 본문 링크가 함께 사라졌는데 문서에 '다양체' 가 다른 자리에 없어 옮길 곳이 없었다. 17차에 볼 것: 짧은 헤딩 이름 축은 소진됐다. 다음 축은 문장형 헤딩이다. 4절의 grep -n '^##' docs/*.md | grep -E '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) *$' 를 547 문서에 돌려 걸리는 것부터 세고, 0 건이면 이 훑기 계열을 닫고 큐에서 뺄 것",
-      "createdAt": "2026-09-27T20:53:07.182Z",
-      "seq": 1336
-    },
     {
       "id": "320a5ad7",
       "title": "4절 금지 표현 grep 회귀 점검 (다음 차수)",
@@ -170,6 +74,46 @@
       "note": "2026-09-28 19차. 18차가 지시한 조사 띄어쓰기 축을 열었고 '의' 만 끝냈다. 40 분 회차에서 다른 작업 다섯 뒤에 잡아 남은 조사까지 갈 시간이 없었다. 20차가 이어서 돌린다.\n\n검사기 josa.py 를 스크래치패드에 짰다(컨테이너가 회차마다 새로 뜬다). 사양: 조사 목록은 의 은 는 이 가 를 에 로 와 과 도 만 에서 으로 이다 다 라 라는 이라 이며 여서 이면 이고, 정규식은 [A-Za-zÀ-ſ](조사)(?![A-Za-zÀ-ſ]) 로 긴 조사부터 대안에 넣는다. 건너뛰는 것: 코드펜스 안, $$ 블록 안, 각주 정의 줄(문헌 제목), 그리고 같은 길이 공백으로 마스킹하는 인라인 수식, 인라인 코드, URL, 링크 주소부(']( ... )'). 링크의 표시 제목은 본문 텍스트이므로 마스킹하지 않는다.\n\n전수 267 건 / 57 문서였다. 조사별로 의 77, 가 30, 이 22, 는 22, 와 19, 를 16, 로 13, 다 12, 은 9, 라 9, 과 8, 나머지 소수다.\n\n'의' 77 건을 31 문서에서 전부 고쳐 0 건이 되었다. 치환은 보호 구간(수식·코드·URL·링크 주소부)을 자리표시자로 빼두고 ([A-Za-zÀ-ſ])의(?![A-Za-zÀ-ſ]) 를 '\\1 의' 로 바꾼 뒤 되돌리는 방식이다. diff 의 앞말을 전수로 훑어 오검출이 없음을 확인했다. 전부 인명(Gödel, Hilbert, Gauss, Tarski, König, Kleene, Church, Dirichlet, Euler, Edmonds, Goursat, Benacerraf, Cook–Levin, Robert–Seymour–Thomas, Sleator–Tarjan, Pratt, Gauss–Bonnet)이거나 영문 용어(Hessian, Jacobian, KL divergence, NP-hard, matroid, splay, preferred path, metamathematics, SDR, theory, square)다.\n\n곁가지로 한 자리를 더 맞췄다. fourier-series 5 는 '의' 를 띄우고 나니 같은 줄의 'sin과' 와 어긋나서 'sin 과 cos 의' 로 함께 고쳤다. 20차에서도 이런 자리가 나올 것이다: 한 줄에 조사가 둘 이상 붙어 있으면 그 줄의 것을 한 번에 다 고칠 것.\n\n20차에 볼 것. 남은 190 건을 조사별로 이어서 고칠 것. '의' 와 달리 오검출 위험이 있는 조사가 있으니 다음을 조심할 것. (1) '다' 12 건은 서술격 조사인지 영문 뒤에 붙은 한글 명사의 일부인지 볼 것. (2) '도' 와 '만' 과 '라' 는 조사가 아닌 명사나 어미의 일부일 수 있다('AC도' 꼴). (3) '이' 와 '가' 는 주격 조사가 대부분이겠으나 'Ito' 같은 인명 표기 뒤에서는 원어 표기 자체를 봐야 한다. 조사별로 먼저 후보를 눈으로 훑고 나서 치환할 것. 저장소 관행이 공백을 두는 쪽이라는 근거는 18차가 세었다('[A-Za-zÀ-ſ] 의 ' 1155 건 대 붙음 83 건).\n\n앞 차수가 판정한 것은 다시 열지 말 것: divergence 와 calculus 는 영문 유지, score 는 점수함수, platonism 은 플라톤주의, clopen 은 열린닫힌, adjugate 는 영문 유지(수반행렬은 adjoint matrix 와 충돌한다), arity 는 항수. 12차 note 가 남긴 축(병기로 확인된 역어의 짝이 병기 없이 본문에 남아 있는지)은 여전히 돌리지 않았다.",
       "createdAt": "2026-09-28T01:01:25.279Z",
       "seq": 1350
+    },
+    {
+      "id": "9ab47c69",
+      "title": "나열형 mermaid 회귀 점검 (새 mermaid 가 들어왔을 때)",
+      "priority": 12,
+      "note": "2026-09-28 회차에 회귀 점검을 했고 개관을 뺀 mermaid 문서가 여전히 32 개이며 새로 들어온 것이 없으므로 판정할 것이 없었다(2026-09-27 둘째 회차에 이어 두 번째로 변화 없음).\n\n점검 방법:\ngrep -l mermaid docs/*.md | grep -v -- '-overview.md' | sed 's|docs/||;s|\\.md||' | sort\n이 목록이 아래 32 개와 같으면 볼 것이 없으므로 이 항목을 그대로 되돌려 놓고 다른 작업을 한다. 목록에 없는 id 가 나오면 그것만 판정한다.\n\n전부 남기기로 판정된 32 개: adjunctions cardinal-characteristics class-field-theory color-refinement deuring-correspondence dynamic-connectivity dynamic-programming effective-resistance field-extensions finite-automata finite-fields galois-theory khovanov-homology kolyvagin-systems lambda-calculus limits-colimits link-cut-trees local-class-field-theory localization-rings manifolds markov-chains monads natural-transformations np-completeness order-lattices partial-orders root-systems sea-algorithm source-coding tensor-products union-find yoneda-lemma\n\n판정 기준: 4절에 이름이 명시된 도형 유형(Hasse 도형, Dynkin 도형, 확대의 탑, 가환도, 보편성질의 도형, 상태 기계, 오토마타, 실제 그래프, 자료구조 그래프)이면 남기고, 화살표 이름이 계산 절차나 논리 근거이면 지운다. 보편성질의 도형은 유일한 사상이 점선으로 그려지고 도형이 닫혀야 허용에 든다(tensor-products, limits-colimits). 같은 역할의 대상을 여럿 나열한 부챗살이나 성질 이름을 화살표로 쓴 것은 들지 않는다(schur-multipliers, kleisli-eilenberg-moore 를 그렇게 지웠다). 구조 클래스의 특수화 나열은 지운다(modules, heyting-algebras). 실제 사상과 정의 관계가 섞인 혼합형은 정의 관계 쪽이 본문 식에 있으면 지운다(homology). mermaid 가 좌표를 반영하지 못해 내용이 그림에 나타나지 않는 평면 기하 도형도 지운다(newton-polygon). 지운 그림에만 있던 정보는 4절대로 본문 문장이나 목록으로 옮긴다.\n\n두 회차 연속 변화가 없으므로 다음 점검은 새 문서가 여럿 들어온 뒤로 미뤄도 된다. 새로 쓴 문서에 mermaid 를 넣었다면 그 회차에 바로 판정할 것.",
+      "createdAt": "2026-09-28T04:44:21.644Z",
+      "seq": 1354
+    },
+    {
+      "id": "39571c73",
+      "title": "Zilber 삼분법의 후속 간선 (6차)",
+      "priority": 12,
+      "note": "2026-09-28 회차에 5차 note 의 후보 '강최소 군' 을 strongly-minimal-groups 로 새로 썼다(105줄, 리프). 부모는 note 가 권한 대로 group-configuration 하나다(check-cycle OK). 태그는 group-configuration 과 같은 #logic #foundations #algebra #group_theory 다. 개관은 foundations-overview 의 모형론 갈래에서 군 배치 정리 바로 다음에 넣었다. group-configuration 의 더 알아보기가 이제 비어 있지 않다.\n\n문서 내용: 직관은 정의 가능한 부분군 H 가 무한하면 여유한이고 잉여류도 여유한인데 여유한 집합 둘은 만나므로 잉여류가 하나, 곧 H=G 라는 계산으로 시작해 중심과 중심화군으로 넘어간다. 정의는 강최소 집합(기본 확대까지 요구하는 것이 '강'), 강최소 군, Morley 위수 1 차수 1 이다. 성질은 부분군 격자, Reineke 정리, 기하의 비퇴화성(ab 가 acl(a) 와 acl(b) 어디에도 없다), Hrushovski-Pillay 의 약정규 군 정리, 예 셋(Q 벡터공간, 무한 기본 아벨 p 군, 대수적으로 닫힌 체의 덧셈군과 곱셈군)이다. 활용은 군 배치 정리의 출력 판정, 국소 모듈러 기하의 분류, Cherlin-Zilber 추측이다.\n\nReineke 증명에서 중심 밖이 켤레류 하나인 경우의 배제는 group-configuration 과 같은 판정으로 각주에 넘겼다(Poizat, Groupes stables 2 장). 그 논증을 문서로 열려면 안정 이론의 사슬 조건이 먼저 필요하므로 별도 항목이다.\n\n이 축에 남은 후속 후보. strongly-minimal-groups 쪽으로 새로 생긴 것: (i) 유한 Morley 위수 군과 Cherlin-Zilber 추측(활용 절 셋째가 한 문단이고 각주에 Altinel-Borovik-Cherlin 이 있다. 부모는 strongly-minimal-groups 하나), (ii) 약정규 군과 1 기반성(성질 절 넷째. 부모는 strongly-minimal-groups 와 zilber-trichotomy 둘이 될 수 있으니 check-cycle 로 확인할 것), (iii) 안정 이론의 사슬 조건. group-configuration 쪽: 체 배치와 Zariski 기하(성질 절 셋째가 한 문단으로 담았고 zilber-trichotomy 의 Zariski 기하 정리와 겹치므로 그 정리를 옮겨 갈지 함께 판정할 것. 부모는 group-configuration 과 zilber-trichotomy 둘). zilber-trichotomy 쪽: Fraisse 극한(반례 구성 절이 정의 없이 쓴다. 부모는 model-theory 이고 이 축과 별개로 열 것). differentially-closed-fields 쪽: 차분체와 ACFA, Manin 사상(mordell-lang note 의 (b) 와 같은 항목이므로 한쪽에서만 처리할 것), 미분 대수적 군. differential-galois-theory 쪽: Kovacic 알고리즘, Liouville 확대, Fuchs 형 방정식과 Riemann-Hilbert 대응. morley-categoricity note 의 단순 이론과 NIP, Vaught 추측도 그대로다.\n\nstrongly-minimal-groups 가 정의 없이 쓴 용어: 기본 확대, 여유한, 프리기하, 켤레류, 지표, 나눗셈환, 안정성, 대수군.",
+      "createdAt": "2026-09-28T04:47:14.680Z",
+      "seq": 1355
+    },
+    {
+      "id": "a3b8f648",
+      "title": "정칙 국소환의 후속 간선 (6차)",
+      "priority": 12,
+      "note": "2026-09-28 회차에 5차 note 의 후보 가운데 local-cohomology 쪽 'Hartshorne-Lichtenbaum 소멸 정리' 를 hartshorne-lichtenbaum 으로 새로 썼다(112줄, 리프). 부모는 local-cohomology 하나다(check-cycle OK). 태그는 #ring_theory #algebra #category_theory 이고 첫 태그를 local-cohomology 와 같은 #ring_theory 로 두었다. 개관은 abstract-algebra-overview 의 '환과 아이디얼' 갈래에서 국소 코호몰로지 바로 다음에 넣었다. local-cohomology 는 리프였으므로 첫 자식이 되었다.\n\n문서 내용: 직관은 k[[x,y]] 에서 I=m 과 I=(x) 두 아이디얼의 Cech 복합체를 나란히 계산해 전자는 H^2 이 무한차원이고 후자는 복합체가 짧아져 H^2=0 임을 보인 뒤, 차이가 dim R/I 라고 이어 간다(local-cohomology 직관 절의 같은 계산을 재사용했으므로 두 문서가 어긋나지 않게 고칠 때 함께 볼 것). 정의는 산술 랭크, 코호몰로지 차원, 정리의 일반 진술(완비화의 최소 소 아이디얼마다 조건)이다. 성질은 완비화로 옮긴 판정(R 이 정역이어도 완비화는 아닐 수 있다), 증명의 요지(한 원소 경우로 환원하고 Matlis 쌍대를 정규화 위의 역계 극한으로 옮긴다), 최고차 하나만 다룬다는 한계와 표수별 확장(Peskine-Szpiro, Ogus)이다. 활용은 산술 랭크의 결정, 집합론적 완전교차 판정, 사영 다양체의 연결성이다.\n\n이 축에 남은 후속 후보. hartshorne-lichtenbaum 쪽으로 새로 생긴 것: 산술 랭크와 집합론적 완전교차(활용 절 둘째가 한 문단이다. 제목이 'A와 B' 꼴이 되지 않게 set-theoretic-complete-intersection 하나로 좁힐 것. 부모는 hartshorne-lichtenbaum 하나), Peskine-Szpiro 와 Frobenius 사상(표수 p 의 국소 코호몰로지. 부모는 hartshorne-lichtenbaum 과 frobenius 계열 문서가 있는지 먼저 확인할 것). gorenstein-rings 쪽: (a) Matlis 쌍대(5차 note 가 우선 후보로 권했으나 이번 회차에 열지 않았다. 판정이 남아 있다: canonical-module 과 matlis-duality 둘로 열지, matlis-duality 하나로 좁히고 표준 가군을 그 안의 절로 둘지. 부모 후보는 gorenstein-rings 와 local-cohomology 인데 Matlis 쌍대의 정의는 단사 포락만 있으면 되므로 5절 기준으로 둘 다 배경일 수 있다. 단사 가군이나 단사 포락 문서가 저장소에 있는지 먼저 볼 것), (b) Serre 쌍대성, (c) 유리 이중점. regular-local-rings 쪽: (b) Stanley-Reisner 환(조합론 쪽 단체 복합체 문서가 있는지 먼저 확인할 것), (d) 완전교차환(gorenstein-rings 의 '## 완전교차' 절과 koszul-complex 활용 절 첫째가 둘 다 담았으므로 8절 기준으로 떼어낼 분량이 되는지 먼저 볼 것). 1차 note 의 (c) 이산부값환과 (d) 매끄러움과 특이점, krull-dimension note 의 (2) Noether 정규화, (3) Hilbert 다항식, (4) 스킴도 그대로다. koszul-complex 쪽: 사상뿔과 긴 완전열(부모는 derived-functors 쪽).\n\nhartshorne-lichtenbaum 이 정의 없이 쓴 용어: 완비화, 최소 소 아이디얼, 근기, Matlis 쌍대, 정규화, 역계 극한, Mayer-Vietoris 열, 매개변수계, 높이, 아핀뿔, de Rham 코호몰로지.",
+      "createdAt": "2026-09-28T04:49:49.890Z",
+      "seq": 1356
+    },
+    {
+      "id": "12b768a3",
+      "title": "다중격자의 후속 간선 (9차)",
+      "priority": 12,
+      "note": "2026-09-28 회차에 8차 note 의 후보 가운데 full-multigrid 쪽 '완전 근사 저장과 비선형 다중격자' 를 full-approximation-scheme 하나로 좁혀 새로 썼다(139줄, 리프). 제목이 'A와 B' 꼴이 되지 않게 FAS 하나로 정했고 비선형 다중격자는 그 안의 서술로 두었다. 부모는 note 가 권한 full-multigrid 가 아니라 multigrid 와 newton-method 둘이다(check-cycle 둘 다 OK, 서로 조상이 아니다). FAS 는 완전 다중격자 없이 정의되고 사이클 구조와 비선형 풀이만 있으면 읽히므로 5절 기준으로 full-multigrid 는 부모가 아니라 배경이다. 본문에서 완전 다중격자는 '## 비선형 평활자의 초기값' 절에 링크로 걸었다. newton-method 는 리프였으므로 첫 자식이 되었다. multigrid 의 더 알아보기에서는 완전 다중격자 다음, 대수적 다중격자 앞에 넣었다. 태그는 multigrid 의 셋에 #optimization 을 더했다(Newton 법과 비선형 풀이를 쓴다). 개관은 linear-algebra-overview 에서 완전 다중격자 바로 다음이다.\n\n문서 내용: 직관은 선형 다중격자가 쓰는 오차 방정식이 비선형에서 A(u+e)-A(u)=r 이 되어 e 만의 함수가 아님을 보인 뒤, 좌변이 u 를 필요로 하니 u 를 함께 보내 미지수를 해 전체로 바꾸는 데로 간다. 정의는 성긴 격자 방정식과 보정 식, JavaScript 의사코드 절차, tau 보정이다. 성질은 선형 경우와의 일치(A 가 선형이면 잔차 방정식으로 돌아간다는 계산), 연산량 O(n), Newton 법과의 비교 표, 비선형 평활자의 초기값이다. 활용은 정상 상태 유체 계산, 자유 경계 문제, tau 보정을 쓴 이산화 오차 추정이다.\n\n8차 note 가 경고한 (4) 선 완화와 비등방 문제는 이번에도 열지 않았다. 주의점이 그대로 유효하다: 점 완화 평활률이 eps -> 0 에서 1 이 되는 계산까지는 확실하지만 y 선 완화만으로 평활률이 eps 에 무관해진다고 단정할 수 없고, 반좌표 성긴화나 교대 선 완화가 필요한 조건을 Trottenberg 의 Multigrid 5 장으로 먼저 확인해야 한다. 회차의 앞쪽에 열고 각주 출처를 먼저 확보할 것.\n\n남은 후보. (1) domain-decomposition 의 후속인 FETI 와 BDDC, 부분공간 보정 정리(부모는 multigrid 와 domain-decomposition. 4차 note 부터 남아 있다. 제목이 'A와 B' 꼴이 되지 않게 하나로 좁히거나 두 문서로 열 것). (2) incomplete-lu 의 후속인 희소 행렬의 정렬과 근사 역행렬 전처리. (4) 위의 선 완화와 비등방 문제. (6) 다중격자의 수렴 증명(성질 절이 두 격자 해석까지만 다룬다. 8절 기준으로 multigrid 와 겹치는지 먼저 볼 것). smoothed-aggregation 쪽: 적응적 평활 응집(부모는 smoothed-aggregation 하나), 에지 요소와 Maxwell 계의 다중격자. full-multigrid 쪽: 격자 적응과 사후 오차 추정(활용 절 셋째가 한 줄이다. 사후 오차 추정은 유한요소법의 개념이라 full-multigrid 가 5절 기준의 부모가 되는지 먼저 판정할 것. 유한요소 문서가 저장소에 있는지도 함께 볼 것). full-approximation-scheme 쪽으로 새로 생긴 후보: tau 보정과 이중 격자 외삽(활용 절 셋째와 정의 절의 tau 보정이 겹치므로 8절 기준으로 분량이 되는지 먼저 볼 것. 부모는 full-approximation-scheme 하나), 비선형 Gauss-Seidel 과 국소 완화.\n\nfull-approximation-scheme 이 정의 없이 쓴 용어: 제한, 보간, 평활자, 이산화 오차, Jacobi 행렬, 크리로프 기저, 정상 상태, 압축성 Euler 방정식, 자유 경계.",
+      "createdAt": "2026-09-28T04:52:10.137Z",
+      "seq": 1357
+    },
+    {
+      "id": "4c60f45c",
+      "title": "문장형 헤딩 훑기 (헤딩 검사기 확장 7차)",
+      "priority": 12,
+      "note": "2026-09-28 회차가 6차다. 5차가 남긴 축을 돌리고 새 축 하나에서 수확이 났다. 같은 회차에 '자리표시자 헤딩 훑기' 계열(16차까지 갔던 별도 항목)도 닫아 여기로 합쳤다.\n\n(1) '~하기' 꼴 축(grep -nE '^##+ .*(하기|되기|짓기|잡기|풀기|쓰기|보기) *$' docs/*.md | grep -v '더 알아보기'): 0 건이다. 넓혀서 '기' 로 끝나는 헤딩 전체(^##+ .*기 *$)를 보면 37 건인데 '크기'(14 건), '표기', '줄기', '기울기', '세기' 같은 명사가 대부분이고, 동작 명사형으로 남은 것도 전부 정식 역어다(구 채우기=sphere packing, 세포 붙이기=attaching cells, 중간에서 만나기=meet-in-the-middle, Hensel 올리기, 평면 그리기=graph drawing, 무작위 걷기=random walk, 펼치기=unfolding). 고친 것은 etale-fundamental-group 17 '## 덮개만으로 세기' -> '## 덮개의 자기동형군' 하나다. 이 축은 닫는다.\n\n(2) 조언투 명사 축 재확인: 5차가 셋을 고친 뒤 남은 둘 가운데 sea-algorithm 27 '## 잉여를 모으는 전략' 을 '## 잉여 계산과 Hasse 한계' 로 고쳤다. lambda-calculus 94 '## 축약 전략' 만 남고 이것은 reduction strategy 의 정식 역어라 유지다. 이 축도 닫는다.\n\n(3) 새 축을 열었다. 부사구 헤딩(grep -nE '^##+ .*[^자]으로 *$|^##+ .*[가-힣]로 *$' docs/*.md). 걸린 13 건 중 7 건이 '경로' 로 끝나는 명사구 오검출이고 실제 위반 6 건을 전부 고쳤다. category-o 151 '## 결정 행렬에서 Cartan 행렬로' -> '## Cartan 행렬의 계산'. chebotarev 17 '## 소수에서 켤레류로' -> '## 켤레류와 분해 양상'(정의 절에 이미 '## Frobenius 켤레류' 가 있어 그 이름은 쓸 수 없다. 한 문서 안의 헤딩 중복을 고칠 때마다 확인할 것). kolyvagin-systems 234 '## Euler 계에서 Kolyvagin 계로' -> '## Euler 계가 주는 Kolyvagin 계'. post-quantum-cryptography 87 과 shortest-vector-problem 66 의 '## 최악 경우에서 평균 경우로' -> 둘 다 '## 최악 경우 환산'('최악 경우로의 환산' 은 4절 번역체 표의 '~로의' 금지에 걸리므로 쓰지 말 것). lattices 152 '## 후양자 암호로' -> '## 후양자 암호'. etale-fundamental-group 23 '## 덮개를 방정식으로' -> '## 덮개의 환 사상' 도 같은 축이다. 이 축은 이번에 비웠으나 새 문서가 들어오면 재발하므로 7차에 회귀 점검으로 한 번 더 돌릴 것.\n\n(4) 자리표시자 헤딩 계열의 마지막 지시를 수행했다. 4절의 문장형 검사 grep -n '^##' docs/*.md | grep -E '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) *$' 를 553 문서에 돌려 17 건이 걸렸고 전부 '요지' 오검출이다('## 증명의 요지' 14 건, '## Rubin 증명의 요지', '## 소수 정리의 요지', '## Euler 계 논법의 요지'). 5차 note 의 판정대로 전부 유지다. 실제 문장형 헤딩은 0 건이므로 자리표시자 훑기 계열을 닫고 큐에서 뺐다. 그 계열을 다시 열지 말 것.\n\n(5) 함께 돌려 0 건인 축(다시 열지 말 것): 의문형 종결(^##+ .*(인가|한가|일까|는가) *$), 조사 종결(^##+ .*(없이|부터|까지|마다|대로) *$).\n\n7차에 볼 축 후보: '## 표수 p 에서 남는 덮개' 처럼 관형절+명사 꼴(^##+ .*(하는|되는|주는|남는|드는) [가-힣]+ *$)이 얼마나 되는지. 5차가 목적격 축에서 'X를 쓴 증명' 꼴을 전부 유지로 판정했으므로 이 축도 유지로 끝날 공산이 크다. 먼저 건수만 세고 20 건이 넘으면 열지 말 것.\n\n4차가 닫은 축(비유 명사 1차 목록, 폭발, 자취), 5차가 닫은 축(두 글자 비유 명사 확장, 목적격), 6차가 닫은 축(~하기, 조언투 명사, 자리표시자 계열)은 다시 열지 말 것. trace 의 역어 통일(자취 대 대각합 대 추적)은 별도 큐 항목이다.",
+      "createdAt": "2026-09-28T05:00:30.567Z",
+      "seq": 1365
     },
     {
       "id": "d2720772",
@@ -1524,6 +1468,38 @@
       "seq": 1340
     },
     {
+      "id": "71a2d754",
+      "title": "Borcherds 곱의 남은 후속: 직교군의 자기동형 형식, Gritsenko–Nikulin 승강",
+      "priority": 10,
+      "note": "2026-09-28 회차에 후보 (a) Gross-Kohnen-Zagier 정리를 gross-kohnen-zagier 로 썼다(부모: heegner-points, borcherds-products). borcherds-products 는 이제 리프가 아니다. 남은 후보 둘. (b) 직교군의 자기동형 형식: borcherds-products 가 출력을 이 이름으로만 부르고 정의하지 않는다. 서명 (2,n) 대칭공간과 에르미트 조건, Koecher 원리, Baily-Borel 콤팩트화가 내용이 될 것이고 부모는 borcherds-products 가 아니라 siegel-modular-forms 또는 새 문서 쪽을 볼 것(선수관계 방향이 반대다: 자기동형 형식이 Borcherds 곱의 선수지식이다). check-cycle 로 방향을 먼저 확인할 것. (c) Gritsenko-Nikulin 승강: jacobi-forms 활용 절 셋째가 가리키는 경로(약한 Jacobi 형식 -> theta 분해 -> 벡터값 형식 -> 파라모듈러 형식), 부모는 jacobi-forms 와 borcherds-products 둘. borcherds-products 가 정의 없이 쓰는 용어로 남은 것: 정규화된 theta 올림, 주요부, 노름 -m 벡터의 직교여공간, 파라모듈러, 괴물 Lie 대수의 분모 공식.",
+      "createdAt": "2026-09-28T04:41:40.452Z",
+      "seq": 1351
+    },
+    {
+      "id": "93ac0bf1",
+      "title": "gross-kohnen-zagier 의 후속 간선",
+      "priority": 10,
+      "note": "2026-09-28 회차에 새로 쓴 문서이고 아직 리프다. 후속 후보. (1) Kudla 강령: 활용 절 셋째가 Zhang 의 Heegner 순환류와 Kudla-Millson 의 특수 순환류를 언급만 하고 정의하지 않는다. borcherds-products 활용 절에도 'Kudla 강령' 절이 있어 두 문서가 같은 것을 가리키므로 부모가 둘이 된다. 산술적 교차수와 Arakelov Green 함수가 내용. (2) Kuga-Sato 다양체와 Heegner 순환류: Zhang 의 고차원 Gross-Zagier. 부모는 gross-kohnen-zagier 와 heegner-points 계열. 먼저 modular-curves 의 보편 타원곡선 서술이 있는지 볼 것.",
+      "createdAt": "2026-09-28T04:41:40.583Z",
+      "seq": 1352
+    },
+    {
+      "id": "bc015406",
+      "title": "tate-curve 의 후속 간선",
+      "priority": 10,
+      "note": "2026-09-28 회차에 tate-curve 를 새로 썼다(137줄, 리프). 부모는 elliptic-curves 와 p-adic-numbers 둘이다(check-cycle 둘 다 OK, 서로 조상이 아니다). 태그는 #number_theory #algebra #complex_analysis 다. elliptic-curves 의 더 알아보기에는 '### 국소적 구조' 묶음을 새로 만들어 넣었고(기존 네 묶음 어디에도 국소 이론이 들어갈 자리가 없었다) '### 고차원 일반화' 앞에 두었다. p-adic-numbers 의 '### 타원곡선과 모듈러 형식' 묶음에서는 p 진 L 함수 앞에 놓았다(Tate 주기가 L 불변량의 정의에 들어가므로 읽는 순서상 앞이다). 개관은 number-theory-overview 의 타원곡선 갈래에서 Chabauty 방법 앞이다.\n\n문서 내용: 직관은 복소 격자 몫을 p 진에서 시도하다 |p^k| -> 0 이라 Z 자체가 이산이 아님을 보이고, 복소수에서 같은 곡선을 C^x/q^Z 로도 쓴다는 데서 곱셈 모형만 살아남는 데로 간다. 정의는 s_k(q) 급수로 세운 방정식, 균등화 사상 X(u), Y(u), Tate 주기다. 성질은 Tate 의 균등화 정리와 j 급수 역전의 증명 요지, 비분해 환원의 이차 비틀림, Tate 가군의 상삼각 모양과 Kummer 코사이클, L 불변량이다. 활용은 p 진 L 함수의 예외적 영점(Mazur-Tate-Teitelbaum 과 Greenberg-Stevens), 국소점의 성분군과 Tamagawa 수, 모듈러 곡선 첨점 근방의 Deligne-Rapoport 모형이다.\n\np-adic-l-function 의 예외적 영점 절과 p-adic-hodge-theory 가 이름만 쓰던 Tate 곡선이 이제 문서를 갖는다. 다음 회차에 그 두 문서의 첫 언급에 본문 링크를 걸 것(4절 규칙: 본문 최초 1회). 이번 회차에는 시간이 없어 걸지 않았다. grep -n 'Tate 곡선' docs/*.md 로 후보를 찾을 것.\n\n후속 후보. (1) 강체해석 기하(문서가 '강체해석' 을 쓰지 않고 우회했다. Tate 의 강체해석 공간과 G_m/q^Z 를 공간으로 보는 관점. 부모는 tate-curve 와 p-adic-numbers 가 될 것). (2) Tamagawa 수와 국소 성분군(활용 절 둘째가 한 문단이다. birch-swinnerton-dyer 의 BSD 공식이 Tamagawa 수를 쓰므로 그 문서와 함께 볼 것). (3) L 불변량과 Hida 족(성질 절 마지막과 활용 절 첫째. p-adic-l-function 의 예외적 영점 절과 겹치므로 8절 기준으로 분량이 되는지 먼저 판정할 것). (4) Deligne-Rapoport 모형과 첨점(modular-curves 의 정수 모형 서술이 있는지 먼저 확인할 것).\n\ntate-curve 가 정의 없이 쓴 용어: 분해 곱셈적 환원, 비분해 환원, 이차 비틀림, 불분기 확대, Kummer 코사이클, 원분 지표, Iwasawa 로그, Tamagawa 수, 보편 타원곡선, 성분군.",
+      "createdAt": "2026-09-28T04:55:26.075Z",
+      "seq": 1360
+    },
+    {
+      "id": "6ee5d2d1",
+      "title": "에탈 코호몰로지의 남은 본문 링크와 후속 간선",
+      "priority": 10,
+      "note": "2026-09-28 회차에 etale-cohomology 를 새로 쓰고 본문 링크 여덟 곳을 걸었다(algebraic-k-theory 15, deligne-weil-conjectures 5, etale-fundamental-group 120, fontaine-mazur 18, galois-representations 7, geometric-langlands 31, langlands-program 56, p-adic-hodge-theory 5). 각 문서의 최초 1회에만 걸었다.\n\n남은 자리 셋. (1) dwork-rationality 226 은 '- **에탈 코호몰로지.** Grothendieck 의' 로 굵은 글씨 레이블이라 링크를 넣으면 굵은 글씨가 깨진다. 4절은 굵은 글씨를 정의되는 용어에만 쓰라고 하므로 그 목록 전체의 레이블 방식을 함께 볼 것(같은 절의 다른 항목도 같은 꼴인지 먼저 확인). (2) fargues-scholze 118 은 '다이아몬드와 v 스택 위의 에탈 코호몰로지' 로 일반 에탈 코호몰로지가 아니라 그 위의 새 이론을 가리키므로 링크가 맞는지 판정할 것. (3) greenberg-conjecture 101 은 '순환체의 에탈 코호몰로지' 이고 걸어도 된다. topology-overview 5 와 number-theory-overview 127 은 개관의 산문이고 개관은 갈래에서 이미 링크하므로 걸지 않기로 판정했다. 이 판정은 다시 뒤집지 말 것.\n\n후속 후보. (1) 모티브 코호몰로지와 Quillen-Lichtenbaum(etale-cohomology 활용 절 셋째가 한 문단이다. 부모는 etale-cohomology 와 algebraic-k-theory 둘이 될 것. check-cycle 로 방향을 확인할 것). (2) Poincare 쌍대성의 에탈 판본(성질 절 둘째가 한 줄로 담았다. 8절 기준으로 분량이 되는지 먼저 판정할 것). (3) 위치와 topos(정의 절 첫째가 '위치' 를 정의 없이 쓴다. 부모는 category-theory 쪽이고 이 축과 별개로 열 것). galois-representations 문서가 이미 있으므로 l 진 Galois 표현은 별도 문서 후보에서 뺀다.\n\netale-cohomology 가 정의 없이 쓴 용어: 위치, topos, 동등자, 단사 대상, 유한형 스킴, 고유 사상, 열린 매장의 확장 함자, 기하적 Frobenius, 모티브 코호몰로지, Artin-Schreier 열.",
+      "createdAt": "2026-09-28T04:58:53.448Z",
+      "seq": 1363
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -1698,6 +1674,30 @@
       "note": "대수. etale-fundamental-group 의 직관 절과 성질 절이 y^p - y = f 덮개를 표수 p 의 야생 부분으로 두 번 쓰는데 정의를 줄 문서가 없다. finite-fields 와 galois-theory 가 부모 후보다. 쓸 내용: 표수 p 에서 차수 p 순환확대의 분류 H^1(G, k) = k/(F-1)k, Artin-Schreier 다항식, Kummer 이론과의 대응(표수 0 의 x^n - a 에 해당), 에탈 기본군의 야생 부분과 Witt 벡터로의 확장",
       "createdAt": "2026-09-27T20:48:44.158Z",
       "seq": 1334
+    },
+    {
+      "id": "52debcac",
+      "title": "각주 정합 회귀 점검 (다음 차수)",
+      "priority": 8,
+      "note": "2026-09-28 회차에 551 문서를 돌려 0 건이다(직전 차수 545 문서 0 건에서 6 개 늘었고 회귀 없음). 이 회차에 새로 쓴 넷(gross-kohnen-zagier, strongly-minimal-groups, hartshorne-lichtenbaum, full-approximation-scheme)도 포함해 통과했다. 문서 변경이 없어 커밋도 없다. 이제 네 차수 연속 0 건이다(535, 540, 545, 551). 앞 note 의 기준대로 다음 차수도 0 건이면 우선순위를 더 낮추거나 항목을 닫을 것. 이번에 12 에서 8 로 한 단계 낮췄다.\n\n검사 축은 셋이다: 정의 중복(DUP_DEF), 정의만 있고 참조 없음(DEF_NO_REF), 참조만 있고 정의 없음(REF_NO_DEF). 각주 번호가 본문 첫 등장 순서와 어긋난 축은 앞 차수에서 고치지 않기로 판정했으므로 다시 돌리지 말 것(GitHub 이 표시 번호를 등장 순서로 다시 매긴다).\n\n검사기 명세. 스크래치패드는 세션마다 사라지므로 매번 다시 쓴다. docs 의 각 md 를 줄 단위로 훑고, /^\\s*(```|~~~)/ 로 코드펜스를 토글해 펜스 안을 건너뛴다. 정의 줄 판정은 /^\\[\\^([^\\]]+)\\]:/ 이고, 매치한 줄은 콜론 뒤 나머지에서 다시 /\\[\\^([^\\]]+)\\]/g 로 참조를 세야 한 각주가 다른 각주를 참조하는 경우를 놓치지 않는다. 정의 맵과 참조 맵을 문서마다 따로 두고 세 축을 비교한다. 네 차수 모두 이 명세 그대로 돌려 0 건이므로 명세는 안정적이다.\n\n다음 차수는 새 문서를 여러 개 쓴 회차 뒤에 이 세 축만 돌린다.",
+      "createdAt": "2026-09-28T04:52:32.899Z",
+      "seq": 1358
+    },
+    {
+      "id": "42611984",
+      "title": "중복 H2 회귀 점검 (다음 차수)",
+      "priority": 8,
+      "note": "2026-09-28 회차에 세 검사를 551 문서에 돌려 전부 0 건이다. (1) 중복 H2: for f in docs/*.md; do grep -o '^## .*' $f | sort | uniq -d; done. (2) 중복 H3(더 알아보기 아래 묶음 이름 제외): sed -n '1,/^## 더 알아보기/p' $f | grep -o '^### .*' | sort | uniq -d. (3) H1 규격: 스크래치패드 h1.mjs 로 코드펜스를 건너뛰고 첫 H1(제목)과 '연관 문서' 를 뺀 나머지가 개요/직관/정의/성질/활용의 부분수열인지 본다(개관은 개요/지도/갈래). 직전 차수 545 문서에서 6 개 늘었고 회귀 없음. 세 차수 연속 0 건이라 우선순위를 12 에서 8 로 낮췄다.\n\n이번 회차에 중복 H2 검사가 실제로 한 건을 막았다. 새로 쓴 gross-kohnen-zagier 와 무관하게, 헤딩 축 작업에서 chebotarev 17 의 '## 소수에서 켤레류로' 를 '## Frobenius 켤레류' 로 바꾸려다 정의 절 39 줄에 같은 헤딩이 이미 있어 '## 켤레류와 분해 양상' 으로 다시 정했다. 헤딩을 고치는 작업에서는 파일 안의 중복을 그 자리에서 확인할 것.\n\n세 검사가 551 문서에 1 초 안에 끝나므로 새 문서가 여러 개 들어온 회차 뒤에 돌리는 방식을 유지한다. 'A와 B' 제목 축은 큐의 '제목과 파일명이 어긋난 문서 훑기' 항목이 따로 들고 있다.",
+      "createdAt": "2026-09-28T04:52:57.552Z",
+      "seq": 1359
+    },
+    {
+      "id": "97d03611",
+      "title": "제목과 파일명이 어긋난 문서 훑기 (7차)",
+      "priority": 8,
+      "note": "2026-09-28 회차가 6차다. 이 축을 닫는 판정을 했다.\n\n검사식 수정. 5차 note 가 쓴 grep -l '^# .*[와과] ' docs/*.md 는 문서 전체를 훑으므로 553 문서가 전부 걸려 쓸 수 없다. 첫 줄만 보아야 하고, 문자 클래스 [와과] 는 로케일에 따라 바이트 단위로 매칭되어 '범주' 같은 무관한 제목까지 잡는다. 다음을 쓸 것.\nfor f in docs/*.md; do head -1 \"$f\" | grep -qP '^# .*(와|과) ' && basename $f .md; done\n6 차에 이 식으로 41 개가 나왔다(5차가 센 70 개는 오검출이 섞인 수다).\n\n41 개를 전부 읽고 판정했다. 모두 4절이 예외로 든 '정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목' 이거나, 파일명이 제목의 앞 개념을 그대로 가리키는 것이다. 좁힐 것이 하나도 없다. 유형별로: 개념 + 그 개념의 정리(bernoulli-numbers, braid-groups, differential-forms, holomorphic-functions, group-extensions, network-flow, np-completeness, perfect-graphs, riemann-surfaces, unbounded-operators, weak-convergence, characteristic-functions, domain-theory, heegner-points, selmer-tate-shafarevich), 정리 + 그 정리가 답하는 대상(borel-weil-bott, canonical-height, dwork-rationality, eisenstein-ideal, greenberg-conjecture, herbrand-ribet, s-cobordism, serre-conjecture, siegel-weil, vandiver-conjecture, volume-conjecture, waldspurger-formula, witten-asymptotics, unique-games, tracy-widom), 한 기법의 두 단계나 한 대상의 두 면(lp-rounding 'LP 완화와 반올림', fargues-scholze, fundamental-lemma, jacquet-langlands, schur-multipliers, shimura-correspondence, speh-representations, vogan-packets, weil-representation, weyl-character-formula, whittaker-models).\n\n5차가 좁힌 둘(mv-cycles, wess-zumino-witten)과 4차가 남긴 zhu-algebra, 파일명이 이미 둘을 담은 아홉(dyson-rank-crank, ideals-quotient-rings, limits-colimits, dag-topological, kleisli-eilenberg-moore, luzin-sierpinski-sets, borel-pade, fermat-euler-theorem, formalism-hilbert-program)은 다시 보지 않는다.\n\n7차는 새 문서가 스무 개쯤 늘어난 뒤에 위 검사식만 돌려 새로 든 id 가 있는지 보고, 없으면 그대로 되돌릴 것. 41 개를 다시 읽지 말 것. 우선순위를 12 에서 8 로 낮췄다.",
+      "createdAt": "2026-09-28T04:59:52.533Z",
+      "seq": 1364
     },
     {
       "id": "fb947ff9",
