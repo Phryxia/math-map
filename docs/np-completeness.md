@@ -58,7 +58,7 @@ NP-hard 는 $\mathrm{NP}$ 안에 있을 필요가 없다. 정지 문제는 NP-ha
 
 ## Cook–Levin 정리
 
-**정리 (Cook 1971, Levin 1973).** SAT 은 NP-complete다.
+**정리 (Cook 1971, Levin 1973).** SAT 은 NP-complete 다.
 
 증명 스케치. $L \in \mathrm{NP}$ 를 잡으면 시간 $p(n)$ 의 비결정적 Turing 기계 $M$ 이 $L$ 을 판정한다. 입력 $w$ (길이 $n$ )에 대해 $M$ 의 한 실행을 $p(n) \times p(n)$ 크기의 **계산 표**로 적는다. $i$ 번째 행이 시각 $i$ 의 테이프 구성(각 칸의 기호, 헤드 위치, 상태)이다. 시간이 $p(n)$ 이므로 헤드는 $p(n)$ 칸을 넘어 움직이지 못해 표의 폭도 $p(n)$ 이면 충분하다.
 

@@ -142,7 +142,7 @@ $$
 
 ## 수치 최적화
 
-닫힌 해가 없으면 점수 방정식을 수치적으로 푼다. Newton–Raphson은 2차 도함수를 쓰고, 그 자리에 Fisher 정보를 넣은 변형이 Fisher scoring이다. 로그가능도가 오목하면(예: 지수족의 자연매개화) 전역해가 보장되고 [볼록성](convexity.md) 기반의 [경사하강법](gradient-descent.md)이 그대로 적용된다.
+닫힌 해가 없으면 점수 방정식을 수치적으로 푼다. Newton–Raphson 은 2차 도함수를 쓰고, 그 자리에 Fisher 정보를 넣은 변형이 Fisher scoring 이다. 로그가능도가 오목하면(예: 지수족의 자연매개화) 전역해가 보장되고 [볼록성](convexity.md) 기반의 [경사하강법](gradient-descent.md)이 그대로 적용된다.
 
 ## 다른 추론 방식과의 관계
 

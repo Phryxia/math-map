@@ -95,7 +95,7 @@ $$
 
 ## 계산 도구
 
-Seifert–van Kampen 정리는 공간을 열린집합 두 개로 덮었을 때 전체의 기본군을 조각들의 기본군과 교집합의 기본군으로부터 amalgamated product로 기술한다. 이것이 cell complex 의 기본군을 생성원과 관계식으로 읽어내는 방법이다.
+Seifert–van Kampen 정리는 공간을 열린집합 두 개로 덮었을 때 전체의 기본군을 조각들의 기본군과 교집합의 기본군으로부터 amalgamated product 로 기술한다. 이것이 cell complex 의 기본군을 생성원과 관계식으로 읽어내는 방법이다.
 
 # 활용
 

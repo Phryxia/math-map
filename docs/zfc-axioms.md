@@ -130,13 +130,13 @@ $$
 
 ## 클래스와 표기
 
-"모든 집합의 모임"이나 "모든 서수의 모임"은 집합이 아니므로, 논리식을 줄여 쓴 약칭으로만 쓴다. 이를 proper class라 부른다. [범주](category.md)론에서 "모든 집합의 범주"를 다룰 때 이 구분이 문제가 되며, Grothendieck universe를 추가하거나 **NBG**(von Neumann–Bernays–Gödel) 같은 클래스 이론으로 옮기는 우회로를 쓴다.
+"모든 집합의 모임"이나 "모든 서수의 모임"은 집합이 아니므로, 논리식을 줄여 쓴 약칭으로만 쓴다. 이를 proper class 라 부른다. [범주](category.md)론에서 "모든 집합의 범주"를 다룰 때 이 구분이 문제가 되며, Grothendieck universe 를 추가하거나 **NBG**(von Neumann–Bernays–Gödel) 같은 클래스 이론으로 옮기는 우회로를 쓴다.
 
 ## 큰 기수와 확장
 
 ZFC 로 판정되지 않는 문장을 다루기 위해 도달 불가능 기수, 측정 가능 기수 등 큰 기수 공리를 추가하는 확장을 연구한다. 이들은 증명 강도를 단계적으로 올리며, 각 단계는 앞 단계의 무모순성을 함의한다.
 
-실제 수학 대부분은 거듭제곱집합을 몇 번만 쓰는 낮은 층에서 진행되므로, ZFC 의 강한 공리 전부를 필요로 하지 않는다. 어떤 정리가 어느 공리를 정말 필요로 하는지 재는 작업이 reverse mathematics다.
+실제 수학 대부분은 거듭제곱집합을 몇 번만 쓰는 낮은 층에서 진행되므로, ZFC 의 강한 공리 전부를 필요로 하지 않는다. 어떤 정리가 어느 공리를 정말 필요로 하는지 재는 작업이 reverse mathematics 다.
 
 [^1]: Zermelo-Fraenkel Axioms, Wolfram MathWorld. https://mathworld.wolfram.com/Zermelo-FraenkelAxioms.html
 [^2]: Set-theoretic definition of natural numbers (von Neumann ordinals). https://en.wikipedia.org/wiki/Set-theoretic_definition_of_natural_numbers

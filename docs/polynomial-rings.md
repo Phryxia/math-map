@@ -41,7 +41,7 @@ $$
 f=qg+r,\qquad r=0 \ \text{또는}\ \deg r\lt\deg g
 $$
 
-증명 개요. $\deg f \lt\deg g$ 면 $q=0$ 이고 $r=f$ 다. 그렇지 않으면 $f$ 에서 leading coefficient 의 비와 $x^{\deg f - \deg g}$ 와 $g$ 의 곱을 빼 차수를 내리고 귀납한다. $g$ 의 leading coefficient로 나누는 단계에서 $k$ 가 체라는 조건이 쓰인다. 계수환이 체가 아니면 정리가 깨진다. $\mathbb{Z}[x]$ 에서 $x$ 를 $2x$ 로 나눌 수 없다.
+증명 개요. $\deg f \lt\deg g$ 면 $q=0$ 이고 $r=f$ 다. 그렇지 않으면 $f$ 에서 leading coefficient 의 비와 $x^{\deg f - \deg g}$ 와 $g$ 의 곱을 빼 차수를 내리고 귀납한다. $g$ 의 leading coefficient 로 나누는 단계에서 $k$ 가 체라는 조건이 쓰인다. 계수환이 체가 아니면 정리가 깨진다. $\mathbb{Z}[x]$ 에서 $x$ 를 $2x$ 로 나눌 수 없다.
 
 ## 유클리드 정역과 유일분해
 
@@ -78,7 +78,7 @@ $$
 ## 기약성 판정
 
 - $\mathbb{Q}[x]$ : Gauss 의 보조정리로 $\mathbb{Z}[x]$ 에서의 기약성과 동치다. Eisenstein 판정법, 소수 $p$ 로 환원해 $\mathbb{F}\_p[x]$ 에서 기약성을 보는 방법을 쓴다.
-- 유리근 정리: 정수계수 다항식의 유리근 $b/c$ 는 $b$ 가 상수항을, $c$ 가 leading coefficient를 나눈다.
+- 유리근 정리: 정수계수 다항식의 유리근 $b/c$ 는 $b$ 가 상수항을, $c$ 가 leading coefficient 를 나눈다.
 - $\mathbb{C}[x]$ : 대수학의 기본정리로 기약다항식은 1차뿐이다. $\mathbb{R}[x]$ 에서는 1차와 판별식이 음인 2차뿐이다.
 
 # 활용

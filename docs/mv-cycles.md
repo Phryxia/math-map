@@ -24,7 +24,7 @@ $$
 
 ## 반무한 궤도와 무게 분해
 
-$\mathrm{Gr}\_G$ 위에서 $G(\mathcal O)$ 궤도는 지배적 여무게 $\lambda$ 로 매겨지고, 그 궤도의 닫힘 위의 교차 코호몰로지 층 $\mathcal{IC}\_\lambda$ 가 기약표현 $V_\lambda$ 에 대응한다. 여기까지가 기하학적 Satake다.
+$\mathrm{Gr}\_G$ 위에서 $G(\mathcal O)$ 궤도는 지배적 여무게 $\lambda$ 로 매겨지고, 그 궤도의 닫힘 위의 교차 코호몰로지 층 $\mathcal{IC}\_\lambda$ 가 기약표현 $V_\lambda$ 에 대응한다. 여기까지가 기하학적 Satake 다.
 
 무게 분해를 얻으려면 표현을 쌍대 토러스 $\widehat T$ 로 제한해야 하고, 층 쪽에서 그것에 해당하는 조작이 다른 부분군의 궤도로 자르는 것이다. $N$ 을 멱단 부분군이라 할 때 그 궤도 $S_\mu=N(F)\cdot t^\mu$ 를 **반무한 낟가리**(semi-infinite cell)라 한다. 이름 그대로 무한차원이면서 여차원도 무한이다.
 

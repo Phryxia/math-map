@@ -70,7 +70,7 @@ $$
 P\Bigl(\bigcup_{i=1}^{n}A_i\Bigr)=\sum_{j=1}^{n}(-1)^{j-1}\sum_{|S|=j}P(A_S)
 $$
 
-합을 중간에서 끊으면 부등식이 된다. 홀수 개 항에서 끊으면 상한, 짝수 개에서 끊으면 하한이다. j=1에서 끊은 상한이 union bound다.
+합을 중간에서 끊으면 부등식이 된다. 홀수 개 항에서 끊으면 상한, 짝수 개에서 끊으면 하한이다. j=1에서 끊은 상한이 union bound 다.
 
 $$
 P\Bigl(\bigcup_i A_i\Bigr)\le \sum_i P(A_i)

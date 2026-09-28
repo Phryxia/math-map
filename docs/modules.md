@@ -124,7 +124,7 @@ $$
 | 유한생성 부분구조 | 항상 유한생성 | 비[Noether 환](noetherian-rings.md)에서는 실패 |
 | 불변량 | 차원 하나 | 계수 + torsion 구조 |
 
-세 번째 줄은 실제로 자주 발목을 잡는다. $\mathbb Z$ 위에서 $\mathbb Q$ 는 어떤 유한집합으로도 생성되지 않으면서 torsion-free다.
+세 번째 줄은 실제로 자주 발목을 잡는다. $\mathbb Z$ 위에서 $\mathbb Q$ 는 어떤 유한집합으로도 생성되지 않으면서 torsion-free 다.
 
 ## 짧은 정확열과 분해
 

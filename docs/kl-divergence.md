@@ -4,7 +4,7 @@
 
 Kullback–Leibler divergence 는 두 확률분포가 얼마나 다른지를 재는 양이다. 거리는 아니지만, "참 분포가 $P$ 인데 $Q$ 라고 믿고 부호화할 때 낭비되는 평균 비트 수"라는 해석 덕분에 [Shannon 엔트로피](entropy.md)의 자연스러운 상대 버전이 된다.
 
-상호정보량은 결합분포와 주변분포의 곱 사이의 KL(Kullback–Leibler) divergence다. 두 [확률변수](random-variables.md)가 서로에 대해 알려 주는 정보의 양이며, 독립성으로부터의 이탈을 정량화한다. 선형 상관과 달리 어떤 형태의 의존성이든 잡아내고, 0이 되는 것과 독립인 것이 정확히 동치다.
+상호정보량은 결합분포와 주변분포의 곱 사이의 KL(Kullback–Leibler) divergence 다. 두 [확률변수](random-variables.md)가 서로에 대해 알려 주는 정보의 양이며, 독립성으로부터의 이탈을 정량화한다. 선형 상관과 달리 어떤 형태의 의존성이든 잡아내고, 0이 되는 것과 독립인 것이 정확히 동치다.
 
 # 직관
 
@@ -48,7 +48,7 @@ $$
 
 ## 상호정보량
 
-두 확률변수의 결합분포와 주변분포의 곱 사이의 divergence로 정의한다.
+두 확률변수의 결합분포와 주변분포의 곱 사이의 divergence 로 정의한다.
 
 $$
 I(X;Y) = D\big(P_{XY}\thinspace\Vert\thinspace P_X \otimes P_Y\big) = \sum_{x,y} p(x,y) \log\frac{p(x,y)}{p(x)p(y)} .

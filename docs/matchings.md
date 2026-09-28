@@ -97,7 +97,7 @@ $$
 
 König 정리는 Hall 정리와 동치이며, 두 정리 모두 [선형계획법](linear-programming.md) 쌍대성을 조합론에서 구체화한 것이다. 이분 그래프의 간선-정점 접합 행렬은 완전 유니모듈러이므로 매칭 **LP**(linear programming)의 최적해가 정수해가 되고, 그 쌍대가 정점 덮개 LP 다. 네트워크 흐름의 최대유량 최소절단 정리에서도 같은 구조가 나온다.
 
-보완적으로 König–Egerváry로부터 이분 그래프의 최대 독립집합 크기는 $\lvert V \rvert - \nu(G)$ 다.
+보완적으로 König–Egerváry 로부터 이분 그래프의 최대 독립집합 크기는 $\lvert V \rvert - \nu(G)$ 다.
 
 ## Tutte 정리 (일반 그래프)
 

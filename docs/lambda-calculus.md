@@ -4,7 +4,7 @@
 
 Lambda calculus 는 Alonzo Church 가 1930년대에 도입한 계산 모델이다. 기본 대상은 오직 [함수](functions.md)뿐이고, 연산은 함수를 만드는 추상(abstraction)과 함수를 적용하는 적용(application) 둘뿐이다. 숫자, 진리값, 자료구조, 재귀는 모두 함수로 부호화된다.
 
-이렇게 빈약한 문법이 Turing 기계와 같은 계산 능력을 갖는다는 것이 핵심 사실이다. Church 의 $\lambda$ 정의가능성, Kleene 의 일반 재귀함수, Turing 의 기계가 모두 같은 함수족을 잡아낸다는 결과가 Church–Turing 논제의 경험적 근거이며, 동시에 [계산 가능성](computability.md)의 결정불가능성 결과들이 lambda calculus로도 그대로 옮겨진다.
+이렇게 빈약한 문법이 Turing 기계와 같은 계산 능력을 갖는다는 것이 핵심 사실이다. Church 의 $\lambda$ 정의가능성, Kleene 의 일반 재귀함수, Turing 의 기계가 모두 같은 함수족을 잡아낸다는 결과가 Church–Turing 논제의 경험적 근거이며, 동시에 [계산 가능성](computability.md)의 결정불가능성 결과들이 lambda calculus 로도 그대로 옮겨진다.
 
 계산 모델로서의 의의 외에 두 가지 쓰임이 더 있다. 하나는 프로그래밍 언어의 의미론이다. 함수형 언어는 사실상 lambda calculus에 자료형과 최적화를 덧붙인 것이고, 클로저·고차함수·지연 평가의 의미가 여기서 정의된다. 다른 하나는 증명론이다. 단순 타입을 붙이면 항이 증명, 타입이 명제가 되는 Curry–Howard 대응이 나타나고, 이때 계산 능력은 떨어지지만 모든 계산이 반드시 끝난다.
 
@@ -114,7 +114,7 @@ flowchart TD
   N2 -->|"beta*"| P
 ```
 
-증명은 한 단계 축약을 여러 redex를 동시에 줄이는 평행 축약(parallel reduction)으로 바꾼 뒤, 평행 축약이 다이아몬드 성질을 만족함을 귀납으로 보이는 Tait–Martin-Löf 방식이 표준이다.
+증명은 한 단계 축약을 여러 redex 를 동시에 줄이는 평행 축약(parallel reduction)으로 바꾼 뒤, 평행 축약이 다이아몬드 성질을 만족함을 귀납으로 보이는 Tait–Martin-Löf 방식이 표준이다.
 
 따름정리 세 개.
 
@@ -150,7 +150,7 @@ flowchart TD
 
 ## 언어와 시스템에서의 쓰임
 
-- **함수형 언어의 핵심.** Haskell, OCaml, Scheme 의 의미론은 lambda calculus에 상수·자료형·평가 전략을 더한 것으로 정의된다. 컴파일러의 중간 표현도 타입 있는 lambda calculus다. GHC(Glasgow Haskell Compiler) 의 Core 가 그 예다.
+- **함수형 언어의 핵심.** Haskell, OCaml, Scheme 의 의미론은 lambda calculus 에 상수·자료형·평가 전략을 더한 것으로 정의된다. 컴파일러의 중간 표현도 타입 있는 lambda calculus 다. GHC(Glasgow Haskell Compiler) 의 Core 가 그 예다.
 - **클로저와 고차함수.** 자유변수를 담은 환경과 함께 함수를 값으로 다루는 구현이 곧 $\lambda$ 추상의 기계적 실현이다. 주류 명령형 언어의 람다/클로저 기능도 같은 기원이다.
 - **평가 전략의 설계.** 지연 평가는 정규 순서의 공학적 구현(그래프 축약, thunk)이고, 엄격 평가는 값 호출이다. 두 전략의 종료성 차이가 그대로 언어 설계의 절충으로 나타난다.
 - **증명 보조 도구.** 의존 타입 체계(Calculus of Constructions 등)는 STLC 를 확장한 것이며, 정리 증명은 타입이 붙은 항을 구성하는 일이다. 강한 정규화가 논리적 무모순성과 직결된다.
