@@ -2,7 +2,7 @@
 
 # 개요
 
-Chebotarev 밀도 정리는 Galois 확대 $L/K$ 에서 Frobenius 켤레류가 균등하게 분포한다고 말한다.
+Chebotarev 밀도 정리로 Galois 확대 $L/K$ 에서 Frobenius 켤레류는 균등하게 분포한다.
 
 $$
 \delta\Big(\Big\lbrace\mathfrak p:\Big[\tfrac{L/K}{\mathfrak p}\Big]=C\Big\rbrace\Big)=\frac{|C|}{[L:K]}
@@ -20,7 +20,7 @@ $\mathfrak p$ 위에 있는 $L$ 의 [소 아이디얼](prime-ideals.md) $\mathfr
 
 이 켤레류가 $\mathfrak p$ 의 분해 양상을 결정한다. 위수가 $f$ 면 잉여차수가 $f$ 이고 소 아이디얼의 개수가 $n/f$ 다. 켤레류가 항등원이면 완전분해다.
 
-어떤 소수가 어떻게 분해하는가는 Frobenius 가 어느 켤레류에 떨어지는가와 같은 질문이고, Chebotarev 는 그 답이 켤레류의 크기에 비례한다고 말한다.
+어떤 소수가 어떻게 분해하는가는 Frobenius 가 어느 켤레류에 떨어지는가와 같은 질문이고, Chebotarev 밀도 정리로 그 답은 켤레류의 크기에 비례한다.
 
 ## 균등성의 근거
 

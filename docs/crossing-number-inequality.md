@@ -16,7 +16,7 @@ $$
 \vert E\vert-c\le3\vert V\vert-6,\qquad c\ge\vert E\vert-3\vert V\vert+6
 $$
 
-이다. 이 하한은 변의 개수에 대해 선형이다. $\vert E\vert=4\vert V\vert$ 이면 교차가 $\vert V\vert$ 개쯤이라고 말한다.
+이다. 이 하한은 변의 개수에 대해 선형이다. $\vert E\vert=4\vert V\vert$ 이면 교차가 $\vert V\vert$ 개쯤이다.
 
 실제 교차수는 이보다 크다. 선형 하한이 약한 이유는 그래프 전체에 한 번만 적용했기 때문이다. 정점을 무작위로 골라 만든 부분그래프마다 같은 부등식을 적용하고 기댓값을 취하면 하한이 올라간다.
 
