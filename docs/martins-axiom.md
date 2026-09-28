@@ -30,7 +30,7 @@ $D \subseteq P$ 가 **조밀**하다는 것은 모든 $p \in P$ 에 대해 $q \l
 
 ## Martin 의 공리
 
-Martin 의 공리(Martin's axiom)를 조밀집합의 개수마다 나누어 쓴다. 기수 $\kappa$ 에 대해 $\mathrm{MA}(\kappa)$ 는 다음 주장이다.
+Martin 의 공리(Martin's axiom)를 조밀집합의 개수마다 나누어 쓴다. [기수](cardinality.md) $\kappa$ 에 대해 $\mathrm{MA}(\kappa)$ 는 다음 주장이다.
 
 > $P$ 가 ccc 를 만족하는 부분순서이고 $\mathcal D$ 가 $P$ 의 조밀집합들의 모임으로 $\vert \mathcal D\vert \le \kappa$ 이면, 모든 $D \in \mathcal D$ 에 대해 $G \cap D \neq \varnothing$ 인 필터 $G \subseteq P$ 가 있다.
 
