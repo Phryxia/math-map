@@ -157,7 +157,7 @@ $$
 
 [최대가능도 추정](maximum-likelihood.md)은 경험분포에 KL 기준으로 가장 가까운 모형을 고르는 일이다. [큰 수의 법칙](law-of-large-numbers.md)으로 경험분포가 참 분포로 가므로, 모형이 틀린 경우에도 추정량은 참 분포에 KL 기준으로 가장 가까운 유사참 모수로 수렴한다. 분류 문제의 교차 엔트로피 손실이 이 목적함수이고, [지수족](exponential-families.md)에서는 이 최소화가 적률 맞추기가 된다.
 
-증거 하한(ELBO)은 로그 주변가능도에서 근사 사후분포와 참 사후분포 사이의 KL 을 뺀 값이고, 변분 [Bayes 추론](bayesian-inference.md)은 그 KL 을 줄인다.
+증거 하한(evidence lower bound, ELBO)은 로그 주변가능도에서 근사 사후분포와 참 사후분포 사이의 KL 을 뺀 값이고, 변분 [Bayes 추론](bayesian-inference.md)은 그 KL 을 줄인다.
 
 ## 가설검정에서의 지수
 
