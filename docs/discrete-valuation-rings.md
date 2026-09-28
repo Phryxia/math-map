@@ -88,7 +88,7 @@ $p$ 진 정수환 $\mathbb Z_p$ 는 $\mathbb Z\_{(p)}$ 의 완비화이고 균�
 
 정역이 정수적으로 닫혔는지는 높이 $1$ 의 소 아이디얼마다 국소화가 이산부값환인지로 판정한다. Noether 정역에서 이 조건이 정규성과 같다.
 
-[^1]: H. Matsumura, *Commutative Ring Theory*, Cambridge Stud. Adv. Math. **8**, Cambridge University Press (1986), 11장. 동치 조건의 목록과 완비 이산부값환의 구조가 이 장에 있다.
+[^1]: M. Atiyah, I. Macdonald, *Introduction to Commutative Algebra*, Addison–Wesley (1969), 9장 "Discrete Valuation Rings and Dedekind Domains". 동치 조건의 목록이 이 장에 있다.
 
 # 연관 문서
 
