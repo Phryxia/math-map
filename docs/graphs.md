@@ -100,7 +100,7 @@ $$
 - [DAG 와 위상정렬](dag-topological.md)
 - [서로소 집합 자료구조](union-find.md)
 - [동적 연결성](dynamic-connectivity.md)
-- [네트워크 흐름과 최대유량 최소절단 정리](network-flow.md)
+- [네트워크 흐름](network-flow.md)
 
 ### 색칠, 매칭, 극단
 

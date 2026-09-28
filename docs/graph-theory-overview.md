@@ -58,7 +58,7 @@ graph TD
 ## 알고리즘과 최적화
 
 - [최소 신장트리](minimum-spanning-tree.md): 탐욕 알고리즘이 최적이 되는 Matroid 구조
-- [네트워크 흐름과 최대유량 최소절단 정리](network-flow.md): 흐름의 최댓값과 절단의 최솟값이 같다
+- [네트워크 흐름](network-flow.md): 흐름의 최댓값과 절단의 최솟값이 같다
 
 ## 동형과 구별
 

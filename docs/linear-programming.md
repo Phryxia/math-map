@@ -122,7 +122,7 @@ $$
 
 ## 더 알아보기
 
-- [네트워크 흐름과 최대유량 최소절단 정리](network-flow.md)
+- [네트워크 흐름](network-flow.md)
 - [LP 완화와 반올림](lp-rounding.md)
 
 #optimization #linear_algebra #combinatorics #algorithms
