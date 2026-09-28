@@ -99,7 +99,7 @@ graph TD
 - [Airy 함수](airy-functions.md): 회전점 근방의 표준형
 - [WKB 근사](wkb-approximation.md)(Wentzel–Kramers–Brillouin): 작은 매개변수를 가진 방정식의 지수적 해
 - [정확한 WKB](exact-wkb.md): WKB 급수를 Borel 재합산으로 엄밀화
-- [Painlevé 방정식과 등모노드로미 변형](painleve-equations.md): 가동 특이점이 극뿐인 비선형 방정식
+- [Painlevé 방정식](painleve-equations.md): 가동 특이점이 극뿐인 비선형 방정식
 
 ## 작용소와 함수해석
 

@@ -265,7 +265,7 @@ Kolyvagin 계의 형식화는 타원곡선 밖에서도 쓰인다. 변형환의 
 ## 선수지식
 
 - [Heegner 점과 Gross–Zagier 공식](heegner-points.md)
-- [Poitou–Tate 완전열과 대역 상호법칙](poitou-tate.md)
+- [Poitou–Tate 완전열](poitou-tate.md)
 
 ## 더 알아보기
 

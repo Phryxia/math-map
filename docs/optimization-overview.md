@@ -58,7 +58,7 @@ graph TD
 ## 최적 수송
 
 - [최적 수송](optimal-transport.md): 분포를 옮기는 최소 비용과 Kantorovich 쌍대성
-- [Sinkhorn 알고리즘과 엔트로피 정규화](sinkhorn.md): 엔트로피 항을 더해 행렬 스케일링으로 푼다
+- [Sinkhorn 알고리즘](sinkhorn.md): 엔트로피 항을 더해 행렬 스케일링으로 푼다
 - [불균형 최적 수송](unbalanced-optimal-transport.md): 질량이 보존되지 않는 경우로의 확장
 - [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md): 확률분포 공간 위의 기울기 흐름과 Fokker–Planck 방정식
 

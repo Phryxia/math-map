@@ -143,7 +143,7 @@ $$
 
 ## 선수지식
 
-- [Sinkhorn 알고리즘과 엔트로피 정규화](sinkhorn.md)
+- [Sinkhorn 알고리즘](sinkhorn.md)
 
 ## 더 알아보기
 

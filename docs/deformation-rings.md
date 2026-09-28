@@ -204,7 +204,7 @@ $\mathbb Z_p$ 쪽에서는 $R=\mathbb Z_p[[T]]$ 가 $\mathbb Z_p$ 위 상대 차
 
 - [Fontaine–Mazur 추측](fontaine-mazur.md)
 - [군 확대와 Jordan–Hölder 정리](group-extensions.md)
-- [Poitou–Tate 완전열과 대역 상호법칙](poitou-tate.md)
+- [Poitou–Tate 완전열](poitou-tate.md)
 
 ## 더 알아보기
 

@@ -181,6 +181,6 @@ $$
 
 - [대편차 원리](large-deviations.md)
 - [변분 오토인코더](variational-autoencoder.md)
-- [Sinkhorn 알고리즘과 엔트로피 정규화](sinkhorn.md)
+- [Sinkhorn 알고리즘](sinkhorn.md)
 
 #information_theory #probability #statistics #machine_learning

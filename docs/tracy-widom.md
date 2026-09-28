@@ -142,7 +142,7 @@ $$
 ## 선수지식
 
 - [Wigner 반원법칙](wigner-semicircle.md)
-- [Painlevé 방정식과 등모노드로미 변형](painleve-equations.md)
+- [Painlevé 방정식](painleve-equations.md)
 - [결정점과정](determinantal-point-process.md)
 
 ## 더 알아보기

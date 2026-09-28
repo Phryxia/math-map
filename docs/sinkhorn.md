@@ -1,4 +1,4 @@
-# Sinkhorn 알고리즘과 엔트로피 정규화
+# Sinkhorn 알고리즘
 
 # 개요
 

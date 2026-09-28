@@ -225,6 +225,6 @@ $$
 ## 더 알아보기
 
 - [p 진 Hodge 이론](p-adic-hodge-theory.md)
-- [Poitou–Tate 완전열과 대역 상호법칙](poitou-tate.md)
+- [Poitou–Tate 완전열](poitou-tate.md)
 
 #number_theory #field_theory #construction

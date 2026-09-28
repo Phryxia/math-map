@@ -1,4 +1,4 @@
-# Poitou–Tate 완전열과 대역 상호법칙
+# Poitou–Tate 완전열
 
 # 개요
 
