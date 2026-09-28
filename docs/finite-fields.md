@@ -40,7 +40,7 @@ $$
 \mathbb{F}\_{p^n}\cong \mathbb{F}\_p[x]/(f),\qquad [\mathbb{F}\_{p^n}:\mathbb{F}\_p]=n
 $$
 
-$\mathbb{F}\_q$ 의 곱셈군을 생성하는 원소를 원시근(primitive element) 또는 generator라 한다.
+$\mathbb{F}\_q$ 의 곱셈군을 생성하는 원소를 원시근(primitive element) 또는 generator 라 한다.
 
 Frobenius 사상은 $p$ 제곱 사상이다.
 

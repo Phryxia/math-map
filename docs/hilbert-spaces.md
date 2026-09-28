@@ -91,7 +91,7 @@ $$
 \Vert c_n - c_m\Vert^2 = 2\Vert x-c_n\Vert^2 + 2\Vert x-c_m\Vert^2 - 4\Big\Vert x - \tfrac{c_n+c_m}{2}\Big\Vert^2 \le 2\Vert x-c_n\Vert^2 + 2\Vert x-c_m\Vert^2 - 4d^2
 $$
 
-를 얻는다. 볼록성으로 중점이 $\mathbb C$ 에 있어 마지막 항을 $d^2$ 이상으로 눌렀다. 우변이 0으로 가므로 점렬은 Cauchy이고, 완비성과 $\mathbb C$ 의 닫힘으로 극한이 $\mathbb C$ 안에 있다. 유일성도 같은 부등식에서 나온다. 볼록성과 완비성 둘 중 하나만 빠져도 결론은 거짓이다.
+를 얻는다. 볼록성으로 중점이 $\mathbb C$ 에 있어 마지막 항을 $d^2$ 이상으로 눌렀다. 우변이 0으로 가므로 점렬은 Cauchy 이고, 완비성과 $\mathbb C$ 의 닫힘으로 극한이 $\mathbb C$ 안에 있다. 유일성도 같은 부등식에서 나온다. 볼록성과 완비성 둘 중 하나만 빠져도 결론은 거짓이다.
 
 ## 정사영 정리와 직교분해
 

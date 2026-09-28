@@ -6,7 +6,7 @@ Lambda calculus 는 Alonzo Church 가 1930년대에 도입한 계산 모델이�
 
 이렇게 빈약한 문법이 Turing 기계와 같은 계산 능력을 갖는다는 것이 핵심 사실이다. Church 의 $\lambda$ 정의가능성, Kleene 의 일반 재귀함수, Turing 의 기계가 모두 같은 함수족을 잡아낸다는 결과가 Church–Turing 논제의 경험적 근거이며, 동시에 [계산 가능성](computability.md)의 결정불가능성 결과들이 lambda calculus 로도 그대로 옮겨진다.
 
-계산 모델로서의 의의 외에 두 가지 쓰임이 더 있다. 하나는 프로그래밍 언어의 의미론이다. 함수형 언어는 사실상 lambda calculus에 자료형과 최적화를 덧붙인 것이고, 클로저·고차함수·지연 평가의 의미가 여기서 정의된다. 다른 하나는 증명론이다. 단순 타입을 붙이면 항이 증명, 타입이 명제가 되는 Curry–Howard 대응이 나타나고, 이때 계산 능력은 떨어지지만 모든 계산이 반드시 끝난다.
+계산 모델로서의 의의 외에 두 가지 쓰임이 더 있다. 하나는 프로그래밍 언어의 의미론이다. 함수형 언어는 사실상 lambda calculus 에 자료형과 최적화를 덧붙인 것이고, 클로저·고차함수·지연 평가의 의미가 여기서 정의된다. 다른 하나는 증명론이다. 단순 타입을 붙이면 항이 증명, 타입이 명제가 되는 Curry–Howard 대응이 나타나고, 이때 계산 능력은 떨어지지만 모든 계산이 반드시 끝난다.
 
 # 직관
 
@@ -30,7 +30,7 @@ $$
 
 $x$ 는 변수, $\lambda x.\thinspace M$ 은 추상, $M\thinspace N$ 은 적용이다. 관례적으로 적용은 왼쪽 결합이어서 $M\thinspace N\thinspace P$ 는 $(M\thinspace N)\thinspace P$ 이고, 추상의 본체는 최대한 오른쪽으로 뻗어서 $\lambda x.\thinspace M\thinspace N$ 은 $\lambda x.\thinspace (M\thinspace N)$ 이다.
 
-자유변수 집합은 $\mathrm{FV}(x) = \lbrace x\rbrace$ 와 $\mathrm{FV}(\lambda x.\thinspace M) = \mathrm{FV}(M) \setminus \lbrace x\rbrace$ 와 $\mathrm{FV}(M\thinspace N) = \mathrm{FV}(M) \cup \mathrm{FV}(N)$ 로 정의한다. 자유변수가 없는 항을 닫힌 항 또는 combinator라 한다.
+자유변수 집합은 $\mathrm{FV}(x) = \lbrace x\rbrace$ 와 $\mathrm{FV}(\lambda x.\thinspace M) = \mathrm{FV}(M) \setminus \lbrace x\rbrace$ 와 $\mathrm{FV}(M\thinspace N) = \mathrm{FV}(M) \cup \mathrm{FV}(N)$ 로 정의한다. 자유변수가 없는 항을 닫힌 항 또는 combinator 라 한다.
 
 ## 세 가지 변환
 
@@ -158,7 +158,7 @@ flowchart TD
 
 ## 관련 개념과의 경계
 
-- **combinator 논리.** 변수 속박을 없애고 $S = \lambda x.\lambda y.\lambda z.\thinspace x\thinspace z\thinspace(y\thinspace z)$ 와 $K = \lambda x.\lambda y.\thinspace x$ 두 combinator만으로 같은 계산 능력을 얻는다. 변수 이름 처리를 피하려는 구현에서 쓰인다.
+- **combinator 논리.** 변수 속박을 없애고 $S = \lambda x.\lambda y.\lambda z.\thinspace x\thinspace z\thinspace(y\thinspace z)$ 와 $K = \lambda x.\lambda y.\thinspace x$ 두 combinator 만으로 같은 계산 능력을 얻는다. 변수 이름 처리를 피하려는 구현에서 쓰인다.
 - **계산 복잡도.** lambda calculus 는 계산 가능성을 논하기에는 좋지만 비용 모델이 자명하지 않다. 축약 단계 수와 실제 시간의 관계는 별도 연구 주제이며, 여기서의 결과들은 계산 가능성의 층위이지 [NP-완전성](np-completeness.md)(nondeterministic polynomial time)의 층위가 아니다.
 - **논리와의 관계.** Church 는 원래 lambda calculus 를 수학의 기초 체계로 제안했으나 초기 체계가 Kleene–Rosser 역설로 무너졌고, 계산 부분만 떼어낸 것이 오늘날의 형태다. 이 경험이 타입 도입의 동기가 되었으며, 그 연장선에서 [Gödel 불완전성 정리](godel-incompleteness.md)와 같은 계열의 자기 지시 현상이 고정점 combinator 로 나타난다.
 

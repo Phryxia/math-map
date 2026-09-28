@@ -49,7 +49,7 @@ $$
 \langle C,P\rangle-\varepsilon H(P)=\varepsilon\thinspace\mathrm{KL}(P\thinspace\Vert\thinspace K)+\text{상수}
 $$
 
-이므로 엔트로피 정규화 최적 수송은 $K$ 에 KL divergence으로 가장 가까운 결합을 찾는 문제다. 제약 집합은 아핀집합 두 개의 교집합이다.
+이므로 엔트로피 정규화 최적 수송은 $K$ 에 KL divergence 으로 가장 가까운 결합을 찾는 문제다. 제약 집합은 아핀집합 두 개의 교집합이다.
 
 $$
 \mathcal C_1=\lbrace P:P\mathbf 1=a\rbrace,\qquad \mathcal C_2=\lbrace P:P^\top\mathbf 1=b\rbrace

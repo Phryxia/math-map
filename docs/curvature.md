@@ -71,7 +71,7 @@ $$
 
 ## Theorema Egregium
 
-Gauss 곡률은 first fundamental form과 그 편도함수만으로 표현된다. 즉 $K$ 는 곡면의 내재적(intrinsic) 양이며, 주변 공간에 어떻게 매장되었는지에 의존하지 않는다[^2]. 직교 매개화( $F=0$ )에서는 다음 형태가 된다.
+Gauss 곡률은 first fundamental form 과 그 편도함수만으로 표현된다. 즉 $K$ 는 곡면의 내재적(intrinsic) 양이며, 주변 공간에 어떻게 매장되었는지에 의존하지 않는다[^2]. 직교 매개화( $F=0$ )에서는 다음 형태가 된다.
 
 $$
 K=-\frac{1}{2\sqrt{EG}}\left[\frac{\partial}{\partial u}\negthinspace\left(\frac{G_u}{\sqrt{EG}}\right)+\frac{\partial}{\partial v}\negthinspace\left(\frac{E_v}{\sqrt{EG}}\right)\right]

@@ -89,7 +89,7 @@ $a$ 와 $b$ 가 $x$ 에 대해 Lipschitz 이고 선형 증가 조건을 만족�
 
 기하 Brown 운동의 해에 나오는 $-\sigma^2/2$ 가 Itô 보정이다. 고전적 미적분으로 풀면 이 항이 없고, 그 차이 때문에 기댓값과 중앙값이 갈라진다. $\mathbb{E}[S_t] = S_0 e^{\mu t}$ 이지만 $\log S_t$ 의 평균은 $\log S_0 + (\mu - \sigma^2/2)t$ 다.
 
-## 지수 martingale과 측도변환
+## 지수 martingale 과 측도변환
 
 $M_t = \exp(\int \theta\thinspace dB - \tfrac12 \int \theta^2\thinspace ds)$ 는 Novikov 조건에서 martingale 이고, 이것을 밀도로 삼아 확률측도를 바꾸면 Brown 운동에 표류를 더하거나 뺄 수 있다. 이것이 Girsanov 정리이고, [측도변환](change-of-measure.md)의 밀도 변경을 연속시간 과정으로 옮긴 것이다. 금융의 위험중립측도가 이 기술로 만들어진다.
 

@@ -80,7 +80,7 @@ $$
 
 - 정수환 $\mathbb{Z}$ 는 정역이지만 $2$ 가 가역이 아니므로 체가 아니다.
 - $\mathbb{Z}/6\mathbb{Z}$ 는 $2\cdot 3=0$ 이므로 정역조차 아니다. 반면 $\mathbb{Z}/5\mathbb{Z}$ 는 체다.
-- 2차 정사각행렬 전체에는 가역이 아닌 $0$ 아닌 행렬이 있고 가환도 아니다. 나눗셈은 가능하지만 비가환인 구조는 division ring이라 부르며, 사원수체(quaternion)가 대표적이다.
+- 2차 정사각행렬 전체에는 가역이 아닌 $0$ 아닌 행렬이 있고 가환도 아니다. 나눗셈은 가능하지만 비가환인 구조는 division ring 이라 부르며, 사원수체(quaternion)가 대표적이다.
 
 # 활용
 
@@ -96,7 +96,7 @@ $$
 (x+y)^p=x^p+y^p \quad\text{in } \mathrm{char}p
 $$
 
-이 사상이 Frobenius endomorphism이며 유한체와 [Galois 이론](galois-theory.md)의 핵심 도구가 된다. 표수 0에서는 이런 항등식이 성립하지 않으므로, 표수 0과 표수 $p$ 의 이론은 미분·분리성(separability) 층위에서 갈라진다.
+이 사상이 Frobenius endomorphism 이며 유한체와 [Galois 이론](galois-theory.md)의 핵심 도구가 된다. 표수 0에서는 이런 항등식이 성립하지 않으므로, 표수 0과 표수 $p$ 의 이론은 미분·분리성(separability) 층위에서 갈라진다.
 
 ## 다항식과 확대
 

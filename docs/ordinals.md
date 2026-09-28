@@ -38,7 +38,7 @@ $$
 
 ## 폰 노이만 서수
 
-서수는 transitive이고 원소 관계로 정렬된 집합이다[^1].
+서수는 transitive 이고 원소 관계로 정렬된 집합이다[^1].
 
 $$
 \mathrm{Ord}(\alpha)\ :\iff\ \alpha \text{ 는 transitive}\ \wedge\ (\alpha,\in) \text{ 는 정렬순서}
@@ -146,7 +146,7 @@ $\varepsilon_0$ 는 가산 서수다. Gentzen 은 Peano 산술의 무모순성�
 
 ## 계산 예제
 
-Cantor normal form으로 서수를 표현하면 덧셈을 기계적으로 계산할 수 있다. 다음은 항 목록 표현으로 왼쪽 서수의 작은 항들을 잘라내는 규칙이다.
+Cantor normal form 으로 서수를 표현하면 덧셈을 기계적으로 계산할 수 있다. 다음은 항 목록 표현으로 왼쪽 서수의 작은 항들을 잘라내는 규칙이다.
 
 $$
 (\omega^2\cdot 3+\omega\cdot 5+7)+(\omega\cdot 2+1)=\omega^2\cdot 3+\omega\cdot 7+1

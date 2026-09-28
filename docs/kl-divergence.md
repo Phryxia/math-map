@@ -36,7 +36,7 @@ $$
 D(P\thinspace\Vert\thinspace Q) = \int \log\negthinspace\left(\frac{dP}{dQ}\right) dP ,
 $$
 
-단 $P$ 가 $Q$ 에 대해 절대연속일 때만 유한할 수 있다. 로그의 밑이 2면 단위는 비트, 자연로그면 nat이다.[^1] **상대엔트로피**가 같은 양의 다른 이름이다.
+단 $P$ 가 $Q$ 에 대해 절대연속일 때만 유한할 수 있다. 로그의 밑이 2면 단위는 비트, 자연로그면 nat 이다.[^1] **상대엔트로피**가 같은 양의 다른 이름이다.
 
 ## 조건부 divergence 와 연쇄법칙
 
@@ -104,7 +104,7 @@ $$
 
 이므로 삼각부등식도 성립하지 않는다. KL divergence 는 metric 이 아니므로 거리라 부르지 않는다. 남는 구조는 다음 셋이다.
 
-- 대칭화한 Jensen–Shannon divergence 의 제곱근은 실제로 metric이다.
+- 대칭화한 Jensen–Shannon divergence 의 제곱근은 실제로 metric 이다.
 - Pinsker 부등식이 총변동거리를 위에서 눌러 준다.[^2]
 
 $$

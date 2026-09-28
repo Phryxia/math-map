@@ -100,7 +100,7 @@ $$
 
 ## 다항식 형태
 
-$K$ 가 체이고 서로 다른 점 $c_1,\dots,c_k$ 에 대해 아이디얼 $(X-c_i)$ 는 쌍마다 comaximal이다. 따라서
+$K$ 가 체이고 서로 다른 점 $c_1,\dots,c_k$ 에 대해 아이디얼 $(X-c_i)$ 는 쌍마다 comaximal 이다. 따라서
 
 $$
 K[X]/\big((X-c_1)\cdots(X-c_k)\big)\ \cong\ \prod_{i=1}^{k} K

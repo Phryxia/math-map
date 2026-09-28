@@ -56,7 +56,7 @@ graph TD
 
 ## Preferred path 분해
 
-각 정점은 자식 중 하나를 **preferred child**로 가질 수 있다(없을 수도 있다). 그 간선을 preferred edge라 하고, preferred edge들의 극대 사슬을 **preferred path**라 한다. 정의상 preferred path들은 정점을 서로소로 분할한다.
+각 정점은 자식 중 하나를 **preferred child**로 가질 수 있다(없을 수도 있다). 그 간선을 preferred edge 라 하고, preferred edge들의 극대 사슬을 **preferred path**라 한다. 정의상 preferred path들은 정점을 서로소로 분할한다.
 
 `access(v)`가 실행되면 뿌리에서 $v$ 까지의 모든 간선이 preferred 가 되고, $v$ 아래쪽의 preferred child 는 해제된다. 즉 preferred 분해는 접근 이력에 따라 계속 바뀐다.
 
@@ -98,12 +98,12 @@ $$
 
 증명은 두 부분으로 나뉜다.
 
-**(1) preferred child 변경 횟수.** 정적 heavy-light 논법을 동적으로 옮긴다. 부분트리 크기가 부모의 절반을 넘는 자식으로 가는 간선을 heavy, 나머지를 light라 하면 어떤 뿌리-정점 경로에도 light 간선은 $O(\log n)$ 개다.
+**(1) preferred child 변경 횟수.** 정적 heavy-light 논법을 동적으로 옮긴다. 부분트리 크기가 부모의 절반을 넘는 자식으로 가는 간선을 heavy, 나머지를 light 라 하면 어떤 뿌리-정점 경로에도 light 간선은 $O(\log n)$ 개다.
 
 - 한 번의 `access`에서 preferred child 가 바뀌는 횟수를 센다. light 간선이 preferred 가 되는 경우는 경로당 $O(\log n)$ 번뿐이다.
 - heavy 간선이 preferred 가 되는 경우는 잠재함수 논법으로 상쇄한다. "preferred 가 아닌 heavy 간선의 개수"를 잠재함수로 두면, heavy 간선이 preferred 가 될 때마다 잠재가 1 줄고, 잠재가 늘어나는 것은 light 간선이 preferred 가 되는 순간(경로당 $O(\log n)$ 번)과 `link`/`cut`으로 트리 모양이 바뀌는 순간뿐이다.
 
-결론적으로 $m$ 번의 access에서 preferred child 변경의 총합은 $O((n+m)\log n)$ 이다.
+결론적으로 $m$ 번의 access 에서 preferred child 변경의 총합은 $O((n+m)\log n)$ 이다.
 
 **(2) splay 의 비용.** 각 변경은 splay 한 번에 대응한다. splay 트리의 접근 정리(access lemma)에 따라 크기 $k$ 의 splay 트리에서 splay 한 번의 분할상환 비용은 $O(\log k)$ 이며, 여러 splay 트리를 오가는 경우에도 전체 정점 수를 가중치로 삼는 잠재함수를 쓰면 각 splay 가 $O(\log n)$ 으로 묶인다. 이 잠재함수 분석이 Sleator–Tarjan 의 것이다[^1].
 

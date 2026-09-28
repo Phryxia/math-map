@@ -2,7 +2,7 @@
 
 # 개요
 
-상미분방정식(ordinary differential equation, ODE)은 한 개의 독립변수에 대한 미지함수와 그 도함수들 사이의 관계식이다. 해를 구하는 문제는 보통 한 시점의 값을 지정한 초깃값 문제(initial value problem)로 주어지며, 이때 가장 기본적인 질문은 "해가 존재하는가, 유일한가, 얼마나 오래 존재하는가"다. Picard–Lindelöf 정리는 우변이 연속이고 상태변수에 대해 Lipschitz이면 국소적으로 유일한 해가 존재함을 보장하고, 그 증명은 적분방정식을 [축약사상 고정점 정리](banach-fixed-point.md)로 푸는 것이다. 대부분의 방정식은 닫힌 형태의 해를 갖지 않으므로, 실제 관심은 해의 정성적 거동(평형점, 안정성)과 수치적 근사에 있다.
+상미분방정식(ordinary differential equation, ODE)은 한 개의 독립변수에 대한 미지함수와 그 도함수들 사이의 관계식이다. 해를 구하는 문제는 보통 한 시점의 값을 지정한 초깃값 문제(initial value problem)로 주어지며, 이때 가장 기본적인 질문은 "해가 존재하는가, 유일한가, 얼마나 오래 존재하는가"다. Picard–Lindelöf 정리는 우변이 연속이고 상태변수에 대해 Lipschitz 이면 국소적으로 유일한 해가 존재함을 보장하고, 그 증명은 적분방정식을 [축약사상 고정점 정리](banach-fixed-point.md)로 푸는 것이다. 대부분의 방정식은 닫힌 형태의 해를 갖지 않으므로, 실제 관심은 해의 정성적 거동(평형점, 안정성)과 수치적 근사에 있다.
 
 # 직관
 
@@ -22,7 +22,7 @@ $$
 
 고차 방정식은 도함수를 새 변수로 두어 이 형태로 환원한다. $f$ 가 $t$ 에 명시적으로 의존하지 않으면 자율(autonomous) 방정식이라 한다.
 
-$f$ 가 $x$ 에 대해 Lipschitz라는 것은 다음을 만족하는 상수 $K$ 가 있다는 뜻이다.
+$f$ 가 $x$ 에 대해 Lipschitz 라는 것은 다음을 만족하는 상수 $K$ 가 있다는 뜻이다.
 
 $$
 \left\lVert f(t,x)-f(t,y)\right\rVert\le K\left\lVert x-y\right\rVert
@@ -46,7 +46,7 @@ $$
 
 ## Picard–Lindelöf 정리
 
-$f$ 가 초기점의 근방에서 연속이고 $x$ 에 대해 Lipschitz이면, 어떤 양수 $\varepsilon$ 에 대해 구간 $[t_0-\varepsilon,\thinspace t_0+\varepsilon]$ 에서 초깃값 문제의 해가 존재하고 유일하다[^1].
+$f$ 가 초기점의 근방에서 연속이고 $x$ 에 대해 Lipschitz 이면, 어떤 양수 $\varepsilon$ 에 대해 구간 $[t_0-\varepsilon,\thinspace t_0+\varepsilon]$ 에서 초깃값 문제의 해가 존재하고 유일하다[^1].
 
 증명 개요: $M$ 을 근방에서 $f$ 의 노름 상한, $K$ 를 Lipschitz 상수라 하자. 초깃값 중심 폐구 안에 머무는 연속함수들의 집합은 [sup 노름](banach-spaces.md)에서 [완비](completeness.md)이며, $\varepsilon$ 을 충분히 작게 잡으면 $T$ 가 이 집합을 자기 자신으로 보낸다(적분의 크기가 $M\varepsilon$ 이하이기 때문). 두 함수 $x$ , $y$ 에 대해 Lipschitz 조건을 적분에 넣으면 다음을 얻는다.
 
