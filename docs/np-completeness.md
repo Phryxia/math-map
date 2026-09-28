@@ -45,7 +45,7 @@ $$
 - 어떤 NP-complete 문제가 $\mathrm P$ 에 속하면 $\mathrm P=\mathrm{NP}$ 다.
 - $\mathrm P \ne \mathrm{NP}$ 이면 어떤 NP-complete 문제도 다항시간 알고리즘을 갖지 않는다.
 
-NP-hard는 $\mathrm{NP}$ 안에 있을 필요가 없다. 정지 문제는 NP-hard이지만 결정가능조차 하지 않다([계산 가능성](computability.md)). 최적화 버전(예: 최소 정점덮개의 크기 구하기)도 보통 NP-hard이지만 판정 문제가 아니므로 NP-complete라 부르지 않는다.
+NP-hard 는 $\mathrm{NP}$ 안에 있을 필요가 없다. 정지 문제는 NP-hard 이지만 결정가능조차 하지 않다([계산 가능성](computability.md)). 최적화 버전(예: 최소 정점덮개의 크기 구하기)도 보통 NP-hard 이지만 판정 문제가 아니므로 NP-complete 라 부르지 않는다.
 
 ## SAT 과 3SAT
 
@@ -135,7 +135,7 @@ $G$ 의 정점 집합 $S$ 가 클릭인 것과, 여그래프 $G'$ (같은 정점
 
 의미하지 않는 것.
 
-- 실무에서 풀 수 없다는 뜻이 아니다. 현대 SAT solver는 수백만 변수의 산업 인스턴스를 일상적으로 처리한다. 최악의 경우 지수 시간이라는 사실과 실제 인스턴스의 난이도는 별개다.
+- 실무에서 풀 수 없다는 뜻이 아니다. 현대 SAT solver 는 수백만 변수의 산업 인스턴스를 일상적으로 처리한다. 최악의 경우 지수 시간이라는 사실과 실제 인스턴스의 난이도는 별개다.
 - 모든 인스턴스가 어렵다는 뜻이 아니다. 특수한 입력 구조(트리 너비가 작은 그래프, 이분 그래프 등)에서는 다항시간에 풀리는 경우가 많다.
 - 근사도 어렵다는 뜻이 아니다. 근사 난이도는 별도의 이론이 필요하다. PCP(probabilistically checkable proof) 정리가 그것이고, 같은 NP-완전 문제라도 근사 가능성은 천차만별이다.
 - $\mathrm{NP}$ 에 속하는 모든 문제가 NP-완전은 아니다. $\mathrm P\ne\mathrm{NP}$ 라면 Ladner 정리로 두 부류 어디에도 속하지 않는 NP-중간(NP-intermediate) 문제가 존재한다. [그래프 동형](graph-isomorphism.md) 문제와 소인수분해([RSA 암호](rsa-cryptosystem.md)의 기반)가 그런 후보로 거론된다.

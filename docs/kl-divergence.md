@@ -2,7 +2,7 @@
 
 # 개요
 
-Kullback–Leibler divergence는 두 확률분포가 얼마나 다른지를 재는 양이다. 거리는 아니지만, "참 분포가 $P$ 인데 $Q$ 라고 믿고 부호화할 때 낭비되는 평균 비트 수"라는 해석 덕분에 [Shannon 엔트로피](entropy.md)의 자연스러운 상대 버전이 된다.
+Kullback–Leibler divergence 는 두 확률분포가 얼마나 다른지를 재는 양이다. 거리는 아니지만, "참 분포가 $P$ 인데 $Q$ 라고 믿고 부호화할 때 낭비되는 평균 비트 수"라는 해석 덕분에 [Shannon 엔트로피](entropy.md)의 자연스러운 상대 버전이 된다.
 
 상호정보량은 결합분포와 주변분포의 곱 사이의 KL(Kullback–Leibler) divergence다. 두 [확률변수](random-variables.md)가 서로에 대해 알려 주는 정보의 양이며, 독립성으로부터의 이탈을 정량화한다. 선형 상관과 달리 어떤 형태의 의존성이든 잡아내고, 0이 되는 것과 독립인 것이 정확히 동치다.
 
@@ -111,7 +111,7 @@ $$
 \Vert P - Q\Vert_{TV} \le \sqrt{\tfrac{1}{2} D(P\thinspace\Vert\thinspace Q)} .
 $$
 
-- KL divergence는 음의 엔트로피를 생성함수로 하는 Bregman divergence이며, 가까운 두 분포에 대해서는 이차 근사가 Fisher 정보 행렬로 주어진다.
+- KL divergence 는 음의 엔트로피를 생성함수로 하는 Bregman divergence 이며, 가까운 두 분포에 대해서는 이차 근사가 Fisher 정보 행렬로 주어진다.
 
 $$
 D(P_{\theta}\thinspace\Vert\thinspace P_{\theta+\delta}) = \tfrac{1}{2}\thinspace\delta^{\top} I(\theta)\thinspace \delta + o(\Vert\delta\Vert^2).

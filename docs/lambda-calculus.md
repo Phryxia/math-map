@@ -154,13 +154,13 @@ flowchart TD
 - **클로저와 고차함수.** 자유변수를 담은 환경과 함께 함수를 값으로 다루는 구현이 곧 $\lambda$ 추상의 기계적 실현이다. 주류 명령형 언어의 람다/클로저 기능도 같은 기원이다.
 - **평가 전략의 설계.** 지연 평가는 정규 순서의 공학적 구현(그래프 축약, thunk)이고, 엄격 평가는 값 호출이다. 두 전략의 종료성 차이가 그대로 언어 설계의 절충으로 나타난다.
 - **증명 보조 도구.** 의존 타입 체계(Calculus of Constructions 등)는 STLC 를 확장한 것이며, 정리 증명은 타입이 붙은 항을 구성하는 일이다. 강한 정규화가 논리적 무모순성과 직결된다.
-- **대수적 관점.** 항을 대상으로, 축약을 사상으로 보면 lambda calculus는 데카르트 닫힌 [범주](category.md)의 내부 언어로 해석된다. 타입은 대상, 항은 사상, 함수 타입은 지수 대상이다.
+- **대수적 관점.** 항을 대상으로, 축약을 사상으로 보면 lambda calculus 는 데카르트 닫힌 [범주](category.md)의 내부 언어로 해석된다. 타입은 대상, 항은 사상, 함수 타입은 지수 대상이다.
 
 ## 관련 개념과의 경계
 
 - **combinator 논리.** 변수 속박을 없애고 $S = \lambda x.\lambda y.\lambda z.\thinspace x\thinspace z\thinspace(y\thinspace z)$ 와 $K = \lambda x.\lambda y.\thinspace x$ 두 combinator만으로 같은 계산 능력을 얻는다. 변수 이름 처리를 피하려는 구현에서 쓰인다.
-- **계산 복잡도.** lambda calculus는 계산 가능성을 논하기에는 좋지만 비용 모델이 자명하지 않다. 축약 단계 수와 실제 시간의 관계는 별도 연구 주제이며, 여기서의 결과들은 계산 가능성의 층위이지 [NP-완전성](np-completeness.md)(nondeterministic polynomial time)의 층위가 아니다.
-- **논리와의 관계.** Church는 원래 lambda calculus를 수학의 기초 체계로 제안했으나 초기 체계가 Kleene–Rosser 역설로 무너졌고, 계산 부분만 떼어낸 것이 오늘날의 형태다. 이 경험이 타입 도입의 동기가 되었으며, 그 연장선에서 [Gödel 불완전성 정리](godel-incompleteness.md)와 같은 계열의 자기 지시 현상이 고정점 combinator로 나타난다.
+- **계산 복잡도.** lambda calculus 는 계산 가능성을 논하기에는 좋지만 비용 모델이 자명하지 않다. 축약 단계 수와 실제 시간의 관계는 별도 연구 주제이며, 여기서의 결과들은 계산 가능성의 층위이지 [NP-완전성](np-completeness.md)(nondeterministic polynomial time)의 층위가 아니다.
+- **논리와의 관계.** Church 는 원래 lambda calculus 를 수학의 기초 체계로 제안했으나 초기 체계가 Kleene–Rosser 역설로 무너졌고, 계산 부분만 떼어낸 것이 오늘날의 형태다. 이 경험이 타입 도입의 동기가 되었으며, 그 연장선에서 [Gödel 불완전성 정리](godel-incompleteness.md)와 같은 계열의 자기 지시 현상이 고정점 combinator 로 나타난다.
 
 [^1]: A. M. Turing, Computability and λ-Definability, Journal of Symbolic Logic 2(4), 1937, https://www.jstor.org/stable/2268280
 [^2]: H. Barendregt, The Lambda Calculus: Its Syntax and Semantics, North-Holland, 1984, https://archive.org/details/lambdacalculusit0000bare

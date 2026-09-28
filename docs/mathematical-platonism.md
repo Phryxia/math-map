@@ -28,7 +28,7 @@ $$
 \textbf{Independence:}\quad \forall x \in M\ (\text{존재와 성질이 인간의 언어·사고·관행에 의존하지 않는다})
 $$
 
-세 주장을 모두 받아들이면 플라톤주의, Existence를 부정하면 유명론(nominalism), Independence를 약화시키면 여러 형태의 구성주의 · 관념론이 된다. 대상 대신 구조만을 일차적 실재로 보는 입장이 ante rem 구조주의이고, Abstractness와 Independence는 유지한다.
+세 주장을 모두 받아들이면 플라톤주의, Existence 를 부정하면 유명론(nominalism), Independence 를 약화시키면 여러 형태의 구성주의 · 관념론이 된다. 대상 대신 구조만을 일차적 실재로 보는 입장이 ante rem 구조주의이고, Abstractness 와 Independence 는 유지한다.
 
 전통적 플라톤주의는 여기에 대상 실재론(object realism), 곧 $M$ 의 원소가 집합이나 수 같은 개별 대상이라는 주장을 더한다. plenitudinous(full-blooded) 플라톤주의는 무모순적인 어떤 수학적 이론이든 그것이 기술하는 대상 영역이 존재한다고 본다.
 

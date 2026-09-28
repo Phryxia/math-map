@@ -36,7 +36,7 @@ $$
 \chi(K)=\sum_{n\ge 0}(-1)^{n}\beta_n
 $$
 
-오른쪽이 쪼개는 방식에 의존하지 않으므로 이 등식이 왼쪽의 불변성을 준다. 증명은 각 차원에서 rank를 세는 계산이다. $m_n$ 은 $n$ -사슬군의 rank이고 rank는 핵과 상으로 분해되므로
+오른쪽이 쪼개는 방식에 의존하지 않으므로 이 등식이 왼쪽의 불변성을 준다. 증명은 각 차원에서 rank 를 세는 계산이다. $m_n$ 은 $n$ -사슬군의 rank 이고 rank 는 핵과 상으로 분해되므로
 
 $$
 m_n=\mathrm{rank}\ker\partial_n+\mathrm{rank}\mathrm{im}\partial_n,\qquad

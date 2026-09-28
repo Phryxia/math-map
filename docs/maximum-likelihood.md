@@ -20,7 +20,7 @@ L(\theta)=\prod_{i=1}^{n} f(x_i;\theta),
 \ell(\theta)=\log L(\theta)=\sum_{i=1}^{n}\log f(x_i;\theta)
 $$
 
-최대가능도 추정량은 로그가능도를 최대화하는 점이다. 존재하지 않거나 유일하지 않을 수 있으므로 argmax는 집합으로 이해한다.
+최대가능도 추정량은 로그가능도를 최대화하는 점이다. 존재하지 않거나 유일하지 않을 수 있으므로 argmax 는 집합으로 이해한다.
 
 $$
 \hat\theta=\mathop{\mathrm{arg\thinspace max}}\_{\theta\in\Theta}\ \ell(\theta)
@@ -81,7 +81,7 @@ $$
 =-H(\theta_0)-D_{\mathrm{KL}}\negthinspace\left(f_{\theta_0}\thinspace\Vert\thinspace f_\theta\right)
 $$
 
-Kullback–Leibler divergence는 음이 아니고 두 분포가 같을 때만 $0$ 이므로, 극한 목적함수는 $\theta_0$ 에서 유일하게 최대다. 여기에 최대점의 수렴을 보장하는 [균등수렴](uniform-convergence.md) 조건을 더하면 일치성이 나온다. MLE 가 사실상 KL(Kullback–Leibler) divergence를 최소화하고 있다는 이 해석은 [Shannon 엔트로피](entropy.md)와 직접 연결된다.
+Kullback–Leibler divergence 는 음이 아니고 두 분포가 같을 때만 $0$ 이므로, 극한 목적함수는 $\theta_0$ 에서 유일하게 최대다. 여기에 최대점의 수렴을 보장하는 [균등수렴](uniform-convergence.md) 조건을 더하면 일치성이 나온다. MLE 가 사실상 KL(Kullback–Leibler) divergence 를 최소화하고 있다는 이 해석은 [Shannon 엔트로피](entropy.md)와 직접 연결된다.
 
 ## 점근정규성
 
