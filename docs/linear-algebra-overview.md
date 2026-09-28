@@ -53,6 +53,7 @@ graph TD
 - [완전 근사 저장](full-approximation-scheme.md): 비선형 방정식의 다중격자, 성긴 격자가 오차 대신 해 전체를 풀고 tau 보정이 두 격자의 이산화 차이를 메우는 것
 - [Fourier 국소 해석](local-fourier-analysis.md): 격자 모드마다 반복의 증폭률을 계산해 평활률과 수렴률을 예측하는 방법
 - [선 완화](line-relaxation.md): 비등방 스텐실에서 점 완화의 평활률이 $1$ 로 가는 계산, 강한 결합 방향의 줄을 동시에 푸는 평활자
+- [반좌표 성긴화](semicoarsening.md): 한 방향만 성기게 하는 격자 계층, 격자 계층의 크기와 선 완화와의 비교
 - [대수적 다중격자](algebraic-multigrid.md): 행렬 계수에서 읽은 강한 연결로 성긴 단계를 만드는 방법, C/F 분할과 Galerkin 곱
 - [평활 응집](smoothed-aggregation.md): 변수를 덩어리로 묶고 지시벡터를 완화해 보간을 만드는 방법, 영에너지 모드의 보존
 - [영역 분할법](domain-decomposition.md): 부분영역마다 작은 계를 풀어 더하는 가법 Schwarz, 성긴 공간이 주는 조건수 상한

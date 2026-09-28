@@ -120,6 +120,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [반좌표 성긴화](semicoarsening.md)
 
 #linear_algebra #algorithms #computation
