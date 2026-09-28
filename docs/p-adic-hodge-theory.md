@@ -223,7 +223,7 @@ $$
 
 세 화살표 모두 역이 성립하지 않는다.
 
-- 반안정이지만 결정적이 아닌 예: Tate 곡선 $E_q$ 의 $V_p(E_q)$ 가 $N\ne0$ 이다.
+- 반안정이지만 결정적이 아닌 예: [Tate 곡선](tate-curve.md) $E_q$ 의 $V_p(E_q)$ 가 $N\ne0$ 이다.
 - de Rham 이지만 반안정이 아닌 예: 잠재적으로만 좋은 환원을 갖는 곡선. $K$ 의 유한확대로 올라가면 반안정이 된다.
 - Hodge–Tate 이지만 de Rham 이 아닌 예: $\mathbb Q_p\oplus\mathbb Q_p(1)$ 의 비자명한 확대 가운데 $H^1_g$ 밖에 놓인 것. $\mathbb C_p$ 로 올리면 분해되지만 $B_{\mathrm{dR}}$ 로 올려도 분해되지 않는다. $H^1(G_K,\mathbb Q_p(1))$ 이 $K^\times$ 의 완비화이므로 이런 확대가 많다.
 

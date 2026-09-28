@@ -91,7 +91,7 @@ $$
 
 $p$ 가 $E$ 에서 split multiplicative 환원이면 $a_p=1$ 이고 $\alpha=1$ 이다. 보간 공식의 인자 $(1-\alpha^{-1})^2$ 이 $0$ 이므로 $L(E,1)\neq0$ 이어도 $L_p(E,1)=0$ 이다. 복소 쪽과 $p$ 진 쪽의 영점 차수가 어긋난다.
 
-Mazur, Tate, Teitelbaum 이 이 자리를 메우는 불변량을 도입했다[^2]. $q_E\in p\mathbb Z_p$ 를 $E$ 의 Tate 주기라 할 때 다음이 $\mathcal L$ 불변량이다.
+Mazur, Tate, Teitelbaum 이 이 자리를 메우는 불변량을 도입했다[^2]. $q_E\in p\mathbb Z_p$ 를 $E$ 의 [Tate 주기](tate-curve.md)라 할 때 다음이 $\mathcal L$ 불변량이다.
 
 $$
 \mathcal L(E)=\frac{\log_p q_E}{\mathrm{ord}\_p\thinspace q_E}

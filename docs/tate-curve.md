@@ -12,7 +12,7 @@ $$
 
 분해 곱셈적 환원을 갖는 $E/K$ 는 어떤 $q$ 에 대한 Tate 곡선이고, 그 $q$ 를 **Tate 주기**라 한다. $j$ 불변량이 $j=q^{-1}+744+196884\thinspace q+\cdots$ 이므로 $|j|\gt1$ 에서 $q$ 가 유일하게 정해진다.
 
-$p$ 진 $L$ 함수의 예외적 영점에 나타나는 $L$ 불변량 $\mathcal L=\log_p(q)/\mathrm{ord}\_p(q)$ 가 이 주기에서 나온다.
+$p$ 진 $L$ 함수의 예외적 영점에 나타나는 $\mathcal L$ 불변량 $\mathcal L=\log_p(q)/\mathrm{ord}\_p(q)$ 가 이 주기에서 나온다.
 
 # 직관
 
@@ -97,13 +97,13 @@ $$
 
 꼴이고 $\chi$ 는 원분 지표다. $\ast$ 는 $q$ 의 Kummer 코사이클이며, $q$ 가 $\ell$ 멱이 아니면 이 확장이 분해되지 않는다.
 
-## $L$ 불변량
+## $\mathcal L$ 불변량
 
 $$
 \mathcal L=\frac{\log_p(q_E)}{\mathrm{ord}\_p(q_E)}
 $$
 
-를 $E$ 의 $L$ 불변량이라 한다. $\log_p$ 는 Iwasawa 대수 로그다. 분모가 $j$ 의 극의 위수이므로 두 값 모두 Tate 주기에서 읽힌다.
+를 $E$ 의 $\mathcal L$ 불변량이라 한다. $\log_p$ 는 Iwasawa 대수 로그다. 분모가 $j$ 의 극의 위수이므로 두 값 모두 Tate 주기에서 읽힌다.
 
 # 활용
 
