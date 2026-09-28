@@ -21,7 +21,7 @@ Z_k(M)=\int_{\mathcal A/\mathcal G}\mathcal DA\thickspace e^{2\pi ik\thinspace\m
 \mathrm{CS}(A)=\frac1{8\pi^2}\int_M\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)
 $$
 
-측도가 정의되지 않으므로 이 식은 증명의 재료가 아니지만 큰 $k$ 에서의 형태를 지정한다. 진동적분 $\int e^{ikf}$ 의 큰 $k$ 거동은 $f$ 의 임계점이 지배하고, Chern–Simons 범함수의 변분은
+[측도](measure.md)가 정의되지 않으므로 이 식은 증명의 재료가 아니지만 큰 $k$ 에서의 형태를 지정한다. 진동적분 $\int e^{ikf}$ 의 큰 $k$ 거동은 $f$ 의 임계점이 지배하고, Chern–Simons 범함수의 변분은
 
 $$
 \delta\thinspace\mathrm{CS}(A)\propto\int\mathrm{tr}(\delta A\wedge F_A)
