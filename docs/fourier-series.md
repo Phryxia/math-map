@@ -144,7 +144,7 @@ $$
 
 ## 열방정식
 
-Fourier가 급수를 도입한 원래 문제다. 양 끝에서 온도가 0인 막대의 열전도를 생각한다.
+Fourier 가 급수를 도입한 원래 문제다. 양 끝에서 온도가 0인 막대의 열전도를 생각한다.
 
 $$
 \frac{\partial u}{\partial t} = \kappa \frac{\partial^2 u}{\partial x^2},\qquad u(0,t) = u(\pi,t) = 0,\qquad u(x,0) = f(x).

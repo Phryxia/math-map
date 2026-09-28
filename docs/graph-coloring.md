@@ -128,7 +128,7 @@ $$
 
 ## 4색 정리와 5색 정리
 
-평면 그래프는 $\chi \le 4$ 이다(Appel–Haken, 1976[^1]; Robertson–Sanders–Seymour–Thomas 의 재증명, 1997[^2]). 두 증명 모두 불가피 집합(unavoidable set)과 축약 가능 배치(reducible configuration)를 컴퓨터로 검사하는 구조이며, 사람 손으로 검증 가능한 증명은 아직 없다. Gonthier가 Coq로 형식 검증했다.
+평면 그래프는 $\chi \le 4$ 이다(Appel–Haken, 1976[^1]; Robertson–Sanders–Seymour–Thomas 의 재증명, 1997[^2]). 두 증명 모두 불가피 집합(unavoidable set)과 축약 가능 배치(reducible configuration)를 컴퓨터로 검사하는 구조이며, 사람 손으로 검증 가능한 증명은 아직 없다. Gonthier 가 Coq 로 형식 검증했다.
 
 반면 5색 정리는 한 쪽짜리 증명이 있다. 하한 쪽은 $K_4$ 가 평면이므로 4가 최적이다.
 

@@ -98,7 +98,7 @@ $$
 
 부분군이 5개(자명군, 위수 2가 세 개, 전체)이므로 중간체도 정확히 5개다. 진짜 중간체는 $\mathbb Q(\sqrt2)$ , $\mathbb Q(\sqrt3)$ , $\mathbb Q(\sqrt6)$ 뿐이다. abelian 군이므로 모든 부분군이 정규이고, 따라서 모든 중간체가 $\mathbb Q$ 위 Galois다.
 
-유한체의 경우 Galois 군이 Frobenius가 생성하는 순환군이므로 대응이 특히 단순하다.
+유한체의 경우 Galois 군이 Frobenius 가 생성하는 순환군이므로 대응이 특히 단순하다.
 
 $$
 \mathrm{Gal}(\mathbb{F}\_{p^n}/\mathbb{F}\_p)\cong\mathbb{Z}/n\mathbb{Z}

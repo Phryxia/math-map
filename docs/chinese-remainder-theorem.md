@@ -46,7 +46,7 @@ $$
 R/\big(I_1\cdots I_k\big)\thickspace=\thickspace R/\big(I_1\cap\cdots\cap I_k\big)\thickspace\cong\thickspace\prod_{i=1}^{k} R/I_i
 $$
 
-$R=\mathbb{Z}$ , $I_i=(n_i)$ 로 두면 정수 형태가 나온다. 곱이 가환이 아니어도 성립하지만, 곱과 교집합이 같다는 부분은 comaximality가 있어야 한다.
+$R=\mathbb{Z}$ , $I_i=(n_i)$ 로 두면 정수 형태가 나온다. 곱이 가환이 아니어도 성립하지만, 곱과 교집합이 같다는 부분은 comaximality 가 있어야 한다.
 
 # 성질
 

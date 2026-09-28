@@ -25,7 +25,7 @@ R[x]=\Big\lbrace\textstyle\sum_{i=0}^{n}a_ix^i \ :\ n\ge 0,\ a_i\in R\Big\rbrace
 \Big(\sum_i a_ix^i\Big)\Big(\sum_j b_jx^j\Big)=\sum_k\Big(\sum_{i+j=k}a_ib_j\Big)x^k
 $$
 
-$0$ 이 아닌 다항식 $f$ 의 차수 $\deg f$ 는 $0$ 이 아닌 최고차 계수의 지수이고, 그 계수를 leading coefficient라 한다. leading coefficient가 $1$ 인 다항식을 **monic**이라 한다. $0$ 다항식의 차수는 정의하지 않거나 음의 무한으로 둔다.
+$0$ 이 아닌 다항식 $f$ 의 차수 $\deg f$ 는 $0$ 이 아닌 최고차 계수의 지수이고, 그 계수를 leading coefficient 라 한다. leading coefficient 가 $1$ 인 다항식을 **monic**이라 한다. $0$ 다항식의 차수는 정의하지 않거나 음의 무한으로 둔다.
 
 체 $k$ 위의 $0$ 이 아닌 다항식 $f$ 가 **기약**(irreducible)이라는 것은 $\deg f \ge 1$ 이고, $f=gh$ 로 쓰면 $g$ 또는 $h$ 가 상수라는 뜻이다.
 

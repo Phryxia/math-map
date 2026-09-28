@@ -2,7 +2,7 @@
 
 # 개요
 
-Lambda calculus는 Alonzo Church가 1930년대에 도입한 계산 모델이다. 기본 대상은 오직 [함수](functions.md)뿐이고, 연산은 함수를 만드는 추상(abstraction)과 함수를 적용하는 적용(application) 둘뿐이다. 숫자, 진리값, 자료구조, 재귀는 모두 함수로 부호화된다.
+Lambda calculus 는 Alonzo Church 가 1930년대에 도입한 계산 모델이다. 기본 대상은 오직 [함수](functions.md)뿐이고, 연산은 함수를 만드는 추상(abstraction)과 함수를 적용하는 적용(application) 둘뿐이다. 숫자, 진리값, 자료구조, 재귀는 모두 함수로 부호화된다.
 
 이렇게 빈약한 문법이 Turing 기계와 같은 계산 능력을 갖는다는 것이 핵심 사실이다. Church 의 $\lambda$ 정의가능성, Kleene 의 일반 재귀함수, Turing 의 기계가 모두 같은 함수족을 잡아낸다는 결과가 Church–Turing 논제의 경험적 근거이며, 동시에 [계산 가능성](computability.md)의 결정불가능성 결과들이 lambda calculus로도 그대로 옮겨진다.
 
@@ -14,7 +14,7 @@ lambda 항은 "이름 붙이지 않은 함수"를 적는 표기법이다. $x$ �
 
 데이터를 함수로 표현하는 발상이 처음에는 낯설다. 자연수 $n$ 을 "어떤 함수를 $n$ 번 반복 적용하는 연산자"로 정의하면, 덧셈은 반복의 이어 붙이기, 곱셈은 반복의 중첩이 된다. 같은 방식으로 참/거짓은 "두 인자 중 어느 쪽을 고르는가"로, 순서쌍은 "두 성분을 받는 선택자에게 자신을 넘기는 함수"로 정의된다. 자료구조를 자신에 대한 사용법으로 정의한다.
 
-재귀는 더 미묘하다. 이름이 없으니 정의 안에서 자기를 부를 수 없다. 해결책은 "자기 자신을 인자로 받는" 항을 만들어 고정점을 취하는 것이다. Y combinator가 정확히 그 일을 한다. $Y\thinspace g$ 가 $g\thinspace(Y\thinspace g)$ 로 축약되므로 $g$ 는 자기 자신의 결과를 인자로 받아 쓸 수 있고, 이렇게 이름 없이 재귀가 생긴다. 여기에는 대가가 있다. 같은 장치가 축약이 영원히 끝나지 않는 항도 만들어 내며, 실제로 $(\lambda x.\thinspace x\thinspace x)(\lambda x.\thinspace x\thinspace x)$ 는 자기 자신으로 축약되기를 무한히 반복한다.
+재귀는 더 미묘하다. 이름이 없으니 정의 안에서 자기를 부를 수 없다. 해결책은 "자기 자신을 인자로 받는" 항을 만들어 고정점을 취하는 것이다. Y combinator 가 정확히 그 일을 한다. $Y\thinspace g$ 가 $g\thinspace(Y\thinspace g)$ 로 축약되므로 $g$ 는 자기 자신의 결과를 인자로 받아 쓸 수 있고, 이렇게 이름 없이 재귀가 생긴다. 여기에는 대가가 있다. 같은 장치가 축약이 영원히 끝나지 않는 항도 만들어 내며, 실제로 $(\lambda x.\thinspace x\thinspace x)(\lambda x.\thinspace x\thinspace x)$ 는 자기 자신으로 축약되기를 무한히 반복한다.
 
 계산 순서에는 자유도가 있다. 한 항 안에 축약 가능한 자리가 여러 개일 수 있는데, Church–Rosser 정리가 "어느 순서로 줄이든 결국 만날 수 있다"고 보장한다. 그래서 정규형은 유일하고, 계산 결과는 전략에 의존하지 않는다. 다만 정규형에 **도달하는지**는 전략에 의존한다.
 
@@ -42,7 +42,7 @@ $$
 (\lambda x.\thinspace M)\thinspace N \thickspace\to_\beta\thickspace M[x := N]
 $$
 
-여기서 치환은 포획 회피(capture-avoiding)여야 한다. 즉 $N$ 의 자유변수가 $M$ 안의 추상에 붙잡히지 않도록 필요하면 $\alpha$ -변환을 먼저 한다. $(\lambda x.\thinspace M)\thinspace N$ 꼴의 부분항을 redex라 하고, redex가 없는 항을 정규형(normal form)이라 한다.
+여기서 치환은 포획 회피(capture-avoiding)여야 한다. 즉 $N$ 의 자유변수가 $M$ 안의 추상에 붙잡히지 않도록 필요하면 $\alpha$ -변환을 먼저 한다. $(\lambda x.\thinspace M)\thinspace N$ 꼴의 부분항을 redex 라 하고, redex 가 없는 항을 정규형(normal form)이라 한다.
 
 **$\eta$ -변환.** 외연성(extensionality)을 표현한다. $x$ 가 $M$ 에서 자유롭지 않을 때
 
@@ -93,7 +93,7 @@ $$
 
 ## 축약 전략
 
-$\beta$ -축약을 적용할 수 있는 부분항을 **redex**(reducible expression)라 한다. 한 항에 redex가 여럿 있을 때 어느 것을 먼저 줄일지가 전략이다.
+$\beta$ -축약을 적용할 수 있는 부분항을 **redex**(reducible expression)라 한다. 한 항에 redex 가 여럿 있을 때 어느 것을 먼저 줄일지가 전략이다.
 
 - **정규 순서(normal order).** 가장 왼쪽 바깥쪽 redex부터. 지연 평가에 대응한다.
 - **값 호출(applicative order).** 인자를 먼저 정규형으로 만든 뒤 적용한다. 대부분의 실제 언어가 쓴다.
@@ -126,7 +126,7 @@ flowchart TD
 
 **정리 (Church, Kleene, Turing).** 함수 $f : \mathbb N^k \to \mathbb N$ 가 $\lambda$ 정의가능한 것과 Turing 계산가능한 것은 동치다. 즉 Church 수로 입출력을 부호화할 때 $F\thinspace\underline n =\_\beta \underline{f(n)}$ 인 항 $F$ 가 존재하는 것과 $f$ 를 계산하는 Turing 기계가 있는 것이 같다[^1].
 
-증명의 한쪽은 원시 재귀 도식과 최소화 연산자를 $\lambda$ 항으로 구성하는 것이고(최소화에는 고정점 combinator가 쓰인다), 다른 쪽은 $\lambda$ 항의 축약 과정을 기계로 시뮬레이션하는 것이다. 이 동치가 Church–Turing 논제의 핵심 증거다. 논제 자체는 "직관적으로 계산가능하다"는 비형식적 개념을 다루므로 수학적 정리가 아니라 경험적 주장이다.
+증명의 한쪽은 원시 재귀 도식과 최소화 연산자를 $\lambda$ 항으로 구성하는 것이고(최소화에는 고정점 combinator 가 쓰인다), 다른 쪽은 $\lambda$ 항의 축약 과정을 기계로 시뮬레이션하는 것이다. 이 동치가 Church–Turing 논제의 핵심 증거다. 논제 자체는 "직관적으로 계산가능하다"는 비형식적 개념을 다루므로 수학적 정리가 아니라 경험적 주장이다.
 
 계산 능력이 같으니 결정불가능성도 따라온다.
 

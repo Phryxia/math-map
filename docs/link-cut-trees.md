@@ -58,7 +58,7 @@ graph TD
 
 각 정점은 자식 중 하나를 **preferred child**로 가질 수 있다(없을 수도 있다). 그 간선을 preferred edge라 하고, preferred edge들의 극대 사슬을 **preferred path**라 한다. 정의상 preferred path들은 정점을 서로소로 분할한다.
 
-`access(v)`가 실행되면 뿌리에서 $v$ 까지의 모든 간선이 preferred가 되고, $v$ 아래쪽의 preferred child는 해제된다. 즉 preferred 분해는 접근 이력에 따라 계속 바뀐다.
+`access(v)`가 실행되면 뿌리에서 $v$ 까지의 모든 간선이 preferred 가 되고, $v$ 아래쪽의 preferred child 는 해제된다. 즉 preferred 분해는 접근 이력에 따라 계속 바뀐다.
 
 ## 보조 트리(splay tree) 표현
 
@@ -78,7 +78,7 @@ graph TD
 3. $v$ 의 path parent $u$ 가 있으면 $u$ 를 splay하고, $u$ 의 오른쪽 부분트리를 $v$ 의 splay 트리로 교체한다(두 경로를 잇는다). $v$ 를 $u$ 자리로 옮겨 1번부터 반복한다.
 4. 뿌리에 도달하면 마지막으로 $v$ 를 다시 splay한다.
 
-끝나면 뿌리에서 $v$ 까지가 하나의 preferred path가 되고, 그 splay 트리의 뿌리가 $v$ 다. 나머지 연산은 모두 `access`의 조합이다.
+끝나면 뿌리에서 $v$ 까지가 하나의 preferred path 가 되고, 그 splay 트리의 뿌리가 $v$ 다. 나머지 연산은 모두 `access`의 조합이다.
 
 $$
 \texttt{findroot}(v) : \ \texttt{access}(v) \ \text{후 splay 트리에서 가장 왼쪽 노드}.
@@ -100,19 +100,19 @@ $$
 
 **(1) preferred child 변경 횟수.** 정적 heavy-light 논법을 동적으로 옮긴다. 부분트리 크기가 부모의 절반을 넘는 자식으로 가는 간선을 heavy, 나머지를 light라 하면 어떤 뿌리-정점 경로에도 light 간선은 $O(\log n)$ 개다.
 
-- 한 번의 `access`에서 preferred child가 바뀌는 횟수를 센다. light 간선이 preferred가 되는 경우는 경로당 $O(\log n)$ 번뿐이다.
-- heavy 간선이 preferred가 되는 경우는 잠재함수 논법으로 상쇄한다. "preferred가 아닌 heavy 간선의 개수"를 잠재함수로 두면, heavy 간선이 preferred가 될 때마다 잠재가 1 줄고, 잠재가 늘어나는 것은 light 간선이 preferred가 되는 순간(경로당 $O(\log n)$ 번)과 `link`/`cut`으로 트리 모양이 바뀌는 순간뿐이다.
+- 한 번의 `access`에서 preferred child 가 바뀌는 횟수를 센다. light 간선이 preferred 가 되는 경우는 경로당 $O(\log n)$ 번뿐이다.
+- heavy 간선이 preferred 가 되는 경우는 잠재함수 논법으로 상쇄한다. "preferred 가 아닌 heavy 간선의 개수"를 잠재함수로 두면, heavy 간선이 preferred 가 될 때마다 잠재가 1 줄고, 잠재가 늘어나는 것은 light 간선이 preferred 가 되는 순간(경로당 $O(\log n)$ 번)과 `link`/`cut`으로 트리 모양이 바뀌는 순간뿐이다.
 
 결론적으로 $m$ 번의 access에서 preferred child 변경의 총합은 $O((n+m)\log n)$ 이다.
 
-**(2) splay 의 비용.** 각 변경은 splay 한 번에 대응한다. splay 트리의 접근 정리(access lemma)에 따라 크기 $k$ 의 splay 트리에서 splay 한 번의 분할상환 비용은 $O(\log k)$ 이며, 여러 splay 트리를 오가는 경우에도 전체 정점 수를 가중치로 삼는 잠재함수를 쓰면 각 splay가 $O(\log n)$ 으로 묶인다. 이 잠재함수 분석이 Sleator–Tarjan 의 것이다[^1].
+**(2) splay 의 비용.** 각 변경은 splay 한 번에 대응한다. splay 트리의 접근 정리(access lemma)에 따라 크기 $k$ 의 splay 트리에서 splay 한 번의 분할상환 비용은 $O(\log k)$ 이며, 여러 splay 트리를 오가는 경우에도 전체 정점 수를 가중치로 삼는 잠재함수를 쓰면 각 splay 가 $O(\log n)$ 으로 묶인다. 이 잠재함수 분석이 Sleator–Tarjan 의 것이다[^1].
 
 두 결과를 합치면 연산당 $O(\log n)$ 이 나온다. 여기서 $O(\log n)$ 은 분할상환이며 한 번의 연산은 최악의 경우 선형 시간이 걸릴 수 있다. 최악의 경우에도 $O(\log n)$ 을 보장하려면 splay 대신 globally biased search tree를 쓰면 되지만, 구현이 훨씬 복잡하고 상수가 크다.
 
 ## 연산별 비용
 
 - **경로 질의.** 합, 최댓값, 최솟값, lazy 전파를 통한 경로 일괄 갱신을 모두 지원한다. `access` 뒤에는 splay 트리 뿌리 하나만 읽으면 된다.
-- **부분트리 질의.** 부분트리는 여러 preferred path에 흩어지므로, 각 노드가 "preferred가 아닌 자식들의 결합값"(virtual subtree)을 따로 유지해야 한다. 갱신 가능한 결합 연산(예: 합)에서는 가능하지만, 최댓값처럼 값을 빼기 어려운 연산에서는 다중집합을 들고 있어야 해 상수가 커진다.
+- **부분트리 질의.** 부분트리는 여러 preferred path 에 흩어지므로, 각 노드가 "preferred 가 아닌 자식들의 결합값"(virtual subtree)을 따로 유지해야 한다. 갱신 가능한 결합 연산(예: 합)에서는 가능하지만, 최댓값처럼 값을 빼기 어려운 연산에서는 다중집합을 들고 있어야 해 상수가 커진다.
 - **경로 뒤집기.** 지연 표시로 처리한다. 결합값이 교환적이 아니면 정방향·역방향 두 값을 함께 유지한다.
 - 사이클을 허용하지 않는다. 일반 그래프에서는 신장 숲만 이 구조로 유지하고, 나머지 간선은 별도로 관리한다.
 
@@ -145,7 +145,7 @@ $$
 
 ## 최대유량
 
-Link-cut tree가 처음 만들어진 동기가 이것이다[^1]. Dinic 류 알고리즘에서 blocking flow를 찾을 때, 단순 구현은 증가 경로를 한 간선씩 따라가며 병목을 찾고 잔여 용량을 갱신하므로 경로 길이에 비례하는 시간이 든다. Link-cut tree에 현재 탐색 숲을 담아 두면 다음이 가능하다.
+Link-cut tree 가 처음 만들어진 동기가 이것이다[^1]. Dinic 류 알고리즘에서 blocking flow 를 찾을 때, 단순 구현은 증가 경로를 한 간선씩 따라가며 병목을 찾고 잔여 용량을 갱신하므로 경로 길이에 비례하는 시간이 든다. Link-cut tree 에 현재 탐색 숲을 담아 두면 다음이 가능하다.
 
 - 경로 위 최소 잔여 용량 찾기: 경로 최솟값 질의.
 - 그 경로 전체의 용량을 한꺼번에 줄이기: 경로 일괄 갱신(lazy).
@@ -155,7 +155,7 @@ Link-cut tree가 처음 만들어진 동기가 이것이다[^1]. Dinic 류 알�
 
 ## 트리 경로 질의와 동적 그래프 알고리즘
 
-- **트리 경로 질의의 온라인 버전.** 트리 모양이 고정이면 heavy-light 분해로 충분하지만, 간선이 바뀌면 link-cut tree가 필요하다. **LCA**(lowest common ancestor)도 `access`의 반환값으로 얻는다.
+- **트리 경로 질의의 온라인 버전.** 트리 모양이 고정이면 heavy-light 분해로 충분하지만, 간선이 바뀌면 link-cut tree 가 필요하다. **LCA**(lowest common ancestor)도 `access`의 반환값으로 얻는다.
 - **동적 그래프 알고리즘의 부품.** 신장 숲을 link-cut tree로 유지하고 나머지 간선을 계층적으로 관리하는 방식이 동적 연결성과 동적 이중연결성 알고리즘의 표준 구성이다.
 - **계산 기하와 구간 문제.** 구간 병합, 오프라인 질의의 온라인화 등에서 트리 구조 갱신이 필요한 경우에 등장한다.
 - **그래프 알고리즘의 일반화.** [그래프](graphs.md) 위의 흐름·매칭 알고리즘에서 "경로를 따라가며 상태를 갱신"하는 단계는 대부분 이 구조로 가속할 수 있다.
