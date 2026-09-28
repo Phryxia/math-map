@@ -133,7 +133,7 @@ $P$ 의 원소를 대상으로 삼고 $x \le y$ 일 때 $x$ 에서 $y$ 로 가�
 
 ### 그래프, 범주, 논리
 
-- [DAG와 위상정렬](dag-topological.md)
+- [DAG 와 위상정렬](dag-topological.md)
 - [범주](category.md)
 - [직관주의 논리의 Kripke 의미론](kripke-semantics.md)
 

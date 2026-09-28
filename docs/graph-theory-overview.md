@@ -14,7 +14,7 @@
 graph TD
   ST["집합"] --> GR["그래프"]
   GR --> GS2["그래프 탐색"]
-  GR --> DG["DAG와 위상정렬"]
+  GR --> DG["DAG 와 위상정렬"]
   GR --> GC["그래프 색칠"]
   GR --> MA["매칭"]
   GR --> NF["네트워크 흐름"]
@@ -42,7 +42,7 @@ graph TD
 
 - [그래프](graphs.md): 정점과 간선, 차수, 경로와 연결성
 - [그래프 탐색](graph-search.md): DFS(depth-first search)와 BFS(breadth-first search), 탐색 트리와 간선 분류, 강연결성분
-- [DAG와 위상정렬](dag-topological.md): 방향 비순환 그래프와 선형 순서
+- [DAG 와 위상정렬](dag-topological.md): 방향 비순환 그래프와 선형 순서
 - [평면 그래프](planar-graphs.md): Euler 공식과 Kuratowski 정리
 - [교차수 부등식](crossing-number-inequality.md): 변이 많을 때 교차수의 세제곱 하한, 무작위 부분그래프 논증
 - [그래프 마이너](graph-minors.md): 정렬 유사 순서와 유한 금지 마이너, 나무폭

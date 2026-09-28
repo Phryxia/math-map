@@ -52,7 +52,7 @@ $$
 
 ## 유한 Ramsey 정리와 점화 상한
 
-Erdős와 Szekeres 의 증명이 상한 점화식을 준다.
+Erdős 와 Szekeres 의 증명이 상한 점화식을 준다.
 
 $$
 R(s,t)\ \le\ R(s-1,t)+R(s,t-1)
