@@ -15,7 +15,7 @@ $$
 1. 유한 개의 소수를 제외하고 **비분기**다.
 2. $G_{\mathbb Q_p}$ 로 제한하면 **de Rham** 이다.
 
-그러면 $\rho$ 는 **기하적**이다. 즉 어떤 매끄러운 사영 다양체 $X/\mathbb Q$ 의 에탈 코호몰로지 $H^i_{\mathrm{et}}(X_{\bar{\mathbb Q}},\mathbb Q_p)$ 의 부분몫에 Tate 꼬임을 허용해 나타난다.
+그러면 $\rho$ 는 **기하적**이다. 즉 어떤 매끄러운 사영 다양체 $X/\mathbb Q$ 의 [에탈 코호몰로지](etale-cohomology.md) $H^i_{\mathrm{et}}(X_{\bar{\mathbb Q}},\mathbb Q_p)$ 의 부분몫에 Tate 꼬임을 허용해 나타난다.
 
 역방향은 정리다. 기하에서 온 표현은 좋은 환원을 가진 소수에서 비분기이고([Galois 표현](galois-representations.md)의 매끄러운 고유 기저변환), $p$ 자리에서는 Faltings–Tsuji 의 $C_{\mathrm{dR}}$ 비교동형이 de Rham 성을 준다. 어려운 방향은 조건에서 기하로 가는 쪽이다. 추측은 대수다양체에서 온다는 조건을 검사 가능한 두 조건으로 대체한다.
 

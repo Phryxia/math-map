@@ -28,7 +28,7 @@ $$
 | 자기동형 쪽 | 자기동형 형식 | $\mathrm{Bun}\_G(\mathbb F\_q)$ 위의 함수 | $\mathrm{Bun}\_G$ 위의 $D$ 가군 |
 | Galois 쪽 | Galois 표현 | 에탈 국소계 | 평탄 접속을 가진 다발 |
 
-왼쪽 열에서는 $\mathrm{Spec}\thinspace\mathbb Z$ 가 곡선처럼 보이는 유비만 있고 기하적 도구를 쓸 수 없다. 가운데 열에는 실제 곡선이 있어 에탈 코호몰로지를 쓴다. 오른쪽 열은 $\mathbb F_q$ 를 $\mathbb C$ 로 바꿔 산술을 버리고 미분기하와 복소해석을 얻는다.
+왼쪽 열에서는 $\mathrm{Spec}\thinspace\mathbb Z$ 가 곡선처럼 보이는 유비만 있고 기하적 도구를 쓸 수 없다. 가운데 열에는 실제 곡선이 있어 [에탈 코호몰로지](etale-cohomology.md)를 쓴다. 오른쪽 열은 $\mathbb F_q$ 를 $\mathbb C$ 로 바꿔 산술을 버리고 미분기하와 복소해석을 얻는다.
 
 기하학적 Langlands 는 오른쪽 열의 진술이다. 산술적 결론을 직접 주지 않고 대응의 구조를 드러낸다.
 

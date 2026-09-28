@@ -2,7 +2,7 @@
 
 # 개요
 
-Weil 추측의 세 항목 가운데 둘은 1960 년대에 닫혔다. [Dwork](dwork-rationality.md)가 $p$ 진 해석학으로 유리성을 증명했고, Grothendieck 의 에탈 코호몰로지가 유리성과 함수방정식을 다시 증명했다. 남은 하나가 **Riemann 가설**이다.
+Weil 추측의 세 항목 가운데 둘은 1960 년대에 닫혔다. [Dwork](dwork-rationality.md)가 $p$ 진 해석학으로 유리성을 증명했고, Grothendieck 의 [에탈 코호몰로지](etale-cohomology.md)가 유리성과 함수방정식을 다시 증명했다. 남은 하나가 **Riemann 가설**이다.
 
 $$
 Z(X/\mathbb F_q,T)=\prod_{i=0}^{2d}P_i(T)^{(-1)^{i+1}},

@@ -2,7 +2,7 @@
 
 # 개요
 
-[Galois 표현](galois-representations.md)에서 에탈 코호몰로지가 $\ell$ 진 표현을 공급한다. 그 표현들을 [국소체](local-class-field-theory.md) $K/\mathbb Q_p$ 의 절대 Galois 군 $G_K=\mathrm{Gal}(\bar K/K)$ 위에서 분류할 때 $\ell\ne p$ 와 $\ell=p$ 가 갈린다.
+[Galois 표현](galois-representations.md)에서 [에탈 코호몰로지](etale-cohomology.md)가 $\ell$ 진 표현을 공급한다. 그 표현들을 [국소체](local-class-field-theory.md) $K/\mathbb Q_p$ 의 절대 Galois 군 $G_K=\mathrm{Gal}(\bar K/K)$ 위에서 분류할 때 $\ell\ne p$ 와 $\ell=p$ 가 갈린다.
 
 $\ell\ne p$ 쪽에서는 Grothendieck 의 준안정 정리가 $\ell$ 진 표현의 관성 작용을 유한 자료로 압축한다. $\ell=p$ 쪽에서는 $G_K$ 의 $p$ 진 표현이 연속성만으로 거의 제약을 받지 않아 무한히 많은 모양으로 존재하고, 그중 기하에서 오는 것을 가려낼 방법이 없다.
 
