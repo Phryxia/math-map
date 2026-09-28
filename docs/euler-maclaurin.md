@@ -1,4 +1,4 @@
-# Euler–Maclaurin 공식과 점근급수
+# Euler–Maclaurin 공식
 
 # 개요
 

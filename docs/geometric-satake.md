@@ -222,7 +222,7 @@ $$
 
 ## 선수지식
 
-- [Satake 동형과 비분기 Hecke 대수](satake-isomorphism.md)
+- [Satake 동형](satake-isomorphism.md)
 - [범주](category.md)
 
 ## 더 알아보기

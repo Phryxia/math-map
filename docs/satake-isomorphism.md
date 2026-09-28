@@ -1,4 +1,4 @@
-# Satake 동형과 비분기 Hecke 대수
+# Satake 동형
 
 # 개요
 

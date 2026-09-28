@@ -172,7 +172,7 @@ Kottwitz 의 계획은 Shimura 다양체의 Hasse–Weil zeta 함수를 자기�
 
 ## 선수지식
 
-- [Satake 동형과 비분기 Hecke 대수](satake-isomorphism.md)
+- [Satake 동형](satake-isomorphism.md)
 - [Selberg 대각합 공식](selberg-trace-formula.md)
 
 ## 더 알아보기

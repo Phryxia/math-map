@@ -107,7 +107,7 @@ $$
 
 ## PCP 증명에서의 역할
 
-[PCP 정리](pcp-theorem.md)의 Dinur 증명은 제약 그래프의 간극을 한 라운드에 두 배씩 키운다. 증폭의 본체는 그래프를 $t$ 거듭제곱해 길이 $t$ 경로를 제약 하나로 묶는 것이고, 병목이 있으면 경로가 한 덩어리에 갇혀 실패한다. 그래서 매 라운드 앞에서 그래프를 expander 로 바꾼다. 스펙트럼 간극이 경로가 그래프를 고르게 훑음을 보장하고, 그 보장에서 간극 증폭의 양적 결론이 나온다.
+[PCP 정리](pcp-theorem.md)(probabilistically checkable proof)의 Dinur 증명은 제약 그래프의 간극을 한 라운드에 두 배씩 키운다. 증폭의 본체는 그래프를 $t$ 거듭제곱해 길이 $t$ 경로를 제약 하나로 묶는 것이고, 병목이 있으면 경로가 한 덩어리에 갇혀 실패한다. 그래서 매 라운드 앞에서 그래프를 expander 로 바꾼다. 스펙트럼 간극이 경로가 그래프를 고르게 훑음을 보장하고, 그 보장에서 간극 증폭의 양적 결론이 나온다.
 
 ## 부호와의 관계
 
@@ -130,7 +130,7 @@ expander 그래프에서 만든 부호(expander code, Sipser–Spielman)는 선�
 
 ## 더 알아보기
 
-- [PCP 정리와 근사 불가능성](pcp-theorem.md)
+- [PCP 정리](pcp-theorem.md)
 - [Ramanujan 그래프의 명시적 구성](ramanujan-graphs.md)
 
 #graph_theory #linear_algebra #algorithms #complexity

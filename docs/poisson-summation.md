@@ -155,7 +155,7 @@ $\mathbb R/\mathbb Z$ 위의 Laplace 작용소에서 좌변은 고윳값 쪽 합
 ## 선수지식
 
 - [Fourier 급수](fourier-series.md)
-- [Euler–Maclaurin 공식과 점근급수](euler-maclaurin.md)
+- [Euler–Maclaurin 공식](euler-maclaurin.md)
 
 ## 더 알아보기
 

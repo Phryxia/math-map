@@ -152,7 +152,7 @@ $$
 ## 더 알아보기
 
 - [Maass 형식](maass-forms.md)
-- [Satake 동형과 비분기 Hecke 대수](satake-isomorphism.md)
+- [Satake 동형](satake-isomorphism.md)
 - [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
 - [모듈러 기호](modular-symbols.md)
 - [Shimura 대응과 반정수 무게 형식](shimura-correspondence.md)

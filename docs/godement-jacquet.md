@@ -197,7 +197,7 @@ Sato–Tate 의 등분포에는 모든 대칭곱의 평균이 사라져야 하�
 
 ## 더 알아보기
 
-- [Satake 동형과 비분기 Hecke 대수](satake-isomorphism.md)
+- [Satake 동형](satake-isomorphism.md)
 - [Rankin–Selberg 적분](rankin-selberg.md)
 
 #number_theory #analysis #group_theory #computation
