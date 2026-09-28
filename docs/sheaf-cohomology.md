@@ -84,6 +84,7 @@ $H^i(X,\mathcal A) = 0$ 이 모든 $i \ge 1$ 에서 성립하는 층을 **비순
 
 ## 더 알아보기
 
+- [에탈 코호몰로지](etale-cohomology.md)
 - [Picard 군](picard-group.md)
 
 #algebraic_topology #category_theory #topology

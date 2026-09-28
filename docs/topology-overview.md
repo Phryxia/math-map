@@ -59,6 +59,7 @@ graph TD
 ## 층과 가역층
 
 - [층 코호몰로지](sheaf-cohomology.md): 전역 단면 함자의 유도 함자, 국소에서 전역으로 가는 장애
+- [에탈 코호몰로지](etale-cohomology.md): Zariski 열린집합 대신 에탈 사상을 덮개로 쓴 층 코호몰로지, Frobenius 자취 공식과 Weil 추측
 - [Picard 군](picard-group.md): 가역층의 동형류가 이루는 군, 지수열이 가르는 위상적 조각과 정칙 조각
 
 ## 다양체와 기하

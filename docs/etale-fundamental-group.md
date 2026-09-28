@@ -143,6 +143,7 @@ $\ell\neq p$ 인 $\ell$ 성분은 표수 $0$ 으로 올릴 때 보존되고, 이
 
 ## 더 알아보기
 
+- [에탈 코호몰로지](etale-cohomology.md)
 - [Chabauty–Kim 방법](chabauty-kim.md)
 
 #field_theory #algebraic_topology #number_theory
