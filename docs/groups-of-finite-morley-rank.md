@@ -81,9 +81,11 @@ $1\in X$ 인 정의 가능 집합 $X$ 가 **불가분**이라 함은, 정의 가
 
 **정리**(Cherlin). 연결 유한 Morley 위수 군의 위수가 $1$ 이면 아벨군이고, $2$ 이면 가해군이며, $3$ 이면 가해군이거나 $\mathrm{PSL}\_2(K)$ 이거나 나쁜 군이다.[^4]
 
-위수 $1$ 은 [강최소 군](strongly-minimal-groups.md)이므로 Reineke 정리가 아벨성을 준다. 위수 $3$ 에서 처음으로 대수군도 가해군도 아닌 경우가 배제되지 않는다.
+위수 $1$ 은 [강최소 군](strongly-minimal-groups.md)이므로 Reineke 정리가 아벨성을 준다. 위수 $3$ 의 세 번째 경우인 [나쁜 군](bad-groups.md)은 정의 가능한 연결 진부분군이 모두 멱영인 연결 비가해 군이다.
 
-**나쁜 군**은 연결 비가해 유한 Morley 위수 군으로 정의 가능한 연결 진부분군이 모두 멱영인 것이다. 나쁜 군이 있는지는 알려져 있지 않다.[^5]
+**정리**(Frécon). 위수 $3$ 의 나쁜 군은 없다.[^6]
+
+따라서 위수 $3$ 의 연결 유한 Morley 위수 군은 가해군이거나 $\mathrm{PSL}\_2(K)$ 다. 위수 $3$ 을 넘는 나쁜 군이 있는지는 알려져 있지 않다.[^5]
 
 # 활용
 
@@ -110,6 +112,7 @@ $1\in X$ 인 정의 가능 집합 $X$ 가 **불가분**이라 함은, 정의 가
 [^3]: B. Zilber, *Groups and rings whose theory is categorical*, Fund. Math. **95** (1977), 173–188.
 [^4]: G. Cherlin, *Groups of small Morley rank*, Ann. Math. Logic **17** (1979), 1–28.
 [^5]: T. Altınel, A. Borovik, G. Cherlin, *Simple Groups of Finite Morley Rank*, Math. Surveys Monogr. **145**, AMS (2008). 추측의 진술과 짝수형 정리가 서론에 있고, 나쁜 군의 존재가 미해결이라는 것도 같은 자리에 있다.
+[^6]: O. Frécon, *Simple groups of Morley rank 3 are algebraic*, J. Amer. Math. Soc. **31** (2018), no. 3.
 
 # 연관 문서
 
@@ -120,5 +123,6 @@ $1\in X$ 인 정의 가능 집합 $X$ 가 **불가분**이라 함은, 정의 가
 ## 더 알아보기
 
 - [Zilber 불가분성 정리](zilber-indecomposability.md)
+- [나쁜 군](bad-groups.md)
 
 #logic #foundations #algebra #group_theory

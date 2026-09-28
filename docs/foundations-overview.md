@@ -54,6 +54,7 @@ graph TD
 - [강최소 군](strongly-minimal-groups.md): 정의 가능한 진부분군이 유한하다는 관찰과 Reineke 의 아벨성 정리, 배치가 해석한 군의 구조
 - [유한 Morley 위수 군](groups-of-finite-morley-rank.md): 위수가 유한한 정의 가능 군, 부분군의 사슬 조건과 연결 성분, Cherlin–Zilber 추측
 - [Zilber 불가분성 정리](zilber-indecomposability.md): 불가분 집합족이 생성하는 부분군이 정의 가능하고 연결이며 유한 곱과 같다는 정리, 교환자 부분군의 정의 가능성
+- [나쁜 군](bad-groups.md): 정의 가능한 연결 진부분군이 모두 멱영인 연결 비가해 군, Borel 부분군의 켤레성과 자명한 교차, 위수 3 의 배제
 - [미분적으로 닫힌 체](differentially-closed-fields.md): 미분 방정식의 해를 모두 갖는 체, 미분 닫힘의 유일성과 강최소 집합의 삼분법
 - [Mordell–Lang 추측](mordell-lang.md): 삼분법을 미분체와 차분체에 적용해 아벨 다양체의 유리점을 결정하는 산술 응용
 - [o-최소성](o-minimality.md): 정의 가능 집합이 구간과 점의 유한 합집합이라는 조건, 셀 분해와 차원
