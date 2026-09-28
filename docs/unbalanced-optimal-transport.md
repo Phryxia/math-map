@@ -60,7 +60,7 @@ $$
 +\tau\thinspace\mathrm{KL}(P\mathbf 1\thinspace\Vert\thinspace a)+\tau\thinspace\mathrm{KL}(P^\top\mathbf 1\thinspace\Vert\thinspace b)
 $$
 
-로 둔다. 여기서 $\mathrm{KL}(\mu\Vert\nu)=\sum\mu_i\log\frac{\mu_i}{\nu_i}-\mu_i+\nu_i$ 로, 총질량이 다른 측도에도 뜻이 있는 형태를 쓴다. 마지막 두 항이 없으면 [Sinkhorn](sinkhorn.md) 문제이고, 그 항들의 계수를 무한대로 보내면 등식 제약이 복원된다.
+로 둔다. 여기서 $\mathrm{KL}(\mu\Vert\nu)=\sum\mu_i\log\frac{\mu_i}{\nu_i}-\mu_i+\nu_i$ 로, 총질량이 다른 측도에도 뜻이 있는 형태를 쓴다. 마지막 두 항이 없으면 Sinkhorn 문제이고, 그 항들의 계수를 무한대로 보내면 등식 제약이 복원된다.
 
 목적함수가 $P$ 에 대해 강볼록하고 아래로 유계이므로 최소점이 유일하다.
 

@@ -114,7 +114,7 @@ Kohnen–Zagier 는 $S_{k+1/2}$ 에서 플러스 공간으로 떨어뜨리는 He
 
 ## Waldspurger 정리와의 접속
 
-계수 $c(|D|)$ 의 뜻은 [Waldspurger 정리](waldspurger-formula.md)가 준다.
+계수 $c(|D|)$ 의 뜻은 Waldspurger 정리가 준다.
 
 $$
 |c(|D|)|^2\ \sim\ |D|^{k-1/2}\thinspace\frac{L\negthinspace\left(\tfrac12,\ \mathrm{Sh}(g)\otimes\chi_D\right)}{\langle f,f\rangle}

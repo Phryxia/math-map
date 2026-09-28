@@ -149,7 +149,7 @@ $$
 
 ## 유수와 유수 공식
 
-$\chi$ 가 자명할 때 $s=1$ 의 유수가 $\kappa=\mathrm{vol}(\mathbb A_K^1/K^\times)$ 라는 것이 위 정리의 내용이다. [아델](adeles.md)의 [콤팩트성](compactness.md)을 써서 이 부피를 계산하면 이델류군의 구조가 그대로 나온다. 유수는 유수 $h$ 와 조절자 $R$ 과 단원근 개수 $w$ 와 판별식으로 표현된다.
+$\chi$ 가 자명할 때 $s=1$ 의 유수가 $\kappa=\mathrm{vol}(\mathbb A_K^1/K^\times)$ 라는 것이 위 정리의 내용이다. 아델의 [콤팩트성](compactness.md)을 써서 이 부피를 계산하면 이델류군의 구조가 그대로 나온다. 유수는 유수 $h$ 와 조절자 $R$ 과 단원근 개수 $w$ 와 판별식으로 표현된다.
 
 $$
 \mathop{\mathrm{Res}}\_{s=1}\zeta_K(s)=\frac{2^{r_1}(2\pi)^{r_2}hR}{w\sqrt{|d_K|}}
@@ -182,7 +182,7 @@ $$
 Z(f,\pi,s)=\int_{\mathrm{GL}\_n(\mathbb A)}f(g)\thinspace\langle\pi(g)v,\tilde v\rangle\thinspace|\det g|^{s+\frac{n-1}2}\thinspace dg
 $$
 
-가 되고, 같은 논법이 $L(s,\pi)$ 의 해석적 접속과 함수방정식을 준다. $n=1$ 이 Tate 의 논문이다. [Langlands 강령](langlands-program.md)이 $L$ 함수를 급수가 아니라 군 위의 적분으로 정의하는 전략을 쓰는 것이 이 계보에서 나왔다. 자기동형 쪽에는 Poisson 합공식이 있으므로, Galois 쪽에서 보이지 않던 해석적 성질이 그쪽에서 나온다.
+가 되고, 같은 논법이 $L(s,\pi)$ 의 해석적 접속과 함수방정식을 준다. $n=1$ 이 Tate 의 논문이다. Langlands 강령이 $L$ 함수를 급수가 아니라 군 위의 적분으로 정의하는 전략을 쓰는 것이 이 계보에서 나왔다. 자기동형 쪽에는 Poisson 합공식이 있으므로, Galois 쪽에서 보이지 않던 해석적 성질이 그쪽에서 나온다.
 
 [^1]: John Tate, *Fourier Analysis in Number Fields and Hecke's Zeta-Functions*, 1950년 Princeton 학위논문. Cassels–Fröhlich, *Algebraic Number Theory* (1967) 15장에 수록. 국소 계산은 2절, Riemann–Roch 항등식과 대역 정리는 4.2절이다.
 

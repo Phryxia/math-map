@@ -55,7 +55,7 @@ K_{\mathrm{Ai}}(x,y) = \frac{\mathrm{Ai}(x)\mathrm{Ai}'(y) - \mathrm{Ai}'(x)\mat
 = \int_0^\infty \mathrm{Ai}(x+t)\mathrm{Ai}(y+t)\thinspace dt
 $$
 
-로 수렴한다. 첫 표현의 분자는 [Airy 함수](airy-functions.md)의 Wronskian 형태이고, $x \to y$ 극한에서 $\mathrm{Ai}'(x)^2 - x\mathrm{Ai}(x)^2$ 이 되어 특이하지 않다. 두 번째 표현은 이 핵이 양의 준정부호임을 바로 보여 준다.
+로 수렴한다. 첫 표현의 분자는 Airy 함수의 Wronskian 형태이고, $x \to y$ 극한에서 $\mathrm{Ai}'(x)^2 - x\mathrm{Ai}(x)^2$ 이 되어 특이하지 않다. 두 번째 표현은 이 핵이 양의 준정부호임을 바로 보여 준다.
 
 최대 고윳값이 $s$ 이하일 확률은 구간 $(s,\infty)$ 에 점이 하나도 없을 확률이므로
 

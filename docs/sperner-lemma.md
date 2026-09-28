@@ -78,7 +78,7 @@ function sperner(triangulation, label) {
 # 활용
 
 - **공정한 분배.** 케이크를 $n$ 명이 시기하지 않게 자르는 문제에서, 자르는 위치를 단체의 점으로 두고 각자가 고르는 조각의 번호를 이름으로 주면 완전 단체가 선망 없는 분배를 준다. 이 논법을 Sperner 이름표의 변형인 Stromquist 의 구성이라 한다.
-- **[Brouwer 고정점 정리](brouwer-fixed-point.md)의 구성적 증명.** 귀류법 대신 유한한 걸음으로 고정점 근사를 얻는다.
+- **Brouwer 고정점 정리의 구성적 증명.** 귀류법 대신 유한한 걸음으로 고정점 근사를 얻는다.
 - **KKM(Knaster–Kuratowski–Mazurkiewicz) 정리.** 단체를 닫힌집합 $n+1$ 개로 덮되 각 면이 대응하는 집합들의 합집합에 들어가면 모든 집합의 교집합이 비어 있지 않다. 이 정리와 Sperner 보조정리와 Brouwer 정리는 서로를 짧게 함의한다.
 
 # 연관 문서

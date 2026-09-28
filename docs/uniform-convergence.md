@@ -69,7 +69,7 @@ $$
 
 $X$ 가 임의의 집합일 때, 유계함수 공간은 sup 노름에 대해 완비다. 즉 균등 Cauchy 함수열은 균등수렴한다.
 
-**증명 스케치.** 각 $x$ 를 고정하면 $f_n(x)$ 는 실수의 Cauchy 수열이므로 [완비성](completeness.md)으로 극한 $f(x)$ 가 존재한다. 균등 Cauchy 조건식에서 $m$ 을 무한대로 보내면 $n \ge N$ 인 모든 $n$ 과 모든 $x$ 에서 $|f_n(x) - f(x)| \le \varepsilon$ 를 얻는다. 이것이 균등수렴이다.
+**증명 스케치.** 각 $x$ 를 고정하면 $f_n(x)$ 는 실수의 Cauchy 수열이므로 완비성으로 극한 $f(x)$ 가 존재한다. 균등 Cauchy 조건식에서 $m$ 을 무한대로 보내면 $n \ge N$ 인 모든 $n$ 과 모든 $x$ 에서 $|f_n(x) - f(x)| \le \varepsilon$ 를 얻는다. 이것이 균등수렴이다.
 
 ## 연속성 보존
 
@@ -150,13 +150,13 @@ $$
 ## 함수 근사와 급수 전개
 
 - **Weierstrass 근사 정리**: 콤팩트 구간 위의 연속함수는 다항식으로 균등근사된다. Bernstein 다항식에 [큰 수의 법칙](law-of-large-numbers.md)을 적용하는 확률적 증명이 유명하다.
-- **[멱급수](power-series.md)**: 수렴반경 내부에서 균등수렴하므로 항별 미분과 적분이 정당화된다.
+- **멱급수**: 수렴반경 내부에서 균등수렴하므로 항별 미분과 적분이 정당화된다.
 - **[Fourier 급수](fourier-series.md)**: 균등수렴은 일반적으로 보장되지 않고(연속함수의 Fourier 급수가 발산할 수 있다), Gibbs 현상이 불연속점 근처에서 균등수렴을 막는다. 그래서 [내적 공간](inner-product-spaces.md)의 $L^2$ 수렴을 대신 쓴다.
 
 ## 해석학에서의 쓰임
 
-- **미분방정식**: Picard–Lindelöf 정리는 연속함수 공간의 완비성과 [축약사상 고정점 정리](banach-fixed-point.md)를 쓰며, 반복열의 균등수렴이 해를 만든다.
-- **함수해석**: sup 노름 공간 $C(K)$ 는 [Banach 공간](banach-spaces.md)의 기본 예이고, [Arzelà–Ascoli 정리](arzela-ascoli.md)가 $C(K)$ 의 콤팩트 집합을 균등유계성과 등연속성(equicontinuity)으로 특징짓는다. 등연속성은 정의역 방향의 균등화이며 [균등적분가능성](uniform-integrability.md)이 $L^1$ 에서 하는 역할과 구조가 같다.[^1]
+- **미분방정식**: Picard–Lindelöf 정리는 연속함수 공간의 완비성과 축약사상 고정점 정리를 쓰며, 반복열의 균등수렴이 해를 만든다.
+- **함수해석**: sup 노름 공간 $C(K)$ 는 [Banach 공간](banach-spaces.md)의 기본 예이고, [Arzelà–Ascoli 정리](arzela-ascoli.md)가 $C(K)$ 의 콤팩트 집합을 균등유계성과 등연속성(equicontinuity)으로 특징짓는다. 등연속성은 정의역 방향의 균등화이며 균등적분가능성이 $L^1$ 에서 하는 역할과 구조가 같다.[^1]
 - **[정칙함수](holomorphic-functions.md)**: 복소해석에서는 콤팩트 집합 위의 균등수렴만으로 극한이 정칙이고 도함수열도 수렴한다(Weierstrass 수렴 정리). Cauchy 적분 공식이 미분을 적분으로 바꾸므로 실해석과 달리 미분이 보존된다.[^2]
 
 [^1]: Walter Rudin, *Principles of Mathematical Analysis*, 3rd ed., McGraw-Hill, 7장 (Sequences and Series of Functions), https://archive.org/details/RudinW.PrinciplesOfMathematicalAnalysis3e

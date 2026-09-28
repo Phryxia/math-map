@@ -76,7 +76,7 @@ $\langle a,b\mid a^2,b^3,(ab)^5\rangle$ 이 위수 60 임을 이 방식으로 �
 # 활용
 
 - 계산 군론 체계 GAP(Groups, Algorithms, Programming)과 Magma 의 유한 표시군 기능이 이 알고리즘을 기반으로 삼는다. 부분군의 지표, 잉여류 위 순열표현, 부분군의 표시(Reidemeister–Schreier 재작성)가 모두 잉여류 표에서 나온다.
-- [군의 표시](group-presentations.md)로 정의한 군이 유한인지 판정할 때 쓴다. 성공하면 위수를 주고, 끝나지 않는 동안에는 아무 결론도 주지 않는다.
+- 군의 표시로 정의한 군이 유한인지 판정할 때 쓴다. 성공하면 위수를 주고, 끝나지 않는 동안에는 아무 결론도 주지 않는다.
 - Coxeter 표시로 주어진 유한 반사군의 위수 확인에 쓴다. [Coxeter 군](coxeter-groups.md)의 분류표에 적힌 위수를 표시에서 직접 재현하는 방법이다.
 
 [^1]: Todd–Coxeter 열거의 중간 번호 수는 계산 가능한 함수로 위에서 눌리지 않는다. C. C. Sims, *Computation with Finitely Presented Groups*, Cambridge University Press, 1994, 5 장.

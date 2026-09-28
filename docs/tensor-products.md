@@ -125,7 +125,7 @@ $$
 {-} \otimes_R N \thickspace\dashv\thickspace \mathrm{Hom}\_R(N, -)
 $$
 
-이며, 자세한 틀은 [수반](adjunctions.md)에 있다. 집합에서의 curry 와 uncurry 의 대수판이다.
+이며, 자세한 틀은 수반에 있다. 집합에서의 curry 와 uncurry 의 대수판이다.
 
 ## 우완전성
 

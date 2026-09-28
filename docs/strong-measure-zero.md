@@ -53,7 +53,7 @@ $\varepsilon\_n=\varepsilon/2^n$ 을 주면 얻는 덮개의 길이 합이 $\var
 # 활용
 
 - 측도가 $0$ 인 집합을 더 잘게 가르는 데 쓴다. Cantor 집합과 가산 집합은 둘 다 측도가 $0$ 이지만 강 측도 영집합인지에서 갈린다.
-- [Luzin 집합과 Sierpiński 집합](luzin-sierpinski-sets.md)의 성질을 진술한다. Luzin 집합이 강 측도 영집합이라는 정리가 Borel 추측을 연속체 가설 아래에서 반증한다.
+- Luzin 집합과 Sierpiński 집합의 성질을 진술한다. Luzin 집합이 강 측도 영집합이라는 정리가 Borel 추측을 연속체 가설 아래에서 반증한다.
 - 덮개의 크기를 미리 지정하는 이 형태가 $\sigma$ 아이디얼의 [기수 불변량](cardinal-characteristics.md)에서 별도의 아이디얼을 이룬다.
 
 [^1]: John C. Oxtoby, *Measure and Category*, Springer Graduate Texts in Mathematics 2 (1980), 3장. 강 측도 영집합의 정의와 Cantor 집합이 그 예가 아님을 다룬다.

@@ -83,7 +83,7 @@ $$
 
 다음은 모두 UI 를 함의한다. 증명은 모두 Markov 부등식과 절단 기댓값의 직접 평가다.
 
-- **지배함수**: $|f|\le g$ 가 모든 $f$ 에 대해 성립하고 $g$ 가 적분가능하면, 절단 적분이 $g$ 의 꼬리 적분으로 눌린다. 따라서 [지배 수렴 정리](dominated-convergence.md)의 가정은 UI 를 준다.
+- **지배함수**: $|f|\le g$ 가 모든 $f$ 에 대해 성립하고 $g$ 가 적분가능하면, 절단 적분이 $g$ 의 꼬리 적분으로 눌린다. 따라서 지배 수렴 정리의 가정은 UI 를 준다.
 - **$L^p$ 유계 ($p\gt 1$ )**: Hölder 부등식으로
 
 $$
@@ -145,7 +145,7 @@ $L^1$ 유계성과 UI 의 차이를 보이는 세 예다.
 
 ## 확률: martingale 수렴
 
-[martingale](martingales.md) $M_n$ 이 $L^1$ 유계이면 거의 확실히 어떤 $M_\infty$ 로 수렴한다(Doob). $L^1$ 수렴과 $\mathbb E[M_n]=\mathbb E[M_\infty]$ 는 따라오지 않고, 그 필요충분조건이 $\lbrace M_n\rbrace$ 의 균등적분가능성이다. 이때 martingale 은 닫힌 형태
+martingale $M_n$ 이 $L^1$ 유계이면 거의 확실히 어떤 $M_\infty$ 로 수렴한다(Doob). $L^1$ 수렴과 $\mathbb E[M_n]=\mathbb E[M_\infty]$ 는 따라오지 않고, 그 필요충분조건이 $\lbrace M_n\rbrace$ 의 균등적분가능성이다. 이때 martingale 은 닫힌 형태
 
 $$
 M_n = \mathbb{E}[M_\infty \mid \mathcal{F}\_n]
