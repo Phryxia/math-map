@@ -1,4 +1,4 @@
-# 땋임군과 Alexander–Markov 정리
+# 땋임군
 
 # 개요
 

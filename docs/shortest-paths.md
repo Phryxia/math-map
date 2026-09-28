@@ -126,7 +126,7 @@ $$
 ## 선수지식
 
 - [동적 계획법](dynamic-programming.md)
-- [영역 이론과 Kleene 고정점 정리](domain-theory.md)
+- [영역 이론](domain-theory.md)
 
 ## 더 알아보기
 

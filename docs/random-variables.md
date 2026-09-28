@@ -183,7 +183,7 @@ $n$ 명에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 �
 
 - [큰 수의 법칙](law-of-large-numbers.md)
 - [집중부등식](concentration-inequalities.md)
-- [특성함수와 Lévy 연속성 정리](characteristic-functions.md)
+- [특성함수](characteristic-functions.md)
 
 ### 조건부 구조와 확률과정
 

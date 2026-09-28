@@ -143,7 +143,7 @@ $$
 ## 더 알아보기
 
 - [중심극한정리](central-limit-theorem.md)
-- [특성함수와 Lévy 연속성 정리](characteristic-functions.md)
+- [특성함수](characteristic-functions.md)
 - [최적 수송](optimal-transport.md)
 
 #probability #measure_theory #theorem

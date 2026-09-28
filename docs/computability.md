@@ -104,7 +104,7 @@ $A$ 의 입력을 $B$ 의 입력으로 바꾸는 계산 가능한 함수 $f$ 가
 
 ### 계산 모형
 
-- [영역 이론과 Kleene 고정점 정리](domain-theory.md)
+- [영역 이론](domain-theory.md)
 - [유한 오토마타](finite-automata.md)
 - [Lambda calculus](lambda-calculus.md)
 

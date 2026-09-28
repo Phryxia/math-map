@@ -170,6 +170,6 @@ $2^5=32$ 개의 객체 부분집합 가운데 닫힌 것은 8 개다. $\lbrace\t
 ## 더 알아보기
 
 - [추상해석](abstract-interpretation.md)
-- [영역 이론과 Kleene 고정점 정리](domain-theory.md)
+- [영역 이론](domain-theory.md)
 
 #order_theory #logic #computation

@@ -73,7 +73,7 @@ Brown 운동은 $m=0,\ k(s,t)=\min(s,t)$ 인 Gauss 과정이다. Brown 다리, �
 
 ## 선수지식
 
-- [특성함수와 Lévy 연속성 정리](characteristic-functions.md)
+- [특성함수](characteristic-functions.md)
 - [조건부 기댓값](conditional-expectation.md)
 
 ## 더 알아보기

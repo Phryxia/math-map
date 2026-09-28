@@ -55,7 +55,7 @@ graph TD
 ## 극한정리
 
 - [분포 수렴과 Prokhorov 정리](weak-convergence.md): 분포의 수렴과 tightness
-- [특성함수와 Lévy 연속성 정리](characteristic-functions.md): Fourier 변환으로 분포 수렴을 판정
+- [특성함수](characteristic-functions.md): Fourier 변환으로 분포 수렴을 판정
 - [큰 수의 법칙](law-of-large-numbers.md): 표본평균이 기댓값으로
 - [중심극한정리](central-limit-theorem.md): 요동의 정규분포 근사
 
