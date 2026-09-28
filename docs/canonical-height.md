@@ -2,7 +2,7 @@
 
 # 개요
 
-**Mordell–Weil 정리**는 [타원곡선](elliptic-curves.md)의 유리점 전체 $E(\mathbb Q)$ 가 유한생성 아벨군이라고 말한다.
+**Mordell–Weil 정리**는 [타원곡선](elliptic-curves.md)의 유리점 전체 $E(\mathbb Q)$ 는 유한생성 아벨군이다.
 
 $$
 E(\mathbb Q)\ \cong\ \mathbb Z^r\ \oplus\ E(\mathbb Q)\_{\mathrm{tors}}

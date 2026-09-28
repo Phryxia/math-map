@@ -125,7 +125,7 @@ $$
 
 ## 사전분포의 영향과 점근
 
-정칙 조건 아래에서 Bernstein–von Mises 정리는 사후분포가 참값 $\theta_0$ 근방에서 점근적으로 정규분포임을 말한다.
+Bernstein–von Mises 정리로 정칙 조건 아래에서 사후분포는 참값 $\theta_0$ 근방에서 점근적으로 정규분포다.
 
 $$
 \pi(\theta \mid x_{1:n}) \thickspace\approx\thickspace N\negthinspace\left(\hat\theta_{\mathrm{MLE}}, \thickspace \frac{1}{n I(\theta_0)}\right),

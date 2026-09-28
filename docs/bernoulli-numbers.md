@@ -48,7 +48,7 @@ $p$ 진으로 읽으면 $(p-1)\mid n$ 이면 $B_n$ 의 $p$ 부치가 정확히 $
 
 ## 분자의 $p$ 진 연속성
 
-von Staudt–Clausen 이 분모를 치우고 나면 $B_n/n$ 을 $p$ 진수로 볼 수 있다. **Kummer 합동**은 이 값이 $n$ 에 대해 연속임을 말한다.
+von Staudt–Clausen 이 분모를 치우고 나면 $B_n/n$ 을 $p$ 진수로 볼 수 있다. 이 값이 $n$ 에 대해 연속이라는 것이 **Kummer 합동**이다.
 
 $$
 m\equiv n\pmod{p-1},\quad (p-1)\nmid m

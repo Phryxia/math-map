@@ -52,7 +52,7 @@ $$
 \varphi_{c',d'}(v \circ f \circ Fu) = Gv \circ \varphi_{c,d}(f) \circ u
 $$
 
-가 성립함을 말한다. 이 관계를 다음과 같이 적는다.
+가 성립하는 것이다. 이 관계를 다음과 같이 적는다.
 
 $$
 F \dashv G

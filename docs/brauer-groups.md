@@ -128,7 +128,7 @@ $$
 $X(K)\subset X(\mathbb A_K)^{\mathrm{Br}}\subset X(\mathbb A_K)$ 가 항상 성립한다. 가운데가 비어 있는데 오른쪽이 비어 있지 않으면 Hasse 원리가 깨지고 그 깨짐이 Brauer 군으로 설명된다.
 
 - 원뿔곡선과 이차형식에서는 $\mathrm{Br}(X)=\mathrm{Br}(K)$ 라 장애가 없고 Hasse 원리가 성립한다.
-- 유리곡면과 여러 곡면에서는 장애가 나타나고, Colliot-Thélène 과 Sansuc 의 추측은 유리 연결 다양체에서 이 장애가 유일한 장애라고 말한다.
+- 유리곡면과 여러 곡면에서는 장애가 나타나고, Colliot-Thélène 과 Sansuc 은 유리 연결 다양체에서 이 장애가 유일한 장애라고 추측했다.
 - 곡선에서는 이 장애가 충분하지 않을 수 있고 Skorobogatov 가 그런 예를 만들었다. 하강을 결합한 더 정교한 장애가 필요하다.
 
 # 활용

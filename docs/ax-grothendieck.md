@@ -67,7 +67,7 @@ $\mathrm{ACF}\_0\not\models\sigma$ 라 하면 $\mathrm{ACF}\_0\cup\lbrace\neg\si
 # 활용
 
 - **대수기하의 증명 이전.** 특성 $p$ 에서 확인한 1차 성질을 특성 $0$ 으로 옮기는 논법의 표준 예다. 유한체의 점 세기를 쓸 수 있는 진술이면 같은 전략이 통한다.
-- **Jacobi 추측과의 대비.** Jacobi 추측은 특성 $0$ 에서 Jacobi 행렬식이 $0$ 아닌 상수인 다항식 사상이 다항식 역을 갖는다고 말한다. Ax–Grothendieck 은 단사에서 전사를 주지만 역사상이 [다항식](polynomial-rings.md)인지는 말하지 않는다.
+- **Jacobi 추측과의 대비.** Jacobi 추측은 특성 $0$ 에서 Jacobi 행렬식이 $0$ 아닌 상수인 다항식 사상이 다항식 역을 갖는다는 것이다. Ax–Grothendieck 으로는 단사에서 전사가 나오지만 역사상이 [다항식](polynomial-rings.md)인지는 나오지 않는다.
 - **양화사 소거의 응용.** 대수적 닫힌 체의 이론이 양화사 소거를 가지므로 구성 가능 집합의 상이 구성 가능하다는 Chevalley 정리가 같은 자리에서 나온다.
 
 [^1]: James Ax, *The elementary theory of finite fields*, Ann. of Math. 88 (1968), 239–271. Grothendieck 은 EGA IV, 10.4.11 에서 스킴의 언어로 같은 결과를 얻었다.
