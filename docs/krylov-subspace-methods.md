@@ -40,7 +40,7 @@ $$
 A Q_m \thinspace=\thinspace Q_{m+1} \tilde H_m, \qquad Q_m^{\top} A Q_m \thinspace=\thinspace H_m
 $$
 
-$A$ 가 대칭이면 $H_m$ 이 삼중대각이 되어 직교화가 바로 앞 두 벡터에만 걸린다. 이 형태를 **Lanczos 반복**이라 한다.[^1]
+$A$ 가 대칭이면 $H_m$ 이 [삼중대각](tridiagonal-systems.md)이 되어 직교화가 바로 앞 두 벡터에만 걸린다. 이 형태를 **Lanczos 반복**이라 한다.[^1]
 
 ```javascript
 // 대칭 A 에 대한 Lanczos 반복. matvec(v) 가 A 와 벡터의 곱을 준다.
