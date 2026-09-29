@@ -142,7 +142,7 @@ DDP 공식의 형태는 클러스터 변수의 뒤집기 규칙과 같다. 이 �
 
 - [WKB 근사](wkb-approximation.md)
 - [Resurgence 이론](resurgence.md)
-- [Padé 근사와 Borel 재합산](borel-pade.md)
+- [Borel–Padé 재합산](borel-pade.md)
 
 ## 더 알아보기
 

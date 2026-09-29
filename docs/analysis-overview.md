@@ -93,7 +93,7 @@ graph TD
 - [Laplace 방법](laplace-method.md): 지수적으로 집중된 적분의 주항
 - [정상위상법](stationary-phase.md): 진동적분의 위상이 멈추는 자리
 - [Stokes 현상](stokes-phenomenon.md): 점근전개의 계수가 불연속으로 바뀌는 선
-- [Padé 근사와 Borel 재합산](borel-pade.md): 발산급수에 값을 주는 두 방법
+- [Borel–Padé 재합산](borel-pade.md): Borel 변환의 해석적 연장을 Padé 근사로 대신하는 절차, 가짜 극점과 등각사상 재합산
 - [Resurgence 이론](resurgence.md): 섭동급수와 비섭동 효과의 연결
 - [Airy 함수](airy-functions.md): 회전점 근방의 표준형
 - [WKB 근사](wkb-approximation.md)(Wentzel–Kramers–Brillouin): 작은 매개변수를 가진 방정식의 지수적 해

@@ -137,6 +137,6 @@ Borel 변환을 유리함수로 근사(Padé)한 뒤 Laplace 적분하는 방식
 
 - [Airy 함수](airy-functions.md)
 - [Resurgence 이론](resurgence.md)
-- [Padé 근사와 Borel 재합산](borel-pade.md)
+- [Borel–Padé 재합산](borel-pade.md)
 
 #analysis #complex_analysis #computation

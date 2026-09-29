@@ -1,8 +1,8 @@
-# Padé 근사와 Borel 재합산
+# Borel–Padé 재합산
 
 # 개요
 
-Padé 근사는 급수의 계수로 유리함수를 맞춰 수렴 반경 너머의 값과 특이점 배치를 얻는 방법이며, Borel 재합산의 실행 단계를 담당한다.
+Borel–Padé 재합산은 Borel 변환의 해석적 연장을 Padé 근사로 대신하는 절차다. Padé 근사는 급수의 계수로 유리함수를 맞춰 수렴 반경 너머의 값과 특이점 배치를 얻는 방법이다.
 
 [Stokes 현상](stokes-phenomenon.md)의 Borel 합
 
