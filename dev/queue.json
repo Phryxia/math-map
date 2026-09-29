@@ -1,48 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-09-29T09:02:02.652Z",
-  "nextSeq": 1449,
+  "savedAt": "2026-09-29T13:03:33.518Z",
+  "nextSeq": 1460,
   "items": [
-    {
-      "id": "88ee275c",
-      "title": "정의 없이 쓴 용어 훑기 (전체 훑기 24차)",
-      "priority": 12,
-      "note": "23차 note 를 잇는다. 2026-09-29 셋째 회차에 연결성 갈래를 열고 닫았다.\n\n세는 방법은 23차 note 와 같다. 정규식 (?<![가-힣A-Za-z0-9])연결성(?![가-힣]) 로 28 건이 나왔고 이미 (connectedness.md) 링크가 있는 문서는 뺐다.\n\n판정. 링크를 건 것 0 건이다. 28 건 가운데 24 건이 그래프 이론의 연결성이라 connectedness.md 가 가리킬 대상이 아니다(동적 연결성 10 건, 대수적 연결성과 Fiedler 값, k 연결성, 무향 연결성 로그공간, 그래프 개관과 graphs 의 목록 설명, erdos-renyi 와 supersingular-isogeny-graphs 와 expander-graphs 의 절 이름). connectedness.md 는 태그가 #topology #analysis 이고 정의가 위상 공간의 분리로 되어 있어 그래프의 연결성과 다른 개념이다. 남은 4 건은 대수기하의 연결성 정리(hartshorne-lichtenbaum 95 와 각주, set-theoretic-complete-intersection 87 과 89)이고 Zariski 위상의 연결을 가리키지만 두 문서 다 절 이름과 한 문장짜리 언급이라 본문 링크를 걸 자리가 마땅치 않다.\n\n이 갈래에서 얻은 기준. 한국어 용어 하나가 서로 다른 두 분야의 개념을 가리키면 문서 수만 보고 갈래를 열지 말 것. 세기 전에 그 용어를 쓰는 문서의 첫 태그 분포를 먼저 보면 이런 헛수고를 피한다.\n\n대신 그 문서 자신을 4절대로 고쳤다(커밋 a0025ab, 173줄 -> 169줄). 개요의 '연결성의 요점은 세 가지다' 예고문과 세 항목 목록, '여러 존재 정리를 낳는다', '묻는 성질이다' 를 지웠다. 직관 절은 4절 설명의 순서대로 다시 썼다. 유리수 정의역에서 (x)=x^2-2$ 의 중간값 정리가 깨지는 계산을 보이고, 막힌 이유(정의역이 두 열린 조각으로 갈라짐)에서 연결성의 이름이 마지막에 붙는다. 옛 직관 절의 세 문단은 큰따옴표로 감싼 비유('한 덩어리인가', '쪼갤 수 없음', '이어져 있음')가 골자였고 위상학자의 사인 곡선은 성질 절 113 에 이미 있다. 활용 절에서 '고전적 논증', '강점이 있다', '미적분학의 기본 정리가 … 잇듯' 수사, 큰따옴표 네 곳을 고쳤다. 옛 직관 절이 갖고 있던 graphs, union-find, dynamic-connectivity 링크는 활용 절 '이산 구조와의 대비' 로 옮겼다.\n\n23차 note 의 다음 후보는 그대로다. functions 230, sets 176, proofs 171, lattices 76, primes 73, manifolds 57, derivative 48, cohomology 46, graphs 45, category 20, modules 19, cardinality 17, determinants 16, measure 13. 이 가운데 lattices(격자), graphs(그래프), category(범주), modules(가군) 는 이번에 얻은 기준에 걸린다. 격자는 순서론의 격자와 정수론의 격자가 다른 개념이고, 가군은 'Λ 가군', 'D 가군', 'Galois 가군' 처럼 앞에 수식어가 붙은 복합어가 대부분이다. 먼저 첫 태그 분포를 볼 것. derivative(미분)와 determinants(행렬식)가 복합어가 적어 다음 차수에 낫다.",
-      "createdAt": "2026-09-29T08:49:15.301Z",
-      "seq": 1438
-    },
-    {
-      "id": "3143ac0e",
-      "title": "최적화 분야 통독 (12번째 문서부터)",
-      "priority": 12,
-      "note": "2026-09-29 셋째 회차에 열한째 문서 lovasz-theta 를 끝냈다(166줄 -> 166줄. 분량을 늘리지 않았다). 최적화 주 분야 문서 13 개 가운데 끝낸 것은 stochastic-gradient-descent(1), convexity(2), lagrange-duality(3), linear-programming(4), semidefinite-programming(5), optimization-overview(6), gradient-descent(7), newton-method(8), unbalanced-optimal-transport(9), wasserstein-gradient-flow(10), lovasz-theta(11) 이다. 남은 둘은 줄 수 순으로 sinkhorn 197, optimal-transport 198 이다.\n\nlovasz-theta 에서 고친 것은 열하나이고 그중 하나는 수학 오류다(커밋 1b5b9ef).\n\n수학 오류. 직관 절 21줄이 '인접한 두 정점의 벡터는 직교하게 하고' 였는데 정의 절 41줄의 직교 표현은 '\\notin E$ 일 때 직교' 다. 둘이 반대이고 정의 절 쪽이 맞다. 직관 절을 '인접하지 않은 두 정점의 벡터는 서로 직교하게 한다' 로 고쳤다. 뒤따르는 23줄의 '여집합 관계를 뒤집으면 … 상황을 만들 수 있다' 도 이 오류를 감추려고 끼워 넣은 문장이라 '독립집합 $ 의 정점들은 서로 인접하지 않으므로 그 벡터들이 서로 직교한다' 로 바꿨다. 클릭 덮개 상계(29줄)는 고친 규약과 어긋나지 않아 그대로 두었다.\n\n문체. (1) 5줄 '쓸모가 제한된다' 를 '$\\chi(G)$ 를 좁히지 못한다' 로 바꿨다. 무엇이 안 되는지를 말한다. (2) 13줄 '샌드위치 정리라 불리는 이 결과가 … 첫 사례이며, … 앞선다' 를 두 문장으로 나눴다. 피동과 이어 붙임이 한 곳에 있었다. (3) 25줄 '… 완화되면서 실행가능 영역이 볼록해지고 최적화가 다항시간이 된다' 를 두 문장으로 나누고 피동을 풀었다. (4) 87줄 헤딩 '## 완전그래프에서의 붕괴' 를 '## 완전그래프에서의 등호' 로 바꿨다. 붕괴는 비유다. (5) 106줄 '고윳값이 함께 읽힌다' 피동을 '고윳값을 함께 읽는다' 로 바꿨다. (6) 128줄 **SDP** 의 굵은 표시를 뺐다. 이 문서가 정의하는 용어가 아니다. (7) 128줄 '유일 게임 추측 아래에서는 … 결과들이 알려져 있다' 를 '[유일게임 추측](unique-games.md)을 가정하면 … 넘지 못한다' 로 바꾸고 본문 링크를 걸었다. 저장소에 unique-games 문서가 있는데 링크가 없었다. (8) 136줄 '무오류 용량의 일반 상계 가운데 가장 쓸 만한 것이다' 를 지웠다. 뒤 문장이 이미 구체적으로 말한다. (9) 140줄 '완화가 타이트하다' 를 '완화의 값이 정확하다' 로 바꿨다.\n\n손대지 않은 것. 102줄 '$ 의 Shannon 용량은 결정되지 않았다[^2]' 는 4절이 허용하는 꼴이다. Lovász 의 1979 년 논문이 그렇게 쓴 것을 각주가 밝힌다.\n\n남은 두 문서를 볼 때의 예고. sinkhorn 과 optimal-transport 는 둘 다 wasserstein-gradient-flow 와 unbalanced-optimal-transport 의 이웃이라 같은 정의를 되풀이할 가능성이 있다. 통독할 때 세 문서에 같은 표나 같은 유도가 들어 있는지 함께 볼 것. 8절 통합 기준에 걸리면 큐에 따로 올린다.",
-      "createdAt": "2026-09-29T08:50:50.505Z",
-      "seq": 1439
-    },
-    {
-      "id": "b76b2a59",
-      "title": "Zilber 삼분법의 후속 간선 (11차)",
-      "priority": 12,
-      "note": "2026-09-29 둘째 회차에 10차 note 가 굳혀 둔 빈자리 하나를 메웠다. solvable-groups(\"가해군\", 104줄)를 새로 썼고 부모는 groups 하나다(커밋 9cb27ac).\n\n제목을 \"가해군\" 하나로 좁혔다. 10차 note 는 \"군의 멱영성과 가해성\" 이라 적었으나 4절 제목 규칙이 \"A와 B\" 꼴을 막는다. 멱영군이 가해군의 특수 사례이므로 가해군 문서가 멱영군을 부분으로 거느리는 구조로 짰다. 정의 절은 유도열, 정규열 판정, 멱영군(하강 중심열) 셋이고 성질 절은 부분군과 몫의 유전, 멱영과 가해의 포함(반례 S_3), 유한 멱영군의 Sylow 직적 분해, Burnside 와 Feit-Thompson 넷이다. 각주 셋은 Burnside 1904, Feit-Thompson 1963, Shafarevich 1954 다.\n\n흩어져 있던 정의를 한 자리로 모았다. 가해군의 정의가 finite-simple-groups 74(합성인자로 정의)와 galois-theory 111(가환 몫 정규열로 정의) 둘에 있었다. 두 자리는 각자의 맥락에 필요하므로 그대로 두고, 첫 등장에 본문 링크를 걸었다(galois-theory 7 의 \"가해군(solvable group)\", finite-simple-groups 46 의 Feit-Thompson 인용문). 개관 갈래는 abstract-algebra-overview 군론 절의 Sylow 줄 앞에 넣었다.\n\n간선은 groups 하나만 그었다. galois-theory 와 finite-simple-groups 를 자식으로 둘지 보았으나 둘 다 부모가 이미 있고, 5절 기준으로 두 문서가 가해군의 특수 사례나 확장이 아니라 가해군을 도구로 쓰는 관계라 본문 링크로 충분하다. solvable-groups 는 리프로 두었다.\n\n10차 note 가 남긴 다른 빈자리는 그대로다. 중심화군과 정규화군을 다루는 문서가 없다. solvable-groups 의 유한 멱영군 분해 증명이 \"자기 정규화군\" 을 링크 없이 쓰고 있고 sylow-theorems 와 finite-simple-groups 도 같은 용어를 쓴다. 부모는 group-actions 나 groups 가 후보다. 군의 표현론 쪽 문서들이 켤레류를 쓰므로 켤레류도 같은 문서에 들어갈 수 있다.\n\nsolvable-groups 의 후속 후보. (1) 초가해군과 다중순환군. 지금 문서에 없고 가해군의 세분이라 자식 자리가 맞다. (2) Hall 부분군과 Hall 정리. 가해군에서만 성립하는 Sylow 정리의 일반화이므로 solvable-groups 와 sylow-theorems 둘을 부모로 둘 수 있고 check-cycle 이 필요하다. (3) Fitting 부분군. 유한 멱영군 분해 절의 연장이다.",
-      "createdAt": "2026-09-29T08:51:22.230Z",
-      "seq": 1440
-    },
-    {
-      "id": "78b5fb00",
-      "title": "환론 축의 후속 간선 (11차)",
-      "priority": 12,
-      "note": "2026-09-29 셋째 회차에 10차 note 가 판정해 둔 분할을 실행했다. p-adic-numbers 에서 Hensel 을 떼어 hensel-lemma(\"Hensel 보조정리\", 110줄)를 새로 썼다(커밋 55dc3a6). 부모는 p-adic-numbers 하나다. p-adic-numbers 는 190줄에서 182줄이 되었다.\n\n10차 note 의 계획을 그대로 따랐다. discrete-valuation-rings 를 둘째 부모로 두지 않았다. 완비 이산부값환에서 성립한다는 것은 성질 절 '## 성립 범위' 의 한 문단으로 넣고 본문 링크만 걸었다. 5절의 부모 1~3 개 기준에서 하나로 충분하다.\n\n새 문서의 구성. 직관 절은 $\\mathbb Z_7$ 에서 ^2=2$ 를 두 자리 올리는 계산 하나를 끝까지 끌고 간다. 매 단계가 계수 a$ 인 일차합동식이고 그 계수가 '(a)$ 라는 것이 마지막 문단에서 드러난다. 4절 설명의 순서를 따른 것이고 정리의 이름은 성질 절에서 처음 나온다. 성질 절은 강한 형태의 진술, Newton 반복과 Taylor 전개로 쓴 증명의 요지, 이차 수렴, 성립 범위, $\\mathbb Q_p$ 에서의 따름 셋이다. 활용 절 첫 항목에 JavaScript 의사코드를 넣었다. 4절 코드 규칙이 'Hensel 올리기' 를 코드가 곧 정의의 실행인 예로 들고 있다. 각주 둘은 Serre 1973 II 장 §2 와 Neukirch 1999 II 장 §4 다.\n\np-adic-numbers 쪽 정리. 성질 절 112 는 진술 한 문단과 링크만 남기고 따름 셋(제곱원소 판정, Teichmüller, 불분기 확대)을 새 문서로 옮겼다. 직관 절 43 의 'Hensel 과 Newton 법' 은 남기되 새 문서와 같은 문장이 되지 않게 마지막 문단을 줄였다. 활용 절 141 의 인수분해와 선형대수 두 문단은 한 문단으로 줄이고 절차는 새 문서로 넘겼다. 이 과정에서 원문의 $\\mathbb Z[x]$ 를 \\lbrack \\rbrack 으로 고쳤다. 4절 대괄호 규칙에 걸리는 자리는 아니었으나 표기를 맞췄다.\n\n개관은 number-theory-overview 74 의 'p 진수 -> Newton 다각형, 아델' 줄 앞에 Hensel 보조정리를 넣었다. README 의 문서 수를 565, 간선 수를 1012 로 맞췄다.\n\nhensel-lemma 의 후속 후보. (1) Newton 다각형은 이미 p-adic-numbers 의 자식이다. Hensel 이 단순근만 다루고 중근은 Newton 다각형이 다루므로 hensel-lemma 를 newton-polygon 의 둘째 부모로 둘지 다음 차수에 check-cycle 로 볼 것. (2) LLL 알고리즘. 활용 절 '다항식 인수분해' 가 LLL 을 링크 없이 이름만 쓴다. lattices 문서가 격자 환원을 다루지만 LLL 자체 문서는 없다. 부모는 lattices 가 맞다.\n\n9차 note 가 큐에 넣은 다른 후보는 그대로다. 유한생성 아벨군을 주 아이디얼 정역 위의 가군 구조 정리로 다루는 문서가 없다.",
-      "createdAt": "2026-09-29T08:54:04.536Z",
-      "seq": 1441
-    },
-    {
-      "id": "c84aa912",
-      "title": "다중격자의 후속 간선 (16차)",
-      "priority": 12,
-      "note": "2026-09-29 셋째 회차에 15차의 둘째 후보를 처리했다. cross-validation(\"교차검증\", 85줄)을 새로 썼다(커밋 3737ec4). 부모는 linear-regression 하나다. 성질 절 첫 항목이 사영행렬의 대각원소로 LOOCV 를 닫는 계산이라 부모가 본문에서 드러난다.\n\n간선 판단. sherman-morrison 을 둘째 부모로 두지 않았다. 닫힌 꼴의 증명에서 랭크 1 갱신을 도구로 한 번 쓸 뿐이고 교차검증이 그 공식의 특수 사례나 확장이 아니다. 본문 링크만 걸었다(cross-validation 성질 절). 같은 기준을 13차에 line-relaxation, 14차에 tridiagonal-systems 에 적용했다.\n\n문서의 구성. 직관 절은 자료점 n 개에 다항식을 맞추는 예 하나를 끝까지 끌고 간다. 차수가 n-1 이면 잔차가 0 이 되어 잔차제곱합이 기준이 못 된다는 계산에서 막히고, 거기서 점 하나를 빼는 수가 나온다. 정의 절은 K 겹과 하나 빼기 둘이고, 성질 절은 선형 적합에서의 닫힌 꼴, 편향과 분산, 잘못된 나누기 셋이다. 각주 둘은 Allen 1974(PRESS 의 원 출처)와 Hastie-Tibshirani-Friedman 2009 7 장이다.\n\n큐 조작 주의. note 를 bash 한 줄로 넘기지 말 것. 괄호 앞에 달러 기호가 오면 셸이 명령 치환으로 읽는다. heredoc 으로 파일에 쓴 뒤 --note \"$(cat 파일)\" 로 넘긴다.\n\ncross-validation 의 후속 후보. (1) 능형회귀와 라소. 활용 절 첫 항목이 둘을 이름만 쓰고 링크가 없다. 저장소에 정칙화 문서가 없다. linear-regression 이 정칙화를 한 절로 다루므로 부모는 거기다. (2) 편향-분산 분해. 성질 절 둘째 항목의 근거이고 문서가 없다.\n\n15차 note 의 남은 후보. (3) 저계수 근사. gaussian-processes 62 가 자료가 많으면 저계수 근사를 쓴다고만 적는다. Nystrom 근사와 유도점 방법이 여기 든다.\n\n13차 note 의 남은 후보. (2) 블록 삼중대각계와 블록 Thomas 알고리즘. (3) 3 차 스플라인 보간. 저장소에 보간 문서가 하나도 없다.\n\n11차 note 의 남은 후보는 그대로다. (1) domain-decomposition 의 FETI 와 BDDC, 부분공간 보정 정리. (2) incomplete-lu 의 희소 행렬 정렬과 근사 역행렬 전처리. (6) 다중격자의 수렴 증명. semicoarsening 쪽: 시공간 다중격자. smoothed-aggregation 쪽: 적응적 평활 응집, 에지 요소와 Maxwell 계. full-multigrid 쪽: 격자 적응과 사후 오차 추정. full-approximation-scheme 쪽: tau 보정과 이중 격자 외삽, 비선형 Gauss-Seidel 과 국소 완화.",
-      "createdAt": "2026-09-29T08:58:45.938Z",
-      "seq": 1445
-    },
     {
       "id": "cb422273",
       "title": "본문 링크가 수식 안에 들어가는 사고의 검사",
@@ -50,6 +10,46 @@
       "note": "상시 항목. 링크를 문자열 위치로 삽입하거나 해제하는 작업을 하는 회차에서는 그 작업과 함께 돌리고, 그런 작업이 없는 회차에서는 건너뛴다.\n\n2026-09-29 셋째 회차에 두 번 돌렸다. 회차 앞부분에 564 개, 회차 끝에 567 개와 README 를 전수로 돌렸다. 두 번 다 수식 안 링크 0 건, 헤딩 안 링크 0 건, 중첩 링크 0 건이다. 이 회차는 sherman-morrison, kalman-filter, cross-validation, hensel-lemma 를 새로 쓰며 tridiagonal-systems, p-adic-numbers, newton-polygon, linear-regression, schur-complement 와 개관 넷의 목록에 링크를 삽입했으므로 돌릴 조건에 해당했다.\n\n검사 방법. python3 로 각 줄을 읽고 코드블록 구간을 건너뛴 뒤 셋을 본다. (1) 인라인 수식 스팬을 (?<!\\\\)\\$([^$\\n]+)(?<!\\\\)\\$ 로 잡고 링크 시작 위치가 그 구간 안에 들어가는지 본다. (2) 줄이 # 으로 시작하면 그 줄의 링크를 헤딩 안 링크로 본다. (3) 중첩은 라벨 안에 대괄호가 또 있는 링크다.\n\n라벨 패턴 주의. 링크 라벨은 반드시 [^\\]\\[]* 로 좁혀 라벨 안에 대괄호가 오지 못하게 한다. 이 패턴에서 (1)(2)(3) 이 모두 0 건이다.\n\n오탐 둘. 중첩 검사를 '라벨에 대괄호가 있는 링크' 로 곧이곧대로 짜면 measure 86 과 vitali-set 23 이 반드시 걸린다. 두 줄 다 수식 $[0,1)$ 의 여는 대괄호가 같은 줄 뒤에 있는 진짜 링크의 '](' 와 짝지어진 것이다. 이 둘이 나오면 오탐이니 넘어가고, 그 밖의 것이 나오면 진짜다. 둘째 회차와 셋째 회차가 같은 결론에 이르렀으므로 다음 차수는 이 두 줄을 다시 조사하지 말 것.\n\n라벨을 좁히지 않은 채 '중첩 링크 후보' 를 세면 수식의 이중 대괄호 때문에 70 건 가까이 나온다. 전부 수식이므로 그 수치를 보고 놀라지 말 것.",
       "createdAt": "2026-09-29T08:59:36.144Z",
       "seq": 1446
+    },
+    {
+      "id": "6c852647",
+      "title": "정의 없이 쓴 용어 훑기 (전체 훑기 25차)",
+      "priority": 12,
+      "note": "24차 note 를 잇는다. 2026-09-29 넷째 회차에 미분 갈래를 열고 닫았다.\n\n세는 방법은 23차 note 와 같다. 정규식 (?<![가-힣A-Za-z0-9])미분(?![가-힣]) 로 48 건이 나왔고 이미 (derivative.md) 링크가 있는 문서를 뺀 후보가 47 개였다.\n\n24차에서 얻은 기준대로 먼저 첫 태그 분포를 보았다. #analysis 14 에 #differential_geometry 5, #field_theory 3, #logic 4 가 섞여 있어 동음이의가 있음을 미리 알았다. 실제로 47 개 가운데 40 개가 derivative.md 가 가리킬 대상이 아니다. 미분 작용소(banach-spaces, bounded-operators, unbounded-operators, sturm-liouville, hilbert-spaces), 미분 대수와 미분 닫힌 체(differential-galois-theory, differentially-closed-fields, group-configuration, stable-theories, foundations-overview, abstract-algebra-overview, galois-theory), 미분 형식(riemannian-metrics, de-rham-cohomology, postnikov-tower, vector-bundles), alien 미분(resurgence), 개관 지도의 mermaid 노드(complex-analysis-overview, differential-geometry-overview, machine-learning-overview, optimization-overview, statistics-overview) 가 그것이다.\n\n링크를 건 것 3 건이다. rademacher-theorem 5, proximal-gradient-method 5, baire-category 11 이고 셋 다 개요나 직관의 첫 문장에서 미분가능성이 진술의 주역이다. 나머지 후보(characteristic-functions 84, dominated-convergence 86, exponential-families 89, stochastic-approximation 49, stirling-numbers 59)는 미분을 도구로 한 번 쓰는 자리라 걸지 않았다.\n\n이 갈래에서 얻은 기준. 한국어 용어가 복합어의 앞머리로 흔히 쓰이면(미분 작용소, 미분 형식, 미분 대수) 뒤에 한글이 오지 않는 정규식으로도 걸러지지 않는다. 뒤에 공백과 다른 명사가 오는 경우를 따로 세어 후보에서 빼면 47 개를 훑는 대신 7 개만 보면 된다.\n\n24차 note 의 다음 후보에서 미분을 뺀 목록이다. functions 230, sets 176, proofs 171, primes 73, manifolds 57, cohomology 46, cardinality 17, determinants 16, measure 13. lattices(격자), graphs(그래프), category(범주), modules(가군) 는 동음이의나 복합어로 걸린다. determinants(행렬식)와 cardinality(기수)가 복합어가 적어 다음 차수에 낫다.",
+      "createdAt": "2026-09-29T12:40:50.586Z",
+      "seq": 1449
+    },
+    {
+      "id": "9a17b3a7",
+      "title": "Zilber 삼분법의 후속 간선 (12차)",
+      "priority": 12,
+      "note": "11차 note 가 굳혀 둔 빈자리를 2026-09-29 넷째 회차에 메웠다. normalizer(\"정규화군\", 97줄)를 새로 썼고 부모는 group-actions 하나다(커밋 2c0f608).\n\n제목을 \"정규화군\" 하나로 좁혔다. 11차 note 는 중심화군과 정규화군을 한 문서에 담으라고 적었으나 4절 제목 규칙이 \"A와 B\" 꼴을 막는다. 한 원소짜리 집합의 정규화군이 그 원소의 중심화군이므로($N_G(\\lbrace x\\rbrace)=C_G(x)$) 중심화군이 정규화군의 특수 사례로 정확히 들어온다. 정의 절은 정규화군, 중심화군, 켤레 작용의 안정자 셋이고 성질 절은 켤레 개수의 지표 공식과 류 방정식, N/C 정리, 최대성, 자기 정규화 부분군 넷이다. 직관 절은 $S_3$ 의 $H=\\lbrace e,(12)\\rbrace$ 하나로 끌고 갔다. 잉여류 곱이 한 잉여류에 모이지 않는 계산을 먼저 보이고, 막힌 이유($gHg^{-1}\\ne H$)에서 정규화군의 이름이 마지막에 붙는다.\n\n흩어져 있던 용어에 링크를 걸었다. sylow-theorems 40 의 \"정규화부분군\", finite-simple-groups 48 의 \"중심화군\"(굵은 글씨를 링크로 바꿨다. 그 문서가 정의하는 용어가 아니다), solvable-groups 73 의 \"자기 정규화군\" 셋이다. 개관 갈래는 abstract-algebra-overview 군론 절의 가해군 줄 앞에 넣었다.\n\n간선은 group-actions 하나만 그었다. sylow-theorems 를 자식으로 둘지 보았으나 5절 기준으로 Sylow 정리가 정규화군의 특수 사례나 확장이 아니라 정규화군을 도구로 쓰는 관계라 본문 링크로 충분하다. normalizer 는 리프로 두었다.\n\n아직 링크를 걸지 않은 자리가 남아 있다. group-configuration 57, bad-groups 15, fundamental-lemma 35 와 52 가 중심화군을 링크 없이 쓴다. 셋 다 모델이론과 표현론 문맥이고 중심화군이 문장의 주역이 아니라 이번에는 넘겼다. etale-fundamental-group 74 의 표에 있는 \"안정자의 정규화군 몫\" 도 같다.\n\n11차 note 가 남긴 다른 빈자리는 그대로다. 켤레류 자체를 다루는 문서가 없다. normalizer 의 켤레 개수 절과 group-actions 의 류 방정식 절이 켤레류를 쓰지만 정의는 group-actions 표 한 줄뿐이다. 군의 표현론 문서들(group-representations, character-theory 계열)이 켤레류를 전제하므로 부모는 group-actions 나 normalizer 가 후보다.",
+      "createdAt": "2026-09-29T12:49:02.542Z",
+      "seq": 1451
+    },
+    {
+      "id": "596aa7f7",
+      "title": "환론 축의 후속 간선 (11차)",
+      "priority": 12,
+      "note": "2026-09-29 셋째 회차에 10차 note 가 판정해 둔 분할을 실행했다. p-adic-numbers 에서 Hensel 을 떼어 hensel-lemma(\"Hensel 보조정리\", 110줄)를 새로 썼다(커밋 55dc3a6). 부모는 p-adic-numbers 하나다. p-adic-numbers 는 190줄에서 182줄이 되었다.\n\n10차 note 의 계획을 그대로 따랐다. discrete-valuation-rings 를 둘째 부모로 두지 않았다. 완비 이산부값환에서 성립한다는 것은 성질 절 '## 성립 범위' 의 한 문단으로 넣고 본문 링크만 걸었다. 5절의 부모 1~3 개 기준에서 하나로 충분하다.\n\n새 문서의 구성. 직관 절은 $\\mathbb Z_7$ 에서 ^2=2$ 를 두 자리 올리는 계산 하나를 끝까지 끌고 간다. 매 단계가 계수 a$ 인 일차합동식이고 그 계수가 '(a)$ 라는 것이 마지막 문단에서 드러난다. 4절 설명의 순서를 따른 것이고 정리의 이름은 성질 절에서 처음 나온다. 성질 절은 강한 형태의 진술, Newton 반복과 Taylor 전개로 쓴 증명의 요지, 이차 수렴, 성립 범위, $\\mathbb Q_p$ 에서의 따름 셋이다. 활용 절 첫 항목에 JavaScript 의사코드를 넣었다. 4절 코드 규칙이 'Hensel 올리기' 를 코드가 곧 정의의 실행인 예로 들고 있다. 각주 둘은 Serre 1973 II 장 §2 와 Neukirch 1999 II 장 §4 다.\n\np-adic-numbers 쪽 정리. 성질 절 112 는 진술 한 문단과 링크만 남기고 따름 셋(제곱원소 판정, Teichmüller, 불분기 확대)을 새 문서로 옮겼다. 직관 절 43 의 'Hensel 과 Newton 법' 은 남기되 새 문서와 같은 문장이 되지 않게 마지막 문단을 줄였다. 활용 절 141 의 인수분해와 선형대수 두 문단은 한 문단으로 줄이고 절차는 새 문서로 넘겼다. 이 과정에서 원문의 $\\mathbb Z[x]$ 를 \\lbrack \\rbrack 으로 고쳤다. 4절 대괄호 규칙에 걸리는 자리는 아니었으나 표기를 맞췄다.\n\n개관은 number-theory-overview 74 의 'p 진수 -> Newton 다각형, 아델' 줄 앞에 Hensel 보조정리를 넣었다. README 의 문서 수를 565, 간선 수를 1012 로 맞췄다.\n\nhensel-lemma 의 후속 후보. (1) Newton 다각형은 이미 p-adic-numbers 의 자식이다. Hensel 이 단순근만 다루고 중근은 Newton 다각형이 다루므로 hensel-lemma 를 newton-polygon 의 둘째 부모로 둘지 다음 차수에 check-cycle 로 볼 것. (2) LLL 알고리즘. 활용 절 '다항식 인수분해' 가 LLL 을 링크 없이 이름만 쓴다. lattices 문서가 격자 환원을 다루지만 LLL 자체 문서는 없다. 부모는 lattices 가 맞다.\n\n9차 note 가 큐에 넣은 다른 후보는 그대로다. 유한생성 아벨군을 주 아이디얼 정역 위의 가군 구조 정리로 다루는 문서가 없다.",
+      "createdAt": "2026-09-29T12:55:14.179Z",
+      "seq": 1455
+    },
+    {
+      "id": "d08f0da9",
+      "title": "다중격자의 후속 간선 (17차)",
+      "priority": 12,
+      "note": "16차 note 를 잇는다. 2026-09-29 넷째 회차에 첫째 후보를 처리했다. bias-variance-decomposition(\"편향-분산 분해\", 83줄)을 새로 썼다(커밋 1ea332d). 부모는 linear-regression 하나다.\n\n간선 판단. cross-validation 을 둘째 부모로 두지 않았다. 교차검증이 재는 것이 편향과 분산과 잡음의 합이지만, 편향-분산 분해가 교차검증의 특수 사례나 확장이 아니라 교차검증이 이 분해의 결과를 쓰는 관계다. 본문 링크만 걸었다(활용 절 \"모형 선택\"). 13차부터 이어 온 기준을 그대로 적용했다.\n\n문서의 구성. 직관 절은 표본평균을 c 배로 줄인 추정량 하나를 끝까지 끌고 간다. 평균제곱오차를 전개하면 두 항이 나오고, c 로 미분해 얻은 최적값이 1 보다 작다는 계산에서 불편추정량이 최적이 아님이 드러난다. 두 항의 이름(분산, 편향의 제곱)은 마지막 문장에서 붙는다. 정의 절은 추정량의 분해와 예측오차의 분해 둘이고, 성질 절은 교차항이 사라지는 증명, 선형회귀에서 분산의 합이 p 시그마제곱인 것, 분해가 항등식이지 절충의 증명이 아니라는 것 셋이다.\n\n16차 note 가 남긴 후보. (1) 능형회귀와 라소. cross-validation 활용 절과 bias-variance-decomposition 활용 절이 둘 다 능형회귀를 이름만 쓰고 링크가 없다. 저장소에 정칙화 문서가 없고 linear-regression 이 정칙화를 한 절로 다루므로 부모는 거기다. 이제 bias-variance-decomposition 도 부모 후보다. 축소가 편향을 넣어 분산을 줄이는 것이 그 문서의 활용 절 첫 항목이다.\n\n15차 note 의 남은 후보. (3) 저계수 근사. gaussian-processes 62 가 자료가 많으면 저계수 근사를 쓴다고만 적는다. Nystrom 근사와 유도점 방법이 여기 든다.\n\n13차 note 의 남은 후보. (2) 블록 삼중대각계와 블록 Thomas 알고리즘. (3) 3 차 스플라인 보간. 저장소에 보간 문서가 하나도 없다.\n\n11차 note 의 남은 후보는 그대로다. (1) domain-decomposition 의 FETI 와 BDDC, 부분공간 보정 정리. (2) incomplete-lu 의 희소 행렬 정렬과 근사 역행렬 전처리. (6) 다중격자의 수렴 증명. semicoarsening 쪽: 시공간 다중격자. smoothed-aggregation 쪽: 적응적 평활 응집, 에지 요소와 Maxwell 계. full-multigrid 쪽: 격자 적응과 사후 오차 추정. full-approximation-scheme 쪽: tau 보정과 이중 격자 외삽, 비선형 Gauss-Seidel 과 국소 완화.\n\n큐 조작 주의. note 를 bash 한 줄로 넘기지 말 것. 괄호 앞에 달러 기호가 오면 셸이 명령 치환으로 읽는다. heredoc 으로 파일에 쓴 뒤 --note \"$(cat 파일)\" 로 넘긴다.",
+      "createdAt": "2026-09-29T12:57:40.940Z",
+      "seq": 1456
+    },
+    {
+      "id": "d5eb792d",
+      "title": "측도론 분야 통독 (6번째 문서부터)",
+      "priority": 12,
+      "note": "2026-09-29 넷째 회차에 첫째부터 다섯째까지 끝냈다. strong-measure-zero(75 -> 75줄, 커밋 5b47738), vitali-set(82 -> 81줄, 커밋 b15f4e7), loeb-measure(98 -> 98줄, 커밋 4882c0e), bounded-variation(104 -> 104줄, 커밋 eb40e6f), dominated-convergence(116 -> 116줄, 커밋 03fc101)이다. 분량을 늘리지 않았다.\n\n측도론 주 분야 문서 14 개 가운데 남은 것은 줄 수 순으로 measure-theory-overview 84, measurable-functions 122, lebesgue-integral 127, pushforward-measure 129, measure 137, monotone-convergence 139, radon-nikodym 145, change-of-measure 174, uniform-integrability 177 이다. measure-theory-overview 는 개관이므로 4절이 아니라 4.5절 구조로 본다. 대상은 다음으로 뽑는다.\n  for f in docs/*.md; do [ \"$(tail -1 $f | grep -o '#[a-z0-9_]*' | head -1 | tr -d '#')\" = measure_theory ] && wc -l $f; done | sort -n\n\n네 문서에서 고친 것.\n- strong-measure-zero. 직관 절 11 과 13 의 인칭(\"내가 정했다\", \"남이 준다\"). 17 의 요약 문장. 47 의 피동 둘(\"다시 쓰인다\", \"옮겨진다\").\n- vitali-set. 17 이 \"서로 포개지는 조각\" 과 \"겹침 없이\" 를 한 문장에 넣어 모순처럼 읽혔다. 39 의 \"증명은 세 단계다\" 예고문(번호 목록이 바로 뒤에 온다). 63 \"이유를 준다\", 64 \"대비된다\", 65 \"아래에서 막는다\". 구간 표기를 $\\lbrack 0,1)$ 로 통일했다. 45 만 \\lbrack 을 쓰고 있어 한 문서에 두 표기가 섞여 있었다.\n- loeb-measure. 5 의 분열문(\"~이라는 것이 ~이다\"). 7 의 추상명사 주어와 만능동사(\"포화성이 처리한다\"). 13 의 \"가릴 수 없다\"(뜻이 서지 않는다). 17 의 분열문과 메타 서술(\"남은 문제는 ~인지다\", \"그 확인이 이 구성의 내용이다\"). 81 의 read as 직역(\"~에서 읽는 것이 그 예다\"). 구간 표기도 통일했다.\n- dominated-convergence. 13 의 \"$x\\\\lt 1/n$ 인 가장 큰 $n$ 이라\"(주어와 서술어가 맞지 않는다). 활용 절의 \"이 정리 위에 있다\", \"떠받친다\" 비유 둘. 수식 안의 세로줄 둘을 \\\\lvert 로 통일했고, 헤딩과 각주의 유니코드 위첨자 L¹ 을 $L^1$ 로 바꿨다. 본문은 이미 $L^1$ 을 쓰고 있었다.\n- bounded-variation. 5 의 \"정확히 표현된다\" 피동. 51 의 \"부등식은 등식이 아니다\"(가리키는 식이 아직 나오지 않은 예고문). 87 의 \"계산된다\" 피동. 이 문서는 나머지가 이미 4절 문체였다.\n\n되풀이해 나오는 것들이다. 다음 문서에서도 먼저 볼 것.\n- 개요 끝에 문서 전체를 예고하는 메타 문단. 아래 절에 다 있으므로 통째로 지운다.\n- 활용 절이 정의 절의 한 절을 그대로 되풀이.\n- \"~으로 읽으면\"(read as 직역), \"~의 출발이다\", \"~라는 것이 ~이다\" 분열문, 피동(\"표현된다\", \"계산된다\", \"쓰인다\").\n- 수식 안의 세로줄과 대괄호를 \\vert 와 \\lbrack 으로 통일. 렌더는 되지만 한 문서 안에 두 표기가 섞이기 쉽다.\n- 직관 절의 인칭(\"내가\", \"남이\")과 예고문(\"증명은 세 단계다\", \"남은 문제는\").\n- 헤딩의 의인화. 4절 헤딩 grep 이 명사로 끝나는 것을 잡지 못하므로 눈으로 본다.",
+      "createdAt": "2026-09-29T13:03:11.680Z",
+      "seq": 1459
     },
     {
       "id": "9fef12e0",
@@ -1946,6 +1946,14 @@
       "note": "2026-09-29 셋째 회차에 이 갈래를 닫았다. 1차부터 4차까지의 note 가 세었던 후보가 전부 소진되었다. 다시 열려면 아래 전수 결과보다 나은 근거가 있어야 한다.\n\n4차에서 한 일(커밋 36e9483, 4330403).\n- '역할을 한다' 갈래 41 곳을 닫았다. 4차 note(항목 51075387 의 본문)에 문서별 고침이 적혀 있다.\n- 4절이 금지한 영문 번역체와 예고문 29 개 표현을 docs 전수로 셌다. 실제로 걸린 것은 '여기서 나온다' 둘뿐이고 둘 다 고쳤다. groups-of-finite-morley-rank 70 은 '이 정리로 … 임을 얻는다', tridiagonal-systems 124 는 '그 삼중대각 구조에서 나온다' 로 바꿨다.\n\n전수 0 건으로 확인한 표현(다시 세지 말 것). 우연이 아니다, 놀랍지 않다, 흥미롭게도, 놀랍게도, 본질적으로, 직관적으로 말하면, 이것이 바로, 에 다름 아니다, 에 지나지 않는다, 이는 곧, 다시 말해, 말하자면, 라는 것이 밝혀졌다, 강조할 점이, 주목할 것은, 짚고 넘어가자, 다음이 핵심이다, 기억하자, 요약하면, 이 점이 중요하다, 의 출발점이다, 인 셈이다, 생각해 보면, 해 보자, 을 의미한다, 를 의미한다, 역할을 하, 역할을 맡, 역할이다.\n\n오탐으로 판정한 것(다시 보지 말 것).\n- '뜻한다' 25 곳. 전부 'X 라는 것은 Y 를 뜻한다' 꼴로 정의를 진술하는 자리다. 만능동사가 아니다.\n- '보장한다' 30 곳. 전부 가정이 결론을 주는 자리이고 동사가 그 함의를 정확히 가리킨다. 'X 의 존재를 보장한다' 를 'X 가 있다' 로 바꾸면 무엇이 그것을 주는지가 사라진다.\n- '정리하면' 8 곳(continued-fractions 77, gradient-descent 71, linear-regression 55, probabilistic-method 117, proximal-gradient-method 77, quadratic-reciprocity 118, weyl-character-formula 82 등). 전부 식을 정리한다는 뜻이고 요약 예고문이 아니다.\n- '우리는', '우리가' 로 잡히는 2 곳은 '봉우리는'(dominated-convergence 80), '봉우리가'(stirling-numbers 87) 다.\n- 4절 헤딩 grep 이 잡는 '## 증명의 요지' 17 곳은 명사구다. CLAUDE.md 4절 자신이 권하는 표현이다.\n- 4절 비유 grep 이 잡는 3 곳은 모두 용어의 일부다. lie-algebras 180 '사다리 연산자'(ladder operator), theta-series 167 'Viazovska 의 마법함수'(magic function), elliptic-curves 126 의 사다리(Montgomery ladder).\n\n남은 것이 있다면 grep 으로 찾을 수 없는 종류다. 문서를 보강하는 회차에 그 문서를 통째로 읽으면서 고치는 편이 낫다.",
       "createdAt": "2026-09-29T08:41:08.045Z",
       "seq": 1434
+    },
+    {
+      "id": "25125fd4",
+      "title": "제목과 파일명 검사 (갈래를 닫음, 재점검용)",
+      "priority": 5,
+      "note": "2026-09-29 넷째 회차에 3차까지 끝내고 이 갈래를 닫았다. 남은 \"A와 B\" 꼴 제목 32 건은 전부 4절 제목 규칙의 예외다.\n\n3차에서 확인한 것. whittaker-models(\"Whittaker 모형과 중복도 1\"), zhu-algebra(\"Zhu 대수와 모듈러 불변성\"), siegel-weil(\"Siegel–Weil 공식과 이차형식의 표현수\"), waldspurger-formula(\"Waldspurger 정리와 토릭 주기\") 넷을 본문으로 확인했고 넷 다 예외다. 4절의 예외 문구는 \"정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목\" 이고 둘의 순서는 따지지 않는다. siegel-weil 은 개요가 표현수라는 물음으로 시작하고 공식이 그 답이며, whittaker-models 와 zhu-algebra 는 앞의 개념에 뒤의 정리가 답한다.\n\n2차에서 좁힌 여섯과 가르는 선. 뒤 항목이 앞 정리가 답하는 물음이면 예외이고, 뒤 항목이 앞 정리가 다루는 대상이나 사는 공간이면 좁힌다. 깃발다양체는 Borel–Weil–Bott 정리가 사는 공간이고, 사원수 대수 위의 형식과 반정수 무게 형식은 각 대응의 한쪽 항이고, theta 대응은 Weil 표현의 응용이고, 색 Jones 다항식은 볼륨 추측의 진술에 쓰이는 대상이다.\n\n재점검이 필요해지는 때. 새 문서가 \"A와 B\" 꼴 제목으로 들어오면 다음으로 찾아 위 기준으로 가른다. 정기적으로 돌릴 일은 아니다.\n  for f in docs/*.md; do t=$(head -1 \"$f\"); case \"$t\" in *와\\ *|*과\\ *) echo \"$(basename $f .md): $t\";; esac; done",
+      "createdAt": "2026-09-29T12:54:43.398Z",
+      "seq": 1454
     },
     {
       "id": "50f81215",
