@@ -107,7 +107,7 @@ Soergel 은 편향층의 초코호몰로지가 불변식환 위의 쌍가군이 
 
 ## 선수지식
 
-- [Borel–Weil–Bott 정리와 깃발다양체](borel-weil-bott.md)
+- [Borel–Weil–Bott 정리](borel-weil-bott.md)
 
 ## 더 알아보기
 

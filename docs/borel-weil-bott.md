@@ -1,4 +1,4 @@
-# Borel–Weil–Bott 정리와 깃발다양체
+# Borel–Weil–Bott 정리
 
 # 개요
 
