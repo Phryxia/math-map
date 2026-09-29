@@ -43,7 +43,7 @@ I(\theta)=\mathbb E_\theta\negthinspace\left[s(\theta;X)^2\right]
 =-\thinspace\mathbb E_\theta\negthinspace\left[\frac{\partial^2}{\partial\theta^2}\log f(X;\theta)\right]
 $$
 
-다변수 모수에서는 $I(\theta)$ 가 행렬이 되고, [고윳값](eigenvalues.md)이 모든 방향의 정보량을 알려 준다.
+다변수 모수에서는 $I(\theta)$ 가 행렬이 되고, [고윳값](eigenvalues.md)이 모든 방향의 정보량을 준다.
 
 ## 정칙 조건
 
