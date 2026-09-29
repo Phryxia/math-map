@@ -2,7 +2,7 @@
 
 # 개요
 
-Rademacher 정리는 $\mathbb R^n$ 의 열린집합 위에서 정의된 [Lipschitz 사상](lipschitz-maps.md)이 Lebesgue 측도로 거의 모든 점에서 미분가능하다는 정리다. 미분가능성을 따로 가정하지 않고 거리의 늘어남에 상한을 두는 것만으로 도함수가 거의 어디서나 존재한다.
+Rademacher 정리는 $\mathbb R^n$ 의 열린집합 위에서 정의된 [Lipschitz 사상](lipschitz-maps.md)이 Lebesgue 측도로 거의 모든 점에서 [미분](derivative.md)가능하다는 정리다. 미분가능성을 따로 가정하지 않고 거리의 늘어남에 상한을 두는 것만으로 도함수가 거의 어디서나 존재한다.
 
 한 변수에서는 [유계변동 함수](bounded-variation.md)의 미분정리로 따라오고, 여러 변수에서는 방향미분을 먼저 얻은 뒤 전미분으로 올리는 단계가 하나 더 든다.
 
