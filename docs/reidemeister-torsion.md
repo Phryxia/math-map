@@ -139,7 +139,7 @@ $L(7,1)$ 의 값 $0.7530,\thinspace 2.4450,\thinspace 3.8019$ 은 $4\sin^2(2\pi 
 ## 다양체 분류, 매듭 이론, 양자 불변량
 
 - **분류 문제.** 호모토피형이 같은 다양체를 구별한다. 렌즈 공간이 표준 예이고, 고차원에서는 s-코보디즘 정리를 통해 분류 이론에 들어간다.
-- **매듭 이론.** Alexander 다항식이 비틀림이라는 사실이 그 다항식의 대칭성과 Seifert 행렬과의 관계를 설명한다.
+- **매듭 이론.** Alexander 다항식이 비틀림인 것이 그 다항식의 대칭성과 Seifert 행렬과의 관계를 설명한다.
 - **양자 불변량.** 평탄 접속마다 붙는 비틀림이 양자 불변량 점근의 진폭으로 나타난다.
 
 [^1]: 원전은 K. Reidemeister, *Homotopieringe und Linsenräume*, Abh. Math. Sem. Univ. Hamburg 11 (1935) 와 W. Franz, *Über die Torsion einer Überdeckung*, J. Reine Angew. Math. 173 (1935). 표준적인 현대적 서술은 J. Milnor, *Whitehead torsion*, Bull. AMS 72 (1966).

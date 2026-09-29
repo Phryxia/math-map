@@ -151,7 +151,7 @@ $\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ 는 Yang–Baxte
 
 ## 곡면과 사상류군
 
-$B_n$ 이 구멍 뚫린 원판의 사상류군이라는 사실이 [곡면의 분류](classification-of-surfaces.md)와 이어진다. 땋임의 Nielsen–Thurston 분류(주기적, 가약, 유사 Anosov)가 매듭 보완공간의 기하화와 대응하고, 유사 Anosov 땋임의 팽창률이 매듭의 쌍곡 부피와 연결된다.
+$B_n$ 이 구멍 뚫린 원판의 사상류군이므로 [곡면의 분류](classification-of-surfaces.md)와 이어진다. 땋임의 Nielsen–Thurston 분류(주기적, 가약, 유사 Anosov)가 매듭 보완공간의 기하화와 대응하고, 유사 Anosov 땋임의 팽창률이 매듭의 쌍곡 부피와 연결된다.
 
 [^1]: J. Birman, *Braids, Links, and Mapping Class Groups*, Ann. of Math. Studies 82 (1974) 가 표준 참고서다. Markov 정리의 현대적 증명은 P. Traczyk 과 N. Weinberg 의 짧은 논법이 널리 쓰인다. 선형성은 S. Bigelow, *Braid groups are linear*, J. Amer. Math. Soc. **14** (2001) 와 D. Krammer, *Braid groups are linear*, Ann. of Math. **155** (2002).
 [^2]: S. Bigelow, *The Burau representation is not faithful for n = 5*, Geometry & Topology **3** (1999), 397–404. 이 논문이 다섯 가닥의 경우를 해결하면서 네 가닥은 미해결로 남는다고 적었다.

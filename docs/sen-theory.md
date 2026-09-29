@@ -25,7 +25,7 @@ H^0(G_K,\mathbb C_p(k))=\begin{cases}K,&k=0\cr 0,&k\neq0\end{cases},\qquad
 H^1(G_K,\mathbb C_p)=K
 $$
 
-$k\neq0$ 에서 불변식이 0 이라는 사실이 $\mathbb C_p(k)$ 들을 구별한다. Hodge–Tate 조건은 $\mathbb C_p\otimes V$ 가 이런 조각들로 쪼개진다는 것이고, 각 조각의 $k$ 가 무게다.
+$k\neq0$ 에서 불변식이 0 이라는 것이 $\mathbb C_p(k)$ 들을 구별한다. Hodge–Tate 조건은 $\mathbb C_p\otimes V$ 가 이런 조각들로 쪼개진다는 것이고, 각 조각의 $k$ 가 무게다.
 
 $G_K$ 는 너무 크므로 두 단계로 나눈다.
 

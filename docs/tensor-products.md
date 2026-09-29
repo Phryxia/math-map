@@ -201,7 +201,7 @@ $V \otimes W$ 의 원소를 행렬로 펼쳤을 때 랭크가 $1$ 인 것이 단
 
 ## 다중선형대수
 
-텐서곱을 반복하면 $T^k(V) = V \otimes \dots \otimes V$ 를 얻고, 대칭·반대칭 몫을 취하면 대칭곱과 외적대수가 나온다. 외적대수 $\Lambda^n V$ 가 1차원이라는 사실이 [행렬식](determinants.md)의 존재와 유일성을 설명한다. 미분기하에서 계량과 미분형식이 모두 접공간의 텐서이며, [Riemann 계량](riemannian-metrics.md)은 대칭 2차 텐서장이다.
+텐서곱을 반복하면 $T^k(V) = V \otimes \dots \otimes V$ 를 얻고, 대칭·반대칭 몫을 취하면 대칭곱과 외적대수가 나온다. 외적대수 $\Lambda^n V$ 가 1차원인 것이 [행렬식](determinants.md)의 존재와 유일성을 설명한다. 미분기하에서 계량과 미분형식이 모두 접공간의 텐서이며, [Riemann 계량](riemannian-metrics.md)은 대칭 2차 텐서장이다.
 
 ## 표현론
 
