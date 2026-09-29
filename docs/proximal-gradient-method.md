@@ -106,7 +106,7 @@ $x=x^\star$ 를 넣고 $k=0$ 부터 더하면 거리 항이 망원합으로 사�
 
 ## $\ell^1$ 정칙화 회귀
 
-$f(x)=\frac{1}{2}\Vert Ax-b\Vert^2$ , $g(x)=\lambda\Vert x\Vert\_1$ 로 두면 한 걸음이 행렬 곱 두 번과 좌표별 연성 문턱이다. 정칙화 계수 $\lambda$ 를 키우면 문턱이 넓어져 $0$ 이 되는 좌표가 늘어난다.
+$f(x)=\frac{1}{2}\Vert Ax-b\Vert^2$ , $g(x)=\lambda\Vert x\Vert\_1$ 로 두면 한 걸음이 행렬 곱 두 번과 좌표별 연성 문턱이다. [정칙화](regularization.md) 계수 $\lambda$ 를 키우면 문턱이 넓어져 $0$ 이 되는 좌표가 늘어난다.
 
 ## 제약이 있는 매끄러운 최소화
 
