@@ -48,7 +48,7 @@ $$
 a\ \longmapsto\ a-\frac{f(a)}{f'(a)}
 $$
 
-실수에서 Newton 법의 수렴은 초깃값에 달려 있지만 $p$ 진에서는 초거리 부등식 덕분에 오차의 부치가 매 단계 두 배가 되고 $|f'(a)|\_p=1$ 이 분모의 폭발을 막는다. [축약사상 고정점 정리](banach-fixed-point.md)를 완비체 $\mathbb Z_p$ 에 적용하는 것과 같다.
+실수에서 Newton 법의 수렴은 초깃값에 달려 있지만 $p$ 진에서는 초거리 부등식이 오차의 부치를 매 단계 두 배로 만든다. 초거리가 해석학의 수렴 조건을 대수적 조건 하나로 바꾸는 자리다.
 
 # 정의
 
@@ -111,13 +111,7 @@ $e$ 는 부치군의 지표(분기지수), $f$ 는 잉여체 확대의 차수다
 
 ## Hensel 보조정리
 
-> $f\in\mathbb Z_p[x]$ 이고 $a\in\mathbb Z_p$ 가 $|f(a)|\_p\lt |f'(a)|\_p^2$ 를 만족하면 $f(\alpha)=0$ 이고 $|\alpha-a|\_p\lt |f'(a)|\_p$ 인 $\alpha\in\mathbb Z_p$ 가 유일하게 있다.
-
-가장 많이 쓰는 형태는 $f'(a)$ 가 단원인 경우다. $f(a)\equiv0\pmod p$ 이고 $f'(a)\not\equiv0\pmod p$ 이면 법 $p$ 에서의 단순근이 $p$ 진 근으로 올라간다.
-
-- $p$ 가 홀소수일 때 $a\in\mathbb Z_p^\times$ 가 $\mathbb Q_p$ 에서 제곱원소일 필요충분조건은 $a\bmod p$ 가 $\mathbb F_p$ 의 제곱잉여인 것이고, $\mathbb Q_p^\times/(\mathbb Q_p^\times)^2$ 의 크기가 4 다. $p=2$ 에서는 $f'=2x$ 가 단원이 아니라 한 자리를 더 봐야 하고 크기가 8 이다.
-- $x^{p-1}-1$ 의 근이 $\mathbb Z_p$ 안에 $p-1$ 개 있다. Teichmüller 대표원이며 $\mathbb Z_p^\times\cong\mu_{p-1}\times(1+p\mathbb Z_p)$ 를 준다.
-- $\mathbb Q_p$ 의 불분기 확대는 각 차수마다 유일하고 잉여체 $\mathbb F_{p^f}$ 를 만드는 다항식을 Hensel 로 올려 얻는다. Galois 군이 $\mathbb F_{p^f}/\mathbb F_p$ 의 것과 같은 순환군이라 국소 유체론이 아벨 이론으로 작동한다.
+$f\in\mathbb Z_p\lbrack x\rbrack$ 와 $a\in\mathbb Z_p$ 가 $\vert f(a)\vert\_p\lt \vert f'(a)\vert\_p^2$ 를 만족하면 $a$ 에 가까운 근 $\alpha\in\mathbb Z_p$ 가 유일하게 있다. 법 $p$ 에서의 단순근이 $p$ 진 근으로 올라간다는 것이고, 제곱원소 판정과 Teichmüller 대표원과 불분기 확대가 여기서 나온다. 증명과 따름은 [Hensel 보조정리](hensel-lemma.md)에 있다.
 
 ## 국소-대역 원리
 
@@ -146,9 +140,7 @@ $6+6\cdot7+6\cdot49+\cdots=\frac6{1-7}=-1$ 이므로 $-1$ 은 $\cdots666_7$ 이�
 
 ## 다항식 인수분해와 정확한 선형대수
 
-컴퓨터 대수 시스템이 $\mathbb Z[x]$ 의 다항식을 인수분해하는 표준 경로가 Hensel 이다. 적당한 $p$ 를 골라 $\mathbb F_p[x]$ 에서 인수분해하고 그 인수들을 법 $p^k$ 로 올린 뒤 계수 상계를 넘을 때까지 $k$ 를 키워 $\mathbb Z[x]$ 의 인수를 복원한다. 인수의 조합을 시험하는 마지막 단계가 지수적이라 [격자](lattices.md) 환원으로 바꾼 것이 LLL(Lenstra–Lenstra–Lovász) 기반 알고리즘이다.
-
-정수 행렬의 선형계도 같다. $\mathbb Q$ 에서 Gauss 소거를 하면 중간 계수가 폭발하지만, 법 $p$ 에서 풀고 $p$ 진 Newton 반복으로 정밀도를 올린 뒤 유리수를 복원하면 자릿수가 통제된다.
+계산기 대수 시스템이 $\mathbb Z\lbrack x\rbrack$ 의 다항식을 인수분해하거나 정수 행렬의 선형계를 푸는 표준 경로가 올리기다. 법 $p$ 에서 먼저 풀고 정밀도를 올린 뒤 정수나 유리수를 복원하면 중간 계수가 폭발하지 않는다. 절차는 [Hensel 보조정리](hensel-lemma.md)에 있다.
 
 ## 아델
 
@@ -175,6 +167,7 @@ $\mathbb R$ 와 $\mathbb Q_p$ 는 $\mathbb Q$ 의 완비화로서 대등하다. 
 
 ### 국소체의 구조
 
+- [Hensel 보조정리](hensel-lemma.md)
 - [아델](adeles.md)
 - [국소 유체론](local-class-field-theory.md)
 - [Newton 다각형](newton-polygon.md)
