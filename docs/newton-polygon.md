@@ -2,7 +2,7 @@
 
 # 개요
 
-[$p$ 진수](p-adic-numbers.md)에서 Hensel 보조정리는 근사해 $a$ 와 $f'(a)$ 가 단위라는 가설을 요구하고, $\mathbb Z_p$ 안에 근이 있는지만 답한다.
+[$p$ 진수](p-adic-numbers.md)에서 [Hensel 보조정리](hensel-lemma.md)는 근사해 $a$ 와 $f'(a)$ 가 단위라는 가설을 요구하고, $\mathbb Z_p$ 안에 근이 있는지만 답한다.
 
 Newton 다각형은 근을 하나도 구하지 않고 계수의 부치만으로 대수적 폐포 위 모든 근의 부치를 준다.
 
@@ -137,6 +137,7 @@ Eisenstein 다항식 $x^n+pa_{n-1}x^{n-1}+\dots+pa_0$ ( $p\nmid a_0$ ) 의 다�
 ## 선수지식
 
 - [p 진수](p-adic-numbers.md)
+- [Hensel 보조정리](hensel-lemma.md)
 
 ## 더 알아보기
 

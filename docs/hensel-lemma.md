@@ -105,6 +105,6 @@ function lift(f, df, a, p, k, steps) {
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Newton 다각형](newton-polygon.md)
 
 #number_theory #algorithms #field_theory
