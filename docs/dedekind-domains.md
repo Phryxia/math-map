@@ -6,7 +6,7 @@ $\mathbb Z$ 에서 성립하는 소인수분해의 유일성은 정수를 조금
 
 Dedekind 의 복구 방법은 분해의 대상을 원소에서 [아이디얼](ideals-quotient-rings.md)로 바꾸는 것이다. 유일성이 성립하는 환의 부류가 Dedekind 정역이다. 조건은 Noether, 정수적으로 닫혀 있음, 0 이 아닌 [소 아이디얼](prime-ideals.md)이 모두 극대라는 셋이다.
 
-세 조건의 의미는 [국소화](localization-rings.md)에서 드러난다. 각 소 아이디얼에서 국소화하면 이산 부치환이 나오고 거기서는 모든 아이디얼이 한 원소의 거듭제곱으로 생성된다. 전역적 유일분해는 국소적으로 자명한 사실들을 붙인 결과이며, 대수적 정수론과 대수기하가 공유하는 구조다.
+세 조건의 의미는 [국소화](localization-rings.md)에서 드러난다. 각 소 아이디얼에서 국소화하면 [이산부값환](discrete-valuation-rings.md)(discrete valuation ring, DVR)이 나오고 거기서는 모든 아이디얼이 한 원소의 거듭제곱으로 생성된다. 전역적 유일분해는 국소적으로 자명한 사실들을 붙인 결과이며, 대수적 정수론과 대수기하가 공유하는 구조다.
 
 # 직관
 
@@ -42,15 +42,11 @@ $\mathfrak p$ 에서 국소화한 $\mathcal O_{\mathfrak p}$ 는 극대 아이�
 
 체는 정의상 제외하거나 자명한 경우로 포함한다(문헌마다 다르다).
 
-## 이산 부치환
+## 이산부값환
 
-극대 아이디얼이 하나뿐인 Dedekind 정역이 **이산 부치환**(discrete valuation ring, DVR)이다. 다음이 동치다.
+극대 아이디얼이 하나뿐인 Dedekind 정역이 DVR 이다. 분수체에 전사인 부치 $v:K^\times\to\mathbb Z$ 가 있어 $R=\lbrace x:v(x)\ge0\rbrace\cup\lbrace 0\rbrace$ 이고, 극대 아이디얼의 생성원 $\pi$ 를 균등화원이라 한다.
 
-- 국소 주 아이디얼 정역이면서 체가 아니다.
-- 극대 아이디얼이 $(\pi)$ 로 생성되고 0 이 아닌 모든 아이디얼이 $(\pi^k)$ 다.
-- 분수체에 전사인 부치 $v:K^\times\to\mathbb Z$ 가 있어 $R=\lbrace x:v(x)\ge0\rbrace\cup\lbrace 0\rbrace$ 이다.
-
-$\pi$ 를 균등화원이라 한다. $\mathbb Z_{(p)}$ , $p$ 진 정수환 $\mathbb Z_p$ , 형식적 [멱급수](power-series.md)환 $k[[t]]$ 가 표준 예다.
+$\mathbb Z_{(p)}$ , $p$ 진 정수환 $\mathbb Z_p$ , 형식적 [멱급수](power-series.md)환 $k\lbrack\lbrack t\rbrack\rbrack$ 가 표준 예다.
 
 ## 분수 아이디얼
 
@@ -126,7 +122,7 @@ Dedekind 정역인 것.
 ## 선수지식
 
 - [유일분해정역](unique-factorization-domains.md)
-- [환의 국소화](localization-rings.md)
+- [이산부값환](discrete-valuation-rings.md)
 - [정수론 개관](number-theory-overview.md)
 
 ## 더 알아보기

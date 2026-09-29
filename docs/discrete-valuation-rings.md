@@ -98,6 +98,6 @@ $p$ 진 정수환 $\mathbb Z_p$ 는 $\mathbb Z\_{(p)}$ 의 완비화이고 균�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dedekind 정역](dedekind-domains.md)
 
 #ring_theory #algebra #number_theory
