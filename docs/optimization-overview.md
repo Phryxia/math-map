@@ -21,7 +21,7 @@ graph TD
   DV --> GD
   BF["축약사상 고정점 정리"] --> NM["Newton 법"]
   DV --> NM
-  LP --> LR["LP 완화와 반올림"]
+  LP --> LR["LP 반올림"]
   LP --> NF["네트워크 흐름"]
   LR --> SD["반정부호 계획법"]
   SD --> LT["Lovász 세타 함수"]

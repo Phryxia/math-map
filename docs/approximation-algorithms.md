@@ -93,7 +93,7 @@ $$
 
 ## 더 알아보기
 
-- [LP 완화와 반올림](lp-rounding.md)
+- [LP 반올림](lp-rounding.md)
 - [PCP 정리](pcp-theorem.md)
 
 #complexity #algorithms

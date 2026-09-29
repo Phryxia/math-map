@@ -21,7 +21,7 @@ graph TD
   CB --> PN["P 대 NP 문제"]
   PN --> NPC["NP-완전성"]
   NPC --> AA["근사 알고리즘"]
-  AA --> LPR["LP 완화와 반올림"]
+  AA --> LPR["LP 반올림"]
   AA --> PCP["PCP 정리"]
   PCP --> UG["유일게임 추측"]
   LP["선형계획법"] --> LPR
@@ -76,7 +76,7 @@ graph TD
 
 - [동적 계획법](dynamic-programming.md): 부분문제의 DAG(directed acyclic graph) 위에서 값을 위상순으로 채운다
 - [최단경로](shortest-paths.md): Bellman–Ford, Dijkstra, 고정점으로서의 최단거리
-- [LP 완화와 반올림](lp-rounding.md): LP(linear programming) 완화로 정수 제약을 푼 뒤 해를 되돌리는 근사 설계
+- [LP 반올림](lp-rounding.md): LP(linear programming) 완화로 정수 제약을 푼 뒤 해를 되돌리는 근사 설계
 - [고속 Fourier 변환](fft.md): 분할정복으로 $O(n\log n)$ 에 이산 Fourier 변환
 - [오류정정부호](error-correcting-codes.md): 부호의 구성과 복호 알고리즘, 거리와 한계
 - [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md): 유한체 위 타원곡선의 점 개수를 다항시간에 센다
