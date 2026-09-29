@@ -16,81 +16,15 @@ $$
 
 # 직관
 
-## Hecke 대수 변형
-
-Weyl 군 $W$ 의 군환 $\mathbb Z[W]$ 에서 단순반사 $s$ 는 $s^2=1$ 을 만족한다. 이를 한 매개변수 풀어 준다.
+Weyl 군 $W$ 의 군환에서 단순반사 $s$ 는 $s^2=1$ 을 만족한다. 이 관계를 한 매개변수 풀어 준다.
 
 $$
 (T_s-q)(T_s+1)=0\quad\Longleftrightarrow\quad T_s^2=(q-1)T_s+q
 $$
 
-$q=1$ 을 넣으면 $T_s^2=1$ 이라 군환으로 돌아온다. $q$ 를 소수 거듭제곱으로 두면 이 대수는 [유한체](finite-fields.md) 위 군 $G(\mathbb F_q)$ 의 Borel 부분군에 대한 이중잉여류 대수로 실현된다. 변형은 정보를 잃지 않고 $q$ 라는 눈금을 더한다.
+$q=1$ 을 넣으면 $T_s^2=1$ 이라 군환으로 돌아오고, $q$ 를 소수 거듭제곱으로 두면 [유한체](finite-fields.md) 위 군 $G(\mathbb F_q)$ 의 Borel 부분군에 대한 이중잉여류 대수가 된다. 변형은 정보를 잃지 않고 눈금 $q$ 를 하나 더한다.
 
-## 자기쌍대 기저
-
-$\mathcal H$ 에는 자연스러운 대합이 있다.
-
-$$
-\overline{q}=q^{-1},\qquad \overline{T_w}=T_{w^{-1}}^{-1}
-$$
-
-표준기저 $T_w$ 는 이 대합에 대해 자기쌍대가 아니다. 그런데 다음 두 조건을 동시에 만족하는 기저는 **유일하게** 존재한다.
-
-1. $\overline{C'\_w}=C'\_w$ (자기쌍대)
-2. $C'\_w$ 를 $T_x$ 로 전개할 때 계수의 차수가 엄격히 제한됨
-
-대칭성, Bruhat 순서에 대한 상삼각 전개, 차수 제한이 함께 걸리면 자유도가 사라진다. 구조는 Gram–Schmidt 와 같다. Kazhdan–Lusztig 다항식은 그 유일한 답의 계수이고, 같은 종류의 기저가 양자군의 정준기저와 결정기저로 이어진다.
-
-## 특이점의 척도
-
-$P_{x,w}(q)$ 는 Schubert 다양체 $X_w=\overline{BwB/B}$ 의 점 $x$ 근방에서 교차 코호몰로지 층의 줄기를 기술한다.
-
-$$
-P_{x,w}(q)=\sum_i \dim\mathcal H^{2i}\bigl(\mathrm{IC}(X_w)\bigr)\_x\thickspace q^{i}
-$$
-
-$X_w$ 가 $x$ 에서 매끄러우면 교차 코호몰로지가 상수층이라 $P_{x,w}=1$ 이고, 특이하면 여분의 코호몰로지가 $q$ 의 양의 차수 항으로 나타난다. 다항식의 크기가 특이점의 복잡도를 잰다.
-
-계수가 차원이므로 음이 아닌 정수이고, 계산이 특이점 해소를 요구하므로 어렵다.
-
-## 패턴 회피와 매끄러움
-
-$W=S_n$ 에서 $P_{e,w}=1$ 인 것은 $w$ 가 두 패턴 $3412$ 와 $4231$ 을 피하는 것과 동치다(Lakshmibai–Sandhya).
-
-```javascript
-// w 가 패턴 p 를 포함하는가: 자리 몇 개를 뽑아 상대 순서가 p 와 같은가
-const contains = (w, p) => {
-  const n = w.length, k = p.length, idx = [];
-  const rec = (start, depth) => {
-    if (depth === k) {
-      const vals = idx.map(i => w[i]);
-      const rank = vals.map(v => 1 + vals.filter(u => u < v).length);
-      return rank.every((r, i) => r === p[i]);
-    }
-    for (let i = start; i < n; i++) { idx[depth] = i; if (rec(i + 1, depth + 1)) return true; }
-    return false;
-  };
-  return rec(0, 0);
-};
-
-const perms = (a) => a.length <= 1 ? [a] :
-  a.flatMap((x, i) => perms([...a.slice(0, i), ...a.slice(i + 1)]).map(r => [x, ...r]));
-
-const singular = (n) => perms([...Array(n)].map((_, i) => i + 1))
-  .filter(w => contains(w, [3,4,1,2]) || contains(w, [4,2,3,1]));
-```
-
-$S_3$ 까지는 모든 Schubert 다양체가 매끄럽고 KL(Kazhdan–Lusztig) 다항식이 전부 $1$ 이다. 비자명한 예는 $S_4$ 에서 처음 나오며 $3412$ 와 $4231$ 둘이다. $S_5$ 에서는 $120$ 개 가운데 $32$ 개가 특이하다.
-
-$$
-P_{e,3412}=1+q,\qquad P_{e,4231}=1+q
-$$
-
-이 두 순열이 표현론 계산의 최소 반례로 쓰인다. 매끄러운 순열의 개수는 큰 Schröder 수 $1,2,6,22,88,366,\dots$ 로 지수적으로 자라지만 $n!$ 보다 훨씬 느려서, $n$ 이 커지면 매끄러운 쪽이 희소해진다.
-
-## 세 세계의 일치
-
-조합에서 정의하고 기하에서 의미를 얻고 표현론에서 쓴다. 세 화살표 각각이 하나의 정리다.
+이 대수에는 $q\mapsto q^{-1}$ 과 $T_w\mapsto T_{w^{-1}}^{-1}$ 로 주어지는 대합이 있고 표준기저 $T_w$ 는 그 대합에 자기쌍대가 아니다. 자기쌍대이면서 Bruhat 순서에 대해 상삼각으로 전개되고 전개 계수의 차수가 제한된 기저를 찾으면, 세 조건이 자유도를 모두 없애 그런 기저가 유일하게 하나 있다. Kazhdan–Lusztig 다항식이 그 전개 계수이고, 같은 종류의 기저가 양자군의 정준기저와 결정기저로 이어진다.
 
 # 정의
 
@@ -126,7 +60,7 @@ $$
 P_{x,w}=q^{1-c}P_{sx,v}+q^{c}P_{x,v}-\sum_{x\le z\lt v,\ sz\lt z}\mu(z,v)\thinspace q^{(\ell(w)-\ell(z))/2}P_{x,z}
 $$
 
-$c=1$ 이면 $sx\lt x$ 이고 $c=0$ 이면 $sx\gt x$ 이며 $\mu(z,v)$ 는 $P_{z,v}$ 의 최고차 계수다. 길이에 대한 귀납으로 계산되지만 항의 수가 Bruhat 구간의 크기만큼 늘어난다. $E_8$ 의 전체 KL 다항식 표를 얻은 Atlas 프로젝트(2007)는 대규모 분산 계산이었다.
+$c=1$ 이면 $sx\lt x$ 이고 $c=0$ 이면 $sx\gt x$ 이며 $\mu(z,v)$ 는 $P_{z,v}$ 의 최고차 계수다. 길이에 대한 귀납으로 계산되지만 항의 수가 Bruhat 구간의 크기만큼 늘어난다. $E_8$ 의 전체 KL(Kazhdan–Lusztig) 다항식 표를 얻은 Atlas 프로젝트(2007)는 대규모 분산 계산이었다.
 
 ## $\mu$ 계수
 
@@ -143,6 +77,26 @@ $$
 $$
 
 $M_x$ 는 Verma 가군이다. Beilinson–Bernstein 과 Brylinski–Kashiwara 가 1981 년에 독립적으로 증명했고 요지는 국소화다. 리 대수 가군의 범주를 깃발다양체 위 $\mathcal D$ 가군의 범주와 동치로 만든 뒤 Riemann–Hilbert 대응으로 편향층으로 옮기면 지표 계수가 IC(intersection cohomology) 층의 줄기 차원이 되고, 기하 쪽에서는 Deligne 의 순수성 정리가 결론을 준다.
+
+## 교차 코호몰로지 줄기
+
+$P_{x,w}(q)$ 는 Schubert 다양체 $X_w=\overline{BwB/B}$ 의 점 $x$ 근방에서 교차 코호몰로지 층의 줄기를 기술한다.
+
+$$
+P_{x,w}(q)=\sum_i \dim\mathcal H^{2i}\bigl(\mathrm{IC}(X_w)\bigr)\_x\thickspace q^{i}
+$$
+
+$X_w$ 가 $x$ 에서 매끄러우면 교차 코호몰로지가 상수층이라 $P_{x,w}=1$ 이고, 특이하면 여분의 코호몰로지가 $q$ 의 양의 차수 항으로 나타난다. 다항식의 크기가 특이점의 복잡도를 잰다.
+
+## 패턴 회피와 매끄러움
+
+$W=S_n$ 에서 $P_{e,w}=1$ 인 것은 $w$ 가 두 패턴 $3412$ 와 $4231$ 을 피하는 것과 동치다(Lakshmibai–Sandhya). $S_3$ 까지는 모든 Schubert 다양체가 매끄러워 KL 다항식이 전부 $1$ 이고, 비자명한 예는 $S_4$ 의 두 순열에서 처음 나온다.
+
+$$
+P_{e,3412}=1+q,\qquad P_{e,4231}=1+q
+$$
+
+$S_5$ 에서는 $120$ 개 가운데 $32$ 개가 특이하다. 매끄러운 순열의 개수는 큰 Schröder 수 $1,2,6,22,88,366,\dots$ 로 자라지만 $n!$ 보다 훨씬 느려서 $n$ 이 커지면 매끄러운 쪽이 희소해진다.
 
 ## 계수의 양수성
 
