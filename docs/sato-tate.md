@@ -34,7 +34,7 @@ $$
 
 ## Weyl 적분공식
 
-$\mathrm{SU}(2)$ 의 원소는 켤레를 무시하면 고윳값 $e^{\pm i\theta}$ 로 결정된다. 곧 켤레류의 공간이 $[0,\pi]$ 다. $\mathrm{SU}(2)$ 의 Haar 측도를 이 공간으로 밀어내면 Weyl 적분공식이
+$\mathrm{SU}(2)$ 의 원소는 켤레를 무시하면 [고윳값](eigenvalues.md) $e^{\pm i\theta}$ 로 결정된다. 곧 켤레류의 공간이 $[0,\pi]$ 다. $\mathrm{SU}(2)$ 의 Haar 측도를 이 공간으로 밀어내면 Weyl 적분공식이
 
 $$
 \frac2\pi\sin^2\theta\thinspace d\theta

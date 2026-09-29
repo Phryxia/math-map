@@ -45,7 +45,7 @@ $$
 
 ## 존재 정리
 
-$A^{\mathsf T}A$ 는 대칭이고 모든 $x$ 에서 이차형식이 $Ax$ 의 노름 제곱이라 양의 준정부호다. 스펙트럼 정리로 정규직교 고유기저 $v_1,\dots,v_n$ 과 내림차순 고윳값 $\lambda_1\ge\dots\ge\lambda_n\ge 0$ 을 얻는다. $\lambda_i$ 의 제곱근을 $\sigma_i$ 라 하고, $\sigma_i$ 가 $0$ 이 아닌 $i$ 에 대해 $u_i$ 를 정의한다.
+$A^{\mathsf T}A$ 는 대칭이고 모든 $x$ 에서 이차형식이 $Ax$ 의 노름 제곱이라 양의 준정부호다. 스펙트럼 정리로 정규직교 고유기저 $v_1,\dots,v_n$ 과 내림차순 [고윳값](eigenvalues.md) $\lambda_1\ge\dots\ge\lambda_n\ge 0$ 을 얻는다. $\lambda_i$ 의 제곱근을 $\sigma_i$ 라 하고, $\sigma_i$ 가 $0$ 이 아닌 $i$ 에 대해 $u_i$ 를 정의한다.
 
 $$
 u_i=\frac{1}{\sigma_i}Av_i

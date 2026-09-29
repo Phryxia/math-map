@@ -82,7 +82,7 @@ $\mu$ 강볼록 부류에서는 같은 방식으로 수축 비율이 $\bigl(\sqr
 
 ## 이차함수의 특성근
 
-$f(x)=\frac{1}{2}x^\top Ax$ 이고 $A$ 가 대칭 양정부호이면, 중공 모멘텀은 $A$ 의 고유벡터마다 독립된 점화식으로 갈라진다. 고윳값 $\lambda$ 에 대한 성분의 오차 $e_k$ 는 다음을 따른다.
+$f(x)=\frac{1}{2}x^\top Ax$ 이고 $A$ 가 대칭 양정부호이면, 중공 모멘텀은 $A$ 의 고유벡터마다 독립된 점화식으로 갈라진다. [고윳값](eigenvalues.md) $\lambda$ 에 대한 성분의 오차 $e_k$ 는 다음을 따른다.
 
 $$
 e_{k+1}=(1+\beta-\eta\lambda)\thinspace e_k-\beta\thinspace e_{k-1}
