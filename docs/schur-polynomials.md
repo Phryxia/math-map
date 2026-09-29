@@ -2,7 +2,7 @@
 
 # 개요
 
-[Weyl 지표 공식](weyl-character-formula.md)을 $\mathfrak{gl}\_n$ 에 적용하면 분모가 Vandermonde 행렬식이 되고, 지표가 두 행렬식의 비로 떨어진다.
+[Weyl 지표 공식](weyl-character-formula.md)을 $\mathfrak{gl}\_n$ 에 적용하면 분모가 Vandermonde 행렬식이 되고, 지표가 두 [행렬식](determinants.md)의 비로 떨어진다.
 
 $$
 s_\lambda(x_1,\dots,x_n)=\frac{\det\negthinspace\big(x_i^{\lambda_j+n-j}\big)\_{1\le i,j\le n}}{\det\negthinspace\big(x_i^{n-j}\big)\_{1\le i,j\le n}}

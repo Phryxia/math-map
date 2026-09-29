@@ -54,7 +54,7 @@ Mostowski 붕괴로 $M$ 을 추이적 집합으로 바꾸고, 구성가능성이
 
 ## 일반 연속체 가설
 
-**정리(Gödel).** $V = L$ 이면 모든 무한 기수 $\kappa$ 에서 $2^\kappa = \kappa^+$ 다.
+**정리(Gödel).** $V = L$ 이면 모든 무한 [기수](cardinality.md) $\kappa$ 에서 $2^\kappa = \kappa^+$ 다.
 
 $x \subseteq L\_\kappa$ 를 잡고 $x$ 와 $L\_\kappa$ 를 담는 기본 부분구조를 크기 $\kappa$ 로 잡는다. 응축 보조정리로 그것이 $L\_\beta$ 와 동형이고 $\vert\beta\vert = \kappa$ 이므로 $\beta \lt \kappa^+$ 다. 따라서 $\mathcal P(\kappa) \cap L \subseteq L\_{\kappa^+}$ 이고 그 크기는 $\kappa^+$ 이하다. ∎
 

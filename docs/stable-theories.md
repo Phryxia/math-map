@@ -30,7 +30,7 @@ $$
 
 ## 안정성
 
-무한 기수 $\lambda$ 에 대해, $\vert A\vert\le\lambda$ 인 모든 $A$ 에서 $\vert S_1(A)\vert\le\lambda$ 이면 $T$ 가 $\lambda$-**안정**이라 한다.
+무한 [기수](cardinality.md) $\lambda$ 에 대해, $\vert A\vert\le\lambda$ 인 모든 $A$ 에서 $\vert S_1(A)\vert\le\lambda$ 이면 $T$ 가 $\lambda$-**안정**이라 한다.
 
 어떤 무한 기수 $\lambda$ 에서 $\lambda$-안정이면 $T$ 가 **안정**이다. $\aleph_0$-안정인 이론을 $\omega$-안정이라 부른다.
 
