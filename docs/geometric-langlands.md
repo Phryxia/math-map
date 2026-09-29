@@ -42,7 +42,7 @@ $$
 
 이 대응은 층의 여섯 연산을 함수의 연산(당김, 밂, 곱)으로 옮긴다. 서로 다른 층이 같은 함수를 줄 수 있으므로 층 쪽이 더 섬세하고, 함수 사이의 등식을 층 사이의 동형으로 올리면 진술이 강해진다.
 
-자기동형 형식은 $G(F)\backslash G(\mathbb A)/K$ 위의 함수인데, 함수체의 경우 이 이중잉여가 기하적 대상으로 해석된다.
+자기동형 형식은 $G(F)\backslash G(\mathbb A)/K$ 위의 함수인데, 함수체의 경우 이 이중잉여를 기하적 대상으로 본다.
 
 $$
 G(F)\backslash G(\mathbb A_F)/G(\mathcal O)\thickspace\cong\thickspace\mathrm{Bun}\_G(\mathbb F_q)
