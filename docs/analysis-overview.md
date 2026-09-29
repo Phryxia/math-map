@@ -26,7 +26,6 @@ graph TD
   DV --> FC["미적분학의 기본 정리"]
   RI --> FC
   CM --> BF["축약사상 고정점 정리"]
-  CT --> BF
   BF --> OD["상미분방정식"]
   FC --> OD
   RI --> FS["Fourier 급수"]
