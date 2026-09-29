@@ -67,7 +67,7 @@ $\Gamma\subset\mathrm{SL}\_2(\mathbb Z)$ 를 유한 지표 부분군이라 하�
 2. Laplace 고유함수: $\Delta=-y^2(\partial_x^2+\partial_y^2)$ 에 대해 $\Delta u=\lambda u$ 다.
 3. 다항 증가.
 
-첨점에서 상수항까지 사라지면 **첨점형식**이라 하고, 이때 $u\in L^2(\Gamma\backslash\mathbb H)$ 다. $\Delta$ 가 쌍곡 계량에 대한 Laplace–Beltrami 작용소이고 $\mathrm{SL}\_2(\mathbb R)$ 작용과 가환이라는 점이 1 과 2 를 양립시킨다.
+첨점에서 상수항까지 사라지면 **첨점형식**이라 하고, 이때 $u\in L^2(\Gamma\backslash\mathbb H)$ 다. $\Delta$ 가 쌍곡 계량에 대한 Laplace–Beltrami 작용소이고 $\mathrm{SL}\_2(\mathbb R)$ 작용과 가환이므로 1 과 2 가 양립한다.
 
 ## Fourier 전개
 
