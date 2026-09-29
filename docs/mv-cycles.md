@@ -125,7 +125,7 @@ $\overline{\mathrm{Gr}^\lambda}$ 는 일반적으로 특이점을 갖고, 그 �
 ## 선수지식
 
 - [기하학적 Satake 대응](geometric-satake.md)
-- [Weyl 지표 공식과 최고무게 이론](weyl-character-formula.md)
+- [Weyl 지표 공식](weyl-character-formula.md)
 
 ## 더 알아보기
 

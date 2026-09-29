@@ -175,7 +175,7 @@ $$
 
 ## 선수지식
 
-- [Weyl 지표 공식과 최고무게 이론](weyl-character-formula.md)
+- [Weyl 지표 공식](weyl-character-formula.md)
 - [Riemann–Roch 정리](riemann-roch.md)
 
 ## 더 알아보기

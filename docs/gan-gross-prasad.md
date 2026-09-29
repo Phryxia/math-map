@@ -212,7 +212,7 @@ $n=1$ 의 Waldspurger 정리와 Gross–Zagier 를 합치면 [타원곡선](elli
 
 ## 분지 법칙의 산술화
 
-GGP 는 분지 법칙을 $L$ 함수로 번역한다. 콤팩트군에서 [Weyl 지표공식](weyl-character-formula.md)과 [근계](root-systems.md)로 답이 나오던 문제가 $p$ 진군에서는 Langlands 매개변수와 $\varepsilon$ 인자의 문제가 된다. 국소 Langlands 대응이 표현에 이름표를 붙이는 데 그치지 않고 표현 사이의 관계를 기술한다. [Casselman–Shalika 공식](casselman-shalika.md)이 비분기 Whittaker 함수를 Schur 다항식으로 적듯, GGP 는 분지 중복도를 $\varepsilon$ 부호로 적는다.
+GGP 는 분지 법칙을 $L$ 함수로 번역한다. 콤팩트군에서 [Weyl 지표 공식](weyl-character-formula.md)과 [근계](root-systems.md)로 답이 나오던 문제가 $p$ 진군에서는 Langlands 매개변수와 $\varepsilon$ 인자의 문제가 된다. 국소 Langlands 대응이 표현에 이름표를 붙이는 데 그치지 않고 표현 사이의 관계를 기술한다. [Casselman–Shalika 공식](casselman-shalika.md)이 비분기 Whittaker 함수를 Schur 다항식으로 적듯, GGP 는 분지 중복도를 $\varepsilon$ 부호로 적는다.
 
 [^1]: B. Sun, C.-B. Zhu, *Multiplicity one theorems: the Archimedean case*, Ann. of Math. 175 (2012).
 
