@@ -123,7 +123,7 @@ $$
 \char35{}\lbrace\text{원시 닫힌 측지선}:\ \ell_\gamma\le L\rbrace\ \sim\ \frac{e^L}{L}
 $$
 
-를 얻는다. 소수 정리 $\pi(x)\sim x/\log x$ 에 $x=e^L$ 을 넣은 꼴이며 증명 구조도 같다. $Z(s)$ 의 $s=1$ 에서의 단순 영점이 소수 정리에서 $\zeta(s)$ 의 극점 역할을 한다.
+를 얻는다. 소수 정리 $\pi(x)\sim x/\log x$ 에 $x=e^L$ 을 넣은 꼴이며 증명 구조도 같다. $Z(s)$ 의 $s=1$ 에서의 단순 영점이 소수 정리의 $\zeta(s)$ 극점에 대응한다.
 
 ## Selberg zeta 의 영점
 

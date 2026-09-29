@@ -122,7 +122,7 @@ Shor 알고리즘은 소인수분해와 이산로그를 다항시간에 푼다. 
 
 # 활용
 
-- TLS, SSH(secure shell), Signal, WireGuard 가 Diffie–Hellman 을 핵심 부품으로 쓴다. 대칭키를 공개 채널에서 합의하는 것이 그 역할이다. Signal 의 이중 래칫은 메시지마다 새 교환을 수행해 순방향 비밀성과 침해 후 복구를 얻는다.
+- TLS, SSH(secure shell), Signal, WireGuard 가 Diffie–Hellman 을 핵심 부품으로 쓴다. 이 부품으로 대칭키를 공개 채널에서 합의한다. Signal 의 이중 래칫은 메시지마다 새 교환을 수행해 순방향 비밀성과 침해 후 복구를 얻는다.
 - ElGamal 암호와 DSA(digital signature algorithm), ECDSA(elliptic curve digital signature algorithm) 서명이 같은 가정 위에 있다. 서명에서 난수를 재사용하면 개인키가 즉시 노출되고 실제 사고가 여러 번 있었다. 결정론적 난수 생성을 규정한 RFC(request for comments) 6979 가 그 대응이다.
 - 이산로그 계산은 유한체와 대수군의 구조를 조사하는 도구이기도 하다. 곡선의 위수를 세거나 군의 구조를 결정하는 알고리즘의 부품으로 쓰이고, Pollard rho 와 kangaroo 방법은 해시 함수의 충돌 탐색에도 쓰인다.
 

@@ -51,7 +51,7 @@ $$
 \varphi(g)=\langle\pi(g)v,\tilde v\rangle
 $$
 
-가 $\mathrm{GL}\_n$ 위의 함수이고, $n=1$ 이면 $\varphi=\chi$ 다. 행렬 계수는 표현의 정보를 함수 하나로 압축하며 Schur 직교성으로 지표와 같은 역할을 한다.
+가 $\mathrm{GL}\_n$ 위의 함수이고, $n=1$ 이면 $\varphi=\chi$ 다. 행렬 계수는 표현의 정보를 함수 하나로 압축하며 Schur 직교성으로 지표와 같은 직교관계를 만족한다.
 
 $\lvert x\rvert^s$ 자리에는 $\det\colon\mathrm{GL}\_n\to\mathbb G_m$ 을 써서 $\lvert\det g\rvert^s$ 를 넣는다. 지수를 $s+\frac{n-1}2$ 로 옮기는 것은 함수방정식이 $s\leftrightarrow1-s$ 가 되게 하는 정규화다.
 
@@ -182,9 +182,9 @@ Sato–Tate 의 등분포에는 모든 대칭곱의 평균이 사라져야 하�
 
 - **Langlands 강령의 전제.** 자기동형 $L$ 함수의 좋은 성질이 강령의 모든 진술의 전제이고, $\mathrm{GL}\_n$ 표준 $L$ 함수에 대해 이 정리가 그것을 무조건적으로 준다.
 - **강한 중복도 1.** 표준 $L$ 함수가 표현을 결정한다는 정리(Jacquet–Shalika)가 거의 모든 자리의 Satake 매개변수로 $\pi$ 가 정해진다는 말이고, 증명에 이 적분이 쓰인다.
-- **Rankin–Selberg.** Jacquet–Piatetski-Shapiro–Shalika 의 적분이 $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 의 $L$ 함수에서 같은 역할을 한다. 함수성 판정과 Ramanujan 형 추정의 주요 도구다.
+- **Rankin–Selberg.** Jacquet–Piatetski-Shapiro–Shalika 의 적분이 $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 의 $L$ 함수를 같은 방식으로 다룬다. 함수성 판정과 Ramanujan 형 추정의 주요 도구다.
 - **국소 상수.** 국소 Langlands 대응의 검증 조건은 분기 자리의 $\varepsilon(s,\pi)$ 를 Galois 쪽 근 수와 맞추는 것이다.
-- **더 일반적인 군.** $M_n$ 같은 벡터공간이 없는 군에서는 이 방법이 통하지 않는다. Braverman–Kazhdan 과 L. Lafforgue 가 일반 군에 대해 같은 역할을 하는 공간을 찾는 강령을 제안했다.
+- **더 일반적인 군.** $M_n$ 같은 벡터공간이 없는 군에서는 이 방법이 통하지 않는다. Braverman–Kazhdan 과 L. Lafforgue 가 일반 군에서 $M_n$ 을 대신할 공간을 찾는 강령을 제안했다.
 
 [^1]: R. Godement, H. Jacquet, *Zeta Functions of Simple Algebras*, Lecture Notes in Math. 260 (1972). Tate 이론과의 비교는 D. Bump, *Automorphic Forms and Representations* (1997) 3장. Satake 매개변수와 비분기 계산은 같은 책 4장, 또는 A. Knapp 의 Motives 논문집 개설. Rankin–Selberg 쪽은 H. Jacquet, I. Piatetski-Shapiro, J. Shalika, *Rankin–Selberg convolutions*, Amer. J. Math. **105** (1983). 일반 군으로의 확장 제안은 A. Braverman, D. Kazhdan, *γ-functions of representations and lifting*, GAFA (2000).
 

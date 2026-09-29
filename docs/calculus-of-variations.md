@@ -78,7 +78,7 @@ $\frac{d}{dx}$ 를 좌변에 적용하고 Euler–Lagrange 방정식을 대입�
 
 ## 구속조건과 Lagrange 곱수
 
-부가조건 $\int_a^bG(x,y,y')dx=c$ 아래에서 $J$ 의 극값을 찾는 문제는 $F-\lambda G$ 의 Euler–Lagrange 방정식으로 바뀐다. 유한차원의 [Lagrange 쌍대성](lagrange-duality.md)에서 쓰는 곱수와 같은 역할이다.
+부가조건 $\int_a^bG(x,y,y')dx=c$ 아래에서 $J$ 의 극값을 찾는 문제는 $F-\lambda G$ 의 Euler–Lagrange 방정식으로 바뀐다. $\lambda$ 는 유한차원의 [Lagrange 쌍대성](lagrange-duality.md)에서 쓰는 곱수와 같다.
 
 길이를 고정하고 둘러싼 넓이를 최대로 하는 곡선이 원이라는 등주부등식이 이 형태의 문제다.
 

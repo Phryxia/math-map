@@ -131,7 +131,7 @@ $$
 L_t = \exp\Big( \theta B_t - \tfrac{1}{2} \theta^2 t \Big)
 $$
 
-가 같은 역할을 한다.[^1] 금융에서 위험중립측도(risk-neutral measure)를 잡는 절차가 정확히 이것이다.
+가 표류를 지운다.[^1] 금융에서 위험중립측도(risk-neutral measure)를 잡는 절차가 정확히 이것이다.
 
 ## 절대연속성의 실패
 

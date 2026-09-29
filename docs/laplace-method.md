@@ -131,7 +131,7 @@ $q=1$ 근방의 기여가 주도항을 주고 나머지 유리점이 보정을 �
 
 ## Bayes 추론의 Laplace 근사
 
-사후분포 $\pi(\theta\mid D)\propto e^{\log p(D\mid\theta)+\log\pi(\theta)}$ 에서 표본 수 $n$ 이 큰 매개변수 역할을 한다. 최대점이 최대사후추정량이고 2 차 전개의 Hessian 이 공분산이 되므로
+사후분포 $\pi(\theta\mid D)\propto e^{\log p(D\mid\theta)+\log\pi(\theta)}$ 에서 표본 수 $n$ 이 큰 매개변수다. 최대점이 최대사후추정량이고 2 차 전개의 Hessian 이 공분산이 되므로
 
 $$
 \pi(\theta\mid D)\approx\mathcal N\negthinspace\left(\hat\theta,\ \big(-\nabla^{2}\log p\big)^{-1}\right),

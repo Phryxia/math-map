@@ -132,7 +132,7 @@ $\Leftarrow$ 가 Herbrand(1932), $\Rightarrow$ 가 Ribet(1976)이다.
 | $p\nmid B_k\Rightarrow A^{(\omega^{1-k})}=0$ | Stickelberger 소멸자 | 쉬움 |
 | $p\mid B_k\Rightarrow A^{(\omega^{1-k})}\ne0$ | Eisenstein 합동 + Galois 표현 | 어려움 |
 
-상한은 소멸자나 [Euler 계](euler-systems.md)로, 하한은 합동으로 얻는 분담이 산술 기하 전반에서 반복된다. Iwasawa 주추측의 두 나눔이 이 두 기술에 대응하고, 타원곡선 쪽에서는 Kato 의 Euler 계와 Skinner–Urban 의 Eisenstein 합동이 같은 역할을 맡는다.
+상한은 소멸자나 [Euler 계](euler-systems.md)로, 하한은 합동으로 얻는 분담이 산술 기하 전반에서 반복된다. Iwasawa 주추측의 두 나눔이 이 두 기술에 대응하고, 타원곡선 쪽에서는 Kato 의 Euler 계가 상한을, Skinner–Urban 의 Eisenstein 합동이 하한을 준다.
 
 ## 지표 $\omega^{1-k}$
 
