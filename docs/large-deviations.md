@@ -54,7 +54,7 @@ $$
 
 이다.
 
-상계는 Markov 부등식에서 나온다. 임의의 $\lambda \gt 0$ 에 대해 $\mathbb P\lbrack S_n \ge nx\rbrack \le e^{-n(\lambda x - \Lambda(\lambda))}$ 이고 $\lambda$ 에 대해 최적화하면 $e^{-n\Lambda^\ast(x)}$ 를 얻는다. 하계는 측도변환으로 얻는다. 원래 분포를 $e^{\lambda x}$ 로 기울여 평균이 $x$ 인 새 분포를 만들면 그 아래에서는 문제의 사건이 전형적 사건이 되고, 우도비가 기여하는 인자가 정확히 $e^{-n\Lambda^\ast(x)}$ 다.
+상계는 Markov 부등식에서 나온다. 임의의 $\lambda \gt 0$ 에 대해 $\mathbb P\lbrack S_n \ge nx\rbrack \le e^{-n(\lambda x - \Lambda(\lambda))}$ 이고 $\lambda$ 에 대해 최적화하면 $e^{-n\Lambda^\ast(x)}$ 를 얻는다. 하계는 [측도변환](change-of-measure.md)으로 얻는다. 원래 분포를 $e^{\lambda x}$ 로 기울여 평균이 $x$ 인 새 분포를 만들면 그 아래에서는 문제의 사건이 전형적 사건이 되고, 우도비가 기여하는 인자가 정확히 $e^{-n\Lambda^\ast(x)}$ 다.
 
 ## Sanov 정리
 

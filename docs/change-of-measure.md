@@ -16,7 +16,7 @@ $A$ 가 자주 일어나는 분포 $P$ 에서 뽑으면 표본이 덜 든다. �
 
 ## 절대연속과 밀도
 
-측도공간 $(X,\mathcal F)$ 위의 두 측도 $Q$ , $P$ 에 대해, $P(A)=0$ 인 모든 가측집합 $A$ 가 $Q(A)=0$ 을 만족할 때 $Q$ 는 $P$ 에 **절대연속**이라 하고 $Q\ll P$ 로 쓴다. $P$ 가 $\sigma$ 유한이면 Radon–Nikodym 정리로 거의 어디서나 유일한 비음 [가측함수](measurable-functions.md) $L$ 이 존재하여
+측도공간 $(X,\mathcal F)$ 위의 두 [측도](measure.md) $Q$ , $P$ 에 대해, $P(A)=0$ 인 모든 가측집합 $A$ 가 $Q(A)=0$ 을 만족할 때 $Q$ 는 $P$ 에 **절대연속**이라 하고 $Q\ll P$ 로 쓴다. $P$ 가 $\sigma$ 유한이면 Radon–Nikodym 정리로 거의 어디서나 유일한 비음 [가측함수](measurable-functions.md) $L$ 이 존재하여
 
 $$
 Q(A) = \int_A L \thinspace dP \qquad \text{for all } A \in \mathcal{F}, \qquad L = \frac{dQ}{dP} .

@@ -2,7 +2,7 @@
 
 # 개요
 
-Nelson 이 세운 이 체계는 표본공간을 [유한 확률 공간](probability.md)으로만 두되 원소 개수가 초유한인 것을 허용한다. 기댓값이 언제나 유한합이므로 $\sigma$ 대수, 측도의 가산가법성, Kolmogorov 확장 정리를 쓰지 않고 Brown 운동과 확률적분을 세운다. 초유한 자연수는 [내부집합론](internal-set-theory.md)의 이상화 공리가 준다.
+Nelson 이 세운 이 체계는 표본공간을 [유한 확률 공간](probability.md)으로만 두되 원소 개수가 초유한인 것을 허용한다. 기댓값이 언제나 유한합이므로 $\sigma$ 대수, [측도](measure.md)의 가산가법성, Kolmogorov 확장 정리를 쓰지 않고 Brown 운동과 확률적분을 세운다. 초유한 자연수는 [내부집합론](internal-set-theory.md)의 이상화 공리가 준다.
 
 # 직관
 

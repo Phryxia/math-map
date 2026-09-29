@@ -4,7 +4,7 @@
 
 Luzin 집합은 실직선의 비가산 부분집합 가운데 모든 제1범주 집합과 가산으로만 만나는 것이고, Sierpiński 집합은 모든 영집합과 가산으로만 만나는 것이다. 연속체 가설 아래에서 둘 다 존재한다.
 
-Luzin 집합은 측도가 $0$ 이면서 제1범주가 아니고, Sierpiński 집합은 제1범주이면서 측도가 양이다. 두 집합은 [Erdős–Sierpiński 쌍대성](erdos-sierpinski-duality.md)의 쌍대 사상으로 서로 옮겨진다.
+Luzin 집합은 [측도](measure.md)가 $0$ 이면서 제1범주가 아니고, Sierpiński 집합은 제1범주이면서 측도가 양이다. 두 집합은 [Erdős–Sierpiński 쌍대성](erdos-sierpinski-duality.md)의 쌍대 사상으로 서로 옮겨진다.
 
 # 직관
 
