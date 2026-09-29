@@ -89,7 +89,7 @@ $g=1$ 이면 $\mathrm{AJ}: X \to J(X)$ 가 동형이다. [타원곡선](elliptic
 
 ## 선수지식
 
-- [Riemann 곡면과 균일화 정리](riemann-surfaces.md)
+- [Riemann 곡면](riemann-surfaces.md)
 - [Picard 군](picard-group.md)
 
 ## 더 알아보기

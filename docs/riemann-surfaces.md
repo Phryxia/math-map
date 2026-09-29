@@ -1,4 +1,4 @@
-# Riemann 곡면과 균일화 정리
+# Riemann 곡면
 
 # 개요
 

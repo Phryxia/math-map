@@ -160,7 +160,7 @@ $N=11$ 에서 $g=1$ 이므로 $\dim S_2(\Gamma_0(11))=1$ 이고, 그 1 차원 �
 
 - [모듈러 형식](modular-forms.md)
 - [타원곡선](elliptic-curves.md)
-- [Riemann 곡면과 균일화 정리](riemann-surfaces.md)
+- [Riemann 곡면](riemann-surfaces.md)
 
 ## 더 알아보기
 

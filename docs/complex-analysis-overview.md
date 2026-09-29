@@ -23,7 +23,7 @@ graph TD
   HF --> WF["Weierstrass 인수분해 정리"]
   WF --> PC["Picard 정리"]
   RT --> PC
-  CM --> RS["Riemann 곡면과 균일화 정리"]
+  CM --> RS["Riemann 곡면"]
   RS --> MC["모듈러 곡선"]
   RS --> TS["Teichmüller 공간"]
   RT --> EF["타원함수"]
@@ -60,7 +60,7 @@ graph TD
 
 - [해석적 연속](analytic-continuation.md): 함수 요소와 경로를 따른 연속, 항등정리와 유일성, 단일가치 정리, 자연 경계
 - [등각사상](conformal-mapping.md): Möbius 변환, Schwarz 보조정리, Riemann 사상정리, Schwarz–Christoffel 공식
-- [Riemann 곡면과 균일화 정리](riemann-surfaces.md): 다가함수를 단일가치로 만드는 곡면, 구면·평면·원판의 삼분법
+- [Riemann 곡면](riemann-surfaces.md): 다가함수를 단일가치로 만드는 곡면, 구면·평면·원판의 삼분법
 - [Jacobi 다양체](jacobian-variety.md): 주기 격자로 나눈 복소 토러스, Abel 정리가 주는 주 divisor 판정
 
 ## 해석적 수론
