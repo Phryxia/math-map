@@ -24,7 +24,7 @@ $$
 \theta_p\ \sim\ \frac2\pi\sin^2\theta\thinspace d\theta
 $$
 
-를 따른다. $\cos\theta$ 로 옮기면 반원 분포 $\frac2\pi\sqrt{1-x^2}\thinspace dx$ 다. 이 측도는 콤팩트군 $\mathrm{SU}(2)$ 의 켤레류 위 Haar 측도이고, Frobenius 가 $\mathrm{SU}(2)$ 안에 균등하게 흩어진다는 뜻이다.
+를 따른다. $\cos\theta$ 로 옮기면 반원 분포 $\frac2\pi\sqrt{1-x^2}\thinspace dx$ 다. 이 측도는 콤팩트군 $\mathrm{SU}(2)$ 의 켤레류 위 [Haar 측도](haar-measure.md)이고, Frobenius 가 $\mathrm{SU}(2)$ 안에 균등하게 흩어진다는 뜻이다.
 
 복소곱셈이 있으면 대칭군이 $\mathrm{SU}(2)$ 안의 정규화 토러스로 줄어든다. 절반의 소수에서 $a_p=0$ 이고 그 소수에서 곡선이 초특이하며, 나머지 각은 균등분포를 따른다.
 

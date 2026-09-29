@@ -106,7 +106,7 @@ $\delta_B^{1/2}$ 인자가 없으면 $\mathcal S(f)$ 가 Weyl 군 $W$ 불변이 
 
 $F$ 를 비아르키메데스 국소체, $\mathcal O$ 를 그 정수환, $q$ 를 잉여체의 크기라 하자. $G$ 는 $F$ 위의 **비분기** 연결 환원군, 곧 $F$ 위에서 준분열이고 비분기 확대에서 분열하는 군이다. $K=G(\mathcal O)$ 를 초특수 극대 콤팩트 부분군으로 잡는다. $\mathrm{GL}\_n$ 이면 $K=\mathrm{GL}\_n(\mathcal O)$ 다.
 
-**비분기 Hecke 대수**는 $\mathrm{vol}(K)=1$ 인 Haar 측도에 대한 합성곱 대수
+**비분기 Hecke 대수**는 $\mathrm{vol}(K)=1$ 인 [Haar 측도](haar-measure.md)에 대한 합성곱 대수
 
 $$
 \mathcal H(G,K)=\bigl\lbrace\thinspace f:G\to\mathbb C \thickspace\bigm|\thickspace f \text{ 는 콤팩트 받침},\thickspace f(k_1gk_2)=f(g)\thinspace\bigr\rbrace

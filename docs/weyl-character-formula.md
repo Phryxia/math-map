@@ -59,7 +59,7 @@ $\lambda$ 가 지배적이면 $\lambda+\rho$ 는 엄격히 지배적이라 $W$ �
 
 ## 두 가지 증명 노선
 
-해석적 노선(Weyl 의 원래 증명)은 콤팩트군 $G$ 와 극대원환면 $T$ 에서 시작한다. 모든 원소가 어떤 원환면에 들어가므로 류함수는 $T$ 위의 $W$ 불변 함수로 결정되고, Haar 측도가 $T$ 위에서 $\frac1{|W|}|\Delta|^2$ 라는 야코비안을 갖는다(**Weyl 적분 공식**).
+해석적 노선(Weyl 의 원래 증명)은 콤팩트군 $G$ 와 극대원환면 $T$ 에서 시작한다. 모든 원소가 어떤 원환면에 들어가므로 류함수는 $T$ 위의 $W$ 불변 함수로 결정되고, [Haar 측도](haar-measure.md)가 $T$ 위에서 $\frac1{|W|}|\Delta|^2$ 라는 야코비안을 갖는다(**Weyl 적분 공식**).
 
 $$
 \int_Gf(g)\thinspace dg=\frac1{|W|}\int_Tf(t)\thinspace|\Delta(t)|^2\thinspace dt

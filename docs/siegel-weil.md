@@ -31,7 +31,7 @@ $$
 
 $Q$ 와 $Q'$ 가 같은 류라는 것은 모든 $\mathbb Z_p$ 와 $\mathbb R$ 위에서 동치라는 뜻이다. 국소적으로 구별되지 않지만 $\mathbb Z$ 위에서는 동치가 아닐 수 있고, 판별식 $-4\cdot 41$ 짜리 형식처럼 한 류 안에 $\mathbb Z$ 동치가 아닌 형식이 여럿 들어 있는 일이 흔하다.
 
-그러므로 국소 데이터로 만든 $\prod_v\delta_v(n)$ 이 개별 $r_{Q_i}(n)$ 과 같을 수 없고, 국소 정보로 도달할 수 있는 최선은 류 전체의 평균이다. 가중치 $1/|\mathrm{Aut}\thinspace Q_i|$ 는 아델 군의 Haar 측도를 각 류 대표에 나눠줄 때 나오는 무게이며, [Eichler 의 질량 공식](jacquet-langlands.md)이 사원수 대수에서 쓰는 가중치와 같다.
+그러므로 국소 데이터로 만든 $\prod_v\delta_v(n)$ 이 개별 $r_{Q_i}(n)$ 과 같을 수 없고, 국소 정보로 도달할 수 있는 최선은 류 전체의 평균이다. 가중치 $1/|\mathrm{Aut}\thinspace Q_i|$ 는 아델 군의 [Haar 측도](haar-measure.md)를 각 류 대표에 나눠줄 때 나오는 무게이며, [Eichler 의 질량 공식](jacquet-langlands.md)이 사원수 대수에서 쓰는 가중치와 같다.
 
 ## 주항과 오차항
 
