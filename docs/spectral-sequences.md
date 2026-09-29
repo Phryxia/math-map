@@ -82,7 +82,7 @@ $$
 - **고리공간.** 경로 올화 $\Omega B\to PB\to B$ 에서 $PB$ 가 수축가능하므로 $E_\infty$ 가 한 자리만 남아야 한다. 그 조건이 $H^\ast(\Omega B)$ 를 $H^\ast(B)$ 에서 결정하고, $\Omega S^{n+1}$ 의 코호몰로지가 이렇게 나온다.
 - **[Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)의 코호몰로지.** 올화 $K(G,n-1)\to PK(G,n)\to K(G,n)$ 에 같은 수를 반복해 차수를 올려 가며 계산하고, 그 결과가 코호몰로지 연산의 목록이다.
 - **[Postnikov 탑](postnikov-tower.md).** 탑의 각 단계가 올화이므로 단계마다 스펙트럼 수열을 붙여 구면의 호모토피군을 차수 순으로 계산한다.
-- **유도 함자의 합성.** 두 함자를 합성한 것의 유도 함자를 각각의 유도 함자로 계산하는 Grothendieck 스펙트럼 수열이 [층 코호몰로지](sheaf-cohomology.md)의 Leray 스펙트럼 수열을 특수 사례로 갖는다.
+- **유도 함자의 합성.** 두 함자를 합성한 것의 [유도 함자](derived-functors.md)를 각각의 유도 함자로 계산하는 Grothendieck 스펙트럼 수열이 [층 코호몰로지](sheaf-cohomology.md)의 Leray 스펙트럼 수열을 특수 사례로 갖는다.
 
 # 연관 문서
 
