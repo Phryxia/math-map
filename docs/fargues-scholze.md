@@ -1,4 +1,4 @@
-# Fargues–Scholze 기하화와 국소 Langlands
+# Fargues–Scholze 기하화
 
 # 개요
 

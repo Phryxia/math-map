@@ -1,4 +1,4 @@
-# Shimura 대응과 반정수 무게 형식
+# Shimura 대응
 
 # 개요
 
@@ -144,7 +144,7 @@ $n$ 이 직각삼각형의 넓이가 될 수 있는지는 [타원곡선](ellipti
 
 ## 선수지식
 
-- [Weil 표현과 theta 대응](weil-representation.md)
+- [Weil 표현](weil-representation.md)
 - [Hecke 작용소](hecke-operators.md)
 
 ## 더 알아보기

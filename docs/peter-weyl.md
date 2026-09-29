@@ -148,6 +148,6 @@ $$
 
 - [Weyl 지표 공식](weyl-character-formula.md)
 - [구면조화함수](spherical-harmonics.md)
-- [Weil 표현과 theta 대응](weil-representation.md)
+- [Weil 표현](weil-representation.md)
 
 #functional_analysis #group_theory #analysis

@@ -1,4 +1,4 @@
-# Jacquet–Langlands 대응과 사원수 대수 위의 형식
+# Jacquet–Langlands 대응
 
 # 개요
 

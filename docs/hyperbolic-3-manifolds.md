@@ -192,7 +192,7 @@ SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자
 
 ## 더 알아보기
 
-- [볼륨 추측과 색 Jones 다항식](volume-conjecture.md)
+- [볼륨 추측](volume-conjecture.md)
 - [기하화 정리](geometrization.md)
 
 #differential_geometry #topology #algebraic_topology #group_theory #theorem

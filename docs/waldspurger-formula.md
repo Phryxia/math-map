@@ -146,7 +146,7 @@ $$
 
 - [Gan–Gross–Prasad 추측](gan-gross-prasad.md)
 - [Heegner 점과 Gross–Zagier 공식](heegner-points.md)
-- [Jacquet–Langlands 대응과 사원수 대수 위의 형식](jacquet-langlands.md)
+- [Jacquet–Langlands 대응](jacquet-langlands.md)
 
 ## 더 알아보기
 

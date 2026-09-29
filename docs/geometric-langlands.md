@@ -175,6 +175,6 @@ $L$ 함수는 Frobenius 고윳값으로 만든 산술적 양이라 계수를 $\m
 
 ## 더 알아보기
 
-- [Fargues–Scholze 기하화와 국소 Langlands](fargues-scholze.md)
+- [Fargues–Scholze 기하화](fargues-scholze.md)
 
 #number_theory #category_theory #algebraic_topology #group_theory

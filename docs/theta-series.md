@@ -184,7 +184,7 @@ $$
 - [괴물 달빛 추측](monstrous-moonshine.md)
 - [Mock 모듈러 형식](mock-modular-forms.md)
 - [Jacobi 형식](jacobi-forms.md)
-- [Weil 표현과 theta 대응](weil-representation.md)
+- [Weil 표현](weil-representation.md)
 - [Niemeier 격자](niemeier-lattices.md)
 
 #number_theory #combinatorics #complex_analysis

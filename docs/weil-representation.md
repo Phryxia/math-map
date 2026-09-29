@@ -1,4 +1,4 @@
-# Weil 표현과 theta 대응
+# Weil 표현
 
 # 개요
 
@@ -170,7 +170,7 @@ $$
 ## 더 알아보기
 
 - [Siegel–Weil 공식과 이차형식의 표현수](siegel-weil.md)
-- [Shimura 대응과 반정수 무게 형식](shimura-correspondence.md)
+- [Shimura 대응](shimura-correspondence.md)
 - [Borcherds 곱](borcherds-products.md)
 
 #number_theory #group_theory #complex_analysis

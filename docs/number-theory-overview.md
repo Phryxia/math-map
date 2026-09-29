@@ -95,7 +95,7 @@ graph TD
 - [Siegel 모듈라이 다양체](siegel-modular-variety.md) → [Siegel 모듈러 형식](siegel-modular-forms.md): 주편극 아벨 다양체를 분류하는 Siegel 상반공간의 몫과 그 위 선다발의 절단
 - [Jacobi 형식](jacobi-forms.md): 차수 2 Siegel 형식을 한 변수로 전개한 계수. 지표 1 의 공간이 반정수 가중치 형식과 동형이다
 - [분할수](partitions.md), [Mock 모듈러 형식](mock-modular-forms.md), [Dyson 의 rank 와 crank](dyson-rank-crank.md), [Borcherds 곱](borcherds-products.md): 조합론과의 접점
-- [Weil 표현과 theta 대응](weil-representation.md) → [Shimura 대응](shimura-correspondence.md), [Siegel–Weil 공식](siegel-weil.md) → [질량 공식](mass-formula.md) → [Niemeier 격자](niemeier-lattices.md)
+- [Weil 표현](weil-representation.md) → [Shimura 대응](shimura-correspondence.md), [Siegel–Weil 공식](siegel-weil.md) → [질량 공식](mass-formula.md) → [Niemeier 격자](niemeier-lattices.md)
 - [구 채우기](sphere-packing.md): 격자와 부호가 정하는 최대 밀도
 - [괴물 달빛 추측](monstrous-moonshine.md), [Umbral moonshine](umbral-moonshine.md): 모듈러 함수와 산재 단순군
 
