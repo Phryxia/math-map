@@ -40,6 +40,7 @@ graph TD
 
 - [군](groups.md) → [군 작용](group-actions.md): 대칭의 공리화와 궤도–안정자
 - [군 작용](group-actions.md) → [순종군](amenable-groups.md): 불변 평균을 갖는 군, Følner 조건과 역설적 분해의 부재
+- [정규화군](normalizer.md): 부분집합을 켤레로 보존하는 부분군, 중심화군과 N/C 정리, 켤레 개수의 지표 공식
 - [가해군](solvable-groups.md): 가환인 몫을 쌓아 얻는 군, 유도열과 하강 중심열, Burnside 와 Feit–Thompson 의 판정 정리
 - [Sylow 정리](sylow-theorems.md) → [유한 단순군 분류](finite-simple-groups.md) → [군 확대](group-extensions.md) → [군 코호몰로지](group-cohomology.md), [Schur 곱셈자](schur-multipliers.md)
 - [군의 표현](group-representations.md): 군을 행렬로 보는 기본 도구

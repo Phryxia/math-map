@@ -134,6 +134,7 @@ Galois 이론은 같은 발상을 방정식에 적용한다. 체 확대의 자�
 
 ### 군론
 
+- [정규화군](normalizer.md)
 - [Sylow 정리](sylow-theorems.md)
 - [군의 표현](group-representations.md)
 

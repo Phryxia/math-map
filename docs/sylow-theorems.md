@@ -38,7 +38,7 @@ $$
 
 ## 정규화부분군
 
-부분군 $H \le G$ 의 정규화부분군은
+부분군 $H \le G$ 의 [정규화부분군](normalizer.md)은
 
 $$
 N_G(H) = \lbrace g \in G : gHg^{-1} = H \rbrace
