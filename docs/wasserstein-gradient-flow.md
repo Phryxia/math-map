@@ -2,7 +2,7 @@
 
 # 개요
 
-확률측도 전체가 이루는 공간에 [최적 수송](optimal-transport.md)의 $W_2$ 거리를 주면 그 공간이 형식적인 Riemann 다양체가 되고, 열방정식 $\partial_t\rho=\Delta\rho$ 가 엔트로피의 경사하강이 된다.
+확률측도 전체가 이루는 공간에 [최적 수송](optimal-transport.md)의 $W_2$ 거리를 주면 그 공간이 형식적인 Riemann 다양체가 된다. 이 기하에서 열방정식 $\partial_t\rho=\Delta\rho$ 가 엔트로피의 경사하강이다.
 
 $$
 \partial_t\rho=\nabla\negthinspace\cdot\negthinspace\Big(\rho\thinspace\nabla\frac{\delta\mathcal F}{\delta\rho}\Big),
@@ -12,7 +12,7 @@ $$
 
 $\mathcal F$ 는 자유에너지이고, 이 방정식은 [Itô 계산](ito-calculus.md)에서 확률미분방정식의 밀도가 만족하는 Fokker–Planck 방정식이다. 확산 과정 하나가 분포 공간 위의 경사하강 하나에 대응한다.
 
-경사하강의 암시적 오일러 이산화를 옮기면 **JKO**(Jordan–Kinderlehrer–Otto) **스킴**이 나오고, 그 수렴 증명이 Fokker–Planck 해의 존재 증명이 된다.[^1] 또 $W_2$ 를 따라 잰 [볼록성](convexity.md)이 확산의 수렴 속도를 주며, 함수부등식의 증명과 생성모형 설계가 이 사실에 기댄다.
+경사하강의 암시적 오일러 이산화를 옮기면 **JKO**(Jordan–Kinderlehrer–Otto) **스킴**이 나오고, 그 수렴 증명이 Fokker–Planck 해의 존재 증명이 된다.[^1] 또 $W_2$ 를 따라 잰 [볼록성](convexity.md)이 확산의 수렴 속도를 준다. 함수부등식의 증명과 생성모형 설계가 이 속도에 기댄다.
 
 # 직관
 
@@ -24,7 +24,7 @@ $$
 x^{k+1}=\arg\min_x\ \Big[f(x)+\frac{|x-x^k|^2}{2\tau}\Big]
 $$
 
-$\tau\to0$ 에서 $\dot x=-\nabla f(x)$ 가 나온다. $|x-x^k|^2$ 는 공간에 준 거리일 뿐이고, 거리를 바꾸면 같은 $f$ 에 대해 다른 흐름이 나온다. 확률측도의 공간 $\mathcal P_2(\mathbb R^d)$ 에서 거리를 $W_2$ 로 잡으면 같은 식이 다음이 된다.
+$\tau\to0$ 에서 $\dot x=-\nabla f(x)$ 가 나온다. $|x-x^k|^2$ 는 공간에 준 거리다. 거리를 바꾸면 같은 $f$ 에서 다른 흐름이 나온다. 확률측도의 공간 $\mathcal P_2(\mathbb R^d)$ 에서 거리를 $W_2$ 로 잡으면 같은 식이 다음이 된다.
 
 $$
 \rho^{k+1}=\arg\min_{\rho\in\mathcal P_2}\ \Big[\mathcal F(\rho)+\frac{W_2^2(\rho,\rho^k)}{2\tau}\Big]
@@ -40,7 +40,7 @@ $$
 W_2^2(\mu,\nu)=\min\Big\lbrace\int_0^1\negthinspace\negthinspace\int|v_t|^2\rho_t\thinspace dx\thinspace dt\ :\ \partial_t\rho_t+\nabla\negthinspace\cdot\negthinspace(\rho_tv_t)=0,\ \rho_0=\mu,\ \rho_1=\nu\Big\rbrace
 $$
 
-곡선 $\rho_t$ 의 속도는 연속방정식을 통해 속도장 $v_t$ 로 나타나고 그 길이의 제곱이 $\int|v_t|^2\rho_t$ 다. 곧 $\rho$ 에서의 접공간에 내적이 하나 주어진다.
+연속방정식이 곡선 $\rho_t$ 의 속도를 속도장 $v_t$ 로 적는다. 그 길이의 제곱이 $\int|v_t|^2\rho_t$ 이므로 $\rho$ 에서의 접공간이 내적을 하나 갖는다.
 
 $$
 \langle v_1,v_2\rangle_\rho=\int v_1\cdot v_2\thinspace\rho\thinspace dx
@@ -105,7 +105,7 @@ $$
 
 **Jordan–Kinderlehrer–Otto.** $V$ 가 적당한 성장조건을 만족하고 $\mathcal F(\rho_0)\lt\infty$ 이면, JKO 스킴의 조각별 상수 보간 $\rho^\tau$ 는 $\tau\to0$ 에서 Fokker–Planck 방정식의 유일한 해로 수렴한다.
 
-각 JKO 단계가 잘 정의된다는 것은 $W_2$ 의 아래반연속성과 $\mathcal F$ 의 콤팩트 준위집합에서 변분법의 직접법으로 나오고, 극한이 해라는 것은 일계 조건을 모아 얻는다. **PDE**(partial differential equation)의 정칙성 이론을 거치지 않고 존재성이 나온다.
+각 JKO 단계가 잘 정의된다는 것은 $W_2$ 의 아래반연속성과 $\mathcal F$ 의 콤팩트 준위집합에서 변분법의 직접법으로 나오고, 극한이 해라는 것은 일계 조건을 모아 얻는다. PDE(partial differential equation)의 정칙성 이론을 거치지 않고 존재성이 나온다.
 
 ## 소산 항등식과 지수 수렴
 
@@ -124,7 +124,7 @@ W_2(\rho_t,\rho_\infty)\le e^{-\lambda t}W_2(\rho_0,\rho_\infty),\qquad
 \mathcal F(\rho_t)-\mathcal F(\rho_\infty)\le e^{-2\lambda t}\big(\mathcal F(\rho_0)-\mathcal F(\rho_\infty)\big)
 $$
 
-두 번째 부등식이 **로그 Sobolev 부등식**의 동역학적 형태다. 정적 함수부등식과 확산의 수렴 속도가 한 부등식의 두 형태로 묶이며, Bakry–Émery 판정법 $\nabla^2V\succeq\lambda I$ 가 $\lambda$ 변위 볼록성의 충분조건이다.
+두 번째 부등식이 **로그 Sobolev 부등식**의 동역학적 형태다. 정적 함수부등식과 확산의 수렴 속도가 한 부등식의 두 형태로 묶인다. Bakry–Émery 판정법 $\nabla^2V\succeq\lambda I$ 가 $\lambda$ 변위 볼록성의 충분조건이다.
 
 ## 거리공간에서의 엄밀화
 
@@ -135,7 +135,7 @@ $$
 \quad\text{(모든 }\sigma\text{)}
 $$
 
-이 EVI(evolution variational inequality) 부등식을 만족하는 곡선으로 기울기 흐름을 정의하면 미분구조가 없는 거리공간에서도 존재, 유일성, 축약성이 나온다.
+이 EVI(evolution variational inequality)를 만족하는 곡선으로 기울기 흐름을 정의하면 미분구조가 없는 거리공간에서도 존재, 유일성, 축약성이 나온다.
 
 # 활용
 
