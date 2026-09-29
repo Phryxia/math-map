@@ -26,7 +26,7 @@ $$
 G=(V,E),\qquad E\subseteq\big\lbrace\lbrace u,v\rbrace:u,v\in V,\ u\ne v\big\rbrace
 $$
 
-간선을 순서쌍으로 바꾸면 방향 그래프가 되고, 같은 간선을 여러 개 허용하면 다중 그래프, 자기 자신으로 가는 간선을 허용하면 루프가 있는 그래프다. 무엇을 허용하는지는 모형마다 명시해야 한다. 이 수학 지도 자체는 방향 그래프이며 순환을 금지한 [DAG](dag-topological.md)(directed acyclic graph)다.
+간선을 순서쌍으로 바꾸면 방향 그래프가 되고, 같은 간선을 여러 개 허용하면 다중 그래프, 자기 자신으로 가는 간선을 허용하면 루프가 있는 그래프다. 무엇을 허용하는지는 모형마다 명시해야 한다. 이 수학 지도 자체는 방향 그래프이며 순환을 금지한 [DAG](topological-sort.md)(directed acyclic graph)다.
 
 ## 걷기, 경로, 순환
 
@@ -97,7 +97,7 @@ $$
 ### 구조와 알고리즘
 
 - [그래프 탐색](graph-search.md)
-- [DAG 와 위상정렬](dag-topological.md)
+- [위상정렬](topological-sort.md)
 - [서로소 집합 자료구조](union-find.md)
 - [동적 연결성](dynamic-connectivity.md)
 - [네트워크 흐름](network-flow.md)
