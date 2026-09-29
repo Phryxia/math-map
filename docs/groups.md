@@ -149,6 +149,7 @@ $$
 ### 대수 구조
 
 - [군 작용](group-actions.md)
+- [가해군](solvable-groups.md)
 - [군의 표시](group-presentations.md)
 - [환](rings.md)
 - [범주](category.md)
