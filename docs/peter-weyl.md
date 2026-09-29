@@ -142,6 +142,7 @@ $$
 ## 선수지식
 
 - [Lie 군](lie-groups.md)
+- [Haar 측도](haar-measure.md)
 - [Hilbert 공간](hilbert-spaces.md)
 
 ## 더 알아보기
