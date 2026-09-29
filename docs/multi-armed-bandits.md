@@ -79,7 +79,7 @@ function ucb(K, T, pull) {
 
 > **정리 (Lai–Robbins).** 보상 분포족이 적당한 조건을 만족하면, 모든 문제에서 후회가 $o(T^a)$ ($a\gt 0$) 인 규칙은 $\liminf\_{T\to\infty}R_T/\log T\ge\sum_{i:\Delta_i\gt 0}\Delta_i/\mathrm{KL}(\nu_i\Vert\nu^\ast)$ 를 만족한다.[^2]
 
-두 분포를 가르려면 표본이 KL 발산의 역수 규모만큼 필요하다는 것이 근거다. UCB 의 상한이 이 하한과 $\log T$ 차수에서 일치하므로 차수로는 더 줄일 수 없다.
+두 분포를 가르려면 표본이 KL(Kullback–Leibler) 발산의 역수 규모만큼 필요하다는 것이 근거다. UCB 의 상한이 이 하한과 $\log T$ 차수에서 일치하므로 차수로는 더 줄일 수 없다.
 
 ## 문맥과 적대적 판
 

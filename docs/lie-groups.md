@@ -143,7 +143,7 @@ $$
 g_{k+1}=g_k\exp(\xi_k)
 $$
 
-로봇 자세추정과 SLAM 이 이 형태를 쓴다. 해가 군 위에 머물도록 보장하는 Lie 군 적분기(Magnus 전개, Runge–Kutta–Munthe-Kaas)도 같은 원리이고, 사원수 회전 표현은 $\mathrm{SU}(2)\cong S^3$ 을 쓰는 것이다.
+로봇 자세추정과 SLAM(simultaneous localization and mapping)이 이 형태를 쓴다. 해가 군 위에 머물도록 보장하는 Lie 군 적분기(Magnus 전개, Runge–Kutta–Munthe-Kaas)도 같은 원리이고, 사원수 회전 표현은 $\mathrm{SU}(2)\cong S^3$ 을 쓰는 것이다.
 
 ## 표현론과 정수론
 
