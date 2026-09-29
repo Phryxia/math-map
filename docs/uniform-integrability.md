@@ -172,6 +172,6 @@ UI 는 $L^1$ 이 [반사적](banach-spaces.md)이지 않아 유계 집합이 약
 
 ## 더 알아보기
 
-- [분포 수렴과 Prokhorov 정리](weak-convergence.md)
+- [약수렴](weak-convergence.md)
 
 #measure_theory #probability

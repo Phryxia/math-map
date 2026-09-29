@@ -143,7 +143,7 @@ Monte Carlo 추정의 표준오차는 표본표준편차를 $n$ 의 제곱근으
 ## 선수지식
 
 - [큰 수의 법칙](law-of-large-numbers.md)
-- [분포 수렴과 Prokhorov 정리](weak-convergence.md)
+- [약수렴](weak-convergence.md)
 
 ## 더 알아보기
 

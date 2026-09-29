@@ -16,7 +16,7 @@ graph TD
   PR --> BY["Bayes 정리"]
   PR --> RV["확률변수와 기댓값"]
   LI["Lebesgue 적분"] --> RV
-  PM["상측도"] --> WC["분포 수렴과 Prokhorov"]
+  PM["상측도"] --> WC["약수렴"]
   RV --> LLN["큰 수의 법칙"]
   LLN --> CLT["중심극한정리"]
   WC --> CLT
@@ -54,7 +54,7 @@ graph TD
 
 ## 극한정리
 
-- [분포 수렴과 Prokhorov 정리](weak-convergence.md): 분포의 수렴과 tightness
+- [약수렴](weak-convergence.md): 분포의 수렴과 tightness
 - [특성함수](characteristic-functions.md): Fourier 변환으로 분포 수렴을 판정
 - [큰 수의 법칙](law-of-large-numbers.md): 표본평균이 기댓값으로
 - [중심극한정리](central-limit-theorem.md): 요동의 정규분포 근사
@@ -100,6 +100,6 @@ graph TD
 ## 더 알아보기
 
 - [유한 확률 공간](probability.md)
-- [분포 수렴과 Prokhorov 정리](weak-convergence.md)
+- [약수렴](weak-convergence.md)
 
 #probability #measure_theory #statistics #overview
