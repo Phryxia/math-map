@@ -18,103 +18,21 @@ $\zeta_n$ 이 하던 일을 $j$ 와 비틀림점이 한다. Kronecker 가 "청�
 
 # 직관
 
-## 이차무리수 격자
+격자 $\Lambda=\mathbb Z+\mathbb Z\tau\subset\mathbb C$ 를 자기 안으로 보내는 복소수를 찾는다. $\alpha\Lambda\subseteq\Lambda$ 이면 $\alpha$ 가 $\mathbb C/\Lambda$ 의 자기준동형이다. $\alpha\cdot1=a+b\tau$ 와 $\alpha\cdot\tau=c+d\tau$ 를 정수로 쓰면 $\alpha$ 는 정수 행렬 $\begin{pmatrix}a&c\cr b&d\end{pmatrix}$ 의 고윳값이므로 이차 대수적 정수다.
 
-$\Lambda=\mathbb Z+\mathbb Z\tau\subset\mathbb C$ 에 대해 $\alpha\Lambda\subseteq\Lambda$ 인 복소수 $\alpha$ 가 $\mathbb C/\Lambda$ 의 자기준동형을 준다. $\alpha\cdot1=a+b\tau$ 와 $\alpha\cdot\tau=c+d\tau$ 를 정수로 쓰면 $\alpha$ 는 정수 행렬의 고윳값이므로 이차 대수적 정수다. $\alpha\notin\mathbb Z$ 이려면 $\tau$ 가 이차무리수여야 한다.
+$\alpha\notin\mathbb Z$ 인 것이 하나라도 있으려면 $\tau$ 가 이차무리수여야 한다.
 
 $$
 A\tau^2+B\tau+C=0,\qquad A,B,C\in\mathbb Z,\ \gcd(A,B,C)=1,\ D=B^2-4AC\lt 0
 $$
 
-이면 $\mathrm{End}(\mathbb C/\Lambda)=\mathbb Z[A\tau]$ 가 판별식 $D$ 의 순서환이다. $\tau$ 가 초월수이거나 삼차 이상이면 자기준동형은 정수뿐이다.
-
-## CM 곡선의 개수와 류수
-
-판별식 $D$ 인 순서환 $\mathcal O$ 를 고정하면 $\mathcal O$ 를 자기준동형환으로 갖는 곡선 $\mathbb C/\mathfrak a$ 는 아이디얼류 $[\mathfrak a]\in\mathrm{Cl}(\mathcal O)$ 로 분류되고, 그 개수는 $h(D)$ 다. 류수는 축소된 이차형식을 세면 계산된다.
-
-```javascript
-// 판별식 D<0 의 류수: 축소된 원시 이차형식 (a,b,c), |b| ≤ a ≤ c 의 개수
-function classNumber(D) {
-  const gcd = (x, y) => (y ? gcd(y, x % y) : x);
-  let h = 0;
-  for (let b = D % 2 === 0 ? 0 : 1; b * b <= -D / 3; b += 2) {
-    const t = (b * b - D) / 4;
-    for (let a = Math.max(b, 1); a * a <= t; a++) {
-      if (t % a !== 0) continue;
-      const c = t / a;
-      if (gcd(gcd(a, b), c) !== 1) continue;
-      h += (a === b || a === c || b === 0) ? 1 : 2;   // b 와 -b 가 같은 류인 경우
-    }
-  }
-  return h;
-}
-```
-
-$h(D)$ 개의 곡선은 서로 동형이 아니고 그 $j$ 값들은 서로 켤레인 대수적 수다. 최소다항식이 힐베르트 유체 다항식
-
-$$
-H_D(X)=\prod_{[\mathfrak a]\in\mathrm{Cl}(\mathcal O)}\bigl(X-j(\mathfrak a)\bigr)\in\mathbb Z[X]
-$$
-
-이고 차수는 $h(D)$ 다. 복소해석적으로 정의한 $j$ 값들의 대칭식이 정수 계수를 갖는다.
-
-## 류수 1 이 만드는 거의 정수
-
-$h(D)=1$ 이면 $H_D(X)=X-j$ 라 $j$ 가 정수다. $j$ 의 $q$ 전개
-
-$$
-j(\tau)=\frac1q+744+196884\thinspace q+\cdots,\qquad q=e^{2\pi i\tau}
-$$
-
-에 $\tau=\frac{1+\sqrt D}{2}$ 를 넣으면 $q=-e^{-\pi\sqrt{|D|}}$ 이므로
-
-$$
--e^{\pi\sqrt{|D|}}+744-196884\thinspace e^{-\pi\sqrt{|D|}}+\cdots=j\in\mathbb Z
-$$
-
-이고, $|D|$ 가 크면 셋째 항부터는 무시할 수 있다. 따라서 $e^{\pi\sqrt{|D|}}$ 가 정수 $744-j$ 에 지수적으로 가깝다.
-
-$$
-e^{\pi\sqrt{43}}=884736743.9997\ldots,\qquad e^{\pi\sqrt{67}}=147197952743.9998\ldots
-$$
-
-$$
-e^{\pi\sqrt{163}}=262537412640768743.99999999999925\ldots
-$$
-
-$e^{\pi\sqrt{163}}$ 이 정수에 가까운 것은 $h(-163)=1$ 의 따름이다. $h(D)=1$ 인 기본판별식은 아홉 개다.
-
-$$
-D=-3,-4,-7,-8,-11,-19,-43,-67,-163
-$$
-
-이 목록이 완전하다는 것이 Heegner–Stark–Baker 정리이고, 증명은 초월수론과 $L$ 함수의 비소실을 쓴다.
-
-## Galois 작용의 아이디얼 곱셈
-
-$H=K(j(\mathcal O_K))$ 는 $K$ 의 아벨확대이고 Artin 사상이
-
-$$
-\mathrm{Cl}(K)\thickspace\xrightarrow{\ \sim\ }\thickspace\mathrm{Gal}(H/K),\qquad [\mathfrak a]\mapsto\sigma_{\mathfrak a}
-$$
-
-를 준다. 이 동형 아래에서
-
-$$
-\sigma_{\mathfrak a}\bigl(j(\mathfrak b)\bigr)=j(\mathfrak a^{-1}\mathfrak b)
-$$
-
-이다. Galois 군의 원소가 격자에 아이디얼을 곱하는 조작으로 실현된다. $\mathbb Q$ 위의 $\sigma_a(\zeta_n)=\zeta_n^{a}$ 와 같은 종류의 명시성이고, [Heegner 점](heegner-points.md)의 구성이 이 등식에 의존한다.
-
-## 광선 유체와 비틀림점
-
-$H$ 는 $K$ 의 최대 비분기 아벨확대다. 분기를 허용하는 광선 유체에는 재료가 하나 더 필요하고 그것이 비틀림점이다. $E$ 가 $\mathcal O_K$ 로 복소 곱셈을 가질 때 $\mathfrak m$ 등분점 $E[\mathfrak m]$ 의 좌표를 자기동형으로 정규화한 Weber 함수 $\mathfrak h$ 의 값을 $H$ 에 붙이면 도체 $\mathfrak m$ 의 광선 유체가 나온다. $\zeta_n$ 이 곱셈군 $\mathbb G_m$ 의 $n$ 등분점이었던 자리에 타원곡선의 등분점이 들어간다.
+이면 자기준동형환이 판별식 $D$ 의 순서환 $\mathbb Z[A\tau]$ 다. $\tau$ 가 삼차 이상이거나 초월수이면 자기준동형은 정수뿐이다. 곱셈이 더 있는 곡선은 격자에 허수이차체가 매달린 것뿐이고, 그 곡선의 $j$ 값이 $K$ 의 확대를 생성할 후보다.
 
 # 정의
 
 ## 순서환과 복소 곱셈
 
-허수이차체 $K$ 의 정수환을 $\mathcal O_K$ 라 하고, 지휘자 $f\ge1$ 에 대한 $\mathcal O=\mathbb Z+f\mathcal O_K$ 를 순서환이라 하자. 판별식은 $D=f^2 d_K$ 다. 타원곡선 $E/\mathbb C$ 가 $\mathcal O$ 에 의한 **복소 곱셈**을 가진다는 것은
+허수이차체 $K$ 의 정수환을 $\mathcal O_K$ 라 하고, 지휘자 $f\ge1$ 에 대한 $\mathcal O=\mathbb Z+f\mathcal O_K$ 를 순서환이라 하자. 판별식은 $D=f^2 d_K$ 다. 타원곡선 $E/\mathbb C$ 가 $\mathcal O$ 에 의한 **복소 곱셈**(complex multiplication, CM) 을 가진다는 것은
 
 $$
 \mathrm{End}(E)\cong\mathcal O
@@ -126,6 +44,14 @@ $$
 \lbrace\mathcal O\ \text{에 의한 CM 곡선}\rbrace/\cong\thickspace\longleftrightarrow\thickspace\mathrm{Cl}(\mathcal O),\qquad \char35{}=h(D)
 $$
 
+$h(D)$ 개의 곡선은 서로 동형이 아니고 그 $j$ 값들은 서로 켤레인 대수적 수다. 그 최소다항식이 **힐베르트 유체 다항식**이다.
+
+$$
+H_D(X)=\prod_{[\mathfrak a]\in\mathrm{Cl}(\mathcal O)}\bigl(X-j(\mathfrak a)\bigr)\in\mathbb Z[X]
+$$
+
+차수는 $h(D)$ 이고, 복소해석적으로 정의한 $j$ 값들의 대칭식이 정수 계수를 갖는다.
+
 ## 제1 주정리
 
 $\mathcal O=\mathcal O_K$ 인 경우다.
@@ -135,15 +61,17 @@ $\mathcal O=\mathcal O_K$ 인 경우다.
 3. $[\mathbb Q(j):\mathbb Q]=h(K)$ 이고 $H_D$ 는 $\mathbb Q$ 위에서 기약이다.
 4. Artin 동형 아래 $\sigma_{\mathfrak a}(j(\mathfrak b))=j(\mathfrak a^{-1}\mathfrak b)$ 이다.
 
+4 번은 Galois 군의 원소를 격자에 아이디얼을 곱하는 조작으로 실현한다. $\mathbb Q$ 위의 $\sigma_a(\zeta_n)=\zeta_n^{a}$ 와 같은 종류의 명시성이고, [Heegner 점](heegner-points.md)의 구성이 이 등식에 의존한다.
+
 ## 제2 주정리와 Shimura 상호법칙
 
-$E/H$ 를 $\mathcal O_K$ 로 CM(complex multiplication) 을 갖는 곡선, $\mathfrak h\colon E\to E/\mathrm{Aut}(E)\cong\mathbb P^1$ 를 Weber 함수라 하자. [아이디얼](ideals-quotient-rings.md) $\mathfrak m$ 에 대해
+$E/H$ 를 $\mathcal O_K$ 로 CM 을 갖는 곡선, $\mathfrak h\colon E\to E/\mathrm{Aut}(E)\cong\mathbb P^1$ 를 Weber 함수라 하자. [아이디얼](ideals-quotient-rings.md) $\mathfrak m$ 에 대해
 
 $$
 K_{\mathfrak m}=H\bigl(\mathfrak h(P)\thinspace:\thinspace P\in E[\mathfrak m]\bigr)
 $$
 
-가 도체 $\mathfrak m$ 의 광선 유체이고, 이들의 합집합이 $K^{\mathrm{ab}}$ 다. 아델 언어에서는 이데일 $s\in\mathbb A_K^\times$ 의 작용을 격자 위 곱셈으로 기술하는 Shimura 상호법칙이 되며, 이 형태가 [모듈러 곡선](modular-curves.md) 위 CM 점의 Galois 작용 계산에 쓰인다.
+가 도체 $\mathfrak m$ 의 광선 유체이고, 이들의 합집합이 $K^{\mathrm{ab}}$ 다. 아델 언어에서는 이데일 $s\in\mathbb A_K^\times$ 의 작용을 격자 위 곱셈으로 기술하는 Shimura 상호법칙이 되며, 이 형태가 [모듈러 곡선](modular-curves.md) 위 CM 점의 Galois 작용 계산에 쓰인다. $\zeta_n$ 이 곱셈군 $\mathbb G_m$ 의 $n$ 등분점이었던 자리에 타원곡선의 등분점이 들어간다.
 
 ## 유리수체 위의 CM 곡선
 
@@ -176,6 +104,22 @@ $E$ 가 $\mathcal O_K$ 로 CM 을 갖고 $p$ 에서 좋은 환원을 가지면 �
 분열하는 경우 $p=\pi\bar\pi=N(\pi)$ 이므로 $p$ 를 $K$ 의 노름으로 쓰는 것과 점 개수 $\char35{}\tilde E(\mathbb F_p)=p+1-(\pi+\bar\pi)$ 는 같은 자료다. $p=x^2+ny^2$ 꼴 표현 문제가 CM 이론으로 풀린다. $p=x^2+27y^2$ 인 것은 $p\equiv1\pmod3$ 이고 $2$ 가 $\bmod\thinspace p$ 세제곱잉여인 것과 동치이며, $h(-108)=3$ 인 순서환의 유체 다항식 $X^3-2$ 가 이를 설명한다.
 
 초특이 쪽은 [초특이 동종사상 그래프](supersingular-isogeny-graphs.md)로 이어진다. CM 곡선을 여러 소수에서 환원하는 것이 그 그래프의 정점을 얻는 표준 방법이다.
+
+## 류수 1 과 거의 정수
+
+$h(D)=1$ 이면 $H_D(X)=X-j$ 라 $j$ 가 정수다. $j$ 의 $q$ 전개
+
+$$
+j(\tau)=\frac1q+744+196884\thinspace q+\cdots,\qquad q=e^{2\pi i\tau}
+$$
+
+에 $\tau=\frac{1+\sqrt D}{2}$ 를 넣으면 $q=-e^{-\pi\sqrt{|D|}}$ 이므로 $-e^{\pi\sqrt{|D|}}+744-196884\thinspace e^{-\pi\sqrt{|D|}}+\cdots$ 가 정수 $j$ 와 같다. $|D|$ 가 크면 셋째 항부터는 무시할 수 있어 $e^{\pi\sqrt{|D|}}$ 가 정수 $744-j$ 에 지수적으로 가깝다.
+
+$$
+e^{\pi\sqrt{163}}=262537412640768743.99999999999925\ldots
+$$
+
+$h(D)=1$ 인 기본판별식은 $D=-3,-4,-7,-8,-11,-19,-43,-67,-163$ 아홉 개다.
 
 ## 류수 1 판별식의 유한성
 
