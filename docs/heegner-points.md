@@ -22,99 +22,21 @@ Kolyvagin 은 반대 부등식을 얻었다. $y_K$ 가 무한위수이면 그것
 
 # 직관
 
-## Heegner 조건
-
-$X_0(N)$ 의 점은 순환 $N$ 등원사상 $E_1\to E_2$ 다. Heegner 의 착상은 이 자료를 허수이차체에서 통째로 만들어 내는 것이다.
-
-허수이차체 $K=\mathbb Q(\sqrt D)$ ($D\lt 0$ 기본판별식)의 정수환 $\mathcal O_K$ 는 $\mathbb C$ 안의 [격자](lattices.md)이므로 타원곡선 $\mathbb C/\mathcal O_K$ 를 준다. 지표 $N$ 의 [아이디얼](ideals-quotient-rings.md) $\mathfrak n\subset\mathcal O_K$ 로
+$X_0(N)$ 의 점은 순환 $N$ 등원사상 $E_1\to E_2$ 다. 이 자료를 허수이차체에서 만들어 본다. $K=\mathbb Q(\sqrt D)$ ($D\lt 0$ 기본판별식)의 정수환 $\mathcal O_K$ 는 $\mathbb C$ 안의 [격자](lattices.md)이므로 타원곡선 $\mathbb C/\mathcal O_K$ 를 주고, 지표 $N$ 의 [아이디얼](ideals-quotient-rings.md) $\mathfrak n\subset\mathcal O_K$ 로
 
 $$
 \mathbb C/\mathcal O_K\thickspace\longrightarrow\thickspace\mathbb C/\mathfrak n^{-1}
 $$
 
-를 만들면 핵이 $\mathfrak n^{-1}/\mathcal O_K\cong\mathcal O_K/\mathfrak n$ 이다. 이 몫이 순환군 $\mathbb Z/N$ 이 되는 조건이 **Heegner 조건**이다.
+를 만들면 핵이 $\mathfrak n^{-1}/\mathcal O_K\cong\mathcal O_K/\mathfrak n$ 이다.
 
-> $N$ 을 나누는 모든 소수가 $K$ 에서 분열한다. 동치로, $D$ 가 $\bmod\thinspace 4N$ 제곱이다.
-
-조건을 만족하는 $D$ 는 다음으로 찾는다.
-
-```javascript
-// N 에 대한 Heegner 판별식: D<0 기본판별식이면서 D 가 mod 4N 제곱
-const isFundamental = (D) => {
-  if (D >= 0) return false;
-  const r = ((D % 4) + 4) % 4;
-  if (r === 1) {                                    // D ≡ 1 (mod 4), 제곱인수 없음
-    for (let f = 3; f * f <= -D; f += 2) if (D % (f * f) === 0) return false;
-    return true;
-  }
-  if (r === 0) {                                    // D = 4m, m ≡ 2,3 (mod 4)
-    const m = D / 4, s = ((m % 4) + 4) % 4;
-    if (s !== 2 && s !== 3) return false;
-    for (let f = 2; f * f <= -m; f++) if (m % (f * f) === 0) return false;
-    return true;
-  }
-  return false;
-};
-
-const isSquareMod = (D, M) => {
-  const r = ((D % M) + M) % M;
-  for (let x = 0; x < M; x++) if ((x * x) % M === r) return true;
-  return false;
-};
-
-const heegnerDiscs = (N, howMany) => {
-  const out = [];
-  for (let D = -1; D > -200 && out.length < howMany; D--)
-    if (isFundamental(D) && isSquareMod(D, 4 * N)) out.push(D);
-  return out;
-};
-```
-
-| $N$ | 절댓값이 작은 Heegner 판별식 |
-| --- | --- |
-| $11$ | $-7,\ -8,\ -11,\ -19,\ -24,\ -35$ |
-| $37$ | $-3,\ -4,\ -7,\ -11,\ -40,\ -47$ |
-| $389$ | $-4,\ -7,\ -11,\ -19,\ -20,\ -24$ |
-
-$N=11$ 에서 $D=-7$ 이 나온다. $-7\equiv 37\pmod{44}$ 이고 $9^2\equiv37$ 이며, $11$ 은 $\mathbb Q(\sqrt{-7})$ 에서 분열한다.
-
-## 복소 곱셈과 힐베르트 유체
-
-위 구성은 복소해석적인데 나온 점은 대수적수 체 위에서 정의된다. 근거는 [복소 곱셈론](complex-multiplication.md)이다. $\mathbb C/\mathfrak a$ 의 $j$ 불변량은 대수적 정수이고 $K$ 의 **힐베르트 유체** $H$ , 곧 최대 비분기 아벨확대를 생성한다.
-
-$$
-H=K\bigl(j(\mathcal O_K)\bigr),\qquad \mathrm{Gal}(H/K)\cong \mathrm{Cl}(K)
-$$
-
-Shimura 상호법칙이 Galois 작용을 유군의 작용으로 번역한다. 아이디얼류 $[\mathfrak a]$ 에 대응하는 $\sigma_{\mathfrak a}\in\mathrm{Gal}(H/K)$ 가 $x_{\mathcal O_K}$ 를 $x_{\mathfrak a^{-1}}$ 로 보낸다. Galois 작용이 격자의 곱셈으로 보이는 이 명시성이 Euler 계 구성에 쓰인다.
-
-## 자취
-
-$x\in X_0(N)(H)$ 를 $\varphi$ 로 옮기면 $\varphi(x)\in E(H)$ 다. 자취를 취해 $K$ 로 내린다.
-
-$$
-y_K=\mathrm{Tr}\_{H/K}\bigl(\varphi(x)\bigr)=\sum_{\sigma\in\mathrm{Gal}(H/K)}\varphi(x)^{\sigma}\thickspace\in\thickspace E(K)
-$$
-
-$E$ 의 군 구조가 있으므로 합이 정의된다.
-
-## 함수방정식의 부호
-
-$K$ 위에서 $L$ 함수가 쪼개진다.
-
-$$
-L(E/K,s)=L(E,s)\cdot L(E^{D},s)
-$$
-
-$E^{D}$ 는 $D$ 에 의한 이차 꼬임이다. Heegner 조건 아래에서 함수방정식의 부호가 $\varepsilon(E/K)=-1$ 로 강제되어 $L(E/K,1)=0$ 이 자동이다. 첫 정보는 미분 $L'(E/K,1)$ 에서 나오고, 부호 $-1$ 은 BSD 관점에서 순위가 홀수라는 예측이므로 이 구성은 순위 1 을 겨냥한 장치다.
-
-## 순위 2 의 한계
-
-Heegner 점은 $K$ 하나마다 하나 나온다. $K$ 를 바꾸면 다른 점이 나오지만 $E(\mathbb Q)$ 에 내리면 서로 독립인 두 점을 주지 못한다. 공식의 우변이 높이 하나인 이상 좌변의 소실 차수도 $1$ 까지만 읽히고, $L''(E,1)$ 을 재는 대상은 이 구성 안에 없다.
+등원사상이 순환이려면 이 몫이 $\mathbb Z/N$ 이어야 하고, 그 조건은 $N$ 을 나누는 소수마다 $K$ 에서 분열할 것을 요구한다. $N=11$ 에서 $D=-7$ 을 잡으면 $-7\equiv 37\pmod{44}$ 이고 $9^2\equiv37$ 이므로 조건이 성립하며 $11$ 이 $\mathbb Q(\sqrt{-7})$ 에서 분열한다. 복소해석으로 만든 이 점을 대수적수 체 위에서 정의하는 근거가 [복소 곱셈론](complex-multiplication.md)이다.
 
 # 정의
 
 ## Heegner 점
+
+$N$ 을 나누는 모든 소수가 $K$ 에서 분열할 때 $K$ 가 $N$ 에 대한 **Heegner 조건**을 만족한다고 한다. 동치로 $D$ 가 $\bmod\thinspace 4N$ 제곱이다.
 
 $E/\mathbb Q$ 의 도체를 $N$ 이라 하고 $K=\mathbb Q(\sqrt D)$ 를 Heegner 조건을 만족하는 허수이차체라 하자. $\mathcal O_K/\mathfrak n\cong\mathbb Z/N$ 인 아이디얼 $\mathfrak n$ 을 고정하면 각 아이디얼류 $[\mathfrak a]\in\mathrm{Cl}(K)$ 에 대해
 
@@ -123,6 +45,8 @@ x_{\mathfrak a}=\bigl(\mathbb C/\mathfrak a\thickspace\longrightarrow\thickspace
 $$
 
 가 정의된다. 류수만큼의 점이 나오고 $\mathrm{Gal}(H/K)$ 가 이들을 단순추이적으로 섞는다.
+
+$H=K\bigl(j(\mathcal O_K)\bigr)$ 는 $K$ 의 **힐베르트 유체**, 곧 최대 비분기 아벨확대이고 $\mathrm{Gal}(H/K)\cong\mathrm{Cl}(K)$ 다. Shimura 상호법칙이 아이디얼류 $[\mathfrak a]$ 에 대응하는 $\sigma_{\mathfrak a}$ 의 작용을 $x_{\mathcal O_K}\mapsto x_{\mathfrak a^{-1}}$ 로 준다. Galois 작용이 격자의 곱셈으로 보이는 이 명시성을 Euler 계 구성에 쓴다.
 
 ## 모듈러 파라미터화
 
@@ -162,6 +86,16 @@ $$
 
 # 성질
 
+## 함수방정식의 부호
+
+$K$ 위에서 $L$ 함수가 쪼개진다.
+
+$$
+L(E/K,s)=L(E,s)\cdot L(E^{D},s)
+$$
+
+$E^{D}$ 는 $D$ 에 의한 이차 꼬임이다. Heegner 조건 아래에서 함수방정식의 부호가 $\varepsilon(E/K)=-1$ 로 강제되어 $L(E/K,1)=0$ 이 자동이고, 첫 정보는 미분 $L'(E/K,1)$ 에서 나온다. 부호 $-1$ 은 BSD 관점에서 순위가 홀수라는 예측이므로 이 구성은 순위 $1$ 을 겨냥한다.
+
 ## 순위 $\le1$ 의 BSD
 
 $E/\mathbb Q$ 의 해석적 순위를 $r_{\mathrm{an}}=\mathrm{ord}\_{s=1}L(E,s)$ 라 하면 두 정리의 결론은 다음과 같다.
@@ -196,7 +130,7 @@ Elkies 는 이 방법으로 좌표 분자의 자릿수가 수천에 이르는 �
 
 ## 비틀림이 되는 경우
 
-$D$ 를 잘못 고르면 $y_K$ 가 비틀림 점이 되어 정보를 주지 않는다. 곡선 $389a$ 는 순위 $2$ 라 어떤 $K$ 에서도 $L'(E/K,1)=0$ 이고 공식이 $\hat h(y_K)=0$ 을 준다. 순위 $\ge2$ 에서 방법이 막힌다는 사실이 공식 자체에 적혀 있다.
+$D$ 를 잘못 고르면 $y_K$ 가 비틀림 점이 되어 정보를 주지 않는다. 곡선 $389a$ 는 순위 $2$ 라 어떤 $K$ 에서도 $L'(E/K,1)=0$ 이고 공식이 $\hat h(y_K)=0$ 을 준다. Heegner 점은 $K$ 하나마다 하나 나오고, $K$ 를 바꿔도 $E(\mathbb Q)$ 에서 독립인 두 점을 주지 못한다. 공식의 우변이 높이 하나인 이상 좌변의 소실 차수도 $1$ 까지만 읽히므로 순위 $\ge2$ 에서 방법이 막힌다는 사실이 공식 자체에 적혀 있다.
 
 ## Gross–Zagier 공식의 확장
 
