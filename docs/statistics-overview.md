@@ -47,6 +47,7 @@ graph TD
 - [선형회귀](linear-regression.md): 정규방정식과 사영, Gauss–Markov 정리, 정칙화
 - [확률적 PCA](probabilistic-pca.md)(principal component analysis): 저차원 잠재변수를 둔 Gauss 모형, 주성분과의 관계
 - [Kalman 필터](kalman-filter.md): 선형 Gauss 상태공간 모형의 순차 추정, Kalman 이득과 정보 형식
+- [교차검증](cross-validation.md): 자료를 나누어 적합에 쓰지 않은 조각으로 오차를 재는 절차, 선형 적합에서의 닫힌 꼴
 
 # 연관 문서
 

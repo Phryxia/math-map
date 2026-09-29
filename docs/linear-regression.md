@@ -159,7 +159,7 @@ $$
 R^{2} = 1 - \frac{\mathrm{RSS}}{\mathrm{TSS}} = \frac{\mathrm{ESS}}{\mathrm{TSS}}.
 $$
 
-$R^2$ 는 설명된 분산의 비율이고 절편만 있는 모형 대비 개선의 척도다. 열을 추가하면 $R^2$ 가 줄지 않으므로 모형 선택 기준으로는 쓰지 않고, 자유도로 보정한 조정 $R^2$ 나 AIC(Akaike information criterion), 교차검증을 쓴다. 단순회귀에서 $R^2$ 는 표본상관계수의 제곱이다.
+$R^2$ 는 설명된 분산의 비율이고 절편만 있는 모형 대비 개선의 척도다. 열을 추가하면 $R^2$ 가 줄지 않으므로 모형 선택 기준으로는 쓰지 않고, 자유도로 보정한 조정 $R^2$ 나 AIC(Akaike information criterion), [교차검증](cross-validation.md)을 쓴다. 단순회귀에서 $R^2$ 는 표본상관계수의 제곱이다.
 
 ## 다중공선성과 수치 문제
 
@@ -190,6 +190,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [교차검증](cross-validation.md)
 
 #statistics #linear_algebra #optimization
