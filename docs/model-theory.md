@@ -96,10 +96,19 @@ $T$ 가 완전하지 않으면 $\sigma$ 와 $\neg\sigma$ 의 모형이 따로 �
 
 ## 더 알아보기
 
+### 모형의 구성
+
 - [초곱](ultraproducts.md)
+- [Fraïssé 극한](fraisse-limits.md)
+
+### 이론의 분류
+
 - [o-최소성](o-minimality.md)
+- [안정 이론](stable-theories.md)
+
+### 대수와 기하에서의 쓰임
+
 - [구성가능 집합](constructible-sets.md)
 - [Ax–Grothendieck 정리](ax-grothendieck.md)
-- [안정 이론](stable-theories.md)
 
 #logic #foundations #algebra

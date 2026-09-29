@@ -47,6 +47,7 @@ graph TD
 
 - [모형론](model-theory.md): 구조와 논리식의 관계, 양화사 소거와 범주성
 - [초곱](ultraproducts.md): 초필터로 묶은 구조, Łoś 정리와 콤팩트성의 모형 구성
+- [Fraïssé 극한](fraisse-limits.md): 유한 구조의 족에서 얻는 가산 균질 구조, 확장 성질과 Rado 그래프
 - [안정 이론](stable-theories.md): 매개변수 위의 타입 개수로 매긴 조건, 순서 성질의 부재와 갈래짓기 독립
 - [Morley 범주성 정리](morley-categoricity.md): 비가산 기수 하나에서의 범주성이 모든 비가산 기수로 옮겨가는 이유, 강최소 집합과 차원
 - [Zilber 삼분법](zilber-trichotomy.md): 강최소 집합의 프리기하가 자명, 벡터공간, 대수적으로 닫힌 체 셋으로 갈린다는 진술과 Hrushovski 의 반례

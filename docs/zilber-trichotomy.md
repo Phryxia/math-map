@@ -61,7 +61,7 @@ $$
 \delta(A)=\vert A\vert-\vert R^A\vert
 $$
 
-을 준다. $R^A$ 는 $A$ 에서 성립하는 $R$ 관계의 개수다. 모든 부분구조에서 $\delta\ge 0$ 인 유한 구조만 모아 자기 매장에 닫힌 족을 만들고 Fraïssé 극한 $M$ 을 취한다. $M$ 에서
+을 준다. $R^A$ 는 $A$ 에서 성립하는 $R$ 관계의 개수다. 모든 부분구조에서 $\delta\ge 0$ 인 유한 구조만 모아 자기 매장에 닫힌 족을 만들고 [Fraïssé 극한](fraisse-limits.md) $M$ 을 취한다. $M$ 에서
 
 $$
 d(A)=\min\lbrace\delta(B):A\subseteq B\subseteq M\text{ 이고 }B\text{ 는 유한}\rbrace
