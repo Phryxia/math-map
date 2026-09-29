@@ -12,8 +12,7 @@
 
 ```mermaid
 graph TD
-  FN["함수"] --> CA["범주"]
-  GP["군"] --> CA
+  GP["군"] --> CA["범주"]
   PO["부분순서"] --> CA
   CA --> FU["Functor"]
   LM["선형사상"] --> FU

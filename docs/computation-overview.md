@@ -12,8 +12,7 @@
 
 ```mermaid
 graph TD
-  PF["증명"] --> CB["계산 가능성"]
-  CA["기수"] --> CB
+  CA["기수"] --> CB["계산 가능성"]
   CB --> FA["유한 오토마타"]
   CB --> RT["Rice 정리"]
   CB --> LC["Lambda calculus"]

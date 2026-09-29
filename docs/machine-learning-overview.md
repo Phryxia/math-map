@@ -15,10 +15,9 @@
 ```mermaid
 graph TD
   MLO["기계학습 개관"] --> GD["경사하강법"]
-  MLO --> VAE["변분 오토인코더"]
   CVX["볼록성"] --> GD
   DER["미분"] --> GD
-  GD --> VAE
+  GD --> VAE["변분 오토인코더"]
   ENT["Shannon 엔트로피"] --> KL["KL divergence"]
   KL --> VAE
   PCA["주성분 분석"] --> PPCA["확률적 PCA"]
