@@ -110,7 +110,7 @@ $$
 
 $a_1$ 과 $c_n$ 이 $0$ 이 아니어서 계수행렬의 두 모서리에 성분이 놓인 계를 **순환 삼중대각계**라 한다. 주기 경계조건을 준 차분에서 나온다.
 
-모서리 두 성분은 계수행렬을 삼중대각행렬 $T$ 와 랭크 $1$ 행렬의 합 $A=T+uv^{\top}$ 으로 쓰면 떨어진다. Sherman–Morrison 공식으로
+모서리 두 성분은 계수행렬을 삼중대각행렬 $T$ 와 랭크 $1$ 행렬의 합 $A=T+uv^{\top}$ 으로 쓰면 떨어진다. [Sherman–Morrison 공식](sherman-morrison.md)으로
 
 $$
 x=y-\frac{v^{\top}y}{1+v^{\top}z}\thinspace z,\qquad Ty=d,\quad Tz=u

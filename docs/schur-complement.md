@@ -87,6 +87,7 @@ $M$ 이 대칭이고 $A$ 가 가역이면, $M\succ0$ 인 것과 $A\succ0$ 이면
 
 ## 더 알아보기
 
+- [Sherman–Morrison 공식](sherman-morrison.md)
 - [영역 분할법](domain-decomposition.md)
 
 #linear_algebra #algorithms #optimization
