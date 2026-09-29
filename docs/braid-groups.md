@@ -11,44 +11,59 @@ $n$ 가닥 땋임군 $B_n$ 은 가닥을 꼬는 조작들이 이루는 유한표
 
 # 직관
 
-## 생성원과 관계식
+$n$ 개의 점을 위아래 두 줄로 놓고 가닥으로 잇되, 가닥이 아래로만 진행하고 서로 교차할 때 위아래를 기억한다. 그림을 세로로 이어 붙이는 것이 곱이고 위아래를 뒤집은 그림이 역원이다. 생성원은 $i$ 번째와 $i+1$ 번째 가닥을 한 번 꼬는 $\sigma_i$ 이고, 멀리 떨어진 꼬임이 서로 간섭하지 않는다는 관계와 Reidemeister 3 이동에 해당하는 관계 둘로 모든 그림이 기술된다.
 
-$n$ 개의 점을 위아래 두 줄로 놓고 가닥으로 잇되, 가닥이 아래로만 진행하고 서로 교차할 때 위아래를 기억한다. 이런 그림을 세로로 이어 붙이는 것이 곱이고 위아래를 뒤집은 그림이 역원이다. 생성원은 $i$ 번째와 $i+1$ 번째 가닥을 한 번 꼬는 $\sigma_i$ 이며 관계식은 둘뿐이다.
+$\sigma_i^2=1$ 을 더하면 대칭군 $S_n$ 이 된다. 꼬임을 두 번 하면 풀린다는 이 관계 하나를 빼면 유한군이 무한군이 되고 교차의 위아래 정보가 남는다. 땋임 $\beta$ 의 위쪽 $i$ 번째 점과 아래쪽 $i$ 번째 점을 바깥으로 돌려 이으면 링크가 나오므로, 땋임군의 낱말로 링크를 적고 군에서 계산해 링크를 구별할 수 있다.
 
-$$
-\sigma_i\sigma_j=\sigma_j\sigma_i\ \ (|i-j|\ge2),\qquad
-\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}
-$$
+# 정의
 
-첫 관계는 멀리 떨어진 꼬임이 서로 간섭하지 않는다는 뜻이고 둘째는 Reidemeister 3 이동이다. $\sigma_i^2=1$ 을 더하면 대칭군 $S_n$ 이 되므로 땋임군은 대칭군에서 되돌아옴 관계만 뺀 군이다. 그 하나를 빼면 유한군이 무한군이 되고 꼬임 정보가 남는다.
-
-$B_n$ 은 원판에서 $n$ 개의 구멍을 뚫은 곡면의 사상류군으로도 실현되며, 이때 $B_n$ 의 원소는 구멍들을 서로 지나가며 제자리로 되돌리는 방법이다.
-
-## 닫힘
-
-땋임 $\beta\in B_n$ 의 위쪽 $i$ 번째 점과 아래쪽 $i$ 번째 점을 바깥으로 돌려 이으면 링크 $\hat\beta$ 가 나온다. Alexander 정리에 따르면 이 조작은 전사다. 임의의 링크 도식을 잡고 어떤 축을 중심으로 모든 가닥이 같은 방향으로 돌도록 고치면 되며, 도식을 자르고 다시 잇는 유한 절차로 가능하다.
-
-전사이지만 단사는 아니다. 서로 다른 땋임이 같은 링크를 줄 수 있고 가닥 수가 달라도 그렇다. 그 겹침을 기술하는 것이 Markov 정리다.
-
-## 두 이동
+## 땋임군
 
 $$
-\text{켤레}\ \colon\ \beta\sim\gamma\beta\gamma^{-1}\ (\gamma\in B_n),\qquad
-\text{안정화}\ \colon\ \beta\sim\beta\sigma_n^{\pm1}\ (\beta\in B_n\subset B_{n+1})
+B_n=\bigl\langle \sigma_1,\dots,\sigma_{n-1}\thickspace\bigm|\thickspace\sigma_i\sigma_j=\sigma_j\sigma_i\ (|i-j|\ge2),\ \ \sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}\bigr\rangle
 $$
 
-켤레는 닫힘을 취하면 앞뒤가 이어지므로 그림이 변하지 않고, 안정화는 가닥을 하나 늘리면서 Reidemeister 1 이동으로 없앨 수 있는 꼬임을 붙인다. Markov 정리에 따르면 이 둘 말고는 없다.
+$\sigma_i\mapsto(i\ i{+}1)$ 은 전사 준동형 $B_n\to S_n$ 을 주고 그 핵이 **순수 땋임군** $P_n$ 이다. $P_n$ 은 자유군들의 반직접곱으로 분해되고(Artin), 그 결과 $B_n$ 은 꼬임 없는 무한군이며 낱말 문제가 다항시간에 풀린다.
 
-## 불변량의 구성 조건
+## 닫힘과 지표
 
-$B_n$ 의 표현족 $\rho_n\colon B_n\to A_n$ 과 대각합 $\mathrm{tr}$ 이
+$\beta\in B_n$ 의 닫힘 $\hat\beta$ 는 위아래 끝점을 짝지어 이어 만든 링크다. Alexander 정리로 모든 링크가 어떤 땋임의 닫힘이다. 링크 도식을 한 축 주위로 모든 가닥이 같은 방향으로 돌도록 고치면 되고, 이 대응은 전사이지만 단사는 아니어서 가닥 수가 다른 땋임도 같은 링크를 준다. $\hat\beta$ 를 주는 최소의 $n$ 이 $\hat\beta$ 의 **땋임 지표**이고 링크 불변량이다. Morton–Franks–Williams 부등식이 HOMFLY(Hoste–Ocneanu–Millett–Freyd–Lickorish–Yetter) 다항식의 차수로 그 하계를 준다.
 
-1. $\mathrm{tr}(ab)=\mathrm{tr}(ba)$ (켤레 불변)
-2. $\mathrm{tr}(\beta\sigma_n^{\pm1})=z^{\pm1}\thinspace\mathrm{tr}(\beta)$ (안정화에서 정해진 상수배)
+## Markov 정리
 
-를 만족하면 적당히 정규화한 $\mathrm{tr}(\rho(\beta))$ 가 링크 불변량이 된다. 조건 1 은 대수에서 거의 자동으로 성립하고 조건 2 만 확인하면 된다.
+$\hat\beta=\hat\gamma$ 인 것과 $\beta$ 와 $\gamma$ 가 다음 두 이동의 유한 열로 옮겨지는 것이 동치다.
 
-Jones 는 $\mathrm{II}\_1$ 인자의 부분인자를 연구하다 Temperley–Lieb 대수 $TL_n(\delta)$ 위에서 이 성질을 가진 대각합를 찾았다. $B_n\to TL_n$ 은
+$$
+\text{M1}\colon\ \beta\mapsto\gamma\beta\gamma^{-1},\qquad
+\text{M2}\colon\ \beta\in B_n\ \mapsto\ \beta\sigma_n^{\pm1}\in B_{n+1}
+$$
+
+어려운 방향은 이 둘로 충분하다는 쪽이다.[^1]
+
+## Markov 대각합
+
+대수족 $\lbrace A_n\rbrace$ 과 준동형 $\rho_n\colon B_n\to A_n^\times$ 과 선형범함수 $\mathrm{tr}\_n\colon A_n\to R$ 이 두 조건
+
+1. $\mathrm{tr}(ab)=\mathrm{tr}(ba)$ , 곧 M1 에 대한 불변성
+2. $\mathrm{tr}(\beta\sigma_n^{\pm1})=z^{\pm1}\thinspace\mathrm{tr}(\beta)$ , 곧 M2 에서 정해진 상수배
+
+를 만족하면 $\mathrm{tr}$ 을 **Markov 대각합**이라 한다. $w(\beta)$ 를 지수합, $n$ 을 가닥 수라 하고 적절한 상수 $a,b$ 를 잡으면
+
+$$
+X(\hat\beta)=a^{\thinspace w(\beta)}b^{\thinspace n-1}\thinspace\mathrm{tr}\_n\bigl(\rho_n(\beta)\bigr)
+$$
+
+가 링크 불변량이 된다. $TL_n$ 과 Jones 대각합을 넣으면 Jones 다항식, Hecke 대수 $H_n(q)$ 와 Ocneanu 대각합을 넣으면 HOMFLY 다항식이 나온다.
+
+# 성질
+
+## 두 이동의 충분성
+
+증명의 요지는 링크 도식을 축 주위로 감기게 고치는 과정의 모든 선택지가 M1 과 M2 로 흡수된다는 것이다. Reidemeister 이동 가운데 R2 와 R3 은 땋임 관계식에 이미 들어 있고 R1 만 가닥 수를 바꾸는 이동을 요구하므로, M2 가 R1 의 대수적 잔재다. 불변량에서 지수합 $w(\beta)$ 로 보정하는 것도 R1 을 다루는 일이다.
+
+## Temperley–Lieb 대수의 대각합
+
+Jones 는 $\mathrm{II}\_1$ 인자의 부분인자를 연구하다 Temperley–Lieb 대수 $TL_n(\delta)$ 위에서 Markov 대각합을 찾았다. $B_n\to TL_n$ 은
 
 $$
 \sigma_i\longmapsto A+A^{-1}e_i,\qquad e_i^2=\delta e_i,\ e_ie_{i\pm1}e_i=e_i
@@ -64,59 +79,14 @@ $$
 \Delta_{\hat\beta}(t)\thickspace\doteq\thickspace\det\bigl(I-\bar\rho(\beta)\bigr)\cdot\frac{1-t}{1-t^{n}}
 $$
 
-$\doteq$ 는 $\pm t^k$ 배를 무시한다는 뜻이다.
-
-$\bar\rho(\sigma_i)$ 는 항등행렬에서 $i$ 행만 바뀌고, 그 행의 $(i-1,i,i+1)$ 성분이 차례로 $t,-t,1$ 이다. 양 끝 행에서는 없는 자리를 뺀다. $n=3$ 이면
+$\doteq$ 는 $\pm t^k$ 배를 무시한다는 뜻이다. $\bar\rho(\sigma_i)$ 는 항등행렬에서 $i$ 행만 바뀌고 그 행의 $(i-1,i,i+1)$ 성분이 차례로 $t,-t,1$ 이며 양 끝 행에서는 없는 자리를 뺀다. $n=3$ 이면
 
 $$
 \bar\rho(\sigma_1)=\begin{pmatrix}-t&1\cr 0&1\end{pmatrix},\qquad
 \bar\rho(\sigma_2)=\begin{pmatrix}1&0\cr t&-t\end{pmatrix}
 $$
 
-이다.
-
-삼엽매듭 $\hat{\sigma_1^3}$ 에서 $t^2-t+1$ 이, 8 자 매듭 $\widehat{\sigma_1\sigma_2^{-1}\sigma_1\sigma_2^{-1}}$ 에서 $t^2-3t+1$ 이 $\pm t^{k}$ 배까지 나온다. 8 자 쪽이 $-t^{-2}$ 배로 나오는 것이 Alexander 다항식이 정의상 갖는 정규화 자유도다.
-
-# 정의
-
-## 땋임군
-
-$$
-B_n=\bigl\langle \sigma_1,\dots,\sigma_{n-1}\thickspace\bigm|\thickspace\sigma_i\sigma_j=\sigma_j\sigma_i\ (|i-j|\ge2),\ \ \sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}\bigr\rangle
-$$
-
-$\sigma_i\mapsto(i\ i{+}1)$ 은 전사 준동형 $B_n\to S_n$ 을 주고 그 핵이 **순수 땋임군** $P_n$ 이다. $P_n$ 은 자유군들의 반직접곱으로 분해되고(Artin), 그 결과 $B_n$ 은 꼬임 없는 무한군이며 낱말 문제가 다항시간에 풀린다.
-
-## 닫힘과 지표
-
-$\beta\in B_n$ 의 닫힘 $\hat\beta$ 는 위아래 끝점을 짝지어 이어 만든 링크다. $\hat\beta$ 를 주는 최소의 $n$ 이 $\hat\beta$ 의 **땋임 지표**이고 링크 불변량이다. Morton–Franks–Williams 부등식이 HOMFLY(Hoste–Ocneanu–Millett–Freyd–Lickorish–Yetter) 다항식의 차수로 그 하계를 준다.
-
-## Markov 정리
-
-$\hat\beta=\hat\gamma$ 인 것과 $\beta$ 와 $\gamma$ 가 다음 두 이동의 유한 열로 옮겨지는 것이 동치다.
-
-$$
-\text{M1}\colon\ \beta\mapsto\gamma\beta\gamma^{-1},\qquad
-\text{M2}\colon\ \beta\in B_n\ \mapsto\ \beta\sigma_n^{\pm1}\in B_{n+1}
-$$
-
-어려운 방향은 이 둘로 충분하다는 쪽이다.[^1]
-
-## Markov 대각합
-
-대수족 $\lbrace A_n\rbrace$ 과 준동형 $\rho_n\colon B_n\to A_n^\times$ 과 선형범함수 $\mathrm{tr}\_n\colon A_n\to R$ 이 위 두 조건을 만족하면 $\mathrm{tr}$ 을 **Markov 대각합**라 한다. $w(\beta)$ 를 지수합, $n$ 을 가닥 수라 하고 적절한 상수 $a,b$ 를 잡으면
-
-$$
-X(\hat\beta)=a^{\thinspace w(\beta)}b^{\thinspace n-1}\thinspace\mathrm{tr}\_n\bigl(\rho_n(\beta)\bigr)
-$$
-
-가 링크 불변량이 된다. $TL_n$ 과 Jones 대각합를 넣으면 Jones 다항식, Hecke 대수 $H_n(q)$ 와 Ocneanu 대각합를 넣으면 HOMFLY 다항식이 나온다.
-
-# 성질
-
-## 두 이동의 충분성
-
-증명의 요지는 링크 도식을 축 주위로 감기게 고치는 과정의 모든 선택지가 M1 과 M2 로 흡수된다는 것이다. Reidemeister 이동 가운데 R2 와 R3 은 땋임 관계식에 이미 들어 있고 R1 만 가닥 수를 바꾸는 이동을 요구하므로, M2 가 R1 의 대수적 잔재다. 불변량에서 지수합 $w(\beta)$ 로 보정하는 것도 R1 을 다루는 일이다.
+이고, 삼엽매듭 $\hat{\sigma_1^3}$ 에서 $t^2-t+1$ 이, 8 자 매듭 $\widehat{\sigma_1\sigma_2^{-1}\sigma_1\sigma_2^{-1}}$ 에서 $t^2-3t+1$ 이 $\pm t^{k}$ 배까지 나온다.
 
 ## Burau 표현의 충실성
 
