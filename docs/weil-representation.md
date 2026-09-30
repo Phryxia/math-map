@@ -16,50 +16,9 @@ $\mathrm{Sp}$ 안의 두 부분군이 서로의 중심화군일 때(쌍대쌍) $
 
 # 직관
 
-## 유일성에서 나오는 작용
+Heisenberg 군 $H(W)$ 의 기약 유니터리 표현 $\rho_\psi$ 는 중심 지표를 고정하면 유일하다. $\mathrm{Sp}(W)$ 가 $H(W)$ 에 중심을 고정하며 작용하므로 $g\in\mathrm{Sp}(W)$ 마다 $\rho_\psi\circ g$ 도 같은 중심 지표의 기약 표현이고, 유일성으로 $\rho_\psi$ 와 동형이다. 그 동형을 주는 연산자 $\omega(g)$ 를 고르면 $\rho_\psi(g\cdot h)=\omega(g)\thinspace\rho_\psi(h)\thinspace\omega(g)^{-1}$ 이 성립한다.
 
-어떤 대상이 유일하면 그 대상을 보존하는 모든 변환이 자동으로 그 위에 작용한다.
-
-$$
-\rho_\psi\circ g\ \cong\ \rho_\psi
-\quad\Longrightarrow\quad
-\exists\thinspace\omega(g)\in\mathrm{GL}(\mathcal S)\ \text{ with }\ \rho_\psi(g\cdot h)=\omega(g)\thinspace\rho_\psi(h)\thinspace\omega(g)^{-1}
-$$
-
-Schur 보조정리가 $\omega(g)$ 를 스칼라 차이까지 정하고, 그래서 $\omega$ 는 표현이 아니라 사영표현이다. [Whittaker 모형의 유일성](whittaker-models.md)이 전역 적분의 Euler 곱 분해를 낳은 것과 같은 요령이다.
-
-## 2 겹 덮개
-
-사영표현을 진짜 표현으로 올리려면 코사이클을 없애야 하는데 $\mathrm{Sp}$ 에서는 없어지지 않는다. $\mathrm{SL}\_2$ 의 원소
-
-$$
-w=\begin{pmatrix}0&1\cr-1&0\end{pmatrix}
-$$
-
-에 대응하는 연산자가 Fourier 변환이다. $w^2=-I$ 이고 $-I$ 는 $\varphi(x)\mapsto\varphi(-x)$ 로 작용해야 하는데, Fourier 변환의 제곱이 그것이 되게 하는 정규화 상수는 Gauss 적분의 제곱근이라 부호가 모호하다.
-
-$$
-\int_{\mathbb R}e^{-\pi i x^2}\thinspace dx=e^{-\pi i/4}
-$$
-
-$e^{-\pi i/4}$ 가 Weil 지표라 불리는 8 차 근이고, 제곱근의 가지 선택이 2 겹 덮개를 만든다. 실 [Lie 군](lie-groups.md) 수준에서는 $\mathrm{SL}\_2(\mathbb R)$ 의 [기본군](fundamental-group.md)이 $\mathbb Z$ 라 덮개가 존재한다는 말과 같다. 이 2 겹에서 무게가 반정수가 되며, 반정수 무게 형식은 메타플렉틱군의 형식이다.
-
-## 불변 범함수로서의 theta
-
-아델 위에서 $\omega_\psi$ 는 Schwartz 공간 $\mathcal S(\mathbb A^n)$ 에 작용한다. 유리점의 값을 모두 더하는 범함수를 얹는다.
-
-$$
-\theta:\mathcal S(\mathbb A^n)\to\mathbb C,\qquad
-\theta(\varphi)=\sum_{x\in F^n}\varphi(x)
-$$
-
-[Poisson 합 공식](poisson-summation.md)으로 이 범함수는 $\mathrm{Sp}(F)$ 의 작용에 불변이다. 불변 범함수에서 자기동형 형식이 나온다.
-
-$$
-\Theta_\varphi(g)=\theta\bigl(\omega_\psi(g)\varphi\bigr)
-$$
-
-이 함수는 정의상 $\mathrm{Sp}(F)$ 에 대해 왼쪽 불변이다. 고전적인 $\sum e^{\pi i n^2\tau}$ 는 $\varphi$ 를 Gauss 함수로 잡았을 때의 $\Theta_\varphi$ 이고, 모듈러 변환식이 군의 정의에서 따라 나온다.
+$\omega(g)$ 는 Schur 보조정리로 스칼라 차이까지만 정해지므로 $\omega(g_1)\omega(g_2)$ 와 $\omega(g_1g_2)$ 가 스칼라만큼 어긋난다. $\mathrm{SL}\_2$ 에서 Fourier 변환에 대응하는 원소 $w$ 는 $w^2=-I$ 를 만족하고 $-I$ 는 $\varphi(x)\mapsto\varphi(-x)$ 로 작용해야 하는데, Fourier 변환의 제곱이 그것이 되게 하는 정규화 상수는 Gauss 적분의 제곱근이라 부호가 두 가지다. 그 부호를 고르는 것이 2 겹 덮개의 원소를 고르는 것이고, 거기서 반정수 무게가 나온다.
 
 # 정의
 
@@ -83,6 +42,8 @@ $$
 \rho_\psi(0,t)=\psi(t)\cdot\mathrm{id}
 $$
 
+유일성 하나가 군의 작용을 만드는 구조는 [Whittaker 모형의 유일성](whittaker-models.md)이 전역 적분의 Euler 곱 분해를 주는 것과 같다.
+
 ## Weil 표현
 
 $\mathrm{Sp}(W)$ 는 $H(W)$ 에 $g\cdot(w,t)=(gw,t)$ 로 작용하고 중심을 고정한다. 유일성에서 사영표현이 생기고 그 코사이클이 2 겹 덮개 $\mathrm{Mp}(W)\to\mathrm{Sp}(W)$ 위에서 자명해진다. 이 덮개 위의 표현 $\omega_\psi$ 가 **Weil 표현**이다.
@@ -101,6 +62,23 @@ $$
 
 $\gamma_\psi$ 가 Weil 지표이고 제곱근의 모호함은 여기에만 들어 있다.
 
+## theta 범함수
+
+아델 위에서 $\omega_\psi$ 는 Schwartz 공간 $\mathcal S(\mathbb A^n)$ 에 작용한다. 유리점의 값을 모두 더하는 범함수를 얹는다.
+
+$$
+\theta:\mathcal S(\mathbb A^n)\to\mathbb C,\qquad
+\theta(\varphi)=\sum_{x\in F^n}\varphi(x)
+$$
+
+[Poisson 합 공식](poisson-summation.md)으로 이 범함수는 $\mathrm{Sp}(F)$ 의 작용에 불변이다. 여기서 자기동형 형식을 얻는다.
+
+$$
+\Theta_\varphi(g)=\theta\bigl(\omega_\psi(g)\varphi\bigr)
+$$
+
+이 함수는 정의상 $\mathrm{Sp}(F)$ 에 대해 왼쪽 불변이다. 고전적인 $\sum e^{\pi i n^2\tau}$ 는 $\varphi$ 를 Gauss 함수로 잡았을 때의 $\Theta_\varphi$ 이고, 모듈러 변환식이 이 불변성에서 따라 나온다.
+
 ## 쌍대쌍과 theta 올림
 
 이차공간 $V$ 와 심플렉틱 공간 $W$ 를 놓으면 $V\otimes W$ 가 심플렉틱 공간이고
@@ -116,6 +94,16 @@ $$
 $$
 
 # 성질
+
+## Weil 지표
+
+$\omega_\psi(w)\varphi=\gamma_\psi\cdot\widehat\varphi$ 의 정규화 상수는 다음 Gauss 적분으로 정해진다.
+
+$$
+\int_{\mathbb R}e^{-\pi i x^2}\thinspace dx=e^{-\pi i/4}
+$$
+
+$\gamma_\psi=e^{-\pi i/4}$ 가 8 차 근이고, $w^2=-I$ 를 만족시키려면 이 값의 제곱근을 골라야 하므로 사영표현의 코사이클이 $\mathrm{Sp}$ 위에서 자명해지지 않는다. 실 [Lie 군](lie-groups.md) 수준에서는 $\mathrm{SL}\_2(\mathbb R)$ 의 [기본군](fundamental-group.md)이 $\mathbb Z$ 이므로 2 겹 덮개가 존재한다.
 
 ## 무게 1/2 의 변환식
 
@@ -148,7 +136,7 @@ $$
 
 좌변은 이차형식의 표현수를 담고 우변은 국소 밀도의 곱으로 계산된다. 이차형식 표현론의 국소-전역 원리를 양적으로 만든 공식이며, [Rankin–Selberg 적분](rankin-selberg.md)이 Eisenstein 급수를 쓰는 구조와 마주 본다.
 
-## GGP 의 Fourier–Jacobi 경우
+## Gan–Gross–Prasad 추측의 Fourier–Jacobi 경우
 
 [Gan–Gross–Prasad 추측](gan-gross-prasad.md)에서 여차원이 짝수이면 중복도를 잴 때 $\omega_\psi$ 를 함께 텐서한다. 여차원이 짝수일 때 쌍 $(G_n,G_n)$ 사이에 지표만으로 메울 수 없는 자리가 남고, Heisenberg 군과 Weil 표현이 그 자리를 채운다. Bessel 경우의 지표 $\nu$ 가 하던 일을 $\omega_\psi$ 가 맡는다.
 
