@@ -18,67 +18,21 @@ $$
 
 # 직관
 
-## 교환자
-
 $X$ 방향으로 시간 $t$ , $Y$ 방향으로 $t$ , 다시 $X$ 로 $-t$ , $Y$ 로 $-t$ 만큼 흐르면 가환인 경우에만 제자리로 돌아온다. 남는 오차의 최저차항이 교환자다.
 
 $$
 e^{tX}e^{tY}e^{-tX}e^{-tY}=e^{t^2[X,Y]+O(t^3)}
 $$
 
-$[X,Y]$ 는 군의 비가환성을 무한소 수준에서 재는 양이다. $x$ 축 회전과 $y$ 축 회전을 번갈아 하면 $z$ 축 회전이 남고, 그래서 $\mathfrak{so}(3)$ 의 괄호는 벡터곱이다.
+$[X,Y]$ 는 군의 비가환성을 무한소 수준에서 재는 양이다. $x$ 축 회전과 $y$ 축 회전을 번갈아 하면 $z$ 축 회전이 남으므로 $\mathfrak{so}(3)$ 의 괄호는 벡터곱 $[e_1,e_2]=e_3$ , $[e_2,e_3]=e_1$ , $[e_3,e_1]=e_2$ 다.
 
-$$
-[e_1,e_2]=e_3,\quad [e_2,e_3]=e_1,\quad [e_3,e_1]=e_2
-$$
-
-Baker–Campbell–Hausdorff 공식은 군 곱셈을 괄호만으로 복원한다.
+괄호가 군의 정보를 얼마나 담는지는 Baker–Campbell–Hausdorff 공식이 말해 준다.
 
 $$
 \log\left(e^Xe^Y\right)=X+Y+\tfrac12[X,Y]+\tfrac1{12}\big([X,[X,Y]]-[Y,[X,Y]]\big)+\cdots
 $$
 
-오른쪽에는 괄호밖에 없으므로 국소적으로 군의 정보가 대수에 전부 들어 있다.
-
-## Jacobi 항등식의 Leibniz 형태
-
-괄호는 결합적이지 않고 $[[X,Y],Z]\ne[X,[Y,Z]]$ 다. 대신 성립하는 것이 Jacobi 항등식이다.
-
-$$
-[X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0
-$$
-
-$\mathrm{ad}\_X(Y)=[X,Y]$ 로 두면 같은 식이 다음이 된다.
-
-$$
-\mathrm{ad}\_X([Y,Z])=[\mathrm{ad}\_XY,Z]+[Y,\mathrm{ad}\_XZ]
-$$
-
-곧 $\mathrm{ad}\_X$ 는 괄호에 대한 도함수다. 대칭의 무한소 작용이 미분이라는 관점에서 Jacobi 항등식은 Leibniz 규칙이다.
-
-## $\mathfrak{sl}\_2$ 의 올림·내림 연산자
-
-$\mathfrak{sl}\_2$ 는 대각합이 0 인 $2\times2$ 행렬들이고, 기저와 괄호가 다음과 같다.
-
-$$
-H=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix},\quad
-E=\begin{pmatrix}0&1\cr 0&0\end{pmatrix},\quad
-F=\begin{pmatrix}0&0\cr 1&0\end{pmatrix}
-$$
-
-$$
-[H,E]=2E,\qquad [H,F]=-2F,\qquad [E,F]=H
-$$
-
-표현 $V$ 에서 $H$ 의 [고유벡터](eigenvalues.md) $v$ 의 고윳값을 $\lambda$ 라 하면
-
-$$
-H(Ev)=EHv+[H,E]v=(\lambda+2)Ev
-$$
-
-이므로 $E$ 는 고윳값을 $2$ 올리고 $F$ 는 $2$ 내린다. 유한차원이면 올리다가 멈추므로 최고무게 벡터가 있고, 거기서 $F$ 를 반복 적용해 얻는 벡터들이 표현 전체의 기저다. 각 차원마다 기약표현이 정확히 하나씩이다.
-
-이 올림·내림이 양자역학의 각운동량 올림·내림 연산자다. 일반 반단순 Lie 대수의 표현론은 근계를 따라 $\mathfrak{sl}\_2$ 부분대수 여러 개를 붙인 것으로 다룬다.
+오른쪽에는 괄호밖에 없으므로 군 곱셈이 괄호만으로 복원되고, 국소적으로 군의 정보가 대수에 전부 들어 있다.
 
 # 정의
 
@@ -88,6 +42,14 @@ $$
 
 - 교대성: 모든 $X$ 에 대해 $[X,X]=0$ 이다. 따라서 $[X,Y]=-[Y,X]$ 다.
 - Jacobi 항등식: $[X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0$ 이다.
+
+괄호는 결합적이지 않고 $[[X,Y],Z]\ne[X,[Y,Z]]$ 다. Jacobi 항등식이 그 자리를 대신하며, $\mathrm{ad}\_X(Y)=[X,Y]$ 로 두면 같은 식이
+
+$$
+\mathrm{ad}\_X([Y,Z])=[\mathrm{ad}\_XY,Z]+[Y,\mathrm{ad}\_XZ]
+$$
+
+가 된다. $\mathrm{ad}\_X$ 가 괄호에 대한 도함수라는 뜻이고, 대칭의 무한소 작용이 미분이라는 관점에서 Jacobi 항등식은 Leibniz 규칙이다.
 
 결합대수 $A$ 는 $[a,b]=ab-ba$ 로 Lie 대수가 된다. $\mathfrak{gl}\_n=M_n(k)$ 가 그런 예이고, Ado 정리로 모든 유한차원 Lie 대수는 어떤 $\mathfrak{gl}\_n$ 의 부분대수다.
 
@@ -142,6 +104,28 @@ $$
 $$
 
 일반 Lie 대수는 Levi 분해 $\mathfrak g=\mathrm{rad}\mathfrak g\rtimes\mathfrak s$ 로 가해 부분과 반단순 부분으로 나뉜다. 분류는 반단순 쪽에서 근계로 완결되고, 가해 쪽은 낮은 차원에서만 목록이 있다.
+
+## $\mathfrak{sl}\_2$ 의 표현
+
+$\mathfrak{sl}\_2$ 는 대각합이 $0$ 인 $2\times2$ 행렬들이고 기저와 괄호가 다음과 같다.
+
+$$
+H=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix},\quad
+E=\begin{pmatrix}0&1\cr 0&0\end{pmatrix},\quad
+F=\begin{pmatrix}0&0\cr 1&0\end{pmatrix}
+$$
+
+$$
+[H,E]=2E,\qquad [H,F]=-2F,\qquad [E,F]=H
+$$
+
+표현 $V$ 에서 $H$ 의 [고유벡터](eigenvalues.md) $v$ 의 고윳값을 $\lambda$ 라 하면
+
+$$
+H(Ev)=EHv+[H,E]v=(\lambda+2)Ev
+$$
+
+이므로 $E$ 는 고윳값을 $2$ 올리고 $F$ 는 $2$ 내린다. 유한차원이면 올리다가 멈추므로 최고무게 벡터가 있고, 거기서 $F$ 를 반복 적용해 얻는 벡터들이 표현 전체의 기저다. 각 차원마다 기약표현이 정확히 하나씩이고, 이 올림·내림이 양자역학의 각운동량 올림·내림 연산자다. 일반 반단순 Lie 대수의 표현론은 근계를 따라 $\mathfrak{sl}\_2$ 부분대수 여러 개를 붙인 것으로 다룬다.
 
 ## 근계와 Dynkin 도표
 
