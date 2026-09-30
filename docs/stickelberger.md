@@ -22,44 +22,9 @@ $\theta_m$ 의 지표 성분이 $L(0,\chi)$ 이므로, 이 정리는 $L$ 함수�
 
 # 직관
 
-## 절댓값과 소인수분해
+$g(\chi)=\sum_{a}\chi(a)\zeta_p^{a}$ 는 $\mathbb Q(\mu_{p-1},\mu_p)$ 의 원소이고 $|g(\chi)|=\sqrt p$ 다. 여기에 $g(\chi)\overline{g(\chi)}=\pm p$ 를 더하면 $(g(\chi))$ 가 $p$ 위의 [소 아이디얼](prime-ideals.md)들로만 이루어진다는 것까지 나오지만, 각 소 아이디얼의 지수는 나오지 않는다. $p$ 는 $\mathbb Q(\mu_p)$ 에서 완전히 분기해 $(p)=(\pi)^{p-1}$ 이므로 물음은 $g(\chi)$ 가 $\pi$ 로 몇 번 나뉘는가가 된다.
 
-$g(\chi)=\sum_{a}\chi(a)\zeta_p^{a}$ 는 $\mathbb Q(\mu_{p-1},\mu_p)$ 의 원소이고 $|g(\chi)|=\sqrt p$ 다. 이 절댓값은 무한 자리의 정보다. 유한 자리에서는 $g(\chi)\overline{g(\chi)}=\pm p$ 에서 $(g(\chi))$ 가 $p$ 위의 [소 아이디얼](prime-ideals.md)들로만 이루어진다는 것까지 나오지만, 각 소 아이디얼의 지수는 나오지 않는다.
-
-$p$ 는 $\mathbb Q(\mu_p)$ 에서 완전히 분기해 $(p)=(\pi)^{p-1}$ 이므로 물음은 $g(\chi)$ 가 $\pi$ 로 몇 번 나뉘는가가 되고, 답이 $\chi=\omega^{-k}$ 의 $k$ 다.
-
-## 부치 계산
-
-$\mathbb Z_p[\mu_p]$ 에서 $\zeta_p=1+\pi$ 이므로
-
-$$
-g(\omega^{-k})=\sum_{a=1}^{p-1}\omega^{-k}(a)(1+\pi)^{a}
-=\sum_{j\ge0}\binom{\cdot}{j}\pi^{j}\sum_{a}\omega^{-k}(a)a^{\thinspace j}\big/j!\ \text{꼴}
-$$
-
-로 전개된다. 안쪽 합 $\sum_a\omega^{-k}(a)a^{j}$ 는 $\omega$ 가 $\bmod p$ 에서 항등이므로 직교성으로 $j\equiv k$ 일 때만 $p$ 를 법으로 남고, 가장 낮은 남는 항이 $j=k$ 라 부치가 $k$ 다. 같은 계산을 더 밀면 **Stickelberger 합동**
-
-$$
-\frac{g(\omega^{-k})}{\pi^{k}}\equiv\frac{-1}{k!}\pmod{\pi}
-$$
-
-이 나와 최고차 계수까지 계승으로 주어진다.
-
-## 군환 원소 묶음
-
-$\sigma_t$ 가 $\omega$ 를 $\omega^{t}$ 로 보내므로 $\sigma_t$ 를 적용하면 지수 $k$ 가 $[0,p-2]$ 안의 대표원 $\langle kt\rangle$ 로 바뀐다. 따라서
-
-$$
-\big(g(\omega^{-k})\big)=\prod_t \mathfrak P_t^{\thinspace\langle kt\rangle}
-$$
-
-이고, 지수의 목록 $\lbrace\langle kt\rangle/(p-1)\rbrace$ 이 $\theta$ 의 계수 $\lbrace a/m\rbrace$ 다. 분수부 함수는 $p$ 진 전개의 자릿수를 재는 자리에 있다.
-
-## 류군의 소멸
-
-$\mathfrak P^{\thinspace\theta}$ 가 주 아이디얼이라는 것이 위 등식의 내용이다. $\theta$ 자체는 정수계수가 아니지만 정수계수로 만드는 원소를 곱하면 $\mathfrak P$ 의 류를 그만큼 거듭제곱하면 단위류라는 말이 되고, 소 아이디얼의 류가 류군을 생성하므로 소멸 정리가 나온다.
-
-$\lbrace a/m\rbrace+\lbrace-a/m\rbrace=1$ 이므로 $(1+\sigma_{-1})\theta_m=\sum_a\sigma_a$ 이고, $\theta$ 의 짝수 부분에는 노름원소밖에 없다. 노름원소는 류군의 짝수 성분에 대해 아무 정보도 주지 않으므로 Stickelberger 는 홀수 성분만 다루며, 이 비대칭이 Herbrand–Ribet 과 Vandiver 추측까지 이어진다.
+$\mathbb Z_p[\mu_p]$ 에서 $\zeta_p=1+\pi$ 이므로 $\chi=\omega^{-k}$ 에 대해 $g(\omega^{-k})=\sum_{a=1}^{p-1}\omega^{-k}(a)(1+\pi)^{a}$ 를 $\pi$ 의 거듭제곱으로 전개하면 $\pi^{j}$ 의 계수에 $\sum_a\omega^{-k}(a)a^{\thinspace j}$ 가 들어간다. $\omega$ 가 $\bmod p$ 에서 항등이므로 직교성으로 이 합은 $j\equiv k$ 일 때만 $p$ 를 법으로 남고, 가장 낮은 남는 항이 $j=k$ 다. 지수가 $\chi=\omega^{-k}$ 의 $k$ 다.
 
 # 정의
 
@@ -83,7 +48,19 @@ $$
 \big(g(\chi)\big)=\mathfrak P^{\thinspace(p-1)\theta}
 $$
 
-꼴로 쓸 수 있고, 지수에 나타나는 유리수가 위의 $\lbrace a/m\rbrace$ 이다. $q=p^{f}$ 의 $\mathbb F_q$ 로 가면 지수가 $k$ 의 $p$ 진 자릿수의 합 $s_p(k)$ 로 대체된다.
+꼴로 쓸 수 있고, 지수에 나타나는 유리수가 위의 $\lbrace a/m\rbrace$ 이다. $\sigma_t$ 가 $\omega$ 를 $\omega^{t}$ 로 보내므로 $\sigma_t$ 를 적용하면 $\pi$ 진 부치 $k$ 가 $[0,p-2]$ 안의 대표원 $\langle kt\rangle$ 로 바뀌고
+
+$$
+\big(g(\omega^{-k})\big)=\prod_t \mathfrak P_t^{\thinspace\langle kt\rangle}
+$$
+
+이 된다. 지수의 목록 $\lbrace\langle kt\rangle/(p-1)\rbrace$ 이 $\theta$ 의 계수 $\lbrace a/m\rbrace$ 다. $\pi$ 진 전개를 더 밀면 최고차 계수까지 나오는 **Stickelberger 합동**
+
+$$
+\frac{g(\omega^{-k})}{\pi^{k}}\equiv\frac{-1}{k!}\pmod{\pi}
+$$
+
+을 얻는다. $q=p^{f}$ 의 $\mathbb F_q$ 로 가면 지수가 $k$ 의 $p$ 진 자릿수의 합 $s_p(k)$ 로 대체된다.
 
 ## Stickelberger 의 정리
 
@@ -105,6 +82,10 @@ $$
 이다. $\chi$ 가 짝이면 $L(0,\chi)=0$ 이고 $\theta$ 의 짝수 부분 소멸과 맞는다. $\theta_m$ 은 $L$ 함수의 $s=0$ 값들을 성분으로 갖는 군환 원소다.
 
 # 성질
+
+## 홀수 성분으로의 제한
+
+$\lbrace a/m\rbrace+\lbrace-a/m\rbrace=1$ 이므로 $(1+\sigma_{-1})\theta_m=\sum_a\sigma_a$ 이고, $\theta$ 의 짝수 부분에는 노름원소밖에 없다. 노름원소는 류군의 짝수 성분에 대해 아무 정보도 주지 않으므로 Stickelberger 의 소멸 정리는 홀수 성분만 다룬다. 이 비대칭이 Herbrand–Ribet 과 Vandiver 추측까지 이어진다.
 
 ## Herbrand 방향
 
