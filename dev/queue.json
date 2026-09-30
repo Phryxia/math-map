@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "savedAt": "2026-09-30T01:03:13.689Z",
-  "nextSeq": 1484,
+  "savedAt": "2026-09-30T05:06:20.162Z",
+  "nextSeq": 1487,
   "items": [
     {
-      "id": "d897c798",
-      "title": "직관 절이 두 문단을 넘는 문서 훑기 (8차)",
+      "id": "5621579d",
+      "title": "직관 절이 두 문단을 넘는 문서 훑기 (9차)",
       "priority": 50,
-      "note": "7차를 이어 2026-09-30 회차에 일곱 문서를 고쳤다. geometric-satake(e673bdb, 233->201), p-adic-hodge-theory(276->209), euler-systems(276->212), geometric-langlands(180->138), satake-isomorphism(316->252), sea-algorithm(226->161), rankin-selberg(269->243).\n\n하위 절 다섯짜리는 이제 없다. 넷짜리가 남았고 직관 줄 수로 poitou-tate 61, sinkhorn 54, schellekens-list 51, vandiver-conjecture 48, selberg-trace-formula 48, whittaker-models 43 순이다. 후보는 다음으로 센다.\nfor f in docs/*.md; do n=$(awk '/^# 직관/{i=1;next} /^# (정의|성질|활용|연관 문서)/{i=0} i && /^## /{c++} END{print c+0}' \"$f\"); [ \"$n\" -ge 4 ] && echo \"$n $(basename $f .md)\"; done | sort -rn\n\npoitou-tate 는 직관 절만 읽고 손대지 않았다. 네 하위 절 가운데 '대역 입력' 의 Brauer 열 식과 '비분기부와 유한성' 은 개요와 정의 절 '제한곱' 에 같은 내용이 있는지 먼저 본다. '라그랑지안으로서의 대역 상' 의 차원 공식은 성질 절 'Greenberg-Wiles 공식' 과 같은 식일 가능성이 높고, '국소 조건의 변형' 의 표는 성질 절 '국소 조건의 사전' 과 '한 자리의 완화' 와 겹칠 후보다. 헤딩 '라그랑지안으로서의 대역 상' 은 '~로서의' 가 서술이라 4절 헤딩 규칙에 걸리므로 남기더라도 이름을 고친다. 심플렉틱 논법(A=A^perp 인 라그랑지안을 두 소멸자 부분공간으로 자르는 것)은 이 문서의 핵심 계산이므로 직관에 두 문단으로 남긴다.\n\n일곱 문서에서 확인한 순서다. 직관을 줄이기 전에 정의 절과 성질 절이 직관을 가리키는 문구를 먼저 찾는다. grep -n '위와 같이\\|위 두\\|위 구성\\|앞의 조건\\|적용하면\\|앞의 텔레스코핑\\|개요의 적분' docs/*.md 로 후보가 나온다. 직관 절의 코드블록과 나열형 mermaid 는 예외 없이 4절 규칙 위반이었다(sea-algorithm 의 알고리즘 흐름도가 그것이다). 정의 절이 직관을 가리키는 문구는 틀린 경우도 있었다. rankin-selberg 의 정의 절은 Whittaker 적분을 '개요의 적분이다' 로 가리켰지만 그 식은 직관 절에 있었다.",
-      "createdAt": "2026-09-30T01:02:45.362Z",
-      "seq": 1483
+      "note": "8차를 이어 2026-09-30 두 번째 회차에 열다섯 문서를 고쳤다. poitou-tate(c9880da, 276->236), sinkhorn(191->156), schellekens-list(151->128), vandiver-conjecture(145->110), selberg-trace-formula(183->160), whittaker-models(169->155), eisenstein-series(200->188), kedlaya-algorithm(193->170), knot-invariants(157->137), modular-symbols(194->170), godement-jacquet(191->166), iwasawa-main-conjecture(209->177), herbrand-ribet(173->138), boolean-fourier(169->159), khovanov-homology(173->156).\n\n하위 절 넷짜리가 19 개 남았고 직관 줄 수로 fontaine-mazur 46, class-field-theory 45, bernoulli-numbers 45, reshetikhin-turaev 44, gamma-function 43, eisenstein-ideal 43, unique-games 41, stickelberger 40 순이다. 후보는 다음으로 센다.\nfor f in docs/*.md; do n=$(awk '/^# 직관/{i=1;next} /^# (정의|성질|활용|연관 문서)/{i=0} i && /^## /{c++} END{print c+0}' \"$f\"); [ \"$n\" -ge 4 ] && echo \"$n $(basename $f .md)\"; done | sort -rn\n\n열다섯 문서에서 반복된 것. 직관의 하위 절 넷은 대개 (1) 개요가 결론만 말한 계산 하나, (2) 정의 절과 겹치는 정의, (3) 성질 절이 정리로 진술한 것의 증명 요지, (4) 성질 절 표나 목록과 겹치는 요약이었다. 남기는 것은 (1) 하나이고 (3) 은 성질 절의 '증명의 요지' 문단으로, (2) 는 정의 절로 옮긴다. (4) 는 지운다.\n\n정의 절이 정리만 진술하고 증명 요지가 없는 문서가 많았다(selberg-trace-formula 의 자기동형 핵 대각합, herbrand-ribet 의 Ribet 구성, eisenstein-series 의 함수방정식). 직관에서 옮겨 온 것이 그 빈자리를 메웠다.\n\n직관 절을 줄이면 본문 링크가 함께 사라진다. kedlaya-algorithm 에서 de-rham-cohomology 링크가 0 개가 됐고 정의 절 첫 등장에 복원했다. 거꾸로 옮긴 문단이 개요에 이미 있는 링크를 중복시키기도 했다(herbrand-ribet 의 galois-representations, boolean-fourier 의 pcp-theorem, whittaker-models 의 rankin-selberg). 커밋 전에 grep -c '<id>.md' 로 본문 링크가 1 회인지 센다.\n\n각주 참조도 같이 확인한다. knot-invariants 의 [^2] 는 직관에만 있어서 정의 절 Kauffman 괄호 규칙으로 옮겼고, khovanov-homology 의 [^2] 는 직관에 남겼다.\n\n지운 것 가운데 판단이 필요했던 둘. schellekens-list 의 '단순 성분 둘 이하 조합 열셋' 목록은 탐색 결과이고 문서가 스스로 불완전을 인정했으므로 지웠다. khovanov-homology 의 정육면체 mermaid 는 010 -> 101 처럼 두 좌표가 동시에 바뀌는 간선이 있어 틀렸고 문장으로 대체했다.\n\n헤딩 규칙 grep 에 '요지', '논법의 요지' 가 걸린다. 'Euler 계 논법의 요지' -> 'Euler 계 논법', 'Rubin 증명의 요지' -> 'Rubin 의 증명' 으로 고쳤다. 문단 안의 '**증명의 요지.**' 는 헤딩이 아니므로 걸리지 않는다.",
+      "createdAt": "2026-09-30T05:05:42.032Z",
+      "seq": 1484
     },
     {
       "id": "b4810afe",
@@ -1514,6 +1514,22 @@
       "note": "분야는 #graph_theory 또는 #probability. 부모는 graphs 와 probability 쪽이 후보다. Erdős–Rényi 모형 G(n,p), 문턱 현상, 거대 성분의 출현, 유한 그래프의 0-1 법칙을 담는다. fraisse-limits 활용 절의 0-1 법칙 항목이 이 문서를 링크 없이 이름만 쓰고 있으므로 만들면 그 자리에 링크를 건다. Rado 그래프가 가산 극한이라는 연결도 적는다.",
       "createdAt": "2026-09-29T16:45:05.463Z",
       "seq": 1463
+    },
+    {
+      "id": "81a0c5cb",
+      "title": "random-graphs 를 쓰고 fraisse-limits 의 0-1 법칙 항목을 링크한다",
+      "priority": 10,
+      "note": "조합론/확률. 부모는 graph-theory 와 probability 후보. fraisse-limits 의 활용 절이 Rado 그래프의 0-1 법칙을 링크 없이 이름만 쓰고 있다.",
+      "createdAt": "2026-09-30T05:05:51.799Z",
+      "seq": 1485
+    },
+    {
+      "id": "0314885b",
+      "title": "schellekens 목록 71 개 타입의 표를 실을 자리를 정한다",
+      "priority": 10,
+      "note": "대수/수리물리. schellekens-list 의 갈래는 타입 개수만 말하고 표가 없다. 표가 schellekens-list 안에 들어갈 분량인지, 별도 문서인지 8절 기준으로 판단한다. 무게 1 Lie 대수 타입과 구성 방법(격자 VOA, 오비폴드 차수)을 열로 두는 안.",
+      "createdAt": "2026-09-30T05:05:51.942Z",
+      "seq": 1486
     },
     {
       "id": "dfb3e493",
