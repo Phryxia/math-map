@@ -14,45 +14,15 @@ $$
 
 # 직관
 
-## 조건의 여차원
+$\mathbb P^3$ 의 직선은 $\mathbb C^4$ 의 2 차원 부분공간이므로 $\mathrm{Gr}(2,4)$ 의 점이고 이 공간은 4 차원이다. 주어진 직선 $L$ 에 대해 $L$ 과 만나는 직선들의 집합은 $\mathrm{Gr}(2,4)$ 안에서 여차원 $1$ 의 부분다양체다. 조건 하나가 자유도 하나를 줄이므로 조건 네 개를 걸면 $4-4=0$ 차원, 곧 유한 개의 점이 남는다.
 
-$\mathbb P^3$ 의 직선은 $\mathbb C^4$ 의 2 차원 부분공간이므로 $\mathrm{Gr}(2,4)$ 의 점이다. 이 공간은 4 차원이다.
-
-주어진 직선 $L$ 에 대해 "$L$ 과 만나는 직선들" 의 집합은 $\mathrm{Gr}(2,4)$ 안에서 여차원 $1$ 의 부분다양체다. 조건 하나가 자유도 하나를 줄인다. 조건 네 개를 걸면 $4-4=0$ 차원, 곧 유한 개의 점이 남는다. 그 개수가 답이다.
-
-각 조건의 코호몰로지류를 곱해 개수를 센다. 네 조건이 모두 같은 류 $\sigma_1$ 을 주므로 계산은
+각 조건의 코호몰로지류를 곱해 그 개수를 센다. 네 조건이 모두 같은 류 $\sigma_1$ 을 주므로 계산은 다음이다.
 
 $$
 \sigma_1^4\in H^8(\mathrm{Gr}(2,4))
 $$
 
-이고, 최고 차수 코호몰로지가 1 차원이므로 결과가 정수 배수로 나온다. 그 정수가 $2$ 다.
-
-## 세포 분해와 Young 도형
-
-$\mathrm{Gr}(k,n)$ 을 기준 깃발 $F_1\subset F_2\subset\cdots\subset F_n$ 에 대해 자른다. 부분공간 $V$ 가 각 $F_i$ 와 얼마나 만나는지를 재면 $V$ 의 "위치" 가 정해지고, 같은 위치의 $V$ 들이 세포 하나를 이룬다. 세포는 $k\times(n-k)$ 상자 안에 들어가는 Young 도형 $\lambda$ 로 색인되고, 여차원이 $|\lambda|$ 다.
-
-세포가 전부 짝수 실차원이라 경계사상이 $0$ 이고, 따라서
-
-$$
-H^\ast(\mathrm{Gr}(k,n),\mathbb Z)=\bigoplus_{\lambda\subseteq k\times(n-k)}\mathbb Z\thinspace\sigma_\lambda
-$$
-
-이다. 기저의 개수는 상자 안 Young 도형의 개수 $\binom{n}{k}$ 다.
-
-$\sigma_\lambda$ 를 $\lambda$ 의 Schur 다항식으로 보내는 사상이 환 준동형이고, 상자를 벗어나는 항을 $0$ 으로 보내면 두 곱셈이 일치한다. 열거기하의 구조상수가 Littlewood–Richardson 계수다.
-
-## Pieri 규칙
-
-$\sigma_1$ 을 곱하는 것은 간단하다.
-
-$$
-\sigma_1\cdot\sigma_\lambda=\sum_{\mu}\sigma_\mu
-$$
-
-합은 $\lambda$ 에 상자 하나를 더해 얻는 모든 유효한 도형 $\mu$ 에 대한 것이다. 상자를 더한 뒤에도 Young 도형이어야 하고, $k\times(n-k)$ 상자를 벗어나면 버린다.
-
-이 규칙으로 $\sigma_1^N$ 이 계산된다. $N=k(n-k)$ 이면 최고 차수에 도달해 답이 수 하나가 되고, 그 수는 상자를 하나씩 채워 가는 경로의 수, 곧 $k\times(n-k)$ 직사각형의 표준 Young 배열 개수다.
+최고 차수 코호몰로지가 1 차원이므로 결과가 정수 배수로 나오고, 그 정수가 $2$ 다.
 
 # 정의
 
@@ -66,6 +36,14 @@ $$
 
 를 **Schubert 다양체**라 한다. 열린 부분이 세포 $\cong\mathbb C^{k(n-k)-|\lambda|}$ 이고 여차원이 $|\lambda|$ 다. 기본류를 $\sigma_\lambda\in H^{2|\lambda|}(\mathrm{Gr}(k,n))$ 로 쓴다.
 
+세포가 전부 짝수 실차원이라 경계사상이 $0$ 이고 코호몰로지가 세포로 자유생성된다.
+
+$$
+H^\ast(\mathrm{Gr}(k,n),\mathbb Z)=\bigoplus_{\lambda\subseteq k\times(n-k)}\mathbb Z\thinspace\sigma_\lambda
+$$
+
+기저의 개수는 $k\times(n-k)$ 상자 안에 들어가는 Young 도형의 개수 $\binom{n}{k}$ 다.
+
 ## 곱셈 구조
 
 $$
@@ -78,6 +56,8 @@ $c^\nu_{\lambda\mu}$ 는 Littlewood–Richardson 계수이고[^1] $|\nu|=|\lambd
 - **Giambelli**: 임의의 $\sigma_\lambda$ 가 특수류 $\sigma_p$ 들의 [행렬식](determinants.md)으로 쓰인다. $\sigma_\lambda=\det(\sigma_{\lambda_i+j-i})\_{1\le i,j\le k}$ 이다.
 
 두 규칙에서 환 $H^\ast(\mathrm{Gr}(k,n))$ 이 $\sigma_1,\dots,\sigma_{n-k}$ 로 생성됨이 나온다.
+
+$\sigma_\lambda$ 를 $\lambda$ 의 Schur 다항식으로 보내는 사상이 환 준동형이고, 상자를 벗어나는 항을 $0$ 으로 보내면 두 곱셈이 일치한다.
 
 ## Poincaré 다항식
 
@@ -100,6 +80,12 @@ $$
 Schubert 기저는 교차 쌍에 대해 자기 쌍대 기저를 갖는다. 열거 문제의 답이 비음 정수로 나오는 것이 이 구조에서 온다.
 
 # 성질
+
+## $\sigma_1$ 의 거듭제곱
+
+Pieri 규칙에서 $\sigma_1\cdot\sigma_\lambda$ 는 $\lambda$ 에 상자 하나를 더해 얻는 유효한 도형들의 합이다. $N=k(n-k)$ 이면 $\sigma_1^N$ 이 최고 차수에 도달하고, 그 계수는 빈 도형에서 상자를 하나씩 채워 $k\times(n-k)$ 직사각형에 이르는 경로의 수, 곧 그 직사각형의 표준 Young 배열 개수다.
+
+$\mathrm{Gr}(2,4)$ 에서 $2\times2$ 직사각형의 표준 Young 배열은 둘이므로 $\sigma_1^4$ 의 계수가 $2$ 다.
 
 ## 계수의 비음성
 
