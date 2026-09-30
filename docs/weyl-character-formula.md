@@ -25,61 +25,15 @@ $$
 
 # 직관
 
-## $\mathfrak{sl}\_2$ 의 경우
-
-$\mathfrak{sl}\_2$ 의 기약표현은 각 차원마다 하나씩 있고, $n+1$ 차원 표현 $V_n$ 의 무게는 $n,n-2,\dots,-n$ 이 하나씩이다. 형식지표를 $e^1=x$ 로 쓰면 다음이 된다.
+$\mathfrak{sl}\_2$ 의 기약표현은 각 차원마다 하나씩 있고, $n+1$ 차원 표현 $V_n$ 의 무게는 $n,n-2,\dots,-n$ 이 하나씩이다. 형식지표를 $e^1=x$ 로 쓰면 유한 등비급수가 닫힌 꼴로 접힌다.
 
 $$
 \mathrm{ch}V_n=x^n+x^{n-2}+\cdots+x^{-n}=\frac{x^{n+1}-x^{-(n+1)}}{x-x^{-1}}
 $$
 
-유한 등비급수를 닫힌 꼴로 접은 것이고, 접힌 모양에 일반 공식의 세 요소가 들어 있다.
-
-- $W=\lbrace 1,s\rbrace$ 이고 $s$ 는 $x\mapsto x^{-1}$ 이다. 분자와 분모 모두 $W$ 에 대한 교대합이다.
-- $\rho=1$ 이고 분자의 지수는 $\pm(n+1)=\pm(\lambda+\rho)$ 다. 지표에 나타나는 것은 $\lambda$ 가 아니라 $\lambda+\rho$ 다.
-- 분모는 $\lambda=0$ 을 넣은 분자로, 자명표현의 지표를 $1$ 로 만드는 정규화다.
+접힌 모양에 일반 공식의 세 요소가 들어 있다. $W=\lbrace 1,s\rbrace$ 이고 $s$ 가 $x\mapsto x^{-1}$ 이라 분자와 분모 모두 $W$ 에 대한 교대합이다. $\rho=1$ 이고 분자의 지수가 $\pm(n+1)=\pm(\lambda+\rho)$ 이므로 지표에 나타나는 것은 $\lambda$ 가 아니라 $\lambda+\rho$ 다. 분모는 $\lambda=0$ 을 넣은 분자이고 자명표현의 지표를 $1$ 로 만드는 정규화다.
 
 일반 공식은 $x\mapsto x^{-1}$ 자리에 Weyl 군을, $\pm$ 부호 자리에 $(-1)^{\ell(w)}$ 를, 등비급수 자리에 여러 방향의 급수를 넣은 것이다.
-
-## $\rho$ 이동
-
-$\mathrm{ch}V_\lambda$ 는 무게 다이어그램의 대칭 때문에 $W$ 에 대해 대칭이다. 반대칭 함수는 모든 $W$ 궤도에서 한 번씩만 항을 골라 부호를 붙인 것이라 다루기 쉽다. 대칭인 것을 반대칭으로 바꾸는 수법이 Vandermonde 행렬식 곱이고, 여기서 곱하는 것이 **Weyl 분모**다.
-
-$$
-\Delta=\sum_{w\in W}(-1)^{\ell(w)}e^{w\rho}=\prod_{\alpha\in\Phi^+}\left(e^{\alpha/2}-e^{-\alpha/2}\right)
-$$
-
-두 표현이 같다는 것이 **Weyl 분모 항등식**이다. 곱 쪽에서 각 인수의 최고차항 $e^{\alpha/2}$ 를 모으면 $e^\rho$ 가 되고, 여기서 $\rho=\frac12\sum_{\alpha\gt 0}\alpha$ 가 나온다.
-
-$$
-\underbrace{\mathrm{ch}V_\lambda}\_{\text{대칭}}\cdot\underbrace{\Delta}\_{\text{반대칭}}=\underbrace{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}\_{\text{반대칭}}
-$$
-
-$\lambda$ 가 지배적이면 $\lambda+\rho$ 는 엄격히 지배적이라 $W$ 궤도가 자유롭고, 반대칭 함수 공간에서 궤도 하나가 기저 하나를 준다. $\rho$ 를 더하는 것은 고정점이 있던 무게를 내부로 밀어 궤도를 자유롭게 만드는 조작이다.
-
-## 두 가지 증명 노선
-
-해석적 노선(Weyl 의 원래 증명)은 콤팩트군 $G$ 와 극대원환면 $T$ 에서 시작한다. 모든 원소가 어떤 원환면에 들어가므로 류함수는 $T$ 위의 $W$ 불변 함수로 결정되고, [Haar 측도](haar-measure.md)가 $T$ 위에서 $\frac1{|W|}|\Delta|^2$ 라는 야코비안을 갖는다(**Weyl 적분 공식**).
-
-$$
-\int_Gf(g)\thinspace dg=\frac1{|W|}\int_Tf(t)\thinspace|\Delta(t)|^2\thinspace dt
-$$
-
-Peter–Weyl 이 주는 직교관계 $\int_G\chi_\lambda\overline{\chi_\mu}=\delta_{\lambda\mu}$ 는 $\chi_\lambda\Delta$ 들이 $T$ 위에서 정규직교라는 말이 된다. 반대칭 지수합들도 정규직교이므로 $\chi_\lambda\Delta$ 가 그중 어느 것인지 고르면 증명이 끝난다.
-
-대수적 노선은 Verma [가군](modules.md) $M_\mu$ 의 지표가 Kostant 분할 함수로 나온다는 관찰에서 출발한다.
-
-$$
-\mathrm{ch}M_\mu=\frac{e^\mu}{\prod_{\alpha\in\Phi^+}(1-e^{-\alpha})}
-$$
-
-기약표현은 Verma 가군들의 교대합으로 풀린다(**BGG 분해**).
-
-$$
-\mathrm{ch}V_\lambda=\sum_{w\in W}(-1)^{\ell(w)}\mathrm{ch}M_{w\cdot\lambda},\qquad w\cdot\lambda:=w(\lambda+\rho)-\rho
-$$
-
-이동 작용 $w\cdot\lambda$ 가 $\rho$ 이동이고, 이 식을 정리하면 지표 공식이 나온다.
 
 # 정의
 
@@ -133,6 +87,14 @@ $$
 \mathrm{ch}V_\lambda=\frac{\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}{\prod_{\alpha\in\Phi^+}\left(e^{\alpha/2}-e^{-\alpha/2}\right)}
 $$
 
+$\mathrm{ch}V_\lambda$ 는 무게 다이어그램의 대칭 때문에 $W$ 에 대해 대칭이고, 반대칭 함수는 모든 $W$ 궤도에서 한 번씩만 항을 골라 부호를 붙인 것이라 다루기 쉽다. 대칭인 것을 반대칭으로 바꾸려고 곱하는 것이 분모 $\Delta$ 이며, 두 표현
+
+$$
+\Delta=\sum_{w\in W}(-1)^{\ell(w)}e^{w\rho}=\prod_{\alpha\in\Phi^+}\left(e^{\alpha/2}-e^{-\alpha/2}\right)
+$$
+
+이 같다는 것이 **Weyl 분모 항등식**이다. 곱 쪽에서 각 인수의 최고차항 $e^{\alpha/2}$ 를 모으면 $e^\rho$ 가 되고 거기서 $\rho=\frac12\sum_{\alpha\gt 0}\alpha$ 가 나온다. $\lambda$ 가 지배적이면 $\lambda+\rho$ 는 엄격히 지배적이라 $W$ 궤도가 자유롭고, 반대칭 함수 공간에서 궤도 하나가 기저 하나를 준다. $\rho$ 를 더하는 것은 고정점이 있던 무게를 내부로 밀어 궤도를 자유롭게 만드는 조작이다.
+
 **Weyl 차원 공식.** 위 식에서 $e^\mu\mapsto e^{t(\mu,\rho^\vee)}$ 로 특수화하고 $t\to0$ 극한을 취하면(양쪽이 $0/0$ 이라 L'Hôpital 을 $|\Phi^+|$ 번 쓴다) 분모와 분자가 곱으로 풀린다.
 
 $$
@@ -176,6 +138,30 @@ $$
 $A_1$ 에서는 $x-x^{-1}$ 이고, 같은 항등식을 아핀 근계로 확장하면 Macdonald 항등식이 되며 $A_1^{(1)}$ 의 경우가 Jacobi 삼중곱 공식, 곧 [theta 급수](theta-series.md)의 고전적 항등식이다.
 
 **기하.** $\lambda$ 에 대응하는 깃발다양체 $G/B$ 위의 직선다발 $\mathcal L_\lambda$ 에 대해 $H^0(G/B,\mathcal L_\lambda)\cong V_\lambda^\ast$ 다(Borel–Weil). 이 관점에서 지표 공식은 Atiyah–Bott 고정점 공식의 결과이고, 분모의 $\prod(e^{\alpha/2}-e^{-\alpha/2})$ 는 고정점에서의 접공간 기여이며 $W$ 위의 합은 $T$ 고정점 $|W|$ 개 위의 합이다.
+
+## 증명의 두 노선
+
+해석적 노선(Weyl 의 원래 증명)은 콤팩트군 $G$ 와 극대원환면 $T$ 에서 시작한다. 모든 원소가 어떤 원환면에 들어가므로 류함수는 $T$ 위의 $W$ 불변 함수로 결정되고, [Haar 측도](haar-measure.md)가 $T$ 위에서 $\frac1{|W|}|\Delta|^2$ 라는 야코비안을 갖는다(**Weyl 적분 공식**).
+
+$$
+\int_Gf(g)\thinspace dg=\frac1{|W|}\int_Tf(t)\thinspace|\Delta(t)|^2\thinspace dt
+$$
+
+Peter–Weyl 이 주는 직교관계 $\int_G\chi_\lambda\overline{\chi_\mu}=\delta_{\lambda\mu}$ 는 $\chi_\lambda\Delta$ 들이 $T$ 위에서 정규직교라는 말이 된다. 반대칭 지수합들도 정규직교이므로 $\chi_\lambda\Delta$ 가 그중 어느 것인지 고르면 증명이 끝난다.
+
+대수적 노선은 Verma [가군](modules.md) $M_\mu$ 의 지표가 Kostant 분할 함수로 나온다는 관찰에서 출발한다.
+
+$$
+\mathrm{ch}M_\mu=\frac{e^\mu}{\prod_{\alpha\in\Phi^+}(1-e^{-\alpha})}
+$$
+
+기약표현은 Verma 가군들의 교대합으로 풀린다(**BGG 분해**).
+
+$$
+\mathrm{ch}V_\lambda=\sum_{w\in W}(-1)^{\ell(w)}\mathrm{ch}M_{w\cdot\lambda},\qquad w\cdot\lambda:=w(\lambda+\rho)-\rho
+$$
+
+이동 작용 $w\cdot\lambda$ 가 $\rho$ 이동이고, 이 식을 정리하면 지표 공식이 나온다.
 
 ## 성립 범위
 
