@@ -14,80 +14,13 @@ $$
 
 $B$ 를 잘 고르면 불변식을 취하는 과정에서 $G_K$ 작용이 상쇄되고 $D_B(V)$ 에는 Frobenius 나 여과 같은 선형대수 자료만 남는다. 이런 $B$ 가 주기환(period ring)이고, $\mathbb Q_p\subset B_{\mathrm{HT}},B_{\mathrm{dR}},B_{\mathrm{st}},B_{\mathrm{cris}}$ 의 사슬이 표현의 네 등급을 정의한다.
 
-복소다양체에서 de Rham 코호몰로지와 특이 코호몰로지를 잇는 비교동형은 $\mathbb C$ 로 계수를 올려야 성립하고 그 동형의 행렬 성분이 주기다. $p$ 진 세계에서 $\mathbb C$ 자리에 $B_{\mathrm{dR}}$ 이, $2\pi i$ 자리에 아래에서 만들 원소 $t$ 가 놓인다.
+복소다양체에서 [de Rham 코호몰로지](de-rham-cohomology.md)와 특이 코호몰로지를 잇는 비교동형은 $\mathbb C$ 로 계수를 올려야 성립하고 그 동형의 행렬 성분이 주기다. $p$ 진 세계에서 $\mathbb C$ 자리에 $B_{\mathrm{dR}}$ 이, $2\pi i$ 자리에 $g(t)=\chi(g)\thinspace t$ 를 만족하는 원소 $t$ 가 놓인다.
 
 # 직관
 
-## $\ell\ne p$ 의 경우
+$\ell\ne p$ 인 표현 $\rho\colon G_K\to\mathrm{GL}\_n(\mathbb Q_\ell)$ 에서 관성군의 야생 부분 $P_K$ 는 프로-$p$ 군이므로 프로-$\ell$ 군 안의 상 $\rho(P_K)$ 가 유한하고, 표현 하나가 유한 자료로 끝난다. $\ell=p$ 에서는 그 상이 프로-$p$ 군 안의 프로-$p$ 군이라 무한히 클 수 있다. 1차원 표현을 세어 보면 연속 지표는 $G_K^{\mathrm{ab}}\cong\widehat{K^\times}\to\mathbb Z_p^\times$ 이고, 국소 [유체론](class-field-theory.md)이 주는 $K^\times\cong\pi^{\mathbb Z}\times\mathcal O_K^\times$ 에서 $\mathcal O_K^\times$ 가 $\mathbb Z_p^{[K:\mathbb Q_p]}$ 를 포함한다. 지표가 양의 차원의 족을 이루므로 표현을 유한 자료로 압축하는 길이 막힌다.
 
-$G_K$ 의 $\ell$ 진 표현 $\rho\colon G_K\to\mathrm{GL}\_n(\mathbb Q_\ell)$ 에서 관성군 $I_K$ 의 야생 부분 $P_K$ 는 프로-$p$ 군이고 상 $\rho(P_K)$ 는 프로-$\ell$ 군 안의 콤팩트 부분군이다. $p\ne\ell$ 이므로 프로-$p$ 군에서 프로-$\ell$ 군으로 가는 연속 준동형의 상은 유한하고, 야생 관성은 유한한 정보만 남긴다.
-
-남은 순한 관성 $I_K/P_K\cong\prod_{\ell'\ne p}\mathbb Z_{\ell'}$ 의 $\ell$ 부분만 작용하며, Grothendieck 은 열린 부분군 위에서 그 작용이 유니포턴트임을 보였다.
-
-$$
-\rho(\sigma)=\exp\big(t_\ell(\sigma)N\big),\qquad N\ \text{멱영}
-$$
-
-$\ell$ 진 표현 하나가 Weil–Deligne 표현 $(r,N)$ 이라는 유한 자료로 환원되고, 그 자료에 $\ell$ 이 등장하지 않아 여러 소수의 표현을 한 자리에서 비교할 수 있다.
-
-## $\ell=p$ 에서 달라지는 점
-
-$p$ 진 표현에서는 $\rho(P_K)$ 가 프로-$p$ 군 안의 프로-$p$ 군이므로 무한히 클 수 있다. 1차원 표현은 연속 지표
-
-$$
-\chi\colon G_K^{\mathrm{ab}}\cong\widehat{K^\times}\longrightarrow\mathbb Z_p^\times
-$$
-
-인데 국소 [유체론](class-field-theory.md)이 $K^\times\cong\pi^{\mathbb Z}\times\mathcal O_K^\times$ 를 주고 $\mathcal O_K^\times$ 가 $\mathbb Z_p^{[K:\mathbb Q_p]}$ 를 포함하므로 연속 지표가 양의 차원의 족을 이룬다.
-
-이 무한함은 정보량이기도 하다. 좋은 환원을 가진 다양체의 $\ell$ 진 코호몰로지에 남는 것은 관성이 자명하다는 것뿐이지만, $p$ 진 코호몰로지는 특수 올의 결정 코호몰로지 전체를 Frobenius 와 Hodge 여과까지 포함해 기억한다. $p$ 진 Hodge 이론은 그 자료를 읽는 언어다.
-
-## 주기와 비교동형
-
-$X$ 가 $\mathbb Q$ 위의 매끄러운 사영 다양체일 때 [de Rham 코호몰로지](de-rham-cohomology.md) $H^n_{\mathrm{dR}}(X/\mathbb Q)$ 와 특이 코호몰로지 $H^n(X(\mathbb C),\mathbb Q)$ 는 차원이 같지만 표준적 동형이 없다. 적분
-
-$$
-\langle\omega,\gamma\rangle=\int_\gamma\omega
-$$
-
-이 주는 쌍대성은 $\mathbb C$ 로 계수를 올린 뒤에야 동형이 되고, 두 $\mathbb Q$ 구조 사이의 전이행렬 성분이 주기다. 가장 단순한 예가 $\mathbb G_m$ 의 $\oint dz/z=2\pi i$ 다.
-
-$p$ 진에서는 왼쪽에 $G_K$ 가 작용하는 $H^n_{\mathrm{et}}(X_{\bar K},\mathbb Q_p)$ 를, 오른쪽에 여과와 Frobenius 를 가진 $H^n_{\mathrm{dR}}(X/K)$ 를 놓는다. 둘을 잇는 동형은 $K$ 위에 없고 두 구조를 모두 담을 만큼 큰 환 $B_{\mathrm{dR}}$ 로 올려야 한다.
-
-$$
-B_{\mathrm{dR}}\otimes_K H^n_{\mathrm{dR}}(X/K)\thickspace\cong\thickspace B_{\mathrm{dR}}\otimes_{\mathbb Q_p}H^n_{\mathrm{et}}(X_{\bar K},\mathbb Q_p)
-$$
-
-양변에 $G_K$ 가 작용한다. 왼쪽은 $B_{\mathrm{dR}}$ 성분으로만, 오른쪽은 두 성분 모두에 작용하므로 불변식을 취하면 오른쪽에서 Galois 작용이 사라지고 왼쪽의 $H_{\mathrm{dR}}$ 만 남는다. 이것이 $D_{\mathrm{dR}}$ 의 내용이다.
-
-## $2\pi i$ 에 해당하는 원소
-
-$\zeta_{p^n}$ 을 정합적으로 고른 계 $\varepsilon=(1,\zeta_p,\zeta_{p^2},\dots)$ 에서 출발해 형식적으로
-
-$$
-t=\log[\varepsilon]
-$$
-
-로 둔다. $[\varepsilon]$ 은 아래에서 정의할 Teichmüller 올림이고 $\log$ 는 $1$ 근방의 [멱급수](power-series.md)다. $g\in G_K$ 가 $\zeta_{p^n}\mapsto\zeta_{p^n}^{\chi(g)}$ 로 작용하므로 다음이 성립한다.
-
-$$
-g(t)=\chi(g)\thinspace t
-$$
-
-$t$ 는 순환지표 $\chi$ 에 대한 고유벡터이고, 복소 쪽에서 복소켤레가 $2\pi i\mapsto-2\pi i$ 로 작용하는 것과 같은 자리에 있다. $t$ 가 가역인 환에서는 $t^{-1}\otimes e$ 가 불변원소이므로 Tate 꼬임 $\mathbb Q_p(1)$ 이 자명해진다. 주기환은 미리 정해 둔 꼬임들을 자명하게 만드는 계수환이다.
-
-## 네 층의 주기환
-
-기하의 환원 상태에 따라 남는 자료가 다르므로 주기환도 여럿이다.
-
-| 조건 | 대응하는 환원 | 남는 선형대수 자료 |
-| --- | --- | --- |
-| 결정적 | 좋은 환원 | Frobenius $\varphi$ 와 여과 |
-| 반안정 | 반안정 환원 | $\varphi$ , 모노드로미(monodromy) 작용소 $N$ , 여과 |
-| de Rham | 임의 환원 | 여과 |
-| Hodge–Tate | 임의 환원 | Hodge–Tate 무게 |
-
-위의 조건이 아래의 조건을 함의하고, 위로 갈수록 남는 자료가 풍부하다. Hodge–Tate 는 무게 정수만 기억하고 결정적은 Frobenius 와 여과를 모두 기억해 표현을 결정한다.
+표현을 줄이는 대신 계수를 키운다. Tate 꼬임 $\mathbb Q_p(1)$ 에서 $g\in G_K$ 는 순환지표의 값 $\chi(g)$ 로 곱하므로 $\mathbb Q_p$ 계수의 불변원소는 $0$ 뿐이고 $D_B$ 의 차원이 모자란다. $g(t)=\chi(g)\thinspace t$ 를 만족하는 가역원소 $t$ 를 계수환에 넣으면 $t^{-1}\otimes e$ 가 불변이 되어 차원이 채워진다. 주기환은 이런 $t$ 를 갖춰 정해진 꼬임을 자명하게 만드는 계수환이고, 복소 쪽에서 $\mathbb G_m$ 의 $\oint dz/z=2\pi i$ 가 놓인 자리에 $t$ 가 온다.
 
 # 정의
 
@@ -144,7 +77,7 @@ $$
 R=\varprojlim_{x\mapsto x^p}\mathcal O_{\mathbb C_p}/p
 $$
 
-는 표수 $p$ 의 완전 부치환이고 그 분수체는 대수적으로 닫혀 있다. 앞의 $\varepsilon=(1,\zeta_p,\dots)$ 가 $R$ 의 원소다. $A_{\mathrm{inf}}=W(R)$ 을 Witt 벡터환으로 두면 표준적 전사
+는 표수 $p$ 의 완전 부치환이고 그 분수체는 대수적으로 닫혀 있다. $\zeta_{p^n}$ 을 정합적으로 고른 계 $\varepsilon=(1,\zeta_p,\zeta_{p^2},\dots)$ 가 $R$ 의 원소다. $A_{\mathrm{inf}}=W(R)$ 을 Witt 벡터환으로 두면 표준적 전사
 
 $$
 \theta\colon A_{\mathrm{inf}}\longrightarrow\mathcal O_{\mathbb C_p},\qquad
@@ -158,7 +91,7 @@ B_{\mathrm{dR}}^+=\varprojlim_n A_{\mathrm{inf}}[1/p]/(\ker\theta)^n,\qquad
 B_{\mathrm{dR}}=B_{\mathrm{dR}}^+[1/t]
 $$
 
-$B_{\mathrm{dR}}^+$ 는 완비 이산부치환이고 잔여체가 $\mathbb C_p$ 이며 $t=\log[\varepsilon]$ 이 극대 아이디얼의 생성원이다. $B_{\mathrm{dR}}$ 은 체이고 다음 여과를 갖는다.
+$B_{\mathrm{dR}}^+$ 는 완비 이산부치환이고 잔여체가 $\mathbb C_p$ 이며 $t=\log[\varepsilon]$ 이 극대 아이디얼의 생성원이다. $\log$ 는 $1$ 근방의 [멱급수](power-series.md)이고, $g\in G_K$ 가 $\zeta_{p^n}\mapsto\zeta_{p^n}^{\chi(g)}$ 로 작용하므로 $g(t)=\chi(g)\thinspace t$ 다. $B_{\mathrm{dR}}$ 은 체이고 다음 여과를 갖는다.
 
 $$
 \mathrm{Fil}^iB_{\mathrm{dR}}=t^iB_{\mathrm{dR}}^+,\qquad
@@ -257,7 +190,7 @@ $$
 
 ## $p$ 진 단일화 정리
 
-Grothendieck 준안정 정리에 해당하는 진술은 다음이다.
+$\ell\ne p$ 에서 Grothendieck 준안정 정리는 순한 관성의 작용이 열린 부분군 위에서 $\rho(\sigma)=\exp\bigl(t_\ell(\sigma)N\bigr)$ 꼴이고 $N$ 이 멱영이라는 진술이다. $p$ 진에서 이에 해당하는 것은 다음이다.
 
 $$
 V\ \text{de Rham}\ \Longleftrightarrow\ V\ \text{잠재적으로 반안정}
