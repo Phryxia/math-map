@@ -22,62 +22,21 @@ Kedlaya 알고리즘[^1]의 비용은 $\mathbb F_{p^n}$ 위 종수 $g$ 곡선에
 
 # 직관
 
-## 정밀도의 유한 절단
-
-답이 정수이고 그 크기의 상계를 알면 유한 정밀도의 근사가 정확한 답이 된다. $|m|\lt M$ 인 정수 $m$ 에 대해 $m\bmod p^N$ 을 알고 $p^N\gt 2M$ 이면, 잉여류 안에 크기 $M$ 이하의 정수가 하나뿐이므로 $m$ 이 유일하다.
-
-zeta 함수의 분자 $P(T)=\prod_{j=1}^{2g}(1-\alpha_jT)$ 에서 계수는 $\alpha_j$ 의 기본대칭식이고, Weil 한계 $|\alpha_j|=\sqrt q$ 가
-
-$$
-|\thinspace i\text{ 번째 계수}\thinspace|\le\binom{2g}{i}q^{i/2}
-$$
-
-를 준다. 남은 일은 $p$ 진 정밀도를 그 두 배 위로 올리는 것이다.
-
-## Hasse 불변량
-
-종수 $1$ 에서는 $E:y^2=f(x)$ 에 대해 [이차 지표](gauss-sums.md)로
+종수 $1$ 에서는 $E:y^2=f(x)$ 에 대해 [이차 지표](gauss-sums.md)로 점 개수를 센다.
 
 $$
 a_p=-\sum_{x\in\mathbb F_p}\chi(f(x)),\qquad \chi(u)=u^{(p-1)/2}
 $$
 
-이고, $\sum_{x\in\mathbb F_p}x^k$ 가 $(p-1)\mid k$ 이고 $k\gt 0$ 일 때만 $-1$ 이라는 사실을 쓰면 $f^{(p-1)/2}$ 의 $x^{p-1}$ 계수 하나만 남는다.
+$f^{(p-1)/2}$ 를 펼치면 $\sum_{x\in\mathbb F_p}x^k$ 들의 합이 되고, 이 합은 $k\gt 0$ 이고 $(p-1)\mid k$ 일 때만 $-1$ 이며 그 밖에는 $0$ 이다. 차수가 $x^{p-1}$ 인 항 하나만 남는다.
 
 $$
-a_p\equiv\big[\thinspace x^{p-1}\thinspace\big]\thinspace f(x)^{(p-1)/2}\pmod p
+a_p\equiv\big\lbrack\thinspace x^{p-1}\thinspace\big\rbrack\thinspace f(x)^{(p-1)/2}\pmod p
 $$
 
-이 계수가 **Hasse 불변량**이고, Frobenius 의 코호몰로지 작용을 정밀도 $p^1$ 로 계산한 값이다. $|a_p|\le2\sqrt p$ 이므로 $4\sqrt p\lt p$ , 곧 $p\gt 16$ 이면 $a_p$ 가 유일하게 복원된다.
+이 계수가 **Hasse 불변량**이고, Frobenius 의 코호몰로지 작용을 정밀도 $p^1$ 로 계산한 값이다.
 
-Kedlaya 알고리즘은 같은 구조에서 정밀도를 $p^1$ 에서 $p^N$ 으로, 종수 $1$ 을 종수 $g$ 로, 소수체를 $\mathbb F_{p^n}$ 으로 올린 것이다.
-
-## 수렴반경의 제한
-
-$\mathbb F_q$ 위 곡선의 $p$ 진 코호몰로지를 만들려면 곡선을 $\mathbb Z_q$ 로 들어올려야 한다. 좌표환 $\mathbb F_q[x,y]/(y^2-f)$ 를 그대로 들어올린 $\mathbb Z_q$ 대수의 [de Rham 코호몰로지](de-rham-cohomology.md)는 너무 크고, $p$ 진 완비화를 취하면 수렴반경이 정확히 $1$ 인 급수까지 들어와 코호몰로지가 무한차원이 된다.
-
-Monsky 와 Washnitzer 는 수렴반경이 $1$ 보다 조금 큰 급수만 남긴다. 이 **약수렴 대수** $A^\dagger$ 의 de Rham 코호몰로지는 유한차원이고 차원이 위상적으로 기대되는 값과 같다. 종수 $g$ 인 홀수차 초타원곡선의 아핀 조각에서 $H^1$ 의 기저가
-
-$$
-\frac{dx}{y},\ \frac{x\thinspace dx}{y},\ \dots,\ \frac{x^{2g-1}dx}{y}
-$$
-
-로 $2g$ 개다.
-
-반경이 $1$ 보다 조금 크다는 조건은 Dwork 의 분해함수 $\theta(x)=\exp(\pi(x-x^p))$ 가 수렴반경 $p^{(p-1)/p^2}\gt 1$ 을 가져 작용소를 완전연속으로 만든 것과 같다. Monsky–Washnitzer 는 그 초과수렴을 대수의 정의 안으로 옮겼다.
-
-## Frobenius 의 올림
-
-$\sigma$ 를 $\mathbb Z_q$ 의 Frobenius 올림이라 하고 $x\mapsto x^p$ 로 확장한다. $y$ 는 $y^2=f(x)$ 를 만족해야 하므로 $\sigma(y)^2=f^\sigma(x^p)$ 여야 한다. 이것을 $y^{2p}$ 로 묶으면
-
-$$
-\sigma(y)=y^p\Big(1+\underbrace{\frac{f^\sigma(x^p)-f(x)^p}{y^{2p}}}\_{=\thinspace\delta}\Big)^{1/2}
-=y^p\sum_{k\ge0}\binom{1/2}{k}\delta^k
-$$
-
-가 된다. $\delta$ 의 분자가 $p$ 로 나뉘므로 $\delta$ 는 $p$ 진으로 작고 급수가 수렴하며, 정밀도 $p^N$ 만 필요하므로 $k$ 를 $O(N)$ 에서 잘라 유한 합으로 만든다.
-
-$\sigma(x^i\thinspace dx/y)$ 를 계산하면 기저가 아닌 $x^k\thinspace dx/y^m$ 꼴이 나온다. 이것을 기저로 되돌리는 **환원**은 $d(x^ay^b)$ 가 코호몰로지에서 $0$ 이라는 관계식을 반복 적용하는 선형대수다. 환원이 끝나면 $2g\times2g$ 행렬이 남고 그 특성다항식이 $P(T)$ 다.
+계산이 준 것은 $a_p\bmod p$ 뿐인데 $|a_p|\le2\sqrt p$ 이므로, $4\sqrt p\lt p$ 곧 $p\gt 16$ 이면 그 잉여류에 크기 조건을 만족하는 정수가 하나뿐이고 $a_p$ 가 확정된다. Kedlaya 알고리즘은 이 구조에서 정밀도를 $p^1$ 에서 $p^N$ 으로, 종수 $1$ 을 종수 $g$ 로, 소수체를 $\mathbb F_{p^n}$ 으로 올린 것이다.
 
 # 정의
 
@@ -96,7 +55,7 @@ $P$ 는 함수방정식 때문에 자기역수적이다. 그러므로 계수 $2g
 
 ## 약수렴 대수
 
-$A=\mathbb Z_q[x_1,\dots,x_m]/I$ 라 할 때 **약수렴 대수** $A^\dagger$ 는 계수가 지수적으로 빨리 $0$ 으로 가는 [멱급수](power-series.md), 곧 어떤 $\rho\gt 1$ 에 대해 반경 $\rho$ 에서 수렴하는 급수들의 대수다. $A^\dagger\otimes\mathbb Q$ 의 de Rham 코호몰로지를 $A$ 의 **Monsky–Washnitzer 코호몰로지**라 한다.
+$A=\mathbb Z_q[x_1,\dots,x_m]/I$ 라 할 때 **약수렴 대수** $A^\dagger$ 는 계수가 지수적으로 빨리 $0$ 으로 가는 [멱급수](power-series.md), 곧 어떤 $\rho\gt 1$ 에 대해 반경 $\rho$ 에서 수렴하는 급수들의 대수다. $A^\dagger\otimes\mathbb Q$ 의 [de Rham 코호몰로지](de-rham-cohomology.md)를 $A$ 의 **Monsky–Washnitzer 코호몰로지**라 한다.
 
 - 유한차원이다.
 - $\mathbb F_q$ 위의 원래 대수만으로 결정된다(들어올림 선택에 무관하다).
@@ -105,6 +64,8 @@ $A=\mathbb Z_q[x_1,\dots,x_m]/I$ 라 할 때 **약수렴 대수** $A^\dagger$ �
 $$
 \char35{}C(\mathbb F_{q^k})=\sum_{i}(-1)^i\thinspace\mathrm{tr}\big(\mathrm{Frob}^k\mid H^i_{\mathrm{MW}}\big)
 $$
+
+반경이 $1$ 보다 커야 한다는 조건이 유한차원성의 근거다. 좌표환을 그대로 들어올린 $\mathbb Z_q$ 대수의 de Rham 코호몰로지는 너무 크고, $p$ 진 완비화를 취하면 수렴반경이 정확히 $1$ 인 급수까지 들어와 코호몰로지가 무한차원이 된다. Dwork 의 분해함수 $\theta(x)=\exp(\pi(x-x^p))$ 가 수렴반경 $p^{(p-1)/p^2}\gt 1$ 을 가져 작용소를 완전연속으로 만든 것과 같은 조건이고, Monsky–Washnitzer 는 그 초과수렴을 대수의 정의 안으로 옮겼다.
 
 Berthelot 의 강성(rigid) 코호몰로지가 이것을 특이점과 비적정 경우까지 일반화한 것이다.
 
@@ -117,6 +78,17 @@ $C:y^2=f(x)$ 이고 $\deg f=2g+1$ 이며 $f$ 는 분리가능하고 $p\ne2$ 라 
 3. $\sigma(x)=x^p$ 와 $\sigma(y)=y^p(1+\delta)^{1/2}$ 를 $p^N$ 정밀도로 전개한다.
 4. 각 기저원소의 상을 환원 공식으로 기저의 일차결합으로 되돌려 행렬 $M$ 을 얻는다.
 5. $\det(1-TM)$ 의 계수를 정수로 복원한다. $P(T)$ 가 나온다.
+
+3 단계의 $\delta$ 는 $\sigma(y)^2=f^\sigma(x^p)$ 에서 나온다. 이 식을 $y^{2p}$ 로 묶으면
+
+$$
+\sigma(y)=y^p\Big(1+\underbrace{\frac{f^\sigma(x^p)-f(x)^p}{y^{2p}}}\_{=\thinspace\delta}\Big)^{1/2}
+=y^p\sum_{k\ge0}\binom{1/2}{k}\delta^k
+$$
+
+이고, $\delta$ 의 분자가 $p$ 로 나뉘므로 $\delta$ 가 $p$ 진으로 작아 급수가 수렴한다. 정밀도 $p^N$ 만 필요하므로 $k$ 를 $O(N)$ 에서 잘라 유한 합으로 만든다.
+
+4 단계에서 $\sigma(x^i\thinspace dx/y)$ 는 기저가 아닌 $x^k\thinspace dx/y^m$ 꼴을 낸다. 이것을 기저로 되돌리는 **환원**은 $d(x^ay^b)$ 가 코호몰로지에서 $0$ 이라는 관계식을 반복 적용하는 선형대수다.
 
 $\mathbb F_{p^n}$ 위에서 비용은 대략 $\tilde O(p\thinspace n^3g^4)$ 다. $p$ 에 선형인 것이 이 알고리즘의 한계이자 성격이다.
 
