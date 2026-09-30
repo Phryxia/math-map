@@ -32,73 +32,9 @@ $$
 
 # 직관
 
-## 이중 잉여류와 격자
+$\mathcal H(G,K)$ 의 원소는 유한개의 이중 잉여류 $KgK$ 의 특성함수의 선형결합이고 곱은 합성곱이다. $\mathrm{vol}(K)=1$ 로 정규화하면 받침이 유한개의 왼쪽 잉여류 $gK$ 로 쪼개져 적분이 유한합이 된다. $gK\mapsto L_g=g\mathbb Z_p^n$ 이 $G/K$ 와 $\mathbb Q_p^n$ 의 격자 전체를 대응시키므로 두 특성함수의 합성곱값은 중간 격자의 개수이고, 초등인자마다 경우를 나누어 세면 곱이 나온다. 세기를 끝까지 해도 $T_mT_n=T_nT_m$ 인 이유는 나오지 않는다.
 
-$\mathcal H(G,K)$ 의 원소는 $f(k_1gk_2)=f(g)$ 인 콤팩트 받침 함수다. 받침이 콤팩트하고 양쪽 불변이므로, 이런 함수는 유한개의 이중 잉여류 $KgK$ 의 특성함수들의 선형결합이다. 곱은 합성곱이다.
-
-$$
-(f_1\ast f_2)(h)=\int_G f_1(g)\thinspace f_2(g^{-1}h)\thinspace dg,
-\qquad \mathrm{vol}(K)=1
-$$
-
-$\mathrm{vol}(K)=1$ 로 정규화하면 $f_1$ 의 받침이 유한개의 왼쪽 잉여류 $gK$ 로 쪼개지므로 적분이 유한합이 된다. 합성곱의 구조상수는 잉여류를 세는 정수이고, 고전적 Hecke 작용소의 격자 세기 정의가 여기에 대응한다.
-
-$gK\mapsto L_g=g\mathbb Z_p^n$ 이 $G/K$ 와 $\mathbb Q_p^n$ 의 격자 전체의 일대일 대응이고, $KgK$ 는 $\mathbb Z_p^n$ 에 대한 $L_g$ 의 **초등인자**로 결정된다. 두 함수의 합성곱값이 중간 격자의 개수다.
-
-$$
-(1_{K\alpha K}\ast 1_{K\beta K})(h)
-=\char35{}\bigl\lbrace\thinspace M \thickspace:\thickspace \mathbb Z_p^n\supset M \text{ 가 } \alpha \text{ 형},\thickspace
-M\supset L_h \text{ 가 } \beta \text{ 형}\thinspace\bigr\rbrace
-$$
-
-## Gelfand 의 논법
-
-가환성은 전치로 증명된다. 전치 $g\mapsto{}^{t}g$ 는 $G$ 의 반자기동형이고 $K$ 를 보존하므로 $\mathcal H(G,K)$ 위에 반자기동형
-
-$$
-f^\iota(g)=f({}^tg)
-$$
-
-를 유도한다. 반자기동형이므로 $(f_1\ast f_2)^\iota=f_2^\iota\ast f_1^\iota$ 다. 그런데 **Cartan 분해**가
-
-$$
-G=\bigsqcup_{\lambda_1\ge\cdots\ge\lambda_n}K\thinspace p^{\lambda}K,
-\qquad p^\lambda=\mathrm{diag}(p^{\lambda_1},\dots,p^{\lambda_n})
-$$
-
-이고 $p^\lambda$ 는 대각행렬이라 ${}^tp^\lambda=p^\lambda$ 다. 곧 $\iota$ 는 모든 이중 잉여류를 제자리에 두므로 항등사상이다. 항등인 반자기동형이 있으면
-
-$$
-f_1\ast f_2=(f_1\ast f_2)^\iota=f_2^\iota\ast f_1^\iota=f_2\ast f_1
-$$
-
-이다. 고전적으로 격자 계산으로 확인하던 $T_mT_n=T_{mn}$ 같은 식이 대각행렬이 대칭이라는 관찰에서 나온다.
-
-## 대칭 다항식과의 대응
-
-Cartan 분해로 $\mathcal H(G,K)$ 의 기저는 **지배적 쌍대지표** $\lambda\in X_\ast(T)^+$ 로 매겨진다. $\mathrm{GL}\_n$ 이면 $\lambda_1\ge\cdots\ge\lambda_n$ 인 정수열이다.
-
-한편 $\widehat G=\mathrm{GL}\_n(\mathbb C)$ 의 기약표현도 최고무게 $\lambda_1\ge\cdots\ge\lambda_n$ 로 매겨진다. 표현환 $R(\widehat G)$ 의 기저가 그 지표 $\chi_\lambda$ 들이다.
-
-$$
-\lbrace\thinspace KgK\thinspace\rbrace\thickspace\longleftrightarrow\thickspace X_\ast(T)^+\thickspace\longleftrightarrow\thickspace\lbrace\thinspace\text{기약표현}\thinspace\rbrace
-$$
-
-Satake 의 정리로 기저의 대응을 넘어 곱셈까지 일치한다. 격자를 세서 얻은 구조상수가 복소 표현의 [텐서곱](tensor-products.md) 분해 계수와 같은 환을 만든다.
-
-대응은 기저를 기저로 보내지 않는다. $1_{K p^\lambda K}$ 의 상은 $\chi_\lambda$ 에 더 낮은 항들이 $p^{-1}$ 배로 섞인 꼴이다. 삼각행렬이므로 동형이라는 결론은 그대로다.
-
-## Satake 변환
-
-동형을 구현하는 사상은 상수항이다. Borel 부분군 $B=TN$ 에 대해
-
-$$
-\mathcal S(f)(t)=\delta_B(t)^{1/2}\int_N f(tn)\thinspace dn
-$$
-
-로 두면 $\mathcal S(f)$ 는 $T/T(\mathbb Z_p)\cong X_\ast(T)$ 위의 함수, 곧 Laurent 다항식이다. 여기서 $\delta_B$ 는 모듈러 지표다.
-
-$\delta_B^{1/2}$ 인자가 없으면 $\mathcal S(f)$ 가 Weyl 군 $W$ 불변이 아니다. 반쪽 지표를 곱해야 $N$ 방향 적분에서 생긴 비대칭이 상쇄된다. 이 인자는 유도표현 $\mathrm{Ind}\_B^G\chi$ 의 정규화와 같고, $W$ 불변성은 $\mathrm{Ind}\_B^G\chi\cong\mathrm{Ind}\_B^G(w\chi)$ 에 대응한다.
+전치를 쓰면 경우를 나누지 않는다. 전치 $g\mapsto{}^tg$ 는 $G$ 의 반자기동형이고 $K$ 를 보존하므로 $f^\iota(g)=f({}^tg)$ 가 $\mathcal H(G,K)$ 의 반자기동형이고 $(f_1\ast f_2)^\iota=f_2^\iota\ast f_1^\iota$ 다. Cartan 분해로 모든 이중 잉여류가 대각행렬 $p^\lambda=\mathrm{diag}(p^{\lambda_1},\dots,p^{\lambda_n})$ 을 대표원으로 갖고 ${}^tp^\lambda=p^\lambda$ 이므로, $\iota$ 는 이중 잉여류를 모두 제자리에 두어 항등사상이다. 그러면 $f_1\ast f_2=(f_1\ast f_2)^\iota=f_2^\iota\ast f_1^\iota=f_2\ast f_1$ 이고, 격자 세기로 확인하던 가환성이 대각행렬이 대칭이라는 관찰에서 나온다.
 
 # 정의
 
@@ -112,7 +48,7 @@ $$
 \mathcal H(G,K)=\bigl\lbrace\thinspace f:G\to\mathbb C \thickspace\bigm|\thickspace f \text{ 는 콤팩트 받침},\thickspace f(k_1gk_2)=f(g)\thinspace\bigr\rbrace
 $$
 
-이고 단위원이 $1_K$ 다.
+이고 단위원이 $1_K$ 다. 합성곱은 $(f_1\ast f_2)(h)=\int_G f_1(g)\thinspace f_2(g^{-1}h)\thinspace dg$ 다.
 
 **Cartan 분해** $G=\bigsqcup_{\lambda\in X_\ast(T)^+}K\lambda(\varpi)K$ 에서 $\lbrace 1_{K\lambda(\varpi)K}\rbrace$ 가 $\mathbb C$ 기저를 이룬다. $\varpi$ 는 소원, $X_\ast(T)$ 는 극대 분열 원환면의 쌍대지표 격자, $X_\ast(T)^+$ 는 고정한 Borel 에 대해 지배적인 것들이다.
 
@@ -126,13 +62,15 @@ $$
 \mathcal S(f)(\lambda)=\delta_B(\lambda(\varpi))^{1/2}\int_N f(\lambda(\varpi)n)\thinspace dn
 $$
 
+$\delta_B^{1/2}$ 인자가 없으면 $\mathcal S(f)$ 가 Weyl 군 불변이 아니다. 반쪽 지표를 곱해야 $N$ 방향 적분에서 생긴 비대칭이 상쇄된다. 이 인자는 유도표현 $\mathrm{Ind}\_B^G\chi$ 의 정규화와 같고, $W$ 불변성은 $\mathrm{Ind}\_B^G\chi\cong\mathrm{Ind}\_B^G(w\chi)$ 에 대응한다.
+
 > **정리 (Satake, 1963).** $\mathcal S$ 는 $\mathbb C$ 대수의 동형
 > $$
 > \mathcal H(G,K)\thickspace\xrightarrow{\ \sim\ }\thickspace\mathbb C[X_\ast(T)]^{W}
 > $$
 > 이다. $W$ 는 Weyl 군이다. 특히 $\mathcal H(G,K)$ 는 가환이다.[^1]
 
-쌍대군 $\widehat G$ 는 $G$ 의 근계를 뒤집어 만든 복소 환원군이고, $X_\ast(T)=X^\ast(\widehat T)$ 다. 그래서 오른쪽은 $\widehat G$ 의 표현환이다.
+쌍대군 $\widehat G$ 는 $G$ 의 근계를 뒤집어 만든 복소 환원군이고, $X_\ast(T)=X^\ast(\widehat T)$ 다. 그래서 오른쪽은 $\widehat G$ 의 표현환이고, 곱은 표현의 [텐서곱](tensor-products.md)이다.
 
 $$
 \mathbb C[X_\ast(T)]^W=\mathbb C[X^\ast(\widehat T)]^W=R(\widehat G)\otimes\mathbb C
@@ -206,7 +144,15 @@ $$
 
 이다. $m=1$ 에서만 계수가 $p+1$ 이고 그 뒤로는 $p$ 이며, 고전적 Hecke 관계식 $T_pT_{p^m}=T_{p^{m+1}}+p^{k-1}T_{p^{m-1}}$ 의 무게 정규화가 여기에 대응한다.
 
-구조상수는 격자를 세어 구한다. $\mathbb Z_p^2$ 의 지표 $p^n$ 부분격자는 Hermite 꼴 $\begin{pmatrix}p^i&b\cr 0&p^{n-i}\end{pmatrix}$ 와 $0\le b\lt p^i$ 로 전부 열거되므로 유한 계산이다.
+구조상수는 격자를 세어 구한다.
+
+$$
+(1_{K\alpha K}\ast 1_{K\beta K})(h)
+=\char35{}\bigl\lbrace\thinspace M \thickspace:\thickspace \mathbb Z_p^n\supset M \text{ 가 } \alpha \text{ 형},\thickspace
+M\supset L_h \text{ 가 } \beta \text{ 형}\thinspace\bigr\rbrace
+$$
+
+여기서 $L_h=h\mathbb Z_p^n$ 이고 $\alpha$ 형은 $\mathbb Z_p^n$ 에 대한 초등인자가 $\alpha$ 와 같다는 뜻이다. $\mathbb Z_p^2$ 의 지표 $p^n$ 부분격자는 Hermite 꼴 $\begin{pmatrix}p^i&b\cr 0&p^{n-i}\end{pmatrix}$ 와 $0\le b\lt p^i$ 로 전부 열거되므로 유한 계산이다.
 
 $(1,1)$ 의 계수가 $p+1$ 이고 $T(p)\ast T(p^m)$ 의 $(1,m)$ 계수가 $p$ 다. 이렇게 얻은 구조상수는 Satake 변환이 옮기는 대칭 다항식의 곱셈 규칙과 일치한다.
 
