@@ -28,47 +28,22 @@ $\mathrm{GL}\_n$ 의 자기동형 $L$ 함수 이론은 이 유일성 위에 서 
 
 # 직관
 
-## Fourier 전개의 일반화
-
-$\mathrm{GL}\_2$ 의 첨점형식을 아델 위의 함수 $\varphi$ 로 보면, $N\cong\mathbb G_a$ 이므로 $N(\mathbb Q)\backslash N(\mathbb A)$ 가 콤팩트 아벨군이라 지표로 전개할 수 있다.
+$\mathrm{GL}\_2$ 의 첨점형식을 아델 위의 함수 $\varphi$ 로 보면 $N\cong\mathbb G_a$ 이므로 $N(\mathbb Q)\backslash N(\mathbb A)$ 가 콤팩트 아벨군이고 지표로 전개할 수 있다.
 
 $$
 \varphi(g)=\sum_{\alpha\in\mathbb Q^\times}W_\varphi\negthinspace\left(\begin{pmatrix}\alpha&\cr&1\end{pmatrix}g\right)
 $$
 
-$W_\varphi$ 가 $\psi$ 성분이다. 첨점 조건이 $\alpha=0$ 항을 없애고, 나머지 항이 $\mathrm{GL}\_1(\mathbb Q)$ 의 작용으로 한 항에서 나온다. 첨점형식이 Whittaker 함수 하나로 복원된다.
+$W_\varphi$ 가 $\psi$ 성분이다. 첨점 조건이 $\alpha=0$ 항을 없애고, 나머지 항은 $\mathrm{GL}\_1(\mathbb Q)$ 의 작용으로 한 항에서 나온다. 첨점형식이 Whittaker 함수 하나로 복원된다.
 
-$n\ge3$ 이면 $N$ 이 비가환이라 지표만으로 전개가 끝나지 않고 다음 전개를 쓴다.
+$n\ge3$ 이면 $N$ 이 비가환이라 지표만으로 전개가 끝나지 않는다. $\mathrm{GL}\_1$ 자리에 $\mathrm{GL}\_{n-1}$ 을 놓은 다음 전개를 쓴다.
 
 $$
 \varphi(g)=\sum_{\gamma\in N_{n-1}(\mathbb Q)\backslash\mathrm{GL}\_{n-1}(\mathbb Q)}
 W_\varphi\negthinspace\left(\begin{pmatrix}\gamma&\cr&1\end{pmatrix}g\right)
 $$
 
-$\mathrm{GL}\_1$ 자리에 $\mathrm{GL}\_{n-1}$ 이 오고, 이 합이 Rankin–Selberg 펼치기의 재료다.
-
-## 유일성의 출처
-
-증명은 **Gelfand–Kazhdan 의 대합**에서 나온다. $g\mapsto{}^tg^{-1}$ 는 $\mathrm{GL}\_n$ 의 자기동형이고 $\pi\mapsto\tilde\pi$ 를 준다. $\mathrm{GL}\_n$ 에서는 모든 기약 표현이 반대표현과 같은 지표를 갖는다.
-
-$$
-\pi^\iota\cong\tilde\pi
-$$
-
-이 대칭이 Whittaker 범함수의 공간 위에 작용해 차원을 1 이하로 묶는다. [Satake 동형](satake-isomorphism.md)의 가환성도 전치라는 반자기동형 하나로 증명한다. 기하적으로는 $N\backslash G/N$ 의 궤도 문제이고, Bruhat 분해로 보면 지표 $\psi_N$ 이 남는 궤도가 하나뿐이다.
-
-## 분해와 Euler 곱
-
-전역 표현이 $\pi=\otimes'\_v\pi_v$ 이므로 전역 Whittaker 범함수는 국소 범함수들의 곱을 준다. 반대 방향에 유일성이 쓰인다. 국소 공간이 1 차원이면 전역 범함수는 국소 범함수들의 곱에 스칼라를 곱한 것뿐이다. 국소 공간이 2 차원이면 전역 범함수가 여러 조합으로 쪼개져 자리마다의 적분의 곱이라는 형태가 성립하지 않는다.
-
-국소 유일성에서 전역 Whittaker 함수의 분해가 나오고, 그 분해에서 적분의 Euler 곱이 나온다.
-
-## 유일성의 예외
-
-- **Whittaker 모형이 없는 첨점 표현.** $\mathrm{Sp}\_4$ 같은 군에는 비일반 첨점 표현이 있고 Saito–Kurokawa 올림이 그 예다.
-- **유일성의 실패.** 덮개군(metaplectic group)에서는 Whittaker 모형의 차원이 1 을 넘어 $L$ 함수 이론이 미묘해진다.
-
-대안으로 Bessel 모형, Fourier–Jacobi 모형, Shalika 모형이 쓰이고 각 모형의 유일성이 그에 맞는 적분 표현을 낳는다.
+계수 자리에 수 대신 함수가 오고, 이 합이 Rankin–Selberg 적분 펼치기의 재료다.
 
 # 정의
 
@@ -101,6 +76,10 @@ $$
 # 성질
 
 **정리 (Gelfand–Kazhdan, Shalika).** $\mathrm{GL}\_n(F)$ 의 기약 허용 표현 $\pi$ 에 대해 $\dim\mathrm{Hom}\_{N_n(F)}(\pi,\psi_N)\le1$ 이다. 첨점 자기동형 표현은 모두 일반적이고, 전역 Whittaker 함수는 국소 Whittaker 함수의 곱으로 분해된다.[^1]
+
+**증명의 요지.** $g\mapsto{}^tg^{-1}$ 는 $\mathrm{GL}\_n$ 의 자기동형이고 $\pi\mapsto\pi^\iota$ 를 준다. Gelfand–Kazhdan 은 모든 기약 표현이 $\pi^\iota\cong\tilde\pi$ 를 만족함을 보였고, 이 대칭이 Whittaker 범함수의 공간에 작용해 차원을 1 이하로 묶는다. 기하적으로는 $N\backslash G/N$ 의 궤도 문제이고, Bruhat 분해에서 지표 $\psi_N$ 이 살아남는 궤도가 하나뿐이다. $\square$
+
+유일성이 분해의 한 방향에 쓰인다. 전역 표현이 $\pi=\otimes'\_v\pi_v$ 이므로 국소 범함수들의 곱은 언제나 전역 범함수를 주지만, 국소 공간이 1 차원일 때만 전역 범함수가 그 곱에 스칼라를 곱한 것으로 끝난다. 국소 공간이 2 차원이면 전역 범함수가 여러 조합으로 쪼개져 자리마다의 적분의 곱이라는 형태가 성립하지 않는다.
 
 ## 유한군 판본
 
@@ -145,6 +124,15 @@ Whittaker 함수가 첨점형식을 복원하므로 두 첨점형식의 Whittake
 $\pi$ 와 $\pi'$ 가 $\mathrm{GL}\_n$ 의 첨점 자기동형 표현이고 거의 모든 자리에서 $\pi_v\cong\pi'\_v$ 이면 $\pi\cong\pi'$ 다.
 
 이것이 **강한 중복도 1**(Jacquet–Shalika)이고, $\mathrm{GL}\_n$ 의 [자기동형 스펙트럼](speh-representations.md)에 중복이 없다는 진술이다. 다른 군에서는 거짓이다. 그 실패를 조직한 것이 Arthur 의 $L$ 꾸러미 이론이다.
+
+## 다른 군의 모형
+
+$\mathrm{GL}\_n$ 밖에서는 위 정리의 두 부분이 각각 깨진다.
+
+- $\mathrm{Sp}\_4$ 에는 Whittaker 모형을 갖지 않는 첨점 표현이 있고 Saito–Kurokawa 올림이 그 예다.
+- 덮개군(metaplectic group)에서는 Whittaker 모형의 차원이 1 을 넘는다.
+
+대안으로 Bessel 모형, Fourier–Jacobi 모형, Shalika 모형이 쓰이고, 각 모형의 유일성이 그에 맞는 적분 표현을 낳는다.
 
 # 활용
 
