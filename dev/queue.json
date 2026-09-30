@@ -1,15 +1,23 @@
 {
   "version": 1,
-  "savedAt": "2026-09-30T05:06:20.162Z",
-  "nextSeq": 1487,
+  "savedAt": "2026-09-30T09:06:39.661Z",
+  "nextSeq": 1489,
   "items": [
     {
-      "id": "5621579d",
-      "title": "직관 절이 두 문단을 넘는 문서 훑기 (9차)",
+      "id": "ab8bbe89",
+      "title": "직관 절이 두 문단을 넘는 문서 훑기 (10차)",
       "priority": 50,
-      "note": "8차를 이어 2026-09-30 두 번째 회차에 열다섯 문서를 고쳤다. poitou-tate(c9880da, 276->236), sinkhorn(191->156), schellekens-list(151->128), vandiver-conjecture(145->110), selberg-trace-formula(183->160), whittaker-models(169->155), eisenstein-series(200->188), kedlaya-algorithm(193->170), knot-invariants(157->137), modular-symbols(194->170), godement-jacquet(191->166), iwasawa-main-conjecture(209->177), herbrand-ribet(173->138), boolean-fourier(169->159), khovanov-homology(173->156).\n\n하위 절 넷짜리가 19 개 남았고 직관 줄 수로 fontaine-mazur 46, class-field-theory 45, bernoulli-numbers 45, reshetikhin-turaev 44, gamma-function 43, eisenstein-ideal 43, unique-games 41, stickelberger 40 순이다. 후보는 다음으로 센다.\nfor f in docs/*.md; do n=$(awk '/^# 직관/{i=1;next} /^# (정의|성질|활용|연관 문서)/{i=0} i && /^## /{c++} END{print c+0}' \"$f\"); [ \"$n\" -ge 4 ] && echo \"$n $(basename $f .md)\"; done | sort -rn\n\n열다섯 문서에서 반복된 것. 직관의 하위 절 넷은 대개 (1) 개요가 결론만 말한 계산 하나, (2) 정의 절과 겹치는 정의, (3) 성질 절이 정리로 진술한 것의 증명 요지, (4) 성질 절 표나 목록과 겹치는 요약이었다. 남기는 것은 (1) 하나이고 (3) 은 성질 절의 '증명의 요지' 문단으로, (2) 는 정의 절로 옮긴다. (4) 는 지운다.\n\n정의 절이 정리만 진술하고 증명 요지가 없는 문서가 많았다(selberg-trace-formula 의 자기동형 핵 대각합, herbrand-ribet 의 Ribet 구성, eisenstein-series 의 함수방정식). 직관에서 옮겨 온 것이 그 빈자리를 메웠다.\n\n직관 절을 줄이면 본문 링크가 함께 사라진다. kedlaya-algorithm 에서 de-rham-cohomology 링크가 0 개가 됐고 정의 절 첫 등장에 복원했다. 거꾸로 옮긴 문단이 개요에 이미 있는 링크를 중복시키기도 했다(herbrand-ribet 의 galois-representations, boolean-fourier 의 pcp-theorem, whittaker-models 의 rankin-selberg). 커밋 전에 grep -c '<id>.md' 로 본문 링크가 1 회인지 센다.\n\n각주 참조도 같이 확인한다. knot-invariants 의 [^2] 는 직관에만 있어서 정의 절 Kauffman 괄호 규칙으로 옮겼고, khovanov-homology 의 [^2] 는 직관에 남겼다.\n\n지운 것 가운데 판단이 필요했던 둘. schellekens-list 의 '단순 성분 둘 이하 조합 열셋' 목록은 탐색 결과이고 문서가 스스로 불완전을 인정했으므로 지웠다. khovanov-homology 의 정육면체 mermaid 는 010 -> 101 처럼 두 좌표가 동시에 바뀌는 간선이 있어 틀렸고 문장으로 대체했다.\n\n헤딩 규칙 grep 에 '요지', '논법의 요지' 가 걸린다. 'Euler 계 논법의 요지' -> 'Euler 계 논법', 'Rubin 증명의 요지' -> 'Rubin 의 증명' 으로 고쳤다. 문단 안의 '**증명의 요지.**' 는 헤딩이 아니므로 걸리지 않는다.",
-      "createdAt": "2026-09-30T05:05:42.032Z",
-      "seq": 1484
+      "note": "9차를 이어 2026-09-30 세 번째 회차에 스물다섯 문서를 고쳤다. 하위 절 넷짜리 19 개(fontaine-mazur, class-field-theory, bernoulli-numbers, reshetikhin-turaev, gamma-function, eisenstein-ideal, unique-games, stickelberger, selmer-tate-shafarevich, kolyvagin-systems, mellin-transform, p-adic-numbers, variational-autoencoder, domain-theory, birch-swinnerton-dyer, newton-polygon, etale-fundamental-group, riemann-integral, dedekind-domains)를 전부 처리해 이 등급이 0 개가 됐고, 셋짜리 가운데 dwork-rationality, lie-algebras, local-class-field-theory, abstract-interpretation, weyl-character-formula 다섯을 더 했다.\n\n다음 후보는 하위 절 셋짜리이고 직관 줄 수로 chern-simons 52, mock-modular-forms 49, lie-groups 49, group-extensions 47, canonical-height 47, weil-representation 46, sen-theory 45 순이다. 다음으로 센다.\nfor f in docs/*.md; do n=$(awk '/^# 직관/{i=1;next} /^# (정의|성질|활용|연관 문서)/{i=0} i && /^## /{c++} END{print c+0}' \"$f\"); l=$(awk '/^# 직관/{i=1;next} /^# (정의|성질|활용|연관 문서)/{i=0} i' \"$f\" | wc -l); [ \"$n\" -eq 3 ] && echo \"$l $(basename $f .md)\"; done | sort -rn\n\n이번 회차에 반복된 것. 하위 절 넷은 대개 (1) 독자가 손으로 따라갈 수 있는 계산 하나, (2) 정의 절과 겹치는 정의, (3) 성질 절이 정리로 진술한 것의 증명 요지, (4) 개요가 이미 말한 요약이었다. (1) 을 두 문단으로 남기고 (3) 은 해당 정리 바로 아래 '증명의 착상' 문단으로, (2) 는 정의 절로 옮기고 (4) 는 지웠다.\n\n정의 절에 정의가 없던 경우가 둘 있었다. birch-swinnerton-dyer 는 $L(E,s)$ 의 Euler 곱이 직관 절에만 있어 '## $L$ 함수' 절을 새로 만들었고, dwork-rationality 는 대각합 공식과 $L$ 함수 곱 표현이 직관에만 있어 '## 대각합 공식' 절을 만들었다. 직관을 줄이기 전에 그 절의 식이 정의 절에 있는지 먼저 본다.\n\n본문 링크가 직관에만 있던 경우가 많았다. class-field-theory 의 group-representations 와 galois-representations, riemann-integral 의 measure, birch-swinnerton-dyer 의 lattices, kolyvagin-systems 의 poitou-tate 와 elliptic-curves 가 그랬고 전부 옮길 절을 찾아 복원했다. grep -c '<id>.md' 로 1 회인지 센다.\n\n약어도 같다. eisenstein-ideal 의 CM 은 직관에서 풀렸는데 그 문단을 지우면 성질 절이 첫 등장이 되어 거기서 다시 풀었다.\n\n지운 mermaid 둘. local-class-field-theory 의 것은 확대의 탑에 K^× 분해와 f 의 조건까지 섞어 놓은 나열형이었고, class-field-theory 의 대응 구조 그림은 정의 절 '유체론의 세 정리' 가 문장으로 말하는 것과 같았다.\n\n제목 규칙. bernoulli-numbers 의 제목이 'Bernoulli 수와 von Staudt-Clausen 정리' 라 파일명이 가리키는 개념으로 좁히고 다른 문서 6 개의 링크 표시도 맞췄다.\n\n헤딩 grep 에 '소수 정리의 요지' 가 걸려 '소수 정리의 증명' 으로 고쳤다. 8차 note 의 '요지' 건과 같다.\n\n수식 검사에서 unique-games 의 $99\\%$ 가 걸렸다. 수식 안 백분율은 수식 밖 텍스트로 쓴다.",
+      "createdAt": "2026-09-30T09:06:13.439Z",
+      "seq": 1487
+    },
+    {
+      "id": "4da47857",
+      "title": "제목이 'A와 B' 꼴인 문서 훑기",
+      "priority": 30,
+      "note": "4절 제목 규칙. bernoulli-numbers 를 'Bernoulli 수' 로 좁히면서 같은 꼴을 여럿 봤다. eisenstein-ideal('Eisenstein 아이디얼과 Mazur 의 비틀림점 정리'), unique-games('유일게임 추측과 2-to-2 정리'), selmer-tate-shafarevich('Selmer 군과 Tate-Shafarevich 군'), dwork-rationality('Dwork 의 유리성 정리와 지수합'), lie-algebras 이웃의 몇몇. 규칙의 예외(정리 이름과 그 정리가 답하는 개념)에 드는지 하나씩 판정하고, 아니면 파일명의 개념으로 좁히거나 8절대로 나눈다. 후보는 grep -l '^# .*[와과] ' docs/*.md 로 찾는다.",
+      "createdAt": "2026-09-30T09:06:13.681Z",
+      "seq": 1488
     },
     {
       "id": "b4810afe",
