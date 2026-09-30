@@ -16,8 +16,6 @@ $$
 
 # 직관
 
-## 감마 인자와 Euler 인자
-
 고전적 서술에서 $\zeta(s)$ 의 Euler 곱은 소수에서 오고 완비화에 붙는 $\pi^{-s/2}\Gamma(s/2)$ 는 해석에서 온다. 아델로 올라가면 둘이 같은 식의 값이다.
 
 각 자리 $v$ 에서 국소 zeta 적분을 같은 모양으로 정의한다.
@@ -34,18 +32,6 @@ Z_\infty(e^{-\pi x^2},s)=2\int_0^\infty e^{-\pi x^2}x^{s}\frac{dx}{x}=\pi^{-s/2}
 $$
 
 왼쪽은 Euler 인자, 오른쪽은 감마 인자다. $\zeta(s)$ 는 자리를 하나 빼먹은 곱이고 $\Lambda(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 가 모든 자리에 걸친 곱이므로, 완비 zeta 함수 쪽이 대칭적이다.
-
-## 곱군 위의 Fourier 변환
-
-Mellin 변환 $\int_0^\infty f(t)t^s\thinspace dt/t$ 에서 $dt/t$ 는 곱군 $\mathbb R_{\gt 0}$ 의 Haar 측도이고 $t\mapsto t^s$ 는 그 군의 준지표다. Mellin 변환은 $\mathbb R_{\gt 0}$ 위의 Fourier 변환이다.
-
-Tate 의 zeta 적분은 이 관찰을 이델류군으로 일반화한 것이다. $\mathbb R_{\gt 0}$ 자리에 $K^\times\backslash\mathbb A_K^\times$ 를 놓고, $t^s$ 자리에 Hecke 지표 $\chi\cdot|\cdot|^s$ 를 놓는다. Dirichlet 지표로 잘게 쪼개던 작업과 Mellin 변환이 하나의 조화해석으로 합쳐진다.
-
-## Poisson 합공식과 함수방정식
-
-적분을 $|x|\_{\mathbb A}=t$ 로 잘라 본다. $t\ge1$ 쪽은 $f$ 의 급감 때문에 모든 $s$ 에서 수렴해 정함수를 준다. 문제는 $t\lt 1$ 쪽인데, 여기에 Poisson 합공식을 쓰면 $t$ 를 $1/t$ 로 뒤집어 $t\ge1$ 쪽 적분으로 되돌릴 수 있다. 되돌린 결과에서 $f$ 가 $\hat f$ 로, $s$ 가 $1-s$ 로 바뀐다. 그것이 함수방정식의 전부다.
-
-$K=\mathbb Q$ 이고 $f$ 가 Gauss 함수이면 Poisson 합공식이 theta 변환식이 되고, 위 계산이 Riemann 의 증명과 같아진다.
 
 # 정의
 
@@ -70,6 +56,12 @@ $$
 $$
 
 무한 자리에서 $\mathcal S(K_v)$ 는 보통의 급감 매끄러운 함수, 유한 자리에서는 국소상수이고 콤팩트 받침인 함수다. 유한 자리의 "매끄러움" 은 국소상수성이다. 이 공간은 Fourier 변환에 대해 닫혀 있고, $\widehat{\mathbf 1_{\mathcal O_v}}=\mathbf 1_{\mathcal O_v}$ 가 거의 모든 자리에서 성립해 무한 곱이 유한 곱으로 줄어든다.
+
+## 곱군 위의 Fourier 변환
+
+Mellin 변환 $\int_0^\infty f(t)t^s\thinspace dt/t$ 에서 $dt/t$ 는 곱군 $\mathbb R_{\gt 0}$ 의 Haar 측도이고 $t\mapsto t^s$ 는 그 군의 준지표다. Mellin 변환은 $\mathbb R_{\gt 0}$ 위의 Fourier 변환이다.
+
+Tate 의 zeta 적분은 이 관찰을 이델류군으로 일반화한 것이다. $\mathbb R_{\gt 0}$ 자리에 $K^\times\backslash\mathbb A_K^\times$ 를 놓고, $t^s$ 자리에 Hecke 지표 $\chi\cdot|\cdot|^s$ 를 놓는다. Dirichlet 지표로 잘게 쪼개던 작업과 Mellin 변환이 하나의 조화해석으로 합쳐진다.
 
 ## Hecke 지표와 zeta 적분
 
