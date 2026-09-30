@@ -14,56 +14,9 @@ $A$ 는 $G$ 주다발 위의 접속, 곧 [Lie 대수](lie-algebras.md) 값을 �
 
 # 직관
 
-## 특성류의 원시함수
+3 차원 다양체 $M$ 에서 계량을 쓰지 않고 접속의 불변량을 만들려고 한다. 계량 없이 적분되는 것은 미분형식이고 $M$ 에서 적분되는 것은 3 형식이다. 접속 $A$ 와 곡률 $F=dA+A\wedge A$ 로 짜는 게이지 불변식 가운데 차수가 가장 낮은 것은 4 형식 $\mathrm{tr}(F\wedge F)$ 이고, 이것은 $M$ 에서 적분되지 않는다.
 
-곡률 $F=dA+A\wedge A$ 에 대해 $\mathrm{tr}(F\wedge F)$ 는 닫힌 4 형식이고 그 코호몰로지류가 2 차 Chern 류다. 닫혀 있으면 국소적으로 완전하고, 계산하면 다음이 된다.
-
-$$
-\mathrm{tr}(F\wedge F)=d\thinspace\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)
-$$
-
-Chern–Simons 3 형식은 4 차원 특성류의 원시함수다. 다발이 자명한 영역에서 $A$ 가 전역적으로 정의되므로 이 원시함수를 적을 수 있다.
-
-경계가 있는 4 차원 다양체 $W$ 로 $\partial W=M$ 이라 두면 Stokes 정리가
-
-$$
-\mathrm{CS}(A)=\frac1{8\pi^2}\int_W\mathrm{tr}(F\wedge F)
-$$
-
-를 준다. $W$ 를 고르는 방법이 여럿이고 두 선택의 차이가 닫힌 4 차원 다양체 위의 $\mathrm{tr}(F\wedge F)$ 적분, 곧 2 차 Chern 수이므로 정수다. 애매함이 정수뿐이다.
-
-## 게이지 변환과 권선수
-
-게이지 변환 $A\mapsto g^{-1}Ag+g^{-1}dg$ 에서 작용은 다음과 같이 변한다[^2].
-
-$$
-\mathrm{CS}(A^g)=\mathrm{CS}(A)-\frac1{24\pi^2}\int_M\mathrm{tr}\big((g^{-1}dg)^{\wedge3}\big)
-$$
-
-마지막 항은 $A$ 를 포함하지 않고 사상 $g:M\to G$ 만 본다. $G=\mathrm{SU}(2)\cong S^3$ 이면 이것은 $g$ 의 권선수 $[g]\in\pi_3(\mathrm{SU}(2))=\mathbb Z$ 다.
-
-$$
-\mathrm{CS}(A^g)=\mathrm{CS}(A)-\deg(g)
-$$
-
-$\mathrm{CS}(A)$ 는 실수로서는 게이지 불변이 아니고 $\mathbb R/\mathbb Z$ 값으로만 잘 정의된다. 물리에서 쓰는 것은 $e^{2\pi ik\thinspace\mathrm{CS}(A)}$ 이므로
-
-$$
-e^{2\pi ik\thinspace\mathrm{CS}(A^g)}=e^{2\pi ik\thinspace\mathrm{CS}(A)}e^{-2\pi ik\deg(g)}
-$$
-
-이고 $k$ 가 정수이면 완전히 게이지 불변이다. 레벨이 정수여야 하는 이유가 $\pi_3(G)=\mathbb Z$ 이며, 양자화가 Lie 군의 위상에서 강제된다.
-
-
-## 위상적 불변성
-
-작용에 계량이 없으므로 분배함수도 계량에 의존하지 않는다. Wilson 고리
-
-$$
-W_R(K)=\mathrm{tr}\_R\thinspace\mathcal P\exp\oint_KA
-$$
-
-의 기댓값이 [매듭 불변량](knot-invariants.md)을 주고, 계량이 없으므로 $K$ 를 연속적으로 움직여도 값이 변하지 않아 동위류의 불변량이 된다. Witten 이 Jones 다항식을 이렇게 설명했다.
+$\mathrm{tr}(F\wedge F)$ 는 닫혀 있으므로 $A$ 가 전역적으로 정의되는 곳에서 원시함수를 갖는다. 계산하면 원시함수가 $\mathrm{tr}(A\wedge dA+\tfrac23A\wedge A\wedge A)$ 이고, 이 3 형식을 $M$ 에서 적분한 것이 Chern–Simons 작용이다. 원시함수는 $F$ 가 아니라 $A$ 로 적혀 있어 게이지 변환에서 값이 변하고, 변하는 양은 정수다.
 
 # 정의
 
@@ -107,7 +60,33 @@ $$
 
 분모가 $p$ 인 유리수만 나온다. $M$ 이 유리 [호몰로지](homology.md) 구면이면 CS 값은 언제나 유리수이고 쌍곡 다양체에서는 그렇지 않을 수 있다.
 
+## Wilson 고리
+
+매듭 $K\subset M$ 과 $G$ 의 표현 $R$ 에 대해 **Wilson 고리**는 $K$ 를 따르는 홀로노미의 대각합이다.
+
+$$
+W_R(K)=\mathrm{tr}\_R\thinspace\mathcal P\exp\oint_KA
+$$
+
+$\mathcal P\exp$ 는 경로순서 지수함수이고, $K$ 를 따라 $A$ 를 적분해 얻는 홀로노미를 뜻한다. 게이지 변환에서 홀로노미가 켤레로 변하므로 대각합은 변하지 않는다.
+
 # 성질
+
+## 레벨 양자화
+
+> **정리.** 게이지 변환 $A\mapsto A^g=g^{-1}Ag+g^{-1}dg$ 에서 $\mathrm{CS}(A^g)-\mathrm{CS}(A)$ 는 정수이고, $G=\mathrm{SU}(2)$ 이면 그 값이 $-\deg(g)$ 다.
+
+증명은 직접 계산이다[^2].
+
+$$
+\mathrm{CS}(A^g)=\mathrm{CS}(A)-\frac1{24\pi^2}\int_M\mathrm{tr}\big((g^{-1}dg)^{\wedge3}\big)
+$$
+
+마지막 항은 $A$ 를 포함하지 않고 사상 $g:M\to G$ 만 본다. $G=\mathrm{SU}(2)\cong S^3$ 이면 그 적분이 $g$ 의 권선수 $\lbrack g\rbrack\in\pi_3(\mathrm{SU}(2))=\mathbb Z$ 와 같다.
+
+$\mathrm{CS}(A)$ 는 실수로서는 게이지 불변이 아니고 $\mathbb R/\mathbb Z$ 값으로만 정해진다. 물리에서 쓰는 것은 $e^{2\pi ik\thinspace\mathrm{CS}(A)}$ 이고 $k$ 가 정수이면 이것이 게이지 불변이다. 레벨이 정수여야 하는 이유가 $\pi_3(G)=\mathbb Z$ 이며, 양자화를 Lie 군의 위상이 강제한다.
+
+$\partial W=M$ 인 4 차원 다양체 $W$ 를 채우면 Stokes 정리가 $\mathrm{CS}(A)=\frac1{8\pi^2}\int_W\mathrm{tr}(F\wedge F)$ 를 준다. $W$ 를 고르는 방법이 여럿이고 두 선택의 차이는 닫힌 4 차원 다양체 위의 $\mathrm{tr}(F\wedge F)$ 적분, 곧 2 차 Chern 수이므로 정수다. 같은 정수 애매함이 이 표현에서도 나온다.
 
 ## Abel 판과 이음수
 
@@ -149,6 +128,10 @@ $M$ 에 경계가 있으면 $\delta\thinspace\mathrm{CS}$ 의 부분적분에서
 후자를 대신하는 것이 Reshetikhin–Turaev 의 대수적 구성이며, 물리가 예언한 답을 다른 방법으로 정의한 뒤 둘이 맞는지를 묻는 것이 Witten 점근 추측이다.
 
 # 활용
+
+## Jones 다항식
+
+작용에 계량이 없으므로 분배함수와 Wilson 고리 기댓값도 계량에 의존하지 않는다. $\langle W_R(K)\rangle$ 은 $K$ 를 연속적으로 움직여도 변하지 않아 동위류의 [매듭 불변량](knot-invariants.md)이 된다. $G=\mathrm{SU}(2)$ 와 2 차원 표현 $R$ 에서 이 기댓값이 $q=e^{2\pi i/(k+2)}$ 를 변수로 하는 Jones 다항식이고, Witten 이 Jones 다항식의 3 차원적 정의를 이렇게 주었다.
 
 ## Gauss 이음수 적분
 
