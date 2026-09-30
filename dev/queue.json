@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "savedAt": "2026-09-30T13:07:51.378Z",
-  "nextSeq": 1491,
+  "savedAt": "2026-09-30T17:09:36.828Z",
+  "nextSeq": 1493,
   "items": [
     {
-      "id": "0b598b62",
-      "title": "직관 절이 두 문단을 넘는 문서 훑기 (11차)",
+      "id": "e7d6f1bc",
+      "title": "직관 절이 두 문단을 넘는 문서 훑기 (12차)",
       "priority": 50,
-      "note": "10차(2026-09-30 네 번째 회차)에 하위 절 셋짜리 열일곱 문서를 고쳤다. chern-simons, lie-groups, mock-modular-forms, canonical-height, group-extensions, weil-representation, dyson-rank-crank, euler-maclaurin, sen-theory, borel-weil-bott, brauer-groups, deuring-correspondence, stationary-phase, theta-series, wasserstein-gradient-flow, witten-asymptotics, finite-simple-groups.\n\n하위 절 셋 이상이 남은 문서가 114 개다. 다음 후보는 직관 줄 수로 gan-gross-prasad 43, modular-forms 41, niemeier-lattices 41, optimal-transport 41, schubert-calculus 41, schur-multipliers 41, vertex-operator-algebras 41, adeles 40 순이다. 다음으로 센다.\nfor f in docs/*.md; do n=$(awk '/^# 직관/{i=1;next} /^# (정의|성질|활용|연관 문서)/{i=0} i && /^## /{c++} END{print c+0}' \"$f\"); l=$(awk '/^# 직관/{i=1;next} /^# (정의|성질|활용|연관 문서)/{i=0} i' \"$f\" | wc -l); [ \"$n\" -ge 3 ] && echo \"$n $l $(basename $f .md)\"; done | sort -k1,1rn -k2,2rn\n\n이번 회차에 반복된 것. 하위 절 셋은 대개 (1) 개념의 동기가 되는 계산 하나, (2) 정의 절에 있어야 할 대상의 정의, (3) 성질 절이 진술만 한 정리의 증명이었다. (1) 을 두 문단으로 남기고 (2) 는 정의 절에 절을 새로 만들어 옮기고 (3) 은 성질 절의 정리 아래 증명으로 옮겼다.\n\n정의 절에서 쓰는 대상의 정의가 직관에만 있던 경우가 많았다. mock-modular-forms 의 쌍곡 Laplace 작용소와 하강 작용소, canonical-height 의 순진한 높이 h, chern-simons 의 Wilson 고리, brauer-groups 의 사원수대수, group-extensions 의 인자집합, borel-weil-bott 의 점 작용, weil-representation 의 theta 범함수가 그랬다. 직관을 줄이기 전에 그 절의 기호가 정의 절에 있는지 먼저 본다.\n\n성질 절에 정리가 없던 경우도 있었다. canonical-height 는 Mordell-Weil 정리의 증명이 직관에만 있었고, chern-simons 는 레벨 양자화가, lie-groups 는 지수사상의 상과 BCH 공식이, group-extensions 는 Jordan-Holder 정리가, euler-maclaurin 은 공식의 유도가 그랬다.\n\n본문 링크가 직관에만 있던 경우가 거의 모든 문서에서 나왔다. euler-maclaurin 은 넷(fundamental-calculus, lattices, fourier-series, power-series), weil-representation 도 넷, witten-asymptotics 는 여섯이었다. grep -n '(<id>.md)' 로 위치를 먼저 확인하고 옮길 절을 정한다.\n\n지운 것. deuring-correspondence 의 mermaid 는 난이도 비대칭을 화살표로 늘어놓은 나열형이었고 바로 다음 하위 절이 같은 말을 문장으로 했다. dyson-rank-crank 의 crank 정의와 생성함수는 정의 절과 글자까지 같았다. canonical-height 의 37a1 곡선 수렴 수치 확인은 검증 과정이었다.\n\n헤딩 grep 에 finite-simple-groups 의 '증명의 요지' 가 걸려 '증명의 단계' 로 고쳤다. 8차, 9차 note 의 '요지' 건과 같다. 비유 grep 에 theta-series 의 '마법함수' 가 걸려 원어 'magic function' 으로 고쳤다. weil-representation 의 헤딩 'GGP 의 Fourier-Jacobi 경우' 는 본문에 GGP 약어가 없어 'Gan-Gross-Prasad 추측의 Fourier-Jacobi 경우' 로 풀었다.\n\n편집 방법. head/sed/tail 로 절을 잘라 붙이면 줄 하나가 사라지거나 빈 줄이 겹치는 일이 자주 났다. 재조립 뒤에는 grep -n '^#' 로 구조를 보고 경계마다 sed -n 으로 눈으로 확인한다.\n\n세션 시작에 git pull 이 'Need to specify how to reconcile divergent branches' 로 막혔다. 원인은 shallow clone(depth 50)이라 공통 조상을 못 찾은 것이었고 git fetch --unshallow 후 fast-forward 로 풀렸다.",
-      "createdAt": "2026-09-30T13:07:27.858Z",
-      "seq": 1490
+      "note": "11차(2026-09-30 다섯 번째 회차)에 하위 절 셋짜리 열여섯 문서를 고쳤다. gan-gross-prasad, modular-forms, niemeier-lattices, optimal-transport, schubert-calculus, schur-multipliers, vertex-operator-algebras, adeles, deformation-rings, fredholm-operators, galois-connections, gauss-sums, maass-forms, poisson-summation, shortest-paths, borcherds-products, category-o, overconvergent-modular-symbols.\n\n하위 절 셋 이상이 남은 문서가 96 개다. 다음 후보는 직관 줄 수로 fargues-scholze 36, fundamental-lemma 36, index-theorem 36, p-adic-l-function 36, hecke-operators 35, modular-curves 35, mv-cycles 35, sato-tate 35 순이다. 다음으로 센다.\nfor f in docs/*.md; do n=$(awk '/^# 직관/{i=1;next} /^# (정의|성질|활용|연관 문서)/{i=0} i && /^## /{c++} END{print c+0}' \"$f\"); l=$(awk '/^# 직관/{i=1;next} /^# (정의|성질|활용|연관 문서)/{i=0} i' \"$f\" | wc -l); [ \"$n\" -ge 3 ] && echo \"$n $l $(basename $f .md)\"; done | sort -k1,1rn -k2,2rn\n\n이번 회차에 반복된 것. 직관의 셋째 하위 절은 거의 언제나 성질 절이 이미 진술한 정리의 증명이었고, 둘째는 정의 절이 쓰는 대상의 정의였다. 세 절 가운데 남긴 것은 예외 없이 첫째, 곧 독자가 아는 것으로 실제 계산을 해 보이는 절이었다. gan-gross-prasad 의 U(4) 분지 계산, modular-forms 의 격자 정규화, niemeier-lattices 의 무게 12 theta, optimal-transport 의 Monge 실행불가능 예, schubert-calculus 의 4 직선, schur-multipliers 의 코사이클, adeles 의 역극한, fredholm-operators 의 이동 작용소, gauss-sums 의 Fourier 고유벡터, poisson-summation 의 주기화, shortest-paths 의 완화 점화식이 그랬다.\n\n옮긴 자리. 정의 절에 절을 새로 만든 것이 gan-gross-prasad(모형), niemeier-lattices(근격자와 glue 부호), galois-connections(폐포 연산), borcherds-products(정규화된 theta 올림)다. 성질 절에 새 절을 만든 것이 schubert-calculus(sigma_1 의 거듭제곱), schur-multipliers(Hopf 공식), vertex-operator-algebras(교환자 공식), optimal-transport(1 차원 정렬 해, 다른 거리와의 비교), maass-forms(고윳값의 목록), category-o(sl_2 의 블록), overconvergent-modular-symbols(올림의 반복 계산)다. 활용 절로 간 것은 modular-forms(약수 함수 항등식), poisson-summation(theta 변환식, 사다리꼴 규칙의 오차)다.\n\n중복이라 지운 것. adeles 의 Tate 합공식 문단은 성질 절 'Tate 논문과 함수방정식' 과 겹쳤고, fredholm-operators 의 지표 불변성과 감음수 절은 성질 절이 이미 전부 담고 있어 연결성분 링크와 호모토피 논증만 남겼다. gauss-sums 의 이차 Gauss 합 명시 식은 성질 절 넷째와 같았다. niemeier-lattices 의 Milnor 등스펙트럼 예는 활용 절에 있었다.\n\n본문 링크를 옮기다 놓칠 뻔한 것. 직관에만 있던 링크가 대부분의 문서에 있었다. modular-forms 의 lattices, adeles 의 fourier-series, fredholm-operators 의 connectedness, vertex-operator-algebras 의 generating-functions 와 theta-series, galois-connections 의 order-lattices, optimal-transport 의 manifolds 와 measure 가 그랬다. 절을 지우기 전에 grep -n '.md)' 로 먼저 확인한다.\n\n각주도 같다. maass-forms 에서 Selberg 추측 문단을 옮기자 각주 2 를 참조하는 본문이 사라져 Kim-Sarnak 문단에 다시 달았다. 절을 옮기면 그 절의 각주 참조가 어디로 갔는지 본다.\n\n발견한 오류. borcherds-products 의 직관 첫 절은 '지수가 모두 24 인 무한곱이 판별식 함수다.' 다음에 식 없이 'Ramanujan 의 tau 가 나온다.' 로 이어져 문장이 끊겨 있었다. Delta 의 무한곱 식을 넣어 복구했다. gan-gross-prasad 의 직관 표는 Bessel 을 짝수 여차원, Fourier-Jacobi 를 홀수 여차원으로 적어 정의 절과 반대였다. 표를 정의 절로 옮기며 여차원 열을 뺐다.\n\n편집 방법. sed 로 구간을 잘라 붙일 때 마지막 줄이 빈 줄인지 내용 줄인지에 따라 echo 를 넣고 빼야 한다. awk '/^$/{c++; if(c>1) print NR; next}{c=0}' 로 빈 줄 연속을, awk '/^#/{if(prev!=\"\") print NR; next}{prev=$0}' 로 헤딩 앞 빈 줄 누락을 조립 직후에 검사하면 두 번 돌리지 않는다. deformation-rings, galois-connections, shortest-paths, borcherds-products 에서 이 검사로 잡았다.",
+      "createdAt": "2026-09-30T17:08:56.562Z",
+      "seq": 1491
     },
     {
       "id": "4da47857",
@@ -18,6 +18,14 @@
       "note": "4절 제목 규칙. bernoulli-numbers 를 'Bernoulli 수' 로 좁히면서 같은 꼴을 여럿 봤다. eisenstein-ideal('Eisenstein 아이디얼과 Mazur 의 비틀림점 정리'), unique-games('유일게임 추측과 2-to-2 정리'), selmer-tate-shafarevich('Selmer 군과 Tate-Shafarevich 군'), dwork-rationality('Dwork 의 유리성 정리와 지수합'), lie-algebras 이웃의 몇몇. 규칙의 예외(정리 이름과 그 정리가 답하는 개념)에 드는지 하나씩 판정하고, 아니면 파일명의 개념으로 좁히거나 8절대로 나눈다. 후보는 grep -l '^# .*[와과] ' docs/*.md 로 찾는다.",
       "createdAt": "2026-09-30T09:06:13.681Z",
       "seq": 1488
+    },
+    {
+      "id": "357c8e93",
+      "title": "제목이 'A와 B' 꼴인 schur-multipliers 검토",
+      "priority": 30,
+      "note": "제목이 'Schur 곱셈자와 보편 중심확대' 이고 파일명이 schur-multipliers 다. 두 개념이 한 문서에 있고 파일명은 한쪽만 가리킨다. 4절 제목 규칙대로 제목을 곱셈자로 좁힐지, 보편 중심확대를 별도 문서로 나눌지 판단한다. 문서는 164줄이라 8절의 분할 기준에는 닿지 않으므로 제목을 좁히는 쪽이 유력하다. 보편 중심확대는 정의 절 한 절과 성질 절 일부를 차지한다.",
+      "createdAt": "2026-09-30T17:09:07.468Z",
+      "seq": 1492
     },
     {
       "id": "b4810afe",
