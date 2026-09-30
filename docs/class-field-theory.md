@@ -14,8 +14,6 @@ $K$ 의 아벨 확대 $L$ 마다 광선류군의 부분군 하나가 대응하�
 
 # 직관
 
-## 분해법칙과 합동조건
-
 $K=\mathbb Q$ 이고 $L=\mathbb Q(\zeta_m)$ 일 때
 
 $$
@@ -24,39 +22,7 @@ $$
 
 이고 $p$ 가 완전분해할 조건은 $\mathrm{Frob}\_p=1$ , 곧 $p\equiv1\pmod m$ 이다. 소수의 분해라는 대수적 질문이 나머지 계산으로 번역된다.
 
-유체론에서 이것은 원분체만의 현상이 아니다. $K$ 의 모든 아벨 확대에서 분해법칙이 합동조건으로 서술되고, 기저체가 $\mathbb Q$ 가 아니면 법 $m$ 의 나머지 자리에 광선류군의 원소가 들어간다.
-
-## 아벨 조건의 역할
-
-분기하지 않는 $\mathfrak p$ 위의 Frobenius 는 $\mathfrak p$ 위에 있는 $L$ 의 [소 아이디얼](prime-ideals.md)을 골라야 정해지고, 다른 것을 고르면 Galois 군의 켤레원이 나온다. 일반적으로 $\mathrm{Frob}\_{\mathfrak p}$ 는 원소가 아니라 켤레류다.
-
-군이 아벨이면 켤레류가 한원소라 모호함이 사라진다. $\mathrm{Frob}\_{\mathfrak p}$ 가 $\mathfrak p$ 만의 함수가 되고, 아이디얼의 곱에 대해 곱셈적으로 확장하면 아이디얼군에서 Galois 군으로 가는 준동형이 생긴다. 유체론이 아벨 확대에서 멈추는 이유다.
-
-비아벨로 넘어가면 켤레류 정보만 남는다. 켤레류에서 수를 뽑으려면 [표현의 지표](group-representations.md)가 필요하고, 거기서 [Galois 표현](galois-representations.md)과 $L$ 함수의 세계가 열린다.
-
-## 대응의 구조
-
-```mermaid
-graph TD
-  subgraph A["K 안쪽 — 산술"]
-    A1["모듈러스 m"] --> A2["광선류군 Cl_m(K)"]
-    A2 --> A3["부분군 H"]
-  end
-  subgraph B["K 바깥쪽 — 체"]
-    B1["아벨 확대 L/K<br/>(m 밖에서 불분기)"] --> B2["Gal(L/K)"]
-  end
-  A3 -->|"존재 정리"| B1
-  B2 -->|"Artin 상호법칙<br/>Frob_p ↤ p"| A2
-  A2 -.->|"포함관계를 뒤집는<br/>격자 동형"| B1
-```
-
-작은 부분군에 큰 확대가 대응한다. $H$ 가 전체 광선류군이면 $L=K$ 이고, $H$ 가 자명군이면 $L$ 은 그 모듈러스에서 가능한 가장 큰 아벨 확대인 광선유체다.
-
-## 모듈러스의 역할
-
-류군에 대응하는 확대는 분기가 전혀 없는 것뿐인데 $\mathbb Q(i)/\mathbb Q$ 처럼 유용한 아벨 확대는 대개 어딘가에서 분기한다. $\mathbb Q$ 의 류수는 1 이므로 류군만 보면 $\mathbb Q$ 에 아벨 확대가 없다는 잘못된 결론이 나온다.
-
-어디까지 분기를 허용할지 미리 정하는 지정이 모듈러스 $\mathfrak m$ 이고, $\mathfrak m$ 을 크게 잡을수록 더 많은 아벨 확대가 시야에 들어온다. $K=\mathbb Q$ 이고 $\mathfrak m=(m)\infty$ 로 두면 광선류군이 $(\mathbb Z/m\mathbb Z)^\times$ 가 되어 원분체의 Galois 군이 복원된다. 모든 $\mathfrak m$ 의 광선류군을 한꺼번에 담은 것이 이델류군이다.
+이것은 원분체만의 현상이 아니다. $K$ 의 모든 아벨 확대에서 분해법칙이 합동조건으로 서술되고, 기저체가 $\mathbb Q$ 가 아니면 법 $m$ 의 나머지 자리에 광선류군의 원소가 들어간다.
 
 # 정의
 
@@ -96,6 +62,8 @@ $$
 \prod\mathfrak p_i^{a_i}\mapsto\prod\mathrm{Frob}\_{\mathfrak p_i}^{a_i}
 $$
 
+
+$\mathrm{Frob}\_{\mathfrak p}$ 를 정하려면 $\mathfrak p$ 위에 있는 $L$ 의 [소 아이디얼](prime-ideals.md)을 하나 골라야 하고, 다른 것을 고르면 Galois 군의 켤레원이 나온다. 일반적으로 $\mathrm{Frob}\_{\mathfrak p}$ 는 원소가 아니라 켤레류다. $\mathrm{Gal}(L/K)$ 가 아벨이면 켤레류가 한원소가 되어 $\mathrm{Frob}\_{\mathfrak p}$ 가 $\mathfrak p$ 만의 함수이고, 아벨 확대에서만 $\psi_{L/K}$ 가 정의된다.
 를 얻는다. 이것이 **Artin 사상**이다.
 
 ## 유체론의 세 정리
@@ -219,7 +187,7 @@ $x^2+5y^2$ 으로 표현되는 소수와 $H$ 에서 완전분해하는 소수가
 
 ## 비아벨 류체론
 
-켤레류에서 수를 뽑는 방법은 표현의 지표를 취하는 것이다. Galois 표현 $\rho\colon\mathrm{Gal}(\bar K/K)\to\mathrm{GL}\_n(\mathbb C)$ 에 대해
+켤레류에서 수를 뽑는 방법은 [표현의 지표](group-representations.md)를 취하는 것이다. [Galois 표현](galois-representations.md) $\rho\colon\mathrm{Gal}(\bar K/K)\to\mathrm{GL}\_n(\mathbb C)$ 에 대해
 
 $$
 L(s,\rho)=\prod_{\mathfrak p}\det\big(1-\rho(\mathrm{Frob}\_{\mathfrak p})N\mathfrak p^{-s}\big)^{-1}
