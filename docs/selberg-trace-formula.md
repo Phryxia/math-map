@@ -16,8 +16,6 @@ $$
 
 # 직관
 
-## Poisson 합 공식
-
 원 $\mathbb R/L\mathbb Z$ 에서 Laplace 고윳값은 $n\in\mathbb Z$ 마다 $(2\pi n/L)^2$ 이고, 닫힌 측지선은 원을 $m$ 바퀴 도는 길이 $mL$ 의 곡선이다. 두 자료를 잇는 등식이 [Poisson 합 공식](poisson-summation.md)이다.
 
 $$
@@ -25,43 +23,7 @@ $$
 g(u)=\frac1{2\pi}\int h(r)e^{-iru}\thinspace dr
 $$
 
-Selberg 공식은 이것을 [곡률](curvature.md) $-1$ 의 곡면으로 옮긴 것이고, 평평한 경우에 없던 두 항인 부피 항과 첨점의 연속 기여가 추가된다.
-
-## 열핵 대각합의 두 전개
-
-점 쌍 불변 핵 $k(z,w)$ 에서 자기동형 핵
-
-$$
-K(z,w)=\sum_{\gamma\in\Gamma}k(z,\gamma w)
-$$
-
-를 만들고 $\int_{\Gamma\backslash\mathbb H}K(z,z)\thinspace d\mu$ 를 두 방식으로 계산한다. $K$ 를 고유함수로 전개하면 $\sum_j h(r_j)$ 가 나오고, 여기서 $h$ 는 $k$ 의 Selberg/Harish-Chandra 변환이다. $\Gamma$ 의 원소를 공액류로 묶어 각 류의 기여를 계산하면 측지선 항이 나온다. 같은 양의 두 표현이므로 등식이 성립한다.
-
-## 공액류와 측지선의 대응
-
-$\Gamma\subset\mathrm{PSL}\_2(\mathbb R)$ 의 원소는 대각합으로 분류된다. $|\mathrm{tr}\gamma|\gt 2$ 인 쌍곡 원소는 $\mathbb H$ 위에서 한 측지선을 따라 평행이동하고, 이동거리 $\ell_\gamma$ 는
-
-$$
-2\cosh\frac{\ell_\gamma}2=|\mathrm{tr}\thinspace\gamma|
-$$
-
-로 정해진다. 몫 곡면 $\Gamma\backslash\mathbb H$ 에서 이 측지선은 닫힌 고리가 되므로
-
-$$
-\lbrace\Gamma\ \text{의 쌍곡 공액류}\rbrace\ \longleftrightarrow\ \lbrace\text{닫힌 측지선}\rbrace
-$$
-
-이고, 원시 측지선을 $k$ 바퀴 도는 것이 $\gamma^k$ 에 대응한다. 항등원의 기여가 부피 항, 타원 원소가 유한 위수의 기여, 포물 원소가 첨점의 기여를 준다.
-
-## 첨점의 기여
-
-$\Gamma_0(N)$ 같은 비콤팩트 경우에는 연속 스펙트럼이 있어 두 전개가 각각 발산한다. 발산을 상쇄시키는 정규화를 거치면 공식에
-
-$$
--\frac1{4\pi}\int_{-\infty}^\infty h(r)\thinspace\frac{\varphi'}{\varphi}\Big(\frac12+ir\Big)dr+\frac14h(0)\varphi\Big(\frac12\Big)
-$$
-
-가 들어온다. $\varphi$ 는 Eisenstein 급수의 산란 행렬식이고 $\mathrm{SL}\_2(\mathbb Z)$ 에서는 $\varphi(s)=\xi(2s-1)/\xi(2s)$ 다. [Riemann zeta 함수](riemann-zeta.md)가 대각합 공식 안에 직접 등장하는 자리다.
+왼쪽이 스펙트럼이고 오른쪽이 길이다. 원에서 $n$ 과 $m$ 을 짝지은 자리를 쌍곡 곡면에서는 $\Gamma$ 의 공액류가 맡는다. 쌍곡 공액류가 닫힌 측지선에 대응하고 항등원이 [곡률](curvature.md) $-1$ 에서 오는 부피 항을 주므로, 평평한 경우에 없던 두 항인 부피 항과 첨점의 연속 기여가 공식에 추가된다.
 
 # 정의
 
@@ -70,6 +32,16 @@ $$
 $\Gamma\subset\mathrm{PSL}\_2(\mathbb R)$ 는 유한 공부피 이산군, $X=\Gamma\backslash\mathbb H$ 는 쌍곡 곡면, $\Delta=-y^2(\partial_x^2+\partial_y^2)$ 는 Laplace 작용소다. 이산 스펙트럼을 $\lambda_j=\tfrac14+r_j^2$ 로 쓴다.
 
 검사함수 $h(r)$ 는 $|\mathrm{Im}\thinspace r|\le\tfrac12+\delta$ 에서 정칙이고 $h(r)=O((1+|r|)^{-2-\delta})$ 인 짝함수이며, 그 Fourier 변환은 $g(u)=\frac1{2\pi}\int h(r)e^{-iru}dr$ 다.
+
+## 쌍곡 공액류와 닫힌 측지선
+
+$\Gamma$ 의 원소는 대각합으로 분류된다. $\vert\mathrm{tr}\thinspace\gamma\vert\gt 2$ 인 쌍곡 원소는 $\mathbb H$ 위에서 한 측지선을 따라 평행이동하고, 이동거리 $\ell_\gamma$ 가
+
+$$
+2\cosh\frac{\ell_\gamma}2=\vert\mathrm{tr}\thinspace\gamma\vert
+$$
+
+로 정해진다. 몫 곡면에서 이 측지선은 닫힌 고리가 되므로 쌍곡 공액류가 닫힌 측지선에 대응하고, 원시 측지선을 $k$ 바퀴 도는 것이 $\gamma^k$ 에 대응한다. 원시 공액류의 집합을 $\lbrace\gamma\rbrace\_{\mathrm{prim}}$ 로 쓴다.
 
 ## 콤팩트 곡면의 공식
 
@@ -91,6 +63,8 @@ $$
 =\text{(항등)}+\text{(쌍곡)}+\text{(타원)}+\text{(포물)}
 $$
 
+$\varphi$ 는 Eisenstein 급수의 산란 행렬식이고 $\mathrm{SL}\_2(\mathbb Z)$ 에서는 $\varphi(s)=\xi(2s-1)/\xi(2s)$ 다. [Riemann zeta 함수](riemann-zeta.md)가 공식 안에 직접 나타나는 자리이고, 정규화 뒤에 $\tfrac14h(0)\varphi(\tfrac12)$ 항이 함께 들어온다.
+
 ## Selberg zeta 함수
 
 원시 닫힌 측지선 전체에 대해
@@ -102,6 +76,16 @@ $$
 로 정의한다. 측지선이 소수의 자리를, $\ell_\gamma$ 가 $\log p$ 의 자리를 차지한 Euler 곱이다. 대각합 공식은 $Z$ 가 $\mathbb C$ 전체로 [해석적 연속](analytic-continuation.md)되고 함수방정식을 가짐을 준다.
 
 # 성질
+
+## 자기동형 핵의 대각합
+
+**증명의 요지.** 점 쌍 불변 핵 $k(z,w)$ 에서 자기동형 핵
+
+$$
+K(z,w)=\sum_{\gamma\in\Gamma}k(z,\gamma w)
+$$
+
+를 만들고 $\int_{\Gamma\backslash\mathbb H}K(z,z)\thinspace d\mu$ 를 두 방식으로 계산한다. $K$ 를 Laplace 고유함수로 전개하면 $\sum_jh(r_j)$ 가 나오고, $h$ 는 $k$ 의 Harish-Chandra 변환이다. $\Gamma$ 의 원소를 공액류로 묶어 류마다 기여를 계산하면 기하 쪽 항이 나온다. 항등원이 부피 항, 쌍곡 원소가 측지선 항, 타원 원소가 유한 위수의 기여, 포물 원소가 첨점의 기여를 준다. 같은 양의 두 표현이므로 등식이 성립한다. $\square$
 
 ## Weyl 법칙
 
