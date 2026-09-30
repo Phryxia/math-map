@@ -10,13 +10,7 @@ $p$ 진 $L$ 함수는 복소 $L$ 함수의 특수값을 $p$ 진 해석 함수 �
 
 # 직관
 
-## 층마다 다른 복소수
-
-$E$ 의 순위를 원분탑 $\mathbb Q\subset\mathbb Q(\mu_p)\subset\mathbb Q(\mu_{p^2})\subset\cdots$ 를 따라 재려고 한다. $n$ 층에서 필요한 것은 도체 $p^n$ 인 지표 $\chi$ 마다의 값 $L(E,\chi,1)$ 이다. [BSD](birch-swinnerton-dyer.md) 추측에 따르면 이 값이 $0$ 인지 아닌지가 그 지표 성분의 순위를 가른다.
-
-값은 층마다 여러 개이고 전부 복소수다. 층을 하나 올릴 때 값들이 어떻게 변하는지 복소 절댓값으로는 보이지 않는다. 층 사이를 잇는 양은 $p$ 의 거듭제곱이므로 $p$ 진 거리로 재야 한다.
-
-## 모듈러 기호가 주는 유리수
+$E$ 의 순위를 원분탑 $\mathbb Q\subset\mathbb Q(\mu_p)\subset\mathbb Q(\mu_{p^2})\subset\cdots$ 를 따라 재려고 한다. $n$ 층에서 필요한 것은 도체 $p^n$ 인 지표 $\chi$ 마다의 값 $L(E,\chi,1)$ 이고, [BSD](birch-swinnerton-dyer.md) 추측에 따르면 이 값이 $0$ 인지 아닌지가 그 지표 성분의 순위를 가른다. 값은 층마다 여러 개이고 전부 복소수여서, 층을 하나 올릴 때 값들이 어떻게 변하는지 복소 절댓값으로는 보이지 않는다.
 
 $E$ 에 대응하는 무게 2 신형식을 $f=\sum a_nq^n$ 이라 하고, 유리수 $r$ 에서의 모듈러 기호를 다음으로 둔다.
 
@@ -24,16 +18,16 @@ $$
 \lbrack r\rbrack^{\pm}=\frac{1}{\Omega^{\pm}}\Bigl(\int_{i\infty}^{r}f(z)\thinspace dz\pm\int_{i\infty}^{-r}f(z)\thinspace dz\Bigr)
 $$
 
-$\Omega^{+}$ 와 $\Omega^{-}$ 는 $E$ 의 실주기와 허주기다. 이렇게 정규화한 $\lbrack r\rbrack^{\pm}$ 는 유리수이고 분모가 유계다. 도체 $p^n$ 인 원시 지표 $\chi$ 에 대한 특수값이 이 유리수들의 유한 합으로 나온다.
+$\Omega^{+}$ 와 $\Omega^{-}$ 는 $E$ 의 실주기와 허주기다. 이렇게 정규화한 $\lbrack r\rbrack^{\pm}$ 는 유리수이고 분모가 유계다.
+
+도체 $p^n$ 인 원시 지표 $\chi$ 에 대한 특수값이 이 유리수들의 유한 합으로 나온다.
 
 $$
 \frac{\tau(\bar\chi)\thinspace L(E,\bar\chi,1)}{\Omega^{\pm}}
 =\sum_{a\bmod p^n}\chi(a)\lbrack a/p^n\rbrack^{\pm}
 $$
 
-$\tau(\bar\chi)$ 는 [Gauss 합](gauss-sums.md)이고 부호 $\pm$ 는 $\chi(-1)$ 을 따른다. 좌변은 복소수였지만 우변은 유리수와 $p^n$ 차 단위근의 합이다.
-
-## 층을 잇는 관계
+$\tau(\bar\chi)$ 는 [Gauss 합](gauss-sums.md)이고 부호 $\pm$ 는 $\chi(-1)$ 을 따른다. 좌변은 복소수였지만 우변은 유리수와 $p^n$ 차 단위근의 합이다. 층 사이를 잇는 양이 $p$ 의 거듭제곱이므로 이 값들은 $p$ 진 거리로 잰다.
 
 Hecke 작용소 $U_p$ 가 층 사이의 관계를 준다. $b$ 가 $p^{n+1}$ 을 법으로 $a$ 위에 놓인 $p$ 개의 잉여류를 지날 때 다음이 성립한다.
 
@@ -41,9 +35,7 @@ $$
 \sum_{b\equiv a\thinspace(p^n)}\lbrack b/p^{n+1}\rbrack=a_p\lbrack a/p^n\rbrack-\lbrack a/p^{n-1}\rbrack
 $$
 
-한 층의 값들을 더하면 아래층의 값이 나오되 $a_p$ 와 $-1$ 이 섞여 나온다. 이 섞임을 $\alpha$ 로 고르게 나누면 합 규칙이 정확해진다. $\alpha$ 를 $X^2-a_pX+p$ 의 근 가운데 $p$ 진 단위인 것으로 잡고 $\alpha^{-n}\lbrack a/p^n\rbrack$ 의 차를 보면, 층마다 값을 주는 규칙이 $\mathbb Z_p^{\times}$ 위의 [측도](measure.md) 하나가 된다.
-
-측도가 하나 생기면 층마다 흩어져 있던 값들이 한 대상의 적분값이 된다. 지표 $\chi$ 로 적분하면 $n$ 층의 값이 나오고, $\langle x\rangle^{s-1}$ 로 적분하면 $s$ 에 대한 해석 함수가 나온다.
+한 층의 값들을 더하면 아래층의 값이 나오되 $a_p$ 와 $-1$ 이 섞여 나온다. $\alpha$ 를 $X^2-a_pX+p$ 의 근 가운데 $p$ 진 단위인 것으로 잡고 $\alpha^{-n}\lbrack a/p^n\rbrack$ 의 차를 보면 섞임이 고르게 나뉘어 합 규칙이 정확해지고, 층마다 값을 주는 규칙이 $\mathbb Z_p^{\times}$ 위의 [측도](measure.md) 하나가 된다.
 
 # 정의
 
