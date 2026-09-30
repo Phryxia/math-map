@@ -20,27 +20,7 @@ $\mathbb Q$ 위에서 정의된다는 사실이 Galois 작용을 가능하게 �
 
 # 직관
 
-## 몫이 곡선이 되는 과정
-
-$\Gamma_0(N)$ 이 $\mathbb H$ 에 불연속으로 작용하므로 몫이 Riemann 곡면이 된다. 콤팩트하지 않다는 것과 안정자군이 자명하지 않은 점이 있다는 것이 두 문제다.
-
-첫 문제는 **첨점**으로 해결한다. $\mathbb Q\cup\lbrace\infty\rbrace$ 의 $\Gamma_0(N)$ 궤도를 유한 개의 점으로 추가하면 $X_0(N)=\Gamma_0(N)\backslash(\mathbb H\cup\mathbb Q\cup\lbrace\infty\rbrace)$ 가 콤팩트하다.
-
-둘째 문제는 **타원점**이다. 안정자가 위수 2 또는 3 인 점에서 몫이 국소적으로 $z\mapsto z^2$ 또는 $z\mapsto z^3$ 처럼 접히므로 좌표를 그만큼 늘려야 매끄럽다. $\mathrm{SL}\_2(\mathbb Z)$ 의 유한 위수 원소가 위수 4 와 6 뿐이므로 위수 2 와 3 만 나온다.
-
-두 보정이 Riemann–Hurwitz 공식에 들어가 종수 공식을 만든다. $\mu=[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]$ 가 덮개의 차수이고 $\nu_2,\nu_3,\nu_\infty$ 가 분기 자료다.
-
-## 모듈라이 해석
-
-$\tau\in\mathbb H$ 에 [격자](lattices.md) $L_\tau=\mathbb Z+\mathbb Z\tau$ 와 타원곡선 $E_\tau=\mathbb C/L_\tau$ 를 대응시킨다. $\mathrm{SL}\_2(\mathbb Z)$ 의 작용은 격자의 기저를 바꾸므로 $E_\tau$ 를 바꾸지 않고, $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 가 타원곡선의 동형류 전체, 곧 $j$ 불변량의 값들이다.
-
-$\Gamma_0(N)$ 으로 좁히면 부분군 $\langle1/N\rangle\subset E_\tau$ 를 보존하는 변환만 남으므로 $\Gamma_0(N)\backslash\mathbb H$ 의 점이 쌍 $(E,C)$ 를 분류한다.
-
-이 해석이 $\mathbb Q$ 유리성을 준다. 타원곡선과 위수 $N$ 순환 부분군의 쌍이라는 조건은 대수적으로 쓸 수 있으므로 $X_0(N)$ 이 $\mathbb Q$ 위의 곡선으로 실현된다. 해석적 정의만으로는 $\mathbb Q$ 계수의 출처를 알 수 없다.
-
-## 미분형식과 무게 2
-
-$f\in S_2(\Gamma_0(N))$ 에 대해 $\omega=f(\tau)\thinspace d\tau$ 를 둔다. $\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}$ 에 대해 $d(\gamma\tau)=(c\tau+d)^{-2}d\tau$ 이므로 무게 2 변환 규칙과 상쇄된다.
+$f\in S_2(\Gamma_0(N))$ 은 $\mathbb H$ 위의 함수이지만 $f(\gamma\tau)=(c\tau+d)^2f(\tau)$ 를 만족하므로 몫 위의 함수로 내려오지 않는다. 함수 대신 $\omega=f(\tau)\thinspace d\tau$ 를 본다. $\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}$ 에 대해 $d(\gamma\tau)=(c\tau+d)^{-2}d\tau$ 이므로 두 인자가 상쇄된다.
 
 $$
 f(\gamma\tau)\thinspace d(\gamma\tau)=(c\tau+d)^2f(\tau)\cdot(c\tau+d)^{-2}d\tau=f(\tau)\thinspace d\tau
@@ -52,11 +32,17 @@ $$
 S_2(\Gamma_0(N))\ \cong\ \Omega^1\big(X_0(N)\big),\qquad \dim S_2(\Gamma_0(N))=g\big(X_0(N)\big)
 $$
 
-무게 2 에서만 이 대응이 성립한다. 다른 무게에서는 미분형식이 아니라 그 거듭제곱의 절편이 된다.
+첨점형식의 차원을 세는 일이 곡선의 종수를 세는 일이 된다. 무게 2 에서만 이 대응이 성립하고, 다른 무게에서는 미분형식이 아니라 그 거듭제곱의 절편이 된다.
 
 # 정의
 
 ## 첨점과 타원점
+
+$\Gamma_0(N)$ 이 $\mathbb H$ 에 불연속으로 작용하므로 몫이 Riemann 곡면이 된다. 콤팩트하지 않다는 것과 안정자군이 자명하지 않은 점이 있다는 것이 두 문제다.
+
+첫 문제는 **첨점**으로 해결한다. $\mathbb Q\cup\lbrace\infty\rbrace$ 의 $\Gamma_0(N)$ 궤도를 유한 개의 점으로 추가하면 $X_0(N)=\Gamma_0(N)\backslash(\mathbb H\cup\mathbb Q\cup\lbrace\infty\rbrace)$ 가 콤팩트하다.
+
+둘째 문제는 **타원점**이다. 안정자가 위수 2 또는 3 인 점에서 몫이 국소적으로 $z\mapsto z^2$ 또는 $z\mapsto z^3$ 처럼 접히므로 좌표를 그만큼 늘려야 매끄럽다. $\mathrm{SL}\_2(\mathbb Z)$ 의 유한 위수 원소가 위수 4 와 6 뿐이므로 위수 2 와 3 만 나온다.
 
 $\Gamma_0(N)$ 의 지표는 곱 공식으로 주어진다.
 
@@ -90,6 +76,14 @@ $$
 > $$
 
 $X_0(1)=\mathbb P^1$ 의 종수가 $0$ 이라는 사실에서 Riemann–Hurwitz 로 끌어낸 것이다[^1]. $\mu/12$ 가 덮개의 차수에서 오는 주항이고 나머지 세 항이 분기 보정이다.
+
+## 모듈라이 해석
+
+$\tau\in\mathbb H$ 에 [격자](lattices.md) $L_\tau=\mathbb Z+\mathbb Z\tau$ 와 타원곡선 $E_\tau=\mathbb C/L_\tau$ 를 대응시킨다. $\mathrm{SL}\_2(\mathbb Z)$ 의 작용은 격자의 기저를 바꾸므로 $E_\tau$ 를 바꾸지 않고, $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 가 타원곡선의 동형류 전체, 곧 $j$ 불변량의 값들이다.
+
+$\Gamma_0(N)$ 으로 좁히면 부분군 $\langle1/N\rangle\subset E_\tau$ 를 보존하는 변환만 남으므로 $\Gamma_0(N)\backslash\mathbb H$ 의 점이 쌍 $(E,C)$ 를 분류한다.
+
+이 해석이 $\mathbb Q$ 유리성을 준다. 타원곡선과 위수 $N$ 순환 부분군의 쌍이라는 조건은 대수적으로 쓸 수 있으므로 $X_0(N)$ 이 $\mathbb Q$ 위의 곡선으로 실현된다. 해석적 정의만으로는 $\mathbb Q$ 계수의 출처를 알 수 없다.
 
 ## Jacobian 과 Hecke 대응
 
