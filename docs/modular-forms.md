@@ -17,45 +17,13 @@ $$
 
 # 직관
 
-## 격자의 함수
-
 $\mathbb C$ 의 격자 $\Lambda=\mathbb Z\omega_1+\mathbb Z\omega_2$ 에 수를 대응시키는 함수 $F(\Lambda)$ 에 크기 조정에 대한 동차성을 요구한다.
 
 $$
 F(\lambda\Lambda)=\lambda^{-k}F(\Lambda)
 $$
 
-$\Lambda$ 를 $\omega_2$ 로 나눠 정규화하면 $\tau=\omega_1/\omega_2\in\mathbb H$ 에 대한 $\mathbb Z\tau+\mathbb Z$ 가 되므로 $F$ 가 $\mathbb H$ 위의 함수 $f(\tau)$ 로 바뀐다. 같은 격자를 주는 기저는 여럿이고 기저 변경이 $\mathrm{SL}\_2(\mathbb Z)$ 다. $(\omega_1,\omega_2)$ 를 $(a\omega_1+b\omega_2,\ c\omega_1+d\omega_2)$ 로 바꾸면 $\tau\mapsto\frac{a\tau+b}{c\tau+d}$ 이고 정규화 인자가 $(c\tau+d)$ 만큼 바뀌어 변환 규칙이 나온다.
-
-[격자](lattices.md) 자체는 기저에 무관한 대상이고 인자 $(c\tau+d)^k$ 는 좌표를 고른 대가다.
-
-## 유한차원성의 근거
-
-$\mathrm{SL}\_2(\mathbb Z)$ 의 기본영역은 $|\tau|\ge1$ 이고 $|\mathrm{Re}\thinspace\tau|\le\frac12$ 인 영역이다. 위쪽으로 열려 있으므로 $\tau\to i\infty$ 에서의 거동을 규정해야 하고 그 조건이 첨점에서의 정칙성이다.
-
-$f$ 가 무게 $k$ 의 모듈러 형식이면 기본영역의 경계에 유수 정리를 적용해 영점의 총수가 $k/12$ 임을 얻는다.
-
-$$
-\mathrm{ord}\_\infty(f)+\tfrac12\mathrm{ord}\_i(f)+\tfrac13\mathrm{ord}\_\rho(f)+\sum_{\text{나머지}}\mathrm{ord}\_P(f)=\frac k{12}
-$$
-
-$1/2$ 과 $1/3$ 은 $i$ 와 $\rho=e^{2\pi i/3}$ 에서 고정자군이 자명하지 않아 붙는 가중치다. 영점의 개수가 유계이므로 자유도가 유한하다. $k\lt 0$ 이면 우변이 음수라 형식이 없고 $k=2$ 에서도 없다.
-
-## 항등식의 생성
-
-무게 8 의 모듈러 형식 공간은 1 차원이고 $E_8$ 과 $E_4^2$ 이 모두 무게 8 에 상수항 1 이므로 같다.
-
-$$
-E_4(\tau)^2=E_8(\tau)
-$$
-
-양변의 $q$ 전개를 비교하면 약수 함수의 항등식이 나온다.
-
-$$
-\sigma_7(n)=\sigma_3(n)+120\sum_{m=1}^{n-1}\sigma_3(m)\sigma_3(n-m)
-$$
-
-초등적 증명이 번거로운 등식이 두 함수가 1 차원 공간에 있다는 관찰로 끝난다.
+$\Lambda$ 를 $\omega_2$ 로 나눠 정규화하면 $\tau=\omega_1/\omega_2\in\mathbb H$ 에 대한 $\mathbb Z\tau+\mathbb Z$ 가 되므로 $F$ 가 $\mathbb H$ 위의 함수 $f(\tau)$ 로 바뀐다. 같은 [격자](lattices.md)를 주는 기저는 여럿이고 기저 변경이 $\mathrm{SL}\_2(\mathbb Z)$ 다. $(\omega_1,\omega_2)$ 를 $(a\omega_1+b\omega_2,\ c\omega_1+d\omega_2)$ 로 바꾸면 $\tau\mapsto\frac{a\tau+b}{c\tau+d}$ 이고 정규화 인자가 $(c\tau+d)$ 만큼 바뀌어 변환 규칙이 나온다. 격자 자체는 기저에 무관한 대상이므로 인자 $(c\tau+d)^k$ 는 좌표를 고른 대가다.
 
 # 정의
 
@@ -74,6 +42,8 @@ $$
 $$
 \Gamma_0(N)=\Big\lbrace\begin{pmatrix}a&b\cr c&d\end{pmatrix}\in\mathrm{SL}\_2(\mathbb Z):c\equiv0\ (\mathrm{mod}\ N)\Big\rbrace
 $$
+
+$\mathrm{SL}\_2(\mathbb Z)$ 의 **기본영역**은 $|\tau|\ge1$ 이고 $|\mathrm{Re}\thinspace\tau|\le\frac12$ 인 영역이다. 위쪽으로 열려 있으므로 $\tau\to i\infty$ 에서의 거동을 따로 규정해야 한다.
 
 ## 모듈러 형식과 첨점형식
 
@@ -143,6 +113,14 @@ $$
 
 $-I$ 가 $(-1)^k$ 를 곱하므로 홀수 무게가 사라진다. $k=4,6,8,10$ 에서 차원이 1 이고 $k=12$ 에서 처음 2 가 된다. $S_{12}$ 가 1 차원이라 $\Delta$ 가 상수배를 빼고 유일한 무게 12 첨점형식이다.
 
+차원이 유한한 것은 영점의 개수가 유계이기 때문이다. $f$ 가 무게 $k$ 의 모듈러 형식이면 기본영역의 경계에 유수 정리를 적용해 다음을 얻는다.
+
+$$
+\mathrm{ord}\_\infty(f)+\tfrac12\mathrm{ord}\_i(f)+\tfrac13\mathrm{ord}\_\rho(f)+\sum_{\text{나머지}}\mathrm{ord}\_P(f)=\frac k{12}
+$$
+
+$1/2$ 과 $1/3$ 은 $i$ 와 $\rho=e^{2\pi i/3}$ 에서 고정자군이 자명하지 않아 붙는 가중치다. $k\lt 0$ 이면 우변이 음수이므로 형식이 없다.
+
 무게 $k$ 의 두 형식이 $\lfloor k/12\rfloor+1$ 개의 계수에서 일치하면 완전히 같다. 이 논법이 **Sturm 한계**이고 항등식의 기계적 증명 절차가 된다.
 
 ## Ramanujan 의 $\tau$
@@ -192,6 +170,22 @@ $$
 이 등급환을 미분에 대해 닫는다. 조화적 Maass 형식은 Ramanujan 의 유사 theta 함수를 설명하며 분할수의 합동을 다루는 현대적 틀이다.
 
 # 활용
+
+## 약수 함수 항등식
+
+무게 8 의 모듈러 형식 공간은 1 차원이고 $E_8$ 과 $E_4^2$ 이 모두 무게 8 에 상수항 1 이므로 같다.
+
+$$
+E_4(\tau)^2=E_8(\tau)
+$$
+
+양변의 $q$ 전개를 비교하면 약수 함수의 항등식이 나온다.
+
+$$
+\sigma_7(n)=\sigma_3(n)+120\sum_{m=1}^{n-1}\sigma_3(m)\sigma_3(n-m)
+$$
+
+초등적 증명이 번거로운 등식이 두 함수가 1 차원 공간에 있다는 관찰로 끝난다.
 
 ## 격자의 theta 급수
 
