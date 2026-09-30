@@ -20,59 +20,15 @@ $$
 
 # 직관
 
-## 탑과 극한 가군
-
-$\mathbb Q(\mu_{p^{n+1}})$ 의 류수는 앞 층의 류수로 나뉘지만 몫이 어떻게 커지는지는 한 층만 봐서는 알 수 없다.
-
-$\Gamma=\mathrm{Gal}(\mathbb Q(\mu_{p^\infty})/\mathbb Q(\mu_p))\cong\mathbb Z_p$ 이고, 각 층의 류군 $A_n$ 의 $p$ 부분이 $\Gamma$ 작용을 가지므로 극한 $X_\infty=\varprojlim A_n$ 은 $\mathbb Z_p[[\Gamma]]$ 가군이다. $\Gamma$ 의 위상생성원 $\gamma$ 를 잡고 $T=\gamma-1$ 로 두면
-
-$$
-\mathbb Z_p[[\Gamma]]\thickspace\cong\thickspace\Lambda=\mathbb Z_p[[T]]
-$$
-
-이다. $\Lambda$ 는 2 차원 정칙 국소환이고 유한생성 가군이 유사동형을 무시하면 순환 조각의 직합으로 분해된다. 류수의 수열은 이 한 가군을 각 층에서 읽은 값이다.
-
-## 층을 잘라내는 연산자
-
-$n$ 번째 층은 극한에서 $\omega_n=(1+T)^{p^{n}}-1$ 로 나눈 몫으로 되돌아온다. 그러므로 $X=\Lambda/(f)$ 라면
+$\mathbb Q(\mu_{p^{n+1}})$ 의 류수는 앞 층의 류수로 나뉘지만 몫이 어떻게 커지는지는 한 층만 봐서 알 수 없다. 층의 류군을 모은 극한 가군은 탑의 Galois 군 $\Gamma\cong\mathbb Z_p$ 의 작용을 갖고, 위상생성원 $\gamma$ 에 대해 $T=\gamma-1$ 로 두면 그 작용이 $\Lambda=\mathbb Z_p[[T]]$ 위의 가군 구조가 된다. 이 극한에서 $n$ 번째 층은 $\omega_n=(1+T)^{p^{n}}-1$ 로 나눈 몫으로 되돌아온다. $X=\Lambda/(f)$ 인 경우에 그 크기를 세면
 
 $$
 \char35{}\big(X/\omega_nX\big)=\char35{}\big(\Lambda/(f,\omega_n)\big)=p^{\thinspace v_p(\mathrm{Res}(f,\omega_n))}
 $$
 
-이고, 이 종결식의 $p$ 부치가 $n$ 에 대해 선형이다. Weierstrass 준비정리로 $f$ 를 $p^{\mu}$ 곱하기 차수 $\lambda$ 의 구별다항식으로 쓸 수 있고, 구별다항식의 근들이 $p$ 진 절댓값이 1 보다 작으므로 $\omega_n$ 을 그 근에서 평가한 값의 부치가 $n$ 에 선형으로 자란다. 여기서 $\lambda$ 는 근의 개수, $\mu$ 는 $p$ 의 거듭제곱 몫이다.
+이므로 각 층의 크기가 종결식 하나로 나온다.
 
-$n=0$ 항이 공식에서 벗어나므로 정리는 충분히 큰 $n$ 을 요구한다. $X=\Lambda/(p^{m})$ 로 두면 $\char35{}(X/\omega_nX)=p^{m\thinspace p^{n}}$ 이 되어 $\mu$ 항이 나타난다.
-
-## 두 개의 멱급수
-
-$\Lambda$ 안에 출신이 다른 두 원소가 놓인다.
-
-| 출신 | 대상 | 무엇을 재는가 |
-|---|---|---|
-| 대수 | $\mathrm{char}\_\Lambda X_\infty^{(\chi)}$ | 각 층의 이데알류군 $\chi$ 성분의 크기 |
-| 해석 | $L_p(s,\chi)$ 에 대응하는 $f(T,\chi)$ | Bernoulli 수 $B_{n,\chi}$ 의 $p$ 진 보간 |
-
-둘 다 모든 층에서 같은 유한량을 보간한다. 한 층에서는 해석적 류수 공식이 그 일치를 보장하지만 류수 공식으로는 크기의 곱만 맞춰지고 $\Lambda$ 가군으로서의 세부는 맞춰지지 않는다. 주추측은 세부까지 같다는 주장이다.
-
-## Euler 계의 역할
-
-Rubin 의 증명은 한 방향의 나눔을 Euler 계로 얻는다. 순환체의 단수
-
-$$
-c_n=1-\zeta_{p^{n}},\qquad
-\mathrm{N}\_{\mathbb Q(\mu_{p^{n+1}})/\mathbb Q(\mu_{p^{n}})}\big(1-\zeta_{p^{n+1}}\big)=1-\zeta_{p^{n}}
-$$
-
-는 탑 위에 이미 놓여 있는 대수적 원소이고, 도체를 곱해 가며 자취 관계를 보면 Euler 인자 $1-\mathrm{Fr}\_\ell^{-1}$ 이 나타난다. 곧 $T=\mathbb Z_p(1)$ 에 대한 Euler 계다. Kolyvagin 유도를 씌우면 이데알류군을 위에서 누르는 부등식이 나오고, 그 부등식이 $\mathrm{char}\thinspace X_\infty$ 가 $f(T,\chi)$ 로 나뉜다는 진술이 된다.
-
-반대 방향은 순환체 단수의 지표가 류수와 같다는 고전적 사실
-
-$$
-\big[\thinspace E:\thinspace C\thinspace\big]=h^{+}
-$$
-
-에서 나온다. 이 지표 공식이 전체 크기를 고정하므로 한쪽 나눔에 크기 일치를 더하면 등호가 된다. Euler 계가 상한을 주고 류수 공식이 총량을 주는 이 구도는 타원곡선 주추측에서도 반복된다.
+종결식의 부치를 $n$ 의 함수로 읽는다. Weierstrass 준비정리로 $f$ 를 $p^{\mu}$ 와 차수 $\lambda$ 인 구별다항식의 곱으로 쓸 수 있다. 구별다항식의 근은 $p$ 진 절댓값이 $1$ 보다 작고 $\omega_n$ 을 그 근에서 평가한 값의 부치가 $n$ 에 선형으로 자라므로, 근 $\lambda$ 개가 $\lambda n$ 을 낸다. $p^\mu$ 쪽은 $\Lambda/(p^{m})$ 에서 $\char35{}(X/\omega_nX)=p^{m\thinspace p^{n}}$ 이라 $\mu p^{n}$ 을 낸다. 두 항을 더한 것이 성장 공식이고, $n=0$ 근처는 이 계산에서 벗어나므로 공식은 충분히 큰 $n$ 을 요구한다.
 
 # 정의
 
@@ -163,7 +119,7 @@ $$
 
 $1-\zeta_{p^{n}}$ 자체는 $p$ 위의 소원소이고 단수가 되는 것은 비 $\frac{1-\zeta^{a}}{1-\zeta}$ 다. Euler 계로 쓰는 것도 이 비들이다.
 
-## Rubin 증명의 요지
+## Rubin 의 증명
 
 1. **Euler 계의 확보.** $c_n=\frac{1-\zeta_{n}^{a}}{1-\zeta_n}$ 들이 $H^1(\mathbb Q(\mu_n),\mathbb Z_p(1))$ 안에서 자취 관계 $\mathrm{cor}(c_{n\ell})=(1-\mathrm{Fr}\_\ell^{-1})c_n$ 을 만족한다. Kummer 이론으로 단수군이 곧 $H^1(\cdot,\mathbb Z_p(1))$ 이므로 대수적 원소가 그대로 코호몰로지 류다.
 2. **유도.** Kolyvagin 유도 연산자로 $\kappa_n$ 을 만든다. 각 $\kappa_n$ 은 $n$ 밖에서만 국소 조건을 만족한다.
