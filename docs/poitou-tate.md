@@ -21,65 +21,15 @@ $$
 
 # 직관
 
-## 대역 입력
+Selmer 군은 대역 코호몰로지 $H^1(K,M)$ 의 부분군이므로 크기를 세려면 $H^1(K,M)$ 을 알아야 한다. 국소 $H^1(K_v,M)$ 은 자리마다 국소 Euler 표수 공식으로 센다. 국소 크기를 전부 알고도 대역 부분군의 크기는 나오지 않는다. 국소화 사상 $H^1(K,M)\to\prod_vH^1(K_v,M)$ 의 상이 무엇인지 모르면 어느 국소 조건 조합이 대역류에서 오는지 가릴 수 없다.
 
-수체의 산술에서 대역적인 입력은 적다. [유체론](class-field-theory.md)의 대역 부분은 한 줄이다.
-
-$$
-0\longrightarrow \mathrm{Br}(K)\longrightarrow\bigoplus_v\mathrm{Br}(K_v)\xrightarrow{\ \sum\mathrm{inv}\_v\ }\mathbb Q/\mathbb Z\longrightarrow0
-$$
-
-가운데 사상은 국소적이고, 대역적인 내용은 합이 0 인 것만 대역적으로 실현된다는 한 문장이다.
-
-Poitou–Tate 완전열은 이 열의 계수 $M$ 판본이고, $M=\mu_n$ 이면 위 열로 돌아온다.
-
-## 라그랑지안으로서의 대역 상
-
-$M$ 이 유한이고 $M^{\ast}=M$ 인 자기쌍대 경우를 본다. $E[p]$ 가 Weil 짝으로 그렇다. 이때
-
-$$
-V=\prod_v{}'\thinspace H^1(K_v,M)
-$$
-
-위에 비퇴화 교대 짝이 있고, 대역류의 상 $A=\mathrm{im}\big(H^1(K,M)\to V\big)$ 는 $A=A^{\perp}$ 를 만족한다. 유한차원 심플렉틱 공간에서 $A=A^{\perp}$ 인 부분공간을 **라그랑지안**이라 하고 차원은 정확히 절반이다.
-
-Selmer 조건 $L=\prod_v L_v$ 도 $V$ 의 부분공간이다. 그러면
-
-$$
-\mathrm{Sel}\_L=A\cap L,\qquad \mathrm{Sel}\_{L^{\ast}}=A\cap L^{\perp}
-$$
-
-이므로 두 Selmer 군은 같은 라그랑지안을 서로 소멸자인 두 부분공간으로 자른 것이다. 크기 비교가 선형대수가 된다.
+$M^{\ast}=M$ 인 경우에 그 상이 결정된다. 자리마다의 국소 Tate 짝을 모으면 $V=\prod'\_v H^1(K_v,M)$ 에 비퇴화 교대 짝이 생기고, 대역 상 $A=\mathrm{im}\big(H^1(K,M)\to V\big)$ 는 $A=A^{\perp}$ 를 만족한다. Selmer 조건 $L=\prod_vL_v$ 에 대해 $\mathrm{Sel}\_L=A\cap L$ 이고 $\mathrm{Sel}\_{L^{\ast}}=A\cap L^{\perp}$ 이다. $A=A^{\perp}$ 에서 $A\cap L^{\perp}=(A+L)^{\perp}$ 이 나오므로 차원을 세면
 
 $$
 \dim(A\cap L)-\dim(A\cap L^{\perp})=\dim L-\tfrac12\dim V
 $$
 
-$A=A^{\perp}$ 이므로 $A\cap L^{\perp}=(A+L)^{\perp}$ 이고, 차원을 세면 위 식이 나온다. 오른쪽에 $A$ 가 없으므로 대역적으로 알기 어려운 대상이 차이 공식에서 사라진다.
-
-## 국소 조건의 변형
-
-한 자리 $\ell$ 에서만 $L_\ell$ 을 1 차원 넓히면 $\dim L$ 이 1 늘고 $\dim L^{\perp}$ 이 1 준다. 따라서
-
-$$
-\dim\mathrm{Sel}\_{L'}-\dim\mathrm{Sel}\_{L'^{\ast}}=\big(\dim\mathrm{Sel}\_{L}-\dim\mathrm{Sel}\_{L^{\ast}}\big)+1
-$$
-
-이다. 한편 $\mathrm{Sel}\_{L}\subset\mathrm{Sel}\_{L'}$ 의 지표는 최대 1 이다. 조건을 넓히면 Selmer 가 1 커지거나 쌍대 Selmer 가 1 작아지거나 둘 중 하나가 일어나고, 어느 쪽인지는 국소 계산이 정한다. Euler 계 논법과 Taylor–Wiles 논법이 모두 이 이분법을 쓴다.
-
-| 조작 | $\mathrm{Sel}\_L$ | $\mathrm{Sel}\_{L^{\ast}}$ |
-|---|---|---|
-| $\ell$ 에서 조건 완화(relaxed) | $\le+1$ | $\ge-1$ |
-| $\ell$ 에서 조건 강화(strict) | $\ge-1$ | $\le+1$ |
-| 둘 다 변하지 않는다 | 불가능 | 불가능 |
-
-Selmer 를 줄이려면 쌍대 쪽을 키우고, 쌍대를 죽이려면 그쪽 조건을 강화한다. Kolyvagin 소수와 Taylor–Wiles 소수는 이 표의 한 칸을 원하는 방향으로 쓰기 위해 고르는 소수다.
-
-## 비분기부와 유한성
-
-가운데 항이 곱이 아니라 제한곱 $\prod'\_v$ 인 것은 유한성 때문이다. 거의 모든 자리에서 $M$ 이 비분기이고 그런 자리에서 $H^1(K_v,M)$ 의 "비분기부" $H^1_{\mathrm{ur}}(K_v,M)$ 는 $H^1(\hat{\mathbb Z},M^{I_v})$ 와 같다. 대역류는 유한 개 자리를 뺀 모든 곳에서 비분기이므로 상이 제한곱 안에 들어간다.
-
-비분기부는 국소 짝에 대해 스스로의 소멸자다. 거의 모든 자리에서 짝이 0 이 되므로 상호법칙의 무한합은 유한합이다. 조건의 기본값이 $L_v=H^1_{\mathrm{ur}}$ 인 것도 이 때문이다.
+이고, 오른쪽에 $A$ 가 없다. 세지 못하는 대역 항이 두 Selmer 군의 차이에서 사라진다.
 
 # 정의
 
@@ -125,6 +75,14 @@ $$
 
 여기서 $(-)^{\vee}$ 는 Pontryagin 쌍대다. $H^1(K,M)\to P^1(M)$ 의 상은 $H^1(K,M^{\ast})\to P^1(M^{\ast})$ 의 상의 소멸자이고, $M=M^{\ast}$ 이면 자기 소멸자, 곧 라그랑지안이다.
 
+$M=\mu_n$ 이면 $M^{\ast}=\mathbb Z/n$ 이고 마지막 세 항이 Brauer 군의 대역 열
+
+$$
+0\longrightarrow \mathrm{Br}(K)\lbrack n\rbrack\longrightarrow\bigoplus_v\mathrm{Br}(K_v)\lbrack n\rbrack\xrightarrow{\ \sum\mathrm{inv}\_v\ }\tfrac1n\mathbb Z/\mathbb Z\longrightarrow0
+$$
+
+이 된다. 9 항 완전열은 이 열의 계수 $M$ 판본이다.
+
 ## Tate–Shafarevich 군의 쌍대성
 
 $$
@@ -167,7 +125,7 @@ $$
 \sum_v\mathrm{inv}\_v\big(\mathrm{loc}\_v(a)\cup\mathrm{loc}\_v(b)\big)=0
 $$
 
-이다. 합은 유한 개 항만 0 이 아니다.
+이다. 두 류는 유한 개 자리를 뺀 모든 곳에서 비분기이고 비분기부는 자기 소멸자이므로, 그 자리들에서 짝이 0 이고 합은 유한 개 항만 남는다.
 
 **증명.** $a\cup b\in H^2(K,\mu)$ 이고 $H^2(K,\mu_n)\subset\mathrm{Br}(K)[n]$ 이다. 컵곱은 국소화와 교환하므로 $\mathrm{loc}\_v(a)\cup\mathrm{loc}\_v(b)=\mathrm{loc}\_v(a\cup b)$ 이고, Brauer 군의 대역 열에서 $\mathrm{Br}(K)$ 의 원소는 국소 불변량의 합이 0 이다. $\square$
 
@@ -186,7 +144,7 @@ $$
 
 좌변의 두 군은 대역적이라 계산하기 어렵지만 그 비는 국소 계산으로 확정된다. 둘 중 하나를 다른 수단으로 잡으면 나머지가 결정된다. Euler 계는 쌍대 Selmer 를 죽여 왼쪽을 잡고, Taylor–Wiles 는 소수를 붙여 쌍대 Selmer 를 죽인 뒤 접공간의 차원을 고정한다.
 
-$\dim$ 으로 쓰면 직관 절의 선형대수 항등식이 된다. 자기쌍대 $M$ 과 $H^0=0$ 인 경우
+자기쌍대 $M$ 과 $H^0=0$ 인 경우 $\dim$ 으로 쓰면
 
 $$
 \dim\mathrm{Sel}\_{L}-\dim\mathrm{Sel}\_{L^{\ast}}=\sum_v\Big(\dim L_v-\dim H^{0}(K_v,M)\Big)
@@ -235,6 +193,8 @@ $$
 
 이다. 쌍대 Selmer 에 $\ell$ 에서 보이는 원소가 있으면 완화해도 Selmer 가 커지지 않는다. 거꾸로 쌍대 Selmer 를 죽이려면 그 원소가 보이는 자리를 골라 완화한다. [Chebotarev](chebotarev.md) 가 그런 자리의 존재를 보장한다.
 
+$\dim L_\ell$ 을 1 늘리면 $\dim L^{\ast}\_\ell$ 이 1 줄어 차이 공식의 오른쪽이 1 늘고, 위 완전열에서 $\dim\mathrm{Sel}\_{L'}-\dim\mathrm{Sel}\_{L}$ 과 $\dim\mathrm{Sel}\_{L^{\ast}}-\dim\mathrm{Sel}\_{L'^{\ast}}$ 은 각각 0 이나 1 이다. 그러므로 Selmer 가 1 커지거나 쌍대 Selmer 가 1 작아지고, 둘 중 하나만 일어난다. Kolyvagin 소수와 Taylor–Wiles 소수는 원하는 쪽이 일어나는 자리로 고른 소수다.
+
 # 활용
 
 ## 하강과 Selmer 군의 크기
@@ -249,9 +209,9 @@ $$
 \dim H^1_{\mathcal L}-\dim H^1_{\mathcal L^{\ast}}=\text{국소 항의 합}
 $$
 
-이 되고 오른쪽은 국소 계산으로 얻는다. Taylor–Wiles 는 $q\equiv1\ (\mathrm{mod}\ p^{n})$ 인 보조 소수를 $r=\dim H^1_{\mathcal L^{\ast}}$ 개 골라 그 자리들에서 조건을 완화한다. Chebotarev 로 각 소수가 쌍대 Selmer 의 원소 하나씩을 보도록 고르면 위 표의 두 번째 행에 따라 쌍대 Selmer 가 한 칸씩 줄고, $r$ 번 반복하면 $0$ 이 된다. 접공간의 차원이 국소 항만으로 확정되어 패칭에 필요한 균일한 표현이 나온다.
+이 되고 오른쪽은 국소 계산으로 얻는다. Taylor–Wiles 는 $q\equiv1\ (\mathrm{mod}\ p^{n})$ 인 보조 소수를 $r=\dim H^1_{\mathcal L^{\ast}}$ 개 골라 그 자리들에서 조건을 완화한다. Chebotarev 로 각 소수가 쌍대 Selmer 의 원소 하나씩을 보도록 고르면 완화한 자리마다 쌍대 Selmer 가 1 줄고, $r$ 번 반복하면 $0$ 이 된다. 접공간의 차원이 국소 항만으로 확정되어 패칭에 필요한 균일한 표현이 나온다.
 
-## Euler 계 논법의 요지
+## Euler 계 논법
 
 Euler 계는 상호법칙의 합에서 한 항만 남게 대역류를 설계한다. 유도류 $\kappa_n$ 이 $n$ 밖에서 Selmer 조건을 만족하면 그 자리들에서 짝이 0 이고, 남은 $\ell$ 자리의 짝도 0 이라는 결론이 $\mathrm{loc}\_\ell(s)=0$ 을 강제한다.
 
