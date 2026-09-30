@@ -20,8 +20,6 @@ Weil 추측의 진술과 Frobenius 고윳값 언어는 Galois 표현에서, 지�
 
 # 직관
 
-## 지수합 번역
-
 [유한체](finite-fields.md)에서 방정식의 해를 세는 표준 기법은 덧셈 지표다. $\psi:\mathbb F_p\to\mu_p$ 를 비자명한 덧셈 지표라 하면 직교성이 지시함수를 준다.
 
 $$
@@ -35,55 +33,9 @@ $$
 \char35{}\lbrace x:f(x)=0\rbrace=\frac1q\sum_{t\in\mathbb F_q}\sum_{x}\psi\big(\mathrm{Tr}\_{\mathbb F_q/\mathbb F_p}(tf(x))\big)
 $$
 
-가 된다. 기하 문제가 $\sum_x\psi(\mathrm{Tr}\thinspace f(x))$ 꼴의 지수합 하나로 바뀐다. Gauss 합은 $f(x)=ax$ 에 곱셈 지표를 곁들인 사례이고 Kloosterman 합은 $f(x)=ax+b/x$ 다.
+가 되고, 기하 문제가 $\sum_x\psi(\mathrm{Tr}\thinspace f(x))$ 꼴의 지수합 하나로 바뀐다. Gauss 합은 $f(x)=ax$ 에 곱셈 지표를 곁들인 사례이고 Kloosterman 합은 $f(x)=ax+b/x$ 다.
 
-## 분해함수
-
-$\psi$ 는 유한군 위의 함수라 미분도 급수전개도 없다. 복소수 쪽에서 $\psi$ 의 값 $e^{2\pi ik/p}$ 는 단위원 위에 흩어진 점이다.
-
-$p$ 진 세계에서는 $\psi$ 가 해석함수의 값으로 실현된다. $\pi\in\mathbb C_p$ 를 $\pi^{p-1}=-p$ 인 원소로 잡으면 $\mathrm{ord}\_p\pi=\frac1{p-1}$ 이고 $\zeta_p=1+\pi+O(\pi^2)$ 꼴의 $p$ 제곱근이 존재한다. $p$ 진 지수함수는 $\mathrm{ord}\_p(x)\gt\frac1{p-1}$ 에서만 수렴하므로 $\exp(\pi x)$ 의 수렴반경이 $1$ 에 못 미치는데, Teichmüller 대표원은 절댓값이 정확히 $1$ 이다.
-
-Dwork 의 **분해함수**가 이 벽을 넘는다.
-
-$$
-\theta(x)=\exp\big(\pi(x-x^p)\big)=\sum_{m\ge0}\theta_mx^m,
-\qquad
-\mathrm{ord}\_p\theta_m\ \ge\ \frac{(p-1)m}{p^2}
-$$
-
-$-\pi x^p$ 항을 더하면 수렴반경이 $p^{(p-1)/p^2}\gt 1$ 로 늘어나 닫힌 단위원판을 넘어서 수렴한다. 이 초과수렴(overconvergence)이 뒤에서 작용소를 완전연속으로 만든다.
-
-분모가 사라지는 현상은 Artin–Hasse 지수함수에서 가장 뚜렷하다.
-
-$$
-E_p(x)=\exp\Big(\sum_{k\ge0}\frac{x^{p^k}}{p^k}\Big)\in\mathbb Z_{(p)}[[x]]
-$$
-
-$\exp(x)$ 의 계수 $1/n!$ 이 분모에 $p$ 를 끌고 오는데 $x^p/p+x^{p^2}/p^2+\cdots$ 를 더하면 그 분모가 상쇄된다. Dwork 의 $\theta$ 는 같은 상쇄를 $\pi$ 위에서 일으켜 수렴반경을 $1$ 보다 크게 만든다.
-
-## 대각합과 Fredholm 행렬식
-
-$\theta$ 가 있으면 지수합이 해석적 대상이 된다. Dwork 의 대각합 공식은 토러스 $(\mathbb F_{q^n}^\times)^m$ 위의 지수합을 작용소 하나로 정리한다.
-
-$$
-S_n(f)=\sum_{x\in(\mathbb F_{q^n}^\times)^m}\psi\big(\mathrm{Tr}\_{\mathbb F_{q^n}/\mathbb F_p}f(x)\big)
-=(q^n-1)^m\thinspace\mathrm{Tr}(\alpha^n)
-$$
-
-여기서 $\alpha$ 는 $\theta$ 로 만든 급수를 곱한 뒤 $p$ 제곱근을 취하는 작용소이고, 무한차원 공간 위에서 **완전연속**이다. 완전연속이면 Fredholm 행렬식 $\det(1-T\alpha)$ 가 정의되고 $p$ 진 정함수이며
-
-$$
-\det(1-T\alpha)^{-1}=\exp\Big(\sum_{n\ge1}\frac{\mathrm{Tr}(\alpha^n)}{n}T^n\Big)
-$$
-
-가 성립한다. $(q^n-1)^m$ 을 이항전개해서 넣으면 $L$ 함수가 정함수의 유한 곱과 비로 표현된다.
-
-$$
-L(f,T)=\exp\Big(\sum_{n\ge1}\frac{S_n}{n}T^n\Big)
-=\prod_{j=0}^{m}\det(1-q^jT\alpha)^{(-1)^{m-j+1}\binom mj}
-$$
-
-오른쪽은 $\mathbb C_p$ 전체에서 유리형이다. 유리함수라는 결론은 Borel–Dwork 판정이 준다.
+여기서 막히는 것은 $\psi$ 가 유한군 위의 함수라 미분도 급수전개도 없다는 점이다. 복소수 쪽에서 $\psi$ 의 값 $e^{2\pi ik/p}$ 는 단위원 위에 흩어진 점일 뿐이다. $p$ 진 쪽에서는 $\pi^{p-1}=-p$ 인 $\pi$ 를 잡아 $\exp(\pi x)$ 로 $\psi$ 를 실현할 수 있을 것 같지만, $p$ 진 지수함수가 $\mathrm{ord}\_p(x)\gt\frac1{p-1}$ 에서만 수렴해 절댓값이 정확히 $1$ 인 Teichmüller 대표원을 넣을 수 없다. 이 벽을 넘는 급수가 Dwork 의 분해함수다.
 
 # 정의
 
@@ -107,6 +59,14 @@ $\pi\in\mathbb C_p$ 는 $\pi^{p-1}=-p$ 의 근이고, $\theta(x)=\exp(\pi(x-x^p)
 
 $q=p^s$ 인 $\mathbb F_q$ 로 올릴 때는 $\Theta(x)=\prod_{i=0}^{s-1}\theta(x^{p^i})$ 를 쓴다. 그러면 $\Theta(\hat a)=\psi(\mathrm{Tr}\_{\mathbb F_q/\mathbb F_p}a)$ 다.
 
+계수의 부치는 $\mathrm{ord}\_p\theta_m\ge\frac{(p-1)m}{p^2}$ 이다. $\exp(\pi x)$ 에 $-\pi x^p$ 항을 더한 것이 수렴반경을 $1$ 보다 크게 만들고, 이 초과수렴(overconvergence)이 뒤의 작용소를 완전연속으로 만든다. 같은 상쇄가 Artin–Hasse 지수함수에서 가장 뚜렷하다.
+
+$$
+E_p(x)=\exp\Big(\sum_{k\ge0}\frac{x^{p^k}}{p^k}\Big)\in\mathbb Z_{(p)}[[x]]
+$$
+
+$\exp(x)$ 의 계수 $1/n!$ 이 분모에 $p$ 를 끌고 오는데 $x^p/p+x^{p^2}/p^2+\cdots$ 를 더하면 그 분모가 상쇄된다.
+
 ## 완전연속 작용소와 Fredholm 행렬식
 
 $p$ 진 Banach 공간 $B$ 위의 연속선형작용소 $\alpha$ 가 **완전연속**(completely continuous, Serre 의 용어)이라 함은 유한계수 작용소의 노름극한이라는 뜻이다. 이때 $\alpha$ 의 행렬 $(a_{ij})$ 에 대해
@@ -118,6 +78,30 @@ c_k=\sum_{i_1\lt\dots\lt i_k}\det\big(a_{i_\mu i_\nu}\big)\_{1\le\mu,\nu\le k}
 $$
 
 가 잘 정의되고 $T$ 의 정함수다. 고윳값 이론이 유한차원처럼 작동한다는 것이 Serre 의 정리다.
+
+## 대각합 공식
+
+Dwork 의 대각합 공식은 토러스 $(\mathbb F_{q^n}^\times)^m$ 위의 지수합을 작용소 하나로 정리한다.
+
+$$
+S_n(f)=\sum_{x\in(\mathbb F_{q^n}^\times)^m}\psi\big(\mathrm{Tr}\_{\mathbb F_{q^n}/\mathbb F_p}f(x)\big)
+=(q^n-1)^m\thinspace\mathrm{Tr}(\alpha^n)
+$$
+
+$\alpha$ 는 $\Theta$ 로 만든 급수를 곱한 뒤 $p$ 제곱근을 취하는 작용소이고 완전연속이다. Fredholm 행렬식이
+
+$$
+\det(1-T\alpha)^{-1}=\exp\Big(\sum_{n\ge1}\frac{\mathrm{Tr}(\alpha^n)}{n}T^n\Big)
+$$
+
+를 만족하므로, $(q^n-1)^m$ 을 이항전개해 넣으면 $L$ 함수가 정함수의 유한 곱과 비가 된다.
+
+$$
+L(f,T)=\exp\Big(\sum_{n\ge1}\frac{S_n}{n}T^n\Big)
+=\prod_{j=0}^{m}\det(1-q^jT\alpha)^{(-1)^{m-j+1}\binom mj}
+$$
+
+오른쪽은 $\mathbb C_p$ 전체에서 유리형이다.
 
 ## Kloosterman 합
 
