@@ -20,55 +20,29 @@ $$
 
 # 직관
 
-## 정칙성과 모듈러성의 맞바꿈
+무게 $k$ , 준위 $N$ 의 정칙 모듈러 형식 공간은 유한차원이고 차원 공식이 명시적이다. Ramanujan 의 $f(q)$ 는 그 공간의 어느 원소와도 유한한 차이로 일치하지 않으므로, 정칙성과 모듈러성을 함께 요구하는 한 이론 안에 들어올 자리가 없다. 둘 중 하나를 놓아야 한다.
 
-무게 $k$ 와 준위 $N$ 의 정칙 모듈러 형식 공간은 유한차원이고 차원 공식이 명시적이다. 그 드묾이 항등식을 뽑는 힘이면서 이론 바깥에 남는 급수를 많이 만든다.
+정칙성을 놓는다. 정칙 함수는 무게 $k$ 쌍곡 Laplace 작용소 $\Delta_k$ 의 핵에 있으므로, 핵에 있는 실해석 함수까지 허용하면 공간이 넓어지고 변환법칙은 그대로 남는다. 넓힌 만큼을 재는 것이 하강 작용소 $\xi_k$ 다. $\xi_k$ 가 정칙 함수를 $0$ 으로 보내므로 $\xi_k\widehat h$ 는 $\widehat h$ 가 정칙에서 벗어난 정도만 보고, 그 값이 무게 $2-k$ 의 모듈러 형식 $g$ , 곧 shadow 다.
 
-Zwegers 의 처방은 정칙 + 모듈러를 조화 + 모듈러로 바꾸는 것이다. 무게 $k$ 쌍곡 Laplace 작용소
+# 정의
+
+## 쌍곡 Laplace 작용소
+
+$\tau=x+iy\in\mathbb H$ 에 대해 무게 $k$ 쌍곡 Laplace 작용소는 다음이다.
 
 $$
-\Delta_k=-y^2\left(\partial_x^2+\partial_y^2\right)+iky\left(\partial_x+i\partial_y\right),\qquad \tau=x+iy
+\Delta_k=-y^2\left(\partial_x^2+\partial_y^2\right)+iky\left(\partial_x+i\partial_y\right)
 $$
 
-의 핵에 있는 실해석 함수를 허용한다. 정칙 함수는 $\Delta_k$ 의 핵에 있으므로 진짜 확장이고, 핵의 여분 방향이 shadow 만큼이다.
+정칙 함수는 $\Delta_k$ 의 핵에 있고, 핵에는 정칙이 아닌 실해석 함수도 있다.
 
-두 방향을 가르는 도구가 하강 작용소다.
+## 하강 작용소
 
 $$
 \xi_k=2iy^k\overline{\frac{\partial}{\partial\bar\tau}}
 $$
 
-$\xi_k$ 는 무게 $k$ 를 무게 $2-k$ 로 보내고 정칙 함수를 $0$ 으로 보내므로, $\xi_k\widehat h$ 는 $\widehat h$ 가 정칙에서 벗어난 정도만 본다. 그 값이 shadow 다.
-
-$$
-\xi_k\widehat h=g
-$$
-
-$h$ 는 $\widehat h$ 의 정칙 부분이고 $g$ 는 그 shadow 다. 보통 모듈러 형식을 더해도 shadow 가 같으므로 대응은 $h \bmod M_k$ 수준에서 일대일이다.
-
-## 보정항의 출처
-
-무게 $k$ 첨점형식 $g$ 의 **비정칙 Eichler 적분**은 다음이다.
-
-$$
-g^\ast(\tau)=\left(\frac{i}{2\pi}\right)^{k-1}\int_{-\bar\tau}^{i\infty}\frac{\overline{g(-\bar z)}}{(z+\tau)^{k}}\thinspace dz
-$$
-
-정칙 Eichler 적분은 하한을 $\tau$ 로 두고 주기 다항식만큼 모듈러성이 깨지는데, 하한을 켤레로 바꾸면 그 깨짐이 사라지고 대신 정칙성이 깨진다.
-
-$g=\sum b_n q^n$ 을 대입하면 보정항이 불완전 감마 함수의 급수가 된다. 무게 $1/2$ mock 에 대응하는 무게 $3/2$ shadow $g=\sum_{n\ge 0} b_n q^{n}$ 에서는 다음 꼴이다.
-
-$$
-g^\ast(\tau)=\sum_{n\gt 0}\overline{b_n}\thinspace n^{-1/2}\thinspace\Gamma\negthinspace\left(-\tfrac12,4\pi n y\right)q^{-n}
-$$
-
-$\Gamma(-1/2,\cdot)$ 안에 $y$ 가 있어 $\bar\tau$ 의존성이 생긴다. 계수에 $q^{-n}$ 이 붙으므로 보정항은 정칙 부분과 반대 방향으로 자라고, 둘이 합쳐져야 첨점에서의 증가가 통제된다.
-
-## Ramanujan 이 본 점근
-
-$q\to\zeta$ (단위근) 로 갈 때 $\widehat h$ 는 모듈러이므로 변환법칙에서 점근 전개가 나온다. $h=\widehat h-g^\ast$ 이고 $g^\ast$ 는 그 극한에서 $y^{1-k}$ 규모이므로, $h$ 의 점근은 모듈러 형식의 점근과 주요항이 같고 차이는 한 차수 낮은 곳에 나타난다. Ramanujan 은 주요항을 보았고 보정항은 그의 계산 정밀도 아래에 있었다.
-
-# 정의
+$\xi_k$ 는 무게 $k$ 를 무게 $2-k$ 로 보내고 정칙 함수를 $0$ 으로 보낸다.
 
 ## 조화 Maass 형식
 
@@ -85,6 +59,24 @@ $$
 $$
 
 정칙 부분 $h$ 가 **mock 모듈러 형식**, $g=\xi_k\widehat h$ 가 그 **shadow** 다. $g$ 는 무게 $2-k$ 의 모듈러 형식이고 위 전개의 $c^-$ 가 $g$ 의 계수를 켤레한 것으로 결정된다.
+
+## 비정칙 Eichler 적분
+
+무게 $k$ 첨점형식 $g$ 의 **비정칙 Eichler 적분**은 다음이다.
+
+$$
+g^\ast(\tau)=\left(\frac{i}{2\pi}\right)^{k-1}\int_{-\bar\tau}^{i\infty}\frac{\overline{g(-\bar z)}}{(z+\tau)^{k}}\thinspace dz
+$$
+
+정칙 Eichler 적분은 하한을 $\tau$ 로 두고 주기 다항식만큼 모듈러성이 깨지는데, 하한을 켤레로 바꾸면 그 깨짐이 사라지고 대신 정칙성이 깨진다. $\widehat h=h+g^\ast$ 가 조화 Maass 형식이 되는 보정항이 이것이다.
+
+$g=\sum b_n q^n$ 을 대입하면 보정항이 불완전 감마 함수의 급수가 된다. 무게 $1/2$ mock 에 대응하는 무게 $3/2$ shadow $g=\sum_{n\ge 0} b_n q^{n}$ 에서는 다음 꼴이다.
+
+$$
+g^\ast(\tau)=\sum_{n\gt 0}\overline{b_n}\thinspace n^{-1/2}\thinspace\Gamma\negthinspace\left(-\tfrac12,4\pi n y\right)q^{-n}
+$$
+
+$\Gamma(-1/2,\cdot)$ 안에 $y$ 가 있어 $\bar\tau$ 의존성이 생긴다. 계수에 $q^{-n}$ 이 붙으므로 보정항은 정칙 부분과 반대 방향으로 자라고, 둘이 합쳐져야 첨점에서의 증가가 통제된다.
 
 ## Appell–Lerch 합
 
@@ -155,6 +147,10 @@ $$
 $$
 
 Andrews–Dragonette 추측이 이 공식의 따름결과로 해결되었다. [분할수](partitions.md) 쪽 원법의 계산이 재사용되고 Kloosterman 합 자리에 다른 곱수계가 들어간다.
+
+## 단위근에서의 점근
+
+$q\to\zeta$ 가 단위근으로 갈 때 $\widehat h$ 는 모듈러이므로 변환법칙에서 점근 전개가 나온다. $h=\widehat h-g^\ast$ 이고 $g^\ast$ 는 그 극한에서 $y^{1-k}$ 규모이므로, $h$ 의 점근은 모듈러 형식의 점근과 주요항이 같고 차이는 한 차수 낮은 곳에 나타난다. Ramanujan 의 편지가 보고한 점근이 이 주요항이다.
 
 ## Ramanujan 의 17 개와 차수
 
