@@ -24,74 +24,9 @@ Elkies 와 Atkin 의 개선은 $\psi_\ell$ 의 차수를 $(\ell^2-1)/2$ 에서 $
 
 # 직관
 
-## 잉여 계산과 Hasse 한계
+$a_p\bmod\ell$ 은 $E[\ell]$ 위에서 $\varphi^2+p=t\varphi$ 를 $t=0,1,\dots,\ell-1$ 에 대해 시험해 얻는다. 시험하려면 $\ell$ 등분점의 좌표가 있어야 하는데, 그 점이 정의되는 확대체의 차수는 $\ell^2-1$ 규모까지 커진다. 점 하나를 구하는 비용이 점을 전부 세는 비용과 다를 바 없어진다.
 
-$a_p$ 를 직접 계산하는 것은 점을 세는 일이라 어렵다. $a_p\bmod\ell$ 은 $\ell$ 등분점이라는 작은 유한 대상 위의 계산이다.
-
-$E[\ell]$ 은 원소가 $\ell^2$ 개인 군이고 $\ell$ 은 $100$ 미만이다. $p$ 가 커져도 $E[\ell]$ 의 크기는 변하지 않고, $p$ 의 크기는 $x^p$ 를 반복제곱으로 계산하는 $O(\log p)$ 번의 곱셈에만 들어간다.
-
-잉여를 모으는 일이 끝나는 지점도 미리 안다. Hasse 한계 $|a_p|\le2\sqrt p$ 가 길이 $4\sqrt p$ 인 구간을 주므로 $\prod\ell$ 이 그 길이를 넘으면 잉여류 안에 정수가 하나뿐이다. $\prod_{\ell\le L}\ell\approx e^L$ 이므로 $L\approx\log(4\sqrt p)=O(\log p)$ 면 충분하고, 필요한 가장 큰 $\ell$ 이 $\log p$ 규모로 자란다.
-
-## E[l] 위의 Frobenius 행렬
-
-$\varphi(x,y)=(x^p,y^p)$ 는 $E(\overline{\mathbb F_p})$ 의 군 자기준동형이다. $E[\ell]$ 은 $\varphi$ 로 보존되고($\ell$ 배해서 $O$ 가 되는 성질이 $\varphi$ 에 보존된다) $\mathbb F_\ell$ 위의 2 차원 벡터공간이다. 그러므로 $\varphi|\_{E[\ell]}$ 은 $2\times2$ 행렬이고
-
-$$
-\mathrm{tr}\big(\varphi|\_{E[\ell]}\big)\equiv a_p,
-\qquad
-\det\big(\varphi|\_{E[\ell]}\big)\equiv p
-\pmod\ell
-$$
-
-다. [행렬식](determinants.md)은 검산에 쓴다.
-
-이 행렬은 [Galois 표현](galois-representations.md) $\rho_{E,\ell}:\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\mathbb F_\ell)$ 의 Frobenius 에서의 값이다. 이론의 등식 $\mathrm{tr}\thinspace\rho(\mathrm{Frob}\_p)=a_p$ 를 알고리즘에서는 행렬을 만들어 대각합으로 계산한다.
-
-## 등분점을 구하지 않는 계산
-
-$\ell$ 등분점이 정의되는 확대체의 차수는 클 수 있다. Schoof 의 방법은 점을 구하지 않는 것이다.
-
-$\ell$ 등분점의 $x$ 좌표는 나눗셈 다항식 $\psi_\ell(x)$ 의 근이다. $E[\ell]$ 위의 항등식을 확인하는 일이 환
-
-$$
-R=\mathbb F_p[x,y]\big/\big(\psi_\ell(x),\thinspace y^2-f(x)\big)
-$$
-
-안의 계산이 된다. $\psi_\ell$ 이 기약이 아니어도 되므로 이 환은 체가 아니지만 계산에는 지장이 없다. 항등식
-
-$$
-(x^{p^2},y^{p^2})+p\cdot(x,y)=t\cdot(x^p,y^p)
-$$
-
-를 $R$ 안에서 $t=0,1,\dots,\ell-1$ 에 대해 시험하고, 성립하는 $t$ 가 $a_p\bmod\ell$ 이다. 근을 구하지 않고 몫환에서 형식적으로 계산한다.
-
-비용은 $\deg\psi_\ell=(\ell^2-1)/2$ 가 정한다. $R$ 에서의 곱셈이 그 차수의 다항식 곱셈이다.
-
-## Elkies 소수와 Atkin 소수
-
-$\varphi$ 의 특성다항식 $X^2-a_pX+p$ 를 $\bmod\ell$ 로 보았을 때 두 가지가 갈린다.
-
-- **Elkies 소수.** 판별식 $a_p^2-4p$ 가 $\bmod\ell$ 에서 제곱이다. $\varphi$ 가 $\mathbb F_\ell$ 안에 고윳값을 갖고 $E[\ell]$ 안에 $\varphi$ 가 보존하는 1 차원 부분군 $C$ 가 있다. $C$ 에 대응하는 인수 $g_\ell(x)$ 는 차수가 $(\ell-1)/2$ 로 $\psi_\ell$ 보다 $\ell$ 배 작다.
-- **Atkin 소수.** 판별식이 제곱이 아니다. 고유부분군이 없으므로 위의 이득이 없다. $\varphi$ 의 $\mathbb F_{\ell^2}$ 안에서의 고윳값의 위수가 $a_p^2/p\bmod\ell$ 의 값을 몇 가지 후보로 좁힌다.
-
-판정과 $g_\ell$ 의 계산에는 모듈러 다항식 $\Phi_\ell(X,Y)$ 를 쓴다. $\Phi_\ell(j(E),Y)$ 가 $\mathbb F_p$ 에서 근을 가지면 Elkies 소수이고, 그 근이 $\ell$ 차 동종사상으로 연결된 곡선의 $j$ 불변량이다. $\Phi_\ell$ 은 모듈러 곡선 $X_0(\ell)$ 의 평면 모델이고, $X_0(\ell)$ 이 $\ell$ 차 부분군을 가진 타원곡선을 매개변수화한다는 사실이 알고리즘의 근거다.
-
-```mermaid
-graph TD
-  E["E / F_p,  a_p 를 구하라"] --> H["Hasse : |a_p| ≤ 2√p"]
-  E --> L["작은 소수 ℓ 마다 a_p mod ℓ"]
-  L --> DIV["나눗셈 다항식 ψ_ℓ<br/>deg = (ℓ²−1)/2"]
-  DIV --> SCH["Schoof : R 안에서<br/>φ²+p = tφ 를 t 마다 시험"]
-  L --> MOD["모듈러 다항식 Φ_ℓ<br/>= X_0(ℓ) 의 평면 모델"]
-  MOD --> EK{"Φ_ℓ(j(E),Y) 가<br/>F_p 에서 근을 갖는가"}
-  EK -->|예| ELK["Elkies 소수<br/>인수 g_ℓ, deg = (ℓ−1)/2<br/>고윳값을 직접 구한다"]
-  EK -->|아니오| ATK["Atkin 소수<br/>고윳값의 위수로 후보를 좁힌다"]
-  SCH --> CRT
-  ELK --> CRT
-  ATK --> CRT["CRT : ∏ℓ > 4√p 이면 확정"]
-  H --> CRT
-  CRT --> AP["a_p,  #E(F_p) = p+1−a_p"]
-```
+점을 구하지 않고 시험한다. $\ell$ 등분점의 $x$ 좌표는 나눗셈 다항식 $\psi_\ell(x)$ 의 근이므로, 항등식의 확인이 몫환 $R=\mathbb F_p[x,y]\big/\big(\psi_\ell(x),\thinspace y^2-f(x)\big)$ 안의 형식적 계산이 된다. $\psi_\ell$ 이 기약이 아니어서 $R$ 은 체가 아니지만, 항등식이 $\ell$ 등분점 전체에서 성립하는지만 보므로 지장이 없다. 비용은 $\deg\psi_\ell=(\ell^2-1)/2$ 차 다항식의 곱셈이 정하고, $E[\ell]$ 의 크기는 $p$ 와 무관하므로 $p$ 는 $x^p$ 를 반복제곱하는 $O(\log p)$ 번의 곱셈에만 들어간다.
 
 # 정의
 
@@ -141,7 +76,7 @@ $\Phi_\ell(X,Y)\in\mathbb Z[X,Y]$ 는 $X_0(\ell)$ 의 평면 모델을 주는 �
 
 > $\Phi_\ell(j_1,j_2)=0$ 인 것은 $j$ 불변량이 $j_1,j_2$ 인 두 타원곡선 사이에 차수 $\ell$ 의 순환 동종사상이 있다는 것과 동치다.
 
-$\mathbb F_p$ 에서 $\Phi_\ell(j(E),Y)$ 의 근의 개수는 $0,1,2,\ell+1$ 중 하나이고, 그 개수가 $\varphi$ 의 $E[\ell]$ 위 작용의 꼴을 분류한다. 근이 있으면 Elkies 소수다.
+$\mathbb F_p$ 에서 $\Phi_\ell(j(E),Y)$ 의 근의 개수는 $0,1,2,\ell+1$ 중 하나이고, 그 개수가 $\varphi$ 의 $E[\ell]$ 위 작용의 꼴을 분류한다. 근이 있으면 Elkies 소수다. 근이 있다는 것은 판별식 $a_p^2-4p$ 가 $\bmod\ell$ 에서 제곱이라는 것과 같고, 그때 $E[\ell]$ 안에 $\varphi$ 가 보존하는 1 차원 부분군이 있다.
 
 ## 알고리즘
 
@@ -160,6 +95,8 @@ Schoof 원본은 $\tilde O(\log^5p)$ 이고 Elkies–Atkin 개선으로 $\tilde 
 
 > $\ell\ne p$ 인 소수에 대해 $\varphi$ 는 $E[\ell]\cong(\mathbb Z/\ell)^2$ 위의 $\mathbb F_\ell$ [선형사상](linear-maps.md)이고
 > $$\mathrm{tr}\equiv a_p\pmod\ell,\qquad\det\equiv p\pmod\ell$$
+
+이 행렬은 [Galois 표현](galois-representations.md) $\rho_{E,\ell}:\mathrm{Gal}(\overline{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\mathbb F_\ell)$ 의 Frobenius 에서의 값이고, 이론의 등식 $\mathrm{tr}\thinspace\rho(\mathrm{Frob}\_p)=a_p$ 를 알고리즘에서는 행렬을 만들어 대각합으로 계산한다. [행렬식](determinants.md)은 검산에 쓴다.
 
 $\ell=p$ 를 뺀 것은 $E[p]$ 가 $(\mathbb Z/p)^2$ 가 아니기 때문이다. 보통 곡선이면 $\mathbb Z/p$ 이고 초특이면 자명군이다. 이 퇴화가 [Newton 다각형](newton-polygon.md)의 보통과 초특이 구분에 대응한다.
 
@@ -209,7 +146,7 @@ $p$ 가 $5$ 에서 $2^{61}-1$ 로 $18$ 자리 커지는 동안 필요한 가장 
 - **안전성 조건 확인.** $\char35{}E(\mathbb F_p)=p$ 인 **비정상(anomalous)** 곡선은 이산로그가 선형시간에 풀리고, $\char35{}E$ 가 $p^k-1$ 을 작은 $k$ 에서 나누면 MOV(Menezes–Okamoto–Vanstone) 공격으로 [유한체](finite-fields.md) 이산로그로 환원된다. 위수를 알아야 이 조건들을 검사할 수 있다.
 - **곡선 개수 세기.** 주어진 위수를 갖는 곡선을 찾거나(복소곱셈법의 역방향), 위수 분포를 실험적으로 조사하는 데 쓰인다.
 - **수치 실험.** 대량의 $a_p$ 표가 [Sato–Tate 분포](sato-tate.md)나 BSD(Birch–Swinnerton-Dyer) 추측의 수치 검증에 쓰이고, 큰 $p$ 영역의 표를 SEA 가 만든다.
-- **$\ell$ 진 표현의 계산.** $\varphi|\_{E[\ell]}$ 의 행렬이 Galois 표현 $\rho_{E,\ell}$ 의 Frobenius 에서의 상이다. 상이 $\mathrm{GL}\_2(\mathbb F_\ell)$ 전체인지 판정하는 Serre 의 문제를 계산할 때 이 행렬을 쓴다.
+- **$\ell$ 진 표현의 계산.** $\rho_{E,\ell}$ 의 상이 $\mathrm{GL}\_2(\mathbb F_\ell)$ 전체인지 판정하는 Serre 의 문제를 계산할 때 $\varphi|\_{E[\ell]}$ 의 행렬을 쓴다.
 
 [^1]: R. Schoof, *Elliptic curves over finite fields and the computation of square roots mod p*, Math. Comp. **44** (1985), 483–494, 그리고 *Counting points on elliptic curves over finite fields*, J. Théor. Nombres Bordeaux **7** (1995), 219–254. Elkies–Atkin 개선의 표준 서술은 R. Lercier, F. Morain 의 논문들과 I. Blake, G. Seroussi, N. Smart, *Elliptic Curves in Cryptography* (1999) VII장. 나눗셈 다항식과 Hasse 정리는 J. Silverman, *The Arithmetic of Elliptic Curves* (2판, 2009) III, V장. 모듈러 다항식과 $X_0(\ell)$ 의 모듈러 해석은 F. Diamond, J. Shurman, *A First Course in Modular Forms* (2005) 8장.
 
