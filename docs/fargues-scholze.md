@@ -4,7 +4,7 @@
 
 [기하학적 Langlands 강령](geometric-langlands.md)은 곡선 $X$ 위의 다발 모듈라이 $\mathrm{Bun}\_G$ 위에서 전개된다. 함수체 쪽에는 곡선이 실제로 있다. $\mathbb Q_p$ 같은 $p$ 진체에는 곡선이 없다. 국소체 하나는 점 하나처럼 보이고, 그 위에 다발을 얹을 공간이 없다.
 
-Fargues 와 Scholze 의 출발점은 곡선을 만들어내는 것이었다[^1]. Fargues–Fontaine 곡선
+Fargues 와 Scholze 는 곡선을 먼저 만들었다[^1]. Fargues–Fontaine 곡선
 
 $$
 X_{\mathrm{FF}}=\mathrm{Proj}\Bigl(\bigoplus_{d\ge0}B^{\varphi=p^d}\Bigr)
@@ -16,46 +16,23 @@ $$
 D\bigl(\mathrm{Bun}\_G,\Lambda\bigr)\ \supset\ \text{기본 층화}\ \longleftrightarrow\ \mathrm{Rep}\bigl(G(\mathbb Q_p)\bigr)
 $$
 
-성과는 구체적이다. 임의의 축소군 $G$ 와 임의의 기약 스무스 표현 $\pi$ 에 대해, 반단순 $L$ 매개변수 $\varphi_\pi$ 가 **무조건적으로** 구성된다. 그전까지 국소 Langlands 는 $\mathrm{GL}\_n$ 과 일부 고전군에서만 알려져 있었다.
+임의의 축소군 $G$ 와 임의의 기약 스무스 표현 $\pi$ 에 대해, 반단순 $L$ 매개변수 $\varphi_\pi$ 가 **무조건적으로** 구성된다. 그전까지 국소 Langlands 는 $\mathrm{GL}\_n$ 과 일부 고전군에서만 알려져 있었다.
 
 [$p$ 진 Hodge 이론](p-adic-hodge-theory.md)의 재료가 여기에 그대로 쓰인다. $B_{\mathrm{cris}}$ 와 $A_{\mathrm{inf}}$ 와 틸팅과 perfectoid 가 전부 곡선의 부품으로 쓰인다. 그 이론에서 손으로 다루던 주기환들이 여기서는 한 곡선의 국소 구조로 정리된다.
 
 # 직관
 
-## 곡선과 여행 작용소
+$p$ 진 Hodge 이론의 isocrystal 을 하나 본다. $K_0=W(\overline{\mathbb F}\_p)\lbrack 1/p\rbrack$ 위의 2차원 벡터공간 $V=K_0e_1\oplus K_0e_2$ 에 Frobenius 준선형 사상 $\varphi$ 를 $\varphi(e_1)=e_2$, $\varphi(e_2)=pe_1$ 로 준다. 행렬식의 $p$ 진 부치가 $1$ 이고 계수가 $2$ 이므로 기울기는 $1/2$ 이다. 기울기가 정수가 아니어서 $\varphi$ 가 보존하는 1차원 부분공간이 없고, Dieudonné–Manin 분류는 모든 isocrystal 을 기울기 $\lambda\in\mathbb Q$ 의 이런 단순 조각의 직합으로 적는다.
 
-V. Lafforgue 가 함수체 위에서 자기동형 표현에 Galois 매개변수를 붙이는 방법을 찾았다. 요점은 **여행 작용소(excursion operator)** 다. 곡선 위 여러 점에서 Hecke 수정을 하고 다시 되돌아오는 고리를 만들면, 그 고리들이 이루는 대수의 작용이 매개변수를 결정한다. 이 방법의 전제는 곡선과 그 [기본군](fundamental-group.md)이다.
-
-$p$ 진체에는 둘 다 없었다. Fargues–Fontaine 곡선이 그 자리를 채운다. 기본군 역할은 Weil 군 $W\_{\mathbb Q_p}$ 가 하고, Hecke 수정은 곡선의 한 점 $\infty$ 에서 일어난다. 함수체에서 통하던 논법을 그대로 $p$ 진체로 옮기는 것이 전략이다.
-
-## 곡선의 성질
-
-$X_{\mathrm{FF}}$ 는 대수곡선이 아니다. [Noether 환](noetherian-rings.md) 위에 있지 않고, 유한형도 아니다. 그런데 곡선의 성질은 다 가지고 있다.
-
-- 모든 닫힌점의 국소환이 이산부치환이다.
-- 완비(complete)이고 류수가 0 이다.
-- $\mathrm{Pic}(X_{\mathrm{FF}})\cong\mathbb Z$ 이고 차수가 잘 정의된다.
-- 닫힌점들이 $\mathbb C_p$ 의 틸팅에서 오는 "미지의" 점들이다.
-
-[벡터다발](vector-bundles.md)이 분류된다. 대수곡선에서 $\mathbb P^1$ 위 다발이 $\bigoplus\mathcal O(n_i)$ 로 쪼개지는 것처럼, $X_{\mathrm{FF}}$ 위의 다발은
+$\mathbb P^1$ 위의 [벡터다발](vector-bundles.md)도 같은 모양으로 쪼개진다.
 
 $$
-\mathcal E\cong\bigoplus_i\mathcal O(\lambda_i),\qquad \lambda_i\in\mathbb Q
+\mathcal E\cong\bigoplus_i\mathcal O(n_i),\qquad n_i\in\mathbb Z
 $$
 
-로 쪼개진다. 기울기는 정수가 아니라 **유리수**다. 그리고 이 분류는 Dieudonné–Manin 의 isocrystal 분류와 정확히 같은 모양이다. $p$ 진 Hodge 이론에서 $\varphi$ 가군을 기울기로 분해하던 것이 곡선 위 다발의 Harder–Narasimhan 분해로 다시 나타난다.
+기울기를 다발의 차수로 읽으면 두 분류가 한 진술이 된다. 그런데 위 isocrystal 의 기울기는 $1/2$ 이고, $\mathbb P^1$ 에는 차수 $1/2$ 인 선다발이 없다.
 
-## $\mathrm{Bun}\_G$ 의 점
-
-$G$ 다발의 모듈라이 $\mathrm{Bun}\_G$ 를 만들면 그 점들이 Kottwitz 집합 $B(G)$ 로 분류된다. $G=\mathrm{GL}\_n$ 이면 곧 isocrystal 의 동형류이고, 기울기 다중집합으로 적힌다.
-
-기울기가 모두 같은 것을 **기본(basic)** 이라 한다. $n=2,d=1$ 의 $1/2$ 와 $n=4,d=2$ 의 $1/2,1/2$ 가 그렇다. 나머지는 기울기가 갈라진 비기본 원소다. 이 구분이 층화의 기준이다.
-
-$$
-\mathrm{Bun}\_G=\bigsqcup_{b\in B(G)}\mathrm{Bun}\_G^b
-$$
-
-기본 층 위에 $G(\mathbb Q_p)$ 의 매끄러운 표현론이 얹히고, 비기본 층 위에는 내부형식의 Levi 의 표현론이 얹힌다. 국소 Langlands 가 다루는 대상 전체가 하나의 공간 위에 층화되어 배열된다.
+차수가 유리수인 선다발을 갖는 곡선을 만들면 isocrystal 의 분류가 그 곡선 위 다발의 분류가 된다. 그 곡선이 Fargues–Fontaine 곡선 $X_{\mathrm{FF}}$ 이고, 기울기 $1/2$ 의 조각은 그 위의 계수 2 인 다발 $\mathcal O(1/2)$ 다. 곡선이 있으면 그 위의 $G$ 다발 모듈라이 $\mathrm{Bun}\_G$ 도 만들 수 있고, 기하학적 Langlands 의 논법을 $p$ 진체로 옮길 자리가 생긴다.
 
 # 정의
 
@@ -91,6 +68,39 @@ $$
 
 # 성질
 
+## 곡선의 국소 구조
+
+$X_{\mathrm{FF}}$ 는 대수곡선이 아니다. [Noether 환](noetherian-rings.md) 위에 있지 않고 유한형도 아니지만 다음을 만족한다.
+
+- 모든 닫힌점의 국소환이 이산부치환이다.
+- 완비(complete)이고 류수가 $0$ 이다.
+- $\mathrm{Pic}(X_{\mathrm{FF}})\cong\mathbb Z$ 이고 차수가 잘 정의된다.
+- 닫힌점들이 $\mathbb C_p$ 의 틸팅에서 온다.
+
+## 벡터다발의 기울기 분해
+
+$$
+\mathcal E\cong\bigoplus_i\mathcal O(\lambda_i),\qquad \lambda_i\in\mathbb Q
+$$
+
+지수가 정수가 아니라 유리수인 점만 빼면 $\mathbb P^1$ 위 다발의 Grothendieck 분해와 같은 진술이고, Dieudonné–Manin 의 isocrystal 분류와도 같다. $p$ 진 Hodge 이론에서 $\varphi$ 가군을 기울기로 분해하던 것이 곡선 위 다발의 Harder–Narasimhan 분해로 나타난다.
+
+## 기본 원소와 층화
+
+$\mathrm{Bun}\_G$ 의 점은 Kottwitz 집합 $B(G)$ 이고, $G=\mathrm{GL}\_n$ 이면 isocrystal 의 동형류, 곧 기울기 다중집합이다. 기울기가 모두 같은 원소를 **기본(basic)** 이라 한다. $n=2$, $d=1$ 의 $1/2$ 와 $n=4$, $d=2$ 의 $1/2,1/2$ 가 기본이고, 기울기가 갈라진 것은 비기본이다.
+
+$$
+\mathrm{Bun}\_G=\bigsqcup_{b\in B(G)}\mathrm{Bun}\_G^b
+$$
+
+기본 층 위에 $G(\mathbb Q_p)$ 의 매끄러운 표현론이 얹히고, 비기본 층 위에는 내부형식의 Levi 의 표현론이 얹힌다. 국소 Langlands 가 다루는 대상 전체가 한 공간 위에 층화되어 배열된다.
+
+## 여행 작용소
+
+V. Lafforgue 는 함수체 위에서 자기동형 표현에 Galois 매개변수를 붙일 때 **여행 작용소(excursion operator)** 를 썼다. 곡선 위 여러 점에서 Hecke 수정을 하고 되돌아오는 고리를 만들면 그 고리들이 이루는 대수의 작용이 매개변수를 결정한다. 이 논법은 곡선과 그 [기본군](fundamental-group.md)을 쓴다.
+
+$p$ 진체에서는 $X_{\mathrm{FF}}$ 가 곡선 자리를, Weil 군 $W\_{\mathbb Q_p}$ 가 기본군 자리를 맡고, Hecke 수정은 곡선의 한 점 $\infty$ 에서 일어난다.
+
 ## 정리의 범위
 
 | 주장 | 상태 |
@@ -101,7 +111,7 @@ $$
 | 꾸러미가 성분군의 표현으로 매개된다 | 아님 |
 | 대응이 전단사다 | 아님 |
 
-매개변수를 만드는 일과 꾸러미를 기술하는 일이 분리된다. 앞쪽은 기하가 해결하고 뒤쪽은 [Vogan 꾸러미](vogan-packets.md)와 내시 이론의 몫이다.
+매개변수를 만드는 일과 꾸러미를 기술하는 일이 분리된다. 매개변수는 기하로 만들고, 꾸러미의 기술은 [Vogan 꾸러미](vogan-packets.md)와 내시 이론이 맡는다.
 
 ## 범주적 국소 Langlands
 
