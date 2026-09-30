@@ -30,39 +30,16 @@ $$
 
 # 직관
 
-## 띠와 점
-
-Sato–Tate 와 Lang–Trotter 는 띠와 점의 차이다.
-
-$|a_p|\le\delta\cdot2\sqrt p$ 는 각의 구간을 지정한다. $\delta$ 가 작아도 구간의 길이가 양수이므로 Sato–Tate 측도가 양의 질량을 주고 그런 소수가 양의 밀도로 존재한다. 질량은 대략
+$\lvert a_p\rvert\le\delta\cdot2\sqrt p$ 를 만족하는 소수가 얼마나 흔한지 Sato–Tate 측도로 잰다. 이 조건은 각 $\theta_p$ 의 구간을 지정하고, 구간이 짧아도 길이가 양수이므로 측도가 양의 질량을 준다.
 
 $$
 \int_{\pi/2-\arcsin\delta}^{\pi/2+\arcsin\delta}\frac2\pi\sin^2\theta\thinspace d\theta\ \approx\ \frac{4\delta}\pi
 $$
 
-다.
+그런 소수는 양의 밀도로 있다. $a_p=0$ 은 구간이 아니라 한 점이다. $a_p$ 가 놓일 정수 자리가 $4\sqrt p$ 개이므로 한 자리를 맞출 확률이 $1/\sqrt p$ 로 줄어든다. 구간의 폭은 $\sqrt p$ 에 비례해 늘어나지만 점은 늘어나지 않는다.
 
-$a_p=0$ 은 점이다. $p$ 가 커질수록 $a_p$ 가 놓일 자리가 $4\sqrt p$ 개로 늘어나므로 한 자리를 맞출 확률이 $1/\sqrt p$ 로 줄어든다. 띠는 폭이 $\sqrt p$ 에 비례해 늘어나지만 점은 늘어나지 않는다.
+연속측도는 한 점의 질량이 $0$ 이라는 것만 주고 $0$ 으로 가는 속도는 주지 않는다. 속도를 알려면 $\bmod\ell$ 정보를 모든 $\ell$ 에서 모아야 한다.
 
-연속측도로는 점의 질량이 $0$ 이라는 것만 나오고 $0$ 으로 가는 속도는 나오지 않으므로, Sato–Tate 가 아무리 정밀해져도 Lang–Trotter 는 따라 나오지 않는다. 속도를 알려면 $\bmod\ell$ 정보를 모든 $\ell$ 에서 모아야 한다.
-
-## 상수의 오일러 곱
-
-$a_p=r$ 을 확인하려면 모든 $\ell$ 에서 $a_p\equiv r\pmod\ell$ 이어야 한다. [Galois 표현](galois-representations.md) $\rho_{E,\ell}$ 의 상 안에서 대각합이 $r$ 인 원소의 비율이 그 확률을 준다. 상이 $\mathrm{GL}\_2(\mathbb F_\ell)$ 전체라면 그 비율은 초등적으로 계산된다. 복소 곱셈(complex multiplication, CM)이 없으면 거의 모든 $\ell$ 에서 상이 전체다(Serre).
-
-그리고 [Chebotarev 밀도 정리](chebotarev.md)가 각 $\ell$ 에서의 밀도를 실제 소수의 밀도로 바꿔 준다. 서로 다른 $\ell$ 들이 독립이라 가정하면 확률이 곱해지고, 아르키메데스 쪽의 $1/\sqrt p$ 와 합쳐
-
-$$
-C_{E,r}=\frac2\pi\cdot\prod_\ell(\text{국소 인자})
-$$
-
-꼴이 나온다. 국소 조건을 곱하고 아르키메데스 밀도를 곱하는 구조가 Hardy–Littlewood 의 쌍둥이 소수 상수와 같고, 독립성을 증명할 방법이 없다는 어려움도 같다.
-
-## $r=0$ 의 특수성
-
-$a_p=0$ 은 $p$ 에서 곡선이 **초특이**라는 기하적 조건이고, [Newton 다각형](newton-polygon.md)의 기울기가 $\tfrac12,\tfrac12$ 라는 것, 형식군의 높이가 $2$ 라는 것과 같다. 산술 조건이 아니라 환원의 유형에 관한 조건이다.
-
-Elkies 의 증명은 이 기하를 쓴다. 초특이 소수가 유한하다고 가정하고 허수이차 차수의 Hilbert [유체론](class-field-theory.md)과 힐베르트 류다항식으로 모순을 끌어낸다. 초특이 $j$ 불변량이 $\mathbb F_{p^2}$ 에 살고 그 개수가 대략 $p/12$ 라는 것, 복소곱셈을 가진 곡선의 환원이 초특이가 되는 소수를 [이차 상호법칙](quadratic-reciprocity.md)으로 통제한다는 것이 재료다. $r\ne0$ 에는 이런 기하가 없다.
 # 정의
 
 ## Lang–Trotter 추측
@@ -111,6 +88,22 @@ $a_p$ 에 관한 진술은 다음 층으로 나뉜다.
 | 점의 무한성 | $a_p=0$ 이 무한히 많다 | Elkies — 정리 |
 
 아래로 갈수록 미세하고 어렵고, 위 층이 아래 층을 함의하지 않는다. 연속측도의 한 점이므로 Sato–Tate 를 정밀한 오차항과 함께 얻어도 Lang–Trotter 는 나오지 않는다.
+
+## 상수의 오일러 곱
+
+$a_p=r$ 을 확인하려면 모든 $\ell$ 에서 $a_p\equiv r\pmod\ell$ 이어야 한다. [Galois 표현](galois-representations.md) $\rho_{E,\ell}$ 의 상 안에서 대각합이 $r$ 인 원소의 비율이 그 확률을 준다. 상이 $\mathrm{GL}\_2(\mathbb F_\ell)$ 전체라면 그 비율은 초등적으로 계산된다. 복소 곱셈(complex multiplication, CM)이 없으면 거의 모든 $\ell$ 에서 상이 전체다(Serre).
+
+그리고 [Chebotarev 밀도 정리](chebotarev.md)가 각 $\ell$ 에서의 밀도를 실제 소수의 밀도로 바꿔 준다. 서로 다른 $\ell$ 들이 독립이라 가정하면 확률이 곱해지고, 아르키메데스 쪽의 $1/\sqrt p$ 와 합쳐
+
+$$
+C_{E,r}=\frac2\pi\cdot\prod_\ell(\text{국소 인자})
+$$
+
+꼴이 나온다. 국소 조건을 곱하고 아르키메데스 밀도를 곱하는 구조가 Hardy–Littlewood 의 쌍둥이 소수 상수와 같고, 독립성을 증명할 방법이 없다는 어려움도 같다.
+
+## 초특이 소수의 기하
+
+$a_p=0$ 은 $p$ 에서 곡선이 **초특이**라는 기하적 조건이고, [Newton 다각형](newton-polygon.md)의 기울기가 $\tfrac12,\tfrac12$ 라는 것, 형식군의 높이가 $2$ 라는 것과 같다. 산술 조건이 아니라 환원의 유형에 관한 조건이다.
 
 ## 관련 추측들
 
