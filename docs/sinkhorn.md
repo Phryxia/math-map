@@ -16,58 +16,15 @@ $u,v$ 를 로그로 옮겨 계산하면 작은 $\varepsilon$ 에서의 언더플
 
 # 직관
 
-## 엔트로피 항
-
-비용 $\langle C,P\rangle$ 는 $P$ 에 대해 선형이므로 최적 계획은 볼록집합의 꼭짓점에 놓이고, 질량을 쪼개지 않고 한 점을 한 점으로 보낸다.
-
-엔트로피 $H(P)=-\sum P_{ij}(\log P_{ij}-1)$ 는 질량이 퍼질수록 커진다. 목적함수에 $-\varepsilon H(P)$ 를 더하면 질량이 퍼진 계획이 유리해지고, $\varepsilon$ 이 비용과 엔트로피의 가중치를 정한다.
+주변분포 제약은 행 합과 열 합, 곧 $n+m$ 개의 선형 등식이고 미지수 $P_{ij}$ 는 $nm$ 개다. 비용 $\langle C,P\rangle$ 가 $P$ 에 선형이면 최적 계획은 볼록집합의 꼭짓점에 놓이므로 $nm$ 개 성분 가운데 어느 것이 $0$ 인지를 골라야 한다. 엔트로피 $H(P)=-\sum_{ij}P_{ij}(\log P_{ij}-1)$ 을 목적함수에서 $\varepsilon$ 배로 빼면 성분마다의 미분이 $\log P_{ij}$ 를 내고, 승수 $f_i,g_j$ 를 붙인 일계 조건을 $P_{ij}$ 에 대해 풀면
 
 $$
-\varepsilon\to0:\ P^\star\to\text{최적 수송 계획},\qquad
-\varepsilon\to\infty:\ P^\star\to a\thinspace b^\top\ (\text{독립 결합})
+P_{ij}=e^{f_i/\varepsilon}\thinspace e^{-C_{ij}/\varepsilon}\thinspace e^{g_j/\varepsilon}
 $$
 
-$\varepsilon$ 이 크면 엔트로피 항이 비용을 눌러 곱측도가 되고, 작으면 원래 문제로 돌아간다.
+로 첨자마다 곱으로 갈라진다. 미지수가 $n+m$ 개로 줄고 남은 일은 두 벡터를 주변분포에 맞추는 것이다.
 
-## 대각 스케일링
-
-주변분포 제약은 행 합과 열 합, 곧 $n+m$ 개의 선형 등식이다. Lagrange 승수도 $n+m$ 개이고 목적함수가 $P_{ij}$ 에 대해 분리가능하므로 최적해가 성분마다 풀린다.
-
-$$
-\frac{\partial}{\partial P_{ij}}\Big[\langle C,P\rangle-\varepsilon H(P)-\textstyle\sum_if_i(\cdot)-\sum_jg_j(\cdot)\Big]=0
-\thinspace\Longrightarrow\thinspace
-P_{ij}=e^{f_i/\varepsilon}e^{-C_{ij}/\varepsilon}e^{g_j/\varepsilon}
-$$
-
-$u_i=e^{f_i/\varepsilon}$ , $v_j=e^{g_j/\varepsilon}$ 로 쓰면 대각 스케일링이고 미지수가 $nm$ 개에서 $n+m$ 개로 줄었다. 엔트로피 항을 미분하면 로그가 나오고, 그 로그를 풀면 지수가 첨자마다 곱으로 갈라진다.
-
-## KL 교대 사영
-
-$K=e^{-C/\varepsilon}$ 로 두면
-
-$$
-\langle C,P\rangle-\varepsilon H(P)=\varepsilon\thinspace\mathrm{KL}(P\thinspace\Vert\thinspace K)+\text{상수}
-$$
-
-이므로 엔트로피 정규화 최적 수송은 $K$ 에 [KL divergence](kl-divergence.md)(Kullback–Leibler)로 가장 가까운 결합을 찾는 문제다. 제약 집합은 아핀집합 두 개의 교집합이다.
-
-$$
-\mathcal C_1=\lbrace P:P\mathbf 1=a\rbrace,\qquad \mathcal C_2=\lbrace P:P^\top\mathbf 1=b\rbrace
-$$
-
-Sinkhorn 반복의 한 단계는 $\mathcal C_1$ 로의 KL 사영, 다음 단계는 $\mathcal C_2$ 로의 KL 사영이다. 아핀집합으로의 Bregman 교대 사영이 교집합으로 수렴한다는 정리의 특수한 경우다.
-
-## 수렴의 근거
-
-Sinkhorn 반복은 $u$ 를 양수 벡터의 사영공간에서 움직이고, 그 공간의 거리가 **Hilbert 사영 거리**다.
-
-$$
-d_H(u,u')=\log\max_{i,j}\frac{u_iu'\_j}{u_ju'\_i}
-$$
-
-Birkhoff–Hopf 정리에 따르면 성분이 모두 양수인 행렬 $K$ 를 곱하는 사상은 이 거리에서 축약이다. 축약비를 $K$ 의 사영 지름으로 적는다.
-
-$K=e^{-C/\varepsilon}$ 이면 성분 사이의 비가 $\varepsilon$ 이 작아질수록 극단적이 되어 축약비가 $1$ 에 지수적으로 가까워진다. 정확한 해에 가까울수록 알고리즘이 느려지므로 $\varepsilon$ 을 함부로 줄일 수 없다.
+$\varepsilon$ 이 비용과 엔트로피의 가중치를 정한다. $\varepsilon\to0$ 이면 엔트로피 항이 사라져 원래 최적 계획으로 돌아가고, $\varepsilon\to\infty$ 이면 엔트로피가 비용을 눌러 질량이 최대로 퍼진 독립 결합 $a\thinspace b^\top$ 이 된다. 작은 $\varepsilon$ 이 정확한 값을 주지만 $e^{-C_{ij}/\varepsilon}$ 의 성분 사이 비가 극단이 되어 반복 수가 늘어난다.
 
 # 정의
 
@@ -128,6 +85,12 @@ $S_\varepsilon(a,a)=0$ 이 정의에서 따라 나오고, $S_\varepsilon(a,b)\ge
 
 ## 수렴
 
+반복은 $u$ 를 양수 벡터의 사영공간에서 움직이고, 그 공간의 거리가 **Hilbert 사영 거리**다.
+
+$$
+d_H(u,u')=\log\max_{i,j}\frac{u_iu'\_j}{u_ju'\_i}
+$$
+
 > **Franklin–Lorenz.** $K$ 의 성분이 모두 양수이면 Sinkhorn 반복은 Hilbert 사영 거리에서 선형 수렴한다. 축약비는
 > $$
 > \lambda=\frac{\sqrt\eta-1}{\sqrt\eta+1},\qquad
@@ -138,6 +101,16 @@ $S_\varepsilon(a,a)=0$ 이 정의에서 따라 나오고, $S_\varepsilon(a,b)\ge
 $\lambda=\tanh\negthinspace\big(\Delta/4\varepsilon\big)$ 로 정리된다. $\varepsilon$ 이 크면 $\lambda\approx\Delta/4\varepsilon$ 로 빠르고, $\varepsilon\to0$ 이면 $\lambda\to1-2e^{-\Delta/2\varepsilon}$ 이라 필요한 반복 수가 $e^{\Delta/2\varepsilon}$ 규모로 폭증한다.
 
 정규화 없는 최적 수송을 $\delta$ 오차로 풀려면 $\varepsilon\sim\delta/\log n$ 을 잡아야 하고, 전체 복잡도는 $\tilde O(n^2/\delta^3)$ 이다. 선형계획의 $\tilde O(n^3)$ 과 견주면 정밀도를 낮게 잡을수록 유리하다.
+
+## 교대 사영
+
+$K=e^{-C/\varepsilon}$ 를 기준측도로 잡으면 목적함수는 [KL divergence](kl-divergence.md)(Kullback–Leibler) $\mathrm{KL}(P\thinspace\Vert\thinspace K)$ 의 $\varepsilon$ 배와 상수만큼 다르고, 제약 집합은 아핀집합 두 개의 교집합이다.
+
+$$
+\mathcal C_1=\lbrace P:P\mathbf 1=a\rbrace,\qquad \mathcal C_2=\lbrace P:P^\top\mathbf 1=b\rbrace
+$$
+
+반복의 한 단계는 $\mathcal C_1$ 로의 KL 사영이고 다음 단계는 $\mathcal C_2$ 로의 KL 사영이다. 아핀집합으로의 Bregman 교대 사영이 교집합으로 수렴한다는 정리가 이 반복을 거둔다.
 
 ## 편향의 크기
 
