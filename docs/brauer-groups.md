@@ -14,48 +14,9 @@ $$
 
 # 직관
 
-## 사원수대수와 원뿔곡선
+$ax^2+by^2=z^2$ 이 모든 $K_v$ 에서 자명하지 않은 해를 가질 때 $K$ 에서도 갖는지 묻는다. 이 이차형식은 사원수대수 $(a,b)\_K$ 의 노름형식이고, 해가 있는 것과 대수가 $M_2(K)$ 와 동형인 것이 동치다. 이차형식의 해를 묻는 일이 대수 하나의 분해 여부를 묻는 일로 바뀐다.
 
-$a,b\in K^\times$ 에 대해 사원수대수를 정의한다.
-
-$$
-(a,b)\_K=K\langle i,j\rangle/(i^2=a,\ j^2=b,\ ij=-ji)
-$$
-
-$K=\mathbb R$ 이고 $a=b=-1$ 이면 Hamilton 의 사원수다. 이 4 차원 대수는 $2\times2$ 행렬대수 $M_2(K)$ 와 동형이거나(**분해**) 나눗셈대수다.
-
-$$
-(a,b)\_K\cong M_2(K)\quad\Longleftrightarrow\quad ax^2+by^2=z^2\ \text{가 }K\text{ 에서 자명하지 않은 해를 갖는다}
-$$
-
-대수의 노름형식이 이 이차형식이다. 원뿔곡선에 점이 있는가와 대수가 분해되는가가 같은 질문이다. 국소적으로만 점이 있고 대역적으로는 없다면, 모든 $K_v$ 에서 분해되지만 $K$ 에서는 분해되지 않는 대수가 있다는 뜻이다.
-
-## 국소 불변량과 곱 공식
-
-국소체 $K_v$ 위에서 Brauer 군을 유체론이 계산해 준다.
-
-$$
-\mathrm{inv}\_v\colon\mathrm{Br}(K_v)\xrightarrow{\ \sim\ }
-\begin{cases}\mathbb Q/\mathbb Z&v\ \text{유한}\cr \tfrac12\mathbb Z/\mathbb Z&v\ \text{실수}\cr 0&v\ \text{복소}\end{cases}
-$$
-
-사원수대수는 위수 2 의 원소이므로 불변량이 $0$ 아니면 $1/2$ 이고, $1/2$ 인 자리를 **분기 자리**라 한다. 대역적으로 정의된 대수는 분기 자리가 유한 개이며 불변량의 합이 $0$ 이다.
-
-$$
-\sum_v\mathrm{inv}\_v(A)=0\quad\text{in }\mathbb Q/\mathbb Z
-$$
-
-사원수대수에서 이 진술은 Hilbert 기호의 곱 공식 $\prod_v(a,b)\_v=1$ 이며, 부호가 $-1$ 인 자리의 개수가 짝수라는 뜻이다. [이차 상호법칙](quadratic-reciprocity.md)을 자리 전체의 대칭으로 다시 쓴 형태다.
-
-한 자리에서만 분기하는 대수는 없다. 한 자리만 $1/2$ 이면 합이 $1/2\ne0$ 이다. 모든 자리에서 분해되면 전체가 분해되므로 사원수대수에 대해 Hasse 원리가 성립한다.
-
-## 장애물의 발생
-
-$X$ 가 $K$ 위의 다양체이고 $K$ 유리점 $P$ 가 있으면, $X$ 위의 Brauer 군 원소 $\alpha$ 를 $P$ 에서 평가해 $\alpha(P)\in\mathrm{Br}(K)$ 를 얻고 불변량의 합이 $0$ 이어야 한다.
-
-$X$ 가 모든 자리에서 국소점을 갖는다고 하자. 국소점들의 모음 $(P_v)\_v$ 마다 합 $\sum_v\mathrm{inv}\_v\alpha(P_v)$ 를 계산할 수 있다. 이 합이 모든 국소점 모음에 대해 $0$ 이 아니면 어떤 국소점 모음도 대역점에서 오지 않으므로 $X(K)=\emptyset$ 이다.
-
-이것이 **Brauer–Manin 장애**이며, 알려진 반례 대부분이 이 장애로 설명된다.
+$K_v$ 위에서는 유체론이 그 분해 여부를 수 하나로 적는다. 사원수대수는 위수 $2$ 의 원소이므로 그 수가 $0$ 또는 $1/2$ 이고, 대역적으로 정의된 대수에서는 모든 자리의 값을 더하면 $0$ 이 된다. 한 자리에서만 $1/2$ 인 대수는 합이 $1/2$ 이라 존재하지 않고, 모든 자리에서 $0$ 이면 대역적으로도 분해되므로 처음 질문의 답이 그렇다가 된다.
 
 # 정의
 
@@ -70,6 +31,22 @@ $$
 $$
 
 이 군이 **Brauer 군** $\mathrm{Br}(K)$ 다. [코호몰로지](cohomology.md)로는 $\mathrm{Br}(K)\cong H^2(\mathrm{Gal}(\bar K/K),\bar K^\times)$ 이고, 이 동형이 유체론의 계산과 대수의 분류를 잇는다.
+
+## 사원수대수
+
+$a,b\in K^\times$ 에 대해 **사원수대수**를 다음으로 둔다.
+
+$$
+(a,b)\_K=K\langle i,j\rangle/(i^2=a,\ j^2=b,\ ij=-ji)
+$$
+
+$K=\mathbb R$ 이고 $a=b=-1$ 이면 Hamilton 의 사원수다. 이 4 차원 대수는 중심단순이고 Wedderburn 정리에 따라 $M_2(K)$ 와 동형이거나(**분해**) 나눗셈대수다.
+
+$$
+(a,b)\_K\cong M_2(K)\quad\Longleftrightarrow\quad ax^2+by^2=z^2\ \text{가 }K\text{ 에서 자명하지 않은 해를 갖는다}
+$$
+
+우변의 이차형식이 이 대수의 노름형식이다. $\mathrm{Br}(K)$ 에서 $(a,b)\_K$ 는 위수가 많아야 $2$ 다.
 
 ## Hilbert 기호
 
@@ -90,12 +67,23 @@ $$
 
 ## 불변량 사상과 기본 완전열
 
+국소체에서 불변량 사상은 유체론이 계산해 준다.
+
+$$
+\mathrm{inv}\_v\colon\mathrm{Br}(K_v)\xrightarrow{\ \sim\ }
+\begin{cases}\mathbb Q/\mathbb Z&v\ \text{유한}\cr \tfrac12\mathbb Z/\mathbb Z&v\ \text{실수}\cr 0&v\ \text{복소}\end{cases}
+$$
+
+사원수대수의 불변량은 $0$ 아니면 $1/2$ 이고, $1/2$ 인 자리를 **분기 자리**라 한다.
+
 > **유체론(Brauer 군 판).** 대역체 $K$ 에 대해 다음이 완전열이다.
 > $$
 > 0\to\mathrm{Br}(K)\to\bigoplus_v\mathrm{Br}(K_v)\xrightarrow{\ \sum\mathrm{inv}\_v\ }\mathbb Q/\mathbb Z\to0
 > $$
 
 왼쪽의 단사성이 **Albert–Brauer–Hasse–Noether 정리**다[^1]. 모든 자리에서 분해되는 중심단순대수는 분해된다는 뜻이며 중심단순대수에 대한 Hasse 원리다. 가운데의 완전성이 불변량 합 공식이고, 오른쪽의 전사성은 불변량을 미리 정해 대수를 만들 수 있다는 존재정리다.
+
+사원수대수에서 합 공식은 Hilbert 기호의 곱 공식 $\prod_v(a,b)\_v=1$ 이며, 부호가 $-1$ 인 자리의 개수가 짝수라는 뜻이다. [이차 상호법칙](quadratic-reciprocity.md)을 자리 전체의 대칭으로 다시 쓴 형태다.
 
 # 성질
 
