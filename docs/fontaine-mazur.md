@@ -23,50 +23,15 @@ $n=2$ 홀수 경우는 Kisin 과 Emerton 이 $p$ 진 국소 Langlands 와 모듈
 
 # 직관
 
-## 표현의 개수와 기하적 표현의 개수
-
-$\mathbb Q$ 위의 매끄러운 사영 다양체는 유한한 자료로 주어지므로 동형을 무시하면 셀 수 있게 많고 각각의 코호몰로지가 유한 차원이다. 기하적 표현 전체는 셀 수 있는 집합이다.
-
-연속 표현은 그렇지 않다. 1 차원에서 순환지표 $\chi\colon G_{\mathbb Q}\to\mathbb Z_p^\times$ 의 $p$ 진 거듭제곱
+$\mathbb Q$ 위의 매끄러운 사영 다양체는 유한한 자료로 주어지므로 동형을 무시하면 셀 수 있게 많고, 각각의 코호몰로지도 유한 차원이다. 기하에서 오는 표현은 전부 모아도 셀 수 있다. 연속 표현은 그렇지 않다. 순환지표 $\chi\colon G_{\mathbb Q}\to\mathbb Z_p^\times$ 의 $p$ 진 거듭제곱
 
 $$
 \chi^s\colon g\longmapsto \chi(g)^s=\exp\bigl(s\log\chi(g)\bigr),\qquad s\in\mathbb Z_p
 $$
 
-는 $s$ 가 $\mathbb Z_p$ 를 훑는 동안 서로 다른 연속 지표를 주고, 이들은 모두 $p$ 밖에서 비분기다. 조건 1 은 연속체 크기의 이 족을 걸러내지 못한다.
+는 $s$ 가 $\mathbb Z_p$ 를 훑는 동안 서로 다른 지표를 주고, 이들은 모두 $p$ 밖에서 비분기다. 분기하는 소수가 유한 개라는 조건은 연속체 크기의 이 족에서 하나도 걸러내지 못한다.
 
-$\chi^s$ 가 de Rham 인 것은 $s\in\mathbb Z$ 일 때뿐이고, 그때 $\chi^s=\mathbb Q_p(-s)$ 는 기하에서 온다. 조건 2 가 연속체 크기의 족에서 $\mathbb Z$ 만 남긴다.
-
-$s=1/3$ 의 $5$ 진 전개 $2+3\cdot5+1\cdot5^2+3\cdot5^3+\cdots$ 는 끝나지 않는다. 지표 $\chi^{1/3}$ 은 [Sen 작용소](sen-theory.md)의 고윳값이 정수가 아니라 Hodge–Tate 도 아니고, 어떤 다양체의 코호몰로지에도 들어 있지 않다.
-
-## 1 차원의 경우
-
-$n=1$ 인 Fontaine–Mazur 는 [유체론](class-field-theory.md)의 따름정리다. Kronecker–Weber 로
-
-$$
-G_{\mathbb Q}^{\mathrm{ab}}\cong\widehat{\mathbb Z}^\times\cong\prod_\ell\mathbb Z_\ell^\times
-$$
-
-이고, 거의 모든 곳 비분기인 연속 지표 $\eta\colon G_{\mathbb Q}\to\mathbb Q_p^\times$ 는 $\mathbb Z_p^\times$ 성분과 유한 성분으로 갈린다. $p$ 자리에서 de Rham 이라는 조건이 $\mathbb Z_p^\times$ 성분을 $m\in\mathbb Z$ 인 $\chi^m$ 으로 고정하고, 남는 것은
-
-$$
-\eta=\varepsilon\cdot\chi^{m},\qquad \varepsilon\ \text{는 유한위수 Dirichlet 지표}
-$$
-
-뿐이고, 이런 $\eta$ 는 분원체 $\mathbb Q(\zeta_N)$ 의 코호몰로지에 들어 있다. 조건을 만족하는 것과 기하에서 오는 것이 일치한다.
-
-## 두 조건의 역할
-
-한쪽 조건만으로는 결론이 성립하지 않는다.
-
-- **비분기만**: $s\notin\mathbb Z$ 인 $\chi^s$ 는 $p$ 밖에서 분기하지 않지만 기하적이 아니다. $p$ 자리의 야생 자유도가 통제되지 않는다.
-- **de Rham 만**: 무한히 많은 소수에서 분기하는 표현을 만들 수 있다. 그런 표현은 도체가 정의되지 않아 자기동형 형식과 짝지을 대상이 없다.
-
-조건 1 은 유한 개 소수의 분기만 허용해 가로 방향의 자유도를, 조건 2 는 $p$ 자리의 여과와 Frobenius 자료를 정수 무게로 묶어 세로 방향의 자유도를 없앤다.
-
-## 세 조건의 함의
-
-모듈러라는 조건에서 기하적이라는 조건으로는 Eichler–Shimura 표현이, 기하적이라는 조건에서 조건 1 과 2 로는 매끄러운 고유 기저변환과 $C_{\mathrm{dR}}$ 비교동형이 각각 정리로 간다. 반대 방향 둘 가운데 조건 1 과 2 에서 기하적으로 가는 것이 Fontaine–Mazur 추측이고, 기하적에서 모듈러로 가는 것은 $n=2$ 홀수에서 Kisin 과 Emerton 이 정리로 만들었다. 이 둘 가운데 하나가 정리가 되면 세 조건이 동치가 된다.
+$\chi^s$ 가 $p$ 자리에서 de Rham 인 것은 $s\in\mathbb Z$ 일 때뿐이고, 그때 $\chi^s=\mathbb Q_p(-s)$ 는 기하에서 온다. $s=1/3$ 의 $5$ 진 전개 $2+3\cdot5+1\cdot5^2+3\cdot5^3+\cdots$ 는 끝나지 않고, $\chi^{1/3}$ 은 [Sen 작용소](sen-theory.md)의 고윳값이 정수가 아니어서 어떤 다양체의 코호몰로지에도 들어 있지 않다. 소수 $p$ 한 자리의 조건이 연속체에서 $\mathbb Z$ 만 남긴다.
 
 # 정의
 
@@ -125,6 +90,26 @@ $$
 | $n\ge3$ | 증명되지 않음[^1]. 자기쌍대 경우에 부분 결과 |
 
 $n=2$ 증명은 두 단계다. [Serre 추측](serre-conjecture.md)(Khare–Wintenberger 정리)이 잔여표현 $\bar\rho$ 의 모듈러성을 주고, 모듈러성 올림 정리가 잔여적으로 모듈러이면서 $p$ 에서 de Rham 인 표현을 모듈러로 올린다. Kisin 은 올림 단계에서 $p$ 진 국소 Langlands 대응을 써서 국소 조건의 제약을 걷어냈다.
+
+## 1 차원의 경우
+
+$n=1$ 인 Fontaine–Mazur 는 [유체론](class-field-theory.md)의 따름정리다. Kronecker–Weber 로
+
+$$
+G_{\mathbb Q}^{\mathrm{ab}}\cong\widehat{\mathbb Z}^\times\cong\prod_\ell\mathbb Z_\ell^\times
+$$
+
+이고, 거의 모든 곳 비분기인 연속 지표 $\eta\colon G_{\mathbb Q}\to\mathbb Q_p^\times$ 는 $\mathbb Z_p^\times$ 성분과 유한 성분으로 갈린다. $p$ 자리의 de Rham 조건이 $\mathbb Z_p^\times$ 성분을 $m\in\mathbb Z$ 인 $\chi^m$ 으로 고정하므로
+
+$$
+\eta=\varepsilon\cdot\chi^{m},\qquad \varepsilon\ \text{는 유한위수 Dirichlet 지표}
+$$
+
+만 남고, 이런 $\eta$ 는 분원체 $\mathbb Q(\zeta_N)$ 의 코호몰로지에 들어 있다. 조건을 만족하는 것과 기하에서 오는 것이 일치한다.
+
+## 두 조건의 독립성
+
+한쪽 조건만으로는 결론이 성립하지 않는다. $s\notin\mathbb Z$ 인 $\chi^s$ 는 $p$ 밖에서 분기하지 않지만 기하적이 아니다. 거꾸로 de Rham 조건만 걸면 무한히 많은 소수에서 분기하는 표현이 통과하고, 그런 표현은 도체가 정의되지 않아 자기동형 형식과 짝지을 대상이 없다. 조건 1 은 분기하는 소수를 유한 개로 묶고, 조건 2 는 $p$ 자리의 여과와 Frobenius 자료를 정수 무게로 묶는다.
 
 ## 고전점과 족
 
