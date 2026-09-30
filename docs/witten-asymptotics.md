@@ -12,47 +12,9 @@ Witten 의 답은 $k\to\infty$ 에 있다. 그 극한에서 $\tau_k(M)$ 은 $M$ 
 
 # 직관
 
-## 평탄 접속
+Witten 의 출발점은 형식적 경로적분 $Z_k(M)=\int\mathcal DA\thickspace e^{2\pi ik\thinspace\mathrm{CS}(A)}$ 이다. [측도](measure.md)가 정의되지 않아 증명의 재료는 아니지만 큰 $k$ 에서의 형태를 지정한다. 진동적분의 큰 $k$ 거동은 위상의 임계점이 지배하고, Chern–Simons 범함수의 변분이 $\int\mathrm{tr}(\delta A\wedge F_A)$ 에 비례하므로 임계점은 $F_A=0$ 인 평탄 접속이다.
 
-Witten 의 출발점은 다음 형식적 적분이다.
-
-$$
-Z_k(M)=\int_{\mathcal A/\mathcal G}\mathcal DA\thickspace e^{2\pi ik\thinspace\mathrm{CS}(A)},\qquad
-\mathrm{CS}(A)=\frac1{8\pi^2}\int_M\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)
-$$
-
-[측도](measure.md)가 정의되지 않으므로 이 식은 증명의 재료가 아니지만 큰 $k$ 에서의 형태를 지정한다. 진동적분 $\int e^{ikf}$ 의 큰 $k$ 거동은 $f$ 의 임계점이 지배하고, Chern–Simons 범함수의 변분은
-
-$$
-\delta\thinspace\mathrm{CS}(A)\propto\int\mathrm{tr}(\delta A\wedge F_A)
-$$
-
-이므로 임계점은 $F_A=0$ , 곧 **평탄 접속**이다. 평탄 접속의 게이지류는 $\pi_1(M)\to\mathrm{SU}(2)$ 준동형의 켤레류와 같으므로 유한하거나 유한차원이고, 무한차원 적분이 $\pi_1$ 의 표현으로 내려온다.
-
-각 임계점의 기여는 정상위상법의 표준형을 따른다. 위상은 임계값 $e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}$ 이고 진폭은 2 차 변분의 [행렬식](determinants.md)의 $-1/2$ 승이다. 그 행렬식을 정규화하면 비꼬인 de Rham 복합체의 [Reidemeister 비틀림](reidemeister-torsion.md) $T_\alpha$ 가 되고, 행렬식의 부호에서 스펙트럼 흐름(Atiyah–Patodi–Singer 의 $\eta$ 불변량)이 위상으로 따라 나온다.
-
-## Gauss 합 상호법칙
-
-$\tau_k$ 의 정의는 $k+1$ 개 라벨에 대한 합이고, $q=e^{2\pi i/(k+2)}$ 가 1 의 거듭제곱근이므로 그 합이 **이차 Gauss 합**이다. Gauss 합에는 상호법칙이 있다.
-
-$$
-\sum_{a=0}^{|C|-1}e^{\pi i(Aa^2+Ba)/C}
-=\Big|\frac CA\Big|^{1/2}e^{\pi i\left(\mathrm{sgn}(AC)-B^2/(AC)\right)/4}\sum_{b=0}^{|A|-1}e^{-\pi i(Cb^2+Bb)/A}
-$$
-
-왼쪽 항의 개수는 $|C|$ 이고 오른쪽은 $|A|$ 다. 렌즈 공간 $L(p,1)$ 에서는 $C\sim2k$ 이고 $A=p$ 이므로 $k$ 에 비례하는 개수의 항이 $p$ 개의 항으로 바뀌고, $\pi_1(L(p,1))=\mathbb Z/p$ 의 $\mathrm{SU}(2)$ 표현도 그만큼 있다.
-
-안장점 근사는 어림이지만 상호법칙은 등식이다. 렌즈 공간에서 점근 추측이 참인 것은 그 근사가 정확하기 때문이다. 오른쪽 합의 각 항에서 $k$ 는 위상 $e^{-2\pi i(k+2)b^2/p}$ 안에만 들어 있고 그 위상의 $k$ 에 대한 기울기 $-b^2/p$ 가 평탄 접속 $\rho_b$ 의 Chern–Simons 값이다. 앞의 $\left|C/A\right|^{1/2}$ 가 $\sqrt k$ 스케일을 주고 계수의 $4\sin^2(2\pi b/p)$ 가 비틀림이다.
-
-## 다른 방향의 극한
-
-$q=e^h$ 로 두고 $h\to0$ 에서 형식적 [멱급수](power-series.md)로 전개할 수도 있다. 유리 [호몰로지](homology.md) 구면 $M$ 에 대해
-
-$$
-\tau^{\mathrm{Ohtsuki}}(M)=\sum_{n\ge0}\lambda_n(M)\thinspace h^n
-$$
-
-이 되고 계수 $\lambda_n$ 이 **유한형 불변량**(Vassiliev 이론의 3 차원판)이다. 점근 추측이 여러 임계점의 기여를 모두 보는 반면 Ohtsuki 급수는 자명한 접속 하나 주위의 섭동전개를 본다. 첫 계수 $\lambda_1$ 이 [Casson 불변량](casson-invariant.md)의 상수배다.
+평탄 접속의 게이지류는 $\pi_1(M)\to\mathrm{SU}(2)$ 준동형의 켤레류와 같으므로, 무한차원 적분의 답이 $\pi_1$ 의 표현이라는 유한한 자료로 내려온다. 정상위상법의 표준형을 따르면 각 임계점의 위상이 $e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}$ 이고 진폭이 2 차 변분의 [행렬식](determinants.md)의 $-1/2$ 승이다. 그 행렬식을 정규화하면 [Reidemeister 비틀림](reidemeister-torsion.md)이 되고 부호에서 스펙트럼 흐름이 따라 나온다.
 
 # 정의
 
@@ -76,6 +38,14 @@ $\mathrm{CS}(\alpha)\in\mathbb R/\mathbb Z$ 는 Chern–Simons 불변량, $T_\al
 
 계수가 유한형이라는 것은 매듭 수술의 유한 차수 차분에서 소멸한다는 뜻이고, 매듭 쪽 Vassiliev 불변량이 교차점 바꾸기의 차분으로 정의되는 구조가 한 차원 위에서 반복된다. 이 급수는 Le–Murakami–Ohtsuki 의 **LMO 불변량**으로 통합되었고, LMO 는 모든 유한형 불변량을 담는 보편적 대상이다.
 
+$q=e^h$ 로 두고 $h\to0$ 에서 형식적 [멱급수](power-series.md)로 전개하면 유리 [호몰로지](homology.md) 구면 $M$ 에 대해 다음을 얻는다.
+
+$$
+\tau^{\mathrm{Ohtsuki}}(M)=\sum_{n\ge0}\lambda_n(M)\thinspace h^n
+$$
+
+점근 추측이 여러 임계점의 기여를 모두 보는 데 비해 Ohtsuki 급수는 자명한 접속 하나 주위의 섭동전개를 본다. 첫 계수 $\lambda_1$ 이 [Casson 불변량](casson-invariant.md)의 상수배다.
+
 # 성질
 
 ## 증명된 범위
@@ -88,6 +58,20 @@ $\mathrm{CS}(\alpha)\in\mathbb R/\mathbb Z$ 는 Chern–Simons 불변량, $T_\al
 | 쌍곡 다양체 | 수치 확인 | 점근 전개의 수치 계산 |
 
 Jeffrey 가 렌즈 공간과 원환면 사상 원기둥에서 $\tau_k$ 의 닫힌 형태를 얻고 그것이 평탄 접속의 합과 일치함을 보였고, Rozansky, Lawrence–Rozansky, Hikami 가 Seifert 쪽을 처리했다. 공통 조건은 $\pi_1$ 이 충분히 작아 평탄 접속을 셀 수 있고 합이 Gauss 합으로 닫힌다는 것이다. 쌍곡 다양체에서는 모듈라이가 복잡하고 합이 닫힌 형태를 갖지 않는다.
+
+## Gauss 합 상호법칙
+
+$\tau_k$ 의 정의는 $k+1$ 개 라벨에 대한 합이고 $q=e^{2\pi i/(k+2)}$ 가 1 의 거듭제곱근이므로 그 합이 **이차 Gauss 합**이다. Gauss 합에는 상호법칙이 있다.
+
+$$
+\sum_{a=0}^{|C|-1}e^{\pi i(Aa^2+Ba)/C}
+=\Big|\frac CA\Big|^{1/2}e^{\pi i\left(\mathrm{sgn}(AC)-B^2/(AC)\right)/4}\sum_{b=0}^{|A|-1}e^{-\pi i(Cb^2+Bb)/A}
+$$
+
+왼쪽 항의 개수는 $|C|$ 이고 오른쪽은 $|A|$ 다. 렌즈 공간 $L(p,1)$ 에서는 $C\sim2k$ 이고 $A=p$ 이므로 $k$ 에 비례하는 개수의 항이 $p$ 개의 항으로 바뀌고, $\pi_1(L(p,1))=\mathbb Z/p$ 의 $\mathrm{SU}(2)$ 표현도 그만큼 있다.
+
+안장점 근사는 어림이지만 상호법칙은 등식이므로 렌즈 공간에서 점근 추측이 정확한 등식으로 성립한다. 오른쪽 합의 각 항에서 $k$ 는 위상 $e^{-2\pi i(k+2)b^2/p}$ 안에만 들어 있고 그 위상의 $k$ 에 대한 기울기 $-b^2/p$ 가 평탄 접속 $\rho_b$ 의 Chern–Simons 값이다. 앞의 $\left|C/A\right|^{1/2}$ 가 $\sqrt k$ 스케일을 주고 계수의 $4\sin^2(2\pi b/p)$ 가 비틀림이다.
+
 
 ## 볼륨 추측과의 관계
 
