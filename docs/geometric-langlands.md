@@ -4,13 +4,15 @@
 
 [기하학적 Satake 대응](geometric-satake.md)은 Hecke 대수의 등식을 층의 [범주](category.md) 사이 동치로 올린다. 기하학적 Langlands 강령은 같은 승격을 Langlands 대응 전체에 적용한다.
 
-출발점은 세 열의 유비다. 수체와 함수체가 나란하고, 함수체 $\mathbb F_q(X)$ 가 곡선 $X/\mathbb F_q$ 의 함수체이므로 곡선 자체를 다룰 수 있다. 계수체를 $\mathbb C$ 로 바꾸면 산술이 사라지고 기하만 남는다.
+출발점은 세 열의 유비다. 수체와 함수체가 나란하고, 함수체 $\mathbb F_q(X)$ 가 곡선 $X/\mathbb F_q$ 의 함수체이므로 곡선 자체를 다룰 수 있다.
 
-$$
-\text{자기동형 형식}\ \rightsquigarrow\ \mathrm{Bun}\_G\ \text{위의 함수}\ \rightsquigarrow\ \mathrm{Bun}\_G\ \text{위의 층}
-$$
+| | 수체 $\mathbb Q$ | 함수체 $\mathbb F\_q(X)$ | 복소 곡선 $X/\mathbb C$ |
+| --- | --- | --- | --- |
+| 밑 | $\mathrm{Spec}\thinspace\mathbb Z$ | $\mathbb F\_q$ 위의 곡선 $X$ | $\mathbb C$ 위의 곡선 $X$ |
+| 자기동형 쪽 | 자기동형 형식 | $\mathrm{Bun}\_G(\mathbb F\_q)$ 위의 함수 | $\mathrm{Bun}\_G$ 위의 $D$ 가군 |
+| Galois 쪽 | Galois 표현 | 에탈 국소계 | 평탄 접속을 가진 다발 |
 
-Grothendieck 의 사전에서 층은 Frobenius 대각합을 통해 함수를 낳고, 함수보다 많은 정보를 담는다. 대응의 진술이 수의 등식이 아니라 범주의 동치가 된다.
+$\mathrm{Spec}\thinspace\mathbb Z$ 에서는 곡선처럼 보이는 유비만 있고 기하적 도구를 쓸 수 없다. 가운데 열에는 실제 곡선이 있어 [에탈 코호몰로지](etale-cohomology.md)를 쓴다. 오른쪽 열은 $\mathbb F_q$ 를 $\mathbb C$ 로 바꿔 산술을 버리고 미분기하와 복소해석을 얻는다. 기하학적 Langlands 강령은 오른쪽 열의 진술이고 산술적 결론을 직접 주지 않는다.
 
 $$
 \mathrm{D}(\mathrm{Bun}\_G)\thickspace\simeq\thickspace\mathrm{QCoh}\big(\mathrm{LocSys}\_{\hat G}\big)\quad(\text{대략})
@@ -20,69 +22,9 @@ $$
 
 # 직관
 
-## 세 개의 열
+고전 Langlands 대응에서 자기동형 형식은 [Hecke 작용소](hecke-operators.md)의 고유함수이고, 고윳값의 모임이 [Galois 표현](galois-representations.md)을 결정한다. 함수체 $\mathbb F_q(X)$ 에서는 그 함수가 어디에 놓이는지가 보인다. Weil 의 관찰로 이중잉여 $G(F)\backslash G(\mathbb A_F)/G(\mathcal O)$ 가 곡선 $X$ 위 $G$ 다발의 동형류 $\mathrm{Bun}\_G(\mathbb F_q)$ 와 같으므로, 자기동형 형식은 모듈라이 공간 위의 함수다.
 
-| | 수체 $\mathbb Q$ | 함수체 $\mathbb F\_q(X)$ | 복소 곡선 $X/\mathbb C$ |
-| --- | --- | --- | --- |
-| 밑 | $\mathrm{Spec}\thinspace\mathbb Z$ | $\mathbb F\_q$ 위의 곡선 $X$ | $\mathbb C$ 위의 곡선 $X$ |
-| 자기동형 쪽 | 자기동형 형식 | $\mathrm{Bun}\_G(\mathbb F\_q)$ 위의 함수 | $\mathrm{Bun}\_G$ 위의 $D$ 가군 |
-| Galois 쪽 | Galois 표현 | 에탈 국소계 | 평탄 접속을 가진 다발 |
-
-왼쪽 열에서는 $\mathrm{Spec}\thinspace\mathbb Z$ 가 곡선처럼 보이는 유비만 있고 기하적 도구를 쓸 수 없다. 가운데 열에는 실제 곡선이 있어 [에탈 코호몰로지](etale-cohomology.md)를 쓴다. 오른쪽 열은 $\mathbb F_q$ 를 $\mathbb C$ 로 바꿔 산술을 버리고 미분기하와 복소해석을 얻는다.
-
-기하학적 Langlands 는 오른쪽 열의 진술이다. 산술적 결론을 직접 주지 않고 대응의 구조를 드러낸다.
-
-## 함수–층 사전
-
-[유한체](finite-fields.md) 위에서 [층](sheaves.md) $\mathcal F$ 와 함수 $f_{\mathcal F}$ 를 잇는 사전이 있다.
-
-$$
-f_{\mathcal F}(x)=\mathrm{tr}\big(\mathrm{Frob}\_x\mid\mathcal F_{\bar x}\big)
-$$
-
-이 대응은 층의 여섯 연산을 함수의 연산(당김, 밂, 곱)으로 옮긴다. 서로 다른 층이 같은 함수를 줄 수 있으므로 층 쪽이 더 섬세하고, 함수 사이의 등식을 층 사이의 동형으로 올리면 진술이 강해진다.
-
-자기동형 형식은 $G(F)\backslash G(\mathbb A)/K$ 위의 함수인데, 함수체의 경우 이 이중잉여를 기하적 대상으로 본다.
-
-$$
-G(F)\backslash G(\mathbb A_F)/G(\mathcal O)\thickspace\cong\thickspace\mathrm{Bun}\_G(\mathbb F_q)
-$$
-
-오른쪽은 곡선 $X$ 위 $G$ 다발의 동형류다. Weil 의 이 관찰에 따라 자기동형 형식이 모듈라이 공간 위의 함수이고, 층으로 올릴 자리가 $\mathrm{Bun}\_G$ 다.
-
-## Hecke 작용소와 다발의 수정
-
-고전적 [Hecke 작용소](hecke-operators.md)는 한 자리 $x$ 에서 준위 구조를 바꾸는 평균이고, 기하적으로는 $G$ 다발을 점 $x$ 에서만 수정한다.
-
-$$
-\mathrm{Hecke}=\lbrace(\mathcal P,\mathcal P',x,\ \varphi\colon\mathcal P|\_{X\setminus x}\xrightarrow{\sim}\mathcal P'|\_{X\setminus x})\rbrace
-$$
-
-이 대응 스택이 $\mathrm{Bun}\_G\times\mathrm{Bun}\_G\times X$ 로 사상하고, 두 사영을 따라 당기고 미는 것이 Hecke 작용이다. 수정의 종류는 아핀 Grassmannian 의 궤도가 분류하고 기하적 Satake 가 그 궤도를 $\hat G$ 의 기약표현 $V$ 로 이름 붙이므로, Hecke [함자](functors.md)가 $\hat G$ 의 표현으로 매개된다.
-
-$$
-H^V_x\colon\ \mathrm{D}(\mathrm{Bun}\_G)\longrightarrow\mathrm{D}(\mathrm{Bun}\_G)
-$$
-
-## Hecke 고유층
-
-고전 쪽에서 자기동형 형식은 Hecke 고유함수이고 고윳값의 모임이 [Galois 표현](galois-representations.md)을 결정한다. 기하 쪽의 대응물이 **Hecke 고유층**이다. $\hat G$ 국소계 $\sigma$ 에 대해
-
-$$
-H^V_x(\mathcal F)\thickspace\cong\thickspace\mathcal F\boxtimes V_\sigma\qquad(\text{모든 }V,\ x\ \text{에 대해 정합적으로})
-$$
-
-를 만족하는 $\mathcal F$ 가 $\sigma$ 의 고유층이다. $V_\sigma$ 는 국소계 $\sigma$ 에 표현 $V$ 를 적용해 얻는 $X$ 위의 국소계다. 기하판에서는 고윳값이 수가 아니라 국소계이고, 대응이 $\sigma$ 마다 고유층 하나라는 형태를 띤다.
-
-## 범주 동치
-
-국소계마다 고유층이 하나씩이라는 진술은 부정확하다. $\mathrm{LocSys}\_{\hat G}$ 가 스택이라 자기동형과 특이점을 갖고, 기약이 아닌 국소계에서는 고유층이 유일하지 않다. 정확한 진술은 범주 전체의 동치다.
-
-$$
-\mathbb L_G\colon\quad\mathrm{D}\text{-}\mathrm{mod}(\mathrm{Bun}\_G)\thickspace\xrightarrow{\ \sim\ }\thickspace\mathrm{IndCoh}\_{\mathcal N}\big(\mathrm{LocSys}\_{\hat G}\big)
-$$
-
-Arinkin–Gaitsgory 의 형태이고, 오른쪽의 받침 조건 $\mathcal N$ (멱영 특이 받침)이 유일성 문제를 고친다. 이 동치가 Hecke 작용과 호환되며 왼쪽의 건너뜀 층(skyscraper)이 오른쪽의 고유층에 대응한다.
+이 함수를 층으로 올린다. [유한체](finite-fields.md) 위에서 [층](sheaves.md)의 유리점마다 Frobenius 대각합을 재면 함수가 나오는데, 서로 다른 층이 같은 함수를 줄 수 있으므로 함수 사이의 등식을 층 사이의 동형으로 바꾸면 진술이 강해진다. $\mathbb F_q$ 를 $\mathbb C$ 로 바꾸면 Frobenius 가 없어 대각합으로 함수를 만들 길이 사라지고 층만 남는다. 대응의 진술이 수의 등식이 아니라 층의 범주 사이 동치가 되고, Hecke 고윳값 자리에 $X$ 위의 국소계가 온다.
 
 # 정의
 
@@ -100,7 +42,13 @@ $\mathrm{LocSys}\_{\hat G}$ 는 $\pi_1(X)\to\hat G$ 의 표현 다양체를 공�
 
 ## Hecke 스택과 함자
 
-$\mathrm{Hecke}$ 스택에서 두 사영 $p,q$ 와 $X$ 로의 사상 $\pi$ 를 두면
+**Hecke 스택**은 점 하나에서만 다른 두 다발의 쌍이다.
+
+$$
+\mathrm{Hecke}=\lbrace(\mathcal P,\mathcal P',x,\ \varphi\colon\mathcal P|\_{X\setminus x}\xrightarrow{\sim}\mathcal P'|\_{X\setminus x})\rbrace
+$$
+
+수정의 종류는 아핀 Grassmannian 의 궤도가 분류하고 기하적 Satake 가 그 궤도를 $\hat G$ 의 기약표현으로 이름 붙이므로, Hecke [함자](functors.md)가 $\hat G$ 의 표현으로 매개된다. 두 사영 $p,q$ 와 $X$ 로의 사상 $\pi$ 를 두면
 
 $$
 H^V_x(\mathcal F)=q_\ast\big(p^\ast\mathcal F\otimes\mathcal S^V\big)
@@ -119,6 +67,16 @@ $$
 이고 이 동형이 $V$ 에 대해 함자적이며 합성과 호환된다는 뜻이다.
 
 # 성질
+
+## 범주적 진술
+
+국소계마다 고유층이 하나씩이라는 진술은 부정확하다. $\mathrm{LocSys}\_{\hat G}$ 가 스택이라 자기동형과 특이점을 갖고, 기약이 아닌 국소계에서는 고유층이 유일하지 않다. 정확한 진술은 범주 전체의 동치다.
+
+$$
+\mathbb L_G\colon\quad\mathrm{D}\text{-}\mathrm{mod}(\mathrm{Bun}\_G)\thickspace\xrightarrow{\ \sim\ }\thickspace\mathrm{IndCoh}\_{\mathcal N}\big(\mathrm{LocSys}\_{\hat G}\big)
+$$
+
+Arinkin–Gaitsgory 의 형태이고, 오른쪽의 받침 조건 $\mathcal N$ (멱영 특이 받침)이 유일성 문제를 고친다. 이 동치가 Hecke 작용과 호환되며 왼쪽의 건너뜀 층(skyscraper)이 오른쪽의 고유층에 대응한다.
 
 ## 아벨 경우
 
