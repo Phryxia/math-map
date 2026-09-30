@@ -22,16 +22,6 @@ $$
 
 # 직관
 
-## 지표의 안정성
-
-유한차원에서 [선형사상](linear-maps.md) $A\colon V\to W$ 의 지표는 $\dim V-\dim W$ 로 $A$ 와 무관하다. 계수가 변하면 핵과 여핵이 같은 만큼 함께 변한다.
-
-무한차원에서도 같다. $D$ 를 연속적으로 움직일 때 핵에서 빠져나간 벡터만큼 여핵에서도 빠져나가므로 차이가 보존된다.
-
-지표는 $D$ 의 연결 성분만 보는 양이다. 타원 작용소의 공간에서 연결 성분을 결정하는 것은 최고차 기호이고, 기호는 여접다발 위의 [벡터다발](vector-bundles.md) 사상이라 위상적 대상이다.
-
-## 곡면의 de Rham 복합체
-
 $M$ 이 콤팩트 곡면이고 $D=d+d^\ast$ 를 짝수 차수 형식에서 홀수 차수 형식으로 가는 작용소라 하자. Hodge 이론이 핵과 여핵을 조화형식으로 동일시하므로
 
 $$
@@ -44,18 +34,7 @@ $$
 \frac1{2\pi}\int_MK\thinspace dA=\chi(M)
 $$
 
-Gauss–Bonnet 은 de Rham 복합체에 대한 지표 정리다.
-
-## 특수 사례
-
-| 타원 복합체와 작용소 | 나오는 정리 |
-| --- | --- |
-| de Rham 복합체 | Gauss–Bonnet 과 Euler 지표 $\chi$ , 벡터장 쪽으로 Poincaré–Hopf |
-| 부호수 작용소 | Hirzebruch 부호수 정리 |
-| Dolbeault 복합체 | Hirzebruch–Riemann–Roch, 곡선에서 $\ell(D)-\ell(K-D)=\deg D+1-g$ |
-| Dirac 작용소 | $\hat A$ 종수와 Rokhlin 정리 |
-
-같은 다양체 위에서 어떤 타원 복합체를 고르느냐에 따라 다른 고전 정리가 나오고, 지표 정리는 이들이 한 등식의 특수화임을 보인다.
+두 계산이 같은 수를 준다. Gauss–Bonnet 은 de Rham 복합체에 대한 지표 정리이고, 타원 복합체를 바꾸면 다른 고전 정리가 나온다.
 
 # 정의
 
@@ -101,6 +80,12 @@ $$
 
 # 성질
 
+## 지표의 호모토피 불변성
+
+유한차원에서 [선형사상](linear-maps.md) $A\colon V\to W$ 의 지표는 $\dim V-\dim W$ 이고 $A$ 에 무관하다. 계수가 변하면 핵과 여핵이 같은 만큼 함께 변한다. 무한차원에서도 $D$ 를 연속적으로 움직일 때 핵에서 빠져나간 벡터만큼 여핵에서도 빠져나가므로 차이가 보존된다.
+
+그래서 지표는 타원 작용소의 공간에서 $D$ 의 연결 성분만 보는 양이다. 연결 성분을 결정하는 것은 최고차 기호이고, 기호는 여접다발 위의 [벡터다발](vector-bundles.md) 사상이라 위상적 대상이다.
+
 ## 주요 특수 사례
 
 | 작용소 / 복합체 | 지표 | 위상적 표현 |
@@ -109,6 +94,8 @@ $$
 | 부호수 작용소 | $\mathrm{sign}(M)$ | $L$ 종수 (Hirzebruch) |
 | Dolbeault $\bar\partial+\bar\partial^\ast$ | $\sum(-1)^q\dim H^q(M,\mathcal O)$ | Todd 류 (Riemann–Roch) |
 | Dirac 작용소 | $\mathrm{ind}\thinspace{\not}D$ | $\hat A$ 종수 |
+
+de Rham 복합체의 지표는 $\chi(M)$ 이고, 같은 수를 벡터장의 영점 지표 합으로 세는 것이 Poincaré–Hopf 정리다.
 
 스핀 다양체에서 $\mathrm{ind}\thinspace{\not}D=\hat A(M)$ 이고 좌변이 정수이므로 $\hat A$ 종수가 정수다. 이 정수성은 위상만으로 자명하지 않으며, 이 정수성에서 4 차원 스핀 다양체의 부호수가 16 으로 나누어진다는 Rokhlin 정리가 따라온다.
 
