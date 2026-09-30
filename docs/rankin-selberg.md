@@ -36,9 +36,7 @@ $$
 
 # 직관
 
-## 펼치기
-
-$E(z,s)$ 는 $\Gamma_\infty\backslash\Gamma$ 위의 합이고 피적분함수의 나머지 $f\bar gy^k$ 는 $\Gamma$ 불변이므로
+$E(z,s)$ 는 $\Gamma_\infty\backslash\Gamma$ 위의 합이고 나머지 피적분함수 $f\bar gy^k$ 는 $\Gamma$ 불변이므로, 합의 각 항을 기본영역에서 옮기면 적분 영역이 넓어지고 합이 사라진다.
 
 $$
 \int_{\Gamma\backslash\mathbb H}F(z)\sum_{\gamma\in\Gamma_\infty\backslash\Gamma}
@@ -46,59 +44,9 @@ $$
 =\int_{\Gamma_\infty\backslash\mathbb H}F(z)\thinspace y^s\thinspace d\mu
 $$
 
-가 된다. 합이 영역을 넓히는 데 쓰이고 사라진다. $\Gamma_\infty$ 를 $z\mapsto z+1$ 이 생성하므로 오른쪽 영역은 $0\le x\lt 1$ , $y\gt 0$ 인 띠이고, $x$ 적분에는 Fourier 계수의 직교성
+$\Gamma_\infty$ 를 $z\mapsto z+1$ 이 생성하므로 오른쪽 영역은 $0\le x\lt 1$ , $y\gt 0$ 인 띠다. Fourier 전개를 넣고 $x$ 로 적분하면 $\int_0^1e^{2\pi i(n-m)x}\thinspace dx=\delta_{nm}$ 이 대각항만 남긴다. 남는 것은 $\sum_na_n\overline{b_n}$ 에 $\int_0^\infty y^{s+k-2}e^{-4\pi ny}\thinspace dy$ 를 곱한 것, 곧 Dirichlet 급수와 감마 인자다.
 
-$$
-\int_0^1e^{2\pi i(n-m)x}\thinspace dx=\delta_{nm}
-$$
-
-이 쓰인다. 남는 것은 $\sum_n a_n\overline{b_n}$ 에 $\int_0^\infty y^{s+k-2}e^{-4\pi ny}dy$ 를 곱한 것, 곧 Dirichlet 급수와 감마 인자다.
-
-$L$ 함수를 값으로 갖는 적분을 만들고 적분의 다른 표현에서 성질을 읽는 전략은 [Tate 의 논문](tate-thesis.md)과 Godement–Jacquet 에서도 같다. 대칭성의 출처가 다르다. Tate 와 Godement–Jacquet 에서는 Poisson 합공식이, 여기서는 Eisenstein 급수가 함수방정식을 준다.
-
-## 극과 Petersson 내적
-
-$E(z,s)$ 는 $s=1$ 에서 단순극을 갖고 유수가 상수 $3/\pi=1/\mathrm{vol}(\Gamma\backslash\mathbb H)$ 다. 그러므로 $I(s)$ 의 $s=1$ 에서의 유수는
-
-$$
-\mathrm{Res}\_{s=1}I(s)=\frac1{\mathrm{vol}}\int_{\Gamma\backslash\mathbb H}f\bar gy^k\thinspace d\mu
-=\frac{\langle f,g\rangle}{\mathrm{vol}}
-$$
-
-곧 **Petersson 내적**이다. $f=g$ 이면 양수라 극이 있고 $f\perp g$ 이면 극이 사라진다.
-
-아델판에서는 다음이 된다.
-
-> $L(s,\pi\times\pi')$ 가 $s=1$ 에서 극을 가진다 $\iff$ $\pi'\cong\tilde\pi$
-
-극의 유무라는 해석적 성질이 동형 여부라는 표현론적 성질을 판정한다. 강한 중복도 1, $L$ 함수의 $\mathrm{Re}(s)=1$ 비소멸, 역정리의 증명이 이 판정을 쓴다.
-
-## $\mathrm{GL}\_n$ 의 Whittaker 함수
-
-$n\ge3$ 에서 첨점형식의 Fourier 전개는 수열 $\lbrace a_n\rbrace$ 이 아니다. 극대 멱단근 $N$ 이 아벨군이 아니므로 전개의 계수 자리에 수가 아니라 **Whittaker 함수**가 온다.
-
-$$
-W_\varphi(g)=\int_{N(\mathbb Q)\backslash N(\mathbb A)}\varphi(ng)\thinspace\psi^{-1}(n)\thinspace dn
-$$
-
-그리고 첨점형식의 전개는 $\mathrm{GL}\_{n-1}$ 의 유리점에 대한 합이 된다.
-
-$$
-\varphi(g)=\sum_{\gamma\in N_{n-1}(\mathbb Q)\backslash\mathrm{GL}\_{n-1}(\mathbb Q)}
-W_\varphi\negthinspace\left(\begin{pmatrix}\gamma&\cr&1\end{pmatrix}g\right)
-$$
-
-이 합이 펼치기의 재료다. $\mathrm{GL}\_{n-1}$ 위의 합이 있으므로 적분 영역이 $\mathrm{GL}\_{n-1}$ 전체로 펼쳐지고, 남는 것이 Whittaker 함수 두 개의 곱의 적분이다.
-
-## Euler 곱과 Whittaker 모형의 유일성
-
-전역 적분이 국소 적분의 곱이 되는 근거는 Whittaker 모형의 유일성이다. Shalika 와 Gelfand–Kazhdan 의 정리에 따라 $\mathrm{Hom}\_{N}(\pi_v,\psi_v)$ 는 많아야 1 차원이고, 전역 Whittaker 함수가 국소 Whittaker 함수의 곱으로 쪼개진다.
-
-$$
-W_\varphi(g)=\prod_v W_v(g_v)
-$$
-
-피적분함수가 곱이고 측도가 곱이므로 적분도 곱이다. Whittaker 모형이 유일하지 않은 군에서는 적분이 Euler 곱이 되지 않아 이 방법이 통하지 않는다.
+$n\ge3$ 에서는 같은 계산의 재료가 달라진다. 극대 멱단근 $N$ 이 아벨군이 아니므로 첨점형식의 전개가 수열 $\lbrace a_n\rbrace$ 이 아니고, 계수 자리에 수가 아니라 $N$ 위에서 지표 $\psi$ 로 적분해 얻는 **Whittaker 함수**가 온다. 전개가 $\mathrm{GL}\_{n-1}$ 의 유리점에 대한 합이 되고, 그 합이 펼치기의 재료다. 적분 영역이 $\mathrm{GL}\_{n-1}$ 전체로 펼쳐지고 남는 것이 Whittaker 함수 두 개의 곱의 적분이다.
 
 # 정의
 
@@ -128,7 +76,20 @@ $$
 \psi_N(n)=\psi\Bigl(\sum_{i=1}^{n-1}n_{i,i+1}\Bigr)
 $$
 
-로 둔다. 첨점형식 $\varphi$ 의 Whittaker 함수는 개요의 적분이다. $\pi=\otimes_v\pi_v$ 가 첨점 표현이면 각 자리에서 $\psi_v$ 형 Whittaker 모형이 유일하게 존재하고 $W_\varphi=\prod_vW_v$ 로 분해된다.
+로 둔다. 첨점형식 $\varphi$ 의 **Whittaker 함수**는 다음 적분이다.
+
+$$
+W_\varphi(g)=\int_{N(\mathbb Q)\backslash N(\mathbb A)}\varphi(ng)\thinspace\psi^{-1}(n)\thinspace dn
+$$
+
+첨점형식의 전개는 $\mathrm{GL}\_{n-1}$ 의 유리점에 대한 합이다.
+
+$$
+\varphi(g)=\sum_{\gamma\in N_{n-1}(\mathbb Q)\backslash\mathrm{GL}\_{n-1}(\mathbb Q)}
+W_\varphi\negthinspace\left(\begin{pmatrix}\gamma&\cr&1\end{pmatrix}g\right)
+$$
+
+Shalika 와 Gelfand–Kazhdan 의 정리로 $\mathrm{Hom}\_{N}(\pi_v,\psi_v)$ 는 많아야 1 차원이다. 그러므로 $\pi=\otimes_v\pi_v$ 가 첨점 표현이면 각 자리에서 $\psi_v$ 형 Whittaker 모형이 유일하게 존재하고 $W_\varphi=\prod_vW_v$ 로 분해된다. 피적분함수가 곱이고 측도가 곱이므로 전역 적분이 국소 적분의 곱이 된다.
 
 ## $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 적분
 
@@ -169,6 +130,17 @@ $$
 > $$
 > 를 만족한다. $\pi'\not\cong\tilde\pi\otimes\lvert\cdot\rvert^{it}$ 이면 정함수이고, $\pi'\cong\tilde\pi$ 인 경우에만 $s=0,1$ 에 단순극이 있다.[^1]
 
+## 유수와 Petersson 내적
+
+$E(z,s)$ 는 $s=1$ 에서 단순극을 갖고 유수가 $1/\mathrm{vol}(\Gamma\backslash\mathbb H)=3/\pi$ 인 상수다. 그러므로 고전적 적분의 유수는 내적이다.
+
+$$
+\mathrm{Res}\_{s=1}I(s)=\frac1{\mathrm{vol}}\int_{\Gamma\backslash\mathbb H}f\bar gy^k\thinspace d\mu
+=\frac{\langle f,g\rangle}{\mathrm{vol}}
+$$
+
+오른쪽이 **Petersson 내적**이고, $f=g$ 이면 양수라 극이 있고 $f\perp g$ 이면 극이 사라진다. 아델판에서 이 계산이 $L(s,\pi\times\pi')$ 의 $s=1$ 에서의 극과 $\pi'\cong\tilde\pi$ 의 동치가 된다.
+
 ## 극 판정의 따름정리
 
 극 판정에서 다음이 나온다.
@@ -205,6 +177,8 @@ $$
 Rankin 이 1939 년에 이 항등식에서 $\tau(n)=O(n^{29/5})$ 를 얻었다. Hecke 의 자명한 추정 $O(n^6)$ 을 처음으로 넘은 결과이고, Deligne 이 1974 년에 $O(n^{11/2+\epsilon})$ 를 얻기까지의 개선은 이 $L$ 함수의 해석적 성질을 다루는 작업이었다.
 
 ## 두 가지 방법의 비교
+
+$L$ 함수를 값으로 갖는 적분을 만들고 적분의 다른 표현에서 성질을 읽는 전략은 [Tate 의 논문](tate-thesis.md)과 Godement–Jacquet 과 같고, 함수방정식의 출처만 다르다. 그쪽은 Poisson 합공식이고 여기서는 Eisenstein 급수다.
 
 자기동형 $L$ 함수의 해석적 성질을 얻는 방법은 두 갈래다.
 
