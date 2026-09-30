@@ -16,48 +16,9 @@ Bott 가 1957 년에 $\lambda$ 가 지배적이지 않은 경우를 답했다[^1
 
 # 직관
 
-## 깃발다양체의 유래
+$G$ 의 기약표현 $V_\lambda$ 안에서 최고무게 벡터 $v_\lambda$ 는 상수배를 빼면 유일하다. $\mathbb P(V_\lambda)$ 에서 점 $\lbrack v_\lambda\rbrack$ 의 $G$ 궤도를 보면 안정자가 Borel 부분군 $B$ 이고 궤도가 $G/B$ 다. 표현마다 다른 다양체가 나오는 것이 아니라 $\lambda$ 에 무관한 하나의 다양체가 나오고, 표현의 정보는 그 위의 직선다발로 옮겨간다.
 
-$G$ 의 표현 $V_\lambda$ 안에서 최고무게 벡터 $v_\lambda$ 는 상수배를 빼면 유일하다. $\mathbb P(V_\lambda)$ 에서 점 $[v_\lambda]$ 를 잡고 $G$ 로 궤도를 돌리면 안정자가 $\lambda$ 를 정의하는 포물형 부분군이다. 일반적인 $\lambda$ 에서는 안정자가 $B$ 이고 궤도는
-
-$$
-G/B\hookrightarrow\mathbb P(V_\lambda)
-$$
-
-로 닫힌 매장이 된다. $G/B$ 는 최고무게 벡터가 그리는 궤도이고, 직선다발 $\mathcal L_\lambda$ 는 이 매장에서 $\mathcal O(1)$ 을 당긴 것이다.
-
-$G=\mathrm{GL}\_n$ 에서 $G/B$ 는 $\mathbb C^n$ 의 완전 깃발 $0\subset V_1\subset\cdots\subset V_{n-1}\subset\mathbb C^n$ 들의 공간이라 **깃발다양체**라 부른다. $B$ 는 표준 깃발의 안정자다.
-
-## Bott 의 이동 규칙
-
-$\lambda$ 가 지배적이지 않으면 단면이 없어 $H^0=0$ 이지만 높은 차수 코호몰로지는 살아 있을 수 있다. Weyl 군의 **점 작용**
-
-$$
-w\cdot\lambda=w(\lambda+\rho)-\rho
-$$
-
-을 쓴다. $\rho$ 는 양근 합의 절반이다.
-
-- $\lambda+\rho$ 가 어떤 벽 위에 놓이면, 곧 어떤 근 $\alpha$ 에 대해 $\langle\lambda+\rho,\alpha^\vee\rangle=0$ 이면 모든 차수의 코호몰로지가 $0$ 이다.
-- 그렇지 않으면 $w(\lambda+\rho)$ 를 지배적으로 만드는 $w\in W$ 가 유일하게 있고 다음이 성립한다.
-
-$$
-H^{\ell(w)}(G/B,\mathcal L_\lambda)\cong V_{w\cdot\lambda}^{\ast},\qquad H^{i}=0\ (i\ne\ell(w))
-$$
-
-$\ell(w)$ 는 $w$ 를 단순반사로 쓴 최단 단어의 길이다. $\lambda+\rho$ 를 지배적 방으로 밀어 넣는 데 넘은 벽의 개수가 코호몰로지가 사는 차수다. $\lambda$ 가 이미 지배적이면 $w=e$ 이고 Borel–Weil 로 되돌아온다.
-
-무게 $\lambda$ 자체의 Weyl 대칭은 벽 위의 무게를 고정점으로 갖지만, $\lambda+\rho$ 로 옮기면 지배적 방의 내부로 들어가 정칙 여부가 갈린다. 지표 공식의 $\sum_w(-1)^{\ell(w)}e^{w(\lambda+\rho)}$ 에 붙은 $(-1)^{\ell(w)}$ 가 코호몰로지 차수의 부호다.
-
-## Euler 표수 지표 공식
-
-각 $\lambda$ 에 대해 Euler 표수를 쓰면
-
-$$
-\chi(G/B,\mathcal L_\lambda)=\sum_i(-1)^i\mathrm{ch}H^i(G/B,\mathcal L_\lambda)=(-1)^{\ell(w)}\mathrm{ch}V_{w\cdot\lambda}^\ast
-$$
-
-이고, 왼쪽은 Atiyah–Bott 고정점 공식이나 등변 Riemann–Roch 로 계산된다. 결과가 Weyl 지표 공식의 우변이다. 교대합 $\sum_w(-1)^{\ell(w)}$ 은 고정점 $wB\in(G/B)^T$ 들의 기여를 모은 것이다.
+거꾸로 $G/B\hookrightarrow\mathbb P(V_\lambda)$ 에서 $\mathcal O(1)$ 을 당긴 직선다발 $\mathcal L_\lambda$ 의 대역 단면을 세면 $V_\lambda$ 의 쌍대가 나온다. $\lambda$ 가 지배적이 아니면 단면이 없지만 높은 차수 코호몰로지는 남고, 어느 차수에 남는지는 $\lambda+\rho$ 를 지배적 방으로 옮기는 데 넘어야 하는 벽의 개수가 정한다.
 
 # 정의
 
@@ -71,6 +32,8 @@ $$
 
 $G=\mathrm{SL}\_2$ 면 $G/B=\mathbb P^1$ 이고, $G=\mathrm{SL}\_3$ 면 $G/B$ 는 $\mathbb P^2$ 안의 깃발들이 이루는 3 차원 다양체다.
 
+$G=\mathrm{GL}\_n$ 에서 $G/B$ 는 $\mathbb C^n$ 의 완전 깃발 $0\subset V_1\subset\cdots\subset V_{n-1}\subset\mathbb C^n$ 들의 공간이고 $B$ 는 표준 깃발의 안정자다.
+
 ## 직선다발 $\mathcal L_\lambda$
 
 무게 $\lambda\in X^\ast(T)$ 는 $B\to T\to\mathbb C^\times$ 로 확장되어 $B$ 의 일차원 표현 $\mathbb C_\lambda$ 를 준다. 연관다발
@@ -80,6 +43,18 @@ $$
 $$
 
 가 $G/B$ 위의 $G$ 등변 직선다발이다. 부호 규약은 $\lambda$ 가 지배적일 때 $\mathcal L_\lambda$ 가 매우 풍부(very ample)해지도록 잡았다.
+
+$\lambda$ 가 지배적이면 $\lbrack v_\lambda\rbrack$ 의 궤도가 닫힌 매장 $G/B\hookrightarrow\mathbb P(V_\lambda)$ 를 주고, $\mathcal L_\lambda$ 는 그 매장에서 $\mathcal O(1)$ 을 당긴 것이다.
+
+## 점 작용
+
+$\rho$ 를 양근 합의 절반이라 하고 Weyl 군의 **점 작용**을 다음으로 둔다.
+
+$$
+w\cdot\lambda=w(\lambda+\rho)-\rho
+$$
+
+무게 $\lambda$ 자체의 Weyl 대칭은 벽 위의 무게를 고정점으로 갖지만, $\lambda+\rho$ 로 옮기면 정칙인 것과 벽 위에 놓이는 것이 갈린다.
 
 ## Schubert 세포와 Bruhat 순서
 
@@ -119,6 +94,16 @@ $\lambda\in X^\ast(T)$ 에 대해 다음이 성립한다.
 2. 아니면 $w(\lambda+\rho)$ 가 지배적 정칙이 되는 $w\in W$ 가 유일하게 존재하고, $H^{\ell(w)}(G/B,\mathcal L_\lambda)\cong V_{w\cdot\lambda}^{\ast}$ 이며 나머지 차수는 $0$ 이다.
 
 *증명.* $\mathrm{SL}\_2$ 로 환원한다. 단순반사 $s_\alpha$ 에 대응하는 포물형 부분군 $P_\alpha$ 를 잡으면 $G/B\to G/P_\alpha$ 가 $\mathbb P^1$ 다발이고, Leray 스펙트럼열을 쓰면 $\mathbb P^1$ 위 $\mathcal O(n)$ 의 코호몰로지만 알면 된다. $n\ge0$ 이면 $H^0$ 만, $n\le-2$ 이면 $H^1$ 만, $n=-1$ 이면 둘 다 $0$ 이다. 마지막 경우가 벽 위 조건의 국소 판본이고, 다발을 하나씩 통과할 때마다 차수가 하나씩 밀린다.
+
+$\ell(w)$ 는 $w$ 를 단순반사로 쓴 최단 단어의 길이이며, $\lambda+\rho$ 를 지배적 방으로 밀어 넣는 데 넘은 벽의 개수다. $\lambda$ 가 이미 지배적이면 $w=e$ 이고 $H^0$ 만 남는 Borel–Weil 의 경우다.
+
+## Euler 표수
+
+$$
+\chi(G/B,\mathcal L_\lambda)=\sum_i(-1)^i\mathrm{ch}H^i(G/B,\mathcal L_\lambda)=(-1)^{\ell(w)}\mathrm{ch}V_{w\cdot\lambda}^\ast
+$$
+
+왼쪽은 Atiyah–Bott 고정점 공식이나 등변 Riemann–Roch 로 계산되고 결과가 Weyl 지표 공식의 우변이다. 교대합 $\sum_w(-1)^{\ell(w)}e^{w(\lambda+\rho)}$ 은 고정점 $wB\in(G/B)^T$ 들의 기여를 모은 것이며, 부호 $(-1)^{\ell(w)}$ 가 코호몰로지 차수다.
 
 ## 표수 $p$ 에서의 실패
 
