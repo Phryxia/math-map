@@ -190,7 +190,7 @@ $\gamma$ 는 공식이 만들어 내는 적분상수이고, 이 식이 $\gamma$ 
 
 ## 선수지식
 
-- [Bernoulli 수와 von Staudt–Clausen 정리](bernoulli-numbers.md)
+- [Bernoulli 수](bernoulli-numbers.md)
 
 ## 더 알아보기
 

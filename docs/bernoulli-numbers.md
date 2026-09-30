@@ -1,4 +1,4 @@
-# Bernoulli 수와 von Staudt–Clausen 정리
+# Bernoulli 수
 
 # 개요
 
@@ -18,49 +18,21 @@ $$
 
 # 직관
 
-## 생성함수
-
-$$
-\frac{t}{e^{t}-1}=\sum_{n\ge0}B_n\frac{t^{n}}{n!}
-$$
-
-를 정의로 삼으면 거듭제곱 합 공식이 따라온다. $\sum_a e^{at}$ 를 등비급수로 더한 뒤 $t$ 의 계수를 비교하면 된다. [멱급수](power-series.md)로 정의하면 대칭성이 바로 보인다.
-
-$$
-\frac{t}{e^{t}-1}+\frac t2=\frac t2\coth\frac t2
-$$
-
-는 짝함수이므로 $B_1=-\tfrac12$ 을 빼면 홀수 번째가 모두 0 이고, 볼 것은 $B_2,B_4,B_6,\dots$ 뿐이다.
-
-## 분모의 규칙성
+처음 몇 값은 다음과 같다.
 
 $$
 B_2=\tfrac16,\quad B_4=-\tfrac1{30},\quad B_6=\tfrac1{42},\quad B_8=-\tfrac1{30},\quad B_{10}=\tfrac5{66}
 $$
 
-분자는 불규칙하게 커지지만 분모는 규칙적이다. $6=2\cdot3$ , $30=2\cdot3\cdot5$ , $42=2\cdot3\cdot7$ 에서 보듯 $p-1$ 이 $n$ 을 나누는 소수 $p$ 가 분모에 정확히 한 번씩 나타난다.
+분자는 불규칙하게 커지지만 분모는 규칙적이다. $6=2\cdot3$ , $30=2\cdot3\cdot5$ , $42=2\cdot3\cdot7$ 에서 분모의 소인수는 제곱 없이 한 번씩 나타나고, 나타나는 소수 $p$ 는 $p-1$ 이 첨자 $n$ 을 나누는 것들이다. $n=4$ 에서 $p-1\in\lbrace 1,2,4\rbrace$ 이므로 $p=2,3,5$ 이고 분모가 $30$ 이다.
+
+$p-1$ 은 $(\mathbb Z/p)^{\times}$ 의 위수다. 이 군의 원소를 $n$ 제곱해 더하면
 
 $$
-B_{n}+\sum_{(p-1)\mid n}\frac1p\ \in\ \mathbb Z\qquad(n\ \text{짝수})
+\sum_{a=1}^{p-1}a^{n}\equiv\begin{cases}-1\pmod p,&(p-1)\mid n\cr 0\pmod p,&\text{그 외}\end{cases}
 $$
 
-$p$ 진으로 읽으면 $(p-1)\mid n$ 이면 $B_n$ 의 $p$ 부치가 정확히 $-1$ 이고 아니면 $0$ 이상이다. $B_n$ 은 $p$ 진 정수이거나 기껏해야 1 차 극점을 가지며, 극점의 위치는 $n\bmod(p-1)$ 로만 결정된다.
-
-## 분자의 $p$ 진 연속성
-
-von Staudt–Clausen 이 분모를 치우고 나면 $B_n/n$ 을 $p$ 진수로 볼 수 있다. 이 값이 $n$ 에 대해 연속이라는 것이 **Kummer 합동**이다.
-
-$$
-m\equiv n\pmod{p-1},\quad (p-1)\nmid m
-\thinspace\Longrightarrow\thinspace
-\frac{B_m}{m}\equiv\frac{B_n}{n}\pmod p
-$$
-
-$B_k$ 의 분자에 $p$ 가 숨어 있는 일은 드물지만 일어나고, 그런 $p$ 에서 순환체의 산술이 달라진다.
-
-## $p-1$ 의 근원
-
-$(\mathbb Z/p)^{\times}$ 의 위수가 $p-1$ 이다. $\sum_{a=1}^{p-1}a^{n}$ 은 $(p-1)\mid n$ 일 때만 $\bmod p$ 에서 $-1$ 이고 아니면 $0$ 이다. 거듭제곱 합 공식의 $\bmod p$ 판이 von Staudt–Clausen 이고, Kummer 합동의 $p-1$ 주기도 같은 직교성에서 온다.
+이고, 한편 거듭제곱 합 $\sum_{a=0}^{N-1}a^{n}$ 을 $N$ 의 다항식으로 쓰면 그 계수에 $B_n$ 이 들어 있다. 두 계산을 $\bmod p$ 에서 맞추면 $(p-1)\mid n$ 인 소수에서만 $B_n$ 의 분모에 $p$ 가 붙는다.
 
 # 정의
 
@@ -73,6 +45,14 @@ $$
 $$
 
 $B_n=B_n(0)$ 이다. 점화식은 $n\ge1$ 에서 $\sum_{k=0}^{n}\binom{n+1}{k}B_k=0$ 이다. $B_1=-\tfrac12$ 이며 $n\ge3$ 이 홀수면 $B_n=0$ 이다.
+
+[멱급수](power-series.md)로 보면 홀수 항이 사라지는 것이 식에서 읽힌다.
+
+$$
+\frac{t}{e^{t}-1}+\frac t2=\frac t2\coth\frac t2
+$$
+
+우변이 짝함수이므로 $B_1=-\tfrac12$ 을 뺀 나머지에서 홀수 번째 계수가 모두 $0$ 이고, 남는 것은 $B_2,B_4,B_6,\dots$ 뿐이다.
 
 ## 일반화 Bernoulli 수
 
@@ -128,7 +108,7 @@ $$
 \big(1-p^{m-1}\big)\frac{B_m}{m}\equiv\big(1-p^{n-1}\big)\frac{B_n}{n}\pmod{p^{k}}
 $$
 
-$p$ 인자 $(1-p^{m-1})$ 는 Euler 인자를 제거한 것이고, $k=1$ 이면 이 인자가 $\bmod p$ 에서 1 이라 직관 절의 꼴이 된다.
+$p$ 인자 $(1-p^{m-1})$ 는 Euler 인자를 제거한 것이고, $k=1$ 이면 이 인자가 $\bmod p$ 에서 1 이라 $B_m/m\equiv B_n/n\pmod p$ 가 된다.
 
 $\mathbb Z_{\ge2}$ 의 각 잉여류가 $\mathbb Z_p$ 에서 조밀하므로 이 합동은 함수
 

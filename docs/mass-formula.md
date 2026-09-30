@@ -151,7 +151,7 @@ $\sum 1/|\mathrm{Aut}L_i|$ 대신 각 격자에 조화 다항식 값을 곱해 �
 ## 선수지식
 
 - [Siegel–Weil 공식과 이차형식의 표현수](siegel-weil.md)
-- [Bernoulli 수와 von Staudt–Clausen 정리](bernoulli-numbers.md)
+- [Bernoulli 수](bernoulli-numbers.md)
 
 ## 더 알아보기
 
