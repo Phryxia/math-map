@@ -18,42 +18,9 @@ Selmer 구조 $\mathcal F$ 에 **핵심계수** $\chi(\mathcal F)\in\mathbb Z$ �
 
 # 직관
 
-## 유도류의 공리화
+Euler 계 $\mathbf{c}=\lbrace c_F\rbrace$ 는 수체의 탑 위에 얹힌 거대한 대상이고, Kolyvagin 유도 연산자가 거기서 유도류 $\kappa_n\in H^1(K,T)$ 를 뽑아낸다. 실제 증명에서 쓰이는 것은 $\kappa_n$ 뿐이고 $c_F$ 는 $\kappa_n$ 을 만든 뒤 다시 등장하지 않는다. 그러므로 $\kappa$ 가 만족하는 성질을 정의로 삼는다.
 
-Euler 계 $\mathbf{c}=\lbrace c_F\rbrace$ 는 수체의 탑 위에 얹힌 거대한 대상이고, Kolyvagin 유도 연산자가 거기서 유도류 $\kappa_n\in H^1(K,T)$ 를 뽑아낸다. 실제 증명에서 쓰이는 것은 $\kappa_n$ 뿐이다. $c_F$ 는 $\kappa_n$ 을 만든 뒤 다시 등장하지 않는다.
-
-그러므로 $\kappa$ 가 만족하는 성질을 정의로 삼는다. 조건은 둘이다.
-
-1. $\kappa_n$ 은 $n$ 에서 **변형된** Selmer 군에 산다. 곧 $n$ 의 소인수 $\ell$ 마다 원래 조건을 어기되, 정확히 지정된 방식으로만 어긴다.
-2. $\kappa_n$ 과 $\kappa_{n\ell}$ 은 $\ell$ 자리에서 **정합**한다. $\kappa_n$ 의 불분기 성분이 $\kappa_{n\ell}$ 의 분기 성분을 결정한다.
-
-두 번째 조건이 Euler 계의 자취 정합성을 대신한다. 자취 관계가 $\ell$ 자리의 국소 관계로 번역된 것이다.
-
-## 국소 조건의 변형
-
-Selmer 군은 자리마다 부분군 $H^1_{\mathcal F}(K_v,T)\subseteq H^1(K_v,T)$ 를 지정해 잘라낸 것이고, 한 자리 $\ell$ 에서 조건을 넓히면 Selmer 군이 커진다.
-
-[국소 Tate 쌍대성](poitou-tate.md) 아래 조건을 넓히면 그 소멸자가 좁아져 쌍대 Selmer 군 $H^1_{\mathcal F^\ast}(K,T^\ast)$ 가 작아지고, 두 변화량이 정확히 상쇄된다.
-
-$$
-\frac{|H^1_{\mathcal F'}(K,T)|}{|H^1_{\mathcal F}(K,T)|}\cdot\frac{|H^1_{\mathcal F^\ast}(K,T^\ast)|}{|H^1_{\mathcal F'^\ast}(K,T^\ast)|}=\frac{|H^1_{\mathcal F'}(K_\ell,T)|}{|H^1_{\mathcal F}(K_\ell,T)|}
-$$
-
-한쪽이 올라간 만큼 다른 쪽이 내려가고 기울기는 국소적으로 읽힌다. $\ell$ 자리를 하나 열어 $s$ 의 국소 성분을 죽이는 Kolyvagin 논법이 이 조작이다.
-
-## 변형에 불변인 차
-
-위 항등식은 차 $\dim H^1_{\mathcal F}(K,T)-\dim H^1_{\mathcal F^\ast}(K,T^\ast)$ 가 국소 데이터로 정해진다는 뜻이고, 이 차가 핵심계수 $\chi(\mathcal F)$ 다.
-
-Kolyvagin 소수 $\ell$ 에서 쓰는 변형은 불분기 조건을 같은 크기의 가로지름 조건으로 바꾸는 것이므로 $\chi$ 가 변하지 않는다. $\chi$ 는 $n$ 에 의존하지 않고 Kolyvagin 계가 돌아다니는 격자 전체에서 상수다.
-
-## 핵심계수 $1$
-
-$\chi=1$ 은 Selmer 쪽과 쌍대 Selmer 쪽의 균형이 한 칸 어긋나 있다는 뜻이다. 이 한 칸이 Kolyvagin 계에 자유도 $1$ 을 주고 그 자유도가 곱셈 상수 하나로 나타나므로, 어떤 Euler 계에서 나온 계든 서로 상수배다.
-
-$\chi=0$ 이면 자유도가 없어 계가 $0$ 뿐이고 $\chi\ge2$ 이면 계가 너무 많아 하나로 나머지를 통제하지 못한다.
-
-[타원곡선](elliptic-curves.md)에서 자기쌍대 구조 자체는 $\chi=0$ 이고 $p$ 자리의 조건을 완화해야 $\chi=1$ 이 된다. 그 계산에서 $-1$ 을 기여하는 것은 실수 자리다. 복소켤레의 $+1$ 고유공간이 $1$ 차원이라는 것, 곧 $E(\mathbb R)$ 이 실차원 하나를 갖는다는 것이 균형을 어긋나게 만든다.
+조건은 둘이다. $\kappa_n$ 은 $n$ 에서 변형된 Selmer 군에 살아서, $n$ 의 소인수 $\ell$ 마다 원래 조건을 지정된 방식으로만 어긴다. 그리고 $\kappa_n$ 과 $\kappa_{n\ell}$ 이 $\ell$ 자리에서 정합해서, $\kappa_n$ 의 불분기 성분이 $\kappa_{n\ell}$ 의 분기 성분을 결정한다. 둘째 조건이 Euler 계의 자취 관계를 $\ell$ 자리의 국소 관계로 번역한 것이다.
 
 # 정의
 
@@ -141,6 +108,8 @@ $$
 
 로 정의한다. 정의는 대역적이지만 아래 Greenberg–Wiles 공식이 국소 데이터로 계산해 준다.
 
+$\chi=1$ 은 Selmer 쪽과 쌍대 Selmer 쪽의 균형이 한 칸 어긋나 있다는 뜻이고, 그 한 칸이 Kolyvagin 계에 자유도 $1$ 을 주어 어떤 Euler 계에서 나온 계든 서로 상수배가 된다. $\chi=0$ 이면 자유도가 없어 계가 $0$ 뿐이고, $\chi\ge2$ 이면 계가 너무 많아 하나로 나머지를 통제하지 못한다.
+
 # 성질
 
 ## Greenberg–Wiles 공식
@@ -159,6 +128,14 @@ $$
 
 가 되고 우변은 전부 국소 계산이다.
 
+한 자리 $\ell$ 에서 조건을 넓히면 Selmer 군이 커지고, [국소 Tate 쌍대성](poitou-tate.md) 아래 그 소멸자가 좁아져 쌍대 Selmer 군이 작아진다. 두 변화량은 정확히 상쇄된다.
+
+$$
+\frac{|H^1_{\mathcal F'}(K,T)|}{|H^1_{\mathcal F}(K,T)|}\cdot\frac{|H^1_{\mathcal F^\ast}(K,T^\ast)|}{|H^1_{\mathcal F'^\ast}(K,T^\ast)|}=\frac{|H^1_{\mathcal F'}(K_\ell,T)|}{|H^1_{\mathcal F}(K_\ell,T)|}
+$$
+
+$\ell$ 자리를 하나 열어 류의 국소 성분을 죽이는 Kolyvagin 논법이 이 조작이다. Kolyvagin 소수에서 쓰는 변형은 불분기 조건을 같은 크기의 가로지름 조건으로 바꾸므로 $\chi$ 가 변하지 않고, $\chi$ 는 Kolyvagin 계가 돌아다니는 격자 전체에서 상수다.
+
 ## 시소 보조정리
 
 $\mathcal F\subseteq\mathcal F'$ 가 자리 $\ell$ 하나에서만 다르다 하자. Greenberg–Wiles 를 두 구조에 적용해 나누면 다른 모든 자리의 항이 지워지고 직관 절의 항등식이 남는다.
@@ -176,7 +153,7 @@ $$
 
 ## 자기쌍대 구조의 핵심계수
 
-$\mathcal F=\mathcal F^\ast$ 이고 $T\cong T^\ast$ 이면 두 군이 같으므로 $\chi=0$ 이다. $K=\mathbb Q$ , $T=E[p]$ , $p\ge5$ 이고 $E[p]$ 가 기약이며 $E$ 가 $p$ 에서 좋은 환원을 가질 때 자리별 기여는 다음과 같다.
+$\mathcal F=\mathcal F^\ast$ 이고 $T\cong T^\ast$ 이면 두 군이 같으므로 $\chi=0$ 이다. [타원곡선](elliptic-curves.md) $E$ 에 대해 $K=\mathbb Q$ , $T=E[p]$ , $p\ge5$ 이고 $E[p]$ 가 기약이며 $E$ 가 $p$ 에서 좋은 환원을 가질 때 자리별 기여는 다음과 같다.
 
 | 자리 $v$ | $\dim H^1_{\mathcal F}(\mathbb Q_v,T)$ | $\dim H^0(\mathbb Q_v,T)$ | 기여 |
 | --- | --- | --- | --- |
