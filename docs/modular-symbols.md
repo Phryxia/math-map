@@ -16,60 +16,15 @@ Manin 은 이 군의 완전한 유한 표현을 주었다. 생성원은 $\mathbb
 
 # 직관
 
-## 경로 번역
-
-$f\in S_2(\Gamma_0(N))$ 에 대해 $\omega_f=2\pi i\thinspace f(z)\thinspace dz$ 는 $\Gamma_0(N)$ 불변이므로 $X_0(N)$ 위의 정칙 1형식이다. 적분
+$f\in S_2(\Gamma_0(N))$ 에 대해 $\omega_f=2\pi i\thinspace f(z)\thinspace dz$ 는 $\Gamma_0(N)$ 불변이므로 $X_0(N)$ 위의 정칙 1형식이다. 첨점 $\alpha,\beta\in\mathbb P^1(\mathbb Q)$ 를 잇는 경로를 따라 적분한
 
 $$
 \langle\lbrace\alpha,\beta\rbrace,f\rangle=\int_\alpha^\beta 2\pi i\thinspace f(z)\thinspace dz
 $$
 
-는 첨점 $\alpha,\beta\in\mathbb P^1(\mathbb Q)$ 사이의 경로를 따라 계산되고 $f$ 가 첨점에서 빠르게 죽으므로 수렴하며, 값은 경로의 호몰로지류에만 의존한다. 형식의 공간 대신 경로의 공간을 다루면 문제가 위상적 대상, 곧 조합론이 된다.
+는 $f$ 가 첨점에서 빠르게 죽으므로 수렴하고, 값은 경로의 호몰로지류에만 의존한다. 무한급수인 $f$ 를 다루는 대신 적분할 경로를 다루면 문제가 위상적 대상이 된다.
 
-## 첨점을 끝점으로 허용한 호몰로지
-
-닫힌 경로만 쓰면 $H_1(X_0(N),\mathbb Z)\cong\mathbb Z^{2g}$ 이고 이것이 $S_2$ 의 실수 구조를 준다. $\lbrace\alpha,\beta\rbrace$ 를 임의의 두 첨점을 잇는 측지선으로 두면 삼각 관계
-
-$$
-\lbrace\alpha,\beta\rbrace+\lbrace\beta,\gamma\rbrace+\lbrace\gamma,\alpha\rbrace=0
-$$
-
-가 성립해 경로를 자르고 붙일 수 있다. 대가는 군이 커지는 것이다.
-
-$$
-\dim H_1(X_0(N),\text{첨점};\mathbb Q)=2g+c-1
-$$
-
-$c$ 는 첨점의 개수다. 닫힌 경로 부분 $2g$ 에 첨점 사이의 여분 $c-1$ 이 붙은 꼴이고 경계 사상의 핵을 취하면 $2g$ 로 돌아온다.
-
-## Manin 의 유한 표현
-
-$\alpha$ 에서 $\beta$ 로 가는 경로를 연분수 수렴분을 따라 쪼개면 각 조각이 어떤 $g\in\mathrm{SL}\_2(\mathbb Z)$ 에 대해 $\lbrace g\cdot0,\ g\cdot\infty\rbrace$ 꼴이다. $\Gamma_0(N)$ 작용으로 나누면 $g$ 는 잉여류로만 기억된다.
-
-$$
-\Gamma_0(N)\backslash\mathrm{SL}\_2(\mathbb Z)\ \xrightarrow{\ \sim\ }\ \mathbb P^1(\mathbb Z/N),\qquad
-\begin{pmatrix}a&b\cr c&d\end{pmatrix}\longmapsto(c:d)
-$$
-
-생성원은 $\mathbb P^1(\mathbb Z/N)$ 의 원소마다 하나씩이고 개수는 다음이다.
-
-$$
-\char35{}\mathbb P^1(\mathbb Z/N)=N\prod_{p\mid N}\Big(1+\frac1p\Big)=[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]
-$$
-
-$x\in\mathbb P^1(\mathbb Z/N)$ 에 대응하는 생성원이 **Manin 기호** $[x]$ 다.
-
-## 두 개의 관계식
-
-$\mathrm{SL}\_2(\mathbb Z)$ 는 $\sigma=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 와 $\tau=\begin{pmatrix}0&-1\cr 1&-1\end{pmatrix}$ 로 생성되고 $\sigma^2=\tau^3=-I$ 다. 이것이 관계식이 된다.
-
-$$
-[x]+[x\sigma]=0,\qquad [x]+[x\tau]+[x\tau^2]=0
-$$
-
-첫 식은 경로 뒤집기 $\lbrace 0,\infty\rbrace=-\lbrace\infty,0\rbrace$ 에서, 둘째 식은 $\lbrace 0,\infty\rbrace+\lbrace\infty,-1\rbrace+\lbrace-1,0\rbrace=0$ 에서 온다. 다른 관계는 없다.
-
-모듈러 기호 공간은 유한 생성원 위의 유한 연립일차방정식의 해공간이고 계산은 Gauss 소거다.
+경로는 유한 개로 쪼개진다. $\alpha$ 에서 $\beta$ 로 가는 경로를 연분수 수렴분을 따라 자르면 각 조각이 어떤 $g\in\mathrm{SL}\_2(\mathbb Z)$ 에 대해 $\lbrace g\cdot0,\thinspace g\cdot\infty\rbrace$ 꼴이고, $\Gamma_0(N)$ 작용으로 나누면 $g$ 는 잉여류로만 기억된다. 잉여류의 개수가 지표 $[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]$ 이므로 생성원이 유한하고, 관계식도 유한하다. 모듈러 기호 공간이 유한 연립일차방정식의 해공간이 되어 계산이 Gauss 소거가 된다.
 
 # 정의
 
@@ -98,7 +53,15 @@ $$
 
 ## Manin 기호
 
-대응 $\Gamma_0(N)\backslash\mathrm{SL}\_2(\mathbb Z)\cong\mathbb P^1(\mathbb Z/N)$ 아래에서 $x=(c:d)$ 에 대응하는 $g$ 를 잡아 다음으로 둔다.
+잉여류를 매개하는 대응은 왼쪽 열을 읽는 것이다.
+
+$$
+\Gamma_0(N)\backslash\mathrm{SL}\_2(\mathbb Z)\ \xrightarrow{\ \sim\ }\ \mathbb P^1(\mathbb Z/N),\qquad
+\begin{pmatrix}a&b\cr c&d\end{pmatrix}\longmapsto(c:d),\qquad
+\char35{}\mathbb P^1(\mathbb Z/N)=N\prod_{p\mid N}\Big(1+\frac1p\Big)
+$$
+
+이 대응 아래에서 $x=(c:d)$ 에 대응하는 $g$ 를 잡아 다음으로 둔다.
 
 $$
 [x]=\lbrace g\cdot0,\ g\cdot\infty\rbrace\in\mathbb M_2(\Gamma_0(N))
@@ -109,6 +72,8 @@ $\mathrm{SL}\_2(\mathbb Z)$ 는 $\mathbb P^1(\mathbb Z/N)$ 에 행벡터 우곱 
 $$
 \mathbb M_2(\Gamma_0(N))\thickspace\cong\thickspace\frac{\bigoplus_{x\in\mathbb P^1(\mathbb Z/N)}\mathbb Z[x]}{\big([x]+[x\sigma],\ [x]+[x\tau]+[x\tau^2]\big)}
 $$
+
+두 관계식은 $\mathrm{SL}\_2(\mathbb Z)$ 의 표시에서 온다. 이 군은 $\sigma=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 와 $\tau=\begin{pmatrix}0&-1\cr 1&-1\end{pmatrix}$ 로 생성되고 $\sigma^2=\tau^3=-I$ 다. 첫 관계식은 경로 뒤집기 $\lbrace0,\infty\rbrace=-\lbrace\infty,0\rbrace$ 이고 둘째는 삼각 관계 $\lbrace0,\infty\rbrace+\lbrace\infty,-1\rbrace+\lbrace-1,0\rbrace=0$ 이다. 다른 관계는 없다.
 
 ## Hecke 작용소
 
