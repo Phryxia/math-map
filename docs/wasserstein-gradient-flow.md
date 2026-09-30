@@ -16,49 +16,27 @@ $\mathcal F$ 는 자유에너지이고, 이 방정식은 [Itô 계산](ito-calcu
 
 # 직관
 
-## 거리 선택과 흐름
+유클리드 공간의 경사하강은 한 걸음마다 $x^{k+1}=\arg\min_x\lbrack f(x)+|x-x^k|^2/(2\tau)\rbrack$ 을 푸는 것과 같고 $\tau\to0$ 에서 $\dot x=-\nabla f(x)$ 가 나온다. 여기서 $|x-x^k|^2$ 는 공간에 준 거리이므로, 거리를 바꾸면 같은 $f$ 에서 다른 흐름이 나온다.
 
-유클리드 공간에서 경사하강은 한 걸음마다 다음을 푸는 것과 같다.
+확률측도의 공간 $\mathcal P_2(\mathbb R^d)$ 에서 거리를 $W_2$ 로 잡으면 같은 식이 $\rho^{k+1}=\arg\min_\rho\lbrack\mathcal F(\rho)+W_2^2(\rho,\rho^k)/(2\tau)\rbrack$ 이 된다. $\mathcal F(\rho)=\int\rho\log\rho$ 로 놓고 $\tau\to0$ 을 보내면 열방정식 $\partial_t\rho=\Delta\rho$ 가 나온다. 확산이 엔트로피의 경사하강으로 다시 적히고, 어느 에너지를 어느 거리로 내려가는지가 방정식을 정한다.
 
-$$
-x^{k+1}=\arg\min_x\ \Big[f(x)+\frac{|x-x^k|^2}{2\tau}\Big]
-$$
+# 정의
 
-$\tau\to0$ 에서 $\dot x=-\nabla f(x)$ 가 나온다. $|x-x^k|^2$ 는 공간에 준 거리다. 거리를 바꾸면 같은 $f$ 에서 다른 흐름이 나온다. 확률측도의 공간 $\mathcal P_2(\mathbb R^d)$ 에서 거리를 $W_2$ 로 잡으면 같은 식이 다음이 된다.
+## Otto 미적분
 
-$$
-\rho^{k+1}=\arg\min_{\rho\in\mathcal P_2}\ \Big[\mathcal F(\rho)+\frac{W_2^2(\rho,\rho^k)}{2\tau}\Big]
-$$
-
-이것이 **JKO 스킴**이고 $\tau\to0$ 극한이 Fokker–Planck 방정식이다.
-
-## 접공간과 기울기장
-
-$W_2$ 의 Benamou–Brenier 동적 표현이 이 기하를 드러낸다.
+$W_2$ 의 Benamou–Brenier 동적 표현이 $\mathcal P_2$ 의 기하를 준다.
 
 $$
 W_2^2(\mu,\nu)=\min\Big\lbrace\int_0^1\negthinspace\negthinspace\int|v_t|^2\rho_t\thinspace dx\thinspace dt\ :\ \partial_t\rho_t+\nabla\negthinspace\cdot\negthinspace(\rho_tv_t)=0,\ \rho_0=\mu,\ \rho_1=\nu\Big\rbrace
 $$
 
-연속방정식이 곡선 $\rho_t$ 의 속도를 속도장 $v_t$ 로 적는다. 그 길이의 제곱이 $\int|v_t|^2\rho_t$ 이므로 $\rho$ 에서의 접공간이 내적을 하나 갖는다.
+연속방정식이 곡선 $\rho_t$ 의 속도를 속도장 $v_t$ 로 적고, 그 길이의 제곱이 $\int|v_t|^2\rho_t$ 이므로 $\rho$ 에서의 접공간에 내적이 하나 들어간다.
 
 $$
 \langle v_1,v_2\rangle_\rho=\int v_1\cdot v_2\thinspace\rho\thinspace dx
 $$
 
-회전 성분은 밀도를 바꾸지 않으면서 길이만 늘리므로 최소화하는 속도장은 항상 기울기장 $v=\nabla\varphi$ 꼴이다. 접공간이 $\lbrace\nabla\varphi\rbrace$ 의 닫힘이 되고, 이 구조를 Otto 미적분이라 한다.
-
-## 엔트로피의 기울기
-
-$\mathcal S(\rho)=\int\rho\log\rho$ 의 일차 변분은 $\frac{\delta\mathcal S}{\delta\rho}=\log\rho+1$ 이므로 기울기 흐름의 속도장이 $-\nabla\log\rho$ 다. 연속방정식에 넣으면 $\rho$ 와 $1/\rho$ 가 상쇄된다.
-
-$$
-\partial_t\rho=\nabla\negthinspace\cdot\negthinspace\big(\rho\thinspace\nabla\log\rho\big)=\nabla\negthinspace\cdot\negthinspace\Big(\rho\thinspace\frac{\nabla\rho}{\rho}\Big)=\Delta\rho
-$$
-
-퍼텐셜 항 $\int V\rho$ 를 더하면 속도장에 $-\nabla V$ 가 붙어 Fokker–Planck 방정식이 되고, 이것이 확률미분방정식(stochastic differential equation, SDE) $dX_t=-\nabla V(X_t)dt+\sqrt2\thinspace dB_t$ 의 밀도 방정식이다.
-
-# 정의
+회전 성분은 밀도를 바꾸지 않으면서 길이만 늘리므로 최소화하는 속도장은 항상 기울기장 $v=\nabla\varphi$ 꼴이다. 접공간이 $\lbrace\nabla\varphi\rbrace$ 의 닫힘이 되고, 이 구조를 **Otto 미적분**이라 한다.
 
 ## 자유에너지와 기울기 흐름
 
@@ -100,6 +78,16 @@ $$
 이면 $\mathcal F$ 가 **$\lambda$ 변위 볼록**이다. 보통의 볼록성은 선형 보간 $(1-t)\mu_0+t\mu_1$ 을 따라 재고 여기서는 측지 보간을 따라 잰다. 엔트로피는 선형 보간을 따라 볼록이지만 $\lambda=0$ 이고, $\int V\rho$ 는 $V$ 가 $\lambda$ 강볼록이면 $\lambda$ 변위 볼록이다.
 
 # 성질
+
+## 엔트로피의 기울기
+
+$\mathcal S(\rho)=\int\rho\log\rho$ 의 일차 변분은 $\frac{\delta\mathcal S}{\delta\rho}=\log\rho+1$ 이므로 기울기 흐름의 속도장이 $-\nabla\log\rho$ 다. 연속방정식에 넣으면 $\rho$ 와 $1/\rho$ 가 상쇄된다.
+
+$$
+\partial_t\rho=\nabla\negthinspace\cdot\negthinspace\big(\rho\thinspace\nabla\log\rho\big)=\nabla\negthinspace\cdot\negthinspace\Big(\rho\thinspace\frac{\nabla\rho}{\rho}\Big)=\Delta\rho
+$$
+
+퍼텐셜 항 $\int V\rho$ 를 더하면 속도장에 $-\nabla V$ 가 붙어 Fokker–Planck 방정식이 되고, 이것이 확률미분방정식(stochastic differential equation, SDE) $dX_t=-\nabla V(X_t)dt+\sqrt2\thinspace dB_t$ 의 밀도 방정식이다.
 
 ## JKO 정리
 
