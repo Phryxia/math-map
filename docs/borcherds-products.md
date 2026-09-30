@@ -23,46 +23,31 @@ $j$ 함수의 계수가 $j$ 함수에 대한 항등식의 지수로 나타난다
 
 # 직관
 
-## 지수가 상수인 경우
-
 지수가 모두 24 인 무한곱이 판별식 함수다.
 
-Ramanujan 의 $\tau$ 가 나온다. Borcherds 곱은 이 상수 24 를 약정칙 형식의 계수 $c(m)$ 으로 바꾼다. 지수가 $n$ 에 따라 달라져도 곱이 모듈러 형식이 되는 이유를 특이 theta 올림이 설명한다.
-
-## 발산하는 적분의 정규화
-
-theta 올림은
-
 $$
-\Phi(v,f)=\int_{\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H}f(\tau)\thinspace\overline{\Theta(\tau,v)}\ \frac{du\thinspace dv}{v^2}
+\Delta(\tau)=q\prod_{n\ge1}\bigl(1-q^n\bigr)^{24}
 $$
 
-꼴이고, $f$ 가 첨점형식이면 수렴하며 첨점에서 극을 가지면 발산한다.
+이 곱은 무게 12 의 첨점형식이고 계수가 Ramanujan 의 $\tau$ 다.
 
-절단한 영역 $\mathcal F_T$ 위에서 적분하고 $T\to\infty$ 에서 발산하는 부분을 빼면 유한한 $\Phi$ 가 남는다. 이 $\Phi$ 는 특정 부분다양체를 따라 로그 특이점을 가지며, 특이점의 위치와 무게는 $f$ 의 주요부, 곧 음수 차수 계수 $c(-m)$ 이 결정한다.
-
-$$
-\mathrm{div}\bigl(\Psi_f\bigr)=\sum_{m\gt 0}c(-m)\thinspace Z(m),
-\qquad \Psi_f=\text{Borcherds 곱}
-$$
-
-$Z(m)$ 은 판별식 $m$ 의 Heegner 인자다. 정리의 내용은 인자를 미리 지정해서 모듈러 형식을 만들 수 있다는 것이다.
-
-## 주요부와 인자의 대응
-
-이 대응은 양방향이다. 어떤 Heegner 인자를 갖는 모듈러 형식이 존재하려면 그 인자를 주요부로 갖는 약정칙 형식이 있어야 한다. 약정칙 형식의 주요부가 만족할 조건은 첨점형식과의 짝이 0 이 되는 것뿐이다(Serre 쌍대성).
-
-$$
-\sum_{m\gt 0}c(-m)\thinspace a_g(m)=0\quad\text{for all }g\in S_{1+n/2}
-$$
-
-인자가 모듈러 형식의 인자인가라는 기하 문제가 유한 개의 선형 조건으로 환원된다. Gross–Kohnen–Zagier 정리의 Borcherds 판 증명이 이 관찰에 기댄다.
+Borcherds 곱은 이 상수 24 를 약정칙 형식의 계수 $c(m)$ 으로 바꾼다. 지수가 $n$ 에 따라 달라져도 곱이 자기동형 형식이 되는 이유를 특이 theta 올림이 설명한다.
 
 # 정의
 
 ## 입력
 
 $L$ 을 서명 $(2,n)$ 의 짝수 [격자](lattices.md), $f\in M^!\_{1-n/2}\bigl(\rho_L\bigr)$ 를 Weil 표현 $\rho_L$ 에 대한 벡터값 약정칙 형식이라 한다. $f$ 의 주요부 계수 $c(\gamma,-m)$ 은 정수라고 가정한다.
+
+## 정규화된 theta 올림
+
+theta 올림은 다음 꼴이고, $f$ 가 첨점형식이면 수렴하며 첨점에서 극을 가지면 발산한다.
+
+$$
+\Phi(v,f)=\int_{\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H}f(\tau)\thinspace\overline{\Theta(\tau,v)}\ \frac{du\thinspace dv}{v^2}
+$$
+
+절단한 영역 $\mathcal F_T$ 위에서 적분하고 $T\to\infty$ 에서 발산하는 부분을 빼면 유한한 $\Phi$ 가 남는다. 이 $\Phi$ 는 특정 부분다양체를 따라 로그 특이점을 가지며, 특이점의 위치와 무게는 $f$ 의 음수 차수 계수 $c(-m)$ 이 결정한다.
 
 ## Borcherds 곱
 
@@ -94,6 +79,16 @@ $Z(m)$ 은 노름 $-m$ 벡터의 직교여공간들이 이루는 부분다양체
 | 무게 $1/2$ 이고 주요부 $q^{-1}$ | $j(\tau)-1728$ 계열의 무한곱 |
 | $\eta$ 몫 계열 | Siegel 모듈러 형식 $\Delta_5$ (Igusa) |
 | 무게 $0$ 이고 상수 | $\Delta(\tau)^{k}$ 형태 |
+
+## 주요부와 인자의 대응
+
+주요부와 인자의 대응은 양방향이다. 어떤 Heegner 인자를 갖는 모듈러 형식이 존재하려면 그 인자를 주요부로 갖는 약정칙 형식이 있어야 하고, 약정칙 형식의 주요부가 만족할 조건은 첨점형식과의 짝이 0 이 되는 것뿐이다(Serre 쌍대성).
+
+$$
+\sum_{m\gt 0}c(-m)\thinspace a_g(m)=0\quad\text{for all }g\in S_{1+n/2}
+$$
+
+인자가 모듈러 형식의 인자인가라는 기하 문제가 유한 개의 선형 조건으로 환원된다. Gross–Kohnen–Zagier 정리의 Borcherds 판 증명이 이 관찰에 기댄다.
 
 ## 지수의 부호
 
