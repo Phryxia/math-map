@@ -27,73 +27,35 @@ $M_n$ 은 $n^2$ 차원 벡터공간이고 $\mathrm{GL}\_n$ 은 그 안에서 $\d
 
 # 직관
 
-## Tate 적분의 부품
+Tate 의 적분 $\int_{\mathbb A^\times}f(x)\thinspace\chi(x)\thinspace\lvert x\rvert^s\thinspace d^\times x$ 는 세 부품으로 이루어진다. 벡터공간 $\mathbb A$ 위의 Schwartz 함수 $f$ , 군 $\mathbb A^\times$ 의 지표 $\chi$ , 매개변수족 $\lvert x\rvert^s$ 다. $n\ge2$ 에서 $\pi$ 는 1 차원이 아니므로 지표 자리에 행렬 계수 $\langle\pi(g)v,\tilde v\rangle$ 를 넣는다. $n=1$ 이면 이 함수가 $\chi$ 로 돌아온다. $\lvert x\rvert^s$ 자리에는 $\det\colon\mathrm{GL}\_n\to\mathbb G_m$ 을 써서 $\lvert\det g\rvert^s$ 를 넣는다.
 
-$\mathrm{GL}\_1$ 에서 Tate 의 적분은
-
-$$
-Z(s,f,\chi)=\int_{\mathbb A^\times}f(x)\thinspace\chi(x)\thinspace\lvert x\rvert^s\thinspace d^\times x
-$$
-
-이고 세 부품으로 이루어진다.
-
-1. $f$ : 벡터공간 $\mathbb A$ 위의 Schwartz 함수. Fourier 변환 $\hat f$ 가 있다.
-2. $\chi$ : 군 $\mathbb A^\times$ 의 지표. 곧 1 차원 표현.
-3. $\lvert x\rvert^s$ : 군에서 $\mathbb C^\times$ 로 가는 매개변수족.
-
-함수방정식은 $f\leftrightarrow\hat f$ , $\chi\leftrightarrow\chi^{-1}$ , $s\leftrightarrow1-s$ 의 대칭에서 나오고 증명은 Poisson 합공식이다.
-
-## 행렬 계수
-
-$n\ge2$ 에서 $\pi$ 는 1 차원이 아니므로 $\chi(x)$ 자리에 표현의 **행렬 계수**를 넣는다. $v\in V_\pi$ 와 반대표현의 $\tilde v\in V_{\tilde\pi}$ 에 대해
-
-$$
-\varphi(g)=\langle\pi(g)v,\tilde v\rangle
-$$
-
-가 $\mathrm{GL}\_n$ 위의 함수이고, $n=1$ 이면 $\varphi=\chi$ 다. 행렬 계수는 표현의 정보를 함수 하나로 압축하며 Schur 직교성으로 지표와 같은 직교관계를 만족한다.
-
-$\lvert x\rvert^s$ 자리에는 $\det\colon\mathrm{GL}\_n\to\mathbb G_m$ 을 써서 $\lvert\det g\rvert^s$ 를 넣는다. 지수를 $s+\frac{n-1}2$ 로 옮기는 것은 함수방정식이 $s\leftrightarrow1-s$ 가 되게 하는 정규화다.
-
-## $M_n$ 의 세 성질
-
-$M_n$ 은 다음 세 조건을 만족한다.
-
-- $\mathrm{GL}\_n$ 이 $M_n$ 의 **조밀한 열린** 부분집합이다. 그래서 $\mathrm{GL}\_n$ 위의 적분을 $M_n$ 위의 Schwartz 함수로 다룰 수 있다.
-- $M_n$ 위에 $\mathrm{GL}\_n\times\mathrm{GL}\_n$ 이 왼쪽·오른쪽 곱으로 작용하고, Fourier 변환이 이 작용과 잘 어울린다. 자기쌍대 측도에서 $\widehat{\Phi}$ 가 다시 Schwartz 함수다.
-- $\det$ 이 $M_n$ 위의 다항식이라 $\lvert\det\rvert^s$ 의 국소 적분이 유리함수로 수렴한다. 수렴영역이 $\mathrm{Re}(s)$ 가 클 때 확보되고, 거기서 해석적으로 접속한다.
-
-다른 군에는 이런 벡터공간이 없으므로 Godement–Jacquet 은 $\mathrm{GL}\_n$ 에 특화된 방법이고, 다른 군과 다른 $L$ 함수에는 [Rankin–Selberg 적분](rankin-selberg.md)이나 Langlands–Shahidi 방법을 쓴다.
-
-## 비분기 자리의 국소 인자
-
-거의 모든 자리에서 $\pi_v$ 는 비분기이고, 그 표현은 [Satake 매개변수](satake-isomorphism.md)라 부르는 대각행렬
-
-$$
-A_{\pi_v}=\mathrm{diag}(\alpha_1,\dots,\alpha_n)\in\mathrm{GL}\_n(\mathbb C)
-$$
-
-의 켤레류로 완전히 결정된다. 이 자리에서 국소 적분을 계산하면
+남은 부품은 Schwartz 함수이고, 그러려면 $\mathrm{GL}\_n$ 을 담는 벡터공간이 있어야 한다. $M_n$ 이 그것이고 $\mathrm{GL}\_n$ 이 그 안에서 조밀한 열린 부분집합이므로 적분을 $M_n$ 위의 Schwartz 함수로 다룰 수 있다. 세 부품을 다 갖춘 적분을 비분기 자리에서 계산하면 국소 인자가 [Satake 매개변수](satake-isomorphism.md) $A_{\pi_v}=\mathrm{diag}(\alpha_1,\dots,\alpha_n)$ 의 특성다항식의 역수로 나온다.
 
 $$
 L(s,\pi_v)=\det\big(1-q_v^{-s}A_{\pi_v}\big)^{-1}
 =\prod_{i=1}^n\big(1-\alpha_iq_v^{-s}\big)^{-1}
 $$
 
-가 나온다. 국소 인자는 Satake 매개변수의 특성다항식의 역수다. $n=1$ 이면 $(1-\chi(\varpi)q^{-s})^{-1}$ 로 Tate 의 결과가 되고, $n=2$ 이면 [모듈러 형식](modular-forms.md)의 2 차 오일러 인자가 된다.
+$n=1$ 이면 $(1-\chi(\varpi)q^{-s})^{-1}$ 로 Tate 의 결과가 되고, $n=2$ 이면 [모듈러 형식](modular-forms.md)의 2 차 오일러 인자가 된다.
 
 # 정의
 
 ## 국소 적분
 
-$F$ 를 국소체, $\pi$ 를 $\mathrm{GL}\_n(F)$ 의 기약 허용 표현, $\varphi$ 를 그 행렬 계수, $\Phi\in\mathcal S(M_n(F))$ 라 하자.
+$F$ 를 국소체, $\pi$ 를 $\mathrm{GL}\_n(F)$ 의 기약 허용 표현, $\Phi\in\mathcal S(M_n(F))$ 라 하자. $v\in V_\pi$ 와 반대표현의 $\tilde v\in V_{\tilde\pi}$ 에 대해
+
+$$
+\varphi(g)=\langle\pi(g)v,\tilde v\rangle
+$$
+
+가 $\pi$ 의 **행렬 계수**이고, Schur 직교성으로 지표와 같은 직교관계를 만족한다.
 
 $$
 Z(s,\Phi,\varphi)=\int_{\mathrm{GL}\_n(F)}\Phi(g)\thinspace\varphi(g)\thinspace
 \lvert\det g\rvert^{\thinspace s+\frac{n-1}2}\thinspace dg
 $$
 
-$\mathrm{Re}(s)$ 가 충분히 크면 수렴하고 $q^{-s}$ 의 유리함수로 접속한다. 이런 적분 전체가 만드는 $\mathbb C[q^{\pm s}]$ 가군의 생성원이 국소 $L$ 인자 $L(s,\pi)$ 다.
+$\mathrm{Re}(s)$ 가 충분히 크면 수렴하고 $q^{-s}$ 의 유리함수로 접속한다. 이런 적분 전체가 만드는 $\mathbb C[q^{\pm s}]$ 가군의 생성원이 국소 $L$ 인자 $L(s,\pi)$ 다. 지수를 $s+\frac{n-1}2$ 로 옮기는 것은 함수방정식이 $s\leftrightarrow1-s$ 가 되게 하는 정규화다.
 
 ## 대역 적분과 함수방정식
 
@@ -113,6 +75,16 @@ $n=1$ 의 자명한 지표에서는 $\zeta$ 함수에 극점이 생기고, $n\ge
 이렇게 정의된 $L(s,\pi)$ 가 $\pi$ 의 **표준(standard) $L$ 함수**이고, Langlands 의 언어로는 쌍대군 ${}^L\mathrm{GL}\_n=\mathrm{GL}\_n(\mathbb C)$ 의 표준표현에 딸린 $L$ 함수다. 대칭곱이나 외적곱 같은 다른 표현의 $L$ 함수는 이 방법으로 나오지 않는다.
 
 # 성질
+
+## 행렬대수의 역할
+
+구성이 되려면 $M_n$ 이 세 조건을 만족해야 한다.
+
+- $\mathrm{GL}\_n$ 이 $M_n$ 의 조밀한 열린 부분집합이다. 그래서 $\mathrm{GL}\_n$ 위의 적분을 $M_n$ 위의 Schwartz 함수로 다룰 수 있다.
+- $M_n$ 위에 $\mathrm{GL}\_n\times\mathrm{GL}\_n$ 이 왼쪽·오른쪽 곱으로 작용하고 Fourier 변환이 이 작용과 어울린다. 자기쌍대 측도에서 $\widehat\Phi$ 가 다시 Schwartz 함수다.
+- $\det$ 이 $M_n$ 위의 다항식이라 $\lvert\det\rvert^s$ 의 국소 적분이 $\mathrm{Re}(s)$ 가 큰 영역에서 수렴하고 유리함수로 접속한다.
+
+다른 군에는 이런 벡터공간이 없으므로 이 방법은 $\mathrm{GL}\_n$ 에 한정된다. 다른 군과 다른 $L$ 함수에는 [Rankin–Selberg 적분](rankin-selberg.md)이나 Langlands–Shahidi 방법을 쓴다.
 
 ## 적용 범위
 
