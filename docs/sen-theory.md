@@ -16,55 +16,25 @@ $$
 
 # 직관
 
-## $\mathbb C_p$ 위 표현의 하강
+$V=\mathbb C_p(k)$ 에서 $\gamma\in\Gamma$ 는 스칼라 $\chi(\gamma)^k$ 로 작용한다. 로그를 취해 $\log\chi(\gamma)$ 로 나누면 $\log\chi(\gamma)^k/\log\chi(\gamma)=k$ 가 되어 지수에 있던 무게가 수로 내려온다. 일반의 $V$ 에서 $\gamma$ 는 스칼라가 아니라 행렬이지만 행렬 로그로 같은 계산을 할 수 있고, 그 결과가 선형작용소 $\Theta$ 다.
 
-출발점은 Tate 의 계산이다.
-
-$$
-H^0(G_K,\mathbb C_p(k))=\begin{cases}K,&k=0\cr 0,&k\neq0\end{cases},\qquad
-H^1(G_K,\mathbb C_p)=K
-$$
-
-$k\neq0$ 에서 불변식이 0 이라는 것이 $\mathbb C_p(k)$ 들을 구별한다. Hodge–Tate 조건은 $\mathbb C_p\otimes V$ 가 이런 조각들로 쪼개진다는 것이고, 각 조각의 $k$ 가 무게다.
-
-$G_K$ 는 너무 크므로 두 단계로 나눈다.
-
-$$
-K\subset K_\infty=K(\mu_{p^\infty})\subset\bar K,\qquad
-\Gamma=\mathrm{Gal}(K_\infty/K)\cong\mathbb Z_p^\times\ \text{(열린 부분군까지)}
-$$
-
-$H_K=\mathrm{Gal}(\bar K/K_\infty)$ 쪽은 Ax–Sen–Tate 및 Sen 의 완비 하강으로 처리되어 $\mathbb C_p$ 반선형 표현이 $K_\infty$ 위의 유한차원 공간으로 내려온다. 남는 $\Gamma$ 는 1 차원 $p$ 진 Lie 군이므로 미분할 수 있다.
-
-## $\Gamma$ 작용의 미분
-
-$V=\mathbb C_p(k)$ 에서 $\gamma\in\Gamma$ 는 $\chi(\gamma)^k$ 로 작용한다. 로그를 취해 $\log\chi(\gamma)$ 로 나누면
-
-$$
-\Theta=\frac{\log\chi(\gamma)^k}{\log\chi(\gamma)}=k
-$$
-
-가 되어 지수에 있던 무게가 내려온다. 일반의 $V$ 에서는 같은 계산이 행렬로 일어나고, $\Theta$ 는 $\Gamma$ 작용의 무한소 생성원이다.
-
-극한이 필요한 것은 $\gamma$ 하나로는 로그 급수가 수렴하지 않을 수 있기 때문이다. $\gamma^{p^n}$ 은 항등원에 충분히 가까워 수렴하고, 그 값을 $p^n$ 으로 나누면 $n$ 에 무관한 극한이 나온다.
-
-## 대각화 가능성
-
-$\Theta$ 가 대각화 가능하면 $\mathbb C_p\otimes V$ 가 고유공간으로 쪼개지고, 고윳값이 정수 $k$ 면 각 조각이 $\mathbb C_p(k)$ 다.
-
-$$
-\Theta\ \text{대각화 가능 + 정수 고윳값}\ \Longleftrightarrow\ \text{Hodge–Tate}
-$$
-
-조건이 깨지는 경우가 둘이다. 고윳값이 정수가 아니면 $\mathbb C_p(k)$ 꼴이 아니며, $p$ 진 족에서 나타난다. 고윳값이 정수인데 대각화가 안 되면 같은 무게 둘이 비자명하게 엮여 있다는 뜻이고, $\Theta$ 의 멱영 부분이 그 엮임을 잰다.
-
-두 번째는 기하에서 나온다. 나쁜 곱셈 환원을 갖는 [타원곡선](elliptic-curves.md)의 Tate 가군은 $\begin{pmatrix}\chi&\ast\cr 0&1\end{pmatrix}$ 꼴인데 확장이 갈라지지 않아 Hodge–Tate 가 아니다.
+$\Theta$ 가 대각화 가능하고 고윳값이 정수 $k$ 이면 $\mathbb C_p\otimes V$ 가 고유공간으로 쪼개지며 각 조각이 $\mathbb C_p(k)$ 이므로, 직합 분해를 확인하는 일이 한 행렬의 대각화 가능성을 확인하는 일이 된다. 행렬 로그가 수렴하려면 $\gamma$ 가 항등원에 가까워야 하는데 $\Gamma$ 의 원소 하나로는 그렇지 않을 수 있어, $\gamma^{p^n}$ 의 로그를 $p^n$ 으로 나눈 극한을 쓴다.
 
 # 정의
 
 ## 순환분체 확대와 $\mathbb C_p$ 표현
 
 $K/\mathbb Q_p$ 를 유한 확장, $K_\infty=K(\mu_{p^\infty})$ , $\Gamma=\mathrm{Gal}(K_\infty/K)$ 로 두고, $\chi:\Gamma\to\mathbb Z_p^\times$ 를 순환분체 지표, $\widehat{K_\infty}$ 를 $K_\infty$ 의 완비화라 한다. $W$ 는 $\mathbb C_p$ 위의 유한차원 반선형 $G_K$ 표현이며, 예를 들어 $W=\mathbb C_p\otimes_{\mathbb Q_p}V$ 다.
+
+$G_K$ 를 직접 다루는 대신 확대를 두 단계로 나눈다.
+
+$$
+K\subset K_\infty=K(\mu_{p^\infty})\subset\bar K,\qquad
+\Gamma=\mathrm{Gal}(K_\infty/K),\qquad
+H_K=\mathrm{Gal}(\bar K/K_\infty)
+$$
+
+$H_K$ 쪽은 Ax–Sen–Tate 정리와 아래의 완비 하강으로 처리되어 $\mathbb C_p$ 반선형 표현이 $K_\infty$ 위의 유한차원 공간으로 내려온다. 남는 $\Gamma$ 는 1 차원 $p$ 진 Lie 군이므로 미분할 수 있다.
 
 > **정리 (Sen).** $W$ 에는 $\Gamma$ 안정인 $K_\infty$ 위의 유한차원 부분공간 $W_{K_\infty}$ 가 있고, $\mathbb C_p\otimes_{K_\infty}W_{K_\infty}\cong W$ 다. 이 하강은 충분히 큰 부분에 대해 유일하다.
 
@@ -87,6 +57,21 @@ $$
 $V$ 가 de Rham 이면 Hodge–Tate 이므로 $\Theta$ 의 대각화 가능성은 de Rham 판정의 필요조건 검사로 쓰인다.
 
 # 성질
+
+## Tate 의 불변식 계산
+
+$$
+H^0(G_K,\mathbb C_p(k))=\begin{cases}K,&k=0\cr 0,&k\neq0\end{cases},\qquad
+H^1(G_K,\mathbb C_p)=K
+$$
+
+$k\neq0$ 에서 불변식이 $0$ 이므로 $\mathbb C_p(k)$ 들은 서로 동형이 아니고 각 조각의 $k$ 가 무게로 정해진다. $H^1(G_K,\mathbb C_p)=K$ 가 $0$ 이 아니라는 것은 $\mathbb C_p$ 의 자기확장이 갈라지지 않을 수 있다는 뜻이며, 대각화가 깨지는 경우의 출처다.
+
+## 대각화가 깨지는 경우
+
+$\Theta$ 의 고윳값이 정수가 아니면 조각이 $\mathbb C_p(k)$ 꼴이 아니고, 이 경우가 $p$ 진 족에서 나타난다. 고윳값이 정수인데 대각화가 안 되면 같은 무게 둘이 비자명하게 엮여 있다는 뜻이며 $\Theta$ 의 멱영 부분이 그 엮임을 잰다.
+
+두 번째는 기하에서 나온다. 나쁜 곱셈 환원을 갖는 [타원곡선](elliptic-curves.md)의 Tate 가군은 $\begin{pmatrix}\chi&\ast\cr 0&1\end{pmatrix}$ 꼴인데 이 확장이 갈라지지 않아 Hodge–Tate 가 아니다.
 
 ## Sen 작용소가 담는 정보
 
