@@ -22,40 +22,15 @@ $$
 
 # 직관
 
-## Verma 가군의 역할
-
 최고무게 $\lambda$ 를 가진 가군 중 가장 큰 것을 Borel $\mathfrak b$ 의 1 차원 표현 $\mathbb C_\lambda$ 에서 유도한다.
 
 $$
 M(\lambda)=U(\mathfrak g)\otimes_{U(\mathfrak b)}\mathbb C_\lambda
 $$
 
-Poincaré–Birkhoff–Witt 정리로 $M(\lambda)$ 는 음근 벡터들의 단항식을 기저로 갖는 자유 가군이고 무게 중복도는 Kostant 분할함수가 준다. 최고무게 $\lambda$ 의 가군은 모두 $M(\lambda)$ 의 몫이므로 $M(\lambda)$ 는 유일한 극대 부분가군을 갖고 그 몫이 단순가군 $L(\lambda)$ 다.
+Poincaré–Birkhoff–Witt 정리로 $M(\lambda)$ 는 음근 벡터들의 단항식을 기저로 갖는 자유 가군이고 무게 중복도는 Kostant 분할함수가 준다.
 
-$\mathrm{ch}\thinspace M(\lambda)$ 는 Weyl 분모로 나눈 지수 하나로 닫힌 꼴이다. $\mathrm{ch}\thinspace L(\lambda)$ 를 Verma 지표의 정수결합으로 쓰면 단순가군의 지표를 안 것이 되고, 중복도 $[M(\mu):L(\lambda)]$ 가 그 결합계수다.
-
-## 중심지표와 무게 궤도
-
-중심 $Z(\mathfrak g)$ 가 각 대상에 작용하므로 범주가 중심지표에 따라 갈라진다. Harish-Chandra 동형이 그 지표를 무게의 점작용 궤도로 번역한다.
-
-$$
-w\cdot\lambda=w(\lambda+\rho)-\rho
-$$
-
-같은 궤도의 무게들만 서로 얽힌다. 범주 $\mathcal O$ 는 블록의 직합으로 분해되고, 정수 정칙 무게의 블록은 Weyl 군 $W$ 와 크기가 같은 유한 집합 $\lbrace w\cdot\lambda\rbrace_{w\in W}$ 위에 놓인다. 무한차원 가군의 범주를 다루는 문제가 유한군 $W$ 위의 조합 문제로 축소된다.
-
-## $\mathfrak{sl}\_2$ 의 블록
-
-$\lambda=0$ 의 블록에는 무게가 둘 있다. $e\cdot0=0$ 과 $s\cdot0=-2$ 다.
-
-- $M(0)$ 은 길이 $2$ 이고 $L(0)$ 과 $L(-2)$ 를 조성인자로 갖는다.
-- $M(-2)$ 는 이미 단순해 $M(-2)=L(-2)$ 다.
-- $P(0)=M(0)$ 이고 Verma 여과 길이는 $1$ 이다.
-- $P(-2)$ 는 길이 $2$ 의 Verma 여과를 갖는다. $M(-2)$ 와 $M(0)$ 이 한 번씩 들어가고 조성인자로 $L(-2)$ 가 두 번, $L(0)$ 이 한 번 나온다.
-
-$\bigl(P(-2):M(0)\bigr)=1$ 이고 $\bigl[M(0):L(-2)\bigr]=1$ 로 상반성이 성립한다.
-
-$\mathrm{ch}\thinspace L(0)=\mathrm{ch}\thinspace M(0)-\mathrm{ch}\thinspace M(-2)$ 도 여기서 읽힌다. 유한차원 가군의 지표를 Verma 지표의 교대합으로 쓰는 이 식이 일반 $\mathfrak g$ 에서 Weyl 지표 공식이다. Weyl 공식은 최고무게가 지배적일 때의 특수한 경우이고, 일반 $\lambda$ 에서 교대합의 계수를 KL 다항식이 준다.
+최고무게 $\lambda$ 의 가군은 모두 $M(\lambda)$ 의 몫이므로 $M(\lambda)$ 는 유일한 극대 부분가군을 갖고 그 몫이 단순가군 $L(\lambda)$ 다. $\mathrm{ch}\thinspace M(\lambda)$ 는 Weyl 분모로 나눈 지수 하나로 닫힌 꼴이므로, $\mathrm{ch}\thinspace L(\lambda)$ 를 Verma 지표의 정수결합으로 쓰면 단순가군의 지표를 안 것이 되고 중복도 $[M(\mu):L(\lambda)]$ 가 그 결합계수다.
 
 # 정의
 
@@ -79,6 +54,8 @@ $$
 $\lbrace L(\lambda)\rbrace_{\lambda\in\mathfrak h^\ast}$ 가 $\mathcal O$ 의 단순 대상 전부이고 서로 동형이 아니다. $L(\lambda)$ 가 유한차원일 필요충분조건은 $\lambda$ 가 지배적 정수무게인 것이다.
 
 ## 블록 분해
+
+Weyl 군의 **점작용**은 $w\cdot\lambda=w(\lambda+\rho)-\rho$ 이고, 같은 궤도의 무게들만 서로 얽힌다.
 
 Harish-Chandra 동형 $Z(\mathfrak g)\cong S(\mathfrak h)^{W\cdot}$ 로 중심지표 $\chi_\lambda$ 가 정해지고 $\chi_\lambda=\chi_\mu$ 는 $\mu\in W\cdot\lambda$ 와 동치다. 따라서
 
@@ -121,6 +98,17 @@ $$
 Beilinson–Bernstein 과 Brylinski–Kashiwara 가 깃발다양체 위의 $D$ 가군으로 증명했다[^3]. 중복도가 교차 코호몰로지 [층](sheaves.md)의 줄기 차원으로 계산되므로 양수성이 따라온다.
 
 # 성질
+
+## $\mathfrak{sl}\_2$ 의 블록
+
+$\lambda=0$ 의 블록에는 무게가 둘 있다. $e\cdot0=0$ 과 $s\cdot0=-2$ 다.
+
+- $M(0)$ 은 길이 $2$ 이고 $L(0)$ 과 $L(-2)$ 를 조성인자로 갖는다.
+- $M(-2)$ 는 이미 단순해 $M(-2)=L(-2)$ 다.
+- $P(0)=M(0)$ 이고 Verma 여과 길이는 $1$ 이다.
+- $P(-2)$ 는 길이 $2$ 의 Verma 여과를 갖는다. $M(-2)$ 와 $M(0)$ 이 한 번씩 들어가고 조성인자로 $L(-2)$ 가 두 번, $L(0)$ 이 한 번 나온다.
+
+$\bigl(P(-2):M(0)\bigr)=1$ 이고 $\bigl[M(0):L(-2)\bigr]=1$ 로 상반성이 성립한다. $\mathrm{ch}\thinspace L(0)=\mathrm{ch}\thinspace M(0)-\mathrm{ch}\thinspace M(-2)$ 도 여기서 읽힌다. 유한차원 가군의 지표를 Verma 지표의 교대합으로 쓰는 이 식이 일반 $\mathfrak g$ 에서 Weyl 지표 공식이고, 일반 $\lambda$ 에서 교대합의 계수를 KL 다항식이 준다.
 
 ## 작은 랭크의 경우
 
