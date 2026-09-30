@@ -20,63 +20,9 @@ $$
 
 # 직관
 
-## 과대근사의 비대칭
+정확한 분석은 불가능하므로 무엇을 잃을지 먼저 정한다. 변수 $x$ 의 값 집합 $\lbrace 2,5,7\rbrace$ 대신 구간 $[2,7]$ 만 기억하면 집합의 [격자](order-lattices.md)에서 구간의 격자로 내려온 것이다. $\alpha(\lbrace 2,5,7\rbrace)=[2,7]$ 이고 $\gamma([2,7])=\lbrace 2,3,4,5,6,7\rbrace$ 이라 원래보다 커지며, 커지는 방향이 항상 같다. 과대근사만 하고 과소근사는 하지 않는다.
 
-정확한 분석은 불가능하므로 무엇을 잃을지 먼저 정한다. 변수 $x$ 의 값 집합 $\lbrace 2,5,7\rbrace$ 대신 구간 $[2,7]$ 만 기억하면 집합의 [격자](order-lattices.md)에서 구간의 격자로 내려온 것이다. $\alpha(\lbrace 2,5,7\rbrace)=[2,7]$ 이고 $\gamma([2,7])=\lbrace 2,3,4,5,6,7\rbrace$ 이라 원래보다 커진다. 커지는 방향이 항상 같다. 과대근사만 하고 과소근사는 하지 않는다.
-
-건전성은 이 비대칭에서 나온다. 분석기가 $x\in[2,7]$ 을 내놓으면 실제 값은 그 안에 있으므로 $x\ne0$ 이라는 결론은 믿을 수 있다. $x\in[-1,7]$ 이 나오면 $0$ 인지 아닌지 가려지지 않는다. 거짓 경보는 나오지만 놓친 오류는 없다.
-
-## 추상 영역의 선택
-
-| 추상 영역 | 기억하는 것 | 비용 |
-|---|---|---|
-| 부호 $\lbrace-,0,+\rbrace$ | 부호만 | 아주 쌈 |
-| 구간 $[l,u]$ | 변수별 범위 | 쌈 |
-| 팔면체 $\pm x\pm y\le c$ | 변수 쌍의 관계 | 중간 |
-| 다면체 $\sum a_ix_i\le b$ | 선형 관계 전부 | 비쌈 |
-
-구간 영역은 변수 사이의 관계를 잊는다. $x=y$ 여도 $x-y=0$ 을 표현할 수 없어 $x-y\in[-\infty,\infty]$ 가 된다. 관계를 기억하려면 팔면체나 다면체로 올라가야 하고, 그만큼 각 연산이 비싸진다. 분석기 설계는 이 표에서 한 줄을 고르는 일이다.
-
-## 고정점 반복의 수렴 실패
-
-루프의 불변량은 전이함수의 최소 고정점이다. Kleene 반복 $\bot,F(\bot),F^2(\bot),\dots$ 이 그것에 수렴하지만, 추상 영역이 무한 높이면 수렴이 끝나지 않거나 지나치게 느리다. 구간 영역이 그런 경우다.
-
-```javascript
-const BOT = 'bot';
-const mk = (l, u) => (l > u ? BOT : [l, u]);
-const join = (a, b) => a === BOT ? b : b === BOT ? a : mk(Math.min(a[0],b[0]), Math.max(a[1],b[1]));
-const meet = (a, b) => a === BOT || b === BOT ? BOT : mk(Math.max(a[0],b[0]), Math.min(a[1],b[1]));
-const add1 = (a) => a === BOT ? BOT : mk(a[0] + 1, a[1] + 1);
-const eq = (a, b) => a === BOT || b === BOT ? a === b : a[0] === b[0] && a[1] === b[1];
-
-// 위드닝: 늘어나는 쪽 끝을 곧바로 무한으로 보낸다
-const widen = (a, b) => a === BOT ? b : b === BOT ? a :
-  mk(b[0] < a[0] ? -Infinity : a[0], b[1] > a[1] ? Infinity : a[1]);
-
-// 분석 대상: x = 0; while (x < 100) x = x + 1;
-// 루프 머리의 불변량은 X = [0,0] ⊔ ((X ⊓ [-∞,99]) + 1) 의 최소 고정점
-const F = (X) => join(mk(0, 0), add1(meet(X, mk(-Infinity, 99))));
-
-// 같은 단계함수를 안정할 때까지 돌린다
-const iterate = (step, start) => {
-  let X = start;
-  for (;;) { const Y = step(X); if (eq(X, Y)) return X; X = Y; }
-};
-
-const kleene   = iterate(F, BOT);
-const widened  = iterate((X) => widen(X, F(X)), BOT);
-const narrowed = iterate(F, widened);
-```
-
-순진한 반복은 $[0,0],[0,1],[0,2],\dots$ 로 한 칸씩 올라가 $102$ 단계가 걸린다. 상한이 $10^9$ 였다면 사실상 끝나지 않는다. **위드닝**은 상한이 늘어나는 것을 보고 곧바로 $+\infty$ 로 점프해 $3$ 단계에 멈춘다. 그 결과 $[0,+\infty]$ 는 너무 거칠고, 여기서 다시 $F$ 를 반복하는 **내로잉**이 $[0,100]$ 을 회복한다.
-
-위드닝은 임의로 크게 뛰므로 답이 부정확해질 수 있다. 그러나 위로만 뛰므로 건전성은 깨지지 않는다.
-
-$$
-a\sqsubseteq a\thinspace\nabla\thinspace b,\qquad b\sqsubseteq a\thinspace\nabla\thinspace b
-$$
-
-를 요구하면 위드닝 수열은 항상 실제 고정점 위에 머문다. 여기에 무한 상승 사슬을 만들지 않는다는 조건을 더하면 종료도 보장된다.
+건전성이 이 비대칭에서 나온다. 분석기가 $x\in[2,7]$ 을 내놓으면 실제 값이 그 안에 있으므로 $x\ne0$ 이라는 결론을 믿을 수 있고, $x\in[-1,7]$ 이 나오면 $0$ 인지 아닌지 가려지지 않는다. 거짓 경보는 나오지만 놓친 오류는 없다.
 
 # 정의
 
@@ -115,13 +61,51 @@ $$
 1. $a\sqsubseteq a\nabla b$ 이고 $b\sqsubseteq a\nabla b$
 2. 임의의 수열 $(b_n)$ 에 대해 $a_0=b_0$ , $a_{n+1}=a_n\nabla b_{n+1}$ 로 정의한 수열이 유한 단계에 안정화
 
+루프의 불변량은 전이함수의 최소 고정점이고 Kleene 반복 $\bot,F(\bot),F^2(\bot),\dots$ 이 그것에 수렴하지만, 추상 영역이 무한 높이면 수렴이 끝나지 않거나 지나치게 느리다. 구간 영역이 그런 경우다.
+
+```javascript
+const BOT = 'bot';
+const mk = (l, u) => (l > u ? BOT : [l, u]);
+const join = (a, b) => a === BOT ? b : b === BOT ? a : mk(Math.min(a[0],b[0]), Math.max(a[1],b[1]));
+const meet = (a, b) => a === BOT || b === BOT ? BOT : mk(Math.max(a[0],b[0]), Math.min(a[1],b[1]));
+const add1 = (a) => a === BOT ? BOT : mk(a[0] + 1, a[1] + 1);
+const eq = (a, b) => a === BOT || b === BOT ? a === b : a[0] === b[0] && a[1] === b[1];
+
+// 위드닝: 늘어나는 쪽 끝을 곧바로 무한으로 보낸다
+const widen = (a, b) => a === BOT ? b : b === BOT ? a :
+  mk(b[0] < a[0] ? -Infinity : a[0], b[1] > a[1] ? Infinity : a[1]);
+
+// 분석 대상: x = 0; while (x < 100) x = x + 1;
+// 루프 머리의 불변량은 X = [0,0] ⊔ ((X ⊓ [-∞,99]) + 1) 의 최소 고정점
+const F = (X) => join(mk(0, 0), add1(meet(X, mk(-Infinity, 99))));
+
+// 같은 단계함수를 안정할 때까지 돌린다
+const iterate = (step, start) => {
+  let X = start;
+  for (;;) { const Y = step(X); if (eq(X, Y)) return X; X = Y; }
+};
+
+const kleene   = iterate(F, BOT);
+const widened  = iterate((X) => widen(X, F(X)), BOT);
+const narrowed = iterate(F, widened);
+```
+
+순진한 반복은 $[0,0],[0,1],[0,2],\dots$ 로 한 칸씩 올라가 $102$ 단계가 걸리고, 상한이 $10^9$ 였다면 사실상 끝나지 않는다. 위드닝은 상한이 늘어나는 것을 보고 곧바로 $+\infty$ 로 점프해 $3$ 단계에 멈춘다. 그 결과 $[0,+\infty]$ 는 너무 거칠고, 여기서 다시 $F$ 를 반복하는 내로잉이 $[0,100]$ 을 회복한다. 위드닝은 임의로 크게 뛰어 답이 부정확해질 수 있지만 위로만 뛰므로 건전성은 깨지지 않는다.
+
 조건 2 가 종료를 강제한다. 대칭적으로 $\Delta$ 가 **내로잉**이라 함은 $b\sqsubseteq a$ 일 때 $b\sqsubseteq a\Delta b\sqsubseteq a$ 이고 하강 사슬이 안정화하는 것이다.
 
 # 성질
 
 ## 정밀도와 비용의 교환
 
-추상 영역이 정밀할수록 거짓 경보가 줄지만 각 연산이 비싸진다. 다면체 영역은 볼록 껍질 계산이 지수적일 수 있어 큰 프로그램에 쓰기 어렵고, 팔면체는 $O(n^3)$ 의 최단경로 닫힘으로 균형을 잡는다. 실무 분석기는 여러 영역을 곱해서 쓰거나(약한 곱, 축소된 곱) 프로그램 구간마다 다른 영역을 붙인다.
+| 추상 영역 | 기억하는 것 | 비용 |
+|---|---|---|
+| 부호 $\lbrace-,0,+\rbrace$ | 부호만 | 아주 쌈 |
+| 구간 $[l,u]$ | 변수별 범위 | 쌈 |
+| 팔면체 $\pm x\pm y\le c$ | 변수 쌍의 관계 | 중간 |
+| 다면체 $\sum a_ix_i\le b$ | 선형 관계 전부 | 비쌈 |
+
+구간 영역은 변수 사이의 관계를 잊는다. $x=y$ 여도 $x-y=0$ 을 표현할 수 없어 $x-y\in[-\infty,\infty]$ 가 된다. 추상 영역이 정밀할수록 거짓 경보가 줄지만 각 연산이 비싸진다. 다면체 영역은 볼록 껍질 계산이 지수적일 수 있어 큰 프로그램에 쓰기 어렵고, 팔면체는 $O(n^3)$ 의 최단경로 닫힘으로 균형을 잡는다. 실무 분석기는 여러 영역을 곱해서 쓰거나(약한 곱, 축소된 곱) 프로그램 구간마다 다른 영역을 붙인다.
 
 ## 완전성의 희소성
 
