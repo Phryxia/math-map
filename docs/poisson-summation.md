@@ -18,41 +18,19 @@ $$
 
 # 직관
 
-## 주기화
-
 $f$ 를 정수만큼 평행이동해 전부 더한다.
 
 $$
 F(x)=\sum_{n\in\mathbb Z}f(x+n)
 $$
 
-$F$ 는 정의상 주기 1 이다. 주기함수이므로 Fourier 급수로 전개할 수 있고, 그 계수를 계산하면
+$F$ 는 정의상 주기 1 이므로 Fourier 급수로 전개할 수 있고, 그 계수를 계산하면 잘린 적분 구간들이 실선 전체로 이어 붙는다.
 
 $$
 c_k=\int_0^1F(x)e^{-2\pi ikx}dx=\sum_n\int_0^1f(x+n)e^{-2\pi ikx}dx=\int_{-\infty}^{\infty}f(x)e^{-2\pi ikx}dx=\hat f(k)
 $$
 
-잘린 적분 구간들이 실선 전체로 이어 붙는다. 따라서 $F(x)=\sum_k\hat f(k)e^{2\pi ikx}$ 이고 $x=0$ 을 넣으면 Poisson 합 공식이다. 주기화의 Fourier 계수는 원래 함수의 Fourier 변환을 정수점에서 표본화한 값이다.
-
-## theta 변환식
-
-$f_t(x)=e^{-\pi x^{2}t}$ 를 넣으면 $\hat f_t(\xi)=t^{-1/2}e^{-\pi\xi^{2}/t}$ 이므로
-
-$$
-\theta(t)=\sum_ne^{-\pi n^{2}t}=\frac1{\sqrt t}\thinspace\theta\negthinspace\left(\frac1t\right)
-$$
-
-$t$ 가 크면 좌변이 항 몇 개로 끝나고 $t$ 가 작으면 우변이 그렇다. $t$ 와 $1/t$ 가운데 계산하기 쉬운 쪽을 고를 수 있다. 이 항등식이 [theta 급수](theta-series.md)의 모듈러 변환 $\tau\mapsto-1/\tau$ 이고, 모듈러성은 Fourier 쌍대성에서 온다.
-
-## 사다리꼴 규칙의 오차
-
-간격 $h$ 의 사다리꼴로 $\int_{\mathbb R}f$ 를 근사하면 Poisson 합이 오차를 정확히 준다.
-
-$$
-h\sum_{n\in\mathbb Z}f(nh)-\int_{\mathbb R}f=\sum_{k\ne0}\hat f\negthinspace\left(\frac kh\right)
-$$
-
-$f$ 가 매끄러울수록 $\hat f$ 는 빨리 작아지고, $f$ 가 해석적이면 $\hat f$ 가 지수적으로 작아져 오차가 $e^{-c/h}$ 규모가 된다.
+따라서 $F(x)=\sum_k\hat f(k)e^{2\pi ikx}$ 이고 $x=0$ 을 넣으면 Poisson 합 공식이다. 주기화의 Fourier 계수는 원래 함수의 Fourier 변환을 정수점에서 표본화한 값이다.
 
 # 정의
 
@@ -126,6 +104,16 @@ $$
 
 # 활용
 
+## theta 변환식
+
+$f_t(x)=e^{-\pi x^{2}t}$ 를 넣으면 $\hat f_t(\xi)=t^{-1/2}e^{-\pi\xi^{2}/t}$ 이므로 다음을 얻는다.
+
+$$
+\theta(t)=\sum_ne^{-\pi n^{2}t}=\frac1{\sqrt t}\thinspace\theta\negthinspace\left(\frac1t\right)
+$$
+
+$t$ 가 크면 좌변이 항 몇 개로 끝나고 $t$ 가 작으면 우변이 그렇다. $t$ 와 $1/t$ 가운데 계산하기 쉬운 쪽을 고를 수 있다. 이 항등식이 [theta 급수](theta-series.md)의 모듈러 변환 $\tau\mapsto-1/\tau$ 이고, 모듈러성은 Fourier 쌍대성에서 온다.
+
 ## $\zeta$ 의 함수방정식
 
 $\theta$ 의 변환식을 Mellin 변환으로 읽으면 함수방정식이 나온다. [감마 함수](gamma-function.md)를 써서
@@ -139,6 +127,16 @@ $$
 ## 표본화와 에일리어싱
 
 $\hat f$ 가 $[-B,B]$ 밖에서 0 인 대역제한 함수를 간격 $h$ 로 표본화하면, 주기화된 스펙트럼 $\sum_k\hat f(\xi-k/h)$ 가 겹치지 않을 조건이 $1/h\ge2B$ 다. 이것이 Nyquist 조건이고 겹칠 때 생기는 왜곡이 에일리어싱이다. 이산 Fourier 변환이 연속 변환을 근사하는 정도도 같은 식으로 평가된다.
+
+## 사다리꼴 규칙의 오차
+
+간격 $h$ 의 사다리꼴로 $\int_{\mathbb R}f$ 를 근사하면 Poisson 합이 오차를 정확히 준다.
+
+$$
+h\sum_{n\in\mathbb Z}f(nh)-\int_{\mathbb R}f=\sum_{k\ne0}\hat f\negthinspace\left(\frac kh\right)
+$$
+
+$f$ 가 매끄러울수록 $\hat f$ 는 빨리 작아지고, $f$ 가 해석적이면 $\hat f$ 가 지수적으로 작아져 오차가 $e^{-c/h}$ 규모가 된다.
 
 ## 격자합의 빠른 계산
 
