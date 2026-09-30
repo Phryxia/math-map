@@ -21,49 +21,31 @@ $$
 
 # 직관
 
-## 인터레이싱 분지 법칙
-
-콤팩트 유니터리군 $U(n+1)\supset U(n)$ 의 분지 법칙은 완전히 조합적이다. 최고무게 $\lambda=(\lambda_1\ge\cdots\ge\lambda_{n+1})$ 의 기약표현을 $U(n)$ 으로 제한하면
+콤팩트 유니터리군 $U(4)$ 의 최고무게 $\lambda=(4,2,1,0)$ 인 기약표현은 Weyl 차원 공식으로 차원이 $140$ 이다. 이것을 $U(3)$ 으로 제한하면 어느 표현이 몇 번 나오는가. 제한은 최고무게가 $\lambda$ 와 엇갈리는 $\mu$ 들의 직합이다.
 
 $$
-\mathrm{Res}^{U(n+1)}\_{U(n)}V_\lambda=\bigoplus_{\mu\ \text{interlaces}\ \lambda}V_\mu,
+\mathrm{Res}^{U(4)}\_{U(3)}V_\lambda=\bigoplus_\mu V_\mu,
 \qquad
-\lambda_1\ge\mu_1\ge\lambda_2\ge\mu_2\ge\cdots\ge\mu_n\ge\lambda_{n+1}
+\lambda_1\ge\mu_1\ge\lambda_2\ge\mu_2\ge\lambda_3\ge\mu_3\ge\lambda_4
 $$
 
-이고 각 $\mu$ 가 정확히 한 번씩 나온다. Gelfand–Tsetlin 패턴이 이 분해를 기저 수준에서 구현한다.
+조건을 만족하는 $\mu$ 는 열둘이고 대응하는 $U(3)$ 표현의 차원을 더하면 $140$ 이 된다. 차원이 맞으므로 각 $\mu$ 는 많아야 한 번 나온다.
 
-$$
-\dim\mathrm{Hom}\_{U(n)}\bigl(V_\lambda\otimes V_\mu^\vee,\mathbb C\bigr)\le1
-$$
-
-GGP 는 이 부등식이 $p$ 진군과 아델군에서도 성립하는지, 성립한다면 그 1 이 어디에 있는지를 묻는다.
-
-$p$ 진 고전군에서는 기약표현이 무한차원이고, 같은 [Langlands 매개변수](langlands-program.md)를 갖는 표현이 여럿(L 꾸러미)이며, 그 표현들이 서로 다른 **순수 내부형식** 위에 흩어져 있다. 판별식이 다른 여러 에르미트 공간을 동시에 봐야 한다. 중복도 1 은 하나의 군이 아니라 순수 내부형식 전체에 걸쳐 성립하고, 어느 군의 어느 표현이 그 1 을 갖는지는 $\varepsilon$ 인자가 지정한다.
-
-## 모형의 교체
-
-$N\backslash G/N$ 에서 비퇴화 지표가 남는 궤도가 하나뿐이므로 $\mathrm{GL}\_n$ 에서 Whittaker 모형이 유일하다. 고전군에서는 멱단근기 위의 지표 궤도가 여러 개다. 고전군의 표현 중 Whittaker 모형을 갖는 일반 표현은 L 꾸러미 안에서 보통 하나다.
-
-대신 더 작은 군을 짝지은 모형을 쓴다.
-
-| 모형 | 부분군과 끼우는 것 | 해당 군 | Whittaker 에서의 교체 |
-| --- | --- | --- | --- |
-| Whittaker | 멱단근기 $N$ 과 비퇴화 지표 | $\mathrm{GL}\_n$ | 없음 |
-| Bessel | $G(V_n)$ 또는 $N\rtimes G(V_n)$ | $\mathrm{SO}$ , $\mathrm U$ | 짝수 여차원, 지표 대신 더 작은 군 |
-| Fourier–Jacobi | Weil 표현 $\omega_\psi$ | $\mathrm{Sp}/\mathrm{Mp}$ , $\mathrm U$ | 홀수 여차원, 지표 대신 Weil 표현 |
-
-세 모형이 모두 재는 것은 중복도 $\dim\mathrm{Hom}\_H(\pi\otimes\pi'\otimes\nu,\mathbb C)$ 다.
-
-Whittaker 모형은 $G_n$ 이 자명군까지 줄어든 극단이고, 반대쪽 극단이 여차원 0 인 $G\times G$ 의 대각 부분군이다. 후자에서는 Weil 표현을 끼워야 중복도 1 이 회복된다.
-
-## 중심값의 출현
-
-주기 적분을 펼치면 자리마다의 국소 적분의 곱이 되고, 비분기 자리의 국소 적분은 [Satake 매개변수](satake-isomorphism.md)로 계산되어 $L$ 함수의 국소 인자를 준다. [Rankin–Selberg 적분](rankin-selberg.md)과 달리 주기 적분에는 [Eisenstein 급수](eisenstein-series.md)가 들어가지 않아 복소 변수 $s$ 를 움직일 자유가 없고, 결과가 함수방정식의 대칭점 $s=1/2$ 의 값으로 고정된다.
-
-중심값이 0 이면 주기가 사라지고 정보가 도함수로 옮겨간다. 산술 GGP 가 그 경우를 다룬다.
+$p$ 진 고전군에서는 이 셈이 되지 않는다. 기약표현이 무한차원이라 차원을 더해 비교할 수 없고, 같은 [Langlands 매개변수](langlands-program.md)를 갖는 표현이 여럿(L 꾸러미)이며, 그 표현들이 판별식이 다른 여러 에르미트 공간 위에, 곧 서로 다른 **순수 내부형식** 위에 흩어져 있다. 군 하나만 보면 중복도가 0 일 수 있다. Gan–Gross–Prasad 추측은 순수 내부형식 전체에 걸쳐 중복도의 합이 1 이라고 하고, 그 1 을 갖는 표현을 $\varepsilon$ 인자로 지정한다.
 
 # 정의
+
+## 모형
+
+$N\backslash G/N$ 에서 비퇴화 지표가 남는 궤도가 하나뿐이므로 $\mathrm{GL}\_n$ 에서 Whittaker 모형이 유일하다. 고전군에서는 멱단근기 위의 지표 궤도가 여러 개이고, L 꾸러미 안에서 Whittaker 모형을 갖는 일반 표현은 보통 하나다. 지표 대신 더 작은 군이나 Weil 표현을 끼운 모형을 쓴다.
+
+| 모형 | 끼우는 것 | 해당 군 |
+| --- | --- | --- |
+| Whittaker | 멱단근기 $N$ 위의 비퇴화 지표 | $\mathrm{GL}\_n$ |
+| Bessel | $G(V_n)$ 또는 $N\rtimes G(V_n)$ | $\mathrm{SO}$ , $\mathrm U$ |
+| Fourier–Jacobi | Weil 표현 $\omega_\psi$ | $\mathrm{Sp}/\mathrm{Mp}$ , $\mathrm U$ |
+
+세 모형이 모두 재는 것은 중복도 $\dim\mathrm{Hom}\_H(\pi\otimes\pi'\otimes\nu,\mathbb C)$ 다. Whittaker 모형은 $G_n$ 이 자명군까지 줄어든 극단이고, 반대쪽 극단인 $G\times G$ 의 대각 부분군에서는 Weil 표현을 끼워야 중복도 1 이 회복된다.
 
 ## 관련된 쌍
 
@@ -142,12 +124,6 @@ $$
 
 # 성질
 
-## 콤팩트 경우의 차원 계산
-
-$\lambda=(4,2,1,0)$ 인 $U(4)$ 의 기약표현은 Weyl 차원 공식으로 차원이 $140$ 이다. $\lambda$ 와 인터레이싱하는 $\mu$ 는 열둘이고, 대응하는 $U(3)$ 표현의 차원 합도 $140$ 이다.
-
-차원이 맞으므로 각 $\mu$ 는 많아야 한 번 나온다. $p$ 진군에서 같은 결론을 얻는 데는 더 깊은 도구가 필요하다.
-
 ## 중복도 1 정리
 
 국소 GGP 의 (a) 는 정리로 확립되어 있다.
@@ -156,6 +132,10 @@ $\lambda=(4,2,1,0)$ 인 $U(4)$ 의 기약표현은 Weyl 차원 공식으로 차�
 - **아르키메데스 자리**: Sun–Zhu 가 실군과 복소군에서 증명했다.[^1]
 
 대합은 $\mathrm{GL}\_n$ 의 $g\mapsto{}^tg^{-1}$ 에 해당한다. 관련된 분포가 모두 이 대합에 대해 불변이면 $\mathrm{Hom}$ 공간이 2 차원 이상일 수 없다. 이 구조가 $(G\times H, H)$ 가 **Gelfand 쌍**이라는 조건이다.
+
+## 주기의 Euler 분해
+
+주기 적분을 펼치면 자리마다의 국소 적분의 곱이 되고, 비분기 자리의 국소 적분은 [Satake 매개변수](satake-isomorphism.md)로 계산되어 $L$ 함수의 국소 인자를 준다. [Rankin–Selberg 적분](rankin-selberg.md)과 달리 주기 적분에는 [Eisenstein 급수](eisenstein-series.md)가 들어가지 않아 복소 변수 $s$ 를 움직일 자유가 없고, 결과가 함수방정식의 대칭점 $s=1/2$ 의 값으로 고정된다.
 
 ## 지표 공식과 증명된 범위
 
