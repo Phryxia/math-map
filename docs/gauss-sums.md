@@ -24,11 +24,7 @@ Gauss 합은 곱셈 지표와 덧셈 지표를 한 식에 섞어 [유한체](fin
 
 # 직관
 
-## Fourier 변환의 고유벡터
-
-$\mathbb Z/p$ 위의 함수 공간에서 덧셈 Fourier 변환의 기저는 덧셈 지표 $\psi(n)=e^{2\pi in/p}$ 이고, 곱셈군 $(\mathbb Z/p)^\times$ 에는 곱셈 지표 $\chi$ 가 있다.
-
-$\chi$ 를 덧셈 Fourier 변환으로 보내면 상수배만 붙어 $\chi$ 가 되돌아온다.
+$\mathbb Z/p$ 위의 함수 공간에서 덧셈 Fourier 변환의 기저는 덧셈 지표 $\psi(n)=e^{2\pi in/p}$ 이고, 곱셈군 $(\mathbb Z/p)^\times$ 에는 곱셈 지표 $\chi$ 가 있다. $\chi$ 를 덧셈 Fourier 변환으로 보내면 상수배만 붙어 $\chi$ 가 되돌아온다.
 
 $$
 \sum_n\chi(n)\psi(mn)=\chi^{-1}(m)\thinspace g(\chi)
@@ -40,26 +36,7 @@ $$
 |g(\chi)|=\sqrt p\qquad(\chi\ne\text{자명})
 $$
 
-$\varepsilon$ 을 $\sqrt q$ 로 정규화하므로 근 수의 절댓값이 $1$ 이다. 함수방정식의 부호가 단위원 위에 있는 것이 Fourier 변환의 유니터리성에서 나온다.
-
-## 분기 자리에서만 생기는 인자
-
-국소 적분 $\int_{K_v^\times}f_v(x)\chi_v(x)|x|^s\thinspace d^\times x$ 에 $f_v=\mathbf 1_{\mathcal O_v}$ 를 넣고 $\chi_v$ 가 $\mathcal O_v^\times$ 에서 자명하면(비분기) 적분이 단순한 등비급수가 되고, Fourier 변환한 쪽도 마찬가지라 두 결과의 비에 상수가 남지 않는다. 근 수가 $1$ 이다.
-
-$\chi_v$ 가 분기하면 $\mathcal O_v^\times$ 위에서 진동하므로 $\mathbf 1_{\mathcal O_v}$ 를 넣은 적분이 지표의 직교성으로 $0$ 이 된다. $\chi_v$ 가 남는 크기의 시험함수를 골라야 하고, 그 함수의 Fourier 변환이 유한 잉여환 위의 지표합, 곧 Gauss 합이다.
-
-근 수는 분기가 만드는 위상이고, 분기하지 않으면 대칭이 깨질 곳이 없다.
-
-## 부호의 결정
-
-$|g(\chi)|=\sqrt p$ 는 $g(\chi)\overline{g(\chi)}$ 를 전개해 지표의 직교성을 쓰면 나온다. 이차 지표에서 $g(\chi)$ 는 실수이거나 순허수이므로 $\pm\sqrt p$ 또는 $\pm i\sqrt p$ 인데, 이 논법은 부호를 주지 않는다.
-
-$$
-\sum_{n=0}^{p-1}e^{2\pi in^2/p}=
-\begin{cases}\sqrt p&p\equiv1\pmod4\cr i\sqrt p&p\equiv3\pmod4\end{cases}
-$$
-
-부호에는 theta 함수의 극한이나 유수 계산 같은 해석적 논증이 필요하다. 크기는 대수적으로, 부호는 해석적으로만 나오며 대역 근 수의 값을 명시적으로 아는 경우가 드물다.
+$\varepsilon$ 을 $\sqrt q$ 로 정규화하므로 근 수의 절댓값이 $1$ 이고, 함수방정식의 부호가 단위원 위에 있는 것이 Fourier 변환의 유니터리성에서 나온다.
 
 # 정의
 
@@ -94,6 +71,8 @@ $$
 
 $s$ 의존성이 지수 하나로 빠지므로 정보는 $s=1/2$ 에서의 값에 있다. 그 값은 비분기 자리에서 $1$ 이고 분기 자리에서 도체를 법으로 한 Gauss 합을 $\sqrt{q^{a}}$ 로 나눈 것이다.
 
+국소 적분 $\int_{K_v^\times}f_v(x)\chi_v(x)|x|^s\thinspace d^\times x$ 에 $f_v=\mathbf 1_{\mathcal O_v}$ 를 넣고 $\chi_v$ 가 비분기이면 적분이 등비급수가 되고, Fourier 변환한 쪽도 마찬가지라 두 결과의 비에 상수가 남지 않는다. $\chi_v$ 가 분기하면 $\mathcal O_v^\times$ 위에서 진동하므로 같은 적분이 지표의 직교성으로 $0$ 이 된다. $\chi_v$ 가 남는 크기의 시험함수를 골라야 하고, 그 함수의 Fourier 변환이 유한 잉여환 위의 지표합, 곧 Gauss 합이다.
+
 ## 대역 근 수
 
 대역 함수방정식의 부호는 국소 근 수의 곱이다.
@@ -125,6 +104,8 @@ $i^\delta$ 는 무한 자리의 근 수다. 지표가 홀이면 감마 인자가
 첫째와 둘째는 같은 계산의 두 표현이다. 셋째는 $\chi$ 가 Fourier 변환의 고유벡터라는 진술이고 국소 근 수의 계산이 이 식을 쓴다.
 
 넷째가 **Gauss 의 부호 정리**다[^1]. Gauss 는 1801 년에 부호를 예상하고 1805 년에 증명했으며, 여기서 이차 상호법칙의 네 번째 증명이 나왔다.
+
+넷째의 크기 부분 $|g(\chi)|=\sqrt p$ 는 $g(\chi)\overline{g(\chi)}$ 를 전개해 지표의 직교성을 쓰면 나오고, 그 논법은 $g(\chi)$ 가 $\pm\sqrt p$ 인지 $\pm i\sqrt p$ 인지까지만 좁힌다. 부호에는 theta 함수의 극한이나 유수 계산 같은 해석적 논증이 필요하다.
 
 ## 근 수의 성질
 
