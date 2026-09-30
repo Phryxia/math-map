@@ -14,44 +14,19 @@ $$
 
 # 직관
 
-## 중국인의 나머지 정리의 극한
-
-$\mathbb Z/n\mathbb Z\cong\prod_{p^k\Vert n}\mathbb Z/p^k\mathbb Z$ 에서 $n$ 을 키워 극한을 취하면
+$\mathbb Z/n\mathbb Z\cong\prod_{p^k\Vert n}\mathbb Z/p^k\mathbb Z$ 에서 $n$ 을 키워 극한을 취하면 다음이 된다.
 
 $$
 \hat{\mathbb Z}=\varprojlim_n\mathbb Z/n\mathbb Z\cong\prod_p\mathbb Z_p
 $$
 
-가 된다. 모든 법에서의 나머지 정보를 한꺼번에 들고 있는 환이다. 여기에 $\mathbb Q$ 를 텐서해 분모를 허용하면 유한 아델 $\mathbb A_f$ 가 나오고, 무한 자리를 곱하면 다음을 얻는다.
+모든 법에서의 나머지 정보를 한꺼번에 들고 있는 환이다. 여기에 $\mathbb Q$ 를 텐서해 분모를 허용하면 유한 아델 $\mathbb A_f$ 가 나오고, 무한 자리를 곱하면 다음을 얻는다.
 
 $$
 \mathbb A_{\mathbb Q}=\mathbb R\times\mathbb A_f,\qquad \mathbb A_f=\hat{\mathbb Z}\otimes_{\mathbb Z}\mathbb Q
 $$
 
 아델 하나는 실수 하나와 모든 법에서의 나머지 정보를 묶은 것이다.
-
-## 제한직적의 필연성
-
-$\prod_p\mathbb Z_p$ 는 Tychonoff 정리로 콤팩트하다. 그러나 $\prod_p\mathbb Q_p$ 는 국소콤팩트조차 아니다. 각 $\mathbb Q_p$ 가 콤팩트하지 않아 무한 곱에서 콤팩트 근방을 만들 수 없다.
-
-제한직적은 $\prod_p\mathbb Z_p$ 라는 콤팩트 열린 부분군을 심어 두고 그 평행이동으로 위상을 준다. 전체가 국소콤팩트가 되고 Haar 측도가 생겨 Fourier 해석이 가능하다.
-
-조건이 거의 모든 자리에서 정수인 것은 유리수 $x$ 의 분모에 유한 개의 소수만 나오기 때문이다. 직합이었다면 $x_v=x$ 인 대각 원소가 거의 모든 자리에서 0 이 아니라 들어가지 못한다.
-
-## 아델 안의 격자 $\mathbb Q$
-
-$\mathbb Q$ 가 $\mathbb A_{\mathbb Q}$ 안에 놓이는 방식은 $\mathbb Z$ 가 $\mathbb R$ 안에 놓이는 방식과 같다.
-
-| 자리 | $\mathbb R$ 안의 $\mathbb Z$ | $\mathbb A_{\mathbb Q}$ 안의 $\mathbb Q$ |
-| --- | --- | --- |
-| 전체 | $\mathbb R$ | $\mathbb A_{\mathbb Q}=\mathbb R\times\mathbb A_f$ |
-| 이산 부분군 | $\mathbb Z$ | 대각으로 들어간 $\mathbb Q$ |
-| 콤팩트 몫 | 원 $\mathbb R/\mathbb Z$ | $\mathbb A_{\mathbb Q}/\mathbb Q$ |
-| 조화해석 | [Fourier 급수](fourier-series.md) | Poisson 합공식 |
-
-$\mathbb A_{\mathbb Q}=\mathbb Q+\big([0,1)\times\hat{\mathbb Z}\big)$ 가 성립한다. 아델 하나에서 유한 자리들의 분모를 유리수 하나로 없애고 실수 자리를 $[0,1)$ 로 옮기면 된다. $\mathbb R=\mathbb Z+[0,1)$ 의 아델 판이며 $[0,1)\times\hat{\mathbb Z}$ 가 기본영역이다. 기본영역이 콤팩트하므로 몫이 콤팩트하다.
-
-$\mathbb R/\mathbb Z$ 가 콤팩트라서 Fourier 급수가 있듯, $\mathbb A_{\mathbb Q}/\mathbb Q$ 가 콤팩트라서 아델 위의 Poisson 합공식이 성립한다. Tate 는 이 합공식으로 $\zeta$ 함수의 함수방정식을 유도했다.
 
 # 정의
 
@@ -71,6 +46,10 @@ $$
 $$
 
 를 열린 부분환으로 두고 그 곱위상의 합집합으로 준다. 결과는 국소콤팩트 위상환이며 대각 매장 $K\hookrightarrow\mathbb A_K$ 가 정의된다.
+
+곱 $\prod_p\mathbb Z_p$ 는 Tychonoff 정리로 콤팩트하지만 $\prod_p\mathbb Q_p$ 는 국소콤팩트조차 아니다. 각 $\mathbb Q_p$ 가 콤팩트하지 않아 무한 곱에서 콤팩트 근방을 만들 수 없다. 제한직적은 $\prod_v\mathcal O_v$ 라는 콤팩트 열린 부분군을 심어 두고 그 평행이동으로 위상을 주므로 전체가 국소콤팩트가 되고 Haar 측도가 생긴다.
+
+거의 모든 자리에서 정수라는 조건은 $K$ 의 원소 하나의 분모에 유한 개의 소수만 나오는 데서 온다. 직합이었다면 $x_v=x$ 인 대각 원소가 거의 모든 자리에서 0 이 아니라 들어가지 못한다.
 
 ## 이델군
 
@@ -111,6 +90,15 @@ $$
 > **정리.** $K$ 는 $\mathbb A_K$ 의 이산 부분군이고 $\mathbb A_K/K$ 는 콤팩트하다.
 
 증명의 요지는 $\mathbb Q$ 에서의 분해와 같다. $\mathcal O_K$ 를 $\prod_{v\mid\infty}K_v$ 의 격자로 실현하는 Minkowski 논증에, 유한 자리에서 분모를 없애는 중국인의 나머지 정리를 붙인다.
+
+$K=\mathbb Q$ 에서 그 분해는 $\mathbb A_{\mathbb Q}=\mathbb Q+\big(\lbrack 0,1)\times\hat{\mathbb Z}\big)$ 다. 아델 하나에서 유한 자리들의 분모를 유리수 하나로 없애고 실수 자리를 $\lbrack 0,1)$ 로 옮기면 된다. $\mathbb R=\mathbb Z+\lbrack 0,1)$ 의 아델 판이며 $\lbrack 0,1)\times\hat{\mathbb Z}$ 가 콤팩트 기본영역이다.
+
+| 자리 | $\mathbb R$ 안의 $\mathbb Z$ | $\mathbb A_{\mathbb Q}$ 안의 $\mathbb Q$ |
+| --- | --- | --- |
+| 전체 | $\mathbb R$ | $\mathbb A_{\mathbb Q}=\mathbb R\times\mathbb A_f$ |
+| 이산 부분군 | $\mathbb Z$ | 대각으로 들어간 $\mathbb Q$ |
+| 콤팩트 몫 | 원 $\mathbb R/\mathbb Z$ | $\mathbb A_{\mathbb Q}/\mathbb Q$ |
+| 조화해석 | [Fourier 급수](fourier-series.md) | Poisson 합공식 |
 
 > **정리.** $\mathbb A_K^{\times,1}/K^\times$ 는 콤팩트하다.
 
