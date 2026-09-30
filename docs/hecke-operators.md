@@ -15,8 +15,6 @@ $$
 
 # 직관
 
-## 부분격자의 합
-
 무게 $k$ 의 모듈러 형식은 격자의 함수 $F(L)$ 로 쓸 수 있다. 동차성 $F(\lambda L)=\lambda^{-k}F(L)$ 을 요구하고 $L=\mathbb Z+\mathbb Z\tau$ 에서 $f(\tau)=F(L)$ 로 두면 변환 규칙이 복원된다. 이 서술에서 $T_p$ 는 한 걸음 내려간 격자들의 합이다.
 
 $$
@@ -30,24 +28,6 @@ $\gcd(m,n)=1$ 일 때 지표 $mn$ 의 부분격자는 [중국인의 나머지 �
 $$
 T_pT_{p^r}=T_{p^{r+1}}+p^{k-1}T_{p^{r-1}}
 $$
-
-## Petersson 내적과 동시 대각화
-
-$T_n$ 들이 유한차원 공간 $S_k$ 위의 가환 연산자족이라는 것만으로는 대각화가 보장되지 않는다. Petersson 내적
-
-$$
-\langle f,g\rangle=\int_{\Gamma\backslash\mathbb H}f(\tau)\overline{g(\tau)}\thinspace y^k\thinspace\frac{dx\thinspace dy}{y^2}
-$$
-
-이 필요한 자기수반성을 준다. [측도](measure.md) $dx\thinspace dy/y^2$ 가 $\mathrm{SL}\_2(\mathbb R)$ 불변이고 $f\bar gy^k$ 가 $\Gamma$ 불변이라 적분이 잘 정의되며, 첨점형식의 급감으로 수렴한다. 이 내적에 대해 $p\nmid N$ 인 $T_p$ 는 자기수반이고, 가환하는 자기수반 연산자족은 동시에 대각화된다.
-
-## 옛형식의 겹침
-
-$M\mid N$ 이고 $d\mid(N/M)$ 이면 레벨 $M$ 의 형식 $f(\tau)$ 로부터 레벨 $N$ 의 형식 $f(d\tau)$ 를 얻는다. 새로운 정보 없이 공간의 차원만 늘어난다.
-
-$\gcd(n,N)=1$ 인 $T_n$ 은 $f(\tau)$ 와 $f(d\tau)$ 를 구별하지 못하고 둘 다 고윳값 $a_n$ 을 준다. 고유공간이 1 차원이 아니게 되어 고윳값이 형식을 결정하지 못하며, $p\mid N$ 인 자리의 작용소 $U_p$ 는 이 부분공간에서 자기수반이 아니라 상황을 구제하지 못한다.
-
-Atkin–Lehner 는 옛형식들이 만드는 부분공간의 Petersson 직교여공간을 새형식 공간으로 정의한다. 그 안에서는 $\gcd(n,N)=1$ 인 $T_n$ 의 고윳값만으로 형식이 유일하게 결정되고, $p\mid N$ 인 $U_p$ 까지 포함한 모든 작용소의 고유형식이 된다.
 
 # 정의
 
@@ -97,6 +77,18 @@ $$
 새부분공간의 정규화된 고유형식, 곧 $a_1=1$ 인 고유형식이 **새형식**이다.
 
 # 성질
+
+## 동시 대각화
+
+$T_n$ 들이 유한차원 공간 $S_k$ 위의 가환 연산자족이라는 것만으로는 대각화가 따라오지 않는다. Petersson 내적
+
+$$
+\langle f,g\rangle=\int_{\Gamma\backslash\mathbb H}f(\tau)\overline{g(\tau)}\thinspace y^k\thinspace\frac{dx\thinspace dy}{y^2}
+$$
+
+이 필요한 자기수반성을 준다. [측도](measure.md) $dx\thinspace dy/y^2$ 가 $\mathrm{SL}\_2(\mathbb R)$ 불변이고 $f\bar gy^k$ 가 $\Gamma$ 불변이라 적분이 잘 정의되며, 첨점형식의 급감으로 수렴한다. 이 내적에 대해 $p\nmid N$ 인 $T_p$ 는 자기수반이고, 가환하는 자기수반 연산자족은 동시에 대각화된다.
+
+옛부분공간에서는 이것으로 부족하다. $\gcd(n,N)=1$ 인 $T_n$ 은 $f(\tau)$ 와 $f(d\tau)$ 에 같은 고윳값 $a_n$ 을 주므로 고유공간이 1 차원이 아니고, $p\mid N$ 인 $U_p$ 는 이 부분공간에서 자기수반이 아니다.
 
 ## Atkin–Lehner 정리
 
