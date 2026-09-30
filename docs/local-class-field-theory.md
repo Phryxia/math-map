@@ -17,15 +17,7 @@ $$
 
 # 직관
 
-## 비분기 부분과 분기 부분
-
-국소체 $K$ 에는 부치 $v$ 와 잔여체 $k=\mathcal O/\mathfrak m\cong\mathbb F_q$ 가 있다. 확대 $L/K$ 에서는 잔여체가 커지거나(비분기) 소원이 잘게 쪼개지거나(분기) 둘뿐이고, 같은 이분법이 곱군의 분해에 나타난다.
-
-$$
-K^\times\thickspace\cong\thickspace\pi^{\mathbb Z}\times\mathcal O^\times
-$$
-
-소원 $\pi$ 가 생성하는 무한순환군과 단원군이다. 이 분해가 Galois 쪽의 분해와 맞물려 $\pi$ 는 Frobenius 로, $\mathcal O^\times$ 는 관성군으로 간다.
+국소체 $K$ 의 확대 $L/K$ 에서는 잔여체가 커지거나(비분기) 소원이 잘게 쪼개지거나(분기) 둘뿐이고, 같은 이분법이 곱군의 분해 $K^\times\cong\pi^{\mathbb Z}\times\mathcal O^\times$ 에 나타난다. 이 분해가 Galois 쪽의 분해와 맞물려 소원 $\pi$ 는 Frobenius 로, 단원군 $\mathcal O^\times$ 는 관성군으로 간다.
 
 $$
 \begin{array}{ccc}
@@ -34,46 +26,9 @@ $$
 \end{array}
 $$
 
-비분기 쪽은 [유한체](finite-fields.md) $\mathbb F_q$ 의 확대 이론이다. 유한체의 확대는 차수마다 하나뿐이고 Galois 군이 Frobenius 로 생성되는 순환군이다. 남는 일은 $\mathcal O^\times$ 에 대응하는 완전분기 확대를 만드는 것이다.
+비분기 쪽은 [유한체](finite-fields.md) $\mathbb F_q$ 의 확대 이론이라 이미 끝나 있다. 유한체의 확대는 차수마다 하나뿐이고 Galois 군이 Frobenius 로 생성되는 순환군이다. 남는 일은 $\mathcal O^\times$ 에 대응하는 완전분기 확대를 만드는 것이다.
 
-## 원분체의 대체물
-
-$K=\mathbb Q_p$ 에서는 $\mathbb Q_p(\mu_{p^n})$ 이 완전분기이고 $\mathrm{Gal}\cong(\mathbb Z/p^n)^\times$ 이며, 비분기 확대와 합치면 $\mathbb Q_p^{\mathrm{ab}}$ 가 나온다. 이것이 국소 Kronecker–Weber 정리다.
-
-일반 국소체 $K$ 에는 $\mu_{p^n}$ 에 해당하는 표준적 대상이 없다. $1$ 의 거듭제곱근은 곱군 $\mathbb G_m$ 에서 $p^n$ 을 곱하는 사상의 핵인데, $K$ 의 산술에 맞춰진 곱군이 따로 없다.
-
-Lubin 과 Tate 는 곱군을 새로 만든다[^1]. 좌표 하나짜리 형식적 군법칙
-
-$$
-F(X,Y)\in\mathcal O[[X,Y]],\qquad F(X,Y)=X+Y+(\text{고차항})
-$$
-
-은 대수다양체가 아니라 원점 근방의 [멱급수](power-series.md)이지만, $\bar K$ 의 극대 [아이디얼](ideals-quotient-rings.md) $\mathfrak m_{\bar K}$ 에 대입하면 수렴해 그 위에 아벨군 구조를 준다. 곱군의 형식판은 $F(X,Y)=X+Y+XY$ 이고, 좌표를 $x=\zeta-1$ 로 잡으면 $\zeta$ 들의 곱셈이 이 식이다.
-
-## 소원이 결정하는 형식군
-
-목표는 $\mathcal O$ 가 자기준동형으로 작용하는 형식군이다. $\pi$ 배 사상 $[\pi]$ 를 미리 지정하면 나머지가 결정된다. 지정할 $f$ 의 조건은 두 줄이다.
-
-$$
-f(X)\equiv\pi X \pmod{\deg 2},\qquad f(X)\equiv X^q\pmod{\mathfrak m}
-$$
-
-첫 줄은 $[\pi]$ 의 미분이 $\pi$ 라는 요구이고, 둘째 줄은 잔여체에서 Frobenius 가 되라는 요구다. 완전분기 확대에서 $\pi$ 를 곱하는 일과 Frobenius 가 겹치며, $f$ 는 그 겹침을 멱급수로 적은 것이다. 표준적 선택은 $f=\pi X+X^q$ 와, $K=\mathbb Q_p$ 에서 $f=(1+X)^p-1$ 이다. 후자가 주는 형식군이 $X+Y+XY$ 다.
-
-결과인 체 $K_n$ 은 $f$ 에 의존하지 않고 소원 $\pi$ 에만 의존한다. $\pi$ 를 바꾸면 $K_\pi$ 가 바뀌지만 $K^{\mathrm{ur}}\cdot K_\pi$ 는 그대로다.
-
-```mermaid
-graph TD
-  K["국소체 K"] --> U["K^ur<br/>비분기 : 잔여체의 확대"]
-  K --> R["K_π<br/>완전분기 : 형식군의 분할점"]
-  U --> AB["K^ab = K^ur · K_π"]
-  R --> AB
-  KX["K^× = π^Z × O^×"] -->|"Art_K"| AB
-  KX -.->|"π ↦ Frobenius"| U
-  KX -.->|"O^× ↦ 관성군"| R
-  F["f ≡ πX (deg 2)<br/>f ≡ X^q (mod m)"] --> FG["형식군 F_f<br/>[π]_f = f"]
-  FG --> R
-```
+$K=\mathbb Q_p$ 에서는 $\mathbb Q_p(\mu_{p^n})$ 이 그 일을 한다. 완전분기이고 $\mathrm{Gal}\cong(\mathbb Z/p^n)^\times$ 이며 비분기 확대와 합치면 $\mathbb Q_p^{\mathrm{ab}}$ 가 나온다. 일반 국소체에는 $\mu_{p^n}$ 에 해당하는 표준적 대상이 없다. $1$ 의 거듭제곱근은 곱군 $\mathbb G_m$ 에서 $p^n$ 을 곱하는 사상의 핵인데 $K$ 의 산술에 맞춰진 곱군이 따로 없으므로, Lubin 과 Tate 는 곱군 자체를 형식군으로 새로 만든다[^1].
 
 # 정의
 
@@ -116,7 +71,7 @@ $$
 F(X,0)=X,\qquad F(X,Y)=F(Y,X),\qquad F(F(X,Y),Z)=F(X,F(Y,Z))
 $$
 
-첫 조건에서 $F(X,Y)=X+Y+(\deg\ge2)$ 가 따라 나온다. $\mathfrak m_{\bar K}$ 의 원소를 대입하면 급수가 수렴하므로 $x+\_Fy=F(x,y)$ 가 $\mathfrak m_{\bar K}$ 위의 아벨군 구조를 준다. 역원과 결합법칙은 형식적 항등식에서 따라온다.
+첫 조건에서 $F(X,Y)=X+Y+(\deg\ge2)$ 가 따라 나온다. $F$ 는 대수다양체가 아니라 원점 근방의 [멱급수](power-series.md)이지만, $\bar K$ 의 극대 [아이디얼](ideals-quotient-rings.md) $\mathfrak m_{\bar K}$ 의 원소를 대입하면 급수가 수렴하므로 $x+\_Fy=F(x,y)$ 가 $\mathfrak m_{\bar K}$ 위의 아벨군 구조를 준다. 역원과 결합법칙은 형식적 항등식에서 따라온다.
 
 준동형 $g\colon F\to G$ 는 $g(F(X,Y))=G(g(X),g(Y))$ 를 만족하는 $g\in X\mathcal O[[X]]$ 다. $\mathrm{End}(F)$ 는 환이 되고 항상 $\mathbb Z$ 를 포함한다.
 
@@ -125,6 +80,8 @@ $$
 $\mathcal F_\pi$ 를 $f\equiv\pi X\ (\deg2)$ 와 $f\equiv X^q\ (\mathfrak m)$ 을 만족하는 $f\in\mathcal O[[X]]$ 의 집합이라 하자.
 
 > **Lubin–Tate.** $f\in\mathcal F_\pi$ 마다 형식군 법칙 $F_f$ 가 유일하게 존재해 $f$ 가 $F_f$ 의 자기준동형이 된다. 또 환 준동형 $\mathcal O\to\mathrm{End}(F_f)$ , $a\mapsto[a]\_f$ 가 유일하게 있어 $[a]\_f(X)\equiv aX\ (\deg2)$ 이고 $[\pi]\_f=f$ 다.
+
+두 조건은 각각 $[\pi]$ 의 미분이 $\pi$ 라는 요구와 잔여체에서 Frobenius 가 되라는 요구다. 완전분기 확대에서 $\pi$ 를 곱하는 일과 Frobenius 가 겹치고, $f$ 는 그 겹침을 멱급수로 적은 것이다. 표준적 선택은 $f=\pi X+X^q$ 와, $K=\mathbb Q_p$ 에서 $f=(1+X)^p-1$ 이다. 후자가 주는 형식군은 $F(X,Y)=X+Y+XY$ 이고, 좌표를 $x=\zeta-1$ 로 잡으면 $\zeta$ 들의 곱셈이 이 식이다.
 
 구성은 차수에 대한 귀납이다. $F\equiv X+Y$ 에서 시작해 $\Delta=f(F)-F(f(X),f(Y))$ 의 $n$ 차 동차부분을 $\pi^n-\pi$ 로 나눈 것을 더한다. 잔여체에서 $f$ 가 Frobenius 이므로 $\Delta\equiv0\ (\mathfrak m)$ 이고, $\pi^n-\pi=\pi(\pi^{n-1}-1)$ 의 $\pi$ 가 그만큼 상쇄되어 나눗셈이 $\mathcal O$ 안에서 이루어진다.
 
