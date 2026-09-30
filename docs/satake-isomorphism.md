@@ -257,6 +257,6 @@ LMFDB(L-functions and modular forms database) 의 자기동형 형식 표가 저
 
 - [Rankin–Selberg 적분](rankin-selberg.md)
 - [기하학적 Satake 대응](geometric-satake.md)
-- [기본 보조정리와 대각합 공식의 안정화](fundamental-lemma.md)
+- [기본 보조정리](fundamental-lemma.md)
 
 #number_theory #group_theory #algebra #computation

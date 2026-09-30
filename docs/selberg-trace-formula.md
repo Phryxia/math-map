@@ -161,7 +161,7 @@ $$
 
 ## 더 알아보기
 
-- [기본 보조정리와 대각합 공식의 안정화](fundamental-lemma.md)
+- [기본 보조정리](fundamental-lemma.md)
 - [Jacquet–Langlands 대응](jacquet-langlands.md)
 
 #number_theory #analysis #differential_geometry #theorem

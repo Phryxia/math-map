@@ -46,7 +46,7 @@ $$
 \chi_\pi=\prod_v\chi_{\pi_v}\ \in\ \mathrm{Irr}(\mathcal S_\psi)
 $$
 
-중복도 공식에서 $\pi$ 는 이 곱이 특정 지표 $\epsilon_\psi$ 와 같을 때만 이산 스펙트럼에 나타난다. $\epsilon_\psi$ 는 대칭 거듭제곱 $L$ 함수의 부호로 정의되는 명시적 지표다. 유한군의 지표 하나를 계산하면 무한차원 공간에서의 중복도가 나오고, 안정화된 [대각합 공식](fundamental-lemma.md)이 그 증명 도구다.
+중복도 공식에서 $\pi$ 는 이 곱이 특정 지표 $\epsilon_\psi$ 와 같을 때만 이산 스펙트럼에 나타난다. $\epsilon_\psi$ 는 대칭 거듭제곱 $L$ 함수의 부호로 정의되는 명시적 지표다. 유한군의 지표 하나를 계산하면 무한차원 공간에서의 중복도가 나오고, [기본 보조정리](fundamental-lemma.md)로 안정화한 대각합 공식이 그 증명 도구다.
 
 # 정의
 
@@ -147,7 +147,7 @@ Saito–Kurokawa, Ikeda, Miyawaki 올림처럼 한 군의 형식에서 다른 �
 ## 선수지식
 
 - [Vogan L 꾸러미와 순수 내부형식](vogan-packets.md)
-- [기본 보조정리와 대각합 공식의 안정화](fundamental-lemma.md)
+- [기본 보조정리](fundamental-lemma.md)
 
 ## 더 알아보기
 

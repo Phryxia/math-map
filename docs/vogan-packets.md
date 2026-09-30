@@ -79,7 +79,7 @@ $$
 \Theta_\varphi=\sum_{\pi\in\Pi_\varphi}\dim(\rho_\pi)\thinspace\Theta_\pi
 $$
 
-는 **안정 분포**가 된다. [대각합 공식의 안정화](fundamental-lemma.md)가 다루는 대상이 이 합이고, 꾸러미를 쪼개는 일이 내시(endoscopy)다.
+는 **안정 분포**가 된다. [기본 보조정리](fundamental-lemma.md)가 쓰이는 대각합 공식의 안정화에서 다루는 대상이 이 합이고, 꾸러미를 쪼개는 일이 내시(endoscopy)다.
 
 # 성질
 
