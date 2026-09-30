@@ -32,8 +32,6 @@ $$
 
 # 직관
 
-## Weyl 적분공식
-
 $\mathrm{SU}(2)$ 의 원소는 켤레를 무시하면 [고윳값](eigenvalues.md) $e^{\pm i\theta}$ 로 결정된다. 곧 켤레류의 공간이 $[0,\pi]$ 다. $\mathrm{SU}(2)$ 의 Haar 측도를 이 공간으로 밀어내면 Weyl 적분공식이
 
 $$
@@ -43,28 +41,6 @@ $$
 를 준다. $\sin^2$ 는 Weyl 분모 $|e^{i\theta}-e^{-i\theta}|^2$ 에서 오고, 서로 다른 고윳값이 밀어내는 효과다. 랜덤 행렬 이론의 고윳값 반발과 같다.
 
 밀도가 $\sin^2$ 이므로 $a_p$ 가 Hasse 한계에 닿는 $\theta=0$ 이나 $\theta=\pi$ 근처가 드물고 $a_p\approx0$ 근처가 가장 흔하다.
-
-## 복소곱셈과 군의 크기
-
-곡선마다 **Sato–Tate 군** $\mathrm{ST}(E)$ 라는 콤팩트군이 붙고, 정규화된 Frobenius 가 그 군의 켤레류에서 Haar 측도로 등분포한다.
-
-- **복소곱셈이 없으면** $\mathrm{ST}(E)=\mathrm{SU}(2)$ 다. $\ell$ 진 표현의 상이 열려 있다(Serre 의 정리). 측도가 $\frac2\pi\sin^2\theta\thinspace d\theta$ 다.
-- **복소곱셈이 있으면** 표현의 상이 훨씬 작다. 허수이차체 $K$ 안의 Hecke 지표로 설명되고, $\mathrm{ST}(E)$ 는 정규화 토러스 $N(\mathrm{U}(1))$ 다. $\mathbb Q$ 위에서 보면 절반의 소수($K$ 에서 불활성인 소수)에서 곡선이 초특이라 $a_p=0$ 이고, 나머지 절반에서 각이 $[0,\pi]$ 에 **균등**하다.
-
-$\mathrm{U}(1)$ 의 Haar 측도가 각에 대해 균등하므로 균등분포가 나온다. 군이 바뀌면 측도가 바뀐다.
-
-## 대칭곱의 역할
-
-측도를 확정하려면 모든 모멘트를 확정해야 한다. $\mathrm{SU}(2)$ 의 기약표현은 대칭곱 $\mathrm{Sym}^n$ 이고 그 지표가
-
-$$
-\mathrm{tr}\thinspace\mathrm{Sym}^n(\theta)=\frac{\sin((n+1)\theta)}{\sin\theta}
-=U_n(\cos\theta)
-$$
-
-곧 제2종 Chebyshev 다항식이다. 이 함수들이 $\frac2\pi\sin^2\theta\thinspace d\theta$ 에 대해 정규직교기저를 이루므로, 모든 $n\ge1$ 에서 $\sum_p U_n(\cos\theta_p)$ 가 주 항 없이 작음을 보이면 등분포가 나온다.
-
-그 합을 통제하는 것이 $L(\mathrm{Sym}^nE,s)$ 다. $\mathrm{Re}(s)=1$ 에서 영점도 극점도 없으면 계수합이 상쇄된다. 등분포 문제가 무한히 많은 $L$ 함수의 해석적 성질로 환원된다. [소수 정리](prime-number-theorem.md)가 $\zeta(1+it)\ne0$ 으로 환원되는 것과 같은 구조이고 함수의 개수만 다르다.
 
 # 정의
 
@@ -107,7 +83,7 @@ $$
 
 ## Sato–Tate 군
 
-$\mathrm{ST}(E)$ 는 $\ell$ 진 표현의 상의 Zariski 폐포에 대응하는 콤팩트 실형태이고, 타원곡선에서는 두 경우뿐이다.
+$\mathrm{ST}(E)$ 는 $\ell$ 진 표현의 상의 Zariski 폐포에 대응하는 콤팩트 실형태이고, 타원곡선에서는 두 경우뿐이다. 복소곱셈이 없으면 $\ell$ 진 표현의 상이 열려 있고(Serre 의 정리), 있으면 그 상이 허수이차체 안의 Hecke 지표로 설명된다.
 
 | | $\mathrm{ST}(E)$ | 측도 | $a_p=0$ 인 소수의 밀도 |
 |---|---|---|---|
@@ -131,13 +107,23 @@ Taylor 와 공저자들은 $L(\mathrm{Sym}^nE,s)$ 가 $\mathbb Q$ 위에서 자�
 - **Lang–Trotter 추측.** 고정된 $r$ 에 대해 $a_p=r$ 인 소수의 개수가 $\asymp\sqrt X/\log X$ 라는 추측. Sato–Tate 는 각 점의 밀도가 $0$ 이라는 것까지만 준다.
 - **초특이 소수.** CM 이 없는 곡선에서 $a_p=0$ 인 소수의 밀도는 $0$ 이지만 무한히 많다(Elkies). 개수는 Lang–Trotter 의 특수한 경우다.
 
+## 대칭곱의 지표
+
+측도를 확정하려면 모든 모멘트를 확정해야 한다. $\mathrm{SU}(2)$ 의 기약표현은 대칭곱 $\mathrm{Sym}^n$ 이고 그 지표가 제2종 Chebyshev 다항식이다.
+
+$$
+\mathrm{tr}\thinspace\mathrm{Sym}^n(\theta)=\frac{\sin((n+1)\theta)}{\sin\theta}=U_n(\cos\theta)
+$$
+
+이 함수들이 $\frac2\pi\sin^2\theta\thinspace d\theta$ 에 대해 정규직교기저를 이루므로, 모든 $n\ge1$ 에서 $\sum_p U_n(\cos\theta_p)$ 가 주 항 없이 작음을 보이면 등분포가 나온다. 그 합을 통제하는 것이 $L(\mathrm{Sym}^nE,s)$ 이고, $\mathrm{Re}(s)=1$ 에서 영점도 극점도 없으면 계수합이 상쇄된다.
+
 ## 등분포와 L 함수
 
 Sato–Tate 의 증명 구조는 다른 등분포 정리와 같다.
 
 | 등분포 진술 | 필요한 해석적 사실 |
 |---|---|
-| 소수 정리 | $\zeta(1+it)\ne0$ |
+| [소수 정리](prime-number-theorem.md) | $\zeta(1+it)\ne0$ |
 | 산술급수의 소수 분포 | $L(1+it,\chi)\ne0$ |
 | [Chebotarev 밀도](chebotarev.md) | Artin $L$ 함수의 비소멸 |
 | Sato–Tate | 모든 $\mathrm{Sym}^n$ $L$ 함수의 비소멸 |
