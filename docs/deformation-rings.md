@@ -22,8 +22,6 @@ $$
 
 # 직관
 
-## 1 차 변형과 코사이클
-
 $\bar\rho$ 를 $\mathbb Z/p^2$ 계수로 올려 행렬 성분을 $p$ 배의 보정으로 쓴다.
 
 $$
@@ -36,29 +34,13 @@ $$
 c(gh)=c(g)+\mathrm{Ad}(\bar\rho(g))\thinspace c(h)
 $$
 
-계수가 $\mathrm{ad}\thinspace\bar\rho=M_n(\mathbb F_p)$ 인 1-코사이클 조건이다. $1+pm$ 꼴로 켤레를 취하면 $c$ 가 coboundary 만큼 바뀌므로
+계수가 $\mathrm{ad}\thinspace\bar\rho=M_n(\mathbb F_p)$ 인 1-코사이클 조건이다. $1+pm$ 꼴로 켤레를 취하면 $c$ 가 coboundary 만큼 바뀌므로 다음이 성립한다.
 
 $$
 \lbrace\text{1 차 변형}\rbrace\big/\text{동치}\thickspace\cong\thickspace H^1(G,\mathrm{ad}\thinspace\bar\rho)
 $$
 
-이다. 보정항이 $\mathfrak{gl}\_n$ 값이고 $G$ 가 그 위에 켤레로 작용하므로 계수가 $\mathrm{ad}$ 다.
-
-## 장애류
-
-$\mathbb Z/p^m$ 에서 $\mathbb Z/p^{m+1}$ 로 한 층 올릴 때 들어 올린 사상은 준동형이 아니고, 어긋나는 정도가 2-코사이클을 만든다. 그 류가 $H^2(G,\mathrm{ad}\thinspace\bar\rho)$ 에서 $0$ 이어야 올림이 존재하며, 이를 **장애류**라 한다.
-
-$H^2=0$ 이면 장애가 없어 모든 층이 올라가고 $R$ 은 형식적 [멱급수](power-series.md)환이다. $H^2\ne0$ 이면 관계식이 생기며 개수는 $\dim H^2$ 를 넘지 않는다. 상한과 실제 개수 사이의 간격에 계산의 어려움이 모인다.
-
-## 표현가능성 조건
-
-함자 $D$ 가 표현가능하려면 올림을 붙여 나갈 때 선택이 유일해야 한다. $\bar\rho$ 가 자명하지 않은 자기준동형을 가지면 동치류를 붙이는 방식이 여럿이 되어 보편 대상이 깨진다. 그래서 Schur 조건을 건다.
-
-$$
-\mathrm{End}\_{G}(\bar\rho)=\mathbb F_p\qquad(\text{예컨대 }\bar\rho\ \text{가 절대기약})
-$$
-
-이 조건이 있으면 Schlessinger 의 판정[^2]이 통과하고 $R_{\bar\rho}$ 가 존재한다. 없으면 기저까지 기억하는 **틀 붙인 변형**을 쓴다. 틀 변형 함자는 언제나 표현가능하고 $\mathrm{PGL}\_n$ 만큼 차원이 늘어난 $R^{\square}\_{\bar\rho}$ 를 준다. Kisin 이 국소 조건을 다룰 때 쓰는 것이 이쪽이다.
+보정항이 $\mathfrak{gl}\_n$ 값이고 $G$ 가 그 위에 켤레로 작용하므로 계수가 $\mathrm{ad}$ 다.
 
 # 정의
 
@@ -80,6 +62,8 @@ $$
 
 ## 보편 변형환
 
+함자 $D_{\bar\rho}$ 가 표현가능하려면 올림을 붙여 나갈 때 선택이 유일해야 한다. $\bar\rho$ 가 자명하지 않은 자기준동형을 가지면 동치류를 붙이는 방식이 여럿이 되어 보편 대상이 깨지므로 $\mathrm{End}\_G(\bar\rho)=k$ 를 건다. 절대기약인 $\bar\rho$ 가 그 조건을 만족하고, 조건이 있으면 Schlessinger 의 판정[^2]이 통과한다.
+
 **정리(Mazur).** $G$ 가 $\Phi_p$ 를 만족하고 $\mathrm{End}\_G(\bar\rho)=k$ 이면 $D_{\bar\rho}$ 는 표현가능하다. 곧 $R_{\bar\rho}\in\mathcal C_\Lambda$ 와 보편 변형 $\rho^{\mathrm{univ}}\colon G\to\mathrm{GL}\_n(R_{\bar\rho})$ 가 있어 모든 $A$ 에서
 
 $$
@@ -89,6 +73,8 @@ $$
 
 이 전단사다. Schur 조건 없이도 $D^{\square}\_{\bar\rho}$ 는 $R^{\square}\_{\bar\rho}$ 로 표현가능하다.
 
+Schur 조건이 없으면 기저까지 기억하는 이 **틀 붙인 변형**을 쓴다. 틀 변형환은 $\mathrm{PGL}\_n$ 만큼 차원이 늘어나며, Kisin 이 국소 조건을 다룰 때 쓰는 것이 이쪽이다.
+
 ## 접공간과 표시
 
 이중수 $k[\varepsilon]$ 에서의 값이 접공간이다.
@@ -96,6 +82,8 @@ $$
 $$
 D_{\bar\rho}(k[\varepsilon])\thickspace\cong\thickspace\mathrm{Hom}\_k\bigl(\mathfrak m_R/(\mathfrak m_R^2,p),\thinspace k\bigr)\thickspace\cong\thickspace H^1(G,\mathrm{ad}\thinspace\bar\rho)
 $$
+
+$\mathbb Z/p^m$ 에서 $\mathbb Z/p^{m+1}$ 로 한 층 올릴 때 들어 올린 사상은 준동형이 아니고, 어긋나는 정도가 2-코사이클을 만든다. 그 류가 $H^2(G,\mathrm{ad}\thinspace\bar\rho)$ 에서 $0$ 이어야 올림이 존재하며, 이를 **장애류**라 한다.
 
 $d=\dim_k H^1$ 개의 생성원으로 $R$ 을 덮을 수 있고 장애 이론이 관계식의 개수를 누른다.
 
