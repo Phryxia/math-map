@@ -22,49 +22,9 @@ $11$ 에서는 rank 가 균등 분포하지 않는다. Dyson 은 세 합동식�
 
 # 직관
 
-## 조합적 설명
+$p(5n+4)\equiv0\pmod 5$ 는 개수가 $5$ 의 배수라고만 말한다. 분할들을 다섯 무더기로 실제로 나누려면 분할마다 법 $5$ 의 값을 주는 규칙이 있어야 한다. $n=0$ 에서 $p(4)=5$ 의 다섯 분할 $4$ , $3+1$ , $2+2$ , $2+1+1$ , $1+1+1+1$ 에 가장 큰 부분에서 부분의 개수를 뺀 값을 주면 순서대로 $3,1,0,-1,-3$ 이고 법 $5$ 로는 $3,1,0,4,2$ 라 다섯 잉여류가 하나씩 나온다. 이 값이 rank 다.
 
-$p(4)=5$ 의 다섯 분할은 다음과 같다.
-
-$$
-4,\quad 3+1,\quad 2+2,\quad 2+1+1,\quad 1+1+1+1
-$$
-
-rank 는 순서대로 $3,1,0,-1,-3$ 이고 법 $5$ 로 줄이면 $3,1,0,4,2$ 로 다섯 잉여류가 하나씩 나온다. 모든 $n$ 에서 그렇다.
-
-개수가 $5$ 의 배수라는 산술적 사실을 다섯 개의 같은 크기 상자로 나눌 수 있다는 구성적 사실로 바꾼 것이 조합적 설명이다. 나눈 뒤 각 상자 안의 구조를 다시 물을 수 있다.
-
-## crank 의 정의
-
-Andrews–Garvan 의 답은 $1$ 을 특별 취급한다. 분할 $\lambda$ 에서 $1$ 의 개수를 $\omega$ , $\omega$ 보다 큰 부분의 개수를 $\mu$ 라 하면
-
-$$
-\mathrm{crank}(\lambda)=\begin{cases}\text{가장 큰 부분}&\omega=0\cr \mu-\omega&\omega\gt 0\end{cases}
-$$
-
-이다. 생성함수 쪽에서는 crank 가 더 단순하다.
-
-$$
-\sum_{\lambda}z^{\mathrm{crank}(\lambda)}q^{|\lambda|}=\prod_{n\ge1}\frac{1-q^n}{(1-zq^n)(1-z^{-1}q^n)}
-$$
-
-이것은 완전한 Jacobi 형식이다. rank 쪽 생성함수는
-
-$$
-\sum_{\lambda}z^{\mathrm{rank}(\lambda)}q^{|\lambda|}=\sum_{n\ge0}\frac{q^{n^2}}{(zq;q)\_n(z^{-1}q;q)\_n}
-$$
-
-이고 $z$ 가 $1$ 의 거듭제곱근이면 Ramanujan 의 mock theta 함수가 된다. 두 통계량의 차이가 모듈러와 mock 의 차이다. crank 의 정의는 무한곱을 조합적으로 읽어낸 결과다.
-
-## rank 와 crank 의 비교
-
-| | rank | crank |
-| --- | --- | --- |
-| 정의 | 최대 부분 빼기 부분의 개수 | 1 의 개수로 갈린 규칙 |
-| 설명하는 합동식 | 법 5, 법 7 | 법 5, 법 7, 법 11 |
-| 생성함수 | mock 모듈러(Ramanujan 의 $f(q)$ ) | Jacobi 형식 |
-
-Dyson 이 rank 를 정의했을 때 그 생성함수가 Ramanujan 의 유작과 같은 대상이라는 것은 알려져 있지 않았다. 두 대상이 같다는 것은 2000 년대에 확인되었고, Bringmann–Ono 가 조화 Maass 형식으로 rank 의 계수에 정확 공식을 세우면서 Andrews–Dragonette 추측이 풀렸다.
+법 $5$ 와 법 $7$ 에서는 rank 로 나눈 무더기의 크기가 모든 $n$ 에서 같고 법 $11$ 에서는 그렇지 않다. 세 합동식을 모두 설명하는 규칙은 rank 가 아닌 다른 통계량이어야 하며, 그것이 $1$ 인 부분의 개수를 특별 취급하는 crank 다. 두 규칙의 차이는 생성함수에 나타나고, crank 쪽은 Jacobi 형식이며 rank 쪽은 mock 모듈러 형식이다.
 
 # 정의
 
@@ -112,7 +72,7 @@ $$
 
 여기서 $(a;q)\_n=\prod_{j=0}^{n-1}(1-aq^j)$ 이고, $z=1$ 에서 둘 다 $\sum p(n)q^n$ 이 된다.
 
-$R(-1;q)$ 는 Ramanujan 의 세 번째 차수 mock theta 함수 $f(q)$ 다. 일반적으로 $z$ 가 $1$ 의 $k$ 제곱근이면 $R(z;q)$ 가 무게 $1/2$ 의 mock 모듈러 형식이고 shadow 는 $k$ 에 따른 [theta 급수](theta-series.md)다.
+$R(-1;q)$ 는 Ramanujan 의 세 번째 차수 mock theta 함수 $f(q)$ 다. 일반적으로 $z$ 가 $1$ 의 $k$ 제곱근이면 $R(z;q)$ 가 무게 $1/2$ 의 mock 모듈러 형식이고 shadow 는 $k$ 에 따른 [theta 급수](theta-series.md)다. $C(z;q)$ 는 eta 몫으로 표현되는 완전한 [Jacobi 형식](jacobi-forms.md)이다.
 
 # 성질
 
@@ -127,6 +87,16 @@ $R(z;q)$ 를 $z=\zeta_{11}$ 에서 보면 $\Gamma_0(11)$ 관련 준위에서 sha
 ## 더 큰 합동식
 
 Ramanujan 합동식은 고립된 세 개가 아니다. $p(n)$ 은 $5^a7^b11^c$ 꼴의 법에서 합동식 족을 갖고(Watson, Atkin), Ono 는 $5$ 이상의 모든 소수 $\ell$ 에 대해 $p(An+B)\equiv0\pmod\ell$ 인 산술급수가 존재함을 보였다. 증명은 분할 생성함수를 반정수 무게 모듈러 형식으로 보고 [Galois 표현](galois-representations.md)과 Serre 의 소멸 정리를 쓴다. 조합적 설명이 있는 것은 작은 법뿐이다.
+
+## 두 통계량의 대비
+
+| | rank | crank |
+| --- | --- | --- |
+| 정의 | 최대 부분 빼기 부분의 개수 | 1 의 개수로 갈린 규칙 |
+| 설명하는 합동식 | 법 5, 법 7 | 법 5, 법 7, 법 11 |
+| 생성함수 | mock 모듈러(Ramanujan 의 $f(q)$ ) | Jacobi 형식 |
+
+Dyson 이 rank 를 정의했을 때 그 생성함수가 Ramanujan 의 유작과 같은 대상이라는 것은 알려져 있지 않았다. 두 대상이 같다는 것은 2000 년대에 확인되었고, Bringmann–Ono 가 조화 Maass 형식으로 rank 의 계수에 정확 공식을 세우면서 Andrews–Dragonette 추측이 풀렸다.
 
 ## 모멘트
 
