@@ -20,21 +20,15 @@ $\zeta$ 의 함수방정식이 상반평면 위 함수의 대칭으로 옮겨 �
 
 # 직관
 
-## 평균화
-
-$\Gamma$ 불변 함수를 만드는 소박한 방법은 평균 $\sum_{\gamma\in\Gamma}f(\gamma z)$ 이지만 대개 발산한다. 그래서 $f$ 를 부분군 $\Gamma_\infty$ 에 대해 이미 불변이도록 고르고 잉여류에 대해서만 합한다. $\mathrm{Im}(z)^s$ 는 $z\mapsto z+1$ 에 불변이므로
+$\Gamma$ 불변 함수를 만드는 소박한 방법은 평균 $\sum_{\gamma\in\Gamma}f(\gamma z)$ 이지만 대개 발산한다. $f$ 를 부분군 $\Gamma_\infty$ 에 대해 이미 불변이도록 고르고 잉여류에 대해서만 합하면 수렴한다. $\mathrm{Im}(z)^s$ 는 $z\mapsto z+1$ 에 불변이므로
 
 $$
 E(z,s)=\sum_{\gamma\in\Gamma_\infty\backslash\Gamma}\mathrm{Im}(\gamma z)^s
 $$
 
-가 $\mathrm{Re}(s)\gt 1$ 에서 수렴한다. 정칙 쪽도 같은 구성이며 $1$ 을 $(cz+d)^{-k}$ 라는 자기형 인자로 평균 내면 $E_k$ 가 나온다.
+가 $\mathrm{Re}(s)\gt 1$ 에서 수렴한다. 정칙 쪽도 같은 구성이며 $1$ 을 $(cz+d)^{-k}$ 라는 자기형 인자로 평균 내면 $E_k$ 가 나온다. 무엇을 평균 냈는지 알기 때문에 Fourier 계수를 끝까지 계산할 수 있고, 첨점형식은 평균의 잔재를 모두 뺀 나머지다.
 
-무엇을 평균 냈는지 알기 때문에 Fourier 계수를 끝까지 계산할 수 있다. 첨점형식은 평균의 잔재를 모두 뺀 나머지다.
-
-## 두 개의 상수항
-
-$E(z,s)$ 의 Fourier 전개에서 $n=0$ 항은 $y$ 의 함수이고 항이 둘이다.
+Fourier 전개에서 $n=0$ 항은 $y$ 의 함수이고 항이 둘이다.
 
 $$
 a_0(y,s)=y^s+\varphi(s)\thinspace y^{1-s},
@@ -42,47 +36,7 @@ a_0(y,s)=y^s+\varphi(s)\thinspace y^{1-s},
 \varphi(s)=\frac{\xi(2s-1)}{\xi(2s)}
 $$
 
-$y^s$ 는 $\gamma=1$ 인 항에서 오고 둘째 항은 나머지 전부가 모인 것이다. 두 지수 $s$ 와 $1-s$ 는 Laplace 작용소의 같은 고윳값
-
-$$
-\Delta_{\mathbb H}=-y^2\Bigl(\partial_x^2+\partial_y^2\Bigr),
-\qquad
-\Delta_{\mathbb H}\thinspace y^s=s(1-s)\thinspace y^s
-$$
-
-을 주는 두 해이므로 상수항은 고윳값 $s(1-s)$ 의 2 차원 해공간 안에 있고 $\varphi(s)$ 는 두 해가 섞이는 비율이다.
-
-$E(z,s)$ 와 $E(z,1-s)$ 는 같은 고윳값의 같은 종류의 함수이고 상수항에서 $s$ 와 $1-s$ 의 역할만 바뀌므로 서로 상수배여야 하며 그 상수가 $\varphi(s)$ 다. $\varphi$ 를 산란 행렬이라 부르고 $\varphi(s)\varphi(1-s)=1$ 이 유니터리성에 해당한다.
-
-## 연속 스펙트럼
-
-$\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 는 첨점이 하나 뚫려 있어 콤팩트가 아니고, 그래서 연속 스펙트럼이 생긴다.
-
-$$
-L^2(\Gamma\backslash\mathbb H)=
-\underbrace{\mathbb C\cdot 1}\_{\text{상수}}
-\thickspace\oplus\thickspace
-\underbrace{L^2_{\mathrm{cusp}}}\_{\text{Maass 첨점형식}}
-\thickspace\oplus\thickspace
-\underbrace{\int_{\mathrm{Re}(s)=1/2}^{\oplus}\mathbb C\thinspace E(z,s)\thinspace ds}\_{\text{연속 스펙트럼}}
-$$
-
-연속 부분을 만드는 것이 임계선 위의 $E(z,s)$ 다. $E(z,\tfrac12+it)$ 는 상수항이 $y^{1/2}$ 크기라 $L^2$ 에 속하지 않지만 자유 입자의 평면파처럼 일반화 고유함수가 된다. Selberg 의 스펙트럼 분해 정리가 이 분해를 서술한다.
-
-첨점형식의 존재는 Selberg 의 대각합 공식이 무한히 많음을 보이기 전에는 자명하지 않았고, 연속 쪽은 $\zeta$ 함수로 손에 잡힌다.
-
-## s=1 의 극과 부피
-
-$\varphi(s)=\xi(2s-1)/\xi(2s)$ 의 분자가 $\xi$ 의 $w=1$ 극에서 오는 $s=1$ 단순극을 준다. 유수는
-
-$$
-\mathrm{Res}\_{s=1}E(z,s)=\frac{1}{2\xi(2)}=\frac{3}{\pi}
-=\frac1{\mathrm{vol}(\Gamma\backslash\mathbb H)}
-$$
-
-로 $z$ 에 의존하지 않는 상수함수다. 유수도 $\Gamma$ 불변이고 고윳값이 $s(1-s)\to0$ 이라 [조화함수](harmonic-functions.md)이며, 유계인 조화함수는 상수다.
-
-Rankin–Selberg 방법이 이 상수가 부피의 역수라는 것을 쓴다. $f\bar g y^k$ 에 $E(z,s)$ 를 곱해 적분한 것의 $s=1$ 유수가 Petersson 내적 $\langle f,g\rangle/\mathrm{vol}$ 이 된다.
+$y^s$ 는 $\gamma=1$ 인 항에서 오고 둘째 항은 나머지 전부가 모인 것이다. 두 지수 $s$ 와 $1-s$ 는 Laplace 고윳값 $s(1-s)$ 를 주는 두 해이므로 상수항은 그 고윳값의 2 차원 해공간 안에 있고, $\varphi(s)$ 는 두 해가 섞이는 비율이다. $\varphi$ 를 산란 행렬이라 부른다.
 
 # 정의
 
@@ -116,7 +70,15 @@ $$
 
 는 $\mathrm{Re}(s)\gt 1$ 에서 절대수렴한다. 완비화는 $\xi(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 를 써서 $E^\ast(z,s)=\xi(2s)E(z,s)$ 다.
 
-$E(z,s)$ 는 $\Gamma$ 불변이고 $\Delta_{\mathbb H}E=s(1-s)E$ 를 만족하며 $L^2$ 에는 속하지 않는다.
+쌍곡 Laplace 작용소는
+
+$$
+\Delta_{\mathbb H}=-y^2\bigl(\partial_x^2+\partial_y^2\bigr),
+\qquad
+\Delta_{\mathbb H}\thinspace y^s=s(1-s)\thinspace y^s
+$$
+
+이다. $E(z,s)$ 는 $\Gamma$ 불변이고 $\Delta_{\mathbb H}E=s(1-s)E$ 를 만족하며 $L^2$ 에는 속하지 않는다.
 
 ## Fourier 전개
 
@@ -137,9 +99,34 @@ $K_\nu$ 는 변형 Bessel 함수이고 $K_\nu=K_{-\nu}$ 다. 오른쪽 전체가
 > $$
 > 를 만족한다. 극은 $s=0$ 과 $s=1$ 의 단순극뿐이고 $\mathrm{Res}\_{s=1}E(z,s)=3/\pi$ 다.[^1]
 
+**증명의 요지.** $E(z,s)$ 와 $E(z,1-s)$ 는 같은 고윳값 $s(1-s)$ 의 $\Gamma$ 불변 고유함수이고 첨점에서 같은 크기로 자라며, 상수항에서 $s$ 와 $1-s$ 의 역할만 바뀐다. 그런 함수의 공간이 1 차원이므로 둘이 상수배이고, 상수항을 견주면 그 상수가 $\varphi(s)$ 다. $\square$
+
 정규화하지 않은 꼴로는 $E(z,s)=\varphi(s)E(z,1-s)$ 이고 $\varphi(s)\varphi(1-s)=1$ 이다. 첨점이 여러 개이면 $\varphi$ 가 첨점 개수 크기의 행렬이 되고 그 [행렬식](determinants.md)의 극이 잉여 스펙트럼을 준다.
 
+$s=1$ 의 유수는 $z$ 에 의존하지 않는다.
+
+$$
+\mathrm{Res}\_{s=1}E(z,s)=\frac1{2\xi(2)}=\frac3\pi=\frac1{\mathrm{vol}(\Gamma\backslash\mathbb H)}
+$$
+
+유수도 $\Gamma$ 불변이고 고윳값이 $s(1-s)\to0$ 이라 [조화함수](harmonic-functions.md)이며, 유계인 조화함수는 상수다. Rankin–Selberg 방법이 이 상수가 부피의 역수라는 것을 쓴다. $f\bar gy^k$ 에 $E(z,s)$ 를 곱해 적분한 것의 $s=1$ 유수가 Petersson 내적 $\langle f,g\rangle/\mathrm{vol}$ 이 된다.
+
 $\varphi(s)$ 의 0 점과 극이 $\zeta$ 의 0 점과 직결되므로 $E(z,s)$ 의 해석적 성질을 개선하는 일과 $\zeta$ 의 0 점을 이해하는 일이 같은 문제가 된다.
+
+## 스펙트럼 분해
+
+$\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 는 첨점이 하나 뚫려 있어 콤팩트가 아니고 연속 스펙트럼이 생긴다.
+
+$$
+L^2(\Gamma\backslash\mathbb H)=
+\underbrace{\mathbb C\cdot 1}\_{\text{상수}}
+\thickspace\oplus\thickspace
+\underbrace{L^2_{\mathrm{cusp}}}\_{\text{Maass 첨점형식}}
+\thickspace\oplus\thickspace
+\underbrace{\int_{\mathrm{Re}(s)=1/2}^{\oplus}\mathbb C\thinspace E(z,s)\thinspace ds}\_{\text{연속 스펙트럼}}
+$$
+
+연속 부분을 만드는 것이 임계선 위의 $E(z,\tfrac12+it)$ 다. 상수항이 $y^{1/2}$ 크기라 $L^2$ 에 속하지 않지만 일반화 고유함수가 된다. Selberg 의 스펙트럼 분해 정리가 이 분해를 서술한다.
 
 ## 정칙 쪽의 첨점형식 구성
 
