@@ -18,73 +18,9 @@ Euler 계의 정의는 수체의 탑 위에 얹힌 대수적 원소들이 **자�
 
 # 직관
 
-## Selmer 군의 상계 문제
+대역 상호법칙의 항등식에 넣을 류 $c$ 가 Selmer 군에 있으면 Selmer 조건이 국소 짝에 대해 자기쌍대이므로 모든 항이 $0$ 이고 아무 정보도 나오지 않는다. 한 자리 $\ell$ 에서만 조건을 어기는 류여야 항등식이 한 항으로 줄고 $\mathrm{loc}\_\ell(s)=0$ 이 강제된다. 그런데 대수적으로 만들 수 있는 원소는 순환체의 단수 $1-\zeta_n$ , 타원곡선의 Heegner 점 $y_n$ , 모듈러 곡선의 Beilinson 원소처럼 전부 대역적이라 어느 자리에서도 조건을 어기지 않는다. 쓸 수 있는 류가 하나도 없다.
 
-$\mathrm{Sel}\_p(E/K)\subset H^1(K,E[p])$ 는 모든 자리에서 국소 조건을 만족하는 류의 집합이다. 이 정의는 원소를 거르지만 원소가 없음을 보이지는 않는다.
-
-Selmer 군은 부등식으로만 주어진 볼록집합에 해당하고, 선형 방정식을 더하면 차원이 떨어진다. 방정식은 대역적으로 존재하는 코호몰로지 류에서만 나오므로, 대수적으로 만들 수 있는 류의 개수가 Selmer 군을 누르는 정도를 결정한다.
-
-## 쓸모 있는 류의 조건
-
-상호법칙의 항등식 $\sum_v\langle \mathrm{loc}\_v c,\mathrm{loc}\_v s\rangle_v=0$ 에서 $c$ 와 $s$ 가 모두 Selmer 군에 있으면 Selmer 조건이 국소 짝에 대해 자기쌍대이므로 모든 항이 0 이고, 아무 정보도 얻지 못한다.
-
-필요한 것은 한 자리 $\ell$ 에서만 조건을 어기는 류다. 그러면 항등식이
-
-$$
-\big\langle \mathrm{loc}\_\ell(c),\ \mathrm{loc}\_\ell(s)\big\rangle_\ell=0
-$$
-
-하나로 줄고, $\mathrm{loc}\_\ell(c)\ne0$ 이면 $\mathrm{loc}\_\ell(s)$ 가 그 짝에 대해 직교하도록 강제된다. $\ell$ 자리의 국소 코호몰로지가 $p$ 위에서 2 차원이고 두 조각이 서로 소멸자이므로, 이 직교성은 $\mathrm{loc}\_\ell(s)=0$ 을 뜻한다. 여기에 [Chebotarev](chebotarev.md) 를 써서 $\mathrm{loc}\_\ell(s)\ne0$ 인 $\ell$ 을 미리 골라 두면 모순이 나고 $s=0$ 이 된다.
-
-Euler 계 논법은 한 자리에서만 어긋난 대역류를 자리를 골라 가며 만드는 일로 요약된다.
-
-## 자취 정합성과 어긋난 류
-
-순환체의 단수 $1-\zeta_n$ , 타원곡선의 Heegner 점 $y_n$ , [모듈러 곡선](modular-curves.md)의 Beilinson 원소는 모두 대역적으로 존재하는 원소라서 Selmer 조건을 어기지 않고, 그대로는 쓸 수 없다.
-
-이 원소들은 탑 위에서 자취로 이어져 있다. Heegner 점이라면
-
-$$
-\mathrm{Tr}\_{K_{n\ell}/K_n}\big(y_{n\ell}\big)=a_\ell\thinspace y_n
-$$
-
-이고 자취가 Hecke 고윳값으로 떨어진다. $p\mid a_\ell$ 인 소수 $\ell$ 을 고르면 자취가 $p$ 를 법으로 0 이 된다. 자취가 0 인 원소에는 군환에서 나눗셈에 해당하는 조작이 가능하고, 그 결과가 어긋난 류다.
-
-## 유도 연산자와 텔레스코핑
-
-$G=\langle\sigma\rangle$ 가 위수 $m$ 인 순환군이라 하자. 군환 $\mathbb Z[G]$ 안에서
-
-$$
-D=\sum_{i=1}^{m-1} i\thinspace\sigma^{i},\qquad N=\sum_{i=0}^{m-1}\sigma^{i}
-$$
-
-로 두면 다음 항등식이 성립한다.
-
-$$
-(\sigma-1)\thinspace D\thickspace=\thickspace m-N
-$$
-
-증명은 지수를 한 칸 밀어 상쇄시키는 것이다. 점 $y$ 에 $D$ 를 씌우고 $\sigma-1$ 을 적용하면
-
-$$
-(\sigma-1)Dy=m\thinspace y-Ny=m\thinspace y-\mathrm{Tr}(y)
-$$
-
-이므로 $p\mid m$ 이고 $p\mid \mathrm{Tr}(y)$ 이면 $(\sigma-1)Dy\in p\thinspace E(K_\ell)$ 이다. 곧 $Dy$ 가 $p$ 를 법으로 Galois 불변이 되고, 이 불변성으로 코호몰로지 류로 내려간다.
-
-$m=\ell+1$ 과 $a_\ell$ 이 모두 $p$ 로 나뉘는 소수 $\ell$ 이 **Kolyvagin 소수**이며, 두 조건은 위 항등식의 두 항에 대응한다.
-
-## 이름의 유래
-
-자취 관계에 나타나는 계수의 일반적인 형태는
-
-$$
-\mathrm{Tr}\_{K(n\ell)/K(n)}\big(c_{n\ell}\big)=P_\ell\negthinspace\left(\mathrm{Fr}\_\ell^{-1}\right)\thinspace c_n,
-\qquad
-P_\ell(x)=\det\negthinspace\left(1-\mathrm{Fr}\_\ell\thinspace x\ \middle|\ T^{\ast}\right)
-$$
-
-이고, $P_\ell$ 은 그 표현의 $L$ 함수의 $\ell$ 번째 Euler 인자다. Euler 계는 $L$ 함수의 Euler 곱을 계수로 지니고 탑 위에 놓인 원소들의 열이다. 이 계수가 $L$ 함수와 Selmer 군을 잇고, BSD 와 Iwasawa 주추측의 증명이 그 연결을 쓴다.
+이 원소들은 수체의 탑 위에서 자취로 이어져 있다. Heegner 점의 자취는 $\mathrm{Tr}\_{K_{n\ell}/K_n}\bigl(y_{n\ell}\bigr)=a_\ell\thinspace y_n$ 이므로 $p\mid a_\ell$ 인 $\ell$ 을 고르면 자취가 $p$ 를 법으로 $0$ 이다. 위수 $m$ 인 순환군 $\langle\sigma\rangle$ 의 군환에서 $D=\sum_{i=1}^{m-1}i\thinspace\sigma^i$ 를 점 $y$ 에 씌우면 $(\sigma-1)Dy=m\thinspace y-\mathrm{Tr}(y)$ 이므로, $p\mid m$ 이고 자취가 $p$ 로 나뉘면 $Dy$ 가 $p$ 를 법으로 Galois 불변이다. 그 불변원소가 $\ell$ 자리에서만 분기하는 코호몰로지 류를 주고, 상호법칙에 넣을 $c$ 가 된다.
 
 # 정의
 
@@ -100,7 +36,7 @@ $$
 
 를 만족한다는 뜻이다. $\mathrm{cor}$ 는 코제한(자취)이고 $P_\ell(x)=\det(1-\mathrm{Fr}\_\ell x\mid T^{\ast})$ 다.
 
-$T=\mathbb Z_p(1)$ 이면 $P_\ell(x)=1-x$ 이고 $H^1(K(n),\mathbb Z_p(1))$ 은 단수군의 완비화이므로, 순환체의 단수 $1-\zeta_n$ 이 이 정의를 만족한다. $T=T_pE$ 면 $P_\ell(x)=1-a_\ell x+\ell x^{2}$ 다.
+$T=\mathbb Z_p(1)$ 이면 $P_\ell(x)=1-x$ 이고 $H^1(K(n),\mathbb Z_p(1))$ 은 단수군의 완비화이므로, 순환체의 단수 $1-\zeta_n$ 이 이 정의를 만족한다. $T=T_pE$ 면 $P_\ell(x)=1-a_\ell x+\ell x^{2}$ 다. $P_\ell$ 은 $T^{\ast}$ 의 $L$ 함수의 $\ell$ 번째 Euler 인자이고, 계의 이름이 여기서 온다.
 
 ## 반순환 변형: Heegner 점의 경우
 
@@ -118,15 +54,17 @@ $$
 p\mid \ell+1,\qquad p\mid a_\ell
 $$
 
-를 만족한다는 뜻이다. 마지막 두 조건은 $\mathrm{Fr}\_\ell$ 이 $\mathbb Q(E[p],\mu_p)$ 위에서 복소켤레와 공액이라는 한 조건으로 묶인다. Chebotarev 밀도 정리로 이런 $\ell$ 은 양의 밀도로 무한히 많고, 추가 조건을 붙여 가며 고를 수 있다. 논법이 쓰는 것은 이 선택의 자유다.
+를 만족한다는 뜻이다. 마지막 두 조건은 $\mathrm{Fr}\_\ell$ 이 $\mathbb Q(E[p],\mu_p)$ 위에서 복소켤레와 공액이라는 한 조건으로 묶인다. [Chebotarev](chebotarev.md) 밀도 정리로 이런 $\ell$ 은 양의 밀도로 무한히 많고, 추가 조건을 붙여 가며 고를 수 있다. 논법이 쓰는 것은 이 선택의 자유다.
 
 $n$ 을 Kolyvagin 소수들의 곱이라 하고 $K_n$ 을 도체 $n$ 의 링 유체, $G_n=\mathrm{Gal}(K_n/K_1)\cong\prod_{\ell\mid n}G_\ell$ 라 쓴다. $G_\ell$ 은 위수 $\ell+1$ 인 순환군이다.
 
 ## 유도류 $\kappa_n$
 
-$G_\ell$ 의 생성원 $\sigma_\ell$ 에 대해 $D_\ell=\sum_{i=1}^{\ell}i\thinspace\sigma_\ell^{\thinspace i}$ 로 두고 $D_n=\prod_{\ell\mid n}D_\ell$ 라 하자[^1]. Heegner 점 $y_n\in E(K_n)$ 에 대해 다음이 성립한다.
+$G_\ell$ 의 생성원 $\sigma_\ell$ 에 대해 $D_\ell=\sum_{i=1}^{\ell}i\thinspace\sigma_\ell^{\thinspace i}$ 로 두고 $D_n=\prod_{\ell\mid n}D_\ell$ 라 하자[^1]. 위수 $m$ 인 순환군의 군환에서 $D=\sum_{i=1}^{m-1}i\thinspace\sigma^i$ 와 자취 $N=\sum_{i=0}^{m-1}\sigma^i$ 는 지수를 한 칸 밀어 상쇄시키면 $(\sigma-1)D=m-N$ 을 만족한다.
 
-- 앞의 텔레스코핑 항등식과 자취 관계에서 $D_n y_n$ 의 상은 $E(K_n)/pE(K_n)$ 안에서 $G_n$ 불변이다.
+Heegner 점 $y_n\in E(K_n)$ 에 대해 다음이 성립한다.
+
+- 이 항등식과 자취 관계에서 $D_n y_n$ 의 상은 $E(K_n)/pE(K_n)$ 안에서 $G_n$ 불변이다.
 - $E[p]$ 가 기약이므로 $H^1(G_n,E(K_n)[p])=0$ 이고, 따라서 $D_n y_n$ 은 $E(K_1)/p$ 의 원소로 유일하게 내려온다. 다시 $K_1/K$ 로 내려 $\mathcal P_n\in E(K)/pE(K)$ 를 얻는다.
 - Kummer 사상으로 $\mathcal P_n$ 을 보낸 것을 $\kappa_n\in H^1(K,E[p])$ 라 쓴다.
 
@@ -224,7 +162,7 @@ $$
 | Beilinson–Kato 원소 | 모듈러 형식의 $T$ | $L(E,1)\ne0\Rightarrow$ 순위 0, 주추측의 한쪽 나눔 |
 | Rubin–Stark 원소 | 일반 $\mathbb Z_p(1)$ 꼬임 | 추측 단계 |
 
-Kato 의 Euler 계는 모듈러 곡선의 $K_2$ 안의 Beilinson 원소에서 오고, $K$ 나 CM(complex multiplication) 을 쓰지 않아 [모듈러 형식](modular-forms.md) 일반으로 확장된다. 얻는 방향은 반대다. Heegner 쪽이 $L'\ne0\Rightarrow$ 순위 1 을, Kato 쪽이 $L\ne0\Rightarrow$ 순위 0 과 주추측의 한쪽 나눔을 준다. 나머지 한쪽은 Skinner–Urban 이 Eisenstein 합동으로 채웠다.
+Kato 의 Euler 계는 [모듈러 곡선](modular-curves.md)의 $K_2$ 안의 Beilinson 원소에서 오고, $K$ 나 CM(complex multiplication) 을 쓰지 않아 [모듈러 형식](modular-forms.md) 일반으로 확장된다. 얻는 방향은 반대다. Heegner 쪽이 $L'\ne0\Rightarrow$ 순위 1 을, Kato 쪽이 $L\ne0\Rightarrow$ 순위 0 과 주추측의 한쪽 나눔을 준다. 나머지 한쪽은 Skinner–Urban 이 Eisenstein 합동으로 채웠다.
 
 알려진 Euler 계는 순위 1 까지의 Selmer 군만 누른다.
 
