@@ -14,48 +14,9 @@ $p$ 와 $\infty$ 에서만 분기하는 [사원수대수](brauer-groups.md) $B_{
 
 # 직관
 
-## 이념과 동종사상의 사전
+초특이 곡선 $E$ 에서 $E'$ 로 가는 동종사상을 찾는 일은 곡선만 보고는 어렵다. $\mathcal O=\mathrm{End}(E)$ 쪽으로 옮기면 사정이 다르다. 동종사상 $\varphi:E\to E'$ 마다 $\mathrm{Hom}(E',E)\cdot\varphi$ 가 $\mathcal O$ 의 좌이념이고, 거꾸로 좌이념 $I$ 에서 $\ker I=\bigcap_{\alpha\in I}\ker\alpha$ 를 커널로 갖는 동종사상이 나오므로 두 구성이 서로 역이다.
 
-$\varphi:E\to E'$ 를 동종사상, $\mathcal O=\mathrm{End}(E)$ 라 하자. 집합
-
-$$
-I_\varphi=\lbrace\alpha\in\mathcal O:\ \varphi\circ\alpha=0\ \text{on}\ \ker\varphi\rbrace
-=\mathrm{Hom}(E',E)\cdot\varphi
-$$
-
-는 $\mathcal O$ 의 좌이념이다. 좌이념 $I$ 가 주어지면 $\ker I=\bigcap_{\alpha\in I}\ker\alpha$ 를 커널로 갖는 동종사상이 정해지고, 두 구성이 서로 역이다.
-
-| 곡선 쪽 | 사원수 쪽 |
-| --- | --- |
-| 초특이 곡선 $E$ | 극대차수 $\mathcal O\cong\mathrm{End}(E)$ |
-| 동종사상 $\varphi:E\to E'$ | 좌 $\mathcal O$ 이념 $I_\varphi$ |
-| $\deg\varphi$ | 노름 $\mathrm{N}(I_\varphi)$ |
-| 합성 $\psi\circ\varphi$ | 이념의 곱 |
-| 쌍대 $\hat\varphi$ | 켤레 이념 $\bar I$ |
-| $E\cong E'$ | 같은 좌이념 류 |
-| 동종사상 그래프 | 이념 류 그래프 |
-
-좌이념 류의 개수가 초특이 $j$ 불변량의 개수이고 양쪽 모두 Eichler 의 질량 공식이 $(p-1)/24$ 로 준다.
-
-```mermaid
-graph LR
-  A["초특이 곡선 E<br/>기하"] -- "End" --> B["극대차수 O<br/>대수"]
-  A -- "동종사상 찾기<br/>지수 시간" --> A2["목표 곡선 E'"]
-  B -- "KLPT<br/>다항 시간" --> B2["목표 차수 O'"]
-  B2 -- "이념을 동종사상으로 번역" --> A2
-```
-
-## 계산 난이도의 비대칭
-
-곡선만 주어지면 $\mathrm{End}(E)$ 를 계산하는 데 알려진 최선이 $\widetilde O(\sqrt p)$ 다. $\mathcal O$ 를 손에 쥐고 있으면 곡선 사이의 경로를 다항 시간에 만들 수 있다.
-
-Wesolowski 는 자기준동형환 계산과 경로 찾기가 다항 시간 환원으로 서로 옮겨 감을 증명했다. 초특이 동종사상 암호의 안전성은 $\mathrm{End}(E)$ 계산의 어려움이라는 한 가정으로 모인다.
-
-## 매끄러운 노름
-
-사원수 쪽에서 찾은 이념을 곡선 쪽으로 번역하려면 커널을 그려야 한다. 차수 $N$ 의 동종사상을 직접 계산하는 비용은 $N$ 에 선형이지만, $N=\ell^e$ 처럼 매끄러우면 차수 $\ell$ 짜리 $e$ 번의 합성으로 쪼개져 비용이 $e\cdot\ell$ 이 된다.
-
-KLPT 알고리즘은 주어진 이념과 같은 류에 속하면서 노름이 $\ell^e$ 인 대표를 찾는다. 같은 류의 이념은 같은 곡선을 가리키므로 노름만 계산하기 좋은 모양으로 갈아 끼우는 것이다.
+이념 쪽에서는 계산이 격자 문제가 된다. 차수가 노름이 되고 합성이 곱이 되므로, 목표 곡선으로 가는 동종사상을 찾는 일이 주어진 노름을 갖는 이념을 찾는 일이 된다. 곡선 쪽 번역 비용은 차수에 선형이므로 노름이 $\ell^e$ 인 대표를 골라 두면 차수 $\ell$ 짜리 합성 $e$ 번으로 끝난다.
 
 # 정의
 
@@ -86,6 +47,25 @@ $$
 
 이고 차수와 노름, 합성과 곱이 대응한다.
 
+$\varphi:E\to E'$ 에 대응하는 좌이념은 다음이다.
+
+$$
+I_\varphi=\lbrace\alpha\in\mathcal O:\ \varphi\circ\alpha=0\ \text{on}\ \ker\varphi\rbrace
+=\mathrm{Hom}(E',E)\cdot\varphi
+$$
+
+거꾸로 좌이념 $I$ 에서 $\ker I=\bigcap_{\alpha\in I}\ker\alpha$ 를 커널로 갖는 동종사상이 정해지고, 두 구성이 서로 역이다. 대응하는 자료는 다음과 같다.
+
+| 곡선 쪽 | 사원수 쪽 |
+| --- | --- |
+| 초특이 곡선 $E$ | 극대차수 $\mathcal O\cong\mathrm{End}(E)$ |
+| 동종사상 $\varphi:E\to E'$ | 좌 $\mathcal O$ 이념 $I_\varphi$ |
+| $\deg\varphi$ | 노름 $\mathrm{N}(I_\varphi)$ |
+| 합성 $\psi\circ\varphi$ | 이념의 곱 |
+| 쌍대 $\hat\varphi$ | 켤레 이념 $\bar I$ |
+| $E\cong E'$ | 같은 좌이념 류 |
+| 동종사상 그래프 | 이념 류 그래프 |
+
 ## KLPT 문제
 
 > 좌 $\mathcal O$ 이념 $I$ 와 소수 $\ell$ 이 주어졌을 때, $J\sim I$ 이고 $\mathrm N(J)=\ell^e$ 인 $J$ 를 찾아라.
@@ -102,9 +82,11 @@ KLPT 의 핵심은 4 변수 정부호 이차형식 $x^2+y^2+p(z^2+w^2)$ 가 주�
 
 완전 탐색은 작은 $p$ 에서만 돌아간다. 실제 KLPT 는 Cornacchia 알고리즘으로 $x^2+y^2=r$ 을 풀고 $z,w$ 는 합동 조건을 만족하도록 격자에서 고른다.
 
-## 명시성의 한계
+## 계산 난이도의 비대칭
 
-Deuring 대응의 존재는 정리지만 $E$ 가 주어졌을 때 $\mathrm{End}(E)$ 를 적어 내는 일은 어렵고, $\mathcal O$ 에서 $E$ 를 복원하는 일도 일반적으로 어렵다. 다항 시간에 건널 수 있는 것은 한 곡선의 $\mathrm{End}$ 를 이미 알 때 그 이웃들로 가는 길뿐이며, 이 비대칭이 암호 설계의 근거다.
+Deuring 대응의 존재는 정리지만 $E$ 가 주어졌을 때 $\mathrm{End}(E)$ 를 적어 내는 일은 어렵다. 알려진 최선이 $\widetilde O(\sqrt p)$ 이고, $\mathcal O$ 를 손에 쥐고 있으면 곡선 사이의 경로를 다항 시간에 만들 수 있다. 다항 시간에 건널 수 있는 것은 한 곡선의 $\mathrm{End}$ 를 이미 알 때 그 이웃들로 가는 길뿐이며, $\mathcal O$ 에서 $E$ 를 복원하는 일도 일반적으로 어렵다.
+
+Wesolowski 는 자기준동형환 계산과 경로 찾기가 다항 시간 환원으로 서로 옮겨 감을 증명했다[^1]. 초특이 동종사상 암호의 안전성이 $\mathrm{End}(E)$ 계산의 어려움이라는 한 가정으로 모이고, 이 비대칭이 암호 설계의 근거다.
 
 # 활용
 
