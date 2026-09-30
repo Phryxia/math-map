@@ -16,47 +16,9 @@ $$
 
 # 직관
 
-## 보간을 결정하는 조건
+$n!$ 을 정수가 아닌 곳으로 이으려면 $f(n+1)=n!$ 인 $f$ 가 있어야 한다. $f(x+1)=xf(x)$ 와 $f(1)=1$ 을 요구하면 정수에서의 값은 정해지지만 그 사이는 정해지지 않는다. 주기 1 인 양함수 $p(x)=e^{\sin2\pi x}$ 를 곱한 $f\cdot p$ 도 $p(x+1)=p(x)$ 이므로 같은 두 조건을 만족하고, 정수에서 $p=1$ 이라 계승 값도 그대로다. 이런 $p$ 는 무한히 많다.
 
-$f(x+1)=xf(x)$ 와 $f(1)=1$ 만으로는 부족하다. 주기 1 인 양함수 $p$ 를 곱한 $f\cdot p$ 도 같은 조건을 만족한다. $\log f$ 의 볼록성을 더하면 답이 유일해진다.
-
-$$
-\log\Gamma\ \text{가 볼록}\ \Longleftrightarrow\ \frac{\Gamma'}{\Gamma}\ \text{가 증가}
-$$
-
-주기함수를 곱하면 로그볼록성이 깨지므로 그런 변형이 배제된다. 로그볼록성은 [볼록성](convexity.md)이 유일성 정리를 주는 예다.
-
-## Mellin 변환
-
-$\int_0^\infty t^{s-1}e^{-t}dt$ 는 $e^{-t}$ 의 Mellin 변환이다. Mellin 변환은 곱셈군 $(0,\infty)$ 위의 Fourier 변환이고, 스케일 변환의 지표 $t^{s}$ 로 함수를 분해한다. 스케일을 바꾸며 적분을 정리하는 계산에서 감마가 나온다.
-
-$$
-\int_0^{\infty}t^{s-1}e^{-\lambda t}dt=\frac{\Gamma(s)}{\lambda^{s}},
-\qquad
-\sum_{n\ge1}\frac{1}{n^{s}}\cdot\Gamma(s)=\int_0^{\infty}\frac{t^{s-1}}{e^{t}-1}dt
-$$
-
-오른쪽 식이 $\zeta(s)$ 를 적분으로 바꾸는 표준 수법이고, 감마가 $\zeta$ 의 무한 자리 인자로 불리는 근거다. 이 관점의 일반화가 [Tate 논문](tate-thesis.md)이다.
-
-## 극점의 출처
-
-$t\to0$ 에서 $e^{-t}=1-t+\tfrac{t^2}2-\cdots$ 이므로
-
-$$
-\int_0^{1}t^{s-1}e^{-t}dt=\sum_{n\ge0}\frac{(-1)^{n}}{n!}\cdot\frac1{s+n}
-$$
-
-가 되어 극점이 $s=0,-1,-2,\dots$ 에 하나씩 유수 $(-1)^n/n!$ 로 나타난다. 적분의 수렴을 막는 것은 $t=0$ 쪽이고 $e^{-t}$ 의 Taylor 계수가 유수가 된다. 감마는 영점이 없고 극점만 있으므로 $1/\Gamma$ 가 정함수다.
-
-## 반사공식
-
-$1/\Gamma(s)$ 는 $s=0,-1,-2,\dots$ 에서, $1/\Gamma(1-s)$ 는 $s=1,2,3,\dots$ 에서 영점을 갖는다. 둘의 곱은 모든 정수에서 단순영점을 갖는 정함수이고 증가 차수까지 맞추면 $\sin\pi s$ 와 같다.
-
-$$
-\Gamma(s)\Gamma(1-s)=\frac{\pi}{\sin\pi s}
-$$
-
-$s=\tfrac12$ 에서 $\Gamma(\tfrac12)=\sqrt\pi$ 이고 이것이 Gauss 적분이다. 정함수를 영점으로 판별하는 논법은 Hadamard 인수분해의 형태다.
+정수 사이의 모양을 묶는 조건이 하나 더 있어야 한다. $\log f$ 가 볼록하다고 하면 $\log(f\cdot p)=\log f+\sin2\pi x$ 의 2 계 도함수가 $(\log f)''-4\pi^2\sin2\pi x$ 이고, $(\log\Gamma)''=\sum_{n\ge0}(x+n)^{-2}$ 는 큰 $x$ 에서 $0$ 으로 가므로 진폭 $4\pi^2$ 인 항이 이겨 볼록성이 깨진다. 세 조건을 만족하는 함수는 하나뿐이고 그것이 $\int_0^{\infty}t^{x-1}e^{-t}dt$ 다. [볼록성](convexity.md)이 유일성을 주는 예다.
 
 # 정의
 
@@ -98,7 +60,15 @@ $$
 \mathop{\mathrm{Res}}\_{s=-n}\Gamma(s)=\frac{(-1)^{n}}{n!}
 $$
 
-영점이 없으므로 $\Gamma$ 로 나누는 조작이 언제나 허용되고, 함수방정식에서 감마 인자를 옮겨 붙이는 계산에 제약이 없다.
+*증명의 착상.* $t\to0$ 에서 $e^{-t}=1-t+\tfrac{t^2}2-\cdots$ 를 넣어 항별로 적분하면
+
+$$
+\int_0^{1}t^{s-1}e^{-t}dt=\sum_{n\ge0}\frac{(-1)^{n}}{n!}\cdot\frac1{s+n}
+$$
+
+이고 나머지 구간 $\int_1^\infty$ 는 정함수다. 적분의 수렴을 막는 것은 $t=0$ 쪽이고 $e^{-t}$ 의 Taylor 계수가 그대로 유수가 된다. $\square$
+
+영점이 없으므로 $\Gamma$ 로 나누는 조작이 언제나 허용되고, 함수방정식에서 감마 인자를 옮겨 붙이는 계산에 제약이 없다. $1/\Gamma$ 는 정함수다.
 
 ## Bohr–Mollerup 정리
 
@@ -120,7 +90,9 @@ $$
 \prod_{k=0}^{n-1}\Gamma\negthinspace\left(s+\frac kn\right)=(2\pi)^{(n-1)/2}\thinspace n^{1/2-ns}\thinspace\Gamma(ns)
 $$
 
-세 번째가 Gauss 승법공식이고 두 번째 Legendre 배가공식이 $n=2$ 인 경우다. 승법공식은 $\Gamma$ 가 곱셈군의 $n$ 배 사상과 정합한다는 진술이고, 지표합에서 [Gauss 합](gauss-sums.md)이 만족하는 Hasse–Davenport 관계가 같은 형태다.
+*반사공식의 증명의 착상.* $1/\Gamma(s)$ 는 $s=0,-1,-2,\dots$ 에서, $1/\Gamma(1-s)$ 는 $s=1,2,3,\dots$ 에서 단순영점을 갖는다. 둘의 곱은 모든 정수에서 단순영점을 갖는 정함수이고, 증가 차수까지 맞추는 Hadamard 인수분해로 $\sin\pi s/\pi$ 와 같다. $\square$
+
+$s=\tfrac12$ 을 넣으면 $\Gamma(\tfrac12)=\sqrt\pi$ 이고 이것이 Gauss 적분이다. 세 번째가 Gauss 승법공식이고 두 번째 Legendre 배가공식이 $n=2$ 인 경우다. 승법공식은 $\Gamma$ 가 곱셈군의 $n$ 배 사상과 정합한다는 진술이고, 지표합에서 [Gauss 합](gauss-sums.md)이 만족하는 Hasse–Davenport 관계가 같은 형태다.
 
 ## Stirling 급수
 
@@ -147,6 +119,16 @@ $$
 \quad\Longrightarrow\quad
 \xi(s)=\xi(1-s)
 $$
+
+적분 정의 $\int_0^\infty t^{s-1}e^{-t}dt$ 는 $e^{-t}$ 의 Mellin 변환이다. Mellin 변환은 곱셈군 $(0,\infty)$ 위의 Fourier 변환이고 스케일 변환의 지표 $t^{s}$ 로 함수를 분해하므로, 스케일을 바꾸며 적분을 정리하는 계산마다 감마가 나온다.
+
+$$
+\int_0^{\infty}t^{s-1}e^{-\lambda t}dt=\frac{\Gamma(s)}{\lambda^{s}},
+\qquad
+\zeta(s)\thinspace\Gamma(s)=\int_0^{\infty}\frac{t^{s-1}}{e^{t}-1}dt
+$$
+
+오른쪽 식이 $\zeta(s)$ 를 적분으로 바꾸는 표준 수법이고, 이 관점의 일반화가 [Tate 논문](tate-thesis.md)이다.
 
 [Riemann zeta](riemann-zeta.md) 의 함수방정식은 감마 인자를 붙여야 대칭이 된다. 소수마다 Euler 인자 $(1-p^{-s})^{-1}$ 가 있듯 무한 자리의 인자가 감마다. $\zeta$ 의 자명한 영점 $s=-2,-4,\dots$ 는 $\Gamma(s/2)$ 의 극점을 상쇄하느라 생긴 것이고 $\zeta$ 자신의 성질이 아니다. [모듈러 형식](modular-forms.md)과 [Dirichlet $L$ 함수](dirichlet-l-functions.md)의 완비화에도 무게에 맞춘 감마 인자가 같은 자리에 붙는다.
 
