@@ -20,53 +20,9 @@ $$
 
 # 직관
 
-## 1-매개변수 부분군
+$\mathfrak g=T_eG$ 는 $G$ 를 항등원에서 선형화한 것이고 $\exp$ 가 대수에서 군으로 돌아가므로, 대수가 군을 전부 결정하는지 물을 수 있다. $\mathrm{SU}(2)$ 와 $\mathrm{SO}(3)$ 에서 확인해 보면 둘 다 3 차원이고 $\mathfrak{su}(2)\cong\mathfrak{so}(3)$ 인데, $\mathrm{SU}(2)$ 는 $S^3$ 이고 $\mathrm{SO}(3)$ 은 $\mathbb{RP}^3$ 이라 군으로는 다르다.
 
-$X\in\mathfrak g$ 를 왼쪽불변 벡터장으로 보면 $G$ 위의 흐름이 생기고, 항등원에서 출발해 그 흐름을 시간 $t$ 만큼 따라간 점이 $\exp(tX)$ 다. 정의하는 성질은 다음이다.
-
-$$
-\gamma(0)=e,\quad \gamma'(t)=\gamma(t)X,\quad \gamma(s+t)=\gamma(s)\gamma(t)
-$$
-
-$t\mapsto\exp(tX)$ 는 이 조건을 만족하는 유일한 **1-매개변수 부분군**이다. 행렬군에서는 급수가 그대로 이 미분방정식의 해다.
-
-$\exp$ 의 $0$ 에서의 미분이 항등사상이므로 역함수 정리로 $0$ 의 어떤 근방에서 미분동형이고, 그 근방에서 **BCH**(Baker–Campbell–Hausdorff) 공식이 곱셈을 괄호로 복원한다.
-
-## 같은 대수를 갖는 다른 군
-
-$\mathrm{SU}(2)$ 와 $\mathrm{SO}(3)$ 은 둘 다 3 차원이고 Lie 대수가 같다.
-
-$$
-\mathfrak{su}(2)\cong\mathfrak{so}(3)
-$$
-
-군으로는 다르다. $\mathrm{SU}(2)$ 는 $S^3$ 이라 단순연결이고 $\mathrm{SO}(3)$ 은 $\mathbb{RP}^3$ 이라 $\pi_1=\mathbb Z/2$ 다. 둘을 잇는 것이 이중덮개다.
-
-$$
-1\to\lbrace\pm I\rbrace\to\mathrm{SU}(2)\to\mathrm{SO}(3)\to1
-$$
-
-물리에서 이 부호가 스핀 $1/2$ 이다. $\theta=2\pi$ 의 회전은 $\mathrm{SO}(3)$ 에서 항등이지만 $\mathrm{SU}(2)$ 에서는 $-I$ 이므로 전자의 파동함수는 부호가 뒤집히고, 두 바퀴를 돌아야 제자리로 온다.
-
-일반적으로 연결 Lie 군 $G$ 의 보편덮개 $\tilde G$ 도 Lie 군이고 같은 Lie 대수를 가지며
-
-$$
-G\cong\tilde G/\Gamma,\qquad \Gamma\subset Z(\tilde G)\ \text{이산}
-$$
-
-이다. Lie 대수가 결정하는 것은 $\tilde G$ 이고, 나머지 자유도는 중심의 이산 부분군을 고르는 것뿐이다. 덮개공간 이론에서 $\pi_1(\tilde G/\Gamma)\cong\Gamma$ 이므로 이 자유도가 기본군으로 읽힌다.
-
-## 지수사상의 상
-
-$\mathrm{SL}\_2(\mathbb R)$ 에서 $X$ 는 대각합이 0 이므로 고윳값이 $\pm\lambda$ 다. $\lambda$ 가 실수면 $\exp X$ 의 대각합이 $2\cosh\lambda\ge2$ 이고, $\lambda=i\mu$ 가 순허수면 $2\cos\mu\in[-2,2]$ 이며, $X$ 가 멱영이면 $2$ 다. 어느 경우든 다음이 성립한다.
-
-$$
-\mathrm{tr}(\exp X)\ge-2
-$$
-
-$\mathrm{diag}(-2,-\tfrac12)$ 는 $\mathrm{SL}\_2(\mathbb R)$ 의 원소이지만 대각합이 $-\tfrac52\lt -2$ 라 $\exp$ 의 상 밖에 있다. $\exp$ 의 상이 항등원의 근방을 포함하므로 유한 번 곱하면 모든 원소에 닿는다.
-
-콤팩트 연결 Lie 군에는 양불변 Riemann 계량이 존재하고 지수사상이 측지선의 지수사상과 일치하므로, Hopf–Rinow 정리로 $\exp$ 가 전사다.
+두 군의 차이는 $S^3\to\mathbb{RP}^3$ 이 이중덮개라는 것뿐이다. $\mathrm{SU}(2)$ 의 $U$ 와 $-U$ 가 $\mathrm{SO}(3)$ 의 같은 회전으로 가고, $\theta=2\pi$ 의 회전은 $\mathrm{SO}(3)$ 에서 항등이지만 $\mathrm{SU}(2)$ 에서는 $-I$ 다. 같은 Lie 대수를 갖는 연결 군들이 하나의 덮개를 공유하므로, 대수가 정하지 못하고 남기는 것은 덮개공간의 자유도다.
 
 # 정의
 
@@ -83,6 +39,8 @@ $X\in\mathfrak g$ 에 대해 $\gamma_X(0)=e$ , $\gamma_X'(t)=(dL_{\gamma_X(t)})\
 $$
 \exp(X)=\gamma_X(1)
 $$
+
+$\gamma_X$ 는 $\gamma_X(s+t)=\gamma_X(s)\gamma_X(t)$ 를 만족하는 유일한 준동형 $\mathbb R\to G$ 이고, $t\mapsto\exp(tX)$ 를 $X$ 의 **1-매개변수 부분군**이라 한다. $X$ 를 왼쪽불변 벡터장으로 볼 때 항등원에서 출발해 그 흐름을 시간 $t$ 만큼 따라간 점이 $\exp(tX)$ 다.
 
 $G\subset\mathrm{GL}\_n$ 이면 행렬 지수함수와 같다.
 
@@ -110,11 +68,35 @@ $$
 
 둘째 항목에서 단순연결 Lie 군의 범주와 유한차원 실 Lie 대수의 범주가 $\mathrm{Lie}$ 함자로 동치임이 따른다.
 
+연결 Lie 군 $G$ 의 보편덮개 $\tilde G$ 도 Lie 군이고 같은 Lie 대수를 가지며, 덮개공간 이론이 $G\cong\tilde G/\Gamma$ 와 $\pi_1(G)\cong\Gamma$ 를 준다. 여기서 $\Gamma$ 는 $Z(\tilde G)$ 의 이산 부분군이다. Lie 대수가 결정하는 것은 $\tilde G$ 이고, 남는 자유도는 중심의 이산 부분군을 고르는 것뿐이다.
+
+## BCH 공식
+
+$\exp$ 의 $0$ 에서의 미분이 항등사상이므로 역함수 정리로 $0$ 의 어떤 근방에서 $\exp$ 가 미분동형이다. 그 근방에서 **BCH**(Baker–Campbell–Hausdorff) 공식이 군의 곱셈을 괄호로 복원한다.
+
+$$
+\exp X\thinspace\exp Y=\exp\Big(X+Y+\tfrac12\lbrack X,Y\rbrack+\tfrac1{12}\lbrack X,\lbrack X,Y\rbrack\rbrack-\tfrac1{12}\lbrack Y,\lbrack X,Y\rbrack\rbrack+\cdots\Big)
+$$
+
+우변의 모든 항이 반복 괄호이므로 항등원 근방의 곱셈은 Lie 대수만으로 결정된다. 대응 정리의 단순연결 역방향에서 국소적으로 정의된 준동형을 전역으로 확장하는 데 이 사실을 쓴다.
+
+## 지수사상의 상
+
+> **정리.** $\mathrm{SL}\_2(\mathbb R)$ 에서 $\exp$ 는 전사가 아니다. 콤팩트 연결 Lie 군에서는 전사다.
+
+$X\in\mathfrak{sl}\_2(\mathbb R)$ 는 대각합이 0 이므로 고윳값이 $\pm\lambda$ 다. $\lambda$ 가 실수면 $\exp X$ 의 대각합이 $2\cosh\lambda\ge2$ 이고, $\lambda=i\mu$ 가 순허수면 $2\cos\mu\in\lbrack-2,2\rbrack$ 이며, $X$ 가 멱영이면 $2$ 다. 어느 경우든 $\mathrm{tr}(\exp X)\ge-2$ 이므로 대각합이 $-\tfrac52$ 인 $\mathrm{diag}(-2,-\tfrac12)$ 는 상 밖에 있다.
+
+콤팩트 연결 Lie 군에는 양불변 Riemann 계량이 존재하고 지수사상이 측지선의 지수사상과 일치하므로, Hopf–Rinow 정리로 $\exp$ 가 전사다. 전사가 아닌 군에서도 $\exp$ 의 상이 항등원의 근방을 포함하므로 연결군이면 유한 번 곱해 모든 원소에 닿는다.
+
 ## 이중덮개 $\mathrm{SU}(2)\to\mathrm{SO}(3)$ 의 계산
 
-Pauli 행렬로 $\mathfrak{su}(2)$ 의 원소를 지수화하고 딸림표현을 회전행렬로 읽는다.
+$\mathrm{SU}(2)$ 는 $S^3$ 이라 단순연결이고 $\mathrm{SO}(3)$ 은 $\mathbb{RP}^3$ 이라 $\pi_1=\mathbb Z/2$ 다. 둘을 잇는 것이 다음 완전열이다.
 
-$\theta=2\pi$ 에서 $U=-I$ 이지만 대응하는 회전은 항등이고, $U$ 와 $-U$ 는 언제나 같은 회전을 준다. $\mathrm{SU}(2)$ 에서는 $\theta$ 가 $4\pi$ 까지 가야 닫힌 고리가 되고 $\mathrm{SO}(3)$ 에서는 $2\pi$ 면 닫힌다. 그 차이가 $\pi_1(\mathrm{SO}(3))=\mathbb Z/2$ 다.
+$$
+1\to\lbrace\pm I\rbrace\to\mathrm{SU}(2)\to\mathrm{SO}(3)\to1
+$$
+
+Pauli 행렬로 $\mathfrak{su}(2)$ 의 원소를 지수화하고 딸림표현을 회전행렬로 읽으면 이 사상이 명시적으로 나온다. $\theta=2\pi$ 에서 $U=-I$ 이지만 대응하는 회전은 항등이고, $U$ 와 $-U$ 는 언제나 같은 회전을 준다. $\mathrm{SU}(2)$ 에서는 $\theta$ 가 $4\pi$ 까지 가야 닫힌 고리가 되고 $\mathrm{SO}(3)$ 에서는 $2\pi$ 면 닫힌다. 그 차이가 $\pi_1(\mathrm{SO}(3))=\mathbb Z/2$ 다.
 
 ## 콤팩트 군
 
