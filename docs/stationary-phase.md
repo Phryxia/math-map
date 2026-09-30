@@ -22,48 +22,9 @@ Laplace 방법과 형태는 같되 셋이 다르다.
 
 # 직관
 
-## 상쇄가 주는 감소
+$I(\lambda)=\int g\thinspace e^{i\lambda\varphi}dx$ 에서 피적분함수의 크기는 $\lambda$ 가 커져도 $|g|$ 그대로다. 적분이 줄어드는 것은 위상이 빨리 돌면서 인접한 기여가 서로 지워지기 때문이다. $\varphi'\ne0$ 인 곳에서는 $e^{i\lambda\varphi}=\frac1{i\lambda\varphi'}\frac{d}{dx}e^{i\lambda\varphi}$ 로 쓰고 부분적분할 때마다 $1/\lambda$ 이 떨어지므로 그 구간의 기여가 모든 차수보다 빨리 작아진다.
 
-$\varphi'\ne0$ 이면 $e^{i\lambda\varphi}$ 를 미분의 형태로 쓴다.
-
-$$
-e^{i\lambda\varphi}=\frac1{i\lambda\varphi'}\frac{d}{dx}e^{i\lambda\varphi}
-$$
-
-부분적분하면 $1/\lambda$ 이 하나 떨어지고, $g$ 와 $\varphi$ 가 매끄럽고 $g$ 가 구간 끝에서 사라지면 경계항이 없어 이 과정을 무한히 반복한다.
-
-$$
-I(\lambda)=O(\lambda^{-N})\qquad\text{모든 }N
-$$
-
-크기를 누르는 것은 감쇠가 아니라 반복되는 상쇄다. 이것이 Riemann–Lebesgue 보조정리의 정량적 판본이고, $g$ 가 해석적이면 감소가 지수적이다.
-
-정상점에서는 $1/\varphi'$ 이 폭발해 이 논법이 깨지고, 부분적분이 실패하는 자리에서 답이 나온다.
-
-## 정상점 주위의 폭
-
-정상점 주위에서 $\varphi(x)\approx\varphi(x_0)+\tfrac12\varphi''(x_0)(x-x_0)^2$ 이다. 위상이 $1$ 라디안 넘게 변하기 전까지가 상쇄 없이 더해지는 구간이므로
-
-$$
-\lambda|\varphi''|(x-x_0)^2\lesssim1
-\quad\Longrightarrow\quad
-|x-x_0|\lesssim\frac1{\sqrt{\lambda|\varphi''|}}
-$$
-
-이고, 폭이 $\lambda^{-1/2}$ 이며 그 안에서 크기가 $|g(x_0)|$ 이므로 기여가 $\lambda^{-1/2}$ 이다. Laplace 방법과 같은 계산이고, 정당화하는 이유만 감쇠에서 상쇄로 바뀐다.
-
-## 위상 인자
-
-남는 적분은 Fresnel 적분이다.
-
-$$
-\int_{-\infty}^{\infty}e^{i\lambda\varphi''(x-x_0)^2/2}dx
-=\sqrt{\frac{2\pi}{\lambda|\varphi''|}}\thickspace e^{i\pi\mathrm{sgn}(\varphi'')/4}
-$$
-
-추가된 $e^{\pm i\pi/4}$ 는 $\int e^{-ax^2}dx=\sqrt{\pi/a}$ 를 $a=-i\lambda\varphi''/2$ 라는 순허수까지 해석적으로 연장할 때 제곱근이 택하는 가지에서 나온다. $a$ 가 양의 실수에서 허축으로 회전하면 $\sqrt{1/a}$ 의 편각이 $\mp\pi/4$ 만큼 돈다.
-
-한 점에서 $\varphi''\gt 0$ 이고 다른 점에서 $\varphi''\lt 0$ 이면 두 기여의 위상이 $\pi/2$ 만큼 어긋나고, 전체 답의 진동 패턴이 그 차이로 정해진다.
+$\varphi'(x_0)=0$ 인 점에서는 $1/\varphi'$ 이 폭발해 이 논법이 깨진다. 그 주위에서 $\varphi(x)\approx\varphi(x_0)+\tfrac12\varphi''(x_0)(x-x_0)^2$ 이고 위상이 $1$ 라디안 넘게 돌기 전까지가 상쇄 없이 더해지는 구간이므로 $\lambda|\varphi''|(x-x_0)^2\lesssim1$ , 곧 폭이 $\lambda^{-1/2}$ 이다. 그 안에서 크기가 $|g(x_0)|$ 이므로 기여가 $\lambda^{-1/2}$ 이고 이것이 $I(\lambda)$ 의 주항이다.
 
 # 정의
 
@@ -80,6 +41,8 @@ $$
 > 정상점이 여럿이면 각각의 기여를 더한다.
 
 $\varphi''(x_0)\ne0$ 이 **비퇴화** 조건이다. Morse 이론의 비퇴화 임계점과 같은 조건이며, 이것이 있어야 2 차 항만으로 근사가 끝난다.
+
+*증명의 요지.* 1 은 $e^{i\lambda\varphi}=\frac1{i\lambda\varphi'}\frac{d}{dx}e^{i\lambda\varphi}$ 로 쓰고 부분적분하는 것을 되풀이한다. $g$ 가 옹골 받침을 가지므로 경계항이 없고 매번 $1/\lambda$ 이 떨어진다. Riemann–Lebesgue 보조정리의 정량적 판본이며 $g$ 가 해석적이면 감소가 지수적이다. 2 는 정상점 주위를 잘라 내고 $\varphi$ 를 2 차까지 전개한 뒤 Fresnel 적분을 쓴다.
 
 ## 고차원
 
@@ -103,6 +66,17 @@ $$
 $t\lt 0$ 이면 정상점이 둘이라 진동하고 $t\gt 0$ 이면 실수 정상점이 없어 지수적으로 작아진다. 경계 $t=0$ 에서 두 정상점이 충돌해 퇴화한다. 무지개의 밝은 띠, 파동의 초곡선(caustic), WKB 근사가 전향점에서 깨지는 현상이 이 그림이다.
 
 # 성질
+
+## 위상 인자
+
+2 차까지 전개한 뒤 남는 적분이 Fresnel 적분이다.
+
+$$
+\int_{-\infty}^{\infty}e^{i\lambda\varphi''(x-x_0)^2/2}dx
+=\sqrt{\frac{2\pi}{\lambda|\varphi''|}}\thickspace e^{i\pi\mathrm{sgn}(\varphi'')/4}
+$$
+
+$e^{\pm i\pi/4}$ 는 $\int e^{-ax^2}dx=\sqrt{\pi/a}$ 를 $a=-i\lambda\varphi''/2$ 라는 순허수까지 해석적으로 연장할 때 제곱근이 택하는 가지에서 나온다. $a$ 가 양의 실수에서 허축으로 회전하면 $\sqrt{1/a}$ 의 편각이 $\mp\pi/4$ 만큼 돈다.
 
 ## Laplace 방법과의 대조
 
