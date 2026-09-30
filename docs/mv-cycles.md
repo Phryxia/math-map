@@ -22,39 +22,15 @@ $$
 
 # 직관
 
-## 반무한 궤도와 무게 분해
-
-$\mathrm{Gr}\_G$ 위에서 $G(\mathcal O)$ 궤도는 지배적 여무게 $\lambda$ 로 매겨지고, 그 궤도의 닫힘 위의 교차 코호몰로지 층 $\mathcal{IC}\_\lambda$ 가 기약표현 $V_\lambda$ 에 대응한다. 여기까지가 기하학적 Satake 다.
-
-무게 분해를 얻으려면 표현을 쌍대 토러스 $\widehat T$ 로 제한해야 하고, 층 쪽에서 그것에 해당하는 조작이 다른 부분군의 궤도로 자르는 것이다. $N$ 을 멱단 부분군이라 할 때 그 궤도 $S_\mu=N(F)\cdot t^\mu$ 를 **반무한 낟가리**(semi-infinite cell)라 한다. 이름 그대로 무한차원이면서 여차원도 무한이다.
-
-$$
-V_\lambda(\mu)\ \cong\ H^{\bullet}\_c\bigl(S_\mu\cap\overline{\mathrm{Gr}^\lambda},\ \mathcal{IC}\_\lambda\bigr)
-$$
-
-핵심은 이 교차가 **순수 차원**이라는 것이다. 차원이 고르므로 최고차원 기약성분들이 코호몰로지의 기저를 곧바로 준다. 그 성분들의 닫힘이 **MV 순환**이다.
-
-## Kostant 공식과의 대비
-
-Kostant 중복도 공식은 이렇다.
+무게 중복도 $\dim V_\lambda(\mu)$ 를 Kostant 중복도 공식으로 센다.
 
 $$
 m_\lambda(\mu)=\sum_{w\in W}(-1)^{\ell(w)}\thinspace\mathcal P\bigl(w(\lambda+\rho)-(\mu+\rho)\bigr)
 $$
 
-$\mathcal P$ 는 Kostant 분할 함수다. Weyl 군의 크기만큼 항이 있고 부호가 엇갈린다. $A_2$ 면 항이 여섯 개이고, 큰 군에서는 항 수가 폭발하면서 각 항이 답보다 훨씬 커진다. 답이 3 인데 항들이 수백 단위로 오가며 상쇄되는 일이 예사다.
+$\mathcal P$ 는 Kostant 분할 함수로, 주어진 무게를 양근의 비음정수 합으로 쓰는 방법의 수다. 항의 개수가 $|W|$ 이고 부호가 엇갈린다. $A_2$ 에서 여섯 항이고 $A_n$ 에서 $(n+1)!$ 항이다. $w=1$ 항 $\mathcal P(\lambda-\mu)$ 하나만으로도 답보다 크고, 나머지 항들이 그 초과분을 뺀다. 값이 음이 아니라는 것은 이 공식에서 읽히지 않는다.
 
-상쇄가 일어나면 세는 대상이 잘못된 것이다. 올바른 대상을 세면 상쇄가 없어야 한다. MV 순환은 그 올바른 대상이고, 기하가 그것이 실제로 존재함을 보증한다. 조합론 쪽의 대각표나 Littelmann 경로도 같은 수를 세지만, 그것들은 손으로 만든 규칙이라 왜 맞는지가 따로 증명되어야 한다. MV 순환은 정의부터 표현론적이다.
-
-## 모멘트 사상의 상
-
-MV 순환 하나에 모멘트 사상을 씌우면 다면체가 나온다. Anderson 과 Kamnitzer 가 보인 것은 그 다면체가 순환을 완전히 결정한다는 것이다.
-
-$$
-\lbrace\text{MV 순환}\rbrace\ \longleftrightarrow\ \lbrace\text{MV 다면체}\rbrace
-$$
-
-MV 다면체는 꼭짓점이 $W\lambda$ 의 부분집합이고 면의 위치가 부등식 자료(Berenstein–Zelevinsky 자료)로 주어지는 볼록다면체다. 곧 무한차원 다양체의 기하가 **유한한 볼록기하**로 압축된다. 계산이 가능해지는 지점이고, 결정 기저의 조합론과 맞물리는 지점이기도 하다.
+교대합에 상쇄가 있으면 세는 대상이 답보다 큰 것이다. 답과 크기가 같은 집합을 세면 상쇄가 없다. MV 순환이 그 집합이고, 기하가 그 존재를 보증한다. 대각표나 Littelmann 경로도 같은 수를 세지만 손으로 만든 규칙이라 왜 맞는지를 따로 증명해야 한다. MV 순환의 정의에는 표현론이 들어 있다.
 
 # 정의
 
@@ -73,6 +49,12 @@ $$
 
 ## MV 순환
 
+무게 공간은 반무한 낟가리로 자른 교차의 콤팩트 받침 코호몰로지다.
+
+$$
+V_\lambda(\mu)\ \cong\ H^{\bullet}\_c\bigl(S_\mu\cap\overline{\mathrm{Gr}^\lambda},\ \mathcal{IC}\_\lambda\bigr)
+$$
+
 > **정리 (Mirković–Vilonen).** $\lambda$ 가 지배적이고 $\mu\le\lambda$ 이면
 > $$
 > \dim\bigl(S_\mu\cap\overline{\mathrm{Gr}^\lambda}\bigr)=\langle\rho,\lambda+\mu\rangle
@@ -88,7 +70,7 @@ $$
 
 ## MV 다면체
 
-$T$ 작용의 모멘트 사상 $\Phi:\mathrm{Gr}\_G\to X_\ast(T)\otimes\mathbb R$ 를 MV 순환 $Z$ 에 제한해 상의 볼록포를 취한 것이 **MV 다면체** $\mathrm{Pol}(Z)$ 다. 대응 $Z\mapsto\mathrm{Pol}(Z)$ 는 단사이고, 상이 Berenstein–Zelevinsky 부등식으로 기술된다.
+$T$ 작용의 모멘트 사상 $\Phi:\mathrm{Gr}\_G\to X_\ast(T)\otimes\mathbb R$ 를 MV 순환 $Z$ 에 제한해 상의 볼록포를 취한 것이 **MV 다면체** $\mathrm{Pol}(Z)$ 다. 대응 $Z\mapsto\mathrm{Pol}(Z)$ 는 단사이고, 상이 Berenstein–Zelevinsky 부등식으로 기술된다. 꼭짓점은 $W\lambda$ 의 부분집합이므로 무한차원 다양체의 순환이 유한한 볼록기하로 결정된다.
 
 # 성질
 
