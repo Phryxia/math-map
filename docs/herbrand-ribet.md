@@ -24,56 +24,9 @@ Mazur–Wiles 의 [Iwasawa 주추측](iwasawa-main-conjecture.md) 증명이 이 
 
 # 직관
 
-## 상한과 하한
+$\theta$ 가 류군을 죽인다는 것은 류군이 $\theta$ 의 핵 안에 있다는 상한이다. $\theta$ 의 성분이 $0$ 이 되면 상한이 무의미해질 뿐이고 군이 커졌다는 증거는 아니다. 군이 크다는 것은 원소를 손에 쥐어야 보이며, 류군의 원소는 불분기 아벨 확대에 대응하므로 $\mathbb Q(\mu_p)$ 위의 불분기 확대를 하나 만들어야 한다.
 
-$\theta$ 가 류군을 죽인다는 것은 류군이 $\theta$ 의 핵 안에 있다는 상한이다. $\theta$ 의 성분이 0 이 되면 상한이 무의미해질 뿐 군이 커졌다는 증거는 아니다.
-
-군이 크다는 것은 원소를 손에 쥐어야 보인다. 류군의 원소는 불분기 아벨 확대에 대응하므로 $\mathbb Q(\mu_p)$ 위의 불분기 확대를 하나 만들어야 하고, 모듈러 형식이 그 공급처다.
-
-## Eisenstein 급수의 상수항
-
-무게 $k$ 의 Eisenstein 급수를 정규화하면
-
-$$
-E_k=-\frac{B_k}{2k}+\sum_{n\ge1}\sigma_{k-1}(n)\thinspace q^{n}
-$$
-
-이다. $p\mid B_k$ 이면 상수항이 $p$ 를 법으로 0 이므로 $E_k\bmod p$ 는 $q$ 로 시작하는 급수다. 무게 $k$ 의 [모듈러 형식](modular-forms.md) 공간에서 Eisenstein 부분과 첨점 부분은 $\mathbb Q$ 위에서 갈라지지만, $\mathbb Z_p$ 위에서는 $B_k$ 가 분모에 들어 있어 갈라지지 않는다.
-
-따라서 어떤 고유첨점형식 $f=\sum a_nq^{n}$ 과 소 [아이디얼](ideals-quotient-rings.md) $\mathfrak p\mid p$ 가 있어
-
-$$
-a_\ell\equiv1+\ell^{k-1}\pmod{\mathfrak p}\qquad(\ell\ne p\ \text{소수})
-$$
-
-가 성립한다. 우변은 $E_k$ 의 Hecke 고윳값이고, 이 합동이 **Eisenstein 합동**이다.
-
-## 가약 표현과 코사이클
-
-$f$ 에 붙는 2 차원 $p$ 진 Galois 표현 $\rho_f$ 는
-
-$$
-\mathrm{tr}\thinspace\rho_f(\mathrm{Fr}\_\ell)=a_\ell,\qquad \det\rho_f(\mathrm{Fr}\_\ell)=\ell^{k-1}
-$$
-
-를 만족한다. $\bmod\mathfrak p$ 로 줄이면 대각합이 $1+\ell^{k-1}$ 이고 [행렬식](determinants.md)이 $\ell^{k-1}$ 이므로 Brauer–Nesbitt 로 반단순화가 $1\oplus\omega^{k-1}$ 이고 $\bar\rho_f$ 는 가약이다.
-
-$\bar\rho_f$ 가 분해되면 $f$ 가 Eisenstein 급수여야 하는데 $f$ 는 첨점형식이다. 그러므로 적당한 기저에서
-
-$$
-\bar\rho_f=\begin{pmatrix}1&\ast\cr 0&\omega^{k-1}\end{pmatrix},\qquad \ast\ne0
-$$
-
-이고, $\ast$ 가 비자명한 코사이클 $c\in H^1\big(G_{\mathbb Q},\mathbb F_p(\omega^{k-1})\big)$ 를 정의한다.
-
-## 불분기성
-
-$c$ 가 정의하는 확대가 $p$ 밖에서 불분기여야 류군의 원소가 된다.
-
-- $\ell\ne p$ 에서는 $f$ 가 레벨 1 이라 $\rho_f$ 가 비분기이고, $c$ 도 비분기다.
-- $\ell=p$ 에서 $\rho_f$ 는 결정군에 대해 $\begin{pmatrix}\omega^{k-1}&\ast\cr 0&1\end{pmatrix}$ 꼴로 보통(ordinary)이며, 위첨자와 아래첨자의 순서가 대역 쪽과 뒤바뀐다. 두 삼각화를 비교하면 $c$ 의 $p$ 자리 제한이 소멸한다.
-
-따라서 $c$ 는 $\mathbb Q(\mu_p)$ 의 $p$ 밖 불분기 확대를 주고, Galois 작용의 고유성분을 추적하면 그 확대의 류가 $A^{(\omega^{1-k})}$ 에 놓인다.
+확대의 공급처가 [모듈러 형식](modular-forms.md)이다. 무게 $k$ 의 Eisenstein 급수를 정규화하면 상수항이 $-B_k/2k$ 이므로 $p\mid B_k$ 일 때 $E_k\bmod p$ 는 $q$ 로 시작하는 급수다. 무게 $k$ 의 형식 공간에서 Eisenstein 부분과 첨점 부분은 $\mathbb Q$ 위에서 갈라지지만 $\mathbb Z_p$ 위에서는 $B_k$ 가 분모에 들어 갈라지지 않으므로, $E_k$ 의 Hecke 고윳값과 합동인 고유첨점형식 $f$ 가 있다. 그 $f$ 에 붙는 Galois 표현이 불분기 확대를 낸다.
 
 # 정의
 
@@ -124,6 +77,24 @@ $$
 $\Leftarrow$ 가 Herbrand(1932), $\Rightarrow$ 가 Ribet(1976)이다.
 
 # 성질
+
+## Ribet 의 구성
+
+**증명의 요지.** $f$ 에 붙는 2 차원 $p$ 진 Galois 표현 $\rho_f$ 는
+
+$$
+\mathrm{tr}\thinspace\rho_f(\mathrm{Fr}\_\ell)=a_\ell,\qquad \det\rho_f(\mathrm{Fr}\_\ell)=\ell^{k-1}
+$$
+
+를 만족한다. $\bmod\mathfrak p$ 로 줄이면 대각합이 $1+\ell^{k-1}$ 이고 [행렬식](determinants.md)이 $\ell^{k-1}$ 이므로 Brauer–Nesbitt 로 반단순화가 $1\oplus\omega^{k-1}$ 이고 $\bar\rho_f$ 는 가약이다. 분해되면 $f$ 가 Eisenstein 급수여야 하는데 $f$ 는 첨점형식이므로 불분해이고, 적당한 기저에서
+
+$$
+\bar\rho_f=\begin{pmatrix}1&\ast\cr 0&\omega^{k-1}\end{pmatrix},\qquad \ast\ne0
+$$
+
+이다. $\ast$ 가 비자명한 코사이클 $c\in H^1\big(G_{\mathbb Q},\mathbb F_p(\omega^{k-1})\big)$ 를 정의한다. $\square$
+
+$c$ 가 정의하는 확대가 $p$ 밖에서 불분기여야 류군의 원소가 된다. $\ell\ne p$ 에서는 $f$ 가 레벨 1 이라 $\rho_f$ 가 비분기이므로 $c$ 도 비분기다. $\ell=p$ 에서 $\rho_f$ 는 결정군에 대해 $\begin{pmatrix}\omega^{k-1}&\ast\cr 0&1\end{pmatrix}$ 꼴로 보통(ordinary)이고 위아래 순서가 대역 쪽과 뒤바뀌므로, 두 삼각화를 비교하면 $c$ 의 $p$ 자리 제한이 소멸한다.
 
 ## 두 방향의 비대칭
 
