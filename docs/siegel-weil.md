@@ -27,14 +27,6 @@ $$
 
 # 직관
 
-## 류 평균
-
-$Q$ 와 $Q'$ 가 같은 류라는 것은 모든 $\mathbb Z_p$ 와 $\mathbb R$ 위에서 동치라는 뜻이다. 국소적으로 구별되지 않지만 $\mathbb Z$ 위에서는 동치가 아닐 수 있고, 판별식 $-4\cdot 41$ 짜리 형식처럼 한 류 안에 $\mathbb Z$ 동치가 아닌 형식이 여럿 들어 있는 일이 흔하다.
-
-그러므로 국소 데이터로 만든 $\prod_v\delta_v(n)$ 이 개별 $r_{Q_i}(n)$ 과 같을 수 없고, 국소 정보로 도달할 수 있는 최선은 류 전체의 평균이다. 가중치 $1/|\mathrm{Aut}\thinspace Q_i|$ 는 아델 군의 [Haar 측도](haar-measure.md)를 각 류 대표에 나눠줄 때 나오는 무게이며, [Eichler 의 질량 공식](jacquet-langlands.md)이 사원수 대수에서 쓰는 가중치와 같다.
-
-## 주항과 오차항
-
 무게 $m/2$ 의 [모듈러 형식](modular-forms.md) 공간은 Eisenstein 부분과 첨점 부분의 직합이다.
 
 $$
@@ -53,13 +45,13 @@ $$
 
 $m=3$ 에서는 두 지수가 $1/2$ 와 $3/4+\varepsilon$ 로 뒤집혀 오차가 주항을 삼킨다. 세 제곱수 문제가 네 제곱수 문제보다 어려운 원인이 이 지수 비교다.
 
-## 쌍대쌍 관점
-
-Siegel 의 증명은 해석적이다. Weil 은 같은 등식을 쌍대쌍의 구조로 읽었다. 쌍대쌍 $(O(V),\mathrm{Sp}(W))$ 에 대해 theta 급수 $\Theta_\varphi$ 는 두 군 모두의 함수이고, $O(V)$ 방향의 적분은 $O(V)$ 불변 벡터를 뽑는 연산이며, $\mathrm{Sp}$ 쪽에 남는 것은 퇴화 주계열에서 만든 Eisenstein 급수다.
-
-공식의 좌변과 우변은 같은 Weil 표현을 두 방향에서 본 것이다. [Rankin–Selberg 적분](rankin-selberg.md)이 Eisenstein 급수를 넣어 $L$ 함수를 뽑는 반면, Siegel–Weil 은 적분에서 Eisenstein 급수를 얻는다.
-
 # 정의
+
+## 류 평균
+
+$Q$ 와 $Q'$ 가 같은 류라는 것은 모든 $\mathbb Z_p$ 와 $\mathbb R$ 위에서 동치라는 뜻이다. 국소적으로 구별되지 않지만 $\mathbb Z$ 위에서는 동치가 아닐 수 있고, 판별식 $-4\cdot 41$ 짜리 형식처럼 한 류 안에 $\mathbb Z$ 동치가 아닌 형식이 여럿 들어 있는 일이 흔하다.
+
+그러므로 국소 데이터로 만든 $\prod_v\delta_v(n)$ 이 개별 $r_{Q_i}(n)$ 과 같을 수 없고, 국소 정보로 도달할 수 있는 최선은 류 전체의 평균이다. 가중치 $1/|\mathrm{Aut}\thinspace Q_i|$ 는 아델 군의 [Haar 측도](haar-measure.md)를 각 류 대표에 나눠줄 때 나오는 무게이며, [Eichler 의 질량 공식](jacquet-langlands.md)이 사원수 대수에서 쓰는 가중치와 같다.
 
 ## 류와 질량
 
@@ -102,6 +94,10 @@ E(g,\varphi)=\sum_{\gamma\in P(F)\backslash \mathrm{Sp}(F)}\Phi_\varphi(\gamma g
 $$
 
 로 두면 **Weil 조건**, 곧 $\dim V$ 가 $\dim W$ 에 비해 충분히 크다는 국소 조건 아래에서 $I(g,\varphi)=E(g,\varphi)$ 다. Weil 은 수렴 영역에서만 다뤘고, Kudla–Rallis 가 해석적 접속을 통해 정칙화된 판본으로 확장했다.
+
+Siegel 의 증명은 해석적이다. Weil 은 같은 등식을 쌍대쌍의 구조로 읽었다. 쌍대쌍 $(O(V),\mathrm{Sp}(W))$ 에 대해 theta 급수 $\Theta_\varphi$ 는 두 군 모두의 함수이고, $O(V)$ 방향의 적분은 $O(V)$ 불변 벡터를 뽑는 연산이며, $\mathrm{Sp}$ 쪽에 남는 것은 퇴화 주계열에서 만든 Eisenstein 급수다.
+
+공식의 좌변과 우변은 같은 Weil 표현을 두 방향에서 본 것이다. [Rankin–Selberg 적분](rankin-selberg.md)이 Eisenstein 급수를 넣어 $L$ 함수를 뽑는 반면, Siegel–Weil 은 적분에서 Eisenstein 급수를 얻는다.
 
 # 성질
 
