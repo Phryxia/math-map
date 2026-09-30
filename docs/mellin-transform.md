@@ -24,46 +24,21 @@ $$
 
 # 직관
 
-## 곱셈군 위의 Fourier 변환
-
-$x=e^{u}$ 와 $s=c+it$ 로 두면 다음이 된다.
+$x=e^{u}$ 와 $s=c+it$ 로 두면 적분이 다음이 된다.
 
 $$
 \tilde f(c+it)=\int_{-\infty}^{\infty}f(e^{u})e^{cu}\thinspace e^{itu}\thinspace du
 $$
 
-$\tilde f$ 는 $f(e^{u})e^{cu}$ 의 Fourier 변환이므로 Mellin 변환의 정리들은 Fourier 이론의 번역이다. [Poisson 합](poisson-summation.md)이 덧셈[격자](lattices.md) $\mathbb Z$ 에 대해 하는 일을 Mellin 은 곱셈적 스케일에 대해 한다.
+$\tilde f$ 는 $f(e^{u})e^{cu}$ 의 Fourier 변환이므로 Mellin 변환의 정리들은 Fourier 이론의 번역이다. [Poisson 합](poisson-summation.md)이 덧셈 [격자](lattices.md) $\mathbb Z$ 에 대해 하는 일을 Mellin 변환은 곱셈적 스케일에 대해 한다.
 
-## 수렴 띠
-
-적분 $\int_0^\infty f\thinspace x^{s-1}dx$ 는 $x\to0$ 에서 $f=O(x^{-a})$ 이고 $x\to\infty$ 에서 $f=O(x^{-b})$ 일 때 $a\lt\mathrm{Re}s\lt b$ 에서 수렴한다. Mellin 변환의 정의역은 수직 띠이고 띠의 양 끝을 $f$ 의 양 끝 거동이 정한다. [해석적 연속](analytic-continuation.md)으로 띠 바깥에서 만나는 극점이 원래 함수의 전개 항에 대응한다.
-
-## 극점과 점근항의 대응
-
-$x\to0$ 에서 $f(x)\sim\sum_k c_kx^{\alpha_k}$ 이면 $\tilde f$ 는 $s=-\alpha_k$ 에서 유수 $c_k$ 의 단순극점을 갖고, 역도 성립한다.
-
-$$
-\tilde f\ \text{의}\ s=s_0\ \text{에서의 단순극점, 유수}\ r
-\thinspace\longleftrightarrow\thinspace
-f(x)\ \text{에}\ r\thinspace x^{-s_0}\ \text{항}
-$$
-
-2 차 극점이면 $x^{-s_0}\log(1/x)$ 가 나오고, 허축 위의 극점이면 $x^{-it}=e^{-it\log x}$ 라 $\log x$ 에 대한 진동항이 나온다. 마지막 경우가 알고리즘 분석에서 보이는 작은 주기 변동이다.
-
-## Perron 핵
-
-$$
-\frac1{2\pi i}\int_{c-i\infty}^{c+i\infty}\frac{y^{s}}{s}ds=
-\begin{cases}1,&y\gt 1\cr \tfrac12,&y=1\cr 0,&0\lt y\lt 1\end{cases}
-$$
-
-이 적분이 $n\le x$ 라는 조건을 해석적으로 표현한다. $y=x/n$ 을 넣고 $n$ 에 대해 더하면 Perron 공식이 되고, 셈의 조건이 윤곽적분으로 바뀌면서 조합적 문제가 복소해석 문제가 된다.
+$f(x)=e^{-x}$ 로 계산해 보면 변환이 $\Gamma(s)$ 이고, $\Gamma$ 는 $s=-n$ 에서 유수 $(-1)^{n}/n!$ 의 단순극점을 갖는다. 이 유수들이 $e^{-x}=\sum_n(-1)^{n}x^{n}/n!$ 의 계수와 같다. $x\to0$ 에서의 전개 항 하나가 $\tilde f$ 의 극점 하나로 옮겨 간 것이고, [해석적 연속](analytic-continuation.md)으로 수렴 띠 바깥에서 만나는 극점마다 같은 대응이 성립한다.
 
 # 정의
 
 ## 변환과 역변환
 
-$f$ 가 $(0,\infty)$ 에서 국소적분가능하고 띠 $a\lt\mathrm{Re}s\lt b$ 에서 적분이 절대수렴하면 $\tilde f$ 는 그 띠에서 정칙이다. 역변환은 $a\lt c\lt b$ 인 임의의 $c$ 에서 다음이고 값은 $c$ 에 의존하지 않는다.
+$f$ 가 $(0,\infty)$ 에서 국소적분가능하고 띠 $a\lt\mathrm{Re}s\lt b$ 에서 적분이 절대수렴하면 $\tilde f$ 는 그 띠에서 정칙이다. 띠의 양 끝은 $f$ 의 양 끝 거동이 정한다. $x\to0$ 에서 $f=O(x^{-a})$ 이고 $x\to\infty$ 에서 $f=O(x^{-b})$ 이면 적분이 $a\lt\mathrm{Re}s\lt b$ 에서 수렴한다. 역변환은 $a\lt c\lt b$ 인 임의의 $c$ 에서 다음이고 값은 $c$ 에 의존하지 않는다.
 
 $$
 f(x)=\frac1{2\pi i}\int_{(c)}\tilde f(s)x^{-s}ds
@@ -97,7 +72,14 @@ $$
 {\sum_{n\le x}}'\thinspace a_n=\frac1{2\pi i}\int_{(c)}D(s)\frac{x^{s}}{s}ds
 $$
 
-프라임은 $n=x$ 항을 절반만 센다는 뜻이다. 실제 계산에서는 적분을 $|t|\le T$ 로 자른 유효판을 쓰고 잘라낸 꼬리를 명시적 오차항으로 평가한다.
+핵이 되는 것은 다음 적분이다.
+
+$$
+\frac1{2\pi i}\int_{c-i\infty}^{c+i\infty}\frac{y^{s}}{s}ds=
+\begin{cases}1,&y\gt 1\cr \tfrac12,&y=1\cr 0,&0\lt y\lt 1\end{cases}
+$$
+
+$y=x/n$ 을 넣고 $n$ 에 대해 더하면 위 공식이 된다. $n\le x$ 라는 셈의 조건이 윤곽적분으로 바뀌면서 조합적 문제가 복소해석 문제가 된다. 프라임은 $n=x$ 항을 절반만 센다는 뜻이다. 실제 계산에서는 적분을 $|t|\le T$ 로 자른 유효판을 쓰고 잘라낸 꼬리를 명시적 오차항으로 평가한다.
 
 # 성질
 
@@ -109,7 +91,7 @@ $$
 f(x)=\sum_{d\lt\mathrm{Re}s_0\lt c}\mathop{\mathrm{Res}}\_{s=s_0}\big(\tilde f(s)x^{-s}\big)+O\negthinspace\left(x^{-d}\right)
 $$
 
-점근전개를 얻는 작업이 유수 계산이 된다. 차수 $m$ 의 극점에서 나오는 항은 $x^{-s_0}$ 곱하기 $\log x$ 의 $m-1$ 차 다항식이다.
+점근전개를 얻는 작업이 유수 계산이 된다. 차수 $m$ 의 극점에서 나오는 항은 $x^{-s_0}$ 곱하기 $\log x$ 의 $m-1$ 차 다항식이다. 극점이 허축 위에 있으면 $x^{-it}=e^{-it\log x}$ 라 $\log x$ 에 대한 진동항이 나오고, 이것이 알고리즘 분석에서 보이는 작은 주기 변동이다.
 
 ## 곱셈 정리
 
@@ -147,7 +129,7 @@ $x$ 를 $2$ 배 할 때마다 잔차가 같은 값으로 돌아오므로 이 떨
 
 # 활용
 
-## 소수 정리의 요지
+## 소수 정리의 증명
 
 $-\zeta'(s)/\zeta(s)=\sum\Lambda(n)n^{-s}$ 에 Perron 을 적용하면 다음이 된다.
 
