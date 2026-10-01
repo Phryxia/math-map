@@ -10,27 +10,9 @@ Girsanov 정리는 과정이 아니라 확률측도를 바꿔 표류를 지운�
 
 # 직관
 
-## 측도에 의존하는 표류
+경로 하나만 보고는 표류가 있는지 판정할 수 없다. 위로 올라가는 경로는 표류 없는 Brown 운동에서도 나오고 표류가 있으면 더 자주 나온다. 표류는 경로의 성질이 아니라 경로들 위의 확률분포의 성질이므로, 확률을 다시 배정하면 표류가 바뀐다. 두 측도가 서로 절대연속이면 가능한 경로는 그대로이고 그 확률만 달라진다.
 
-경로 하나로는 표류의 유무를 판정할 수 없다. 위로 올라가는 경로는 표류 없는 Brown 운동에서도 나오고 표류가 있으면 더 자주 나온다. 표류는 경로의 성질이 아니라 경로들 위의 확률분포의 성질이다.
-
-확률을 다시 배정하면 표류가 바뀐다. 위로 가는 경로에 낮은 확률을, 아래로 가는 경로에 높은 확률을 주면 평균적 흐름이 0 이 된다. 두 측도가 서로 절대연속이면 가능한 경로는 그대로이고 그 확률만 달라진다.
-
-## 우도비의 곱
-
-이산 시간에서 밀도는 각 단계의 우도비의 곱이고, 연속시간에서는 그 극한이 지수가 된다. 한 눈금에서 표류 $\theta h$ 를 넣는 Gauss 밀도의 비가
-
-$$
-\frac{\exp\big(-(\Delta B-\theta h)^2/2h\big)}{\exp\big(-(\Delta B)^2/2h\big)}=\exp\Big(\theta\thinspace\Delta B-\tfrac12\theta^2h\Big)
-$$
-
-이므로 모든 눈금에 대해 곱하면 지수 안이 합이 되어 $\theta B_t - \theta^2 t/2$ 가 된다. 이차항 $-\theta^2t/2$ 는 정규화 항이고 평균을 1 로 유지한다.
-
-보정항은 Itô 공식에서 나온다. $L_t = e^{Y_t}$ 에서 $Y$ 가 이차변동을 가지면 $dL = L\thinspace dY + \tfrac12 L\thinspace d\langle Y\rangle$ 이므로, $dL$ 에 $dt$ 항이 남지 않으려면 $Y$ 의 표류가 정확히 $-\tfrac12 d\langle Y\rangle$ 여야 한다.
-
-## 변환의 이득
-
-표류를 지우면 과정이 martingale 이 되고 기댓값이 시간에 따라 변하지 않으므로, 미래 시점의 기댓값을 현재 값으로 읽는다. 금융에서 가격을 할인된 미래 지급의 기댓값으로 쓰는 근거가 이것이다. 원래 측도의 기댓값은 새 측도에서 계산한 뒤 밀도를 곱해 되돌린다.
+시간을 눈금 $h$ 로 자르고 한 눈금의 증분 $\Delta B$ 를 평균 $0$, 분산 $h$ 인 Gauss 변량으로 보자. 평균을 $\theta h$ 로 옮긴 밀도와 원래 밀도의 비는 $\exp(-(\Delta B-\theta h)^2/2h+(\Delta B)^2/2h)=\exp(\theta\thinspace\Delta B-\tfrac12\theta^2h)$ 다. 눈금마다 이 비를 곱하면 지수 안이 합이 되어 $\theta B_t-\tfrac12\theta^2t$ 가 남는다. 이 지수를 밀도로 쓰는 측도에서 표류가 $\theta$ 만큼 옮겨지고, 이차항은 밀도의 평균을 $1$ 로 유지한다.
 
 # 정의
 
@@ -43,6 +25,8 @@ L_t=\exp\left(-\int_0^t\theta_s^{\mathsf T}\thinspace dB_s-\frac12\int_0^t\lVert
 $$
 
 Itô 공식에서 $dL_t = -L_t\theta_t^{\mathsf T}dB_t$ 이므로 $L$ 은 국소 martingale 이고 $L_0 = 1$ 이다.
+
+$L_t=e^{Y_t}$ 에서 $Y$ 가 이차변동을 가지면 $dL=L\thinspace dY+\tfrac12 L\thinspace d\langle Y\rangle$ 이므로, $dL$ 에 $dt$ 항이 남지 않으려면 $Y$ 의 표류가 정확히 $-\tfrac12 d\langle Y\rangle$ 여야 한다. 지수 안의 이차항이 그 보정이다.
 
 ## Novikov 조건
 
