@@ -22,29 +22,9 @@ $$
 
 # 직관
 
-## Zariski 위상의 한계
+복소다양체에서는 고전적 위상으로 특이 코호몰로지를 만들고 Lefschetz 공식으로 사상의 고정점을 센다. 유한체 위의 다양체에는 그런 위상이 없다. Zariski 위상에서는 기약 다양체 위의 상수[층](sheaves.md)이 뭉툭해 $i\gt 0$ 마다 $H^i=0$ 이고 셀 것이 남지 않는다. 막힌 것은 덮개의 개념이어서, 열린 포함사상 대신 국소적으로 동형에 가까운 에탈 사상을 덮개로 놓고 그 [범주](category.md) 위에서 층과 코호몰로지를 정의한다.
 
-복소다양체에서는 고전적 위상으로 특이 코호몰로지를 만든다. 유한체 위의 다양체에는 그런 위상이 없고, Zariski 위상에서는 기약 다양체 위의 상수[층](sheaves.md)이 뭉툭해 $i\gt 0$ 마다 $H^i=0$ 이다.
-
-문제는 덮개의 개념이다. 위상에서 덮개는 열린 포함사상의 모임이지만, 대수기하에서 덮개에 해당하는 것은 국소적으로 동형에 가까운 사상이다. 복소해석의 국소 미분동형에 해당하는 것이 에탈 사상이다.
-
-열린집합의 [격자](order-lattices.md) 대신 에탈 사상들의 [범주](category.md)를 놓고 그 위에서 층과 코호몰로지를 정의한다.
-
-## 계수 $\ell$ 의 조건
-
-표수 $p$ 인 체 위의 다양체에서 $\mathbb Z/p$ 계수는 병리적이다. Artin–Schreier 열 때문에 코호몰로지가 기대한 차원을 갖지 않는다. $\ell\ne p$ 로 잡으면 $\mathbb Z/\ell^n$ 계수 에탈 코호몰로지가 잘 작동하고, 극한을 취해 $\mathbb Q_\ell$ 계수를 얻는다.
-
-$$
-H^i_{\mathrm{et}}(X_{\bar K},\mathbb Q_\ell)=\Big(\varprojlim_nH^i_{\mathrm{et}}(X_{\bar K},\mathbb Z/\ell^n)\Big)\otimes\mathbb Q_\ell
-$$
-
-코호몰로지는 $\bar K$ 로 올린 뒤에 취한다. $G_K=\mathrm{Gal}(\bar K/K)$ 가 $X_{\bar K}$ 에 작용하므로 코호몰로지에도 작용하고, 그것이 구하려던 표현이다.
-
-## 점 개수와 대각합
-
-유한체 $\mathbb F_q$ 위의 다양체에서 $\mathbb F_{q^n}$ 유리점은 $q^n$ 제곱 Frobenius 사상의 고정점이다. 위상수학에서 고정점을 세는 도구가 Lefschetz 공식이고, 에탈 코호몰로지에서 같은 공식을 세우면 점 개수가 대각합의 교대합이다.
-
-$\zeta$ 함수의 유리성은 대각합의 [생성함수](generating-functions.md)가 유리함수라는 선형대수적 사실이고, 함수방정식은 Poincaré 쌍대성이며, [Riemann 가설](riemann-hypothesis.md)은 Frobenius 고윳값의 절댓값이 $q^{i/2}$ 라는 진술이다. 앞의 둘은 코호몰로지 이론에서 형식적으로 따라 나오고 마지막 하나가 Deligne 의 정리다.
+표수 $p$ 인 체 위에서 $\mathbb Z/p$ 계수는 Artin–Schreier 열 때문에 기대한 차원을 주지 않으므로 $\ell\ne p$ 로 잡고, $\mathbb Z/\ell^n$ 계수의 극한에서 $\mathbb Q_\ell$ 계수를 얻는다. 코호몰로지는 $\bar K$ 로 올린 뒤에 취한다. $G_K=\mathrm{Gal}(\bar K/K)$ 가 $X_{\bar K}$ 에 작용하므로 코호몰로지에도 작용하고, 그 작용이 Galois 표현이다.
 
 # 정의
 
@@ -83,6 +63,8 @@ $$
 
 ## 에탈 코호몰로지와 Weil 추측
 
+$\mathbb F_{q^n}$ 유리점은 $q^n$ 제곱 Frobenius 사상의 고정점이다. 위상수학에서 고정점을 세는 도구가 Lefschetz 공식이고, 에탈 코호몰로지에서 같은 공식을 세우면 점 개수가 Frobenius 작용의 대각합의 교대합이 된다.
+
 $X$ 가 $\mathbb F_q$ 위의 매끄러운 사영다양체일 때 zeta 함수를 정의한다.
 
 $$
@@ -92,7 +74,7 @@ $$
 > **Weil 추측(정리).**
 > 1. $Z(X,t)$ 는 유리함수이고 $\prod_iP_i(t)^{(-1)^{i+1}}$ 로 쓰인다. 여기서 $P_i(t)=\det(1-\mathrm{Frob}\thinspace t\mid H^i_{\mathrm{et}})$ 다.
 > 2. $t\mapsto1/(q^dt)$ 에 대한 함수방정식이 성립한다(Poincaré 쌍대성).
-> 3. $P_i$ 의 역근 $\alpha$ 는 모두 $|\alpha|=q^{i/2}$ 를 만족한다(Riemann 가설).
+> 3. $P_i$ 의 역근 $\alpha$ 는 모두 $|\alpha|=q^{i/2}$ 를 만족한다([Riemann 가설](riemann-hypothesis.md)).
 > 4. $X$ 가 표수 0 의 다양체의 환원이면 $\deg P_i$ 가 그 다양체의 Betti 수와 같다.
 
 1, 2, 4 는 Grothendieck 이 에탈 코호몰로지를 세우며 얻었고, 3 은 Deligne 이 1974 년에 증명했다.
