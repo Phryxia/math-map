@@ -14,21 +14,15 @@ $$
 L\lbrack y\rbrack=\int_0^1\sqrt{1+y'(x)^2}\thinspace dx
 $$
 
-미분에서 극값을 찾던 방법을 옮겨 본다. 최소를 주는 $y$ 가 있다고 하고 양 끝에서 $0$ 인 함수 $\eta$ 를 잡아 $y+\varepsilon\eta$ 를 넣으면 $L$ 은 $\varepsilon$ 의 함수가 된다. $y$ 가 최소이면 이 함수가 $\varepsilon=0$ 에서 최소이므로 미분이 $0$ 이다.
+미분에서 극값을 찾던 방법을 옮긴다. 최소를 주는 $y$ 가 있다고 하고 양 끝에서 $0$ 인 함수 $\eta$ 를 잡아 $y+\varepsilon\eta$ 를 넣으면 $L$ 은 $\varepsilon$ 의 함수가 되고, $y$ 가 최소이면 그 함수의 미분이 $\varepsilon=0$ 에서 $0$ 이다. 부분적분으로 $\eta'$ 를 $\eta$ 로 바꾸면 경계항은 $\eta$ 가 양 끝에서 $0$ 이라 사라진다. 남은 식이 모든 $\eta$ 에서 성립하므로 괄호 안의 도함수가 $0$ 이고 $y'/\sqrt{1+y'^2}$ 이 상수이며, 그러면 $y'$ 도 상수이고 곡선은 직선이다.
 
 $$
-\frac{d}{d\varepsilon}\Big|\_{\varepsilon=0}L\lbrack y+\varepsilon\eta\rbrack=\int_0^1\frac{y'\eta'}{\sqrt{1+y'^2}}\thinspace dx=0
+\frac{d}{d\varepsilon}\Big\vert\_{\varepsilon=0}L\lbrack y+\varepsilon\eta\rbrack=\int_0^1\frac{y'\eta'}{\sqrt{1+y'^2}}\thinspace dx=0
 $$
-
-부분적분으로 $\eta'$ 를 $\eta$ 로 바꾸면 경계항은 $\eta$ 가 양 끝에서 $0$ 이라 사라지고 다음이 남는다.
 
 $$
 \int_0^1\eta\thinspace\frac{d}{dx}\Bigl(\frac{y'}{\sqrt{1+y'^2}}\Bigr)dx=0
 $$
-
-이 식이 모든 $\eta$ 에서 성립하므로 괄호 안의 도함수가 $0$ 이고, $y'/\sqrt{1+y'^2}$ 이 상수다. 그러면 $y'$ 도 상수이고 곡선은 직선이다.
-
-계산이 한 일은 두 가지다. 함수를 흔들어 일변수 함수로 바꾸었고, 흔드는 방향 $\eta$ 가 임의라는 점에서 적분식을 점별 방정식으로 바꾸었다.
 
 # 정의
 
