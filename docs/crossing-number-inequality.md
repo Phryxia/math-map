@@ -8,25 +8,19 @@
 
 # 직관
 
-Euler 공식은 평면 그래프에서 $\vert E\vert\le3\vert V\vert-6$ 을 준다. 변이 이보다 많으면 그 그래프는 평면에 그려지지 않으므로 어느 그림에나 교차가 있다.
-
-교차가 몇 개인지는 변을 지워 보면 나온다. 교차가 $c$ 개인 그림에서 교차하는 변을 하나씩 지우면 $c$ 번 안에 교차가 없는 그림이 된다. 남은 그래프가 평면 그래프이므로
+Euler 공식은 평면 그래프에서 $\vert E\vert\le3\vert V\vert-6$ 을 준다. 교차가 $c$ 개인 그림에서 교차하는 변을 하나씩 지우면 $c$ 번 안에 교차가 없는 그림이 되고, 남은 그래프가 평면 그래프이므로 지운 만큼을 뺀 변의 개수가 이 한계를 넘지 못한다.
 
 $$
 \vert E\vert-c\le3\vert V\vert-6,\qquad c\ge\vert E\vert-3\vert V\vert+6
 $$
 
-이다. 이 하한은 변의 개수에 대해 선형이다. $\vert E\vert=4\vert V\vert$ 이면 교차가 $\vert V\vert$ 개쯤이다.
-
-실제 교차수는 이보다 크다. 선형 하한이 약한 이유는 그래프 전체에 한 번만 적용했기 때문이다. 정점을 무작위로 골라 만든 부분그래프마다 같은 부등식을 적용하고 기댓값을 취하면 하한이 올라간다.
-
-각 정점을 확률 $p$ 로 독립으로 남긴다. 남은 부분그래프의 정점은 기댓값 $p\vert V\vert$ 개, 변은 두 끝점이 모두 남아야 하므로 $p^2\vert E\vert$ 개, 원래 그림에서 물려받은 교차는 네 끝점이 모두 남아야 하므로 $p^4c$ 개다. 선형 하한을 부분그래프에 쓰고 기댓값을 비교하면
+이 하한은 변의 개수에 대해 선형이어서 $\vert E\vert=4\vert V\vert$ 일 때 교차가 $\vert V\vert$ 개쯤이라고만 말한다. 그래프 전체에 부등식을 한 번만 썼으므로, 각 정점을 확률 $p$ 로 독립으로 남겨 만든 부분그래프마다 같은 부등식을 쓰고 기댓값을 비교한다. 남은 정점은 기댓값 $p\vert V\vert$ 개, 변은 두 끝점이 모두 남아야 하므로 $p^2\vert E\vert$ 개, 원래 그림에서 물려받은 교차는 네 끝점이 모두 남아야 하므로 $p^4c$ 개다. $p=4\vert V\vert/\vert E\vert$ 로 잡으면 하한이 세제곱으로 커진다.
 
 $$
-p^4c\ge p^2\vert E\vert-3p\vert V\vert
+p^4c\ge p^2\vert E\vert-3p\vert V\vert,
+\qquad
+p=\frac{4\vert V\vert}{\vert E\vert}\ \Rightarrow\ c\ge\frac{\vert E\vert^3}{32\vert V\vert^2}
 $$
-
-가 된다. $p=4\vert V\vert/\vert E\vert$ 로 잡으면 우변이 $\vert E\vert^3/(32\vert V\vert^2)$ 규모로 남고, 하한이 세제곱으로 커진다.
 
 # 정의
 
