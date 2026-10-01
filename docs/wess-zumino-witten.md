@@ -21,8 +21,6 @@ $$
 
 # 직관
 
-## 경계의 자유도
-
 게이지 변환 가운데 경계에서 항등원으로 가는 것만이 물리적 상태를 바꾸지 않는다. 경계에서 자유롭게 움직이는 변환은 상태를 바꾼다.
 
 $$
@@ -30,11 +28,13 @@ $$
 \frac{\mathcal G_{\text{전체}}}{\mathcal G_{\text{진짜 게이지}}}=\mathrm{Map}(\Sigma,G)
 $$
 
-몫으로 남는 $\Sigma$ 위의 $G$ 값 함수들이 **루프군**이다. 벌크에 국소 자유도가 없는 이론이 경계에 루프군만큼의 자유도를 남긴다. **WZW**(Wess–Zumino–Witten) 모형의 장 $g:\Sigma\to G$ 가 이 몫에서 오고, 이론의 대칭이 루프군의 중심확대인 **아핀 Lie 대수**가 된다. 양자 Hall 계에서 벌크에 틈이 있고 가장자리에 무질량 모드가 도는 현상이 같은 구조다.
+몫으로 남는 $\Sigma$ 위의 $G$ 값 함수들이 **루프군**이다. 벌크에 국소 자유도가 없는 이론이 경계에 루프군만큼의 자유도를 남긴다. **WZW 모형**의 장 $g:\Sigma\to G$ 가 이 몫에서 오고, 이론의 대칭이 루프군의 중심확대인 **아핀 Lie 대수**가 된다. 양자 Hall 계에서 벌크에 틈이 있고 가장자리에 무질량 모드가 도는 현상이 같은 구조다.
 
-## 정수 레벨의 두 출처
+# 정의
 
-WZW 작용에는 2 차원 적분으로 쓸 수 없는 항이 있다. Wess–Zumino 항은 $\Sigma$ 를 경계로 하는 3 차원 $B$ 로 연장해서만 쓰인다.
+## Wess–Zumino 항
+
+WZW 작용에는 2 차원 적분으로 쓸 수 없는 항이 있다. **Wess–Zumino 항**은 $\Sigma$ 를 경계로 하는 3 차원 $B$ 와 $g$ 의 연장 $\tilde g:B\to G$ 로 쓴다.
 
 $$
 \Gamma(g)=\frac{1}{24\pi}\int_B \mathrm{tr}\big(\tilde g^{-1}d\tilde g\big)^3
@@ -42,21 +42,9 @@ $$
 
 두 연장 $B,B'$ 를 붙이면 닫힌 3 다양체가 되고 그 위의 적분은 $\pi_3(G)=\mathbb Z$ 를 세는 정수의 $2\pi$ 배다. $\Gamma$ 는 $2\pi\mathbb Z$ 만큼 모호하므로 $e^{ik\Gamma}$ 가 잘 정의되려면 $k\in\mathbb Z$ 여야 한다. Chern–Simons 쪽에서 큰 게이지 변환이 강요하던 정수성과 출처가 $\pi_3(G)=\mathbb Z$ 로 같다.
 
-## 레벨이 주는 절단
-
-아핀 대수 $\hat{\mathfrak g}$ 의 최고무게 표현에 유니터리성을 요구하면 최고무게 $\lambda$ 가 조건
-
-$$
-\langle\lambda,\theta^\vee\rangle\le k
-$$
-
-를 만족해야 한다. $\theta$ 는 최고근이고, 좌변이 음이 아닌 정수들의 유계 조합이므로 해가 유한개다. $\mathfrak{su}(2)$ 에서는 스핀 $j$ 에 대해 $2j\le k$ 이므로 목록이 $j=0,\tfrac12,\dots,\tfrac k2$ 로 $k+1$ 개다. $\langle\lambda,\theta^\vee\rangle\gt k$ 이면 Verma [가군](modules.md) 안에 노름이 음인 벡터가 나타나 유니터리 표현이 남지 않는다. 이 유한 목록이 Chern–Simons Wilson 선의 라벨 목록이다.
-
-# 정의
-
 ## 작용
 
-콤팩트 단순 [Lie 군](lie-groups.md) $G$ 와 정수 $k$ 에 대해 장 $g:\Sigma\to G$ 의 **WZW 작용**은 다음이고 $\Gamma$ 는 위의 Wess–Zumino 항이다.
+콤팩트 단순 [Lie 군](lie-groups.md) $G$ 와 정수 $k$ 에 대해 장 $g:\Sigma\to G$ 의 **WZW 작용**은 다음이고 $\Gamma$ 는 Wess–Zumino 항이다.
 
 $$
 S_k(g)=\frac{k}{16\pi}\int_\Sigma\mathrm{tr}\big(g^{-1}\partial^\mu g\thinspace g^{-1}\partial_\mu g\big)\thinspace d^2x\thickspace+\thickspace k\thinspace\Gamma(g)
@@ -106,6 +94,12 @@ $$
 $k\to\infty$ 에서 두 번째 조건이 사라져 Clebsch–Gordan 규칙으로 돌아간다.
 
 # 성질
+
+## 유니터리성의 절단
+
+> **정리.** 아핀 대수 $\hat{\mathfrak g}$ 의 레벨 $k$ 최고무게 표현이 유니터리이려면 최고무게 $\lambda$ 가 $\langle\lambda,\theta^\vee\rangle\le k$ 를 만족해야 한다.
+
+$\theta$ 는 최고근이다. $\langle\lambda,\theta^\vee\rangle\gt k$ 이면 Verma [가군](modules.md) 안에 노름이 음인 벡터가 나타나 유니터리 표현이 남지 않는다. 좌변이 음이 아닌 정수들의 유계 조합이므로 해가 유한개이고, $\mathfrak{su}(2)$ 에서는 스핀 $j$ 에 대해 $2j\le k$ 라서 목록이 $j=0,\tfrac12,\dots,\tfrac k2$ 로 $k+1$ 개다. 이 유한 목록이 Chern–Simons Wilson 선의 라벨 목록이다.
 
 ## 공형 블록과 Hilbert 공간
 
