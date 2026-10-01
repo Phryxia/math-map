@@ -10,33 +10,17 @@ resurgence 는 되살아남이다. 급수 하나의 계수를 멀리까지 따�
 
 # 직관
 
-## Borel 평면의 특이점
-
-발산급수 $\tilde f$ 를 Borel 변환하면 수렴 반경이 유한한 함수 $\hat f(\zeta)$ 가 되고, 이 함수는 $\zeta$ 평면에 특이점들을 가진다. 두 번째 안장점이 $\zeta = A$ 에, 세 번째가 $\zeta = 2A$ 에 있는 식이다. 함수의 정보가 이 특이점 목록과 각 특이점 주변의 국소 거동에 담긴다.
-
-alien 미분 $\Delta_\omega \tilde f$ 는 $\zeta = \omega$ 에서의 $\hat f$ 의 특이성을 $x$ 공간의 급수로 옮겨 적은 것이다. 특이점이 없으면 0 이고, 있으면 그 특이점 주변의 전개 계수를 내놓는다. 이 목록이 유한하거나 규칙적인 격자를 이루고 $\Delta_\omega\tilde f$ 가 다시 같은 종류의 대상이 되는 함수가 **resurgent 함수**다. 이 닫힘 성질이 계산의 반복을 가능하게 한다.
-
-## Leibniz 법칙
-
-$\Delta_\omega$ 가 미분이 되는 것은 Borel 평면에서 곱이 합성곱이 되기 때문이다.
+발산급수 $\tilde f$ 를 Borel 변환하면 수렴 반경이 유한한 함수 $\hat f(\zeta)$ 가 되고, 이 함수는 $\zeta$ 평면에 특이점들을 가진다. 두 번째 안장점이 $\zeta = A$ 에, 세 번째가 $\zeta = 2A$ 에 있는 식이다. 함수의 정보가 이 특이점 목록과 각 특이점 주변의 국소 거동에 담기므로, $\zeta=\omega$ 에서의 특이성을 $x$ 공간의 급수로 옮겨 적는 연산 $\Delta_\omega$ 를 본다. Borel 평면에서 곱은 합성곱이다.
 
 $$
 \widehat{fg}(\zeta) = \int_0^{\zeta}\hat f(\eta)\thinspace\hat g(\zeta - \eta)\thinspace d\eta
 $$
 
-이 적분이 $\zeta = \omega$ 에서 특이해지는 경우는 둘뿐이다. $\hat f$ 가 $\omega$ 에서 특이하고 $\hat g$ 가 원점 근처에서 정칙이거나 그 반대다. 두 특이점이 동시에 걸리는 상황은 한 차수 더 작다. 따라서
+이 적분이 $\zeta = \omega$ 에서 특이해지는 경우는 둘뿐이다. $\hat f$ 가 $\omega$ 에서 특이하고 $\hat g$ 가 원점 근처에서 정칙이거나 그 반대이고, 두 특이점이 동시에 걸리는 상황은 한 차수 더 작다. 합성곱의 이 기하에서 $\Delta_\omega$ 가 미분이 된다.
 
 $$
 \Delta_\omega(\tilde f\tilde g) = (\Delta_\omega \tilde f)\thinspace\tilde g + \tilde f\thinspace(\Delta_\omega \tilde g)
 $$
-
-가 나온다. Leibniz 법칙은 정의로 강요한 것이 아니라 합성곱의 기하에서 따라온다.
-
-## Bridge equation 의 의미
-
-미분방정식의 해를 transseries 로 쓰면 적분상수에 해당하는 매개변수 $\sigma$ 가 붙는다. $\sigma$ 로 미분하는 것은 해의 족 안에서 옆으로 움직이는 연산이고, alien 미분은 Borel 평면의 특이점을 보는 연산이다.
-
-두 연산 모두 원래 방정식을 선형화한 **변분방정식**의 해를 내놓고 그 해공간이 1차원이므로 두 연산은 상수배만큼만 다르다. 이것이 Bridge equation 이다. 이 관계가 resurgence 를 계산 도구로 만든다.
 
 # 정의
 
@@ -80,6 +64,8 @@ $$
 
 로 쓰인다. 특이 방향에 특이점이 하나이면 지수함수가 두 항에서 끊기고, 격자 $\lbrace A, 2A, 3A, \dots\rbrace$ 이면 모든 항이 남아 무한급수가 된다.
 
+특이점 목록이 유한하거나 규칙적인 격자를 이루고 $\Delta_\omega\tilde f$ 가 다시 같은 종류의 대상이 되는 함수가 **resurgent 함수**다. 이 닫힘 성질 때문에 같은 계산을 반복해 적용할 수 있다.
+
 # 성질
 
 ## Bridge equation
@@ -91,6 +77,8 @@ $$
 $$
 
 가 성립한다. 상수 $S_m$ 이 **Stokes 상수**이고, 방정식이 아니라 대역적 해석성이 결정하는 자료다. $F$ 가 방정식을 만족하므로 양변에 $\dot\Delta$ 를 적용하면 $\dot\Delta F$ 가 변분방정식을 만족하고 $\partial_\sigma F$ 도 같은 방정식을 만족한다. 해공간이 1차원이므로 둘이 비례하고, 지수 차수를 맞추면 $\sigma^{m+1}$ 이 붙는다.
+
+$\sigma$ 로 미분하는 것은 해의 족 안에서 옆으로 움직이는 연산이고 alien 미분은 Borel 평면의 특이점을 보는 연산인데, bridge equation 이 둘을 같은 것으로 만든다.
 
 $m = -1$ 항 $\dot\Delta_{-A}F = S_{-1}\partial_\sigma F$ 는 비섭동 sector 에서 섭동 sector 로 돌아오는 방향이고, 이 항이 있어야 구조가 닫힌다.
 
