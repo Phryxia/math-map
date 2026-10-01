@@ -20,35 +20,13 @@ Lubotzky, Phillips, Sarnak 과 독립적으로 Margulis 가 1988 년에 명시�
 
 # 직관
 
-## 경계 $2\sqrt{d-1}$
+$d$ 정규 무한 나무 $T_d$ 의 인접작용소는 스펙트럼 반지름이 $2\sqrt{d-1}$ 이다. 유한 $d$ 정규 그래프는 국소적으로 나무처럼 보이므로 정점 수가 커지면 나무의 스펙트럼을 따라가고, 그만큼 $\lambda$ 가 $2\sqrt{d-1}$ 쪽으로 밀려 올라간다. 나무의 스펙트럼 반지름보다 작은 $\lambda$ 가 불가능하다는 것이 Alon–Boppana 의 내용이다. 작고 대칭성이 높은 그래프는 대개 Ramanujan 이고, 어려운 것은 정점 수를 무한히 키우면서 조건을 유지하는 무한 족이다.
 
-$d$ 정규 무한 나무 $T_d$ 의 인접작용소는 스펙트럼 반지름이 $2\sqrt{d-1}$ 이다. 유한 $d$ 정규 그래프는 국소적으로 나무처럼 보이므로 정점 수가 커지면 나무의 스펙트럼을 따라간다. 나무의 스펙트럼 반지름보다 작은 $\lambda$ 가 불가능하다는 것이 Alon–Boppana 의 내용이다.
-
-$$
-2\sqrt{d-1}=\text{무한 }d\text{ 정규 나무의 스펙트럼 반지름}
-$$
-
-작고 대칭성이 높은 그래프는 대개 Ramanujan 이다. 어려운 것은 정점 수를 무한히 키우면서 조건을 유지하는 무한 족이다. 정점이 많아질수록 $\lambda$ 가 $2\sqrt{d-1}$ 쪽으로 밀려 올라간다.
-
-## 사원수 대수와 Hecke 고윳값
-
-LPS(Lubotzky–Phillips–Sarnak) 구성은 그래프를 군의 Cayley 그래프로 만든다. 소수 $p,q$ 를 잡고
+LPS(Lubotzky–Phillips–Sarnak) 구성은 그래프를 $\mathrm{PGL}\_2(\mathbb F_q)$ 나 $\mathrm{PSL}\_2(\mathbb F_q)$ 의 Cayley 그래프로 만들고 생성원을 사원수 대수에서 가져온다. 소수 $p$ 를 네 제곱수의 합으로 쓰는 방법의 개수가 $8(p+1)$ 이라는 Jacobi 의 정리가 $p+1$ 개의 생성원을 준다. 이 Cayley 그래프의 고윳값은 [군의 표현](group-representations.md)론으로 계산되고 그 값이 사원수 대수 위 자기동형 형식의 Hecke 고윳값이다. Jacquet–Langlands 대응으로 이를 무게 2 첨점형식의 계수로 옮기면 Deligne 의 경계가 적용되고, 차수가 $d=p+1$ 이므로 그래프 쪽 부등식이 나온다.
 
 $$
-G=\mathrm{PGL}\_2(\mathbb F_q)\ \text{또는}\ \mathrm{PSL}\_2(\mathbb F_q),
-\qquad
-S=\lbrace p+1\ \text{개의 생성원}\rbrace
+\vert a_p\vert\le 2\sqrt p,\qquad d=p+1\ \Rightarrow\ \lambda\le 2\sqrt{d-1}
 $$
-
-으로 두고 생성원을 사원수 대수에서 가져온다. $p$ 를 네 제곱수의 합으로 쓰는 방법의 개수가 $8(p+1)$ 이라는 Jacobi 의 정리가 $p+1$ 개의 생성원을 준다.
-
-이 Cayley 그래프의 고윳값은 [군의 표현](group-representations.md)론으로 계산되고 그 값이 사원수 대수 위 자기동형 형식의 Hecke 고윳값이다. Jacquet–Langlands 대응으로 이를 무게 2 첨점형식의 계수로 옮기면 Deligne 의 경계
-
-$$
-|a_p|\le 2\sqrt p
-$$
-
-가 적용된다. $d=p+1$ 이므로 이 부등식이 그래프 쪽에서 $\lambda\le2\sqrt{d-1}$ 이 된다.
 
 # 정의
 
