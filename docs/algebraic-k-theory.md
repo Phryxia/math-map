@@ -16,31 +16,9 @@ Quillen 이 $K_n$ 을 분류공간의 호모토피군으로 정의하면서 [호
 
 # 직관
 
-## 군의 열
+$K_0$ 은 사영 [가군](modules.md)이 직합에서 만드는 관계를 담고, $K_1$ 은 가군의 자기동형을 담는다. $K_2$ 는 한 단계 더 올라가, 자기동형을 기본행렬의 곱으로 적는 방식들 사이의 관계를 Steinberg 군의 핵으로 담는다. 같은 식으로 관계의 관계를 생성원과 관계로 적어 $K_3$ 을 만들려 하면 목록이 길어져 적을 수 없다.
 
-$K_0$ 은 [가군](modules.md)을 분류하고 $K_1$ 은 가군의 자기동형을 분류한다. 자기동형 사이의 관계, 그 관계 사이의 관계로 올라가면 열이 생긴다. 이것을 정리하는 방법이 공간을 만들어 호모토피군을 보는 것이다.
-
-$$
-K_n(R)=\pi_n\big(BGL(R)^{+}\times K_0(R)\big)\qquad(n\ge1)
-$$
-
-Quillen 의 plus 구성은 분류공간 $BGL(R)$ 에 세포를 붙여 [기본군](fundamental-group.md)을 아벨화하되 호몰로지는 바꾸지 않는 공간을 만든다. $\mathrm{GL}(R)$ 의 교환자 부분군이 완전군이므로 이 조작이 가능하다. 결과로 나오는 열은 국소화 완전열, 곱 구조, 함자성을 모두 만족한다.
-
-## Bernoulli 수의 분모
-
-$K_3(\mathbb Z)=\mathbb Z/48$ 의 48 과 $K_7(\mathbb Z)=\mathbb Z/240$ 의 240 은 Bernoulli 수의 분모에서 온다. $\zeta(-1)=-\tfrac1{12}$ , $\zeta(-3)=\tfrac1{120}$ 에 2 를 곱한 값이다. 같은 수가 구면의 안정 호모토피군의 im $J$ 부분에도 나타난다.
-
-$\mathbb Z$ 의 $K$ 군이 $\zeta$ 의 특수값을 재고 있다는 것이 현대적 설명이며, 그것을 정리로 만든 것이 Quillen–Lichtenbaum 이다. 분모는 [Bernoulli 수](bernoulli-numbers.md)의 von Staudt–Clausen 이 결정하고, 분자는 순환체의 류군이 결정한다.
-
-## 에탈 코호몰로지 환원
-
-$K$ 군을 직접 계산하기는 어렵다. 대신 $K$ 이론에서 에탈 코호몰로지로 가는 사상을 만들고 차수가 충분히 높으면 동형임을 보인다.
-
-$$
-K_n(\mathcal O_F;\mathbb Z_p)\ \longrightarrow\ K^{\text{ét}}\_n(\mathcal O_F;\mathbb Z_p)
-$$
-
-우변은 Galois 코호몰로지로 계산되고, 수체에서 그것은 류군과 단수군의 정보다. 이 사상이 동형이라는 것이 Quillen–Lichtenbaum 추측이며, Voevodsky 의 노름 잉여 동형 정리 이후 정리가 되었다.
+관계를 손으로 적는 대신 관계를 담는 공간을 만든다. 이산군 $\mathrm{GL}(R)$ 의 분류공간 $BGL(R)$ 은 [기본군](fundamental-group.md)이 $\mathrm{GL}(R)$ 이고 2 차 이상의 호모토피군은 전부 $0$ 이다. 여기에 세포를 붙여 기본군만 아벨화하고 호몰로지는 그대로 두면 기본군이 $\mathrm{GL}(R)^{\mathrm{ab}}=K_1(R)$ 로 줄고, 보존된 호몰로지가 2 차 이상의 호모토피군으로 나타난다. 이 조작이 가능한 것은 $\mathrm{GL}(R)$ 의 교환자 부분군 $E(R)$ 이 완전군이기 때문이고, 나오는 호모토피군이 $K_n(R)$ 이다.
 
 # 정의
 
@@ -70,7 +48,7 @@ $$
 K_n(\mathcal O_F[1/p];\mathbb Z_p)\ \xrightarrow{\ \sim\ }\ K^{\text{ét}}\_n(\mathcal O_F[1/p];\mathbb Z_p)
 $$
 
-는 동형이다. 우변은 $H^{i}\_{\text{ét}}(\mathcal O_F[1/p],\mathbb Z_p(j))$ 를 항으로 갖는 스펙트럼열로 계산된다.
+는 동형이다. 우변은 $H^{i}\_{\text{ét}}(\mathcal O_F[1/p],\mathbb Z_p(j))$ 를 항으로 갖는 스펙트럼열로 계산되고, 수체에서 그 코호몰로지는 류군과 단수군의 정보다.
 
 # 성질
 
@@ -79,6 +57,8 @@ $$
 | $n$ | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | $K_n(\mathbb Z)$ | $\mathbb Z$ | $\mathbb Z/2$ | $\mathbb Z/2$ | $\mathbb Z/48$ | $0$ | $\mathbb Z$ | $0$ | $\mathbb Z/240$ |
+
+$K_3(\mathbb Z)=\mathbb Z/48$ 의 48 과 $K_7(\mathbb Z)=\mathbb Z/240$ 의 240 은 $\zeta(-1)=-\tfrac1{12}$ 와 $\zeta(-3)=\tfrac1{120}$ 의 분모에 2 를 곱한 값이다. 분모는 [Bernoulli 수](bernoulli-numbers.md)의 von Staudt–Clausen 정리가 결정하고, 분자는 순환체의 류군이 결정한다. 같은 수가 구면의 안정 호모토피군의 im $J$ 부분에도 나타난다.
 
 $K_5(\mathbb Z)=\mathbb Z$ 의 계수 1 은 Borel 이 계산했다. 일반적으로 $K_{2i+1}(\mathcal O_F)$ 의 계수는 $\zeta_F$ 의 $s=-i$ 에서의 소멸 차수와 같다. 유리계수 부분은 Borel 이 해석적으로, 비틀림 부분은 Quillen–Lichtenbaum 이 산술적으로 결정한다.
 
