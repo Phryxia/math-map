@@ -16,27 +16,13 @@ Brauer 대수는 군의 군대수가 아니다. 원소가 치환이 아니라 �
 
 # 직관
 
-## 계약과 여계약
-
-$\mathrm{GL}(V)$ 불변인 $V^{\otimes k}\to V^{\otimes k}$ 사상은 텐서 자리를 섞는 것뿐이라 $S_k$ 가 답이었다.
-
-$\mathrm O(n)$ 은 불변 이차형식 $\langle\thinspace,\rangle$ 을 보존하므로 연산 두 개가 더 불변이 된다.
+$V=\mathbb C^n$ 에서 $V\otimes V\to V\otimes V$ 인 $\mathrm{GL}(V)$ 불변 사상은 항등과 두 자리를 맞바꾸는 것 둘뿐이다. $\mathrm O(n)$ 으로 줄이면 이 군이 불변 이차형식 $\langle\thinspace\cdot\thinspace,\thinspace\cdot\thinspace\rangle$ 을 보존하므로 사상 하나가 더 불변이 된다.
 
 $$
-\text{계약}:\ v\otimes w\ \mapsto\ \langle v,w\rangle,
-\qquad
-\text{여계약}:\ 1\ \mapsto\ \sum_i e_i\otimes e_i
+v\otimes w\ \mapsto\ \langle v,w\rangle\sum_i e_i\otimes e_i
 $$
 
-두 자리를 지워 스칼라로 만들고, 아무것도 없는 데서 두 자리를 만든다. 치환으로는 얻을 수 없는 연산이며, 이것들을 합성해 얻는 모든 사상이 중심화대수를 채운다.
-
-## 도형과 곱셈
-
-위에 점 $k$ 개, 아래에 점 $k$ 개를 놓고 전체 $2k$ 개 점을 완전히 짝짓는다. 위와 아래를 잇는 선은 텐서 자리를 옮기는 것, 위끼리 잇는 선은 계약, 아래끼리 잇는 선은 여계약이다. 치환은 위아래를 잇는 선만 쓰는 도형이다.
-
-곱셈은 도형 두 개를 세로로 쌓고 가운데 점들을 지우는 것이다. 어디에도 닿지 않는 닫힌 고리가 생기면 그 개수만큼 $\delta$ 를 곱한다. $\delta=n$ 일 때 고리 하나가 $\sum_i\langle e_i,e_i\rangle=n$ 이다.
-
-$B_k$ 의 차원은 $(2k-1)!!$ 이고 $k=7$ 에서 $135135$ 로 $k!=5040$ 의 27 배다.
+이 사상은 두 자리를 내적으로 지워 스칼라를 만들고 그 스칼라로 두 자리를 다시 만든다. 자리를 섞은 것이 아니라서 치환으로는 얻을 수 없고, 불변 사상이 $2$ 개에서 $3$ 개로 늘어난다. 위에 점 $k$ 개와 아래에 점 $k$ 개를 놓고 $2k$ 개를 완전히 짝지은 도형이 이 세 가지를 모두 적는다. 위아래를 잇는 선은 자리를 옮기는 것, 위끼리 잇는 선은 지우는 것, 아래끼리 잇는 선은 만드는 것이고 도형은 $(2k-1)!!$ 개다.
 
 | 작용 | 중심화대수 | 차원 | 도형 |
 | --- | --- | --- | --- |
@@ -57,7 +43,15 @@ $$
 
 ## 쌍대성
 
-$V=\mathbb C^n$ 에 표준 이차형식을 주면 $B_k(n)\to\mathrm{End}(V^{\otimes k})$ 가 정의되고 상이 $\mathrm{End}\_{\mathrm O(n)}(V^{\otimes k})$ 다. 심플렉틱 쪽은 $\delta=-2m$ 으로 같은 진술이 성립한다. $k\le n$ 이면 사상이 단사이고 $k\gt n$ 이면 핵이 생긴다.
+$V=\mathbb C^n$ 에 표준 이차형식을 주면 $B_k(n)\to\mathrm{End}(V^{\otimes k})$ 가 정의된다. 위아래를 잇는 선은 텐서 자리를 옮기고, 위끼리 잇는 선과 아래끼리 잇는 선은 각각 계약과 여계약으로 간다.
+
+$$
+\text{계약}:\ v\otimes w\ \mapsto\ \langle v,w\rangle,
+\qquad
+\text{여계약}:\ 1\ \mapsto\ \sum_i e_i\otimes e_i
+$$
+
+이 사상의 상이 $\mathrm{End}\_{\mathrm O(n)}(V^{\otimes k})$ 다. 닫힌 고리 하나는 여계약 뒤에 계약을 합성한 것이어서 $\sum_i\langle e_i,e_i\rangle=n$ 이고, 그래서 $\delta=n$ 이다. 심플렉틱 쪽은 $\delta=-2m$ 으로 같은 진술이 성립한다. $k\le n$ 이면 사상이 단사이고 $k\gt n$ 이면 핵이 생긴다.
 
 ## 제 1 기본정리
 
