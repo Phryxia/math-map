@@ -16,23 +16,9 @@ $\vartheta$ 의 출처는 정보이론이다. Shannon 이 1956 년에 무오류 
 
 # 직관
 
-## 독립집합의 벡터 완화
-
-각 정점 $i$ 에 단위벡터 $u_i$ 를 배정하되 인접하지 않은 두 정점의 벡터는 서로 직교하게 한다. 그리고 단위벡터 $c$ 를 하나 고정한다.
-
-독립집합 $S$ 의 정점들은 서로 인접하지 않으므로 그 벡터들이 서로 직교한다. 직교하는 단위벡터 $k$ 개에 대해 $\sum\langle c,u_i\rangle^2\le1$ 이므로, 각 $\langle c,u_i\rangle^2$ 가 $1/t$ 이상이면 $k\le t$ 다. 이 $t$ 의 최솟값이 $\vartheta$ 이고 $\alpha(G)\le\vartheta(G)$ 가 따라온다.
-
-정점을 고르거나 말거나 하는 0–1 결정을 정점에 벡터를 놓는 문제로 바꾸었다. 실행가능 영역이 볼록해지므로 최적화가 다항시간에 끝난다.
-
-## 클릭 덮개에서 오는 상계
+각 정점 $i$ 에 단위벡터 $u_i$ 를 배정해 인접하지 않은 두 정점의 벡터가 서로 직교하게 하고, 단위벡터 $c$ 를 하나 고정한다. 독립집합 $S$ 의 정점들은 서로 인접하지 않으므로 그 벡터들이 직교하고, 직교하는 단위벡터 $k$ 개에 대해 $\sum\langle c,u_i\rangle^2\le1$ 이다. 각 $\langle c,u_i\rangle^2$ 가 $1/t$ 이상이면 $k\le t$ 이므로 그 $t$ 의 최솟값이 $\alpha(G)$ 의 상계이고, 이 최솟값이 $\vartheta(G)$ 다. 정점을 고르거나 말거나 하는 0–1 결정이 정점에 벡터를 놓는 문제가 되어 실행가능 영역이 볼록해지고 최적화가 다항시간에 끝난다.
 
 $\bar G$ 를 $k$ 개의 색으로 칠하는 것은 $G$ 를 $k$ 개의 클릭으로 덮는 것이다. 각 클릭에 벡터 하나씩을 배정하면 위 완화의 실행가능해가 되고 그 값이 $k$ 이므로 $\vartheta(G)\le\chi(\bar G)$ 다. 정수 문제 둘이 하나의 볼록 완화를 사이에 두고 아래위로 놓인다.
-
-## 강곱에서의 곱셈성
-
-Shannon 용량을 다루려면 강곱 $G\boxtimes H$ 에서의 행동이 필요하다. $\alpha$ 는 곱셈적이지 않다. $\alpha(C_5)=2$ 인데 $\alpha(C_5\boxtimes C_5)=5$ 다.
-
-$\vartheta$ 는 곱셈적이다. 벡터 표현의 텐서곱이 실행가능해가 되므로 $\vartheta(G\boxtimes H)=\vartheta(G)\vartheta(H)$ 이고, 따라서 $\Theta(G)=\lim\alpha(G^{\boxtimes k})^{1/k}\le\vartheta(G)$ 가 극한 계산 없이 상계를 준다.
 
 # 정의
 
@@ -94,6 +80,8 @@ $$
 \vartheta(G\boxtimes H)=\vartheta(G)\thinspace\vartheta(H),\qquad
 \vartheta(G)\thinspace\vartheta(\bar G)\ge n
 $$
+
+곱셈성은 벡터 표현의 텐서곱이 다시 실행가능해가 되는 데서 나온다. $\alpha$ 는 곱셈적이지 않아 $\Theta$ 가 극한으로만 정의되지만, 곱셈성 덕분에 $\Theta(G)\le\vartheta(G)$ 는 극한을 계산하지 않고 나온다.
 
 정점추이적 그래프에서 둘째 부등식은 등호다. $C_5$ 는 자기 보그래프와 동형이므로 $\vartheta(C_5)^2=5$ 이고 $\vartheta(C_5)=\sqrt5$ 다.
 
