@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "savedAt": "2026-10-01T17:05:13.517Z",
-  "nextSeq": 1511,
+  "savedAt": "2026-10-01T21:07:57.597Z",
+  "nextSeq": 1513,
   "items": [
     {
-      "id": "1bcf372d",
-      "title": "직관 절이 두 문단을 넘는 문서 훑기 (18차)",
+      "id": "8676ce17",
+      "title": "직관 절이 두 문단을 넘는 문서 훑기 (19차)",
       "priority": 50,
-      "note": "17차(2026-10-01 다섯째 회차)에 15차 목록 열다섯을 모두 끝냈다. diffusion-models etale-cohomology greenberg-conjecture hodge-theory homomorphic-encryption kolyvagin-logachev lovasz-theta merel-theorem painleve-equations post-quantum-cryptography probabilistic-pca semidefinite-programming spectral-sparsification stokes-phenomenon tracy-widom. 이어서 산문 7문단 이상이던 peter-weyl mass-formula root-systems riemann-zeta p-adic-l-function mathieu-groups line-relaxation casselman-shalika instanton-floer-homology 아홉도 끝냈다.\n\n남은 규모. 직관 절의 산문 문단이 3개 이상인 문서가 338개다(표, 블록 수식, 목록, 인용은 제외하고 센 수). 많은 쪽부터: geometrization(7) brauer-algebras(6) color-refinement(6) crossing-number-inequality(6) dynamic-connectivity(6) full-approximation-scheme(6) gnn-expressivity(6) groups-of-finite-morley-rank(6) hartshorne-lichtenbaum(6) ideals-quotient-rings(6) jacobi-forms(6) measurable-functions(6) ramanujan-graphs(6) schur-polynomials(6) set-theoretic-complete-intersection(6) sherman-morrison(6) shimura-correspondence(6) sturm-liouville(6) teichmuller-space(6) volume-conjecture(6). 세는 스크립트는 직관 절을 빈 줄로 쪼개 산문 블록만 세면 된다.\n\n17차에서 굳은 방법. 직관의 H2 헤딩을 모두 없애고 산문 두 문단만 남긴다. 첫 문단은 독자가 손으로 따라갈 계산 하나(riemann-zeta 의 1+23+253+1771=2048, lovasz-theta 의 직교 단위벡터 합, tracy-widom 의 N*delta^(3/2)=1), 둘째 문단은 그 계산이 왜 그 개념을 부르는지. 블록 수식은 문단 끝에만 두고 식 뒤 해석은 다음 문단 첫 문장으로 올린다. 표와 mermaid 는 문단이 아니므로 남겨도 되지만, Dynkin 도표(root-systems)처럼 정의에 속하는 그림은 정의 절로 옮겼다.\n\n옮긴 자리의 규칙. 정의되지 않은 채 직관에서만 정의돼 있던 대상은 정의 절에 새 H2 를 만들어 옮긴다(p-adic-l-function 의 모듈러 기호, root-systems 의 양근·단순근·Dynkin 도표, line-relaxation 의 모형 문제 스텐실, instanton-floer-homology 의 Chern-Simons 범함수, peter-weyl 의 정규화 행렬계수). 증명 경로는 성질 절 '증명의 요지'(casselman-shalika), 분류 정리는 성질 절 새 절(mathieu-groups 의 완전 부호 분류, mass-formula 의 Tamagawa 수 동치)로 옮긴다.\n\n주의. 직관에서 문단을 지우면 그 안에 있던 두문자어 풀이가 사라진다. diffusion-models 의 KL, semidefinite-programming 의 SDP 가 그랬고 각각 성질 절과 개요에서 다시 풀었다. 커밋 전에 grep -noE '\\b[A-Z]{2,}\\b' 로 첫 등장 줄을 확인한다. 정의 절이 '행렬계수는 위와 같고' 처럼 직관을 가리키고 있으면 그 참조도 함께 고친다(peter-weyl, line-relaxation 의 '직관 절의 기호에서').",
-      "createdAt": "2026-10-01T17:03:21.890Z",
-      "seq": 1509
+      "note": "18차(2026-10-01 여섯째 회차)에 산문 6문단이던 스무 개 가운데 열아홉을 끝냈다. brauer-algebras color-refinement crossing-number-inequality dynamic-connectivity full-approximation-scheme gnn-expressivity groups-of-finite-morley-rank hartshorne-lichtenbaum ideals-quotient-rings jacobi-forms measurable-functions ramanujan-graphs schur-polynomials set-theoretic-complete-intersection sherman-morrison shimura-correspondence sturm-liouville teichmuller-space volume-conjecture. 이어서 5문단이던 abelian-varieties airy-functions anyons baire-category banach-tarski bell-numbers block-designs borel-hierarchy burnside-lemma calculus-of-variations characteristic-classes continued-fractions curvature cw-complexes diophantine-approximation effective-resistance erdos-ko-rado erdos-renyi-graphs fibrations fraisse-limits graph-isomorphism hamiltonian-cycles kalman-filter 스물셋도 끝냈다. 남은 규모는 295개이고 5문단짜리부터 이어간다: hyperarithmetical-hierarchy internal-set-theory jacobian-variety koszul-complex kripke-semantics krull-dimension latin-squares littlewood-offord lobachevsky-function local-fourier-analysis localization-rings markov-decision-process martins-axiom matroids multi-armed-bandits obstruction-theory optimal-stopping p-adic-height policy-gradient postnikov-tower prime-ideals prime-number-theorem primes rademacher-theorem representable-functors reverse-mathematics riemann-hypothesis series-convergence sheaves. measure 는 CLAUDE.md 4절의 모범 예라서 손대지 않았고, 큐의 '직관 두 문단 규칙과 모범 예의 어긋남' 항목이 정리되기를 기다린다. 18차에서 굳은 처리. 직관의 H2 헤딩을 모두 없애고 산문 두 문단만 남기되 각 문단은 4문장을 넘기지 않는다. 표와 mermaid 는 문단이 아니므로 남긴다. 블록 수식은 문단 끝에 몰아 두고 식 뒤 해석은 다음 문단 첫 문장으로 올리거나 식을 인라인으로 내린다. 직관에만 있던 정의는 정의 절에 옮긴다(brauer-algebras 의 계약·여계약, anyons 의 양자 차원, measurable-functions 의 연속함수 가측성, abelian-varieties 의 divisor 몫, volume-conjecture 의 Witten 대비 표, schur-polynomials 의 세 정의의 쓰임). 수식 안의 | 를 \\\\vert 로 고치는 작업이 함께 붙는다(ramanujan-graphs shimura-correspondence volume-conjecture calculus-of-variations 에서 나왔다).",
+      "createdAt": "2026-10-01T21:07:35.100Z",
+      "seq": 1512
     },
     {
       "id": "e0bb0524",
@@ -82,6 +82,14 @@
       "note": "CLAUDE.md 2절 3단계의 집계는 목록, 표, 블록 수식, 코드블록을 문단으로 세어 과대 집계한다. 16차에서 쓴 것은 다음이다. 직관 절만 보고 코드블록과 $$ 블록을 토글로 건너뛰고, 목록 표 인용 헤딩으로 시작하는 줄을 빼고, 빈 줄 뒤 첫 산문 줄만 센다. awk '/^# 직관/{inSec=1; next} /^# /{inSec=0} !inSec{next} /^[[:space:]]*(```|~~~)/{code=!code; next} code{next} /^[[:space:]]*$$/{blk=!blk; prose=0; next} blk{next} /^[[:space:]]*$/{prose=0; next} /^[[:space:]]*([-*+]|[0-9]+\\.|\\||>|#)/{prose=0; next} { if(!prose) c++; prose=1 } END{print c+0}' 로 572 문서를 돌리면 363 개가 3 문단 이상이다. dev/ 스크립트는 고치지 않으므로(0절) 독자가 dev 에 넣을지 판단한다.",
       "createdAt": "2026-10-01T13:13:02.183Z",
       "seq": 1508
+    },
+    {
+      "id": "b4ccf30f",
+      "title": "문체 grep 이 '증명의 요지' 헤딩을 문장으로 오판한다",
+      "priority": 20,
+      "note": "4절 문체 규칙의 grep -nE '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) *$' 는 '## 증명의 요지' 를 걸러낸다. 그런데 같은 4절은 '증명의 뼈대' 를 '증명의 요지' 로 쓰라고 권하고, 문서 15 개가 이 헤딩을 쓴다. grep 의 [^로]지 를 [^로요]지 같은 것으로 좁히거나, 걸린 헤딩 가운데 관용 헤딩을 예외로 적는 문구가 CLAUDE.md 에 필요하다. 독자의 판단이 필요한 CLAUDE.md 수정이라 문서는 손대지 않았다.",
+      "createdAt": "2026-10-01T20:43:50.010Z",
+      "seq": 1511
     },
     {
       "id": "b4810afe",
