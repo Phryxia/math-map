@@ -16,31 +16,9 @@ $y_m$ 은 판별식 $-m$ 의 Heegner 점들을 자취로 모은 인자류이고 
 
 # 직관
 
-## 무한히 많은 점과 유한생성 군
+$X_0(N)$ 위에는 허수이차체마다 Heegner 점이 있고 허수이차 판별식은 무한히 많다. 이 점들을 $J_0(N)$ 안의 인자류로 옮기면 $y_1,y_2,y_3,\dots$ 가 나온다. Mordell–Weil 정리로 $J_0(N)(\mathbb Q)$ 는 유한생성이므로 유리수 계수의 선형관계 $\sum_{m\gt 0}c_m\thinspace y_m=0$ 이 무한히 많다. 어느 $(c_m)$ 이 관계인지 하나씩 찾는 길은 끝나지 않는다.
 
-$X_0(N)$ 위에는 허수이차체마다 Heegner 점들이 있고, 허수이차 판별식은 무한히 많다. 이 점들을 $J_0(N)$ 안의 인자류로 옮기면 $y_1,y_2,y_3,\dots$ 가 나온다. Mordell–Weil 정리로 $J_0(N)(\mathbb Q)$ 는 유한생성이므로 유리수 계수의 선형관계
-
-$$
-\sum_{m\gt 0}c_m\thinspace y_m=0
-$$
-
-가 무한히 많다. 어느 $(c_m)$ 이 여기 드는지가 문제다.
-
-## 생성함수로 옮긴 문제
-
-관계를 하나씩 찾는 대신 점을 계수로 삼은 급수 $\sum_m y_m q^m$ 을 본다. 이 급수가 유한차원 형식 공간 $S$ 의 원소와 $J$ 의 원소를 곱한 것들의 합, 곧 $S\otimes J$ 의 원소라 하자. $\sum_m y_m q^m=\sum_j g_j\otimes v_j$ 로 쓰면 $y_m=\sum_j a_{g_j}(m)v_j$ 이므로
-
-$$
-\sum_m c_m\thinspace y_m=\sum_j\Bigl(\sum_m c_m\thinspace a_{g_j}(m)\Bigr)v_j
-$$
-
-이고, $S$ 의 모든 $g$ 에 대해 $\sum_m c_m a_g(m)=0$ 인 $(c_m)$ 은 관계가 된다. 역도 성립한다. 관계를 전부 아는 것과 급수가 어느 공간에 드는지 아는 것이 같은 문제다.
-
-## 무게 $3/2$
-
-그 공간은 준위 $4N$ 무게 $3/2$ 의 Kohnen 플러스 공간이다. 판별식 $-m$ 이 $4N$ 을 법으로 제곱이어야 Heegner 점이 생기고, 플러스 공간의 계수가 살아남는 $m$ 의 조건이 그것과 맞는다. Hecke 작용소 $T_p$ 가 $y_m$ 들을 섞는 방식도 Shimura 대응이 무게 $3/2$ 쪽에 주는 Hecke 작용과 맞는다.
-
-공간이 유한차원이므로 $m$ 이 그 차원을 넘으면 $y_m$ 은 앞의 점들의 유리수 결합이다. 무한히 많던 관계가 유한 개의 계수로 결정된다.
+관계를 하나씩 찾는 대신 점을 계수로 삼은 급수 $\sum_m y_m q^m$ 을 본다. 이 급수가 유한차원 형식 공간 $S$ 와 $J$ 의 텐서곱 $S\otimes J$ 에 들면 $\sum_m y_mq^m=\sum_j g_j\otimes v_j$ 로 적히고 $y_m=\sum_j a_{g_j}(m)v_j$ 가 된다. 그러면 $\sum_m c_m\thinspace y_m=0$ 은 $S$ 의 모든 $g$ 에 대해 $\sum_m c_m\thinspace a_g(m)=0$ 이라는 조건과 같고 역도 성립한다. 관계를 전부 아는 것이 급수가 어느 공간에 드는지 아는 것으로 바뀐다.
 
 # 정의
 
@@ -67,8 +45,10 @@ $$
 ## Kohnen 플러스 공간
 
 $$
-S^+\_{3/2}(\Gamma_0(4N))=\Bigl\lbrace g=\sum a(m)q^m\in S_{3/2}(\Gamma_0(4N)):\ a(m)=0\ \text{ unless }\ -m\equiv0,1\ (\mathrm{mod}\ 4)\Bigr\rbrace
+S^+\_{3/2}(\Gamma_0(4N))=\Bigl\lbrace g=\sum a(m)q^m\in S_{3/2}(\Gamma_0(4N)):\ a(m)\ne0\Rightarrow -m\equiv0,1\ (\mathrm{mod}\ 4)\Bigr\rbrace
 $$
+
+계수가 살아남는 $m$ 의 조건이 Heegner 인자류가 $0$ 이 아닐 수 있는 $m$ 의 조건과 맞는다. Hecke 작용소가 $y_m$ 들을 섞는 방식도 Shimura 대응이 무게 $3/2$ 쪽에 주는 Hecke 작용과 맞는다.
 
 ## 정리
 
