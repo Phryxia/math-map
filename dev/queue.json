@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "savedAt": "2026-10-01T01:07:24.239Z",
-  "nextSeq": 1500,
+  "savedAt": "2026-10-01T05:05:26.535Z",
+  "nextSeq": 1503,
   "items": [
     {
-      "id": "f79eb7ed",
-      "title": "직관 절이 두 문단을 넘는 문서 훑기 (14차)",
+      "id": "0daa6a75",
+      "title": "직관 절이 두 문단을 넘는 문서 훑기 (15차)",
       "priority": 50,
-      "note": "13차(2026-10-01 첫 회차)에 하위 절 셋짜리 열여덟 문서를 고쳤다. modular-tensor-categories, wess-zumino-witten, casson-invariant, fft, hyperbolic-3-manifolds, laplace-method, partitions, speh-representations, intuitionism, arthur-parameters, discrete-logarithm, feynman-kac, schur-weyl-duality, resurgence, bounded-operators, kahler-manifolds, unbounded-operators, s-cobordism.\n\n하위 절 셋 이상이 남은 문서가 61 개다. 다음 후보는 umbral-moonshine, algebraic-k-theory, exact-wkb, fredholm-determinant, gross-kohnen-zagier, langlands-program 순이다. 후보는 다음으로 센다.\nfor f in docs/*.md; do n=$(awk '/^# 직관/{i=1;next} /^# (정의|성질|활용|연관 문서)/{i=0} i && /^## /{c++} END{print c+0}' \"$f\"); l=$(awk '/^# 직관/{i=1;next} /^# (정의|성질|활용|연관 문서)/{i=0} i' \"$f\" | wc -l); [ \"$n\" -ge 3 ] && echo \"$n $l $(basename $f .md)\"; done | sort -k1,1rn -k2,2rn\n\n남긴 절의 기준은 12차와 같았다. 독자가 아는 도구로 실제 계산을 해 보이는 절만 남겼다. fft 의 나비 연산, laplace-method 의 최대점 폭, partitions 의 곱과 분할 대응, speh-representations 의 GL_2 Eisenstein 유수, feynman-kac 의 Itô 전개, schur-weyl-duality 의 k=2 분해, resurgence 의 합성곱 기하, bounded-operators 의 sin(nx) 미분, unbounded-operators 의 세 정의역, kahler-manifolds 의 (p,q) 분해, casson-invariant 의 교차 부호, hyperbolic-3-manifolds 의 경계 차원 비교가 그랬다.\n\n옮긴 자리. 정의 절에 절을 새로 만든 것이 wess-zumino-witten(Wess-Zumino 항), hyperbolic-3-manifolds(홀로노미 표현, 이상 사면체와 모양 매개변수), bounded-operators(콤팩트 작용소)다. s-cobordism 은 Whitehead 군 절 앞에 기저 변환 문단을 넣었다. 성질 절에 새 절을 만든 것이 modular-tensor-categories(원환면 위의 SL_2(Z) 작용), wess-zumino-witten(유니터리성의 절단), casson-invariant(Rokhlin 불변량), fft(합성곱 정리), partitions(원법), speh-representations(Satake 매개변수와 Ramanujan 경계), intuitionism(결정가능 명제), schur-weyl-duality(이중 중심화 정리), unbounded-operators(자기수반의 필요성)다. 기존 절에 문단만 보탠 것이 laplace-method, arthur-parameters, discrete-logarithm, feynman-kac, resurgence, kahler-manifolds 다.\n\n조립 사고. 세 번 났고 전부 sed 구간을 이어 붙인 자리의 빈 줄이었다. (1) heredoc 이 바로 '## 헤딩' 으로 시작하면 앞 구간 끝의 빈 줄이 없어 '# 성질' 과 '## 헤딩' 이 붙는다. (2) heredoc 끝의 빈 줄과 다음 sed 구간 첫 빈 줄이 겹쳐 빈 줄이 둘이 된다. (3) 직관 절 내용만 뽑을 때 sed 범위가 다음 H2 헤딩을 물고 들어온다. 조립 직후 awk 로 빈 줄 연속을 보고 grep -n '^#' 로 헤딩 간격을 함께 본다.\n\n고친 문체 위반. speh-representations 의 '## 유니터리 쌍대의 벽돌' 과 본문 '기본 벽돌' 을 'Tadić 의 유니터리 쌍대 분류'/'기본 구성단위' 로 고쳤다(4절 문학적 비유). schur-weyl-duality 의 '증명의 무게는 전부 ~ 에 실린다' 를 '증명에서 보일 것은 ~ 하나다' 로 고쳤다.\n\n두문자어. 같은 약어를 개요와 직관에서 두 번 푼 문서가 셋이었다(modular-tensor-categories 의 MTC, wess-zumino-witten 의 WZW). 첫 등장만 남기고 뒤를 지웠다. fft 는 FFT 가 직관에만 풀려 있어 개요로 옮겼고, schur-weyl-duality 의 SSYT 는 원어가 빠져 있어 채웠다.\n\n열린 문제. modular-tensor-categories 의 'VOA 로 실현되는지는 열린 문제다' 에 각주가 없어 Rowell-Wang, Bull. AMS 55 (2018) 5.3 절을 각주 2 로 달았다(4절 열린 문제 규칙). 직관을 고치다 각주 없는 열린 문제 문장을 보면 그 자리에서 출처를 달거나 문장을 지운다.",
-      "createdAt": "2026-10-01T01:06:59.295Z",
-      "seq": 1499
+      "note": "14차(2026-10-01 둘째 회차)에 열두 문서를 고쳤다. umbral-moonshine, algebraic-k-theory, exact-wkb, fredholm-determinant, gross-kohnen-zagier, langlands-program, algebraic-number-fields, dirichlet-l-functions, unbalanced-optimal-transport, galois-representations, jacquet-langlands, pcp-theorem, pairing-based-cryptography, riemann-surfaces, sphere-packing, tensor-products.\n\n하위 절 셋 이상이 남은 문서가 44 개다. 후보는 다음으로 센다.\nfor f in docs/*.md; do n=$(awk '/^# 직관/{i=1;next} /^# (정의|성질|활용|연관 문서)/{i=0} i && /^## /{c++} END{print c+0}' \"$f\"); [ \"$n\" -ge 3 ] && echo \"$n $(basename $f .md)\"; done | sort -rn\n\n남긴 기준. 독자가 아는 도구로 실제 계산을 해 보이는 자리만 직관에 남겼다. fredholm-determinant 의 lambda_i=1/(i+1) 부분곱이 1/(n+1) 로 가는 계산, algebraic-number-fields 의 Z[sqrt(-5)] 에서 6 의 두 분해, tensor-products 의 Z/2 tensor Z/3 = 0, sphere-packing 의 Construction A 거리 비교, dirichlet-l-functions 의 지표 필터, exact-wkb 의 최적 절단 오차와 반대쪽 지수해, riemann-surfaces 의 w^2=z 두 장 붙이기가 그랬다.\n\n옮긴 자리. 정의 절에 절을 새로 만든 것이 exact-wkb(Stokes 곡선과 Stokes 그래프 — 정의 절에 없이 안장 연결에서 쓰이고 있었다), pairing-based-cryptography(간극 Diffie-Hellman 군). 성질 절에 새 절을 만든 것이 fredholm-determinant(급수의 수렴, Hadamard 부등식), langlands-program(대응의 유일성), dirichlet-l-functions(L(1,chi) != 0), pcp-theorem(대수적 증명의 부호), riemann-surfaces(곡률과 종수). 기존 절에 문단만 보탠 것이 umbral-moonshine, algebraic-k-theory, gross-kohnen-zagier, algebraic-number-fields, galois-representations, jacquet-langlands, sphere-packing.\n\n중복이라 버린 내용이 많았다. 직관 절의 하위 절은 정의나 성질 절과 같은 말을 되풀이하는 경우가 흔하다. 옮기기 전에 정의와 성질 절을 먼저 읽어 겹치는지 확인한다. unbalanced-optimal-transport 는 직관 세 절이 전부 다른 절에 있어 옮길 것이 없었다.\n\n지시어 끊김. 직관을 지우면 다른 절의 '위의', '다음' 같은 지시어가 가리킬 것을 잃는다. jacquet-langlands 의 국소 대응 절이 '위의 지표 항등식으로 특징지어진다' 였는데 그 식이 직관에 있어서, 식을 국소 대응 절로 옮기고 '아래' 로 고쳤다. 직관을 지운 뒤 그 문서에서 '위의', '앞의', '다음' 을 grep 한다.\n\n링크 중복. 직관에서 쓴 본문 링크가 개요에도 있으면 4절의 최초 1회 규칙에 걸린다. algebraic-k-theory(homotopy-groups), exact-wkb(borel-pade)가 그랬다. 반대로 직관에만 있던 링크가 통째로 사라지는 경우도 있어 옮긴 문단에 함께 옮겼다. algebraic-number-fields(lattices), dirichlet-l-functions(fourier-series), galois-representations(riemann-hypothesis), exact-wkb(homology), jacquet-langlands(fundamental-lemma)가 그랬다. 작업 뒤 grep -noE '\\[[^]]*\\]\\([a-z0-9-]*\\.md\\)' 로 중복과 소실을 함께 본다.\n\n조립 사고. 빈 문서를 만든 적이 한 번 있다. cat -s 로 연속 빈 줄을 압축하려고 awk 'NR==FNR{next}1' /dev/null file 을 썼는데 /dev/null 이 비어 있어 NR==FNR 이 두 번째 파일에서도 참이 되어 모든 줄이 버려졌다. git checkout 으로 복구했다. 빈 줄 압축은 sed 로 해당 줄 번호만 지우고 awk 'p==\"\"&&$0==\"\"{print NR}{p=$0}' 로 확인한다. perl -0pi 의 \\Q...\\E 안에서도 변수 보간은 일어나므로 $h, $M_ 같은 문자열이 빈 문자열로 치환되어 매칭이 조용히 실패한다. 수식이 든 치환은 sed 로 한다.\n\n문체. 고친 것이 umbral-moonshine('구조적이다', '가장 풍부하므로 먼저 발견됐다', '다섯 줄짜리 재귀', 각주의 '본문의 근계 열거는 직접 계산한 것이다'), gross-kohnen-zagier(수식 안 \\text{ unless } 를 \\ne0\\Rightarrow 로). 두문자어는 umbral-moonshine 의 EOT/CDH 를 약어 없이 풀네임으로 바꾸고 BPS 를 풀었다.",
+      "createdAt": "2026-10-01T05:04:52.240Z",
+      "seq": 1501
     },
     {
       "id": "4da47857",
@@ -42,6 +42,14 @@
       "note": "제목이 'Siegel–Weil 공식과 이차형식의 표현수' 이고 파일명이 siegel-weil 이다. 표현수는 활용 쪽이고 문서의 중심은 공식이므로 제목을 좁히는 쪽이 유력하다. 성질 절 '류가 하나인 경우'/'류가 여럿인 경우' 가 표현수 계산을 담고 있어 분할 기준에는 닿지 않는다. 4절 제목 규칙.",
       "createdAt": "2026-09-30T21:10:26.693Z",
       "seq": 1496
+    },
+    {
+      "id": "8f802467",
+      "title": "tensor-products 의 mermaid 노드 레이블 M (x)_R N",
+      "priority": 30,
+      "note": "4절 수식 검수의 awk 가 docs/tensor-products.md 의 mermaid 블록 안 노드 레이블 'M (x)_R N' 을 이스케이프 안 된 밑줄로 보고한다. mermaid 코드블록 안이라 마크다운 강조로 해석되지 않고 render-check 도 통과하므로 실제 렌더 문제는 아니다. awk 의 코드블록 토글이 블록 안의 $$ 때문에 어긋나 생긴 오탐으로 보인다. 레이블을 \\_ 로 쓰면 mermaid 에 백슬래시가 그대로 나오므로 레이블을 'M tensor_R N' 처럼 밑줄 앞을 영숫자로 바꾸는 쪽이 낫다. dev/ 스크립트는 고치지 않는다(0절).",
+      "createdAt": "2026-10-01T05:05:05.061Z",
+      "seq": 1502
     },
     {
       "id": "b4810afe",
@@ -1562,6 +1570,14 @@
       "note": "대수/수리물리. schellekens-list 의 갈래는 타입 개수만 말하고 표가 없다. 표가 schellekens-list 안에 들어갈 분량인지, 별도 문서인지 8절 기준으로 판단한다. 무게 1 Lie 대수 타입과 구성 방법(격자 VOA, 오비폴드 차수)을 열로 두는 안.",
       "createdAt": "2026-09-30T05:05:51.942Z",
       "seq": 1486
+    },
+    {
+      "id": "ad12f200",
+      "title": "Golay 부호",
+      "priority": 10,
+      "note": "조합론/부호론. umbral-moonshine 과 niemeier-lattices 본문에서 Golay 부호의 자기동형군이 M_24 라는 사실을 쓰는데 문서가 없어 링크 없이 이름만 썼다. 부모는 niemeier-lattices 가 아니라 error-correcting-codes 쪽이 맞고, mathieu-groups 와 niemeier-lattices 가 자식 후보다. 이진 Golay 부호 [24,12,8] 의 구성(사차잉여, Leech 격자와의 관계)과 완전부호성을 담는다.",
+      "createdAt": "2026-10-01T04:42:24.214Z",
+      "seq": 1500
     },
     {
       "id": "dfb3e493",
