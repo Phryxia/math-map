@@ -1,15 +1,23 @@
 {
   "version": 1,
-  "savedAt": "2026-10-01T05:05:26.535Z",
-  "nextSeq": 1503,
+  "savedAt": "2026-10-01T09:06:54.966Z",
+  "nextSeq": 1507,
   "items": [
     {
-      "id": "0daa6a75",
-      "title": "직관 절이 두 문단을 넘는 문서 훑기 (15차)",
+      "id": "e206480c",
+      "title": "직관 절이 두 문단을 넘는 문서 훑기 (16차)",
       "priority": 50,
-      "note": "14차(2026-10-01 둘째 회차)에 열두 문서를 고쳤다. umbral-moonshine, algebraic-k-theory, exact-wkb, fredholm-determinant, gross-kohnen-zagier, langlands-program, algebraic-number-fields, dirichlet-l-functions, unbalanced-optimal-transport, galois-representations, jacquet-langlands, pcp-theorem, pairing-based-cryptography, riemann-surfaces, sphere-packing, tensor-products.\n\n하위 절 셋 이상이 남은 문서가 44 개다. 후보는 다음으로 센다.\nfor f in docs/*.md; do n=$(awk '/^# 직관/{i=1;next} /^# (정의|성질|활용|연관 문서)/{i=0} i && /^## /{c++} END{print c+0}' \"$f\"); [ \"$n\" -ge 3 ] && echo \"$n $(basename $f .md)\"; done | sort -rn\n\n남긴 기준. 독자가 아는 도구로 실제 계산을 해 보이는 자리만 직관에 남겼다. fredholm-determinant 의 lambda_i=1/(i+1) 부분곱이 1/(n+1) 로 가는 계산, algebraic-number-fields 의 Z[sqrt(-5)] 에서 6 의 두 분해, tensor-products 의 Z/2 tensor Z/3 = 0, sphere-packing 의 Construction A 거리 비교, dirichlet-l-functions 의 지표 필터, exact-wkb 의 최적 절단 오차와 반대쪽 지수해, riemann-surfaces 의 w^2=z 두 장 붙이기가 그랬다.\n\n옮긴 자리. 정의 절에 절을 새로 만든 것이 exact-wkb(Stokes 곡선과 Stokes 그래프 — 정의 절에 없이 안장 연결에서 쓰이고 있었다), pairing-based-cryptography(간극 Diffie-Hellman 군). 성질 절에 새 절을 만든 것이 fredholm-determinant(급수의 수렴, Hadamard 부등식), langlands-program(대응의 유일성), dirichlet-l-functions(L(1,chi) != 0), pcp-theorem(대수적 증명의 부호), riemann-surfaces(곡률과 종수). 기존 절에 문단만 보탠 것이 umbral-moonshine, algebraic-k-theory, gross-kohnen-zagier, algebraic-number-fields, galois-representations, jacquet-langlands, sphere-packing.\n\n중복이라 버린 내용이 많았다. 직관 절의 하위 절은 정의나 성질 절과 같은 말을 되풀이하는 경우가 흔하다. 옮기기 전에 정의와 성질 절을 먼저 읽어 겹치는지 확인한다. unbalanced-optimal-transport 는 직관 세 절이 전부 다른 절에 있어 옮길 것이 없었다.\n\n지시어 끊김. 직관을 지우면 다른 절의 '위의', '다음' 같은 지시어가 가리킬 것을 잃는다. jacquet-langlands 의 국소 대응 절이 '위의 지표 항등식으로 특징지어진다' 였는데 그 식이 직관에 있어서, 식을 국소 대응 절로 옮기고 '아래' 로 고쳤다. 직관을 지운 뒤 그 문서에서 '위의', '앞의', '다음' 을 grep 한다.\n\n링크 중복. 직관에서 쓴 본문 링크가 개요에도 있으면 4절의 최초 1회 규칙에 걸린다. algebraic-k-theory(homotopy-groups), exact-wkb(borel-pade)가 그랬다. 반대로 직관에만 있던 링크가 통째로 사라지는 경우도 있어 옮긴 문단에 함께 옮겼다. algebraic-number-fields(lattices), dirichlet-l-functions(fourier-series), galois-representations(riemann-hypothesis), exact-wkb(homology), jacquet-langlands(fundamental-lemma)가 그랬다. 작업 뒤 grep -noE '\\[[^]]*\\]\\([a-z0-9-]*\\.md\\)' 로 중복과 소실을 함께 본다.\n\n조립 사고. 빈 문서를 만든 적이 한 번 있다. cat -s 로 연속 빈 줄을 압축하려고 awk 'NR==FNR{next}1' /dev/null file 을 썼는데 /dev/null 이 비어 있어 NR==FNR 이 두 번째 파일에서도 참이 되어 모든 줄이 버려졌다. git checkout 으로 복구했다. 빈 줄 압축은 sed 로 해당 줄 번호만 지우고 awk 'p==\"\"&&$0==\"\"{print NR}{p=$0}' 로 확인한다. perl -0pi 의 \\Q...\\E 안에서도 변수 보간은 일어나므로 $h, $M_ 같은 문자열이 빈 문자열로 치환되어 매칭이 조용히 실패한다. 수식이 든 치환은 sed 로 한다.\n\n문체. 고친 것이 umbral-moonshine('구조적이다', '가장 풍부하므로 먼저 발견됐다', '다섯 줄짜리 재귀', 각주의 '본문의 근계 열거는 직접 계산한 것이다'), gross-kohnen-zagier(수식 안 \\text{ unless } 를 \\ne0\\Rightarrow 로). 두문자어는 umbral-moonshine 의 EOT/CDH 를 약어 없이 풀네임으로 바꾸고 BPS 를 풀었다.",
-      "createdAt": "2026-10-01T05:04:52.240Z",
-      "seq": 1501
+      "note": "15차(2026-10-01 셋째 회차)에 스물세 문서를 고쳤다. compactness, cardinality, bayes, metric-spaces, fourier, dominated-convergence, completeness, sylow-theorems, quadratic-reciprocity, lattices, modules, covering-spaces, elliptic-curves, topological-sort, computability, differential-forms, girsanov, banach-fixed-point, adjunctions, gauss-bonnet, de-rham-cohomology, perfect-graphs, kernel-pca. 남은 문서 22 개는 chebotarev diffusion-models etale-cohomology greenberg-conjecture hodge-theory homomorphic-encryption kleisli-eilenberg-moore kolyvagin-logachev lovasz-theta lp-rounding merel-theorem painleve-equations post-quantum-cryptography probabilistic-pca semidefinite-programming spectral-sparsification stokes-phenomenon structural-set-theory tracy-widom vogan-packets waldspurger-formula 다. 개수는 CLAUDE.md 2절 3단계의 awk 로 다시 센다.\n\n쓸 만한 틀. 직관 첫 문단을 독자가 아는 도구로 하는 구체적 계산 하나로 채우고, 둘째 문단에서 그 계산이 막힌 이유나 불변량을 받아 개념 이름을 마지막 문장에 붙인다. compactness(1/x 의 delta 가 0 으로 줄어드는 계산), completeness(유리수에서 Newton 반복), gauss-bonnet(정육면체 각도 결손 4pi = 구면 곡률 적분), sylow-theorems(A4 에 위수 6 부분군이 없음을 제곱원소 세기로), lattices(Fibonacci 기저로 짧은 벡터가 안 보이는 예), quadratic-reciprocity(x^2=5 mod 103 을 법 5 로 내려 한 줄에 판정), banach-fixed-point(x=cos x 반복과 sin 1 < 0.85)가 그 꼴이다.\n\n옮긴 자리. 정리와 그 증명은 성질로(lattices 의 Minkowski 증명, elliptic-curves 의 결합법칙, differential-forms 의 d-제곱-0, quadratic-reciprocity 의 원분체 이차 부분체, topological-sort 의 선형 확장과 추이 축약, banach-fixed-point 의 가정 반례표, bayes 의 승산 형태, metric-spaces 의 거리 아닌 척도, completeness 의 arctan 거리, adjunctions 의 Galois 연결, gauss-bonnet 의 Descartes 결손 정리), 정의에 속한 것은 정의로(cardinality 의 유리수 나열, fourier 의 직교성, computability 의 인식 가능 비대칭, girsanov 의 Itô 보정, modules 의 아이디얼=부분가군, kernel-pca 의 중심화) 옮겼다.\n\n주의. 블록 수식을 가운데 둔 절에 문단을 끼워 넣으면 '위 부등식', '반지름 r 인 공에 적용하면' 같은 줄이 식과 떨어진다. 삽입 뒤 그 절을 눈으로 다시 읽는다. banach-fixed-point 의 오차 한계와 lattices 의 Minkowski 에서 각각 한 번 어긋나 고쳤다. sed 범위로 문서를 재조립할 때 H1 헤딩(# 정의)을 빼먹기 쉽다. perfect-graphs 에서 한 번 그랬고 grep -n '^# ' 로 잡았다. 수식이 든 치환에 perl -i -pe 를 쓰면 $( 와 $1 이 보간되어 줄이 깨지므로 heredoc 과 sed 로 한다.",
+      "createdAt": "2026-10-01T09:03:19.127Z",
+      "seq": 1506
+    },
+    {
+      "id": "e0bb0524",
+      "title": "perl -i -pe 치환에서 $ 보간으로 수식 줄이 깨지는 사고",
+      "priority": 40,
+      "note": "15차에서 banach-fixed-point 의 수렴 속도 문단을 perl -i -pe 's/.../$(x+2)\\/3$ .../' 로 바꾸다 치환 문자열의 $( 와 $0, $1 이 perl 변수로 보간되어 줄이 'x+2)/3 -e서 시작해' 처럼 깨졌다. render-check 는 원문과 렌더 결과를 비교하므로 이것을 잡지 못했고 커밋까지 올라가 다음 커밋에서 고쳤다. 수식이 든 치환은 perl 대신 heredoc 으로 파일을 새로 쓰고 sed 로 줄을 갈아 끼운다. 큐에 이미 비슷한 메모(perl -0pi 의 \\Q...\\E 보간)가 있으니 함께 본다.",
+      "createdAt": "2026-10-01T08:57:24.447Z",
+      "seq": 1504
     },
     {
       "id": "4da47857",
@@ -50,6 +58,14 @@
       "note": "4절 수식 검수의 awk 가 docs/tensor-products.md 의 mermaid 블록 안 노드 레이블 'M (x)_R N' 을 이스케이프 안 된 밑줄로 보고한다. mermaid 코드블록 안이라 마크다운 강조로 해석되지 않고 render-check 도 통과하므로 실제 렌더 문제는 아니다. awk 의 코드블록 토글이 블록 안의 $$ 때문에 어긋나 생긴 오탐으로 보인다. 레이블을 \\_ 로 쓰면 mermaid 에 백슬래시가 그대로 나오므로 레이블을 'M tensor_R N' 처럼 밑줄 앞을 영숫자로 바꾸는 쪽이 낫다. dev/ 스크립트는 고치지 않는다(0절).",
       "createdAt": "2026-10-01T05:05:05.061Z",
       "seq": 1502
+    },
+    {
+      "id": "9bc3b9fa",
+      "title": "문체 헤딩 grep 의 '증명의 요지' 오탐",
+      "priority": 20,
+      "note": "4절 문체 규칙의 헤딩 grep 이 '## 증명의 요지' 를 문장으로 잡는다. '요지' 가 '[^로]지 *$' 에 걸리는 오탐이고, 이 표현은 CLAUDE.md 가 '증명의 뼈대 -> 증명의 요지' 로 권하는 명사구이므로 13 개 문서에서 그대로 쓰고 있다. 헤딩 검사 때 이 하나는 걸러서 보고, 다른 오탐이 더 있는지 확인한다. dev/ 스크립트가 아니라 CLAUDE.md 의 grep 이라 고치려면 독자의 판단이 필요하다.",
+      "createdAt": "2026-10-01T08:46:26.015Z",
+      "seq": 1503
     },
     {
       "id": "b4810afe",
