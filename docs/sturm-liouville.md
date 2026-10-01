@@ -14,25 +14,21 @@ $$
 
 # 직관
 
-길이 $\pi$ 인 줄의 진동을 다루려 한다. 파동방정식을 시간과 공간으로 분리하면 공간 쪽에
+길이 $\pi$ 인 줄의 진동을 다루려 한다. 파동방정식을 시간과 공간으로 분리하면 공간 쪽에 다음이 남는다.
 
 $$
 -u''=\lambda u,\qquad u(0)=u(\pi)=0
 $$
 
-이 남는다. 해는 $u_n(x)=\sin nx$ 이고 $\lambda_n=n^2$ 이다. 임의의 초기 모양을 이 해들의 합으로 쓰려면 계수를 뽑아야 하는데, $\int_0^\pi\sin nx\thinspace\sin mx\thinspace dx=0$ 이 $n\ne m$ 에서 성립하므로 양변에 $\sin mx$ 를 곱해 적분하면 계수가 나온다.
-
-줄의 밀도나 장력이 자리마다 다르면 방정식의 계수가 상수가 아니게 되어 해가 사인함수가 아니다. 해를 명시적으로 쓸 수 없는데도 계수를 뽑을 수 있는지가 문제다.
-
-직교성은 해의 꼴이 아니라 방정식의 모양에서 나온다. $Lu=-(pu')'+qu$ 로 두고 $\int_a^b(Lu\thinspace v-u\thinspace Lv)\thinspace dx$ 를 부분적분 두 번으로 계산하면
+해는 $u_n(x)=\sin nx$ 이고 $\lambda_n=n^2$ 이며, $\int_0^\pi\sin nx\thinspace\sin mx\thinspace dx=0$ 이 $n\ne m$ 에서 성립하므로 초기 모양에 $\sin mx$ 를 곱해 적분하면 계수가 나온다. 줄의 밀도나 장력이 자리마다 다르면 방정식의 계수가 상수가 아니어서 해가 사인함수가 아니지만, 직교성은 해의 꼴이 아니라 방정식의 모양에서 나온다. $Lu=-(pu')'+qu$ 로 두고 $\int_a^b(Lu\thinspace v-u\thinspace Lv)\thinspace dx$ 를 부분적분 두 번으로 계산하면 경계항만 남고, 경계조건이 양 끝에서 그 값을 $0$ 으로 만든다. $Lu=\lambda wu$ 와 $Lv=\mu wv$ 를 넣으면 왼쪽이 $(\mu-\lambda)\int uvw$ 이므로 $\lambda\ne\mu$ 일 때 직교성이 나오고, 계수가 변해도 이 계산은 그대로다.
 
 $$
-\int_a^b(Lu\thinspace v-u\thinspace Lv)\thinspace dx=\Bigl\lbrack p(uv'-u'v)\Bigr\rbrack_a^b
+\int_a^b(Lu\thinspace v-u\thinspace Lv)\thinspace dx=\Bigl\lbrack p(uv'-u'v)\Bigr\rbrack_a^b=0
 $$
 
-이고, 경계조건이 양 끝에서 이 값을 $0$ 으로 만든다. $Lu=\lambda wu$ 와 $Lv=\mu wv$ 를 넣으면 왼쪽이 $(\mu-\lambda)\int uvw$ 이므로 $\lambda\ne\mu$ 일 때 $\int_a^b uvw\thinspace dx=0$ 이다.
-
-계수가 변해도 이 계산은 그대로다. 해를 몰라도 직교성이 성립하므로 계수를 뽑는 방법이 남는다.
+$$
+\int_a^b u\thinspace v\thinspace w\thinspace dx=0\qquad(\lambda\ne\mu)
+$$
 
 # 정의
 
