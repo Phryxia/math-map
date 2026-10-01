@@ -18,33 +18,9 @@ $$
 
 # 직관
 
-## 가중 개수와 아델 부피
+유한군이 작용하는 집합의 궤도를 셀 때 $\sum 1/\lvert\text{안정자}\rvert$ 를 쓴다. 격자에서 안정자는 $\mathrm{Aut}L$ 이고 $1/\lvert\mathrm{Aut}L\rvert$ 로 가중한 합만이 매끄러운 양이 된다. [아델](adeles.md) 쪽에서 류 전체는 아델 직교군의 이중잉여류 $O(V)(\mathbb Q)\backslash O(V)(\mathbb A)/\prod_v O(L_v)$ 와 대응하고, 왼쪽 몫공간에 [Haar 측도](haar-measure.md)를 주면 각 이중잉여류의 부피가 $1/\lvert\mathrm{Aut}L_i\rvert$ 에 비례한다. 질량은 개수가 아니라 부피이고, 부피는 국소 부피의 곱으로 쪼개지지만 개수는 그렇지 않다.
 
-유한군 $G$ 가 작용하는 집합의 궤도를 셀 때 $\sum 1/|\text{안정자}|$ 를 쓴다. 격자에서 안정자는 $\mathrm{Aut}L$ 이고 $1/|\mathrm{Aut}L|$ 로 가중한 합만이 매끄러운 양이 된다.
-
-[아델](adeles.md) 쪽에서 류 전체는 아델 직교군의 이중잉여류
-
-$$
-O(V)(\mathbb Q)\ \backslash\ O(V)(\mathbb A)\ /\ \prod_v O(L_v)
-$$
-
-와 대응하고 이 이중잉여류는 유한 개이며 그 개수가 $h$ 다. 왼쪽 몫공간에 [Haar 측도](haar-measure.md)를 주면 각 이중잉여류의 부피가 $1/|\mathrm{Aut}L_i|$ 에 비례한다. 질량은 개수가 아니라 부피이고, 부피는 국소 부피의 곱으로 쪼개지지만 개수는 그렇지 않다.
-
-이 관점에서 질량 공식은 $\mathrm{SO}\_n$ 의 Tamagawa 수가 2 라는 진술과 같다. Weil 이 이 동치를 지적했고, 반단순군의 Tamagawa 수가 1 이라는 추측이 증명되면서 질량 공식이 그 따름정리가 되었다.
-
-## 류와 동치류 사이
-
-류는 국소적으로 구별되지 않는 격자를 모은 것이다. 강근사(strong approximation)가 성립하면 국소적으로 같은 것이 전역적으로도 같아져 $h=1$ 이 된다. 직교군에서 강근사가 깨지는 정도가 $h$ 다.
-
-깨짐은 두 단계다. 스피너 노름
-
-$$
-\theta:\ \mathrm{SO}(V)\longrightarrow \mathbb Q^\times/(\mathbb Q^\times)^2
-$$
-
-이 회전군을 스핀군으로부터 갈라놓는다. 스핀군에는 강근사가 성립하므로 스피너 노름이 자명한 부분에서는 국소가 전역을 결정하고, 류가 **스피너 류(spinor genus)** 로 갈라진다. 스피너 류의 개수는 국소 계산으로 나오는 2 의 거듭제곱이다. 스피너 류 안에서 동치류가 여럿으로 갈라지는 둘째 단계는 국소 정보로 보이지 않으며, 질량 공식이 다루는 것이 이 단계다.
-
-부정부호이고 계수가 3 이상이면 Eichler 의 정리로 각 스피너 류에 동치류가 정확히 하나다. 부정부호 형식의 분류는 유한한 국소 계산으로 끝나므로 질량 공식이 필요한 자리는 정부호 쪽이고, 정부호에서만 $\mathrm{Aut}L$ 이 유한군이라 가중합이 정의된다.
+류는 국소적으로 구별되지 않는 격자를 모은 것이고, 강근사(strong approximation)가 성립하면 국소적으로 같은 것이 전역적으로도 같아져 동치류가 하나다. 직교군에서는 스피너 노름이 회전군을 스핀군으로부터 갈라놓고 스핀군에는 강근사가 성립하므로, 류가 먼저 스피너 류로 갈라진다. 스피너 류의 개수는 국소 계산으로 나오는 2 의 거듭제곱이지만, 스피너 류 안에서 동치류가 여럿으로 갈라지는 단계는 국소 정보로 보이지 않는다. 질량 공식이 다루는 것이 이 단계다.
 
 # 정의
 
@@ -56,7 +32,13 @@ $V$ 를 $\mathbb Q$ 위의 $n$ 차원 이차공간, $L\subset V$ 를 그 위의 
 - $L'\in\mathrm{gen}\thinspace L$ (**같은 류**): 모든 소수 $p$ 에 대해 $L_p\cong L'\_p$ 이고 $V\otimes\mathbb R$ 위에서도 동치다.
 - $L'\in\mathrm{spn}\thinspace L$ (**같은 스피너 류**): 위에 더해 국소 동치를 주는 사상들을 스피너 노름이 자명한 회전 $\sigma_p\in O'(V_p)$ 로 고를 수 있다.
 
-포함관계는 $[L]\subset\mathrm{spn}\thinspace L\subset\mathrm{gen}\thinspace L$ 이고, 류는 유한 개의 동치류로 이루어진다.
+스피너 노름은 회전군에서 제곱류로 가는 준동형이다.
+
+$$
+\theta:\ \mathrm{SO}(V)\longrightarrow \mathbb Q^\times/(\mathbb Q^\times)^2
+$$
+
+포함관계는 $\lbrack L\rbrack\subset\mathrm{spn}\thinspace L\subset\mathrm{gen}\thinspace L$ 이고, 류는 유한 개의 동치류로 이루어진다.
 
 ## 질량
 
@@ -87,6 +69,10 @@ $$
 $|B_{2j}|/(4j)$ 를 $\zeta(2j)\cdot(2j-1)!/(2\pi)^{2j}\cdot 2$ 로 바꾸면 이 곱이 $\zeta(2)\zeta(4)\cdots$ 의 모임이 된다.
 
 # 성질
+
+## Tamagawa 수와의 동치
+
+질량 공식은 $\mathrm{SO}\_n$ 의 Tamagawa 수가 2 라는 진술과 같다. Weil 이 이 동치를 지적했고, 반단순군의 Tamagawa 수가 1 이라는 추측이 증명되면서 질량 공식이 그 따름정리가 되었다.
 
 ## 동치류 개수의 하한
 
