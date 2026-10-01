@@ -28,23 +28,28 @@ $$
 
 # 직관
 
-## 반사와 닫힘
+각 근 $\alpha$ 마다 $\mathfrak{sl}\_2$ 부분대수 $\lbrace E_\alpha,F_\alpha,H_\alpha\rbrace$ 가 있다. $\mathfrak g$ 를 이 $\mathfrak{sl}\_2$ 의 표현으로 보면 올림·내림 논법으로 무게가 $2$ 씩 오르내리는 정수 사슬이 나오고 정수성 조건이 따라오며, 무게열의 양 끝을 맞바꾸는 것이 초평면 $\alpha^\perp$ 에 대한 반사 $s_\alpha(\beta)=\beta-\langle\beta,\alpha\rangle\thinspace\alpha$ 다. 이 반사가 $\Phi$ 를 $\Phi$ 로 보내므로 근계는 자기 자신의 반사들에 닫혀 있고, 그 반사들이 생성하는 유한군이 Weyl 군이다. 2 차원에서 두 벡터를 놓고 반사를 반복하면 각도가 $60^\circ$ 일 때 근 6 개의 $A_2$ , $45^\circ$ 일 때 8 개의 $B_2$ , $30^\circ$ 일 때 12 개의 $G_2$ 가 나오고, 다른 각도에서는 벡터가 무한히 생겨 유한성이 깨진다.
 
-각 근 $\alpha$ 마다 $\mathfrak{sl}\_2$ 부분대수 $\lbrace E_\alpha,F_\alpha,H_\alpha\rbrace$ 가 있다. $\mathfrak g$ 를 이 $\mathfrak{sl}\_2$ 의 표현으로 보면 올림·내림 논법으로 무게가 $2$ 씩 오르내리는 정수 사슬이 나오고, 정수성 조건이 따라온다.
+$\Phi$ 를 초평면 하나로 둘로 나누고 한쪽에서 두 원소의 합으로 쓰이지 않는 것만 남기면 기저가 되며, 그것이 단순근이다. 단순근 사이의 각도는 둔각뿐이므로 근계의 정보가 단순근 쌍마다의 정수 하나로 줄고, 분류가 그 정수들로 그린 그래프의 모양을 세는 문제가 된다.
 
-무게열의 양 끝을 맞바꾸는 것이 초평면 $\alpha^\perp$ 에 대한 **반사**다.
+# 정의
 
-$$
-s_\alpha(\beta)=\beta-\langle\beta,\alpha\rangle\thinspace\alpha
-$$
+## 근계
 
-$\mathfrak{sl}\_2$ 표현의 대칭이 근계의 대칭이므로 $s_\alpha$ 는 $\Phi$ 를 $\Phi$ 로 보낸다. 근계는 자기 자신의 반사들에 닫혀 있고, 이 반사들이 생성하는 유한군이 **Weyl 군** $W$ 다.
+유클리드 공간 $V$ 의 유한 부분집합 $\Phi$ 가 다음을 만족하면 **근계**다.
 
-2 차원에서 두 벡터를 놓고 반사를 반복하면 각도가 $60^\circ$ 일 때 근 6 개의 육각형 $A_2$ , $45^\circ$ 일 때 근 8 개의 $B_2$ , $30^\circ$ 일 때 근 12 개의 $G_2$ 가 나오고, 다른 각도에서는 무한히 많은 벡터가 생겨 유한성이 깨진다.
+- $\Phi$ 가 $V$ 를 생성하고 $0\notin\Phi$ 다.
+- $\alpha\in\Phi$ 이면 $\Phi\cap\mathbb R\alpha=\lbrace\pm\alpha\rbrace$ (기약 근계 조건).
+- 모든 $\alpha\in\Phi$ 에 대해 $s_\alpha(\Phi)=\Phi$ 다.
+- 모든 $\alpha,\beta\in\Phi$ 에 대해 $\langle\beta,\alpha\rangle\in\mathbb Z$ 다.
 
-## 단순근과 Dynkin 도표
+$\dim V=n$ 이 **랭크**다. 근계가 두 직교하는 근계의 합집합으로 쪼개지지 않으면 **기약**이고, 모든 근계는 기약 근계의 직교합으로 유일하게 분해된다.
+
+## 양근과 단순근
 
 $\Phi$ 에서 초평면 하나를 잡아 양쪽으로 나누면 **양근** $\Phi^+$ 가 정해지고, 양근 중 두 양근의 합으로 쓰이지 않는 것들이 **단순근** $\Delta=\lbrace\alpha_1,\dots,\alpha_n\rbrace$ 이다. 단순근은 기저이고, 모든 근이 단순근의 정수계수 조합이며 계수 부호가 일정하다.
+
+## Dynkin 도표
 
 단순근 사이의 각도는 항상 둔각이므로 Cartan 정수가 음이 아닌 수로 정리된다. 이를 그래프로 그린 것이 **Dynkin 도표**다. 꼭짓점이 단순근이고, $\alpha_i$ 와 $\alpha_j$ 를 $\langle\alpha_i,\alpha_j\rangle\langle\alpha_j,\alpha_i\rangle$ 개의 선으로 잇고, 길이가 다르면 긴 쪽으로 화살표를 그린다.
 
@@ -65,19 +70,6 @@ graph LR
 ```
 
 연결된 도표의 분류는 가지가 셋 이상일 수 없고 가지의 길이 조합이 몇 가지뿐이라는 부등식 계산으로 끝난다.
-
-# 정의
-
-## 근계
-
-유클리드 공간 $V$ 의 유한 부분집합 $\Phi$ 가 다음을 만족하면 **근계**다.
-
-- $\Phi$ 가 $V$ 를 생성하고 $0\notin\Phi$ 다.
-- $\alpha\in\Phi$ 이면 $\Phi\cap\mathbb R\alpha=\lbrace\pm\alpha\rbrace$ (기약 근계 조건).
-- 모든 $\alpha\in\Phi$ 에 대해 $s_\alpha(\Phi)=\Phi$ 다.
-- 모든 $\alpha,\beta\in\Phi$ 에 대해 $\langle\beta,\alpha\rangle\in\mathbb Z$ 다.
-
-$\dim V=n$ 이 **랭크**다. 근계가 두 직교하는 근계의 합집합으로 쪼개지지 않으면 **기약**이고, 모든 근계는 기약 근계의 직교합으로 유일하게 분해된다.
 
 ## Cartan 행렬과 Weyl 군
 
