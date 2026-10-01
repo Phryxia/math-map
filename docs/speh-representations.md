@@ -20,35 +20,9 @@ $$
 
 # 직관
 
-## Eisenstein 급수의 유수
-
-[Eisenstein 급수](eisenstein-series.md) $E(z,s)$ 는 첨점에서 $y^s$ 처럼 자라 제곱적분가능하지 않다. $s$ 가 **극**일 때 유수를 취하면 성장이 한 등급 줄어 $L^2$ 안으로 들어온다.
-
-$\mathrm{GL}\_2$ 에서 $E(z,s)$ 는 $s=1$ 에 단순극을 갖고 유수는 상수함수 $3/\pi$ 다. 상수함수가 생성하는 표현이 **자명 표현**이므로, 자명 표현은 첨점이 아니라 잔여 스펙트럼에 산다.
+[Eisenstein 급수](eisenstein-series.md) $E(z,s)$ 는 첨점에서 $y^s$ 처럼 자라 제곱적분가능하지 않다. $s$ 가 **극**일 때 유수를 취하면 성장이 한 등급 줄어 $L^2$ 안으로 들어온다. $\mathrm{GL}\_2$ 에서 $E(z,s)$ 는 $s=1$ 에 단순극을 갖고 유수는 상수함수 $3/\pi$ 다. 상수함수가 생성하는 표현이 **자명 표현**이므로, 자명 표현은 첨점이 아니라 잔여 스펙트럼에 산다.
 
 일반 $n$ 에서도 절차는 같다. 포물형 부분군 $P$ 와 그 Levi 위의 첨점 표현에서 Eisenstein 급수를 만들고 다변수 $s$ 의 극을 따라 차례로 유수를 취한다. Langlands 가 절차를 세웠고 Mœglin–Waldspurger 가 $\mathrm{GL}\_n$ 에서 어느 극이 남는지 계산했다.
-
-## 등차수열 조건
-
-Levi 가 $\mathrm{GL}\_m^{\thinspace d}$ 이고 각 성분에 같은 첨점 표현 $\sigma$ 를 올린 뒤 지수를 간격 1 의 등차수열
-
-$$
-\Bigl(\tfrac{d-1}2,\ \tfrac{d-3}2,\ \dots,\ -\tfrac{d-1}2\Bigr)
-$$
-
-로 잡은 자리에서만 유수가 0 이 아니고 다른 조합은 사라진다.
-
-같은 모양이 국소 표현론의 Bernstein–Zelevinsky **분절(segment)** $[\rho,\rho\nu,\dots,\rho\nu^{d-1}]$ 이고, 분절 하나가 본질적 제곱적분가능 표현 하나를 준다. 국소에서 표현을 뭉치는 규칙과 전역에서 극이 생기는 규칙이 같다.
-
-## 비템퍼드성의 크기
-
-$\sigma$ 의 Satake 매개변수가 $\lbrace\alpha_1,\dots,\alpha_m\rbrace$ 이면 $\mathrm{Speh}(\sigma,d)$ 의 것은
-
-$$
-\bigl\lbrace\alpha_i\thinspace q^{j}\ :\ 1\le i\le m,\ j=\tfrac{d-1}2,\tfrac{d-3}2,\dots,-\tfrac{d-1}2\bigr\rbrace
-$$
-
-이다. $\sigma$ 가 Ramanujan 경계 $|\alpha_i|=1$ 을 지켜도 Speh 표현은 $q^{\pm(d-1)/2}$ 만큼 벌어지고, 그 폭이 $d$ 로 결정된다. Ramanujan 추측이 첨점 표현에 한정되는 까닭이 여기 있다.
 
 # 정의
 
@@ -68,6 +42,8 @@ $$
 
 $d=1$ 이면 $\mathrm{Speh}(\sigma,1)=\sigma$ 다. $m=1,\ d=n$ 이고 $\sigma$ 가 자명 지표면 $\mathrm{Speh}(\mathbf 1,n)$ 이 $\mathrm{GL}\_n$ 의 자명 표현이다.
 
+Levi 가 $\mathrm{GL}\_m^{\thinspace d}$ 이고 각 성분에 같은 $\sigma$ 를 올렸을 때, 지수를 간격 1 의 등차수열로 잡은 자리에서만 Eisenstein 급수의 유수가 0 이 아니고 다른 조합은 사라진다. 같은 모양이 국소 표현론의 Bernstein–Zelevinsky **분절**(segment) $\lbrack\rho,\rho\nu,\dots,\rho\nu^{d-1}\rbrack$ 이고, 분절 하나가 본질적 제곱적분가능 표현 하나를 준다. 국소에서 표현을 뭉치는 규칙과 전역에서 극이 생기는 규칙이 같다.
+
 ## Mœglin–Waldspurger 정리
 
 $$
@@ -78,6 +54,16 @@ $$
 합은 $n=dm$ 인 약수 분해와 $\mathrm{GL}\_m$ 의 유니터리 첨점 표현 $\sigma$ 위를 달리고 각 항의 중복도는 1 이다. 잔여 스펙트럼은 $d\gt 1$ 인 항들의 합이다[^1].
 
 # 성질
+
+## Satake 매개변수와 Ramanujan 경계
+
+$\sigma$ 의 Satake 매개변수가 $\lbrace\alpha_1,\dots,\alpha_m\rbrace$ 이면 $\mathrm{Speh}(\sigma,d)$ 의 것은 다음이다.
+
+$$
+\bigl\lbrace\alpha_i\thinspace q^{j}\ :\ 1\le i\le m,\ j=\tfrac{d-1}2,\tfrac{d-3}2,\dots,-\tfrac{d-1}2\bigr\rbrace
+$$
+
+$\sigma$ 가 Ramanujan 경계 $\vert\alpha_i\vert=1$ 을 지켜도 Speh 표현은 $q^{\pm(d-1)/2}$ 만큼 벌어지고, 그 폭을 $d$ 가 결정한다. Ramanujan 추측을 첨점 표현에만 진술하는 것이 그 때문이다.
 
 ## 중복도 1
 
@@ -99,9 +85,9 @@ $n$ 이 소수면 잔여 스펙트럼이 자명 표현 계열 하나뿐이다. �
 
 $\pi$ 가 $\mathrm{GL}\_n$ 의 이산 스펙트럼에 있을 때 첨점인지 잔여인지는 Rankin–Selberg $L$ 함수로 읽힌다. $L(s,\pi\times\tilde\pi)$ 는 $s=1$ 에 언제나 극을 갖지만 그 차수가 $\pi$ 가 몇 겹의 Speh 인지를 드러낸다. 잔여 표현은 $\sigma\nu^j$ 들의 중복 때문에 극이 더 많다.
 
-## 유니터리 쌍대의 벽돌
+## Tadić 의 유니터리 쌍대 분류
 
-Tadić 의 $\mathrm{GL}\_n$ 유니터리 쌍대 분류는 Speh 표현과 그 보조적 계열 변형을 유도로 조립한 것이 전부라는 결론이다. Speh 표현은 잔여 스펙트럼을 채울 뿐 아니라 유니터리 표현론의 기본 벽돌이다.
+Tadić 의 $\mathrm{GL}\_n$ 유니터리 쌍대 분류는 Speh 표현과 그 보조적 계열 변형을 유도로 조립한 것이 전부라는 결론이다. Speh 표현은 잔여 스펙트럼을 채울 뿐 아니라 유니터리 표현론의 기본 구성단위다.
 
 # 활용
 
