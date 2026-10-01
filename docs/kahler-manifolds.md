@@ -12,31 +12,9 @@ Laplace 작용소는 $\Delta_d$ , $\Delta_\partial$ , $\Delta_{\bar\partial}$ �
 
 # 직관
 
-## $(p,q)$ 분해
-
 복소좌표 $z_j=x_j+iy_j$ 에서 $dz_j=dx_j+i\thinspace dy_j$ 와 $d\bar z_j=dx_j-i\thinspace dy_j$ 를 쓰면, 복소값 $k$ 형식이 $dz$ 를 $p$ 개, $d\bar z$ 를 $q$ 개 쓴 항들의 합으로 유일하게 쓰인다. 이것이 $(p,q)$ 분해이고 $p+q=k$ 다.
 
 외미분도 따라서 쪼개진다. $d=\partial+\bar\partial$ 에서 $\partial$ 이 $p$ 를 1 올리고 $\bar\partial$ 가 $q$ 를 1 올린다. $d^2=0$ 을 전개하면 $\partial^2=\bar\partial^2=0$ 과 $\partial\bar\partial+\bar\partial\partial=0$ 이 나온다.
-
-$\bar\partial$ 만 쓴 복합체의 코호몰로지가 **Dolbeault 코호몰로지** $H^{p,q}$ 다. 복소해석적 불변량이며 일반 복소 다양체에서는 위상적 코호몰로지와 관계가 없다.
-
-## Kähler 조건
-
-$d$ 에 대한 조화형식과 $\bar\partial$ 에 대한 조화형식이 다른 공간이므로 일반적으로 $H^k_{\mathrm{dR}}$ 와 $H^{p,q}$ 사이에는 관계가 없다.
-
-$d\omega=0$ 이면 Kähler 항등식이 $\Delta_d=2\Delta_{\bar\partial}=2\Delta_\partial$ 를 주고, 세 작용소의 핵이 같아진다. $\Delta_{\bar\partial}$ 는 $(p,q)$ 를 보존하므로 그 핵이 $(p,q)$ 성분으로 쪼개지고 $\Delta_d$ 의 핵도 그렇게 쪼개진다.
-
-## 홀수 Betti 수의 짝수성
-
-$\Delta_{\bar\partial}$ 가 실 작용소의 복소화이므로 켤레가 조화형식을 조화형식으로 보내고, $(p,q)$ 를 $(q,p)$ 로 바꾼다. 따라서 $h^{p,q}=h^{q,p}$ 다.
-
-$k$ 가 홀수면 $p+q=k$ 인 쌍들이 $(p,q)$ 와 $(q,p)$ 로 완전히 짝지어진다. $p=q$ 인 항이 없기 때문이다. 그래서
-
-$$
-b_k=\sum_{p+q=k}h^{p,q}=2\sum_{p\lt q}h^{p,q}
-$$
-
-가 짝수다. $b_1$ 이 홀수인 복소 다양체는 Kähler 계량을 가질 수 없고, $S^1\times S^3$ 에 복소구조를 준 Hopf 곡면이 $b_1=1$ 인 예다.
 
 # 정의
 
@@ -81,7 +59,7 @@ $$
 H^{p,q}\_{\bar\partial}(M)=\frac{\ker\bar\partial|\_{\Omega^{p,q}}}{\mathrm{im}\thinspace\bar\partial|\_{\Omega^{p,q-1}}},\qquad h^{p,q}=\dim_{\mathbb C}H^{p,q}
 $$
 
-$h^{p,q}$ 를 격자 모양으로 배열한 것이 Hodge 다이아몬드다.
+$h^{p,q}$ 를 격자 모양으로 배열한 것이 Hodge 다이아몬드다. $H^{p,q}$ 는 복소해석적 불변량이고, 일반 복소 다양체에서는 위상적 코호몰로지와 관계가 없다.
 
 # 성질
 
@@ -116,6 +94,8 @@ $$
 - $b_k$ 가 홀수 $k$ 에서 짝수다.
 - $[\omega]$ 자신이 $H^{1,1}$ 의 0 이 아닌 원소이므로 $h^{1,1}\ge1$ 이다.
 - $[\omega]^k\ne0$ 이므로 $b_{2k}\ge1$ 이다. $S^6$ 은 $b_2=0$ 이라 복소구조를 갖더라도 Kähler 일 수 없다.
+
+첫 따름결과는 짝지음으로 나온다. $k$ 가 홀수면 $p+q=k$ 에 $p=q$ 인 항이 없으므로 쌍들이 $(p,q)$ 와 $(q,p)$ 로 완전히 짝지어지고, $b_k=\sum_{p+q=k}h^{p,q}=2\sum_{p\lt q}h^{p,q}$ 다.
 
 ## 강한 Lefschetz 정리
 
