@@ -12,6 +12,12 @@ $p$ 진 $L$ 함수는 복소 $L$ 함수의 특수값을 $p$ 진 해석 함수 �
 
 $E$ 의 순위를 원분탑 $\mathbb Q\subset\mathbb Q(\mu_p)\subset\mathbb Q(\mu_{p^2})\subset\cdots$ 를 따라 재려고 한다. $n$ 층에서 필요한 것은 도체 $p^n$ 인 지표 $\chi$ 마다의 값 $L(E,\chi,1)$ 이고, [BSD](birch-swinnerton-dyer.md) 추측에 따르면 이 값이 $0$ 인지 아닌지가 그 지표 성분의 순위를 가른다. 값은 층마다 여러 개이고 전부 복소수여서, 층을 하나 올릴 때 값들이 어떻게 변하는지 복소 절댓값으로는 보이지 않는다.
 
+$E$ 에 대응하는 신형식의 주기적분을 실주기와 허주기로 정규화한 모듈러 기호 $\lbrack r\rbrack^{\pm}$ 는 유리수이고 분모가 유계다. 도체 $p^n$ 인 지표의 특수값이 이 유리수들과 $p^n$ 차 단위근의 유한 합으로 나오므로, 층 사이를 잇는 양이 $p$ 의 거듭제곱이고 값들을 $p$ 진 거리로 잴 수 있다. Hecke 작용소 $U_p$ 는 한 층의 값들을 더하면 아래층의 값이 나오는 관계를 주되 $a_p$ 와 $-1$ 이 섞여 나온다. $\alpha$ 를 $X^2-a_pX+p$ 의 근 가운데 $p$ 진 단위인 것으로 잡고 $\alpha^{-n}\lbrack a/p^n\rbrack$ 의 차를 보면 섞임이 고르게 나뉘어 합 규칙이 정확해지고, 층마다 값을 주는 규칙이 $\mathbb Z_p^{\times}$ 위의 [측도](measure.md) 하나가 된다.
+
+# 정의
+
+## 모듈러 기호
+
 $E$ 에 대응하는 무게 2 신형식을 $f=\sum a_nq^n$ 이라 하고, 유리수 $r$ 에서의 모듈러 기호를 다음으로 둔다.
 
 $$
@@ -35,9 +41,7 @@ $$
 \sum_{b\equiv a\thinspace(p^n)}\lbrack b/p^{n+1}\rbrack=a_p\lbrack a/p^n\rbrack-\lbrack a/p^{n-1}\rbrack
 $$
 
-한 층의 값들을 더하면 아래층의 값이 나오되 $a_p$ 와 $-1$ 이 섞여 나온다. $\alpha$ 를 $X^2-a_pX+p$ 의 근 가운데 $p$ 진 단위인 것으로 잡고 $\alpha^{-n}\lbrack a/p^n\rbrack$ 의 차를 보면 섞임이 고르게 나뉘어 합 규칙이 정확해지고, 층마다 값을 주는 규칙이 $\mathbb Z_p^{\times}$ 위의 [측도](measure.md) 하나가 된다.
-
-# 정의
+한 층의 값들을 더하면 아래층의 값이 나오되 $a_p$ 와 $-1$ 이 섞여 나온다.
 
 ## Mazur–Swinnerton-Dyer 측도
 
