@@ -12,27 +12,9 @@
 
 # 직관
 
-## 잡음 수준의 열
+데이터 분포의 밀도를 모르므로 표본을 직접 뽑을 수 없다. $x_0$ 에 분산 $t$ 인 Gauss 잡음을 더한 $x_t$ 의 분포는 $t$ 가 크면 $\mathcal N(0,tI)$ 와 구별되지 않으므로 거기서는 뽑을 수 있다. 큰 $t$ 에서 뽑아 한 칸씩 되돌리려면 $x_t$ 를 보고 $x_0$ 를 맞혀야 하고, 제곱오차를 가장 작게 하는 답은 조건부 평균 $\mathbb E\lbrack x_0\mid x_t\rbrack$ 이다. Tweedie 공식이 이 평균을 $x_t+t\thinspace\nabla_x\log q_t(x_t)$ 로 준다.
 
-데이터 분포에서 곧바로 표본을 뽑는 것은 어렵고, 잡음이 많이 섞인 분포는 거의 Gauss 라 뽑기 쉽다. 전방 과정을 잡음 수준의 열로 보면 각 단계에서 한 칸 아래로 내려가는 조건부 분포만 알면 된다. 잡음 증가분이 작으면 그 조건부 분포가 Gauss 로 근사되고 신경망이 그 평균을 예측한다.
-
-## 점수함수
-
-$q_t$ 를 시각 $t$ 의 분포라 하면 $\nabla_x\log q_t(x)$ 는 밀도가 커지는 방향이다. 잡음 낀 점에서 데이터가 있을 법한 쪽을 가리키는 벡터장이고 잡음 제거는 이 방향으로 조금 움직이는 것이다.
-
-밀도 $q_t$ 는 정규화상수 때문에 다루기 어렵지만 로그를 미분하면 정규화상수가 사라지므로 점수함수는 그렇지 않다.
-
-## 잡음 예측과 점수 추정의 동치
-
-전방 과정이 $x_t=x_0+\sigma_t\epsilon$ 이면 Tweedie 공식이 다음을 준다.
-
-$$
-\mathbb E[x_0\mid x_t]=x_t+\sigma_t^2\thinspace\nabla_x\log q_t(x_t)
-$$
-
-잡음 낀 관측에서 원본의 조건부 평균과 점수함수가 서로를 결정한다. 신경망에 $\epsilon$ 을 예측하는 최소제곱 회귀를 시키면 그 최적해가 $-\sigma_t\nabla\log q_t$ 다.
-
-ELBO 를 전개해 나오는 KL(Kullback–Leibler) 항들의 가중합이 이 회귀로 정리되면서 학습에 필요한 것은 데이터에 잡음을 더하고 그 잡음을 맞히는 것뿐이 되었다.
+$q_t$ 의 정규화상수는 로그를 미분하면 사라지므로 밀도를 몰라도 $\nabla_x\log q_t$ 를 추정할 수 있다. 데이터에 잡음 $\epsilon$ 을 더하고 그 $\epsilon$ 을 맞히는 최소제곱 회귀의 최적해가 $-\sqrt t\thinspace\nabla_x\log q_t$ 이므로 학습은 잡음을 더하고 맞히는 것으로 끝난다. 이 벡터장이 점수함수이고, 생성은 잡음 수준을 한 칸 내리며 이 방향으로 움직이는 것을 수백 번 반복한다.
 
 # 정의
 
@@ -88,9 +70,19 @@ $w(t)=1$ 은 ELBO 가중치와 다르지만 표본 품질이 더 좋다. 가중�
 
 # 성질
 
+## 잡음 예측과 점수 추정의 동치
+
+전방 과정이 $x_t=x_0+\sigma_t\epsilon$ 이면 Tweedie 공식이 다음을 준다.
+
+$$
+\mathbb E\lbrack x_0\mid x_t\rbrack=x_t+\sigma_t^2\thinspace\nabla_x\log q_t(x_t)
+$$
+
+잡음 낀 관측에서 원본의 조건부 평균과 점수함수가 서로를 결정한다. 잡음 $\epsilon$ 을 예측하는 최소제곱 회귀의 최적해는 $-\sigma_t\nabla_x\log q_t$ 이므로 두 학습 목표가 같다.
+
 ## ELBO 와의 관계
 
-확산모형의 ELBO 는 계층적 VAE 의 그것이고 전개하면 각 단계의 KL 항 합이다.
+확산모형의 ELBO 는 계층적 VAE 의 그것이고 전개하면 각 단계의 KL(Kullback–Leibler) 항 합이다.
 
 $$
 \log p(x_0)\ \ge\ -\sum_t\mathrm{KL}\big(q(x_{t-1}\mid x_t,x_0)\thinspace\Vert\thinspace p_\theta(x_{t-1}\mid x_t)\big)+\cdots
