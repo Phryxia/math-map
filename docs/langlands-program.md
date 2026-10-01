@@ -14,31 +14,9 @@ $n=1$ 이 유체론이다. $n=2$ 이고 $K=\mathbb Q$ 인 경우의 자기동형
 
 # 직관
 
-## 켤레류와 표현
+분기하지 않는 $\mathfrak p$ 에 대해 $\mathrm{Frob}\_{\mathfrak p}$ 는 켤레류이므로 $\rho(\mathrm{Frob}\_{\mathfrak p})$ 는 켤레를 빼고 정해지고 그 특성다항식은 완전히 정해진다. 소수마다 그 다항식을 모아 Euler 곱으로 묶은 것이 Artin $L$ 함수이고, 곱은 $\mathrm{Re}(s)\gt 1$ 에서만 수렴한다. 각 인자가 소수 하나의 정보이므로 이 꼴에서 복소평면 전체로의 해석적 접속을 끌어낼 길이 없다.
 
-분기하지 않는 $\mathfrak p$ 에 대해 $\mathrm{Frob}\_{\mathfrak p}$ 는 켤레류다. 켤레류에서 얻을 수 있는 불변량은 켤레불변 함수의 값뿐이고 유한군에서 그런 함수는 지표들이 생성하므로, 표현이 대상이 된다.
-
-표현 $\rho$ 를 하나 고정하면 소수마다 행렬 $\rho(\mathrm{Frob}\_{\mathfrak p})$ 가 켤레를 빼고 정해지고, 그 특성다항식은 완전히 정해진다. 이 데이터를 Euler 곱으로 묶은 것이 Artin $L$ 함수다.
-
-$$
-L(s,\rho)=\prod_{\mathfrak p}\det\big(1-\rho(\mathrm{Frob}\_{\mathfrak p})\thinspace N\mathfrak p^{-s}\big)^{-1}
-$$
-
-$n=1$ 이면 Hecke $L$ 함수이고 $K=\mathbb Q$ 로 내려오면 [Dirichlet L 함수](dirichlet-l-functions.md)다.
-
-## 두 정의의 비대칭
-
-$L(s,\rho)$ 의 정의는 $\mathrm{Re}(s)\gt 1$ 에서만 수렴한다. Artin 은 $\rho$ 가 자명하지 않은 기약 표현이면 $L(s,\rho)$ 가 복소평면 전체의 정함수라고 추측했지만, Euler 곱은 국소 정보를 모아 놓은 것이라 Galois 쪽 정의만으로는 해석적 접속이 보이지 않는다.
-
-모듈러 형식의 $L$ 함수는 반대다. 형식의 변환 규칙에 [Mellin 변환](mellin-transform.md)을 적용하면 해석적 접속과 함수방정식이 바로 나오지만, 계수의 산술적 의미가 보이지 않는다.
-
-대응이 성립하면 Galois 쪽이 해석적 성질을 얻고(Artin 추측) 자기동형 쪽이 계수의 산술적 의미를 얻는다.
-
-## 대응의 근거
-
-양쪽이 주는 데이터의 모양이 같다. Galois 쪽은 소수마다 $n$ 개의 Frobenius 고윳값을 주고 자기동형 쪽은 소수마다 $n$ 개의 [Satake 매개변수](satake-isomorphism.md)를 주며, $n=1$ 에서 유체론이 둘의 일치를 증명했다.
-
-강한 다중도 1 정리에 따르면 거의 모든 자리에서 국소 성분이 같은 두 자기동형 표현은 같으므로, $\rho$ 에 대응하는 $\pi$ 는 존재하면 하나뿐이다. 남은 것은 존재이고 그것이 강령의 내용이다.
+같은 모양의 $L$ 함수를 [모듈러 형식](modular-forms.md)에서 만들면 사정이 뒤집힌다. 형식의 변환 규칙에 [Mellin 변환](mellin-transform.md)을 적용하면 해석적 접속과 함수방정식이 바로 나오고, 대신 계수의 산술적 의미가 보이지 않는다. 두 쪽이 소수마다 $n$ 개의 수를 준다는 점은 같다. Galois 쪽의 Frobenius 고윳값 $n$ 개와 자기동형 쪽의 [Satake 매개변수](satake-isomorphism.md) $n$ 개를 같다고 놓는 것이 강령이고, $n=1$ 에서는 유체론이 그 일치를 증명했다.
 
 # 정의
 
@@ -56,6 +34,12 @@ $$
 - $E=\bar{\mathbb Q}\_\ell$ : 상이 무한할 수 있다. $\ell$ 진 위상이 profinite 위상과 어울리기 때문이다. 기하에서 나오는 표현은 대부분 이쪽이며, 대수다양체의 [에탈 코호몰로지](etale-cohomology.md)가 표준적인 공급원이다.
 
 유한 개의 소수를 뺀 모든 $\mathfrak p$ 에서 $\rho$ 가 불분기여야 하고, 그런 $\mathfrak p$ 에서 $\rho(\mathrm{Frob}\_{\mathfrak p})$ 의 특성다항식이 $L(s,\rho)$ 의 국소 인자를 준다.
+
+$$
+L(s,\rho)=\prod_{\mathfrak p}\det\big(1-\rho(\mathrm{Frob}\_{\mathfrak p})\thinspace N\mathfrak p^{-s}\big)^{-1}
+$$
+
+$n=1$ 이면 Hecke $L$ 함수이고 $K=\mathbb Q$ 로 내려오면 [Dirichlet L 함수](dirichlet-l-functions.md)다.
 
 ## 자기동형 표현
 
@@ -79,7 +63,7 @@ $n=1$ 일 때 $\mathrm{GL}\_1(\mathbb A_K)/K^\times$ 가 이델류군이므로 �
 
 > **Langlands 상호성.** 적당한 조건(기약, 대수적, 국소 조건)을 만족하는 $n$ 차원 Galois 표현 $\rho$ 마다 $\mathrm{GL}\_n(\mathbb A_K)$ 의 첨점 자기동형 표현 $\pi$ 가 존재해 $L(s,\rho)=L(s,\pi)$ 이고, 국소 인자들이 모든 자리에서 일치한다.
 
-$L(s,\pi)$ 의 해석적 성질은 자기동형 표현론에서 증명되어 있으므로, 대응이 성립하면 $L(s,\rho)$ 의 정함수성인 Artin 추측이 따라온다.
+$L(s,\pi)$ 의 해석적 성질은 자기동형 표현론에서 증명되어 있으므로, 대응이 성립하면 Artin 추측이 따라온다.
 
 ## 함자성
 
@@ -94,6 +78,10 @@ $H$ 를 자명군으로 두면 ${}^LH=G_K$ 이고 $G_K\to\mathrm{GL}\_n(\mathbb 
 - **자기동형 유도**: $H$ 를 부분체의 군으로 두면 유체론의 유도 표현이 일반화된다.
 
 # 성질
+
+## 대응의 유일성
+
+강한 다중도 1 정리는 거의 모든 자리에서 국소 성분이 같은 두 첨점 자기동형 표현이 같다고 진술한다. 따라서 $\rho$ 에 대응하는 $\pi$ 는 존재하면 하나뿐이고, 상호성 추측에서 남은 것은 존재다.
 
 ## 증명된 범위
 
