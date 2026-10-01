@@ -20,17 +20,7 @@ $$
 
 # 직관
 
-## 무한차원 Morse 이론
-
-유한차원 Morse 호몰로지는 함수 $f$ 의 임계점을 생성원으로 놓고, 지표 차이가 1 인 두 임계점을 잇는 기울기 흐름선을 세어 미분을 정의한다. 호몰로지는 $f$ 에 의존하지 않는다.
-
-Floer 는 이 절차를 무한차원 공간에 적용했다. 정의역은 $\Sigma$ 위 $\mathrm{SU}(2)$ 접속들의 공간을 게이지군으로 나눈 것이고 함수는 Chern–Simons 범함수다.
-
-$$
-\mathrm{CS}(A)=\frac1{8\pi^2}\int_\Sigma\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)
-$$
-
-$\delta\mathrm{CS}=0$ 이 $F_A=0$ 과 같으므로 임계점이 평탄 접속, 곧 Casson 불변량이 세던 대상이다. $\mathbb R\times\Sigma$ 위에서 기울기 흐름 방정식을 풀어 쓰면 4 차원의 반자기쌍대 방정식 $F^+=0$ 이 되므로 흐름선이 순간자다.
+유한차원 Morse 호몰로지는 함수 $f$ 의 임계점을 생성원으로 놓고, 지표 차이가 1 인 두 임계점을 잇는 기울기 흐름선을 세어 미분을 정의한다. Floer 는 이 절차를 $\Sigma$ 위 $\mathrm{SU}(2)$ 접속들의 공간을 게이지군으로 나눈 것에 적용하고, 함수로 Chern–Simons 범함수를 쓴다. $\delta\mathrm{CS}=0$ 이 $F_A=0$ 과 같으므로 임계점이 평탄 접속, 곧 Casson 불변량이 세던 대상이다. $\mathbb R\times\Sigma$ 위에서 기울기 흐름 방정식을 풀어 쓰면 4 차원의 반자기쌍대 방정식 $F^+=0$ 이 되므로 흐름선이 순간자다.
 
 | 유한차원 Morse | 순간자 Floer |
 |---|---|
@@ -41,25 +31,23 @@ $\delta\mathrm{CS}=0$ 이 $F_A=0$ 과 같으므로 임계점이 평탄 접속, �
 | Morse 지표 | 스펙트럼 흐름 (mod 8) |
 | $\chi=$ Euler 지표 | $\chi=2\lambda(\Sigma)$ |
 
-## $\mathbb Z/8$ 등급
+Chern–Simons 범함수는 게이지 변환으로 값이 정수만큼 옮겨가므로 $\mathcal A/\mathcal G$ 위에서 잘 정의되는 것은 $\mathbb R/\mathbb Z$ 값 함수뿐이고, 절대적인 높이가 없으니 두 임계점 사이의 상대 지표만 남는다. 감음수 1 짜리 게이지 변환을 걸면 관련된 미분작용소의 지표가 8 만큼 바뀌므로 상대 등급이 $\mathbb Z/8$ 값이고, Floer 군은 $HF_0,\dots,HF_7$ 여덟 개로 끝난다. 이 8 은 Chern–Simons 레벨의 정수성과 같은 $\pi_3(\mathrm{SU}(2))=\mathbb Z$ 에서 온다.
 
-Chern–Simons 범함수는 게이지 변환 $g$ 에 대해
+# 정의
+
+## Chern–Simons 범함수
+
+$\Sigma$ 위의 $\mathrm{SU}(2)$ 접속 $A$ 에 대해 다음이 **Chern–Simons 범함수**다.
+
+$$
+\mathrm{CS}(A)=\frac1{8\pi^2}\int_\Sigma\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)
+$$
 
 $$
 \mathrm{CS}(g\cdot A)=\mathrm{CS}(A)+\deg g,\qquad \deg g\in\mathbb Z
 $$
 
-로 값이 옮겨가므로 $\mathcal A/\mathcal G$ 위에서 잘 정의되는 것은 $\mathbb R/\mathbb Z$ 값 함수뿐이다. 원 값 함수에는 절대적인 높이가 없으므로 절대 지표도 없고 두 임계점 사이의 상대 지표만 남는다.
-
-감음수 1 짜리 게이지 변환을 걸면 관련된 미분작용소의 지표가 8 만큼 바뀐다. $\mathrm{SU}(2)$ 수반 다발에 대한 반자기쌍대 연산자의 지표가 순간자 수 $k$ 에 대해 $8k-3(1+b^+)$ 꼴인 그 8 이다.
-
-$$
-\mu(\alpha,\beta)\in\mathbb Z/8
-$$
-
-Floer 군은 $HF_0,\dots,HF_7$ 여덟 개로 끝난다. 이 8 은 Chern–Simons 레벨의 정수성과 같은 $\pi_3(\mathrm{SU}(2))=\mathbb Z$ 에서 온다.
-
-# 정의
+게이지 변환이 값을 정수만큼 옮기므로 $\mathcal A/\mathcal G$ 위에서는 $\mathbb R/\mathbb Z$ 값 함수로만 정의된다. $\mathrm{SU}(2)$ 수반 다발에 대한 반자기쌍대 연산자의 지표는 순간자 수 $k$ 에 대해 $8k-3(1+b^+)$ 꼴이고, 감음수 1 의 게이지 변환이 이 지표를 8 만큼 바꾼다.
 
 ## 사슬복체
 
