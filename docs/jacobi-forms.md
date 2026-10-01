@@ -6,25 +6,17 @@ Jacobi 형식은 $\mathbb H\times\mathbb C$ 위의 정칙함수로, 첫 변수�
 
 # 직관
 
-차수 $2$ 의 Siegel 첨점형식을 손으로 다루려 한다. Fourier 계수는 반정수 대칭행렬 $T$ 로 매겨지고 성분이 셋이라 한꺼번에 보기 어렵다. 셋 가운데 하나를 고정하면 무엇이 남는지 계산한다.
+차수 $2$ 의 Siegel 첨점형식을 손으로 다루려 한다. Fourier 계수는 반정수 대칭행렬 $T$ 로 매겨지고 성분이 셋이라 한꺼번에 보기 어려우므로, 셋 가운데 하나를 고정하면 무엇이 남는지 계산한다. 아래처럼 적으면 $\mathrm{tr}(T\tau)=n\tau_1+rz+m\tau_2$ 이므로 전개가 $m$ 에 따라 갈린다.
 
 $$\tau=\begin{pmatrix}\tau_1&z\cr z&\tau_2\end{pmatrix},\qquad T=\begin{pmatrix}n&r/2\cr r/2&m\end{pmatrix}$$
 
-로 적으면 $\mathrm{tr}(T\tau)=n\tau_1+rz+m\tau_2$ 이므로 전개가 갈린다.
-
 $$F(\tau)=\sum_{m\ge 0}\left(\sum_{n,r}a(n,r,m)\thinspace e^{2\pi i(n\tau_1+rz)}\right)e^{2\pi i m\tau_2}$$
 
-괄호 안은 $\tau_1$ 과 $z$ 의 함수다. 이것을 $\phi_m(\tau_1,z)$ 라 두면 $m$ 마다 함수 하나가 나오고, 남은 매개변수는 $m$ 하나다.
+괄호 안은 $\tau_1$ 과 $z$ 의 함수이고, 이것을 $\phi_m(\tau_1,z)$ 라 두면 $m$ 마다 함수 하나가 나온다. $\phi_m$ 이 만족하는 식은 $\mathrm{Sp}\_4(\mathbb Z)$ 의 원소 가운데 $m$ 을 섞지 않는 두 종류에서 나온다. 하나는 $\tau_1$ 에 $\mathrm{SL}\_2(\mathbb Z)$ 를 작용시키는 것이고 다른 하나는 $z$ 를 격자만큼 평행이동하는 것이며, 둘 다 $\tau_2$ 를 함께 바꾼다. $F$ 의 변환식에서 $e^{2\pi i m\tau_2}$ 의 지수가 바뀐 만큼이 $\phi_m$ 쪽 인자로 옮겨지고, 그렇게 얻은 두 식을 Siegel 형식과 떼어 조건으로 삼은 것이 Jacobi 형식이다.
 
-$\phi_m$ 이 만족하는 식은 $\mathrm{Sp}\_4(\mathbb Z)$ 의 원소 가운데 $m$ 을 섞지 않는 것들에서 나온다. 첫째는 $\tau_1$ 에 $\mathrm{SL}\_2(\mathbb Z)$ 를 작용시키는 것으로, $\tau_1\mapsto(a\tau_1+b)/(c\tau_1+d)$ 와 함께 $z\mapsto z/(c\tau_1+d)$ 와 $\tau_2\mapsto\tau_2-cz^2/(c\tau_1+d)$ 가 딸려 온다. $F$ 의 변환식에서 $\det(C\tau+D)=c\tau_1+d$ 이고 $e^{2\pi im\tau_2}$ 의 지수가 바뀐 만큼이 $\phi_m$ 쪽으로 옮겨진다.
+$$\tau_1\mapsto\frac{a\tau_1+b}{c\tau_1+d},\qquad z\mapsto\frac{z}{c\tau_1+d},\qquad \tau_2\mapsto\tau_2-\frac{cz^2}{c\tau_1+d}$$
 
-$$\phi_m\left(\frac{a\tau_1+b}{c\tau_1+d},\thinspace\frac{z}{c\tau_1+d}\right)=(c\tau_1+d)^k\thinspace e^{2\pi i mcz^2/(c\tau_1+d)}\thinspace\phi_m(\tau_1,z)$$
-
-둘째는 $z$ 를 격자만큼 평행이동하는 원소들로, $z\mapsto z+\lambda\tau_1+\mu$ 와 함께 $\tau_2\mapsto\tau_2+\lambda^2\tau_1+2\lambda z+\lambda\mu$ 가 딸려 온다. 같은 방식으로 지수를 옮기면 다음이 나온다.
-
-$$\phi_m(\tau_1,z+\lambda\tau_1+\mu)=e^{-2\pi i m(\lambda^2\tau_1+2\lambda z)}\thinspace\phi_m(\tau_1,z)$$
-
-이 두 식을 Siegel 형식과 떼어 조건으로 삼은 것이 Jacobi 형식이다.
+$$z\mapsto z+\lambda\tau_1+\mu,\qquad \tau_2\mapsto\tau_2+\lambda^2\tau_1+2\lambda z+\lambda\mu$$
 
 # 정의
 
