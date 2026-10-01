@@ -16,31 +16,17 @@ $\mu=0$ 은 아벨체에 대해 증명되어 있고(Ferrero–Washington), $\lam
 
 # 직관
 
-## 탑에서의 류군의 성장
+탑의 각 층 류군을 하나로 모은 $X_\infty=\varprojlim A_n$ 은 Iwasawa 대수 $\Lambda=\mathbb Z_p[[T]]$ 위의 유한생성 비틀림 가군이고, 구조 정리로 $\bigoplus_i\Lambda/(p^{m_i})$ 와 $\bigoplus_j\Lambda/(f_j(T))$ 의 직합에 유사동형이다. $\mu=\sum m_i$ 는 $p$ 로 나뉘는 부분의 크기이고 $\lambda=\sum\deg f_j$ 는 비틀림 [멱급수](power-series.md) 부분의 차수다. 따라서 $\lambda=\mu=0$ 은 $X_\infty$ 가 유한하다는 것이고, 어느 층부터 탑의 류군이 자라지 않는다는 것이다.
 
-$X_\infty=\varprojlim A_n$ 은 Iwasawa 대수 $\Lambda=\mathbb Z_p[[T]]$ 위의 유한생성 비틀림 가군이고, 구조 정리로
-
-$$
-X_\infty\ \sim\ \bigoplus_i\Lambda/(p^{m_i})\ \oplus\ \bigoplus_j\Lambda/(f_j(T))
-$$
-
-로 분해된다. $\mu=\sum m_i$ 는 $p$ 로 나뉘는 부분의 크기이고 $\lambda=\sum\deg f_j$ 는 비틀림 [멱급수](power-series.md) 부분의 차수다. $\lambda=\mu=0$ 은 $X_\infty$ 가 유한가군이라는 뜻이고, 탑의 류군이 어느 층부터 자라지 않는다는 뜻이다.
-
-## 실수 쪽과 허수 쪽의 차이
-
-허수 순환체에서 $A^{-}$ 는 Stickelberger 원소라는 소멸자를 갖고, 그 소멸자의 크기가 $L$ 값으로 주어진다. $L$ 값이 $p$ 로 나뉘는 일이 심심찮게 일어나므로 $A^{-}$ 는 실제로 비자명해지고 $\lambda^{-}\gt 0$ 이 된다.
-
-$A^{+}$ 쪽에는 그런 소멸자가 없다. 주추측은 류군을 단수와 순환체 단수의 지표와 같다고 하지만, 이 등식은 양쪽이 동시에 0 일 가능성을 배제하지 않는다. 단수군이 순환체 단수로 거의 채워져 있으리라는 기대가 $\lambda^{+}=0$ 의 근거이고, 이를 증명할 도구는 없다.
-
-## Leopoldt 추측과의 관계
-
-총실수체 $F$ 의 $\mathbb Z_p$ 확대 후보는 $1+\delta$ 개이고 $\delta$ 는 $p$ 진 조절자의 소멸 차수다. Leopoldt 추측 $\delta=0$ 이 참이면 $\mathbb Z_p$ 확대가 순환 확대 하나뿐이고 Greenberg 추측의 진술이 확정된다.
+허수 순환체에서 $A^{-}$ 는 Stickelberger 원소를 소멸자로 갖고 그 소멸자의 크기가 $L$ 값으로 주어진다. $L$ 값이 $p$ 로 나뉘는 일이 자주 있으므로 $A^{-}$ 가 비자명해지고 $\lambda^{-}\gt 0$ 이 된다. $A^{+}$ 쪽에는 그런 소멸자가 없고, 단수군이 순환체 단수로 거의 채워져 있으리라는 기대가 $\lambda^{+}=0$ 의 근거다.
 
 # 정의
 
 ## 순환 $\mathbb Z_p$ 확대
 
 $\mu_{p^{n}}$ 을 차례로 붙여 만든 $\mathbb Q_\infty=\bigcup\mathbb Q(\mu_{p^{n}})^{+}$ 가 $\mathbb Q$ 의 유일한 $\mathbb Z_p$ 확대다. 일반 수체 $F$ 에 대해 $F_\infty=F\mathbb Q_\infty$ 를 **순환 $\mathbb Z_p$ 확대**라 하고, $\Gamma=\mathrm{Gal}(F_\infty/F)\cong\mathbb Z_p$ 로 둔다.
+
+총실수체 $F$ 의 $\mathbb Z_p$ 확대 후보는 $1+\delta$ 개이고 $\delta$ 는 $p$ 진 조절자의 소멸 차수다. Leopoldt 추측 $\delta=0$ 이 참이면 $\mathbb Z_p$ 확대가 순환 확대 하나뿐이고 Greenberg 추측의 진술이 확정된다.
 
 ## 불변량
 
