@@ -8,37 +8,25 @@
 
 # 직관
 
-## 점 완화가 남기는 오차
-
-$-\varepsilon u\_{xx}-u\_{yy}=f$ 를 간격 $h$ 의 정사각 격자에서 $5$ 점 차분으로 이산화하면 스텐실이
-
-$$
-\frac{1}{h^2}\begin{pmatrix}0&-1&0\cr-\varepsilon&2\varepsilon+2&-\varepsilon\cr0&-1&0\end{pmatrix}
-$$
-
-이다. $\varepsilon$ 이 작으면 좌우 이웃과의 결합이 위아래 이웃과의 결합보다 훨씬 약하다.
-
-감쇠 Jacobi 의 기호는 대각 $2\varepsilon+2$ 로 나눈 값이다.
+$-\varepsilon u\_{xx}-u\_{yy}=f$ 를 간격 $h$ 의 정사각 격자에서 $5$ 점 차분으로 이산화하면, $\varepsilon$ 이 작을 때 좌우 이웃과의 결합이 위아래 이웃과의 결합보다 훨씬 약하다. 감쇠 Jacobi 의 기호는 대각 $2\varepsilon+2$ 로 나눈 값이다.
 
 $$
 \tilde S_h(\theta)=1-\omega\thinspace\frac{2\varepsilon(1-\cos\theta_1)+2(1-\cos\theta_2)}{2\varepsilon+2}
 $$
 
-$\theta_1=\pi$, $\theta_2=0$ 을 넣으면 분자가 $4\varepsilon$ 이므로 $\varepsilon\to0$ 에서 $\tilde S_h\to1$ 이다. 이 모드는 $x$ 방향으로 가장 빠르게 진동하므로 고주파이고, 성긴 격자가 맡지 못한다. 평활자도 줄이지 못하므로 사이클이 멈춘다.
-
-## 줄을 세우는 방향
-
-문제의 원인은 $x$ 방향으로 진동하는 오차의 잔차가 $\varepsilon$ 배로 작아 갱신량이 나오지 않는 것이다. $y$ 방향 이웃을 미지수로 남겨 두고 한 줄을 통째로 풀면 $y$ 방향 항이 전부 좌변으로 넘어간다.
-
-$x=x_i$ 를 고정한 줄을 동시에 푸는 Jacobi 의 기호는 다음과 같다.
-
-$$
-\tilde S_h(\theta)=\frac{2\varepsilon\cos\theta_1}{2\varepsilon+2-2\cos\theta_2}
-$$
-
-$\theta_2$ 가 $0$ 에서 떨어져 있으면 분모가 $2$ 정도이고 분자는 $\varepsilon$ 정도이므로 $\varepsilon\to0$ 에서 기호가 $0$ 으로 간다. 앞 문단에서 남았던 모드의 감쇠가 줄을 세운 방향에 달려 있다.
+$\theta_1=\pi$, $\theta_2=0$ 을 넣으면 분자가 $4\varepsilon$ 이므로 $\varepsilon\to0$ 에서 기호가 $1$ 로 간다. 이 모드는 $x$ 방향으로 가장 빠르게 진동하는 고주파라 성긴 격자가 맡지 못하고, 평활자도 줄이지 못하므로 사이클이 멈춘다. 원인은 $x$ 방향으로 진동하는 오차의 잔차가 $\varepsilon$ 배로 작아 갱신량이 나오지 않는 것이므로, $y$ 방향 이웃을 미지수로 남겨 두고 한 줄을 통째로 푼다. 그러면 $y$ 방향 항이 전부 좌변으로 넘어가 이 모드의 기호가 $\varepsilon\to0$ 에서 $0$ 으로 간다.
 
 # 정의
+
+## 모형 문제
+
+$-\varepsilon u\_{xx}-u\_{yy}=f$ 를 간격 $h$ 의 정사각 격자에서 $5$ 점 차분으로 이산화하면 스텐실이 다음과 같다.
+
+$$
+\frac{1}{h^2}\begin{pmatrix}0&-1&0\cr-\varepsilon&2\varepsilon+2&-\varepsilon\cr0&-1&0\end{pmatrix}
+$$
+
+$\varepsilon$ 이 작으면 좌우 이웃과의 결합이 위아래 이웃과의 결합보다 훨씬 약하다.
 
 ## 선 완화
 
@@ -74,7 +62,13 @@ $x$ 방향 줄과 $y$ 방향 줄을 번갈아 한 번씩 훑는 것을 **교대 
 
 ## 방향의 선택
 
-강하게 결합된 방향을 따라 줄을 놓아야 한다. $-\varepsilon u\_{xx}-u\_{yy}$ 에서 $\varepsilon\ll1$ 이면 결합이 강한 쪽이 $y$ 방향이므로 $y$ 방향 줄을 잡는다. 줄을 $x$ 방향으로 놓으면 직관 절의 기호에서 $\theta_1$ 과 $\theta_2$ 의 자리가 바뀌어 $\varepsilon\to0$ 에서 평활률이 $1$ 로 간다.[^1]
+강하게 결합된 방향을 따라 줄을 놓아야 한다. $x=x_i$ 를 고정한 $y$ 방향 줄을 동시에 푸는 Jacobi 의 기호는 다음과 같다.
+
+$$
+\tilde S_h(\theta)=\frac{2\varepsilon\cos\theta_1}{2\varepsilon+2-2\cos\theta_2}
+$$
+
+$\theta_2$ 가 $0$ 에서 떨어져 있으면 분모가 $2$ 정도이고 분자는 $\varepsilon$ 정도이므로 $\varepsilon\to0$ 에서 기호가 $0$ 으로 간다. $-\varepsilon u\_{xx}-u\_{yy}$ 에서 $\varepsilon\ll1$ 이면 결합이 강한 쪽이 $y$ 방향이므로 $y$ 방향 줄을 잡는다. 줄을 $x$ 방향으로 놓으면 $\theta_1$ 과 $\theta_2$ 의 자리가 바뀌어 $\varepsilon\to0$ 에서 평활률이 $1$ 로 간다.[^1]
 
 ## 남는 모드
 
