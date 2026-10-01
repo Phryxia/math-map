@@ -8,29 +8,9 @@
 
 # 직관
 
-## 쌍선형 사상의 선형화
+행렬식, 내적, 다항식의 곱은 모두 두 변수에 각각 선형인 사상이다. 이런 사상 $\beta:M\times N\to P$ 는 곱집합 $M\times N$ 위에서 정의되지만, $M\times N$ 은 가군으로서 직합 $M\oplus N$ 이고 $\beta$ 는 그 위의 선형사상이 아니다. $\beta(2m,2n)=4\beta(m,n)$ 이므로 스칼라가 두 번 곱해진다. 모든 쌍선형 사상이 한 번 거쳐 가는 가군을 새로 만들어 쌍선형성을 선형성으로 바꾸는 것이 텐서곱이다.
 
-행렬식, 내적, 다항식의 곱, 확률에서의 독립 결합은 모두 두 변수에 각각 선형인 사상이다. 이런 사상 $\beta : M \times N \to P$ 는 곱집합 $M \times N$ 위에서 정의되지만, $M \times N$ 은 가군으로서 직합 $M \oplus N$ 이고 $\beta$ 는 그 위의 선형사상이 아니다. 예컨대 $\beta(2m, 2n) = 4\beta(m, n)$ 이므로 스칼라가 두 번 곱해진다.
-
-텐서곱은 이 어긋남을 정면으로 해결한다. $M \otimes N$ 은 "쌍선형 사상이 선형 사상으로 보이는 새 좌표계" 이며, 모든 쌍선형 사상이 이 좌표계를 딱 한 번 거쳐 간다.
-
-## 원소 수준의 그림
-
-$M \otimes N$ 의 원소는 단순텐서 $m \otimes n$ 들의 유한 합이다. 계산 규칙은 쌍선형성이 강제하는 것뿐이다.
-
-$$
-(m + m') \otimes n = m \otimes n + m' \otimes n, \qquad r(m \otimes n) = (rm) \otimes n = m \otimes (rn)
-$$
-
-일반 원소는 단순텐서가 아니고, 표현도 유일하지 않다. $2 \otimes 3$ 과 $6 \otimes 1$ 은 $\mathbb Z \otimes_{\mathbb Z} \mathbb Z$ 에서 같은 원소다.
-
-## 스칼라가 소멸시키는 예
-
-$$
-\mathbb{Z}/2\mathbb{Z} \otimes_{\mathbb{Z}} \mathbb{Z}/3\mathbb{Z} = 0
-$$
-
-$\mathbb Z/2\mathbb Z$ 에서는 $3x = x$ 이므로 임의의 단순텐서에 대해 $x \otimes y = 3x \otimes y = x \otimes 3y$ 인데, $\mathbb Z/3\mathbb Z$ 에서는 $3y = 0$ 이라 이 값이 $0$ 이다. 두 가군이 모두 $0$ 이 아닌데 텐서곱이 사라지며, 벡터 공간에서는 일어나지 않는 현상이다.
+$M\otimes_R N$ 의 원소는 단순텐서 $m\otimes n$ 들의 유한 합이고 계산 규칙은 쌍선형성이 강제하는 것뿐이다. 표현이 유일하지 않아 $\mathbb Z\otimes_{\mathbb Z}\mathbb Z$ 에서 $2\otimes3$ 과 $6\otimes1$ 이 같은 원소다. $\mathbb Z/2\mathbb Z\otimes_{\mathbb Z}\mathbb Z/3\mathbb Z$ 을 계산하면, $\mathbb Z/2\mathbb Z$ 에서 $3x=x$ 이므로 $x\otimes y=3x\otimes y=x\otimes 3y$ 이고 $\mathbb Z/3\mathbb Z$ 에서 $3y=0$ 이라 값이 $0$ 이다. 두 가군이 모두 $0$ 이 아닌데 텐서곱이 $0$ 이며, 벡터 공간에서는 일어나지 않는다.
 
 # 정의
 
