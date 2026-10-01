@@ -24,23 +24,9 @@ $$
 
 # 직관
 
-## 이름표가 겹치는 원인
+$\mathrm{GL}\_2(F)$ 의 기약 표현을 $\mathrm{SL}\_2(F)$ 로 제한하면 쪼개질 수 있고, 쪼개진 조각들은 $\mathrm{GL}\_2(F)$ 의 켤레작용으로 서로 옮겨 다니며 같은 매개변수를 갖는다. $\mathrm{GL}\_n$ 에서는 중심화군이 연결되어 성분군이 자명하고 꾸러미가 하나지만, 쌍대군 $\mathrm{PGL}\_2(\mathbb C)$ 안에서는 중심화군이 연결되지 않을 수 있다. 그 성분군의 지표가 조각마다 붙는 이름표다.
 
-$\mathrm{GL}\_n$ 에서는 중심화군이 언제나 작다. $\varphi$ 가 기약이면 Schur 보조정리로 중심화군은 스칼라뿐이고, 일반적으로도 $\mathrm{GL}$ 안의 중심화군은 연결되어 있다. 연결되면 성분군이 자명하고 꾸러미도 하나다.
-
-$\mathrm{SL}\_2$ 에서는 다르다. $\mathrm{GL}\_2(F)$ 의 기약 표현을 $\mathrm{SL}\_2(F)$ 로 제한하면 쪼개질 수 있고, 쪼개진 조각들은 $\mathrm{GL}\_2(F)$ 의 켤레작용으로 서로 옮겨 다니며 같은 매개변수를 갖는다. 쌍대군 $\mathrm{PGL}\_2(\mathbb C)$ 안에서 중심화군이 연결되지 않을 수 있다는 것이 원인이다.
-
-## 내부형식 위의 표현
-
-실군이 가장 선명한 예다. $\mathrm{PGL}\_2(\mathbb R)$ 의 이산계열은 $\mathrm{SL}\_2(\mathbb R)$ 에서 정칙/반정칙 두 조각으로 갈라져 성분군 $\mathbb Z/2$ 의 두 지표를 채운다. 매개변수에 따라서는 $\mathrm{PGL}\_2(\mathbb R)$ 쪽에 표현이 하나뿐이고, 남은 지표에 해당하는 표현은 **콤팩트 내부형식** $\mathrm{PB}^\times=\mathrm{SU}(2)/\lbrace\pm1\rbrace$ 의 유한차원 표현이다.
-
-무한차원 표현과 유한차원 표현을 같은 이름표 아래 두는 것은 [Jacquet–Langlands 대응](jacquet-langlands.md)이 이미 하던 일이고, Vogan 꾸러미는 그것을 이름표 체계 안에 넣은 것이다.
-
-## 기저점
-
-$\Pi_\varphi\leftrightarrow\mathrm{Irr}(\mathcal S_\varphi)$ 는 표준적인 대응이 아니다. 양쪽 모두 유한집합이라 짝짓는 방법이 여럿이고, 하나를 고정하려면 **기저점**을 정해야 한다. 관례는 Whittaker 데이터를 쓴다. 유사분열형 $G$ 위에서 주어진 Whittaker 데이터에 대해 [일반 표현](whittaker-models.md)인 원소를 $\mathcal S_\varphi$ 의 자명 지표에 대응시킨다.
-
-꾸러미마다 그런 일반 표현이 정확히 하나 있다는 Shahidi 의 일반성 추측이 이 정규화의 근거다. GGP(Gan–Gross–Prasad) 의 지표 공식을 구체적인 $\varepsilon$ 부호로 적으려면 이 정규화가 먼저 고정되어야 한다.
+$\mathrm{PGL}\_2(\mathbb R)$ 의 이산계열은 $\mathrm{SL}\_2(\mathbb R)$ 에서 정칙과 반정칙 두 조각으로 갈라져 성분군 $\mathbb Z/2$ 의 두 지표를 채운다. 매개변수에 따라서는 $\mathrm{PGL}\_2(\mathbb R)$ 쪽에 표현이 하나뿐이고, 남은 지표에 해당하는 표현은 **콤팩트 내부형식** $\mathrm{PB}^\times=\mathrm{SU}(2)/\lbrace\pm1\rbrace$ 의 유한차원 표현이다. 무한차원 표현과 유한차원 표현을 같은 이름표 아래 두는 것은 [Jacquet–Langlands 대응](jacquet-langlands.md)이 이미 하던 일이고, 순수 내부형식 전체의 표현을 한 꾸러미로 모아 성분군의 지표와 짝지은 것이 Vogan 꾸러미다.
 
 # 정의
 
@@ -71,6 +57,8 @@ $$
 
 이 전단사가 정련된 국소 Langlands 대응이다. 표현이 어느 순수 내부형식 위에 있는지는 지표를 $Z(\widehat G)^\Gamma$ 에 제한해 읽는다.
 
+$\Pi_\varphi\leftrightarrow\mathrm{Irr}(\mathcal S_\varphi)$ 는 표준적인 대응이 아니다. 양쪽 모두 유한집합이라 짝짓는 방법이 여럿이고, 하나를 고정하려면 **기저점**을 정해야 한다. 관례는 Whittaker 데이터를 쓴다. 유사분열형 $G$ 위에서 주어진 Whittaker 데이터에 대해 [일반 표현](whittaker-models.md)인 원소를 $\mathcal S_\varphi$ 의 자명 지표에 대응시키고, 꾸러미마다 그런 일반 표현이 정확히 하나 있다는 Shahidi 의 일반성 추측이 이 정규화의 근거다.
+
 ## 안정성
 
 개별 표현의 지표는 안정 켤레류 위에서 잘 정의되지 않지만, 꾸러미 전체의 합
@@ -95,7 +83,7 @@ $\mathrm{SO}(2n+1)$ 의 쌍대군은 $\mathrm{Sp}\_{2n}(\mathbb C)$ 다. 템퍼�
 
 ## GGP 지표 공식
 
-GGP 의 국소 정리는 다음 형태다.
+GGP(Gan–Gross–Prasad) 의 국소 정리는 다음 형태다.
 
 $$
 \sum_{\pi\in\Pi_\varphi^{\mathrm{Vogan}}}m(\pi)=1,
