@@ -19,15 +19,7 @@ $\alpha_i$ 는 $\pi_v$ 의 Satake 매개변수, $\lambda$ 는 지배적 여무�
 
 # 직관
 
-## 토러스 위의 값
-
-비분기 자리에서 $W^\circ$ 는 오른쪽으로 $K=\mathrm{GL}\_n(\mathcal O)$ 불변이고 왼쪽으로 $N$ 에 대해 $\psi_N$ 변환한다. Iwasawa 분해 $G=NAK$ 를 쓰면 $W^\circ$ 는 $A$ 위의 값으로 결정되고, $A\cap K$ 불변이므로 값이 다음 자리에만 놓인다.
-
-$$
-\varpi^\lambda=\mathrm{diag}(\varpi^{\lambda_1},\dots,\varpi^{\lambda_n}),\qquad\lambda\in\mathbb Z^n
-$$
-
-$W^\circ$ 는 $\mathbb Z^n$ 위의 함수 하나다. $\psi_N$ 의 비퇴화성이 $\lambda_1\ge\dots\ge\lambda_n$ 이 아닌 자리에서 값을 0 으로 만들고, 남는 것이 지배적 여무게다.
+비분기 자리에서 $W^\circ$ 는 오른쪽으로 $K=\mathrm{GL}\_n(\mathcal O)$ 불변이고 왼쪽으로 $N$ 에 대해 $\psi_N$ 변환하므로, Iwasawa 분해 $G=NAK$ 를 쓰면 $A$ 위의 값으로 결정된다. $A\cap K$ 불변이므로 값이 놓이는 자리는 $\varpi^\lambda=\mathrm{diag}(\varpi^{\lambda_1},\dots,\varpi^{\lambda_n})$ 뿐이고, $W^\circ$ 는 $\lambda\in\mathbb Z^n$ 위의 함수 하나다. $\psi_N$ 의 비퇴화성이 $\lambda_1\ge\dots\ge\lambda_n$ 이 아닌 자리의 값을 0 으로 만들어 지배적 여무게만 남는다.
 
 | | 왼쪽 ($p$ 진군) | 오른쪽 (복소 Lie 군) |
 |---|---|---|
@@ -35,21 +27,7 @@ $W^\circ$ 는 $\mathbb Z^n$ 위의 함수 하나다. $\psi_N$ 의 비퇴화성�
 | 변수 | Satake 매개변수 $\alpha_i$ | 쌍대 토러스의 좌표 |
 | 값 | $W^\circ(\varpi^\lambda)$ | 기약지표 $s_\lambda(\alpha)$ |
 
-$X_\ast(T)=X^\ast(\widehat T)$ 는 [Satake 동형](satake-isomorphism.md)이 쌍대군을 만들 때 쓴 동일시다. 두 집합이 같은 격자이므로 두 함수의 비교가 뜻을 갖고, 공식은 그 비교를 등식으로 적는다.
-
-## Hecke 작용과 Satake 변환
-
-Hecke 대수의 원소 $f$ 가 $W^\circ$ 에 작용하면 Satake 변환의 값 $\hat f(\alpha)$ 를 곱한 것이 나온다. $W^\circ$ 는 Hecke 대수의 동시 고유벡터이고 그 고윳값이 $R(\widehat G)\cong\mathbb C[\alpha]^{S_n}$ 의 원소다.
-
-$\lambda$ 로 매겨진 함수족이 기약표현으로 매겨진 지표족과 같은 대수 위에서 같은 방식으로 변환하므로 남는 것은 정규화 $\delta_B^{1/2}$ 뿐이다. 표현환의 자연 기저가 $\lbrace s_\lambda\rbrace$ 이므로 답도 $s_\lambda$ 다.
-
-Casselman–Shalika 는 Whittaker 함수를 $\mathrm{Ind}\_B^G$ 에서 교차 작용소의 합으로 쓰고, Weyl 군에 걸친 합이 Weyl 지표 공식의 bialternant 꼴로 접히는 것을 보인다.
-
-$$
-W^\circ(\varpi^\lambda)\ \propto\ \sum_{w\in W}(-1)^{\ell(w)}\frac{\cdots}{\cdots}\ \longrightarrow\ \frac{\det(\alpha_i^{\lambda_j+n-j})}{\det(\alpha_i^{n-j})}
-$$
-
-$\lambda$ 가 지배적이 아닐 때 합이 상쇄되어 0 이 되는 것도 같은 계산에서 나온다.
+$X_\ast(T)=X^\ast(\widehat T)$ 는 [Satake 동형](satake-isomorphism.md)이 쌍대군을 만들 때 쓴 동일시이므로 두 함수의 비교가 뜻을 갖는다. Hecke 대수의 원소 $f$ 가 $W^\circ$ 에 작용하면 Satake 변환의 값 $\hat f(\alpha)$ 를 곱한 것이 나오므로 $W^\circ$ 는 Hecke 대수의 동시 고유벡터다. $\lambda$ 로 매겨진 함수족이 기약표현으로 매겨진 지표족과 같은 대수 위에서 같은 방식으로 변환하므로 남는 것은 정규화 $\delta_B^{1/2}$ 뿐이고, 표현환의 자연 기저가 $\lbrace s_\lambda\rbrace$ 이므로 답도 $s_\lambda$ 다.
 
 # 정의
 
@@ -87,6 +65,16 @@ $$
 이다. 오른쪽 분수가 $\mathrm{Sym}^m$ 의 지표이고 고전적으로는 정규화된 Hecke 고윳값 $a_{p^m}/p^{m(k-1)/2}$ 다. 이 공식은 $\mathrm{GL}\_2$ 에서 Hecke 재귀 $a_{p^{m+1}}=a_pa_{p^m}-p^{k-1}a_{p^{m-1}}$ 의 일반화다.
 
 # 성질
+
+## 증명의 요지
+
+Casselman–Shalika 는 Whittaker 함수를 $\mathrm{Ind}\_B^G$ 에서 교차 작용소의 합으로 쓰고, Weyl 군에 걸친 합이 Weyl 지표 공식의 bialternant 꼴로 접히는 것을 보인다.
+
+$$
+W^\circ(\varpi^\lambda)\ \propto\ \sum_{w\in W}(-1)^{\ell(w)}\frac{\cdots}{\cdots}\ \longrightarrow\ \frac{\det(\alpha_i^{\lambda_j+n-j})}{\det(\alpha_i^{n-j})}
+$$
+
+$\lambda$ 가 지배적이 아닐 때 합이 상쇄되어 0 이 되는 것도 같은 계산에서 나온다.
 
 ## Cauchy 항등식과 $L$ 인자
 
