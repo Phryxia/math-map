@@ -24,33 +24,17 @@ $$
 
 # 직관
 
-## 무게 다이어그램과 대각표
-
-$\mathrm{GL}\_n$ 의 기약표현 $V_\lambda$ 의 무게 다이어그램을 생각하자. 무게 $\mu$ 의 중복도가 $\dim(V_\lambda)\_\mu$ 이고, 지표는 그것을 $x^\mu$ 에 실어 모은 것이다.
+$\mathrm{GL}\_n$ 의 기약표현 $V_\lambda$ 에서 무게 $\mu$ 의 중복도가 $\dim(V_\lambda)\_\mu$ 이고, 지표는 그것을 $x^\mu$ 에 실어 모은 것이다.
 
 $$
 s_\lambda(x)=\sum_\mu K_{\lambda\mu}\thinspace x^\mu
 $$
 
-이 계수 $K_{\lambda\mu}$ 를 **Kostka 수**라 한다. Weyl 지표 공식에서 Kostant 공식으로 계산한 것이 바로 이 수이고, 거기서는 Weyl 군 위의 교대합이라 부호가 상쇄되는 형태였다.
-
-조합론적 기술은 상쇄 없이 센다. 모양 $\lambda$ 의 칸에 $1,\dots,n$ 을 채우되 행은 왼쪽에서 오른쪽으로 약증가, 열은 위에서 아래로 강증가하도록 하면 그것이 반표준 Young 대각표(semistandard Young tableau, SSYT)이고,
+이 계수 $K_{\lambda\mu}$ 를 **Kostka 수**라 한다. Weyl 지표 공식에서 Kostant 공식으로 계산하면 Weyl 군 위의 교대합이 되어 부호가 상쇄되지만, 모양 $\lambda$ 의 칸에 $1,\dots,n$ 을 행은 왼쪽에서 오른쪽으로 약증가, 열은 위에서 아래로 강증가하도록 채운 반표준 Young 대각표(semistandard Young tableau, SSYT)를 세면 상쇄가 없다. $K_{\lambda\mu}$ 는 내용이 $\mu$ 인 대각표의 개수이고, 음이 아닌 정수임이 이 기술에서 바로 보인다. 행의 약증가는 대칭성에서, 열의 강증가는 교대곱에서 같은 값이 소멸하는 반대칭성에서 나온다.
 
 $$
 s_\lambda(x)=\sum_{T\in\mathrm{SSYT}(\lambda,n)}x^{T},\qquad x^T=\prod_{\text{칸}}x_{T(\text{칸})}
 $$
-
-가 된다. $K_{\lambda\mu}$ 는 내용이 $\mu$ 인 대각표의 개수다. 음이 아닌 정수임이 정의에서 바로 보인다.
-
-행의 약증가는 대칭성(같은 값이 반복 가능)에서, 열의 강증가는 반대칭성(교대곱에서 같은 값이 소멸)에서 나온다. $\mathrm{GL}\_n$ 표현이 대칭곱과 외적의 조합으로 만들어지는 구조가 대각표의 두 규칙으로 번역된 것이다.
-
-## 세 정의의 쓰임
-
-계산에 따라 유리한 정의가 다르다.
-
-- 곱 $s_\lambda s_\mu$ 를 전개할 때는 대각표 쪽이 낫다. Littlewood–Richardson 규칙이 나온다.
-- 변수의 개수를 무한으로 보내거나 특수화할 때는 Jacobi–Trudi 쪽이 낫다. 행렬식이 변수 개수를 명시적으로 쓰지 않기 때문이다.
-- 모듈러성이나 대칭군 작용을 볼 때는 bialternant 쪽이 낫다. 분자와 분모가 각각 반대칭이라는 구조가 드러난다.
 
 # 정의
 
@@ -173,6 +157,14 @@ Schur 다항식에 매개변수를 하나나 둘 넣으면 다음 다항식족�
 | LLT(Lascoux–Leclerc–Thibon), 비대칭 Macdonald | 여럿 | 아핀 결정 기저, 대각조화함수 |
 
 모두 $q,t$ 를 특수화하면 $s_\lambda$ 로 돌아오고, 위의 세 정의가 각각 대응물을 갖는다. Macdonald 다항식의 전개 계수가 음이 아닌 정수라는 추측(Macdonald 양성 추측)이 Haiman 의 Hilbert 스킴 기하로 증명된 것이 이 방향의 대표적 성과다.
+
+## 세 정의의 쓰임
+
+계산에 따라 유리한 정의가 다르다.
+
+- 곱 $s_\lambda s_\mu$ 를 전개할 때는 대각표 쪽이 낫다. Littlewood–Richardson 규칙이 나온다.
+- 변수의 개수를 무한으로 보내거나 특수화할 때는 Jacobi–Trudi 쪽이 낫다. 행렬식이 변수 개수를 명시적으로 쓰지 않기 때문이다.
+- 모듈러성이나 대칭군 작용을 볼 때는 bialternant 쪽이 낫다. 분자와 분모가 각각 반대칭이라는 구조가 드러난다.
 
 [^1]: 표준 참고서는 I. Macdonald, *Symmetric Functions and Hall Polynomials* (2판, 1995) 1 장과 R. Stanley, *Enumerative Combinatorics II* (1999) 7 장. LR 규칙의 현대적 증명과 hive 모형은 A. Knutson–T. Tao, *The honeycomb model of $\mathrm{GL}\_n(\mathbb C)$ tensor products I*, J. Amer. Math. Soc. 12 (1999). RSK 와 가장 긴 증가 부분열의 점근은 J. Baik–P. Deift–K. Johansson, J. Amer. Math. Soc. 12 (1999). Macdonald 양성은 M. Haiman, J. Amer. Math. Soc. 14 (2001).
 
