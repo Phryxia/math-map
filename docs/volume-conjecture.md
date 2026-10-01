@@ -16,41 +16,17 @@ $J_N$ 은 $N$ 차원 표현으로 색칠한 색 Jones 다항식이고, 이것을
 
 # 직관
 
-## 두 극한의 비교
-
-[Witten 점근 추측](witten-asymptotics.md)과 볼륨 추측은 둘 다 양자 불변량의 점근이지만 극한의 방향이 다르다.
-
-| | Witten 점근 추측 | 볼륨 추측 |
-|---|---|---|
-| 대상 | 닫힌 3 [다양체](manifolds.md) | $S^3$ 안의 매듭 |
-| 키우는 것 | 레벨 $k$ | 색 $N$ |
-| $q$ | $e^{2\pi i/(k+2)}\to1$ | $N$ 과 함께 움직임 |
-| 크기 | 다항식적 | 지수적 |
-| 읽는 것 | 위상 (CS, Chern–Simons 값) | 증가율 (부피) |
-
-Witten 쪽에서는 실수 임계값의 위상 $e^{2\pi ik\mathrm{CS}}$ 가 나와 절댓값이 1 이고 전체는 $k$ 의 멱으로 자란다. 볼륨 추측에서는 복소 임계값이 나온다. 안장점이 실축 위에 없어 $e^{iN\cdot(\text{복소수})}$ 가 지수적으로 커지고 그 지수의 허수부가 부피다. 쌍곡 구조는 $\mathrm{SL}\_2(\mathbb C)$ 표현에 대응하므로 CS 불변량이 복소수
+8 자매듭의 색 Jones 다항식은 Habiro 의 공식으로 $q=e^{2\pi i/N}$ 에서 아래 형태가 된다. 각 항이 $\prod(1-q^j)$ 꼴이므로 $\log$ 를 취하면 합 $\sum\log\vert 1-q^j\vert$ 가 되고, $N\to\infty$ 에서 적분으로 바뀐다.
 
 $$
-\mathrm{CS}+i\thinspace\frac{\mathrm{Vol}}{2\pi}
+J_N(4_1;q)=\sum_{k=0}^{N-1}\prod_{j=1}^{k}\big\vert 1-q^{j}\big\vert^2
 $$
 
-가 되고, 정련된 판본은 위상까지 포함해 이 복소수 전체를 주장한다.
-
-## $q$ 이항급수와 Lobachevsky 함수
-
-8 자매듭의 색 Jones 다항식은 Habiro 의 공식으로 다음이 된다.
-
 $$
-J_N(4_1;q)=\sum_{k=0}^{N-1}\prod_{j=1}^{k}\big|1-q^{j}\big|^2\quad(q=e^{2\pi i/N}\ \text{에서})
+\frac1N\sum_{j}\log\big\vert 1-e^{2\pi ij/N}\big\vert\ \longrightarrow\ \frac1{2\pi}\int\log\vert 1-e^{i\theta}\vert\thinspace d\theta
 $$
 
-각 항이 $\prod(1-q^j)$ 꼴이므로 $\log$ 를 취하면 합 $\sum\log|1-q^j|$ 가 되고, $N\to\infty$ 에서 적분으로 바뀐다.
-
-$$
-\frac1N\sum_{j}\log\big|1-e^{2\pi ij/N}\big|\ \longrightarrow\ \frac1{2\pi}\int\log|1-e^{i\theta}|\thinspace d\theta
-$$
-
-$-\int\log|2\sin(\theta/2)|d\theta$ 가 **Lobachevsky 함수**이고 쌍곡 사면체의 부피가 이 함수로 표현된다. 8 자매듭 여집합은 정이면체 사면체 두 개로 분할되고 그 부피가 $2.0298\ldots$ 다. 합의 최대항을 찾는 안장점 조건이 사면체의 이면각을 정하는 붙임 방정식과 같은 식이 된다.
+$-\int\log\vert 2\sin(\theta/2)\vert\thinspace d\theta$ 가 **Lobachevsky 함수**이고 쌍곡 사면체의 부피가 이 함수로 표현된다. 8 자매듭 여집합은 정이면체 사면체 두 개로 분할되고 그 부피가 $2.0298\ldots$ 다. 합의 최대항을 찾는 안장점 조건이 사면체의 이면각을 정하는 붙임 방정식과 같은 식이 된다. 안장점이 실축 위에 없으므로 $e^{iN\cdot(\text{복소수})}$ 가 지수적으로 커지고, 그 지수의 허수부가 부피다.
 
 # 정의
 
@@ -94,13 +70,31 @@ Alexander 다항식은 무한순환덮개의 [호몰로지](homology.md)라는 �
 
 ## 정련된 판본
 
-위상까지 포함하면 다음이 된다.
+위상까지 포함하면 부피 $\mathrm{Vol}$ 과 Chern–Simons 불변량 $\mathrm{CS}$ 로 다음이 된다.
 
 $$
 J_N(K;e^{2\pi i/N})\ \sim\ N^{3/2}\thinspace e^{N\big(\mathrm{Vol}+i\thinspace\mathrm{CS}\big)/2\pi}\cdot\big(c+O(1/N)\big)
 $$
 
 지수 앞의 멱이 $3/2$ 라는 것은 안장점이 비퇴화이고 실질 차원이 3 이라는 뜻이다. 상수 $c$ 는 비틀림과 관련되며, Witten 점근 추측에서 진폭이 Reidemeister 비틀림이던 구조가 복소 안장점에서 반복된다.
+
+## Witten 점근 추측과의 대비
+
+[Witten 점근 추측](witten-asymptotics.md)과 볼륨 추측은 둘 다 양자 불변량의 점근이지만 극한의 방향이 다르다.
+
+| | Witten 점근 추측 | 볼륨 추측 |
+|---|---|---|
+| 대상 | 닫힌 3 [다양체](manifolds.md) | $S^3$ 안의 매듭 |
+| 키우는 것 | 레벨 $k$ | 색 $N$ |
+| $q$ | $e^{2\pi i/(k+2)}\to1$ | $N$ 과 함께 움직임 |
+| 크기 | 다항식적 | 지수적 |
+| 읽는 것 | 위상 (CS, Chern–Simons 값) | 증가율 (부피) |
+
+Witten 쪽에서는 실수 임계값의 위상 $e^{2\pi ik\mathrm{CS}}$ 가 나와 절댓값이 1 이고 전체는 $k$ 의 멱으로 자란다. 볼륨 추측에서는 복소 임계값이 나온다. 쌍곡 구조가 $\mathrm{SL}\_2(\mathbb C)$ 표현에 대응하므로 CS 불변량이 복소수가 되고, 정련된 판본은 위상까지 포함해 이 복소수 전체를 주장한다.
+
+$$
+\mathrm{CS}+i\thinspace\frac{\mathrm{Vol}}{2\pi}
+$$
 
 ## 연결된 추측
 
