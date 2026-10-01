@@ -22,26 +22,14 @@ Kohnen 은 **플러스 공간**이라는 부분공간 위에서 이 대응을 �
 
 # 직관
 
-## 반정수 무게의 Hecke 작용소
-
-정수 무게에서 $T(p)$ 는 계수 $a_n$ 을 $a_{np}$ 와 $a_{n/p}$ 로 옮긴다. 반정수 무게 형식의 계수 $c(n)$ 은 $n$ 의 판별식 부분에 민감하므로 같은 조작이 통하지 않는다.
-
-$n=D\thinspace m^2$ 으로 쪼개면($D$ 는 제곱인수가 없는 부분) $n\mapsto np$ 는 $D$ 를 바꾸어 서로 다른 판별식 세계를 뒤섞고, $n\mapsto np^2$ 는 $D$ 를 고정한 채 $m$ 만 움직인다.
-
-$D$ 방향은 뒤틀림을 고르고 $m$ 방향은 Hecke 구조를 담는다. Shimura 대응은 $D$ 를 고정하고 $m$ 방향의 Dirichlet 급수를 보는 것이다.
+정수 무게에서 $T(p)$ 는 계수 $a_n$ 을 $a_{np}$ 와 $a_{n/p}$ 로 옮기지만, 반정수 무게 형식의 계수 $c(n)$ 은 $n$ 의 판별식 부분에 민감해 같은 조작이 통하지 않는다. $n=D\thinspace m^2$ 으로 쪼개면($D$ 는 제곱인수가 없는 부분) $n\mapsto np$ 는 $D$ 를 바꾸어 서로 다른 판별식 세계를 뒤섞고, $n\mapsto np^2$ 는 $D$ 를 고정한 채 $m$ 만 움직인다. $D$ 방향은 뒤틀림을 고르고 $m$ 방향은 Hecke 구조를 담으므로, Shimura 대응은 $D$ 를 고정하고 $m$ 방향의 Dirichlet 급수를 본다.
 
 $$
-\sum_{m\ge1}\frac{c(|D|m^2)}{m^s}
-\ =\ c(|D|)\cdot\frac{L(s-k+1,\chi_D)}{\zeta(2s-2k+2)}\cdot\text{(}f\text{ 의 } L\text{ 함수 인자)}
+\sum_{m\ge1}\frac{c(\vert D\vert m^2)}{m^s}
+\ =\ c(\vert D\vert)\cdot\frac{L(s-k+1,\chi_D)}{\zeta(2s-2k+2)}\cdot\text{(}f\text{ 의 } L\text{ 함수 인자)}
 $$
 
-오른쪽에 나타나는 Euler 인자가 무게 $2k$ 형식의 것이다.
-
-## 대응의 근거
-
-Shimura 의 증명은 [Rankin–Selberg 적분](rankin-selberg.md)으로 위 Dirichlet 급수의 해석적 성질을 확보하고 Weil 의 역정리를 적용한다.
-
-Shintani 와 Niwa 는 theta 올림으로 다른 증명을 주었다. 쌍대쌍 $(\mathrm{Mp}\_2,\mathrm{PGL}\_2)$ 에 Weil 표현을 제한하면 두 [군의 표현](group-representations.md) 사이에 사전이 생기고, 그 사전이 Shimura 대응이다.
+오른쪽에 나타나는 Euler 인자가 무게 $2k$ 형식의 것이다. Shimura 의 증명은 [Rankin–Selberg 적분](rankin-selberg.md)으로 이 Dirichlet 급수의 해석적 성질을 확보하고 Weil 의 역정리를 적용한다. Shintani 와 Niwa 는 theta 올림으로 다른 증명을 주었다. 쌍대쌍 $(\mathrm{Mp}\_2,\mathrm{PGL}\_2)$ 에 Weil 표현을 제한하면 두 [군의 표현](group-representations.md) 사이에 사전이 생기고, 그 사전이 Shimura 대응이다.
 
 # 정의
 
