@@ -8,21 +8,9 @@
 
 # 직관
 
-## 부분군의 내림 사슬
+유한군에서 부분군의 내림 사슬은 원소 개수가 줄어들어 멈추지만, 무한군에서는 개수가 줄지 않는다. 정의 가능한 부분군 $H$ 의 잉여류 $gH$ 는 $x\mapsto gx$ 로 $H$ 와 일대일 대응하고 이 대응이 정의 가능하므로 $\mathrm{rk}\thinspace gH=\mathrm{rk}\thinspace H$ 이며, 잉여류들은 서로 겹치지 않는다. 잉여류가 무한히 많으면 위수 $\mathrm{rk}\thinspace H$ 인 집합이 $G$ 안에 겹치지 않게 무한히 많고, 위수는 그런 집합이 무한히 많을 때 한 단계 올라가도록 정의하므로 $\mathrm{rk}\thinspace G\ge\mathrm{rk}\thinspace H+1$ 이다. 잉여류가 유한개면 $G$ 가 위수 $\mathrm{rk}\thinspace H$ 인 조각 유한개의 합집합이어서 $\mathrm{rk}\thinspace G=\mathrm{rk}\thinspace H$ 이고, 대신 위수가 최대인 조각의 개수가 $\lbrack G:H\rbrack$ 배로 줄어든다. 이 개수가 Morley 정도다.
 
-유한군에서 부분군의 내림 사슬은 원소 개수가 줄어들어 멈춘다. 무한군에서는 개수가 줄지 않으므로 다른 값이 줄어야 한다.
-
-$G$ 의 정의 가능한 부분군 $H$ 를 잡는다. 잉여류 $gH$ 는 $x\mapsto gx$ 로 $H$ 와 일대일 대응하고 이 대응이 정의 가능하므로 $\mathrm{rk}\thinspace gH=\mathrm{rk}\thinspace H$ 다. 잉여류들은 서로 겹치지 않는다.
-
-잉여류가 무한히 많으면 위수 $\mathrm{rk}\thinspace H$ 인 집합이 $G$ 안에 겹치지 않게 무한히 많다. 위수는 그런 집합이 무한히 많을 때 한 단계 올라가도록 정의하므로 $\mathrm{rk}\thinspace G\ge\mathrm{rk}\thinspace H+1$ 이다. 잉여류의 개수가 무한이면 위수가 줄어든다.
-
-잉여류가 유한개면 $G$ 가 위수 $\mathrm{rk}\thinspace H$ 인 조각 유한개의 합집합이므로 $\mathrm{rk}\thinspace G=\mathrm{rk}\thinspace H$ 다. 이때는 위수가 최대인 조각의 개수가 $\lbrack G:H\rbrack$ 배로 줄어든다. 이 개수가 Morley 정도다.
-
-## 연결 성분
-
-위수는 유한한 자연수이고 정도도 자연수다. 부분군을 하나 내려갈 때마다 둘 가운데 하나가 줄어들므로 정의 가능한 부분군의 내림 사슬은 유한하다.
-
-그러므로 잉여류가 유한개인 정의 가능한 부분군 가운데 가장 작은 것이 하나 있다. 그것이 연결 성분 $G^\circ$ 이고, 대수군에서 항등원을 품은 Zariski 연결 성분이 하던 자리에 놓인다.
+위수와 정도가 모두 자연수이고 부분군을 하나 내려갈 때마다 둘 가운데 하나가 줄어들므로, 정의 가능한 부분군의 내림 사슬은 유한하다. 그러므로 잉여류가 유한개인 정의 가능한 부분군 가운데 가장 작은 것이 하나 있다. 그것이 연결 성분 $G^\circ$ 이고, 대수군에서 항등원을 품은 Zariski 연결 성분이 하던 자리에 놓인다.
 
 # 정의
 
