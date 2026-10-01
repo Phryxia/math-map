@@ -20,41 +20,9 @@ $G=S^1$ 이면 이 분해가 [Fourier 급수](fourier-series.md)이고 $G=\mathr
 
 # 직관
 
-## 군 평균
+유한군에서 임의의 내적 $\langle\cdot,\cdot\rangle_0$ 을 군 평균 $\frac1{\lvert G\rvert}\sum_{g\in G}\langle gu,gv\rangle_0$ 으로 대칭화하면 불변 내적이 나온다. 그러면 표현이 유니터리가 되고 부분표현의 직교보공간이 다시 부분표현이므로 완전가약성이 따라온다. 콤팩트 군에서는 이 합을 Haar 적분 $\int_G\langle gu,gv\rangle_0\thinspace dg$ 로 바꾸며, [콤팩트성](compactness.md)은 측도의 전체 질량이 유한해야 평균이 정의되는 자리에 쓰인다. $G=\mathbb R$ 에서는 전체 질량이 무한이어서 이 논법이 무너지고, 유니터리 표현이 직합이 아니라 직적분으로 분해되어 [연속 스펙트럼](bounded-operators.md)이 나온다.
 
-유한군에서 임의의 내적 $\langle\cdot,\cdot\rangle_0$ 을 군 평균으로 대칭화하면 불변 내적이 나온다.
-
-$$
-\langle u,v\rangle=\frac1{|G|}\sum_{g\in G}\langle gu,gv\rangle_0
-$$
-
-그러면 표현이 유니터리가 되고, 부분표현의 직교보공간이 다시 부분표현이라 완전가약성이 따라온다.
-
-콤팩트 군에서는 합을 Haar 적분으로 바꾼다.
-
-$$
-\langle u,v\rangle=\int_G\langle gu,gv\rangle_0\thinspace dg
-$$
-
-[콤팩트성](compactness.md)은 여기에 쓰인다. Haar 측도의 전체 질량이 유한해야 평균이 정의된다. $G=\mathbb R$ 에서는 전체 질량이 무한이어서 이 논법이 무너지고, 유니터리 표현이 직합이 아니라 직적분으로 분해되어 [연속 스펙트럼](bounded-operators.md)이 나온다.
-
-## 행렬계수
-
-표현 $\rho:G\to\mathrm{GL}(V)$ 와 기저를 고정하면 함수들이 나온다.
-
-$$
-\rho_{ij}(g)=\big(\rho(g)\big)\_{ij}
-$$
-
-이것이 **행렬계수**다. $G=S^1$ 이고 $\rho_n(\theta)=e^{in\theta}$ 이면 행렬계수가 $e^{in\theta}$ 자신이므로, Fourier 급수는 모든 $L^2$ 함수가 행렬계수의 급수라는 진술이다.
-
-Peter–Weyl 정리의 첫 형태가 이것의 일반화다. 모든 기약표현의 행렬계수를 모으면 $L^2(G)$ 에서 조밀하고, 정규화하면 정규직교기저가 된다.
-
-$$
-\left\lbrace\sqrt{\dim V_i}\ \rho^{(i)}\_{jk}\right\rbrace
-$$
-
-$\dim V_i$ 차원 표현이 $(\dim V_i)^2$ 개의 함수를 기여하므로 유한군의 $|G|=\sum(\dim V_i)^2$ 가 무한 차원으로 옮겨진다.
+표현 $\rho:G\to\mathrm{GL}(V)$ 와 기저를 고정하면 함수 $\rho_{ij}(g)$ 가 나오고 이것이 행렬계수다. $G=S^1$ 이고 $\rho_n(\theta)=e^{in\theta}$ 이면 행렬계수가 $e^{in\theta}$ 자신이므로, Fourier 급수는 모든 $L^2$ 함수가 행렬계수의 급수라는 진술이다. Peter–Weyl 정리는 이것을 일반화해 모든 기약표현의 행렬계수를 모으면 $L^2(G)$ 에서 조밀하고 정규화하면 정규직교기저가 된다고 말한다. $\dim V_i$ 차원 표현이 $(\dim V_i)^2$ 개의 함수를 기여하므로 유한군의 $\lvert G\rvert=\sum(\dim V_i)^2$ 가 무한 차원으로 옮겨진다.
 
 # 정의
 
@@ -70,11 +38,13 @@ $G$ 가 콤팩트이면 이 측도가 유한이고 오른쪽 불변이기도 하
 
 ## 행렬계수와 지표
 
-유한차원 표현 $(\rho,V)$ 의 행렬계수는 위와 같고, **지표**는 $\chi_\rho(g)=\mathrm{tr}\rho(g)$ 다. 지표는 켤레불변이라 **류함수**이고, 콤팩트 군에서도 유한군과 같은 직교관계를 만족한다.
+유한차원 표현 $(\rho,V)$ 와 기저를 고정해 얻는 함수 $\rho_{ij}(g)=\big(\rho(g)\big)\_{ij}$ 가 **행렬계수**이고, **지표**는 $\chi_\rho(g)=\mathrm{tr}\rho(g)$ 다. 지표는 켤레불변이라 **류함수**이고, 콤팩트 군에서도 유한군과 같은 직교관계를 만족한다.
 
 $$
 \int_G\chi_i(g)\overline{\chi_j(g)}\thinspace dg=\delta_{ij}
 $$
+
+정규화한 행렬계수 $\lbrace\sqrt{\dim V_i}\thinspace\rho^{(i)}\_{jk}\rbrace$ 가 $L^2(G)$ 의 정규직교기저다.
 
 # 성질
 
