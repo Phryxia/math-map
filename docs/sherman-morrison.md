@@ -8,29 +8,17 @@
 
 # 직관
 
-$n\times n$ 행렬 $A$ 의 [$LU$ 분해](matrix-factorizations.md)를 이미 구해 두었고, 그것으로 $Ay=b$ 를 풀어 $y$ 를 손에 쥐고 있다. 이제 $A$ 의 $(1,1)$ 성분만 $\alpha$ 만큼 키운 행렬로 같은 우변을 풀어야 한다. 새 계수행렬은 $A+\alpha e_1e_1^{\mathsf T}$ 다. 분해를 처음부터 다시 하면 곱셈이 $n^3/3$ 번이고, 방금 한 일을 그대로 되풀이한다.
-
-바뀐 것은 성분 하나이니 새 해 $x$ 를 $y$ 에서 얼마나 움직였는지로 적는다. $(A+\alpha e_1e_1^{\mathsf T})x=b$ 를 옮기면
+$n\times n$ 행렬 $A$ 의 [$LU$ 분해](matrix-factorizations.md)를 이미 구해 두었고, 그것으로 $Ay=b$ 를 풀어 $y$ 를 손에 쥐고 있다. 이제 $A$ 의 $(1,1)$ 성분만 $\alpha$ 만큼 키운 행렬 $A+\alpha e_1e_1^{\mathsf T}$ 로 같은 우변을 풀어야 하는데, 분해를 처음부터 다시 하면 곱셈이 $n^3/3$ 번이다. 바뀐 것은 성분 하나이니 새 해 $x$ 를 $y$ 에서 얼마나 움직였는지로 적는다.
 
 $$
 Ax=b-\alpha(e_1^{\mathsf T}x)\thinspace e_1
 $$
 
-이다. 괄호 안 $e_1^{\mathsf T}x$ 는 $x$ 의 첫 성분이고 아직 모르는 수 하나다. 이것을 $\tau$ 라 두면 우변이 알려진 두 벡터의 결합이므로, 갖고 있는 분해로 $Az=e_1$ 을 한 번 더 풀어
-
-$$
-x=y-\alpha\tau\thinspace z
-$$
-
-를 얻는다. $z$ 를 구하는 데 전진대입과 후진대입이 한 번씩이라 곱셈이 $n^2$ 번이다.
-
-남은 것은 $\tau$ 하나다. 위 식의 첫 성분을 읽으면 $\tau=e_1^{\mathsf T}y-\alpha\tau\thinspace e_1^{\mathsf T}z$ 이므로
+괄호 안 $e_1^{\mathsf T}x$ 는 $x$ 의 첫 성분이고 아직 모르는 수 하나다. 이것을 $\tau$ 라 두면 우변이 알려진 두 벡터의 결합이므로, 갖고 있는 분해로 $Az=e_1$ 을 한 번 더 풀어 $x=y-\alpha\tau\thinspace z$ 를 얻는다. $z$ 를 구하는 데 전진대입과 후진대입이 한 번씩이라 곱셈이 $n^2$ 번이다. 남은 것은 $\tau$ 하나이고, $x=y-\alpha\tau z$ 의 첫 성분을 읽으면 $\tau=e_1^{\mathsf T}y-\alpha\tau\thinspace e_1^{\mathsf T}z$ 이므로 $\tau$ 가 결정된다.
 
 $$
 \tau=\frac{e_1^{\mathsf T}y}{1+\alpha\thinspace e_1^{\mathsf T}z}
 $$
-
-이고, 이것을 $x=y-\alpha\tau z$ 에 넣으면 새 해가 나온다. 분모가 $0$ 이면 새 행렬이 가역이 아니다.
 
 # 정의
 
