@@ -6,9 +6,7 @@
 
 # 직관
 
-위수 $m$ 인 순환군 $Q$ 를 가환군 $A$ 로 확대하는 방법을 센다. [군 확대](group-extensions.md)의 코사이클 조건을 그대로 쓰면 함수 $f:Q\times Q\to A$ 를 찾는 문제이고, 미지수가 $m^2$ 개에 조건이 $m^3$ 개다. $m=100$ 이면 만 개의 미지수를 다룬다.
-
-$Q$ 의 곱셈표를 전부 쓸 필요는 없다. $Q$ 는 생성원 $t$ 하나와 관계 $t^m=1$ 로 정해지므로, 그 생성원과 관계만 재면 된다. $t-1$ 을 곱하는 사상과 $N=1+t+\cdots+t^{m-1}$ 을 곱하는 사상을 번갈아 놓은 다음 줄이 $Q$ 의 군환 위에서 그 일을 한다.
+위수 $m$ 인 순환군 $Q$ 를 가환군 $A$ 로 확대하는 방법을 센다. [군 확대](group-extensions.md)의 코사이클 조건을 그대로 쓰면 함수 $f:Q\times Q\to A$ 를 찾는 문제이고 미지수가 $m^2$ 개, 조건이 $m^3$ 개라 $m=100$ 이면 만 개의 미지수를 다룬다. $Q$ 는 생성원 $t$ 하나와 관계 $t^m=1$ 로 정해지므로 곱셈표를 전부 쓸 필요가 없다. $t-1$ 을 곱하는 사상과 $N=1+t+\cdots+t^{m-1}$ 을 곱하는 사상을 번갈아 놓은 다음 줄이 $Q$ 의 군환 위에서 그 일을 한다.
 
 $$\cdots\xrightarrow{N}\mathbb Z Q\xrightarrow{t-1}\mathbb Z Q\xrightarrow{N}\mathbb Z Q\xrightarrow{t-1}\mathbb Z Q\xrightarrow{\varepsilon}\mathbb Z\to 0$$
 
