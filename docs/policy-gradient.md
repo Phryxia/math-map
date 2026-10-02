@@ -6,19 +6,17 @@
 
 # 직관
 
-로봇 팔의 관절 각도를 정하는 제어를 배운다. 행동이 실수 벡터이므로 [Q 학습](q-learning.md)의 갱신식에 들어 있는 $\max_a Q(s',a)$ 를 계산하려면 갱신 한 번마다 연속 변수에 대한 최대화를 따로 풀어야 한다.
+로봇 팔의 관절 각도를 정하는 제어를 배운다. 행동이 실수 벡터이므로 [Q 학습](q-learning.md)의 갱신식에 들어 있는 $\max_a Q(s',a)$ 를 계산하려면 갱신 한 번마다 연속 변수에 대한 최대화를 따로 풀어야 한다. 최댓값을 구하는 대신 상태 $s$ 에서 행동 $a$ 를 낼 확률을 $\pi_\theta(a\mid s)$ 로 적고 기대 보상 $J(\theta)$ 를 $\theta$ 로 미분해 올리려 하는데, $J$ 는 환경의 전이확률까지 곱해진 기댓값이고 그 전이확률을 모른다. 경로 $\tau=(s_0,a_0,s_1,a_1,\dots)$ 하나가 나올 확률은 다음이다.
 
-최댓값을 구하는 대신 행동을 고르는 규칙 자체에 모수를 붙인다. 상태 $s$ 에서 행동 $a$ 를 낼 확률을 $\pi_\theta(a\mid s)$ 로 적고 기대 보상 $J(\theta)$ 를 $\theta$ 로 미분해 올린다. 그런데 $J$ 는 환경의 전이확률까지 곱해진 기댓값이고, 그 전이확률을 모른다.
+$$
+p_\theta(\tau)=p(s_0)\prod_{t\ge 0}P(s_{t+1}\mid s_t,a_t)\thinspace\pi_\theta(a_t\mid s_t)
+$$
 
-경로 $\tau=(s_0,a_0,s_1,a_1,\dots)$ 하나가 나올 확률을 적어 본다.
+로그를 취하면 곱이 합이 되고, 전이확률 항에는 $\theta$ 가 없으므로 $\theta$ 로 미분하면 사라져 정책의 항만 남는다. 기대 보상의 기울기는 $\nabla_\theta\int p_\theta(\tau)R(\tau)\thinspace d\tau=\int p_\theta(\tau)\nabla_\theta\log p_\theta(\tau)R(\tau)\thinspace d\tau$ 이므로, 아래 식을 넣으면 전이확률이 없는 기댓값이 된다. 경로를 여러 개 굴려 이 값을 평균내면 환경을 모르고도 기울기를 얻는다.
 
-$$p_\theta(\tau)=p(s_0)\prod_{t\ge 0}P(s_{t+1}\mid s_t,a_t)\thinspace\pi_\theta(a_t\mid s_t)$$
-
-로그를 취하면 곱이 합이 되고, 전이확률 항에는 $\theta$ 가 없으므로 $\theta$ 로 미분하면 사라진다. 남는 것은 정책의 항뿐이다.
-
-$$\nabla_\theta\log p_\theta(\tau)=\sum_{t\ge 0}\nabla_\theta\log\pi_\theta(a_t\mid s_t)$$
-
-기대 보상의 기울기는 $\nabla_\theta\int p_\theta(\tau)R(\tau)\thinspace d\tau=\int p_\theta(\tau)\nabla_\theta\log p_\theta(\tau)R(\tau)\thinspace d\tau$ 이므로, 위 식을 넣으면 전이확률이 없는 기댓값이 된다. 경로를 여러 개 굴려 이 값을 평균내면 환경을 모르고도 기울기를 얻는다.
+$$
+\nabla_\theta\log p_\theta(\tau)=\sum_{t\ge 0}\nabla_\theta\log\pi_\theta(a_t\mid s_t)
+$$
 
 # 정의
 
