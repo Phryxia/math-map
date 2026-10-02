@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "savedAt": "2026-10-01T21:07:57.597Z",
-  "nextSeq": 1513,
+  "savedAt": "2026-10-02T01:07:05.128Z",
+  "nextSeq": 1516,
   "items": [
     {
-      "id": "8676ce17",
-      "title": "직관 절이 두 문단을 넘는 문서 훑기 (19차)",
+      "id": "c213c4a6",
+      "title": "직관 절이 두 문단을 넘는 문서 훑기 (20차)",
       "priority": 50,
-      "note": "18차(2026-10-01 여섯째 회차)에 산문 6문단이던 스무 개 가운데 열아홉을 끝냈다. brauer-algebras color-refinement crossing-number-inequality dynamic-connectivity full-approximation-scheme gnn-expressivity groups-of-finite-morley-rank hartshorne-lichtenbaum ideals-quotient-rings jacobi-forms measurable-functions ramanujan-graphs schur-polynomials set-theoretic-complete-intersection sherman-morrison shimura-correspondence sturm-liouville teichmuller-space volume-conjecture. 이어서 5문단이던 abelian-varieties airy-functions anyons baire-category banach-tarski bell-numbers block-designs borel-hierarchy burnside-lemma calculus-of-variations characteristic-classes continued-fractions curvature cw-complexes diophantine-approximation effective-resistance erdos-ko-rado erdos-renyi-graphs fibrations fraisse-limits graph-isomorphism hamiltonian-cycles kalman-filter 스물셋도 끝냈다. 남은 규모는 295개이고 5문단짜리부터 이어간다: hyperarithmetical-hierarchy internal-set-theory jacobian-variety koszul-complex kripke-semantics krull-dimension latin-squares littlewood-offord lobachevsky-function local-fourier-analysis localization-rings markov-decision-process martins-axiom matroids multi-armed-bandits obstruction-theory optimal-stopping p-adic-height policy-gradient postnikov-tower prime-ideals prime-number-theorem primes rademacher-theorem representable-functors reverse-mathematics riemann-hypothesis series-convergence sheaves. measure 는 CLAUDE.md 4절의 모범 예라서 손대지 않았고, 큐의 '직관 두 문단 규칙과 모범 예의 어긋남' 항목이 정리되기를 기다린다. 18차에서 굳은 처리. 직관의 H2 헤딩을 모두 없애고 산문 두 문단만 남기되 각 문단은 4문장을 넘기지 않는다. 표와 mermaid 는 문단이 아니므로 남긴다. 블록 수식은 문단 끝에 몰아 두고 식 뒤 해석은 다음 문단 첫 문장으로 올리거나 식을 인라인으로 내린다. 직관에만 있던 정의는 정의 절에 옮긴다(brauer-algebras 의 계약·여계약, anyons 의 양자 차원, measurable-functions 의 연속함수 가측성, abelian-varieties 의 divisor 몫, volume-conjecture 의 Witten 대비 표, schur-polynomials 의 세 정의의 쓰임). 수식 안의 | 를 \\\\vert 로 고치는 작업이 함께 붙는다(ramanujan-graphs shimura-correspondence volume-conjecture calculus-of-variations 에서 나왔다).",
-      "createdAt": "2026-10-01T21:07:35.100Z",
-      "seq": 1512
+      "note": "19차(2026-10-02 첫째 회차)에 5문단이던 것을 전부 끝냈다. hyperarithmetical-hierarchy internal-set-theory jacobian-variety koszul-complex kripke-semantics krull-dimension latin-squares littlewood-offord lobachevsky-function local-fourier-analysis localization-rings markov-decision-process martins-axiom matroids multi-armed-bandits obstruction-theory optimal-stopping p-adic-height postnikov-tower prime-ideals prime-number-theorem primes rademacher-theorem representable-functors reverse-mathematics riemann-hypothesis series-convergence sheaves siegel-integral-points siegel-modular-forms solvable-groups spectral-sequences sperner-theorem stirling-numbers stone-weierstrass strongly-minimal-groups tate-curve transcendental-numbers tridiagonal-systems tunnell-saito ultraproducts vitali-set wigner-semicircle. 이어서 4문단짜리 열넷도 끝냈다. adaptive-gradient-methods algebraic-multigrid analytical-hierarchy approximation-algorithms arithmetical-hierarchy bad-groups banach-spaces bernoulli-numbers bias-variance-decomposition boolean-fourier yoneda-lemma zarankiewicz-problem zfc-axioms zilber-indecomposability. 남은 규모는 236개(4문단 130, 3문단 106)이고 4문단짜리부터 알파벳 역순으로 이어간다: whittaker-models weak-convergence vector-bundles variational-autoencoder tutte-polynomial turan-theorem topos-theory thue-equation tate-thesis szemeredi-trotter suslin-problem strong-measure-zero stochastic-gradient-descent stochastic-approximation steenrod-operations stable-theories spherical-harmonics sperner-lemma source-coding siegel-weil. measure 는 CLAUDE.md 4절의 모범 예라 손대지 않았고 큐의 '직관 두 문단 규칙과 모범 예의 어긋남' 항목을 기다린다. 19차에서 굳은 처리는 18차와 같다. 직관의 H2 헤딩을 모두 없애고 산문 두 문단만 남기되 각 문단은 4문장을 넘기지 않는다. 표, 목록, mermaid, 블록 수식은 문단이 아니므로 남기고 문단 끝에 몰아 둔다. 식 뒤 해석은 식 앞 문장으로 올리거나 식을 인라인으로 내린다. 함께 붙는 수식 손질이 넷이다. 수식 안의 | 를 \\vert 로(lobachevsky-function tate-curve boolean-fourier), \\ 여백을 \\thinspace 로(koszul-complex rademacher-theorem solvable-groups), [ ] 를 \\lbrack \\rbrack 으로(banach-spaces tridiagonal-systems boolean-fourier), 닫는 $ 뒤에 공백 없이 오는 쉼표를 공백 있는 것으로(solvable-groups spectral-sequences arithmetical-hierarchy bias-variance-decomposition). mermaid 레이블의 비 ASCII 문자 뒤 밑줄(yoneda-lemma 의 α_A)은 4절 밑줄 grep 에 걸리므로 레이블을 alpha_A 처럼 ASCII 로 바꾼다. 큐의 tensor-products 항목과 같은 오탐이다.",
+      "createdAt": "2026-10-02T01:06:38.590Z",
+      "seq": 1515
     },
     {
       "id": "e0bb0524",
@@ -26,6 +26,14 @@
       "note": "4절 문체 규칙은 '동기는 직관 절의 몫이고 거기서도 두 문단을 넘기지 않는다' 고 적는다. 그런데 같은 절의 '이 순서로 통과한 예' 는 measure 문서의 개요와 직관 첫 네 문단을 들고 있고, 실제 docs/measure.md 의 직관 절은 산문 여섯 문단이다. 17차에서 338개 문서가 이 기준을 넘는 것으로 집계됐는데, 전부 두 문단으로 줄이는 것이 맞는지 아니면 모범 예처럼 네다섯 문단까지 허용하는 것이 맞는지가 정해져 있지 않다. 독자(저장소 주인)의 판단이 필요하고, 정해지면 CLAUDE.md 4절의 문구나 모범 예 가운데 하나를 고쳐야 한다. 그때까지는 '한 문단은 한 가지를 말한다', '문단은 4문장을 넘기지 않는다' 를 지키며 두 문단으로 줄이는 쪽을 따랐다.",
       "createdAt": "2026-10-01T17:03:32.372Z",
       "seq": 1510
+    },
+    {
+      "id": "132cc508",
+      "title": "직관 문단 집계 awk 가 한 줄 $$ 블록에서 과소 집계",
+      "priority": 40,
+      "note": "큐 항목 17ce5c43 의 집계 awk 는 /^\\s*\\$\\$/ 를 토글로 쓰는데, $$식$$ 가 한 줄에 다 있는 블록에서 토글이 한 번만 일어나 그 뒤 문단을 전부 블록 안으로 본다. 19차에서 markov-decision-process 가 1 문단, local-fourier-analysis 가 3 문단으로 집계됐지만 실제로는 둘 다 5 문단이었다. 보정은 토글 줄보다 앞에 한 줄 블록을 거르는 규칙을 두는 것이다. /^[[:space:]]*\\$\\$.*\\$\\$[[:space:]]*$/{prose=0; next} 를 /^[[:space:]]*\\$\\$/{blk=!blk; prose=0; next} 바로 위에 넣으면 맞는다. 이 보정으로 19차 시작 시점 집계가 267 개(6문단 1, 5문단 16, 4문단 144, 3문단 106)였다. dev/ 스크립트는 고치지 않으므로(0절) 독자가 dev 에 넣을지 판단한다.",
+      "createdAt": "2026-10-02T01:03:56.070Z",
+      "seq": 1514
     },
     {
       "id": "4da47857",
