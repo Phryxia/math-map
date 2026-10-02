@@ -8,11 +8,7 @@
 
 $\mathbb C(x)$ 에서 $y'=y/x$ 를 풀면 $y=cx$ 이고 해가 이미 $\mathbb C(x)$ 안에 있다. $y'=1/x$ 를 풀면 $y=\log x$ 이고 이것은 유리함수가 아니다. 그래서 $\mathbb C(x)$ 에 $\log x$ 를 붙인 체 $\mathbb C(x)(\log x)$ 로 나가야 한다. 미분은 $(\log x)'=1/x$ 로 정해지고, 도함수가 $0$ 인 원소는 여전히 $\mathbb C$ 의 원소뿐이다.
 
-이 확대의 자기동형을 찾는다. $\mathbb C(x)$ 를 고정하고 미분과 가환하는 사상 $\sigma$ 는 $\sigma(\log x)$ 의 도함수를 $1/x$ 로 남겨야 하므로 $\sigma(\log x)-\log x$ 의 도함수가 $0$ 이고, 그 차이는 상수 $c\in\mathbb C$ 다. 자기동형은 $\log x\mapsto\log x+c$ 꼴이 전부이고 모임은 덧셈군 $\mathbb C$ 다.
-
-$y'=y$ 로 같은 계산을 하면 해는 $e^x$ 이고 $\sigma(e^x)/e^x$ 의 도함수가 $0$ 이므로 $e^x\mapsto ce^x$, $c\in\mathbb C^\times$ 다. 이번 모임은 곱셈군 $\mathbb C^\times$ 다. 두 군은 $\mathrm{GL}\_1(\mathbb C)$ 안의 대수적 부분군이고 둘 다 가해군이다.
-
-적분과 지수를 한 번 쓸 때마다 덧셈군이나 곱셈군이 하나 붙는다. 해를 유리함수와 적분, 지수, 대수적 근으로 쓸 수 있는 방정식은 이 군들을 쌓아 만든 군을 갖고, 그런 군은 가해군이다. 그러므로 군을 계산해 가해가 아님을 보이면 그 방정식은 그런 식으로 풀리지 않는다.
+이 확대의 자기동형을 찾는다. $\mathbb C(x)$ 를 고정하고 미분과 가환하는 사상 $\sigma$ 는 $\sigma(\log x)$ 의 도함수를 $1/x$ 로 남겨야 하므로 $\sigma(\log x)-\log x$ 의 도함수가 $0$ 이고, 그 차이는 상수 $c\in\mathbb C$ 다. 자기동형은 $\log x\mapsto\log x+c$ 꼴이 전부이고 모임은 덧셈군 $\mathbb C$ 다. $y'=y$ 로 같은 계산을 하면 해는 $e^x$ 이고 $\sigma(e^x)/e^x$ 의 도함수가 $0$ 이므로 $e^x\mapsto ce^x$, $c\in\mathbb C^\times$ 꼴이어서 모임이 곱셈군 $\mathbb C^\times$ 다. 두 군은 $\mathrm{GL}\_1(\mathbb C)$ 안의 대수적 부분군이고 둘 다 가해군이다.
 
 # 정의
 
