@@ -6,13 +6,9 @@ Siegel 모듈라이 다양체는 $g$ 차원 주편극 [아벨 다양체](abelian
 
 # 직관
 
-차원 $1$ 의 복소 토러스 $\mathbb C/\Lambda$ 를 전부 적는다. 격자 $\Lambda=\mathbb Z\omega_1+\mathbb Z\omega_2$ 에 $1/\omega_1$ 을 곱해도 토러스가 바뀌지 않으므로 $\Lambda=\mathbb Z+\mathbb Z\tau$ 로 둘 수 있고, 기저의 순서를 골라 $\mathrm{Im}\thinspace\tau\gt 0$ 으로 맞춘다. 남은 자유도는 격자의 다른 기저를 고르는 것뿐이고, 그 변환이 $\mathrm{SL}\_2(\mathbb Z)$ 다. 그래서 토러스의 목록은 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 의 점이다.
+차원 $1$ 의 복소 토러스 $\mathbb C/\Lambda$ 는 격자 $\Lambda=\mathbb Z\omega_1+\mathbb Z\omega_2$ 에 $1/\omega_1$ 을 곱해도 바뀌지 않으므로 $\Lambda=\mathbb Z+\mathbb Z\tau$, $\mathrm{Im}\thinspace\tau\gt 0$ 으로 적을 수 있다. 남은 자유도는 격자의 다른 기저를 고르는 것뿐이고 그 변환이 $\mathrm{SL}\_2(\mathbb Z)$ 이므로, 토러스의 목록은 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 의 점이다. 차원 $g$ 에서 $\Lambda\subset\mathbb C^g$ 는 계수 $2g$ 의 격자이고, 기저를 열로 늘어놓은 $g\times 2g$ 행렬에서 뒤쪽 $g$ 개 열이 $\mathbb C$ 위에서 일차독립이 되게 고른 뒤 그 역행렬을 곱하면 $\Omega=(\tau\ \ I_g)$ 가 된다. 남은 것은 $g\times g$ 복소행렬 $\tau$ 하나, 곧 $g^2$ 개의 수다.
 
-차원 $g$ 에서 같은 계산을 한다. $\Lambda\subset\mathbb C^g$ 는 계수 $2g$ 의 격자이고 기저를 열로 늘어놓으면 $g\times 2g$ 행렬 $\Omega$ 다. 뒤쪽 $g$ 개 열이 $\mathbb C$ 위에서 일차독립이 되게 기저를 고르고 그 역행렬을 곱하면 $\Omega=(\tau\ \ I_g)$ 가 된다. 남은 것은 $g\times g$ 복소행렬 $\tau$ 하나, 곧 $g^2$ 개의 수다.
-
-$g\ge 2$ 에서는 $\tau$ 를 아무렇게나 잡은 토러스가 사영공간에 들어가지 않는다. 사영성을 주는 선다발, 곧 주편극이 있으면 $\tau$ 가 대칭이고 $\mathrm{Im}\thinspace\tau$ 가 양정부호라야 한다. 자유도는 $g^2$ 에서 $g(g+1)/2$ 로 줄고 $g=1$ 이면 $1$ 그대로다.
-
-격자의 기저를 바꾸는 자유도도 $g=1$ 의 $\mathrm{SL}\_2(\mathbb Z)$ 에서 바뀐다. 편극이 격자 위에 교대형식을 놓으므로 그 형식을 보존하는 기저 변환만 같은 편극 아벨 다양체를 준다. 그 변환이 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 이고, $\tau$ 의 공간을 이 군으로 나눈 것이 목록이다.
+$g\ge 2$ 에서는 $\tau$ 를 아무렇게나 잡은 토러스가 사영공간에 들어가지 않는다. 사영성을 주는 선다발, 곧 주편극이 있으면 $\tau$ 가 대칭이고 $\mathrm{Im}\thinspace\tau$ 가 양정부호라야 하므로 자유도는 $g^2$ 에서 $g(g+1)/2$ 로 줄고, $g=1$ 이면 $1$ 그대로다. 편극은 격자 위에 교대형식을 놓고, 그 형식을 보존하는 기저 변환만 같은 편극 아벨 다양체를 준다. 그 변환이 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 이고, $\tau$ 의 공간을 이 군으로 나눈 것이 목록이다.
 
 # 정의
 
