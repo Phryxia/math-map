@@ -20,34 +20,17 @@ $\log|2\sin t|=-\sum_n\cos(2nt)/n$ 이라는 고전적 전개를 항별로 적�
 
 # 직관
 
-## 쌍곡 부피 적분과 $\log\sin$
-
-상반공간 모형에서 쌍곡 계량은 $ds=|dx|/x_3$ 이다. 부피형식이 $dV=dx_1dx_2dx_3/x_3^3$ 이므로, 무한대로 뻗은 영역의 부피를 재면 $x_3$ 에 대한 적분에서 $1/x_3^3$ 이 나오고, 밑면의 넓이가 각도에 따라 $\sin$ 으로 변한다. 두 효과가 합쳐져 $\int\log\sin$ 꼴이 나온다.
-
-**이상 사면체**(꼭짓점이 전부 무한원점에 있는 사면체)에서 이 계산이 가장 깨끗하게 끝난다[^1]. 이상 사면체는 마주 보는 모서리의 이면각이 같고, 세 각 $\alpha,\beta,\gamma$ 가 $\alpha+\beta+\gamma=\pi$ 를 만족한다. 모양은 그 각들로 완전히 결정되고, 부피가
+상반공간 모형에서 쌍곡 계량은 $ds=\vert dx\vert/x_3$ 이고 부피형식은 $dV=dx_1dx_2dx_3/x_3^3$ 이다. 무한대로 뻗은 영역의 부피를 재면 $x_3$ 에 대한 적분에서 $1/x_3^3$ 이 나오고 밑면의 넓이가 각도에 따라 $\sin$ 으로 변해, 두 효과가 합쳐져 $\int\log\sin$ 꼴이 나온다. **이상 사면체**(꼭짓점이 전부 무한원점에 있는 사면체)는 마주 보는 모서리의 이면각이 같고 세 각이 $\alpha+\beta+\gamma=\pi$ 를 만족하며, 모양이 그 각들로 완전히 결정된다[^1]. 부피는 다음이다.
 
 $$
 \mathrm{Vol}=\Lambda(\alpha)+\Lambda(\beta)+\Lambda(\gamma)
 $$
 
-가 된다. 세 각의 합이 $\pi$ 라는 제약 아래 이 합을 최대화하면 $\alpha=\beta=\gamma=\pi/3$ 에서 최대이고, 그것이 **정이면체 사면체**다. 이 최대화에서 쌍곡 3 차원의 어떤 사면체도 이보다 부피가 클 수 없다는 사실이 따라온다.
-
-## 1 의 거듭제곱근의 곱
-
-1 의 $N$ 제곱근 $\zeta=e^{2\pi i/N}$ 에 대해 $\prod_{j=1}^{k}|1-\zeta^j|$ 를 생각하자. 로그를 취하면
+세 각의 합이 $\pi$ 라는 제약 아래 이 합은 $\alpha=\beta=\gamma=\pi/3$ 인 **정이면체 사면체**에서 최대이고, 쌍곡 3 차원의 어떤 사면체도 이보다 부피가 클 수 없다. 1 의 $N$ 제곱근 $\zeta=e^{2\pi i/N}$ 에 대해 $\prod_{j=1}^{k}\vert 1-\zeta^j\vert$ 의 로그는 $\vert 1-e^{i\theta}\vert=2\vert\sin(\theta/2)\vert$ 에 의해 $\sum_{j=1}^{k}\log(2\sin(\pi j/N))$ 이 되고, 이것은 $\log(2\sin)$ 의 Riemann 합이다. 색 Jones 다항식의 항이 이런 곱이므로 합의 최대항을 찾는 문제가 $\Lambda$ 의 최대화 문제가 되고, 그 최대점이 사면체의 이면각을 정한다. $N\to\infty$ 에서 합의 극한은 다음이다.
 
 $$
-\sum_{j=1}^{k}\log\big|1-e^{2\pi ij/N}\big|
-=\sum_{j=1}^{k}\log\Big(2\sin\frac{\pi j}N\Big)
+\frac1N\sum_{j=1}^{k}\log\Big(2\sin\frac{\pi j}N\Big)\thinspace\longrightarrow\thinspace\frac1\pi\int_0^{\pi k/N}\log(2\sin t)\thinspace dt=-\frac1\pi\Lambda\Big(\frac{\pi k}N\Big)
 $$
-
-이다. $|1-e^{i\theta}|=2|\sin(\theta/2)|$ 을 쓴 것이다. 오른쪽은 $\log(2\sin)$ 의 **Riemann 합**이므로 $N\to\infty$ 에서
-
-$$
-\frac1N\sum_{j=1}^{k}\log\Big(2\sin\frac{\pi j}N\Big)\ \longrightarrow\ \frac1\pi\int_0^{\pi k/N}\log(2\sin t)\thinspace dt=-\frac1\pi\Lambda\Big(\frac{\pi k}N\Big)
-$$
-
-가 된다. 색 Jones 다항식의 항이 이런 곱이므로, 합의 최대항을 찾는 문제가 $\Lambda$ 의 최대화 문제가 된다. 그 최대점이 사면체의 이면각을 정한다. 조합적 합의 안장점 조건과 사면체 붙임 방정식이 같은 식이 되는 지점이다.
 
 # 정의
 
