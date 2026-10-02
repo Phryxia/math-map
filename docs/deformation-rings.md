@@ -40,8 +40,6 @@ $$
 \lbrace\text{1 차 변형}\rbrace\big/\text{동치}\thickspace\cong\thickspace H^1(G,\mathrm{ad}\thinspace\bar\rho)
 $$
 
-보정항이 $\mathfrak{gl}\_n$ 값이고 $G$ 가 그 위에 켤레로 작용하므로 계수가 $\mathrm{ad}$ 다.
-
 # 정의
 
 ## 계수환의 범주
