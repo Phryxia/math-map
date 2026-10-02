@@ -34,9 +34,7 @@ $$
 a_p\equiv\big\lbrack\thinspace x^{p-1}\thinspace\big\rbrack\thinspace f(x)^{(p-1)/2}\pmod p
 $$
 
-이 계수가 **Hasse 불변량**이고, Frobenius 의 코호몰로지 작용을 정밀도 $p^1$ 로 계산한 값이다.
-
-계산이 준 것은 $a_p\bmod p$ 뿐인데 $|a_p|\le2\sqrt p$ 이므로, $4\sqrt p\lt p$ 곧 $p\gt 16$ 이면 그 잉여류에 크기 조건을 만족하는 정수가 하나뿐이고 $a_p$ 가 확정된다. Kedlaya 알고리즘은 이 구조에서 정밀도를 $p^1$ 에서 $p^N$ 으로, 종수 $1$ 을 종수 $g$ 로, 소수체를 $\mathbb F_{p^n}$ 으로 올린 것이다.
+이 계수가 **Hasse 불변량**이고, Frobenius 의 코호몰로지 작용을 정밀도 $p^1$ 로 계산한 값이다. 계산이 준 것은 $a_p\bmod p$ 뿐인데 $|a_p|\le2\sqrt p$ 이므로, $4\sqrt p\lt p$ 곧 $p\gt 16$ 이면 그 잉여류에 크기 조건을 만족하는 정수가 하나뿐이고 $a_p$ 가 확정된다. Kedlaya 알고리즘은 이 구조에서 정밀도를 $p^1$ 에서 $p^N$ 으로, 종수 $1$ 을 종수 $g$ 로, 소수체를 $\mathbb F_{p^n}$ 으로 올린 것이다.
 
 # 정의
 
