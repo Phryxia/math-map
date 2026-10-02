@@ -8,19 +8,13 @@
 
 # 직관
 
-정지 문제 $\varnothing'$ 은 계산가능하지 않다. $\varnothing'$ 을 신탁으로 주고 다시 정지 문제를 물으면 $\varnothing''$ 이 나오고, 이것을 $n$ 번 되풀이하면 $\varnothing^{(n)}$ 이다. Post 정리에 따라 $\varnothing^{(n)}$ 은 $\Sigma^0_n$ 완전이고, 산술적 계층의 $n$ 번째 층이 이 집합으로 정확히 설명된다.
-
-$n$ 을 다 쓰면 층이 떨어진다. 그래도 다음 집합을 적을 수는 있다.
+정지 문제 $\varnothing'$ 을 신탁으로 주고 다시 정지 문제를 물으면 $\varnothing''$ 이 나온다. 이것을 $n$ 번 되풀이한 $\varnothing^{(n)}$ 은 Post 정리에 따라 $\Sigma^0\_n$ 완전이고, 산술적 계층의 $n$ 번째 층이 이 집합으로 설명된다. $n$ 을 다 쓰면 층이 떨어진다. 그래도 다음 집합을 적을 수는 있다.
 
 $$
 \varnothing^{(\omega)}=\lbrace (n,x):x\in\varnothing^{(n)}\rbrace
 $$
 
-이 집합은 어느 $\varnothing^{(n)}$ 으로도 계산되지 않는다. $\varnothing^{(\omega)}$ 가 계산되면 $\varnothing^{(n+1)}$ 도 계산되고, 이는 도약이 차수를 올린다는 사실과 어긋난다. 그러므로 $\varnothing^{(\omega)}$ 는 산술적이지 않고, 여기서 도약을 한 번 더 해 $\varnothing^{(\omega+1)}$ 로 갈 수 있다.
-
-이 방식을 서수 $\alpha$ 마다 이어 가려면 극한 서수에서 막힌다. $\varnothing^{(\omega\cdot 2)}$ 를 만들려면 $\varnothing^{(\omega)},\varnothing^{(\omega+1)},\varnothing^{(\omega+2)},\dots$ 을 전부 모아야 하는데, 무엇을 모으는지 기계가 알아야 모으는 절차가 정해진다. 서수 $\omega\cdot 2$ 자체는 무한집합이라 기계에 건넬 수 없다.
-
-대신 $\omega\cdot 2$ 로 올라가는 증가열 $\omega,\omega+1,\omega+2,\dots$ 을 내놓는 프로그램의 번호를 건넨다. 기계는 그 번호로 아래 단계들을 차례로 불러 합칠 수 있다. 도약은 이렇게 번호로 지정되는 서수까지만 이어지고, 그 서수 전체의 상한이 이 계층의 높이가 된다.
+이 집합이 계산되면 $\varnothing^{(n+1)}$ 도 계산되므로 어느 $\varnothing^{(n)}$ 으로도 계산되지 않고, 따라서 산술적이지 않다. 도약을 서수 $\alpha$ 마다 이어 가면 극한 서수에서 막힌다. $\varnothing^{(\omega\cdot 2)}$ 를 만들려면 $\varnothing^{(\omega)},\varnothing^{(\omega+1)},\dots$ 을 전부 모아야 하는데, 서수 $\omega\cdot 2$ 자체는 무한집합이라 기계에 건넬 수 없다. 대신 $\omega\cdot 2$ 로 올라가는 증가열을 내놓는 프로그램의 번호를 건네면 기계가 아래 단계들을 차례로 불러 합치고, 도약은 이렇게 번호로 지정되는 서수까지 이어진다.
 
 # 정의
 
