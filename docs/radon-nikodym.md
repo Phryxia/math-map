@@ -8,13 +8,9 @@ Radon–Nikodym 정리는 [측도](measure.md) $\nu$ 를 다른 측도 $\mu$ 로
 
 # 직관
 
-$[0,1]$ 에서 $P(X\in B)=\int_B 2x\thinspace dx$ 인 [확률변수](random-variables.md) $X$ 는 밀도 $2x$ 를 갖는다. 어느 집합의 확률이든 그 집합 위에서 $2x$ 를 적분하면 나온다.
+$[0,1]$ 에서 $P(X\in B)=\int_B 2x\thinspace dx$ 인 [확률변수](random-variables.md) $X$ 는 밀도 $2x$ 를 갖고, 어느 집합의 확률이든 그 집합 위에서 $2x$ 를 적분하면 나온다. 항상 $0$ 인 확률변수의 분포는 $\lbrace 0\rbrace$ 에 확률 $1$ 을 준다. 길이가 $0$ 인 집합 위의 적분은 함수가 무엇이든 $0$ 이므로 $\int_{\lbrace 0\rbrace} f\thinspace dx=1$ 인 $f$ 는 없다. 이 분포에는 Lebesgue 측도에 대한 밀도가 없다.
 
-항상 $0$ 인 확률변수의 분포는 $\lbrace 0\rbrace$ 에 확률 $1$ 을 준다. 길이가 $0$ 인 집합 위의 적분은 함수가 무엇이든 $0$ 이므로 $\int_{\lbrace 0\rbrace} f\thinspace dx=1$ 인 $f$ 는 없다. 이 분포에는 Lebesgue 측도에 대한 밀도가 없다.
-
-밀도가 있으면 $\mu(B)=0$ 인 모든 $B$ 에서 $\nu(B)=\int_B f\thinspace d\mu=0$ 이다. 앞의 예에서는 $\lbrace 0\rbrace$ 이 이 조건을 깼다. 정리에 따르면 거꾸로 이 조건만 지키면 밀도가 있다.
-
-점에 확률을 모으지 않아도 밀도가 없을 수 있다. 길이 $0$ 인 Cantor 집합 위에 실린 측도가 그 예다. 임의의 측도를 밀도가 있는 부분과 없는 부분으로 나누는 것이 Lebesgue 분해 정리다.
+밀도가 있으면 $\mu(B)=0$ 인 모든 $B$ 에서 $\nu(B)=\int_B f\thinspace d\mu=0$ 이고, 앞의 예에서는 $\lbrace 0\rbrace$ 이 이 조건을 깼다. 정리에 따르면 거꾸로 이 조건만 지키면 밀도가 있다. 점에 확률을 모으지 않아도 밀도가 없을 수 있고, 길이 $0$ 인 Cantor 집합 위에 실린 측도가 그 예다. 임의의 측도를 밀도가 있는 부분과 없는 부분으로 나누는 것이 Lebesgue 분해 정리다.
 
 # 정의
 
