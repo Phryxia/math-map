@@ -1,15 +1,15 @@
 {
   "version": 1,
-  "savedAt": "2026-10-02T05:23:34.363Z",
-  "nextSeq": 1517,
+  "savedAt": "2026-10-02T09:06:39.338Z",
+  "nextSeq": 1518,
   "items": [
     {
-      "id": "16ca43f2",
-      "title": "직관 절이 두 문단을 넘는 문서 훑기 (21차)",
+      "id": "56847a13",
+      "title": "직관 절이 두 문단을 넘는 문서 훑기 (22차)",
       "priority": 50,
-      "note": "20차(2026-10-02 둘째 회차)에 4문단짜리 열다섯을 끝냈다. whittaker-models weak-convergence vector-bundles variational-autoencoder tutte-polynomial turan-theorem topos-theory thue-equation tate-thesis szemeredi-trotter suslin-problem strong-measure-zero stochastic-gradient-descent stochastic-approximation steenrod-operations. 남은 규모는 221개(4문단 115, 3문단 106)이고 4문단짜리부터 알파벳 역순으로 이어간다: stable-theories spherical-harmonics sperner-lemma source-coding siegel-weil siegel-modular-variety sheaf-cohomology serre-conjecture sequential-probability-ratio-test separation-axioms schur-multipliers schur-complement schauder-fixed-point rsa-cryptosystem rings riemannian-metrics rice-theorem residue-theorem reidemeister-torsion regularization. measure 는 CLAUDE.md 4절의 모범 예라 손대지 않았고 큐의 '직관 두 문단 규칙과 모범 예의 어긋남' 항목을 기다린다. 20차에서 굳은 처리는 19차와 같다. 직관의 산문 문단을 둘로 합치되 각 문단은 4문장을 넘기지 않고, 블록 수식은 문단 사이나 문단 뒤에 그대로 둔다. 식 뒤의 '부등호는', '왼쪽은' 같은 해석 문장은 식 앞 문단으로 올려 다시 쓴다. 성질 절이나 정의 절에 이미 있는 내용을 직관이 되풀이하던 문단은 지웠다(weak-convergence 의 tightness·Prokhorov, vector-bundles 의 접속·평행이동, szemeredi-trotter 의 두 상한 비교). 함께 붙은 수식 손질이 둘이다. variational-autoencoder 의 \\ 여백을 \\thinspace 로, tate-thesis 의 |x|_v 를 \\vert x\\vert\\_v 로 바꿨다. 20차 시작 때 세 검증(validate render-check order-check)과 4.5절 매핑 검사는 모두 깨끗했다.",
-      "createdAt": "2026-10-02T05:23:11.835Z",
-      "seq": 1516
+      "note": "21차(2026-10-02 셋째 회차)에 4문단짜리 서른셋을 끝냈다. stable-theories spherical-harmonics sperner-lemma source-coding siegel-weil siegel-modular-variety sheaf-cohomology serre-conjecture sequential-probability-ratio-test separation-axioms schur-multipliers schur-complement schauder-fixed-point rsa-cryptosystem rings riemannian-metrics rice-theorem residue-theorem reidemeister-torsion regularization regular-local-rings random-real-forcing radon-nikodym radically-elementary-probability q-learning pushforward-measure proximal-gradient-method projective-varieties probabilistic-method preconditioning planar-graphs pila-wilkie-theorem pi01-classes pell-equation partial-orders p-np ordinals normalizer nonstandard-analysis network-flow nesterov-acceleration multigrid morley-categoricity mordell-lang molecular-species modular-arithmetic model-theory. 남은 규모는 186개(4문단 이상 69, 3문단 117)이고 알파벳 역순으로 이어간다: monads minimum-spanning-tree matrix-factorizations luzin-sierpinski-sets lp-spaces logicism loeb-measure local-cohomology link-cut-trees lie-algebras lefschetz-fixed-point lebesgue-integral lambda-calculus lagrange-inversion krylov-subspace-methods kl-divergence kedlaya-algorithm kakutani-fixed-point ito-calculus incomplete-lu inclusion-exclusion. measure 는 CLAUDE.md 4절의 모범 예라 손대지 않는다. monads 는 건너뛰었다. 블록 수식 하나와 표 하나가 산문을 네 조각으로 쪼갠 구조여서 조각을 합치려면 식이나 표를 지워야 하고, 둘 다 내용(평탄화의 예, 문맥별 mu)이라 손대면 문서가 나빠진다. 21차에서 굳은 처리는 20차와 같되 두 가지를 더했다. 첫째, 블록 수식이나 mermaid, 표가 직관 절을 쪼개는 문서는 산문 조각이 3 아래로 내려가지 않는다(schur-complement schur-multipliers residue-theorem reidemeister-torsion normalizer sequential-probability-ratio-test serre-conjecture sheaf-cohomology partial-orders spherical-harmonics source-coding). 집계 awk 가 식 앞뒤를 다른 문단으로 세기 때문이며, 산문 흐름으로는 둘이다. 둘째, 성질 절이나 정의 절이 이미 담은 증명을 직관이 되풀이하던 문단은 지웠다(sperner-lemma 의 문 세기 걸음 세 문단을 한 문단으로). 함께 고친 문체는 예고문('여기서 아이디어가 나온다', '이 상황을 식으로 본다', '근거가 둘 있다', '차원 세기가 곧바로 준다'), 금지 표현('대수적 정수론이 여기서 시작한다', '일방향성의 비유로', '~기 때문이다'), 독자 부름('생각하자', '~라고 하자')이다. 21차 시작 때 세 검증과 4.5절 매핑 검사는 모두 깨끗했고, 로컬 claude/math 가 원격과 무관한 히스토리였으므로(원격이 force push 로 재작성됨) 0절대로 원격을 우선해 reset --hard 했다. 문서 집합과 내용은 원격이 로컬을 포함한 상태였다.",
+      "createdAt": "2026-10-02T09:06:10.735Z",
+      "seq": 1517
     },
     {
       "id": "e0bb0524",
