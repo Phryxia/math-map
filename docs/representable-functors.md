@@ -6,19 +6,13 @@
 
 # 직관
 
-집합 $A$ 와 $B$ 의 곱은 순서쌍의 집합 $A\times B$ 다. 군이나 위상공간에서 같은 것을 만들려면 원소를 쓰지 않고 곱을 적어야 한다.
-
-집합 $X$ 에서 $A\times B$ 로 가는 함수는 $X\to A$ 와 $X\to B$ 두 함수의 쌍과 일대일 대응한다.
+집합 $A$ 와 $B$ 의 곱은 순서쌍의 집합 $A\times B$ 인데, 군이나 위상공간에서 같은 것을 만들려면 원소를 쓰지 않고 곱을 적어야 한다. 집합 $X$ 에서 $A\times B$ 로 가는 함수는 $X\to A$ 와 $X\to B$ 두 함수의 쌍과 일대일 대응한다. $X$ 를 바꿔도 대응 규칙은 같아서 $g:X'\to X$ 로 앞에서 합성하면 양변이 함께 바뀐다.
 
 $$
-\mathrm{Hom}(X,A\times B)\ \cong\ \mathrm{Hom}(X,A)\times\mathrm{Hom}(X,B)
+\mathrm{Hom}(X,A\times B)\thinspace\cong\thinspace\mathrm{Hom}(X,A)\times\mathrm{Hom}(X,B)
 $$
 
-$X$ 를 바꿔도 대응 규칙은 같다. $g:X'\to X$ 로 앞에서 합성하면 양변이 함께 바뀐다.
-
-오른쪽은 $X$ 마다 집합 $F(X)=\mathrm{Hom}(X,A)\times\mathrm{Hom}(X,B)$ 를 주는 [함자](functors.md)이므로 $A\times B$ 를 모르고도 쓸 수 있다. 곱을 만드는 일은 $\mathrm{Hom}(-,C)$ 가 이 $F$ 와 [자연동형](natural-transformations.md)이 되는 대상 $C$ 를 찾는 일로 바뀐다.
-
-그런 $C$ 를 찾았다고 하자. $X=C$ 에서 동형이 항등사상 $\mathrm{id}\_C$ 를 보내는 곳은 $F(C)$ 의 원소 하나, 곧 사상 쌍 $(p,q)$ 다. 다른 $X$ 에서의 대응은 이 쌍으로 결정된다. $f:X\to C$ 가 $(p\circ f,\thinspace q\circ f)$ 로 가기 때문이다. 원소 하나가 동형 전체를 담는다.
+오른쪽은 $X$ 마다 집합 $F(X)=\mathrm{Hom}(X,A)\times\mathrm{Hom}(X,B)$ 를 주는 [함자](functors.md)이므로 $A\times B$ 를 모르고도 쓸 수 있다. 곱을 만드는 일은 $\mathrm{Hom}(-,C)$ 가 이 $F$ 와 [자연동형](natural-transformations.md)이 되는 대상 $C$ 를 찾는 일로 바뀐다. 그런 $C$ 를 찾아 $X=C$ 로 두면 동형이 항등사상 $\mathrm{id}\_C$ 를 보내는 곳은 $F(C)$ 의 원소 하나, 곧 사상 쌍 $(p,q)$ 다. $f:X\to C$ 가 $(p\circ f,\thinspace q\circ f)$ 로 가므로 다른 $X$ 에서의 대응도 이 쌍으로 결정된다.
 
 # 정의
 
