@@ -6,23 +6,17 @@ Koszul 복합체는 환의 원소열 하나에서 [외대수](exterior-algebra.m
 
 # 직관
 
-$R$ 을 환, $x,y\in R$ 이라 하고 $R/(x,y)$ 의 자유 분해를 구하려 한다. 원소가 하나일 때는 쉽다. $x$ 가 영인자가 아니면
+$R$ 을 환, $x,y\in R$ 이라 하고 $R/(x,y)$ 의 자유 분해를 구하려 한다. 원소가 하나이고 $x$ 가 영인자가 아니면 다음이 완전열이다.
 
 $$
-0\longrightarrow R\xrightarrow{\ x\ }R\longrightarrow R/(x)\longrightarrow 0
+0\longrightarrow R\xrightarrow{\thinspace x\thinspace }R\longrightarrow R/(x)\longrightarrow 0
 $$
 
-이 완전열이다.
-
-원소가 둘이면 먼저 $R^2\to R$ 을 $(a,b)\mapsto ax+by$ 로 잡는다. 상이 $(x,y)$ 이므로 여핵이 $R/(x,y)$ 다. 핵을 구하려면 $ax+by=0$ 인 $(a,b)$ 를 찾아야 한다. $(-y,x)$ 가 그런 하나이고, $x$ 가 영인자가 아니며 $y$ 가 $R/xR$ 에서 영인자가 아니면 핵이 그 배수뿐이다. $by=-ax$ 에서 $b$ 가 $R/xR$ 에서 $0$ 이므로 $b=cx$ 이고, 되돌리면 $a=-cy$ 다. 그래서
+원소가 둘이면 먼저 $R^2\to R$ 을 $(a,b)\mapsto ax+by$ 로 잡는다. 상이 $(x,y)$ 이므로 여핵이 $R/(x,y)$ 이고, 핵은 $ax+by=0$ 인 $(a,b)$ 다. $x$ 가 영인자가 아니고 $y$ 가 $R/xR$ 에서 영인자가 아니면 $by=-ax$ 에서 $b=cx$ 와 $a=-cy$ 가 나와 핵이 $(-y,x)$ 의 배수뿐이다. 이 부호는 $e_1\wedge e_2\mapsto xe_2-ye_1$ 과 같은 규칙이어서, 원소가 $n$ 개면 $p$ 번째 자리에 $\binom{n}{p}$ 개의 생성원이 나오고 부호가 외대수의 미분과 일치한다.
 
 $$
-0\longrightarrow R\xrightarrow{\ (-y,\thinspace x)\ }R^2\xrightarrow{\ (x,\thinspace y)\ }R\longrightarrow R/(x,y)\longrightarrow 0
+0\longrightarrow R\xrightarrow{\thinspace (-y,\thinspace x)\thinspace }R^2\xrightarrow{\thinspace (x,\thinspace y)\thinspace }R\longrightarrow R/(x,y)\longrightarrow 0
 $$
-
-이다.
-
-가운데 사상의 부호 $(-y,x)$ 가 $e_1\wedge e_2\mapsto xe_2-ye_1$ 과 같은 규칙이다. 원소가 $n$ 개일 때 같은 계산을 하면 $p$ 번째 자리에 $\binom{n}{p}$ 개의 생성원이 나오고 부호가 외대수의 미분과 일치한다. 그 복합체를 한 번에 적은 것이 아래 정의다.
 
 # 정의
 
