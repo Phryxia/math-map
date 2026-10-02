@@ -16,22 +16,18 @@ $$
 
 # 직관
 
-고전적 서술에서 $\zeta(s)$ 의 Euler 곱은 소수에서 오고 완비화에 붙는 $\pi^{-s/2}\Gamma(s/2)$ 는 해석에서 온다. 아델로 올라가면 둘이 같은 식의 값이다.
-
-각 자리 $v$ 에서 국소 zeta 적분을 같은 모양으로 정의한다.
+고전적 서술에서 $\zeta(s)$ 의 Euler 곱은 소수에서 오고 완비화에 붙는 $\pi^{-s/2}\Gamma(s/2)$ 는 해석에서 온다. 아델로 올라가면 둘이 같은 식의 값이다. 각 자리 $v$ 에서 국소 zeta 적분을 같은 모양으로 정의하고 자리마다 시험함수를 하나씩 고른다. 유한 자리에서는 정수환의 정의함수 $\mathbf 1_{\mathbb Z_p}$ 이고 무한 자리에서는 Gauss 함수 $e^{-\pi x^2}$ 로, 둘 다 그 자리의 덧셈 Fourier 변환에 대해 자기쌍대인 함수다.
 
 $$
-Z_v(f_v,s)=\int_{K_v^\times}f_v(x)\thinspace|x|\_v^{s}\thickspace d^\times x
+Z_v(f_v,s)=\int_{K_v^\times}f_v(x)\thinspace\vert x\vert\_v^{s}\thickspace d^\times x
 $$
 
-자리마다 시험함수를 하나씩 고른다. 유한 자리에서는 정수환의 정의함수 $\mathbf 1_{\mathbb Z_p}$ 이고 무한 자리에서는 Gauss 함수 $e^{-\pi x^2}$ 다. 둘 다 그 자리의 덧셈 Fourier 변환에 대해 자기쌍대인 함수라는 점에서 같은 선택이다.
+두 시험함수의 적분값이 각각 Euler 인자와 감마 인자다. $\zeta(s)$ 는 자리를 하나 빼먹은 곱이고 $\Lambda(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 가 모든 자리에 걸친 곱이므로, 완비 zeta 함수 쪽이 대칭적이다.
 
 $$
 Z_p(\mathbf 1_{\mathbb Z_p},s)=\sum_{n\ge0}p^{-ns}=\frac1{1-p^{-s}},\qquad
 Z_\infty(e^{-\pi x^2},s)=2\int_0^\infty e^{-\pi x^2}x^{s}\frac{dx}{x}=\pi^{-s/2}\Gamma(s/2)
 $$
-
-왼쪽은 Euler 인자, 오른쪽은 감마 인자다. $\zeta(s)$ 는 자리를 하나 빼먹은 곱이고 $\Lambda(s)=\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 가 모든 자리에 걸친 곱이므로, 완비 zeta 함수 쪽이 대칭적이다.
 
 # 정의
 
