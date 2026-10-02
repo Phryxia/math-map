@@ -10,22 +10,14 @@ Yoneda lemma 는 이 관점이 정당함을 보인다. $A$ 로 들어오는 사�
 
 # 직관
 
-## 사상이 결정하는 대상
-
-$\mathbf{Set}$ 에서 한 점 집합 $1$ 에서 $A$ 로 가는 사상은 $A$ 의 원소와 같다. 군의 범주에서 $\mathbb Z$ 로부터의 준동형은 원소 하나를 고르는 것과 같다.
-
-일반화하면 $X$ 에서 $A$ 로 가는 사상이 $X$ 모양의 관찰이다. Yoneda lemma 로 모든 모양의 관찰을 모으면 $A$ 를 복원할 수 있다.
-
-## 항등사상의 역할
-
-$h_A$ 에서 출발하는 자연변환은 성분이 많지만 $\alpha_A(\mathrm{id}\_A)$ 하나로 전부 결정된다. $h_A(X)$ 의 원소 $f:X\to A$ 는 $h_A(f)$ 를 $\mathrm{id}\_A$ 에 적용한 결과이고, 자연성이 $\alpha$ 와 $h_A(f)$ 의 교환을 요구하므로 $\alpha_X(f)$ 가 $F(f)(\alpha_A(\mathrm{id}\_A))$ 로 강제된다.
+$\mathbf{Set}$ 에서 한 점 집합 $1$ 에서 $A$ 로 가는 사상은 $A$ 의 원소와 같고, 군의 범주에서 $\mathbb Z$ 로부터의 준동형은 원소 하나를 고르는 것과 같다. 일반화하면 $X$ 에서 $A$ 로 가는 사상이 $X$ 모양의 관찰이고, Yoneda lemma 로 모든 모양의 관찰을 모으면 $A$ 를 복원할 수 있다. $h_A$ 에서 출발하는 자연변환은 성분이 많지만 $\alpha_A(\mathrm{id}\_A)$ 하나로 전부 결정된다. $h_A(X)$ 의 원소 $f:X\to A$ 는 $h_A(f)$ 를 $\mathrm{id}\_A$ 에 적용한 결과이고, 자연성이 $\alpha$ 와 $h_A(f)$ 의 교환을 요구하므로 $\alpha_X(f)$ 가 $F(f)(\alpha_A(\mathrm{id}\_A))$ 로 강제된다.
 
 ```mermaid
 graph TD
-  I["id_A ∈ h_A(A)"] -->|"α_A"| U["u = α_A(id_A) ∈ F(A)"]
+  I["id_A ∈ h_A(A)"] -->|"alpha_A"| U["u = alpha_A(id_A) ∈ F(A)"]
   I -->|"h_A(f)"| F1["f ∈ h_A(X)"]
   U -->|"F(f)"| V["F(f)(u) ∈ F(X)"]
-  F1 -->|"α_X"| V
+  F1 -->|"alpha_X"| V
 ```
 
 사각형의 가환성이 자연성이고, 왼쪽 위에서 오른쪽 아래로 가는 두 길이 같다는 것이 $\alpha_X(f)=F(f)(u)$ 다.
