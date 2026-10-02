@@ -24,9 +24,7 @@ $$
 e^{tX}e^{tY}e^{-tX}e^{-tY}=e^{t^2[X,Y]+O(t^3)}
 $$
 
-$[X,Y]$ 는 군의 비가환성을 무한소 수준에서 재는 양이다. $x$ 축 회전과 $y$ 축 회전을 번갈아 하면 $z$ 축 회전이 남으므로 $\mathfrak{so}(3)$ 의 괄호는 벡터곱 $[e_1,e_2]=e_3$ , $[e_2,e_3]=e_1$ , $[e_3,e_1]=e_2$ 다.
-
-괄호가 군의 정보를 얼마나 담는지는 Baker–Campbell–Hausdorff 공식이 말해 준다.
+$[X,Y]$ 는 군의 비가환성을 무한소 수준에서 재는 양이다. $x$ 축 회전과 $y$ 축 회전을 번갈아 하면 $z$ 축 회전이 남으므로 $\mathfrak{so}(3)$ 의 괄호는 벡터곱 $[e_1,e_2]=e_3$ , $[e_2,e_3]=e_1$ , $[e_3,e_1]=e_2$ 다. 군 곱셈을 괄호로 되돌리는 것이 Baker–Campbell–Hausdorff 공식이다.
 
 $$
 \log\left(e^Xe^Y\right)=X+Y+\tfrac12[X,Y]+\tfrac1{12}\big([X,[X,Y]]-[Y,[X,Y]]\big)+\cdots
