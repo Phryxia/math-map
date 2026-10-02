@@ -10,13 +10,9 @@ RSA 의 안전성은 "큰 합성수의 인수분해가 어렵다"는 가정에 �
 
 # 직관
 
-[합동 연산](modular-arithmetic.md)에서 가역원들의 곱셈군을 생각하자. $\mathbb{Z}/n\mathbb{Z}$ 의 가역원군 $(\mathbb{Z}/n\mathbb{Z})^\ast$ 의 크기는 Euler 함수 $\varphi(n)$ 이고, 이 [군](groups.md)에서는 Lagrange 정리로 모든 원소가 $\varphi(n)$ 제곱하면 1이 된다. 따라서 지수는 $\varphi(n)$ 을 법으로만 의미가 있다.
+[합동 연산](modular-arithmetic.md)에서 $\mathbb{Z}/n\mathbb{Z}$ 의 가역원군 $(\mathbb{Z}/n\mathbb{Z})^\ast$ 의 크기는 Euler 함수 $\varphi(n)$ 이고, 이 [군](groups.md)에서는 Lagrange 정리로 모든 원소가 $\varphi(n)$ 제곱하면 1 이 된다. 따라서 지수는 $\varphi(n)$ 을 법으로만 의미가 있다. $e$ 와 $d$ 를 $ed \equiv 1 \pmod{\varphi(n)}$ 이 되도록 잡으면 $(m^e)^d = m^{1 + k\varphi(n)} = m$ 이다. $e$ 를 공개하고 $d$ 를 숨기면 누구나 암호화할 수 있고 $d$ 를 가진 사람만 복호화할 수 있다.
 
-여기서 아이디어가 나온다. $e$ 와 $d$ 를 $ed \equiv 1 \pmod{\varphi(n)}$ 이 되도록 잡으면 $(m^e)^d = m^{1 + k\varphi(n)} = m$ 이다. $e$ 를 공개하고 $d$ 를 숨기면, 누구나 암호화할 수 있고 $d$ 를 가진 사람만 복호화할 수 있다.
-
-비대칭성의 원천은 $\varphi(n) = (p-1)(q-1)$ 을 계산하려면 $n$ 의 인수분해가 필요하다는 점이다. $n$ 만 보고 $\varphi(n)$ 을 알아내는 것은 인수분해와 같은 난이도다. $n$ 과 $\varphi(n)$ 을 둘 다 알면 $p + q = n - \varphi(n) + 1$ 과 $pq = n$ 에서 $p$ 와 $q$ 가 이차방정식의 근으로 즉시 나오기 때문이다.
-
-일방향성의 비유로, 두 소수를 곱하는 것은 몇 마이크로초지만 2048비트 곱을 되돌리는 것은 알려진 최선의 알고리즘(수체 체, number field sieve)으로도 준지수 시간이 걸린다.
+$\varphi(n) = (p-1)(q-1)$ 을 계산하려면 $n$ 의 인수분해가 필요하므로 암호화와 복호화의 난이도가 갈린다. $n$ 과 $\varphi(n)$ 을 둘 다 알면 $p + q = n - \varphi(n) + 1$ 과 $pq = n$ 에서 $p$ 와 $q$ 가 이차방정식의 근으로 나오므로, $n$ 만 보고 $\varphi(n)$ 을 알아내는 것은 인수분해와 같은 난이도다. 두 소수를 곱하는 것은 몇 마이크로초지만, 2048 비트 곱을 되돌리는 것은 알려진 최선의 알고리즘인 수체 체(number field sieve)로도 준지수 시간이 걸린다.
 
 # 정의
 
