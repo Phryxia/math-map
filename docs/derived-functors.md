@@ -8,15 +8,9 @@
 
 # 직관
 
-## 완전성의 실패
-
 짧은 완전열 $0 \to A \to B \to C \to 0$ 에 함자 $F$ 를 적용하면 완전성이 한쪽 끝에서 깨진다. $F = - \otimes_{\mathbb Z} \mathbb Z/2\mathbb Z$ 와 곱하기 $2$ 로 주어지는 열 $0 \to \mathbb Z \to \mathbb Z \to \mathbb Z/2\mathbb Z \to 0$ 이 그 예다. 적용 결과는 $\mathbb Z/2\mathbb Z \to \mathbb Z/2\mathbb Z \to \mathbb Z/2\mathbb Z \to 0$ 이고 첫 사상이 영사상이므로 왼쪽 끝의 단사성이 깨진다.
 
-깨진 자리에 무엇을 놓으면 완전열이 이어지는지 묻는 것이 유도 함자의 출발이다. 위 예에서 그 자리에 놓이는 가군이 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) \cong \mathbb Z/2\mathbb Z$ 다.
-
-## 분해를 쓴 근사
-
-사영가군 위에서는 $\mathrm{Hom}$ 이 완전하고 자유가군 위에서는 텐서곱이 완전하다. 임의의 가군은 그런 좋은 가군들의 완전열로 덮을 수 있고, 함자를 가군에 직접 적용하는 대신 덮개에 적용한 뒤 호몰로지로 원래 가군의 몫을 되돌린다.
+깨진 자리에 무엇을 놓으면 완전열이 이어지는지가 유도 함자가 답하는 물음이다. 위 예에서 그 자리에 놓이는 가군이 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) \cong \mathbb Z/2\mathbb Z$ 다. 사영가군 위에서는 $\mathrm{Hom}$ 이 완전하고 자유가군 위에서는 텐서곱이 완전하므로, 함자를 가군에 직접 적용하는 대신 그런 가군들의 완전열로 덮어 덮개에 적용한 뒤 호몰로지를 취한다.
 
 # 정의
 
