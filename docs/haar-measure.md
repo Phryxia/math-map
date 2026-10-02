@@ -12,9 +12,7 @@ $$
 \int_0^\infty f(ax)\thinspace dx=\frac1a\int_0^\infty f(y)\thinspace dy
 $$
 
-$y=ax$ 로 바꾸면 $dy=a\thinspace dx$ 라서 $1/a$ 가 남는다. $a$ 를 곱해 옮기기만 했는데 값이 $a$ 에 따라 달라지므로 이 적분은 평균이 아니다.
-
-$1/a$ 가 남은 것은 길이를 재는 자가 곱셈에 늘어나기 때문이다. $x$ 근처의 짧은 구간에 $a$ 를 곱하면 길이가 $a$ 배가 된다. 그러면 구간마다 길이를 그 위치의 $x$ 로 나눠 두면 늘어난 만큼이 상쇄된다.
+$y=ax$ 로 바꾸면 $dy=a\thinspace dx$ 라서 $1/a$ 가 남는다. $a$ 를 곱해 옮기기만 했는데 값이 $a$ 에 따라 달라지므로 이 적분은 평균이 아니다. $1/a$ 가 남은 것은 $x$ 근처의 짧은 구간에 $a$ 를 곱하면 길이가 $a$ 배가 되기 때문이므로, 구간마다 길이를 그 위치의 $x$ 로 나눠 두면 늘어난 만큼이 상쇄된다.
 
 $$
 \int_0^\infty f(ax)\thinspace\frac{dx}x=\int_0^\infty f(y)\thinspace\frac{dy}y
