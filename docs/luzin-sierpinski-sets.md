@@ -10,11 +10,7 @@ Luzin 집합은 [측도](measure.md)가 $0$ 이면서 제1범주가 아니고, S
 
 실직선의 부분집합 가운데 어디에도 빽빽하지 않은 것을 셀 수 있는 개수만큼 모으면 제1범주 집합이 되고, [Baire 범주 정리](baire-category.md)는 이런 집합이 실직선 전체가 되지 못한다고 한다. 그러면 제1범주 집합을 하나 잡을 때마다 그 밖에 점이 남는다. 남는 점을 계속 집어 모으면 무엇이 되는지 본다.
 
-제1범주 집합 $M\_0$ 밖에서 점 $x\_0$ 을 집는다. 다음으로 $M\_1$ 을 잡아도 $M\_0\cup M\_1$ 이 제1범주라 그 밖에서 $x\_1$ 을 집는다. 셀 수 있는 개수의 제1범주 집합을 합쳐도 제1범주이므로 이 절차는 셀 수 있는 단계 동안 막히지 않는다. 제1범주 집합 전부를 줄 세울 수 있으면 절차가 끝까지 간다.
-
-제1범주 집합은 실수 개만큼 있고, 연속체 가설은 실수의 개수가 $\aleph\_1$ 이라고 한다. 그래서 제1범주 집합을 $M\_\alpha$ $(\alpha\lt \omega\_1)$ 로 줄 세운다. 단계 $\alpha$ 에서 $\bigcup\_{\beta\le\alpha}M\_\beta$ 는 가산 개의 합집합이라 제1범주이므로 그 밖에서 $x\_\alpha$ 를 집는다.
-
-이렇게 모은 $L=\lbrace x\_\alpha : \alpha\lt \omega\_1\rbrace$ 는 크기가 $\aleph\_1$ 이라 비가산이다. 제1범주 집합 $M$ 을 아무거나 잡으면 $M=M\_\gamma$ 인 $\gamma$ 가 있고, $\alpha\gt \gamma$ 인 $x\_\alpha$ 는 $M\_\gamma$ 밖에서 집었으므로 $L\cap M$ 에 남는 것은 $\gamma$ 이하 단계의 점뿐이라 가산이다.
+제1범주 집합 $M\_0$ 밖에서 점 $x\_0$ 을 집고, $M\_1$ 을 잡아도 $M\_0\cup M\_1$ 이 제1범주라 그 밖에서 $x\_1$ 을 집는다. 셀 수 있는 개수의 제1범주 집합을 합쳐도 제1범주이므로 이 절차는 막히지 않는다. 제1범주 집합은 실수 개만큼 있고 연속체 가설은 실수의 개수가 $\aleph\_1$ 이라고 하므로, 제1범주 집합을 $M\_\alpha$ $(\alpha\lt \omega\_1)$ 로 줄 세우고 단계 $\alpha$ 에서 $\bigcup\_{\beta\le\alpha}M\_\beta$ 밖에서 $x\_\alpha$ 를 집는다. 이렇게 모은 $L=\lbrace x\_\alpha : \alpha\lt \omega\_1\rbrace$ 가 크기 $\aleph\_1$ 의 비가산 집합이다.
 
 # 정의
 
@@ -30,7 +26,7 @@ $S\subseteq\mathbb R$ 이 **Sierpiński 집합**이라 함은 $S$ 가 비가산�
 
 **정리**(Luzin, Sierpiński)**.** 연속체 가설 아래에서 Luzin 집합과 Sierpiński 집합이 존재한다.[^1]
 
-증명의 요지는 직관 절의 초한귀납이다. $\mathcal M$ 은 $\sigma$ 아이디얼이고 $\mathbb R\notin\mathcal M$ 이므로 각 단계에서 집을 점이 남고, 연속체 가설이 $\lvert\mathcal M\rvert=\aleph\_1$ 을 주어 열거가 길이 $\omega\_1$ 로 끝난다. $\mathcal N$ 도 $\sigma$ 아이디얼이고 $\mathbb R\notin\mathcal N$ 이므로 같은 귀납이 Sierpiński 집합을 준다. ∎
+증명의 요지는 직관 절의 초한귀납이다. $\mathcal M$ 은 $\sigma$ 아이디얼이고 $\mathbb R\notin\mathcal M$ 이므로 각 단계에서 집을 점이 남고, 연속체 가설이 $\lvert\mathcal M\rvert=\aleph\_1$ 을 주어 열거가 길이 $\omega\_1$ 로 끝난다. 제1범주 집합 $M$ 에는 $M=M\_\gamma$ 인 $\gamma$ 가 있고 $\alpha\gt \gamma$ 인 $x\_\alpha$ 를 $M\_\gamma$ 밖에서 집었으므로, $L\cap M$ 에 남는 것은 $\gamma$ 이하 단계의 점뿐이라 가산이다. $\mathcal N$ 도 $\sigma$ 아이디얼이고 $\mathbb R\notin\mathcal N$ 이므로 같은 귀납이 Sierpiński 집합을 준다. ∎
 
 ## 측도와 범주
 
