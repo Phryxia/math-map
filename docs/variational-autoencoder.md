@@ -12,22 +12,18 @@ $z\mapsto x$ 를 신경망으로 바꾸면 표현력이 늘지만 주변가능�
 
 # 직관
 
-$\log p(x)$ 를 직접 계산할 수 없으니 임의의 분포 $q(z)$ 를 끼워 넣는다.
+$\log p(x)$ 를 직접 계산할 수 없으니 임의의 분포 $q(z)$ 를 끼워 넣고 $\log$ 의 오목성에 Jensen 부등식을 쓴다. 이렇게 얻은 하계가 ELBO 이고, 기댓값 안에 로그가 들어가 있으므로 표본으로 추정할 수 있다.
 
 $$
 \log p(x)=\log\int p(x,z)\thinspace dz=\log\mathbb E_{q}\Big[\frac{p(x,z)}{q(z)}\Big]
-\ \ge\ \mathbb E_{q}\Big[\log\frac{p(x,z)}{q(z)}\Big]
+\thinspace\ge\thinspace \mathbb E_{q}\Big[\log\frac{p(x,z)}{q(z)}\Big]
 $$
 
-부등호는 $\log$ 의 오목성에서 오는 Jensen 부등식이다. 오른쪽이 ELBO 이고, 기댓값 안에 로그가 들어가 있으므로 표본으로 추정할 수 있다.
-
-하계가 얼마나 느슨한지도 같은 계산에서 나온다.
+하계와 $\log p(x)$ 의 차이는 $q$ 와 참 사후분포 사이의 KL 발산이므로, $q$ 가 사후분포와 같을 때만 등호가 성립한다. ELBO 를 $q$ 에 대해 최대화하면 사후분포 근사가 되고 $\theta$ 에 대해 최대화하면 가능도가 올라가므로, 목적함수 하나가 추론과 학습을 함께 수행한다.
 
 $$
 \log p(x)-\mathrm{ELBO}(q)=\mathrm{KL}\big(q(z)\thinspace\Vert\thinspace p(z\mid x)\big)
 $$
-
-$q$ 가 참 사후분포와 같을 때만 등호가 성립한다. ELBO 를 $q$ 에 대해 최대화하면 사후분포 근사가 되고 $\theta$ 에 대해 최대화하면 가능도가 올라가므로, 목적함수 하나가 추론과 학습을 함께 수행한다.
 
 # 정의
 
