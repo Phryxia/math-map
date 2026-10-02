@@ -6,17 +6,13 @@ Fourier 국소 해석은 격자 위 반복법이 각 Fourier 모드를 얼마나
 
 # 직관
 
-구간 위의 $-u''=f$ 를 간격 $h$ 로 이산화하면 행렬 $A$ 의 대각이 $2/h^2$ 이고 양옆이 $-1/h^2$ 다. 감쇠 Jacobi 반복 $x\leftarrow x+\omega D^{-1}(b-Ax)$ 를 오차에 적용하면 오차가 $I-\omega D^{-1}A$ 배가 된다.
+구간 위의 $-u''=f$ 를 간격 $h$ 로 이산화하면 행렬 $A$ 의 대각이 $2/h^2$ 이고 양옆이 $-1/h^2$ 이며, 감쇠 Jacobi 반복 $x\leftarrow x+\omega D^{-1}(b-Ax)$ 를 오차에 적용하면 오차가 $I-\omega D^{-1}A$ 배가 된다. 오차를 모드 $e^{\mathrm i\theta j}$ 로 두고 $A$ 를 적용하면 $j$ 번째 성분이 $\frac{1}{h^2}(-e^{\mathrm i\theta(j-1)}+2e^{\mathrm i\theta j}-e^{\mathrm i\theta(j+1)})$ 이고, $e^{\mathrm i\theta j}$ 를 묶어내면 $\frac{2-2\cos\theta}{h^2}e^{\mathrm i\theta j}$ 다. 모드가 모드로 되돌아오고 곱해진 수는 $\frac{4}{h^2}\sin^2(\theta/2)$ 하나다. $D^{-1}$ 이 $h^2/2$ 배이므로 반복 한 번에 이 모드에 곱해지는 수는 다음과 같다.
 
-오차를 모드 $e^{\mathrm i\theta j}$ 로 두고 $A$ 를 적용한다. $j$ 번째 성분은 $\frac{1}{h^2}(-e^{\mathrm i\theta(j-1)}+2e^{\mathrm i\theta j}-e^{\mathrm i\theta(j+1)})$ 이고, $e^{\mathrm i\theta j}$ 를 묶어내면 $\frac{2-2\cos\theta}{h^2}e^{\mathrm i\theta j}$ 다. 모드가 모드로 되돌아오고 곱해진 수는 $\frac{4}{h^2}\sin^2(\theta/2)$ 하나다.
+$$
+g(\theta)=1-\omega\thinspace\frac{h^2}{2}\cdot\frac{4}{h^2}\sin^2(\theta/2)=1-\omega(1-\cos\theta)
+$$
 
-$D^{-1}$ 이 $h^2/2$ 배이므로 반복 한 번에 이 모드에 곱해지는 수는 다음과 같다.
-
-$$g(\theta)=1-\omega\thinspace\frac{h^2}{2}\cdot\frac{4}{h^2}\sin^2(\theta/2)=1-\omega(1-\cos\theta)$$
-
-$h$ 가 사라지고 $\theta$ 와 $\omega$ 만 남는다. $\omega=1$ 을 넣으면 $g(\pi)=-1$ 이라 가장 빠르게 진동하는 모드가 부호만 바뀌고 크기가 그대로다. 다중격자는 성긴 격자가 맡지 못하는 고주파를 평활자가 줄여 주기를 기대하는데, $\omega=1$ 에서는 그 기대가 깨진다.
-
-$\omega=2/3$ 을 넣으면 $g(\pi/2)=1/3$ 이고 $g(\pi)=-1/3$ 이라 고주파 쪽 $\pi/2\le\vert\theta\vert\le\pi$ 에서 크기가 $1/3$ 을 넘지 않는다. 반복 한 번에 고주파가 $1/3$ 로 줄어든다는 이 수가 다중격자 한 사이클의 수렴률을 예측한다.
+$h$ 가 사라지고 $\theta$ 와 $\omega$ 만 남는다. $\omega=1$ 을 넣으면 $g(\pi)=-1$ 이라 가장 빠르게 진동하는 모드가 부호만 바뀌고 크기가 그대로여서, 성긴 격자가 맡지 못하는 고주파를 평활자가 줄여 주기를 기대하는 다중격자의 전제가 깨진다. $\omega=2/3$ 을 넣으면 $g(\pi/2)=1/3$ 이고 $g(\pi)=-1/3$ 이라 고주파 쪽 $\pi/2\le\vert\theta\vert\le\pi$ 에서 크기가 $1/3$ 을 넘지 않는다. 반복 한 번에 고주파가 $1/3$ 로 줄어든다는 이 수가 다중격자 한 사이클의 수렴률을 예측한다.
 
 # 정의
 
