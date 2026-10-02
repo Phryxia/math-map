@@ -1,15 +1,23 @@
 {
   "version": 1,
-  "savedAt": "2026-10-02T17:04:21.393Z",
-  "nextSeq": 1520,
+  "savedAt": "2026-10-02T21:05:45.908Z",
+  "nextSeq": 1522,
   "items": [
     {
-      "id": "f1f0be7a",
-      "title": "직관 절이 두 문단을 넘는 문서 훑기 (24차)",
+      "id": "b681268a",
+      "title": "직관 절이 두 문단을 넘는 문서 훑기 (25차)",
       "priority": 50,
-      "note": "23차(2026-10-02 다섯째 회차)에 4문단 스물여덟과 3문단 열둘을 끝냈다. 4문단: fundamental-calculus finite-projective-planes finite-fields finite-automata fargues-scholze eilenberg-maclane-spaces discrete-valuation-rings dirichlet-unit-theorem differentially-closed-fields differential-galois-theory determinantal-point-process derivative deformation-rings constructible-universe connectedness concentration-inequalities combinatorial-species coleman-integration cohomology cohen-macaulay-rings classifying-spaces characteristic-functions chabauty-method chabauty-kim cardinal-characteristics brownian-motion brouwer-fixed-point boolean-valued-models. 3문단: zilber-trichotomy zhu-algebra weak-konig-lemma weyl-character-formula union-find unique-factorization-domains smoothed-aggregation semicoarsening second-order-arithmetic schellekens-list random-walks picard-group. 이로써 4문단 이상은 판정이 끝난 넷(measure 는 CLAUDE.md 4절의 모범 예, monads 는 21차 방침대로 건너뜀, eisenstein-series 와 dwork-rationality 는 $$ 블록이 한 흐름을 쪼개 집계만 4이고 실질 2문단)만 남았다. 22차까지 쓴 집계 awk 는 $$ 블록 뒤에 이어지는 문장을 새 문단으로 세므로 실질 문단 수를 과대 집계한다. 그래서 블록(코드펜스와 $$)이 직관 절에 하나도 없으면서 문단이 3개 이상인 문서만 거르는 집계기를 만들어 썼고, 그것이 확실한 처리 대상이다. 23차 시작 때 43개였고 여섯을 처리해 37개가 남았다: ordinary-differential-equations o-minimality np-completeness newton-method mathematical-structuralism matchings lowenheim-skolem large-deviations homology holomorphic-functions hilbert-spaces groups group-actions graph-coloring full-multigrid fourier-series fields exponential-families erdos-sierpinski-duality equivalence-relations domain-decomposition derived-functors cross-validation counting-principles constructible-sets conditional-expectation classification-of-surfaces central-limit-theorem borel-pade boolean-algebras bayesian-inference baker-theorem axiom-of-choice ax-grothendieck amenable-groups algebraic-varieties(measure 제외). 집계기는 count2.awk 로 짰고 규칙은 /^# /로 절을 잡고 코드펜스와 $$ 를 세어 b==0 인 것만 내놓는 것이다. 블록이 섞인 3문단 문서는 126개인데 대부분 실질 2문단이라(unique-games topology spherical-harmonics 를 열어 확인했다) 일괄 처리 대상이 아니고, 열어 보고 독립 문단이 셋인 것만 고친다. 23차에서 굳은 처리는 22차와 같다. 다른 절이 정식으로 담은 문단은 지우고(fundamental-calculus 의 두 형태 차이, finite-automata 의 Myhill-Nerode 와 부분집합 구성, brouwer-fixed-point 의 수축 구성과 호몰로지 논법, concentration-inequalities 의 √n 문단, random-walks 의 전압 문단), 직관에 있던 증명은 성질 절로 옮겼다(fundamental-calculus 의 망원경 합을 '제2 형태의 증명' 절로 신설). 나열이 아니라 구조인 mermaid 는 맞는 절로 옮겼다(finite-fields 의 부분체 탑을 '부분체와 Frobenius' 절로, 그때 노드 레이블 F_2 를 F2 로 바꿔 수식 검수의 밑줄 오탐도 없앴다). finite-automata 는 직관을 새로 썼다(3으로 나눈 나머지를 상태로 쓰는 오토마타와 0^n1^n 의 대비). 고친 문체는 예고문('여기서 두 가지가 따라 나온다', '왜 깨지는지 보면 다음 수가 나온다', '두 가지가 그것을 막는다', '어디서 막혔는지 본다'), 메타 서술('이 사슬의 각 칸을 조건으로 분리한 것이 아래 세 부류다', '이 상쇄를 지수 모멘트로 정량화한 것이 아래의 부등식들이다'), 금지 표현('~기 때문이다' 로 앞 문장을 되풀이하는 문장), 문학적 관용구(random-walks 의 '취객은 집에 돌아오지만 취한 새는 영영 길을 잃는다')다. 작업 중 두 번, 축약 문단을 끼울 때 sed 범위를 잘못 잡아 원래 문단이 남거나 개요가 끼었다(union-find, schellekens-list). 둘 다 git checkout 으로 되돌리고 grep -n '^# 직관' 으로 절대 줄을 다시 확인한 뒤 고쳤다. 문단을 갈아 끼울 때는 자르기 전에 반드시 cat -n 으로 경계 줄을 확인한다. 23차 시작 때 세 검증과 4.5절 매핑 검사, README 뿌리 diff 가 모두 깨끗했고, 로컬 claude/math 가 얕은 클론이어서 원격과 분기한 것처럼 보였으나 git fetch --unshallow 로 공통 조상을 받으니 로컬이 원격의 조상이었고 fast-forward 로 맞췄다(22차와 같은 상황).",
-      "createdAt": "2026-10-02T17:03:47.855Z",
-      "seq": 1519
+      "note": "24차(2026-10-02 여섯째 회차)에 블록 없는 3문단 문서 37개를 전부 끝냈다: ordinary-differential-equations o-minimality np-completeness newton-method mathematical-structuralism matchings lowenheim-skolem large-deviations homology holomorphic-functions hilbert-spaces groups group-actions graph-coloring full-multigrid fourier-series fields exponential-families erdos-sierpinski-duality equivalence-relations domain-decomposition derived-functors cross-validation counting-principles constructible-sets conditional-expectation classification-of-surfaces central-limit-theorem borel-pade boolean-algebras bayesian-inference baker-theorem axiom-of-choice ax-grothendieck amenable-groups algebraic-varieties. 이로써 코드펜스와 $$ 가 직관 절에 없는 문서 가운데 3문단 이상은 measure(4절 모범 예) 하나만 남았다. 집계기 count2.awk 는 /^# 직관/ 으로 절을 잡고 코드펜스와 $$ 줄을 세어 b==0 이면서 산문 문단이 3 이상인 것만 내놓는다. 24차 처리 방침은 23차와 같다. 다른 절이 정식으로 담은 문단은 지웠고(ODE 의 Lipschitz 반례는 성질 절 Picard-Lindelof, homology 의 경계의 경계는 정의 절, fourier-series 의 Dirichlet 핵은 정의 절 63줄, classification-of-surfaces 의 Dyck 정리는 성질 절 101줄, bayesian-inference 의 순차성은 성질 절 116줄, amenable-groups 의 자유군은 성질 절 51줄), 직관에 있던 표와 관찰은 맞는 절로 옮겼다(mathematical-structuralism 의 세 입장 표를 정의 절 '세 입장' 절로, group-actions 의 네 작용 표를 성질 절 '자기 자신 위의 작용' 절로, equivalence-relations 의 추이성 실패 예를 성질 절 '동치 폐포' 로, domain-decomposition 의 성긴 공간 문단을 성질 절 '부분공간 보정' 으로). 직관 절의 H2 하위 절은 모두 없앴다(비유 헤딩 '야구팀의 유격수', '가장 값싼 경로'). 약어를 푼 문단을 지울 때는 뒤쪽 첫 등장에서 풀었다(exponential-families 의 MLE 를 123줄, boolean-algebras 의 DNF 를 123줄). 사고 두 번: domain-decomposition 에서 조립 범위를 잘못 잡아 '두 방법의 수렴 증명' 문단이 지워졌고 git checkout 으로 복구했다. 문단을 지운 자리에 빈 줄이 둘 남는 일이 네 번 있었다(homology classification-of-surfaces axiom-of-choice counting-principles erdos-sierpinski-duality). 조립 뒤 awk 'prev==\"\" && $0==\"\" {print FILENAME\": \"NR} {prev=$0}' 로 연속 빈 줄을 반드시 확인한다. 다음 대상은 블록이 섞인 3문단 문서 126개 가운데 실질 독립 문단이 셋인 것이다. 일괄 대상이 아니므로 열어 보고 판정한다.",
+      "createdAt": "2026-10-02T21:03:48.413Z",
+      "seq": 1520
+    },
+    {
+      "id": "9e31c022",
+      "title": "블록 섞인 3문단 문서 가운데 판정이 끝난 것",
+      "priority": 49,
+      "note": "24차 끝에 집계기(코드펜스와 $$ 가 직관 절에 있으면서 산문 문단이 4 이상)로 상위 후보를 열어 판정했다. source-coding(집계 6, 블록 4), poisson-summation(5, 4), schur-complement(5, 4)은 모두 식 블록이 한 계산 흐름을 쪼개 집계만 높고 실질 2문단 이하이므로 손대지 않는다. eisenstein-series 와 dwork-rationality 는 23차에 같은 이유로 판정했고, deformation-rings 는 23차에 처리했고, monads 는 21차 방침대로 건너뛴다. schur-multipliers 는 제목 'A와 B' 꼴 항목(357c8e93)에서 함께 본다. 25차는 이 여덟을 빼고 그다음 후보부터 연다.",
+      "createdAt": "2026-10-02T21:05:18.331Z",
+      "seq": 1521
     },
     {
       "id": "e0bb0524",
