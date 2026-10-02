@@ -28,22 +28,18 @@ $\mathrm{GL}\_n$ 의 자기동형 $L$ 함수 이론은 이 유일성 위에 서 
 
 # 직관
 
-$\mathrm{GL}\_2$ 의 첨점형식을 아델 위의 함수 $\varphi$ 로 보면 $N\cong\mathbb G_a$ 이므로 $N(\mathbb Q)\backslash N(\mathbb A)$ 가 콤팩트 아벨군이고 지표로 전개할 수 있다.
+$\mathrm{GL}\_2$ 의 첨점형식을 아델 위의 함수 $\varphi$ 로 보면 $N\cong\mathbb G_a$ 이므로 $N(\mathbb Q)\backslash N(\mathbb A)$ 가 콤팩트 아벨군이고 지표로 전개할 수 있다. 전개의 $\psi$ 성분이 $W_\varphi$ 다. 첨점 조건이 $\alpha=0$ 항을 없애고, 나머지 항은 $\mathrm{GL}\_1(\mathbb Q)$ 의 작용으로 한 항에서 나온다. 첨점형식이 Whittaker 함수 하나로 복원된다.
 
 $$
 \varphi(g)=\sum_{\alpha\in\mathbb Q^\times}W_\varphi\negthinspace\left(\begin{pmatrix}\alpha&\cr&1\end{pmatrix}g\right)
 $$
 
-$W_\varphi$ 가 $\psi$ 성분이다. 첨점 조건이 $\alpha=0$ 항을 없애고, 나머지 항은 $\mathrm{GL}\_1(\mathbb Q)$ 의 작용으로 한 항에서 나온다. 첨점형식이 Whittaker 함수 하나로 복원된다.
-
-$n\ge3$ 이면 $N$ 이 비가환이라 지표만으로 전개가 끝나지 않는다. $\mathrm{GL}\_1$ 자리에 $\mathrm{GL}\_{n-1}$ 을 놓은 다음 전개를 쓴다.
+$n\ge3$ 이면 $N$ 이 비가환이라 지표만으로 전개가 끝나지 않는다. $\mathrm{GL}\_1$ 자리에 $\mathrm{GL}\_{n-1}$ 을 놓은 다음 전개를 쓰면 계수 자리에 수 대신 함수가 오고, 이 합이 Rankin–Selberg 적분 펼치기의 재료다.
 
 $$
 \varphi(g)=\sum_{\gamma\in N_{n-1}(\mathbb Q)\backslash\mathrm{GL}\_{n-1}(\mathbb Q)}
 W_\varphi\negthinspace\left(\begin{pmatrix}\gamma&\cr&1\end{pmatrix}g\right)
 $$
-
-계수 자리에 수 대신 함수가 오고, 이 합이 Rankin–Selberg 적분 펼치기의 재료다.
 
 # 정의
 
