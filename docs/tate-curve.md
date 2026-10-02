@@ -16,23 +16,13 @@ $p$ 진 $L$ 함수의 예외적 영점에 나타나는 $\mathcal L$ 불변량 $\
 
 # 직관
 
-## 격자가 이산적이지 않은 자리
-
-복소 타원곡선은 격자 몫 $\mathbb C/\Lambda$ 이고 $\Lambda=\mathbb Z+\mathbb Z\tau$ 다. 같은 것을 [$p$ 진수](p-adic-numbers.md) 위에서 하려고 $K$ 안에 $\mathbb Z+\mathbb Z\tau$ 를 놓는다.
-
-$K$ 의 절댓값은 비아르키메데스이므로 정수 $p^k$ 에서 $|p^k|=p^{-k}\to0$ 이다. 부분군 $\mathbb Z$ 자체가 $0$ 에 쌓이므로 이산이 아니고, 몫을 곡선으로 볼 수 없다. 격자 모형은 여기서 막힌다.
-
-## 지수함수로 옮긴 모형
-
-복소수에서는 같은 곡선을 다르게도 쓴다. $z\mapsto e^{2\pi iz}$ 가 $\mathbb C/\mathbb Z\cong\mathbb C^{\times}$ 를 주고, 남은 생성원 $\tau$ 는 $q=e^{2\pi i\tau}$ 를 곱하는 사상이 된다. 따라서
+복소 타원곡선은 격자 몫 $\mathbb C/\Lambda$ 이고 $\Lambda=\mathbb Z+\mathbb Z\tau$ 인데, 같은 것을 [$p$ 진수](p-adic-numbers.md) 위에서 하려고 $K$ 안에 $\mathbb Z+\mathbb Z\tau$ 를 놓는다. $K$ 의 절댓값은 비아르키메데스이므로 정수 $p^k$ 에서 $\vert p^k\vert=p^{-k}\to0$ 이다. 부분군 $\mathbb Z$ 자체가 $0$ 에 쌓이므로 이산이 아니고 몫을 곡선으로 볼 수 없어, 격자 모형은 여기서 막힌다. 복소수에서는 $z\mapsto e^{2\pi iz}$ 가 $\mathbb C/\mathbb Z\cong\mathbb C^{\times}$ 를 주고 남은 생성원 $\tau$ 는 $q=e^{2\pi i\tau}$ 를 곱하는 사상이 되므로, 같은 곡선을 다음과 같이 쓴다.
 
 $$
 \mathbb C/\Lambda\cong\mathbb C^{\times}/q^{\mathbb Z}
 $$
 
-이고 $|q|\lt1$ 이다.
-
-오른쪽 식은 덧셈 대신 곱셈을 쓴다. $K^{\times}$ 안에서 $q^n$ 의 절댓값은 $|q|^n$ 이고 $|q|\lt1$ 이므로 $n\to-\infty$ 에서 발산하고 $n\to\infty$ 에서 $0$ 으로 간다. $q^{\mathbb Z}$ 는 $K^{\times}$ 의 이산 부분군이다. 몫이 군으로 잘 정의된다.
+여기서 $\vert q\vert\lt 1$ 이고, 오른쪽 식은 덧셈 대신 곱셈을 쓴다. $K^{\times}$ 안에서 $q^n$ 의 절댓값은 $\vert q\vert^n$ 이므로 $n\to-\infty$ 에서 발산하고 $n\to\infty$ 에서 $0$ 으로 간다. $q^{\mathbb Z}$ 는 $K^{\times}$ 의 이산 부분군이어서 몫이 군으로 잘 정의된다.
 
 # 정의
 
