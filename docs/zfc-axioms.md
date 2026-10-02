@@ -10,21 +10,17 @@ ZFC 로부터 자연수, 정수, 유리수, 실수, 함수, 관계, 군·환·�
 
 # 직관
 
-[집합](sets.md)의 소박한 이해에서는 "성질 $P$ 를 만족하는 모든 것의 모임"을 집합으로 인정한다. 여기서 $P$ 를 "자기 자신을 원소로 갖지 않는다"로 두면 다음 모순이 나온다.
+[집합](sets.md)의 소박한 이해에서는 "성질 $P$ 를 만족하는 모든 것의 모임"을 집합으로 인정하는데, $P$ 를 "자기 자신을 원소로 갖지 않는다"로 두면 아래 모순이 나온다. ZFC 의 해법은 무제한 내포를 버리고, 이미 주어진 집합 $A$ 의 부분집합만 성질로 잘라내도록 허용하는 것이다(분류 공리). 그러면 위 논법은 모순 대신 " $R$ 은 어떤 집합에도 속하지 않는다", 즉 모든 집합의 집합은 없다는 결론만 준다.
 
 $$
-R=\lbrace\thinspace x : x\notin x\thinspace\rbrace\ \Longrightarrow\ R\in R \iff R\notin R
+R=\lbrace\thinspace x : x\notin x\thinspace\rbrace\thinspace\Longrightarrow\thinspace R\in R \iff R\notin R
 $$
 
-ZFC 의 해법은 무제한 내포를 버리고, 이미 주어진 집합 $A$ 의 부분집합만 성질로 잘라내도록 허용하는 것이다(분류 공리). 그러면 위 논법은 모순 대신 " $R$ 은 어떤 집합에도 속하지 않는다", 즉 모든 집합의 집합은 없다는 결론만 준다.
-
-집합 세계는 공집합에서 시작해 거듭제곱집합을 반복하며 층층이 쌓은 누적 위계다. 서수 $\alpha$ 마다 $V_\alpha$ 를 다음으로 정한다.
+집합 세계는 공집합에서 시작해 거듭제곱집합을 반복하며 층층이 쌓은 누적 위계이고, 서수 $\alpha$ 마다 $V_\alpha$ 를 아래와 같이 정한다. $V_\omega$ 가 유한 집합 전체이고, 모든 집합이 어떤 $V_\alpha$ 에 들어간다. 정칙성 공리는 이 위계가 아래로 무한히 내려가지 않음을, 즉 모든 집합이 유한 번 만에 공집합에 도달함을 보장한다.
 
 $$
 V_0=\varnothing,\qquad V_{\alpha+1}=P(V_\alpha),\qquad V_\lambda=\bigcup_{\alpha\lt\lambda}V_\alpha\thinspace\thinspace(\lambda\thinspace\text{극한서수})
 $$
-
-$V_\omega$ 가 유한 집합 전체이고, 모든 집합이 어떤 $V_\alpha$ 에 들어간다. 정칙성 공리는 이 위계가 아래로 무한히 내려가지 않음을, 즉 모든 집합이 유한 번 만에 공집합에 도달함을 보장한다.
 
 # 정의
 
