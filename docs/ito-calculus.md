@@ -20,13 +20,11 @@ $$
 
 ## 2차변동의 기여
 
-증분의 제곱합이 $t$ 로 수렴한다는 사실을 기호로 줄여 쓰면 다음과 같다.
+증분의 제곱합이 $t$ 로 수렴하므로 $f(B_t)$ 의 Taylor 전개에서 2차항 $\tfrac12 f''(B)(dB)^2$ 가 $\tfrac12 f''(B)\thinspace dt$ 로 남고, 이 항이 Itô 공식과 고전적 연쇄법칙의 차이다. 증분의 규칙을 기호로 줄여 쓰면 다음과 같다.
 
 $$
 (dB)^2=dt,\qquad dB\thinspace dt=0,\qquad (dt)^2=0
 $$
-
-$f(B_t)$ 의 Taylor 전개에서 2차항 $\tfrac12 f''(B)(dB)^2$ 가 $\tfrac12 f''(B)\thinspace dt$ 로 남는다. Itô 공식은 이 한 줄의 결과다.
 
 # 정의
 
