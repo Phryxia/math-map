@@ -8,13 +8,9 @@
 
 # 직관
 
-평면 곡선 $y^2=x^3$ 은 원점에서 뾰족하고 $y=x^2$ 은 그렇지 않다. 이 차이를 방정식에서 계산으로 가른다. 편미분을 쓰면 $f=y^2-x^3$ 의 두 편도함수가 원점에서 모두 $0$ 이고, $g=y-x^2$ 은 $\partial g/\partial y=1$ 이다. 그런데 이 계산은 곡선을 평면에 넣은 방정식에 달려 있어서, 곡선 자체의 값이 아니다.
+평면 곡선 $y^2=x^3$ 은 원점에서 뾰족하고 $y=x^2$ 은 그렇지 않다. 편미분을 쓰면 $f=y^2-x^3$ 의 두 편도함수가 원점에서 모두 $0$ 이고, $g=y-x^2$ 은 $\partial g/\partial y=1$ 이다. 이 계산은 곡선을 평면에 넣은 방정식에 달려 있어 곡선 자체의 값이 아니므로, 곡선 위의 함수만으로 같은 판정을 한다. 좌표환 $A=k\lbrack x,y\rbrack/(y^2-x^3)$ 에서 원점의 극대 아이디얼은 $\mathfrak m=(x,y)$ 이고, $\mathfrak m^2$ 은 $x^2,xy,y^2$ 이 생성한다.
 
-곡선 위의 함수만으로 같은 판정을 한다. 좌표환 $A=k\lbrack x,y\rbrack/(y^2-x^3)$ 에서 원점의 극대 아이디얼은 $\mathfrak m=(x,y)$ 다. $\mathfrak m^2$ 은 $x^2,xy,y^2$ 이 생성한다. 관계식 $y^2=x^3$ 은 $x^3$ 이 이미 $\mathfrak m^2$ 에 있으므로 $\mathfrak m/\mathfrak m^2$ 에서 아무것도 지우지 못하고, $x$ 와 $y$ 의 상이 남아 $\dim_k\mathfrak m/\mathfrak m^2=2$ 다.
-
-포물선에서 같은 계산을 한다. $B=k\lbrack x,y\rbrack/(y-x^2)$ 에서 관계식이 $y=x^2$ 이고 $x^2\in\mathfrak m^2$ 이므로 $y$ 의 상이 $\mathfrak m/\mathfrak m^2$ 에서 $0$ 이 된다. 남는 것은 $x$ 하나이고 $\dim_k\mathfrak m/\mathfrak m^2=1$ 이다.
-
-두 곡선의 Krull 차원은 모두 $1$ 이다. 뾰족한 점에서만 $\mathfrak m/\mathfrak m^2$ 이 차원보다 크고, 그 크기가 접공간이 곡선보다 크다는 뜻이다. 두 값이 같은 경우를 정칙이라 부른다.
+관계식 $y^2=x^3$ 은 $x^3$ 이 이미 $\mathfrak m^2$ 에 있으므로 $\mathfrak m/\mathfrak m^2$ 에서 아무것도 지우지 못하고, $x$ 와 $y$ 의 상이 남아 $\dim_k\mathfrak m/\mathfrak m^2=2$ 다. 포물선 $B=k\lbrack x,y\rbrack/(y-x^2)$ 에서는 $x^2\in\mathfrak m^2$ 이므로 $y$ 의 상이 $\mathfrak m/\mathfrak m^2$ 에서 $0$ 이 되고, 남는 것은 $x$ 하나여서 $\dim_k\mathfrak m/\mathfrak m^2=1$ 이다. 두 곡선의 Krull 차원은 모두 $1$ 이고, 뾰족한 점에서만 $\mathfrak m/\mathfrak m^2$ 이 차원보다 크다. 그 크기는 접공간이 곡선보다 크다는 뜻이고, 두 값이 같은 경우를 정칙이라 부른다.
 
 # 정의
 
