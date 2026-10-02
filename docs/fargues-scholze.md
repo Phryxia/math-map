@@ -30,9 +30,8 @@ $$
 \mathcal E\cong\bigoplus_i\mathcal O(n_i),\qquad n_i\in\mathbb Z
 $$
 
-기울기를 다발의 차수로 읽으면 두 분류가 한 진술이 된다. 그런데 위 isocrystal 의 기울기는 $1/2$ 이고, $\mathbb P^1$ 에는 차수 $1/2$ 인 선다발이 없다.
+기울기를 다발의 차수로 읽으면 두 분류가 한 진술이 된다. 그런데 위 isocrystal 의 기울기는 $1/2$ 이고, $\mathbb P^1$ 에는 차수 $1/2$ 인 선다발이 없다. 차수가 유리수인 선다발을 갖는 곡선을 만들면 isocrystal 의 분류가 그 곡선 위 다발의 분류가 된다. 그 곡선이 Fargues–Fontaine 곡선 $X_{\mathrm{FF}}$ 이고, 기울기 $1/2$ 의 조각은 그 위의 계수 2 인 다발 $\mathcal O(1/2)$ 다.
 
-차수가 유리수인 선다발을 갖는 곡선을 만들면 isocrystal 의 분류가 그 곡선 위 다발의 분류가 된다. 그 곡선이 Fargues–Fontaine 곡선 $X_{\mathrm{FF}}$ 이고, 기울기 $1/2$ 의 조각은 그 위의 계수 2 인 다발 $\mathcal O(1/2)$ 다. 곡선이 있으면 그 위의 $G$ 다발 모듈라이 $\mathrm{Bun}\_G$ 도 만들 수 있고, 기하학적 Langlands 의 논법을 $p$ 진체로 옮길 자리가 생긴다.
 
 # 정의
 
