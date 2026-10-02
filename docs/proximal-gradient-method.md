@@ -6,17 +6,13 @@
 
 # 직관
 
-$\frac{1}{2}\Vert Ax-b\Vert^2+\lambda\Vert x\Vert\_1$ 을 최소화한다. 뒤 항의 한 좌표 $\vert x_j\vert$ 는 $x_j\gt 0$ 에서 미분이 $1$ , $x_j\lt 0$ 에서 $-1$ 이고 $x_j=0$ 에서는 없다. 이 문제를 푸는 목적이 여러 좌표가 정확히 $0$ 인 해를 얻는 것이므로, 기울기가 없는 자리가 바로 찾으려는 자리다.
-
-그래서 두 항을 따로 다룬다. 앞 항 $f$ 는 현재 점에서 접평면과 이차항으로 바꿔 쓰고 뒤 항 $g$ 는 건드리지 않은 채 그 합을 최소화한다.
+$\frac{1}{2}\Vert Ax-b\Vert^2+\lambda\Vert x\Vert\_1$ 을 최소화한다. 뒤 항의 한 좌표 $\vert x_j\vert$ 는 $x_j\gt 0$ 에서 미분이 $1$ , $x_j\lt 0$ 에서 $-1$ 이고 $x_j=0$ 에서는 없다. 이 문제를 푸는 목적이 여러 좌표가 정확히 $0$ 인 해를 얻는 것이므로, 기울기가 없는 자리가 바로 찾으려는 자리다. 그래서 앞 항 $f$ 는 현재 점에서 접평면과 이차항으로 바꿔 쓰고, 뒤 항 $g$ 는 건드리지 않은 채 그 합을 최소화한다.
 
 $$
 x_{k+1}=\mathop{\mathrm{arg\thinspace min}}\_{x}\Bigl(f(x_k)+\nabla f(x_k)^\top(x-x_k)+\frac{1}{2\eta}\Vert x-x_k\Vert^2+g(x)\Bigr)
 $$
 
-$x$ 에 의존하지 않는 항을 버리고 제곱을 묶으면 괄호 안이 $\frac{1}{2\eta}\Vert x-z_k\Vert^2+g(x)$ 이고 $z_k=x_k-\eta\nabla f(x_k)$ 다. 경사 걸음을 먼저 밟아 $z_k$ 로 간 다음, 그 점에서 멀어지는 값을 물면서 $g$ 를 줄이는 것이 한 걸음이다.
-
-$g(x)=\lambda\Vert x\Vert\_1$ 이면 이 최소화가 좌표마다 갈라지고 한 좌표의 문제는 $\frac{1}{2\eta}(x-z)^2+\lambda\vert x\vert$ 다. $z\gt\eta\lambda$ 이면 최소점이 $z-\eta\lambda$ , $z\lt-\eta\lambda$ 이면 $z+\eta\lambda$ , 그 사이이면 $0$ 이다. 미분이 없는 점 $x=0$ 이 최소점으로 나오는 구간이 생기고, 그 좌표가 정확히 $0$ 이 된다.
+$x$ 에 의존하지 않는 항을 버리고 제곱을 묶으면 괄호 안이 $\frac{1}{2\eta}\Vert x-z_k\Vert^2+g(x)$ 이고 $z_k=x_k-\eta\nabla f(x_k)$ 다. 경사 걸음을 먼저 밟아 $z_k$ 로 간 다음, 그 점에서 멀어지는 값을 물면서 $g$ 를 줄이는 것이 한 걸음이다. $g(x)=\lambda\Vert x\Vert\_1$ 이면 이 최소화가 좌표마다 갈라져 한 좌표의 문제는 $\frac{1}{2\eta}(x-z)^2+\lambda\vert x\vert$ 이고, $z\gt\eta\lambda$ 이면 최소점이 $z-\eta\lambda$ , $z\lt-\eta\lambda$ 이면 $z+\eta\lambda$ , 그 사이이면 $0$ 이다. 미분이 없는 점 $x=0$ 이 최소점으로 나오는 구간이 생기고, 그 좌표가 정확히 $0$ 이 된다.
 
 # 정의
 
