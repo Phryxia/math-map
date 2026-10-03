@@ -170,6 +170,6 @@ $A_3$ 부터는 이 표를 Bruhat 순서만으로 채울 수 없다. 어떤 자�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Beilinson–Bernstein 국소화](beilinson-bernstein.md)
 
 #algebra #group_theory #category_theory #combinatorics
