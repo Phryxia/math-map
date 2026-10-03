@@ -30,7 +30,7 @@ $$
 
 ## SVRG
 
-기준점 $\tilde x$ 를 에폭마다 한 번 갱신하고, 에폭 안에서는 다음 추정량으로 $m$ 번 걷는다.
+기준점 $\tilde x$ 를 바깥 반복마다 한 번 갱신하고, 그 안에서는 다음 추정량으로 $m$ 번 걷는다. 바깥 반복 하나가 전체 기울기를 한 번 계산하므로 이를 **에폭**이라 한다.
 
 $$
 v_k=\nabla f_{i_k}(x_k)-\nabla f_{i_k}(\tilde x)+\nabla F(\tilde x),\qquad x_{k+1}=x_k-\eta\thinspace v_k
