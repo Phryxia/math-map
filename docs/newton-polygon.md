@@ -32,7 +32,7 @@ $$
 
 ## Newton 다각형
 
-$K$ 를 부치 $v:K^\times\to\mathbb Q$ 가 붙은 체라 하고 $f(x)=\sum_{i=0}^na_ix^i\in K[x]$ 가 $a_0a_n\ne0$ 을 만족한다고 하자.
+$K$ 를 부치 $v:K^\times\to\mathbb Q$ 가 붙은 체라 하고 [다항식환](polynomial-rings.md) $K[x]$ 의 원소 $f(x)=\sum_{i=0}^na_ix^i$ 가 $a_0a_n\ne0$ 을 만족한다고 하자.
 
 > $f$ 의 **Newton 다각형**은 점집합 $\lbrace(i,v(a_i)):a_i\ne0\rbrace$ 의 아래쪽 볼록포다. 곧 $(0,v(a_0))$ 에서 $(n,v(a_n))$ 까지 이어지며 모든 점을 위쪽 또는 위에 두는 아래로 볼록한 절선이다.
 

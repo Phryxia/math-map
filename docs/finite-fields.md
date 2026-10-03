@@ -22,7 +22,7 @@ $$
 
 유한체는 원소 개수가 유한한 체이고, 그 원소 개수를 위수라 한다. 위수 $q$ 의 유한체를 $\mathbb{F}\_q$ 로 쓴다.
 
-$q=p^n$ 인 유한체는 $\mathbb{F}\_p$ 위의 $n$ 차 확대로 실현된다. 즉 $\mathbb{F}\_p[x]$ 의 $n$ 차 기약다항식 $f$ 를 잡으면 다음이 성립한다.
+$q=p^n$ 인 유한체는 $\mathbb{F}\_p$ 위의 $n$ 차 확대로 실현된다. 즉 [다항식환](polynomial-rings.md) $\mathbb{F}\_p[x]$ 의 $n$ 차 기약다항식 $f$ 를 잡으면 다음이 성립한다.
 
 $$
 \mathbb{F}\_{p^n}\cong \mathbb{F}\_p[x]/(f),\qquad [\mathbb{F}\_{p^n}:\mathbb{F}\_p]=n

@@ -60,7 +60,7 @@ $$
 
 ## Galois 군의 작용
 
-$\mathrm{Gal}(K/k)$ 는 $K$ 에 [군 작용](group-actions.md)으로 작용한다. $\sigma$ 가 $k$ -자기동형이면 $f(\sigma\alpha)=\sigma(f(\alpha))=0$ 이므로 이 작용은 $k[x]$ 에 속한 다항식의 근 집합을 보존한다. 따라서 $f$ 의 분해체에 대해 Galois 군은 근들의 집합에 충실하게 작용하여 대칭군에 단사로 들어간다.
+$\mathrm{Gal}(K/k)$ 는 $K$ 에 [군 작용](group-actions.md)으로 작용한다. $\sigma$ 가 $k$ -자기동형이면 $f(\sigma\alpha)=\sigma(f(\alpha))=0$ 이므로 이 작용은 [다항식환](polynomial-rings.md) $k[x]$ 에 속한 다항식의 근 집합을 보존한다. 따라서 $f$ 의 분해체에 대해 Galois 군은 근들의 집합에 충실하게 작용하여 대칭군에 단사로 들어간다.
 
 $$
 \mathrm{Gal}(K/k)\hookrightarrow S_n,\qquad n=\deg f
