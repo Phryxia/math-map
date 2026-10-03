@@ -18,7 +18,7 @@ $$
 \text{"}1-\varepsilon\text{ 이상 만족 가능" 과 "}\varepsilon\text{ 이하만 만족 가능" 을 구별하는 것이 }\mathrm{NP}\text{-난해}
 $$
 
-UGC(unique games conjecture)가 참이면 최대 절단의 최적 근사비가 $\alpha_{\mathrm{GW}}$ 이고, 모든 제약 충족 문제에 대해 기본 SDP(semidefinite programming) 완화가 최적 알고리즘이다. 하나의 알고리즘 틀이 넓은 문제군에서 더 개선될 수 없다는 통일 정리가 된다.
+유일게임 추측(unique games conjecture, UGC)이 참이면 최대 절단의 최적 근사비가 $\alpha_{\mathrm{GW}}$ 이고, 모든 제약 충족 문제에 대해 기본 SDP(semidefinite programming) 완화가 최적 알고리즘이다. 하나의 알고리즘 틀이 넓은 문제군에서 더 개선될 수 없다는 통일 정리가 된다.
 
 2018 년에 Khot–Minzer–Safra 등이 **2-to-2 게임 정리**를 증명해 추측의 절반에 해당하는 형태를 확립했다[^1]. 완전한 UGC 는 증명되지 않았다[^1].
 
