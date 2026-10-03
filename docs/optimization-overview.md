@@ -55,6 +55,7 @@ graph TD
 - [선형계획법](linear-programming.md): 다면체 위의 선형 목적함수, 꼭짓점 최적성과 쌍대성
 - [반정부호 계획법](semidefinite-programming.md): 반정부호 행렬 위의 완화와 Goemans–Williamson 알고리즘
 - [Lovász 세타 함수](lovasz-theta.md): 독립수와 채색수 사이에 끼는 반정부호 계획값
+- [내점법](interior-point-method.md): 경계에서 발산하는 장벽을 더해 내부를 지나는 다항시간 해법
 
 ## 최적 수송
 
