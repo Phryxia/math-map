@@ -4,7 +4,7 @@
 
 측도론은 집합에 크기를 매기는 방법과 그 크기로 정의한 적분을 다룬다. 물음은 "어떤 집합에 길이나 넓이를 일관되게 줄 수 있고, 그 위에서 극한과 적분을 언제 바꿔칠 수 있는가" 다. 답은 가산가법성을 만족하는 $\sigma$ 대수 위의 측도, 그 측도로 세운 Lebesgue 적분, 그리고 극한과 적분의 교환을 보장하는 수렴정리로 나온다.
 
-측도론의 갈래는 네 줄기다. 측도와 가측성을 세우는 기초, 적분과 세 수렴정리, 한 측도를 다른 측도로 옮기거나 견주는 상측도와 Radon–Nikodym 도함수, 그리고 이 셋을 쓰는 확률론과 최적수송이다. 극한정리와 확률과정은 [확률론 개관](probability-overview.md)에 있다.
+측도론의 갈래는 다섯 줄기다. 측도와 가측성을 세우는 기초, 적분과 세 수렴정리, 한 측도를 다른 측도로 옮기거나 견주는 상측도와 Radon–Nikodym 도함수, 이 셋을 쓰는 확률론과 최적수송, 그리고 측도를 보존하는 변환의 궤도를 재는 측도보존 동역학이다. 극한정리와 확률과정은 [확률론 개관](probability-overview.md)에 있다.
 
 시작은 [측도](measure.md)다. 거기서 [가측함수](measurable-functions.md)를 거쳐 [Lebesgue 적분](lebesgue-integral.md)으로 가면 [단조 수렴 정리](monotone-convergence.md)와 [지배 수렴 정리](dominated-convergence.md)가 나오고, [상측도](pushforward-measure.md)와 [Radon–Nikodym 정리](radon-nikodym.md)에서 확률론과 통계로 갈라진다.
 
@@ -69,12 +69,15 @@ graph TD
 
 - [확률변수](random-variables.md): 가측함수로서의 확률변수, 적분으로서의 기댓값
 - [조건부 기댓값](conditional-expectation.md): Radon–Nikodym 정리로 정의하는 부분 $\sigma$ 대수 위의 사영
-- [에르고딕 정리](ergodic-theorem.md): 측도보존변환의 시간평균과 공간평균의 일치, Birkhoff 정리와 von Neumann 정리
-- [혼합성](mixing.md): 집합이 퍼지는 속도로 재는 강혼합과 약혼합, 에르고딕성과의 위계, 스펙트럼 판정
-- [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md): 걸음마다 만들어지는 정보량, 생성분할 정리와 Ornstein 정리
 - [약수렴](weak-convergence.md): 유계 연속함수의 적분으로 재는 측도의 수렴과 tightness
 - [최적 수송](optimal-transport.md): 두 측도를 잇는 결합과 수송비용
 - [Girsanov 정리](girsanov.md): 측도변환이 Brown 운동의 표류항을 바꾸는 방식
+
+## 측도보존 동역학
+
+- [에르고딕 정리](ergodic-theorem.md): 측도보존변환의 시간평균과 공간평균의 일치, Birkhoff 정리와 von Neumann 정리
+- [혼합성](mixing.md): 집합이 퍼지는 속도로 재는 강혼합과 약혼합, 에르고딕성과의 위계, 스펙트럼 판정
+- [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md): 걸음마다 만들어지는 정보량, 생성분할 정리와 Ornstein 정리
 
 # 연관 문서
 
