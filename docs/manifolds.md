@@ -130,8 +130,8 @@ $$
 
 ### 대칭과 분류
 
+- [Morse 이론](morse-theory.md)
 - [Lie 대수](lie-algebras.md)
 - [Grassmann 다양체](grassmannian.md)
-- [s-코보디즘 정리와 고차원 Poincaré 추측](s-cobordism.md)
 
 #differential_geometry #topology

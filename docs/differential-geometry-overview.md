@@ -45,6 +45,7 @@ graph TD
 - [벡터다발](vector-bundles.md): 점마다 붙인 벡터 공간, 전이함수와 접속, 곡률
 - [특성류](characteristic-classes.md): 곡률의 불변 다항식이 주는 코호몰로지류, Chern–Weil 이론
 - [미분형식](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
+- [Morse 이론](morse-theory.md): 매끄러운 함수의 임계점이 주는 세포 구조와 Betti 수의 하한
 
 ## 계량과 곡률
 
