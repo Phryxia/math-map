@@ -1,4 +1,4 @@
-# Siegel–Weil 공식과 이차형식의 표현수
+# Siegel–Weil 공식
 
 # 개요
 

@@ -157,7 +157,7 @@ $$
 
 ## 더 알아보기
 
-- [Siegel–Weil 공식과 이차형식의 표현수](siegel-weil.md)
+- [Siegel–Weil 공식](siegel-weil.md)
 - [Shimura 대응](shimura-correspondence.md)
 - [Borcherds 곱](borcherds-products.md)
 
