@@ -76,7 +76,7 @@ $N_G(H)=H$ 인 부분군을 자기 정규화 부분군이라 한다. [Sylow](syl
 
 # 활용
 
-- **Sylow 개수 세기.** [Sylow 정리](sylow-theorems.md)의 $n_p=\lbrack G:N_G(P)\rbrack$ 이 켤레 개수 공식의 사례다. $n_p$ 가 $\vert G\vert$ 의 약수라는 제약이 여기서 나온다.
+- **Sylow 개수 세기.** Sylow 정리의 $n_p=\lbrack G:N_G(P)\rbrack$ 이 켤레 개수 공식의 사례다. $n_p$ 가 $\vert G\vert$ 의 약수라는 제약이 여기서 나온다.
 - **p 군의 중심.** 류 방정식에서 위수 $p^n$ 인 군의 지표가 모두 $p$ 의 배수이므로 $\vert Z(G)\vert$ 가 $p$ 의 배수이고 중심이 자명하지 않다.
 - **유한 단순군의 국소해석.** [유한 단순군의 분류](finite-simple-groups.md)는 위수 $2$ 인 원소의 중심화군과 Sylow 부분군의 정규화군을 조사해 군을 복원한다. Brauer 는 위수 $2$ 인 원소의 중심화군의 동형류를 고정하면 그것을 갖는 단순군이 유한개임을 보였다.
 - **Frattini 논법.** $N\trianglelefteq G$ 이고 $P$ 가 $N$ 의 Sylow $p$ 부분군이면 $G=N\thinspace N_G(P)$ 다. $g\in G$ 에 대해 $gPg^{-1}$ 이 다시 $N$ 의 Sylow 부분군이므로 $N$ 안에서 켤레이고, 그 켤레를 $g$ 에서 덜어내면 남은 것이 $N_G(P)$ 에 든다.

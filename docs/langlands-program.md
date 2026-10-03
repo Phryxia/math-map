@@ -16,7 +16,7 @@ $n=1$ 이 유체론이다. $n=2$ 이고 $K=\mathbb Q$ 인 경우의 자기동형
 
 분기하지 않는 $\mathfrak p$ 에 대해 $\mathrm{Frob}\_{\mathfrak p}$ 는 켤레류이므로 $\rho(\mathrm{Frob}\_{\mathfrak p})$ 는 켤레를 빼고 정해지고 그 특성다항식은 완전히 정해진다. 소수마다 그 다항식을 모아 Euler 곱으로 묶은 것이 Artin $L$ 함수이고, 곱은 $\mathrm{Re}(s)\gt 1$ 에서만 수렴한다. 각 인자가 소수 하나의 정보이므로 이 꼴에서 복소평면 전체로의 해석적 접속을 끌어낼 길이 없다.
 
-같은 모양의 $L$ 함수를 [모듈러 형식](modular-forms.md)에서 만들면 사정이 뒤집힌다. 형식의 변환 규칙에 [Mellin 변환](mellin-transform.md)을 적용하면 해석적 접속과 함수방정식이 바로 나오고, 대신 계수의 산술적 의미가 보이지 않는다. 두 쪽이 소수마다 $n$ 개의 수를 준다는 점은 같다. Galois 쪽의 Frobenius 고윳값 $n$ 개와 자기동형 쪽의 [Satake 매개변수](satake-isomorphism.md) $n$ 개를 같다고 놓는 것이 강령이고, $n=1$ 에서는 유체론이 그 일치를 증명했다.
+같은 모양의 $L$ 함수를 모듈러 형식에서 만들면 사정이 뒤집힌다. 형식의 변환 규칙에 [Mellin 변환](mellin-transform.md)을 적용하면 해석적 접속과 함수방정식이 바로 나오고, 대신 계수의 산술적 의미가 보이지 않는다. 두 쪽이 소수마다 $n$ 개의 수를 준다는 점은 같다. Galois 쪽의 Frobenius 고윳값 $n$ 개와 자기동형 쪽의 [Satake 매개변수](satake-isomorphism.md) $n$ 개를 같다고 놓는 것이 강령이고, $n=1$ 에서는 유체론이 그 일치를 증명했다.
 
 # 정의
 

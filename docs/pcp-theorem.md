@@ -61,7 +61,7 @@ $\mathrm{Gap}\text{-}\mathrm{CSP}[c,s]$ 는 다음 약속 문제다. 주어진 �
 
 ## Håstad 의 3 비트 검증자
 
-Håstad 는 완전성을 $1$ 에서 $1-\varepsilon$ 로 조금 양보하는 대신 건전성을 $\frac12+\varepsilon$ 까지 밀어 내리는 3 질의 검증자를 만들었다. 검사 형태는 배타적 논리합이다.
+Håstad 는 완전성을 $1$ 에서 $1-\varepsilon$ 로 조금 양보하는 대신 건전성을 $\frac12+\varepsilon$ 까지 밀어 내리는 3 질의 검증자를 만들었다[^3]. 검사 형태는 배타적 논리합이다.
 
 $$
 \pi[i]\oplus\pi[j]\oplus\pi[k]=b

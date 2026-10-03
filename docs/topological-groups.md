@@ -74,7 +74,7 @@ $\widehat{\mathbb R}\cong\mathbb R$, $\widehat{\mathbb Z}\cong S^1$, $\widehat{S
 
 # 활용
 
-- **불변 적분.** [Haar 측도](haar-measure.md)의 정의가 국소콤팩트 위상군을 전제한다. 군 위의 $L^2$ 공간과 정규표현이 이 측도로 정의되고, [Peter–Weyl 정리](peter-weyl.md)는 콤팩트군에서 그 공간을 기약표현으로 분해한다.
+- **불변 적분.** Haar 측도의 정의가 국소콤팩트 위상군을 전제한다. 군 위의 $L^2$ 공간과 정규표현이 이 측도로 정의되고, [Peter–Weyl 정리](peter-weyl.md)는 콤팩트군에서 그 공간을 기약표현으로 분해한다.
 - **수론의 국소-전역 구조.** [아델](adeles.md)은 모든 완비화의 제한 직적으로 만든 위상환이며, 그 덧셈군과 단수군이 국소콤팩트군이다. 콤팩트 열린부분군 $\prod\mathbb Z\_p$ 의 존재가 제한 직적 위상의 근거다.
 - **Hecke 대수.** [Satake 동형](satake-isomorphism.md)은 국소콤팩트군 $G(\mathbb Q\_p)$ 의 콤팩트 열린부분군 $K$ 에 대해 $K$ 양측불변 함수의 합성곱 대수를 다룬다. 몫공간 $G/K$ 의 이산성이 이 대수를 조합적 대상으로 만든다.
 - **매끄러운 구조와의 관계.** [Lie 군](lie-groups.md)은 다양체 구조를 가진 위상군이다. Hilbert 의 다섯째 문제의 해는 국소 Euclid 위상군이 Lie 군 구조를 유일하게 갖는다는 것이다[^1].
