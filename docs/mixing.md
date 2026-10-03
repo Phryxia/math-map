@@ -106,6 +106,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md)
 
 #measure_theory #probability #analysis

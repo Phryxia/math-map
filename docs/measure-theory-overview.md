@@ -69,6 +69,7 @@ graph TD
 - [조건부 기댓값](conditional-expectation.md): Radon–Nikodym 정리로 정의하는 부분 $\sigma$ 대수 위의 사영
 - [에르고딕 정리](ergodic-theorem.md): 측도보존변환의 시간평균과 공간평균의 일치, Birkhoff 정리와 von Neumann 정리
 - [혼합성](mixing.md): 집합이 퍼지는 속도로 재는 강혼합과 약혼합, 에르고딕성과의 위계, 스펙트럼 판정
+- [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md): 걸음마다 만들어지는 정보량, 생성분할 정리와 Ornstein 정리
 - [약수렴](weak-convergence.md): 유계 연속함수의 적분으로 재는 측도의 수렴과 tightness
 - [최적 수송](optimal-transport.md): 두 측도를 잇는 결합과 수송비용
 - [Girsanov 정리](girsanov.md): 측도변환이 Brown 운동의 표류항을 바꾸는 방식

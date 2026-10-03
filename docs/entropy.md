@@ -94,5 +94,6 @@ $H(f(X)) \le H(X)$ 이고 $f$ 가 단사이면 등호다. 데이터를 가공해
 
 - [KL divergence](kl-divergence.md)
 - [무손실 부호화 정리](source-coding.md)
+- [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md)
 
 #information_theory #probability #computation
