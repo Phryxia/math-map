@@ -146,6 +146,7 @@ $c=+1$ 인 경우 표현이 $\pi_1$ 의 몫인 정이십면체군을 지나야 �
 ## 선수지식
 
 - [Casson 불변량](casson-invariant.md)
+- [Morse 이론](morse-theory.md)
 
 ## 더 알아보기
 
