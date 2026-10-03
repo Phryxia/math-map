@@ -142,6 +142,7 @@ $L(7,1)$ 의 값 $0.7530,\thinspace 2.4450,\thinspace 3.8019$ 은 $4\sin^2(2\pi 
 
 ## 선수지식
 
+- [CW 복합체](cw-complexes.md)
 - [단체 호몰로지](homology.md)
 - [행렬식](determinants.md)
 

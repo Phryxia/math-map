@@ -73,6 +73,7 @@ $Y=K(G,n)$ 이면 $\pi_i(Y)$ 가 $i=n$ 에서만 $0$ 이 아니므로 장애가 
 
 ## 선수지식
 
+- [CW 복합체](cw-complexes.md)
 - [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)
 
 ## 더 알아보기
