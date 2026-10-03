@@ -56,7 +56,7 @@ $$\mathbb E\Vert x_k-x^\ast\Vert^2=O\left(\frac{\sigma^2}{\mu^2 k}\right)$$
 
 ## 분산 축소
 
-유한합에서는 각 항의 기울기를 마지막으로 계산한 값으로 기억해 두고 현재 표본의 기울기와의 차이로 보정할 수 있다. 추정량이 여전히 불편이면서 분산이 $0$ 으로 가므로, 고정 보폭에서 강볼록 손실의 기하급수적 수렴이 회복된다. 기억할 항이 $N$ 개이므로 자료가 무한히 들어오는 경우에는 쓰지 못한다.
+유한합에서는 각 항의 기울기를 마지막으로 계산한 값으로 기억해 두고 현재 표본의 기울기와의 차이로 보정할 수 있다([분산 축소 경사법](variance-reduced-gradient-methods.md)). 추정량이 여전히 불편이면서 분산이 $0$ 으로 가므로, 고정 보폭에서 강볼록 손실의 기하급수적 수렴이 회복된다. 기억할 항이 $N$ 개이므로 자료가 무한히 들어오는 경우에는 쓰지 못한다.
 
 # 활용
 
@@ -78,6 +78,7 @@ $$\mathbb E\Vert x_k-x^\ast\Vert^2=O\left(\frac{\sigma^2}{\mu^2 k}\right)$$
 
 ## 더 알아보기
 
+- [분산 축소 경사법](variance-reduced-gradient-methods.md)
 - [적응적 경사 방법](adaptive-gradient-methods.md)
 
 #optimization #machine_learning #probability #statistics

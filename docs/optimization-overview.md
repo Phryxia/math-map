@@ -47,6 +47,7 @@ graph TD
 - [근접 경사법](proximal-gradient-method.md): 미분 불가능한 볼록 항을 근접 연산자로 처리하는 반복, 연성 문턱과 ISTA(iterative shrinkage-thresholding algorithm)
 - [확률적 경사하강법](stochastic-gradient-descent.md): 기울기를 표본으로 추정하는 반복, 잡음 구간과 보폭 일정
 - [적응적 경사 방법](adaptive-gradient-methods.md): 좌표별 기울기 제곱의 누적으로 보폭을 나누는 AdaGrad, RMSProp, Adam
+- [분산 축소 경사법](variance-reduced-gradient-methods.md): 항별 기울기를 기억해 추정량의 분산을 없애는 SVRG 와 SAGA
 - [Newton 법](newton-method.md): 2 차 정보를 쓰는 국소 이차수렴
 
 ## 선형·반정부호 계획법
