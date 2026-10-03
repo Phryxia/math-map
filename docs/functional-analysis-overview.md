@@ -64,6 +64,7 @@ graph TD
 
 ## 표현론
 
+- [Pontryagin 쌍대성](pontryagin-duality.md) — 국소콤팩트 아벨군과 지표군의 대응, Fourier 변환의 군론적 틀
 - [Peter–Weyl 정리](peter-weyl.md) — 콤팩트 군의 정칙 표현이 기약 표현의 직합으로 분해되고 행렬계수가 $L^2$ 의 기저가 된다
 - [구면조화함수](spherical-harmonics.md) — 구면 위 $L^2$ 공간의 회전군 표현에 따른 분해
 

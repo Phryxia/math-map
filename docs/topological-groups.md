@@ -91,5 +91,6 @@ $\widehat{\mathbb R}\cong\mathbb R$, $\widehat{\mathbb Z}\cong S^1$, $\widehat{S
 ## 더 알아보기
 
 - [Haar 측도](haar-measure.md)
+- [Pontryagin 쌍대성](pontryagin-duality.md)
 
 #topology #group_theory #measure_theory #number_theory
