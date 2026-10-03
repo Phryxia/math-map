@@ -82,6 +82,6 @@ Deloro–Wiscons 는 위수 $5$ 의 단순 유한 Morley 위수 군이 나쁜 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Cherlin–Zilber 추측](cherlin-zilber-conjecture.md)
 
 #logic #foundations #algebra #group_theory

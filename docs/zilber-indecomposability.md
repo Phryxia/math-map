@@ -63,6 +63,6 @@ $\lbrack G,H\rbrack$ 는 위 교환자 집합들이 생성하는 부분군이므
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Cherlin–Zilber 추측](cherlin-zilber-conjecture.md)
 
 #logic #foundations #algebra #group_theory
