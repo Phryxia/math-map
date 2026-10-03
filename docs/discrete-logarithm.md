@@ -40,7 +40,7 @@ $G$ 가 $(\mathbb Z/p\mathbb Z)^\times$ 이면 $N = p-1$ 이고, 타원곡선군
 | 계산적 Diffie–Hellman(computational Diffie–Hellman, CDH) | $g, g^a, g^b$ | $g^{ab}$ |
 | 판정적 Diffie–Hellman(decisional Diffie–Hellman, DDH) | $g, g^a, g^b, z$ | $z = g^{ab}$ 인가 |
 
-DL 을 풀면 CDH 를, CDH 를 풀면 DDH 를 푼다. 역방향의 환원은 일반적으로 알려져 있지 않아 셋을 별개의 가정으로 다룬다[^1]. 쌍선형 사상을 가진 타원곡선에서는 DDH 가 쉬우면서 CDH 는 어려우리라 가정되고, 이 성질이 쌍선형 사상 기반 암호 구성의 재료가 되었다[^1].
+DL 을 풀면 CDH 를, CDH 를 풀면 DDH 를 푼다. 역방향의 환원은 일반적으로 알려져 있지 않아 셋을 별개의 가정으로 다룬다[^1]. 쌍선형 사상을 가진 타원곡선에서는 DDH 가 쉬우면서 CDH 는 어려우리라 가정되고, 쌍선형 사상 기반 암호가 이 비대칭을 쓴다[^1].
 
 ## Diffie–Hellman 키 교환
 
@@ -88,7 +88,7 @@ $$
 L_p[1/3,c]=\exp\Big((c+o(1))(\ln p)^{1/3}(\ln\ln p)^{2/3}\Big)
 $$
 
-정수 소인수분해와 같은 형태이고 두 문제의 최선 알고리즘이 같은 구조를 공유한다. RSA(Rivest–Shamir–Adleman)와 유한체 Diffie–Hellman 의 권장 키 길이가 비슷한 것이 이 때문이다.
+정수 소인수분해와 같은 형태이고 두 문제의 최선 알고리즘이 같은 구조를 공유하므로, RSA(Rivest–Shamir–Adleman)와 유한체 Diffie–Hellman 의 권장 키 길이가 비슷하다.
 
 작은 표수의 유한체에서는 2013 년 이후 준다항식 시간 알고리즘이 나와 $\mathbb F_{2^n}$ 기반 구성이 폐기되었다.
 

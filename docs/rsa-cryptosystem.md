@@ -101,9 +101,9 @@ $$
 
 RSA 의 안전성은 여러 가정의 사슬 위에 있다.
 
-- **인수분해 문제.** $n=pq$ 에서 $p$ , $q$ 를 구하는 문제. 알려진 최선은 일반 수체 체로, 복잡도가 대략 $\exp\bigl(c(\log n)^{1/3}(\log\log n)^{2/3}\bigr)$ 이다. 다항시간 알고리즘은 알려져 있지 않다[^2]. 인수분해의 판정 버전은 NP(nondeterministic polynomial time) 와 coNP 에 모두 속하므로, NP-완전이면 두 부류가 같아진다([NP-완전성](np-completeness.md) 참조).
+- **인수분해 문제.** $n=pq$ 에서 $p$ , $q$ 를 구하는 문제. 알려진 최선은 일반 수체 체로, 복잡도가 대략 $\exp\bigl(c(\log n)^{1/3}(\log\log n)^{2/3}\bigr)$ 이다. 다항시간 알고리즘은 알려져 있지 않다[^2]. 인수분해의 판정 버전은 NP(nondeterministic polynomial time)와 coNP 에 모두 속하므로, NP-완전이면 두 부류가 같아진다([NP-완전성](np-completeness.md) 참조).
 - **RSA 문제.** $(n,e,c)$ 에서 $c^{1/e}\bmod n$ 을 구하는 문제. 인수분해할 수 있으면 RSA 문제를 풀 수 있다. 역방향의 환원은 알려져 있지 않고, 작은 $e$ 에 대해서는 대수적 환원이 존재할 수 없다는 결과가 있다[^3].
-- **개인키 노출의 등가성.** $d$ 를 알면 $ed - 1$ 이 $\varphi(n)$ 의 배수라는 사실로부터 확률적 다항시간에 $n$ 을 인수분해할 수 있다. "개인지수 복원"과 "인수분해"는 같은 난이도다.
+- **개인키 노출의 등가성.** $d$ 를 알면 $ed - 1$ 이 $\varphi(n)$ 의 배수이므로 확률적 다항시간에 $n$ 을 인수분해할 수 있다. "개인지수 복원"과 "인수분해"는 같은 난이도다.
 
 앞의 두 항목은 증명되지 않은 가정이고 셋째는 정리다. 따라서 RSA 의 안전성은 인수분해와 RSA 문제의 난이도 위에 놓인다. Shor 알고리즘은 양자 컴퓨터에서 인수분해를 다항시간에 해결하므로, 충분한 규모의 양자 컴퓨터가 등장하면 RSA 는 무너진다.
 
@@ -139,7 +139,7 @@ $$
 - **수론 알고리즘.** 확장 유클리드 알고리즘, 반복 제곱법, Montgomery 곱셈이 구현의 기본 요소다.
 - **계산 이론.** RSA 의 존재 자체가 일방향함수의 존재를 가정한다. 일방향함수가 존재하면 $\mathrm P\ne\mathrm{NP}$ 이므로, RSA 의 안전성은 [P 대 NP 문제](p-np.md)보다 강한 가정이다. 반대로 $\mathrm P\ne\mathrm{NP}$ 라 해도 RSA 가 안전하다는 보장은 없다.
 - **후속 암호계.** [이산로그](discrete-logarithm.md) 기반(Diffie–Hellman, [타원곡선](elliptic-curves.md))과 [격자](lattices.md) 기반 방식은 같은 공개키 틀에 다른 난제를 끼운 것이다. 양자 내성 표준화는 격자·부호·해시 기반으로 이동 중이다.
-- **프로토콜 위치.** 실제 TLS(transport layer security)에서 RSA 는 대칭키 교환과 인증서 서명에 쓰이고, 대량 데이터는 대칭 암호가 처리한다. 공개키 연산이 느리기 때문이다.
+- **프로토콜 위치.** 공개키 연산이 느리므로 실제 TLS(transport layer security)에서 RSA 는 대칭키 교환과 인증서 서명에 쓰이고, 대량 데이터는 대칭 암호가 처리한다.
 
 [^1]: R. L. Rivest, A. Shamir, L. Adleman, A Method for Obtaining Digital Signatures and Public-Key Cryptosystems, Communications of the ACM 21(2), 1978, https://people.csail.mit.edu/rivest/Rsapaper.pdf
 [^2]: D. Boneh, Twenty Years of Attacks on the RSA Cryptosystem, Notices of the AMS 46(2), 1999, https://crypto.stanford.edu/~dabo/papers/RSA-survey.pdf
