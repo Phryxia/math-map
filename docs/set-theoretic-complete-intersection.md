@@ -97,4 +97,4 @@ $m=2$, $n=3$, $t=2$ 인 경우가 Segre 매장 $\mathbb P^1\times\mathbb P^2\sub
 
 아직 연결한 문서가 없다.
 
-#ring_theory #algebra #category_theory
+#ring_theory #algebra #algebraic_topology
