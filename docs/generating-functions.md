@@ -168,6 +168,7 @@ $$
 
 ## 더 알아보기
 
+- [Catalan 수](catalan-numbers.md)
 - [Lagrange 반전 공식](lagrange-inversion.md)
 - [조합적 종](combinatorial-species.md)
 - [Laplace 방법](laplace-method.md)
