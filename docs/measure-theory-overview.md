@@ -35,6 +35,8 @@ graph TD
   PM --> CM
   RN --> CE["조건부 기댓값"]
   CM --> GS["Girsanov 정리"]
+  CE --> ET["에르고딕 정리"]
+  ET --> MX["혼합성"]
 ```
 
 # 갈래
