@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-03T13:06:05.193Z",
-  "nextSeq": 1578,
+  "savedAt": "2026-10-03T17:05:16.772Z",
+  "nextSeq": 1591,
   "items": [
     {
       "id": "08e59419",
@@ -180,36 +180,12 @@
       "seq": 761
     },
     {
-      "id": "d024feed",
-      "title": "axiom-of-choice 의 후속 간선",
-      "priority": 11,
-      "note": "2026-09-21 회차에 판정만 했다. 결론은 지금 기존 문서 가운데 자식이 될 것이 없다는 것이다. axiom-of-choice(선택공리와 Zorn 보조정리, 130줄, 부모 ordinals/partial-orders/zfc-axioms)는 리프인데, 본문에서 이 문서를 링크하는 문서가 21 개나 된다(banach-spaces, boolean-algebras, compactness, continuum-hypothesis, first-order-logic, functions, godel-incompleteness, heyting-algebras, hilbert-spaces, intuitionism, localization-rings, lowenheim-skolem, open-mapping-theorem, ordinals, partial-orders, prime-ideals, topology, vector-spaces, zfc-axioms 등). 21 개를 모두 검토한 결과 전부 5절이 말하는 '그저 부모를 도구로 한 번 쓰는' 관계다. Zorn 보조정리로 기저나 극대 아이디얼의 존재를 얻는 자리이지, 선택공리의 특수 사례나 확장이나 부분이 아니다. 따라서 본문 링크로 충분하고 간선은 긋지 않는다. 개별 판정: ultraproducts 는 비주 초필터의 존재에 선택공리를 쓰지만 초곱 자체는 모형론의 구성이라 부모가 model-theory 다. martins-axiom 은 선택공리와 다른 독립 공리이고 부모가 baire-category 다. continuum-hypothesis 는 ZFC 안에서 논의되므로 부모가 cardinality 와 zfc-axioms 다. 자식 자리를 만들려면 새 문서가 필요하고 후보는 셋이다: (1) Banach-Tarski 분해. 선택공리의 가장 유명한 귀결이고 5절의 '응용' 에 정확히 맞는다. 선수지식은 axiom-of-choice 와 group-actions(자유군의 작용), measure 다. (2) Tychonoff 정리. 활용 절 '완전한 AC' 항목이 부르고 compactness 가 공동 부모가 된다. 선택공리와 동치라는 점이 문서의 골자가 된다. (3) 선택공리의 약한 형태(가산 선택, 의존 선택). 활용 절 '사용 여부 판별' 이 이미 세 등급을 나눠 놓아 그 확장이 된다. 우선순위는 Banach-Tarski > Tychonoff > 약한 선택 순이다",
-      "createdAt": "2026-09-21T04:59:06.623Z",
-      "seq": 808
-    },
-    {
-      "id": "889425f4",
-      "title": "Tutte 다항식과 마이너 닫힌 성질의 연결",
-      "priority": 11,
-      "note": "graph_theory. 같은 회차에 tutte-polynomial 과 graph-minors 를 둘 다 썼는데 두 문서가 서로를 모른다. 삭제-축약이 마이너 연산 둘과 같다는 점, 마이너 닫힌 성질의 세기 함수가 Tutte 다항식의 값매김으로 나오는 경우를 정리해 두 문서 사이에 간선을 그을지 판정한다. 방향은 graph-minors 가 부모일 수도 있고 두 문서 모두 planar-graphs 아래 형제로 남을 수도 있으니 check-cycle 로 먼저 본다",
-      "createdAt": "2026-09-21T13:01:22.721Z",
-      "seq": 845
-    },
-    {
       "id": "6fc1515a",
       "title": "분야 개관 누락 전수 점검 (다음 차수)",
       "priority": 11,
       "note": "2026-09-25 둘째 회차에 새 문서 셋(cw-complexes, banach-tarski, vitali-set)을 쓴 뒤 전수로 돌려 누락 0 건이다. 셋 다 주 분야 개관의 갈래에 넣었다: cw-complexes -> topology-overview '호모토피와 호몰로지', banach-tarski -> foundations-overview '집합론의 기초', vitali-set -> measure-theory-overview '측도와 가측성'. 검사법은 앞 note 그대로다(분야 태그를 개관 id 로 옮기는 bash 연상 배열을 만들고 개관이 아닌 문서마다 첫 태그를 읽어 그 개관이 링크하는지 grep). 개관이 따로 없는 주 분야 태그 셋은 수가 그대로다: complexity 5(approximation-algorithms, np-completeness, p-np, pcp-theorem, unique-games), philosophy_of_math 4, data_structures 2. 셋 다 4.5절의 10 개 기준에 못 미치고 다른 개관이 이미 거두고 있다. 앞 note 가 남긴 감시 항목(complexity 가 10 개를 넘으면 computation-overview 에서 뗄지 판정)은 아직 5 개이므로 그대로 둔다. 새 문서를 여러 개 쓴 회차 뒤에 다시 돌릴 것",
       "createdAt": "2026-09-25T12:47:58.122Z",
       "seq": 1174
-    },
-    {
-      "id": "98968685",
-      "title": "적응적 경사 방법의 후속 간선",
-      "priority": 11,
-      "note": "2026-09-26 회차에 앞 note 의 후보 (c) 모멘텀과 Nesterov 가속을 nesterov-acceleration 으로 닫았다(부모 gradient-descent 하나, 최적화 개관 반복 알고리즘 갈래에서 경사하강법 다음 확률적 경사하강법 앞, 127줄, 리프). 간선 방향은 gradient-descent -> nesterov-acceleration 으로 정했다. adaptive-gradient-methods 를 부모로 두지 않은 이유는 Adam 의 m_k 가 모멘텀을 쓰는 쪽이고 가속이 그것을 설명하는 쪽이라 방향이 반대이기 때문이다. 대신 nesterov-acceleration 활용 절 '신경망 학습' 이 adaptive-gradient-methods 로 본문 링크를 건다. 남은 후보: (a) AdamW 와 가중치 감쇠의 분리(adaptive-gradient-methods 활용 절 첫째가 신경망 학습을 다루지만 정칙화는 언급하지 않는다. 분량이 되는지 먼저 볼 것), (b) 온라인 볼록 최적화와 후회(adaptive-gradient-methods 63 줄 후회 한계 절이 온라인 경사하강법의 표준 분석을 이름만 쓰고 지나간다. 후회 자체는 multi-armed-bandits 23 줄이 정의하므로 8절 기준으로 그 문서와 겹치는지 먼저 볼 것. 부모 후보는 convexity 와 gradient-descent), (c) 분산 축소 알고리즘 SVRG·SAGA(stochastic-gradient-descent 63 줄 분산 축소 절이 이미 원리를 적어 두었다. 부모는 stochastic-gradient-descent), (d) 연합 학습의 국소 SGD. adaptive-gradient-methods 에서 정의 없이 쓴 용어로 남은 것: 지수이동평균, 온라인 경사하강법, 최대 노름 지름, 재모수화, 점수 함수 추정량, 단어 임베딩",
-      "createdAt": "2026-09-26T00:43:37.636Z",
-      "seq": 1211
     },
     {
       "id": "c36c5e73",
@@ -236,14 +212,6 @@
       "seq": 1344
     },
     {
-      "id": "4efc079b",
-      "title": "경사하강법의 backtracking line search 표기 정리",
-      "priority": 11,
-      "note": "gradient-descent 116 줄의 'backtracking line search 로 eta 를 적응적으로 정한다' 가 한국어 문장에 끼인 영문 용어다. 같은 줄의 subgradient(117 줄)도 같다. 저장소 전체에 두 용어의 한국어 표기 선례가 없어서 이번 회차에는 원어를 그대로 두었다(4절은 굳은 한국어 용어가 없으면 원어를 쓰라고 한다). 판정할 것은 둘이다. (1) newton-method 와 proximal-gradient-method 가 같은 두 용어를 어떻게 쓰는지 보고 저장소 표기를 하나로 정할 것. (2) 정하고 나면 세 문서를 한 번에 맞출 것. 분야: optimization.",
-      "createdAt": "2026-09-28T16:39:32.664Z",
-      "seq": 1387
-    },
-    {
       "id": "06f2e7b8",
       "title": "한국어 문장에 끼인 영문 용어 훑기 (22차)",
       "priority": 11,
@@ -266,14 +234,6 @@
       "note": "25차에 회귀 점검을 한 번에 돌렸고 전부 깨끗했다. (1) 수식 안 본문 링크: node 스크립트로 코드펜스와 $$ 블록을 토글하며 블록 안의 (id.md) 링크와 인라인 $...$ 범위 안의 링크를 찾았고 0건. 이번 회차에 siegel-weil 과 schur-multipliers 참조 표시 제목 4곳을 고쳤으므로 상시 항목 439476cb 의 조건대로 함께 돌렸다. (2) 백틱 안 수식: 0건. (3) js 아닌 코드블록과 언어 없는 코드블록: 0건. (4) 개관 개요의 저장소 자체 언급: 0건. (5) render-check 전체: 문제 없음. (6) 번역체 grep 14개 패턴: '정리하면' 만 9곳 나왔고 전부 오탐이다(continued-fractions:71 cross-validation:49 gradient-descent:67 jacquet-langlands:23 linear-regression:55 probabilistic-method:113 proximal-gradient-method:73 quadratic-reciprocity:106 weyl-character-formula:162). 아홉 곳 모두 식을 대수적으로 정리한다는 뜻('부등식을 더해 망원합으로 정리하면', '이를 정리하면 정규방정식')이고, 4절이 금지하는 메타 서술('요약하면' 뜻의 정리하면)이 아니다. 문체 grep 에서 '정리하면' 을 쓸 때는 앞에 식이나 부등식이 오는지 보고 판정해야 하며, 일괄 치환 대상이 아니다. (7) 문학적 비유 grep: elliptic-curves 의 Montgomery 사다리, lie-algebras 의 사다리 연산자, post-quantum-cryptography 의 함정문 셋이 나왔고 전부 용어의 일부라 4절 예외다. (8) 문장형 헤딩 grep: '증명의 요지' 15곳만 나왔고 이는 4절이 권하는 표현이다(기존 큐 항목 9bc3b9fa b4ccf30f 와 같은 오탐). (9) 태그 하나뿐인 문서, 개관 미수록, 매핑 없는 태그, 구형 문서(H2 정의/성질/활용), 개요 없는 문서: 전부 0건.",
       "createdAt": "2026-10-03T00:54:06.393Z",
       "seq": 1530
-    },
-    {
-      "id": "f5613cb4",
-      "title": "mermaid 노드 레이블의 밑줄 처리 방침",
-      "priority": 11,
-      "note": "25차에 tensor-products 의 mermaid 노드 레이블 'M (x)_R N' 을 'M (x)R N' 으로 고쳐 4절 수식 검수 awk 의 오탐을 없앴다(큐 8f802467). 그 항목의 note 는 'M tensor_R N' 처럼 밑줄 앞을 영숫자로 바꾸자고 제안했지만, 같은 블록의 간선 레이블이 '(m,n) |-> m (x) n' 으로 (x) 표기를 쓰므로 노드만 tensor 로 바꾸면 표기가 어긋난다. 밑줄을 아예 빼는 쪽이 최소 수정이고 awk 와 밑줄 grep 을 모두 통과한다. mermaid 블록 안에서는 마크다운 강조가 적용되지 않으므로 아래첨자 밑줄은 어차피 렌더에 뜻이 없고, ASCII 근사 표기에서 밑줄을 빼는 것이 일관된다. 다른 mermaid 블록에서 같은 오탐이 나오면 같은 방침으로 처리한다.",
-      "createdAt": "2026-10-03T00:57:32.248Z",
-      "seq": 1532
     },
     {
       "id": "720134c7",
@@ -340,14 +300,6 @@
       "seq": 1577
     },
     {
-      "id": "9902eee3",
-      "title": "역수학",
-      "priority": 10,
-      "note": "foundations 개관에서 옮김. intuitionism 이 언급만 한다",
-      "createdAt": "2026-09-16T13:05:29.032Z",
-      "seq": 337
-    },
-    {
       "id": "14a84d4d",
       "title": "타입 이론과 일가성 공리(HoTT)",
       "priority": 10,
@@ -372,38 +324,6 @@
       "seq": 348
     },
     {
-      "id": "c5c3cc46",
-      "title": "Riemann 가설과 영점 분포",
-      "priority": 10,
-      "note": "number-theory 개관에서 옮김. 소수 정리 문서가 언급만 한다",
-      "createdAt": "2026-09-16T13:05:30.905Z",
-      "seq": 349
-    },
-    {
-      "id": "bf78f613",
-      "title": "코호몰로지 환과 Poincaré 쌍대성",
-      "priority": 10,
-      "note": "topology 개관에서 옮김. 다양체 위상의 핵심 정리",
-      "createdAt": "2026-09-16T13:05:31.520Z",
-      "seq": 353
-    },
-    {
-      "id": "050dd773",
-      "title": "벡터다발과 특성류",
-      "priority": 10,
-      "note": "topology 개관에서 옮김. chern-simons 와 지표 정리가 전제한다",
-      "createdAt": "2026-09-16T13:05:31.678Z",
-      "seq": 354
-    },
-    {
-      "id": "ba6bd7ae",
-      "title": "아벨 범주와 유도 함자",
-      "priority": 10,
-      "note": "category-theory 개관에서 옮김. 완전열, 사영·단사 분해, Ext 와 Tor. abstract-algebra 개관에서 옮긴 '호몰로지 대수' 항목과 같은 주제",
-      "createdAt": "2026-09-16T13:40:50.829Z",
-      "seq": 368
-    },
-    {
       "id": "31ac8acd",
       "title": "모노이드 범주와 연접 정리",
       "priority": 10,
@@ -412,28 +332,12 @@
       "seq": 370
     },
     {
-      "id": "28ea55c5",
-      "title": "Topos 와 내부 논리",
-      "priority": 10,
-      "note": "category-theory 개관에서 옮김. intuitionism 의 의미론이 되는 범주. foundations 개관에서 옮긴 '범주론적 기초와 토포스' 와 같은 주제",
-      "createdAt": "2026-09-16T13:40:51.299Z",
-      "seq": 371
-    },
-    {
       "id": "2d5c4e17",
       "title": "무한 범주와 호모토피 이론",
       "priority": 10,
       "note": "category-theory 개관에서 옮김. 사상 사이의 사상까지 가진 고차 구조",
       "createdAt": "2026-09-16T13:40:51.450Z",
       "seq": 372
-    },
-    {
-      "id": "411dded8",
-      "title": "범주의 극한 계산 예",
-      "priority": 10,
-      "note": "category-theory 개관에서 옮김. 당김과 밀어냄을 집합, 군, 위상공간에서 실제로 계산",
-      "createdAt": "2026-09-16T13:40:51.604Z",
-      "seq": 373
     },
     {
       "id": "8e21659e",
@@ -460,44 +364,12 @@
       "seq": 376
     },
     {
-      "id": "d9feaed5",
-      "title": "근접 알고리즘과 분리가능 최적화",
-      "priority": 10,
-      "note": "optimization 개관에서 옮김. 근접 사상, ISTA 와 ADMM",
-      "createdAt": "2026-09-16T13:40:52.198Z",
-      "seq": 377
-    },
-    {
-      "id": "caaf34d1",
-      "title": "내점법",
-      "priority": 10,
-      "note": "optimization 개관에서 옮김. linear-programming 과 semidefinite-programming 을 푸는 다항시간 방법",
-      "createdAt": "2026-09-16T13:40:52.344Z",
-      "seq": 378
-    },
-    {
-      "id": "82a24aaf",
-      "title": "Nesterov 가속법",
-      "priority": 10,
-      "note": "optimization 개관에서 옮김. gradient-descent 가 정보 하한을 언급만 한다",
-      "createdAt": "2026-09-16T13:40:52.494Z",
-      "seq": 379
-    },
-    {
       "id": "bd4c6317",
       "title": "준볼록 최적화와 국소 최적화",
       "priority": 10,
       "note": "optimization 개관에서 옮김. 비볼록 문제에서 안장점을 벗어나는 조건",
       "createdAt": "2026-09-16T13:40:52.648Z",
       "seq": 380
-    },
-    {
-      "id": "0fa86b48",
-      "title": "확률적 최적화의 수렴 이론",
-      "priority": 10,
-      "note": "optimization 개관에서 옮김. SGD 의 학습률 조건과 분산 감소 기법",
-      "createdAt": "2026-09-16T13:40:52.793Z",
-      "seq": 381
     },
     {
       "id": "0ad2ff63",
@@ -508,36 +380,12 @@
       "seq": 382
     },
     {
-      "id": "cd4a07ac",
-      "title": "약한 위상과 Banach–Alaoglu 정리",
-      "priority": 10,
-      "note": "함수해석. banach-spaces 아래. banach-spaces 의 반사성과 약한 위상 절이 진술만 하고 증명과 약* 위상의 정의를 담지 못한다. banach-spaces 와 compactness 를 부모로 둔다",
-      "createdAt": "2026-09-16T16:39:34.598Z",
-      "seq": 389
-    },
-    {
-      "id": "48028999",
-      "title": "Krull 차원과 소 아이디얼의 사슬",
-      "priority": 10,
-      "note": "환론/가환대수. noetherian-rings 아래. Noether 환의 소 아이디얼 사슬 길이로 차원을 정의하고 k[x_1..x_n] 의 차원이 n 임을 든다. noetherian-rings 의 대수기하 활용 절이 자취의 기약 분해를 언급하는 자리의 후속",
-      "createdAt": "2026-09-17T00:54:50.233Z",
-      "seq": 431
-    },
-    {
       "id": "40e230db",
       "title": "localization-rings 의 Spec 대응 mermaid 재검토",
       "priority": 10,
       "note": "소 아이디얼의 확대/축소 대응을 그린 flowchart 인데 4절 다이어그램 규칙의 경계에 있다. 정점과 간선(포함관계 사슬)이 내용이라는 점에서 Hasse 도형에 가까워 남겼으나, '소멸 -> 없음' 같은 정점은 문장으로 충분하다. 다음에 이 문서를 보강할 때 판단한다",
       "createdAt": "2026-09-17T00:59:00.495Z",
       "seq": 434
-    },
-    {
-      "id": "8e0b5375",
-      "title": "정칙 국소환과 접공간",
-      "priority": 10,
-      "note": "환론/대수기하. nakayama-lemma 아래. m/m^2 의 차원과 Krull 차원이 같은 점을 정칙점이라 하는데, nakayama-lemma 의 '국소환의 접공간' 절이 이 개념을 이름만 쓰고 지나간다. Krull 차원 문서(큐의 48028999)가 먼저 필요하다",
-      "createdAt": "2026-09-17T01:01:21.615Z",
-      "seq": 435
     },
     {
       "id": "5e27ea0a",
@@ -1612,6 +1460,38 @@
       "seq": 1575
     },
     {
+      "id": "563dd7cc",
+      "title": "선택공리의 약한 형태(가산 선택, 종속 선택, 초필터 보조정리)",
+      "priority": 10,
+      "note": "set_theory/foundations. axiom-of-choice 활용 절 '사용 여부 판별' 이 세 등급(필요 없음/가산 선택/완전한 AC)을 이미 나눠 놓았고 성질 절 '독립성' 이 가산 선택, 종속 선택, 초필터 보조정리, 부울 소 아이디얼 정리의 강도 순서를 한 문장으로 적는다. 그 확장이 문서 하나가 된다. 부모는 axiom-of-choice 하나. 28차에 만든 tychonoff-theorem 이 초필터 보조정리를 Hausdorff 판본의 동치로 쓰므로 그 문서에서 본문 링크가 걸릴 자리도 있다. 남은 후보였던 Tychonoff 정리는 28차에 tychonoff-theorem 으로 닫았다(부모 compactness, axiom-of-choice).",
+      "createdAt": "2026-10-03T16:44:58.456Z",
+      "seq": 1578
+    },
+    {
+      "id": "6391b5dc",
+      "title": "적응적 경사 방법과 확률적 경사하강법의 남은 후속",
+      "priority": 10,
+      "note": "28차에 앞 note 의 후보 (c) 분산 축소를 variance-reduced-gradient-methods 로 닫았다(부모 stochastic-gradient-descent 하나, 123줄, 최적화 개관 반복 알고리즘 갈래에서 적응적 경사 방법 다음, 커밋 d76d3b2). 담은 것: SGD 의 잡음 구간이 남는 이유를 유한합의 항별 기울기로 짚는 직관, SVRG 와 SAGA 의 갱신식, SVRG 의 javascript 의사코드, 불편성과 분산 한계, 강볼록 수렴률과 (N+kappa)log(1/eps) 복잡도, 기억 용량 비교, 유한합 제약. 남은 후보 셋. (a) AdamW 와 가중치 감쇠의 분리. adaptive-gradient-methods 활용 절 첫째가 신경망 학습을 다루지만 정칙화는 언급하지 않는다. 분량이 되는지 먼저 볼 것. (b) 온라인 볼록 최적화와 후회. adaptive-gradient-methods 63 줄 후회 한계 절이 온라인 경사하강법의 표준 분석을 이름만 쓰고 지나간다. 후회 자체는 multi-armed-bandits 23 줄이 정의하므로 8절 기준으로 겹치는지 먼저 볼 것. 부모 후보는 convexity 와 gradient-descent. (d) 연합 학습의 국소 SGD. variance-reduced-gradient-methods 에서 정의 없이 쓴 용어로 남은 것: 경험위험 최소화, 에폭, 미니배치, 근접 연산자 없음.",
+      "createdAt": "2026-10-03T16:49:54.374Z",
+      "seq": 1580
+    },
+    {
+      "id": "fe2efac8",
+      "title": "약 * 위상 자체를 별도 문서로 분리할지 판단",
+      "priority": 10,
+      "note": "functional_analysis. 28차에 banach-alaoglu 를 만들면서 약 * 위상의 정의(평가 사상 전부를 연속으로 만드는 가장 거친 위상, 기저 근방, 노름 위상보다 거침)를 그 문서 정의 절에 넣었다(부모 banach-spaces, tychonoff-theorem, 110줄, 커밋 36b583d). 판단할 것은 약한 위상과 약 * 위상을 담는 문서를 따로 둘지다. 지금 약한 위상은 banach-spaces 98줄 한 문단(반사적이면 단위구가 약한 위상에서 콤팩트)과 banach-alaoglu 의 Kakutani 정리 절에만 있다. 8절 기준으로 banach-alaoglu 가 110줄이라 분할 기준에 닿지 않으므로 지금은 합쳐 두는 것이 맞고, 약위상 일반론(국소볼록 위상, 쌍대쌍, Mackey 위상)을 담는 문서가 생길 때 옮긴다. weak-convergence 는 확률론의 측도 약수렴 문서라 다른 주제다.",
+      "createdAt": "2026-10-03T16:55:45.024Z",
+      "seq": 1583
+    },
+    {
+      "id": "7e50b816",
+      "title": "내점법의 후속 간선",
+      "priority": 10,
+      "note": "28차에 interior-point-method 를 만들었다(부모 linear-programming, lagrange-duality, 110줄, 최적화 개관 '선형·반정부호 계획법' 갈래의 Lovasz 세타 함수 다음, 커밋 9de1ad4). 담은 것: 경계에 붙은 걸음이 짧아져 막히는 직관, 로그 장벽과 중심 경로의 정의, 장벽법, 쌍대 간격 m/t 의 증명 요지, 자기일치 장벽과 O(sqrt m log(1/eps)) 반복 한계, 원시-쌍대 형태, 단체법과의 차이. semidefinite-programming 을 부모로 두지 않았다. 5절 기준으로 내점법이 SDP 의 특수 사례나 부분이 아니고 반대로 SDP 를 푸는 도구이므로 방향이 어긋나며, check-cycle 은 통과하지만 부모가 셋이 된다. 대신 활용 절 둘째 항목이 semidefinite-programming 으로 본문 링크를 건다. 후속 후보 셋. (a) 자기일치 장벽 자체. Nesterov-Nemirovskii 이론을 담는 문서이고 부모는 interior-point-method 와 convexity. 분량이 되는지 먼저 볼 것. (b) 단체법. 지금 linear-programming 성질 절이 꼭짓점 최적성과 Klee-Minty 를 담고 있어 8절 기준으로 겹치는지 볼 것. (c) 정수계획법과 절단평면(큐 0ad2ff63). interior-point-method 에서 정의 없이 쓴 용어: 교차 단계, 이차 원뿔, 지수 원뿔, 지지벡터기계, Cholesky 분해 없음.",
+      "createdAt": "2026-10-03T17:04:59.410Z",
+      "seq": 1590
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -1666,6 +1546,22 @@
       "note": "2026-09-28 셋째 회차에 문서 559 개를 전수로 돌린 수식 검사 결과다. 고칠 것은 0 건이었다.\n\n(1) 이스케이프 검사(4 절의 awk): 0 건. (2) 줄 끝 백슬래시: 0 건. (3) 인라인 코드블록 안에 LaTeX 명령이 든 자리: 0 건. (4) 링크로 읽히는 대괄호: 회차에 만진 70 개에서 0 건(전수는 돌리지 않았다). (5) 금지 매크로(operatorname, bm, newcommand 계열): 0 건.\n\n(6) 태그로 읽히는 부등호 검사 `grep -n '<[a-zA-Z]' docs/*.md` 는 다섯 문서를 내놓는데 전부 mermaid 코드펜스 안의 <br/> 태그이고 오검출이다. class-field-theory 46 과 49 와 50, deuring-correspondence 42 와 43 과 44, khovanov-homology 33, local-class-field-theory 67, sea-algorithm. 4 절의 검사식은 문서 하나를 고쳤을 때 그 문서에만 돌리는 것이라 코드펜스를 구분하지 않는다. 전수로 돌릴 때는 이 다섯을 SKIP 하거나 코드펜스를 건너뛰는 판을 쓸 것. 다시 열지 말 것.\n\n또 하나 적어 둔다. 밑줄 검사 `grep -noE '[^a-zA-Z0-9\\\\]_'` 도 코드펜스와 URL 을 구분하지 못한다. 이 회차에 tensor-products 52(mermaid 라벨의 M (x)_R N)와 finite-fields 131(각주 URL 의 밑줄)이 걸렸고 둘 다 수식이 아니다. 전수로 돌릴 때는 이 둘도 SKIP 할 것.\n\n다음 차수는 새 문서가 여러 개 들어온 뒤 회귀 점검으로만 돌릴 것.",
       "createdAt": "2026-09-28T17:03:29.288Z",
       "seq": 1402
+    },
+    {
+      "id": "6148869a",
+      "title": "개관에서 옮긴 신규 주제 항목 전수 점검 완료",
+      "priority": 9,
+      "note": "28차에 '개관에서 옮김' 꼴 항목 20 개를 전수로 판정했다. 해소로 보아 제거한 열. 역수학 -> reverse-mathematics 106줄. Krull 차원과 소 아이디얼의 사슬 -> krull-dimension 119줄(사슬 10회). Riemann 가설과 영점 분포 -> riemann-hypothesis 111줄. 벡터다발과 특성류 -> vector-bundles 96줄과 characteristic-classes 99줄. 정칙 국소환과 접공간 -> regular-local-rings 91줄(m/m^2 와 접공간 6회). Topos 와 내부 논리 -> topos-theory 92줄(내부 논리 Heyting 직관주의 5회). Nesterov 가속법 -> nesterov-acceleration 122줄. 아벨 범주와 유도 함자 -> derived-functors(사영 분해, 왼쪽·오른쪽 유도 함자, Tor 와 Ext, 긴 완전열 절을 다 갖춰 요청 내용을 담았다). 근접 알고리즘과 분리가능 최적화 -> proximal-gradient-method(prox, ISTA, ADMM 10회). 확률적 최적화의 수렴 이론 -> stochastic-gradient-descent 의 보폭 조건과 수렴률 절, 그리고 28차에 만든 variance-reduced-gradient-methods. 아직 문서가 없어 남긴 아홉. 타입 이론과 일가성 공리(HoTT), 이차형식과 Hasse-Minkowski 정리, 체 방법(sieve), 모노이드 범주와 연접 정리, 무한 범주와 호모토피 이론, 측지선의 비교정리, 심플렉틱 다양체와 Hamilton 역학, Ricci 흐름, 내점법, 준볼록 최적화와 국소 최적화, 정수계획법과 절단평면. 판정을 미룬 둘. 코호몰로지 환과 Poincare 쌍대성은 cohomology 문서에 Poincare 와 컵 곱이 2회뿐이라 별도 문서 후보로 유효하다. 범주의 극한 계산 예는 limits-colimits 에 당김과 밀어냄이 7회 나오지만 요청의 핵심인 집합·군·위상공간에서의 계산 예가 실제로 있는지 본문을 열어 봐야 한다.",
+      "createdAt": "2026-10-03T16:58:32.971Z",
+      "seq": 1585
+    },
+    {
+      "id": "dcd38b58",
+      "title": "28차 회귀 점검 전수 결과",
+      "priority": 9,
+      "note": "28차 회차 시작과 마무리에 돌린 점검 전부가 깨끗했다. 돌린 것과 결과. validate, cycles, render-check, order-check, node --test(23 pass) 전부 통과. 비JS 코드블록과 언어 없는 코드블록 0 건. operatorname/bm/DeclareMathOperator/newcommand 0 건. 열린 문제 절 grep(남은 방향, 전망 등)과 범위 뭉뚱그림 grep 0 건. 빈자리/할 일/보강할 점 절 0 건. 수치 확인·시뮬레이션 절 0 건. console.log/print/반례 0개/1e-10 흔적 0 건. 저장소 자체 언급 grep 은 규격 문구 '아직 연결한 문서가 없다.' 만 잡았다. 오탐 둘을 확인했다. (1) 문학적 비유 grep 이 넷을 보고했으나 전부 4절이 예외로 둔 용어의 일부다. elliptic-curves 118줄 'Montgomery 사다리', lie-algebras 162줄 '사다리 연산자', post-quantum-cryptography 126줄 '함정문' 둘. 손대지 않는 것이 맞다. (2) 빈자리 절 grep 이 smoothed-aggregation 19, 37줄 '## 후보 벡터와 임시 보간', '## 후보 벡터의 보존' 을 잡았으나 '후보 벡터'(candidate vector)는 대수적 다중격자의 정식 용어이고 할 일 목록이 아니다. 두 오탐은 다음 회차에도 같은 판정으로 넘기면 된다.",
+      "createdAt": "2026-10-03T17:01:47.765Z",
+      "seq": 1589
     },
     {
       "id": "0aaf9d9d",
@@ -1842,6 +1738,46 @@
       "note": "2026-09-29 셋째 회차가 24차다. 두 건을 처리했다.\n\n(1) lp-rounding \"LP 완화와 반올림\" -> \"LP 반올림\"(커밋 f2bafcc). 완화와 반올림은 한 기법의 두 단계이고 그 기법의 이름이 파일명의 LP rounding 이다. 참조 여덟 곳을 맞췄다. 목록 넷(approximation-algorithms 96, linear-programming 126, semidefinite-programming 127, computation-overview 79), 본문 링크 둘(linear-programming 109, semidefinite-programming 5), mermaid 라벨 둘(computation-overview 24 의 LPR, optimization-overview 24 의 LR).\n\n(2) borel-pade \"Padé 근사와 Borel 재합산\" -> \"Borel–Padé 재합산\"(커밋 184eb5f). 정의 절에 \"## Borel–Padé 절차\" 가 있고 개요가 Padé 근사를 Borel 합의 실행 단계로 세우므로 문서의 주제는 한쪽이다. 참조 셋(analysis-overview 96, exact-wkb 145, stokes-phenomenon 140)을 맞췄고 mermaid 라벨은 없었다. 개요 첫 문장이 \"Padé 근사는 …\" 으로 시작해 새 제목과 어긋나므로 \"Borel–Padé 재합산은 Borel 변환의 해석적 연장을 Padé 근사로 대신하는 절차다\" 를 앞에 세웠다. analysis-overview 96 의 갈래 설명 \"발산급수에 값을 주는 두 방법\" 도 두 주제를 전제한 문구라 새 제목에 맞게 고쳤다.\n\n판정만 하고 손대지 않은 것(다시 열지 말 것). dag-topological \"DAG 와 위상정렬\". 파일명이 dag 와 topological 두 이름을 다 담아 제목과 어긋나지 않는다. 접속이 어색하다는 것만으로는 4절이 막는 꼴이 아니다.\n\n허용 꼴로 판정해 손대지 않은 것(다시 열지 말 것). bernoulli-numbers, borel-weil-bott, canonical-height, dwork-rationality, eisenstein-ideal, fargues-scholze, fermat-euler-theorem, fundamental-lemma, greenberg-conjecture, heegner-points, herbrand-ribet, jacquet-langlands, np-completeness, perfect-graphs, s-cobordism, schur-multipliers, serre-conjecture, shimura-correspondence, siegel-weil, speh-representations, tracy-widom, unique-games, vandiver-conjecture, vogan-packets, volume-conjecture, waldspurger-formula, weil-representation, whittaker-models, witten-asymptotics, zhu-algebra. 파일명이 두 이름을 다 담은 것. dag-topological, dyson-rank-crank, formalism-hilbert-program, ideals-quotient-rings, kleisli-eilenberg-moore, limits-colimits, luzin-sierpinski-sets, selmer-tate-shafarevich.\n\n이 갈래는 사실상 닫혔다. 24차에 41 개 제목을 전수로 훑었고 남은 후보가 없다. 다음 차수는 새 문서가 생긴 뒤에 열 것. 새 문서의 제목이 \"A와 B\" 꼴이면 그 회차에 바로 잡는 편이 낫다.\n\n검사 순서. (1) 제목을 바꾸기 전에 mermaid 라벨을 grep 한다. 큰따옴표로 감싼 라벨은 링크가 아니라 자동으로 안 바뀐다. (2) 옛 제목 전체를 docs 와 README 에서 grep 해 링크 없는 언급까지 잡는다. (3) 파이썬으로 한 번에 치환하고 잔여를 다시 grep 한다. (4) 개관 갈래의 한 줄 설명이 옛 제목의 두 주제를 전제하는지 본다. 이번 회차에 analysis-overview 가 그랬다. (5) 문서의 개요 첫 문장이 새 제목과 맞는지 본다.",
       "createdAt": "2026-09-29T09:01:40.657Z",
       "seq": 1448
+    },
+    {
+      "id": "b385a0de",
+      "title": "Tutte 다항식과 그래프 마이너의 간선 판정 완료",
+      "priority": 8,
+      "note": "28차 판정. 간선을 긋지 않는다. 5절 세 기준을 셋 다 통과하지 못한다. (1) tutte-polynomial 은 graph-minors 의 특수 사례도 확장도 응용도 부분도 아니다. 삭제와 축약이 마이너를 정하는 세 연산 가운데 둘이지만, Tutte 다항식은 그 두 연산이 만드는 점화식의 보편해이고 마이너 순서 자체를 다루지 않는다. (2) graph-minors 를 빼도 tutte-polynomial 의 개요가 그대로 읽힌다. 개요는 색칠 다항식, 신장트리 개수, matroid 랭크 함수로 서고 마이너를 부르지 않는다. (3) 반대 방향은 더 아니다. Robertson-Seymour 정리와 나무 분해는 Tutte 다항식을 쓰지 않는다. '마이너 닫힌 성질의 세기 함수가 Tutte 다항식의 값매김으로 나온다' 는 앞 note 의 추측은 일반 정리로 성립하지 않는다. Tutte 다항식은 마이너를 취해도 단조로 변하지 않는다. 처리한 것은 본문 링크 하나다. tutte-polynomial 성질 절 '삭제-축약 점화식' 끝에 G-e 와 G/e 가 마이너 연산 둘이라는 문장을 넣고 graph-minors 로 링크했다(커밋 08830e6). 두 문서는 planar-graphs, graph-coloring, matroids 아래 형제로 남는다.",
+      "createdAt": "2026-10-03T16:46:14.238Z",
+      "seq": 1579
+    },
+    {
+      "id": "f09e5f9d",
+      "title": "최적화 분야 용어 표기 통일 판정 완료",
+      "priority": 8,
+      "note": "28차 판정. 저장소 선례를 따라 영문 용어 두 개를 한국어로 맞췄다(커밋 참조). 선례는 둘이었다. newton-method 13, 113 줄이 line search 를 '선탐색' 으로, proximal-gradient-method 21, 59 줄이 subdifferential 을 '부분미분' 으로 이미 쓰고 있었다. 고친 것. gradient-descent 112 줄 'backtracking line search 로' -> '역추적 선탐색(backtracking line search)으로', 113 줄 'subgradient 를' -> '[부분미분](proximal-gradient-method.md)(subdifferential)의 원소를'. subgradient 는 부분미분 집합의 원소이므로 '부분기울기' 라는 새 표기를 만들지 않고 원소로 풀었다. 첫 등장에 원어를 병기하는 쪽으로 newton-method 13 줄 '선탐색(line search)' 과 proximal-gradient-method 23 줄 '**부분미분**(subdifferential)' 도 맞췄다. 저장소 표기는 line search = 선탐색, subdifferential = 부분미분, subgradient = 부분미분의 원소다.",
+      "createdAt": "2026-10-03T16:51:07.120Z",
+      "seq": 1581
+    },
+    {
+      "id": "cc42c436",
+      "title": "mermaid 노드 레이블 밑줄 전수 점검 완료",
+      "priority": 8,
+      "note": "28차에 전수로 걸렀다. 방침은 밑줄을 빼는 것이 아니라 밑줄 앞의 비ASCII 문자를 ASCII 로 바꾸는 쪽으로 정했다. 4절 검수 다섯째 grep -noE '[^a-zA-Z0-9\\\\]_' 는 밑줄 앞이 영숫자가 아닐 때만 보고하므로, 첨자 뜻을 지키면서 오탐을 없애는 최소 수정이 된다. yoneda-lemma 가 이미 alpha_A, h_A 로 ASCII 를 쓰고 있어 선례도 있다. mermaid 블록 안 밑줄은 19 곳이지만 grep 에 걸리는 것은 둘뿐이었다. 고친 것. limits-colimits 68 줄 'A ×_C B' -> 'A x_C B', natural-transformations 21 줄 'α_c' -> 'alpha_c', 24 줄 'α_{c''}' -> 'alpha_{c''}'. 걸리지 않아 그대로 둔 것: adjunctions(eta_c), cardinal-characteristics(aleph_1, 2^aleph_0), localization-rings(R_p, q1 R_p), manifolds(phi_1, phi_2), root-systems(A_3, D_4, E_6), yoneda-lemma(id_A, h_A, alpha_A). 25차의 tensor-products 처리는 밑줄 제거였는데(M (x)_R N -> M (x)R N), 그 블록은 밑줄 앞이 ')' 이고 간선 레이블이 (x) 표기를 써서 ASCII 치환으로는 풀리지 않는 경우였다. 두 방침이 어긋나지 않는다.",
+      "createdAt": "2026-10-03T16:52:25.321Z",
+      "seq": 1582
+    },
+    {
+      "id": "c1de0500",
+      "title": "limits-colimits 제목 통일과 극한 계산 예 판정 완료",
+      "priority": 8,
+      "note": "28차 판정 둘. (1) 큐 411dded8 '범주의 극한 계산 예' 를 해소로 보아 제거했다. limits-colimits 가 요청 내용을 담고 있다. 정의 절 60줄이 집합의 범주에서 당김을 식으로 계산하고, 성질 절 106줄이 군의 합은 자유곱, 위상공간의 밀어냄은 붙임 공간임을 들고, 활용 절 110줄이 군 준동형의 핵을 동등자로, 부분공간 위상과 두 부분집합의 교집합을 당김으로 재해석한다. (2) 같은 문서의 제목이 '제한과 쌍대제한' 인데 본문은 극한(limit)과 쌍대극한(colimit)을 17회 쓰고 '제한' 은 1회뿐이어서 어긋나 있었다. 제목을 '극한과 쌍대극한' 으로 고치고 참조 표시 제목을 통일했다(커밋 2e239ad). 고친 곳: category-theory-overview 본문과 지도 mermaid 레이블, natural-transformations 둘, representable-functors, topos-theory 본문 둘. adjunctions 는 이미 '극한과 쌍대극한' 이었다. topos-theory 는 본문의 '유한 제한', '쌍대제한' 다섯 곳도 함께 극한·쌍대극한으로 맞췄다. 파일명 limits-colimits 는 limit 에 맞으므로 바꾸지 않았다. restriction 뜻의 '제한' 과 겹치던 혼동이 사라진다.",
+      "createdAt": "2026-10-03T16:59:55.611Z",
+      "seq": 1586
+    },
+    {
+      "id": "b0e2943c",
+      "title": "코호몰로지 환과 Poincare 쌍대성 항목 판정 완료",
+      "priority": 8,
+      "note": "28차 판정. 해소로 보아 제거했다. cohomology 문서(84줄)가 요청 내용을 둘 다 담는다. 정의 절 '## 컵곱' 31-37줄이 특이 사슬에서 컵곱의 식을 쓰고 Leibniz 꼴 등식으로 코호몰로지에 내려감을 보인 뒤 H^*(X;R) 이 등급환이 된다는 것으로 코호몰로지환을 정의한다. 성질 절 '## Poincare 쌍대성' 57-59줄이 닫힌 유향 n 다양체에서 기본류와의 cap 곱이 H^k 와 H_{n-k} 의 동형을 준다는 진술과, 그 동형 아래 컵곱이 부분다양체의 교차에 대응하고 상보 차수 두 류의 곱을 기본류에서 값매김한 수가 교차수라는 해석을 담는다. 각주는 Hatcher 3장이다. 집계. '개관에서 옮김' 꼴 항목은 28차 시작 시점에 24 개였고(먼저 제거한 일곱과 그 뒤 추출한 열일곱) 그 가운데 열셋을 해소로 판정해 제거했다. 해소된 열셋: 역수학, Krull 차원과 소 아이디얼의 사슬, Riemann 가설과 영점 분포, 벡터다발과 특성류, 정칙 국소환과 접공간, Topos 와 내부 논리, Nesterov 가속법, 아벨 범주와 유도 함자, 근접 알고리즘과 분리가능 최적화, 확률적 최적화의 수렴 이론, 범주의 극한 계산 예, 코호몰로지 환과 Poincare 쌍대성. 아직 문서가 없어 남은 열하나: 타입 이론과 일가성 공리(HoTT), 이차형식과 Hasse-Minkowski 정리, 체 방법(sieve), 모노이드 범주와 연접 정리, 무한 범주와 호모토피 이론, 측지선의 비교정리, 심플렉틱 다양체와 Hamilton 역학, Ricci 흐름, 내점법, 준볼록 최적화와 국소 최적화, 정수계획법과 절단평면. 이 열하나가 다음 회차 신규 주제의 기본 후보다.",
+      "createdAt": "2026-10-03T17:01:08.054Z",
+      "seq": 1588
     },
     {
       "id": "fb947ff9",
