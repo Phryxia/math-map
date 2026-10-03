@@ -90,7 +90,7 @@ $\alpha=p/q$ 이면 $A=\bigcup_{k=0}^{q-1}\lbrack k/q, k/q+1/(2q))$ 가 불변�
 
 - **강한 큰 수의 법칙.** 독립 동일분포 열은 곱공간 $\mathbb R^{\mathbb N}$ 위의 이동변환 $T(x_1,x_2,\dots)=(x_2,x_3,\dots)$ 로 보면 측도보존이고, 꼬리 사건이 자명하다는 사실이 에르고딕성을 준다. Birkhoff 정리의 결론이 [확률변수](random-variables.md) 평균의 거의 확실한 수렴이다.
 - **연분수의 부분몫 분포.** Gauss 사상 $Tx=1/x \bmod 1$ 은 $d\mu=\frac{1}{\log 2}\frac{dx}{1+x}$ 를 보존하고 에르고딕이다. [연분수](continued-fractions.md) 전개의 부분몫에 지시함수를 넣어 Birkhoff 정리를 쓰면 $k$ 가 나타나는 빈도가 $\log_2(1+1/(k(k+2)))$ 다.
-- **등분포.** 무리수 회전에 구간 $I$ 의 지시함수를 넣으면 궤도가 $I$ 에 들어가는 빈도가 $I$ 의 길이와 같다. 이것이 수열 $\lbrace n\alpha\rbrace$ 의 등분포다.
+- **등분포.** 무리수 회전에 구간 $I$ 의 지시함수를 넣으면 궤도가 $I$ 에 들어가는 빈도가 $I$ 의 길이와 같다. 이것이 수열 $\lbrace n\alpha\rbrace$ 의 [등분포](equidistribution.md)다.
 - **혼합성의 위계.** 에르고딕성은 $\mu(A\cap T^{-n}B)$ 의 시간평균이 $\mu(A)\mu(B)$ 로 가는 조건이고, 각 $n$ 에서의 수렴을 요구하면 [혼합성](mixing.md)이 된다. 혼합이면 에르고딕이지만 역은 성립하지 않고, 무리수 회전이 반례다.
 
 # 연관 문서
@@ -103,5 +103,6 @@ $\alpha=p/q$ 이면 $A=\bigcup_{k=0}^{q-1}\lbrack k/q, k/q+1/(2q))$ 가 불변�
 ## 더 알아보기
 
 - [혼합성](mixing.md)
+- [등분포](equidistribution.md)
 
 #measure_theory #probability #analysis #theorem
