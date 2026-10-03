@@ -133,5 +133,6 @@ $$
 
 - [측도변환](change-of-measure.md)
 - [조건부 기댓값](conditional-expectation.md)
+- [전변동거리](total-variation-distance.md)
 
 #measure_theory #probability #statistics #theorem
