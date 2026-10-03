@@ -90,6 +90,7 @@ $m=2$, $n=3$, $t=2$ 인 경우가 Segre 매장 $\mathbb P^1\times\mathbb P^2\sub
 
 ## 선수지식
 
+- [완전교차환](complete-intersection-rings.md)
 - [Hartshorne–Lichtenbaum 소멸 정리](hartshorne-lichtenbaum.md)
 
 ## 더 알아보기

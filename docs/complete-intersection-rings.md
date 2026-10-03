@@ -75,6 +75,6 @@ $R$ 가 완전교차환이면 Andre–Quillen 호몰로지 $D_n(k\to R)$ 이 $n\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [집합론적 완전교차](set-theoretic-complete-intersection.md)
 
 #ring_theory #algebra #algebraic_topology
