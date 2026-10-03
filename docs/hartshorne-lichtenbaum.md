@@ -93,4 +93,4 @@ $X\subseteq\mathbb P^n$ 의 아핀뿔에 정리를 적용하면 $X$ 의 여차�
 
 - [집합론적 완전교차](set-theoretic-complete-intersection.md)
 
-#ring_theory #algebra #category_theory
+#ring_theory #algebra #algebraic_topology
