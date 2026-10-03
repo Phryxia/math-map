@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-03T17:05:16.772Z",
-  "nextSeq": 1591,
+  "savedAt": "2026-10-03T21:00:05.893Z",
+  "nextSeq": 1607,
   "items": [
     {
       "id": "08e59419",
@@ -92,28 +92,12 @@
       "seq": 1555
     },
     {
-      "id": "439476cb",
-      "title": "본문 링크가 수식 안에 들어가는 사고의 검사",
-      "priority": 12,
-      "note": "상시 항목. 링크를 문자열 위치로 삽입하거나 해제하는 작업을 하는 회차에서는 그 작업과 함께 돌리고, 그런 작업이 없는 회차에서는 건너뛴다.\n\n2026-09-29 다섯째 회차에 여섯 번 돌렸다. 링크를 삽입한 작업마다 그 직후에 전수로 돌렸고 매번 572 개 파일에서 수식 안 링크 0 건, 헤딩 안 링크 0 건, 중첩 링크 0 건이다.\n\n검사 방법을 바꿨다. 지난 차수의 '라벨에 대괄호가 있는 링크' 패턴은 오탐이 14 건 나온다(conditional-expectation 19/130/170, gaussian-integers 77, greenberg-conjecture 47, heyting-algebras 93, iwasawa-main-conjecture 5, martingales 49/85, mass-formula 121, overconvergent-modular-symbols 113, polynomial-rings 92, spectral-theorem 5, tensor-products 219). 전부 수식의 대괄호가 같은 줄 뒤에 있는 진짜 링크의 '](' 와 짝지어진 것이다. 라벨을 좁히면 중첩 자체를 매칭하지 못해 0 건이 나오므로, 좁히는 대신 각 줄에서 인라인 수식 스팬을 공백으로 지운 뒤 중첩을 세는 것이 정공법이다. 그렇게 하면 오탐 14 건이 전부 사라지고 진짜 중첩만 남는다.\n\n스크립트는 node 로 짰고 회차마다 새로 만들면 된다. 코드블록 구간을 건너뛰고, 링크는 \\[[^\\]\\[]*\\]\\( 로 잡고, 인라인 수식은 (?<!\\\\)\\$([^$\\n]+)(?<!\\\\)\\$ 로 잡는다. (1) 링크 시작 위치가 수식 스팬 안이면 수식 안 링크, (2) 줄이 # 으로 시작하면 헤딩 안 링크, (3) 수식 스팬을 지운 줄에서 라벨 안에 또 링크가 있으면 중첩이다. README 도 함께 본다.",
-      "createdAt": "2026-09-29T17:02:37.096Z",
-      "seq": 1469
-    },
-    {
-      "id": "1de614dd",
-      "title": "다중격자의 후속 간선 (20차)",
-      "priority": 12,
-      "note": "19차(26차 회차)에 18차가 남긴 새 문서 후보 셋을 전부 기각했다. (1) Schwarz 교대법: domain-decomposition 이 이미 정의 절에 가법 Schwarz 전처리 식과 곱 Schwarz 를, 성질 절 '겹침과 조건수' 에 2수준 조건수 상한 C(1+H/delta) 와 성긴 공간 항을, '부분공간 보정' 에 가법 대 곱의 틀을 담고 있어 새 문서가 중복이다. 직관 절도 막대 토막의 교대법으로 끝나 있다. (2) 다중격자 수렴 이론: local-fourier-analysis 문서가 이미 있어 평활 인자와 스펙트럼 분석이 그 자리다. (3) 대수적 다중격자의 강한 연결과 보간: algebraic-multigrid 정의 절이 '강한 연결'(theta=0.25 포함), 'C/F 분할', '보간과 성긴 행렬' 세 절로 이미 담고 있다. 따라서 이 축은 포화 상태이고 20차에 새 문서를 억지로 만들지 않는다. 다음에 볼 것은 축 밖의 연결이다. 후보는 krylov-subspace-methods 나 preconditioning 이 다른 분야(optimization 의 전처리, graph_theory 의 그래프 라플라시안)와 맞닿는 자리이고, 그쪽에 문서가 생기면 간선을 본다.",
-      "createdAt": "2026-10-03T04:47:07.727Z",
-      "seq": 1547
-    },
-    {
-      "id": "70106f18",
-      "title": "정의 없이 쓴 용어 훑기 (전체 훑기 30차)",
-      "priority": 12,
-      "note": "29차(27차 회차)에 기약 다항식 갈래를 판정했다. 후보 여섯 가운데 셋만 대상이었다. finite-fields(정의 절 25줄 'F_p[x] 의 n 차 기약다항식'), galois-theory(성질 절 63줄 'k[x] 에 속한 다항식'), newton-polygon(정의 절 35줄 'K[x] 의 원소')에 [다항식환](polynomial-rings.md) 본문 링크를 넣었다. 기약 다항식의 정의는 polynomial-rings 30줄에 굵게 있다. 링크 표시 제목은 기존 선례 30건을 따라 '다항식환' 으로 통일했다. 대상이 아니라고 판정한 셋. unique-factorization-domains 는 25줄에 기약원 정의를 자체적으로 갖는다. prime-ideals 는 13줄에서 괄호로 뜻을 설명하고 쓰는 기약이 도형의 기약성이라 다항식 기약이 아니며 polynomial-rings 링크도 이미 있다. diophantine-approximation 의 기약은 전부 기약분수다. newton-polygon 만 polynomial-rings 가 조상이 아니었고(부모는 hensel-lemma p-adic-numbers), 간선을 넣지 않은 이유는 5절 기준이다. 개요가 p 진수와 Hensel 로 시작해 polynomial-rings 를 빼도 그대로 읽히므로 간선이 아니라 배경이다. finite-fields 와 galois-theory 는 field-extensions 를 거쳐 조상 사슬로 이미 닿으므로 본문 링크만 넣었다. 30차 후보는 '기약' 의 남은 갈래 가운데 기약 다양체(algebraic-varieties)와 기약가군(zhu-algebra vertex-operator-algebras)이다. 기약표현 갈래는 28차에 group-representations -> peter-weyl 간선으로 끝났고, 기약성(markov-chains perron-frobenius)과 기약 접속(instanton-floer-homology)은 용법이 달라 링크 대상이 다르다. '이산' 갈래는 28차 판정대로 열지 않는다.",
-      "createdAt": "2026-10-03T08:40:21.472Z",
-      "seq": 1552
+      "id": "02f3fdb9",
+      "title": "'재료' 를 비유 금지 목록에 넣지 않은 판정",
+      "priority": 20,
+      "note": "28차 판정 결과 메모. pop 으로 꺼낼 작업이 아니다.\n\n28차에 discrete-logarithm 43 줄의 '이 성질이 쌍선형 사상 기반 암호 구성의 재료가 되었다' 를 '쌍선형 사상 기반 암호가 이 비대칭을 쓴다' 로 고쳤다. 고친 근거는 '재료' 가 아니라 '추상명사 주어 + 되었다' 라는 4절 번역체 표의 두 항목(피동, 추상명사 주어)이다.\n\n그 뒤 '재료' 를 전수로 보니 25 곳이고 전부 '구성 재료', '증명의 재료', '계산의 재료' 꼴의 굳은 용법이다(block-designs 7/63, brauer-algebras 99, eisenstein-series 161, fargues-scholze 21, geometric-langlands 95, khovanov-homology 112, knot-invariants 127, kolyvagin-logachev 82, latin-squares 63, martingales 52, niemeier-lattices 158, p-adic-l-function 9, pila-wilkie-theorem 49, power-series 127, rankin-selberg 49 둘, reshetikhin-turaev 64/170, rsa-cryptosystem 7, sets 53, sylow-theorems 57, teichmuller-space 116, tracy-widom 116, whittaker-models 37/136, witten-asymptotics 15).\n\n고치지 않는다. 이유 둘. (1) 4절의 비유 금지 목록은 '공짜 청구서, 사다리, 은탄환, 열쇠, 씨앗, 무대, 뼈대, 심장, 지름길, 함정, 마법, 무기' 를 이름으로 든다. '재료' 는 그 목록에 없고, 목록이 겨냥하는 것은 수학적 대상을 다른 사물로 바꿔 부르는 것인데 '재료' 는 '구성에 쓰는 것' 이라는 뜻을 직접 가리킨다. (2) 25 곳이 같은 뜻으로 일관되게 쓰이므로 저장소의 정착된 용어다. 바꾸려면 4절에 문구를 더하는 독자 판단이 먼저 필요하다.\n\n같은 종류의 앞선 판정: '증명의 요지'(큐 9bc3b9fa b4ccf30f), '정리하면'(d7db456a), '함정문'(9d7fa71a). 4절 grep 이나 금지 목록의 경계가 저장소의 굳은 용법과 어긋나는 사례들이다.",
+      "createdAt": "2026-10-03T20:59:41.979Z",
+      "seq": 1606
     },
     {
       "id": "410fd79d",
@@ -124,20 +108,36 @@
       "seq": 1554
     },
     {
-      "id": "197526d6",
-      "title": "분야 통독: 복잡도와 알고리즘 완료, 다음 분야 고르기",
+      "id": "9ecbd8ff",
+      "title": "분야 통독: 암호론 완료, 다음은 order_theory",
       "priority": 12,
-      "note": "27차 회차에 complexity 와 algorithms 를 둘 다 끝냈다. complexity 다섯(approximation-algorithms np-completeness p-np pcp-theorem unique-games)에서 고친 것은 unique-games 21줄 하나다. 'UGC(unique games conjecture)가 참이면' 을 4절 규칙대로 '유일게임 추측(unique games conjecture, UGC)이 참이면' 으로 고쳤다(커밋 36d42a2). 한국어 용어가 있으면 그것을 앞에 두고 원어와 약어를 괄호에 함께 넣는다는 규칙이다. algorithms 다섯(dynamic-connectivity dynamic-programming fft lp-rounding shortest-paths)은 고칠 것이 없었다. 두 분야 열 문서에 돌린 검사: 수식 검수 여섯, 문장형 헤딩 grep, 비유 grep, 열린 문제 절 grep, operatorname grep, 코드블록 언어와 짝 검사, 실행 결과 흔적(console.log print 반례 0 1e-10) 검사, 수치 확인 절 검사, 번역체와 금지 표현 grep 39 개 패턴, 두문자어 전수. 코드블록은 shortest-paths 의 javascript 하나와 mermaid 셋뿐이고 모두 4절에 맞다. 두문자어 판정에서 세지 않은 것들. 수식 안 \\mathrm 기호와 변수: ALG OPT IP PSPACE EXPTIME BPP GW CSP, fft 106줄의 O(NM). mermaid 문법어와 노드 라벨: LR TD, np-completeness 89-97 줄의 문제 이름들. 백틱 안의 연산 이름: dynamic-connectivity 의 INSERT DELETE CONNECTED LINK CUT. 학회와 학술지: STOC FOCS JACM SIGACT ACM MIT. 문제 이름으로 굳은 것: MAX-3SAT MAX-CUT. 나머지(NP FPTAS PTAS TSP APX LP PCP SAT CNF RSA QBF SDP SSEH LTC LDC SNARK DAG FFT)는 첫 등장에서 전부 풀려 있다. 다음 분야 후보는 order_theory 9개, machine_learning 7개, field_theory 7개, cryptography 6개다. cryptography 6개가 가장 작다. philosophy_of_math 4개와 foundations 2개와 data_structures 2개는 개관이 다른 분야 것을 쓰므로(4.5절 매핑) 함께 볼 분야를 정해야 한다.",
-      "createdAt": "2026-10-03T08:52:16.357Z",
-      "seq": 1558
+      "note": "28차 회차에 cryptography 를 끝냈다. 다섯(discrete-logarithm homomorphic-encryption pairing-based-cryptography post-quantum-cryptography rsa-cryptosystem)과 개관 하나다. 고친 것은 여섯 줄이다(커밋 d63d64a). discrete-logarithm:43 '이 성질이 ... 재료가 되었다' -> '쌍선형 사상 기반 암호가 이 비대칭을 쓴다'(피동과 비유 겸한 명사 주어). discrete-logarithm:91 '... 비슷한 것이 이 때문이다' -> '... 공유하므로 ... 비슷하다'(앞 문장을 되풀어 설명하는 '때문이다'). pairing-based-cryptography:17 '곡선 군에서는 만날 수 없던 a 와 b' -> '곱할 수 없던'(변수의 의인화). rsa-cryptosystem:104 'NP(...) 와 coNP' -> ')와'(영문 괄호 뒤 조사 띄어쓰기). rsa-cryptosystem:106 '배수라는 사실로부터' -> '배수이므로'(금지 표현 '라는 사실'). rsa-cryptosystem:142 '... 쓰이고 ... 처리한다. 공개키 연산이 느리기 때문이다' -> '공개키 연산이 느리므로 ...'(뒤따라 붙은 '때문이다' 문장을 앞으로 합쳤다). 돌린 검사: 수식 검수 여섯, 문장형 헤딩 grep, 비유 grep, 열린 문제 절 grep, operatorname 류 금지 매크로, 코드블록 언어와 짝 검사, 실행 흔적(console.log print 반례 1e-10 수치 확인 절), 구형 '## 정의' 구조, 번역체와 금지 표현 39 패턴, 조사 띄어쓰기, 두문자어 전수. 코드블록은 0 개이고 구형 구조도 0 개다. 비유 grep 의 post-quantum-cryptography:126 '함정문' 둘은 trapdoor 의 역어로 용어 예외다(큐 9d7fa71a 와 같은 판정). 조사 띄어쓰기 보고 70 건 가운데 69 건은 '$p$ 과' 꼴로 수식 뒤 공백 1개 규칙을 따른 것이고 실제 위반은 rsa:104 하나였다. 두문자어는 cryptography-overview 14-35 줄의 mermaid 노드 id(TD CRY MOD FF FE EC PBC MC SEA DW KED LAT ST LT SIG DC)와 학회·학술지(ANTS III ACM AMS EUROCRYPT LNCS SIAM RFC IBM NIST), 저자 이름 머리글자로 굳은 방식 이름(DGHV BGV BFV CKKS TFHE BLS MOV)을 빼면 전부 첫 등장에서 풀려 있다. 헤딩에 먼저 나온 SIS DGHV BGV BFV CKKS 는 4절대로 본문 첫 등장에서 푼다(각각 36, 32, 51 줄). 다음 분야는 order_theory 9개다. 그 다음 후보는 machine_learning 7개, field_theory 7개. philosophy_of_math 4개와 foundations 2개와 data_structures 2개는 개관이 다른 분야 것을 쓰므로(4.5절 매핑) 함께 볼 분야를 정해야 한다.",
+      "createdAt": "2026-10-03T20:40:05.631Z",
+      "seq": 1591
     },
     {
-      "id": "b67e5c9d",
-      "title": "환론·대수 축의 후속 간선 (15차)",
+      "id": "6da12104",
+      "title": "정의 없이 쓴 용어 훑기 (전체 훑기 31차)",
       "priority": 12,
-      "note": "14차(27차 회차). ring_theory 첫 태그 리프는 13차 판정대로 set-theoretic-complete-intersection 하나뿐이고 새로 생기지 않았다. 그 문서의 셋째 태그 category_theory 는 원격 커밋 e34d291 이 algebraic_topology 로 이미 고쳤다. note 지시대로 algebra 첫 태그 리프로 넓혀 여섯을 전부 판정했다. 처리한 것 하나. category-o -> beilinson-bernstein 간선을 넣었다(커밋 98f08a5). 5절 세 기준을 다 만족한다. BB 국소화는 범주 O 의 블록을 깃발다양체 위 D 가군으로 실현하는 정리이고 category-o 활용 절 131-133 '## 국소화와 범주화' 가 그것을 심화 방향으로 세운다. BB 직관 61줄이 '범주 O 의 대상들이 이 세포를 따라 지지된 D 가군에 대응한다' 로 범주 O 의 Verma 가군과 기약 가군을 전제하므로 부모가 드러난다. BB 부모는 borel-weil-bott 와 category-o 둘이 되어 5절 부모 수에 맞고, 두 문서는 이미 서로 본문 링크를 갖고 있었다. 간선을 넣지 않은 넷과 이유. brauer-algebras 는 활용 셋(불변론 계산, 분할 대수 P_k(n), Deligne 의 Rep 범주)이 전부 docs 에 문서가 없는 개념이거나 응용이다. schellekens-list 는 활용의 모듈러 텐서범주가 docs 에 있지만 modular-tensor-categories 의 부모가 zhu-algebra 로 schellekens-list 와 병렬 자식이고, 활용 절이 대응물로 한 번 쓰기만 하므로 5절의 '그저 부모를 도구로 한 번 쓰는' 경우다. 방향도 MTC 가 더 일반적이어서 반대다. algebraic-k-theory 는 활용의 수술 이론, Whitehead 군, 동기 코호몰로지가 모두 docs 에 없다. schubert-calculus 는 부모가 셋(borel-weil-bott grassmannian schur-polynomials)이고 활용의 열거기하, Horn 문제, 양자 코호몰로지가 모두 docs 에 없다. 15차에 볼 것은 두 가지다. cherlin-zilber-conjecture 가 새 리프가 되었으므로 그 후속(퇴화형 군이나 홀수형 분류가 자식 후보)과, 위 넷이 가리키는 새 문서 후보 가운데 분할 대수와 양자 코호몰로지가 다른 축에서도 쓰이므로 우선순위가 높다.",
-      "createdAt": "2026-10-03T08:53:06.533Z",
-      "seq": 1559
+      "note": "30차(28차 회차)에 '기약' 의 남은 두 갈래를 판정했다. (1) 기약 다양체: algebraic-varieties 27줄이 '대수적 집합 X 가 기약이라는 것은 X=X1∪X2 로 쓸 때 둘 가운데 하나가 X 자신이라는 뜻' 으로 굵게 자체 정의하므로 대상이 아니다. 같은 문서 41·43·47·57줄의 기약도 이 정의를 쓴다. (2) 기약가군: zhu-algebra 와 vertex-operator-algebras 가 기약가군을 정의 없이 쓰는데, 두 문서 모두 modules.md 본문 링크를 이미 하나 갖고 있어(zhu-algebra 5줄, vertex-operator-algebras 도 1건) 4절의 '최초 1회' 링크는 채워져 있었다. 실제 공백은 링크 대상인 modules.md 자신이었다. 그 문서는 166줄('R/I 가 단순 가군'), 174줄(Maschke)에서 단순가군을 쓰면서 정의하지 않았다. 그래서 '## 부분가군, 몫, 준동형' 절의 부분가군 정의 바로 뒤에 한 문단을 넣었다(커밋 cae695c). 'M != 0 이고 부분가군이 0 과 M 뿐이면 M 을 단순가군이라 한다. 표현론에서는 같은 조건을 기약이라 부르고 단순가군을 기약가군이라 쓴다.' 부분가군이 바로 위에 정의되어 있어 선행 용어가 갖춰진 자리다. 동의어 두 이름을 한 문장에 둔 이유는 zhu-algebra 쪽이 기약가군으로, 환론 쪽이 단순가군으로 쓰기 때문이다. 이로써 '기약' 갈래를 전부 닫았다. 앞선 차수가 닫은 것: 기약 다항식(29차, finite-fields galois-theory newton-polygon 에 polynomial-rings 링크), 기약표현(28차, group-representations -> peter-weyl 간선). 용법이 달라 대상이 아닌 것: 기약성(markov-chains perron-frobenius), 기약 접속(instanton-floer-homology), 기약분수(diophantine-approximation). '이산' 갈래는 28차 판정대로 열지 않는다. 31차 후보는 아직 고르지 않았다. 'VOA 의 유리성', '최고무게 가군', '홀로모픽' 처럼 vertex-operator-algebras 축이 정의 없이 쓰는 용어가 눈에 띄었으므로 그 갈래를 먼저 보는 것이 좋다.",
+      "createdAt": "2026-10-03T20:41:52.889Z",
+      "seq": 1592
+    },
+    {
+      "id": "0b983ce9",
+      "title": "환론·대수 축의 후속 간선 (16차)",
+      "priority": 12,
+      "note": "15차(28차 회차). 14차가 가리킨 새 문서 후보 둘 가운데 분할 대수를 썼다(partition-algebras, 115줄, 커밋 f8885d7). 부모는 brauer-algebras 하나이고 그 문서의 리프를 닫았다. check-cycle brauer-algebras partition-algebras --allow-new 는 OK 였다. 간선 근거는 5절 세 기준이다. brauer-algebras 성질 절 75-83 '## 도형 대수의 가족' 표의 마지막 줄이 분할 대수와 S_n 과 Bell 수를 세우고, 활용 절 93-95 '## 분할 대수와 대칭군' 이 중심화대수 식을 적고 지나간다. 분할 도형은 Brauer 도형의 블록 크기 제약을 푼 것이므로 확장 관계이고, C[S_k] 부분집합 B_k(n) 부분집합 P_k(n) 사슬을 성질 절에 적었다. 담은 것: 집합 분할 도형과 n^c 곱셈 규칙, Phi 의 성분 정의, Jones 의 중심화대수 정리(n>=2k 에서 동형, n<2k 에서 핵이 생기는 이유까지)와 S_n 궤도로 하는 증명 요지, 쌍대 분해와 차원 합 B(2k), 도형 대수 사슬, 반쪽 단계 P_{k+1/2}(n) 과 중복 없는 분기, 동변 선형사상 차원 B(2k)(k=1 에서 2, k=2 에서 15)와 Weisfeiler-Leman 동등성, Potts 모형 기원. 본문 링크는 bell-numbers partitions graphs 셋이고 전부 조상이 아니라 간선은 긋지 않았다. 태그는 #algebra #combinatorics #group_theory #machine_learning 이고 abstract-algebra-overview 95줄의 Schur 갈래 끝에 한 줄로 넣었다(그 개관의 mermaid 지도에는 Brauer 가 없어 지도는 그대로다). README 의 문서·간선 수를 588 과 1059 로 맞췄다. 16차에 볼 것 둘. (1) 14차가 남긴 다른 후보 양자 코호몰로지는 아직 열지 않았다. docs 에 모듈라이 공간, 안정 사상, Gromov-Witten 불변량 문서가 하나도 없어 schubert-calculus 와 cohomology 만 부모로 두면 선수지식이 비는 구조가 된다. 그 밑작업으로 모듈라이 공간 문서가 먼저 필요하다. (2) partition-algebras 가 새 리프가 되었다. 자식 후보는 Temperley-Lieb 대수(분할 대수의 평면 부분대수이고 docs 에 없다)와 세포대수(brauer-algebras 각주가 Graham-Lehrer 를 인용하는데 docs 에 없다)다. 둘 다 새 문서이므로 간선만으로는 닫히지 않는다.",
+      "createdAt": "2026-10-03T20:47:02.675Z",
+      "seq": 1593
+    },
+    {
+      "id": "ccba89c7",
+      "title": "본문 링크가 수식 안에 들어가는 사고의 검사",
+      "priority": 12,
+      "note": "상시 항목. 링크를 문자열 위치로 삽입하거나 해제하는 작업을 하는 회차에서는 그 작업과 함께 돌리고, 그런 작업이 없는 회차에서는 건너뛴다.\n\n2026-10-03 28차 회차에 한 번 돌렸다. 그 회차는 brauer-algebras 의 '아직 연결한 문서가 없다.' 를 자식 링크로 바꾸고 abstract-algebra-overview 95줄의 갈래 사슬 끝에 링크를 붙이는 문자열 치환을 했고, partition-algebras 를 새로 쓰면서 본문 링크 넷(bell-numbers brauer-algebras partitions graphs)을 넣었다. 치환을 모두 마친 뒤 전수로 돌려 588 개 파일에서 수식 안 링크 0 건, 헤딩 안 링크 0 건, 중첩 링크 0 건이다.\n\n검사 방법. 지난 차수의 '라벨에 대괄호가 있는 링크' 패턴은 오탐이 14 건 나온다(conditional-expectation 19/130/170, gaussian-integers 77, greenberg-conjecture 47, heyting-algebras 93, iwasawa-main-conjecture 5, martingales 49/85, mass-formula 121, overconvergent-modular-symbols 113, polynomial-rings 92, spectral-theorem 5, tensor-products 219). 전부 수식의 대괄호가 같은 줄 뒤에 있는 진짜 링크의 '](' 와 짝지어진 것이다. 라벨을 좁히면 중첩 자체를 매칭하지 못해 0 건이 나오므로, 좁히는 대신 각 줄에서 인라인 수식 스팬을 공백으로 지운 뒤 중첩을 세는 것이 정공법이다.\n\n28차에 쓴 스크립트는 코드펜스와 여러 줄 $$ 블록을 토글로 건너뛰고, 한 줄짜리 $$식$$ 과 인라인 $...$ 스팬을 따로 뽑아 그 안의 (id.md) 링크를 센다. 헤딩 검사에서 '# 연관 문서' 와 그 하위 H2 는 링크 목록 자리이므로 제외해야 한다(그러지 않으면 전 문서가 걸린다). 스크립트는 회차마다 새로 만들면 된다. README 도 함께 본다.",
+      "createdAt": "2026-10-03T20:47:58.475Z",
+      "seq": 1597
     },
     {
       "id": "9fef12e0",
@@ -194,14 +194,6 @@
       "note": "2026-09-26 회차에 앞선 큐 항목(36483f48)의 후보 (a) Siegel 모듈러 형식을 siegel-modular-forms 로 닫았다. 같은 note 에 남은 것: (b) Shimura 다양체. siegel-modular-variety 활용 절 셋째가 이름만 쓰고 지나간다. 부모 후보는 langlands-program 이고 siegel-modular-variety 가 그 특수 사례이므로 5절대로 Shimura 다양체가 부모여야 하는데 그러면 기존 간선과 순환하지 않는지 check-cycle 로 먼저 볼 것. (c) 곡선의 모듈라이 공간 M_g. Torelli 사상 절이 정의 없이 쓴다. 부모는 riemann-surfaces 이고 siegel-modular-variety 와는 형제다. (d) Schottky 문제. Torelli 사상 절 마지막 문단이 정의와 g=4 의 답을 담았고 각주 둘이 이미 있어 8절 기준으로 떼어낼 분량이 되는지 먼저 볼 것. siegel-modular-variety 에서 정의 없이 쓴 용어: 주기행렬, 교대형식, 등분점, 심플렉틱 기저, 원환면 매장 콤팩트화, 세타 상수, 등급환의 Proj, 곡선의 모듈라이 공간",
       "createdAt": "2026-09-26T08:41:07.005Z",
       "seq": 1238
-    },
-    {
-      "id": "9f5b6fa0",
-      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (18차)",
-      "priority": 11,
-      "note": "꺼내기 전에 이 첫 문단을 읽을 것. 이 항목은 수식이 많은 새 문서가 들어온 회차의 끝에만 돌린다. 그런 회차가 아니면 돌리지 않고 되돌린다. 2026-09-28 회차에도 꺼냈으나 되돌렸다. 그 회차는 본문 중복 링크 해제와 제목 좁히기만 해서 새 수식이 하나도 들어오지 않았다. 되돌린 것이 이로써 네 회차 연속이므로 우선순위를 12 에서 11 로 내린다. 같은 12 에 조건 없이 돌릴 수 있는 항목들이 있어서 이 항목이 매 회차 먼저 나와 pop 과 되돌리기를 되풀이했다. 조건이 맞는 회차에서는 큐 목록에서 이 항목을 직접 찾아 꺼낼 것.\n\n아래는 17차 note 그대로다.\n\n17차는 수식이 많은 새 문서 둘(nesterov-acceleration, proximal-gradient-method)이 들어온 뒤에 돌렸다. 검사기 bare-math.mjs 를 스크래치패드에 다시 짰고 16차의 두 보정(태그 줄 건너뛰기, 검사 기호에서 화살표와 합성 기호 제외)과 15차의 두 보정(여러 줄 $$ 블록 상태 추적, 각주 참조를 링크보다 먼저 제거)을 전부 넣었다. 그런데 532 문서에서 74 건이 나왔고 전부 오검출이라 보정 하나가 더 필요함을 확인했다: URL 안의 언더스코어와 퍼센트 이스케이프가 걸린다. 각주의 참고문헌 URL 이 원인이고 \"Zorn%27s_lemma\" 나 \"Semisimple_module\" 처럼 밑줄을 품은 주소가 74 개 문서에 있다. s.replace(/https?:\\/\\/\\S+/g, \"\") 를 인라인 코드 제거 다음에 넣을 것. 이 보정을 넣으니 532 문서에 0 건이다. 검사기의 제거 순서 확정: 각주 정의 머리, 각주 참조, 인라인 수식, 인라인 코드, URL, 링크(표시 제목만 남김). 건너뛰는 줄은 코드펜스 안, $$ 블록 안, 태그 줄, 표 구분선이다. 검사 기호 집합은 <=, >=, !=, 원소·포함·합집합·교집합·텐서·직합 유니코드, 밑줄과 캐럿 뒤 영숫자나 중괄호, 중괄호, 백슬래시 명령이다. 12차 note 의 p-np 판정과 15차 note 의 rsa-cryptosystem 판정, 16차가 고친 galois-connections 160 은 그대로 유효하다.",
-      "createdAt": "2026-09-28T00:47:20.909Z",
-      "seq": 1343
     },
     {
       "id": "d4878604",
@@ -298,6 +290,54 @@
       "note": "중복 항목 통합(27차): 같은 훑기를 회차마다 따로 밀어 둔 3개 항목(4381417a 168d1d3c 6e1608d5)을 하나로 합쳤다. 각 회차의 메모를 차례로 둔다. [1/'A와 B' 제목 후보 훑기 (차기)] 2026-09-20 회차. CLAUDE.md 4절의 grep -l '^# .*[와과] ' 은 '# 연관 문서'의 '관 ' 에도 걸려 전 문서를 보고한다. 제목 줄만 보는 for f in docs/*.md; do head -1 $f | grep -qE '^# .*[가-힣A-Za-z0-9)]\\s*(와|과) ' && echo $f; done 로 바꾸면 152 건이 나온다. 대부분은 4절이 예외로 둔 '정리 이름과 그 정리가 답하는 개념' 꼴이라 그대로 두어야 한다. 다음 회차에는 152 건에서 파일명이 제목의 한쪽만 가리키는 것만 골라낼 것. 후보 선별법: 제목의 '와/과' 앞뒤 두 개념 가운데 파일명 id 가 뒤쪽만 가리키는 경우(예: 파일명은 A 인데 제목이 'B와 C') [2/'A와 B' 제목 후보 훑기 (5차)] 2026-09-21 회차 4차(같은 회차 3차에 이어). 3차가 처리한 6 개 외에 axiom-of-choice '선택공리와 Zorn 보조정리'→'선택공리' 를 추가로 좁혔다. 이 문서는 지난 회차의 후보 목록에 없었는데, 본문이 선택공리·정렬 정리·Zorn 보조정리 세 동치 진술을 나란히 다루면서 제목에는 그중 둘만 들어가 있어 제목이 내용도 파일명도 가리키지 못했다. 링크 표시 제목은 이미 '선택공리' 가 16 곳으로 다수였고 '선택공리와 Zorn 보조정리' 7 곳을 그쪽으로 맞췄다. Zorn 보조정리를 가리키는 본문 링크 1 곳은 문맥에 맞아 그대로 뒀다. 같은 회차에 검사법을 다시 돌린 결과 제목에 '와/과' 가 든 문서가 148 개이고, 그중 정리·공식·추측·대응·법칙·원리·가설·문제·보조정리·알고리즘·모형·부등식이 든 제목을 빼면 후보가 여전히 100 개 안팎이다. 표본을 훑어 보니 남은 것은 대부분 '대상과 그 대상의 구조' 꼴이라 4절 예외다: algebraic-number-fields '대수적 수체와 정수환'(정수환은 수체 안의 부분환), bounded-operators '유계 작용소와 스펙트럼'(스펙트럼은 작용소의 성질), elliptic-curves '타원곡선과 군 구성'(군 구성은 곡선 위의 구조), dedekind-domains 'Dedekind 정역과 아이디얼의 유일분해'(유일분해가 정역의 정의적 성질), exponential-families '지수족과 충분통계량'. dag-topological 'DAG와 위상정렬' 은 파일명이 두 낱말을 모두 담아 오검출이다. 5차에 볼 것: 기계적 grep 으로는 더 좁혀지지 않으므로, 이번에 axiom-of-choice 를 찾은 방식을 쓸 것. 곧 제목의 두 낱말이 본문 절 구성과 맞는지 보는 것이다. 본문에 세 개 이상의 대등한 절이 있는데 제목이 그중 둘만 이름 대는 경우가 진짜 신호다. 검사법 초안: 제목의 '와/과' 앞뒤 낱말을 뽑아 그 문서의 '^## ' 헤딩 목록과 대조하고, 헤딩에는 있는데 제목에 없는 대등 개념이 있는지 본다 [3/'A와 B' 제목 후보 훑기 (14차)] 2026-09-25 둘째 회차 13차. 11차 note 의 후보 다섯을 전부 좁혔고(optimal-transport -> '최적 수송', semidefinite-programming -> '반정부호 계획법', schur-polynomials -> 'Schur 다항식', schubert-calculus -> 'Schubert 계산', stationary-phase -> '정상위상법'), 13차에서 새로 뽑은 후보 다섯 가운데 셋을 더 좁혔다. (a) littlewood-richardson 'Littlewood-Richardson 규칙과 hive 모형' -> 'Littlewood-Richardson 규칙'. 절 구조상 hive 와 honeycomb 과 Horn 문제가 본문을 채우지만 hive 는 그 규칙을 계산하는 모형이므로 하위 주제다. 참조 1 곳(schur-polynomials)을 맞췄고, 같은 작업에서 195 줄에 grassmannian 본문 링크를 걸었다. (b) mathieu-groups 'Mathieu 군과 Golay 부호' -> 'Mathieu 군'. Golay 부호 문서가 따로 없고 이 문서에서 Mathieu 군이 Golay 부호의 자기동형군으로 정의되므로 Golay 부호는 정의를 위한 구성이다. 참조 5 곳을 맞췄고, 곁가지로 umbral-moonshine 44 의 '[Mathieu 군 문서](...)에서' 라는 메타 표기를 사실 문장으로 바꾸면서 같은 문서 본문의 두 번째 링크를 풀었다(4절 최초 1 회). Golay 부호를 독립 문서로 뗄지는 별도 큐 항목으로 남겼다. (c) mass-formula '질량 공식과 격자의 류' -> '질량 공식'. 정의 절이 '격자, 류, 스피너 류' 다음에 '질량' 과 'Smith-Minkowski-Siegel 질량 공식' 으로 가므로 격자의 류는 질량을 정의하기 위한 배경이다. 참조 3 곳(bernoulli-numbers, niemeier-lattices, siegel-weil)을 맞췄다. 14차에 볼 것: 후보 둘이 남았다. euler-maclaurin 'Euler-Maclaurin 공식과 점근급수' 는 13차에 보고 판정을 미뤘다. 점근급수 전용 문서가 저장소에 없고, 이 문서의 성질 절 절반('## 점근전개', '## 나머지항의 크기', '## 최적 절단과 초점근 정확도', '## 전개의 비유일성')이 점근급수 일반론이라 좁히면 그 절들이 제목 밖으로 나간다. 8절 분할(asymptotic-series 를 따로 세우고 euler-maclaurin 을 그 자식으로)을 함께 재야 하는 자리이므로 한 회차를 온전히 쓸 것. local-class-field-theory '국소 유체론과 Lubin-Tate 형식군' 은 아직 보지 않았다. 판정 기준은 그대로이고, 절 구조에서 본체와 배경을 가르는 방법이 13차에 잘 통했다",
       "createdAt": "2026-10-03T13:05:38.177Z",
       "seq": 1577
+    },
+    {
+      "id": "af828e40",
+      "title": "다중격자의 후속 간선 (21차)",
+      "priority": 11,
+      "note": "20차(28차 회차)에 19차 note 가 가리킨 '축 밖의 연결' 을 판정했다. 결론은 간선을 하나도 넣지 않는 것이다.\n\npreconditioning 활용 절 네 항목 가운데 셋이 축 밖 문서를 본문 링크로 쓴다. gradient-descent(좌표 변환으로 조건수를 낮추는 것과 같은 조작), graph-laplacian 과 spectral-sparsification(희소화한 Laplacian 을 M 으로 쓰고 이차형식의 1 pm epsilon 보장이 스펙트럼 등가 상수가 된다), eigenvalues(shift-invert 반복). 셋 다 5절의 '그저 부모를 도구로 한 번 쓰는' 경우여서 본문 링크로 충분하다. 방향도 맞지 않는다. 전처리는 그래프 Laplacian 의 특수 사례나 확장이 아니고, 그래프 Laplacian 을 빼도 preconditioning 의 개요가 그대로 읽히므로 배경이다.\n\nkrylov-subspace-methods 활용 절도 같다. eigenvalues(Lanczos), spectral-theorem(직교 고유기저), gradient-descent(kappa 대 sqrt kappa 비교)를 각각 한 번 쓰고 지나간다. 특히 gradient-descent 와는 비교 관계이지 선수관계가 아니다.\n\n따라서 이 축은 19차 판정대로 포화 상태이고 축 밖으로도 간선이 나가지 않는다. 축의 현재 구조: krylov-subspace-methods -> preconditioning -> {incomplete-lu, multigrid}, multigrid -> {algebraic-multigrid, domain-decomposition, full-approximation-scheme, full-multigrid, local-fourier-analysis}.\n\n21차에 볼 것은 incomplete-lu 가 리프라는 점이다. 자식 후보는 희소 근사 역행렬(sparse approximate inverse)과 재배열(fill-in 을 줄이는 중첩 이분과 역방향 최소차수)이고 둘 다 docs 에 없다. 재배열 쪽은 graph_theory 의 분리자와 맞닿으므로 그 축과 함께 보는 것이 낫다.",
+      "createdAt": "2026-10-03T20:48:52.262Z",
+      "seq": 1598
+    },
+    {
+      "id": "aa37d196",
+      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (19차)",
+      "priority": 11,
+      "note": "꺼내기 전에 이 첫 문단을 읽을 것. 이 항목은 수식이 많은 새 문서가 들어온 회차의 끝에만 돌린다. 그런 회차가 아니면 돌리지 않고 되돌린다.\n\n18차는 2026-10-03 28차 회차에 돌렸다. 조건이 맞았다(partition-algebras 를 새로 썼고 수식이 많다). 검사기 bare-math.mjs 를 스크래치패드에 다시 짰고 588 문서에서 보고 2 건이다. 하나가 진짜 사고였다.\n\n진짜 사고. umbral-moonshine 76 줄이 '$XWeyl 군으로 나누면 ... 남는다.' 로 시작했다. 앞의 $ 가 수식을 열어 한국어 산문을 통째로 수식 스팬으로 삼고, 그 뒤 A_1^{24} 가 수식 밖 맨 텍스트로 떨어지고 줄 끝 M_{24}$ 의 $ 가 짝을 잃었다. 커밋 19a29ff(직관 절을 두 문단으로 줄인 작업)가 '$X' 를 문장 앞에 흘린 것이다. 앞의 블록 수식이 G^X=Aut(N^X)/W^X 를 정의하므로 '$\\mathrm{Aut}(N^X)$ 를 Weyl 군으로 나누면' 으로 고쳤다(커밋 11a5a76). render-check 는 이것을 잡지 못한다. 원문의 수식 스팬이 렌더 결과에 그대로 남는지만 보기 때문에, 한국어가 든 수식 스팬도 통과한다. 4절 검수 여섯도 전부 통과했다. 이 검사기만 잡는 사고다.\n\n오검출 하나. ramsey-theory 153 줄의 각주 'V. Angeltveit and B. D. McKay, \"R(5,5) <= 46\"' 은 arXiv 2409.15709 의 실제 논문 제목이고 부등호가 제목의 일부다. 그대로 둔다.\n\n검사기 명세. 건너뛰는 줄: 코드펜스 안, 여러 줄 $$ 블록 안, 태그 줄(^#[a-z0-9_]), 표 구분선. 제거 순서: 각주 정의 머리, 각주 참조, 한 줄 $$ 블록, 인라인 수식, 인라인 코드, URL, 링크(표시 제목만 남김). 검사 기호: <= >= !=, 유니코드 집합·연산 기호, 밑줄과 캐럿 뒤 영숫자나 중괄호, 중괄호, 백슬래시 명령. 17차 note 의 URL 보정은 반드시 넣어야 하고(각주 참고문헌 주소의 밑줄), 16차 보정대로 화살표(-> 와 |->)는 검사 기호에서 빼야 한다. 빼지 않으면 개관 갈래 줄과 증명 스케치의 '(1) -> (2)' 가 전부 걸려 보고가 94 건으로 부푼다(이번에 확인했다). 12차 note 의 p-np 판정, 15차 note 의 rsa-cryptosystem 판정, 16차가 고친 galois-connections 160 은 그대로 유효하다.",
+      "createdAt": "2026-10-03T20:51:05.766Z",
+      "seq": 1599
+    },
+    {
+      "id": "c79af9c5",
+      "title": "수식 구분자 짝과 수식 안 한글 회귀 점검 (차기)",
+      "priority": 11,
+      "note": "28차 회차에 새로 만든 검사다. umbral-moonshine 76 줄의 사고(커밋 11a5a76)가 4절 검수 여섯과 render-check 를 전부 통과했기 때문에 만들었다. 사고의 꼴은 산문 앞에 $ 하나가 흘러들어 한국어 문장이 통째로 수식 스팬이 되는 것이다. 줄 안의 $ 개수는 짝수로 유지되므로 짝 검사만으로는 안 잡히고, 스팬 안의 한글을 봐야 잡힌다.\n\n검사 둘을 한 스크립트로 돌린다. 건너뛰는 줄은 코드펜스 안과 여러 줄 $$ 블록 안이다. 한 줄짜리 $$식$$ 은 먼저 지운다. (1) 홀수 달러: 남은 줄의 $ 개수가 홀수면 보고. (2) 수식 안 한글: 인라인 스팬 (?<!\\$)\\$[^\\$\\n]+\\$(?!\\$) 를 뽑아 \\\\text{...} \\\\mathrm{...} \\\\mbox{...} 의 중괄호 안을 지운 뒤 한글이 남으면 보고.\n\n28차 결과는 588 문서에서 홀수 달러 0 건, 수식 안 한글 0 건이다. \\\\text{} 보정을 넣지 않으면 33 건이 나오는데 전부 정당한 용법이다(instanton-floer-homology 56, knot-invariants 81, kolyvagin-systems 33, localization-rings 47/91, mass-formula 21, mock-modular-forms 17, mordell-lang 25, niemeier-lattices 96, np-completeness 52/53, perron-frobenius 31, prime-ideals 9, pushforward-measure 69, schellekens-list 27, singular-value-decomposition 103, volume-conjecture 29/35, wkb-approximation 19 등). 고치기 전 umbral-moonshine 을 이 검사기에 넣으면 76 줄에서 2 건이 잡힌다.\n\n같이 돌린 보조 검사. 인라인 스팬 길이가 150 자를 넘는 것 3 건(group-presentations 87, hyperbolic-3-manifolds 143, lambda-calculus 88)은 전부 실제로 긴 식이다(땋임군 표시, 여덟 기하의 목록, Y 조합자). 삼킨 문장이 있으면 길이로도 드러나므로 함께 보면 좋다.\n\n이 검사는 조건 없이 매 회차 돌릴 만큼 싸다(588 문서에 1 초 미만).",
+      "createdAt": "2026-10-03T20:52:30.471Z",
+      "seq": 1600
+    },
+    {
+      "id": "5b60eb9c",
+      "title": "각주 짝과 본문 중복 링크 회귀 점검 (차기)",
+      "priority": 11,
+      "note": "28차 회차에 새로 만든 검사다. 조건 없이 매 회차 돌릴 만큼 싸다(588 문서에 1 초 미만).\n\n검사 셋. (1) 정의만 있고 본문에서 참조하지 않은 각주(4절: 각주는 본문에서 참조한 것만 정의한다). (2) 참조만 있고 정의가 없는 각주. (3) '# 연관 문서' 앞의 본문에서 같은 id 를 두 번 이상 링크한 자리(4절: 본문 링크는 최초 1회).\n\n28차 결과와 처리(커밋 7f8dd4d). 정의만 1 건: pcp-theorem 124 줄의 [^3](Håstad, Some optimal inapproximability results, JACM 48)이 정의만 있었다. 그 각주가 가리키는 '## Håstad 의 3 비트 검증자' 절이 62-70 줄에 그대로 있었으므로 64 줄 '3 질의 검증자를 만들었다' 뒤에 [^3] 을 붙여 참조를 복원했다. 지우는 쪽이 아니라 붙이는 쪽이 맞는 경우다. 참조만 0 건.\n\n본문 중복 링크는 보고 166 건인데 개관 21 개가 159 건을 낸다. 개관은 4.5절 구조상 개요와 갈래에서 같은 문서를 두 번 링크하는 것이 정상이므로 검사 대상에서 빼야 한다. 개관을 빼면 7 건이고 전부 실제 중복이라 둘째 링크를 풀었다. interior-point-method 91(괄호 '([선형계획법](...))' 째로 지웠다. 링크를 풀면 '(선형계획법)' 이 아무 정보도 주지 않는다), langlands-program 19, normalizer 79, p-adic-numbers 133, solvable-groups 77 과 78, topological-groups 77. 라벨이 다른 경우도 중복으로 본다. normalizer 는 'Sylow' 와 'Sylow 정리', solvable-groups 는 'Galois 군' 과 'Galois 이론' 이었고 둘 다 같은 문서를 가리키므로 둘째를 풀었다.\n\n검사기 명세. 각주 정의는 ^\\[\\^id\\]: 로 잡고 참조는 그 밖의 \\[\\^id\\] 로 잡는다. 코드펜스 안은 건너뛴다. 중복 링크는 txt.indexOf('\\n# 연관 문서') 로 본문을 잘라낸 뒤 \\]\\(([a-z0-9-]+\\.md)\\) 를 세고, 파일명이 -overview.md 로 끝나는 문서는 건너뛴다.",
+      "createdAt": "2026-10-03T20:54:49.357Z",
+      "seq": 1603
+    },
+    {
+      "id": "d0a14f2f",
+      "title": "분할과 세기 축의 후속 간선 (차기)",
+      "priority": 11,
+      "note": "28차 회차에 catalan-numbers 를 썼다(99줄, 커밋 c34af0f). 부모는 generating-functions 하나이고 check-cycle 은 OK 였다. counting-principles 는 generating-functions 의 부모라 5절대로 뺐다.\n\n담은 것: 괄호 배열에서 출발한 직관(C(2n,n) 에서 잘못된 것을 빼는 길 대신 첫 괄호가 닫히는 자리로 쪼개 점화식을 얻는 순서), 닫힌 식 두 꼴, 생성함수 방정식 C(x)=1+xC(x)^2 과 해, 반사 논법으로 하는 닫힌 식 증명, 점근 4^n/(sqrt(pi) n^{3/2})과 특이점 해석, 홀짝 판정(n+1 이 2 의 거듭제곱일 때만 홀수), 같은 수를 세는 대상 다섯, 다른 분야의 쓰임 셋. 본문 링크는 generating-functions brauer-algebras wigner-semicircle 셋이다. Temperley-Lieb 대수는 docs 에 문서가 없으므로 0절대로 이름만 적었다.\n\ngenerating-functions 의 더 알아보기가 다섯이 되어 아직 6 개 묶음 기준 아래다. Catalan 수를 목록 맨 앞에 두었다(가장 가까운 후속). order-check 통과.\n\n차기에 볼 것 둘. (1) catalan-numbers 가 리프다. 자식 후보는 Temperley-Lieb 대수(차원이 C_k)와 Narayana 수 또는 비교차 분할이고 셋 다 docs 에 없다. 비교차 분할은 bell-numbers 와 wigner-semicircle 을 잇는 자리여서 값이 크다. (2) wigner-semicircle 과 catalan-numbers 사이에 간선을 긋지 않았다. 반원법칙의 모멘트가 C_n 이라는 것은 catalan-numbers 활용 절이 한 번 쓰는 관계이고, 방향으로 보면 wigner-semicircle 이 Catalan 수를 도구로 쓰므로 간선을 그으려면 catalan-numbers -> wigner-semicircle 이 되는데 wigner-semicircle 의 부모가 이미 셋이다. 5절의 '그저 도구로 한 번 쓰는' 경우로 보아 본문 링크로 두었다.",
+      "createdAt": "2026-10-03T20:58:17.423Z",
+      "seq": 1604
+    },
+    {
+      "id": "05cebeab",
+      "title": "문서 골격 회귀 점검 (차기)",
+      "priority": 11,
+      "note": "28차 회차에 새로 만든 검사 둘이다. 둘 다 싸서 조건 없이 매 회차 돌릴 만하다.\n\n(1) 골격 검사. 비개관 문서의 본문 H1 이 '# 개요 # 직관 # 정의 # 성질 # 활용' 다섯을 이 순서로 갖는지(제목 H1 과 '# 연관 문서' 는 뺀다), 여러 줄 $$ 구분자의 개수가 짝수인지, 표 한 묶음의 줄마다 열 수가 같은지를 본다. 구형 문서(^## 정의$ 가 있는 것)는 따로 센다. 28차 결과는 589 문서에서 H1 위반 0, 구형 0, $$ 짝 0, 표 열 불일치 0 이다. 구형 0 은 구형 문서가 저장소에 더 남아 있지 않다는 뜻이고, 2절 3단계의 '구형 문서의 신형 전환' 작업 후보가 비었음을 확인한 것이다.\n\n(2) 더 알아보기 묶음 검사. '## 더 알아보기' 절의 '- [' 로 시작하는 링크 줄 수와 '### ' 묶음 머리 수를 세어, 자식 6 개 이상인데 묶음이 없는 문서와 자식 5 개 이하인데 묶음이 있는 문서를 보고한다. H2 가 절 안에 침입했는지도 본다(5절: H2 는 쓰지 않는다. 절의 끝으로 읽힌다). 28차 결과는 묶음 필요 0, 불필요 묶음 0, H2 침입 0 이다.\n\n절 범위를 자를 때 '## 더 알아보기' 다음의 '\\n## ' 또는 태그 줄('\\n#[a-z0-9_]')까지로 잡아야 한다. 그러지 않으면 태그 줄을 H1 으로 읽는다. 골격 검사도 태그 줄을 H1 으로 세지 않도록 ^#[a-z0-9_] 를 건너뛴다.\n\n이 두 검사는 큐 항목 d4878604(더 알아보기 묶음 규칙 회귀 점검)와 겹친다. d4878604 는 '새 문서를 여러 개 쓴 회차 뒤에만' 이라는 조건이 붙어 있는데, 이 검사기는 조건 없이 돌릴 만큼 싸므로 d4878604 를 꺼낼 때 이 항목으로 대체할지 판단할 것.",
+      "createdAt": "2026-10-03T20:58:37.950Z",
+      "seq": 1605
     },
     {
       "id": "14a84d4d",
@@ -1490,6 +1530,30 @@
       "note": "28차에 interior-point-method 를 만들었다(부모 linear-programming, lagrange-duality, 110줄, 최적화 개관 '선형·반정부호 계획법' 갈래의 Lovasz 세타 함수 다음, 커밋 9de1ad4). 담은 것: 경계에 붙은 걸음이 짧아져 막히는 직관, 로그 장벽과 중심 경로의 정의, 장벽법, 쌍대 간격 m/t 의 증명 요지, 자기일치 장벽과 O(sqrt m log(1/eps)) 반복 한계, 원시-쌍대 형태, 단체법과의 차이. semidefinite-programming 을 부모로 두지 않았다. 5절 기준으로 내점법이 SDP 의 특수 사례나 부분이 아니고 반대로 SDP 를 푸는 도구이므로 방향이 어긋나며, check-cycle 은 통과하지만 부모가 셋이 된다. 대신 활용 절 둘째 항목이 semidefinite-programming 으로 본문 링크를 건다. 후속 후보 셋. (a) 자기일치 장벽 자체. Nesterov-Nemirovskii 이론을 담는 문서이고 부모는 interior-point-method 와 convexity. 분량이 되는지 먼저 볼 것. (b) 단체법. 지금 linear-programming 성질 절이 꼭짓점 최적성과 Klee-Minty 를 담고 있어 8절 기준으로 겹치는지 볼 것. (c) 정수계획법과 절단평면(큐 0ad2ff63). interior-point-method 에서 정의 없이 쓴 용어: 교차 단계, 이차 원뿔, 지수 원뿔, 지지벡터기계, Cholesky 분해 없음.",
       "createdAt": "2026-10-03T17:04:59.410Z",
       "seq": 1590
+    },
+    {
+      "id": "d14f114e",
+      "title": "세포대수",
+      "priority": 10,
+      "note": "분야: 대수(#algebra #ring_theory). 부모 후보는 partition-algebras 또는 brauer-algebras 다. Graham-Lehrer 의 cellular algebra 로, 세포 기저와 반대합을 가진 대수의 틀이고 Brauer 대수, Temperley-Lieb 대수, 분할 대수, Hecke 대수가 모두 세포대수다. 비반단순한 매개변수에서도 기약표현을 쌍선형형식의 근기로 분류한다. brauer-algebras 각주 1 이 Graham-Lehrer, Invent. Math. 123 (1996) 을 인용하지만 docs 에 문서가 없다. 여러 도형 대수의 공통 틀이므로 그 축의 상위 문서로 들어간다.",
+      "createdAt": "2026-10-03T20:47:21.996Z",
+      "seq": 1595
+    },
+    {
+      "id": "53a5fb93",
+      "title": "모듈라이 공간",
+      "priority": 10,
+      "note": "분야: 대수기하 또는 위상(#algebra 또는 #algebraic_topology). 양자 코호몰로지와 Gromov-Witten 불변량 문서의 선수지식인데 docs 에 없다. 부모 후보는 algebraic-varieties 와 grassmannian 이다. 담을 것: 분류 문제를 공간으로 바꾸는 구성, 대상의 족과 보편족, 안정성 조건과 콤팩트화(안정곡선, 안정 사상), M_g 와 M_{g,n}, grassmannian 과 사영공간이 가장 단순한 예라는 점. 이 문서가 생기면 Gromov-Witten 불변량과 양자 코호몰로지를 그 위에 올릴 수 있다(큐 0b983ce9 참조).",
+      "createdAt": "2026-10-03T20:47:22.115Z",
+      "seq": 1596
+    },
+    {
+      "id": "7f5982ce",
+      "title": "Temperley–Lieb 대수",
+      "priority": 10,
+      "note": "분야: 대수(#algebra #combinatorics #topology). 부모 후보는 partition-algebras 와 brauer-algebras 다.\n\n28차에 확인한 것: 이 개념은 이미 세 문서에 조각으로 들어 있다. brauer-algebras 72-74 '## Temperley–Lieb 대수' 가 '도형에서 선이 교차하지 않는 것만 남기면 TL_k(delta) 가 된다. B_k(delta) 의 몫이고 차원이 Catalan 수 C_k 다' 로 정의까지 한다. braid-groups 64-66 '## Temperley–Lieb 대수의 대각합' 이 Jones 의 Markov 대각합과 B_n -> TL_n 사상을 담고 112 줄 표가 TL_n(delta) / Jones 대각합 / Jones 다항식 줄을 둔다. knot-invariants 104 가 II_1 인자의 부분인자 지표에서 Jones 다항식이 나온 경로를 적는다.\n\n따라서 새 문서를 쓰려면 세 문서의 해당 절을 포인터로 줄이는 작업이 같은 회차에 들어가야 한다. 그러지 않으면 8절이 말하는 중복이 된다. 분량 판단: 세 조각을 합치고 생성원 e_i 와 관계(e_i^2=delta e_i, e_i e_{i pm 1} e_i = e_i, 멀리 떨어진 것끼리 교환), 평면 짝짓기 도형과 Catalan 수, Jones-Wenzl 멱등원, delta = -A^2 - A^{-2} 와 Kauffman 괄호, SL_2 텐서 범주, 부분인자 지표 4cos^2(pi/n) 을 담으면 100 줄대가 나온다. docs 에 catalan-numbers 문서가 없으므로 차원은 식으로 적고 Catalan 수 문서 요청은 따로 큐에 넣는다.\n\n판정이 필요한 것: partition-algebras 와 brauer-algebras 가운데 어느 쪽을 부모로 할지. TL 은 Brauer 도형 가운데 평면인 것이므로 brauer-algebras 가 맞고, partition-algebras 와는 형제가 된다.",
+      "createdAt": "2026-10-03T20:52:30.716Z",
+      "seq": 1601
     },
     {
       "id": "dfb3e493",
