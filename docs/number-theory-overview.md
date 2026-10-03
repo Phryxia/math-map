@@ -49,6 +49,7 @@ graph TD
 
 - [연분수](continued-fractions.md): 실수를 정수 몫의 열로 펼쳐 최적 유리수 근사를 얻는다
 - [등분포](equidistribution.md): 수열이 구간에 길이만큼의 빈도로 들어가는 성질, Weyl 판정법과 불일치도
+- [Gauss 사상](gauss-map.md): 연분수 한 걸음의 변환, Gauss 측도와 Gauss–Kuzmin 분포, Lévy 정리
 - [Pell 방정식](pell-equation.md): $x^2-dy^2=1$ 의 해가 기본해의 거듭제곱으로 전부 나온다
 - [Diophantine 근사](diophantine-approximation.md): 근사 지수가 대수적 수와 초월수를 가른다
 - [초월수](transcendental-numbers.md): $e$ 와 $\pi$ 의 초월성, 로그의 일차형식

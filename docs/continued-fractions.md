@@ -98,5 +98,6 @@ $\sqrt 2 = \lbrack 1; \overline{2}\rbrack$ 과 황금비 $\varphi = \lbrack 1; \
 
 - [Pell 방정식](pell-equation.md)
 - [Diophantine 근사](diophantine-approximation.md)
+- [Gauss 사상](gauss-map.md)
 
 #number_theory #algorithms #analysis
