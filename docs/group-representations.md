@@ -206,10 +206,16 @@ $$
 
 ## 더 알아보기
 
+### 구조와 분류
+
+- [Peter–Weyl 정리](peter-weyl.md)
+- [Schur–Weyl 쌍대성](schur-weyl-duality.md)
+- [유한 단순군 분류](finite-simple-groups.md)
+
+### 다른 분야에서의 쓰임
+
+- [구면조화함수](spherical-harmonics.md)
 - [Dirichlet L 함수](dirichlet-l-functions.md)
 - [Langlands 강령](langlands-program.md)
-- [유한 단순군 분류](finite-simple-groups.md)
-- [구면조화함수](spherical-harmonics.md)
-- [Schur–Weyl 쌍대성](schur-weyl-duality.md)
 
 #group_theory #linear_algebra

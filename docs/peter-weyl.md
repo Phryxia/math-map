@@ -111,6 +111,7 @@ $$
 
 ## 선수지식
 
+- [군의 표현](group-representations.md)
 - [Lie 군](lie-groups.md)
 - [Haar 측도](haar-measure.md)
 - [Hilbert 공간](hilbert-spaces.md)
