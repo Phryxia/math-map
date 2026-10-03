@@ -143,7 +143,6 @@ $$
 
 ## 더 알아보기
 
-- [Haar 측도](haar-measure.md)
 - [Peter–Weyl 정리](peter-weyl.md)
 - [Chern–Simons 이론](chern-simons.md)
 

@@ -83,7 +83,7 @@ $$
 ## 선수지식
 
 - [측도](measure.md)
-- [Lie 군](lie-groups.md)
+- [위상군](topological-groups.md)
 
 ## 더 알아보기
 
