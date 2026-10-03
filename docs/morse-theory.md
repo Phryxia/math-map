@@ -20,7 +20,7 @@ $$
 
 ## Morse 함수
 
-콤팩트 매끄러운 다양체 $M$ 과 매끄러운 함수 $f:M\to\mathbb R$ 에 대해 $df_p=0$ 인 점 $p$ 를 **임계점**이라 한다. 임계점 $p$ 에서 국소좌표로 쓴 Hesse 행렬
+[콤팩트](compactness.md) 매끄러운 다양체 $M$ 과 매끄러운 함수 $f:M\to\mathbb R$ 에 대해 $df_p=0$ 인 점 $p$ 를 **임계점**이라 한다. 임계점 $p$ 에서 국소좌표로 쓴 Hesse 행렬
 
 $$
 H_p(f)=\Bigl(\frac{\partial^2f}{\partial x_i\partial x_j}(p)\Bigr)

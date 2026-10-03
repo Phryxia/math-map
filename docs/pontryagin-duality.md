@@ -2,7 +2,7 @@
 
 # 개요
 
-Pontryagin 쌍대성은 국소콤팩트 아벨군 $G$ 와 그 지표들이 이루는 군 $\hat G$ 사이의 대응이다. $\hat G$ 를 다시 쌍대로 보내면 $G$ 로 돌아오고, 이 대응이 Fourier 변환을 군 위에서 정의하는 틀이 된다.
+Pontryagin 쌍대성은 국소콤팩트 [아벨 위상군](topological-groups.md) $G$ 와 그 지표들이 이루는 군 $\hat G$ 사이의 대응이다. $\hat G$ 를 다시 쌍대로 보내면 $G$ 로 돌아오고, 이 대응이 Fourier 변환을 군 위에서 정의하는 틀이 된다.
 
 Fourier 급수는 $S^1$ 과 $\mathbb Z$ 의 쌍, Fourier 변환은 $\mathbb R$ 과 $\mathbb R$ 의 쌍, 유한 Fourier 변환은 $\mathbb Z/n$ 과 자기 자신의 쌍이다. 세 변환이 한 정리의 사례이고, 어느 쌍에서나 Plancherel 등식과 역변환 공식이 같은 형태로 성립한다.
 
@@ -20,7 +20,7 @@ $$
 
 ## 지표와 쌍대군
 
-$G$ 를 [국소콤팩트 아벨군](topological-groups.md)이라 하고 $\mathbb T=\lbrace z\in\mathbb C:\vert z\vert=1\rbrace$ 이라 하자. 연속 준동형 $\chi:G\to\mathbb T$ 를 **지표**라 한다.
+$G$ 를 국소콤팩트 아벨군이라 하고 $\mathbb T=\lbrace z\in\mathbb C:\vert z\vert=1\rbrace$ 이라 하자. 연속 준동형 $\chi:G\to\mathbb T$ 를 **지표**라 한다.
 
 지표 전체 $\hat G$ 는 점별 곱 $(\chi_1\chi_2)(g)=\chi_1(g)\chi_2(g)$ 로 아벨군이다. 여기에 콤팩트 집합 위의 균등수렴 위상을 주면, 곧 콤팩트 $K\subseteq G$ 와 $\varepsilon\gt0$ 마다
 
@@ -50,7 +50,7 @@ $\hat f$ 는 $\hat G$ 위의 유계 연속함수다. $G=\mathbb R$, $\chi(x)=e^{
 
 ## 콤팩트성과 이산성의 교환
 
-$G$ 가 콤팩트인 것과 $\hat G$ 가 이산인 것은 동치이고, $G$ 가 이산인 것과 $\hat G$ 가 콤팩트인 것도 동치다.
+$G$ 가 [콤팩트](compactness.md)인 것과 $\hat G$ 가 이산인 것은 동치이고, $G$ 가 이산인 것과 $\hat G$ 가 콤팩트인 것도 동치다.
 
 $G$ 가 콤팩트면 $N(G,1)$ 이 항등원만 담는 열린집합이므로 $\hat G$ 가 이산이다. $G$ 가 이산이면 $\hat G$ 는 $\mathbb T^G$ 의 닫힌 부분집합이고 Tychonoff 정리로 콤팩트다.
 
