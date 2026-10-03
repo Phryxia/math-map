@@ -188,5 +188,6 @@ $$
 - [Martingale](martingales.md)
 - [Gauss 과정](gaussian-processes.md)
 - [Kalman 필터](kalman-filter.md)
+- [에르고딕 정리](ergodic-theorem.md)
 
 #probability #measure_theory

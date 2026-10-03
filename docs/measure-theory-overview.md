@@ -67,6 +67,7 @@ graph TD
 
 - [확률변수](random-variables.md): 가측함수로서의 확률변수, 적분으로서의 기댓값
 - [조건부 기댓값](conditional-expectation.md): Radon–Nikodym 정리로 정의하는 부분 $\sigma$ 대수 위의 사영
+- [에르고딕 정리](ergodic-theorem.md): 측도보존변환의 시간평균과 공간평균의 일치, Birkhoff 정리와 von Neumann 정리
 - [약수렴](weak-convergence.md): 유계 연속함수의 적분으로 재는 측도의 수렴과 tightness
 - [최적 수송](optimal-transport.md): 두 측도를 잇는 결합과 수송비용
 - [Girsanov 정리](girsanov.md): 측도변환이 Brown 운동의 표류항을 바꾸는 방식
