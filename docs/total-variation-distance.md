@@ -104,6 +104,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Markov 연쇄의 혼합시간](mixing-time.md)
 
 #probability #measure_theory #statistics #information_theory
