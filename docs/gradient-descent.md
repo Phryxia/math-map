@@ -109,8 +109,8 @@ $\varepsilon$ 근사해에 필요한 반복 수는 $\kappa\log(1/\varepsilon)$ �
 ## 한계와 개선
 
 - 강볼록이고 $L$ -smooth 인 부류에서 어떤 1 차 방법도 조건수의 제곱근보다 좋은 의존성을 갖지 못한다. [Nesterov 가속법](nesterov-acceleration.md)이 이 하한을 달성한다.
-- $\eta\gt 2/L$ 이면 이차함수에서도 발산한다. 실제로는 backtracking line search 로 $\eta$ 를 적응적으로 정한다.
-- 미분 불가능한 볼록 함수에서는 기울기 대신 subgradient 를 쓰고 수렴률이 $K^{-1/2}$ 로 떨어진다. 제약이 있으면 사영 경사법이나 [Lagrange 쌍대성](lagrange-duality.md)을 쓴다.
+- $\eta\gt 2/L$ 이면 이차함수에서도 발산한다. 실제로는 역추적 선탐색(backtracking line search)으로 $\eta$ 를 적응적으로 정한다.
+- 미분 불가능한 볼록 함수에서는 기울기 대신 [부분미분](proximal-gradient-method.md)(subdifferential)의 원소를 쓰고 수렴률이 $K^{-1/2}$ 로 떨어진다. 제약이 있으면 사영 경사법이나 [Lagrange 쌍대성](lagrange-duality.md)을 쓴다.
 - 목적함수가 $N$ 개 항의 평균이면 한 걸음마다 무작위로 고른 항 하나나 작은 묶음의 기울기만 쓴다. 한 걸음의 비용이 $N$ 과 무관해지는 대신 기울기에 잡음이 섞이고, 고정 학습률에서는 최적점 주변의 잡음 구간까지만 내려간다. 이 변형이 [확률적 경사하강법](stochastic-gradient-descent.md)이다.
 
 # 활용

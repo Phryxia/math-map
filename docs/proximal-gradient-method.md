@@ -20,7 +20,7 @@ $F=f+g$ 를 최소화한다. $f$ 는 미분가능한 볼록 함수이고 $\nabla
 
 ## 부분미분
 
-볼록 함수 $g$ 의 점 $u$ 에서의 **부분미분** $\partial g(u)$ 는 다음을 만족하는 벡터 $p$ 전부의 집합이다.
+볼록 함수 $g$ 의 점 $u$ 에서의 **부분미분**(subdifferential) $\partial g(u)$ 는 다음을 만족하는 벡터 $p$ 전부의 집합이다.
 
 $$
 g(x)\ge g(u)+\langle p,\thinspace x-u\rangle\qquad(\forall x)
