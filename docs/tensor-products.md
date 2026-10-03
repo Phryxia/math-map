@@ -29,7 +29,7 @@ $$
 ```mermaid
 graph LR
   MN["M x N"] -- "쌍선형 beta" --> P["P"]
-  MN -- "(m,n) |-> m (x) n" --> T["M (x)_R N"]
+  MN -- "(m,n) |-> m (x) n" --> T["M (x)R N"]
   T -. "유일한 선형사상 beta~" .-> P
 ```
 
