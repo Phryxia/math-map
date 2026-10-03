@@ -65,7 +65,7 @@ $$
 
 ```mermaid
 graph TD
-  P["A ×_C B"] -->|"p₁"| A["A"]
+  P["A x_C B"] -->|"p₁"| A["A"]
   P -->|"p₂"| B["B"]
   A -->|"f"| C["C"]
   B -->|"g"| C
