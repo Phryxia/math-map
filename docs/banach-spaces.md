@@ -97,7 +97,7 @@ $T\in\mathcal B(X,Y)$ 가 전사이면 $T$ 는 열린사상이고, 특히 전단
 
 노름 위상에서 단위구는 콤팩트하지 않지만, 반사적이면 약한 위상에서 콤팩트하다. 최소화 문제에서 유계인 수열이 약수렴하는 부분열을 가지므로 변분법의 직접법이 작동한다.
 
-Banach–Alaoglu 정리로 $X^\ast$ 의 단위구는 약 $\ast$ 위상에서 항상 콤팩트하다. 증명이 [콤팩트성](compactness.md)의 Tychonoff 정리를 거치므로 이 정리도 선택공리에 의존한다.
+[Banach–Alaoglu 정리](banach-alaoglu.md)로 $X^\ast$ 의 단위구는 약 $\ast$ 위상에서 항상 콤팩트하다. 증명이 [콤팩트성](compactness.md)의 Tychonoff 정리를 거치므로 이 정리도 선택공리에 의존한다.
 
 # 활용
 
@@ -130,6 +130,7 @@ Banach 공간에는 직교성, 사영 정리, 쌍대공간과 자기 자신의 �
 ## 더 알아보기
 
 - [$L^p$ 공간](lp-spaces.md)
+- [Banach–Alaoglu 정리](banach-alaoglu.md)
 - [Arzelà–Ascoli 정리](arzela-ascoli.md)
 - [Schauder 고정점 정리](schauder-fixed-point.md)
 - [열린 사상 정리](open-mapping-theorem.md)
