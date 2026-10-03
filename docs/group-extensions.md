@@ -146,7 +146,7 @@ $c$ 가 $H^2(Q,\mathrm U(1))$ 의 2-코사이클이다. 사영표현은 중심�
 ## 더 알아보기
 
 - [군 코호몰로지](group-cohomology.md)
-- [Schur 곱셈자와 보편 중심확대](schur-multipliers.md)
+- [Schur 곱셈자](schur-multipliers.md)
 - [Galois 표현의 변형환](deformation-rings.md)
 
 #group_theory #algebra
