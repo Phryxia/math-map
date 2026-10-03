@@ -108,6 +108,6 @@ Brauer 도형들을 한 대수가 아니라 범주의 사상으로 보면 $k$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [분할 대수](partition-algebras.md)
 
 #algebra #group_theory #combinatorics
