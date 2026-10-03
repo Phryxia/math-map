@@ -58,7 +58,7 @@ $$
 
 ## 곱과 Tychonoff
 
-유한 개 콤팩트 공간의 곱은 콤팩트하다. 임의 개의 곱까지 확장한 것이 Tychonoff 정리이며 [선택공리](axiom-of-choice.md)와 동치다. 무한 곱에서도 콤팩트성이 유지된다는 사실이 함수공간과 논리의 콤팩트성 정리를 떠받친다.
+유한 개 콤팩트 공간의 곱은 콤팩트하다. 임의 개의 곱까지 확장한 것이 [Tychonoff 정리](tychonoff-theorem.md)이며 [선택공리](axiom-of-choice.md)와 동치다. 무한 곱에서도 콤팩트성이 유지된다는 사실이 함수공간과 논리의 콤팩트성 정리를 떠받친다.
 
 ## 수열 조건과의 차이
 
@@ -90,6 +90,7 @@ $$
 
 ## 더 알아보기
 
+- [Tychonoff 정리](tychonoff-theorem.md)
 - [분리공리](separation-axioms.md)
 - [균등연속](uniform-continuity.md)
 - [곡면의 분류](classification-of-surfaces.md)
