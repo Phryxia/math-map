@@ -100,6 +100,7 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Poisson 합 공식](poisson-summation.md)
+- [Tate 의 논문](tate-thesis.md)
 
 #functional_analysis #topology #analysis #number_theory

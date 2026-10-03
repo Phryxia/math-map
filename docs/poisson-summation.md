@@ -154,6 +154,7 @@ $\mathbb R/\mathbb Z$ 위의 Laplace 작용소에서 좌변은 고윳값 쪽 합
 
 - [Fourier 급수](fourier-series.md)
 - [Euler–Maclaurin 공식](euler-maclaurin.md)
+- [Pontryagin 쌍대성](pontryagin-duality.md)
 
 ## 더 알아보기
 

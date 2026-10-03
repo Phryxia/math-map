@@ -180,6 +180,7 @@ $$
 
 - [아델](adeles.md)
 - [Riemann zeta 함수](riemann-zeta.md)
+- [Pontryagin 쌍대성](pontryagin-duality.md)
 
 ## 더 알아보기
 
