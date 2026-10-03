@@ -2,7 +2,7 @@
 
 # 개요
 
-토포스는 집합의 [범주](category.md)가 가진 구조를 공리로 뽑아낸 범주다. 유한 [제한](limits-colimits.md), 지수 대상, 부분대상 분류자 셋을 갖추면 토포스이고, 그 안에서 집합론의 구성 대부분을 그대로 할 수 있다.
+토포스는 집합의 [범주](category.md)가 가진 구조를 공리로 뽑아낸 범주다. 유한 [극한](limits-colimits.md), 지수 대상, 부분대상 분류자 셋을 갖추면 토포스이고, 그 안에서 집합론의 구성 대부분을 그대로 할 수 있다.
 
 토포스마다 내부 논리가 따라 나오고, 그 논리는 일반적으로 직관주의 논리다. 배중률과 [선택공리](axiom-of-choice.md)는 토포스에 따라 성립하기도 하고 성립하지 않기도 한다.
 
@@ -32,7 +32,7 @@ $$
 
 범주 $\mathcal E$ 가 **초등 토포스**라는 것은 다음 셋을 갖춘다는 뜻이다.
 
-- 유한 제한을 모두 갖는다.
+- 유한 극한을 모두 갖는다.
 - 곱 [함자](functors.md) $(-) \times Y$ 가 우수반을 갖는다. 그 값을 **지수 대상** $X^Y$ 라 한다.
 - 부분대상 분류자를 갖는다.
 
@@ -40,15 +40,15 @@ $$
 
 ## Grothendieck 토포스
 
-작은 범주 위의 층 범주와 동치인 토포스를 **Grothendieck 토포스**라 한다. 모든 Grothendieck 토포스는 초등 토포스이고, 여기에 더해 임의의 쌍대제한과 생성자 집합을 갖는다.
+작은 범주 위의 층 범주와 동치인 토포스를 **Grothendieck 토포스**라 한다. 모든 Grothendieck 토포스는 초등 토포스이고, 여기에 더해 임의의 쌍대극한과 생성자 집합을 갖는다.
 
 # 성질
 
 ## 토포스의 닫힘 성질
 
-**정리.** 토포스는 유한 쌍대제한을 갖는다.[^1]
+**정리.** 토포스는 유한 쌍대극한을 갖는다.[^1]
 
-공리에 쌍대제한이 없는데도 나온다. 증명은 $\mathcal E$ 의 반대 범주를 $\Omega$ 의 거듭제곱 함자로 옮기는 것이다. 멱대상 함자 $X \mapsto \Omega^X$ 가 자기 자신의 반대 방향 수반이 되고, 이 수반이 극한을 쌍대극한으로 바꾼다. ∎
+공리에 쌍대극한이 없는데도 나온다. 증명은 $\mathcal E$ 의 반대 범주를 $\Omega$ 의 거듭제곱 함자로 옮기는 것이다. 멱대상 함자 $X \mapsto \Omega^X$ 가 자기 자신의 반대 방향 수반이 되고, 이 수반이 극한을 쌍대극한으로 바꾼다. ∎
 
 **정리.** 토포스의 조각 범주 $\mathcal E/X$ 는 다시 토포스다.
 
@@ -58,7 +58,7 @@ $$
 
 **정리.** 토포스의 부분대상 격자 $\mathrm{Sub}(X)$ 는 [Heyting 대수](heyting-algebras.md)다.
 
-교집합과 합집합은 부분대상의 제한과 쌍대제한이고, 함의는 $(-) \wedge A$ 의 우수반으로 얻는다. 여집합에 해당하는 $\neg A = (A \Rightarrow 0)$ 이 정의되지만 $A \vee \neg A = X$ 는 일반적으로 성립하지 않는다.
+교집합과 합집합은 부분대상의 극한과 쌍대극한이고, 함의는 $(-) \wedge A$ 의 우수반으로 얻는다. 여집합에 해당하는 $\neg A = (A \Rightarrow 0)$ 이 정의되지만 $A \vee \neg A = X$ 는 일반적으로 성립하지 않는다.
 
 배중률이 모든 대상에서 성립하는 토포스를 **불 토포스**라 한다. $\mathbf{Set}$ 은 불 토포스이고, 두 점 이상을 가진 공간 위의 층 토포스는 대개 아니다. 토포스의 내부 언어로 쓴 증명이 [직관주의](intuitionism.md) 논리의 증명과 같은 규칙을 따르는 이유가 이것이다.
 
@@ -75,13 +75,13 @@ $\mathbf{Set}$ 이 아닌 토포스를 고르면 전사사상이 갈라지지 �
 - 직관주의 논리의 의미론을 준다. [Kripke 의미론](kripke-semantics.md)은 전순서 위의 함자 범주가 토포스인 특수한 경우다.
 - 프로그래밍 언어 의미론에서 데카르트 닫힌 구조가 타입과 함수를 해석한다. [Curry–Howard 대응](curry-howard.md)의 범주 쪽 대응물이 지수 대상이다.
 
-[^1]: Saunders Mac Lane and Ieke Moerdijk, *Sheaves in Geometry and Logic: A First Introduction to Topos Theory*, Springer (1992), Ch. IV. 초등 토포스의 정의, 쌍대제한의 존재, 조각 범주의 정리가 이 장에 있다.
+[^1]: Saunders Mac Lane and Ieke Moerdijk, *Sheaves in Geometry and Logic: A First Introduction to Topos Theory*, Springer (1992), Ch. IV. 초등 토포스의 정의, 쌍대극한의 존재, 조각 범주의 정리가 이 장에 있다.
 
 # 연관 문서
 
 ## 선수지식
 
-- [제한과 쌍대제한](limits-colimits.md)
+- [극한과 쌍대극한](limits-colimits.md)
 - [수반](adjunctions.md)
 - [층](sheaves.md)
 
