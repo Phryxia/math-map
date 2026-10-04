@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-04T16:56:38.536Z",
-  "nextSeq": 1669,
+  "savedAt": "2026-10-04T21:05:49.260Z",
+  "nextSeq": 1689,
   "items": [
     {
       "id": "b0693241",
@@ -124,6 +124,14 @@
       "seq": 1652
     },
     {
+      "id": "685dffaf",
+      "title": "문체 헤딩 grep 의 '에너지' 오탐",
+      "priority": 20,
+      "note": "4절 문체 규칙의 헤딩 grep 이 '## 길이와 에너지' 를 문장으로 잡는다. '에너지' 의 '지' 가 '[^로]지 *$' 에 걸리는 오탐이고 명사구이므로 헤딩으로 정당하다. 30차 회차에는 geodesics 의 그 헤딩을 '길이 범함수와 에너지 범함수' 로 바꿔 우회했다. '요지' 오탐(9bc3b9fa, b4ccf30f)과 같은 유형이고, 명사가 '지' 로 끝나는 경우를 어떻게 거를지는 CLAUDE.md 의 grep 이라 독자의 판단이 필요하다.",
+      "createdAt": "2026-10-04T20:52:51.505Z",
+      "seq": 1677
+    },
+    {
       "id": "410fd79d",
       "title": "Zilber 삼분법 갈래의 후속 간선 (15차)",
       "priority": 12,
@@ -242,14 +250,6 @@
       "note": "중복 항목 통합(27차): 같은 훑기를 회차마다 따로 밀어 둔 3개 항목(6407c726 9ac3c298 97d03611)을 하나로 합쳤다. 각 회차의 메모를 차례로 둔다. [1/제목과 파일명이 어긋난 문서 훑기 (차기)] 2026-09-19 회차 20차. 제목에 '와/과' 가 든 문서는 158 개이고, 그중 뒷부분이 정리·공식·추측·부등식·알고리즘 이름이 아닌 것이 130 개다(기준 1 로 걸러진 28 개가 차이다). 130 개를 훑어 기준 3 에 해당하는 것, 곧 파일명이 둘 중 하나만 가리키고 나머지가 독립 개념인 것을 찾으면 pairing-based-cryptography 하나가 뚜렷했다. 제목이 'Weil 쌍과 쌍선형 암호' 인데 파일명은 뒤쪽만 가리켰다. 172 줄 중 Weil 쌍과 Tate 쌍의 정의는 25 줄이고 나머지가 MOV 환산, 파라미터 균형, 활용 다섯 절이라 문서의 주제는 암호 쪽이다. 8절 분할 기준에는 한참 못 미치므로 제목을 '쌍선형 암호' 로 좁히고 링크 표시 제목 넷(cryptography-overview number-theory-overview computation-overview elliptic-curves)을 맞췄다. 나머지 129 개는 기준 2 에 해당한다. 파일명이 '와/과' 양쪽을 모두 담은 것(dag-topological lp-rounding borel-pade kleisli-eilenberg-moore ideals-quotient-rings limits-colimits formalism-hilbert-program), 한 개념의 두 면인 것(eigenvalues 의 고윳값·고유벡터, modular-arithmetic 의 합동·나머지 연산), 앞이 주제이고 뒤가 그 주제의 한 측면이거나 예인 것(sphere-packing 의 E8·Leech 격자, supersingular-isogeny-graphs 의 SIDH)이 그것이다. 다음 회차에 다시 볼 것 하나: proofs 의 제목 '명제와 증명' 은 파일명이 뒤만 가리키지만 루트 문서라 파일명을 바꾸면 README 뿌리 목록과 모든 선수지식 링크가 함께 움직인다. 제목을 좁힐지 파일명을 바꿀지 따로 판단이 필요하다 [2/제목과 파일명이 어긋난 문서 훑기 (차기)] 2026-09-20 회차에 후보를 다시 뽑았다. 4 절의 grep -l '^# .*[와과] ' docs/*.md 는 '# 연관 문서' 를 잡아 402 개 전부를 보고하므로 쓰지 말 것. 제대로 된 검사는 첫 줄만 보는 것이다: for f in docs/*.md; do t=$(head -1 \"$f\"); case \"$t\" in *'와 '*|*'과 '*) echo \"$(basename $f .md) :: ${t#\\# }\";; esac; done. 이렇게 하면 후보가 100 건 안팎이고 대부분은 4 절이 예외로 인정한 '정리 이름과 그 정리가 답하는 개념' 꼴(canonical-height 의 'Néron–Tate 높이와 Mordell–Weil 정리')이거나 한 쌍이 한 개념인 것(eigenvalues 의 '고윳값과 고유벡터')이다. 실제로 볼 자리: dag-topological 의 'DAG와 위상정렬' 은 파일명이 두 주제를 뭉갠 데다 조사 띄어쓰기도 다른 문서와 다르다. continuum-hypothesis 의 '연속체 가설과 독립성' 은 이번 회차에 forcing 을 분리했으므로 제목을 좁힐지 다시 볼 수 있다. 전수 판정은 회차 하나가 필요하다 [3/제목과 파일명이 어긋난 문서 훑기 (7차)] 2026-09-28 회차가 6차다. 이 축을 닫는 판정을 했다.\n\n검사식 수정. 5차 note 가 쓴 grep -l '^# .*[와과] ' docs/*.md 는 문서 전체를 훑으므로 553 문서가 전부 걸려 쓸 수 없다. 첫 줄만 보아야 하고, 문자 클래스 [와과] 는 로케일에 따라 바이트 단위로 매칭되어 '범주' 같은 무관한 제목까지 잡는다. 다음을 쓸 것.\nfor f in docs/*.md; do head -1 \"$f\" | grep -qP '^# .*(와|과) ' && basename $f .md; done\n6 차에 이 식으로 41 개가 나왔다(5차가 센 70 개는 오검출이 섞인 수다).\n\n41 개를 전부 읽고 판정했다. 모두 4절이 예외로 든 '정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목' 이거나, 파일명이 제목의 앞 개념을 그대로 가리키는 것이다. 좁힐 것이 하나도 없다. 유형별로: 개념 + 그 개념의 정리(bernoulli-numbers, braid-groups, differential-forms, holomorphic-functions, group-extensions, network-flow, np-completeness, perfect-graphs, riemann-surfaces, unbounded-operators, weak-convergence, characteristic-functions, domain-theory, heegner-points, selmer-tate-shafarevich), 정리 + 그 정리가 답하는 대상(borel-weil-bott, canonical-height, dwork-rationality, eisenstein-ideal, greenberg-conjecture, herbrand-ribet, s-cobordism, serre-conjecture, siegel-weil, vandiver-conjecture, volume-conjecture, waldspurger-formula, witten-asymptotics, unique-games, tracy-widom), 한 기법의 두 단계나 한 대상의 두 면(lp-rounding 'LP 완화와 반올림', fargues-scholze, fundamental-lemma, jacquet-langlands, schur-multipliers, shimura-correspondence, speh-representations, vogan-packets, weil-representation, weyl-character-formula, whittaker-models).\n\n5차가 좁힌 둘(mv-cycles, wess-zumino-witten)과 4차가 남긴 zhu-algebra, 파일명이 이미 둘을 담은 아홉(dyson-rank-crank, ideals-quotient-rings, limits-colimits, dag-topological, kleisli-eilenberg-moore, luzin-sierpinski-sets, borel-pade, fermat-euler-theorem, formalism-hilbert-program)은 다시 보지 않는다.\n\n7차는 새 문서가 스무 개쯤 늘어난 뒤에 위 검사식만 돌려 새로 든 id 가 있는지 보고, 없으면 그대로 되돌릴 것. 41 개를 다시 읽지 말 것. 우선순위를 12 에서 8 로 낮췄다.",
       "createdAt": "2026-10-03T13:05:37.642Z",
       "seq": 1576
-    },
-    {
-      "id": "50f08a9a",
-      "title": "'A와 B' 제목 후보 훑기",
-      "priority": 11,
-      "note": "중복 항목 통합(27차): 같은 훑기를 회차마다 따로 밀어 둔 3개 항목(4381417a 168d1d3c 6e1608d5)을 하나로 합쳤다. 각 회차의 메모를 차례로 둔다. [1/'A와 B' 제목 후보 훑기 (차기)] 2026-09-20 회차. CLAUDE.md 4절의 grep -l '^# .*[와과] ' 은 '# 연관 문서'의 '관 ' 에도 걸려 전 문서를 보고한다. 제목 줄만 보는 for f in docs/*.md; do head -1 $f | grep -qE '^# .*[가-힣A-Za-z0-9)]\\s*(와|과) ' && echo $f; done 로 바꾸면 152 건이 나온다. 대부분은 4절이 예외로 둔 '정리 이름과 그 정리가 답하는 개념' 꼴이라 그대로 두어야 한다. 다음 회차에는 152 건에서 파일명이 제목의 한쪽만 가리키는 것만 골라낼 것. 후보 선별법: 제목의 '와/과' 앞뒤 두 개념 가운데 파일명 id 가 뒤쪽만 가리키는 경우(예: 파일명은 A 인데 제목이 'B와 C') [2/'A와 B' 제목 후보 훑기 (5차)] 2026-09-21 회차 4차(같은 회차 3차에 이어). 3차가 처리한 6 개 외에 axiom-of-choice '선택공리와 Zorn 보조정리'→'선택공리' 를 추가로 좁혔다. 이 문서는 지난 회차의 후보 목록에 없었는데, 본문이 선택공리·정렬 정리·Zorn 보조정리 세 동치 진술을 나란히 다루면서 제목에는 그중 둘만 들어가 있어 제목이 내용도 파일명도 가리키지 못했다. 링크 표시 제목은 이미 '선택공리' 가 16 곳으로 다수였고 '선택공리와 Zorn 보조정리' 7 곳을 그쪽으로 맞췄다. Zorn 보조정리를 가리키는 본문 링크 1 곳은 문맥에 맞아 그대로 뒀다. 같은 회차에 검사법을 다시 돌린 결과 제목에 '와/과' 가 든 문서가 148 개이고, 그중 정리·공식·추측·대응·법칙·원리·가설·문제·보조정리·알고리즘·모형·부등식이 든 제목을 빼면 후보가 여전히 100 개 안팎이다. 표본을 훑어 보니 남은 것은 대부분 '대상과 그 대상의 구조' 꼴이라 4절 예외다: algebraic-number-fields '대수적 수체와 정수환'(정수환은 수체 안의 부분환), bounded-operators '유계 작용소와 스펙트럼'(스펙트럼은 작용소의 성질), elliptic-curves '타원곡선과 군 구성'(군 구성은 곡선 위의 구조), dedekind-domains 'Dedekind 정역과 아이디얼의 유일분해'(유일분해가 정역의 정의적 성질), exponential-families '지수족과 충분통계량'. dag-topological 'DAG와 위상정렬' 은 파일명이 두 낱말을 모두 담아 오검출이다. 5차에 볼 것: 기계적 grep 으로는 더 좁혀지지 않으므로, 이번에 axiom-of-choice 를 찾은 방식을 쓸 것. 곧 제목의 두 낱말이 본문 절 구성과 맞는지 보는 것이다. 본문에 세 개 이상의 대등한 절이 있는데 제목이 그중 둘만 이름 대는 경우가 진짜 신호다. 검사법 초안: 제목의 '와/과' 앞뒤 낱말을 뽑아 그 문서의 '^## ' 헤딩 목록과 대조하고, 헤딩에는 있는데 제목에 없는 대등 개념이 있는지 본다 [3/'A와 B' 제목 후보 훑기 (14차)] 2026-09-25 둘째 회차 13차. 11차 note 의 후보 다섯을 전부 좁혔고(optimal-transport -> '최적 수송', semidefinite-programming -> '반정부호 계획법', schur-polynomials -> 'Schur 다항식', schubert-calculus -> 'Schubert 계산', stationary-phase -> '정상위상법'), 13차에서 새로 뽑은 후보 다섯 가운데 셋을 더 좁혔다. (a) littlewood-richardson 'Littlewood-Richardson 규칙과 hive 모형' -> 'Littlewood-Richardson 규칙'. 절 구조상 hive 와 honeycomb 과 Horn 문제가 본문을 채우지만 hive 는 그 규칙을 계산하는 모형이므로 하위 주제다. 참조 1 곳(schur-polynomials)을 맞췄고, 같은 작업에서 195 줄에 grassmannian 본문 링크를 걸었다. (b) mathieu-groups 'Mathieu 군과 Golay 부호' -> 'Mathieu 군'. Golay 부호 문서가 따로 없고 이 문서에서 Mathieu 군이 Golay 부호의 자기동형군으로 정의되므로 Golay 부호는 정의를 위한 구성이다. 참조 5 곳을 맞췄고, 곁가지로 umbral-moonshine 44 의 '[Mathieu 군 문서](...)에서' 라는 메타 표기를 사실 문장으로 바꾸면서 같은 문서 본문의 두 번째 링크를 풀었다(4절 최초 1 회). Golay 부호를 독립 문서로 뗄지는 별도 큐 항목으로 남겼다. (c) mass-formula '질량 공식과 격자의 류' -> '질량 공식'. 정의 절이 '격자, 류, 스피너 류' 다음에 '질량' 과 'Smith-Minkowski-Siegel 질량 공식' 으로 가므로 격자의 류는 질량을 정의하기 위한 배경이다. 참조 3 곳(bernoulli-numbers, niemeier-lattices, siegel-weil)을 맞췄다. 14차에 볼 것: 후보 둘이 남았다. euler-maclaurin 'Euler-Maclaurin 공식과 점근급수' 는 13차에 보고 판정을 미뤘다. 점근급수 전용 문서가 저장소에 없고, 이 문서의 성질 절 절반('## 점근전개', '## 나머지항의 크기', '## 최적 절단과 초점근 정확도', '## 전개의 비유일성')이 점근급수 일반론이라 좁히면 그 절들이 제목 밖으로 나간다. 8절 분할(asymptotic-series 를 따로 세우고 euler-maclaurin 을 그 자식으로)을 함께 재야 하는 자리이므로 한 회차를 온전히 쓸 것. local-class-field-theory '국소 유체론과 Lubin-Tate 형식군' 은 아직 보지 않았다. 판정 기준은 그대로이고, 절 구조에서 본체와 배경을 가르는 방법이 13차에 잘 통했다",
-      "createdAt": "2026-10-03T13:05:38.177Z",
-      "seq": 1577
     },
     {
       "id": "af828e40",
@@ -436,28 +436,52 @@
       "seq": 1668
     },
     {
+      "id": "17508b14",
+      "title": "'A와 B' 제목 후보 훑기 (6차)",
+      "priority": 11,
+      "note": "2026-10-04 30차 회차 5차. 제목 줄만 보는 검사(for f in docs/*.md; do head -1 $f | grep -qE '^# .*[가-힣A-Za-z0-9)]\\s*(와|과) ' && echo $f; done)로 27 개가 나온다. 과거 148 개에서 줄었다. 정리·공식·추측·대응·법칙·원리·가설·문제·보조정리·알고리즘·모형·부등식·방법·변환이 든 제목을 빼면 11 개이고, 그중 7 개는 파일명이 제목의 두 낱말을 모두 담은 오검출이다(dyson-rank-crank formalism-hilbert-program ideals-quotient-rings kleisli-eilenberg-moore limits-colimits luzin-sierpinski-sets selmer-tate-shafarevich). 파일명이 한쪽만 가리키는 진짜 후보는 넷이다. speh-representations 'Speh 표현과 잔여 스펙트럼', tracy-widom 'Tracy-Widom 분포와 Airy 핵', vogan-packets 'Vogan L 꾸러미와 순수 내부형식', zhu-algebra 'Zhu 대수와 모듈러 불변성'. 판정 기준은 13차에 통한 방법 그대로다. 본문 '^## ' 헤딩 목록에서 제목의 두 낱말 가운데 뒤쪽이 본체인지 배경인지 가른다. tracy-widom 은 Airy 핵이 분포를 정의하는 구성이라 4절 예외일 가능성이 크다. 14차 note 가 남긴 후보 둘 가운데 local-class-field-theory 는 이미 제목이 '국소 유체론' 으로 좁혀져 처리가 끝났고, euler-maclaurin 은 asymptotic-series 분할과 함께 재야 하므로 그대로 남는다.",
+      "createdAt": "2026-10-04T21:03:27.226Z",
+      "seq": 1684
+    },
+    {
+      "id": "07e25b66",
+      "title": "본문 링크 라벨이 대상 제목과 어긋난 것 훑기",
+      "priority": 11,
+      "note": "2026-10-04 30차 회차에 local-class-field-theory 참조 8 곳을 보다 발견했다. p-adic-hodge-theory:5 가 '[국소체](local-class-field-theory.md)' 로 링크했는데 그 문서의 제목은 '국소 유체론' 이고 국소체 전용 문서는 없다. 같은 회차에 그 링크를 평문으로 바꿨다. 같은 꼴이 더 있는지 전수로 보려면 본문 링크의 라벨과 대상 문서의 제목을 대조한다. 라벨이 제목과 다르고 제목의 접두사도 아닌 경우가 후보이고, 문맥에 맞는 축약(예: '격자' 로 'niemeier-lattices' 를 가리키는 것)은 정상이다. 큐 항목 8503e2d7 의 labelcheck 와 같은 작업이므로 둘을 함께 본다.",
+      "createdAt": "2026-10-04T21:03:27.368Z",
+      "seq": 1685
+    },
+    {
+      "id": "f2b49b9d",
+      "title": "'A와 B' 제목 후보 넷 가운데 남은 셋의 판정",
+      "priority": 11,
+      "note": "2026-10-04 30차 회차에 zhu-algebra 'Zhu 대수와 모듈러 불변성' -> 'Zhu 대수' 로 좁혔다. 정의 절 넷(Zhu 대수, 허용가군과 최저층, 유한성 조건, 두 정리)과 성질 절 둘이 전부 Zhu 대수이고 모듈러 불변성은 활용 절의 결론이므로 하위 주제다. 참조 라벨 5 곳(vertex-operator-algebras modular-tensor-categories schellekens-list abstract-algebra-overview)을 맞췄다. 남은 후보 셋은 speh-representations 'Speh 표현과 잔여 스펙트럼', tracy-widom 'Tracy-Widom 분포와 Airy 핵', vogan-packets 'Vogan L 꾸러미와 순수 내부형식' 이다. 같은 기준(정의와 성질 절이 어느 쪽을 다루는지)으로 하나씩 본다.",
+      "createdAt": "2026-10-04T21:04:18.471Z",
+      "seq": 1686
+    },
+    {
+      "id": "5bd9ebde",
+      "title": "'A와 B' 제목 후보 둘의 판정 (7차)",
+      "priority": 11,
+      "note": "2026-10-04 30차 회차에 tracy-widom 'Tracy-Widom 분포와 Airy 핵' -> 'Tracy-Widom 분포' 로 좁혔다. 정의 절 셋(세 가지 앙상블, Airy 핵과 Fredholm 행렬식, Painleve II 표현)이 모두 그 분포를 정의하는 수단이고 성질과 활용도 분포의 것이므로 Airy 핵은 구성이다. 참조 라벨 4 곳을 맞춰 9 곳이 모두 'Tracy-Widom 분포' 가 됐다. 남은 후보는 speh-representations 'Speh 표현과 잔여 스펙트럼' 과 vogan-packets 'Vogan L 꾸러미와 순수 내부형식' 둘이다.",
+      "createdAt": "2026-10-04T21:04:46.464Z",
+      "seq": 1687
+    },
+    {
+      "id": "b102cbdd",
+      "title": "speh-representations 의 제목과 참조 라벨",
+      "priority": 11,
+      "note": "2026-10-04 30차 회차에 vogan-packets 'Vogan L 꾸러미와 순수 내부형식' -> 'Vogan L 꾸러미' 로 좁혔다(순수 내부형식은 정의 절 첫 머리의 배경이고 본체는 꾸러미다, 라벨 4 곳 수정). 남은 후보 speh-representations 'Speh 표현과 잔여 스펙트럼' 은 제목뿐 아니라 참조 라벨도 어긋나 있어 한 작업으로 묶인다. 이 문서를 가리키는 링크 6 곳의 라벨이 'Speh 표현' 1, 'Speh 표현과 잔여 스펙트럼' 1, '연속 스펙트럼' 2, '이산 스펙트럼' 1, '자기동형 스펙트럼' 1 로 제각각이다. 스펙트럼 쪽 라벨 4 곳은 이 문서가 그 개념의 전용 문서가 아니므로 본문을 보고 평문으로 풀거나 맞는 대상으로 돌릴지 판정해야 한다. 절 구조는 정의가 '세 조각, Speh 표현, Moeglin-Waldspurger 정리' 이고 성질이 Speh 표현의 것이므로 제목은 'Speh 표현' 으로 좁히는 쪽이 유력하다.",
+      "createdAt": "2026-10-04T21:05:15.381Z",
+      "seq": 1688
+    },
+    {
       "id": "14a84d4d",
       "title": "타입 이론과 일가성 공리(HoTT)",
       "priority": 10,
       "note": "foundations 개관에서 옮김. curry-howard 와 구조주의가 만나는 자리",
       "createdAt": "2026-09-16T13:05:29.350Z",
       "seq": 339
-    },
-    {
-      "id": "58d13fa1",
-      "title": "이차형식과 Hasse–Minkowski 정리",
-      "priority": 10,
-      "note": "number-theory 개관에서 옮김. brauer-group 안에 흩어져 있다",
-      "createdAt": "2026-09-16T13:05:30.594Z",
-      "seq": 347
-    },
-    {
-      "id": "31ac8acd",
-      "title": "모노이드 범주와 연접 정리",
-      "priority": 10,
-      "note": "category-theory 개관에서 옮김. modular-tensor-categories 가 전제하는 층위",
-      "createdAt": "2026-09-16T13:40:51.143Z",
-      "seq": 370
     },
     {
       "id": "2d5c4e17",
@@ -468,36 +492,12 @@
       "seq": 372
     },
     {
-      "id": "8e21659e",
-      "title": "측지선의 비교정리",
-      "priority": 10,
-      "note": "differential-geometry 개관에서 옮김. Jacobi 장, 켤레점, Rauch 비교정리",
-      "createdAt": "2026-09-16T13:40:51.753Z",
-      "seq": 374
-    },
-    {
-      "id": "2c004dc9",
-      "title": "심플렉틱 다양체와 Hamilton 역학",
-      "priority": 10,
-      "note": "differential-geometry 개관에서 옮김. 계량 없이 2 형식만 가진 기하",
-      "createdAt": "2026-09-16T13:40:51.903Z",
-      "seq": 375
-    },
-    {
       "id": "bd4c6317",
       "title": "준볼록 최적화와 국소 최적화",
       "priority": 10,
       "note": "optimization 개관에서 옮김. 비볼록 문제에서 안장점을 벗어나는 조건",
       "createdAt": "2026-09-16T13:40:52.648Z",
       "seq": 380
-    },
-    {
-      "id": "0ad2ff63",
-      "title": "정수계획법과 절단평면",
-      "priority": 10,
-      "note": "optimization 개관에서 옮김. 조합 문제를 정수 제약으로 푸는 갈래",
-      "createdAt": "2026-09-16T13:40:52.935Z",
-      "seq": 382
     },
     {
       "id": "40e230db",
@@ -596,28 +596,12 @@
       "seq": 706
     },
     {
-      "id": "82ba3bb3",
-      "title": "초곱과 Łoś 정리 신설",
-      "priority": 10,
-      "note": "분야는 논리(#logic #set_theory #algebra). 부모 후보는 first-order-logic 과 boolean-algebras 다. lowenheim-skolem:45 가 '초필터로 구조들의 곱을 나누는 ultraproduct 구성' 을 언급하며 완전성을 거치지 않는 콤팩트성 증명이라 적지만 문서가 없다. nonstandard-analysis 도 초실수체를 콤팩트성으로만 만들고 초곱 구성을 쓰지 않았다. 내용은 초필터, 축소곱, Łoś 정리, 콤팩트성의 의미론적 증명, 초실수체와 Loeb 측도의 구성이다",
-      "createdAt": "2026-09-20T04:51:15.854Z",
-      "seq": 707
-    },
-    {
       "id": "c414ed09",
       "title": "무작위 행렬과 L 함수 문서 신설",
       "priority": 10,
       "note": "분야는 number_theory/probability, 부모는 riemann-hypothesis. 2026-09-20 회차에 riemann-hypothesis 의 중복 절 정리를 끝냈다. (1) dirichlet-l-functions 79줄과 prime-number-theorem 97줄에 riemann-hypothesis 로 가는 본문 링크를 넣는 것으로 처리했고, 두 절 모두 자기 문서의 맥락에서 필요한 진술이라 축약하지 않았다. dirichlet-l-functions 를 riemann-hypothesis 의 자식으로 두는 안은 버렸다. GRH 를 진술하려면 Dirichlet L 함수를 먼저 알아야 하므로 방향이 반대이고, riemann-hypothesis 의 부모를 3 개로 늘릴 만큼 본문 의존도 크지 않다. (2) 남은 것은 riemann-hypothesis 의 자식 자리다. 이 항목이 그중 가장 큰 것으로, Montgomery 의 쌍 상관 추측, Odlyzko 의 수치 계산, Katz-Sarnak 의 대칭형 분류, 유한체 위 곡선족의 monodromy 를 모은다. riemann-hypothesis 활용 절의 Montgomery-Dyson 대응이 이 문서를 부르는 자리이고, wigner-semicircle 과 tracy-widom 이 이미 있어 확률 쪽 부모를 댈 수 있다. 다른 자식 후보는 Mertens 추측(riemann-hypothesis 의 M(x) 동치 절), Weil 명시 공식이다",
       "createdAt": "2026-09-20T08:51:23.901Z",
       "seq": 715
-    },
-    {
-      "id": "dccba5a1",
-      "title": "거대기수 공리",
-      "priority": 10,
-      "note": "집합론. 부모 후보는 ordinals 와 forcing. 도달 불가능 기수, 측도 가능 기수, 콤팩트 기수의 계층과 무모순성 세기의 순서. forcing 활용 절의 Levy-Solovay 항목과 continuum-hypothesis 의 거대기수 절이 이 문서를 부른다",
-      "createdAt": "2026-09-20T12:39:09.422Z",
-      "seq": 728
     },
     {
       "id": "3de75166",
@@ -658,14 +642,6 @@
       "note": "2026-09-20 회차에 새로 썼다(부모 lebesgue-integral 과 banach-spaces, functional-analysis-overview 의 '공간' 갈래에서 Banach 공간 다음, 129줄). 제목을 '$L^p$ 공간' 으로 수식 그대로 썼고 render-check 를 통과한다. 직관 절은 지수를 올릴수록 큰 값에 주는 가중이 커진다는 한 줄기로 끌고 가 p 제곱근을 씌우는 이유(상수배)와 p<1 을 버리는 이유(p=1/2 에서 두 지시함수로 삼각부등식이 깨지는 계산)까지 갔다. 성질 절은 Hölder, Minkowski, Riesz-Fischer, 포함관계와 조밀성, 쌍대공간 다섯이다. hilbert-spaces, dominated-convergence, radon-nikodym, fourier-series, uniform-integrability 를 본문 링크했다. 리프다. 후속 후보: Sobolev 공간(활용 절 셋째 항목. 이미 큐에 ac64049c 로 있다. 부모를 lp-spaces 로 둘 것), 보간정리(Riesz-Thorin 과 Marcinkiewicz), 약한 L^p 와 최대함수, L^p 의 볼록성과 Clarkson 부등식(반사성의 근거), 수열공간 ell^p 를 따로 뗄지",
       "createdAt": "2026-09-20T16:54:04.220Z",
       "seq": 757
-    },
-    {
-      "id": "35e8dd97",
-      "title": "Green 함수 문서 신설",
-      "priority": 10,
-      "note": "2026-09-20 회차에 sturm-liouville 을 쓰다 발견했다. Green 함수 문서가 없어 개요 13줄, 성질 85줄, 활용 111줄 세 자리에서 링크 없이 이름만 썼다. 미분 작용소를 뒤집어 적분작용소로 바꾸는 구성이 그 문서의 핵심이고, sturm-liouville 의 완전성 증명이 거기에 기댄다. 부모 후보는 ordinary-differential-equations, 자식 후보는 sturm-liouville(지금은 부모가 ordinary-differential-equations 하나다). bounded-operators 159줄이 이미 Green 함수로 적분방정식을 만드는 절차를 한 줄로 언급하므로 중복을 피해 쓸 것",
-      "createdAt": "2026-09-20T16:55:53.278Z",
-      "seq": 758
     },
     {
       "id": "3c7574f3",
@@ -1636,6 +1612,110 @@
       "seq": 1651
     },
     {
+      "id": "7b718724",
+      "title": "여접다발의 표준 심플렉틱 구조",
+      "priority": 10,
+      "note": "미분기하. 부모는 symplectic-manifolds. 표준 1형식과 그 외미분, 정준변환, Lagrangian 영단면. 지금은 symplectic-manifolds 활용 절 한 항목으로만 있다.",
+      "createdAt": "2026-10-04T20:42:50.595Z",
+      "seq": 1669
+    },
+    {
+      "id": "5e5f35fa",
+      "title": "모멘트 사상과 심플렉틱 축소",
+      "priority": 10,
+      "note": "미분기하. 부모 후보는 symplectic-manifolds 와 lie-groups. Marsden-Weinstein 축소, 각운동량, 궤도 공간. symplectic-manifolds 활용 절에서 링크 없이 이름만 썼다.",
+      "createdAt": "2026-10-04T20:42:50.711Z",
+      "seq": 1670
+    },
+    {
+      "id": "73e2341f",
+      "title": "적분가능계와 Arnold-Liouville 정리",
+      "priority": 10,
+      "note": "미분기하/해석학. 부모는 symplectic-manifolds. 작용-각 좌표, 원환면 올갱이, Poisson 괄호 소멸하는 n 개 보존량. symplectic-manifolds 활용 절에서 이름만 썼다.",
+      "createdAt": "2026-10-04T20:42:50.827Z",
+      "seq": 1671
+    },
+    {
+      "id": "1798ccc3",
+      "title": "완전 단일모듈 행렬",
+      "priority": 10,
+      "note": "최적화/조합론/선형대수. 부모 후보는 integer-programming 과 matrices. Ghouila-Houri 판정, 구간 행렬과 근접행렬, network-flow 의 정수해와의 관계. integer-programming 성질 절 한 절로만 있다.",
+      "createdAt": "2026-10-04T20:46:23.655Z",
+      "seq": 1673
+    },
+    {
+      "id": "a2129291",
+      "title": "Hilbert 기호",
+      "priority": 10,
+      "note": "정수론. 부모는 quadratic-forms. 국소체에서의 쌍, 곱 공식과 이차 상호법칙의 재진술, Brauer 군의 2 등분점. quadratic-forms 성질 절에서 이름만 썼다.",
+      "createdAt": "2026-10-04T20:50:29.386Z",
+      "seq": 1674
+    },
+    {
+      "id": "a904955c",
+      "title": "이진 이차형식의 유형군",
+      "priority": 10,
+      "note": "정수론. 부모는 quadratic-forms 와 algebraic-number-fields. Gauss 합성, 축약 형식, 이데알 류군과의 동형, 유형수 1 인 판별식의 목록. quadratic-forms 성질 절 한 절로만 있다.",
+      "createdAt": "2026-10-04T20:50:29.500Z",
+      "seq": 1675
+    },
+    {
+      "id": "ccaa2b81",
+      "title": "측지선의 비교정리",
+      "priority": 10,
+      "note": "미분기하. 부모는 geodesics. Jacobi 장, Rauch 비교정리, Cartan-Hadamard 와 Bonnet-Myers. geodesics 켤레점 절에서 결과만 한 줄로 적었다.",
+      "createdAt": "2026-10-04T20:52:51.371Z",
+      "seq": 1676
+    },
+    {
+      "id": "42c0f132",
+      "title": "Tannaka 쌍대성",
+      "priority": 10,
+      "note": "범주론/표현론. 부모는 monoidal-categories. 섬유함자를 가진 대칭 모노이드 범주에서 군을 복원하는 정리, 아핀 군 스킴과 가군 범주. monoidal-categories 활용 절에서 이름만 썼다.",
+      "createdAt": "2026-10-04T20:55:45.740Z",
+      "seq": 1678
+    },
+    {
+      "id": "aad86bc9",
+      "title": "양자군",
+      "priority": 10,
+      "note": "대수/범주론. 부모 후보는 monoidal-categories 와 lie-algebras. U_q(g) 의 Hopf 대수 구조, R 행렬, 표현 범주의 꼬임이 대칭이 아닌 점. monoidal-categories 와 modular-tensor-categories 가 이름만 쓴다.",
+      "createdAt": "2026-10-04T20:55:45.870Z",
+      "seq": 1679
+    },
+    {
+      "id": "44ea5249",
+      "title": "호몰로지 대수 문서 신설",
+      "priority": 10,
+      "note": "대수. 부모 후보는 exact-sequences 와 derived-functors. 아벨 범주, 사슬 복합체, 분해와 스펙트럼열의 자리. 30차 회차에 exact-sequences 를 쓰면서 뱀 보조정리와 사영분해를 한 절씩만 다뤘다.",
+      "createdAt": "2026-10-04T20:58:51.963Z",
+      "seq": 1680
+    },
+    {
+      "id": "968edba2",
+      "title": "Mayer-Vietoris 완전열",
+      "priority": 10,
+      "note": "위상. 부모 후보는 exact-sequences 와 homology. 두 열린집합의 호몰로지에서 합집합을 계산하는 긴 완전열. exact-sequences 활용 절에서 이름만 썼다.",
+      "createdAt": "2026-10-04T20:58:52.091Z",
+      "seq": 1681
+    },
+    {
+      "id": "3da1b6ce",
+      "title": "Lie 미분",
+      "priority": 10,
+      "note": "미분기하. 부모는 vector-fields. 흐름으로 끌어온 텐서장의 미분, Cartan 공식과 외미분의 관계. vector-fields 와 symplectic-manifolds 가 이름만 쓴다.",
+      "createdAt": "2026-10-04T21:01:05.172Z",
+      "seq": 1682
+    },
+    {
+      "id": "701801d2",
+      "title": "접다발",
+      "priority": 10,
+      "note": "미분기하. 부모 후보는 manifolds 와 vector-bundles. 접공간의 구성 세 가지(곡선류, 도함수, 좌표), 접다발의 매끄러운 구조, 여접다발. vector-fields 가 TM 을 정의 없이 쓴다.",
+      "createdAt": "2026-10-04T21:01:05.306Z",
+      "seq": 1683
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -1922,6 +2002,14 @@
       "note": "28차 판정. 해소로 보아 제거했다. cohomology 문서(84줄)가 요청 내용을 둘 다 담는다. 정의 절 '## 컵곱' 31-37줄이 특이 사슬에서 컵곱의 식을 쓰고 Leibniz 꼴 등식으로 코호몰로지에 내려감을 보인 뒤 H^*(X;R) 이 등급환이 된다는 것으로 코호몰로지환을 정의한다. 성질 절 '## Poincare 쌍대성' 57-59줄이 닫힌 유향 n 다양체에서 기본류와의 cap 곱이 H^k 와 H_{n-k} 의 동형을 준다는 진술과, 그 동형 아래 컵곱이 부분다양체의 교차에 대응하고 상보 차수 두 류의 곱을 기본류에서 값매김한 수가 교차수라는 해석을 담는다. 각주는 Hatcher 3장이다. 집계. '개관에서 옮김' 꼴 항목은 28차 시작 시점에 24 개였고(먼저 제거한 일곱과 그 뒤 추출한 열일곱) 그 가운데 열셋을 해소로 판정해 제거했다. 해소된 열셋: 역수학, Krull 차원과 소 아이디얼의 사슬, Riemann 가설과 영점 분포, 벡터다발과 특성류, 정칙 국소환과 접공간, Topos 와 내부 논리, Nesterov 가속법, 아벨 범주와 유도 함자, 근접 알고리즘과 분리가능 최적화, 확률적 최적화의 수렴 이론, 범주의 극한 계산 예, 코호몰로지 환과 Poincare 쌍대성. 아직 문서가 없어 남은 열하나: 타입 이론과 일가성 공리(HoTT), 이차형식과 Hasse-Minkowski 정리, 체 방법(sieve), 모노이드 범주와 연접 정리, 무한 범주와 호모토피 이론, 측지선의 비교정리, 심플렉틱 다양체와 Hamilton 역학, Ricci 흐름, 내점법, 준볼록 최적화와 국소 최적화, 정수계획법과 절단평면. 이 열하나가 다음 회차 신규 주제의 기본 후보다.",
       "createdAt": "2026-10-03T17:01:08.054Z",
       "seq": 1588
+    },
+    {
+      "id": "181b5441",
+      "title": "절단평면의 Chvatal 계수",
+      "priority": 8,
+      "note": "최적화/조합론. 부모는 integer-programming. 유계 다면체를 정수 껍질로 보내는 CG 닫힘의 최소 횟수, 상한과 하한의 알려진 결과. integer-programming 성질 절에서 이름만 썼다.",
+      "createdAt": "2026-10-04T20:46:23.526Z",
+      "seq": 1672
     },
     {
       "id": "fb947ff9",
