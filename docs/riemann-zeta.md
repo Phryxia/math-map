@@ -108,7 +108,7 @@ $-\zeta'/\zeta$ 를 Perron 공식에 넣고 유수 정리로 계산하면 [소�
 
 ## L 함수
 
-[Dirichlet 지표](dirichlet-l-functions.md) $\chi$ 를 계수에 붙인 $L(s,\chi)=\sum_{n\ge1}\chi(n)n^{-s}$ 도 Euler 곱과 함수방정식을 가지며, 자명한 지표가 $\zeta$ 를 준다. 수체 $K$ 의 아이디얼로 같은 곱을 만든 것이 Dedekind zeta 함수 $\zeta_K(s)=\sum_{\mathfrak a}(N\mathfrak a)^{-s}$ 이고, 그 $s=1$ 유수가 류수 공식에서 류수와 조정자를 묶는다. [Tate 의 박사논문](tate-thesis.md)은 이 함수방정식을 아델 위의 Fourier 해석으로 다시 증명한다.
+[Dirichlet 지표](dirichlet-l-functions.md) $\chi$ 를 계수에 붙인 $L(s,\chi)=\sum_{n\ge1}\chi(n)n^{-s}$ 도 Euler 곱과 함수방정식을 가지며, 자명한 지표가 $\zeta$ 를 준다. 수체 $K$ 의 아이디얼로 같은 곱을 만든 것이 [Dedekind zeta 함수](algebraic-number-fields.md) $\zeta_K(s)=\sum_{\mathfrak a}(N\mathfrak a)^{-s}$ 이고, 그 $s=1$ 유수가 류수 공식에서 류수와 조절자를 묶는다. [Tate 의 박사논문](tate-thesis.md)은 이 함수방정식을 아델 위의 Fourier 해석으로 다시 증명한다.
 
 ## 모듈러 형식의 계수
 
