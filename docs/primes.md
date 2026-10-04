@@ -120,5 +120,6 @@ Diophantus 방정식의 해 존재, 제곱수 판정, 약수 함수의 계산이
 - [유일분해정역](unique-factorization-domains.md)
 - [Riemann zeta 함수](riemann-zeta.md)
 - [소수 정리](prime-number-theorem.md)
+- [체 방법](sieve-methods.md)
 
 #number_theory #algorithms #algebra
