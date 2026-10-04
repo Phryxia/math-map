@@ -155,6 +155,7 @@ $$
 
 - [곡률](curvature.md)
 - [격자](lattices.md)
+- [이차형식](quadratic-forms.md)
 - [근계](root-systems.md)
 
 #linear_algebra #analysis #functional_analysis
