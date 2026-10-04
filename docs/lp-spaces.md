@@ -121,6 +121,6 @@ $1\le p\lt\infty$ 이고 $\mu$ 가 $\sigma$ 유한이면 사상 $g\mapsto\bigl(f
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Sobolev 공간](sobolev-spaces.md)
 
 #functional_analysis #measure_theory #analysis #probability
