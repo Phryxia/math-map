@@ -1,8 +1,16 @@
 {
   "version": 1,
-  "savedAt": "2026-10-03T21:00:05.893Z",
-  "nextSeq": 1607,
+  "savedAt": "2026-10-04T01:01:43.766Z",
+  "nextSeq": 1623,
   "items": [
+    {
+      "id": "aeac2190",
+      "title": "수식에 라틴 문자와 혼동되는 키릴·그리스 문자가 섞이는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 29차 회차에 jones-wenzl-idempotents 를 쓰다 개요의 $$ 블록에서 'e_i' 의 e 가 키릴 소문자 е(U+0435)로 들어갔다. 'f_n^2=f_n, e_if_n=f_nе_i=0' 에서 둘째 e 하나만 키릴이었다. 원문을 눈으로 보면 라틴 e 와 구별되지 않고 MathJax 는 이 글자를 명령으로도 변수로도 읽지 못해 식이 깨진다.\n\n기존 검사 여섯 가지가 이것을 잡지 못한다. render-check 는 원문의 수식 스팬이 렌더 결과에 남는지만 보므로 통과하고, 4절의 awk 와 grep 넷도 ASCII 패턴만 보므로 통과한다. 29차에 걸린 것은 5번 검사 grep -noE '\\[^a-zA-Z0-9\\\\]_' 의 우연이다. 키릴 е 가 '영숫자가 아닌 문자' 로 잡혀 그 뒤 밑줄이 보고됐다. 즉 바로 뒤에 첨자 밑줄이 없는 자리에 섞이면 여섯 검사 전부를 통과한다.\n\n검사법. 라틴과 모양이 같은 키릴·그리스 문자를 코드포인트로 거른다. 키릴 소문자 а е о р с у х і(U+0430 0435 043E 0440 0441 0443 0445 0456), 키릴 대문자 А В Е К М Н О Р С Т У Х(U+0410 0412 0415 041A 041C 041D 041E 0420 0421 0422 0423 0425), 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ(U+03BF 0391 0392 0395 0397 0399 039A 039C 039D 039F 03A1 03A4 03A7)를 docs 전체와 README 에서 찾는다. 29차에 전수로 돌려 보고는 둘이고 하나는 오검출이다. transcendental-numbers:98 의 키릴 е 둘은 Gelfond 논문의 학술지명 'Известия Академии наук СССР' 안이라 정상이다. 따라서 검사 결과는 키릴 문자가 든 줄이 러시아어 문헌 표기인지만 보면 판정된다. 그리스 문자는 수식에서 \\alpha 꼴 명령으로 쓰므로 본문에 직접 오면 대개 사고다.\n\n새 문서나 보강한 문서를 쓴 회차에는 그 문서들만이라도 이 검사를 돌린다. dev/ 스크립트는 고치지 않으므로(0절) 스크래치패드에 python 으로 만들면 된다. 독자가 dev 에 넣을지는 판단이 필요하다.",
+      "createdAt": "2026-10-04T00:56:10.495Z",
+      "seq": 1614
+    },
     {
       "id": "08e59419",
       "title": "CLAUDE.md 4절의 '직관 두 문단' 규칙과 모범 예의 어긋남",
@@ -100,6 +108,22 @@
       "seq": 1606
     },
     {
+      "id": "7cd650c2",
+      "title": "증명 머리말 꼴의 강조 표기 혼용",
+      "priority": 20,
+      "note": "29차 회차에 '증명 스케치' 를 '증명의 요지' 로 통일했다(커밋 1a43117, 29 문서 67 곳). 단어는 통일됐으나 강조 꼴은 그 자리의 기존 표기를 그대로 두었으므로 네 갈래가 남아 있다. '증명의 요지는 ~' 평문 산문 43, '**증명의 요지.**' 굵게 34, '*증명의 요지.*' 기울임 43, '## 증명의 요지' 헤딩 16, '증명의 요지.' 평문 59, '증명의 요지:' 콜론 2, '**증명의 요지 (2=>1).**' 처럼 괄호로 경우를 적은 것 3 이다. CLAUDE.md 4절은 '굵은 글씨는 정의되는 용어에만 쓴다' 고 하므로 '**증명의 요지.**' 34 곳은 규칙 위반이고, 기울임은 규칙에 언급이 없다. 평문 '증명의 요지.' 로 모으는 것이 4절에 맞지만 '## 증명의 요지' 헤딩 16 곳은 절을 나눈 것이라 성격이 다르다. 한 회차를 이 꼴 통일에 쓸 때 정할 것 둘. (1) 굵게와 기울임을 평문으로 내릴지. (2) 헤딩 꼴 16 곳을 남길지. 29차 회차에 단어만 바꾸고 꼴을 건드리지 않은 이유는 꼴 변경이 77 곳을 더 고치는 별개 판단이기 때문이다. 함께 볼 것: 증명 끝의 ∎ 기호를 94 문서가 쓰는데 규격에 없다. 관례로 자리잡았으므로 29차 회차에는 손대지 않았고, 꼴 통일 회차에 규격에 적을지 정하면 된다.",
+      "createdAt": "2026-10-04T00:49:30.375Z",
+      "seq": 1611
+    },
+    {
+      "id": "49d7bd05",
+      "title": "번역체 grep 의 '어진다' 오탐",
+      "priority": 20,
+      "note": "29차 회차에 9/20 회차 새 문서 여섯을 회귀 점검하며 발견했다. 번역체 검사에 쓰는 피동 패턴 '어진다' 는 피동이 아닌 자동사를 함께 잡는다. erdos-ko-rado:61 의 '크기가 한 차수 떨어진다' 는 '떨어지다' 자동사이고 피동이 아니라 오탐이다. '달라진다', '길어진다', '작아진다' 류도 같은 꼴이므로 이 패턴으로 거른 뒤에는 반드시 주변 문맥을 보고 판정해야 한다. 같은 점검에서 실제 피동으로 걸러 고친 것은 둘이다(hamiltonian-cycles:13 '순환이 만들어진다' -> '나온다', erdos-renyi-graphs:7 '두 단계로 이루어진다' -> '두 단계다', 커밋 b2b9098). 함께 고친 금지 표현 하나는 hamiltonian-cycles:77 각주의 '아니라는 사실과 그 증명은' -> '아니라는 증명은' 이다. 이 항목은 '증명의 요지'(9bc3b9fa b4ccf30f)와 '정리하면'(d7db456a) 오탐과 같은 종류이고, 셋 다 CLAUDE.md 4절의 grep 을 좁히거나 예외를 적는 독자의 판단이 필요하다. 세 항목을 한 번에 정리하는 것이 낫다.",
+      "createdAt": "2026-10-04T01:00:54.044Z",
+      "seq": 1621
+    },
+    {
       "id": "410fd79d",
       "title": "Zilber 삼분법 갈래의 후속 간선 (15차)",
       "priority": 12,
@@ -108,76 +132,36 @@
       "seq": 1554
     },
     {
-      "id": "9ecbd8ff",
-      "title": "분야 통독: 암호론 완료, 다음은 order_theory",
+      "id": "5e26ff9f",
+      "title": "분야 통독: order_theory 완료, 다음은 machine_learning",
       "priority": 12,
-      "note": "28차 회차에 cryptography 를 끝냈다. 다섯(discrete-logarithm homomorphic-encryption pairing-based-cryptography post-quantum-cryptography rsa-cryptosystem)과 개관 하나다. 고친 것은 여섯 줄이다(커밋 d63d64a). discrete-logarithm:43 '이 성질이 ... 재료가 되었다' -> '쌍선형 사상 기반 암호가 이 비대칭을 쓴다'(피동과 비유 겸한 명사 주어). discrete-logarithm:91 '... 비슷한 것이 이 때문이다' -> '... 공유하므로 ... 비슷하다'(앞 문장을 되풀어 설명하는 '때문이다'). pairing-based-cryptography:17 '곡선 군에서는 만날 수 없던 a 와 b' -> '곱할 수 없던'(변수의 의인화). rsa-cryptosystem:104 'NP(...) 와 coNP' -> ')와'(영문 괄호 뒤 조사 띄어쓰기). rsa-cryptosystem:106 '배수라는 사실로부터' -> '배수이므로'(금지 표현 '라는 사실'). rsa-cryptosystem:142 '... 쓰이고 ... 처리한다. 공개키 연산이 느리기 때문이다' -> '공개키 연산이 느리므로 ...'(뒤따라 붙은 '때문이다' 문장을 앞으로 합쳤다). 돌린 검사: 수식 검수 여섯, 문장형 헤딩 grep, 비유 grep, 열린 문제 절 grep, operatorname 류 금지 매크로, 코드블록 언어와 짝 검사, 실행 흔적(console.log print 반례 1e-10 수치 확인 절), 구형 '## 정의' 구조, 번역체와 금지 표현 39 패턴, 조사 띄어쓰기, 두문자어 전수. 코드블록은 0 개이고 구형 구조도 0 개다. 비유 grep 의 post-quantum-cryptography:126 '함정문' 둘은 trapdoor 의 역어로 용어 예외다(큐 9d7fa71a 와 같은 판정). 조사 띄어쓰기 보고 70 건 가운데 69 건은 '$p$ 과' 꼴로 수식 뒤 공백 1개 규칙을 따른 것이고 실제 위반은 rsa:104 하나였다. 두문자어는 cryptography-overview 14-35 줄의 mermaid 노드 id(TD CRY MOD FF FE EC PBC MC SEA DW KED LAT ST LT SIG DC)와 학회·학술지(ANTS III ACM AMS EUROCRYPT LNCS SIAM RFC IBM NIST), 저자 이름 머리글자로 굳은 방식 이름(DGHV BGV BFV CKKS TFHE BLS MOV)을 빼면 전부 첫 등장에서 풀려 있다. 헤딩에 먼저 나온 SIS DGHV BGV BFV CKKS 는 4절대로 본문 첫 등장에서 푼다(각각 36, 32, 51 줄). 다음 분야는 order_theory 9개다. 그 다음 후보는 machine_learning 7개, field_theory 7개. philosophy_of_math 4개와 foundations 2개와 data_structures 2개는 개관이 다른 분야 것을 쓰므로(4.5절 매핑) 함께 볼 분야를 정해야 한다.",
-      "createdAt": "2026-10-03T20:40:05.631Z",
-      "seq": 1591
+      "note": "29차 회차에 order_theory 를 끝냈다. 주 분야가 order_theory 인 문서는 아홉이다(abstract-interpretation boolean-algebras dilworth-theorem domain-theory galois-connections heyting-algebras order-lattices order-theory-overview partial-orders). 고친 것은 여덟 줄이다(커밋 a787459). galois-connections:68 '이때 짝은 명시적으로 주어진다' -> '오른쪽 짝을 다음 식으로 적는다'(피동 겸 예고문). galois-connections:84 '존재하고 다음과 같이 주어진다' -> '최소 고정점과 최대 고정점을 다음 식으로 적는다'(피동, 이어 붙인 '~이며'도 '~이고'로 끊었다). boolean-algebras:93 '무한 하강열이 만들어진다' -> '더 작은 원소를 계속 잡아 무한 하강열이 나온다'(피동). boolean-algebras:113 '... 보내면 되기 때문이다' 를 앞으로 돌려 '보낼 수 있다. 두 원소 대수만으로 충분한 점이 ...'(앞 문장을 되풀어 설명하는 '때문이다'). dilworth-theorem:7 '구하는 방법도 ... 매칭으로 주어진다' -> '최대 매칭을 구하면 최소 사슬 덮개가 나온다'(피동 겸 명사화). domain-theory:21 '... 정해지고 ... 다루어진다' -> 두 문장으로 끊고 '다룬다'(피동 겸 긴 문장). order-lattices:109 '분배가 아니다. ... 이루기 때문이다' -> '모듈러다. ... 이루므로 분배는 아니다'(되풀어 설명하는 '때문이다'). partial-orders:68 '쌍으로 가지며 ... 짝지어진다' -> 두 문장으로 끊고 '그 쌍을 이룬다'(피동 겸 '~하며' 이어 붙이기). 돌린 검사: 수식 검수 여섯, 문장형 헤딩 grep, 비유 grep, 열린 문제 절 grep, 금지 매크로, 코드블록 언어와 짝, 구형 '## 정의' 구조, 번역체와 금지 표현 39 패턴. 문장형 헤딩 0, 비유 0, 코드블록 0, 구형 구조 0, 수식 여섯 전부 0 이었다. partial-orders:68 의 '되풀이된다' 는 자동사로 굳은 쓰임이라 손대지 않았다. 다음 분야는 machine_learning 7개이고 그 다음 후보는 field_theory 7개다. philosophy_of_math 4개, foundations 2개, data_structures 2개는 개관이 다른 분야 것을 쓰므로(4.5절 매핑) 함께 볼 분야를 정해야 한다.",
+      "createdAt": "2026-10-04T00:44:25.845Z",
+      "seq": 1608
     },
     {
-      "id": "6da12104",
-      "title": "정의 없이 쓴 용어 훑기 (전체 훑기 31차)",
-      "priority": 12,
-      "note": "30차(28차 회차)에 '기약' 의 남은 두 갈래를 판정했다. (1) 기약 다양체: algebraic-varieties 27줄이 '대수적 집합 X 가 기약이라는 것은 X=X1∪X2 로 쓸 때 둘 가운데 하나가 X 자신이라는 뜻' 으로 굵게 자체 정의하므로 대상이 아니다. 같은 문서 41·43·47·57줄의 기약도 이 정의를 쓴다. (2) 기약가군: zhu-algebra 와 vertex-operator-algebras 가 기약가군을 정의 없이 쓰는데, 두 문서 모두 modules.md 본문 링크를 이미 하나 갖고 있어(zhu-algebra 5줄, vertex-operator-algebras 도 1건) 4절의 '최초 1회' 링크는 채워져 있었다. 실제 공백은 링크 대상인 modules.md 자신이었다. 그 문서는 166줄('R/I 가 단순 가군'), 174줄(Maschke)에서 단순가군을 쓰면서 정의하지 않았다. 그래서 '## 부분가군, 몫, 준동형' 절의 부분가군 정의 바로 뒤에 한 문단을 넣었다(커밋 cae695c). 'M != 0 이고 부분가군이 0 과 M 뿐이면 M 을 단순가군이라 한다. 표현론에서는 같은 조건을 기약이라 부르고 단순가군을 기약가군이라 쓴다.' 부분가군이 바로 위에 정의되어 있어 선행 용어가 갖춰진 자리다. 동의어 두 이름을 한 문장에 둔 이유는 zhu-algebra 쪽이 기약가군으로, 환론 쪽이 단순가군으로 쓰기 때문이다. 이로써 '기약' 갈래를 전부 닫았다. 앞선 차수가 닫은 것: 기약 다항식(29차, finite-fields galois-theory newton-polygon 에 polynomial-rings 링크), 기약표현(28차, group-representations -> peter-weyl 간선). 용법이 달라 대상이 아닌 것: 기약성(markov-chains perron-frobenius), 기약 접속(instanton-floer-homology), 기약분수(diophantine-approximation). '이산' 갈래는 28차 판정대로 열지 않는다. 31차 후보는 아직 고르지 않았다. 'VOA 의 유리성', '최고무게 가군', '홀로모픽' 처럼 vertex-operator-algebras 축이 정의 없이 쓰는 용어가 눈에 띄었으므로 그 갈래를 먼저 보는 것이 좋다.",
-      "createdAt": "2026-10-03T20:41:52.889Z",
-      "seq": 1592
-    },
-    {
-      "id": "0b983ce9",
-      "title": "환론·대수 축의 후속 간선 (16차)",
-      "priority": 12,
-      "note": "15차(28차 회차). 14차가 가리킨 새 문서 후보 둘 가운데 분할 대수를 썼다(partition-algebras, 115줄, 커밋 f8885d7). 부모는 brauer-algebras 하나이고 그 문서의 리프를 닫았다. check-cycle brauer-algebras partition-algebras --allow-new 는 OK 였다. 간선 근거는 5절 세 기준이다. brauer-algebras 성질 절 75-83 '## 도형 대수의 가족' 표의 마지막 줄이 분할 대수와 S_n 과 Bell 수를 세우고, 활용 절 93-95 '## 분할 대수와 대칭군' 이 중심화대수 식을 적고 지나간다. 분할 도형은 Brauer 도형의 블록 크기 제약을 푼 것이므로 확장 관계이고, C[S_k] 부분집합 B_k(n) 부분집합 P_k(n) 사슬을 성질 절에 적었다. 담은 것: 집합 분할 도형과 n^c 곱셈 규칙, Phi 의 성분 정의, Jones 의 중심화대수 정리(n>=2k 에서 동형, n<2k 에서 핵이 생기는 이유까지)와 S_n 궤도로 하는 증명 요지, 쌍대 분해와 차원 합 B(2k), 도형 대수 사슬, 반쪽 단계 P_{k+1/2}(n) 과 중복 없는 분기, 동변 선형사상 차원 B(2k)(k=1 에서 2, k=2 에서 15)와 Weisfeiler-Leman 동등성, Potts 모형 기원. 본문 링크는 bell-numbers partitions graphs 셋이고 전부 조상이 아니라 간선은 긋지 않았다. 태그는 #algebra #combinatorics #group_theory #machine_learning 이고 abstract-algebra-overview 95줄의 Schur 갈래 끝에 한 줄로 넣었다(그 개관의 mermaid 지도에는 Brauer 가 없어 지도는 그대로다). README 의 문서·간선 수를 588 과 1059 로 맞췄다. 16차에 볼 것 둘. (1) 14차가 남긴 다른 후보 양자 코호몰로지는 아직 열지 않았다. docs 에 모듈라이 공간, 안정 사상, Gromov-Witten 불변량 문서가 하나도 없어 schubert-calculus 와 cohomology 만 부모로 두면 선수지식이 비는 구조가 된다. 그 밑작업으로 모듈라이 공간 문서가 먼저 필요하다. (2) partition-algebras 가 새 리프가 되었다. 자식 후보는 Temperley-Lieb 대수(분할 대수의 평면 부분대수이고 docs 에 없다)와 세포대수(brauer-algebras 각주가 Graham-Lehrer 를 인용하는데 docs 에 없다)다. 둘 다 새 문서이므로 간선만으로는 닫히지 않는다.",
-      "createdAt": "2026-10-03T20:47:02.675Z",
-      "seq": 1593
-    },
-    {
-      "id": "ccba89c7",
+      "id": "2c532341",
       "title": "본문 링크가 수식 안에 들어가는 사고의 검사",
       "priority": 12,
-      "note": "상시 항목. 링크를 문자열 위치로 삽입하거나 해제하는 작업을 하는 회차에서는 그 작업과 함께 돌리고, 그런 작업이 없는 회차에서는 건너뛴다.\n\n2026-10-03 28차 회차에 한 번 돌렸다. 그 회차는 brauer-algebras 의 '아직 연결한 문서가 없다.' 를 자식 링크로 바꾸고 abstract-algebra-overview 95줄의 갈래 사슬 끝에 링크를 붙이는 문자열 치환을 했고, partition-algebras 를 새로 쓰면서 본문 링크 넷(bell-numbers brauer-algebras partitions graphs)을 넣었다. 치환을 모두 마친 뒤 전수로 돌려 588 개 파일에서 수식 안 링크 0 건, 헤딩 안 링크 0 건, 중첩 링크 0 건이다.\n\n검사 방법. 지난 차수의 '라벨에 대괄호가 있는 링크' 패턴은 오탐이 14 건 나온다(conditional-expectation 19/130/170, gaussian-integers 77, greenberg-conjecture 47, heyting-algebras 93, iwasawa-main-conjecture 5, martingales 49/85, mass-formula 121, overconvergent-modular-symbols 113, polynomial-rings 92, spectral-theorem 5, tensor-products 219). 전부 수식의 대괄호가 같은 줄 뒤에 있는 진짜 링크의 '](' 와 짝지어진 것이다. 라벨을 좁히면 중첩 자체를 매칭하지 못해 0 건이 나오므로, 좁히는 대신 각 줄에서 인라인 수식 스팬을 공백으로 지운 뒤 중첩을 세는 것이 정공법이다.\n\n28차에 쓴 스크립트는 코드펜스와 여러 줄 $$ 블록을 토글로 건너뛰고, 한 줄짜리 $$식$$ 과 인라인 $...$ 스팬을 따로 뽑아 그 안의 (id.md) 링크를 센다. 헤딩 검사에서 '# 연관 문서' 와 그 하위 H2 는 링크 목록 자리이므로 제외해야 한다(그러지 않으면 전 문서가 걸린다). 스크립트는 회차마다 새로 만들면 된다. README 도 함께 본다.",
-      "createdAt": "2026-10-03T20:47:58.475Z",
-      "seq": 1597
+      "note": "상시 항목. 링크를 문자열 위치로 삽입하거나 해제하는 작업을 하는 회차에서는 그 작업과 함께 돌리고, 그런 작업이 없는 회차에서는 건너뛴다.\n\n2026-10-04 29차 회차에 돌렸다. 그 회차의 링크 치환은 넷이다. (1) catalan-numbers 의 '아직 연결한 문서가 없다.' 를 자식 링크로 바꿨다. (2) brauer-algebras 와 modules 의 더 알아보기에 링크를 끼워 넣었다. (3) brauer-algebras:70 의 '**세포대수(cellular algebra)**' 굵은 표기와 temperley-lieb-algebras:67 의 같은 표기를 본문 링크로 바꿨다. (4) abstract-algebra-overview 95줄 갈래 사슬 가운데에 링크를 끼우고 그 아래 한 줄을 더했다. 새 문서 둘의 본문 링크는 temperley-lieb-algebras 가 셋(catalan-numbers brauer-algebras partition-algebras knot-invariants braid-groups 가운데 간선 아닌 셋), cellular-algebras 가 둘(brauer-algebras partitions)이다. 치환을 모두 마친 뒤 전수로 돌려 592 개 파일(docs 591 + README)에서 수식 안 링크 0, 헤딩 안 링크 0, 중첩 링크 0 이다.\n\n검사 방법. 28차 메모가 적은 정공법을 그대로 썼다. 코드펜스와 여러 줄 $$ 블록을 토글로 건너뛰고, 각 줄에서 인라인 $...$ 와 한 줄 $$...$$ 스팬을 뽑아 그 안의 (id.md) 또는 (http...) 링크를 세고, 중첩 검사는 수식 스팬을 같은 길이의 공백으로 지운 뒤 라벨 안의 '](' 를 센다. 이렇게 하면 28차가 적은 오탐 14 건이 전부 사라진다. 헤딩 검사는 '# 연관 문서' H1 을 만나면 그 뒤를 링크 목록 자리로 보아 제외하고 다음 H1 에서 다시 켠다(그러지 않으면 전 문서가 걸린다). 스크립트는 회차마다 스크래치패드에 새로 만들면 되고 dev/ 에 넣지 않는다(0절). README 도 같은 검사에 함께 넣는다.",
+      "createdAt": "2026-10-04T00:50:12.320Z",
+      "seq": 1612
     },
     {
-      "id": "9fef12e0",
-      "title": "나열형 mermaid 훑기 (차기)",
-      "priority": 11,
-      "note": "2026-09-19 회차 20차. 검사기를 스크래치패드 m2.mjs 로 다시 만들었다. mermaid 블록을 뽑아 (1) 화살표 라벨이 논증 접속사(따라서/그러므로/이므로/하면/증명/단계), (2) 노드 라벨의 과반이 종결어미로 끝나는 문장, (3) 노드 3~5 개에 간선이 노드-1 인 선형 사슬, 셋으로 후보를 낸다. 저장소의 mermaid 블록은 150 개이고 세 기준이 낸 후보는 넷뿐이었다. 처리: brauer-groups(Br(K) 곱 공식에서 Hasse 원리로, Br(X) 에서 Brauer–Manin 장애로 가는 두 사슬. 앞뒤 문단이 같은 내용을 이미 서술하고 그림에만 있는 정보가 없어 지웠다), gan-gross-prasad(Whittaker/Bessel/Fourier–Jacobi 세 모형 비교를 4 열 표로. 여차원 조건과 해당 군이 그림에만 있던 정보라 표로 옮겼다), vandiver-conjecture(A 의 홀짝 성분에 붙는 도구 짝짓기를 2 열 표로). 남긴 것 하나: field-extensions 의 Q(√2) → Q(√2,√3) → Q(√2,√3,∛5) 는 4절이 허용하는 확대의 탑이다. 세 기준으로는 더 나오지 않으므로 다음 회차에는 다른 기준이 필요하다. 후보 기준안: 노드가 전부 명사인데도 간선이 '포함'이나 '사상' 이 아니라 시간 순서인 그림, 같은 정보가 바로 앞뒤 문단에 문장으로도 있는 그림(그림과 본문의 낱말 중복률로 잰다)",
-      "createdAt": "2026-09-19T20:45:02.591Z",
-      "seq": 673
+      "id": "ba342826",
+      "title": "정의 없이 쓴 용어 훑기 (전체 훑기 32차)",
+      "priority": 12,
+      "note": "31차(29차 회차)에 30차 메모가 가리킨 '최고무게' 갈래를 판정했다. 결론은 이 갈래가 링크 삽입으로 닫히지 않는다는 것이다. 최고무게를 쓰는 문서는 14 개이고(borel-weil-bott casselman-shalika category-o gan-gross-prasad geometric-satake kazhdan-lusztig lie-algebras schur-weyl-duality spherical-harmonics temperley-lieb-algebras vertex-operator-algebras wess-zumino-witten weyl-character-formula zhu-algebra) 정의하는 자리는 weyl-character-formula:48 의 굵은 '**최고무게**' 하나다. 나머지 13 개 가운데 weyl-character-formula 링크를 가진 것은 셋(borel-weil-bott casselman-shalika gan-gross-prasad)뿐이고, 조상 관계로 선수지식이 보장되는 것이 넷 더다(category-o kazhdan-lusztig schur-weyl-duality temperley-lieb-algebras). 링크도 조상도 없는 실제 공백은 다섯이다: geometric-satake:83, spherical-harmonics:98, vertex-operator-algebras:13, wess-zumino-witten:82, zhu-algebra:88. lie-algebras:126 은 sl_2 계산 중에 'E 가 고윳값을 올리다가 멈추므로 최고무게 벡터가 있고' 로 용법을 자체 설명하므로 대상이 아니다. 다섯 자리에 링크를 넣지 않은 이유는 표시 제목 관례다. 저장소의 weyl-character-formula 링크 14 개가 전부 '[Weyl 지표 공식](weyl-character-formula.md)' 로 문서 제목을 그대로 쓰므로 '[최고무게](weyl-character-formula.md)' 는 관례에 어긋나고, 다섯 자리의 문장에 'Weyl 지표 공식' 링크를 넣는 것은 문맥상 어색하다. 구조적 원인은 최고무게가 Lie 표현론의 기본 개념인데 Weyl 지표 공식 문서에 종속되어 있는 것이다. 따라서 32차의 작업은 '최고무게 가군' 문서를 신설하는 것이고, 그때 정할 것 셋이다. (1) 부모를 lie-algebras 로 할지 root-systems 로 할지. 개관 갈래가 lie-algebras -> root-systems -> weyl-character-formula 이므로 root-systems 가 자연스럽다. (2) weyl-character-formula:48 의 최고무게 정의와 60줄의 최고무게 분류 정리를 새 문서로 옮길지 양쪽에 둘지. 옮기면 그 문서의 성질 절이 얇아진다. (3) Verma 가군을 새 문서에 담을지 category-o 에 두고 링크만 할지. category-o 가 이미 Verma 구성을 직관 절에 담고 있어 중복 위험이 있다. 이 셋이 정해지기 전에는 다섯 자리를 그대로 둔다. 앞선 차수가 닫은 것: 기약 다항식(29차), 기약표현(28차), 단순가군·기약가군(30차, modules 에 정의 문단 추가). 29차 회차에 함께 한 것: temperley-lieb-algebras:81 의 '최고 무게' 띄어쓰기를 저장소 관례인 '최고무게' 로 맞췄다(커밋 7be5721).",
+      "createdAt": "2026-10-04T00:52:51.110Z",
+      "seq": 1613
     },
     {
-      "id": "7c41fb88",
-      "title": "js 코드블록 회귀 점검 (차기)",
-      "priority": 11,
-      "note": "2026-09-20 회차에 돌렸다. 회귀 0 건이다. console.log 0, 언어 미표시나 비허용 언어 코드펜스 0, '// ... = 숫자' 꼴 결과 주석 0, '## 수치로 확인 / 시뮬레이션 / 계산으로 확인' 헤딩 0. 앞 회차가 오검출로 남겨 둔 셋(abstract-interpretation heegner-points siegel-weil)도 이번 패턴에는 걸리지 않았다. 검사법은 4 절의 grep 둘(코드펜스 언어 표시, 언어 없는 펜스 추적)에 결과 주석과 검증절 헤딩 grep 을 더한 것이다",
-      "createdAt": "2026-09-20T00:52:10.222Z",
-      "seq": 692
-    },
-    {
-      "id": "418dac51",
-      "title": "개관 개요의 저장소 자체 언급 회귀 점검 (차기)",
-      "priority": 11,
-      "note": "2026-09-20 회차에 다시 돌렸다. 검사법에 '^- 아직 연결한' 을 넣어 규격 문구에 하이픈이 붙은 경우까지 잡도록 했고, 이번에는 그런 문서가 없었다. 보고 3 건은 전부 오검출이다: kazhdan-lusztig 7줄, lang-trotter 13줄, weyl-character-formula 194줄의 '빈자리' 는 각각 이론의 공백과 무게 다이어그램의 자리를 가리키는 수학 문맥이라 0 절이 금지한 '## 빈자리' 절과 무관하다. 다음에는 개관 문서만 따로 골라 '## 갈래' 아래에 없는 문서를 가리키는 줄이 있는지 볼 것",
-      "createdAt": "2026-09-20T12:43:02.707Z",
-      "seq": 731
-    },
-    {
-      "id": "9d7fa71a",
-      "title": "문학적 비유 grep 회귀 점검 (9차)",
-      "priority": 11,
-      "note": "2026-09-20 회차. 4절 grep 전체를 돌려 5 건이 나왔고 전부 용어 예외다. elliptic-curves 134 'Montgomery 사다리'(Montgomery ladder), lie-algebras 185 '사다리 연산자'(ladder operator), post-quantum-cryptography 142 '함정문' 둘(trapdoor), theta-series 167 'Viazovska 의 마법함수'(magic function). 이 다섯은 다음 회차에도 같은 자리에서 나오므로 새 건만 보면 된다",
-      "createdAt": "2026-09-20T12:44:00.590Z",
-      "seq": 732
-    },
-    {
-      "id": "8ed7da41",
-      "title": "이번 회차 새 문서 여섯의 문체 회귀 점검",
-      "priority": 11,
-      "note": "2026-09-20 회차에 쓴 erdos-ko-rado, hamiltonian-cycles, erdos-renyi-graphs, stone-weierstrass, lp-spaces, sturm-liouville 여섯을 다음 회차에 다시 읽는다. 쓴 직후에 돌린 검사는 전부 통과했다: 수식 여섯 검사, KaTeX 파싱(34474 개 오류 0), 문체 grep(비유, 번역체, 예고문, 굵은 문장, 열린 문제 절, 독자 호칭 '우리'), 맨 텍스트 수식(홑글자 변수 0. 보고된 것은 증명 끝 기호 ∎ 뿐이고 기존 문서와 같은 관행이라 오검출), 각주 정합, 두문자어 첫 등장. 다시 볼 것은 grep 이 잡지 못하는 것들이다: (1) 직관 절이 4절의 '예 하나를 처음부터 끝까지 끌고 간다' 를 지키는지. 여섯 다 예 하나로 썼다고 판단했으나 erdos-renyi-graphs 는 고립점 세기에서 거대 성분으로 넘어갈 때 예가 바뀐다. (2) 증명 요지가 두 문단을 넘는 곳이 stone-weierstrass 의 세 단계와 lp-spaces 의 Riesz-Fischer 다. 4절은 두 문단을 넘으면 별도 문서 후보라 한다. (3) 활용 절 항목이 '어느 문서의 어느 정의에서 쓰이는지' 를 말하는지",
-      "createdAt": "2026-09-20T16:56:51.528Z",
-      "seq": 761
+      "id": "137e5874",
+      "title": "환론·대수 축의 후속 간선 (19차)",
+      "priority": 12,
+      "note": "18차(29차 회차)에 17차가 가리킨 후보 가운데 Jones-Wenzl 멱등원을 썼다(jones-wenzl-idempotents, 93줄, 커밋 1144a8e). 부모는 temperley-lieb-algebras 하나이고 그 문서의 리프를 닫았다. 17차 메모가 걱정한 중복은 분담으로 갈랐다. TL 문서의 성질 절 '## 반단순성의 조건' 은 점화식을 반단순성 판정의 도구로 한 줄 쓰고 지나가고, 새 문서가 멱등원 자체를 다룬다. reshetikhin-turaev 는 본문에 Jones-Wenzl 을 한 번도 쓰지 않으므로 간선을 긋지 않고 활용 절 '## 모듈러 텐서범주의 단순대상' 의 본문 링크로만 두었다. 담은 것: TL_2 에서 a+b*e_1 을 놓고 e_1(a+b*e_1)=0 을 풀어 f_2=1-e_1/delta 를 직접 얻는 직관(delta=0 에서 조건이 a=0 과 a=1 로 어긋나 멱등원이 없다는 계산까지), 양자 정수, 점화식, Jones-Wenzl 의 유일성 정리와 증명 요지, 통과선 성분으로의 사영이라는 세포 구조 해석, Markov 대각합이 [n+1]_q 라는 양자 차원, Delta_n 의 Chebyshev 점화식과 분모의 근 delta=2cos(pi*j/(n+1)), 색칠된 Jones 다항식, q 가 1 의 원시 4l 제곱근일 때 n<=l-2 로 잘리는 단순대상 목록, Kauffman 뼈대 축약. 태그는 #algebra #topology #combinatorics 다. README 를 592 와 1065 로 맞췄다.\n\n이 문서를 쓰다 키릴 문자 혼입 사고가 났고 상시 메모로 남겼다(큐 aeac2190, p100). 개요 $$ 블록의 'e_i' 가 키릴 е(U+0435)였고 기존 검사 여섯 가운데 다섯이 이것을 통과시킨다.\n\n19차에 볼 것 셋. (1) jones-wenzl-idempotents 가 새 리프다. 자식 후보는 Kauffman 뼈대 대수(docs 에 없고 활용 절 셋째 항목이 이름만 쓴다)와 색칠된 Jones 다항식(knot-invariants 의 자식으로 두는 것이 더 맞을 수 있어 방향을 먼저 정해야 한다). (2) partition-algebras 는 여전히 리프다. 자식 후보는 Deligne 의 Rep(S_t) 범주이고 brauer-algebras 활용 절 '## 범주 확장' 이 Rep(O_delta) 를 적고 지나간다. (3) 양자 코호몰로지는 15차부터 네 회차 미뤘다. 모듈라이 공간 문서가 밑작업으로 먼저다. 도형 대수 갈래(brauer partition temperley-lieb cellular jones-wenzl)는 29차 회차에 다섯으로 늘었으므로 당분간 이 축보다 다른 축을 보는 것이 낫다.",
+      "createdAt": "2026-10-04T00:56:44.881Z",
+      "seq": 1615
     },
     {
       "id": "6fc1515a",
@@ -338,6 +322,46 @@
       "note": "28차 회차에 새로 만든 검사 둘이다. 둘 다 싸서 조건 없이 매 회차 돌릴 만하다.\n\n(1) 골격 검사. 비개관 문서의 본문 H1 이 '# 개요 # 직관 # 정의 # 성질 # 활용' 다섯을 이 순서로 갖는지(제목 H1 과 '# 연관 문서' 는 뺀다), 여러 줄 $$ 구분자의 개수가 짝수인지, 표 한 묶음의 줄마다 열 수가 같은지를 본다. 구형 문서(^## 정의$ 가 있는 것)는 따로 센다. 28차 결과는 589 문서에서 H1 위반 0, 구형 0, $$ 짝 0, 표 열 불일치 0 이다. 구형 0 은 구형 문서가 저장소에 더 남아 있지 않다는 뜻이고, 2절 3단계의 '구형 문서의 신형 전환' 작업 후보가 비었음을 확인한 것이다.\n\n(2) 더 알아보기 묶음 검사. '## 더 알아보기' 절의 '- [' 로 시작하는 링크 줄 수와 '### ' 묶음 머리 수를 세어, 자식 6 개 이상인데 묶음이 없는 문서와 자식 5 개 이하인데 묶음이 있는 문서를 보고한다. H2 가 절 안에 침입했는지도 본다(5절: H2 는 쓰지 않는다. 절의 끝으로 읽힌다). 28차 결과는 묶음 필요 0, 불필요 묶음 0, H2 침입 0 이다.\n\n절 범위를 자를 때 '## 더 알아보기' 다음의 '\\n## ' 또는 태그 줄('\\n#[a-z0-9_]')까지로 잡아야 한다. 그러지 않으면 태그 줄을 H1 으로 읽는다. 골격 검사도 태그 줄을 H1 으로 세지 않도록 ^#[a-z0-9_] 를 건너뛴다.\n\n이 두 검사는 큐 항목 d4878604(더 알아보기 묶음 규칙 회귀 점검)와 겹친다. d4878604 는 '새 문서를 여러 개 쓴 회차 뒤에만' 이라는 조건이 붙어 있는데, 이 검사기는 조건 없이 돌릴 만큼 싸므로 d4878604 를 꺼낼 때 이 항목으로 대체할지 판단할 것.",
       "createdAt": "2026-10-03T20:58:37.950Z",
       "seq": 1605
+    },
+    {
+      "id": "a5906fb2",
+      "title": "js 코드블록 회귀 점검 (차기)",
+      "priority": 11,
+      "note": "2026-10-04 29차 회차에 돌렸다. 회귀 0 건이다. 비허용 언어 코드펜스 0, 언어 미표시 코드펜스 0(짝 검사 포함), console.log 0 문서, print( 0 건, '## 수치로 확인 / 시뮬레이션 / 계산으로 확인' 헤딩 0 건이다. 결과 주석 패턴 '// ... = 숫자' 는 보고 1 건이고 오검출이다. hensel-lemma:76 의 'return a  // 법 mod 에서 f(a) = 0' 은 프로그램의 출력을 옮긴 것이 아니라 반환값이 만족하는 수학적 조건을 적은 것이므로 유지한다. 앞 회차가 오검출로 남겨 둔 셋(abstract-interpretation heegner-points siegel-weil)은 이번 패턴에 걸리지 않았다. 검사법: grep -rnE '^```[a-z]+' docs/*.md 를 javascript typescript mermaid js ts 로 걸러내고, awk 로 코드펜스 토글을 세어 언어 없는 여는 펜스를 찾고, console.log 와 print( 와 세 헤딩을 전수로 본다.",
+      "createdAt": "2026-10-04T00:58:10.436Z",
+      "seq": 1616
+    },
+    {
+      "id": "dbe0256d",
+      "title": "문학적 비유 grep 회귀 점검 (10차)",
+      "priority": 11,
+      "note": "2026-10-04 29차 회차. 4절 grep 전체를 돌려 8 건이 나왔고 셋은 용어 예외, 넷은 이번 회차에 들어온 실제 위반이라 고쳤다. 용어 예외 셋은 앞 차수와 같다: elliptic-curves:118 '사다리'(Montgomery ladder), lie-algebras:162 '사다리 연산자'(ladder operator), post-quantum-cryptography:126 '함정문' 둘(trapdoor). 실제 위반은 이번 회차에 쓴 jones-wenzl-idempotents 의 '뼈대' 넷이다(75줄 헤딩, 77줄 둘, 81줄 각주). skein algebra 를 '뼈대 대수' 로 옮긴 것이고 두 가지가 겹친 잘못이다. (1) '뼈대' 는 4절이 명시적으로 금지한 단어다. (2) skein 의 역어가 아니다. skein 은 실타래이고 '뼈대' 는 framework 쪽이다. 4절의 '풀네임을 임의로 번역하지 않는다. 굳은 한국어 용어가 없으면 원어를 그대로 쓴다' 에 따라 '스케인 대수(skein algebra)' 로 고쳤다(커밋 7efb9e8). 교훈은 금지어 grep 을 새 문서에도 반드시 돌려야 한다는 것이다. 29차 회차는 새 문서 셋(temperley-lieb-algebras cellular-algebras jones-wenzl-idempotents)을 썼고 앞 둘은 작성 직후 개별로 돌려 통과했으나 jones-wenzl-idempotents 는 이 회귀 점검에서야 걸렸다.",
+      "createdAt": "2026-10-04T00:58:10.558Z",
+      "seq": 1617
+    },
+    {
+      "id": "c9573316",
+      "title": "개관 개요의 저장소 자체 언급 회귀 점검 (차기)",
+      "priority": 11,
+      "note": "2026-10-04 29차 회차에 다시 돌렸다. 회귀 0 건이다. 검사법은 '아직 문서가 없 / 이 지도에서는 / ^- ?아직 연결한 / ## 빈자리 / ## 할 일 / ## 보강할 점 / 저장소' 를 docs/*-overview.md 전체에서 찾는 것이고 보고가 하나도 없다. 앞 회차가 오검출로 판정한 셋(kazhdan-lusztig:7 lang-trotter:13 weyl-character-formula:194 의 '빈자리')은 개관 문서가 아니라 이 검사 범위에 들지 않는다. 개관은 22 개다(29차 회차에 늘지 않았다).",
+      "createdAt": "2026-10-04T00:58:10.682Z",
+      "seq": 1618
+    },
+    {
+      "id": "accba672",
+      "title": "나열형 mermaid 훑기 (차기)",
+      "priority": 11,
+      "note": "2026-10-04 29차 회차에 다시 돌렸다. 후보 0 건이다. 검사기를 스크래치패드 mcheck.mjs 로 새로 만들었고 20차와 같은 세 기준을 썼다. (1) 화살표 라벨이 논증 접속사(따라서 그러므로 이므로 하면 증명 단계 이고 이면)인 것, (2) 노드 라벨의 과반이 종결어미(다 까 요 네 지 음)로 끝나는 문장인 것, (3) 노드 3~5 개에 화살표가 노드-1 인 선형 사슬. 셋 다 0 건이다.\n\n블록 수가 20차 메모와 다르다. 20차는 '저장소의 mermaid 블록은 150 개' 라 적었으나 29차에 세어 보면 49 개다(여는 펜스 grep -rc '^```mermaid' 로 49, mermaid 를 쓰는 문서가 48 개, 들여쓰기된 펜스 0). 20차가 블록이 아니라 노드나 간선을 셌을 가능성이 크다. 이후 회차는 49 를 기준으로 본다.\n\n검사기를 만들 때 주의할 것. 노드 id 추출을 줄 시작으로 한정하면(^\\s*([A-Za-z][A-Za-z0-9_]*)\\s*[\\[\\(\\{]) mermaid 가 'A[라벨] --> B[라벨]' 처럼 한 줄에 여러 노드를 쓰는 문법을 놓쳐 노드 수가 2~3 으로 집계된다. 29차에 처음 돌릴 때 이 결함이 있었고 줄 어디서나 매칭하도록 고쳤다. 기준 (3)은 이 집계에 의존하므로 고치기 전 결과는 신뢰할 수 없다. 기준 (1)과 (2)는 라벨 기반이라 영향이 없다.",
+      "createdAt": "2026-10-04T00:59:21.297Z",
+      "seq": 1619
+    },
+    {
+      "id": "47764335",
+      "title": "29차 회차 새 문서 셋의 문체 회귀 점검",
+      "priority": 11,
+      "note": "2026-10-04 29차 회차에 쓴 temperley-lieb-algebras(108줄), cellular-algebras(95줄), jones-wenzl-idempotents(93줄) 셋을 다음 회차에 다시 읽는다. 작성 중에 걸러 고친 것이 다섯이라 회귀 가능성이 있는 자리를 적어 둔다. (1) temperley-lieb-algebras 의 'SL_2' 는 \\mathrm{SL} 뒤 중괄호 다음에 밑줄이 와서 4절 5번 검사에 걸렸고 네 곳을 \\mathrm{SL}\\_2 로 고쳤다. (2) jones-wenzl-idempotents 개요의 $$ 블록에서 e_i 의 e 가 키릴 е(U+0435)였다(큐 aeac2190). (3) jones-wenzl-idempotents 가 skein algebra 를 '뼈대 대수' 로 옮겨 4절 금지어에 걸렸고 '스케인 대수(skein algebra)' 로 고쳤다. (4) 세 문서에 '~이며,' 로 이어 붙인 문장이 셋 있어 두 문장으로 끊었다. (5) temperley-lieb-algebras 의 '최고 무게' 를 저장소 관례인 '최고무게' 로 붙였다. 작성 직후 돌려 통과한 검사: 수식 여섯, 문장형 헤딩 grep, 비유 grep, 금지 매크로, 코드블록 언어와 짝(세 문서 모두 코드블록 0), 번역체와 금지 표현, 두문자어 전수, 라틴 혼동 문자. 두문자어 판정: SL TL ST TS UV SV 는 수식 안의 연산자 이름과 첨자 기호라 4절 예외이고 AMS 는 각주의 출판사명이라 앞 차수(암호론 통독) 판정과 같다. 다음 회차에 볼 것은 세 문서의 활용 절이 서로를 가리키는 본문 링크가 중복되지 않는지다. 도형 대수 다섯(brauer partition temperley-lieb cellular jones-wenzl)이 서로 이웃이라 같은 문장이 여러 문서에 반복될 위험이 있다.",
+      "createdAt": "2026-10-04T01:00:53.881Z",
+      "seq": 1620
     },
     {
       "id": "14a84d4d",
@@ -1554,6 +1578,14 @@
       "note": "분야: 대수(#algebra #combinatorics #topology). 부모 후보는 partition-algebras 와 brauer-algebras 다.\n\n28차에 확인한 것: 이 개념은 이미 세 문서에 조각으로 들어 있다. brauer-algebras 72-74 '## Temperley–Lieb 대수' 가 '도형에서 선이 교차하지 않는 것만 남기면 TL_k(delta) 가 된다. B_k(delta) 의 몫이고 차원이 Catalan 수 C_k 다' 로 정의까지 한다. braid-groups 64-66 '## Temperley–Lieb 대수의 대각합' 이 Jones 의 Markov 대각합과 B_n -> TL_n 사상을 담고 112 줄 표가 TL_n(delta) / Jones 대각합 / Jones 다항식 줄을 둔다. knot-invariants 104 가 II_1 인자의 부분인자 지표에서 Jones 다항식이 나온 경로를 적는다.\n\n따라서 새 문서를 쓰려면 세 문서의 해당 절을 포인터로 줄이는 작업이 같은 회차에 들어가야 한다. 그러지 않으면 8절이 말하는 중복이 된다. 분량 판단: 세 조각을 합치고 생성원 e_i 와 관계(e_i^2=delta e_i, e_i e_{i pm 1} e_i = e_i, 멀리 떨어진 것끼리 교환), 평면 짝짓기 도형과 Catalan 수, Jones-Wenzl 멱등원, delta = -A^2 - A^{-2} 와 Kauffman 괄호, SL_2 텐서 범주, 부분인자 지표 4cos^2(pi/n) 을 담으면 100 줄대가 나온다. docs 에 catalan-numbers 문서가 없으므로 차원은 식으로 적고 Catalan 수 문서 요청은 따로 큐에 넣는다.\n\n판정이 필요한 것: partition-algebras 와 brauer-algebras 가운데 어느 쪽을 부모로 할지. TL 은 Brauer 도형 가운데 평면인 것이므로 brauer-algebras 가 맞고, partition-algebras 와는 형제가 된다.",
       "createdAt": "2026-10-03T20:52:30.716Z",
       "seq": 1601
+    },
+    {
+      "id": "652d6b1f",
+      "title": "cherlin-zilber-conjecture 의 후속 간선",
+      "priority": 10,
+      "note": "29차 회차에 리프 검사로 발견했다. 큐 410fd79d(Zilber 삼분법 갈래 15차)는 'cherlin-zilber-conjecture 를 만들어 두 리프가 해소되어 이 갈래에 리프가 남지 않았다' 고 적었으나, 새로 만든 그 문서 자신이 리프다. 29차에 센 자식 수는 bad-groups 1, zilber-indecomposability 1, zilber-trichotomy 3, cherlin-zilber-conjecture 0 이다. 리프를 셀 때 새로 만든 문서를 빼놓지 않도록 다음 회차에 주의한다. 이 갈래는 모델이론 축이고 부모가 bad-groups 와 zilber-indecomposability 둘이다. 자식 후보는 문서를 열어 보고 정해야 하므로 29차에는 손대지 않았다(회차 마감 15분 전이라 새 문서를 쓸 시간이 없었다).",
+      "createdAt": "2026-10-04T01:01:26.602Z",
+      "seq": 1622
     },
     {
       "id": "dfb3e493",
