@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-04T01:01:43.766Z",
-  "nextSeq": 1623,
+  "savedAt": "2026-10-04T05:03:03.091Z",
+  "nextSeq": 1633,
   "items": [
     {
       "id": "aeac2190",
@@ -122,6 +122,14 @@
       "note": "29차 회차에 9/20 회차 새 문서 여섯을 회귀 점검하며 발견했다. 번역체 검사에 쓰는 피동 패턴 '어진다' 는 피동이 아닌 자동사를 함께 잡는다. erdos-ko-rado:61 의 '크기가 한 차수 떨어진다' 는 '떨어지다' 자동사이고 피동이 아니라 오탐이다. '달라진다', '길어진다', '작아진다' 류도 같은 꼴이므로 이 패턴으로 거른 뒤에는 반드시 주변 문맥을 보고 판정해야 한다. 같은 점검에서 실제 피동으로 걸러 고친 것은 둘이다(hamiltonian-cycles:13 '순환이 만들어진다' -> '나온다', erdos-renyi-graphs:7 '두 단계로 이루어진다' -> '두 단계다', 커밋 b2b9098). 함께 고친 금지 표현 하나는 hamiltonian-cycles:77 각주의 '아니라는 사실과 그 증명은' -> '아니라는 증명은' 이다. 이 항목은 '증명의 요지'(9bc3b9fa b4ccf30f)와 '정리하면'(d7db456a) 오탐과 같은 종류이고, 셋 다 CLAUDE.md 4절의 grep 을 좁히거나 예외를 적는 독자의 판단이 필요하다. 세 항목을 한 번에 정리하는 것이 낫다.",
       "createdAt": "2026-10-04T01:00:54.044Z",
       "seq": 1621
+    },
+    {
+      "id": "dc8b9099",
+      "title": "비유 금지 grep 의 용어 오탐 세 건 판정",
+      "priority": 20,
+      "note": "2026-10-04 회차에 4절 비유 금지 grep 을 docs 전수로 돌렸다. 보고 4 건이 모두 굳은 용어이고 CLAUDE.md 가 '용어의 일부인 것은 예외' 로 허용하는 경우다. lie-algebras:162 의 '사다리 연산자'(ladder operator), elliptic-curves:118 의 'Montgomery 사다리'(Montgomery ladder), post-quantum-cryptography:126 의 '함정문' 둘(trapdoor). 다음 회차에 같은 grep 을 돌릴 때 이 셋은 통과시킨다. 문체 헤딩 grep 도 '## 정리 1의 증명 요지' 꼴을 잡으므로(sylow-theorems:65,83) 큐 9bc3b9fa 의 '증명의 요지' 오탐에 조사 없는 '증명 요지' 변형을 더해 걸러야 한다",
+      "createdAt": "2026-10-04T05:02:30.598Z",
+      "seq": 1632
     },
     {
       "id": "410fd79d",
@@ -452,22 +460,6 @@
       "seq": 434
     },
     {
-      "id": "5e27ea0a",
-      "title": "사영가군과 국소 자유성",
-      "priority": 10,
-      "note": "환론. nakayama-lemma 와 modules 아래. nakayama-lemma 의 '사영가군과 자유가군' 절이 국소환 경우만 다루고, 유한생성 사영가군이 국소적으로 자유라는 일반 진술과 Serre 문제(Quillen-Suslin)로 이어질 자리가 비어 있다. algebraic-k-theory 가 사영가군을 전제한다",
-      "createdAt": "2026-09-17T01:01:21.730Z",
-      "seq": 436
-    },
-    {
-      "id": "d77a060e",
-      "title": "유리 표준형과 불변인자",
-      "priority": 10,
-      "note": "선형대수. jordan-canonical-form 의 자식으로 붙인다. 대수적으로 닫히지 않은 체에서 특성다항식이 일차식으로 쪼개지지 않을 때 쓰는 표준형으로, finitely-generated-modules 의 불변인자 분해가 근거다. 동반행렬, 불변인자의 나눔 사슬, 유사 판정이 체 확대에 불변이라는 점을 담는다",
-      "createdAt": "2026-09-17T04:41:41.650Z",
-      "seq": 441
-    },
-    {
       "id": "699b709d",
       "title": "Taylor 정리를 별도 문서로 분리할지 판단",
       "priority": 10,
@@ -476,36 +468,12 @@
       "seq": 460
     },
     {
-      "id": "b4a850aa",
-      "title": "실해석적이 아닌 매끄러운 함수와 단위분할",
-      "priority": 10,
-      "note": "미분기하. power-series 의 'e^{-1/x^2}' 절에 bump function 과 partition of unity 가 이름만 나오고 문서가 없다. manifolds 아래에 붙이면 다양체 위의 국소-전역 붙이기 논증(Riemann 계량의 존재, Whitney 매장)의 공통 도구가 된다",
-      "createdAt": "2026-09-17T08:40:23.865Z",
-      "seq": 461
-    },
-    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
       "note": "2026-09-17 세 번째 회차 판단: 지금은 만들지 않는다. 4.5절은 문서 10 개 이상인 분야 태그에 개관을 두라고 하는데, 갈래를 거두는 기준인 '태그 줄의 첫 태그' 로 세면 #computation 4 개, #algorithms 5 개로 합쳐 9 개다. #computation 태그가 붙은 문서 57 개는 대부분 다른 분야가 주 분야이고 도구 태그로 붙은 것이라 갈래를 채우지 못한다. 계산 쪽 주 분야 문서가 몇 개 더 늘면 computation-overview 를 만든다(갈래 후보: 계산 모형과 복잡도, 수치 알고리즘, 암호, 학습). 같은 방식으로 센 다른 후보: measure_theory 9, statistics 7, field_theory 5. complex_analysis 는 태그 39 개지만 주 분야가 3 개이고 analysis-overview 가 거둔다. 회차마다 이 집계를 다시 하려면: for t in computation algorithms; do for f in docs/*.md; do [ \"$(tail -1 $f | grep -o '#[a-z0-9_]*' | head -1)\" = \"#$t\" ] && echo $f; done; done",
       "createdAt": "2026-09-17T08:47:59.996Z",
       "seq": 469
-    },
-    {
-      "id": "307f17be",
-      "title": "Rice–Shapiro 정리",
-      "priority": 10,
-      "note": "2026-09-17 다섯 번째 회차. rice-theorem 의 '인식 가능성' 절이 이름과 대략적 진술만 들고 문서가 없다. 계산 어느 의미론적 성질이 인식 가능한지(r.e. 인지)를 특징짓는 정리이고, '유한한 양의 정보만 보고 확인할 수 있는 성질', 곧 컴팩트성 조건으로 진술된다. 부모는 rice-theorem 이고 분야는 계산이다. 영역 이론(domain-theory)의 Scott 위상과 이어지므로 그쪽 간선도 검토한다",
-      "createdAt": "2026-09-17T16:57:24.909Z",
-      "seq": 509
-    },
-    {
-      "id": "d8db30c8",
-      "title": "유도 함자의 후속: 스펙트럼 열과 Koszul 복합체",
-      "priority": 10,
-      "note": "derived-functors 를 이번 회차에 만들었고 더 알아보기가 비어 있다. 후속 후보는 (1) Koszul 복합체: 정칙열과 국소환의 정칙성 판정, 부모는 derived-functors, (2) 이중 복합체의 스펙트럼 열: 저장소에 spectral-sequences 문서가 있는지 확인하고 있으면 derived-functors 를 부모로 붙인다. 분야는 #algebra",
-      "createdAt": "2026-09-18T04:48:36.040Z",
-      "seq": 536
     },
     {
       "id": "a0319f6d",
@@ -524,52 +492,12 @@
       "seq": 538
     },
     {
-      "id": "7538ffe3",
-      "title": "Sperner 정리와 LYM 부등식",
-      "priority": 10,
-      "note": "dilworth-theorem 을 만들면서 Sperner 정리를 활용 절에 넣지 못했다. 멱집합의 최대 반사슬이 중간 층이라는 정리이고 LYM(Lubell-Yamamoto-Meshalkin) 부등식이 그 증명을 준다. 부모는 dilworth-theorem 과 counting-principles. 분야는 #combinatorics #order_theory",
-      "createdAt": "2026-09-18T04:56:32.771Z",
-      "seq": 541
-    },
-    {
-      "id": "75d4b7bb",
-      "title": "대칭함수",
-      "priority": 10,
-      "note": "조합론/표현론. schur-polynomials 의 부모 후보. 단항·기본·완전동차·거듭제곱합 기저, Newton 항등식, Schur 함수와의 기저 변환, polya-enumeration 의 순환 지표가 거듭제곱합 기저의 원소라는 대응. polya-enumeration 과 schur-polynomials 가 본문에서 이름만 쓰고 문서가 없다",
-      "createdAt": "2026-09-18T08:57:06.654Z",
-      "seq": 551
-    },
-    {
-      "id": "2ed116cd",
-      "title": "Montel 정리와 Riemann 사상 정리",
-      "priority": 10,
-      "note": "복소해석. arzela-ascoli 의 활용 절에서 정규족과 Montel 정리를 언급만 하고 링크하지 못했다. 부모 후보는 arzela-ascoli 와 복소해석의 정칙함수 문서. 쓰면 arzela-ascoli 의 더 알아보기에 달고 complex-analysis-overview 의 갈래에 한 줄 더할 것",
-      "createdAt": "2026-09-18T20:50:49.890Z",
-      "seq": 580
-    },
-    {
       "id": "505dd346",
       "title": "오류 있는 학습(LWE) 문서",
       "priority": 10,
       "note": "분야는 computation/cryptography. 부모는 shortest-vector-problem. 최악 경우 GapSVP, SIVP 에서 평균 경우로 가는 Regev 의 양자 환산, 잡음 분포와 파라미터, 격자 암호와 완전동형암호의 공통 가정. post-quantum-cryptography 와 homomorphic-encryption 이 본문에서 LWE 를 언급만 하고 있다",
       "createdAt": "2026-09-19T00:44:41.902Z",
       "seq": 588
-    },
-    {
-      "id": "89c5bd52",
-      "title": "유계변동 함수의 후속 문서",
-      "priority": 10,
-      "note": "2026-09-19 회차에 bounded-variation 을 새로 썼다(부모 derivative, lebesgue-integral, 측도론 개관 갈래 '측도 사이의 비교'). 리프이고 후속 후보가 셋이다: Lebesgue 미분정리(증가함수가 거의 어디서나 미분가능, Vitali 덮개 보조정리), Riemann-Stieltjes 적분과 Riesz 표현정리(C[a,b] 의 쌍대공간), Cantor 함수와 특이 측도. 앞의 둘은 measure_theory, 셋째는 예시 문서다. 본문이 전부 이름만 쓰고 링크가 없다",
-      "createdAt": "2026-09-19T00:52:32.439Z",
-      "seq": 591
-    },
-    {
-      "id": "98de84f6",
-      "title": "수식 다섯 경로 전수 점검 회귀 (4차)",
-      "priority": 10,
-      "note": "2026-09-19 회차에 3차를 했고 위반 0 이다. 돌린 검사 여섯: (1) 4절의 awk 이스케이프 검사 0 건, (2) 줄 끝 백슬래시 0 건, (3) 링크로 읽히는 대괄호 0 건, (4) 태그로 읽히는 부등호 0 건(grep -rn '<[a-zA-Z]' 가 잡는 것은 전부 mermaid 의 <br/> 이라 걸러야 한다), (5) 표 줄의 인라인 수식 안 파이프 0 건(파이썬으로 표 줄만 골라 $...$ 안의 | 를 봤다. grep -E '^\\|.*\\$' 는 셀 구분자를 잡는 오검출이 난다), (6) 인라인 수식 첨자 _ 앞이 영숫자가 아닌데 이스케이프가 없는 것 0 건과 $$ 블록 안의 미이스케이프 밑줄·별표가 둘 이상인 블록 0 건. 같은 회차에 mermaid 화살표 라벨 안의 파이프를 새로 찾아 고쳤다(conditional-expectation, p-adic-numbers, waldspurger-formula 여섯 곳, 커밋 c72687d). mermaid 는 따옴표 안이라도 | 를 라벨 종료로 읽으므로 4절의 수식 검사와 별도로 grep -rnoE '\\|\"[^\"]*\\|[^\"]*\"\\|' docs/*.md 를 돌려야 한다",
-      "createdAt": "2026-09-19T04:51:34.873Z",
-      "seq": 610
     },
     {
       "id": "fdb6eb43",
@@ -586,14 +514,6 @@
       "note": "2026-09-19 회차에 개관 21 개의 지도 화살표 438 개를 대조해 위반 0 을 확인했다(라벨 해석 실패 26 건은 개관이 쓰는 약칭이라 손댈 것이 없다). 같은 내용의 큐 항목이 둘(7252bb5c, a393c19c) 있어 하나로 합쳤다. 검사기는 스크래치패드 mapcheck.mjs 이고 지난 노트가 적은 주의 넷을 반영했다. (1) '# 지도' 뒤가 한글이라 정규식에 단어 경계를 쓰면 매치가 안 되므로 지도 헤딩부터 첫 mermaid 펜스까지를 비탐욕 매치로 잡는다. (2) 한 줄에 A --> B --> C 체인이 오므로 줄 단위가 아니라 순차 파싱을 한다. (3) 라벨이 여러 문서 제목의 접두사일 수 있으므로(Galois 표현) 후보를 전부 모아 하나라도 실제 간선이면 통과로 본다. (4) 노드 정의가 화살표 줄 안에 인라인으로 오는 경우와 앞줄에서 따로 정의되는 경우를 함께 처리한다. 실제 간선은 각 문서의 더 알아보기 절 링크만 모아 만든다",
       "createdAt": "2026-09-19T04:54:54.736Z",
       "seq": 612
-    },
-    {
-      "id": "74b0613d",
-      "title": "riemann-zeta 활용 절의 Dedekind zeta 와 류수 공식을 받을 문서 확인",
-      "priority": 10,
-      "note": "2026-09-19 회차 신설. riemann-zeta 활용 절에서 Dedekind zeta 함수와 류수 공식을 링크 없이 이름만 썼다(0절). algebraic-number-fields 나 class-field-theory 에 류수 공식이 이미 있는지 grep 으로 보고, 있으면 본문 링크를 달고 없으면 dedekind-zeta 문서를 만들지 판단한다. 부모 후보는 riemann-zeta 와 algebraic-number-fields",
-      "createdAt": "2026-09-19T12:41:41.518Z",
-      "seq": 640
     },
     {
       "id": "86129ea2",
@@ -1586,6 +1506,78 @@
       "note": "29차 회차에 리프 검사로 발견했다. 큐 410fd79d(Zilber 삼분법 갈래 15차)는 'cherlin-zilber-conjecture 를 만들어 두 리프가 해소되어 이 갈래에 리프가 남지 않았다' 고 적었으나, 새로 만든 그 문서 자신이 리프다. 29차에 센 자식 수는 bad-groups 1, zilber-indecomposability 1, zilber-trichotomy 3, cherlin-zilber-conjecture 0 이다. 리프를 셀 때 새로 만든 문서를 빼놓지 않도록 다음 회차에 주의한다. 이 갈래는 모델이론 축이고 부모가 bad-groups 와 zilber-indecomposability 둘이다. 자식 후보는 문서를 열어 보고 정해야 하므로 29차에는 손대지 않았다(회차 마감 15분 전이라 새 문서를 쓸 시간이 없었다).",
       "createdAt": "2026-10-04T01:01:26.602Z",
       "seq": 1622
+    },
+    {
+      "id": "266e31f6",
+      "title": "최소다항식",
+      "priority": 10,
+      "note": "선형대수. 부모 후보는 eigenvalues 와 polynomial-rings. jordan-canonical-form, rational-canonical-form, krylov-subspace-methods, field-extensions, galois-theory 등 8 개 이상 문서가 최소다항식을 이름만 쓰거나 각자 정의한다. 선형사상의 최소다항식(가군의 소멸자 생성원)과 대수적 원소의 최소다항식(기약성)이 한 문서로 묶이는지 판단이 필요하고, 묶으면 rational-canonical-form 의 더 알아보기에 달린다",
+      "createdAt": "2026-10-04T04:41:18.473Z",
+      "seq": 1623
+    },
+    {
+      "id": "9528bd8f",
+      "title": "Cayley–Hamilton 정리",
+      "priority": 10,
+      "note": "선형대수. 부모는 eigenvalues 와 rational-canonical-form. jordan-canonical-form 과 rational-canonical-form 둘 다 '최소다항식이 특성다항식을 나누므로 Cayley-Hamilton 이 따라 나온다' 로 한 줄만 적고 문서가 없다. 가군 소멸자 논증, 수반행렬 논증, 조밀성 논증 세 증명을 나란히 두면 분량이 된다",
+      "createdAt": "2026-10-04T04:41:18.628Z",
+      "seq": 1624
+    },
+    {
+      "id": "67c977b9",
+      "title": "Julia 집합과 Fatou 집합",
+      "priority": 10,
+      "note": "복소해석/동역학. 부모는 montel-theorem. montel-theorem 의 활용 절과 newton-method:111 이 Julia 집합을 링크 없이 이름만 쓴다. Fatou 집합을 반복합성족이 정규족이 되는 점들로 정의하므로 Montel 정리가 선수지식이고, Newton 법의 유인 영역 경계가 그 예다. 제목이 'A와 B' 꼴이니 파일명은 julia-sets 로 하고 Fatou 집합은 정의 절에서 여집합으로 둔다",
+      "createdAt": "2026-10-04T04:44:57.625Z",
+      "seq": 1625
+    },
+    {
+      "id": "d049abc0",
+      "title": "Hurwitz 정리(영점의 수렴)",
+      "priority": 10,
+      "note": "복소해석. 부모는 montel-theorem 또는 residue-theorem. montel-theorem 의 '단사성과 영점의 보존' 절이 Hurwitz 정리를 이름과 진술만 적고 증명을 생략했다. 유수 정리로 영점 개수를 적분으로 세고 균등수렴으로 적분의 극한을 교환하는 증명이고, Riemann 사상정리에서 극한의 단사성을 얻는 단계가 이 정리다",
+      "createdAt": "2026-10-04T04:44:57.748Z",
+      "seq": 1626
+    },
+    {
+      "id": "06484338",
+      "title": "단사가군과 단사 분해",
+      "priority": 10,
+      "note": "환론. 부모는 projective-modules 와 modules. projective-modules 를 쓰면서 쌍대 개념인 단사가군을 다루지 못했고, derived-functors 가 '가군을 사영가군이나 단사가군의 분해로 바꾼다' 로 이름만 쓴다. Baer 판정법, 모든 가군이 단사가군에 매장된다는 정리, 나눗셈 가능 아벨군이 Z 위의 단사가군이라는 예가 내용이다. 제목은 injective-modules 로 좁힌다",
+      "createdAt": "2026-10-04T04:48:10.158Z",
+      "seq": 1627
+    },
+    {
+      "id": "c503ef57",
+      "title": "Whitney 매장 정리",
+      "priority": 10,
+      "note": "미분기하. 부모는 partitions-of-unity 와 manifolds. partitions-of-unity 를 쓰면서 Whitney 매장을 활용 절에 넣지 못했다. n 차원 다양체가 R^{2n} 에 매장된다는 정리이고, 콤팩트의 경우 단위분할로 좌표 사상을 유한 개 묶어 매장을 만드는 증명이 단위분할의 전형적 응용이다. Sard 정리로 차원을 2n 까지 내리는 단계도 담는다",
+      "createdAt": "2026-10-04T04:50:57.912Z",
+      "seq": 1628
+    },
+    {
+      "id": "e4128849",
+      "title": "절대연속 함수와 미적분학의 기본정리",
+      "priority": 10,
+      "note": "측도론. 부모는 lebesgue-differentiation. lebesgue-differentiation 의 '도함수가 적분을 되돌리지 않는 경우' 절이 절대연속성을 이름만 쓰고 Cantor 함수를 반례로만 든다. Banach-Zaretsky 판정, 절대연속이면 F(x)-F(a)=∫F' 라는 정리, Lipschitz 와 유계변동 사이의 포함관계가 내용이고, bounded-variation 의 절대연속 절과 중복되는지 먼저 확인한다",
+      "createdAt": "2026-10-04T05:00:40.737Z",
+      "seq": 1629
+    },
+    {
+      "id": "7d4b6157",
+      "title": "Riemann–Stieltjes 적분",
+      "priority": 10,
+      "note": "해석학/측도론. 부모는 bounded-variation. bounded-variation 의 'Riemann–Stieltjes 적분' 절과 ito-calculus, brownian-motion 이 이 적분을 이름만 쓰고 정의 문서가 없다. 적분자가 유계변동일 때의 존재 정리, 부분적분, Lebesgue-Stieltjes 측도와의 대응, Brown 운동 경로에서 실패하는 이유가 내용이다",
+      "createdAt": "2026-10-04T05:00:40.864Z",
+      "seq": 1630
+    },
+    {
+      "id": "8820cfd7",
+      "title": "수식 다섯 경로 전수 점검 회귀 (5차)",
+      "priority": 10,
+      "note": "2026-10-04 회차에 4차를 했고 위반 0 이다. 돌린 검사 여덟: (1) 4절 awk 이스케이프 0 건, (2) 줄 끝 백슬래시 0 건, (3) 링크로 읽히는 대괄호 0 건, (4) 태그로 읽히는 부등호 0 건(grep -rn '<[a-zA-Z]' 는 mermaid 의 <br 만 잡으므로 걸러야 한다), (5) 비이스케이프 밑줄 5 건 전부 각주 URL 오탐(finite-fields:131, unique-factorization-domains:89. 큐 b452028c 가 같은 것을 기록했다), (6) 코드블록 언어 0 건, (7) render-check 전수 통과, (8) 키릴·그리스 혼입 1 건이고 transcendental-numbers:98 의 러시아어 학술지명이라 정상(큐 aeac2190)",
+      "createdAt": "2026-10-04T05:01:42.775Z",
+      "seq": 1631
     },
     {
       "id": "dfb3e493",
