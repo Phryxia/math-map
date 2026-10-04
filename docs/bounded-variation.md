@@ -46,7 +46,7 @@ $f\in BV\lbrack a,b\rbrack$ 일 필요충분조건은 $f=g-h$ 인 증가함수 $
 
 ## 거의 어디서나 미분가능
 
-증가함수는 Lebesgue 측도로 거의 모든 점에서 미분가능하다(Lebesgue 미분정리). Jordan 분해로 유계변동 함수도 거의 어디서나 미분가능하고 $f'$ 이 가적분이다.
+증가함수는 Lebesgue 측도로 거의 모든 점에서 미분가능하다([Lebesgue 미분정리](lebesgue-differentiation.md)). Jordan 분해로 유계변동 함수도 거의 어디서나 미분가능하고 $f'$ 이 가적분이다.
 
 증가함수에 대해 다음이 성립하고, 등호가 성립하지 않는 함수가 있다.
 
@@ -99,6 +99,7 @@ $$
 
 ## 더 알아보기
 
+- [Lebesgue 미분정리](lebesgue-differentiation.md)
 - [Rademacher 정리](rademacher-theorem.md)
 
 #measure_theory #analysis #probability
