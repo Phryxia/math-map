@@ -72,13 +72,13 @@ $\Delta_n=\lbrack n+1\rbrack\_q$ 로 두면 $\Delta\_{n+1}=\delta\Delta_n-\Delta
 
 $q$ 가 $1$ 의 원시 $4\ell$ 제곱근이면 $f_n$ 이 $n\le\ell-2$ 에서만 정의되고, 이 유한한 족이 [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)을 만드는 범주의 단순대상 목록을 준다[^2]. 정의가 끊기는 자리가 범주를 유한하게 자르는 자리와 같다.
 
-## Kauffman 괄호 뼈대 대수
+## Kauffman 괄호 스케인 대수
 
-평면 위의 곡선들이 만드는 뼈대 대수에서 $f_n$ 을 넣은 성분을 하나의 선으로 줄여 그리면 계산이 간단해진다[^2]. 3차원 다양체의 불변량을 뼈대로 계산할 때 이 축약을 쓴다.
+평면 위의 곡선들이 만드는 스케인 대수(skein algebra)에서 $f_n$ 을 넣은 성분을 하나의 선으로 줄여 그리면 계산이 간단해진다[^2]. 3차원 다양체의 불변량을 스케인 대수로 계산할 때 이 축약을 쓴다.
 
 [^1]: 점화식과 유일성은 H. Wenzl, *On sequences of projections*, C. R. Math. Rep. Acad. Sci. Canada **9** (1987), 5–9. 멱등원의 구성은 V. F. R. Jones, *Index for subfactors*, Invent. Math. **72** (1983), 1–25.
 
-[^2]: 색칠된 Jones 다항식과 뼈대 계산은 L. Kauffman, S. Lins, *Temperley–Lieb Recoupling Theory and Invariants of 3-Manifolds*, Annals of Math. Studies **134** (1994). 단순대상 목록은 N. Reshetikhin, V. Turaev, *Invariants of 3-manifolds via link polynomials and quantum groups*, Invent. Math. **103** (1991), 547–597.
+[^2]: 색칠된 Jones 다항식과 스케인 계산은 L. Kauffman, S. Lins, *Temperley–Lieb Recoupling Theory and Invariants of 3-Manifolds*, Annals of Math. Studies **134** (1994). 단순대상 목록은 N. Reshetikhin, V. Turaev, *Invariants of 3-manifolds via link polynomials and quantum groups*, Invent. Math. **103** (1991), 547–597.
 
 # 연관 문서
 
