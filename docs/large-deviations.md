@@ -96,6 +96,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gärtner–Ellis 정리](gartner-ellis.md)
 
 #probability #information_theory #statistics #analysis
