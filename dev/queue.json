@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-04T09:02:45.409Z",
-  "nextSeq": 1649,
+  "savedAt": "2026-10-04T13:01:58.984Z",
+  "nextSeq": 1661,
   "items": [
     {
       "id": "aeac2190",
@@ -68,14 +68,6 @@
       "seq": 1522
     },
     {
-      "id": "aef70d6a",
-      "title": "'A와 B' 꼴 제목 훑기 완료 판정",
-      "priority": 20,
-      "note": "25차에 제목 후보를 head -1 로만 추출해(파일 첫 줄이 문서 제목) 43개를 전부 판정했다. 어긋난 것은 둘이고 25차에 처리했다. siegel-weil 은 'Siegel–Weil 공식과 이차형식의 표현수' 를 'Siegel–Weil 공식' 으로 좁히고 참조 표시 제목 3곳(eisenstein-series mass-formula weil-representation)을 고쳤다. schur-multipliers 는 'Schur 곱셈자와 보편 중심확대' 를 'Schur 곱셈자' 로 좁히고 group-extensions 1곳을 고쳤다. 나머지 41개는 손대지 않는다. 두 부류다. (1) CLAUDE.md 4절이 예외로 명시한 꼴, 곧 canonical-height('Néron–Tate 높이와 Mordell–Weil 정리')와 같이 파일명이 도구나 개념이고 제목이 그 개념과 그것이 답하는 정리를 나란히 둔 것: eisenstein-ideal unique-games dwork-rationality heegner-points herbrand-ribet np-completeness perfect-graphs s-cobordism serre-conjecture speh-representations tracy-widom vandiver-conjecture vogan-packets waldspurger-formula whittaker-models witten-asymptotics zhu-algebra greenberg-conjecture. (2) 파일명이 제목의 양쪽을 다 담아 애초에 어긋나지 않는 것: selmer-tate-shafarevich fermat-euler-theorem formalism-hilbert-program kleisli-eilenberg-moore limits-colimits luzin-sierpinski-sets dyson-rank-crank ideals-quotient-rings. CLAUDE.md 4절의 후보 grep 은 쓸 수 없다. grep -l 로 docs/*.md 전체를 보면 모든 문서가 잡히는데, 본문 H1 '# 연관 문서' 의 '연관' 뒤 '관 ' 이 '[와과] ' 에 매치하기 때문이다. 바이트 단위 매칭 오탐도 있어 와/과가 없는 '유계변동 함수'(bounded-variation), '범주 O'(category-o), '스펙트럼 정리'(spectral-theorem) 도 잡힌다. 제목은 첫 줄에만 있으므로 head -1 로 첫 줄만 보는 반복문으로 바꿔야 맞다.",
-      "createdAt": "2026-10-03T00:43:32.978Z",
-      "seq": 1524
-    },
-    {
       "id": "d7db456a",
       "title": "4절 문체 grep 의 '정리하면' 오탐",
       "priority": 20,
@@ -108,14 +100,6 @@
       "seq": 1606
     },
     {
-      "id": "7cd650c2",
-      "title": "증명 머리말 꼴의 강조 표기 혼용",
-      "priority": 20,
-      "note": "29차 회차에 '증명 스케치' 를 '증명의 요지' 로 통일했다(커밋 1a43117, 29 문서 67 곳). 단어는 통일됐으나 강조 꼴은 그 자리의 기존 표기를 그대로 두었으므로 네 갈래가 남아 있다. '증명의 요지는 ~' 평문 산문 43, '**증명의 요지.**' 굵게 34, '*증명의 요지.*' 기울임 43, '## 증명의 요지' 헤딩 16, '증명의 요지.' 평문 59, '증명의 요지:' 콜론 2, '**증명의 요지 (2=>1).**' 처럼 괄호로 경우를 적은 것 3 이다. CLAUDE.md 4절은 '굵은 글씨는 정의되는 용어에만 쓴다' 고 하므로 '**증명의 요지.**' 34 곳은 규칙 위반이고, 기울임은 규칙에 언급이 없다. 평문 '증명의 요지.' 로 모으는 것이 4절에 맞지만 '## 증명의 요지' 헤딩 16 곳은 절을 나눈 것이라 성격이 다르다. 한 회차를 이 꼴 통일에 쓸 때 정할 것 둘. (1) 굵게와 기울임을 평문으로 내릴지. (2) 헤딩 꼴 16 곳을 남길지. 29차 회차에 단어만 바꾸고 꼴을 건드리지 않은 이유는 꼴 변경이 77 곳을 더 고치는 별개 판단이기 때문이다. 함께 볼 것: 증명 끝의 ∎ 기호를 94 문서가 쓰는데 규격에 없다. 관례로 자리잡았으므로 29차 회차에는 손대지 않았고, 꼴 통일 회차에 규격에 적을지 정하면 된다.",
-      "createdAt": "2026-10-04T00:49:30.375Z",
-      "seq": 1611
-    },
-    {
       "id": "49d7bd05",
       "title": "번역체 grep 의 '어진다' 오탐",
       "priority": 20,
@@ -132,12 +116,12 @@
       "seq": 1632
     },
     {
-      "id": "f090f333",
-      "title": "연속 Fourier 변환 문서 신설",
+      "id": "e5f1d8df",
+      "title": "증명 머리말 꼴 통일의 남은 판단",
       "priority": 20,
-      "note": "저장소에 fourier.md(이산 Fourier 변환), fourier-series.md, boolean-fourier.md, local-fourier-analysis.md 는 있으나 실직선 위의 연속 Fourier 변환 문서가 없다. schwartz-distributions 의 완만 분포 절이 이 개념을 링크 없이 이름만 쓰고 있고, poisson-summation 과 mellin-transform 쪽도 같은 자리가 빈다. 분야는 해석학(#analysis #functional_analysis). 부모 후보는 lp-spaces 와 fourier-series 다. 반전 공식, Plancherel 정리, 미분을 곱셈으로 바꾸는 성질, 합성곱 정리가 한 문서 분량이다.",
-      "createdAt": "2026-10-04T08:57:09.208Z",
-      "seq": 1644
+      "note": "30차 회차에 굵게 '**증명의 요지.**' 37 곳(괄호로 경우를 적은 변종 3 포함)과 산문 속 콜론 '증명의 요지: ' 3 곳을 평문 '증명의 요지.' 로 내렸다(28 문서 40 줄, 커밋 1fd4ee7). 29차 note 가 센 기울임 '*증명의 요지.*' 43 곳은 집계 시점의 패턴 차이이고 30차에 세어 보니 0 이다. 남은 것 셋은 독자 판단이 필요하다. (1) 헤딩 '## 증명의 요지' 17 곳. 절을 나눈 것이라 성격이 다르므로 그대로 두었다. classification-of-surfaces 의 '## 증명의 요지: 존재' 와 '## 증명의 요지: 구별' 둘이 콜론 꼴 헤딩이다. (2) 증명 끝의 ∎ 와 $\\square$ 기호를 94 문서가 쓰는데 4절 규격에 없다. 관례로 자리잡았으므로 손대지 않았다. (3) '**정리.**' 꼴 머리말이 520 곳이다. 4절 '굵은 글씨는 정의되는 용어에만 쓴다' 를 엄격히 읽으면 이것도 위반이지만, 저장소 전반의 관례이고 증명 머리말과 달리 평문 쪽이 소수다. 셋 가운데 (3) 이 가장 큰 결정이다.",
+      "createdAt": "2026-10-04T12:45:35.761Z",
+      "seq": 1652
     },
     {
       "id": "410fd79d",
@@ -196,28 +180,12 @@
       "seq": 1238
     },
     {
-      "id": "d4878604",
-      "title": "더 알아보기 묶음 규칙 회귀 점검 (다음 차수)",
-      "priority": 11,
-      "note": "꺼내기 전에 이 첫 문단을 읽을 것. 이 항목은 새 문서를 여러 개 쓴 회차 뒤, 또는 한 문서에 자식을 여럿 더한 회차 뒤에만 돌린다. 간선을 바꾸지 않은 회차면 돌리지 않고 되돌린다. 2026-09-28 회차에도 꺼냈으나 되돌렸다. 그 회차는 본문 중복 링크 해제와 제목 좁히기만 해서 간선을 하나도 바꾸지 않았다. 되돌린 것이 이로써 네 회차 연속이므로 우선순위를 12 에서 11 로 내린다. 같은 12 에 조건 없이 돌릴 수 있는 항목들이 있어서 이 항목이 매 회차 먼저 나와 pop 과 되돌리기를 되풀이했다. 조건이 맞는 회차에서는 큐 목록에서 이 항목을 직접 찾아 꺼낼 것.\n\n아래는 앞 note 그대로다.\n\n두 주축 모두 0 건이었다: 자식 6 개 이상인데 묶음 없음 0 건, 자식 5 개 이하인데 묶음 있음 0 건. 검사기 grouping.mjs 를 스크래치패드에 다시 짜고 축 하나를 더했다: MIXED(묶음이 있는데 묶음 밖에 링크 줄이 남은 문서)이고 0 건이다. 셋째 축(항목 1 개짜리 묶음, THIN)은 4 건 전부 유지로 확정되어 닫혔다: computability(4,3,1), elliptic-curves(3,1,3,1), foundations-overview(5,1), modular-curves(2,3,1). 판정 기준 확정: 1 짜리 묶음의 이름이 나머지 묶음과 다른 갈래나 다른 분야를 가리키면 유지하고, 같은 갈래를 잘게 쪼갠 것이면 합친다. THIN 이 5 건 이상으로 늘면 새로 걸린 것만 이 기준으로 판정할 것.",
-      "createdAt": "2026-09-28T00:47:37.426Z",
-      "seq": 1344
-    },
-    {
       "id": "06f2e7b8",
       "title": "한국어 문장에 끼인 영문 용어 훑기 (22차)",
       "priority": 11,
       "note": "2026-09-28 21차. 조사 띄어쓰기 축을 전부 닫았다. 회차 시작 때 151 건이었고 (는 20, 와 19, 이 18, 를 15, 다 12, 로 12, 은 9, 과 7, 라 7, 이다 6, 이면 6, 이고 4, 에 4, 이며 3, 으로 3, 이라 2, 에서 2, 만 1, 라는 1) 전부 고쳐 0 건이 되었다. 20차가 닫은 '가' 도 0 건으로 유지되고 있었다.\n\n20차 검사기의 구멍을 찾아 메웠다. 조사 목록에 '을' 이 없었다. 목록에 넣고 훑으니 을 7, 부터 1, 처럼 1 이 더 나왔고(fourier-series 135 Parseval을, network-flow 155 Ford–Fulkerson을·Dinic을, newton-method 119·124 Hessian을, np-completeness 88 Cook–Levin을, lambda-calculus 98 redex부터, link-cut-trees 18 heavy-light처럼) 함께 고쳤다. 22차의 조사 목록은 다음을 쓸 것. 이다 이면 이고 이며 이라 라는 으로 에서 에게 부터 까지 마다 처럼 보다 이나 거나 가 는 와 이 를 로 다 은 라 과 에 만 을 의 도.\n\n닫은 뒤 더 넓은 목록(에게서 로부터 이라는 이라고 에서는 으로는 에서도 으로도 에는 에도 로는 로도 와의 과의 까지 포함)으로 회귀 점검해 0 건임을 확인했다. 22차는 새 문서가 들어온 뒤 이 넓은 목록으로 회귀 점검만 돌리면 된다.\n\n오검출은 이 회차에 한 건도 없었다. 19차가 경고한 갈래를 전수로 확인한 결과를 적어 둔다. (1) '다' 10 건은 전부 문장 끝 서술격이었다(reverse mathematics다, Galois다, union bound다, NP-complete다 등). (2) '라' 5 건은 전부 '~라 한다' 의 인용격이었다(generator라, combinator라, preferred edge라, light라, normal neighborhood라). (3) '만' 1 건은 lambda-calculus 161 의 combinator만으로 이고 보조사였다. (4) 인명 뒤 '은' 과 '이' 도 전부 조사였다(Gödel은, Gentzen은, Newton은).\n\n부수로 고친 것이 하나 있다. dag-topological 의 제목 'DAG와 위상정렬' 이 링크 표시 제목과 개관 세 곳의 mermaid 라벨까지 11 곳에 박혀 있어 'DAG 와 위상정렬' 로 한 번에 맞췄다. 이 제목은 'A와 B' 꼴이라 제목 좁히기 작업의 대상이기도 하다. 그 작업이 제목을 바꾸면 11 곳을 다시 맞춰야 한다.\n\n22차에 남은 축. 12차 note 가 남긴 축(병기로 확인된 역어의 짝이 병기 없이 본문에 남아 있는지)은 여전히 돌리지 않았다. 앞 차수가 판정한 것은 다시 열지 말 것: divergence 와 calculus 는 영문 유지, score 는 점수함수, platonism 은 플라톤주의, clopen 은 열린닫힌, adjugate 는 영문 유지, arity 는 항수.",
       "createdAt": "2026-09-28T16:46:47.351Z",
       "seq": 1389
-    },
-    {
-      "id": "b4a7a455",
-      "title": "두문자어 첫 등장 풀이 전수 점검 (22차)",
-      "priority": 11,
-      "note": "20차 note 의 SKIP 목록을 먼저 옮겨 적는다. 큐 항목을 교체할 때 앞 note 가 지워지므로 이 목록은 차수마다 그대로 이어 적을 것.\n\n[20차가 남긴 것] 2026-09-19 회차 20차에 검사기를 고쳐 오검출을 걷어내고(문서별 acronym.mjs: 링크 목적지는 .md 와 http 만 마스킹, 약어 뒤 강조기호·대괄호가 낀 풀네임 괄호도 통과, 약어 글자를 머리로 하는 낱말이 같은 줄에 연달아 있으면 기준 8 예외로 통과) 실질 위반 35 건을 스물일곱 문서에서 풀었다. KKL FKN BSC BEC KLPT P2P PRA RBF SGD DFS BFS SDE(2) IC BGG KLR AGM PD LICQ MFCQ ADMM BKZ LR(2) MP LDPC PID BFGS WGAN PA ARS CNF LLT MOV GOE GUE QAM WZW BPS BTZ LMFDB(4). 약어를 쓰지 않는 쪽이 나은 자리 셋은 풀이 대신 지웠다: flow-matching 의 OT 는 문서가 이미 쓰는 최적 수송 으로, fontaine-mazur 표의 HT 는 본문과 같은 Hodge-Tate 로 되돌렸다. 검사기가 내놓는 17 건은 전부 판정상 풀지 않는 것이고 그대로 두면 된다: EDSAC(기계 이름) QR SMILES ISBN CRC ATLAS(책 제목) BN254 BN381 BLS12(곡선 규격) 는 기준 4, ADE(근계 분류 기호) 는 기준 6, MISSISSIPPI(단어) INSERT CONNECTED DELETE(연산 이름) MAX(MAX-3SAT 의 일부) ABCD(광학 행렬 성분) 는 오검출, AJ 는 항목 본문이 A 다항식과 Jones 다항식을 함께 설명하므로 둔다.\n\n[21차] 2026-09-28 셋째 회차에 이 회차가 만진 문서 70 개에 대해 돌렸다. 전수가 아니라 회차 범위다. 검사기를 python 으로 간단히 다시 짰다(acr.py). 문서마다 대문자 2 글자 이상 토큰의 첫 등장만 모으고, 인라인 수식과 링크 주소와 URL 은 같은 길이 공백으로 마스킹하고, 코드펜스와 각주 정의 줄과 # 연관 문서 이후는 건너뛴다. 같은 줄에 소문자 3 자 이상이 든 괄호가 있으면 풀린 것으로 본다. 20차의 acronym.mjs 보다 거칠어서 오검출이 많았다.\n\n고친 것 5 건. 전부 한국어 용어 뒤에 약어만 괄호에 넣고 원어 풀네임을 빠뜨린 꼴이었다. finite-fields 123 선형 되풀이 수열(LFSR) -> (linear feedback shift register, LFSR), planar-graphs 152 회로 배선(VLSI) -> (very large scale integration, VLSI), schur-polynomials 37 반표준 Young 대각표(SSYT) -> (semistandard Young tableau, SSYT), kl-divergence 160 증거 하한(ELBO) -> (evidence lower bound, ELBO), graphs 29 링크 표시 제목이 DAG 인 자리 뒤에 (directed acyclic graph) 를 붙였다.\n\n21차가 대상 아님으로 판정한 것(다시 열지 말 것). (1) 제목 줄의 약어는 4 절이 푸는 자리는 본문의 첫 등장 이라 했으므로 대상이 아니다. dag-topological 1 DAG, kl-divergence 1 KL, mv-cycles 1 MV, np-completeness 1 NP, zfc-axioms 1 ZFC. (2) 수식 안의 기호와 연산자 이름은 4 절이 세지 말라 했다. sinkhorn 112 의 LSE, markov-chains 101 의 TV, group-representations 22 의 GL, curvature 61 의 II 와 67 의 EG, random-variables 97 의 XY, witten-asymptotics 20 의 DA 와 CS. (3) 이미 규격대로 풀린 것. lambda-calculus 139 의 단순 타입 lambda calculus(STLC). (4) 풀네임이 관례적으로 없는 행렬 분해 이름. linear-algebra-overview 46 의 LU 와 QR.\n\n판정 보류 1 건. zfc-axioms 93 의 ZF 는 이 문서에서 첫 등장이지만 5 줄에 ZFC 는 Zermelo-Fraenkel 집합론에 선택공리를 더한 공리계 로 ZFC 가 이미 풀려 있다. 4 절은 약어마다 따로 세라고 하므로 엄밀히는 ZF 도 풀 자리인데, 같은 풀네임을 두 줄 건너 다시 적는 것이 읽기에 나은지 판정이 필요하다. 다음 차수에 정할 것.\n\n22차의 범위. 21차는 만진 70 개만 보았으므로 559 개 전수는 아직 남았다. 20차의 acronym.mjs 를 다시 짜서(위 SKIP 목록을 넣은 채로) 돌리는 것이 21차의 거친 검사기보다 낫다. 수식 마스킹을 $$ 블록까지 넓히고 대문자 토큰이 링크 표시 제목 안에 있는지도 따로 표시할 것.",
-      "createdAt": "2026-09-28T17:02:11.385Z",
-      "seq": 1400
     },
     {
       "id": "8744ea85",
@@ -300,30 +268,6 @@
       "seq": 1598
     },
     {
-      "id": "aa37d196",
-      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (19차)",
-      "priority": 11,
-      "note": "꺼내기 전에 이 첫 문단을 읽을 것. 이 항목은 수식이 많은 새 문서가 들어온 회차의 끝에만 돌린다. 그런 회차가 아니면 돌리지 않고 되돌린다.\n\n18차는 2026-10-03 28차 회차에 돌렸다. 조건이 맞았다(partition-algebras 를 새로 썼고 수식이 많다). 검사기 bare-math.mjs 를 스크래치패드에 다시 짰고 588 문서에서 보고 2 건이다. 하나가 진짜 사고였다.\n\n진짜 사고. umbral-moonshine 76 줄이 '$XWeyl 군으로 나누면 ... 남는다.' 로 시작했다. 앞의 $ 가 수식을 열어 한국어 산문을 통째로 수식 스팬으로 삼고, 그 뒤 A_1^{24} 가 수식 밖 맨 텍스트로 떨어지고 줄 끝 M_{24}$ 의 $ 가 짝을 잃었다. 커밋 19a29ff(직관 절을 두 문단으로 줄인 작업)가 '$X' 를 문장 앞에 흘린 것이다. 앞의 블록 수식이 G^X=Aut(N^X)/W^X 를 정의하므로 '$\\mathrm{Aut}(N^X)$ 를 Weyl 군으로 나누면' 으로 고쳤다(커밋 11a5a76). render-check 는 이것을 잡지 못한다. 원문의 수식 스팬이 렌더 결과에 그대로 남는지만 보기 때문에, 한국어가 든 수식 스팬도 통과한다. 4절 검수 여섯도 전부 통과했다. 이 검사기만 잡는 사고다.\n\n오검출 하나. ramsey-theory 153 줄의 각주 'V. Angeltveit and B. D. McKay, \"R(5,5) <= 46\"' 은 arXiv 2409.15709 의 실제 논문 제목이고 부등호가 제목의 일부다. 그대로 둔다.\n\n검사기 명세. 건너뛰는 줄: 코드펜스 안, 여러 줄 $$ 블록 안, 태그 줄(^#[a-z0-9_]), 표 구분선. 제거 순서: 각주 정의 머리, 각주 참조, 한 줄 $$ 블록, 인라인 수식, 인라인 코드, URL, 링크(표시 제목만 남김). 검사 기호: <= >= !=, 유니코드 집합·연산 기호, 밑줄과 캐럿 뒤 영숫자나 중괄호, 중괄호, 백슬래시 명령. 17차 note 의 URL 보정은 반드시 넣어야 하고(각주 참고문헌 주소의 밑줄), 16차 보정대로 화살표(-> 와 |->)는 검사 기호에서 빼야 한다. 빼지 않으면 개관 갈래 줄과 증명 스케치의 '(1) -> (2)' 가 전부 걸려 보고가 94 건으로 부푼다(이번에 확인했다). 12차 note 의 p-np 판정, 15차 note 의 rsa-cryptosystem 판정, 16차가 고친 galois-connections 160 은 그대로 유효하다.",
-      "createdAt": "2026-10-03T20:51:05.766Z",
-      "seq": 1599
-    },
-    {
-      "id": "c79af9c5",
-      "title": "수식 구분자 짝과 수식 안 한글 회귀 점검 (차기)",
-      "priority": 11,
-      "note": "28차 회차에 새로 만든 검사다. umbral-moonshine 76 줄의 사고(커밋 11a5a76)가 4절 검수 여섯과 render-check 를 전부 통과했기 때문에 만들었다. 사고의 꼴은 산문 앞에 $ 하나가 흘러들어 한국어 문장이 통째로 수식 스팬이 되는 것이다. 줄 안의 $ 개수는 짝수로 유지되므로 짝 검사만으로는 안 잡히고, 스팬 안의 한글을 봐야 잡힌다.\n\n검사 둘을 한 스크립트로 돌린다. 건너뛰는 줄은 코드펜스 안과 여러 줄 $$ 블록 안이다. 한 줄짜리 $$식$$ 은 먼저 지운다. (1) 홀수 달러: 남은 줄의 $ 개수가 홀수면 보고. (2) 수식 안 한글: 인라인 스팬 (?<!\\$)\\$[^\\$\\n]+\\$(?!\\$) 를 뽑아 \\\\text{...} \\\\mathrm{...} \\\\mbox{...} 의 중괄호 안을 지운 뒤 한글이 남으면 보고.\n\n28차 결과는 588 문서에서 홀수 달러 0 건, 수식 안 한글 0 건이다. \\\\text{} 보정을 넣지 않으면 33 건이 나오는데 전부 정당한 용법이다(instanton-floer-homology 56, knot-invariants 81, kolyvagin-systems 33, localization-rings 47/91, mass-formula 21, mock-modular-forms 17, mordell-lang 25, niemeier-lattices 96, np-completeness 52/53, perron-frobenius 31, prime-ideals 9, pushforward-measure 69, schellekens-list 27, singular-value-decomposition 103, volume-conjecture 29/35, wkb-approximation 19 등). 고치기 전 umbral-moonshine 을 이 검사기에 넣으면 76 줄에서 2 건이 잡힌다.\n\n같이 돌린 보조 검사. 인라인 스팬 길이가 150 자를 넘는 것 3 건(group-presentations 87, hyperbolic-3-manifolds 143, lambda-calculus 88)은 전부 실제로 긴 식이다(땋임군 표시, 여덟 기하의 목록, Y 조합자). 삼킨 문장이 있으면 길이로도 드러나므로 함께 보면 좋다.\n\n이 검사는 조건 없이 매 회차 돌릴 만큼 싸다(588 문서에 1 초 미만).",
-      "createdAt": "2026-10-03T20:52:30.471Z",
-      "seq": 1600
-    },
-    {
-      "id": "5b60eb9c",
-      "title": "각주 짝과 본문 중복 링크 회귀 점검 (차기)",
-      "priority": 11,
-      "note": "28차 회차에 새로 만든 검사다. 조건 없이 매 회차 돌릴 만큼 싸다(588 문서에 1 초 미만).\n\n검사 셋. (1) 정의만 있고 본문에서 참조하지 않은 각주(4절: 각주는 본문에서 참조한 것만 정의한다). (2) 참조만 있고 정의가 없는 각주. (3) '# 연관 문서' 앞의 본문에서 같은 id 를 두 번 이상 링크한 자리(4절: 본문 링크는 최초 1회).\n\n28차 결과와 처리(커밋 7f8dd4d). 정의만 1 건: pcp-theorem 124 줄의 [^3](Håstad, Some optimal inapproximability results, JACM 48)이 정의만 있었다. 그 각주가 가리키는 '## Håstad 의 3 비트 검증자' 절이 62-70 줄에 그대로 있었으므로 64 줄 '3 질의 검증자를 만들었다' 뒤에 [^3] 을 붙여 참조를 복원했다. 지우는 쪽이 아니라 붙이는 쪽이 맞는 경우다. 참조만 0 건.\n\n본문 중복 링크는 보고 166 건인데 개관 21 개가 159 건을 낸다. 개관은 4.5절 구조상 개요와 갈래에서 같은 문서를 두 번 링크하는 것이 정상이므로 검사 대상에서 빼야 한다. 개관을 빼면 7 건이고 전부 실제 중복이라 둘째 링크를 풀었다. interior-point-method 91(괄호 '([선형계획법](...))' 째로 지웠다. 링크를 풀면 '(선형계획법)' 이 아무 정보도 주지 않는다), langlands-program 19, normalizer 79, p-adic-numbers 133, solvable-groups 77 과 78, topological-groups 77. 라벨이 다른 경우도 중복으로 본다. normalizer 는 'Sylow' 와 'Sylow 정리', solvable-groups 는 'Galois 군' 과 'Galois 이론' 이었고 둘 다 같은 문서를 가리키므로 둘째를 풀었다.\n\n검사기 명세. 각주 정의는 ^\\[\\^id\\]: 로 잡고 참조는 그 밖의 \\[\\^id\\] 로 잡는다. 코드펜스 안은 건너뛴다. 중복 링크는 txt.indexOf('\\n# 연관 문서') 로 본문을 잘라낸 뒤 \\]\\(([a-z0-9-]+\\.md)\\) 를 세고, 파일명이 -overview.md 로 끝나는 문서는 건너뛴다.",
-      "createdAt": "2026-10-03T20:54:49.357Z",
-      "seq": 1603
-    },
-    {
       "id": "d0a14f2f",
       "title": "분할과 세기 축의 후속 간선 (차기)",
       "priority": 11,
@@ -332,36 +276,12 @@
       "seq": 1604
     },
     {
-      "id": "05cebeab",
-      "title": "문서 골격 회귀 점검 (차기)",
-      "priority": 11,
-      "note": "28차 회차에 새로 만든 검사 둘이다. 둘 다 싸서 조건 없이 매 회차 돌릴 만하다.\n\n(1) 골격 검사. 비개관 문서의 본문 H1 이 '# 개요 # 직관 # 정의 # 성질 # 활용' 다섯을 이 순서로 갖는지(제목 H1 과 '# 연관 문서' 는 뺀다), 여러 줄 $$ 구분자의 개수가 짝수인지, 표 한 묶음의 줄마다 열 수가 같은지를 본다. 구형 문서(^## 정의$ 가 있는 것)는 따로 센다. 28차 결과는 589 문서에서 H1 위반 0, 구형 0, $$ 짝 0, 표 열 불일치 0 이다. 구형 0 은 구형 문서가 저장소에 더 남아 있지 않다는 뜻이고, 2절 3단계의 '구형 문서의 신형 전환' 작업 후보가 비었음을 확인한 것이다.\n\n(2) 더 알아보기 묶음 검사. '## 더 알아보기' 절의 '- [' 로 시작하는 링크 줄 수와 '### ' 묶음 머리 수를 세어, 자식 6 개 이상인데 묶음이 없는 문서와 자식 5 개 이하인데 묶음이 있는 문서를 보고한다. H2 가 절 안에 침입했는지도 본다(5절: H2 는 쓰지 않는다. 절의 끝으로 읽힌다). 28차 결과는 묶음 필요 0, 불필요 묶음 0, H2 침입 0 이다.\n\n절 범위를 자를 때 '## 더 알아보기' 다음의 '\\n## ' 또는 태그 줄('\\n#[a-z0-9_]')까지로 잡아야 한다. 그러지 않으면 태그 줄을 H1 으로 읽는다. 골격 검사도 태그 줄을 H1 으로 세지 않도록 ^#[a-z0-9_] 를 건너뛴다.\n\n이 두 검사는 큐 항목 d4878604(더 알아보기 묶음 규칙 회귀 점검)와 겹친다. d4878604 는 '새 문서를 여러 개 쓴 회차 뒤에만' 이라는 조건이 붙어 있는데, 이 검사기는 조건 없이 돌릴 만큼 싸므로 d4878604 를 꺼낼 때 이 항목으로 대체할지 판단할 것.",
-      "createdAt": "2026-10-03T20:58:37.950Z",
-      "seq": 1605
-    },
-    {
-      "id": "a5906fb2",
-      "title": "js 코드블록 회귀 점검 (차기)",
-      "priority": 11,
-      "note": "2026-10-04 29차 회차에 돌렸다. 회귀 0 건이다. 비허용 언어 코드펜스 0, 언어 미표시 코드펜스 0(짝 검사 포함), console.log 0 문서, print( 0 건, '## 수치로 확인 / 시뮬레이션 / 계산으로 확인' 헤딩 0 건이다. 결과 주석 패턴 '// ... = 숫자' 는 보고 1 건이고 오검출이다. hensel-lemma:76 의 'return a  // 법 mod 에서 f(a) = 0' 은 프로그램의 출력을 옮긴 것이 아니라 반환값이 만족하는 수학적 조건을 적은 것이므로 유지한다. 앞 회차가 오검출로 남겨 둔 셋(abstract-interpretation heegner-points siegel-weil)은 이번 패턴에 걸리지 않았다. 검사법: grep -rnE '^```[a-z]+' docs/*.md 를 javascript typescript mermaid js ts 로 걸러내고, awk 로 코드펜스 토글을 세어 언어 없는 여는 펜스를 찾고, console.log 와 print( 와 세 헤딩을 전수로 본다.",
-      "createdAt": "2026-10-04T00:58:10.436Z",
-      "seq": 1616
-    },
-    {
       "id": "dbe0256d",
       "title": "문학적 비유 grep 회귀 점검 (10차)",
       "priority": 11,
       "note": "2026-10-04 29차 회차. 4절 grep 전체를 돌려 8 건이 나왔고 셋은 용어 예외, 넷은 이번 회차에 들어온 실제 위반이라 고쳤다. 용어 예외 셋은 앞 차수와 같다: elliptic-curves:118 '사다리'(Montgomery ladder), lie-algebras:162 '사다리 연산자'(ladder operator), post-quantum-cryptography:126 '함정문' 둘(trapdoor). 실제 위반은 이번 회차에 쓴 jones-wenzl-idempotents 의 '뼈대' 넷이다(75줄 헤딩, 77줄 둘, 81줄 각주). skein algebra 를 '뼈대 대수' 로 옮긴 것이고 두 가지가 겹친 잘못이다. (1) '뼈대' 는 4절이 명시적으로 금지한 단어다. (2) skein 의 역어가 아니다. skein 은 실타래이고 '뼈대' 는 framework 쪽이다. 4절의 '풀네임을 임의로 번역하지 않는다. 굳은 한국어 용어가 없으면 원어를 그대로 쓴다' 에 따라 '스케인 대수(skein algebra)' 로 고쳤다(커밋 7efb9e8). 교훈은 금지어 grep 을 새 문서에도 반드시 돌려야 한다는 것이다. 29차 회차는 새 문서 셋(temperley-lieb-algebras cellular-algebras jones-wenzl-idempotents)을 썼고 앞 둘은 작성 직후 개별로 돌려 통과했으나 jones-wenzl-idempotents 는 이 회귀 점검에서야 걸렸다.",
       "createdAt": "2026-10-04T00:58:10.558Z",
       "seq": 1617
-    },
-    {
-      "id": "c9573316",
-      "title": "개관 개요의 저장소 자체 언급 회귀 점검 (차기)",
-      "priority": 11,
-      "note": "2026-10-04 29차 회차에 다시 돌렸다. 회귀 0 건이다. 검사법은 '아직 문서가 없 / 이 지도에서는 / ^- ?아직 연결한 / ## 빈자리 / ## 할 일 / ## 보강할 점 / 저장소' 를 docs/*-overview.md 전체에서 찾는 것이고 보고가 하나도 없다. 앞 회차가 오검출로 판정한 셋(kazhdan-lusztig:7 lang-trotter:13 weyl-character-formula:194 의 '빈자리')은 개관 문서가 아니라 이 검사 범위에 들지 않는다. 개관은 22 개다(29차 회차에 늘지 않았다).",
-      "createdAt": "2026-10-04T00:58:10.682Z",
-      "seq": 1618
     },
     {
       "id": "accba672",
@@ -426,6 +346,62 @@
       "note": "greens-function 을 harmonic-functions 와 schwartz-distributions 의 자식으로 달고 리프로 남겼다. 활용 절에서 본문 링크만 둔 것: dirichlet-problem(표현 공식의 둘째 항이 해), conformal-mapping(평면 영역의 Green 함수가 등각불변), brownian-motion(점유시간 밀도). 세 문서 모두 이미 다른 축에 부모가 있어 간선으로 두지 않았다. 자식 후보: 퍼텐셜 이론(용량과 Wiener 기준), 열핵, 타원형 정칙성. 저장소에 없다. dirichlet-problem 은 이번 회차에 본문에서 greens-function 을 링크했다.",
       "createdAt": "2026-10-04T09:01:22.050Z",
       "seq": 1647
+    },
+    {
+      "id": "20546c19",
+      "title": "fubini-tonelli 의 후속 간선",
+      "priority": 11,
+      "note": "30차 회차에 fubini-tonelli 를 썼고(86줄, 커밋 10bc62a) 자식 없이 리프로 두었다. fourier-transform 을 자식으로 두지 않은 이유는 5절 '부모를 빼도 자식의 개요가 그대로 읽히는가' 에 걸리기 때문이다. Fourier 변환 문서의 개요와 직관에 Fubini 가 나오지 않고 증명 도구로만 세 번 쓰이므로 본문 링크로 두었다. 자식 후보는 곱측도 자체를 다루는 문서(product-measure, 지금 없다. 30차에는 fubini-tonelli 의 정의 절에 곱측도 구성을 넣어 분담했다), Minkowski 적분 부등식, 층 분해를 쓰는 분포함수 적분 표현이다. 곱측도 문서를 따로 세우면 fubini-tonelli 의 정의 절 '## 곱측도' 와 중복되므로 분담을 먼저 정해야 한다.",
+      "createdAt": "2026-10-04T12:49:41.845Z",
+      "seq": 1653
+    },
+    {
+      "id": "ef1802ea",
+      "title": "lebesgue-integral 더 알아보기 묶음 이름 재검토",
+      "priority": 11,
+      "note": "30차에 fubini-tonelli 를 더해 자식이 6개가 되어 5절 묶음 규칙대로 H3 세 개로 나눴다. '### 수렴과 교환'(monotone-convergence, fubini-tonelli), '### 함수공간'(lp-spaces, bounded-variation), '### 측도와 확률'(radon-nikodym, random-variables) 이다. 묶음마다 둘뿐이어서 나눈 효과가 작고, 자식이 더 늘면 묶음 경계가 달라질 수 있다. dominated-convergence 가 monotone-convergence 의 자식이라 이 목록에는 없는데, 수렴정리를 한 묶음으로 모으는 편이 나은지도 같이 본다.",
+      "createdAt": "2026-10-04T12:49:41.971Z",
+      "seq": 1654
+    },
+    {
+      "id": "b429b4f7",
+      "title": "회귀 점검 묶음 결과 (30차)",
+      "priority": 11,
+      "note": "30차 회차에 608 문서 전수로 돌려 전부 통과한 검사 목록. 다음 회차는 이 결과를 기준선으로 삼고 새로 쓴 문서만 보면 된다. (1) 수식 검사 1~5 전역: 이스케이프 0, 태그로 읽히는 부등호 0, 링크로 읽히는 대괄호 0, 줄 끝 백슬래시 0. 밑줄은 둘 걸렸고 finite-fields:131 과 unique-factorization-domains:89 의 각주 URL 안 밑줄이라 큐 b452028c 가 기록한 오탐이다. (2) 수식 구분자 짝: 홀수 줄 0. (3) 수식 안 한글: 43 곳이 모두 \\text{} 안이고 그 밖의 혼입은 0. (4) 문서 골격: 본문 H1 다섯 개의 순서가 어긋난 문서 0, 구형 '## 정의' 구조 문서 0, 연관 문서 절 없는 문서 0, 태그 줄 이상 0. 구형 전환이 완료된 상태다. (5) 코드블록: 허용 언어 밖 0, 언어 없는 블록 0. (6) 검증성 절(수치로 확인, 시뮬레이션)과 추측성 절(남은 방향, 전망) 0, 범위 뭉뚱그린 열린 문제 서술 0, operatorname 류 금지 매크로 0. (7) 태그가 하나뿐인 문서 0. (8) 문장형 헤딩: sylow-theorems 의 '## 정리 1의 증명 요지' 와 '## 정리 2와 3의 증명 요지' 둘만 걸리고 '요지' 오탐이다(큐 9bc3b9fa, b4ccf30f). (9) 'A와 B' 꼴 제목 27 개 전수 확인. 모두 4절이 예외로 둔 '정리 이름과 그 정리가 답하는 개념' 꼴이거나 파일명이 두 개념을 다 담은 것(ideals-quotient-rings, limits-colimits, selmer-tate-shafarevich 등)이라 고칠 것이 없다. 이 판정으로 큐 aef70d6a 를 닫았다.",
+      "createdAt": "2026-10-04T12:54:21.369Z",
+      "seq": 1655
+    },
+    {
+      "id": "6ec2c933",
+      "title": "개관 개요 점검 결과 (30차)",
+      "priority": 11,
+      "note": "30차 회차에 개관 21 개의 개요 절을 전수로 읽고 두 곳을 고쳤다(커밋 참조). (1) optimization-overview 가 '최적화 문서는 네 줄기다' 로 저장소 자체를 가리켰다. 다른 개관 12 개가 모두 '<분야>의 갈래는 N 줄기다' 꼴이므로 그에 맞췄다. (2) computation-overview 의 '시작은 [계산 가능성](computability.md)다' 가 받침 뒤 조사 오류였다. 전수 검사로 '](id.md)다' 꼴 가운데 표시 제목이 받침으로 끝나는 것은 이 하나뿐이었다. 남은 것은 판단 사안이다. 개관이 다른 개관을 가리킬 때 '그쪽 문서는 [정수론 개관](number-theory-overview.md)에 있다' 처럼 '문서' 를 쓰는 자리가 complex-analysis-overview 와 number-theory-overview 등에 있다. 4.5절이 개요에 '어느 문서에서 시작해 어디로 갈라지는지' 를 적으라고 하므로 지도 안내로 보아 그대로 두었으나, 0절의 저장소 자체 언급 금지와 경계가 붙어 있다.",
+      "createdAt": "2026-10-04T12:55:31.379Z",
+      "seq": 1656
+    },
+    {
+      "id": "64b48fad",
+      "title": "수식이 맨 텍스트로 쓰인 자리 회귀 점검 (19차)",
+      "priority": 11,
+      "note": "꺼내기 전에 이 첫 문단을 읽을 것. 이 항목은 수식이 많은 새 문서가 들어온 회차의 끝에만 돌린다. 그런 회차가 아니면 돌리지 않고 되돌린다.\n\n19차는 2026-10-04 30차 회차에 돌렸다. 조건이 맞았다(fourier-transform, fubini-tonelli, uncertainty-principle 셋을 새로 썼고 수식이 많다). 608 문서에서 보고 2 건이고 둘 다 오검출이다. 진짜 사고는 없었다.\n\n오검출 둘. ramsey-theory 153 의 'R(5,5) ≤ 46' 은 18차가 이미 판정한 arXiv 2409.15709 의 논문 제목이다. rankin-selberg 229 의 'GL(2)×GL(3)' 은 Kim-Shahidi 논문 제목 'Functorial products for GL(2)×GL(3)' 의 일부다. 둘 다 각주 참고문헌이고 기호가 제목에 든 것이므로 그대로 둔다.\n\n검사기를 짤 때 빠뜨리기 쉬운 것. 30차에 처음 돌린 판본이 보고 33 건을 냈고 31 건이 인용 블록 안의 여러 줄 $$ 수식이었다. 블록 토글 정규식을 CLAUDE.md 4절의 awk 처럼 /^\\s*>?\\s*\\$\\$\\s*$/ 로 써서 인용 머리 '> ' 를 허용해야 한다. 이것을 빼면 '> ' 로 시작하는 블록 수식의 본문 줄이 전부 맨 텍스트로 보고된다.\n\n검사기 명세. 건너뛰는 줄: 코드펜스 안, 여러 줄 $$ 블록 안(인용 머리 허용), 태그 줄(^#[a-z0-9_]), 표 구분선. 제거 순서: 각주 정의 머리, 각주 참조, 한 줄 $$ 블록, 인라인 수식, 인라인 코드, URL, 링크(표시 제목만 남김). 검사 기호: <= >= !=, 유니코드 집합·연산 기호, 밑줄과 캐럿 뒤 영숫자나 중괄호, 중괄호, 백슬래시 명령. 화살표(-> 와 |->)는 검사 기호에서 빼야 한다. 빼지 않으면 개관 갈래 줄과 증명 요지의 '(1) -> (2)' 가 전부 걸려 보고가 94 건으로 부푼다. 12차 note 의 p-np 판정, 15차 note 의 rsa-cryptosystem 판정, 16차가 고친 galois-connections 160, 18차가 고친 umbral-moonshine 76 은 그대로 유효하다.",
+      "createdAt": "2026-10-04T12:56:50.345Z",
+      "seq": 1657
+    },
+    {
+      "id": "61865c86",
+      "title": "묶음 규칙·각주 짝·본문 중복 링크 점검 결과 (30차)",
+      "priority": 11,
+      "note": "30차 회차에 608 문서 전수로 돌렸다. (1) 더 알아보기 묶음 규칙: 자식 6 명 이상인데 H3 묶음이 없는 문서 0, 5 명 이하인데 묶은 문서 0. 이 회차에 lebesgue-integral 이 6 명이 되어 '### 수렴과 교환', '### 함수공간', '### 측도와 확률' 셋으로 나눴다(별도 큐 항목에 묶음 이름 재검토를 남겼다). (2) 각주 짝: 정의했으나 참조하지 않은 각주 0, 참조했으나 정의하지 않은 각주 0. (3) 본문 중복 링크: 35 문서가 걸렸고 그 가운데 28 개가 개관이다. 개관은 개요에서 진입 문서를 가리키고 갈래에서 같은 문서를 목록으로 다시 적으므로 4.5절 구조상 중복이 정당하다고 보아 두었다. 나머지 7 개(lebesgue-differentiation, montel-theorem, projective-modules, rational-canonical-form, rice-shapiro-theorem, symmetric-functions, uncertainty-principle)는 4절 '본문에서 최초 1회에 한해 링크한다' 에 어긋나므로 두 번째 이후를 표시 제목만 남기고 평문으로 내렸다. 검사기는 '# 연관 문서' 절 앞까지만 보아야 한다. 간선 목록의 링크까지 세면 모든 문서가 걸린다. 다음 회차는 개관의 중복을 허용으로 볼지만 정하면 된다.",
+      "createdAt": "2026-10-04T12:58:28.090Z",
+      "seq": 1658
+    },
+    {
+      "id": "501010a6",
+      "title": "두문자어 첫 등장 풀이 전수 점검 (23차)",
+      "priority": 11,
+      "note": "30차 회차에 608 문서로 돌려 실질 후보 25 개까지 좁혔고 둘을 고쳤다. 나머지는 모두 오탐으로 판정했다.\n\n고친 둘. variance-reduced-gradient-methods 의 SVRG 는 문서 전체에 풀네임이 없었다('## SVRG' 헤딩이 첫 등장이고 4절은 푸는 자리를 본문의 첫 등장으로 정한다). 본문 첫 문장을 '**SVRG**(stochastic variance reduced gradient)는 ...' 로 고쳤다. zfc-axioms 89 줄은 '1에서 8까지를 ZF, 9를 더한 것을 ZFC, 9를 뺀 체계를 ZF 라 부른다' 로 ZF 를 두 번 다르게 정의하는 꼴이었고 '9 가 선택공리이므로 1에서 8까지를 ZF, 9 를 더한 것을 ZFC 라 부른다' 로 고쳤다.\n\n오탐으로 판정한 것. 표 셀에서 이미 풀린 것(BSC, DL, CDH, DDH, BKZ, WZW), 바로 앞에 풀네임을 둔 것(witten-asymptotics 의 'Le–Murakami–Ohtsuki 의 LMO 불변량', waldspurger-formula 의 Gan–Gross–Prasad 링크 뒤 GGP), 문제 이름과 고유명사(VERTEX-COVER, CLIQUE, MAX-3SAT, MAX-CUT, SMILES, IBM, ADE, GW, CS, AJ, LU, ABCD), 공식 풀네임이 없는 약어(SAGA. 논문 제목이 'SAGA: A Fast Incremental Gradient Method' 로 풀이를 주지 않는다).\n\n검사기 명세. 건너뛸 것: 코드펜스 안(mermaid 노드 id 가 전부 걸린다), 여러 줄 $$ 블록 안(GF, FG, AB, UV, XW, EG 같은 변수 곱이 걸린다), 헤딩과 태그 줄, 각주 참고문헌 줄. 지울 것: 인라인 수식, 인라인 코드, URL, \\\\명령{...} 안. 표 줄은 건너뛰면 안 된다. 30차 첫 판본이 표를 건너뛰어 다섯을 오보고했다. 링크는 표시 제목만 남기되 괄호 풀이 판정은 원문 줄에서 해야 한다.\n\n남은 판단 사안. optimization-overview 50 줄이 갈래 한 줄 설명에서 SVRG 와 SAGA 를 풀지 않고 쓴다. 개관 갈래 줄은 문서 한 줄 소개라 괄호 풀이를 넣으면 길어진다. 개관의 갈래 줄을 두문자어 규칙의 예외로 둘지 정하면 된다.",
+      "createdAt": "2026-10-04T13:01:31.621Z",
+      "seq": 1660
     },
     {
       "id": "14a84d4d",
@@ -1658,6 +1634,14 @@
       "note": "분야는 해석학(#analysis #complex_analysis #probability). 부모는 greens-function 이다. 큐 116f4b72 를 이 회차에 갱신한 것이다. dirichlet-problem 이 각주에서 이름만 쓰는 용량(capacity)과 Wiener 기준, 세분 함수(subharmonic)와 Perron 방법, 그리고 Brownian 운동의 도달 확률로 읽는 해석이 한 문서 분량이다. greens-function 이 리프이므로 그 자식 자리다.",
       "createdAt": "2026-10-04T09:01:22.174Z",
       "seq": 1648
+    },
+    {
+      "id": "288a5bf8",
+      "title": "표본화 정리 문서 신설",
+      "priority": 10,
+      "note": "해석학·정보이론(#analysis #information_theory). 부모는 fourier-transform. 대역제한 함수가 표본으로 복원된다는 Nyquist–Shannon 정리와 Poisson 합 공식을 쓰는 증명. fourier.md(이산 Fourier 변환)와 fft.md 쪽에서 이어지는 자리다.",
+      "createdAt": "2026-10-04T12:43:39.540Z",
+      "seq": 1651
     },
     {
       "id": "dfb3e493",
