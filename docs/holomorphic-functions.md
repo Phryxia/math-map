@@ -135,6 +135,7 @@ $$
 - [조화함수](harmonic-functions.md)
 - [등각사상](conformal-mapping.md)
 - [Weierstrass 인수분해 정리](weierstrass-factorization.md)
+- [Montel 정리](montel-theorem.md)
 
 ### 다른 분야에서의 쓰임
 
