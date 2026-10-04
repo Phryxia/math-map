@@ -141,7 +141,7 @@ $$
 - Maxwell 방정식 넷이 전자기장 2-형식 $F$ 와 전류 3-형식 $J$ 에 대한 $dF=0$ , $d\star F=J$ 로 줄어든다. 첫 식이 Gauss 자기 법칙과 Faraday 법칙, 둘째가 Gauss 법칙과 Ampère–Maxwell 법칙이다. 좌표계에 의존하지 않으므로 [곡률](curvature.md)이 있는 시공간으로 옮겨도 형태가 같다. $dF=0$ 에서 Poincaré 보조정리로 국소적으로 $F=dA$ 인 퍼텐셜이 존재하고, $A$ 의 게이지 자유도가 $H^1$ 과 연결되어 Aharonov–Bohm 효과로 나타난다.
 - $\omega$ 가 닫혀 있으면 그 적분이 경로의 연속변형에 불변이다. 보존장과 보존량이 이 진술의 변형이고, 닫혀 있지만 완전하지 않은 형식의 적분이 감은 수, 유수, 지표 같은 정수 불변량을 준다.
 - [Gauss–Bonnet 정리](gauss-bonnet.md)는 곡률의 적분이 [Euler 지표](euler-characteristic.md)와 같다는 진술이며 형식의 언어로 쓰인다. [지표 정리](index-theorem.md)들에서 해석적 불변량과 위상적 불변량이 일치하고 de Rham 정리가 그 원형이다.
-- Hamilton 역학은 닫힌 비퇴화 2-형식을 가진 다양체 위에서 전개된다. Hamilton 흐름이 이 형식을 보존하므로 Liouville 정리가 그 거듭제곱인 부피형식의 보존으로 따라오고, 정준변환은 형식을 보존하는 사상으로 정의된다.
+- Hamilton 역학은 닫힌 비퇴화 2-형식을 가진 다양체, 곧 [심플렉틱 다양체](symplectic-manifolds.md) 위에서 전개된다. Hamilton 흐름이 이 형식을 보존하므로 Liouville 정리가 그 거듭제곱인 부피형식의 보존으로 따라오고, 정준변환은 형식을 보존하는 사상으로 정의된다.
 
 # 연관 문서
 
@@ -153,5 +153,6 @@ $$
 ## 더 알아보기
 
 - [de Rham 코호몰로지](de-rham-cohomology.md)
+- [심플렉틱 다양체](symplectic-manifolds.md)
 
 #differential_geometry #analysis #topology

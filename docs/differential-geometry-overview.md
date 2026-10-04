@@ -47,6 +47,7 @@ graph TD
 - [특성류](characteristic-classes.md): 곡률의 불변 다항식이 주는 코호몰로지류, Chern–Weil 이론
 - [미분형식](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
 - [Morse 이론](morse-theory.md): 매끄러운 함수의 임계점이 주는 세포 구조와 Betti 수의 하한
+- [심플렉틱 다양체](symplectic-manifolds.md): 닫힌 비퇴화 2 형식, Hamilton 벡터장과 Darboux 정리
 
 ## 계량과 곡률
 

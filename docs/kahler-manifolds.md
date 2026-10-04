@@ -156,6 +156,7 @@ Kähler 다양체의 기본군에는 제약이 따른다. 자유군 $F_n$ 은 $n
 
 - [Hodge 이론](hodge-theory.md)
 - [정칙함수](holomorphic-functions.md)
+- [심플렉틱 다양체](symplectic-manifolds.md)
 
 ## 더 알아보기
 
