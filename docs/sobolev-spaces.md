@@ -114,7 +114,7 @@ $W^{1,p}(U)$ 의 원소는 거의 어디서나 같은 함수를 동일시한 것
 
 # 활용
 
-- **타원형 경계값 문제의 약한 해.** [Dirichlet 문제](dirichlet-problem.md) $-\Delta u=f$ 와 경계값 $0$ 을, 모든 $v\in H_0^1(U)$ 에서 $\int\_U\nabla u\cdot\nabla v\thinspace dx=\int\_U fv\thinspace dx$ 인 $u\in H_0^1(U)$ 를 찾는 문제로 바꿔 쓴다. Poincaré 부등식이 왼쪽 쌍선형형식의 강제성을 주고, Lax–Milgram 정리가 해의 존재와 유일성을 준다.
+- **타원형 경계값 문제의 약한 해.** [Dirichlet 문제](dirichlet-problem.md) $-\Delta u=f$ 와 경계값 $0$ 을, 모든 $v\in H_0^1(U)$ 에서 $\int\_U\nabla u\cdot\nabla v\thinspace dx=\int\_U fv\thinspace dx$ 인 $u\in H_0^1(U)$ 를 찾는 문제로 바꿔 쓴다. Poincaré 부등식이 왼쪽 쌍선형형식의 강제성을 주고, [Lax–Milgram 정리](lax-milgram.md)가 해의 존재와 유일성을 준다.
 - **Dirichlet 에너지의 최소화.** $\int\_U\vert\nabla u\vert^2dx$ 를 최소화하는 열은 $H^1(U)$ 에서 유계이고, Rellich–Kondrachov 정리가 수렴하는 부분열을 준다. 극한이 최소점이라는 확인에는 노름의 약한 하반연속성을 쓴다.
 - **타원 미분작용소의 지표.** 닫힌 [다양체](manifolds.md) 위의 타원 미분작용소는 차수가 다른 두 Sobolev 공간 사이에서 [Fredholm 작용소](fredholm-operators.md)다. 매장이 주는 콤팩트 포함이 유사역원의 오차를 콤팩트 작용소로 만든다.
 - **Lipschitz 함수와의 동일시.** $U$ 가 유계 볼록이면 $W^{1,\infty}(U)$ 가 $U$ 위의 [Lipschitz 함수](lipschitz-maps.md) 전체와 같다. [Rademacher 정리](rademacher-theorem.md)가 주는 점마다의 도함수가 약한 도함수와 일치하고, 그 $L^\infty$ 노름이 Lipschitz 상수다.
@@ -129,6 +129,7 @@ $W^{1,p}(U)$ 의 원소는 거의 어디서나 같은 함수를 동일시한 것
 
 ## 더 알아보기
 
+- [Lax–Milgram 정리](lax-milgram.md)
 - [Schwartz 분포](schwartz-distributions.md)
 
 #functional_analysis #analysis #measure_theory

@@ -117,7 +117,7 @@ $$
 
 증명의 요지. $f=0$ 이면 $y=0$ . 아니면 핵 $N=\ker f$ 는 닫힌 진부분공간이므로 직교분해로 $N^\perp$ 에 단위벡터 $z$ 가 있다. 임의의 $x$ 에 대해 $f(x)z-f(z)x$ 가 $N$ 에 속함을 확인하면 $y=\overline{f(z)}\thinspace z$ 가 답이다.
 
-이 정리는 Hilbert 공간이 자기 자신의 쌍대공간과 (켤레선형으로) 동일함을 뜻한다. 약형식 편미분방정식의 해의 존재(Lax–Milgram), 확률론의 [조건부 기댓값](conditional-expectation.md) 구성, [Radon–Nikodym 정리](radon-nikodym.md)의 von Neumann 식 증명이 모두 이 정리를 쓴다.
+이 정리는 Hilbert 공간이 자기 자신의 쌍대공간과 (켤레선형으로) 동일함을 뜻한다. 약형식 편미분방정식의 해의 존재([Lax–Milgram 정리](lax-milgram.md)), 확률론의 [조건부 기댓값](conditional-expectation.md) 구성, [Radon–Nikodym 정리](radon-nikodym.md)의 von Neumann 식 증명이 모두 이 정리를 쓴다.
 
 ## Bessel 부등식과 Parseval 등식
 
@@ -185,6 +185,7 @@ $L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개�
 
 - [Fourier 급수](fourier-series.md)
 - [유계 작용소](bounded-operators.md)
+- [Lax–Milgram 정리](lax-milgram.md)
 - [Peter–Weyl 정리](peter-weyl.md)
 - [구면조화함수](spherical-harmonics.md)
 
