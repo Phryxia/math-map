@@ -65,7 +65,7 @@ $P$ 와 $Q$ 가 완비 격자일 때 다음이 성립한다.
 
 > $f:P\to Q$ 가 오른쪽 짝을 가질 필요충분조건은 $f$ 가 모든 상한을 보존하는 것이다. 대칭적으로 $g:Q\to P$ 가 왼쪽 짝을 가질 필요충분조건은 $g$ 가 모든 하한을 보존하는 것이다.
 
-이때 짝은 명시적으로 주어진다.
+오른쪽 짝을 다음 식으로 적는다.
 
 $$
 g(q)=\bigvee\lbrace p\in P: f(p)\le q\rbrace
@@ -81,7 +81,7 @@ $$
 \mathrm{Fix}(h)=\lbrace x\in L: h(x)=x\rbrace
 $$
 
-은 공집합이 아니며, 그 자체로 완비 격자다. 특히 최소 고정점과 최대 고정점이 존재하고 다음과 같이 주어진다.
+은 공집합이 아니고 그 자체로 완비 격자다. 최소 고정점 $\mu h$ 와 최대 고정점 $\nu h$ 를 다음 식으로 적는다.
 
 $$
 \mu h=\bigwedge\lbrace x: h(x)\le x\rbrace,\qquad \nu h=\bigvee\lbrace x: x\le h(x)\rbrace
