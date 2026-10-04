@@ -1,4 +1,4 @@
-# Tracy–Widom 분포와 Airy 핵
+# Tracy–Widom 분포
 
 # 개요
 

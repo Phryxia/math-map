@@ -104,6 +104,6 @@ $$
 ## 더 알아보기
 
 - [Marchenko–Pastur 법칙](marchenko-pastur.md)
-- [Tracy–Widom 분포와 Airy 핵](tracy-widom.md)
+- [Tracy–Widom 분포](tracy-widom.md)
 
 #probability #linear_algebra #theorem

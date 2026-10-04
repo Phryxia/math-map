@@ -92,7 +92,7 @@ graph TD
 - [Wigner 반원법칙](wigner-semicircle.md): 고윳값 분포의 극한
 - [Marchenko–Pastur 법칙](marchenko-pastur.md): 표본공분산행렬의 스펙트럼
 - [결정점과정](determinantal-point-process.md): 상관함수가 행렬식으로 주어지는 점과정
-- [Tracy–Widom 분포와 Airy 핵](tracy-widom.md): 최대 고윳값의 요동
+- [Tracy–Widom 분포](tracy-widom.md): 최대 고윳값의 요동
 
 # 연관 문서
 

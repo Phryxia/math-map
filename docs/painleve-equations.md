@@ -124,6 +124,6 @@ $$
 
 ## 더 알아보기
 
-- [Tracy–Widom 분포와 Airy 핵](tracy-widom.md)
+- [Tracy–Widom 분포](tracy-widom.md)
 
 #analysis #complex_analysis #computation
