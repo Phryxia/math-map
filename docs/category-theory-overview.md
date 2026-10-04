@@ -52,6 +52,7 @@ graph TD
 
 ## 텐서범주와 응용
 
+- [모노이드 범주](monoidal-categories.md): 텐서곱과 단위 대상, 오각형 등식과 연접 정리
 - [모듈러 텐서범주](modular-tensor-categories.md): 짜임과 모듈러 $S$ 행렬을 가진 범주
 - [애니온](anyons.md): 준입자의 교환 통계가 범주의 짜임으로 기술된다
 

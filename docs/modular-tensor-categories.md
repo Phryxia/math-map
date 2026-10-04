@@ -130,8 +130,8 @@ Fibonacci 애니온의 꼬임 연산은 유니터리 군에서 조밀한 부분�
 ## 선수지식
 
 - [Zhu 대수와 모듈러 불변성](zhu-algebra.md)
-- [범주](category.md)
 - [텐서곱](tensor-products.md)
+- [모노이드 범주](monoidal-categories.md)
 
 ## 더 알아보기
 

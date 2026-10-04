@@ -90,6 +90,5 @@ $\mathbf{Set}$ 에서 mono 는 단사함수, epi 는 전사함수와 일치하�
 - [함자](functors.md)
 - [구조적 집합론](structural-set-theory.md)
 - [기하학적 Satake 대응](geometric-satake.md)
-- [모듈러 텐서범주](modular-tensor-categories.md)
 
 #category_theory #algebra #topology #logic

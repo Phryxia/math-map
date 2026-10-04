@@ -72,7 +72,8 @@ Functor $F : C \to D$ 와 $G : D \to C$ 에 대해 $GF \cong \mathrm{id}\_C$ 이
 
 - [Yoneda lemma](yoneda-lemma.md)는 hom 함자에서 나가는 자연변환 전체를 한 원소로 분류한다.
 - [수반](adjunctions.md)의 unit 과 counit 은 자연변환이고 삼각항등식은 그들의 합성에 대한 조건이다.
-- [극한과 쌍대극한](limits-colimits.md)의 원뿔은 상수 함자에서 도형 함자로 가는 자연변환이다.
+- [극한과 쌍대극한](limits-colimits.md)
+- [모노이드 범주](monoidal-categories.md)의 원뿔은 상수 함자에서 도형 함자로 가는 자연변환이다.
 
 # 활용
 
@@ -93,5 +94,6 @@ Functor $F : C \to D$ 와 $G : D \to C$ 에 대해 $GF \cong \mathrm{id}\_C$ 이
 - [Yoneda lemma](yoneda-lemma.md)
 - [수반](adjunctions.md)
 - [극한과 쌍대극한](limits-colimits.md)
+- [모노이드 범주](monoidal-categories.md)
 
 #category_theory #algebra #linear_algebra #computation
