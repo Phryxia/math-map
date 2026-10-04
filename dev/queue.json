@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-04T05:03:03.091Z",
-  "nextSeq": 1633,
+  "savedAt": "2026-10-04T09:02:45.409Z",
+  "nextSeq": 1649,
   "items": [
     {
       "id": "aeac2190",
@@ -130,6 +130,14 @@
       "note": "2026-10-04 회차에 4절 비유 금지 grep 을 docs 전수로 돌렸다. 보고 4 건이 모두 굳은 용어이고 CLAUDE.md 가 '용어의 일부인 것은 예외' 로 허용하는 경우다. lie-algebras:162 의 '사다리 연산자'(ladder operator), elliptic-curves:118 의 'Montgomery 사다리'(Montgomery ladder), post-quantum-cryptography:126 의 '함정문' 둘(trapdoor). 다음 회차에 같은 grep 을 돌릴 때 이 셋은 통과시킨다. 문체 헤딩 grep 도 '## 정리 1의 증명 요지' 꼴을 잡으므로(sylow-theorems:65,83) 큐 9bc3b9fa 의 '증명의 요지' 오탐에 조사 없는 '증명 요지' 변형을 더해 걸러야 한다",
       "createdAt": "2026-10-04T05:02:30.598Z",
       "seq": 1632
+    },
+    {
+      "id": "f090f333",
+      "title": "연속 Fourier 변환 문서 신설",
+      "priority": 20,
+      "note": "저장소에 fourier.md(이산 Fourier 변환), fourier-series.md, boolean-fourier.md, local-fourier-analysis.md 는 있으나 실직선 위의 연속 Fourier 변환 문서가 없다. schwartz-distributions 의 완만 분포 절이 이 개념을 링크 없이 이름만 쓰고 있고, poisson-summation 과 mellin-transform 쪽도 같은 자리가 빈다. 분야는 해석학(#analysis #functional_analysis). 부모 후보는 lp-spaces 와 fourier-series 다. 반전 공식, Plancherel 정리, 미분을 곱셈으로 바꾸는 성질, 합성곱 정리가 한 문서 분량이다.",
+      "createdAt": "2026-10-04T08:57:09.208Z",
+      "seq": 1644
     },
     {
       "id": "410fd79d",
@@ -372,6 +380,54 @@
       "seq": 1620
     },
     {
+      "id": "43d30fef",
+      "title": "sobolev-spaces 의 후속 간선",
+      "priority": 11,
+      "note": "sobolev-spaces 를 새로 만들어 lp-spaces 의 유일한 자식으로 달았고 리프로 남겼다. 자식 후보와 판단할 점: (1) dirichlet-problem 은 harmonic-functions 하나를 부모로 둔 고전적 서술(Perron 방법)이라 Sobolev 없이 읽히므로 간선이 아니라고 보아 본문 링크로만 걸었다. 약한 해 서술이 dirichlet-problem 에 들어가면 재판정 대상이다. (2) 없는 문서 가운데 자식이 될 후보는 변분법의 직접법, Lax-Milgram 정리, 타원형 정칙성, 분포(distributions), Green 함수다. 저장소에 하나도 없다. (3) fredholm-operators 는 이미 index-theorem 쪽 축에 있고 부모가 따로 있어 Sobolev 를 부모로 더하면 부모가 늘어난다. 활용 절 본문 링크로만 두었다.",
+      "createdAt": "2026-10-04T08:42:43.288Z",
+      "seq": 1633
+    },
+    {
+      "id": "4a92c9b6",
+      "title": "sieve-methods 의 후속 간선",
+      "priority": 11,
+      "note": "sieve-methods 를 primes 와 inclusion-exclusion 의 자식으로 새로 달고 리프로 남겼다. 자식 후보: (1) 큰 체(large sieve)와 Bombieri-Vinogradov 정리 - 저장소에 없다. (2) Chen 정리 - 없다. (3) 소수 간격(bounded gaps) - 없다. (4) riemann-hypothesis 와 dirichlet-l-functions 는 이미 riemann-zeta 축에 있고 체 방법 없이 읽히므로 간선이 아니라고 보아 활용 절 본문 링크로만 두었다. 위 셋 가운데 하나가 생기면 sieve-methods 의 더 알아보기에 넣는다.",
+      "createdAt": "2026-10-04T08:47:34.762Z",
+      "seq": 1636
+    },
+    {
+      "id": "20493b51",
+      "title": "large-sieve 의 후속 간선",
+      "priority": 11,
+      "note": "large-sieve 를 sieve-methods 와 dirichlet-l-functions 의 자식으로 달고 리프로 남겼다. 자식 후보: (1) 소수 간격(bounded gaps between primes) - 저장소에 없다. GPY 가중과 Zhang, Maynard 의 결과를 담으면 large-sieve 의 자식이 된다. (2) Chen 정리 - 없다. (3) Vaughan 항등식과 지수합의 쌍선형 분해 - 없다. (4) Elliott-Halberstam 추측은 large-sieve 안의 한 절로 두었고 별도 문서로 떼지 않았다.",
+      "createdAt": "2026-10-04T08:52:16.327Z",
+      "seq": 1639
+    },
+    {
+      "id": "51e1a8fe",
+      "title": "prime-gaps 의 후속 간선",
+      "priority": 11,
+      "note": "prime-gaps 를 large-sieve 의 자식으로 달고 리프로 남겼다. 자식 후보: (1) Chen 정리(짝수가 소수와 소인수 둘 이하 수의 합) - 저장소에 없다. (2) Hardy-Littlewood 추측과 원 방법(circle method) - 없다. 특이급수를 prime-gaps 의 정의 절에 넣었으므로 원 방법 문서가 생기면 재배치 판단이 필요하다. (3) Cramer 추측과 소수의 확률 모형 - 없다. prime-gaps 의 활용 절이 Cramer 추측을 이름만 쓴다.",
+      "createdAt": "2026-10-04T08:55:05.131Z",
+      "seq": 1642
+    },
+    {
+      "id": "d57ba8ff",
+      "title": "schwartz-distributions 의 후속 간선",
+      "priority": 11,
+      "note": "schwartz-distributions 를 sobolev-spaces 와 dual-space 의 자식으로 달고 리프로 남겼다. 자식 후보: (1) 기본해와 Green 함수 - 저장소에 없다. 활용 절 첫 항목이 -Delta E = delta 를 쓰면서 링크할 문서가 없다. (2) 합성곱과 근사항등원 - 없다. (3) 타원형 정칙성 - 없다. (4) 연속 Fourier 변환(큐 f090f333) 이 생기면 완만 분포 절에서 본문 링크로 걸고, 간선은 Fourier 변환 쪽이 부모가 되는 방향으로 판단한다. (5) poisson-summation 과 measure 는 이미 다른 축에 있어 활용 절 본문 링크로만 두었다.",
+      "createdAt": "2026-10-04T08:58:23.655Z",
+      "seq": 1645
+    },
+    {
+      "id": "8b50e977",
+      "title": "greens-function 의 후속 간선",
+      "priority": 11,
+      "note": "greens-function 을 harmonic-functions 와 schwartz-distributions 의 자식으로 달고 리프로 남겼다. 활용 절에서 본문 링크만 둔 것: dirichlet-problem(표현 공식의 둘째 항이 해), conformal-mapping(평면 영역의 Green 함수가 등각불변), brownian-motion(점유시간 밀도). 세 문서 모두 이미 다른 축에 부모가 있어 간선으로 두지 않았다. 자식 후보: 퍼텐셜 이론(용량과 Wiener 기준), 열핵, 타원형 정칙성. 저장소에 없다. dirichlet-problem 은 이번 회차에 본문에서 greens-function 을 링크했다.",
+      "createdAt": "2026-10-04T09:01:22.050Z",
+      "seq": 1647
+    },
+    {
       "id": "14a84d4d",
       "title": "타입 이론과 일가성 공리(HoTT)",
       "priority": 10,
@@ -386,14 +442,6 @@
       "note": "number-theory 개관에서 옮김. brauer-group 안에 흩어져 있다",
       "createdAt": "2026-09-16T13:05:30.594Z",
       "seq": 347
-    },
-    {
-      "id": "5a753ed2",
-      "title": "체 방법(sieve)",
-      "priority": 10,
-      "note": "number-theory 개관에서 옮김. Brun, Selberg 체와 소수 간격. 해석적 정수론의 두 번째 축",
-      "createdAt": "2026-09-16T13:05:30.753Z",
-      "seq": 348
     },
     {
       "id": "31ac8acd",
@@ -548,14 +596,6 @@
       "seq": 697
     },
     {
-      "id": "f93af99d",
-      "title": "Rademacher 정리 신설",
-      "priority": 10,
-      "note": "분야는 해석학(#analysis #measure_theory). 부모는 lipschitz-maps 다. Lipschitz 함수가 Lebesgue 측도로 거의 어디서나 미분가능하다는 정리이고, 증명에 Vitali 덮개 보조정리와 극대함수가 들어가 단독 문서 분량이 된다. lipschitz-maps 90줄은 이 정리를 담고 있지 않다. 2026-09-20 회차에 lipschitz-maps 의 유일한 자식으로 banach-fixed-point 를 달았으므로 Rademacher 가 두 번째 자식 자리다",
-      "createdAt": "2026-09-20T04:42:28.549Z",
-      "seq": 698
-    },
-    {
       "id": "1fd9f4cd",
       "title": "rademacher-theorem 의 후속 간선",
       "priority": 10,
@@ -594,14 +634,6 @@
       "note": "분야는 논리(#logic #set_theory #algebra). 부모 후보는 first-order-logic 과 boolean-algebras 다. lowenheim-skolem:45 가 '초필터로 구조들의 곱을 나누는 ultraproduct 구성' 을 언급하며 완전성을 거치지 않는 콤팩트성 증명이라 적지만 문서가 없다. nonstandard-analysis 도 초실수체를 콤팩트성으로만 만들고 초곱 구성을 쓰지 않았다. 내용은 초필터, 축소곱, Łoś 정리, 콤팩트성의 의미론적 증명, 초실수체와 Loeb 측도의 구성이다",
       "createdAt": "2026-09-20T04:51:15.854Z",
       "seq": 707
-    },
-    {
-      "id": "116f4b72",
-      "title": "퍼텐셜 이론 문서 신설",
-      "priority": 10,
-      "note": "분야는 analysis/complex_analysis, 부모는 dirichlet-problem. 2026-09-20 회차에 dirichlet-problem 의 후속 간선을 검토한 결과 리프로 남겼다. riemann-surfaces(균일화 증명의 Perron 방법), conformal-mapping(Riemann 사상으로 원판에 옮겨 풀기), brownian-motion(경계 도달점의 기댓값이 해), random-walks(이산판) 넷 모두 5절의 '그저 부모를 도구로 한 번 쓰는가' 에 해당해 간선이 아니고, 본문 링크로만 걸었다(이 회차에 역방향 링크 넷을 채웠다). 자식이 될 만한 문서가 저장소에 없는 것이 리프의 원인이다. 없는 후보: 퍼텐셜 이론(용량과 Wiener 기준, dirichlet-problem 이 각주 2에서 이름만 쓴다), Green 함수(conformal-mapping 의 Riemann 사상정리 증명과 dirichlet-problem 의 활용 절이 모두 언급한다), 타원형 정칙성(Gilbarg-Trudinger 를 이미 각주로 쓰고 있다), Sobolev 공간. 이 가운데 하나라도 생기면 dirichlet-problem 의 더 알아보기에 넣는다",
-      "createdAt": "2026-09-20T08:43:02.520Z",
-      "seq": 712
     },
     {
       "id": "c414ed09",
@@ -1578,6 +1610,54 @@
       "note": "2026-10-04 회차에 4차를 했고 위반 0 이다. 돌린 검사 여덟: (1) 4절 awk 이스케이프 0 건, (2) 줄 끝 백슬래시 0 건, (3) 링크로 읽히는 대괄호 0 건, (4) 태그로 읽히는 부등호 0 건(grep -rn '<[a-zA-Z]' 는 mermaid 의 <br 만 잡으므로 걸러야 한다), (5) 비이스케이프 밑줄 5 건 전부 각주 URL 오탐(finite-fields:131, unique-factorization-domains:89. 큐 b452028c 가 같은 것을 기록했다), (6) 코드블록 언어 0 건, (7) render-check 전수 통과, (8) 키릴·그리스 혼입 1 건이고 transcendental-numbers:98 의 러시아어 학술지명이라 정상(큐 aeac2190)",
       "createdAt": "2026-10-04T05:01:42.775Z",
       "seq": 1631
+    },
+    {
+      "id": "7b62e857",
+      "title": "분포(distributions) 문서 신설",
+      "priority": 10,
+      "note": "분야는 해석학(#analysis #functional_analysis). 부모 후보는 sobolev-spaces 와 lp-spaces 다. sobolev-spaces 가 약한 도함수를 시험함수에 대한 부분적분으로 정의하는데, 그 일반형인 분포(일반화 함수)와 Dirac 델타, 분포의 Fourier 변환을 담은 문서가 없다. fourier-transform 과 greens-function 쪽 서술이 모두 이 개념을 쓴다.",
+      "createdAt": "2026-10-04T08:42:43.405Z",
+      "seq": 1634
+    },
+    {
+      "id": "57bb4724",
+      "title": "변분법의 직접법과 Lax-Milgram 정리",
+      "priority": 10,
+      "note": "분야는 해석학(#analysis #functional_analysis #optimization). 부모는 sobolev-spaces 와 hilbert-spaces 다. sobolev-spaces 의 활용 절이 Lax-Milgram 정리와 약한 하반연속성을 링크 없이 이름만 쓰고 있다. 강제성과 유계성에서 약한 해의 존재와 유일성을 얻는 논증이 한 문서 분량이고, dirichlet-problem 의 약한 해 서술을 여기에 붙일 수 있다.",
+      "createdAt": "2026-10-04T08:42:43.571Z",
+      "seq": 1635
+    },
+    {
+      "id": "e54c0024",
+      "title": "Mertens 정리 문서 신설 판단",
+      "priority": 10,
+      "note": "분야는 정수론(#number_theory #analysis). 부모 후보는 primes 다. sieve-methods 의 직관 절이 주항을 Mertens 정리로 계산하면서 이름만 쓰고 링크할 문서가 없다. prod(1-1/p) 가 e^{-gamma}/log z 라는 결과와 sum 1/p 의 발산이 한 문서가 될 만한지, 아니면 primes 나 prime-number-theorem 의 성질 절에 넣을지 판단이 필요하다.",
+      "createdAt": "2026-10-04T08:47:35.077Z",
+      "seq": 1638
+    },
+    {
+      "id": "777da0c4",
+      "title": "Vaughan 항등식과 지수합의 쌍선형 분해",
+      "priority": 10,
+      "note": "분야는 정수론(#number_theory #analysis). 부모 후보는 large-sieve 와 prime-number-theorem 이다. large-sieve 의 Bombieri-Vinogradov 증명 요지가 Vaughan 항등식을 이름만 쓰고 넘어간다. von Mangoldt 함수를 쌍선형합으로 가르는 항등식과 Type I, Type II 합의 추정이 한 문서 분량이고, Vinogradov 의 지수합 방법 쪽 문서들의 부모가 될 수 있다.",
+      "createdAt": "2026-10-04T08:52:16.574Z",
+      "seq": 1641
+    },
+    {
+      "id": "dbb60c1b",
+      "title": "원 방법과 Hardy-Littlewood 추측",
+      "priority": 10,
+      "note": "분야는 정수론(#number_theory #analysis). 부모 후보는 large-sieve 와 prime-gaps 다. prime-gaps 의 정의 절이 특이급수와 Hardy-Littlewood 추측을 담고 있는데, 그 추측이 나오는 원 방법(주호와 소호 분해, Weyl 합, Vinogradov 의 세 소수 정리)을 담은 문서가 없다. poisson-summation 과 stationary-phase 가 이미 있어 해석적 도구 쪽 부모 후보가 갖춰져 있다.",
+      "createdAt": "2026-10-04T08:55:05.255Z",
+      "seq": 1643
+    },
+    {
+      "id": "a2bc660b",
+      "title": "퍼텐셜 이론 문서 신설",
+      "priority": 10,
+      "note": "분야는 해석학(#analysis #complex_analysis #probability). 부모는 greens-function 이다. 큐 116f4b72 를 이 회차에 갱신한 것이다. dirichlet-problem 이 각주에서 이름만 쓰는 용량(capacity)과 Wiener 기준, 세분 함수(subharmonic)와 Perron 방법, 그리고 Brownian 운동의 도달 확률로 읽는 해석이 한 문서 분량이다. greens-function 이 리프이므로 그 자식 자리다.",
+      "createdAt": "2026-10-04T09:01:22.174Z",
+      "seq": 1648
     },
     {
       "id": "dfb3e493",
