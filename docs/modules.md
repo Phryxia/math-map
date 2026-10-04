@@ -189,6 +189,7 @@ $$
 
 ## 더 알아보기
 
+- [완전열](exact-sequences.md)
 - [PID 위의 유한생성 가군](finitely-generated-modules.md)
 - [Nakayama 보조정리](nakayama-lemma.md)
 - [사영가군](projective-modules.md)

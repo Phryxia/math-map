@@ -68,6 +68,7 @@ graph TD
 ## 가군
 
 - [가군](modules.md) → [텐서곱](tensor-products.md) → [유도 함자](derived-functors.md): 환 위의 벡터 공간과 완전성의 실패를 재는 Tor, Ext
+- [완전열](exact-sequences.md): 상과 핵이 맞물린 사슬, 짧은 완전열과 뱀 보조정리
 - [PID 위의 유한생성 가군](finitely-generated-modules.md): 구조정리와 Smith 표준형
 - [Nakayama 보조정리](nakayama-lemma.md): 국소환 위의 가군을 잉여체로 내려 읽기
 - [사영가군](projective-modules.md): 들어 올리기 성질, 국소적 자유성, Quillen–Suslin 정리
