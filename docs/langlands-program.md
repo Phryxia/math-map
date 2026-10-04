@@ -165,7 +165,7 @@ $\mathrm{Sym}^k$ 함자성으로 $\mathrm{Sym}^k\pi_E$ 가 자기동형임을 �
 
 - [Galois 표현](galois-representations.md)
 - [Godement–Jacquet 적분](godement-jacquet.md)
-- [Vogan L 꾸러미와 순수 내부형식](vogan-packets.md)
+- [Vogan L 꾸러미](vogan-packets.md)
 - [Jacquet–Langlands 대응](jacquet-langlands.md)
 
 #number_theory #group_theory #field_theory

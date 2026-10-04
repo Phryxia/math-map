@@ -136,7 +136,7 @@ Saito–Kurokawa, Ikeda, Miyawaki 올림처럼 한 군의 형식에서 다른 �
 
 ## 선수지식
 
-- [Vogan L 꾸러미와 순수 내부형식](vogan-packets.md)
+- [Vogan L 꾸러미](vogan-packets.md)
 - [기본 보조정리](fundamental-lemma.md)
 
 ## 더 알아보기

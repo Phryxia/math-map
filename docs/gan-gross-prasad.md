@@ -206,7 +206,7 @@ GGP 는 분지 법칙을 $L$ 함수로 번역한다. 콤팩트군에서 [Weyl �
 
 - [Whittaker 모형과 중복도 1](whittaker-models.md)
 - [기본 보조정리](fundamental-lemma.md)
-- [Vogan L 꾸러미와 순수 내부형식](vogan-packets.md)
+- [Vogan L 꾸러미](vogan-packets.md)
 
 ## 더 알아보기
 
