@@ -107,6 +107,7 @@ graph TD
 - [Fredholm 작용소](fredholm-operators.md): 핵과 여핵이 유한차원인 작용소의 정수 불변량
 - [Fredholm 행렬식](fredholm-determinant.md): 핵 작용소의 행렬식과 적분방정식
 - [Peter–Weyl 정리](peter-weyl.md): 콤팩트군 위 $L^2$ 의 기약표현 분해
+- [Green 함수](greens-function.md): $-\Delta E=\delta_0$ 의 해, 표현 공식과 Poisson 핵
 
 ## 측도론, 복소해석, 함수해석
 

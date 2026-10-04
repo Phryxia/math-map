@@ -85,5 +85,6 @@ $$\frac{R-r}{R+r}\thinspace u(0)\le u(z)\le\frac{R+r}{R-r}\thinspace u(0)$$
 ## 더 알아보기
 
 - [Dirichlet 문제](dirichlet-problem.md)
+- [Green 함수](greens-function.md)
 
 #complex_analysis #analysis #probability #differential_geometry
