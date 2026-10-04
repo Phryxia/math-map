@@ -139,6 +139,6 @@ Schellekens 는 $c=24$ 인 홀로모픽 VOA 의 무게 1 Lie 대수가 71 개의
 ## 더 알아보기
 
 - [괴물 달빛 추측](monstrous-moonshine.md)
-- [Zhu 대수와 모듈러 불변성](zhu-algebra.md)
+- [Zhu 대수](zhu-algebra.md)
 
 #algebra #complex_analysis #construction
