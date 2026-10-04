@@ -88,7 +88,7 @@ $\mathbb H^3$ 조각에는 유한한 매개변수 목록이 없고 Mostow 강직
 
 ## Ricci 흐름
 
-Perelman 의 증명은 계량을 직접 찾지 않고 임의의 계량에서 출발해 방정식
+Perelman 의 증명은 계량을 직접 찾지 않고 임의의 계량에서 출발해 [Ricci 흐름](ricci-flow.md) 방정식
 
 $$
 \frac{\partial g}{\partial t}=-2\thinspace\mathrm{Ric}(g)
@@ -136,6 +136,7 @@ Thurston 의 정리가 이 목록의 완전성을 준다. 교차수 16 이하의
 
 ## 선수지식
 
+- [Ricci 흐름](ricci-flow.md)
 - [쌍곡 3 다양체](hyperbolic-3-manifolds.md)
 
 ## 더 알아보기

@@ -207,9 +207,18 @@ $$
 
 ## 더 알아보기
 
+### 곡률과 위상
+
 - [Gauss–Bonnet 정리](gauss-bonnet.md)
+- [Ricci 흐름](ricci-flow.md)
+
+### 해석과 스펙트럼
+
 - [Hodge 이론](hodge-theory.md)
 - [Selberg 대각합 공식](selberg-trace-formula.md)
+
+### 쌍곡 기하와 모듈라이
+
 - [쌍곡 3 다양체](hyperbolic-3-manifolds.md)
 - [Teichmüller 공간](teichmuller-space.md)
 

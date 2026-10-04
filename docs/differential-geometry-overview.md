@@ -53,6 +53,7 @@ graph TD
 - [곡률](curvature.md): 곡선과 곡면의 휘어짐, Gauss 곡률과 평균 곡률
 - [Riemann 계량](riemannian-metrics.md): 접공간의 내적, Levi-Civita 접속, 측지선 방정식
 - [Gauss–Bonnet 정리](gauss-bonnet.md): 곡률 적분이 Euler 지표를 준다
+- [Ricci 흐름](ricci-flow.md): 계량을 Ricci 곡률로 변형하는 열방정식 꼴 흐름, 특이점과 수술
 - [Poincaré–Hopf 정리](poincare-hopf.md): 벡터장의 특이점 지수의 합도 Euler 지표다
 - [쌍곡 3 다양체](hyperbolic-3-manifolds.md): 3 차원에서 쌍곡 계량이 위상으로 결정된다
 
