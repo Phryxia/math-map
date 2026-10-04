@@ -73,7 +73,7 @@ $$
 
 **정리 (Gelfand–Kazhdan, Shalika).** $\mathrm{GL}\_n(F)$ 의 기약 허용 표현 $\pi$ 에 대해 $\dim\mathrm{Hom}\_{N_n(F)}(\pi,\psi_N)\le1$ 이다. 첨점 자기동형 표현은 모두 일반적이고, 전역 Whittaker 함수는 국소 Whittaker 함수의 곱으로 분해된다.[^1]
 
-**증명의 요지.** $g\mapsto{}^tg^{-1}$ 는 $\mathrm{GL}\_n$ 의 자기동형이고 $\pi\mapsto\pi^\iota$ 를 준다. Gelfand–Kazhdan 은 모든 기약 표현이 $\pi^\iota\cong\tilde\pi$ 를 만족함을 보였고, 이 대칭이 Whittaker 범함수의 공간에 작용해 차원을 1 이하로 묶는다. 기하적으로는 $N\backslash G/N$ 의 궤도 문제이고, Bruhat 분해에서 지표 $\psi_N$ 이 살아남는 궤도가 하나뿐이다. $\square$
+증명의 요지. $g\mapsto{}^tg^{-1}$ 는 $\mathrm{GL}\_n$ 의 자기동형이고 $\pi\mapsto\pi^\iota$ 를 준다. Gelfand–Kazhdan 은 모든 기약 표현이 $\pi^\iota\cong\tilde\pi$ 를 만족함을 보였고, 이 대칭이 Whittaker 범함수의 공간에 작용해 차원을 1 이하로 묶는다. 기하적으로는 $N\backslash G/N$ 의 궤도 문제이고, Bruhat 분해에서 지표 $\psi_N$ 이 살아남는 궤도가 하나뿐이다. $\square$
 
 유일성이 분해의 한 방향에 쓰인다. 전역 표현이 $\pi=\otimes'\_v\pi_v$ 이므로 국소 범함수들의 곱은 언제나 전역 범함수를 주지만, 국소 공간이 1 차원일 때만 전역 범함수가 그 곱에 스칼라를 곱한 것으로 끝난다. 국소 공간이 2 차원이면 전역 범함수가 여러 조합으로 쪼개져 자리마다의 적분의 곱이라는 형태가 성립하지 않는다.
 

@@ -80,7 +80,7 @@ $\Leftarrow$ 가 Herbrand(1932), $\Rightarrow$ 가 Ribet(1976)이다.
 
 ## Ribet 의 구성
 
-**증명의 요지.** $f$ 에 붙는 2 차원 $p$ 진 Galois 표현 $\rho_f$ 는
+증명의 요지. $f$ 에 붙는 2 차원 $p$ 진 Galois 표현 $\rho_f$ 는
 
 $$
 \mathrm{tr}\thinspace\rho_f(\mathrm{Fr}\_\ell)=a_\ell,\qquad \det\rho_f(\mathrm{Fr}\_\ell)=\ell^{k-1}

@@ -36,7 +36,7 @@ $$
 
 **Alexander 부분기저 보조정리.** 부분기저 $\mathcal S$ 의 원소들로 된 모든 덮개가 유한 부분덮개를 가지면 그 공간은 콤팩트다.
 
-**증명의 요지.** 곱공간의 부분기저 원소는 $\pi_i^{-1}(U)$ 꼴이다. 이런 집합들의 덮개 $\mathcal U$ 가 유한 부분덮개를 갖지 않는다고 하고, 각 $i$ 에 대해
+증명의 요지. 곱공간의 부분기저 원소는 $\pi_i^{-1}(U)$ 꼴이다. 이런 집합들의 덮개 $\mathcal U$ 가 유한 부분덮개를 갖지 않는다고 하고, 각 $i$ 에 대해
 
 $$
 \mathcal U_i=\lbrace U\thinspace :\thinspace \pi_i^{-1}(U)\in\mathcal U\rbrace

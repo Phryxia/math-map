@@ -109,7 +109,7 @@ $$
 
 이며, 임의의 $c \in \mathbb{R}^p$ 에 대해 $c^\top \beta$ 의 선형불편추정량 중 분산이 최소인 것은 $c^\top \hat\beta$ 다(BLUE, best linear unbiased estimator).
 
-증명의 요지: 다른 선형불편추정량을 $\tilde{a} = a^\top y$ 라 하고 $a = X(X^\top X)^{-1}c + d$ 로 분해한다. 불편성은 모든 $\beta$ 에 대해 $a^\top X\beta = c^\top \beta$ 를 요구하므로 $X^\top d = 0$ 이고, 즉 $d \perp C(X)$ 다. 그러면
+증명의 요지. 다른 선형불편추정량을 $\tilde{a} = a^\top y$ 라 하고 $a = X(X^\top X)^{-1}c + d$ 로 분해한다. 불편성은 모든 $\beta$ 에 대해 $a^\top X\beta = c^\top \beta$ 를 요구하므로 $X^\top d = 0$ 이고, 즉 $d \perp C(X)$ 다. 그러면
 
 $$
 \mathrm{Var}(a^{\top}y) = \sigma^{2}\lVert a \rVert^{2} = \sigma^{2}\big(\lVert X(X^{\top}X)^{-1}c \rVert^{2} + \lVert d \rVert^{2}\big) \thickspace\ge\thickspace \mathrm{Var}(c^{\top}\hat\beta),

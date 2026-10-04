@@ -41,13 +41,13 @@ $$
 
 $x_1,\dots,x_\nu$ 가 독립이고 기댓값이 $0$ 이며 분산의 평균이 제한적이면, 평균 $\bar x$ 는 거의 모든 $\omega$ 에서 무한소다.
 
-**증명의 요지.** $E\thinspace\bar x^2=\nu^{-2}\sum\mathrm{Var}(x_i)$ 가 무한소이므로 Chebyshev 부등식이 $\mathrm{Pr}(\vert\bar x\vert\ge\varepsilon)$ 를 무한소로 만든다. 표준 실수 $\varepsilon$ 마다 이것이 성립하므로 무한소 사건 밖에서 $\bar x\simeq 0$ 이다.
+증명의 요지. $E\thinspace\bar x^2=\nu^{-2}\sum\mathrm{Var}(x_i)$ 가 무한소이므로 Chebyshev 부등식이 $\mathrm{Pr}(\vert\bar x\vert\ge\varepsilon)$ 를 무한소로 만든다. 표준 실수 $\varepsilon$ 마다 이것이 성립하므로 무한소 사건 밖에서 $\bar x\simeq 0$ 이다.
 
 ## Brown 운동의 존재
 
 $\pm 1/\sqrt\nu$ 걷기 $w$ 는 거의 모든 $\omega$ 에서 $S$ 연속이고, 그 표준부분이 Wiener 과정이다.
 
-**증명의 요지.** 증분의 4차 적률이 $3\delta^2$ 이므로 최대부등식이 구간 하나에서의 요동을 $\delta$ 의 양의 거듭제곱으로 누른다. 구간이 $\nu$ 개여도 합이 여전히 무한소라 $S$ 연속성이 무한소 사건 밖에서 성립한다.
+증명의 요지. 증분의 4차 적률이 $3\delta^2$ 이므로 최대부등식이 구간 하나에서의 요동을 $\delta$ 의 양의 거듭제곱으로 누른다. 구간이 $\nu$ 개여도 합이 여전히 무한소라 $S$ 연속성이 무한소 사건 밖에서 성립한다.
 
 ## 중심극한정리
 

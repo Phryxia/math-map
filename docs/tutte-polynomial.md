@@ -56,7 +56,7 @@ T(G-e;x,y)+T(G/e;x,y), & \text{그 밖}
 \end{cases}
 $$
 
-**증명의 요지.** $e$ 가 고리도 다리도 아니면 $S\subseteq E$ 를 $e\notin S$ 인 것과 $e\in S$ 인 것으로 가른다. 앞쪽 합은 $G-e$ 의 정의식 그대로이고, 뒤쪽은 $r_G(S)=r_{G/e}(S\setminus\lbrace e\rbrace)+1$ 과 $r_G(E)=r_{G/e}(E\setminus\lbrace e\rbrace)+1$ 이 두 지수를 그대로 보존하므로 $G/e$ 의 정의식이 된다.
+증명의 요지. $e$ 가 고리도 다리도 아니면 $S\subseteq E$ 를 $e\notin S$ 인 것과 $e\in S$ 인 것으로 가른다. 앞쪽 합은 $G-e$ 의 정의식 그대로이고, 뒤쪽은 $r_G(S)=r_{G/e}(S\setminus\lbrace e\rbrace)+1$ 과 $r_G(E)=r_{G/e}(E\setminus\lbrace e\rbrace)+1$ 이 두 지수를 그대로 보존하므로 $G/e$ 의 정의식이 된다.
 
 이 점화식은 간선을 지우는 순서에 의존하지 않는다. 정의식이 순서를 언급하지 않기 때문이다.
 

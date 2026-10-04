@@ -60,7 +60,7 @@ $$
 f_0\bigl(x^\ast(t)\bigr)-p^\ast\le\frac{m}{t}
 $$
 
-**증명의 요지.** $x^\ast(t)$ 의 정류 조건에
+증명의 요지. $x^\ast(t)$ 의 정류 조건에
 
 $$
 \lambda_i=-\frac{1}{t\thinspace f_i(x^\ast(t))}\gt 0

@@ -50,7 +50,7 @@ $$
 \frac{\partial F}{\partial y}-\frac{d}{dx}\frac{\partial F}{\partial y'}=0
 $$
 
-**증명의 요지.** 일차 변분을 계산하고 $\eta'$ 가 든 항을 부분적분한다. 경계항이 사라지고
+증명의 요지. 일차 변분을 계산하고 $\eta'$ 가 든 항을 부분적분한다. 경계항이 사라지고
 
 $$
 \int_a^b\eta\Bigl(\frac{\partial F}{\partial y}-\frac{d}{dx}\frac{\partial F}{\partial y'}\Bigr)dx=0
