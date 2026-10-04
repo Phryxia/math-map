@@ -103,6 +103,6 @@ $\mathrm{End}\_{\mathrm{SL}\_2}(V^{\otimes k})$ 의 기저가 평면 도형이�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Jones–Wenzl 멱등원](jones-wenzl-idempotents.md)
 
 #algebra #combinatorics #topology #group_theory

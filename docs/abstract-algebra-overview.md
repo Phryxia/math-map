@@ -94,6 +94,7 @@ graph TD
 - [Borel–Weil–Bott 정리](borel-weil-bott.md) → [Beilinson–Bernstein 국소화](beilinson-bernstein.md), [Schubert 계산](schubert-calculus.md), [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md) → [범주 O](category-o.md)
 - [Schur 다항식](schur-polynomials.md) → [Littlewood–Richardson 규칙](littlewood-richardson.md), [Schur–Weyl 쌍대성](schur-weyl-duality.md) → [Brauer 대수](brauer-algebras.md) → [Temperley–Lieb 대수](temperley-lieb-algebras.md), [분할 대수](partition-algebras.md)
 - [세포대수](cellular-algebras.md): 반단순이 아닌 대수의 기약 가군을 세포 기저와 쌍선형형식으로 분류하는 틀, 도형 대수와 Hecke 대수의 공통 구조
+- [Jones–Wenzl 멱등원](jones-wenzl-idempotents.md): Temperley–Lieb 대수에서 생성원을 전부 죽이는 멱등원, 색칠된 매듭 불변량의 재료
 
 ## 정점작용소대수와 달빛
 
