@@ -45,6 +45,7 @@ graph TD
 - [단위분할](partitions-of-unity.md): 국소에서 정의한 대상을 전역으로 붙이는 매끄러운 무게 함수족
 - [벡터다발](vector-bundles.md): 점마다 붙인 벡터 공간, 전이함수와 접속, 곡률
 - [특성류](characteristic-classes.md): 곡률의 불변 다항식이 주는 코호몰로지류, Chern–Weil 이론
+- [벡터장](vector-fields.md): 접다발의 단면, 흐름과 Lie 괄호, 영점의 지수
 - [미분형식](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
 - [Morse 이론](morse-theory.md): 매끄러운 함수의 임계점이 주는 세포 구조와 Betti 수의 하한
 - [심플렉틱 다양체](symplectic-manifolds.md): 닫힌 비퇴화 2 형식, Hamilton 벡터장과 Darboux 정리

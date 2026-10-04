@@ -77,6 +77,7 @@ $$
 ## 선수지식
 
 - [Gauss–Bonnet 정리](gauss-bonnet.md)
+- [벡터장](vector-fields.md)
 
 ## 더 알아보기
 
