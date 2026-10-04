@@ -124,6 +124,7 @@ $$
 
 ### 다양체 위의 구조
 
+- [단위분할](partitions-of-unity.md)
 - [미분형식](differential-forms.md)
 - [Riemann 계량](riemannian-metrics.md)
 - [벡터다발](vector-bundles.md)

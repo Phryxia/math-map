@@ -34,7 +34,7 @@ $$
 ds^2 = \sum_{i,j} g_{ij}\thinspace dx^i dx^j .
 $$
 
-쌍 $(M, g)$ 를 **Riemann 다양체**라 한다. 임의의 매끄러운 다양체는(제2가산 가정 아래) 단위 분할을 써서 항상 Riemann 계량을 가진다.
+쌍 $(M, g)$ 를 **Riemann 다양체**라 한다. 임의의 매끄러운 다양체는(제2가산 가정 아래) [단위분할](partitions-of-unity.md)을 써서 항상 Riemann 계량을 가진다.
 
 ## 길이와 거리
 
