@@ -86,7 +86,7 @@ $$
 \forall F\thinspace\bigl(\varnothing\notin F \to \exists f:F\to\bigcup F\ \ \forall A\in F\ f(A)\in A\bigr)
 $$
 
-공집합의 존재는 무한 공리와 분류로부터 나오므로 별도 공리로 두지 않아도 된다. 1에서 8까지를 ZF, 9를 더한 것을 ZFC, 9를 뺀 체계를 ZF 라 부른다[^1].
+공집합의 존재는 무한 공리와 분류로부터 나오므로 별도 공리로 두지 않아도 된다. 9 가 선택공리이므로 1에서 8까지를 ZF, 9 를 더한 것을 ZFC 라 부른다[^1].
 
 # 성질
 
