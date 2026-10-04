@@ -191,6 +191,7 @@ $$
 
 - [PID 위의 유한생성 가군](finitely-generated-modules.md)
 - [Nakayama 보조정리](nakayama-lemma.md)
+- [사영가군](projective-modules.md)
 - [텐서곱](tensor-products.md)
 - [세포대수](cellular-algebras.md)
 

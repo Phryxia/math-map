@@ -114,6 +114,7 @@ $$
 
 - [단체 호몰로지](homology.md)
 - [Galois 표현](galois-representations.md)
+- [사영가군](projective-modules.md)
 
 ## 더 알아보기
 

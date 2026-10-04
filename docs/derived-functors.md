@@ -125,6 +125,7 @@ $\mathrm{Ext}\_R^1(C, A)$ 의 원소는 $0 \to A \to B \to C \to 0$ 꼴 확대�
 
 - [함자](functors.md)
 - [텐서곱](tensor-products.md)
+- [사영가군](projective-modules.md)
 
 ## 더 알아보기
 
