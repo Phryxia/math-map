@@ -8,7 +8,7 @@ $$
 e_i^2=\delta e_i,\qquad e_ie\_{i\pm 1}e_i=e_i,\qquad e_ie_j=e_je_i\ (\vert i-j\vert\ge 2)
 $$
 
-로 주어지고 차원은 [Catalan 수](catalan-numbers.md) $C_k$ 다. [Brauer 대수](brauer-algebras.md)의 도형에서 선이 교차하는 것을 버린 부분대수이며, $\delta=2\cos(\pi/\ell)$ 인 값에서 반단순성이 깨진다.
+로 주어지고 차원은 [Catalan 수](catalan-numbers.md) $C_k$ 다. [Brauer 대수](brauer-algebras.md)의 도형에서 선이 교차하는 것을 버린 부분대수다. $\delta=2\cos(\pi/\ell)$ 인 값에서 반단순성이 깨진다.
 
 # 직관
 
@@ -78,7 +78,7 @@ $\sigma_i\mapsto q^{1/2}-q^{-1/2}e_i$ 로 두면 [땋임군](braid-groups.md) $B
 
 ## $\mathrm{SL}\_2$ 불변 사상
 
-$\mathrm{End}\_{\mathrm{SL}\_2}(V^{\otimes k})$ 의 기저가 평면 도형이고 $\delta=2$ 에서 $TL_k(2)$ 가 이 대수로 전사한다. $k$ 차 텐서의 불변 사상을 나열하는 문제의 답 목록이 교차하지 않는 짝짓기이며, Jones–Wenzl 멱등원 $f_k$ 가 최고 무게 성분 $V\_{(k)}$ 로의 사영이다.
+$\mathrm{End}\_{\mathrm{SL}\_2}(V^{\otimes k})$ 의 기저가 평면 도형이고 $\delta=2$ 에서 $TL_k(2)$ 가 이 대수로 전사한다. $k$ 차 텐서의 불변 사상을 나열하는 문제의 답 목록이 교차하지 않는 짝짓기다. Jones–Wenzl 멱등원 $f_k$ 는 최고무게 성분 $V\_{(k)}$ 로의 사영이다.
 
 ## 격자 모형의 전달행렬
 
