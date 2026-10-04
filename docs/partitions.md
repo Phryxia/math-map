@@ -151,5 +151,6 @@ Hardy–Littlewood 가 원법을 가법적 문제 전반으로 확장했다.
 ## 더 알아보기
 
 - [Dyson 의 rank 와 crank](dyson-rank-crank.md)
+- [대칭함수](symmetric-functions.md)
 
 #combinatorics #number_theory #complex_analysis

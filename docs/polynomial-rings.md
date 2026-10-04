@@ -107,5 +107,6 @@ $$
 - [유일분해정역](unique-factorization-domains.md)
 - [Noether 환](noetherian-rings.md)
 - [체의 확대](field-extensions.md)
+- [대칭함수](symmetric-functions.md)
 
 #ring_theory #algebra #field_theory

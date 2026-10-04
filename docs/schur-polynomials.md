@@ -173,6 +173,7 @@ Schur 다항식에 매개변수를 하나나 둘 넣으면 다음 다항식족�
 ## 선수지식
 
 - [Weyl 지표 공식](weyl-character-formula.md)
+- [대칭함수](symmetric-functions.md)
 
 ## 더 알아보기
 
