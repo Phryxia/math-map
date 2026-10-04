@@ -72,7 +72,7 @@ $$
 
 **정리.** $G$ 가 유한군이고 $\mathrm{char} k$ 가 $\lvert G \rvert$ 를 나누지 않으면, $G$ 의 모든 유한차원 표현은 기약표현의 직합이다.[^2]
 
-*증명 스케치.* 부분표현 $W \subseteq V$ 를 잡고 임의의 사영 $\pi : V \to W$ 를 평균 낸다.
+*증명의 요지.* 부분표현 $W \subseteq V$ 를 잡고 임의의 사영 $\pi : V \to W$ 를 평균 낸다.
 
 $$
 \pi_0 = \frac{1}{|G|} \sum_{g \in G} \rho(g)\thinspace \pi\thinspace \rho(g)^{-1}
@@ -92,7 +92,7 @@ $$
 
 이다.
 
-*증명 스케치.* $f \neq 0$ 이면 $\ker f$ 와 $\mathrm{im} f$ 가 부분표현이므로 기약성으로 $f$ 는 동형이다. $V = W$ 인 경우 $\mathbb C$ 가 대수적으로 닫혀 있어 $f$ 는 고윳값 $\lambda$ 를 가지고, $f - \lambda \cdot \mathrm{id}$ 도 얽힘사상이면서 가역이 아니므로 $0$ 이다. ∎
+*증명의 요지.* $f \neq 0$ 이면 $\ker f$ 와 $\mathrm{im} f$ 가 부분표현이므로 기약성으로 $f$ 는 동형이다. $V = W$ 인 경우 $\mathbb C$ 가 대수적으로 닫혀 있어 $f$ 는 고윳값 $\lambda$ 를 가지고, $f - \lambda \cdot \mathrm{id}$ 도 얽힘사상이면서 가역이 아니므로 $0$ 이다. ∎
 
 기약표현 위에서 $G$ 와 교환하는 연산자는 스칼라뿐이고, 아래 직교관계와 물리의 선택 규칙이 여기서 따라온다.
 
@@ -104,7 +104,7 @@ $$
 \langle \chi_i, \chi_j \rangle = \delta_{ij}
 $$
 
-*증명 스케치.* $\mathrm{Hom}(V, W)$ 에 $g \cdot f = \sigma(g) f \rho(g)^{-1}$ 로 표현 구조를 주면 지표는 $\chi_W \overline{\chi_V}$ 이고 불변원소의 공간은 $\mathrm{Hom}\_G(V, W)$ 다. 평균 연산자
+*증명의 요지.* $\mathrm{Hom}(V, W)$ 에 $g \cdot f = \sigma(g) f \rho(g)^{-1}$ 로 표현 구조를 주면 지표는 $\chi_W \overline{\chi_V}$ 이고 불변원소의 공간은 $\mathrm{Hom}\_G(V, W)$ 다. 평균 연산자
 
 $$
 P = \frac{1}{|G|}\sum_{g} \rho(g)

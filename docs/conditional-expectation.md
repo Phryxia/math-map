@@ -129,7 +129,7 @@ $$
 \varphi\big(E[X \mid \mathcal{G}]\big) \thickspace\le\thickspace E[\varphi(X) \mid \mathcal{G}].
 $$
 
-*증명 스케치.* 볼록함수는 자신의 접선(지지선)들의 상한이다. 유리수 매개변수로 가산 집합 $\lbrace(a_n, b_n)\rbrace$ 을 골라 $\varphi(x) = \sup_n (a_n x + b_n)$ 로 쓸 수 있다. 각 $n$ 에 대해 $\varphi(X) \ge a_n X + b_n$ 이므로 단조성과 선형성으로 $E[\varphi(X) \mid \mathcal G] \ge a_n E[X \mid \mathcal G] + b_n$ 이고, 가산 상한을 취하면 영집합이 가산 번만 합쳐지므로 부등식이 거의 확실하게 유지된다.
+*증명의 요지.* 볼록함수는 자신의 접선(지지선)들의 상한이다. 유리수 매개변수로 가산 집합 $\lbrace(a_n, b_n)\rbrace$ 을 골라 $\varphi(x) = \sup_n (a_n x + b_n)$ 로 쓸 수 있다. 각 $n$ 에 대해 $\varphi(X) \ge a_n X + b_n$ 이므로 단조성과 선형성으로 $E[\varphi(X) \mid \mathcal G] \ge a_n E[X \mid \mathcal G] + b_n$ 이고, 가산 상한을 취하면 영집합이 가산 번만 합쳐지므로 부등식이 거의 확실하게 유지된다.
 
 $\varphi(x) = \lvert x \rvert^p$ 를 넣으면 $p \ge 1$ 인 모든 $L^p$ 에서 조건부 기댓값이 수축임이 따라 나온다. 이 사실은 [균등적분성](uniform-integrability.md)과 결합해 martingale 수렴 이론의 $L^1$ 수렴 판정에 쓰인다.
 

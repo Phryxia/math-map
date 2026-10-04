@@ -94,7 +94,7 @@ $$
 
 **정리.** 모든 Heyting algebra 는 분배격자다.
 
-*증명 스케치.* $(-) \wedge a$ 가 왼쪽 수반이므로 존재하는 모든 상한을 보존하고, 특히 이항 상한을 보존하므로 $a \wedge (b \vee c) = (a \wedge b) \vee (a \wedge c)$ 다. ∎
+*증명의 요지.* $(-) \wedge a$ 가 왼쪽 수반이므로 존재하는 모든 상한을 보존하고, 특히 이항 상한을 보존하므로 $a \wedge (b \vee c) = (a \wedge b) \vee (a \wedge c)$ 다. ∎
 
 ## 부정의 비대칭
 
@@ -114,7 +114,7 @@ $\neg\neg a \le a$ 와 $\neg(a \wedge b) = \neg a \vee \neg b$ 와 배중률 $a 
 2. 모든 $a$ 에 대해 $\neg\neg a = a$ 다.
 3. $H$ 는 [Boolean algebra](boolean-algebras.md) 이며 $a \to b = \neg a \vee b$ 다.
 
-*증명 스케치.* 1에서 2는 $a \vee \neg a = 1$ 의 양변에 $\neg\neg a$ 를 만나게 하고 $\neg a \wedge \neg\neg a = 0$ 을 쓴다. 2에서 3은 $\neg$ 가 대합이 되어 de Morgan 법칙이 양방향 모두 회복되고 의사보수가 보수가 된다. 3에서 1은 자명하다. ∎
+*증명의 요지.* 1에서 2는 $a \vee \neg a = 1$ 의 양변에 $\neg\neg a$ 를 만나게 하고 $\neg a \wedge \neg\neg a = 0$ 을 쓴다. 2에서 3은 $\neg$ 가 대합이 되어 de Morgan 법칙이 양방향 모두 회복되고 의사보수가 보수가 된다. 3에서 1은 자명하다. ∎
 
 ## 정칙 원소와 Glivenko 정리
 
@@ -132,7 +132,7 @@ $$
 
 가 성립한다.
 
-*증명 스케치.* 건전성은 공리마다 수반 조건으로 확인한다. 완전성은 Lindenbaum–Tarski 대수를 반례 모형으로 쓴다. $\varphi$ 가 증명 불가능하면 몫 대수에서 $[\varphi] \neq 1$ 이다. ∎
+*증명의 요지.* 건전성은 공리마다 수반 조건으로 확인한다. 완전성은 Lindenbaum–Tarski 대수를 반례 모형으로 쓴다. $\varphi$ 가 증명 불가능하면 몫 대수에서 $[\varphi] \neq 1$ 이다. ∎
 
 유한 모형 성질이 따라붙는다. IPC 에서 증명 불가능한 식은 어떤 유한 Heyting algebra 에서 값이 1 이 아니게 되므로 IPC 는 결정 가능하다. Boolean 경우와 달리 크기 상한은 상수가 아니라 식의 크기에 의존한다.
 

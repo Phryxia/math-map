@@ -67,7 +67,7 @@ $$
 E\big[e^{\lambda Y}\big] \thickspace\le\thickspace \exp\negthinspace\Big(\frac{\lambda^2 (b-a)^2}{8}\Big).
 $$
 
-*증명 스케치.* $\psi(\lambda) = \log E[e^{\lambda Y}]$ 는 매끄럽고 $\psi(0) = 0$ 이며 $\psi'(0) = E[Y] = 0$ 이다. $\psi''(\lambda)$ 는 밀도를 $e^{\lambda y}$ 로 기울인 새 분포에 대한 분산이고, 그 분포는 $[a, b]$ 에 지지되므로 Popoviciu 부등식으로 $\psi''(\lambda) \le (b-a)^2/4$ 이다. Taylor 전개 $\psi(\lambda) = \psi(0) + \lambda\psi'(0) + \lambda^2\psi''(\xi)/2$ 에 대입하면 결론이 나온다.
+*증명의 요지.* $\psi(\lambda) = \log E[e^{\lambda Y}]$ 는 매끄럽고 $\psi(0) = 0$ 이며 $\psi'(0) = E[Y] = 0$ 이다. $\psi''(\lambda)$ 는 밀도를 $e^{\lambda y}$ 로 기울인 새 분포에 대한 분산이고, 그 분포는 $[a, b]$ 에 지지되므로 Popoviciu 부등식으로 $\psi''(\lambda) \le (b-a)^2/4$ 이다. Taylor 전개 $\psi(\lambda) = \psi(0) + \lambda\psi'(0) + \lambda^2\psi''(\xi)/2$ 에 대입하면 결론이 나온다.
 
 **Hoeffding 부등식.** $X_1, \dots, X_n$ 이 독립이고 $a_i \le X_i \le b_i$ 이며 $S_n = \sum X_i$ 일 때
 

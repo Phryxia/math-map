@@ -82,7 +82,7 @@ $$
 2. $T \lt\infty$ 가 거의 확실하고 $(X_{T \wedge n})$ 이 유계다.
 3. $E[T] \lt\infty$ 이고 증분이 $\lvert X_{n+1} - X_n \rvert \le c$ 로 유계다.
 
-*증명 스케치.* 정지된 과정이 martingale 이므로 $E[X_{T \wedge n}] = E[X_0]$ 는 모든 $n$ 에서 성립한다. 남은 일은 $n \to \infty$ 에서 극한과 기댓값을 교환하는 것뿐이고, 세 조건은 각각 즉시 성립·[지배 수렴 정리](dominated-convergence.md)·증분 합의 지배를 제공한다. 조건이 없으면 정리는 거짓이다. 대칭 무작위 걷기에서 $T = \inf\lbrace n : S_n = 1\rbrace$ 은 거의 확실하게 유한하지만 $E[S_T] = 1 \neq 0 = E[S_0]$ 이다. 두 배로 걸기인 martingale 배팅 전략이 "확실한 이익"을 주지 못하는 이유도 이 반례와 같다. 실제로는 $E[T] = \infty$ 이거나 무한한 자금이 필요하다.
+*증명의 요지.* 정지된 과정이 martingale 이므로 $E[X_{T \wedge n}] = E[X_0]$ 는 모든 $n$ 에서 성립한다. 남은 일은 $n \to \infty$ 에서 극한과 기댓값을 교환하는 것뿐이고, 세 조건은 각각 즉시 성립·[지배 수렴 정리](dominated-convergence.md)·증분 합의 지배를 제공한다. 조건이 없으면 정리는 거짓이다. 대칭 무작위 걷기에서 $T = \inf\lbrace n : S_n = 1\rbrace$ 은 거의 확실하게 유한하지만 $E[S_T] = 1 \neq 0 = E[S_0]$ 이다. 두 배로 걸기인 martingale 배팅 전략이 "확실한 이익"을 주지 못하는 이유도 이 반례와 같다. 실제로는 $E[T] = \infty$ 이거나 무한한 자금이 필요하다.
 
 ## 도박꾼 파산
 
@@ -108,7 +108,7 @@ $$
 P\Big(\max_{0 \le k \le n} X_k \ge \lambda\Big) \thickspace\le\thickspace \frac{E[X_n]}{\lambda}.
 $$
 
-*증명 스케치.* $T = \inf\lbrace k : X_k \ge \lambda\rbrace$ 로 두고 사건 $A = \lbrace\max_{k \le n} X_k \ge \lambda\rbrace$ 를 $\lbrace T \le n\rbrace$ 과 동일시한다. $A$ 위에서 $X_T \ge \lambda$ 이고, submartingale 성질로 $E[X_n \mathbf 1_A] \ge E[X_T \mathbf 1_A] \ge \lambda P(A)$ 이다. 우변은 Markov 부등식의 것과 같고 좌변만 최댓값으로 바뀐다.
+*증명의 요지.* $T = \inf\lbrace k : X_k \ge \lambda\rbrace$ 로 두고 사건 $A = \lbrace\max_{k \le n} X_k \ge \lambda\rbrace$ 를 $\lbrace T \le n\rbrace$ 과 동일시한다. $A$ 위에서 $X_T \ge \lambda$ 이고, submartingale 성질로 $E[X_n \mathbf 1_A] \ge E[X_T \mathbf 1_A] \ge \lambda P(A)$ 이다. 우변은 Markov 부등식의 것과 같고 좌변만 최댓값으로 바뀐다.
 
 $p \gt 1$ 에 대한 $L^p$ 최대부등식
 
@@ -128,11 +128,11 @@ $$
 (b - a)\thinspace E\big[U_n[a,b]\big] \thickspace\le\thickspace E\big[(X_n - a)^-\big].
 $$
 
-*증명 스케치.* $a$ 아래로 내려가면 1 단위를 사고 $b$ 위로 올라가면 파는 예측 가능 전략 $H$ 를 만든다. 완성된 upcrossing 하나마다 최소 $b - a$ 의 이익이 나므로 $(H \cdot X)\_n \ge (b-a) U_n[a,b] - (X_n - a)^-$ 이고, supermartingale 의 비음 전략 변환은 다시 supermartingale 이므로 $E[(H \cdot X)\_n] \le 0$ 이다.
+*증명의 요지.* $a$ 아래로 내려가면 1 단위를 사고 $b$ 위로 올라가면 파는 예측 가능 전략 $H$ 를 만든다. 완성된 upcrossing 하나마다 최소 $b - a$ 의 이익이 나므로 $(H \cdot X)\_n \ge (b-a) U_n[a,b] - (X_n - a)^-$ 이고, supermartingale 의 비음 전략 변환은 다시 supermartingale 이므로 $E[(H \cdot X)\_n] \le 0$ 이다.
 
 **Martingale 수렴 정리.** $(X_n)$ 이 submartingale 이고 $\sup_n E[X_n^+] \lt\infty$ 이면 $X_n \to X_\infty$ 가 거의 확실하게 성립하고 $E\lvert X_\infty \rvert \lt\infty$ 이다.
 
-*증명 스케치.* 수렴하지 않는 경로는 어떤 유리수 쌍 $a \lt b$ 에 대해 $U_\infty[a,b] = \infty$ 를 만족한다. upcrossing 부등식과 단조수렴으로 $E[U_\infty[a,b]] \lt\infty$ 이므로 각 쌍마다 그 사건은 영집합이고, 유리수 쌍이 가산이므로 합집합도 영집합이다. Fatou 보조정리로 극한의 적분가능성이 나온다.
+*증명의 요지.* 수렴하지 않는 경로는 어떤 유리수 쌍 $a \lt b$ 에 대해 $U_\infty[a,b] = \infty$ 를 만족한다. upcrossing 부등식과 단조수렴으로 $E[U_\infty[a,b]] \lt\infty$ 이므로 각 쌍마다 그 사건은 영집합이고, 유리수 쌍이 가산이므로 합집합도 영집합이다. Fatou 보조정리로 극한의 적분가능성이 나온다.
 
 거의 확실한 수렴이 $L^1$ 수렴을 함의하지는 않는다. 반례로 $P(\xi_k = 2) = P(\xi_k = 0) = 1/2$ 인 곱 martingale $X_n = \prod \xi_k$ 는 $X_n \to 0$ 이지만 $E[X_n] = 1$ 이다. $L^1$ 수렴과 $X_n = E[X_\infty \mid \mathcal F_n]$ 형태의 표현(닫힌 martingale)을 얻으려면 [균등적분성](uniform-integrability.md)이 필요하며, 이는 Doob martingale 이 언제나 균등적분 가능하다는 사실과 짝을 이룬다. $p \gt 1$ 에서는 $L^p$ 유계성만으로 $L^p$ 수렴이 따르는데, 최대부등식이 지배함수를 제공하기 때문이다.
 

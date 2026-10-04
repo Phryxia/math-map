@@ -87,7 +87,7 @@ graph LR
 1. 삼각항등식을 만족하는 자연변환 쌍 $(\eta, \varepsilon)$ 이 존재한다.
 2. $c$ 와 $d$ 에 대해 자연스러운 전단사 $\mathrm{Hom}(Fc, d) \cong \mathrm{Hom}(c, Gd)$ 가 존재한다.
 
-*증명 스케치.* (1) → (2): $f : Fc \to d$ 에 $Gf \circ \eta_c$ 를 대응시키고, $g : c \to Gd$ 에 $\varepsilon_d \circ Fg$ 를 대응시킨다. 한쪽 합성을 계산하면
+*증명의 요지.* (1) → (2): $f : Fc \to d$ 에 $Gf \circ \eta_c$ 를 대응시키고, $g : c \to Gd$ 에 $\varepsilon_d \circ Fg$ 를 대응시킨다. 한쪽 합성을 계산하면
 
 $$
 \varepsilon_d \circ F(Gf \circ \eta_c) = \varepsilon_d \circ FGf \circ F\eta_c = f \circ \varepsilon_{Fc} \circ F\eta_c = f
@@ -130,7 +130,7 @@ $$
 
 **정리 (RAPL).** 오른쪽 수반은 모든 극한을 보존하고, 왼쪽 수반은 모든 쌍대극한을 보존한다. 이름은 **RAPL**(right adjoints preserve limits)에서 왔다.
 
-*증명 스케치.* $\mathcal D$ 안의 도형 $d_i$ 가 극한 $\lim d_i$ 를 가진다고 하자. 임의의 $c$ 에 대해
+*증명의 요지.* $\mathcal D$ 안의 도형 $d_i$ 가 극한 $\lim d_i$ 를 가진다고 하자. 임의의 $c$ 에 대해
 
 $$
 \mathrm{Hom}\_{\mathcal{C}}(c, G(\lim_i d_i)) \cong \mathrm{Hom}\_{\mathcal{D}}(Fc, \lim_i d_i) \cong \lim_i \mathrm{Hom}\_{\mathcal{D}}(Fc, d_i) \cong \lim_i \mathrm{Hom}\_{\mathcal{C}}(c, G d_i)
