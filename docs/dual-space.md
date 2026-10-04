@@ -114,6 +114,6 @@ $V$ 위의 쌍선형 형식 $B\colon V\times V\to F$ 는 사상 $V\to V^\ast$ , 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schwartz 분포](schwartz-distributions.md)
 
 #linear_algebra #algebra #functional_analysis #category_theory

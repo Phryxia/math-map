@@ -45,6 +45,7 @@ graph TD
 - [$L^p$ 공간](lp-spaces.md) — 측도공간 위의 적분가능 함수들이 이루는 Banach 공간. Hölder 와 Minkowski 부등식, 쌍대성
 - [Sobolev 공간](sobolev-spaces.md) — 약한 도함수가 $L^p$ 에 드는 함수들의 Banach 공간. 매장 정리, Rellich–Kondrachov 콤팩트성, 흔적 정리
 - [쌍대 공간](dual-space.md) — 선형범함수 전체가 이루는 공간. 유한차원과 달리 원공간과 표준적으로 동형이 아니다
+- [Schwartz 분포](schwartz-distributions.md) — 시험함수 위의 연속 선형범함수. Dirac 델타, 무제한 미분, 완만 분포의 Fourier 변환
 
 ## 수렴과 직교기저
 
