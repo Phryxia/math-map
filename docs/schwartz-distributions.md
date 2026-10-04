@@ -109,6 +109,7 @@ $H^{-k}(U)$ 를 $H_0^k(U)$ 의 쌍대로 정의하면 그 원소가 분포이고
 
 - [쌍대 공간](dual-space.md)
 - [Sobolev 공간](sobolev-spaces.md)
+- [Fourier 변환](fourier-transform.md)
 
 ## 더 알아보기
 

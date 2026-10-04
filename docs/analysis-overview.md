@@ -29,6 +29,7 @@ graph TD
   BF --> OD["상미분방정식"]
   FC --> OD
   RI --> FS["Fourier 급수"]
+  FS --> FT["Fourier 변환"]
   FS --> PSm["Poisson 합 공식"]
   PSm --> MT["Mellin 변환"]
   EM["Euler–Maclaurin 공식"] --> GM["감마 함수"]
@@ -82,6 +83,7 @@ graph TD
 - [급수의 수렴판정](series-convergence.md): 비교, 비율, 근, 적분, 교대급수 판정과 재배열
 - [멱급수](power-series.md): 수렴반경과 해석성
 - [Fourier 급수](fourier-series.md): 직교계 전개와 $L^2$ 수렴
+- [Fourier 변환](fourier-transform.md): 실직선 위의 적분변환과 반전 공식, Plancherel 정리
 - [이산 Fourier 변환](fourier.md): 유한 순환군 위의 Fourier 해석
 - [Euler–Maclaurin 공식](euler-maclaurin.md): 합과 적분의 차이를 Bernoulli 수로 전개
 - [감마 함수](gamma-function.md): 계승의 해석적 연속

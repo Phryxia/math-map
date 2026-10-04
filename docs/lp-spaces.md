@@ -121,6 +121,7 @@ $1\le p\lt\infty$ 이고 $\mu$ 가 $\sigma$ 유한이면 사상 $g\mapsto\bigl(f
 
 ## 더 알아보기
 
+- [Fourier 변환](fourier-transform.md)
 - [Sobolev 공간](sobolev-spaces.md)
 
 #functional_analysis #measure_theory #analysis #probability

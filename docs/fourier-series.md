@@ -184,6 +184,7 @@ $L^2$ 오차는 0으로 가지만 오버슈트는 약 0.179에 머문다. 도약
 
 ## 더 알아보기
 
+- [Fourier 변환](fourier-transform.md)
 - [Poisson 합 공식](poisson-summation.md)
 - [등분포](equidistribution.md)
 - [Lobachevsky 함수](lobachevsky-function.md)

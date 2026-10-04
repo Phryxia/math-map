@@ -136,6 +136,7 @@ $\varphi_X(t)^n=\varphi_X(c_nt)e^{id_nt}$ 꼴을 요구하면 **안정분포**�
 
 - [약수렴](weak-convergence.md)
 - [확률변수](random-variables.md)
+- [Fourier 변환](fourier-transform.md)
 
 ## 더 알아보기
 
