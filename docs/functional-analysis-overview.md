@@ -23,6 +23,8 @@ graph TD
   COMP --> BS
   VS --> BS
   LM["선형사상"] --> DS["쌍대 공간"]
+  BS --> LPS["Lp 공간"] --> SOB["Sobolev 공간"] --> SD["Schwartz 분포"]
+  DS --> SD
   BS --> OMT["열린 사상 정리"]
   HS --> BO["유계 작용소"]
   ST["스펙트럼 정리"] --> BO
