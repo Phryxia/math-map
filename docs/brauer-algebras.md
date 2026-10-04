@@ -67,7 +67,7 @@ $$
 
 $\delta$ 가 정수가 아니거나 충분히 크면 $B_k(\delta)$ 는 반단순이고, 기약 표현이 $0\le r\le k/2$ 인 분할 $\lambda\vdash k-2r$ 로 매개된다. $r$ 이 계약선의 쌍 개수다.
 
-$\delta=n$ 이 작은 정수이고 $k$ 가 크면 반단순성이 깨진다. 이 경우 $\mathrm O(n)$ 텐서곱에 나타나는 기약 성분의 중복도가 비반단순 대수의 분해 행렬로 기술된다. Brauer 대수가 **세포대수(cellular algebra)** 이므로 세포 구조가 항상 있고 기약 가군은 세포 가군의 머리로 얻어진다.
+$\delta=n$ 이 작은 정수이고 $k$ 가 크면 반단순성이 깨진다. 이 경우 $\mathrm O(n)$ 텐서곱에 나타나는 기약 성분의 중복도가 비반단순 대수의 분해 행렬로 기술된다. Brauer 대수가 [세포대수](cellular-algebras.md)이므로 세포 구조가 항상 있고 기약 가군은 세포 가군의 머리로 얻어진다.
 
 ## Temperley–Lieb 대수
 
@@ -105,6 +105,7 @@ Brauer 도형들을 한 대수가 아니라 범주의 사상으로 보면 $k$ �
 ## 선수지식
 
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md)
+- [세포대수](cellular-algebras.md)
 
 ## 더 알아보기
 
