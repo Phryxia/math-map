@@ -59,10 +59,10 @@ Serre 가 물었고 Quillen 과 Suslin 이 각자 증명했다. 계수가 하나
 
 # 활용
 
-- [유도 함자](derived-functors.md)의 사영 분해. $\mathrm{Hom}\_R(P,-)$ 의 완전성이 있어 분해에 함자를 적용한 복합체의 호몰로지가 분해의 선택에 무관하다.
+- 유도 함자의 사영 분해. $\mathrm{Hom}\_R(P,-)$ 의 완전성이 있어 분해에 함자를 적용한 복합체의 호몰로지가 분해의 선택에 무관하다.
 - [대수적 K 이론](algebraic-k-theory.md)의 $K\_0(R)$. 유한생성 사영가군의 동형류를 직합에 대해 Grothendieck 군으로 만든 것이고, $R$ 가 국소환이거나 다항식환이면 위의 두 정리로 $K\_0(R)\cong\mathbb Z$ 가 된다.
-- [Dedekind 정역](dedekind-domains.md)의 계수 $n$ 인 사영가군이 $R^{n-1}\oplus I$ 꼴로 분류되는 진술. 아이디얼류군이 자유성에서 벗어나는 정도를 재는 자리다.
-- [Nakayama 보조정리](nakayama-lemma.md)의 응용 가운데 국소 자유성 판정. 줄기마다 자유라는 조건으로 사영성을 확인한다.
+- Dedekind 정역의 계수 $n$ 인 사영가군이 $R^{n-1}\oplus I$ 꼴로 분류되는 진술. 아이디얼류군이 자유성에서 벗어나는 정도를 재는 자리다.
+- Nakayama 보조정리의 응용 가운데 국소 자유성 판정. 줄기마다 자유라는 조건으로 사영성을 확인한다.
 
 [^1]: C. A. Weibel, *An Introduction to Homological Algebra*, Cambridge University Press, 1994, 2.2 절. 동치 조건 네 개와 가환환 위에서의 국소적 자유성을 다룬다.
 

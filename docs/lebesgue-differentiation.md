@@ -80,9 +80,9 @@ $F'=f$ 가 거의 어디서나 성립해도 $F(x)-F(a)=\int\_a^x F'$ 는 따라�
 
 # 활용
 
-- [유계변동 함수](bounded-variation.md)의 도함수. Jordan 분해로 증가함수 둘의 차로 쓴 뒤 각 항에 이 정리를 적용해 거의 어디서나 미분가능성을 얻는다.
+- 유계변동 함수의 도함수. Jordan 분해로 증가함수 둘의 차로 쓴 뒤 각 항에 이 정리를 적용해 거의 어디서나 미분가능성을 얻는다.
 - [Rademacher 정리](rademacher-theorem.md). Lipschitz 함수가 거의 어디서나 미분가능하다는 정리의 증명이 방향별 도함수의 존재를 이 정리로 얻은 뒤 선형성을 확인한다.
-- [Radon–Nikodym 정리](radon-nikodym.md)의 밀도 해석. 측도의 밀도가 작은 공 위 질량비의 극한으로 주어지고, 그 극한의 존재가 거의 모든 점에서 보장된다.
+- Radon–Nikodym 정리의 밀도 해석. 측도의 밀도가 작은 공 위 질량비의 극한으로 주어지고, 그 극한의 존재가 거의 모든 점에서 보장된다.
 - 근사 항등원의 수렴. 핵을 좁혀 가며 합성곱한 $f\ast\varphi\_\varepsilon$ 이 거의 모든 점에서 $f$ 로 수렴한다는 진술이 평균의 수렴을 가중평균으로 넓힌 것이다.
 
 [^1]: E. M. Stein and R. Shakarchi, *Real Analysis*, Princeton University Press, 2005, 3 장. 덮개 보조정리, 극대함수의 약한 추정, 미분정리와 밀도점을 차례로 다룬다.

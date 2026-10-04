@@ -48,7 +48,7 @@ $$1=\int_{\mathbb R}\vert f\vert^2\thinspace dx=-\int_{\mathbb R}x\frac{d}{dx}\v
 
 - **양자역학의 위치와 운동량.** 상태함수 $\psi$ 의 $\vert\psi\vert^2$ 가 위치의 확률밀도이고 $\vert\hat\psi\vert^2$ 가 운동량의 확률밀도이므로, 두 표준편차의 곱이 $1/(4\pi)$ 이상이라는 것이 Heisenberg 부등식이다. 상수에 $\hbar$ 가 붙는 꼴은 변환의 규격을 바꾼 것이다.
 - **대역제한과 시간제한.** 받침이 유한한 경우의 정리는 유한한 시간 동안만 켜지는 신호가 유한한 주파수 대역에 갇힐 수 없다는 뜻이다. 신호를 유한한 구간으로 자르면 그 변환이 넓은 주파수 범위에 퍼진다.
-- **신호의 분해.** 창의 폭을 고정한 변환은 좁은 시간 구간과 좁은 주파수 구간을 함께 볼 수 없으므로, 폭을 주파수에 따라 바꾸는 분해를 쓴다. [Fourier 변환](fourier-transform.md)의 늘림 성질이 그 교환비를 준다.
+- **신호의 분해.** 창의 폭을 고정한 변환은 좁은 시간 구간과 좁은 주파수 구간을 함께 볼 수 없으므로, 폭을 주파수에 따라 바꾸는 분해를 쓴다. Fourier 변환의 늘림 성질이 그 교환비를 준다.
 
 [^1]: Elias M. Stein, Rami Shakarchi, *Fourier Analysis: An Introduction*, Princeton University Press, 2003, 5 장 4 절. 부등식과 등호 조건의 증명이 여기 있다.
 
