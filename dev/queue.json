@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-04T21:05:49.260Z",
-  "nextSeq": 1689,
+  "savedAt": "2026-10-05T01:01:34.417Z",
+  "nextSeq": 1700,
   "items": [
     {
       "id": "b0693241",
@@ -132,20 +132,52 @@
       "seq": 1677
     },
     {
+      "id": "ed76b68d",
+      "title": "가정 설정의 '~라고 하자' 꼴 전수 현황",
+      "priority": 20,
+      "note": "독자 판단 대기. 31차 회차(2026-10-05) machine_learning 통독에서 꺼냈고 이번 회차에는 손대지 않았다.\n\n4절 문체 규칙은 금지 표현으로 '독자를 부르는 \\\"우리\\\", \\\"~해 보자\\\"' 를 든다. 통독 중 multi-armed-bandits:9 '선택지가 둘이고 각각 앞면 확률을 모르는 동전이라고 하자' 와 policy-gradient:23 '... 확률적 정책족 $\\pi_\\theta(a\\mid s)$ 가 주어졌다고 하자' 가 이 패턴에 걸리는지가 문제가 됐다.\n\n전수 현황은 grep -c '하자\\.' docs/*.md 로 216 개 문서에 295 회다. 변종은 '하자.' 295, '생각하자.' 1, '고정하자.' 1, '가정하자.' 1 이다. 저장소 전체에 굳은 가정 설정 표현이므로 한 분야 통독에서 판정할 사안이 아니라고 보아 그대로 두었다.\n\n정해야 할 것 둘. (1) 가정을 세우는 '~라고 하자', '~가 주어졌다고 하자' 를 4절이 금지하는 청유형으로 볼 것인지. 수학 교과서의 관용이고 '우리'처럼 독자를 직접 부르지는 않는다. (2) 금지로 정하면 295 곳을 '~라 한다', '~를 둔다' 로 바꾸는 작업이 되고, 허용으로 정하면 4절 금지 표현 목록에 그 예외를 한 줄 적어야 한다.\n\npolicy-gradient:23 은 금지로 정할 때 '주어졌다' 라는 피동까지 함께 걷히는 자리다('... 미분가능한 확률적 정책족 $\\pi_\\theta(a\\mid s)$ 를 둔다'). 전수 교체를 하더라도 '주어졌다고 하자' 꼴을 먼저 세는 것이 낫다.",
+      "createdAt": "2026-10-05T00:43:15.940Z",
+      "seq": 1690
+    },
+    {
+      "id": "d5ee0358",
+      "title": "lebesgue-integral 더 알아보기 묶음 유지 판정",
+      "priority": 20,
+      "note": "31차 회차(2026-10-05) 판정 결과 메모. pop 으로 꺼낼 작업이 아니다. 문서는 고치지 않았다.\n\n30차에 fubini-tonelli 를 더해 자식이 6개가 되어 H3 셋으로 나눈 것('### 수렴과 교환', '### 함수공간', '### 측도와 확률')을 재검토했다. 결론은 유지다. 근거 둘. (1) 5절은 자식 6개 이상이면 묶으라고만 정하고 묶음 크기의 하한을 두지 않으며, 세 이름이 각각 수렴정리, 함수공간, 측도와 확률로의 응용이라는 뚜렷한 주제를 가리킨다. 묶음마다 둘이라 효과가 작아 보이지만 자식이 늘면 그대로 자라는 경계다. (2) order-check 가 통과하고 묶음 안의 선수관계 순서도 맞다.\n\ndominated-convergence 를 수렴 묶음에 모으는 안은 넣지 않는다. 그 문서는 monotone-convergence 의 자식이고 lebesgue-integral 은 그 조상이므로, 목록에 올리려면 lebesgue-integral -> dominated-convergence 간선을 새로 그어야 한다. 5절이 '부모가 4개 이상이면 다른 부모의 조상인 것을 뺀다' 고 하는 자리이고, 더 알아보기의 기준도 '한 단계 다음' 을 앞에 두라고 하므로 조상에서 손자로 건너뛰는 간선은 두지 않는다.",
+      "createdAt": "2026-10-05T00:55:10.553Z",
+      "seq": 1694
+    },
+    {
+      "id": "f1b5a2b4",
+      "title": "sylow-theorems 보강 결과와 증명 헤딩 꼴",
+      "priority": 20,
+      "note": "31차 회차(2026-10-05) 결과 메모. 문장형 헤딩 전수 grep 의 보고를 따라 sylow-theorems(151줄)를 보강했다(커밋 f770658). 고친 것은 아홉 곳이다.\n\n헤딩 넷. '## 증명의 요지'(성질 절 머리에서 실제로는 고정점 합동 보조정리를 적는 자리) -> '## 고정점 합동'. '## 정리 1의 증명 요지' -> '## 존재성의 증명'. '## 정리 2와 3의 증명 요지' -> '## 켤레성과 개수의 증명'. '## 표현론, Galois 이론, 계산군론'(분야 세 개를 나열한 헤딩) -> '## 다른 분야에서의 쓰임'(5절 묶음 이름 예시의 꼴).\n\n문체 다섯. '세 정리는 모두 같은 재료로 증명된다' -> '세 정리의 증명이 모두 같은 보조정리를 쓴다'(피동). '귀납법과 류방정식을 쓰는 표준 증명을 적는다' -> '귀납법과 류방정식을 쓴다'(문서 자신을 가리키는 메타 서술). '융합 분석으로 이루어진다' -> '융합 분석을 쓴다'(피동). '제한은 modular representation theory 의 핵심 도구이며, ... 나타난다' -> '모듈러 표현론(modular representation theory)은 ... 도구로 쓴다. ... 나온다'(한국어 문장에 끼인 영문 용어, 등위 이어 붙임, 범위 과장 '핵심'). '기본 연산으로 제공하며, ... 호출된다' -> 두 문장으로 끊고 '이 연산을 되풀이해 쓴다'(등위 겸 피동).\n\n판정 하나. 증명을 적는 자리의 헤딩은 '정리 N의 증명 요지' 처럼 문서 구조를 가리키지 않고 그 증명이 세우는 명제의 이름('존재성의 증명', '켤레성과 개수의 증명')으로 쓰는 것이 4절 헤딩 규칙에 맞다. 증명의 머리말은 본문 첫 문장 '증명의 요지.' 로 쓰는 것이 저장소 관용이고 73 개 문서가 그렇게 한다. 큐 항목 b4ccf30f 와 9bc3b9fa 가 적은 '증명의 요지' 헤딩 오탐은 여전히 13 개 문서에 남아 있고(그 항목들의 판정 대기), 이번에 고친 둘은 '증명 요지'('의' 없는 변종)여서 그 13 개와는 별개다.\n\n남은 점검. sylow-theorems 는 각주 둘 가운데 [^1] 이 Wikipedia 다. 다른 문서들은 논문이나 교과서를 쓰므로 Sylow 정리의 원 논문이나 표준 교과서로 바꿀 후보다. 수식의 절댓값 기호가 \\vert 가 아니라 | 로 들어간 자리도 여럿인데(|X|, |G|), 4절은 표 셀에서만 금지하므로 이번에는 손대지 않았다.",
+      "createdAt": "2026-10-05T00:57:27.690Z",
+      "seq": 1696
+    },
+    {
+      "id": "c23c22b5",
+      "title": "'A와 B' 제목 전수 판정과 4절 grep 의 로케일 오탐",
+      "priority": 20,
+      "note": "31차 회차(2026-10-05) 판정 결과 메모. 문서는 고치지 않았다.\n\n사고 하나. CLAUDE.md 2절 3단계의 'A와 B' 제목 후보 grep -l '^# .*[와과] ' docs/*.md 를 이 환경(LANG 이 비어 있어 C 로케일)에서 돌리면 docs 거의 전부(560 여 개)를 보고한다. 원인은 grep 이 [와과] 를 문자 클래스가 아니라 바이트 집합으로 읽는 것이다. '과'(U+ACFC, EA B3 BC)의 첫 바이트 EA 가 '관'(U+AD00, EA B4 80)의 첫 바이트와 같아 모든 문서의 '# 연관 문서' 줄이 걸린다. LC_ALL=C.UTF-8 을 앞에 붙이면 24 건으로 줄고 그것이 참값이다. 같은 꼴의 다른 검사(4절 문체 헤딩 grep 의 (다|까|요|는|...) 처럼 한글이 든 문자 클래스)도 같은 환경에서 오탐·누락이 날 수 있으므로, 한글 문자 클래스를 쓰는 grep 은 전부 LC_ALL=C.UTF-8 을 붙여 돌린다. 교체 대상은 대안을 괄호로 묶은 꼴(다|까)이 아니라 대괄호 문자 클래스[와과]다. CLAUDE.md 를 고치려면 독자 판단이 필요하므로 메모로 남긴다.\n\n판정. 좁힌 24 건 전부 4절 제목 규칙에 맞고 고칠 것이 없다. 둘로 갈린다. (1) 파일명이 두 개념을 함께 담아 제목과 어긋나지 않는 것: ideals-quotient-rings(아이디얼과 몫환), limits-colimits(극한과 쌍대극한), kleisli-eilenberg-moore, luzin-sierpinski-sets, selmer-tate-shafarevich, formalism-hilbert-program, fermat-euler-theorem, dyson-rank-crank. (2) 4절이 명시한 예외 '정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목': canonical-height, dwork-rationality, eisenstein-ideal, greenberg-conjecture, heegner-points, herbrand-ribet, np-completeness, perfect-graphs, s-cobordism, serre-conjecture, speh-representations, unique-games 등. perfect-graphs 는 파일명이 '완전그래프' 만 가리키고 제목이 강한 완전그래프 정리까지 담지만, 그 정리가 완전그래프를 특징짓는 정리이므로 예외에 든다.\n\n같은 회차에 돌린 다른 전수 검사도 전부 0 건이다. 구형 '## 정의'/'## 성질' 구조 문서 0 개, '# 개요' 가 없는 문서 0 개, 태그가 하나뿐인 문서 0 개, 4.5절 개관 매핑의 미수록·매핑없음 0 건.",
+      "createdAt": "2026-10-05T00:58:51.359Z",
+      "seq": 1697
+    },
+    {
+      "id": "ffc1eaca",
+      "title": "각주 출처로 쓰인 Wikipedia 전수 현황",
+      "priority": 20,
+      "note": "독자 판단 대기. 31차 회차(2026-10-05) sylow-theorems 보강에서 꺼냈고 이번 회차에는 손대지 않았다.\n\nsylow-theorems:138 의 각주가 '[^1]: Wikipedia, Sylow theorems, https://en.wikipedia.org/wiki/Sylow_theorems' 다. 전수로 보면 Wikipedia 를 각주 출처로 쓰는 문서가 24 개다(axiom-of-choice, euler-characteristic, fermat-euler-theorem, first-order-logic, fourier-series, generating-functions, sylow-theorems 등).\n\nCLAUDE.md 4절은 '위키피디아나 교과서의 목차를 그대로 옮기지 않는다' 고만 적고 각주 출처로 쓰는 것을 금지하지는 않는다. 다만 다른 문서들은 논문과 교과서를 각주로 달고, 4절 문체 규칙이 열린 문제나 미해결 진술에 '논문이나 교과서가 그렇게 명시한 경우' 의 출처를 요구하므로, 그런 진술을 받치는 각주가 Wikipedia 이면 근거가 약하다.\n\n정해야 할 것 둘. (1) 각주 출처로 Wikipedia 를 허용할 것인지. 허용하면 CLAUDE.md 에 한 줄 적고, 금지하면 24 개 문서의 각주를 바꾸는 작업이 된다. (2) 금지로 정할 때 우선순위. 열린 문제나 정리의 진술을 받치는 각주가 먼저이고, 개념의 개요를 가리키는 각주는 지우면 되는 자리가 많다.\n\n바꿀 때 쓸 출처를 하나 미리 적어 둔다. Sylow 정리의 원 논문은 L. Sylow, 'Theoremes sur les groupes de substitutions', Mathematische Annalen 5 (1872), 584-594 다. 한 문서만 바꾸면 24 개 사이에서 들쭉날쭉해지므로 전수 판정이 난 뒤에 함께 바꾸는 것이 낫다.",
+      "createdAt": "2026-10-05T01:01:29.180Z",
+      "seq": 1699
+    },
+    {
       "id": "410fd79d",
       "title": "Zilber 삼분법 갈래의 후속 간선 (15차)",
       "priority": 12,
       "note": "14차(27차 회차)에 13차가 가리킨 Cherlin-Zilber 추측 문서를 만들었다(cherlin-zilber-conjecture, 107줄). 부모는 bad-groups 와 zilber-indecomposability 둘이고 5절 부모 수 2 로 맞다. 두 리프가 해소되어 이 갈래에 리프가 남지 않았다. 담은 것: PSL_2(K) 에서 체를 복원하는 직관, 유형 네 가지(짝수형 홀수형 혼합형 퇴화형)의 표, Zilber 의 체 정리와 증명 요지, 짝수형의 Altinel-Borovik-Cherlin 정리, 위수 3(Frecon)과 위수 5(Deloro-Wiscons), 알려진 열린 문제 둘. 간선 판정은 13차 note 를 그대로 따랐다. zilber-indecomposability 와 bad-groups 사이에는 간선을 넣지 않고 같은 부모의 병렬 자식으로 두었다. 15차에 볼 것은 cherlin-zilber-conjecture 가 새 리프가 되었으므로 그 후속이다. 후보는 대수군 문서(별도 큐 항목)이고, 그것이 생기면 Zariski 차원과 Morley 위수의 대응이 간선 방향을 정한다. 다만 대수군은 cherlin-zilber-conjecture 의 선수지식 쪽이라 자식이 아니다. 자식 후보로는 퇴화형 군이나 홀수형의 분류 결과를 담는 문서가 맞다.",
       "createdAt": "2026-10-03T08:44:57.676Z",
       "seq": 1554
-    },
-    {
-      "id": "5e26ff9f",
-      "title": "분야 통독: order_theory 완료, 다음은 machine_learning",
-      "priority": 12,
-      "note": "29차 회차에 order_theory 를 끝냈다. 주 분야가 order_theory 인 문서는 아홉이다(abstract-interpretation boolean-algebras dilworth-theorem domain-theory galois-connections heyting-algebras order-lattices order-theory-overview partial-orders). 고친 것은 여덟 줄이다(커밋 a787459). galois-connections:68 '이때 짝은 명시적으로 주어진다' -> '오른쪽 짝을 다음 식으로 적는다'(피동 겸 예고문). galois-connections:84 '존재하고 다음과 같이 주어진다' -> '최소 고정점과 최대 고정점을 다음 식으로 적는다'(피동, 이어 붙인 '~이며'도 '~이고'로 끊었다). boolean-algebras:93 '무한 하강열이 만들어진다' -> '더 작은 원소를 계속 잡아 무한 하강열이 나온다'(피동). boolean-algebras:113 '... 보내면 되기 때문이다' 를 앞으로 돌려 '보낼 수 있다. 두 원소 대수만으로 충분한 점이 ...'(앞 문장을 되풀어 설명하는 '때문이다'). dilworth-theorem:7 '구하는 방법도 ... 매칭으로 주어진다' -> '최대 매칭을 구하면 최소 사슬 덮개가 나온다'(피동 겸 명사화). domain-theory:21 '... 정해지고 ... 다루어진다' -> 두 문장으로 끊고 '다룬다'(피동 겸 긴 문장). order-lattices:109 '분배가 아니다. ... 이루기 때문이다' -> '모듈러다. ... 이루므로 분배는 아니다'(되풀어 설명하는 '때문이다'). partial-orders:68 '쌍으로 가지며 ... 짝지어진다' -> 두 문장으로 끊고 '그 쌍을 이룬다'(피동 겸 '~하며' 이어 붙이기). 돌린 검사: 수식 검수 여섯, 문장형 헤딩 grep, 비유 grep, 열린 문제 절 grep, 금지 매크로, 코드블록 언어와 짝, 구형 '## 정의' 구조, 번역체와 금지 표현 39 패턴. 문장형 헤딩 0, 비유 0, 코드블록 0, 구형 구조 0, 수식 여섯 전부 0 이었다. partial-orders:68 의 '되풀이된다' 는 자동사로 굳은 쓰임이라 손대지 않았다. 다음 분야는 machine_learning 7개이고 그 다음 후보는 field_theory 7개다. philosophy_of_math 4개, foundations 2개, data_structures 2개는 개관이 다른 분야 것을 쓰므로(4.5절 매핑) 함께 볼 분야를 정해야 한다.",
-      "createdAt": "2026-10-04T00:44:25.845Z",
-      "seq": 1608
     },
     {
       "id": "2c532341",
@@ -170,6 +202,14 @@
       "note": "18차(29차 회차)에 17차가 가리킨 후보 가운데 Jones-Wenzl 멱등원을 썼다(jones-wenzl-idempotents, 93줄, 커밋 1144a8e). 부모는 temperley-lieb-algebras 하나이고 그 문서의 리프를 닫았다. 17차 메모가 걱정한 중복은 분담으로 갈랐다. TL 문서의 성질 절 '## 반단순성의 조건' 은 점화식을 반단순성 판정의 도구로 한 줄 쓰고 지나가고, 새 문서가 멱등원 자체를 다룬다. reshetikhin-turaev 는 본문에 Jones-Wenzl 을 한 번도 쓰지 않으므로 간선을 긋지 않고 활용 절 '## 모듈러 텐서범주의 단순대상' 의 본문 링크로만 두었다. 담은 것: TL_2 에서 a+b*e_1 을 놓고 e_1(a+b*e_1)=0 을 풀어 f_2=1-e_1/delta 를 직접 얻는 직관(delta=0 에서 조건이 a=0 과 a=1 로 어긋나 멱등원이 없다는 계산까지), 양자 정수, 점화식, Jones-Wenzl 의 유일성 정리와 증명 요지, 통과선 성분으로의 사영이라는 세포 구조 해석, Markov 대각합이 [n+1]_q 라는 양자 차원, Delta_n 의 Chebyshev 점화식과 분모의 근 delta=2cos(pi*j/(n+1)), 색칠된 Jones 다항식, q 가 1 의 원시 4l 제곱근일 때 n<=l-2 로 잘리는 단순대상 목록, Kauffman 뼈대 축약. 태그는 #algebra #topology #combinatorics 다. README 를 592 와 1065 로 맞췄다.\n\n이 문서를 쓰다 키릴 문자 혼입 사고가 났고 상시 메모로 남겼다(큐 aeac2190, p100). 개요 $$ 블록의 'e_i' 가 키릴 е(U+0435)였고 기존 검사 여섯 가운데 다섯이 이것을 통과시킨다.\n\n19차에 볼 것 셋. (1) jones-wenzl-idempotents 가 새 리프다. 자식 후보는 Kauffman 뼈대 대수(docs 에 없고 활용 절 셋째 항목이 이름만 쓴다)와 색칠된 Jones 다항식(knot-invariants 의 자식으로 두는 것이 더 맞을 수 있어 방향을 먼저 정해야 한다). (2) partition-algebras 는 여전히 리프다. 자식 후보는 Deligne 의 Rep(S_t) 범주이고 brauer-algebras 활용 절 '## 범주 확장' 이 Rep(O_delta) 를 적고 지나간다. (3) 양자 코호몰로지는 15차부터 네 회차 미뤘다. 모듈라이 공간 문서가 밑작업으로 먼저다. 도형 대수 갈래(brauer partition temperley-lieb cellular jones-wenzl)는 29차 회차에 다섯으로 늘었으므로 당분간 이 축보다 다른 축을 보는 것이 낫다.",
       "createdAt": "2026-10-04T00:56:44.881Z",
       "seq": 1615
+    },
+    {
+      "id": "016d4ab8",
+      "title": "분야 통독: machine_learning 완료, 다음은 field_theory",
+      "priority": 12,
+      "note": "31차 회차(2026-10-05)에 machine_learning 을 끝냈다. 주 분야가 machine_learning 인 문서는 일곱이다(diffusion-models flow-matching machine-learning-overview multi-armed-bandits policy-gradient q-learning variational-autoencoder). 고친 것은 열두 줄이다(커밋 a6f3db4).\n\ndiffusion-models:11 '적분이며, ... 두 서술임이 2020 년에 정리되었다' -> 문장을 셋으로 끊고 '두 서술이다'(등위 이어 붙임 겸 피동 겸 명사화 '~임이'). 연도는 각주 출처가 없어 함께 지웠다. diffusion-models:61 '가속 표본기들이 이 형식 위에서 만들어진다' -> '이 형식 위에서 ... 가속 표본기를 만든다'(피동). diffusion-models:69 '조절하며, 정확한 가능도가' -> 두 문장으로 끊었다. diffusion-models:107 '조작이며 텍스트 조건' -> '조작이다. 텍스트 조건 이미지 생성의 품질을 이 값이 좌우한다'. diffusion-models:117 '표본이 없기 때문이고, 여러 잡음 수준을' -> '표본이 없다. 여러 잡음 수준을 함께 써서'(앞 문장을 되풀어 설명하는 '때문'). diffusion-models:124 '인페인팅에 적용되며 사전분포' -> '인페인팅에 쓴다. 사전분포'(피동 겸 등위). flow-matching:5 '역과정을 학습하며, 샘플 하나에 수백 번의 신경망 호출이 든다' -> '역과정을 학습한다. 샘플 하나에 신경망 호출이 수백 번 든다'(등위 겸 명사화). machine-learning-overview:7 '실제 모형의 학습은 ... 이루어진다' -> '실제 모형은 ... 학습한다'(피동 겸 추상명사 주어). multi-armed-bandits:5 '경우이며, 남는 것은 ... 시험할지의 저울질이다' -> '경우다. ... 시험할지만 정하면 된다'(등위 겸 명사화 겸 서술어 없는 문장). variational-autoencoder:11 '함께 학습되며, ... 비선형으로 일반화된다' -> '함께 학습한다. ... 각각 신경망으로 바꾼다'(피동 둘 겸 등위. '일반화'는 4절 설명의 순서가 독자가 확인할 수 없는 주장으로 꼽은 말이라 함께 걷었다). variational-autoencoder:48 '사후분포도 $N$ 개인데, 모수' -> '개다. 모수'. variational-autoencoder:133 '한 봉우리에 몰리기 때문이다' -> '요구하므로 ... 한 봉우리에 몰린다'.\n\n돌린 검사: 수식 검수 여섯, 문장형 헤딩 grep, 비유 grep, 열린 문제 절 grep, 금지 매크로, 코드블록 언어와 짝, 구형 '## 정의' 구조, 번역체와 금지 표현 40 여 패턴, 키릴·그리스 혼입(b0693241 의 좁힌 목록), 두문자어 첫 등장. 문장형 헤딩 0, 비유 0, 코드블록 0, 구형 구조 0, 키릴 0, 수식 여섯 전부 0 이었다. 두문자어는 일곱 문서 전부 적법하다. mermaid 노드 이름(MLO GD CVX DER ENT ITO SINK UOT DM FM KPCA PPCA)과 수식 안 기호(\\mathrm{FM} \\mathrm{CFM} \\sqrt{KT\\log T} \\sqrt{TK\\log K} \\mathrm{KL})는 규칙대로 세지 않았고, ODE 는 헤딩에 먼저 나오지만 본문 첫 등장에서 풀었다. q-learning 과 policy-gradient 는 고칠 줄이 없었다.\n\n다음 분야는 field_theory 7개다. 그 다음 후보는 philosophy_of_math 4개, foundations 2개, data_structures 2개인데 개관이 다른 분야 것을 쓰므로(4.5절 매핑) 함께 볼 분야를 정해야 한다.",
+      "createdAt": "2026-10-05T00:42:55.759Z",
+      "seq": 1689
     },
     {
       "id": "6fc1515a",
@@ -324,14 +364,6 @@
       "seq": 1642
     },
     {
-      "id": "d57ba8ff",
-      "title": "schwartz-distributions 의 후속 간선",
-      "priority": 11,
-      "note": "schwartz-distributions 를 sobolev-spaces 와 dual-space 의 자식으로 달고 리프로 남겼다. 자식 후보: (1) 기본해와 Green 함수 - 저장소에 없다. 활용 절 첫 항목이 -Delta E = delta 를 쓰면서 링크할 문서가 없다. (2) 합성곱과 근사항등원 - 없다. (3) 타원형 정칙성 - 없다. (4) 연속 Fourier 변환(큐 f090f333) 이 생기면 완만 분포 절에서 본문 링크로 걸고, 간선은 Fourier 변환 쪽이 부모가 되는 방향으로 판단한다. (5) poisson-summation 과 measure 는 이미 다른 축에 있어 활용 절 본문 링크로만 두었다.",
-      "createdAt": "2026-10-04T08:58:23.655Z",
-      "seq": 1645
-    },
-    {
       "id": "8b50e977",
       "title": "greens-function 의 후속 간선",
       "priority": 11,
@@ -346,14 +378,6 @@
       "note": "30차 회차에 fubini-tonelli 를 썼고(86줄, 커밋 10bc62a) 자식 없이 리프로 두었다. fourier-transform 을 자식으로 두지 않은 이유는 5절 '부모를 빼도 자식의 개요가 그대로 읽히는가' 에 걸리기 때문이다. Fourier 변환 문서의 개요와 직관에 Fubini 가 나오지 않고 증명 도구로만 세 번 쓰이므로 본문 링크로 두었다. 자식 후보는 곱측도 자체를 다루는 문서(product-measure, 지금 없다. 30차에는 fubini-tonelli 의 정의 절에 곱측도 구성을 넣어 분담했다), Minkowski 적분 부등식, 층 분해를 쓰는 분포함수 적분 표현이다. 곱측도 문서를 따로 세우면 fubini-tonelli 의 정의 절 '## 곱측도' 와 중복되므로 분담을 먼저 정해야 한다.",
       "createdAt": "2026-10-04T12:49:41.845Z",
       "seq": 1653
-    },
-    {
-      "id": "ef1802ea",
-      "title": "lebesgue-integral 더 알아보기 묶음 이름 재검토",
-      "priority": 11,
-      "note": "30차에 fubini-tonelli 를 더해 자식이 6개가 되어 5절 묶음 규칙대로 H3 세 개로 나눴다. '### 수렴과 교환'(monotone-convergence, fubini-tonelli), '### 함수공간'(lp-spaces, bounded-variation), '### 측도와 확률'(radon-nikodym, random-variables) 이다. 묶음마다 둘뿐이어서 나눈 효과가 작고, 자식이 더 늘면 묶음 경계가 달라질 수 있다. dominated-convergence 가 monotone-convergence 의 자식이라 이 목록에는 없는데, 수렴정리를 한 묶음으로 모으는 편이 나은지도 같이 본다.",
-      "createdAt": "2026-10-04T12:49:41.971Z",
-      "seq": 1654
     },
     {
       "id": "b429b4f7",
@@ -476,6 +500,22 @@
       "seq": 1688
     },
     {
+      "id": "61108eac",
+      "title": "elliptic-regularity 의 후속 간선",
+      "priority": 11,
+      "note": "31차 회차(2026-10-05)에 elliptic-regularity(타원형 정칙성, 94줄, 커밋 a45ee39)를 썼다. 부모는 lax-milgram 과 schwartz-distributions 둘이고 lax-milgram 의 리프를 닫았다. 큐 항목 d57ba8ff(schwartz-distributions 의 후속 간선)가 적은 후보 (3) '타원형 정칙성' 이 이것이고, 같은 항목의 후보 (1) '기본해와 Green 함수' 는 그 사이에 greens-function 이 생겨 이미 해소됐다.\n\n태그 첫 자리는 #functional_analysis 로 했다. 내용은 편미분방정식 쪽이지만 이 축(lp-spaces sobolev-spaces lax-milgram schwartz-distributions)이 전부 functional_analysis 를 주 분야로 하고 functional-analysis-overview 가 거두므로 거기에 맞췄다. 개관 갈래는 lax-milgram 다음 줄에 넣었다.\n\n담은 것: 상수계수에서 Fourier 변환으로 u-hat=f-hat/|xi|^2 를 적어 두 계단이 올라가는 것을 보이고 계수가 변하면 그 계산이 막히는 직관, 균등 타원 발산형 연산자와 약해의 정의, 내부 정칙성과 차분몫 시험함수 v=-D^{-h}(chi^2 D^h u) 증명 요지, 경계까지의 정칙성과 추정식, Weyl 보조정리, De Giorgi-Nash-Moser 정리와 Hilbert 열아홉째 문제, 활용 넷(고전해, 고유함수의 매끄러움, 비선형 문제, L^p 와 Hoelder 판).\n\n32차에 볼 것 둘. (1) elliptic-regularity 가 새 리프다. 자식 후보는 Calderon-Zygmund 이론(활용 넷째 항목이 이름만 쓴다. 저장소에 없고 singular-integral 류 문서도 없다)과 Schauder 추정이다. 둘을 한 문서로 담을지 가를지 먼저 정해야 한다. (2) 작성 중 '## 계수가 매끄럽지 않을 때' 를 헤딩으로 썼다가 4절 문체 grep 에 문장형으로 걸려 '## De Giorgi-Nash-Moser 정리' 로 고쳤다. 새 문서를 쓸 때 조건절 꼴 헤딩을 피하고 정리 이름을 쓰는 것이 낫다.",
+      "createdAt": "2026-10-05T00:53:01.802Z",
+      "seq": 1692
+    },
+    {
+      "id": "bb025acf",
+      "title": "schwartz-distributions 의 남은 후속 간선",
+      "priority": 11,
+      "note": "schwartz-distributions 를 sobolev-spaces 와 dual-space 의 자식으로 달고 리프로 남긴 것이 처음이다. 31차 회차(2026-10-05)에 후보 목록을 현재 상태로 갱신했다.\n\n해소된 후보 둘. (1) '기본해와 Green 함수' 는 그 사이에 greens-function 이 생겨 자식으로 달렸다. (3) '타원형 정칙성' 은 31차에 elliptic-regularity 로 썼고 lax-milgram 과 함께 부모 둘로 달았다(커밋 a45ee39).\n\n남은 후보. (2) 합성곱과 근사항등원 - 저장소에 없다. 완만 분포 절이 합성곱을 쓰면서 링크할 문서가 없다. (4) 연속 Fourier 변환(큐 f090f333)은 fourier-transform 이 이미 부모로 달려 있으므로 그 항목이 가리키는 것이 무엇인지 먼저 확인해야 한다. (5) poisson-summation 과 measure 는 다른 축에 있어 활용 절 본문 링크로만 두었고 이 판정은 그대로다.\n\n자식이 둘이 되었으므로(greens-function, elliptic-regularity) 5절 묶음 규칙의 6개에는 아직 멀고 정렬만 맞추면 된다. 둘 사이에 조상관계가 없어 현재 순서로 order-check 가 통과한다.",
+      "createdAt": "2026-10-05T00:55:10.816Z",
+      "seq": 1695
+    },
+    {
       "id": "14a84d4d",
       "title": "타입 이론과 일가성 공리(HoTT)",
       "priority": 10,
@@ -578,14 +618,6 @@
       "note": "2026-09-20 회차에 새로 썼다(147줄, 부모 lipschitz-maps 와 bounded-variation, 해석학 개관 '극한과 연속' 갈래). 리프다. 후속 후보 넷. (1) 면적공식과 여면적공식, 그리고 rectifiable 집합을 다루는 기하측도론 문서. 활용 절이 이름만 쓰고 링크를 걸지 못했다. (2) Sobolev 공간. W^{1,infty} 와 Lipschitz 의 동일시가 활용 절 첫 항목인데 문서가 없다. (3) Clarke 준미분과 비평활 최적화. optimization 개관 아래 자리다. (4) Kirchheim 과 Cheeger 의 거리공간 판본. 넷 다 새 문서 후보이고 이 순서가 선수관계 순이다. 무한차원 실패 절은 Lindenstrauss-Preiss-Tiser 를 각주로 달았다",
       "createdAt": "2026-09-20T04:45:49.814Z",
       "seq": 701
-    },
-    {
-      "id": "0777fea1",
-      "title": "닫는 달러 뒤 공백 회귀 점검",
-      "priority": 10,
-      "note": "2026-09-20 회차에 판정하고 고쳤다. 이전 노트의 31 건은 다른 회차들이 대부분 정리해 5 건만 남았고, 문장부호 예외를 두는 대신 문장을 다듬어 전부 규칙을 지키게 했다. 넷을 고쳤다. weierstrass-factorization:56 은 목록 항목 한가운데에 $$ 블록이 들어가 있어 인라인으로 바꿨다(이전 노트가 고쳤다고 적은 자리인데 남아 있었다). dilworth-theorem:62 는 각주의 영문 논문 제목 'Sperner $k$-families' 라 공백을 넣으면 제목이 바뀌므로 수식을 빼고 'k-families' 로 썼다. forcing:33 은 목록 항목이 '$q \\in G$.' 로 끝나 '$q \\in G$ 다.' 로, fundamental-lemma:15 는 '군 $H$, 곧 내시군' 을 '군, 곧 내시군(endoscopic group) $H$ 의' 로 어순을 바꿨다. 판정의 근거는 4절 문구가 예외를 두지 않는다는 것과, 공백을 억지로 넣어 '$G$ .' 를 만드는 대신 문장을 고치면 규칙과 한국어 조판이 함께 지켜진다는 것이다. 검사기는 스크래치패드 spacecheck.mjs 이고 코드펜스, $$ 블록, 인라인 코드, 표 줄, 한 줄 $$ 블록을 건너뛴다. 현재 위반 0 건이다",
-      "createdAt": "2026-09-20T04:47:16.946Z",
-      "seq": 703
     },
     {
       "id": "c162c9e2",
@@ -914,14 +946,6 @@
       "note": "policy-gradient 활용 넷째 항목. 대리 목적의 하한, KL 제약과 잘라내기, 단조 개선 보장. 부모는 policy-gradient. #machine_learning #optimization",
       "createdAt": "2026-09-23T20:45:55.723Z",
       "seq": 1038
-    },
-    {
-      "id": "ce6949d3",
-      "title": "행위자-비평자와 시간차 학습",
-      "priority": 10,
-      "note": "policy-gradient 활용 셋째 항목과 q-learning 갱신식이 만나는 자리. 비평자의 TD(0) 갱신, 적격 흔적, 편의와 분산의 맞바꿈. 부모는 policy-gradient 와 q-learning. #machine_learning",
-      "createdAt": "2026-09-23T20:45:55.890Z",
-      "seq": 1039
     },
     {
       "id": "503d2fe5",
@@ -1548,14 +1572,6 @@
       "seq": 1630
     },
     {
-      "id": "8820cfd7",
-      "title": "수식 다섯 경로 전수 점검 회귀 (5차)",
-      "priority": 10,
-      "note": "2026-10-04 회차에 4차를 했고 위반 0 이다. 돌린 검사 여덟: (1) 4절 awk 이스케이프 0 건, (2) 줄 끝 백슬래시 0 건, (3) 링크로 읽히는 대괄호 0 건, (4) 태그로 읽히는 부등호 0 건(grep -rn '<[a-zA-Z]' 는 mermaid 의 <br 만 잡으므로 걸러야 한다), (5) 비이스케이프 밑줄 5 건 전부 각주 URL 오탐(finite-fields:131, unique-factorization-domains:89. 큐 b452028c 가 같은 것을 기록했다), (6) 코드블록 언어 0 건, (7) render-check 전수 통과, (8) 키릴·그리스 혼입 1 건이고 transcendental-numbers:98 의 러시아어 학술지명이라 정상(큐 aeac2190)",
-      "createdAt": "2026-10-04T05:01:42.775Z",
-      "seq": 1631
-    },
-    {
       "id": "7b62e857",
       "title": "분포(distributions) 문서 신설",
       "priority": 10,
@@ -1714,6 +1730,30 @@
       "note": "미분기하. 부모 후보는 manifolds 와 vector-bundles. 접공간의 구성 세 가지(곡선류, 도함수, 좌표), 접다발의 매끄러운 구조, 여접다발. vector-fields 가 TM 을 정의 없이 쓴다.",
       "createdAt": "2026-10-04T21:01:05.306Z",
       "seq": 1683
+    },
+    {
+      "id": "d3542cdb",
+      "title": "행위자-비평자의 후속 간선",
+      "priority": 10,
+      "note": "31차 회차(2026-10-05)에 행위자-비평자를 썼다(actor-critic, 122줄, 커밋 99cb80b). 부모는 policy-gradient 와 q-learning 둘이고 두 문서의 리프를 함께 닫았다. 제목은 큐 항목이 적은 '행위자-비평자와 시간차 학습' 대신 '행위자–비평자' 하나로 좁혔다(4절 제목 규칙의 'A와 B' 금지). 시간차 학습은 별도 문서로 세우지 않고 비평자 갱신으로 안에 담았다.\n\n담은 것: 1000 단계 경로의 REINFORCE 가 경로가 끝나야 G_t 를 얻고 보상 900 개의 변동이 계수에 섞이는 직관, 시간차 오차의 정의와 행위자·비평자 두 갱신식, 일반화 이점 추정과 적격 흔적의 lambda 보간, E[delta|s,a]=A^pi 와 증명 요지, 호환 함수 근사 정리(Sutton 1999)와 일차 조건 증명, 두 시간 눈금 수렴(Konda-Tsitsiklis, Borkar)과 눈금 분리 논거, 편의와 분산의 맞바꿈, 활용 넷(연속 제어, TRPO/PPO 의 보폭 제한, A3C 의 병렬 수집, 비평자가 Q 를 추정하는 변형).\n\n간선 판정. reinforcement 축의 세 문서가 이제 markov-decision-process -> {q-learning, policy-gradient} -> actor-critic 으로 모인다. multi-armed-bandits 와는 간선을 넣지 않았다. 밴딧은 상태가 하나뿐인 경우라 행위자-비평자의 선수지식도 후속도 아니고, q-learning 활용 절의 본문 링크로 충분하다.\n\n32차에 볼 것 둘. (1) actor-critic 이 새 리프다. 자식 후보는 보폭을 KL 로 제한하는 신뢰영역 정책 최적화이고, 활용 둘째 항목이 TRPO 와 PPO 를 이름만 쓴다. kl-divergence 가 이미 있으므로 부모는 actor-critic 과 kl-divergence 둘이 된다. (2) 비평자가 Q 를 추정하는 결정적 정책 기울기 갈래(활용 넷째 항목)는 q-learning 의 함수 근사 항목과도 닿아 어느 쪽 자식인지 먼저 정해야 한다.",
+      "createdAt": "2026-10-05T00:48:43.116Z",
+      "seq": 1691
+    },
+    {
+      "id": "1084d8a5",
+      "title": "닫는 달러 뒤 공백 회귀 점검",
+      "priority": 10,
+      "note": "2026-09-20 회차에 판정하고 고쳤다(이전 note 요지). 31 건이 5 건으로 줄고 문장부호 예외를 두는 대신 문장을 다듬어 넷을 고쳤다. weierstrass-factorization:56, dilworth-theorem:62, forcing:33, fundamental-lemma:15 가 그 자리다.\n\n31차 회차(2026-10-05)에 전수로 다시 돌렸고 위반 0 건이다. 검사기는 스크래치패드 spacecheck.mjs 이고 코드펜스, 단독 $$ 블록, 인라인 코드, 표 줄, 한 줄 $$ 블록을 건너뛴다. docs 620 개와 README 를 함께 본다.\n\n이번에 기준 하나를 분명히 했다. 닫는 달러 뒤 문자를 '공백이 아닌 것 전부' 로 보면 보고가 수백 건이고, 모두 $x$ 뒤의 쉼표·마침표와 $G$-역설적, $S$-단위, $F_2$-역설적 처럼 하이픈으로 용어를 잇는 자리다. 뒤 문자가 한글이나 영숫자인 것으로 좁히면 0 건이다. 이전 회차의 '0 건' 도 이 좁은 기준이었다고 보아야 앞뒤가 맞는다. 4절 문구는 예외를 적지 않지만, 하이픈 용어는 공백을 넣으면 용어가 끊기고 쉼표 앞에 공백을 넣으면 한국어 조판이 깨지므로 좁은 기준이 실제 규칙이다. 넓은 기준으로 수백 곳을 고치는 것이 맞는지는 독자 판단이 필요하다.\n\n다음 회차에는 좁힌 기준으로 돌리고, 넓은 기준은 판정이 날 때까지 보고만 세어 둔다.",
+      "createdAt": "2026-10-05T00:55:10.291Z",
+      "seq": 1693
+    },
+    {
+      "id": "1a814232",
+      "title": "수식 다섯 경로 전수 점검 회귀 (6차)",
+      "priority": 10,
+      "note": "31차 회차(2026-10-05)에 5차 회귀를 돌렸다. docs 620 개와 README 를 함께 보았고 실제 위반 0 건이다.\n\n경로별 결과. (A) 이스케이프 해제(awk, 수식 줄의 백슬래시+ASCII 문장부호) 0 건. (B) 태그로 읽히는 부등호 grep -n '<[a-zA-Z]' 0 건. (C) 링크로 읽히는 대괄호 1 건인데 README:11 의 [CLAUDE.md](CLAUDE.md) 이고, 필터의 .md 패턴이 [a-z0-9-]* 라 대문자 파일명을 걸러내지 못한 오탐이다. (D) 줄 끝 백슬래시 0 건. (E) 이스케이프 안 된 밑줄 5 건인데 전부 각주 URL 안이라 오탐이다. finite-fields:131 의 libretexts URL(Abstract_and_Geometric_Algebra 등) 셋과 unique-factorization-domains:89 의 numdam URL(PMIHES_1966__30__5_0) 둘이고, 큐 b452028c 가 적은 그 오탐과 같은 성격이다. render-check 는 전수 통과다.\n\n이번 회차에 알아낸 것 하나를 함께 적는다. 이 환경은 LANG 이 비어 있어 grep 이 C 로케일로 돈다. 한글이 든 대괄호 문자 클래스(4절 제목 규칙의 [와과], 문체 헤딩 규칙의 [^로]지, 비유 규칙의 사다리[^꼴]·무기[^억]·마법[^ 상])는 이때 바이트 집합으로 읽혀 오탐이나 누락이 난다. 'A와 B' 제목 grep 이 560 여 개를 보고한 것이 그 예다. 수식 다섯 경로의 패턴은 ASCII 문자 클래스뿐이라 로케일에 영향받지 않지만, 회귀를 돌릴 때 한글 패턴이 섞인 검사는 LC_ALL=C.UTF-8 을 붙인다. 자세한 것은 큐의 'A와 B 제목 전수 판정과 4절 grep 의 로케일 오탐' 항목에 적었다.\n\n다음 차수에는 (C)의 필터에 대문자 파일명을 더해 돌리면 오탐 1 건이 사라진다.",
+      "createdAt": "2026-10-05T01:00:55.682Z",
+      "seq": 1698
     },
     {
       "id": "dfb3e493",
