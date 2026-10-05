@@ -70,7 +70,7 @@ $$
 \vert\lbrace x:\vert Tf(x)\vert\gt \lambda\rbrace\vert\le\frac{C}{\lambda}\Vert f\Vert\_{L^1}
 $$
 
-증명의 요지. 약한 추정을 보이고 $L^2$ 유계성과 Marcinkiewicz 보간 정리로 $1\lt p\lt 2$ 를 얻는다. $2\lt p\lt\infty$ 는 핵 $K^\ast(z)=\overline{K(-z)}$ 를 가진 쌍대 작용소가 같은 두 조건을 만족하므로 $L^{p'}$ 결과의 쌍대로 나온다. 약한 추정은 $\lambda$ 에서 분해를 잡아 $f=g+b$ 로 가르는 데서 나온다. 좋은 부분 $g$ 는 $\Omega$ 밖에서 $f$ 와 같고 각 $Q_j$ 에서 평균값을 갖는 함수이고, 나쁜 부분 $b=\sum_j b_j$ 는 각 $Q_j$ 에 받침을 갖고 적분이 $0$ 인 조각들의 합이다. $g$ 는 $\vert g\vert\le 2^n\lambda$ 와 $\Vert g\Vert\_{L^1}\le\Vert f\Vert\_{L^1}$ 에서 $\Vert g\Vert\_{L^2}^2\le 2^n\lambda\Vert f\Vert\_{L^1}$ 이므로 $L^2$ 유계성이 $g$ 쪽 추정을 준다. $b_j$ 는 적분이 $0$ 이므로 $Q_j$ 의 중심 $y_j$ 를 써서 $Tb_j(x)=\int(K(x-y)-K(x-y_j))b_j(y)\thinspace dy$ 로 적을 수 있고, $2Q_j$ 밖에서 이 적분을 Hörmander 조건으로 받치면 $\Vert Tb\Vert\_{L^1(\mathbb R^n\setminus 2\Omega)}\le A\Vert f\Vert\_{L^1}$ 이다. $2\Omega$ 자체의 부피는 $\vert\Omega\vert$ 의 상계로 처리한다.
+증명의 요지. 약한 추정을 보이고 $L^2$ 유계성과 [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md)로 $1\lt p\lt 2$ 를 얻는다. $2\lt p\lt\infty$ 는 핵 $K^\ast(z)=\overline{K(-z)}$ 를 가진 쌍대 작용소가 같은 두 조건을 만족하므로 $L^{p'}$ 결과의 쌍대로 나온다. 약한 추정은 $\lambda$ 에서 분해를 잡아 $f=g+b$ 로 가르는 데서 나온다. 좋은 부분 $g$ 는 $\Omega$ 밖에서 $f$ 와 같고 각 $Q_j$ 에서 평균값을 갖는 함수이고, 나쁜 부분 $b=\sum_j b_j$ 는 각 $Q_j$ 에 받침을 갖고 적분이 $0$ 인 조각들의 합이다. $g$ 는 $\vert g\vert\le 2^n\lambda$ 와 $\Vert g\Vert\_{L^1}\le\Vert f\Vert\_{L^1}$ 에서 $\Vert g\Vert\_{L^2}^2\le 2^n\lambda\Vert f\Vert\_{L^1}$ 이므로 $L^2$ 유계성이 $g$ 쪽 추정을 준다. $b_j$ 는 적분이 $0$ 이므로 $Q_j$ 의 중심 $y_j$ 를 써서 $Tb_j(x)=\int(K(x-y)-K(x-y_j))b_j(y)\thinspace dy$ 로 적을 수 있고, $2Q_j$ 밖에서 이 적분을 Hörmander 조건으로 받치면 $\Vert Tb\Vert\_{L^1(\mathbb R^n\setminus 2\Omega)}\le A\Vert f\Vert\_{L^1}$ 이다. $2\Omega$ 자체의 부피는 $\vert\Omega\vert$ 의 상계로 처리한다.
 
 ## Hilbert 변환과 Riesz 변환
 
@@ -113,6 +113,7 @@ $L^\infty\subset\mathrm{BMO}$ 이고 $\ln\vert x\vert$ 가 BMO 에 들어 포함
 
 ## 선수지식
 
+- [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md)
 - [Fourier 변환](fourier-transform.md)
 
 ## 더 알아보기
