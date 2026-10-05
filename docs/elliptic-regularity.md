@@ -71,7 +71,7 @@ $\Omega$ 에서 $\Delta u=0$ 을 만족하는 [분포](schwartz-distributions.md
 - **Dirichlet 문제의 고전해.** 약형식으로 얻은 해가 $C^2$ 에 들면 방정식을 각 점에서 만족한다. 내부 정칙성과 Sobolev 매입을 이어 쓰면 $f$ 가 매끄러운 자리에서 해가 고전해가 된다.
 - **고유함수.** $-\Delta\varphi=\mu\varphi$ 의 약해에 정칙성을 되풀이 적용하면 오른쪽이 $\varphi$ 자신이라 계단이 계속 올라가 $\varphi\in C^\infty$ 가 된다. Laplace 고유값 문제의 고유함수가 매끄럽다는 근거다.
 - **비선형 문제의 열기.** 변분법으로 얻은 최소점이 약한 의미의 방정식을 만족할 때, 선형화한 연산자의 정칙성이 최소점의 매끄러움을 끌어올린다. 최소곡면과 조화사상의 정칙성 이론이 이 방식을 쓴다.
-- **$L^p$ 판과 Hölder 판.** $f\in L^p$ 에서 $u\in W^{2,p}$ 를 주는 추정은 [Calderón–Zygmund 이론](calderon-zygmund-theory.md)에서 나오고, $f\in C^{0,\alpha}$ 에서 $u\in C^{2,\alpha}$ 를 주는 추정이 Schauder 추정이다. 둘 다 $H^k$ 판과 같은 두 계단 구조를 갖는다.
+- **$L^p$ 판과 Hölder 판.** $f\in L^p$ 에서 $u\in W^{2,p}$ 를 주는 추정은 [Calderón–Zygmund 이론](calderon-zygmund-theory.md)에서 나오고, [Hölder 공간](holder-spaces.md)의 $f\in C^{0,\alpha}$ 에서 $u\in C^{2,\alpha}$ 를 주는 추정이 Schauder 추정이다. 둘 다 $H^k$ 판과 같은 두 계단 구조를 갖는다.
 
 [^1]: L. Nirenberg, "Remarks on strongly elliptic partial differential equations", Communications on Pure and Applied Mathematics **8** (1955), 648–674. 차분몫으로 내부 정칙성을 얻는 방법을 준다.
 

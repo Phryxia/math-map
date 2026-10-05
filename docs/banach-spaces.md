@@ -129,10 +129,19 @@ Banach 공간에는 직교성, 사영 정리, 쌍대공간과 자기 자신의 �
 
 ## 더 알아보기
 
+### 공간의 예
+
 - [$L^p$ 공간](lp-spaces.md)
+- [Hölder 공간](holder-spaces.md)
+
+### 쌍대성과 구조 정리
+
 - [Banach–Alaoglu 정리](banach-alaoglu.md)
+- [열린 사상 정리](open-mapping-theorem.md)
+
+### 콤팩트성과 고정점
+
 - [Arzelà–Ascoli 정리](arzela-ascoli.md)
 - [Schauder 고정점 정리](schauder-fixed-point.md)
-- [열린 사상 정리](open-mapping-theorem.md)
 
 #functional_analysis #analysis #topology
