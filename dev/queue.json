@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-05T21:07:18.792Z",
-  "nextSeq": 1744,
+  "savedAt": "2026-10-05T21:08:48.293Z",
+  "nextSeq": 1745,
   "items": [
     {
       "id": "0490c28e",
@@ -34,6 +34,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차에 union-find:89 의 정렬 비용이 $O(m log m)$ 으로 적혀 있었다. log 가 \\log 가 아니어서 MathJax 는 이것을 변수 l, o, g 의 곱으로 읽고 기울여 그린다. 식이 깨지지 않으므로 4절의 검사 여섯과 render-check, validate 가 전부 통과한다.\n\n검사법. 수식 구간만 뽑아 중괄호 명령의 인자(\\mathrm{tr} 의 tr 처럼 정상인 것)를 지운 뒤, 백슬래시가 앞에 없는 글자 연산자를 찾는다. 스크래치패드에 node 로 만든다(dev/ 는 고치지 않는다, 0절). 인라인은 $...$ 안, 블록은 $$ 줄 사이를 모아 보고 코드블록은 건너뛴다. 중괄호 인자 제거는 s.replace(/\\\\[a-zA-Z]+\\s*\\{[^{}]*\\}/g, ' ') 로 하고, 패턴은 (^|[^a-zA-Z\\\\{])(log|sin|cos|tan|exp|max|min|lim|det|dim|ker|sup|inf|gcd|lcm|deg|arg|tr|rank)(?![a-zA-Z}]) 다. 인자 제거를 빼면 \\mathrm{tr} 꼴이 160 건 오검출로 나온다.\n\n34차에 docs 전체 633 개 문서로 돌려 0 건을 확인했다(union-find 를 고친 뒤). 즉 이 사고는 저장소에 하나뿐이었다. 수식을 새로 쓰거나 고친 회차에는 그 문서들만이라도 이 검사를 돌린다.",
       "createdAt": "2026-10-05T21:06:54.050Z",
       "seq": 1743
+    },
+    {
+      "id": "b0b23afc",
+      "title": "큐 서버가 작업 디렉터리 밖에서 기동되어 stop 이 커밋하지 못하는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차 시작에서 세션 시작 pull 이 divergent 로 실패해(큐의 shallow clone 메모) 원격 브랜치를 스크래치패드에 따로 클론하고 거기서 1절 명령을 돌렸다. 그때 node dev/queue.mjs list 가 큐 서버를 그 클론 경로로 기동했다. 뒤에 --unshallow 로 원래 작업 트리를 정상화하고 그 클론을 지웠지만, 서버는 포트 7777 에 그대로 살아 있었다. 그래서 회차 내내 /home/user/math-map 에서 돌린 push 와 remove 가 전부 그 서버로 갔고, 종료 단계의 queue.mjs stop 이 'stopped. saved=true committed=false (git 저장소가 아니다)' 를 냈다. dev/queue.json 은 세션 시작 상태 그대로였고 git status 는 깨끗했다. 메모 넷과 통독 항목 교체가 커밋되지 않을 뻔했다.\n\n복구. 서버는 저장할 때 지운 디렉터리를 다시 만들었으므로 파일이 남아 있었다. find /tmp -name queue.json -newermt '<회차 시작 시각>' 로 찾아 스크래치패드 클론 경로의 queue.json 을 작업 트리의 dev/queue.json 으로 복사하고, JSON 유효성과 항목 수와 이 회차 메모의 존재를 확인한 뒤 'queue: N items (날짜)' 로 따로 커밋했다.\n\n규칙. 큐 서버는 작업 트리에서만 기동한다. 세션 시작 pull 이 실패하면 저장소를 다른 곳에 클론하지 말고 --unshallow 와 rev-list 로 정상화한다(shallow clone 메모). 어떤 이유로 작업 트리 밖에서 queue.mjs 를 한 번이라도 돌렸으면, 이어서 작업 트리에서 node dev/queue.mjs status 로 서버가 어디 것인지 확인하고 stop 으로 끊은 뒤 다시 기동한다. 종료 단계에서는 stop 의 출력에 committed=true 가 있는지 반드시 읽는다. committed=false 면 git log 로 'queue:' 커밋이 생겼는지 보고, 없으면 위 복구를 한다.",
+      "createdAt": "2026-10-05T21:08:48.126Z",
+      "seq": 1744
     },
     {
       "id": "08e59419",
