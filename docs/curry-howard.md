@@ -104,6 +104,6 @@ $I=S(K)(K(K))$ 는 $A \to A$ 가 두 공리에서 유도된다는 것을 항으�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [호모토피 타입 이론](homotopy-type-theory.md)
 
 #logic #computation
