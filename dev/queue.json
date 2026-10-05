@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-05T01:01:34.417Z",
-  "nextSeq": 1700,
+  "savedAt": "2026-10-05T05:15:48.833Z",
+  "nextSeq": 1703,
   "items": [
     {
       "id": "b0693241",
@@ -516,6 +516,14 @@
       "seq": 1695
     },
     {
+      "id": "6f04c68a",
+      "title": "쌍 상관 추측의 후속 간선과 저수준 통계",
+      "priority": 11,
+      "note": "31차 회차에 pair-correlation-conjecture(쌍 상관 추측, 102줄)를 riemann-hypothesis 와 determinantal-point-process 의 자식으로 새로 달고 리프로 남겼다. 큐 c414ed09(무작위 행렬과 L 함수 신설)의 처리 결과다. 제목을 '무작위 행렬과 L 함수' 로 두지 않은 이유는 4절 제목 규칙의 'A와 B' 금지다. 담은 것: Riemann-von Mangoldt 공식으로 평균 간격 2pi/ln(T/2pi) 를 구하고 가까운 쌍의 빈도는 그 공식으로 나오지 않음을 보인 직관, 정규화 영점과 쌍 상관 추측의 적분 진술, Montgomery 함수 F(alpha,T) 와 min(|alpha|,1) 동치, Montgomery 정리와 명시 공식을 통한 증명 요지(대각항 Mertens, 비대각항 Montgomery-Vaughan, |alpha|>=1 에서 Hardy-Littlewood 추측), 단순 영점 2/3 하한, 간격 하극한 0.68, 쌍 상관이 세 고전군에서 같다는 것, 활용 넷(Keating-Snaith 모멘트, Katz-Sarnak, Dirichlet L 함수 비소멸, 무작위 행렬 결과의 근거). 태그는 #number_theory #probability #complex_analysis. 자식 후보: (1) 저수준 통계(low-lying zeros)와 Katz-Sarnak 대칭형 - 저장소에 없다. 성질 절 '대칭형에 둔감한 통계' 와 활용 둘째가 이름만 쓴다. 부모는 pair-correlation-conjecture 와 유한체 위 곡선 쪽 문서다. (2) Keating-Snaith 모멘트 추측 - 없다. CUE 특성다항식 모멘트와 Barnes G 함수가 내용이고 haar-measure 가 공동 부모 후보다. (3) 쌍둥이 소수에 대한 Hardy-Littlewood 추측 - twin-primes 문서가 없어 성질 절에서 링크 없이 이름만 썼다. prime-gaps 가 부모 후보다. (4) wigner-semicircle 과 tracy-widom 은 부모로 두지 않았다. 쌍 상관에 필요한 것은 전역 밀도나 최대 고윳값이 아니라 sine 핵이므로 determinantal-point-process 하나로 충분하고, 5절의 부모 3개 이하 기준에도 맞다. wigner-semicircle 은 활용 절 본문 링크로 두었다. c414ed09 가 남긴 다른 자식 후보 둘(Mertens 추측, Weil 명시 공식)은 아직 문서가 없다.",
+      "createdAt": "2026-10-05T05:13:39.442Z",
+      "seq": 1700
+    },
+    {
       "id": "14a84d4d",
       "title": "타입 이론과 일가성 공리(HoTT)",
       "priority": 10,
@@ -596,14 +604,6 @@
       "seq": 680
     },
     {
-      "id": "3f7ce72e",
-      "title": "dual-space 와 exterior-algebra 의 Grassmann 후속",
-      "priority": 10,
-      "note": "2026-09-20 회차에 exterior-algebra 에 Plücker 관계 절을 넣었다. n=4, k=2 의 Klein 이차곡면 p12p34-p13p24+p14p23=0 과 분해가능성이 omega wedge omega = 0 과 동치라는 것까지 적었고, Grassmann 다양체는 문서가 없어 본문에서 이름 없이 '부분공간 전체' 로만 가리켰다. grassmannian 문서를 쓰면 exterior-algebra 의 자식 자리이고 사영공간 문서도 없다(ls docs | grep -i projective 가 비어 있다). 분야는 선형대수와 대수기하. 내용 후보: Plücker 매장, Schubert 세포 분해, Grassmann 다양체의 차원 k(n-k), 일반 Plücker 관계의 첨자 형태",
-      "createdAt": "2026-09-20T00:45:22.101Z",
-      "seq": 686
-    },
-    {
       "id": "8503e2d7",
       "title": "본문 링크 라벨 회귀 점검 (다음 차수)",
       "priority": 10,
@@ -626,14 +626,6 @@
       "note": "2026-09-20 회차에 새로 썼다(119줄, 부모 limits 와 lowenheim-skolem, foundations 개관 '논리' 갈래). 리프다. lowenheim-skolem 의 '비표준 해석학' 절 두 문장은 요약으로 줄이고 링크를 걸었다. limits 의 자식이 6 개가 되어 5절대로 '수렴을 다루는 틀' 과 '급수와 응용' 두 묶음으로 나눴다. 후속 후보 셋. (1) 초곱과 Los 정리. lowenheim-skolem:45 가 ultraproduct 구성을 언급만 하고 문서가 없다. 부모는 first-order-logic 과 boolean-algebras 이고 nonstandard-analysis 의 형제 자리다. (2) Loeb 측도. 활용 절에서 이름만 썼고 부모는 nonstandard-analysis 와 측도론 쪽이다. (3) 모형론(기본 부분구조, 범주성, Morley 정리, 안정성 이론). lowenheim-skolem 노트가 남긴 항목이고 이 문서보다 lowenheim-skolem 의 직계 자식 자리에 가깝다. 보수성 절은 Robinson 원저를, 교재 항목은 Keisler 를 각주로 달았다",
       "createdAt": "2026-09-20T04:51:15.726Z",
       "seq": 706
-    },
-    {
-      "id": "c414ed09",
-      "title": "무작위 행렬과 L 함수 문서 신설",
-      "priority": 10,
-      "note": "분야는 number_theory/probability, 부모는 riemann-hypothesis. 2026-09-20 회차에 riemann-hypothesis 의 중복 절 정리를 끝냈다. (1) dirichlet-l-functions 79줄과 prime-number-theorem 97줄에 riemann-hypothesis 로 가는 본문 링크를 넣는 것으로 처리했고, 두 절 모두 자기 문서의 맥락에서 필요한 진술이라 축약하지 않았다. dirichlet-l-functions 를 riemann-hypothesis 의 자식으로 두는 안은 버렸다. GRH 를 진술하려면 Dirichlet L 함수를 먼저 알아야 하므로 방향이 반대이고, riemann-hypothesis 의 부모를 3 개로 늘릴 만큼 본문 의존도 크지 않다. (2) 남은 것은 riemann-hypothesis 의 자식 자리다. 이 항목이 그중 가장 큰 것으로, Montgomery 의 쌍 상관 추측, Odlyzko 의 수치 계산, Katz-Sarnak 의 대칭형 분류, 유한체 위 곡선족의 monodromy 를 모은다. riemann-hypothesis 활용 절의 Montgomery-Dyson 대응이 이 문서를 부르는 자리이고, wigner-semicircle 과 tracy-widom 이 이미 있어 확률 쪽 부모를 댈 수 있다. 다른 자식 후보는 Mertens 추측(riemann-hypothesis 의 M(x) 동치 절), Weil 명시 공식이다",
-      "createdAt": "2026-09-20T08:51:23.901Z",
-      "seq": 715
     },
     {
       "id": "3de75166",
@@ -1754,6 +1746,22 @@
       "note": "31차 회차(2026-10-05)에 5차 회귀를 돌렸다. docs 620 개와 README 를 함께 보았고 실제 위반 0 건이다.\n\n경로별 결과. (A) 이스케이프 해제(awk, 수식 줄의 백슬래시+ASCII 문장부호) 0 건. (B) 태그로 읽히는 부등호 grep -n '<[a-zA-Z]' 0 건. (C) 링크로 읽히는 대괄호 1 건인데 README:11 의 [CLAUDE.md](CLAUDE.md) 이고, 필터의 .md 패턴이 [a-z0-9-]* 라 대문자 파일명을 걸러내지 못한 오탐이다. (D) 줄 끝 백슬래시 0 건. (E) 이스케이프 안 된 밑줄 5 건인데 전부 각주 URL 안이라 오탐이다. finite-fields:131 의 libretexts URL(Abstract_and_Geometric_Algebra 등) 셋과 unique-factorization-domains:89 의 numdam URL(PMIHES_1966__30__5_0) 둘이고, 큐 b452028c 가 적은 그 오탐과 같은 성격이다. render-check 는 전수 통과다.\n\n이번 회차에 알아낸 것 하나를 함께 적는다. 이 환경은 LANG 이 비어 있어 grep 이 C 로케일로 돈다. 한글이 든 대괄호 문자 클래스(4절 제목 규칙의 [와과], 문체 헤딩 규칙의 [^로]지, 비유 규칙의 사다리[^꼴]·무기[^억]·마법[^ 상])는 이때 바이트 집합으로 읽혀 오탐이나 누락이 난다. 'A와 B' 제목 grep 이 560 여 개를 보고한 것이 그 예다. 수식 다섯 경로의 패턴은 ASCII 문자 클래스뿐이라 로케일에 영향받지 않지만, 회귀를 돌릴 때 한글 패턴이 섞인 검사는 LC_ALL=C.UTF-8 을 붙인다. 자세한 것은 큐의 'A와 B 제목 전수 판정과 4절 grep 의 로케일 오탐' 항목에 적었다.\n\n다음 차수에는 (C)의 필터에 대문자 파일명을 더해 돌리면 오탐 1 건이 사라진다.",
       "createdAt": "2026-10-05T01:00:55.682Z",
       "seq": 1698
+    },
+    {
+      "id": "56c50227",
+      "title": "쌍둥이 소수와 Hardy-Littlewood 추측 문서 신설",
+      "priority": 10,
+      "note": "분야는 number_theory. 부모 후보는 prime-gaps 와 sieve-methods. pair-correlation-conjecture 의 성질 절(Montgomery 정리의 |alpha|>=1 범위)이 이 추측의 상관 합 sum Lambda(n)Lambda(n+h) 를 링크 없이 이름만 쓰는 자리다. 내용 후보: 쌍둥이 소수 상수와 특이급수, 원 방법, 허용집합으로의 일반화(Hardy-Littlewood k 중쌍 추측), Brun 의 체로 얻는 상한, Zhang 과 Maynard 의 유계 간격 결과와의 관계.",
+      "createdAt": "2026-10-05T05:15:23.755Z",
+      "seq": 1701
+    },
+    {
+      "id": "a7264651",
+      "title": "저수준 영점 통계와 Katz-Sarnak 대칭형 문서 신설",
+      "priority": 10,
+      "note": "분야는 number_theory/probability. 부모는 pair-correlation-conjecture 와 유한체 위 곡선 쪽 문서. 쌍 상관은 유니터리 직교 심플렉틱 세 대칭형에서 같은 함수를 주고 갈리는 것은 임계점 근처의 저수준 통계라는 것이 pair-correlation-conjecture 의 성질 절 '대칭형에 둔감한 통계' 에 한 문단으로만 있다. 내용 후보: 일차 영점 밀도 함수, 시험함수의 Fourier 지지 범위와 조건부 결과, 곡선족의 monodromy 계산, 비소멸 비율 하한.",
+      "createdAt": "2026-10-05T05:15:23.881Z",
+      "seq": 1702
     },
     {
       "id": "dfb3e493",
