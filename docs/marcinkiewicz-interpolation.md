@@ -77,7 +77,7 @@ Riesz–Thorin 정리는 강한 유형 $(p_0,q_0)$ 과 $(p_1,q_1)$ 에서 그 �
 # 활용
 
 - **특이적분 작용소.** Calderón–Zygmund 정리의 증명이 약한 유형 $(1,1)$ 과 강한 유형 $(2,2)$ 를 이 정리로 이어 $1\lt p\lt 2$ 를 얻는다. 나머지 $2\lt p\lt\infty$ 는 쌍대 작용소에 같은 결과를 쓴다.
-- **극대함수.** Hardy–Littlewood 극대함수는 상한으로 정의되어 선형이 아니지만 준선형이고, 약한 유형 $(1,1)$ 과 자명한 $(\infty,\infty)$ 를 가지므로 $1\lt p\le\infty$ 에서 $L^p$ 유계다. 끝점 $p=1$ 에서는 유계가 아니다.
+- **극대함수.** [Hardy–Littlewood 극대함수](hardy-littlewood-maximal-function.md)는 상한으로 정의되어 선형이 아니지만 준선형이고, 약한 유형 $(1,1)$ 과 자명한 $(\infty,\infty)$ 를 가지므로 $1\lt p\le\infty$ 에서 $L^p$ 유계다. 끝점 $p=1$ 에서는 유계가 아니다.
 - **Riesz 가능성.** 핵 $\vert x\vert^{\alpha-n}$ 의 합성곱 작용소가 약한 유형 추정을 가지므로 보간이 Hardy–Littlewood–Sobolev 부등식을 준다. [Sobolev 공간](sobolev-spaces.md)의 매입 정리를 이 부등식으로 증명한다.
 - **에르고딕 평균.** [Birkhoff 에르고딕 정리](ergodic-theorem.md)의 증명에 쓰는 극대 에르고딕 부등식이 약한 유형 $(1,1)$ 이고, 보간이 $1\lt p\lt\infty$ 에서 평균의 $L^p$ 수렴을 준다.
 
@@ -91,6 +91,7 @@ Riesz–Thorin 정리는 강한 유형 $(p_0,q_0)$ 과 $(p_1,q_1)$ 에서 그 �
 
 ## 더 알아보기
 
+- [Hardy–Littlewood 극대함수](hardy-littlewood-maximal-function.md)
 - [Calderón–Zygmund 이론](calderon-zygmund-theory.md)
 
 #analysis #functional_analysis #measure_theory
