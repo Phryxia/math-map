@@ -23,7 +23,7 @@ graph TD
   YL --> AD
   AD --> MO["Monad"]
   MO --> KE["Kleisli와 Eilenberg–Moore"]
-  CA --> MT["모듈러 텐서범주"]
+  NT --> MN["모노이드 범주"] --> MT["모듈러 텐서범주"]
   TP["텐서곱"] --> MT
   MT --> AN["애니온"]
 ```

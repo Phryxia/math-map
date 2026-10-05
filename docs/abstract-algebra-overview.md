@@ -17,7 +17,6 @@ graph TD
   G --> R["환"] --> ID["아이디얼과 몫환"] --> PI["소 아이디얼"] --> LZ["환의 국소화"]
   ID --> UFD["유일분해정역"] --> DD["Dedekind 정역"]
   ID --> NO["Noether 환"]
-  LZ --> DD
   R --> PR["다항식환"] --> FE["체의 확대"]
   PR --> UFD
   PR --> NO
