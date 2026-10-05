@@ -74,6 +74,7 @@ graph TD
 - [직관주의](intuitionism.md) → [Kripke 의미론](kripke-semantics.md) → [Heyting algebra](heyting-algebras.md); [Boolean algebra](boolean-algebras.md)는 고전 쪽 대응물
 - [Curry–Howard 대응](curry-howard.md): 증명이 프로그램이다
 - [호모토피 타입 이론](homotopy-type-theory.md): 등식의 증명을 경로로 읽고, 일가성 공리로 동치를 등식과 같은 것으로 삼는다
+- [고차 귀납 타입](higher-inductive-types.md): 점과 함께 경로를 생성자로 지정해 원과 구면, 절단, 집합 몫을 짓는다
 
 ## 역수학
 

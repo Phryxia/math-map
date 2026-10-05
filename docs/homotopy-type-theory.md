@@ -111,6 +111,6 @@ $S^1$ 은 점 $\mathrm{base}$ 와 경로 $\mathrm{loop}\colon \mathrm{base}=\mat
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [고차 귀납 타입](higher-inductive-types.md)
 
 #foundations #logic #algebraic_topology #category_theory
