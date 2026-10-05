@@ -64,7 +64,7 @@ $\Omega$ 에서 $\Delta u=0$ 을 만족하는 [분포](schwartz-distributions.md
 
 ## De Giorgi–Nash–Moser 정리
 
-계수가 유계 측정가능일 뿐이면 두 계단을 올릴 수 없고, 얻는 것은 해의 Hölder 연속성이다. De Giorgi–Nash–Moser 정리가 어떤 $\alpha\gt 0$ 에 대해 $u\in C^{0,\alpha}\_{\mathrm{loc}}(\Omega)$ 를 주며, 지수 $\alpha$ 는 $n$ 과 타원성 상수 $\lambda$ 에만 의존한다[^3]. 이 정리가 Hilbert 의 열아홉째 문제에 대한 답이다.
+계수가 유계 측정가능일 뿐이면 두 계단을 올릴 수 없고, 얻는 것은 해의 Hölder 연속성이다. [De Giorgi–Nash–Moser 정리](de-giorgi-nash-moser.md)가 어떤 $\alpha\gt 0$ 에 대해 $u\in C^{0,\alpha}\_{\mathrm{loc}}(\Omega)$ 를 주며, 지수 $\alpha$ 는 $n$ 과 타원성 상수 $\lambda$ 에만 의존한다[^3]. 이 정리가 Hilbert 의 열아홉째 문제에 대한 답이다.
 
 # 활용
 
@@ -89,5 +89,6 @@ $\Omega$ 에서 $\Delta u=0$ 을 만족하는 [분포](schwartz-distributions.md
 ## 더 알아보기
 
 - [Schauder 추정](schauder-estimates.md)
+- [De Giorgi–Nash–Moser 정리](de-giorgi-nash-moser.md)
 
 #functional_analysis #analysis #measure_theory
