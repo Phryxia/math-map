@@ -122,6 +122,7 @@ $1\le p\lt\infty$ 이고 $\mu$ 가 $\sigma$ 유한이면 사상 $g\mapsto\bigl(f
 
 ## 더 알아보기
 
+- [Riesz–Thorin 정리](riesz-thorin.md)
 - [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md)
 - [Fourier 변환](fourier-transform.md)
 - [Sobolev 공간](sobolev-spaces.md)
