@@ -8,15 +8,15 @@ $$
 \mathrm{base}\colon S^1,\qquad \mathrm{loop}\colon \mathrm{base}=\_{S^1}\mathrm{base}
 $$
 
-이 두 생성자로 원을 타입으로 짓는다. 보통의 귀납 타입이 점만 생성하므로 위상공간을 쓰지 않고 공간을 정의하는 수단이 여기서 나온다.
+이 두 생성자로 원을 타입으로 짓는다. 보통의 귀납 타입은 점만 생성한다. 경로 생성자를 쓰면 위상공간 없이 공간을 정의한다.
 
 # 직관
 
 자연수 타입은 생성자 $0$ 과 $\mathrm{succ}$ 로 짓고, 그 타입에서 다른 타입으로 가는 사상은 두 생성자의 상을 정하면 결정된다. 같은 방식으로 원을 지으려고 한다.
 
-점 하나만 생성자로 두면 $\mathbf 1$ 이 나온다. 이 타입의 등식 타입은 모두 수축 가능하므로 돌아오는 경로가 반사성 하나뿐이고, 원이 되지 않는다. 점 둘과 그 사이의 경로 둘을 두어도 경로 생성자를 쓰지 않는 한 등식 타입은 그대로다.
+점 하나만 생성자로 두면 $\mathbf 1$ 이 나온다. 이 타입의 등식 타입은 모두 수축 가능하므로 돌아오는 경로가 반사성 하나뿐이다. 원이 되지 않는다. 점 둘과 그 사이의 경로 둘을 두어도 경로 생성자를 쓰지 않는 한 등식 타입은 그대로다.
 
-필요한 것은 $\mathrm{base}$ 에서 $\mathrm{base}$ 로 돌아오는 경로를 반사성과 별개로 두는 것이다. 그래서 등식 타입 $\mathrm{base}=\mathrm{base}$ 의 항을 생성자로 선언한다.
+$\mathrm{base}$ 에서 $\mathrm{base}$ 로 돌아오는 경로를 반사성과 별개로 두어야 한다. 그래서 등식 타입 $\mathrm{base}=\mathrm{base}$ 의 항을 생성자로 선언한다.
 
 생성자를 늘리면 제거자도 늘어난다. 자연수에서 사상을 정할 때 $0$ 의 상과 $\mathrm{succ}$ 의 상을 주었듯, 원에서 사상을 정할 때는 $\mathrm{base}$ 의 상인 점 하나와 $\mathrm{loop}$ 의 상인 경로 하나를 준다.
 
@@ -32,7 +32,7 @@ $$
 \frac{b\colon B\qquad p\colon b=\_B b}{\mathrm{rec}(b,p)\colon S^1\to B}
 $$
 
-귀납 원리는 타입족 $P\colon S^1\to\mathcal U$ 에 대한 판이다. 항 $b\colon P(\mathrm{base})$ 와, $\mathrm{loop}$ 를 따라 $b$ 를 옮긴 것이 다시 $b$ 라는 경로가 주어지면 $\prod\_{x\colon S^1}P(x)$ 의 항이 나온다. 옮기는 연산 $\mathrm{transport}^P$ 는 경로 유도로 정의한다.
+귀납 원리는 같은 자료를 타입족 $P\colon S^1\to\mathcal U$ 에 대해 요구한다. 항 $b\colon P(\mathrm{base})$ 와, $\mathrm{loop}$ 를 따라 $b$ 를 옮긴 것이 다시 $b$ 라는 경로가 주어지면 $\prod\_{x\colon S^1}P(x)$ 의 항이 나온다. 옮기는 연산 $\mathrm{transport}^P$ 는 경로 유도로 정의한다.
 
 $$
 \frac{b\colon P(\mathrm{base})\qquad q\colon \mathrm{transport}^P(\mathrm{loop},b)=b}{\mathrm{ind}(b,q)\colon \prod\_{x\colon S^1}P(x)}
