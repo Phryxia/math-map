@@ -106,6 +106,6 @@ Hasse 가 [타원곡선](elliptic-curves.md)에서, Weil 이 일반 곡선에서
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [쌍 상관 추측](pair-correlation-conjecture.md)
 
 #number_theory #complex_analysis #analysis

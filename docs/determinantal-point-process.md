@@ -130,5 +130,6 @@ $$
 ## 더 알아보기
 
 - [Tracy–Widom 분포](tracy-widom.md)
+- [쌍 상관 추측](pair-correlation-conjecture.md)
 
 #probability #linear_algebra
