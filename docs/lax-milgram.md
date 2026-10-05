@@ -132,5 +132,6 @@ $$
 ## 더 알아보기
 
 - [타원형 정칙성](elliptic-regularity.md)
+- [유한요소법](finite-element-method.md)
 
 #functional_analysis #analysis #optimization
