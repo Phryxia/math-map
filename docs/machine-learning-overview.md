@@ -4,7 +4,7 @@
 
 기계학습은 표본에서 분포를 추정하고 그 추정으로 예측한다. 수학적으로는 세 문제가 겹쳐 있다. 어떤 함수족을 쓸지 정하는 표현, 그 안에서 손실을 최소화하는 최적화, 표본에서 얻은 값이 분포 전체에 대해서도 유효한지 묻는 일반화다.
 
-[경사하강법](gradient-descent.md)이 최적화 쪽 진입점이다. 손실이 볼록이면 수렴률이 나오고, 볼록이 아니어도 실제 모형의 학습은 이 반복과 그 변형으로 이루어진다. 일반화 쪽은 [집중부등식](concentration-inequalities.md)이 표본평균과 기댓값의 차이를 확률로 제한한다.
+[경사하강법](gradient-descent.md)이 최적화 쪽 진입점이다. 손실이 볼록이면 수렴률이 나오고, 볼록이 아니어도 실제 모형은 이 반복과 그 변형으로 학습한다. 일반화 쪽은 [집중부등식](concentration-inequalities.md)이 표본평균과 기댓값의 차이를 확률로 제한한다.
 
 표현 쪽은 [주성분 분석](principal-component-analysis.md)의 선형 부분공간에서 시작한다. 여기에 잠재변수와 잡음을 넣으면 [확률적 PCA](probabilistic-pca.md)(principal component analysis)가 되고, 잠재변수에서 관측으로 가는 사상을 신경망으로 바꾸면 [변분 오토인코더](variational-autoencoder.md)가 된다. 잠재변수를 시간에 따라 움직이면 [확산모형](diffusion-models.md)과 [흐름 정합](flow-matching.md)이 된다.
 
