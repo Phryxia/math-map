@@ -106,6 +106,7 @@ $1\le p\lt\infty$ 이고 $\mu$ 가 $\sigma$ 유한이면 사상 $g\mapsto\bigl(f
 
 - **Fourier 해석.** $L^2$ 의 내적 구조에서 Parseval 항등식이 나오고, [Fourier 급수](fourier-series.md)가 $L^2$ 에서 수렴한다. $L^p$ 에서의 수렴은 $1\lt p\lt\infty$ 에서만 성립한다.
 - **확률론의 적률.** 확률측도에서 $\Vert X\Vert\_p$ 가 $p$ 차 절대적률의 $p$ 제곱근이고, 유한측도의 포함관계가 적률의 단조성이 된다. [균등적분가능성](uniform-integrability.md)의 $L^p$ 유계 조건이 여기서 쓰인다.
+- **작용소의 유계성.** 한 작용소가 $L^p$ 에서 유계인지는 지수마다 따로 묻는 물음이다. [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md)가 두 지수의 약한 추정에서 그 사이 지수의 유계성을 주며, 증명은 $L^p$ 노름을 분포함수의 적분으로 다시 적는 데서 진행된다.
 - **편미분방정식의 해 공간.** 함수와 그 약한 도함수가 $L^p$ 에 드는 조건으로 Sobolev 공간을 정의한다. 해의 존재를 약한 형태로 먼저 얻고 정칙성을 따로 보이는 방식이 표준이다.
 
 [^1]: F. Riesz, *Untersuchungen über Systeme integrierbarer Funktionen*, Math. Ann. **69** (1910), 449–497. 같은 결과를 E. Fischer 가 $p=2$ 에서 독립으로 얻었다.
