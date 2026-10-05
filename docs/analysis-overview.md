@@ -85,6 +85,7 @@ graph TD
 - [Fourier 급수](fourier-series.md): 직교계 전개와 $L^2$ 수렴
 - [Fourier 변환](fourier-transform.md): 실직선 위의 적분변환과 반전 공식, Plancherel 정리
 - [불확정성 원리](uncertainty-principle.md): 함수와 변환의 분산의 곱에 대한 하한
+- [Calderón–Zygmund 이론](calderon-zygmund-theory.md): 특이적분 작용소의 $L^p$ 유계성과 분해
 - [이산 Fourier 변환](fourier.md): 유한 순환군 위의 Fourier 해석
 - [Euler–Maclaurin 공식](euler-maclaurin.md): 합과 적분의 차이를 Bernoulli 수로 전개
 - [감마 함수](gamma-function.md): 계승의 해석적 연속
