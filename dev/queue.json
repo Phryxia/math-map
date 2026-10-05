@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-05T05:15:48.833Z",
-  "nextSeq": 1703,
+  "savedAt": "2026-10-05T09:04:30.482Z",
+  "nextSeq": 1714,
   "items": [
     {
       "id": "b0693241",
@@ -10,6 +10,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 29차 회차에 jones-wenzl-idempotents 를 쓰다 개요의 $$ 블록에서 'e_i' 의 e 가 키릴 소문자 е(U+0435)로 들어갔다. 'f_n^2=f_n, e_if_n=f_nе_i=0' 에서 둘째 e 하나만 키릴이었다. 원문을 눈으로 보면 라틴 e 와 구별되지 않고 MathJax 는 이 글자를 명령으로도 변수로도 읽지 못해 식이 깨진다.\n\n기존 검사 여섯 가지가 이것을 잡지 못한다. render-check 는 원문의 수식 스팬이 렌더 결과에 남는지만 보므로 통과하고, 4절의 awk 와 grep 넷도 ASCII 패턴만 보므로 통과한다. 29차에 걸린 것은 5번 검사 grep -noE '\\[^a-zA-Z0-9\\\\]_' 의 우연이다. 키릴 е 가 '영숫자가 아닌 문자' 로 잡혀 그 뒤 밑줄이 보고됐다. 즉 바로 뒤에 첨자 밑줄이 없는 자리에 섞이면 여섯 검사 전부를 통과한다.\n\n검사법. 라틴과 모양이 같은 키릴·그리스 문자를 코드포인트로 거른다. 키릴 소문자 а е о р с у х і(U+0430 0435 043E 0440 0441 0443 0445 0456), 키릴 대문자 А В Е К М Н О Р С Т У Х(U+0410 0412 0415 041A 041C 041D 041E 0420 0421 0422 0423 0425), 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ(U+03BF 0391 0392 0395 0397 0399 039A 039C 039D 039F 03A1 03A4 03A7)를 docs 전체와 README 에서 찾는다. 29차에 전수로 돌려 보고는 둘이고 하나는 오검출이다. transcendental-numbers:98 의 키릴 е 둘은 Gelfond 논문의 학술지명 'Известия Академии наук СССР' 안이라 정상이다. 따라서 검사 결과는 키릴 문자가 든 줄이 러시아어 문헌 표기인지만 보면 판정된다. 그리스 문자는 수식에서 \\alpha 꼴 명령으로 쓰므로 본문에 직접 오면 대개 사고다.\n\n새 문서나 보강한 문서를 쓴 회차에는 그 문서들만이라도 이 검사를 돌린다. dev/ 스크립트는 고치지 않으므로(0절) 스크래치패드에 python 으로 만들면 된다. 독자가 dev 에 넣을지는 판단이 필요하다.\n\n2026-10-04 30차 회차에 전수로 다시 돌렸다. 범위를 키릴 전체로 넓히면 안 된다. Tate-Shafarevich 군의 표준 기호 Ш(키릴 대문자 Sha, U+0428)가 문서 9 개에서 수식 안 \\text{Ш} 로 정상 사용된다(birch-swinnerton-dyer canonical-height euler-systems heegner-points kolyvagin-logachev kolyvagin-systems poitou-tate selmer-tate-shafarevich 와 그 표). 보고 60 여 줄이 전부 이것이고 실제 사고는 0 건이다. 위 note 가 적은 라틴 혼동 글자 목록(키릴 소문자 а е о р с у х і, 대문자 А В Е К М Н О Р С Т У Х, 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ)으로만 거르면 Ш 는 걸리지 않는다. transcendental-numbers:98 의 러시아어 학술지명도 29차 판정대로 정상이다. 즉 검사는 반드시 그 목록으로 좁혀서 돌리고, 이번 회차 새 문서 셋(lax-milgram ricci-flow gartner-ellis)에 좁힌 검사를 돌려 0 건을 확인했다.",
       "createdAt": "2026-10-04T16:54:52.185Z",
       "seq": 1667
+    },
+    {
+      "id": "ac00ca71",
+      "title": "저장소의 shallow clone 때문에 세션 시작 git pull 이 divergent 로 실패하는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 32차 회차 시작에서 git pull origin claude/math 가 'Your branch and origin/claude/math have diverged, and have 50 and 50 different commits each' 와 'fatal: Need to specify how to reconcile divergent branches' 로 실패했다. 실제로 갈라진 것이 아니다. 실행 환경이 저장소를 depth 50 으로 shallow clone 하므로 .git/shallow 가 히스토리를 자르고, git 이 공통 조상을 찾지 못해 양쪽을 서로 50 커밋 앞선 것으로 센다. fetch 출력의 'forced update' 표시도 같은 원인이고 원격 히스토리가 다시 쓰인 것이 아니다. 판별법은 git merge-base HEAD origin/claude/math 가 종료코드 1 로 아무것도 내놓지 않는 것이다. 해결은 git fetch --unshallow origin claude/math 를 돌린 뒤 git rev-list --left-right --count HEAD...origin/claude/math 로 확인하는 것이다. 32차에는 0 410 이 나와 로컬이 원격의 조상임이 드러났고 git pull --ff-only 로 끝났다. 커밋을 되돌리거나 git reset --hard 를 쓸 자리가 아니다.",
+      "createdAt": "2026-10-05T08:45:49.437Z",
+      "seq": 1706
     },
     {
       "id": "08e59419",
@@ -170,6 +178,14 @@
       "note": "독자 판단 대기. 31차 회차(2026-10-05) sylow-theorems 보강에서 꺼냈고 이번 회차에는 손대지 않았다.\n\nsylow-theorems:138 의 각주가 '[^1]: Wikipedia, Sylow theorems, https://en.wikipedia.org/wiki/Sylow_theorems' 다. 전수로 보면 Wikipedia 를 각주 출처로 쓰는 문서가 24 개다(axiom-of-choice, euler-characteristic, fermat-euler-theorem, first-order-logic, fourier-series, generating-functions, sylow-theorems 등).\n\nCLAUDE.md 4절은 '위키피디아나 교과서의 목차를 그대로 옮기지 않는다' 고만 적고 각주 출처로 쓰는 것을 금지하지는 않는다. 다만 다른 문서들은 논문과 교과서를 각주로 달고, 4절 문체 규칙이 열린 문제나 미해결 진술에 '논문이나 교과서가 그렇게 명시한 경우' 의 출처를 요구하므로, 그런 진술을 받치는 각주가 Wikipedia 이면 근거가 약하다.\n\n정해야 할 것 둘. (1) 각주 출처로 Wikipedia 를 허용할 것인지. 허용하면 CLAUDE.md 에 한 줄 적고, 금지하면 24 개 문서의 각주를 바꾸는 작업이 된다. (2) 금지로 정할 때 우선순위. 열린 문제나 정리의 진술을 받치는 각주가 먼저이고, 개념의 개요를 가리키는 각주는 지우면 되는 자리가 많다.\n\n바꿀 때 쓸 출처를 하나 미리 적어 둔다. Sylow 정리의 원 논문은 L. Sylow, 'Theoremes sur les groupes de substitutions', Mathematische Annalen 5 (1872), 584-594 다. 한 문서만 바꾸면 24 개 사이에서 들쭉날쭉해지므로 전수 판정이 난 뒤에 함께 바꾸는 것이 낫다.",
       "createdAt": "2026-10-05T01:01:29.180Z",
       "seq": 1699
+    },
+    {
+      "id": "cc15f6ba",
+      "title": "holomorphic-functions 의 최대절댓값 원리를 독립 절로 올릴지",
+      "priority": 20,
+      "note": "독자 판단 대기에 가까운 보강 후보. 32차 회차에 '절이 없다' 고 적은 앞선 큐 항목 eb96d7ca 는 부정확해서 지웠다. 최대절댓값 원리는 holomorphic-functions(정칙함수, 147줄)의 '## 그 밖의 결과' 절에 목록 한 줄로 있다. 진술은 '상수가 아닌 정칙함수의 절댓값은 영역 내부에서 국소 최대가 될 수 없다. 따라서 유계 영역의 폐포에서 최댓값은 경계에서 달성된다' 이고 증명은 없다. 같은 절에 열린사상 정리와 Schwarz 보조정리가 함께 목록으로 있는지 확인한 뒤 판단한다. 올릴 근거: 32차에 riesz-thorin 을 쓰면서 Phragmen-Lindelof 원리를 그 문서 정의 절에서 자체 진술하고 증명 요지까지 적어야 했고, 띠 영역의 최대원리는 유수 정리와 등각사상 쪽에서도 쓰인다. 올리지 않을 근거: riesz-thorin 의 선수지식에 holomorphic-functions 가 이미 있어 본문 링크를 더 달 자리가 없고, 147줄 문서의 '그 밖의 결과' 목록은 Cauchy 적분 정리에서 따라오는 결과들을 모아 둔 자리라 하나만 절로 올리면 묶음이 흐트러진다. 목록 세 줄을 다 절로 올리면 문서가 200줄에 가까워진다.",
+      "createdAt": "2026-10-05T09:02:21.384Z",
+      "seq": 1712
     },
     {
       "id": "410fd79d",
@@ -500,14 +516,6 @@
       "seq": 1688
     },
     {
-      "id": "61108eac",
-      "title": "elliptic-regularity 의 후속 간선",
-      "priority": 11,
-      "note": "31차 회차(2026-10-05)에 elliptic-regularity(타원형 정칙성, 94줄, 커밋 a45ee39)를 썼다. 부모는 lax-milgram 과 schwartz-distributions 둘이고 lax-milgram 의 리프를 닫았다. 큐 항목 d57ba8ff(schwartz-distributions 의 후속 간선)가 적은 후보 (3) '타원형 정칙성' 이 이것이고, 같은 항목의 후보 (1) '기본해와 Green 함수' 는 그 사이에 greens-function 이 생겨 이미 해소됐다.\n\n태그 첫 자리는 #functional_analysis 로 했다. 내용은 편미분방정식 쪽이지만 이 축(lp-spaces sobolev-spaces lax-milgram schwartz-distributions)이 전부 functional_analysis 를 주 분야로 하고 functional-analysis-overview 가 거두므로 거기에 맞췄다. 개관 갈래는 lax-milgram 다음 줄에 넣었다.\n\n담은 것: 상수계수에서 Fourier 변환으로 u-hat=f-hat/|xi|^2 를 적어 두 계단이 올라가는 것을 보이고 계수가 변하면 그 계산이 막히는 직관, 균등 타원 발산형 연산자와 약해의 정의, 내부 정칙성과 차분몫 시험함수 v=-D^{-h}(chi^2 D^h u) 증명 요지, 경계까지의 정칙성과 추정식, Weyl 보조정리, De Giorgi-Nash-Moser 정리와 Hilbert 열아홉째 문제, 활용 넷(고전해, 고유함수의 매끄러움, 비선형 문제, L^p 와 Hoelder 판).\n\n32차에 볼 것 둘. (1) elliptic-regularity 가 새 리프다. 자식 후보는 Calderon-Zygmund 이론(활용 넷째 항목이 이름만 쓴다. 저장소에 없고 singular-integral 류 문서도 없다)과 Schauder 추정이다. 둘을 한 문서로 담을지 가를지 먼저 정해야 한다. (2) 작성 중 '## 계수가 매끄럽지 않을 때' 를 헤딩으로 썼다가 4절 문체 grep 에 문장형으로 걸려 '## De Giorgi-Nash-Moser 정리' 로 고쳤다. 새 문서를 쓸 때 조건절 꼴 헤딩을 피하고 정리 이름을 쓰는 것이 낫다.",
-      "createdAt": "2026-10-05T00:53:01.802Z",
-      "seq": 1692
-    },
-    {
       "id": "bb025acf",
       "title": "schwartz-distributions 의 남은 후속 간선",
       "priority": 11,
@@ -522,6 +530,54 @@
       "note": "31차 회차에 pair-correlation-conjecture(쌍 상관 추측, 102줄)를 riemann-hypothesis 와 determinantal-point-process 의 자식으로 새로 달고 리프로 남겼다. 큐 c414ed09(무작위 행렬과 L 함수 신설)의 처리 결과다. 제목을 '무작위 행렬과 L 함수' 로 두지 않은 이유는 4절 제목 규칙의 'A와 B' 금지다. 담은 것: Riemann-von Mangoldt 공식으로 평균 간격 2pi/ln(T/2pi) 를 구하고 가까운 쌍의 빈도는 그 공식으로 나오지 않음을 보인 직관, 정규화 영점과 쌍 상관 추측의 적분 진술, Montgomery 함수 F(alpha,T) 와 min(|alpha|,1) 동치, Montgomery 정리와 명시 공식을 통한 증명 요지(대각항 Mertens, 비대각항 Montgomery-Vaughan, |alpha|>=1 에서 Hardy-Littlewood 추측), 단순 영점 2/3 하한, 간격 하극한 0.68, 쌍 상관이 세 고전군에서 같다는 것, 활용 넷(Keating-Snaith 모멘트, Katz-Sarnak, Dirichlet L 함수 비소멸, 무작위 행렬 결과의 근거). 태그는 #number_theory #probability #complex_analysis. 자식 후보: (1) 저수준 통계(low-lying zeros)와 Katz-Sarnak 대칭형 - 저장소에 없다. 성질 절 '대칭형에 둔감한 통계' 와 활용 둘째가 이름만 쓴다. 부모는 pair-correlation-conjecture 와 유한체 위 곡선 쪽 문서다. (2) Keating-Snaith 모멘트 추측 - 없다. CUE 특성다항식 모멘트와 Barnes G 함수가 내용이고 haar-measure 가 공동 부모 후보다. (3) 쌍둥이 소수에 대한 Hardy-Littlewood 추측 - twin-primes 문서가 없어 성질 절에서 링크 없이 이름만 썼다. prime-gaps 가 부모 후보다. (4) wigner-semicircle 과 tracy-widom 은 부모로 두지 않았다. 쌍 상관에 필요한 것은 전역 밀도나 최대 고윳값이 아니라 sine 핵이므로 determinantal-point-process 하나로 충분하고, 5절의 부모 3개 이하 기준에도 맞다. wigner-semicircle 은 활용 절 본문 링크로 두었다. c414ed09 가 남긴 다른 자식 후보 둘(Mertens 추측, Weil 명시 공식)은 아직 문서가 없다.",
       "createdAt": "2026-10-05T05:13:39.442Z",
       "seq": 1700
+    },
+    {
+      "id": "9a23b8a8",
+      "title": "calderon-zygmund-theory 의 후속 간선",
+      "priority": 11,
+      "note": "32차 회차(2026-10-05)에 calderon-zygmund-theory(Calderon-Zygmund 이론, 122줄)를 썼다. 큐 61108eac 가 적은 '32차에 볼 것' 후보 (1) 이 이것이다. 부모는 fourier-transform 하나다. elliptic-regularity 를 부모로 두지 않은 판정: CZ 이론을 이해하는 데 타원형 정칙성이 필요하지 않고(조화해석 쪽 독립 주제다) 5절의 '부모를 읽지 않으면 자식을 이해할 수 없어야 한다' 에 맞지 않는다. 반대 방향도 긋지 않았다. elliptic-regularity 는 L^2 기반으로 이미 쓰여 있어 CZ 없이 그대로 읽힌다. 두 문서는 서로 본문 링크로만 두었다(elliptic-regularity 활용 넷째 줄에 링크를 달았다). lp-spaces 는 fourier-transform 의 부모라 조상 중복이어서 뺐다. 태그는 #analysis #functional_analysis #measure_theory 로 첫 자리를 analysis 로 했다. 부모 fourier-transform 의 첫 태그가 analysis 이고 조화해석 축이므로 analysis-overview 가 거둔다. 개관 갈래는 '급수와 변환' 의 불확정성 원리 다음 줄이다. 담은 것: -Delta u=f 의 이차 도함수 심볼이 유계여서 Plancherel 로 p=2 추정이 나오고 p=3 에서 그 계산이 막히는 직관, 핵의 크기 |z|^{-n} 적분이 발산해 합성곱 부등식을 쓸 수 없다는 계산, CZ 핵과 Hoermander 조건, 주값 특이적분 작용소, 정육면체 분해의 구성, 정리와 약한 (1,1) 추정의 증명 요지(f=g+b 와 쌍대 작용소), Hilbert 변환과 Riesz 변환의 심볼, 1_{[0,1]} 의 Hilbert 변환으로 L^1 과 L^infty 비유계성을 보인 예, BMO 와 John-Nirenberg, 활용 넷. 자식 후보: (1) Schauder 추정 - 저장소에 없다. elliptic-regularity 활용 넷째가 CZ 와 나란히 이름만 쓴다. Hoelder 공간 문서가 없어 먼저 확인이 필요하다. (2) 유사미분작용소 - 없다. 활용 셋째가 이름만 쓴다. CZ 이론과 fourier-transform 이 부모 후보다. (3) Littlewood-Paley 이론 - 없다. (4) calderon-zygmund-theory 는 현재 리프다.",
+      "createdAt": "2026-10-05T08:45:49.023Z",
+      "seq": 1703
+    },
+    {
+      "id": "5858beea",
+      "title": "elliptic-regularity 의 남은 자식 후보",
+      "priority": 11,
+      "note": "32차 회차에 큐 61108eac(elliptic-regularity 의 후속 간선)의 '32차에 볼 것 (1)' 을 처리하고 그 항목을 지웠다. 판정은 Calderon-Zygmund 이론을 별도 문서 calderon-zygmund-theory 로 쓰고 elliptic-regularity 의 자식으로는 두지 않는 것이었다(이유는 큐 9a23b8a8 에 적었다). 따라서 elliptic-regularity 는 여전히 리프다. 남은 자식 후보는 Schauder 추정 하나다. 활용 넷째 항목이 'f in C^{0,alpha} 에서 u in C^{2,alpha}' 로 진술만 쓰고, 저장소에 Hoelder 공간 문서가 없어 그것을 함께 담을지 먼저 정해야 한다. Schauder 추정은 CZ 이론과 달리 타원형 정칙성의 Hoelder 판이라 elliptic-regularity 가 부모로 맞는지도 같은 기준(부모를 읽지 않으면 자식을 이해할 수 없는지)으로 판정한다. 61108eac 의 다른 교훈은 남겨 적는다. 새 문서의 헤딩에 조건절 꼴('## 계수가 매끄럽지 않을 때')을 쓰면 4절 문체 grep 에 문장형으로 걸리므로 정리 이름을 헤딩으로 쓴다.",
+      "createdAt": "2026-10-05T08:46:20.447Z",
+      "seq": 1707
+    },
+    {
+      "id": "229568fc",
+      "title": "marcinkiewicz-interpolation 의 후속 간선과 Riesz-Thorin",
+      "priority": 11,
+      "note": "32차 회차(2026-10-05)에 marcinkiewicz-interpolation(Marcinkiewicz 보간 정리, 96줄)을 썼다. 큐 5cd22e7c 의 처리 결과이고 그 항목은 지웠다. 부모는 lp-spaces 하나, 자식은 calderon-zygmund-theory 다. CZ 문서의 부모가 fourier-transform 과 둘이 되었다. Riesz-Thorin 과 합치지 않고 Marcinkiewicz 하나만 담은 판정: 두 정리는 가정(약한 유형 대 강한 유형), 적용 범위(준선형 대 선형), 증명 방법(분포함수 적분 대 띠 영역의 최대원리)이 모두 다르므로 한 문서에 담으면 4절 제목 규칙의 'A와 B' 가 된다. Riesz-Thorin 은 성질 절에 '## Riesz-Thorin 정리와의 차이' 로 비교만 두고 링크 없이 이름을 썼다. 담은 것: L^1 과 L^2 약한 추정을 p=3/2 분포함수 적분에 각각 넣으면 한쪽은 무한대에서 다른 쪽은 0 에서 발산하므로 lambda 를 기준으로 f 를 가른다는 직관, 분포함수와 약한 유형과 준선형 정의, 대각 경우 정리와 Fubini 로 lambda 적분을 먼저 하는 증명 요지(상수가 (p-p_0)^{-1} 과 (p_1-p)^{-1} 을 인자로 가져 끝점에서 발산한다), 끝점을 잃는다는 것과 Hilbert 변환 예, Riesz-Thorin 과의 차이, p_i<=q_i 를 요구하는 일반형, 활용 넷(특이적분, 극대함수, Riesz 가능성, 에르고딕 평균). 태그는 #analysis #functional_analysis #measure_theory. 자식 후보: (1) Riesz-Thorin 정리 - 저장소에 없다. 부모는 lp-spaces 와 복소해석 쪽(holomorphic-functions 또는 최대원리 문서)이고 marcinkiewicz-interpolation 의 자식은 아니다(둘은 형제이고 선수관계가 없다). 만들면 lp-spaces 의 자식으로 단다. (2) Lorentz 공간과 실보간 - 없다. 일반형 절이 다루는 L^{p,q} 를 제대로 쓰려면 필요하다. (3) Hardy-Littlewood-Sobolev 부등식 - 없다. 활용 셋째가 이름만 쓴다. marcinkiewicz-interpolation 과 sobolev-spaces 가 부모 후보다. (4) 극대 에르고딕 부등식은 ergodic-theorem 이 담고 있어 활용 절 본문 링크로만 두었다.",
+      "createdAt": "2026-10-05T08:50:16.598Z",
+      "seq": 1708
+    },
+    {
+      "id": "d78b95e3",
+      "title": "hardy-littlewood-maximal-function 의 후속 간선",
+      "priority": 11,
+      "note": "32차 회차(2026-10-05)에 hardy-littlewood-maximal-function(Hardy-Littlewood 극대함수, 95줄)을 썼다. 큐 3073b09c 의 처리 결과이고 그 항목은 지웠다. 부모는 marcinkiewicz-interpolation 하나다. lp-spaces 와 lebesgue-integral 은 그 조상이라 5절대로 뺐다. 부모를 보간 정리로 둔 판정: 성질 절의 L^p 유계성이 약한 (1,1) 과 강한 (infty,infty) 를 보간해서 나오고 M 이 선형이 아니라 Riesz-Thorin 으로는 그 결론을 얻지 못하므로, 보간을 읽지 않으면 이 문서의 핵심 정리를 읽을 수 없다. 거꾸로 CZ 분해 쪽은 극대함수를 쓰지 않고 정육면체 구성만으로 서술해 두었으므로 calderon-zygmund-theory 의 부모로 더하지 않았다(큐 3073b09c 가 남긴 재판정 사항의 결론이다). 담은 것: 공 평균의 수렴을 연속함수 근사로 풀다가 L^1 노름이 작아도 좁은 공의 평균은 클 수 있어 막히는 직관, 중심과 비중심 극대함수와 준선형성, Vitali 덮개 보조정리와 3^n, 약한 유형 (1,1) 추정의 덮개 논법, 보간으로 얻는 1<p<=infty 유계성, f 가 영함수가 아니면 Mf 가 L^1 에 없다는 것(|x|^{-n} 하한), Lebesgue 미분 정리와 Lebesgue 점, 활용 넷(근사 항등원의 각점 수렴, 특이적분의 각점 추정, 에르고딕 평균, Sobolev 함수의 Hoelder 연속성). 태그는 #analysis #measure_theory #functional_analysis. 자식 후보: (1) 극대 특이적분과 Cotlar 부등식 - 저장소에 없다. 활용 둘째가 이름만 쓴다. 부모는 이 문서와 calderon-zygmund-theory 둘이 맞다. (2) 근사 항등원 - 없다. 활용 첫째가 다루고 Gauss 핵과 Poisson 핵이 내용이다. (3) Lebesgue 미분 정리를 별도 문서로 떼지 않았다. 95줄 안에 성질 절 한 절로 들어가고 증명이 직관 절의 흐름을 닫는 자리라 떼면 양쪽이 반쪽이 된다. (4) hardy-littlewood-maximal-function 은 현재 리프다.",
+      "createdAt": "2026-10-05T08:55:59.386Z",
+      "seq": 1709
+    },
+    {
+      "id": "3e7261b4",
+      "title": "riesz-thorin 의 후속 간선",
+      "priority": 11,
+      "note": "32차 회차(2026-10-05)에 riesz-thorin(Riesz-Thorin 정리, 78줄)을 썼다. 큐 229568fc 가 적은 자식 후보 (1) 이다. 부모는 holomorphic-functions 와 lp-spaces 둘이다. 복소해석 쪽을 부모로 둔 이유는 증명이 띠 영역의 정칙함수와 최대절댓값 원리를 쓰는 것이고 그것 없이는 정의 절의 Phragmen-Lindelof 원리를 읽을 수 없기 때문이다. holomorphic-functions 의 더 알아보기 '다른 분야에서의 쓰임' 묶음 맨 앞에 넣었다. marcinkiewicz-interpolation 과는 간선을 긋지 않았다. 둘은 형제이고 선수관계가 없다. 양쪽 문서가 서로 '## ...와의 차이' 절에서 본문 링크로 가리킨다. 담은 것: L^1 과 L^2 가정에서 f 를 |f|>1 로 가르면 노름의 합이 나오고 기하평균이 안 나와 막히는 직관, 가르는 대신 지수를 복소수로 움직인다는 다음 수, 보간 지수와 띠 영역과 Phragmen-Lindelof 원리, 정리와 f_z g_z 를 쓰는 증명 요지, Hausdorff-Young 부등식, Marcinkiewicz 와의 차이(가정이 세고 상수가 기하평균이며 끝점을 잃지 않지만 선형에만 쓰인다), 활용 넷(Fourier 변환, 합성곱과 Young 부등식, Schur 판정법, 복소 보간 공간). 태그는 #analysis #functional_analysis #complex_analysis #measure_theory. 자식 후보: (1) 복소 보간 공간과 Calderon 의 구성 - 저장소에 없다. 활용 넷째가 이름만 쓴다. (2) Hausdorff-Young 을 별도 문서로 떼지 않았다. 성질 절 한 절로 들어가고 보간의 직접 따름정리라 떼면 반쪽이 된다. (3) Stein 보간(작용소가 z 에 따라 변하는 판) - 없다. (4) riesz-thorin 은 현재 리프다. holomorphic-functions 의 최대절댓값 원리: 그 문서에 최대원리 절이 없어 riesz-thorin 정의 절이 Phragmen-Lindelof 를 자체적으로 진술하고 증명 요지까지 적었다. holomorphic-functions 를 보강할 때 최대절댓값 원리 절을 넣고 riesz-thorin 쪽에서 본문 링크로 가리키는 것이 낫다.",
+      "createdAt": "2026-10-05T09:01:43.292Z",
+      "seq": 1710
+    },
+    {
+      "id": "4a85b962",
+      "title": "32차 회차 결과와 analysis-overview 갈래 재편",
+      "priority": 11,
+      "note": "2026-10-05 32차 회차. 새 문서 넷을 한 축으로 썼다. lp-spaces 아래 riesz-thorin(78줄, 부모는 holomorphic-functions 와 lp-spaces)과 marcinkiewicz-interpolation(96줄, 부모는 lp-spaces), marcinkiewicz-interpolation 아래 hardy-littlewood-maximal-function(95줄)과 calderon-zygmund-theory(122줄, 부모는 marcinkiewicz-interpolation 과 fourier-transform). 문서 621->625, 간선 1116->1122. 보강은 lp-spaces 활용 절에 '작용소의 유계성' 항목 하나, elliptic-regularity 활용 넷째 줄에 calderon-zygmund-theory 본문 링크. 개관 갈래 재편: 네 문서가 전부 '## 급수와 변환' 에 쌓여 그 갈래가 16줄이 되고 변환이 아닌 것이 섞였으므로, 넷을 빼서 '## 보간과 특이적분' H2 를 새로 만들고 '## 작용소와 함수해석' 바로 앞에 두었다. 갈래 안의 순서는 읽는 순서로 riesz-thorin, marcinkiewicz-interpolation, hardy-littlewood-maximal-function, calderon-zygmund-theory 다. 개요 절의 '해석학의 갈래는 네 줄기다' 를 '다섯 줄기' 로 고치고 다섯째로 이 갈래를 적었다. 지도 mermaid 는 손대지 않았다. 4.5절이 핵심 문서 12~20개를 말하는데 현재 지도가 이미 26개 노드여서 넷을 더하면 기준을 더 넘는다. 이 축에서 저장소에 아직 없는 것으로 확인한 것: Hoelder 공간, 유사미분작용소, Littlewood-Paley 이론, Lorentz 공간, Hardy-Littlewood-Sobolev 부등식, 복소 보간 공간, 극대 특이적분과 Cotlar 부등식, 근사 항등원, Schauder 추정, BMO 를 주제로 한 문서. 각 항목은 해당 문서의 큐 항목(9a23b8a8 229568fc d78b95e3 3e7261b4 5858beea)에 자식 후보로 적혀 있다.",
+      "createdAt": "2026-10-05T09:04:03.743Z",
+      "seq": 1713
     },
     {
       "id": "14a84d4d",
