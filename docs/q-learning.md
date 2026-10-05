@@ -79,6 +79,6 @@ $\max_{a'}Q(s',a')$ 는 잡음이 섞인 추정값들의 최댓값이므로 기�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [행위자–비평자](actor-critic.md)
 
 #machine_learning #probability #algorithms #optimization

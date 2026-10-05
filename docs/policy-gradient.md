@@ -95,6 +95,6 @@ function reinforce(policy, env, stepSize, baseline) {
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [행위자–비평자](actor-critic.md)
 
 #machine_learning #optimization #probability #algorithms
