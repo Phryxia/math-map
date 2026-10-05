@@ -88,7 +88,7 @@ $\mathbf 2=\_{\mathcal U}\mathbf 2$ 의 항이 둘이고 그 둘이 서로 다�
 
 ## 원의 기본군
 
-**정리.** 고차 귀납 타입으로 정의한 원 $S^1$ 에 대해 $\pi_1(S^1)\cong\mathbb Z$ 다.
+**정리.** [고차 귀납 타입](higher-inductive-types.md)으로 정의한 원 $S^1$ 에 대해 $\pi_1(S^1)\cong\mathbb Z$ 다.
 
 $S^1$ 은 점 $\mathrm{base}$ 와 경로 $\mathrm{loop}\colon \mathrm{base}=\mathrm{base}$ 로 생성한다. $\mathrm{base}$ 위의 섬유가 $\mathbb Z$ 이고 $\mathrm{loop}$ 를 따라 $n\mapsto n+1$ 로 도는 타입족을 일가성으로 짓고, 그 전체 공간이 수축 가능함을 보이면 등식 타입이 $\mathbb Z$ 와 동치다[^3]. 위상공간의 [기본군](fundamental-group.md) 계산에서 쓰는 덮개공간 논증을 타입 이론 안에서 그대로 수행한 것이다.
 
