@@ -81,7 +81,7 @@ $$
 \Vert x - x_m\Vert_A \thinspace\le\thinspace 2\left(\frac{\sqrt\kappa - 1}{\sqrt\kappa + 1}\right)^m \Vert x - x_0\Vert_A
 $$
 
-Galerkin 조건은 $A$-노름 오차를 $x_0 + \mathcal K_m$ 위에서 최소화하는 것과 같다. 오차는 $p(A)(x - x_0)$ 꼴로 쓰이고 $p$ 는 $p(0) = 1$ 인 $m$ 차 다항식이므로, 상한은 $A$ 의 스펙트럼 구간에서 $\vert p\vert$ 를 최소화하는 문제가 된다. 그 최소를 주는 것이 구간 위의 Chebyshev 다항식이고, 값을 계산하면 위 식이 나온다. ∎
+Galerkin 조건은 $A$-노름 오차를 $x_0 + \mathcal K_m$ 위에서 최소화하는 것과 같다. 오차는 $p(A)(x - x_0)$ 꼴로 쓰이고 $p$ 는 $p(0) = 1$ 인 $m$ 차 다항식이므로, 상한은 $A$ 의 스펙트럼 구간에서 $\vert p\vert$ 를 최소화하는 문제가 된다. 그 최소를 주는 것이 구간 위의 [Chebyshev 다항식](chebyshev-polynomials.md)이고, 값을 계산하면 위 식이 나온다. ∎
 
 고윳값이 몇 덩어리로 뭉쳐 있으면 그 개수 차수의 다항식이 거의 $0$ 이 되므로 조건수가 커도 수렴이 빠르다. 조건수만 보는 위 상한은 이 경우 실제보다 느슨하다.
 
