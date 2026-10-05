@@ -114,5 +114,6 @@ $H^{-k}(U)$ 를 $H_0^k(U)$ 의 쌍대로 정의하면 그 원소가 분포이고
 ## 더 알아보기
 
 - [Green 함수](greens-function.md)
+- [타원형 정칙성](elliptic-regularity.md)
 
 #functional_analysis #analysis #measure_theory
