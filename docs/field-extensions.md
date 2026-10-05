@@ -108,9 +108,9 @@ $$
 
 $\mathbb{Q}$ 의 유한 확대를 수체(number field)라 하고 정수론의 기본 대상이 된다. 대수적 수끼리의 합과 곱은 다시 대수적이다. 탑 법칙으로 $\mathbb{Q}(\alpha,\beta)$ 가 유한 확대임을 보이면 되고, 소멸 다항식을 직접 만드는 것보다 간단하다.
 
-## 다음 단계
+## 자기동형군
 
-확대의 자기동형(automorphism)을 모으면 군이 되고, 중간체와 부분군이 서로 대응한다. 이것이 Galois 이론이며, 분해체와 [군 작용](group-actions.md)이 그 언어다. 표수 $p$ 에서는 $\mathbb{F}\_p$ 의 유한 확대만이 유한체이므로 유한체가 확대 이론의 가장 완결된 사례가 된다.
+확대의 자기동형(automorphism)을 모으면 군이 된다. 중간체와 그 부분군이 서로 대응하고, 이 대응을 Galois 이론이 다룬다. 분해체와 [군 작용](group-actions.md)이 그 진술에 들어간다. 표수 $p$ 에서 유한체는 $\mathbb{F}\_p$ 의 유한 확대뿐이고, 확대의 차수가 위수를 정한다.
 
 [^1]: ProofWiki, "Degree of Field Extensions is Multiplicative" — 탑 법칙의 진술과 기저 곱 논증. https://proofwiki.org/wiki/Degree_of_Field_Extensions_is_Multiplicative
 [^2]: A. W. Knapp, Basic Algebra, Chapter IX (Fields and Galois Theory) — 대수적 원소, 최소다항식, 분해체의 존재와 유일성. https://www.math.stonybrook.edu/~aknapp/books/basic-alg/b-alg-Ch9-sample.pdf

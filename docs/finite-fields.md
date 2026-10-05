@@ -16,7 +16,7 @@ $$
 \mathbb{F}\_4=\mathbb{F}\_2[x]/(x^2+x+1)=\lbrace 0,\thinspace 1,\thinspace\alpha,\thinspace\alpha+1\rbrace,\qquad \alpha^2=\alpha+1
 $$
 
-여기서 $\alpha$ 의 거듭제곱이 $\alpha$ , $\alpha+1$ , $1$ 로 순환하며 $0$ 이 아닌 원소 세 개를 모두 훑는다. 곱셈군이 순환군이므로 유한체의 곱셈은 지수 하나로 좌표화된다.
+여기서 $\alpha$ 의 거듭제곱이 $\alpha$ , $\alpha+1$ , $1$ 로 순환하며 $0$ 이 아닌 원소 세 개를 모두 훑는다. 곱셈군이 순환군이므로 유한체의 곱셈을 지수 하나로 적는다.
 
 # 정의
 
@@ -116,7 +116,7 @@ $\mathbb{F}\_{p^n}$ 산술은 $\mathbb{F}\_p$ 계수 다항식을 기약다항�
 
 ## 오류정정 부호
 
-Reed–Solomon 부호는 메시지를 $\mathbb{F}\_q$ 위 다항식으로 보고 여러 점에서 평가한다. 차수 $k$ 미만의 다항식은 서로 다른 점 $k$ 개로 결정되므로, 평가값을 $n$ 개 보내면 임의의 $(n-k)/2$ 개 오류를 정정할 수 있다. 이 논증은 "체 위 차수 $d$ 다항식의 근이 최대 $d$ 개"라는 사실 하나에 의존하며, 계수환이 체가 아니면 무너진다.
+Reed–Solomon 부호는 메시지를 $\mathbb{F}\_q$ 위 다항식으로 보고 여러 점에서 평가한다. 차수 $k$ 미만의 다항식은 서로 다른 점 $k$ 개로 결정되므로, 평가값을 $n$ 개 보내면 임의의 $(n-k)/2$ 개 오류를 정정할 수 있다. 체 위에서 차수 $d$ 다항식은 근을 최대 $d$ 개 가지므로 이 논증이 성립한다. 계수환이 체가 아니면 성립하지 않는다.
 
 ## 암호와 난수
 
@@ -124,7 +124,7 @@ $\mathbb{F}\_p$ 와 $\mathbb{F}\_{2^n}$ 의 곱셈군이 순환군이므로 [이
 
 ## 조합론과 기하
 
-$\mathbb{F}\_q$ 위의 사영평면은 위수 $q$ 의 유한사영평면을 주고, 이는 조합 설계와 직교 라틴방진 구성에 쓰인다. $\mathbb{F}\_q$ 위 벡터 공간의 부분공간 개수를 세는 문제는 Gauss 이항계수로 이어진다.
+$\mathbb{F}\_q$ 위의 사영평면은 위수 $q$ 의 유한사영평면이고, 조합 설계와 직교 라틴방진 구성이 이것을 쓴다. $\mathbb{F}\_q$ 위 벡터 공간의 부분공간 개수를 세는 문제는 Gauss 이항계수로 이어진다.
 
 [^1]: A. Landesman, "Notes on finite fields" — 위수가 $p^n$ 임, $x^{p^n}-x$ 의 분해체로서의 존재, 분해체 유일성에 의한 유일성. https://people.math.harvard.edu/~landesman/assets/finite-fields.pdf
 [^2]: K. Conrad, "Finite multiplicative subgroups of a field" — 체의 유한 곱셈 부분군이 순환군임의 증명. https://math.stanford.edu/~conrad/210BPage/handouts/math210b-finite-mult-groups-cyclic.pdf

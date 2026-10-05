@@ -8,7 +8,7 @@ Galois 이론은 [체의 확대](field-extensions.md)를 [군](groups.md)으로 
 
 # 직관
 
-$\mathbb Q(\sqrt2)$ 의 원소 $a+b\sqrt2$ 에서 $\sqrt2$ 를 $-\sqrt2$ 로 바꾸는 사상은 덧셈과 곱셈을 보존한다. $x^2-2$ 의 두 근을 맞바꾸는 이 조작이 확대의 유일한 비자명 대칭이고, 따라서 Galois 군은 위수 2 다. 중간체가 없다는 사실이 부분군이 두 개뿐이라는 사실과 짝을 이룬다.
+$\mathbb Q(\sqrt2)$ 의 원소 $a+b\sqrt2$ 에서 $\sqrt2$ 를 $-\sqrt2$ 로 바꾸는 사상은 덧셈과 곱셈을 보존한다. $x^2-2$ 의 두 근을 맞바꾸는 이 조작이 확대의 유일한 비자명 대칭이고, 따라서 Galois 군은 위수 2 다. 이 확대에는 중간체가 없고 Galois 군의 부분군도 두 개뿐이다.
 
 $\mathbb Q(\sqrt2,\sqrt3)$ 에서는 $\sqrt2$ 와 $\sqrt3$ 의 부호를 독립적으로 뒤집을 수 있어 대칭이 네 개다. 부분군 격자와 중간체 격자는 위아래가 뒤집힌 같은 그림이다.
 
@@ -124,21 +124,21 @@ $A_n$ 이 $n\ge 5$ 에서 비가환 단순군이므로 $S_n$ 도 가해가 아�
 
 # 활용
 
-## 작도 문제의 마무리
+## 정 n 각형의 작도
 
-정 $n$ 각형이 컴퍼스와 직선자로 작도 가능한 것과 $n$ 이 $2$ 의 거듭제곱과 서로 다른 Fermat 소수들의 곱인 것이 동치다(Gauss–Wantzel). $1$ 의 $n$ 제곱근이 생성하는 원분체의 Galois 군이 $\mathbb Z/n\mathbb Z$ 의 곱셈군과 동형이라는 사실과, 작도 가능성이 $2$ 차 확대 탑과 동치라는 사실을 결합해 얻는다.
+정 $n$ 각형이 컴퍼스와 직선자로 작도 가능한 것과 $n$ 이 $2$ 의 거듭제곱과 서로 다른 Fermat 소수들의 곱인 것이 동치다(Gauss–Wantzel). $1$ 의 $n$ 제곱근이 생성하는 원분체의 Galois 군은 $\mathbb Z/n\mathbb Z$ 의 곱셈군과 동형이고, 작도 가능성은 $2$ 차 확대 탑과 동치다. 두 진술을 합치면 위 조건이 나온다.
 
 ## 대수적 수론
 
-$\mathbb{Q}$ 의 Galois 확대에서 [소수](primes.md)의 분해 양상이 Galois 군의 부분군으로 기술된다. 각 소수에 Frobenius 켤레류가 대응하고, class field theory 와 [Chebotarev 밀도 정리](chebotarev.md)가 이 대응을 쓴다.
+$\mathbb{Q}$ 의 Galois 확대에서 Galois 군의 부분군이 [소수](primes.md)의 분해 양상을 기술한다. 각 소수에 Frobenius 켤레류가 대응한다. 유체론(class field theory)과 [Chebotarev 밀도 정리](chebotarev.md)가 이 대응을 쓴다.
 
 ## 작은 차수의 판정
 
 작은 차수 다항식의 Galois 군은 판별식과 resolvent 다항식으로 판정한다. 기약 3차 다항식의 경우 판별식이 유리수체에서 완전제곱인지가 군이 위수 3의 순환군인지 $S_3$ 인지를 가른다.
 
-## 다른 분야 이식
+## 다른 분야의 같은 대응
 
-"대칭군과 부분대상 격자의 대응"이라는 형태는 위상수학의 피복공간과 [기본군](fundamental-group.md)의 대응, 미분방정식의 미분 Galois 이론 등으로 반복된다. 이 대응들을 한 언어로 묶는 관점이 [범주](category.md)와 Galois 범주다.
+군과 부분대상 격자의 같은 대응이 위상수학의 피복공간과 [기본군](fundamental-group.md) 사이에, 미분방정식의 미분 Galois 이론에 나타난다. [범주](category.md)의 언어로 쓴 Galois 범주가 이 대응들을 함께 다룬다.
 
 [^1]: MathWorld, "Fundamental Theorem of Galois Theory" — 유한 Galois 확대에서 부분군과 중간체의 일대일 대응, 차수와 지수의 관계, 정규부분군과 Galois 중간체의 대응. https://mathworld.wolfram.com/FundamentalTheoremofGaloisTheory.html
 [^2]: M. Mrinal, "Galois theory and the Abel–Ruffini theorem", University of Chicago REU 2019 — 근호 가해성과 Galois 군 가해성의 동치, $S_n$ 이 $n\ge 5$ 에서 비가해임, Galois 군이 $S_5$ 인 5차 다항식( $x^5-6x+3$ ) 예. https://math.uchicago.edu/~may/REU2019/REUPapers/Mrinal.pdf

@@ -89,9 +89,9 @@ $$
 
 왼쪽 항이 **기하적 기본군**이다. 유리점 $x\in X(k)$ 마다 오른쪽 사상의 절 $s_x\colon\mathrm{Gal}(\bar k/k)\to\pi_1^{\mathrm{et}}(X,\bar b)$ 가 하나 정해지고, 켤레를 무시하면 절의 켤레류가 남는다. 절이 하나 있으면 켤레로 기하적 기본군 위의 Galois 작용이 정해진다.
 
-## 표수 p 의 야생 부분
+## 표수 p 의 야생 분기
 
-$\bar{\mathbb F}\_p$ 위에서 위의 계산이 답을 준다.
+위의 계산을 $\bar{\mathbb F}\_p$ 위에서 하면 다음이 나온다.
 
 $$
 \pi_1^{\mathrm{et}}(\mathbb G\_{m,\bar{\mathbb F}\_p})=\hat{\mathbb Z}^{(p')},
@@ -99,14 +99,14 @@ $$
 \pi_1^{\mathrm{et}}(\mathbb A^1\_{\bar{\mathbb F}\_p})\neq1
 $$
 
-왼쪽에서 $p$ 성분이 빠지는 것은 $t\mapsto u^p$ 가 에탈이 아니기 때문에 생긴다. 오른쪽이 자명하지 않은 것은 Artin–Schreier 덮개 $y^p-y=f(t)$ 때문이다. 복소수 위의 $\mathbb A^1$ 은 단순연결이므로 표수 $p$ 에서만 나오는 현상이다.
+$t\mapsto u^p$ 가 에탈이 아니므로 왼쪽에서 $p$ 성분이 빠진다. 오른쪽이 자명하지 않은 것은 Artin–Schreier 덮개 $y^p-y=f(t)$ 때문이다. 복소수 위의 $\mathbb A^1$ 은 단순연결이므로 이 현상은 표수 $p$ 에서만 나온다.
 
-$\ell\neq p$ 인 $\ell$ 성분은 표수 $0$ 으로 올릴 때 보존되고, 이것이 $\ell$ 진 [에탈 코호몰로지](etale-cohomology.md)를 쓰는 이유다.
+$\ell\neq p$ 인 $\ell$ 성분은 표수 $0$ 으로 올릴 때 보존된다. $\ell$ 진 [에탈 코호몰로지](etale-cohomology.md)가 이 성분을 쓴다.
 
 # 활용
 
 - **Tate 가군.** 아벨 다양체 $A$ 에서 연결 유한 에탈 덮개는 곱셈 $\lbrack n\rbrack\colon A\to A$ 로 얻는 것뿐이므로 $\pi_1^{\mathrm{et}}(A\_{\bar k})\cong\prod\_\ell T\_\ell A$ 다. [Galois 표현](galois-representations.md)이 다루는 대상이 기하적 기본군 그 자체다.
-- **에탈 코호몰로지의 1 차.** 유한 아벨군 계수의 1 차 코호몰로지가 연속 준동형의 군 $\mathrm{Hom}\_{\mathrm{cont}}(\pi_1^{\mathrm{et}}(X),\mathbb Z/n)$ 이다. [Weil 추측](deligne-weil-conjectures.md)의 무대인 코호몰로지의 저차가 이 군으로 계산된다.
+- **에탈 코호몰로지의 1 차.** 유한 아벨군 계수의 1 차 코호몰로지가 연속 준동형의 군 $\mathrm{Hom}\_{\mathrm{cont}}(\pi_1^{\mathrm{et}}(X),\mathbb Z/n)$ 이다. [Weil 추측](deligne-weil-conjectures.md)의 증명이 쓰는 코호몰로지의 저차를 이 군으로 계산한다.
 - **Chabauty–Kim 방법.** 기하적 기본군의 $\mathbb Q_p$ 계수 단일값 몫을 하강 중심열로 자르고, 각 층에서 유리점의 상을 Selmer 다양체 안에 가둔다. 층을 깊게 잡을수록 조건이 느슨해지는 것이 이 방법의 구조다[^3].
 - **절 추측.** 수체 위 쌍곡곡선에서 유리점의 집합과 기본 완전열의 절의 켤레류 집합이 일대일 대응한다는 것이 Grothendieck 의 절 추측이다[^4].
 
