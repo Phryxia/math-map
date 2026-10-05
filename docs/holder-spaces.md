@@ -122,6 +122,6 @@ $p$ 가 $n$ 에 가까우면 $\gamma$ 가 $0$ 에 가깝고, $p\to\infty$ 에서
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schauder 추정](schauder-estimates.md)
 
 #analysis #functional_analysis #topology

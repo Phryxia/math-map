@@ -88,6 +88,6 @@ $\Omega$ 에서 $\Delta u=0$ 을 만족하는 [분포](schwartz-distributions.md
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schauder 추정](schauder-estimates.md)
 
 #functional_analysis #analysis #measure_theory
