@@ -72,6 +72,7 @@ graph TD
 - [PID 위의 유한생성 가군](finitely-generated-modules.md): 구조정리와 Smith 표준형
 - [Nakayama 보조정리](nakayama-lemma.md): 국소환 위의 가군을 잉여체로 내려 읽기
 - [사영가군](projective-modules.md): 들어 올리기 성질, 국소적 자유성, Quillen–Suslin 정리
+- [단사가군](injective-modules.md): 부분가군에서의 확장 성질, Baer 판정, 나눗셈 가능 아벨군과 단사 포락
 - [대수적 K 이론](algebraic-k-theory.md): 환의 사영가군에서 나오는 고차 불변량
 
 ## 대수다양체
