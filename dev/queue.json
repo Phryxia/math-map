@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-06T13:05:38.069Z",
-  "nextSeq": 1808,
+  "savedAt": "2026-10-06T17:00:43.394Z",
+  "nextSeq": 1815,
   "items": [
     {
       "id": "0490c28e",
@@ -908,6 +908,46 @@
       "seq": 1803
     },
     {
+      "id": "0a7a3307",
+      "title": "점근급수 작업 결과와 euler-maclaurin 재편 판정 (37차)",
+      "priority": 11,
+      "note": "37차에 asymptotic-series(점근급수, 125줄)를 새로 썼다. 부모는 power-series 하나, 자식은 euler-maclaurin 하나다. laplace-method 와 stokes-phenomenon 을 자식으로 두지 않은 이유는 조상 중복이다. gamma-function 의 부모가 euler-maclaurin 이고 laplace-method 의 부모가 gamma-function 이라, asymptotic-series -> euler-maclaurin 간선만으로 점근해석 축 전체(laplace-method stationary-phase stokes-phenomenon borel-pade resurgence exact-wkb)가 후손이 된다. 직접 간선을 더하면 5절의 '다른 부모의 조상인 부모를 뺀다' 에 걸린다.\n\n옛 항목 412200f8 은 euler-maclaurin 의 네 절(점근전개, 나머지항의 크기, 최적 절단과 초점근 정확도, 전개의 비유일성)을 옮기라고 적었으나 둘만 옮겼다. '점근전개' 절은 Poincare 정의 일반론이므로 점근급수 링크 한 문단으로 줄였고, '전개의 비유일성' 절은 계수 유일성과 exp(-x) 예가 일반론이므로 EM 고유분(최적 절단에 남는 오차 exp(-2 pi N))만 '## 지수적으로 작은 항' 으로 남겼다. '나머지항의 크기' 와 '최적 절단과 초점근 정확도' 는 Bernoulli 계수와 주기 Bernoulli 함수에 특수한 계산이라 EM 에 남겼다. 옮길 것이 더 없다. EM 제목은 이미 'Euler-Maclaurin 공식' 으로 좁혀져 있었다.\n\n점근급수 문서가 다루지 않은 것은 Borel 변환의 정의 자체(borel-pade 의 몫), 점근 수열로 log 를 섞는 경우의 예, Stirling 급수의 유도(euler-maclaurin 의 '## Stirling 급수' 절)다.",
+      "createdAt": "2026-10-06T16:45:25.218Z",
+      "seq": 1808
+    },
+    {
+      "id": "fd3d4236",
+      "title": "다중 zeta 값 작업 결과와 riemann-zeta 묶음 (37차)",
+      "priority": 11,
+      "note": "37차에 multiple-zeta-values(다중 zeta 값, 117줄)를 썼다. 부모는 riemann-zeta 하나, 자식은 없다. 담은 것은 급수 정의와 무게·깊이, omega_0=dt/t 와 omega_1=dt/(1-t) 단어로 쓰는 반복 적분 표현, 스터플 관계, 셔플 관계, 둘을 합친 이중 셔플 관계(zeta(3,1)=zeta(4)/4=pi^4/360 을 예로 끌어냈다), t->1-t 치환의 쌍대성(zeta(2,1)=zeta(3) 을 단어 역순과 글자 교환으로 보였다), 무게별 차원의 상한과 Zagier 추측이다.\n\nriemann-zeta 의 자식이 다섯에서 여섯으로 늘어 5절대로 H3 셋으로 묶었다. '### 소수 분포'(prime-number-theorem riemann-hypothesis), '### 특수값'(bernoulli-numbers multiple-zeta-values), '### 자동형 형식과 일반화'(eisenstein-series tate-thesis) 다. order-check 통과.\n\n차원 상한은 Goncharov 와 Terasoma 의 이름만 적고 각주를 달지 않았다. 논문 서지를 확인하지 못했다. 각주를 달 회차에 Terasoma, Invent. Math. 149 (2002) 와 Goncharov 쪽을 확인한다.",
+      "createdAt": "2026-10-06T16:50:10.876Z",
+      "seq": 1809
+    },
+    {
+      "id": "876f7ccb",
+      "title": "반복 강제법 작업 결과와 borel-conjecture 부모 이동 (37차)",
+      "priority": 11,
+      "note": "37차에 iterated-forcing(반복 강제법, 88줄)을 썼다. 부모는 forcing 하나, 자식은 borel-conjecture 하나다. 담은 것은 두 단계 반복 P * Q-dot 의 정의와 순서, 길이 alpha 의 반복, 지지 집합과 유한지지·가산지지, 결합법칙(V[G]=V[G_0][G_1]), 유한지지 반복의 ccc(Delta 체계 보조정리로 증명 요지), 가산지지 반복의 properness 보존(Shelah 각주), 길이 omega_2 반복과 2^aleph_0=aleph_2 다.\n\n간선을 둘 고쳤다. forcing 의 '## 반복 강제법' 절(3문단)은 새 문서와 중복이라 링크 한 문단으로 줄였고, 그 절에서만 쓰던 각주 [^2](Solovay-Tennenbaum)를 iterated-forcing 의 활용 절로 옮겼다. borel-conjecture 의 부모를 forcing 에서 iterated-forcing 으로 바꿨다. 그 문서의 무모순성 증명이 Laver 순서의 가산지지 omega_2 반복이므로 반복 강제법이 선수지식이다. forcing 의 자식 목록에서 borel-conjecture 를 빼고 iterated-forcing 을 넣었다. foundations-overview 의 지도 mermaid 에는 borel-conjecture 노드가 없어 고칠 것이 없었다.\n\n문서에서 쓰지 않은 것. properness 의 정의 자체(proper 순서 문서가 없어 이름만 썼다), Laver 성질과 보존 정리 일반론, 강제 공리(PFA)와 Martin 최대. 헤딩 '## 지지' 는 4절 문장형 헤딩 grep 의 '[^로]지' 에 걸려 '## 지지 집합' 으로 고쳤다. 지지는 명사이지만 검사가 0 건이어야 하므로 헤딩에서 '지' 로 끝내지 않는다.",
+      "createdAt": "2026-10-06T16:55:35.103Z",
+      "seq": 1811
+    },
+    {
+      "id": "93613579",
+      "title": "Taylor 정리를 power-series 에서 분리하지 않은 판정 (37차)",
+      "priority": 11,
+      "note": "판정 완료 메모. pop 으로 꺼낼 작업이 아니다. 옛 항목 699b709d 의 판정을 37차에 끝냈다. power-series 의 '## Taylor 정리와 나머지항' 절은 24줄이고 Lagrange 형, 적분형, 해석성 판정 세 가지가 전부다. 적분형에서 평균값 정리로 Lagrange 형을 얻는 한 문장이 증명의 요지 전부이므로 4절의 '증명이 두 문단을 넘으면 별도 문서' 기준에 닿지 않는다. 분리하면 newton-method 와 gradient-descent 가 부모를 하나 더 갖게 되는데 두 문서 모두 power-series 의 후손이라 간선이 늘어나는 대신 사슬만 길어진다. 분리하지 않는다.\n\n같은 작업에서 power-series 활용 절의 '**점근 전개**: 발산하는 급수도 처음 몇 항이 좋은 근사를 준다' 항목을 asymptotic-series 링크로 바꿨다. 굵은 글씨는 정의되는 용어에만 쓰는데 그 문서는 점근전개를 정의하지 않고, 37차에 그 정의를 담은 문서가 생겼기 때문이다. 각주 [^1](Bender-Orszag 3장)은 그 자리에 그대로 두었다.",
+      "createdAt": "2026-10-06T16:56:37.168Z",
+      "seq": 1813
+    },
+    {
+      "id": "1f379210",
+      "title": "37차 회귀 점검 전수 결과",
+      "priority": 11,
+      "note": "37차(2026-10-06) 점검 결과. 새로 발견한 위반은 없다.\n\n문장형 헤딩 전수 grep 은 15 건을 보고했고 전부 '## 증명의 요지' 다. 4절이 권장하는 표현이므로 오탐이고, 같은 판정이 큐 항목 f7c54f08 에 이미 있다. 비유 금지 grep 전수는 4 건(elliptic-curves:118, lie-algebras:162, post-quantum-cryptography:126 두 곳)을 보고했고 전부 굳은 용어라 큐 항목 dc8b9099 의 판정과 같다. 새 메모를 따로 만들지 않았다.\n\n이번 회차 새 문서 셋(asymptotic-series multiple-zeta-values iterated-forcing)과 고친 문서 다섯(euler-maclaurin power-series forcing borel-conjecture riemann-zeta laplace-method)에 라틴 혼동 키릴·그리스 문자 검사(큐 44ca5d52)와 수식 안 글자 연산자 검사(큐 5b750f72)를 돌려 0 건을 확인했다. 번역체 '어진다' 검사는 iterated-forcing:67 의 '다루어진다' 를 잡아 능동으로 고쳤다(커밋 4616978).",
+      "createdAt": "2026-10-06T16:58:36.270Z",
+      "seq": 1814
+    },
+    {
       "id": "2d5c4e17",
       "title": "무한 범주와 호모토피 이론",
       "priority": 10,
@@ -930,14 +970,6 @@
       "note": "소 아이디얼의 확대/축소 대응을 그린 flowchart 인데 4절 다이어그램 규칙의 경계에 있다. 정점과 간선(포함관계 사슬)이 내용이라는 점에서 Hasse 도형에 가까워 남겼으나, '소멸 -> 없음' 같은 정점은 문장으로 충분하다. 다음에 이 문서를 보강할 때 판단한다",
       "createdAt": "2026-09-17T00:59:00.495Z",
       "seq": 434
-    },
-    {
-      "id": "699b709d",
-      "title": "Taylor 정리를 별도 문서로 분리할지 판단",
-      "priority": 10,
-      "note": "해석학. power-series 의 'Taylor 정리와 나머지항' 절(Lagrange 형, 적분형, 해석성 판정)이 독립 문서가 될 분량인지 본다. 지금은 power-series 안에서 충분히 짧아 나누지 않았다. Newton 방법과 gradient-descent 의 수렴 속도 분석이 나머지항을 쓰므로 부모는 power-series, 자식은 newton-method 가 된다",
-      "createdAt": "2026-09-17T08:40:23.743Z",
-      "seq": 460
     },
     {
       "id": "09c81cac",
@@ -1244,14 +1276,6 @@
       "seq": 1074
     },
     {
-      "id": "3db26908",
-      "title": "반복 강제법",
-      "priority": 10,
-      "note": "forcing 을 부모로 쓴다(기수 불변량의 자식이 아니라는 판정은 2026-09-23 회차에 끝났다). 유한지지와 가산지지의 구별, ccc 의 보존, 극한 단계 처리가 내용이다. 이번 회차에 쓴 luzin-sierpinski-sets 의 각주 3(Laver, Borel 추측의 무모순성)이 가산지지 반복의 대표 예라 그 문서에서 본문 링크를 걸 자리가 있다. random-real-forcing 과 martins-axiom 도 반복을 전제하고 설명하므로 본문 링크 후보다",
-      "createdAt": "2026-09-24T04:39:32.930Z",
-      "seq": 1075
-    },
-    {
       "id": "32502811",
       "title": "문장형 헤딩 회귀 점검 (다음 차수)",
       "priority": 10,
@@ -1340,14 +1364,6 @@
       "seq": 1131
     },
     {
-      "id": "412200f8",
-      "title": "점근급수",
-      "priority": 10,
-      "note": "해석학. 신규 주제. euler-maclaurin 이 200 줄 가운데 네 절(점근전개 91, 나머지항의 크기 105, 최적 절단과 초점근 정확도 118, 전개의 비유일성 128)을 점근급수 일반에 쓰고 있어 그 내용이 이 문서로 옮겨갈 후보다. 부모 후보는 series 나 taylor-series 쪽과 euler-maclaurin 이다. 내용: Poincare 의 점근전개 정의(수렴이 아니라 고정한 n 에서 x->0 극한), 수렴급수와의 차이, 전개의 비유일성(exp(-1/x) 가 모든 계수 0), Borel 재합산과의 관계(borel-pade 와 exact-wkb 가 이미 있으므로 8절 겹침 판정 먼저), 최적 절단과 초점근 정확도, Watson 보조정리와 Laplace 방법. 이 문서가 생기면 euler-maclaurin 제목을 'Euler-Maclaurin 공식' 으로 좁히고 네 절을 옮길 것",
-      "createdAt": "2026-09-25T08:53:18.024Z",
-      "seq": 1157
-    },
-    {
       "id": "f70953a1",
       "title": "깃발다양체 문서 분리 판정",
       "priority": 10,
@@ -1394,14 +1410,6 @@
       "note": "2026-09-26 회차의 siegel-modular-forms note 가 남긴 후속 후보 넷 가운데 (a) Jacobi 형식은 2026-09-27 에 jacobi-forms 로 썼다. 남은 것 셋. (b) Igusa 불변량: siegel-modular-forms 활용 절 첫째가 이름만 쓴다. 종수 2 곡선의 J2, J4, J6, J8, J10 과 절대 불변량, 부모는 siegel-modular-forms 다. hyperelliptic-curves 문서가 없으므로 둘째 부모는 jacobian-variety 나 종수 쪽을 볼 것. (c) Satake 콤팩트화와 Siegel 연산자: siegel-modular-forms 의 유한 차원성 절과 Phi 연산자의 핵 절이 각각 한 문단이므로 8절 기준으로 문서가 될 분량인지 먼저 판정할 것. (d) 차수 g 의 theta 급수: theta-series 를 보강하는 쪽이 나을 수 있다(8절 겹침 판정 먼저). siegel-modular-forms 가 정의 없이 쓴 용어: 반정수 대칭행렬, 양정부호, 등급환의 Proj, 선다발의 절단, Hecke 고윳값, 일반적이지 않은 자동형 표현, 초타원적, 유니모듈러 격자, 절대 불변량. jacobi-forms 가 정의 없이 쓴 용어: Kohnen plus 공간(문서 안에서 한 문장으로 풀었다), 판별식 형식, Jacobi theta 함수, Dedekind eta 함수, 타원 종수, Chern 수.",
       "createdAt": "2026-09-27T00:48:14.145Z",
       "seq": 1279
-    },
-    {
-      "id": "b3a443ac",
-      "title": "다중 zeta 값",
-      "priority": 10,
-      "note": "정수론 또는 복소해석. coleman-integration 활용 절 넷째 항목이 p 진 다중 zeta 값을 언급하는데 복소수 쪽 다중 zeta 값 문서가 없어서 p 진 쪽을 먼저 열면 부모가 없다(2026-09-26 셋째 회차 판정). 부모 후보는 riemann-zeta. 쓸 내용: 급수 정의와 수렴 조건, 반복 적분 표현, 이중 셔플 관계, 무게별 차원. 이 문서가 생긴 뒤에 p 진 다중 zeta 값을 그 자식과 coleman-integration 의 자식으로 열 수 있다",
-      "createdAt": "2026-09-27T08:44:36.594Z",
-      "seq": 1300
     },
     {
       "id": "5b192c2e",
@@ -2074,6 +2082,22 @@
       "note": "분야: 통계(#statistics #machine_learning #information_theory). 붙일 부모 후보: regularization 과 kl-divergence. 37차에 kolmogorov-complexity 활용 '최소기술길이' 절을 쓰며 링크를 걸 문서가 없어 이름만 썼다. 내용: 편향-분산 분해와 검증오차, AIC(Akaike information criterion)와 BIC(Bayesian information criterion)의 유도, 교차검증, 최소기술길이 원리와 Kolmogorov 복잡도의 계산 가능한 대체물, Bayes 인자(bayesian-inference 와의 중복 판정 필요).",
       "createdAt": "2026-10-06T12:49:11.505Z",
       "seq": 1798
+    },
+    {
+      "id": "621c77df",
+      "title": "p 진 다중 zeta 값",
+      "priority": 10,
+      "note": "정수론. 신규 주제. multiple-zeta-values 가 생겼으므로 이제 부모가 둘 선다. coleman-integration(활용 절 넷째 항목이 이 값을 언급한다)과 multiple-zeta-values 다. 쓸 내용: 사영직선에서 0,1,infinity 를 뺀 공간 위의 Coleman 반복 적분, 복소수 쪽 단어 표현과의 대응, Frobenius 불변 경로와 p 진 다중 로그, 복소수 쪽 이중 셔플 관계가 p 진 쪽에서도 성립하는 범위. 간선 추가 전 check-cycle 로 coleman-integration 과 multiple-zeta-values 가 서로 조상이 아닌지 확인할 것",
+      "createdAt": "2026-10-06T16:50:11.058Z",
+      "seq": 1810
+    },
+    {
+      "id": "eeb33804",
+      "title": "proper 강제법 문서",
+      "priority": 10,
+      "note": "집합론. 신규 주제. iterated-forcing(37차)이 properness 를 이름만 쓰고 정의하지 않았다. 쓸 내용: 가산 기본 모형 M 에 대한 (M,P) 일반 조건, proper 가 ccc 와 적정 닫힘을 함께 포함하는 것, 정상집합 보존과의 동치, Laver 와 Mathias 순서가 proper 인 예. 부모는 iterated-forcing 과 forcing 가운데 하나. 간선 추가 전 borel-conjecture 와의 조상관계를 check-cycle 로 확인할 것",
+      "createdAt": "2026-10-06T16:55:35.235Z",
+      "seq": 1812
     },
     {
       "id": "dfb3e493",
