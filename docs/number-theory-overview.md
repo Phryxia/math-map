@@ -58,6 +58,7 @@ graph TD
 - [초월수](transcendental-numbers.md): $e$ 와 $\pi$ 의 초월성, 로그의 일차형식
 - [Baker 정리](baker-theorem.md): 로그의 일차형식에 대한 유효 하한, Diophantus 방정식의 해 상한
 - [Thue 방정식](thue-equation.md): 차수 3 이상 이진형식의 정수해, 유한성과 Baker 하한이 주는 유효 상한
+- [S-단위 방정식](s-unit-equation.md): 단위군에서 푸는 $u+v=1$, Thue 방정식과 정수점 유한성의 공통 환원
 - [Siegel 의 정수점 정리](siegel-integral-points.md): 종수와 무한원점의 개수로 가른 정수점의 유한성, 유효 상한의 두 길
 
 ## 암호와 계산
