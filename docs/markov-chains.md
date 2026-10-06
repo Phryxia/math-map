@@ -162,7 +162,7 @@ $$
 ## 대기행렬, 은닉 Markov 모형, 알고리즘 분석
 
 - 대기행렬과 재고 모형. 상태를 대기 인원으로 두고 정상분포에서 평균 대기 길이를 구한다.
-- 은닉 Markov 모형. 관측이 상태의 잡음 섞인 함수일 때 전이구조를 추정한다.
+- [은닉 Markov 모형](hidden-markov-model.md). 관측이 상태의 잡음 섞인 함수일 때 전이구조를 추정한다.
 - 확률적 알고리즘 분석. 무작위화 알고리즘의 상태 변화를 연쇄로 보고 혼합시간으로 실행시간을 평가한다.
 
 [^1]: Karl Sigman, Limiting distribution for a Markov chain (Columbia IEOR 강의노트), 정상분포의 존재·유일성, 평균 복귀시간 공식, 기약·비주기·양재귀 조건 아래의 수렴 정리. http://www.columbia.edu/~ks20/stochastic-I/stochastic-I-MCII.pdf
