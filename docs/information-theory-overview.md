@@ -23,7 +23,8 @@ graph TD
   ECC["오류정정부호"] --> CC
   FF["유한체"] --> ECC
   ECC --> SP["구 채우기"]
-  ECC --> MAT["Mathieu 군"]
+  ECC --> GOL["Golay 부호"]
+  GOL --> MAT["Mathieu 군"]
   KL --> LD["대편차 원리"]
   CI["집중부등식"] --> LD
   KL --> SINK["Sinkhorn 알고리즘"]
