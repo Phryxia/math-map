@@ -102,7 +102,7 @@ $$
 
 ## 확률미분방정식
 
-2차변동이 살아 있으므로 $dB_t$ 에 대한 적분은 보통의 Riemann–Stieltjes 적분으로 정의되지 않는다. 대신 적분을 martingale 의 극한으로 정의하면 Itô 적분이 되고, 연쇄법칙에 2차항이 남는다.
+2차변동이 살아 있으므로 $dB_t$ 에 대한 적분은 보통의 [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md)으로 정의되지 않는다. 대신 적분을 martingale 의 극한으로 정의하면 Itô 적분이 되고, 연쇄법칙에 2차항이 남는다.
 
 $$
 df(B_t)=f'(B_t)\thinspace dB_t+\tfrac12 f''(B_t)\thinspace dt

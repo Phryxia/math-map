@@ -2,7 +2,7 @@
 
 # 개요
 
-[Brown 운동](brownian-motion.md)의 경로는 1차변동이 무한이라서 $\int f\thinspace dB$ 를 경로마다 Riemann–Stieltjes 적분으로 정의할 수 없다. 무작위로 흔들리는 항이 들어간 미분방정식을 쓰려면 그 항을 적분할 수 있어야 한다.
+[Brown 운동](brownian-motion.md)의 경로는 1차변동이 무한이라서 $\int f\thinspace dB$ 를 경로마다 [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md)으로 정의할 수 없다. 무작위로 흔들리는 항이 들어간 미분방정식을 쓰려면 그 항을 적분할 수 있어야 한다.
 
 Itô 의 해법은 적분을 경로별로 정의하지 않고 $L^2$ 극한으로 정의하는 것이다. 리만 합에서 대표점을 구간의 왼쪽 끝에서 잡으면 합이 martingale 이 되고 분산이 정확히 계산되어(Itô 등거리) 극한이 존재한다. 대가는 연쇄법칙이 바뀌는 것이다. 2차변동이 사라지지 않아 Taylor 전개의 2차항이 $dt$ 규모로 남고, 이 항이 Itô 공식의 보정항이 된다.
 
