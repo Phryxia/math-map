@@ -87,6 +87,6 @@ Peano 공리에서 증명되는 문장의 번호 집합과 반증되는 문장�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Martin-Löf 무작위성](martin-lof-randomness.md)
 
 #computation #logic #foundations

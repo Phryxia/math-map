@@ -90,11 +90,7 @@ $K(x,y)\le K(x)+K(y\mid x)+c$ 가 성립하고 역방향도 대칭 정보의 정
 
 ## 무작위성의 정의
 
-Martin-Löf 무작위성은 무한 수열을 실효적 영집합으로 걸러 정의하고, Schnorr 정리는 그 정의가 모든 접두사 $x\_{1:n}$ 에서 $K(x\_{1:n})\ge n-c$ 인 것과 동치임을 말한다. 압축 불가능성이 무작위성의 정의가 된다.
-
-## Chaitin 상수
-
-접두사 없는 보편 기계가 멈출 확률 $\Omega=\sum_{U(p)\downarrow}2^{-\vert p\vert}$ 는 Martin-Löf 무작위인 실수다. $\Omega$ 의 처음 $n$ 비트를 알면 길이 $n$ 이하의 프로그램이 멈추는지 전부 판정할 수 있으므로 정지 문제가 풀린다.
+[Martin-Löf 무작위성](martin-lof-randomness.md)은 무한 수열을 실효적 영집합으로 걸러 정의한다. Schnorr 정리가 그 정의를 모든 접두사에서 $K(x_1\dots x_n)\ge n-c$ 인 것과 묶으므로, 압축 불가능성이 무작위성의 정의가 된다. 접두사 없는 보편 기계가 멈출 확률 $\Omega$ 가 그런 수열의 예다.
 
 ## 최소기술길이
 
@@ -115,6 +111,6 @@ Martin-Löf 무작위성은 무한 수열을 실효적 영집합으로 걸러 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Martin-Löf 무작위성](martin-lof-randomness.md)
 
 #computation #information_theory #logic

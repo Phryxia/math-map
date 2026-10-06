@@ -14,6 +14,7 @@
 graph TD
   CA["기수"] --> CB["계산 가능성"]
   CB --> KC["Kolmogorov 복잡도"]
+  KC --> MLR["Martin-Löf 무작위성"]
   CB --> FA["유한 오토마타"]
   CB --> RT["Rice 정리"]
   CB --> LC["Lambda calculus"]
@@ -54,6 +55,7 @@ graph TD
 - [Rice 정리](rice-theorem.md): 자명하지 않은 의미론적 성질은 모두 결정 불가능
 - [Rice–Shapiro 정리](rice-shapiro-theorem.md): 인식 가능한 의미론적 성질은 유한 조각으로 확인되는 것뿐
 - [Kolmogorov 복잡도](kolmogorov-complexity.md): 문자열 하나를 적는 가장 짧은 프로그램의 길이, 압축 불가능성과 계산 불가능성
+- [Martin-Löf 무작위성](martin-lof-randomness.md): 실효적 영집합을 피하는 수열, Schnorr 정리와 Chaitin 상수
 
 ## 계산 모형과 의미론
 
