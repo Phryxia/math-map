@@ -94,6 +94,7 @@ graph TD
 - [쌍 상관 추측](pair-correlation-conjecture.md): 임계선 위 영점의 간격 분포와 무작위 행렬 고윳값 통계의 일치
 - [Poisson 합 공식](poisson-summation.md), [Mellin 변환](mellin-transform.md), [Euler–Maclaurin 공식](euler-maclaurin.md): 해석적 도구
 - [Bernoulli 수](bernoulli-numbers.md) → [Stickelberger 원소](stickelberger.md)
+- [다중 zeta 값](multiple-zeta-values.md): 순서 조건을 붙인 다중 급수, 스터플·셔플 두 곱셈 규칙과 이중 셔플 관계
 - [Tate 의 논문](tate-thesis.md): $\zeta$ 함수의 아델적 증명
 
 ## 모듈러 형식

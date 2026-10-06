@@ -131,9 +131,18 @@ Montgomery 와 Dyson 은 임계선 위 영점의 간격 분포가 Gauss 유니�
 
 ## 더 알아보기
 
+### 소수 분포
+
 - [소수 정리](prime-number-theorem.md)
 - [Riemann 가설](riemann-hypothesis.md)
+
+### 특수값
+
 - [Bernoulli 수](bernoulli-numbers.md)
+- [다중 zeta 값](multiple-zeta-values.md)
+
+### 자동형 형식과 일반화
+
 - [Eisenstein 급수](eisenstein-series.md)
 - [Tate 의 논문](tate-thesis.md)
 
