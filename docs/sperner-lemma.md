@@ -85,6 +85,6 @@ function sperner(triangulation, label) {
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [KKM 정리](kkm-theorem.md)
 
 #combinatorics #topology #algorithms #theorem

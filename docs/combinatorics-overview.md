@@ -45,6 +45,7 @@ graph TD
 - [Erdős–Ko–Rado 정리](erdos-ko-rado.md): 교차족의 최대 크기, Katona 의 순환 배열 세기
 - [Littlewood–Offord 문제](littlewood-offord.md): 부호합의 반집중, 반사슬 논법이 주는 상한
 - [Sperner 보조정리](sperner-lemma.md): 단체의 이름표가 강제하는 완전 단체, Brouwer 고정점 정리의 조합적 증명
+- [KKM 정리](kkm-theorem.md): 면 구조를 따르는 닫힌 덮개의 공통점, Brouwer 고정점 정리와의 동치
 ## 분할과 조합적 종
 
 - [Stirling 수](stirling-numbers.md): 집합 분할과 순열의 순환을 세는 수, 거듭제곱과 내림 계승의 기저 변환
