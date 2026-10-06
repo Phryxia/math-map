@@ -103,5 +103,6 @@ $A$ 의 입력을 $B$ 의 입력으로 바꾸는 계산 가능한 함수 $f$ 가
 ### 복잡도
 
 - [P 대 NP 문제](p-np.md)
+- [Kolmogorov 복잡도](kolmogorov-complexity.md)
 
 #computation #logic
