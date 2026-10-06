@@ -44,7 +44,7 @@ $$
 \mathrm{JL}\_v:\ \mathrm{Irr}\bigl(B_v^\times\bigr)\ \xrightarrow{\ \sim\ }\ \lbrace\mathrm{GL}\_2(F_v)\text{ 의 이산계열}\rbrace
 $$
 
-이고 아래 지표 항등식으로 특징지어진다. 자명 표현이 Steinberg 표현에, 차원이 큰 표현이 초첨점 표현에 대응한다.
+이고 아래 지표 항등식이 그 대응을 정한다. 자명 표현이 Steinberg 표현에, 차원이 큰 표현이 초첨점 표현에 대응한다.
 
 정칙 타원원소 $\gamma$ 에서 지표의 부호가 뒤집힌다.
 

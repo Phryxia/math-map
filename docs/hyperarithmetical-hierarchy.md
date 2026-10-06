@@ -26,7 +26,7 @@ $$
 - $a\in\mathcal O$ 이면 $2^a\in\mathcal O$ 이고 $\vert 2^a\vert=\vert a\vert+1$ 이다.
 - $\varphi_e$ 가 전역함수이고 모든 $n$ 에 대해 $\varphi_e(n)\in\mathcal O$ 이며 $\vert\varphi_e(n)\vert\lt \vert\varphi_e(n+1)\vert$ 이면, $3\cdot 5^e\in\mathcal O$ 이고 $\vert 3\cdot 5^e\vert=\sup_n\vert\varphi_e(n)\vert$ 이다.
 
-$\mathcal O$ 의 원소가 표기하는 서수 전체는 $\omega_1^{\mathrm{CK}}$ 미만의 서수 전체와 같다. 이 $\omega_1^{\mathrm{CK}}$ 를 **Church–Kleene 서수**라 하고, 자연수 위의 계산가능한 정렬순서의 순서형이 되지 못하는 최소 서수로도 특징지어진다.
+$\mathcal O$ 의 원소가 표기하는 서수 전체는 $\omega_1^{\mathrm{CK}}$ 미만의 서수 전체와 같다. 이 $\omega_1^{\mathrm{CK}}$ 를 **Church–Kleene 서수**라 하고, 자연수 위의 계산가능한 정렬순서의 순서형이 되지 못하는 최소 서수이기도 하다.
 
 한 서수에 표기가 여럿 붙는다. $\omega$ 로 올라가는 증가열은 여럿이고 그 프로그램 번호가 모두 다른 표기를 준다.
 
