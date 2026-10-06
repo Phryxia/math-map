@@ -70,7 +70,7 @@ $G$ 가 콤팩트면 $\mu(G)\lt\infty$ 이므로 $\mu(G)=1$ 로 정규화할 수
 
 국소콤팩트 아벨군 $G$ 에 대해 연속 준동형 $\chi:G\to\lbrace z\in\mathbb C:\vert z\vert=1\rbrace$ 를 **지표**라 하고, 지표 전체가 점별 곱으로 군을 이룬다. 콤팩트 집합 위의 균등수렴 위상을 주면 이 **쌍대군** $\hat G$ 도 국소콤팩트 아벨군이다.
 
-$\widehat{\mathbb R}\cong\mathbb R$, $\widehat{\mathbb Z}\cong S^1$, $\widehat{S^1}\cong\mathbb Z$, $\widehat{\mathbb Q\_p}\cong\mathbb Q\_p$ 다. Pontryagin 쌍대성은 자연사상 $G\to\hat{\hat G}$ 가 위상군 동형이라는 정리이고, 이것이 [Fourier 변환](fourier.md)을 군 위에서 정의하는 틀이다.
+$\widehat{\mathbb R}\cong\mathbb R$, $\widehat{\mathbb Z}\cong S^1$, $\widehat{S^1}\cong\mathbb Z$, $\widehat{\mathbb Q\_p}\cong\mathbb Q\_p$ 다. Pontryagin 쌍대성은 자연사상 $G\to\hat{\hat G}$ 가 위상군 동형이라는 정리이고, 이것이 [Fourier 변환](fourier-transform.md)을 군 위에서 정의하는 틀이다.
 
 # 활용
 
