@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-06T05:04:51.641Z",
-  "nextSeq": 1776,
+  "savedAt": "2026-10-06T09:01:32.457Z",
+  "nextSeq": 1792,
   "items": [
     {
       "id": "0490c28e",
@@ -42,6 +42,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차 시작에서 세션 시작 pull 이 divergent 로 실패해(큐의 shallow clone 메모) 원격 브랜치를 스크래치패드에 따로 클론하고 거기서 1절 명령을 돌렸다. 그때 node dev/queue.mjs list 가 큐 서버를 그 클론 경로로 기동했다. 뒤에 --unshallow 로 원래 작업 트리를 정상화하고 그 클론을 지웠지만, 서버는 포트 7777 에 그대로 살아 있었다. 그래서 회차 내내 /home/user/math-map 에서 돌린 push 와 remove 가 전부 그 서버로 갔고, 종료 단계의 queue.mjs stop 이 'stopped. saved=true committed=false (git 저장소가 아니다)' 를 냈다. dev/queue.json 은 세션 시작 상태 그대로였고 git status 는 깨끗했다. 메모 넷과 통독 항목 교체가 커밋되지 않을 뻔했다.\n\n복구. 서버는 저장할 때 지운 디렉터리를 다시 만들었으므로 파일이 남아 있었다. find /tmp -name queue.json -newermt '<회차 시작 시각>' 로 찾아 스크래치패드 클론 경로의 queue.json 을 작업 트리의 dev/queue.json 으로 복사하고, JSON 유효성과 항목 수와 이 회차 메모의 존재를 확인한 뒤 'queue: N items (날짜)' 로 따로 커밋했다.\n\n규칙. 큐 서버는 작업 트리에서만 기동한다. 세션 시작 pull 이 실패하면 저장소를 다른 곳에 클론하지 말고 --unshallow 와 rev-list 로 정상화한다(shallow clone 메모). 어떤 이유로 작업 트리 밖에서 queue.mjs 를 한 번이라도 돌렸으면, 이어서 작업 트리에서 node dev/queue.mjs status 로 서버가 어디 것인지 확인하고 stop 으로 끊은 뒤 다시 기동한다. 종료 단계에서는 stop 의 출력에 committed=true 가 있는지 반드시 읽는다. committed=false 면 git log 로 'queue:' 커밋이 생겼는지 보고, 없으면 위 복구를 한다.",
       "createdAt": "2026-10-05T21:08:48.126Z",
       "seq": 1744
+    },
+    {
+      "id": "cbb9382f",
+      "title": "문서 분할이 개관 지도 mermaid 의 간선을 어긋나게 하는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 36차에 golay-codes 를 mathieu-groups 에서 분할하며 error-correcting-codes -> mathieu-groups 간선을 빼고 error-correcting-codes -> golay-codes -> mathieu-groups 로 꿰었다. 그런데 information-theory-overview 의 '# 지도' mermaid 에 'ECC --> MAT' 가 남아 있었다. 4.5절은 지도가 실제 간선의 부분그래프여야 한다고 하는데, 간선을 뺀 뒤 지도를 고치지 않으면 지도가 없는 간선을 그린다.\n\nvalidate, cycles, render-check, order-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다. 간선은 '# 연관 문서' 절에만 있고 지도의 화살표는 코드블록 안이라 파서가 보지 않는다. 36차에는 같은 회차 안에서 눈으로 잡아 'ECC --> GOL --> MAT' 로 고쳤다.\n\n검사법. 개관의 mermaid 블록만 뽑아 바꾼 문서의 제목이 들어간 줄을 본다. for f in docs/*-overview.md; do awk '/^```mermaid/{m=1} m{print FILENAME\": \"$0} /^```$/{if(m){m=0}}' $f; done | grep -iE '<바뀐 문서들의 제목>' 로 충분하다. 36차에는 이 grep 이 두 줄을 내놓아 한 곳만 고치면 됨이 드러났다.\n\n규칙. 8절의 통합·분할 절차(새 id 정하기, 부모와 자식 옮기기, 본문 링크 바꾸기, 옛 파일 git rm)에 '개관 지도 mermaid 맞추기' 를 더해 생각한다. 간선을 뺀 회차에는 반드시 위 grep 을 돌린다. 간선을 더한 경우는 지도가 부분그래프이면 되므로 더하지 않아도 규격 위반이 아니지만, 핵심 문서라면 넣는다.",
+      "createdAt": "2026-10-06T08:51:55.453Z",
+      "seq": 1784
     },
     {
       "id": "08e59419",
@@ -764,6 +772,46 @@
       "seq": 1758
     },
     {
+      "id": "f219f61c",
+      "title": "kalman-filter 를 hidden-markov-model 의 자식으로 두지 않은 판정",
+      "priority": 11,
+      "note": "36차 판정 기록. Kalman 필터는 상태공간이 연속이고 전이·관측이 선형 Gauss 인 은닉 Markov 모형이므로 특수 사례로 보면 간선 후보다. 넣지 않은 근거는 5절 '더 알아보기의 기준' 의 둘째 물음이다. kalman-filter 의 개요는 조건부 기댓값과 Sherman-Morrison 만으로 읽히고 은닉 Markov 모형을 빼도 달라지지 않으므로 그 부모는 간선이 아니라 배경이다. 대신 양쪽 본문에 상호 링크를 두었다(kalman-filter:90 이 hidden-markov-model 을, hidden-markov-model 의 활용 첫 항목이 kalman-filter 를 가리킨다). 뒤집으려면 kalman-filter 를 보강해 개요가 은닉 상태열의 특수화로 읽히게 고친 뒤에 할 일이다.",
+      "createdAt": "2026-10-06T08:42:57.515Z",
+      "seq": 1777
+    },
+    {
+      "id": "fd8f0958",
+      "title": "golay-codes 분할 결과와 재배선 기록 (36차)",
+      "priority": 11,
+      "note": "36차 판정 기록. 큐 38e128d8 의 물음에 '나눈다' 로 답했다. 근거는 분량이 아니라 독립 관심이다. Golay 부호를 이름으로 쓰는 문서가 여덟(finite-simple-groups information-theory-overview error-correcting-codes umbral-moonshine sphere-packing niemeier-lattices 와 mathieu-groups 자신)인데 그 가운데 부호와 격자 쪽 관심으로 쓰는 것이 다수여서, 자기동형군 문서를 거쳐 가는 링크가 어색했다. 한 일은 다음이다. (1) golay-codes 를 새로 쓰고 완전 부호의 산술, 순환부호 구성, 삼진 Golay, 옥타드, 완전 부호 분류와 유일성, 무게 분포, Steiner 계, 자기동형군, Construction B, 심우주 통신을 담았다. (2) mathieu-groups 에서 Golay 부호 정의 절과 완전 부호 분류, 무게 분포, 심우주 통신 절을 빼고 직관 절을 다중추이성에서 출발하도록 다시 썼으며 성질 절을 위수의 분해, 점 안정자의 사슬, 4 중 추이 군의 분류, Conway 군과의 관계로 재편했다(114 줄에서 84 줄). (3) 간선은 error-correcting-codes -> golay-codes -> mathieu-groups 로 꿰고 error-correcting-codes -> mathieu-groups 를 뺐다(5절의 조상 제거 규칙). (4) 본문 링크를 error-correcting-codes, sphere-packing, finite-simple-groups, niemeier-lattices, information-theory-overview 에서 golay-codes 로 돌리고 information-theory-overview 의 '부호의 구성' 갈래에 한 줄을 더했다. 남은 것은 umbral-moonshine:76 의 Golay 부호 언급인데 그 문서는 niemeier-lattices 를 거쳐 읽는 자리라 링크를 더하지 않았다.",
+      "createdAt": "2026-10-06T08:48:57.892Z",
+      "seq": 1782
+    },
+    {
+      "id": "abd8ad32",
+      "title": "block-designs 를 golay-codes 의 부모로 두지 않은 판정",
+      "priority": 11,
+      "note": "36차 판정 기록. golay-codes 를 분할하며 block-designs(조합적 설계, Steiner 계 S(t,k,v) 의 정의가 그 문서 29 줄에 있다)와의 간선을 쟀다. 넣지 않은 근거는 5절 '더 알아보기의 기준' 의 첫 물음이다. golay-codes 는 Steiner 계를 '## Steiner 계' 절 하나에서 도구로 쓰고, 부호의 구성과 완전성, 무게 분포는 설계 없이 세워진다. 설계 쪽에서 보아도 Golay 부호는 S(5,8,24) 라는 예 하나를 주는 자리여서 '이 주제를 더 알고 싶으면 다음은 이것' 이 되지 않는다. 대신 본문 링크를 세 자리에 두었다(golay-codes 개요, mathieu-groups 직관, block-designs 활용에서 golay-codes 로). block-designs -> mathieu-groups 도 같은 이유로 간선을 넣지 않았고 본문 링크만 있다. 뒤집을 조건은 block-designs 가 t 중 추이 자기동형군과 유도 설계를 성질 절로 키워 Golay 부호가 그 분류의 사례로 읽히게 되는 때다.",
+      "createdAt": "2026-10-06T08:49:46.258Z",
+      "seq": 1783
+    },
+    {
+      "id": "1ec8374d",
+      "title": "quasi-newton-methods 분할 결과 (36차)",
+      "priority": 11,
+      "note": "36차 판정 기록. 큐 b90c8163 대로 newton-method 의 '## 준Newton 법' 목록 한 문단(할선법, Broyden, BFGS 와 L-BFGS, Gauss-Newton 과 Levenberg-Marquardt 다섯 항목)을 quasi-newton-methods 로 독립시켰다. 새 문서는 secant 조건, Broyden 의 계급 1 갱신과 Frobenius 최소 변화 성질, BFGS 의 B 꼴과 H 꼴, L-BFGS 의 두 고리 재귀(의사코드), Gauss-Newton 과 Levenberg-Marquardt, 양정부호 보존 정리와 증명 요지, Dennis-More 조건과 초선형 수렴, 이차함수의 유한 종료를 담았다(127 줄). newton-method 의 그 절은 네 문장과 링크로 줄였고(175 줄에서 169 줄) 더 알아보기에 자식으로 넣었다. optimization-overview 의 '반복 알고리즘' 갈래에 Newton 법 다음 줄로 넣었다. 지도 mermaid 는 Newton 법 간선을 빼지 않았으므로 고치지 않았다(부분그래프면 된다). 남은 빈자리는 공액기울기법과 Wolfe 조건이고 각각 큐에 있다.",
+      "createdAt": "2026-10-06T08:55:37.667Z",
+      "seq": 1787
+    },
+    {
+      "id": "26fb0642",
+      "title": "36차 회귀 점검 전수 결과",
+      "priority": 11,
+      "note": "36차(2026-10-06) 회귀 점검 기록. docs 647 개에 다음을 전수로 돌려 새 위반이 0 건이다. (1) 4절 수식 검사 다섯(awk 이스케이프, 태그로 읽히는 부등호, 링크로 읽히는 대괄호, 줄 끝 백슬래시, 이스케이프 안 된 밑줄)과 render-check. 밑줄 보고 2 건은 finite-fields:131 과 unique-factorization-domains:89 의 각주 URL 안 밑줄로 큐 b452028c 가 판정한 오탐이다. (2) 문장형 헤딩 grep. 보고 15 건이 전부 '## 증명의 요지' 로 큐 f7c54f08 판정대로 명사구 오탐이다. (3) 비유 금지 grep. 보고 4 건이 elliptic-curves:118 'Montgomery 사다리', lie-algebras:162 '사다리 연산자', post-quantum-cryptography:126 '함정문' 둘로 큐 dc8b9099 가 판정한 용어 오탐이다. (4) operatorname 류 금지 매크로, 열린 문제 절 이름, 범위 뭉뚱그린 문장, 코드블록 언어(javascript/typescript/mermaid 밖), '## 빈자리' 류 절, 개관 수록 매핑, README 뿌리 diff, 개관 지도 mermaid 의 Mathieu/Golay/Newton 노드. 전부 0 건이거나 실제 간선과 일치한다. (5) 번역체 grep 을 이번 회차 새 문서 넷에 돌려 golay-codes:83 의 '자기동형군으로 주어진다' 하나를 능동으로 고쳤다. 나머지 보고는 '이어진다', '떨어진다' 로 큐 49d7bd05 가 판정한 '어진다' 오탐이다. (6) 큐 44ca5d52 의 라틴 혼동 키릴·그리스 문자 검사와 5b750f72 의 수식 안 글자 연산자 검사를 새 문서 넷에 돌려 0 건이다. 스크립트는 스크래치패드에 node 로 만들었다.",
+      "createdAt": "2026-10-06T08:59:49.413Z",
+      "seq": 1788
+    },
+    {
       "id": "2d5c4e17",
       "title": "무한 범주와 호모토피 이론",
       "priority": 10,
@@ -978,14 +1026,6 @@
       "note": "2026-09-22 둘째 회차에 앞 note 가 남긴 후보 넷을 마저 판정해 셋을 좁혔다: algebraic-k-theory '대수적 K 이론'(Quillen-Lichtenbaum 은 65줄 절과 85줄 Vandiver 동치 절), borcherds-products 'Borcherds 곱'(특이 theta 올림은 32·51줄 절), hyperbolic-3-manifolds '쌍곡 3 다양체'(Mostow 강직성은 17·90줄 절). kleisli-eilenberg-moore 는 파일명이 두 범주를 다 담으므로 limits-colimits 와 같은 4절 예외로 두었다. 참조 표시 제목도 치환했다(algebraic-k-theory 4, borcherds-products 1, hyperbolic-3-manifolds 7. 나머지 참조는 이미 좁은 제목을 쓰고 있었다). 우선순위를 20 에서 10 으로 낮춘다. LC_ALL=C.utf8 grep -l '^# .*[와과] ' docs/*.md 가 아직 100 개 남짓을 내놓지만, 표본을 보면 남은 것은 대부분 4절이 예외로 정한 '개념 + 그 개념을 다루는 정리 이름' 꼴이다(differential-forms '미분형식과 Stokes 정리', holomorphic-functions, canonical-height, network-flow, np-completeness 등). 다음 차수에는 좁힐 것을 찾기보다 예외 판정을 목록으로 확정하는 편이 낫다. 예외로 확정한 것: 정리 이름이 뒤에 오는 제목, 파일명이 두 항목을 모두 담은 제목(limits-colimits, kleisli-eilenberg-moore, ideals-quotient-rings, eigenvalues, proofs 등), 한 쌍이 한 개념인 제목(dyson-rank-crank 의 rank 와 crank)",
       "createdAt": "2026-09-22T04:45:36.007Z",
       "seq": 896
-    },
-    {
-      "id": "11557b33",
-      "title": "Nash 균형과 유한 게임",
-      "priority": 10,
-      "note": "게임이론 기초 문서가 저장소에 없다. 2026-09-23 회차에 kakutani-fixed-point 를 쓰면서 혼합전략 균형의 존재를 활용 절 한 항목으로만 적었다. 전략형 게임, 혼합전략, 최적반응, 균형의 정의와 Nash 정리, 영합 게임의 minimax 정리, 균형 계산의 복잡도(PPAD 완전)가 한 문서의 분량이다. 부모는 kakutani-fixed-point 이고 태그는 #optimization #probability 로 붙일 수 있다. game_theory 태그를 새로 만들지는 문서를 쓸 때 판단할 것. 6절은 기존 태그 재사용을 먼저 보라고 한다",
-      "createdAt": "2026-09-23T00:56:51.304Z",
-      "seq": 959
     },
     {
       "id": "143bd0e4",
@@ -1244,14 +1284,6 @@
       "seq": 1176
     },
     {
-      "id": "38e128d8",
-      "title": "Golay 부호 문서 분리 판정",
-      "priority": 10,
-      "note": "combinatorics/information_theory. 2026-09-25 둘째 회차에 mathieu-groups 의 제목을 'Mathieu 군과 Golay 부호' 에서 'Mathieu 군' 으로 좁히며 남긴 판정거리다. 그 문서의 정의 절이 '## Golay 부호' 와 '## Mathieu 군' 둘로 나뉘고 Mathieu 군이 Golay 부호의 자기동형군으로 정의되므로, Golay 부호는 지금 Mathieu 군을 정의하기 위한 구성으로 들어가 있다. 8절 분할 기준으로 잴 것: 그 문서가 1000 줄을 넘지 않으므로 분량으로는 나눌 이유가 없고, Golay 부호가 독립 문서가 될 만한지는 완전 부호로서의 성질(무게 분포, 24 차원 이진 확장 Golay, Steiner 계 S(5,8,24) 와의 대응)이 Mathieu 군과 따로 설 수 있는지에 달렸다. 독립시킨다면 부모는 error-correcting-codes 이고 mathieu-groups 가 자식이 된다. 지금 mathieu-groups 를 가리키는 문서 가운데 error-correcting-codes 와 information-theory-overview 는 부호 쪽 관심으로 링크하고 있으므로 그 둘을 새 문서로 돌리게 된다. 나누지 않기로 한다면 이 항목을 지울 것",
-      "createdAt": "2026-09-25T12:57:31.484Z",
-      "seq": 1181
-    },
-    {
       "id": "f75685c7",
       "title": "근접 경사법과 근접 연산자",
       "priority": 10,
@@ -1388,38 +1420,6 @@
       "seq": 1388
     },
     {
-      "id": "b90c8163",
-      "title": "준Newton 법 문서",
-      "priority": 10,
-      "note": "newton-method 의 '## 준Newton 법' 절(할선법, Broyden, BFGS 와 L-BFGS, Gauss-Newton 과 Levenberg-Marquardt 다섯 항목)이 목록 한 문단으로 눌려 있다. 각 갱신식과 secant 조건, BFGS 의 대칭 양정부호 유지, Gauss-Newton 의 최소제곱 구조를 담으면 별도 문서가 된다. 분야는 최적화이고 부모는 newton-method 하나다(현재 자식은 full-approximation-scheme 뿐이라 둘째 자식이 된다). id 후보는 quasi-newton-methods 다.",
-      "createdAt": "2026-09-28T20:42:44.960Z",
-      "seq": 1404
-    },
-    {
-      "id": "b156b465",
-      "title": "은닉 Markov 모형",
-      "priority": 10,
-      "note": "2026-09-29 셋째 회차에 kalman-filter 를 쓰면서 빈자리를 확인했다. kalman-filter 108 이 전향 알고리즘을 링크 없이 이름만 쓴다. markov-chains 도 은닉 모형을 다루지 않는다.\n\n분야는 확률과 통계다. 부모는 markov-chains 하나가 맞다. 상태공간이 유한한 Markov 연쇄에 관측 모형을 얹은 것이고, 전향-후향 알고리즘이 그 연쇄 위의 동적 계획법이다. kalman-filter 를 둘째 부모로 두지 말 것. 두 문서는 같은 재귀의 두 경우이지 선수관계가 아니다. 서로 본문 링크로 충분하다.\n\n담을 것. 정의는 상태 전이 행렬과 방출 분포, 성질은 전향-후향 재귀와 그 연산량, Viterbi 알고리즘(최대 경로), Baum-Welch(EM 으로 모수 추정) 셋이다. 4절 코드 규칙상 Viterbi 와 전향 재귀는 JavaScript 의사코드를 넣을 자리다. 활용은 음성 인식, 서열 정렬의 프로파일 모형, 시계열의 체제 전환 모형이다.\n\n쓰고 나면 kalman-filter 108 의 '은닉 Markov 모형의 전향 알고리즘이 같은 재귀다' 에 링크를 걸 것.",
-      "createdAt": "2026-09-29T08:56:05.851Z",
-      "seq": 1443
-    },
-    {
-      "id": "99c0b159",
-      "title": "무작위 그래프 문서",
-      "priority": 10,
-      "note": "분야는 #graph_theory 또는 #probability. 부모는 graphs 와 probability 쪽이 후보다. Erdős–Rényi 모형 G(n,p), 문턱 현상, 거대 성분의 출현, 유한 그래프의 0-1 법칙을 담는다. fraisse-limits 활용 절의 0-1 법칙 항목이 이 문서를 링크 없이 이름만 쓰고 있으므로 만들면 그 자리에 링크를 건다. Rado 그래프가 가산 극한이라는 연결도 적는다.",
-      "createdAt": "2026-09-29T16:45:05.463Z",
-      "seq": 1463
-    },
-    {
-      "id": "81a0c5cb",
-      "title": "random-graphs 를 쓰고 fraisse-limits 의 0-1 법칙 항목을 링크한다",
-      "priority": 10,
-      "note": "조합론/확률. 부모는 graph-theory 와 probability 후보. fraisse-limits 의 활용 절이 Rado 그래프의 0-1 법칙을 링크 없이 이름만 쓰고 있다.",
-      "createdAt": "2026-09-30T05:05:51.799Z",
-      "seq": 1485
-    },
-    {
       "id": "0314885b",
       "title": "schellekens 목록 71 개 타입의 표를 실을 자리를 정한다",
       "priority": 10,
@@ -1474,14 +1474,6 @@
       "note": "27차 ergodic-theorem 의 성질 절 Birkhoff 정리 증명 요지가 극대 에르고딕 부등식의 진술과 상극한 하극한 논증을 두 문단으로 담았다. 4절은 증명이 두 문단을 넘으면 별도 문서 후보라고 하고 현재가 정확히 두 문단이라 지금은 그대로 두었다. Hardy-Littlewood 극대함수 문서가 있으면 그 쪽의 특수 사례로 묶는 것이 나을 수 있으므로 maximal-function 류 문서가 생기면 다시 본다.",
       "createdAt": "2026-10-03T12:45:07.067Z",
       "seq": 1564
-    },
-    {
-      "id": "a3977b00",
-      "title": "확장그래프",
-      "priority": 10,
-      "note": "신규 주제. graph_theory 분야. 27차 mixing-time 활용 절 셋째가 스펙트럼 간격이 상수로 떨어진 그래프에서 무작위 걷기의 혼합시간이 O(log n) 이라고만 적었다. 담을 내용은 변 확장도와 스펙트럼 간격의 동치(Cheeger 부등식), Ramanujan 그래프의 Alon-Boppana 하한, 무작위 정규그래프가 확장그래프라는 사실, 오류정정부호와 유사난수 생성의 쓰임이다. 부모 후보는 graph-theory-overview 와 spectral-graph-theory 류 문서이고, 만들면 mixing-time 의 자식으로 둘지 함께 판정한다.",
-      "createdAt": "2026-10-03T13:03:47.359Z",
-      "seq": 1572
     },
     {
       "id": "85b60d5a",
@@ -1906,6 +1898,78 @@
       "note": "number_theory. dirichlet-series 의 'Dirichlet 합성곱' 절과 표준적인 예 표가 mu * 1 = delta 와 Mobius 반전을 한 줄로만 적는다. 산술함수 전체가 합성곱 아래 가환환을 이루고 곱셈적 함수가 그 안의 군을 이루는 것, 반전 공식의 증명, Dirichlet 급수와의 대응이 한 문서의 분량이다. 부모는 dirichlet-series",
       "createdAt": "2026-10-06T04:58:30.902Z",
       "seq": 1769
+    },
+    {
+      "id": "54785f49",
+      "title": "기댓값 최대화 알고리즘",
+      "priority": 10,
+      "note": "통계/기계학습(#statistics #probability #machine_learning #optimization). 36차에 hidden-markov-model 을 쓰면서 Baum-Welch 절이 '기댓값 최대화 알고리즘을 은닉 Markov 모형에 적용한 것' 이라고만 적고 링크 없이 이름만 썼다(0절). 저장소에 em-algorithm 문서가 없다. 담을 내용은 은닉변수 모형의 우도, Jensen 부등식으로 만드는 하한(ELBO), E 단계와 M 단계, 우도가 단조 증가한다는 정리와 그 증명, Gauss 혼합 모형과 Baum-Welch 가 특수 사례라는 것, 정류점 수렴. 부모 후보는 conditional-expectation 과 maximum-likelihood 류 문서이고 variational-autoencoder 가 ELBO 를 쓰므로 그 부모 자리도 함께 판정한다. 만들면 hidden-markov-model 의 Baum-Welch 절과 변분 쪽 문서에 링크를 건다.",
+      "createdAt": "2026-10-06T08:42:57.324Z",
+      "seq": 1776
+    },
+    {
+      "id": "e35a2da6",
+      "title": "부분관측 Markov 결정 과정",
+      "priority": 10,
+      "note": "확률론/기계학습(#probability #machine_learning #computation). 36차에 hidden-markov-model 활용 셋째 항목이 '상태가 보이지 않는 제어 문제에서 사후분포가 믿음 상태가 된다' 를 적고 markov-decision-process 를 링크했으나 믿음 상태 위의 결정 문제 자체는 문서가 없다. 담을 내용은 믿음 상태의 갱신식(전향 재귀와 같은 꼴), 믿음 공간 위의 Bellman 방정식, 값함수가 믿음에 대해 조각마다 선형이고 볼록하다는 정리, 유한 지평 해법과 계산 복잡도. 부모 후보는 markov-decision-process 와 hidden-markov-model 둘이다.",
+      "createdAt": "2026-10-06T08:42:57.706Z",
+      "seq": 1778
+    },
+    {
+      "id": "7a958c30",
+      "title": "조건부 무작위장",
+      "priority": 10,
+      "note": "기계학습/확률(#machine_learning #probability #statistics). 36차에 hidden-markov-model 을 쓰며 확인한 빈자리다. 은닉 Markov 모형은 상태와 관측의 결합분포를 모형화하지만 라벨 예측에는 조건부 분포만 필요하고, 선형사슬 조건부 무작위장이 같은 격자 위에서 조건부 분포를 직접 모형화한다. 담을 내용은 지수족 꼴의 조건부 분포, 분할함수를 전향 재귀로 계산하는 것, 로그 우도가 볼록하다는 사실과 기울기가 기대 특성의 차이라는 것, 은닉 Markov 모형과의 생성 판별 대비. 부모 후보는 hidden-markov-model 과 exponential-family 류 문서다.",
+      "createdAt": "2026-10-06T08:42:57.858Z",
+      "seq": 1779
+    },
+    {
+      "id": "b8b6de68",
+      "title": "Leech 격자와 Conway 군",
+      "priority": 10,
+      "note": "대수/조합(#group_theory #combinatorics #number_theory). 36차에 golay-codes 를 분할하며 확인했다. Leech 격자는 지금 golay-codes 의 '## Leech 격자' 절(Construction B 와 최소노름)과 sphere-packing, niemeier-lattices, mathieu-groups 에 흩어져 있고 독립 문서가 없다. 담을 내용은 Construction B 의 보정 단계, 최소노름 4 와 노름 2 벡터의 부재 증명, kissing number 196560, Conway 군 Co_0 와 Co_1 의 정의, 깊은 구멍과 Niemeier 격자 23 개의 대응(Conway-Parker-Sloane), theta 급수. 부모 후보는 golay-codes 와 lattices 다. 만들면 sphere-packing 과 niemeier-lattices 의 Leech 언급을 그리로 돌린다.",
+      "createdAt": "2026-10-06T08:48:57.686Z",
+      "seq": 1781
+    },
+    {
+      "id": "ccef6456",
+      "title": "공액기울기법",
+      "priority": 10,
+      "note": "최적화/선형대수(#optimization #linear_algebra #analysis). 36차에 quasi-newton-methods 를 newton-method 에서 분할하며 확인한 빈자리다. 그 문서의 '## 이차함수에서의 유한 종료' 절이 BFGS 의 방향이 공액기울기법의 방향과 같다고 적는데 저장소에 공액기울기 문서가 없어 링크 없이 이름만 썼다(0절). grep 으로 보면 conjugate-gradient 류 파일이 없다. 담을 내용은 Krylov 부분공간과 A 공액 방향, 세 항 점화식, n 번 안의 유한 종료, 조건수의 제곱근으로 가는 수렴률 상한, 전조건화, 비선형 판의 Fletcher-Reeves 와 Polak-Ribiere 다. 부모 후보는 gradient-descent 와 eigenvalues 또는 linear-systems 류 문서이고, 만들면 quasi-newton-methods 와 nesterov-acceleration 의 언급에 링크를 건다.",
+      "createdAt": "2026-10-06T08:55:37.407Z",
+      "seq": 1785
+    },
+    {
+      "id": "de527263",
+      "title": "선탐색과 Wolfe 조건",
+      "priority": 10,
+      "note": "최적화(#optimization #analysis). 36차에 quasi-newton-methods 를 쓰며 확인했다. 그 문서의 BFGS 걸음 정의와 '## 양정부호의 보존' 절이 '선탐색이 Wolfe 조건을 만족하면 y_k^T s_k > 0 이 자동으로 따라온다' 를 쓰는데 Wolfe 조건 자체의 진술이 어디에도 없다. 담을 내용은 Armijo 충분감소 조건, 곡률 조건, 강 Wolfe, 되추적 선탐색의 절차와 종료 보장, Zoutendijk 조건과 전역 수렴 정리, 신뢰영역 방법과의 대비다. 부모 후보는 gradient-descent 다. 만들면 quasi-newton-methods, newton-method, gradient-descent 의 선탐색 언급에 링크를 건다.",
+      "createdAt": "2026-10-06T08:55:37.533Z",
+      "seq": 1786
+    },
+    {
+      "id": "043dde2a",
+      "title": "Borsuk–Ulam 정리",
+      "priority": 10,
+      "note": "위상(#algebraic_topology #combinatorics #graph_theory). 36차에 큐 3de75166(erdos-ko-rado 의 후속 간선)을 보고 확인했다. 그 note 가 Kneser 그래프 색수의 Lovasz 위상적 증명을 'Borsuk-Ulam 문서가 생기면 이을 것' 으로 미뤄 두었는데 지금도 borsuk/kneser 류 파일이 없다. 담을 내용은 정리의 진술(구에서 유클리드 공간으로 가는 연속함수에 대척점 쌍이 같은 값을 갖는다), 대척점 쌍 없는 사상과 차수 논증으로 가는 증명 요지, Brouwer 고정점 정리와의 동치, Lusternik-Schnirelmann 덮개 정리, ham sandwich 정리, Kneser 추측의 Lovasz 증명과 Greene 의 짧은 증명이다. 부모 후보는 homotopy-groups 또는 brouwer-fixed-point 류 문서다. 만들면 erdos-ko-rado 의 Kneser 그래프 언급에 링크를 걸고 그 문서의 자식으로 둘지 판정한다.",
+      "createdAt": "2026-10-06T09:01:13.921Z",
+      "seq": 1789
+    },
+    {
+      "id": "35a2cabc",
+      "title": "곱측도",
+      "priority": 10,
+      "note": "측도론(#measure_theory #probability). 36차에 큐 20546c19(fubini-tonelli 의 후속 간선)을 보고 확인했다. product-measure 류 파일이 없고 곱측도 구성이 fubini-tonelli 의 '## 곱측도' 절에 들어가 있다. 그 note 가 지적한 대로 따로 세우면 중복이 생기므로 분담을 먼저 정해야 한다. 제안하는 분담은 곱측도 문서가 측정 가능한 직사각형이 생성하는 sigma 대수, Caratheodory 확장으로 얻는 곱측도의 존재, sigma 유한일 때의 유일성, 완비화와 Lebesgue 곱측도의 차이, 무한 곱과 Kolmogorov 확장정리의 자리까지 담고, fubini-tonelli 는 그 절을 두 문장과 링크로 줄여 적분의 교환에만 집중하는 것이다. 부모 후보는 measure 와 fubini-tonelli 의 부모들이다. 분담을 바꿀 수도 있으니 쓰기 전에 fubini-tonelli 의 정의 절을 먼저 읽을 것.",
+      "createdAt": "2026-10-06T09:01:14.086Z",
+      "seq": 1790
+    },
+    {
+      "id": "27920a57",
+      "title": "Korovkin 정리",
+      "priority": 10,
+      "note": "해석학(#analysis #functional_analysis). 36차에 큐 dece5714(stone-weierstrass 의 후속 간선)을 보고 확인했다. 그 note 의 후속 후보 넷 가운데 Korovkin 정리가 가장 가까운 후속이고 korovkin 류 파일이 없다. 담을 내용은 양선형작용소 열이 1, x, x^2 세 함수에서 수렴하면 C[0,1] 전체에서 균등수렴한다는 진술, 증명 요지(점마다 (t-x)^2 를 다루는 봉우리 함수 구성), Bernstein 다항식이 특수 경우로 나오는 계산, Weierstrass 근사정리와의 관계, 수렴 속도와 Lipschitz 함수의 추정이다. 부모는 stone-weierstrass 하나이고 그 문서의 첫 자식이 된다(현재 리프). 함께 판정할 것은 그 note 의 남은 후보 셋(국소 콤팩트 판본과 C_0(X), 격자 판본, Gelfand-Naimark)을 Korovkin 문서에 넣을지 따로 둘지다.",
+      "createdAt": "2026-10-06T09:01:14.262Z",
+      "seq": 1791
     },
     {
       "id": "dfb3e493",
