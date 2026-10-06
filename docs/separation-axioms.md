@@ -76,6 +76,6 @@ Urysohn 보조정리로 만든 함수를 써서 오차를 $2/3$ 배씩 줄이는
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Stone–Čech 콤팩트화](stone-cech-compactification.md)
 
 #topology #analysis #set_theory

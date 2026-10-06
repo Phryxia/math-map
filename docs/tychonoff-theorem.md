@@ -93,5 +93,6 @@ $\lbrace 0,1\rbrace^{\lbrack 0,1\rbrack}$ 은 Tychonoff 정리로 콤팩트하�
 ## 더 알아보기
 
 - [Banach–Alaoglu 정리](banach-alaoglu.md)
+- [Stone–Čech 콤팩트화](stone-cech-compactification.md)
 
 #topology #set_theory #foundations #functional_analysis
