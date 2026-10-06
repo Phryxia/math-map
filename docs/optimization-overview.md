@@ -49,6 +49,7 @@ graph TD
 - [적응적 경사 방법](adaptive-gradient-methods.md): 좌표별 기울기 제곱의 누적으로 보폭을 나누는 AdaGrad, RMSProp, Adam
 - [분산 축소 경사법](variance-reduced-gradient-methods.md): 항별 기울기를 기억해 추정량의 분산을 없애는 SVRG 와 SAGA
 - [Newton 법](newton-method.md): 2 차 정보를 쓰는 국소 이차수렴
+- [준Newton 법](quasi-newton-methods.md): secant 조건으로 Hessian 근사를 갱신하는 BFGS 와 L-BFGS, 초선형 수렴
 
 ## 선형·반정부호 계획법
 
