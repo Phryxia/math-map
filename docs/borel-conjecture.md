@@ -59,7 +59,7 @@ $$
 ## 선수지식
 
 - [강 측도 영집합](strong-measure-zero.md)
-- [강제법](forcing.md)
+- [반복 강제법](iterated-forcing.md)
 
 ## 더 알아보기
 

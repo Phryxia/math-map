@@ -103,9 +103,7 @@ $\mathrm{Add}(\omega, \kappa)$ 는 조건이 유한이므로 ccc 를 만족한�
 
 ## 반복 강제법
 
-한 번의 확대로 얻은 모형에서 다시 강제하는 조작을 **반복 강제법**이라 한다. 극한 단계에서 앞 단계들의 조건을 어떻게 이어 붙일지가 선택 사항이고, 유한 개의 좌표에서만 자명하지 않은 값을 갖게 하는 것이 유한 지지 반복이다.
-
-ccc 순서의 유한 지지 반복은 다시 ccc 를 만족한다. Solovay 와 Tennenbaum 은 이 성질로 [Martin 의 공리](martins-axiom.md)와 연속체 가설의 부정이 함께 무모순임을 보였다.[^2]
+한 번의 확대로 얻은 모형에서 다시 강제하는 조작이 [반복 강제법](iterated-forcing.md)이다. 두 단계는 이름을 써서 하나의 강제 순서로 묶이고, 극한 단계에서 조건의 지지를 유한으로 제한하면 ccc 가 반복 전체로 올라간다.
 
 # 활용
 
@@ -116,7 +114,6 @@ ccc 순서의 유한 지지 반복은 다시 ccc 를 만족한다. Solovay 와 T
 - 강제 순서를 완비 [Boolean 대수](boolean-algebras.md)로 바꾸면 확대 모형이 [Boolean 값 모형](boolean-valued-models.md)이 되고, 일반 필터를 고르는 단계 없이 대수적으로 다룰 수 있다.
 
 [^1]: Kenneth Kunen, *Set Theory: An Introduction to Independence Proofs*, North-Holland (1980), Ch. VII. 이름, 강제 관계, ccc 기수 보존의 표준적인 전개다.
-[^2]: R. M. Solovay and S. Tennenbaum, "Iterated Cohen Extensions and Souslin's Problem", Annals of Mathematics 94 (1971), https://www.jstor.org/stable/1970860
 
 # 연관 문서
 
@@ -128,6 +125,6 @@ ccc 순서의 유한 지지 반복은 다시 ccc 를 만족한다. Solovay 와 T
 
 - [Boolean 값 모형](boolean-valued-models.md)
 - [Martin 의 공리](martins-axiom.md)
-- [Borel 추측](borel-conjecture.md)
+- [반복 강제법](iterated-forcing.md)
 
 #set_theory #logic #foundations
