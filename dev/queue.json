@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-06T17:00:43.394Z",
-  "nextSeq": 1815,
+  "savedAt": "2026-10-06T21:02:27.952Z",
+  "nextSeq": 1824,
   "items": [
     {
       "id": "0490c28e",
@@ -330,6 +330,22 @@
       "note": "2026-10-06 37차에 혼동문자 검사와 글자 연산자 검사를 docs 652 개 전수로 돌렸다. 글자 연산자(log, sin, max 등이 백슬래시 없이 수식에 든 것)는 0 건이다. 혼동문자는 transcendental-numbers:98 한 줄의 7 자뿐이고 Gelfond 논문의 학술지명 Izvestiya Akademii nauk SSSR 의 러시아어 표기라 정상이다. 29차, 30차 판정과 같다. 즉 이 두 검사는 지금 저장소에 수확이 없고, 새 문서를 쓴 회차에 그 문서들만 돌리면 된다.\n\n검사 스크립트는 스크래치패드에 node 로 만든다(dev/ 는 고치지 않는다, 0절). 혼동문자 목록은 큐 44ca5d52 의 것을 그대로 쓴다. 범위를 키릴 전체로 넓히면 Tate-Shafarevich 군 기호 Sha 가 문서 9 개에서 60 여 줄 오검출된다. 글자 연산자 검사는 중괄호 명령의 인자를 먼저 지워야 한다(mathrm{tr} 꼴이 160 건 오검출).",
       "createdAt": "2026-10-06T13:05:21.469Z",
       "seq": 1807
+    },
+    {
+      "id": "447fc194",
+      "title": "Cayley–Hamilton 정리를 별도 문서로 만들지 않은 판정",
+      "priority": 20,
+      "note": "37차 판정. 옛 항목 9528bd8f 가 가군 소멸자, 수반행렬, 조밀성 세 증명을 나란히 두면 분량이 된다며 별도 문서를 요청했다. 이번 회차에 minimal-polynomial 을 쓰면서 Cayley-Hamilton 을 그 '## 특성다항식과의 관계' 절의 귀결로 넣었다(m_T 가 chi_T 를 나눈다는 정리에서 chi_T(T)=0 이 따라 나온다, 증명은 PID 가군 불변인자 분해 하나). eigenvalues:67 에 이미 '## Cayley-Hamilton' 절이 수반행렬 항등식과 조밀성 논증을 적고 있으므로 별도 문서를 세우면 세 문서가 같은 정리를 셋으로 나눈다. 8절 기준으로 합쳐 두는 쪽이 맞다고 판정했다. 뒤집으려면 eigenvalues 의 그 절과 minimal-polynomial 의 그 절을 함께 옮겨야 한다",
+      "createdAt": "2026-10-06T20:44:23.581Z",
+      "seq": 1815
+    },
+    {
+      "id": "a6130fdf",
+      "title": "derived-functors 의 부모에서 projective-modules 를 뺀 판정",
+      "priority": 20,
+      "note": "37차 판정. injective-modules 를 신설하며 derived-functors 의 선수지식에 단사가군을 넣자 부모가 넷(functors, tensor-products, projective-modules, injective-modules)이 되었다. 5절의 '4개 이상이면 그 중 다른 부모의 조상인 것을 뺀다' 를 적용해 projective-modules 를 뺐다. projective-modules -> injective-modules -> derived-functors 경로가 남으므로 조상관계는 유지되고, 대신 derived-functors:7 의 '사영가군이나 단사가군의 분해로 바꾸고' 에 사영가군 본문 링크를 달았다. projective-modules 의 더 알아보기는 derived-functors 자리에 injective-modules 가 들어가 둘(injective-modules, algebraic-k-theory)이 되었다. abstract-algebra-overview 의 지도 mermaid 에는 사영가군-유도함자 간선이 없어 고칠 것이 없었다(큐 메모 cbb9382f 의 점검)",
+      "createdAt": "2026-10-06T20:54:40.999Z",
+      "seq": 1819
     },
     {
       "id": "410fd79d",
@@ -946,6 +962,46 @@
       "note": "37차(2026-10-06) 점검 결과. 새로 발견한 위반은 없다.\n\n문장형 헤딩 전수 grep 은 15 건을 보고했고 전부 '## 증명의 요지' 다. 4절이 권장하는 표현이므로 오탐이고, 같은 판정이 큐 항목 f7c54f08 에 이미 있다. 비유 금지 grep 전수는 4 건(elliptic-curves:118, lie-algebras:162, post-quantum-cryptography:126 두 곳)을 보고했고 전부 굳은 용어라 큐 항목 dc8b9099 의 판정과 같다. 새 메모를 따로 만들지 않았다.\n\n이번 회차 새 문서 셋(asymptotic-series multiple-zeta-values iterated-forcing)과 고친 문서 다섯(euler-maclaurin power-series forcing borel-conjecture riemann-zeta laplace-method)에 라틴 혼동 키릴·그리스 문자 검사(큐 44ca5d52)와 수식 안 글자 연산자 검사(큐 5b750f72)를 돌려 0 건을 확인했다. 번역체 '어진다' 검사는 iterated-forcing:67 의 '다루어진다' 를 잡아 능동으로 고쳤다(커밋 4616978).",
       "createdAt": "2026-10-06T16:58:36.270Z",
       "seq": 1814
+    },
+    {
+      "id": "0884a066",
+      "title": "minimal-polynomial 의 후속 간선",
+      "priority": 11,
+      "note": "37차에 쓴 minimal-polynomial(129줄)의 더 알아보기는 jordan-canonical-form 하나다. 후보 셋을 적어 둔다. (1) krylov-subspace-methods: 90줄이 'r_0 에 대한 A 의 최소다항식 차수' 로 반복 횟수 상한을 적는데, 최소다항식의 응용이지 심화가 아니므로 5절 더 알아보기 기준으로는 본문 링크로 충분하다고 보아 간선을 넣지 않았다. (2) field-extensions: 대수적 원소의 최소다항식이 곱셈 사상의 최소다항식과 일치하는 것을 활용 절에 적었다. 간선을 넣으면 polynomial-rings -> field-extensions 와 polynomial-rings -> minimal-polynomial -> field-extensions 가 겹쳐 field-extensions 의 부모가 셋이 된다. (3) rational-canonical-form: 최소다항식이 마지막 불변인자 d_k 인 것이 그 문서 47-54줄에 있다. 현재 부모는 jordan-canonical-form 하나이고 minimal-polynomial -> rational-canonical-form 을 더하면 둘이 된다. 셋 가운데 (3)이 가장 심화 관계에 가깝다",
+      "createdAt": "2026-10-06T20:44:23.729Z",
+      "seq": 1816
+    },
+    {
+      "id": "e56d0cd5",
+      "title": "riemann-stieltjes-integral 의 후속 간선",
+      "priority": 11,
+      "note": "37차에 쓴 riemann-stieltjes-integral(134줄)은 리프다. 후보 둘. (1) ito-calculus: 그 문서 5줄이 RS 적분으로 정의할 수 없다는 것을 동기로 삼으므로 선수관계가 맞지만, ito-calculus 의 현재 부모가 brownian-motion 과 martingales 둘이고 RS 를 더하면 셋이 된다. 5절의 '간선은 심화나 has 일 때만' 기준으로는 Ito 적분이 RS 의 심화가 아니라 다른 적분이어서 판단이 필요하다. (2) 수치적분(사다리꼴 규칙, Gauss 구적) 문서가 저장소에 없다. RS 합의 특수화이므로 만들면 자식이 된다. 큐에 별도 항목이 있는지 확인할 것",
+      "createdAt": "2026-10-06T20:50:01.626Z",
+      "seq": 1818
+    },
+    {
+      "id": "36e005e7",
+      "title": "injective-modules 의 후속 간선",
+      "priority": 11,
+      "note": "37차에 쓴 injective-modules(104줄)의 더 알아보기는 derived-functors 하나다. 후보 둘. (1) Matlis 쌍대성 또는 가환 Noether 환 위의 단사가군 분류 문서가 저장소에 없다. 활용 절에 E(R/p) 직합 분해를 한 줄로 적었으므로 문서를 만들면 자식이 된다. (2) local-cohomology 가 현재 derived-functors 의 자식이고 단사 분해를 직접 쓰므로 injective-modules 의 자식 후보지만, derived-functors 를 거치는 경로가 이미 있어 5절 기준으로는 더하지 않는 쪽이 맞다고 보았다",
+      "createdAt": "2026-10-06T20:54:41.142Z",
+      "seq": 1820
+    },
+    {
+      "id": "fe5569e8",
+      "title": "hurwitz-theorem 의 후속 간선",
+      "priority": 11,
+      "note": "37차에 쓴 hurwitz-theorem(83줄)의 더 알아보기는 montel-theorem 하나다. 후보는 Riemann 사상정리 문서(위 항목)와 picard-theorems 다. picard-theorems 는 현재 residue-theorem 의 자식이고 Montel 정리를 쓰므로 Hurwitz 를 직접 쓰지는 않는다. 간선을 더하지 않았다",
+      "createdAt": "2026-10-06T20:59:06.364Z",
+      "seq": 1822
+    },
+    {
+      "id": "3775117c",
+      "title": "37차 회차 새 문서 넷의 회귀 점검 결과",
+      "priority": 11,
+      "note": "37차에 쓴 문서 넷(minimal-polynomial 129줄, riemann-stieltjes-integral 134줄, injective-modules 104줄, hurwitz-theorem 83줄)에 4절 검사 여섯과 문체 grep, 비유 grep, 두문자어, 혼동문자 검사(큐 메모 44ca5als 의 좁힌 목록), 글자 연산자 검사(큐 메모 5b750f72)를 전부 돌렸다. 결과는 한 건이다. riemann-stieltjes-integral:110 의 '짝지어진다' 가 피동이어서 '그 측도의 Jordan 분해는 ... 분해와 같다' 로 고치고 문장을 둘로 나눴다(커밋 별도). 나머지는 모두 0 건이고 각주 정의와 참조 수도 네 문서에서 일치했다. 두문자어 보고는 셋인데 PID(풀어 썼다), AP(수식 안 P^{-1}AP), VII(각주 장 번호)로 모두 예외다. 다음 회차에 같은 묶음을 돌릴 때 '어진다' 패턴이 자동사도 잡는 것(큐 메모 49d7bd05)을 염두에 둘 것",
+      "createdAt": "2026-10-06T21:01:36.012Z",
+      "seq": 1823
     },
     {
       "id": "2d5c4e17",
@@ -1636,44 +1692,12 @@
       "seq": 1622
     },
     {
-      "id": "266e31f6",
-      "title": "최소다항식",
-      "priority": 10,
-      "note": "선형대수. 부모 후보는 eigenvalues 와 polynomial-rings. jordan-canonical-form, rational-canonical-form, krylov-subspace-methods, field-extensions, galois-theory 등 8 개 이상 문서가 최소다항식을 이름만 쓰거나 각자 정의한다. 선형사상의 최소다항식(가군의 소멸자 생성원)과 대수적 원소의 최소다항식(기약성)이 한 문서로 묶이는지 판단이 필요하고, 묶으면 rational-canonical-form 의 더 알아보기에 달린다",
-      "createdAt": "2026-10-04T04:41:18.473Z",
-      "seq": 1623
-    },
-    {
-      "id": "9528bd8f",
-      "title": "Cayley–Hamilton 정리",
-      "priority": 10,
-      "note": "선형대수. 부모는 eigenvalues 와 rational-canonical-form. jordan-canonical-form 과 rational-canonical-form 둘 다 '최소다항식이 특성다항식을 나누므로 Cayley-Hamilton 이 따라 나온다' 로 한 줄만 적고 문서가 없다. 가군 소멸자 논증, 수반행렬 논증, 조밀성 논증 세 증명을 나란히 두면 분량이 된다",
-      "createdAt": "2026-10-04T04:41:18.628Z",
-      "seq": 1624
-    },
-    {
       "id": "67c977b9",
       "title": "Julia 집합과 Fatou 집합",
       "priority": 10,
       "note": "복소해석/동역학. 부모는 montel-theorem. montel-theorem 의 활용 절과 newton-method:111 이 Julia 집합을 링크 없이 이름만 쓴다. Fatou 집합을 반복합성족이 정규족이 되는 점들로 정의하므로 Montel 정리가 선수지식이고, Newton 법의 유인 영역 경계가 그 예다. 제목이 'A와 B' 꼴이니 파일명은 julia-sets 로 하고 Fatou 집합은 정의 절에서 여집합으로 둔다",
       "createdAt": "2026-10-04T04:44:57.625Z",
       "seq": 1625
-    },
-    {
-      "id": "d049abc0",
-      "title": "Hurwitz 정리(영점의 수렴)",
-      "priority": 10,
-      "note": "복소해석. 부모는 montel-theorem 또는 residue-theorem. montel-theorem 의 '단사성과 영점의 보존' 절이 Hurwitz 정리를 이름과 진술만 적고 증명을 생략했다. 유수 정리로 영점 개수를 적분으로 세고 균등수렴으로 적분의 극한을 교환하는 증명이고, Riemann 사상정리에서 극한의 단사성을 얻는 단계가 이 정리다",
-      "createdAt": "2026-10-04T04:44:57.748Z",
-      "seq": 1626
-    },
-    {
-      "id": "06484338",
-      "title": "단사가군과 단사 분해",
-      "priority": 10,
-      "note": "환론. 부모는 projective-modules 와 modules. projective-modules 를 쓰면서 쌍대 개념인 단사가군을 다루지 못했고, derived-functors 가 '가군을 사영가군이나 단사가군의 분해로 바꾼다' 로 이름만 쓴다. Baer 판정법, 모든 가군이 단사가군에 매장된다는 정리, 나눗셈 가능 아벨군이 Z 위의 단사가군이라는 예가 내용이다. 제목은 injective-modules 로 좁힌다",
-      "createdAt": "2026-10-04T04:48:10.158Z",
-      "seq": 1627
     },
     {
       "id": "c503ef57",
@@ -1690,14 +1714,6 @@
       "note": "측도론. 부모는 lebesgue-differentiation. lebesgue-differentiation 의 '도함수가 적분을 되돌리지 않는 경우' 절이 절대연속성을 이름만 쓰고 Cantor 함수를 반례로만 든다. Banach-Zaretsky 판정, 절대연속이면 F(x)-F(a)=∫F' 라는 정리, Lipschitz 와 유계변동 사이의 포함관계가 내용이고, bounded-variation 의 절대연속 절과 중복되는지 먼저 확인한다",
       "createdAt": "2026-10-04T05:00:40.737Z",
       "seq": 1629
-    },
-    {
-      "id": "7d4b6157",
-      "title": "Riemann–Stieltjes 적분",
-      "priority": 10,
-      "note": "해석학/측도론. 부모는 bounded-variation. bounded-variation 의 'Riemann–Stieltjes 적분' 절과 ito-calculus, brownian-motion 이 이 적분을 이름만 쓰고 정의 문서가 없다. 적분자가 유계변동일 때의 존재 정리, 부분적분, Lebesgue-Stieltjes 측도와의 대응, Brown 운동 경로에서 실패하는 이유가 내용이다",
-      "createdAt": "2026-10-04T05:00:40.864Z",
-      "seq": 1630
     },
     {
       "id": "e54c0024",
@@ -2098,6 +2114,22 @@
       "note": "집합론. 신규 주제. iterated-forcing(37차)이 properness 를 이름만 쓰고 정의하지 않았다. 쓸 내용: 가산 기본 모형 M 에 대한 (M,P) 일반 조건, proper 가 ccc 와 적정 닫힘을 함께 포함하는 것, 정상집합 보존과의 동치, Laver 와 Mathias 순서가 proper 인 예. 부모는 iterated-forcing 과 forcing 가운데 하나. 간선 추가 전 borel-conjecture 와의 조상관계를 check-cycle 로 확인할 것",
       "createdAt": "2026-10-06T16:55:35.235Z",
       "seq": 1812
+    },
+    {
+      "id": "af8a3e61",
+      "title": "확률밀도 문서 신설",
+      "priority": 10,
+      "note": "확률론. 부모 후보는 random-variables 와 radon-nikodym. 37차에 riemann-stieltjes-integral 의 직관 절을 쓰면서 확률밀도를 링크 없이 이름만 썼다(0절). 저장소에 probability-density 가 없고 random-variables, radon-nikodym, change-of-measure 가 각자 한 줄로 쓴다. Radon-Nikodym 도함수로서의 밀도, Lebesgue 측도에 절대연속인 분포에서만 밀도가 있는 것, 변수변환의 Jacobian, 혼합 분포에서 밀도가 없는 예가 내용이다",
+      "createdAt": "2026-10-06T20:50:01.489Z",
+      "seq": 1817
+    },
+    {
+      "id": "5a6e0bef",
+      "title": "Riemann 사상정리 문서 신설 판단",
+      "priority": 10,
+      "note": "복소해석. 37차에 hurwitz-theorem 을 쓰면서 Riemann 사상정리를 conformal-mapping.md 로 링크했다. conformal-mapping(등각사상) 49줄에 '## Riemann 사상정리' 절이 있어 현재는 그쪽이 거두고 있다. 별도 문서로 분리할지 판단이 필요하다. 분리하면 Montel 정리로 정규족을 뽑고 Hurwitz 정리로 극한의 단사성을 얻는 증명 전체가 내용이 되고 hurwitz-theorem 과 montel-theorem 의 자식이 된다. 분리하지 않으면 conformal-mapping 의 그 절을 보강하고 두 정리를 본문 링크로 잇는다. conformal-mapping 의 현재 분량과 그 절의 길이를 먼저 볼 것",
+      "createdAt": "2026-10-06T20:59:06.221Z",
+      "seq": 1821
     },
     {
       "id": "dfb3e493",
