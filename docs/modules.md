@@ -189,11 +189,19 @@ $$
 
 ## 더 알아보기
 
+### 가군의 구성
+
 - [완전열](exact-sequences.md)
+- [텐서곱](tensor-products.md)
+
+### 특수한 가군
+
 - [PID 위의 유한생성 가군](finitely-generated-modules.md)
 - [Nakayama 보조정리](nakayama-lemma.md)
 - [사영가군](projective-modules.md)
-- [텐서곱](tensor-products.md)
+
+### 표현론에서의 쓰임
+
 - [세포대수](cellular-algebras.md)
 
 #ring_theory #algebra #linear_algebra #group_theory
