@@ -172,5 +172,6 @@ $$
 - [유수 정리](residue-theorem.md)
 - [해석적 연속](analytic-continuation.md)
 - [Bernoulli 수](bernoulli-numbers.md)
+- [점근급수](asymptotic-series.md)
 
 #analysis #complex_analysis #combinatorics #optimization

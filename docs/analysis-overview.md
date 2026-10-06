@@ -32,7 +32,9 @@ graph TD
   FS --> FT["Fourier 변환"]
   FS --> PSm["Poisson 합 공식"]
   PSm --> MT["Mellin 변환"]
-  EM["Euler–Maclaurin 공식"] --> GM["감마 함수"]
+  PS --> AS["점근급수"]
+  AS --> EM["Euler–Maclaurin 공식"]
+  EM --> GM["감마 함수"]
   EM --> PSm
   GM --> LP["Laplace 방법"]
   LP --> SP["정상위상법"]
@@ -95,6 +97,7 @@ graph TD
 
 ## 점근해석과 재합산
 
+- [점근급수](asymptotic-series.md): 수렴을 요구하지 않는 전개와 나머지항 조건, 최적 절단, Watson 보조정리
 - [Laplace 방법](laplace-method.md): 지수적으로 집중된 적분의 주항
 - [정상위상법](stationary-phase.md): 진동적분의 위상이 멈추는 자리
 - [Stokes 현상](stokes-phenomenon.md): 점근전개의 계수가 불연속으로 바뀌는 선
