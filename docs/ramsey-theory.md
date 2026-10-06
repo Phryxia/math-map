@@ -165,5 +165,6 @@ union bound 로 존재를 증명하는 기법은 [포함배제 원리](inclusion
 ## 더 알아보기
 
 - [확률적 방법](probabilistic-method.md)
+- [Hindman 정리](hindman-theorem.md)
 
 #combinatorics #graph_theory #probability #computation

@@ -98,6 +98,6 @@ $X$ 가 콤팩트 Hausdorff 이면 $\beta X$ 는 $X$ 와 위상동형이다. $e(
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hindman 정리](hindman-theorem.md)
 
 #topology #functional_analysis #set_theory
