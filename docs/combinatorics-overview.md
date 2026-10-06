@@ -39,6 +39,7 @@ graph TD
 - [Ramsey 이론](ramsey-theory.md): 충분히 크면 질서가 강제된다
 - [Hindman 정리](hindman-theorem.md): 유한합이 단색인 무한집합, 멱등 초필터로 넘는 증명
 - [Turán 정리](turan-theorem.md): $K_{r+1}$ 을 금지한 그래프의 최대 간선 수와 그 값을 주는 Turán 그래프
+- [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md): 조각 쌍마다 간선이 고른 분할, 삼각형 제거 보조정리와 Roth 정리
 - [Dilworth 정리](dilworth-theorem.md): 사슬 덮개와 반사슬의 최소최대 정리, Erdős–Szekeres 정리
 - [Sperner 정리](sperner-theorem.md): 부분집합 격자의 최대 반사슬과 LYM(Lubell–Yamamoto–Meshalkin) 부등식
 - [Erdős–Ko–Rado 정리](erdos-ko-rado.md): 교차족의 최대 크기, Katona 의 순환 배열 세기
