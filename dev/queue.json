@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-06T01:04:20.644Z",
-  "nextSeq": 1759,
+  "savedAt": "2026-10-06T05:04:51.641Z",
+  "nextSeq": 1776,
   "items": [
     {
       "id": "0490c28e",
@@ -66,6 +66,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 수식이 든 치환은 perl 대신 heredoc 으로 파일을 새로 쓰고 sed 로 줄을 갈아 끼운다. render-check 는 원문과 렌더 결과를 비교하므로 보간으로 깨진 줄을 잡지 못한다.",
       "createdAt": "2026-10-03T04:42:34.170Z",
       "seq": 1544
+    },
+    {
+      "id": "8ce35057",
+      "title": "'A와 B' 제목 전수 현황 (35차)과 grep 로케일",
+      "priority": 30,
+      "note": "4절 제목 규칙의 grep -l '^# .*[와과] ' docs/*.md 는 로케일을 지정해야 한다. 기본 로케일에서는 '# 연관 문서' 가 전부 걸려 문서 600 여 개가 후보로 나온다. LC_ALL=C.UTF-8 을 앞에 붙이면 25 건이 나온다. 25 건의 분류. 파일명이 두 개념을 모두 가리켜 규칙에 맞는 것: dyson-rank-crank fermat-euler-theorem filters-and-nets formalism-hilbert-program ideals-quotient-rings kleisli-eilenberg-moore limits-colimits luzin-sierpinski-sets selmer-tate-shafarevich. 정리 이름과 그 정리가 답하는 개념을 나란히 둔 4절 예외: canonical-height eisenstein-ideal greenberg-conjecture heegner-points np-completeness perfect-graphs serre-conjecture unique-games vandiver-conjecture waldspurger-theorem witten-asymptotics. 파일명이 한쪽만 가리켜 판정이 남은 것 다섯: dwork-rationality(지수합) herbrand-ribet(Eisenstein 합동) s-cobordism(고차원 Poincare 추측) speh-representations(잔여 스펙트럼, 큐 b102cbdd 와 같은 건) whittaker-models(중복도 1). 이 다섯은 각 문서를 보강하는 회차에 제목을 파일명의 개념으로 좁힐지 8절대로 나눌지 판단한다",
+      "createdAt": "2026-10-06T05:03:41.371Z",
+      "seq": 1774
     },
     {
       "id": "17ce5c43",
@@ -164,14 +172,6 @@
       "seq": 1696
     },
     {
-      "id": "c23c22b5",
-      "title": "'A와 B' 제목 전수 판정과 4절 grep 의 로케일 오탐",
-      "priority": 20,
-      "note": "31차 회차(2026-10-05) 판정 결과 메모. 문서는 고치지 않았다.\n\n사고 하나. CLAUDE.md 2절 3단계의 'A와 B' 제목 후보 grep -l '^# .*[와과] ' docs/*.md 를 이 환경(LANG 이 비어 있어 C 로케일)에서 돌리면 docs 거의 전부(560 여 개)를 보고한다. 원인은 grep 이 [와과] 를 문자 클래스가 아니라 바이트 집합으로 읽는 것이다. '과'(U+ACFC, EA B3 BC)의 첫 바이트 EA 가 '관'(U+AD00, EA B4 80)의 첫 바이트와 같아 모든 문서의 '# 연관 문서' 줄이 걸린다. LC_ALL=C.UTF-8 을 앞에 붙이면 24 건으로 줄고 그것이 참값이다. 같은 꼴의 다른 검사(4절 문체 헤딩 grep 의 (다|까|요|는|...) 처럼 한글이 든 문자 클래스)도 같은 환경에서 오탐·누락이 날 수 있으므로, 한글 문자 클래스를 쓰는 grep 은 전부 LC_ALL=C.UTF-8 을 붙여 돌린다. 교체 대상은 대안을 괄호로 묶은 꼴(다|까)이 아니라 대괄호 문자 클래스[와과]다. CLAUDE.md 를 고치려면 독자 판단이 필요하므로 메모로 남긴다.\n\n판정. 좁힌 24 건 전부 4절 제목 규칙에 맞고 고칠 것이 없다. 둘로 갈린다. (1) 파일명이 두 개념을 함께 담아 제목과 어긋나지 않는 것: ideals-quotient-rings(아이디얼과 몫환), limits-colimits(극한과 쌍대극한), kleisli-eilenberg-moore, luzin-sierpinski-sets, selmer-tate-shafarevich, formalism-hilbert-program, fermat-euler-theorem, dyson-rank-crank. (2) 4절이 명시한 예외 '정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목': canonical-height, dwork-rationality, eisenstein-ideal, greenberg-conjecture, heegner-points, herbrand-ribet, np-completeness, perfect-graphs, s-cobordism, serre-conjecture, speh-representations, unique-games 등. perfect-graphs 는 파일명이 '완전그래프' 만 가리키고 제목이 강한 완전그래프 정리까지 담지만, 그 정리가 완전그래프를 특징짓는 정리이므로 예외에 든다.\n\n같은 회차에 돌린 다른 전수 검사도 전부 0 건이다. 구형 '## 정의'/'## 성질' 구조 문서 0 개, '# 개요' 가 없는 문서 0 개, 태그가 하나뿐인 문서 0 개, 4.5절 개관 매핑의 미수록·매핑없음 0 건.",
-      "createdAt": "2026-10-05T00:58:51.359Z",
-      "seq": 1697
-    },
-    {
       "id": "ffc1eaca",
       "title": "각주 출처로 쓰인 Wikipedia 전수 현황",
       "priority": 20,
@@ -194,14 +194,6 @@
       "note": "독자 판단 대기(CLAUDE.md 본문의 grep 이라 고치려면 판단이 필요하다). 32차 회차(2026-10-05)에 발견하고 전수로 닫았다.\n\n문제. 4절 문체 규칙의 금지 어휘 목록은 본문에 '공짜 청구서, 사다리, 은탄환, 열쇠, 씨앗, 무대, 뼈대, 심장, 지름길, 함정, 마법, 무기' 를 적는데 같은 절이 주는 후보 찾기 grep 에는 '무대' 가 없다. 그래서 etale-fundamental-group:115 의 'Weil 추측의 무대인 코호몰로지' 가 여러 회차를 통과했다.\n\n전수 결과. 그 한 줄을 'Weil 추측의 증명이 쓰는 코호몰로지' 로 고친 뒤(커밋 8dd191c9) docs 625 개와 README 에 '무대' 를 다시 걸러 0 건이다. '무대' 가 든 정당한 용어는 없으므로 grep 패턴에 넣어도 오탐이 생기지 않는다. 판단할 것은 CLAUDE.md 4절의 grep 에 '무대' 를 더할지뿐이다.\n\n함께 닫은 것. 규칙 본문의 금지 어휘는 아니지만 같은 성격의 수사 '핵심 장치다, 핵심 도구다, 그 언어다, 기본 장치다' 를 전수로 걸러 넷을 고쳤다. field_theory 통독에서 둘(field-extensions:113 '분해체와 군 작용이 그 언어다', error-correcting-codes:84 '~이 확률적 검증 가능 증명과 영지식 증명의 기본 장치다'), 그 밖에 둘(serre-conjecture:22 '그 귀납이 증명의 핵심 장치다' 는 앞 문장이 이미 귀납을 말하므로 절을 지웠다, supersingular-isogeny-graphs:58 '쓰이며 공격과 방어 양쪽의 핵심 도구다' 는 피동과 등위까지 함께 고쳐 '공격과 방어 양쪽이 이 대응으로 ... 옮긴다' 로 바꿨다. 커밋 214145c5). 이 네 꼴도 패턴에 넣을지는 같은 판단에 든다.",
       "createdAt": "2026-10-05T12:48:15.314Z",
       "seq": 1717
-    },
-    {
-      "id": "980fe601",
-      "title": "문체 헤딩 grep 이 '지' 로 끝나는 명사구를 문장으로 오판한다",
-      "priority": 20,
-      "note": "독자 판단 대기(CLAUDE.md 4절 본문의 grep 이라 고치려면 판단이 필요하다). 중복 항목 통합(32차 회차, 2026-10-05): 같은 문제를 따로 밀어 둔 3개 항목(9bc3b9fa b4ccf30f 685dffaf)을 하나로 합쳤다. 각 메모를 차례로 둔다.\n\n[1/증명의 요지] 4절 문체 규칙의 헤딩 grep 이 '## 증명의 요지' 를 문장으로 잡는다. '요지' 가 '[^로]지 *$' 에 걸리는 오탐이고, 이 표현은 CLAUDE.md 가 '증명의 뼈대 -> 증명의 요지' 로 권하는 명사구이므로 문서들이 그대로 쓰고 있다. 헤딩 검사 때 이 하나는 걸러서 보고, 다른 오탐이 더 있는지 확인한다.\n\n[2/고치는 방법] grep 의 [^로]지 를 [^로요]지 같은 것으로 좁히거나, 걸린 헤딩 가운데 관용 헤딩을 예외로 적는 문구가 CLAUDE.md 에 필요하다.\n\n[3/에너지] 4절 헤딩 grep 이 '## 길이와 에너지' 도 문장으로 잡았다. '에너지' 의 '지' 가 같은 패턴에 걸리는 오탐이고 명사구이므로 정당하다. 30차 회차에 geodesics 의 그 헤딩을 '길이 범함수와 에너지 범함수' 로 바꿔 우회했다.\n\n[32차 전수 결과] docs 627 개에 헤딩 grep 을 돌려 보고가 '## 증명의 요지' 15 건 하나뿐이다. '에너지' 는 30차의 우회로 사라졌고 다른 오탐 유형은 나오지 않았다. 실제 문장형 헤딩 위반은 0 건이다. 즉 지금 이 grep 의 오탐은 '요지' 한 패턴으로 좁혀졌고, [^로]지 를 [^로요]지 로 바꾸면 보고가 0 이 된다. 다만 '지' 로 끝나는 다른 명사(에너지, 나머지, 단위원지 같은 것)가 새 문서에 들어오면 다시 걸리므로, 패턴을 좁히는 것과 예외 문구를 두는 것 가운데 어느 쪽이 맞는지는 판단이 필요하다.",
-      "createdAt": "2026-10-05T12:57:49.594Z",
-      "seq": 1722
     },
     {
       "id": "2e7a6e31",
@@ -234,6 +226,54 @@
       "note": "35차 판정 대기. 옛 큐 항목 46f8c4d4(Leray-Schauder 차수)의 note 가 'Brouwer 차수 자체를 다루는 문서가 저장소에 없으므로 차수의 정의부터 세워야 한다' 고 적었고, 35차에 쓴 leray-schauder-degree 의 '## Brouwer 차수' 절이 정칙값의 원상을 Jacobi 행렬식 부호로 세는 정의와 연속 확장을 담았다. 별도 문서로 분리하려면 호몰로지로 보는 차수, Hopf 정리(차수가 호모토피류를 완전히 가른다), 사상도수와 Poincare-Hopf 정리의 관계가 내용이 되어야 한다. poincare-hopf 와 brouwer-fixed-point 가 이미 있으므로 그 둘과 겹치는 범위를 먼저 확인할 것",
       "createdAt": "2026-10-06T01:02:39.143Z",
       "seq": 1756
+    },
+    {
+      "id": "89a333fe",
+      "title": "filters-and-nets 제목 판정",
+      "priority": 20,
+      "note": "판정 완료 메모. 4절 제목 규칙의 grep -l '^# .*[와과] ' 후보에 filters-and-nets 가 뜬다. 제목 '필터와 그물' 과 파일명 filters-and-nets 가 같은 두 개념을 가리키므로 '파일명이 그중 하나만 가리키면 어긋난 것' 에 해당하지 않는다. 필터와 그물은 같은 수렴을 집합족과 첨자족으로 적은 두 언어이고 문서의 '두 언어의 번역' 절이 서로의 구성을 담으므로 나누면 양쪽이 서로를 참조해야 한다. 분할하지 않는다",
+      "createdAt": "2026-10-06T04:54:09.800Z",
+      "seq": 1765
+    },
+    {
+      "id": "7ed10f94",
+      "title": "Stone-Cech 콤팩트화와 filters-and-nets 의 간선 판정",
+      "priority": 20,
+      "note": "판정 완료 메모. 이번 회차에 filters-and-nets 를 쓰고 stone-cech-compactification 을 열어 보았다. 63-73줄의 '초필터와의 대응' 절이 beta N 의 점과 N 위의 초필터의 일대일 대응, 주 초필터와 자유 초필터의 구분, 자유 초필터의 개수 2^{2^aleph_0} 를 모두 담고 있어 보강할 것이 없다. 간선은 넣지 않았다. 5절 기준으로 Stone-Cech 의 개요가 유계 연속함수의 확장으로 정의를 세우고 필터 없이 읽히므로 필터는 선수지식이 아니라 배경이다. 대신 초필터가 정의에 직접 들어가는 ultraproducts 를 filters-and-nets 의 자식으로 두었다",
+      "createdAt": "2026-10-06T04:55:17.850Z",
+      "seq": 1767
+    },
+    {
+      "id": "6373b5ba",
+      "title": "'특징지어진다' 피동 전수 교정 완료와 '짝지어진다' 판정",
+      "priority": 20,
+      "note": "완료 메모. 35차 회차에 '특징지어진다' 15 곳 가운데 13 곳을 능동으로 고쳤다(connectedness 154, finite-automata 121, graph-minors 7과 41, hilbert-spaces 74, hodge-theory 7, hyperarithmetical-hierarchy 29, jacquet-langlands 47, knot-invariants 75, lagrange-duality 7, linear-regression 55, matroids 81, modules 87). 전환은 주어를 판정하는 쪽으로 옮기는 것이다. 'X 로 특징지어진다' 를 'X 가 ...를 판정한다' 나 'X 가 정확히 ...이다' 로 쓴다. grep -n '특징지어진다' docs/*.md 가 0 건이다. 남은 '짝지어진다' 둘(complex-multiplication 136, geodesics 86)은 대응을 받는 쪽을 주어로 삼은 문장이라 능동으로 고치면 주어가 바뀌어 뜻이 달라진다. 피동 금지 대상으로 보지 않고 그대로 두었다",
+      "createdAt": "2026-10-06T05:01:21.713Z",
+      "seq": 1771
+    },
+    {
+      "id": "b2baa2e9",
+      "title": "4절 관용구 grep 의 '지나지 않' 오탐 판정",
+      "priority": 20,
+      "note": "판정 완료 메모. 35차 회차에 4절 번역체 금지 표현 '~에 지나지 않는다' 를 '지나지 않' 으로 전수 검색해 6 건이 나왔다(crossing-number-inequality 27, finite-projective-planes 38, fredholm-operators 93과 95, residue-theorem 53, vector-spaces 50). 전부 '곡선이 정점을 지나지 않는다', '경로가 특이점을 지나지 않는다', '기호가 0 을 지나지 않는다', '원점을 지나지 않는 직선' 처럼 통과를 뜻하는 기하 서술이고 금지 관용구가 아니다. 패턴을 쓸 때는 '에 지나지 않' 으로 좁힌다. 같은 검색의 '우연이 아니' 1 건(riemann-integral 13)은 금지 표현이어서 '조각 안 어느 점의 값으로 높이를 잡아도 극한이 같아야 두 선택이 같은 값을 준다' 로 고쳤다",
+      "createdAt": "2026-10-06T05:02:03.970Z",
+      "seq": 1772
+    },
+    {
+      "id": "f7c54f08",
+      "title": "문장형 헤딩 전수 점검 결과 (35차)와 '요지' 오탐",
+      "priority": 20,
+      "note": "판정 완료 메모. 4절 문체 규칙의 헤딩 grep -E '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) $' 를 docs 전체에 돌려 15 건이 나왔고 전부 '## 증명의 요지' 다(baker-theorem banach-alaoglu casselman-shalika chebotarev deligne-weil-conjectures finitely-generated-modules gauss-bonnet hartshorne-lichtenbaum index-theorem lagrange-inversion pila-wilkie-theorem rademacher-theorem spectral-sparsification spectral-theorem tunnell-saito). '요지' 는 명사이고 패턴의 [^로]지 가 '요지' 의 지를 잡는 오탐이다. 실제 문장형 헤딩은 0 건이다. 패턴을 쓸 때 grep -v '요지$' 를 덧붙이거나 [^로요]지 로 좁힌다. 같은 회차에 코드블록 언어, 언어 없는 코드블록, 금지 매크로(operatorname bm newcommand), 추측성 절 이름, 범위 뭉뚱그린 열린 문제 문장도 전수로 돌려 모두 0 건을 확인했다",
+      "createdAt": "2026-10-06T05:02:41.442Z",
+      "seq": 1773
+    },
+    {
+      "id": "798d1060",
+      "title": "group-representations 를 conjugacy-classes 의 자식으로 두지 않은 판정",
+      "priority": 20,
+      "note": "판정 완료 메모. 35차 회차에 conjugacy-classes 를 쓰고 group-representations 를 자식으로 둘지 보았다. 5절 '더 알아보기의 기준' 으로 보면 군의 표현은 켤레류의 특수 사례나 확장이 아니라 지표를 류함수로 읽는 데 켤레류를 도구로 쓰는 쪽이고, 표현의 정의 자체는 켤레류 없이 선다. 간선 대신 group-representations 13줄의 켤레류 첫 등장에 본문 링크를 걸었고 burnside-lemma 53줄도 같게 했다. group-representations 의 부모는 eigenvalues 와 group-actions 둘로 둔다",
+      "createdAt": "2026-10-06T05:04:28.606Z",
+      "seq": 1775
     },
     {
       "id": "410fd79d",
@@ -868,14 +908,6 @@
       "seq": 803
     },
     {
-      "id": "35d70312",
-      "title": "그래프 마이너와 Robertson–Seymour 정리",
-      "priority": 10,
-      "note": "graph_theory. planar-graphs 94줄이 Wagner 형태를 그래프 마이너 정리의 첫 사례로 언급만 하고 독립 문서가 없다. 부모는 planar-graphs 와 graphs, 개관의 '기본 구조와 평면성' 갈래에 넣는다. 이번 회차에 쓴 tutte-polynomial 이 삭제-축약으로 정의되는 불변량을 다루므로 마이너 닫힌 성질과 함께 읽히는 자리다",
-      "createdAt": "2026-09-21T12:50:59.604Z",
-      "seq": 833
-    },
-    {
       "id": "7588240a",
       "title": "Potts 모형 분배함수",
       "priority": 10,
@@ -890,22 +922,6 @@
       "note": "algebraic_topology. 이번 회차에 쓴 homotopy-groups 가 Hopf 올뭉치의 긴 완전열을 도구로 쓰는데 올뭉치 자체의 정의(호모토피 올림 성질, Serre 올뭉치)를 문서 없이 인용했다. 부모는 homotopy-groups 와 covering-spaces(덮개는 이산 올의 올뭉치다). 안정 호모토피군과 Freudenthal 매달기 정리도 여기 붙일 수 있다",
       "createdAt": "2026-09-21T12:52:33.104Z",
       "seq": 835
-    },
-    {
-      "id": "00197e28",
-      "title": "Dirichlet 급수와 Abel 합",
-      "priority": 10,
-      "note": "analysis 또는 number_theory. 이번 회차에 쓴 series-convergence 의 활용 절이 Dirichlet 급수의 수렴 영역을 언급만 한다. 수렴 가로선, 절대수렴 가로선, Abel 합과 Tauber 정리를 한 문서로 묶을 수 있다. 부모는 series-convergence 와 dirichlet-l-functions 를 볼 것. prime-number-theorem 이 이 층위를 전제한다",
-      "createdAt": "2026-09-21T12:54:17.891Z",
-      "seq": 837
-    },
-    {
-      "id": "48753248",
-      "title": "필터와 그물",
-      "priority": 10,
-      "note": "topology. separation-axioms 의 Tychonoff 증명이 극대 필터를, limits 75 와 metric-spaces 102 가 그물(net)을 쓰는데 두 수렴 언어를 정의한 문서가 없다. 부모는 topology 와 partial-orders(유향집합이 필요하다). ultraproducts 와 nonstandard-analysis 가 초필터를 전제하므로 그쪽 부모로도 볼 것",
-      "createdAt": "2026-09-21T12:55:42.507Z",
-      "seq": 839
     },
     {
       "id": "76f34e55",
@@ -930,22 +946,6 @@
       "note": "number_theory. 이번 회차에 쓴 dirichlet-unit-theorem 이 류수 공식을 진술하면서 류수 h_K 자체의 정의와 유한성 증명은 인용만 했다. 류군의 유한성을 Minkowski 볼록체 정리로 보이고 Minkowski 유계로 작은 수체의 류수를 손계산하는 문서가 있어야 한다. 부모는 algebraic-number-fields 와 lattices(볼록체 정리가 격자점 세기다). dirichlet-unit-theorem 의 증명 셋째 단계도 같은 도구를 쓴다",
       "createdAt": "2026-09-21T12:58:32.131Z",
       "seq": 842
-    },
-    {
-      "id": "f6015f9f",
-      "title": "유한군의 켤레류와 지표표",
-      "priority": 10,
-      "note": "group_theory. 이번 회차에 burnside-lemma 를 group-actions 에서 분리하면서 켤레류를 쓴 계산 절을 넣었는데, 켤레류 자체의 정의와 클래스 방정식은 group-actions 91-95줄에만 있다. group-representations 의 지표표와 묶어 문서 하나로 만들 수 있다. 부모는 group-actions 와 group-representations 를 볼 것",
-      "createdAt": "2026-09-21T13:00:08.151Z",
-      "seq": 843
-    },
-    {
-      "id": "d3f49547",
-      "title": "나무 분해와 나무폭",
-      "priority": 10,
-      "note": "graph_theory. 이번 회차에 쓴 graph-minors 가 나무 분해와 나무폭을 한 절로만 정의하고 격자 마이너 정리와 동적 계획법을 언급만 했다. 주머니 조건, 나무폭이 마이너로 줄지 않는 증명, 나무 분해 위 동적 계획법(독립집합)을 코드로 보이는 문서가 될 수 있다. 부모는 graph-minors 와 dynamic-programming",
-      "createdAt": "2026-09-21T13:01:22.606Z",
-      "seq": 844
     },
     {
       "id": "086527d4",
@@ -978,14 +978,6 @@
       "note": "2026-09-22 둘째 회차에 앞 note 가 남긴 후보 넷을 마저 판정해 셋을 좁혔다: algebraic-k-theory '대수적 K 이론'(Quillen-Lichtenbaum 은 65줄 절과 85줄 Vandiver 동치 절), borcherds-products 'Borcherds 곱'(특이 theta 올림은 32·51줄 절), hyperbolic-3-manifolds '쌍곡 3 다양체'(Mostow 강직성은 17·90줄 절). kleisli-eilenberg-moore 는 파일명이 두 범주를 다 담으므로 limits-colimits 와 같은 4절 예외로 두었다. 참조 표시 제목도 치환했다(algebraic-k-theory 4, borcherds-products 1, hyperbolic-3-manifolds 7. 나머지 참조는 이미 좁은 제목을 쓰고 있었다). 우선순위를 20 에서 10 으로 낮춘다. LC_ALL=C.utf8 grep -l '^# .*[와과] ' docs/*.md 가 아직 100 개 남짓을 내놓지만, 표본을 보면 남은 것은 대부분 4절이 예외로 정한 '개념 + 그 개념을 다루는 정리 이름' 꼴이다(differential-forms '미분형식과 Stokes 정리', holomorphic-functions, canonical-height, network-flow, np-completeness 등). 다음 차수에는 좁힐 것을 찾기보다 예외 판정을 목록으로 확정하는 편이 낫다. 예외로 확정한 것: 정리 이름이 뒤에 오는 제목, 파일명이 두 항목을 모두 담은 제목(limits-colimits, kleisli-eilenberg-moore, ideals-quotient-rings, eigenvalues, proofs 등), 한 쌍이 한 개념인 제목(dyson-rank-crank 의 rank 와 crank)",
       "createdAt": "2026-09-22T04:45:36.007Z",
       "seq": 896
-    },
-    {
-      "id": "18ef4648",
-      "title": "스펙트럼열",
-      "priority": 10,
-      "note": "분야: 대수적 위상수학(#algebraic_topology). 붙일 부모 후보는 homology 또는 exact-sequences 계열이고, 쓰는 쪽에서 부르는 문서는 algebraic-k-theory 73(Quillen-Lichtenbaum 의 etale 스펙트럼열), borel-weil-bott 121(Leray 스펙트럼열로 P^1 다발을 처리하는 증명), eilenberg-maclane-spaces 54(Serre 가 K(Z/2,n) 의 mod 2 코호몰로지를 계산한 자리), khovanov-homology 120(instanton 호몰로지와의 스펙트럼열) 넷이다. 2026-09-22 셋째 회차의 '스펙트럼' 용어 훑기에서 갈래 (2) 로 분류한 자리들인데 목표 문서가 없어 링크를 걸지 못했다. 문서를 만들면 그 네 자리에 본문 첫 등장 링크를 함께 건다. 담을 것: 여과된 복합체나 이중 복합체에서 나오는 E_r 쪽과 d_r, 수렴과 퇴화, Leray-Serre 스펙트럼열(올다발의 호몰로지), 그리고 낮은 차수의 5 항 완전열. CLAUDE.md 2절 3단계가 예시로 드는 'add spectral-sequences under homology' 가 이 항목이다",
-      "createdAt": "2026-09-22T08:39:39.978Z",
-      "seq": 907
     },
     {
       "id": "11557b33",
@@ -1066,14 +1058,6 @@
       "note": "policy-gradient 활용 넷째 항목. 대리 목적의 하한, KL 제약과 잘라내기, 단조 개선 보장. 부모는 policy-gradient. #machine_learning #optimization",
       "createdAt": "2026-09-23T20:45:55.723Z",
       "seq": 1038
-    },
-    {
-      "id": "503d2fe5",
-      "title": "분산 축소 경사법",
-      "priority": 10,
-      "note": "stochastic-gradient-descent 성질 마지막 절이 한 문단으로 다룬다. SAG 와 SVRG 의 갱신식, 불편성 유지와 분산이 0 으로 가는 이유, 고정 보폭 선형 수렴의 증명 요지, 유한합 제약. 부모는 stochastic-gradient-descent. #optimization #machine_learning",
-      "createdAt": "2026-09-23T20:47:56.907Z",
-      "seq": 1040
     },
     {
       "id": "fbed365b",
@@ -1858,6 +1842,70 @@
       "note": "해석학(#analysis #functional_analysis #optimization). 35차 큐 대조에서 'Lax-Milgram 정리' 부분만 떼어 제목을 좁혔다(옛 항목 57bb4724). lax-milgram.md 가 이미 있고 그 문서에는 직접법과 약한 하반연속성이 없다(grep 으로 확인). 담을 내용은 강제성과 약한 하반연속성에서 최소화자의 존재를 얻는 논증, Dirichlet 에너지의 최소화, 볼록성과 약수렴의 관계다. 부모는 sobolev-spaces 와 lax-milgram",
       "createdAt": "2026-10-06T00:48:45.119Z",
       "seq": 1749
+    },
+    {
+      "id": "fb9f69e2",
+      "title": "경로폭과 분지폭",
+      "priority": 10,
+      "note": "graph_theory. 이번 회차에 쓴 treewidth 가 나무 분해만 다룬다. 경로 분해(나무가 경로인 경우)와 가지 분해는 폭 불변량이 셋이 서로 상수배 안에서 묶이는 관계를 이룬다. 부모는 treewidth",
+      "createdAt": "2026-10-06T04:42:49.602Z",
+      "seq": 1759
+    },
+    {
+      "id": "64c78a4c",
+      "title": "Courcelle 정리",
+      "priority": 10,
+      "note": "logic 또는 complexity. treewidth 143-148줄이 단항 2차 논리와 정리 진술만 담고 증명의 요지(나무 오토마타로의 번역)와 MSO 로 쓸 수 있는 성질의 범위를 다루지 않는다. 부모는 treewidth 와 first-order-logic",
+      "createdAt": "2026-10-06T04:42:49.719Z",
+      "seq": 1760
+    },
+    {
+      "id": "fbb7d6c7",
+      "title": "확률 그래프 모형의 추론",
+      "priority": 10,
+      "note": "probability 또는 machine_learning. treewidth 의 활용 절이 결합분포를 그래프로 적은 모형과 연접 나무 절차를 링크 없이 이름만 쓴다(0절). 모랄 그래프, 연접 나무, 믿음 전파와 추론 비용이 나무폭에 지수인 것. 부모는 treewidth 와 bayesian-inference 를 볼 것",
+      "createdAt": "2026-10-06T04:42:49.834Z",
+      "seq": 1761
+    },
+    {
+      "id": "3884da71",
+      "title": "지표표의 계산",
+      "priority": 10,
+      "note": "group_theory, linear_algebra. 이번 회차에 쓴 conjugacy-classes 가 S_3 의 지표표만 보이고, group-representations 120-146줄이 두 직교관계와 S_3 예를 담는다. 작은 군(S_4, A_5, Q_8)의 지표표를 직교관계와 차수 공식으로 채우는 절차를 다루는 문서가 될 수 있다. 부모는 conjugacy-classes 와 group-representations",
+      "createdAt": "2026-10-06T04:46:29.319Z",
+      "seq": 1762
+    },
+    {
+      "id": "77266faa",
+      "title": "상관균형과 후회 최소화",
+      "priority": 10,
+      "note": "optimization, machine_learning. 이번 회차에 쓴 nash-equilibrium 의 활용 절이 후회 최소화 절차의 평균 전략이 minimax 값으로 간다는 것만 적는다. 상관균형의 정의와 선형계획 표현, 후회 최소화의 평균 전략이 상관균형 집합으로 수렴하는 정리, multiplicative weights 가 담길 자리다. 부모는 nash-equilibrium",
+      "createdAt": "2026-10-06T04:50:13.395Z",
+      "seq": 1763
+    },
+    {
+      "id": "4601e33a",
+      "title": "가격 무정부",
+      "priority": 10,
+      "note": "optimization, graph_theory. nash-equilibrium 의 '균형의 비효율' 절이 정의만 적고 혼잡 게임의 유계를 다루지 않는다. 비이기적 경로배정의 4/3 유계(Roughgarden-Tardos), 혼잡 게임의 가능함수와 순수전략 균형의 존재가 담길 자리다. 부모는 nash-equilibrium 과 network-flow 를 볼 것",
+      "createdAt": "2026-10-06T04:50:13.499Z",
+      "seq": 1764
+    },
+    {
+      "id": "493a738d",
+      "title": "Perron 공식과 명시적 공식",
+      "priority": 10,
+      "note": "number_theory, complex_analysis. 이번 회차에 쓴 dirichlet-series 가 Perron 공식을 진술만 하고 절단된 판본의 오차항과 적분선 이동의 실제 계산을 다루지 않는다. Riemann-von Mangoldt 의 명시적 공식(psi(x) 를 zeta 의 영점 합으로 적는 것)이 같은 문서에 들어갈 수 있다. 부모는 dirichlet-series 와 riemann-zeta",
+      "createdAt": "2026-10-06T04:58:30.797Z",
+      "seq": 1768
+    },
+    {
+      "id": "0338fe13",
+      "title": "Mobius 반전과 산술함수의 환",
+      "priority": 10,
+      "note": "number_theory. dirichlet-series 의 'Dirichlet 합성곱' 절과 표준적인 예 표가 mu * 1 = delta 와 Mobius 반전을 한 줄로만 적는다. 산술함수 전체가 합성곱 아래 가환환을 이루고 곱셈적 함수가 그 안의 군을 이루는 것, 반전 공식의 증명, Dirichlet 급수와의 대응이 한 문서의 분량이다. 부모는 dirichlet-series",
+      "createdAt": "2026-10-06T04:58:30.902Z",
+      "seq": 1769
     },
     {
       "id": "dfb3e493",
