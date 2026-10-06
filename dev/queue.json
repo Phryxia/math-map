@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-06T09:01:32.457Z",
-  "nextSeq": 1792,
+  "savedAt": "2026-10-06T13:05:38.069Z",
+  "nextSeq": 1808,
   "items": [
     {
       "id": "0490c28e",
@@ -50,6 +50,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 36차에 golay-codes 를 mathieu-groups 에서 분할하며 error-correcting-codes -> mathieu-groups 간선을 빼고 error-correcting-codes -> golay-codes -> mathieu-groups 로 꿰었다. 그런데 information-theory-overview 의 '# 지도' mermaid 에 'ECC --> MAT' 가 남아 있었다. 4.5절은 지도가 실제 간선의 부분그래프여야 한다고 하는데, 간선을 뺀 뒤 지도를 고치지 않으면 지도가 없는 간선을 그린다.\n\nvalidate, cycles, render-check, order-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다. 간선은 '# 연관 문서' 절에만 있고 지도의 화살표는 코드블록 안이라 파서가 보지 않는다. 36차에는 같은 회차 안에서 눈으로 잡아 'ECC --> GOL --> MAT' 로 고쳤다.\n\n검사법. 개관의 mermaid 블록만 뽑아 바꾼 문서의 제목이 들어간 줄을 본다. for f in docs/*-overview.md; do awk '/^```mermaid/{m=1} m{print FILENAME\": \"$0} /^```$/{if(m){m=0}}' $f; done | grep -iE '<바뀐 문서들의 제목>' 로 충분하다. 36차에는 이 grep 이 두 줄을 내놓아 한 곳만 고치면 됨이 드러났다.\n\n규칙. 8절의 통합·분할 절차(새 id 정하기, 부모와 자식 옮기기, 본문 링크 바꾸기, 옛 파일 git rm)에 '개관 지도 mermaid 맞추기' 를 더해 생각한다. 간선을 뺀 회차에는 반드시 위 grep 을 돌린다. 간선을 더한 경우는 지도가 부분그래프이면 되므로 더하지 않아도 규격 위반이 아니지만, 핵심 문서라면 넣는다.",
       "createdAt": "2026-10-06T08:51:55.453Z",
       "seq": 1784
+    },
+    {
+      "id": "1d4e9a24",
+      "title": "replaceSection 류 절 단위 교체가 문서 끝 태그 줄을 덮는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 37차에 '## 더 알아보기' 절을 헤딩 기준으로 교체하는 node 스크립트를 썼다. 절의 끝을 '다음 H1 또는 H2 까지' 로 잡았는데 '## 더 알아보기' 는 문서의 마지막 H2 이므로 끝이 파일 끝이 되고, 그 사이에 있는 태그 줄(#probability #analysis)이 교체문에 덮여 사라졌다. ito-calculus 와 ordinary-differential-equations 둘에서 났다. '## 선수지식' 교체는 뒤에 '## 더 알아보기' 가 있어 무사했다.\n\n검사 여섯과 render-check, order-check 는 이것을 전혀 잡지 못한다. graph.mjs validate 도 통과한다(간선은 링크 줄만 읽는다). 잡아낸 것은 tail -2 로 끝부분을 눈으로 본 것이고, graph.mjs tags 의 'N untagged' 수치로도 드러난다.\n\n규칙 둘. (1) 문서 마지막 절을 교체하는 스크립트는 태그 줄(^#[a-z0-9_ #]*$ 꼴의 마지막 줄)을 절 범위에서 빼거나, 교체문 끝에 태그 줄을 함께 적는다. (2) 어떤 방식으로든 docs 를 스크립트로 고친 회차에는 커밋 전에 'node dev/graph.mjs tags | tail -1' 로 untagged 가 0 인지 보고, 고친 문서마다 'tail -2 docs/<id>.md' 로 태그 줄이 남았는지 확인한다. 복구는 'git show HEAD:docs/<id>.md | tail -1' 로 원본 태그 줄을 꺼내 붙이면 된다.",
+      "createdAt": "2026-10-06T12:44:38.127Z",
+      "seq": 1795
     },
     {
       "id": "08e59419",
@@ -282,6 +290,46 @@
       "note": "판정 완료 메모. 35차 회차에 conjugacy-classes 를 쓰고 group-representations 를 자식으로 둘지 보았다. 5절 '더 알아보기의 기준' 으로 보면 군의 표현은 켤레류의 특수 사례나 확장이 아니라 지표를 류함수로 읽는 데 켤레류를 도구로 쓰는 쪽이고, 표현의 정의 자체는 켤레류 없이 선다. 간선 대신 group-representations 13줄의 켤레류 첫 등장에 본문 링크를 걸었고 burnside-lemma 53줄도 같게 했다. group-representations 의 부모는 eigenvalues 와 group-actions 둘로 둔다",
       "createdAt": "2026-10-06T05:04:28.606Z",
       "seq": 1775
+    },
+    {
+      "id": "3708644a",
+      "title": "37차 전수 점검 결과",
+      "priority": 20,
+      "note": "2026-10-06 37차에 1절에 없는 전수 검사 일곱을 돌려 전부 0 건이다. (1) 태그가 하나뿐인 문서 0 건. (2) 1000줄 초과 0 건(최대 p-adic-hodge-theory 276줄). (3) 구형 구조('## 기타 참고 문헌') 0 건. (4) 언어 없는 코드블록과 허용 외 언어 0 건. (5) operatorname/bm/newcommand 류 0 건. (6) 열린 문제 방향형 절 이름과 범위 뭉뚱 문장 0 건. (7) 줄 끝 백슬래시와 HTML 태그로 읽히는 부등호 0 건.\n\n비유 금지 grep 은 3 건을 내놓았고 전부 용어의 일부라 오탐이다(elliptic-curves:118 'Montgomery 사다리', lie-algebras:162 '사다리 연산자', post-quantum-cryptography:126 '함정문'). 큐 dc8b9099 의 판정과 같다.\n\n'A와 B' 제목 grep 은 로케일 때문에 docs 전체 647 개를 다 내놓았다(큐 8ce35057 이 지적한 문제). 바이트 클래스 [와과] 가 모든 한글에 매치한다. python 의 re 로 '^# .*(와|과) ' 를 돌리면 25 건이고, 전부 4절 제목 규칙에 맞다. 정리 이름과 그 정리가 답하는 개념을 나란히 둔 것(canonical-height, eisenstein-ideal, heegner-points, np-completeness, perfect-graphs, s-cobordism, serre-conjecture, unique-games 등)이거나 파일명이 양쪽을 담은 것(filters-and-nets, ideals-quotient-rings, kleisli-eilenberg-moore, limits-colimits, luzin-sierpinski-sets, selmer-tate-shafarevich)이다. 새로 생긴 위반은 없다. CLAUDE.md 4절의 grep 은 LC_ALL 과 무관하게 이 저장소 환경에서 쓸 수 없으므로 python 쪽을 쓴다.",
+      "createdAt": "2026-10-06T12:56:43.548Z",
+      "seq": 1801
+    },
+    {
+      "id": "0348741e",
+      "title": "본문 링크 라벨 점검 결과 (37차)와 남은 두 유형",
+      "priority": 20,
+      "note": "2026-10-06 37차에 본문 링크 라벨과 대상 문서 제목을 전수 대조했다(python re 로 [라벨](id.md) 를 뽑아 대상의 H1 과 비교). 756 건이 어긋나고 대부분 문맥에 맞게 줄인 라벨이라 정상이다('거리공간' 대 '거리 공간', '콤팩트' 대 '콤팩트성', 'Heegner 점' 대 'Heegner 점과 Gross-Zagier 공식'). 4절은 링크 형식을 [표시 제목](id.md) 로 정하므로 제목과 같아야 한다는 규칙은 없다.\n\n실제 오류 둘을 찾아 고쳤다. (1) weak-convergence:88 의 '[Fourier 변환](fourier.md)' 이 이산 Fourier 변환 문서를 가리켰다. 문맥은 측도의 Fourier 변환(특성함수)이므로 fourier-transform.md 로 고쳤다. 라벨이 제목과 어긋난 자리가 잘못된 대상을 드러낸 경우다. (2) wasserstein-gradient-flow:13 의 '[Itô 계산](ito-calculus.md)' 은 ito-calculus 제목이 'Itô 적분' 으로 좁혀진 뒤 남은 라벨이고, 가리키는 내용(Fokker-Planck 방정식)이 이번 회차에 새로 쓴 stochastic-differential-equations 로 옮겨갔으므로 그쪽으로 고쳤다.\n\n다음 차수에 볼 것. 라벨과 대상 제목이 어긋난 756 건 가운데 '제목을 줄인 것' 이 아니라 '다른 개념을 가리키는 것' 을 가려내는 기준이 필요하다. fourier/fourier-transform, homology/cohomology, order-lattices/lattices 처럼 이름이 비슷한 문서 쌍을 목록으로 만들어 그 쌍이 걸린 링크만 보는 것이 효율적이다.",
+      "createdAt": "2026-10-06T13:02:00.486Z",
+      "seq": 1804
+    },
+    {
+      "id": "86b771aa",
+      "title": "이름이 비슷한 문서 쌍으로 가는 본문 링크 점검법과 37차 결과",
+      "priority": 20,
+      "note": "2026-10-06 37차에 앞 항목이 남긴 기준을 바로 적용했다. 방법은 둘이다. (1) id 가 서로의 접두사인 쌍을 뽑는다(python: b.startswith(a+'-')). 37차에 11 쌍이고 그 가운데 개관 쌍 넷(category/category-theory-overview, measure/measure-theory-overview, probability/probability-overview, topology/topology-overview)은 혼동 위험이 없다. 남는 위험 쌍은 fourier/fourier-series/fourier-transform, limits/limits-colimits, mixing/mixing-time, partitions/partitions-of-unity, groups/groups-of-finite-morley-rank, category/category-o 다. (2) 그 짧은 쪽 id 로 가는 본문 링크 가운데 라벨이 대상 제목과 다른 것만 본다. 20 건이 나왔다.\n\n20 건 가운데 실제 오류는 둘이고 모두 fourier.md(이산 Fourier 변환)를 가리키면서 문맥은 fourier-transform.md 였다. characteristic-functions:13 의 '확률측도의 Fourier 변환' 과 topological-groups:73 의 'Pontryagin 쌍대성이 Fourier 변환을 군 위에서 정의하는 틀' 이다. 둘 다 fourier-transform.md 로 고쳤다. 앞 회차에 고친 weak-convergence:88 과 합쳐 fourier.md 오링크는 세 건이었다.\n\n나머지 18 건은 문맥에 맞게 줄인 라벨이라 정상이다('확률 공간' -> probability, '분할' -> partitions, '위상' -> topology, '극한' -> limits, '혼합' -> mixing, '자유군' -> groups). 다음 차수에는 이 20 건 목록이 아니라 위 (1)의 쌍 목록만 다시 뽑아 새 문서가 쌍을 더 만들었는지 보면 된다.",
+      "createdAt": "2026-10-06T13:03:00.896Z",
+      "seq": 1805
+    },
+    {
+      "id": "a9562e8a",
+      "title": "개관 지도 mermaid 부분그래프 점검 결과와 검사법 (37차)",
+      "priority": 20,
+      "note": "2026-10-06 37차에 21 개 개관의 '# 지도' mermaid 를 전수로 실제 간선과 대조했다. 판정한 간선 413 개가 모두 실제 간선이고 없는 간선은 0 건이다. 라벨이 대상 문서 제목과 달라 판정하지 못한 것이 70 건이다(지도에서 'Compactness', 'Functor', 'Lp 공간', '확률변수와 기댓값' 처럼 줄여 쓴 라벨). 4.5절은 지도가 실제 간선의 부분그래프이기만 요구하고 라벨을 제목과 같게 하라고는 하지 않으므로 이 70 건은 오류가 아니다.\n\n검사기를 만들 때 걸린 것 둘을 적어 둔다. (1) '# 지도' 바로 뒤에 mermaid 블록이 오지 않는 개관이 있다. number-theory-overview 는 설명 문단이 한 줄 끼어 있어서, 정규식을 '# 지도' 다음의 첫 mermaid 코드블록으로 잡아야 한다. 바로 뒤를 기대하면 '지도 없음' 으로 오보한다. (2) 'A --> B --> C' 사슬 꼴이 쓰인다. 한 줄에서 화살표 하나만 뽑으면 중간 간선을 놓치므로 줄을 화살표로 split 해서 연속 쌍을 전부 본다. (3) 실제 간선은 각 문서의 '## 더 알아보기' 절 링크에서 뽑고, 지도 라벨은 노드 선언 NAME[\"제목\"] 에서 뽑아 제목으로 id 를 찾는다.\n\n이번 회차에 간선을 바꾼 곳은 지도도 같이 고쳤다. machine-learning-overview 의 ITO --> DM 을 SDE --> DM 으로(ito-calculus -> diffusion-models 간선을 뺐으므로), probability-overview 에 IT --> SDE 와 SDE --> FK 를 더하고 GS --> FK 를 남겼다. computation-overview 에 CB --> KC 와 KC --> MLR 을 더했다.",
+      "createdAt": "2026-10-06T13:04:51.865Z",
+      "seq": 1806
+    },
+    {
+      "id": "4a06ca19",
+      "title": "혼동문자·글자연산자 전수 검사 결과 (37차)",
+      "priority": 20,
+      "note": "2026-10-06 37차에 혼동문자 검사와 글자 연산자 검사를 docs 652 개 전수로 돌렸다. 글자 연산자(log, sin, max 등이 백슬래시 없이 수식에 든 것)는 0 건이다. 혼동문자는 transcendental-numbers:98 한 줄의 7 자뿐이고 Gelfond 논문의 학술지명 Izvestiya Akademii nauk SSSR 의 러시아어 표기라 정상이다. 29차, 30차 판정과 같다. 즉 이 두 검사는 지금 저장소에 수확이 없고, 새 문서를 쓴 회차에 그 문서들만 돌리면 된다.\n\n검사 스크립트는 스크래치패드에 node 로 만든다(dev/ 는 고치지 않는다, 0절). 혼동문자 목록은 큐 44ca5d52 의 것을 그대로 쓴다. 범위를 키릴 전체로 넓히면 Tate-Shafarevich 군 기호 Sha 가 문서 9 개에서 60 여 줄 오검출된다. 글자 연산자 검사는 중괄호 명령의 인자를 먼저 지워야 한다(mathrm{tr} 꼴이 160 건 오검출).",
+      "createdAt": "2026-10-06T13:05:21.469Z",
+      "seq": 1807
     },
     {
       "id": "410fd79d",
@@ -812,6 +860,54 @@
       "seq": 1788
     },
     {
+      "id": "63e30041",
+      "title": "stochastic-differential-equations 의 후속 간선",
+      "priority": 11,
+      "note": "2026-10-06 37차에 새로 썼다(160줄, 부모 ito-calculus 와 ordinary-differential-equations, probability-overview 연속시간 확률과정 갈래). 자식은 feynman-kac 과 diffusion-models 둘. 후속 후보: Fokker-Planck 방정식 문서(성질 절의 전진방정식이 독립 문서가 될 분량인지), Langevin 방정식과 Gibbs 측도 표본추출(대표적인 해 넷째 줄, wasserstein-gradient-flow 와 묶일 자리), Euler-Maruyama 와 Milstein 의 수렴 차수(수치해석 쪽), Zakai-Kushner 필터링 방정식(kalman-filter 의 연속시간 부모 자리). ito-calculus 는 121줄에서 110줄로 줄었고 '## 필터링과 추정' 절은 지웠다(내용은 새 문서 활용 절로).",
+      "createdAt": "2026-10-06T12:44:37.732Z",
+      "seq": 1792
+    },
+    {
+      "id": "4ab42143",
+      "title": "kolmogorov-complexity 의 후속 간선",
+      "priority": 11,
+      "note": "2026-10-06 37차에 새로 썼다(120줄, 부모 computability 와 entropy, computation-overview '계산 가능성과 계층' 갈래 끝, 지도에 CB --> KC 추가). 자식은 아직 없다. 후속 후보: Martin-Lof 무작위성(큐 62cc389f, 이제 부모가 둘 다 있다. pi01-classes 와 이 문서), Chaitin 상수 Omega(활용 둘째 절이 이름만 쓴다. 독립 문서보다 무작위성 문서의 절이 맞을 수 있다), 알고리즘적 상호정보량(성질 준가법성 절). 활용 '최소기술길이' 절이 regularization 의 벌점항을 가리키는데 model-selection 문서가 없어 링크를 걸지 못했다.",
+      "createdAt": "2026-10-06T12:49:11.264Z",
+      "seq": 1796
+    },
+    {
+      "id": "4fffe303",
+      "title": "martin-lof-randomness 의 후속 간선",
+      "priority": 11,
+      "note": "2026-10-06 37차에 새로 썼다(96줄, 부모 pi01-classes 와 kolmogorov-complexity, computation-overview '계산 가능성과 계층' 갈래, 지도에 KC --> MLR 추가). 자식은 아직 없다. 후속 후보: Schnorr 무작위성과 계산가능 무작위성(이 문서가 다루지 않은 약한 무작위성 개념들, 세 개념의 분리 정리), 알고리즘적 학습이론의 Solomonoff 귀납, van Lambalgen 정리(두 수열의 결합 무작위성). 큐의 62cc389f 는 이 작업으로 소진해 remove 했다.",
+      "createdAt": "2026-10-06T12:52:15.118Z",
+      "seq": 1799
+    },
+    {
+      "id": "967a1cca",
+      "title": "potts-model 의 후속 간선",
+      "priority": 11,
+      "note": "2026-10-06 37차에 새로 썼다(107줄, 부모 tutte-polynomial 하나, combinatorics-overview '확률적 방법과 무작위 구조' 갈래). 자식은 아직 없다. tutte-polynomial 이 리프에서 벗어났다. 후속 후보: Ising 모형(이 문서 '특수한 값' 절이 q=2 를 세 줄로 요약한다. 평면 그래프의 Pfaffian 해, Onsager 해, 임계지수가 독립 문서 분량), 무작위 클러스터 모형(이 문서 정의 절의 셋째 항목. FKG 부등식과 결합 논법, 단조성이 독립 문서 분량), Swendsen-Wang 의 혼합시간. 'Potts 모형 분배함수' 로 들어 있던 큐 7588240a 는 이 작업으로 소진해 remove 했다.",
+      "createdAt": "2026-10-06T12:56:43.430Z",
+      "seq": 1800
+    },
+    {
+      "id": "26735f22",
+      "title": "thue-equation 을 s-unit-equation 의 자식으로 두지 않은 판정",
+      "priority": 11,
+      "note": "2026-10-06 37차에 s-unit-equation 을 새로 쓰며 판정했다. s-unit-equation 활용 첫 절이 Thue 방정식의 유한성을 이 방정식으로 환원하므로 응용 관계는 성립한다. 그러나 5절 '더 알아보기의 기준' 둘째 질문(부모를 빼도 자식의 개요가 그대로 읽히는가)에서 thue-equation 의 개요는 Baker 정리만으로 읽히고 S-단위 방정식 없이도 성립한다. baker-theorem 이 이미 thue-equation 의 부모이자 s-unit-equation 의 부모이므로 간선을 더하면 조상 경로가 중복된다. 그래서 간선을 넣지 않고 s-unit-equation 활용 절의 본문 링크로 두었다. thue-equation:63 의 'S-단위 방정식' 항목도 본문 언급으로 남긴다.",
+      "createdAt": "2026-10-06T13:00:05.347Z",
+      "seq": 1802
+    },
+    {
+      "id": "6016117c",
+      "title": "s-unit-equation 의 후속 간선",
+      "priority": 11,
+      "note": "2026-10-06 37차에 새로 썼다(98줄, 부모 dirichlet-unit-theorem 과 baker-theorem, number-theory-overview 의 Baker/Thue 갈래). 자식은 아직 없다. dirichlet-unit-theorem 이 리프에서 벗어났다. 후속 후보: 부분공간 정리(Schmidt subspace theorem. 이 문서 활용 셋째 절과 성질 '해의 개수 상계' 절이 이름만 쓴다. diophantine-approximation 과 roth 쪽 자리), Thue-Mahler 방정식, 단위 방정식의 함수체 판. 직관 절의 x^3-2y^3=1 예는 thue-equation 의 예와 겹치지 않는지 다음 보강에서 대조할 것.",
+      "createdAt": "2026-10-06T13:00:05.468Z",
+      "seq": 1803
+    },
+    {
       "id": "2d5c4e17",
       "title": "무한 범주와 호모토피 이론",
       "priority": 10,
@@ -956,14 +1052,6 @@
       "seq": 803
     },
     {
-      "id": "7588240a",
-      "title": "Potts 모형 분배함수",
-      "priority": 10,
-      "note": "probability 또는 combinatorics. 이번 회차에 쓴 tutte-polynomial 의 활용 절 첫 항목이 Potts 분배함수가 Tutte 다항식의 값매김이라는 것인데, 어떤 곡선을 따라 대응하는지는 별도 문서가 있어야 쓸 수 있다. 부모는 tutte-polynomial 과 markov-chains 또는 large-deviations 를 볼 것",
-      "createdAt": "2026-09-21T12:50:59.714Z",
-      "seq": 834
-    },
-    {
       "id": "b9015880",
       "title": "Hopf 올뭉치와 올림 성질",
       "priority": 10,
@@ -1010,14 +1098,6 @@
       "note": "분야: 해석적 수론(#number_theory #analysis #combinatorics). 붙일 부모: partitions(분할수), laplace-method. Hardy–Littlewood 원법. 현재 원법 서술이 partitions 35줄 '## 원법' 과 139줄 '## 원법의 적용 범위', laplace-method 122줄 '## 분할수의 점근식' 에 흩어져 있다. 2026-09-21 셋째 회차에 partitions 제목을 '분할수' 로 좁히며 확인했다. 주요 호(major arc)와 소수 호(minor arc) 분해, Weyl 합 추정, Vinogradov 삼소수 정리와 Waring 문제를 응용으로 둘 수 있다",
       "createdAt": "2026-09-21T20:46:19.185Z",
       "seq": 866
-    },
-    {
-      "id": "4db8faaa",
-      "title": "확률미분방정식 문서",
-      "priority": 10,
-      "note": "분야: 확률론(#probability #analysis). 붙일 부모: ito-calculus(Itô 적분), brownian-motion. 2026-09-21 셋째 회차에 ito-calculus 제목을 'Itô 적분' 으로 좁히며 확인했다. 현재 SDE 서술은 ito-calculus 63줄 '## 확률미분방정식', 82줄 '## 대표적인 해', 102줄 '## 편미분방정식과의 대응' 에 있다. 강한 해와 약한 해, 존재·유일성의 Lipschitz 조건, Ornstein–Uhlenbeck 과 기하 Brown 운동, Euler–Maruyama 이산화, Fokker–Planck 방정식을 절로 둘 수 있다. 문서를 만들면 ito-calculus 의 그 세 절을 요약과 링크로 줄일 것",
-      "createdAt": "2026-09-21T20:50:58.623Z",
-      "seq": 869
     },
     {
       "id": "b21e6f13",
@@ -1106,14 +1186,6 @@
       "note": "stochastic-approximation 정의 둘째 절이 세 줄뿐이다. 유한차분 기울기 추정, SPSA 의 동시 섭동, 차분폭과 보폭의 동시 일정, 수렴률이 1차 방법보다 느린 이유. 부모는 stochastic-approximation. #optimization #statistics",
       "createdAt": "2026-09-23T20:47:57.070Z",
       "seq": 1041
-    },
-    {
-      "id": "62cc389f",
-      "title": "Martin-Lof 무작위성",
-      "priority": 10,
-      "note": "pi01-classes 의 여집합이 Sigma^0_1 열린 집합이라는 관찰이 무작위성 검정의 정의와 같은 자리다. computation 쪽에 무작위성 문서가 하나도 없다(random-real-forcing 는 강제법 문서다). 부모 후보는 pi01-classes 와 kolmogorov-complexity(있는지 확인할 것). 내용: Martin-Lof 검정, 무작위 실수, Schnorr 정리로 접두사 없는 복잡도와의 동치, Omega 수, 무작위 집합의 차수",
-      "createdAt": "2026-09-24T00:43:06.379Z",
-      "seq": 1054
     },
     {
       "id": "72660dd8",
@@ -1970,6 +2042,38 @@
       "note": "해석학(#analysis #functional_analysis). 36차에 큐 dece5714(stone-weierstrass 의 후속 간선)을 보고 확인했다. 그 note 의 후속 후보 넷 가운데 Korovkin 정리가 가장 가까운 후속이고 korovkin 류 파일이 없다. 담을 내용은 양선형작용소 열이 1, x, x^2 세 함수에서 수렴하면 C[0,1] 전체에서 균등수렴한다는 진술, 증명 요지(점마다 (t-x)^2 를 다루는 봉우리 함수 구성), Bernstein 다항식이 특수 경우로 나오는 계산, Weierstrass 근사정리와의 관계, 수렴 속도와 Lipschitz 함수의 추정이다. 부모는 stone-weierstrass 하나이고 그 문서의 첫 자식이 된다(현재 리프). 함께 판정할 것은 그 note 의 남은 후보 셋(국소 콤팩트 판본과 C_0(X), 격자 판본, Gelfand-Naimark)을 Korovkin 문서에 넣을지 따로 둘지다.",
       "createdAt": "2026-10-06T09:01:14.262Z",
       "seq": 1791
+    },
+    {
+      "id": "80dfcce3",
+      "title": "Fokker-Planck 방정식 문서",
+      "priority": 10,
+      "note": "분야: 확률론(#probability #analysis #measure_theory). 붙일 부모: stochastic-differential-equations. 37차에 SDE 문서를 쓰며 남긴 갈래다. 그 문서 성질 절의 전진방정식은 식과 정상분포 한 문단뿐이다. 수반작용소 유도, 정상분포의 존재와 유일성, 세부균형, 자유에너지의 감소(wasserstein-gradient-flow 와 겹치는 자리의 판정 필요), 역방향 Kolmogorov 방정식과의 쌍대성을 절로 둘 수 있다.",
+      "createdAt": "2026-10-06T12:44:37.886Z",
+      "seq": 1793
+    },
+    {
+      "id": "b1ba9801",
+      "title": "Langevin 방정식과 Gibbs 측도 표본추출",
+      "priority": 10,
+      "note": "분야: 확률론 또는 최적화(#probability #optimization #machine_learning). 붙일 부모: stochastic-differential-equations. 37차에 SDE 문서 '대표적인 해' 표 넷째 줄과 활용 '통계물리' 절이 이름만 쓰고 지나간다. 과감쇠 극한, 정상분포 e^{-V/eps}, 이산화의 편향(unadjusted Langevin 과 Metropolis 보정), 수렴 속도의 log-Sobolev 조건. 'A와 B' 꼴 제목이므로 4절 제목 규칙대로 좁힐 것. langevin-dynamics 로 두고 제목을 'Langevin 동역학' 으로 하는 안.",
+      "createdAt": "2026-10-06T12:44:38.002Z",
+      "seq": 1794
+    },
+    {
+      "id": "1f852268",
+      "title": "Martin-Lof 무작위성",
+      "priority": 10,
+      "note": "분야: 계산(#computation #information_theory #measure_theory). 붙일 부모: kolmogorov-complexity(37차에 새로 썼다)와 pi01-classes. 큐 62cc389f 가 남긴 갈래이고 그 note 가 확인하라던 kolmogorov-complexity 는 이제 있다. 내용: 실효적 영집합과 Martin-Lof 검정, 무작위 실수, Schnorr 정리(접두사 없는 복잡도로 K(x_{1:n}) >= n-c 와 동치), Chaitin 상수 Omega, 무작위 집합의 Turing 차수. kolmogorov-complexity 활용 첫 두 절이 이 내용을 한 문단씩 요약하고 있으므로 문서를 만들면 그 절을 링크로 줄인다.",
+      "createdAt": "2026-10-06T12:49:11.402Z",
+      "seq": 1797
+    },
+    {
+      "id": "a13b8d9d",
+      "title": "model-selection 문서",
+      "priority": 10,
+      "note": "분야: 통계(#statistics #machine_learning #information_theory). 붙일 부모 후보: regularization 과 kl-divergence. 37차에 kolmogorov-complexity 활용 '최소기술길이' 절을 쓰며 링크를 걸 문서가 없어 이름만 썼다. 내용: 편향-분산 분해와 검증오차, AIC(Akaike information criterion)와 BIC(Bayesian information criterion)의 유도, 교차검증, 최소기술길이 원리와 Kolmogorov 복잡도의 계산 가능한 대체물, Bayes 인자(bayesian-inference 와의 중복 판정 필요).",
+      "createdAt": "2026-10-06T12:49:11.505Z",
+      "seq": 1798
     },
     {
       "id": "dfb3e493",
