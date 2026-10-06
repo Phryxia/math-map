@@ -31,8 +31,10 @@ graph TD
   MG --> BM["Brown 운동"]
   CLT --> BM
   BM --> IT["Itô 적분"]
+  IT --> SDE["확률미분방정식"]
   IT --> GS["Girsanov 정리"]
-  GS --> FK["Feynman–Kac 공식"]
+  SDE --> FK["Feynman–Kac 공식"]
+  GS --> FK
   CLT --> WS["Wigner 반원법칙"]
   WS --> MP["Marchenko–Pastur 법칙"]
   WS --> TW["Tracy–Widom 분포"]
@@ -85,6 +87,7 @@ graph TD
 
 - [Brown 운동](brownian-motion.md): 연속시간 Gauss 과정과 경로의 성질
 - [Itô 적분](ito-calculus.md): 유계변동이 없는 경로 위의 적분과 Itô 공식
+- [확률미분방정식](stochastic-differential-equations.md): 잡음 항이 들어간 미분방정식의 해와 그 밀도
 - [Girsanov 정리](girsanov.md): 측도변환으로 표류항을 바꾼다
 - [Feynman–Kac 공식](feynman-kac.md): 편미분방정식의 해를 경로 적분의 기댓값으로
 

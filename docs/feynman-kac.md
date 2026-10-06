@@ -139,6 +139,7 @@ Feynman 의 경로적분은 양자역학의 전파자를 경로에 대한 합으
 
 ## 선수지식
 
+- [확률미분방정식](stochastic-differential-equations.md)
 - [Girsanov 정리](girsanov.md)
 
 ## 더 알아보기

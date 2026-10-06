@@ -24,7 +24,7 @@ graph TD
   PCA --> KPCA["커널 PCA"]
   PPCA --> VAE
   VAE --> DM["확산모형"]
-  ITO["Itô 적분"] --> DM
+  SDE["확률미분방정식"] --> DM
   DM --> FM["흐름 정합"]
   OT["최적 수송"] --> FM
   OT --> SINK["Sinkhorn 알고리즘"]

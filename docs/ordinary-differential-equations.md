@@ -145,10 +145,19 @@ $f$ 가 Lipschitz 이고 해가 두 번 미분가능한 구간에서 전역 오�
 
 ## 더 알아보기
 
+### 해의 존재와 고윳값
+
 - [Peano 존재정리](peano-existence-theorem.md)
-- [변분법](calculus-of-variations.md)
 - [Sturm–Liouville 이론](sturm-liouville.md)
+
+### 점근해
+
 - [Airy 함수](airy-functions.md)
 - [WKB 근사](wkb-approximation.md)
+
+### 방정식의 확장
+
+- [변분법](calculus-of-variations.md)
+- [확률미분방정식](stochastic-differential-equations.md)
 
 #analysis #computation #probability

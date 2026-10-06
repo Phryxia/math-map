@@ -60,13 +60,13 @@ $$
 
 ## 확률미분방정식
 
-계수 $a(t,x)$ 와 $b(t,x)$ 에 대한 확률미분방정식(stochastic differential equation, SDE)은 적분형으로 정의된다.
+피적분함수가 미지의 과정이어도 Itô 적분이 정의되므로 적분 등식
 
 $$
 X_t=X_0+\int_0^ta(s,X_s)\thinspace ds+\int_0^tb(s,X_s)\thinspace dB_s
 $$
 
-$a$ 와 $b$ 가 $x$ 에 대해 Lipschitz 이고 선형 증가 조건을 만족하면 강해가 유일하게 존재한다. 증명은 [상미분방정식](ordinary-differential-equations.md)의 Picard 반복과 같은 구조이고, 수축을 확인하는 자리에서 Itô 등거리가 쓰인다.
+을 $X$ 에 대한 방정식으로 읽을 수 있다. 이것이 [확률미분방정식](stochastic-differential-equations.md)이고, 해의 존재와 유일성을 Picard 반복으로 증명하는 자리에서 Itô 등거리가 수축을 준다.
 
 # 성질
 
@@ -77,15 +77,9 @@ $a$ 와 $b$ 가 $x$ 에 대해 Lipschitz 이고 선형 증가 조건을 만족�
 - 2차변동은 $d\langle X \rangle_t = b_t^2\thinspace dt$ 다. 확산계수 $b$ 가 경로의 거칠기를 결정하고 표류항 $a$ 는 2차변동에 기여하지 않는다.
 - Doob 최대부등식이 그대로 적용되어 경로 전체의 크기를 종점의 크기로 통제할 수 있다.
 
-## 대표적인 해
+## Itô 보정
 
-| SDE | 해 |
-|---|---|
-| $dX = \mu\thinspace dt + \sigma\thinspace dB$ | $X_0 + \mu t + \sigma B_t$ (Brown 운동에 표류 추가) |
-| $dS = \mu S\thinspace dt + \sigma S\thinspace dB$ | $S_0 \exp((\mu - \sigma^2/2)t + \sigma B_t)$ (기하 Brown 운동) |
-| $dX = -\theta X\thinspace dt + \sigma\thinspace dB$ | Ornstein–Uhlenbeck 과정, 평균으로 회귀 |
-
-기하 Brown 운동의 해에 나오는 $-\sigma^2/2$ 가 Itô 보정이다. 고전적 미적분으로 풀면 이 항이 없고, 그 차이 때문에 기댓값과 중앙값이 갈라진다. $\mathbb{E}[S_t] = S_0 e^{\mu t}$ 이지만 $\log S_t$ 의 평균은 $\log S_0 + (\mu - \sigma^2/2)t$ 다.
+$dS=\mu S\thinspace dt+\sigma S\thinspace dB$ 의 해는 $S_0\exp((\mu-\sigma^2/2)t+\sigma B_t)$ 다. 고전적 미적분으로 변수분리하면 $-\sigma^2/2$ 가 나오지 않고, 그 차이 때문에 기댓값과 중앙값이 갈라진다. $\mathbb{E}[S_t]=S_0e^{\mu t}$ 이지만 $\log S_t$ 의 평균은 $\log S_0+(\mu-\sigma^2/2)t$ 다.
 
 ## 지수 martingale 과 측도변환
 
@@ -99,11 +93,7 @@ $M_t = \exp(\int \theta\thinspace dB - \tfrac12 \int \theta^2\thinspace ds)$ 는
 
 ## 편미분방정식과의 대응
 
-[Feynman–Kac 공식](feynman-kac.md)은 포물형 편미분방정식의 해를 확산 과정의 기댓값으로 표현한다. Itô 공식을 해에 적용해 $dt$ 항이 방정식 때문에 사라지게 하면 남은 확률적분이 martingale 이므로 기댓값만 남는다. 이 대응으로 고차원 방정식을 Monte Carlo 로 풀 수 있다.
-
-## 필터링과 추정
-
-잡음 섞인 관측에서 숨은 상태를 추정하는 문제는 조건부 분포가 만족하는 SDE 로 표현된다. 선형 Gauss 인 경우의 해가 Kalman 필터이고 일반적인 경우가 Zakai·Kushner 방정식이다. 확률적 경사하강법의 연속시간 극한과 확산 기반 생성모형의 역방향 과정도 SDE 로 서술된다.
+[Feynman–Kac 공식](feynman-kac.md)은 포물형 편미분방정식의 해를 확산 과정의 기댓값으로 표현한다. 해에 Itô 공식을 적용하면 방정식 때문에 $dt$ 항이 사라지고, 남은 확률적분이 martingale 이므로 기댓값만 남는다.
 
 # 연관 문서
 
@@ -113,8 +103,8 @@ $M_t = \exp(\int \theta\thinspace dB - \tfrac12 \int \theta^2\thinspace ds)$ 는
 
 ## 더 알아보기
 
+- [확률미분방정식](stochastic-differential-equations.md)
 - [Girsanov 정리](girsanov.md)
-- [확산모형](diffusion-models.md)
 - [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)
 
 #probability #analysis
