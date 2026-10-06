@@ -124,6 +124,7 @@ $$
 
 ### 구조 정리
 
+- [최소다항식](minimal-polynomial.md)
 - [스펙트럼 정리](spectral-theorem.md)
 - [Jordan 표준형](jordan-canonical-form.md)
 

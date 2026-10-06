@@ -103,10 +103,19 @@ $$
 
 ## 더 알아보기
 
-- [대수다양체](algebraic-varieties.md)
+### 환론적 성질
+
 - [유일분해정역](unique-factorization-domains.md)
 - [Noether 환](noetherian-rings.md)
+
+### 근과 체
+
 - [체의 확대](field-extensions.md)
+- [최소다항식](minimal-polynomial.md)
+
+### 기하와 조합
+
+- [대수다양체](algebraic-varieties.md)
 - [대칭함수](symmetric-functions.md)
 
 #ring_theory #algebra #field_theory
