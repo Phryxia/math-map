@@ -57,7 +57,7 @@ $$
 J_1,\ J_3,\ J_4,\ \mathrm{Ru},\ \mathrm{O'N},\ \mathrm{Ly}
 $$
 
-를 **파리아**(pariah)라 부른다. 행복한 가족은 다시 세 층으로 나뉘는데, 첫 층이 Mathieu 군 5 개(Golay 부호에서 나온다), 둘째 층이 Leech 격자의 Conway 군과 그 관련 군들, 셋째 층이 괴물 주변이다. [구 채우기](sphere-packing.md)에서 본 24 차원 Leech 격자가 여기서도 중심에 있다.
+를 **파리아**(pariah)라 부른다. 행복한 가족은 다시 세 층으로 나뉘는데, 첫 층이 Mathieu 군 5 개([Golay 부호](golay-codes.md)에서 나온다), 둘째 층이 Leech 격자의 Conway 군과 그 관련 군들, 셋째 층이 괴물 주변이다. [구 채우기](sphere-packing.md)에서 본 24 차원 Leech 격자가 여기서도 중심에 있다.
 
 # 성질
 
