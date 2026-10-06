@@ -107,7 +107,7 @@ $$
 \int\_a^b f\thinspace dg=\int\_{(a,b\rbrack}f\thinspace d\mu\_g
 $$
 
-일반적인 유계변동 $g$ 에는 전변동이 유한한 부호 측도가 대응하고, 그 Jordan 분해가 $g$ 를 증가함수 둘의 차로 쓴 것과 짝지어진다. 측도 쪽으로 옮기면 [Lebesgue 적분](lebesgue-integral.md)의 수렴 정리를 쓸 수 있고, 불연속인 $f$ 도 다룰 수 있다.
+일반적인 유계변동 $g$ 에는 전변동이 유한한 부호 측도가 대응한다. 그 측도의 Jordan 분해는 $g$ 를 증가함수 둘의 차로 쓴 분해와 같다. 측도 쪽으로 옮기면 [Lebesgue 적분](lebesgue-integral.md)의 수렴 정리를 쓸 수 있고, 불연속인 $f$ 도 다룰 수 있다.
 
 # 활용
 
