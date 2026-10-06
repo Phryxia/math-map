@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-05T21:08:48.293Z",
-  "nextSeq": 1745,
+  "savedAt": "2026-10-06T01:04:20.644Z",
+  "nextSeq": 1759,
   "items": [
     {
       "id": "0490c28e",
@@ -202,6 +202,38 @@
       "note": "독자 판단 대기(CLAUDE.md 4절 본문의 grep 이라 고치려면 판단이 필요하다). 중복 항목 통합(32차 회차, 2026-10-05): 같은 문제를 따로 밀어 둔 3개 항목(9bc3b9fa b4ccf30f 685dffaf)을 하나로 합쳤다. 각 메모를 차례로 둔다.\n\n[1/증명의 요지] 4절 문체 규칙의 헤딩 grep 이 '## 증명의 요지' 를 문장으로 잡는다. '요지' 가 '[^로]지 *$' 에 걸리는 오탐이고, 이 표현은 CLAUDE.md 가 '증명의 뼈대 -> 증명의 요지' 로 권하는 명사구이므로 문서들이 그대로 쓰고 있다. 헤딩 검사 때 이 하나는 걸러서 보고, 다른 오탐이 더 있는지 확인한다.\n\n[2/고치는 방법] grep 의 [^로]지 를 [^로요]지 같은 것으로 좁히거나, 걸린 헤딩 가운데 관용 헤딩을 예외로 적는 문구가 CLAUDE.md 에 필요하다.\n\n[3/에너지] 4절 헤딩 grep 이 '## 길이와 에너지' 도 문장으로 잡았다. '에너지' 의 '지' 가 같은 패턴에 걸리는 오탐이고 명사구이므로 정당하다. 30차 회차에 geodesics 의 그 헤딩을 '길이 범함수와 에너지 범함수' 로 바꿔 우회했다.\n\n[32차 전수 결과] docs 627 개에 헤딩 grep 을 돌려 보고가 '## 증명의 요지' 15 건 하나뿐이다. '에너지' 는 30차의 우회로 사라졌고 다른 오탐 유형은 나오지 않았다. 실제 문장형 헤딩 위반은 0 건이다. 즉 지금 이 grep 의 오탐은 '요지' 한 패턴으로 좁혀졌고, [^로]지 를 [^로요]지 로 바꾸면 보고가 0 이 된다. 다만 '지' 로 끝나는 다른 명사(에너지, 나머지, 단위원지 같은 것)가 새 문서에 들어오면 다시 걸리므로, 패턴을 좁히는 것과 예외 문구를 두는 것 가운데 어느 쪽이 맞는지는 판단이 필요하다.",
       "createdAt": "2026-10-05T12:57:49.594Z",
       "seq": 1722
+    },
+    {
+      "id": "2e7a6e31",
+      "title": "큐 신규 주제와 기존 문서의 중복 대조 결과 (35차)",
+      "priority": 20,
+      "note": "35차에 전수로 돌렸다. 방법은 p12 이하 항목에서 메모 꼴 제목(후속 간선, 판정, 점검, 훑기, 현황, 결과, 사고, 규칙, grep, 회차, 묶음 등)을 정규식으로 걸러 신규 주제 177 건을 남기고, 각 제목의 라틴 토큰을 docs 파일명과 부분 문자열로 대조한 것이다. 보고 44 건 대부분이 부분 문자열 우연 일치(Hamilton 역학 -> hamiltonian-cycles, Nash 균형 -> de-giorgi-nash-moser 꼴)였고, 문서 제목까지 맞춰 확인한 실제 중복은 여섯이다. Krull 차원(krull-dimension), Banach-Tarski 분해(banach-tarski), Hensel 보조정리(hensel-lemma), Temperley-Lieb 대수(temperley-lieb-algebras), 분포 문서 신설(schwartz-distributions), Thue 방정식과 Ax-Grothendieck 정리(thue-equation, ax-grothendieck)를 제거했다. Wasserstein 거리는 optimal-transport 에 흡수되어 별도 항목을 제거했고 판정 메모를 따로 남겼다. 변분법의 직접법은 lax-milgram 과 겹치지 않아 제목만 좁혀 남겼다. 한국어만으로 된 제목은 이 방법으로 대조되지 않으므로 남은 사각지대다. 신규 주제를 꺼낼 때 ls docs | grep 으로 먼저 확인하는 습관이 여전히 필요하다",
+      "createdAt": "2026-10-06T00:49:09.072Z",
+      "seq": 1751
+    },
+    {
+      "id": "e5a7706c",
+      "title": "Roth 정리를 별도 문서로 분리하지 않은 판정",
+      "priority": 20,
+      "note": "35차 판정. 큐 항목 87a658aa 가 Roth 정리 문서를 요청하는데, 같은 회차에 쓴 szemeredi-regularity-lemma 의 '## Roth 정리' 절이 진술과 삼각형 제거 보조정리를 쓰는 증명 전체를 담았다. 별도 문서로 쓰려면 Fourier 해석 증명(Bohr 집합, 밀도 증가 논법)과 Bloom-Sisask 의 상한이 내용이 되어야 하고 그것이 분리의 조건이다. 그 내용을 쓸 준비가 될 때까지 87a658aa 는 남겨 두고, 지금 중복으로 제거하지는 않았다",
+      "createdAt": "2026-10-06T00:52:57.290Z",
+      "seq": 1753
+    },
+    {
+      "id": "b5cdc152",
+      "title": "Wasserstein 거리를 별도 문서로 분리하지 않은 판정",
+      "priority": 20,
+      "note": "35차 판정. 옛 항목 1d328346 이 Wasserstein 거리 문서를 요청하며 담을 내용 넷(W_p 의 정의, Kantorovich-Rubinstein 쌍대, 약수렴과의 관계, 1 차원 분위수 닫힌 형태)을 적었으나, optimal-transport.md 가 그 넷을 모두 담는다. '## Wasserstein 거리'(49줄) 가 정의를, '## 쌍대 문제'(61줄) 가 쌍대를, '## 1 차원의 정렬 해'(81줄) 가 분위수 형태를, '## Wasserstein 공간의 기하'(139줄 부근) 가 약수렴 거리화와 적률 수렴 동치, 질량이 멀리 도망가는 반례까지 담는다. 보강할 자리가 남지 않았으므로 분리도 보강도 불필요하다고 판정했다. 이 판정은 optimal-transport 를 실제로 읽어 확인한 것이다",
+      "createdAt": "2026-10-06T00:58:49.553Z",
+      "seq": 1755
+    },
+    {
+      "id": "e6eac80c",
+      "title": "Brouwer 차수를 별도 문서로 분리할지 판단",
+      "priority": 20,
+      "note": "35차 판정 대기. 옛 큐 항목 46f8c4d4(Leray-Schauder 차수)의 note 가 'Brouwer 차수 자체를 다루는 문서가 저장소에 없으므로 차수의 정의부터 세워야 한다' 고 적었고, 35차에 쓴 leray-schauder-degree 의 '## Brouwer 차수' 절이 정칙값의 원상을 Jacobi 행렬식 부호로 세는 정의와 연속 확장을 담았다. 별도 문서로 분리하려면 호몰로지로 보는 차수, Hopf 정리(차수가 호모토피류를 완전히 가른다), 사상도수와 Poincare-Hopf 정리의 관계가 내용이 되어야 한다. poincare-hopf 와 brouwer-fixed-point 가 이미 있으므로 그 둘과 겹치는 범위를 먼저 확인할 것",
+      "createdAt": "2026-10-06T01:02:39.143Z",
+      "seq": 1756
     },
     {
       "id": "410fd79d",
@@ -644,6 +676,54 @@
       "seq": 1737
     },
     {
+      "id": "46780a64",
+      "title": "stone-cech-compactification 의 후속 간선",
+      "priority": 11,
+      "note": "35차에 새로 쓴 문서로 더 알아보기가 비어 있다. 후속 후보는 Hindman 정리(같은 회차에 push), Gelfand 표현과 가환 C* 대수(문서 없음), 필터와 그물(큐 48753248). banach-alaoglu 는 tychonoff-theorem 의 자식이라 이 문서의 자식이 아니다",
+      "createdAt": "2026-10-06T00:43:33.454Z",
+      "seq": 1747
+    },
+    {
+      "id": "051cc381",
+      "title": "hindman-theorem 의 후속 간선",
+      "priority": 11,
+      "note": "35차에 새로 쓴 문서로 더 알아보기가 비어 있다. 후속 후보는 IP 집합과 중심 집합(문서 없음), Rado 정리(문서 없음), van der Waerden 정리의 동역학 증명. ramsey-theory 의 Schur 정리 절이 Rado 정리를 한 줄로 언급한다",
+      "createdAt": "2026-10-06T00:46:44.907Z",
+      "seq": 1748
+    },
+    {
+      "id": "deb475e9",
+      "title": "szemeredi-regularity-lemma 의 후속 간선",
+      "priority": 11,
+      "note": "35차에 새로 쓴 문서로 더 알아보기가 비어 있다. 후속 후보는 Erdos-Stone 정리(문서 없음, 활용 첫 항목이 이름만 쓴다), 그래프 극한과 graphon(문서 없음), 초그래프 제거 보조정리와 Szemeredi 정리(문서 없음). 안정 정규성 보조정리는 stable-theories 쪽에 붙일지 판단이 필요하다",
+      "createdAt": "2026-10-06T00:52:57.115Z",
+      "seq": 1752
+    },
+    {
+      "id": "1ce34ca0",
+      "title": "erdos-stone-theorem 의 후속 간선",
+      "priority": 11,
+      "note": "35차에 새로 쓴 문서로 더 알아보기가 비어 있다. 후속 후보는 Kovari-Sos-Turan 상한(zarankiewicz-problem 에 이미 있어 별도 문서가 아니다), 초그래프 Turan 문제(문서 없음), 그래프 극한과 graphon(문서 없음). 색칠수 2 의 경우로 가는 zarankiewicz-problem 은 turan-theorem 의 자식이라 이 문서의 자식으로 중복이다",
+      "createdAt": "2026-10-06T00:58:30.123Z",
+      "seq": 1754
+    },
+    {
+      "id": "2f5f1f4f",
+      "title": "leray-schauder-degree 의 후속 간선",
+      "priority": 11,
+      "note": "35차에 새로 쓴 문서로 더 알아보기가 비어 있다. 후속 후보는 분기 이론과 Crandall-Rabinowitz 정리(문서 없음), 비선형 타원 방정식의 존재론(문서 없음). schauder-estimates 와 lax-milgram 은 본문 링크로 썼고 둘 다 sobolev-spaces 계열이라 자식이 아니다",
+      "createdAt": "2026-10-06T01:02:39.284Z",
+      "seq": 1757
+    },
+    {
+      "id": "972281bf",
+      "title": "개관 지도 mermaid 점검을 35차에 건너뛴 근거",
+      "priority": 11,
+      "note": "35차는 간선을 다섯 쌍 추가하기만 하고 기존 간선을 지우거나 방향을 바꾸지 않았다(separation-axioms/tychonoff-theorem -> stone-cech-compactification, ramsey-theory/stone-cech-compactification -> hindman-theorem, turan-theorem -> szemeredi-regularity-lemma, turan-theorem/szemeredi-regularity-lemma -> erdos-stone-theorem, sperner-lemma -> kkm-theorem, schauder-fixed-point -> leray-schauder-degree). 지도가 실제 간선의 부분그래프라는 조건은 간선을 더해도 깨지지 않으므로 33차 전수 점검(d9c8e9ef)의 결과가 그대로 유효하고, 새 문서를 지도에 넣지 않은 것은 4.5절의 '핵심 문서 12~20개' 기준에 따른 것이다. 다음 회차에 간선을 지우거나 방향을 바꾸면 그때 d9c8e9ef 의 검사기를 다시 만들어 돌린다",
+      "createdAt": "2026-10-06T01:04:02.274Z",
+      "seq": 1758
+    },
+    {
       "id": "2d5c4e17",
       "title": "무한 범주와 호모토피 이론",
       "priority": 10,
@@ -780,28 +860,12 @@
       "seq": 773
     },
     {
-      "id": "5908f904",
-      "title": "Ax-Grothendieck 정리",
-      "priority": 10,
-      "note": "부모 model-theory(대수적 폐체의 양화사 소거 응용), finite-fields 도 부모 후보다. model-theory 활용 절 첫 항목이 '복소 아핀 공간의 단사 다항식 사상이 전사' 라고 진술만 해 두었다. 증명이 유한체 위에서 단사=전사를 보이고 콤팩트성으로 표수 0 으로 옮기는 것이라 first-order-logic 의 '표수 0 에서 참이면 큰 표수에서도 참' 이전 논법(107줄)과 같은 구조다. 분야는 논리와 대수기하 양쪽",
-      "createdAt": "2026-09-20T21:00:48.555Z",
-      "seq": 774
-    },
-    {
       "id": "f3126e48",
       "title": "open-mapping-theorem 의 후속 간선",
       "priority": 10,
       "note": "2026-09-21 회차에 open-mapping-theorem(열린 사상 정리)을 새로 썼다. 부모는 baire-category 와 banach-spaces 둘이고 지금은 리프다. 문서 구성: 개요(전사 유계 작용소가 열린 사상, 따름정리 둘), 직관(Y 완비가 Baire 로 폐포의 내부를 주고 X 완비가 폐포를 떼는 급수를 준다), 정의(열린 사상, 그래프와 닫힌 작용소), 성질(열린 사상 정리 Banach-Schauder, 유계 역작용소 정리, 닫힌 그래프 정리, c_00 반례), 활용(작용소 역의 존재, 비유계 작용소, 노름 비교, 닫힌 치역 정리). 함수해석 개관의 '작용소와 스펙트럼' 갈래 첫 줄과 지도 mermaid(BS --> OMT)에 넣었고 README 수치를 434/804 에서 435/806 으로 맞췄다. 같은 회차에 개관의 banach-spaces 설명 줄 표기 '열린사상 정리' 도 새 문서 제목에 맞춰 '열린 사상 정리' 로 띄웠다. 후속 간선 후보: (1) Hahn-Banach 정리 문서. 함수해석의 네 기본정리 가운데 유일하게 Baire 를 쓰지 않는 것이고 dual-space 가 부모로 더 자연스러우니 부모 판정을 먼저 할 것. (2) 닫힌 치역 정리. 활용 절 마지막 항목이 부르는 자리이고 fredholm-operators 와 dual-space 사이에 놓인다. 지금은 fredholm-operators 본문이 이 정리를 언급만 한다. (3) Sobolev 공간. 활용 절 '노름의 비교' 항목이 부르지만 부모는 lp-spaces 와 distributions 쪽이 맞아 열린 사상 정리의 자식으로 긋기 전에 판정할 것. baire-category 쪽 남은 후보는 지난 note 가 적은 Polish 공간과 일반적 성질(generic property)이다. 균등유계성 원리는 baire-category 57-63줄에 증명까지 있어 따로 떼지 않는다(8절 분할 기준 미달)",
       "createdAt": "2026-09-21T04:52:32.181Z",
       "seq": 803
-    },
-    {
-      "id": "7e70c2e5",
-      "title": "Thue 방정식",
-      "priority": 10,
-      "note": "정수론. diophantine-approximation 활용 절 둘째 항목과 transcendental-numbers 활용 절 둘째 항목이 함께 부른다. F(x,y)=m 의 정수해 유한성(Thue, Roth)과 Baker 하한이 주는 유효 상한이 내용이다. 부모 후보는 diophantine-approximation, transcendental-numbers",
-      "createdAt": "2026-09-21T08:39:23.276Z",
-      "seq": 811
     },
     {
       "id": "35d70312",
@@ -834,14 +898,6 @@
       "note": "analysis 또는 number_theory. 이번 회차에 쓴 series-convergence 의 활용 절이 Dirichlet 급수의 수렴 영역을 언급만 한다. 수렴 가로선, 절대수렴 가로선, Abel 합과 Tauber 정리를 한 문서로 묶을 수 있다. 부모는 series-convergence 와 dirichlet-l-functions 를 볼 것. prime-number-theorem 이 이 층위를 전제한다",
       "createdAt": "2026-09-21T12:54:17.891Z",
       "seq": 837
-    },
-    {
-      "id": "e4125e3e",
-      "title": "Stone–Čech 콤팩트화",
-      "priority": 10,
-      "note": "topology. 이번 회차에 쓴 separation-axioms 의 활용 절이 완전정칙 공간을 [0,1] 값 함수들의 곱에 심는 구성을 한 줄로만 적었다. 완전정칙(T_{3.5}) 의 정의, 보편성질(콤팩트 Hausdorff 로 가는 연속함수의 유일 확장), beta N 과 초필터의 대응을 한 문서로 쓸 수 있다. 부모는 separation-axioms 와 ultraproducts(초필터를 공유한다)",
-      "createdAt": "2026-09-21T12:55:42.392Z",
-      "seq": 838
     },
     {
       "id": "48753248",
@@ -940,22 +996,6 @@
       "seq": 959
     },
     {
-      "id": "33b07e31",
-      "title": "KKM 정리",
-      "priority": 10,
-      "note": "2026-09-23 회차에 sperner-lemma 의 활용 절에 한 줄로 적었다. 단체를 닫힌집합 n+1 개로 덮되 각 면이 대응하는 집합들의 합집합에 들어가면 모든 집합의 교집합이 비어 있지 않다는 정리(Knaster–Kuratowski–Mazurkiewicz). Sperner 보조정리, Brouwer 고정점 정리와 서로를 짧게 함의하는 삼각관계가 내용의 중심이고, Ky Fan 부등식으로 이어진다. 부모는 sperner-lemma 다",
-      "createdAt": "2026-09-23T00:56:51.436Z",
-      "seq": 960
-    },
-    {
-      "id": "46f8c4d4",
-      "title": "Leray–Schauder 차수",
-      "priority": 10,
-      "note": "2026-09-23 회차에 schauder-fixed-point 의 활용 절에 한 줄로 적었다. 유한차원 Brouwer 차수를 콤팩트 섭동 I-T 에 대해 확장한 것이고, 고정점의 존재를 넘어 개수와 분기를 센다. Brouwer 차수 자체를 다루는 문서가 저장소에 없으므로 차수의 정의(정칙값의 원상 개수를 부호와 함께 셈)부터 세워야 한다. 부모는 schauder-fixed-point 와 brouwer-fixed-point 다",
-      "createdAt": "2026-09-23T00:56:51.562Z",
-      "seq": 961
-    },
-    {
       "id": "143bd0e4",
       "title": "개관 갈래 누락 회귀 점검 (2026-09-23 결과)",
       "priority": 10,
@@ -1050,22 +1090,6 @@
       "note": "pi01-classes 의 여집합이 Sigma^0_1 열린 집합이라는 관찰이 무작위성 검정의 정의와 같은 자리다. computation 쪽에 무작위성 문서가 하나도 없다(random-real-forcing 는 강제법 문서다). 부모 후보는 pi01-classes 와 kolmogorov-complexity(있는지 확인할 것). 내용: Martin-Lof 검정, 무작위 실수, Schnorr 정리로 접두사 없는 복잡도와의 동치, Omega 수, 무작위 집합의 차수",
       "createdAt": "2026-09-24T00:43:06.379Z",
       "seq": 1054
-    },
-    {
-      "id": "fdb9ef00",
-      "title": "Szemeredi 정규성 보조정리",
-      "priority": 10,
-      "note": "stable-theories 활용 절과 graph_theory(40 개) 쪽에서 부를 자리가 있는데 문서가 없다. 분야는 #graph_theory #combinatorics. 부모 후보는 ramsey-theory 또는 extremal-graph-theory(있는지 확인). 내용: 정규 쌍과 분할, 보조정리의 진술, 에너지 증가 논법, 삼각형 제거 보조정리와 Roth 정리, 분할 크기의 탑 함수 하한(Gowers)",
-      "createdAt": "2026-09-24T00:46:29.632Z",
-      "seq": 1058
-    },
-    {
-      "id": "a612e2d1",
-      "title": "Krull 차원",
-      "priority": 10,
-      "note": "algebraic-varieties 가 활용 절에서, stable-theories 가 Morley 위수 절에서, projective-varieties 가 종수 항목에서 모두 차원을 정의 없이 쓴다. 분야는 #ring_theory #algebra. 부모 후보는 prime-ideals 와 noetherian-rings. 내용: 소 아이디얼 사슬의 길이, 다항식환의 차원 n, 높이와 Krull 높이 정리, 초월차수와의 일치, Noether 국소환의 차원 정리와 Hilbert 급수",
-      "createdAt": "2026-09-24T00:48:46.971Z",
-      "seq": 1060
     },
     {
       "id": "72660dd8",
@@ -1228,14 +1252,6 @@
       "seq": 1157
     },
     {
-      "id": "a194376d",
-      "title": "Banach-Tarski 분해",
-      "priority": 10,
-      "note": "set_theory/measure_theory. 큐의 'axiom-of-choice 의 후속 간선' 항목이 우선순위 1 위로 꼽은 후보다. 선택공리의 귀결 가운데 5절의 '응용' 에 가장 정확히 맞는다. 선수지식은 axiom-of-choice 와 measure 이고 group-actions(자유군 F_2 의 작용)도 본문에서 쓴다. 부모가 3 개를 넘지 않게 고를 것. 내용의 골자는 F_2 의 역설적 분해를 SO(3) 의 부분군으로 옮기고 구면의 궤도마다 대표원을 선택공리로 뽑는 것이다. 이 문서가 생기면 axiom-of-choice 가 리프에서 벗어난다",
-      "createdAt": "2026-09-25T12:41:27.863Z",
-      "seq": 1169
-    },
-    {
       "id": "f70953a1",
       "title": "깃발다양체 문서 분리 판정",
       "priority": 10,
@@ -1396,14 +1412,6 @@
       "seq": 1404
     },
     {
-      "id": "1553eeae",
-      "title": "Hensel 보조정리 문서",
-      "priority": 10,
-      "note": "discrete-valuation-rings 의 '## 완비화와 Hensel 올리기' 절에서 링크 없이 이름만 썼다. 저장소에 hensel-lemma 가 없다(ls docs | grep hensel 로 확인). 완비 이산부값환에서 법 m 으로 푼 해를 올리는 절차이고, 개념 자체가 계산 절차이므로 4절 코드 규칙상 JavaScript 의사코드를 넣을 자리다. p 진 정수에서의 제곱근 계산이 예다. 분야는 환론이나 정수론이고 부모 후보는 discrete-valuation-rings 와 p-adic-numbers 다(둘 다 두면 check-cycle 로 확인할 것). id 는 hensel-lemma 다.",
-      "createdAt": "2026-09-28T20:54:00.769Z",
-      "seq": 1407
-    },
-    {
       "id": "b156b465",
       "title": "은닉 Markov 모형",
       "priority": 10,
@@ -1482,14 +1490,6 @@
       "note": "27차 ergodic-theorem 의 성질 절 Birkhoff 정리 증명 요지가 극대 에르고딕 부등식의 진술과 상극한 하극한 논증을 두 문단으로 담았다. 4절은 증명이 두 문단을 넘으면 별도 문서 후보라고 하고 현재가 정확히 두 문단이라 지금은 그대로 두었다. Hardy-Littlewood 극대함수 문서가 있으면 그 쪽의 특수 사례로 묶는 것이 나을 수 있으므로 maximal-function 류 문서가 생기면 다시 본다.",
       "createdAt": "2026-10-03T12:45:07.067Z",
       "seq": 1564
-    },
-    {
-      "id": "1d328346",
-      "title": "Wasserstein 거리",
-      "priority": 10,
-      "note": "신규 주제. measure_theory 또는 optimization 분야. 27차 total-variation-distance 활용 넷째가 비용이 지시함수인 최적수송이 전변동거리이고 비용이 거리인 것이 Wasserstein 거리라고 적었으나 Wasserstein 거리 문서가 없다. optimal-transport 문서가 수송비용 일반을 다루므로 그 자식으로 두고, 담을 내용은 W_p 의 정의, 쌍대 형식(Kantorovich-Rubinstein), 약수렴과의 관계, 1차원에서 분위수 함수로 주어지는 닫힌 형태다. weak-convergence 와 total-variation-distance 가 부모 후보로 더 있다.",
-      "createdAt": "2026-10-03T13:00:48.104Z",
-      "seq": 1570
     },
     {
       "id": "a3977b00",
@@ -1572,14 +1572,6 @@
       "seq": 1596
     },
     {
-      "id": "7f5982ce",
-      "title": "Temperley–Lieb 대수",
-      "priority": 10,
-      "note": "분야: 대수(#algebra #combinatorics #topology). 부모 후보는 partition-algebras 와 brauer-algebras 다.\n\n28차에 확인한 것: 이 개념은 이미 세 문서에 조각으로 들어 있다. brauer-algebras 72-74 '## Temperley–Lieb 대수' 가 '도형에서 선이 교차하지 않는 것만 남기면 TL_k(delta) 가 된다. B_k(delta) 의 몫이고 차원이 Catalan 수 C_k 다' 로 정의까지 한다. braid-groups 64-66 '## Temperley–Lieb 대수의 대각합' 이 Jones 의 Markov 대각합과 B_n -> TL_n 사상을 담고 112 줄 표가 TL_n(delta) / Jones 대각합 / Jones 다항식 줄을 둔다. knot-invariants 104 가 II_1 인자의 부분인자 지표에서 Jones 다항식이 나온 경로를 적는다.\n\n따라서 새 문서를 쓰려면 세 문서의 해당 절을 포인터로 줄이는 작업이 같은 회차에 들어가야 한다. 그러지 않으면 8절이 말하는 중복이 된다. 분량 판단: 세 조각을 합치고 생성원 e_i 와 관계(e_i^2=delta e_i, e_i e_{i pm 1} e_i = e_i, 멀리 떨어진 것끼리 교환), 평면 짝짓기 도형과 Catalan 수, Jones-Wenzl 멱등원, delta = -A^2 - A^{-2} 와 Kauffman 괄호, SL_2 텐서 범주, 부분인자 지표 4cos^2(pi/n) 을 담으면 100 줄대가 나온다. docs 에 catalan-numbers 문서가 없으므로 차원은 식으로 적고 Catalan 수 문서 요청은 따로 큐에 넣는다.\n\n판정이 필요한 것: partition-algebras 와 brauer-algebras 가운데 어느 쪽을 부모로 할지. TL 은 Brauer 도형 가운데 평면인 것이므로 brauer-algebras 가 맞고, partition-algebras 와는 형제가 된다.",
-      "createdAt": "2026-10-03T20:52:30.716Z",
-      "seq": 1601
-    },
-    {
       "id": "652d6b1f",
       "title": "cherlin-zilber-conjecture 의 후속 간선",
       "priority": 10,
@@ -1650,22 +1642,6 @@
       "note": "해석학/측도론. 부모는 bounded-variation. bounded-variation 의 'Riemann–Stieltjes 적분' 절과 ito-calculus, brownian-motion 이 이 적분을 이름만 쓰고 정의 문서가 없다. 적분자가 유계변동일 때의 존재 정리, 부분적분, Lebesgue-Stieltjes 측도와의 대응, Brown 운동 경로에서 실패하는 이유가 내용이다",
       "createdAt": "2026-10-04T05:00:40.864Z",
       "seq": 1630
-    },
-    {
-      "id": "7b62e857",
-      "title": "분포(distributions) 문서 신설",
-      "priority": 10,
-      "note": "분야는 해석학(#analysis #functional_analysis). 부모 후보는 sobolev-spaces 와 lp-spaces 다. sobolev-spaces 가 약한 도함수를 시험함수에 대한 부분적분으로 정의하는데, 그 일반형인 분포(일반화 함수)와 Dirac 델타, 분포의 Fourier 변환을 담은 문서가 없다. fourier-transform 과 greens-function 쪽 서술이 모두 이 개념을 쓴다.",
-      "createdAt": "2026-10-04T08:42:43.405Z",
-      "seq": 1634
-    },
-    {
-      "id": "57bb4724",
-      "title": "변분법의 직접법과 Lax-Milgram 정리",
-      "priority": 10,
-      "note": "분야는 해석학(#analysis #functional_analysis #optimization). 부모는 sobolev-spaces 와 hilbert-spaces 다. sobolev-spaces 의 활용 절이 Lax-Milgram 정리와 약한 하반연속성을 링크 없이 이름만 쓰고 있다. 강제성과 유계성에서 약한 해의 존재와 유일성을 얻는 논증이 한 문서 분량이고, dirichlet-problem 의 약한 해 서술을 여기에 붙일 수 있다.",
-      "createdAt": "2026-10-04T08:42:43.571Z",
-      "seq": 1635
     },
     {
       "id": "e54c0024",
@@ -1874,6 +1850,14 @@
       "note": "finite-element-method 보강 후보. 33차 문서는 H^1 노름의 O(h^k) 만 담았다. L^2 노름에서 한 차수 더 나오는 O(h^{k+1}) 추정은 쌍대 문제를 세우고 그 해의 정칙성을 쓰는 Aubin-Nitsche 논법이라 elliptic-regularity 와 dual-space 를 함께 쓴다. 성질 절의 '수렴률' 뒤에 한 절로 들어가는 것이 맞고, 별도 문서로 떼면 1000줄 기준에 한참 못 미친다. 출처는 Brenner-Scott 3판 5.4 절.",
       "createdAt": "2026-10-05T16:42:37.835Z",
       "seq": 1729
+    },
+    {
+      "id": "97274ae5",
+      "title": "변분법의 직접법",
+      "priority": 10,
+      "note": "해석학(#analysis #functional_analysis #optimization). 35차 큐 대조에서 'Lax-Milgram 정리' 부분만 떼어 제목을 좁혔다(옛 항목 57bb4724). lax-milgram.md 가 이미 있고 그 문서에는 직접법과 약한 하반연속성이 없다(grep 으로 확인). 담을 내용은 강제성과 약한 하반연속성에서 최소화자의 존재를 얻는 논증, Dirichlet 에너지의 최소화, 볼록성과 약수렴의 관계다. 부모는 sobolev-spaces 와 lax-milgram",
+      "createdAt": "2026-10-06T00:48:45.119Z",
+      "seq": 1749
     },
     {
       "id": "dfb3e493",
