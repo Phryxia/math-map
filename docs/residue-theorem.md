@@ -121,6 +121,7 @@ Laplace 변환과 z-변환의 역변환은 유수의 합이다. 선형 시불변
 
 ## 더 알아보기
 
+- [Hurwitz 정리](hurwitz-theorem.md)
 - [소수 정리](prime-number-theorem.md)
 - [타원함수](elliptic-functions.md)
 - [Picard 정리](picard-theorems.md)

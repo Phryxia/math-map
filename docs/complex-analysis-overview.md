@@ -55,6 +55,7 @@ graph TD
 
 - [Weierstrass 인수분해 정리](weierstrass-factorization.md): 기본 인수와 무한곱, 지정한 영점을 갖는 전해석함수, 위수와 Hadamard 인수분해
 - [Picard 정리](picard-theorems.md): Casorati–Weierstrass 정리, 두 값을 피할 수 없다는 작은·큰 Picard, Montel 정리와 정규족
+- [Hurwitz 정리](hurwitz-theorem.md): 국소 균등수렴에서 영점 개수의 보존, 영점 없음과 단사성의 보존, Rouché 정리와의 관계
 - [Montel 정리](montel-theorem.md): 국소 유계인 정칙함수족의 정규성, Hurwitz 정리, 두 값을 생략하는 족
 
 ## 확장과 사상
