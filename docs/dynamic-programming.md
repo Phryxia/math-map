@@ -84,7 +84,7 @@ $$
 
 ## 확률모형의 추론
 
-은닉 Markov 모형에서 가장 그럴듯한 상태열을 찾는 Viterbi 알고리즘, 관측 확률을 구하는 forward 알고리즘이 동적 계획법이다. 상태 공간 위의 전이 그래프가 시간 축을 따라 펼쳐지면서 DAG 가 되고, 시간마다 상태 수에 비례하는 표를 채운다.
+[은닉 Markov 모형](hidden-markov-model.md)에서 가장 그럴듯한 상태열을 찾는 Viterbi 알고리즘, 관측 확률을 구하는 forward 알고리즘이 동적 계획법이다. 상태 공간 위의 전이 그래프가 시간 축을 따라 펼쳐지면서 DAG 가 되고, 시간마다 상태 수에 비례하는 표를 채운다.
 
 ## 제어와 강화학습
 
@@ -101,5 +101,6 @@ Bellman 방정식은 원래 동적 계획법에서 나온 식이고, 유한 시�
 
 - [최단경로](shortest-paths.md)
 - [나무폭](treewidth.md)
+- [은닉 Markov 모형](hidden-markov-model.md)
 
 #algorithms #computation

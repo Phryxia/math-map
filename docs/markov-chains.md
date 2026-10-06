@@ -181,6 +181,7 @@ $$
 - [무작위 걷기](random-walks.md)
 - [Markov 연쇄의 혼합시간](mixing-time.md)
 - [Poisson 과정](poisson-process.md)
+- [은닉 Markov 모형](hidden-markov-model.md)
 - [Markov 결정 과정](markov-decision-process.md)
 
 #probability #linear_algebra #statistics #computation

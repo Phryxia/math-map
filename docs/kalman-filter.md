@@ -87,7 +87,7 @@ $F$ , $H$ , $Q$ , $R$ 이 $k$ 에 무관하고 계가 가관측이고 가제어�
 
 - 위성 항법과 관성 항법의 융합에서 위치와 속도를 상태로 두고 두 센서의 관측을 차례로 받는다. 비선형 관측식은 작동점에서 선형화해 같은 공식을 쓴다.
 - [선형회귀](linear-regression.md)의 순차 최소제곱이 $F=I$ 이고 $Q=0$ 인 특수한 경우다. 관측 하나를 받을 때마다 정규방정식의 역행렬을 랭크 $1$ 갱신하는 계산과 같다.
-- 은닉 Markov 모형의 전향 알고리즘이 같은 재귀다. [Markov 연쇄](markov-chains.md)처럼 상태공간이 유한집합이면 그 재귀가 합이 되고, 선형 Gauss 이면 위 공식이 된다.
+- [은닉 Markov 모형](hidden-markov-model.md)의 전향 알고리즘이 같은 재귀다. [Markov 연쇄](markov-chains.md)처럼 상태공간이 유한집합이면 그 재귀가 합이 되고, 선형 Gauss 이면 위 공식이 된다.
 - 시계열의 우도 계산에 혁신을 쓴다. 혁신이 서로 독립인 Gauss 벡터이므로 그 밀도의 곱이 관측열의 우도가 되고, 이것을 [최대우도추정](maximum-likelihood.md)에 넣어 $F$ 와 $Q$ 를 추정한다.
 
 [^1]: Brian D. O. Anderson and John B. Moore, *Optimal Filtering*, Prentice-Hall (1979), 6 장과 4 장. Joseph 형식과 제곱근 필터의 오차 해석, 정상 상태 수렴과 Riccati 방정식의 조건.
