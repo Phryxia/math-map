@@ -50,7 +50,7 @@ $$
 
 ## 켤레류를 쓴 계산
 
-$x\mapsto h\cdot x$ 가 두 고정점 집합 사이의 전단사이므로 $g$ 와 $hgh^{-1}$ 의 고정점 개수가 같다. 따라서 합을 켤레류 단위로 묶을 수 있다.
+$x\mapsto h\cdot x$ 가 두 고정점 집합 사이의 전단사이므로 $g$ 와 $hgh^{-1}$ 의 고정점 개수가 같다. 따라서 합을 [켤레류](conjugacy-classes.md) 단위로 묶을 수 있다.
 
 $$
 \lvert X/G\rvert=\frac1{\lvert G\rvert}\sum_{i}\lvert C_i\rvert\cdot\lvert\mathrm{Fix}(g_i)\rvert
