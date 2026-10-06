@@ -65,6 +65,7 @@ graph TD
 
 - [확률적 방법](probabilistic-method.md): 무작위 대상이 존재를 증명한다
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md): 문턱 현상, 연결성과 거대 성분
+- [Potts 모형](potts-model.md): 그래프 위의 색 배정 분포, 무작위 클러스터 표현과 Tutte 다항식
 - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위의 조화해석, 복잡도 이론의 도구
 
 ## 그래프와 매트로이드
