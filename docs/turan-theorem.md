@@ -64,5 +64,6 @@ $H$ 가 이분그래프이면 $r=1$ 이라 주항이 사라지고 이 식이 아
 
 - [Zarankiewicz 문제](zarankiewicz-problem.md)
 - [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md)
+- [Erdős–Stone 정리](erdos-stone-theorem.md)
 
 #combinatorics #graph_theory
