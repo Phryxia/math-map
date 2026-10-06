@@ -84,6 +84,7 @@ graph TD
 
 소수를 세려면 복소함수가 필요하다. $\zeta$ 에서 $L$ 함수로, 다시 Tate 의 아델적 재해석으로.
 
+- [Dirichlet 급수](dirichlet-series.md): 계수에 $n^{-s}$ 를 붙인 급수, 수렴 가로선과 합성곱의 곱 대응, Perron 공식
 - [Riemann zeta 함수](riemann-zeta.md) → [소수 정리](prime-number-theorem.md) → [Dirichlet L 함수](dirichlet-l-functions.md) → [Gauss 합](gauss-sums.md)
 - [체 방법](sieve-methods.md): 작은 소수의 배수를 걸러 남는 개수를 재는 Brun 의 절단과 Selberg 의 가중
 - [큰 체](large-sieve.md): 소수마다 절반을 거르는 문제의 지수합 부등식과 Bombieri–Vinogradov 정리
