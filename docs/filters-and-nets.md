@@ -118,6 +118,6 @@ Hausdorff 이면 서로 떨어진 두 근방이 꼬리를 모두 담을 수 없�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [초곱](ultraproducts.md)
 
 #topology #set_theory #order_theory #logic
