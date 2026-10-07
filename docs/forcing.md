@@ -126,5 +126,6 @@ $\mathrm{Add}(\omega, \kappa)$ 는 조건이 유한이므로 ccc 를 만족한�
 - [Boolean 값 모형](boolean-valued-models.md)
 - [Martin 의 공리](martins-axiom.md)
 - [반복 강제법](iterated-forcing.md)
+- [Laver 강제법](laver-forcing.md)
 
 #set_theory #logic #foundations
