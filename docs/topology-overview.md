@@ -45,6 +45,7 @@ graph TD
 - [단체 호몰로지](homology.md) → [코호몰로지](cohomology.md): 사슬 위의 함수, 컵곱이 주는 환 구조와 Poincaré 쌍대성
 - [단체 호몰로지](homology.md) → [Brouwer 고정점 정리](brouwer-fixed-point.md): 수축의 부재가 고정점의 존재를 준다
 - [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Sperner 보조정리](sperner-lemma.md), [Kakutani 고정점 정리](kakutani-fixed-point.md): 조합적 증명과 집합값 사상으로의 확장
+- [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Borsuk–Ulam 정리](borsuk-ulam.md): 대척점 쌍에서 값이 같아진다는 정리, Kneser 그래프 채색수의 하한
 - [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Lefschetz 고정점 정리](lefschetz-fixed-point.md): 호몰로지 대각합의 교대합이 고정점의 존재를 판정한다
 ## 코호몰로지와 비틀림
 
