@@ -65,6 +65,6 @@ $B=\mathbb R\setminus A=\bigcup_k(\mathbb R\setminus G_k)$ 이고 각 $\mathbb R
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Erdős–Sierpiński 쌍대성](erdos-sierpinski-duality.md)
 
 #measure_theory #set_theory #topology
