@@ -106,6 +106,6 @@ $TM$ 이 다양체이므로 $T(TM)$ 을 다시 만들 수 있고, 여기에는 $
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Whitney 매장 정리](whitney-embedding.md)
 
 #differential_geometry #topology #algebraic_topology

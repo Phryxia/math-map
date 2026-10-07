@@ -54,6 +54,7 @@ $\rho\_\alpha$ 들을 실해석함수로 잡을 수 없다. 실해석함수가 �
 
 - [Riemann 계량](riemannian-metrics.md)의 존재. 좌표 조각마다 유클리드 내적을 놓고 단위분할로 가중합하면, 양의 정부호성이 양의 계수 볼록 결합에 닫혀 있으므로 전역 계량이 된다.
 - [미분형식](differential-forms.md)의 적분과 Stokes 정리. 적분을 좌표 조각 하나의 계산으로 국소화하는 단계가 단위분할이고, 그 뒤에 남는 것은 반공간에서의 직접 계산이다.
+- [Whitney 매장 정리](whitney-embedding.md). 유한 덮개의 좌표 사상에 단위분할을 곱해 더하면 다양체를 유클리드 공간에 넣는 매장이 된다.
 - [de Rham 코호몰로지](de-rham-cohomology.md)의 Mayer–Vietoris 수열. 두 열린 집합의 덮개에 종속된 단위분할로 연결 준동형을 만든다.
 - [특성류](characteristic-classes.md)의 계산. 벡터다발의 접속이 언제나 존재한다는 사실이 단위분할에서 나오고, 그 접속의 곡률로 Chern 형식을 적는다.
 
@@ -67,6 +68,6 @@ $\rho\_\alpha$ 들을 실해석함수로 잡을 수 없다. 실해석함수가 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Whitney 매장 정리](whitney-embedding.md)
 
 #differential_geometry #topology #analysis
