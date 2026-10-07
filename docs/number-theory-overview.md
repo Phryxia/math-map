@@ -56,6 +56,7 @@ graph TD
 - [Pell 방정식](pell-equation.md): $x^2-dy^2=1$ 의 해가 기본해의 거듭제곱으로 전부 나온다
 - [이차형식](quadratic-forms.md): 대칭행렬로 본 2 차 동차식, 부호수와 Hasse–Minkowski 정리, 제곱수의 합
 - [Diophantine 근사](diophantine-approximation.md): 근사 지수가 대수적 수와 초월수를 가른다
+- [Roth 정리](roth-theorem.md): 대수적 무리수의 근사 지수가 $2$ 라는 정리, 보조 다항식과 지표, 비유효성
 - [초월수](transcendental-numbers.md): $e$ 와 $\pi$ 의 초월성, 로그의 일차형식
 - [Baker 정리](baker-theorem.md): 로그의 일차형식에 대한 유효 하한, Diophantus 방정식의 해 상한
 - [Thue 방정식](thue-equation.md): 차수 3 이상 이진형식의 정수해, 유한성과 Baker 하한이 주는 유효 상한

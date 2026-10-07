@@ -52,7 +52,7 @@ $\alpha$ 의 최소다항식을 정수계수 $f$ 로 잡는다. $f$ 는 기약�
 
 **정리(Roth)**[^2]**.** $\alpha$ 가 대수적 무리수이고 $\varepsilon \gt 0$ 이면 $\vert \alpha - p/q\vert \lt q^{-2-\varepsilon}$ 을 만족하는 기약분수는 유한 개다. 따라서 $\mu(\alpha) = 2$ 다.
 
-Liouville 의 지수 $d$ 를 Thue 가 $d/2 + 1$ 로, Siegel 과 Dyson 이 더 낮추었고 Roth 가 $2$ 에 이르렀다. 증명은 여러 변수의 보조 다항식을 만들어 $\alpha$ 근처에서 높은 차수로 소멸하게 하고, 좋은 근사가 여럿 있으면 그 다항식의 지표가 모순을 일으킴을 보인다.
+Liouville 의 지수 $d$ 를 Thue 가 $d/2 + 1$ 로, Siegel 과 Dyson 이 더 낮추었고 Roth 가 $2$ 에 이르렀다. [Roth 정리](roth-theorem.md)의 증명은 여러 변수의 보조 다항식과 그 소멸 차수의 상한으로 모순을 만든다.
 
 이 정리는 예외 분수의 개수를 한정하지만 그것들의 크기를 계산해 주지는 않는다. 상한을 실제로 계산할 수 있는 형태의 증명은 알려져 있지 않다.[^3]
 
@@ -95,6 +95,7 @@ $\psi(q) = q^{-\varepsilon}$ 을 넣으면 급수가 수렴하므로, 거의 모
 
 ## 더 알아보기
 
+- [Roth 정리](roth-theorem.md)
 - [초월수](transcendental-numbers.md)
 
 #number_theory #analysis #measure_theory
