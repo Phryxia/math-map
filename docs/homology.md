@@ -138,6 +138,7 @@ $$
 
 ### 세포 구조와 위상 불변량
 
+- [Mayer–Vietoris 완전열](mayer-vietoris.md)
 - [CW 복합체](cw-complexes.md)
 - [Morse 이론](morse-theory.md)
 - [Euler 지표](euler-characteristic.md)
