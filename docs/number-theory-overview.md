@@ -39,6 +39,7 @@ graph TD
 - [정수의 합동](modular-arithmetic.md): 정수를 나머지로 분류하는 첫 도구
 - [유클리드 알고리즘](euclidean-algorithm.md): 최대공약수와 Bézout 항등식
 - [소수](primes.md): 산술의 기본 정리
+- [Möbius 반전 공식](mobius-inversion.md): 약수 합성곱이 주는 산술함수의 환과 그 환에서의 역원
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
 - [중국인의 나머지 정리](chinese-remainder-theorem.md): 서로소 법의 합동식 결합
 - [이차 상호법칙](quadratic-reciprocity.md): 제곱잉여의 대칭성, 유체론의 시작점

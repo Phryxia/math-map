@@ -110,7 +110,7 @@ $$
 | von Mangoldt $\Lambda(n)$ | $-\zeta'(s)/\zeta(s)$ | $1$ |
 | Dirichlet 지표 $\chi(n)$ | $L(s,\chi)$ | $1$ |
 
-$\mu\ast 1=\delta$ 와 $1\ast 1=d$ 와 $\Lambda\ast 1=\log$ 가 각각 첫 두 줄, 셋째 줄, 여섯째 줄의 항등식에 대응한다. Möbius 반전 공식이 합성곱의 역원을 구하는 것과 같다.
+$\mu\ast 1=\delta$ 와 $1\ast 1=d$ 와 $\Lambda\ast 1=\log$ 가 각각 첫 두 줄, 셋째 줄, 여섯째 줄의 항등식에 대응한다. [Möbius 반전 공식](mobius-inversion.md)이 합성곱의 역원을 구하는 것과 같다.
 
 # 활용
 
