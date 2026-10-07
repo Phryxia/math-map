@@ -92,6 +92,6 @@ $n=1$ 이 위의 정리다. 이 소멸은 $L$ 위의 벡터 공간에 내려오�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kummer 이론](kummer-theory.md)
 
 #field_theory #algebra #number_theory #group_theory
