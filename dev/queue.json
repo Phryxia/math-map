@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-07T13:05:07.070Z",
-  "nextSeq": 1862,
+  "savedAt": "2026-10-07T17:09:45.537Z",
+  "nextSeq": 1872,
   "items": [
     {
       "id": "44ca5d52",
@@ -194,14 +194,6 @@
       "note": "독자 판단 대기. 31차 회차(2026-10-05) sylow-theorems 보강에서 꺼냈고 이번 회차에는 손대지 않았다.\n\nsylow-theorems:138 의 각주가 '[^1]: Wikipedia, Sylow theorems, https://en.wikipedia.org/wiki/Sylow_theorems' 다. 전수로 보면 Wikipedia 를 각주 출처로 쓰는 문서가 24 개다(axiom-of-choice, euler-characteristic, fermat-euler-theorem, first-order-logic, fourier-series, generating-functions, sylow-theorems 등).\n\nCLAUDE.md 4절은 '위키피디아나 교과서의 목차를 그대로 옮기지 않는다' 고만 적고 각주 출처로 쓰는 것을 금지하지는 않는다. 다만 다른 문서들은 논문과 교과서를 각주로 달고, 4절 문체 규칙이 열린 문제나 미해결 진술에 '논문이나 교과서가 그렇게 명시한 경우' 의 출처를 요구하므로, 그런 진술을 받치는 각주가 Wikipedia 이면 근거가 약하다.\n\n정해야 할 것 둘. (1) 각주 출처로 Wikipedia 를 허용할 것인지. 허용하면 CLAUDE.md 에 한 줄 적고, 금지하면 24 개 문서의 각주를 바꾸는 작업이 된다. (2) 금지로 정할 때 우선순위. 열린 문제나 정리의 진술을 받치는 각주가 먼저이고, 개념의 개요를 가리키는 각주는 지우면 되는 자리가 많다.\n\n바꿀 때 쓸 출처를 하나 미리 적어 둔다. Sylow 정리의 원 논문은 L. Sylow, 'Theoremes sur les groupes de substitutions', Mathematische Annalen 5 (1872), 584-594 다. 한 문서만 바꾸면 24 개 사이에서 들쭉날쭉해지므로 전수 판정이 난 뒤에 함께 바꾸는 것이 낫다.",
       "createdAt": "2026-10-05T01:01:29.180Z",
       "seq": 1699
-    },
-    {
-      "id": "cc15f6ba",
-      "title": "holomorphic-functions 의 최대절댓값 원리를 독립 절로 올릴지",
-      "priority": 20,
-      "note": "독자 판단 대기에 가까운 보강 후보. 32차 회차에 '절이 없다' 고 적은 앞선 큐 항목 eb96d7ca 는 부정확해서 지웠다. 최대절댓값 원리는 holomorphic-functions(정칙함수, 147줄)의 '## 그 밖의 결과' 절에 목록 한 줄로 있다. 진술은 '상수가 아닌 정칙함수의 절댓값은 영역 내부에서 국소 최대가 될 수 없다. 따라서 유계 영역의 폐포에서 최댓값은 경계에서 달성된다' 이고 증명은 없다. 같은 절에 열린사상 정리와 Schwarz 보조정리가 함께 목록으로 있는지 확인한 뒤 판단한다. 올릴 근거: 32차에 riesz-thorin 을 쓰면서 Phragmen-Lindelof 원리를 그 문서 정의 절에서 자체 진술하고 증명 요지까지 적어야 했고, 띠 영역의 최대원리는 유수 정리와 등각사상 쪽에서도 쓰인다. 올리지 않을 근거: riesz-thorin 의 선수지식에 holomorphic-functions 가 이미 있어 본문 링크를 더 달 자리가 없고, 147줄 문서의 '그 밖의 결과' 목록은 Cauchy 적분 정리에서 따라오는 결과들을 모아 둔 자리라 하나만 절로 올리면 묶음이 흐트러진다. 목록 세 줄을 다 절로 올리면 문서가 200줄에 가까워진다.",
-      "createdAt": "2026-10-05T09:02:21.384Z",
-      "seq": 1712
     },
     {
       "id": "5717b52b",
@@ -402,6 +394,30 @@
       "note": "36차 회차(2026-10-07) 판정 결과 메모. tate-cohomology 를 만든 뒤 자식 후보로 적어 둔 둘을 바로 확인했다.\n\n(1) poitou-tate(237줄)를 자식으로 두지 않는다. 그 문서에서 'Tate 코호몰로지', 수정 코호몰로지 기호, Herbrand 를 grep 해 0 건이다. 서술이 Galois 코호몰로지와 쌍대성으로 되어 있고 유한군의 수정 코호몰로지를 전제하지 않는다. 부모는 local-class-field-theory 와 selmer-tate-shafarevich 둘이다.\n\n(2) local-class-field-theory(188줄)도 자식이 아니다. 같은 grep 이 0 건이고, 부모가 class-field-theory 와 p-adic-numbers 둘이라 tate-cohomology 를 더하면 부모가 셋이 된다. 대신 tate-cohomology 활용 절 셋째 '## 국소체의 불변량' 의 '국소 상호법칙' 을 그 문서로 본문 링크했다(커밋 97434794).\n\n두 문서를 보강해 수정 코호몰로지로 서술을 바꾸는 회차가 오면 간선을 재판정한다. 그때 판단할 점은 class-field-theory 쪽이 tate-cohomology 의 자식이 되는지인데, 그 문서도 현재 Tate 코호몰로지 없이 서술되어 있어 지금은 tate-cohomology 활용 절의 본문 링크로만 이어진다.",
       "createdAt": "2026-10-07T13:03:29.676Z",
       "seq": 1860
+    },
+    {
+      "id": "1282ac08",
+      "title": "절대연속 함수를 별도 문서로 만들지 않은 판정",
+      "priority": 20,
+      "note": "38차 회차(2026-10-07) 판정. 큐 e4128849 가 lebesgue-differentiation 아래에 절대연속 함수 문서를 요청했고 note 가 'bounded-variation 의 절대연속 절과 중복되는지 먼저 확인한다' 고 적었다. 확인 결과 중복이 크다. bounded-variation 은 '## 절대연속'(31줄)에서 epsilon-delta 정의를 세우고, '## 포함관계'(60줄)에서 Lipschitz 포함 절대연속 포함 BV 교집합 C^0 포함 BV 를 식으로 적고, '## 미적분의 기본정리'(67줄)에서 절대연속일 필요충분조건이 F(x)-F(a)=적분 F' 임을 진술하고, '## Lebesgue 분해'(77줄)에서 절대연속 부분과 특이 부분의 분해를 Radon-Nikodym 과 잇는다. 요청 note 가 담을 내용으로 든 셋 가운데 둘(미적분 기본정리, Lipschitz 와 BV 사이의 포함관계)이 이미 그 문서에 있다. 남는 것은 Banach-Zaretsky 판정(영집합을 영집합으로 보내는 BV 연속함수가 절대연속이라는 특성화) 하나이고, 그것만으로 문서를 세우기에는 얇다. 그 판정이 필요해지면 bounded-variation 의 '## 절대연속' 절에 정리 하나로 더한다.",
+      "createdAt": "2026-10-07T16:52:17.783Z",
+      "seq": 1862
+    },
+    {
+      "id": "0ae64dec",
+      "title": "Hilbert 기호를 별도 문서로 만들지 않은 판정",
+      "priority": 20,
+      "note": "38차 회차(2026-10-07) 판정. 큐 a2129291 이 quadratic-forms 아래에 Hilbert 기호 문서를 요청하며 담을 내용으로 '국소체에서의 쌍, 곱 공식과 이차 상호법칙의 재진술, Brauer 군의 2 등분점' 을 들었다. 확인 결과 brauer-groups(143줄) 가 셋을 모두 담고 있다. 그 문서 51 줄에 '## Hilbert 기호' 절이 있어 사원수대수의 분해 여부로 기호를 정의하고 홀수 소수 자리의 명시적 공식까지 적으며, 86 줄이 곱 공식의 값이 1 이라는 진술과 그것이 이차 상호법칙의 자리 전체 대칭이라는 재진술을 담고, 124 줄이 Hasse 불변량이 Hilbert 기호의 곱이라는 이차형식 분류를 담는다. quadratic-forms 55 줄과 그 각주 2 도 같은 내용을 Serre 의 책 3 장으로 가리킨다. 별도 문서를 세우면 brauer-groups 의 그 절을 그대로 옮기는 중복이 된다. 기호 쪽 분량이 늘어 brauer-groups 가 1000 줄에 닿으면 8 절대로 나누는 것이 맞고, 143 줄인 지금은 그 기준에 멀다.",
+      "createdAt": "2026-10-07T16:55:50.945Z",
+      "seq": 1866
+    },
+    {
+      "id": "ebde58f1",
+      "title": "holomorphic-functions 의 최대절댓값 원리를 독립 절로 올리지 않은 판정",
+      "priority": 20,
+      "note": "38차 회차(2026-10-07) 판정. 큐 cc15f6ba 의 '독자 판단 대기' 를 닫는다. 결론은 올리지 않는 것이고 문서는 고치지 않았다. 확인한 것은 cc15f6ba 가 적은 두 근거 가운데 '올리지 않을 근거' 쪽이 현재 문서 상태와 맞는다는 것이다. holomorphic-functions(147줄)의 '## 그 밖의 결과'(89줄)는 Cauchy 적분 정리에서 따라오는 결과를 목록으로 모은 자리이고 최대 절댓값 원리가 그중 91줄 한 항목이다. 같은 목록의 다른 항목만 남기고 하나를 절로 올리면 '그 밖의 결과' 라는 묶음의 기준이 깨진다. 개요(5줄)도 Cauchy 적분 정리 하나에서 Cauchy 적분 공식, 해석성, Liouville 정리, 최대 절댓값 원리, 대수학의 기본정리가 차례로 따라온다고 적어 그 다섯을 같은 층으로 세우므로, 그중 셋만 절이고 하나가 목록인 현재 배치가 개요와 어긋나지 않는다. 최대 절댓값 원리의 증명과 Phragmen-Lindelof 쪽 확장이 필요해지면 별도 문서가 맞고, 그때 부모는 holomorphic-functions 와 maximum-principle(조화함수 쪽 최대값 원리) 둘이며 두 문서의 중복 여부를 먼저 본다.",
+      "createdAt": "2026-10-07T17:05:54.589Z",
+      "seq": 1870
     },
     {
       "id": "410fd79d",
@@ -1164,6 +1180,46 @@
       "seq": 1861
     },
     {
+      "id": "071e4236",
+      "title": "sampling-theorem 의 후속 간선",
+      "priority": 11,
+      "note": "38차 회차(2026-10-07)에 새로 썼다(89줄, 부모 fourier-transform 과 poisson-summation, analysis-overview '급수와 변환' 갈래 Mellin 변환 뒤). 자식은 아직 없고 더 알아보기가 '아직 연결한 문서가 없다' 다. 후속 후보 셋. (1) Paley-Wiener 정리(대역제한 함수의 해석적 연장과 지수형 증가의 대응) - 저장소에 문서가 없다. 정의 절이 Paley-Wiener 공간을 이름만 쓰고 지나가므로 그 정리 쪽으로 가는 자리가 비어 있다. (2) 프레임과 비균일 표본화(Duffin-Schaeffer, Beurling 밀도) - 문서가 없다. 정규직교 기저 절이 임계 표본화만 다루므로 과표본화 쪽 확장이다. (3) 압축 센싱과 L1 복원 - 큐 9e2cd37d(l1 정칙화와 희소 회복)가 같은 자리를 부르고, 표본화율 하한을 대역폭 대신 희소성으로 바꾸는 축이다. 그 항목을 쓸 때 sampling-theorem 을 부모로 둘지 판단한다. 지금 자식으로 둘 문서가 저장소에 하나도 없으므로 리프로 남겼다.",
+      "createdAt": "2026-10-07T16:52:17.922Z",
+      "seq": 1863
+    },
+    {
+      "id": "5160737d",
+      "title": "julia-set 의 후속 간선",
+      "priority": 11,
+      "note": "38차 회차(2026-10-07)에 새로 썼다(85줄, 부모 montel-theorem 하나, complex-analysis-overview '영점과 값 분포' 갈래 Montel 정리 뒤). 큐 67c977b9 의 처리 결과이고 그 항목은 지웠다. 제목은 요청의 'Julia 집합과 Fatou 집합' 에서 4절 제목 규칙대로 'Julia 집합' 으로 좁혔다. Fatou 집합은 여집합이므로 정의 절에서 함께 세우고 별도 문서로 두지 않았다. 자식은 아직 없다. 후속 후보 셋. (1) Mandelbrot 집합 - 문서가 없다. 활용 셋째 항목이 이름만 쓰고 지나가며, 매개변수 공간 쪽 축이라 julia-set 의 자식이 맞다. (2) Fatou 성분의 분류(끌어당기는 영역, Siegel 원판, Herman 고리, Sullivan 의 유랑영역 없음 정리) - 문서가 없다. 성질 절이 반발 주기점만 다루고 Fatou 쪽 구조는 비어 있다. (3) Julia 집합의 Hausdorff 차원 - Hausdorff 차원 문서 자체가 저장소에 없으므로(ls docs 에 hausdorff 없음) 그 문서가 먼저다.",
+      "createdAt": "2026-10-07T16:55:37.033Z",
+      "seq": 1864
+    },
+    {
+      "id": "5e27bdf8",
+      "title": "mertens-theorem 과 chebyshev-bounds 의 후속 간선",
+      "priority": 11,
+      "note": "38차 회차(2026-10-07)에 둘을 이어서 썼다. mertens-theorem(95줄)은 부모 primes 하나, chebyshev-bounds(83줄, Chebyshev 추정)도 부모 primes 하나다. 둘 다 primes 더 알아보기 '산술함수와 분포' 묶음에 Chebyshev, Mertens, 체 방법 순으로 넣었고 number-theory-overview '해석적 정수론과 L 함수' 갈래도 같은 순서다. Chebyshev 를 Mertens 의 부모로 긋지 않은 이유는 5절 기준이다. mertens-theorem 의 '## 제1 정리의 증명' 이 theta(x)=O(x) 를 한 번 도구로 쓰는 것이 전부이고 개요와 직관은 Chebyshev 없이 읽히므로 본문 링크로 두었다(그 링크를 같은 커밋에 걸었다). 남은 후속 후보. (1) Abel 합과 부분합 공식 - 문서가 없다. mertens-theorem 의 제2 정리 증명이 Abel 합을 쓰고 euler-maclaurin 은 같은 도구가 아니다. 부모 후보는 series-convergence 와 riemann-stieltjes-integral 이다. (2) von Mangoldt 함수와 명시 공식 - chebyshev-bounds 가 Lambda 를 정의하고 psi 를 세우므로 명시 공식 쪽으로 가는 자리가 열렸는데, riemann-zeta 와 prime-number-theorem 이 그 내용을 이미 담았는지 먼저 확인한다. (3) Bertrand 가설을 별도 문서로 올릴지 - chebyshev-bounds 의 '## Bertrand 가설' 절이 진술과 증명 요지를 담으므로 지금은 필요하지 않다.",
+      "createdAt": "2026-10-07T17:02:16.679Z",
+      "seq": 1868
+    },
+    {
+      "id": "afeb32fa",
+      "title": "cotangent-bundle 의 후속 간선",
+      "priority": 11,
+      "note": "38차 회차(2026-10-07)에 새로 썼다(76줄, 부모 tangent-bundle 과 symplectic-manifolds, differential-geometry-overview 의 심플렉틱 다양체 줄 뒤). 큐 7b718724(여접다발의 표준 심플렉틱 구조) 의 처리 결과이고 그 항목은 지웠다. 제목은 4절 제목 규칙대로 파일명이 가리키는 개념 하나인 '여접다발' 로 잡고, 표준 1형식과 표준 심플렉틱 형식은 정의 절의 둘째 절에 두었다. 자식은 아직 없다. 후속 후보 셋. (1) 모멘트 사상과 심플렉틱 축소 - 큐 5e5f35fa 가 이미 요청하며 부모 후보로 symplectic-manifolds 와 lie-groups 를 적었는데, 여접다발 위의 군작용에서 모멘트 사상이 가장 먼저 나오므로 cotangent-bundle 도 부모 후보다. 그 항목을 쓸 때 판단한다. (2) 적분가능계와 Arnold-Liouville 정리 - 큐 73e2341f 가 요청한다. 작용-각 좌표가 여접다발의 Lagrangian 올갱이 구조이므로 같은 판단이 든다. (3) Legendre 변환으로 잇는 Lagrangian 역학 - 큐 9f19e6c7(Hamilton 역학과 Legendre 변환) 이 부르는 자리이고, convex-conjugate 가 이미 있으므로 그쪽과 겹치는지 먼저 본다. 세 후보 모두 기존 큐 항목과 겹치므로 새 항목을 따로 push 하지 않았다.",
+      "createdAt": "2026-10-07T17:05:14.284Z",
+      "seq": 1869
+    },
+    {
+      "id": "f583953e",
+      "title": "weak-choice-principles 의 후속 간선",
+      "priority": 11,
+      "note": "38차 회차(2026-10-07)에 새로 썼다(70줄, 부모 axiom-of-choice 하나, foundations-overview 의 선택공리 줄 뒤). 큐 563dd7cc 의 처리 결과이고 그 항목은 지웠다. 제목은 요청의 괄호 나열 '선택공리의 약한 형태(가산 선택, 종속 선택, 초필터 보조정리)' 에서 괄호를 떼어 '선택공리의 약한 형태' 로 잡았고, 셋은 정의 절의 목록으로 세웠다. 자식은 아직 없다. 후속 후보 셋. (1) Solovay 모형 - 문서가 없다. '## Solovay 모형' 절이 진술과 도달 불가능 기수 가정만 적고 구성(Levy 붕괴와 무작위 강제법)을 적지 않았으므로 forcing 과 large-cardinals 와 이 문서 셋이 부모 후보다. 큐 f57c4b5a(Woodin 기수와 결정성)와 겹치는지 먼저 본다. (2) 결정성 공리 - 문서가 없다. AD 가 가산 선택을 함의하고 완전한 AC 와 모순이라는 자리가 비어 있다. (3) 초필터 보조정리를 별도 문서로 올릴지 - filters-and-nets 가 '## 초필터 보조정리' 절(95줄)을 이미 갖고 이 문서가 정의 절에서 UL 과 BPI 의 동치를 적으므로 지금은 필요하지 않다. 올린다면 두 문서의 그 절을 함께 정리해야 한다.",
+      "createdAt": "2026-10-07T17:09:12.147Z",
+      "seq": 1871
+    },
+    {
       "id": "2d5c4e17",
       "title": "무한 범주와 호모토피 이론",
       "priority": 10,
@@ -1668,14 +1724,6 @@
       "seq": 1575
     },
     {
-      "id": "563dd7cc",
-      "title": "선택공리의 약한 형태(가산 선택, 종속 선택, 초필터 보조정리)",
-      "priority": 10,
-      "note": "set_theory/foundations. axiom-of-choice 활용 절 '사용 여부 판별' 이 세 등급(필요 없음/가산 선택/완전한 AC)을 이미 나눠 놓았고 성질 절 '독립성' 이 가산 선택, 종속 선택, 초필터 보조정리, 부울 소 아이디얼 정리의 강도 순서를 한 문장으로 적는다. 그 확장이 문서 하나가 된다. 부모는 axiom-of-choice 하나. 28차에 만든 tychonoff-theorem 이 초필터 보조정리를 Hausdorff 판본의 동치로 쓰므로 그 문서에서 본문 링크가 걸릴 자리도 있다. 남은 후보였던 Tychonoff 정리는 28차에 tychonoff-theorem 으로 닫았다(부모 compactness, axiom-of-choice).",
-      "createdAt": "2026-10-03T16:44:58.456Z",
-      "seq": 1578
-    },
-    {
       "id": "6391b5dc",
       "title": "적응적 경사 방법과 확률적 경사하강법의 남은 후속",
       "priority": 10,
@@ -1716,30 +1764,6 @@
       "seq": 1622
     },
     {
-      "id": "67c977b9",
-      "title": "Julia 집합과 Fatou 집합",
-      "priority": 10,
-      "note": "복소해석/동역학. 부모는 montel-theorem. montel-theorem 의 활용 절과 newton-method:111 이 Julia 집합을 링크 없이 이름만 쓴다. Fatou 집합을 반복합성족이 정규족이 되는 점들로 정의하므로 Montel 정리가 선수지식이고, Newton 법의 유인 영역 경계가 그 예다. 제목이 'A와 B' 꼴이니 파일명은 julia-sets 로 하고 Fatou 집합은 정의 절에서 여집합으로 둔다",
-      "createdAt": "2026-10-04T04:44:57.625Z",
-      "seq": 1625
-    },
-    {
-      "id": "e4128849",
-      "title": "절대연속 함수와 미적분학의 기본정리",
-      "priority": 10,
-      "note": "측도론. 부모는 lebesgue-differentiation. lebesgue-differentiation 의 '도함수가 적분을 되돌리지 않는 경우' 절이 절대연속성을 이름만 쓰고 Cantor 함수를 반례로만 든다. Banach-Zaretsky 판정, 절대연속이면 F(x)-F(a)=∫F' 라는 정리, Lipschitz 와 유계변동 사이의 포함관계가 내용이고, bounded-variation 의 절대연속 절과 중복되는지 먼저 확인한다",
-      "createdAt": "2026-10-04T05:00:40.737Z",
-      "seq": 1629
-    },
-    {
-      "id": "e54c0024",
-      "title": "Mertens 정리 문서 신설 판단",
-      "priority": 10,
-      "note": "분야는 정수론(#number_theory #analysis). 부모 후보는 primes 다. sieve-methods 의 직관 절이 주항을 Mertens 정리로 계산하면서 이름만 쓰고 링크할 문서가 없다. prod(1-1/p) 가 e^{-gamma}/log z 라는 결과와 sum 1/p 의 발산이 한 문서가 될 만한지, 아니면 primes 나 prime-number-theorem 의 성질 절에 넣을지 판단이 필요하다.",
-      "createdAt": "2026-10-04T08:47:35.077Z",
-      "seq": 1638
-    },
-    {
       "id": "777da0c4",
       "title": "Vaughan 항등식과 지수합의 쌍선형 분해",
       "priority": 10,
@@ -1764,22 +1788,6 @@
       "seq": 1648
     },
     {
-      "id": "288a5bf8",
-      "title": "표본화 정리 문서 신설",
-      "priority": 10,
-      "note": "해석학·정보이론(#analysis #information_theory). 부모는 fourier-transform. 대역제한 함수가 표본으로 복원된다는 Nyquist–Shannon 정리와 Poisson 합 공식을 쓰는 증명. fourier.md(이산 Fourier 변환)와 fft.md 쪽에서 이어지는 자리다.",
-      "createdAt": "2026-10-04T12:43:39.540Z",
-      "seq": 1651
-    },
-    {
-      "id": "7b718724",
-      "title": "여접다발의 표준 심플렉틱 구조",
-      "priority": 10,
-      "note": "미분기하. 부모는 symplectic-manifolds. 표준 1형식과 그 외미분, 정준변환, Lagrangian 영단면. 지금은 symplectic-manifolds 활용 절 한 항목으로만 있다.",
-      "createdAt": "2026-10-04T20:42:50.595Z",
-      "seq": 1669
-    },
-    {
       "id": "5e5f35fa",
       "title": "모멘트 사상과 심플렉틱 축소",
       "priority": 10,
@@ -1802,14 +1810,6 @@
       "note": "최적화/조합론/선형대수. 부모 후보는 integer-programming 과 matrices. Ghouila-Houri 판정, 구간 행렬과 근접행렬, network-flow 의 정수해와의 관계. integer-programming 성질 절 한 절로만 있다.",
       "createdAt": "2026-10-04T20:46:23.655Z",
       "seq": 1673
-    },
-    {
-      "id": "a2129291",
-      "title": "Hilbert 기호",
-      "priority": 10,
-      "note": "정수론. 부모는 quadratic-forms. 국소체에서의 쌍, 곱 공식과 이차 상호법칙의 재진술, Brauer 군의 2 등분점. quadratic-forms 성질 절에서 이름만 썼다.",
-      "createdAt": "2026-10-04T20:50:29.386Z",
-      "seq": 1674
     },
     {
       "id": "a904955c",
