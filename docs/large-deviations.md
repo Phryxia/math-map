@@ -93,6 +93,7 @@ $$
 
 - [집중부등식](concentration-inequalities.md)
 - [KL divergence](kl-divergence.md)
+- [볼록 공액](convex-conjugate.md)
 
 ## 더 알아보기
 
