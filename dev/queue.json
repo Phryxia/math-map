@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-07T01:00:44.854Z",
-  "nextSeq": 1835,
+  "savedAt": "2026-10-07T05:04:37.947Z",
+  "nextSeq": 1842,
   "items": [
     {
       "id": "0490c28e",
@@ -354,6 +354,22 @@
       "note": "37차 회차 판정 기록. tangent-bundle 을 새로 쓰면서 manifolds.md:51-66 의 '## 접공간' 절과 중복이 생길 수 있어 분담을 정했다. manifolds 는 derivation 구성 하나와 좌표 기저만 적고, tangent-bundle 이 세 구성(derivation, 곡선류, 좌표류)의 동일성과 다발 구조(전이함수, 2n 차원 매끄러운 구조, 미분사상, 여접다발)를 담는다. manifolds 의 접공간 절은 그대로 두었다. 두 문서를 다음에 손댈 때 manifolds 쪽을 두 문장과 링크로 줄일지 판단한다. 지금 줄이면 manifolds 를 단독으로 읽는 독자가 접공간 정의를 잃는다.",
       "createdAt": "2026-10-07T00:51:49.108Z",
       "seq": 1830
+    },
+    {
+      "id": "0f028766",
+      "title": "Hasse 원리를 별도 문서로 만들지 않은 판정",
+      "priority": 20,
+      "note": "38차 판정. circle-method 활용 절이 Hasse 원리를 이름만 쓰기에 hasse-principle.md 를 만들려다 중단했다. 이유: brauer-groups 가 성질 절에서 '원뿔곡선의 Hasse 원리'(Hasse-Minkowski 진술, Legendre 판정법), '노름 정리와의 관계'(Hasse 노름 정리와 Q(sqrt13,sqrt17) 반례), 'Brauer-Manin 장애'(X(A)^Br 정의, Colliot-Thelene-Sansuc 추측, Skorobogatov 의 예)를 이미 다루고, quadratic-forms 성질 절이 Hasse-Minkowski 를 증명 요지와 함께 다룬다. 새 문서를 세우면 세 번째 중복이 된다. 대신 circle-method 활용 절에서 brauer-groups 로 본문 링크했다. 뒤집을 조건: 국소-전역 원리가 이차형식과 Brauer 군 밖으로(예: Hasse 원리가 깨지는 삼차 곡면의 체계적 서술, 정수점의 국소-전역, 적분 Hasse 원리) 넓어져 brauer-groups 가 1000줄에 닿으면 8절대로 그때 나눈다.",
+      "createdAt": "2026-10-07T04:44:39.466Z",
+      "seq": 1837
+    },
+    {
+      "id": "bc1a219e",
+      "title": "luzin-sierpinski-sets 와 measure-category-decomposition 의 간선 판정",
+      "priority": 20,
+      "note": "38차에 measure-category-decomposition 을 만들고 erdos-sierpinski-duality 의 부모로 두었다. luzin-sierpinski-sets 는 성질 절 '측도와 범주' 의 두 증명이 이 분해를 도구로 쓰지만 간선은 긋지 않았다. 이유: 그 문서의 부모가 이미 erdos-sierpinski-duality 를 거쳐 분해에 닿고, 5절의 '도구로 한 번 쓰는 관계는 본문 링크로 충분' 에 걸린다. 그 문서를 보강하는 회차에 본문 링크가 걸려 있는지 확인하고, 두 증명이 분해를 구조적으로 쓰면 그때 간선을 판정한다.",
+      "createdAt": "2026-10-07T04:59:00.519Z",
+      "seq": 1840
     },
     {
       "id": "410fd79d",
@@ -1244,14 +1260,6 @@
       "seq": 858
     },
     {
-      "id": "c219e538",
-      "title": "circle method 문서",
-      "priority": 10,
-      "note": "분야: 해석적 수론(#number_theory #analysis #combinatorics). 붙일 부모: partitions(분할수), laplace-method. Hardy–Littlewood 원법. 현재 원법 서술이 partitions 35줄 '## 원법' 과 139줄 '## 원법의 적용 범위', laplace-method 122줄 '## 분할수의 점근식' 에 흩어져 있다. 2026-09-21 셋째 회차에 partitions 제목을 '분할수' 로 좁히며 확인했다. 주요 호(major arc)와 소수 호(minor arc) 분해, Weyl 합 추정, Vinogradov 삼소수 정리와 Waring 문제를 응용으로 둘 수 있다",
-      "createdAt": "2026-09-21T20:46:19.185Z",
-      "seq": 866
-    },
-    {
       "id": "b21e6f13",
       "title": "제목 규칙 위반 훑기 (다음 차수)",
       "priority": 10,
@@ -1316,14 +1324,6 @@
       "seq": 1036
     },
     {
-      "id": "be38bf75",
-      "title": "Hilbert 정리 90 과 Brauer 군",
-      "priority": 10,
-      "note": "group-cohomology 활용 둘째 항목. H^1(G,L^times)=0 의 증명(선형 독립성), 순환 확대의 norm 기술, H^2 와 중심단순대수의 대응, class-field-theory 와 group-cohomology 가 부모 후보. #number_theory #algebra",
-      "createdAt": "2026-09-23T20:43:35.841Z",
-      "seq": 1037
-    },
-    {
       "id": "83d62260",
       "title": "신뢰영역 정책 최적화와 근접 정책 최적화",
       "priority": 10,
@@ -1356,14 +1356,6 @@
       "seq": 1063
     },
     {
-      "id": "0b0b17d4",
-      "title": "Gauss 의 류수 1 문제",
-      "priority": 10,
-      "note": "baker-theorem 의 자식 자리. 2026-09-24 회차에 이데알 류군 문서를 쓰려다 algebraic-number-fields 가 '유수군' 이라는 표기로 류군을 이미 다루고 있음을 발견해 문서를 새로 쓰는 대신 저장소 전체의 표기를 류수/류군으로 맞췄다(14 개 문서). 그래서 류군 정의는 algebraic-number-fields 82 줄에 있고 이 문서를 쓸 수 있다. 부모는 baker-theorem 과 algebraic-number-fields. 내용: 판별식 -163 까지의 아홉 개 Heegner 수, Heegner 의 1952 년 증명과 받아들여지지 않은 경위, Baker 와 Stark 의 독립 증명, 선형형식 하한이 판별식을 제한하는 방식, 류수 2 문제와 Goldfeld-Gross-Zagier 의 유효 하한. heegner-points 와 complex-multiplication 이 본문 링크 대상",
-      "createdAt": "2026-09-24T00:54:47.826Z",
-      "seq": 1064
-    },
-    {
       "id": "8fd1250b",
       "title": "Szemeredi-Trotter 의 후속 간선",
       "priority": 10,
@@ -1386,14 +1378,6 @@
       "note": "molecular-species 활용 셋째와 combinatorial-species 가 부를 자리다. 2026-09-23 회차 note 가 Yeh 의 정리 서지를 확인하지 못해 각주를 달지 못했다고 남겼으므로 이 문서를 쓸 때 서지를 먼저 확인할 것. 부모는 molecular-species. 내용: 원자종의 자유 가환 모노이드를 정수 계수로 넓힌 환, 뺄셈이 가능해지는 자리, 종의 방정식을 푸는 데 쓰이는 방식, K-종과의 관계. 2026-09-24 회차에 combinatorial-species 정의 절에 종의 사상(자연변환)과 동형을 넣었으므로 '종의 등식' 의 뜻은 이제 그 문서에 있다",
       "createdAt": "2026-09-24T01:03:47.386Z",
       "seq": 1071
-    },
-    {
-      "id": "c58c5a4b",
-      "title": "측도-범주 분해 정리",
-      "priority": 10,
-      "note": "erdos-sierpinski-duality 직관 절의 R = A sqcup B 분해(A 영집합, B 제1범주)가 이 정리의 특수한 경우다. luzin-sierpinski-sets 성질 절 '측도와 범주' 의 두 증명이 모두 이 분해를 도구로 쓴다. 부모 판정이 먼저다: 후보는 measure, baire-category, erdos-sierpinski-duality 셋이고 분해 자체는 CH 없이 ZFC 에서 되므로 erdos-sierpinski-duality(CH 를 쓰는 문서) 아래가 아니라 measure 나 baire-category 아래가 맞을 수 있다",
-      "createdAt": "2026-09-24T04:39:32.814Z",
-      "seq": 1074
     },
     {
       "id": "32502811",
@@ -1450,14 +1434,6 @@
       "note": "2026-09-24 회차에 gittins-index(Gittins 지표)를 새로 썼다(부모 optimal-stopping 과 multi-armed-bandits 둘, 확률론 개관 '조건부 구조와 이산시간 확률과정' 갈래 최적 정지 다음 줄, 103줄). README 를 508/918 로 맞췄다. 큐 항목 '다중 슬롯머신의 후속 간선' 의 첫 후보이고, 그 앞 'Markov 결정 과정의 후속 간선' 도 같은 문서를 불렀다. 이것으로 multi-armed-bandits 가 리프에서 벗어났다. 부모 판정: optimal-stopping 과 multi-armed-bandits 둘 다 넣었다. 지표의 정의 자체가 정지시각 위의 상한이고, 정리가 답하는 문제가 할인 밴딧이라 어느 쪽도 뺄 수 없다. 둘 사이에 조상관계가 없음을 확인했다(multi-armed-bandits 의 조상에 optimal-stopping 이 없다). markov-decision-process 는 둘의 공통 부모라 5절대로 뺐다. 태그 판정: 첫 태그를 #probability 로 두어 확률론 개관이 거두게 했다. multi-armed-bandits 는 #machine_learning 주라 기계학습 개관에 있으므로 두 문서가 다른 개관에 갈린다. machine-learning-overview '순차 결정' 갈래에도 한 줄 넣을지는 다음 차수에 판정할 것(4.5절이 '다른 분야가 주인 문서는 관련이 깊을 때만' 이라 허용한다). 문서 구성: 개요, 직관(팔 K 개의 결합 상태가 m^K 이라 동적 계획법이 지수로 는다는 데서 막히고, 팔 하나와 '확실히 lambda 를 주는 팔' 을 견주어 갈아타는 시점을 정하는 문제로 바꾸면 두 선택이 같아지는 lambda 가 하나 나온다는 것으로 풀었다. 계산이 m^K 에서 K 번의 m 짜리로 줄어드는 데까지 한 예로 끌고 갔다), 정의(할인율 beta, 정지시각 위의 할인 보상 합과 할인 가중치 합의 비의 상한, 지표 정책), 성질(지표 정리와 통행료 논증을 쓴 증명 요지, 팔 하나 정지 문제와의 동치, O(m^3) 계산 절차, 당기지 않은 팔의 상태가 변하면 최적이 아니라는 반례 갈래), 활용(다중 슬롯머신의 할인 기준과 후회 기준 비교, 최적 정지의 Snell 포락, 작업 스케줄링, 임상시험). 리프다. 후속 후보: 쉼 없는 밴딧(restless bandit. 성질 마지막 절이 지표 정책이 깨지는 자리를 들고 Whittle 지표가 그 완화의 답이다. 이 문서와 markov-decision-process 가 부모 후보), 몬테카를로 트리 탐색('다중 슬롯머신의 후속 간선' 이 남긴 둘째 후보이고 아직 처리하지 않았다. 게임 트리 탐색 문서가 저장소에 있는지 먼저 볼 것), 온라인 볼록 최적화(같은 큐 항목의 셋째 후보. convexity 와 multi-armed-bandits 가 부모 후보이고 제목은 'A와 B' 를 피해 online-convex-optimization 하나로 좁힐 것), 최적 실험 설계(같은 큐 항목의 넷째 후보. statistics 개관에 자리가 있는지 볼 것)",
       "createdAt": "2026-09-24T08:54:13.655Z",
       "seq": 1101
-    },
-    {
-      "id": "571a3b53",
-      "title": "기술집합론의 사영 계층",
-      "priority": 10,
-      "note": "borel-hierarchy 가 사영 계층의 첫 단계(Sigma^1_1 해석적 집합, Pi^1_1 여해석적 집합)만 정의하고 지나간다. 분야는 #set_theory #logic #topology. 부모는 borel-hierarchy. 내용: Sigma^1_n/Pi^1_n 의 계층, 사영 결정성, 완전집합 성질과 Lebesgue 가측성이 계층의 어느 단계까지 ZFC 에서 증명되는지, Sigma^1_1 의 완전집합 성질(Suslin), Pi^1_1 집합의 서수 분석(나무와 유계 정리). analytical-hierarchy 와 hyperarithmetical-hierarchy 의 효과적 판본과 나란히 둔다",
-      "createdAt": "2026-09-24T12:52:41.915Z",
-      "seq": 1107
     },
     {
       "id": "12961212",
@@ -2170,6 +2146,38 @@
       "note": "differential_geometry(#differential_geometry #analysis #measure_theory). 37차 회차(2026-10-07)에 whitney-embedding 을 쓰면서 확인했다. docs 에 sard 류 파일이 없어 '## 차원 내리기' 절에서 Sard 정리를 링크 없이 이름만 썼다(0절). 담을 내용은 임계값의 집합이 측도 0 이라는 진술, 매끄러움 차수 조건(C^k, k >= max(n-m+1,1)), 증명의 귀납 구조, 정칙값 정리와의 관계, Morse 함수의 조밀성과 횡단성 정리로 가는 응용이다. 부모 후보는 manifolds 와 measure 또는 lebesgue-measure 류. 만들면 whitney-embedding 의 '## 차원 내리기' 와 morse-theory 의 Morse 함수 존재 언급에 링크를 건다.",
       "createdAt": "2026-10-07T00:54:57.120Z",
       "seq": 1831
+    },
+    {
+      "id": "a5b5af7f",
+      "title": "circle-method 의 후속 간선",
+      "priority": 10,
+      "note": "circle-method 가 리프다. 후속 후보: Waring 문제 전용 문서(G(k) 의 알려진 값과 상계, Vinogradov 평균값 정리), Weyl 합과 균등분포(weyl-equidistribution), Birch 정리. 본문에서 이름만 쓰고 링크하지 않은 개념: Siegel-Walfisz 정리, Vinogradov 평균값 정리, Hua 의 보조정리, Dirichlet 근사 정리, Kloosterman 합(gauss-sums 가 거두는지 먼저 확인), Hasse 원리(별도 큐 항목). 분할수 쪽 간선은 이미 partitions -> circle-method 로 그었다.",
+      "createdAt": "2026-10-07T04:43:29.821Z",
+      "seq": 1836
+    },
+    {
+      "id": "4dc79b76",
+      "title": "class-number-one 의 후속 간선",
+      "priority": 10,
+      "note": "class-number-one 이 리프다. 본문에서 이름만 쓰고 링크하지 않은 개념: Weber 함수, Kronecker 지표, 힐베르트 류체(class-field-theory 가 거두는지 확인), Rabinowitz 판정, Chudnovsky 급수, Deuring-Heilbronn 현상, Siegel 영점. 후속 후보: 실이차체의 류수(Cohen-Lenstra 휴리스틱), Siegel 영점 문서(prime-number-theorem 과 dirichlet-l-functions 아래). complex-multiplication 과 heegner-points 로는 본문 링크만 걸었고 간선은 긋지 않았다. 간선을 그으려면 complex-multiplication 이 class-number-one 의 부모가 맞는지(특이값의 정수성이 선수지식인지) 먼저 판정할 것.",
+      "createdAt": "2026-10-07T04:48:39.908Z",
+      "seq": 1838
+    },
+    {
+      "id": "c1c68107",
+      "title": "witt-ring 의 후속 간선",
+      "priority": 10,
+      "note": "witt-ring 이 리프다. 본문에서 이름만 쓰고 링크하지 않은 개념: Hasse-Witt 불변량, Milnor K 군, Galois 코호몰로지(저장소에 galois-cohomology.md 가 없다), 수술 장애와 L 군, 형식적 실체와 실닫힌체, 순서 공간. 후속 후보: Galois 코호몰로지 문서(brauer-groups 와 poitou-tate 가 이미 쓰고 있으므로 중복 판정 먼저), Pfister 형식 전용 문서(witt-ring 의 두 절로 충분한지 8절 기준으로 판단), 실닫힌체와 Artin-Schreier 이론. quadratic-forms -> witt-ring 간선만 그었고 brauer-groups 와는 본문 링크만 걸었다.",
+      "createdAt": "2026-10-07T04:52:19.510Z",
+      "seq": 1839
+    },
+    {
+      "id": "25805f9f",
+      "title": "hilbert-theorem-90 의 후속 간선",
+      "priority": 10,
+      "note": "hilbert-theorem-90 이 리프다. 본문에서 이름만 쓰고 링크하지 않은 개념: Dedekind 의 지표 독립성, 정규기저 정리, Kummer 이론(별도 문서 후보), Galois 강하, 순환대수. 후속 후보: Kummer 이론 문서(galois-theory 와 hilbert-theorem-90 이 부모, 차수 n 순환확대와 K^*/(K^*)^n 의 대응, Kummer 쌍대성), Galois 코호몰로지 문서(brauer-groups poitou-tate group-cohomology 가 나눠 쓰고 있으므로 8절 중복 판정 먼저). brauer-groups 와는 본문 링크만 걸었다. brauer-groups 의 부모가 adeles 와 class-field-theory 둘이라 hilbert-theorem-90 을 셋째 부모로 둘지는 5절 부모 수 기준으로 판정할 것.",
+      "createdAt": "2026-10-07T05:02:08.508Z",
+      "seq": 1841
     },
     {
       "id": "dfb3e493",
