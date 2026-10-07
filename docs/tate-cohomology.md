@@ -70,7 +70,7 @@ $A$ 가 유한군이면 $h(A)=1$ 이다. $N^\ast$ 의 핵과 여핵의 위수 �
 
 - **노름 지표.** 순환 확대 $L/K$ 에서 $\hat H^0(\mathrm{Gal}(L/K),L^\times)=K^\times/N L^\times$ 이므로 $0$ 차의 위수가 노름 지표다. Herbrand 몫의 곱셈성으로 단원군과 아이디얼류군의 열을 따라 이 위수를 계산하는 것이 [유체론](class-field-theory.md)의 제1부등식과 제2부등식의 계산이다.
 - **Hilbert 정리 90 의 짝.** 순환 확대에서 $\hat H^1(\mathrm{Gal}(L/K),L^\times)=0$ 이 [Hilbert 정리 90](hilbert-theorem-90.md)이고, 주기성에서 모든 홀수 차수가 소멸한다. 이때 Herbrand 몫이 $0$ 차의 위수 자체다.
-- **국소체의 불변량.** 국소체의 Brauer 군이 $\hat H^2(\mathrm{Gal},L^\times)$ 으로 계산되고, 그 값이 순환 확대의 차수로 주어지는 것이 국소 상호법칙의 불변량 사상이다.
+- **국소체의 불변량.** 국소체의 Brauer 군이 $\hat H^2(\mathrm{Gal},L^\times)$ 으로 계산되고, 그 값이 순환 확대의 차수로 주어지는 것이 [국소 유체론](local-class-field-theory.md)의 불변량 사상이다.
 - **코호몰로지 자명성 판정.** 한 소수 $p$ 마다 두 이웃 차수에서 $\hat H^n$ 이 소멸하면 모든 차수에서 소멸한다. 차수 이동으로 판정이 두 차수의 계산으로 줄어든다.
 
 [^1]: K. S. Brown, *Cohomology of Groups*, Graduate Texts in Mathematics 87, Springer, 1982. 6장이 완전 분해와 Tate 코호몰로지, 유도 가군의 소멸을 다룬다.
