@@ -73,6 +73,6 @@ $\mathcal F$ 가 **정규족**이라는 것은 $\mathcal F$ 의 임의의 수열
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Julia 집합](julia-set.md)
 
 #complex_analysis #analysis #functional_analysis
