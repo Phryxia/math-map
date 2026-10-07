@@ -81,5 +81,6 @@ $\Lambda$ 가 작다고 가정하고, 계수를 미지수로 둔 지수다항식
 
 - [S-단위 방정식](s-unit-equation.md)
 - [Thue 방정식](thue-equation.md)
+- [류수 1 문제](class-number-one.md)
 
 #number_theory #field_theory #analysis
