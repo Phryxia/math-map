@@ -101,6 +101,6 @@ Euler–Lagrange 방정식을 풀지 않고 최소점의 존재를 먼저 보이
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [최단강하선 문제](brachistochrone.md)
 
 #analysis #differential_geometry #optimization

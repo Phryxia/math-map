@@ -79,6 +79,7 @@ graph TD
 - [미적분학의 기본 정리](fundamental-calculus.md): 미분과 적분의 역관계
 - [상미분방정식](ordinary-differential-equations.md): Picard–Lindelöf 존재 정리와 선형 이론
 - [변분법](calculus-of-variations.md): 범함수의 정류 조건과 Euler–Lagrange 방정식
+- [최단강하선 문제](brachistochrone.md): 낙하 시간 범함수와 Beltrami 항등식, 사이클로이드 해와 등시성
 - [Sturm–Liouville 이론](sturm-liouville.md): 2 계 고윳값 문제의 직교성과 완전성, Sturm 진동정리
 - [Peano 존재정리](peano-existence-theorem.md): 연속성만으로 얻는 해의 존재, 유일성의 실패와 Osgood 조건
 
