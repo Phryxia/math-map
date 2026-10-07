@@ -160,6 +160,7 @@ $$
 
 ## 선수지식
 
+- [대수군](algebraic-groups.md)
 - [Weyl 지표 공식](weyl-character-formula.md)
 - [Riemann–Roch 정리](riemann-roch.md)
 

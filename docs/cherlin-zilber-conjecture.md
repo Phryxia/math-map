@@ -2,7 +2,7 @@
 
 # 개요
 
-Cherlin–Zilber 추측은 단순 무한 유한 Morley 위수 군이 대수적으로 닫힌 체 위의 단순 대수군이라는 추측이다. 대수성 추측이라고도 한다.
+Cherlin–Zilber 추측은 단순 무한 유한 Morley 위수 군이 대수적으로 닫힌 체 위의 단순 [대수군](algebraic-groups.md)이라는 추측이다. 대수성 추측이라고도 한다.
 
 [유한 Morley 위수 군](groups-of-finite-morley-rank.md)에서 위수는 대수군의 Zariski 차원이 하던 일을 한다. 대수적으로 닫힌 체 위의 대수군은 전부 유한 Morley 위수 군이고, 추측은 단순 무한인 경우에 역이 성립하는지를 묻는다.
 
