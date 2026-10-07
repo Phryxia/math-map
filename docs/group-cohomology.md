@@ -83,6 +83,6 @@ $$H^k(G,A)=\begin{cases}A^G & k=0\cr \ker N/(t-1)A & k\ \text{ 홀수}\cr A^G/NA
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hilbert 정리 90](hilbert-theorem-90.md)
 
 #group_theory #algebra #algebraic_topology #number_theory
