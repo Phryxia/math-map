@@ -88,6 +88,6 @@ $\mathbb Q$ 위의 비퇴화 이차형식 $q$ 에 대해, $q$ 가 $\mathbb Q$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Witt 환](witt-ring.md)
 
 #number_theory #linear_algebra #algebra

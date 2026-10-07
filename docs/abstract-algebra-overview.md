@@ -87,6 +87,7 @@ graph TD
 - [오류정정부호](error-correcting-codes.md): 유한체 위의 선형 부호, 대수가 통신에 쓰이는 첫 자리
 - [p 진수](p-adic-numbers.md) → [Newton 다각형](newton-polygon.md): 완비화한 체
 - [대수적 수체](algebraic-number-fields.md) → [유체론](class-field-theory.md): 이후는 정수론 개관
+- [Witt 환](witt-ring.md): 이차형식을 쌍곡형식을 법으로 모은 환, 기본 아이디얼의 여과와 Galois 코호몰로지의 일치
 - [미분 Galois 이론](differential-galois-theory.md): 선형 미분방정식의 가해성을 선형 대수군으로 판정
 - [에탈 기본군](etale-fundamental-group.md): 유한 에탈 덮개를 분류하는 유한위상군, 한 점에서는 절대 Galois 군이고 복소다양체에서는 기본군의 완비화
 
