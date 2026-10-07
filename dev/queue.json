@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-07T08:57:36.263Z",
-  "nextSeq": 1852,
+  "savedAt": "2026-10-07T13:05:07.070Z",
+  "nextSeq": 1862,
   "items": [
     {
       "id": "44ca5d52",
@@ -378,6 +378,30 @@
       "note": "2026-10-07 35차 회차에 4절 문체 규칙의 문장형 헤딩 grep 을 docs 전수로 돌려 보고 15 건을 받았고 전부 오검출이다. 보고된 헤딩은 모두 '## 증명의 요지' 하나이며 baker-theorem 55, banach-alaoglu 47, casselman-shalika 69, chebotarev 60, deligne-weil-conjectures 112, finitely-generated-modules 47, gauss-bonnet 47, hartshorne-lichtenbaum 61, index-theorem 69, lagrange-inversion 45, pila-wilkie-theorem 47, rademacher-theorem 39, spectral-sparsification 63, spectral-theorem 58, tunnell-saito 57 이다. 원인은 패턴의 마지막 분기 '[^로]지' 가 명사 '요지' 의 끝 음절을 문장 종결로 보는 것이다. CLAUDE.md 4절은 문학적 비유 금지 항목에서 '증명의 뼈대' 를 '증명의 요지' 로 쓰라고 지시하므로, 이 헤딩은 규격이 권장하는 표현이고 명사구이며 고칠 것이 아니다. 다음 차수에 같은 grep 을 돌릴 때는 '요지 *$' 를 먼저 걸러낸 뒤 남는 것만 본다. 독자가 CLAUDE.md 의 패턴을 '[^로요]지' 로 좁힐지는 판단이 필요하다. '지' 로 끝나는 다른 명사형 헤딩이 들어올 여지가 있으므로 패턴을 고치는 대신 이 메모를 참조하는 쪽이 안전할 수도 있다.",
       "createdAt": "2026-10-07T08:54:15.578Z",
       "seq": 1849
+    },
+    {
+      "id": "c5c41bd9",
+      "title": "조합론 쪽 Roth 정리와 정수론 쪽 Roth 정리의 이름 충돌",
+      "priority": 20,
+      "note": "36차 회차(2026-10-07) 판정 결과 메모. roth-theorem 을 만든 뒤 docs 전체에서 'Roth' 를 훑어 본문 링크를 걸 자리를 골랐다. 거른 것이 둘 있다.\n\n(1) szemeredi-regularity-lemma:85 의 '## Roth 정리' 절과 94줄, combinatorics-overview:42 의 Roth 정리는 길이 3 등차수열에 관한 정리이고 새 문서가 다루는 유리 근사의 Roth 정리와 다른 정리다. 이름이 같아서 전수 grep 으로 링크를 걸면 틀린 곳으로 간다. 조합론 쪽 Roth 정리를 별도 문서로 세우는 날에는 두 문서의 제목을 구별해야 한다(예: 'Roth 정리'(근사)와 'Roth 등차수열 정리'). 세울 때 szemeredi-regularity-lemma 의 그 절을 떼는 것이 후보다.\n\n(2) thue-equation:17 47 51 의 '근사 정리' 는 Thue 자신의 정리(지수 d/2+1)이고 Roth 정리가 아니다. 67줄 각주가 개선의 열을 Siegel Dyson Roth 로 적는다. 그래서 링크를 걸지 않았다. thue-equation 을 보강하는 회차에 Thue 의 근사 정리 진술을 명시하고 Roth 정리로의 개선을 한 문장으로 적으면 그때 본문 링크를 걸 자리가 생긴다.\n\n링크를 건 곳은 넷이다. baker-theorem:66, pigeonhole-principle:93, siegel-integral-points:43, transcendental-numbers:83. 앞의 셋과 transcendental-numbers 에서는 '[Diophantine 근사](diophantine-approximation.md)의 Roth 정리' 꼴을 '[Roth 정리](roth-theorem.md)' 로 바꿨고 diophantine-approximation 본문 링크는 그 자리에서 사라졌다(roth-theorem 개요 첫 줄이 그 문서를 링크한다). diophantine-approximation 자신의 7 69 74줄은 55줄에 이미 링크가 있어 4절의 '최초 1회' 규칙대로 두었다.",
+      "createdAt": "2026-10-07T12:55:01.353Z",
+      "seq": 1857
+    },
+    {
+      "id": "a93c4545",
+      "title": "큐 신규 주제와 기존 문서의 중복 대조 결과 (36차)",
+      "priority": 20,
+      "note": "36차 회차(2026-10-07)에 전수 대조를 돌렸다. 방법은 큐의 p12 이하 항목 가운데 제목이 점검·판정·훑기·후속 간선 류가 아닌 것 167 개를 골라, 공백과 하이픈과 따옴표를 지우고 소문자로 맞춘 제목을 docs 전체 677 개 문서의 첫 줄 제목과 대조한 것이다. 스크래치패드의 dup.mjs 로 돌렸다(dev/ 는 고치지 않는다, 0절).\n\n중복후보 12 건 가운데 제목이 정확히 일치해 완료로 판정하고 제거한 것이 셋이다. Golay 부호(ad12f200, docs/golay-codes.md 102줄), 큰 기수(85b60d5a, docs/large-cardinals.md 95줄), 세포대수(d14f114e, docs/cellular-algebras.md 96줄). 세 문서 모두 큐 note 가 적은 부모 후보 가운데 하나를 실제 부모로 달고 있다.\n\n같은 회차에 다른 경로로 찾아 제거한 것이 둘이다. 근접 경사법과 근접 연산자(f75685c7, docs/proximal-gradient-method.md), S-단위 방정식(72660dd8, docs/s-unit-equation.md). 둘은 개관 갈래를 읽다 발견했고 제목 표기가 달라 위 대조에는 걸리지 않았다.\n\n나머지 9 건은 부분 문자열 매칭의 오탐이고 유지했다. 절대연속 함수와 미적분학의 기본정리(e4128849)는 fundamental-calculus 와 다른 주제이고, 부분관측 Markov 결정 과정(e35a2da6)과 p 진 다중 zeta 값(621c77df)도 각각 markov-decision-process 와 multiple-zeta-values 의 확장으로 별개 문서다. Soergel 쌍가군(4ef9f72d), Temperley-Lieb 대수와 부분인자(2de49d51), Kolyvagin 계의 존재성과 Stark 원소(bbe9cbc2), Weyl 군 다중 Dirichlet 급수(340146bb)는 기존 문서의 후속 주제다. schellekens 목록 표(0314885b)와 다중 zeta 값 묶음(fd3d4236)은 작업 메모다.\n\n다음 대조에서 고칠 점. 제목 포함 관계로 매칭하면 오탐이 9 건 중 9 건이므로, 정확 일치만 보고 포함 관계는 참고로만 출력하는 것이 낫다. 제목 표기가 다른 완료 항목(위의 둘)은 이 방법으로 잡히지 않으므로 파일명 대조도 함께 돌릴 것.",
+      "createdAt": "2026-10-07T12:57:40.706Z",
+      "seq": 1858
+    },
+    {
+      "id": "ca7bb8c0",
+      "title": "tate-cohomology 와 국소 유체론·Poitou-Tate 의 간선 판정 (36차)",
+      "priority": 20,
+      "note": "36차 회차(2026-10-07) 판정 결과 메모. tate-cohomology 를 만든 뒤 자식 후보로 적어 둔 둘을 바로 확인했다.\n\n(1) poitou-tate(237줄)를 자식으로 두지 않는다. 그 문서에서 'Tate 코호몰로지', 수정 코호몰로지 기호, Herbrand 를 grep 해 0 건이다. 서술이 Galois 코호몰로지와 쌍대성으로 되어 있고 유한군의 수정 코호몰로지를 전제하지 않는다. 부모는 local-class-field-theory 와 selmer-tate-shafarevich 둘이다.\n\n(2) local-class-field-theory(188줄)도 자식이 아니다. 같은 grep 이 0 건이고, 부모가 class-field-theory 와 p-adic-numbers 둘이라 tate-cohomology 를 더하면 부모가 셋이 된다. 대신 tate-cohomology 활용 절 셋째 '## 국소체의 불변량' 의 '국소 상호법칙' 을 그 문서로 본문 링크했다(커밋 97434794).\n\n두 문서를 보강해 수정 코호몰로지로 서술을 바꾸는 회차가 오면 간선을 재판정한다. 그때 판단할 점은 class-field-theory 쪽이 tate-cohomology 의 자식이 되는지인데, 그 문서도 현재 Tate 코호몰로지 없이 서술되어 있어 지금은 tate-cohomology 활용 절의 본문 링크로만 이어진다.",
+      "createdAt": "2026-10-07T13:03:29.676Z",
+      "seq": 1860
     },
     {
       "id": "410fd79d",
@@ -1092,6 +1116,54 @@
       "seq": 1851
     },
     {
+      "id": "503f9980",
+      "title": "doob-decomposition 의 후속 간선",
+      "priority": 11,
+      "note": "36차 회차(2026-10-07)에 doob-decomposition 을 썼다(84줄). 부모는 martingales 하나이고 check-cycle 은 OK 였다. 담은 것: 동전 걷기 제곱에서 S_n^2-n 을 직접 얻는 직관, 분해 공식과 예측가능 2차 변동, 유일성 정리와 증명 요지, 보정항의 증감과 submartingale 동치, L^2 수렴 판정, 멈춘 과정의 분해. 태그는 #probability #measure_theory #optimization 다. probability-overview 의 '조건부 구조와 이산시간 확률과정' 갈래에 Martingale 바로 뒤로 한 줄 넣었고 개관의 mermaid 지도는 핵심 12~20개 기준이라 손대지 않았다. README 를 674 와 1200 으로 맞췄다.\n\n새 리프다. 자식 후보 셋. (1) Doob-Meyer 분해(연속시간). 활용 절 넷째가 이름만 쓰고 저장소에 문서가 없다. brownian-motion 과 확률적분 쪽 문서가 밑작업으로 먼저일 수 있어 방향을 먼저 정할 것. (2) Burkholder-Davis-Gundy 부등식. 예측가능 2차 변동과 최대함수를 잇는 정리이고 doob-decomposition 과 martingales 의 Doob 최대부등식 둘을 선수로 한다. (3) Robbins-Siegmund 정리. 활용 절 둘째가 확률근사의 수렴 증명을 가리키는데, 그 정리 자체는 stochastic-approximation 의 자식이 더 맞을 수 있어 부모를 먼저 정할 것.\n\n간선 판정 둘. optimal-stopping 과 stochastic-approximation 을 자식으로 두지 않았다. 둘 다 Doob 분해 없이 정의와 주요 정리가 성립하고(Snell 포락은 역방향 귀납으로 정의되고 최적성 증명은 선택적 정지 정리만 쓴다) 5절의 '도구를 한 번 쓰는 관계는 본문 링크로 충분' 에 해당한다. 활용 절의 본문 링크로만 두었다. 반대 방향(두 문서가 doob-decomposition 의 부모)도 아니다.",
+      "createdAt": "2026-10-07T12:42:21.921Z",
+      "seq": 1852
+    },
+    {
+      "id": "5d8ef23f",
+      "title": "trust-region-policy-optimization 의 후속 간선",
+      "priority": 11,
+      "note": "36차 회차(2026-10-07)에 trust-region-policy-optimization 을 썼다(98줄). 부모는 policy-gradient 하나이고 check-cycle 은 OK 였다. 제목은 큐 항목의 '신뢰영역 정책 최적화와 근접 정책 최적화' 에서 4절 제목 규칙대로 앞쪽으로 좁혔다. PPO 는 TRPO 의 KL 제약을 확률비 잘라내기로 바꾼 것이므로 한 주제로 보고 정의 절 '## 잘라낸 대리 목적' 과 성질 절 '## 잘라내기의 기울기' 로 담았다. 담은 것: 베르누이 정책에서 같은 보폭이 확률을 10배 다르게 움직이는 직관, 할인 방문분포와 대리 목적, 신뢰영역 문제, 성능 차이 항등식과 증명 요지, Schulman 등의 단조 개선 하한(각주), 자연 경사 방향과 켤레기울기, 잘라내기에서 min 이 필요한 이유. 태그는 #machine_learning #optimization #probability #information_theory 다. policy-gradient 활용 절 '보폭의 제한' 에 본문 링크를 넣고 machine-learning-overview 의 순차 결정 갈래에 한 줄 더했다. README 를 675 와 1201 로 맞췄다.\n\n새 리프다. 자식 후보 셋. (1) 일반화 이점 추정(GAE). 성질 절이 이점 추정을 전제로 쓰는데 저장소에 문서가 없고 actor-critic 이 부모로 더 맞을 수 있어 방향을 먼저 정할 것. (2) 자연 경사법. 성질 절 '## 자연 경사 방향' 이 Fisher 정보행렬을 쓰는데 저장소에 Fisher 정보 문서가 없다(maximum-likelihood 와 exponential-families 가 본문에서 정의만 하고 지나간다). 자연 경사법 문서를 세우려면 Fisher 정보행렬 문서가 밑작업으로 먼저일 수 있다. (3) 사람 선호로부터의 강화학습. 활용 절 둘째가 보상 모형과 KL 벌점을 적고 지나간다. 부모는 이 문서와 kl-divergence 둘이 후보다.",
+      "createdAt": "2026-10-07T12:46:34.572Z",
+      "seq": 1853
+    },
+    {
+      "id": "c97eef3a",
+      "title": "tate-cohomology 의 후속 간선",
+      "priority": 11,
+      "note": "36차 회차(2026-10-07)에 tate-cohomology 를 썼다(88줄). 부모는 group-cohomology 하나이고 check-cycle 은 OK 였다. 제목은 큐 항목의 'Tate 코호몰로지와 Herbrand 몫' 에서 4절 제목 규칙대로 앞쪽으로 좁혔고 Herbrand 몫은 성질 절 '## Herbrand 몫' 으로 담았다. 담은 것: 코호몰로지와 호몰로지 긴 완전열이 양쪽에서 끊기는 자리에서 노름 사상 N^*: A/I_G A -> A^G 를 만들어 이어붙이는 직관(위수 m 순환군과 자명 작용 Z 로 확인), 차수별 정의, 완전 분해, 양방향 긴 완전열, 유도 가군의 소멸과 모든 차수에서의 차수 이동, 순환군 주기성(0 차가 예외에서 빠지는 이유), Herbrand 몫의 정의와 유한 가군에서 1 이라는 것과 곱셈성의 증명 요지, 노름 지표와 유체론의 두 부등식. 태그는 #group_theory #number_theory #algebra #algebraic_topology 다. group-cohomology 의 더 알아보기에 Hilbert 정리 90 앞으로 넣고 그 문서 순환군 주기성 절의 'Herbrand 몫' 에 본문 링크를 달았다. abstract-algebra-overview 군론 갈래에 한 줄 더했다. README 를 676 과 1202 로 맞췄다.\n\n새 리프다. 자식 후보 셋. (1) 국소 상호법칙의 불변량 사상. 활용 절 셋째가 국소체 Brauer 군의 계산을 적고 지나가는데 저장소에 local-class-field-theory 류 문서가 있는지 먼저 확인할 것. (2) 코호몰로지 자명 가군. 활용 절 넷째의 두 차수 판정(Nakayama 정리)이고 부모는 이 문서 하나로 충분하다. (3) Tate 쌍대성. poitou-tate 문서가 이미 있으므로 그 문서와의 간선 방향과 중복을 먼저 볼 것(poitou-tate 가 Tate 코호몰로지를 전제하면 이 문서가 그 문서의 부모 후보다). class-field-theory 를 자식으로 두지 않은 이유는 그 문서가 Tate 코호몰로지 없이 서술되고 5절의 '도구를 한 번 쓰는 관계는 본문 링크' 에 해당하기 때문이다.",
+      "createdAt": "2026-10-07T12:49:59.200Z",
+      "seq": 1855
+    },
+    {
+      "id": "1db34fa3",
+      "title": "roth-theorem 의 후속 간선",
+      "priority": 11,
+      "note": "36차 회차(2026-10-07)에 roth-theorem 을 썼다(80줄). 부모는 diophantine-approximation 하나이고 check-cycle 은 OK 였다. 2026-09-23 회차 note 가 남긴 '뗄지 판정' 을 뗀 쪽으로 결론 냈다. 이유는 원 문서의 Roth 절이 진술과 역사와 비유효성 세 문단뿐이어서 증명 구조, 지표, 부분공간 정리, 비유효성의 자리를 담을 자리가 없었다는 것이다. 원 문서는 진술과 각주 [^2] [^3] 를 그대로 두고 증명 요지 문장만 새 문서 링크로 바꿨다(각주 번호는 손대지 않았다). 담은 것: 최소다항식 하나로 지수 d 가 나오는 계산에서 근사 여럿을 한꺼번에 쓰는 보조 다항식으로 넘어가는 직관, 지표의 정의, 유효성의 정의, 증명 세 단계(Siegel 보조정리, Roth 보조정리, 모순), 비유효성이 어디서 생기는지, Schmidt 부분공간 정리와 n=2 에서 Roth 가 나오는 것. 태그는 #number_theory #analysis 다. number-theory-overview 의 갈래에 Diophantine 근사 바로 뒤로 한 줄 넣었다. README 를 677 과 1203 으로 맞췄다.\n\n새 리프다. 자식 후보 둘. (1) 부분공간 정리를 별도 문서로 세울지. 성질 절 '## 부분공간 정리' 가 진술과 Roth 와의 관계를 담았고, 독립 문서로 세우면 norm form 방정식과 선형 점화식 응용을 담을 수 있다. 부모는 이 문서 하나다. (2) Siegel 보조정리. 증명 세 단계의 첫 단계이고 격자점 세기 쪽(lattice-points 류 문서가 있는지 확인할 것)과도 닿는다. 간선 판정: thue-equation 과 siegel-integral-points 를 자식으로 두지 않았다. 둘 다 Roth 정리를 도구로 한 번 쓰고 Baker 하한 쪽 서술이 주이므로 5절 기준으로 본문 링크가 맞다. 다만 그 두 문서가 Roth 정리를 이름만 쓰고 지나가므로 본문 링크를 roth-theorem 으로 거는 작업이 남았다(이 회차에는 하지 않았다).",
+      "createdAt": "2026-10-07T12:53:37.358Z",
+      "seq": 1856
+    },
+    {
+      "id": "8b7100c2",
+      "title": "group-sequential-design 의 후속 간선",
+      "priority": 11,
+      "note": "36차 회차(2026-10-07)에 group-sequential-design 을 썼다(79줄). 제목은 큐 항목의 '군축차 설계와 알파 소비 함수' 에서 4절 제목 규칙대로 앞쪽으로 좁혔고 알파 소비 함수는 정의 절 '## 알파 소비 함수' 로 담았다.\n\n부모 판정. 큐 note 는 hypothesis-testing 과 sequential-probability-ratio-test 둘을 부모로 적었으나 SPRT 하나로 줄였다. hypothesis-testing 이 SPRT 의 부모여서 둘을 다 달면 조상 중복이 되고, 문서의 개요가 SPRT 와의 대조(분석 시점이 유한 개)로 시작하므로 SPRT 하나로 읽힌다. hypothesis-testing 은 활용 절 셋째의 본문 링크로 두었다. check-cycle 은 두 방향 다 OK 였다.\n\n담은 것: 20명마다 다섯 번 들여다보면 1종 오류율이 0.14 가 되는 계산, 누적 통계량의 상관 sqrt(t_j/t_k), 군축차 검정과 정보 비율, 알파 소비 함수의 재귀, Pocock 과 O'Brien-Fleming 경계(K=5 에서 2.413 과 c/sqrt(t_k)), 1종 오류율 통제, 최대 표본 크기 증가 2%와 20%, Brown 운동 근사, 멈춘 시점 표본평균의 편향. 태그는 #statistics #probability 다. SPRT 활용 첫째의 '군축차 설계' 에 본문 링크를 달고 더 알아보기의 '아직 연결한 문서가 없다' 를 이 문서로 바꿨다. statistics-overview 갈래에 SPRT 바로 뒤로 한 줄 넣었다. README 를 678 과 1204 로 맞췄다.\n\n새 리프다. 자식 후보 셋. (1) 언제든 유효한 추론(always-valid inference). 활용 절 셋째가 '시점을 정하지 않는 쪽' 으로 적고 지나간다. 부모는 이 문서와 martingales 둘이 후보이고 e 값과 혼합 SPRT 가 내용이다. (2) 무용성 종료와 베타 소비 함수. 활용 절 둘째가 이름만 쓴다. 분량이 적어 이 문서의 절로 남기는 쪽이 나을 수 있다. (3) 조건부 검정력과 표본 크기 재추정. 중간분석 결과로 표본 크기를 바꾸는 적응 설계이고 부모는 이 문서 하나다. 각주가 없는 문서이므로 보강할 때 Pocock(1977)과 O'Brien-Fleming(1979)과 Lan-DeMets(1983)의 서지를 확인해 경계 상수와 소비 함수에 각주를 달 것.",
+      "createdAt": "2026-10-07T13:01:27.196Z",
+      "seq": 1859
+    },
+    {
+      "id": "8e3699c0",
+      "title": "36차 회차 새 문서 다섯의 문체 회귀 점검",
+      "priority": 11,
+      "note": "2026-10-07 36차 회차에 쓴 다섯을 다음 회차에 다시 읽는다. doob-decomposition(84줄), trust-region-policy-optimization(98줄), tate-cohomology(88줄), roth-theorem(80줄), group-sequential-design(84줄)이다.\n\n작성 중 검사에서 걸러 고친 것 넷. (1) doob-decomposition 개요의 '증감이 ~를 그대로 말한다' 를 의인화로 보아 '~와 같다' 로, '직관 절의 S_n^2-n 은' 을 문서 자신을 가리키는 메타 서술로 보아 '동전 걷기 S_n 에서는' 으로 고쳤다. (2) 같은 문서 직관 첫 문단의 '~기 때문이다' 를 '~이므로' 로 합쳤다. (3) trust-region-policy-optimization 활용 둘째의 '신뢰영역의 구실을 겹으로 둔다' 를 '보폭을 한 번 더 묶는다' 로 고쳤다. (4) group-sequential-design 의 '## 1 종 오류율의 유지' 를 4절 헤딩 grep 이 '지' 로 끝나는 것으로 잡아 '## 1 종 오류율의 통제' 로 바꿨다(오탐이지만 패턴을 피했다).\n\n읽을 때 볼 것 셋. (1) 직관 절이 네 문단인 문서가 셋이다(doob-decomposition trust-region-policy-optimization tate-cohomology). 4절의 '두 문단' 문구와 모범 예의 어긋남이 아직 독자 판단 대기(큐 08e59419)이므로, 판정이 내려지면 다섯 문서를 함께 손본다. (2) group-sequential-design 의 수치 넷(0.14, 2.413, 2%, 20%)이 K=5 등간격 가정의 표준값이다. 각주 셋을 Pocock Biometrika 64(1977) 191-199, O'Brien-Fleming Biometrics 35(1979) 549-556, Lan-DeMets Biometrika 70(1983) 659-663 으로 달았으나 쪽수까지 다시 대조할 것. (3) roth-theorem 성질 절의 'Siegel 보조정리' 와 'Roth 보조정리' 는 이름만 쓴다. 두 보조정리의 진술을 한 문장씩 넣을지 판단한다.\n\n검사는 전부 통과했다. 수식 여섯, 금지 매크로, 문장형 헤딩, 비유, 금지 표현, 열린 문제 절, 두문자어 첫 등장, 키릴·그리스 혼입, 수식 안 글자 연산자를 다섯 문서에 각각 돌렸다.",
+      "createdAt": "2026-10-07T13:04:46.909Z",
+      "seq": 1861
+    },
+    {
       "id": "2d5c4e17",
       "title": "무한 범주와 호모토피 이론",
       "priority": 10,
@@ -1284,22 +1356,6 @@
       "seq": 1018
     },
     {
-      "id": "f6e1c1d7",
-      "title": "군축차 설계와 알파 소비 함수",
-      "priority": 10,
-      "note": "sequential-probability-ratio-test 활용 첫째 항목. 정해진 시점에만 중간분석하는 설계, O'Brien-Fleming 과 Pocock 경계, 알파 소비 함수, hypothesis-testing 과 sequential-probability-ratio-test 가 부모. #statistics",
-      "createdAt": "2026-09-23T20:40:18.977Z",
-      "seq": 1033
-    },
-    {
-      "id": "ef838fad",
-      "title": "Doob 분해와 supermartingale",
-      "priority": 10,
-      "note": "martingales 아래. 예측가능 증가과정으로의 분해, Snell 포락의 분해와 optimal-stopping 의 최적성 증명이 쓰는 도구, Doob-Meyer 로의 연속시간 확장. #probability",
-      "createdAt": "2026-09-23T20:40:19.132Z",
-      "seq": 1034
-    },
-    {
       "id": "530f0750",
       "title": "미국형 옵션과 자유경계 문제",
       "priority": 10,
@@ -1308,44 +1364,12 @@
       "seq": 1035
     },
     {
-      "id": "ea24144a",
-      "title": "Tate 코호몰로지와 Herbrand 몫",
-      "priority": 10,
-      "note": "group-cohomology 순환군 주기성 절이 부른다. 완전군의 norm 사상으로 음의 차수까지 잇기, 주기성, Herbrand 몫의 곱셈성, class-field-theory 의 지표 계산이 쓰는 도구. 부모는 group-cohomology. #group_theory #number_theory",
-      "createdAt": "2026-09-23T20:43:35.685Z",
-      "seq": 1036
-    },
-    {
-      "id": "83d62260",
-      "title": "신뢰영역 정책 최적화와 근접 정책 최적화",
-      "priority": 10,
-      "note": "policy-gradient 활용 넷째 항목. 대리 목적의 하한, KL 제약과 잘라내기, 단조 개선 보장. 부모는 policy-gradient. #machine_learning #optimization",
-      "createdAt": "2026-09-23T20:45:55.723Z",
-      "seq": 1038
-    },
-    {
       "id": "fbed365b",
       "title": "Kiefer-Wolfowitz 절차와 영차 최적화",
       "priority": 10,
       "note": "stochastic-approximation 정의 둘째 절이 세 줄뿐이다. 유한차분 기울기 추정, SPSA 의 동시 섭동, 차분폭과 보폭의 동시 일정, 수렴률이 1차 방법보다 느린 이유. 부모는 stochastic-approximation. #optimization #statistics",
       "createdAt": "2026-09-23T20:47:57.070Z",
       "seq": 1041
-    },
-    {
-      "id": "72660dd8",
-      "title": "S-단위 방정식",
-      "priority": 10,
-      "note": "siegel-integral-points 의 증명 둘째 길과 thue-equation 의 활용 첫째가 모두 이 방정식을 이름만 쓰고 지나간다. 부모 후보는 siegel-integral-points 와 baker-theorem. 내용: u+v=1 의 S-단위해, Evertse 와 Gyory 의 개수 상한, Baker 하한이 주는 유효 상한, Thue 방정식과 정수점 문제로의 환원, 다항식의 근에 대한 응용",
-      "createdAt": "2026-09-24T00:52:15.102Z",
-      "seq": 1062
-    },
-    {
-      "id": "87a658aa",
-      "title": "Roth 정리",
-      "priority": 10,
-      "note": "siegel-integral-points 의 증명 첫째 길이 이 정리를 쓰고 thue-equation 이 근사 정리를 이름으로만 쓴다. diophantine-approximation 에서 뗄지 먼저 볼 것(2026-09-23 회차 note 가 남긴 판정 대상이다). 부모 후보는 diophantine-approximation. 내용: 대수적 수의 유리 근사 지수가 2+epsilon 을 넘지 못함, Liouville 과 Thue-Siegel-Dyson 의 개선 열, 증명이 유효하지 않은 이유, Schmidt 부분공간 정리로의 일반화",
-      "createdAt": "2026-09-24T00:52:15.216Z",
-      "seq": 1063
     },
     {
       "id": "8fd1250b",
@@ -1458,14 +1482,6 @@
       "note": "linear_algebra/algebra. 2026-09-25 둘째 회차에 grassmannian 을 쓰며 드러났다. borel-weil-bott 의 제목이 'Borel-Weil-Bott 정리와 깃발다양체' 인데 깃발다양체는 정리가 사는 공간이지 정리 자체가 아니다. 11차 note 의 판정 기준('뒷말이 정리 이름이면 둔다')과 반대 방향이라 따로 판정해야 한다. 볼 것: borel-weil-bott 본문에서 깃발다양체의 정의와 성질이 차지하는 분량이 독립 문서가 될 만한지, 그렇다면 grassmannian 과 flag-variety 사이에 선수관계를 어느 방향으로 그을지(Grassmann 다양체는 극대 포물형 P 에 대한 GL_n/P 이고 완전 깃발다양체는 Borel B 에 대한 GL_n/B 이므로 둘은 형제이지 조상-후손이 아니다. 공통 부모로 grassmannian 을 두는 것이 맞는지 재야 한다). schubert-calculus 의 부모가 지금 셋(grassmannian, borel-weil-bott, schur-polynomials)이라 5절의 '4 개 이상이면 조상인 것을 뺀다' 에 가까워진 점도 함께 볼 것",
       "createdAt": "2026-09-25T12:51:04.527Z",
       "seq": 1176
-    },
-    {
-      "id": "f75685c7",
-      "title": "근접 경사법과 근접 연산자",
-      "priority": 10,
-      "note": "최적화 분야. 2026-09-26 회차에 nesterov-acceleration 을 쓰면서 그 문서 103 줄(활용 절 '복합 목적함수의 근접 가속')이 근접 연산자와 근접 걸음을 정의 없이 이름으로만 쓴다. FISTA 의 걸음이 그것이다. 저장소에 proximal 이나 근접 이름의 문서가 없고 convexity 문서가 근접 연산자를 정의하는지 먼저 확인할 것. 부모 후보는 convexity(근접 연산자의 정의와 유일성이 강볼록성에서 나온다) 하나이고, nesterov-acceleration 을 부모로 둘지는 간선 방향을 먼저 정할 것(근접 걸음 자체는 가속과 독립이고 가속이 그것을 쓰므로 근접 경사법이 가속의 부모가 아니라 형제일 가능성이 크다). 다룰 것: 근접 연산자의 정의와 firm nonexpansiveness, 근접 경사법(ISTA)의 O(1/k) 수렴, 연성 문턱 연산자가 l1 노름의 근접 연산자라는 계산, FISTA 와의 관계. 이 문서를 쓰면 최적화 개관의 반복 알고리즘 갈래에 한 줄을 더할 것",
-      "createdAt": "2026-09-26T00:43:22.957Z",
-      "seq": 1209
     },
     {
       "id": "04f70d38",
@@ -1596,14 +1612,6 @@
       "seq": 1486
     },
     {
-      "id": "ad12f200",
-      "title": "Golay 부호",
-      "priority": 10,
-      "note": "조합론/부호론. umbral-moonshine 과 niemeier-lattices 본문에서 Golay 부호의 자기동형군이 M_24 라는 사실을 쓰는데 문서가 없어 링크 없이 이름만 썼다. 부모는 niemeier-lattices 가 아니라 error-correcting-codes 쪽이 맞고, mathieu-groups 와 niemeier-lattices 가 자식 후보다. 이진 Golay 부호 [24,12,8] 의 구성(사차잉여, Leech 격자와의 관계)과 완전부호성을 담는다.",
-      "createdAt": "2026-10-01T04:42:24.214Z",
-      "seq": 1500
-    },
-    {
       "id": "2cd155ef",
       "title": "국소콤팩트군의 몫과 격자",
       "priority": 10,
@@ -1642,14 +1650,6 @@
       "note": "27차 ergodic-theorem 의 성질 절 Birkhoff 정리 증명 요지가 극대 에르고딕 부등식의 진술과 상극한 하극한 논증을 두 문단으로 담았다. 4절은 증명이 두 문단을 넘으면 별도 문서 후보라고 하고 현재가 정확히 두 문단이라 지금은 그대로 두었다. Hardy-Littlewood 극대함수 문서가 있으면 그 쪽의 특수 사례로 묶는 것이 나을 수 있으므로 maximal-function 류 문서가 생기면 다시 본다.",
       "createdAt": "2026-10-03T12:45:07.067Z",
       "seq": 1564
-    },
-    {
-      "id": "85b60d5a",
-      "title": "큰 기수",
-      "priority": 10,
-      "note": "신규 주제. 분야는 집합론(#set_theory #logic #foundations)이고 부모는 ordinals 와 constructible-universe 다. foundations-overview 의 집합론 갈래에 넣는다. constructible-universe 63-69줄 '큰 기수와의 충돌' 절이 측도 가능 기수, 기본 매장, 임계점을 정의하고 Scott 정리를 진술하므로 그 자리가 이 문서의 씨앗이다(2026-09-22 둘째 회차에 그 절의 용어를 다 풀어 두었다). 다룰 것: 도달 불가능 기수(axiom-of-choice 86 이 Solovay 모형에서 언급한다), Mahlo, 약콤팩트, 측도 가능, 강기수, 초콤팩트의 사다리와 무모순성 강도의 선형순서, 각 층이 주는 내부 모형, Scott 정리가 왜 V=L 과 충돌하는지. 이미 큰 기수를 언급하는 문서: constructible-universe, axiom-of-choice 86, continuum-hypothesis, cardinal-characteristics, martins-axiom. 쓰고 나면 이들 본문의 첫 언급에 링크한다 / 중복 항목 통합(27차): 같은 작업을 가리키는 두 항목(99f25064, cb3e732b)을 하나로 합쳤다. 다른 쪽 메모는 다음이다. 2026-09-22 둘째 회차의 constructible-universe 작업이 남긴 후속이고 2026-09-23 회차에도 쓰지 못했다. 분야는 집합론(#set_theory #logic #foundations), 부모는 ordinals 와 constructible-universe 다. 재료는 이미 constructible-universe 에 있다: 67줄 Scott 정리 대목이 측도 가능 기수, 기본 매장(모든 논리식의 참을 보존하는 사상), 임계점(j(alpha)!=alpha 인 가장 작은 서수)을 정의해 두었고 63줄에 '큰 기수와의 충돌' 절이 있다. 그 정의들이 새 문서의 정의 절이 되고, Scott 정리(측도 가능 기수가 있으면 V!=L)가 성질 절의 첫 정리가 된다. 직관 절은 4절 설명 순서대로 '도달 불가능 기수' 에서 시작할 것(ZFC 로 존재를 증명할 수 없는 기수가 왜 필요한지를 계층 V_alpha 의 높이로 보인다). 문서를 만들면 foundations-overview 의 갈래에 한 줄을 더하고 constructible-universe 의 더 알아보기에 넣는다",
-      "createdAt": "2026-10-03T13:05:16.041Z",
-      "seq": 1573
     },
     {
       "id": "9e2cd37d",
@@ -1698,14 +1698,6 @@
       "note": "28차에 interior-point-method 를 만들었다(부모 linear-programming, lagrange-duality, 110줄, 최적화 개관 '선형·반정부호 계획법' 갈래의 Lovasz 세타 함수 다음, 커밋 9de1ad4). 담은 것: 경계에 붙은 걸음이 짧아져 막히는 직관, 로그 장벽과 중심 경로의 정의, 장벽법, 쌍대 간격 m/t 의 증명 요지, 자기일치 장벽과 O(sqrt m log(1/eps)) 반복 한계, 원시-쌍대 형태, 단체법과의 차이. semidefinite-programming 을 부모로 두지 않았다. 5절 기준으로 내점법이 SDP 의 특수 사례나 부분이 아니고 반대로 SDP 를 푸는 도구이므로 방향이 어긋나며, check-cycle 은 통과하지만 부모가 셋이 된다. 대신 활용 절 둘째 항목이 semidefinite-programming 으로 본문 링크를 건다. 후속 후보 셋. (a) 자기일치 장벽 자체. Nesterov-Nemirovskii 이론을 담는 문서이고 부모는 interior-point-method 와 convexity. 분량이 되는지 먼저 볼 것. (b) 단체법. 지금 linear-programming 성질 절이 꼭짓점 최적성과 Klee-Minty 를 담고 있어 8절 기준으로 겹치는지 볼 것. (c) 정수계획법과 절단평면(큐 0ad2ff63). interior-point-method 에서 정의 없이 쓴 용어: 교차 단계, 이차 원뿔, 지수 원뿔, 지지벡터기계, Cholesky 분해 없음.",
       "createdAt": "2026-10-03T17:04:59.410Z",
       "seq": 1590
-    },
-    {
-      "id": "d14f114e",
-      "title": "세포대수",
-      "priority": 10,
-      "note": "분야: 대수(#algebra #ring_theory). 부모 후보는 partition-algebras 또는 brauer-algebras 다. Graham-Lehrer 의 cellular algebra 로, 세포 기저와 반대합을 가진 대수의 틀이고 Brauer 대수, Temperley-Lieb 대수, 분할 대수, Hecke 대수가 모두 세포대수다. 비반단순한 매개변수에서도 기약표현을 쌍선형형식의 근기로 분류한다. brauer-algebras 각주 1 이 Graham-Lehrer, Invent. Math. 123 (1996) 을 인용하지만 docs 에 문서가 없다. 여러 도형 대수의 공통 틀이므로 그 축의 상위 문서로 들어간다.",
-      "createdAt": "2026-10-03T20:47:21.996Z",
-      "seq": 1595
     },
     {
       "id": "53a5fb93",
@@ -2202,6 +2194,14 @@
       "note": "2026-10-07 35차 회차에 generalized-linear-models(일반화선형모형, 123줄, 커밋 e0a08d6)를 새로 썼다. 부모는 exponential-families 와 linear-regression 둘이고 리프다. exponential-families 는 이 간선으로 리프에서 벗어났다. statistics-overview 의 '모형' 갈래에 선형회귀 다음으로 넣었다. 자식 후보 셋. (1) 소프트맥스 회귀와 교차엔트로피 손실. 활용 절 셋째가 다항분포의 정준연결이 로그 비율이고 그 역이 소프트맥스라고 적는데 저장소에 소프트맥스 문서가 없다. 신경망 출력층과 이어지므로 machine_learning 쪽 부모도 후보다. (2) 준가능도와 과대산포. 분산함수만 지정하고 분포를 지정하지 않는 추정으로, 분산함수 절의 산포모수 phi 를 고정하지 않는 확장이다. (3) 벌점 가능도. 추정값의 존재 절이 완전분리에서 최대점이 유한한 곳에 없다고 적고 벌점과 노름 제한을 해법으로 든다. regularization 쪽 문서가 있는지 먼저 확인할 것.",
       "createdAt": "2026-10-07T08:54:15.426Z",
       "seq": 1848
+    },
+    {
+      "id": "530d3fe5",
+      "title": "Fisher 정보행렬",
+      "priority": 10,
+      "note": "통계·기계학습 분야. 36차 회차에 trust-region-policy-optimization 을 쓰면서 자연 경사 절이 Fisher 정보행렬을 정의 없이 썼다. 저장소에 독립 문서가 없고 maximum-likelihood 의 '## 점수함수와 Fisher 정보' 절, exponential-families 125줄, kl-divergence 110줄, bayesian-inference 132줄이 각각 한두 줄로 쓰고 지나간다. 부모 후보는 maximum-likelihood(점수함수의 분산으로 정의) 하나이고 kl-divergence 를 부모로 둘지는 간선 방향을 먼저 정할 것(KL 의 2차 근사가 Fisher 라는 관계는 Fisher 쪽이 자식에 가깝다). 다룰 것: 점수함수의 공분산과 정보 등식, Cramer-Rao 하한, 재모수화 아래의 변환 규칙, KL divergence 의 2차 근사, 자연 경사와 Fisher scoring. 쓰면 statistics 개관 갈래에 한 줄 더할 것",
+      "createdAt": "2026-10-07T12:46:34.682Z",
+      "seq": 1854
     },
     {
       "id": "dfb3e493",
