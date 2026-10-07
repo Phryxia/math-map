@@ -54,7 +54,7 @@ $$
 
 ## honeycomb
 
-honeycomb 은 평면 위의 선분과 반직선으로 이루어진 [그래프](graphs.md)로, 모든 변이 세 방향 중 하나이고 각 꼭짓점에서 만나는 세 변의 방향 벡터 합이 $0$ 이다. 세 방향의 반직선 좌표가 $\lambda,\mu,\nu$ 를 준다. hive 의 오목 함수와 honeycomb 은 Legendre 변환으로 대응하며, 이 쌍대성 아래 hive 의 부등식이 honeycomb 의 변 길이가 음이 아니라는 조건이 된다.
+honeycomb 은 평면 위의 선분과 반직선으로 이루어진 [그래프](graphs.md)로, 모든 변이 세 방향 중 하나이고 각 꼭짓점에서 만나는 세 변의 방향 벡터 합이 $0$ 이다. 세 방향의 반직선 좌표가 $\lambda,\mu,\nu$ 를 준다. hive 의 오목 함수와 honeycomb 은 [볼록 공액](convex-conjugate.md)(Legendre 변환)으로 대응하며, 이 쌍대성 아래 hive 의 부등식이 honeycomb 의 변 길이가 음이 아니라는 조건이 된다.
 
 ## Horn 부등식
 

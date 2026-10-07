@@ -50,7 +50,7 @@ P(X \ge t) \thickspace\le\thickspace e^{-\lambda t} \thinspace E\big[e^{\lambda 
 P(X \ge t) \thickspace\le\thickspace \exp\Big(-\sup_{\lambda \gt 0} \big(\lambda t - \log E[e^{\lambda X}]\big)\Big).
 $$
 
-우변의 지수는 누율생성함수 $\psi(\lambda) = \log E[e^{\lambda X}]$ 의 Legendre 변환이며, 이 최적화를 수행하는 절차 전체를 Chernoff 기법이라 부른다. 독립합에서는 $\psi$ 가 항별로 더해지므로 계산이 항 단위로 분해된다.
+우변의 지수는 누율생성함수 $\psi(\lambda) = \log E[e^{\lambda X}]$ 의 [볼록 공액](convex-conjugate.md), 곧 Legendre 변환이며, 이 최적화를 수행하는 절차 전체를 Chernoff 기법이라 부른다. 독립합에서는 $\psi$ 가 항별로 더해지므로 계산이 항 단위로 분해된다.
 
 독립 Bernoulli 합 $S = \sum X_i$ 와 $\mu = E[S]$ 에 대한 고전적 결과는 다음과 같다.
 
