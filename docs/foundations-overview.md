@@ -87,6 +87,7 @@ graph TD
 - [기수](cardinality.md): 대각선 논법과 무한의 크기
 - [ZFC 공리계](zfc-axioms.md) → [서수](ordinals.md) → [선택공리](axiom-of-choice.md)
 - [선택공리](axiom-of-choice.md) → [Banach–Tarski 분해](banach-tarski.md): 자유 부분군의 역설적 분해를 구면으로 내린 결과, 조각은 비가측이다
+- [선택공리의 약한 형태](weak-choice-principles.md): 가산 선택, 종속 선택, 초필터 보조정리의 강도 차이와 각 세기로 증명되는 정리
 
 ## 독립성과 강제법
 
