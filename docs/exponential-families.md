@@ -198,6 +198,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [일반화선형모형](generalized-linear-models.md)
 
 #statistics #probability #information_theory

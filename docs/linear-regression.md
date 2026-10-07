@@ -190,6 +190,7 @@ $$
 
 ## 더 알아보기
 
+- [일반화선형모형](generalized-linear-models.md)
 - [편향-분산 분해](bias-variance-decomposition.md)
 - [교차검증](cross-validation.md)
 
