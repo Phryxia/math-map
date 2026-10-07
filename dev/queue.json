@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-07T17:09:45.537Z",
-  "nextSeq": 1872,
+  "savedAt": "2026-10-07T21:06:43.012Z",
+  "nextSeq": 1878,
   "items": [
     {
       "id": "44ca5d52",
@@ -1220,6 +1220,38 @@
       "seq": 1871
     },
     {
+      "id": "4057c18e",
+      "title": "대수군의 남은 후속 간선과 Chevalley 군 문서",
+      "priority": 11,
+      "note": "36차 회차(2026-10-07)에 algebraic-groups(대수군, 117줄)를 groups 와 algebraic-varieties 의 자식으로 썼다. 큐 56057905 의 처리 결과이고 그 항목은 지웠다. 자식은 borel-weil-bott 와 groups-of-finite-morley-rank 둘을 그었다. 본문 링크만 둔 것과 판단할 점: (1) differential-galois-theory 는 '## 선형 대수군' 절에서 Picard-Vessiot 확대의 자기동형군이 선형 대수군이라는 것을 쓰지만 부모가 이미 둘(differentially-closed-fields galois-theory)이고 5절 '부모를 도구로 한 번 쓰는가' 쪽에 가까워 간선을 넣지 않았다. 재판정 대상. (2) Chevalley 군 자체의 문서가 없다. finite-simple-groups 가 족을 이름으로만 들고 근계별 구성(Chevalley 기저, 근 부분군, 뒤틀린 유형)을 적지 않는다. 부모는 algebraic-groups 와 finite-simple-groups 가 후보다. (3) 깃발다양체(G/B)는 borel-weil-bott 정의 절에 굵은 글씨로 정의되어 있고 큐 f70953a1 '깃발다양체 문서 분리 판정' 이 같은 것을 가리킨다. 분리하면 algebraic-groups 와 borel-weil-bott 사이에 들어간다. (4) satake-isomorphism mv-cycles geometric-satake 가 환원적군과 쌍대군을 전제하므로 Langlands 쌍대군 문서의 자리도 후보다.",
+      "createdAt": "2026-10-07T20:49:20.502Z",
+      "seq": 1872
+    },
+    {
+      "id": "7afe1de8",
+      "title": "laver-forcing 의 남은 후속 간선과 나무 강제법 묶음",
+      "priority": 11,
+      "note": "36차 회차(2026-10-07)에 laver-forcing(Laver 강제법, 91줄)을 forcing 의 자식으로 썼다. 큐 c3b863cc 의 처리 결과이고 그 항목은 지웠다. borel-conjecture 를 자식으로 그었다(그 문서의 부모가 셋이 되었으나 5절 한도 안이다). 판단할 점: (1) strong-measure-zero 를 laver-forcing 의 부모로 둘지. 강 측도 영집합의 파괴 절이 그 정의를 쓰지만 나무 조건과 순수 결정은 그것 없이 읽히므로 이번에는 본문 링크도 넣지 않았다. (2) Sacks, Mathias, Silver 강제법 문서가 없다. 활용 절 셋째가 이름만 들고 분기 조건의 차이를 적지 않는다. 넷을 한 문서(나무 강제법)로 묶는 쪽과 각자 세우는 쪽 가운데 8절 기준으로 판정할 것. 부모는 laver-forcing 이나 forcing 이 후보다. (3) cardinal-characteristics 의 Cichon 도형 절이 Laver 모형을 예로 들 자리인지 그 문서를 보강하는 회차에 볼 것. 활용 절 둘째가 거꾸로 그 문서를 가리키고 있다. (4) Laver 성질과 Cohen 실수 절의 증명 요지가 두 문단 한도에 닿아 있다. 보존 정리의 상세는 Shelah VI 장 쪽이고 문서를 늘리기보다 그대로 둔다.",
+      "createdAt": "2026-10-07T20:56:36.952Z",
+      "seq": 1873
+    },
+    {
+      "id": "5f03283c",
+      "title": "등주부등식 문서와 brachistochrone 의 후속 간선",
+      "priority": 11,
+      "note": "36차 회차(2026-10-07)에 brachistochrone(최단강하선 문제, 94줄)을 calculus-of-variations 의 자식으로 썼다. 큐 76f34e55 '최단강하선과 등주부등식' 의 처리 결과이고 그 항목은 지웠다. 제목이 'A와 B' 꼴이 되지 않게 최단강하선만 담았으므로 등주부등식은 남은 몫이다. 판단할 점: (1) 등주부등식 문서를 세울지. calculus-of-variations 의 구속조건 절 마지막 문장이 '길이를 고정하고 둘러싼 넓이를 최대로 하는 곡선이 원' 임을 한 문장으로 들고 증명이 없다. 담을 것은 Lagrange 곱수로 푸는 변분 풀이, Wirtinger 부등식 또는 Fourier 급수 풀이, Steiner 의 대칭화, 고차원 Brunn-Minkowski 와의 관계다. 부모 후보는 calculus-of-variations 와 convexity 이고 후자는 Brunn-Minkowski 쪽을 담을 때만 쓴다. (2) 사이클로이드 자체의 문서는 세우지 않았다. brachistochrone 성질 절이 매개변수식과 구르는 원의 정의를 두 문장으로 담았고 등시성까지 같은 문서에 있으므로 8절 기준으로 나눌 분량이 아니다. (3) 현수선 문제도 calculus-of-variations 가 Beltrami 절에서 이름만 든다. 같은 꼴의 문서 후보이고 brachistochrone 과 나란히 그 문서의 자식이 된다.",
+      "createdAt": "2026-10-07T21:01:02.887Z",
+      "seq": 1874
+    },
+    {
+      "id": "b19cda11",
+      "title": "현수선의 후속 간선과 등주부등식 문서",
+      "priority": 11,
+      "note": "36차 회차(2026-10-07)에 catenary(현수선, 93줄)를 calculos-of-variations 의 자식으로 썼다. 같은 회차의 brachistochrone 과 나란히 선다. 앞선 큐 항목 5f03283c 가 적은 '현수선 문제도 이름만 든다' 를 닫은 것이다. 남은 것: (1) 등주부등식 문서. 5f03283c 의 (1) 이 그대로 남았다. catenary 활용 절 셋째가 등주 문제를 같은 꼴로 가리키므로 그 문서가 생기면 세 문서가 calculus-of-variations 아래 한 묶음이 된다. 자식이 셋이 되면 5절 정렬만 하고 묶지 않는다. (2) 쌍곡함수 문서가 없다. catenary 가 cosh 와 sinh 를 정의 없이 쓰고 포물선과의 구별 절에서 Taylor 전개를 쓴다. elementary-functions 류 문서가 저장소에 있는지 먼저 확인할 것. 없으면 그 자리는 analysis-overview 의 미적분 갈래다. (3) 최소곡면과 Plateau 문제도 변분법의 고전 문제이고 저장소에 문서가 없다. 부모는 calculus-of-variations 와 differential-geometry 쪽 문서가 후보다.",
+      "createdAt": "2026-10-07T21:03:34.436Z",
+      "seq": 1875
+    },
+    {
       "id": "2d5c4e17",
       "title": "무한 범주와 호모토피 이론",
       "priority": 10,
@@ -1354,14 +1386,6 @@
       "note": "2026-09-21 회차에 open-mapping-theorem(열린 사상 정리)을 새로 썼다. 부모는 baire-category 와 banach-spaces 둘이고 지금은 리프다. 문서 구성: 개요(전사 유계 작용소가 열린 사상, 따름정리 둘), 직관(Y 완비가 Baire 로 폐포의 내부를 주고 X 완비가 폐포를 떼는 급수를 준다), 정의(열린 사상, 그래프와 닫힌 작용소), 성질(열린 사상 정리 Banach-Schauder, 유계 역작용소 정리, 닫힌 그래프 정리, c_00 반례), 활용(작용소 역의 존재, 비유계 작용소, 노름 비교, 닫힌 치역 정리). 함수해석 개관의 '작용소와 스펙트럼' 갈래 첫 줄과 지도 mermaid(BS --> OMT)에 넣었고 README 수치를 434/804 에서 435/806 으로 맞췄다. 같은 회차에 개관의 banach-spaces 설명 줄 표기 '열린사상 정리' 도 새 문서 제목에 맞춰 '열린 사상 정리' 로 띄웠다. 후속 간선 후보: (1) Hahn-Banach 정리 문서. 함수해석의 네 기본정리 가운데 유일하게 Baire 를 쓰지 않는 것이고 dual-space 가 부모로 더 자연스러우니 부모 판정을 먼저 할 것. (2) 닫힌 치역 정리. 활용 절 마지막 항목이 부르는 자리이고 fredholm-operators 와 dual-space 사이에 놓인다. 지금은 fredholm-operators 본문이 이 정리를 언급만 한다. (3) Sobolev 공간. 활용 절 '노름의 비교' 항목이 부르지만 부모는 lp-spaces 와 distributions 쪽이 맞아 열린 사상 정리의 자식으로 긋기 전에 판정할 것. baire-category 쪽 남은 후보는 지난 note 가 적은 Polish 공간과 일반적 성질(generic property)이다. 균등유계성 원리는 baire-category 57-63줄에 증명까지 있어 따로 떼지 않는다(8절 분할 기준 미달)",
       "createdAt": "2026-09-21T04:52:32.181Z",
       "seq": 803
-    },
-    {
-      "id": "76f34e55",
-      "title": "최단강하선과 등주부등식",
-      "priority": 10,
-      "note": "analysis. 이번 회차에 쓴 calculus-of-variations 의 Beltrami 항등식 절과 구속조건 절이 두 고전 문제를 이름만 들고 풀이를 적지 않았다. 사이클로이드 해와 원 해를 계산까지 보이는 문서가 될 수 있다. 부모는 calculus-of-variations",
-      "createdAt": "2026-09-21T12:57:08.148Z",
-      "seq": 840
     },
     {
       "id": "9f19e6c7",
@@ -1524,14 +1548,6 @@
       "seq": 1130
     },
     {
-      "id": "c3b863cc",
-      "title": "Laver 강제법",
-      "priority": 10,
-      "note": "집합론. 부모는 forcing 하나다. borel-conjecture 성질 절 둘째가 Laver 강제법의 반복을 세 문장으로만 요약하고 있어 그 내용이 갈 자리가 필요하다. 담을 것: Laver 나무 조건과 일반적 실수, 가산지지 반복이 aleph_1 을 보존한다는 것, 강 측도 영집합을 없애는 성질이 반복에서 보존된다는 정리. 후속으로 borel-conjecture 와 간선을 그을지는 그때 판정할 것(borel-conjecture 의 부모가 이미 둘이므로 5절 부모 수 제한을 보고 정한다). 출처 Laver, Acta Math. 137 (1976)",
-      "createdAt": "2026-09-25T00:50:22.630Z",
-      "seq": 1131
-    },
-    {
       "id": "f70953a1",
       "title": "깃발다양체 문서 분리 판정",
       "priority": 10,
@@ -1690,14 +1706,6 @@
       "note": "26차에 확인했고 이 항목의 본체는 이미 해결되어 있다. probability-overview 에 '## 무작위 행렬과 점과정' 갈래가 있고 wigner-semicircle, marchenko-pastur, determinantal-point-process, tracy-widom 네 문서를 선수관계 순으로 담는다. 첫 태그가 probability 인 것이 이 넷이므로 4.5절의 수록 기준도 만족한다. airy-functions(#analysis)와 fredholm-determinant(#functional_analysis)는 다른 개관이 거두므로 이 갈래에 넣지 않는 것이 맞다. random-matrices 개관을 따로 세우지 않는다. 4.5절이 하위 태그마다 개관을 세우면 두 개관이 같은 문서를 거두려 하고 README 의 갈래 목록이 태그의 나열이 된다고 금지하며, 무작위 행렬은 probability 아래의 갈래이고 독립 분야 태그가 없다. 남은 것은 littlewood-offord 가 가리키는 '무작위 행렬의 특이성 확률' 문서인데, 부모로 삼을 무작위 행렬 일반 문서가 없고 wigner-semicircle 이 그 자리를 상당히 메운다. 쓰려면 부모를 wigner-semicircle 과 littlewood-offord 둘로 하는 안을 먼저 5절로 판정할 것.",
       "createdAt": "2026-10-03T04:52:32.585Z",
       "seq": 1551
-    },
-    {
-      "id": "56057905",
-      "title": "대수군 문서",
-      "priority": 10,
-      "note": "분야는 algebra(#algebra #group_theory #algebraic_geometry 후보). 27차에 cherlin-zilber-conjecture 를 쓰면서 '대수적으로 닫힌 체 위의 단순 대수군' 과 'Chevalley 군' 을 본문에서 링크 없이 이름으로만 썼다(0절). docs 에 algebraic-groups 가 없어서다. 담을 것: 아핀 대수군의 정의, 토러스와 unipotent 부분군, Borel 부분군과 근계, 반단순 대수군의 분류. 부모 후보는 algebraic-varieties 와 groups. 이 문서가 생기면 groups-of-finite-morley-rank, cherlin-zilber-conjecture, bad-groups 가 본문에서 링크를 걸 수 있고, Zariski 차원과 Morley 위수의 대응을 설명하는 자리가 생긴다.",
-      "createdAt": "2026-10-03T08:44:57.531Z",
-      "seq": 1553
     },
     {
       "id": "77b219a1",
@@ -2202,6 +2210,22 @@
       "note": "통계·기계학습 분야. 36차 회차에 trust-region-policy-optimization 을 쓰면서 자연 경사 절이 Fisher 정보행렬을 정의 없이 썼다. 저장소에 독립 문서가 없고 maximum-likelihood 의 '## 점수함수와 Fisher 정보' 절, exponential-families 125줄, kl-divergence 110줄, bayesian-inference 132줄이 각각 한두 줄로 쓰고 지나간다. 부모 후보는 maximum-likelihood(점수함수의 분산으로 정의) 하나이고 kl-divergence 를 부모로 둘지는 간선 방향을 먼저 정할 것(KL 의 2차 근사가 Fisher 라는 관계는 Fisher 쪽이 자식에 가깝다). 다룰 것: 점수함수의 공분산과 정보 등식, Cramer-Rao 하한, 재모수화 아래의 변환 규칙, KL divergence 의 2차 근사, 자연 경사와 Fisher scoring. 쓰면 statistics 개관 갈래에 한 줄 더할 것",
       "createdAt": "2026-10-07T12:46:34.682Z",
       "seq": 1854
+    },
+    {
+      "id": "5ce3d872",
+      "title": "Brunn-Minkowski 부등식 문서",
+      "priority": 10,
+      "note": "분야는 analysis(#analysis #measure_theory #combinatorics 후보). 36차 회차(2026-10-07)에 isoperimetric-inequality 를 쓰면서 고차원 절이 Brunn-Minkowski 부등식을 본문에서 링크 없이 이름으로만 썼다(0절). docs 에 brunn-minkowski 가 없어서다. 담을 것: |A+B|^{1/n} >= |A|^{1/n}+|B|^{1/n} 진술, Minkowski 합과 볼록성, 유도 상자 분해 증명, 고차원 등주부등식과 Prekopa-Leindler 로의 일반화, 가법적 조합론의 합집합 부등식과의 대비. 부모 후보는 convexity 와 measure 다. 이 문서가 생기면 isoperimetric-inequality 가 고차원 절에서 링크를 걸고 그 문서의 자식으로 설 수 있다. boolean-fourier 89 줄이 쓰는 Borell 의 등주부등식(Gauss 측도 쪽)도 같은 묶음의 후보다.",
+      "createdAt": "2026-10-07T21:06:24.577Z",
+      "seq": 1876
+    },
+    {
+      "id": "5c017ee3",
+      "title": "쌍곡함수와 Wirtinger 부등식 문서",
+      "priority": 10,
+      "note": "분야는 analysis. 36차 회차(2026-10-07)에 catenary 가 cosh 와 sinh 를, isoperimetric-inequality 가 Wirtinger 부등식을 정의 없이 쓴다(0절, 이름만 썼다). 둘은 별개 항목이다. (1) 쌍곡함수: catenary 의 포물선과의 구별 절이 cosh 의 Taylor 전개를 쓰고, analysis-overview 의 미적분 갈래에 자리가 있다. 지수함수 쪽 문서가 저장소에 있는지 먼저 확인할 것. (2) Wirtinger 부등식: 평균 0 인 주기함수에서 L2 노름을 도함수의 L2 노름으로 누르는 부등식이고 Poincare 부등식의 1 차원 경우다. isoperimetric-inequality 의 Hurwitz 증명 절이 Fourier 계수의 n^2-n 소멸 조건으로 이것을 가리킨다. 부모 후보는 fourier-series 와 lp-spaces 이고 sobolev-spaces 쪽 Poincare 부등식과 겹치는지 8절로 먼저 볼 것.",
+      "createdAt": "2026-10-07T21:06:24.730Z",
+      "seq": 1877
     },
     {
       "id": "dfb3e493",
