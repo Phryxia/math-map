@@ -126,7 +126,7 @@ Fisher 정보는 $I(\eta) = \nabla^2 A(\eta) = \mathrm{Cov}(T)$ 이므로 점근
 
 ## Legendre 쌍대와 Bregman divergence
 
-$\nabla A$ 는 최소·정칙 지수족에서 자연모수공간의 내부를 평균모수공간의 내부로 보내는 전단사이고, 그 역이 볼록켤레
+$\nabla A$ 는 최소·정칙 지수족에서 자연모수공간의 내부를 평균모수공간의 내부로 보내는 전단사이고, 그 역이 [볼록 공액](convex-conjugate.md)
 
 $$
 A^{\ast}(\mu) = \sup_{\eta}\big(\eta^{\top}\mu - A(\eta)\big)
