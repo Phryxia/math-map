@@ -70,6 +70,7 @@ graph TD
 - [Q 학습](q-learning.md) — 전이확률을 모르고 표본 하나마다 시간차 오차로 갱신한다
 - [정책 경사](policy-gradient.md) — 가치함수를 거치지 않고 정책을 직접 미분한다. 점수함수 추정량이 전이확률을 지운다
 - [행위자–비평자](actor-critic.md) — 시간차 오차 하나로 정책과 가치를 함께 갱신한다
+- [신뢰영역 정책 최적화](trust-region-policy-optimization.md) — 보폭을 KL divergence 로 재는 제약 갱신. 잘라낸 대리 목적이 제약을 1차 계산으로 바꾼다
 - [다중 슬롯머신](multi-armed-bandits.md) — 상태가 하나뿐인 경우. 신뢰상한이 탐색과 활용을 한 식에 담는다
 - [최적 정지](optimal-stopping.md) — 행동이 멈춤과 계속 둘뿐인 경우. Snell 포락이 언제 멈출지를 정한다
 
