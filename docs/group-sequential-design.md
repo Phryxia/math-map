@@ -32,12 +32,12 @@ $\alpha^\ast:\lbrack 0,1\rbrack\to\lbrack 0,\alpha\rbrack$ 가 증가하고 $\al
 
 $$P_0\lbrace \exists j\le k:\thinspace\lvert Z_j\rvert\ge c_j\rbrace=\alpha^\ast(t_k)$$
 
-$c_1,\dots,c_{k-1}$ 이 정해진 뒤 $c_k$ 를 푸는 재귀이므로, 분석 횟수와 시점을 미리 정하지 않아도 된다.
+$c_1,\dots,c_{k-1}$ 이 정해진 뒤 $c_k$ 를 푸는 재귀이므로, 분석 횟수와 시점을 미리 정하지 않아도 된다[^3].
 
 ## 두 경계족
 
-- **Pocock 경계.** 모든 $k$ 에서 $c_k$ 가 같다. $K=5$ 에서 $c_k=2.413$ 이다.
-- **O'Brien–Fleming 경계.** $c_k=c/\sqrt{t_k}$ 다. 앞쪽 분석의 문턱이 매우 높고 마지막 분석의 문턱이 고정 표본 검정의 $1.96$ 에 가깝다.
+- **Pocock 경계.** 모든 $k$ 에서 $c_k$ 가 같다[^1]. $K=5$ 에서 $c_k=2.413$ 이다.
+- **O'Brien–Fleming 경계.** $c_k=c/\sqrt{t_k}$ 다[^2]. 앞쪽 분석의 문턱이 매우 높고 마지막 분석의 문턱이 고정 표본 검정의 $1.96$ 에 가깝다.
 
 # 성질
 
@@ -64,6 +64,12 @@ $Z_k\sqrt{t_k}$ 를 시각 $t_k$ 의 값으로 보면 귀무가설 아래에서 
 - **임상시험의 중간분석.** 효과가 분명하면 조기에 끝내 환자를 덜 노출시킨다. [순차확률비 검정](sequential-probability-ratio-test.md)의 활용 첫째 항목이 가리키는 설계가 이것이다.
 - **무용성 종료.** 효과가 없다는 쪽의 경계를 따로 두어 2 종 오류율을 배분하는 베타 소비 함수를 쓴다. 두 경계 사이에 통계량이 머무는 동안만 시험이 이어진다.
 - **온라인 실험.** 지표를 계속 들여다보는 A/B 시험에서 [가설검정](hypothesis-testing.md)의 유의수준이 무너지는 것을 막는다. 분석 시점을 유한 개로 정하는 쪽이 군축차 설계이고, 시점을 정하지 않는 쪽은 언제든 유효한 신뢰구간을 쓴다.
+
+[^1]: S. J. Pocock, "Group sequential methods in the design and analysis of clinical trials", *Biometrika* **64** (1977), 191–199.
+
+[^2]: P. C. O'Brien and T. R. Fleming, "A multiple testing procedure for clinical trials", *Biometrics* **35** (1979), 549–556.
+
+[^3]: K. K. G. Lan and D. L. DeMets, "Discrete sequential boundaries for clinical trials", *Biometrika* **70** (1983), 659–663. 알파 소비 함수로 경계를 정하는 방식을 준다.
 
 # 연관 문서
 
