@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-06T21:02:27.952Z",
-  "nextSeq": 1824,
+  "savedAt": "2026-10-07T01:00:44.854Z",
+  "nextSeq": 1835,
   "items": [
     {
       "id": "0490c28e",
@@ -346,6 +346,14 @@
       "note": "37차 판정. injective-modules 를 신설하며 derived-functors 의 선수지식에 단사가군을 넣자 부모가 넷(functors, tensor-products, projective-modules, injective-modules)이 되었다. 5절의 '4개 이상이면 그 중 다른 부모의 조상인 것을 뺀다' 를 적용해 projective-modules 를 뺐다. projective-modules -> injective-modules -> derived-functors 경로가 남으므로 조상관계는 유지되고, 대신 derived-functors:7 의 '사영가군이나 단사가군의 분해로 바꾸고' 에 사영가군 본문 링크를 달았다. projective-modules 의 더 알아보기는 derived-functors 자리에 injective-modules 가 들어가 둘(injective-modules, algebraic-k-theory)이 되었다. abstract-algebra-overview 의 지도 mermaid 에는 사영가군-유도함자 간선이 없어 고칠 것이 없었다(큐 메모 cbb9382f 의 점검)",
       "createdAt": "2026-10-06T20:54:40.999Z",
       "seq": 1819
+    },
+    {
+      "id": "7b3e9b30",
+      "title": "접다발의 접공간 절과 manifolds 의 중복 판정",
+      "priority": 20,
+      "note": "37차 회차 판정 기록. tangent-bundle 을 새로 쓰면서 manifolds.md:51-66 의 '## 접공간' 절과 중복이 생길 수 있어 분담을 정했다. manifolds 는 derivation 구성 하나와 좌표 기저만 적고, tangent-bundle 이 세 구성(derivation, 곡선류, 좌표류)의 동일성과 다발 구조(전이함수, 2n 차원 매끄러운 구조, 미분사상, 여접다발)를 담는다. manifolds 의 접공간 절은 그대로 두었다. 두 문서를 다음에 손댈 때 manifolds 쪽을 두 문장과 링크로 줄일지 판단한다. 지금 줄이면 manifolds 를 단독으로 읽는 독자가 접공간 정의를 잃는다.",
+      "createdAt": "2026-10-07T00:51:49.108Z",
+      "seq": 1830
     },
     {
       "id": "410fd79d",
@@ -1002,6 +1010,62 @@
       "note": "37차에 쓴 문서 넷(minimal-polynomial 129줄, riemann-stieltjes-integral 134줄, injective-modules 104줄, hurwitz-theorem 83줄)에 4절 검사 여섯과 문체 grep, 비유 grep, 두문자어, 혼동문자 검사(큐 메모 44ca5als 의 좁힌 목록), 글자 연산자 검사(큐 메모 5b750f72)를 전부 돌렸다. 결과는 한 건이다. riemann-stieltjes-integral:110 의 '짝지어진다' 가 피동이어서 '그 측도의 Jordan 분해는 ... 분해와 같다' 로 고치고 문장을 둘로 나눴다(커밋 별도). 나머지는 모두 0 건이고 각주 정의와 참조 수도 네 문서에서 일치했다. 두문자어 보고는 셋인데 PID(풀어 썼다), AP(수식 안 P^{-1}AP), VII(각주 장 번호)로 모두 예외다. 다음 회차에 같은 묶음을 돌릴 때 '어진다' 패턴이 자동사도 잡는 것(큐 메모 49d7bd05)을 염두에 둘 것",
       "createdAt": "2026-10-06T21:01:36.012Z",
       "seq": 1823
+    },
+    {
+      "id": "95b2d059",
+      "title": "borsuk-ulam 의 후속 간선",
+      "priority": 11,
+      "note": "37차 회차(2026-10-07)에 borsuk-ulam 을 brouwer-fixed-point 의 자식으로 만들었고 자식이 없어 '아직 연결한 문서가 없다' 로 두었다. 후속 간선 후보 셋. (1) Tucker 보조정리를 별도 문서로 만들면 borsuk-ulam 의 자식이다(성질 절이 아니라 활용 절에 진술만 있다). sperner-lemma 가 brouwer-fixed-point 의 자식인 것과 같은 자리다. (2) 목걸이 분할 정리(Alon 1987)를 조합론 문서로 만들면 자식 후보다. (3) Kneser 추측 자체를 graph-coloring 아래 문서로 세우면 borsuk-ulam 과 graph-coloring 의 공동 자식이 되는데 부모 둘 다 필요한지 판단이 필요하다. 지금은 erdos-ko-rado:65 의 본문 링크로만 이어 두었다.",
+      "createdAt": "2026-10-07T00:42:29.775Z",
+      "seq": 1825
+    },
+    {
+      "id": "2604cb63",
+      "title": "공액기울기법을 별도 문서로 세우지 않은 판정",
+      "priority": 11,
+      "note": "37차 회차(2026-10-07) 판정. pop 으로 꺼낼 작업이 아니다. 36차 큐 항목 ccef6456 이 '공액기울기법' 문서 신설을 요청하며 담을 내용으로 Krylov 부분공간과 A 공액 방향, 세 항 점화식, n 번 안의 유한 종료, 조건수 제곱근 수렴률, 전조건화, 비선형 판을 들었다. 확인해 보니 그 내용이 이미 krylov-subspace-methods(130줄)에 있다. '## 근사해를 고르는 조건' 절이 Galerkin 조건으로 CG 를 정의하고 삼항 점화식을 적으며, '## 공액기울기법의 수렴' 과 '## 유한 종료' 두 절이 수렴률과 n 번 종료를 담는다. 전조건화는 preconditioning 문서가 '## 전처리된 공액기울기법' 절로 의사코드까지 담았고 거기서 이미 krylov-subspace-methods 로 링크한다. 별도 문서를 세우면 그 세 문서와 중복이 생긴다. 남은 빈자리는 비선형 판(Fletcher-Reeves, Polak-Ribiere)뿐이고, 이것은 gradient-descent 나 krylov-subspace-methods 의 한 절로 들어가는 분량이다. 이번 회차에는 quasi-newton-methods:106 의 '공액기울기법' 을 krylov-subspace-methods 로 링크해 0절의 링크 없는 이름을 지웠다.",
+      "createdAt": "2026-10-07T00:43:19.734Z",
+      "seq": 1826
+    },
+    {
+      "id": "1fe3a870",
+      "title": "mayer-vietoris 의 후속 간선",
+      "priority": 11,
+      "note": "37차 회차(2026-10-07)에 mayer-vietoris 를 homology 와 exact-sequences 의 자식으로 만들었고 자식이 없어 '아직 연결한 문서가 없다' 로 두었다. 후속 간선 후보 셋. (1) Seifert-van Kampen 정리를 문서로 만들면 Mayer-Vietoris 의 기본군 판본이므로 자식 후보다. docs 에 van-kampen 류 파일이 없다. (2) 상대 호몰로지와 쌍의 긴 완전열을 문서로 세우면 형제 또는 부모 관계를 판정해야 한다. 지금 homology 문서에 상대 호몰로지 절이 없다. (3) 스펙트럼 열(spectral-sequences)이 저장소에 있으면 Mayer-Vietoris 를 특수 사례로 거느리므로 자식 후보인데, 방향이 반대일 수도 있어 판정이 필요하다. 본문 링크는 이번 회차에 euler-characteristic, de-rham-cohomology, exact-sequences 셋에 걸었다.",
+      "createdAt": "2026-10-07T00:47:59.227Z",
+      "seq": 1827
+    },
+    {
+      "id": "73f01d48",
+      "title": "tangent-bundle 의 후속 간선과 접속 문서",
+      "priority": 11,
+      "note": "37차 회차(2026-10-07)에 tangent-bundle 을 vector-bundles 의 자식으로 만들었고 자식이 없어 '아직 연결한 문서가 없다' 로 두었다. 후속 간선 후보 셋. (1) 접속(connection) 문서가 저장소에 없다. tangent-bundle 의 '## 접다발의 접다발' 절이 수직 부분다발과 수평 분해를 적으며 접속을 링크 없이 이름만 썼다(0절). vector-bundles 와 curvature 도 접속을 언급한다. 만들면 tangent-bundle 또는 vector-bundles 의 자식이고 riemannian-metrics, curvature, geodesics 의 부모 후보다. 어디에 붙일지 판정이 필요하다. (2) 여접다발의 표준 심플렉틱 구조는 큐 7b718724 에 따로 있고, 만들면 tangent-bundle 과 symplectic-manifolds 의 공동 자식 후보다. (3) Whitney 매장 정리(큐 c503ef57)는 접다발의 rank 와 Sard 정리를 쓰므로 tangent-bundle 의 자식 후보다. 본문 링크는 이번 회차에 vector-fields 와 vector-bundles 에 걸었다.",
+      "createdAt": "2026-10-07T00:51:48.963Z",
+      "seq": 1829
+    },
+    {
+      "id": "8107b31f",
+      "title": "whitney-embedding 의 후속 간선",
+      "priority": 11,
+      "note": "37차 회차(2026-10-07)에 whitney-embedding 을 partitions-of-unity 와 tangent-bundle 의 자식으로 만들었고 자식이 없어 '아직 연결한 문서가 없다' 로 두었다. 후속 간선 후보 둘. (1) Nash 등거리 매장 정리를 문서로 만들면 whitney-embedding 의 자식이다. 활용 절의 'Riemann 계량의 존재' 항목이 Nash 를 링크 없이 이름만 썼다. (2) 횡단성 정리(transversality)를 문서로 만들면 whitney-embedding 과 Sard 정리 문서(큐에 있음)의 공동 자식 후보다. Whitney 트릭이 그 언어로 적힌다. 본문 링크는 이번 회차에 partitions-of-unity 의 활용 절에 걸었다.",
+      "createdAt": "2026-10-07T00:54:57.277Z",
+      "seq": 1832
+    },
+    {
+      "id": "31ca76cc",
+      "title": "mobius-inversion 의 후속 간선과 제목 판정",
+      "priority": 11,
+      "note": "37차 회차(2026-10-07) 기록. 큐 항목 0338fe13 의 제목은 'Mobius 반전과 산술함수의 환' 이었으나 4절 제목 규칙의 'A와 B' 꼴이므로 제목을 'Möbius 반전 공식' 하나로 좁히고 파일명을 mobius-inversion 으로 정했다. 산술함수의 환은 정의 절의 한 소절로 담았다. 부모는 note 가 제안한 dirichlet-series 가 아니라 primes 와 inclusion-exclusion 둘이다. Möbius 반전은 Dirichlet 급수 없이 이해되므로 dirichlet-series 를 부모로 두면 5절의 '부모를 읽지 않으면 자식을 이해할 수 없어야 한다' 에 어긋난다. dirichlet-series 와는 본문 링크로만 이었다(양쪽). 후속 간선 후보 둘. (1) 원분다양식(cyclotomic-polynomials) 문서가 저장소에 없다. 만들면 mobius-inversion 의 자식 후보이고 활용 절의 곱셈 꼴 반전에 링크를 건다. (2) 산술함수의 평균값과 Dirichlet 쌍곡선법을 문서로 세우면 자식 후보다. 또 primes 의 더 알아보기가 이 회차에 6 개가 되어 5절대로 H3 둘('대수적 구조', '산술함수와 분포')로 묶었다.",
+      "createdAt": "2026-10-07T00:58:48.408Z",
+      "seq": 1833
+    },
+    {
+      "id": "dcfd8c52",
+      "title": "37차(2026-10-07) 회귀 점검 전수 결과",
+      "priority": 11,
+      "note": "이 회차에 손댄 문서 21 개(새 문서 다섯 borsuk-ulam mayer-vietoris tangent-bundle whitney-embedding mobius-inversion 과 간선·본문 링크를 고친 열여섯)에 4절 검사 여섯과 문체 grep 을 전부 돌려 0 건을 확인했다. 돌린 것은 (1) 이스케이프 awk, (2) 태그로 읽히는 부등호 grep, (3) 링크로 읽히는 대괄호 grep, (4) 줄 끝 백슬래시 grep, (5) 이스케이프 안 된 밑줄 grep, (6) render-check, 그리고 문장형 헤딩 grep, 비유 금지 grep, operatorname 류 grep, 열린 문제 절 grep, 코드블록 언어 grep, 금지 표현 grep, 큐 메모 5b750f72 의 글자 연산자 검사, 큐 메모 44ca5d52 의 라틴 혼동 키릴·그리스 검사, 각주 참조와 정의의 짝이다. 링크 검사에서 README.md:11 의 [CLAUDE.md](CLAUDE.md) 가 한 건 보고되는데 대문자 파일명이라 패턴에 걸리는 오탐이고 정상 링크다. graph validate, cycles, render-check 전수, order-check, node --test(23 pass) 와 4.5절 개관 수록 매핑 검사, README 뿌리 diff 도 전부 통과했다.",
+      "createdAt": "2026-10-07T01:00:07.221Z",
+      "seq": 1834
     },
     {
       "id": "2d5c4e17",
@@ -1700,14 +1764,6 @@
       "seq": 1625
     },
     {
-      "id": "c503ef57",
-      "title": "Whitney 매장 정리",
-      "priority": 10,
-      "note": "미분기하. 부모는 partitions-of-unity 와 manifolds. partitions-of-unity 를 쓰면서 Whitney 매장을 활용 절에 넣지 못했다. n 차원 다양체가 R^{2n} 에 매장된다는 정리이고, 콤팩트의 경우 단위분할로 좌표 사상을 유한 개 묶어 매장을 만드는 증명이 단위분할의 전형적 응용이다. Sard 정리로 차원을 2n 까지 내리는 단계도 담는다",
-      "createdAt": "2026-10-04T04:50:57.912Z",
-      "seq": 1628
-    },
-    {
       "id": "e4128849",
       "title": "절대연속 함수와 미적분학의 기본정리",
       "priority": 10,
@@ -1836,28 +1892,12 @@
       "seq": 1680
     },
     {
-      "id": "968edba2",
-      "title": "Mayer-Vietoris 완전열",
-      "priority": 10,
-      "note": "위상. 부모 후보는 exact-sequences 와 homology. 두 열린집합의 호몰로지에서 합집합을 계산하는 긴 완전열. exact-sequences 활용 절에서 이름만 썼다.",
-      "createdAt": "2026-10-04T20:58:52.091Z",
-      "seq": 1681
-    },
-    {
       "id": "3da1b6ce",
       "title": "Lie 미분",
       "priority": 10,
       "note": "미분기하. 부모는 vector-fields. 흐름으로 끌어온 텐서장의 미분, Cartan 공식과 외미분의 관계. vector-fields 와 symplectic-manifolds 가 이름만 쓴다.",
       "createdAt": "2026-10-04T21:01:05.172Z",
       "seq": 1682
-    },
-    {
-      "id": "701801d2",
-      "title": "접다발",
-      "priority": 10,
-      "note": "미분기하. 부모 후보는 manifolds 와 vector-bundles. 접공간의 구성 세 가지(곡선류, 도함수, 좌표), 접다발의 매끄러운 구조, 여접다발. vector-fields 가 TM 을 정의 없이 쓴다.",
-      "createdAt": "2026-10-04T21:01:05.306Z",
-      "seq": 1683
     },
     {
       "id": "d3542cdb",
@@ -1988,14 +2028,6 @@
       "seq": 1768
     },
     {
-      "id": "0338fe13",
-      "title": "Mobius 반전과 산술함수의 환",
-      "priority": 10,
-      "note": "number_theory. dirichlet-series 의 'Dirichlet 합성곱' 절과 표준적인 예 표가 mu * 1 = delta 와 Mobius 반전을 한 줄로만 적는다. 산술함수 전체가 합성곱 아래 가환환을 이루고 곱셈적 함수가 그 안의 군을 이루는 것, 반전 공식의 증명, Dirichlet 급수와의 대응이 한 문서의 분량이다. 부모는 dirichlet-series",
-      "createdAt": "2026-10-06T04:58:30.902Z",
-      "seq": 1769
-    },
-    {
       "id": "54785f49",
       "title": "기댓값 최대화 알고리즘",
       "priority": 10,
@@ -2028,28 +2060,12 @@
       "seq": 1781
     },
     {
-      "id": "ccef6456",
-      "title": "공액기울기법",
-      "priority": 10,
-      "note": "최적화/선형대수(#optimization #linear_algebra #analysis). 36차에 quasi-newton-methods 를 newton-method 에서 분할하며 확인한 빈자리다. 그 문서의 '## 이차함수에서의 유한 종료' 절이 BFGS 의 방향이 공액기울기법의 방향과 같다고 적는데 저장소에 공액기울기 문서가 없어 링크 없이 이름만 썼다(0절). grep 으로 보면 conjugate-gradient 류 파일이 없다. 담을 내용은 Krylov 부분공간과 A 공액 방향, 세 항 점화식, n 번 안의 유한 종료, 조건수의 제곱근으로 가는 수렴률 상한, 전조건화, 비선형 판의 Fletcher-Reeves 와 Polak-Ribiere 다. 부모 후보는 gradient-descent 와 eigenvalues 또는 linear-systems 류 문서이고, 만들면 quasi-newton-methods 와 nesterov-acceleration 의 언급에 링크를 건다.",
-      "createdAt": "2026-10-06T08:55:37.407Z",
-      "seq": 1785
-    },
-    {
       "id": "de527263",
       "title": "선탐색과 Wolfe 조건",
       "priority": 10,
       "note": "최적화(#optimization #analysis). 36차에 quasi-newton-methods 를 쓰며 확인했다. 그 문서의 BFGS 걸음 정의와 '## 양정부호의 보존' 절이 '선탐색이 Wolfe 조건을 만족하면 y_k^T s_k > 0 이 자동으로 따라온다' 를 쓰는데 Wolfe 조건 자체의 진술이 어디에도 없다. 담을 내용은 Armijo 충분감소 조건, 곡률 조건, 강 Wolfe, 되추적 선탐색의 절차와 종료 보장, Zoutendijk 조건과 전역 수렴 정리, 신뢰영역 방법과의 대비다. 부모 후보는 gradient-descent 다. 만들면 quasi-newton-methods, newton-method, gradient-descent 의 선탐색 언급에 링크를 건다.",
       "createdAt": "2026-10-06T08:55:37.533Z",
       "seq": 1786
-    },
-    {
-      "id": "043dde2a",
-      "title": "Borsuk–Ulam 정리",
-      "priority": 10,
-      "note": "위상(#algebraic_topology #combinatorics #graph_theory). 36차에 큐 3de75166(erdos-ko-rado 의 후속 간선)을 보고 확인했다. 그 note 가 Kneser 그래프 색수의 Lovasz 위상적 증명을 'Borsuk-Ulam 문서가 생기면 이을 것' 으로 미뤄 두었는데 지금도 borsuk/kneser 류 파일이 없다. 담을 내용은 정리의 진술(구에서 유클리드 공간으로 가는 연속함수에 대척점 쌍이 같은 값을 갖는다), 대척점 쌍 없는 사상과 차수 논증으로 가는 증명 요지, Brouwer 고정점 정리와의 동치, Lusternik-Schnirelmann 덮개 정리, ham sandwich 정리, Kneser 추측의 Lovasz 증명과 Greene 의 짧은 증명이다. 부모 후보는 homotopy-groups 또는 brouwer-fixed-point 류 문서다. 만들면 erdos-ko-rado 의 Kneser 그래프 언급에 링크를 걸고 그 문서의 자식으로 둘지 판정한다.",
-      "createdAt": "2026-10-06T09:01:13.921Z",
-      "seq": 1789
     },
     {
       "id": "35a2cabc",
@@ -2130,6 +2146,30 @@
       "note": "복소해석. 37차에 hurwitz-theorem 을 쓰면서 Riemann 사상정리를 conformal-mapping.md 로 링크했다. conformal-mapping(등각사상) 49줄에 '## Riemann 사상정리' 절이 있어 현재는 그쪽이 거두고 있다. 별도 문서로 분리할지 판단이 필요하다. 분리하면 Montel 정리로 정규족을 뽑고 Hurwitz 정리로 극한의 단사성을 얻는 증명 전체가 내용이 되고 hurwitz-theorem 과 montel-theorem 의 자식이 된다. 분리하지 않으면 conformal-mapping 의 그 절을 보강하고 두 정리를 본문 링크로 잇는다. conformal-mapping 의 현재 분량과 그 절의 길이를 먼저 볼 것",
       "createdAt": "2026-10-06T20:59:06.221Z",
       "seq": 1821
+    },
+    {
+      "id": "0c54a130",
+      "title": "실사영공간 문서",
+      "priority": 10,
+      "note": "topology(#algebraic_topology #topology). 37차 회차(2026-10-07)에 borsuk-ulam 을 쓰면서 확인했다. docs 에 projective-space 류 파일이 없어 홀사상 부재 증명의 $\\mathbb{RP}^n$ 과 그 Z/2 코호몰로지환 (Z/2)[t]/(t^{m+1}) 을 링크 없이 이름만 썼다(0절). 담을 내용은 R^{n+1}-{0} 의 몫 또는 S^n 의 대척 몫이라는 두 구성, CW 구조(세포가 차원마다 하나), Z/2 와 Z 계수 호몰로지, 코호몰로지환이 절단 다항식환이라는 사실, 방향 가능성이 n 이 홀수일 때만이라는 것, 복사영공간과의 대조다. 부모 후보는 cw-complexes 와 cohomology. 만들면 borsuk-ulam 의 '## 홀사상의 부재' 와 stiefel-whitney 류 언급에 링크를 건다.",
+      "createdAt": "2026-10-07T00:42:29.586Z",
+      "seq": 1824
+    },
+    {
+      "id": "1e4ca711",
+      "title": "실사영공간과 복사영공간의 호몰로지 계산",
+      "priority": 10,
+      "note": "topology. 37차 회차에 mayer-vietoris 를 쓰며 확인했다. 그 문서의 '## 구면의 호몰로지' 는 S^n 을 귀납으로 계산하지만 실사영평면과 복사영공간은 활용 절에서 이름만 언급했다. 큐 항목 0c54a130(실사영공간 문서)과 겹치므로 그 문서를 만들 때 Mayer-Vietoris 로 하는 계산을 함께 담을지 먼저 정한다. 두 항목을 따로 처리하면 같은 계산이 두 문서에 들어간다.",
+      "createdAt": "2026-10-07T00:47:59.391Z",
+      "seq": 1828
+    },
+    {
+      "id": "fbcc7e32",
+      "title": "Sard 정리 문서",
+      "priority": 10,
+      "note": "differential_geometry(#differential_geometry #analysis #measure_theory). 37차 회차(2026-10-07)에 whitney-embedding 을 쓰면서 확인했다. docs 에 sard 류 파일이 없어 '## 차원 내리기' 절에서 Sard 정리를 링크 없이 이름만 썼다(0절). 담을 내용은 임계값의 집합이 측도 0 이라는 진술, 매끄러움 차수 조건(C^k, k >= max(n-m+1,1)), 증명의 귀납 구조, 정칙값 정리와의 관계, Morse 함수의 조밀성과 횡단성 정리로 가는 응용이다. 부모 후보는 manifolds 와 measure 또는 lebesgue-measure 류. 만들면 whitney-embedding 의 '## 차원 내리기' 와 morse-theory 의 Morse 함수 존재 언급에 링크를 건다.",
+      "createdAt": "2026-10-07T00:54:57.120Z",
+      "seq": 1831
     },
     {
       "id": "dfb3e493",
