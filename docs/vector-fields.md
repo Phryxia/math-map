@@ -18,7 +18,7 @@
 
 # 정의
 
-매끄러운 다양체 $M$ 의 **벡터장**은 접다발의 매끄러운 단면 $X:M\to TM$ 이다. 곧 각 점 $p$ 에 $X(p)\in T_pM$ 을 매끄럽게 대응시킨다. 좌표 $(x^1,\dots,x^n)$ 에서는
+매끄러운 다양체 $M$ 의 **벡터장**은 [접다발](tangent-bundle.md)의 매끄러운 단면 $X:M\to TM$ 이다. 곧 각 점 $p$ 에 $X(p)\in T_pM$ 을 매끄럽게 대응시킨다. 좌표 $(x^1,\dots,x^n)$ 에서는
 
 $$X=\sum\_{i=1}^{n}X^i\frac{\partial}{\partial x^i},\qquad X^i\in C^\infty(U)$$
 

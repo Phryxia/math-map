@@ -44,6 +44,7 @@ graph TD
 - [다양체](manifolds.md): 국소적으로 유클리드 공간인 위상공간과 매끄러운 구조
 - [단위분할](partitions-of-unity.md): 국소에서 정의한 대상을 전역으로 붙이는 매끄러운 무게 함수족
 - [벡터다발](vector-bundles.md): 점마다 붙인 벡터 공간, 전이함수와 접속, 곡률
+- [접다발](tangent-bundle.md): 접공간을 모은 다발, 좌표변환의 야코비가 전이함수, 평행화 가능성
 - [특성류](characteristic-classes.md): 곡률의 불변 다항식이 주는 코호몰로지류, Chern–Weil 이론
 - [벡터장](vector-fields.md): 접다발의 단면, 흐름과 Lie 괄호, 영점의 지수
 - [미분형식](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
