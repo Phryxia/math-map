@@ -160,5 +160,6 @@ $\mathbb R/\mathbb Z$ 위의 Laplace 작용소에서 좌변은 고윳값 쪽 합
 
 - [theta 급수](theta-series.md)
 - [Mellin 변환](mellin-transform.md)
+- [표본화 정리](sampling-theorem.md)
 
 #analysis #number_theory #theorem

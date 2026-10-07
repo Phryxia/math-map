@@ -94,6 +94,7 @@ graph TD
 - [감마 함수](gamma-function.md): 계승의 해석적 연속
 - [Poisson 합 공식](poisson-summation.md): 격자 합과 쌍대격자 합의 등식
 - [Mellin 변환](mellin-transform.md): 곱셈적 구조 위의 적분변환
+- [표본화 정리](sampling-theorem.md): 대역제한 함수를 균일한 표본으로 복원하는 공식과 Nyquist 조건
 
 ## 점근해석과 재합산
 
