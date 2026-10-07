@@ -124,6 +124,7 @@ Diophantus 방정식의 해 존재, 제곱수 판정, 약수 함수의 계산이
 ### 산술함수와 분포
 
 - [Möbius 반전 공식](mobius-inversion.md)
+- [Chebyshev 추정](chebyshev-bounds.md)
 - [Mertens 정리](mertens-theorem.md)
 - [체 방법](sieve-methods.md)
 - [Riemann zeta 함수](riemann-zeta.md)

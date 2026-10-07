@@ -50,7 +50,7 @@ $$
 \sum\_{n\le x}\log n=\sum\_{p^k\le x}\left\lfloor\frac{x}{p^k}\right\rfloor\log p
 $$
 
-$k\ge 2$ 인 항은 $\sum\_p(\log p)\sum\_{k\ge 2}x/p^k=O(x)$ 이고, $k=1$ 인 항에서 바닥함수를 $x/p+O(1)$ 로 바꾸면 오차가 $O(\vartheta(x))=O(x)$ 다. 여기서 $\vartheta(x)=\sum\_{p\le x}\log p$ 이고 $\vartheta(x)=O(x)$ 는 Chebyshev 의 추정이다. 남은 항 $x\sum\_{p\le x}(\log p)/p$ 를 $x\log x+O(x)$ 와 맞추고 $x$ 로 나누면 제1 정리다.
+$k\ge 2$ 인 항은 $\sum\_p(\log p)\sum\_{k\ge 2}x/p^k=O(x)$ 이고, $k=1$ 인 항에서 바닥함수를 $x/p+O(1)$ 로 바꾸면 오차가 $O(\vartheta(x))=O(x)$ 다. 여기서 $\vartheta(x)=\sum\_{p\le x}\log p$ 이고 $\vartheta(x)=O(x)$ 는 [Chebyshev 추정](chebyshev-bounds.md)이다. 남은 항 $x\sum\_{p\le x}(\log p)/p$ 를 $x\log x+O(x)$ 와 맞추고 $x$ 로 나누면 제1 정리다.
 
 ## 제2 정리의 증명
 
