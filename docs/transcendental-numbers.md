@@ -80,7 +80,7 @@ $$
 \vert\Lambda\vert \thinspace\gt\thinspace C(n, d, A)^{-\log B}
 $$
 
-가 성립한다. 상수를 계산할 수 있다는 점이 [Diophantine 근사](diophantine-approximation.md)의 Roth 정리와 다르고, 정수해의 크기에 실제 상한을 주는 것이 이 차이에서 나온다.
+가 성립한다. 상수를 계산할 수 있다는 점이 [Roth 정리](roth-theorem.md)와 다르고, 정수해의 크기에 실제 상한을 주는 것이 이 차이에서 나온다.
 
 # 활용
 
