@@ -48,6 +48,7 @@ graph TD
 - [Vitali 집합](vitali-set.md): 유리수 평행이동의 대표를 모은 비가측 집합, 측도를 멱집합으로 넓히지 못하는 이유
 - [Borel 계층](borel-hierarchy.md): 열린집합에서 가산 연산을 초한으로 되풀이한 단계, Suslin 정리
 - [강 측도 영집합](strong-measure-zero.md): 구간 길이를 미리 지정해도 덮을 수 있는 집합, Borel 추측
+- [측도-범주 분해](measure-category-decomposition.md): 직선을 영집합과 제1 범주 집합으로 가르는 분해, 두 작음의 뜻이 어긋나는 자리
 - [Loeb 측도](loeb-measure.md): 초유한 집합 위의 유한가법측도에서 표준부분으로 얻는 측도, 포화성이 $\sigma$ 가법성을 준다
 - [Haar 측도](haar-measure.md): 국소콤팩트 위상군 위의 평행이동 불변 측도, 존재와 상수배 유일성, 모듈러 함수
 
