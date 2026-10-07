@@ -76,7 +76,7 @@ $D$ 는 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)이고, 
 
 # 활용
 
-- **임상시험의 중간분석.** 환자를 차례로 등록하면서 효과가 충분히 드러나면 시험을 조기에 끝낸다. 문턱을 시각에 따라 바꾼 변형이 군축차 설계다.
+- **임상시험의 중간분석.** 환자를 차례로 등록하면서 효과가 충분히 드러나면 시험을 조기에 끝낸다. 문턱을 시각에 따라 바꾼 변형이 [군축차 설계](group-sequential-design.md)다.
 - **축차 표본검사.** 로트에서 제품을 하나씩 뽑아 불량률이 두 수준 가운데 어느 쪽인지 판정하고, 판정이 서면 검사를 멈춘다.
 - **엿보기 문제.** 고정 표본 검정을 진행 도중 여러 번 들여다보고 유의해지는 순간 멈추면 1 종 오류율이 목표를 넘는다. SPRT 는 멈추는 규칙을 검정의 일부로 두므로 Wald 의 오류율 경계가 그대로 적용된다.
 - **martingale 구조.** $(\Lambda_n)$ 은 $P_0$ 아래의 [martingale](martingales.md)이다. 위의 오류율 경계는 이 martingale 에 선택적 정지 정리를 쓴 것과 같은 계산이다.
@@ -94,6 +94,6 @@ $D$ 는 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)이고, 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [군축차 설계](group-sequential-design.md)
 
 #statistics #probability #information_theory

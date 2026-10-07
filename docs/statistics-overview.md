@@ -41,6 +41,7 @@ graph TD
 - [가설검정](hypothesis-testing.md): 귀무가설과 검정통계량, 제1종·제2종 오류, Neyman–Pearson 보조정리
 - [신뢰구간](confidence-intervals.md): 피벗량과 구간 구성, 피복확률, 검정과의 쌍대성
 - [순차확률비 검정](sequential-probability-ratio-test.md): 누적 우도비와 두 문턱, Wald 의 오류율 경계, 기대 표본 수
+- [군축차 설계](group-sequential-design.md): 중간분석 시점마다의 경계, 알파 소비 함수와 1 종 오류율의 통제
 
 ## 모형
 
