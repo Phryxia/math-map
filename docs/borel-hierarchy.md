@@ -98,6 +98,6 @@ $\Sigma^0_\alpha$ 의 정의에서 가산 합집합의 지표를 임의로 두�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [사영 계층](projective-hierarchy.md)
 
 #set_theory #topology #measure_theory #logic
