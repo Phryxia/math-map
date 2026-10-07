@@ -62,7 +62,7 @@ $G$ 가 위수 $m$ 인 순환군이면 직관 절의 분해가 주기 $2$ 이므
 
 $$H^k(G,A)=\begin{cases}A^G & k=0\cr \ker N/(t-1)A & k\ \text{ 홀수}\cr A^G/NA & k\ \text{ 짝수},\ k\ge 2\end{cases}$$
 
-여기서 $t$ 는 생성원이고 $N=1+t+\cdots+t^{m-1}$ 이다. 짝수 차수의 값 $A^G/NA$ 를 Herbrand 몫의 계산에 쓴다.
+여기서 $t$ 는 생성원이고 $N=1+t+\cdots+t^{m-1}$ 이다. 짝수 차수의 값 $A^G/NA$ 를 [Herbrand 몫](tate-cohomology.md)의 계산에 쓴다.
 
 # 활용
 
@@ -83,6 +83,7 @@ $$H^k(G,A)=\begin{cases}A^G & k=0\cr \ker N/(t-1)A & k\ \text{ 홀수}\cr A^G/NA
 
 ## 더 알아보기
 
+- [Tate 코호몰로지](tate-cohomology.md)
 - [Hilbert 정리 90](hilbert-theorem-90.md)
 
 #group_theory #algebra #algebraic_topology #number_theory

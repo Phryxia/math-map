@@ -43,6 +43,7 @@ graph TD
 - [정규화군](normalizer.md): 부분집합을 켤레로 보존하는 부분군, 중심화군과 N/C 정리, 켤레 개수의 지표 공식
 - [가해군](solvable-groups.md): 가환인 몫을 쌓아 얻는 군, 유도열과 하강 중심열, Burnside 와 Feit–Thompson 의 판정 정리
 - [Sylow 정리](sylow-theorems.md) → [유한 단순군 분류](finite-simple-groups.md) → [군 확대](group-extensions.md) → [군 코호몰로지](group-cohomology.md), [Schur 곱셈자](schur-multipliers.md)
+- [Tate 코호몰로지](tate-cohomology.md): 노름 사상으로 음의 차수까지 이은 코호몰로지, 순환군의 주기성과 Herbrand 몫
 - [군의 표현](group-representations.md): 군을 행렬로 보는 기본 도구
 - [군의 표시](group-presentations.md): 생성원과 관계자로 군을 적는 방법, 낱말 문제
 - [Coxeter 군](coxeter-groups.md): 반사로 생성된 군의 표시, 길이 함수와 Bruhat 순서
