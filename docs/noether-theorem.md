@@ -66,7 +66,7 @@ $$
 
 - 평행이동 불변에서 운동량, 회전 불변에서 각운동량, 시간 평행이동 불변에서 에너지가 나온다. 세 보존량이 모두 같은 계산의 결과다.
 - 변분법에서 Euler–Lagrange 방정식의 1차 적분을 찾는다. [최단강하선 문제](brachistochrone.md)가 쓰는 Beltrami 항등식이 시간 평행이동 쪽 보존량이다.
-- [Riemann 계량](riemannian-metrics.md)이 Killing 벡터장을 가지면 그 방향의 운동량이 [측지선](geodesics.md)을 따라 보존된다. 측지선을 Hamilton 흐름으로 보면 이것이 Noether 전하다.
+- [Riemann 계량](riemannian-metrics.md)이 [Killing 벡터장](killing-vector-fields.md)을 가지면 그 방향의 운동량이 [측지선](geodesics.md)을 따라 보존된다. 측지선을 Hamilton 흐름으로 보면 이것이 Noether 전하다.
 - [Lie 군](lie-groups.md)이 심플렉틱 다양체에 작용할 때 보존량들을 모아 하나의 사상으로 적는다. 이 사상이 모멘트 사상이다.
 
 [^1]: V. I. Arnold, *Mathematical Methods of Classical Mechanics*, 2nd ed., Springer Graduate Texts in Mathematics 60 (1989), 4 장과 20 절. 정리의 진술, 위 증명, 모멘트 사상을 다룬다.
