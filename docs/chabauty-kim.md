@@ -66,7 +66,7 @@ $s=1$ 이면 조건이 깊이 $1$ 과 같아진다. $J$ 가 자기준동형을 �
 
 ## 계산
 
-$1$ 형식의 기저와 Frobenius 행렬을 [Kedlaya 알고리즘](kedlaya-algorithm.md)으로 구하고 이중 반복 적분을 그 행렬로 계산한다. 나쁜 자리의 국소 높이가 갖는 유한집합은 각 자리의 모델에서 열거한다. 남은 절차는 $X(\mathbb Q_p)\_2$ 의 점 가운데 유리점이 아닌 것을 걸러내는 일이고 Mordell–Weil 시브를 쓴다.
+$1$ 형식의 기저와 Frobenius 행렬을 [Kedlaya 알고리즘](kedlaya-algorithm.md)으로 구하고 이중 반복 적분을 그 행렬로 계산한다. 나쁜 자리의 국소 높이가 갖는 유한집합은 각 자리의 모델에서 열거한다. 남은 절차는 $X(\mathbb Q_p)\_2$ 의 점 가운데 유리점이 아닌 것을 걸러내는 일이고 [Mordell–Weil 시브](mordell-weil-sieve.md)를 쓴다.
 
 # 활용
 
