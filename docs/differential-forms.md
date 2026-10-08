@@ -152,6 +152,7 @@ $$
 
 ## 더 알아보기
 
+- [Lie 미분](lie-derivative.md)
 - [de Rham 코호몰로지](de-rham-cohomology.md)
 - [심플렉틱 다양체](symplectic-manifolds.md)
 

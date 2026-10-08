@@ -52,7 +52,7 @@ $\Gamma(TM)$ 은 Lie 괄호로 무한차원 Lie 대수다. 괄호가 반대칭�
 
 ## 괄호와 흐름의 교환
 
-$X$ 와 $Y$ 의 흐름이 서로 교환하는 것과 $\lbrack X,Y\rbrack=0$ 인 것은 동치다.[^1] 괄호는 $Y$ 를 $X$ 의 흐름으로 끌어온 것의 $t$ 에 대한 미분, 곧 Lie 미분 $L_XY$ 와 같고, 그 미분이 $0$ 이라는 것이 $Y$ 가 흐름에 불변이라는 뜻이다.
+$X$ 와 $Y$ 의 흐름이 서로 교환하는 것과 $\lbrack X,Y\rbrack=0$ 인 것은 동치다.[^1] 괄호는 $Y$ 를 $X$ 의 흐름으로 끌어온 것의 $t$ 에 대한 미분, 곧 [Lie 미분](lie-derivative.md) $L_XY$ 와 같고, 그 미분이 $0$ 이라는 것이 $Y$ 가 흐름에 불변이라는 뜻이다.
 
 ## 흐름 상자 정리
 
@@ -79,6 +79,7 @@ $X(p)\ne 0$ 이면 $p$ 의 어떤 좌표근방에서 $X=\partial/\partial x^1$ �
 
 ## 더 알아보기
 
+- [Lie 미분](lie-derivative.md)
 - [Poincaré–Hopf 정리](poincare-hopf.md)
 
 #differential_geometry #analysis #topology

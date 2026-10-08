@@ -65,6 +65,7 @@ Killing 방정식과 그 한 번 미분한 식이 한 점에서 $X$ 와 $\nabla 
 ## 선수지식
 
 - [Riemann 계량](riemannian-metrics.md)
+- [Lie 미분](lie-derivative.md)
 
 ## 더 알아보기
 
