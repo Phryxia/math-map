@@ -83,7 +83,7 @@ $$(c\otimes\mathrm{id})(\mathrm{id}\otimes c)(c\otimes\mathrm{id})=(\mathrm{id}\
 
 # 활용
 
-- **표현론.** 군 $G$ 의 표현들은 텐서곱으로 대칭 모노이드 범주를 이루고, 쌍대표현이 쌍대 대상이다. 유한군의 표현 범주를 모노이드 범주로 복원하는 것이 Tannaka 쌍대성이다.
+- **표현론.** 군 $G$ 의 표현들은 텐서곱으로 대칭 모노이드 범주를 이루고, 쌍대표현이 쌍대 대상이다. 유한군의 표현 범주를 모노이드 범주로 복원하는 것이 [Tannaka 쌍대성](tannaka-duality.md)이다.
 - **모듈러 텐서범주.** 꼬임과 쌍대와 반정형 구조를 더하고 꼬임 행렬이 비퇴화인 것이 [모듈러 텐서범주](modular-tensor-categories.md)이고, 그 데이터가 3 차원 위상적 장론을 결정한다.
 - **양자군.** 양자군의 표현 범주는 꼬임을 갖지만 대칭이 아니다. 꼬임이 주는 땋임군 표현에서 Jones 다항식이 나온다.
 - **텐서곱의 보편성질.** [텐서곱](tensor-products.md)이 쌍선형사상을 선형사상으로 바꾸는 보편성질로 정의되고, 그 구성이 모노이드 구조의 전형이다.
@@ -96,6 +96,7 @@ $$(c\otimes\mathrm{id})(\mathrm{id}\otimes c)(c\otimes\mathrm{id})=(\mathrm{id}\
 
 ## 더 알아보기
 
+- [Tannaka 쌍대성](tannaka-duality.md)
 - [모듈러 텐서범주](modular-tensor-categories.md)
 
 #category_theory #algebra #topology

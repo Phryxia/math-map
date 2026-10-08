@@ -209,6 +209,7 @@ $$
 ### 구조와 분류
 
 - [Peter–Weyl 정리](peter-weyl.md)
+- [Tannaka 쌍대성](tannaka-duality.md)
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md)
 - [유한 단순군 분류](finite-simple-groups.md)
 
