@@ -46,7 +46,7 @@ $$
 \mathfrak S(\mathcal H)=\prod\_p\Bigl(1-\frac{\nu(p)}{p}\Bigr)\Bigl(1-\frac1p\Bigr)^{-k}
 $$
 
-를 **특이급수**라 한다. 허용집합이면 각 인자가 $0$ 이 아니고 곱이 수렴한다.
+를 **특이급수**라 한다. 허용집합이면 각 인자가 $0$ 이 아니고 곱이 수렴한다. 소수마다의 인자가 법 $p$ 에서 재는 국소 밀도이고, [원법](circle-method.md)이 다른 가법 문제에서 얻는 특이급수도 같은 꼴로 쪼개진다.
 
 **Hardy–Littlewood 추측.** $n+h_1,\dots,n+h_k$ 가 모두 소수인 $n\le x$ 의 개수가 $\mathfrak S(\mathcal H)\thinspace x/(\log x)^k$ 에 점근한다.
 
