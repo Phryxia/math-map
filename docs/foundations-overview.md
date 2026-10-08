@@ -98,6 +98,7 @@ graph TD
 - [무작위 실수 강제법](random-real-forcing.md): [측도](measure.md) 대수를 조건으로 쓰는 강제법, Cohen 실수와의 대비
 - [구성가능 우주](constructible-universe.md): 정의 가능한 부분집합만 쌓은 내부 모형, 일반화 연속체 가설(generalized continuum hypothesis, GCH)과 선택공리가 정리가 된다
 - [큰 기수](large-cardinals.md): 도달 불가능 기수부터 측도 가능 기수까지, 무모순성 강도를 재는 눈금
+- [큰 기수의 층](large-cardinal-hierarchy.md): Mahlo 기수부터 초콤팩트 기수까지, 반사 조건과 기본 매장으로 정의하는 층과 무모순성 강도의 순서
 - [결정성](determinacy.md): 무한 게임의 필승 전략, Gale–Stewart 정리와 큰 기수에서 오는 사영 결정성
 
 ## 기술집합론

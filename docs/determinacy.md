@@ -44,7 +44,7 @@ $\mathsf{ZF}+\mathsf{AD}$ 에서 $\mathbb R$ 의 모든 부분집합이 Lebesgue
 
 ## 큰 기수에서 오는 결정성
 
-측도 가능 기수가 있으면 해석적 집합의 결정성이 성립한다[^2]. [큰 기수](large-cardinals.md)의 눈금을 올리면 결정성이 성립하는 집합족도 넓어진다. Woodin 기수가 $n$ 개 있고 그 위에 측도 가능 기수가 있으면 $\mathbf\Pi^1_{n+1}$ 집합이 결정되고, Woodin 기수가 무한히 많으면 사영집합 전체가 결정된다[^3]. 무한히 많은 Woodin 기수 위에 측도 가능 기수가 있으면 $L(\mathbb R)$ 에서 $\mathsf{AD}$ 가 성립한다[^4].
+측도 가능 기수가 있으면 해석적 집합의 결정성이 성립한다[^2]. [큰 기수](large-cardinals.md)의 눈금을 올리면 결정성이 성립하는 집합족도 넓어진다. [Woodin 기수](large-cardinal-hierarchy.md)가 $n$ 개 있고 그 위에 측도 가능 기수가 있으면 $\mathbf\Pi^1_{n+1}$ 집합이 결정되고, Woodin 기수가 무한히 많으면 사영집합 전체가 결정된다[^3]. 무한히 많은 Woodin 기수 위에 측도 가능 기수가 있으면 $L(\mathbb R)$ 에서 $\mathsf{AD}$ 가 성립한다[^4].
 
 # 활용
 
