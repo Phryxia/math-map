@@ -26,7 +26,7 @@ $\alpha_t=1/t$ 가 이 조건을 만족하는 대표적인 선택이다.
 
 ## Kiefer–Wolfowitz 절차
 
-$f$ 가 어떤 함수 $g$ 의 기울기이고 $g$ 의 값만 잴 수 있으면, 차분으로 기울기를 흉내 낸다. 차분폭 $c_t$ 를 $\sum_t(\alpha_t/c_t)^2\lt\infty$ 이면서 $c_t\to 0$ 이 되게 줄인다.
+$f$ 가 어떤 함수 $g$ 의 기울기이고 $g$ 의 값만 잴 수 있으면, 차분으로 기울기를 흉내 내는 [Kiefer–Wolfowitz 절차](kiefer-wolfowitz.md)를 쓴다. 차분폭 $c_t$ 를 $\sum_t(\alpha_t/c_t)^2\lt\infty$ 이면서 $c_t\to 0$ 이 되게 줄인다.
 
 # 성질
 
@@ -66,6 +66,7 @@ $f(\theta)=\mathcal T\theta-\theta$ 이고 $\mathcal T$ 가 어떤 노름에서 
 ## 더 알아보기
 
 - [확률적 경사하강법](stochastic-gradient-descent.md)
+- [Kiefer–Wolfowitz 절차](kiefer-wolfowitz.md)
 - [Q 학습](q-learning.md)
 - [정책 경사](policy-gradient.md)
 
