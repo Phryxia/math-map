@@ -80,6 +80,7 @@ $E_n$ 을 $\vert f(t)-f(s)\vert \le n\vert t-s\vert$ 가 모든 $s$ 에 대해 �
 ## 더 알아보기
 
 - [열린 사상 정리](open-mapping-theorem.md)
+- [Galvin–Mycielski–Solovay 정리](galvin-mycielski-solovay.md)
 - [Martin 의 공리](martins-axiom.md)
 - [측도-범주 분해](measure-category-decomposition.md)
 

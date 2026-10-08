@@ -47,7 +47,7 @@ $$
 # 활용
 
 - 강제법 반복의 보존 논법에서 표준 예로 쓰인다. 한 단계가 없애는 것을 반복 전체가 다시 만들지 않는다는 보존 정리가 필요하고, 가산지지 반복의 보존 정리들이 이 증명에서 정비되었다.[^3]
-- 강 측도 영집합의 덧셈 특징(모든 제1범주 집합 $M$ 에 대해 $X+M\neq\mathbb R$)이 [Baire 범주](baire-category.md)만으로 쓰이므로, BC 를 국소콤팩트 위상군에서 그대로 물을 수 있다.
+- 강 측도 영집합의 [덧셈 특징](galvin-mycielski-solovay.md)(모든 제1범주 집합 $M$ 에 대해 $X+M\neq\mathbb R$)이 [Baire 범주](baire-category.md)만으로 쓰이므로, BC 를 국소콤팩트 위상군에서 그대로 물을 수 있다.
 - $\mathcal{SN}$ 과 측도 영집합 아이디얼, 제1범주 아이디얼의 관계를 재는 자리에서 BC 가 한쪽 끝의 값을 고정한다.
 
 [^1]: T. Bartoszyński, H. Judah, *Set Theory: On the Structure of the Real Line*, A K Peters, 1995. 8 장이 $\mathcal{SN}$ 과 기수 불변량의 관계를 다룬다.
