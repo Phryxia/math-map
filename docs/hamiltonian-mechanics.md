@@ -62,7 +62,7 @@ Cartan 공식으로 $\mathcal L\_{X\_H}\omega=d(\iota\_{X\_H}\omega)+\iota\_{X\_
 
 ## Poisson 괄호
 
-함수 $f,g$ 에 대해 $\lbrace f,g\rbrace=\omega(X\_f,X\_g)$ 로 두면 $\dot f=\lbrace f,H\rbrace$ 이고, $\lbrace f,H\rbrace=0$ 인 $f$ 가 보존량이다. 괄호는 반대칭이고 Jacobi 항등식을 만족하므로 매끄러운 함수들이 Lie 대수를 이룬다.
+함수 $f,g$ 에 대해 $\lbrace f,g\rbrace=\omega(X\_f,X\_g)$ 로 두면 $\dot f=\lbrace f,H\rbrace$ 이고, $\lbrace f,H\rbrace=0$ 인 $f$ 가 보존량이다. 대칭에서 이런 $f$ 를 얻는 것이 [Noether 정리](noether-theorem.md)다. 괄호는 반대칭이고 Jacobi 항등식을 만족하므로 매끄러운 함수들이 Lie 대수를 이룬다.
 
 ## Lagrange 쪽과의 대응
 
@@ -86,6 +86,6 @@ $L$ 이 $v$ 에서 강볼록이면 $H$ 도 $p$ 에서 볼록이고 $H$ 의 공�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Noether 정리](noether-theorem.md)
 
 #differential_geometry #analysis #optimization

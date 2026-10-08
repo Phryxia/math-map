@@ -102,6 +102,7 @@ Euler–Lagrange 방정식을 풀지 않고 최소점의 존재를 먼저 보이
 ## 더 알아보기
 
 - [Hamilton 역학](hamiltonian-mechanics.md)
+- [Noether 정리](noether-theorem.md)
 - [최단강하선 문제](brachistochrone.md)
 - [현수선](catenary.md)
 - [등주부등식](isoperimetric-inequality.md)
