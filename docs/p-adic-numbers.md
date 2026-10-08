@@ -89,7 +89,7 @@ $e$ 는 부치군의 지표(분기지수), $f$ 는 잉여체 확대의 차수다
 
 ## Hensel 보조정리
 
-$f\in\mathbb Z_p\lbrack x\rbrack$ 와 $a\in\mathbb Z_p$ 가 $\vert f(a)\vert\_p\lt \vert f'(a)\vert\_p^2$ 를 만족하면 $a$ 에 가까운 근 $\alpha\in\mathbb Z_p$ 가 유일하게 있다. 법 $p$ 에서의 단순근이 $p$ 진 근으로 올라간다는 것이고, 제곱원소 판정과 Teichmüller 대표원과 불분기 확대가 여기서 나온다. 증명과 따름은 [Hensel 보조정리](hensel-lemma.md)에 있다.
+$f\in\mathbb Z_p\lbrack x\rbrack$ 와 $a\in\mathbb Z_p$ 가 $\vert f(a)\vert\_p\lt \vert f'(a)\vert\_p^2$ 를 만족하면 $a$ 에 가까운 근 $\alpha\in\mathbb Z_p$ 가 유일하게 있다. 법 $p$ 에서의 단순근이 $p$ 진 근으로 올라간다는 것이고, 제곱원소 판정과 Teichmüller 대표원과 불분기 확대의 구성이 이 올림을 쓴다. 증명과 따름은 [Hensel 보조정리](hensel-lemma.md)에 있다.
 
 ## 초거리 기하
 
