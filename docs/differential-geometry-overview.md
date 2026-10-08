@@ -62,6 +62,7 @@ graph TD
 - [Killing 벡터장](killing-vector-fields.md): 계량을 보존하는 흐름, 측지선을 따르는 보존량과 차원 상한
 - [Gauss–Bonnet 정리](gauss-bonnet.md): 곡률 적분이 Euler 지표를 준다
 - [Ricci 흐름](ricci-flow.md): 계량을 Ricci 곡률로 변형하는 열방정식 꼴 흐름, 특이점과 수술
+- [Ricci 솔리톤](ricci-solitons.md): 확대에 변하지 않는 자기상사해, 특이점의 모형
 - [Poincaré–Hopf 정리](poincare-hopf.md): 벡터장의 특이점 지수의 합도 Euler 지표다
 - [쌍곡 3 다양체](hyperbolic-3-manifolds.md): 3 차원에서 쌍곡 계량이 위상으로 결정된다
 
