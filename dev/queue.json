@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-10-08T05:04:31.828Z",
-  "nextSeq": 1895,
+  "savedAt": "2026-10-08T09:00:48.118Z",
+  "nextSeq": 1904,
   "items": [
-    {
-      "id": "bbb14af7",
-      "title": "줄 번호로 문단을 교체하다 헤딩을 덮어쓰는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차에 logicism 을 통독하며 문단 14 곳을 줄 번호 기반 스크립트로 갈아 끼웠는데, 그 가운데 일곱 곳의 번호가 실제보다 2 줄 뒤였다. 결과로 '# 직관', '# 정의', '## 동수성', '## Principia 의 유형 이론' 네 헤딩과 '## 집합론과의 관계' 의 첫 문단이 교정문에 덮여 사라지고, 교정 대상 문단은 교정 전 상태로 남았다.\n\n원인은 문서를 'sed -n' 으로 줄 번호 없이 읽고, 번호는 앞서 돌린 다른 grep(긴 줄 목록)의 숫자를 눈으로 짝지어 쓴 것이다. 같은 회차에 'cat -n' 으로 읽은 세 문서(formalism-hilbert-program mathematical-platonism mathematical-structuralism)는 한 곳도 어긋나지 않았다.\n\n규칙 셋. (1) 줄 번호로 교체할 문서는 반드시 'cat -n docs/<id>.md' 로 읽는다. 'sed -n' 으로 읽은 번호는 쓰지 않는다. (2) 교체 직후 'diff <(git show HEAD:docs/<id>.md | grep -n \"^#\" | sed \"s/:.*//\") <(grep -n \"^#\" docs/<id>.md | sed \"s/:.*//\")' 로 헤딩 줄 번호가 원본과 같은지 본다. 헤딩을 의도적으로 고친 경우에도 줄 번호는 그대로여야 하므로 이 검사가 밀림을 바로 잡는다. (3) 밀림이 드러나면 현재 파일을 손으로 기워 맞추지 않는다. 'git show HEAD:docs/<id>.md' 를 스크래치패드로 꺼내 올바른 번호로 교정을 전부 다시 적용하고 그 파일을 docs 로 복사한다. 34차는 손으로 기우려다 한 번 더 어긋났고, 원본 재적용으로 끝냈다.\n\n검사 여섯과 validate, render-check, order-check 는 이 사고를 전혀 잡지 못한다. 헤딩이 사라져도 마크다운과 수식이 성립하고 간선도 '# 연관 문서' 절에만 있기 때문이다. 잡아낸 것은 금지 표현 grep 을 다시 돌렸을 때 고쳤어야 할 문장이 그대로 남아 있던 것이다. 교정 회차에는 교정 후 같은 grep 을 다시 돌려 0 건인지 확인한다.",
-      "createdAt": "2026-10-05T20:56:28.335Z",
-      "seq": 1740
-    },
     {
       "id": "5b750f72",
       "title": "수식 안 글자 연산자가 명령이 아닌 사고의 검사",
@@ -58,6 +50,30 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 29차 회차에 jones-wenzl-idempotents 를 쓰다 개요의 $$ 블록에서 'e_i' 의 e 가 키릴 소문자 е(U+0435)로 들어갔다. 'f_n^2=f_n, e_if_n=f_nе_i=0' 에서 둘째 e 하나만 키릴이었다. 원문을 눈으로 보면 라틴 e 와 구별되지 않고 MathJax 는 이 글자를 명령으로도 변수로도 읽지 못해 식이 깨진다.\n\n기존 검사 여섯 가지가 이것을 잡지 못한다. render-check 는 원문의 수식 스팬이 렌더 결과에 남는지만 보므로 통과하고, 4절의 awk 와 grep 넷도 ASCII 패턴만 보므로 통과한다. 29차에 걸린 것은 5번 검사 grep -noE '\\[^a-zA-Z0-9\\\\]_' 의 우연이다. 키릴 е 가 '영숫자가 아닌 문자' 로 잡혀 그 뒤 밑줄이 보고됐다. 즉 바로 뒤에 첨자 밑줄이 없는 자리에 섞이면 여섯 검사 전부를 통과한다.\n\n검사법. 라틴과 모양이 같은 키릴·그리스 문자를 코드포인트로 거른다. 키릴 소문자 а е о р с у х і(U+0430 0435 043E 0440 0441 0443 0445 0456), 키릴 대문자 А В Е К М Н О Р С Т У Х(U+0410 0412 0415 041A 041C 041D 041E 0420 0421 0422 0423 0425), 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ(U+03BF 0391 0392 0395 0397 0399 039A 039C 039D 039F 03A1 03A4 03A7)를 docs 전체와 README 에서 찾는다. 29차에 전수로 돌려 보고는 둘이고 하나는 오검출이다. transcendental-numbers:98 의 키릴 е 둘은 Gelfond 논문의 학술지명 'Известия Академии наук СССР' 안이라 정상이다. 따라서 검사 결과는 키릴 문자가 든 줄이 러시아어 문헌 표기인지만 보면 판정된다. 그리스 문자는 수식에서 \\alpha 꼴 명령으로 쓰므로 본문에 직접 오면 대개 사고다.\n\n새 문서나 보강한 문서를 쓴 회차에는 그 문서들만이라도 이 검사를 돌린다. dev/ 스크립트는 고치지 않으므로(0절) 스크래치패드에 python 으로 만들면 된다. 독자가 dev 에 넣을지는 판단이 필요하다.\n\n2026-10-04 30차 회차에 전수로 다시 돌렸다. 범위를 키릴 전체로 넓히면 안 된다. Tate-Shafarevich 군의 표준 기호 Ш(키릴 대문자 Sha, U+0428)가 문서 9 개에서 수식 안 \\text{Ш} 로 정상 사용된다(birch-swinnerton-dyer canonical-height euler-systems heegner-points kolyvagin-logachev kolyvagin-systems poitou-tate selmer-tate-shafarevich 와 그 표). 보고 60 여 줄이 전부 이것이고 실제 사고는 0 건이다. 위 note 가 적은 라틴 혼동 글자 목록(키릴 소문자 а е о р с у х і, 대문자 А В Е К М Н О Р С Т У Х, 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ)으로만 거르면 Ш 는 걸리지 않는다. transcendental-numbers:98 의 러시아어 학술지명도 29차 판정대로 정상이다. 즉 검사는 반드시 그 목록으로 좁혀서 돌리고, 이번 회차 새 문서 셋(lax-milgram ricci-flow gartner-ellis)에 좁힌 검사를 돌려 0 건을 확인했다.\n\n2026-10-05 34차 회차에 pop 이 이 항목을 꺼냈다. p100 상시 메모가 큐 머리에 모여 있어 2절 3단계의 pop 이 작업 아닌 항목을 집는다. 꺼냈으면 같은 제목과 note 로 다시 push 해 되돌리고, 작업은 list 에서 p50 이하의 실제 항목을 골라 remove 로 꺼낸다.",
       "createdAt": "2026-10-08T00:36:40.180Z",
       "seq": 1878
+    },
+    {
+      "id": "74d02178",
+      "title": "줄 번호로 문단을 교체하다 헤딩을 덮어쓰는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차에 logicism 을 통독하며 문단 14 곳을 줄 번호 기반 스크립트로 갈아 끼웠는데, 그 가운데 일곱 곳의 번호가 실제보다 2 줄 뒤였다. 결과로 '# 직관', '# 정의', '## 동수성', '## Principia 의 유형 이론' 네 헤딩과 '## 집합론과의 관계' 의 첫 문단이 교정문에 덮여 사라지고, 교정 대상 문단은 교정 전 상태로 남았다.\n\n원인은 문서를 'sed -n' 으로 줄 번호 없이 읽고, 번호는 앞서 돌린 다른 grep(긴 줄 목록)의 숫자를 눈으로 짝지어 쓴 것이다. 같은 회차에 'cat -n' 으로 읽은 세 문서(formalism-hilbert-program mathematical-platonism mathematical-structuralism)는 한 곳도 어긋나지 않았다.\n\n규칙 셋. (1) 줄 번호로 교체할 문서는 반드시 'cat -n docs/<id>.md' 로 읽는다. 'sed -n' 으로 읽은 번호는 쓰지 않는다. (2) 교체 직후 'diff <(git show HEAD:docs/<id>.md | grep -n \"^#\" | sed \"s/:.*//\") <(grep -n \"^#\" docs/<id>.md | sed \"s/:.*//\")' 로 헤딩 줄 번호가 원본과 같은지 본다. 헤딩을 의도적으로 고친 경우에도 줄 번호는 그대로여야 하므로 이 검사가 밀림을 바로 잡는다. (3) 밀림이 드러나면 현재 파일을 손으로 기워 맞추지 않는다. 'git show HEAD:docs/<id>.md' 를 스크래치패드로 꺼내 올바른 번호로 교정을 전부 다시 적용하고 그 파일을 docs 로 복사한다. 34차는 손으로 기우려다 한 번 더 어긋났고, 원본 재적용으로 끝냈다.\n\n검사 여섯과 validate, render-check, order-check 는 이 사고를 전혀 잡지 못한다. 헤딩이 사라져도 마크다운과 수식이 성립하고 간선도 '# 연관 문서' 절에만 있기 때문이다. 잡아낸 것은 금지 표현 grep 을 다시 돌렸을 때 고쳤어야 할 문장이 그대로 남아 있던 것이다. 교정 회차에는 교정 후 같은 grep 을 다시 돌려 0 건인지 확인한다.",
+      "createdAt": "2026-10-08T08:37:44.508Z",
+      "seq": 1895
+    },
+    {
+      "id": "56eb20d9",
+      "title": "Woodin 기수가 측도 가능이 아닌 근거의 출처 확인",
+      "priority": 50,
+      "note": "38차 회차(2026-10-08)에 large-cardinal-hierarchy 를 쓰며 'Woodin 기수는 Mahlo 이고 가장 작은 Woodin 기수는 측도 가능이 아니다' 를 정리로 적고 Kanamori The Higher Infinite 26 절과 32 절을 각주로 달았다. 증명 요지는 '정의가 kappa 아래의 lambda 가 갖는 성질만 요구하고 kappa 위의 초필터를 요구하지 않으므로 측도 가능성이 따라 나오지 않는다' 로 적었는데, 이것은 정의에서 바로 읽히는 관찰이고 '가장 작은 Woodin 기수가 측도 가능이 아니다' 의 증명은 아니다. 보강할 점: Kanamori 의 해당 절 번호가 이 진술을 담는지 확인하고, 담지 않으면 각주를 그 진술이 있는 자리로 고치거나 정리 진술에서 '가장 작은' 부분을 떼어 낸다",
+      "createdAt": "2026-10-08T08:44:58.636Z",
+      "seq": 1897
+    },
+    {
+      "id": "388ade44",
+      "title": "Leopoldt 의 s=1 공식 계수 확인",
+      "priority": 50,
+      "note": "38차 회차(2026-10-08)에 kubota-leopoldt-zeta 의 'Leopoldt 의 s = 1 공식' 절을 Washington, Introduction to Cyclotomic Fields 2판 5 장 정리 5.18 을 각주로 달고 적었다. 적은 꼴은 L_p(1,chi) = -(1-chi(p)/p) tau(chi)/f * sum_{a=1}^{f-1} conj(chi)(a) log_p(1-zeta_f^a) 다. 보강할 점: 판본마다 tau(chi)/f 자리의 정규화와 합의 범위(a 가 f 와 서로소인 것만인지 1..f-1 전체인지)가 다르다. 출처의 진술과 대조해 계수와 범위를 맞추고, 어긋나면 각주의 정리 번호도 고친다",
+      "createdAt": "2026-10-08T08:50:13.314Z",
+      "seq": 1899
     },
     {
       "id": "08e59419",
@@ -468,6 +484,14 @@
       "seq": 1894
     },
     {
+      "id": "bb3c4559",
+      "title": "본문 링크 라벨이 대상 제목과 어긋난 것 (38차 집계)",
+      "priority": 20,
+      "note": "38차 회차(2026-10-08)에 스크래치패드 labelcheck.mjs 로 docs 701 문서의 본문 링크를 전수로 돌렸다. 판정 기준은 라벨과 대상 H1 제목을 공백·중괄호·달러를 지우고 비교해 한쪽이 다른 쪽의 부분문자열도 아닌 경우를 보고하는 것이고, 322 건이 나왔다. 전수 판정은 한 회차에 끝나지 않으므로 다음 회차에 아래 갈래로 나눠 본다.\n\n갈래 (가) 문맥에 맞춘 적법한 변형. '연속성' -> continuity('연속함수'), '동치류' -> equivalence-relations('동치관계'), '볼록함수' -> convexity('볼록성') 처럼 같은 개념을 품사만 바꿔 쓴 것이다. 손대지 않는다. 보고의 대다수가 여기 든다.\n\n갈래 (나) 라벨이 대상 문서의 주제가 아닌 것. 'Jones 다항식' -> knot-invariants, 'Dedekind eta' -> theta-series, 'Kruskal 알고리즘' -> minimum-spanning-tree, 'Hahn-Banach 정리' -> banach-spaces, '정지 문제' -> computability, 'Turing 도약' -> turing-degrees 가 그 예다. 그 개념의 문서가 없어서 가장 가까운 문서로 링크한 자리이므로, 0절에 따라 라벨을 대상 제목으로 되돌리고 그 개념은 이름만 쓰거나, 문서를 만드는 요청을 큐에 넣는다.\n\n갈래 (다) 대상 제목이 'A와 B' 꼴이어서 라벨이 한쪽만 가리키는 것. 'Vogan 꾸러미' -> vogan-packets, '일반 표현' -> whittaker-models('Whittaker 모형과 중복도 1'), '이산 스펙트럼' -> speh-representations('Speh 표현과 잔여 스펙트럼') 가 그 예다. 38차에 제목 쪽은 그대로 두기로 판정했으므로(같은 회차의 'A와 B' 제목 전수 판정 메모) 라벨만 제목에 맞춘다.\n\n검사기는 dev/ 를 고치지 않는 규칙에 따라 스크래치패드에 두었고 회차마다 다시 만든다. 핵심은 titles[id] 를 첫 줄에서 뽑고 norm(s) 로 [\\\\{}$] 와 공백을 지운 뒤 부분문자열 비교를 하는 것이다",
+      "createdAt": "2026-10-08T09:00:00.309Z",
+      "seq": 1903
+    },
+    {
       "id": "410fd79d",
       "title": "Zilber 삼분법 갈래의 후속 간선 (15차)",
       "priority": 12,
@@ -506,14 +530,6 @@
       "note": "34차 회차(2026-10-05)에 philosophy_of_math 4개, foundations 4개(개관 포함), data_structures 2개를 모두 끝냈다. 32차 메모가 가리킨 묶음을 한 회차에 닫았다. 커밋 여섯이다. f2ac68dd(철학 4개), c6d011d4(higher-inductive-types homotopy-type-theory), e23f000f(structural-set-theory), efff1f73(union-find), 274881e1(foundations-overview), aa3cd780(link-cut-trees). 10개 문서 1105줄에서 고친 곳은 70 여 줄이다.\n\n고친 유형별 집계. 등위로 이어 붙인 문장 25곳, 피동 12곳, 문서 자신이나 앞 문장을 가리키는 메타 서술 7곳('마지막 두 줄은', '반대 방향의 관찰도 있다', '증명은 두 부분으로 나뉜다', '핵심 아이디어는 두 단계다', '아래 그림에서 왼쪽이', '세 입장은 같은 실천을 다르게 해석한다', '~기 때문이다'), 금지 표현 6곳('라는 사실' 2, '여기서 나온다', '즉', '갈림길', '바닥난다'), 평가와 범위 과장 6곳('대가가 컸다', '기술적 유산은 크다', '제2정리는 더 직접적이다', '결정적 차이다', '모든 조건 분기를 설명한다', '대부분 가속할 수 있다'), 번역체 헤딩 2곳('## 형식주의 자체에 대한 반론', '## 등식 증명의 유일성과의 충돌'), 영문 용어 4곳(metamathematics, nominalism, inverse Ackermann, amortized), 각주가 마침표 뒤에 붙은 것 3곳, 각주 없는 열린 문제 언급 2곳, 되풀이 마무리 문단 3곳이다.\n\n따로 적을 둘. (1) mathematical-structuralism 의 직관 절은 야구팀 유격수 비유가 두 문단의 골자였다. 4절은 직관 절에서 비유를 한 문장으로만 허용하므로, 자연수 자리를 먼저 쓰고 비유를 한 문장으로 줄였다. 비유가 문단 구조를 잡고 있는 문서는 문장만 고쳐서는 규칙을 맞출 수 없고 문단 순서를 바꿔야 한다. (2) union-find:89 의 정렬 비용이 $O(m log m)$ 으로 적혀 있었다. 수식 안의 log 가 명령이 아니어서 MathJax 가 변수 셋의 곱으로 기울여 그린다. 검사 여섯이 이것을 잡지 못한다. 수식 안 글자 연산자를 훑는 grep(\\$[^$]*[^a-zA-Z\\\\](log|sin|cos|tan|exp|max|min|lim|det|dim|ker)[^a-zA-Z])이 다음 회차의 전수 검사 후보다. dev/ 를 고치지 않으므로(0절) 스크래치패드에서 돌린다.\n\n다음 분야. 32차까지 닫은 것과 이 회차의 셋을 빼고, node dev/graph.mjs tags 로 주 분야별 문서 수를 세어 많은 쪽부터 고른다. 한 회차에 1000줄 남짓이 적정 분량이다. 이 회차는 1105줄 10개 문서에 40분 타이머를 거의 다 썼다.\n\n통독 절차. (1) 대상 문서를 주 분야 태그(태그 줄 첫 태그)로 뽑는다. (2) 구조 검사(문장형 헤딩, 비유, 열린 문제 절, 금지 매크로, 구형 '## 정의' 구조, 코드블록 언어)를 묶음 전체에 한 번 돌린다. (3) 번역체와 금지 표현 grep 을 돌려 후보를 모은다. '~에 대한' 은 철학 문서에서 대부분 정상 한국어이므로 헤딩에 있는 것만 고친다. (4) 긴 줄 훑기로 읽을 순서를 정한다. (5) 문서를 cat -n 으로 통독하며 판정한다. sed -n 으로 읽으면 줄 번호를 잃어 교체가 밀린다(큐의 줄 번호 사고 메모). (6) 교체 후 헤딩 줄 번호가 원본과 같은지 보고, 수식 검수 여섯과 키릴 검사, 두문자어 첫 등장, 같은 금지 표현 grep 을 다시 돌린다.",
       "createdAt": "2026-10-05T21:06:02.551Z",
       "seq": 1742
-    },
-    {
-      "id": "59e53a3d",
-      "title": "큰 기수의 층 (Woodin 기수 포함)",
-      "priority": 12,
-      "note": "38차 회차(2026-10-08)에 옛 항목 697822e7 을 갱신해 다시 넣었다. determinacy 를 쓰면서 Woodin 기수를 정의 없이 쓰게 되었으므로, 옛 항목 f57c4b5a 가 가리킨 Woodin 기수와 이 항목의 '도달 불가능 기수 위의 층' 을 한 문서로 닫는 것이 맞다. large-cardinals 는 도달 불가능 기수와 측도 가능 기수 둘만 정의하고 그 사이의 층(Mahlo, 약콤팩트, Ramsey, 강기수, 초콤팩트)은 이름도 넣지 않는다. 담을 것: 각 층의 정의, 기본 매장의 세기로 재는 순서, Woodin 기수의 정의(모든 A 가 V_kappa 의 부분집합일 때 A-강 기수가 kappa 아래에 있다), 그리고 determinacy 성질 절 '큰 기수에서 오는 결정성' 이 쓰는 Martin-Steel 의 가정. 부모는 large-cardinals 이고 determinacy 와 선수관계를 긋지 않는다(determinacy 가 이미 large-cardinals 의 자식이므로 check-cycle 로 방향을 먼저 확인할 것). 쓸 때 주의: 강도 순서가 선형이라는 서술은 정리가 아니라 관찰이므로 4절 열린 문제 규칙에 걸린다. Kanamori, The Higher Infinite 32 절을 각주로 달고 '알려진 큰 기수 공리는 이 순서로 줄 세워져 있다' 처럼 출처가 말한 범위에서만 쓸 것",
-      "createdAt": "2026-10-08T05:02:17.463Z",
-      "seq": 1892
     },
     {
       "id": "c36c5e73",
@@ -1348,6 +1364,46 @@
       "seq": 1891
     },
     {
+      "id": "1f573100",
+      "title": "large-cardinal-hierarchy 의 후속 간선",
+      "priority": 11,
+      "note": "38차 회차(2026-10-08)에 large-cardinal-hierarchy(큰 기수의 층, 105줄)를 large-cardinals 의 자식으로 달고 리프로 남겼다. 자식 후보: (1) 서술불가 기수(indescribable cardinals). 문서의 '반사 층 사이의 함의' 가 2계 논리식의 반사를 요지로 쓰면서 이름을 넣지 않았다. 약콤팩트와 Mahlo 사이의 층을 반사 성질로 재는 축이 여기서 갈라진다. (2) 랭크-into-랭크 공리(I0 에서 I3). large-cardinals 의 Kunen 비일관성 정리 절이 위쪽 한계를 말하므로 그 아래 층이 붙을 자리다. (3) 핵심 모형(core model). '무모순성 강도의 순서' 절이 되얻는 쪽 논증을 언급만 하고 방법을 적지 않았다. 부모는 large-cardinal-hierarchy 와 constructible-universe 가 될 것이다. 간선을 그을 때 check-cycle 로 determinacy 와의 방향을 먼저 볼 것",
+      "createdAt": "2026-10-08T08:44:58.466Z",
+      "seq": 1896
+    },
+    {
+      "id": "51d66733",
+      "title": "kubota-leopoldt-zeta 의 후속 간선",
+      "priority": 11,
+      "note": "38차 회차(2026-10-08)에 옛 항목 1f760ab3 의 판단을 '단독 문서로 뗀다' 로 내리고 kubota-leopoldt-zeta(Kubota-Leopoldt p 진 zeta 함수, 83줄)를 썼다. 부모는 p-adic-numbers 와 bernoulli-numbers 이고 리프로 남겼다. p-adic-l-function 은 부모가 이미 셋이라 간선을 긋지 않고 양쪽 본문 링크로만 이었다. 자식 후보: (1) Iwasawa 대수(Lambda = Z_p[[T]])와 Weierstrass 준비 정리. 성질 절 '-Iwasawa 대수 위의 멱급수' 가 Lambda 를 정의 없이 쓴다. iwasawa-main-conjecture 와 stickelberger 도 같은 대상을 쓰므로 세 문서가 공유할 부모가 된다. (2) p 진 로그와 원분 단수. Leopoldt 의 s=1 공식이 log_p 와 1-zeta_f^a 를 쓰는데 두 대상의 정의가 저장소에 없다. (3) Ferrero-Washington 정리(mu=0). 간선을 그을 때 iwasawa-main-conjecture 와의 방향을 check-cycle 로 먼저 볼 것",
+      "createdAt": "2026-10-08T08:50:13.190Z",
+      "seq": 1898
+    },
+    {
+      "id": "3916256e",
+      "title": "4절 금지 표현 전수 점검 (38차 결과)",
+      "priority": 11,
+      "note": "38차 회차(2026-10-08)에 docs 700 문서로 돌린 결과다. 수확 5 건을 고쳤다(커밋 dcca5f4c). erdos-stone-theorem:9 '금지해 보자' -> '금지한다', normalizer:79 / p-adic-numbers:92 / prime-gaps:92 / sobolev-spaces:7 의 '여기서 나온다' 를 각각 사실 문장으로 바꿨다.\n\n오탐 판정 셋. (1) 비유 grep 의 '사다리[^꼴]' 가 elliptic-curves:118 'Montgomery 사다리' 와 lie-algebras:162 '사다리 연산자' 를 잡고 '함정' 이 post-quantum-cryptography:126 '함정문' 을 잡는다. 셋 다 굳은 용어이므로 고치지 않는다. (2) 문장형 헤딩 grep 의 '[^로]지 *$' 가 '## 증명의 요지' 16 곳을 전부 잡는다. 4절이 권장하는 표현이므로 오탐이고, 이 헤딩은 grep 결과에서 걸러 읽는다. (3) '우리[가는를의]' 는 '봉우리' 9 곳과 discrete-logarithm:43 '어려우리라' 를 잡는다. 실제 '우리' 는 foundations-overview:32 '대상은 우리와 무관하게 존재하고' 한 곳인데, 수리플라톤주의의 인식 주체를 가리키는 말이고 독자를 부르는 용법이 아니므로 두었다.\n\n0 건으로 확인한 축: 매크로(operatorname bm DeclareMathOperator newcommand def), 열린 문제 절 이름, '대부분/일부는/대체로 열려', 코드블록 언어 표시, 언어 없는 코드블록, '놀랍게도' 류 번역체 11 패턴, '이 점이 중요하다' 류 조언투 7 패턴",
+      "createdAt": "2026-10-08T08:52:30.725Z",
+      "seq": 1900
+    },
+    {
+      "id": "2adf33a3",
+      "title": "iwasawa-algebra 의 후속 간선",
+      "priority": 11,
+      "note": "38차 회차(2026-10-08)에 iwasawa-algebra(Iwasawa 대수, 84줄)를 p-adic-numbers 와 noetherian-rings 의 자식으로 달고 리프로 남겼다. iwasawa-main-conjecture 와 kubota-leopoldt-zeta 는 부모가 이미 둘 이상이라 간선 대신 본문 링크로 이었다(kubota-leopoldt-zeta 개요에 링크 하나를 넣었고, iwasawa-main-conjecture 는 손대지 않았다). 자식 후보: (1) Ferrero-Washington 정리(mu=0). 활용 절 셋째가 진술만 적고 증명 방향(Z_p 계수 멱급수의 정규성과 Weil 수)을 적지 않았다. (2) p 진 로그와 원분 단수. kubota-leopoldt-zeta 의 Leopoldt s=1 공식과 iwasawa-algebra 양쪽이 쓰는 대상인데 저장소에 정의가 없다. (3) Selmer 군의 Iwasawa 이론. 활용 절 넷째가 가리키는 축이고 부모는 iwasawa-algebra 와 selmer-tate-shafarevich 가 될 것이다",
+      "createdAt": "2026-10-08T08:56:45.410Z",
+      "seq": 1901
+    },
+    {
+      "id": "4f72d111",
+      "title": "'A와 B' 제목 전수 판정 (38차)과 perfect graph 용어 수정",
+      "priority": 11,
+      "note": "38차 회차(2026-10-08)에 LC_ALL=C.UTF-8 grep -l '^# .*[와과] ' docs/*.md 로 25 건을 뽑아 전부 판정했다. 24 건은 4절 제목 규칙의 예외(정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목)이거나 파일명이 두 주제를 함께 담은 것이라 그대로 둔다. 파일명이 둘을 담은 것: dyson-rank-crank fermat-euler-theorem filters-and-nets formalism-hilbert-program ideals-quotient-rings kleisli-eilenberg-moore limits-colimits luzin-sierpinski-sets selmer-tate-shafarevich. 대상+정리 꼴: canonical-height dwork-rationality eisenstein-ideal greenberg-conjecture heegner-points herbrand-ribet np-completeness s-cobordism serre-conjecture speh-representations unique-games vandiver-conjecture waldspurger-formula whittaker-models witten-asymptotics.\n\n수확은 제목 꼴이 아니라 용어였다. perfect-graphs 의 제목과 본문이 perfect graph 를 '완전그래프' 로 적었는데, 저장소에서 '완전그래프' 60 곳은 대부분 complete graph(K_n)를 가리킨다(erdos-stone-theorem:9 등). 같은 말이 두 대상을 가리켰으므로 perfect 쪽을 '완벽그래프' 로 바꿨다(커밋 9591c129). perfect-graphs 안 30 곳과 라벨 6 곳(combinatorics-overview graph-theory-overview x2 lovasz-theta dilworth-theorem integer-programming)과 lovasz-theta:75 본문을 고쳤다. 다른 문서의 '완전성' 은 exactness 와 completeness 라 무관하다.\n\n같은 종류의 용어 충돌을 찾는 다음 차수 후보: 한 한국어 단어가 서로 다른 영문 용어 둘을 가리키는 자리. '정규'(normal/regular), '완비'(complete), '정칙'(regular/nonsingular), '단순'(simple) 을 전수로 보면 후보가 나올 것이다",
+      "createdAt": "2026-10-08T08:59:14.676Z",
+      "seq": 1902
+    },
+    {
       "id": "2d5c4e17",
       "title": "무한 범주와 호모토피 이론",
       "priority": 10,
@@ -1650,14 +1706,6 @@
       "note": "정수론. 2026-09-27 셋째 회차 확인으로 Hida 를 언급하는 문서가 넷(deformation-rings, fontaine-mazur, overconvergent-modular-symbols, p-adic-l-function)인데 단독 문서가 없다. overconvergent-modular-symbols 는 Stevens 의 조절 정리가 Hida 의 기울기 0 판본을 넓힌 것이라 하고, p-adic-l-function 의 Greenberg-Stevens 증명은 Hida 족을 따라 무게를 움직인다. 부모 후보는 modular-forms 와 hecke-operators, 또는 overconvergent-modular-symbols. 쓸 내용: 보통 사영자 e = lim U_p^{n!}, 무게를 변수로 하는 Hida 대수 위의 족, 조절 정리, 무게를 움직여 L 불변량을 얻는 구도",
       "createdAt": "2026-09-27T20:43:52.972Z",
       "seq": 1331
-    },
-    {
-      "id": "1f760ab3",
-      "title": "Kubota-Leopoldt p 진 zeta 함수",
-      "priority": 10,
-      "note": "정수론. p-adic-l-function 이 개요와 유일성 절에서 원형으로 언급하고, bernoulli-numbers 139 줄이 Kummer 합동으로 연장을 만드는 계산을 이미 담고 있으며, iwasawa-main-conjecture 15 줄과 118 절도 이 대상을 쓴다. 단독 문서로 뗄지, bernoulli-numbers 와 p-adic-l-function 두 문서가 나눠 가진 지금 상태로 둘지 먼저 판단할 것. 8절 기준으로는 세 문서가 각자 다른 각도(합동, 보간, 주추측)라 합치기보다 갈래로 모으는 쪽이 유력하고, 뗀다면 부모는 bernoulli-numbers 와 p-adic-numbers 다",
-      "createdAt": "2026-09-27T20:43:53.108Z",
-      "seq": 1332
     },
     {
       "id": "fa89f46e",
