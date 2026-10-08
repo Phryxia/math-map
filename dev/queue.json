@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-08T01:03:56.700Z",
-  "nextSeq": 1887,
+  "savedAt": "2026-10-08T05:04:31.828Z",
+  "nextSeq": 1895,
   "items": [
     {
       "id": "bbb14af7",
@@ -452,6 +452,22 @@
       "seq": 1885
     },
     {
+      "id": "507a1c15",
+      "title": "38차 회차 산출물 회귀 점검 결과",
+      "priority": 20,
+      "note": "완료 메모. 38차 회차(2026-10-08)에 새로 쓴 문서 다섯(kiefer-wolfowitz 109줄, american-options 121줄, black-scholes-equation 93줄, virtual-species 89줄, determinacy 71줄)과 고친 문서 열(stochastic-approximation ito-calculus optimal-stopping feynman-kac molecular-species large-cardinals 와 개관 넷)에 커밋 뒤 검사를 전부 다시 돌려 0 건을 확인했다. 돌린 것: 4절 수식 검사 여섯, 문장형 헤딩 grep, 비유 금지 grep, 금지 매크로 grep, 번역체와 예고문 grep, 큐 5b750f72 의 글자 연산자 검사(수식 구간에서 중괄호 명령 인자를 지우고 비백슬래시 연산자를 찾는 것), 두문자어 첫 등장 확인. 두문자어 검사에서 보고된 것은 전부 예외다: SPSA 는 45줄 첫 등장에서 풀었고, IEEE 는 각주 학술지명(hidden-markov-model 과 lovasz-theta 에 선례), LV 는 수식 안 \\mathcal LV, FF GG FG GF 는 종의 곱 기호, ZFC ZF AD 는 \\mathsf 안의 체계 이름, II 는 게임 참가자 이름이다. determinacy 에서는 작성 직후 검사가 피동 '만들어진다' 와 become 직역 '아니게 된다' 둘을 잡아 커밋 전에 고쳤고, '넓어진다' 는 큐 49d7bd05 가 적은 자동사 오탐이라 유지했다.",
+      "createdAt": "2026-10-08T05:02:17.586Z",
+      "seq": 1893
+    },
+    {
+      "id": "26cc2643",
+      "title": "개관 지도 mermaid 의 부분그래프 검증기",
+      "priority": 20,
+      "note": "38차 회차(2026-10-08) 점검 결과와 검증기 메모. 4.5절은 \"지도의 mermaid 는 실제 간선의 부분그래프여야 한다\" 고 하는데 dev/ 에 이것을 보는 스크립트가 없다(0절이 dev/ 수정을 금지하므로 스크래치패드에 만들었다). 방법. (1) 각 문서의 \"## 선수지식\" 절에서 링크를 읽어 부모>자식 간선 집합을 만든다. 절의 끝은 다음 \"#\" 로 자른다. (2) 각 문서의 ^# (.+)$ 첫 매치로 제목->id 사전을 만든다. (3) 개관의 mermaid 코드블록에서 ID[\"라벨\"] 로 라벨 사전을 만들고 --> 간선을 뽑아 라벨을 제목으로 보고 id 로 바꿔 (1) 에 있는지 본다. 결과. 간선 374 개 가운데 라벨이 문서 제목과 정확히 일치한 315 개는 전부 실제 간선이었다(위반 0 건). 남은 59 개는 mermaid 라벨이 축약형이나 설명형이어서 제목 사전에 없는 것이고 저장소의 문제가 아니다. 대표 예: probability-overview 의 \"확률변수와 기댓값\"(문서 제목은 \"확률변수\"), topology-overview 의 \"Compactness\"(제목은 \"콤팩트성\"), number-theory-overview 의 \"Riemann zeta\", optimization-overview 의 \"Lagrange 쌍대성과 KKT\". 다음에 이 검증기를 쓸 때는 라벨->id 를 손으로 짝지은 표를 함께 두면 374 개 전부를 볼 수 있다. 4.5절이 라벨 표기를 제한하지 않으므로 축약 라벨 자체를 고칠 일은 아니다.",
+      "createdAt": "2026-10-08T05:04:07.059Z",
+      "seq": 1894
+    },
+    {
       "id": "410fd79d",
       "title": "Zilber 삼분법 갈래의 후속 간선 (15차)",
       "priority": 12,
@@ -490,6 +506,14 @@
       "note": "34차 회차(2026-10-05)에 philosophy_of_math 4개, foundations 4개(개관 포함), data_structures 2개를 모두 끝냈다. 32차 메모가 가리킨 묶음을 한 회차에 닫았다. 커밋 여섯이다. f2ac68dd(철학 4개), c6d011d4(higher-inductive-types homotopy-type-theory), e23f000f(structural-set-theory), efff1f73(union-find), 274881e1(foundations-overview), aa3cd780(link-cut-trees). 10개 문서 1105줄에서 고친 곳은 70 여 줄이다.\n\n고친 유형별 집계. 등위로 이어 붙인 문장 25곳, 피동 12곳, 문서 자신이나 앞 문장을 가리키는 메타 서술 7곳('마지막 두 줄은', '반대 방향의 관찰도 있다', '증명은 두 부분으로 나뉜다', '핵심 아이디어는 두 단계다', '아래 그림에서 왼쪽이', '세 입장은 같은 실천을 다르게 해석한다', '~기 때문이다'), 금지 표현 6곳('라는 사실' 2, '여기서 나온다', '즉', '갈림길', '바닥난다'), 평가와 범위 과장 6곳('대가가 컸다', '기술적 유산은 크다', '제2정리는 더 직접적이다', '결정적 차이다', '모든 조건 분기를 설명한다', '대부분 가속할 수 있다'), 번역체 헤딩 2곳('## 형식주의 자체에 대한 반론', '## 등식 증명의 유일성과의 충돌'), 영문 용어 4곳(metamathematics, nominalism, inverse Ackermann, amortized), 각주가 마침표 뒤에 붙은 것 3곳, 각주 없는 열린 문제 언급 2곳, 되풀이 마무리 문단 3곳이다.\n\n따로 적을 둘. (1) mathematical-structuralism 의 직관 절은 야구팀 유격수 비유가 두 문단의 골자였다. 4절은 직관 절에서 비유를 한 문장으로만 허용하므로, 자연수 자리를 먼저 쓰고 비유를 한 문장으로 줄였다. 비유가 문단 구조를 잡고 있는 문서는 문장만 고쳐서는 규칙을 맞출 수 없고 문단 순서를 바꿔야 한다. (2) union-find:89 의 정렬 비용이 $O(m log m)$ 으로 적혀 있었다. 수식 안의 log 가 명령이 아니어서 MathJax 가 변수 셋의 곱으로 기울여 그린다. 검사 여섯이 이것을 잡지 못한다. 수식 안 글자 연산자를 훑는 grep(\\$[^$]*[^a-zA-Z\\\\](log|sin|cos|tan|exp|max|min|lim|det|dim|ker)[^a-zA-Z])이 다음 회차의 전수 검사 후보다. dev/ 를 고치지 않으므로(0절) 스크래치패드에서 돌린다.\n\n다음 분야. 32차까지 닫은 것과 이 회차의 셋을 빼고, node dev/graph.mjs tags 로 주 분야별 문서 수를 세어 많은 쪽부터 고른다. 한 회차에 1000줄 남짓이 적정 분량이다. 이 회차는 1105줄 10개 문서에 40분 타이머를 거의 다 썼다.\n\n통독 절차. (1) 대상 문서를 주 분야 태그(태그 줄 첫 태그)로 뽑는다. (2) 구조 검사(문장형 헤딩, 비유, 열린 문제 절, 금지 매크로, 구형 '## 정의' 구조, 코드블록 언어)를 묶음 전체에 한 번 돌린다. (3) 번역체와 금지 표현 grep 을 돌려 후보를 모은다. '~에 대한' 은 철학 문서에서 대부분 정상 한국어이므로 헤딩에 있는 것만 고친다. (4) 긴 줄 훑기로 읽을 순서를 정한다. (5) 문서를 cat -n 으로 통독하며 판정한다. sed -n 으로 읽으면 줄 번호를 잃어 교체가 밀린다(큐의 줄 번호 사고 메모). (6) 교체 후 헤딩 줄 번호가 원본과 같은지 보고, 수식 검수 여섯과 키릴 검사, 두문자어 첫 등장, 같은 금지 표현 grep 을 다시 돌린다.",
       "createdAt": "2026-10-05T21:06:02.551Z",
       "seq": 1742
+    },
+    {
+      "id": "59e53a3d",
+      "title": "큰 기수의 층 (Woodin 기수 포함)",
+      "priority": 12,
+      "note": "38차 회차(2026-10-08)에 옛 항목 697822e7 을 갱신해 다시 넣었다. determinacy 를 쓰면서 Woodin 기수를 정의 없이 쓰게 되었으므로, 옛 항목 f57c4b5a 가 가리킨 Woodin 기수와 이 항목의 '도달 불가능 기수 위의 층' 을 한 문서로 닫는 것이 맞다. large-cardinals 는 도달 불가능 기수와 측도 가능 기수 둘만 정의하고 그 사이의 층(Mahlo, 약콤팩트, Ramsey, 강기수, 초콤팩트)은 이름도 넣지 않는다. 담을 것: 각 층의 정의, 기본 매장의 세기로 재는 순서, Woodin 기수의 정의(모든 A 가 V_kappa 의 부분집합일 때 A-강 기수가 kappa 아래에 있다), 그리고 determinacy 성질 절 '큰 기수에서 오는 결정성' 이 쓰는 Martin-Steel 의 가정. 부모는 large-cardinals 이고 determinacy 와 선수관계를 긋지 않는다(determinacy 가 이미 large-cardinals 의 자식이므로 check-cycle 로 방향을 먼저 확인할 것). 쓸 때 주의: 강도 순서가 선형이라는 서술은 정리가 아니라 관찰이므로 4절 열린 문제 규칙에 걸린다. Kanamori, The Higher Infinite 32 절을 각주로 달고 '알려진 큰 기수 공리는 이 순서로 줄 세워져 있다' 처럼 출처가 말한 범위에서만 쓸 것",
+      "createdAt": "2026-10-08T05:02:17.463Z",
+      "seq": 1892
     },
     {
       "id": "c36c5e73",
@@ -1284,6 +1308,46 @@
       "seq": 1875
     },
     {
+      "id": "e8adcb8a",
+      "title": "kiefer-wolfowitz 의 후속 간선",
+      "priority": 11,
+      "note": "38차 회차(2026-10-08)에 kiefer-wolfowitz(Kiefer-Wolfowitz 절차, 109줄)를 썼다. 큐 fbed365b 의 처리 결과다. 부모는 stochastic-approximation 하나이고 check-cycle 은 OK, 주 분야는 #optimization 으로 두어 optimization-overview 의 '반복 알고리즘' 갈래 분산 축소 경사법 뒤에 넣었다. 리프로 남겼다. 자식 후보 셋. (1) 영차 최적화를 독립 문서로 세우는 안. 활용 둘째 항목이 이름만 붙이고 지나가는데, 가우시안 평활 기울기 추정량과 질의 복잡도 하한, 진화전략(CMA-ES)의 갱신이 한 문서가 될 만하다. 부모는 kiefer-wolfowitz 와 gradient-descent. (2) Robbins-Monro 의 반복값 평균(Polyak-Ruppert 평균)은 stochastic-approximation 의 '수렴 속도' 절 마지막 문장이 언급만 하고 지나간다. 부모는 stochastic-approximation 이라 kiefer-wolfowitz 의 자식은 아니다. (3) 시뮬레이션 최적화의 공통 난수(common random numbers)로 차분의 분산을 줄이는 기법. 저장소에 대기열 모형 문서가 없어 부모를 세우기 어렵다.",
+      "createdAt": "2026-10-08T04:43:19.874Z",
+      "seq": 1887
+    },
+    {
+      "id": "73bc89ee",
+      "title": "american-options 의 후속 간선",
+      "priority": 11,
+      "note": "38차 회차(2026-10-08)에 american-options(미국형 옵션, 121줄)를 ito-calculus 와 optimal-stopping 의 자식으로 새로 달고 리프로 남겼다. 큐 530f0750 의 처리 결과다. check-cycle 은 둘 다 OK, 주 분야는 #probability 로 두어 probability-overview 의 '연속시간 확률과정' 갈래 Feynman-Kac 뒤에 넣었다. 자식 후보 셋. (1) 자유경계 문제를 독립 문서로 세우는 안. 성질 절의 'Stefan 문제' 절이 네 줄로 대응만 적는데, 장애물 문제의 변분 형식과 경계의 정칙성이 한 문서가 될 만하다. 부모는 american-options 가 아니라 variational-inequality 쪽이 맞고 저장소에 그 문서가 없다. (2) Black-Scholes 방정식 문서가 없다. 정의 절이 작용소 L 을 식으로만 놓고 유도를 생략했는데, 복제 포트폴리오와 Feynman-Kac 으로 가는 유도가 feynman-kac 와 ito-calculus 사이에 들어갈 자리다. 그 문서가 생기면 american-options 의 부모를 ito-calculus 에서 그쪽으로 옮기는 것이 맞다. (3) Snell 포락의 Doob-Meyer 분해로 조기 행사 프리미엄을 얻는 논법. doob-decomposition 이 이산시간 판만 다루므로 연속시간 Doob-Meyer 분해 문서가 먼저 필요하다.",
+      "createdAt": "2026-10-08T04:48:52.131Z",
+      "seq": 1888
+    },
+    {
+      "id": "1bb50054",
+      "title": "black-scholes-equation 의 후속 간선과 feynman-kac 리프 해소",
+      "priority": 11,
+      "note": "38차 회차(2026-10-08)에 black-scholes-equation(Black-Scholes 방정식, 93줄)을 feynman-kac 의 자식으로 새로 달았다. 같은 회차에 쓴 american-options 의 부모를 ito-calculus 에서 이쪽으로 옮겨(ito-calculus 의 더 알아보기에서 제거, 본문 링크로 남김) feynman-kac -> black-scholes-equation -> american-options 사슬을 만들었다. feynman-kac 이 리프에서 풀렸다. 부모를 ito-calculus 가 아니라 feynman-kac 으로 잡은 근거는 5절 '부모 가운데 다른 부모의 조상인 것을 뺀다' 이고 ito-calculus 는 feynman-kac 의 조상이다. 자식 후보 셋. (1) 변동성 곡면과 국소 변동성(Dupire 방정식). 활용 첫 항목이 곡면을 이름만 붙이고 지나간다. 부모는 black-scholes-equation. (2) 확률 변동성 모형(Heston). 부모는 black-scholes-equation 과 stochastic-differential-equations. (3) feynman-kac 의 활용 절 '## Black-Scholes 방정식과 위험중립 가격' 이 이제 새 문서와 겹친다. 그 절은 네 문단이고 동치 관계만 적으므로 중복으로 보지 않았으나, feynman-kac 을 다음에 보강할 때 그 절을 두 문장으로 줄이고 새 문서로 본문 링크를 거는 것이 맞다.",
+      "createdAt": "2026-10-08T04:52:08.896Z",
+      "seq": 1889
+    },
+    {
+      "id": "545177f7",
+      "title": "virtual-species 의 후속 간선과 Yeh 서지 확인",
+      "priority": 11,
+      "note": "38차 회차(2026-10-08)에 virtual-species(가상 종, 89줄)를 molecular-species 의 자식으로 새로 달아 그 문서의 리프를 풀었다. 큐 2929c7ad 의 처리 결과다. 그 항목이 남긴 'Yeh 의 정리 서지를 확인하지 못했다' 는 각주 1 로 닫았다: Y. N. Yeh, The calculus of virtual species and K-species, in Combinatoire enumerative, Lecture Notes in Mathematics 1234, Springer, 1986, 351-369. molecular-species 활용 셋째 항목에 본문 링크를 걸었고 combinatorics-overview 의 분자종 뒤에 넣었다. 자식 후보 둘. (1) 종의 합성과 음함수 정리(종의 방정식 A = X E(A) 꼴을 푸는 Joyal 의 암시적 종 정리). 부모는 virtual-species 와 combinatorial-species. 성질 절 '유리 계수로의 확대' 가 로그와 지수를 언급만 하고 지나간다. (2) K-종 자체. 활용 넷째 항목이 표현환과의 유사만 적는데 Yeh 의 논문 후반이 K-종을 다루므로 독립 문서가 될 만하다. 부모는 virtual-species 와 representation-theory 쪽.",
+      "createdAt": "2026-10-08T04:57:04.551Z",
+      "seq": 1890
+    },
+    {
+      "id": "6bd190be",
+      "title": "determinacy 의 후속 간선",
+      "priority": 11,
+      "note": "38차 회차(2026-10-08)에 determinacy(결정성, 71줄)를 large-cardinals 의 자식으로 새로 달아 그 문서의 리프를 풀었다. 큐 f57c4b5a 의 처리 결과다. 그 항목이 요청한 재료 넷을 모두 담았다(무한 게임과 전략의 정의, Gale-Stewart 정리와 증명 요지, 사영 결정성, AD 아래 모든 실수 집합이 Lebesgue 가측). large-cardinals 활용 '결정성 공리' 절 첫 문장에 본문 링크를 걸었고 foundations-overview 의 큰 기수 뒤에 넣었다. 자식 후보 셋. (1) Woodin 기수 자체. 성질 절 '큰 기수에서 오는 결정성' 이 Woodin 기수를 정의 없이 쓴다. large-cardinals 는 도달 불가능과 측도 가능 둘만 정의하므로 그 사이의 층(Mahlo, 약콤팩트, Ramsey, 강기수, 초콤팩트)과 Woodin 을 함께 다루는 문서가 필요하고, 이것이 큐 697822e7 '도달 불가능 기수 위의 층' 과 같은 자리다. 두 항목을 한 문서로 닫는 것이 맞다. (2) 기술적 집합론(사영 계층과 Borel 계층, 균일화 성질). 활용 둘째 항목이 '고전 기술적 집합론' 을 이름만 쓴다. 부모는 determinacy 가 아니라 borel-hierarchy 쪽이고 저장소에 없다. (3) Banach-Mazur 게임과 Baire 성질. 활용 넷째 '게임 논법' 의 구체적 사례이고 baire-category 가 이미 있으므로 부모 둘을 세울 수 있다.",
+      "createdAt": "2026-10-08T05:00:57.256Z",
+      "seq": 1891
+    },
+    {
       "id": "2d5c4e17",
       "title": "무한 범주와 호모토피 이론",
       "priority": 10,
@@ -1444,38 +1508,6 @@
       "seq": 1005
     },
     {
-      "id": "f57c4b5a",
-      "title": "Woodin 기수와 결정성",
-      "priority": 10,
-      "note": "2026-09-23 회차에 large-cardinals 를 쓰며 남긴 갈래다. 그 문서의 활용 둘째 절이 Woodin 기수가 무한히 많으면 L(R) 에서 모든 게임이 결정된다는 사실을 각주 2(Woodin 1988, Kanamori 32 절)와 함께 한 문단으로만 쓴다. 별도 문서가 될 재료: 무한 게임과 필승 전략의 정의, Gale–Stewart 정리(열린 게임의 결정성), 사영 결정성, AD 아래 모든 실수 집합이 Lebesgue 가측이라는 결론. 부모는 large-cardinals 이고 분야는 집합론이다. 문서를 만들면 large-cardinals 의 더 알아보기가 채워진다(지금은 '아직 연결한 문서가 없다')",
-      "createdAt": "2026-09-23T12:53:05.931Z",
-      "seq": 1017
-    },
-    {
-      "id": "697822e7",
-      "title": "도달 불가능 기수 위의 층",
-      "priority": 10,
-      "note": "2026-09-23 회차에 large-cardinals 를 쓰며 남긴 갈래다. 그 문서는 도달 불가능 기수와 측도 가능 기수 둘만 정의하고 그 사이의 층(Mahlo, 약콤팩트, Ramsey, 강기수, 초콤팩트)은 이름도 넣지 않았다. 4절이 말하는 대로 한 문서가 개념 하나를 다루므로 나열하지 않은 것이 맞지만, 무모순성 강도의 줄을 다루는 문서가 따로 있으면 large-cardinals 의 자식이 된다. 쓸 때 주의: 강도 순서가 선형이라는 서술은 정리가 아니라 관찰이므로 4절 열린 문제 규칙에 걸린다. Kanamori, The Higher Infinite 32 절을 각주로 달고 '알려진 큰 기수 공리는 이 순서로 줄 세워져 있다' 처럼 출처가 말한 범위에서만 쓸 것",
-      "createdAt": "2026-09-23T12:53:06.116Z",
-      "seq": 1018
-    },
-    {
-      "id": "530f0750",
-      "title": "미국형 옵션과 자유경계 문제",
-      "priority": 10,
-      "note": "optimal-stopping 활용 둘째 항목이 부른다. 연속시간 판이라 brownian-motion 과 ito-calculus 가 부모 후보이고 optimal-stopping 도 부모. 위험중립 측도를 change-of-measure 로 잇는다. 행사 경계와 Stefan 문제. #probability #optimization",
-      "createdAt": "2026-09-23T20:40:19.342Z",
-      "seq": 1035
-    },
-    {
-      "id": "fbed365b",
-      "title": "Kiefer-Wolfowitz 절차와 영차 최적화",
-      "priority": 10,
-      "note": "stochastic-approximation 정의 둘째 절이 세 줄뿐이다. 유한차분 기울기 추정, SPSA 의 동시 섭동, 차분폭과 보폭의 동시 일정, 수렴률이 1차 방법보다 느린 이유. 부모는 stochastic-approximation. #optimization #statistics",
-      "createdAt": "2026-09-23T20:47:57.070Z",
-      "seq": 1041
-    },
-    {
       "id": "8fd1250b",
       "title": "Szemeredi-Trotter 의 후속 간선",
       "priority": 10,
@@ -1490,14 +1522,6 @@
       "note": "2026-09-24 회차 2차. 1차가 본 head -20 뒤쪽을 훑었다. 전체 건수는 grep -n \"^##\" docs/*.md | grep -E \"(경우|때|자리|대목|까닭|차이) *$\" 로 61 자리다. 2차에서 고친 여섯: girsanov 85 \"절대연속이 깨지는 경우\" 를 \"절대연속성의 실패\" 로(1차가 change-of-measure 136 에 쓴 이름과 맞췄다), monotone-convergence 97 \"감소하는 경우\" 를 \"감소하는 열\" 로(본문 첫 문장이 그 말로 시작한다), random-variables 15 \"연속인 경우\" 를 \"연속 확률변수\" 로, dynamic-connectivity 73 \"숲인 경우\" 를 \"숲에서의 연결성\" 으로, 같은 문서 87 \"offline 의 경우\" 를 \"offline 질의\" 로, volume-conjecture 88 \"증명된 경우\" 를 \"증명된 매듭족\" 으로(표가 매듭별 상태다). 남긴 것: \"X 의 경우\" 꼴 가운데 X 가 수학 대상이고 그 절이 정말 그 경우를 다루는 자리(dirichlet-l-functions 133 함수체, discrete-logarithm 97 타원곡선, fontaine-mazur 42 1 차원, galois-representations 113 곡선, newton-polygon 69 멱급수, perron-frobenius 35 와 59, siegel-weil 108 과 142, weyl-character-formula 28)와 \"X 와의 차이\" 꼴 전부(banach-spaces 94, compactness 75, fredholm-operators 23, modules 129, semidefinite-programming 86, tracy-widom 27, turan-theorem 39, wigner-semicircle 36 등). 이들은 명사구이고 대신할 개념 이름이 본문에 없다. 3차에 볼 것: 1차 note 가 남긴 다른 패턴 \"^## .*(하는|되는|인) [가-힣]+$\" 관형절 헤딩을 아직 보지 않았다. 그 grep 을 먼저 세고 훑는다",
       "createdAt": "2026-09-24T01:02:32.948Z",
       "seq": 1070
-    },
-    {
-      "id": "2929c7ad",
-      "title": "가상 종",
-      "priority": 10,
-      "note": "molecular-species 활용 셋째와 combinatorial-species 가 부를 자리다. 2026-09-23 회차 note 가 Yeh 의 정리 서지를 확인하지 못해 각주를 달지 못했다고 남겼으므로 이 문서를 쓸 때 서지를 먼저 확인할 것. 부모는 molecular-species. 내용: 원자종의 자유 가환 모노이드를 정수 계수로 넓힌 환, 뺄셈이 가능해지는 자리, 종의 방정식을 푸는 데 쓰이는 방식, K-종과의 관계. 2026-09-24 회차에 combinatorial-species 정의 절에 종의 사상(자연변환)과 동형을 넣었으므로 '종의 등식' 의 뜻은 이제 그 문서에 있다",
-      "createdAt": "2026-09-24T01:03:47.386Z",
-      "seq": 1071
     },
     {
       "id": "32502811",
