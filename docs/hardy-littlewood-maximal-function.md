@@ -89,6 +89,6 @@ $f\in L^1\_{\mathrm{loc}}(\mathbb R^n)$ 이면 거의 모든 $x$ 에서 공 평�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [극대 특이적분](maximal-singular-integral.md)
 
 #analysis #measure_theory #functional_analysis
