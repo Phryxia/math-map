@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-10-07T21:06:43.012Z",
-  "nextSeq": 1878,
+  "savedAt": "2026-10-08T01:03:56.700Z",
+  "nextSeq": 1887,
   "items": [
-    {
-      "id": "44ca5d52",
-      "title": "수식에 라틴 문자와 혼동되는 키릴·그리스 문자가 섞이는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 29차 회차에 jones-wenzl-idempotents 를 쓰다 개요의 $$ 블록에서 'e_i' 의 e 가 키릴 소문자 е(U+0435)로 들어갔다. 'f_n^2=f_n, e_if_n=f_nе_i=0' 에서 둘째 e 하나만 키릴이었다. 원문을 눈으로 보면 라틴 e 와 구별되지 않고 MathJax 는 이 글자를 명령으로도 변수로도 읽지 못해 식이 깨진다.\n\n기존 검사 여섯 가지가 이것을 잡지 못한다. render-check 는 원문의 수식 스팬이 렌더 결과에 남는지만 보므로 통과하고, 4절의 awk 와 grep 넷도 ASCII 패턴만 보므로 통과한다. 29차에 걸린 것은 5번 검사 grep -noE '\\[^a-zA-Z0-9\\\\]_' 의 우연이다. 키릴 е 가 '영숫자가 아닌 문자' 로 잡혀 그 뒤 밑줄이 보고됐다. 즉 바로 뒤에 첨자 밑줄이 없는 자리에 섞이면 여섯 검사 전부를 통과한다.\n\n검사법. 라틴과 모양이 같은 키릴·그리스 문자를 코드포인트로 거른다. 키릴 소문자 а е о р с у х і(U+0430 0435 043E 0440 0441 0443 0445 0456), 키릴 대문자 А В Е К М Н О Р С Т У Х(U+0410 0412 0415 041A 041C 041D 041E 0420 0421 0422 0423 0425), 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ(U+03BF 0391 0392 0395 0397 0399 039A 039C 039D 039F 03A1 03A4 03A7)를 docs 전체와 README 에서 찾는다. 29차에 전수로 돌려 보고는 둘이고 하나는 오검출이다. transcendental-numbers:98 의 키릴 е 둘은 Gelfond 논문의 학술지명 'Известия Академии наук СССР' 안이라 정상이다. 따라서 검사 결과는 키릴 문자가 든 줄이 러시아어 문헌 표기인지만 보면 판정된다. 그리스 문자는 수식에서 \\alpha 꼴 명령으로 쓰므로 본문에 직접 오면 대개 사고다.\n\n새 문서나 보강한 문서를 쓴 회차에는 그 문서들만이라도 이 검사를 돌린다. dev/ 스크립트는 고치지 않으므로(0절) 스크래치패드에 python 으로 만들면 된다. 독자가 dev 에 넣을지는 판단이 필요하다.\n\n2026-10-04 30차 회차에 전수로 다시 돌렸다. 범위를 키릴 전체로 넓히면 안 된다. Tate-Shafarevich 군의 표준 기호 Ш(키릴 대문자 Sha, U+0428)가 문서 9 개에서 수식 안 \\text{Ш} 로 정상 사용된다(birch-swinnerton-dyer canonical-height euler-systems heegner-points kolyvagin-logachev kolyvagin-systems poitou-tate selmer-tate-shafarevich 와 그 표). 보고 60 여 줄이 전부 이것이고 실제 사고는 0 건이다. 위 note 가 적은 라틴 혼동 글자 목록(키릴 소문자 а е о р с у х і, 대문자 А В Е К М Н О Р С Т У Х, 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ)으로만 거르면 Ш 는 걸리지 않는다. transcendental-numbers:98 의 러시아어 학술지명도 29차 판정대로 정상이다. 즉 검사는 반드시 그 목록으로 좁혀서 돌리고, 이번 회차 새 문서 셋(lax-milgram ricci-flow gartner-ellis)에 좁힌 검사를 돌려 0 건을 확인했다.\n\n2026-10-05 34차 회차에 pop 이 이 항목을 꺼냈다. p100 상시 메모가 큐 머리에 모여 있어 2절 3단계의 pop 이 작업 아닌 항목을 집는다. 꺼냈으면 같은 제목과 note 로 다시 push 해 되돌리고, 작업은 list 에서 p50 이하의 실제 항목을 골라 remove 로 꺼낸다.",
-      "createdAt": "2026-10-05T20:42:59.456Z",
-      "seq": 1739
-    },
     {
       "id": "bbb14af7",
       "title": "줄 번호로 문단을 교체하다 헤딩을 덮어쓰는 사고",
@@ -58,6 +50,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 32차 회차 시작에서 git pull origin claude/math 가 'Your branch and origin/claude/math have diverged, and have 50 and 50 different commits each' 와 'fatal: Need to specify how to reconcile divergent branches' 로 실패했다. 실제로 갈라진 것이 아니다. 실행 환경이 저장소를 depth 50 으로 shallow clone 하므로 .git/shallow 가 히스토리를 자르고, git 이 공통 조상을 찾지 못해 양쪽을 서로 50 커밋 앞선 것으로 센다. fetch 출력의 'forced update' 표시도 같은 원인이고 원격 히스토리가 다시 쓰인 것이 아니다. 판별법은 git merge-base HEAD origin/claude/math 가 종료코드 1 로 아무것도 내놓지 않는 것이다. 해결은 git fetch --unshallow origin claude/math 를 돌린 뒤 git rev-list --left-right --count HEAD...origin/claude/math 로 확인하는 것이다. 32차에는 0 410 이 나와 로컬이 원격의 조상임이 드러났고 git pull --ff-only 로 끝났다. 커밋을 되돌리거나 git reset --hard 를 쓸 자리가 아니다.\n\n2026-10-05 33차 회차에도 같은 증상이 났다. 로컬 HEAD 가 06f789e(queue: 312 items, 2026-09-30), 원격이 e8faf21(queue: 350 items, 2026-10-05) 이고 양쪽이 서로 50 커밋 앞선 것으로 보고됐다. 이 회차는 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 사후에 --unshallow 를 돌려 git rev-list --left-right --count 06f789e...origin/claude/math 가 0 425 를 내놓아 잃은 커밋이 없음을 확인했으나, 순서가 거꾸로였다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 --unshallow 와 rev-list 로 조상관계를 확인한다. 큐 메모는 1절의 queue list 단계에서 읽히므로, pull 실패는 그 단계 앞에 오는 점도 이 사고가 되풀이되는 이유다.\n\n2026-10-05 34차 회차에도 같은 증상이 났다(로컬 06f789e, 원격 99023a4, 서로 50 커밋). 이 회차는 실행 환경의 권한 분류기가 git reset --hard, git merge -X theirs --allow-unrelated-histories, 충돌 파일의 git checkout --theirs 를 전부 'Irreversible Local Destruction' 으로 거부했다. 즉 33차가 쓴 reset --hard 는 이제 쓸 수 없고, --unshallow 가 우회가 아니라 유일하게 통하는 첫 수다. 거부를 받고 돌아와 이 메모를 읽은 뒤 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌려 0 433 을 얻고 git pull --ff-only 로 끝냈다. 저장소를 다른 곳에 새로 클론할 필요도 없다. 순서는 하나다. pull 이 divergent 로 실패하면 git merge-base 로 공통 조상이 없음을 확인하고, 곧바로 --unshallow 와 rev-list 를 돌린다.\n\n2026-10-07 35차 회차에도 같은 증상이 났다(로컬 4e30b1b, 원격 3eb4a47, 서로 50 커밋, fetch 가 'forced update' 표시). 이 회차도 33차처럼 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 34차가 거부된 그 조작이 이번에는 통과했으므로 권한 분류기에 의존해 사고를 막을 수 없다. 사전에 git diff --name-status 로 로컬에만 있는 파일이 0 이고 원격이 문서 32 개를 더 가진 상위 집합임을 확인한 뒤 실행했고, 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 '0 60' 을 내놓아 잃은 커밋이 없음을 확인했다. 그래도 순서는 거꾸로였다. 되풀이되는 이유는 이 메모가 1절의 queue list 단계에서 읽히고 pull 실패는 그 앞에 온다는 것이다. 33차와 35차가 reset 을 썼고 34차는 거부된 뒤 정규 경로로 갔으니 세 회차 모두 같은 자리에서 틀렸다. 독자가 CLAUDE.md 1절의 git pull 줄 옆에 'divergent 로 실패하면 git fetch --unshallow origin claude/math 뒤 git rev-list --left-right --count HEAD...origin/claude/math' 한 줄을 넣을지 판단할 자리다.",
       "createdAt": "2026-10-07T08:47:57.234Z",
       "seq": 1842
+    },
+    {
+      "id": "df90dfba",
+      "title": "수식에 라틴 문자와 혼동되는 키릴·그리스 문자가 섞이는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 29차 회차에 jones-wenzl-idempotents 를 쓰다 개요의 $$ 블록에서 'e_i' 의 e 가 키릴 소문자 е(U+0435)로 들어갔다. 'f_n^2=f_n, e_if_n=f_nе_i=0' 에서 둘째 e 하나만 키릴이었다. 원문을 눈으로 보면 라틴 e 와 구별되지 않고 MathJax 는 이 글자를 명령으로도 변수로도 읽지 못해 식이 깨진다.\n\n기존 검사 여섯 가지가 이것을 잡지 못한다. render-check 는 원문의 수식 스팬이 렌더 결과에 남는지만 보므로 통과하고, 4절의 awk 와 grep 넷도 ASCII 패턴만 보므로 통과한다. 29차에 걸린 것은 5번 검사 grep -noE '\\[^a-zA-Z0-9\\\\]_' 의 우연이다. 키릴 е 가 '영숫자가 아닌 문자' 로 잡혀 그 뒤 밑줄이 보고됐다. 즉 바로 뒤에 첨자 밑줄이 없는 자리에 섞이면 여섯 검사 전부를 통과한다.\n\n검사법. 라틴과 모양이 같은 키릴·그리스 문자를 코드포인트로 거른다. 키릴 소문자 а е о р с у х і(U+0430 0435 043E 0440 0441 0443 0445 0456), 키릴 대문자 А В Е К М Н О Р С Т У Х(U+0410 0412 0415 041A 041C 041D 041E 0420 0421 0422 0423 0425), 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ(U+03BF 0391 0392 0395 0397 0399 039A 039C 039D 039F 03A1 03A4 03A7)를 docs 전체와 README 에서 찾는다. 29차에 전수로 돌려 보고는 둘이고 하나는 오검출이다. transcendental-numbers:98 의 키릴 е 둘은 Gelfond 논문의 학술지명 'Известия Академии наук СССР' 안이라 정상이다. 따라서 검사 결과는 키릴 문자가 든 줄이 러시아어 문헌 표기인지만 보면 판정된다. 그리스 문자는 수식에서 \\alpha 꼴 명령으로 쓰므로 본문에 직접 오면 대개 사고다.\n\n새 문서나 보강한 문서를 쓴 회차에는 그 문서들만이라도 이 검사를 돌린다. dev/ 스크립트는 고치지 않으므로(0절) 스크래치패드에 python 으로 만들면 된다. 독자가 dev 에 넣을지는 판단이 필요하다.\n\n2026-10-04 30차 회차에 전수로 다시 돌렸다. 범위를 키릴 전체로 넓히면 안 된다. Tate-Shafarevich 군의 표준 기호 Ш(키릴 대문자 Sha, U+0428)가 문서 9 개에서 수식 안 \\text{Ш} 로 정상 사용된다(birch-swinnerton-dyer canonical-height euler-systems heegner-points kolyvagin-logachev kolyvagin-systems poitou-tate selmer-tate-shafarevich 와 그 표). 보고 60 여 줄이 전부 이것이고 실제 사고는 0 건이다. 위 note 가 적은 라틴 혼동 글자 목록(키릴 소문자 а е о р с у х і, 대문자 А В Е К М Н О Р С Т У Х, 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ)으로만 거르면 Ш 는 걸리지 않는다. transcendental-numbers:98 의 러시아어 학술지명도 29차 판정대로 정상이다. 즉 검사는 반드시 그 목록으로 좁혀서 돌리고, 이번 회차 새 문서 셋(lax-milgram ricci-flow gartner-ellis)에 좁힌 검사를 돌려 0 건을 확인했다.\n\n2026-10-05 34차 회차에 pop 이 이 항목을 꺼냈다. p100 상시 메모가 큐 머리에 모여 있어 2절 3단계의 pop 이 작업 아닌 항목을 집는다. 꺼냈으면 같은 제목과 note 로 다시 push 해 되돌리고, 작업은 list 에서 p50 이하의 실제 항목을 골라 remove 로 꺼낸다.",
+      "createdAt": "2026-10-08T00:36:40.180Z",
+      "seq": 1878
     },
     {
       "id": "08e59419",
@@ -418,6 +418,38 @@
       "note": "38차 회차(2026-10-07) 판정. 큐 cc15f6ba 의 '독자 판단 대기' 를 닫는다. 결론은 올리지 않는 것이고 문서는 고치지 않았다. 확인한 것은 cc15f6ba 가 적은 두 근거 가운데 '올리지 않을 근거' 쪽이 현재 문서 상태와 맞는다는 것이다. holomorphic-functions(147줄)의 '## 그 밖의 결과'(89줄)는 Cauchy 적분 정리에서 따라오는 결과를 목록으로 모은 자리이고 최대 절댓값 원리가 그중 91줄 한 항목이다. 같은 목록의 다른 항목만 남기고 하나를 절로 올리면 '그 밖의 결과' 라는 묶음의 기준이 깨진다. 개요(5줄)도 Cauchy 적분 정리 하나에서 Cauchy 적분 공식, 해석성, Liouville 정리, 최대 절댓값 원리, 대수학의 기본정리가 차례로 따라온다고 적어 그 다섯을 같은 층으로 세우므로, 그중 셋만 절이고 하나가 목록인 현재 배치가 개요와 어긋나지 않는다. 최대 절댓값 원리의 증명과 Phragmen-Lindelof 쪽 확장이 필요해지면 별도 문서가 맞고, 그때 부모는 holomorphic-functions 와 maximum-principle(조화함수 쪽 최대값 원리) 둘이며 두 문서의 중복 여부를 먼저 본다.",
       "createdAt": "2026-10-07T17:05:54.589Z",
       "seq": 1870
+    },
+    {
+      "id": "8cd33c8b",
+      "title": "8절 통합 후보 기계 추출 결과 (2026-10-08)",
+      "priority": 20,
+      "note": "2026-10-08 회차에 8절 통합 후보를 기계로 뽑았다. 기준은 8절 첫 항목을 그대로 옮긴 것이다. (a) 부모의 더 알아보기가 자식 하나뿐, (b) 그 자식이 리프, (c) 자식의 부모가 그 부모 하나뿐, (d) 두 문서 줄 수 합이 1000 미만, (e) 개관 제외. 32 쌍이 나왔고 줄 수 합 오름차순으로 적는다. erdos-sierpinski-duality/luzin-sierpinski-sets 147, montel-theorem/julia-set 165, schauder-fixed-point/leray-schauder-degree 167, o-minimality/pila-wilkie-theorem 168, sperner-lemma/kkm-theorem 177, hilbert-theorem-90/kummer-theory 179, martins-axiom/suslin-problem 182, line-relaxation/semicoarsening 184, obstruction-theory/postnikov-tower 184, kakutani-fixed-point/nash-equilibrium 185, sequential-probability-ratio-test/group-sequential-design 185, bias-variance-decomposition/regularization 188, burnside-lemma/polya-enumeration 188, combinatorial-species/molecular-species 196, temperley-lieb-algebras/jones-wenzl-idempotents 203, jordan-canonical-form/rational-canonical-form 205, algebraic-multigrid/smoothed-aggregation 206, borel-hierarchy/projective-hierarchy 206, stone-weierstrass/chebyshev-polynomials 206, large-deviations/gartner-ellis 213, quadratic-forms/witt-ring 218, homotopy-type-theory/higher-inductive-types 221, vandiver-conjecture/greenberg-conjecture 228, tutte-polynomial/potts-model 234, large-sieve/prime-gaps 240, monads/kleisli-eilenberg-moore 253, post-quantum-cryptography/homomorphic-encryption 266, arthur-parameters/speh-representations 274, dynamic-connectivity/link-cut-trees 279, waldspurger-formula/tunnell-saito 285, sinkhorn/unbalanced-optimal-transport 297, probabilistic-method/erdos-renyi-graphs 307. 주의: 이 추출은 8절의 양 기준(a~d)만 보고 '서로 없이는 설명되지 않는가' 는 보지 못한다. 대부분은 독립 개념이라 합치면 안 된다(jordan-canonical-form 과 rational-canonical-form 은 각자 표준형이고, borel-hierarchy 와 projective-hierarchy 는 층이 다르다). 8절이 든 실제 통합 패턴은 'X' 와 'X 의 이론', 'X' 와 'X 의 의미론' 꼴이므로 다음 회차에는 그 꼴에 가까운 것부터 읽어 판정할 것. 1차 후보는 monads/kleisli-eilenberg-moore(자식 제목이 'A와 B' 꼴이기도 하다), combinatorial-species/molecular-species, o-minimality/pila-wilkie-theorem 이다. 판정한 쌍은 합치든 기각하든 이 note 에 결과를 적어 같은 쌍을 다시 읽지 않게 할 것.",
+      "createdAt": "2026-10-08T00:54:27.310Z",
+      "seq": 1882
+    },
+    {
+      "id": "19e3fe77",
+      "title": "통합 후보 monads/kleisli-eilenberg-moore 기각 판정 (2026-10-08)",
+      "priority": 20,
+      "note": "8cd33c8b 항목이 1차 후보로 꼽은 쌍을 판정했다. 결론은 합치지 않는 것이다. 8절은 '두 문서가 서로 없이는 설명되지 않고' 를 요구하는데 이 쌍은 한 방향만 성립한다. monads(115줄)는 세 쌍 정의, Kleisli 형태의 동치 정의, T-대수, 수반에서 나오는 monad, 대수 이론 대응, comonad 까지 독립으로 읽히고, kleisli-eilenberg-moore(138줄)만 부모 없이 읽히지 않는다. 즉 선수관계이고 간선이 맞다. 자식 제목 'Kleisli 범주와 Eilenberg-Moore 범주' 는 'A와 B' 꼴이지만 문서의 주제가 monad 의 수반 분해이고 두 범주가 그 분해의 양 끝(시작대상과 종단대상)이므로 한 주제다. 파일명도 둘을 다 가리켜 4절 제목 규칙의 '파일명이 그중 하나만 가리키는' 경우가 아니다. 제목을 'Monad 의 수반 분해' 로 좁히는 안은 파일명 변경과 참조 전수 수정이 따르고 얻는 것이 적어 두지 않았다. 대신 중복을 갈랐다(커밋 b868051). monads 의 '## monad 의 수반 분해' 절이 Kleisli 범주의 사상 정의와 합성, EM 범주의 망각 함자 수반, 시작/종단대상, 자유대수 충만 부분범주 동치까지 담아 자식의 네 절(분해의 범주, Kleisli 범주, Eilenberg-Moore 범주, Kleisli 범주의 매장)과 겹쳤다. 부모 쪽을 네 문장으로 줄이고 두 범주의 이름과 양 끝이라는 사실만 남기고 세부는 자식 링크로 넘겼다. 자식 문서는 손대지 않았다. 다음 회차에 볼 1차 후보는 combinatorial-species/molecular-species 와 o-minimality/pila-wilkie-theorem 이다.",
+      "createdAt": "2026-10-08T00:56:48.928Z",
+      "seq": 1883
+    },
+    {
+      "id": "4e4a5186",
+      "title": "통합 후보 두 쌍 추가 기각 판정 (2026-10-08)",
+      "priority": 20,
+      "note": "8cd33c8b 항목이 1차 후보로 꼽은 셋 가운데 남은 둘을 판정했다. 둘 다 기각이고 docs 변경은 없다. (1) combinatorial-species(108줄)/molecular-species(88줄). 부모는 종의 정의, 종의 사상, 지수생성함수, 합·곱·합성, 연산의 보존, 지수 공식, 미분과 점화식, 순환 지표까지 독립으로 읽힌다. 자식은 몫 종, 분자종과 원자종, 분자 분해 정리, 부분군 H <= S_n 마다 하나인 분류, 원자 분해를 다루는 독립 주제다. 한 방향 선수관계이므로 간선이 맞다. 중복도 없다. 자식의 '## 생성함수' 는 분자 분해로 쓴 급수 두 꼴이고 부모의 '## 순환 지표' 는 전단사군 작용의 몫을 세는 다른 내용이다. (2) o-minimality(89줄)/pila-wilkie-theorem(79줄). 부모는 o-최소 구조, 셀, 셀 분해 정리, 차원과 유한성, o-최소인 구조의 예를 담아 독립으로 읽힌다. 자식은 높이와 대수적 부분을 정의하고 셈 정리와 증명 요지를 담는 별개의 정리 문서다. 역시 한 방향이고 간선이 맞다. 종합: 8cd33c8b 의 32 쌍 가운데 1차 후보 셋(monads/kleisli-eilenberg-moore 는 19e3fe77 에서 기각)이 모두 기각됐다. 기계 추출의 (a)~(d) 기준은 '부모가 자식 하나만 거느린 선수관계' 를 전부 잡아내므로 8절의 통합 기준과 겹치는 범위가 좁다. 다음 회차에 이 목록을 다시 볼 때는 쌍의 제목이 'X' 와 'X 의 이론/의미론' 꼴인지를 먼저 보고, 아니면 읽지 않고 넘길 것. 그 꼴에 해당하는 쌍이 목록에 남아 있지 않으면 이 축은 닫힌 것으로 본다.",
+      "createdAt": "2026-10-08T00:57:53.722Z",
+      "seq": 1884
+    },
+    {
+      "id": "ee4bb39b",
+      "title": "prime-gaps 와 circle-method 의 간선 기각 판정 (2026-10-08)",
+      "priority": 20,
+      "note": "51e1a8fe 항목의 note 가 '원 방법 문서가 생기면 재배치 판단이 필요하다' 고 미뤄 둔 판단을 닫았다. circle-method(원법, 189줄, 부모 partitions 와 prime-number-theorem)가 생겼으므로 prime-gaps 와의 간선을 판정했다. 결론은 간선을 넣지 않는 것이다. 이유 둘. (1) 방향이 양쪽 다 어긋난다. circle-method -> prime-gaps 는 prime-gaps 가 원법의 특수 사례나 응용이 아니라 체 방법 축의 문서이고 특이급수 정의를 자체적으로 적어 원법 없이 읽히므로 5절의 '그저 부모를 도구로 한 번 쓰는가' 쪽이다. prime-gaps -> circle-method 는 원법이 분할수와 Waring 문제까지 거느린 더 넓은 방법이라 방향이 거꾸로다. (2) prime-gaps 의 부모는 large-sieve 하나로 축이 분명하고 둘째 부모를 더할 근거가 약하다. 대신 본문 링크를 걸었다(커밋 3512da6). prime-gaps 의 '## 특이급수' 절에 소수마다의 인자가 국소 밀도라는 문장과 원법의 특이급수도 같은 꼴로 쪼개진다는 문장을 더하고 circle-method 를 링크했다. circle-method 의 '## 특이급수의 국소 밀도 분해' 절이 그 분해를 다룬다. 51e1a8fe 의 남은 자식 후보는 Chen 정리(저장소에 없다)와 Cramer 추측(없다)이다.",
+      "createdAt": "2026-10-08T00:59:05.058Z",
+      "seq": 1885
     },
     {
       "id": "410fd79d",
@@ -1388,14 +1420,6 @@
       "seq": 803
     },
     {
-      "id": "9f19e6c7",
-      "title": "Hamilton 역학과 Legendre 변환",
-      "priority": 10,
-      "note": "analysis 또는 differential_geometry. calculus-of-variations 의 활용 절 첫 항목이 작용의 정류 조건을 언급만 한다. Legendre 변환으로 라그랑지안에서 해밀토니안으로 넘어가는 절차와 심플렉틱 구조를 다루는 문서가 필요하다. 부모는 calculus-of-variations 와 convexity(Legendre 변환이 볼록 켤레다)",
-      "createdAt": "2026-09-21T12:57:08.260Z",
-      "seq": 841
-    },
-    {
       "id": "086527d4",
       "title": "4절 문체 전수 점검 (다음 차수)",
       "priority": 10,
@@ -1538,14 +1562,6 @@
       "note": "2026-09-24 회차. luzin-sierpinski-sets note 가 남긴 두 후보를 판정했다. (1) 강 측도 영집합은 이미 strong-measure-zero 로 존재한다(measure 와 measure-theory-overview 와 luzin-sierpinski-sets 가 모두 링크한다). 그 note 는 문서가 생기기 전에 쓰인 것이다. (2) Cichon 도표는 별도 문서로 떼지 않기로 판정했다. cardinal-characteristics 93줄의 성질 절이 이미 mermaid 도표, add(M) 과 cof(M) 의 두 등식, 정의에서 나오는 부등식의 증명 요지, 무작위 실수 강제법과 Cohen 실수를 쓴 무모순성 결과를 담고 있다. 떼면 그 문서의 성질 절 절반이 사라지고 8절의 분할 기준(1000줄 초과, A와 B 제목)에 해당하지도 않는다. 이 축은 닫혔다. cardinal-characteristics 의 남은 후속 후보: (1) Cohen 실수 강제법. 무모순성 결과 절이 무작위 실수와 나란히 부르는데 random-real-forcing 만 문서가 있다. 부모는 forcing. (2) Tukey 순서와 공종성. add 와 cof 를 아이디얼 사이의 Tukey 사상으로 견주는 틀이고 부모는 이 문서와 order-lattices. (3) Bartoszynski 의 특징짓기. add(N) 과 cof(N) 을 급수의 미끄러짐으로 다시 쓰는 정리이고 그 문서가 각주로만 언급한다",
       "createdAt": "2026-09-24T16:51:29.075Z",
       "seq": 1120
-    },
-    {
-      "id": "2cd6d8dc",
-      "title": "Galvin–Mycielski–Solovay 정리",
-      "priority": 10,
-      "note": "측도론/집합론. 부모는 strong-measure-zero 하나다(2026-09-25 회차에 borel-conjecture 를 그 아래에 붙이며 판정했다). 진술: X 가 강 측도 영집합일 필요충분조건은 모든 제1범주 집합 M 에 대해 X+M != R 인 것. 지금 strong-measure-zero 성질 절 셋째가 두 문단으로 진술만 하고 증명이 없다. 문서가 될 만한 근거: 증명이 측도 조건과 Baire 범주 조건을 오가는 논법이고 위상군으로의 일반화(국소콤팩트군에서 같은 형태가 정의가 된다)까지 담으면 분량이 찬다. borel-conjecture 활용 절 둘째가 이 정리의 덧셈 특징을 쓰므로 그 문서에서 본문 링크를 걸 것. 출처는 Galvin-Mycielski-Solovay, Compositio Math. 1979 와 Bartoszynski-Judah 8장",
-      "createdAt": "2026-09-25T00:50:22.510Z",
-      "seq": 1130
     },
     {
       "id": "f70953a1",
@@ -2226,6 +2242,38 @@
       "note": "분야는 analysis. 36차 회차(2026-10-07)에 catenary 가 cosh 와 sinh 를, isoperimetric-inequality 가 Wirtinger 부등식을 정의 없이 쓴다(0절, 이름만 썼다). 둘은 별개 항목이다. (1) 쌍곡함수: catenary 의 포물선과의 구별 절이 cosh 의 Taylor 전개를 쓰고, analysis-overview 의 미적분 갈래에 자리가 있다. 지수함수 쪽 문서가 저장소에 있는지 먼저 확인할 것. (2) Wirtinger 부등식: 평균 0 인 주기함수에서 L2 노름을 도함수의 L2 노름으로 누르는 부등식이고 Poincare 부등식의 1 차원 경우다. isoperimetric-inequality 의 Hurwitz 증명 절이 Fourier 계수의 n^2-n 소멸 조건으로 이것을 가리킨다. 부모 후보는 fourier-series 와 lp-spaces 이고 sobolev-spaces 쪽 Poincare 부등식과 겹치는지 8절로 먼저 볼 것.",
       "createdAt": "2026-10-07T21:06:24.730Z",
       "seq": 1877
+    },
+    {
+      "id": "0a0e41a3",
+      "title": "Galvin–Mycielski–Solovay 정리의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-08 회차에 galvin-mycielski-solovay 를 새로 썼다(83줄, 부모 strong-measure-zero 와 baire-category 둘, 측도론 개관 '측도와 가측성' 갈래). 리프다. 담은 것: 가산 집합을 Baire 정리로 확인하고 Cantor 집합을 C+C=[0,2] 와 M=C+Z 로 반박하는 직관 두 문단, 주기적 닫힌 집합 F(eta)=union [j, j+eta] 로 덮개를 뽑는 쉬운 방향의 완전한 요지, 어려운 방향은 구간 축소 구성의 성격만 한 문단. 자식 후보와 판단할 점: (1) Prikry 의 문제와 강 측도 영집합의 덧셈 특징 역사 - 별도 문서가 될 분량이 아니다. (2) 국소콤팩트군·Polish 군에서의 GMS - 이 문서 활용 둘째가 이름만 쓴다. topological-groups 와 haar-measure 가 부모 후보이고, Polish 군에서 성립 여부에 대한 결과는 서지를 확인한 뒤에 쓸 것. 확인 없이 열림/미해결로 쓰지 않는다(4절 열린 문제 규칙). (3) sigma 아이디얼의 덧셈성과 덮개 수 - cardinal-characteristics 가 이미 있고 이 정리는 그 문서의 도구이므로 간선이 아니라 본문 링크로 두었다.",
+      "createdAt": "2026-10-08T00:45:30.759Z",
+      "seq": 1879
+    },
+    {
+      "id": "5bd5dcaf",
+      "title": "Hamilton 역학의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-08 회차에 hamiltonian-mechanics(Hamilton 역학)를 새로 썼다(91줄, 부모 calculus-of-variations 와 cotangent-bundle 둘, 미분기하 개관 '다양체와 다발' 갈래). 제목은 큐 항목의 'Hamilton 역학과 Legendre 변환' 에서 파일명이 가리키는 개념 하나로 좁혔다(4절 제목 규칙). Legendre 변환은 convex-conjugate 문서가 이미 있어 본문 링크로만 걸고 정의 절에서 H 를 L 의 볼록 공액으로 적었다. 담은 것: 1차원 입자의 2차 방정식을 p=m q' 로 1차 둘로 가르는 직관 두 문단, 정준방정식과 좌표 없는 Hamilton 벡터장 omega(X_H, .)=dH, 에너지 보존과 Cartan 공식으로 본 흐름의 심플렉틱 성질, Poisson 괄호, 볼록성이 깨지면 대응이 끊긴다는 절. 리프다. 자식 후보: (1) 적분 가능계와 작용-각 변수(Arnold-Liouville 정리) - 저장소에 없다. 부모가 이 문서 하나로 깔끔하다. (2) Noether 정리 - 없다. 부모 후보가 이 문서와 lie-groups 둘이다. (3) 심플렉틱 적분기 - 없다. 활용 셋째가 이름 없이 성질만 쓴다. numerical-analysis 축에 붙일지 판단이 필요하다. (4) geodesics 는 riemannian-metrics 하나를 부모로 둔 계량 쪽 서술이라 Hamilton 없이 읽히므로 본문 링크로만 걸었다.",
+      "createdAt": "2026-10-08T00:50:09.633Z",
+      "seq": 1880
+    },
+    {
+      "id": "50906bbe",
+      "title": "Noether 정리의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-08 회차에 noether-theorem(Noether 정리)을 새로 썼다(85줄, 부모 calculus-of-variations 와 hamiltonian-mechanics 둘, 해석학 개관 '미분과 적분' 갈래). 부모 둘 사이에 조상 관계가 있다(calculus-of-variations 가 hamiltonian-mechanics 의 부모). 5절은 4개 이상일 때 조상을 빼라고 하므로 둘은 그대로 두었으나, Lagrange 판 증명이 Euler-Lagrange 방정식만 쓰고 Hamilton 판은 Poisson 괄호 절 하나이므로 보강 회차에 hamiltonian-mechanics 를 뺄지 재판정할 것. 담은 것: 자유 입자 예 하나를 끌고 간 직관 두 문단, 생성자와 Noether 전하의 정의, s 미분과 Euler-Lagrange 대입으로 끝나는 증명 요지, 전미분까지 허용하는 꼴과 에너지 보존, Poisson 괄호가 양방향 대응을 주는 절, 반사 대칭이 전하를 주지 않는 절. 리프다. 자식 후보: (1) 모멘트 사상과 심플렉틱 몫 - 저장소에 없다. 활용 넷째가 이름만 쓴다. 부모 후보는 이 문서와 lie-groups 와 symplectic-manifolds 셋이라 5절 기준에 닿는다. (2) 적분 가능계와 Arnold-Liouville 정리 - 없다. hamiltonian-mechanics 쪽 자식이 더 맞다. (3) Killing 벡터장 - 없다. riemannian-metrics 가 부모여야 하고 이 문서는 본문 링크로 충분하다.",
+      "createdAt": "2026-10-08T00:54:27.194Z",
+      "seq": 1881
+    },
+    {
+      "id": "1b3ebde0",
+      "title": "Killing 벡터장의 후속 간선과 묶음 이름 판정",
+      "priority": 10,
+      "note": "2026-10-08 회차에 killing-vector-fields(Killing 벡터장)를 새로 썼다(73줄, 부모 riemannian-metrics 하나, 미분기하 개관 '계량과 곡률' 갈래). 50906bbe note 가 남긴 자식 후보 (3) 을 닫은 것이다. 담은 것: 극좌표 계량에서 각운동량이 보존되는 계산을 직관 두 문단으로 끌고 가 좌표에 의존하지 않는 조건이 필요한 자리까지 간 것, Lie 미분 조건과 Killing 방정식, 측지선을 따르는 보존량 g(X, gamma')의 두 줄 증명, Lie 대수 구조와 n(n+1)/2 상한, Noether 전하와의 일치. 리프다. 판정이 필요한 것: riemannian-metrics 의 더 알아보기에서 '### 곡률과 위상' 묶음의 측지선 뒤에 넣었는데 묶음 이름과 내용이 어긋난다. Killing 벡터장은 대칭 쪽이고 그 묶음의 나머지 둘은 Gauss-Bonnet 과 Ricci 흐름이다. 항목 하나로 '### 대칭' 묶음을 세우는 것은 과하다고 보아 두지 않았다. 등거리변환군이나 상수곡률 공간 문서가 생기면 묶음을 새로 가를 것. 자식 후보: (1) 등거리변환군 - 저장소에 없다. 이 문서와 lie-groups 가 부모 후보다. (2) 상수곡률 공간과 공간형 - 없다. curvature 와 이 문서가 부모 후보다. (3) 모멘트 사상 - 50906bbe 의 후보 (1) 과 같다.",
+      "createdAt": "2026-10-08T01:01:44.007Z",
+      "seq": 1886
     },
     {
       "id": "dfb3e493",
