@@ -53,6 +53,7 @@ graph TD
 - [Bell 수](bell-numbers.md): 집합 분할 전체의 수, 지수생성함수와 Dobinski 공식
 - [조합적 종](combinatorial-species.md): 구조를 배정하는 규칙의 합·곱·합성이 지수생성함수의 연산이 된다
 - [분자종](molecular-species.md): 합으로 쪼갤 수 없는 종은 $X^n/H$ 뿐이고 모든 종이 그 합으로 유일하게 분해된다
+- [가상 종](virtual-species.md): 분자종의 계수를 정수로 넓힌 환, 가역원과 종의 등식 풀이
 - [Lagrange 반전 공식](lagrange-inversion.md): $w=z\varphi(w)$ 의 해의 계수를 $\varphi$ 의 거듭제곱에서 읽는다
 ## 설계와 접촉 구조
 
