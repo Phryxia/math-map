@@ -165,6 +165,7 @@ $\mathbb R$ 와 $\mathbb Q_p$ 는 $\mathbb Q$ 의 완비화로서 대등하다. 
 
 ### L 함수와 타원곡선
 
+- [Iwasawa 대수](iwasawa-algebra.md)
 - [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md)
 - [Tate 곡선](tate-curve.md)
 - [p 진 L 함수](p-adic-l-function.md)

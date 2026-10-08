@@ -4,7 +4,7 @@
 
 Kubota–Leopoldt $p$ 진 zeta 함수는 Riemann zeta 의 음의 정수 값 $\zeta(1-n)=-B_n/n$ 을 $p$ 진 위치에서 이어 만든 $\mathbb Z_p$ 상의 해석함수다. [Dirichlet 지표](dirichlet-l-functions.md) $\chi$ 를 붙인 꼴 $L_p(s,\chi)$ 가 표준 대상이고, 음의 정수에서의 값이 [일반화 Bernoulli 수](bernoulli-numbers.md)로 주어진다.
 
-이 함수를 $\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 의 원소로 다시 쓴 것이 [Iwasawa 주추측](iwasawa-main-conjecture.md)의 해석적 변이다.
+이 함수를 [Iwasawa 대수](iwasawa-algebra.md) $\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 의 원소로 다시 쓴 것이 [Iwasawa 주추측](iwasawa-main-conjecture.md)의 해석적 변이다.
 
 # 직관
 
