@@ -95,5 +95,6 @@ Functor $F : C \to D$ 와 $G : D \to C$ 에 대해 $GF \cong \mathrm{id}\_C$ 이
 - [수반](adjunctions.md)
 - [극한과 쌍대극한](limits-colimits.md)
 - [모노이드 범주](monoidal-categories.md)
+- [무한 범주](infinity-categories.md)
 
 #category_theory #algebra #linear_algebra #computation

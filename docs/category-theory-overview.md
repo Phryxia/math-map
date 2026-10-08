@@ -35,6 +35,7 @@ graph TD
 - [범주](category.md): 대상과 사상, 합성과 항등
 - [함자](functors.md): 범주 사이의 구조 보존 사상
 - [자연변환](natural-transformations.md): 함자 사이의 사상, 함자 범주
+- [무한 범주](infinity-categories.md): 사상 사이의 사상을 모든 차수에서 갖는 범주, 안쪽 Kan 조건
 
 ## 보편성질
 
