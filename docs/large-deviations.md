@@ -98,5 +98,6 @@ $$
 ## 더 알아보기
 
 - [Gärtner–Ellis 정리](gartner-ellis.md)
+- [Freidlin–Wentzell 이론](freidlin-wentzell.md)
 
 #probability #information_theory #statistics #analysis

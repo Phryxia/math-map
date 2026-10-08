@@ -156,5 +156,6 @@ Langevin 방정식은 퍼텐셜 $V$ 안의 입자에 열잡음을 더한 SDE 다
 
 - [Feynman–Kac 공식](feynman-kac.md)
 - [확산모형](diffusion-models.md)
+- [Freidlin–Wentzell 이론](freidlin-wentzell.md)
 
 #probability #analysis #machine_learning
