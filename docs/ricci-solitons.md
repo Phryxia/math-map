@@ -34,7 +34,7 @@ $$
 \mathrm{Ric}(g)+\tfrac12\mathcal L\_Xg=\lambda g
 $$
 
-$\mathcal L\_X$ 는 $X$ 를 따른 Lie 미분이다. $\lambda\gt 0$ 이면 **수축 솔리톤**, $\lambda=0$ 이면 **정상 솔리톤**, $\lambda\lt 0$ 이면 **확장 솔리톤**이라 한다.
+$\mathcal L\_X$ 는 $X$ 를 따른 [Lie 미분](lie-derivative.md)이다. $\lambda\gt 0$ 이면 **수축 솔리톤**, $\lambda=0$ 이면 **정상 솔리톤**, $\lambda\lt 0$ 이면 **확장 솔리톤**이라 한다.
 
 ## 경사 솔리톤
 

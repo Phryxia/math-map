@@ -20,7 +20,7 @@ $$
 \mathcal L_X g=0
 $$
 
-인 것이다. 여기서 $\mathcal L_X$ 는 $X$ 에 대한 Lie 미분이다. 좌표로 쓰면 Levi-Civita 접속에 대해
+인 것이다. 여기서 $\mathcal L_X$ 는 $X$ 에 대한 [Lie 미분](lie-derivative.md)이다. 좌표로 쓰면 Levi-Civita 접속에 대해
 
 $$
 \nabla_iX_j+\nabla_jX_i=0
