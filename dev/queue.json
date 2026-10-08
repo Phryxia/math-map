@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-10-08T17:04:37.765Z",
-  "nextSeq": 1922,
+  "savedAt": "2026-10-08T21:05:32.382Z",
+  "nextSeq": 1932,
   "items": [
-    {
-      "id": "b0b23afc",
-      "title": "큐 서버가 작업 디렉터리 밖에서 기동되어 stop 이 커밋하지 못하는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차 시작에서 세션 시작 pull 이 divergent 로 실패해(큐의 shallow clone 메모) 원격 브랜치를 스크래치패드에 따로 클론하고 거기서 1절 명령을 돌렸다. 그때 node dev/queue.mjs list 가 큐 서버를 그 클론 경로로 기동했다. 뒤에 --unshallow 로 원래 작업 트리를 정상화하고 그 클론을 지웠지만, 서버는 포트 7777 에 그대로 살아 있었다. 그래서 회차 내내 /home/user/math-map 에서 돌린 push 와 remove 가 전부 그 서버로 갔고, 종료 단계의 queue.mjs stop 이 'stopped. saved=true committed=false (git 저장소가 아니다)' 를 냈다. dev/queue.json 은 세션 시작 상태 그대로였고 git status 는 깨끗했다. 메모 넷과 통독 항목 교체가 커밋되지 않을 뻔했다.\n\n복구. 서버는 저장할 때 지운 디렉터리를 다시 만들었으므로 파일이 남아 있었다. find /tmp -name queue.json -newermt '<회차 시작 시각>' 로 찾아 스크래치패드 클론 경로의 queue.json 을 작업 트리의 dev/queue.json 으로 복사하고, JSON 유효성과 항목 수와 이 회차 메모의 존재를 확인한 뒤 'queue: N items (날짜)' 로 따로 커밋했다.\n\n규칙. 큐 서버는 작업 트리에서만 기동한다. 세션 시작 pull 이 실패하면 저장소를 다른 곳에 클론하지 말고 --unshallow 와 rev-list 로 정상화한다(shallow clone 메모). 어떤 이유로 작업 트리 밖에서 queue.mjs 를 한 번이라도 돌렸으면, 이어서 작업 트리에서 node dev/queue.mjs status 로 서버가 어디 것인지 확인하고 stop 으로 끊은 뒤 다시 기동한다. 종료 단계에서는 stop 의 출력에 committed=true 가 있는지 반드시 읽는다. committed=false 면 git log 로 'queue:' 커밋이 생겼는지 보고, 없으면 위 복구를 한다.",
-      "createdAt": "2026-10-05T21:08:48.126Z",
-      "seq": 1744
-    },
     {
       "id": "cbb9382f",
       "title": "문서 분할이 개관 지도 mermaid 의 간선을 어긋나게 하는 사고",
@@ -58,6 +50,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차에 union-find:89 의 정렬 비용이 $O(m log m)$ 으로 적혀 있었다. log 가 \\log 가 아니어서 MathJax 는 이것을 변수 l, o, g 의 곱으로 읽고 기울여 그린다. 식이 깨지지 않으므로 4절의 검사 여섯과 render-check, validate 가 전부 통과한다.\n\n검사법. 수식 구간만 뽑아 중괄호 명령의 인자(\\mathrm{tr} 의 tr 처럼 정상인 것)를 지운 뒤, 백슬래시가 앞에 없는 글자 연산자를 찾는다. 스크래치패드에 node 로 만든다(dev/ 는 고치지 않는다, 0절). 인라인은 $...$ 안, 블록은 $$ 줄 사이를 모아 보고 코드블록은 건너뛴다. 중괄호 인자 제거는 s.replace(/\\\\[a-zA-Z]+\\s*\\{[^{}]*\\}/g, ' ') 로 하고, 패턴은 (^|[^a-zA-Z\\\\{])(log|sin|cos|tan|exp|max|min|lim|det|dim|ker|sup|inf|gcd|lcm|deg|arg|tr|rank)(?![a-zA-Z}]) 다. 인자 제거를 빼면 \\mathrm{tr} 꼴이 160 건 오검출로 나온다.\n\n34차에 docs 전체 633 개 문서로 돌려 0 건을 확인했다(union-find 를 고친 뒤). 즉 이 사고는 저장소에 하나뿐이었다. 수식을 새로 쓰거나 고친 회차에는 그 문서들만이라도 이 검사를 돌린다.",
       "createdAt": "2026-10-08T16:37:11.449Z",
       "seq": 1911
+    },
+    {
+      "id": "4f29a976",
+      "title": "큐 서버가 작업 디렉터리 밖에서 기동되어 stop 이 커밋하지 못하는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차 시작에서 세션 시작 pull 이 divergent 로 실패해(큐의 shallow clone 메모) 원격 브랜치를 스크래치패드에 따로 클론하고 거기서 1절 명령을 돌렸다. 그때 node dev/queue.mjs list 가 큐 서버를 그 클론 경로로 기동했다. 뒤에 --unshallow 로 원래 작업 트리를 정상화하고 그 클론을 지웠지만, 서버는 포트 7777 에 그대로 살아 있었다. 그래서 회차 내내 /home/user/math-map 에서 돌린 push 와 remove 가 전부 그 서버로 갔고, 종료 단계의 queue.mjs stop 이 'stopped. saved=true committed=false (git 저장소가 아니다)' 를 냈다. dev/queue.json 은 세션 시작 상태 그대로였고 git status 는 깨끗했다. 메모 넷과 통독 항목 교체가 커밋되지 않을 뻔했다.\n\n복구. 서버는 저장할 때 지운 디렉터리를 다시 만들었으므로 파일이 남아 있었다. find /tmp -name queue.json -newermt '<회차 시작 시각>' 로 찾아 스크래치패드 클론 경로의 queue.json 을 작업 트리의 dev/queue.json 으로 복사하고, JSON 유효성과 항목 수와 이 회차 메모의 존재를 확인한 뒤 'queue: N items (날짜)' 로 따로 커밋했다.\n\n규칙. 큐 서버는 작업 트리에서만 기동한다. 세션 시작 pull 이 실패하면 저장소를 다른 곳에 클론하지 말고 --unshallow 와 rev-list 로 정상화한다(shallow clone 메모). 어떤 이유로 작업 트리 밖에서 queue.mjs 를 한 번이라도 돌렸으면, 이어서 작업 트리에서 node dev/queue.mjs status 로 서버가 어디 것인지 확인하고 stop 으로 끊은 뒤 다시 기동한다. 종료 단계에서는 stop 의 출력에 committed=true 가 있는지 반드시 읽는다. committed=false 면 git log 로 'queue:' 커밋이 생겼는지 보고, 없으면 위 복구를 한다.",
+      "createdAt": "2026-10-08T20:36:53.886Z",
+      "seq": 1922
     },
     {
       "id": "08e59419",
@@ -498,6 +498,22 @@
       "note": "37차 회차(2026-10-08) 판정: 만들지 않는다. 큐 4a92c9b6(sieve-methods 의 후속 간선) 후보 (3) 과 20493b51(large-sieve 의 후속 간선) 후보 (1) 이 'bounded gaps between primes' 를 저장소에 없는 자식 후보로 적고, GPY 가중과 Zhang, Maynard 의 결과를 담으면 된다고 했다. 그런데 docs/prime-gaps.md(112줄, 부모 large-sieve)가 이미 그 내용을 담고 있다. 성질 절 '## 유계 간격' 이 GPY 의 Selberg 가중 제곱, Bombieri-Vinogradov 의 x^(1/2) 범위에서 부등식이 간신히 성립하지 않는 자리, Zhang 의 매끄러운 법 제한, Maynard-Tao 의 k 변수 가중을 증명 요지로 적고, 각주 2 가 네 논문과 상한 246 과 Elliott-Halberstam 아래의 6 까지 든다. 활용 절도 Bombieri-Vinogradov 의 범위 theta 와 상한의 단조 의존을 다룬다. 따라서 별도 문서를 만들면 prime-gaps 와 통째로 겹친다(8절 통합 기준의 역방향 사고다). 두 큐 항목의 그 후보는 이미 처리된 것으로 보고 넘긴다. 유계 간격 쪽을 보강할 일이 생기면 새 문서가 아니라 prime-gaps 의 그 절을 늘린다.",
       "createdAt": "2026-10-08T16:55:51.217Z",
       "seq": 1918
+    },
+    {
+      "id": "c9a794f4",
+      "title": "4절 문장형 헤딩 grep 의 '에너지' 오탐",
+      "priority": 20,
+      "note": "2026-10-08 회차에 potential-theory 를 쓰며 드러났다. 4절 문체 규칙의 헤딩 검사 grep -n '^##' | grep -E '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) *$' 가 '## 퍼텐셜과 에너지' 를 잡는다. 패턴의 마지막 분기 [^로]지 가 '에너지' 의 끝음절 '지' 에 걸린 것이고, 헤딩은 명사구이므로 규격 위반이 아니다. 같은 꼴의 오탐 후보는 '지' 로 끝나는 명사 전부다: 에너지, 이미지, 패키지, 나머지, 가지. docs 전체에서 grep -n '^##.*지 *$' docs/*.md 로 현황을 보면 판정할 목록이 나온다. 규칙 문구를 고치는 것은 독자 판단이 필요하므로(0절은 CLAUDE.md 수정을 막지 않지만 검사 규칙 변경은 영향이 넓다) 이 회차에는 헤딩을 그대로 두고 메모만 남겼다. 비슷한 오탐 판정 항목: d7db456a('정리하면'), 5bc27ea2('증명의 요지'), b2baa2e9('지나지 않'), 49d7bd05('어진다').",
+      "createdAt": "2026-10-08T20:59:54.484Z",
+      "seq": 1929
+    },
+    {
+      "id": "50fa0e37",
+      "title": "38차 전수 점검 결과와 비유 grep 오탐 세 건 판정",
+      "priority": 20,
+      "note": "2026-10-08 회차(38차) 종료 전에 docs 717 문서에 4절 검사를 전수로 돌렸다. 0 건인 축: 수식 이스케이프 awk, 태그로 읽히는 부등호(grep '<[a-zA-Z]'), 줄 끝 백슬래시, 금지 매크로(operatorname/bm/newcommand), 코드블록 언어(javascript|typescript|mermaid 외), 언어 없는 코드블록, 방향형 절 이름, '대부분 열려' 꼴 범위 뭉뚱그림, 태그가 하나뿐인 문서, graph.mjs tags 의 untagged. validate/cycles/render-check/order-check/node --test 도 전부 0 이다.\n\n비유 금지 grep 은 세 건을 내놓았고 모두 4절이 정한 예외(용어의 일부)다. (1) elliptic-curves 118 '사다리' 는 'Montgomery 사다리' 로 알고리즘 이름이다. (2) lie-algebras 162 는 '사다리 연산자'(ladder operator)다. (3) post-quantum-cryptography 126 의 '함정' 두 건은 '함정문'(trapdoor)이다. 세 건 모두 고치지 않는다. 비유 grep 에 이 세 꼴을 제외하는 패턴을 더할지는 독자 판단이다.\n\n'A와 B' 제목 후보 grep -l '^# .*[와과] ' docs/*.md 는 717 문서 전부를 내놓아 쓸 수 없었다. 큐 8ce35057 의 로케일 메모와 같은 증상이고, LC_ALL=C.UTF-8 을 줘도 같다(이 환경은 LANG 이 비어 있다). 비유 grep 쪽은 로케일 없이도 바르게 동작했으므로 문제는 문자 클래스 [와과] 쪽이다.",
+      "createdAt": "2026-10-08T21:05:11.064Z",
+      "seq": 1931
     },
     {
       "id": "410fd79d",
@@ -1668,22 +1684,6 @@
       "seq": 1273
     },
     {
-      "id": "ba481c81",
-      "title": "Igusa 불변량",
-      "priority": 10,
-      "note": "2026-09-26 회차의 siegel-modular-forms note 가 남긴 후속 후보 넷 가운데 (a) Jacobi 형식은 2026-09-27 에 jacobi-forms 로 썼다. 남은 것 셋. (b) Igusa 불변량: siegel-modular-forms 활용 절 첫째가 이름만 쓴다. 종수 2 곡선의 J2, J4, J6, J8, J10 과 절대 불변량, 부모는 siegel-modular-forms 다. hyperelliptic-curves 문서가 없으므로 둘째 부모는 jacobian-variety 나 종수 쪽을 볼 것. (c) Satake 콤팩트화와 Siegel 연산자: siegel-modular-forms 의 유한 차원성 절과 Phi 연산자의 핵 절이 각각 한 문단이므로 8절 기준으로 문서가 될 분량인지 먼저 판정할 것. (d) 차수 g 의 theta 급수: theta-series 를 보강하는 쪽이 나을 수 있다(8절 겹침 판정 먼저). siegel-modular-forms 가 정의 없이 쓴 용어: 반정수 대칭행렬, 양정부호, 등급환의 Proj, 선다발의 절단, Hecke 고윳값, 일반적이지 않은 자동형 표현, 초타원적, 유니모듈러 격자, 절대 불변량. jacobi-forms 가 정의 없이 쓴 용어: Kohnen plus 공간(문서 안에서 한 문장으로 풀었다), 판별식 형식, Jacobi theta 함수, Dedekind eta 함수, 타원 종수, Chern 수.",
-      "createdAt": "2026-09-27T00:48:14.145Z",
-      "seq": 1279
-    },
-    {
-      "id": "5b192c2e",
-      "title": "Mordell–Weil 시브",
-      "priority": 10,
-      "note": "정수론/계산. chabauty-kim 계산 절과 활용 첫 항목이 이 절차를 이름만 쓰고 지나간다(2026-09-27 첫 회차). 부모 후보는 chabauty-kim 과 chabauty-method. 쓸 내용: 각 소수마다 X(F_q) 와 J(Q)/nJ(Q) 의 상을 견주어 유리점 후보의 잉여류를 거르는 절차, 여러 소수의 정보를 합동으로 교차하는 단계, Chabauty 가 준 유한집합에서 실제 유리점을 확정하는 자리. Bruin-Stoll 의 논문이 출처다",
-      "createdAt": "2026-09-27T08:48:31.301Z",
-      "seq": 1301
-    },
-    {
       "id": "34cffcc5",
       "title": "로마자로 쓴 그리스 문자와 영문 용어 표기 결정 (16차)",
       "priority": 10,
@@ -1868,14 +1868,6 @@
       "seq": 1643
     },
     {
-      "id": "a2bc660b",
-      "title": "퍼텐셜 이론 문서 신설",
-      "priority": 10,
-      "note": "분야는 해석학(#analysis #complex_analysis #probability). 부모는 greens-function 이다. 큐 116f4b72 를 이 회차에 갱신한 것이다. dirichlet-problem 이 각주에서 이름만 쓰는 용량(capacity)과 Wiener 기준, 세분 함수(subharmonic)와 Perron 방법, 그리고 Brownian 운동의 도달 확률로 읽는 해석이 한 문서 분량이다. greens-function 이 리프이므로 그 자식 자리다.",
-      "createdAt": "2026-10-04T09:01:22.174Z",
-      "seq": 1648
-    },
-    {
       "id": "5e5f35fa",
       "title": "모멘트 사상과 심플렉틱 축소",
       "priority": 10,
@@ -1892,36 +1884,12 @@
       "seq": 1671
     },
     {
-      "id": "1798ccc3",
-      "title": "완전 단일모듈 행렬",
-      "priority": 10,
-      "note": "최적화/조합론/선형대수. 부모 후보는 integer-programming 과 matrices. Ghouila-Houri 판정, 구간 행렬과 근접행렬, network-flow 의 정수해와의 관계. integer-programming 성질 절 한 절로만 있다.",
-      "createdAt": "2026-10-04T20:46:23.655Z",
-      "seq": 1673
-    },
-    {
       "id": "a904955c",
       "title": "이진 이차형식의 유형군",
       "priority": 10,
       "note": "정수론. 부모는 quadratic-forms 와 algebraic-number-fields. Gauss 합성, 축약 형식, 이데알 류군과의 동형, 유형수 1 인 판별식의 목록. quadratic-forms 성질 절 한 절로만 있다.",
       "createdAt": "2026-10-04T20:50:29.500Z",
       "seq": 1675
-    },
-    {
-      "id": "ccaa2b81",
-      "title": "측지선의 비교정리",
-      "priority": 10,
-      "note": "미분기하. 부모는 geodesics. Jacobi 장, Rauch 비교정리, Cartan-Hadamard 와 Bonnet-Myers. geodesics 켤레점 절에서 결과만 한 줄로 적었다.",
-      "createdAt": "2026-10-04T20:52:51.371Z",
-      "seq": 1676
-    },
-    {
-      "id": "42c0f132",
-      "title": "Tannaka 쌍대성",
-      "priority": 10,
-      "note": "범주론/표현론. 부모는 monoidal-categories. 섬유함자를 가진 대칭 모노이드 범주에서 군을 복원하는 정리, 아핀 군 스킴과 가군 범주. monoidal-categories 활용 절에서 이름만 썼다.",
-      "createdAt": "2026-10-04T20:55:45.740Z",
-      "seq": 1678
     },
     {
       "id": "aad86bc9",
@@ -1938,14 +1906,6 @@
       "note": "대수. 부모 후보는 exact-sequences 와 derived-functors. 아벨 범주, 사슬 복합체, 분해와 스펙트럼열의 자리. 30차 회차에 exact-sequences 를 쓰면서 뱀 보조정리와 사영분해를 한 절씩만 다뤘다.",
       "createdAt": "2026-10-04T20:58:51.963Z",
       "seq": 1680
-    },
-    {
-      "id": "3da1b6ce",
-      "title": "Lie 미분",
-      "priority": 10,
-      "note": "미분기하. 부모는 vector-fields. 흐름으로 끌어온 텐서장의 미분, Cartan 공식과 외미분의 관계. vector-fields 와 symplectic-manifolds 가 이름만 쓴다.",
-      "createdAt": "2026-10-04T21:01:05.172Z",
-      "seq": 1682
     },
     {
       "id": "d3542cdb",
@@ -2386,6 +2346,62 @@
       "note": "littlewood-paley 성질 절의 Littlewood-Paley 부등식 증명 요지가 이 부등식을 이름만 쓰고 지나간다(0절대로 링크 없이 썼다). 진술은 독립 부호 eps_j 에 대해 sum eps_j a_j 의 L^p 노름이 (sum |a_j|^2)^{1/2} 와 p 에만 의존하는 상수배로 동등하다는 것이다. 분야는 확률 쪽이고 Rademacher 함수와 마팅게일 부등식 축에 붙는다. 부모 후보는 concentration-inequalities 나 martingales 이고 둘의 현재 상태를 먼저 보아야 한다. 만들면 littlewood-paley 의 본문 링크를 달 수 있다(간선은 아니다, 증명에 도구로 한 번 쓰는 관계라 5절 더 알아보기 기준에 들지 않는다).",
       "createdAt": "2026-10-08T16:48:21.513Z",
       "seq": 1915
+    },
+    {
+      "id": "34d7675e",
+      "title": "mordell-weil-sieve 의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-08 회차에 mordell-weil-sieve 를 새로 썼다(98줄, 리프). 부모는 chabauty-method 와 selmer-tate-shafarevich, 정수론 개관 '타원곡선과 유리점' 갈래. chabauty-kim 69줄의 첫 언급에 본문 링크를 걸었다. 후속 후보. (1) 유한 하강 장애(finite descent obstruction): 성질 절 조건부 완전성이 이름만 쓰고 지나간다. 부모는 이 문서와 selmer-tate-shafarevich. Stoll 2007 이 출처다. (2) Brauer-Manin 장애: selmer-tate-shafarevich 142줄도 이름만 쓴다. 하강 장애와 묶어 한 문서로 할지 먼저 판정할 것. (3) 이차 Chabauty: chabauty-method 의 '계수 조건의 한계' 절과 chabauty-kim 이 나눠 설명하므로 8절 겹침 판정 먼저. 이 문서가 정의 없이 쓴 용어: 좋은 환원, 잔차 원판, 비틀림, N 분할 덮개, 뒤틀림 곡선, 분해 Cartan.",
+      "createdAt": "2026-10-08T20:43:27.893Z",
+      "seq": 1923
+    },
+    {
+      "id": "97489533",
+      "title": "igusa-invariants 의 후속 간선과 Siegel 개관 후보 둘",
+      "priority": 10,
+      "note": "2026-10-08 회차에 igusa-invariants 를 새로 썼다(86줄, 리프). 부모는 siegel-modular-forms 하나, 정수론 개관 Siegel 갈래. siegel-modular-forms 활용 절 첫 항목의 'Igusa 불변량' 에 본문 링크를 걸었다. ba481c81 이 남긴 후보 셋 가운데 (b) Igusa 불변량을 이것으로 닫았고 남은 것 둘. (c) Satake 콤팩트화와 Siegel 연산자: siegel-modular-forms 의 유한 차원성 절과 Phi 연산자의 핵 절이 각각 한 문단이므로 8절 기준으로 문서가 될 분량인지 먼저 판정할 것. (d) 차수 g 의 theta 급수: theta-series 를 보강하는 쪽이 나을 수 있다(8절 겹침 판정 먼저). igusa-invariants 의 후속 후보. (1) Mestre 알고리즘: 성질 절 '불변량에서 곡선으로' 가 원뿔곡선과 삼차곡선의 교점으로 한 문단만 쓴다. 부모는 이 문서. (2) 종수 2 곡선의 복소 곱셈과 류다항식: 활용 셋째가 이름만 쓴다. 부모 후보는 이 문서와 complex-multiplication. 이 문서가 정의 없이 쓴 용어: 분리 다항식, 불변식환, 동차화, 분기점, Torelli 사상, 주편극, 전도체, 사차 허수체, 자기준동형환.",
+      "createdAt": "2026-10-08T20:46:59.595Z",
+      "seq": 1924
+    },
+    {
+      "id": "b0b979b9",
+      "title": "lie-derivative 의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-08 회차에 lie-derivative 를 새로 썼다(109줄). 부모는 vector-fields 와 differential-forms, 자식은 killing-vector-fields(부모를 riemannian-metrics 하나에서 둘로 늘렸다). 미분기하 개관 벡터장 줄 뒤에 한 줄 더했고, vector-fields 55줄의 'Lie 미분' 첫 언급에 본문 링크를 걸었다. 후속 후보. (1) 심플렉틱 벡터장과 Hamilton 벡터장: 활용 둘째가 한 항목으로만 쓰고 symplectic-manifolds 가 Hamilton 벡터장을 얼마나 다루는지 8절 겹침 판정 먼저. (2) Poincare 보조정리: 활용 셋째가 호모토피 공식을 이름만 쓴다. de-rham-cohomology 와 겹치는지 먼저 볼 것. (3) 접속과 공변미분: Lie 미분과 달리 방향에 텐서적인 미분이고 대비가 분명하다. 부모 후보는 vector-fields 와 riemannian-metrics. ricci-solitons 도 Lie 미분을 쓰므로 본문 링크 후보다(이 회차에는 걸지 않았다). 이 문서가 정의 없이 쓴 용어: 완비 벡터장, 당김, 미분동형, 공변·반변 성분, 축약, 완전형식, 별모양 영역, 등거리변환, 자기유사해.",
+      "createdAt": "2026-10-08T20:50:23.416Z",
+      "seq": 1925
+    },
+    {
+      "id": "c5272247",
+      "title": "totally-unimodular-matrices 의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-08 회차에 totally-unimodular-matrices 를 새로 썼다(104줄, 리프). 부모는 determinants 와 integer-programming, 최적화 개관 정수계획법 줄 뒤에 한 줄 더했다. integer-programming 의 '## 완전 단일모듈성' 절은 새 문서와 중복이던 Cramer 증명 문단을 한 문장으로 줄이고 본문 링크를 걸었다(8절). 후속 후보. (1) 전체 쌍대 정수성(total dual integrality): Hoffman-Kruskal 의 쌍대 버전이고 Schrijver 22 장이 출처다. 부모는 이 문서. (2) Seymour 분해 정리와 정규 매트로이드: '판정의 복잡도' 절이 이름만 쓴다. 매트로이드 문서가 없으므로 먼저 만들 것. (3) 완전균형 행렬과 완전 이상 그래프: 0-1 행렬 쪽 일반화이고 perfect-graphs 가 있는지 먼저 볼 것. 이 문서가 정의 없이 쓴 용어: 정칙 부분행렬, 꼭짓점-변 근접행렬, 구간 행렬, 피봇, 단체법, 쌍대 문제, 최소 꼭짓점 덮개.",
+      "createdAt": "2026-10-08T20:53:49.412Z",
+      "seq": 1926
+    },
+    {
+      "id": "a8843234",
+      "title": "tannaka-duality 의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-08 회차에 tannaka-duality 를 새로 썼다(96줄, 리프). 부모는 group-representations(구조와 분류 묶음, Peter-Weyl 다음)와 monoidal-categories, 범주론 개관 모노이드 범주 줄 뒤에 한 줄 더했다. monoidal-categories 활용 절 첫 항목의 Tannaka 언급에 본문 링크를 걸었다. 초안의 '## 대칭성을 뺐을 때' 헤딩이 4절 문장형 헤딩 grep 에 걸려 '## 꼬임 범주의 복원' 으로 고쳤다. 후속 후보. (1) 미분 Galois 이론: 활용 첫째가 이름만 쓴다. 부모 후보는 이 문서와 galois-theory, ordinary-differential-equations. Picard-Vessiot 확대가 핵심이다. (2) 모티브와 모티브 Galois 군: 활용 둘째가 가정 아래 진술만 쓴다. 모티브 문서가 없으므로 먼저 만들 것이고 8절 분량 판정 필요. (3) 양자군: 큐 항목 aad86bc9 와 겹치므로 그쪽 note 에 이 문서를 부모 후보로 적을 것. 이 문서가 정의 없이 쓴 용어: 아핀 군 스킴, 쌍대 대상, 완전충실 함자, 정칙표현, 쌍대곱, 좌표환, 아핀 Grassmann 다양체, 반전가능 층, 미분가군.",
+      "createdAt": "2026-10-08T20:56:53.563Z",
+      "seq": 1927
+    },
+    {
+      "id": "a1326f78",
+      "title": "potential-theory 의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-08 회차에 potential-theory 를 새로 썼다(115줄, 리프). 부모는 dirichlet-problem 과 greens-function(둘 다 리프였다), 해석학 개관 Green 함수 줄 뒤에 한 줄 더했다. 큐 116f4b72 와 a2bc660b 가 요청한 내용(용량, Wiener 기준, 세분함수와 Perron 방법, Brownian 도달 확률)을 모두 담았다. 후속 후보. (1) 균형 측도와 Chebyshev 상수: 활용 셋째가 이름만 쓴다. 부모는 이 문서, 복소해석 쪽 태그. (2) 세분함수를 별도 문서로 분리할지: 정의 절 첫 절이 한 문단이므로 8절 분량 판정 먼저. (3) Kakutani 대응의 확률 쪽 확장(열방정식과 Dirichlet 형식): brownian-motion 과 dirichlet-forms 문서 유무를 먼저 볼 것. 이 문서가 정의 없이 쓴 용어: 상반연속, 균형 측도, 상위조화함수, Poisson 적분, 도달 시간, 로그 용량.",
+      "createdAt": "2026-10-08T20:59:54.336Z",
+      "seq": 1928
+    },
+    {
+      "id": "f85f7415",
+      "title": "geodesic-comparison-theorems 의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-08 회차에 geodesic-comparison-theorems 를 새로 썼다(89줄, 리프). 부모는 geodesics 하나(curvature 는 riemannian-metrics 를 거쳐 geodesics 의 조상이므로 5절에 따라 넣지 않았다). 미분기하 개관 측지선 줄 뒤에 한 줄 더했고, geodesics 켤레점 절의 결과 한 줄에 본문 링크를 걸었다. 초안에서 render-check 가 $\\mathrm{sec}_M$ 의 중괄호 뒤 밑줄을 잡아 \\_ 로 고쳤고 \\vert ... \\rvert 혼용 두 곳도 \\vert 로 통일했다. 후속 후보. (1) 구면 정리와 핀칭: Rauch 비교의 대표적 응용인데 활용 절에 넣지 않았다. 부모는 이 문서. Berger-Klingenberg 와 Brendle-Schoen 이 출처다. (2) Jacobi 장을 별도 문서로 분리할지: geodesics 켤레점 절과 이 문서 직관 절이 나눠 설명하므로 8절 겹침 판정 먼저. (3) Gromov-Hausdorff 수렴과 붕괴: Bishop-Gromov 의 쓰임이고 metric-spaces 쪽 부모가 필요하다. 이 문서가 정의 없이 쓴 용어: 지수사상, 단면곡률, 2차 변분, Jacobi 행렬식, 보편덮개, 지름, 비음 Ricci 곡률.",
+      "createdAt": "2026-10-08T21:03:48.673Z",
+      "seq": 1930
     },
     {
       "id": "dfb3e493",
