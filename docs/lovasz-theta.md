@@ -72,7 +72,7 @@ $$
 
 ## 완전그래프에서의 등호
 
-$G$ 가 완전그래프(perfect graph)면 $\alpha(G)=\vartheta(G)=\chi(\bar G)$ 다. 완전그래프의 독립집합과 채색수를 다항시간에 계산하는 알려진 유일한 방법이 이것이다. 강한 완전그래프 정리(2002)가 완전그래프를 구조적으로 특징지은 뒤에도 다항시간 채색 알고리즘은 $\vartheta$ 를 경유한다.
+$G$ 가 완벽그래프(perfect graph)면 $\alpha(G)=\vartheta(G)=\chi(\bar G)$ 다. 완벽그래프의 독립집합과 채색수를 다항시간에 계산하는 알려진 유일한 방법이 이것이다. 강한 완벽그래프 정리(2002)가 완벽그래프를 구조적으로 특징지은 뒤에도 다항시간 채색 알고리즘은 $\vartheta$ 를 경유한다.
 
 ## 곱셈성과 보그래프
 
@@ -149,6 +149,6 @@ $\vartheta$ 를 연관 스킴 위의 부호에 적용하면 Delsarte 의 선형�
 
 ## 더 알아보기
 
-- [완전그래프와 강한 완전그래프 정리](perfect-graphs.md)
+- [완벽그래프와 강한 완벽그래프 정리](perfect-graphs.md)
 
 #optimization #graph_theory #information_theory

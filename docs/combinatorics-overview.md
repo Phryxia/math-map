@@ -75,7 +75,7 @@ graph TD
 
 - [매칭](matchings.md): 이분 그래프의 완전 매칭 조건
 - [Matroid](matroids.md): 독립성의 공리화, 탐욕 알고리즘이 통하는 이유
-- [완전그래프와 강한 완전그래프 정리](perfect-graphs.md): 색칠수와 클릭수가 일치하는 그래프
+- [완벽그래프와 강한 완벽그래프 정리](perfect-graphs.md): 색칠수와 클릭수가 일치하는 그래프
 
 ## 대수적 조합론
 
