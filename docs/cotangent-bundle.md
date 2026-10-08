@@ -59,7 +59,7 @@ $N$ 에 Riemann 계량이 있으면 그것이 $TN$ 과 $T^\ast N$ 사이의 동�
 # 활용
 
 - **심플렉틱 다양체의 국소 모형.** [심플렉틱 다양체](symplectic-manifolds.md)의 Darboux 정리는 모든 심플렉틱 다양체가 국소적으로 $T^\ast\mathbb R^n$ 과 심플렉틱 동형이라는 진술이다. 표준형 $\sum dq^i\wedge dp\_i$ 가 여접다발에서 좌표를 고르지 않고 나온 형식이다.
-- **Hamilton 역학.** 위치 공간이 $N$ 인 계의 위상공간이 $T^\ast N$ 이고, $p$ 가 운동량이다. Hamilton 함수의 흐름이 운동을 주고, 정준변환이 좌표 선택과 무관한 변환이다.
+- **[Hamilton 역학](hamiltonian-mechanics.md).** 위치 공간이 $N$ 인 계의 위상공간이 $T^\ast N$ 이고, $p$ 가 운동량이다. Hamilton 함수의 흐름이 운동을 주고, 정준변환이 좌표 선택과 무관한 변환이다.
 - **미분형식의 차수 올리기.** [미분형식](differential-forms.md)의 1형식은 $T^\ast N$ 의 단면이다. $k$ 형식은 $T^\ast N$ 의 외대수 다발의 단면이므로, 여접다발이 미분형식 전체의 바탕이 된다.
 
 # 연관 문서
@@ -71,6 +71,6 @@ $N$ 에 Riemann 계량이 있으면 그것이 $TN$ 과 $T^\ast N$ 사이의 동�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hamilton 역학](hamiltonian-mechanics.md)
 
 #differential_geometry #topology #analysis
