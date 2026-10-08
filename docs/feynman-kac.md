@@ -144,6 +144,6 @@ Feynman 의 경로적분은 양자역학의 전파자를 경로에 대한 합으
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Black–Scholes 방정식](black-scholes-equation.md)
 
 #probability #analysis #theorem

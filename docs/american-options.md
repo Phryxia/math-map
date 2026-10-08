@@ -70,7 +70,7 @@ $$b=\frac{\gamma}{\gamma+1}K,\qquad V(s)=\begin{cases}K-s & s\le b\cr \dfrac{K}{
 
 ## 행사 경계
 
-풋의 행사 경계 $b$ 는 증가함수이고 $b(T^-)=K$ 다. 유한 만기에서 $b$ 는 비선형 Volterra 적분방정식을 만족하고, 그 방정식은 정지 영역에서 $V=h$ 를 Itô 공식에 넣어 얻는다[^4].
+풋의 행사 경계 $b$ 는 증가함수이고 $b(T^-)=K$ 다. 유한 만기에서 $b$ 는 비선형 Volterra 적분방정식을 만족하고, 그 방정식은 정지 영역에서 $V=h$ 를 [Itô 공식](ito-calculus.md)에 넣어 얻는다[^4].
 
 ## Stefan 문제
 
@@ -111,7 +111,7 @@ function americanBinomial(S0, u, d, R, n, payoff) {
 
 ## 선수지식
 
-- [Itô 적분](ito-calculus.md)
+- [Black–Scholes 방정식](black-scholes-equation.md)
 - [최적 정지](optimal-stopping.md)
 
 ## 더 알아보기

@@ -106,6 +106,5 @@ $M_t = \exp(\int \theta\thinspace dB - \tfrac12 \int \theta^2\thinspace ds)$ 는
 - [확률미분방정식](stochastic-differential-equations.md)
 - [Girsanov 정리](girsanov.md)
 - [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)
-- [미국형 옵션](american-options.md)
 
 #probability #analysis
