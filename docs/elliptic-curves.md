@@ -150,7 +150,6 @@ $$
 
 - [모듈러 곡선](modular-curves.md)
 - [복소 곱셈](complex-multiplication.md)
-- [Langlands 강령](langlands-program.md)
 
 ### 암호에서의 쓰임
 
