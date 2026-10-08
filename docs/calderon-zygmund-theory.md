@@ -119,5 +119,6 @@ $L^\infty\subset\mathrm{BMO}$ 이고 $\ln\vert x\vert$ 가 BMO 에 들어 포함
 ## 더 알아보기
 
 - [극대 특이적분](maximal-singular-integral.md)
+- [Littlewood–Paley 이론](littlewood-paley.md)
 
 #analysis #functional_analysis #measure_theory
