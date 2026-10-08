@@ -85,6 +85,6 @@ $\partial\Omega$ 의 모든 점이 정칙이면 Perron 해가 $u\in C(\overline\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [퍼텐셜 이론](potential-theory.md)
 
 #complex_analysis #analysis #probability
