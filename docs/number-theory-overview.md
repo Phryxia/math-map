@@ -96,6 +96,7 @@ graph TD
 - [큰 체](large-sieve.md): 소수마다 절반을 거르는 문제의 지수합 부등식과 Bombieri–Vinogradov 정리
 - [원법](circle-method.md): 가법적 문제의 해의 개수를 지수합의 주기 적분으로 적고 단위원을 주 호와 부 호로 가르는 절차, Waring 문제와 삼소수 정리
 - [소수 간격](prime-gaps.md): 연속한 소수의 차의 하한과 상한, 허용집합과 유계 간격
+- [Chen 정리](chen-theorem.md): 짝수가 소수와 거의 소수의 합이라는 결론, 가중 체와 전환 원리
 - [Riemann 가설](riemann-hypothesis.md): 영점의 실수부와 소수 계량 함수의 오차, GRH(generalized Riemann hypothesis) 의 응용
 - [쌍 상관 추측](pair-correlation-conjecture.md): 임계선 위 영점의 간격 분포와 무작위 행렬 고윳값 통계의 일치
 - [Poisson 합 공식](poisson-summation.md), [Mellin 변환](mellin-transform.md), [Euler–Maclaurin 공식](euler-maclaurin.md): 해석적 도구

@@ -123,5 +123,6 @@ $0\lt\theta\lt 1$ 에 대해, 위 부등식이 $Q=x^\theta$ 에서 성립한다�
 ## 더 알아보기
 
 - [소수 간격](prime-gaps.md)
+- [Chen 정리](chen-theorem.md)
 
 #number_theory #analysis #combinatorics
