@@ -82,6 +82,6 @@ $\kappa_2$ 만 $0$ 이 아닌 분포가 반원분포다. 위 공식에서 블록
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [자유확률](free-probability.md)
 
 #combinatorics #probability #order_theory
