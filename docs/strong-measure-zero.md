@@ -40,7 +40,7 @@ $\varepsilon\_n=\varepsilon/2^n$ 을 주면 얻는 덮개의 길이 합이 $\var
 
 **정리.** $X\subseteq\mathbb R$ 이 강 측도 영집합일 필요충분조건은 모든 제1범주 집합 $M$ 에 대해 $X+M\neq\mathbb R$ 인 것이다.[^2]
 
-[이 정리](galvin-mycielski-solovay.md)는 덧셈과 [Baire 범주](baire-category.md)만으로 같은 조건을 적는다. 이 형태는 위상군에서 그대로 정의가 되므로 강 측도 영집합을 국소콤팩트 위상군에서도 정의한다.
+덧셈과 [Baire 범주](baire-category.md)만으로 같은 조건을 적는다. 이 형태는 위상군에서 그대로 정의가 되므로 강 측도 영집합을 국소콤팩트 위상군에서도 정의한다. 두 방향의 증명은 [Galvin–Mycielski–Solovay 정리](galvin-mycielski-solovay.md)에서 다룬다.
 
 ## Borel 추측
 
