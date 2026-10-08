@@ -124,6 +124,7 @@ $$
 ## 더 알아보기
 
 - [볼록 공액](convex-conjugate.md)
+- [준볼록 함수](quasiconvex-functions.md)
 - [경사하강법](gradient-descent.md)
 - [Lagrange 쌍대성](lagrange-duality.md)
 - [선형계획법](linear-programming.md)
