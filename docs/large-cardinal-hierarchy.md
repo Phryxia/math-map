@@ -48,7 +48,7 @@ $A\subseteq V_\kappa$ 와 서수 $\gamma$ 를 둔다. 기본 매장 $j\colon V\t
 
 **정리.** 측도 가능이면 Ramsey 이고, Ramsey 이면 약콤팩트이고, 약콤팩트이면 Mahlo 이고, Mahlo 이면 도달 불가능이다.
 
-마지막 함의는 정의에 들어 있다. 약콤팩트 기수는 $V_\kappa$ 에서 참인 2계 논리식이 어떤 $\alpha\lt \kappa$ 의 $V_\alpha$ 에서도 참이라는 성질을 갖는다. $\kappa$ 미만의 도달 불가능 기수를 하나도 담지 않는 닫힌 비유계 집합이 있다고 하면 그 성질이 2계 논리식으로 쓰이고, 그 논리식이 성립하는 $V_\alpha$ 의 $\alpha$ 가 도달 불가능이 되어 모순이 난다. Ramsey 에서 약콤팩트는 $n=2$ 로 특수화한 것이다. 측도 가능에서 Ramsey 는 $\kappa$ 완비 초필터로 각 크기의 칠하기를 차례로 줄여 동색 집합을 만든다[^1]. ∎
+마지막 함의는 정의에 들어 있다. 약콤팩트 기수는 $V_\kappa$ 에서 참인 $\mathbf\Pi^1\_1$ 논리식이 어떤 $\alpha\lt \kappa$ 의 $V_\alpha$ 에서도 참이라는 성질을 갖는다. $\kappa$ 미만의 도달 불가능 기수를 하나도 담지 않는 닫힌 비유계 집합이 있다고 하면 그 성질이 $\mathbf\Pi^1\_1$ 논리식으로 쓰이고, 그 논리식이 성립하는 $V_\alpha$ 의 $\alpha$ 가 도달 불가능이 되어 모순이 난다. Ramsey 에서 약콤팩트는 $n=2$ 로 특수화한 것이다. 측도 가능에서 Ramsey 는 $\kappa$ 완비 초필터로 각 크기의 칠하기를 차례로 줄여 동색 집합을 만든다[^1]. ∎
 
 ## 매장 층 사이의 함의
 
@@ -62,11 +62,13 @@ $A\subseteq V_\kappa$ 와 서수 $\gamma$ 를 둔다. 기본 매장 $j\colon V\t
 
 ## Woodin 기수와 측도 가능성
 
-**정리.** Woodin 기수는 Mahlo 이고, 가장 작은 Woodin 기수는 측도 가능이 아니다[^2].
+**정리.** Woodin 기수는 Mahlo 다. 가장 작은 Woodin 기수는 약콤팩트가 아니고, 따라서 측도 가능이 아니다[^2].
 
-$A$ 마다 조건을 만족하는 $\lambda\lt \kappa$ 가 있고 그런 $\lambda$ 의 집합이 $\kappa$ 에서 정상집합이므로 $\kappa$ 는 Mahlo 다. Woodin 기수의 정의는 $\kappa$ 아래의 $\lambda$ 가 갖는 성질만 요구하고 $\kappa$ 위의 초필터를 요구하지 않으므로, 측도 가능성은 이 정의에서 따라 나오지 않는다. ∎
+Woodin 기수 $\kappa$ 아래에는 측도 가능 기수의 정상집합이 있고 측도 가능 기수는 도달 불가능이므로 $\kappa$ 는 Mahlo 다.
 
-함의 관계와 무모순성 강도의 순서가 다른 자리다. Woodin 기수의 존재는 측도 가능 기수의 존재보다 무모순성 강도가 세지만, Woodin 기수가 측도 가능이라는 결론은 나오지 않는다.
+$\kappa$ 가 Woodin 이라는 조건은 $V_\kappa$ 의 부분집합에 대한 전칭 양화 하나와 $V_\kappa$ 안의 1계 조건으로 쓰이므로 $V_\kappa$ 위의 $\mathbf\Pi^1\_1$ 논리식이다. 약콤팩트성은 $\mathbf\Pi^1\_1$ 논리식의 반사와 동치여서, $\kappa$ 가 Woodin 이고 약콤팩트이면 어떤 $\alpha\lt \kappa$ 의 $V_\alpha$ 가 같은 논리식을 만족하고 그 $\alpha$ 가 Woodin 기수다. 그러면 $\kappa$ 는 가장 작은 Woodin 기수가 아니다. 측도 가능이면 약콤팩트이므로 가장 작은 Woodin 기수는 측도 가능도 아니다. ∎
+
+Woodin 기수의 존재는 측도 가능 기수의 존재보다 무모순성 강도가 세지만, Woodin 기수가 측도 가능이라는 결론은 나오지 않는다.
 
 ## 구성가능 우주와의 양립
 
@@ -85,7 +87,7 @@ $A$ 마다 조건을 만족하는 $\lambda\lt \kappa$ 가 있고 그런 $\lambda
 - **특이 기수 가설의 독립성.** 초콤팩트 기수에서 출발한 강제법이 특이 기수 가설이 깨지는 모형을 준다[^6]. 이 결론에 초콤팩트성이 필요한 이유는 강제법이 $\kappa$ 위의 모든 작은 부분집합을 매장의 상 안에서 다뤄야 하는 데 있다.
 
 [^1]: F. Rowbottom, *Some strong axioms of infinity incompatible with the axiom of constructibility*, Annals of Mathematical Logic **3** (1971), 1–44.
-[^2]: A. Kanamori, *The Higher Infinite*, 2판, Springer, 2003, 26 절과 32 절.
+[^2]: T. Jech, *Set Theory*, 3판, Springer, 2003, 34 장. 보조정리 34.2 가 Woodin 기수를 특성화하고, 그 조건이 $V_\delta$ 위의 $\mathbf\Pi^1\_1$ 논리식이므로 가장 작은 Woodin 기수가 약콤팩트가 아님을 적는다.
 [^3]: A. Kanamori, *The Higher Infinite*, 2판, Springer, 2003, 7 절과 9 절.
 [^4]: A. Kanamori, *The Higher Infinite*, 2판, Springer, 2003, 32 절의 도표. 이 책은 알려진 공리들을 이 순서로 배열하고 각 층의 무모순성 강도를 비교한다.
 [^5]: D. A. Martin, J. R. Steel, *A proof of projective determinacy*, Journal of the American Mathematical Society **2** (1989), 71–125.
