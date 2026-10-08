@@ -163,8 +163,9 @@ $\mathbb R$ 와 $\mathbb Q_p$ 는 $\mathbb Q$ 의 완비화로서 대등하다. 
 - [Newton 다각형](newton-polygon.md)
 - [이차형식](quadratic-forms.md)
 
-### 타원곡선과 모듈러 형식
+### L 함수와 타원곡선
 
+- [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md)
 - [Tate 곡선](tate-curve.md)
 - [p 진 L 함수](p-adic-l-function.md)
 - [과수렴 모듈러 기호](overconvergent-modular-symbols.md)

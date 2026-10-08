@@ -14,7 +14,7 @@ $$
 - $\zeta(1-k)=-B_k/k$ 이므로 음의 정수에서의 zeta 값이 Bernoulli 수다.
 - $p$ 가 $B_2,\dots,B_{p-3}$ 중 하나를 나누는지가 순환체의 류수가 $p$ 로 나뉘는지를 결정한다(Kummer 의 기준).
 
-[Stickelberger](stickelberger.md) 원소의 계수, Kubota–Leopoldt $p$ 진 $L$ 함수의 보간값, [Iwasawa 주추측](iwasawa-main-conjecture.md)의 해석적 변이 모두 $B_{n,\chi}$ 로 쓰인다. 그 바닥에 두 고전 정리가 있다. 분모를 완전히 결정하는 **von Staudt–Clausen** 정리가 $B_n$ 의 $p$ 진 극점을 통제하고, 분자를 $p$ 진적으로 잇는 **Kummer 합동**이 $p$ 진 보간을 가능하게 한다.
+[Stickelberger](stickelberger.md) 원소의 계수, [Kubota–Leopoldt $p$ 진 $L$ 함수](kubota-leopoldt-zeta.md)의 보간값, [Iwasawa 주추측](iwasawa-main-conjecture.md)의 해석적 변이 모두 $B_{n,\chi}$ 로 쓰인다. 그 바닥에 두 고전 정리가 있다. 분모를 완전히 결정하는 **von Staudt–Clausen** 정리가 $B_n$ 의 $p$ 진 극점을 통제하고, 분자를 $p$ 진적으로 잇는 **Kummer 합동**이 $p$ 진 보간을 가능하게 한다.
 
 # 직관
 
@@ -170,6 +170,7 @@ $B_n$ 은 Todd 류의 계수로 Hirzebruch–Riemann–Roch 공식에 들어가�
 
 ## 더 알아보기
 
+- [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md)
 - [Stickelberger 원소](stickelberger.md)
 - [Euler–Maclaurin 공식](euler-maclaurin.md)
 - [질량 공식](mass-formula.md)
