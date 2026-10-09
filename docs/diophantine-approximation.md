@@ -60,7 +60,7 @@ Liouville 의 지수 $d$ 를 Thue 가 $d/2 + 1$ 로, Siegel 과 Dyson 이 더 �
 
 **정리(Khinchin)**[^4]**.** $\psi$ 가 양의 값을 갖는 단조 감소 함수일 때, $\vert \alpha - p/q\vert \lt \psi(q)/q$ 를 만족하는 기약분수를 무한히 많이 갖는 $\alpha$ 의 집합은 $\sum_{q \ge 1} \psi(q)$ 가 발산하면 [측도](measure.md) 가 전체이고 수렴하면 측도가 $0$ 이다.
 
-$\psi(q) = q^{-\varepsilon}$ 을 넣으면 급수가 수렴하므로, 거의 모든 실수의 근사 지수가 $2$ 다. Liouville 수 전체의 집합과 나쁘게 근사되는 수 전체의 집합은 모두 측도가 $0$ 이지만, 두 집합 모두 Hausdorff 차원이 $1$ 이다.[^5]
+$\psi(q) = q^{-\varepsilon}$ 을 넣으면 급수가 수렴하므로, 거의 모든 실수의 근사 지수가 $2$ 다. Liouville 수 전체의 집합과 나쁘게 근사되는 수 전체의 집합은 모두 측도가 $0$ 이지만, 두 집합 모두 [Hausdorff 차원](hausdorff-dimension.md)이 $1$ 이다.[^5]
 
 ## 동시 근사
 

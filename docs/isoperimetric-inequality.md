@@ -78,7 +78,7 @@ $$
 n\thinspace\omega_n^{1/n}\lvert\Omega\rvert^{(n-1)/n}\le\mathcal H^{n-1}(\partial\Omega)
 $$
 
-여기서 $\omega_n$ 은 단위공의 부피이고 $\mathcal H^{n-1}$ 은 $n-1$ 차원 Hausdorff 측도다. 증명은 [Brunn–Minkowski 부등식](brunn-minkowski.md)에서 나온다.[^2]
+여기서 $\omega_n$ 은 단위공의 부피이고 $\mathcal H^{n-1}$ 은 $n-1$ 차원 [Hausdorff 측도](hausdorff-dimension.md)다. 증명은 [Brunn–Minkowski 부등식](brunn-minkowski.md)에서 나온다.[^2]
 
 # 활용
 

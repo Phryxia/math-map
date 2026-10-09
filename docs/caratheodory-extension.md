@@ -106,6 +106,6 @@ $\mathbb R$ 의 유한 구간들의 유한 합집합이 대수이고 구간의 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hausdorff 차원](hausdorff-dimension.md)
 
 #measure_theory #analysis #probability

@@ -70,7 +70,7 @@ $C$ 는 완전집합이다. 곧 고립점이 없다. $x\in C$ 가 든 $C\_n$ 의
 
 $C+C=\lbrack 0,2\rbrack$ 이다. $x/2$ 의 삼진 자리 $0,1,2$ 를 각각 $(0,0),(0,2),(2,2)$ 로 가르면 $u,v\in C$ 와 $u+v=x$ 를 얻는다. 측도 $0$ 인 집합을 자신과 더해 구간이 나오는 예이고, [Galvin–Mycielski–Solovay 정리](galvin-mycielski-solovay.md)가 이 계산으로 $C$ 가 [강 측도 영집합](strong-measure-zero.md)이 아님을 판정한다.
 
-$C$ 의 Hausdorff 차원은 $\log 2/\log 3$ 이다. $C$ 가 비율 $1/3$ 의 축소 사본 두 개로 이루어지므로 $2\cdot(1/3)^s=1$ 을 푼 값이고, 그 차원의 Hausdorff 측도가 유한이고 $0$ 이 아니다. 차원을 재는 측도는 [Carathéodory 확장정리](caratheodory-extension.md)의 활용 절이 적는 구성으로 얻는다.
+$C$ 의 Hausdorff 차원은 $\log 2/\log 3$ 이다. $C$ 가 비율 $1/3$ 의 축소 사본 두 개로 이루어지므로 $2\cdot(1/3)^s=1$ 을 푼 값이고, 그 차원의 Hausdorff 측도가 유한이고 $0$ 이 아니다. 차원을 재는 측도의 구성은 [Hausdorff 차원](hausdorff-dimension.md)이 다룬다.
 
 ## Cantor 함수의 성질
 
@@ -113,6 +113,6 @@ $\lvert c\rvert$ 가 큰 $z^2+c$ 의 [Julia 집합](julia-set.md)은 $C$ 와 위
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hausdorff 차원](hausdorff-dimension.md)
 
 #measure_theory #topology #set_theory #analysis
