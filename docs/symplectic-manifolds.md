@@ -101,7 +101,7 @@ $\mathbb R^{2n}$ 의 표준 형식에서, 반지름 $r$ 인 공을 반지름 $R$
 - **여접다발.** 다양체 $N$ 의 여접다발 $T^\ast N$ 에는 표준 1형식 $\lambda$ 가 있고 $\omega=-d\lambda$ 가 심플렉틱 형식이다. 좌표로 적으면 표준형이고, 고전역학의 위상공간이 이 꼴이다. 영단면과 각 섬유가 Lagrangian 부분다양체다.
 - **Kähler 다양체.** [Kähler 다양체](kahler-manifolds.md)의 Kähler 형식은 닫히고 비퇴화이므로 심플렉틱 형식이다. 복소구조와 계량을 잊으면 심플렉틱 다양체가 남는다.
 - **적분가능계.** $2n$ 차원 다양체에서 Poisson 괄호가 서로 소멸하는 $n$ 개의 보존량이 있으면, Arnold–Liouville 정리가 공통 준위집합의 콤팩트 성분을 원환면으로 보고 그 위에서 흐름을 일차함수로 적는다.[^2] 준위집합이 Lagrangian 부분다양체다.
-- **모멘트 사상.** Lie 군이 $\omega$ 를 보존하며 작용할 때, 작용의 보존량을 Lie 대수의 쌍대공간 값 함수로 모은 것이 모멘트 사상이다. 각운동량이 회전군에 대응하는 예다.
+- **[모멘트 사상](moment-map.md).** Lie 군이 $\omega$ 를 보존하며 작용할 때, 작용의 보존량을 Lie 대수의 쌍대공간 값 함수로 모은 것이 모멘트 사상이다. 각운동량이 회전군에 대응하는 예다.
 
 # 연관 문서
 
@@ -112,6 +112,7 @@ $\mathbb R^{2n}$ 의 표준 형식에서, 반지름 $r$ 인 공을 반지름 $R$
 ## 더 알아보기
 
 - [여접다발](cotangent-bundle.md)
+- [모멘트 사상](moment-map.md)
 - [Kähler 다양체](kahler-manifolds.md)
 
 #differential_geometry #topology #analysis
