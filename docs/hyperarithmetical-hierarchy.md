@@ -81,6 +81,6 @@ $\mathcal O$ 는 $\Pi^1_1$ 완전이다.[^1] 셋째 조항이 $\varphi_e$ 의 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [$\Sigma^1_1$ 경계 정리](sigma11-boundedness.md)
 
 #computation #logic #set_theory
