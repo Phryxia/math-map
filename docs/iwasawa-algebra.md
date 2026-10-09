@@ -79,6 +79,6 @@ $X=\varprojlim A_n$ 에 구조 정리를 적용해 $\mu=\sum_i m_i$ , $\lambda=\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hida 이론](hida-theory.md)
 
 #algebra #number_theory #ring_theory

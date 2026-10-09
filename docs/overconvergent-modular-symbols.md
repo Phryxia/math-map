@@ -130,6 +130,7 @@ Pollack–Stevens 알고리즘은 Sage 에 있다. 입력은 [타원곡선](elli
 
 - [모듈러 기호](modular-symbols.md)
 - [p 진수](p-adic-numbers.md)
+- [Hida 이론](hida-theory.md)
 
 ## 더 알아보기
 
