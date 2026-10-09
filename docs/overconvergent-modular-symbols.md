@@ -120,7 +120,7 @@ Pollack–Stevens 알고리즘은 Sage 에 있다. 입력은 [타원곡선](elli
 
 ## 다른 군 이식
 
-같은 틀이 Bianchi 모듈러 기호(허수이차체), Hilbert 모듈러 기호(전실체), 고차 $\mathrm{GL}\_n$ 의 중복 기호로 옮겨 간다. 필요한 것은 계수를 분포로 바꿀 수 있다는 것과 $U_p$ 가 콤팩트하다는 것이고, 그러면 조절 정리의 증명 구조가 따라온다. 고유다양체 위에서 $p$ 진 $L$ 함수의 족을 만드는 구성도 여기에 뿌리를 둔다.[^1]
+같은 틀이 Bianchi 모듈러 기호(허수이차체), Hilbert 모듈러 기호(전실체), 고차 $\mathrm{GL}\_n$ 의 중복 기호로 옮겨 간다. 필요한 것은 계수를 분포로 바꿀 수 있다는 것과 $U_p$ 가 콤팩트하다는 것이고, 그러면 조절 정리의 증명 구조가 따라온다. [고유다양체](eigenvariety.md) 위에서 $p$ 진 $L$ 함수의 족을 만드는 구성도 여기에 뿌리를 둔다.[^1]
 
 [^1]: R. Pollack, G. Stevens, *Overconvergent modular symbols and p-adic L-functions*, Ann. Sci. ÉNS **44** (2011), 1–42. 임계 기울기 쪽은 같은 저자의 *Critical slope p-adic L-functions*, J. London Math. Soc. **87** (2013). 조절 정리의 원형은 G. Stevens 의 미출판 원고 *Rigid analytic modular symbols* (2000). 예외적 0 은 B. Mazur, J. Tate, J. Teitelbaum, *On p-adic analogues of the conjectures of Birch and Swinnerton-Dyer*, Invent. Math. **84** (1986), 증명은 R. Greenberg, G. Stevens, *p-adic L-functions and p-adic periods of modular forms*, Invent. Math. **111** (1993).
 
@@ -134,6 +134,6 @@ Pollack–Stevens 알고리즘은 Sage 에 있다. 입력은 [타원곡선](elli
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [고유다양체](eigenvariety.md)
 
 #number_theory #computation #field_theory
