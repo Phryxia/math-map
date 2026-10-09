@@ -192,6 +192,7 @@ $n$ 명에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 �
 ### 조건부 구조와 확률과정
 
 - [조건부 기댓값](conditional-expectation.md)
+- [Kolmogorov 확장정리](kolmogorov-extension.md)
 - [Markov 연쇄](markov-chains.md)
 - [결정점과정](determinantal-point-process.md)
 

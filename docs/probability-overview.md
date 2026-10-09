@@ -91,6 +91,7 @@ graph TD
 
 ## 연속시간 확률과정
 
+- [Kolmogorov 확장정리](kolmogorov-extension.md): 정합적 유한차원 분포족에서 확률과정을 세우는 정리
 - [Brown 운동](brownian-motion.md): 연속시간 Gauss 과정과 경로의 성질
 - [Donsker 불변원리](donsker-invariance-principle.md): 부분합의 꺾은선이 $C\lbrack 0,1\rbrack$ 에서 Brown 운동으로 약수렴
 - [Itô 적분](ito-calculus.md): 유계변동이 없는 경로 위의 적분과 Itô 공식

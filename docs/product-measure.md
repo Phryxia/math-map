@@ -93,7 +93,7 @@ $$
 - **[Fubini–Tonelli 정리](fubini-tonelli.md).** 곱측도에 대한 적분을 두 반복적분으로 바꾸는 정리다. Tonelli 정리는 비음 가측함수에, Fubini 정리는 곱측도로 적분가능한 함수에 적용된다.
 - **$\mathbb R^n$ 의 Lebesgue 측도.** $n$ 차원 측도를 1차원 측도의 곱측도를 완비화해 얻는다. 직육면체에 변의 길이의 곱을 주는 성질이 곱측도의 정의에서 나온다.
 - **독립 확률변수의 결합분포.** [확률변수](random-variables.md) $X,Y$ 가 독립이라는 것은 결합분포 $P\_{(X,Y)}$ 가 곱측도 $P\_X\times P\_Y$ 라는 것과 같다. 결합밀도가 두 [확률밀도](probability-density.md)의 곱이 되는 것도 같은 진술이다.
-- **무한 곱과 확률과정.** 동전을 무한히 던지는 시행의 확률공간이 $\lbrace 0,1\rbrace^{\mathbb N}$ 위의 무한 곱측도다. 좌표가 독립이 아닌 경우로 넓히면 유한차원 분포들의 정합성에서 과정을 세우는 Kolmogorov 확장정리가 된다.
+- **무한 곱과 확률과정.** 동전을 무한히 던지는 시행의 확률공간이 $\lbrace 0,1\rbrace^{\mathbb N}$ 위의 무한 곱측도다. 좌표가 독립이 아닌 경우로 넓히면 유한차원 분포들의 정합성에서 과정을 세우는 [Kolmogorov 확장정리](kolmogorov-extension.md)가 된다.
 - **합성곱.** 두 유한측도의 합성곱 $(\mu\ast\nu)(B)=(\mu\times\nu)(\lbrace (x,y):x+y\in B\rbrace)$ 는 곱측도를 덧셈으로 밀어 보낸 [상측도](pushforward-measure.md)다. 독립 확률변수의 합의 분포가 이것이다.
 
 [^1]: Walter Rudin, *Real and Complex Analysis*, 3rd ed., McGraw–Hill, 1987, Chapter 8. 곱측도의 구성과 완비화에서 단면의 가측성.
@@ -110,5 +110,6 @@ $$
 ## 더 알아보기
 
 - [Fubini–Tonelli 정리](fubini-tonelli.md)
+- [Kolmogorov 확장정리](kolmogorov-extension.md)
 
 #measure_theory #analysis #probability
