@@ -52,6 +52,7 @@ graph TD
 - [유한 확률 공간](probability.md): 표본공간, 사건, 확률측도
 - [Bayes 정리](bayes.md): 조건부확률의 역전
 - [확률변수](random-variables.md): 가측함수로서의 확률변수와 적분으로서의 기댓값
+- [확률밀도](probability-density.md): 분포를 기준측도로 적분해 쓴 함수와 밀도가 없는 분포
 - [Radically elementary 확률론](radically-elementary-probability.md): 초유한 크기의 유한 확률공간 위에서 측도 없이 세운 Brown 운동과 확률적분
 
 ## 극한정리
