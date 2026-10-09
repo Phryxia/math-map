@@ -66,6 +66,7 @@ $\vert V\vert$ 개의 정점과 $\vert E\vert$ 개의 변을 갖고 교차수가
 
 ## 더 알아보기
 
+- [완전그래프의 교차수](complete-graph-crossing-number.md)
 - [Szemerédi–Trotter 정리](szemeredi-trotter.md)
 
 #graph_theory #combinatorics #probability
