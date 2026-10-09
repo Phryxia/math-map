@@ -28,7 +28,7 @@ $Df(x)$ 는 $x$ 에서의 Jacobi 행렬이다. $y$ 가 정칙값이므로 $f^{-1
 
 ## 연속사상으로의 확장
 
-정칙값이 아닌 $y$ 와 매끄럽지 않은 $f$ 는 근사로 처리한다. Sard 정리에 따라 임계값의 집합은 측도 $0$ 이므로 $y$ 에 얼마든지 가까운 정칙값 $y'$ 이 있고, $\Vert y'-y\Vert$ 가 $y$ 와 $f(\partial\Omega)$ 의 거리보다 작으면 $\deg(f,\Omega,y')$ 이 $y'$ 의 선택과 무관하다. 연속인 $f$ 는 Weierstrass 근사로 매끄러운 $g$ 로 균등근사하고, $\Vert g-f\Vert$ 가 같은 거리보다 작으면 $\deg(g,\Omega,y)$ 가 $g$ 의 선택과 무관하다. 두 값을 차례로 쓴 것이 $\deg(f,\Omega,y)$ 다.
+정칙값이 아닌 $y$ 와 매끄럽지 않은 $f$ 는 근사로 처리한다. [Sard 정리](sard-theorem.md)에 따라 임계값의 집합은 측도 $0$ 이므로 $y$ 에 얼마든지 가까운 정칙값 $y'$ 이 있고, $\Vert y'-y\Vert$ 가 $y$ 와 $f(\partial\Omega)$ 의 거리보다 작으면 $\deg(f,\Omega,y')$ 이 $y'$ 의 선택과 무관하다. 연속인 $f$ 는 Weierstrass 근사로 매끄러운 $g$ 로 균등근사하고, $\Vert g-f\Vert$ 가 같은 거리보다 작으면 $\deg(g,\Omega,y)$ 가 $g$ 의 선택과 무관하다. 두 값을 차례로 쓴 것이 $\deg(f,\Omega,y)$ 다.
 
 ## 구면 사이의 사상
 

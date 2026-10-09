@@ -43,6 +43,7 @@ graph TD
 
 - [다양체](manifolds.md): 국소적으로 유클리드 공간인 위상공간과 매끄러운 구조
 - [단위분할](partitions-of-unity.md): 국소에서 정의한 대상을 전역으로 붙이는 매끄러운 무게 함수족
+- [Sard 정리](sard-theorem.md): 매끄러운 사상의 임계값 집합이 측도 $0$ 이라는 정리, 정칙값을 일반적 위치로 고르는 근거
 - [Whitney 매장 정리](whitney-embedding.md): $n$ 차원 다양체가 $\mathbb R^{2n}$ 에 매장된다는 정리, 좌표 사상을 단위분할로 묶는 구성
 - [벡터다발](vector-bundles.md): 점마다 붙인 벡터 공간, 전이함수와 접속, 곡률
 - [접다발](tangent-bundle.md): 접공간을 모은 다발, 좌표변환의 야코비가 전이함수, 평행화 가능성

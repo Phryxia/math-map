@@ -132,6 +132,7 @@ $$
 
 ### 대칭과 분류
 
+- [Sard 정리](sard-theorem.md)
 - [Morse 이론](morse-theory.md)
 - [Lie 대수](lie-algebras.md)
 - [Grassmann 다양체](grassmannian.md)
