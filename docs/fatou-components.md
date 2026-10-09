@@ -59,7 +59,7 @@ Riemann 구면의 동역학을 Julia 집합 위의 혼돈 부분과 Fatou 집합
 
 ## 매개변수 공간
 
-준등각 변형으로 얻은 족이 유리함수 공간 안의 부분다양체가 되고, 그 차원을 세는 논증이 Mandelbrot 집합의 쌍곡 성분 연구에 쓰인다. 쌍곡 성분 안에서 모든 사상이 준등각으로 서로 옮겨지므로 Julia 집합의 위상형이 같다.
+준등각 변형으로 얻은 족이 유리함수 공간 안의 부분다양체가 되고, 그 차원을 세는 논증이 [Mandelbrot 집합](mandelbrot-set.md)의 쌍곡 성분 연구에 쓰인다. 쌍곡 성분 안에서 모든 사상이 준등각으로 서로 옮겨지므로 Julia 집합의 위상형이 같다.
 
 [^1]: D. Sullivan, "Quasiconformal homeomorphisms and dynamics I", *Annals of Mathematics* 122 (1985), 401–418. 분류 전체의 서술은 J. Milnor, *Dynamics in One Complex Variable*, 3rd ed. (2006), §16 — 주기 성분의 네 유형과 방황 영역 정리.
 
@@ -72,6 +72,6 @@ Riemann 구면의 동역학을 Julia 집합 위의 혼돈 부분과 Fatou 집합
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Mandelbrot 집합](mandelbrot-set.md)
 
 #complex_analysis #analysis #topology
