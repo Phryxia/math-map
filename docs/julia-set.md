@@ -80,6 +80,6 @@ $z^2-2$ 는 $z=w+w^{-1}$ 로 바꾸면 $w\mapsto w^2$ 가 되고, 단위원이 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Fatou 성분의 분류](fatou-components.md)
 
 #complex_analysis #analysis #topology

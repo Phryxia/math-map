@@ -68,7 +68,7 @@ $K$ 준등각 사상은 Lebesgue 영집합을 영집합으로 보내고 Hölder 
 
 ## 복소동역학
 
-유리사상의 Fatou 성분 위에서 준등각 사상으로 복소구조를 바꾸고 되돌리는 수술이 사상의 모임을 매개한다. 유리사상이 방황 영역을 갖지 않는다는 Sullivan 정리의 증명이 그런 수술로 매개변수의 차원을 재는 논증이다.
+유리사상의 [Fatou 성분](fatou-components.md) 위에서 준등각 사상으로 복소구조를 바꾸고 되돌리는 수술이 사상의 모임을 매개한다. 유리사상이 방황 영역을 갖지 않는다는 Sullivan 정리의 증명이 그런 수술로 매개변수의 차원을 재는 논증이다.
 
 [^1]: L. V. Ahlfors, *Lectures on Quasiconformal Mappings*, 2nd ed. (2006), II 장 — 두 정의의 동치와 가측 Riemann 사상 정리. Beurling 변환을 쓴 증명은 K. Astala, T. Iwaniec, G. Martin, *Elliptic Partial Differential Equations and Quasiconformal Mappings in the Plane* (2009), 5 장.
 
@@ -80,6 +80,6 @@ $K$ 준등각 사상은 Lebesgue 영집합을 영집합으로 보내고 Hölder 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Fatou 성분의 분류](fatou-components.md)
 
 #complex_analysis #topology #differential_geometry

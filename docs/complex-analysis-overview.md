@@ -58,6 +58,7 @@ graph TD
 - [Hurwitz 정리](hurwitz-theorem.md): 국소 균등수렴에서 영점 개수의 보존, 영점 없음과 단사성의 보존, Rouché 정리와의 관계
 - [Montel 정리](montel-theorem.md): 국소 유계인 정칙함수족의 정규성, Hurwitz 정리, 두 값을 생략하는 족
 - [Julia 집합](julia-set.md): 반복합성이 초기값에 민감한 점의 집합, Fatou 집합과의 분할, 반복 전사성
+- [Fatou 성분의 분류](fatou-components.md): 성분이 모두 최종 주기적이라는 Sullivan 정리와 주기 성분의 네 유형
 
 ## 확장과 사상
 
