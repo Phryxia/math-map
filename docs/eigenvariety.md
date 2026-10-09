@@ -30,7 +30,7 @@ $\mathcal W$ 를 $\mathbb Z_p^\times$ 의 연속 $p$ 진 지표들이 이루는 
 
 ## 스펙트럼 곡선
 
-$M_w$ 를 무게 $w$ 의 과수렴 모듈러 형식 공간이라 하면 $U_p$ 가 $M_w$ 에 콤팩트하게 작용한다. 그 [Fredholm 행렬식](fredholm-determinant.md)
+$M_w$ 를 무게 $w$ 의 과수렴 [모듈러 형식](modular-forms.md) 공간이라 하면 $U_p$ 가 $M_w$ 에 콤팩트하게 작용한다. 그 [Fredholm 행렬식](fredholm-determinant.md)
 
 $$
 P(w,t)=\det(1-tU_p\vert M_w)

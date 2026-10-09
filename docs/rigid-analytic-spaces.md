@@ -88,7 +88,7 @@ $K$ 위의 고유 스킴에는 강체해석공간이 하나 대응하고, 연접
 
 # 활용
 
-- [Tate 곡선](tate-curve.md). $q\in K^\times$ 가 $\vert q\vert\lt1$ 이면 몫 $K^\times/q^{\mathbb Z}$ 가 강체해석공간이고 타원곡선의 해석화와 동형이다. 복소해석의 격자 몫에 대응하는 구성이다.
+- [Tate 곡선](tate-curve.md). $q\in K^\times$ 가 $\vert q\vert\lt1$ 이면 몫 $K^\times/q^{\mathbb Z}$ 가 강체해석공간이고 [타원곡선](elliptic-curves.md)의 해석화와 동형이다. 복소해석의 격자 몫에 대응하는 구성이다.
 - [고유다양체](eigenvariety.md). 무게 공간과 스펙트럼 곡선이 강체해석공간이고, 과수렴 형식의 족이 그 위의 층으로 놓인다.
 - [Coleman 적분](coleman-integration.md). 잔차 원판마다 항별 적분을 정의하고 Frobenius 작용으로 이어 붙일 때 원판과 그 붙임이 강체해석적이다.
 - [$p$ 진 Hodge 이론](p-adic-hodge-theory.md). 주기환과 비교 동형을 세우는 자리의 공간이 강체해석공간이고, perfectoid 공간이 그 확장이다.
