@@ -93,5 +93,6 @@ $n$ 개의 노드와 $n$ 개의 가중치로 $2n$ 개의 자유도가 있고 차
 ## 더 알아보기
 
 - [Chebyshev 다항식](chebyshev-polynomials.md)
+- [Gauss 구적](gaussian-quadrature.md)
 
 #analysis #linear_algebra #algorithms

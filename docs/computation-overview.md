@@ -84,6 +84,7 @@ graph TD
 - [최단경로](shortest-paths.md): Bellman–Ford, Dijkstra, 고정점으로서의 최단거리
 - [LP 반올림](lp-rounding.md): LP(linear programming) 완화로 정수 제약을 푼 뒤 해를 되돌리는 근사 설계
 - [고속 Fourier 변환](fft.md): 분할정복으로 $O(n\log n)$ 에 이산 Fourier 변환
+- [Gauss 구적](gaussian-quadrature.md): 노드와 가중치를 함께 풀어 함수 호출 $n$ 번으로 차수 $2n-1$ 까지 정확한 적분
 - [오류정정부호](error-correcting-codes.md): 부호의 구성과 복호 알고리즘, 거리와 한계
 - [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md): 유한체 위 타원곡선의 점 개수를 다항시간에 센다
 - [Kedlaya 알고리즘](kedlaya-algorithm.md): Monsky–Washnitzer 코호몰로지로 Frobenius 대각합을 계산한다
