@@ -96,7 +96,7 @@ $n=1$ 이고 $g$ 가 단조증가일 때는 $\rho\_Y(y)=\rho\_X(g^{-1}(y))/g'(g^
 
 - 이산분포. $P(X=0)=1$ 이면 $\lambda(\lbrace 0\rbrace)=0$ 인데 $P\_X(\lbrace 0\rbrace)=1$ 이므로 절대연속이 아니다.
 - 혼합분포. 확률 $1/2$ 로 $0$ 을 주고 $1/2$ 로 $\lbrack 0,1\rbrack$ 에서 고르게 뽑는 $X$ 는 점 $0$ 에 양의 질량이 있어 밀도가 없다. 이 분포의 기댓값은 [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md)으로 쓴다.
-- 특이연속분포. Cantor 분포는 $F\_X$ 가 연속이지만 $\lambda$ 측도 $0$ 인 Cantor 집합에 모든 질량이 있어 절대연속이 아니다. 누적분포함수가 연속이어도 밀도가 있다고 할 수 없다.
+- 특이연속분포. Cantor 분포는 $F\_X$ 가 연속이지만 $\lambda$ 측도 $0$ 인 [Cantor 집합](cantor-set.md)에 모든 질량이 있어 절대연속이 아니다. 누적분포함수가 연속이어도 밀도가 있다고 할 수 없다.
 
 Lebesgue 분해정리로 $\mathbb R$ 의 모든 분포가 이산, 절대연속, 특이연속 세 부분의 합으로 유일하게 갈라진다.[^1]
 

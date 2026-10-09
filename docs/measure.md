@@ -73,7 +73,7 @@ $$
 
 측도가 $0$ 인 집합이 영집합이다. 한 점의 Lebesgue 측도는 $0$ 이고, 셀 수 있는 만큼의 점을 모아도 가산 가법성에 따라 $0$ 이다. 구간도 점들의 합집합이지만 점이 셀 수 없이 많아 가산 가법성을 쓸 수 없다.
 
-"거의 모든 점에서 성립한다"는 예외 집합이 영집합이라는 뜻이다. 영집합에 셀 수 없이 많은 점이 있을 수도 있다. Cantor 집합은 실수와 기수가 같으면서 측도는 $0$ 이다.
+"거의 모든 점에서 성립한다"는 예외 집합이 영집합이라는 뜻이다. 영집합에 셀 수 없이 많은 점이 있을 수도 있다. [Cantor 집합](cantor-set.md)은 실수와 기수가 같으면서 측도는 $0$ 이다.
 
 ## 잴 수 없는 집합
 
@@ -124,6 +124,7 @@ Hausdorff 측도는 프랙탈의 차원을 재고, Haar 측도는 군 위에서 
 - [Carathéodory 확장정리](caratheodory-extension.md)
 - [곱측도](product-measure.md)
 - [Brunn–Minkowski 부등식](brunn-minkowski.md)
+- [Cantor 집합](cantor-set.md)
 - [Vitali 집합](vitali-set.md)
 - [순종군](amenable-groups.md)
 - [Borel 계층](borel-hierarchy.md)

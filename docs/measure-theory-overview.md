@@ -46,6 +46,7 @@ graph TD
 - [측도](measure.md): $\sigma$ 대수, 가산가법성, Lebesgue 측도와 비가측 집합
 - [가측함수](measurable-functions.md): 원상이 가측인 함수, 극한에 닫힌 성질
 - [Carathéodory 확장정리](caratheodory-extension.md): 외측도에서 측도를 얻는 구성, 전측도의 확장과 $\sigma$ 유한 유일성
+- [Cantor 집합](cantor-set.md): 측도 $0$ 인 비가산 완전집합, Cantor 함수와 특이연속분포
 - [Vitali 집합](vitali-set.md): 유리수 평행이동의 대표를 모은 비가측 집합, 측도를 멱집합으로 넓히지 못하는 이유
 - [Borel 계층](borel-hierarchy.md): 열린집합에서 가산 연산을 초한으로 되풀이한 단계, Suslin 정리
 - [강 측도 영집합](strong-measure-zero.md): 구간 길이를 미리 지정해도 덮을 수 있는 집합, Borel 추측
