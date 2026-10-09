@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-09T17:04:13.044Z",
-  "nextSeq": 1989,
+  "savedAt": "2026-10-09T20:59:50.874Z",
+  "nextSeq": 2001,
   "items": [
     {
       "id": "1d4e9a24",
@@ -58,6 +58,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 36차에 golay-codes 를 mathieu-groups 에서 분할하며 error-correcting-codes -> mathieu-groups 간선을 빼고 error-correcting-codes -> golay-codes -> mathieu-groups 로 꿰었다. 그런데 information-theory-overview 의 '# 지도' mermaid 에 'ECC --> MAT' 가 남아 있었다. 4.5절은 지도가 실제 간선의 부분그래프여야 한다고 하는데, 간선을 뺀 뒤 지도를 고치지 않으면 지도가 없는 간선을 그린다.\n\nvalidate, cycles, render-check, order-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다. 간선은 '# 연관 문서' 절에만 있고 지도의 화살표는 코드블록 안이라 파서가 보지 않는다. 36차에는 같은 회차 안에서 눈으로 잡아 'ECC --> GOL --> MAT' 로 고쳤다.\n\n검사법. 개관의 mermaid 블록만 뽑아 바꾼 문서의 제목이 들어간 줄을 본다. for f in docs/*-overview.md; do awk '/^```mermaid/{m=1} m{print FILENAME\": \"$0} /^```$/{if(m){m=0}}' $f; done | grep -iE '<바뀐 문서들의 제목>' 로 충분하다. 36차에는 이 grep 이 두 줄을 내놓아 한 곳만 고치면 됨이 드러났다.\n\n규칙. 8절의 통합·분할 절차(새 id 정하기, 부모와 자식 옮기기, 본문 링크 바꾸기, 옛 파일 git rm)에 '개관 지도 mermaid 맞추기' 를 더해 생각한다. 간선을 뺀 회차에는 반드시 위 grep 을 돌린다. 간선을 더한 경우는 지도가 부분그래프이면 되므로 더하지 않아도 규격 위반이 아니지만, 핵심 문서라면 넣는다.",
       "createdAt": "2026-10-09T08:37:13.630Z",
       "seq": 1956
+    },
+    {
+      "id": "ae0b674e",
+      "title": "큐에 넣기 전 저장소 전수 확인",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 36차 회차(2026-10-09)에 '역수학 체계 문서의 빈자리' 를 신규 주제로 큐에 넣었는데 reverse-mathematics(107줄, ATR_0 와 큰 다섯 체계를 표로 다룬다)와 second-order-arithmetic 이 이미 있었다. 같은 회차에 앞서 꺼낸 두 항목도 같은 착오였다. 0aaf9d9d 는 coupling 기법 전반을 요청했으나 coupling 문서가 이미 결합 부등식과 Strassen 정리로 다루고, 43d30fef 와 8b50e977 은 자식 후보로 Lax-Milgram 과 타원형 정칙성을 들었으나 lax-milgram 과 elliptic-regularity 가 이미 있었다. 원인은 큐 note 가 작성 당시의 저장소 상태를 적어 둔 것이고 그 뒤 여러 회차가 그 빈자리를 채운다는 것이다. 규칙 둘. (1) 큐 항목을 꺼내 작업을 시작하기 전에 note 가 '저장소에 없다' 고 적은 문서 이름을 'ls docs | grep -iE' 로 전부 확인한다. (2) 새 주제를 큐에 push 하기 전에도 같은 확인을 한다. 저장소가 750 문서라 제목만으로는 있는지 없는지 기억할 수 없다.",
+      "createdAt": "2026-10-09T20:48:47.236Z",
+      "seq": 1995
     },
     {
       "id": "08e59419",
@@ -602,6 +610,30 @@
       "note": "41차 판정. 큐 ebe94839 가 두 뜻(측도 사이의 nu << mu, 함수의 절대연속)을 한 자리에서 가르는 문서를 요청했으나 만들지 않는다. 담자고 한 다섯 가운데 넷이 이미 있다. (1) 두 정의: radon-nikodym 의 '## 절대연속' 절 17-25줄이 측도 쪽 정의와 유한측도에서의 epsilon-delta 동치를, bounded-variation 의 '## 절대연속' 절 29-37줄이 함수 쪽 정의와 균등연속과의 차이를 적는다. (2) 함수의 절대연속과 유계변동의 관계: bounded-variation '## 포함관계' 57-63줄의 Lipschitz 포함 절대연속 포함 BV 교 C^0 포함 BV 와 '## 미적분의 기본정리' 65-73줄의 필요충분조건. (3) Cantor 함수 반례: bounded-variation 63 과 이번 회차에 쓴 cantor-set 의 '## Cantor 함수의 성질' 절. (4) 측도 쪽과의 대응: 이번 회차에 bounded-variation 에 '## 측도의 절대연속과의 대응' 절을 더해 정리로 적었다(커밋 8db072c). F 가 증가 오른쪽 연속일 때 F 가 절대연속 함수인 것과 mu_F << lambda 인 것이 동치이고 Radon-Nikodym 도함수가 F' 인 것, 증명의 요지, Cantor 함수에서 깨지는 것까지다. 새 문서를 세우면 이 넷이 전부 중복이 되고 8절의 '흩어지기 쉽다' 는 취지에 어긋난다. 남은 하나는 Banach-Zaretsky 정리(F 가 BV 이고 연속이며 영집합을 영집합으로 보내면 절대연속)이고, 이것 하나로는 문서가 되지 않으므로 bounded-variation 의 '## 포함관계' 절에 한 줄로 더하는 것이 후속 작업이다.",
       "createdAt": "2026-10-09T16:50:04.190Z",
       "seq": 1984
+    },
+    {
+      "id": "03f38dba",
+      "title": "weak-convergence 의 Skorokhod 절 분담 재점검",
+      "priority": 20,
+      "note": "36차 회차(2026-10-09) 결과 메모. skorokhod-representation 을 만들면서 weak-convergence 102~106줄의 '## Skorokhod 표현정리' 절을 정리 진술 한 줄과 쓰임 한 문단으로 줄이고 구성과 증명은 새 문서로 넘겼다. 같은 자리의 '쓸모가 크다' 오타도 그 교체로 사라졌다. 남은 판단: 절을 아예 없애고 '## 수렴의 위계' 앞에서 본문 링크로만 둘지 여부다. 지금은 약수렴 문서 안에서 거의 확실한 수렴과의 관계를 보이는 자리라 진술을 남겼다.",
+      "createdAt": "2026-10-09T20:43:10.190Z",
+      "seq": 1990
+    },
+    {
+      "id": "7048236b",
+      "title": "Wasserstein 거리를 별도 문서로 만들지 않은 판정",
+      "priority": 20,
+      "note": "36차 회차(2026-10-09) 판정 메모. pop 으로 꺼낼 작업이 아니다. 같은 회차에 skorokhod-representation 을 쓰면서 Wasserstein 거리 문서를 후보로 밀었으나 만들지 않는다. 이유. optimal-transport(194줄)가 '## Wasserstein 거리' 절에서 W_p 의 정의를, 같은 문서 77줄에서 Kantorovich-Rubinstein 쌍대 공식을, '## Wasserstein 공간의 기하' 절에서 측지선과 무게중심을 이미 다룬다. 새 문서를 세우면 8절이 금지하는 중복 절이 세 곳 생기고, optimal-transport 는 1000줄 기준에서 멀어 분할 근거도 없다. skorokhod-representation 과 coupling 과 lipschitz-maps 가 본문 링크로 optimal-transport 를 가리키는 지금 상태가 맞다. 재판정 조건은 optimal-transport 가 1000줄에 닿아 8절 분할 대상이 될 때다.",
+      "createdAt": "2026-10-09T20:43:48.727Z",
+      "seq": 1992
+    },
+    {
+      "id": "85d05ad9",
+      "title": "전수 규칙 검사 결과 (36차)",
+      "priority": 20,
+      "note": "36차 회차(2026-10-09) 결과 메모. pop 으로 꺼낼 작업이 아니다. 문서 변경은 없다. 돌린 검사와 결과. (1) 태그 하나뿐 0 건. (2) 코드블록 언어 위반 0 건, 언어 없는 코드블록 0 건. (3) operatorname/bm/newcommand 0 건. (4) 방향형·전망형 절 0 건, '대부분 열려' 꼴 0 건. (5) 검산형 절(수치로 확인/시뮬레이션) 0 건. (6) 문장형 헤딩 17 건이 전부 '## 증명의 요지'(16)와 '## 퍼텐셜과 에너지'(1)로 명사구이므로 정상이다. 32502811 의 판정과 같다. (7) 비유 금지 grep 4 건은 lie-algebras:162 '사다리 연산자'(ladder operator, 용어), post-quantum-cryptography:126 '함정문'(trapdoor, 용어) 둘과 elliptic-curves:118 오탐이다. 그 줄은 TLS 설명이고 '사다리' 가 없는데 grep -oE 가 UTF-8 바이트 경계를 잘라 보고했다. 비유 grep 은 -oE 대신 python 으로 돌리거나 보고 줄 전문을 확인해야 한다. (8) 'A와 B' 제목은 python 으로 첫 H1 만 보고 '연관 문서' 를 뺀 25 건이다. 전부 4절이 예외로 명시한 '정리 이름과 그 정리가 답하는 개념'(canonical-height np-completeness perfect-graphs 등 19)이거나 파일명이 두 개념을 함께 담은 것(filters-and-nets ideals-quotient-rings limits-colimits kleisli-eilenberg-moore luzin-sierpinski-sets dyson-rank-crank 등 6)이다. 8ce35057 이 지적한 로케일 문제의 해법은 LC_ALL=C 가 아니라(그러면 바이트 매칭으로 한글 줄이 거의 전부 걸린다) python 으로 첫 H1 만 보는 것이다.",
+      "createdAt": "2026-10-09T20:59:00.927Z",
+      "seq": 2000
     },
     {
       "id": "410fd79d",
@@ -1578,6 +1610,46 @@
       "note": "41차에 dynkin-system(Dynkin 계, 83줄)을 measure 의 자식으로 새로 달고 리프로 남겼다. 같은 회차 caratheodory-extension 메모(dabe0577)가 자식 후보 (3) 으로 든 것을 같은 회차에 처리했다. 제목 표기 판정: 처음 파일명을 dynkin-pi-lambda, 제목을 'Dynkin π-λ 정리' 로 썼다가 둘 다 바꿨다. 근거는 docs 748 개 가운데 제목(첫 줄)에 그리스 문자를 직접 넣은 문서가 하나도 없다는 것이다(python re 로 U+0370-U+03FF 를 전수 검사해 0 건). 제목은 수식을 쓸 수 없는 자리라 pi-lambda 를 로마자로 적으면 어색하므로, 정의 대상인 Dynkin 계를 제목으로 삼고 정리 이름은 본문에서 수식 \\pi\\text{-}\\lambda 로 적었다. 기존 문서 둘(caratheodory-extension:69, kolmogorov-extension:41)이 이미 그 표기를 쓰므로 일관된다. 자식 후보: (1) 단조류 정리 - 성질 절 '## 단조류 정리와의 관계' 가 대수 출발과 pi 계 출발의 차이를 적었다. 별도 문서는 진술과 증명, Fubini 의 가측성 단계에 쓰이는 자리가 내용이 되는데 이 절과 겹치므로 판단이 필요하다. (2) 독립성과 꼬리 sigma 대수 - '## 독립성 판정' 절이 pi 계 두 개의 독립에서 생성 sigma 대수의 독립이 나오는 것을 적었다. Kolmogorov 0-1 법칙과 Hewitt-Savage 0-1 법칙을 담는 문서의 부모 후보가 이 문서다. 저장소에 꼬리사건 문서가 없다. 본문 링크를 건 곳 셋: measure 86, caratheodory-extension 69, kolmogorov-extension 41.",
       "createdAt": "2026-10-09T17:03:44.498Z",
       "seq": 1988
+    },
+    {
+      "id": "ade2f25b",
+      "title": "skorokhod-representation 의 후속 간선",
+      "priority": 11,
+      "note": "36차 회차(2026-10-09)에 skorokhod-representation 을 썼다(86줄, 부모 weak-convergence 와 coupling, 확률론 개관 극한정리 갈래에서 약수렴 다음 줄). 리프로 남겼다. 큐 항목 0aaf9d9d 가 함께 요청한 'coupling 기법 전반(최대결합, 전변동거리와의 관계)' 은 이미 coupling 문서가 결합 부등식과 Strassen 정리로 다루므로 따로 만들지 않았다. 자식 후보: (1) Wasserstein 거리 문서. 저장소에 optimal-transport 는 있으나 W_p 자체를 다루는 문서는 없고 skorokhod 의 활용 절 셋째가 그 자리를 본문 링크로만 둔다. (2) 분포함수의 각점 수렴과 Polya 정리(연속 극한에서 균등수렴). weak-convergence 쪽 분담을 먼저 정해야 한다. (3) Skorokhod 공간 D[0,1] 의 위상. 이름만 같고 다른 개념이며 donsker-invariance-principle 이 각주로만 언급한다. 만들면 부모는 donsker-invariance-principle 쪽이 맞고 skorokhod-representation 의 자식이 아니다.",
+      "createdAt": "2026-10-09T20:43:10.046Z",
+      "seq": 1989
+    },
+    {
+      "id": "d32a2bfe",
+      "title": "sigma11-boundedness 의 후속 간선",
+      "priority": 11,
+      "note": "36차 회차(2026-10-09)에 sigma11-boundedness 를 썼다(91줄, 부모 hyperarithmetical-hierarchy 하나, computation-overview '계산 가능성과 계층' 갈래에서 초산술적 계층 다음 줄). 큐 항목 20edfdc2 를 닫았다. 제목은 pi01-classes 의 관행에 맞춰 수식으로 적었다. 리프다. 자식 후보: (1) Kunen-Martin 정리를 별도 문서로 세울지. 지금은 성질 절의 한 절로 두었고 분량이 네 줄이라 따로 세울 근거가 약하다. 기술적 전개(사영 순서수, Sigma^1_2 유계)를 더할 때 재판정한다. (2) 역수학의 ATR_0 문서. 저장소에 역수학 체계를 다루는 문서가 없어 활용 절 셋째가 각주로만 출처를 댄다. 만들면 부모는 second-order arithmetic 쪽이고 이 문서의 자식이 아니다. (3) 사영 계층의 순위 분석(Suslin-Kleene). borel-hierarchy 가 Suslin 정리의 계산 가능성 판본을 본문에서 언급한다.",
+      "createdAt": "2026-10-09T20:47:12.400Z",
+      "seq": 1993
+    },
+    {
+      "id": "94aa056d",
+      "title": "quasiconformal-maps 의 후속 간선",
+      "priority": 11,
+      "note": "36차 회차(2026-10-09)에 quasiconformal-maps 를 썼다(85줄, 부모 riemann-surfaces 하나, complex-analysis-overview 의 Riemann 곡면 다음 줄). 큐 항목 fd3b5387 을 닫았다. 제목은 '준등각 사상' 으로 좁혔고 Beltrami 방정식은 정의 절, Bers 매장은 활용 절에 넣어 'A와 B' 제목을 피했다. 부모를 teichmuller-space 와 둘로 두지 않은 이유는 그 문서가 준등각을 전제하는 쪽이어서 방향이 반대이고, 그 문서 128줄에 본문 링크로 이었다. 같은 회차에 자식 fatou-components 를 만들어 리프를 풀었다(julia-set 과의 공통 자식). 남은 자식 후보: (1) Teichmüller 정리(극값 사상의 유일성과 정칙 이차미분). 저장소에 없고 teichmuller-space 90줄이 계량만 적는다. 만들면 부모는 quasiconformal-maps 와 teichmuller-space 둘이다. (2) 고차원 준등각 사상과 Mostow 강직성. mostow-rigidity 는 저장소에 없다(2026-10-09 확인). (3) 준등각 수술 자체를 문서로 세울지. fatou-components 의 성질 절이 Sullivan 증명의 수술을 이미 요지로 적으므로 중복 위험이 있다.",
+      "createdAt": "2026-10-09T20:54:49.900Z",
+      "seq": 1997
+    },
+    {
+      "id": "cd5df21b",
+      "title": "fatou-components 의 후속 간선",
+      "priority": 11,
+      "note": "36차 회차(2026-10-09)에 fatou-components 를 썼다(77줄, 부모 julia-set 과 quasiconformal-maps 둘, complex-analysis-overview 의 Julia 집합 다음 줄). 두 리프를 공통 자식으로 이었다. 리프다. 자식 후보: (1) Mandelbrot 집합. 활용 절 셋째가 쌍곡 성분을 본문 링크 없이 언급하고 저장소에 문서가 없다(2026-10-09 확인). 부모는 fatou-components 와 julia-set 이 맞다. (2) Siegel 원판의 존재(Siegel 선형화 정리와 Brjuno 조건). 정의 절이 유형만 적고 존재 판정은 적지 않았다. (3) Herman 환의 존재. Siegel 쪽과 한 문서로 묶는 편이 나을 수 있다. 셋 다 복소동역학 축이고 저장소의 그 축은 montel-theorem, julia-set, newton-method, fatou-components 넷이다.",
+      "createdAt": "2026-10-09T20:54:50.032Z",
+      "seq": 1998
+    },
+    {
+      "id": "7a7ab348",
+      "title": "mandelbrot-set 의 후속 간선",
+      "priority": 11,
+      "note": "36차 회차(2026-10-09)에 mandelbrot-set 을 썼다(93줄, 부모 fatou-components 하나, complex-analysis-overview 의 Fatou 성분 다음 줄). 부모를 julia-set 과 둘로 두지 않은 이유는 julia-set 이 fatou-components 의 부모라 조상 중복이고 쌍곡 성분 서술이 Fatou 성분 분류를 직접 쓴다는 것이다. 리프다. 작성 중 고친 셋을 적어 둔다. (1) 주기 1 심장꼴 조건은 승수 2z_0=1-sqrt(1-4c) 쪽이므로 부호를 1+ 에서 1- 로 바로잡았다. (2) Shishikura 결과를 '경계의 거의 모든 점' 으로 적었던 것을 '차원 2 인 c 가 경계에서 조밀' 로 바로잡았다. 측도 진술이 아니다. (3) 국소연결 추측 각주의 Milnor 절 번호를 확인할 수 없어 빼고 Douady-Hubbard 가 제기했다는 것만 남겼다. 자식 후보: (1) 되풀이 재규격화(Douady-Hubbard 의 polynomial-like 사상과 작은 사본). 활용 절 셋째가 본문 링크 없이 언급한다. (2) Siegel 선형화 정리와 Brjuno 조건. fatou-components 메모와 겹치므로 어느 쪽 자식으로 둘지 정해야 한다. (3) 쌍곡성 조멀 추측. 열린 문제이므로 4절 규칙대로 출처를 각주로 달아야 하고 단독 문서보다 mandelbrot-set 의 '알려진 열린 문제' 절 보강이 맞다.",
+      "createdAt": "2026-10-09T20:57:34.730Z",
+      "seq": 1999
     },
     {
       "id": "09c81cac",
@@ -2708,14 +2780,6 @@
       "seq": 1942
     },
     {
-      "id": "0aaf9d9d",
-      "title": "Skorokhod 표현정리와 결합",
-      "priority": 8,
-      "note": "weak-convergence 아래. 분포 수렴을 거의 확실한 수렴으로 실현하는 구성, 역분포함수 결합, 일반 Polish 공간에서의 증명, coupling 기법 전반(최대결합, 전변동거리와의 관계)으로 확장",
-      "createdAt": "2026-09-16T04:58:57.804Z",
-      "seq": 313
-    },
-    {
       "id": "a6985bd5",
       "title": "dev 스크립트 개선 요청 묶음 (수식 표기 검사, KaTeX 검증, 이스케이프 검출)",
       "priority": 8,
@@ -2786,14 +2850,6 @@
       "note": "2026-09-23 회차 10차. 9차 note 의 다음 걸음(단언 문장 뒤의 '때문이다' 를 어간 겹침으로 거르기)과 그 자리에서 떠오른 다른 어미까지 돌렸고 고칠 것이 0 건이었다. 검사기(스크래치패드 because2.mjs, 22줄): 코드펜스와 헤딩과 표 줄을 건너뛰고, 줄을 '다.' 뒤에서 잘라 근거 어미로 끝나는 문장 S2 와 그 앞 문장 S1 을 짝짓는다. 한글 2 글자 이상 토큰을 앞 두 글자로 자른 집합을 만들고(이것은/그것은/따라서/그러므로/여기서/이때/그리고/하지만 제외) S2 의 토큰 가운데 S1 에도 있는 비율을 센다. (1) '때문이다': 겹침 45% 이상 0 건, 25% 이상 15 건이고 15 건 모두 새 정보를 주는 정상 근거 문장이었다. 오탐 확정: algebraic-varieties 53, connectedness 141, curry-howard 76, curvature 101, galois-theory 121, hecke-operators 26, prime-ideals 68, pushforward-measure 23, quadratic-reciprocity 162, s-cobordism 126, schur-polynomials 52, structural-set-theory 80, turan-theorem 11, ultraproducts 19, weak-konig-lemma 13. (2) '까닭이다|이유다|탓이다|덕분이다': 같은 검사기로 1 건(serre-conjecture 125)이고 홀수 조건이라는 새 정보를 주므로 정상이다. 따로 grep 한 '~인 이유다' 20 여 건은 앞 사실을 뒤 사실의 이유로 지목하는 연결이지 되풀이가 아니고, 4절 금지 목록에도 없다. 판정 기준: 4절이 금하는 것은 앞 문장에 이미 있는 말을 어순만 바꿔 되풀이하는 근거 문장이고, 앞 문장에 없던 사실(정리 이름, 세는 값, 반례, 구조)을 대면 남긴다. 결론: 8차부터 쌓인 네 검사기(because.mjs, 결론-전제 순서, because2.mjs, 어미 확장)로 근거 문장 계열이 소진되었다. 우선순위를 8 로 낮춘다. 다시 열려면 근거 어미가 아닌 다른 계열을 찾아야 한다",
       "createdAt": "2026-09-23T20:55:34.144Z",
       "seq": 1050
-    },
-    {
-      "id": "20edfdc2",
-      "title": "Sigma^1_1 경계 정리",
-      "priority": 8,
-      "note": "hyperarithmetical-hierarchy 의 Kleene 정리 증명이 이 정리를 이름만 쓰고 지나간다. 부모는 hyperarithmetical-hierarchy. 내용: 정렬근거 나무의 순위, Sigma^1_1 집합에 든 표기들의 순위가 omega_1^CK 미만으로 유계, Kunen-Martin 정리와의 관계, 증명은 정렬순서의 집합 WO 가 Sigma^1_1 이 아니라는 사실",
-      "createdAt": "2026-09-24T00:38:33.646Z",
-      "seq": 1053
     },
     {
       "id": "2ba45f47",
@@ -2938,14 +2994,6 @@
       "note": "teichmuller-space 아래. Dehn 비틀림 생성, 곡선복합체, 유사 Anosov 와 팽창률, 사상원환면이 쌍곡 3 다양체가 되는 정리",
       "createdAt": "2026-09-15T20:49:22.903Z",
       "seq": 297
-    },
-    {
-      "id": "fd3b5387",
-      "title": "준등각 사상과 Beltrami 방정식",
-      "priority": 6,
-      "note": "riemann-surfaces 와 teichmuller-space 아래. 팽창률, 가측 Riemann 사상 정리, Bers 매장. riemann-surfaces 본문 '어디로 이어지는가' 에서 언급만 하고 넘어갔다",
-      "createdAt": "2026-09-16T00:48:46.182Z",
-      "seq": 305
     },
     {
       "id": "314d255d",
