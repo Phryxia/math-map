@@ -86,6 +86,6 @@ $m=1$ 에서는 $W_n=Z_n$ 이 Martingale 이지만 극한이 $0$ 이므로 평�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [침투](percolation.md)
 
 #probability #combinatorics #graph_theory
