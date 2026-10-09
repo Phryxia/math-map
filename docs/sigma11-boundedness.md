@@ -72,7 +72,7 @@ $\Pi^1_1$ 집합을 순위에 따라 $\omega_1^{\mathrm{CK}}$ 개의 조각으�
 
 ## 역수학에서의 대응
 
-$\Sigma^1_1$ 경계 정리는 초한 재귀를 산술적 논리식에 허용하는 체계 $\mathrm{ATR}\_0$(arithmetical transfinite recursion)에서 증명되고 더 약한 체계에서는 증명되지 않는다.[^2] 초한 재귀의 사용량을 재는 척도로 쓰이는 진술 가운데 하나다.
+$\Sigma^1_1$ 경계 정리는 초한 재귀를 산술적 논리식에 허용하는 체계 $\mathrm{ATR}\_0$(arithmetical transfinite recursion)에서 증명되고 더 약한 체계에서는 증명되지 않는다.[^2] [역수학](reverse-mathematics.md)의 큰 다섯 체계 가운데 $\mathrm{ATR}\_0$ 을 특징짓는 진술이고, 가산 정렬순서 둘의 비교가능성과 같은 자리에 선다.
 
 [^1]: G. E. Sacks, *Higher Recursion Theory* (1990), II.5 — 경계 정리와 그 상대화. Kleene 정리는 II.2.
 
