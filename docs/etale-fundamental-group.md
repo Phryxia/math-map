@@ -99,7 +99,7 @@ $$
 \pi_1^{\mathrm{et}}(\mathbb A^1\_{\bar{\mathbb F}\_p})\neq1
 $$
 
-$t\mapsto u^p$ 가 에탈이 아니므로 왼쪽에서 $p$ 성분이 빠진다. 오른쪽이 자명하지 않은 것은 Artin–Schreier 덮개 $y^p-y=f(t)$ 때문이다. 복소수 위의 $\mathbb A^1$ 은 단순연결이므로 이 현상은 표수 $p$ 에서만 나온다.
+$t\mapsto u^p$ 가 에탈이 아니므로 왼쪽에서 $p$ 성분이 빠진다. 오른쪽이 자명하지 않은 것은 [Artin–Schreier](artin-schreier-theory.md) 덮개 $y^p-y=f(t)$ 때문이다. 복소수 위의 $\mathbb A^1$ 은 단순연결이므로 이 현상은 표수 $p$ 에서만 나온다.
 
 $\ell\neq p$ 인 $\ell$ 성분은 표수 $0$ 으로 올릴 때 보존된다. $\ell$ 진 [에탈 코호몰로지](etale-cohomology.md)가 이 성분을 쓴다.
 

@@ -89,6 +89,7 @@ graph TD
 - [체](fields.md) → [체의 확대](field-extensions.md) → [유한체](finite-fields.md), [Galois 이론](galois-theory.md)
 - [Hilbert 정리 90](hilbert-theorem-90.md): 순환 확대에서 노름 1 인 원소가 켤레의 비로 쓰인다는 정리, $H^1$ 의 소멸과 Kummer 이론
 - [Kummer 이론](kummer-theory.md): 1 의 거듭제곱근을 품은 체에서 지수 $n$ 아벨 확대와 $K^\ast/(K^\ast)^n$ 의 부분군이 짝지어지는 대응
+- [Artin–Schreier 이론](artin-schreier-theory.md): 표수 $p$ 에서 차수 $p$ 순환확대를 $y^p-y=a$ 로 생성하고 $K/\wp(K)$ 로 분류하는 대응
 - [오류정정부호](error-correcting-codes.md): 유한체 위의 선형 부호, 대수가 통신에 쓰이는 첫 자리
 - [p 진수](p-adic-numbers.md) → [Newton 다각형](newton-polygon.md): 완비화한 체
 - [대수적 수체](algebraic-number-fields.md) → [유체론](class-field-theory.md): 이후는 정수론 개관

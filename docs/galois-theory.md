@@ -153,6 +153,7 @@ $\mathbb{Q}$ 의 Galois 확대에서 Galois 군의 부분군이 [소수](primes.
 ## 더 알아보기
 
 - [Hilbert 정리 90](hilbert-theorem-90.md)
+- [Artin–Schreier 이론](artin-schreier-theory.md)
 - [대수적 수체](algebraic-number-fields.md)
 - [미분 Galois 이론](differential-galois-theory.md)
 - [에탈 기본군](etale-fundamental-group.md)
