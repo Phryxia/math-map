@@ -56,7 +56,7 @@ $$
 
 로 두면 $\sigma^{p}=\mathrm{id}$ 와 $p-1=-1$ 에서 $\sigma(y)-y=\sum\_{i=0}^{p-1}\sigma^{i}(\alpha)=1$ 이다. 그러면 $\sigma(\wp(y))=\wp(y+1)=\wp(y)$ 이므로 $\wp(y)$ 는 $\sigma$ 가 고정하는 원소, 곧 $K$ 의 원소다. $\sigma(y)\ne y$ 이므로 $y\notin K$ 이고 $\lbrack L:K\rbrack=p$ 가 소수이므로 $L=K(y)$ 다.
 
-곱셈군에서 $N\_{L/K}(a)=1$ 인 원소를 $b/\sigma(b)$ 로 적는 것이 [Hilbert 정리 90](hilbert-theorem-90.md)이고, 위 계산은 그 덧셈군 판본인 $H^1(G,L)=0$ 을 대각합으로 직접 쓴 것이다.
+[Hilbert 정리 90](hilbert-theorem-90.md)은 곱셈군에서 $N\_{L/K}(a)=1$ 인 원소를 $b/\sigma(b)$ 로 적는다. 위 계산은 그 덧셈군 판본 $H^1(G,L)=0$ 을 대각합으로 쓴 것이다.
 
 ## 기약성 판정
 
