@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-08T21:05:32.382Z",
-  "nextSeq": 1932,
+  "savedAt": "2026-10-09T01:02:32.084Z",
+  "nextSeq": 1945,
   "items": [
     {
       "id": "cbb9382f",
@@ -18,14 +18,6 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 37차에 '## 더 알아보기' 절을 헤딩 기준으로 교체하는 node 스크립트를 썼다. 절의 끝을 '다음 H1 또는 H2 까지' 로 잡았는데 '## 더 알아보기' 는 문서의 마지막 H2 이므로 끝이 파일 끝이 되고, 그 사이에 있는 태그 줄(#probability #analysis)이 교체문에 덮여 사라졌다. ito-calculus 와 ordinary-differential-equations 둘에서 났다. '## 선수지식' 교체는 뒤에 '## 더 알아보기' 가 있어 무사했다.\n\n검사 여섯과 render-check, order-check 는 이것을 전혀 잡지 못한다. graph.mjs validate 도 통과한다(간선은 링크 줄만 읽는다). 잡아낸 것은 tail -2 로 끝부분을 눈으로 본 것이고, graph.mjs tags 의 'N untagged' 수치로도 드러난다.\n\n규칙 둘. (1) 문서 마지막 절을 교체하는 스크립트는 태그 줄(^#[a-z0-9_ #]*$ 꼴의 마지막 줄)을 절 범위에서 빼거나, 교체문 끝에 태그 줄을 함께 적는다. (2) 어떤 방식으로든 docs 를 스크립트로 고친 회차에는 커밋 전에 'node dev/graph.mjs tags | tail -1' 로 untagged 가 0 인지 보고, 고친 문서마다 'tail -2 docs/<id>.md' 로 태그 줄이 남았는지 확인한다. 복구는 'git show HEAD:docs/<id>.md | tail -1' 로 원본 태그 줄을 꺼내 붙이면 된다.",
       "createdAt": "2026-10-06T12:44:38.127Z",
       "seq": 1795
-    },
-    {
-      "id": "de5bf0a8",
-      "title": "저장소의 shallow clone 때문에 세션 시작 git pull 이 divergent 로 실패하는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 32차 회차 시작에서 git pull origin claude/math 가 'Your branch and origin/claude/math have diverged, and have 50 and 50 different commits each' 와 'fatal: Need to specify how to reconcile divergent branches' 로 실패했다. 실제로 갈라진 것이 아니다. 실행 환경이 저장소를 depth 50 으로 shallow clone 하므로 .git/shallow 가 히스토리를 자르고, git 이 공통 조상을 찾지 못해 양쪽을 서로 50 커밋 앞선 것으로 센다. fetch 출력의 'forced update' 표시도 같은 원인이고 원격 히스토리가 다시 쓰인 것이 아니다. 판별법은 git merge-base HEAD origin/claude/math 가 종료코드 1 로 아무것도 내놓지 않는 것이다. 해결은 git fetch --unshallow origin claude/math 를 돌린 뒤 git rev-list --left-right --count HEAD...origin/claude/math 로 확인하는 것이다. 32차에는 0 410 이 나와 로컬이 원격의 조상임이 드러났고 git pull --ff-only 로 끝났다. 커밋을 되돌리거나 git reset --hard 를 쓸 자리가 아니다.\n\n2026-10-05 33차 회차에도 같은 증상이 났다. 로컬 HEAD 가 06f789e(queue: 312 items, 2026-09-30), 원격이 e8faf21(queue: 350 items, 2026-10-05) 이고 양쪽이 서로 50 커밋 앞선 것으로 보고됐다. 이 회차는 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 사후에 --unshallow 를 돌려 git rev-list --left-right --count 06f789e...origin/claude/math 가 0 425 를 내놓아 잃은 커밋이 없음을 확인했으나, 순서가 거꾸로였다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 --unshallow 와 rev-list 로 조상관계를 확인한다. 큐 메모는 1절의 queue list 단계에서 읽히므로, pull 실패는 그 단계 앞에 오는 점도 이 사고가 되풀이되는 이유다.\n\n2026-10-05 34차 회차에도 같은 증상이 났다(로컬 06f789e, 원격 99023a4, 서로 50 커밋). 이 회차는 실행 환경의 권한 분류기가 git reset --hard, git merge -X theirs --allow-unrelated-histories, 충돌 파일의 git checkout --theirs 를 전부 'Irreversible Local Destruction' 으로 거부했다. 즉 33차가 쓴 reset --hard 는 이제 쓸 수 없고, --unshallow 가 우회가 아니라 유일하게 통하는 첫 수다. 거부를 받고 돌아와 이 메모를 읽은 뒤 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌려 0 433 을 얻고 git pull --ff-only 로 끝냈다. 저장소를 다른 곳에 새로 클론할 필요도 없다. 순서는 하나다. pull 이 divergent 로 실패하면 git merge-base 로 공통 조상이 없음을 확인하고, 곧바로 --unshallow 와 rev-list 를 돌린다.\n\n2026-10-07 35차 회차에도 같은 증상이 났다(로컬 4e30b1b, 원격 3eb4a47, 서로 50 커밋, fetch 가 'forced update' 표시). 이 회차도 33차처럼 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 34차가 거부된 그 조작이 이번에는 통과했으므로 권한 분류기에 의존해 사고를 막을 수 없다. 사전에 git diff --name-status 로 로컬에만 있는 파일이 0 이고 원격이 문서 32 개를 더 가진 상위 집합임을 확인한 뒤 실행했고, 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 '0 60' 을 내놓아 잃은 커밋이 없음을 확인했다. 그래도 순서는 거꾸로였다. 되풀이되는 이유는 이 메모가 1절의 queue list 단계에서 읽히고 pull 실패는 그 앞에 온다는 것이다. 33차와 35차가 reset 을 썼고 34차는 거부된 뒤 정규 경로로 갔으니 세 회차 모두 같은 자리에서 틀렸다. 독자가 CLAUDE.md 1절의 git pull 줄 옆에 'divergent 로 실패하면 git fetch --unshallow origin claude/math 뒤 git rev-list --left-right --count HEAD...origin/claude/math' 한 줄을 넣을지 판단할 자리다.",
-      "createdAt": "2026-10-07T08:47:57.234Z",
-      "seq": 1842
     },
     {
       "id": "df90dfba",
@@ -58,6 +50,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차 시작에서 세션 시작 pull 이 divergent 로 실패해(큐의 shallow clone 메모) 원격 브랜치를 스크래치패드에 따로 클론하고 거기서 1절 명령을 돌렸다. 그때 node dev/queue.mjs list 가 큐 서버를 그 클론 경로로 기동했다. 뒤에 --unshallow 로 원래 작업 트리를 정상화하고 그 클론을 지웠지만, 서버는 포트 7777 에 그대로 살아 있었다. 그래서 회차 내내 /home/user/math-map 에서 돌린 push 와 remove 가 전부 그 서버로 갔고, 종료 단계의 queue.mjs stop 이 'stopped. saved=true committed=false (git 저장소가 아니다)' 를 냈다. dev/queue.json 은 세션 시작 상태 그대로였고 git status 는 깨끗했다. 메모 넷과 통독 항목 교체가 커밋되지 않을 뻔했다.\n\n복구. 서버는 저장할 때 지운 디렉터리를 다시 만들었으므로 파일이 남아 있었다. find /tmp -name queue.json -newermt '<회차 시작 시각>' 로 찾아 스크래치패드 클론 경로의 queue.json 을 작업 트리의 dev/queue.json 으로 복사하고, JSON 유효성과 항목 수와 이 회차 메모의 존재를 확인한 뒤 'queue: N items (날짜)' 로 따로 커밋했다.\n\n규칙. 큐 서버는 작업 트리에서만 기동한다. 세션 시작 pull 이 실패하면 저장소를 다른 곳에 클론하지 말고 --unshallow 와 rev-list 로 정상화한다(shallow clone 메모). 어떤 이유로 작업 트리 밖에서 queue.mjs 를 한 번이라도 돌렸으면, 이어서 작업 트리에서 node dev/queue.mjs status 로 서버가 어디 것인지 확인하고 stop 으로 끊은 뒤 다시 기동한다. 종료 단계에서는 stop 의 출력에 committed=true 가 있는지 반드시 읽는다. committed=false 면 git log 로 'queue:' 커밋이 생겼는지 보고, 없으면 위 복구를 한다.",
       "createdAt": "2026-10-08T20:36:53.886Z",
       "seq": 1922
+    },
+    {
+      "id": "4eca3d6b",
+      "title": "저장소의 shallow clone 때문에 세션 시작 git pull 이 divergent 로 실패하는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 32차 회차 시작에서 git pull origin claude/math 가 'Your branch and origin/claude/math have diverged, and have 50 and 50 different commits each' 와 'fatal: Need to specify how to reconcile divergent branches' 로 실패했다. 실제로 갈라진 것이 아니다. 실행 환경이 저장소를 depth 50 으로 shallow clone 하므로 .git/shallow 가 히스토리를 자르고, git 이 공통 조상을 찾지 못해 양쪽을 서로 50 커밋 앞선 것으로 센다. fetch 출력의 'forced update' 표시도 같은 원인이고 원격 히스토리가 다시 쓰인 것이 아니다. 판별법은 git merge-base HEAD origin/claude/math 가 종료코드 1 로 아무것도 내놓지 않는 것이다. 해결은 git fetch --unshallow origin claude/math 를 돌린 뒤 git rev-list --left-right --count HEAD...origin/claude/math 로 확인하는 것이다. 32차에는 0 410 이 나와 로컬이 원격의 조상임이 드러났고 git pull --ff-only 로 끝났다. 커밋을 되돌리거나 git reset --hard 를 쓸 자리가 아니다.\n\n2026-10-05 33차 회차에도 같은 증상이 났다. 로컬 HEAD 가 06f789e(queue: 312 items, 2026-09-30), 원격이 e8faf21(queue: 350 items, 2026-10-05) 이고 양쪽이 서로 50 커밋 앞선 것으로 보고됐다. 이 회차는 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 사후에 --unshallow 를 돌려 git rev-list --left-right --count 06f789e...origin/claude/math 가 0 425 를 내놓아 잃은 커밋이 없음을 확인했으나, 순서가 거꾸로였다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 --unshallow 와 rev-list 로 조상관계를 확인한다. 큐 메모는 1절의 queue list 단계에서 읽히므로, pull 실패는 그 단계 앞에 오는 점도 이 사고가 되풀이되는 이유다.\n\n2026-10-05 34차 회차에도 같은 증상이 났다(로컬 06f789e, 원격 99023a4, 서로 50 커밋). 이 회차는 실행 환경의 권한 분류기가 git reset --hard, git merge -X theirs --allow-unrelated-histories, 충돌 파일의 git checkout --theirs 를 전부 'Irreversible Local Destruction' 으로 거부했다. 즉 33차가 쓴 reset --hard 는 이제 쓸 수 없고, --unshallow 가 우회가 아니라 유일하게 통하는 첫 수다. 거부를 받고 돌아와 이 메모를 읽은 뒤 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌려 0 433 을 얻고 git pull --ff-only 로 끝냈다. 저장소를 다른 곳에 새로 클론할 필요도 없다. 순서는 하나다. pull 이 divergent 로 실패하면 git merge-base 로 공통 조상이 없음을 확인하고, 곧바로 --unshallow 와 rev-list 를 돌린다.\n\n2026-10-07 35차 회차에도 같은 증상이 났다(로컬 4e30b1b, 원격 3eb4a47, 서로 50 커밋, fetch 가 'forced update' 표시). 이 회차도 33차처럼 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 34차가 거부된 그 조작이 이번에는 통과했으므로 권한 분류기에 의존해 사고를 막을 수 없다. 사전에 git diff --name-status 로 로컬에만 있는 파일이 0 이고 원격이 문서 32 개를 더 가진 상위 집합임을 확인한 뒤 실행했고, 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 '0 60' 을 내놓아 잃은 커밋이 없음을 확인했다. 그래도 순서는 거꾸로였다. 되풀이되는 이유는 이 메모가 1절의 queue list 단계에서 읽히고 pull 실패는 그 앞에 온다는 것이다. 33차와 35차가 reset 을 썼고 34차는 거부된 뒤 정규 경로로 갔으니 그 회차들 모두 같은 자리에서 틀렸다. 독자가 CLAUDE.md 1절의 git pull 줄 옆에 'divergent 로 실패하면 git fetch --unshallow origin claude/math 뒤 git rev-list --left-right --count HEAD...origin/claude/math' 한 줄을 넣을지 판단할 자리다.\n2026-10-09 38차 회차에도 같은 증상이 났다(로컬 4e30b1b 'queue: 355 items', 원격 6cb96ce 'queue: 423 items', fetch 가 'forced update' 를 찍고 서로 50 커밋). 이 회차도 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다(34차와 달리 권한 분류기가 막지 않았다). 다만 reset 앞에 git diff --name-status HEAD origin/claude/math 를 돌려 D(삭제) 항목이 0 이고 A 78 M 169 뿐임을 확인한 뒤였으므로 문서 손실은 없었다. 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 0 136 을 내놓아 로컬이 원격의 조상임이 확인됐다.\n\n33차, 34차, 35차, 38차 네 번 되풀이되었다. 되풀이의 원인은 메모가 큐에 있고 큐는 1절의 queue list 단계에서 읽히는데 pull 은 그 앞 단계라는 것이다. 지금으로서 확실한 대비는 하나다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌린다. 0 N 이면 git pull --ff-only 로 끝난다. reset --hard 를 쓰기 전에 적어도 git diff --name-status HEAD origin/claude/math 로 D 항목이 없음을 확인한다.",
+      "createdAt": "2026-10-09T00:37:51.686Z",
+      "seq": 1933
     },
     {
       "id": "08e59419",
@@ -514,6 +514,22 @@
       "note": "2026-10-08 회차(38차) 종료 전에 docs 717 문서에 4절 검사를 전수로 돌렸다. 0 건인 축: 수식 이스케이프 awk, 태그로 읽히는 부등호(grep '<[a-zA-Z]'), 줄 끝 백슬래시, 금지 매크로(operatorname/bm/newcommand), 코드블록 언어(javascript|typescript|mermaid 외), 언어 없는 코드블록, 방향형 절 이름, '대부분 열려' 꼴 범위 뭉뚱그림, 태그가 하나뿐인 문서, graph.mjs tags 의 untagged. validate/cycles/render-check/order-check/node --test 도 전부 0 이다.\n\n비유 금지 grep 은 세 건을 내놓았고 모두 4절이 정한 예외(용어의 일부)다. (1) elliptic-curves 118 '사다리' 는 'Montgomery 사다리' 로 알고리즘 이름이다. (2) lie-algebras 162 는 '사다리 연산자'(ladder operator)다. (3) post-quantum-cryptography 126 의 '함정' 두 건은 '함정문'(trapdoor)이다. 세 건 모두 고치지 않는다. 비유 grep 에 이 세 꼴을 제외하는 패턴을 더할지는 독자 판단이다.\n\n'A와 B' 제목 후보 grep -l '^# .*[와과] ' docs/*.md 는 717 문서 전부를 내놓아 쓸 수 없었다. 큐 8ce35057 의 로케일 메모와 같은 증상이고, LC_ALL=C.UTF-8 을 줘도 같다(이 환경은 LANG 이 비어 있다). 비유 grep 쪽은 로케일 없이도 바르게 동작했으므로 문제는 문자 클래스 [와과] 쪽이다.",
       "createdAt": "2026-10-08T21:05:11.064Z",
       "seq": 1931
+    },
+    {
+      "id": "bece25cf",
+      "title": "활용 절 항목이 저장소 문서를 가리켜야 하는지 판정",
+      "priority": 20,
+      "note": "38차 회차 판정. 4절은 '활용 절은 개념이 쓰이는 자리를 목록이나 짧은 문단으로 든다. 각 항목은 어느 문서의 어느 정의에서 쓰이는지를 말한다' 고 쓴다. 이것을 '모든 항목이 저장소 문서를 링크해야 한다' 로 읽으면 기존 문서 다수가 위반이 된다. 관행을 표본으로 확인했다. kummer-theory 의 활용 네 항목 가운데 '유체론' 과 '분기의 계산' 은 링크가 없고, crossing-number-inequality 의 세 항목 가운데 '격자 위 그래프의 그림' 과 '이분 금지 문제의 기하적 제약' 도 링크가 없다. 둘 다 개념이 쓰이는 수학적 자리를 말한다.\n\n판정. 활용 절 항목은 저장소 문서를 가리키지 않아도 된다. 규칙의 취지는 '어디서 쓰이는지 말하라' 이고 '저장소 안에서만 말하라' 가 아니다. 저장소에 문서가 있으면 링크하고, 없으면 개념 이름만 쓴다. 0절은 '없는 문서' 를 docs 에 적는 것을 금지하므로 '아직 문서가 없다' 같은 문장은 넣지 않는다. 따라서 donsker-invariance-principle 의 셋째 항목(검정통계량의 극한분포)과 chvatal-rank 의 셋째 항목(완화의 질 비교)은 그대로 둔다. 38차 회차 큐 항목 '38차 회차 새 문서 넷의 문체 회귀 점검' 의 (2) 는 이 판정으로 닫혔고 (1) 직관 문단 수만 남는다.\n\n함께 본 것. 활용 항목 머리에 굵은 글씨 소제목을 붙이는 문서가 있다(kummer-theory, crossing-number-inequality). 4절은 '굵은 글씨는 정의되는 용어에만 쓴다' 고 하므로 그 관행은 규칙과 어긋난다. 전수 현황과 일괄 교정은 따로 판단할 자리다.",
+      "createdAt": "2026-10-09T01:01:20.065Z",
+      "seq": 1943
+    },
+    {
+      "id": "b76eda12",
+      "title": "활용 절 목록 머리의 굵은 글씨 전수 현황과 일괄 교정 판단",
+      "priority": 20,
+      "note": "38차 회차 조사. 4절 마크다운 규칙은 '굵은 글씨는 정의되는 용어에만 쓴다' 고 한다. 그런데 활용 절 목록의 항목 머리를 '- **유체론.**' 처럼 굵은 소제목으로 여는 문서가 721 개 가운데 320 개다(검사: sed -n '/^# 활용/,/^# 연관 문서/p' $f | grep -cE '^- [*][*]'). 표본은 kummer-theory 4, crossing-number-inequality 3, witt-ring 4, yoneda-lemma 3, zilber-trichotomy 4 다. 굵게 쓰인 말은 정의되는 용어가 아니라 그 항목의 주제어다.\n\n판단할 것 셋. (1) 규칙을 문자 그대로 적용하면 320 문서를 고쳐야 한다. 한 회차에 다 할 수 없고 여러 회차에 걸쳐 분야별로 나누어야 한다. (2) 또는 4절의 굵은 글씨 규칙에 '활용 절 목록의 항목 주제어' 를 예외로 더한다. 독자가 CLAUDE.md 를 고칠 자리이므로 이 메모가 그 판단 재료다. (3) 어느 쪽으로 가든 새 문서는 한쪽을 따라야 한다. 38차 회차에 쓴 네 문서(artin-schreier-theory, donsker-invariance-principle, complete-graph-crossing-number, chvatal-rank)는 규칙 쪽을 따라 굵은 글씨 없이 썼다. 교정하지 않기로 하면 그 네 문서가 소수파가 된다.\n\n이 항목은 전수 교정 작업이 아니라 판단 요청이다. 판단 없이 320 문서를 고치는 회차를 열지 않는다.",
+      "createdAt": "2026-10-09T01:01:55.516Z",
+      "seq": 1944
     },
     {
       "id": "410fd79d",
@@ -1442,6 +1458,22 @@
       "note": "37차 회차(2026-10-08)에 free-probability(자유확률, 89줄)를 썼다. 같은 회차에 쓴 noncrossing-partitions 의 자식 후보 (1) 이고 그 문서의 리프를 닫았다. 부모는 noncrossing-partitions 와 wigner-semicircle 둘이고 서로 조상관계가 없다. wigner-semicircle 을 부모로 둔 판정: 자유 중심극한정리의 결론이 반원분포이고 성질 절이 그 분포의 자유 누적량을 그대로 쓰므로, 반원법칙을 읽지 않으면 이 문서의 중심 정리를 읽을 수 없다. wigner-semicircle 의 자식은 셋(marchenko-pastur, tracy-widom, free-probability)이 되었고 5개 이하라 묶지 않았다. marchenko-pastur 로는 간선을 긋지 않고 활용 첫째의 본문 링크로 두었다(자유 곱셈 합성곱으로 다시 얻는다는 관계이고 이미 wigner-semicircle 의 자식이다). 담은 것: 독립이면 혼합적률이 곱으로 쪼개지는데 행렬에서는 tau(ABAB) 가 쪼개지지 않아 막히는 직관, 고유벡터가 서로 무작위한 방향이면 N->infty 에서 그 값이 계산되고 평균 0 에서 0 이 된다는 다음 수, 비교환 확률공간과 자유독립(번갈아 고른 중심화된 곱의 tau 가 0)과 자유 누적량의 정의, R 변환의 덧셈성과 Cauchy 변환의 역함수 관계, 자유 중심극한정리와 증명 요지(n^(1-n/2) kappa_n 이 n=2 에서만 남는다), 자유 합성곱과 반원분포의 안정성, 고유벡터가 무작위한 두 행렬이 극한에서 자유독립이 된다는 Voiculescu 의 대응. 활용 넷(합의 고윳값 분포, 작용소대수의 불변량, 신호 검출, 조합론의 세기). 태그는 #probability #combinatorics #functional_analysis 이고 probability-overview 의 Tracy-Widom 다음 줄에 넣었다. README 를 710 과 1252 로 맞췄다. 자식 후보: (1) 자유 엔트로피와 자유 차원 - 저장소에 없다. 활용 둘째가 이름만 쓴다. 작용소대수 쪽 문서가 먼저 필요한지 확인이 필요하다. (2) 자유 곱셈 합성곱과 S 변환 - 없다. 성질 절이 덧셈 쪽만 담았고 활용 첫째가 곱셈 쪽을 이름만 쓴다. (3) BBP 전이(신호 고윳값이 잡음 경계를 벗어나는 임계) - 없다. 활용 셋째가 이름 없이 적고 지나간다. (4) free-probability 는 현재 리프다.",
       "createdAt": "2026-10-08T17:04:20.804Z",
       "seq": 1921
+    },
+    {
+      "id": "9abdc105",
+      "title": "etale-fundamental-group 을 artin-schreier-theory 의 자식으로 두지 않은 판정",
+      "priority": 11,
+      "note": "38차 회차 판정 결과 메모. check-cycle artin-schreier-theory etale-fundamental-group --allow-new 는 OK 였으나 간선은 긋지 않았다. 이유 둘. (1) 5절 기준 '부모를 빼도 자식의 개요가 그대로 읽히는가'. 에탈 기본군의 개요는 유한 에탈 덮개의 분류와 절대 Galois 군이고 Artin-Schreier 없이 읽힌다. 덮개 y^p-y=f(t) 는 '표수 p 의 야생 분기' 절 한 곳에서 쓰인다. (2) 그 자리를 본문 링크로 해결했다. etale-fundamental-group 102줄의 'Artin-Schreier 덮개' 를 artin-schreier-theory 로 링크했고, 큐 항목 58153732 가 지적한 '정의를 줄 문서가 없다' 가 이것으로 닫혔다. 재검토할 자리는 야생 분기를 다루는 문서(상기 분기, Swan 도체)가 새로 생겨 artin-schreier-theory 가 그 문서의 부모가 될 때다.",
+      "createdAt": "2026-10-09T00:45:46.780Z",
+      "seq": 1935
+    },
+    {
+      "id": "a7c7d53e",
+      "title": "random-walks 를 donsker-invariance-principle 의 부모로 두지 않은 판정",
+      "priority": 11,
+      "note": "38차 회차 판정 결과 메모. check-cycle random-walks donsker-invariance-principle --allow-new 는 OK 였으나 간선은 긋지 않았다. 이유 둘. (1) random-walks 는 부모가 effective-resistance 와 markov-chains 이고 그래프 위 걷기(유효저항, 재귀성, 초특이 동종사상 그래프)를 다룬다. Donsker 가 쓰는 것은 Z 위 iid 증분의 부분합이고 그것은 central-limit-theorem 이 준다. 5절 기준 '부모를 빼도 자식의 개요가 그대로 읽히는가' 에서 읽힌다. (2) 부모를 둘(weak-convergence, brownian-motion)로 유지했다. 재검토할 자리는 random-walks 가 Z^d 위 걷기의 스케일 극한을 다루게 보강될 때다.",
+      "createdAt": "2026-10-09T00:50:37.334Z",
+      "seq": 1938
     },
     {
       "id": "09c81cac",
@@ -2404,6 +2436,46 @@
       "seq": 1930
     },
     {
+      "id": "5ee1e53c",
+      "title": "artin-schreier-theory 의 후속 간선",
+      "priority": 10,
+      "note": "38차 회차에 artin-schreier-theory 를 galois-theory 와 finite-fields 의 자식으로 새로 달고 리프로 남겼다. 자식 후보와 판단할 점. (1) etale-fundamental-group 은 간선을 긋지 않았다(아래 별도 항목의 판정). (2) 표수 p 의 Witt 벡터를 쓰는 Artin-Schreier-Witt 이론은 저장소에 문서가 없다. 성질 절의 '차수 p^m 순환확대' 가 이름만 쓰고 각주로 Serre, Local Fields II 5 를 달았다. witt-ring 은 이차형식의 Witt 환이므로 다른 문서다. (3) 유한체 위 Artin-Schreier 곡선(y^p-y=f(x), Hermite 곡선)은 유리점 개수가 많아 대수기하 부호에 쓰이지만 대수곡선 문서가 저장소에 없다. error-correcting-codes 가 선형 부호까지만 다룬다. (4) 국소체의 야생 분기. class-field-theory 는 수체의 아이디얼류군 쪽이고 표수 p 함수체를 다루지 않으므로 지금은 간선 후보가 아니다.",
+      "createdAt": "2026-10-09T00:45:46.660Z",
+      "seq": 1934
+    },
+    {
+      "id": "e63cfafb",
+      "title": "donsker-invariance-principle 의 후속 간선",
+      "priority": 10,
+      "note": "38차 회차에 donsker-invariance-principle 을 weak-convergence 와 brownian-motion 의 자식으로 새로 달고 리프로 남겼다. 자식 후보와 판단할 점. (1) Skorokhod 공간 D[0,1] 과 경험과정. 성질 절의 '경험과정 판본' 이 Brown 다리와 Skorokhod 위상을 이름만 쓰고 각주로 Billingsley 13, 16 절을 달았다. 저장소에 경험과정, Brown 다리, Skorokhod 공간 문서가 모두 없다. 큐의 0aaf9d9d 'Skorokhod 표현정리와 결합' 과 겹치는지 먼저 대조한다. (2) Kolmogorov-Smirnov 검정. 활용 절 셋째가 통계량과 극한분포를 말하지만 검정 문서가 저장소에 없다. statistics 분야의 신규 주제 후보다. (3) 반복로그법칙(Strassen 불변원리)은 같은 꺾은선 과정의 다른 스케일 극한이고 문서가 없다. (4) 단위근 검정과 Dickey-Fuller 는 계량 쪽이라 지금 저장소의 statistics 갈래에 자리가 없다.",
+      "createdAt": "2026-10-09T00:50:37.218Z",
+      "seq": 1937
+    },
+    {
+      "id": "8b4ff3d5",
+      "title": "완전이분그래프의 교차수를 별도 문서로 뗄지 판정",
+      "priority": 10,
+      "note": "38차 회차 판정과 남은 작업. 큐 항목 0c448cbe 는 '완전그래프와 완전이분그래프의 교차수' 한 문서를 요청했으나, 4절 제목 규칙의 'A와 B' 금지에 걸리므로 complete-graph-crossing-number('완전그래프의 교차수')로 좁혀 썼다. K_{m,n} 은 성질 절의 'Zarankiewicz 의 그림과의 관계' 한 절로 두었다. Z(m,n) 공식, min(m,n)<=6 에서의 Kleitman 증명, Zarankiewicz 추측의 미해결 범위(각주로 Schaefer survey 3절)를 그 절에 담았다. 별도 문서로 뗄 기준은 둘이다. (1) 그 절이 Kleitman 증명의 요지(원기둥 그림과 홀짝 논증)까지 담아 길어지면 complete-bipartite-crossing-number 로 뗀다. (2) zarankiewicz-problem 문서가 저장소에 있고 그것은 이분그래프의 K_{s,t} 자유 극값 문제여서 교차수의 Zarankiewicz 와 다른 문제다. 문서를 떼면 두 Zarankiewicz 를 구별하는 문단을 양쪽에 둔다.",
+      "createdAt": "2026-10-09T00:54:14.885Z",
+      "seq": 1939
+    },
+    {
+      "id": "d330cdba",
+      "title": "complete-graph-crossing-number 의 후속 간선",
+      "priority": 10,
+      "note": "38차 회차에 complete-graph-crossing-number 를 crossing-number-inequality 의 자식으로 달고 리프로 남겼다. 자식 후보. (1) 직선 교차수와 Sylvester 의 네 점 문제, 볼록 위치의 점 개수. 저장소에 문서가 없다. (2) 교차수의 NP 완전성 증명은 complexity 쪽이고 np-completeness 문서가 있으면 그쪽 본문 링크가 맞다. (3) 책 두께 교차수, 쌍 교차수 같은 변종은 Schaefer survey 의 분류이고 각자 문서가 될 만큼 저장소에 자리가 없다. 지금은 리프로 둔다.",
+      "createdAt": "2026-10-09T00:54:15.004Z",
+      "seq": 1940
+    },
+    {
+      "id": "c6758923",
+      "title": "chvatal-rank 의 후속 간선과 안정집합 다면체 문서",
+      "priority": 10,
+      "note": "38차 회차에 chvatal-rank('Chvátal 계수')를 integer-programming 의 자식으로 달고 리프로 남겼다. 남은 점 셋. (1) 안정집합 다면체 문서가 저장소에 없다. chvatal-rank 의 직관과 성질 절이 안정집합 완화(변 부등식, 홀수 사이클 부등식, 완전그래프 쪽 부등식)를 세 번 쓰는데 링크할 문서가 없어 이름만 썼다. graph_theory 와 optimization 에 걸치는 신규 주제 후보이고 부모는 integer-programming 과 planar-graphs 가 아니라 graph-theory-overview 쪽을 봐야 한다. (2) Gomory 혼합정수 절단과 분리 문제(separation)는 integer-programming 의 절단평면 절을 보강하는 쪽이 맞고 별도 문서는 아직 이르다. (3) Lovasz-Schrijver 와 Sherali-Adams 올림 계층은 Chvátal 계수와 다른 계층이고 저장소에 문서가 없다. 계수 비교(한 계층이 다른 계층보다 강한지)를 담으려면 두 문서가 먼저 필요하다.",
+      "createdAt": "2026-10-09T00:57:32.247Z",
+      "seq": 1941
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -2476,20 +2548,20 @@
       "seq": 1589
     },
     {
+      "id": "5564bdd9",
+      "title": "38차 회차 새 문서 넷의 문체 회귀 점검",
+      "priority": 9,
+      "note": "2026-10-09 38차 회차에 쓴 네 문서를 다음 회차에 4절 기준으로 다시 읽는다. artin-schreier-theory(109줄), donsker-invariance-principle(92줄), complete-graph-crossing-number(97줄), chvatal-rank(95줄). 회차 안에서 이미 돌린 것: 문장형 헤딩 grep, 매크로 grep, 비유 금지 grep, 관용구 grep, 열린 문제 절 grep, 범위 뭉뚱 grep, 코드블록 검사, 두문자어 첫 등장, 각주 정합(정의와 본문 참조가 넷 다 일치), 중복 H2(없음), 수식 검사 여섯. 회차 안에서 고친 것: '~을 직접 쓴 것이다', '~로 넓힌 것이다', '~이면서, ~ 정해진다' 세 문장을 두 문장으로 쪼개고 피동을 뺐다(커밋 4cf18b15). 다음 회차에 볼 것 둘. (1) 직관 절 문단 수. 네 문서가 각각 4, 4, 3, 4 문단이고 4절은 '두 문단을 넘지 않는다' 고 쓰지만 모범 예(측도)는 다섯 문단이다. 큐 항목 08e59419 가 그 어긋남을 다루므로 그 판정이 나오기 전까지는 모범 예 쪽을 따랐다. (2) 활용 절 항목이 저장소 문서를 가리키는지. donsker 의 셋째 항목(검정통계량의 극한분포)과 chvatal-rank 의 셋째 항목(완화의 질 비교)은 문서를 가리키지 않고 개념이 쓰이는 자리만 말한다. 4절은 '어느 문서의 어느 정의에서 쓰이는지를 말한다' 고 하므로 두 항목을 지울지 남길지 판정한다.",
+      "createdAt": "2026-10-09T00:59:39.183Z",
+      "seq": 1942
+    },
+    {
       "id": "0aaf9d9d",
       "title": "Skorokhod 표현정리와 결합",
       "priority": 8,
       "note": "weak-convergence 아래. 분포 수렴을 거의 확실한 수렴으로 실현하는 구성, 역분포함수 결합, 일반 Polish 공간에서의 증명, coupling 기법 전반(최대결합, 전변동거리와의 관계)으로 확장",
       "createdAt": "2026-09-16T04:58:57.804Z",
       "seq": 313
-    },
-    {
-      "id": "534b1c36",
-      "title": "Donsker 불변원리",
-      "priority": 8,
-      "note": "weak-convergence 와 brownian-motion 아래. C[0,1] 위의 약수렴, tightness 판정(Arzela-Ascoli 와 모듈러스 조건), 랜덤워크의 스케일 극한이 Brown 운동. weak-convergence 본문 '극한정리의 표준 골격' 에서 언급만 했다",
-      "createdAt": "2026-09-16T04:58:57.916Z",
-      "seq": 314
     },
     {
       "id": "a6985bd5",
@@ -2580,14 +2652,6 @@
       "seq": 1055
     },
     {
-      "id": "0c448cbe",
-      "title": "완전그래프와 완전이분그래프의 교차수",
-      "priority": 8,
-      "note": "crossing-number-inequality 가 하한만 다루고 구체적 그래프의 교차수를 다루지 않았다. 부모는 crossing-number-inequality. 내용: cr(K_5)=1, cr(K_6)=3, Zarankiewicz 의 K_{m,n} 공식과 그것이 증명된 범위(문헌이 미해결이라 명시하므로 각주 필요), Guy 의 K_n 추측, 교차수 계산이 NP 어려움, 직선 교차수와의 차이. zarankiewicz-problem 과 이름이 겹치는 두 Zarankiewicz 문제를 구별해 쓸 것",
-      "createdAt": "2026-09-24T01:01:15.223Z",
-      "seq": 1069
-    },
-    {
       "id": "33211732",
       "title": "분자종의 순환 지표",
       "priority": 8,
@@ -2602,14 +2666,6 @@
       "note": "상시 항목. 2026-09-24 회차에 갈래가 열 줄을 넘던 개관 일곱을 모두 나눴다. foundations-overview(집합론 18줄 → 집합론의 기초/독립성과 강제법/기술집합론, 논리 17줄 → 논리의 체계/모형론/무한소/구성적 논리/역수학), combinatorics-overview(극단 조합론과 확률적 방법 20줄 → 극단 조합론/분할과 조합적 종/설계와 접촉 구조/확률적 방법과 무작위 구조, 겹치는 이름이던 격자·부호·설계 갈래는 격자와 부호로 좁혔다), topology-overview(대수적 위상 19줄 → 호모토피와 호몰로지/코호몰로지와 비틀림/호모토피론의 도구/층과 가역층), number-theory-overview(초등 정수론 15줄 → 합동과 소수/Diophantine 근사와 방정식), linear-algebra-overview(기초 14줄 → 공간과 사상/고윳값과 스펙트럼/수치 선형대수), computation-overview(계산가능성과 계산 모형 13줄 → 계산 가능성과 계층/계산 모형과 의미론), analysis-overview(극한과 연속 11줄 → 극한과 연속/함수공간의 정리/Lipschitz 조건), probability-overview(기초와 극한정리 11줄 → 확률 공간과 확률변수/극한정리/편차와 Gauss 구조), abstract-algebra-overview(환과 가군 10줄 → 환과 아이디얼/가군/대수기하로 가는 문). 회차 끝에 확인한 결과 열 줄 이상인 갈래는 하나도 남지 않았다. 새 문서를 개관 갈래에 더하는 회차마다 그 갈래가 다시 열 줄을 넘는지 보고, 넘으면 나눈다. 나눌 때 원래 목록의 화살표 사슬은 한 줄로 유지하고, 갈래 이름은 명사구로 짓고 같은 개관 안에서 이름이 겹치지 않게 한다. 갈래 줄은 본문 링크라 간선에 영향이 없으므로 검사는 render-check 와 헤딩 문장 grep 으로 충분하다",
       "createdAt": "2026-09-24T13:01:14.099Z",
       "seq": 1111
-    },
-    {
-      "id": "58153732",
-      "title": "Artin-Schreier 이론",
-      "priority": 8,
-      "note": "대수. etale-fundamental-group 의 직관 절과 성질 절이 y^p - y = f 덮개를 표수 p 의 야생 부분으로 두 번 쓰는데 정의를 줄 문서가 없다. finite-fields 와 galois-theory 가 부모 후보다. 쓸 내용: 표수 p 에서 차수 p 순환확대의 분류 H^1(G, k) = k/(F-1)k, Artin-Schreier 다항식, Kummer 이론과의 대응(표수 0 의 x^n - a 에 해당), 에탈 기본군의 야생 부분과 Witt 벡터로의 확장",
-      "createdAt": "2026-09-27T20:48:44.158Z",
-      "seq": 1334
     },
     {
       "id": "52debcac",
@@ -2692,12 +2748,12 @@
       "seq": 1588
     },
     {
-      "id": "181b5441",
-      "title": "절단평면의 Chvatal 계수",
+      "id": "fe6525ed",
+      "title": "Artin-Schreier-Witt 이론",
       "priority": 8,
-      "note": "최적화/조합론. 부모는 integer-programming. 유계 다면체를 정수 껍질로 보내는 CG 닫힘의 최소 횟수, 상한과 하한의 알려진 결과. integer-programming 성질 절에서 이름만 썼다.",
-      "createdAt": "2026-10-04T20:46:23.526Z",
-      "seq": 1672
+      "note": "대수. 표수 p 체의 차수 p^m 순환확대를 길이 m Witt 벡터의 Artin-Schreier 사상으로 분류한다. artin-schreier-theory 의 '차수 p^m 순환확대' 절이 이름만 쓰고 정의를 주지 않는다. 부모 후보는 artin-schreier-theory 하나. 쓸 내용: 표수 p 의 Witt 벡터 W(k) 와 Witt 덧셈 다항식, F-1 의 성분별 확장, 지수 p^m 아벨 확대와 W_m(K)/(F-1)W_m(K) 의 대응, p 진 코호몰로지와의 연결. 주의: witt-ring 은 이차형식의 Witt 환이므로 id 가 겹치지 않게 witt-vectors 로 잡는다.",
+      "createdAt": "2026-10-09T00:45:46.925Z",
+      "seq": 1936
     },
     {
       "id": "fb947ff9",
