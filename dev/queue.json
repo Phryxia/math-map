@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-09T01:02:32.084Z",
-  "nextSeq": 1945,
+  "savedAt": "2026-10-09T05:06:14.316Z",
+  "nextSeq": 1956,
   "items": [
     {
       "id": "cbb9382f",
@@ -226,14 +226,6 @@
       "note": "35차 판정. 옛 항목 1d328346 이 Wasserstein 거리 문서를 요청하며 담을 내용 넷(W_p 의 정의, Kantorovich-Rubinstein 쌍대, 약수렴과의 관계, 1 차원 분위수 닫힌 형태)을 적었으나, optimal-transport.md 가 그 넷을 모두 담는다. '## Wasserstein 거리'(49줄) 가 정의를, '## 쌍대 문제'(61줄) 가 쌍대를, '## 1 차원의 정렬 해'(81줄) 가 분위수 형태를, '## Wasserstein 공간의 기하'(139줄 부근) 가 약수렴 거리화와 적률 수렴 동치, 질량이 멀리 도망가는 반례까지 담는다. 보강할 자리가 남지 않았으므로 분리도 보강도 불필요하다고 판정했다. 이 판정은 optimal-transport 를 실제로 읽어 확인한 것이다",
       "createdAt": "2026-10-06T00:58:49.553Z",
       "seq": 1755
-    },
-    {
-      "id": "e6eac80c",
-      "title": "Brouwer 차수를 별도 문서로 분리할지 판단",
-      "priority": 20,
-      "note": "35차 판정 대기. 옛 큐 항목 46f8c4d4(Leray-Schauder 차수)의 note 가 'Brouwer 차수 자체를 다루는 문서가 저장소에 없으므로 차수의 정의부터 세워야 한다' 고 적었고, 35차에 쓴 leray-schauder-degree 의 '## Brouwer 차수' 절이 정칙값의 원상을 Jacobi 행렬식 부호로 세는 정의와 연속 확장을 담았다. 별도 문서로 분리하려면 호몰로지로 보는 차수, Hopf 정리(차수가 호모토피류를 완전히 가른다), 사상도수와 Poincare-Hopf 정리의 관계가 내용이 되어야 한다. poincare-hopf 와 brouwer-fixed-point 가 이미 있으므로 그 둘과 겹치는 범위를 먼저 확인할 것",
-      "createdAt": "2026-10-06T01:02:39.143Z",
-      "seq": 1756
     },
     {
       "id": "89a333fe",
@@ -530,6 +522,14 @@
       "note": "38차 회차 조사. 4절 마크다운 규칙은 '굵은 글씨는 정의되는 용어에만 쓴다' 고 한다. 그런데 활용 절 목록의 항목 머리를 '- **유체론.**' 처럼 굵은 소제목으로 여는 문서가 721 개 가운데 320 개다(검사: sed -n '/^# 활용/,/^# 연관 문서/p' $f | grep -cE '^- [*][*]'). 표본은 kummer-theory 4, crossing-number-inequality 3, witt-ring 4, yoneda-lemma 3, zilber-trichotomy 4 다. 굵게 쓰인 말은 정의되는 용어가 아니라 그 항목의 주제어다.\n\n판단할 것 셋. (1) 규칙을 문자 그대로 적용하면 320 문서를 고쳐야 한다. 한 회차에 다 할 수 없고 여러 회차에 걸쳐 분야별로 나누어야 한다. (2) 또는 4절의 굵은 글씨 규칙에 '활용 절 목록의 항목 주제어' 를 예외로 더한다. 독자가 CLAUDE.md 를 고칠 자리이므로 이 메모가 그 판단 재료다. (3) 어느 쪽으로 가든 새 문서는 한쪽을 따라야 한다. 38차 회차에 쓴 네 문서(artin-schreier-theory, donsker-invariance-principle, complete-graph-crossing-number, chvatal-rank)는 규칙 쪽을 따라 굵은 글씨 없이 썼다. 교정하지 않기로 하면 그 네 문서가 소수파가 된다.\n\n이 항목은 전수 교정 작업이 아니라 판단 요청이다. 판단 없이 320 문서를 고치는 회차를 열지 않는다.",
       "createdAt": "2026-10-09T01:01:55.516Z",
       "seq": 1944
+    },
+    {
+      "id": "f255b737",
+      "title": "circle-method 의 Hardy-Littlewood 추측 보강 여부 판정",
+      "priority": 20,
+      "note": "40차(2026-10-09) 판정 기록. 옛 큐 항목 dbb60c1b 는 '원 방법을 담은 문서가 없다' 고 적었으나 그 뒤 circle-method(원법, 189줄, 부모 partitions 와 prime-number-theorem, 리프)가 생겼으므로 0절대로 그 작업을 버렸다. 남은 물음은 그 문서가 Hardy-Littlewood 추측과 특이급수를 어느 깊이로 담는지다. 지금 'Hardy' 가 두 줄에 나온다. prime-gaps 의 정의 절이 특이급수와 Hardy-Littlewood 추측을 담고 있어 두 문서가 같은 내용을 나눠 가진 꼴이므로 8절 기준으로 겹치는 범위를 보고, circle-method 와 prime-gaps 사이에 간선이 필요한지도 함께 판단할 것. circle-method 가 리프이므로 후속 후보(Vinogradov 의 세 소수 정리, Waring 문제)도 같은 작업에서 꺼낼 것",
+      "createdAt": "2026-10-09T04:53:43.459Z",
+      "seq": 1950
     },
     {
       "id": "410fd79d",
@@ -1828,14 +1828,6 @@
       "seq": 1564
     },
     {
-      "id": "9e2cd37d",
-      "title": "l1 정칙화와 희소 회복",
-      "priority": 10,
-      "note": "최적화 또는 통계 분야. 2026-09-26 회차에 nesterov-acceleration 활용 절이 'l1 정칙화 회귀' 를 링크 없이 이름만 쓴다(0절대로 링크를 걸지 않았다). 저장소에 compressed-sensing, sparse, lasso, l1 이름의 문서가 전부 없다. 다룰 것: LASSO 의 정의, l1 최소화가 희소해를 주는 기하(l1 공의 꼭짓점이 좌표축에 있다), 제한 등거리 성질과 l0-l1 동치 정리, 연성 문턱. 부모 후보는 convexity 와 linear-regression(있는지 확인할 것). 근접 경사법 문서를 먼저 쓰면 그것도 부모 후보다 / 중복 항목 통합(27차): 같은 작업을 가리키는 두 항목(0e64308f, aba74a55)을 하나로 합쳤다. 다른 쪽 메모는 다음이다. 2026-09-26 회차에 proximal-gradient-method 를 쓰면서 이 항목의 부모 후보가 하나 늘었다. 그 문서의 활용 절 첫째가 l1 정칙화 회귀의 반복(연성 문턱)을 이미 다루므로 새 문서는 알고리즘이 아니라 l1 최소화가 왜 희소해를 주는지를 다뤄야 한다. 다룰 것: LASSO 의 정의, l1 공의 꼭짓점이 좌표축에 있다는 기하, 제한 등거리 성질과 l0-l1 동치 정리, 표본 수 하한. 부모 후보는 proximal-gradient-method(알고리즘 쪽)와 convexity. 8절 기준으로 proximal-gradient-method 의 활용 절과 겹치는지 먼저 판정할 것. 저장소에 compressed-sensing, sparse, lasso, l1 이름의 문서가 없고 linear-regression 이 있는지도 확인할 것",
-      "createdAt": "2026-10-03T13:05:16.431Z",
-      "seq": 1574
-    },
-    {
       "id": "6a181539",
       "title": "문장을 굵게 쓴 자리 훑기 (3차)",
       "priority": 10,
@@ -1882,30 +1874,6 @@
       "note": "29차 회차에 리프 검사로 발견했다. 큐 410fd79d(Zilber 삼분법 갈래 15차)는 'cherlin-zilber-conjecture 를 만들어 두 리프가 해소되어 이 갈래에 리프가 남지 않았다' 고 적었으나, 새로 만든 그 문서 자신이 리프다. 29차에 센 자식 수는 bad-groups 1, zilber-indecomposability 1, zilber-trichotomy 3, cherlin-zilber-conjecture 0 이다. 리프를 셀 때 새로 만든 문서를 빼놓지 않도록 다음 회차에 주의한다. 이 갈래는 모델이론 축이고 부모가 bad-groups 와 zilber-indecomposability 둘이다. 자식 후보는 문서를 열어 보고 정해야 하므로 29차에는 손대지 않았다(회차 마감 15분 전이라 새 문서를 쓸 시간이 없었다).",
       "createdAt": "2026-10-04T01:01:26.602Z",
       "seq": 1622
-    },
-    {
-      "id": "777da0c4",
-      "title": "Vaughan 항등식과 지수합의 쌍선형 분해",
-      "priority": 10,
-      "note": "분야는 정수론(#number_theory #analysis). 부모 후보는 large-sieve 와 prime-number-theorem 이다. large-sieve 의 Bombieri-Vinogradov 증명 요지가 Vaughan 항등식을 이름만 쓰고 넘어간다. von Mangoldt 함수를 쌍선형합으로 가르는 항등식과 Type I, Type II 합의 추정이 한 문서 분량이고, Vinogradov 의 지수합 방법 쪽 문서들의 부모가 될 수 있다.",
-      "createdAt": "2026-10-04T08:52:16.574Z",
-      "seq": 1641
-    },
-    {
-      "id": "dbb60c1b",
-      "title": "원 방법과 Hardy-Littlewood 추측",
-      "priority": 10,
-      "note": "분야는 정수론(#number_theory #analysis). 부모 후보는 large-sieve 와 prime-gaps 다. prime-gaps 의 정의 절이 특이급수와 Hardy-Littlewood 추측을 담고 있는데, 그 추측이 나오는 원 방법(주호와 소호 분해, Weyl 합, Vinogradov 의 세 소수 정리)을 담은 문서가 없다. poisson-summation 과 stationary-phase 가 이미 있어 해석적 도구 쪽 부모 후보가 갖춰져 있다.",
-      "createdAt": "2026-10-04T08:55:05.255Z",
-      "seq": 1643
-    },
-    {
-      "id": "5e5f35fa",
-      "title": "모멘트 사상과 심플렉틱 축소",
-      "priority": 10,
-      "note": "미분기하. 부모 후보는 symplectic-manifolds 와 lie-groups. Marsden-Weinstein 축소, 각운동량, 궤도 공간. symplectic-manifolds 활용 절에서 링크 없이 이름만 썼다.",
-      "createdAt": "2026-10-04T20:42:50.711Z",
-      "seq": 1670
     },
     {
       "id": "73e2341f",
@@ -2020,36 +1988,12 @@
       "seq": 1759
     },
     {
-      "id": "64c78a4c",
-      "title": "Courcelle 정리",
-      "priority": 10,
-      "note": "logic 또는 complexity. treewidth 143-148줄이 단항 2차 논리와 정리 진술만 담고 증명의 요지(나무 오토마타로의 번역)와 MSO 로 쓸 수 있는 성질의 범위를 다루지 않는다. 부모는 treewidth 와 first-order-logic",
-      "createdAt": "2026-10-06T04:42:49.719Z",
-      "seq": 1760
-    },
-    {
       "id": "fbb7d6c7",
       "title": "확률 그래프 모형의 추론",
       "priority": 10,
       "note": "probability 또는 machine_learning. treewidth 의 활용 절이 결합분포를 그래프로 적은 모형과 연접 나무 절차를 링크 없이 이름만 쓴다(0절). 모랄 그래프, 연접 나무, 믿음 전파와 추론 비용이 나무폭에 지수인 것. 부모는 treewidth 와 bayesian-inference 를 볼 것",
       "createdAt": "2026-10-06T04:42:49.834Z",
       "seq": 1761
-    },
-    {
-      "id": "3884da71",
-      "title": "지표표의 계산",
-      "priority": 10,
-      "note": "group_theory, linear_algebra. 이번 회차에 쓴 conjugacy-classes 가 S_3 의 지표표만 보이고, group-representations 120-146줄이 두 직교관계와 S_3 예를 담는다. 작은 군(S_4, A_5, Q_8)의 지표표를 직교관계와 차수 공식으로 채우는 절차를 다루는 문서가 될 수 있다. 부모는 conjugacy-classes 와 group-representations",
-      "createdAt": "2026-10-06T04:46:29.319Z",
-      "seq": 1762
-    },
-    {
-      "id": "77266faa",
-      "title": "상관균형과 후회 최소화",
-      "priority": 10,
-      "note": "optimization, machine_learning. 이번 회차에 쓴 nash-equilibrium 의 활용 절이 후회 최소화 절차의 평균 전략이 minimax 값으로 간다는 것만 적는다. 상관균형의 정의와 선형계획 표현, 후회 최소화의 평균 전략이 상관균형 집합으로 수렴하는 정리, multiplicative weights 가 담길 자리다. 부모는 nash-equilibrium",
-      "createdAt": "2026-10-06T04:50:13.395Z",
-      "seq": 1763
     },
     {
       "id": "4601e33a",
@@ -2474,6 +2418,70 @@
       "note": "38차 회차에 chvatal-rank('Chvátal 계수')를 integer-programming 의 자식으로 달고 리프로 남겼다. 남은 점 셋. (1) 안정집합 다면체 문서가 저장소에 없다. chvatal-rank 의 직관과 성질 절이 안정집합 완화(변 부등식, 홀수 사이클 부등식, 완전그래프 쪽 부등식)를 세 번 쓰는데 링크할 문서가 없어 이름만 썼다. graph_theory 와 optimization 에 걸치는 신규 주제 후보이고 부모는 integer-programming 과 planar-graphs 가 아니라 graph-theory-overview 쪽을 봐야 한다. (2) Gomory 혼합정수 절단과 분리 문제(separation)는 integer-programming 의 절단평면 절을 보강하는 쪽이 맞고 별도 문서는 아직 이르다. (3) Lovasz-Schrijver 와 Sherali-Adams 올림 계층은 Chvátal 계수와 다른 계층이고 저장소에 문서가 없다. 계수 비교(한 계층이 다른 계층보다 강한지)를 담으려면 두 문서가 먼저 필요하다.",
       "createdAt": "2026-10-09T00:57:32.247Z",
       "seq": 1941
+    },
+    {
+      "id": "d5174b07",
+      "title": "Brouwer 차수의 남은 후속: 털난 공 정리와 분기 이론",
+      "priority": 10,
+      "note": "40차(2026-10-09)에 brouwer-degree(90줄)를 썼다. 부모는 homology 와 inverse-function-theorem, 자식은 leray-schauder-degree 하나다. 담은 것은 정칙값에서의 부호 합 정의, Sard 정리와 Weierstrass 근사를 쓴 연속사상 확장, 구면 사상의 호몰로지 차수, 호모토피 불변성·해의 존재·가법성·곱셈성, Hopf 정리(Milnor 7장 각주), 벡터장 고립 영점의 지표다. 활용 절이 링크 없이 이름만 쓴 것이 둘이다. (a) 털난 공 정리: 대척사상 차수가 (-1)^{n+1} 인 것에서 짝수 차원 구면의 접벡터장이 영점을 갖는다는 결론. 부모 후보는 brouwer-degree 와 vector-fields. (b) 분기 이론: 매개변수를 지나며 차수가 바뀌는 자리에서 해의 개수가 바뀐다는 것. 부모 후보는 brouwer-degree 와 leray-schauder-degree. poincare-hopf 를 brouwer-degree 의 자식으로 둘지도 판단이 남았다. 지금은 활용 절의 본문 링크로만 걸었고, 그 문서의 현재 부모는 gauss-bonnet 과 vector-fields 다.",
+      "createdAt": "2026-10-09T04:42:13.936Z",
+      "seq": 1945
+    },
+    {
+      "id": "cdedb1ec",
+      "title": "횡단성의 남은 후속: 교차 이론과 Thom 코보디즘",
+      "priority": 10,
+      "note": "40차(2026-10-09)에 transversality(횡단성, 83줄)를 썼다. 부모는 sard-theorem 과 tangent-bundle, 지금은 리프다. 담은 것은 접공간 합이 전체를 채우는 정의, 사상의 횡단성과 정칙값이 그 특수 사례라는 것, 원상의 차원 공식, 열린 조건, 매개변수 횡단성 정리(Sard 를 사영에 적용)와 조밀성, 콤팩트 방향가능 다양체의 교차수다. 각주는 Guillemin-Pollack 2 장. 활용 절이 링크 없이 이름만 쓴 것이 교차 이론이다. 후속 후보 둘. (a) 교차 이론: 부모 후보는 transversality 와 cohomology, 담을 것은 Poincare 쌍대성 아래 교차수와 컵곱의 대응, 대수다양체의 교차 중복도. (b) Thom 코보디즘 정리: 부모 후보는 transversality 와 vector-bundles, 담을 것은 Thom 공간과 Pontryagin-Thom 대응. 40차에 morse-theory 와 whitney-embedding 이 정의 없이 쓰던 '횡단' 에 본문 링크를 걸었다.",
+      "createdAt": "2026-10-09T04:49:25.626Z",
+      "seq": 1948
+    },
+    {
+      "id": "e7acf564",
+      "title": "압축 센싱의 남은 후속: 행렬 완성과 영공간 성질",
+      "priority": 10,
+      "note": "40차(2026-10-09)에 compressed-sensing(압축 센싱, 95줄)을 썼다. 부모는 convexity 와 linear-regression, 지금은 리프다. 담은 것은 l0 최소화와 기저 추구, LASSO 추정량, 제한 등거리 성질의 정의, 2k 열 선형독립이 주는 희소해 유일성, delta_2k < sqrt2-1 에서의 l0-l1 일치(Candes 2008 각주)와 지지집합 분할 증명 요지, Gauss 무작위 행렬의 m >= C delta^-2 k log(n/k) 조건(Baraniuk 외 2008 각주), 연성 문턱이다. 활용 절이 링크 없이 이름만 쓴 것이 둘이다. (a) 행렬 완성: 핵노름 최소화로 저계수 행렬을 복원하는 것, 부모 후보는 compressed-sensing 과 singular-value-decomposition. (b) 영공간 성질(null space property): l1 복원의 필요충분조건으로 RIP 보다 약한 조건, 지금 문서에 넣지 않았고 별도 문서보다 compressed-sensing 성질 절 보강이 맞을지 판단이 남았다. LASSO 추정량의 통계적 성질(변수 선택 일관성, irrepresentable condition)은 linear-regression 쪽 후속으로 따로 꺼낼 것.",
+      "createdAt": "2026-10-09T04:53:04.783Z",
+      "seq": 1949
+    },
+    {
+      "id": "84fb9573",
+      "title": "모멘트 사상의 남은 후속: 토릭 다양체와 기하적 불변량 이론",
+      "priority": 10,
+      "note": "40차(2026-10-09)에 moment-map(모멘트 사상, 103줄)을 썼다. 부모는 symplectic-manifolds 와 lie-groups, 지금은 리프다. 담은 것은 d<mu,xi> = omega(X_xi, .) 정의, Ad^* 등변성, SO(2)·평행이동·T^n 의 세 예, Noether 정리에 해당하는 보존량, Marsden-Weinstein 축소(1974 각주)와 dim M_0 = dim M - 2 dim G, Atiyah 의 볼록성 정리(1982 각주)다. 직관은 평면 중심력 운동의 각운동량 고정으로 4차원을 2차원으로 줄이는 계산 하나로 끌었다. 활용 절이 링크 없이 이름만 쓴 것이 셋이다. (a) 토릭 다양체: 부모 후보는 moment-map 과 algebraic-varieties, 모멘트 다면체가 다양체를 결정하는 대응이 본체. (b) 기하적 불변량 이론(GIT): 부모 후보는 moment-map 과 group-actions, Kempf-Ness 정리가 본체. (c) 순간자 모듈라이: instanton-floer-homology 가 이미 있으므로 그 문서와 겹치는 범위를 먼저 볼 것. symplectic-manifolds 104줄의 '모멘트 사상' 항목에 본문 링크를 걸었다.",
+      "createdAt": "2026-10-09T04:55:53.705Z",
+      "seq": 1951
+    },
+    {
+      "id": "25116cc7",
+      "title": "Vaughan 항등식의 남은 후속: Heath-Brown 항등식",
+      "priority": 10,
+      "note": "40차(2026-10-09)에 vaughan-identity(Vaughan 항등식, 93줄)를 썼다. 부모는 prime-number-theorem 과 large-sieve, 지금은 리프다. 담은 것은 F(s), G(s) 를 쓴 Dirichlet 급수 항등식과 n > UV 에서의 세 합 분해(Vaughan 1977 각주), Type I 과 Type II 합의 정의, 각각의 추정(등비급수 묶기와 Cauchy-Schwarz 로 두 변수 분리), q 가 x^{2/5} 와 x^{3/5} 사이일 때 상쇄가 나오는 Weyl 합 상한(Davenport 24장 각주)이다. 활용 절이 링크 없이 이름만 쓴 것이 Heath-Brown 항등식이다. 별도 문서로 쓸 때 부모 후보는 vaughan-identity 와 divisor-function(있는지 확인할 것)이고, 담을 것은 Lambda 를 약수 함수의 교대합으로 쓰는 분해와 조각의 변수 길이를 고르는 자유도다. large-sieve 93줄의 'Vaughan 항등식' 에 본문 링크를 걸었다. circle-method 의 소호 추정이 이 문서의 Weyl 합 상한과 같은 내용인지는 큐 f255b737 에서 함께 볼 것.",
+      "createdAt": "2026-10-09T04:58:16.354Z",
+      "seq": 1952
+    },
+    {
+      "id": "f1983ec0",
+      "title": "Courcelle 정리의 남은 후속: 나무 오토마타 문서 신설",
+      "priority": 10,
+      "note": "40차(2026-10-09)에 courcelle-theorem(Courcelle 정리, 85줄)을 썼다. 부모는 treewidth 와 finite-automata, 지금은 리프다. 담은 것은 MSO 의 정의(변수 네 종류, inc 관계, 단항인 까닭)와 3-색칠 가능성 논리식, f(k,|phi|)*n 진술(Courcelle 1990 각주), 증명의 세 단계(좋은 나무 분해를 항으로, 논리식을 나무 오토마타로, 항 위에서 한 번 돌리기), 세는 문제로의 확장, 나무폭 조건의 필요성, 상수를 기본함수로 줄일 수 없다는 하한(Frick-Grohe 2004 각주)이다. treewidth 146줄의 정리 진술에 본문 링크를 걸었고 그 문서의 리프도 풀렸다. 남은 것은 나무 오토마타(tree automata) 문서다. 지금 courcelle-theorem 의 증명 절이 나무 오토마타의 곱·여집합·사영 구성을 이름만 쓰고 정의 없이 쓴다. 부모 후보는 finite-automata 와 courcelle-theorem 이고, 담을 것은 상향 결정적·비결정적 나무 오토마타의 정의, 사영이 비결정성을 낳고 결정화가 상태를 지수로 늘리는 것, Rabin 의 나무 정리와의 관계다.",
+      "createdAt": "2026-10-09T05:00:52.866Z",
+      "seq": 1953
+    },
+    {
+      "id": "7f402c88",
+      "title": "상관균형의 남은 후속: 곱셈 가중치 절차 문서 신설",
+      "priority": 10,
+      "note": "40차(2026-10-09)에 correlated-equilibrium(상관균형, 83줄)을 썼다. 부모는 nash-equilibrium 하나, 지금은 리프다. 담은 것은 교차로 게임(보수 4/4, 5/1, 1/5, 0/0)의 신호등 분포로 기대보수 10/3 을 얻는 직관, 선형 부등식 정의와 조건부 기댓값 꼴, Nash 균형 곱분포가 상관균형이라는 포함관계와 역의 반례, 볼록 다면체와 선형계획 계산(Nash 는 PPAD 완전이라는 대비), 내부 후회 o(T) 가 주는 수렴(Hart-Mas-Colell 2000 각주), 외부 후회와 조상관균형, 곱셈 가중치의 O(sqrt(T log n)) 이다. 남은 것은 곱셈 가중치 절차(multiplicative weights)를 별도 문서로 두는 것이다. 지금 correlated-equilibrium 의 성질 절 한 문단이 가중치 갱신 규칙과 후회 상한만 적고 증명을 담지 않는다. 부모 후보는 correlated-equilibrium 과 convexity(또는 kl-divergence 가 있으면 그것)이고, 담을 것은 가중치 갱신의 정의, 퍼텐셜 함수로 상한을 얻는 증명, Hedge 와 AdaBoost 그리고 선형계획 근사해에서 같은 절차가 쓰이는 자리다. nash-equilibrium 100줄의 '후회 최소화' 에 본문 링크를 걸었다.",
+      "createdAt": "2026-10-09T05:03:29.499Z",
+      "seq": 1954
+    },
+    {
+      "id": "064c8374",
+      "title": "지표표의 남은 후속: Burnside 의 p^a q^b 정리",
+      "priority": 10,
+      "note": "40차(2026-10-09)에 character-table(지표표, 80줄)을 썼다. 부모는 group-representations 와 conjugacy-classes 둘이고 지금은 리프다. conjugacy-classes 의 리프도 이 간선으로 풀렸다. 담은 것은 S_3 의 3x3 표를 차수 제약 1+1+d^2=6 과 두 직교관계로 채우는 직관, 기약표현 개수와 켤레류 개수가 같아 정사각이라는 것(Serre 2장 각주), 행과 열의 두 직교관계, sum d_i^2 = |G| 와 d_i 가 |G| 를 나눈다는 것(Isaacs 3장 각주), S_4 의 차수 1,1,2,3,3 을 채우는 절차, D_4 와 Q_8 이 같은 지표표를 갖는다는 한계와 표에서 읽히는 것(가환성, 정규부분군, 교환자 부분군)이다. 활용 절이 링크 없이 이름만 쓴 것이 Burnside 의 p^a q^b 정리와 분자 진동이다. Burnside 정리를 별도 문서로 쓸 때 부모 후보는 character-table 과 solvable-groups(있는지 확인할 것)이고, 담을 것은 지표값이 대수적 정수라는 보조정리, 켤레류 크기가 소수 거듭제곱일 때 나오는 모순, 가해성 결론이다.",
+      "createdAt": "2026-10-09T05:05:44.985Z",
+      "seq": 1955
     },
     {
       "id": "dfb3e493",
