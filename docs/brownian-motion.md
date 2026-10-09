@@ -10,7 +10,7 @@ Brown 운동은 연속시간 확률과정의 원형이다. 시작점이 원점�
 
 ## 무작위 걷기의 축소 극한
 
-시간 간격 $h$ 마다 $\pm\sqrt{h}$ 만큼 움직이는 대칭 무작위 걷기를 본다. 시각 $t$ 까지의 위치는 약 $t/h$ 번의 독립 걸음의 합이고, 걸음 크기를 $h$ 가 아니라 $\sqrt{h}$ 로 잡았으므로 분산이 $(t/h) \cdot h = t$ 로 $h$ 와 무관하다. 중심극한정리로 극한 분포는 $N(0, t)$ 이고, 이 극한이 분포 수준이 아니라 경로 수준에서도 존재한다는 것이 Donsker 불변원리다. 눈금은 비대칭이어서 시간을 $c$ 배 늘리면 공간은 $\sqrt{c}$ 배 늘어난다.
+시간 간격 $h$ 마다 $\pm\sqrt{h}$ 만큼 움직이는 대칭 무작위 걷기를 본다. 시각 $t$ 까지의 위치는 약 $t/h$ 번의 독립 걸음의 합이고, 걸음 크기를 $h$ 가 아니라 $\sqrt{h}$ 로 잡았으므로 분산이 $(t/h) \cdot h = t$ 로 $h$ 와 무관하다. 중심극한정리로 극한 분포는 $N(0, t)$ 이고, 이 극한이 분포 수준이 아니라 경로 수준에서도 존재한다는 것이 [Donsker 불변원리](donsker-invariance-principle.md)다. 눈금은 비대칭이어서 시간을 $c$ 배 늘리면 공간은 $\sqrt{c}$ 배 늘어난다.
 
 ## 두 종류의 변동
 
@@ -128,6 +128,7 @@ $$
 
 ## 더 알아보기
 
+- [Donsker 불변원리](donsker-invariance-principle.md)
 - [Itô 적분](ito-calculus.md)
 
 #probability #analysis #measure_theory #construction
