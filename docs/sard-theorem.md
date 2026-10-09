@@ -56,7 +56,7 @@ $C^k$ 조건은 버릴 수 없다. $n\gt m$ 에서 $C^1$ 이지만 임계값이 
 
 - [Whitney 매장 정리](whitney-embedding.md): 매장을 $\mathbb R^N$ 에서 $\mathbb R^{N-1}$ 로 사영하는 단계에서 두 점을 겹치게 하는 방향과 접벡터를 죽이는 방향이 각각 측도 $0$ 이므로 둘을 피하는 방향이 있다.
 - [Brouwer 차수](brouwer-degree.md): 정칙값에서만 정의된 부호 합을 임의의 값으로 확장할 때, 그 값에 얼마든지 가까운 정칙값이 있다는 것을 쓴다.
-- 횡단성: 두 부분다양체가 횡단으로 만나도록 하나를 조금 옮길 수 있다는 진술을 매개변수 사상의 정칙값을 고르는 것으로 바꾼다.
+- [횡단성](transversality.md): 두 부분다양체가 횡단으로 만나도록 하나를 조금 옮길 수 있다는 진술을 매개변수 사상의 정칙값을 고르는 것으로 바꾼다.
 - Morse 함수의 조밀성: 다양체 위의 함수에 좌표 함수의 선형결합을 더해 모든 임계점이 비퇴화가 되게 하는 계수를 정칙값으로 고른다.
 
 [^1]: Sard, *The measure of the critical values of differentiable maps*, Bulletin of the American Mathematical Society 48 (1942), 883–890. $n\le m$ 과 $k=1$ 인 경우는 A. P. Morse 가 1939 년에 다뤘다.
@@ -71,6 +71,7 @@ $C^k$ 조건은 버릴 수 없다. $n\gt m$ 에서 $C^1$ 이지만 임계값이 
 
 ## 더 알아보기
 
+- [횡단성](transversality.md)
 - [Whitney 매장 정리](whitney-embedding.md)
 
 #differential_geometry #analysis #measure_theory #topology

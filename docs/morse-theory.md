@@ -44,7 +44,7 @@ $$
 
 $M$ 에 Riemann 계량을 주고 $-\nabla f$ 의 흐름을 본다. 임계점 $p$ 에서 흘러나오는 점 전체를 **불안정 다양체** $W^u(p)$, 흘러들어오는 점 전체를 **안정 다양체** $W^s(p)$ 라 하고, $\dim W^u(p)=\lambda(p)$ 다.
 
-모든 쌍에서 $W^u(p)$ 와 $W^s(q)$ 가 횡단으로 만나면 $(f,g)$ 를 **Morse–Smale** 쌍이라 한다. 이때 지표 $k$ 인 임계점을 기저로 하는 자유 아벨군 $C_k$ 와, $\lambda(p)-\lambda(q)=1$ 인 쌍을 잇는 흐름선을 부호와 함께 센 경계사상 $\partial_k$ 가 복합체를 이룬다.
+모든 쌍에서 $W^u(p)$ 와 $W^s(q)$ 가 [횡단](transversality.md)으로 만나면 $(f,g)$ 를 **Morse–Smale** 쌍이라 한다. 이때 지표 $k$ 인 임계점을 기저로 하는 자유 아벨군 $C_k$ 와, $\lambda(p)-\lambda(q)=1$ 인 쌍을 잇는 흐름선을 부호와 함께 센 경계사상 $\partial_k$ 가 복합체를 이룬다.
 
 $$
 \partial_k:C_k\to C_{k-1},\qquad \partial\_{k-1}\circ\partial_k=0
