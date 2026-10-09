@@ -109,6 +109,7 @@ $n+1$ 개의 극값점에서 연속함수를 보간하는 사상의 균등노름
 ## 선수지식
 
 - [Stone–Weierstrass 정리](stone-weierstrass.md)
+- [직교다항식](orthogonal-polynomials.md)
 
 ## 더 알아보기
 
