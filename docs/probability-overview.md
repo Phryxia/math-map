@@ -58,6 +58,7 @@ graph TD
 ## 극한정리
 
 - [약수렴](weak-convergence.md): 분포의 수렴과 tightness
+- [Skorokhod 표현정리](skorokhod-representation.md): 분포 수렴을 거의 확실한 수렴으로 실현하는 결합
 - [특성함수](characteristic-functions.md): Fourier 변환으로 분포 수렴을 판정
 - [큰 수의 법칙](law-of-large-numbers.md): 표본평균이 기댓값으로
 - [중심극한정리](central-limit-theorem.md): 요동의 정규분포 근사

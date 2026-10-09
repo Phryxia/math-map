@@ -79,6 +79,7 @@ $$
 
 ## 더 알아보기
 
+- [Skorokhod 표현정리](skorokhod-representation.md)
 - [Markov 연쇄의 혼합시간](mixing-time.md)
 
 #probability #measure_theory #statistics
