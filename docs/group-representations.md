@@ -208,6 +208,7 @@ $$
 
 ### 구조와 분류
 
+- [지표표](character-table.md)
 - [Peter–Weyl 정리](peter-weyl.md)
 - [Tannaka 쌍대성](tannaka-duality.md)
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md)

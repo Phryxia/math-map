@@ -112,6 +112,6 @@ $A_5$ 가 그 예다. 순환 꼴 $(1)(1)(1)(1)(1)$, $(2)(2)(1)$, $(3)(1)(1)$, $(
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [지표표](character-table.md)
 
 #group_theory #algebra #combinatorics #linear_algebra
