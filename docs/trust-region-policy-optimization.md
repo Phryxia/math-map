@@ -8,7 +8,7 @@ $$\max_{\theta'}\thinspace L_\theta(\theta')\quad \text{subject to}\quad \bar D_
 
 $L_\theta$ 는 옛 정책의 표본으로 적은 대리 목적함수이고 $\delta$ 는 신뢰영역의 반지름이다. 제약 안에서는 대리 목적의 개선량이 실제 성능의 개선량을 하한으로 보장한다.
 
-제약 문제를 그대로 풀려면 Fisher 정보행렬의 역행렬이 필요하다. 근접 정책 최적화(proximal policy optimization, PPO)는 그 제약을 중요도비의 잘라내기로 바꿔 제약 없는 1차 최적화로 만든 것이다.
+제약 문제를 그대로 풀려면 [Fisher 정보](fisher-information.md)행렬의 역행렬이 필요하다. 근접 정책 최적화(proximal policy optimization, PPO)는 그 제약을 중요도비의 잘라내기로 바꿔 제약 없는 1차 최적화로 만든 것이다.
 
 # 직관
 

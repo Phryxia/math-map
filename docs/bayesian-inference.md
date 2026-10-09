@@ -129,7 +129,7 @@ $$
 \pi(\theta \mid x_{1:n}) \thickspace\approx\thickspace N\negthinspace\left(\hat\theta_{\mathrm{MLE}}, \thickspace \frac{1}{n I(\theta_0)}\right),
 $$
 
-여기서 $I$ 는 Fisher 정보량이다. 즉 표본이 커지면 사전분포의 (양의 밀도를 갖는 한) 선택은 씻겨 나가고, Bayes 신용구간과 빈도주의 [신뢰구간](confidence-intervals.md)이 1차 근사에서 일치한다.[^1] 반대로 표본이 작거나 모수가 많거나 사전분포가 지지집합을 잘라 버리면 둘은 크게 갈린다.
+여기서 $I$ 는 [Fisher 정보](fisher-information.md)다. 즉 표본이 커지면 사전분포의 (양의 밀도를 갖는 한) 선택은 씻겨 나가고, Bayes 신용구간과 빈도주의 [신뢰구간](confidence-intervals.md)이 1차 근사에서 일치한다.[^1] 반대로 표본이 작거나 모수가 많거나 사전분포가 지지집합을 잘라 버리면 둘은 크게 갈린다.
 
 ## 빈도주의와의 대비
 
