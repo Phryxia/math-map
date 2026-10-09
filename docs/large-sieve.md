@@ -90,7 +90,7 @@ $$
 
 이 성립한다.[^3]
 
-증명의 요지. Vaughan 항등식으로 $\Lambda$ 를 두 수열의 곱에 걸친 쌍선형합 몇 개로 분해한다. 각 쌍선형합을 [Dirichlet L 함수](dirichlet-l-functions.md)의 지표합으로 쓰고 큰 체의 해석적 꼴을 적용하면, 법 $q$ 를 하나씩 보지 않고 평균으로 묶은 추정이 나온다. $Q$ 가 $x^{1/2}$ 에서 멈추는 것은 쌍선형합의 두 변수 길이의 곱이 $x$ 로 묶여 있기 때문이다.
+증명의 요지. [Vaughan 항등식](vaughan-identity.md)으로 $\Lambda$ 를 두 수열의 곱에 걸친 쌍선형합 몇 개로 분해한다. 각 쌍선형합을 [Dirichlet L 함수](dirichlet-l-functions.md)의 지표합으로 쓰고 큰 체의 해석적 꼴을 적용하면, 법 $q$ 를 하나씩 보지 않고 평균으로 묶은 추정이 나온다. $Q$ 가 $x^{1/2}$ 에서 멈추는 것은 쌍선형합의 두 변수 길이의 곱이 $x$ 로 묶여 있기 때문이다.
 
 하나의 $q$ 에서는 일반화 Riemann 가설(generalized Riemann hypothesis, GRH)이 주는 세기이고, 이 정리는 그것을 $q$ 의 평균에서 무조건적으로 준다.
 
@@ -122,6 +122,7 @@ $0\lt\theta\lt 1$ 에 대해, 위 부등식이 $Q=x^\theta$ 에서 성립한다�
 
 ## 더 알아보기
 
+- [Vaughan 항등식](vaughan-identity.md)
 - [소수 간격](prime-gaps.md)
 - [Chen 정리](chen-theorem.md)
 
