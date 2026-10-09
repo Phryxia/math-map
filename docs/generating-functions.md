@@ -170,6 +170,7 @@ $$
 
 - [Catalan 수](catalan-numbers.md)
 - [Lagrange 반전 공식](lagrange-inversion.md)
+- [분지과정](branching-processes.md)
 - [조합적 종](combinatorial-species.md)
 - [Laplace 방법](laplace-method.md)
 - [분할수](partitions.md)
