@@ -147,6 +147,7 @@ graph TD
 
 - [Galois 표현](galois-representations.md) → [Galois 표현의 변형환](deformation-rings.md) → [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
 - [p 진 Hodge 이론](p-adic-hodge-theory.md) → [Sen 이론](sen-theory.md), [Fontaine–Mazur 추측](fontaine-mazur.md)
+- [강체해석공간](rigid-analytic-spaces.md): 허용 덮개만 인정하는 Grothendieck 위상 위에 친화 준위를 붙여 비아르키메데스 체에서 해석접속을 되살린 공간
 - [Herbrand–Ribet 정리](herbrand-ribet.md): 류수와 모듈러 형식의 합동
 - [Dwork 의 유리성 정리](dwork-rationality.md) → [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)
 - [대수적 K 이론](algebraic-k-theory.md): Quillen–Lichtenbaum 정리가 수체의 $K$ 군을 에탈 코호몰로지로 계산한다

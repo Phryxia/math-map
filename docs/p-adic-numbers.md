@@ -161,6 +161,7 @@ $\mathbb R$ 와 $\mathbb Q_p$ 는 $\mathbb Q$ 의 완비화로서 대등하다. 
 - [아델](adeles.md)
 - [국소 유체론](local-class-field-theory.md)
 - [Newton 다각형](newton-polygon.md)
+- [강체해석공간](rigid-analytic-spaces.md)
 - [이차형식](quadratic-forms.md)
 
 ### L 함수와 타원곡선
