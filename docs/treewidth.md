@@ -143,7 +143,7 @@ function table(t) {
 
 ## Courcelle 정리
 
-**정리 (Courcelle).** 그래프의 성질이 단항 2차 논리(monadic second-order logic, MSO)로 쓸 수 있으면, 나무폭이 $k$ 로 묶인 그래프에서 그 성질은 $O(n)$ 시간에 판정된다. 상수는 $k$ 와 논리식에만 의존한다.[^3]
+**정리 ([Courcelle](courcelle-theorem.md)).** 그래프의 성질이 단항 2차 논리(monadic second-order logic, MSO)로 쓸 수 있으면, 나무폭이 $k$ 로 묶인 그래프에서 그 성질은 $O(n)$ 시간에 판정된다. 상수는 $k$ 와 논리식에만 의존한다.[^3]
 
 MSO 는 [1차 논리](first-order-logic.md)에 정점 집합과 간선 집합 위의 양화를 더한 것이다. 3-색칠 가능성은 정점 집합 셋의 존재로, Hamilton 순환의 존재는 간선 집합 하나의 존재와 그 집합이 순환을 이룬다는 1차 조건으로 쓸 수 있다.
 
@@ -168,6 +168,6 @@ MSO 는 [1차 논리](first-order-logic.md)에 정점 집합과 간선 집합 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Courcelle 정리](courcelle-theorem.md)
 
 #graph_theory #algorithms #complexity #combinatorics
