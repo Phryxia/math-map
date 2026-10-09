@@ -82,6 +82,7 @@ $\pi_{\min}=\min_x\pi(x)$ 다. 상한은 가역 연쇄를 $L^2(\pi)$ 의 자기�
 
 - [Markov 연쇄](markov-chains.md)
 - [전변동거리](total-variation-distance.md)
+- [결합](coupling.md)
 
 ## 더 알아보기
 
