@@ -66,7 +66,7 @@ $$
 
 **정리.** $\mu\_0$ 가 $\sigma$ 유한이면 $\sigma(\mathcal A)$ 위의 확장은 유일하다.
 
-증명의 요지. 두 확장이 일치하는 집합들의 모임은 $\lambda$ 계이고 $\mathcal A$ 를 담는다. $\mathcal A$ 가 $\pi$ 계이므로 Dynkin 의 $\pi\text{-}\lambda$ 정리로 그 모임이 $\sigma(\mathcal A)$ 를 담는다. $\sigma$ 유한성은 전체 공간을 유한 측도 조각으로 끊어 각 조각에서 이 논법을 쓰는 데 필요하다.
+증명의 요지. 두 확장이 일치하는 집합들의 모임은 $\lambda$ 계이고 $\mathcal A$ 를 담는다. $\mathcal A$ 가 $\pi$ 계이므로 [Dynkin 의 $\pi\text{-}\lambda$ 정리](dynkin-system.md)로 그 모임이 $\sigma(\mathcal A)$ 를 담는다. $\sigma$ 유한성은 전체 공간을 유한 측도 조각으로 끊어 각 조각에서 이 논법을 쓰는 데 필요하다.
 
 $\sigma$ 유한성이 없으면 유일성이 깨진다. $\mathbb R$ 의 유한 구간들의 대수 위에서 공집합이 아닌 구간마다 $\infty$ 를 주는 전측도는 Borel 집합 위에서 셈측도의 $c$ 배로 여러 가지로 확장된다.
 

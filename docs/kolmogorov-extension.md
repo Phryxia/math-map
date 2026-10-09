@@ -38,7 +38,7 @@ $$
 
 $\mu\_0$ 가 전측도임을 보이는 데 유한차원 측도의 정칙성을 쓴다. 대수 안에서 $C\_n\downarrow\varnothing$ 이고 $\mu\_0(C\_n)\ge\varepsilon$ 이라 가정하면, 각 $C\_n$ 안에 측도가 $\varepsilon/2$ 이상인 콤팩트 통조림 집합 $K\_n$ 을 잡을 수 있다. $\mathbb R^{t}$ 들의 곱에서 Tychonoff 정리로 $\bigcap K\_n\ne\varnothing$ 이므로 $\bigcap C\_n\ne\varnothing$ 이고 가정에 어긋난다. 따라서 $\mu\_0$ 는 대수 위에서 가산 가법적이다.
 
-Carathéodory 확장이 $\mathcal B(\mathbb R^T)$ 위의 측도를 주고, 유일성은 통조림 집합이 $\pi$ 계이므로 Dynkin 의 $\pi\text{-}\lambda$ 정리에서 나온다.
+Carathéodory 확장이 $\mathcal B(\mathbb R^T)$ 위의 측도를 주고, 유일성은 통조림 집합이 $\pi$ 계이므로 [Dynkin 의 $\pi\text{-}\lambda$ 정리](dynkin-system.md)에서 나온다.
 
 ## 무한 곱측도
 

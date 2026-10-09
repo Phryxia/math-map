@@ -48,6 +48,7 @@ graph TD
 - [Carathéodory 확장정리](caratheodory-extension.md): 외측도에서 측도를 얻는 구성, 전측도의 확장과 $\sigma$ 유한 유일성
 - [Cantor 집합](cantor-set.md): 측도 $0$ 인 비가산 완전집합, Cantor 함수와 특이연속분포
 - [Hausdorff 차원](hausdorff-dimension.md): 덮개의 지름 제곱 합으로 잰 척도, 자기유사 집합의 차원
+- [Dynkin 계](dynkin-system.md): $\pi$ 계에서 확인한 성질을 생성된 $\sigma$ 대수로 넓히는 정리, 측도의 일치와 독립성 판정
 - [Vitali 집합](vitali-set.md): 유리수 평행이동의 대표를 모은 비가측 집합, 측도를 멱집합으로 넓히지 못하는 이유
 - [Borel 계층](borel-hierarchy.md): 열린집합에서 가산 연산을 초한으로 되풀이한 단계, Suslin 정리
 - [강 측도 영집합](strong-measure-zero.md): 구간 길이를 미리 지정해도 덮을 수 있는 집합, Borel 추측
