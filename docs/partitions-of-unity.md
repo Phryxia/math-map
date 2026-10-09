@@ -42,7 +42,7 @@ $M$ 을 매끄러운 다양체, $\lbrace U\_\alpha\rbrace\_{\alpha\in A}$ 를 $M
 
 $K\subseteq U\subseteq M$ 에서 $K$ 가 닫힌 집합이고 $U$ 가 열린 집합이면, $K$ 에서 값이 $1$ 이고 $U$ 밖에서 $0$ 인 매끄러운 함수 $\chi\colon M\to\lbrack 0,1\rbrack$ 이 존재한다. 덮개 $\lbrace U,M\setminus K\rbrace$ 에 종속된 단위분할 $\lbrace\rho\_U,\rho\_0\rbrace$ 를 잡고 $\chi=\rho\_U$ 로 두면 된다. 이 함수를 bump 함수라 한다.
 
-## 해석함수로는 불가능
+## 실해석함수의 제약
 
 $\rho\_\alpha$ 들을 실해석함수로 잡을 수 없다. 실해석함수가 열린 집합에서 $0$ 이면 연결된 정의역 전체에서 $0$ 이므로, 지지집합이 진부분집합인 해석함수는 연결 다양체에서 $0$ 뿐이다. 직관 절의 $h$ 가 원점에서 모든 계 도함수가 $0$ 이면서 $h\ne 0$ 인 함수인 것이 이 차이를 만든다.
 
