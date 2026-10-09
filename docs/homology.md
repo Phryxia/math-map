@@ -149,6 +149,7 @@ $$
 
 ### 해석학에서의 쓰임
 
+- [Brouwer 차수](brouwer-degree.md)
 - [Brouwer 고정점 정리](brouwer-fixed-point.md)
 - [Lefschetz 고정점 정리](lefschetz-fixed-point.md)
 
