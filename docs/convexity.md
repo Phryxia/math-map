@@ -128,5 +128,6 @@ $$
 - [경사하강법](gradient-descent.md)
 - [Lagrange 쌍대성](lagrange-duality.md)
 - [선형계획법](linear-programming.md)
+- [압축 센싱](compressed-sensing.md)
 
 #optimization #analysis
