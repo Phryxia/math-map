@@ -58,7 +58,7 @@ $$
 
 $P\subseteq\lbrack 0,1\rbrack^n$ 일 때 계수의 크기는 차원으로 묶인다. $\mathrm{rank}(P)$ 는 $O(n^3\log n)$ 이고, 계수가 $n$ 을 넘는 $P$ 가 있다.[^3]
 
-## 계수 0 과 정수 다면체
+## 계수 $0$ 과 정수 다면체
 
 $\mathrm{rank}(P)=0$ 인 것과 $P=P_I$ 인 것이 같다. [완전 단일모듈 행렬](totally-unimodular-matrices.md) $A$ 와 정수 벡터 $b$ 로 적힌 $P$ 가 그런 예이고, 그 경우 절단평면이 아무것도 자르지 않는다.
 

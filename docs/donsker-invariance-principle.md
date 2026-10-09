@@ -39,7 +39,7 @@ $$
 
 증명의 요지는 두 단계다. 유한차원 분포의 수렴은 시각 $t_1\lt \dots\lt t_m$ 에서 증분 $W_n(t_{j+1})-W_n(t_j)$ 가 독립이므로 다변량 중심극한정리로 나온다. 남은 것은 분포족 $\lbrace W_n\rbrace$ 의 tightness 이고, 그것을 얻으면 Prokhorov 정리가 수렴 부분열을 주고 유한차원 분포가 극한을 Brown 운동으로 확정한다.
 
-## C[0,1] 에서의 tightness 판정
+## $C\lbrack 0,1\rbrack$ 에서의 tightness 판정
 
 [Arzelà–Ascoli 정리](arzela-ascoli.md)로 $C\lbrack 0,1\rbrack$ 의 콤팩트 집합은 균등유계이고 균등연속인 함수족의 닫힘이다. 이 서술을 확률측도로 옮기면 tightness 가 다음 두 조건과 동치가 된다.[^2]
 
