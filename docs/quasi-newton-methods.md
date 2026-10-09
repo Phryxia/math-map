@@ -89,7 +89,7 @@ $B\_k$ 가 양정부호이고 $y\_k^{\mathsf T}s\_k\gt 0$ 이면 BFGS 갱신으�
 
 증명의 요지는 역행렬 꼴을 보는 것이다. $H\_{k+1}=V^{\mathsf T}H\_kV+s\_ks\_k^{\mathsf T}/(y\_k^{\mathsf T}s\_k)$ 에서 $V=I-y\_ks\_k^{\mathsf T}/(y\_k^{\mathsf T}s\_k)$ 이므로 임의의 $z\neq0$ 에 대해 $z^{\mathsf T}H\_{k+1}z$ 는 음이 아닌 두 항의 합이다. 둘이 함께 $0$ 이 되려면 $Vz=0$ 과 $s\_k^{\mathsf T}z=0$ 이 함께 성립해야 하는데, 뒤 식에서 $Vz=z$ 이므로 $z=0$ 이다.
 
-조건 $y\_k^{\mathsf T}s\_k\gt 0$ 은 선탐색이 Wolfe 조건을 만족하면 자동으로 따라온다. $f$ 가 볼록이면 조건이 언제나 성립한다.
+조건 $y\_k^{\mathsf T}s\_k\gt 0$ 은 [선탐색](line-search.md)이 Wolfe 조건을 만족하면 자동으로 따라온다. $f$ 가 볼록이면 조건이 언제나 성립한다.
 
 ## 초선형 수렴
 
