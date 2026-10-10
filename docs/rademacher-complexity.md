@@ -124,6 +124,6 @@ $$\hat{\mathfrak R}\_S(\mathcal F)\le\frac{BR}{\sqrt n}$$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [VC 차원](vc-dimension.md)
 
 #machine_learning #probability #statistics
