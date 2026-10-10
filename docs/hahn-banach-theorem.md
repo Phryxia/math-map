@@ -114,6 +114,6 @@ Hahn–Banach 정리는 **ZF**(Zermelo–Fraenkel 집합론) 만으로는 증명
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Krein–Milman 정리](krein-milman.md)
 
 #functional_analysis #analysis #linear_algebra #set_theory #theorem

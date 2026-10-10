@@ -27,6 +27,7 @@ graph TD
   DS --> SD
   BS --> HB["Hahn–Banach 정리"]
   DS --> HB
+  HB --> KM["Krein–Milman 정리"]
   BS --> OMT["열린 사상 정리"]
   HS --> BO["유계 작용소"]
   ST["스펙트럼 정리"] --> BO
@@ -69,6 +70,7 @@ graph TD
 ## 고정점과 존재정리
 
 - [Banach–Alaoglu 정리](banach-alaoglu.md) — 쌍대공간의 단위구가 약 $\ast$ 위상에서 콤팩트하다. 유계인 열에서 극한을 뽑는 존재논증의 바탕이다
+- [Krein–Milman 정리](krein-milman.md) — 콤팩트 볼록집합은 극점들의 닫힌 볼록껍질이다. 연속 선형범함수의 최대가 극점에서 난다
 - [Schauder 고정점 정리](schauder-fixed-point.md) — 콤팩트 볼록집합 위의 연속사상이 갖는 고정점. 유한차원 근사로 Brouwer 정리에서 얻는다
 - [Leray–Schauder 차수](leray-schauder-degree.md) — 콤팩트 섭동에 붙이는 정수 불변량. 선험적 추정에서 해의 존재를 얻는 대체 원리
 - [Lax–Milgram 정리](lax-milgram.md) — 유계 강제 쌍선형형식이 주는 약한 꼴 방정식의 유일해. 비대칭 타원형 문제와 Galerkin 근사의 오차 추정

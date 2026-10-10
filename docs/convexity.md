@@ -131,6 +131,7 @@ $$
 
 ### 볼록체의 기하
 
+- [Krein–Milman 정리](krein-milman.md)
 - [Brunn–Minkowski 부등식](brunn-minkowski.md)
 
 ### 알고리즘과 응용
