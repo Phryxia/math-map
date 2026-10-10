@@ -88,7 +88,7 @@ $$
 
 ## Kolmogorov 방정식과의 관계
 
-$\varphi$ 를 지시함수로 두면 $u(t,x) = \Pr(X_T \in A \mid X_t = x)$ 이므로 Feynman–Kac 은 전이확률이 만족하는 Kolmogorov 후방방정식의 일반화다. 전이밀도가 도착점에 대해 만족하는 방정식이 전방방정식, 곧 Fokker–Planck 방정식이며 생성원의 수반연산자를 쓴다.
+$\varphi$ 를 지시함수로 두면 $u(t,x) = \Pr(X_T \in A \mid X_t = x)$ 이므로 Feynman–Kac 은 전이확률이 만족하는 Kolmogorov 후방방정식의 일반화다. 전이밀도가 도착점에 대해 만족하는 방정식이 전방방정식, 곧 [Fokker–Planck 방정식](fokker-planck.md)이며 생성원의 수반연산자를 쓴다.
 
 | 대상 | 방정식 | 변수 |
 |---|---|---|

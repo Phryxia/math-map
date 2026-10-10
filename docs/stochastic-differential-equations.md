@@ -80,7 +80,7 @@ $u(t,x)=\mathbb E^x\lbrack f(X_t)\rbrack$ 은 후진방정식 $\partial_tu=Lu$ �
 
 ## Fokker–Planck 방정식
 
-$X_t$ 의 밀도 $p(t,x)$ 는 $L$ 의 수반작용소가 주는 전진방정식을 만족한다.
+$X_t$ 의 밀도 $p(t,x)$ 는 $L$ 의 수반작용소가 주는 전진방정식, 곧 [Fokker–Planck 방정식](fokker-planck.md)을 만족한다.
 
 $$
 \partial_tp=-\partial_x\big(a(x)p\big)+\tfrac12\partial_x^2\big(b(x)^2p\big)
@@ -155,6 +155,7 @@ Langevin 방정식은 퍼텐셜 $V$ 안의 입자에 열잡음을 더한 SDE 다
 ## 더 알아보기
 
 - [Feynman–Kac 공식](feynman-kac.md)
+- [Fokker–Planck 방정식](fokker-planck.md)
 - [확산모형](diffusion-models.md)
 - [Freidlin–Wentzell 이론](freidlin-wentzell.md)
 

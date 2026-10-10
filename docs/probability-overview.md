@@ -97,6 +97,7 @@ graph TD
 - [Donsker 불변원리](donsker-invariance-principle.md): 부분합의 꺾은선이 $C\lbrack 0,1\rbrack$ 에서 Brown 운동으로 약수렴
 - [Itô 적분](ito-calculus.md): 유계변동이 없는 경로 위의 적분과 Itô 공식
 - [확률미분방정식](stochastic-differential-equations.md): 잡음 항이 들어간 미분방정식의 해와 그 밀도
+- [Fokker–Planck 방정식](fokker-planck.md): 해의 밀도가 만족하는 편미분방정식, 확률흐름과 정상분포, 세부균형
 - [Girsanov 정리](girsanov.md): 측도변환으로 표류항을 바꾼다
 - [Feynman–Kac 공식](feynman-kac.md): 편미분방정식의 해를 경로 적분의 기댓값으로
 - [Black–Scholes 방정식](black-scholes-equation.md): 복제로 얻는 가격 방정식, 추세의 소거와 열방정식 변환
