@@ -76,7 +76,7 @@ $X$ 가 분리가능이 아니면 점열 형태는 보장되지 않는다. 덮�
 
 ## 반사성과 약한 위상
 
-$X$ 자신의 단위구에 대해서는 자연 매장 $J:X\to X^{\ast\ast}$ 가 전사인 것, 곧 $X$ 가 **반사적**인 것이 기준이다.
+$X$ 자신의 단위구에 대해서는 자연 매장 $J:X\to X^{\ast\ast}$ 가 전사인 것, 곧 $X$ 가 [반사적](reflexive-spaces.md)인 것이 기준이다.
 
 **정리 (Kakutani).** $X$ 의 닫힌 단위구가 약한 위상에서 콤팩트한 것과 $X$ 가 반사적인 것은 동치다[^2].
 
@@ -105,6 +105,7 @@ $X$ 자신의 단위구에 대해서는 자연 매장 $J:X\to X^{\ast\ast}$ 가 
 
 ## 더 알아보기
 
+- [반사 공간](reflexive-spaces.md)
 - [변분법의 직접법](direct-method.md)
 
 #functional_analysis #topology #analysis #measure_theory
