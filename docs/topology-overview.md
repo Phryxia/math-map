@@ -45,6 +45,7 @@ graph TD
 - [단체 호몰로지](homology.md) → [Mayer–Vietoris 완전열](mayer-vietoris.md): 두 열린집합과 그 교집합의 호몰로지에서 합집합의 호몰로지를 얻는 긴 완전열
 - [단체 호몰로지](homology.md) → [Euler 지표](euler-characteristic.md) → [평면 그래프](planar-graphs.md), [곡면의 분류](classification-of-surfaces.md)
 - [단체 호몰로지](homology.md) → [코호몰로지](cohomology.md): 사슬 위의 함수, 컵곱이 주는 환 구조와 Poincaré 쌍대성
+- [코호몰로지](cohomology.md) → [실사영공간](real-projective-space.md): 차원마다 세포 하나인 CW 구조, 절단 다항식환이 되는 $\mathbb Z/2$ 코호몰로지
 - [단체 호몰로지](homology.md) → [Brouwer 고정점 정리](brouwer-fixed-point.md): 수축의 부재가 고정점의 존재를 준다
 - [단체 호몰로지](homology.md) → [Brouwer 차수](brouwer-degree.md): 경계에서 값을 피하는 사상에 붙는 정수, 해의 개수를 부호와 함께 센다
 - [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Sperner 보조정리](sperner-lemma.md), [Kakutani 고정점 정리](kakutani-fixed-point.md): 조합적 증명과 집합값 사상으로의 확장
