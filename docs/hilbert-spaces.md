@@ -183,10 +183,19 @@ $L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개�
 
 ## 더 알아보기
 
+### 직교계와 전개
+
 - [Fourier 급수](fourier-series.md)
-- [유계 작용소](bounded-operators.md)
-- [Lax–Milgram 정리](lax-milgram.md)
 - [Peter–Weyl 정리](peter-weyl.md)
 - [구면조화함수](spherical-harmonics.md)
+
+### 작용소
+
+- [유계 작용소](bounded-operators.md)
+
+### 다른 분야에서의 쓰임
+
+- [Lax–Milgram 정리](lax-milgram.md)
+- [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)
 
 #functional_analysis #analysis #linear_algebra #probability
