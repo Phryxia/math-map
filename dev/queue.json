@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-10T09:01:04.523Z",
-  "nextSeq": 2035,
+  "savedAt": "2026-10-10T13:00:53.824Z",
+  "nextSeq": 2048,
   "items": [
     {
       "id": "74d02178",
@@ -476,22 +476,6 @@
       "seq": 1894
     },
     {
-      "id": "bb3c4559",
-      "title": "본문 링크 라벨이 대상 제목과 어긋난 것 (38차 집계)",
-      "priority": 20,
-      "note": "38차 회차(2026-10-08)에 스크래치패드 labelcheck.mjs 로 docs 701 문서의 본문 링크를 전수로 돌렸다. 판정 기준은 라벨과 대상 H1 제목을 공백·중괄호·달러를 지우고 비교해 한쪽이 다른 쪽의 부분문자열도 아닌 경우를 보고하는 것이고, 322 건이 나왔다. 전수 판정은 한 회차에 끝나지 않으므로 다음 회차에 아래 갈래로 나눠 본다.\n\n갈래 (가) 문맥에 맞춘 적법한 변형. '연속성' -> continuity('연속함수'), '동치류' -> equivalence-relations('동치관계'), '볼록함수' -> convexity('볼록성') 처럼 같은 개념을 품사만 바꿔 쓴 것이다. 손대지 않는다. 보고의 대다수가 여기 든다.\n\n갈래 (나) 라벨이 대상 문서의 주제가 아닌 것. 'Jones 다항식' -> knot-invariants, 'Dedekind eta' -> theta-series, 'Kruskal 알고리즘' -> minimum-spanning-tree, 'Hahn-Banach 정리' -> banach-spaces, '정지 문제' -> computability, 'Turing 도약' -> turing-degrees 가 그 예다. 그 개념의 문서가 없어서 가장 가까운 문서로 링크한 자리이므로, 0절에 따라 라벨을 대상 제목으로 되돌리고 그 개념은 이름만 쓰거나, 문서를 만드는 요청을 큐에 넣는다.\n\n갈래 (다) 대상 제목이 'A와 B' 꼴이어서 라벨이 한쪽만 가리키는 것. 'Vogan 꾸러미' -> vogan-packets, '일반 표현' -> whittaker-models('Whittaker 모형과 중복도 1'), '이산 스펙트럼' -> speh-representations('Speh 표현과 잔여 스펙트럼') 가 그 예다. 38차에 제목 쪽은 그대로 두기로 판정했으므로(같은 회차의 'A와 B' 제목 전수 판정 메모) 라벨만 제목에 맞춘다.\n\n검사기는 dev/ 를 고치지 않는 규칙에 따라 스크래치패드에 두었고 회차마다 다시 만든다. 핵심은 titles[id] 를 첫 줄에서 뽑고 norm(s) 로 [\\\\{}$] 와 공백을 지운 뒤 부분문자열 비교를 하는 것이다",
-      "createdAt": "2026-10-08T09:00:00.309Z",
-      "seq": 1903
-    },
-    {
-      "id": "9d003347",
-      "title": "Woodin 기수 아래 측도 가능 기수의 정상집합이 있다는 진술의 증명 요지",
-      "priority": 20,
-      "note": "39차에 large-cardinal-hierarchy 의 'Woodin 기수는 Mahlo 다' 를 이 진술로 바꿔 적었다(Jech Set Theory 3판 34 장). 지금 문서는 진술만 쓰고 증명 요지가 없다. 보강할 점: 확대자(extender) 매장에서 임계점이 측도 가능임을 끌어내는 단계를 한 문장으로 적을지, 아니면 Mahlo 만 쓰고 정상집합 진술은 각주로 돌릴지 판단한다. 집합론 문서이고 부모는 large-cardinals.",
-      "createdAt": "2026-10-08T12:41:48.048Z",
-      "seq": 1904
-    },
-    {
       "id": "c0ce77f0",
       "title": "pushforward-measure '좌표변환과 시뮬레이션' 절의 검산형 판정",
       "priority": 20,
@@ -676,14 +660,6 @@
       "seq": 2023
     },
     {
-      "id": "aa13bf1c",
-      "title": "기계학습 개관의 갈래 재편 판단",
-      "priority": 20,
-      "note": "2026-10-10 회차에 기계학습 문서를 다섯 더했다(rademacher-complexity, vc-dimension, support-vector-machine, kernel-ridge-regression, 그리고 통계 쪽 glivenko-cantelli). '최적화와 일반화' 갈래가 경사하강법, 집중부등식, Rademacher 복잡도, VC 차원, 서포트 벡터 머신으로 다섯 줄이 되었고 최적화와 일반화가 한 갈래에 섞여 있다. 다음 차수에 판단할 것: 갈래를 '최적화' 와 '일반화 이론' 둘로 나눌지. 나누면 README 갈래 목록은 그대로이고(개관 하나) 개관 안의 H2 만 늘어난다. 4.5절은 소분야마다 H2 하나를 두라고 하므로 나누는 쪽이 규격에 맞다. 나눌 때 경사하강법과 적응 경사법, 근접 경사법이 최적화 쪽으로 가는지 확인한다(지금 '최적화와 일반화' 에 경사하강법만 있고 나머지는 최적화 개관이 거둔다).",
-      "createdAt": "2026-10-10T05:04:42.717Z",
-      "seq": 2025
-    },
-    {
       "id": "1c47ee4b",
       "title": "'열린 사상' 표기 통일 결과 (38차)",
       "priority": 20,
@@ -692,12 +668,76 @@
       "seq": 2030
     },
     {
-      "id": "6638bb30",
-      "title": "banach-spaces 의 '닫힌그래프 정리' 표기",
+      "id": "cb0754d0",
+      "title": "Woodin 기수 특성화 두 꼴의 동치",
       "priority": 20,
-      "note": "38차 회차(2026-10-10)에 '열린 사상' 전수 통일(커밋 8bb93df)을 하면서 같은 꼴을 하나 더 보았다. banach-spaces:80 부근의 따름정리 문단이 '닫힌그래프 정리' 로 붙여 쓰는데 open-mapping-theorem 본문은 '닫힌 그래프 정리' 로 띄운다. 이번 회차에는 손대지 않았다. 저장소에 그 이름의 문서가 없어 제목과의 대조는 아니고 문서 사이 표기 통일 문제다. 'grep -rn 닫힌그래프 docs' 로 전수를 보고 함께 띄울 것",
-      "createdAt": "2026-10-10T08:57:19.289Z",
-      "seq": 2032
+      "note": "40차(2026-10-10) 판정 메모. large-cardinal-hierarchy 의 'Woodin 기수는 Mahlo 다' 증명 요지를 Jech 34장의 함수 닫힘 꼴 특성화(모든 f: kappa->kappa 에 f[lambda] 포함 lambda 인 lambda 와 crit(j)=lambda, V_{j(f)(lambda)} 포함 M 인 기본 매장)로 적었다. 문서의 정의 절은 A-강 꼴로 적혀 있고 두 꼴의 동치는 증명 없이 각주 2(Jech 보조정리 34.2)로 돌렸다. 동치의 증명은 확대자 열로 A 를 코드하는 단계를 요구하고 그것만으로 한 절이 되므로 이 문서에 넣지 않았다. 큰 기수의 매장 특성화를 다루는 문서가 생기면 그 문서의 몫이다.",
+      "createdAt": "2026-10-10T12:40:35.676Z",
+      "seq": 2035
+    },
+    {
+      "id": "95ec3c94",
+      "title": "기계학습 개관 갈래 분리 결과",
+      "priority": 20,
+      "note": "40차(2026-10-10) 판정 메모. machine-learning-overview 의 '## 최적화와 일반화' 를 '## 최적화'(경사하강법 하나)와 '## 일반화 이론'(집중부등식, Rademacher 복잡도, VC 차원, 서포트 벡터 머신)으로 나눴다. 서포트 벡터 머신을 일반화 쪽에 둔 근거는 그 문서의 부모가 lagrange-duality 와 rademacher-complexity 이고 갈래가 읽는 순서를 따르므로 Rademacher 다음 자리라는 것이다. '최적화' 갈래가 한 줄인 것은 '그래프 학습' 갈래의 선례를 따랐고, 경사하강법의 주 태그가 optimization 이라 적응 경사법과 근접 경사법은 최적화 개관이 거둔다. 개요 절은 이미 표현·최적화·일반화 셋으로 문제를 나누므로 고치지 않았다.",
+      "createdAt": "2026-10-10T12:43:11.708Z",
+      "seq": 2036
+    },
+    {
+      "id": "c2be80c4",
+      "title": "Korovkin 정리 신설 결과와 Stone-Weierstrass 확장 판본의 자리",
+      "priority": 20,
+      "note": "40차(2026-10-10) 판정 메모. korovkin-theorem 을 stone-weierstrass 의 자식으로 만들어 그 문서의 더 알아보기를 둘로 늘렸다(Korovkin, Chebyshev 순). 담은 것은 양작용소의 정의와 노름이 Le_0 의 노름인 것, 검정함수 셋, 정리와 (t-x)^2 로 누르는 증명, Bernstein 따름정리, Lipschitz 함수의 1/(2 sqrt n) 추정(양작용소의 Cauchy-Schwarz), e_0 과 e_1 만으로는 안 된다는 반례(선형 보간 작용소)다. 큐 dece5714 가 남긴 후보 셋(국소콤팩트 판본과 C_0(X), 격자 판본, Gelfand-Naimark)은 Korovkin 문서에 넣지 않았다. 그 셋은 근사 작용소의 수렴이 아니라 Stone-Weierstrass 자체의 확장이므로 stone-weierstrass 보강이나 별도 문서의 몫이다. 활용 절에 Fejer 작용소를 적었으나 저장소에 fejer 문서가 없어 fourier-series 로 링크했다.",
+      "createdAt": "2026-10-10T12:47:01.442Z",
+      "seq": 2037
+    },
+    {
+      "id": "785c68eb",
+      "title": "Khintchine 부등식 신설 결과",
+      "priority": 20,
+      "note": "40차(2026-10-10) 판정 메모. khintchine-inequality 를 concentration-inequalities 의 자식으로 만들었다. 부모를 집중부등식 하나로 둔 근거는 p>=2 상계의 증명이 Hoeffding 부등식의 꼬리 추정을 적분하는 것이라는 점이다. martingales 는 부모로 두지 않았다. 마팅게일 부등식 없이 증명이 서고 5절의 '부모를 빼도 자식의 개요가 그대로 읽히는가' 에 걸린다. 담은 것은 L^2 직교성과 L^4 전개, p>=2 의 Hoeffding 적분으로 B_p=(p 2^{p/2} Gamma(p/2))^{1/p}, p<2 의 하계를 지수 3/2 와 3 의 Holder 로 1/sqrt 3, 최적 상수(Haagerup 의 Gauss 모멘트, Szarek 의 1/sqrt 2), Gauss 합과의 동등이다. littlewood-paley:61 의 이름만 쓴 언급에 본문 링크를 달았고 간선은 긋지 않았다(증명에 도구로 한 번 쓰는 관계).",
+      "createdAt": "2026-10-10T12:50:11.694Z",
+      "seq": 2039
+    },
+    {
+      "id": "26f45975",
+      "title": "본문 링크 라벨 어긋남 갈래 (나) 판정 (40차)",
+      "priority": 20,
+      "note": "40차(2026-10-10) 판정 메모. 큐 bb3c4559 가 갈래 (나)('라벨이 대상 문서의 주제가 아닌 것')로 분류한 여섯 예를 대상 문서에서 직접 확인했다. 다섯은 (나)가 아니라 (가)였다. computability 는 '## 정지 문제의 결정 불가능성' 절을 두고 그 말이 10회 나오며, turing-degrees 는 '## 도약' 과 '## 도약의 엄격한 증가' 두 절로 도약을 정의하고, knot-invariants 는 '## Kauffman 괄호와 Jones 다항식' 과 '## 삼엽매듭의 Jones 다항식' 을 두고, theta-series 는 eta 를 36회 다루고, minimum-spanning-tree 는 '## Kruskal 알고리즘의 정당성' 을 둔다. 판정 기준을 세웠다. 대상 문서가 그 개념을 절 하나로 정의하거나 주요하게 다루면 라벨이 그 절의 개념 이름이어도 독자에게 정확한 안내이므로 갈래 (가)로 보고 손대지 않는다. 진짜 (나)는 그 개념의 문서가 따로 생겼는데 링크가 옛 자리를 가리키는 경우이고, weak-choice-principles:46 의 '[Hahn-Banach 정리](banach-spaces.md)' 가 그것이어서 hahn-banach-theorem.md 로 돌렸다(전수로 그 한 건뿐이었다). 322 건 가운데 갈래 (다)의 판정은 아직 남았다.",
+      "createdAt": "2026-10-10T12:51:52.030Z",
+      "seq": 2041
+    },
+    {
+      "id": "af48f918",
+      "title": "본문 링크 라벨 어긋남 갈래 (다) 판정 (40차)",
+      "priority": 20,
+      "note": "40차(2026-10-10) 판정 메모. 큐 bb3c4559 의 갈래 (다)('대상 제목이 A와 B 꼴이어서 라벨이 한쪽만 가리키는 것') 세 예를 판정했다. (1) '일반 표현' -> whittaker-models 는 손대지 않았다. 그 문서 64줄이 '일반적(generic)' 을 정의하므로 적법한 변형이다. '중복도 1' -> whittaker-models(waldspurger-formula:119)도 제목에 그 말이 들어 있어 적법하다. (2) '이산 스펙트럼' -> speh-representations(vogan-packets:104)와 '자기동형 스펙트럼' -> speh-representations(whittaker-models:122)는 그 문서의 '## 세 조각' 절이 L^2 의 세 조각 분해를 담으므로 적법하다. (3) '연속 스펙트럼' -> speh-representations 는 고쳤다. 그 문서에 '연속 스펙트럼' 이라는 말이 한 번도 나오지 않고 L^2_cont 를 한 문장으로 지나치기 때문이다. eisenstein-series:13 은 자기 문서의 '## 스펙트럼 분해' 절이 그 개념을 본격적으로 다루므로 링크를 지워 이름만 남겼고, jacquet-langlands:17 은 같은 문장에 Eisenstein 급수 링크가 이미 있어 같이 지웠다. 같은 작업에서 'Vogan 꾸러미' 라벨 네 곳(tunnell-saito:27, arthur-parameters:11, jacquet-langlands:55, fargues-scholze:113)을 제목인 'Vogan L 꾸러미' 로 통일했다. 남은 것은 322 건 가운데 갈래 (가)로 분류되지 않은 나머지의 전수 판정이다.",
+      "createdAt": "2026-10-10T12:53:34.020Z",
+      "seq": 2043
+    },
+    {
+      "id": "5c7f4357",
+      "title": "Fejer 핵 신설 결과와 Dirichlet 핵의 자리",
+      "priority": 20,
+      "note": "40차(2026-10-10) 판정 메모. fejer-kernel 을 fourier-series 와 korovkin-theorem 두 문서의 자식으로 만들었다. 제목은 'Fejer 핵' 으로 좁혔다. 큐 note 는 'Fejer 핵과 Cesaro 평균' 으로 적었으나 4절 제목 규칙이 제목과 파일명이 같은 것을 가리키라고 하므로 핵 쪽으로 정하고 Cesaro 평균은 정의 절의 한 절로 두었다. 분담: fourier-series:65 의 '## Cesaro 평균과 Fejer 핵' 절은 정의와 핵의 닫은 꼴 넷 줄이고 그대로 두었다. 새 문서가 근사항등원의 세 조건과 증명, Fejer 정리의 증명, Korovkin 정리의 원 판본과의 관계(sigma_N(e^{int}) 계수가 1-|n|/(N+1)), Gibbs 현상의 부재와 좌우극한 평균 수렴, 계수 감쇠를 맡는다. 중복은 핵의 닫은 꼴 한 줄뿐이다. Dirichlet 핵은 별도 문서로 두지 않고 이 문서의 직관 절에서 L^1 노름이 log N 으로 자란다는 사실과 함께 정의했다. 저장소에 dirichlet-kernel 류 파일이 없고 그 핵만으로 한 문서가 서기 어렵다.",
+      "createdAt": "2026-10-10T12:56:50.588Z",
+      "seq": 2044
+    },
+    {
+      "id": "5ef1fd16",
+      "title": "fourier-series 의 수식 표기 정리 결과",
+      "priority": 20,
+      "note": "40차(2026-10-10) 판정 메모. fourier-series 의 블록 수식 세 줄(80 96 108)에서 절댓값 세로선 여덟 개를 vert 명령으로 바꿨다(커밋 2a8c1300). 명령 뒤에 영숫자가 오는 자리는 공백을 하나 두었다. 같은 줄의 big( 와 tfrac 은 백슬래시 뒤가 글자라 4절 수식 규칙의 금지 대상이 아니므로 그대로 두었다. 문서 전체의 문체 보강은 하지 않았다. 4절은 보강할 때 문서 전체를 고치라고 하지만 이 작업은 표기 수정이고 193줄 전체 재작성은 별도 회차의 몫이다.",
+      "createdAt": "2026-10-10T12:58:32.683Z",
+      "seq": 2046
+    },
+    {
+      "id": "42b698e3",
+      "title": "수식 안 생 세로선 전수 현황 (40차)",
+      "priority": 20,
+      "note": "40차(2026-10-10) 집계 메모. fourier-series 의 세로선을 vert 로 바꾼 뒤 저장소 전체를 훑었다. 수식 구간(인라인과 블록, 코드블록과 표 줄 제외) 안에서 vert, Vert, mid 로 쓰이지 않은 생 세로선이 522 건이다. adeles 의 절댓값, algebraic-number-fields 의 판별식과 유수, boolean-fourier 의 |S| 처럼 분야 전반에 고르게 퍼져 있어 저장소의 관례로 보아야 한다. 4절 수식 규칙이 금지하는 것은 표 셀 안의 세로선이고 표 밖은 '표로 옮길 때 고칠 것이 없다' 는 권고다. 표 줄만 따로 검사하면 0 건이므로 실제로 렌더가 깨지는 자리는 없다. 그래서 522 건의 일괄 치환은 하지 않았다. 일괄 치환은 300 문서를 건드리고 vert 뒤 영숫자의 공백까지 넣어야 해 사고 위험이 큰데(큐의 집합 기호 사고 메모 참조) 얻는 것은 표기 통일뿐이다. 독자가 통일을 원하면 그때 한 회차를 따로 쓴다. 검사 코드는 $ 사이 구간과 $$ 블록을 모아 vert/Vert/mid 를 지운 뒤 세로선을 찾고, 들여쓰기 없는 세로선으로 시작하는 줄을 표로 보아 거르는 것이다.",
+      "createdAt": "2026-10-10T12:59:27.047Z",
+      "seq": 2047
     },
     {
       "id": "410fd79d",
@@ -2324,14 +2364,6 @@
       "seq": 1781
     },
     {
-      "id": "27920a57",
-      "title": "Korovkin 정리",
-      "priority": 10,
-      "note": "해석학(#analysis #functional_analysis). 36차에 큐 dece5714(stone-weierstrass 의 후속 간선)을 보고 확인했다. 그 note 의 후속 후보 넷 가운데 Korovkin 정리가 가장 가까운 후속이고 korovkin 류 파일이 없다. 담을 내용은 양선형작용소 열이 1, x, x^2 세 함수에서 수렴하면 C[0,1] 전체에서 균등수렴한다는 진술, 증명 요지(점마다 (t-x)^2 를 다루는 봉우리 함수 구성), Bernstein 다항식이 특수 경우로 나오는 계산, Weierstrass 근사정리와의 관계, 수렴 속도와 Lipschitz 함수의 추정이다. 부모는 stone-weierstrass 하나이고 그 문서의 첫 자식이 된다(현재 리프). 함께 판정할 것은 그 note 의 남은 후보 셋(국소 콤팩트 판본과 C_0(X), 격자 판본, Gelfand-Naimark)을 Korovkin 문서에 넣을지 따로 둘지다.",
-      "createdAt": "2026-10-06T09:01:14.262Z",
-      "seq": 1791
-    },
-    {
       "id": "1f852268",
       "title": "Martin-Lof 무작위성",
       "priority": 10,
@@ -2530,14 +2562,6 @@
       "note": "39차에 전수를 마쳤다. 당시 부모 넷인 문서는 langlands-program, measure, peter-weyl, umbral-moonshine 넷이다. 판정: langlands-program 에서 elliptic-curves 를 뺐다(개요에서 모듈러성 정리의 사례로만 쓰이고 강령의 진술은 나머지 셋으로 읽힌다). 나머지 셋은 유지다. measure 는 개요가 셋을 다 쓴다(2차 판정). umbral-moonshine 은 23 겹 짝짓기의 색인이 Niemeier 격자이고 대상이 mock 모듈러 형식이므로 넷 다 정의에 든다. peter-weyl 은 개요가 '콤팩트 Lie 군' 으로 대상 군을 규정하고 Haar 측도로 평균을 적분으로 바꾸며 L2 의 직교분해를 쓰므로 넷 다 진술에 든다. 5절은 조상 관계가 있을 때만 빼라고 하므로 조상 관계가 없고 내용으로도 쓰이면 유지가 규칙에 맞다. 다음 점검은 부모 넷인 문서가 새로 생겼을 때 하고, 검사법은 docs/*.md 의 선수지식 절에서 '- [' 로 시작하는 줄을 세는 것이다.",
       "createdAt": "2026-10-08T12:57:25.094Z",
       "seq": 1910
-    },
-    {
-      "id": "06b5b358",
-      "title": "Khintchine 부등식",
-      "priority": 10,
-      "note": "littlewood-paley 성질 절의 Littlewood-Paley 부등식 증명 요지가 이 부등식을 이름만 쓰고 지나간다(0절대로 링크 없이 썼다). 진술은 독립 부호 eps_j 에 대해 sum eps_j a_j 의 L^p 노름이 (sum |a_j|^2)^{1/2} 와 p 에만 의존하는 상수배로 동등하다는 것이다. 분야는 확률 쪽이고 Rademacher 함수와 마팅게일 부등식 축에 붙는다. 부모 후보는 concentration-inequalities 나 martingales 이고 둘의 현재 상태를 먼저 보아야 한다. 만들면 littlewood-paley 의 본문 링크를 달 수 있다(간선은 아니다, 증명에 도구로 한 번 쓰는 관계라 5절 더 알아보기 기준에 들지 않는다).",
-      "createdAt": "2026-10-08T16:48:21.513Z",
-      "seq": 1915
     },
     {
       "id": "34d7675e",
@@ -2850,6 +2874,22 @@
       "note": "2026-10-10 회차에 kernel-ridge-regression 을 새로 썼다(90줄, 부모 linear-regression 과 reproducing-kernel-hilbert-space 둘, 기계학습 개관 '표현과 차원 축소' 갈래에서 커널 PCA 다음 줄). 리프다. 후속 후보 셋. (1) 핵 행렬의 저계수 근사. 활용 절 '비선형 회귀' 가 n 세제곱 비용과 저계수 근사를 한 문장으로 적었다. Nystrom 법과 랜덤 Fourier 특징이 내용이고 큐의 'Nystrom 법과 적분방정식의 이산화'(p3)는 적분방정식 쪽이라 다른 문서다. (2) 유효 자유도와 평활 작용소. 성질 절 '평활 작용소' 를 떼어 평활 스플라인까지 묶는다. (3) 핵 능형회귀의 학습률. 핵 행렬의 고윳값 감소 속도로 수렴률을 적는 쪽이고 rademacher-complexity 의 복잡도 경계와 다른 길이다.",
       "createdAt": "2026-10-10T05:04:42.544Z",
       "seq": 2024
+    },
+    {
+      "id": "21e3619e",
+      "title": "Khintchine-Kahane 부등식과 Banach 공간의 type, cotype",
+      "priority": 10,
+      "note": "확률·함수해석(#probability #functional_analysis). 40차에 khintchine-inequality 를 쓰며 확인했다. 그 문서는 스칼라 계수만 다루고 Banach 공간 값 계수로 옮긴 Khintchine-Kahane 부등식을 담지 않았다. 담을 내용은 Banach 공간 값 Rademacher 합의 L^p 노름이 p 와 q 에만 의존하는 상수로 L^q 노름과 동등한 것(스칼라와 달리 l^2 노름과는 동등하지 않다), type p 와 cotype q 의 정의, Hilbert 공간이 type 2 이고 cotype 2 인 것, L^p 공간의 type 과 cotype 값이다. 부모 후보는 khintchine-inequality 와 banach-spaces 다.",
+      "createdAt": "2026-10-10T12:50:11.923Z",
+      "seq": 2040
+    },
+    {
+      "id": "b6ca44bd",
+      "title": "halting-problem 문서 신설 판단",
+      "priority": 10,
+      "note": "계산론(#computation #logic). 40차에 본문 링크 라벨을 판정하며 확인했다. '정지 문제' 라벨로 computability.md 를 가리키는 본문 링크가 rice-theorem:5, rice-shapiro-theorem:67, turing-degrees:5, cardinality:7 네 곳에 있고, computability 는 그 개념을 '## 정지 문제의 결정 불가능성' 절 하나로 다룬다. 판단할 것은 그 절이 별도 문서가 될 만한지다. 담길 내용은 대각선 논법에 의한 결정 불가능성, 환산을 통한 다른 문제로의 전파, Turing 도약과의 관계, Rice 정리와의 분담이고, 분담이 겹치면 만들지 않는다는 결론도 가능하다. 부모 후보는 computability 다.",
+      "createdAt": "2026-10-10T12:51:52.228Z",
+      "seq": 2042
     },
     {
       "id": "dfb3e493",
