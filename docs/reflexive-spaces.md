@@ -50,7 +50,7 @@ Banach 공간의 약한 위상에서 집합이 콤팩트한 것과 순차 콤팩
 
 ## Milman–Pettis 정리
 
-균일 볼록 Banach 공간은 반사적이다.[^3] 균일 볼록은 $\Vert x\Vert=\Vert y\Vert=1$ 이고 $\Vert x-y\Vert\ge\varepsilon$ 이면 $\Vert(x+y)/2\Vert\le1-\delta(\varepsilon)$ 인 $\delta(\varepsilon)\gt 0$ 이 있다는 조건이다. $1\lt p\lt\infty$ 의 $L^p$ 가 Clarkson 부등식으로 균일 볼록이므로 이 정리로 반사성을 얻는다.
+[균일 볼록](uniformly-convex-spaces.md) Banach 공간은 반사적이다.[^3] 균일 볼록은 단위구의 두 점이 $\varepsilon$ 이상 떨어져 있으면 중점의 노름이 $1-\delta(\varepsilon)$ 이하라는 조건이다. $1\lt p\lt\infty$ 의 $L^p$ 가 Clarkson 부등식으로 균일 볼록이므로 이 정리로 반사성을 얻는다.
 
 ## 반사적이 아닌 공간
 
@@ -84,6 +84,6 @@ Banach 공간 $X$ 가 반사적인 것과, 모든 $f\in X^\ast$ 가 닫힌 단�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [균일 볼록 공간](uniformly-convex-spaces.md)
 
 #functional_analysis #analysis #topology #linear_algebra
