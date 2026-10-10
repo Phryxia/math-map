@@ -162,6 +162,7 @@ $$
 ## 더 알아보기
 
 - [Fisher 정보](fisher-information.md)
+- [기댓값 최대화 알고리즘](em-algorithm.md)
 - [가설검정](hypothesis-testing.md)
 - [선형회귀](linear-regression.md)
 - [지수족](exponential-families.md)
