@@ -93,7 +93,7 @@ $$
 
 # 활용
 
-- 퍼텐셜 $V$ 안의 입자에 열잡음을 더한 Langevin 방정식에서 정상밀도가 $e^{-V/\varepsilon}$ 이므로, 이 SDE 를 이산화해 돌리면 Gibbs 측도의 표본이 나온다. 표본의 편향은 이산화 간격과 위 수렴 속도가 함께 정한다.
+- 퍼텐셜 $V$ 안의 입자에 열잡음을 더한 [Langevin 동역학](langevin-dynamics.md)에서 정상밀도가 $e^{-V/\varepsilon}$ 이므로, 이 SDE 를 이산화해 돌리면 Gibbs 측도의 표본이 나온다. 표본의 편향은 이산화 간격과 위 수렴 속도가 함께 정한다.
 - [확산모형](diffusion-models.md)은 자료에 잡음을 더하는 전진 SDE 와 위 시간역전 식을 쓴다. 역전 식의 $\nabla\log p$ 를 신경망으로 근사하는 것이 점수 적합이다.
 - [Black–Scholes 방정식](black-scholes-equation.md)의 전이밀도는 기하 Brown 운동의 Fokker–Planck 방정식을 푼 로그정규밀도이고, 옵션 가격이 그 밀도에 대한 적분으로 적힌다.
 - 두 우물 퍼텐셜에서 한 우물을 벗어나는 평균 시간은 흐름 $J$ 를 상수로 두고 적분해 얻는다. 장벽 높이 $\Delta V$ 에 대해 $e^{\Delta V/\varepsilon}$ 에 비례하는 Kramers 공식이 나온다[^3].
@@ -110,6 +110,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Langevin 동역학](langevin-dynamics.md)
 
 #probability #analysis #machine_learning

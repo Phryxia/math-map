@@ -132,7 +132,7 @@ $$
 
 ## 통계물리
 
-Langevin 방정식은 퍼텐셜 $V$ 안의 입자에 열잡음을 더한 SDE 다. Fokker–Planck 방정식의 정상분포가 Gibbs 측도 $e^{-V/\varepsilon}$ 이므로, 이 SDE 를 이산화해 돌리면 Gibbs 측도의 표본이 나온다. [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)은 이 수렴을 자유에너지의 하강으로 다시 쓴다.
+[Langevin 방정식](langevin-dynamics.md)은 퍼텐셜 $V$ 안의 입자에 열잡음을 더한 SDE 다. Fokker–Planck 방정식의 정상분포가 Gibbs 측도 $e^{-V/\varepsilon}$ 이므로, 이 SDE 를 이산화해 돌리면 Gibbs 측도의 표본이 나온다. [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)은 이 수렴을 자유에너지의 하강으로 다시 쓴다.
 
 ## 필터링
 
