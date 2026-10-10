@@ -116,6 +116,7 @@ $V$ 위의 쌍선형 형식 $B\colon V\times V\to F$ 는 사상 $V\to V^\ast$ , 
 
 - [Hahn–Banach 정리](hahn-banach-theorem.md)
 - [반사 공간](reflexive-spaces.md)
+- [닫힌 치역 정리](closed-range-theorem.md)
 - [Schwartz 분포](schwartz-distributions.md)
 
 #linear_algebra #algebra #functional_analysis #category_theory
