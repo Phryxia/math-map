@@ -25,6 +25,8 @@ graph TD
   LM["선형사상"] --> DS["쌍대 공간"]
   BS --> LPS["Lp 공간"] --> SOB["Sobolev 공간"] --> SD["Schwartz 분포"]
   DS --> SD
+  BS --> HB["Hahn–Banach 정리"]
+  DS --> HB
   BS --> OMT["열린 사상 정리"]
   HS --> BO["유계 작용소"]
   ST["스펙트럼 정리"] --> BO
@@ -57,6 +59,7 @@ graph TD
 
 ## 작용소와 스펙트럼
 
+- [Hahn–Banach 정리](hahn-banach-theorem.md) — 부분공간 위의 선형범함수를 노름을 키우지 않고 전체로 확장한다. 쌍대공간의 비자명성과 볼록집합의 분리가 따라온다
 - [열린 사상 정리](open-mapping-theorem.md) — Banach 공간 사이의 전사 유계 작용소는 열린 사상이다. 유계 역작용소 정리와 닫힌 그래프 정리가 따라온다
 - [유계 작용소](bounded-operators.md) — 연속과 유계가 동치이고, 스펙트럼이 점·연속·잔여로 갈린다
 - [비유계 작용소](unbounded-operators.md) — 조밀한 정의역에서만 정의되는 자기수반 작용소와 한 매개변수 유니터리 군의 대응

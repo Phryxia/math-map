@@ -6,7 +6,7 @@ Banach 공간은 노름이 주어지고 그 노름에 대해 [완비](completene
 
 유한차원에서 참이던 여러 명제가 여기서 깨진다. [선형사상](linear-maps.md)이 연속이 아닐 수 있다. 부분공간이 닫히지 않을 수 있다. 닫힌 유계집합이 콤팩트하지 않다.
 
-Hahn–Banach 정리, 열린사상 정리, 균등유계성 원리가 이 공간의 기본 도구다. 뒤의 둘은 완비성에서 [Baire 범주 정리](baire-category.md)를 거쳐 나오고, 앞의 하나는 [선택공리](axiom-of-choice.md)에서 나온다.
+[Hahn–Banach 정리](hahn-banach-theorem.md), [열린 사상 정리](open-mapping-theorem.md), 균등유계성 원리가 이 공간의 기본 도구다. 뒤의 둘은 완비성에서 [Baire 범주 정리](baire-category.md)를 거쳐 나오고, 앞의 하나는 [선택공리](axiom-of-choice.md)에서 나온다.
 
 # 직관
 
@@ -59,13 +59,9 @@ $1\lt p\lt\infty$ 에서 $1/p+1/q=1$ 이면 $(\ell^p)^\ast\cong\ell^q$ 이고 $(
 
 ## Hahn–Banach 정리
 
-$p:X\to\mathbb R$ 가 열등선형이고 $f$ 가 부분공간 $M$ 위의 선형범함수로 $f\le p$ 를 만족하면, $f$ 를 $X$ 전체로 확장하되 $f\le p$ 를 유지할 수 있다.
-
-*증명.* 한 차원씩 확장하고 Zorn 보조정리로 극대 확장을 잡는다. 한 차원 확장에서 새 값을 넣을 구간이 비지 않음을 열등선형성이 보장한다.
+Hahn–Banach 정리는 열등선형 범함수 $p$ 와 부분공간 $M$ 위에서 $f\le p$ 를 만족하는 선형범함수 $f$ 에 대해, $f\le p$ 를 유지하는 확장을 $X$ 전체에 준다. 증명은 한 차원씩 정의역을 늘리고 Zorn 보조정리로 극대 확장을 잡는다.
 
 노름공간에서 $p(x)=\lVert f\rVert_M\lVert x\rVert$ 로 두면 노름을 키우지 않는 확장이 나온다. 따름정리로 쌍대공간이 점을 분리하고, 볼록집합을 초평면으로 분리할 수 있으며, $\lVert x\rVert=\sup_{\lVert f\rVert\le1}\vert f(x)\vert$ 가 성립한다.
-
-이 정리는 선택공리에 의존한다. 초필터 보조정리보다 약간 약한 세기이며 **ZF**(Zermelo–Fraenkel 집합론) 만으로는 증명되지 않는다.
 
 ## 균등유계성 원리
 
@@ -136,6 +132,7 @@ Banach 공간에는 직교성, 사영 정리, 쌍대공간과 자기 자신의 �
 
 ### 쌍대성과 구조 정리
 
+- [Hahn–Banach 정리](hahn-banach-theorem.md)
 - [Banach–Alaoglu 정리](banach-alaoglu.md)
 - [열린 사상 정리](open-mapping-theorem.md)
 
