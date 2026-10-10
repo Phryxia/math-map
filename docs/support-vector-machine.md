@@ -94,7 +94,7 @@ $$\frac{2BR}{\rho\sqrt n}+3\sqrt{\frac{\log(2/\delta)}{2n}}$$
 
 ## 정칙화 상수의 선택
 
-$C$ 는 경험 오차와 마진의 저울이다. [교차검증](cross-validation.md)으로 고르거나, 일반화 경계의 복잡도 항을 벌점으로 보고 [편향-분산 분해](bias-variance-decomposition.md)의 두 항을 저울질한다.
+$C$ 가 경험 오차와 마진 가운데 어느 쪽을 더 줄일지 정한다. [교차검증](cross-validation.md)으로 고르거나, 일반화 경계의 복잡도 항을 벌점으로 보고 [편향-분산 분해](bias-variance-decomposition.md)의 두 항을 저울질한다.
 
 # 연관 문서
 
