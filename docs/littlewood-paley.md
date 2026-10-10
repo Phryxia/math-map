@@ -58,7 +58,7 @@ $$
 c_p\thinspace\Vert f\Vert\_{L^p}\le\Vert Sf\Vert\_{L^p}\le C_p\thinspace\Vert f\Vert\_{L^p}
 $$
 
-증명의 요지. 부호 $\epsilon=(\epsilon_j)$ 를 $\pm 1$ 에서 골라 $T\_\epsilon f=\sum_j\epsilon_j\Delta_jf$ 라 둔다. $T\_\epsilon$ 의 핵은 $\sum_j\epsilon_j2^{jn}\check\varphi(2^jz)$ 이고, 이 합이 $\epsilon$ 에 무관한 상수로 Calderón–Zygmund 핵의 두 조건을 만족한다. 심볼이 유계이므로 $L^2$ 유계성도 $\epsilon$ 에 무관하다. [Calderón–Zygmund 정리](calderon-zygmund-theory.md)가 $\Vert T\_\epsilon f\Vert\_{L^p}\le C_p\Vert f\Vert\_{L^p}$ 를 $\epsilon$ 에 균등하게 준다. 부호를 무작위로 두고 Khintchine 부등식을 각 점에 적용하면 $\epsilon$ 에 대한 평균이 $Sf(x)^p$ 와 같은 크기이므로 오른쪽 부등식이 나온다. 왼쪽은 $S$ 가 $L^{p'}$ 에서 유계라는 것과 $\sum_j\Delta_j\tilde\Delta_j=\mathrm{id}$ 꼴의 분해를 쌍대성에 넣어 얻는다.
+증명의 요지. 부호 $\epsilon=(\epsilon_j)$ 를 $\pm 1$ 에서 골라 $T\_\epsilon f=\sum_j\epsilon_j\Delta_jf$ 라 둔다. $T\_\epsilon$ 의 핵은 $\sum_j\epsilon_j2^{jn}\check\varphi(2^jz)$ 이고, 이 합이 $\epsilon$ 에 무관한 상수로 Calderón–Zygmund 핵의 두 조건을 만족한다. 심볼이 유계이므로 $L^2$ 유계성도 $\epsilon$ 에 무관하다. [Calderón–Zygmund 정리](calderon-zygmund-theory.md)가 $\Vert T\_\epsilon f\Vert\_{L^p}\le C_p\Vert f\Vert\_{L^p}$ 를 $\epsilon$ 에 균등하게 준다. 부호를 무작위로 두고 [Khintchine 부등식](khintchine-inequality.md)을 각 점에 적용하면 $\epsilon$ 에 대한 평균이 $Sf(x)^p$ 와 같은 크기이므로 오른쪽 부등식이 나온다. 왼쪽은 $S$ 가 $L^{p'}$ 에서 유계라는 것과 $\sum_j\Delta_j\tilde\Delta_j=\mathrm{id}$ 꼴의 분해를 쌍대성에 넣어 얻는다.
 
 ## Mikhlin 승수 정리
 

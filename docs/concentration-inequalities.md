@@ -181,6 +181,7 @@ $$
 ## 더 알아보기
 
 - [대편차 원리](large-deviations.md)
+- [Khintchine 부등식](khintchine-inequality.md)
 - [Rademacher 복잡도](rademacher-complexity.md)
 - [다중 슬롯머신](multi-armed-bandits.md)
 
