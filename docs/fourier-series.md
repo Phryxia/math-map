@@ -77,7 +77,7 @@ $$
 $f$ 가 제곱적분가능하면 부분합은 $f$ 의 $2N+1$ 차원 부분공간으로의 정사영이므로, 그 차수의 삼각다항식 가운데 제곱평균 오차를 최소화한다. 삼각함수계가 완비이므로 다음이 성립한다.
 
 $$
-\Vert S_N f - f\Vert \xrightarrow[N\to\infty]{} 0,\qquad \sum_{n\in\mathbb{Z}} |\hat{f}(n)|^2 = \frac{1}{2\pi}\int_{-\pi}^{\pi} |f(x)|^2\thinspace dx .
+\Vert S_N f - f\Vert \xrightarrow[N\to\infty]{} 0,\qquad \sum_{n\in\mathbb{Z}} \vert\hat{f}(n)\vert^2 = \frac{1}{2\pi}\int_{-\pi}^{\pi} \vert f(x)\vert^2\thinspace dx .
 $$
 
 완비성 증명의 표준 경로는 Fejér 정리다. 연속 주기함수에 대해 Cesàro 평균이 균등수렴하므로 삼각다항식이 [연속함수](continuity.md) 공간에서 조밀하고, 연속함수가 $L^2$ 에서 조밀하므로 삼각함수계에 직교하는 벡터는 0뿐이다. 따라서 Parseval 은 Hilbert 공간의 일반론에서 자동으로 따라온다.
@@ -93,7 +93,7 @@ $$
 Riemann–Lebesgue 보조정리로 적분가능한 함수의 계수는 0으로 간다. 부분적분을 반복하면 매끄러움이 감쇠 속도로 번역된다. $f$ 가 $k$ 번 연속미분가능한 주기함수면
 
 $$
-\widehat{f^{(k)}}(n) = (in)^k \hat{f}(n),\qquad |\hat{f}(n)| = o\big(|n|^{-k}\big).
+\widehat{f^{(k)}}(n) = (in)^k \hat{f}(n),\qquad \vert\hat{f}(n)\vert = o\big(\vert n\vert^{-k}\big).
 $$
 
 특히 계수가 절대수렴하면 급수는 균등수렴하고 합은 연속이다. 이는 [함수열의 균등수렴](uniform-convergence.md)이 극한의 연속성을 보존한다는 사실의 직접적인 응용이다. 반대로 도약 불연속이 있으면 계수는 $1/n$ 정도로만 줄고 절대수렴하지 않는다.
@@ -105,7 +105,7 @@ $$
 - Dini 판정. 어떤 양수 $\delta$ 에 대해
 
 $$
-\int_{0}^{\delta} \frac{|f(x+t) + f(x-t) - 2s|}{t}\thinspace dt \lt\infty
+\int_{0}^{\delta} \frac{\vert f(x+t) + f(x-t) - 2s\vert}{t}\thinspace dt \lt\infty
 $$
 
 이면 $S_Nf(x)\to s$ . 특히 $f$ 가 $x$ 에서 Hölder 조건을 만족하면 조건이 충족된다.
