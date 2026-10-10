@@ -53,6 +53,7 @@ graph TD
 - [Lie 미분](lie-derivative.md): 흐름으로 끌어온 텐서장의 미분, Cartan 공식과 불변성 판정
 - [미분형식](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
 - [Morse 이론](morse-theory.md): 매끄러운 함수의 임계점이 주는 세포 구조와 Betti 수의 하한
+- [소멸 사이클](vanishing-cycles.md): 정칙 함수의 임계점에서 줄어드는 호몰로지류, Picard–Lefschetz 공식
 - [심플렉틱 다양체](symplectic-manifolds.md): 닫힌 비퇴화 2 형식, Hamilton 벡터장과 Darboux 정리
 - [모멘트 사상](moment-map.md): 심플렉틱 작용의 보존량을 Lie 대수 쌍대공간에 모은 사상, Marsden–Weinstein 축소와 모멘트 다면체
 - [여접다발](cotangent-bundle.md): 좌표 없이 정의되는 표준 1 형식과 그 외미분이 주는 심플렉틱 구조, 정준변환
