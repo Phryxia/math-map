@@ -35,6 +35,7 @@ graph TD
 - [분리공리](separation-axioms.md): Hausdorff 부터 정규까지, Urysohn 보조정리와 Tietze 확장 정리
 - [Stone–Čech 콤팩트화](stone-cech-compactification.md): 유계 연속함수를 모두 확장하는 가장 큰 콤팩트화, 초필터와의 대응
 - [위상군](topological-groups.md): 연산이 연속인 군, 항등원 근방이 정하는 위상과 국소콤팩트성
+- [격자 부분군](lattice-subgroups.md): 몫이 유한 부피인 이산 부분군, 기본 영역과 공부피
 
 ## 호모토피와 호몰로지
 
