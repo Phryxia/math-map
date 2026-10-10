@@ -117,6 +117,6 @@ VC 차원 $d_1, d_2$ 인 두 족의 합집합과 교집합은 VC 차원이 $O(d_
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Glivenko–Cantelli 정리](glivenko-cantelli.md)
 
 #machine_learning #combinatorics #probability #statistics

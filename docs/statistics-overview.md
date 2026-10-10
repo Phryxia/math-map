@@ -32,6 +32,7 @@ graph TD
 
 ## 추정
 
+- [Glivenko–Cantelli 정리](glivenko-cantelli.md): 경험 분포함수의 균등수렴, Kolmogorov–Smirnov 거리, Dvoretzky–Kiefer–Wolfowitz 부등식
 - [최대가능도 추정](maximum-likelihood.md): 가능도함수, 점근 정규성, Fisher 정보량과 Cramér–Rao 하한
 - [기댓값 최대화 알고리즘](em-algorithm.md): 은닉변수 모형의 최대가능도 추정, 증거 하한과 두 단계, 가능도의 단조 증가
 - [Fisher 정보](fisher-information.md): 점수함수의 공분산, 정보 등식, Cramér–Rao 하한, Fisher–Rao 계량
