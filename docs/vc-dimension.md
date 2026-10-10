@@ -107,7 +107,7 @@ VC 차원 $d_1, d_2$ 인 두 족의 합집합과 교집합은 VC 차원이 $O(d_
 
 ## 모형이론의 NIP
 
-[모형이론](model-theory.md)에서 공식 $\varphi(x;y)$ 가 정의하는 집합족의 VC 차원이 유한한 것이 독립 성질 없음(not the independence property, NIP)이다. [안정 이론](stable-theories.md)의 분기 조건을 재는 수와 같은 조합 구조가 여기서 나온다.
+[모형이론](model-theory.md)에서 공식 $\varphi(x;y)$ 가 정의하는 집합족의 VC 차원이 유한한 것이 독립 성질 없음(not the independence property, NIP)이다. [안정 이론](stable-theories.md)도 같은 조합 구조로 분기 조건을 재고, 안정 이론은 모두 NIP 이론이다.
 
 # 연관 문서
 
