@@ -39,9 +39,12 @@ graph TD
 
 # 갈래
 
-## 최적화와 일반화
+## 최적화
 
 - [경사하강법](gradient-descent.md) — 기울기 반대 방향으로 반복한다. 볼록과 강볼록에서 수렴률이 다르고 보폭이 Lipschitz 상수에 묶인다
+
+## 일반화 이론
+
 - [집중부등식](concentration-inequalities.md) — 표본평균이 기댓값에서 벗어날 확률의 지수 한계. 일반화 오차를 표본 수로 제한하는 데 쓴다
 - [Rademacher 복잡도](rademacher-complexity.md) — 함수족이 무작위 부호열과 갖는 상관의 기댓값. 무한 가설류의 일반화 오차를 가설 개수 없이 막는다
 - [VC 차원](vc-dimension.md) — 가설족이 부수는 집합의 최대 크기. 성장함수가 다항식인지 지수인지를 가른다
