@@ -58,7 +58,7 @@ $\pi_n(S^n)\cong\mathbb Z$ 이고 사상의 차수가 동형을 준다. $k\lt n$
 
 $k\gt n$ 인 부분은 규칙이 단순하지 않다. $\pi_4(S^2)=\mathbb Z/2$ , $\pi_4(S^3)=\mathbb Z/2$ , $\pi_6(S^3)=\mathbb Z/12$ 처럼 유한군이 나오고, Serre 는 $k\gt n$ 에서 $\pi_k(S^n)$ 이 유한군임을 보였다(단 $n$ 이 짝수이고 $k=2n-1$ 인 경우는 제외).[^1]
 
-$\pi_{n+k}(S^n)$ 은 $n\gt k+1$ 에서 $n$ 에 무관하고, 그 값을 $k$ 차 안정 호모토피군이라 한다.
+$\pi_{n+k}(S^n)$ 은 $n\gt k+1$ 에서 $n$ 에 무관하고([Freudenthal 매달기 정리](freudenthal-suspension.md)), 그 값을 $k$ 차 안정 호모토피군이라 한다.
 
 ## Whitehead 정리
 
@@ -89,6 +89,7 @@ $\pi_{n+k}(S^n)$ 은 $n\gt k+1$ 에서 $n$ 에 무관하고, 그 값을 $k$ 차 
 ## 더 알아보기
 
 - [CW 복합체](cw-complexes.md)
+- [Freudenthal 매달기 정리](freudenthal-suspension.md)
 - [올화](fibrations.md)
 - [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)
 - [무한 범주](infinity-categories.md)
