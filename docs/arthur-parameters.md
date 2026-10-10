@@ -38,7 +38,7 @@ $$
 \psi:\ W_F\times\mathrm{SL}\_2(\mathbb C)\times\mathrm{SL}\_2(\mathbb C)\to{}^LG
 $$
 
-에서 $W_F$ 로의 제한이 유계 상을 갖고 두 $\mathrm{SL}\_2$ 로의 제한이 대수적이어야 한다. 대응하는 L 매개변수는 다음과 같다.
+에서 $W_F$ 로 제한한 것이 유계 상을 갖고 두 $\mathrm{SL}\_2$ 로 제한한 것이 대수적이어야 한다. 대응하는 L 매개변수는 다음과 같다.
 
 $$
 \varphi_\psi(w)=\psi\negthinspace\left(w,\ \begin{pmatrix}|w|^{1/2}&\cr&|w|^{-1/2}\end{pmatrix},\ 1\right)
