@@ -1,24 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-10-10T01:04:13.841Z",
-  "nextSeq": 2010,
+  "savedAt": "2026-10-10T05:05:06.835Z",
+  "nextSeq": 2026,
   "items": [
-    {
-      "id": "1d4e9a24",
-      "title": "replaceSection 류 절 단위 교체가 문서 끝 태그 줄을 덮는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 37차에 '## 더 알아보기' 절을 헤딩 기준으로 교체하는 node 스크립트를 썼다. 절의 끝을 '다음 H1 또는 H2 까지' 로 잡았는데 '## 더 알아보기' 는 문서의 마지막 H2 이므로 끝이 파일 끝이 되고, 그 사이에 있는 태그 줄(#probability #analysis)이 교체문에 덮여 사라졌다. ito-calculus 와 ordinary-differential-equations 둘에서 났다. '## 선수지식' 교체는 뒤에 '## 더 알아보기' 가 있어 무사했다.\n\n검사 여섯과 render-check, order-check 는 이것을 전혀 잡지 못한다. graph.mjs validate 도 통과한다(간선은 링크 줄만 읽는다). 잡아낸 것은 tail -2 로 끝부분을 눈으로 본 것이고, graph.mjs tags 의 'N untagged' 수치로도 드러난다.\n\n규칙 둘. (1) 문서 마지막 절을 교체하는 스크립트는 태그 줄(^#[a-z0-9_ #]*$ 꼴의 마지막 줄)을 절 범위에서 빼거나, 교체문 끝에 태그 줄을 함께 적는다. (2) 어떤 방식으로든 docs 를 스크립트로 고친 회차에는 커밋 전에 'node dev/graph.mjs tags | tail -1' 로 untagged 가 0 인지 보고, 고친 문서마다 'tail -2 docs/<id>.md' 로 태그 줄이 남았는지 확인한다. 복구는 'git show HEAD:docs/<id>.md | tail -1' 로 원본 태그 줄을 꺼내 붙이면 된다.",
-      "createdAt": "2026-10-06T12:44:38.127Z",
-      "seq": 1795
-    },
-    {
-      "id": "df90dfba",
-      "title": "수식에 라틴 문자와 혼동되는 키릴·그리스 문자가 섞이는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 29차 회차에 jones-wenzl-idempotents 를 쓰다 개요의 $$ 블록에서 'e_i' 의 e 가 키릴 소문자 е(U+0435)로 들어갔다. 'f_n^2=f_n, e_if_n=f_nе_i=0' 에서 둘째 e 하나만 키릴이었다. 원문을 눈으로 보면 라틴 e 와 구별되지 않고 MathJax 는 이 글자를 명령으로도 변수로도 읽지 못해 식이 깨진다.\n\n기존 검사 여섯 가지가 이것을 잡지 못한다. render-check 는 원문의 수식 스팬이 렌더 결과에 남는지만 보므로 통과하고, 4절의 awk 와 grep 넷도 ASCII 패턴만 보므로 통과한다. 29차에 걸린 것은 5번 검사 grep -noE '\\[^a-zA-Z0-9\\\\]_' 의 우연이다. 키릴 е 가 '영숫자가 아닌 문자' 로 잡혀 그 뒤 밑줄이 보고됐다. 즉 바로 뒤에 첨자 밑줄이 없는 자리에 섞이면 여섯 검사 전부를 통과한다.\n\n검사법. 라틴과 모양이 같은 키릴·그리스 문자를 코드포인트로 거른다. 키릴 소문자 а е о р с у х і(U+0430 0435 043E 0440 0441 0443 0445 0456), 키릴 대문자 А В Е К М Н О Р С Т У Х(U+0410 0412 0415 041A 041C 041D 041E 0420 0421 0422 0423 0425), 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ(U+03BF 0391 0392 0395 0397 0399 039A 039C 039D 039F 03A1 03A4 03A7)를 docs 전체와 README 에서 찾는다. 29차에 전수로 돌려 보고는 둘이고 하나는 오검출이다. transcendental-numbers:98 의 키릴 е 둘은 Gelfond 논문의 학술지명 'Известия Академии наук СССР' 안이라 정상이다. 따라서 검사 결과는 키릴 문자가 든 줄이 러시아어 문헌 표기인지만 보면 판정된다. 그리스 문자는 수식에서 \\alpha 꼴 명령으로 쓰므로 본문에 직접 오면 대개 사고다.\n\n새 문서나 보강한 문서를 쓴 회차에는 그 문서들만이라도 이 검사를 돌린다. dev/ 스크립트는 고치지 않으므로(0절) 스크래치패드에 python 으로 만들면 된다. 독자가 dev 에 넣을지는 판단이 필요하다.\n\n2026-10-04 30차 회차에 전수로 다시 돌렸다. 범위를 키릴 전체로 넓히면 안 된다. Tate-Shafarevich 군의 표준 기호 Ш(키릴 대문자 Sha, U+0428)가 문서 9 개에서 수식 안 \\text{Ш} 로 정상 사용된다(birch-swinnerton-dyer canonical-height euler-systems heegner-points kolyvagin-logachev kolyvagin-systems poitou-tate selmer-tate-shafarevich 와 그 표). 보고 60 여 줄이 전부 이것이고 실제 사고는 0 건이다. 위 note 가 적은 라틴 혼동 글자 목록(키릴 소문자 а е о р с у х і, 대문자 А В Е К М Н О Р С Т У Х, 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ)으로만 거르면 Ш 는 걸리지 않는다. transcendental-numbers:98 의 러시아어 학술지명도 29차 판정대로 정상이다. 즉 검사는 반드시 그 목록으로 좁혀서 돌리고, 이번 회차 새 문서 셋(lax-milgram ricci-flow gartner-ellis)에 좁힌 검사를 돌려 0 건을 확인했다.\n\n2026-10-05 34차 회차에 pop 이 이 항목을 꺼냈다. p100 상시 메모가 큐 머리에 모여 있어 2절 3단계의 pop 이 작업 아닌 항목을 집는다. 꺼냈으면 같은 제목과 note 로 다시 push 해 되돌리고, 작업은 list 에서 p50 이하의 실제 항목을 골라 remove 로 꺼낸다.",
-      "createdAt": "2026-10-08T00:36:40.180Z",
-      "seq": 1878
-    },
     {
       "id": "74d02178",
       "title": "줄 번호로 문단을 교체하다 헤딩을 덮어쓰는 사고",
@@ -66,6 +50,22 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 32차 회차 시작에서 git pull origin claude/math 가 'Your branch and origin/claude/math have diverged, and have 50 and 50 different commits each' 와 'fatal: Need to specify how to reconcile divergent branches' 로 실패했다. 실제로 갈라진 것이 아니다. 실행 환경이 저장소를 depth 50 으로 shallow clone 하므로 .git/shallow 가 히스토리를 자르고, git 이 공통 조상을 찾지 못해 양쪽을 서로 50 커밋 앞선 것으로 센다. fetch 출력의 'forced update' 표시도 같은 원인이고 원격 히스토리가 다시 쓰인 것이 아니다. 판별법은 git merge-base HEAD origin/claude/math 가 종료코드 1 로 아무것도 내놓지 않는 것이다. 해결은 git fetch --unshallow origin claude/math 를 돌린 뒤 git rev-list --left-right --count HEAD...origin/claude/math 로 확인하는 것이다. 32차에는 0 410 이 나와 로컬이 원격의 조상임이 드러났고 git pull --ff-only 로 끝났다. 커밋을 되돌리거나 git reset --hard 를 쓸 자리가 아니다.\n\n2026-10-05 33차 회차에도 같은 증상이 났다. 로컬 HEAD 가 06f789e(queue: 312 items, 2026-09-30), 원격이 e8faf21(queue: 350 items, 2026-10-05) 이고 양쪽이 서로 50 커밋 앞선 것으로 보고됐다. 이 회차는 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 사후에 --unshallow 를 돌려 git rev-list --left-right --count 06f789e...origin/claude/math 가 0 425 를 내놓아 잃은 커밋이 없음을 확인했으나, 순서가 거꾸로였다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 --unshallow 와 rev-list 로 조상관계를 확인한다. 큐 메모는 1절의 queue list 단계에서 읽히므로, pull 실패는 그 단계 앞에 오는 점도 이 사고가 되풀이되는 이유다.\n\n2026-10-05 34차 회차에도 같은 증상이 났다(로컬 06f789e, 원격 99023a4, 서로 50 커밋). 이 회차는 실행 환경의 권한 분류기가 git reset --hard, git merge -X theirs --allow-unrelated-histories, 충돌 파일의 git checkout --theirs 를 전부 'Irreversible Local Destruction' 으로 거부했다. 즉 33차가 쓴 reset --hard 는 이제 쓸 수 없고, --unshallow 가 우회가 아니라 유일하게 통하는 첫 수다. 거부를 받고 돌아와 이 메모를 읽은 뒤 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌려 0 433 을 얻고 git pull --ff-only 로 끝냈다. 저장소를 다른 곳에 새로 클론할 필요도 없다. 순서는 하나다. pull 이 divergent 로 실패하면 git merge-base 로 공통 조상이 없음을 확인하고, 곧바로 --unshallow 와 rev-list 를 돌린다.\n\n2026-10-07 35차 회차에도 같은 증상이 났다(로컬 4e30b1b, 원격 3eb4a47, 서로 50 커밋, fetch 가 'forced update' 표시). 이 회차도 33차처럼 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 34차가 거부된 그 조작이 이번에는 통과했으므로 권한 분류기에 의존해 사고를 막을 수 없다. 사전에 git diff --name-status 로 로컬에만 있는 파일이 0 이고 원격이 문서 32 개를 더 가진 상위 집합임을 확인한 뒤 실행했고, 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 '0 60' 을 내놓아 잃은 커밋이 없음을 확인했다. 그래도 순서는 거꾸로였다. 되풀이되는 이유는 이 메모가 1절의 queue list 단계에서 읽히고 pull 실패는 그 앞에 온다는 것이다. 33차와 35차가 reset 을 썼고 34차는 거부된 뒤 정규 경로로 갔으니 그 회차들 모두 같은 자리에서 틀렸다. 독자가 CLAUDE.md 1절의 git pull 줄 옆에 'divergent 로 실패하면 git fetch --unshallow origin claude/math 뒤 git rev-list --left-right --count HEAD...origin/claude/math' 한 줄을 넣을지 판단할 자리다.\n2026-10-09 38차 회차에도 같은 증상이 났다(로컬 4e30b1b 'queue: 355 items', 원격 6cb96ce 'queue: 423 items', fetch 가 'forced update' 를 찍고 서로 50 커밋). 이 회차도 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다(34차와 달리 권한 분류기가 막지 않았다). 다만 reset 앞에 git diff --name-status HEAD origin/claude/math 를 돌려 D(삭제) 항목이 0 이고 A 78 M 169 뿐임을 확인한 뒤였으므로 문서 손실은 없었다. 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 0 136 을 내놓아 로컬이 원격의 조상임이 확인됐다.\n\n33차, 34차, 35차, 38차, 39차 다섯 번 되풀이되었다. 되풀이의 원인은 메모가 큐에 있고 큐는 1절의 queue list 단계에서 읽히는데 pull 은 그 앞 단계라는 것이다. 지금으로서 확실한 대비는 하나다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌린다. 0 N 이면 git pull --ff-only 로 끝난다. reset --hard 를 쓰기 전에 적어도 git diff --name-status HEAD origin/claude/math 로 D 항목이 없음을 확인한다.\n2026-10-10 39차 회차에도 같은 증상이 났다(로컬 4e30b1b 'queue: 355 items', 원격 a2c1c05 'queue: 455 items', fetch 가 'forced update' 를 찍고 서로 50 커밋). 이번 회차는 reset --hard 앞에 git merge-base HEAD origin/claude/math 를 돌렸는데 xargs git log 로 이어 쓴 탓에 빈 출력이 HEAD 로그로 바뀌어 '공통 조상이 HEAD' 로 잘못 읽었다. 이어 git merge --ff-only 가 'refusing to merge unrelated histories' 로 거부해 공통 조상이 없음이 드러났다. merge-base 는 반드시 단독으로 돌리고 종료코드를 본다. 그 뒤 git ls-tree -r --name-only 로 docs 수를 견주어(로컬 639, 원격 753) 원격이 상위 집합임을 확인하고 reset --hard 를 썼으므로 문서 손실은 없었다. 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 0 186 을 내놓아 로컬이 원격의 조상임이 확인됐다. 33차, 34차, 35차, 38차, 39차 다섯 번째다. 순서는 그대로다. pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 --unshallow 와 rev-list 를 돌린다.",
       "createdAt": "2026-10-10T00:55:36.878Z",
       "seq": 2004
+    },
+    {
+      "id": "9bab7237",
+      "title": "replaceSection 류 절 단위 교체가 문서 끝 태그 줄을 덮는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 37차에 '## 더 알아보기' 절을 헤딩 기준으로 교체하는 node 스크립트를 썼다. 절의 끝을 '다음 H1 또는 H2 까지' 로 잡았는데 '## 더 알아보기' 는 문서의 마지막 H2 이므로 끝이 파일 끝이 되고, 그 사이에 있는 태그 줄(#probability #analysis)이 교체문에 덮여 사라졌다. ito-calculus 와 ordinary-differential-equations 둘에서 났다. '## 선수지식' 교체는 뒤에 '## 더 알아보기' 가 있어 무사했다. 검사 여섯과 render-check, order-check 는 이것을 전혀 잡지 못한다. graph.mjs validate 도 통과한다(간선은 링크 줄만 읽는다). 잡아낸 것은 tail -2 로 끝부분을 눈으로 본 것이고, graph.mjs tags 의 'N untagged' 수치로도 드러난다. 규칙 둘. (1) 문서 마지막 절을 교체하는 스크립트는 태그 줄을 절 범위에서 빼거나, 교체문 끝에 태그 줄을 함께 적는다. (2) 스크립트로 docs 를 고친 회차에는 커밋 전에 'node dev/graph.mjs tags | tail -1' 로 untagged 가 0 인지 보고, 고친 문서마다 'tail -2 docs/<id>.md' 로 태그 줄이 남았는지 확인한다.",
+      "createdAt": "2026-10-10T04:37:28.938Z",
+      "seq": 2010
+    },
+    {
+      "id": "b50bb0c8",
+      "title": "수식에 라틴 문자와 혼동되는 키릴·그리스 문자가 섞이는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 29차 회차에 jones-wenzl-idempotents 를 쓰다 개요의 $$ 블록에서 e_i 의 e 가 키릴 소문자 е(U+0435)로 들어갔다. 원문을 눈으로 보면 라틴 e 와 구별되지 않고 MathJax 는 이 글자를 명령으로도 변수로도 읽지 못해 식이 깨진다. 기존 검사 여섯 가지가 이것을 잡지 못한다. 검사법은 라틴과 모양이 같은 글자만 코드포인트로 거르는 것이다. 키릴 소문자 а е о р с у х і(U+0430 0435 043E 0440 0441 0443 0445 0456), 키릴 대문자 А В Е К М Н О Р С Т У Х(U+0410 0412 0415 041A 041C 041D 041E 0420 0421 0422 0423 0425), 그리스 ο Α Β Ε Η Ι Κ Μ Ν Ο Ρ Τ Χ(U+03BF 0391 0392 0395 0397 0399 039A 039C 039D 039F 03A1 03A4 03A7). 범위를 키릴 전체로 넓히면 안 된다. Tate-Shafarevich 군의 기호 Ш(U+0428)가 문서 9 개에서 정상 사용되고 transcendental-numbers 의 러시아어 학술지명도 정상이다. 새 문서나 보강한 문서를 쓴 회차에는 그 문서들에 좁힌 검사를 돌린다. 34차와 41차에 pop 이 이 항목을 꺼냈다. p100 상시 메모가 큐 머리에 모여 있어 2절 3단계의 pop 이 작업 아닌 항목을 집는다. 꺼냈으면 같은 제목과 note 로 다시 push 해 되돌리고, 작업은 list 에서 p50 이하의 실제 항목을 골라 remove 로 꺼낸다.",
+      "createdAt": "2026-10-10T04:37:44.279Z",
+      "seq": 2011
     },
     {
       "id": "08e59419",
@@ -650,6 +650,30 @@
       "note": "2026-10-10 39차 회차에 '로의 ' 를 전수로 세어 191 건이다. 뒤에 오는 단어의 분포는 확장 13, 제한 6, 사영·정사영 6, 속도장 3, 환원 2 순이다(LC_ALL=C.UTF-8 grep -oP '로의 \\\\S+' 로 세어야 한다. 기본 로케일에서는 grep -oE 가 Invalid collation character 로 죽는다). 이 회차에 '로의 확장' 13 건의 문맥을 전부 보고 판정했다. 헤딩은 교정 대상이 아니다('## 연속사상으로의 확장', '## $L^2$ 로의 확장', '## 반순서집합으로의 확장', '## Polish 공간으로의 확장', '## 세는 문제로의 확장'). 4절 헤딩 규칙이 명사구를 요구하고, '로 넓히는 확장' 으로 풀면 더 길어진다. 각주 안의 문헌 설명과 개관 갈래의 한 줄 설명도 명사구라 그대로 둔다. 교정 대상은 본문의 서술 문장뿐이고 이 회차에 spectral-theorem 125 를 고쳤다('무한차원으로의 확장은 ~ 이어지며, ~ 생긴다' -> '무한차원으로 넓히면 ~ 나온다. ~ 생긴다'. 4절이 금지하는 '~며' 연결도 함께 끊었다). 다음 차수에 볼 것: '로의 제한', '로의 사영', '로의 환원' 세 묶음. 같은 기준으로 헤딩과 명사구 설명은 두고 서술 문장만 고친다. 'A 로의 사상' 꼴은 'A 로 가는 사상' 으로 고치면 된다.",
       "createdAt": "2026-10-10T01:03:23.628Z",
       "seq": 2009
+    },
+    {
+      "id": "0438332a",
+      "title": "Sauer-Shelah 보조정리의 증명 판정",
+      "priority": 20,
+      "note": "2026-10-10 회차에 vc-dimension 의 '성질' 절에 Sauer-Shelah 를 이중 귀납법 요지로 두 문단 안에 적었다. 4절은 증명이 두 문단을 넘으면 별도 문서 후보라 한다. 지금은 한 문단이고 Pascal 관계까지만 적었으므로 분리하지 않는다고 판정했다. 다음 차수에 확인할 것: 하향 압축(down-shifting) 증명을 더해 두 판본을 나란히 두면 두 문단을 넘기므로, 그때 sauer-shelah 를 별도 문서로 떼고 vc-dimension 의 자식으로 단다.",
+      "createdAt": "2026-10-10T04:49:29.912Z",
+      "seq": 2016
+    },
+    {
+      "id": "f69eedf9",
+      "title": "Gauss 과정과 재생핵 Hilbert 공간의 간선 판정 (완료)",
+      "priority": 20,
+      "note": "2026-10-10 회차에 판정했다. 간선을 더하지 않는다. gaussian-processes 는 공분산핵의 대칭성과 양의 준정부호성을 정의 절에서 직접 세우고, 유효성 판정을 Kolmogorov 확장정리와 Bochner 정리로 끝낸다(23~27줄). 재생핵 Hilbert 공간을 읽지 않아도 문서 전체가 읽히므로 5절의 '부모를 읽지 않으면 자식을 이해할 수 없어야 한다' 를 만족하지 않는다. reproducing-kernel-hilbert-space 의 활용 절에서 Gauss 과정을 본문 링크로 가리키는 것으로 충분하다(4절: 다른 문서에 있을 법한 개념은 본문에서 최초 1회 링크). 다시 볼 조건: 핵 능형회귀나 Gauss 과정 회귀의 사후평균이 rkhs 노름의 최소화해라는 대응을 다루는 문서가 생기면, 그 문서가 두 쪽의 자식이 되는 것이 간선을 더하는 것보다 낫다.",
+      "createdAt": "2026-10-10T05:00:19.305Z",
+      "seq": 2023
+    },
+    {
+      "id": "aa13bf1c",
+      "title": "기계학습 개관의 갈래 재편 판단",
+      "priority": 20,
+      "note": "2026-10-10 회차에 기계학습 문서를 다섯 더했다(rademacher-complexity, vc-dimension, support-vector-machine, kernel-ridge-regression, 그리고 통계 쪽 glivenko-cantelli). '최적화와 일반화' 갈래가 경사하강법, 집중부등식, Rademacher 복잡도, VC 차원, 서포트 벡터 머신으로 다섯 줄이 되었고 최적화와 일반화가 한 갈래에 섞여 있다. 다음 차수에 판단할 것: 갈래를 '최적화' 와 '일반화 이론' 둘로 나눌지. 나누면 README 갈래 목록은 그대로이고(개관 하나) 개관 안의 H2 만 늘어난다. 4.5절은 소분야마다 H2 하나를 두라고 하므로 나누는 쪽이 규격에 맞다. 나눌 때 경사하강법과 적응 경사법, 근접 경사법이 최적화 쪽으로 가는지 확인한다(지금 '최적화와 일반화' 에 경사하강법만 있고 나머지는 최적화 개관이 거둔다).",
+      "createdAt": "2026-10-10T05:04:42.717Z",
+      "seq": 2025
     },
     {
       "id": "410fd79d",
@@ -2716,6 +2740,54 @@
       "seq": 2005
     },
     {
+      "id": "7bd7ef61",
+      "title": "Rademacher 복잡도의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-10 회차에 rademacher-complexity 를 새로 썼다(130줄, 부모 concentration-inequalities 하나, 기계학습 개관 '최적화와 일반화' 갈래에서 집중부등식 다음 줄). 리프다. 후속 후보 셋. (1) VC 차원과 성장함수. 같은 회차에 별도 항목으로 큐에 넣었고 이 문서의 가장 가까운 후속이다. (2) chaining 과 Dudley 적분. 활용 절 '경험 과정의 상한' 에서 이름만 썼고 Massart 보조정리가 합집합 경계로 지는 자리를 덮는다. 부모를 rademacher-complexity 와 gaussian-processes 둘로 할 수 있다. (3) 마진 기반 부스팅 경계. 활용 절 '마진 기반 분류' 가 선형류까지만 가고 AdaBoost 의 마진 이론으로 이어진다. 문서가 생기면 더 알아보기를 채운다.",
+      "createdAt": "2026-10-10T04:45:35.627Z",
+      "seq": 2013
+    },
+    {
+      "id": "d315b389",
+      "title": "VC 차원의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-10 회차에 vc-dimension 을 새로 썼다(122줄, 부모 rademacher-complexity 하나, 기계학습 개관 '최적화와 일반화' 갈래에서 Rademacher 복잡도 다음 줄). 리프다. 후속 후보 넷. (1) Glivenko-Cantelli 정리와 경험 분포함수. 활용 절 '경험 분포의 수렴' 이 이름만 쓰고 문서가 없다. 부모를 vc-dimension 과 law-of-large-numbers 둘로 할 수 있다. (2) epsilon-net 과 범위 공간. 활용 절 '범위 공간과 epsilon-근사' 가 정의 없이 결과만 적었다. 이산기하 쪽이고 조합론 태그가 주 분야가 될 수 있다. (3) NIP 이론. 활용 절의 모형이론 항목. 부모를 vc-dimension 과 model-theory 둘로. stable-theories 에 NIP 언급이 없어 그쪽 보강도 같은 작업이다. (4) PAC 학습의 기본 정리. 활용 절 'PAC 학습 가능성' 이 동치 넷을 한 문장으로 적었고 각 동치의 증명이 별도 문서가 될 만하다.",
+      "createdAt": "2026-10-10T04:49:29.770Z",
+      "seq": 2015
+    },
+    {
+      "id": "11e38a05",
+      "title": "Glivenko-Cantelli 정리의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-10 회차에 glivenko-cantelli 를 새로 썼다(103줄, 부모 vc-dimension 하나, 통계 개관 '추정' 갈래 첫 줄). 리프다. 후속 후보 셋. (1) Donsker 정리와 Brown 다리. 성질 절 '수렴 속도' 가 극한분포 공식까지 적었는데 brownian-bridge 문서가 없어 Brown 다리를 brownian-motion 에서 B_t - tB_1 로 얻는다고만 썼다. 부모를 glivenko-cantelli 와 brownian-motion 둘로. (2) 붓스트랩. 활용 절 '분포의 대체' 가 근거만 적었고 bootstrap 문서가 없다. 재표집, 붓스트랩 신뢰구간, 일치성 조건. (3) Kolmogorov-Smirnov 검정. 활용 절 '적합도 검정' 을 떼어 검정 쪽 문서로. hypothesis-testing 과 glivenko-cantelli 를 부모로.",
+      "createdAt": "2026-10-10T04:53:09.201Z",
+      "seq": 2017
+    },
+    {
+      "id": "7b577733",
+      "title": "서포트 벡터 머신의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-10 회차에 support-vector-machine 을 새로 썼다(110줄, 부모 lagrange-duality 와 rademacher-complexity 둘, 기계학습 개관 '최적화와 일반화' 갈래에서 VC 차원 다음 줄). 리프다. 후속 후보 셋. (1) 재생핵 Hilbert 공간과 표현자 정리. 성질 절 '커널 치환' 이 양의 준정부호 핵만 말하고 특징 사상과 표현자 정리를 적지 않았다. kernel-pca 도 같은 구조를 쓰므로 두 문서의 공통 선수지식이 된다. 부모를 hilbert-spaces 로. (2) 부스팅과 마진 이론. 힌지 손실 상한의 다른 예이고 AdaBoost 의 마진 분포 경계가 Rademacher 복잡도로 설명된다. (3) 열미분과 근접 작용소. 힌지 손실 절이 '미분 불가능한 자리에서는 열미분을 쓴다' 고만 적었다. proximal-gradient-method 가 있으니 그쪽과 묶을 수 있다.",
+      "createdAt": "2026-10-10T04:56:11.754Z",
+      "seq": 2019
+    },
+    {
+      "id": "f310eaea",
+      "title": "재생핵 Hilbert 공간의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-10 회차에 reproducing-kernel-hilbert-space 를 새로 썼다(117줄, 부모 hilbert-spaces 하나, 함수해석 개관 '공간' 갈래 마지막 줄). 자식은 kernel-pca 하나를 달았다(kernel-pca 의 부모가 principal-component-analysis 하나였고 이제 둘이다). 같은 회차에 hilbert-spaces 의 더 알아보기가 6 개가 되어 묶음 셋으로 나눴다: '직교계와 전개'(fourier-series, peter-weyl, spherical-harmonics), '작용소'(bounded-operators), '다른 분야에서의 쓰임'(lax-milgram, reproducing-kernel-hilbert-space). 후속 후보 셋. (1) 핵 평균 매장과 두 표본 검정. 활용 절 '분포의 매장' 이 MMD(maximum mean discrepancy)를 이름 없이 한 문장으로 적었다. (2) Nystrom 근사와 랜덤 특징. 핵 행렬이 n 제곱이라 큰 표본에서 쓰지 못하는 자리. 큐에 이미 'Nystrom 법과 적분방정식의 이산화'(p3)가 있고 적분방정식 쪽이라 다른 문서다. (3) 핵 능형회귀. 표현자 정리의 가장 단순한 예이고 선형회귀와 rkhs 를 잇는다.",
+      "createdAt": "2026-10-10T04:59:47.961Z",
+      "seq": 2021
+    },
+    {
+      "id": "7620b18f",
+      "title": "핵 능형회귀의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-10 회차에 kernel-ridge-regression 을 새로 썼다(90줄, 부모 linear-regression 과 reproducing-kernel-hilbert-space 둘, 기계학습 개관 '표현과 차원 축소' 갈래에서 커널 PCA 다음 줄). 리프다. 후속 후보 셋. (1) 핵 행렬의 저계수 근사. 활용 절 '비선형 회귀' 가 n 세제곱 비용과 저계수 근사를 한 문장으로 적었다. Nystrom 법과 랜덤 Fourier 특징이 내용이고 큐의 'Nystrom 법과 적분방정식의 이산화'(p3)는 적분방정식 쪽이라 다른 문서다. (2) 유효 자유도와 평활 작용소. 성질 절 '평활 작용소' 를 떼어 평활 스플라인까지 묶는다. (3) 핵 능형회귀의 학습률. 핵 행렬의 고윳값 감소 속도로 수렴률을 적는 쪽이고 rademacher-complexity 의 복잡도 경계와 다른 길이다.",
+      "createdAt": "2026-10-10T05:04:42.544Z",
+      "seq": 2024
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -2978,6 +3050,14 @@
       "note": "대수. 표수 p 체의 차수 p^m 순환확대를 길이 m Witt 벡터의 Artin-Schreier 사상으로 분류한다. artin-schreier-theory 의 '차수 p^m 순환확대' 절이 이름만 쓰고 정의를 주지 않는다. 부모 후보는 artin-schreier-theory 하나. 쓸 내용: 표수 p 의 Witt 벡터 W(k) 와 Witt 덧셈 다항식, F-1 의 성분별 확장, 지수 p^m 아벨 확대와 W_m(K)/(F-1)W_m(K) 의 대응, p 진 코호몰로지와의 연결. 주의: witt-ring 은 이차형식의 Witt 환이므로 id 가 겹치지 않게 witt-vectors 로 잡는다.",
       "createdAt": "2026-10-09T00:45:46.925Z",
       "seq": 1936
+    },
+    {
+      "id": "11bd6599",
+      "title": "경험 과정",
+      "priority": 8,
+      "note": "statistics 또는 probability. 2026-10-10 회차에 rademacher-complexity 와 glivenko-cantelli 를 쓰며 두 문서가 같은 대상을 각자 부분적으로 말하는 것이 드러났다. rademacher-complexity 의 활용 절 '경험 과정의 상한' 과 glivenko-cantelli 의 '수렴 속도' 가 둘 다 sqrt(n)(F_n - F) 꼴을 다루지만 경험 과정 자체의 정의가 어느 문서에도 없다. 내용 후보: 지표를 가진 확률과정으로서의 정의, Glivenko-Cantelli 족과 Donsker 족의 구분, chaining 과 Dudley 적분, 묶음수(bracketing) 조건. 부모를 glivenko-cantelli 와 rademacher-complexity 둘로 할 수 있고 둘 사이에 조상관계가 있는지 check-cycle 로 먼저 본다(glivenko-cantelli 의 부모가 vc-dimension 이고 그 부모가 rademacher-complexity 이므로 조상관계가 있다. 그러면 부모는 glivenko-cantelli 하나다).",
+      "createdAt": "2026-10-10T04:53:09.331Z",
+      "seq": 2018
     },
     {
       "id": "fb947ff9",
