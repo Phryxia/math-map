@@ -8,7 +8,7 @@ $$
 \psi:\ W_F\times\mathrm{SL}\_2(\mathbb C)\times\mathrm{SL}\_2(\mathbb C)\longrightarrow{}^LG
 $$
 
-[Vogan 꾸러미](vogan-packets.md)의 L 매개변수 $\varphi:W_F\times\mathrm{SL}\_2(\mathbb C)\to{}^LG$ 는 템퍼드 표현에서 작동하지만 잔여 스펙트럼에 사는 비템퍼드 표현을 놓친다. 첫째 $\mathrm{SL}\_2$ 는 국소 분기 정보(Deligne 의 멱단 부분)를 담고, 둘째 $\mathrm{SL}\_2$ 가 비템퍼드성을 담는다. 둘째가 자명하면 템퍼드로 돌아오고, 자명하지 않으면 그만큼 Satake 매개변수가 유니터리 축에서 밀려난다.
+[Vogan L 꾸러미](vogan-packets.md)의 L 매개변수 $\varphi:W_F\times\mathrm{SL}\_2(\mathbb C)\to{}^LG$ 는 템퍼드 표현에서 작동하지만 잔여 스펙트럼에 사는 비템퍼드 표현을 놓친다. 첫째 $\mathrm{SL}\_2$ 는 국소 분기 정보(Deligne 의 멱단 부분)를 담고, 둘째 $\mathrm{SL}\_2$ 가 비템퍼드성을 담는다. 둘째가 자명하면 템퍼드로 돌아오고, 자명하지 않으면 그만큼 Satake 매개변수가 유니터리 축에서 밀려난다.
 
 이 매개변수가 정의하는 **Arthur 꾸러미** $\Pi_\psi$ 는 L 꾸러미보다 크고 성질이 미묘하다. 그 대가로 전역 **중복도 공식**을 얻는다. 자기동형 표현이 이산 스펙트럼에 나타나는 횟수가 국소 지표들의 곱 하나로 결정된다.
 
