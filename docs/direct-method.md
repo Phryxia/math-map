@@ -52,7 +52,7 @@ $J$ 가 볼록이고 노름 위상에서 하반연속이면 순차 약하반연�
 
 ## 적분 범함수의 조건
 
-$J\lbrack u\rbrack=\int_\Omega F(x,u,\nabla u)\thinspace dx$ 에서 $F$ 가 매개변수 $\xi$ 에 대해 볼록이고 아래로 적분가능한 함수에 의해 눌리면 $J$ 는 $W^{1,p}(\Omega)$ 에서 순차 약하반연속이다[^2]. 증명의 요지는 볼록성 부등식
+$J\lbrack u\rbrack=\int_\Omega F(x,u,\nabla u)\thinspace dx$ 에서 $F$ 가 매개변수 $\xi$ 에 대해 볼록이고 적분가능한 함수 하나가 $F$ 를 아래에서 받치면 $J$ 는 $W^{1,p}(\Omega)$ 에서 순차 약하반연속이다[^2]. 증명의 요지는 볼록성 부등식
 
 $$
 F(x,u,\xi)\ge F(x,u,\eta)+\partial_\xi F(x,u,\eta)\cdot(\xi-\eta)

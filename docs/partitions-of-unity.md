@@ -28,7 +28,7 @@ $M$ 을 매끄러운 다양체, $\lbrace U\_\alpha\rbrace\_{\alpha\in A}$ 를 $M
 2. 각 점에 근방이 있어 그 근방과 만나는 $\mathrm{supp}\thinspace\rho\_\alpha$ 가 유한 개다.
 3. 모든 $x\in M$ 에서 $\sum\_\alpha\rho\_\alpha(x)=1$ 이다.
 
-조건 2 에 의해 조건 3 의 합은 각 점에서 유한합이다.
+조건 2 가 조건 3 의 합을 각 점에서 유한합으로 만든다.
 
 # 성질
 
