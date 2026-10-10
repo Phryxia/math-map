@@ -90,6 +90,6 @@ $e_0$ 과 $e_1$ 만으로는 판정이 성립하지 않는다. $Lf(x)=f(0)(1-x)+
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Fejér 핵](fejer-kernel.md)
 
 #analysis #functional_analysis #probability
