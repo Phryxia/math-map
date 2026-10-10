@@ -84,7 +84,7 @@ $\delta J=0$ 은 극값의 필요조건일 뿐이다. 이차 변분의 부호가
 
 ## 직접법
 
-Euler–Lagrange 방정식을 풀지 않고 최소점의 존재를 먼저 보이는 방법이다. 최소화열을 잡고, 범함수가 아래로 유계이며 약하게 하반연속이고 정의역이 약콤팩트이면 극한이 최소점이다. 이 논증은 [Banach 공간](banach-spaces.md)의 약수렴을 쓴다.
+[변분법의 직접법](direct-method.md)은 Euler–Lagrange 방정식을 풀지 않고 최소점의 존재를 먼저 보이는 방법이다. 최소화열을 잡고, 범함수가 아래로 유계이며 약하게 하반연속이고 정의역이 약콤팩트이면 극한이 최소점이다. 이 논증은 [Banach 공간](banach-spaces.md)의 약수렴을 쓴다.
 
 # 활용
 
@@ -101,8 +101,14 @@ Euler–Lagrange 방정식을 풀지 않고 최소점의 존재를 먼저 보이
 
 ## 더 알아보기
 
+### 방법과 구조
+
+- [변분법의 직접법](direct-method.md)
 - [Hamilton 역학](hamiltonian-mechanics.md)
 - [Noether 정리](noether-theorem.md)
+
+### 고전적인 최소화 문제
+
 - [최단강하선 문제](brachistochrone.md)
 - [현수선](catenary.md)
 - [등주부등식](isoperimetric-inequality.md)
