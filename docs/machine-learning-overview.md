@@ -15,6 +15,11 @@
 ```mermaid
 graph TD
   MLO["기계학습 개관"] --> GD["경사하강법"]
+  CI["집중부등식"] --> RC["Rademacher 복잡도"]
+  RC --> VC["VC 차원"]
+  VC --> GC["Glivenko-Cantelli 정리"]
+  RC --> SVM["서포트 벡터 머신"]
+  LD["Lagrange 쌍대성"] --> SVM
   CVX["볼록성"] --> GD
   DER["미분"] --> GD
   GD --> VAE["변분 오토인코더"]
