@@ -43,7 +43,7 @@ AC 가 셋을 모두 함의하고, DC 가 $\mathrm{AC}\_\omega$ 를 함의한다
 | UL | Hausdorff 공간의 Tychonoff 정리, Hahn–Banach 정리, 모든 체의 대수적 폐포의 유일성 |
 | AC | Zorn 보조정리, 모든 벡터공간의 기저, Vitali 집합과 Banach–Tarski 분해 |
 
-[Baire 범주 정리](baire-category.md)가 DC 를 쓰는 것은 중첩된 공을 고르는 단계가 앞 단계에 달려 있기 때문이다. [Hahn–Banach 정리](banach-spaces.md)는 UL 보다 약간 약한 세기이고 ZF 만으로는 증명되지 않는다.
+[Baire 범주 정리](baire-category.md)가 DC 를 쓰는 것은 중첩된 공을 고르는 단계가 앞 단계에 달려 있기 때문이다. [Hahn–Banach 정리](hahn-banach-theorem.md)는 UL 보다 약간 약한 세기이고 ZF 만으로는 증명되지 않는다.
 
 ## Solovay 모형
 
