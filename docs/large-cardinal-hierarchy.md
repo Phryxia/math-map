@@ -64,7 +64,7 @@ $A\subseteq V_\kappa$ 와 서수 $\gamma$ 를 둔다. 기본 매장 $j\colon V\t
 
 **정리.** Woodin 기수는 Mahlo 다. 가장 작은 Woodin 기수는 약콤팩트가 아니고, 따라서 측도 가능이 아니다[^2].
 
-Woodin 기수 $\kappa$ 아래에는 측도 가능 기수의 정상집합이 있고 측도 가능 기수는 도달 불가능이므로 $\kappa$ 는 Mahlo 다.
+Woodin 기수는 함수 $f\colon\kappa\to\kappa$ 마다 $f\lbrack\lambda\rbrack\subseteq\lambda$ 인 $\lambda\lt \kappa$ 와 $\mathrm{crit}(j)=\lambda$ , $V_{j(f)(\lambda)}\subseteq M$ 인 기본 매장 $j\colon V\to M$ 이 있는 기수로도 특성화된다[^2]. $C\subseteq\kappa$ 를 닫힌 비유계 집합이라 하고 $f(\alpha)=\min(C\setminus(\alpha+1))$ 로 두면 그런 $\lambda$ 와 $j$ 가 있다. $\mathrm{crit}(j)=\lambda$ 인 기본 매장이 있으므로 $\lambda$ 는 측도 가능이고, $f\lbrack\lambda\rbrack\subseteq\lambda$ 에서 $C\cap\lambda$ 가 $\lambda$ 에 공종이므로 $C$ 가 닫힌 데서 $\lambda\in C$ 가 나온다. 측도 가능 기수 전체가 $\kappa$ 의 닫힌 비유계 집합과 모두 만나 정상집합이고, 측도 가능 기수는 도달 불가능이므로 $\kappa$ 는 Mahlo 다.
 
 $\kappa$ 가 Woodin 이라는 조건은 $V_\kappa$ 의 부분집합에 대한 전칭 양화 하나와 $V_\kappa$ 안의 1계 조건으로 쓰이므로 $V_\kappa$ 위의 $\mathbf\Pi^1\_1$ 논리식이다. 약콤팩트성은 $\mathbf\Pi^1\_1$ 논리식의 반사와 동치여서, $\kappa$ 가 Woodin 이고 약콤팩트이면 어떤 $\alpha\lt \kappa$ 의 $V_\alpha$ 가 같은 논리식을 만족하고 그 $\alpha$ 가 Woodin 기수다. 그러면 $\kappa$ 는 가장 작은 Woodin 기수가 아니다. 측도 가능이면 약콤팩트이므로 가장 작은 Woodin 기수는 측도 가능도 아니다. ∎
 
