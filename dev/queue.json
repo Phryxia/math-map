@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-09T20:59:50.874Z",
-  "nextSeq": 2001,
+  "savedAt": "2026-10-10T01:04:13.841Z",
+  "nextSeq": 2010,
   "items": [
     {
       "id": "1d4e9a24",
@@ -44,14 +44,6 @@
       "seq": 1922
     },
     {
-      "id": "4eca3d6b",
-      "title": "저장소의 shallow clone 때문에 세션 시작 git pull 이 divergent 로 실패하는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 32차 회차 시작에서 git pull origin claude/math 가 'Your branch and origin/claude/math have diverged, and have 50 and 50 different commits each' 와 'fatal: Need to specify how to reconcile divergent branches' 로 실패했다. 실제로 갈라진 것이 아니다. 실행 환경이 저장소를 depth 50 으로 shallow clone 하므로 .git/shallow 가 히스토리를 자르고, git 이 공통 조상을 찾지 못해 양쪽을 서로 50 커밋 앞선 것으로 센다. fetch 출력의 'forced update' 표시도 같은 원인이고 원격 히스토리가 다시 쓰인 것이 아니다. 판별법은 git merge-base HEAD origin/claude/math 가 종료코드 1 로 아무것도 내놓지 않는 것이다. 해결은 git fetch --unshallow origin claude/math 를 돌린 뒤 git rev-list --left-right --count HEAD...origin/claude/math 로 확인하는 것이다. 32차에는 0 410 이 나와 로컬이 원격의 조상임이 드러났고 git pull --ff-only 로 끝났다. 커밋을 되돌리거나 git reset --hard 를 쓸 자리가 아니다.\n\n2026-10-05 33차 회차에도 같은 증상이 났다. 로컬 HEAD 가 06f789e(queue: 312 items, 2026-09-30), 원격이 e8faf21(queue: 350 items, 2026-10-05) 이고 양쪽이 서로 50 커밋 앞선 것으로 보고됐다. 이 회차는 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 사후에 --unshallow 를 돌려 git rev-list --left-right --count 06f789e...origin/claude/math 가 0 425 를 내놓아 잃은 커밋이 없음을 확인했으나, 순서가 거꾸로였다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 --unshallow 와 rev-list 로 조상관계를 확인한다. 큐 메모는 1절의 queue list 단계에서 읽히므로, pull 실패는 그 단계 앞에 오는 점도 이 사고가 되풀이되는 이유다.\n\n2026-10-05 34차 회차에도 같은 증상이 났다(로컬 06f789e, 원격 99023a4, 서로 50 커밋). 이 회차는 실행 환경의 권한 분류기가 git reset --hard, git merge -X theirs --allow-unrelated-histories, 충돌 파일의 git checkout --theirs 를 전부 'Irreversible Local Destruction' 으로 거부했다. 즉 33차가 쓴 reset --hard 는 이제 쓸 수 없고, --unshallow 가 우회가 아니라 유일하게 통하는 첫 수다. 거부를 받고 돌아와 이 메모를 읽은 뒤 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌려 0 433 을 얻고 git pull --ff-only 로 끝냈다. 저장소를 다른 곳에 새로 클론할 필요도 없다. 순서는 하나다. pull 이 divergent 로 실패하면 git merge-base 로 공통 조상이 없음을 확인하고, 곧바로 --unshallow 와 rev-list 를 돌린다.\n\n2026-10-07 35차 회차에도 같은 증상이 났다(로컬 4e30b1b, 원격 3eb4a47, 서로 50 커밋, fetch 가 'forced update' 표시). 이 회차도 33차처럼 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 34차가 거부된 그 조작이 이번에는 통과했으므로 권한 분류기에 의존해 사고를 막을 수 없다. 사전에 git diff --name-status 로 로컬에만 있는 파일이 0 이고 원격이 문서 32 개를 더 가진 상위 집합임을 확인한 뒤 실행했고, 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 '0 60' 을 내놓아 잃은 커밋이 없음을 확인했다. 그래도 순서는 거꾸로였다. 되풀이되는 이유는 이 메모가 1절의 queue list 단계에서 읽히고 pull 실패는 그 앞에 온다는 것이다. 33차와 35차가 reset 을 썼고 34차는 거부된 뒤 정규 경로로 갔으니 그 회차들 모두 같은 자리에서 틀렸다. 독자가 CLAUDE.md 1절의 git pull 줄 옆에 'divergent 로 실패하면 git fetch --unshallow origin claude/math 뒤 git rev-list --left-right --count HEAD...origin/claude/math' 한 줄을 넣을지 판단할 자리다.\n2026-10-09 38차 회차에도 같은 증상이 났다(로컬 4e30b1b 'queue: 355 items', 원격 6cb96ce 'queue: 423 items', fetch 가 'forced update' 를 찍고 서로 50 커밋). 이 회차도 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다(34차와 달리 권한 분류기가 막지 않았다). 다만 reset 앞에 git diff --name-status HEAD origin/claude/math 를 돌려 D(삭제) 항목이 0 이고 A 78 M 169 뿐임을 확인한 뒤였으므로 문서 손실은 없었다. 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 0 136 을 내놓아 로컬이 원격의 조상임이 확인됐다.\n\n33차, 34차, 35차, 38차 네 번 되풀이되었다. 되풀이의 원인은 메모가 큐에 있고 큐는 1절의 queue list 단계에서 읽히는데 pull 은 그 앞 단계라는 것이다. 지금으로서 확실한 대비는 하나다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌린다. 0 N 이면 git pull --ff-only 로 끝난다. reset --hard 를 쓰기 전에 적어도 git diff --name-status HEAD origin/claude/math 로 D 항목이 없음을 확인한다.",
-      "createdAt": "2026-10-09T00:37:51.686Z",
-      "seq": 1933
-    },
-    {
       "id": "9443e5ca",
       "title": "문서 분할이 개관 지도 mermaid 의 간선을 어긋나게 하는 사고",
       "priority": 100,
@@ -66,6 +58,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 36차 회차(2026-10-09)에 '역수학 체계 문서의 빈자리' 를 신규 주제로 큐에 넣었는데 reverse-mathematics(107줄, ATR_0 와 큰 다섯 체계를 표로 다룬다)와 second-order-arithmetic 이 이미 있었다. 같은 회차에 앞서 꺼낸 두 항목도 같은 착오였다. 0aaf9d9d 는 coupling 기법 전반을 요청했으나 coupling 문서가 이미 결합 부등식과 Strassen 정리로 다루고, 43d30fef 와 8b50e977 은 자식 후보로 Lax-Milgram 과 타원형 정칙성을 들었으나 lax-milgram 과 elliptic-regularity 가 이미 있었다. 원인은 큐 note 가 작성 당시의 저장소 상태를 적어 둔 것이고 그 뒤 여러 회차가 그 빈자리를 채운다는 것이다. 규칙 둘. (1) 큐 항목을 꺼내 작업을 시작하기 전에 note 가 '저장소에 없다' 고 적은 문서 이름을 'ls docs | grep -iE' 로 전부 확인한다. (2) 새 주제를 큐에 push 하기 전에도 같은 확인을 한다. 저장소가 750 문서라 제목만으로는 있는지 없는지 기억할 수 없다.",
       "createdAt": "2026-10-09T20:48:47.236Z",
       "seq": 1995
+    },
+    {
+      "id": "fcb5a978",
+      "title": "저장소의 shallow clone 때문에 세션 시작 git pull 이 divergent 로 실패하는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 32차 회차 시작에서 git pull origin claude/math 가 'Your branch and origin/claude/math have diverged, and have 50 and 50 different commits each' 와 'fatal: Need to specify how to reconcile divergent branches' 로 실패했다. 실제로 갈라진 것이 아니다. 실행 환경이 저장소를 depth 50 으로 shallow clone 하므로 .git/shallow 가 히스토리를 자르고, git 이 공통 조상을 찾지 못해 양쪽을 서로 50 커밋 앞선 것으로 센다. fetch 출력의 'forced update' 표시도 같은 원인이고 원격 히스토리가 다시 쓰인 것이 아니다. 판별법은 git merge-base HEAD origin/claude/math 가 종료코드 1 로 아무것도 내놓지 않는 것이다. 해결은 git fetch --unshallow origin claude/math 를 돌린 뒤 git rev-list --left-right --count HEAD...origin/claude/math 로 확인하는 것이다. 32차에는 0 410 이 나와 로컬이 원격의 조상임이 드러났고 git pull --ff-only 로 끝났다. 커밋을 되돌리거나 git reset --hard 를 쓸 자리가 아니다.\n\n2026-10-05 33차 회차에도 같은 증상이 났다. 로컬 HEAD 가 06f789e(queue: 312 items, 2026-09-30), 원격이 e8faf21(queue: 350 items, 2026-10-05) 이고 양쪽이 서로 50 커밋 앞선 것으로 보고됐다. 이 회차는 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 사후에 --unshallow 를 돌려 git rev-list --left-right --count 06f789e...origin/claude/math 가 0 425 를 내놓아 잃은 커밋이 없음을 확인했으나, 순서가 거꾸로였다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 --unshallow 와 rev-list 로 조상관계를 확인한다. 큐 메모는 1절의 queue list 단계에서 읽히므로, pull 실패는 그 단계 앞에 오는 점도 이 사고가 되풀이되는 이유다.\n\n2026-10-05 34차 회차에도 같은 증상이 났다(로컬 06f789e, 원격 99023a4, 서로 50 커밋). 이 회차는 실행 환경의 권한 분류기가 git reset --hard, git merge -X theirs --allow-unrelated-histories, 충돌 파일의 git checkout --theirs 를 전부 'Irreversible Local Destruction' 으로 거부했다. 즉 33차가 쓴 reset --hard 는 이제 쓸 수 없고, --unshallow 가 우회가 아니라 유일하게 통하는 첫 수다. 거부를 받고 돌아와 이 메모를 읽은 뒤 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌려 0 433 을 얻고 git pull --ff-only 로 끝냈다. 저장소를 다른 곳에 새로 클론할 필요도 없다. 순서는 하나다. pull 이 divergent 로 실패하면 git merge-base 로 공통 조상이 없음을 확인하고, 곧바로 --unshallow 와 rev-list 를 돌린다.\n\n2026-10-07 35차 회차에도 같은 증상이 났다(로컬 4e30b1b, 원격 3eb4a47, 서로 50 커밋, fetch 가 'forced update' 표시). 이 회차도 33차처럼 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다. 34차가 거부된 그 조작이 이번에는 통과했으므로 권한 분류기에 의존해 사고를 막을 수 없다. 사전에 git diff --name-status 로 로컬에만 있는 파일이 0 이고 원격이 문서 32 개를 더 가진 상위 집합임을 확인한 뒤 실행했고, 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 '0 60' 을 내놓아 잃은 커밋이 없음을 확인했다. 그래도 순서는 거꾸로였다. 되풀이되는 이유는 이 메모가 1절의 queue list 단계에서 읽히고 pull 실패는 그 앞에 온다는 것이다. 33차와 35차가 reset 을 썼고 34차는 거부된 뒤 정규 경로로 갔으니 그 회차들 모두 같은 자리에서 틀렸다. 독자가 CLAUDE.md 1절의 git pull 줄 옆에 'divergent 로 실패하면 git fetch --unshallow origin claude/math 뒤 git rev-list --left-right --count HEAD...origin/claude/math' 한 줄을 넣을지 판단할 자리다.\n2026-10-09 38차 회차에도 같은 증상이 났다(로컬 4e30b1b 'queue: 355 items', 원격 6cb96ce 'queue: 423 items', fetch 가 'forced update' 를 찍고 서로 50 커밋). 이 회차도 메모를 읽기 전에 git reset --hard origin/claude/math 를 썼다(34차와 달리 권한 분류기가 막지 않았다). 다만 reset 앞에 git diff --name-status HEAD origin/claude/math 를 돌려 D(삭제) 항목이 0 이고 A 78 M 169 뿐임을 확인한 뒤였으므로 문서 손실은 없었다. 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 0 136 을 내놓아 로컬이 원격의 조상임이 확인됐다.\n\n33차, 34차, 35차, 38차, 39차 다섯 번 되풀이되었다. 되풀이의 원인은 메모가 큐에 있고 큐는 1절의 queue list 단계에서 읽히는데 pull 은 그 앞 단계라는 것이다. 지금으로서 확실한 대비는 하나다. 세션 시작의 git pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 git fetch --unshallow origin claude/math 와 git rev-list --left-right --count HEAD...origin/claude/math 를 돌린다. 0 N 이면 git pull --ff-only 로 끝난다. reset --hard 를 쓰기 전에 적어도 git diff --name-status HEAD origin/claude/math 로 D 항목이 없음을 확인한다.\n2026-10-10 39차 회차에도 같은 증상이 났다(로컬 4e30b1b 'queue: 355 items', 원격 a2c1c05 'queue: 455 items', fetch 가 'forced update' 를 찍고 서로 50 커밋). 이번 회차는 reset --hard 앞에 git merge-base HEAD origin/claude/math 를 돌렸는데 xargs git log 로 이어 쓴 탓에 빈 출력이 HEAD 로그로 바뀌어 '공통 조상이 HEAD' 로 잘못 읽었다. 이어 git merge --ff-only 가 'refusing to merge unrelated histories' 로 거부해 공통 조상이 없음이 드러났다. merge-base 는 반드시 단독으로 돌리고 종료코드를 본다. 그 뒤 git ls-tree -r --name-only 로 docs 수를 견주어(로컬 639, 원격 753) 원격이 상위 집합임을 확인하고 reset --hard 를 썼으므로 문서 손실은 없었다. 사후에 --unshallow 와 git rev-list --left-right --count 4e30b1b...origin/claude/math 가 0 186 을 내놓아 로컬이 원격의 조상임이 확인됐다. 33차, 34차, 35차, 38차, 39차 다섯 번째다. 순서는 그대로다. pull 이 divergent 로 실패하면 어떤 git 조작보다 먼저 --unshallow 와 rev-list 를 돌린다.",
+      "createdAt": "2026-10-10T00:55:36.878Z",
+      "seq": 2004
     },
     {
       "id": "08e59419",
@@ -634,6 +634,22 @@
       "note": "36차 회차(2026-10-09) 결과 메모. pop 으로 꺼낼 작업이 아니다. 문서 변경은 없다. 돌린 검사와 결과. (1) 태그 하나뿐 0 건. (2) 코드블록 언어 위반 0 건, 언어 없는 코드블록 0 건. (3) operatorname/bm/newcommand 0 건. (4) 방향형·전망형 절 0 건, '대부분 열려' 꼴 0 건. (5) 검산형 절(수치로 확인/시뮬레이션) 0 건. (6) 문장형 헤딩 17 건이 전부 '## 증명의 요지'(16)와 '## 퍼텐셜과 에너지'(1)로 명사구이므로 정상이다. 32502811 의 판정과 같다. (7) 비유 금지 grep 4 건은 lie-algebras:162 '사다리 연산자'(ladder operator, 용어), post-quantum-cryptography:126 '함정문'(trapdoor, 용어) 둘과 elliptic-curves:118 오탐이다. 그 줄은 TLS 설명이고 '사다리' 가 없는데 grep -oE 가 UTF-8 바이트 경계를 잘라 보고했다. 비유 grep 은 -oE 대신 python 으로 돌리거나 보고 줄 전문을 확인해야 한다. (8) 'A와 B' 제목은 python 으로 첫 H1 만 보고 '연관 문서' 를 뺀 25 건이다. 전부 4절이 예외로 명시한 '정리 이름과 그 정리가 답하는 개념'(canonical-height np-completeness perfect-graphs 등 19)이거나 파일명이 두 개념을 함께 담은 것(filters-and-nets ideals-quotient-rings limits-colimits kleisli-eilenberg-moore luzin-sierpinski-sets dyson-rank-crank 등 6)이다. 8ce35057 이 지적한 로케일 문제의 해법은 LC_ALL=C 가 아니라(그러면 바이트 매칭으로 한글 줄이 거의 전부 걸린다) python 으로 첫 H1 만 보는 것이다.",
       "createdAt": "2026-10-09T20:59:00.927Z",
       "seq": 2000
+    },
+    {
+      "id": "f48c3cc0",
+      "title": "4절 문체·번역체 전수 점검 (다음 차수)",
+      "priority": 20,
+      "note": "2026-10-10 39차 회차 결과. 앞 note(2026-09-21)가 지시한 번역체 표의 첫 갈래를 돌렸다. 피동 '에 의해' 전수 4 건을 전부 고쳤다: direct-method 55('적분가능한 함수에 의해 눌리면' -> '적분가능한 함수 하나가 F 를 아래에서 받치면'), lobachevsky-function 29('항등식에 의해 ~ 이 되고' -> '항등식을 쓰면 ~ 이 되고'), partitions-of-unity 31('조건 2 에 의해 조건 3 의 합은 유한합이다' -> '조건 2 가 조건 3 의 합을 각 점에서 유한합으로 만든다'), symmetric-functions 79('기본정리에 의해 계수의 다항식이고' -> '기본정리로 계수의 다항식이 되고'). 네 문서 모두 검사 여섯을 다시 통과했다. 같은 회차에 전수로 돌려 0 건인 축(다시 열지 말 것): 태그로 읽히는 부등호 grep -l '<[a-zA-Z]', 줄 끝 백슬래시, 금지 매크로(operatorname/bm/newcommand), 링크로 읽히는 대괄호, awk 이스케이프 검사, 4.5절 개관 미수록·매핑없음. 밑줄 검사는 finite-fields 131 과 unique-factorization-domains 89 둘이 걸리는데 각주 URL 의 밑줄이고 큐 항목 b452028c 가 이미 오탐으로 판정한 것이다. 비유 금지 grep 은 로케일을 지정해야 한다(LC_ALL=C.UTF-8). 지정하고 돌리면 elliptic-curves 118 'Montgomery 사다리', lie-algebras 162 '사다리 연산자', mandelbrot-set 55 '심장꼴', post-quantum-cryptography 126 '함정문' 넷이고 전부 용어의 일부여서 4절 예외다. 문장형 헤딩 grep 은 '증명의 요지' 14 건 그대로이고 큐 항목 32502811 이 오탐으로 판정했다. 다음 차수에 볼 것: 번역체 표의 남은 갈래. 명사화 '~의 ~의' 와 '~로의', become 직역 '필요해진다', read as 직역 '~로 읽으면' 을 한 갈래씩 돌린다. 같은 회차에 번역체 표의 둘째 갈래도 돌렸다. become 직역 '필요해진다|가능해진다|중요해진다' 는 4 건이고 전부 고쳤다: rice-shapiro-theorem 39, 41('K 의 여집합이 인식 가능해진다' -> '인식할 수 있다'), stable-theories 7('분류가 가능해진다' -> '분류를 할 수 있다'), zilber-indecomposability 54('각 층이 정의 가능해진다' -> '각 층을 정의할 수 있다'). '해진다' 로 넓히면 오탐이 대부분이다. '정해진다' 가 걸리는데 이것은 자연스러운 한국어이고 번역체가 아니다. 검사는 '필요해진다|가능해진다|중요해진다' 처럼 어간을 적어서 쓸 것. read as 직역 '로 읽으면' 은 전수 8 건 남짓이고 교정하지 않았다. 판정 이유는 수학 문서의 '신드롬을 이진수로 읽으면', '합에서 적분으로 읽으면', '기울기를 다발의 차수로 읽으면' 이 관점 전환이라는 동작을 말하는 문장이어서 4절 표가 든 '확률로 읽으면'(군더더기)과 다르다는 것이다. 다음 차수에 볼 것은 명사화 축 하나다. '로의 ' 가 191 건으로 가장 많고 한 회차에 다 보기 어렵다. 분야 하나씩, 또는 '~로의 사상|~로의 매장|~로의 확장' 처럼 뒤에 오는 명사로 나눠서 볼 것. 'A 로의 사상' 은 'A 로 가는 사상' 으로 고치면 된다.",
+      "createdAt": "2026-10-10T01:02:22.506Z",
+      "seq": 2008
+    },
+    {
+      "id": "962dcf9b",
+      "title": "'로의' 명사화 전수 교정 (다음 차수)",
+      "priority": 20,
+      "note": "2026-10-10 39차 회차에 '로의 ' 를 전수로 세어 191 건이다. 뒤에 오는 단어의 분포는 확장 13, 제한 6, 사영·정사영 6, 속도장 3, 환원 2 순이다(LC_ALL=C.UTF-8 grep -oP '로의 \\\\S+' 로 세어야 한다. 기본 로케일에서는 grep -oE 가 Invalid collation character 로 죽는다). 이 회차에 '로의 확장' 13 건의 문맥을 전부 보고 판정했다. 헤딩은 교정 대상이 아니다('## 연속사상으로의 확장', '## $L^2$ 로의 확장', '## 반순서집합으로의 확장', '## Polish 공간으로의 확장', '## 세는 문제로의 확장'). 4절 헤딩 규칙이 명사구를 요구하고, '로 넓히는 확장' 으로 풀면 더 길어진다. 각주 안의 문헌 설명과 개관 갈래의 한 줄 설명도 명사구라 그대로 둔다. 교정 대상은 본문의 서술 문장뿐이고 이 회차에 spectral-theorem 125 를 고쳤다('무한차원으로의 확장은 ~ 이어지며, ~ 생긴다' -> '무한차원으로 넓히면 ~ 나온다. ~ 생긴다'. 4절이 금지하는 '~며' 연결도 함께 끊었다). 다음 차수에 볼 것: '로의 제한', '로의 사영', '로의 환원' 세 묶음. 같은 기준으로 헤딩과 명사구 설명은 두고 서술 문장만 고친다. 'A 로의 사상' 꼴은 'A 로 가는 사상' 으로 고치면 된다.",
+      "createdAt": "2026-10-10T01:03:23.628Z",
+      "seq": 2009
     },
     {
       "id": "410fd79d",
@@ -1652,6 +1668,38 @@
       "seq": 1999
     },
     {
+      "id": "120a5fef",
+      "title": "em-algorithm 의 후속 간선과 혼합모형 문서 판정",
+      "priority": 11,
+      "note": "38차에 em-algorithm 을 새로 썼다(180줄, 부모 maximum-likelihood 와 kl-divergence, statistics-overview 추정 갈래 최대가능도 다음 줄). 리프로 남겼다. 간선 판정 결과. hidden-markov-model 은 Baum-Welch 절에 본문 링크만 걸었다(5절: HMM 은 EM 의 특수 사례가 아니고 EM 없이도 읽히므로 간선 아님). probabilistic-pca 도 EM 절에 본문 링크만 걸었다(닫힌 해가 있어 EM 이 선수지식이 아니다). variational-autoencoder 는 부모가 이미 셋이고 ELBO 를 kl-divergence 에서 받으므로 부모를 넷으로 늘리지 않았다. 남은 자식 후보. (1) Gauss 혼합 모형: 지금 em-algorithm 활용 절의 한 절이고 저장소에 별도 문서가 없다. 군집화, 식별 불가능성(성분 치환), 분산 하한, 모형 선택을 담으면 독립 문서가 된다. 만들면 em-algorithm 과 probabilistic-pca 의 자식 자리를 함께 판정한다. (2) 변분 추론 자체의 문서: 지금 ELBO 서술이 kl-divergence, variational-autoencoder, em-algorithm 셋에 흩어져 있다. 8절 기준으로 합칠지 새로 세울지 판단이 필요하다. (3) MM 알고리즘(majorize-minimize): EM 을 일반화한 틀. 저장소에 없다.",
+      "createdAt": "2026-10-10T00:45:11.206Z",
+      "seq": 2001
+    },
+    {
+      "id": "fd10dd98",
+      "title": "fokker-planck 의 후속 간선과 Langevin 문서",
+      "priority": 11,
+      "note": "38차에 fokker-planck 를 새로 썼다(115줄, 부모 stochastic-differential-equations 하나, probability-overview 연속시간 확률과정 갈래에서 확률미분방정식 다음 줄). 리프다. 겹침 판정. wasserstein-gradient-flow 가 자유에너지와 JKO 스킴을 이미 다루므로 fokker-planck 에서는 상대엔트로피 소산 항등식과 로그 Sobolev 수렴만 적고 그 문서를 본문 링크했다. 8절 통합 기준에는 해당하지 않는다(두 문서가 서로 없이 읽히고 각각 부모가 따로 있다). wasserstein-gradient-flow 를 fokker-planck 의 자식으로 두지 않았다. 부모가 이미 ito-calculus 와 optimal-transport 둘이고 개요가 fokker-planck 없이 읽힌다(5절 둘째 자문). 남은 자식 후보. (1) Langevin 방정식과 Gibbs 측도 표본추출: 큐 항목 b1ba9801 이 같은 주제다. fokker-planck 활용 절 첫 항목이 이것이고 문서가 되면 fokker-planck 의 자연스러운 자식이다. (2) Kramers 탈출 시간과 Freidlin-Wentzell: freidlin-wentzell 이 이미 있고 부모가 SDE 다. fokker-planck 를 부모로 더할지는 그 문서의 개요가 흐름 J 를 쓰는지 보고 판정한다. (3) 비가역 확산의 수렴 가속: 세부균형 절의 회전 성분 gamma 가 자리다. 저장소에 문서가 없다.",
+      "createdAt": "2026-10-10T00:49:46.279Z",
+      "seq": 2002
+    },
+    {
+      "id": "7e79579f",
+      "title": "direct-method 의 후속 간선과 준볼록성 문서",
+      "priority": 11,
+      "note": "38차에 direct-method(변분법의 직접법)를 새로 썼다(95줄, 부모 calculus-of-variations, sobolev-spaces, banach-alaoglu 셋, analysis-overview 미분과 적분 갈래에서 변분법 다음 줄). 리프다. 처리한 것. calculus-of-variations 의 '## 직접법' 절, banach-alaoglu 활용 첫 항목, arzela-ascoli 의 '## 변분법의 직접법' 절 셋에 본문 링크를 걸었다(세 문서가 같은 논증을 조금씩 적고 있었다). calculus-of-variations 의 자식이 6개가 되어 5절대로 H3 묶음 둘로 나눴다('방법과 구조', '고전적인 최소화 문제'). order-check 가 noether 와 hamiltonian 의 순서를 잡아 고쳤다. 큐 항목 97274ae5 의 note 가 제안한 부모 lax-milgram 은 쓰지 않았다. 대칭이 아닌 쌍선형형식은 최소화 문제로 적히지 않아 직접법의 선수지식이 아니고, 활용 절에서 그 관계를 본문 링크로 적었다. 남은 자식 후보. (1) 준볼록성과 Morrey 정리: 성질 절 '적분 범함수의 조건' 의 마지막 문단이 자리다. 저장소에 문서가 없고 벡터값 변분 문제의 핵심이다. (2) 유계변동 함수와 전변동 범함수: '반사성이 깨지는 자리' 절이 BV 공간을 이름만 쓴다. bounded-variation 문서가 이미 있으므로 그 문서에 전변동 최소화 절이 있는지 보고 간선을 판정한다. (3) Gamma 수렴: 최소화 문제의 극한을 다루는 틀. 저장소에 없다.",
+      "createdAt": "2026-10-10T00:54:30.423Z",
+      "seq": 2003
+    },
+    {
+      "id": "76d50730",
+      "title": "langevin-dynamics 의 후속 간선",
+      "priority": 11,
+      "note": "39차에 langevin-dynamics 를 새로 썼다(90줄, 부모 fokker-planck 하나, probability-overview 연속시간 확률과정 갈래에서 Fokker-Planck 다음 줄). 리프다. 부모를 fokker-planck 하나로 둔 이유는 stochastic-differential-equations 가 fokker-planck 의 부모여서 조상이기 때문이다(5절: 부모 가운데 다른 부모의 조상인 것은 뺀다). 본문 링크는 SDE 통계물리 절과 fokker-planck 활용 첫 항목 둘에 걸었다. 자식 후보. (1) Metropolis-Hastings 와 MALA: 큐 항목으로 따로 넣었다. (2) 담금질(simulated annealing): beta 를 키우는 일정과 전역 최솟점 수렴. 저장소에 문서가 없고 optimization 쪽 부모가 더 맞을 수 있다. (3) Hamilton Monte Carlo: 관성이 있는 판 절이 자리다. (1) 이 먼저 필요하다.",
+      "createdAt": "2026-10-10T00:58:30.422Z",
+      "seq": 2006
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -1754,14 +1802,6 @@
       "note": "2026-09-21 회차에 open-mapping-theorem(열린 사상 정리)을 새로 썼다. 부모는 baire-category 와 banach-spaces 둘이고 지금은 리프다. 문서 구성: 개요(전사 유계 작용소가 열린 사상, 따름정리 둘), 직관(Y 완비가 Baire 로 폐포의 내부를 주고 X 완비가 폐포를 떼는 급수를 준다), 정의(열린 사상, 그래프와 닫힌 작용소), 성질(열린 사상 정리 Banach-Schauder, 유계 역작용소 정리, 닫힌 그래프 정리, c_00 반례), 활용(작용소 역의 존재, 비유계 작용소, 노름 비교, 닫힌 치역 정리). 함수해석 개관의 '작용소와 스펙트럼' 갈래 첫 줄과 지도 mermaid(BS --> OMT)에 넣었고 README 수치를 434/804 에서 435/806 으로 맞췄다. 같은 회차에 개관의 banach-spaces 설명 줄 표기 '열린사상 정리' 도 새 문서 제목에 맞춰 '열린 사상 정리' 로 띄웠다. 후속 간선 후보: (1) Hahn-Banach 정리 문서. 함수해석의 네 기본정리 가운데 유일하게 Baire 를 쓰지 않는 것이고 dual-space 가 부모로 더 자연스러우니 부모 판정을 먼저 할 것. (2) 닫힌 치역 정리. 활용 절 마지막 항목이 부르는 자리이고 fredholm-operators 와 dual-space 사이에 놓인다. 지금은 fredholm-operators 본문이 이 정리를 언급만 한다. (3) Sobolev 공간. 활용 절 '노름의 비교' 항목이 부르지만 부모는 lp-spaces 와 distributions 쪽이 맞아 열린 사상 정리의 자식으로 긋기 전에 판정할 것. baire-category 쪽 남은 후보는 지난 note 가 적은 Polish 공간과 일반적 성질(generic property)이다. 균등유계성 원리는 baire-category 57-63줄에 증명까지 있어 따로 떼지 않는다(8절 분할 기준 미달)",
       "createdAt": "2026-09-21T04:52:32.181Z",
       "seq": 803
-    },
-    {
-      "id": "086527d4",
-      "title": "4절 문체 전수 점검 (다음 차수)",
-      "priority": 10,
-      "note": "2026-09-21 회차에 docs 전체로 두 갈래를 돌려 둘 다 0 건이었다. (1) 8de74375 항목이 전수 검사 후보로 꼽은 '여기서 나온다|출발점이다|말해 준다|인 셈이다' 가 0 건이다. 앞 회차들이 이미 걷어냈다. (2) 예고문·조언투 '강조할 점|주목할 것|짚고 넘어|다음이 핵심|점을 기억하자|요약하면|이 점이 중요|생각해 보면|해 보면 안다|답은 뻔하다' 도 0 건이다. 독자를 부르는 '우리' 를 '우리[는가의]' 로 찾으면 열 줄이 나오는데 전부 '봉우리는/봉우리가' 오검출이다. 실제 '우리' 는 foundations-overview 32 와 intuitionism 147 둘뿐이고 '우리와 무관하게 존재' 처럼 플라톤주의의 입장을 진술하는 자리라 남긴다. 검사할 때 '우리' 는 '[^봉]우리' 로 쓸 것. 이 회차의 새 문서 아홉에 같은 grep 을 돌려 둘을 고쳤다(zarankiewicz-problem 51 '묶고 정리하면' -> '묶고 식을 풀면'. 식 정리를 뜻했지만 4절 금지어 '정리하면' 과 글자가 같다. cardinal-characteristics 5 '자연스럽게 정의되는' -> '정의되는'). 다음 차수에 볼 것: 아직 전수로 돌리지 않은 갈래는 4절 번역체 표 쪽이다. 피동 '~어진다', '~에 의해', 명사화 '~의 ~의', '~로의' 가 후보이고 오검출이 많을 것이므로 한 갈래씩 볼 것",
-      "createdAt": "2026-09-21T16:58:50.114Z",
-      "seq": 858
     },
     {
       "id": "b21e6f13",
@@ -2140,14 +2180,6 @@
       "seq": 1729
     },
     {
-      "id": "97274ae5",
-      "title": "변분법의 직접법",
-      "priority": 10,
-      "note": "해석학(#analysis #functional_analysis #optimization). 35차 큐 대조에서 'Lax-Milgram 정리' 부분만 떼어 제목을 좁혔다(옛 항목 57bb4724). lax-milgram.md 가 이미 있고 그 문서에는 직접법과 약한 하반연속성이 없다(grep 으로 확인). 담을 내용은 강제성과 약한 하반연속성에서 최소화자의 존재를 얻는 논증, Dirichlet 에너지의 최소화, 볼록성과 약수렴의 관계다. 부모는 sobolev-spaces 와 lax-milgram",
-      "createdAt": "2026-10-06T00:48:45.119Z",
-      "seq": 1749
-    },
-    {
       "id": "fb9f69e2",
       "title": "경로폭과 분지폭",
       "priority": 10,
@@ -2180,14 +2212,6 @@
       "seq": 1768
     },
     {
-      "id": "54785f49",
-      "title": "기댓값 최대화 알고리즘",
-      "priority": 10,
-      "note": "통계/기계학습(#statistics #probability #machine_learning #optimization). 36차에 hidden-markov-model 을 쓰면서 Baum-Welch 절이 '기댓값 최대화 알고리즘을 은닉 Markov 모형에 적용한 것' 이라고만 적고 링크 없이 이름만 썼다(0절). 저장소에 em-algorithm 문서가 없다. 담을 내용은 은닉변수 모형의 우도, Jensen 부등식으로 만드는 하한(ELBO), E 단계와 M 단계, 우도가 단조 증가한다는 정리와 그 증명, Gauss 혼합 모형과 Baum-Welch 가 특수 사례라는 것, 정류점 수렴. 부모 후보는 conditional-expectation 과 maximum-likelihood 류 문서이고 variational-autoencoder 가 ELBO 를 쓰므로 그 부모 자리도 함께 판정한다. 만들면 hidden-markov-model 의 Baum-Welch 절과 변분 쪽 문서에 링크를 건다.",
-      "createdAt": "2026-10-06T08:42:57.324Z",
-      "seq": 1776
-    },
-    {
       "id": "e35a2da6",
       "title": "부분관측 Markov 결정 과정",
       "priority": 10,
@@ -2218,22 +2242,6 @@
       "note": "해석학(#analysis #functional_analysis). 36차에 큐 dece5714(stone-weierstrass 의 후속 간선)을 보고 확인했다. 그 note 의 후속 후보 넷 가운데 Korovkin 정리가 가장 가까운 후속이고 korovkin 류 파일이 없다. 담을 내용은 양선형작용소 열이 1, x, x^2 세 함수에서 수렴하면 C[0,1] 전체에서 균등수렴한다는 진술, 증명 요지(점마다 (t-x)^2 를 다루는 봉우리 함수 구성), Bernstein 다항식이 특수 경우로 나오는 계산, Weierstrass 근사정리와의 관계, 수렴 속도와 Lipschitz 함수의 추정이다. 부모는 stone-weierstrass 하나이고 그 문서의 첫 자식이 된다(현재 리프). 함께 판정할 것은 그 note 의 남은 후보 셋(국소 콤팩트 판본과 C_0(X), 격자 판본, Gelfand-Naimark)을 Korovkin 문서에 넣을지 따로 둘지다.",
       "createdAt": "2026-10-06T09:01:14.262Z",
       "seq": 1791
-    },
-    {
-      "id": "80dfcce3",
-      "title": "Fokker-Planck 방정식 문서",
-      "priority": 10,
-      "note": "분야: 확률론(#probability #analysis #measure_theory). 붙일 부모: stochastic-differential-equations. 37차에 SDE 문서를 쓰며 남긴 갈래다. 그 문서 성질 절의 전진방정식은 식과 정상분포 한 문단뿐이다. 수반작용소 유도, 정상분포의 존재와 유일성, 세부균형, 자유에너지의 감소(wasserstein-gradient-flow 와 겹치는 자리의 판정 필요), 역방향 Kolmogorov 방정식과의 쌍대성을 절로 둘 수 있다.",
-      "createdAt": "2026-10-06T12:44:37.886Z",
-      "seq": 1793
-    },
-    {
-      "id": "b1ba9801",
-      "title": "Langevin 방정식과 Gibbs 측도 표본추출",
-      "priority": 10,
-      "note": "분야: 확률론 또는 최적화(#probability #optimization #machine_learning). 붙일 부모: stochastic-differential-equations. 37차에 SDE 문서 '대표적인 해' 표 넷째 줄과 활용 '통계물리' 절이 이름만 쓰고 지나간다. 과감쇠 극한, 정상분포 e^{-V/eps}, 이산화의 편향(unadjusted Langevin 과 Metropolis 보정), 수렴 속도의 log-Sobolev 조건. 'A와 B' 꼴 제목이므로 4절 제목 규칙대로 좁힐 것. langevin-dynamics 로 두고 제목을 'Langevin 동역학' 으로 하는 안.",
-      "createdAt": "2026-10-06T12:44:38.002Z",
-      "seq": 1794
     },
     {
       "id": "1f852268",
@@ -2698,6 +2706,14 @@
       "note": "확률론(#probability #measure_theory #statistics). 41차에 kolmogorov-extension 을 쓰며 활용 절 '## 무한 교환가능열' 에서 이름만 쓰고 지나갔다(0절). 저장소에 de-finetti 류 파일이 없고 교환가능성(exchangeability)을 다룬 문서도 없다. 담을 내용은 교환가능열의 정의(유한 순열에 분포가 불변), 0-1 열의 de Finetti 정리(교환가능 무한열은 베타 혼합이 아니라 임의의 사전분포에 대한 Bernoulli 혼합으로 유일하게 적힌다), 일반 상태공간의 Hewitt-Savage 판, 유한열에서는 정리가 깨지는 것(유한 교환가능열의 반례), 교환가능 sigma 대수와 Hewitt-Savage 0-1 법칙, Bayes 통계에서 사전분포의 근거로 쓰이는 자리다. 부모 후보는 random-variables 와 bayesian-inference 이고 kolmogorov-extension 도 후보다(무한열이 사는 확률공간을 그 정리가 준다). 만들면 kolmogorov-extension 활용 절의 이름을 링크로 바꾼다.",
       "createdAt": "2026-10-09T16:53:54.256Z",
       "seq": 1985
+    },
+    {
+      "id": "34f1ab7d",
+      "title": "Markov 연쇄 Monte Carlo 와 Metropolis-Hastings 문서 신설",
+      "priority": 10,
+      "note": "확률론/계산(#probability #statistics #computation). 39차에 langevin-dynamics 를 쓰며 드러났다. 그 문서 '이산화의 편향' 절 둘째 문단이 '한 걸음을 제안으로 쓰고 수락 확률로 보정하면 정상분포가 정확히 pi 가 된다' 고 적고 Metropolis 보정을 링크 없이 이름만 썼다(0절). 저장소에 metropolis 나 mcmc 문서가 없다. 담을 내용은 불변분포를 목표로 하는 전이핵의 구성, 세부균형과 수락 확률 min(1, pi(y)q(y,x)/pi(x)q(x,y)), 에르고딕성과 혼합시간, Gibbs 표본추출, 수락률과 제안 분산의 조정. 부모 후보는 markov-chains 와 langevin-dynamics 이고(MALA 가 Langevin 제안의 보정판) mixing-time 과의 간선도 함께 판정한다.",
+      "createdAt": "2026-10-10T00:58:30.262Z",
+      "seq": 2005
     },
     {
       "id": "dfb3e493",
