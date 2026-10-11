@@ -97,6 +97,7 @@ graph TD
 - [멱급수](power-series.md): 수렴반경과 해석성
 - [쌍곡함수](hyperbolic-functions.md): 지수함수를 짝과 홀로 가른 두 함수, 삼각 항등식과 부호만 다른 항등식
 - [Fourier 급수](fourier-series.md): 직교계 전개와 $L^2$ 수렴
+- [Wirtinger 부등식](wirtinger-inequality.md): 평균이 $0$ 인 주기함수를 도함수의 $L^2$ 노름으로 누르는 부등식, 최적 상수와 등호 조건
 - [Fourier 변환](fourier-transform.md): 실직선 위의 적분변환과 반전 공식, Plancherel 정리
 - [불확정성 원리](uncertainty-principle.md): 함수와 변환의 분산의 곱에 대한 하한
 - [이산 Fourier 변환](fourier.md): 유한 순환군 위의 Fourier 해석

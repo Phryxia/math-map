@@ -184,9 +184,18 @@ $L^2$ 오차는 0으로 가지만 오버슈트는 약 0.179에 머문다. 도약
 
 ## 더 알아보기
 
+### 수렴과 부등식
+
 - [Fejér 핵](fejer-kernel.md)
+- [Wirtinger 부등식](wirtinger-inequality.md)
+
+### 변환과 합공식
+
 - [Fourier 변환](fourier-transform.md)
 - [Poisson 합 공식](poisson-summation.md)
+
+### 다른 분야에서의 쓰임
+
 - [등분포](equidistribution.md)
 - [Lobachevsky 함수](lobachevsky-function.md)
 
