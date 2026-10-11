@@ -46,7 +46,7 @@ $$
 f(x)+f^\ast(y)\ge\langle x,y\rangle
 $$
 
-정의의 상한이 $x$ 에서의 값보다 크거나 같다는 것을 옮겨 쓴 것이다. 등호는 $y$ 가 $x$ 에서 $f$ 의 열미분 $\partial f(x)$ 에 들어갈 때, 곧 기울기 $y$ 인 받침 아핀 함수가 $x$ 에서 $f$ 에 닿을 때 성립한다. $f(x)=\vert x\vert^p/p$ 와 $f^\ast(y)=\vert y\vert^q/q$ 를 넣으면 Young 부등식 $\vert xy\vert\le\vert x\vert^p/p+\vert y\vert^q/q$ 가 되고, 이것이 이름의 유래다.
+정의의 상한이 $x$ 에서의 값보다 크거나 같다는 것을 옮겨 쓴 것이다. 등호는 $y$ 가 $x$ 에서 $f$ 의 [부분미분](subdifferential.md) $\partial f(x)$ 에 들어갈 때, 곧 기울기 $y$ 인 받침 아핀 함수가 $x$ 에서 $f$ 에 닿을 때 성립한다. $f(x)=\vert x\vert^p/p$ 와 $f^\ast(y)=\vert y\vert^q/q$ 를 넣으면 Young 부등식 $\vert xy\vert\le\vert x\vert^p/p+\vert y\vert^q/q$ 가 되고, 이것이 이름의 유래다.
 
 ## 공액의 볼록성
 

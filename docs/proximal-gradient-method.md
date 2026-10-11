@@ -20,13 +20,7 @@ $F=f+g$ 를 최소화한다. $f$ 는 미분가능한 볼록 함수이고 $\nabla
 
 ## 부분미분
 
-볼록 함수 $g$ 의 점 $u$ 에서의 **부분미분**(subdifferential) $\partial g(u)$ 는 다음을 만족하는 벡터 $p$ 전부의 집합이다.
-
-$$
-g(x)\ge g(u)+\langle p,\thinspace x-u\rangle\qquad(\forall x)
-$$
-
-$g$ 가 $u$ 에서 미분가능하면 $\partial g(u)=\lbrace\nabla g(u)\rbrace$ 다. $g$ 가 $u$ 에서 최솟값을 가지는 것과 $0\in\partial g(u)$ 인 것이 동치다. $g(x)=\vert x\vert$ 는 $u=0$ 에서 $\partial g(0)=\lbrack -1,1\rbrack$ 이다.
+$g$ 가 미분가능하지 않은 점에서는 기울기 대신 [부분미분](subdifferential.md) $\partial g(u)$ 를 쓴다. $g$ 가 $u$ 에서 최솟값을 가지는 것과 $0\in\partial g(u)$ 인 것이 동치이고, $g(x)=\vert x\vert$ 는 $u=0$ 에서 $\partial g(0)=\lbrack -1,1\rbrack$ 이다.
 
 ## 근접 연산자
 
@@ -120,6 +114,7 @@ $g$ 를 볼록집합 $C$ 의 지시함수로 두면 근접 걸음이 $C$ 로의 
 ## 선수지식
 
 - [경사하강법](gradient-descent.md)
+- [부분미분](subdifferential.md)
 
 ## 더 알아보기
 
