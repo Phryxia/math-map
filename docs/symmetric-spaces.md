@@ -36,6 +36,14 @@ $$
 
 Killing 형식을 $\mathfrak m$ 에 제한한 부호로 유형을 나눈다. 음의 정부호이면 **콤팩트형**, 양의 정부호이면 **비콤팩트형**, $\lbrack\mathfrak m,\mathfrak m\rbrack=0$ 이면 **유클리드형**이다.
 
+## Hermite 대칭공간
+
+**Hermite 대칭공간**은 복소구조를 갖는 대칭공간으로 각 점의 측지적 대칭이 정칙인 것이다. 복소구조가 등거리군의 작용과 호환되므로 Riemann 계량이 [Kähler 계량](kahler-manifolds.md)이 된다.
+
+$G/H$ 가 Hermite 인 것과 $H$ 의 중심이 원군을 담는 것이 동치다. 그 원군이 $\mathfrak m$ 에 작용하여 제곱이 $-1$ 인 자기준동형을 주고, 그것이 복소구조다.
+
+비콤팩트형 Hermite 대칭공간은 $\mathbb C^n$ 의 유계 영역과 쌍정칙이고 그 영역을 **유계 대칭영역**이라 한다. 상반평면 $\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 는 단위원판과 쌍정칙이고, $\mathrm{Sp}\_{2g}(\mathbb R)/U(g)$ 는 Siegel 상반공간으로 대칭행렬이 이루는 유계 영역과 쌍정칙이다.
+
 # 성질
 
 ## 곡률 공식
@@ -76,6 +84,7 @@ $$
 - 상반평면 $\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 가 비콤팩트형이다. 이산 부분군으로 나눈 몫이 모듈러 곡선이고, 그 위의 조화해석이 [Selberg 대각합 공식](selberg-trace-formula.md)을 준다.
 - [측지선의 비교정리](geodesic-comparison-theorems.md)에서 상수곡률 모형이 맡던 자리를 대칭공간이 맡는다. 곡률이 평행이므로 Jacobi 방정식의 계수가 상수이고 해가 닫힌 형태로 나온다.
 - 대칭공간 위의 불변 미분작용소 대수가 가환이다. 그 고유함수가 구면함수이고, 전개가 [구면조화함수](spherical-harmonics.md)의 일반화다.
+- 유계 대칭영역을 산술 부분군으로 나눈 몫이 대수다양체가 되고, 그 다양체가 [Shimura 다양체](shimura-varieties.md)다. Hermite 조건이 몫에 복소구조를 주고, 비콤팩트형이라는 조건이 몫을 콤팩트가 아닌 공간으로 만든다.
 
 [^1]: Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press (1978), Ch. IV. 측지적 대칭의 정의, Cartan 분해, 곡률 공식과 세 유형의 분류가 이 장에 있다.
 

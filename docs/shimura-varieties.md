@@ -22,7 +22,7 @@ $\mathbb H$ 의 점 $\tau$ 가 하는 일을 보면 복소구조가 어디 있�
 - $\mathrm{ad}\thinspace h(i)$ 가 $G^{\mathrm{ad}}\_{\mathbb R}$ 의 Cartan 대합이다.
 - $G^{\mathrm{ad}}$ 의 $\mathbb Q$ 단순 인자 가운데 실점이 콤팩트인 것이 없다.
 
-첫 조건이 $X$ 에 복소구조를 주고, 둘째 조건이 그 구조를 Hermite 대칭영역으로 만들고, 셋째 조건이 각 단순 인자를 $X$ 에 실제로 작용하게 한다. 이때 $X$ 의 각 연결성분 $X^+$ 는 유계 [대칭공간](symmetric-spaces.md)이고 $\mathbb H$ 와 $\mathbb H_g$ 가 그 예다.
+첫 조건이 $X$ 에 복소구조를 주고, 둘째 조건이 그 구조를 Hermite 대칭공간의 것으로 만들고, 셋째 조건이 각 단순 인자를 $X$ 에 실제로 작용하게 한다. 이때 $X$ 의 각 연결성분 $X^+$ 는 유계 [대칭영역](symmetric-spaces.md)이고 $\mathbb H$ 와 $\mathbb H_g$ 가 그 예다.
 
 ## 복소점
 
