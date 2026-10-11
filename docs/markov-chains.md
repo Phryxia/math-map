@@ -178,10 +178,18 @@ $$
 
 ## 더 알아보기
 
+### 궤적과 수렴
+
 - [무작위 걷기](random-walks.md)
 - [Markov 연쇄의 혼합시간](mixing-time.md)
+
+### 다른 Markov 과정
+
 - [Poisson 과정](poisson-process.md)
 - [분지과정](branching-processes.md)
+
+### 추론과 제어
+
 - [은닉 Markov 모형](hidden-markov-model.md)
 - [Markov 결정 과정](markov-decision-process.md)
 

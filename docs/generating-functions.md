@@ -168,10 +168,18 @@ $$
 
 ## 더 알아보기
 
+### 조합적 수와 반전 공식
+
 - [Catalan 수](catalan-numbers.md)
 - [Lagrange 반전 공식](lagrange-inversion.md)
+
+### 확률 과정과 구조 이론
+
 - [분지과정](branching-processes.md)
 - [조합적 종](combinatorial-species.md)
+
+### 계수의 점근
+
 - [Laplace 방법](laplace-method.md)
 - [분할수](partitions.md)
 
