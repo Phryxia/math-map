@@ -4,7 +4,7 @@
 
 미분기하는 미적분이 되는 공간 위에서 휘어짐을 재고, 그 국소량의 적분이 위상 불변량이 되는 현상을 다룬다. 물음은 "국소적으로 잰 곡률이 공간 전체에 대해 무엇을 결정하는가" 이고, 답의 원형은 Gauss–Bonnet 정리다. 곡면의 곡률을 적분하면 [Euler 지표](euler-characteristic.md)가 나온다.
 
-미분기하의 갈래는 네 줄기다. 미분이 정의되는 공간인 다양체와 그 위의 미분형식, 계량과 곡률, Hodge 이론에서 지표 정리로 가는 해석적 갈래, 그리고 Lie 군 위의 게이지 이론이다. 위상 불변량 쪽은 [위상수학 개관](topology-overview.md)에, 대수 쪽 기반은 [Lie 대수](lie-algebras.md)에 있다.
+미분기하의 갈래는 다섯 줄기다. 미분이 정의되는 공간인 다양체와 그 위의 미분형식, 다발과 그 위의 접속, 계량과 곡률, Hodge 이론에서 지표 정리로 가는 해석적 갈래, 그리고 Lie 군 위의 게이지 이론이다. 위상 불변량 쪽은 [위상수학 개관](topology-overview.md)에, 대수 쪽 기반은 [Lie 대수](lie-algebras.md)에 있다.
 
 시작은 [다양체](manifolds.md)와 [곡률](curvature.md)이다. 둘이 [Riemann 계량](riemannian-metrics.md)에서 만나 거리를 가진 다양체가 되고, 거기서 [Gauss–Bonnet 정리](gauss-bonnet.md)와 [Hodge 이론](hodge-theory.md)으로 갈라진 뒤 [지표 정리](index-theorem.md)에서 다시 만난다.
 
@@ -46,12 +46,6 @@ graph TD
 - [Sard 정리](sard-theorem.md): 매끄러운 사상의 임계값 집합이 측도 $0$ 이라는 정리, 정칙값을 일반적 위치로 고르는 근거
 - [횡단성](transversality.md): 교점마다 접공간의 합이 전체를 채우는 조건, 매개변수 횡단성 정리와 교차수
 - [Whitney 매장 정리](whitney-embedding.md): $n$ 차원 다양체가 $\mathbb R^{2n}$ 에 매장된다는 정리, 좌표 사상을 단위분할로 묶는 구성
-- [벡터다발](vector-bundles.md): 점마다 붙인 벡터 공간, 전이함수와 접속, 곡률
-- [접다발](tangent-bundle.md): 접공간을 모은 다발, 좌표변환의 야코비가 전이함수, 평행화 가능성
-- [접속](connection.md): 다발 단면을 미분하는 규칙, 평행이동과 비틀림, Levi-Civita 접속의 유일성
-- [주다발](principal-bundles.md): 구조군이 섬유에 자유롭게 작용하는 다발, 틀다발과 결합다발, 구조군의 축소와 주접속
-- [특성류](characteristic-classes.md): 곡률의 불변 다항식이 주는 코호몰로지류, Chern–Weil 이론
-- [스핀 구조](spin-structures.md): 회전군 틀다발의 이중덮개 들어올림, 둘째 Stiefel–Whitney 류의 소멸과 Dirac 작용소
 - [벡터장](vector-fields.md): 접다발의 단면, 흐름과 Lie 괄호, 영점의 지수
 - [Lie 미분](lie-derivative.md): 흐름으로 끌어온 텐서장의 미분, Cartan 공식과 불변성 판정
 - [미분형식](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
@@ -61,6 +55,15 @@ graph TD
 - [모멘트 사상](moment-map.md): 심플렉틱 작용의 보존량을 Lie 대수 쌍대공간에 모은 사상, Marsden–Weinstein 축소와 모멘트 다면체
 - [여접다발](cotangent-bundle.md): 좌표 없이 정의되는 표준 1 형식과 그 외미분이 주는 심플렉틱 구조, 정준변환
 - [Hamilton 역학](hamiltonian-mechanics.md): 속도를 운동량으로 바꾼 1차 방정식계, 에너지 보존과 흐름의 심플렉틱 성질
+
+## 다발과 접속
+
+- [벡터다발](vector-bundles.md): 점마다 붙인 벡터 공간, 전이함수와 접속, 곡률
+- [접다발](tangent-bundle.md): 접공간을 모은 다발, 좌표변환의 야코비가 전이함수, 평행화 가능성
+- [접속](connection.md): 다발 단면을 미분하는 규칙, 평행이동과 비틀림, Levi-Civita 접속의 유일성
+- [주다발](principal-bundles.md): 구조군이 섬유에 자유롭게 작용하는 다발, 틀다발과 결합다발, 구조군의 축소와 주접속
+- [특성류](characteristic-classes.md): 곡률의 불변 다항식이 주는 코호몰로지류, Chern–Weil 이론
+- [스핀 구조](spin-structures.md): 회전군 틀다발의 이중덮개 들어올림, 둘째 Stiefel–Whitney 류의 소멸과 Dirac 작용소
 
 ## 계량과 곡률
 
