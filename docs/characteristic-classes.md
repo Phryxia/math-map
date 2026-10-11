@@ -95,5 +95,6 @@ Euler 류를 곡률로 쓴 것이 [Gauss–Bonnet 정리](gauss-bonnet.md)의 �
 ## 더 알아보기
 
 - [분류공간](classifying-spaces.md)
+- [스핀 구조](spin-structures.md)
 
 #differential_geometry #algebraic_topology #topology

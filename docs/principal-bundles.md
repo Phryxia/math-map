@@ -103,5 +103,6 @@ $\omega$ 의 핵 $H_u=\ker\omega_u$ 를 **수평 부분공간**이라 한다. �
 ## 더 알아보기
 
 - [분류공간](classifying-spaces.md)
+- [스핀 구조](spin-structures.md)
 
 #differential_geometry #topology #algebraic_topology #group_theory
