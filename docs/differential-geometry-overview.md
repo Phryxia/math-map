@@ -49,6 +49,7 @@ graph TD
 - [벡터다발](vector-bundles.md): 점마다 붙인 벡터 공간, 전이함수와 접속, 곡률
 - [접다발](tangent-bundle.md): 접공간을 모은 다발, 좌표변환의 야코비가 전이함수, 평행화 가능성
 - [접속](connection.md): 다발 단면을 미분하는 규칙, 평행이동과 비틀림, Levi-Civita 접속의 유일성
+- [주다발](principal-bundles.md): 구조군이 섬유에 자유롭게 작용하는 다발, 틀다발과 결합다발, 구조군의 축소와 주접속
 - [특성류](characteristic-classes.md): 곡률의 불변 다항식이 주는 코호몰로지류, Chern–Weil 이론
 - [벡터장](vector-fields.md): 접다발의 단면, 흐름과 Lie 괄호, 영점의 지수
 - [Lie 미분](lie-derivative.md): 흐름으로 끌어온 텐서장의 미분, Cartan 공식과 불변성 판정
