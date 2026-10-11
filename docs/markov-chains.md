@@ -151,13 +151,7 @@ $P'$ 는 모든 성분이 양수이므로 기약이고 비주기적이다.[^2] �
 
 ## MCMC
 
-목표 분포 $\pi$ 에서 직접 표본을 뽑기 어려울 때 $\pi$ 를 정상분포로 갖는 연쇄를 설계해 오래 돌린다. Metropolis–Hastings 는 제안분포 $q$ 에서 후보 $y$ 를 뽑고 다음 확률로 수락한다.
-
-$$
-\alpha(x,y)=\min\negthinspace\left(1,\ \frac{\pi(y)\thinspace q(y,x)}{\pi(x)\thinspace q(x,y)}\right)
-$$
-
-이 연쇄는 상세균형을 만족하므로 $\pi$ 가 정상분포다.[^3] 기약성과 비주기성을 확보하면 에르고딕 정리로 표본 평균이 $\pi$ 에 대한 기댓값으로 수렴한다. 수락확률에 비율만 나타나 정규화 상수를 몰라도 되고, $\vert\lambda\_2\vert$ 가 1 에 가까우면 혼합이 느려진다.
+[Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)는 목표 분포 $\pi$ 를 정상분포로 갖는 연쇄를 설계해 오래 돌리고 그 궤적을 표본으로 쓴다. Metropolis–Hastings 의 수락확률에 $\pi$ 의 비만 나타나므로 정규화 상수를 몰라도 되고, 기약성과 비주기성 아래 에르고딕 정리가 표본 평균의 수렴을 준다. $\vert\lambda\_2\vert$ 가 1 에 가까우면 혼합이 느려진다.
 
 ## 대기행렬, 은닉 Markov 모형, 알고리즘 분석
 
@@ -167,7 +161,6 @@ $$
 
 [^1]: Karl Sigman, Limiting distribution for a Markov chain (Columbia IEOR 강의노트), 정상분포의 존재·유일성, 평균 복귀시간 공식, 기약·비주기·양재귀 조건 아래의 수렴 정리. http://www.columbia.edu/~ks20/stochastic-I/stochastic-I-MCII.pdf
 [^2]: PageRank, Wikipedia (damping factor 0.85, dangling node 처리, 확률행렬의 유일한 정상분포로서의 정의). https://en.wikipedia.org/wiki/PageRank
-[^3]: Metropolis–Hastings algorithm, Wikipedia (수락확률과 detailed balance에 의한 정상성 확인). https://en.wikipedia.org/wiki/Metropolis%E2%80%93Hastings_algorithm
 
 # 연관 문서
 
@@ -190,6 +183,7 @@ $$
 
 ### 추론과 제어
 
+- [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)
 - [은닉 Markov 모형](hidden-markov-model.md)
 - [Markov 결정 과정](markov-decision-process.md)
 
