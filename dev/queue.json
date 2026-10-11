@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-11T17:00:59.906Z",
-  "nextSeq": 2105,
+  "savedAt": "2026-10-11T21:03:28.594Z",
+  "nextSeq": 2117,
   "items": [
     {
       "id": "9443e5ca",
@@ -890,6 +890,38 @@
       "note": "42차 확인. 4절 문체 규칙의 grep -n '^##' docs/*.md | grep -E '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) *$' 가 '## 증명의 요지' 를 문장형 헤딩으로 잡는다. 패턴의 마지막 대안 '[^로]지' 가 '요지' 의 '지' 를 무는 것이고, '증명의 요지' 는 명사구이므로 규칙 위반이 아니다. 저장소에서 이 헤딩을 쓰는 문서가 수십 개이고(baker-theorem, banach-alaoglu, chebotarev, gauss-bonnet, index-theorem 등) 4절 성질 절 규칙이 증명의 요지를 적으라고 하므로 모두 정상이다. 다음 회차에서 이 grep 을 돌릴 때 '증명의 요지' 로 끝나는 줄은 제외하고 본다: grep -n '^##' docs/*.md | grep -E '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) *$' | grep -v '증명의 요지' 로 돌리면 나머지만 남는다.",
       "createdAt": "2026-10-11T16:59:29.081Z",
       "seq": 2103
+    },
+    {
+      "id": "1c40137b",
+      "title": "proximal-gradient-method 를 subdifferential 의 자식으로 둔 판정",
+      "priority": 20,
+      "note": "39차(2026-10-11) 기록. subdifferential 을 새로 쓰면서 proximal-gradient-method 의 부모를 gradient-descent 하나에서 subdifferential 과 둘로 늘렸다. 근거: 근접 연산자의 특징 'u=prox 인 것과 (z-u)/eta in ∂g(u) 가 동치' 가 그 문서 성질 절의 두 정리(비확장성, 고정점과 최적성)를 다 끌어내므로 부분미분 없이는 성질 절이 읽히지 않는다(5절 둘째 자문). 같은 작업에서 그 문서의 '## 부분미분' 정의 절이 새 문서와 중복이라 8절대로 정의식과 미분가능 경우를 지우고 최적성 조건과 절댓값 예만 남겨 링크로 줄였다. convexity 는 gradient-descent 와 subdifferential 양쪽의 부모여서 proximal 의 직접 부모로는 두지 않았다. 또 gradient-descent:113 의 '부분미분' 링크가 proximal-gradient-method.md 를 가리키고 있던 것을 subdifferential.md 로 돌렸고, convex-conjugate:49 와 support-vector-machine:71 의 '열미분' 표기를 '부분미분' 으로 통일했다. 저장소에서 열미분 표기는 이제 0 건이다.",
+      "createdAt": "2026-10-11T20:44:42.320Z",
+      "seq": 2106
+    },
+    {
+      "id": "641f5b2b",
+      "title": "39차 문체 전수 점검 결과와 오탐 판정",
+      "priority": 20,
+      "note": "39차(2026-10-11)에 docs 803 문서로 4절 검사를 전수로 돌린 결과다. 수확 2 건을 고쳤다(커밋 776ffb1c). eigenvariety:75 '고전점이 조밀한데도 여집합이 훨씬 크다는 구도가 여기서 나온다' -> '고전점이 조밀하면서도 그 여집합이 더 크다', totally-unimodular-matrices:84 '최대흐름 최소절단 정리의 정수 버전이 여기서 나온다' -> '최대흐름 최소절단 정리의 정수 판본이 이 정수성의 따름정리다'(버전 -> 판본도 함께). 저장소에 '여기서 나온다' 는 이제 0 건이다.\n\n통과한 검사: 금지 매크로 grep(operatorname, bm, newcommand 류) 0 건, 코드블록 언어 grep 0 건, 언어 없는 코드블록 0 건, 열린 문제 절 grep 0 건, 범위 뭉뚱 grep 0 건, 일기성 절 grep('## 수치로 확인' 류) 0 건, 메타 서술 grep 0 건, 의인화 grep 0 건, '우리[가는를] ' 0 건.\n\n오탐 판정 셋. (1) 문장형 헤딩 grep 의 '[^로]지 *$' 가 potential-theory:37 '## 퍼텐셜과 에너지' 를 잡는다. '에너지' 의 끝 글자이고 명사구이므로 오탐이다. 큐에 이미 기록된 '## 증명의 요지' 16 곳 오탐과 같은 유형이고, 패턴을 좁히려면 '지' 를 종결어미로만 잡아야 하는데 간단한 grep 으로는 안 된다. 헤딩 grep 결과는 '요지' 와 '에너지' 를 걸러 읽는다. (2) '지나지 않' 패턴이 crossing-number-inequality:27, fatou-components:13, finite-projective-planes:38, fredholm-operators:93/95, residue-theorem:53, vector-spaces:50 일곱 곳을 잡는다. 전부 곡선이나 직선이 점을 통과하지 않는다는 뜻이고 4절이 금지하는 '~에 지나지 않는다' 가 아니다. 큐 b2baa2e9 가 같은 판정을 적어 두었다. (3) 비유 grep 이 네 곳을 잡는데 전부 굳은 용어다. elliptic-curves:118 'Montgomery 사다리', lie-algebras:162 '사다리 연산자', post-quantum-cryptography:126 '함정문' 셋은 큐 3916256e 에 이미 기록되어 있고, mandelbrot-set:55 '심장꼴' 은 새로 걸린 것이다. cardioid 의 한국어 용어이므로 4절의 '용어의 일부인 것' 예외에 든다.",
+      "createdAt": "2026-10-11T21:00:56.439Z",
+      "seq": 2114
+    },
+    {
+      "id": "e4d7bd76",
+      "title": "39차 수식 검사 전수 결과",
+      "priority": 20,
+      "note": "39차(2026-10-11)에 docs 803 문서로 4절 수식 검사 여섯 가지를 전수로 돌렸다. 수확 0 건이다. 이스케이프 awk 0 건, '<[a-zA-Z]' 0 건, 줄 끝 백슬래시 0 건, render-check 전체 통과, order-check 통과, graph validate 와 cycles 통과.\\n\\n오탐 둘. (1) 링크 대괄호 grep 'grep -nE \\\\]\\\\( | grep -v ...' 을 README.md 까지 넓히면 README 의 링크 24 줄이 전부 걸린다. 7절대로 README 의 링크는 'docs/<id>.md' 접두사를 쓰고 제외 패턴 '[a-z0-9-]*\\\\.md' 가 슬래시를 받지 않기 때문이다. 이 검사는 docs/*.md 에만 돌리거나 제외 패턴에 'docs/' 를 더해 읽는다. CLAUDE.md 4절이 적은 명령은 docs/<id>.md 하나를 대상으로 하므로 규격 자체는 어긋나지 않는다. (2) 밑줄 grep 이 finite-fields:131 과 unique-factorization-domains:89 를 잡는데 둘 다 각주의 URL 안 밑줄이다(libretexts 경로와 numdam 의 PMIHES_1966__30__5_0). 큐 b452028c 가 같은 판정을 적어 두었다.",
+      "createdAt": "2026-10-11T21:01:39.558Z",
+      "seq": 2115
+    },
+    {
+      "id": "827f218e",
+      "title": "39차 'A와 B' 제목 전수 재확인과 grep 로케일",
+      "priority": 20,
+      "note": "39차(2026-10-11)에 803 문서의 제목 줄만 UTF-8 로 정확히 매칭해 25 건을 뽑았다. 전부 4절 제목 규칙에 어긋나지 않는다고 판정했고 고친 문서는 없다.\\n\\n로케일 문제. CLAUDE.md 2절 3단계의 'grep -l ^# .*[와과] docs/*.md' 는 문서의 모든 H1 을 보므로 본문 '# 개요' 는 물론 '해석학 개관'(학 개관), 'Baire 범주 정리'(범주 정리), '유계변동 함수' 처럼 와/과 가 없는 제목까지 49 건을 낸다. 바이트 단위 매칭으로 [와과] 가 음절의 일부 바이트에 걸리기 때문이다. 제목 줄만 보고 UTF-8 로 매칭하면 25 건이다. 검사는 python3 로 한다. pat=re.compile(r'^# .*[와과] ') 를 각 파일의 첫 줄에만 적용한다.\\n\\n판정 근거 두 갈래. (1) 파일명이 두 개념을 다 가리키는 것 아홉: dyson-rank-crank, fermat-euler-theorem, filters-and-nets(큐 89a333fe 에 판정 기록), formalism-hilbert-program, ideals-quotient-rings, kleisli-eilenberg-moore, limits-colimits, luzin-sierpinski-sets, selmer-tate-shafarevich. 4절은 '파일명이 그중 하나만 가리키면 어긋난 것' 이라 하므로 이 아홉은 어긋남이 아니다. (2) 4절이 예외로 명시한 '정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목' 열여섯: canonical-height(4절의 예시 그 자체), dwork-rationality, eisenstein-ideal, greenberg-conjecture, heegner-points, herbrand-ribet, np-completeness, perfect-graphs, s-cobordism, serre-conjecture, speh-representations, unique-games, vandiver-conjecture, waldspurger-formula, whittaker-models, witten-asymptotics.\\n\\n같은 회차에 '태그가 하나뿐인 문서' 검사(tail -1 의 태그 수가 1 이하)도 전수로 돌렸고 0 건이다.",
+      "createdAt": "2026-10-11T21:03:08.206Z",
+      "seq": 2116
     },
     {
       "id": "410fd79d",
@@ -2116,6 +2148,38 @@
       "seq": 2090
     },
     {
+      "id": "e77379e0",
+      "title": "clarke-subdifferential 의 후속 간선",
+      "priority": 11,
+      "note": "39차(2026-10-11)에 clarke-subdifferential(Clarke 준미분, 106줄)을 subdifferential 과 rademacher-theorem 의 자식으로 새로 쓰고 리프로 남겼다. check-cycle --allow-new 는 둘 다 OK 였고 두 부모는 서로 조상관계가 아니다. 담은 것: -|x| 에 부분미분 정의 부등식을 쓰면 집합이 공집합이 되어 막히는 계산, 0 으로 가는 점열의 기울기 극한 {-1,1} 을 모으는 다음 수, 극대점에서 0 을 품게 하려면 볼록껍질이 필요하다는 데까지 가는 직관, conv 로 쓴 정의와 일반화 방향도함수 f^circ 의 상극한 정의, 성질 여섯(존재와 모양, 지지함수 표현, 볼록 함수와의 일치, 극값의 필요조건과 Clarke 임계점, Lebourg 평균값 정리, 합과 max 의 연산 규칙과 정칙성), 활용 다섯(묶음 방법, 민맥스, Filippov 해, Clarke 역함수 정리, ReLU 망의 자동미분). 자식 후보: 묶음 방법(bundle method, 문서 없음. proximal-gradient-method 와 nesterov-acceleration 이 있는 '반복 알고리즘' 갈래 자리), Mordukhovich 극한 준미분과 비볼록 변분해석(문서 없음), 미분 포함과 Filippov 해(문서 없음. ordinary-differential-equations 쪽 부모가 더 자연스러울지 판정 필요). 저장소에 bundle, mordukhovich, filippov, differential-inclusion 로 시작하는 문서가 없음을 확인했다.",
+      "createdAt": "2026-10-11T20:48:41.622Z",
+      "seq": 2107
+    },
+    {
+      "id": "0e0b4461",
+      "title": "area-formula 의 후속 간선",
+      "priority": 11,
+      "note": "39차(2026-10-11)에 area-formula(면적공식, 109줄)를 hausdorff-dimension 과 rademacher-theorem 의 자식으로 새로 쓰고 리프로 남겼다. check-cycle --allow-new 는 둘 다 OK. 담은 것: phi(x)=x^2 를 [-1,1] 에서 치환적분하면 2 가 나오는데 상의 길이는 1 이라 막히고, y 의 원상이 두 점이라 원상의 개수를 적분해야 맞는다는 직관, Jf=sqrt(det(Df^T Df)) 정의, 면적공식과 단사 경우의 곡면적, 선형사상 극분해에서 시작해 Lipschitz 선형화로 조각내는 증명 요지, 적분꼴, 여면적공식(J^*f, 좌표사영에서 Fubini). 자식 후보: rectifiable 집합과 기하측도론(문서 없음. 'rectifiable' 로 검색해도 없다), 유계변동 함수의 집합 판본과 유한 주연집합(sets of finite perimeter, 문서 없음. bounded-variation 이 있으니 그 자식이 더 자연스러울지 판정 필요), 극소곡면과 Plateau 문제(문서 없음), coarea 를 쓰는 Sobolev 부등식 증명(sobolev-spaces 가 있으므로 본문 링크로 충분할지 판정). hausdorff-dimension 은 이번에 리프에서 벗어났다. measure-theory-overview 의 '측도와 가측성' 갈래에 Hausdorff 차원 다음 줄로 넣었고, 개관 지도 mermaid 에는 넣지 않았다. HD 노드가 지도에 없어 HD --> AF 를 더하면 들어오는 간선이 없는 고립 진입점이 생기기 때문이다.",
+      "createdAt": "2026-10-11T20:52:42.722Z",
+      "seq": 2109
+    },
+    {
+      "id": "aa74d0da",
+      "title": "hyperbolic-functions 의 후속 간선과 Wirtinger 부등식 판정",
+      "priority": 11,
+      "note": "39차(2026-10-11)에 hyperbolic-functions(쌍곡함수, 111줄)를 power-series 의 자식으로 새로 쓰고 리프로 남겼다. 큐 5c017ee3 의 항목 (1) 처리이고 그 항목에는 (2) Wirtinger 부등식이 남았다. 지수함수나 삼각함수를 다루는 문서가 저장소에 없어 power-series 를 유일한 부모로 잡았다(ls docs | grep -iE 'exponential|logarithm|trigono' 로 확인. exponential-families 는 통계 문서다). catenary 를 자식으로 두지 않았다. 현수선의 개요는 쌍곡코사인이라는 결과를 쓰는 것이고 5절 둘째 자문에서 배경에 그치므로 catenary:5 에 본문 링크만 걸었다. 담은 것: y''=y 를 두 초기조건으로 풀어 짝과 홀 조각을 얻는 직관, 제곱 차가 1 이라 쌍곡선을 매개화하는 것, 정의와 나머지 네 함수, 짝홀로 가른 멱급수, 덧셈정리와 미분, 로그 꼴 역함수, cosh(it)=cos t, 활용 넷(현수선, 적분 치환, tanh 활성함수, Lorentz 변환의 rapidity). 자식 후보: Gudermann 함수와 Mercator 도법(문서 없음), 쌍곡기하의 거리공식(hyperbolic-3-manifolds 가 있으나 3차원 다양체 문서라 부모가 따로 있다. 판정 필요). Wirtinger 부등식은 별도 항목으로 남아 있고, sobolev-spaces:93 의 '## Poincaré 부등식' 절과 겹치는지 8절로 먼저 판정할 것.",
+      "createdAt": "2026-10-11T20:56:03.021Z",
+      "seq": 2111
+    },
+    {
+      "id": "496826cf",
+      "title": "wirtinger-inequality 의 후속 간선",
+      "priority": 11,
+      "note": "39차(2026-10-11)에 wirtinger-inequality(Wirtinger 부등식, 94줄)를 fourier-series 의 자식으로 새로 쓰고 리프로 남겼다. 큐 5c017ee3 의 항목 (2) 처리로 그 항목을 지웠다(항목 (1) 쌍곡함수는 같은 회차에 hyperbolic-functions 로 썼다). 8절 겹침 판정: sobolev-spaces:93 의 '## Poincaré 부등식' 절과 합치지 않았다. 그 절은 W_0^{1,p} 경계값 0 의 고차원 판본이고 최적 상수를 다루지 않는 반면 이 문서는 주기 경계와 평균 0 조건에서 최적 상수 (L/2pi)^2 와 등호 조건(1차 Fourier 항만 남을 때)이 핵심이다. 두 문서가 서로 없이 읽히고 부모가 각각 따로 있다. '## 고차원 판본' 절에서 sobolev-spaces 를 본문 링크해 관계를 적었다. 부모를 fourier-series 하나로 잡았다(lp-spaces 는 L^2 노름 때문에 후보였으나 fourier-series 가 L^2 수렴과 Parseval 을 이미 거느린다). fourier-series 의 자식이 6개가 되어 5절대로 H3 묶음 셋으로 나눴다('수렴과 부등식', '변환과 합공식', '다른 분야에서의 쓰임'). order-check 통과. isoperimetric-inequality:71 의 Wirtinger 언급에 본문 링크를 걸었다. 자식 후보: Poincaré 부등식을 독립 문서로 뗄지(지금은 sobolev-spaces 의 한 절), Rayleigh 몫과 고윳값의 변분 특징(문서 없음. sturm-liouville 이 있으니 그 자식이 더 자연스러울지 판정 필요), Hardy 부등식과 Hardy-Littlewood-Polya 류 부등식(문서 없음).",
+      "createdAt": "2026-10-11T20:58:47.376Z",
+      "seq": 2112
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -2138,14 +2202,6 @@
       "note": "2026-09-20 회차에 labelcheck.mjs 를 다시 만들어 돌렸다. 본문 링크 1064 개 가운데 라벨이 대상 제목과 같은 것과 그 접두사인 것이 693 개다. 판정 기준을 두 단계로 나눴다. (1) 느슨한 기준(라벨이 다른 문서 제목의 접두사이기도 한 경우) 38 건은 전부 오검출이다. 유형은 여섯이다: '소수'->primes 가 prime-number-theorem('소수 정리')과 겹침 8 건, 'Galois 표현'->galois-representations 가 deformation-rings('Galois 표현의 변형과 보편 변형환')과 겹침 15 건, '직관주의 논리'->intuitionism 이 kripke-semantics 와 겹침 6 건, '확률'->probability 2 건, '위상'->topology 가 topology-overview 와 겹침 3 건, '계산'/'연속'/'분포' 각 1 건. 전부 대상이 맞고 겹친 쪽은 다른 개념이다. (2) 엄격한 기준(라벨이 다른 문서의 제목과 정확히 일치하는데 그 문서를 가리키지 않는 경우) 0 건. 이 기준이 노트가 말한 진짜 사고(새 개관 이름이 기존 축약 라벨과 겹치는 것)를 잡는 그물이고 통과했다. 개관 제목은 'X 개관' 이라 정확 일치가 나지 않으므로 다음 차수에는 개관을 가리키는 라벨이 그 분야의 축 문서 라벨과 겹치는지를 따로 볼 것. 새 문서나 새 개관을 만든 회차마다 다시 돌린다",
       "createdAt": "2026-09-20T04:40:18.019Z",
       "seq": 697
-    },
-    {
-      "id": "1fd9f4cd",
-      "title": "rademacher-theorem 의 후속 간선",
-      "priority": 10,
-      "note": "2026-09-20 회차에 새로 썼다(147줄, 부모 lipschitz-maps 와 bounded-variation, 해석학 개관 '극한과 연속' 갈래). 리프다. 후속 후보 넷. (1) 면적공식과 여면적공식, 그리고 rectifiable 집합을 다루는 기하측도론 문서. 활용 절이 이름만 쓰고 링크를 걸지 못했다. (2) Sobolev 공간. W^{1,infty} 와 Lipschitz 의 동일시가 활용 절 첫 항목인데 문서가 없다. (3) Clarke 준미분과 비평활 최적화. optimization 개관 아래 자리다. (4) Kirchheim 과 Cheeger 의 거리공간 판본. 넷 다 새 문서 후보이고 이 순서가 선수관계 순이다. 무한차원 실패 절은 Lindenstrauss-Preiss-Tiser 를 각주로 달았다",
-      "createdAt": "2026-09-20T04:45:49.814Z",
-      "seq": 701
     },
     {
       "id": "c162c9e2",
@@ -2708,14 +2764,6 @@
       "seq": 1848
     },
     {
-      "id": "5c017ee3",
-      "title": "쌍곡함수와 Wirtinger 부등식 문서",
-      "priority": 10,
-      "note": "분야는 analysis. 36차 회차(2026-10-07)에 catenary 가 cosh 와 sinh 를, isoperimetric-inequality 가 Wirtinger 부등식을 정의 없이 쓴다(0절, 이름만 썼다). 둘은 별개 항목이다. (1) 쌍곡함수: catenary 의 포물선과의 구별 절이 cosh 의 Taylor 전개를 쓰고, analysis-overview 의 미적분 갈래에 자리가 있다. 지수함수 쪽 문서가 저장소에 있는지 먼저 확인할 것. (2) Wirtinger 부등식: 평균 0 인 주기함수에서 L2 노름을 도함수의 L2 노름으로 누르는 부등식이고 Poincare 부등식의 1 차원 경우다. isoperimetric-inequality 의 Hurwitz 증명 절이 Fourier 계수의 n^2-n 소멸 조건으로 이것을 가리킨다. 부모 후보는 fourier-series 와 lp-spaces 이고 sobolev-spaces 쪽 Poincare 부등식과 겹치는지 8절로 먼저 볼 것.",
-      "createdAt": "2026-10-07T21:06:24.730Z",
-      "seq": 1877
-    },
-    {
       "id": "0a0e41a3",
       "title": "Galvin–Mycielski–Solovay 정리의 후속 간선",
       "priority": 10,
@@ -3106,6 +3154,14 @@
       "note": "통계/기계학습(#statistics #machine_learning #probability). 42차에 information-geometry 를 쓰며 드러났다. 활용 절에 변분추론을 적으려 했으나 variational-inference 파일이 없어 variational-autoencoder 로 돌려 적었다. bayesian-inference 166줄도 '사후분포를 다루기 쉬운 분포족으로 근사하되 KL divergence 를 최소화하는 변분추론' 을 링크 없이 이름만 쓴다(0절). variational-autoencoder 는 재매개화 기법과 생성모형에 집중하므로 변분추론 일반이 빠져 있다. 담을 내용은 증거 하한 ELBO 와 그 분해, 역방향 KL 을 쓰는 이유와 모드 추구 성질, 평균장 근사, 좌표상승 변분추론의 갱신식이 지수족에서 기댓값모수로 적히는 것, 확률적 변분추론, Laplace 근사와의 대비다. 부모 후보는 kl-divergence 와 bayesian-inference 이고, 만들면 information-geometry 활용 절의 변분 오토인코더 항목과 bayesian-inference 166줄을 이 문서로 돌린다.",
       "createdAt": "2026-10-11T16:57:22.147Z",
       "seq": 2100
+    },
+    {
+      "id": "92e9f89b",
+      "title": "rademacher-theorem 의 남은 후속: 거리공간 판본",
+      "priority": 10,
+      "note": "2026-09-20 회차에 rademacher-theorem 을 쓰며 후보 넷을 적었고 39차(2026-10-11)에 셋이 닫혔다. (1) 면적공식은 area-formula 로 썼고 자식으로 달았다. (2) Sobolev 공간은 sobolev-spaces 가 생겨 활용 절 첫 항목에서 본문 링크한다(간선은 아니다). (3) Clarke 준미분은 clarke-subdifferential 로 썼고 자식으로 달았다. 남은 후보는 (4) 하나다. Kirchheim 의 거리공간 미분정리와 Cheeger 의 미분가능성 이론, 곧 정의역이 R^n 이 아닌 곳으로 넓힌 판본이다. 활용 절 마지막 항목이 이름만 쓴다. 저장소에 kirchheim, cheeger, metric-measure 로 시작하는 문서가 없음을 확인했다. 부모 후보는 rademacher-theorem 과 metric-spaces 이고, Banach 공간 쪽 실패(각주의 Lindenstrauss-Preiss-Tiser)를 같은 문서에 담을지는 쓸 때 판정한다. 제목이 'A와 B' 꼴이 되지 않게 할 것.",
+      "createdAt": "2026-10-11T20:52:42.966Z",
+      "seq": 2110
     },
     {
       "id": "dfb3e493",
