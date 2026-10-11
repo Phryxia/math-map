@@ -185,6 +185,7 @@ $$
 
 ## 더 알아보기
 
+- [de Finetti 정리](de-finetti-theorem.md)
 - [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)
 
 #statistics #probability #machine_learning

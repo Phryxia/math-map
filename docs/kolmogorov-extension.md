@@ -70,7 +70,7 @@ $\mathcal B(\mathbb R^T)$ 는 통조림 집합이 생성하므로, 그 안의 �
 
 ## 무한 교환가능열
 
-de Finetti 정리는 교환가능한 무한열을 다루므로 그 열이 사는 확률공간이 먼저 있어야 한다. 교환가능성에서 오는 유한차원 분포족이 정합적이므로 이 정리가 그 공간을 준다.
+[de Finetti 정리](de-finetti-theorem.md)는 교환가능한 무한열을 다루므로 그 열이 사는 확률공간이 먼저 있어야 한다. 교환가능성에서 오는 유한차원 분포족이 정합적이므로 이 정리가 그 공간을 준다.
 
 [^1]: Rick Durrett, *Probability: Theory and Examples*, 5th ed., Cambridge University Press, 2019, 2.1절과 A.3절 (정합성 조건, 통조림 집합의 대수, Kolmogorov 확장정리의 증명).
 
@@ -83,6 +83,6 @@ de Finetti 정리는 교환가능한 무한열을 다루므로 그 열이 사는
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [de Finetti 정리](de-finetti-theorem.md)
 
 #probability #measure_theory #analysis

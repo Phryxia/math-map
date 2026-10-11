@@ -75,6 +75,7 @@ graph TD
 ## 조건부 구조와 이산시간 확률과정
 
 - [조건부 기댓값](conditional-expectation.md): 부분 $\sigma$ 대수 위로의 사영
+- [de Finetti 정리](de-finetti-theorem.md): 교환가능 무한열이 독립 동일분포열의 혼합으로 유일하게 적힌다
 - [Martingale](martingales.md): 공정한 도박의 형식화, 선택적 정지와 수렴정리
 - [Doob 분해](doob-decomposition.md): martingale 과 예측 가능 과정의 합으로의 유일한 분해, 예측 가능 2차 변동
 - [Markov 연쇄](markov-chains.md): 전이행렬, 정상분포, 수렴정리
