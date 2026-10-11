@@ -78,6 +78,14 @@ $$
 
 증명의 요지. 등방표현의 기약 분해가 공간의 곱 분해를 준다. 기약 인자에서 $\mathfrak g$ 가 단순하거나 두 벌의 직합이고, 대합의 분류가 [근계](root-systems.md)의 자기동형과 Satake 도형의 분류로 환원된다. ∎
 
+## Harish-Chandra 매장
+
+**정리.** 비콤팩트형 Hermite 대칭공간은 $\mathbb C^n$ 의 유계 볼록 영역과 쌍정칙이다.[^2]
+
+증명의 요지. 복소화 $\mathfrak g_{\mathbb C}$ 안에서 복소구조의 고유값 $i$ 와 $-i$ 에 따라 $\mathfrak m$ 의 복소화를 $\mathfrak m^+\oplus\mathfrak m^-$ 로 가른다. 두 조각은 각각 아벨 부분대수이고 지수사상이 $\mathfrak m^+$ 위에서 단사다. 점을 그 역으로 $\mathfrak m^+\cong\mathbb C^n$ 의 좌표로 적으면 상이 유계 볼록 영역이 된다. $\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 에서 이 좌표가 상반평면을 단위원판으로 보내는 Cayley 변환이다. ∎
+
+$n$ 은 공간의 복소차원이다. 이 좌표로 유계 대칭영역이 $\mathbb C^n$ 의 영역으로 실현되고, 그 영역의 자기동형군이 처음의 $G$ 다.
+
 # 활용
 
 - [Grassmann 다양체](grassmannian.md)가 콤팩트형 기약 대칭공간이다. $\mathrm{O}(n)/(\mathrm{O}(k)\times\mathrm{O}(n-k))$ 의 대합이 두 블록의 부호를 바꾸는 켤레이고, Cartan 분해의 $\mathfrak m$ 이 블록 밖 성분이다.
@@ -87,6 +95,8 @@ $$
 - 유계 대칭영역을 산술 부분군으로 나눈 몫이 대수다양체가 되고, 그 다양체가 [Shimura 다양체](shimura-varieties.md)다. Hermite 조건이 몫에 복소구조를 주고, 비콤팩트형이라는 조건이 몫을 콤팩트가 아닌 공간으로 만든다.
 
 [^1]: Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press (1978), Ch. IV. 측지적 대칭의 정의, Cartan 분해, 곡률 공식과 세 유형의 분류가 이 장에 있다.
+
+[^2]: Sigurdur Helgason, *Differential Geometry, Lie Groups, and Symmetric Spaces*, Academic Press (1978), Ch. VIII. 복소화의 분해와 유계 영역으로의 매장이 이 장에 있다.
 
 # 연관 문서
 
