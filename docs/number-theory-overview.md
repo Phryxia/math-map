@@ -146,6 +146,7 @@ graph TD
 정수론의 대상을 Galois 군의 표현으로 바꿔 읽는다. 모듈러성 정리가 사는 곳이다.
 
 - [Galois 표현](galois-representations.md) → [Galois 표현의 변형환](deformation-rings.md) → [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
+- [Eichler–Shimura 관계](eichler-shimura.md): 모듈러 곡선의 Jacobi 다양체에서 Hecke 작용소가 Frobenius 와 그 쌍대의 합으로 적히는 등식. 고유형식에서 2 차원 Galois 표현을 만드는 자리
 - [p 진 Hodge 이론](p-adic-hodge-theory.md) → [Sen 이론](sen-theory.md), [Fontaine–Mazur 추측](fontaine-mazur.md)
 - [강체해석공간](rigid-analytic-spaces.md): 허용 덮개만 인정하는 Grothendieck 위상 위에 친화 준위를 붙여 비아르키메데스 체에서 해석접속을 되살린 공간
 - [Herbrand–Ribet 정리](herbrand-ribet.md): 류수와 모듈러 형식의 합동

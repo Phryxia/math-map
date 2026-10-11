@@ -143,11 +143,20 @@ $$
 
 ## 더 알아보기
 
-- [Maass 형식](maass-forms.md)
+### 작용소와 그 대수
+
 - [Satake 동형](satake-isomorphism.md)
-- [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
 - [모듈러 기호](modular-symbols.md)
 - [Hida 이론](hida-theory.md)
+
+### 다른 형식으로의 확장
+
+- [Maass 형식](maass-forms.md)
 - [Shimura 대응](shimura-correspondence.md)
+
+### Galois 표현
+
+- [Eichler–Shimura 관계](eichler-shimura.md)
+- [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
 
 #number_theory #complex_analysis #linear_algebra

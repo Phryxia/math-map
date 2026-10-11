@@ -165,6 +165,7 @@ $N=11$ 에서 $g=1$ 이므로 $\dim S_2(\Gamma_0(11))=1$ 이고, 그 1 차원 �
 
 ### 유리점과 Galois 표현
 
+- [Eichler–Shimura 관계](eichler-shimura.md)
 - [Eisenstein 아이디얼과 Mazur 의 비틀림점 정리](eisenstein-ideal.md)
 - [Heegner 점과 Gross–Zagier 공식](heegner-points.md)
 - [Fontaine–Mazur 추측](fontaine-mazur.md)
