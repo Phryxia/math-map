@@ -125,6 +125,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hamiltonian Monte Carlo](hamiltonian-monte-carlo.md)
 
 #probability #statistics #computation #algorithms

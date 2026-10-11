@@ -87,5 +87,6 @@ $L$ 이 $v$ 에서 강볼록이면 $H$ 도 $p$ 에서 볼록이고 $H$ 의 공�
 ## 더 알아보기
 
 - [Noether 정리](noether-theorem.md)
+- [Hamiltonian Monte Carlo](hamiltonian-monte-carlo.md)
 
 #differential_geometry #analysis #optimization
