@@ -79,5 +79,6 @@ $\mathfrak g/\mathfrak h$ 위의 내적 하나를 잡고 $H$ 의 [Haar 측도](h
 ## 더 알아보기
 
 - [Grassmann 다양체](grassmannian.md)
+- [대칭공간](symmetric-spaces.md)
 
 #differential_geometry #group_theory #linear_algebra #algebraic_topology

@@ -72,6 +72,7 @@ graph TD
 - [측지선](geodesics.md): 가속도의 접성분이 0 인 곡선, 지수사상과 Hopf–Rinow 정리, 켤레점
 - [측지선의 비교정리](geodesic-comparison-theorems.md): 곡률의 상한과 하한으로 Jacobi 장을 상수곡률 모형과 견준다, Rauch 와 Cartan-Hadamard 와 Bonnet-Myers
 - [Killing 벡터장](killing-vector-fields.md): 계량을 보존하는 흐름, 측지선을 따르는 보존량과 차원 상한
+- [대칭공간](symmetric-spaces.md): 점마다 측지선을 뒤집는 등거리변환을 갖는 다양체, Cartan 분해와 세 유형의 분류
 - [Gauss–Bonnet 정리](gauss-bonnet.md): 곡률 적분이 Euler 지표를 준다
 - [Ricci 흐름](ricci-flow.md): 계량을 Ricci 곡률로 변형하는 열방정식 꼴 흐름, 특이점과 수술
 - [Ricci 솔리톤](ricci-solitons.md): 확대에 변하지 않는 자기상사해, 특이점의 모형
