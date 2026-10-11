@@ -70,6 +70,7 @@ graph TD
 
 - [Nash 균형](nash-equilibrium.md): 전략형 게임의 혼합전략 균형, 고정점 논증과 minimax 값, 계산의 복잡도
 - [상관균형](correlated-equilibrium.md): 공통 신호를 보고 행동을 고르는 균형, 선형계획 표현과 후회 최소화의 수렴
+- [가격 무정부](price-of-anarchy.md): 가장 나쁜 균형의 사회적 비용과 최적 비용의 비, 아핀 지연에서 $4/3$ 유계와 Braess 역설
 
 ## 최적 수송
 
