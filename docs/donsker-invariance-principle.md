@@ -87,6 +87,6 @@ $U_1,\dots,U_n$ 이 $\lbrack 0,1\rbrack$ 위 균등분포에서 독립으로 뽑
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [경험 과정](empirical-process.md)
 
 #probability #measure_theory #statistics #theorem
