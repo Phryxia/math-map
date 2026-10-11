@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-10-11T01:00:55.220Z",
-  "nextSeq": 2062,
+  "savedAt": "2026-10-11T05:04:56.389Z",
+  "nextSeq": 2069,
   "items": [
-    {
-      "id": "74d02178",
-      "title": "줄 번호로 문단을 교체하다 헤딩을 덮어쓰는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차에 logicism 을 통독하며 문단 14 곳을 줄 번호 기반 스크립트로 갈아 끼웠는데, 그 가운데 일곱 곳의 번호가 실제보다 2 줄 뒤였다. 결과로 '# 직관', '# 정의', '## 동수성', '## Principia 의 유형 이론' 네 헤딩과 '## 집합론과의 관계' 의 첫 문단이 교정문에 덮여 사라지고, 교정 대상 문단은 교정 전 상태로 남았다.\n\n원인은 문서를 'sed -n' 으로 줄 번호 없이 읽고, 번호는 앞서 돌린 다른 grep(긴 줄 목록)의 숫자를 눈으로 짝지어 쓴 것이다. 같은 회차에 'cat -n' 으로 읽은 세 문서(formalism-hilbert-program mathematical-platonism mathematical-structuralism)는 한 곳도 어긋나지 않았다.\n\n규칙 셋. (1) 줄 번호로 교체할 문서는 반드시 'cat -n docs/<id>.md' 로 읽는다. 'sed -n' 으로 읽은 번호는 쓰지 않는다. (2) 교체 직후 'diff <(git show HEAD:docs/<id>.md | grep -n \"^#\" | sed \"s/:.*//\") <(grep -n \"^#\" docs/<id>.md | sed \"s/:.*//\")' 로 헤딩 줄 번호가 원본과 같은지 본다. 헤딩을 의도적으로 고친 경우에도 줄 번호는 그대로여야 하므로 이 검사가 밀림을 바로 잡는다. (3) 밀림이 드러나면 현재 파일을 손으로 기워 맞추지 않는다. 'git show HEAD:docs/<id>.md' 를 스크래치패드로 꺼내 올바른 번호로 교정을 전부 다시 적용하고 그 파일을 docs 로 복사한다. 34차는 손으로 기우려다 한 번 더 어긋났고, 원본 재적용으로 끝냈다.\n\n검사 여섯과 validate, render-check, order-check 는 이 사고를 전혀 잡지 못한다. 헤딩이 사라져도 마크다운과 수식이 성립하고 간선도 '# 연관 문서' 절에만 있기 때문이다. 잡아낸 것은 금지 표현 grep 을 다시 돌렸을 때 고쳤어야 할 문장이 그대로 남아 있던 것이다. 교정 회차에는 교정 후 같은 grep 을 다시 돌려 0 건인지 확인한다.",
-      "createdAt": "2026-10-08T08:37:44.508Z",
-      "seq": 1895
-    },
     {
       "id": "3fd64c72",
       "title": "수식 안 글자 연산자가 명령이 아닌 사고의 검사",
@@ -74,6 +66,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 38차와 41차에 같은 일이 났다.\n\n38차 회차(2026-10-10) 시작에서 git fetch 가 '+ 4e30b1b...94078c0 claude/math -> origin/claude/math (forced update)' 를 냈고 git pull 이 'Your branch and origin/claude/math have diverged, and have 50 and 50 different commits each' 로 실패했다. 큐의 shallow clone 메모(fcb5a978)와 증상이 같아 보이지만 원인이 다르다. git merge-base HEAD origin/claude/math 가 아무것도 내놓지 않고 종료코드 1 을 냈다. 공통 조상이 아예 없는 것, 곧 원격 히스토리가 통째로 재작성된 것이다. merge-base 를 'xargs git log --oneline -1' 에 파이프로 넘기면 빈 입력에서 git log 가 HEAD 를 찍으므로 공통 조상이 있는 것처럼 보인다. merge-base 는 반드시 단독으로 돌려 종료코드를 본다.\n\n판정과 복구. 양쪽 문서 집합을 비교했다. comm -23 <(ls docs/*.md | sed 's|docs/||' | sort) <(git ls-tree -r --name-only origin/claude/math docs/ | sed 's|docs/||' | sort) 가 빈 출력이었다. 곧 원격 763 개가 로컬 639 개를 모두 포함하는 상위 집합이고 로컬에만 있는 작업이 없다. 그래서 git reset --hard origin/claude/math 로 맞추고 회차를 진행했다. 로컬에만 있는 문서가 나오면 reset 하지 않고 그 문서들을 스크래치패드로 꺼낸 뒤 reset 하고 다시 얹는다. 0절이 문서 내용은 원격 우선이라고 정한다. 이 상황에서 git pull --rebase 와 --ff-only 는 둘 다 실패하므로 세션 시작 명령을 그대로 반복하지 않는다.\n\n41차 회차(2026-10-10)에 같은 증상이 다시 났다. fetch 가 '+ 4e30b1b...2ba6423 (forced update)' 를 냈고 양쪽이 50 커밋씩 갈라졌다. 로컬 HEAD 는 'queue: 355 items (2026-10-06)' 이고 원격은 'queue: 480 items (2026-10-10)' 이었다. merge-base 가 종료코드 1 이었다. 로컬 HEAD 의 마지막 커밋 넷이 가리키는 문서(leray-schauder-degree, erdos-stone-theorem, hindman-theorem)가 셋 다 원격에도 있어 로컬 전용 작업이 없음을 확인하고 reset --hard 로 맞췄다(원격 771 개). 두 회차 모두 로컬이 원격의 부분집합이었으므로, 이 사고를 만나면 먼저 문서 집합을 비교하고 부분집합이면 reset 한다. 재발 간격이 짧으므로 세션 시작 pull 이 divergent 를 내면 shallow clone 메모보다 이 메모를 먼저 본다.",
       "createdAt": "2026-10-10T17:01:16.055Z",
       "seq": 2054
+    },
+    {
+      "id": "9cdd8f7f",
+      "title": "줄 번호로 문단을 교체하다 헤딩을 덮어쓰는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차에 logicism 을 통독하며 문단 14 곳을 줄 번호 기반 스크립트로 갈아 끼웠는데, 그 가운데 일곱 곳의 번호가 실제보다 2 줄 뒤였다. 결과로 '# 직관', '# 정의', '## 동수성', '## Principia 의 유형 이론' 네 헤딩과 '## 집합론과의 관계' 의 첫 문단이 교정문에 덮여 사라지고, 교정 대상 문단은 교정 전 상태로 남았다.\n\n원인은 문서를 'sed -n' 으로 줄 번호 없이 읽고, 번호는 앞서 돌린 다른 grep(긴 줄 목록)의 숫자를 눈으로 짝지어 쓴 것이다. 같은 회차에 'cat -n' 으로 읽은 세 문서(formalism-hilbert-program mathematical-platonism mathematical-structuralism)는 한 곳도 어긋나지 않았다.\n\n규칙 셋. (1) 줄 번호로 교체할 문서는 반드시 'cat -n docs/<id>.md' 로 읽는다. 'sed -n' 으로 읽은 번호는 쓰지 않는다. (2) 교체 직후 'diff <(git show HEAD:docs/<id>.md | grep -n \"^#\" | sed \"s/:.*//\") <(grep -n \"^#\" docs/<id>.md | sed \"s/:.*//\")' 로 헤딩 줄 번호가 원본과 같은지 본다. 헤딩을 의도적으로 고친 경우에도 줄 번호는 그대로여야 하므로 이 검사가 밀림을 바로 잡는다. (3) 밀림이 드러나면 현재 파일을 손으로 기워 맞추지 않는다. 'git show HEAD:docs/<id>.md' 를 스크래치패드로 꺼내 올바른 번호로 교정을 전부 다시 적용하고 그 파일을 docs 로 복사한다. 34차는 손으로 기우려다 한 번 더 어긋났고, 원본 재적용으로 끝냈다.\n\n검사 여섯과 validate, render-check, order-check 는 이 사고를 전혀 잡지 못한다. 헤딩이 사라져도 마크다운과 수식이 성립하고 간선도 '# 연관 문서' 절에만 있기 때문이다. 잡아낸 것은 금지 표현 grep 을 다시 돌렸을 때 고쳤어야 할 문장이 그대로 남아 있던 것이다. 교정 회차에는 교정 후 같은 grep 을 다시 돌려 0 건인지 확인한다.",
+      "createdAt": "2026-10-11T04:36:46.467Z",
+      "seq": 2062
     },
     {
       "id": "08e59419",
@@ -1924,6 +1924,54 @@
       "seq": 2051
     },
     {
+      "id": "619ef0aa",
+      "title": "simplicial-sets 의 후속 간선",
+      "priority": 11,
+      "note": "41차(2026-10-11)에 simplicial-sets(단순 집합, 119줄)를 썼다. 부모는 functors 와 cw-complexes, 자식은 infinity-categories 하나다. 같은 커밋에서 infinity-categories 의 '## 단순 집합' 정의 절을 '## 뿔' 두 문단으로 줄이고 본문 링크로 바꿨으며, 그 문서의 선수지식에 simplicial-sets 를 더했다(부모 셋: natural-transformations, homotopy-groups, simplicial-sets). topology-overview '호모토피론의 도구' 갈래 첫 줄에 넣었다.\n\n담은 것: 단체 범주 Delta 와 생성원 delta^i sigma^i, 면 사상과 퇴화 사상과 단체 항등식, 표현 가능 단순 집합과 경계와 뿔, 기하적 실현이 비퇴화 단체마다 세포를 갖는 CW 복합체라는 정리, Sing 과의 수반과 약호모토피 동치, 비퇴화 단체의 사슬 복합체, 범주의 신경.\n\n자식 후보. (1) Kan 복합체(큐 087ff912). 모든 뿔의 확장을 요구하는 단순 집합이고 지금은 simplicial-sets 활용 둘째 항목과 infinity-categories 45줄이 정의만 적는다. 문서가 생기면 부모는 simplicial-sets 와 homotopy-groups 이고 infinity-categories 의 자식은 아니다(안쪽 뿔과 모든 뿔은 포함관계가 반대다). (2) 모형 범주. simplicial-sets 는 Quillen 모형 구조를 담지 않았다. 문서가 없다. (3) 안정 무한 범주(큐 b6b5191d)는 infinity-categories 의 자식이고 simplicial-sets 의 직접 자식이 아니다.\n\n판단한 것. classifying-spaces 를 자식으로 두지 않았다. 그 문서의 부모가 characteristic-classes 와 principal-bundles 이고 5절 '부모를 빼도 자식의 개요가 그대로 읽히는가' 에 걸린다(BG 는 신경 없이 주다발의 분류로 정의된다). homology 도 자식이 아니다. 단순 집합이 단체복합체의 일반화이므로 방향이 반대이고, 직관 절에서 본문 링크로만 쓴다.",
+      "createdAt": "2026-10-11T04:44:06.428Z",
+      "seq": 2063
+    },
+    {
+      "id": "5e1c79a7",
+      "title": "kan-complexes 의 후속 간선",
+      "priority": 11,
+      "note": "41차(2026-10-11)에 kan-complexes(Kan 복합체, 99줄)를 썼다. 부모는 simplicial-sets 하나이고 지금은 리프다. topology-overview '호모토피론의 도구' 갈래에 단순 집합 다음 줄로 넣었다.\n\n담은 것: 모든 뿔의 채움을 요구하는 Kan 조건, Kan 올화와 Delta^0 으로 가는 사상, 단체 호모토피군의 정의(Z_n 과 호모토피 동치관계, 뿔 채움으로 준 군 연산), Sing T 가 Kan 복합체이고 호모토피군이 일치한다는 정리, Kan 복합체와 CW 복합체의 호모토피 범주 동치, 단체군이 Kan 복합체라는 Moore 의 정리, 무한 범주 가운데 무한 groupoid 인 자리.\n\n부모 판정. fibrations 를 둘째 부모로 두려다 뺐다. 5절 '부모를 빼도 자식의 개요가 그대로 읽히는가' 에 걸린다(개요와 직관이 호모토피군만 쓰고 올화를 쓰지 않는다). 활용 넷째 항목의 본문 링크로 남겼다. homotopy-groups 도 부모로 두지 않았다. cw-complexes 를 지나 simplicial-sets 의 조상이므로 중복이고, homotopy-groups 의 자식이 이미 다섯이어서 여섯이 되면 H3 묶음이 필요해진다. 개요에서 본문 링크로 썼다.\n\n자식 후보. (1) 모형 범주. Kan 복합체가 단순 집합의 Quillen 모형 구조에서 올대상인 것이 이 문서에 없다. 문서가 없다. (2) Dold-Kan 대응. 성질 '단체군' 절과 활용 둘째 항목이 정규화 사슬 복합체와의 대응을 이름만 쓴다. 문서가 없고 부모 후보는 kan-complexes 와 exact-sequences 다. (3) 극소 Kan 복합체와 Postnikov 분해. postnikov-tower 가 이미 있으므로 별도 문서보다 그 문서의 보강 자리다.",
+      "createdAt": "2026-10-11T04:48:33.888Z",
+      "seq": 2064
+    },
+    {
+      "id": "ecd35ef9",
+      "title": "price-of-anarchy 의 후속 간선",
+      "priority": 11,
+      "note": "41차(2026-10-11)에 price-of-anarchy(가격 무정부, 107줄)를 썼다. 부모는 nash-equilibrium 과 network-flow 둘이고 지금은 리프다. network-flow 는 리프였으므로 '아직 연결한 문서가 없다' 를 자식 하나로 바꿨다. optimization-overview '게임과 균형' 갈래에 상관균형 다음 줄로 넣었다. nash-equilibrium 의 '균형의 비효율' 절 마지막 문단에서 가격 무정부를 굵게 정의하던 것을 링크로 바꾸고 아핀 지연의 4/3 을 적었다.\n\n담은 것: Wardrop 모형의 지연 함수와 흐름과 사회적 비용, Wardrop 균형, 가격 무정부의 정의, Beckmann 가능함수 Phi 의 최소화와 균형의 동치(균형의 존재와 비용의 유일성), 아핀 지연에서 4/3 유계와 변분 부등식 증명(변마다 a(g-f/2)^2>=0), 차수 d 다항식의 Theta(d/log d), Braess 역설의 네 꼭짓점 예, Rosenthal 가능함수와 혼잡 게임의 순수전략 균형과 5/2.\n\n자식 후보. (1) 안정 가격과 네트워크 설계 게임. 활용 넷째 항목이 H_n 을 적었을 뿐이고 공정 비용 분담 게임의 정의가 없다. 문서가 없다. (2) 가능함수 게임. 성질 '혼잡 게임' 절이 Rosenthal 가능함수만 담았고 Monderer-Shapley 의 혼잡 게임과 정확 가능함수 게임의 동치가 없다. 문서가 없고 부모는 price-of-anarchy 하나가 된다. (3) 메커니즘 설계와 VCG. nash-equilibrium 활용 '경매 설계' 가 이름만 쓴다. 부모는 nash-equilibrium 이 맞고 price-of-anarchy 가 아니다.\n\n판정. unique-games 를 자식으로 두지 않았다. 근사 불가능성 쪽이고 가격 무정부와 선수관계가 없다. correlated-equilibrium 과도 간선을 넣지 않았다. 둘 다 nash-equilibrium 의 자식이고 서로 조상관계가 아니다.",
+      "createdAt": "2026-10-11T04:53:15.149Z",
+      "seq": 2065
+    },
+    {
+      "id": "97ffd64a",
+      "title": "conditional-random-fields 의 후속 간선",
+      "priority": 11,
+      "note": "41차(2026-10-11)에 conditional-random-fields(조건부 무작위장, 113줄)를 썼다. 부모는 exponential-families 와 hidden-markov-model 둘이고 지금은 리프다. hidden-markov-model 은 리프였으므로 '아직 연결한 문서가 없다' 를 자식 하나로 바꿨다. machine-learning-overview '확률적 모형' 갈래에 Gauss 과정 다음 줄로 넣었다.\n\n담은 것: 선형사슬 조건부 무작위장의 정의(특성함수와 분할함수), 전이 행렬 M_t, 전향 재귀로 분할함수를 O(N^2 T) 에 얻는 정리와 후향 벡터로 인접 쌍 주변분포, 조건부 로그 가능도의 볼록성과 기울기가 특성의 표본값과 조건부 기댓값의 차라는 것, 은닉 Markov 모형과 같은 조건부 분포족을 주는 특성 선택, 라벨 편향.\n\n자식 후보. (1) 믿음 전파와 연접 나무. 활용 셋째 항목이 일반 무방향 그래프의 분할함수가 나무 분해 폭에 따라 커진다고만 적었다. 큐 fbb7d6c7(확률 그래프 모형의 추론)이 같은 자리이고, 문서가 생기면 부모는 conditional-random-fields 와 treewidth 다. (2) 구조적 예측과 최대 여유 Markov 망. 문서가 없다. 힌지 손실 쪽이므로 부모 후보에 svm 류 문서가 더 든다. (3) 변분 추론. 근사 추론 쪽이고 저장소 상태를 확인하지 않았다.\n\n판정. maximum-likelihood 를 부모로 두지 않았다. exponential-families 의 부모이므로 중복이다. dynamic-programming 도 두지 않았다. hidden-markov-model 의 부모라서 조상이고, 활용 첫 항목에서 본문 링크로 썼다.",
+      "createdAt": "2026-10-11T04:56:29.603Z",
+      "seq": 2066
+    },
+    {
+      "id": "54989e2c",
+      "title": "pathwidth 의 후속 간선과 가지폭 문서",
+      "priority": 11,
+      "note": "41차(2026-10-11)에 pathwidth(경로폭, 108줄)를 썼다. 부모는 treewidth 하나이고 지금은 리프다. graph-theory-overview '알고리즘과 최적화' 갈래에서 나무폭 다음 줄에 넣었다. 큐 fb9f69e2 '경로폭과 분지폭' 을 4절 제목 규칙대로 경로폭 하나로 좁힌 결과다.\n\n담은 것: 경로 분해의 세 조건(덮기, 간선, 연속성), 경로폭의 정의, tw <= pw 와 pw = O(tw log n) 및 완전 이진나무가 log n 을 뺄 수 없게 하는 예(깊이 h 에서 pw = ceil(h/2)), 구간 그래프 부분그래프 특성화와 정점 분리 수, 정점 탐색 수 = pw + 1, 마이너 단조성과 k=1 의 금지 마이너 둘(삼각형과 S(2,2,2)), 가지폭과의 상수배 관계.\n\n가지폭은 별도 문서로 남겨 두었다. pathwidth '가지폭과의 비교' 절이 Robertson-Seymour GM X 의 bw <= tw+1 <= floor(3bw/2) 만 담았고 삼차 나무 분해의 정의와 가지 분해 위의 동적 계획법이 없다. 문서를 만들면 부모는 treewidth 하나이고 제목은 '가지폭', 파일명은 branchwidth 다. 분야는 graph_theory.\n\n다른 자식 후보. (1) 구간 그래프. 성질 '구간 그래프' 절이 특성화에 쓰기만 하고 구간 그래프 자체의 문서가 저장소에 없다. 부모는 graphs 와 perfect-graph 류 문서이고 pathwidth 의 자식이 아니다. (2) 그래프 탐색 게임(추격 회피). 성질 '탐색 수' 절이 정점 탐색만 담았고 간선 탐색과 혼합 탐색의 단조성 정리가 없다. 부모는 pathwidth 가 맞다.",
+      "createdAt": "2026-10-11T05:00:03.176Z",
+      "seq": 2067
+    },
+    {
+      "id": "676ec813",
+      "title": "branchwidth 의 후속 간선",
+      "priority": 11,
+      "note": "41차(2026-10-11)에 branchwidth(가지폭, 85줄)를 썼다. 앞선 작업에서 pathwidth 를 쓰며 큐 54989e2c 에 적어 둔 항목을 같은 회차에 닫았다. 부모는 treewidth 하나이고 지금은 리프다. graph-theory-overview '알고리즘과 최적화' 갈래에서 경로폭 다음 줄에 넣었다. pathwidth '가지폭과의 비교' 절의 가지폭을 링크로 바꿨다(그 문서가 Robertson-Seymour 부등식을 진술만 담으므로 간선은 넣지 않았다. pathwidth 와 branchwidth 는 둘 다 treewidth 의 자식이고 서로 조상관계가 아니다).\n\n담은 것: 삼차 나무와 잎-간선 전단사로 적은 가지 분해, 간선 집합의 경계 d(F)=V(F) 교 V(E-F), bw <= tw+1 <= floor(3bw/2) 와 안쪽 꼭짓점의 세 경계 합집합이 floor(3k/2) 이하라는 증명 요지, bw(K_n)=ceil(2n/3), 마이너 단조성, Seymour-Thomas 의 평면 쌍대성과 다항식 시간 계산.\n\n삭제한 문장. '나무폭에는 평면 그래프에서 다항식 시간 알고리즘이 알려져 있지 않다' 를 넣었다가 지웠다. 4절 열린 문제 규칙은 출처 각주를 요구하고 손에 든 두 각주(GM X, Seymour-Thomas)가 그 진술을 명시하지 않는다. 쌍대성의 쓸모를 적는 문장으로 바꿨다.\n\n자식 후보. (1) tangle 과 그래프 마이너 구조 정리. 활용 넷째 항목이 tangle 을 이름만 쓴다. 문서가 없고 부모는 branchwidth 와 graph-minors 다. (2) Matroid 가지폭. 활용 셋째 항목이 옮김만 적었다. 부모는 branchwidth 와 matroids 이고 matroids 의 자식 상태를 확인하지 않았다. (3) 평면 그래프의 매개변수 알고리즘(ratcatcher). 성질 '평면 그래프의 쌍대성' 절이 알고리즘의 존재만 적고 절차를 담지 않았다.",
+      "createdAt": "2026-10-11T05:03:39.837Z",
+      "seq": 2068
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -2388,28 +2436,12 @@
       "seq": 1729
     },
     {
-      "id": "fb9f69e2",
-      "title": "경로폭과 분지폭",
-      "priority": 10,
-      "note": "graph_theory. 이번 회차에 쓴 treewidth 가 나무 분해만 다룬다. 경로 분해(나무가 경로인 경우)와 가지 분해는 폭 불변량이 셋이 서로 상수배 안에서 묶이는 관계를 이룬다. 부모는 treewidth",
-      "createdAt": "2026-10-06T04:42:49.602Z",
-      "seq": 1759
-    },
-    {
       "id": "fbb7d6c7",
       "title": "확률 그래프 모형의 추론",
       "priority": 10,
       "note": "probability 또는 machine_learning. treewidth 의 활용 절이 결합분포를 그래프로 적은 모형과 연접 나무 절차를 링크 없이 이름만 쓴다(0절). 모랄 그래프, 연접 나무, 믿음 전파와 추론 비용이 나무폭에 지수인 것. 부모는 treewidth 와 bayesian-inference 를 볼 것",
       "createdAt": "2026-10-06T04:42:49.834Z",
       "seq": 1761
-    },
-    {
-      "id": "4601e33a",
-      "title": "가격 무정부",
-      "priority": 10,
-      "note": "optimization, graph_theory. nash-equilibrium 의 '균형의 비효율' 절이 정의만 적고 혼잡 게임의 유계를 다루지 않는다. 비이기적 경로배정의 4/3 유계(Roughgarden-Tardos), 혼잡 게임의 가능함수와 순수전략 균형의 존재가 담길 자리다. 부모는 nash-equilibrium 과 network-flow 를 볼 것",
-      "createdAt": "2026-10-06T04:50:13.499Z",
-      "seq": 1764
     },
     {
       "id": "493a738d",
@@ -2426,14 +2458,6 @@
       "note": "확률론/기계학습(#probability #machine_learning #computation). 36차에 hidden-markov-model 활용 셋째 항목이 '상태가 보이지 않는 제어 문제에서 사후분포가 믿음 상태가 된다' 를 적고 markov-decision-process 를 링크했으나 믿음 상태 위의 결정 문제 자체는 문서가 없다. 담을 내용은 믿음 상태의 갱신식(전향 재귀와 같은 꼴), 믿음 공간 위의 Bellman 방정식, 값함수가 믿음에 대해 조각마다 선형이고 볼록하다는 정리, 유한 지평 해법과 계산 복잡도. 부모 후보는 markov-decision-process 와 hidden-markov-model 둘이다.",
       "createdAt": "2026-10-06T08:42:57.706Z",
       "seq": 1778
-    },
-    {
-      "id": "7a958c30",
-      "title": "조건부 무작위장",
-      "priority": 10,
-      "note": "기계학습/확률(#machine_learning #probability #statistics). 36차에 hidden-markov-model 을 쓰며 확인한 빈자리다. 은닉 Markov 모형은 상태와 관측의 결합분포를 모형화하지만 라벨 예측에는 조건부 분포만 필요하고, 선형사슬 조건부 무작위장이 같은 격자 위에서 조건부 분포를 직접 모형화한다. 담을 내용은 지수족 꼴의 조건부 분포, 분할함수를 전향 재귀로 계산하는 것, 로그 우도가 볼록하다는 사실과 기울기가 기대 특성의 차이라는 것, 은닉 Markov 모형과의 생성 판별 대비. 부모 후보는 hidden-markov-model 과 exponential-family 류 문서다.",
-      "createdAt": "2026-10-06T08:42:57.858Z",
-      "seq": 1779
     },
     {
       "id": "b8b6de68",
@@ -2578,22 +2602,6 @@
       "note": "2026-10-08 회차에 killing-vector-fields(Killing 벡터장)를 새로 썼다(73줄, 부모 riemannian-metrics 하나, 미분기하 개관 '계량과 곡률' 갈래). 50906bbe note 가 남긴 자식 후보 (3) 을 닫은 것이다. 담은 것: 극좌표 계량에서 각운동량이 보존되는 계산을 직관 두 문단으로 끌고 가 좌표에 의존하지 않는 조건이 필요한 자리까지 간 것, Lie 미분 조건과 Killing 방정식, 측지선을 따르는 보존량 g(X, gamma')의 두 줄 증명, Lie 대수 구조와 n(n+1)/2 상한, Noether 전하와의 일치. 리프다. 판정이 필요한 것: riemannian-metrics 의 더 알아보기에서 '### 곡률과 위상' 묶음의 측지선 뒤에 넣었는데 묶음 이름과 내용이 어긋난다. Killing 벡터장은 대칭 쪽이고 그 묶음의 나머지 둘은 Gauss-Bonnet 과 Ricci 흐름이다. 항목 하나로 '### 대칭' 묶음을 세우는 것은 과하다고 보아 두지 않았다. 등거리변환군이나 상수곡률 공간 문서가 생기면 묶음을 새로 가를 것. 자식 후보: (1) 등거리변환군 - 저장소에 없다. 이 문서와 lie-groups 가 부모 후보다. (2) 상수곡률 공간과 공간형 - 없다. curvature 와 이 문서가 부모 후보다. (3) 모멘트 사상 - 50906bbe 의 후보 (1) 과 같다.",
       "createdAt": "2026-10-08T01:01:44.007Z",
       "seq": 1886
-    },
-    {
-      "id": "52e3a930",
-      "title": "단순 집합",
-      "priority": 10,
-      "note": "39차에 infinity-categories 를 쓰며 단순 집합과 뿔을 그 문서의 정의 절에서 간략히 정의했다. 단순 집합이 독립 문서가 되면 infinity-categories 의 부모가 되고(방향: simplicial-sets -> infinity-categories), 그 정의 절을 링크로 줄일 수 있다. 분야는 위상/대수적 위상(#algebraic_topology #category_theory). 붙일 부모 후보는 functors 와 cw-complexes. 특이 호몰로지의 단체 분할과의 관계도 담을 자리다.",
-      "createdAt": "2026-10-08T12:49:02.880Z",
-      "seq": 1905
-    },
-    {
-      "id": "087ff912",
-      "title": "Kan 복합체",
-      "priority": 10,
-      "note": "39차에 infinity-categories 의 사상 공간 절에서 Kan 복합체를 정의만 하고 지나갔다. 모든 뿔의 확장을 요구하는 단순 집합이고 위상공간의 호모토피형과 대응한다(호모토피 가설). 부모는 단순 집합 문서가 생기면 그것, 없으면 infinity-categories 와 homotopy-groups. 분야 #algebraic_topology #category_theory.",
-      "createdAt": "2026-10-08T12:49:03.021Z",
-      "seq": 1906
     },
     {
       "id": "b6b5191d",
