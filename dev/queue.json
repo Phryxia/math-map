@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-11T13:04:51.913Z",
-  "nextSeq": 2094,
+  "savedAt": "2026-10-11T17:00:30.224Z",
+  "nextSeq": 2104,
   "items": [
     {
       "id": "9443e5ca",
@@ -850,6 +850,38 @@
       "note": "40차 결과 메모. pop 으로 꺼낼 작업이 아니다. symmetric-spaces(94줄)를 두 커밋으로 보강해 103줄이 되었다. 3a2d3315 는 정의 절에 '## Hermite 대칭공간'(복소구조의 정의, H 의 중심이 원군을 담는 동치 조건, 유계 대칭영역의 예 둘)을 더하고 활용 절에 Shimura 다양체 항목을 더했다. 278b3e4e 는 성질 절에 '## Harish-Chandra 매장'(정리 진술, 복소화의 m+ 와 m- 분해로 된 증명의 요지, g=1 의 Cayley 변환)과 각주 [^2](Helgason Ch. VIII)를 더했다. 그래서 큐 항목 1d130832 는 같은 회차에 처리하고 제거했다. 남은 보강 후보 둘. (a) 이 문서는 아직 구형 구조가 아니고 신형(개요 직관 정의 성질 활용)이지만 직관 절이 두 문단뿐이고 독자가 어디서 막혀 대칭공간을 배우러 오는지를 적지 않았다. 4절 '설명의 순서' 를 적용해 구면과 쌍곡공간에서 측지적 대칭을 손으로 계산해 보이는 쪽으로 고칠 자리다. (b) 유형별 분류표가 없다. '## 분류' 절이 Satake 도형으로 환원된다고만 적고 기약 대칭공간의 목록(A 형 Grassmann, BD 형 구면, Hermite 인 것 넷)을 표로 두지 않았다. 표를 더하면 Hermite 대칭공간 절과 짝이 맞는다",
       "createdAt": "2026-10-11T13:04:23.322Z",
       "seq": 2093
+    },
+    {
+      "id": "26f67eb4",
+      "title": "중요도 표본추출을 별도 문서로 분리하지 않은 판정",
+      "priority": 20,
+      "note": "42차 판정. 중요도 표본추출(importance sampling) 문서를 신설하려 했으나 change-of-measure(171줄)의 '## Importance sampling 과 분산' 절이 이미 추정량 $\\hat\\theta_n=n^{-1}\\sum f(X_i)L(X_i)$, 불편성과 큰 수의 법칙에 의한 일치성, 분산 공식, 분산을 0 으로 만드는 최적 제안분포, 유효표본크기 ESS 와 가중치 몰림, 그리고 '## 절대연속성의 실패' 절에서 제안분포 지지집합이 좁을 때의 편향까지 다룬다. 활용 절의 희귀사건 추정과 강화학습 off-policy 보정도 같은 문서에 있다. 새 문서를 만들면 이 절들을 옮겨야 하고 측도변환 문서에서 그 응용이 빠진다. 8절 기준으로 change-of-measure 는 1000줄에 멀고 제목도 한 개념이므로 분할 요건이 아니다. 남는 자리는 자기정규화 추정량의 편향과 순차 중요도 표본추출·입자 여과인데, 이것은 중요도 표본추출 문서가 아니라 입자 여과(particle filter) 문서의 몫이다. 저장소에 particle-filter 가 없고 hidden-markov-model 이 전향 후향 재귀만 다루므로 그쪽을 신규 주제로 둔다.",
+      "createdAt": "2026-10-11T16:50:34.865Z",
+      "seq": 2097
+    },
+    {
+      "id": "98a03c4c",
+      "title": "mixing-time 과 MCMC 사이 간선을 긋지 않은 판정",
+      "priority": 20,
+      "note": "42차 판정. markov-chain-monte-carlo 를 신설할 때 큐 note 가 mixing-time 과의 간선 판정을 함께 요구했다. 긋지 않았다. 5절 기준으로 혼합시간을 읽지 않아도 MCMC 의 정의(세부균형과 수락확률)와 에르고딕 정리는 읽히므로 선수지식이 아니고, 반대로 MCMC 는 mixing-time 의 특수 사례나 확장이 아니라 혼합시간을 수렴 진단에 쓰는 응용이므로 자식도 아니다. 대신 양쪽 본문에 링크를 넣었다. markov-chain-monte-carlo 활용 절이 궤적 앞부분을 버리는 길이가 혼합시간으로 정해진다고 적고 mixing-time 을 링크하며, mixing-time 활용 절 74줄의 MCMC 수렴 판정 항목이 새 문서를 링크한다. langevin-dynamics 와 MCMC 사이도 같은 이유로 간선을 긋지 않고 본문 링크만 두었다(Langevin 은 Fokker-Planck 아래의 SDE 문서이고 MCMC 의 특수 사례로 서술되어 있지 않다).",
+      "createdAt": "2026-10-11T16:59:28.790Z",
+      "seq": 2101
+    },
+    {
+      "id": "992c4f61",
+      "title": "4절 비유 금지 grep 의 용어 오탐 네 건 (42차)",
+      "priority": 20,
+      "note": "42차 전수 확인. grep -noE '은탄환|청구서|사다리[^꼴]|열쇠|씨앗|뼈대|심장|지름길|함정|공짜|무기[^억]|마법[^ 상]|잠식|청사진|적신호|신호탄|디딤돌|징검다리|주춧돌' docs/*.md 가 네 자리를 내놓았고 모두 4절이 정한 예외(용어의 일부)다. elliptic-curves 118줄의 'Montgomery 사다리'(Montgomery ladder, 상수 시간 스칼라 곱 알고리즘), lie-algebras 162줄의 '사다리 연산자'(ladder operator), mandelbrot-set 55줄의 '심장꼴'(cardioid, 주기 1 성분의 모양), post-quantum-cryptography 126줄의 '함정문'(trapdoor, 두 번 나온다). 패턴의 '사다리[^꼴]' 는 사다리꼴만 예외로 빼므로 사다리 연산자와 Montgomery 사다리를 계속 잡고, '심장' 은 심장꼴을, '함정' 은 함정문을 잡는다. 고칠 것이 없으니 다음 회차에서 같은 네 줄이 나오면 바로 넘긴다. 패턴을 '사다리(?!꼴| 연산자)' 처럼 좁히는 것은 CLAUDE.md 수정이라 하지 않는다.",
+      "createdAt": "2026-10-11T16:59:28.950Z",
+      "seq": 2102
+    },
+    {
+      "id": "3619aed9",
+      "title": "문장형 헤딩 grep 의 '증명의 요지' 오탐 (42차)",
+      "priority": 20,
+      "note": "42차 확인. 4절 문체 규칙의 grep -n '^##' docs/*.md | grep -E '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) *$' 가 '## 증명의 요지' 를 문장형 헤딩으로 잡는다. 패턴의 마지막 대안 '[^로]지' 가 '요지' 의 '지' 를 무는 것이고, '증명의 요지' 는 명사구이므로 규칙 위반이 아니다. 저장소에서 이 헤딩을 쓰는 문서가 수십 개이고(baker-theorem, banach-alaoglu, chebotarev, gauss-bonnet, index-theorem 등) 4절 성질 절 규칙이 증명의 요지를 적으라고 하므로 모두 정상이다. 다음 회차에서 이 grep 을 돌릴 때 '증명의 요지' 로 끝나는 줄은 제외하고 본다: grep -n '^##' docs/*.md | grep -E '(다|까|요|는|못|아니라|이유|왜|어떻게|무엇|때|[^로]지) *$' | grep -v '증명의 요지' 로 돌리면 나머지만 남는다.",
+      "createdAt": "2026-10-11T16:59:29.081Z",
+      "seq": 2103
     },
     {
       "id": "410fd79d",
@@ -2956,14 +2988,6 @@
       "seq": 1965
     },
     {
-      "id": "d887f1e7",
-      "title": "information-geometry 문서 신설",
-      "priority": 10,
-      "note": "통계·미분기하(#statistics #differential_geometry #information_theory). 39차에 fisher-information 을 쓰며 확인했다. 그 문서의 '## KL divergence 의 2차 근사' 절이 Fisher-Rao 계량을 한 문단으로 적고 끝낸다. 저장소에 information-geometry 가 없다. 담을 내용은 통계적 다양체, Fisher-Rao 계량이 재모수화에 불변인 Riemann 계량인 것, Chentsov 정리(충분통계량 불변성이 계량을 상수배까지 정한다), 지수접속과 혼합접속의 쌍대성, Bregman divergence 와 쌍대 좌표, 자연 경사법이 계량에 대한 경사하강인 것, 지수족이 평평한 다양체인 것이다. 부모 후보는 fisher-information 과 differential-geometry-overview 또는 riemannian-metric 류. 쓰기 전에 kl-divergence 110줄의 Bregman divergence 언급과 exponential-families 의 로그분배함수 절을 읽고 분담을 정할 것",
-      "createdAt": "2026-10-09T12:52:38.720Z",
-      "seq": 1973
-    },
-    {
       "id": "d864eb75",
       "title": "trust-region 문서 신설",
       "priority": 10,
@@ -2978,22 +3002,6 @@
       "note": "해석·조합(#analysis #combinatorics #measure_theory). 39차에 brunn-minkowski 를 쓰며 확인했다. 그 문서의 '## 활용' 절 셋째가 혼합부피와 Alexandrov-Fenchel 부등식을 링크 없이 이름만 쓴다(0절). 저장소에 mixed-volumes 가 없다. 담을 내용은 Minkowski 의 정리(볼록체들의 선형결합의 부피가 동차다항식이고 그 계수가 혼합부피), Steiner 공식과 내재부피, 혼합부피의 단조성과 평행이동 불변성, Alexandrov-Fenchel 부등식과 Brunn-Minkowski 가 그 특수 경우인 것, Minkowski 의 1차 부등식, 조합론에서 행렬식 영구치의 van der Waerden 추측 증명에 쓰인 것이다. 부모 후보는 brunn-minkowski. 만들면 brunn-minkowski 활용 절에 링크를 건다",
       "createdAt": "2026-10-09T13:00:20.495Z",
       "seq": 1978
-    },
-    {
-      "id": "490be5a7",
-      "title": "de Finetti 정리 문서 신설",
-      "priority": 10,
-      "note": "확률론(#probability #measure_theory #statistics). 41차에 kolmogorov-extension 을 쓰며 활용 절 '## 무한 교환가능열' 에서 이름만 쓰고 지나갔다(0절). 저장소에 de-finetti 류 파일이 없고 교환가능성(exchangeability)을 다룬 문서도 없다. 담을 내용은 교환가능열의 정의(유한 순열에 분포가 불변), 0-1 열의 de Finetti 정리(교환가능 무한열은 베타 혼합이 아니라 임의의 사전분포에 대한 Bernoulli 혼합으로 유일하게 적힌다), 일반 상태공간의 Hewitt-Savage 판, 유한열에서는 정리가 깨지는 것(유한 교환가능열의 반례), 교환가능 sigma 대수와 Hewitt-Savage 0-1 법칙, Bayes 통계에서 사전분포의 근거로 쓰이는 자리다. 부모 후보는 random-variables 와 bayesian-inference 이고 kolmogorov-extension 도 후보다(무한열이 사는 확률공간을 그 정리가 준다). 만들면 kolmogorov-extension 활용 절의 이름을 링크로 바꾼다.",
-      "createdAt": "2026-10-09T16:53:54.256Z",
-      "seq": 1985
-    },
-    {
-      "id": "34f1ab7d",
-      "title": "Markov 연쇄 Monte Carlo 와 Metropolis-Hastings 문서 신설",
-      "priority": 10,
-      "note": "확률론/계산(#probability #statistics #computation). 39차에 langevin-dynamics 를 쓰며 드러났다. 그 문서 '이산화의 편향' 절 둘째 문단이 '한 걸음을 제안으로 쓰고 수락 확률로 보정하면 정상분포가 정확히 pi 가 된다' 고 적고 Metropolis 보정을 링크 없이 이름만 썼다(0절). 저장소에 metropolis 나 mcmc 문서가 없다. 담을 내용은 불변분포를 목표로 하는 전이핵의 구성, 세부균형과 수락 확률 min(1, pi(y)q(y,x)/pi(x)q(x,y)), 에르고딕성과 혼합시간, Gibbs 표본추출, 수락률과 제안 분산의 조정. 부모 후보는 markov-chains 와 langevin-dynamics 이고(MALA 가 Langevin 제안의 보정판) mixing-time 과의 간선도 함께 판정한다.",
-      "createdAt": "2026-10-10T00:58:30.262Z",
-      "seq": 2005
     },
     {
       "id": "7bd7ef61",
@@ -3058,6 +3066,38 @@
       "note": "계산론(#computation #logic). 40차에 본문 링크 라벨을 판정하며 확인했다. '정지 문제' 라벨로 computability.md 를 가리키는 본문 링크가 rice-theorem:5, rice-shapiro-theorem:67, turing-degrees:5, cardinality:7 네 곳에 있고, computability 는 그 개념을 '## 정지 문제의 결정 불가능성' 절 하나로 다룬다. 판단할 것은 그 절이 별도 문서가 될 만한지다. 담길 내용은 대각선 논법에 의한 결정 불가능성, 환산을 통한 다른 문제로의 전파, Turing 도약과의 관계, Rice 정리와의 분담이고, 분담이 겹치면 만들지 않는다는 결론도 가능하다. 부모 후보는 computability 다.",
       "createdAt": "2026-10-10T12:51:52.228Z",
       "seq": 2042
+    },
+    {
+      "id": "894e39c6",
+      "title": "symplectic 적분기 문서 신설",
+      "priority": 10,
+      "note": "수치해석/미분기하(#differential_geometry #analysis #computation). 42차에 hamiltonian-monte-carlo 를 쓰며 드러났다. 그 문서 '에너지 오차와 수락률' 절이 'leapfrog 는 symplectic 적분기여서 H 의 오차가 걸음 수에 비례해 쌓이지 않는다' 고 적고 symplectic 적분기를 링크 없이 이름만 쓴다(0절). 저장소에 symplectic-integrator 류 파일이 없고 symplectic-manifolds 와 hamiltonian-mechanics 는 적분기를 다루지 않는다(ls docs | grep -iE 'symplectic|integrator|runge' 로 확인). 담을 내용은 사상이 symplectic 2형식을 보존한다는 정의, leapfrog 와 Verlet 이 같은 사상인 것, 생성함수로 짓는 고차 방법, 수정 Hamiltonian 과 그에 대한 에너지 오차가 유계로 남는 후방 오차 해석, Runge-Kutta 류 비보존 적분기와의 대비다. 부모 후보는 symplectic-manifolds 와 hamiltonian-mechanics 이고, hamiltonian-monte-carlo 의 그 문장을 링크로 바꾼다.",
+      "createdAt": "2026-10-11T16:48:47.154Z",
+      "seq": 2096
+    },
+    {
+      "id": "b48dea8c",
+      "title": "입자 여과 문서 신설",
+      "priority": 10,
+      "note": "확률론/통계(#probability #statistics #computation). 42차에 중요도 표본추출 분리를 판정하며 남은 자리로 드러났다. 저장소에 particle-filter 나 sequential-monte-carlo 류 파일이 없다(ls docs | grep -iE 'particle|filter|kalman' 로 확인). hidden-markov-model 은 이산 상태의 전향 후향 재귀와 Viterbi 복호만 다루고, change-of-measure 는 중요도 가중치의 분산과 ESS 까지만 다룬다. 담을 내용은 상태공간 모형의 여과분포 재귀, 중요도 가중치의 축차 갱신, 가중치 퇴화와 재표본추출, 자기정규화 추정량의 편향이 표본수에 반비례해 사라지는 것, 보조 입자 여과와 제안분포 선택이다. 부모 후보는 hidden-markov-model 과 change-of-measure 이고 markov-chain-monte-carlo 와의 간선은 긋지 않는다(제안과 가중치를 쓰지만 연쇄를 만들지 않는다).",
+      "createdAt": "2026-10-11T16:50:35.010Z",
+      "seq": 2098
+    },
+    {
+      "id": "ae7b74af",
+      "title": "Dirichlet 과정 문서 신설",
+      "priority": 10,
+      "note": "확률론/통계(#probability #statistics #machine_learning). 42차에 de-finetti-theorem 을 쓰며 활용 절 마지막 항목으로 중국집 과정과 Kingman 표현정리를 링크 없이 이름만 썼다(0절). 저장소에 dirichlet-process 나 chinese-restaurant 류 파일이 없다(ls docs | grep -iE 'dirichlet|chinese|stick' 로 확인하면 dirichlet-series 와 dirichlet-l-functions 만 나오고 둘은 정수론 문서다). 담을 내용은 기저측도와 집중모수로 정하는 Dirichlet 과정의 정의, 유한 분할에서 Dirichlet 분포가 나오는 정합성, 막대 쪼개기 표현, 중국집 과정과 교환가능 분할, 사후분포가 다시 Dirichlet 과정인 켤레성, 혼합 모형의 성분 수를 고정하지 않는 쓰임이다. 부모 후보는 de-finetti-theorem(교환가능 분할의 혼합 표현이 여기서 온다)과 bayesian-inference 이고 dirichlet-distribution 문서가 없으므로 정의 절에서 Dirichlet 분포를 먼저 적어야 한다.",
+      "createdAt": "2026-10-11T16:53:39.880Z",
+      "seq": 2099
+    },
+    {
+      "id": "98a3cfad",
+      "title": "변분추론 문서 신설",
+      "priority": 10,
+      "note": "통계/기계학습(#statistics #machine_learning #probability). 42차에 information-geometry 를 쓰며 드러났다. 활용 절에 변분추론을 적으려 했으나 variational-inference 파일이 없어 variational-autoencoder 로 돌려 적었다. bayesian-inference 166줄도 '사후분포를 다루기 쉬운 분포족으로 근사하되 KL divergence 를 최소화하는 변분추론' 을 링크 없이 이름만 쓴다(0절). variational-autoencoder 는 재매개화 기법과 생성모형에 집중하므로 변분추론 일반이 빠져 있다. 담을 내용은 증거 하한 ELBO 와 그 분해, 역방향 KL 을 쓰는 이유와 모드 추구 성질, 평균장 근사, 좌표상승 변분추론의 갱신식이 지수족에서 기댓값모수로 적히는 것, 확률적 변분추론, Laplace 근사와의 대비다. 부모 후보는 kl-divergence 와 bayesian-inference 이고, 만들면 information-geometry 활용 절의 변분 오토인코더 항목과 bayesian-inference 166줄을 이 문서로 돌린다.",
+      "createdAt": "2026-10-11T16:57:22.147Z",
+      "seq": 2100
     },
     {
       "id": "dfb3e493",
