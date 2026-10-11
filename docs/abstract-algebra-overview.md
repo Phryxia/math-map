@@ -102,6 +102,7 @@ graph TD
 
 - [Lie 대수](lie-algebras.md) → [근계](root-systems.md) → [Weyl 지표 공식](weyl-character-formula.md)
 - [Lie 군](lie-groups.md) → [Peter–Weyl 정리](peter-weyl.md) → [구면조화함수](spherical-harmonics.md)
+- [Clifford 대수](clifford-algebras.md): 벡터의 제곱을 이차형식으로 놓은 결합대수, 주기성과 직교군의 이중덮개
 - [Borel–Weil–Bott 정리](borel-weil-bott.md) → [Beilinson–Bernstein 국소화](beilinson-bernstein.md), [Schubert 계산](schubert-calculus.md), [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md) → [범주 O](category-o.md)
 - [Schur 다항식](schur-polynomials.md) → [Littlewood–Richardson 규칙](littlewood-richardson.md), [Schur–Weyl 쌍대성](schur-weyl-duality.md) → [Brauer 대수](brauer-algebras.md) → [Temperley–Lieb 대수](temperley-lieb-algebras.md), [분할 대수](partition-algebras.md)
 - [세포대수](cellular-algebras.md): 반단순이 아닌 대수의 기약 가군을 세포 기저와 쌍선형형식으로 분류하는 틀, 도형 대수와 Hecke 대수의 공통 구조

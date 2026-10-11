@@ -67,7 +67,7 @@ $$
 
 ## Dirac 작용소
 
-Levi-Civita [접속](connection.md)은 덮개를 통해 $P\_{\mathrm{Spin}}$ 으로 올라가고, 스피너 다발 $S$ 위의 접속을 준다. 이 공변미분에 Clifford 곱을 합성한 1계 작용소가 **Dirac 작용소** $D$ 이고, $D^2$ 가 Laplace 작용소에 곡률항을 더한 것이 된다.
+Levi-Civita [접속](connection.md)은 덮개를 통해 $P\_{\mathrm{Spin}}$ 으로 올라가고, 스피너 다발 $S$ 위의 접속을 준다. 이 공변미분에 [Clifford 대수](clifford-algebras.md)의 곱을 합성한 1계 작용소가 **Dirac 작용소** $D$ 이고, $D^2$ 가 Laplace 작용소에 곡률항을 더한 것이 된다.
 
 **정리(Lichnerowicz).** 스칼라 곡률이 양인 콤팩트 스핀 다양체에서 $D$ 의 핵은 $0$ 이다.
 
