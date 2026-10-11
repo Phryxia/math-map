@@ -42,6 +42,8 @@ $$w_n(S(a,b)) = w_n(a)+w_n(b), \qquad w_n(P(a,b)) = w_n(a)\thinspace w_n(b)$$
 
 이다.
 
+증명의 요지. $p$ 가 가역인 환에서는 고스트 사상 $a\mapsto(w_0(a),w_1(a),\dots)$ 가 전단사다. $w_n(a)$ 가 $p^n a_n$ 에 앞 성분만으로 된 식을 더한 꼴이므로 $a_n$ 을 $w_0,\dots,w_n$ 으로 풀 수 있다. 그러므로 $\mathbb Z\lbrack 1/p\rbrack$ 계수에서 $S_n$ 과 $P_n$ 이 유일하게 정해진다. 그 계수가 정수라는 것은 $x\equiv y \bmod p^k$ 에서 $x^p\equiv y^p \bmod p^{k+1}$ 이 따라오는 합동을 써서 $n$ 에 대한 귀납으로 확인한다.
+
 $A^{\mathbb N}$ 에 $a+b = S(a,b)$ 와 $a\thinspace b = P(a,b)$ 를 주어 얻은 환을 $A$ 의 **Witt 벡터** 환 $W(A)$ 라 한다. 영원소는 $(0,0,\dots)$ 이고 단위원은 $(1,0,0,\dots)$ 다. $S_0=a_0+b_0$ 이고 $S_1 = a_1+b_1+c(a_0,b_0)$ 다.
 
 $A$ 가 표수 $p$ 여도 $W(A)$ 는 표수 $p$ 가 아니다. $\mathbb F\_p$ 에서 $p\cdot(1,0,0,\dots)$ 를 계산하면 $(0,1,0,\dots)$ 이 나오고 영이 아니다.
