@@ -85,6 +85,7 @@ graph TD
 ## Lie 군과 게이지 이론
 
 - [Lie 군](lie-groups.md): 군 구조와 매끄러운 구조를 함께 가진 공간
+- [등질공간](homogeneous-spaces.md): 군이 추이적으로 작용하는 다양체, 안정자로 적은 잉여류 공간과 불변 텐서장
 - [Chern–Simons 이론](chern-simons.md): 3 차원 다양체 위의 위상적 게이지 이론
 - [Wess–Zumino–Witten 모형](wess-zumino-witten.md): 경계의 공형장론과의 대응
 
