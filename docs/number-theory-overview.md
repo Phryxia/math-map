@@ -26,7 +26,6 @@ graph TD
   MF --> MC["모듈러 곡선"]
   CFT --> LP["Langlands 강령"]
   MF --> LP
-  EC --> LP
   LP --> GR["Galois 표현"] --> PH["p 진 Hodge 이론"]
 ```
 

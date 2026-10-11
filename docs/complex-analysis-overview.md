@@ -30,7 +30,6 @@ graph TD
   RT --> GF["감마 함수"]
   AC --> GF
   RT --> PNT["소수 정리와 Riemann zeta 함수"]
-  AC --> PNT
   PNT --> DL["Dirichlet L 함수"]
   HF --> MF["모듈러 형식"]
   HF --> RR["Riemann–Roch 정리"]
