@@ -225,4 +225,8 @@ $$
 - [쌍곡 3 다양체](hyperbolic-3-manifolds.md)
 - [Teichmüller 공간](teichmuller-space.md)
 
+### 다른 분야에서의 쓰임
+
+- [정보기하](information-geometry.md)
+
 #differential_geometry #optimization #statistics

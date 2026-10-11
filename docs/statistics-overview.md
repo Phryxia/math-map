@@ -38,6 +38,7 @@ graph TD
 - [최대가능도 추정](maximum-likelihood.md): 가능도함수, 점근 정규성, Fisher 정보량과 Cramér–Rao 하한
 - [기댓값 최대화 알고리즘](em-algorithm.md): 은닉변수 모형의 최대가능도 추정, 증거 하한과 두 단계, 가능도의 단조 증가
 - [Fisher 정보](fisher-information.md): 점수함수의 공분산, 정보 등식, Cramér–Rao 하한, Fisher–Rao 계량
+- [정보기하](information-geometry.md): 분포족을 다양체로 보는 Fisher–Rao 계량, 쌍대 접속과 평평한 좌표계, 자연 경사법
 - [지수족](exponential-families.md): 자연모수와 로그분배함수, 충분통계량, 켤레 사전분포
 - [Bayes 추론](bayesian-inference.md): 사전분포와 사후분포, 사후예측분포, 최대사후추정
 
