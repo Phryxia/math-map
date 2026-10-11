@@ -58,6 +58,7 @@ graph TD
 - [Reidemeister 비틀림](reidemeister-torsion.md) → [s-코보디즘 정리](s-cobordism.md): 단순 호모토피와 고차원 분류
 ## 호모토피론의 도구
 
+- [단순 집합](simplicial-sets.md): 차수마다 단체의 집합과 면 사상을 적은 자료, 기하적 실현이 CW 복합체를 준다
 - [분류공간](classifying-spaces.md): 주다발을 사상의 호모토피류로 세고, 특성류가 그 코호몰로지에서 나온다
 - [올화](fibrations.md): 호모토피를 올릴 수 있는 사상, 올과 전체공간과 밑공간의 호모토피군을 잇는 긴 완전열
 - [Hopf 불변량](hopf-invariant.md): 사상뿔의 컵곱이 주는 정수, 값이 $1$ 인 차원이 넷뿐이라는 Adams 의 정리
