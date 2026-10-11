@@ -143,6 +143,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [조건부 무작위장](conditional-random-fields.md)
 
 #probability #statistics #computation #machine_learning
