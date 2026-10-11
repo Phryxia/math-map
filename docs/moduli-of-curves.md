@@ -70,6 +70,7 @@ $\mathcal T_g$ 는 $\mathbb R^{6g-6}$ 과 위상동형이고 작용은 고유 �
 
 - [사영다양체](projective-varieties.md)
 - [Teichmüller 공간](teichmuller-space.md)
+- [사상류군](mapping-class-group.md)
 
 ## 더 알아보기
 

@@ -79,6 +79,7 @@ graph TD
 - [다양체](manifolds.md) → [미분형식](differential-forms.md)
 - [Gauss–Bonnet 정리](gauss-bonnet.md) → [Poincaré–Hopf 정리](poincare-hopf.md): 곡률과 위상의 첫 만남
 - [Riemann 곡면](riemann-surfaces.md) → [Teichmüller 공간](teichmuller-space.md)
+- [사상류군](mapping-class-group.md): 곡면의 미분동형을 동위로 나눈 군. Dehn 비틀림 생성원, Dehn–Nielsen–Baer 정리, Nielsen–Thurston 분류
 - [Fredholm 작용소](fredholm-operators.md): 지표 정리의 해석 쪽
 
 ## 3 차원과 매듭
