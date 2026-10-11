@@ -15,6 +15,7 @@ graph TD
   VS["벡터 공간"] --> CX["볼록성"]
   MS["거리 공간"] --> CX
   CX --> SG["부분미분"]
+  SG --> CS["Clarke 준미분"]
   CX --> LD["Lagrange 쌍대성과 KKT"]
   CX --> GD["경사하강법"]
   CX --> LP["선형계획법"]
@@ -41,6 +42,7 @@ graph TD
 - [볼록성](convexity.md): 볼록집합과 볼록함수, 국소 최적해가 전역 최적해가 되는 조건
 - [준볼록 함수](quasiconvex-functions.md): 수준집합만 볼록인 함수, 이분 탐색으로 푸는 최소화
 - [부분미분](subdifferential.md): 꺾인 볼록 함수에서 기울기를 대신하는 집합, $0$ 을 품는 것이 최적성 조건
+- [Clarke 준미분](clarke-subdifferential.md): 볼록하지 않은 Lipschitz 함수에서 기울기 극한의 볼록껍질로 세우는 준미분
 - [볼록 공액](convex-conjugate.md): 함수를 받침 아핀 함수의 모임으로 바꾸는 변환, Fenchel–Moreau 정리
 - [Lagrange 쌍대성](lagrange-duality.md): 제약을 쌍대변수로 옮기는 변환과 최적성 조건
 - [압축 센싱](compressed-sensing.md): 미지수보다 적은 측정에서 희소해를 복원하는 $\ell\_1$ 최소화, 제한 등거리 성질

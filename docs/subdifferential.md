@@ -110,7 +110,7 @@ $$
 - 절댓값 벌점의 희소성. $\frac{1}{2}(x-z)^2+\lambda\vert x\vert$ 의 최적성 조건은 $x=0$ 에서 $z\in\lbrack -\lambda,\lambda\rbrack$ 이다. 구간 하나가 통째로 해를 $0$ 으로 만들고, 그래서 라쏘 해의 좌표 여럿이 정확히 $0$ 이 된다.
 - 힌지 손실의 최소화. [지지벡터기계](support-vector-machine.md)의 연성 마진 문제는 $\max(0,1-y\langle w,\thinspace x\rangle)$ 의 합이라 분류 경계 위의 표본에서 미분이 없고, 그 점에서 부분기울기를 골라 걸음을 정한다.
 - 제약 문제의 최적성. 지시함수의 부분미분이 법원뿔이므로 $0\in\partial f(x)+N\_C(x)$ 가 $C$ 위 최소화의 조건이 되고, [Lagrange 쌍대성](lagrange-duality.md)의 상보성 조건을 이 꼴로 쓴다.
-- 비볼록 Lipschitz 함수로의 확장. Clarke 준미분은 미분가능한 점에서의 기울기 극한들의 볼록껍질이고, 그런 점이 거의 어디서나 있다는 것이 [Rademacher 정리](rademacher-theorem.md)다.
+- 비볼록 Lipschitz 함수로의 확장. [Clarke 준미분](clarke-subdifferential.md)은 미분가능한 점에서의 기울기 극한들의 볼록껍질이고, 그런 점이 거의 어디서나 있다는 것이 [Rademacher 정리](rademacher-theorem.md)다.
 
 [^1]: R. T. Rockafellar, *Convex Analysis*, Princeton University Press, 1970, Theorem 23.4.
 [^2]: R. T. Rockafellar, *Convex Analysis*, Princeton University Press, 1970, Theorem 23.8.
@@ -123,6 +123,7 @@ $$
 
 ## 더 알아보기
 
+- [Clarke 준미분](clarke-subdifferential.md)
 - [근접 경사법](proximal-gradient-method.md)
 
 #optimization #analysis #machine_learning
