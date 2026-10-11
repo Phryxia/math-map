@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-10-11T05:04:56.389Z",
-  "nextSeq": 2069,
+  "savedAt": "2026-10-11T09:03:29.320Z",
+  "nextSeq": 2081,
   "items": [
-    {
-      "id": "3fd64c72",
-      "title": "수식 안 글자 연산자가 명령이 아닌 사고의 검사",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차에 union-find:89 의 정렬 비용이 $O(m log m)$ 으로 적혀 있었다. log 가 \\log 가 아니어서 MathJax 는 이것을 변수 l, o, g 의 곱으로 읽고 기울여 그린다. 식이 깨지지 않으므로 4절의 검사 여섯과 render-check, validate 가 전부 통과한다.\n\n검사법. 수식 구간만 뽑아 중괄호 명령의 인자(\\mathrm{tr} 의 tr 처럼 정상인 것)를 지운 뒤, 백슬래시가 앞에 없는 글자 연산자를 찾는다. 스크래치패드에 node 로 만든다(dev/ 는 고치지 않는다, 0절). 인라인은 $...$ 안, 블록은 $$ 줄 사이를 모아 보고 코드블록은 건너뛴다. 중괄호 인자 제거는 s.replace(/\\\\[a-zA-Z]+\\s*\\{[^{}]*\\}/g, ' ') 로 하고, 패턴은 (^|[^a-zA-Z\\\\{])(log|sin|cos|tan|exp|max|min|lim|det|dim|ker|sup|inf|gcd|lcm|deg|arg|tr|rank)(?![a-zA-Z}]) 다. 인자 제거를 빼면 \\mathrm{tr} 꼴이 160 건 오검출로 나온다.\n\n34차에 docs 전체 633 개 문서로 돌려 0 건을 확인했다(union-find 를 고친 뒤). 즉 이 사고는 저장소에 하나뿐이었다. 수식을 새로 쓰거나 고친 회차에는 그 문서들만이라도 이 검사를 돌린다.",
-      "createdAt": "2026-10-08T16:37:11.449Z",
-      "seq": 1911
-    },
     {
       "id": "4f29a976",
       "title": "큐 서버가 작업 디렉터리 밖에서 기동되어 stop 이 커밋하지 못하는 사고",
@@ -74,6 +66,22 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차에 logicism 을 통독하며 문단 14 곳을 줄 번호 기반 스크립트로 갈아 끼웠는데, 그 가운데 일곱 곳의 번호가 실제보다 2 줄 뒤였다. 결과로 '# 직관', '# 정의', '## 동수성', '## Principia 의 유형 이론' 네 헤딩과 '## 집합론과의 관계' 의 첫 문단이 교정문에 덮여 사라지고, 교정 대상 문단은 교정 전 상태로 남았다.\n\n원인은 문서를 'sed -n' 으로 줄 번호 없이 읽고, 번호는 앞서 돌린 다른 grep(긴 줄 목록)의 숫자를 눈으로 짝지어 쓴 것이다. 같은 회차에 'cat -n' 으로 읽은 세 문서(formalism-hilbert-program mathematical-platonism mathematical-structuralism)는 한 곳도 어긋나지 않았다.\n\n규칙 셋. (1) 줄 번호로 교체할 문서는 반드시 'cat -n docs/<id>.md' 로 읽는다. 'sed -n' 으로 읽은 번호는 쓰지 않는다. (2) 교체 직후 'diff <(git show HEAD:docs/<id>.md | grep -n \"^#\" | sed \"s/:.*//\") <(grep -n \"^#\" docs/<id>.md | sed \"s/:.*//\")' 로 헤딩 줄 번호가 원본과 같은지 본다. 헤딩을 의도적으로 고친 경우에도 줄 번호는 그대로여야 하므로 이 검사가 밀림을 바로 잡는다. (3) 밀림이 드러나면 현재 파일을 손으로 기워 맞추지 않는다. 'git show HEAD:docs/<id>.md' 를 스크래치패드로 꺼내 올바른 번호로 교정을 전부 다시 적용하고 그 파일을 docs 로 복사한다. 34차는 손으로 기우려다 한 번 더 어긋났고, 원본 재적용으로 끝냈다.\n\n검사 여섯과 validate, render-check, order-check 는 이 사고를 전혀 잡지 못한다. 헤딩이 사라져도 마크다운과 수식이 성립하고 간선도 '# 연관 문서' 절에만 있기 때문이다. 잡아낸 것은 금지 표현 grep 을 다시 돌렸을 때 고쳤어야 할 문장이 그대로 남아 있던 것이다. 교정 회차에는 교정 후 같은 grep 을 다시 돌려 0 건인지 확인한다.",
       "createdAt": "2026-10-11T04:36:46.467Z",
       "seq": 2062
+    },
+    {
+      "id": "a62c55f0",
+      "title": "수식 안 글자 연산자가 명령이 아닌 사고의 검사",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차에 union-find:89 의 정렬 비용이 $O(m log m)$ 으로 적혀 있었다. log 가 \\log 가 아니어서 MathJax 는 이것을 변수 l, o, g 의 곱으로 읽고 기울여 그린다. 식이 깨지지 않으므로 4절의 검사 여섯과 render-check, validate 가 전부 통과한다.\n\n검사법. 수식 구간만 뽑아 중괄호 명령의 인자(\\mathrm{tr} 의 tr 처럼 정상인 것)를 지운 뒤, 백슬래시가 앞에 없는 글자 연산자를 찾는다. 스크래치패드에 node 로 만든다(dev/ 는 고치지 않는다, 0절). 인라인은 $...$ 안, 블록은 $$ 줄 사이를 모아 보고 코드블록은 건너뛴다. 중괄호 인자 제거는 s.replace(/\\\\[a-zA-Z]+\\s*\\{[^{}]*\\}/g, ' ') 로 하고, 패턴은 (^|[^a-zA-Z\\\\{])(log|sin|cos|tan|exp|max|min|lim|det|dim|ker|sup|inf|gcd|lcm|deg|arg|tr|rank)(?![a-zA-Z}]) 다. 인자 제거를 빼면 \\mathrm{tr} 꼴이 160 건 오검출로 나온다.\n\n34차에 docs 전체 633 개 문서로 돌려 0 건을 확인했다(union-find 를 고친 뒤). 즉 이 사고는 저장소에 하나뿐이었다. 수식을 새로 쓰거나 고친 회차에는 그 문서들만이라도 이 검사를 돌린다.",
+      "createdAt": "2026-10-11T08:37:12.635Z",
+      "seq": 2069
+    },
+    {
+      "id": "dbccb652",
+      "title": "개관 지도 mermaid 의 전수 부분그래프 검사기",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 큐 항목 9443e5ca 가 36차에 눈으로 잡은 사고(개관 지도가 없는 간선을 그린다)를 39차(2026-10-11)에 전수 검사기로 돌려 2 건을 더 찾았다. number-theory-overview 의 EC --> LP (elliptic-curves -> langlands-program)와 complex-analysis-overview 의 AC --> PNT (analytic-continuation -> prime-number-theorem) 다. 둘 다 그 줄을 지웠다. 간선으로 더하지 않은 근거는 analytic-continuation 이 부모 riemann-zeta 를 통해 이미 prime-number-theorem 의 조상이고, langlands-program 은 부모가 이미 3 개여서 5절의 '4개 이상이면 다른 부모의 조상인 것을 뺀다' 에 걸린다는 것이다. 화살표 373 개 가운데 2 건이었다.\n\n검사법. 스크래치패드에 python 이나 node 로 만든다(dev/ 는 고치지 않는다, 0절). (1) node dev/graph.mjs edges --json 으로 실제 간선 집합을 받는다. (2) docs/*.md 의 첫 줄에서 id -> 제목을 모은다. (3) 개관의 mermaid 코드블록만 뽑아 ID[\"레이블\"] 꼴에서 약칭 -> 레이블을 모으고, 줄 전체가 A --> B 꼴인 것만 화살표로 읽는다(정규식 ^\\s*([A-Za-z0-9_]+)(\\[[^\\]]*\\])?\\s*-->(\\|[^|]*\\|)?\\s*([A-Za-z0-9_]+)(\\[[^\\]]*\\])?\\s*$). A --> B --> C 처럼 한 줄에 둘 이상인 줄은 이 정규식이 걸러 내지만 39차의 2 건은 그래도 다 잡혔다. (4) 레이블을 제목으로 정규화(공백과 달러 기호 제거, 긴 붙임표 통일)해 id 로 바꾸고, 해석 못한 것은 부분문자열 일치가 하나뿐일 때만 받아들이고 나머지는 '미해결' 로 따로 출력해 손으로 본다.\n\n미해결은 46 건이다. 개관 지도의 레이블이 대상 문서의 제목과 다른 경우로, Functor(문서 제목 '함자'), Adjunction, Monad, Resurgence, Heyting algebra, 'DAG 와 위상정렬'(제목 '위상정렬'), '확률변수와 기댓값'(제목 '확률변수'), '소수 정리와 Riemann zeta 함수'(제목 '소수 정리') 같은 것이다. 39차에는 이 여섯 짝(monads->kleisli-eilenberg-moore, residue-theorem->prime-number-theorem, analytic-continuation->prime-number-theorem, prime-number-theorem->dirichlet-l-functions, lovasz-theta->perfect-graphs, expander-graphs->ramanujan-graphs)을 손으로 확인해 AC --> PNT 하나만 사고였다. 레이블 표기는 4.5절이 규정하지 않으므로 그 자체가 규격 위반은 아니다. 다음 회차에 이 검사를 돌릴 때는 수동 사전에 위 레이블을 넣어 미해결을 줄인다.",
+      "createdAt": "2026-10-11T08:57:45.753Z",
+      "seq": 2076
     },
     {
       "id": "08e59419",
@@ -1972,6 +1980,30 @@
       "seq": 2068
     },
     {
+      "id": "47492c5b",
+      "title": "경험 과정 계열의 후속 간선",
+      "priority": 11,
+      "note": "2026-10-11 회차에 empirical-process 를 glivenko-cantelli 와 donsker-invariance-principle 의 자식으로 넣었다. 더 알아보기가 비어 있고 후속 후보가 둘 남았다. (1) 붓스트랩(큐에 신규 주제로 올림)은 empirical-process 의 자식이 맞다. (2) rademacher-complexity 를 부모로 둘지는 판정하지 않았다. 메모에 적힌 대로 rademacher-complexity 가 vc-dimension 을 거쳐 glivenko-cantelli 의 조상이므로 5절의 '다른 부모의 조상인 것을 뺀다' 에 걸려 부모로 넣지 않았다. 대칭화 절에서 본문 링크로만 걸었다. 반대 방향(empirical-process 를 rademacher-complexity 의 부모로)은 CYCLE 이므로 불가능하다. (3) 극한 Gauss 과정 절이 Brown 다리를 다루므로 Brown 다리 문서가 생기면 자식 후보다.",
+      "createdAt": "2026-10-11T08:44:54.879Z",
+      "seq": 2071
+    },
+    {
+      "id": "208135b3",
+      "title": "붓스트랩의 후속 간선과 잭나이프",
+      "priority": 11,
+      "note": "2026-10-11 회차에 bootstrap 을 empirical-process 의 자식으로 넣었다. 더 알아보기가 비어 있다. (1) 구간의 정확도 절이 BCa 의 가속 모수를 잭나이프 값으로 계산한다고 쓰는데 잭나이프 문서가 없어 이름만 썼다(ls docs | grep -i jackknife 가 비었다). 잭나이프는 한 점을 빼고 다시 계산하는 절차로 bootstrap 보다 좁고 재표본 추출의 특수한 꼴이므로 bootstrap 의 자식 후보다. 쓸 내용: 한 점 제거 추정량, 치우침 보정, 분산 추정의 일치성, 중위수에서 깨지는 예. (2) cross-validation 을 bootstrap 의 자식으로 둘지는 판정하지 않았다. 예측오차 추정 절에서 본문 링크로만 걸었고, 교차검증은 재표본 추출의 특수 사례가 아니라 별개의 분할 방법이므로 5절의 '도구를 한 번 쓰는 관계' 에 가깝다고 보았다. (3) m out of n 붓스트랩과 부분표본 추출은 타당성이 깨지는 예 절에서 한 문단으로 다루었고 따로 문서로 뗄 분량이 아니다.",
+      "createdAt": "2026-10-11T08:48:49.912Z",
+      "seq": 2073
+    },
+    {
+      "id": "fdeb5074",
+      "title": "Witt 벡터의 후속 간선과 Dieudonne 이론",
+      "priority": 11,
+      "note": "2026-10-11 회차에 witt-vectors 를 artin-schreier-theory 와 p-adic-numbers 의 자식으로 넣었다. 더 알아보기가 비어 있다. (1) 활용 절의 '형식군과 Dieudonne 이론' 이 Dieudonne 환 W(k)[F,V] 와 p 진 형식군의 분류를 한 문단으로만 쓴다. ls docs | grep -iE 'dieudonne|formal-group' 이 비어 있어 링크하지 않았다. 형식군이 신규 주제 후보이고 부모는 witt-vectors 와 algebraic-groups 쪽이다. (2) p-adic-hodge-theory 를 witt-vectors 의 자식으로 둘지 판정하지 않았다. 완전환의 올림 절에서 본문 링크로만 걸었다. p-adic-hodge-theory 의 현재 부모를 보고 조상관계를 check-cycle 로 확인한 뒤 결정한다. (3) 결정 코호몰로지(crystalline cohomology)도 계수환이 W 라 자식 후보이나 문서가 없다.",
+      "createdAt": "2026-10-11T08:52:55.103Z",
+      "seq": 2074
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -3212,20 +3244,36 @@
       "seq": 1588
     },
     {
-      "id": "fe6525ed",
-      "title": "Artin-Schreier-Witt 이론",
+      "id": "52dba7db",
+      "title": "4절 금지 표현 grep 전수 결과 (2026-10-11)",
       "priority": 8,
-      "note": "대수. 표수 p 체의 차수 p^m 순환확대를 길이 m Witt 벡터의 Artin-Schreier 사상으로 분류한다. artin-schreier-theory 의 '차수 p^m 순환확대' 절이 이름만 쓰고 정의를 주지 않는다. 부모 후보는 artin-schreier-theory 하나. 쓸 내용: 표수 p 의 Witt 벡터 W(k) 와 Witt 덧셈 다항식, F-1 의 성분별 확장, 지수 p^m 아벨 확대와 W_m(K)/(F-1)W_m(K) 의 대응, p 진 코호몰로지와의 연결. 주의: witt-ring 은 이차형식의 Witt 환이므로 id 가 겹치지 않게 witt-vectors 로 잡는다.",
-      "createdAt": "2026-10-09T00:45:46.925Z",
-      "seq": 1936
+      "note": "2026-10-11 회차에 docs 788 개 전체로 4절 금지 표현 grep 을 돌려 9 건이 나왔고 전부 오탐으로 판정했다. '지나지 않' 7 건(crossing-number-inequality:27 fatou-components:13 finite-projective-planes:38 fredholm-operators:93,95 residue-theorem:53 vector-spaces:50)은 모두 곡선이나 직선이 점을 통과하지 않는다는 기하 서술이다. 금지 대상은 '~에 지나지 않는다' 꼴이므로 패턴을 '에 지나지 않' 으로 좁혀야 오탐이 사라진다. '본질적으로' 2 건(gartner-ellis:41,53)은 essentially smooth 의 역어 '본질적으로 매끄럽다' 로 용어의 일부다. 같은 회차에 문장형 헤딩 grep 도 전수로 돌려 '증명의 요지' 다수와 potential-theory:37 '퍼텐셜과 에너지' 만 나왔고 둘 다 '지' 로 끝나는 명사구 오탐이다(CLAUDE.md 4절이 '증명의 뼈대' 를 '증명의 요지' 로 쓰라고 직접 권한다). 태그가 하나뿐인 문서와 구형 '## 정의' 구조 문서는 0 건이다.",
+      "createdAt": "2026-10-11T08:46:28.632Z",
+      "seq": 2072
     },
     {
-      "id": "11bd6599",
-      "title": "경험 과정",
+      "id": "fb84a1a0",
+      "title": "각주 정합 전수 결과 (39차)",
       "priority": 8,
-      "note": "statistics 또는 probability. 2026-10-10 회차에 rademacher-complexity 와 glivenko-cantelli 를 쓰며 두 문서가 같은 대상을 각자 부분적으로 말하는 것이 드러났다. rademacher-complexity 의 활용 절 '경험 과정의 상한' 과 glivenko-cantelli 의 '수렴 속도' 가 둘 다 sqrt(n)(F_n - F) 꼴을 다루지만 경험 과정 자체의 정의가 어느 문서에도 없다. 내용 후보: 지표를 가진 확률과정으로서의 정의, Glivenko-Cantelli 족과 Donsker 족의 구분, chaining 과 Dudley 적분, 묶음수(bracketing) 조건. 부모를 glivenko-cantelli 와 rademacher-complexity 둘로 할 수 있고 둘 사이에 조상관계가 있는지 check-cycle 로 먼저 본다(glivenko-cantelli 의 부모가 vc-dimension 이고 그 부모가 rademacher-complexity 이므로 조상관계가 있다. 그러면 부모는 glivenko-cantelli 하나다).",
-      "createdAt": "2026-10-10T04:53:09.331Z",
-      "seq": 2018
+      "note": "39차(2026-10-11)에 docs 790 개 전체로 각주 정합을 검사해 3 건을 고쳤다. 전부 '본문에서 참조하지 않은 각주 정의' 였고 정의없음(참조만 있고 정의가 없는 것)과 중복정의는 0 건이다. american-options 의 [^1](Cox-Ross-Rubinstein, 이항 격자의 역방향 귀납), black-scholes-equation 의 [^2](Merton, 복제 논법과 배당과 영구 옵션), virtual-species 의 [^2](Bergeron-Labelle-Leroux, 가상 종의 환 구조와 분자 기저)다. 세 각주 모두 내용에 대응하는 본문 서술이 있어 정의를 지우지 않고 그 자리에 참조를 달았다. 자리는 번호가 본문 등장 순서와 맞는 곳으로 골랐다(american-options 는 직관 절의 이항모형 계산, black-scholes-equation 은 활용 절의 복제 전략, virtual-species 는 분자 기저 절).\n\n검사법. 스크래치패드에 python 으로 만든다(dev/ 는 고치지 않는다, 0절). 코드블록을 먼저 지우고, 정의는 줄 머리의 [^라벨]: 로, 참조는 정의 줄을 지운 본문의 [^라벨] 로 모아 차집합을 양쪽으로 본다. 정의 줄을 빼지 않으면 모든 정의가 자기 자신을 참조하는 것으로 집계되어 미참조가 0 으로 나온다. validate, render-check, order-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다.",
+      "createdAt": "2026-10-11T08:59:19.576Z",
+      "seq": 2077
+    },
+    {
+      "id": "b852b24b",
+      "title": "본문 H1 구조와 중복 H2 와 문서 길이 전수 결과 (39차)",
+      "priority": 8,
+      "note": "39차(2026-10-11)에 docs 790 개 전체로 세 가지를 검사해 전부 0 건이었다. 고칠 것이 없어 커밋은 없다.\n\n(1) 본문 H1 구조. 4절이 정한 개요/직관/정의/성질/활용 다섯과 연관 문서 외의 H1 이 있거나 순서가 다른 문서는 없다. 개관 21 개는 4.5절의 개요/지도/갈래 구조를 전부 지킨다. 검사법은 코드블록을 지우고 줄 머리 '# ' 헤딩을 모아 첫 H1(제목)을 뺀 나머지에서 '연관 문서' 를 걸러 낸 뒤 ['개요','직관','정의','성질','활용'] 과 리스트 비교하는 것이다. 개관은 ['개요','지도','갈래'] 와 비교한다. 구형 문서(## 정의 / ## 성질 / ## 활용)도 0 건이다.\n\n(2) 같은 H1 구역 안의 중복 H2. 0 건이다. H1 을 만날 때마다 구역을 바꾸고 그 안에서 본 H2 를 기록해 다시 나오면 보고한다. 다른 구역에 같은 이름의 H2 가 있는 것은 정상이므로 구역을 나누지 않으면 오탐이 많다.\n\n(3) 8절의 1000 줄 기준. 최장 문서가 p-adic-hodge-theory 276 줄, satake-isomorphism 262 줄, kolyvagin-systems 249 줄이고 전체 95252 줄이다. 분할 후보는 없다.",
+      "createdAt": "2026-10-11T09:00:04.935Z",
+      "seq": 2078
+    },
+    {
+      "id": "ac48a8ed",
+      "title": "큐 항목과 저장소 제목 대조 검사 (39차)",
+      "priority": 8,
+      "note": "메모 ae0b674e(큐에 넣기 전 저장소 전수 확인)의 자동화. 39차에 큐 489 항목의 제목을 docs 790 개의 첫 줄 제목과 대조했다. 정확 일치 0 건, 부분 일치 21 건이다. 부분 일치 가운데 둘이 실제로 채워져 있었다. bb58ad2a('Rademacher 복잡도와 일반화 오차', 문서 신설 요청)는 rademacher-complexity 가 note 가 지정한 부모 concentration-inequalities 아래 생겨 제거했다. 2de49d51('Temperley-Lieb 대수와 부분인자')은 문서는 생겼고 부분인자 쪽 내용만 남아 보강 항목으로 갈아 넣었다. 나머지 19 건은 '남은 후속' 꼴이거나(Borcherds 곱, Brouwer 차수, 모멘트 사상 등) 문서가 다루지 않는 별개 주제다(621c77df 'p 진 다중 zeta 값' 은 multiple-zeta-values 와 다른 주제이고 note 가 이미 그 사실을 적고 있다, 34f1ab7d 'Markov 연쇄 Monte Carlo' 는 metropolis 나 mcmc 문서가 없어 유효하다).\n\n검사법. 스크래치패드에 python 으로 node dev/queue.mjs list --json 과 docs 의 첫 줄 제목을 읽어 정규화(공백과 달러 기호 제거, 긴 붙임표 통일, 소문자화)해 비교한다. 제목에 '후속 간선|점검|훑기|판정|결과|검사|사고|확인|보강|회귀|결정|현황|절차|통독' 이 든 항목과 note 가 '상시 재발 방지 메모' 로 시작하거나 '독자 판단' 이 든 항목은 신규 주제가 아니므로 건너뛴다. 부분 일치는 다섯 글자 이상일 때만 본다. 다음 회차에 돌릴 때는 21 건 가운데 이 메모가 판정한 것을 빼고 새로 생긴 것만 본다.",
+      "createdAt": "2026-10-11T09:03:03.105Z",
+      "seq": 2080
     },
     {
       "id": "fb947ff9",
@@ -3500,14 +3548,6 @@
       "seq": 173
     },
     {
-      "id": "2de49d51",
-      "title": "Temperley-Lieb 대수와 부분인자",
-      "priority": 4,
-      "note": "braid-groups 아래. TL_n(delta) 의 도형 기저, Jones 자취, II_1 인자의 지표가 4cos^2(pi/n) 로 양자화되는 정리",
-      "createdAt": "2026-09-14T00:16:58.049Z",
-      "seq": 174
-    },
-    {
       "id": "33e35baf",
       "title": "Kleene 고정점 정리와 영역 이론",
       "priority": 4,
@@ -3756,6 +3796,14 @@
       "seq": 1180
     },
     {
+      "id": "7b466d51",
+      "title": "Temperley-Lieb 대수의 부분인자 쪽 보강",
+      "priority": 4,
+      "note": "39차(2026-10-11)에 큐 전수 대조로 갱신했다. 옛 항목(2de49d51, 'Temperley-Lieb 대수와 부분인자')은 문서 신설 요청이었으나 temperley-lieb-algebras 문서가 그 뒤 생겼다. 남은 것은 내용 보강이다. grep 으로 확인하니 그 문서에 'Jones 자취', '부분인자', '지표', '도형 기저' 가 하나도 없다. 담을 내용: TL_n(delta) 의 도형 기저, Jones 자취, II_1 인자의 지표가 4cos^2(pi/n) 으로 양자화되는 정리. 부모는 braid-groups 쪽이 이미 있으므로 간선이 아니라 본문 보강이다.",
+      "createdAt": "2026-10-11T09:03:02.975Z",
+      "seq": 2079
+    },
+    {
       "id": "c512345c",
       "title": "양자 혼돈과 고윳값 통계",
       "priority": 3,
@@ -3810,14 +3858,6 @@
       "note": "#data_structures 가 3 개뿐이다. union-find, link-cut-trees 와 함께 묶을 자리. 회전, 잠재함수 논법, splay 의 평활 O(log n)",
       "createdAt": "2026-09-14T01:18:50.187Z",
       "seq": 190
-    },
-    {
-      "id": "bb58ad2a",
-      "title": "Rademacher 복잡도와 일반화 오차",
-      "priority": 3,
-      "note": "#machine_learning 이 9 개로 적다. concentration-inequalities 와 probabilistic-method 아래. 대칭화 논법, VC 차원과의 비교, boolean-fourier 와도 닿는다",
-      "createdAt": "2026-09-14T01:18:50.295Z",
-      "seq": 191
     },
     {
       "id": "aaceded4",
