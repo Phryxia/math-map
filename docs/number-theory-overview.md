@@ -115,6 +115,7 @@ graph TD
 - [Hida 이론](hida-theory.md): 보통 부분으로 자른 형식의 공간을 Iwasawa 대수 위 유한 평탄 가군으로 묶어 무게를 변수로 움직이는 족
 - [고유다양체](eigenvariety.md): $U_p$ 의 특성 멱급수의 영점 자취 위에 Hecke 고윳값을 올린 강체해석공간, 기울기를 열어 둔 족
 - [Siegel 모듈라이 다양체](siegel-modular-variety.md) → [Siegel 모듈러 형식](siegel-modular-forms.md): 주편극 아벨 다양체를 분류하는 Siegel 상반공간의 몫과 그 위 선다발의 절단
+- [Shimura 다양체](shimura-varieties.md): 환원군과 Hermite 대칭영역의 쌍으로 모듈러 곡선과 Siegel 모듈라이 다양체를 한 구성으로 묶은 것. 수체 위의 모형과 코호몰로지 위의 Hecke 작용
 - [Jacobi 형식](jacobi-forms.md): 차수 2 Siegel 형식을 한 변수로 전개한 계수. 지표 1 의 공간이 반정수 가중치 형식과 동형이다
 - [Igusa 불변량](igusa-invariants.md): 종수 2 곡선을 정의하는 이진 6차형식의 불변량 $J_2,J_4,J_6,J_{10}$ 과 그 비로 얻는 모듈라이 공간의 좌표
 - [분할수](partitions.md), [Mock 모듈러 형식](mock-modular-forms.md), [Dyson 의 rank 와 crank](dyson-rank-crank.md), [Borcherds 곱](borcherds-products.md): 조합론과의 접점

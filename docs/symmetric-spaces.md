@@ -88,6 +88,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Shimura 다양체](shimura-varieties.md)
 
 #differential_geometry #group_theory #algebra #linear_algebra
