@@ -72,7 +72,7 @@ $\mathrm{pw}(G)\le k$ 가 마이너에 닫힌 성질이므로 [그래프 마이�
 
 ## 가지폭과의 비교
 
-나무 분해 대신 간선을 잎에 둔 삼차 나무로 그래프를 가르는 분해의 폭을 가지폭 $\mathrm{bw}(G)$ 라 한다. 세 불변량은 상수배 안에서 묶인다.
+나무 분해 대신 간선을 잎에 둔 삼차 나무로 그래프를 가르는 분해의 폭을 [가지폭](branchwidth.md) $\mathrm{bw}(G)$ 라 한다. 세 불변량은 상수배 안에서 묶인다.
 
 **정리.** $\mathrm{bw}(G)\ge 2$ 이면 $\mathrm{bw}(G)\le\mathrm{tw}(G)+1\le\lfloor\tfrac32\mathrm{bw}(G)\rfloor$ 다[^2].
 

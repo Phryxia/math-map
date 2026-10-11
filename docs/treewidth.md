@@ -169,6 +169,7 @@ MSO 는 [1차 논리](first-order-logic.md)에 정점 집합과 간선 집합 �
 ## 더 알아보기
 
 - [경로폭](pathwidth.md)
+- [가지폭](branchwidth.md)
 - [Courcelle 정리](courcelle-theorem.md)
 
 #graph_theory #algorithms #complexity #combinatorics
