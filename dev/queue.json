@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-10T17:01:38.015Z",
-  "nextSeq": 2055,
+  "savedAt": "2026-10-11T01:00:55.220Z",
+  "nextSeq": 2062,
   "items": [
     {
       "id": "74d02178",
@@ -746,6 +746,62 @@
       "note": "판정 완료 메모. pop 으로 꺼낼 작업이 아니다. 2026-10-10 41차에 1절에 없는 전수 검사 아홉을 docs 775 개에 돌려 교정할 것이 0 건이다.\n\n(1) 태그가 하나뿐인 문서 0 건. (2) 1000 줄 초과 0 건. (3) 구형 문서 0 건. 판정법을 바꿨다. 'grep -l ^## 정의' 는 신형 문서의 하위 절을 잡아 5 건 이상을 보고하므로 쓰면 안 되고, 'H1 # 정의 가 없으면서 H2 ## 정의 가 있는 문서' 로 걸러야 한다. 그 기준으로 0 건이다. (4) 언어 없는 코드블록과 javascript/typescript/mermaid 아닌 코드블록 0 건. (5) '## 수치로 확인', '## 시뮬레이션', '## 계산으로 확인' 절 0 건. (6) 방향형 절 이름과 '대부분 열려' 꼴 범위 뭉뚱그림 0 건. (7) 4절 금지 매크로(operatorname, bm, DeclareMathOperator, newcommand) 0 건.\n\n(8) 문장형 헤딩 grep 보고 17 건이 전부 오탐이다. 16 건이 '## 증명의 요지'(baker-theorem 55, banach-alaoglu 47, casselman-shalika 69, chebotarev 60, deligne-weil-conjectures 112, finitely-generated-modules 47, gauss-bonnet 47, hartshorne-lichtenbaum 61, index-theorem 69, lagrange-inversion 45, noether-theorem 43, pila-wilkie-theorem 47, rademacher-theorem 39, spectral-sparsification 63, spectral-theorem 58, tunnell-saito 57)이고 나머지는 potential-theory 37 의 '## 퍼텐셜과 에너지' 다. 둘 다 명사구다(큐 f7c54f08, 5bc27ea2 의 판정과 같다).\n\n(9) 비유 금지 grep 보고 5 건이 전부 굳은 용어다. elliptic-curves 118 'Montgomery 사다리'(Montgomery ladder, 알고리즘 이름), lie-algebras 162 '사다리 연산자', mandelbrot-set 55 '심장꼴'(cardioid), post-quantum-cryptography 126 '함정문'(trapdoor, 두 건). 4절이 '용어의 일부인 것은 예외' 로 허용한다.\n\n'A와 B' 제목 후보는 LC_ALL=C.UTF-8 로 20 개 이상 나오는데 큐 8ce35057 의 35차 전수 판정 범위이므로 이 회차에 다시 보지 않았다.",
       "createdAt": "2026-10-10T17:00:32.523Z",
       "seq": 2053
+    },
+    {
+      "id": "96721223",
+      "title": "73f01d48 후속: 접속 문서를 만든 결과와 남은 간선 판정",
+      "priority": 20,
+      "note": "41차 다음 회차(2026-10-11)에 connection(접속, 137줄)을 vector-bundles 의 자식으로 만들고 geodesics 를 자식으로 달았다. 큐 73f01d48 이 요청한 (1) 접속 문서를 닫았다.\n\n분담. vector-bundles 는 다발 구조(전이함수, 분류, 자명성)가 주제이므로 '## 접속' 9줄과 곡률의 텐서성 정리를 그대로 두었다. riemannian-metrics 는 Levi-Civita 유일성 진술과 Christoffel 좌표 공식을 유지하고, connection 이 Koszul 공식과 증명 요지를 담는다. 새로 담은 것은 접속계수의 변환법칙 A'=h^-1 A h + h^-1 dh, 평행이동과 공변미분의 동등성, 비틀림 텐서, 접속의 존재와 아핀 구조, 홀로노미와 평탄성이다.\n\n남은 간선 판정 셋. (1) curvature 를 connection 의 자식으로 둘지. 곡률이 접속의 경로 의존성을 재므로 선수관계가 맞지만 curvature 의 부모가 이미 derivative, differential-geometry-overview, inner-product-spaces 셋이고 그 문서가 곡선과 곡면의 곡률부터 시작해 다발 없이 읽힌다. 5절 '부모를 빼도 자식의 개요가 그대로 읽히는가' 에 걸려 긋지 않았고 connection 활용 절에 본문 링크만 두었다. (2) characteristic-classes 를 connection 의 자식으로 둘지. Chern-Weil 이 접속의 곡률을 쓰지만 vector-bundles 를 거치는 경로가 이미 있어 기각했다. (3) 주다발(principal bundle)과 Ehresmann 접속 문서가 저장소에 없다. connection 의 활용 절이 Chern-Simons 작용을 접속형식으로 적고 chern-simons 가 주다발을 언급하므로, 만들면 connection 의 자식이고 lie-groups 와 부모 둘이 된다.",
+      "createdAt": "2026-10-11T00:43:03.303Z",
+      "seq": 2055
+    },
+    {
+      "id": "b692ab64",
+      "title": "주다발 문서의 결과와 남은 간선 판정",
+      "priority": 20,
+      "note": "같은 회차(2026-10-11)에 principal-bundles(주다발, 107줄)를 vector-bundles 와 lie-groups 의 자식으로 만들고 classifying-spaces 를 자식으로 달았다. classifying-spaces 의 부모가 characteristic-classes 와 둘이 되었다.\n\n분담. classifying-spaces 의 '## 주다발' 절은 위상군 주다발의 최소 정의 한 문단이고 BG 를 정의하는 데 필요하므로 그대로 두었다. principal-bundles 는 Lie 군 주다발, 틀다발과 결합다발, 구조군의 축소, 주접속(Ehresmann), 자명성 판정, 벡터다발과의 대응, 접속의 두 꼴을 담고 호모토피 분류는 진술과 당김 구성만 적어 classifying-spaces 로 넘겼다.\n\n간선 판정 셋. (1) connection 을 principal-bundles 의 부모로 두지 않았다. 주다발의 정의와 틀다발 대응, 구조군 축소가 접속을 쓰지 않고 접속은 '## 주접속' 한 절에서만 쓰이므로 5절 '부모 문서를 읽지 않으면 자식을 이해할 수 없어야 한다' 에 미치지 않는다. 개요와 그 절에 본문 링크만 두었다. 거꾸로 principal-bundles 를 connection 의 자식으로 두는 것도 기각했다. 주다발이 접속의 특수 사례나 확장이 아니다. (2) chern-simons 를 자식으로 두지 않았다. 그 문서의 부모가 de-rham-cohomology 와 lie-groups 이고 principal-bundles 와 lie-groups 가 형제가 되므로 경로가 이미 있다. (3) characteristic-classes 도 vector-bundles 경로가 있어 기각했다.\n\n후속 주제 후보 셋. 모두 저장소에 없다. (a) 스핀 구조와 Stiefel-Whitney 류. principal-bundles 활용 절 셋째가 SO(n) 틀다발의 Spin(n) 들어올림과 둘째 Stiefel-Whitney 류를 이름만 쓴다. 만들면 principal-bundles 와 characteristic-classes 의 자식이다. (b) 게이지 이론의 접속 모듈라이. classifying-spaces:68 과 principal-bundles 활용 절 다섯째가 접속 공간을 게이지군으로 나눈 몫을 이름만 쓴다. (c) 등질공간. principal-bundles 활용 절 넷째가 G -> G/H 를 주 H 다발로 적고 유도표현을 이름만 쓴다. lie-groups 와 principal-bundles 의 자식 후보다.",
+      "createdAt": "2026-10-11T00:47:28.580Z",
+      "seq": 2056
+    },
+    {
+      "id": "4dd098b8",
+      "title": "스핀 구조 문서의 결과와 남은 후속",
+      "priority": 20,
+      "note": "같은 회차(2026-10-11)에 spin-structures(스핀 구조, 96줄)를 characteristic-classes 와 principal-bundles 의 자식으로 만들고 리프로 두었다. b692ab64 가 적은 후속 후보 (a) 를 닫았다.\n\n담은 것: Spin(n) 의 완전열과 낮은 차원 동형, 스핀 구조의 정의(들어올림 사상의 두 조건), 스피너 다발, 존재 판정(w_1=w_2=0, Cech 2 코사이클 증명 요지), 구조의 개수(H^1(M;Z/2) 의 자유 추이 작용), 예 셋(구면, 방향 가능 3 다양체와 Wu 공식, CP^2 가 스핀이 아닌 이유), Dirac 작용소와 Lichnerowicz 정리.\n\n간선 판정. index-theorem 을 자식으로 두지 않았다. 그 문서의 부모가 gauss-bonnet 과 hodge-theory 이고 지표 정리의 진술이 스핀 없이 서므로 5절 기준에 미치지 않는다. 활용 절 첫째에 본문 링크만 두었다. covering-spaces 를 부모로 두지 않은 이유는 부모가 셋이 되고 Spin 군을 보편덮개로 정의하는 한 문장에서만 쓰기 때문이다. 그 문장에 본문 링크를 걸었다.\n\n후속 후보 넷. 모두 저장소에 없다. (1) Clifford 대수. spin-structures 의 'Dirac 작용소' 절이 Clifford 곱을 링크 없이 이름만 쓴다(0절). 만들면 spin-structures 의 부모 후보이지만 지금 부모가 둘이므로 교체 판단이 필요하다. 주 분야는 ring_theory 나 algebra 다. (2) Dirac 작용소를 별도 문서로. 지금은 spin-structures 의 한 절(여덟 줄)이고 4절 기준으로 증명이 한 문단이라 아직 분할 대상이 아니다. (3) Rokhlin 정리. 활용 절 둘째가 부호수의 16 가분성을 이름만 쓴다. (4) A-hat 류와 Pontryagin 수의 정수성. 활용 절 첫째가 이름만 쓴다.",
+      "createdAt": "2026-10-11T00:50:45.150Z",
+      "seq": 2057
+    },
+    {
+      "id": "89ac30f2",
+      "title": "등질공간 문서의 결과와 남은 간선 판정",
+      "priority": 20,
+      "note": "같은 회차(2026-10-11)에 homogeneous-spaces(등질공간, 83줄)를 lie-groups 의 자식으로 만들고 grassmannian 을 자식으로 달았다. b692ab64 가 적은 후속 후보 (c) 를 닫았다. grassmannian 의 부모가 exterior-algebra, manifolds, homogeneous-spaces 셋이 되었고 세 부모 사이에 조상관계가 없어 5절의 4개 기준에 걸리지 않는다.\n\n담은 것: 추이적 작용과 안정자, 잉여류 다양체의 매끄러운 구조와 차원, 등방표현, 궤도-안정자 정리(Baire 범주 정리를 쓰는 증명 요지)와 구면 사영공간 쌍곡공간의 꼴, G -> G/H 가 주 H 다발이라는 정리와 유도표현, 불변 텐서장이 등방표현의 불변 텐서와 대응한다는 정리, H 콤팩트일 때 불변 계량의 존재.\n\n간선 판정 둘. (1) principal-bundles 를 부모로 두지 않았다. 정의 절과 궤도-안정자 정리가 주다발을 쓰지 않고 '## 주다발 구조' 한 절에서만 쓰므로 5절 '부모를 빼도 자식의 개요가 그대로 읽히는가' 에 걸린다. 그 절에 본문 링크만 두었다. (2) peter-weyl 과 haar-measure 를 자식으로 두지 않았다. 둘 다 lie-groups 또는 topological-groups 축에 부모가 있고 등질공간 없이 읽히므로 활용 절 본문 링크로 두었다. spherical-harmonics 도 같다.\n\n후속 후보 둘. 모두 저장소에 없다. (1) 대칭공간. 활용 절 다섯째가 반단순 Lie 대수와 대합의 분류를 이름만 쓴다. 만들면 homogeneous-spaces 와 riemannian-metrics 의 자식 후보다. (2) 유도표현. '## 주다발 구조' 절 끝이 결합다발의 단면 공간을 유도표현으로 적고 링크 없이 이름만 쓴다(0절). 만들면 homogeneous-spaces 와 representation-theory 축의 자식이다.",
+      "createdAt": "2026-10-11T00:53:12.011Z",
+      "seq": 2058
+    },
+    {
+      "id": "7ad1b3e7",
+      "title": "Clifford 대수 문서의 결과와 남은 후속",
+      "priority": 20,
+      "note": "같은 회차(2026-10-11)에 clifford-algebras(Clifford 대수, 101줄)를 exterior-algebra 와 quadratic-forms 의 자식으로 만들고 리프로 두었다. 4dd098b8 가 적은 후속 후보 (1) 을 닫았다. 주 분야를 algebra 로 잡아 abstract-algebra-overview 의 'Lie 이론과 표현론' 갈래 Lie 군 줄 뒤에 넣었다.\n\n담은 것: Laplace 작용소의 1계 제곱근을 찾는 계산에서 관계식을 끌어낸 직관, 텐서대수 몫으로서의 정의와 차원 2^n, Cl_{0,1}=C 와 Cl_{0,2}=H, Z/2 등급과 대합, Pin 군과 Spin 군, 보편성, 외대수가 연관 등급대수라는 정리, 복소 주기 2 와 실 주기 8, Spin(n) -> SO(n) 이 이중덮개라는 정리(Cartan-Dieudonne 를 쓰는 증명 요지), 스피너 표현이 SO(n) 으로 내려오지 않는 이유.\n\n간선 판정. spin-structures 를 자식으로 두지 않았다. 그 문서의 부모가 characteristic-classes 와 principal-bundles 둘이고 스핀 구조의 정의(틀다발의 들어올림)와 존재 판정이 Clifford 대수를 쓰지 않으므로 5절 기준에 미치지 않는다. spin-structures:70 의 'Clifford 곱' 을 clifford-algebras 로 가는 본문 링크로 바꿨다. witt-ring 도 자식으로 두지 않았다. quadratic-forms 의 자식으로 이미 있고 Clifford 대수 없이 읽힌다.\n\n후속 후보 둘. 모두 저장소에 없다. (1) Bott 주기성. clifford-algebras 의 '## 주기성' 절과 활용 절 넷째가 실 주기 8 과 K 이론을 이름만 쓴다. 만들면 clifford-algebras 와 위상 K 이론 쪽의 자식 후보다. (2) Hasse-Witt 불변량. 활용 절 셋째가 판별식과 함께 이름만 쓰고 witt-ring 도 언급한다.",
+      "createdAt": "2026-10-11T00:56:09.560Z",
+      "seq": 2059
+    },
+    {
+      "id": "a41c7240",
+      "title": "differential-geometry-overview 갈래 재편 결과",
+      "priority": 20,
+      "note": "2026-10-11 회차에 '다양체와 미분형식' 갈래에서 다발 쪽 여섯(vector-bundles tangent-bundle connection principal-bundles characteristic-classes spin-structures)을 떼어 '## 다발과 접속' 갈래를 새로 세웠다. 같은 회차에 connection, principal-bundles, spin-structures 셋을 그 갈래에 더해 원래 갈래가 17 줄이 되었던 것이 이유다. 개요의 '네 줄기' 를 '다섯 줄기' 로 고치고 둘째 자리에 '다발과 그 위의 접속' 을 넣었다.\n\n갈래에 남긴 것과 뺀 것. vector-fields 는 접다발의 단면이지만 흐름과 Lie 괄호 축이라 '다양체와 미분형식' 에 남겼다. cotangent-bundle 도 표준 1 형식과 심플렉틱 구조 축이라 남겼다. 개관의 '# 지도' mermaid 는 고치지 않았다. 노드가 21 개로 4.5절의 12~20 개 기준 상한에 있고, 다발 축을 넣으려면 기존 노드를 빼야 하므로 판단을 미뤘다.\n\n남은 판단. 지도 mermaid 에 다발 축(벡터다발 -> 접속 -> 주다발 -> 특성류 -> 스핀 구조)을 넣을지. 넣으려면 Lie 군 게이지 갈래 쪽 노드(CS2 덮개공간, WZ Wess-Zumino-Witten)나 KM, RR 가운데 둘셋을 빼는 것이 후보다.",
+      "createdAt": "2026-10-11T00:57:48.336Z",
+      "seq": 2060
+    },
+    {
+      "id": "393afcde",
+      "title": "대칭공간 문서의 결과와 남은 후속",
+      "priority": 20,
+      "note": "2026-10-11 회차에 symmetric-spaces(대칭공간, 93줄)를 riemannian-metrics 와 homogeneous-spaces 의 자식으로 만들고 리프로 두었다. 89ac30f2 가 적은 후속 후보 (1) 을 닫았다. riemannian-metrics 의 '곡률과 위상' 묶음 Killing 벡터장 뒤에 넣었고 order-check 는 통과했다.\n\n담은 것: 측지적 대칭의 정의와 국소 대칭공간, 대합 sigma(g)=s_o g s_o 와 Cartan 분해 g=h+m 의 세 괄호 조건, Killing 형식의 부호로 나눈 세 유형, 곡률 공식 R(X,Y)Z=-[[X,Y],Z], 완비성과 비콤팩트형의 Cartan-Hadamard, m 을 im 으로 바꾸는 쌍대성, 기약 인자가 단순 Lie 대수와 대합의 켤레류로 분류된다는 정리. 직관 절은 nabla R 의 지표가 다섯이라 s_p 로 끌어오면 부호가 뒤집힌다는 계산 하나로 평행성을 보였다.\n\n간선 판정 둘. (1) grassmannian 을 자식으로 두지 않았다. 이미 homogeneous-spaces 의 자식이고 대칭공간 없이 읽히므로 활용 절 첫째에 본문 링크만 두었다. (2) lie-algebras 와 root-systems 를 부모로 두지 않았다. 부모가 넷이 되고, Cartan 분해와 분류 절에서만 쓰이므로 본문 링크로 두었다.\n\n후속 후보 둘. 모두 저장소에 없다. (1) 구면함수와 등질공간 위의 조화해석. 활용 절 넷째가 불변 미분작용소 대수의 가환성과 구면함수를 이름만 쓴다. 만들면 symmetric-spaces 와 spherical-harmonics 의 자식 후보다. (2) Satake 도형. '## 분류' 절 증명 요지가 이름만 쓴다. root-systems 와 symmetric-spaces 의 자식 후보다.",
+      "createdAt": "2026-10-11T01:00:35.747Z",
+      "seq": 2061
     },
     {
       "id": "410fd79d",
