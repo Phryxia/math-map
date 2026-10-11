@@ -34,6 +34,7 @@ graph TD
 
 - [Glivenko–Cantelli 정리](glivenko-cantelli.md): 경험 분포함수의 균등수렴, Kolmogorov–Smirnov 거리, Dvoretzky–Kiefer–Wolfowitz 부등식
 - [경험 과정](empirical-process.md): 함수족을 지표로 갖는 확률과정, Glivenko–Cantelli 족과 Donsker 족, 덮개수와 묶음수, 사슬 묶기와 Dudley 적분
+- [붓스트랩](bootstrap.md): 경험 분포에서의 재표본 추출, 붓스트랩 분포와 백분위 구간, Donsker 족에서의 타당성, 표본 최대값에서 깨지는 예
 - [최대가능도 추정](maximum-likelihood.md): 가능도함수, 점근 정규성, Fisher 정보량과 Cramér–Rao 하한
 - [기댓값 최대화 알고리즘](em-algorithm.md): 은닉변수 모형의 최대가능도 추정, 증거 하한과 두 단계, 가능도의 단조 증가
 - [Fisher 정보](fisher-information.md): 점수함수의 공분산, 정보 등식, Cramér–Rao 하한, Fisher–Rao 계량

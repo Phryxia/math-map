@@ -141,6 +141,6 @@ $\Vert\mathbb G_n\Vert\_{\mathcal F}$ 의 극한분포가 검정통계량의 기
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [붓스트랩](bootstrap.md)
 
 #statistics #probability #machine_learning
