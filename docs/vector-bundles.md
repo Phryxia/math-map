@@ -92,6 +92,7 @@ $$
 ## 더 알아보기
 
 - [접다발](tangent-bundle.md)
+- [접속](connection.md)
 - [특성류](characteristic-classes.md)
 
 #differential_geometry #topology #algebraic_topology

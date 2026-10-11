@@ -48,6 +48,7 @@ graph TD
 - [Whitney 매장 정리](whitney-embedding.md): $n$ 차원 다양체가 $\mathbb R^{2n}$ 에 매장된다는 정리, 좌표 사상을 단위분할로 묶는 구성
 - [벡터다발](vector-bundles.md): 점마다 붙인 벡터 공간, 전이함수와 접속, 곡률
 - [접다발](tangent-bundle.md): 접공간을 모은 다발, 좌표변환의 야코비가 전이함수, 평행화 가능성
+- [접속](connection.md): 다발 단면을 미분하는 규칙, 평행이동과 비틀림, Levi-Civita 접속의 유일성
 - [특성류](characteristic-classes.md): 곡률의 불변 다항식이 주는 코호몰로지류, Chern–Weil 이론
 - [벡터장](vector-fields.md): 접다발의 단면, 흐름과 Lie 괄호, 영점의 지수
 - [Lie 미분](lie-derivative.md): 흐름으로 끌어온 텐서장의 미분, Cartan 공식과 불변성 판정

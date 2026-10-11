@@ -93,6 +93,7 @@ $(M,g)$ 가 연결일 때 다음이 동치다.[^1]
 ## 선수지식
 
 - [Riemann 계량](riemannian-metrics.md)
+- [접속](connection.md)
 
 ## 더 알아보기
 
