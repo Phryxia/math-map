@@ -20,6 +20,10 @@ graph TD
   MF --> RM["Riemann 계량"]
   CV --> RM
   DF --> DR["de Rham 코호몰로지"]
+  DF --> SY["심플렉틱 다양체"]
+  SY --> CT["여접다발"]
+  CT --> HM["Hamilton 역학"]
+  HM --> IS["적분가능계"]
   DR --> HT["Hodge 이론"]
   RM --> HT
   EC["Euler 지표"] --> GB["Gauss–Bonnet 정리"]
