@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-12T13:05:31.453Z",
-  "nextSeq": 2167,
+  "savedAt": "2026-10-12T17:04:49.594Z",
+  "nextSeq": 2181,
   "items": [
     {
       "id": "9443e5ca",
@@ -1058,6 +1058,38 @@
       "note": "판정 완료. pop 으로 꺼낼 작업이 아니다. 44차에 trust-region 을 만들며 부모를 newton-method 하나로 정했다. line-search(선탐색)도 후보였으나 5절 기준에 맞지 않는다. 신뢰영역은 선탐색의 특수 사례도 확장도 응용도 부분도 아니고, 걸음을 고르는 다른 방식이다. 선탐색을 읽지 않아도 신뢰영역의 개요가 그대로 읽힌다. 그래서 간선을 긋지 않고 line-search 의 '## 신뢰영역 방법과의 대비' 절에서 trust-region 으로 본문 링크만 걸었고, trust-region 의 '## 선탐색과의 차이' 절에서 반대 방향으로도 걸었다. 그 결과 line-search 는 여전히 리프(더 알아보기 없음)다. 큐의 '리프 문서의 후속 간선' 작업이 line-search 를 집으면 이 판정을 보고, 자식 후보를 신뢰영역이 아닌 다른 데서 찾는다. Wolfe 조건이나 Zoutendijk 조건은 line-search 본문이 이미 다루므로 별 문서 후보가 아니고, 비선형 공액기울기(Fletcher-Reeves, Polak-Ribiere)가 선탐색을 실제로 선수지식으로 쓰는 후보다",
       "createdAt": "2026-10-12T13:05:03.367Z",
       "seq": 2166
+    },
+    {
+      "id": "db80f8d7",
+      "title": "wess-zumino-witten 의 아핀 Lie 대수 절 중복 판정",
+      "priority": 20,
+      "note": "판정 기록. 44차에 affine-lie-algebras 를 만들고 wess-zumino-witten 의 '## 아핀 Lie 대수' 절(루프대수 중심확대 정의, 레벨, Sugawara 한 줄)과 겹치는지 보았다. 8절의 통합 기준(서로 없이는 설명이 안 되고 한쪽의 더 알아보기가 다른 쪽뿐)에 맞지 않아 합치지 않았다. WZW 쪽은 흐름 J^a_m 의 교환자로 쓴 물리 표기이고 새 문서는 일반화 Cartan 행렬과 아핀 근계 쪽이다. 한 대신 WZW 본문 최초 언급(루프군의 중심확대인 아핀 Lie 대수가 된다)에 본문 링크를 달았고 affine-lie-algebras 를 WZW 의 선수지식에 더했다. WZW 의 부모가 chern-simons, lie-algebras, affine-lie-algebras 셋이 되었고 lie-algebras 가 affine-lie-algebras 의 조상이라 잉여다. 5절은 부모 4개 이상일 때만 조상을 빼라고 하므로 두었다. WZW 에 부모가 하나 더 붙는 회차에 lie-algebras 간선을 뺄지 판단한다. 뺄 때는 메모 9443e5ca 대로 개관 지도 mermaid 를 함께 본다.",
+      "createdAt": "2026-10-12T16:44:09.648Z",
+      "seq": 2169
+    },
+    {
+      "id": "7affbda9",
+      "title": "사상류군 신규 주제 항목이 노후했던 기록",
+      "priority": 20,
+      "note": "판정 기록. 44차(2026-10-12)에 큐 8f7d693e '사상류군과 Nielsen-Thurston 분류'(p6, note: teichmuller-space 아래, Dehn 비틀림 생성, 곡선복합체, 유사 Anosov 와 팽창률, 사상원환면이 쌍곡 3 다양체가 되는 정리)를 꺼내려다 mapping-class-group(80줄)이 이미 있고 note 가 요청한 넷을 모두 담고 있음을 확인해 제거했다. '## Dehn 비틀림', '## Nielsen-Thurston 분류', '## Teichmuller 공간 위의 작용' 절이 있고 활용 절에 곡선 복합체 항목이 있다. 메모 ae0b674e 의 규칙 (1) 대로 ls docs | grep -iE 'mapping|nielsen|thurston|teichmuller' 를 먼저 돌려 잡았다. 남은 판단 하나. mapping-class-group 의 부모가 classification-of-surfaces 하나이고 teichmuller-space 는 부모가 아니다. 사상류군의 정의에 Teichmuller 공간이 필요하지 않으므로 5절 기준으로는 맞다. 다만 moduli-of-curves 가 자식이고 Teichmuller 작용 절이 있어 teichmuller-space 와의 간선 방향을 따로 판단할 여지가 있다.",
+      "createdAt": "2026-10-12T16:44:52.771Z",
+      "seq": 2170
+    },
+    {
+      "id": "e7112b0f",
+      "title": "vertex-operator-algebras 의 lie-algebras 부모 간선 판정",
+      "priority": 20,
+      "note": "판정 기록. 44차(2026-10-12)에 virasoro-algebra 를 만들어 vertex-operator-algebras 의 부모로 넣었다. VOA 의 부모가 lie-algebras, modular-forms, virasoro-algebra 셋이 되었고 lie-algebras 가 virasoro-algebra 의 부모이므로 잉여 조상이다. 5절은 부모 4개 이상일 때만 조상을 빼라고 하므로 두었다. 같은 모양이 wess-zumino-witten 에도 있다(큐 db80f8d7). 뺄 근거는 VOA 본문 첫 문단이 'VOA 는 Virasoro 대수와 affine Kac-Moody 대수의 표현을 담는 틀이다' 로 Virasoro 를 거쳐 읽는 것이 맞다고 적는 점이고, 뺄 때 lie-algebras 의 더 알아보기에서 VOA 를 지우면 자식이 6개에서 5개로 줄어 44차에 넣은 H3 묶음(구조와 표현론 / 무한차원 대수)이 불필요해진다. 메모 9443e5ca 대로 abstract-algebra-overview 의 지도 mermaid 도 함께 본다. VOA 나 WZW 에 부모가 하나 더 붙는 회차에 둘을 한꺼번에 판단한다.",
+      "createdAt": "2026-10-12T16:50:03.270Z",
+      "seq": 2171
+    },
+    {
+      "id": "ac7475f6",
+      "title": "Kirby 계산법 항목과 dehn-surgery 의 관계 판정",
+      "priority": 20,
+      "note": "판정 기록. 44차(2026-10-12)에 큐 0fa48047 'Dehn 수술과 3 다양체 구성' 을 dehn-surgery(128줄)로 썼다. note 가 'Kirby 계산법 항목과 이어진다' 고 했고 큐 50f81215 'Kirby 계산법과 4 차원 손잡이 분해'(p4)가 아직 있다. dehn-surgery 의 '## Kirby 이동' 절이 1 이동과 2 이동, Rolfsen 비틀림, 코보디즘 논법의 요지를 담았고 '## 틀 지은 고리 도형' 절이 교차형식까지 적었다. 50f81215 를 쓸 때 3 차원 쪽 중복을 피하고 4 차원 손잡이 분해(1·2·3 손잡이, 손잡이 소거, Akbulut-Kirby 예, 매끄러운 구조와의 관계)로 좁힌다. 부모는 dehn-surgery 가 자연스럽다(현재 자식 없음). 저장소 확인: ls docs | grep -iE 'kirby|handle|surgery' 로 dehn-surgery 외에 없음을 확인했다(2026-10-12).",
+      "createdAt": "2026-10-12T16:54:12.688Z",
+      "seq": 2173
     },
     {
       "id": "410fd79d",
@@ -3324,6 +3356,46 @@
       "seq": 2158
     },
     {
+      "id": "5644fbe5",
+      "title": "Kac-Moody 대수의 부정형 갈래와 쌍곡형 분류",
+      "priority": 10,
+      "note": "분야 algebra, 부모는 affine-lie-algebras. 44차에 affine-lie-algebras 를 쓰며 일반화 Cartan 행렬의 세 형 가운데 유한형과 아핀형만 다뤘다. 부정형은 쌍곡형(모든 진부분도표가 유한형이나 아핀형)과 그 밖으로 갈라지고, 쌍곡형이 랭크 10 까지만 있다는 분류가 있다. E10 과 Weyl 군의 쌍곡 반사군 실현, 중복도 공식이 닫힌 꼴로 없다는 점이 내용이다. 저장소 확인: ls docs | grep -iE 'kac|moody|hyperbolic' 로 kac-moody, hyperbolic-kac-moody 가 없음을 확인했다(2026-10-12). coxeter-groups 와 affine-lie-algebras 가 선수.",
+      "createdAt": "2026-10-12T16:44:09.313Z",
+      "seq": 2167
+    },
+    {
+      "id": "f5ec8cf3",
+      "title": "Virasoro 최소모형의 코셋 구성",
+      "priority": 10,
+      "note": "분야 algebra, 부모는 virasoro-algebra. 44차에 virasoro-algebra 를 쓰며 '## 유니터리 표현의 분류' 의 충분조건을 코셋 구성 두 문장으로만 적었다. GKO(Goddard-Kent-Olive) 구성은 아핀 레벨 m-2 와 레벨 1 의 Sugawara Virasoro 작용의 차로 c_m 을 만드는 것이고, 분모 대수의 지표를 나누는 분기 규칙이 최소모형 지표를 준다. 일반 코셋 g/h 와 W-대수로의 확장도 같은 틀이다. 저장소 확인: ls docs | grep -iE 'coset|gko|goddard|minimal-model' 로 없음을 확인했다(2026-10-12). affine-lie-algebras 와 virasoro-algebra 가 선수.",
+      "createdAt": "2026-10-12T16:50:03.407Z",
+      "seq": 2172
+    },
+    {
+      "id": "693a01fd",
+      "title": "매듭 Floer 호몰로지",
+      "priority": 10,
+      "note": "분야 topology, 부모는 heegaard-floer-homology. 44차에 heegaard-floer-homology 를 쓰며 매듭 Floer 를 활용 절 두 줄로만 적었다(필터 길이가 Seifert 종수와 같다, slice 종수 하한). 내용은 두 기준점 w, z 를 쓴 도식, Alexander 등급 필터, tau 불변량, 수술 공식(mapping cone), Alexander 다항식이 Euler 지표로 나오는 것이다. 저장소 확인: ls docs | grep -iE 'knot-floer|floer' 로 instanton-floer-homology 와 heegaard-floer-homology 만 있음을 확인했다(2026-10-12). heegaard-floer-homology 와 knot-invariants 가 선수인데 부모는 전자 하나로 충분하다.",
+      "createdAt": "2026-10-12T16:58:19.230Z",
+      "seq": 2175
+    },
+    {
+      "id": "35f787ed",
+      "title": "heegaard-floer-homology 의 ECH 와 Seiberg-Witten 쪽 빈자리",
+      "priority": 10,
+      "note": "분야 topology 또는 differential_geometry. 44차에 heegaard-floer-homology 의 '## 순간자 판본과의 관계' 절에서 Seiberg-Witten Floer 호몰로지와 매장 접촉 호몰로지(ECH)를 이름만 쓰고 링크 없이 두었다. 0절대로 본문에 이름만 적고 여기에 올린다. 저장소 확인: ls docs | grep -iE 'seiberg|contact|ech' 로 둘 다 없음을 확인했다(2026-10-12). Seiberg-Witten 방정식 문서가 먼저이고 그 부모는 instanton-floer-homology 쪽이 아니라 chern-simons 나 riemannian-metrics 계열을 본다. 접촉 구조 문서도 같은 절에 걸려 있다(접촉 원소가 0 이 아닌 것이 채울 수 있음의 필요조건).",
+      "createdAt": "2026-10-12T16:58:19.374Z",
+      "seq": 2176
+    },
+    {
+      "id": "58749a0a",
+      "title": "lens-spaces 와 Seifert 올다양체",
+      "priority": 10,
+      "note": "분야 topology, 부모는 lens-spaces. 44차에 lens-spaces 를 쓰며 '## 기하화 안에서의 위치' 절에서 S^3 기하의 유한 부분군 몫 가운데 이면체형, 사면체형, 팔면체형, 이십면체형을 이름만 적었다(0절대로 본문에 링크 없이 이름만 썼다). Poincare 구면과 Seifert 올다양체 문서가 그 자리다. 내용은 Seifert 불변량, 올다발 구조의 유일성, 8 개 모형 기하 가운데 여섯이 Seifert 라는 분류, 예외 수술 결과의 상당수가 Seifert 라는 것이다. 저장소 확인: ls docs | grep -iE 'seifert|poincare-sphere|spherical-space' 로 없음을 확인했다(2026-10-12). geometrization 과 lens-spaces 가 선수.",
+      "createdAt": "2026-10-12T17:01:47.166Z",
+      "seq": 2177
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -3402,6 +3474,30 @@
       "note": "2026-10-09 38차 회차에 쓴 네 문서를 다음 회차에 4절 기준으로 다시 읽는다. artin-schreier-theory(109줄), donsker-invariance-principle(92줄), complete-graph-crossing-number(97줄), chvatal-rank(95줄). 회차 안에서 이미 돌린 것: 문장형 헤딩 grep, 매크로 grep, 비유 금지 grep, 관용구 grep, 열린 문제 절 grep, 범위 뭉뚱 grep, 코드블록 검사, 두문자어 첫 등장, 각주 정합(정의와 본문 참조가 넷 다 일치), 중복 H2(없음), 수식 검사 여섯. 회차 안에서 고친 것: '~을 직접 쓴 것이다', '~로 넓힌 것이다', '~이면서, ~ 정해진다' 세 문장을 두 문장으로 쪼개고 피동을 뺐다(커밋 4cf18b15). 다음 회차에 볼 것 둘. (1) 직관 절 문단 수. 네 문서가 각각 4, 4, 3, 4 문단이고 4절은 '두 문단을 넘지 않는다' 고 쓰지만 모범 예(측도)는 다섯 문단이다. 큐 항목 08e59419 가 그 어긋남을 다루므로 그 판정이 나오기 전까지는 모범 예 쪽을 따랐다. (2) 활용 절 항목이 저장소 문서를 가리키는지. donsker 의 셋째 항목(검정통계량의 극한분포)과 chvatal-rank 의 셋째 항목(완화의 질 비교)은 문서를 가리키지 않고 개념이 쓰이는 자리만 말한다. 4절은 '어느 문서의 어느 정의에서 쓰이는지를 말한다' 고 하므로 두 항목을 지울지 남길지 판정한다.",
       "createdAt": "2026-10-09T00:59:39.183Z",
       "seq": 1942
+    },
+    {
+      "id": "51aa3137",
+      "title": "44차 새 문서 다섯의 문체 회귀 점검",
+      "priority": 9,
+      "note": "회귀 점검. 44차(2026-10-12)에 affine-lie-algebras(213줄), virasoro-algebra(158줄), dehn-surgery(129줄), heegaard-floer-homology(150줄), lens-spaces(125줄) 다섯을 썼다. 커밋 시점에 4절 검사(수식 여섯, 문장형 헤딩 grep, 금지 매크로, 코드블록 언어, 문학적 비유, 번역체 표본, 열린 문제 절, 두문자어 첫 등장, 키릴·그리스 혼입)를 전부 통과시켰다. 다음 차수에 세 가지를 다시 본다. (1) 직관 절의 문단 수와 '설명의 순서' 규칙(독자가 막힌 자리에서 시작, 한 예를 끝까지, 새 용어는 동작 뒤에 이름으로만). affine-lie-algebras 의 직관이 여섯 문단이고 virasoro-algebra 가 다섯이라 4절의 '두 문단을 넘기지 않는다' 와 어긋날 소지가 있다. 큐 08e59419 가 그 규칙과 모범 예의 어긋남을 이미 묻고 있으므로 함께 판단한다. (2) 성질 절의 증명이 두 문단을 넘는 곳. (3) 본문 링크 라벨이 대상 제목과 맞는지. 44차에는 reshetikhin-turaev('Reshetikhin-Witten' 으로 잘못 적었다), geometric-langlands('기하적 Langlands'), heegaard-floer-homology('대칭곱 안의 정칙 원판') 셋을 커밋 전에 잡아 고쳤다.",
+      "createdAt": "2026-10-12T17:01:47.295Z",
+      "seq": 2178
+    },
+    {
+      "id": "1e401b60",
+      "title": "44차 전수 검사 결과: 4절 규칙 위반 없음, 오탐 목록",
+      "priority": 9,
+      "note": "회귀 점검 결과. 44차(2026-10-12) 저장소 831 문서에 4절 검사를 전수로 돌렸다. 위반 0 건이다. 통과한 것: 금지 매크로(operatorname, bm, newcommand 등) 0 건, 코드블록 언어 위반 0 건, 무표기 코드블록 0 건, 열린 문제 금지 절(남은 방향, 전망 등) 0 건, 범위 뭉뚱(대부분 열려) 0 건, 수식 이스케이프(awk) 0 건, 태그로 읽히는 부등호 0 건, 줄 끝 백슬래시 0 건, 링크로 읽히는 대괄호 0 건, validate/cycles/render-check/order-check/테스트 전부 통과. 오탐 세 종류를 기록한다. (1) 문학적 비유 grep 이 4 건을 내는데 전부 굳은 용어다. elliptic-curves:118 'Montgomery 사다리'(Montgomery ladder), lie-algebras:162 '사다리 연산자'(ladder operator), mandelbrot-set:55 '심장꼴'(cardioid), post-quantum-cryptography:126 '함정문'(trapdoor). 4절이 '용어의 일부인 것은 예외' 라고 정하므로 고치지 않는다. 다음 차수에 이 넷을 다시 보지 않는다. (2) 문장형 헤딩 grep 이 18 건을 내는데 17 건이 '## 증명의 요지' 이고 1 건이 potential-theory:37 '## 퍼텐셜과 에너지' 다. 패턴의 '[^로]지' 가지가 '요지' 와 '에너지' 를 잡는 오탐이고 둘 다 명사구라 4절에 맞다. 큐 55793f6c(CLAUDE.md 헤딩 grep 패턴의 오탐, 독자 결정 대기)와 같은 사안이다. (3) 수식 밑줄 grep 이 5 건을 내는데 전부 각주 URL 이다. finite-fields:131 의 libretexts 주소 3 건과 unique-factorization-domains 2 건이고, 큐 b452028c 가 이미 같은 것을 기록했다. 다음 전수 점검에서는 grep -v 'arxiv|http|doi' 로 걸러 돌린다.",
+      "createdAt": "2026-10-12T17:03:07.693Z",
+      "seq": 2179
+    },
+    {
+      "id": "ef34ce2b",
+      "title": "'A와 B' 제목 전수 현황 (44차, 831 문서)",
+      "priority": 9,
+      "note": "회귀 점검 결과. 44차(2026-10-12)에 831 문서의 제목을 전수로 보았다. 위반 0 건이다. CLAUDE.md 2절의 grep -l '^# .*[와과] ' 는 로케일 때문에 거의 모든 문서를 잡는다(큐 8ce35057 이 기록한 사안). 바이트 단위로 [와과] 가 다른 한글 음절의 바이트와 겹치기 때문이다. 대신 node 로 세었다: node -e 'const fs=require(\"fs\");for(const f of fs.readdirSync(\"docs\")){if(!f.endsWith(\".md\"))continue;const t=fs.readFileSync(\"docs/\"+f,\"utf8\").split(\"\\n\")[0].replace(/^# /,\"\");if(/[가-힣A-Za-z0-9)\\u2013\\u2014]\\s*(와|과)\\s+\\S/.test(t))console.log(f+\" :: \"+t)}' 가 25 건을 낸다. 판정. 두 갈래 다 4절의 예외다. (1) 파일명이 두 주제를 다 담은 것 10 건: filters-and-nets, ideals-quotient-rings, limits-colimits, luzin-sierpinski-sets, kleisli-eilenberg-moore, selmer-tate-shafarevich, dyson-rank-crank, fermat-euler-theorem, formalism-hilbert-program, dwork-rationality. 제목과 파일명이 같은 것을 가리키므로 어긋남이 아니다. (2) 정리 이름과 그 정리가 답하는 개념을 나란히 둔 것 15 건: canonical-height, eisenstein-ideal, greenberg-conjecture, heegner-points, herbrand-ribet, np-completeness, perfect-graphs, s-cobordism, serre-conjecture, speh-representations, unique-games, vandiver-conjecture, waldspurger-formula, whittaker-models, witten-asymptotics. 4절이 '정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목은 한 주제이므로 그대로 둔다' 고 정한다. 큐 17508b14, f2b49b9d, 5bd9ebde 가 같은 사안을 차수별로 묻고 있으므로 다음 차수에 이 결과를 보고 중복 작업을 피한다.",
+      "createdAt": "2026-10-12T17:04:05.229Z",
+      "seq": 2180
     },
     {
       "id": "a6985bd5",
@@ -3612,28 +3708,12 @@
       "seq": 615
     },
     {
-      "id": "b1f43504",
-      "title": "아핀 Lie 대수와 Kac-Moody 분류",
-      "priority": 6,
-      "note": "lie-algebras 와 root-systems 아래. 일반화 Cartan 행렬, 아핀 근계와 허근, 중심확대와 미분작용소, wess-zumino-witten 이 선수로 기대는 내용",
-      "createdAt": "2026-09-15T16:48:10.985Z",
-      "seq": 288
-    },
-    {
       "id": "bb5c14a1",
       "title": "공형장론과 Virasoro 대수",
       "priority": 6,
       "note": "wess-zumino-witten 이 Sugawara 로 만들어 쓰는 구조인데 문서가 없다. 중심전하, 1 차 장, OPE, 최소모형, 모듈러 불변 분배함수",
       "createdAt": "2026-09-15T16:48:11.132Z",
       "seq": 289
-    },
-    {
-      "id": "8f7d693e",
-      "title": "사상류군과 Nielsen-Thurston 분류",
-      "priority": 6,
-      "note": "teichmuller-space 아래. Dehn 비틀림 생성, 곡선복합체, 유사 Anosov 와 팽창률, 사상원환면이 쌍곡 3 다양체가 되는 정리",
-      "createdAt": "2026-09-15T20:49:22.903Z",
-      "seq": 297
     },
     {
       "id": "314d255d",
@@ -3700,14 +3780,6 @@
       "seq": 286
     },
     {
-      "id": "0fa48047",
-      "title": "Dehn 수술과 3 다양체 구성",
-      "priority": 5,
-      "note": "hyperbolic-3-manifolds 아래. 기울기와 채움, Lickorish-Wallace 정리, 예외 수술과 6 정리, Kirby 계산법 항목과 이어진다",
-      "createdAt": "2026-09-15T16:39:31.344Z",
-      "seq": 287
-    },
-    {
       "id": "c661b591",
       "title": "수술 이론과 Browder-Novikov-Sullivan-Wall",
       "priority": 5,
@@ -3722,14 +3794,6 @@
       "note": "s-cobordism 아래. Theta_n 군, S^7 의 28 개 구조, 평행화 가능 구면과 Kervaire 불변량 1 문제",
       "createdAt": "2026-09-15T16:50:42.003Z",
       "seq": 291
-    },
-    {
-      "id": "947ce369",
-      "title": "Heegaard Floer 호몰로지",
-      "priority": 5,
-      "note": "instanton-floer-homology 아래. Heegaard 도식과 대칭곱, 정칙 원판, d 불변량, 순간자 판본과의 동치",
-      "createdAt": "2026-09-15T16:53:44.816Z",
-      "seq": 292
     },
     {
       "id": "c422fd89",
