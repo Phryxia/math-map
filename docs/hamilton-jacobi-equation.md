@@ -94,7 +94,7 @@ $$
 
 변분법의 1차 변분 공식이 끝점을 움직일 때 $\partial S/\partial q=p$ 와 $\partial S/\partial t=-H$ 를 주므로 방정식이 성립한다. ∎
 
-운동이 둘 이상 닿는 범위에서는 특성곡선이 교차하고 이 $S$ 가 매끄럽지 않다. 매끄러운 해는 일반적으로 국소적으로만 있다.[^2]
+운동이 둘 이상 닿는 범위에서는 특성곡선이 교차하고 이 $S$ 가 매끄럽지 않다. 매끄러운 해는 일반적으로 국소적으로만 있고, 교차 뒤까지 이어지는 해는 [점성해](viscosity-solutions.md)로 정의한다.[^2]
 
 # 활용
 
@@ -115,6 +115,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [점성해](viscosity-solutions.md)
 
 #differential_geometry #analysis #optimization
