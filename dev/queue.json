@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-12T05:04:26.441Z",
-  "nextSeq": 2142,
+  "savedAt": "2026-10-12T09:04:11.475Z",
+  "nextSeq": 2154,
   "items": [
     {
       "id": "9443e5ca",
@@ -1010,6 +1010,30 @@
       "note": "독자 판단 대기. 43차 회차(2026-10-12)에 큐 8503e2d7 이 요청한 라벨 점검을 저장소 전체에 돌렸다. 검사법: '# 연관 문서' 앞의 본문에서 [라벨](id.md) 꼴을 뽑아 라벨을 docs/id.md 의 첫 줄 제목과 대조한다(간선 목록은 제외한다). 결과는 853 건, 문서 492 개다. 저장소의 60% 가 걸리므로 전수 교정 대상이 아니라고 보았고, 43차에는 그 회차에 쓴 다섯 문서의 세 건만 고쳤다(chain-complexes 의 '뱀 보조정리' 를 '완전열의 뱀 보조정리' 로, information-criteria 의 '최대가능도' 를 '최대가능도 추정' 으로, graphical-models 의 '오류 정정 부호' 를 '오류정정부호' 로). 853 건의 유형은 둘이다. (1) 라벨이 제목의 부분문자열인 것 371 건. 'Galois 군' -> galois-theory(Galois 이론), '아이디얼' -> ideals-quotient-rings(아이디얼과 몫환), '콤팩트' -> compactness(콤팩트성) 처럼 문장에 맞춘 활용형이나 줄임이다. 4절에 라벨을 제목과 맞추라는 규칙이 없고 문장 흐름에는 이 쪽이 자연스러우므로 그대로 두는 것이 맞다고 본다. (2) 제목과 겹치지 않는 것 482 건. 대상별로는 dirichlet-l-functions 13, p-adic-l-function 12, birch-swinnerton-dyer 10, martingales 9, boolean-algebras 9 가 많다. 이 가운데 독자를 오해하게 하는 것이 섞여 있다. 'algebraic-k-theory 의 [호몰로지] -> homology(단체 호몰로지)' 는 일반 호몰로지로 읽히고, 'abstract-interpretation 의 [격자] -> order-lattices(순서론의 격자)' 는 정수론의 격자와 혼동된다. 판단이 필요한 것: (1) 번 유형을 규칙으로 허용할지, (2) 번 유형 가운데 어느 기준으로 고칠지(제목의 어느 낱말도 라벨에 없는 것만 고치는 안이 후보다). 기준이 정해지면 그 회차에 일괄 교정한다.",
       "createdAt": "2026-10-12T05:03:31.954Z",
       "seq": 2141
+    },
+    {
+      "id": "9c47b4bc",
+      "title": "역산란 변환 문서의 부모 수와 Fourier 변환 간선 판정",
+      "priority": 20,
+      "note": "판정 기록. 44차 회차(2026-10-12)에 inverse-scattering-transform 을 쓰며 부모를 lax-pairs 와 sturm-liouville 둘로 두었다. fourier-transform 도 부모 후보였다. 활용 절 마지막 항목이 선형화 극한에서 r(k) 가 u-hat 에 비례하고 시간 인자 exp(8ik^3 t) 가 선형 KdV 의 분산 인자와 같음을 적지만, 5절 기준으로 Fourier 변환은 배경이고 부모를 빼도 개요가 그대로 읽힌다. 그래서 간선이 아니라 본문 링크로 두었다. 같은 이유로 integrable-systems 도 lax-pairs 의 부모여서 조상이므로 넣지 않았다(5절의 '다른 부모의 조상인 것을 뺀다'). 독자가 다르게 보면 fourier-transform -> inverse-scattering-transform 을 더하면 된다.",
+      "createdAt": "2026-10-12T08:45:45.030Z",
+      "seq": 2144
+    },
+    {
+      "id": "d4e688b9",
+      "title": "보존법칙 문서를 따로 둘지 판정",
+      "priority": 20,
+      "note": "판정 기록. 44차 회차(2026-10-12)에 entropy-solutions 를 쓰며 보존법칙 u_t+f(u)_x=0 자체의 문서를 따로 만들지 생각했다. 만들지 않았다. 이유는 둘이다. (1) 보존법칙의 내용 가운데 독자에게 필요한 것(특성곡선, 적분꼴, 불연속 해의 필요)이 전부 엔트로피 해를 설명하는 데 쓰이므로 두 문서가 서로 없이는 설명되지 않는 8절의 통합 후보 꼴이 된다. (2) entropy-solutions 가 132줄로 1000줄 기준에 멀다. 'Riemann 문제' 를 큐에 따로 넣었고(121b4808 이후 항목), 그 문서가 계 보존법칙(Euler 방정식, Riemann 불변량)까지 담아 커지면 그때 보존법칙을 부모로 떼는 것이 자연스럽다. 독자가 다르게 보면 conservation-laws 를 entropy-solutions 의 부모로 넣고 viscosity-solutions 간선을 옆으로 돌리면 된다.",
+      "createdAt": "2026-10-12T08:50:08.138Z",
+      "seq": 2146
+    },
+    {
+      "id": "7b401b6d",
+      "title": "PA 차수의 Solovay 특성화 확인",
+      "priority": 20,
+      "note": "확인 대기. 44차 회차(2026-10-12)에 pa-degrees 를 쓸 때 원래 큐 항목(2ba45f47)의 note 가 담을 것으로 'Solovay 의 특성화' 를 들었으나 어떤 정리를 가리키는지 확정하지 못해 문서에 넣지 않았다. 대신 확실한 것만 넣었다. Jockusch 의 전확장 특성화, 모든 Pi^0_1 부류에 대한 진술과의 동치, Jockusch-Soare 의 최소 원소 부재, Arslanov 완전성 기준을 거친 계산가능 열거 차수 결과, Scott 의 1962 년 정리. 확인할 것은 Solovay 가 PA 차수나 Scott 집합에 대해 낸 특성화가 따로 있는지이고, 있으면 pa-degrees 성질 절에 한 절로 더한다. 출처를 찾지 못하면 이 항목을 지운다. 틀린 정리를 문서에 적는 것보다 빠뜨리는 것이 낫다는 판단이었다.",
+      "createdAt": "2026-10-12T08:58:34.166Z",
+      "seq": 2149
     },
     {
       "id": "410fd79d",
@@ -3220,6 +3244,62 @@
       "seq": 2140
     },
     {
+      "id": "f876903f",
+      "title": "Ablowitz-Kaup-Newell-Segur 체계",
+      "priority": 10,
+      "note": "analysis. 부모는 inverse-scattering-transform(44차 회차에 신설). 그 문서 성질 절 '다른 방정식' 이 2x2 일차 계의 산란 문제로 비선형 Schrodinger 와 sine-Gordon 을 거두는 이 체계를 이름만 쓰고 각주로 미룬다. ls docs | grep -iE 'ablowitz|akns|zakharov' 로 저장소에 없음을 확인했다. 담을 것: 2x2 산란 문제의 Lax 쌍, 양립조건이 주는 방정식의 묶음, Zakharov-Shabat 문제, 역산란의 행렬 판본.",
+      "createdAt": "2026-10-12T08:45:44.864Z",
+      "seq": 2143
+    },
+    {
+      "id": "e01f8064",
+      "title": "Riemann 문제",
+      "priority": 10,
+      "note": "analysis. 부모는 entropy-solutions(44차 회차에 신설). 그 문서 성질 절 'Lax 엔트로피 조건' 이 충격파와 희박파를 구별하지만, 두 상수 상태를 잇는 해를 체계적으로 구성하는 Riemann 문제 자체는 담지 못했다. ls docs | grep -iE 'riemann-problem|godunov|rarefaction' 로 저장소에 없음을 확인했다(riemann-integral 과 riemann-hypothesis 는 다른 개념이다). 담을 것: 두 상수 상태의 초기값, 볼록 f 에서 충격파와 희박파 한 쪽으로 결정되는 것, 비볼록 f 의 볼록 포락선과 복합파, 계 보존법칙의 Riemann 불변량, Godunov 수치해법이 칸 경계마다 이 문제를 푸는 것.",
+      "createdAt": "2026-10-12T08:50:07.932Z",
+      "seq": 2145
+    },
+    {
+      "id": "02ef1dc2",
+      "title": "Arnold 확산",
+      "priority": 10,
+      "note": "differential_geometry/analysis. 부모는 nekhoroshev-estimate(44차 회차에 신설). 그 문서 성질 절 '준볼록 조건의 역할' 이 H_0 이 선형이면 작용 변수가 1/eps 쯤의 시간에 O(1) 이동하는 Arnold 의 1964 년 예를 한 문단으로 쓰고 각주로 미룬다. ls docs | grep -iE 'arnold-diff|diffusion|shadow|melnikov|transition-chain' 로 저장소에 없음을 확인했다. 담을 것: 쌍곡 불변 원환면의 전이 사슬, 분리선 쪼개짐과 Melnikov 적분, 그림자 보조정리로 사슬을 따라 궤도를 잇는 것, Nekhoroshev 상한과 양립하는 이유(지수적 시간 안에서 일어난다).",
+      "createdAt": "2026-10-12T08:54:19.928Z",
+      "seq": 2147
+    },
+    {
+      "id": "9a3e265f",
+      "title": "정규형 전개",
+      "priority": 10,
+      "note": "differential_geometry/analysis. 부모는 integrable-systems 또는 kam-theorem. nekhoroshev-estimate(44차 신설)의 직관 절 셋째 문단과 성질 절 '공명 구역 분해' 가 교란의 theta 의존 항을 좌표 바꾸기로 없애 크기를 eps^2 로 줄이는 절차를 쓰고, kam-theorem 의 증명 요지도 같은 되풀이를 쓴다. 두 문서가 같은 도구를 각자 설명하는 꼴이라 따로 두면 중복이 준다. ls docs | grep -iE 'normal-form|birkhoff|averaging' 로 저장소에 없음을 확인했다(jordan-normal-form 은 선형대수 쪽으로 다른 개념이다). 담을 것: 생성함수와 Lie 변환, Birkhoff 정규형, 공명 항이 남는 것, 해석적 경우의 수렴 반경과 발산, 평균화 원리와의 관계. 주의: 이 문서를 만들면 kam-theorem 과 nekhoroshev-estimate 의 해당 문단을 줄이고 간선을 다시 볼지 판단해야 한다.",
+      "createdAt": "2026-10-12T08:54:20.130Z",
+      "seq": 2148
+    },
+    {
+      "id": "e6edf4e2",
+      "title": "역수학에서 WKL_0 와 PA 차수의 대응",
+      "priority": 10,
+      "note": "foundations/computation. 부모는 pa-degrees(44차 신설) 또는 reverse-mathematics. pa-degrees 활용 절 셋째 항목이 Scott 집합의 셋째 조건이 약한 Konig 보조정리를 집합족의 언어로 적은 것이라고 쓰고, pi01-classes 활용 절 첫 항목도 WKL_0 의 모형을 기저 정리로 짓는다고 쓴다. 두 문서가 같은 대응을 각자 한 줄로 스치므로 따로 다룰 자리가 있다. ls docs | grep -iE 'reverse-math|second-order|wkl' 로 reverse-mathematics 와 second-order-arithmetic 과 weak-konig-lemma 가 이미 있음을 확인했다. 그러므로 새 문서가 아니라 reverse-mathematics 의 보강일 수 있다. 먼저 reverse-mathematics 를 읽고 WKL_0 절이 모형론 쪽(Scott 집합, omega 모형, PA 차수)을 얼마나 담는지 보고 판단한다.",
+      "createdAt": "2026-10-12T08:58:34.334Z",
+      "seq": 2150
+    },
+    {
+      "id": "30c4042d",
+      "title": "Hirota 쌍선형 방법",
+      "priority": 10,
+      "note": "analysis. 부모는 solitons(44차 회차에 신설). 그 문서 성질 절 'Hirota 쌍선형 꼴' 과 '2 솔리톤' 이 u=-2 d_x^2 log f 치환과 f 의 지수함수 전개를 쓰지만, 쌍선형 연산자 D 자체와 그것이 방정식을 어떻게 바꾸는지는 담지 못했다. ls docs | grep -iE 'hirota|bilinear|tau-function' 로 저장소에 없음을 확인했다. 담을 것: Hirota D 연산자의 정의, KdV 의 쌍선형 꼴 D_x(D_t+D_x^3) f.f=0, N 솔리톤 전개의 섭동 구조, 타우 함수와 Sato 이론으로 가는 방향, 쌍선형 꼴을 갖는 것이 적분가능성의 판정으로 쓰이는 것.",
+      "createdAt": "2026-10-12T09:03:41.684Z",
+      "seq": 2152
+    },
+    {
+      "id": "994c62b8",
+      "title": "sine-Gordon 방정식",
+      "priority": 10,
+      "note": "analysis/differential_geometry. 부모는 solitons(44차 신설) 또는 inverse-scattering-transform. solitons 성질 절 '다른 방정식의 솔리톤' 표가 kink 와 antikink 를 한 칸으로 쓰고, inverse-scattering-transform 성질 절 '다른 방정식' 이 2x2 산란 문제의 예로 이름만 든다. ls docs | grep -iE 'sine-gordon|kink|pseudosphere' 로 저장소에 없음을 확인했다. 담을 것: u_tt-u_xx+sin u=0, kink 해와 위상 전하, Backlund 변환, 음의 상수 곡률 곡면의 Gauss 방정식과 같은 것(pseudospherical surface) 이라 미분기하 쪽 간선도 후보다. 주의: 저장소에 gaussian-curvature 나 surface-theory 쪽 문서가 있는지 먼저 보고 부모를 정한다.",
+      "createdAt": "2026-10-12T09:03:41.850Z",
+      "seq": 2153
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -3300,22 +3380,6 @@
       "seq": 1942
     },
     {
-      "id": "cf930175",
-      "title": "역산란 변환",
-      "priority": 9,
-      "note": "analysis. 부모는 lax-pairs(42차 회차에 신설). 그 문서 성질 절 '미분연산자 Lax 쌍' 과 활용 절 마지막 항목이 역산란 변환을 이름만 쓰고 지나간다. ls docs | grep -iE 'inverse-scatter' 로 저장소에 없음을 확인했다. 담을 것: Schrodinger 연산자의 산란 자료(반사계수와 묶인 상태), 자료의 시간 변화가 선형인 것, Korteweg-de Vries 방정식의 고립파 해와 N 고립파 해, Gelfand-Levitan-Marchenko 방정식.",
-      "createdAt": "2026-10-12T01:02:14.121Z",
-      "seq": 2125
-    },
-    {
-      "id": "a204df65",
-      "title": "보존법칙의 엔트로피 해",
-      "priority": 9,
-      "note": "analysis. 부모는 viscosity-solutions(42차 회차에 신설). 그 문서 활용 절 마지막 항목이 엔트로피 해를 이름만 쓰고 지나간다. ls docs | grep -iE 'entropy-solution|conservation-law|burgers' 로 저장소에 없음을 확인했다. 담을 것: Burgers 방정식의 충격파, Rankine-Hugoniot 조건, Lax 엔트로피 조건, 적분하면 Hamilton-Jacobi 방정식이 되는 1차원 대응. 주의: 저장소의 entropy 문서는 정보이론 쪽이라 다른 개념이다.",
-      "createdAt": "2026-10-12T01:02:14.282Z",
-      "seq": 2126
-    },
-    {
       "id": "a6985bd5",
       "title": "dev 스크립트 개선 요청 묶음 (수식 표기 검사, KaTeX 검증, 이스케이프 검출)",
       "priority": 8,
@@ -3386,22 +3450,6 @@
       "note": "2026-09-23 회차 10차. 9차 note 의 다음 걸음(단언 문장 뒤의 '때문이다' 를 어간 겹침으로 거르기)과 그 자리에서 떠오른 다른 어미까지 돌렸고 고칠 것이 0 건이었다. 검사기(스크래치패드 because2.mjs, 22줄): 코드펜스와 헤딩과 표 줄을 건너뛰고, 줄을 '다.' 뒤에서 잘라 근거 어미로 끝나는 문장 S2 와 그 앞 문장 S1 을 짝짓는다. 한글 2 글자 이상 토큰을 앞 두 글자로 자른 집합을 만들고(이것은/그것은/따라서/그러므로/여기서/이때/그리고/하지만 제외) S2 의 토큰 가운데 S1 에도 있는 비율을 센다. (1) '때문이다': 겹침 45% 이상 0 건, 25% 이상 15 건이고 15 건 모두 새 정보를 주는 정상 근거 문장이었다. 오탐 확정: algebraic-varieties 53, connectedness 141, curry-howard 76, curvature 101, galois-theory 121, hecke-operators 26, prime-ideals 68, pushforward-measure 23, quadratic-reciprocity 162, s-cobordism 126, schur-polynomials 52, structural-set-theory 80, turan-theorem 11, ultraproducts 19, weak-konig-lemma 13. (2) '까닭이다|이유다|탓이다|덕분이다': 같은 검사기로 1 건(serre-conjecture 125)이고 홀수 조건이라는 새 정보를 주므로 정상이다. 따로 grep 한 '~인 이유다' 20 여 건은 앞 사실을 뒤 사실의 이유로 지목하는 연결이지 되풀이가 아니고, 4절 금지 목록에도 없다. 판정 기준: 4절이 금하는 것은 앞 문장에 이미 있는 말을 어순만 바꿔 되풀이하는 근거 문장이고, 앞 문장에 없던 사실(정리 이름, 세는 값, 반례, 구조)을 대면 남긴다. 결론: 8차부터 쌓인 네 검사기(because.mjs, 결론-전제 순서, because2.mjs, 어미 확장)로 근거 문장 계열이 소진되었다. 우선순위를 8 로 낮춘다. 다시 열려면 근거 어미가 아닌 다른 계열을 찾아야 한다",
       "createdAt": "2026-09-23T20:55:34.144Z",
       "seq": 1050
-    },
-    {
-      "id": "2ba45f47",
-      "title": "PA 차수와 Scott 집합",
-      "priority": 8,
-      "note": "pi01-classes 가 PA 차수를 정의하고 turing-degrees 가 저차 기저 정리를 쓰지만 PA 차수 자체의 구조는 어디에도 없다. 부모는 pi01-classes. 내용: 계산가능 분리 불가능 쌍의 가름 집합, PA 차수가 최소 원소를 갖지 않음(Jockusch-Soare), Scott 집합과 PA 의 비표준 모형의 표준 체계, Solovay 의 특성화",
-      "createdAt": "2026-09-24T00:43:06.520Z",
-      "seq": 1055
-    },
-    {
-      "id": "33211732",
-      "title": "분자종의 순환 지표",
-      "priority": 8,
-      "note": "molecular-species 활용 넷째. 먼저 polya-enumeration 과 겹치는지 8절 기준으로 볼 것(2026-09-23 회차 note 가 남긴 판정 대상이다). 겹치면 새 문서 대신 polya-enumeration 에 한 절로 넣거나 molecular-species 쪽 활용 절을 보강한다. 내용: 종의 순환 지표 급수 Z_F, 분자종 X^n/H 의 순환 지표가 H 의 순환 지표와 같다는 것, 지수생성함수와 동형류 보통생성함수가 순환 지표의 특수화라는 것",
-      "createdAt": "2026-09-24T01:03:47.506Z",
-      "seq": 1072
     },
     {
       "id": "9f77fbd9",
@@ -3524,12 +3572,12 @@
       "seq": 2080
     },
     {
-      "id": "e4aec76a",
-      "title": "Nekhoroshev 추정",
+      "id": "21696735",
+      "title": "분자종의 순환 지표를 새 문서로 만들지 판정 완료",
       "priority": 8,
-      "note": "differential_geometry/analysis. 부모는 kam-theorem(42차 회차에 신설). 그 문서 성질 절 '자유도 2 에서의 가둠' 마지막 문단이 자유도 3 이상에서 작용 변수의 변화에 대한 지수적으로 긴 시간의 상한으로 Nekhoroshev 추정을 이름만 쓰고 각주로 미룬다. ls docs | grep -iE 'nekhoroshev' 로 저장소에 없음을 확인했다. 담을 것: 준볼록(steep) 조건, exp(1/eps^a) 꼴 시간 상한과 eps^b 꼴 작용 변화 상한, 공명 구역 분해와 정규형 전개의 끊기, KAM 과의 차이(측도가 아니라 모든 초기조건).",
-      "createdAt": "2026-10-12T01:03:01.385Z",
-      "seq": 2128
+      "note": "판정 완료. 만들지 않는다. 44차 회차(2026-10-12)에 큐 33211732 를 꺼내 8절 기준으로 보았고, note 가 요청한 내용 셋이 이미 세 문서에 나뉘어 들어 있다. (1) 종의 순환 지표 급수 Z_F 는 combinatorial-species 77-85줄의 '## 순환 지표' 절이 정의한다. (2) '지수생성함수와 동형류 보통생성함수가 순환 지표의 특수화' 는 같은 절 85줄이 p_i=x^i 와 p_1=x 의 대입으로 적는다. (3) 'X^n/H 의 순환 지표가 H 의 순환 지표 다항식' 은 molecular-species 73줄 활용 절 마지막 항목에 있다. 새 문서를 만들면 세 문서와 겹치고, 8절의 통합 기준(서로 없이는 설명되지 않음)에도 해당하지 않는다. molecular-species(87줄)와 polya-enumeration(104줄)과 combinatorial-species(107줄)는 부모가 각각 combinatorial-species 와 burnside-lemma 와 bell-numbers/generating-functions 로 갈리는 독립 개념이다. 보강도 하지 않았다. 세 문서가 각자 자기 몫을 적고 서로를 본문 링크로 가리키고 있어 더할 것이 없었다. 남은 판단 하나: combinatorial-species 91줄이 'Polya 열거가 순환 지표의 특수한 경우' 라고, polya-enumeration 92줄이 '순환 지표가 거듭제곱합 기저의 선형결합' 이라고 서로를 스치는데 둘 사이에 간선이 없다. 5절 기준으로 Polya 세기 정리가 종 이론의 특수 사례인지(그러면 combinatorial-species -> polya-enumeration), 아니면 독립인지 판단이 필요하다. 역사적으로 Polya 가 먼저이고 Burnside 보조정리의 후속으로 서 있어 간선을 넣지 않는 쪽으로 기울었으나 확정하지 않았다.",
+      "createdAt": "2026-10-12T08:59:56.766Z",
+      "seq": 2151
     },
     {
       "id": "fb947ff9",
