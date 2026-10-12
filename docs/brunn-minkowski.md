@@ -92,7 +92,7 @@ $\mathbb Z$ 의 유한집합에서는 $\vert A+B\vert\ge\vert A\vert+\vert B\ver
 
 - **[등주부등식](isoperimetric-inequality.md).** 고차원 등주부등식의 표준 증명이 위의 극한 논증이다. 변분법으로 극값 곡선을 찾는 방법과 달리 볼록성 가정 없이 콤팩트집합에서 성립한다.
 - **[집중부등식](concentration-inequalities.md).** 측도의 집중 현상을 등주부등식에서 얻는 경로가 이 부등식을 거친다. 구면과 Gauss 측도에서 근방의 측도가 빠르게 $1$ 로 가는 것이 같은 틀의 결과다.
-- **[볼록성](convexity.md).** 볼록체의 혼합부피에 대한 Alexandrov–Fenchel 부등식의 가장 간단한 경우가 Brunn–Minkowski 부등식이다. 혼합부피 전개의 계수들이 만족하는 부등식 체계의 출발 항이다.
+- **[혼합부피](mixed-volumes.md).** 볼록체의 혼합부피에 대한 Alexandrov–Fenchel 부등식의 가장 간단한 경우가 Brunn–Minkowski 부등식이다. 평면에서는 두 부등식이 동치다.
 - **로그오목 분포.** Prékopa–Leindler 부등식에서 로그오목 밀도의 주변분포가 다시 로그오목이고 합성곱이 로그오목인 것이 따라온다. 표본추출과 변분추론의 수렴 논증이 이 성질을 쓴다.
 
 [^1]: Rolf Schneider, *Convex Bodies: The Brunn–Minkowski Theory*, 2nd ed., Cambridge University Press, 2014, Chapter 7. 상자 분해 증명, 등호 조건, 혼합부피와의 관계.
@@ -107,6 +107,7 @@ $\mathbb Z$ 의 유한집합에서는 $\vert A+B\vert\ge\vert A\vert+\vert B\ver
 
 ## 더 알아보기
 
+- [혼합부피](mixed-volumes.md)
 - [등주부등식](isoperimetric-inequality.md)
 
 #analysis #measure_theory #combinatorics
