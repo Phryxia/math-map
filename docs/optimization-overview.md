@@ -58,6 +58,7 @@ graph TD
 - [분산 축소 경사법](variance-reduced-gradient-methods.md): 항별 기울기를 기억해 추정량의 분산을 없애는 SVRG 와 SAGA
 - [Kiefer–Wolfowitz 절차](kiefer-wolfowitz.md): 함숫값만 관측할 때 차분으로 기울기를 흉내 내는 반복, 동시 섭동과 $t^{-1/3}$ 수렴
 - [Newton 법](newton-method.md): 2 차 정보를 쓰는 국소 이차수렴
+- [신뢰영역 방법](trust-region.md): 2 차 모형을 믿을 반경 안에서 최소화하는 반복, 감소 비율로 반경을 갱신하는 전역 수렴
 - [준Newton 법](quasi-newton-methods.md): secant 조건으로 Hessian 근사를 갱신하는 BFGS 와 L-BFGS, 초선형 수렴
 
 ## 선형·반정부호 계획법
