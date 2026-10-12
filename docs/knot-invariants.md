@@ -138,6 +138,7 @@ $V\ne1$ 이므로 삼엽매듭은 풀린 매듭이 아니고, $V(t)\ne V(t^{-1})
 
 ## 더 알아보기
 
+- [Dehn 수술](dehn-surgery.md)
 - [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)
 - [땋임군](braid-groups.md)
 - [Khovanov 호몰로지](khovanov-homology.md)
