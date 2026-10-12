@@ -4,7 +4,7 @@
 
 미분기하는 미적분이 되는 공간 위에서 휘어짐을 재고, 그 국소량의 적분이 위상 불변량이 되는 현상을 다룬다. 물음은 "국소적으로 잰 곡률이 공간 전체에 대해 무엇을 결정하는가" 이고, 답의 원형은 Gauss–Bonnet 정리다. 곡면의 곡률을 적분하면 [Euler 지표](euler-characteristic.md)가 나온다.
 
-미분기하의 갈래는 다섯 줄기다. 미분이 정의되는 공간인 다양체와 그 위의 미분형식, 다발과 그 위의 접속, 계량과 곡률, Hodge 이론에서 지표 정리로 가는 해석적 갈래, 그리고 Lie 군 위의 게이지 이론이다. 위상 불변량 쪽은 [위상수학 개관](topology-overview.md)에, 대수 쪽 기반은 [Lie 대수](lie-algebras.md)에 있다.
+미분기하의 갈래는 여섯 줄기다. 미분이 정의되는 공간인 다양체와 그 위의 미분형식, 닫힌 비퇴화 2 형식이 주는 심플렉틱 기하와 역학, 다발과 그 위의 접속, 계량과 곡률, Hodge 이론에서 지표 정리로 가는 해석적 갈래, 그리고 Lie 군 위의 게이지 이론이다. 위상 불변량 쪽은 [위상수학 개관](topology-overview.md)에, 대수 쪽 기반은 [Lie 대수](lie-algebras.md)에 있다.
 
 시작은 [다양체](manifolds.md)와 [곡률](curvature.md)이다. 둘이 [Riemann 계량](riemannian-metrics.md)에서 만나 거리를 가진 다양체가 되고, 거기서 [Gauss–Bonnet 정리](gauss-bonnet.md)와 [Hodge 이론](hodge-theory.md)으로 갈라진 뒤 [지표 정리](index-theorem.md)에서 다시 만난다.
 
@@ -55,13 +55,16 @@ graph TD
 - [미분형식](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
 - [Morse 이론](morse-theory.md): 매끄러운 함수의 임계점이 주는 세포 구조와 Betti 수의 하한
 - [소멸 사이클](vanishing-cycles.md): 정칙 함수의 임계점에서 줄어드는 호몰로지류, Picard–Lefschetz 공식
+
+## 심플렉틱 기하와 역학
+
 - [심플렉틱 다양체](symplectic-manifolds.md): 닫힌 비퇴화 2 형식, Hamilton 벡터장과 Darboux 정리
-- [모멘트 사상](moment-map.md): 심플렉틱 작용의 보존량을 Lie 대수 쌍대공간에 모은 사상, Marsden–Weinstein 축소와 모멘트 다면체
 - [여접다발](cotangent-bundle.md): 좌표 없이 정의되는 표준 1 형식과 그 외미분이 주는 심플렉틱 구조, 정준변환
 - [Lagrangian 부분다양체](lagrangian-submanifolds.md): 심플렉틱 형식이 소멸하는 절반 차원 부분다양체, 생성함수와 Weinstein 근방 정리
+- [모멘트 사상](moment-map.md): 심플렉틱 작용의 보존량을 Lie 대수 쌍대공간에 모은 사상, Marsden–Weinstein 축소와 모멘트 다면체
 - [Hamilton 역학](hamiltonian-mechanics.md): 속도를 운동량으로 바꾼 1차 방정식계, 에너지 보존과 흐름의 심플렉틱 성질
-- [적분가능계](integrable-systems.md): 자유도만큼의 대합적 보존량, Arnold–Liouville 정리와 작용-각 좌표
 - [Hamilton-Jacobi 방정식](hamilton-jacobi-equation.md): 생성함수가 만족하는 1차 편미분방정식, Jacobi 정리와 변수분리
+- [적분가능계](integrable-systems.md): 자유도만큼의 대합적 보존량, Arnold–Liouville 정리와 작용-각 좌표
 - [Kolmogorov-Arnold-Moser 정리](kam-theorem.md): 교란에서 살아남는 불변 원환면, Diophantine 조건과 작은 분모
 - [Lax 쌍](lax-pairs.md): 흐름을 등스펙트럼 변형으로 적는 두 행렬, Toda 격자와 미분연산자 판본
 
