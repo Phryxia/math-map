@@ -86,6 +86,7 @@ graph TD
 - [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md): 목표분포를 불변분포로 갖는 연쇄의 구성, 세부균형과 수락확률
 - [Hamiltonian Monte Carlo](hamiltonian-monte-carlo.md): 보조 운동량을 더한 확장 분포와 Hamilton 흐름 제안, leapfrog 적분기
 - [은닉 Markov 모형](hidden-markov-model.md): 관측 뒤에 숨은 상태열, 전향 후향 재귀와 Viterbi 복호
+- [확률 그래프 모형](graphical-models.md): 결합분포를 인수의 곱으로 적고 그 구조를 그래프로 둔 모형, 믿음 전파와 나무폭에 지수인 추론 비용
 - [Markov 결정 과정](markov-decision-process.md): 행동으로 전이를 고르는 연쇄, Bellman 방정식과 값 반복
 - [확률근사](stochastic-approximation.md): 잡음 섞인 관측으로 $f(\theta)=0$ 을 푸는 반복법, Robbins–Monro 보폭 조건
 - [최적 정지](optimal-stopping.md): Snell 포락과 문턱 규칙, 비서 문제
