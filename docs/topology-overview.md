@@ -55,6 +55,7 @@ graph TD
 ## 코호몰로지와 비틀림
 
 - [Poincaré 쌍대성](poincare-duality.md): 닫힌 유향 다양체에서 $k$ 차 코호몰로지와 $n-k$ 차 호몰로지의 동형, 교차수와 4 차원의 교차형식
+- [콤팩트 지지 코호몰로지](compactly-supported-cohomology.md): 지지가 콤팩트한 코사슬의 코호몰로지, 비콤팩트 다양체의 쌍대성
 - [교차형식](intersection-form.md): 4 차원 다양체의 단모듈러 대칭형식, Rokhlin 과 Freedman 과 Donaldson 의 정리
 - [de Rham 코호몰로지](de-rham-cohomology.md) → [Hodge 이론](hodge-theory.md) → [Kähler 다양체](kahler-manifolds.md), [지표 정리](index-theorem.md)
 - [Reidemeister 비틀림](reidemeister-torsion.md) → [s-코보디즘 정리](s-cobordism.md): 단순 호모토피와 고차원 분류
