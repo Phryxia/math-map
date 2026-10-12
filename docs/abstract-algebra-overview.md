@@ -103,6 +103,7 @@ graph TD
 ## Lie 이론과 표현론
 
 - [Lie 대수](lie-algebras.md) → [근계](root-systems.md) → [Weyl 지표 공식](weyl-character-formula.md)
+- [아핀 Lie 대수](affine-lie-algebras.md): 일반화 Cartan 행렬의 아핀형에 대응하는 무한차원 Lie 대수, 허근과 Weyl–Kac 지표 공식
 - [Lie 군](lie-groups.md) → [Peter–Weyl 정리](peter-weyl.md) → [구면조화함수](spherical-harmonics.md)
 - [Clifford 대수](clifford-algebras.md): 벡터의 제곱을 이차형식으로 놓은 결합대수, 주기성과 직교군의 이중덮개
 - [Borel–Weil–Bott 정리](borel-weil-bott.md) → [Beilinson–Bernstein 국소화](beilinson-bernstein.md), [Schubert 계산](schubert-calculus.md), [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md) → [범주 O](category-o.md)
