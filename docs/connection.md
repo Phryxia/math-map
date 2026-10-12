@@ -133,5 +133,6 @@ $p$ 에서 출발해 $p$ 로 돌아오는 고리 $\gamma$ 의 평행이동 $P_\g
 ## 더 알아보기
 
 - [측지선](geodesics.md)
+- [Yang–Mills 이론](yang-mills-theory.md)
 
 #differential_geometry #topology #algebraic_topology

@@ -105,6 +105,7 @@ graph TD
 
 - [Lie 군](lie-groups.md): 군 구조와 매끄러운 구조를 함께 가진 공간
 - [등질공간](homogeneous-spaces.md): 군이 추이적으로 작용하는 다양체, 안정자로 적은 잉여류 공간과 불변 텐서장
+- [Yang–Mills 이론](yang-mills-theory.md): 곡률의 $L^2$ 노름 범함수, 4 차원의 순간자와 Donaldson 의 대각화 정리
 - [Chern–Simons 이론](chern-simons.md): 3 차원 다양체 위의 위상적 게이지 이론
 - [Wess–Zumino–Witten 모형](wess-zumino-witten.md): 경계의 공형장론과의 대응
 - [Seiberg–Witten 이론](seiberg-witten-theory.md): 4 차원 다양체의 $\mathrm{spin}^c$ 구조마다 꼬인 Dirac 방정식과 곡률 방정식을 묶은 모듈라이 공간의 불변량
