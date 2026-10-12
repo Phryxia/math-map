@@ -120,7 +120,7 @@ $p$ 에서 출발해 $p$ 로 돌아오는 고리 $\gamma$ 의 평행이동 $P_\g
 - [곡률](curvature.md)의 Riemann 곡률 텐서는 접다발 위 Levi-Civita 접속의 곡률이다. 계량이 접속을 하나 정하고 그 접속이 곡률을 정한다.
 - [특성류](characteristic-classes.md)를 Chern–Weil 이론이 곡률 2형식의 불변 다항식으로 적는다. 접속을 바꾸면 그 형식이 완전형식만큼 달라지므로 [de Rham 코호몰로지](de-rham-cohomology.md)류는 접속의 선택에 의존하지 않는다.
 - [Chern–Simons 이론](chern-simons.md)의 작용은 접속형식 $A$ 의 다항식 $\mathrm{tr}(A\wedge dA+\tfrac{2}{3}A\wedge A\wedge A)$ 를 적분한 것이다. 틀을 바꾸면 적분값이 정수만큼 변하므로 계수를 정수로 잡는다.
-- [Hodge 이론](hodge-theory.md)과 [지표 정리](index-theorem.md)가 다발 위 타원 작용소를 접속으로 만든다. 공변미분을 외미분 자리에 넣어 꼬인 de Rham 복합체와 Dirac 작용소를 세운다.
+- [Hodge 이론](hodge-theory.md)과 [지표 정리](index-theorem.md)가 다발 위 타원 작용소를 접속으로 만든다. 공변미분을 외미분 자리에 넣어 꼬인 de Rham 복합체와 [Dirac 작용소](dirac-operator.md)를 세운다.
 
 [^1]: Shoshichi Kobayashi and Katsumi Nomizu, *Foundations of Differential Geometry*, Vol. 1, Wiley (1963), Ch. II–III. 접속의 공리, 평행이동과의 대응, 비틀림과 홀로노미가 이 두 장에 있다.
 

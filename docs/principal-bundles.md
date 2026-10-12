@@ -87,7 +87,7 @@ $\omega$ 의 핵 $H_u=\ker\omega_u$ 를 **수평 부분공간**이라 한다. �
 
 - [특성류](characteristic-classes.md)를 Chern–Weil 이론이 주접속의 곡률 $F=d\omega+\tfrac12\lbrack\omega,\omega\rbrack$ 의 불변 다항식으로 적는다. 구조군의 불변 다항식 공간이 그 군의 특성류를 모두 준다.
 - [Chern–Simons 이론](chern-simons.md)의 작용이 주접속의 1형식으로 쓰인다. 구조군이 $\mathrm{SU}(n)$ 이면 3차원 다양체 위의 주다발이 모두 자명하므로 접속을 전역 1형식으로 적을 수 있다.
-- 스핀 구조가 $\mathrm{SO}(n)$ 틀다발을 $\mathrm{Spin}(n)$ 으로 들어 올리는 축소다. 들어 올림의 존재가 둘째 Stiefel–Whitney 류로 판정되고, Dirac 작용소를 세우는 데 쓰인다.
+- 스핀 구조가 $\mathrm{SO}(n)$ 틀다발을 $\mathrm{Spin}(n)$ 으로 들어 올리는 축소다. 들어 올림의 존재가 둘째 Stiefel–Whitney 류로 판정되고, [Dirac 작용소](dirac-operator.md)를 세우는 데 쓰인다.
 - [Lie 군](lie-groups.md)의 몫 $G\to G/H$ 가 주 $H$ 다발이다. 이 다발의 결합다발로 등질공간 위의 동변 벡터다발이 나오고, 그 단면 공간이 유도표현이다.
 - 게이지 이론이 주접속을 장으로 쓴다. 게이지 변환이 다발의 자기동형이고, 물리의 관측량은 접속의 공간을 그 군으로 나눈 몫 위의 함수다.
 

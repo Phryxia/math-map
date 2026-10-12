@@ -93,7 +93,7 @@ $$
 | de Rham $d+d^\ast$ | $\chi(M)$ | Euler 류의 적분 (Gauss–Bonnet) |
 | 부호수 작용소 | $\mathrm{sign}(M)$ | $L$ 종수 (Hirzebruch) |
 | Dolbeault $\bar\partial+\bar\partial^\ast$ | $\sum(-1)^q\dim H^q(M,\mathcal O)$ | Todd 류 (Riemann–Roch) |
-| Dirac 작용소 | $\mathrm{ind}\thinspace{\not}D$ | $\hat A$ 종수 |
+| [Dirac 작용소](dirac-operator.md) | $\mathrm{ind}\thinspace{\not}D$ | $\hat A$ 종수 |
 
 de Rham 복합체의 지표는 $\chi(M)$ 이고, 같은 수를 벡터장의 영점 지표 합으로 세는 것이 Poincaré–Hopf 정리다.
 
