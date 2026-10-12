@@ -134,5 +134,6 @@ $$
 - [Expander 그래프](expander-graphs.md)
 - [군의 표현](group-representations.md)
 - [Wigner 반원법칙](wigner-semicircle.md)
+- [Lax 쌍](lax-pairs.md)
 
 #linear_algebra #algebra #probability #analysis
