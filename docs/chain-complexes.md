@@ -96,7 +96,7 @@ $$\cdots\to H_n(A\_\bullet)\to H_n(B\_\bullet)\to H_n(C\_\bullet)\xrightarrow{\t
 
 를 준다.
 
-각 차수의 순환과 경계에 [뱀 보조정리](exact-sequences.md)를 적용해 연결 사상 $\partial$ 를 얻는다. $c\in Z_n(C\_\bullet)$ 를 $b\in B_n$ 으로 올리면 $d_n^B b$ 의 상이 $0$ 이므로 $d_n^B b$ 가 $A_{n-1}$ 에서 오고, 그것의 류가 $\partial\lbrack c\rbrack$ 다. 올린 것을 바꾸면 차이가 경계이므로 류는 하나로 정해진다. ∎
+각 차수의 순환과 경계에 [완전열](exact-sequences.md)의 뱀 보조정리를 적용해 연결 사상 $\partial$ 를 얻는다. $c\in Z_n(C\_\bullet)$ 를 $b\in B_n$ 으로 올리면 $d_n^B b$ 의 상이 $0$ 이므로 $d_n^B b$ 가 $A_{n-1}$ 에서 오고, 그것의 류가 $\partial\lbrack c\rbrack$ 다. 올린 것을 바꾸면 차이가 경계이므로 류는 하나로 정해진다. ∎
 
 ## Euler 지표
 
