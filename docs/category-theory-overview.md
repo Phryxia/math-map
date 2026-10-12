@@ -23,6 +23,9 @@ graph TD
   YL --> AD
   AD --> MO["Monad"]
   MO --> KE["Kleisli와 Eilenberg–Moore"]
+  CC["사슬 복합체"] --> AB["아벨 범주"]
+  LC --> AB
+  AB --> DC["유도 범주"]
   NT --> MN["모노이드 범주"] --> MT["모듈러 텐서범주"]
   TP["텐서곱"] --> MT
   MT --> AN["애니온"]
