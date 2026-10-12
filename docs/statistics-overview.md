@@ -59,6 +59,7 @@ graph TD
 - [편향-분산 분해](bias-variance-decomposition.md): 평균제곱오차를 편향의 제곱과 분산으로 가르는 항등식, 축소 추정과 모형 선택의 근거
 - [정칙화](regularization.md): 잔차제곱합에 계수의 크기를 재는 벌점을 더하는 추정, 능형회귀와 라소의 축소와 희소성
 - [교차검증](cross-validation.md): 자료를 나누어 적합에 쓰지 않은 조각으로 오차를 재는 절차, 선형 적합에서의 닫힌 꼴
+- [정보 기준](information-criteria.md): 로그가능도에 모수 개수의 벌점을 더해 모형을 비교하는 양, AIC 와 BIC 의 유도와 두 기준이 갈리는 자리
 
 # 연관 문서
 

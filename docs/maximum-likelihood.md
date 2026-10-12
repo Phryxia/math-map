@@ -161,10 +161,19 @@ $$
 
 ## 더 알아보기
 
+### 추정의 이론
+
 - [Fisher 정보](fisher-information.md)
-- [기댓값 최대화 알고리즘](em-algorithm.md)
-- [가설검정](hypothesis-testing.md)
-- [선형회귀](linear-regression.md)
 - [지수족](exponential-families.md)
+
+### 알고리즘과 모형
+
+- [기댓값 최대화 알고리즘](em-algorithm.md)
+- [선형회귀](linear-regression.md)
+
+### 모형 비교
+
+- [가설검정](hypothesis-testing.md)
+- [정보 기준](information-criteria.md)
 
 #statistics #probability #optimization

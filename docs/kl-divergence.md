@@ -175,10 +175,19 @@ $$
 
 ## 더 알아보기
 
+### 추정과 모형 비교
+
 - [Fisher 정보](fisher-information.md)
-- [대편차 원리](large-deviations.md)
+- [정보 기준](information-criteria.md)
+
+### 알고리즘
+
 - [기댓값 최대화 알고리즘](em-algorithm.md)
 - [변분 오토인코더](variational-autoencoder.md)
 - [Sinkhorn 알고리즘](sinkhorn.md)
+
+### 확률의 점근
+
+- [대편차 원리](large-deviations.md)
 
 #information_theory #probability #statistics #machine_learning
