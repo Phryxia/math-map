@@ -93,6 +93,7 @@ $$
 
 ## 선수지식
 
+- [사슬 복합체](chain-complexes.md)
 - [외대수](exterior-algebra.md)
 - [정칙 국소환](regular-local-rings.md)
 

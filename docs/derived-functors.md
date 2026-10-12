@@ -124,6 +124,7 @@ $\mathrm{Ext}\_R^1(C, A)$ 의 원소는 $0 \to A \to B \to C \to 0$ 꼴 확대�
 ## 선수지식
 
 - [함자](functors.md)
+- [사슬 복합체](chain-complexes.md)
 - [텐서곱](tensor-products.md)
 - [단사가군](injective-modules.md)
 

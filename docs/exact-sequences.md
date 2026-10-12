@@ -89,6 +89,7 @@ $\mathrm{Hom}(X,-)$ 는 왼쪽 완전이고 $-\otimes N$ 은 오른쪽 완전이
 
 ## 더 알아보기
 
+- [사슬 복합체](chain-complexes.md)
 - [Mayer–Vietoris 완전열](mayer-vietoris.md)
 
 #algebra #ring_theory #algebraic_topology
