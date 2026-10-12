@@ -112,6 +112,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Seiberg–Witten 이론](seiberg-witten-theory.md)
 
 #differential_geometry #analysis #algebraic_topology #functional_analysis

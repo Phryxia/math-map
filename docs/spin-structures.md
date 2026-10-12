@@ -90,5 +90,6 @@ Levi-Civita [접속](connection.md)은 덮개를 통해 $P\_{\mathrm{Spin}}$ 으
 ## 더 알아보기
 
 - [Dirac 작용소](dirac-operator.md)
+- [Seiberg–Witten 이론](seiberg-witten-theory.md)
 
 #differential_geometry #algebraic_topology #topology #group_theory
