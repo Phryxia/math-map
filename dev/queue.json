@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-12T17:04:49.594Z",
-  "nextSeq": 2181,
+  "savedAt": "2026-10-12T21:00:47.065Z",
+  "nextSeq": 2187,
   "items": [
     {
       "id": "9443e5ca",
@@ -3394,6 +3394,54 @@
       "note": "분야 topology, 부모는 lens-spaces. 44차에 lens-spaces 를 쓰며 '## 기하화 안에서의 위치' 절에서 S^3 기하의 유한 부분군 몫 가운데 이면체형, 사면체형, 팔면체형, 이십면체형을 이름만 적었다(0절대로 본문에 링크 없이 이름만 썼다). Poincare 구면과 Seifert 올다양체 문서가 그 자리다. 내용은 Seifert 불변량, 올다발 구조의 유일성, 8 개 모형 기하 가운데 여섯이 Seifert 라는 분류, 예외 수술 결과의 상당수가 Seifert 라는 것이다. 저장소 확인: ls docs | grep -iE 'seifert|poincare-sphere|spherical-space' 로 없음을 확인했다(2026-10-12). geometrization 과 lens-spaces 가 선수.",
       "createdAt": "2026-10-12T17:01:47.166Z",
       "seq": 2177
+    },
+    {
+      "id": "0558e6a7",
+      "title": "Seiberg–Witten 이론",
+      "priority": 10,
+      "note": "분야 differential_geometry. 부모는 dirac-operator 와 spin-structures. 4 차원 다양체에서 spin^c 구조와 꼬인 Dirac 작용소에 곡률 방정식을 결합한 모듈라이 공간의 불변량이다. 44차에 dirac-operator 를 쓰면서 자식 후보로 떠올랐다. 저장소에 seiberg 로 걸리는 문서 없음을 ls docs | grep -iE 'seiberg' 로 확인했다.",
+      "createdAt": "2026-10-12T20:45:53.180Z",
+      "seq": 2181
+    },
+    {
+      "id": "8e5c1509",
+      "title": "eta 불변량과 APS 지표 정리",
+      "priority": 10,
+      "note": "분야 differential_geometry. 부모는 dirac-operator. 경계 있는 다양체에서 Dirac 작용소의 지표가 $\\hat A$ 적분에 경계의 eta 불변량을 더한 것이 된다는 Atiyah-Patodi-Singer 정리다. 44차에 dirac-operator 의 성질 절에서 경계 없는 경우만 다루면서 떠올랐다. atiyah, eta- 로 걸리는 문서 없음을 확인했다.",
+      "createdAt": "2026-10-12T20:45:53.320Z",
+      "seq": 2182
+    },
+    {
+      "id": "b1b7f9b7",
+      "title": "양의 스칼라 곡률의 장애",
+      "priority": 10,
+      "note": "분야 differential_geometry. 부모는 dirac-operator. Lichnerowicz 소멸 정리와 지표 정리가 주는 장애, Gromov-Lawson 의 수술 정리, 단연결 고차원에서의 분류를 모은다. 44차에 dirac-operator 의 소멸 정리 절을 쓰면서 떠올랐다. positive-scalar, gromov 로 걸리는 문서 없음을 확인했다.",
+      "createdAt": "2026-10-12T20:45:53.456Z",
+      "seq": 2183
+    },
+    {
+      "id": "d17a4e39",
+      "title": "Donaldson 불변량",
+      "priority": 10,
+      "note": "분야 differential_geometry. 부모는 yang-mills-theory. 순간자 모듈라이 공간의 기본류를 코호몰로지류에 짝지어 얻는 4 차원 불변량과 Seiberg-Witten 불변량과의 대응(Witten 추측)을 담는다. 44차에 yang-mills-theory 를 쓰면서 자식 후보로 떠올랐다. ls docs | grep -iE 'donaldson' 로 없음을 확인했다.",
+      "createdAt": "2026-10-12T20:52:10.495Z",
+      "seq": 2184
+    },
+    {
+      "id": "fc691dd8",
+      "title": "콤팩트 지지 코호몰로지",
+      "priority": 10,
+      "note": "분야 algebraic_topology. 부모는 cohomology. 44차에 poincare-duality 를 쓰면서 쌍대성 정리의 증명 요지가 이 코호몰로지를 쓰는데 문서가 없음이 드러났다. 직접극한으로 정의하고 비콤팩트 다양체의 쌍대성과 Borel-Moore 호몰로지까지 담을 자리다. compactly, borel-moore 로 걸리는 문서 없음을 확인했다.",
+      "createdAt": "2026-10-12T20:57:54.854Z",
+      "seq": 2185
+    },
+    {
+      "id": "2275eee3",
+      "title": "Kirby 계산법과 손잡이 분해",
+      "priority": 10,
+      "note": "분야 topology. 부모는 intersection-form 과 manifolds 가 후보다. 4 차원 다양체를 손잡이 붙이기로 적고 Kirby 그림의 변형으로 미분동형을 판정한다. 44차에 intersection-form 을 쓰면서 Freedman 과 Donaldson 정리의 구성적 측면이 빠진 것이 보였다. kirby, handle 로 걸리는 문서 없음을 확인했다.",
+      "createdAt": "2026-10-12T20:57:54.984Z",
+      "seq": 2186
     },
     {
       "id": "dfb3e493",
