@@ -55,6 +55,7 @@ graph TD
 - [모멘트 사상](moment-map.md): 심플렉틱 작용의 보존량을 Lie 대수 쌍대공간에 모은 사상, Marsden–Weinstein 축소와 모멘트 다면체
 - [여접다발](cotangent-bundle.md): 좌표 없이 정의되는 표준 1 형식과 그 외미분이 주는 심플렉틱 구조, 정준변환
 - [Hamilton 역학](hamiltonian-mechanics.md): 속도를 운동량으로 바꾼 1차 방정식계, 에너지 보존과 흐름의 심플렉틱 성질
+- [적분가능계](integrable-systems.md): 자유도만큼의 대합적 보존량, Arnold–Liouville 정리와 작용-각 좌표
 
 ## 다발과 접속
 
