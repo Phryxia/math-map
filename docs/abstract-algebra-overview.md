@@ -113,7 +113,7 @@ graph TD
 
 ## 정점작용소대수와 달빛
 
-- [정점작용소대수](vertex-operator-algebras.md) → [Zhu 대수](zhu-algebra.md) → [Schellekens 목록](schellekens-list.md), [모듈러 텐서범주](modular-tensor-categories.md)
+- [Virasoro 대수](virasoro-algebra.md) → [정점작용소대수](vertex-operator-algebras.md) → [Zhu 대수](zhu-algebra.md) → [Schellekens 목록](schellekens-list.md), [모듈러 텐서범주](modular-tensor-categories.md)
 - [Wess–Zumino–Witten 모형](wess-zumino-witten.md): 아핀 Lie 대수의 물리
 - [괴물 달빛 추측](monstrous-moonshine.md) → [Umbral moonshine](umbral-moonshine.md)
 
