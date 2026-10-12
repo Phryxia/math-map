@@ -2,7 +2,7 @@
 
 # 개요
 
-내재부피는 볼록체마다 차원 수만큼 정의되는 기하량의 족이다. 부피, 겉면적의 절반, 평균 폭의 상수배, Euler 표수가 모두 내재부피의 하나다. 주변 공간의 차원에 의존하지 않는 정규화를 쓰므로 [혼합부피](mixed-volumes.md)의 quermassintegral 과 상수배만큼 다르다. Hadwiger 정리가 이 족이 볼록체 위의 가법적 함수 전체를 생성한다는 것을 말한다.
+내재부피는 볼록체마다 차원 수만큼 정의되는 기하량의 족이다. 부피, 겉면적의 절반, 평균 폭의 상수배, Euler 지표가 모두 내재부피의 하나다. 주변 공간의 차원에 의존하지 않는 정규화를 쓰므로 [혼합부피](mixed-volumes.md)의 quermassintegral 과 상수배만큼 다르다. Hadwiger 정리가 이 족이 볼록체 위의 가법적 함수 전체를 생성한다는 것을 말한다.
 
 # 직관
 
@@ -33,7 +33,7 @@ $$
 - $V_n(K)=\mathrm{vol}(K)$ 다.
 - $V\_{n-1}(K)$ 는 $K$ 가 $n$ 차원일 때 겉면적의 절반이다.
 - $V_1(K)$ 는 평균 폭의 상수배다.
-- $V_0(K)=1$ 이고 이것이 $K$ 의 [Euler 표수](euler-characteristic.md)다.
+- $V_0(K)=1$ 이고 이것이 $K$ 의 [Euler 지표](euler-characteristic.md)다.
 
 이 정규화는 $K$ 를 $\mathbb R^n\subset\mathbb R^{n+m}$ 으로 보아도 $V_j(K)$ 가 바뀌지 않도록 한 것이다. 같은 계수를 $\kappa$ 로 나누지 않고 쓴 것이 quermassintegral $W_j$ 이고, $W_j$ 는 주변 차원에 따라 값이 달라진다.
 
@@ -89,7 +89,7 @@ $j=0$ 인 경우는 $L$ 을 무작위로 놓았을 때 $K$ 와 만날 확률을 
 
 - **적분기하의 공식.** Crofton 공식(아핀 부분공간과의 교차의 측도가 내재부피를 준다)과 Cauchy 투영 공식이 Kubota 공식의 특수 경우다. 입체계측학에서 단면의 측정값으로 3차원 양을 추정할 때 이 공식들을 쓴다.
 - **볼록체의 부등식.** Alexandrov–Fenchel 부등식을 quermassintegral 로 적으면 내재부피 사이의 부등식 $V_j(K)^2\ge V\_{j-1}(K)V\_{j+1}(K)$ 꼴이 되고, $j=n-1$ 경우가 등주부등식이다.
-- **값매김 이론.** 평행이동 불변만 요구하고 회전 불변을 빼면 평가의 공간이 무한차원이 되고, 그 차수별 분해가 McMullen 분해다. 회전 불변을 더하면 Hadwiger 정리로 차원이 $n+1$ 로 떨어진다.
+- **[McMullen 분해](mcmullen-decomposition.md).** 평행이동 불변만 요구하고 회전 불변을 빼면 평가의 공간이 무한차원이 되고, 그 차수별 분해가 McMullen 분해다. 회전 불변을 더하면 Hadwiger 정리로 차원이 $n+1$ 로 떨어진다.
 - **격자점 셈.** 격자 다면체의 [Ehrhart 다항식](ehrhart-polynomial.md)의 최고차 두 계수가 $V_n$ 과 정규화된 $V\_{n-1}$ 이다. 상수항이 $V_0=1$ 인 것도 같은 대응이다.
 
 [^1]: Rolf Schneider, *Convex Bodies: The Brunn–Minkowski Theory*, 2nd ed., Cambridge University Press, 2014, ch. 4 and ch. 6.
@@ -102,6 +102,6 @@ $j=0$ 인 경우는 $L$ 을 무작위로 놓았을 때 $K$ 와 만날 확률을 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [McMullen 분해](mcmullen-decomposition.md)
 
 #analysis #measure_theory #combinatorics

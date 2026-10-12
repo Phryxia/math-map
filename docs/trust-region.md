@@ -63,7 +63,7 @@ $$
 (B+\lambda I)p^\ast = -g, \qquad \lambda(\Delta-\Vert p^\ast\Vert)=0, \qquad B+\lambda I \succeq 0
 $$
 
-첫 조건은 $\lambda$ 를 제약의 [Lagrange 승수](lagrange-duality.md)로 본 정류 조건이고, 둘째는 상보성(반경이 묶이지 않으면 $\lambda=0$)이다. 셋째가 일반적인 2차 제약 최적화에는 없는 조건이고, 이것 때문에 $B$ 가 부정부호인 경우에도 전역해를 다항시간에 찾는다.
+첫 조건은 $\lambda$ 를 제약의 [Lagrange 쌍대성](lagrange-duality.md)의 승수로 본 정류 조건이고, 둘째는 상보성(반경이 묶이지 않으면 $\lambda=0$)이다. 셋째가 일반적인 2차 제약 최적화에는 없는 조건이고, 이것 때문에 $B$ 가 부정부호인 경우에도 전역해를 다항시간에 찾는다.
 
 증명의 요지는 $\lambda$ 를 고정했을 때 $m(p)+\tfrac{\lambda}{2}(\Vert p\Vert^2-\Delta^2)$ 가 $B+\lambda I\succeq 0$ 아래 볼록이므로 그 정류점이 전역최소라는 것이다. 이 함수는 $\Vert p\Vert\le\Delta$ 에서 $m(p)$ 이하이고 $p^\ast$ 에서 값이 같으므로 $p^\ast$ 가 원 문제의 전역해다.
 
@@ -94,7 +94,7 @@ $B_k=\nabla^2 f(x_k)$ 이고 극한점 $x^\ast$ 에서 Hessian 이 양정부호�
 - **[Newton 법](newton-method.md)의 전역화.** Hessian 이 특이하거나 부정부호인 점에서 Newton 걸음이 정의되지 않거나 모형의 최대점을 집는 것을 반경 제약이 막는다. 해 근방에서는 제약이 묶이지 않아 2차 수렴이 회복된다.
 - **[준Newton 법](quasi-newton-methods.md).** $B_k$ 에 양정부호를 요구하지 않으므로 secant 조건만 만족하는 갱신을 쓸 수 있다. BFGS(Broyden–Fletcher–Goldfarb–Shanno)의 양정부호 유지를 위한 곡률 조건이 필요하지 않다.
 - **최소제곱.** 잔차 $r(x)$ 의 제곱합을 최소화할 때 $B_k=J_k^{\mathsf T}J_k$ 로 두면 부분문제의 정류 조건이 $(J^{\mathsf T}J+\lambda I)p=-J^{\mathsf T}r$ 이다. Levenberg–Marquardt 법의 감쇠 모수 $\lambda$ 가 신뢰영역 반경의 역할을 한다.
-- **대규모 문제의 절단 반복.** 부분문제를 정확히 풀려면 $\lambda$ 를 찾는 반복마다 행렬 분해가 필요하다. Steihaug 절단 공액기울기법은 [공액기울기](krylov-subspace-methods.md) 반복을 신뢰영역 경계에 닿거나 음의 곡률 방향을 만나면 멈추는 것으로 바꾸어 행렬-벡터 곱만으로 Cauchy 점 이상의 감소를 얻는다.
+- **대규모 문제의 절단 반복.** 부분문제를 정확히 풀려면 $\lambda$ 를 찾는 반복마다 행렬 분해가 필요하다. Steihaug 절단 공액기울기법은 [Krylov 부분공간 방법](krylov-subspace-methods.md)의 공액기울기 반복을 신뢰영역 경계에 닿거나 음의 곡률 방향을 만나면 멈추는 것으로 바꾸어 행렬-벡터 곱만으로 Cauchy 점 이상의 감소를 얻는다.
 - **2차원 부분공간 방법.** $g_k$ 와 $B_k^{-1}g_k$ 가 생성하는 2차원 부분공간으로 부분문제를 제한하면, $2\times 2$ 문제의 정확해를 닫힌 식으로 구한다. $B_k$ 가 부정부호일 때는 최소 고윳값의 고유벡터를 부분공간에 더한다.
 
 [^1]: Nocedal and Wright, *Numerical Optimization*, 2nd ed., Springer, 2006, ch. 4.
