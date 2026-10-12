@@ -118,6 +118,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [역산란 변환](inverse-scattering-transform.md)
 
 #analysis #functional_analysis

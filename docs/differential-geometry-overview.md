@@ -67,6 +67,7 @@ graph TD
 - [적분가능계](integrable-systems.md): 자유도만큼의 대합적 보존량, Arnold–Liouville 정리와 작용-각 좌표
 - [Kolmogorov-Arnold-Moser 정리](kam-theorem.md): 교란에서 살아남는 불변 원환면, Diophantine 조건과 작은 분모
 - [Lax 쌍](lax-pairs.md): 흐름을 등스펙트럼 변형으로 적는 두 행렬, Toda 격자와 미분연산자 판본
+- [역산란 변환](inverse-scattering-transform.md): 산란 자료로 옮겨 선형이 되는 Korteweg–de Vries 방정식의 흐름, Gelfand–Levitan–Marchenko 방정식과 고립파
 
 ## 다발과 접속
 

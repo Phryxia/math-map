@@ -78,7 +78,7 @@ $$
 L=-\partial\_x^2+u,\qquad P=-4\partial\_x^3+6u\partial\_x+3u\_x
 $$
 
-의 Lax 방정식과 같다.[^2] 따라서 $u$ 가 이 방정식의 해이면 Schrödinger 연산자 $L$ 의 스펙트럼이 시간에 변하지 않는다. 유한 행렬이 아니므로 보존량은 대각합이 아니라 산란 자료에서 읽고, 그 자료의 시간 변화가 선형이 되는 것이 역산란 변환이다.
+의 Lax 방정식과 같다.[^2] 따라서 $u$ 가 이 방정식의 해이면 Schrödinger 연산자 $L$ 의 스펙트럼이 시간에 변하지 않는다. 유한 행렬이 아니므로 보존량은 대각합이 아니라 산란 자료에서 읽고, 그 자료의 시간 변화가 선형이 되는 것이 [역산란 변환](inverse-scattering-transform.md)이다.
 
 # 활용
 
@@ -99,6 +99,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [역산란 변환](inverse-scattering-transform.md)
 
 #differential_geometry #analysis #linear_algebra
