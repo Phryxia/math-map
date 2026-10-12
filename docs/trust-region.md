@@ -108,6 +108,6 @@ $B_k=\nabla^2 f(x_k)$ 이고 극한점 $x^\ast$ 에서 Hessian 이 양정부호�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [비선형 최소제곱](nonlinear-least-squares.md)
 
 #optimization #analysis #linear_algebra
