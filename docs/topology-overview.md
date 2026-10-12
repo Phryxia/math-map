@@ -54,6 +54,7 @@ graph TD
 - [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Lefschetz 고정점 정리](lefschetz-fixed-point.md): 호몰로지 대각합의 교대합이 고정점의 존재를 판정한다
 ## 코호몰로지와 비틀림
 
+- [Poincaré 쌍대성](poincare-duality.md): 닫힌 유향 다양체에서 $k$ 차 코호몰로지와 $n-k$ 차 호몰로지의 동형, 교차수와 4 차원의 교차형식
 - [de Rham 코호몰로지](de-rham-cohomology.md) → [Hodge 이론](hodge-theory.md) → [Kähler 다양체](kahler-manifolds.md), [지표 정리](index-theorem.md)
 - [Reidemeister 비틀림](reidemeister-torsion.md) → [s-코보디즘 정리](s-cobordism.md): 단순 호모토피와 고차원 분류
 ## 호모토피론의 도구
