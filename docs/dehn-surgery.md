@@ -123,6 +123,6 @@ $M$ 이 cusp 를 가진 유한 부피 쌍곡 다양체일 때, [쌍곡 3 다양�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [렌즈 공간](lens-spaces.md)
 
 #topology #algebraic_topology #differential_geometry #group_theory
