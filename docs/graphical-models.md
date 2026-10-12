@@ -105,6 +105,6 @@ $$m_{u\to v}(x_v)=\sum_{x_u}\psi_u(x_u)\psi_{uv}(x_u,x_v)\prod_{w\in N(u)\setmin
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [조건부 무작위장](conditional-random-fields.md)
 
 #probability #machine_learning #graph_theory #statistics
