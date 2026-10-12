@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-11T21:03:28.594Z",
-  "nextSeq": 2117,
+  "savedAt": "2026-10-12T01:05:43.930Z",
+  "nextSeq": 2130,
   "items": [
     {
       "id": "9443e5ca",
@@ -90,6 +90,30 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 큐 항목 1be6af32 의 보충이다. 42차 회차(2026-10-11) 시작에서도 fetch 가 '+ 4e30b1b...eeff989 claude/math -> origin/claude/math (forced update)' 를 내고 pull 이 '50 and 50 different commits each' 로 실패했다. 1be6af32 는 이 상황의 복구로 git reset --hard origin/claude/math 를 적어 두었으나, 42차 실행 환경에서 reset --hard 가 'Irreversible Local Destruction' 사유로 거부되어 쓸 수 없었다. 대신 git pull --rebase origin claude/math 가 그대로 성공했다. 로컬 전용 커밋 50 개가 전부 원격에 이미 반영된 같은 패치여서 rebase 가 모두 already-upstream 으로 건너뛰고 HEAD 가 원격과 같아졌다. 1be6af32 의 'rebase 와 ff-only 는 둘 다 실패한다' 는 38차 상황에 한정된 관찰이다. 순서를 이렇게 둔다. (1) comm -23 또는 diff 로 로컬에만 있는 docs 파일이 없음을 먼저 확인한다. 42차에는 diff <(git ls-tree -r --name-only HEAD docs/ | sort) <(git ls-tree -r --name-only origin/claude/math docs/ | sort) 의 '<' 줄이 0 개였다. (2) git pull --rebase 를 먼저 시도한다. (3) rebase 가 충돌로 멈추면 그때 reset --hard 를 시도하고, 거부되면 작업 트리를 스크래치패드로 복사한 뒤 원격 파일을 git checkout origin/claude/math -- docs README.md 로 덮는다.",
       "createdAt": "2026-10-11T17:00:59.771Z",
       "seq": 2104
+    },
+    {
+      "id": "c2173521",
+      "title": "새 문서를 쓴 뒤 check-cycle 이 EXISTS 를 내놓는 순서 문제",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 42차 회차에 kam-theorem.md 를 먼저 쓰고(선수지식 절에 integrable-systems 와 diophantine-approximation 을 적은 상태) 2절 7단계의 check-cycle diophantine-approximation kam-theorem 을 돌렸더니 'EXISTS: 이미 있는 간선' 이 나왔다. graph.mjs 는 자식 문서의 '## 선수지식' 줄도 간선으로 읽으므로, 새 문서를 파일로 쓴 뒤에는 그 문서가 적은 부모 간선이 이미 존재하는 것으로 집계된다. 순환 검사를 건너뛰게 되는 함정이 아니라 단지 메시지가 달라지는 것이지만, EXISTS 를 보고 '이미 양쪽에 적혀 있다' 고 오해하면 부모 쪽 '## 더 알아보기' 를 빠뜨려 validate 가 ASYMMETRIC 2건을 낸다. 42차에 실제로 그랬고 validate 가 잡아 고쳤다. 규칙 둘. (1) 새 문서의 check-cycle 은 파일을 쓰기 전에 --allow-new 로 돌린다. (2) 파일을 쓴 뒤라면 EXISTS 를 '간선이 양쪽에 적혔다' 는 뜻으로 읽지 않고, 부모 문서의 더 알아보기를 직접 grep 으로 확인한다.",
+      "createdAt": "2026-10-12T00:55:02.617Z",
+      "seq": 2122
+    },
+    {
+      "id": "ee4586ed",
+      "title": "differential-geometry-overview 지도의 노드 수가 4.5절 기준을 넘는 문제",
+      "priority": 50,
+      "note": "독자 판단 대기. 42차 회차(2026-10-12)에 심플렉틱 축 다섯 문서(integrable-systems lagrangian-submanifolds hamilton-jacobi-equation kam-theorem lax-pairs)를 만들고 보니 개관의 '# 지도' mermaid 에 심플렉틱 축이 한 노드도 없었다. 같은 회차에 실제 간선 넷(differential-forms->symplectic-manifolds, symplectic-manifolds->cotangent-bundle, cotangent-bundle->hamiltonian-mechanics, hamiltonian-mechanics->integrable-systems)을 지도에 더해 축을 드러냈다. 그래서 노드가 21 개에서 25 개가 되었고 4.5절의 '핵심 문서 12~20개' 를 넘는다. 넘긴 채 두는 것이 맞는지, 덜 핵심인 노드(WZ Wess-Zumino-Witten, H3 쌍곡 3 다양체, PH Poincare-Hopf 가 후보)를 빼서 20 개에 맞추는 것이 맞는지 판단이 필요하다. 다른 세션이 넣은 노드를 지우는 일이라 임의로 하지 않았다. 부분그래프 조건은 위반이 아니다(더한 넷 모두 실제 간선임을 check-cycle 로 확인했다).",
+      "createdAt": "2026-10-12T00:58:24.751Z",
+      "seq": 2124
+    },
+    {
+      "id": "f9ba5d50",
+      "title": "42차 회차 새 문서 여섯의 문체 회귀 점검",
+      "priority": 50,
+      "note": "42차 회차(2026-10-12)에 심플렉틱·적분가능계 축으로 여섯을 썼다. integrable-systems(107줄) lagrangian-submanifolds(92줄) hamilton-jacobi-equation(120줄) kam-theorem(90줄) lax-pairs(104줄) viscosity-solutions(102줄). 다음 회차에 다시 읽을 자리를 적어 둔다. (1) 여섯 모두 직관 절이 4~5 문단이다. 4절 문구는 두 문단이라 하고 모범 예는 네다섯 문단이라, 큐 항목 08e59419 의 독자 판단이 나오면 한꺼번에 맞춰야 한다. (2) kam-theorem 의 '## 자유도 2 에서의 가둠' 은 헤딩이 명사구이긴 하나 서술에 가깝다. (3) hamilton-jacobi-equation 의 '## 특성곡선과 Hamilton 흐름' 은 작성 중 '## Hamilton 흐름이 특성곡선' 에서 고친 것이다. (4) viscosity-solutions 의 직관 절 넷째 문단이 두 함수를 견주므로 4절 '독자가 묻지 않은 대안을 세워 비교하지 않는다' 에 걸리는지 보아야 한다. 이 문서에서는 두 후보 가운데 어느 것이 해인지가 주제라 비교가 내용 자체라고 판단해 두었다.",
+      "createdAt": "2026-10-12T01:02:14.434Z",
+      "seq": 2127
     },
     {
       "id": "08e59419",
@@ -922,6 +946,14 @@
       "note": "39차(2026-10-11)에 803 문서의 제목 줄만 UTF-8 로 정확히 매칭해 25 건을 뽑았다. 전부 4절 제목 규칙에 어긋나지 않는다고 판정했고 고친 문서는 없다.\\n\\n로케일 문제. CLAUDE.md 2절 3단계의 'grep -l ^# .*[와과] docs/*.md' 는 문서의 모든 H1 을 보므로 본문 '# 개요' 는 물론 '해석학 개관'(학 개관), 'Baire 범주 정리'(범주 정리), '유계변동 함수' 처럼 와/과 가 없는 제목까지 49 건을 낸다. 바이트 단위 매칭으로 [와과] 가 음절의 일부 바이트에 걸리기 때문이다. 제목 줄만 보고 UTF-8 로 매칭하면 25 건이다. 검사는 python3 로 한다. pat=re.compile(r'^# .*[와과] ') 를 각 파일의 첫 줄에만 적용한다.\\n\\n판정 근거 두 갈래. (1) 파일명이 두 개념을 다 가리키는 것 아홉: dyson-rank-crank, fermat-euler-theorem, filters-and-nets(큐 89a333fe 에 판정 기록), formalism-hilbert-program, ideals-quotient-rings, kleisli-eilenberg-moore, limits-colimits, luzin-sierpinski-sets, selmer-tate-shafarevich. 4절은 '파일명이 그중 하나만 가리키면 어긋난 것' 이라 하므로 이 아홉은 어긋남이 아니다. (2) 4절이 예외로 명시한 '정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목' 열여섯: canonical-height(4절의 예시 그 자체), dwork-rationality, eisenstein-ideal, greenberg-conjecture, heegner-points, herbrand-ribet, np-completeness, perfect-graphs, s-cobordism, serre-conjecture, speh-representations, unique-games, vandiver-conjecture, waldspurger-formula, whittaker-models, witten-asymptotics.\\n\\n같은 회차에 '태그가 하나뿐인 문서' 검사(tail -1 의 태그 수가 1 이하)도 전수로 돌렸고 0 건이다.",
       "createdAt": "2026-10-11T21:03:08.206Z",
       "seq": 2116
+    },
+    {
+      "id": "21b0c70c",
+      "title": "4절 비유 금지 grep 의 용어 오탐 판정 (42차)",
+      "priority": 20,
+      "note": "42차 회차(2026-10-12)에 저장소 전체로 4절 비유 금지 grep 을 돌렸다. 후보 4 건이고 전부 용어의 일부여서 4절 예외다. 고치지 않았다. (1) elliptic-curves 118 줄 'Montgomery 사다리' - Montgomery ladder, 스칼라 곱 알고리즘 이름. (2) lie-algebras 162 줄 '사다리 연산자' - ladder operator, 양자역학 용어. (3) mandelbrot-set 55 줄 '심장꼴' - cardioid 의 번역어. (4) post-quantum-cryptography 126 줄 '함정문' - trapdoor 의 번역어, 같은 줄에 두 번. 같은 회차에 문장형 헤딩 grep 도 돌렸고 걸린 것은 전부 '## 증명의 요지' 였다. grep 패턴의 '[^로]지' 가 '요지' 를 잡는 오탐이고 명사구이므로 정당한 헤딩이다. 금지 매크로, 추측 절, 코드블록 언어 검사는 후보 0 건이었다.",
+      "createdAt": "2026-10-12T01:05:25.703Z",
+      "seq": 2129
     },
     {
       "id": "410fd79d",
@@ -2540,14 +2572,6 @@
       "seq": 1622
     },
     {
-      "id": "73e2341f",
-      "title": "적분가능계와 Arnold-Liouville 정리",
-      "priority": 10,
-      "note": "미분기하/해석학. 부모는 symplectic-manifolds. 작용-각 좌표, 원환면 올갱이, Poisson 괄호 소멸하는 n 개 보존량. symplectic-manifolds 활용 절에서 이름만 썼다.",
-      "createdAt": "2026-10-04T20:42:50.827Z",
-      "seq": 1671
-    },
-    {
       "id": "a904955c",
       "title": "이진 이차형식의 유형군",
       "priority": 10,
@@ -3244,6 +3268,22 @@
       "seq": 1942
     },
     {
+      "id": "cf930175",
+      "title": "역산란 변환",
+      "priority": 9,
+      "note": "analysis. 부모는 lax-pairs(42차 회차에 신설). 그 문서 성질 절 '미분연산자 Lax 쌍' 과 활용 절 마지막 항목이 역산란 변환을 이름만 쓰고 지나간다. ls docs | grep -iE 'inverse-scatter' 로 저장소에 없음을 확인했다. 담을 것: Schrodinger 연산자의 산란 자료(반사계수와 묶인 상태), 자료의 시간 변화가 선형인 것, Korteweg-de Vries 방정식의 고립파 해와 N 고립파 해, Gelfand-Levitan-Marchenko 방정식.",
+      "createdAt": "2026-10-12T01:02:14.121Z",
+      "seq": 2125
+    },
+    {
+      "id": "a204df65",
+      "title": "보존법칙의 엔트로피 해",
+      "priority": 9,
+      "note": "analysis. 부모는 viscosity-solutions(42차 회차에 신설). 그 문서 활용 절 마지막 항목이 엔트로피 해를 이름만 쓰고 지나간다. ls docs | grep -iE 'entropy-solution|conservation-law|burgers' 로 저장소에 없음을 확인했다. 담을 것: Burgers 방정식의 충격파, Rankine-Hugoniot 조건, Lax 엔트로피 조건, 적분하면 Hamilton-Jacobi 방정식이 되는 1차원 대응. 주의: 저장소의 entropy 문서는 정보이론 쪽이라 다른 개념이다.",
+      "createdAt": "2026-10-12T01:02:14.282Z",
+      "seq": 2126
+    },
+    {
       "id": "a6985bd5",
       "title": "dev 스크립트 개선 요청 묶음 (수식 표기 검사, KaTeX 검증, 이스케이프 검출)",
       "priority": 8,
@@ -3450,6 +3490,14 @@
       "note": "메모 ae0b674e(큐에 넣기 전 저장소 전수 확인)의 자동화. 39차에 큐 489 항목의 제목을 docs 790 개의 첫 줄 제목과 대조했다. 정확 일치 0 건, 부분 일치 21 건이다. 부분 일치 가운데 둘이 실제로 채워져 있었다. bb58ad2a('Rademacher 복잡도와 일반화 오차', 문서 신설 요청)는 rademacher-complexity 가 note 가 지정한 부모 concentration-inequalities 아래 생겨 제거했다. 2de49d51('Temperley-Lieb 대수와 부분인자')은 문서는 생겼고 부분인자 쪽 내용만 남아 보강 항목으로 갈아 넣었다. 나머지 19 건은 '남은 후속' 꼴이거나(Borcherds 곱, Brouwer 차수, 모멘트 사상 등) 문서가 다루지 않는 별개 주제다(621c77df 'p 진 다중 zeta 값' 은 multiple-zeta-values 와 다른 주제이고 note 가 이미 그 사실을 적고 있다, 34f1ab7d 'Markov 연쇄 Monte Carlo' 는 metropolis 나 mcmc 문서가 없어 유효하다).\n\n검사법. 스크래치패드에 python 으로 node dev/queue.mjs list --json 과 docs 의 첫 줄 제목을 읽어 정규화(공백과 달러 기호 제거, 긴 붙임표 통일, 소문자화)해 비교한다. 제목에 '후속 간선|점검|훑기|판정|결과|검사|사고|확인|보강|회귀|결정|현황|절차|통독' 이 든 항목과 note 가 '상시 재발 방지 메모' 로 시작하거나 '독자 판단' 이 든 항목은 신규 주제가 아니므로 건너뛴다. 부분 일치는 다섯 글자 이상일 때만 본다. 다음 회차에 돌릴 때는 21 건 가운데 이 메모가 판정한 것을 빼고 새로 생긴 것만 본다.",
       "createdAt": "2026-10-11T09:03:03.105Z",
       "seq": 2080
+    },
+    {
+      "id": "e4aec76a",
+      "title": "Nekhoroshev 추정",
+      "priority": 8,
+      "note": "differential_geometry/analysis. 부모는 kam-theorem(42차 회차에 신설). 그 문서 성질 절 '자유도 2 에서의 가둠' 마지막 문단이 자유도 3 이상에서 작용 변수의 변화에 대한 지수적으로 긴 시간의 상한으로 Nekhoroshev 추정을 이름만 쓰고 각주로 미룬다. ls docs | grep -iE 'nekhoroshev' 로 저장소에 없음을 확인했다. 담을 것: 준볼록(steep) 조건, exp(1/eps^a) 꼴 시간 상한과 eps^b 꼴 작용 변화 상한, 공명 구역 분해와 정규형 전개의 끊기, KAM 과의 차이(측도가 아니라 모든 초기조건).",
+      "createdAt": "2026-10-12T01:03:01.385Z",
+      "seq": 2128
     },
     {
       "id": "fb947ff9",
