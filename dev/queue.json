@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-12T09:04:11.475Z",
-  "nextSeq": 2154,
+  "savedAt": "2026-10-12T13:05:31.453Z",
+  "nextSeq": 2167,
   "items": [
     {
       "id": "9443e5ca",
@@ -98,6 +98,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 42차 회차에 kam-theorem.md 를 먼저 쓰고(선수지식 절에 integrable-systems 와 diophantine-approximation 을 적은 상태) 2절 7단계의 check-cycle diophantine-approximation kam-theorem 을 돌렸더니 'EXISTS: 이미 있는 간선' 이 나왔다. graph.mjs 는 자식 문서의 '## 선수지식' 줄도 간선으로 읽으므로, 새 문서를 파일로 쓴 뒤에는 그 문서가 적은 부모 간선이 이미 존재하는 것으로 집계된다. 순환 검사를 건너뛰게 되는 함정이 아니라 단지 메시지가 달라지는 것이지만, EXISTS 를 보고 '이미 양쪽에 적혀 있다' 고 오해하면 부모 쪽 '## 더 알아보기' 를 빠뜨려 validate 가 ASYMMETRIC 2건을 낸다. 42차에 실제로 그랬고 validate 가 잡아 고쳤다. 규칙 둘. (1) 새 문서의 check-cycle 은 파일을 쓰기 전에 --allow-new 로 돌린다. (2) 파일을 쓴 뒤라면 EXISTS 를 '간선이 양쪽에 적혔다' 는 뜻으로 읽지 않고, 부모 문서의 더 알아보기를 직접 grep 으로 확인한다.",
       "createdAt": "2026-10-12T00:55:02.617Z",
       "seq": 2122
+    },
+    {
+      "id": "3b7814d0",
+      "title": "본문 링크 라벨이 대상 문서 제목과 어긋나는 것의 판정 기준",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 42차에 'align body link labels with target document titles in this round's new documents' 커밋이 있었고 44차에 같은 일이 다섯 건 났다. 신규 문서에서 [Lagrange 승수](lagrange-duality.md), [공액기울기](krylov-subspace-methods.md), [신뢰영역](trust-region.md), [최대가능도 추정량](maximum-likelihood.md), [Euler 표수](euler-characteristic.md) 로 적었고 대상 문서 제목은 각각 Lagrange 쌍대성, Krylov 부분공간 방법, 신뢰영역 방법, 최대가능도 추정, Euler 지표다. validate 는 링크가 가리키는 파일이 있는지만 보고 라벨은 보지 않는다.\n\n44차에 저장소를 전수 대조했다. 본문(= '# 연관 문서' 절 앞)의 링크 가운데 라벨이 대상 문서의 H1 과 글자까지 같지 않은 것이 852 건, 라벨과 제목이 서로의 부분문자열도 아닌 것이 387 건이다. 표본을 보면 대부분이 정당한 용법이다. [콤팩트](compactness.md), [연속성](continuity.md) 처럼 문맥에 맞춘 격변화와 축약, [martingale](martingales.md) 처럼 원어 표기, [동치류](equivalence-relations.md) 처럼 그 문서가 다루는 하위 개념을 가리키는 것이다. 그래서 전수 수정은 할 일이 아니다. 다음 회차가 이 숫자를 보고 852 건을 고치려 들지 않게 이 판정을 남긴다.\n\n고쳐야 하는 유형은 둘이다. (1) 라벨이 저장소에 문서가 없는 다른 개념의 이름인 것. [Lagrange 승수](lagrange-duality.md) 와 [공액기울기](krylov-subspace-methods.md) 가 그 예이고, 독자가 눌렀을 때 그 이름의 문서를 기대하는데 다른 제목을 본다. 문장을 '[정식 제목](id.md)의 승수' 처럼 고쳐 제목을 그대로 담는다. (2) 저장소가 쓰는 용어와 다른 역어를 쓴 것. 44차에 새 문서 셋이 'Euler 표수' 로 적었으나 저장소 용어는 'Euler 지표' 다. 격변화와 축약은 고치지 않는다.\n\n같은 이름의 문서가 둘 있어 라벨이 모호한 경우도 세 번째 유형으로 의심했으나 44차에 확인한 결과 해당 사례가 없다. lattices.md(제목 격자, 수론)와 order-lattices.md(제목 순서론의 격자)가 둘 다 있고 후자를 '[격자]' 로 가리키는 본문 링크가 14 건이지만(abstract-interpretation boolean-algebras domain-theory galois-connections galois-theory heyting-algebras inclusion-exclusion littlewood-offord partial-orders primes speh-representations sperner-theorem topos-theory yoneda-lemma), 전부 '부분집합 격자', '유계 격자', '완비 격자', '열린집합들의 격자', '약수 격자' 처럼 수식어가 앞에 붙어 순서론 맥락이 잡혀 있다. 고치면 '부분집합 순서론의 격자' 가 되어 오히려 나빠진다. 이 14 건은 손대지 않는다.\n\n검사법. 문서를 쓰거나 보강한 회차에는 그 문서들만 대조한다. grep -oE '\\[[^]]+\\]\\([a-z0-9-]+\\.md\\)' docs/<id>.md | sort -u 로 뽑아 각 줄의 라벨과 head -1 docs/<id>.md 의 '# ' 뒤를 비교하고, 어긋난 것마다 위 두 유형인지 눈으로 판정한다",
+      "createdAt": "2026-10-12T13:04:34.167Z",
+      "seq": 2165
     },
     {
       "id": "ee4586ed",
@@ -1034,6 +1042,22 @@
       "note": "확인 대기. 44차 회차(2026-10-12)에 pa-degrees 를 쓸 때 원래 큐 항목(2ba45f47)의 note 가 담을 것으로 'Solovay 의 특성화' 를 들었으나 어떤 정리를 가리키는지 확정하지 못해 문서에 넣지 않았다. 대신 확실한 것만 넣었다. Jockusch 의 전확장 특성화, 모든 Pi^0_1 부류에 대한 진술과의 동치, Jockusch-Soare 의 최소 원소 부재, Arslanov 완전성 기준을 거친 계산가능 열거 차수 결과, Scott 의 1962 년 정리. 확인할 것은 Solovay 가 PA 차수나 Scott 집합에 대해 낸 특성화가 따로 있는지이고, 있으면 pa-degrees 성질 절에 한 절로 더한다. 출처를 찾지 못하면 이 항목을 지운다. 틀린 정리를 문서에 적는 것보다 빠뜨리는 것이 낫다는 판단이었다.",
       "createdAt": "2026-10-12T08:58:34.166Z",
       "seq": 2149
+    },
+    {
+      "id": "53b7f350",
+      "title": "공액기울기법 별도 문서를 만들지 않는 판정",
+      "priority": 20,
+      "note": "판정 완료. pop 으로 꺼낼 작업이 아니다. 44차에 trust-region 을 쓰며 Steihaug 절단 공액기울기가 링크 없이 이름만 쓰이는 것을 보고 공액기울기법 문서 신설을 큐에 넣었다(a1df5167). 그러나 krylov-subspace-methods(130줄)가 공액기울기법을 Galerkin 조건으로 정의하고, 수렴률 상한을 Chebyshev 다항식으로 증명하고, 유한 종료와 전처리까지 다룬다. 별도 문서를 만들면 8절의 중복이 된다. 그래서 a1df5167 을 지우고 trust-region 활용 절 넷째를 krylov-subspace-methods 로 링크했다. 공액기울기법 자체의 문서가 필요해지는 경우는 비선형 공액기울기(Fletcher-Reeves, Polak-Ribiere)를 다룰 때이고, 그것은 krylov-subspace-methods 가 선형계만 다루므로 nonlinear-conjugate-gradient 라는 별 id 로 gradient-descent 아래 두는 것이 맞다. 같은 착오를 막는 규칙은 큐 메모 ae0b674e 에 있다",
+      "createdAt": "2026-10-12T12:43:21.416Z",
+      "seq": 2156
+    },
+    {
+      "id": "c74a6247",
+      "title": "line-search 를 trust-region 의 부모로 두지 않는 판정",
+      "priority": 20,
+      "note": "판정 완료. pop 으로 꺼낼 작업이 아니다. 44차에 trust-region 을 만들며 부모를 newton-method 하나로 정했다. line-search(선탐색)도 후보였으나 5절 기준에 맞지 않는다. 신뢰영역은 선탐색의 특수 사례도 확장도 응용도 부분도 아니고, 걸음을 고르는 다른 방식이다. 선탐색을 읽지 않아도 신뢰영역의 개요가 그대로 읽힌다. 그래서 간선을 긋지 않고 line-search 의 '## 신뢰영역 방법과의 대비' 절에서 trust-region 으로 본문 링크만 걸었고, trust-region 의 '## 선탐색과의 차이' 절에서 반대 방향으로도 걸었다. 그 결과 line-search 는 여전히 리프(더 알아보기 없음)다. 큐의 '리프 문서의 후속 간선' 작업이 line-search 를 집으면 이 판정을 보고, 자식 후보를 신뢰영역이 아닌 다른 데서 찾는다. Wolfe 조건이나 Zoutendijk 조건은 line-search 본문이 이미 다루므로 별 문서 후보가 아니고, 비선형 공액기울기(Fletcher-Reeves, Polak-Ribiere)가 선탐색을 실제로 선수지식으로 쓰는 후보다",
+      "createdAt": "2026-10-12T13:05:03.367Z",
+      "seq": 2166
     },
     {
       "id": "410fd79d",
@@ -3108,22 +3132,6 @@
       "seq": 1965
     },
     {
-      "id": "d864eb75",
-      "title": "trust-region 문서 신설",
-      "priority": 10,
-      "note": "최적화(#optimization #analysis #linear_algebra). 39차에 line-search 를 쓰며 확인했다. 저장소에 trust-region 류 파일이 없고 세 문서가 이름만 쓴다. line-search 의 '## 신뢰영역 방법과의 대비' 절(한 문단), newton-method 13줄과 113줄, trust-region-policy-optimization(이름은 신뢰영역이지만 강화학습 문서이고 신뢰영역 방법 자체를 정의하지 않는다). 담을 내용은 신뢰영역 부분문제 min m(p) s.t. ||p|| <= Delta 의 진술, Cauchy 점과 감소 비율로 Delta 를 갱신하는 절차, 부분문제의 정확해 조건(Hessian + lambda I 가 준양정부호인 lambda), 음의 곡률 방향을 쓸 수 있는 점에서 선탐색과 갈리는 것, 2차원 부분공간 방법과 Steihaug 절단 공액기울기, 전역 수렴 정리다. 부모 후보는 newton-method. 만들면 line-search 의 대비 절과 newton-method 113줄에 링크를 건다",
-      "createdAt": "2026-10-09T12:56:15.968Z",
-      "seq": 1975
-    },
-    {
-      "id": "0e8fe999",
-      "title": "mixed-volumes 문서 신설",
-      "priority": 10,
-      "note": "해석·조합(#analysis #combinatorics #measure_theory). 39차에 brunn-minkowski 를 쓰며 확인했다. 그 문서의 '## 활용' 절 셋째가 혼합부피와 Alexandrov-Fenchel 부등식을 링크 없이 이름만 쓴다(0절). 저장소에 mixed-volumes 가 없다. 담을 내용은 Minkowski 의 정리(볼록체들의 선형결합의 부피가 동차다항식이고 그 계수가 혼합부피), Steiner 공식과 내재부피, 혼합부피의 단조성과 평행이동 불변성, Alexandrov-Fenchel 부등식과 Brunn-Minkowski 가 그 특수 경우인 것, Minkowski 의 1차 부등식, 조합론에서 행렬식 영구치의 van der Waerden 추측 증명에 쓰인 것이다. 부모 후보는 brunn-minkowski. 만들면 brunn-minkowski 활용 절에 링크를 건다",
-      "createdAt": "2026-10-09T13:00:20.495Z",
-      "seq": 1978
-    },
-    {
       "id": "7bd7ef61",
       "title": "Rademacher 복잡도의 후속 간선",
       "priority": 10,
@@ -3298,6 +3306,22 @@
       "note": "analysis/differential_geometry. 부모는 solitons(44차 신설) 또는 inverse-scattering-transform. solitons 성질 절 '다른 방정식의 솔리톤' 표가 kink 와 antikink 를 한 칸으로 쓰고, inverse-scattering-transform 성질 절 '다른 방정식' 이 2x2 산란 문제의 예로 이름만 든다. ls docs | grep -iE 'sine-gordon|kink|pseudosphere' 로 저장소에 없음을 확인했다. 담을 것: u_tt-u_xx+sin u=0, kink 해와 위상 전하, Backlund 변환, 음의 상수 곡률 곡면의 Gauss 방정식과 같은 것(pseudospherical surface) 이라 미분기하 쪽 간선도 후보다. 주의: 저장소에 gaussian-curvature 나 surface-theory 쪽 문서가 있는지 먼저 보고 부모를 정한다.",
       "createdAt": "2026-10-12T09:03:41.850Z",
       "seq": 2153
+    },
+    {
+      "id": "b77263e1",
+      "title": "번들 조정 문서 신설",
+      "priority": 10,
+      "note": "최적화·선형대수(#optimization #linear_algebra #computation). 44차에 nonlinear-least-squares 를 쓰며 확인했다. 저장소에 bundle-adjustment 류 파일이 없고 nonlinear-least-squares 활용 절 둘째가 링크 없이 이름만 쓴다(0절). 담을 내용은 재투영 오차의 정의, 카메라 자세와 3차원 점이 변수인 희소 Jacobian 의 블록 구조, Schur 보수로 점 변수를 소거하는 reduced camera system, gauge 자유도(전체 좌표계의 닮음 변환)와 그에 따른 Jacobian 의 rank 결손, Levenberg-Marquardt 의 감쇠가 그 결손을 메우는 것이다. 부모 후보는 nonlinear-least-squares. 만들면 그 활용 절 둘째에 링크를 건다",
+      "createdAt": "2026-10-12T12:46:56.199Z",
+      "seq": 2157
+    },
+    {
+      "id": "f2fce563",
+      "title": "Gauss-Newton 행렬과 자연기울기 방법 문서 신설",
+      "priority": 10,
+      "note": "기계학습·최적화(#machine_learning #optimization #statistics). 44차에 nonlinear-least-squares 를 쓰며 확인했다. 그 활용 절 셋째가 자연기울기 방법과 K-FAC 를 링크 없이 이름만 쓴다(0절). 저장소에 natural-gradient 류 파일이 없는지 ls docs | grep -iE 'natural|kfac|fisher' 로 먼저 확인한다(fisher-information 과 information-geometry 는 있고, 그 둘이 자연기울기를 다루는지 보아야 한다. 중복이면 문서를 만들지 않고 그 문서로 링크한다). 담을 내용은 Fisher 정보행렬을 계량으로 쓰는 갱신, 제곱오차에서 Gauss-Newton 행렬과 Fisher 행렬이 일치하는 것, 모수화에 불변인 것, Kronecker 분해 근사다. 부모 후보는 fisher-information 과 nonlinear-least-squares",
+      "createdAt": "2026-10-12T12:46:56.350Z",
+      "seq": 2158
     },
     {
       "id": "dfb3e493",
