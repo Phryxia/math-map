@@ -98,7 +98,7 @@ $$
 \cdots\to HF_\ast(\Sigma_0)\to HF_\ast(\Sigma_1)\to HF_\ast(\Sigma_\infty)\to HF_{\ast-1}(\Sigma_0)\to\cdots
 $$
 
-수술로 다양체를 만들고 완전열로 불변량을 따라가는 방식이 이후 Floer 이론의 표준 도구가 되었다. Heegaard Floer, 매듭 Floer, [Khovanov 호몰로지](khovanov-homology.md)의 사각형 완전열이 같은 형태다.
+수술로 다양체를 만들고 완전열로 불변량을 따라가는 방식이 이후 Floer 이론의 표준 도구가 되었다. [Heegaard Floer 호몰로지](heegaard-floer-homology.md), 매듭 Floer, [Khovanov 호몰로지](khovanov-homology.md)의 사각형 완전열이 같은 형태다.
 
 ## Casson 불변량을 넘는 정보
 
@@ -150,6 +150,6 @@ $c=+1$ 인 경우 표현이 $\pi_1$ 의 몫인 정이십면체군을 지나야 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Heegaard Floer 호몰로지](heegaard-floer-homology.md)
 
 #algebraic_topology #topology #differential_geometry
