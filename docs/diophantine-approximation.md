@@ -97,5 +97,6 @@ $\psi(q) = q^{-\varepsilon}$ 을 넣으면 급수가 수렴하므로, 거의 모
 
 - [Roth 정리](roth-theorem.md)
 - [초월수](transcendental-numbers.md)
+- [Kolmogorov-Arnold-Moser 정리](kam-theorem.md)
 
 #number_theory #analysis #measure_theory

@@ -58,6 +58,7 @@ graph TD
 - [Hamilton 역학](hamiltonian-mechanics.md): 속도를 운동량으로 바꾼 1차 방정식계, 에너지 보존과 흐름의 심플렉틱 성질
 - [적분가능계](integrable-systems.md): 자유도만큼의 대합적 보존량, Arnold–Liouville 정리와 작용-각 좌표
 - [Hamilton-Jacobi 방정식](hamilton-jacobi-equation.md): 생성함수가 만족하는 1차 편미분방정식, Jacobi 정리와 변수분리
+- [Kolmogorov-Arnold-Moser 정리](kam-theorem.md): 교란에서 살아남는 불변 원환면, Diophantine 조건과 작은 분모
 
 ## 다발과 접속
 

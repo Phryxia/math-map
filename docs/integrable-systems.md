@@ -86,7 +86,7 @@ $n=1$ 이고 $F\_1=H$ 가 $dH\ne0$ 인 곳에서 독립성을 만족하며 대�
 - [모멘트 사상](moment-map.md)의 정의에서 $G=\mathbb T^n$ 인 경우가 적분가능계다. 대합성은 $\mathbb T^n$ 이 가환이라는 조건에 대응하고, 올이 Lagrangian 이라는 성질이 모멘트 사상의 상을 볼록 다면체로 만드는 출발 조건이다.
 - [측지선](geodesics.md)의 흐름이 적분가능한 계량이 있다. 회전면과 삼축 타원체의 측지선 흐름에서는 에너지 말고 보존량이 하나 더 있고, 그 올 위에서 측지선이 준주기 운동을 한다.
 - 강체의 자유회전은 각운동량의 크기와 에너지를 보존량으로 갖는 적분가능계다. 올이 2차원 원환면이고 회전축이 그 위에서 준주기로 움직인다.
-- 적분가능계에 작은 교란을 준 계에서 Kolmogorov–Arnold–Moser 정리가 진동수의 정수관계가 약한 원환면들이 살아남는다고 말한다.[^1]
+- 적분가능계에 작은 교란을 준 계에서 [Kolmogorov–Arnold–Moser 정리](kam-theorem.md)가 진동수의 정수관계가 약한 원환면들이 살아남는다고 말한다.[^1]
 
 [^1]: V. I. Arnold, *Mathematical Methods of Classical Mechanics*, 2판, Springer Graduate Texts in Mathematics 60 (1989), 10 장과 부록 8. Arnold–Liouville 정리의 증명, 작용-각 좌표의 구성, 교란에서 원환면이 살아남는 조건이 여기 있다.
 
@@ -98,6 +98,6 @@ $n=1$ 이고 $F\_1=H$ 가 $dH\ne0$ 인 곳에서 독립성을 만족하며 대�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kolmogorov-Arnold-Moser 정리](kam-theorem.md)
 
 #differential_geometry #analysis #topology
