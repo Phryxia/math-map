@@ -125,6 +125,7 @@ $\dim C_n=\dim Z_n+\dim\mathrm{Im}\thinspace d_n$ 이고 $\dim Z_n=\dim H_n(C\_\
 ## 더 알아보기
 
 - [유도 함자](derived-functors.md)
+- [아벨 범주](abelian-categories.md)
 - [Koszul 복합체](koszul-complex.md)
 
 #algebra #ring_theory #category_theory #algebraic_topology

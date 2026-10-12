@@ -119,6 +119,7 @@ $$
 
 ## 더 알아보기
 
+- [아벨 범주](abelian-categories.md)
 - [토포스](topos-theory.md)
 
 #category_theory #set_theory #algebra #construction
