@@ -57,6 +57,7 @@ graph TD
 - [Lagrangian 부분다양체](lagrangian-submanifolds.md): 심플렉틱 형식이 소멸하는 절반 차원 부분다양체, 생성함수와 Weinstein 근방 정리
 - [Hamilton 역학](hamiltonian-mechanics.md): 속도를 운동량으로 바꾼 1차 방정식계, 에너지 보존과 흐름의 심플렉틱 성질
 - [적분가능계](integrable-systems.md): 자유도만큼의 대합적 보존량, Arnold–Liouville 정리와 작용-각 좌표
+- [Hamilton-Jacobi 방정식](hamilton-jacobi-equation.md): 생성함수가 만족하는 1차 편미분방정식, Jacobi 정리와 변수분리
 
 ## 다발과 접속
 
