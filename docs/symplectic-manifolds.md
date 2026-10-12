@@ -59,7 +59,7 @@ $$\lbrace f,g\rbrace=\sum_{i=1}^{n}\left(\frac{\partial f}{\partial q^i}\frac{\p
 
 ## Lagrangian 부분다양체
 
-$\dim M=2n$ 일 때, $n$ 차원 부분다양체 $L\subset M$ 이 포함사상으로 끌어온 2형식이 $0$ 이면 $L$ 을 **Lagrangian 부분다양체**라 한다. 비퇴화성 때문에 $\omega$ 가 소멸하는 부분다양체의 차원은 $n$ 을 넘지 못하므로 Lagrangian 은 그 최대 차원이다.
+$\dim M=2n$ 일 때, $n$ 차원 부분다양체 $L\subset M$ 이 포함사상으로 끌어온 2형식이 $0$ 이면 $L$ 을 **[Lagrangian 부분다양체](lagrangian-submanifolds.md)**라 한다. 비퇴화성 때문에 $\omega$ 가 소멸하는 부분다양체의 차원은 $n$ 을 넘지 못하므로 Lagrangian 은 그 최대 차원이다.
 
 # 성질
 
@@ -112,6 +112,7 @@ $\mathbb R^{2n}$ 의 표준 형식에서, 반지름 $r$ 인 공을 반지름 $R$
 ## 더 알아보기
 
 - [여접다발](cotangent-bundle.md)
+- [Lagrangian 부분다양체](lagrangian-submanifolds.md)
 - [모멘트 사상](moment-map.md)
 - [Kähler 다양체](kahler-manifolds.md)
 

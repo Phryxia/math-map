@@ -66,7 +66,7 @@ $$
 
 ## 올의 Lagrangian 성질
 
-**정리.** $M\_c$ 는 Lagrangian 부분다양체다. 곧 $\dim M\_c=n$ 이고 $\omega\vert\_{M\_c}=0$ 이다.
+**정리.** $M\_c$ 는 [Lagrangian 부분다양체](lagrangian-submanifolds.md)다. 곧 $\dim M\_c=n$ 이고 $\omega\vert\_{M\_c}=0$ 이다.
 
 접공간이 $X\_{F\_i}$ 들로 생성되고 $\omega(X\_{F\_i},X\_{F\_j})=\lbrace F\_i,F\_j\rbrace=0$ 이므로 $\omega$ 가 접공간에서 소멸한다. 차원은 $F$ 가 정칙이므로 $2n-n=n$ 이다. ∎
 

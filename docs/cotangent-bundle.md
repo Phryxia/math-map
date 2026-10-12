@@ -46,7 +46,7 @@ $\omega$ 가 완전형식이므로 콤팩트 심플렉틱 다양체는 여접다
 
 ## Lagrangian 부분다양체
 
-영단면 $\lbrace p=0\rbrace$ 과 각 섬유 $T\_q^\ast N$ 은 $n$ 차원이고 그 위에서 $\lambda$ 가 소멸하므로 $\omega$ 도 소멸한다. 둘 다 Lagrangian 부분다양체다. 더 일반적으로 1형식 $\alpha$ 의 그래프 $\lbrace(q,\alpha\_q)\rbrace$ 가 Lagrangian 인 것은 $d\alpha=0$ 과 같다.
+영단면 $\lbrace p=0\rbrace$ 과 각 섬유 $T\_q^\ast N$ 은 $n$ 차원이고 그 위에서 $\lambda$ 가 소멸하므로 $\omega$ 도 소멸한다. 둘 다 [Lagrangian 부분다양체](lagrangian-submanifolds.md)다. 더 일반적으로 1형식 $\alpha$ 의 그래프 $\lbrace(q,\alpha\_q)\rbrace$ 가 Lagrangian 인 것은 $d\alpha=0$ 과 같다.
 
 ## 정준변환
 
@@ -71,6 +71,7 @@ $N$ 에 Riemann 계량이 있으면 그것이 $TN$ 과 $T^\ast N$ 사이의 동�
 
 ## 더 알아보기
 
+- [Lagrangian 부분다양체](lagrangian-submanifolds.md)
 - [Hamilton 역학](hamiltonian-mechanics.md)
 
 #differential_geometry #topology #analysis
