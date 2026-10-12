@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-12T01:05:43.930Z",
-  "nextSeq": 2130,
+  "savedAt": "2026-10-12T05:04:26.441Z",
+  "nextSeq": 2142,
   "items": [
     {
       "id": "9443e5ca",
@@ -108,12 +108,12 @@
       "seq": 2124
     },
     {
-      "id": "f9ba5d50",
-      "title": "42차 회차 새 문서 여섯의 문체 회귀 점검",
+      "id": "bb074779",
+      "title": "abstract-algebra-overview 지도의 노드 수와 가군 축의 사슬 복합체",
       "priority": 50,
-      "note": "42차 회차(2026-10-12)에 심플렉틱·적분가능계 축으로 여섯을 썼다. integrable-systems(107줄) lagrangian-submanifolds(92줄) hamilton-jacobi-equation(120줄) kam-theorem(90줄) lax-pairs(104줄) viscosity-solutions(102줄). 다음 회차에 다시 읽을 자리를 적어 둔다. (1) 여섯 모두 직관 절이 4~5 문단이다. 4절 문구는 두 문단이라 하고 모범 예는 네다섯 문단이라, 큐 항목 08e59419 의 독자 판단이 나오면 한꺼번에 맞춰야 한다. (2) kam-theorem 의 '## 자유도 2 에서의 가둠' 은 헤딩이 명사구이긴 하나 서술에 가깝다. (3) hamilton-jacobi-equation 의 '## 특성곡선과 Hamilton 흐름' 은 작성 중 '## Hamilton 흐름이 특성곡선' 에서 고친 것이다. (4) viscosity-solutions 의 직관 절 넷째 문단이 두 함수를 견주므로 4절 '독자가 묻지 않은 대안을 세워 비교하지 않는다' 에 걸리는지 보아야 한다. 이 문서에서는 두 후보 가운데 어느 것이 해인지가 주제라 비교가 내용 자체라고 판단해 두었다.",
-      "createdAt": "2026-10-12T01:02:14.434Z",
-      "seq": 2127
+      "note": "독자 판단 대기. 43차 회차(2026-10-12)에 chain-complexes 와 abelian-categories 와 derived-categories 를 썼다. category-theory-overview 의 '# 지도' 에는 세 노드를 더해(CC --> AB, LC --> AB, AB --> DC, 셋 다 실제 간선) 노드가 15 개에서 18 개가 되었고 4.5절의 '핵심 문서 12~20개' 안이다. abstract-algebra-overview 의 지도에는 더하지 않았다. 그 지도가 이미 노드 25 개로 기준을 넘고 있어서다(군 축 9, 환 축 11, Lie 축 8 쯤이다). 그래서 가군 축에 exact-sequences 와 chain-complexes 가 빠진 채다. 판단이 필요한 것 둘. (1) 넘긴 채 두고 가군 축만 M --> ES --> CC 로 늘릴지, (2) 지도를 분야 안에서 나눌지(4.5절은 개관이 1000줄에 닿으면 나눈다고만 정하고 지도가 커진 경우는 정하지 않는다). 큐 ee4586ed 가 differential-geometry-overview 에서 같은 문제를 묻고 있으므로 한꺼번에 판단하는 것이 좋다. 다른 세션이 넣은 노드를 지우는 일이라 임의로 하지 않았다.",
+      "createdAt": "2026-10-12T04:56:17.241Z",
+      "seq": 2138
     },
     {
       "id": "08e59419",
@@ -954,6 +954,62 @@
       "note": "42차 회차(2026-10-12)에 저장소 전체로 4절 비유 금지 grep 을 돌렸다. 후보 4 건이고 전부 용어의 일부여서 4절 예외다. 고치지 않았다. (1) elliptic-curves 118 줄 'Montgomery 사다리' - Montgomery ladder, 스칼라 곱 알고리즘 이름. (2) lie-algebras 162 줄 '사다리 연산자' - ladder operator, 양자역학 용어. (3) mandelbrot-set 55 줄 '심장꼴' - cardioid 의 번역어. (4) post-quantum-cryptography 126 줄 '함정문' - trapdoor 의 번역어, 같은 줄에 두 번. 같은 회차에 문장형 헤딩 grep 도 돌렸고 걸린 것은 전부 '## 증명의 요지' 였다. grep 패턴의 '[^로]지' 가 '요지' 를 잡는 오탐이고 명사구이므로 정당한 헤딩이다. 금지 매크로, 추측 절, 코드블록 언어 검사는 후보 0 건이었다.",
       "createdAt": "2026-10-12T01:05:25.703Z",
       "seq": 2129
+    },
+    {
+      "id": "7316129d",
+      "title": "42차 문서 여섯의 문체 점검 결과 (43차)",
+      "priority": 20,
+      "note": "43차 회차(2026-10-12)에 f9ba5d50 을 처리한 결과. 네 가지 가운데 (2) 만 고쳤다. (1) 직관 절 문단 수 4~5 는 08e59419 의 독자 판단이 나올 때까지 손대지 않았다. (2) kam-theorem 의 '## 자유도 2 에서의 가둠' 을 '## 자유도 2 의 작용 변수 유계성' 으로 고쳤다. '가둠' 은 동작의 명사화라 번역체 표의 명사화 항목에 가깝고, 절의 내용이 작용 변수가 유계로 남는다는 정리이므로 개념 이름은 유계성이다. (3) hamilton-jacobi-equation 의 '## 특성곡선과 Hamilton 흐름' 은 유지로 판정했다. 4절의 'A와 B' 금지는 문서 제목에 대한 규칙이고, 이 절의 내용이 두 대상의 일치이므로 둘을 나란히 둔 명사구가 맞다. 같은 문서의 '## 해의 그래프와 Lagrangian 성질' 도 같은 이유로 유지했다. (4) viscosity-solutions 직관 넷째 문단은 유지로 판정했다. 첫 문단이 이미 세 후보를 내놓고 둘째 문단이 '하나를 고르는 기준' 을 주제로 세우므로, 기준이 어느 후보를 남기고 어느 것을 버리는지 보이는 것이 내용 자체다. 4절이 금지하는 것은 독자가 묻지 않은 대안을 새로 세워 견주는 것이다. 여섯 문서 전부에 4절 검사 여섯(문체 grep, 비유 grep, operatorname grep, 태그 grep, 줄끝 백슬래시, 밑줄 grep, 이스케이프 awk)을 돌려 출력이 없음을 확인했다. 문체 회귀는 없다.",
+      "createdAt": "2026-10-12T04:37:21.369Z",
+      "seq": 2130
+    },
+    {
+      "id": "89dc6a10",
+      "title": "Martin-Lof 무작위성 큐 항목의 중복 (43차)",
+      "priority": 20,
+      "note": "43차 회차(2026-10-12) 판정: 새 문서를 만들지 않는다. 큐 1f852268 이 Martin-Lof 무작위성 문서를 요청했으나 martin-lof-randomness.md 가 이미 있다. ae0b674e 의 전수 확인 규칙대로 작업 시작 전 'ls docs | grep -iE random|martin|chaitin' 를 돌려 드러났다. 그 note 는 kolmogorov-complexity 활용 절을 링크로 줄이라고 했으나 그 작업도 이미 끝나 있는지는 따로 보아야 한다. 1f852268 은 remove 했다.",
+      "createdAt": "2026-10-12T04:38:10.889Z",
+      "seq": 2131
+    },
+    {
+      "id": "b8e7734a",
+      "title": "chain-complexes 간선으로 derived-functors 부모가 4개가 된 판정",
+      "priority": 20,
+      "note": "43차 회차(2026-10-12) 판정. chain-complexes -> derived-functors 간선을 더해 derived-functors 의 부모가 functors, chain-complexes, tensor-products, injective-modules 넷이 되었다. 5절은 '부모는 보통 1개에서 3개다. 4개 이상이면 그 중 다른 부모의 조상인 것을 뺀다' 고 한다. 넷 가운데 조상 관계인 쌍이 없어 뺄 것이 없었다. functors 는 범주론 축, tensor-products 와 injective-modules 는 각각 왼쪽 유도 함자와 오른쪽 유도 함자의 정의에 쓰이고, chain-complexes 는 사영 분해와 그 호몰로지의 정의에 쓰인다. 4.5절이 '부모가 4개를 넘지 않게 한다' 고 하므로 4개는 상한 안으로 읽었다. 넷을 셋으로 줄이려면 tensor-products 를 chain-complexes 아래로 옮기는 안이 있으나 텐서곱은 사슬 복합체의 선수지식이 아니므로 방향이 맞지 않는다. 독자가 다른 판단을 하면 functors 를 빼는 쪽이 후보다.",
+      "createdAt": "2026-10-12T04:44:14.167Z",
+      "seq": 2133
+    },
+    {
+      "id": "6bb9edd4",
+      "title": "chain-complexes 의 자식 후보에서 homology 와 cohomology 를 뺀 판정",
+      "priority": 20,
+      "note": "43차 회차(2026-10-12) 판정. chain-complexes 를 쓰며 자식 후보로 homology(단체 호몰로지), cohomology, de-rham-cohomology, spectral-sequences 를 보았으나 넣지 않고 활용 절의 본문 링크로만 두었다. 이유. (1) 5절 '더 알아보기의 기준' 의 둘째 질문, 곧 '부모를 빼도 자식의 개요가 그대로 읽히는가' 에 넷 다 그렇다고 답한다. 단체 호몰로지는 단체 복합체와 경계 사상으로 자기 완결적으로 정의되고 사슬 복합체의 추상적 정의를 읽지 않아도 이해된다. (2) homology 의 부모는 groups 와 topology 로 위상 축에 속하고, 사슬 복합체는 대수 축이다. 두 축이 같은 구조를 다루는 것은 맞지만 선수관계는 아니다. (3) cohomology 의 부모는 homology 하나이고 그쪽 축을 유지하는 것이 개관의 갈래 배치와 맞는다. 사슬 복합체 쪽에서 위상 축으로 간선을 그으면 topology-overview 의 지도와 abstract-algebra-overview 의 지도가 같은 간선을 서로 다르게 거두게 된다. 독자가 다른 판단을 하면 chain-complexes -> homology 가 첫 후보다(check-cycle 로 추가 가능함을 확인했다).",
+      "createdAt": "2026-10-12T04:44:14.309Z",
+      "seq": 2134
+    },
+    {
+      "id": "bfc4332e",
+      "title": "호몰로지 대수 큐 항목의 처리 결과 (43차)",
+      "priority": 20,
+      "note": "43차 회차(2026-10-12) 판정. 큐 44ea5249 '호몰로지 대수 문서 신설' 을 remove 했다. 그 제목은 분야 이름이므로 4절 제목 규칙에 어긋나고(분야 전체는 개관의 몫이다), note 가 요청한 자리를 개념 단위로 나눠 둘을 썼다. chain-complexes(사슬 복합체, 130줄, 부모 exact-sequences, 자식 derived-functors 와 koszul-complex 와 abelian-categories)와 abelian-categories(아벨 범주, 104줄, 부모 chain-complexes 와 limits-colimits). note 가 든 네 자리 가운데 사슬 복합체와 아벨 범주가 이것이고, 분해는 derived-functors 의 '## 사영 분해' 가 이미 다루므로 별도 문서로 만들지 않았다. 스펙트럼열은 spectral-sequences 가 이미 있다(부모 cohomology 와 fibrations). 남은 것은 유도 범주이고 큐 a2d13bb5 와 b6b5191d 가 그 자리를 가리킨다.",
+      "createdAt": "2026-10-12T04:47:47.656Z",
+      "seq": 2135
+    },
+    {
+      "id": "419a1ebf",
+      "title": "model-selection 큐 항목의 처리 결과와 남은 자리 (43차)",
+      "priority": 20,
+      "note": "43차 회차(2026-10-12) 판정. 큐 a13b8d9d 'model-selection 문서' 를 remove 하고 information-criteria(정보 기준, 108줄, 부모 maximum-likelihood 와 kl-divergence)로 좁혀 썼다. 이유. note 가 요청한 내용 가운데 편향-분산 분해와 교차검증은 bias-variance-decomposition 과 cross-validation 이 이미 다루므로 중복이고(ae0b674e 의 전수 확인으로 드러났다), 남은 자리는 AIC 와 BIC 의 유도와 최소기술길이였다. 'model-selection' 은 개념 하나가 아니라 작업의 이름이어서 4절 제목 규칙에 맞지 않는다. note 가 든 Bayes 인자는 넣지 않았다. bayesian-inference 와의 중복 판정이 아직 안 되어 있고, BIC 유도 절이 사후확률과의 관계를 한 문장으로 적어 두었다. 부모를 둘로 한 판정: laplace-method 도 후보였으나(BIC 유도에 쓴다) 5절의 '왜 그 부모인지가 개요나 직관에서 드러나야 한다' 에 걸려 본문 링크로 두었다. 이 작업으로 maximum-likelihood 와 kl-divergence 의 자식이 각각 6개가 되어 5절대로 H3 묶음을 세웠다.",
+      "createdAt": "2026-10-12T04:54:48.723Z",
+      "seq": 2137
+    },
+    {
+      "id": "57e8a6d8",
+      "title": "본문 링크 라벨과 대상 제목의 차이 전수 현황 (43차)",
+      "priority": 20,
+      "note": "독자 판단 대기. 43차 회차(2026-10-12)에 큐 8503e2d7 이 요청한 라벨 점검을 저장소 전체에 돌렸다. 검사법: '# 연관 문서' 앞의 본문에서 [라벨](id.md) 꼴을 뽑아 라벨을 docs/id.md 의 첫 줄 제목과 대조한다(간선 목록은 제외한다). 결과는 853 건, 문서 492 개다. 저장소의 60% 가 걸리므로 전수 교정 대상이 아니라고 보았고, 43차에는 그 회차에 쓴 다섯 문서의 세 건만 고쳤다(chain-complexes 의 '뱀 보조정리' 를 '완전열의 뱀 보조정리' 로, information-criteria 의 '최대가능도' 를 '최대가능도 추정' 으로, graphical-models 의 '오류 정정 부호' 를 '오류정정부호' 로). 853 건의 유형은 둘이다. (1) 라벨이 제목의 부분문자열인 것 371 건. 'Galois 군' -> galois-theory(Galois 이론), '아이디얼' -> ideals-quotient-rings(아이디얼과 몫환), '콤팩트' -> compactness(콤팩트성) 처럼 문장에 맞춘 활용형이나 줄임이다. 4절에 라벨을 제목과 맞추라는 규칙이 없고 문장 흐름에는 이 쪽이 자연스러우므로 그대로 두는 것이 맞다고 본다. (2) 제목과 겹치지 않는 것 482 건. 대상별로는 dirichlet-l-functions 13, p-adic-l-function 12, birch-swinnerton-dyer 10, martingales 9, boolean-algebras 9 가 많다. 이 가운데 독자를 오해하게 하는 것이 섞여 있다. 'algebraic-k-theory 의 [호몰로지] -> homology(단체 호몰로지)' 는 일반 호몰로지로 읽히고, 'abstract-interpretation 의 [격자] -> order-lattices(순서론의 격자)' 는 정수론의 격자와 혼동된다. 판단이 필요한 것: (1) 번 유형을 규칙으로 허용할지, (2) 번 유형 가운데 어느 기준으로 고칠지(제목의 어느 낱말도 라벨에 없는 것만 고치는 안이 후보다). 기준이 정해지면 그 회차에 일괄 교정한다.",
+      "createdAt": "2026-10-12T05:03:31.954Z",
+      "seq": 2141
     },
     {
       "id": "410fd79d",
@@ -2228,14 +2284,6 @@
       "seq": 680
     },
     {
-      "id": "8503e2d7",
-      "title": "본문 링크 라벨 회귀 점검 (다음 차수)",
-      "priority": 10,
-      "note": "2026-09-20 회차에 labelcheck.mjs 를 다시 만들어 돌렸다. 본문 링크 1064 개 가운데 라벨이 대상 제목과 같은 것과 그 접두사인 것이 693 개다. 판정 기준을 두 단계로 나눴다. (1) 느슨한 기준(라벨이 다른 문서 제목의 접두사이기도 한 경우) 38 건은 전부 오검출이다. 유형은 여섯이다: '소수'->primes 가 prime-number-theorem('소수 정리')과 겹침 8 건, 'Galois 표현'->galois-representations 가 deformation-rings('Galois 표현의 변형과 보편 변형환')과 겹침 15 건, '직관주의 논리'->intuitionism 이 kripke-semantics 와 겹침 6 건, '확률'->probability 2 건, '위상'->topology 가 topology-overview 와 겹침 3 건, '계산'/'연속'/'분포' 각 1 건. 전부 대상이 맞고 겹친 쪽은 다른 개념이다. (2) 엄격한 기준(라벨이 다른 문서의 제목과 정확히 일치하는데 그 문서를 가리키지 않는 경우) 0 건. 이 기준이 노트가 말한 진짜 사고(새 개관 이름이 기존 축약 라벨과 겹치는 것)를 잡는 그물이고 통과했다. 개관 제목은 'X 개관' 이라 정확 일치가 나지 않으므로 다음 차수에는 개관을 가리키는 라벨이 그 분야의 축 문서 라벨과 겹치는지를 따로 볼 것. 새 문서나 새 개관을 만든 회차마다 다시 돌린다",
-      "createdAt": "2026-09-20T04:40:18.019Z",
-      "seq": 697
-    },
-    {
       "id": "c162c9e2",
       "title": "nonstandard-analysis 의 후속 간선",
       "priority": 10,
@@ -2588,14 +2636,6 @@
       "seq": 1679
     },
     {
-      "id": "44ea5249",
-      "title": "호몰로지 대수 문서 신설",
-      "priority": 10,
-      "note": "대수. 부모 후보는 exact-sequences 와 derived-functors. 아벨 범주, 사슬 복합체, 분해와 스펙트럼열의 자리. 30차 회차에 exact-sequences 를 쓰면서 뱀 보조정리와 사영분해를 한 절씩만 다뤘다.",
-      "createdAt": "2026-10-04T20:58:51.963Z",
-      "seq": 1680
-    },
-    {
       "id": "d3542cdb",
       "title": "행위자-비평자의 후속 간선",
       "priority": 10,
@@ -2660,14 +2700,6 @@
       "seq": 1729
     },
     {
-      "id": "fbb7d6c7",
-      "title": "확률 그래프 모형의 추론",
-      "priority": 10,
-      "note": "probability 또는 machine_learning. treewidth 의 활용 절이 결합분포를 그래프로 적은 모형과 연접 나무 절차를 링크 없이 이름만 쓴다(0절). 모랄 그래프, 연접 나무, 믿음 전파와 추론 비용이 나무폭에 지수인 것. 부모는 treewidth 와 bayesian-inference 를 볼 것",
-      "createdAt": "2026-10-06T04:42:49.834Z",
-      "seq": 1761
-    },
-    {
       "id": "493a738d",
       "title": "Perron 공식과 명시적 공식",
       "priority": 10,
@@ -2690,22 +2722,6 @@
       "note": "대수/조합(#group_theory #combinatorics #number_theory). 36차에 golay-codes 를 분할하며 확인했다. Leech 격자는 지금 golay-codes 의 '## Leech 격자' 절(Construction B 와 최소노름)과 sphere-packing, niemeier-lattices, mathieu-groups 에 흩어져 있고 독립 문서가 없다. 담을 내용은 Construction B 의 보정 단계, 최소노름 4 와 노름 2 벡터의 부재 증명, kissing number 196560, Conway 군 Co_0 와 Co_1 의 정의, 깊은 구멍과 Niemeier 격자 23 개의 대응(Conway-Parker-Sloane), theta 급수. 부모 후보는 golay-codes 와 lattices 다. 만들면 sphere-packing 과 niemeier-lattices 의 Leech 언급을 그리로 돌린다.",
       "createdAt": "2026-10-06T08:48:57.686Z",
       "seq": 1781
-    },
-    {
-      "id": "1f852268",
-      "title": "Martin-Lof 무작위성",
-      "priority": 10,
-      "note": "분야: 계산(#computation #information_theory #measure_theory). 붙일 부모: kolmogorov-complexity(37차에 새로 썼다)와 pi01-classes. 큐 62cc389f 가 남긴 갈래이고 그 note 가 확인하라던 kolmogorov-complexity 는 이제 있다. 내용: 실효적 영집합과 Martin-Lof 검정, 무작위 실수, Schnorr 정리(접두사 없는 복잡도로 K(x_{1:n}) >= n-c 와 동치), Chaitin 상수 Omega, 무작위 집합의 Turing 차수. kolmogorov-complexity 활용 첫 두 절이 이 내용을 한 문단씩 요약하고 있으므로 문서를 만들면 그 절을 링크로 줄인다.",
-      "createdAt": "2026-10-06T12:49:11.402Z",
-      "seq": 1797
-    },
-    {
-      "id": "a13b8d9d",
-      "title": "model-selection 문서",
-      "priority": 10,
-      "note": "분야: 통계(#statistics #machine_learning #information_theory). 붙일 부모 후보: regularization 과 kl-divergence. 37차에 kolmogorov-complexity 활용 '최소기술길이' 절을 쓰며 링크를 걸 문서가 없어 이름만 썼다. 내용: 편향-분산 분해와 검증오차, AIC(Akaike information criterion)와 BIC(Bayesian information criterion)의 유도, 교차검증, 최소기술길이 원리와 Kolmogorov 복잡도의 계산 가능한 대체물, Bayes 인자(bayesian-inference 와의 중복 판정 필요).",
-      "createdAt": "2026-10-06T12:49:11.505Z",
-      "seq": 1798
     },
     {
       "id": "621c77df",
@@ -3186,6 +3202,22 @@
       "note": "2026-09-20 회차에 rademacher-theorem 을 쓰며 후보 넷을 적었고 39차(2026-10-11)에 셋이 닫혔다. (1) 면적공식은 area-formula 로 썼고 자식으로 달았다. (2) Sobolev 공간은 sobolev-spaces 가 생겨 활용 절 첫 항목에서 본문 링크한다(간선은 아니다). (3) Clarke 준미분은 clarke-subdifferential 로 썼고 자식으로 달았다. 남은 후보는 (4) 하나다. Kirchheim 의 거리공간 미분정리와 Cheeger 의 미분가능성 이론, 곧 정의역이 R^n 이 아닌 곳으로 넓힌 판본이다. 활용 절 마지막 항목이 이름만 쓴다. 저장소에 kirchheim, cheeger, metric-measure 로 시작하는 문서가 없음을 확인했다. 부모 후보는 rademacher-theorem 과 metric-spaces 이고, Banach 공간 쪽 실패(각주의 Lindenstrauss-Preiss-Tiser)를 같은 문서에 담을지는 쓸 때 판정한다. 제목이 'A와 B' 꼴이 되지 않게 할 것.",
       "createdAt": "2026-10-11T20:52:42.966Z",
       "seq": 2110
+    },
+    {
+      "id": "9939cc38",
+      "title": "유도 범주의 남은 후속: 삼각 범주와 연접층의 유도 범주",
+      "priority": 10,
+      "note": "43차 회차(2026-10-12)에 derived-categories 를 썼다(110줄, 부모 abelian-categories, 자식 없음). 큐 a2d13bb5 가 요청한 아벨 범주와 유도 범주를 둘 다 썼으므로 그 항목은 remove 했다. 남은 자리 둘. (1) 삼각 범주. derived-categories 의 '## 삼각 구조' 가 정삼각형과 긴 완전열을 한 절로 다루나 팔면체 공리와 삼각 함자의 정의는 넣지 않았다. 저장소 확인 결과 triangulated 로 시작하는 문서는 없다. 분야 #category_theory #algebra, 부모는 derived-categories. (2) 연접층의 유도 범주와 Fourier-Mukai 변환. 저장소에 fourier-mukai 와 coherent 로 시작하는 문서가 없다. 분야 #algebra #category_theory, 부모는 derived-categories 와 abelian-varieties. 큐 b6b5191d 가 요청한 안정 무한 범주는 아직 남아 있고, derived-categories 활용 셋째 항목이 infinity-categories 를 본문 링크로 가리키므로 그 문서를 만들 때 부모는 infinity-categories 와 derived-categories 가 후보다.",
+      "createdAt": "2026-10-12T04:50:47.200Z",
+      "seq": 2136
+    },
+    {
+      "id": "e44cce0d",
+      "title": "확률 그래프 모형의 남은 후속: 변분 추론",
+      "priority": 10,
+      "note": "43차 회차(2026-10-12)에 graphical-models 를 쓰고 conditional-random-fields 를 그 자식으로 이었다(두 커밋). 큐 fbb7d6c7 은 remove 했다. 남은 자리는 변분 추론이다. 순환 그래프에서 믿음 전파가 주변분포를 주지 않으므로 하계를 최대화하는 쪽으로 가는 길이다. 저장소 확인 결과 variational 로 시작하는 문서는 variational-autoencoder.md 하나다(variational-methods 는 없다). 중복 판정이 먼저 필요하다. variational-autoencoder(148줄)가 ELBO(evidence lower bound)의 정의, 'log p(x) - ELBO = KL(q || p(z|x))' 분해, 하계 최대화가 추론과 학습을 함께 한다는 것, 재매개화 추정량, 사후 붕괴를 이미 담는다. 그래서 새 문서가 가져갈 자리는 평균장 근사(q 를 좌표별 곱으로 두는 것), 좌표 상승 업데이트가 이웃의 기댓값으로 적히는 꼴, 그것이 믿음 전파의 메시지와 어떻게 다른지, Bethe 자유에너지와 순환 믿음 전파의 고정점 관계다. 분야 #machine_learning #probability #statistics, 부모는 graphical-models 와 kl-divergence 가 후보다. 제목은 '변분 추론'(variational-inference)으로 좁힌다.",
+      "createdAt": "2026-10-12T05:00:57.369Z",
+      "seq": 2140
     },
     {
       "id": "dfb3e493",
