@@ -65,13 +65,11 @@ $$
 - 방향 가능한 3 차원 콤팩트 다양체는 모두 스핀이다. $w_1=0$ 이고 Wu 공식이 $w_2=w_1^2=0$ 을 준다.
 - 복소 다양체에서 $w_2$ 는 첫 Chern 류의 $\mathbb Z/2$ 환원이다. 사영평면 $\mathbb{CP}^2$ 는 $c_1$ 이 생성원의 $3$ 배이므로 $w_2\ne 0$ 이고 스핀이 아니다.
 
-## Dirac 작용소
+## 스피너 다발의 접속
 
-Levi-Civita [접속](connection.md)은 덮개를 통해 $P\_{\mathrm{Spin}}$ 으로 올라가고, 스피너 다발 $S$ 위의 접속을 준다. 이 공변미분에 [Clifford 대수](clifford-algebras.md)의 곱을 합성한 1계 작용소가 **Dirac 작용소** $D$ 이고, $D^2$ 가 Laplace 작용소에 곡률항을 더한 것이 된다.
+Levi-Civita [접속](connection.md)은 덮개를 통해 $P\_{\mathrm{Spin}}$ 으로 올라가고 스피너 다발 $S$ 위의 접속을 준다. 이 공변미분에 [Clifford 대수](clifford-algebras.md)의 곱을 합성한 1 계 작용소가 [Dirac 작용소](dirac-operator.md)이고, 그 제곱이 접속 Laplace 작용소에 스칼라 곡률의 $1/4$ 을 더한 것이다.
 
-**정리(Lichnerowicz).** 스칼라 곡률이 양인 콤팩트 스핀 다양체에서 $D$ 의 핵은 $0$ 이다.
-
-$D^2=\nabla^\ast\nabla+\kappa/4$ 에서 $\kappa\gt 0$ 이면 우변이 양의 정부호이므로 $D s=0$ 인 단면은 $0$ 이다. [지표 정리](index-theorem.md)가 $D$ 의 지표를 위상 불변량으로 주므로, 그 불변량이 $0$ 이 아닌 다양체에는 양의 스칼라 곡률 계량이 없다. ∎
+스칼라 곡률이 양이면 이 등식의 우변이 양의 정부호이므로 Dirac 작용소의 핵이 $0$ 이다.
 
 # 활용
 
@@ -91,6 +89,6 @@ $D^2=\nabla^\ast\nabla+\kappa/4$ 에서 $\kappa\gt 0$ 이면 우변이 양의 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dirac 작용소](dirac-operator.md)
 
 #differential_geometry #algebraic_topology #topology #group_theory
