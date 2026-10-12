@@ -98,7 +98,7 @@ $L=B$ 로 두면 좌변이 겉면적의 $n$ 제곱에 비례하고 우변이 부
 
 - **[등주부등식](isoperimetric-inequality.md).** $L=B$ 로 둔 Minkowski 1차 부등식이 겉면적과 부피 사이의 등주부등식이다. 등호는 $K$ 가 공일 때만 성립하고, 그 판정이 Alexandrov–Fenchel 부등식의 등호 조건에서 나온다.
 - **영구치의 하한.** $n\times n$ 이중확률행렬의 영구치가 $n!/n^n$ 이상이라는 van der Waerden 추측의 증명이 Alexandrov–Fenchel 부등식을 쓴다. 행렬의 열을 좌표평행육면체로 보면 영구치가 혼합부피의 상수배이고, 부등식이 그 혼합부피의 기하평균 하한을 준다.
-- **격자점 개수.** 격자 다면체 $P$ 와 양의 정수 $t$ 에 대해 $tP$ 의 격자점 개수는 $t$ 의 다항식이고(Ehrhart 다항식), 그 최고차 두 계수가 $P$ 의 부피와 겉면적의 절반이다. Steiner 공식의 계수들이 이 다항식의 계수를 기술한다.
+- **[Ehrhart 다항식](ehrhart-polynomial.md).** 격자 다면체 $P$ 와 양의 정수 $t$ 에 대해 $tP$ 의 격자점 개수는 $t$ 의 다항식이고, 그 최고차 두 계수가 $P$ 의 부피와 겉면적의 절반이다. Steiner 공식의 계수들이 이 다항식의 계수를 기술한다.
 - **볼록기하의 평가.** $\mathcal K^n$ 에서 평행이동 불변이고 연속이며 가법적인 함수(평가)는 내재부피들의 선형결합이다. 이것이 Hadwiger 정리이고, 적분기하의 운동학 공식이 이 분해에서 따라온다.
 
 [^1]: Rolf Schneider, *Convex Bodies: The Brunn–Minkowski Theory*, 2nd ed., Cambridge University Press, 2014, ch. 5 and ch. 7.
@@ -111,6 +111,6 @@ $L=B$ 로 두면 좌변이 겉면적의 $n$ 제곱에 비례하고 우변이 부
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Ehrhart 다항식](ehrhart-polynomial.md)
 
 #analysis #combinatorics #measure_theory

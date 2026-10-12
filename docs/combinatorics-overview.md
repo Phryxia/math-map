@@ -30,6 +30,7 @@ graph TD
 - [비둘기집 원리](pigeonhole-principle.md), [포함배제 원리](inclusion-exclusion.md): 존재와 개수의 두 기본 도구
 - [생성함수](generating-functions.md) → [분할수](partitions.md): 수열을 함수로 바꿔 세기
 - [Catalan 수](catalan-numbers.md): 괄호 배열, 이진트리, 삼각분할을 한 수열이 센다
+- [Ehrhart 다항식](ehrhart-polynomial.md): 격자 다면체를 팽창했을 때의 격자점 개수, 계수가 주는 부피와 Pick 정리
 - [Burnside 보조정리](burnside-lemma.md): 궤도 개수를 고정점 개수의 평균으로 세기
 - [Pólya 세기 정리](polya-enumeration.md): 대칭을 무시한 색칠의 개수
 - [Laplace 방법](laplace-method.md): 세는 수의 점근

@@ -172,6 +172,7 @@ $$
 
 - [Catalan 수](catalan-numbers.md)
 - [Lagrange 반전 공식](lagrange-inversion.md)
+- [Ehrhart 다항식](ehrhart-polynomial.md)
 
 ### 확률 과정과 구조 이론
 
