@@ -99,6 +99,6 @@ $X\to\mathrm{coim}\thinspace f$ 는 전사사상이고 $\mathrm{im}\thinspace f\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [유도 범주](derived-categories.md)
 
 #category_theory #algebra #ring_theory #algebraic_topology
