@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-13T05:00:26.957Z",
-  "nextSeq": 2213,
+  "savedAt": "2026-10-13T09:02:01.559Z",
+  "nextSeq": 2222,
   "items": [
     {
       "id": "9443e5ca",
@@ -1260,30 +1260,6 @@
       "seq": 1633
     },
     {
-      "id": "4a92c9b6",
-      "title": "sieve-methods 의 후속 간선",
-      "priority": 11,
-      "note": "sieve-methods 를 primes 와 inclusion-exclusion 의 자식으로 새로 달고 리프로 남겼다. 자식 후보: (1) 큰 체(large sieve)와 Bombieri-Vinogradov 정리 - 저장소에 없다. (2) Chen 정리 - 없다. (3) 소수 간격(bounded gaps) - 없다. (4) riemann-hypothesis 와 dirichlet-l-functions 는 이미 riemann-zeta 축에 있고 체 방법 없이 읽히므로 간선이 아니라고 보아 활용 절 본문 링크로만 두었다. 위 셋 가운데 하나가 생기면 sieve-methods 의 더 알아보기에 넣는다.",
-      "createdAt": "2026-10-04T08:47:34.762Z",
-      "seq": 1636
-    },
-    {
-      "id": "20493b51",
-      "title": "large-sieve 의 후속 간선",
-      "priority": 11,
-      "note": "large-sieve 를 sieve-methods 와 dirichlet-l-functions 의 자식으로 달고 리프로 남겼다. 자식 후보: (1) 소수 간격(bounded gaps between primes) - 저장소에 없다. GPY 가중과 Zhang, Maynard 의 결과를 담으면 large-sieve 의 자식이 된다. (2) Chen 정리 - 없다. (3) Vaughan 항등식과 지수합의 쌍선형 분해 - 없다. (4) Elliott-Halberstam 추측은 large-sieve 안의 한 절로 두었고 별도 문서로 떼지 않았다.",
-      "createdAt": "2026-10-04T08:52:16.327Z",
-      "seq": 1639
-    },
-    {
-      "id": "51e1a8fe",
-      "title": "prime-gaps 의 후속 간선",
-      "priority": 11,
-      "note": "prime-gaps 를 large-sieve 의 자식으로 달고 리프로 남겼다. 자식 후보: (1) Chen 정리(짝수가 소수와 소인수 둘 이하 수의 합) - 저장소에 없다. (2) Hardy-Littlewood 추측과 원 방법(circle method) - 없다. 특이급수를 prime-gaps 의 정의 절에 넣었으므로 원 방법 문서가 생기면 재배치 판단이 필요하다. (3) Cramer 추측과 소수의 확률 모형 - 없다. prime-gaps 의 활용 절이 Cramer 추측을 이름만 쓴다.",
-      "createdAt": "2026-10-04T08:55:05.131Z",
-      "seq": 1642
-    },
-    {
       "id": "8b50e977",
       "title": "greens-function 의 후속 간선",
       "priority": 11,
@@ -2378,6 +2354,46 @@
       "note": "39차(2026-10-11)에 wirtinger-inequality(Wirtinger 부등식, 94줄)를 fourier-series 의 자식으로 새로 쓰고 리프로 남겼다. 큐 5c017ee3 의 항목 (2) 처리로 그 항목을 지웠다(항목 (1) 쌍곡함수는 같은 회차에 hyperbolic-functions 로 썼다). 8절 겹침 판정: sobolev-spaces:93 의 '## Poincaré 부등식' 절과 합치지 않았다. 그 절은 W_0^{1,p} 경계값 0 의 고차원 판본이고 최적 상수를 다루지 않는 반면 이 문서는 주기 경계와 평균 0 조건에서 최적 상수 (L/2pi)^2 와 등호 조건(1차 Fourier 항만 남을 때)이 핵심이다. 두 문서가 서로 없이 읽히고 부모가 각각 따로 있다. '## 고차원 판본' 절에서 sobolev-spaces 를 본문 링크해 관계를 적었다. 부모를 fourier-series 하나로 잡았다(lp-spaces 는 L^2 노름 때문에 후보였으나 fourier-series 가 L^2 수렴과 Parseval 을 이미 거느린다). fourier-series 의 자식이 6개가 되어 5절대로 H3 묶음 셋으로 나눴다('수렴과 부등식', '변환과 합공식', '다른 분야에서의 쓰임'). order-check 통과. isoperimetric-inequality:71 의 Wirtinger 언급에 본문 링크를 걸었다. 자식 후보: Poincaré 부등식을 독립 문서로 뗄지(지금은 sobolev-spaces 의 한 절), Rayleigh 몫과 고윳값의 변분 특징(문서 없음. sturm-liouville 이 있으니 그 자식이 더 자연스러울지 판정 필요), Hardy 부등식과 Hardy-Littlewood-Polya 류 부등식(문서 없음).",
       "createdAt": "2026-10-11T20:58:47.376Z",
       "seq": 2112
+    },
+    {
+      "id": "fb9a88b0",
+      "title": "dwork-rationality 와 kloosterman-sums 의 간선 판정",
+      "priority": 11,
+      "note": "47차 판정 결과 메모. 간선을 긋지 않았다. dwork-rationality(227줄, '# Dwork 의 유리성 정리와 지수합')는 Kloosterman 합을 절 셋으로 다룬다(106줄 정의, 147줄 '## Kloosterman 합의 구조', 198줄 '## Kloosterman 합의 두 절댓값'). 그래서 8절 통합 후보로 보았으나 관점이 갈린다. dwork 쪽은 p 진 해석(Dwork 분해함수, Newton 다각형, Frobenius 부치, p 진 절댓값)이고 kloosterman-sums 쪽은 해석적 정수론(Weil 상계, Salié 합의 닫힌 꼴, Katz 의 균등분포, Kuznetsov 공식, 원법과 모듈러 형식 계수에서의 쓰임)이다. 중복 절은 없다. 간선도 긋지 않았다. 5절 기준으로 Kloosterman 합이 Dwork 이론의 특수 사례도 확장도 부분도 아니고, dwork-rationality 를 읽지 않아도 kloosterman-sums 의 개요가 읽힌다. 대신 kloosterman-sums 의 Weil 상계 절에서 L 함수를 dwork-rationality 로 본문 링크했다. 한편 gauss-sums -> dwork-rationality -> deligne-weil-conjectures -> kloosterman-sums 로 조상관계는 이미 있다.",
+      "createdAt": "2026-10-13T08:47:38.291Z",
+      "seq": 2215
+    },
+    {
+      "id": "9e9bf616",
+      "title": "Kloosterman 축 세 문서의 후속 간선",
+      "priority": 11,
+      "note": "47차(2026-10-13)에 kloosterman-sums(119줄), kuznetsov-formula(90줄), petersson-formula(86줄)를 잇달아 썼다. 간선: gauss-sums 와 deligne-weil-conjectures -> kloosterman-sums, kloosterman-sums 와 maass-forms -> kuznetsov-formula, modular-forms 와 kloosterman-sums -> petersson-formula. 셋 다 수론 개관 '해석적 정수론과 L 함수' 갈래에 넣었고 modular-forms 의 '작용소와 급수' 묶음이 넷으로 늘었다. 지금 리프는 kuznetsov-formula 와 petersson-formula 다. 남은 후보 넷(전부 ls docs 로 없음을 확인했다). (1) 이동 합성곱 합(shifted convolution) - kuznetsov-formula 와 petersson-formula 의 활용 절 첫 항목이 이름만 쓴다. 부모는 kuznetsov-formula 가 적절하다. (2) L 함수의 적률(moments) - petersson-formula 활용 절 첫 두 항목(적률과 비소멸)이 한 주제로 묶이고 riemann-zeta 쪽 적률과도 닿는다. 부모 후보는 petersson-formula 와 dirichlet-l-functions 다. (3) Selberg 고윳값 추측 - kuznetsov-formula 성질 절 '## 예외 고윳값' 이 진술을 담아 떼면 중복이 크다. 지금은 떼지 않는다. (4) 큰 체 부등식의 자기동형 꼴 - kuznetsov-formula 성질 절 '## 두 방향' 이 한 문장으로 언급한다. large-sieve 가 있으므로 그 문서의 자식으로 둘지 함께 판단한다.",
+      "createdAt": "2026-10-13T08:54:28.914Z",
+      "seq": 2217
+    },
+    {
+      "id": "af73cd3e",
+      "title": "체 축 세 항목의 해소 판정과 원법 재배치 판정",
+      "priority": 11,
+      "note": "47차(2026-10-13) 판정 결과 메모. pop 으로 꺼낼 작업이 아니다. 큐 4a92c9b6(sieve-methods 의 후속), 20493b51(large-sieve 의 후속), 51e1a8fe(prime-gaps 의 후속) 셋을 해소로 보아 제거했다. 셋 다 note 가 '저장소에 없다' 고 적은 문서가 그 뒤 회차에 전부 생겼다(메모 ae0b674e 가 경고한 그 착오다). 지금 간선은 sieve-methods -> large-sieve -> {chen-theorem, prime-gaps, vaughan-identity} 이고 셋 다 각 note 가 요청한 자리에 들어가 있다. Elliott-Halberstam 추측은 large-sieve 안의 절로 남아 있다. 남은 판정 둘을 여기서 끝냈다. (1) 원법 재배치: 51e1a8fe 가 'circle-method 가 생기면 prime-gaps 정의 절의 특이급수를 재배치할지 판단' 하라고 했다. 재배치하지 않는다. prime-gaps 41-51줄의 특이급수는 허용집합 H 의 국소 밀도 곱이고 Hardy-Littlewood 추측의 점근 상수다. circle-method 63-110줄의 특이급수는 가법 문제의 S(n)=sum A(q) 이고 대상이 다르다. 중복 절이 없고 prime-gaps 49줄이 이미 circle-method 를 본문 링크로 잇는다. (2) circle-method -> prime-gaps 간선: 긋지 않는다. 5절 기준으로 prime-gaps 가 원법의 특수 사례도 확장도 부분도 아니고, prime-gaps 의 개요가 원법 없이 읽힌다. 남은 신규 후보는 Cramer 추측과 소수의 확률 모형 하나이고 저장소에 없다(ls docs | grep -i cramer 로 확인). 부모 후보는 prime-gaps 다.",
+      "createdAt": "2026-10-13T08:55:24.006Z",
+      "seq": 2218
+    },
+    {
+      "id": "6aa87178",
+      "title": "cramer-conjecture 의 후속 간선",
+      "priority": 11,
+      "note": "47차(2026-10-13)에 cramer-conjecture 를 썼다(72줄, 부모 prime-gaps 하나, 수론 개관 '해석적 정수론과 L 함수' 갈래에서 Chen 정리 앞). prime-gaps 의 리프를 닫았고 지금 cramer-conjecture 가 리프다. 담은 것: 모형에서 최대 간격이 (log x)^2 로 나오는 계산을 직관 절에 두었고, 성질 절에 Borel-Cantelli 로 모형의 limsup 이 1 임, Riemann 가설 아래 상계와 Baker-Harman-Pintz 의 0.525, Rankin 하한과 Ford-Green-Konyagin-Tao 및 Maynard 의 개선, Maier 정리가 드러낸 모형의 어긋남과 Granville 의 2e^{-gamma} 수정을 넣었다. 후속 후보 셋(전부 ls docs 로 없음을 확인했다). (1) 짧은 구간의 소수(primes in short intervals) - Maier 정리와 Selberg 의 결과를 담으면 cramer-conjecture 와 prime-number-theorem 둘을 부모로 둘 수 있다. (2) Borel-Cantelli 보조정리 - 성질 절이 증명 요지로 쓰는데 저장소에 문서가 없다. 확률론 쪽 기본 도구이므로 probability-overview 갈래의 빈자리이고 부모 후보는 measure 나 probability 다. 이 문서의 부모로 두지는 않는다(5절 기준으로 배경이다). (3) Maier 정리 - 성질 절 '## 모형과 실제 소수의 어긋남' 이 진술을 담아 떼면 중복이 크다. 지금은 떼지 않는다.",
+      "createdAt": "2026-10-13T08:57:43.628Z",
+      "seq": 2219
+    },
+    {
+      "id": "9a8ef785",
+      "title": "borel-cantelli 의 후속 간선과 부모 판정",
+      "priority": 11,
+      "note": "47차(2026-10-13)에 borel-cantelli 를 썼다(86줄, 부모 random-variables 하나, 확률론 개관 '극한정리' 갈래에서 큰 수의 법칙 앞). 리프다. 부모 판정: measure 와 random-variables 둘을 후보로 보고 check-cycle 을 둘 다 통과시켰으나 measure 를 뺐다. measure 가 random-variables 의 조상이고(graph.mjs ancestors random-variables 에 measure 가 있다) measure 의 더 알아보기 묶음 둘('적분과 밀도', '집합의 복잡도와 다른 구성')에 이 문서가 들어갈 자리가 없다. 측도는 첫째 보조정리 절에서 본문 링크로 걸었다. 후속 후보 셋(ls docs 로 없음을 확인했다). (1) 짧은 구간의 소수(primes in short intervals) - Maier 정리와 Selberg 결과를 담으면 부모가 cramer-conjecture 와 prime-number-theorem 이다. cramer-conjecture 의 리프도 이것이 닫는다. (2) Kolmogorov 영일 법칙 - borel-cantelli 성질 절 '## 영일 법칙과의 관계' 가 진술만 쓴다. 꼬리 시그마 대수를 정의하는 문서가 없으므로 별도 문서 후보이고 부모는 random-variables 와 borel-cantelli 가 적절하다. (3) Kochen-Stone 부등식 - 성질 절 '## 독립 조건의 완화' 가 식까지 담아 떼면 중복이 크다. 지금은 떼지 않는다.",
+      "createdAt": "2026-10-13T09:01:22.202Z",
+      "seq": 2220
     },
     {
       "id": "09c81cac",
@@ -3668,20 +3684,28 @@
       "seq": 2204
     },
     {
-      "id": "fc23aee2",
-      "title": "46차 새 문서 넷의 문체 회귀 점검",
-      "priority": 9,
-      "note": "46차(2026-10-13)에 bloch-group, surgery-theory, exotic-spheres, donaldson-invariants 를 썼다. 같은 회차에 4절 검사를 전부 돌려 통과시켰다. 수식 여섯(이스케이프 awk, 태그 부등호, 링크 대괄호, 줄 끝 백슬래시, 밑줄, render-check), 매크로 grep, 문장형 헤딩 grep, 비유 grep, 두문자어 grep, 번역체·금지표현 grep, 본문 H1 구조와 중복 H2, 큐 b50bb0c8 의 키릴·그리스 혼입. 혼입 검사는 grep -P 가 'character code point value too large' 로 실패했고 python 으로 돌렸다(큐 b50bb0c8 에 그 메모를 더할 것). 같은 회차에 고친 것 둘. donaldson-invariants 활용 절의 '3 다양체로의 환원' 이 4절 번역체 표의 '로의' 명사화여서 '3 다양체를 따라 자르기' 로, 같은 항목의 '그 틀이' 를 '그 상대 불변량을 다루는 이론이' 로 고쳤다. surgery-theory 활용 절의 '비음 곡률과 강직성' 은 본문이 비구면 다양체만 말하므로 '위상 강직성' 으로 좁혔다. 다음 차수에 네 문서를 통독해 직관 절의 문단 수(4절은 두 문단, 큐 08e59419 가 모범 예와의 어긋남으로 독자 판단 대기), 활용 절 굵은 항목 이름이 본문과 맞는지, exotic-spheres 의 '틀 코보디즘'(framed, 용어라 그대로 둠)이 비유 grep 오탐인지를 다시 본다.",
-      "createdAt": "2026-10-13T04:57:56.443Z",
-      "seq": 2210
-    },
-    {
       "id": "bcdc0571",
       "title": "'A와 B' 제목 전수 현황 (46차, 845 문서)과 grep 로케일",
       "priority": 9,
       "note": "46차(2026-10-13) 전수 결과. CLAUDE.md 4절의 grep -l '^# .*[와과] ' docs/*.md 가 이 환경에서 845 문서 전부를 내놓는다. 큐 8ce35057 이 말한 로케일 문제이고, 대괄호 안의 한글 두 글자가 모든 한글을 매치한다. 대신 python 으로 첫 줄만 읽어 re.search(r'(와|과) ', title) 로 세면 25 건이다.\n\n25 건 목록과 판정. 모두 규격 위반이 아니다. (1) 4절이 예외로 정한 '정리 이름과 그 정리가 답하는 개념' 꼴 15 건: canonical-height, dwork-rationality, eisenstein-ideal, greenberg-conjecture, heegner-points, herbrand-ribet, np-completeness, perfect-graphs, s-cobordism, serre-conjecture, unique-games, vandiver-conjecture, waldspurger-formula, whittaker-models, witten-asymptotics. (2) 파일명이 두 개념을 모두 담아 제목과 어긋나지 않는 10 건: dyson-rank-crank, fermat-euler-theorem, filters-and-nets, formalism-hilbert-program, ideals-quotient-rings, kleisli-eilenberg-moore, limits-colimits, luzin-sierpinski-sets, selmer-tate-shafarevich, speh-representations.\n\n(2) 가운데 filters-and-nets 는 큐 89a333fe 가 제목 판정을 따로 묻고 있고 파일명에 and 가 들어간 유일한 문서다. speh-representations 는 '중복도 1' 이 Whittaker 모형 쪽 성질이라 whittaker-models 와 묶일 수 있는지 다음 차수에 볼 것. 나머지 여덟은 파일명과 제목이 같은 범위를 가리켜 손댈 것이 없다.",
       "createdAt": "2026-10-13T04:59:51.614Z",
       "seq": 2212
+    },
+    {
+      "id": "bccb8c22",
+      "title": "47차 새 문서의 문체 회귀 점검",
+      "priority": 9,
+      "note": "회귀 점검. 47차(2026-10-13)에 46차 새 문서 넷(bloch-group surgery-theory exotic-spheres donaldson-invariants)을 4절 기준으로 다시 읽었다. 결과: 문장형 헤딩 0 건, 금지 표현 0 건, 수식 검사 여섯 전부 0 건, 두문자어 오탐 둘(bloch-group 104줄 각주의 \\mathrm{SL}, donaldson-invariants 19줄의 \\mathrm{SU}, 둘 다 수식 안 연산자 이름이라 4절 예외). 고친 것 하나뿐이다. donaldson-invariants 9줄 '두 매끄러운 4 다양체가 미분동형인지 묻게 된다' 를 '두 매끄러운 4 다양체는 미분동형인가' 로 바꿨다(4절 번역체 표의 become 직역). 이 회차에 새로 쓴 문서는 다음 회차에 같은 검사를 돌린다.",
+      "createdAt": "2026-10-13T08:38:39.747Z",
+      "seq": 2213
+    },
+    {
+      "id": "d80e1891",
+      "title": "47차 새 문서 다섯의 문체 회귀 점검",
+      "priority": 9,
+      "note": "회귀 점검. 47차(2026-10-13)에 kloosterman-sums(119줄), kuznetsov-formula(90줄), petersson-formula(86줄), cramer-conjecture(72줄), borel-cantelli(86줄) 다섯을 썼다. 같은 회차에 다섯 모두 4절 검사를 통과시켰다: 수식 여섯(이스케이프 awk, 태그 부등호, 링크 대괄호, 줄 끝 백슬래시, 밑줄, render-check), 문장형 헤딩 grep, 금지 표현과 번역체 grep, 두문자어 grep, 키릴·그리스 혼입(python), 코드블록 언어. 두문자어 오탐은 수식 안 연산자 이름(\\mathrm{SL}, \\mathrm{SU})과 각주 논문 제목의 로마 숫자 II 뿐이다. 다음 회차에 다섯을 통독하며 볼 것 셋. (1) 직관 절 문단 수. kloosterman-sums 와 kuznetsov-formula 와 petersson-formula 는 두 문단이고 cramer-conjecture 와 borel-cantelli 는 세 문단이다(4절은 두 문단, 큐 08e59419 가 모범 예와의 어긋남으로 독자 판단 대기 중이라 세 문단을 그대로 두었다). (2) 세 공식 문서(kloosterman-sums, kuznetsov-formula, petersson-formula)의 '## 두 방향' 과 '## 역방향의 쓰임' 과 '## Kloosterman 합의 합' 이 같은 내용을 겹쳐 쓰는지. (3) petersson-formula 의 Poincaré 급수 정의와 kuznetsov-formula 직관 절의 Poincaré 급수 서술이 어긋나지 않는지.",
+      "createdAt": "2026-10-13T09:01:22.333Z",
+      "seq": 2221
     },
     {
       "id": "a6985bd5",
