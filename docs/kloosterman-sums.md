@@ -114,6 +114,7 @@ Weil 상계를 항마다 적용하면 $\sum_{c\le C}c^{-1}\vert K(1,n;c)\vert$ �
 
 ## 더 알아보기
 
+- [Petersson 공식](petersson-formula.md)
 - [Kuznetsov 공식](kuznetsov-formula.md)
 
 #number_theory #analysis #complex_analysis
