@@ -76,6 +76,7 @@ $K$ 준등각 사상은 Lebesgue 영집합을 영집합으로 보내고 Hölder 
 
 ## 선수지식
 
+- [Riemann 사상정리](riemann-mapping-theorem.md)
 - [Riemann 곡면](riemann-surfaces.md)
 
 ## 더 알아보기
