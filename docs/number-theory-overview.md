@@ -99,6 +99,7 @@ graph TD
 - [Petersson 공식](petersson-formula.md): 정칙 첨점 형식 기저의 Fourier 계수 가중 합을 대각 항과 Kloosterman 합의 Bessel 가중 합으로 가르는 등식, $L$ 함수의 적률과 비소멸
 - [Kuznetsov 공식](kuznetsov-formula.md): Kloosterman 합의 가중 합과 Maass 형식 계수의 스펙트럼 합을 잇는 등식, 이동 합성곱 합과 아족 평균
 - [소수 간격](prime-gaps.md): 연속한 소수의 차의 하한과 상한, 허용집합과 유계 간격
+- [Cramér 추측](cramer-conjecture.md): 소수를 독립 시행으로 바꾼 모형이 주는 최대 간격 $(\log p)^2$ 와 Maier 정리가 드러낸 모형의 어긋남
 - [Chen 정리](chen-theorem.md): 짝수가 소수와 거의 소수의 합이라는 결론, 가중 체와 전환 원리
 - [Riemann 가설](riemann-hypothesis.md): 영점의 실수부와 소수 계량 함수의 오차, GRH(generalized Riemann hypothesis) 의 응용
 - [쌍 상관 추측](pair-correlation-conjecture.md): 임계선 위 영점의 간격 분포와 무작위 행렬 고윳값 통계의 일치
