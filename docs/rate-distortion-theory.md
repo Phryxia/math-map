@@ -143,6 +143,7 @@ function blahutArimoto(p, d, beta, iters) {
 
 ## 더 알아보기
 
+- [양자화](quantization.md)
 - [정보 병목](information-bottleneck.md)
 
 #information_theory #probability #computation
