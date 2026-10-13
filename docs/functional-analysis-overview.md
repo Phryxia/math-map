@@ -71,6 +71,7 @@ graph TD
 - [유계 작용소](bounded-operators.md) — 연속과 유계가 동치이고, 스펙트럼이 점·연속·잔여로 갈린다
 - [비유계 작용소](unbounded-operators.md) — 조밀한 정의역에서만 정의되는 자기수반 작용소와 한 매개변수 유니터리 군의 대응
 - [극한점·극한원 분류](limit-point-limit-circle.md) — 특이 Sturm–Liouville 작용소의 끝점을 제곱적분가능한 해의 차원으로 가른다. 결손지수가 극한원인 끝점의 개수와 같다
+- [Weyl–Titchmarsh m 함수](weyl-titchmarsh-m-function.md) — 극한점 끝점의 제곱적분가능한 해가 주는 Herglotz 함수. 실축 위 경계값이 스펙트럼 측도를 준다
 - [Fredholm 작용소](fredholm-operators.md) — 핵과 여핵이 유한차원인 작용소. 지표가 연속 변형에 불변이다
 - [Fredholm 행렬식](fredholm-determinant.md) — 대각합 유한 작용소의 행렬식. 적분방정식의 해와 결정점과정에 쓴다
 
