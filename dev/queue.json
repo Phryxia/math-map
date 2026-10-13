@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-13T01:04:13.886Z",
-  "nextSeq": 2204,
+  "savedAt": "2026-10-13T05:00:26.957Z",
+  "nextSeq": 2213,
   "items": [
     {
       "id": "9443e5ca",
@@ -114,6 +114,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 45차 회차(2026-10-13)에 났다. 세션 시작에 회차 번호를 세지 않고 note 를 '44차 회차(2026-10-13)' 로 적어 여섯 항목을 push 했다. 그런데 큐에 이미 44차 항목 셋(51aa3137, 1e401b60, ef34ce2b)이 있고 그것은 2026-10-12 831 문서 시점의 다른 세션 작업이다. 같은 번호가 서로 다른 두 회차를 가리키게 되어, 같은 회차에 돌린 검사 결과와 새 문서 목록이 섞인다. 발견은 p12-p8 항목 제목을 훑다 '44차, 831 문서' 를 본 것이고, 정정은 remove 후 note 의 44차를 45차로 치환해 재push 한 것이다(queue.mjs 에 update 명령이 없다). 규칙. (1) note 에 회차 번호를 적기 전에 큐에서 가장 큰 번호를 센다. node dev/queue.mjs list --json | node -e 로 title 과 note 전체에서 /(\\d{1,2})차/ 를 모아 최댓값을 보면 된다. 이번에는 44 가 나왔으므로 내 회차는 45 다. (2) 회차 번호보다 날짜가 덜 어긋나므로 note 에는 번호와 날짜를 함께 적는다. 날짜가 같은 두 회차는 문서 수로 구별된다(44차 831, 45차 837 에서 시작). (3) 커밋 메시지에는 회차 번호를 적지 않으므로 커밋은 정정할 것이 없다.",
       "createdAt": "2026-10-13T00:58:15.249Z",
       "seq": 2199
+    },
+    {
+      "id": "c342a8ba",
+      "title": "키릴·그리스 혼입 검사의 grep -P 실패",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 큐 b50bb0c8 이 정한 혼입 검사를 46차(2026-10-13)에 돌렸더니 grep -nP 가 'character code point value in \\x{} or \\o{} is too large' 로 실패하고 종료코드만 남겼다. 패턴 자체는 U+0456 까지라 범위를 넘지 않는데도 이 환경의 grep 이 거부한다. 실패를 '혼입 없음' 으로 착각하면 검사를 건너뛴 것이 된다. 대신 python 으로 돌린다. bad=set('아에오르스우흐이 키릴 소문자')|set('키릴 대문자')|set('그리스') 를 글자로 적고 각 줄에서 그 글자를 찾는다. 코드포인트 범위가 아니라 글자 집합으로 적으면 환경에 의존하지 않는다. 46차에는 python 판으로 새 문서 넷을 검사해 혼입이 없음을 확인했다.",
+      "createdAt": "2026-10-13T04:57:56.611Z",
+      "seq": 2211
     },
     {
       "id": "ee4586ed",
@@ -3500,6 +3508,46 @@
       "seq": 2201
     },
     {
+      "id": "b6a0d01f",
+      "title": "Bloch 군의 후속 간선",
+      "priority": 10,
+      "note": "46차(2026-10-13)에 bloch-group 을 algebraic-k-theory 와 hyperbolic-3-manifolds 아래 썼고 자식이 없다. 후속 후보 셋. (1) 확장 Bloch 군. Neumann 이 꼬임까지 담도록 B(C) 를 덮은 군이고 Chern-Simons 불변량과 부피를 함께 담는 복소 불변량을 준다. volume-conjecture 의 복소 판본 진술에 쓰인다. (2) Zagier 추측과 다중로그. 지금 bloch-group 활용 절에 한 줄로만 있다. multiple-zeta-values 와 polylogarithm 쪽으로 이을 자리인데 polylogarithm 문서가 저장소에 없다. (3) Borel 조절자를 뗀 문서. 지금 bloch-group 의 한 절인데 수체의 K 군 전반을 다루려면 따로 둘 만하다. Borel 정리의 일반 n 과 Beilinson 추측이 거기 든다. 분야는 셋 다 algebra 또는 number_theory 다.",
+      "createdAt": "2026-10-13T04:44:06.242Z",
+      "seq": 2205
+    },
+    {
+      "id": "1954ccc6",
+      "title": "군환 문서",
+      "priority": 10,
+      "note": "46차(2026-10-13)에 surgery-theory 를 쓰며 Wall 군 L_n(Z pi) 가 군환 Z pi 위의 이차형식이라는 대목에서 [군환](group-rings.md) 링크를 걸려 했으나 문서가 없어 이름만 쓰고 이차형식 쪽으로 링크를 돌렸다. 저장소에 rings, ideals-quotient-rings, modules, quadratic-forms 는 있고 group-rings 와 group-algebra 가 없다. 내용 후보. 정의(군 G 와 환 R 에서 R[G]), Maschke 정리와 반단순성, 군 표현과 R[G] 가군의 대응, 중심과 켤레류, 확대와 꼬인 군환, 단위군과 Whitehead 군 Wh(pi) 로 가는 자리, K_0 와 Wall 유한성 장애. 부모 후보는 rings 와 group-representations(있는지 확인할 것) 또는 modules 다. 분야는 algebra 이고 수술 이론과 s-cobordism 과 representation-theory 가 본문에서 이 개념을 쓴다.",
+      "createdAt": "2026-10-13T04:47:55.752Z",
+      "seq": 2206
+    },
+    {
+      "id": "edaf8953",
+      "title": "수술 이론의 후속 간선",
+      "priority": 10,
+      "note": "46차(2026-10-13)에 surgery-theory 를 poincare-duality 와 s-cobordism 아래 썼고 자식이 없다. 후속 후보 셋. (1) 이색 구면과 Kervaire-Milnor. 큐 96ba0f25 가 같은 주제를 s-cobordism 아래로 요청하는데 수술 완전열을 S^n 에 적용하는 것이 그 계산이므로 부모를 surgery-theory 로 잡는 것이 맞다. 꺼낼 때 96ba0f25 의 부모 지정을 고칠 것. (2) Wall 군 L_n(Z pi) 를 뗀 문서. 지금 surgery-theory 의 한 절이고 4 주기성과 단순연결 경우의 표가 거기 있다. 유한군의 L 군 계산과 조립 사상을 담으려면 따로 둘 만하다. (3) 위상 강직성과 Farrell-Jones 추측. 지금 활용 절에 한 줄로만 있다. 분야는 셋 다 algebraic_topology 다.",
+      "createdAt": "2026-10-13T04:47:55.923Z",
+      "seq": 2207
+    },
+    {
+      "id": "a2b45565",
+      "title": "이색 구면의 후속 간선",
+      "priority": 10,
+      "note": "46차(2026-10-13)에 exotic-spheres 를 surgery-theory 아래 썼고 자식이 없다. 후속 후보 셋. (1) Kervaire 불변량 1 문제를 뗀 문서. 지금 exotic-spheres 의 한 절이고 HHR 정리와 Lin-Wang-Xu 의 n=126 결과를 각주와 함께 적었다. Adams 스펙트럼열과 동변 호모토피론, 노름 사상이 거기 든다. adams-spectral-sequence 문서가 저장소에 없다. (2) 틀 코보디즘과 Pontryagin-Thom 대응. exotic-spheres 가 Kervaire-Milnor 완전열에서 안정 호모토피군을 쓰는 자리의 선수지식인데 문서가 없다. 지금은 homotopy-groups 로 본문 링크를 걸었다. (3) 이색 R^4. 4 차원은 수술 이론이 닿지 않고 Donaldson 이론이 필요하므로 큐 c422fd89(Donaldson 불변량)와 묶어 판단한다. 분야는 셋 다 algebraic_topology 다.",
+      "createdAt": "2026-10-13T04:51:46.036Z",
+      "seq": 2208
+    },
+    {
+      "id": "42d1f21d",
+      "title": "Donaldson 불변량의 후속 간선",
+      "priority": 10,
+      "note": "46차(2026-10-13)에 donaldson-invariants 를 intersection-form 과 yang-mills-theory 아래 썼고 자식이 없다. 후속 후보 넷. (1) 이색 R^4. 지금 활용 절에 한 줄로만 있고 Freedman 정리와 대각화 정리를 함께 쓰는 구성이라 별도 문서가 될 만하다. 큐 a2b45565 의 (3) 과 같은 항목이므로 한꺼번에 판단한다. (2) Witten 추측. Donaldson 불변량과 Seiberg-Witten 불변량의 생성함수 등식이고, 지금 donaldson-invariants 의 한 문장이다. seiberg-witten-theory 가 이미 있으므로 그 둘의 공통 자식이 된다. (3) Freedman 정리. intersection-form 이 진술만 담고 있고 증명 쪽(Casson 손잡이, 원판 매장)의 문서가 없다. (4) Dolgachev 곡면과 유리곡면의 짝. 미분동형이 아닌 위상동형 짝의 구체례인데 대수곡면 쪽 문서가 저장소에 얼마나 있는지 확인이 필요하다. 분야는 differential_geometry 또는 topology 다.",
+      "createdAt": "2026-10-13T04:55:30.099Z",
+      "seq": 2209
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -3610,6 +3658,30 @@
       "note": "회귀 점검. 45차(2026-10-13)에 limit-point-limit-circle(106줄), weyl-titchmarsh-m-function(127줄), friedrichs-extension(106줄), hyperbolic-groups(88줄) 넷을 썼다. 앞 셋은 함수해석 축이고 사슬로 이어진다(unbounded-operators -> limit-point-limit-circle -> weyl-titchmarsh-m-function, unbounded-operators -> friedrichs-extension). 커밋 시점에 4절 검사를 전부 통과시켰다(수식 여섯, 문장형 헤딩 grep, 금지 매크로, 코드블록 언어, 문학적 비유, 번역체 표본, 열린 문제 절, 두문자어 첫 등장, 키릴·그리스 혼입 node 검사). 같은 회차에 friedrichs-extension 의 유일성 절에서 '다른 끝에' 비유와 '그것이다' 의 약한 서술어를 고쳤다(커밋 35d40d0). 다음 차수에 셋을 다시 본다. (1) 직관 절이 셋 다 산문 4 문단이다. 4절 문구는 '두 문단을 넘기지 않는다' 이고 모범 예(measure)는 네 문단이므로 큐 08e59419 의 독자 판단이 정해지면 셋을 함께 맞춘다. (2) 세 문서의 성질 절 증명 요지가 두 문단을 넘지 않는지. limit-point-limit-circle 의 Weyl 교체정리와 friedrichs-extension 의 표현정리가 각각 한 문단이다. (3) weyl-titchmarsh-m-function 의 Herglotz 표현정리가 그 문서에만 있고 Herglotz 문서가 없다. Herglotz 를 별도 문서로 떼면 중복이 생기므로 큐 5aab1328 의 후보 (1) 판정과 함께 본다.\n\n같은 회차에 네 번째로 hyperbolic-groups 를 썼다(부모 group-presentations, 군론 축). 그 문서도 같은 검사를 전부 통과했고 각주의 MSRI 를 'Math. Sci. Res. Inst.' 로 풀었다(두문자어 규칙). 직관 절이 4 문단인 것은 앞 셋과 같다.",
       "createdAt": "2026-10-13T01:03:49.628Z",
       "seq": 2203
+    },
+    {
+      "id": "cf9106d3",
+      "title": "공형장론을 별도 문서로 만들지 판정",
+      "priority": 9,
+      "note": "46차(2026-10-13) 판정. 큐 bb5c14a1 '공형장론과 Virasoro 대수' 를 꺼냈더니 virasoro-algebra 가 이미 있었고(158줄) note 가 꼽은 중심전하, 최소모형, Sugawara 구성이 모두 그 문서의 절로 들어 있다. Kac 행렬식 공식과 유니터리 표현 분류까지 있다. 그래서 그 항목은 제거했다. 남은 것은 공형장론 자체의 문서다. 지금 저장소에 conformal-field-theory 가 없고, 2 차원 공형장론의 수학적 내용은 virasoro-algebra(대칭 대수), vertex-operator-algebras(145줄, 장의 대수 구조), wess-zumino-witten(168줄, Sugawara 로 만든 모형), zhu-algebra, monstrous-moonshine 에 흩어져 있다. 판단이 필요한 것은 OPE(operator product expansion)와 모듈러 불변 분배함수를 담은 문서를 따로 둘지, 아니면 vertex-operator-algebras 를 보강해 그 자리에 넣을지다. 따로 두면 vertex-operator-algebras 와 절이 겹치고, 보강하면 vertex-operator-algebras 의 제목이 담는 범위를 넘는다. 8절 통합 기준(서로 없이는 설명되지 않는가)으로 보면 보강 쪽이고, 분량으로 보면 VOA 가 145줄이라 여유가 있다.",
+      "createdAt": "2026-10-13T04:44:06.073Z",
+      "seq": 2204
+    },
+    {
+      "id": "fc23aee2",
+      "title": "46차 새 문서 넷의 문체 회귀 점검",
+      "priority": 9,
+      "note": "46차(2026-10-13)에 bloch-group, surgery-theory, exotic-spheres, donaldson-invariants 를 썼다. 같은 회차에 4절 검사를 전부 돌려 통과시켰다. 수식 여섯(이스케이프 awk, 태그 부등호, 링크 대괄호, 줄 끝 백슬래시, 밑줄, render-check), 매크로 grep, 문장형 헤딩 grep, 비유 grep, 두문자어 grep, 번역체·금지표현 grep, 본문 H1 구조와 중복 H2, 큐 b50bb0c8 의 키릴·그리스 혼입. 혼입 검사는 grep -P 가 'character code point value too large' 로 실패했고 python 으로 돌렸다(큐 b50bb0c8 에 그 메모를 더할 것). 같은 회차에 고친 것 둘. donaldson-invariants 활용 절의 '3 다양체로의 환원' 이 4절 번역체 표의 '로의' 명사화여서 '3 다양체를 따라 자르기' 로, 같은 항목의 '그 틀이' 를 '그 상대 불변량을 다루는 이론이' 로 고쳤다. surgery-theory 활용 절의 '비음 곡률과 강직성' 은 본문이 비구면 다양체만 말하므로 '위상 강직성' 으로 좁혔다. 다음 차수에 네 문서를 통독해 직관 절의 문단 수(4절은 두 문단, 큐 08e59419 가 모범 예와의 어긋남으로 독자 판단 대기), 활용 절 굵은 항목 이름이 본문과 맞는지, exotic-spheres 의 '틀 코보디즘'(framed, 용어라 그대로 둠)이 비유 grep 오탐인지를 다시 본다.",
+      "createdAt": "2026-10-13T04:57:56.443Z",
+      "seq": 2210
+    },
+    {
+      "id": "bcdc0571",
+      "title": "'A와 B' 제목 전수 현황 (46차, 845 문서)과 grep 로케일",
+      "priority": 9,
+      "note": "46차(2026-10-13) 전수 결과. CLAUDE.md 4절의 grep -l '^# .*[와과] ' docs/*.md 가 이 환경에서 845 문서 전부를 내놓는다. 큐 8ce35057 이 말한 로케일 문제이고, 대괄호 안의 한글 두 글자가 모든 한글을 매치한다. 대신 python 으로 첫 줄만 읽어 re.search(r'(와|과) ', title) 로 세면 25 건이다.\n\n25 건 목록과 판정. 모두 규격 위반이 아니다. (1) 4절이 예외로 정한 '정리 이름과 그 정리가 답하는 개념' 꼴 15 건: canonical-height, dwork-rationality, eisenstein-ideal, greenberg-conjecture, heegner-points, herbrand-ribet, np-completeness, perfect-graphs, s-cobordism, serre-conjecture, unique-games, vandiver-conjecture, waldspurger-formula, whittaker-models, witten-asymptotics. (2) 파일명이 두 개념을 모두 담아 제목과 어긋나지 않는 10 건: dyson-rank-crank, fermat-euler-theorem, filters-and-nets, formalism-hilbert-program, ideals-quotient-rings, kleisli-eilenberg-moore, limits-colimits, luzin-sierpinski-sets, selmer-tate-shafarevich, speh-representations.\n\n(2) 가운데 filters-and-nets 는 큐 89a333fe 가 제목 판정을 따로 묻고 있고 파일명에 and 가 들어간 유일한 문서다. speh-representations 는 '중복도 1' 이 Whittaker 모형 쪽 성질이라 whittaker-models 와 묶일 수 있는지 다음 차수에 볼 것. 나머지 여덟은 파일명과 제목이 같은 범위를 가리켜 손댈 것이 없다.",
+      "createdAt": "2026-10-13T04:59:51.614Z",
+      "seq": 2212
     },
     {
       "id": "a6985bd5",
@@ -3820,14 +3892,6 @@
       "seq": 615
     },
     {
-      "id": "bb5c14a1",
-      "title": "공형장론과 Virasoro 대수",
-      "priority": 6,
-      "note": "wess-zumino-witten 이 Sugawara 로 만들어 쓰는 구조인데 문서가 없다. 중심전하, 1 차 장, OPE, 최소모형, 모듈러 불변 분배함수",
-      "createdAt": "2026-09-15T16:48:11.132Z",
-      "seq": 289
-    },
-    {
       "id": "314d255d",
       "title": "영문 제목 문서의 한국어 표기 통일 (4차)",
       "priority": 6,
@@ -3882,38 +3946,6 @@
       "note": "4.5절은 \"지도의 mermaid 는 실제 간선의 부분그래프여야 한다\" 고 한다. 2026-09-29 첫 회차에 개관 21 개의 mermaid 화살표를 전수로 실제 간선과 맞춰 보고 어긋난 4 건을 모두 고쳤다. 지금은 확인 가능한 화살표 387 개가 전부 실제 간선이다.\n\n고친 것 넷. (1) analysis-overview 의 \"연속함수 -> 축약사상 고정점 정리\"(커밋 e8e0b8f). 축약사상 고정점 정리의 부모는 완비성과 Lipschitz 사상이다. (2) category-theory-overview 의 \"함수 -> 범주\". 범주의 부모는 category-theory-overview, groups, partial-orders 다. (3) computation-overview 의 \"증명 -> 계산 가능성\". 계산 가능성의 부모는 cardinality 와 computation-overview 다. (4) machine-learning-overview 의 \"기계학습 개관 -> 변분 오토인코더\". 변분 오토인코더의 부모는 gradient-descent, kl-divergence, probabilistic-pca 다. 둘에서 넷까지는 커밋 f8d4d6a 다.\n\n고칠 때 걸린 함정 하나를 남긴다. mermaid 에서 노드의 라벨 정의는 그 노드가 처음 나오는 줄에 붙어 있다. 지우려는 화살표 줄에 라벨 정의가 있으면 줄을 지우는 것만으로 라벨이 사라지고, 남은 화살표가 그 노드를 키 이름(CB, CA, VAE)으로 렌더한다. 세 건에서 이 일이 났고 라벨을 남은 화살표 쪽으로 옮겨 고쳤다. 다음에 mermaid 화살표를 지울 때는 지운 뒤 그 노드의 라벨이 남아 있는지 반드시 확인할 것. 화살표를 받는 노드가 다른 화살표로 연결을 유지하는지도 함께 본다.\n\n검사기는 scratchpad/mermaid-check.mjs 다(회차마다 사라지므로 다시 짜야 한다). 문서의 첫 줄에서 제목을 읽어 제목 -> id 표를 만들고, 개관의 코드펜스 안에서 KEY[\"라벨\"] 로 노드를 모으고 한 줄의 키 순서로 인접 쌍을 내어 graph.mjs edges 의 결과와 맞춘다.\n\n검사에서 빠진 자리. 제목을 못 찾은 화살표가 75 건이다. mermaid 라벨이 제목의 축약형이기 때문이고(4.5절은 라벨을 제목과 같게 하라고 요구하지 않는다) 그 자체는 위반이 아니다. 축약 라벨의 예는 \"Selmer 군\"(selmer-tate-shafarevich), \"Lagrange 쌍대성과 KKT\"(lagrange-duality), \"확률변수와 기댓값\"(random-variables), \"Compactness\"(compactness 로 보이나 제목이 다르다), \"Riemann 곡면\"(riemann-surfaces. 제목이 \"Riemann 곡면과 균일화 정리\" 다. 이 제목은 22차 제목 좁히기의 다음 차례이므로 좁히면 이 라벨이 검사에 들어온다), \"Gauss-Bonnet\", \"Chern-Simons\", \"Reshetikhin-Turaev\", \"볼륨 추측\", \"Tracy-Widom 분포\" 다. 이 75 건을 검사에 넣으려면 축약 라벨 -> id 매핑을 검사기에 손으로 넣어야 한다. 다음에 돌리는 사람은 어긋난 화살표가 4 건보다 많을 수 있음을 염두에 둘 것. 제목 좁히기 차수가 진행되면 라벨과 제목이 맞아 자동으로 범위가 넓어진다.",
       "createdAt": "2026-09-29T01:01:50.787Z",
       "seq": 1423
-    },
-    {
-      "id": "a18bfa4f",
-      "title": "Bloch 군과 Borel 조절자",
-      "priority": 5,
-      "note": "hyperbolic-3-manifolds 와 algebraic-k-theory 아래. 이중로그 항등식, K_3(C) 와의 관계, 쌍곡 부피가 조절자 값이 되는 구조",
-      "createdAt": "2026-09-15T16:39:31.179Z",
-      "seq": 286
-    },
-    {
-      "id": "c661b591",
-      "title": "수술 이론과 Browder-Novikov-Sullivan-Wall",
-      "priority": 5,
-      "note": "s-cobordism 아래. 정상 불변량, 수술 장애군 L_n(Z pi), 수술 완전열, 고차원 다양체 분류의 뼈대",
-      "createdAt": "2026-09-15T16:50:41.857Z",
-      "seq": 290
-    },
-    {
-      "id": "96ba0f25",
-      "title": "이색 구면과 Kervaire-Milnor",
-      "priority": 5,
-      "note": "s-cobordism 아래. Theta_n 군, S^7 의 28 개 구조, 평행화 가능 구면과 Kervaire 불변량 1 문제",
-      "createdAt": "2026-09-15T16:50:42.003Z",
-      "seq": 291
-    },
-    {
-      "id": "c422fd89",
-      "title": "Donaldson 불변량과 4 다양체의 교차형식",
-      "priority": 5,
-      "note": "chern-simons 와 instanton-floer-homology 아래. ASD 모듈라이, 대각화 정리, 이색 R^4, Seiberg-Witten 과의 대비",
-      "createdAt": "2026-09-15T16:53:44.968Z",
-      "seq": 293
     },
     {
       "id": "90a7dd3d",
