@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-12T21:00:47.065Z",
-  "nextSeq": 2187,
+  "savedAt": "2026-10-13T01:04:13.886Z",
+  "nextSeq": 2204,
   "items": [
     {
       "id": "9443e5ca",
@@ -108,6 +108,14 @@
       "seq": 2165
     },
     {
+      "id": "941916ca",
+      "title": "회차 번호를 큐에서 확인하지 않아 note 에 남의 회차 번호를 적는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 45차 회차(2026-10-13)에 났다. 세션 시작에 회차 번호를 세지 않고 note 를 '44차 회차(2026-10-13)' 로 적어 여섯 항목을 push 했다. 그런데 큐에 이미 44차 항목 셋(51aa3137, 1e401b60, ef34ce2b)이 있고 그것은 2026-10-12 831 문서 시점의 다른 세션 작업이다. 같은 번호가 서로 다른 두 회차를 가리키게 되어, 같은 회차에 돌린 검사 결과와 새 문서 목록이 섞인다. 발견은 p12-p8 항목 제목을 훑다 '44차, 831 문서' 를 본 것이고, 정정은 remove 후 note 의 44차를 45차로 치환해 재push 한 것이다(queue.mjs 에 update 명령이 없다). 규칙. (1) note 에 회차 번호를 적기 전에 큐에서 가장 큰 번호를 센다. node dev/queue.mjs list --json | node -e 로 title 과 note 전체에서 /(\\d{1,2})차/ 를 모아 최댓값을 보면 된다. 이번에는 44 가 나왔으므로 내 회차는 45 다. (2) 회차 번호보다 날짜가 덜 어긋나므로 note 에는 번호와 날짜를 함께 적는다. 날짜가 같은 두 회차는 문서 수로 구별된다(44차 831, 45차 837 에서 시작). (3) 커밋 메시지에는 회차 번호를 적지 않으므로 커밋은 정정할 것이 없다.",
+      "createdAt": "2026-10-13T00:58:15.249Z",
+      "seq": 2199
+    },
+    {
       "id": "ee4586ed",
       "title": "differential-geometry-overview 지도의 노드 수가 4.5절 기준을 넘는 문제",
       "priority": 50,
@@ -122,6 +130,14 @@
       "note": "독자 판단 대기. 43차 회차(2026-10-12)에 chain-complexes 와 abelian-categories 와 derived-categories 를 썼다. category-theory-overview 의 '# 지도' 에는 세 노드를 더해(CC --> AB, LC --> AB, AB --> DC, 셋 다 실제 간선) 노드가 15 개에서 18 개가 되었고 4.5절의 '핵심 문서 12~20개' 안이다. abstract-algebra-overview 의 지도에는 더하지 않았다. 그 지도가 이미 노드 25 개로 기준을 넘고 있어서다(군 축 9, 환 축 11, Lie 축 8 쯤이다). 그래서 가군 축에 exact-sequences 와 chain-complexes 가 빠진 채다. 판단이 필요한 것 둘. (1) 넘긴 채 두고 가군 축만 M --> ES --> CC 로 늘릴지, (2) 지도를 분야 안에서 나눌지(4.5절은 개관이 1000줄에 닿으면 나눈다고만 정하고 지도가 커진 경우는 정하지 않는다). 큐 ee4586ed 가 differential-geometry-overview 에서 같은 문제를 묻고 있으므로 한꺼번에 판단하는 것이 좋다. 다른 세션이 넣은 노드를 지우는 일이라 임의로 하지 않았다.",
       "createdAt": "2026-10-12T04:56:17.241Z",
       "seq": 2138
+    },
+    {
+      "id": "3212db21",
+      "title": "functional-analysis-overview 지도의 노드 수가 4.5절 기준을 넘는 문제",
+      "priority": 50,
+      "note": "독자 판단 대기. 45차 회차(2026-10-13)에 limit-point-limit-circle 을 쓰면서 개관의 '# 지도' mermaid 에 노드를 더할지 판단했고 더하지 않았다. 지도가 이미 노드 27 개로 4.5절의 '핵심 문서 12~20개' 를 넘기 때문이다(FAO HS BS VS IPS MS COMP LM DS LPS SOB SD RF UC HB KM OMT CRT BO ST UBO FO FD IT FS PW SH). 4.5절은 지도가 실제 간선의 부분그래프이면 된다고만 정하므로 더하지 않는 것이 규격 위반은 아니다(큐 9443e5ca 메모와 같은 판단). 판단이 필요한 것 둘. (1) 27 개를 12~20 으로 줄일지. 줄이려면 어느 축을 뺄지(Lp-Sobolev-Schwartz 사슬, 반사공간-균일볼록, Fourier 급수-Peter Weyl-구면조화함수가 후보다). (2) differential-geometry-overview(ee4586ed)와 abstract-algebra-overview(bb074779)가 같은 문제로 이미 대기 중이다. 개관 셋이 함께 기준을 넘으므로 4.5절의 '12~20개' 를 상한으로 볼지 권장으로 볼지가 먼저 정해져야 한다.",
+      "createdAt": "2026-10-13T00:57:45.596Z",
+      "seq": 2193
     },
     {
       "id": "08e59419",
@@ -1090,6 +1106,14 @@
       "note": "판정 기록. 44차(2026-10-12)에 큐 0fa48047 'Dehn 수술과 3 다양체 구성' 을 dehn-surgery(128줄)로 썼다. note 가 'Kirby 계산법 항목과 이어진다' 고 했고 큐 50f81215 'Kirby 계산법과 4 차원 손잡이 분해'(p4)가 아직 있다. dehn-surgery 의 '## Kirby 이동' 절이 1 이동과 2 이동, Rolfsen 비틀림, 코보디즘 논법의 요지를 담았고 '## 틀 지은 고리 도형' 절이 교차형식까지 적었다. 50f81215 를 쓸 때 3 차원 쪽 중복을 피하고 4 차원 손잡이 분해(1·2·3 손잡이, 손잡이 소거, Akbulut-Kirby 예, 매끄러운 구조와의 관계)로 좁힌다. 부모는 dehn-surgery 가 자연스럽다(현재 자식 없음). 저장소 확인: ls docs | grep -iE 'kirby|handle|surgery' 로 dehn-surgery 외에 없음을 확인했다(2026-10-12).",
       "createdAt": "2026-10-12T16:54:12.688Z",
       "seq": 2173
+    },
+    {
+      "id": "43dd38ee",
+      "title": "큐 note 가 '저장소에 없다' 고 적은 문서가 이미 생긴 사례 넷 (45차)",
+      "priority": 20,
+      "note": "상시 메모 ae0b674e 의 규칙 (1)을 실제로 적용한 결과다. 45차 회차에 p10 의 '...의 후속 간선' 항목 넷을 읽고 note 가 든 자식 후보를 ls docs | grep 으로 확인했더니 넷이 모두 이미 있었다. c162c9e2(nonstandard-analysis)의 후보 (1) 초곱과 Los 정리 -> ultraproducts.md 있음. dece5714(stone-weierstrass)의 후보 Korovkin 정리 -> korovkin-theorem.md 있음. f3126e48(open-mapping-theorem)의 후보 (1) Hahn-Banach 정리 -> hahn-banach-theorem.md 있음, (2) 닫힌 치역 정리 -> closed-range-theorem.md 있음. 그래서 넷 다 버리고 3c7574f3(sturm-liouville)의 후보 'Weyl 의 극한점·극한원 분류' 로 넘어가 그것을 썼다. 확인에 든 grep 은 네 줄이고 1 분이 걸리지 않았다. 함의. '...의 후속 간선' 계열 항목 수십 개의 note 는 작성 시점(9월 하순)의 저장소 상태를 적은 것이고 그 뒤 200 여 문서가 들어왔으므로, 이 계열을 꺼낼 때는 후보 전체를 먼저 grep 으로 걸러 남은 것만 작업으로 삼는다. 후보가 전부 이미 있으면 그 항목은 remove 로 닫는다.",
+      "createdAt": "2026-10-13T00:57:45.884Z",
+      "seq": 2194
     },
     {
       "id": "410fd79d",
@@ -2412,14 +2436,6 @@
       "seq": 757
     },
     {
-      "id": "3c7574f3",
-      "title": "sturm-liouville 의 후속 간선",
-      "priority": 10,
-      "note": "2026-09-20 회차에 새로 썼다(부모 ordinary-differential-equations, analysis-overview 의 '미분과 적분' 갈래에서 상미분방정식 바로 뒤, 127줄). 직관 절은 길이 pi 인 줄의 진동 하나를 끝까지 끌고 가, 계수가 변하면 해가 사인이 아니지만 직교성은 부분적분 두 번의 항등식에서 그대로 나온다는 데까지 갔다. 성질 절은 직교성, 이산성과 완전성(Green 함수로 콤팩트 자기수반 작용소로 바꾸는 절차), Sturm 진동정리 셋이다. hilbert-spaces, spherical-harmonics, bounded-operators 를 본문 링크했다. 리프다. 후속 후보: 특이 Sturm-Liouville 문제와 Weyl 의 극한점·극한원 분류, Prufer 변환과 고유값의 수치 계산, 1 차원 Schrodinger 작용소와 산란 이론, Legendre 와 Bessel 을 각각 문서로 뗄지",
-      "createdAt": "2026-09-20T16:55:53.401Z",
-      "seq": 759
-    },
-    {
       "id": "18b16b60",
       "title": "o-minimality 의 후속 간선",
       "priority": 10,
@@ -3444,6 +3460,46 @@
       "seq": 2186
     },
     {
+      "id": "8cd66dcb",
+      "title": "limit-point-limit-circle 의 후속 간선",
+      "priority": 10,
+      "note": "45차 회차(2026-10-13)에 극한점·극한원 분류를 새로 썼다(106줄, 부모 sturm-liouville 과 unbounded-operators, functional-analysis-overview 의 '작용소와 스펙트럼' 갈래에서 비유계 작용소 바로 뒤). 리프다. 성질 절은 Weyl 교체정리, 정규 끝점의 분류, 극한점 판정(q 가 아래로 유계이면 무한원점이 극한점), 결손지수 대응 표 넷이다. 활용 절에서 본문 링크 없이 이름만 쓴 것: Weyl-Titchmarsh m 함수. 후속 후보 셋. (1) Weyl-Titchmarsh m 함수. 극한점 끝점의 제곱적분가능한 해가 주는 해석함수이고 그 경계값이 스펙트럼 측도를 준다. 부모는 이 문서와 spectral-theorem 이다. 저장소에 문서가 없다(ls docs | grep -iE 'titchmarsh|m-function' 빈 출력). (2) 1 차원 역스펙트럼 문제(Borg-Marchenko 유일성). m 함수 문서가 먼저 생겨야 부모가 선다. (3) Friedrichs 확장. Legendre 작용소에서 다항식 해를 주는 특정 자기수반 확장이고 활용 절 둘째 항목이 부르는 자리다. 부모는 unbounded-operators 와 이 문서다.",
+      "createdAt": "2026-10-13T00:57:46.101Z",
+      "seq": 2195
+    },
+    {
+      "id": "220b9c46",
+      "title": "sturm-liouville 의 남은 후속 간선",
+      "priority": 10,
+      "note": "앞선 항목 3c7574f3 을 갱신한 것이다. 45차 회차(2026-10-13)에 그 note 의 첫 후보 '특이 Sturm-Liouville 문제와 Weyl 의 극한점·극한원 분류' 를 limit-point-limit-circle 로 닫았다(106줄, 부모 sturm-liouville 과 unbounded-operators, 커밋 bbb1113). 같은 회차에 sturm-liouville 정의 절의 '특이 Sturm-Liouville 문제' 정의 뒤에 그 문서로 본문 링크를 한 문장 달았다. sturm-liouville 의 자식은 이제 둘이고(limit-point-limit-circle, inverse-scattering-transform) 5절의 묶음 기준 6개 미달이라 묶지 않고 선수관계 순으로만 두었다. 남은 후속 후보 셋. (1) Prufer 변환과 고유값의 수치 계산. 성질 절의 Sturm 진동정리가 부르는 자리이고 부모는 이 문서다. 저장소에 없다(ls docs | grep -iE 'prufer|prufer' 빈 출력, 확인 필요). (2) 1 차원 Schrodinger 작용소와 산란 이론. 활용 절 셋째가 이름만 쓴다. (3) Legendre 방정식과 Bessel 방정식을 각각 문서로 뗄지. 활용 절 둘째가 둘을 함께 든다. 셋 다 꺼낼 때 ae0b674e 규칙대로 저장소 전수 확인을 먼저 한다.",
+      "createdAt": "2026-10-13T00:57:46.353Z",
+      "seq": 2196
+    },
+    {
+      "id": "5aab1328",
+      "title": "weyl-titchmarsh-m-function 의 후속 간선",
+      "priority": 10,
+      "note": "45차 회차(2026-10-13)에 Weyl-Titchmarsh m 함수를 새로 썼다(127줄, 부모 limit-point-limit-circle 과 holomorphic-functions, functional-analysis-overview 의 '작용소와 스펙트럼' 갈래에서 극한점·극한원 분류 바로 뒤, 커밋 48177df). 리프다. 정의 절은 m 함수와 Herglotz 함수 둘, 성질 절은 Herglotz 성질(Im m = Im z 곱 해의 L2 노름 제곱 항등식), Herglotz 표현과 Stieltjes 역변환, 고유함수 전개 셋이다. holomorphic-functions 의 '다른 분야에서의 쓰임' 묶음 Riesz-Thorin 뒤에 넣었다. 후속 후보 셋. (1) Herglotz 함수(= Nevanlinna-Pick 함수)를 별도 문서로 뗄지. 이 문서 정의 절이 한 문장으로 정의하고 성질 절이 표현정리를 진술한다. 뗀다면 부모가 holomorphic-functions 와 measure 쪽이고 이 문서의 부모가 된다. 저장소에 없다(ls docs | grep -iE 'herglotz|nevanlinna|pick' 빈 출력). (2) Borg-Marchenko 정리와 1 차원 역스펙트럼 문제. 활용 절 셋째가 각주와 함께 진술만 한다. (3) Jost 해와 반사계수. 활용 절 넷째가 inverse-scattering-transform 을 본문 링크하는 자리다. 셋 다 꺼낼 때 ae0b674e 규칙대로 전수 확인을 먼저 한다.",
+      "createdAt": "2026-10-13T00:57:46.588Z",
+      "seq": 2197
+    },
+    {
+      "id": "73040f41",
+      "title": "friedrichs-extension 의 후속 간선",
+      "priority": 10,
+      "note": "45차 회차(2026-10-13)에 Friedrichs 확장을 새로 썼다(106줄, 부모 unbounded-operators 하나, functional-analysis-overview 의 '작용소와 스펙트럼' 갈래에서 비유계 작용소 바로 뒤, 커밋 96824ba). 리프다. 직관 절은 Robin 경계조건 sigma = -k tanh(k/2) 로 음의 고윳값이 생기는 계산을 보여 하한이 확장마다 다른 것을 드러냈다. 성질 절은 이차형식의 표현정리(Kato 6장), 하한의 보존, 유일성(본질적 자기수반이면 폐포), 변분 특성 넷이다. 본문에서 이름만 쓰고 문서가 없는 것 둘: Krein 확장(각주 2 에 Krein 1947 을 달았다), Rayleigh-Ritz 방법(활용 절 둘째). 후속 후보 셋. (1) Krein 확장과 반유계 대칭 작용소의 확장 전체의 순서. 유일성 절이 '다른 끝' 으로 언급만 한다. 부모는 이 문서다. 저장소에 없다(ls docs | grep -iE 'krein' 은 krein-milman 만 내놓고 그것은 볼록집합 쪽이라 다른 주제다). (2) Rayleigh-Ritz 방법과 유한요소법의 고윳값 수렴. 변분 특성이 부르는 자리이고 computation 쪽 부모도 붙는다. (3) Dirichlet Laplacian 과 H^1_0. 활용 절 첫째가 부르지만 sobolev-spaces 가 부모로 더 맞아 판정이 먼저다. 셋 다 꺼낼 때 ae0b674e 규칙대로 전수 확인을 먼저 한다.",
+      "createdAt": "2026-10-13T00:57:46.835Z",
+      "seq": 2198
+    },
+    {
+      "id": "8e45a2cb",
+      "title": "hyperbolic-groups 의 후속 간선",
+      "priority": 10,
+      "note": "45차 회차(2026-10-13)에 쌍곡군을 새로 썼다(88줄, 부모 group-presentations 하나, abstract-algebra-overview '군론' 갈래에서 Coxeter 군 바로 뒤, 커밋 299cf99). 큐 5b10e9da 의 후보 (2)를 닫은 것이다. 같은 회차에 group-presentations:77 의 '유한군, 아벨군, 자유군, 쌍곡군에서는 낱말 문제가 결정가능하고' 에 본문 링크를 걸었다. 리프다. 직관 절은 Z^2 의 (0,0) (n,0) (0,n) 삼각형에서 빗변의 점이 두 직각변에서 n/2 만큼 떨어진다는 계산으로 쌍곡이 아님을 보였다. 성질 절은 준등거리 불변성(Morse 보조정리), Dehn 알고리즘과 선형 시간 낱말 문제, Z^2 부분군의 부재, 예 다섯이다. 본문에서 이름만 쓰고 문서가 없는 것 셋: Gromov 경계, 준등거리사상, Dehn 함수. 후속 후보 셋. (1) 준등거리사상과 기하적 군론의 분류. 성질 절 첫 정리가 쓰는 도구이고 이 문서의 부모가 되는 편이 맞을 수 있다. 저장소에 없다(ls docs | grep -iE 'quasi-isometr|geometric-group' 빈 출력). 만들면 이 문서의 선수지식에 더해 부모가 둘이 된다. (2) Gromov 경계. 활용 절 첫째가 이름만 쓰고 부모는 이 문서다. (3) 큐 5b10e9da 의 남은 후보: Todd-Coxeter 는 이미 todd-coxeter.md 로 있고, 자유군을 group-presentations 에서 뗄지는 그 항목의 (4)로 남아 있다. 셋 다 꺼낼 때 ae0b674e 규칙대로 전수 확인을 먼저 한다.",
+      "createdAt": "2026-10-13T01:03:27.461Z",
+      "seq": 2201
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -3466,14 +3522,6 @@
       "note": "2026-09-17 두 번째 회차에 점검 완료, 고칠 것 없음. 4 절 금지 표현 전체 grep 과 헤딩 grep 이 모두 비어 있다. mermaid 는 하나뿐이고 MTC 에서 TQFT, SL2(Z) 표현, 매듭 불변량, VOA, Verlinde 공식으로 가는 구성들을 그린 구조도라 4 절 다이어그램 규칙의 '나열형' 이 아니다(정점 6 개를 문장 하나로 대체할 수 없다). 다시 볼 필요가 생기면 우선순위를 올린다",
       "createdAt": "2026-09-17T04:50:25.064Z",
       "seq": 450
-    },
-    {
-      "id": "5b10e9da",
-      "title": "group-presentations 계열 후속 (2차)",
-      "priority": 9,
-      "note": "2026-09-19 회차에 bd57c884 의 후보 (1) Coxeter 군을 coxeter-groups 로 썼다(커밋 c023c7c). 부모는 group-presentations 와 root-systems 이고 자식은 kazhdan-lusztig 다. 남은 후보 셋은 그대로다. (2) 쌍곡군: 낱말 문제가 선형 시간에 풀리는 군. 얇은 삼각형 조건과 Dehn 함수가 정의이고 저장소에 기하적 군론 문서가 없어 분야 판단이 필요하다. (3) Todd-Coxeter 알고리즘: 잉여류 열거. computation 태그로 group-presentations 아래. (4) 자유군을 별도 문서로 뗄지 판정: 지금은 group-presentations 의 정의 절 한 항목이고 Nielsen-Schreier 정리도 그 안에 있다. free-groups id 는 비어 있다. coxeter-groups 에서 새로 생긴 후보 둘: 아핀 Coxeter 군과 알코브 기하, Bruhat 분해(대수군 쪽 문서가 있는지 먼저 확인)",
-      "createdAt": "2026-09-19T04:50:49.207Z",
-      "seq": 609
     },
     {
       "id": "fed1b9b8",
@@ -3546,6 +3594,22 @@
       "note": "회귀 점검 결과. 44차(2026-10-12)에 831 문서의 제목을 전수로 보았다. 위반 0 건이다. CLAUDE.md 2절의 grep -l '^# .*[와과] ' 는 로케일 때문에 거의 모든 문서를 잡는다(큐 8ce35057 이 기록한 사안). 바이트 단위로 [와과] 가 다른 한글 음절의 바이트와 겹치기 때문이다. 대신 node 로 세었다: node -e 'const fs=require(\"fs\");for(const f of fs.readdirSync(\"docs\")){if(!f.endsWith(\".md\"))continue;const t=fs.readFileSync(\"docs/\"+f,\"utf8\").split(\"\\n\")[0].replace(/^# /,\"\");if(/[가-힣A-Za-z0-9)\\u2013\\u2014]\\s*(와|과)\\s+\\S/.test(t))console.log(f+\" :: \"+t)}' 가 25 건을 낸다. 판정. 두 갈래 다 4절의 예외다. (1) 파일명이 두 주제를 다 담은 것 10 건: filters-and-nets, ideals-quotient-rings, limits-colimits, luzin-sierpinski-sets, kleisli-eilenberg-moore, selmer-tate-shafarevich, dyson-rank-crank, fermat-euler-theorem, formalism-hilbert-program, dwork-rationality. 제목과 파일명이 같은 것을 가리키므로 어긋남이 아니다. (2) 정리 이름과 그 정리가 답하는 개념을 나란히 둔 것 15 건: canonical-height, eisenstein-ideal, greenberg-conjecture, heegner-points, herbrand-ribet, np-completeness, perfect-graphs, s-cobordism, serre-conjecture, speh-representations, unique-games, vandiver-conjecture, waldspurger-formula, whittaker-models, witten-asymptotics. 4절이 '정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목은 한 주제이므로 그대로 둔다' 고 정한다. 큐 17508b14, f2b49b9d, 5bd9ebde 가 같은 사안을 차수별로 묻고 있으므로 다음 차수에 이 결과를 보고 중복 작업을 피한다.",
       "createdAt": "2026-10-12T17:04:05.229Z",
       "seq": 2180
+    },
+    {
+      "id": "87385c30",
+      "title": "group-presentations 계열 후속 (2차)",
+      "priority": 9,
+      "note": "2026-09-19 회차에 bd57c884 의 후보 (1) Coxeter 군을 coxeter-groups 로 썼다(커밋 c023c7c). 부모는 group-presentations 와 root-systems 이고 자식은 kazhdan-lusztig 다. 남은 후보 셋은 그대로다. (2) 쌍곡군: 낱말 문제가 선형 시간에 풀리는 군. 얇은 삼각형 조건과 Dehn 함수가 정의이고 저장소에 기하적 군론 문서가 없어 분야 판단이 필요하다. (3) Todd-Coxeter 알고리즘: 잉여류 열거. computation 태그로 group-presentations 아래. (4) 자유군을 별도 문서로 뗄지 판정: 지금은 group-presentations 의 정의 절 한 항목이고 Nielsen-Schreier 정리도 그 안에 있다. free-groups id 는 비어 있다. coxeter-groups 에서 새로 생긴 후보 둘: 아핀 Coxeter 군과 알코브 기하, Bruhat 분해(대수군 쪽 문서가 있는지 먼저 확인)\n\n45차 회차(2026-10-13) 갱신. 후보 (2) 쌍곡군을 hyperbolic-groups 로 닫았다(88줄, 부모 group-presentations, 커밋 299cf99). '저장소에 기하적 군론 문서가 없어 분야 판단이 필요하다' 고 적었던 점은 주 분야를 group_theory 로 잡아 abstract-algebra-overview 의 군론 갈래에 넣는 것으로 풀었다(태그 #group_theory #algebra #topology #computation). 후보 (3) Todd-Coxeter 알고리즘은 그 뒤 회차에 todd-coxeter.md 로 이미 만들어져 있다. 남은 것은 (4) 자유군을 group-presentations 에서 별도 문서로 뗄지의 판정과, coxeter-groups 에서 나온 둘(아핀 Coxeter 군과 알코브 기하, Bruhat 분해)이다. 쌍곡군에서 새로 생긴 후보는 큐 8e45a2cb 에 적었다(준등거리사상, Gromov 경계).",
+      "createdAt": "2026-10-13T01:03:49.405Z",
+      "seq": 2202
+    },
+    {
+      "id": "d2b2ab07",
+      "title": "45차 새 문서 넷의 문체 회귀 점검",
+      "priority": 9,
+      "note": "회귀 점검. 45차(2026-10-13)에 limit-point-limit-circle(106줄), weyl-titchmarsh-m-function(127줄), friedrichs-extension(106줄), hyperbolic-groups(88줄) 넷을 썼다. 앞 셋은 함수해석 축이고 사슬로 이어진다(unbounded-operators -> limit-point-limit-circle -> weyl-titchmarsh-m-function, unbounded-operators -> friedrichs-extension). 커밋 시점에 4절 검사를 전부 통과시켰다(수식 여섯, 문장형 헤딩 grep, 금지 매크로, 코드블록 언어, 문학적 비유, 번역체 표본, 열린 문제 절, 두문자어 첫 등장, 키릴·그리스 혼입 node 검사). 같은 회차에 friedrichs-extension 의 유일성 절에서 '다른 끝에' 비유와 '그것이다' 의 약한 서술어를 고쳤다(커밋 35d40d0). 다음 차수에 셋을 다시 본다. (1) 직관 절이 셋 다 산문 4 문단이다. 4절 문구는 '두 문단을 넘기지 않는다' 이고 모범 예(measure)는 네 문단이므로 큐 08e59419 의 독자 판단이 정해지면 셋을 함께 맞춘다. (2) 세 문서의 성질 절 증명 요지가 두 문단을 넘지 않는지. limit-point-limit-circle 의 Weyl 교체정리와 friedrichs-extension 의 표현정리가 각각 한 문단이다. (3) weyl-titchmarsh-m-function 의 Herglotz 표현정리가 그 문서에만 있고 Herglotz 문서가 없다. Herglotz 를 별도 문서로 떼면 중복이 생기므로 큐 5aab1328 의 후보 (1) 판정과 함께 본다.\n\n같은 회차에 네 번째로 hyperbolic-groups 를 썼다(부모 group-presentations, 군론 축). 그 문서도 같은 검사를 전부 통과했고 각주의 MSRI 를 'Math. Sci. Res. Inst.' 로 풀었다(두문자어 규칙). 직관 절이 4 문단인 것은 앞 셋과 같다.",
+      "createdAt": "2026-10-13T01:03:49.628Z",
+      "seq": 2203
     },
     {
       "id": "a6985bd5",
