@@ -151,6 +151,7 @@ Schrödinger 방정식뿐 아니라 열방정식과 파동방정식도 같은 �
 
 ## 더 알아보기
 
+- [Friedrichs 확장](friedrichs-extension.md)
 - [극한점·극한원 분류](limit-point-limit-circle.md)
 
 #functional_analysis #analysis
