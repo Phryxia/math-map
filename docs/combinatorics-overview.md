@@ -42,6 +42,7 @@ graph TD
 - [Turán 정리](turan-theorem.md): $K_{r+1}$ 을 금지한 그래프의 최대 간선 수와 그 값을 주는 Turán 그래프
 - [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md): 조각 쌍마다 간선이 고른 분할, 삼각형 제거 보조정리와 Roth 정리
 - [Erdős–Stone 정리](erdos-stone-theorem.md): 금지 부분그래프의 극단 간선 수가 색칠수로 정해진다는 정리
+- [그래폰](graphons.md): 조밀 그래프 열의 극한인 대칭 가측함수, cut 거리와 그래폰 공간의 콤팩트성
 - [Dilworth 정리](dilworth-theorem.md): 사슬 덮개와 반사슬의 최소최대 정리, Erdős–Szekeres 정리
 - [Sperner 정리](sperner-theorem.md): 부분집합 격자의 최대 반사슬과 LYM(Lubell–Yamamoto–Meshalkin) 부등식
 - [Erdős–Ko–Rado 정리](erdos-ko-rado.md): 교차족의 최대 크기, Katona 의 순환 배열 세기

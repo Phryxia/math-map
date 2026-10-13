@@ -106,5 +106,6 @@ $$
 ## 더 알아보기
 
 - [Erdős–Stone 정리](erdos-stone-theorem.md)
+- [그래폰](graphons.md)
 
 #combinatorics #graph_theory #number_theory
