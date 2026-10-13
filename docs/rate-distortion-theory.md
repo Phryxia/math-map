@@ -143,6 +143,6 @@ function blahutArimoto(p, d, beta, iters) {
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [정보 병목](information-bottleneck.md)
 
 #information_theory #probability #computation

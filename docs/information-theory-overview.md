@@ -65,6 +65,7 @@ graph TD
 
 - [Sinkhorn 알고리즘](sinkhorn.md) — 최적 수송 문제에 엔트로피 항을 더하면 행렬 스케일링 반복으로 풀린다
 - [변분 오토인코더](variational-autoencoder.md) — 사후분포 근사의 손실에 KL divergence 항이 들어간다
+- [정보 병목](information-bottleneck.md) — 입력의 압축 가운데 목표에 대한 정보를 가장 많이 남기는 것을 찾는다. 율왜곡 문제에서 왜곡이 예측 손실로 정해진 꼴이다
 - [Lovász 세타 함수](lovasz-theta.md) — 그래프의 Shannon 용량을 반정부호 계획법으로 위에서 잡는다
 
 # 연관 문서
