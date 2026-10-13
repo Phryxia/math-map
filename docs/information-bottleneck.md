@@ -82,7 +82,7 @@ $X$ 와 $T$ 가 유한이면 자기모순 방정식의 해는 $\beta$ 가 커질
 
 - 특징 선택에서 후보 변수 묶음의 평가 기준으로 쓴다. 상관계수와 달리 비선형 의존을 잡고, 묶음 전체의 정보를 한 번에 재므로 중복된 변수를 같이 넣는 것을 벌한다.
 - 군집화에서 $T$ 를 묶음 번호로 두면 분포가 비슷한 원소끼리 모인다. 문서를 단어 분포로 나타내고 $Y$ 를 단어로 두는 분포 군집화가 이 형태다.
-- 심층망의 층 출력을 $T$ 로 보고 평면 $(I(X;T),I(T;Y))$ 에 층마다 점을 찍는 분석에 쓴다. 고차원 연속 변수의 상호정보량 추정이 어려워 추정량의 선택이 결과를 바꾼다.
+- 심층망의 층 출력을 $T$ 로 보고 평면 $(I(X;T),I(T;Y))$ 에 층마다 점을 찍는 분석에 쓴다. 고차원 연속 변수의 [상호정보량 추정](mutual-information-estimation.md)이 어려워 추정량의 선택이 결과를 바꾼다.
 - 변분 정보 병목(variational information bottleneck)은 $I(X;T)$ 를 KL(Kullback–Leibler) 항으로 위에서 잡고 $I(T;Y)$ 를 복호기의 로그가능도로 아래에서 잡아 경사하강법으로 푼다. 그 하한의 꼴이 [변분 오토인코더](variational-autoencoder.md)의 ELBO(evidence lower bound)와 같고 재구성 항의 목표가 $X$ 대신 $Y$ 다.
 
 [^1]: N. Tishby, F. C. Pereira, W. Bialek, "The information bottleneck method", *Proc. 37th Allerton Conf. on Communication, Control and Computing*, 1999, 368–377 쪽.
