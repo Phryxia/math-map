@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-13T17:00:51.041Z",
-  "nextSeq": 2240,
+  "savedAt": "2026-10-13T21:04:07.810Z",
+  "nextSeq": 2248,
   "items": [
     {
       "id": "9443e5ca",
@@ -1146,6 +1146,22 @@
       "note": "48차(2026-10-13) 판정. 큐 8ce35057 가 'A와 B' 제목 25 건 가운데 파일명이 한쪽만 가리켜 판정이 남은 것 다섯(dwork-rationality herbrand-ribet s-cobordism speh-representations whittaker-models)을 들었다. 그중 whittaker-models 를 보았고 제목 'Whittaker 모형과 중복도 1' 을 그대로 둔다. 근거. 문서(153줄)의 개념은 Whittaker 모형이고 '중복도 1' 은 그 모형의 유일성 정리의 통칭이다. 성질 절이 유한군 판본, Casselman-Shalika 공식, 강한 중복도 1 로 이어지며 유일성을 중심으로 묶여 있다. 4절 제목 규칙의 예외('정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목은 한 주제이므로 그대로 둔다')에 정확히 해당하므로 파일명과 어긋난 것이 아니다. 남은 넷(dwork-rationality herbrand-ribet s-cobordism speh-representations)은 각 문서를 보강하는 회차에 같은 기준으로 본다. 전수 현황은 48차에도 25 건으로 같았다(LC_ALL=C.UTF-8 필요).",
       "createdAt": "2026-10-13T17:00:36.282Z",
       "seq": 2239
+    },
+    {
+      "id": "abcab82d",
+      "title": "complex-analysis-overview 지도의 노드 수와 Riemann 사상정리",
+      "priority": 20,
+      "note": "판정 기록. 46차(2026-10-13)에 riemann-mapping-theorem 을 conformal-mapping 에서 분할했다. 개관의 '# 지도' mermaid 는 노드가 정확히 20 개(DV FC HF PS RT HM AC CM WF PC RS MC TS EF GF PNT DL MF RR KM)로 4.5절의 '핵심 문서 12~20개' 상한에 닿아 있어 CM --> RMT 를 더하지 않았다. 4.5절은 지도가 실제 간선의 부분그래프이면 된다고만 정하므로 규격 위반은 아니다(큐 9443e5ca, 3212db21 과 같은 판단). 간선을 뺀 것이 없으므로 부분그래프 조건도 유지된다. 지도에 심을지는 독자 판단.",
+      "createdAt": "2026-10-13T20:43:49.887Z",
+      "seq": 2240
+    },
+    {
+      "id": "c7b24aba",
+      "title": "46차 전수 규격 점검 결과",
+      "priority": 20,
+      "note": "점검 기록. 46차(2026-10-13) 종료 전 전수 검사. (1) 문장형 헤딩 grep 은 '## 증명의 요지' 다수와 potential-theory 37줄 '## 퍼텐셜과 에너지' 만 내놓았고 둘 다 명사구 오탐이다(큐 5bc27ea2, f7c54f08 과 같은 판정). (2) 비유 금지 grep 은 elliptic-curves 118줄 'Montgomery 사다리', lie-algebras 162줄 '사다리 연산자', mandelbrot-set 55줄 '심장꼴', post-quantum-cryptography 126줄 '함정문' 네 건을 내놓았고 모두 용어의 일부라 4절 예외다. (3) 금지 매크로, 열린 문제 절, 범위 뭉뚱그린 문장, 비허용 코드블록 언어, 언어 미표시 코드블록, 수치 확인 절은 모두 0 건이다. (4) 태그가 하나뿐인 문서 0 건, untagged 0 건, 개관 매핑 미수록 0 건.",
+      "createdAt": "2026-10-13T21:03:52.200Z",
+      "seq": 2247
     },
     {
       "id": "410fd79d",
@@ -2428,6 +2444,14 @@
       "seq": 2236
     },
     {
+      "id": "b97a2dc2",
+      "title": "leech-lattice 의 후속 간선",
+      "priority": 11,
+      "note": "46차에 leech-lattice 를 신설했고 더 알아보기가 비어 있다. 후속 후보는 Conway 군 문서(큐에 별도 항목), 25+1 차원 격자 II_{25,1} 과 Conway 정리(niemeier-lattices 136줄이 언급), Leech 격자에서 만드는 정점작용소대수 V^natural(vertex-operator-algebras 와 monstrous-moonshine 이 이미 있다). 뒤 둘은 기존 문서가 거두고 있으니 간선 방향이 맞는지부터 본다.",
+      "createdAt": "2026-10-13T21:02:51.923Z",
+      "seq": 2246
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -2772,22 +2796,6 @@
       "seq": 1622
     },
     {
-      "id": "a904955c",
-      "title": "이진 이차형식의 유형군",
-      "priority": 10,
-      "note": "정수론. 부모는 quadratic-forms 와 algebraic-number-fields. Gauss 합성, 축약 형식, 이데알 류군과의 동형, 유형수 1 인 판별식의 목록. quadratic-forms 성질 절 한 절로만 있다.",
-      "createdAt": "2026-10-04T20:50:29.500Z",
-      "seq": 1675
-    },
-    {
-      "id": "aad86bc9",
-      "title": "양자군",
-      "priority": 10,
-      "note": "대수/범주론. 부모 후보는 monoidal-categories 와 lie-algebras. U_q(g) 의 Hopf 대수 구조, R 행렬, 표현 범주의 꼬임이 대칭이 아닌 점. monoidal-categories 와 modular-tensor-categories 가 이름만 쓴다.",
-      "createdAt": "2026-10-04T20:55:45.870Z",
-      "seq": 1679
-    },
-    {
       "id": "d3542cdb",
       "title": "행위자-비평자의 후속 간선",
       "priority": 10,
@@ -2860,22 +2868,6 @@
       "seq": 1768
     },
     {
-      "id": "e35a2da6",
-      "title": "부분관측 Markov 결정 과정",
-      "priority": 10,
-      "note": "확률론/기계학습(#probability #machine_learning #computation). 36차에 hidden-markov-model 활용 셋째 항목이 '상태가 보이지 않는 제어 문제에서 사후분포가 믿음 상태가 된다' 를 적고 markov-decision-process 를 링크했으나 믿음 상태 위의 결정 문제 자체는 문서가 없다. 담을 내용은 믿음 상태의 갱신식(전향 재귀와 같은 꼴), 믿음 공간 위의 Bellman 방정식, 값함수가 믿음에 대해 조각마다 선형이고 볼록하다는 정리, 유한 지평 해법과 계산 복잡도. 부모 후보는 markov-decision-process 와 hidden-markov-model 둘이다.",
-      "createdAt": "2026-10-06T08:42:57.706Z",
-      "seq": 1778
-    },
-    {
-      "id": "b8b6de68",
-      "title": "Leech 격자와 Conway 군",
-      "priority": 10,
-      "note": "대수/조합(#group_theory #combinatorics #number_theory). 36차에 golay-codes 를 분할하며 확인했다. Leech 격자는 지금 golay-codes 의 '## Leech 격자' 절(Construction B 와 최소노름)과 sphere-packing, niemeier-lattices, mathieu-groups 에 흩어져 있고 독립 문서가 없다. 담을 내용은 Construction B 의 보정 단계, 최소노름 4 와 노름 2 벡터의 부재 증명, kissing number 196560, Conway 군 Co_0 와 Co_1 의 정의, 깊은 구멍과 Niemeier 격자 23 개의 대응(Conway-Parker-Sloane), theta 급수. 부모 후보는 golay-codes 와 lattices 다. 만들면 sphere-packing 과 niemeier-lattices 의 Leech 언급을 그리로 돌린다.",
-      "createdAt": "2026-10-06T08:48:57.686Z",
-      "seq": 1781
-    },
-    {
       "id": "621c77df",
       "title": "p 진 다중 zeta 값",
       "priority": 10,
@@ -2890,14 +2882,6 @@
       "note": "집합론. 신규 주제. iterated-forcing(37차)이 properness 를 이름만 쓰고 정의하지 않았다. 쓸 내용: 가산 기본 모형 M 에 대한 (M,P) 일반 조건, proper 가 ccc 와 적정 닫힘을 함께 포함하는 것, 정상집합 보존과의 동치, Laver 와 Mathias 순서가 proper 인 예. 부모는 iterated-forcing 과 forcing 가운데 하나. 간선 추가 전 borel-conjecture 와의 조상관계를 check-cycle 로 확인할 것",
       "createdAt": "2026-10-06T16:55:35.235Z",
       "seq": 1812
-    },
-    {
-      "id": "5a6e0bef",
-      "title": "Riemann 사상정리 문서 신설 판단",
-      "priority": 10,
-      "note": "복소해석. 37차에 hurwitz-theorem 을 쓰면서 Riemann 사상정리를 conformal-mapping.md 로 링크했다. conformal-mapping(등각사상) 49줄에 '## Riemann 사상정리' 절이 있어 현재는 그쪽이 거두고 있다. 별도 문서로 분리할지 판단이 필요하다. 분리하면 Montel 정리로 정규족을 뽑고 Hurwitz 정리로 극한의 단사성을 얻는 증명 전체가 내용이 되고 hurwitz-theorem 과 montel-theorem 의 자식이 된다. 분리하지 않으면 conformal-mapping 의 그 절을 보강하고 두 정리를 본문 링크로 잇는다. conformal-mapping 의 현재 분량과 그 절의 길이를 먼저 볼 것",
-      "createdAt": "2026-10-06T20:59:06.221Z",
-      "seq": 1821
     },
     {
       "id": "a5b5af7f",
@@ -3650,6 +3634,46 @@
       "note": "46차 회차(2026-10-13) 메모. 큐 95b2d059(borsuk-ulam 의 후속 간선)의 후보 셋 가운데 (1) Tucker 보조정리는 tucker-lemma 로, (2) 목걸이 분할 정리는 necklace-splitting 으로 이 회차에 썼다. 남은 것은 (3) Kneser 추측이다. graph-coloring 과 tucker-lemma 의 공동 자식 후보이고, tucker-lemma 활용 첫 항목과 borsuk-ulam 이 둘 다 이름만 쓰며 erdos-ko-rado:65 가 본문 링크로 가리킨다. 5절의 '부모는 보통 1개에서 3개' 와 '부모를 빼도 자식의 개요가 그대로 읽히는가' 로 부모를 고른다. 색칠수 하한의 증명이 Tucker 보조정리이므로 tucker-lemma 가 필수 부모이고 graph-coloring 은 채색수 정의를 준다.",
       "createdAt": "2026-10-13T13:00:45.375Z",
       "seq": 2231
+    },
+    {
+      "id": "7934b206",
+      "title": "선형이차Gauss 제어",
+      "priority": 10,
+      "note": "확률론/최적화(#probability #optimization #machine_learning). 46차에 partially-observable-mdp 를 쓰며 활용 절 Kalman 필터 항목이 '상태와 관측이 선형이고 잡음이 Gauss 이면 믿음이 평균과 공분산으로 적히고 이차 보상에서 최적 제어가 평균에만 의존한다' 를 적었으나 그 분리 정리 자체는 문서가 없다. 담을 내용은 LQ 제어의 Riccati 재귀, 추정과 제어의 분리 정리, Kalman 이득과 최적 되먹임 이득이 따로 계산된다는 것. 부모 후보는 partially-observable-mdp 와 kalman-filter 둘. ls docs | grep -iE 'linear-quadratic|lqg|riccati' 로 먼저 중복을 본다.",
+      "createdAt": "2026-10-13T20:48:46.534Z",
+      "seq": 2241
+    },
+    {
+      "id": "d2cf5731",
+      "title": "POMDP 근사 해법과 유한 상태 제어기",
+      "priority": 10,
+      "note": "확률론/계산(#probability #computation). 46차에 partially-observable-mdp 를 썼고 그 문서의 더 알아보기가 비어 있다. 후속 후보는 믿음 공간의 유한 표본에서만 alpha 벡터를 키우는 점 기반 값 반복과, 정책을 유한 상태 기계로 제한해 정책 공간에서 찾는 유한 상태 제어기다. 부모는 partially-observable-mdp. ls docs | grep -iE 'point-based|finite-state-controller|value-iteration' 로 먼저 중복을 본다.",
+      "createdAt": "2026-10-13T20:48:46.669Z",
+      "seq": 2242
+    },
+    {
+      "id": "85c99f3a",
+      "title": "Hopf 대수 독립 문서",
+      "priority": 10,
+      "note": "대수/범주론(#algebra #category_theory). 46차에 quantum-groups 를 쓰며 '## Hopf 대수' 절에 쌍대곱·쌍대단위·반대합의 공리와 군환·보편포락대수의 예만 짧게 적었다. 독립 문서라면 쌍대대수와 쌍대성, 적분(Haar 원소), 유한차원 Hopf 대수의 Nichols-Zoeller 정리, Tannaka 재구성과의 관계가 내용이 된다. 부모 후보는 tensor-products 와 monoidal-categories. ls docs | grep -iE 'hopf-algebra|bialgebra' 로 먼저 중복을 본다.",
+      "createdAt": "2026-10-13T20:52:56.179Z",
+      "seq": 2243
+    },
+    {
+      "id": "fc2963f6",
+      "title": "Hecke 대수 문서",
+      "priority": 10,
+      "note": "대수(#algebra #combinatorics #representation). 46차에 quantum-groups 활용 절에서 A 형 Hecke 대수를 링크하려 했으나 hecke-algebras.md 가 없어 링크 없이 이름만 썼다(hecke-operators.md 는 모듈러 형식 쪽 Hecke 작용소이고 다른 개념이다). 담을 내용은 Coxeter 군의 변형 제시, Kazhdan-Lusztig 기저, Schur-Weyl 쌍대성의 q 변형, Temperley-Lieb 대수가 몫으로 나오는 것. 저장소에 cellular-algebras, temperley-lieb-algebras, kazhdan-lusztig, schur-weyl-duality 가 이미 있어 그것들의 공통 부모 자리다. 부모 후보는 coxeter-groups 와 braid-groups.",
+      "createdAt": "2026-10-13T20:52:56.320Z",
+      "seq": 2244
+    },
+    {
+      "id": "76ae6681",
+      "title": "Conway 군 문서",
+      "priority": 10,
+      "note": "군론(#group_theory #combinatorics). 46차에 leech-lattice 를 쓰며 '## Conway 군' 절에 Co_0 의 위수, Co_1 의 단순성, Co_2 와 Co_3 가 벡터 안정자로 나오는 것, M_24 가 좌표 치환 부분군인 것만 적었다. 독립 문서라면 Co_0 가 Leech 격자 위에서 2 전이적으로 작용하는 방식, 세 단순군의 위수와 극대 부분군, 26 개 산재군 목록에서의 자리, Conway 군과 괴물군의 관계가 내용이 된다. 부모 후보는 leech-lattice 와 sporadic-groups 또는 mathieu-groups. ls docs | grep -iE 'conway|sporadic' 로 먼저 중복을 본다.",
+      "createdAt": "2026-10-13T21:02:51.796Z",
+      "seq": 2245
     },
     {
       "id": "dfb3e493",
