@@ -100,7 +100,7 @@ $$
 p(n)=\frac1{\pi\sqrt2}\sum_{k\ge1}A_k(n)\sqrt k\thinspace\frac{d}{dn}\left(\frac{\sinh\big(\frac\pi k\sqrt{\frac23(n-\frac1{24})}\big)}{\sqrt{n-\frac1{24}}}\right)
 $$
 
-$A_k(n)$ 은 Kloosterman 합 꼴의 유한합이다. 몇 항만 더해 반올림하면 $p(n)$ 이 나온다.
+$A_k(n)$ 은 [Kloosterman 합](kloosterman-sums.md) 꼴의 유한합이다. 몇 항만 더해 반올림하면 $p(n)$ 이 나온다.
 
 ## Ramanujan 합동
 
