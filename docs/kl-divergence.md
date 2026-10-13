@@ -182,6 +182,7 @@ $$
 ### 추정과 모형 비교
 
 - [Fisher 정보](fisher-information.md)
+- [상호정보량 추정](mutual-information-estimation.md)
 - [정보 기준](information-criteria.md)
 
 ### 알고리즘
