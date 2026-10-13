@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-13T13:01:09.347Z",
-  "nextSeq": 2232,
+  "savedAt": "2026-10-13T17:00:51.041Z",
+  "nextSeq": 2240,
   "items": [
     {
       "id": "9443e5ca",
@@ -1122,6 +1122,30 @@
       "note": "상시 메모 ae0b674e 의 규칙 (1)을 실제로 적용한 결과다. 45차 회차에 p10 의 '...의 후속 간선' 항목 넷을 읽고 note 가 든 자식 후보를 ls docs | grep 으로 확인했더니 넷이 모두 이미 있었다. c162c9e2(nonstandard-analysis)의 후보 (1) 초곱과 Los 정리 -> ultraproducts.md 있음. dece5714(stone-weierstrass)의 후보 Korovkin 정리 -> korovkin-theorem.md 있음. f3126e48(open-mapping-theorem)의 후보 (1) Hahn-Banach 정리 -> hahn-banach-theorem.md 있음, (2) 닫힌 치역 정리 -> closed-range-theorem.md 있음. 그래서 넷 다 버리고 3c7574f3(sturm-liouville)의 후보 'Weyl 의 극한점·극한원 분류' 로 넘어가 그것을 썼다. 확인에 든 grep 은 네 줄이고 1 분이 걸리지 않았다. 함의. '...의 후속 간선' 계열 항목 수십 개의 note 는 작성 시점(9월 하순)의 저장소 상태를 적은 것이고 그 뒤 200 여 문서가 들어왔으므로, 이 계열을 꺼낼 때는 후보 전체를 먼저 grep 으로 걸러 남은 것만 작업으로 삼는다. 후보가 전부 이미 있으면 그 항목은 remove 로 닫는다.",
       "createdAt": "2026-10-13T00:57:45.884Z",
       "seq": 2194
+    },
+    {
+      "id": "3db10ec6",
+      "title": "information-theory-overview 지도에 학습 쪽 노드를 더할지",
+      "priority": 20,
+      "note": "48차(2026-10-13) 판정. information-bottleneck 을 쓰고 개관의 '# 지도' mermaid 에 RD --> IB 를 더할지 보았고 더하지 않았다. 같은 회차에 SC --> RD 와 KL --> RD 를 더해 노드가 17 개에서 18 개가 되었고, IB 를 넣으면 19 개로 4.5절의 '핵심 문서 12~20개' 상한에 닿는다. 부분그래프 조건은 위반이 아니다(4.5절은 지도가 실제 간선의 부분그래프이면 된다고만 정한다). 지도에 이미 학습 쪽으로 KL --> VAE 와 KL --> SINK 가 있어 축이 드러나 있다는 것도 근거다. 재판정 시점은 손실 압축 축이나 학습 축에 문서가 더 생겨 둘 중 하나를 묶음으로 보일 필요가 생길 때다. 큐 ee4586ed bb074779 3212db21 이 개관 셋의 노드 수 상한을 독자 판단 대기로 두고 있으므로 그 판단이 먼저다.",
+      "createdAt": "2026-10-13T16:49:14.117Z",
+      "seq": 2235
+    },
+    {
+      "id": "9c92bfe2",
+      "title": "quantization 에서 sphere-packing 으로 간선을 긋지 않은 판정",
+      "priority": 20,
+      "note": "48차(2026-10-13) 판정. quantization 을 쓰고 성질 절 마지막 문단이 격자의 공간 채우기 효율을 들므로 quantization -> sphere-packing 간선을 볼지 보았고 긋지 않았다. 근거 둘. (1) 5절의 간선 방향 조건은 '부모 문서를 읽지 않으면 자식 문서를 이해할 수 없어야 한다' 인데 sphere-packing 은 양자화를 읽지 않아도 이해된다. 구 채우기는 격자와 부호의 기하 문제이고 양자화의 특수 사례나 확장이 아니다. (2) 5절 더 알아보기 기준의 '그저 부모를 도구로 한 번 쓰는가' 에 해당하므로 본문 링크로 충분하다. 그래서 quantization 의 성질 절에서 sphere-packing 을 최초 1회 링크했다. check-cycle 은 OK 였고(순환은 아니다) sphere-packing 의 부모는 error-correcting-codes 와 lattices 둘이라 개수 제약에도 걸리지 않았다. 방향을 뒤집어 sphere-packing -> quantization 으로 긋는 쪽은 격자 양자화 문서가 따로 생길 때 다시 본다.",
+      "createdAt": "2026-10-13T16:55:37.625Z",
+      "seq": 2237
+    },
+    {
+      "id": "69921d6e",
+      "title": "whittaker-models 제목 판정 (48차)",
+      "priority": 20,
+      "note": "48차(2026-10-13) 판정. 큐 8ce35057 가 'A와 B' 제목 25 건 가운데 파일명이 한쪽만 가리켜 판정이 남은 것 다섯(dwork-rationality herbrand-ribet s-cobordism speh-representations whittaker-models)을 들었다. 그중 whittaker-models 를 보았고 제목 'Whittaker 모형과 중복도 1' 을 그대로 둔다. 근거. 문서(153줄)의 개념은 Whittaker 모형이고 '중복도 1' 은 그 모형의 유일성 정리의 통칭이다. 성질 절이 유한군 판본, Casselman-Shalika 공식, 강한 중복도 1 로 이어지며 유일성을 중심으로 묶여 있다. 4절 제목 규칙의 예외('정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목은 한 주제이므로 그대로 둔다')에 정확히 해당하므로 파일명과 어긋난 것이 아니다. 남은 넷(dwork-rationality herbrand-ribet s-cobordism speh-representations)은 각 문서를 보강하는 회차에 같은 기준으로 본다. 전수 현황은 48차에도 25 건으로 같았다(LC_ALL=C.UTF-8 필요).",
+      "createdAt": "2026-10-13T17:00:36.282Z",
+      "seq": 2239
     },
     {
       "id": "410fd79d",
@@ -2378,6 +2402,30 @@
       "note": "47차(2026-10-13)에 borel-cantelli 를 썼다(86줄, 부모 random-variables 하나, 확률론 개관 '극한정리' 갈래에서 큰 수의 법칙 앞). 리프다. 부모 판정: measure 와 random-variables 둘을 후보로 보고 check-cycle 을 둘 다 통과시켰으나 measure 를 뺐다. measure 가 random-variables 의 조상이고(graph.mjs ancestors random-variables 에 measure 가 있다) measure 의 더 알아보기 묶음 둘('적분과 밀도', '집합의 복잡도와 다른 구성')에 이 문서가 들어갈 자리가 없다. 측도는 첫째 보조정리 절에서 본문 링크로 걸었다. 후속 후보 셋(ls docs 로 없음을 확인했다). (1) 짧은 구간의 소수(primes in short intervals) - Maier 정리와 Selberg 결과를 담으면 부모가 cramer-conjecture 와 prime-number-theorem 이다. cramer-conjecture 의 리프도 이것이 닫는다. (2) Kolmogorov 영일 법칙 - borel-cantelli 성질 절 '## 영일 법칙과의 관계' 가 진술만 쓴다. 꼬리 시그마 대수를 정의하는 문서가 없으므로 별도 문서 후보이고 부모는 random-variables 와 borel-cantelli 가 적절하다. (3) Kochen-Stone 부등식 - 성질 절 '## 독립 조건의 완화' 가 식까지 담아 떼면 중복이 크다. 지금은 떼지 않는다.",
       "createdAt": "2026-10-13T09:01:22.202Z",
       "seq": 2220
+    },
+    {
+      "id": "1ab16db8",
+      "title": "손실 압축 축의 후속 간선",
+      "priority": 11,
+      "note": "48차(2026-10-13)에 rate-distortion-theory 를 source-coding 과 kl-divergence 의 자식으로 썼다. 더 알아보기가 비어 있다. 후속 후보는 저장소에 아직 없는 것들이다. (1) 양자화기 설계(Lloyd-Max, 격자 양자화) — 율왜곡 함수가 하한을 주고 스칼라 양자화가 Gauss 에서 0.25 비트 높다는 성질 절 내용의 후속이다. (2) 정보 병목(information bottleneck) — channel-coding:102 와 kl-divergence:164 가 둘 다 언급만 하고 문서가 없다. 부모는 rate-distortion-theory 와 kl-divergence 가 맞다. (3) 다중 서술 부호화, Wyner-Ziv 부호화 — 부모가 rate-distortion-theory 하나로 분명하다. 셋 다 ls docs | grep -iE 'quantiz|bottleneck|wyner' 로 없음을 확인했다. 분야는 information_theory 이고 개관의 'Shannon 의 부호화 정리' 갈래 또는 새 갈래에 넣는다.",
+      "createdAt": "2026-10-13T16:45:33.716Z",
+      "seq": 2232
+    },
+    {
+      "id": "85dd3937",
+      "title": "정보 병목의 후속 간선과 상호정보량 추정",
+      "priority": 11,
+      "note": "48차(2026-10-13)에 information-bottleneck 을 rate-distortion-theory 의 자식으로 썼다. 더 알아보기가 비어 있다. 후속 후보 둘을 저장소에서 확인했다(ls docs | grep -iE 'mine|estimat|infonce|contrastive' 로 없음). (1) 상호정보량 추정 — MINE 과 InfoNCE 를 다루는 문서. 활용 절 셋째 항목이 '고차원 연속 변수의 상호정보량 추정이 어려워 추정량의 선택이 결과를 바꾼다' 고만 적고 넘어간다. 부모는 information-bottleneck 과 kl-divergence 가 후보이고 kl-divergence 가 information-bottleneck 의 조상이므로 5절대로 하나만 고른다. (2) 분포 군집화(distributional clustering) — 활용 절 둘째 항목이다. 부모는 information-bottleneck 하나로 분명하다. 분야는 information_theory 또는 machine_learning 이고, 첫 태그를 machine_learning 으로 두면 machine-learning-overview 의 갈래에 넣는다.",
+      "createdAt": "2026-10-13T16:49:13.991Z",
+      "seq": 2234
+    },
+    {
+      "id": "665e0d29",
+      "title": "양자화의 후속 간선",
+      "priority": 11,
+      "note": "48차(2026-10-13)에 quantization 을 rate-distortion-theory 의 자식으로 썼다. 더 알아보기가 비어 있다. 후속 후보를 저장소에서 확인했다. (1) 격자 양자화와 구 채우기의 연결 — sphere-packing 이 이미 있고(error-correcting-codes 의 자식) 성질 절 마지막 문단이 '남은 0.254 비트는 차원을 올려야 줄고 격자의 공간 채우기 효율이 그 양을 정한다' 고 적는다. quantization -> sphere-packing 간선을 그을지 판단이 필요하다. sphere-packing 의 부모가 지금 몇 개인지와 5절의 '4개 이상이면 다른 부모의 조상인 것을 뺀다' 를 먼저 본다. (2) k 평균 군집화 — ls docs | grep -iE 'k-means|kmeans|clustering' 가 빈 출력이다. Lloyd 반복 절이 '제곱 왜곡과 유한 표본에서 이 반복은 k 평균 군집화와 같은 절차다' 로 끝나므로 부모가 quantization 으로 분명하다. 분야 첫 태그는 machine_learning 이 맞고 machine-learning-overview 의 갈래에 넣는다. (3) 벡터 양자화의 코드북 학습(LBG) — 활용 둘째 항목이다. quantization 하나를 부모로 둔다.",
+      "createdAt": "2026-10-13T16:51:56.025Z",
+      "seq": 2236
     },
     {
       "id": "09c81cac",
@@ -3746,6 +3794,22 @@
       "note": "회귀 점검. 47차(2026-10-13)에 kloosterman-sums(119줄), kuznetsov-formula(90줄), petersson-formula(86줄), cramer-conjecture(72줄), borel-cantelli(86줄) 다섯을 썼다. 같은 회차에 다섯 모두 4절 검사를 통과시켰다: 수식 여섯(이스케이프 awk, 태그 부등호, 링크 대괄호, 줄 끝 백슬래시, 밑줄, render-check), 문장형 헤딩 grep, 금지 표현과 번역체 grep, 두문자어 grep, 키릴·그리스 혼입(python), 코드블록 언어. 두문자어 오탐은 수식 안 연산자 이름(\\mathrm{SL}, \\mathrm{SU})과 각주 논문 제목의 로마 숫자 II 뿐이다. 다음 회차에 다섯을 통독하며 볼 것 셋. (1) 직관 절 문단 수. kloosterman-sums 와 kuznetsov-formula 와 petersson-formula 는 두 문단이고 cramer-conjecture 와 borel-cantelli 는 세 문단이다(4절은 두 문단, 큐 08e59419 가 모범 예와의 어긋남으로 독자 판단 대기 중이라 세 문단을 그대로 두었다). (2) 세 공식 문서(kloosterman-sums, kuznetsov-formula, petersson-formula)의 '## 두 방향' 과 '## 역방향의 쓰임' 과 '## Kloosterman 합의 합' 이 같은 내용을 겹쳐 쓰는지. (3) petersson-formula 의 Poincaré 급수 정의와 kuznetsov-formula 직관 절의 Poincaré 급수 서술이 어긋나지 않는지.",
       "createdAt": "2026-10-13T09:01:22.333Z",
       "seq": 2221
+    },
+    {
+      "id": "71ddeede",
+      "title": "상호정보량 분할 조건의 재점검",
+      "priority": 9,
+      "note": "큐 fb947ff9 가 mutual-information 분할 조건으로 '조건부 상호정보량, 데이터 처리 부등식, 채널 용량, InfoNCE 를 실제로 써서 상호정보량 쪽이 독자적인 정의·성질·활용을 갖출 때' 를 들었다. 48차(2026-10-13)에 rate-distortion-theory 를 쓰면서 kl-divergence 를 다시 봤다. 193줄이고 상호정보량 절이 45, 59, 118, 136, 164 줄에 흩어져 있다(정의, 조건부 상호정보량, 성질, 조건부와의 대소, 활용). 데이터 처리 부등식은 79줄 따름정리에 있다. 분할 조건 가운데 채널 용량과 InfoNCE 만 남았고, 채널 용량은 channel-coding 이 다루므로 kl-divergence 쪽에 새로 쓸 것은 InfoNCE 뿐이다. 지금 분할하면 kl-divergence 가 90줄 아래로 줄고 양쪽이 다 얇아지므로 48차에도 분할하지 않았다. 재점검 시점은 InfoNCE 나 정보 병목 문서가 생겨 상호정보량의 변분 하한을 실제로 쓸 때다.",
+      "createdAt": "2026-10-13T16:45:33.866Z",
+      "seq": 2233
+    },
+    {
+      "id": "f8ec7d11",
+      "title": "48차 새 문서 다섯의 문체 회귀 점검",
+      "priority": 9,
+      "note": "48차(2026-10-13)에 손실 압축 축을 다섯 문서로 세웠다. rate-distortion-theory(율왜곡 이론, source-coding 과 kl-divergence 의 자식), quantization(양자화, rate-distortion-theory 의 자식), information-bottleneck(정보 병목, rate-distortion-theory 의 자식), k-means(k 평균 군집화, quantization 의 자식), mutual-information-estimation(상호정보량 추정, kl-divergence 의 자식). 다섯 다 커밋 전에 4절 검사(이스케이프 awk, 태그 부등호, 링크 대괄호, 줄 끝 백슬래시, 밑줄, render-check)와 문장형 헤딩 grep, 비유 금지 grep, 금지 매크로 grep, 금지 표현 grep, 글자 연산자 검사, 혼동 유니코드 검사, 두문자어 첫 등장 검사를 통과했고 본문 H1 이 다섯 절 순서로 들어 있다. 다음 회차에 같은 검사를 다시 돌려 회귀가 없는지 본다. 특히 볼 곳 둘. (1) 직관 절이 네 문단이다. 4절은 두 문단을 넘기지 않는다고 적고 모범 예는 네 문단이라 어긋나 있다(큐 08e59419 가 독자 판단 대기). 판단이 정해지면 다섯 문서의 직관을 함께 고친다. (2) 다섯 문서 모두 각주로 출처를 달았다. Cover-Thomas, Tishby-Pereira-Bialek, Gersho-Gray, Aloise 외, Arthur-Vassilvitskii, Belghazi 외, van den Oord 외, McAllester-Stratos 다. 각주 번호와 본문 참조의 정합을 다시 본다.",
+      "createdAt": "2026-10-13T16:59:28.507Z",
+      "seq": 2238
     },
     {
       "id": "a6985bd5",
