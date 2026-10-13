@@ -175,6 +175,10 @@ $$
 
 ## 더 알아보기
 
+### 부호화
+
+- [율왜곡 이론](rate-distortion-theory.md)
+
 ### 추정과 모형 비교
 
 - [Fisher 정보](fisher-information.md)
