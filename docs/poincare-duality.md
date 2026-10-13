@@ -83,5 +83,6 @@ $M$ 이 $4$ 차원이면 $k=2$ 에서 이 쌍이 $H^2(M;\mathbb Z)$ 위의 대�
 ## 더 알아보기
 
 - [교차형식](intersection-form.md)
+- [수술 이론](surgery-theory.md)
 
 #algebraic_topology #topology #differential_geometry

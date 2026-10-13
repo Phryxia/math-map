@@ -59,6 +59,7 @@ graph TD
 - [교차형식](intersection-form.md): 4 차원 다양체의 단모듈러 대칭형식, Rokhlin 과 Freedman 과 Donaldson 의 정리
 - [de Rham 코호몰로지](de-rham-cohomology.md) → [Hodge 이론](hodge-theory.md) → [Kähler 다양체](kahler-manifolds.md), [지표 정리](index-theorem.md)
 - [Reidemeister 비틀림](reidemeister-torsion.md) → [s-코보디즘 정리](s-cobordism.md): 단순 호모토피와 고차원 분류
+- [수술 이론](surgery-theory.md): 손잡이 교체로 호모토피 핵을 없애기, Wall 군과 수술 완전열
 ## 호모토피론의 도구
 
 - [단순 집합](simplicial-sets.md): 차수마다 단체의 집합과 면 사상을 적은 자료, 기하적 실현이 CW 복합체를 준다
