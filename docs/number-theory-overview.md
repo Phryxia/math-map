@@ -78,6 +78,7 @@ graph TD
 
 - [Dedekind 정역](dedekind-domains.md) → [대수적 수체](algebraic-number-fields.md)
 - [대수적 수체](algebraic-number-fields.md) → [Dirichlet 단수 정리](dirichlet-unit-theorem.md): 단수군의 계수와 조절자, 류수 공식
+- [이진 이차형식](binary-quadratic-forms.md): 판별식을 고정한 동치류의 축약 대표와 Gauss 합성이 주는 유형군, 이데알 류군과의 동형
 - [류수 1 문제](class-number-one.md): 소인수분해가 유일한 허이차체 아홉 개, 류수 공식의 비유효성과 특이 모듈러 값으로 얻은 상한
 - [p 진수](p-adic-numbers.md) → [Hensel 보조정리](hensel-lemma.md), [Newton 다각형](newton-polygon.md), [아델](adeles.md)
 - [유체론](class-field-theory.md) → [국소 유체론](local-class-field-theory.md), [Chebotarev 밀도 정리](chebotarev.md), [복소 곱셈](complex-multiplication.md)
