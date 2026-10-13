@@ -70,13 +70,7 @@ $\mathcal G\_{24}$ 를 보존하는 $24$ 개 좌표의 순열군이 $M\_{24}$ �
 
 ## Leech 격자
 
-$\mathcal G\_{24}$ 에서 $24$ 차원 [격자](lattices.md)를 만드는 방법이 Construction B 다.
-
-$$
-\Lambda=\frac1{\sqrt8}\left\lbrace x\in\mathbb Z^{24}:x\bmod2\in\mathcal G\_{24},\ \textstyle\sum x\_i\equiv0\ (\mathrm{mod}\ 4)\right\rbrace
-$$
-
-에 보정 벡터를 더한 것이 **Leech 격자**다. 최소거리 $8$ 이 최소노름 $4$ 로 번역되고 노름 $2$ 인 벡터가 없다.
+$\mathcal G\_{24}$ 로 $\mathbb Z^{24}$ 의 좌표에 조건을 걸어 얻는 $24$ 차원 [격자](lattices.md)가 **Leech 격자**다. 부호의 최소거리 $8$ 이 최소노름 $4$ 로 번역되고 노름 $2$ 인 벡터가 없다.
 
 # 활용
 
@@ -97,5 +91,6 @@ $$
 ## 더 알아보기
 
 - [Mathieu 군](mathieu-groups.md)
+- [Leech 격자](leech-lattice.md)
 
 #information_theory #combinatorics #field_theory #group_theory

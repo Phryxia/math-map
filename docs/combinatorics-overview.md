@@ -99,6 +99,7 @@ graph TD
 
 - [구 채우기](sphere-packing.md) → [Niemeier 격자](niemeier-lattices.md) → [Schellekens 목록](schellekens-list.md)
 - [Mathieu 군](mathieu-groups.md): 부호와 산재 단순군
+- [Leech 격자](leech-lattice.md): Golay 부호로 좌표를 걸러 얻는 24 차원 격자, 접촉수 196560 과 Conway 군, 깊은 구멍과 Niemeier 격자 23 개의 대응
 - [theta 급수](theta-series.md), [Siegel–Weil 공식](siegel-weil.md): 격자 벡터 세기와 모듈러 형식
 - [Mock 모듈러 형식](mock-modular-forms.md), [Dyson 의 rank 와 crank](dyson-rank-crank.md): 분할수의 합동
 
