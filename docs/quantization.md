@@ -102,6 +102,6 @@ Gauss 정보원의 율왜곡 함수는 $D=\sigma^2 2^{-2R}$ 이다. $R=1$ 비트
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [k 평균 군집화](k-means.md)
 
 #information_theory #computation #probability
