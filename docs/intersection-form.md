@@ -75,6 +75,6 @@ $Q\_{M\char35{}N}=Q_M\oplus Q_N$ 이다. 연결합이 두 다양체의 둘째 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Donaldson 불변량](donaldson-invariants.md)
 
 #algebraic_topology #topology #differential_geometry #linear_algebra
