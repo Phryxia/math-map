@@ -112,6 +112,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Sidorenko 추측](sidorenko-conjecture.md)
 
 #combinatorics #graph_theory #measure_theory
