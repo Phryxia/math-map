@@ -48,6 +48,7 @@ graph TD
 - [지표표](character-table.md): 기약지표를 켤레류별로 적은 정사각 배열, 두 직교관계로 표를 채우는 절차
 - [군의 표시](group-presentations.md): 생성원과 관계자로 군을 적는 방법, 낱말 문제
 - [Coxeter 군](coxeter-groups.md): 반사로 생성된 군의 표시, 길이 함수와 Bruhat 순서
+- [쌍곡군](hyperbolic-groups.md): Cayley 그래프의 측지삼각형이 일정한 폭 안에서 얇은 군, 낱말 문제의 선형 시간 해법
 - [Mathieu 군](mathieu-groups.md), [땋임군](braid-groups.md): 조합론·위상과 맞닿은 군
 
 ## 환과 아이디얼
