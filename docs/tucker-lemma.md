@@ -66,6 +66,6 @@ $T$ 의 정점 집합 $V$ 에서 이름표 $\lambda\colon V\to\lbrace\pm1,\dots,
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [목걸이 분할 정리](necklace-splitting.md)
 
 #combinatorics #algebraic_topology #topology
