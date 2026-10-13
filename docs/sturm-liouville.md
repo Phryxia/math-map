@@ -48,7 +48,7 @@ $$
 
 을 붙인 것을 **정규 Sturm–Liouville 문제**라 한다. 여기서 $(\alpha_1,\alpha_2)$ 와 $(\beta_1,\beta_2)$ 는 각각 영벡터가 아니다. 자명하지 않은 해 $u$ 가 있는 $\lambda$ 를 **고윳값**, 그 해를 **고유함수**라 한다.
 
-$p$ 나 $w$ 가 끝점에서 $0$ 이 되거나 구간이 무한하면 **특이 Sturm–Liouville 문제**라 한다.
+$p$ 나 $w$ 가 끝점에서 $0$ 이 되거나 구간이 무한하면 **특이 Sturm–Liouville 문제**라 한다. 특이 끝점에 경계조건이 필요한지는 [극한점·극한원 분류](limit-point-limit-circle.md)로 판정한다.
 
 ## 가중 내적
 
@@ -118,6 +118,7 @@ $$
 
 ## 더 알아보기
 
+- [극한점·극한원 분류](limit-point-limit-circle.md)
 - [역산란 변환](inverse-scattering-transform.md)
 
 #analysis #functional_analysis
