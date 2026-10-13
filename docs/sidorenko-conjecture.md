@@ -119,6 +119,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [공통 그래프](common-graphs.md)
 
 #combinatorics #graph_theory #analysis
