@@ -40,6 +40,7 @@ graph TD
 ## 호모토피와 호몰로지
 
 - [기본군](fundamental-group.md) → [덮개공간](covering-spaces.md): 고리와 그 들어 올림
+- [기본군](fundamental-group.md) → [Seifert–van Kampen 정리](seifert-van-kampen.md): 열린 두 조각으로 기본군을 계산하는 정리, 자유곱의 몫과 세포 부착
 - [기본군](fundamental-group.md) → [호모토피군](homotopy-groups.md): 고리를 고차원 구면으로 올린 불변량
 - [호모토피군](homotopy-groups.md) → [Freudenthal 매달기 정리](freudenthal-suspension.md): 매달기가 호모토피군의 동형을 주는 차수 범위, 안정 호모토피군
 - [단체 호몰로지](homology.md) → [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology): 원판을 테두리째 붙여 쌓은 공간, 세포마다 사슬군의 생성원 하나
