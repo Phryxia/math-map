@@ -79,6 +79,7 @@ graph TD
 - [사영가군](projective-modules.md): 들어 올리기 성질, 국소적 자유성, Quillen–Suslin 정리
 - [단사가군](injective-modules.md): 부분가군에서의 확장 성질, Baer 판정, 나눗셈 가능 아벨군과 단사 포락
 - [대수적 K 이론](algebraic-k-theory.md): 환의 사영가군에서 나오는 고차 불변량
+- [Bloch 군](bloch-group.md): 다섯 항 관계로 나눈 군, $K_3$ 의 표현과 Borel 조절자
 
 ## 대수다양체
 
