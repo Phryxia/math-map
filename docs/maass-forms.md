@@ -128,7 +128,7 @@ Kim–Sarnak 의 $7/64$ 는 $\mathrm{Sym}^4$ 함수성에서 나왔다[^2]. 함�
 
 ## 해석적 정수론의 도구
 
-Maass 형식은 그 자체로 목적이면서 동시에 도구다. 산술 함수의 합을 다룰 때 자기동형 형식의 스펙트럼으로 전개하는 방법(Kuznetsov 공식)이 있고, 거기에는 정칙 형식뿐 아니라 Maass 형식과 Eisenstein 급수가 **모두** 나타난다. Kloosterman 합의 평균 거동, 첨점형식 계수의 부분합, 준위 측면의 아족 평균 같은 결과들이 이 전개에서 나온다. 예외 고윳값에 대한 하한이 필요한 것도 바로 이 스펙트럼 합에서 예외항이 주항을 압도하지 못하게 하기 위해서다.
+Maass 형식은 그 자체로 목적이면서 동시에 도구다. 산술 함수의 합을 다룰 때 자기동형 형식의 스펙트럼으로 전개하는 방법([Kuznetsov 공식](kuznetsov-formula.md))이 있고, 거기에는 정칙 형식뿐 아니라 Maass 형식과 Eisenstein 급수가 **모두** 나타난다. Kloosterman 합의 평균 거동, 첨점형식 계수의 부분합, 준위 측면의 아족 평균 같은 결과들이 이 전개에서 나온다. 예외 고윳값에 대한 하한이 필요한 것도 바로 이 스펙트럼 합에서 예외항이 주항을 압도하지 못하게 하기 위해서다.
 
 ## 산술 양자 혼돈
 
@@ -166,5 +166,6 @@ $\Gamma\backslash\mathbb H$ 는 음곡률 곡면이므로 측지선 흐름이 �
 ## 더 알아보기
 
 - [Selberg 대각합 공식](selberg-trace-formula.md)
+- [Kuznetsov 공식](kuznetsov-formula.md)
 
 #number_theory #analysis #complex_analysis #theorem

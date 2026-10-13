@@ -90,7 +90,7 @@ $p$ 를 고정하고 $a$ 를 $1$ 부터 $p-1$ 까지 움직여 얻은 각 $\thet
 
 ## Kloosterman 합의 합
 
-Weil 상계를 항마다 적용하면 $\sum_{c\le C}c^{-1}\vert K(1,n;c)\vert$ 가 $C^{1/2}$ 크기로 끝난다. Kuznetsov 공식은 이 합을 [Maass 형식](maass-forms.md)의 Fourier 계수와 Eisenstein 쪽 적분으로 바꾸어 항 사이의 상쇄를 드러낸다[^5]. Linnik 추측은 $\sum_{c\le C}c^{-1}K(1,n;c)$ 가 모든 $\varepsilon\gt 0$ 에서 $O(C^\varepsilon)$ 라고 진술한다.
+Weil 상계를 항마다 적용하면 $\sum_{c\le C}c^{-1}\vert K(1,n;c)\vert$ 가 $C^{1/2}$ 크기로 끝난다. [Kuznetsov 공식](kuznetsov-formula.md)은 이 합을 [Maass 형식](maass-forms.md)의 Fourier 계수와 Eisenstein 쪽 적분으로 바꾸어 항 사이의 상쇄를 드러낸다[^5]. Linnik 추측은 $\sum_{c\le C}c^{-1}K(1,n;c)$ 가 모든 $\varepsilon\gt 0$ 에서 $O(C^\varepsilon)$ 라고 진술한다.
 
 # 활용
 
@@ -114,6 +114,6 @@ Weil 상계를 항마다 적용하면 $\sum_{c\le C}c^{-1}\vert K(1,n;c)\vert$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kuznetsov 공식](kuznetsov-formula.md)
 
 #number_theory #analysis #complex_analysis
