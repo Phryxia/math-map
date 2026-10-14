@@ -74,6 +74,6 @@ $\mathcal T_g$ 는 $\mathbb R^{6g-6}$ 과 위상동형이고 작용은 고유 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gromov–Witten 불변량](gromov-witten-invariants.md)
 
 #complex_analysis #algebra #number_theory #topology

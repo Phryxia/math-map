@@ -60,7 +60,7 @@ $X^s$ 위에서는 모든 궤도가 닫혀 있고 안정화군이 유한하다. 
 
 ## 심플렉틱 몫과의 대응
 
-$X$ 가 Kähler 다양체이고 $G$ 의 최대 콤팩트 부분군 $K$ 가 모멘트 사상 $\mu\colon X\to\mathfrak k^\ast$ 를 갖는 해밀턴 작용을 하면 두 몫이 일치한다.
+$X$ 가 Kähler 다양체이고 $G$ 의 최대 콤팩트 부분군 $K$ 가 [모멘트 사상](moment-map.md) $\mu\colon X\to\mathfrak k^\ast$ 를 갖는 해밀턴 작용을 하면 두 몫이 일치한다.
 
 $$X^{ss}/\negthinspace\negthinspace/G\cong \mu^{-1}(0)/K$$
 

@@ -91,6 +91,7 @@ graph TD
 - [Hilbert 스킴](hilbert-scheme.md): 사영공간 안에서 Hilbert 다항식이 정해진 닫힌 부분스킴의 모듈라이, 접공간이 법층의 절단이라는 점, Hilbert-Chow 사상
 - [기하 불변량 이론](geometric-invariant-theory.md): 환원적 군의 작용에 따른 몫, 불변식환의 유한생성과 안정성 조건, Hilbert-Mumford 판정
 - [벡터다발의 모듈라이 공간](moduli-of-vector-bundles.md): 곡선 위의 안정 벡터다발의 모듈라이, 기울기 조건과 S-동치, Narasimhan-Seshadri 대응
+- [Gromov–Witten 불변량](gromov-witten-invariants.md): 안정 사상의 모듈라이 위의 교차수, 가상 기본류와 변형 불변성, 유리곡선 셈의 점화식
 
 ## 체와 Galois 이론
 

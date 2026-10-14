@@ -115,5 +115,6 @@ $\mathbb R^{2n}$ 의 표준 형식에서, 반지름 $r$ 인 공을 반지름 $R$
 - [Lagrangian 부분다양체](lagrangian-submanifolds.md)
 - [모멘트 사상](moment-map.md)
 - [Kähler 다양체](kahler-manifolds.md)
+- [Gromov–Witten 불변량](gromov-witten-invariants.md)
 
 #differential_geometry #topology #analysis
