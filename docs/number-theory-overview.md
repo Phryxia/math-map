@@ -109,6 +109,7 @@ graph TD
 - [Bernoulli 수](bernoulli-numbers.md) → [Stickelberger 원소](stickelberger.md)
 - [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md): Bernoulli 수의 Kummer 합동으로 $\mathbb Z_p$ 위에 이은 zeta 함수, Iwasawa 대수의 멱급수 표현과 Leopoldt 의 $s=1$ 공식
 - [다중 zeta 값](multiple-zeta-values.md): 순서 조건을 붙인 다중 급수, 스터플·셔플 두 곱셈 규칙과 이중 셔플 관계
+- [p 진 다중 zeta 값](p-adic-multiple-zeta-values.md): 같은 단어의 반복 Coleman 적분, 접기저점 정규화와 p 진 Drinfeld 결합자
 - [Tate 의 논문](tate-thesis.md): $\zeta$ 함수의 아델적 증명
 
 ## 모듈러 형식
