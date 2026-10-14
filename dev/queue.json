@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-14T05:04:59.574Z",
-  "nextSeq": 2272,
+  "savedAt": "2026-10-14T09:01:14.481Z",
+  "nextSeq": 2287,
   "items": [
     {
       "id": "ae0b674e",
@@ -1194,6 +1194,54 @@
       "note": "49차 회차(2026-10-14) 조사 결과. 큐 493a738d 가 'Perron 공식과 명시적 공식' 신설을 요청하는데, 그 note 의 내용이 이미 두 문서에 있다. (1) Perron 공식의 진술($\\sum\\_{n\\le x}a_n=\\frac{1}{2\\pi i}\\int\\_{c-i\\infty}^{c+i\\infty}D(s)x^s/s\\thinspace ds$)과 적분선을 왼쪽으로 옮겨 극마다 유수를 거두는 설명은 dirichlet-series '## Perron 공식'(85-95줄)이 담는다. (2) Riemann-von Mangoldt 의 명시 공식($\\psi(x)=x-\\sum\\_\\rho x^\\rho/\\rho-\\ln(2\\pi)-\\frac12\\ln(1-x^{-2})$)과 Perron 공식으로 $-\\zeta'/\\zeta$ 의 복소적분을 세워 유수 정리를 쓰는 유도, 높이 $T$ 에서 자른 판본의 오차항 $O(x(\\ln x)^2/T)$ 까지 prime-number-theorem '## 명시 공식'(57-65줄)과 '## 증명의 핵심 단계'(71줄)가 담는다. 곧 note 가 빈자리로 든 '절단된 판본의 오차항' 도 이미 있다. 전용 문서가 더할 고유 내용으로 남는 것은 셋이다. (a) Perron 공식 자체의 증명(적분선을 유한 높이에서 자르고 사각형 윤곽으로 오차를 재는 계산), (b) Weil 의 명시 공식(시험함수와 그 Mellin 변환의 쌍대성, 아르키메데스 항), (c) Riemann 의 $J(x)$ 공식과 Mobius 역변환으로 $\\pi(x)$ 를 적는 것. (b) 는 low-lying-zeros 의 '## 시험함수의 지지 범위' 가 쓰는 꼴이므로 별도 문서가 될 만하고 (a) 와 (c) 는 각각 dirichlet-series 와 prime-number-theorem 의 보강이 맞다. 그러므로 493a738d 는 'Weil 의 명시 공식' 으로 범위를 좁혀 다시 꺼내는 것이 낫다. 부모 후보는 dirichlet-series 와 riemann-zeta.",
       "createdAt": "2026-10-14T04:47:34.749Z",
       "seq": 2266
+    },
+    {
+      "id": "b6567fc2",
+      "title": "laver-forcing 의 '적당성' 헤딩과 저장소의 proper 표기 통일",
+      "priority": 20,
+      "note": "용어 표기. 50차 회차에 proper-forcing 을 쓰면서 저장소의 proper 표기가 셋으로 갈린 것을 확인했다. (1) iterated-forcing 과 laver-forcing 본문은 'proper' 와 'properness' 를 원어로 쓴다. (2) laver-forcing 의 헤딩은 '## 적당성' 이다. (3) martins-axiom 은 '고유 강제 공리는 고유 순서에 대한 MA(aleph_1)' 이라고 번역해 썼다. 50차에 (3)을 'proper 강제 공리는 proper 순서에 대한' 으로 고치고 proper-forcing 으로 링크했고, 새 문서의 제목은 'Proper 강제법' 으로 원어를 남겼다(4절 두문자어 규칙의 '굳은 한국어 용어가 없으면 원어를 그대로 쓴다'). 남은 것은 laver-forcing 의 '## 적당성' 헤딩 하나다. 'Properness' 로 바꾸는 것이 통일에 맞으나 다른 세션이 붙인 헤딩이라 임의로 고치지 않았다. 독자 판단이 필요하거나, 통일 방침이 정해지면 그 헤딩만 고치면 된다.",
+      "createdAt": "2026-10-14T08:44:56.900Z",
+      "seq": 2275
+    },
+    {
+      "id": "3aef247f",
+      "title": "정상집합과 닫힌 비유계 집합을 별도 문서로 분리할지 판단",
+      "priority": 20,
+      "note": "집합론. 중복 확인 결과를 남긴다. proper-forcing 의 정상집합 보존 절을 쓰면서 정상집합을 가리킬 문서를 찾았으나 전용 문서가 없다. large-cardinal-hierarchy 의 '## 닫힌 비유계 집합과 정상집합' 절이 정칙 비가산 기수 위의 닫힘, 비유계, 정상집합을 정의하고 Mahlo 기수까지 쓴다(정상집합 언급 5 곳). 저장소 확인: stationary 로 시작하는 문서는 stationary-phase(점근 해석) 하나뿐이고 club 문서는 없다. 분리하면 proper-forcing 의 정상집합 보존 절, martins-axiom 의 Martin 의 최대 문장, large-cardinal-hierarchy 의 Mahlo 절이 공통 부모를 갖는다. 8절 기준으로는 아직 분리 대상이 아니다(large-cardinal-hierarchy 가 1000줄 미만). Fodor 보조정리와 분할 정리를 함께 담을 만큼 내용이 모이면 그때 떼어낸다.",
+      "createdAt": "2026-10-14T08:44:57.053Z",
+      "seq": 2276
+    },
+    {
+      "id": "ceca75d6",
+      "title": "Perron 공식과 명시적 공식을 별도 문서로 만들지 않은 판정",
+      "priority": 20,
+      "note": "2026-10-14 50차 회차 판정: 새 문서를 만들지 않는다. 이 항목은 Perron 공식의 절단 판본과 Riemann-von Mangoldt 명시적 공식을 담은 문서를 요청했으나 두 내용이 이미 두 문서에 나뉘어 있다. prime-number-theorem(126줄)의 '## 명시 공식' 절이 psi(x) 를 zeta 의 비자명 영점 합으로 적고 x^rho 의 진폭과 진동수를 해설하며, 같은 문서의 '## 증명의 핵심 단계' 가 높이 T 에서 자른 공식의 오차항 O(x(log x)^2/T) 와 무영점 영역의 역할을 적는다. dirichlet-series 의 '## Perron 공식' 절이 완전 적분 꼴과 적분선 이동을 적는다. 새 문서는 두 절의 중복이 된다. 요청의 나머지(절단 판본의 오차항과 그 증명 요지)는 같은 회차에 dirichlet-series 에 '## 절단된 Perron 공식' 절로 보강했다. Montgomery-Vaughan 5.1절을 각주로 달았고, von Mangoldt 함수를 넣으면 prime-number-theorem 의 오차항이 나온다는 연결을 본문 링크로 적었다. 분할 후보로도 아직 아니다. 두 문서가 126줄과 150줄이고 8절 기준은 1000줄이다.",
+      "createdAt": "2026-10-14T08:53:39.269Z",
+      "seq": 2280
+    },
+    {
+      "id": "3a9cc69a",
+      "title": "비유 금지 grep 의 용어 오탐 네 건 (50차)",
+      "priority": 20,
+      "note": "4절 비유 금지 grep 을 docs 전수로 돌린 결과를 남긴다. 50차 회차에 걸린 것은 네 자리이고 모두 용어의 일부여서 4절의 예외에 든다. (1) elliptic-curves 118줄 'Montgomery 사다리'(Montgomery ladder, 상수 시간 스칼라 곱 구현). (2) lie-algebras 162줄 '사다리 연산자'(ladder operator, 각운동량 대수의 E,F). (3) mandelbrot-set 55줄 '심장꼴'(cardioid, 주기 1 성분의 모양). (4) post-quantum-cryptography 126줄 '함정문'(trapdoor, 짧은 기저). 고칠 것이 없다. 기존 항목 dc8b9099 가 세 건을 같은 판정으로 기록해 두었고 여기에 네 건의 현재 줄 번호가 더해진다. 다음 회차에 이 grep 이 같은 네 자리만 내놓으면 전수가 깨끗한 것으로 본다.",
+      "createdAt": "2026-10-14T08:53:39.435Z",
+      "seq": 2281
+    },
+    {
+      "id": "b0c998ef",
+      "title": "4절 문체·번역체 grep 전수 결과 (50차)",
+      "priority": 20,
+      "note": "50차 회차에 4절의 문체 grep 을 docs 878 문서 전수로 돌린 결과다. 실제 위반 0 건이고 걸린 것은 전부 기존 오탐 항목에 해당한다. (1) 영문 관용구 금지 목록 가운데 '본질적으로' 는 gartner-ellis 41 줄과 53 줄 둘뿐이고 'essentially smooth' 의 정식 번역인 '본질적으로 매끄럽다' 이므로 용어의 일부다. '흥미롭게도', '놀랍게도', '놀랍지 않', '우연이 아니', '이것이 바로', '다름 아니' 는 0 건이다. (2) '지나지 않' 은 crossing-number-inequality, entropy-solutions, fatou-components, finite-projective-planes, fredholm-operators(2), necklace-splitting, residue-theorem 에 걸리고 기존 항목 b2baa2e9 가 오탐으로 판정했다. (3) '정리하면' 은 continued-fractions 71 등 열 곳 남짓이고 기존 항목 d7db456a 의 판정 대상이다. (4) '어진다' 는 기존 항목 49d7bd05 의 판정 대상이다. (5) 코드블록 언어, 언어 없는 코드블록, operatorname 류 매크로, 방향형 절 이름, 뭉뚱그린 열림 문장, 태그가 하나뿐인 문서, 구형 '## 정의' 구조 문서는 모두 0 건이다. 다음 회차에는 이 여섯이 0 건인 것을 전제로 보고 (1)~(4)의 오탐만 확인하면 된다.",
+      "createdAt": "2026-10-14T08:56:42.196Z",
+      "seq": 2283
+    },
+    {
+      "id": "b9d2aa04",
+      "title": "50차 새 문서 둘을 개관 지도에 넣지 않은 판정",
+      "priority": 20,
+      "note": "독자 판단 대기 항목 1e8d99a8 과 ee4586ed 에 이어지는 기록이다. 50차 회차(2026-10-14)에 proper-forcing 과 p-adic-multiple-zeta-values 둘을 썼고 foundations-overview 와 number-theory-overview 의 '# 갈래' 에는 각각 한 줄씩 더했으나 '# 지도' mermaid 에는 넣지 않았다. 두 개관의 지도가 이미 4.5절의 '핵심 문서 12~20개' 를 넘기 때문이다. 앞선 회차들과 같은 판정이고, 어느 노드를 뺄지는 독자의 판정이 필요하다. 이 회차에 보강한 세 문서(dirichlet-series, finite-element-method, gradient-descent, martins-axiom)는 간선을 바꾸지 않았으므로 지도와 어긋나지 않는다.",
+      "createdAt": "2026-10-14T09:00:27.643Z",
+      "seq": 2286
     },
     {
       "id": "410fd79d",
@@ -2948,38 +2996,6 @@
       "seq": 1721
     },
     {
-      "id": "67f0e6b4",
-      "title": "유한요소법 수렴률의 L^2 추정과 Aubin-Nitsche 트릭",
-      "priority": 10,
-      "note": "finite-element-method 보강 후보. 33차 문서는 H^1 노름의 O(h^k) 만 담았다. L^2 노름에서 한 차수 더 나오는 O(h^{k+1}) 추정은 쌍대 문제를 세우고 그 해의 정칙성을 쓰는 Aubin-Nitsche 논법이라 elliptic-regularity 와 dual-space 를 함께 쓴다. 성질 절의 '수렴률' 뒤에 한 절로 들어가는 것이 맞고, 별도 문서로 떼면 1000줄 기준에 한참 못 미친다. 출처는 Brenner-Scott 3판 5.4 절.",
-      "createdAt": "2026-10-05T16:42:37.835Z",
-      "seq": 1729
-    },
-    {
-      "id": "493a738d",
-      "title": "Perron 공식과 명시적 공식",
-      "priority": 10,
-      "note": "number_theory, complex_analysis. 이번 회차에 쓴 dirichlet-series 가 Perron 공식을 진술만 하고 절단된 판본의 오차항과 적분선 이동의 실제 계산을 다루지 않는다. Riemann-von Mangoldt 의 명시적 공식(psi(x) 를 zeta 의 영점 합으로 적는 것)이 같은 문서에 들어갈 수 있다. 부모는 dirichlet-series 와 riemann-zeta",
-      "createdAt": "2026-10-06T04:58:30.797Z",
-      "seq": 1768
-    },
-    {
-      "id": "621c77df",
-      "title": "p 진 다중 zeta 값",
-      "priority": 10,
-      "note": "정수론. 신규 주제. multiple-zeta-values 가 생겼으므로 이제 부모가 둘 선다. coleman-integration(활용 절 넷째 항목이 이 값을 언급한다)과 multiple-zeta-values 다. 쓸 내용: 사영직선에서 0,1,infinity 를 뺀 공간 위의 Coleman 반복 적분, 복소수 쪽 단어 표현과의 대응, Frobenius 불변 경로와 p 진 다중 로그, 복소수 쪽 이중 셔플 관계가 p 진 쪽에서도 성립하는 범위. 간선 추가 전 check-cycle 로 coleman-integration 과 multiple-zeta-values 가 서로 조상이 아닌지 확인할 것",
-      "createdAt": "2026-10-06T16:50:11.058Z",
-      "seq": 1810
-    },
-    {
-      "id": "eeb33804",
-      "title": "proper 강제법 문서",
-      "priority": 10,
-      "note": "집합론. 신규 주제. iterated-forcing(37차)이 properness 를 이름만 쓰고 정의하지 않았다. 쓸 내용: 가산 기본 모형 M 에 대한 (M,P) 일반 조건, proper 가 ccc 와 적정 닫힘을 함께 포함하는 것, 정상집합 보존과의 동치, Laver 와 Mathias 순서가 proper 인 예. 부모는 iterated-forcing 과 forcing 가운데 하나. 간선 추가 전 borel-conjecture 와의 조상관계를 check-cycle 로 확인할 것",
-      "createdAt": "2026-10-06T16:55:35.235Z",
-      "seq": 1812
-    },
-    {
       "id": "a5b5af7f",
       "title": "circle-method 의 후속 간선",
       "priority": 10,
@@ -3074,14 +3090,6 @@
       "note": "39차에 infinity-categories 의 활용 절에서 유도 범주의 정보 손실을 한 줄로만 적었다. 고깔과 올이 보편성질로 정의되는 자리를 제대로 쓸 문서가 필요하다. 제목은 4절 제목 규칙대로 하나로 좁힌다(stable-infinity-categories 또는 derived-categories). 부모는 infinity-categories. 분야 #category_theory #algebra.",
       "createdAt": "2026-10-08T12:49:03.180Z",
       "seq": 1907
-    },
-    {
-      "id": "28dc15db",
-      "title": "준볼록 최적화의 안장점 탈출 조건",
-      "priority": 10,
-      "note": "39차에 bd4c6317 '준볼록 최적화와 국소 최적화' 를 꺼내 4절 제목 규칙대로 준볼록 함수 하나로 좁혀 quasiconvex-functions 를 썼다. 원 메모의 다른 반쪽인 '비볼록 문제에서 안장점을 벗어나는 조건'(엄격 안장점 성질, 1차 방법이 안장점을 탈출한다는 정리)은 쓰지 않았다. 출처가 필요한 주장이 많아 각주를 달 논문을 먼저 확인해야 한다(Ge-Huang-Jin-Yuan 2015, Jin 등 2017 계열). 부모는 gradient-descent 와 convexity, 분야 #optimization #machine_learning.",
-      "createdAt": "2026-10-08T12:52:17.259Z",
-      "seq": 1908
     },
     {
       "id": "ed26d1da",
@@ -3746,6 +3754,78 @@
       "note": "군론(#group_theory #combinatorics). 46차에 leech-lattice 를 쓰며 '## Conway 군' 절에 Co_0 의 위수, Co_1 의 단순성, Co_2 와 Co_3 가 벡터 안정자로 나오는 것, M_24 가 좌표 치환 부분군인 것만 적었다. 독립 문서라면 Co_0 가 Leech 격자 위에서 2 전이적으로 작용하는 방식, 세 단순군의 위수와 극대 부분군, 26 개 산재군 목록에서의 자리, Conway 군과 괴물군의 관계가 내용이 된다. 부모 후보는 leech-lattice 와 sporadic-groups 또는 mathieu-groups. ls docs | grep -iE 'conway|sporadic' 로 먼저 중복을 본다.",
       "createdAt": "2026-10-13T21:02:51.796Z",
       "seq": 2245
+    },
+    {
+      "id": "e5d00e6a",
+      "title": "proper-forcing 의 후속 간선",
+      "priority": 10,
+      "note": "집합론. 50차 회차(2026-10-14)에 proper-forcing(Proper 강제법, 107줄)을 새로 썼다. 부모는 iterated-forcing 하나이고 지금은 리프다. 문서 구성: 개요, 직관(Laver 강제법의 비가산 반사슬 구성으로 ccc 실패를 보이고 가산 닫힘도 안 되는 데서 일반 조건으로 간다), 정의(H(theta) 의 가산 기본 부분모형 N, (N,P) 일반 조건, proper), 성질(ccc 함의, 가산 닫힘 함의, aleph_1 보존, Shelah 의 [lambda]^omega 정상집합 보존 동치, 가산지지 반복 보존, Levy 붕괴가 proper 아닌 예), 활용 다섯. 후속 간선 후보: proper 강제 공리(PFA) 문서, Mathias 강제법, Namba 강제법. 본문에서 이름만 쓴 것은 Mathias 순서와 Namba 강제법이다.",
+      "createdAt": "2026-10-14T08:44:56.390Z",
+      "seq": 2272
+    },
+    {
+      "id": "9afb1cd3",
+      "title": "proper 강제 공리(PFA) 문서",
+      "priority": 10,
+      "note": "집합론. 신규 주제. martins-axiom 의 '## 강제 공리' 절이 PFA 를 한 문장으로만 다루고(50차에 '고유 강제 공리' 표기를 proper 로 고치고 proper-forcing 으로 링크했다), proper-forcing 의 활용 절도 한 줄이다. 저장소 확인: PFA 와 forcing-axiom 으로 시작하는 문서는 없다. 쓸 내용: proper 순서에 대한 MA(aleph_1), 초콤팩트 기수에서 오는 무모순성(Baumgartner 의 반복), PFA 가 함의하는 것(연속체가 aleph_2, Suslin 가설, aleph_1 조밀 선형순서의 동형 분류), Martin 의 최대와의 관계. 부모는 proper-forcing 과 martins-axiom 둘. 간선 추가 전 check-cycle 로 두 문서의 조상관계를 확인할 것.",
+      "createdAt": "2026-10-14T08:44:56.528Z",
+      "seq": 2273
+    },
+    {
+      "id": "c3e491c5",
+      "title": "Mathias 강제법",
+      "priority": 10,
+      "note": "집합론. 신규 주제. laver-forcing 과 proper-forcing 이 Mathias 순서를 이름만 쓴다. 저장소 확인: mathias 로 시작하는 문서는 없고 martingales, martins-axiom, martin-lof-randomness 가 이름이 비슷할 뿐이다. 쓸 내용: 조건 (s,A) 와 거의 포함 순서, Mathias 일반 실수가 Ramsey 초필터로 주어지는 것, Happy 족과 순수 결정, proper 임의 증명, Ramsey 성질과 완전 집합 성질. 부모는 proper-forcing 과 forcing 가운데 하나. 간선 추가 전 laver-forcing 과의 조상관계를 check-cycle 로 확인할 것.",
+      "createdAt": "2026-10-14T08:44:56.680Z",
+      "seq": 2274
+    },
+    {
+      "id": "5bee6c58",
+      "title": "p-adic-multiple-zeta-values 의 후속 간선",
+      "priority": 10,
+      "note": "정수론. 50차 회차(2026-10-14)에 p-adic-multiple-zeta-values(p 진 다중 zeta 값, 127줄)를 새로 썼다. 부모는 coleman-integration 과 multiple-zeta-values 둘이고 지금은 리프다. 문서 구성: 개요, 직관(급수가 p 진에서 수렴하지 않는 계산을 보이고 반복 적분 표현으로 간 뒤 경로 부재와 끝점 발산을 차례로 처리한다), 정의(X=P^1 minus {0,1,infinity}, 단어 W(s_1..s_k), 접기저점, p 진 KZ 방정식과 p 진 Drinfeld 결합자), 성질(셔플, Furusho-Jafari 의 정규화된 이중 셔플, 쌍대성, 깊이 1 과 Kubota-Leopoldt), 활용 넷. 후속 간선 후보: p 진 다중 로그 문서, Drinfeld 결합자 문서. 저장소 확인: drinfeld, associator, polylog 로 시작하는 문서는 없다.",
+      "createdAt": "2026-10-14T08:50:05.516Z",
+      "seq": 2277
+    },
+    {
+      "id": "2a52429d",
+      "title": "Drinfeld 결합자",
+      "priority": 10,
+      "note": "대수. 신규 주제. p-adic-multiple-zeta-values 의 '## p 진 Drinfeld 결합자' 절이 KZ 방정식의 두 해를 비교한 Phi 로 결합자를 정의하고 그 계수가 다중 zeta 값이라는 것만 쓴다. 저장소 확인: drinfeld, associator, knizhnik 로 시작하는 문서는 없고 quantum-groups 와 braid-groups 가 있는지는 확인할 것. 쓸 내용: 꼬임 범주의 결합 제약과 오각형·육각형 방정식, 자유 Lie 대수 위의 결합자 집합, KZ 결합자 Phi_KZ 의 계수가 다중 zeta 값인 것, Drinfeld-Kohno 정리와 양자군과의 관계, 동기 Galois 군의 작용. 부모는 multiple-zeta-values 와 braid-groups 가 후보. 간선 추가 전 check-cycle 로 확인할 것.",
+      "createdAt": "2026-10-14T08:50:05.654Z",
+      "seq": 2278
+    },
+    {
+      "id": "dd2979f2",
+      "title": "p 진 다중 로그",
+      "priority": 10,
+      "note": "정수론. 신규 주제. p-adic-multiple-zeta-values 의 활용 절(Chabauty-Kim 항목)과 coleman-integration 이 p 진 다중 로그를 이름만 쓴다. 저장소 확인: polylog 로 시작하는 문서는 없다. 쓸 내용: Coleman 의 p 진 다중 로그 Li_k 와 분기 선택, Frobenius 불변 경로에서 오는 유일성, 함수방정식(Kummer 관계)의 p 진 판본, 단일값 군의 좌표로서의 역할, 특수값과 p 진 다중 zeta 값의 관계. 부모는 coleman-integration 과 p-adic-multiple-zeta-values 가 후보. 간선 추가 전 check-cycle 로 두 문서의 조상관계를 확인할 것.",
+      "createdAt": "2026-10-14T08:50:05.822Z",
+      "seq": 2279
+    },
+    {
+      "id": "0ae3a50f",
+      "title": "finite-element-method 의 혼합 정식화와 Babuska-Brezzi 조건",
+      "priority": 10,
+      "note": "수치해석. 신규 주제 또는 보강. 50차 회차에 finite-element-method 에 '## L^2 노름의 수렴률' 절(Aubin-Nitsche 논법, 쌍대 문제의 H^2 정칙성, Brenner-Scott 5.4 절 각주)을 더하면서 그 문서가 강제 쌍선형형식만 다루는 것을 확인했다. Stokes 방정식처럼 속도와 압력을 함께 푸는 혼합 정식화는 강제성이 아니라 안장점 구조를 가지므로 Lax-Milgram 이 쓰이지 않고 Babuska-Brezzi 의 inf-sup 조건이 가해성을 준다. 저장소 확인: babuska, brezzi, inf-sup, stokes, mixed 로 시작하는 문서는 없고 lax-milgram 과 saddle-point 류 문서가 있는지는 확인할 것. 별도 문서로 쓰면 부모는 finite-element-method 와 lax-milgram 이 후보다. 보강으로 넣으면 '## 이산 문제의 가해성' 뒤의 한 절이다.",
+      "createdAt": "2026-10-14T08:55:36.166Z",
+      "seq": 2282
+    },
+    {
+      "id": "3da0d00f",
+      "title": "2차 정류점 도달 알고리즘의 별도 문서 판단",
+      "priority": 10,
+      "note": "최적화. 50차 회차에 gradient-descent 에 '## 엄격 안장점 성질' 절을 더했다. 담은 것: 엄격 안장점 성질의 정의, Lee-Simchowitz-Jordan-Recht 의 '무작위 초기점에서 엄격 안장점으로 수렴할 확률 0' 정리와 안정 다양체 측도 논법, 지수 지연의 지적, Jin 등의 섭동 경사하강법이 epsilon 2차 정류점에 epsilon^{-2} 의 로그 배수로 도달한다는 정리, 행렬 완성과 텐서 분해의 적용. 각주 셋을 새로 달았다(COLT 2016, ICML 2017, COLT 2015). 남은 것은 2차 방법 쪽이다. 3차 정칙화 Newton 법(Nesterov-Polyak 2006)과 신뢰영역 방법이 같은 2차 정류점을 epsilon^{-3/2} 로 도달하는데, 저장소 확인: newton-method 와 trust-region 과 cubic-regularization 으로 시작하는 문서가 있는지 먼저 볼 것. 별도 문서로 떼면 부모는 gradient-descent 와 newton-method 가 후보다. 지금 gradient-descent 는 172줄이라 8절 분할 기준에 닿지 않는다.",
+      "createdAt": "2026-10-14T08:58:45.933Z",
+      "seq": 2284
+    },
+    {
+      "id": "81f6d617",
+      "title": "Namba 강제법",
+      "priority": 10,
+      "note": "집합론. 신규 주제. proper-forcing 의 '## 정상집합 보존' 절이 Namba 강제법을 'omega_1 의 정상집합을 보존하면서 omega_2 의 공종도를 omega 로 만들므로 proper 가 아닌 예' 로 이름만 쓴다(Jech 3판 37장 각주). 저장소 확인: namba 로 시작하는 문서는 없다. 쓸 내용: omega_2 위의 Namba 나무 조건과 두 판본(Namba 와 Namba'), 연속체 가설 아래 두 판본이 다른 것, omega_1 보존과 omega_2 공종도 변경, CH 아래 정상집합 보존, Jensen 의 covering 정리와의 관계(Namba 강제법이 가능하면 0^# 가 존재한다). 부모는 forcing 과 proper-forcing 가운데 하나. proper 가 아닌 예를 모으는 자리라면 proper-forcing 이 부모로 맞다. 간선 추가 전 check-cycle 로 확인할 것.",
+      "createdAt": "2026-10-14T09:00:27.499Z",
+      "seq": 2285
     },
     {
       "id": "dfb3e493",
