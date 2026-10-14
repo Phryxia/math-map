@@ -4,7 +4,7 @@
 
 해석학은 극한으로 정의되는 대상을 다룬다. 물음은 "이 근사가 무엇으로 수렴하고, 그 극한이 원래의 성질을 보존하는가" 다. 답은 수렴의 종류를 구분하는 데서 나온다. 점별수렴은 연속성을 보존하지 않고 균등수렴은 보존한다는 사실이 이 분야의 첫 분기점이다.
 
-해석학의 갈래는 다섯 줄기다. 극한과 연속, 미분과 적분, 급수와 적분변환, 발산급수를 다루는 점근해석, 작용소의 $L^p$ 유계성을 다루는 보간과 특이적분이다. 측도론으로 적분을 다시 세우는 갈래는 [Lebesgue 적분](lebesgue-integral.md)에서, 복소평면으로 넘어가는 갈래는 [정칙함수](holomorphic-functions.md)에서, 무한차원 공간의 선형해석은 [Hilbert 공간](hilbert-spaces.md)과 [Banach 공간](banach-spaces.md)에서 이어진다.
+해석학의 갈래는 극한과 연속, 함수족이 수렴하는 조건을 재는 함수공간의 정리, 거리를 상수배 이내로 옮기는 Lipschitz 조건, 미분과 적분, 급수와 적분변환, 발산급수를 다루는 점근해석, 작용소의 $L^p$ 유계성을 다루는 보간과 특이적분, 작용소 노름과 스펙트럼을 다루는 작용소와 함수해석이다. 측도론으로 적분을 다시 세우는 갈래는 [Lebesgue 적분](lebesgue-integral.md)에서, 복소평면으로 넘어가는 갈래는 [정칙함수](holomorphic-functions.md)에서, 무한차원 공간의 선형해석은 [Hilbert 공간](hilbert-spaces.md)과 [Banach 공간](banach-spaces.md)에서 이어진다.
 
 시작은 [수열의 극한](limits.md)과 [연속함수](continuity.md)다. 거기서 [미분](derivative.md)과 [Riemann 적분](riemann-integral.md)이 갈라지고 [미적분학의 기본 정리](fundamental-calculus.md)에서 다시 만난다. [완비성](completeness.md)은 극한의 존재를 보장하는 축이고, [축약사상 고정점 정리](banach-fixed-point.md)를 거쳐 미분방정식의 해의 존재로 이어진다.
 
