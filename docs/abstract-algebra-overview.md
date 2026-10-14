@@ -87,6 +87,7 @@ graph TD
 - [사영다양체](projective-varieties.md): 동차좌표로 넓힌 공간 위의 대수적 집합, 완비성과 Bezout 정리
 - [아벨 다양체](abelian-varieties.md): 군 구조를 갖춘 완비 다양체, 강체성에서 따라 나오는 교환성, Tate 가군
 - [대수군](algebraic-groups.md): 다항식 사상으로 곱이 주어진 다양체, Borel 부분군의 공역성과 근계 데이터에 따른 반단순군의 분류
+- [모듈라이 공간](moduli-space.md): 동형류를 점으로 갖는 공간, 모듈라이 함자의 표현가능성과 안정성 조건, 기하 불변량 이론에 따른 구성
 
 ## 체와 Galois 이론
 

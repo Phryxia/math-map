@@ -68,5 +68,6 @@ $\mathrm{Gr}(k,n)$ 위에 각 점 $W$ 의 올을 $W$ 자신으로 두는 계수 
 ## 더 알아보기
 
 - [Schubert 계산](schubert-calculus.md)
+- [모듈라이 공간](moduli-space.md)
 
 #linear_algebra #algebra #differential_geometry #algebraic_topology
