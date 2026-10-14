@@ -140,5 +140,6 @@ $$
 - [경사하강법](gradient-descent.md)
 - [선형계획법](linear-programming.md)
 - [압축 센싱](compressed-sensing.md)
+- [곱셈 가중치 절차](multiplicative-weights.md)
 
 #optimization #analysis
