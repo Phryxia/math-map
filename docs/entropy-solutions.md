@@ -127,6 +127,6 @@ $f$ 가 볼록이면 Hopf-Lax 공식이 $w$ 를 명시적으로 주고, 그것�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Riemann 문제](riemann-problem.md)
 
 #analysis #optimization #measure_theory

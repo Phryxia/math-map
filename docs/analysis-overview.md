@@ -95,6 +95,7 @@ graph TD
 - [Peano 존재정리](peano-existence-theorem.md): 연속성만으로 얻는 해의 존재, 유일성의 실패와 Osgood 조건
 - [점성해](viscosity-solutions.md): 시험함수와의 접촉으로 정의하는 약한 해, 비교 원리와 Hopf-Lax 공식
 - [엔트로피 해](entropy-solutions.md): 보존법칙의 불연속 해를 가려내는 볼록 부등식, Rankine-Hugoniot 조건과 충격파·희박파의 구별
+- [Riemann 문제](riemann-problem.md): 두 상수 상태를 잇는 자기유사 해, 파 곡선과 Lax 의 존재 정리
 - [솔리톤](solitons.md): 분산과 비선형의 상쇄로 모양이 유지되는 고립파, Hirota 쌍선형 꼴과 충돌의 탄성
 
 ## 급수와 변환
