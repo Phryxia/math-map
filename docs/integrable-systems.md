@@ -99,6 +99,7 @@ $n=1$ 이고 $F\_1=H$ 가 $dH\ne0$ 인 곳에서 독립성을 만족하며 대�
 ## 더 알아보기
 
 - [Lax 쌍](lax-pairs.md)
+- [Birkhoff 정규형](birkhoff-normal-form.md)
 - [Kolmogorov-Arnold-Moser 정리](kam-theorem.md)
 
 #differential_geometry #analysis #topology

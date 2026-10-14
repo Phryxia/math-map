@@ -65,6 +65,7 @@ graph TD
 - [Hamilton 역학](hamiltonian-mechanics.md): 속도를 운동량으로 바꾼 1차 방정식계, 에너지 보존과 흐름의 심플렉틱 성질
 - [Hamilton-Jacobi 방정식](hamilton-jacobi-equation.md): 생성함수가 만족하는 1차 편미분방정식, Jacobi 정리와 변수분리
 - [적분가능계](integrable-systems.md): 자유도만큼의 대합적 보존량, Arnold–Liouville 정리와 작용-각 좌표
+- [Birkhoff 정규형](birkhoff-normal-form.md): 교란 Hamilton 함수에서 비공명 모드를 소거하는 정준변환, 소분모와 최적 절단
 - [Kolmogorov-Arnold-Moser 정리](kam-theorem.md): 교란에서 살아남는 불변 원환면, Diophantine 조건과 작은 분모
 - [Nekhoroshev 추정](nekhoroshev-estimate.md): 모든 초기조건에서 작용 변수가 지수적으로 긴 시간 동안 머무는 상한, 준볼록 조건과 공명 구역 분해
 - [Lax 쌍](lax-pairs.md): 흐름을 등스펙트럼 변형으로 적는 두 행렬, Toda 격자와 미분연산자 판본
