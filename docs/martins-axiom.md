@@ -32,7 +32,11 @@ Martin 의 공리(Martin's axiom)를 조밀집합의 개수마다 나누어 쓴�
 
 ## 강제 공리
 
-$\mathrm{MA}(\kappa)$ 에서 ccc 자리에 다른 순서 종류를 넣은 주장을 **강제 공리**라 한다. [proper 강제 공리](proper-forcing.md)는 proper 순서에 대한 $\mathrm{MA}(\aleph_1)$ 이고, Martin 의 최대는 정상집합을 보존하는 순서에 대한 $\mathrm{MA}(\aleph_1)$ 이다.
+$\mathrm{MA}(\kappa)$ 에서 ccc 자리에 순서 종류 $\Gamma$ 를 넣은 주장을 $\Gamma$ 에 대한 **강제 공리**라 한다. 조밀집합의 개수는 $\aleph_1$ 로 고정한다.
+
+[**PFA**(proper forcing axiom)](proper-forcing.md)는 $\Gamma$ 를 proper 순서 전체로 둔 것이다. ccc 순서가 모두 proper 이므로 PFA 가 $\mathrm{MA}(\aleph_1)$ 을 함의한다. **Martin 의 최대**(Martin's maximum, MM)는 $\Gamma$ 를 $\omega_1$ 의 정상집합을 보존하는 순서 전체로 둔 것이고, proper 순서가 정상집합을 보존하므로 MM 이 PFA 를 함의한다.
+
+$\Gamma$ 를 더 넓힐 수 없다. $\omega_1$ 의 정상집합을 깨는 순서 $\mathbb P$ 가 있으면 그 순서에 대한 강제 공리가 거짓이다.[^4] 그러므로 MM 이 이 꼴의 강제 공리 가운데 가장 강하다.
 
 # 성질
 
@@ -87,6 +91,7 @@ Suslin 나무는 가산 반사슬과 가산 사슬만 갖는 높이 $\omega_1$ �
 [^1]: Kenneth Kunen, *Set Theory: An Introduction to Independence Proofs*, North-Holland (1980), Ch. II. Martin 의 공리의 정의, 연속체와의 관계, Suslin 나무로의 적용이 이 장에 있다.
 [^2]: R. M. Solovay and S. Tennenbaum, "Iterated Cohen Extensions and Souslin's Problem", Annals of Mathematics 94 (1971), https://www.jstor.org/stable/1970860
 [^3]: Murray G. Bell, "On the combinatorial principle $P(\mathfrak c)$", Fundamenta Mathematicae 114 (1981).
+[^4]: M. Foreman, M. Magidor, S. Shelah, "Martin's Maximum, Saturated Ideals, and Non-Regular Ultrafilters. Part I", Annals of Mathematics 127 (1988), https://www.jstor.org/stable/1971415. Martin 의 최대의 무모순성(초콤팩트 기수에서)과 극대성이 이 논문의 1 절과 2 절이다.
 
 # 연관 문서
 
