@@ -92,6 +92,20 @@ $$
 
 적분선을 왼쪽으로 옮기면 지나간 극마다 유수가 주항으로 떨어진다. $s=1$ 의 단순극에서 유수 $cx$ 가 나오고 $2$ 차 극에서 $x\log x$ 가 나온다. 급수의 해석적 연속([해석적 연속](analytic-continuation.md))을 알아야 선을 옮길 수 있으므로 이 공식이 부분합 추정을 함수의 성질 문제로 바꾼다.
 
+## 절단된 Perron 공식
+
+적분선을 유한한 높이에서 자르면 오차항이 붙는다. $c\gt\max(0,\sigma_a)$ 와 $T\gt 0$ 에 대해
+
+$$
+\sum\_{n\le x}a_n=\frac{1}{2\pi i}\int\_{c-iT}^{c+iT}D(s)\frac{x^{s}}{s}\thinspace ds+O\negthinspace\left(\sum\_{n\ge 1}\vert a_n\vert\min\negthinspace\left(1,\frac{(x/n)^{c}}{T\thinspace\vert\log(x/n)\vert}\right)\right)
+$$
+
+이 성립한다.[^2]
+
+증명의 요지. $y\gt 0$ 에 대해 적분 $\frac{1}{2\pi i}\int\_{c-iT}^{c+iT}\frac{y^{s}}{s}\thinspace ds$ 를 $y\gt 1$ 이면 $1$ 로, $y\lt 1$ 이면 $0$ 으로 근사하고 오차를 잰다. 반원 호를 따라 선을 닫으면 피적분함수의 크기가 $y^{c}/T$ 이고 호의 길이가 $\vert\log y\vert^{-1}$ 규모이므로 오차가 $y^{c}/(T\vert\log y\vert)$ 다. $y$ 가 $1$ 에 가까우면 $\vert\log y\vert$ 가 작아 이 추정이 커지므로, 그 항은 $\vert a_n\vert$ 로 그대로 둔다. $y=x/n$ 을 넣고 $n$ 에 대해 더하면 위 꼴이 나온다.
+
+von Mangoldt 함수 $a_n=\Lambda(n)$ 과 $D(s)=-\zeta'/\zeta(s)$ , $c=1+1/\log x$ 를 넣으면 오차항이 $O(x(\log x)^2/T)$ 로 정리된다. [소수 정리](prime-number-theorem.md)의 명시 공식을 높이 $T$ 에서 자른 판본이 이것이고, $T$ 를 $x$ 의 거듭제곱으로 잡아 영점 합의 꼬리와 균형을 맞춘다.
+
 ## Wiener–Ikehara 정리
 
 **정리.** $a_n\ge0$ 이고 $D(s)$ 가 $\sigma\gt1$ 에서 수렴하며, 어떤 $c$ 에 대해 $D(s)-\dfrac{c}{s-1}$ 이 $\sigma\ge1$ 을 담는 열린집합으로 정칙하게 확장되면 $A(x)\sim cx$ 다.[^1]
@@ -121,6 +135,8 @@ $\mu\ast 1=\delta$ 와 $1\ast 1=d$ 와 $\Lambda\ast 1=\log$ 가 각각 첫 두 �
 - **격자점 세기.** 이차형식이 값 $n$ 을 취하는 횟수를 계수로 삼은 급수가 Epstein 제타 함수이고, 그 극이 격자점 개수의 점근을 준다.
 
 [^1]: S. Ikehara, "An extension of Landau's theorem in the analytical theory of numbers", Journal of Mathematics and Physics 10 (1931), https://doi.org/10.1002/sapm1931101
+
+[^2]: Hugh L. Montgomery and Robert C. Vaughan, *Multiplicative Number Theory I: Classical Theory*, Cambridge University Press (2007), 5.1절. 절단된 Perron 공식과 그 오차항의 표준 꼴이 정리 5.2 와 5.3 이다.
 
 # 연관 문서
 
