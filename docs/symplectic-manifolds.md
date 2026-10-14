@@ -111,10 +111,19 @@ $\mathbb R^{2n}$ 의 표준 형식에서, 반지름 $r$ 인 공을 반지름 $R$
 
 ## 더 알아보기
 
+### 구조와 대칭
+
 - [여접다발](cotangent-bundle.md)
 - [Lagrangian 부분다양체](lagrangian-submanifolds.md)
 - [모멘트 사상](moment-map.md)
+
+### 기하와 불변량
+
 - [Kähler 다양체](kahler-manifolds.md)
 - [Gromov–Witten 불변량](gromov-witten-invariants.md)
+
+### 수치 적분
+
+- [심플렉틱 적분기](symplectic-integrators.md)
 
 #differential_geometry #topology #analysis

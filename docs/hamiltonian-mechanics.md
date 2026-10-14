@@ -90,5 +90,6 @@ $L$ 이 $v$ 에서 강볼록이면 $H$ 도 $p$ 에서 볼록이고 $H$ 의 공�
 - [Hamilton-Jacobi 방정식](hamilton-jacobi-equation.md)
 - [적분가능계](integrable-systems.md)
 - [Hamiltonian Monte Carlo](hamiltonian-monte-carlo.md)
+- [심플렉틱 적분기](symplectic-integrators.md)
 
 #differential_geometry #analysis #optimization

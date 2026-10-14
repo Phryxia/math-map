@@ -70,6 +70,7 @@ graph TD
 - [Nekhoroshev 추정](nekhoroshev-estimate.md): 모든 초기조건에서 작용 변수가 지수적으로 긴 시간 동안 머무는 상한, 준볼록 조건과 공명 구역 분해
 - [Lax 쌍](lax-pairs.md): 흐름을 등스펙트럼 변형으로 적는 두 행렬, Toda 격자와 미분연산자 판본
 - [역산란 변환](inverse-scattering-transform.md): 산란 자료로 옮겨 선형이 되는 Korteweg–de Vries 방정식의 흐름, Gelfand–Levitan–Marchenko 방정식과 고립파
+- [심플렉틱 적분기](symplectic-integrators.md): 심플렉틱 2형식을 보존하는 수치 사상, leapfrog 와 수정 Hamiltonian 이 주는 유계 에너지 오차
 
 ## 다발과 접속
 
