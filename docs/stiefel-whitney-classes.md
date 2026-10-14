@@ -88,6 +88,6 @@ $n=2^r$ 인 $\mathbb{RP}^n$ 에서 이 역을 계산하면 $w(TM)^{-1}=1+a+\dots
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [코보디즘](cobordism.md)
 
 #algebraic_topology #topology #differential_geometry
