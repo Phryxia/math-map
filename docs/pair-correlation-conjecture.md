@@ -97,6 +97,6 @@ $F$ 의 같은 범위에서 이웃 영점의 정규화한 간격의 하극한이
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [저수준 영점](low-lying-zeros.md)
 
 #number_theory #probability #complex_analysis

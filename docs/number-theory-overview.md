@@ -104,6 +104,7 @@ graph TD
 - [Chen 정리](chen-theorem.md): 짝수가 소수와 거의 소수의 합이라는 결론, 가중 체와 전환 원리
 - [Riemann 가설](riemann-hypothesis.md): 영점의 실수부와 소수 계량 함수의 오차, GRH(generalized Riemann hypothesis) 의 응용
 - [쌍 상관 추측](pair-correlation-conjecture.md): 임계선 위 영점의 간격 분포와 무작위 행렬 고윳값 통계의 일치
+- [저수준 영점](low-lying-zeros.md): 족을 모아 재는 임계점 근처 영점의 분포, 세 대칭형 커널과 곡선족의 모노드로미
 - [Poisson 합 공식](poisson-summation.md), [Mellin 변환](mellin-transform.md), [Euler–Maclaurin 공식](euler-maclaurin.md): 해석적 도구
 - [Bernoulli 수](bernoulli-numbers.md) → [Stickelberger 원소](stickelberger.md)
 - [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md): Bernoulli 수의 Kummer 합동으로 $\mathbb Z_p$ 위에 이은 zeta 함수, Iwasawa 대수의 멱급수 표현과 Leopoldt 의 $s=1$ 공식
