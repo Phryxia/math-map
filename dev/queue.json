@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-14T01:05:00.959Z",
-  "nextSeq": 2264,
+  "savedAt": "2026-10-14T05:04:59.574Z",
+  "nextSeq": 2272,
   "items": [
     {
       "id": "ae0b674e",
@@ -146,6 +146,14 @@
       "note": "독자 판단 대기. 45차 회차(2026-10-13)에 limit-point-limit-circle 을 쓰면서 개관의 '# 지도' mermaid 에 노드를 더할지 판단했고 더하지 않았다. 지도가 이미 노드 27 개로 4.5절의 '핵심 문서 12~20개' 를 넘기 때문이다(FAO HS BS VS IPS MS COMP LM DS LPS SOB SD RF UC HB KM OMT CRT BO ST UBO FO FD IT FS PW SH). 4.5절은 지도가 실제 간선의 부분그래프이면 된다고만 정하므로 더하지 않는 것이 규격 위반은 아니다(큐 9443e5ca 메모와 같은 판단). 판단이 필요한 것 둘. (1) 27 개를 12~20 으로 줄일지. 줄이려면 어느 축을 뺄지(Lp-Sobolev-Schwartz 사슬, 반사공간-균일볼록, Fourier 급수-Peter Weyl-구면조화함수가 후보다). (2) differential-geometry-overview(ee4586ed)와 abstract-algebra-overview(bb074779)가 같은 문제로 이미 대기 중이다. 개관 셋이 함께 기준을 넘으므로 4.5절의 '12~20개' 를 상한으로 볼지 권장으로 볼지가 먼저 정해져야 한다.",
       "createdAt": "2026-10-13T00:57:45.596Z",
       "seq": 2193
+    },
+    {
+      "id": "1e8d99a8",
+      "title": "49차 새 문서 넷을 개관 지도에 넣지 않은 판정과 지도 노드 수 전수 집계",
+      "priority": 50,
+      "note": "독자 판단 대기. 49차 회차(2026-10-14)에 low-lying-zeros, riemann-problem, sine-gordon-equation, birkhoff-normal-form 넷을 썼고 각 분야 개관의 '# 갈래' 에는 한 줄씩 더했으나 '# 지도' mermaid 에는 넣지 않았다. 세 개관의 지도가 이미 4.5절의 '핵심 문서 12~20개' 를 넘기 때문이다. 지도에 등장하는 노드 식별자를 세어 보면 number-theory-overview 30 개(ANF BSD CFT DD DL EA EC Euler FE FF GR HK Hecke Hodge L LCFT LP LSV MA MC MF PA PG PH PNT PR QR RZ SEL SV TD), analysis-overview 30 개, differential-geometry-overview 34 개다. 기존 큐 항목 ee4586ed(differential-geometry), bb074779(abstract-algebra), 3212db21(functional-analysis)이 같은 문제를 올려 두었고, 여기에 number-theory 와 analysis 도 같은 상태라는 것이 더해진다. 곧 개관 21 개 가운데 적어도 다섯의 지도가 기준을 넘는다. 판단할 것 둘. (1) 4.5절의 '12~20개' 를 지킬 것이면 지도를 줄여야 하고, 어느 노드를 뺄지는 분야마다 독자의 판정이 필요하다. (2) 기준을 올릴 것이면 CLAUDE.md 4.5절의 문구를 고쳐야 한다. 어느 쪽이든 새 문서를 쓸 때마다 지도에 노드를 더하지 않는 현재 관행(42차 이후 여러 회차가 같은 판정을 반복했다)은 유지된다. 집계에 쓴 명령은 'awk 로 # 지도 절만 끊어 내고 grep -oE 로 대문자로 시작하는 식별자를 뽑아 sort -u' 다. 노드 정의 줄만 세는 grep 은 한 줄에 여러 노드를 정의한 꼴을 놓치므로 쓰지 않는다.",
+      "createdAt": "2026-10-14T05:04:35.285Z",
+      "seq": 2271
     },
     {
       "id": "08e59419",
@@ -1170,6 +1178,22 @@
       "note": "47차 회차(2026-10-14)에 모듈라이 축 여섯 문서를 썼다: moduli-space(95줄), hilbert-scheme(89), geometric-invariant-theory(92), moduli-of-vector-bundles(82), gromov-witten-invariants(82), quantum-cohomology(76). 전부 #algebra 주 분야이고 abstract-algebra-overview 의 새 '모듈라이와 불변량' 갈래에 들어갔다.\n\n커밋 전 검사를 문서마다 돌린 뒤, 여섯을 한 번에 다시 걸러 회귀를 보았다. 돌린 신호는 열둘이다. 4절 수식 검수 다섯(이스케이프 awk, 태그 부등호, 링크 대괄호, 줄 끝 백슬래시, 밑줄), render-check, 문장형 헤딩, 비유어, 금지 매크로, 방향형 절 이름, 번역체와 금지 표현, 코드블록 언어, 범위 뭉뚱.\n\n수확은 한 건이다. moduli-of-vector-bundles:59 의 '~도 여기서 나온다' 를 '대응을 통해 ~ 구조가 생긴다' 로 고쳤다. 문서마다 커밋 전에 돌린 검사에서는 번역체 패턴에 '여기서 나온다' 를 넣지 않아 놓쳤고, 여섯을 한 번에 거르면서 4절의 '쓰지 않는 표현' 목록을 전부 넣어 잡았다.\n\n교훈: 문서마다 돌리는 검사의 번역체 grep 에 4절 '쓰지 않는 표현' 절의 항목을 빠뜨리기 쉽다. 다음 회차의 검사 문자열에 이 여덯을 반드시 넣을 것: 이 점이 중요|여기서 나온다|출발점이다|말해 준다|인 셈이다|생각해 보면.\n\n이 항목이 할 일: 다음 회차에 이 여섯 문서를 다시 걸러 0 건인지 확인하고, 그때도 0 이면 이 항목을 지운다.",
       "createdAt": "2026-10-14T01:04:35.886Z",
       "seq": 2263
+    },
+    {
+      "id": "3247d881",
+      "title": "쌍둥이 소수 문서를 신설하지 않은 판정",
+      "priority": 20,
+      "note": "49차 회차(2026-10-14) 판정. 큐 56c50227 이 '쌍둥이 소수와 Hardy-Littlewood 추측' 신설을 요청했으나 만들지 않는다. 그 note 의 내용 후보가 전부 기존 문서에 이미 있다. (1) 허용집합, 특이급수 $\\mathfrak S(\\mathcal H)$, Hardy-Littlewood k 중쌍 추측의 진술은 prime-gaps 정의 절 33-51줄이 담는다. $\\lbrace 0,2\\rbrace$ 가 허용집합이고 $\\lbrace 0,2,4\\rbrace$ 가 아닌 예까지 있다. (2) Brun 의 체로 얻는 상한과 Brun 상수는 sieve-methods 의 '## Brun 정리'(71-83줄)와 활용 절 첫 항목이 담는다. 쌍둥이 소수 체 문제를 2 차원으로 세는 것도 43줄과 53줄에 있다. (3) Zhang 과 Maynard 의 유계 간격은 prime-gaps '## 유계 간격'(73-81줄)이 담고 Elliott-Halberstam 아래 상한 6 까지 활용 절에 있다. (4) 원 방법의 특이급수는 circle-method '## 특이급수와 특이적분' 과 '## 특이급수의 국소 밀도 분해' 가 담고 prime-gaps 49줄이 그리로 링크한다. (5) 패리티 장벽으로 k=2 에서 결론이 막히는 것은 prime-gaps '## 체 방법의 한계', sieve-methods 115줄, chen-theorem 51줄 셋이 담는다. 쌍둥이 소수 전용 문서가 더할 고유 내용은 쌍둥이 소수 상수의 수치값 정도이고 문서 하나가 되지 않는다. note 가 가리킨 실제 빈자리(pair-correlation-conjecture:65 가 상관 합 $\\sum\\Lambda(n)\\Lambda(n+h)$ 의 주항을 주는 추측을 링크 없이 이름만 쓴 자리)는 이 회차에 '[소수 간격](prime-gaps.md)의 Hardy-Littlewood 추측' 으로 본문 링크를 걸어 닫았다. 라벨은 큐 07e25b66 의 판정대로 대상 문서의 제목에 맞췄다.",
+      "createdAt": "2026-10-14T04:38:43.567Z",
+      "seq": 2264
+    },
+    {
+      "id": "3d98672d",
+      "title": "Perron 공식과 명시 공식 신설 항목의 중복 조사",
+      "priority": 20,
+      "note": "49차 회차(2026-10-14) 조사 결과. 큐 493a738d 가 'Perron 공식과 명시적 공식' 신설을 요청하는데, 그 note 의 내용이 이미 두 문서에 있다. (1) Perron 공식의 진술($\\sum\\_{n\\le x}a_n=\\frac{1}{2\\pi i}\\int\\_{c-i\\infty}^{c+i\\infty}D(s)x^s/s\\thinspace ds$)과 적분선을 왼쪽으로 옮겨 극마다 유수를 거두는 설명은 dirichlet-series '## Perron 공식'(85-95줄)이 담는다. (2) Riemann-von Mangoldt 의 명시 공식($\\psi(x)=x-\\sum\\_\\rho x^\\rho/\\rho-\\ln(2\\pi)-\\frac12\\ln(1-x^{-2})$)과 Perron 공식으로 $-\\zeta'/\\zeta$ 의 복소적분을 세워 유수 정리를 쓰는 유도, 높이 $T$ 에서 자른 판본의 오차항 $O(x(\\ln x)^2/T)$ 까지 prime-number-theorem '## 명시 공식'(57-65줄)과 '## 증명의 핵심 단계'(71줄)가 담는다. 곧 note 가 빈자리로 든 '절단된 판본의 오차항' 도 이미 있다. 전용 문서가 더할 고유 내용으로 남는 것은 셋이다. (a) Perron 공식 자체의 증명(적분선을 유한 높이에서 자르고 사각형 윤곽으로 오차를 재는 계산), (b) Weil 의 명시 공식(시험함수와 그 Mellin 변환의 쌍대성, 아르키메데스 항), (c) Riemann 의 $J(x)$ 공식과 Mobius 역변환으로 $\\pi(x)$ 를 적는 것. (b) 는 low-lying-zeros 의 '## 시험함수의 지지 범위' 가 쓰는 꼴이므로 별도 문서가 될 만하고 (a) 와 (c) 는 각각 dirichlet-series 와 prime-number-theorem 의 보강이 맞다. 그러므로 493a738d 는 'Weil 의 명시 공식' 으로 범위를 좁혀 다시 꺼내는 것이 낫다. 부모 후보는 dirichlet-series 와 riemann-zeta.",
+      "createdAt": "2026-10-14T04:47:34.749Z",
+      "seq": 2266
     },
     {
       "id": "410fd79d",
@@ -2516,6 +2540,38 @@
       "seq": 2262
     },
     {
+      "id": "476c14d4",
+      "title": "low-lying-zeros 의 후속 간선",
+      "priority": 11,
+      "note": "49차 회차(2026-10-14)에 low-lying-zeros(저수준 영점, 139줄)를 썼다. 큐 a7264651 의 처리 결과이고 그 항목은 지웠다. 부모는 pair-correlation-conjecture 와 deligne-weil-conjectures 둘이고 리프로 남겼다. 전자로 pair-correlation-conjecture 의 리프가 해소되었다. 자식 후보와 판단할 점. (1) sato-tate. 둘 다 Frobenius 각의 등분포를 다루고 deligne-weil-conjectures 를 부모로 공유하지만, Sato-Tate 는 곡선 하나를 고정하고 소수를 움직이는 수직 분포이고 저수준 영점은 족을 움직이는 수평 분포다. 대상이 다르므로 간선이 아니라고 보아 본문 링크도 걸지 않았다. 다음 회차에 재판정할 것. (2) birch-swinnerton-dyer. 활용 절 첫 항목이 O^- 커널의 델타 항을 랭크 하한으로 읽는 자리인데, BSD 문서가 저수준 영점 없이 읽히므로 5절의 '부모를 빼도 자식의 개요가 그대로 읽히는가' 에 걸린다. 본문 링크만 두었다. (3) 신규 자식 후보: Petersson 공식의 족 평균(이 문서 성질 절 둘째 정리의 증명 요지가 한 문장으로 쓰고 지나간다. petersson-formula 가 이미 있으므로 그 문서를 보강하는 쪽이 맞다), Deligne 의 등분포 정리(이 문서 '## 곡선족의 모노드로미' 의 정리가 그것이고 equidistribution 문서가 측도보존변환 쪽이라 겹치지 않는다. 신규 후보). 내용 보강 후보: 이차 지표족의 비소멸 비율 수치와 Hecke 고유형식 족의 무조건 지지 범위를 이 회차에 특정하지 않고 '지지를 좁히면' 으로 적었다. Iwaniec-Luo-Sarnak 원논문의 정리 1.1 범위를 확인해 적을 것.",
+      "createdAt": "2026-10-14T04:47:14.416Z",
+      "seq": 2265
+    },
+    {
+      "id": "334ccc9c",
+      "title": "riemann-problem 의 후속 간선",
+      "priority": 11,
+      "note": "49차 회차(2026-10-14)에 riemann-problem(Riemann 문제, 111줄)을 썼다. 큐 e01f8064 의 처리 결과이고 그 항목은 지웠다. 부모는 entropy-solutions 하나이고 그 문서의 리프를 닫았다. 분야 태그는 #analysis #linear_algebra #algorithms 이고 analysis-overview 의 '미분과 적분' 갈래에 엔트로피 해 다음으로 넣었다. 중복 범위를 재고 계(system) 쪽으로 무게를 옮겼다. entropy-solutions 는 스칼라 방정식의 Rankine-Hugoniot 와 Lax 조건, 충격파와 희박파를 담으므로, 새 문서는 m 개 성분 쌍곡계의 파 곡선(Hugoniot 곡선과 적분곡선이 2차까지 접해 Lax 곡선이 되는 것), Lax 의 존재 정리와 역함수 정리 논법, 참된 비선형과 선형 축퇴의 구별, 접촉불연속을 중심으로 썼다. 스칼라 경우는 '## 스칼라 경우의 일반해' 한 절로 부모에서 이어받았다. 자식 후보와 판단할 점. (1) Glimm 체계. 활용 절 셋째가 파 세기의 전변동을 추적해 극한을 얻는 것을 이름만 쓰고 각주로 미뤘다. 조각마다 상수인 근사와 무작위 선택이 들어가므로 별도 문서가 될 만하다. ls docs | grep -iE 'glimm|wave-front' 로 저장소에 없음을 확인했다. 부모 후보는 riemann-problem 과 bounded-variation. (2) Godunov 체계와 유한체적법. 활용 절 첫 항목이고 finite-element-method 는 있으나 유한체적법 문서는 없다. ls docs | grep -iE 'finite-volume|godunov' 로 확인했다. 부모 후보는 riemann-problem. (3) 1차원 Euler 방정식. 활용 절 둘째가 m=3 의 파 구조를 쓰는데 저장소에 기체역학 문서가 없다(ls docs | grep -iE 'euler-eq|gas-dynamic|compressible' 로 확인). navier-stokes 가 있는지는 확인하지 않았으니 꺼낼 때 볼 것.",
+      "createdAt": "2026-10-14T04:52:50.243Z",
+      "seq": 2267
+    },
+    {
+      "id": "3897cd20",
+      "title": "sine-gordon-equation 의 후속 간선",
+      "priority": 11,
+      "note": "49차 회차(2026-10-14)에 sine-gordon-equation(sine-Gordon 방정식, 137줄)을 썼다. 큐 994c62b8 의 처리 결과이고 그 항목은 지웠다. 부모는 solitons 하나이고 그 문서의 리프를 닫았다. 태그는 #analysis #differential_geometry #functional_analysis 이고 analysis-overview 의 '미분과 적분' 갈래에 솔리톤 다음으로 넣었다. 부모를 둘로 하지 않은 판정: inverse-scattering-transform 은 solitons 의 부모라 5절 '부모 가운데 다른 부모의 조상인 것을 뺀다' 에 걸려 본문 링크만 두었고, curvature 는 '## 의사구면과의 대응' 한 절에서만 쓰여 그 절을 빼도 개요가 읽히므로 역시 본문 링크다. 본문 링크 라벨은 대상 제목에 맞춰 'Gauss 곡률' 을 '곡률' 로 고쳤다(큐 07e25b66 판정). 자식 후보와 판단할 점. (1) Bäcklund 변환. 이 문서 성질 절 한 절로 두 식과 교환법칙을 담았는데, 변환 자체는 KdV 와 Liouville 방정식에도 있고 Darboux 변환, 비선형 중첩 공식으로 이어지므로 별도 문서 후보다. ls docs | grep -iE 'backlund|darboux' 로 저장소에 없음을 확인했다. 부모 후보는 sine-gordon-equation 과 inverse-scattering-transform. (2) 의사구면과 Hilbert 의 비매장 정리. 이 문서는 점근선 좌표의 계량만 적었다. 곡률 -1 의 완비 곡면이 3차원 공간에 매장되지 않는다는 Hilbert 정리는 미분기하 쪽 문서 자리이고, ls docs | grep -iE 'pseudospher|hyperbolic-plane|hilbert-theorem' 로 없음을 확인했다. (3) 큐 f876903f(AKNS 체계)와 겹치는 부분: 활용 절 첫 항목이 비선형 Schrodinger 와 같은 계열이라고 쓴 자리가 그 항목이 요청하는 내용이다. AKNS 문서를 만들면 이 문서의 부모 후보가 되는지 다시 볼 것(그 문서의 부모가 inverse-scattering-transform 이면 조상 중복이 된다).",
+      "createdAt": "2026-10-14T04:56:24.803Z",
+      "seq": 2268
+    },
+    {
+      "id": "da737a6d",
+      "title": "birkhoff-normal-form 의 후속 간선",
+      "priority": 11,
+      "note": "49차 회차(2026-10-14)에 birkhoff-normal-form(Birkhoff 정규형, 115줄)을 썼다. 큐 9a3e265f 의 처리 결과이고 그 항목은 지웠다. 부모는 integrable-systems 하나이고, 그 문서의 더 알아보기에 Lax 쌍 다음 Kolmogorov-Arnold-Moser 정리 앞으로 넣었다(교란론의 첫 단계가 KAM 보다 가까운 후속이다). 태그는 #differential_geometry #analysis #number_theory 이고 differential-geometry-overview 의 심플렉틱 갈래 적분가능계 다음에 넣었다. 제목을 큐 항목의 '정규형 전개' 대신 'Birkhoff 정규형' 으로 정했다. 4절 제목 규칙이 개념 하나를 요구하고 교과서 용어가 이것이다. 간선을 둘 기각했다. (1) kam-theorem 을 자식으로 넣지 않았다. KAM 정리가 정규형 전개의 되풀이를 특정 작용 값에서 수렴시키는 것이므로 선수관계로 보일 수 있으나, kam-theorem(91줄)의 개요와 직관이 정규형 없이 Diophantine 조건과 작은 분모만으로 읽히고 그 문서의 부모가 이미 integrable-systems 와 diophantine-approximation 둘이라 셋이 된다. 본문 '## 적분가능계와의 거리' 에서 링크만 걸었다. (2) nekhoroshev-estimate 도 같은 이유로 본문 링크다. 그 문서의 부모가 kam-theorem 이므로 간선을 그으면 정규형이 KAM 과 Nekhoroshev 양쪽의 부모가 되어 5절의 부모 수 기준을 흔든다. 다음 회차에 재판정할 것. 자식 후보. (1) 단열 불변량. 활용 절 첫 항목이고 ls docs | grep -iE 'adiabatic' 로 저장소에 없음을 확인했다. 부모 후보는 birkhoff-normal-form 과 hamiltonian-mechanics. (2) 평균화 원리. 1차 평균화를 이 문서가 정리 하나로 담았으나 비Hamilton 계의 평균화와 Anosov 정리까지는 담지 못했다. 분리할지는 분량을 보고 판단할 것.",
+      "createdAt": "2026-10-14T04:59:25.350Z",
+      "seq": 2269
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -2874,22 +2930,6 @@
       "note": "31차 회차(2026-10-05)에 5차 회귀를 돌렸다. docs 620 개와 README 를 함께 보았고 실제 위반 0 건이다.\n\n경로별 결과. (A) 이스케이프 해제(awk, 수식 줄의 백슬래시+ASCII 문장부호) 0 건. (B) 태그로 읽히는 부등호 grep -n '<[a-zA-Z]' 0 건. (C) 링크로 읽히는 대괄호 1 건인데 README:11 의 [CLAUDE.md](CLAUDE.md) 이고, 필터의 .md 패턴이 [a-z0-9-]* 라 대문자 파일명을 걸러내지 못한 오탐이다. (D) 줄 끝 백슬래시 0 건. (E) 이스케이프 안 된 밑줄 5 건인데 전부 각주 URL 안이라 오탐이다. finite-fields:131 의 libretexts URL(Abstract_and_Geometric_Algebra 등) 셋과 unique-factorization-domains:89 의 numdam URL(PMIHES_1966__30__5_0) 둘이고, 큐 b452028c 가 적은 그 오탐과 같은 성격이다. render-check 는 전수 통과다.\n\n이번 회차에 알아낸 것 하나를 함께 적는다. 이 환경은 LANG 이 비어 있어 grep 이 C 로케일로 돈다. 한글이 든 대괄호 문자 클래스(4절 제목 규칙의 [와과], 문체 헤딩 규칙의 [^로]지, 비유 규칙의 사다리[^꼴]·무기[^억]·마법[^ 상])는 이때 바이트 집합으로 읽혀 오탐이나 누락이 난다. 'A와 B' 제목 grep 이 560 여 개를 보고한 것이 그 예다. 수식 다섯 경로의 패턴은 ASCII 문자 클래스뿐이라 로케일에 영향받지 않지만, 회귀를 돌릴 때 한글 패턴이 섞인 검사는 LC_ALL=C.UTF-8 을 붙인다. 자세한 것은 큐의 'A와 B 제목 전수 판정과 4절 grep 의 로케일 오탐' 항목에 적었다.\n\n다음 차수에는 (C)의 필터에 대문자 파일명을 더해 돌리면 오탐 1 건이 사라진다.",
       "createdAt": "2026-10-05T01:00:55.682Z",
       "seq": 1698
-    },
-    {
-      "id": "56c50227",
-      "title": "쌍둥이 소수와 Hardy-Littlewood 추측 문서 신설",
-      "priority": 10,
-      "note": "분야는 number_theory. 부모 후보는 prime-gaps 와 sieve-methods. pair-correlation-conjecture 의 성질 절(Montgomery 정리의 |alpha|>=1 범위)이 이 추측의 상관 합 sum Lambda(n)Lambda(n+h) 를 링크 없이 이름만 쓰는 자리다. 내용 후보: 쌍둥이 소수 상수와 특이급수, 원 방법, 허용집합으로의 일반화(Hardy-Littlewood k 중쌍 추측), Brun 의 체로 얻는 상한, Zhang 과 Maynard 의 유계 간격 결과와의 관계.",
-      "createdAt": "2026-10-05T05:15:23.755Z",
-      "seq": 1701
-    },
-    {
-      "id": "a7264651",
-      "title": "저수준 영점 통계와 Katz-Sarnak 대칭형 문서 신설",
-      "priority": 10,
-      "note": "분야는 number_theory/probability. 부모는 pair-correlation-conjecture 와 유한체 위 곡선 쪽 문서. 쌍 상관은 유니터리 직교 심플렉틱 세 대칭형에서 같은 함수를 주고 갈리는 것은 임계점 근처의 저수준 통계라는 것이 pair-correlation-conjecture 의 성질 절 '대칭형에 둔감한 통계' 에 한 문단으로만 있다. 내용 후보: 일차 영점 밀도 함수, 시험함수의 Fourier 지지 범위와 조건부 결과, 곡선족의 monodromy 계산, 비소멸 비율 하한.",
-      "createdAt": "2026-10-05T05:15:23.881Z",
-      "seq": 1702
     },
     {
       "id": "a949f824",
@@ -3404,28 +3444,12 @@
       "seq": 2143
     },
     {
-      "id": "e01f8064",
-      "title": "Riemann 문제",
-      "priority": 10,
-      "note": "analysis. 부모는 entropy-solutions(44차 회차에 신설). 그 문서 성질 절 'Lax 엔트로피 조건' 이 충격파와 희박파를 구별하지만, 두 상수 상태를 잇는 해를 체계적으로 구성하는 Riemann 문제 자체는 담지 못했다. ls docs | grep -iE 'riemann-problem|godunov|rarefaction' 로 저장소에 없음을 확인했다(riemann-integral 과 riemann-hypothesis 는 다른 개념이다). 담을 것: 두 상수 상태의 초기값, 볼록 f 에서 충격파와 희박파 한 쪽으로 결정되는 것, 비볼록 f 의 볼록 포락선과 복합파, 계 보존법칙의 Riemann 불변량, Godunov 수치해법이 칸 경계마다 이 문제를 푸는 것.",
-      "createdAt": "2026-10-12T08:50:07.932Z",
-      "seq": 2145
-    },
-    {
       "id": "02ef1dc2",
       "title": "Arnold 확산",
       "priority": 10,
       "note": "differential_geometry/analysis. 부모는 nekhoroshev-estimate(44차 회차에 신설). 그 문서 성질 절 '준볼록 조건의 역할' 이 H_0 이 선형이면 작용 변수가 1/eps 쯤의 시간에 O(1) 이동하는 Arnold 의 1964 년 예를 한 문단으로 쓰고 각주로 미룬다. ls docs | grep -iE 'arnold-diff|diffusion|shadow|melnikov|transition-chain' 로 저장소에 없음을 확인했다. 담을 것: 쌍곡 불변 원환면의 전이 사슬, 분리선 쪼개짐과 Melnikov 적분, 그림자 보조정리로 사슬을 따라 궤도를 잇는 것, Nekhoroshev 상한과 양립하는 이유(지수적 시간 안에서 일어난다).",
       "createdAt": "2026-10-12T08:54:19.928Z",
       "seq": 2147
-    },
-    {
-      "id": "9a3e265f",
-      "title": "정규형 전개",
-      "priority": 10,
-      "note": "differential_geometry/analysis. 부모는 integrable-systems 또는 kam-theorem. nekhoroshev-estimate(44차 신설)의 직관 절 셋째 문단과 성질 절 '공명 구역 분해' 가 교란의 theta 의존 항을 좌표 바꾸기로 없애 크기를 eps^2 로 줄이는 절차를 쓰고, kam-theorem 의 증명 요지도 같은 되풀이를 쓴다. 두 문서가 같은 도구를 각자 설명하는 꼴이라 따로 두면 중복이 준다. ls docs | grep -iE 'normal-form|birkhoff|averaging' 로 저장소에 없음을 확인했다(jordan-normal-form 은 선형대수 쪽으로 다른 개념이다). 담을 것: 생성함수와 Lie 변환, Birkhoff 정규형, 공명 항이 남는 것, 해석적 경우의 수렴 반경과 발산, 평균화 원리와의 관계. 주의: 이 문서를 만들면 kam-theorem 과 nekhoroshev-estimate 의 해당 문단을 줄이고 간선을 다시 볼지 판단해야 한다.",
-      "createdAt": "2026-10-12T08:54:20.130Z",
-      "seq": 2148
     },
     {
       "id": "e6edf4e2",
@@ -3442,14 +3466,6 @@
       "note": "analysis. 부모는 solitons(44차 회차에 신설). 그 문서 성질 절 'Hirota 쌍선형 꼴' 과 '2 솔리톤' 이 u=-2 d_x^2 log f 치환과 f 의 지수함수 전개를 쓰지만, 쌍선형 연산자 D 자체와 그것이 방정식을 어떻게 바꾸는지는 담지 못했다. ls docs | grep -iE 'hirota|bilinear|tau-function' 로 저장소에 없음을 확인했다. 담을 것: Hirota D 연산자의 정의, KdV 의 쌍선형 꼴 D_x(D_t+D_x^3) f.f=0, N 솔리톤 전개의 섭동 구조, 타우 함수와 Sato 이론으로 가는 방향, 쌍선형 꼴을 갖는 것이 적분가능성의 판정으로 쓰이는 것.",
       "createdAt": "2026-10-12T09:03:41.684Z",
       "seq": 2152
-    },
-    {
-      "id": "994c62b8",
-      "title": "sine-Gordon 방정식",
-      "priority": 10,
-      "note": "analysis/differential_geometry. 부모는 solitons(44차 신설) 또는 inverse-scattering-transform. solitons 성질 절 '다른 방정식의 솔리톤' 표가 kink 와 antikink 를 한 칸으로 쓰고, inverse-scattering-transform 성질 절 '다른 방정식' 이 2x2 산란 문제의 예로 이름만 든다. ls docs | grep -iE 'sine-gordon|kink|pseudosphere' 로 저장소에 없음을 확인했다. 담을 것: u_tt-u_xx+sin u=0, kink 해와 위상 전하, Backlund 변환, 음의 상수 곡률 곡면의 Gauss 방정식과 같은 것(pseudospherical surface) 이라 미분기하 쪽 간선도 후보다. 주의: 저장소에 gaussian-curvature 나 surface-theory 쪽 문서가 있는지 먼저 보고 부모를 정한다.",
-      "createdAt": "2026-10-12T09:03:41.850Z",
-      "seq": 2153
     },
     {
       "id": "b77263e1",
@@ -3890,6 +3906,14 @@
       "note": "48차(2026-10-13)에 손실 압축 축을 다섯 문서로 세웠다. rate-distortion-theory(율왜곡 이론, source-coding 과 kl-divergence 의 자식), quantization(양자화, rate-distortion-theory 의 자식), information-bottleneck(정보 병목, rate-distortion-theory 의 자식), k-means(k 평균 군집화, quantization 의 자식), mutual-information-estimation(상호정보량 추정, kl-divergence 의 자식). 다섯 다 커밋 전에 4절 검사(이스케이프 awk, 태그 부등호, 링크 대괄호, 줄 끝 백슬래시, 밑줄, render-check)와 문장형 헤딩 grep, 비유 금지 grep, 금지 매크로 grep, 금지 표현 grep, 글자 연산자 검사, 혼동 유니코드 검사, 두문자어 첫 등장 검사를 통과했고 본문 H1 이 다섯 절 순서로 들어 있다. 다음 회차에 같은 검사를 다시 돌려 회귀가 없는지 본다. 특히 볼 곳 둘. (1) 직관 절이 네 문단이다. 4절은 두 문단을 넘기지 않는다고 적고 모범 예는 네 문단이라 어긋나 있다(큐 08e59419 가 독자 판단 대기). 판단이 정해지면 다섯 문서의 직관을 함께 고친다. (2) 다섯 문서 모두 각주로 출처를 달았다. Cover-Thomas, Tishby-Pereira-Bialek, Gersho-Gray, Aloise 외, Arthur-Vassilvitskii, Belghazi 외, van den Oord 외, McAllester-Stratos 다. 각주 번호와 본문 참조의 정합을 다시 본다.",
       "createdAt": "2026-10-13T16:59:28.507Z",
       "seq": 2238
+    },
+    {
+      "id": "7f94c9e6",
+      "title": "수식·코드 검사 전수 회귀 점검 (49차)",
+      "priority": 9,
+      "note": "2026-10-14 49차 회차에 문서 876 개를 전수로 돌렸다. 고칠 것은 0 건이다. 큐 fc1e64ec(559 문서, 2026-09-28)의 다음 차수다. (1) 4절 이스케이프 awk: 0 건. (2) 줄 끝 백슬래시: 0 건. (3) 태그로 읽히는 부등호(grep -ln '<[a-zA-Z]'): 0 건. (4) 링크로 읽히는 대괄호: 0 건. (5) 금지 매크로(operatorname, bm, DeclareMathOperator, newcommand, renewcommand, def): 0 건. (6) 인라인 코드블록 안의 LaTeX 명령: 0 건. (7) 코드블록 언어 표시(javascript typescript mermaid js ts 외와 언어 없는 블록): 0 건. (8) 이스케이프 안 된 밑줄: 3 건 검출, 전부 오탐이다. finite-fields:131 은 각주의 libretexts URL 경로(Abstract_and_Geometric_Algebra 등)로 큐 b452028c 가 이미 오탐으로 판정했고, unique-factorization-domains:89 는 각주의 numdam URL(PMIHES_1966__30__5_0)이며 같은 성격이다. 두 건 모두 수식 밖의 각주 URL 이므로 고치지 않는다. 앞으로 이 검사를 전수로 돌릴 때는 'grep -noE 로 문맥을 뽑아 각주 URL 인지 먼저 본다'. (9) 라틴과 모양이 같은 키릴·그리스 문자(큐 b50bb0c8 의 좁힌 검사): 1 건 검출, 오탐이다. transcendental-numbers:98 의 각주에 든 러시아어 학술지명 Izvestiya Akademii nauk SSSR 이고 b50bb0c8 이 정상 사용으로 적어 둔 바로 그 자리다. 검사를 python 으로 돌렸다. grep -P 로는 '\\x{} value is too large' 오류가 나서 쓸 수 없고, 코드포인트 집합을 python set 으로 두고 줄마다 비교하는 것이 동작한다.",
+      "createdAt": "2026-10-14T05:00:25.071Z",
+      "seq": 2270
     },
     {
       "id": "a6985bd5",
