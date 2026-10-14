@@ -89,5 +89,6 @@ $H^2(X,T_X)=0$ 이면 모듈라이 공간이 그 점에서 매끄럽고 차원�
 ## 더 알아보기
 
 - [곡선의 모듈라이 공간](moduli-of-curves.md)
+- [Hilbert 스킴](hilbert-scheme.md)
 
 #algebra #category_theory #complex_analysis
