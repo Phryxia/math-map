@@ -58,7 +58,7 @@ $\det$ 를 차수별로 펼치면 $c_i(E)$ 가 곡률의 $i$ 차 불변 다항�
 
 자명한 다발은 평탄한 접속을 가지므로 $F = 0$ 이고 $P(F)$ 가 상수항만 남는다. ∎
 
-역은 성립하지 않는다. 구 $S^n$ 의 접다발은 모든 Pontryagin 류와 Stiefel–Whitney 류가 $n$ 이 짝수일 때의 Euler 류를 빼면 소멸하지만, $n$ 이 $1, 3, 7$ 이 아니면 자명하지 않다.[^3]
+역은 성립하지 않는다. 구 $S^n$ 의 접다발은 모든 [Pontryagin 류](pontryagin-classes.md)와 Stiefel–Whitney 류가 $n$ 이 짝수일 때의 Euler 류를 빼면 소멸하지만, $n$ 이 $1, 3, 7$ 이 아니면 자명하지 않다.[^3]
 
 ## 분할 원리
 
@@ -96,6 +96,7 @@ Euler 류를 곡률로 쓴 것이 [Gauss–Bonnet 정리](gauss-bonnet.md)의 �
 
 - [분류공간](classifying-spaces.md)
 - [Stiefel–Whitney 류](stiefel-whitney-classes.md)
+- [Pontryagin 류](pontryagin-classes.md)
 - [스핀 구조](spin-structures.md)
 
 #differential_geometry #algebraic_topology #topology

@@ -92,7 +92,7 @@ $$
 \dim\ker D^+-\dim\ker D^-=\int_M\hat A(M)
 $$
 
-우변은 Pontryagin 류의 다항식이므로 계량에 의존하지 않는다. 소멸 정리와 합치면 $\int_M\hat A(M)\ne 0$ 인 스핀 다양체에는 스칼라 곡률이 양인 계량이 없다. $K3$ 곡면이 그런 예로, 스핀이고 $\hat A$ 종수가 $2$ 다.
+우변은 [Pontryagin 류](pontryagin-classes.md)의 다항식이므로 계량에 의존하지 않는다. 소멸 정리와 합치면 $\int_M\hat A(M)\ne 0$ 인 스핀 다양체에는 스칼라 곡률이 양인 계량이 없다. $K3$ 곡면이 그런 예로, 스핀이고 $\hat A$ 종수가 $2$ 다.
 
 # 활용
 

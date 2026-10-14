@@ -8,7 +8,7 @@
 
 $S^7$ 과 위상동형인 매끄러운 다양체 $M$ 이 표준 $S^7$ 과 미분동형인지 묻는다. 호몰로지군, 호모토피군, 코호몰로지 환은 위상동형으로 결정되므로 모두 구면과 같고 이 물음에 아무 답을 주지 않는다. $M$ 위에서 계산하는 불변량으로는 가를 수 없다.
 
-그래서 $M$ 을 경계로 하는 $8$ 차원 다양체 $W$ 를 만들어 $W$ 에서 계산한다. $W$ 의 첫 Pontryagin 류가 $0$ 이 되도록 잡으면, [Hirzebruch 부호수 정리](characteristic-classes.md)가 닫힌 $8$ 다양체 $X$ 에서 주는 등식
+그래서 $M$ 을 경계로 하는 $8$ 차원 다양체 $W$ 를 만들어 $W$ 에서 계산한다. $W$ 의 첫 [Pontryagin 류](pontryagin-classes.md)가 $0$ 이 되도록 잡으면, [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md)가 닫힌 $8$ 다양체 $X$ 에서 주는 등식
 
 $$
 45\thinspace\sigma(X)=7p_2\lbrack X\rbrack-p_1^2\lbrack X\rbrack
