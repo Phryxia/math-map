@@ -62,7 +62,7 @@ $$
 F(\alpha,T)=\vert\alpha\vert+o(1)
 $$
 
-증명의 요지는 명시 공식으로 영점 쪽 합을 소수 쪽 합으로 옮기는 것이다. $x=T^\alpha$ 로 두면 $F(\alpha,T)$ 가 von Mangoldt 함수의 합으로 쓰이고, $m=n$ 인 항이 $\sum_{n\le x}\Lambda(n)^2/n$ 를 주어 Mertens 정리로 $\vert\alpha\vert$ 가 나온다. $\vert\alpha\vert\lt 1$ 이면 $m\ne n$ 인 항은 Montgomery–Vaughan 의 평균값 정리로 $o(1)$ 이다. $\vert\alpha\vert\ge 1$ 에서는 그 항이 $\sum_{n\le x}\Lambda(n)\Lambda(n+h)$ 의 크기에 걸리고, 이 합의 주항은 쌍둥이 소수에 대한 Hardy–Littlewood 추측이 준다.
+증명의 요지는 명시 공식으로 영점 쪽 합을 소수 쪽 합으로 옮기는 것이다. $x=T^\alpha$ 로 두면 $F(\alpha,T)$ 가 von Mangoldt 함수의 합으로 쓰이고, $m=n$ 인 항이 $\sum_{n\le x}\Lambda(n)^2/n$ 를 주어 Mertens 정리로 $\vert\alpha\vert$ 가 나온다. $\vert\alpha\vert\lt 1$ 이면 $m\ne n$ 인 항은 Montgomery–Vaughan 의 평균값 정리로 $o(1)$ 이다. $\vert\alpha\vert\ge 1$ 에서는 그 항이 $\sum_{n\le x}\Lambda(n)\Lambda(n+h)$ 의 크기에 걸리고, 이 합의 주항은 [소수 간격](prime-gaps.md)의 Hardy–Littlewood 추측이 준다.
 
 ## 단순 영점의 비율
 
