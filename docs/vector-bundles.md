@@ -91,10 +91,16 @@ $$
 
 ## 더 알아보기
 
+### 구성과 구조
+
 - [접다발](tangent-bundle.md)
-- [벡터다발의 모듈라이 공간](moduli-of-vector-bundles.md)
 - [접속](connection.md)
 - [주다발](principal-bundles.md)
+
+### 모듈라이와 불변량
+
+- [벡터다발의 모듈라이 공간](moduli-of-vector-bundles.md)
 - [특성류](characteristic-classes.md)
+- [Thom 공간](thom-space.md)
 
 #differential_geometry #topology #algebraic_topology
