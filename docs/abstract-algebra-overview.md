@@ -2,7 +2,7 @@
 
 # 개요
 
-추상대수는 연산의 규칙만 남기고 대상을 잊는다. 군은 대칭을, 환은 덧셈과 곱셈을, 체는 나눗셈까지를 공리화한다. 물음은 "이 공리만으로 무엇이 따라오는가" 와 "구체적 대상이 어느 공리계의 예인가" 다. 추상대수의 갈래는 네 줄기다. 군론, 환과 가군, 체와 Galois 이론, 그리고 Lie 이론과 표현론이다. 정수론으로 넘어가는 대수, 곧 유체론과 Iwasawa 이론은 [정수론 개관](number-theory-overview.md)에 있다.
+추상대수는 연산의 규칙만 남기고 대상을 잊는다. 군은 대칭을, 환은 덧셈과 곱셈을, 체는 나눗셈까지를 공리화한다. 물음은 "이 공리만으로 무엇이 따라오는가" 와 "구체적 대상이 어느 공리계의 예인가" 다. 추상대수의 갈래는 군론, 환과 가군, 체와 Galois 이론, Lie 이론과 표현론이고, 여기에 다항식의 해집합을 다루는 대수다양체와 그 모듈라이가 더해진다. 정수론으로 넘어가는 대수, 곧 유체론과 Iwasawa 이론은 [정수론 개관](number-theory-overview.md)에 있다.
 
 시작은 [군](groups.md)이다. [군 작용](group-actions.md)에서 [Sylow 정리](sylow-theorems.md)와 [Galois 이론](galois-theory.md)이 갈라지고, [환](rings.md)에서 [아이디얼](ideals-quotient-rings.md)을 거쳐 [체](fields.md)와 [가군](modules.md)이 나온다. 연속적인 대칭은 [Lie 대수](lie-algebras.md)에서 시작한다.
 
@@ -87,7 +87,10 @@ graph TD
 - [사영다양체](projective-varieties.md): 동차좌표로 넓힌 공간 위의 대수적 집합, 완비성과 Bezout 정리
 - [아벨 다양체](abelian-varieties.md): 군 구조를 갖춘 완비 다양체, 강체성에서 따라 나오는 교환성, Tate 가군
 - [대수군](algebraic-groups.md): 다항식 사상으로 곱이 주어진 다양체, Borel 부분군의 공역성과 근계 데이터에 따른 반단순군의 분류
-- [모듈라이 공간](moduli-space.md): 동형류를 점으로 갖는 공간, 모듈라이 함자의 표현가능성과 안정성 조건, 기하 불변량 이론에 따른 구성
+
+## 모듈라이와 불변량
+
+- [모듈라이 공간](moduli-space.md): 동형류를 점으로 갖는 공간, 모듈라이 함자의 표현가능성과 안정성 조건, 섬세와 조대의 구별
 - [Hilbert 스킴](hilbert-scheme.md): 사영공간 안에서 Hilbert 다항식이 정해진 닫힌 부분스킴의 모듈라이, 접공간이 법층의 절단이라는 점, Hilbert-Chow 사상
 - [기하 불변량 이론](geometric-invariant-theory.md): 환원적 군의 작용에 따른 몫, 불변식환의 유한생성과 안정성 조건, Hilbert-Mumford 판정
 - [벡터다발의 모듈라이 공간](moduli-of-vector-bundles.md): 곡선 위의 안정 벡터다발의 모듈라이, 기울기 조건과 S-동치, Narasimhan-Seshadri 대응
