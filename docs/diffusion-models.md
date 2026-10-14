@@ -8,7 +8,7 @@
 
 잠재변수가 데이터와 같은 차원이고 전방 과정에 학습할 모수가 없는 계층적 VAE 이므로 같은 **ELBO**(evidence lower bound)가 목적함수로 나온다. 그 ELBO 를 전개하면 각 잡음 수준에서 더해진 잡음을 예측하는 최소제곱 회귀가 된다.
 
-연속 극한에서는 [확률미분방정식](ito-calculus.md)(stochastic differential equation, SDE)이 된다. 전방 과정이 SDE 이고 생성은 시간역전 SDE 의 적분이다. 신경망이 배우는 대상은 각 시각 분포의 점수함수 $\nabla_x\log q_t(x)$ 다. 이산적인 잡음 제거 모형과 점수 기반 모형은 같은 것의 두 서술이다.
+연속 극한에서는 [확률미분방정식](stochastic-differential-equations.md)(stochastic differential equation, SDE)이 된다. 전방 과정이 SDE 이고 생성은 시간역전 SDE 의 적분이다. 신경망이 배우는 대상은 각 시각 분포의 점수함수 $\nabla_x\log q_t(x)$ 다. 이산적인 잡음 제거 모형과 점수 기반 모형은 같은 것의 두 서술이다.
 
 # 직관
 

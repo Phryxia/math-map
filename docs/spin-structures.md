@@ -47,7 +47,7 @@ $$
 
 ## 존재 판정
 
-**정리.** $E$ 가 스핀 구조를 갖는 것은 $w_1(E)=0$ 이고 $w_2(E)=0$ 인 것과 같다. 여기서 $w_i$ 는 [Stiefel–Whitney 류](characteristic-classes.md)다.
+**정리.** $E$ 가 스핀 구조를 갖는 것은 $w_1(E)=0$ 이고 $w_2(E)=0$ 인 것과 같다. 여기서 $w_i$ 는 [Stiefel–Whitney 류](stiefel-whitney-classes.md)다.
 
 증명의 요지. $w_1=0$ 은 방향 가능성, 곧 구조군이 $\mathrm{SO}(n)$ 으로 축소되는 조건이다. 축소된 다음, 직관 절의 부호 $\varepsilon_{\alpha\beta\gamma}=\tilde g_{\alpha\beta}\tilde g_{\beta\gamma}\tilde g_{\gamma\alpha}\in\lbrace\pm 1\rbrace$ 는 Čech 2 공사슬이고 코사이클 조건을 만족한다. 들어 올림의 부호를 $\eta_{\alpha\beta}$ 로 바꾸면 $\varepsilon$ 이 $\eta$ 의 Čech 경계만큼 달라지므로 그 코호몰로지류가 들어 올림의 선택에 의존하지 않고, 이 류가 $w_2(E)$ 다. 류가 $0$ 이면 부호를 다시 골라 모든 삼중 겹침에서 $+1$ 로 맞출 수 있다. ∎
 
