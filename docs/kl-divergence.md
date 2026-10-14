@@ -188,7 +188,7 @@ $$
 ### 알고리즘
 
 - [기댓값 최대화 알고리즘](em-algorithm.md)
-- [변분 오토인코더](variational-autoencoder.md)
+- [변분 추론](variational-inference.md)
 - [Sinkhorn 알고리즘](sinkhorn.md)
 
 ### 확률의 점근

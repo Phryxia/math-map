@@ -137,7 +137,7 @@ ELBO 와 재매개화는 VAE 만의 도구가 아니다. 베이즈 신경망의 
 ## 선수지식
 
 - [확률적 PCA](probabilistic-pca.md)
-- [KL divergence](kl-divergence.md)
+- [변분 추론](variational-inference.md)
 - [경사하강법](gradient-descent.md)
 
 ## 더 알아보기

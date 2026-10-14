@@ -76,7 +76,7 @@ $$
 
 - [최대가능도 추정](maximum-likelihood.md). 경험분포에서 모형 부분다양체로 내리는 $m$ 사영이 최대가능도 추정량이고, 지수족에서는 기댓값모수를 표본적률과 맞추는 적률방정식이 그 사영이다.
 - [신뢰영역 정책 최적화](trust-region-policy-optimization.md). 정책족 위의 KL 제약을 Fisher–Rao 계량의 이차형식으로 바꿔 풀면 자연 경사 방향이 나온다.
-- [변분 오토인코더](variational-autoencoder.md)의 사후분포 근사. 사후분포를 다루기 쉬운 분포족으로 내리는 사영을 divergence 최소화로 적고, 갱신을 기댓값모수에서 수행한다.
+- [변분 추론](variational-inference.md)의 사후분포 근사. 사후분포를 다루기 쉬운 분포족으로 내리는 사영을 divergence 최소화로 적고, 갱신을 기댓값모수에서 수행한다.
 - [지수족](exponential-families.md)의 로그분배함수. 그 Hessian 이 계량이고 기울기가 좌표변환이므로, 평평한 좌표계 두 개가 같은 함수에서 나온다.
 
 [^1]: N. N. Chentsov, *Statistical Decision Rules and Optimal Inference*, American Mathematical Society, 1982. 유한 표본공간에서 Markov 사상 불변 계량이 Fisher 정보의 상수배인 것.
