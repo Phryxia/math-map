@@ -73,7 +73,7 @@ $f(k,\vert\varphi\vert)$ 는 $\varphi$ 의 양화 깊이에 대해 지수 탑으
 ## 선수지식
 
 - [나무폭](treewidth.md)
-- [유한 오토마타](finite-automata.md)
+- [나무 오토마타](tree-automata.md)
 
 ## 더 알아보기
 
