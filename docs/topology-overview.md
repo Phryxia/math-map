@@ -72,6 +72,7 @@ graph TD
 - [Steenrod 연산](steenrod-operations.md): 현수를 지나도 남는 코호몰로지 연산, Adem 관계와 Steenrod 대수
 - [Stiefel–Whitney 류](stiefel-whitney-classes.md): 실 벡터다발의 $\mathbb Z/2$ 계수 특성류, 방향가능성과 스핀 구조와 몰입 차원의 판정
 - [Pontryagin 류](pontryagin-classes.md): 실 다발을 복소화해 얻는 정수 계수 특성류, $L$-류와 $\hat A$-류의 입력
+- [곱셈적 종수](multiplicative-genera.md): 멱급수 하나가 정하는 코보디즘 환의 환 준동형, $L$ 과 $\hat A$ 와 Todd 류가 그 예
 - [Thom 공간](thom-space.md): 섬유마다 무한원점을 붙인 공간, 차수를 랭크만큼 올리는 Thom 동형과 Euler 류
 - [코보디즘](cobordism.md): 경계를 공유하는 닫힌 다양체의 동치관계, Pontryagin–Thom 구성과 Thom 의 환 계산
 - [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md): 교차형식의 부호수를 Pontryagin 류의 다항식으로 적는 공식, 지표 정리의 한 경우

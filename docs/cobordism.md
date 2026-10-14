@@ -79,6 +79,7 @@ $\Omega\_\ast$ 에 유리수를 텐서하면 $\lbrack\mathbb{CP}^{2i}\rbrack$ �
 
 ## 더 알아보기
 
+- [곱셈적 종수](multiplicative-genera.md)
 - [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md)
 
 #algebraic_topology #topology #differential_geometry
