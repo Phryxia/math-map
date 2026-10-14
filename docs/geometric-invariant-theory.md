@@ -87,6 +87,6 @@ $$X^{ss}/\negthinspace\negthinspace/G\cong \mu^{-1}(0)/K$$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [벡터다발의 모듈라이 공간](moduli-of-vector-bundles.md)
 
 #algebra #group_theory #differential_geometry
