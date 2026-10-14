@@ -73,6 +73,7 @@ graph TD
 - [Stiefel–Whitney 류](stiefel-whitney-classes.md): 실 벡터다발의 $\mathbb Z/2$ 계수 특성류, 방향가능성과 스핀 구조와 몰입 차원의 판정
 - [Thom 공간](thom-space.md): 섬유마다 무한원점을 붙인 공간, 차수를 랭크만큼 올리는 Thom 동형과 Euler 류
 - [코보디즘](cobordism.md): 경계를 공유하는 닫힌 다양체의 동치관계, Pontryagin–Thom 구성과 Thom 의 환 계산
+- [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md): 교차형식의 부호수를 Pontryagin 류의 다항식으로 적는 공식, 지표 정리의 한 경우
 - [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md): 호모토피군이 한 차수에만 있는 공간, 코호몰로지의 표현가능성과 Postnikov 탑
 - [장애 이론](obstruction-theory.md): 사상을 세포 하나씩 늘릴 때 나오는 코호몰로지류가 확장과 단면의 존재를 판정한다
 - [스펙트럼 수열](spectral-sequences.md): 여과에서 나오는 페이지의 열, 올화에서 올과 밑공간의 코호몰로지로 전체공간의 것을 계산한다
