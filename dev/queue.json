@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-10-13T21:04:07.810Z",
-  "nextSeq": 2248,
+  "savedAt": "2026-10-14T01:05:00.959Z",
+  "nextSeq": 2264,
   "items": [
-    {
-      "id": "9443e5ca",
-      "title": "문서 분할이 개관 지도 mermaid 의 간선을 어긋나게 하는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 36차에 golay-codes 를 mathieu-groups 에서 분할하며 error-correcting-codes -> mathieu-groups 간선을 빼고 error-correcting-codes -> golay-codes -> mathieu-groups 로 꿰었다. 그런데 information-theory-overview 의 '# 지도' mermaid 에 'ECC --> MAT' 가 남아 있었다. 4.5절은 지도가 실제 간선의 부분그래프여야 한다고 하는데, 간선을 뺀 뒤 지도를 고치지 않으면 지도가 없는 간선을 그린다.\n\nvalidate, cycles, render-check, order-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다. 간선은 '# 연관 문서' 절에만 있고 지도의 화살표는 코드블록 안이라 파서가 보지 않는다. 36차에는 같은 회차 안에서 눈으로 잡아 'ECC --> GOL --> MAT' 로 고쳤다.\n\n검사법. 개관의 mermaid 블록만 뽑아 바꾼 문서의 제목이 들어간 줄을 본다. for f in docs/*-overview.md; do awk '/^```mermaid/{m=1} m{print FILENAME\": \"$0} /^```$/{if(m){m=0}}' $f; done | grep -iE '<바뀐 문서들의 제목>' 로 충분하다. 36차에는 이 grep 이 두 줄을 내놓아 한 곳만 고치면 됨이 드러났다.\n\n규칙. 8절의 통합·분할 절차(새 id 정하기, 부모와 자식 옮기기, 본문 링크 바꾸기, 옛 파일 git rm)에 '개관 지도 mermaid 맞추기' 를 더해 생각한다. 간선을 뺀 회차에는 반드시 위 grep 을 돌린다. 간선을 더한 경우는 지도가 부분그래프이면 되므로 더하지 않아도 규격 위반이 아니지만, 핵심 문서라면 넣는다.",
-      "createdAt": "2026-10-09T08:37:13.630Z",
-      "seq": 1956
-    },
     {
       "id": "ae0b674e",
       "title": "큐에 넣기 전 저장소 전수 확인",
@@ -122,6 +114,14 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 큐 b50bb0c8 이 정한 혼입 검사를 46차(2026-10-13)에 돌렸더니 grep -nP 가 'character code point value in \\x{} or \\o{} is too large' 로 실패하고 종료코드만 남겼다. 패턴 자체는 U+0456 까지라 범위를 넘지 않는데도 이 환경의 grep 이 거부한다. 실패를 '혼입 없음' 으로 착각하면 검사를 건너뛴 것이 된다. 대신 python 으로 돌린다. bad=set('아에오르스우흐이 키릴 소문자')|set('키릴 대문자')|set('그리스') 를 글자로 적고 각 줄에서 그 글자를 찾는다. 코드포인트 범위가 아니라 글자 집합으로 적으면 환경에 의존하지 않는다. 46차에는 python 판으로 새 문서 넷을 검사해 혼입이 없음을 확인했다.",
       "createdAt": "2026-10-13T04:57:56.611Z",
       "seq": 2211
+    },
+    {
+      "id": "9196363e",
+      "title": "문서 분할이 개관 지도 mermaid 의 간선을 어긋나게 하는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 36차에 golay-codes 를 mathieu-groups 에서 분할하며 error-correcting-codes -> mathieu-groups 간선을 빼고 error-correcting-codes -> golay-codes -> mathieu-groups 로 꿰었다. 그런데 information-theory-overview 의 '# 지도' mermaid 에 'ECC --> MAT' 가 남아 있었다. 4.5절은 지도가 실제 간선의 부분그래프여야 한다고 하는데, 간선을 뺀 뒤 지도를 고치지 않으면 지도가 없는 간선을 그린다.\n\nvalidate, cycles, render-check, order-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다. 간선은 '# 연관 문서' 절에만 있고 지도의 화살표는 코드블록 안이라 파서가 보지 않는다. 36차에는 같은 회차 안에서 눈으로 잡아 'ECC --> GOL --> MAT' 로 고쳤다.\n\n검사법. 개관의 mermaid 블록만 뽑아 바꾼 문서의 제목이 들어간 줄을 본다. for f in docs/*-overview.md; do awk '/^```mermaid/{m=1} m{print FILENAME\": \"$0} /^```$/{if(m){m=0}}' $f; done | grep -iE '<바뀐 문서들의 제목>' 로 충분하다. 36차에는 이 grep 이 두 줄을 내놓아 한 곳만 고치면 됨이 드러났다.\n\n규칙. 8절의 통합·분할 절차(새 id 정하기, 부모와 자식 옮기기, 본문 링크 바꾸기, 옛 파일 git rm)에 '개관 지도 mermaid 맞추기' 를 더해 생각한다. 간선을 뺀 회차에는 반드시 위 grep 을 돌린다. 간선을 더한 경우는 지도가 부분그래프이면 되므로 더하지 않아도 규격 위반이 아니지만, 핵심 문서라면 넣는다.",
+      "createdAt": "2026-10-14T00:35:36.647Z",
+      "seq": 2248
     },
     {
       "id": "ee4586ed",
@@ -1164,6 +1164,14 @@
       "seq": 2247
     },
     {
+      "id": "b44df9bd",
+      "title": "47차 새 문서 여섯의 문체 회귀 점검 결과",
+      "priority": 20,
+      "note": "47차 회차(2026-10-14)에 모듈라이 축 여섯 문서를 썼다: moduli-space(95줄), hilbert-scheme(89), geometric-invariant-theory(92), moduli-of-vector-bundles(82), gromov-witten-invariants(82), quantum-cohomology(76). 전부 #algebra 주 분야이고 abstract-algebra-overview 의 새 '모듈라이와 불변량' 갈래에 들어갔다.\n\n커밋 전 검사를 문서마다 돌린 뒤, 여섯을 한 번에 다시 걸러 회귀를 보았다. 돌린 신호는 열둘이다. 4절 수식 검수 다섯(이스케이프 awk, 태그 부등호, 링크 대괄호, 줄 끝 백슬래시, 밑줄), render-check, 문장형 헤딩, 비유어, 금지 매크로, 방향형 절 이름, 번역체와 금지 표현, 코드블록 언어, 범위 뭉뚱.\n\n수확은 한 건이다. moduli-of-vector-bundles:59 의 '~도 여기서 나온다' 를 '대응을 통해 ~ 구조가 생긴다' 로 고쳤다. 문서마다 커밋 전에 돌린 검사에서는 번역체 패턴에 '여기서 나온다' 를 넣지 않아 놓쳤고, 여섯을 한 번에 거르면서 4절의 '쓰지 않는 표현' 목록을 전부 넣어 잡았다.\n\n교훈: 문서마다 돌리는 검사의 번역체 grep 에 4절 '쓰지 않는 표현' 절의 항목을 빠뜨리기 쉽다. 다음 회차의 검사 문자열에 이 여덯을 반드시 넣을 것: 이 점이 중요|여기서 나온다|출발점이다|말해 준다|인 셈이다|생각해 보면.\n\n이 항목이 할 일: 다음 회차에 이 여섯 문서를 다시 걸러 0 건인지 확인하고, 그때도 0 이면 이 항목을 지운다.",
+      "createdAt": "2026-10-14T01:04:35.886Z",
+      "seq": 2263
+    },
+    {
       "id": "410fd79d",
       "title": "Zilber 삼분법 갈래의 후속 간선 (15차)",
       "priority": 12,
@@ -1188,20 +1196,20 @@
       "seq": 1615
     },
     {
-      "id": "ba9055c8",
-      "title": "본문 링크가 수식 안에 들어가는 사고의 검사",
-      "priority": 12,
-      "note": "상시 항목. 링크를 문자열 위치로 삽입하거나 해제하는 작업을 하는 회차에서는 그 작업과 함께 돌리고, 그런 작업이 없는 회차에서는 건너뛴다.\n\n2026-10-04 29차 회차에 돌렸다. 그 회차의 링크 치환은 넷이다. (1) catalan-numbers 의 '아직 연결한 문서가 없다.' 를 자식 링크로 바꿨다. (2) brauer-algebras 와 modules 의 더 알아보기에 링크를 끼워 넣었다. (3) brauer-algebras:70 의 '**세포대수(cellular algebra)**' 굵은 표기와 temperley-lieb-algebras:67 의 같은 표기를 본문 링크로 바꿨다. (4) abstract-algebra-overview 95줄 갈래 사슬 가운데에 링크를 끼우고 그 아래 한 줄을 더했다. 새 문서 둘의 본문 링크는 temperley-lieb-algebras 가 셋(catalan-numbers brauer-algebras partition-algebras knot-invariants braid-groups 가운데 간선 아닌 셋), cellular-algebras 가 둘(brauer-algebras partitions)이다. 치환을 모두 마친 뒤 전수로 돌려 592 개 파일(docs 591 + README)에서 수식 안 링크 0, 헤딩 안 링크 0, 중첩 링크 0 이다.\n\n검사 방법. 28차 메모가 적은 정공법을 그대로 썼다. 코드펜스와 여러 줄 $$ 블록을 토글로 건너뛰고, 각 줄에서 인라인 $...$ 와 한 줄 $$...$$ 스팬을 뽑아 그 안의 (id.md) 또는 (http...) 링크를 세고, 중첩 검사는 수식 스팬을 같은 길이의 공백으로 지운 뒤 라벨 안의 '](' 를 센다. 이렇게 하면 28차가 적은 오탐 14 건이 전부 사라진다. 헤딩 검사는 '# 연관 문서' H1 을 만나면 그 뒤를 링크 목록 자리로 보아 제외하고 다음 H1 에서 다시 켠다(그러지 않으면 전 문서가 걸린다). 스크립트는 회차마다 스크래치패드에 새로 만들면 되고 dev/ 에 넣지 않는다(0절). README 도 같은 검사에 함께 넣는다.\n\n2026-10-05 32차 회차에 돌렸다. 그 회차의 링크 삽입은 둘이다. (1) curry-howard 의 \"아직 연결한 문서가 없다.\" 를 homotopy-type-theory 링크로 바꿨다. (2) foundations-overview 의 \"구성적 논리\" 갈래에 같은 링크를 한 줄 더했다. 새 문서 homotopy-type-theory 의 본문 링크 셋(curry-howard 와 fundamental-group 둘, homotopy-groups)도 함께 보았다. docs 626 개를 전수로 걸러 0 건이다. 검사기는 스크래치패드의 node 한 줄짜리로, 코드펜스와 $$ 블록을 토글하며 블록 안의 (id.md) 와 인라인 $...$ 범위 안의 링크를 찾는다.",
-      "createdAt": "2026-10-05T12:53:10.525Z",
-      "seq": 1719
-    },
-    {
       "id": "36f5033c",
       "title": "분야 통독: philosophy_of_math foundations data_structures 묶음 완료, 다음 분야 선정",
       "priority": 12,
       "note": "34차 회차(2026-10-05)에 philosophy_of_math 4개, foundations 4개(개관 포함), data_structures 2개를 모두 끝냈다. 32차 메모가 가리킨 묶음을 한 회차에 닫았다. 커밋 여섯이다. f2ac68dd(철학 4개), c6d011d4(higher-inductive-types homotopy-type-theory), e23f000f(structural-set-theory), efff1f73(union-find), 274881e1(foundations-overview), aa3cd780(link-cut-trees). 10개 문서 1105줄에서 고친 곳은 70 여 줄이다.\n\n고친 유형별 집계. 등위로 이어 붙인 문장 25곳, 피동 12곳, 문서 자신이나 앞 문장을 가리키는 메타 서술 7곳('마지막 두 줄은', '반대 방향의 관찰도 있다', '증명은 두 부분으로 나뉜다', '핵심 아이디어는 두 단계다', '아래 그림에서 왼쪽이', '세 입장은 같은 실천을 다르게 해석한다', '~기 때문이다'), 금지 표현 6곳('라는 사실' 2, '여기서 나온다', '즉', '갈림길', '바닥난다'), 평가와 범위 과장 6곳('대가가 컸다', '기술적 유산은 크다', '제2정리는 더 직접적이다', '결정적 차이다', '모든 조건 분기를 설명한다', '대부분 가속할 수 있다'), 번역체 헤딩 2곳('## 형식주의 자체에 대한 반론', '## 등식 증명의 유일성과의 충돌'), 영문 용어 4곳(metamathematics, nominalism, inverse Ackermann, amortized), 각주가 마침표 뒤에 붙은 것 3곳, 각주 없는 열린 문제 언급 2곳, 되풀이 마무리 문단 3곳이다.\n\n따로 적을 둘. (1) mathematical-structuralism 의 직관 절은 야구팀 유격수 비유가 두 문단의 골자였다. 4절은 직관 절에서 비유를 한 문장으로만 허용하므로, 자연수 자리를 먼저 쓰고 비유를 한 문장으로 줄였다. 비유가 문단 구조를 잡고 있는 문서는 문장만 고쳐서는 규칙을 맞출 수 없고 문단 순서를 바꿔야 한다. (2) union-find:89 의 정렬 비용이 $O(m log m)$ 으로 적혀 있었다. 수식 안의 log 가 명령이 아니어서 MathJax 가 변수 셋의 곱으로 기울여 그린다. 검사 여섯이 이것을 잡지 못한다. 수식 안 글자 연산자를 훑는 grep(\\$[^$]*[^a-zA-Z\\\\](log|sin|cos|tan|exp|max|min|lim|det|dim|ker)[^a-zA-Z])이 다음 회차의 전수 검사 후보다. dev/ 를 고치지 않으므로(0절) 스크래치패드에서 돌린다.\n\n다음 분야. 32차까지 닫은 것과 이 회차의 셋을 빼고, node dev/graph.mjs tags 로 주 분야별 문서 수를 세어 많은 쪽부터 고른다. 한 회차에 1000줄 남짓이 적정 분량이다. 이 회차는 1105줄 10개 문서에 40분 타이머를 거의 다 썼다.\n\n통독 절차. (1) 대상 문서를 주 분야 태그(태그 줄 첫 태그)로 뽑는다. (2) 구조 검사(문장형 헤딩, 비유, 열린 문제 절, 금지 매크로, 구형 '## 정의' 구조, 코드블록 언어)를 묶음 전체에 한 번 돌린다. (3) 번역체와 금지 표현 grep 을 돌려 후보를 모은다. '~에 대한' 은 철학 문서에서 대부분 정상 한국어이므로 헤딩에 있는 것만 고친다. (4) 긴 줄 훑기로 읽을 순서를 정한다. (5) 문서를 cat -n 으로 통독하며 판정한다. sed -n 으로 읽으면 줄 번호를 잃어 교체가 밀린다(큐의 줄 번호 사고 메모). (6) 교체 후 헤딩 줄 번호가 원본과 같은지 보고, 수식 검수 여섯과 키릴 검사, 두문자어 첫 등장, 같은 금지 표현 grep 을 다시 돌린다.",
       "createdAt": "2026-10-05T21:06:02.551Z",
       "seq": 1742
+    },
+    {
+      "id": "44638039",
+      "title": "본문 링크가 수식 안에 들어가는 사고의 검사",
+      "priority": 12,
+      "note": "상시 항목. 링크를 문자열 위치로 삽입하거나 해제하는 작업을 하는 회차에서는 그 작업과 함께 돌리고, 그런 작업이 없는 회차에서는 건너뛴다.\n\n2026-10-04 29차 회차에 돌렸다. 그 회차의 링크 치환은 넷이다. (1) catalan-numbers 의 '아직 연결한 문서가 없다.' 를 자식 링크로 바꿨다. (2) brauer-algebras 와 modules 의 더 알아보기에 링크를 끼워 넣었다. (3) brauer-algebras:70 의 '**세포대수(cellular algebra)**' 굵은 표기와 temperley-lieb-algebras:67 의 같은 표기를 본문 링크로 바꿨다. (4) abstract-algebra-overview 95줄 갈래 사슬 가운데에 링크를 끼우고 그 아래 한 줄을 더했다. 새 문서 둘의 본문 링크는 temperley-lieb-algebras 가 셋(catalan-numbers brauer-algebras partition-algebras knot-invariants braid-groups 가운데 간선 아닌 셋), cellular-algebras 가 둘(brauer-algebras partitions)이다. 치환을 모두 마친 뒤 전수로 돌려 592 개 파일(docs 591 + README)에서 수식 안 링크 0, 헤딩 안 링크 0, 중첩 링크 0 이다.\n\n검사 방법. 28차 메모가 적은 정공법을 그대로 썼다. 코드펜스와 여러 줄 $$ 블록을 토글로 건너뛰고, 각 줄에서 인라인 $...$ 와 한 줄 $$...$$ 스팬을 뽑아 그 안의 (id.md) 또는 (http...) 링크를 세고, 중첩 검사는 수식 스팬을 같은 길이의 공백으로 지운 뒤 라벨 안의 '](' 를 센다. 이렇게 하면 28차가 적은 오탐 14 건이 전부 사라진다. 헤딩 검사는 '# 연관 문서' H1 을 만나면 그 뒤를 링크 목록 자리로 보아 제외하고 다음 H1 에서 다시 켠다(그러지 않으면 전 문서가 걸린다). 스크립트는 회차마다 스크래치패드에 새로 만들면 되고 dev/ 에 넣지 않는다(0절). README 도 같은 검사에 함께 넣는다.\n\n2026-10-05 32차 회차에 돌렸다. 그 회차의 링크 삽입은 둘이다. (1) curry-howard 의 \"아직 연결한 문서가 없다.\" 를 homotopy-type-theory 링크로 바꿨다. (2) foundations-overview 의 \"구성적 논리\" 갈래에 같은 링크를 한 줄 더했다. 새 문서 homotopy-type-theory 의 본문 링크 셋(curry-howard 와 fundamental-group 둘, homotopy-groups)도 함께 보았다. docs 626 개를 전수로 걸러 0 건이다. 검사기는 스크래치패드의 node 한 줄짜리로, 코드펜스와 $$ 블록을 토글하며 블록 안의 (id.md) 와 인라인 $...$ 범위 안의 링크를 찾는다.\n\n2026-10-14 47차 회차에 돌렸다. 그 회차의 링크 삽입은 셋이다. (1) projective-varieties 의 더 알아보기에서 moduli-of-curves 를 moduli-space 로 바꿨다. (2) grassmannian 의 더 알아보기와 moduli-of-curves 의 선수지식에 moduli-space 링크를 끼웠다. (3) abstract-algebra-overview 의 대수다양체 갈래에 한 줄을 더했다. 새 문서 moduli-space 의 본문 링크 둘(moduli-of-curves, grassmannian)도 함께 보았다. docs 867 개와 README 를 전수로 걸러 수식안링크 0, 헤딩안링크 0, 중첩링크 0 이다. 검사기는 스크래치패드 linkcheck.mjs 로 매번 재작성한다. 알고리즘은 28차 메모의 정공법과 같다: 코드펜스와 여러 줄 $$ 블록을 토글로 건너뛰고, 각 줄의 $$...$$ 와 $...$ 스팬을 뽑아 그 안의 (id.md) 또는 (http...) 를 세고, 그 스팬을 같은 길이의 공백으로 지운 뒤 헤딩 안 링크와 라벨 안의 '](' 를 센다. '# 연관 문서' H1 뒤는 헤딩 검사에서 제외한다.",
+      "createdAt": "2026-10-14T00:42:17.817Z",
+      "seq": 2252
     },
     {
       "id": "c36c5e73",
@@ -2452,6 +2460,62 @@
       "seq": 2246
     },
     {
+      "id": "f50a5d7a",
+      "title": "moduli-space 의 후속 간선",
+      "priority": 11,
+      "note": "47차 회차(2026-10-14)에 moduli-space 를 새로 썼다(93줄, 부모 projective-varieties 와 grassmannian, abstract-algebra-overview '대수다양체' 갈래). 자식은 moduli-of-curves 하나다. 후속 후보. (1) Hilbert 스킴: 활용 절 둘째가 고정 Hilbert 다항식의 닫힌 부분스킴의 모듈라이라고 적었고 기하 불변량 이론 구성의 H 로 쓰인다. 문서가 없다. (2) 벡터다발의 모듈라이: 활용 절 넷째가 Narasimhan-Seshadri 를 각주로 들었다. docs 에 vector-bundles 는 있는지 확인할 것. (3) 기하 불변량 이론 자체: 성질 절 '기하 불변량 이론에 따른 구성' 이 환원적 군의 궤도와 불변 다항식환으로 설명하는데 별도 문서가 될 분량이다. (4) 대수적 스택: 성질 절이 '스킴 대신 스택을 쓰거나' 로 한 번 언급하고 끝낸다. 네 후보 모두 #algebra 주 분야이고 moduli-space 의 자식 자리다.",
+      "createdAt": "2026-10-14T00:41:10.068Z",
+      "seq": 2249
+    },
+    {
+      "id": "9a6323c0",
+      "title": "hilbert-scheme 의 후속 간선",
+      "priority": 11,
+      "note": "47차 회차(2026-10-14)에 hilbert-scheme 를 새로 썼다(89줄, 부모 moduli-space 하나, abstract-algebra-overview '대수다양체' 갈래, 태그 #algebra #ring_theory #combinatorics). 리프다. 후속 후보. (1) 점들의 Hilbert 스킴을 별도 문서로: 활용 절 둘째가 Nakajima 의 Heisenberg 대수 작용과 Macdonald 다항식을 한 항목으로 압축했다. partitions 와 schur-polynomials 가 이미 Hilbert 스킴을 언급하므로 그 둘과 간선을 이을 자리가 생긴다. (2) Hilbert-Chow 사상과 대칭곱의 해소: 성질 절 마지막 절이 한 식으로 끝낸다. symmetric-functions 쪽과 겹치는지 먼저 볼 것. (3) 평탄 사상: 정의 절이 '평탄성이 섬유의 Hilbert 다항식을 일정하게 유지하는 조건' 이라고만 적고 넘어간다. docs 에 평탄 사상 문서가 없다. 부모는 moduli-space 가 아니라 대수기하 기초 쪽(algebraic-varieties)이 맞다.",
+      "createdAt": "2026-10-14T00:45:05.527Z",
+      "seq": 2253
+    },
+    {
+      "id": "9911befc",
+      "title": "moduli-of-vector-bundles 의 후속 간선",
+      "priority": 11,
+      "note": "47차 회차(2026-10-14)에 moduli-of-vector-bundles 를 새로 썼다(82줄, 부모 vector-bundles 와 geometric-invariant-theory, abstract-algebra-overview '대수다양체' 갈래, 태그 #algebra #differential_geometry #topology). 리프다. 후속 후보. (1) Higgs 다발과 Hitchin 계: 활용 절 셋째가 여접다발에 Higgs 짝을 더해 적분계가 되는 것을 한 항목으로 적었다. docs 에 integrable-systems 가 있으므로 그 문서와 이 문서 둘을 부모로 삼을 수 있다. (2) Verlinde 공식: 활용 절 둘째가 행렬식 직선다발 절단 공간의 차원을 가리키고 chern-simons 를 본문 링크했다. chern-simons 쪽과 겹치는지 먼저 볼 것. (3) 비아벨 Hodge 대응: Narasimhan-Seshadri 대응 절이 유니터리 표현까지만 다룬다. GL_n(C) 표현으로 넓히는 축은 별도 문서다. (4) 반안정 여과(Harder-Narasimhan): 정의 절의 S-동치 설명이 여과를 한 문장으로 압축했다.",
+      "createdAt": "2026-10-14T00:51:26.622Z",
+      "seq": 2256
+    },
+    {
+      "id": "f9be0ff5",
+      "title": "geometric-invariant-theory 의 후속 간선",
+      "priority": 11,
+      "note": "47차 회차(2026-10-14)에 geometric-invariant-theory 를 새로 썼다(92줄, 부모 algebraic-groups 와 moduli-space, abstract-algebra-overview '대수다양체' 갈래, 태그 #algebra #group_theory #differential_geometry). 자식은 moduli-of-vector-bundles 하나다. 같은 회차에 Kempf-Ness 절에서 moment-map 을 본문 링크했다(앞 note 가 '모멘트 사상 문서가 없다' 고 적은 것은 틀렸다. docs/moment-map.md 가 symplectic-manifolds 의 자식으로 이미 있었다. 새 문서를 쓰기 전 ls docs 로 확인하라는 큐 ae0b674e 의 교훈이 간선 메모에도 적용된다). 남은 후속 후보. (1) 토릭 다양체: 활용 절 둘째가 선형화를 바꿀 때 몫이 바뀌는 것(벽 넘기)을 적었다. docs 에 토릭 다양체 문서가 없다. 부모는 이 문서와 algebraic-varieties 다. (2) Kempf-Ness 정리 자체: 성질 절 마지막이 한 식으로 끝낸다. moment-map 과 이 문서 둘을 부모로 삼을 자리다. (3) 벽 넘기와 변분 GIT: 활용 절 둘째의 마지막 문장이 쌍유리 변환을 한 번 언급하고 끝낸다.",
+      "createdAt": "2026-10-14T00:54:54.046Z",
+      "seq": 2257
+    },
+    {
+      "id": "3f9f00b1",
+      "title": "gromov-witten-invariants 의 후속 간선",
+      "priority": 11,
+      "note": "47차 회차(2026-10-14)에 gromov-witten-invariants 를 새로 썼다(82줄, 부모 moduli-of-curves 와 symplectic-manifolds, abstract-algebra-overview '대수다양체' 갈래, 태그 #algebra #differential_geometry #topology). 리프다. 후속 후보. (1) 양자 코호몰로지: 활용 절 첫째가 종수 0 세 점 불변량으로 컵곱을 변형하는 것을 한 항목으로 적었다. docs 에 문서가 없고 이 문서의 자식 자리가 분명하다. WDVV 방정식과 결합성을 담을 것. (2) 거울대칭: 활용 절 둘째가 Calabi-Yau 삼차원과 거울짝의 주기 적분을 가리킨다. docs 에 Calabi-Yau 문서가 있는지 먼저 볼 것. (3) 가상 기본류와 완전 교차 이론: 정의 절이 '기대 차원보다 큰 성분을 가져도' 로 한 문장 처리했다. (4) 안정 사상의 모듈라이 공간을 별도 문서로 분리할지: 지금은 이 문서의 정의 절 안에 있다. moduli-of-curves 와 이 문서 사이에 끼울 수 있으나 분량이 한 절이면 분리하지 않는 쪽이 맞다.",
+      "createdAt": "2026-10-14T00:54:54.178Z",
+      "seq": 2258
+    },
+    {
+      "id": "42d53ce0",
+      "title": "quantum-cohomology 의 후속 간선",
+      "priority": 11,
+      "note": "47차 회차(2026-10-14)에 quantum-cohomology 를 새로 썼다(76줄, 부모 gromov-witten-invariants 와 cohomology, cohomology 의 '연산과 불변량' 묶음, abstract-algebra-overview '대수다양체' 갈래, 태그 #algebra #algebraic_topology #differential_geometry). 리프다. 후속 후보. (1) Frobenius 다양체: 성질 절 마지막이 WDVV 가 그 구조를 정하는 미분방정식이라고 적고 끝낸다. docs 에 문서가 없다(perron-frobenius 는 다른 것). 부모는 이 문서다. (2) 거울대칭: 활용 절 둘째가 Calabi-Yau 와 주기 적분을 가리킨다. docs 에 Calabi-Yau 문서가 없음을 47차에 확인했다(ls docs | grep -i calabi 가 0 건). 거울대칭을 쓰려면 Calabi-Yau 다양체가 먼저다. (3) WDVV 방정식을 별도 문서로 분리할지: 지금은 결합성 절 안에 한 단락이다. 분량이 늘면 분리 후보다.",
+      "createdAt": "2026-10-14T00:57:09.933Z",
+      "seq": 2259
+    },
+    {
+      "id": "f1f3821a",
+      "title": "개관 개요의 갈래 나열 회귀 점검",
+      "priority": 11,
+      "note": "47차 회차(2026-10-14)에 21 개 개관을 전수 대조하고 어긋난 것을 전부 고쳤다. 이 항목은 회귀 점검용이다.\n\n검사법. for f in docs/*-overview.md; do intro=$(awk '/^# 개요/{p=1;next} /^# 지도/{p=0} p' $f); hit=$(echo \"$intro\" | grep -oE '(두|세|네|다섯|여섯|일곱|여덟) 줄기'); [ -n \"$hit\" ] && echo \"$(basename $f .md): $hit / 갈래 $(( $(grep -c '^## ' $f) - 2 ))\"; done. grep -c '^## ' 에서 2 를 빼는 것은 '# 연관 문서' 절의 선수지식과 더 알아보기 H2 를 걷어내기 위한 것이다.\n\n47차에 고친 것은 여덟이다. abstract-algebra(모듈라이 갈래를 떼면서 '네 줄기'->나열), optimization(게임과 균형 추가), probability(편차와 Gauss 구조 추가), computation(정보이론, 생성모형 추가), combinatorics(분할과 조합적 종, 설계와 접촉 구조, 격자와 부호 추가), number-theory(Diophantine 근사와 방정식, 암호와 계산, Galois 표현과 p 진 Hodge 이론 추가), analysis(함수공간의 정리, Lipschitz 조건, 작용소와 함수해석 추가), complex-analysis(해석적 수론 갈래를 개요가 부정하던 것을 '복소해석에서 바로 이어지는 문서는 해석적 수론 갈래에 모았고, 나머지는 정수론 개관에 있다' 로 고침), topology(숫자만 지움. 나열의 '대수적 위상' 이 네 갈래를 묶으므로 거두지 못한 갈래는 없었다).\n\n남은 다섯은 숫자와 갈래 수가 일치해 손대지 않았다: category-theory 4, differential-geometry 6, graph-theory 5, measure-theory 5, statistics 3.\n\n판정 기준. '줄기' 는 갈래 H2 보다 큰 묶음을 가리킬 수 있으므로 숫자가 갈래 수와 달라도 곧 오류가 아니다. 개요의 나열이 모든 갈래를 거두는지가 기준이다. 거두지 못한 갈래가 있으면 나열에 넣고, 나열이 맞으면 숫자만 지운다. 숫자를 지우는 쪽이 갈래가 늘어도 어긋나지 않는다.\n\n이 항목이 할 일: 갈래를 더하거나 뺀 회차마다 위 검사를 돌리고, 숫자가 걸린 다섯 개관이 그 회차에 갈래를 늘렸는지 본다.",
+      "createdAt": "2026-10-14T01:03:28.471Z",
+      "seq": 2262
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -2778,14 +2842,6 @@
       "note": "28차에 interior-point-method 를 만들었다(부모 linear-programming, lagrange-duality, 110줄, 최적화 개관 '선형·반정부호 계획법' 갈래의 Lovasz 세타 함수 다음, 커밋 9de1ad4). 담은 것: 경계에 붙은 걸음이 짧아져 막히는 직관, 로그 장벽과 중심 경로의 정의, 장벽법, 쌍대 간격 m/t 의 증명 요지, 자기일치 장벽과 O(sqrt m log(1/eps)) 반복 한계, 원시-쌍대 형태, 단체법과의 차이. semidefinite-programming 을 부모로 두지 않았다. 5절 기준으로 내점법이 SDP 의 특수 사례나 부분이 아니고 반대로 SDP 를 푸는 도구이므로 방향이 어긋나며, check-cycle 은 통과하지만 부모가 셋이 된다. 대신 활용 절 둘째 항목이 semidefinite-programming 으로 본문 링크를 건다. 후속 후보 셋. (a) 자기일치 장벽 자체. Nesterov-Nemirovskii 이론을 담는 문서이고 부모는 interior-point-method 와 convexity. 분량이 되는지 먼저 볼 것. (b) 단체법. 지금 linear-programming 성질 절이 꼭짓점 최적성과 Klee-Minty 를 담고 있어 8절 기준으로 겹치는지 볼 것. (c) 정수계획법과 절단평면(큐 0ad2ff63). interior-point-method 에서 정의 없이 쓴 용어: 교차 단계, 이차 원뿔, 지수 원뿔, 지지벡터기계, Cholesky 분해 없음.",
       "createdAt": "2026-10-03T17:04:59.410Z",
       "seq": 1590
-    },
-    {
-      "id": "53a5fb93",
-      "title": "모듈라이 공간",
-      "priority": 10,
-      "note": "분야: 대수기하 또는 위상(#algebra 또는 #algebraic_topology). 양자 코호몰로지와 Gromov-Witten 불변량 문서의 선수지식인데 docs 에 없다. 부모 후보는 algebraic-varieties 와 grassmannian 이다. 담을 것: 분류 문제를 공간으로 바꾸는 구성, 대상의 족과 보편족, 안정성 조건과 콤팩트화(안정곡선, 안정 사상), M_g 와 M_{g,n}, grassmannian 과 사영공간이 가장 단순한 예라는 점. 이 문서가 생기면 Gromov-Witten 불변량과 양자 코호몰로지를 그 위에 올릴 수 있다(큐 0b983ce9 참조).",
-      "createdAt": "2026-10-03T20:47:22.115Z",
-      "seq": 1596
     },
     {
       "id": "652d6b1f",
