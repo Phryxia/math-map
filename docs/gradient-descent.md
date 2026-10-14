@@ -72,6 +72,20 @@ $$
 
 기울기 노름이 $K^{-1/2}$ 속도로 줄어든다. 전역 최소는 보장되지 않는다. 볼록성이 없으면 안장점 근방이나 국소 최소에 머문다.
 
+## 엄격 안장점 성질
+
+정류점 가운데 어느 것에 머무는지를 Hessian 으로 가른다. $\nabla f(x)=0$ 인 점 $x$ 마다 $\nabla^2f(x)$ 가 양정부호이거나 $\lambda\_{\min}(\nabla^2f(x))\lt 0$ 일 때 $f$ 가 **엄격 안장점 성질**(strict saddle property)을 갖는다고 한다. 반양정부호이면서 특이한 정류점이 없다는 조건이다.
+
+**정리.** $f$ 가 $L$ -smooth 이고 엄격 안장점 성질을 가지며 $\eta\lt 1/L$ 이면, 무작위로 고른 초기점에서 시작한 경사하강법이 엄격 안장점으로 수렴할 확률이 $0$ 이다.[^3]
+
+증명의 요지. 걸음 사상 $x\mapsto x-\eta\nabla f(x)$ 는 $\eta\lt 1/L$ 에서 미분동형이다. 엄격 안장점 $x^\ast$ 로 수렴하는 초기점 전체는 $x^\ast$ 에서 음의 고윳값 방향을 뺀 안정 다양체에 들어가고 그 차원이 정의역보다 낮아 Lebesgue 측도가 $0$ 이다. 미분동형의 역상이 측도 $0$ 을 보존하므로 유한 번 거꾸로 올라간 집합도 측도 $0$ 이다. $\square$
+
+확률 $0$ 은 수렴 속도를 말하지 않는다. 안장점 근방에서 기울기가 작아 걸음이 느려지고, 탈출에 걸리는 반복 횟수가 차원에 지수적으로 커지는 함수를 만들 수 있다. 기울기에 작은 무작위 섭동을 더하면 이 지연이 사라진다.
+
+**정리.** $f$ 가 $L$ -smooth 이고 Hessian 이 $\rho$ -Lipschitz 이면, 섭동을 더한 경사하강법이 $\Vert\nabla f(x)\Vert\le\varepsilon$ 과 $\lambda\_{\min}(\nabla^2f(x))\ge-\sqrt{\rho\varepsilon}$ 을 만족하는 점에 $\varepsilon^{-2}$ 의 로그 배수 번 반복으로 도달한다.[^4]
+
+두 조건을 만족하는 점을 $\varepsilon$ **2차 정류점**이라 한다. 위 비볼록 수렴 정리가 주는 것은 첫 조건뿐이고, 둘째 조건이 안장점을 배제한다. 행렬 완성과 텐서 분해의 목적함수가 엄격 안장점 성질을 만족하므로 이 두 정리가 그 문제의 1차 방법 분석에 쓰인다.[^5]
+
 ## 볼록 함수의 $O(1/k)$ 수렴
 
 $f$ 가 볼록이고 $L$ -smooth 이며 최소점 $x^\star$ 가 존재할 때 $\eta=1/L$ 이면 다음이 성립한다.[^1]
@@ -135,6 +149,9 @@ $$
 
 [^1]: R. Tibshirani, Gradient Descent (Convex Optimization 10-725 강의노트), Carnegie Mellon University. https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/grad-descent.pdf
 [^2]: M. Schmidt, Rates of Convergence: Linear Convergence of Gradient Descent (CPSC 540 강의노트), UBC. https://www.cs.ubc.ca/~schmidtm/Courses/540-W19/L5.pdf
+[^3]: J. D. Lee, M. Simchowitz, M. I. Jordan, B. Recht, "Gradient Descent Only Converges to Minimizers", COLT 2016, http://proceedings.mlr.press/v49/lee16.html
+[^4]: C. Jin, R. Ge, P. Netrapalli, S. M. Kakade, M. I. Jordan, "How to Escape Saddle Points Efficiently", ICML 2017, http://proceedings.mlr.press/v70/jin17a.html
+[^5]: R. Ge, F. Huang, C. Jin, Y. Yuan, "Escaping From Saddle Points — Online Stochastic Gradient for Tensor Decomposition", COLT 2015, http://proceedings.mlr.press/v40/Ge15.html
 
 # 연관 문서
 
