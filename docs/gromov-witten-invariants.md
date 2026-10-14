@@ -77,6 +77,6 @@ $N_1=1$ 에서 출발하면 $N_2=1$, $N_3=12$, $N_4=620$ 이 나온다. 차수 $
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [양자 코호몰로지](quantum-cohomology.md)
 
 #algebra #differential_geometry #topology

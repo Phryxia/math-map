@@ -85,6 +85,7 @@ $M$ 이 닫힌 유향 $n$ [다양체](manifolds.md)이면 기본류 $\lbrack M\r
 - [콤팩트 지지 코호몰로지](compactly-supported-cohomology.md)
 - [Steenrod 연산](steenrod-operations.md)
 - [Hopf 불변량](hopf-invariant.md)
+- [양자 코호몰로지](quantum-cohomology.md)
 
 ### 대수와 계산 도구
 
