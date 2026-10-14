@@ -156,7 +156,7 @@ Schur 다항식에 매개변수를 하나나 둘 넣으면 다음 다항식족�
 | Macdonald | $q,t$ | 이중 아핀 Hecke 대수, $n!$ 정리 |
 | LLT(Lascoux–Leclerc–Thibon), 비대칭 Macdonald | 여럿 | 아핀 결정 기저, 대각조화함수 |
 
-모두 $q,t$ 를 특수화하면 $s_\lambda$ 로 돌아오고, 위의 세 정의가 각각 대응물을 갖는다. Macdonald 다항식의 전개 계수가 음이 아닌 정수라는 추측(Macdonald 양성 추측)이 Haiman 의 Hilbert 스킴 기하로 증명된 것이 이 방향의 대표적 성과다.
+모두 $q,t$ 를 특수화하면 $s_\lambda$ 로 돌아오고, 위의 세 정의가 각각 대응물을 갖는다. Macdonald 다항식의 전개 계수가 음이 아닌 정수라는 추측을 Macdonald 양성 추측이라 하고, Haiman 이 [Hilbert 스킴](hilbert-scheme.md)의 기하로 증명했다.
 
 ## 세 정의의 쓰임
 
