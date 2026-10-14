@@ -32,7 +32,7 @@ Martin 의 공리(Martin's axiom)를 조밀집합의 개수마다 나누어 쓴�
 
 ## 강제 공리
 
-$\mathrm{MA}(\kappa)$ 에서 ccc 자리에 다른 순서 종류를 넣은 주장을 **강제 공리**라 한다. 고유 강제 공리는 고유 순서에 대한 $\mathrm{MA}(\aleph_1)$ 이고, Martin 의 최대는 정상집합을 보존하는 순서에 대한 $\mathrm{MA}(\aleph_1)$ 이다.
+$\mathrm{MA}(\kappa)$ 에서 ccc 자리에 다른 순서 종류를 넣은 주장을 **강제 공리**라 한다. [proper 강제 공리](proper-forcing.md)는 proper 순서에 대한 $\mathrm{MA}(\aleph_1)$ 이고, Martin 의 최대는 정상집합을 보존하는 순서에 대한 $\mathrm{MA}(\aleph_1)$ 이다.
 
 # 성질
 

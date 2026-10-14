@@ -56,7 +56,7 @@ $$
 
 ## 가산지지 반복과 properness
 
-가산지지 반복은 ccc 를 보존하지 않는다. properness 는 보존한다. 곧 각 단계가 proper 임을 앞 단계가 강제하면 가산지지 반복 전체가 proper 이고, 따라서 $\aleph_1$ 이 보존된다.[^1]
+가산지지 반복은 ccc 를 보존하지 않는다. [properness](proper-forcing.md) 는 보존한다. 곧 각 단계가 proper 임을 앞 단계가 강제하면 가산지지 반복 전체가 proper 이고, 따라서 $\aleph_1$ 이 보존된다.[^1]
 
 가산지지 반복은 길이가 $\omega_1$ 을 넘으면 연속체 가설을 깨면서도 $\aleph_1$ 을 그대로 두므로, ccc 가 성립하지 않는 순서를 반복해야 하는 무모순성 증명에서 쓰인다.
 
@@ -85,6 +85,7 @@ $$
 
 ## 더 알아보기
 
+- [Proper 강제법](proper-forcing.md)
 - [Borel 추측](borel-conjecture.md)
 
 #set_theory #logic #foundations #measure_theory

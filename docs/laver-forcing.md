@@ -52,7 +52,7 @@ Laver 나무 전체를 $\mathbb L$ 이라 하고 $T'\le T$ 를 $T'\subseteq T$ �
 
 ## 적당성
 
-**정리.** $\mathbb L$ 은 proper 이고 따라서 $\aleph\_1$ 을 보존한다.[^2]
+**정리.** $\mathbb L$ 은 [proper](proper-forcing.md) 이고 따라서 $\aleph\_1$ 을 보존한다.[^2]
 
 가산 기본 부분모형 $N$ 과 $T\in\mathbb L\cap N$ 이 주어지면, $N$ 의 조밀집합을 차례로 만나도록 순수 결정으로 가지를 융합해 $N$ 에 대해 일반적인 조건을 얻는다. [반복 강제법](iterated-forcing.md)에서 가산지지 반복이 properness 를 보존하므로 반복 전체도 $\aleph\_1$ 을 보존한다.
 
