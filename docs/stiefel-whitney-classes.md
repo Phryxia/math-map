@@ -8,7 +8,9 @@ Stiefel–Whitney 류는 실 [벡터다발](vector-bundles.md)에 붙는 $\mathb
 
 # 직관
 
-원 위의 실 선다발에는 띠와 Möbius 띠 두 가지가 있다. 둘을 구별하는 수를 만들어 본다. 원을 두 호 $U, V$ 로 덮으면 각 호 위에서 다발이 자명하므로 섬유를 $\mathbb R$ 과 동일시할 수 있고, 겹침은 두 조각 $U\cap V=A\sqcup B$ 다. 두 동일시가 $A$ 와 $B$ 에서 각각 $\pm 1$ 배로 어긋나므로 부호 두 개 $\varepsilon_A,\varepsilon_B$ 가 나온다. 한 호 위의 동일시를 바꾸면 두 부호가 동시에 뒤집히므로 곱 $\varepsilon_A\varepsilon_B$ 는 바뀌지 않는다. 띠에서는 이 곱이 $+1$ 이고 Möbius 띠에서는 $-1$ 이다.
+원 위의 실 선다발에는 띠와 Möbius 띠 두 가지가 있다. 둘을 구별하는 수를 만들어 본다. 원을 두 호 $U, V$ 로 덮으면 각 호 위에서 다발이 자명하므로 섬유를 $\mathbb R$ 과 동일시할 수 있고, 겹침은 두 조각 $U\cap V=A\sqcup B$ 다. 두 동일시가 $A$ 와 $B$ 에서 각각 $\pm 1$ 배로 어긋나므로 부호 두 개 $\varepsilon_A,\varepsilon_B$ 가 나온다.
+
+한 호 위의 동일시를 바꾸면 두 부호가 동시에 뒤집히므로 곱 $\varepsilon_A\varepsilon_B$ 는 바뀌지 않는다. 띠에서는 이 곱이 $+1$ 이고 Möbius 띠에서는 $-1$ 이다.
 
 이 곱은 $\lbrace\pm 1\rbrace\cong\mathbb Z/2$ 에 값을 갖고 $H^1(S^1;\mathbb Z/2)=\mathbb Z/2$ 의 원소로 읽힌다. 이것이 $w_1$ 이다. 랭크가 $r$ 인 다발에서는 겹침의 어긋남이 부호 하나가 아니라 직교군 $\mathrm O(r)$ 의 원소이고, 행렬식의 부호가 여전히 $w_1$ 을 주지만 남은 정보는 한 차수에 담기지 않는다. 그 정보를 차수 $2$ 부터 $r$ 까지의 류로 나눠 담은 것이 $w_2,\dots,w_r$ 이다.
 

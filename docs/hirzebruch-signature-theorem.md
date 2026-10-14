@@ -12,7 +12,9 @@ $$
 
 # 직관
 
-$4$ 차원에서 부호수를 계산하려면 $H^2(M;\mathbb R)$ 의 기저를 잡고 컵곱 행렬을 대각화해야 한다. 특성류로 같은 값을 얻을 수 있는지 보기 위해 $\mathbb{CP}^2$ 에서 두 수를 모두 계산한다. $H^2(\mathbb{CP}^2;\mathbb Z)$ 는 $a$ 하나가 생성하고 $\langle a\cup a,\lbrack\mathbb{CP}^2\rbrack\rangle=1$ 이므로 형식이 $1\times 1$ 행렬 $(1)$ 이고 부호수가 $1$ 이다. 한편 접다발의 첫 Pontryagin 류는 $p_1=3a^2$ 이므로 $\langle p_1/3,\lbrack\mathbb{CP}^2\rbrack\rangle=1$ 이다. 두 수가 같다.
+$4$ 차원에서 부호수를 계산하려면 $H^2(M;\mathbb R)$ 의 기저를 잡고 컵곱 행렬을 대각화해야 한다. 특성류로 같은 값을 얻을 수 있는지 보기 위해 $\mathbb{CP}^2$ 에서 두 수를 모두 계산한다.
+
+$H^2(\mathbb{CP}^2;\mathbb Z)$ 는 $a$ 하나가 생성하고 $\langle a\cup a,\lbrack\mathbb{CP}^2\rbrack\rangle=1$ 이므로 형식이 $1\times 1$ 행렬 $(1)$ 이고 부호수가 $1$ 이다. 한편 접다발의 첫 Pontryagin 류는 $p_1=3a^2$ 이므로 $\langle p_1/3,\lbrack\mathbb{CP}^2\rbrack\rangle=1$ 이다. 두 수가 같다.
 
 한 다양체에서 값이 같은 것으로는 공식이 되지 않지만, 두 수가 모두 코보디즘 불변량이고 코보디즘 환에 유리수를 텐서하면 $\lbrack\mathbb{CP}^{2i}\rbrack$ 들이 그 환을 생성한다. 환의 생성원마다 두 값이 일치하도록 다항식의 계수를 정하면 모든 다양체에서 일치한다. $4$ 차원에서 그 다항식이 $p_1/3$ 이고, $8$ 차원에서는 $\mathbb{CP}^4$ 와 $\mathbb{CP}^2\times\mathbb{CP}^2$ 두 생성원이 계수 두 개를 정한다.
 
