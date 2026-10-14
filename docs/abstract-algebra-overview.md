@@ -100,6 +100,7 @@ graph TD
 ## 체와 Galois 이론
 
 - [체](fields.md) → [체의 확대](field-extensions.md) → [유한체](finite-fields.md), [Galois 이론](galois-theory.md)
+- [나눗셈 대수](division-algebras.md): 체의 비가환 일반화, 실수 위의 셋과 넷, 차원이 $1, 2, 4, 8$ 로 제한되는 것
 - [Hilbert 정리 90](hilbert-theorem-90.md): 순환 확대에서 노름 1 인 원소가 켤레의 비로 쓰인다는 정리, $H^1$ 의 소멸과 Kummer 이론
 - [Kummer 이론](kummer-theory.md): 1 의 거듭제곱근을 품은 체에서 지수 $n$ 아벨 확대와 $K^\ast/(K^\ast)^n$ 의 부분군이 짝지어지는 대응
 - [Artin–Schreier 이론](artin-schreier-theory.md): 표수 $p$ 에서 차수 $p$ 순환확대를 $y^p-y=a$ 로 생성하고 $K/\wp(K)$ 로 분류하는 대응
