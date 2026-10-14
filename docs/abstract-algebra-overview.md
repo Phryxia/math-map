@@ -89,6 +89,7 @@ graph TD
 - [대수군](algebraic-groups.md): 다항식 사상으로 곱이 주어진 다양체, Borel 부분군의 공역성과 근계 데이터에 따른 반단순군의 분류
 - [모듈라이 공간](moduli-space.md): 동형류를 점으로 갖는 공간, 모듈라이 함자의 표현가능성과 안정성 조건, 기하 불변량 이론에 따른 구성
 - [Hilbert 스킴](hilbert-scheme.md): 사영공간 안에서 Hilbert 다항식이 정해진 닫힌 부분스킴의 모듈라이, 접공간이 법층의 절단이라는 점, Hilbert-Chow 사상
+- [기하 불변량 이론](geometric-invariant-theory.md): 환원적 군의 작용에 따른 몫, 불변식환의 유한생성과 안정성 조건, Hilbert-Mumford 판정
 
 ## 체와 Galois 이론
 

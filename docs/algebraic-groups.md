@@ -113,5 +113,6 @@ $G$ 를 연결 환원적군, $T\le G$ 를 극대 원환면이라 한다. 지표 
 - [Borel–Weil–Bott 정리](borel-weil-bott.md)
 - [유한 Morley 위수 군](groups-of-finite-morley-rank.md)
 - [Shimura 다양체](shimura-varieties.md)
+- [기하 불변량 이론](geometric-invariant-theory.md)
 
 #algebra #group_theory #linear_algebra
