@@ -2,7 +2,7 @@
 
 # 개요
 
-Hausdorff 차원은 집합의 크기를 재는 척도의 지수다. 집합을 작은 덮개로 덮고 지름의 $s$ 제곱을 더한 하한이 $s$ 를 키우면 $\infty$ 에서 $0$ 으로 떨어지는데, 그 전환이 일어나는 $s$ 가 차원이다. 정수가 아닌 값을 가질 수 있어 Cantor 집합이나 Koch 곡선 같은 자기유사 집합의 크기를 가른다.
+Hausdorff 차원(Hausdorff dimension)은 집합의 크기를 재는 척도의 지수다. 집합을 작은 덮개로 덮고 지름의 $s$ 제곱을 더한 하한이 $s$ 를 키우면 $\infty$ 에서 $0$ 으로 떨어지는데, 그 전환이 일어나는 $s$ 가 차원이다. 정수가 아닌 값을 가질 수 있어 Cantor 집합이나 Koch 곡선 같은 자기유사 집합의 크기를 가른다.
 
 # 직관
 
@@ -58,7 +58,7 @@ $\mathbb R^n$ 에서 $\mathcal H^n$ 은 Lebesgue 측도의 상수배다. 상수�
 
 - 단조성. $E\subseteq F$ 이면 $\dim\_H E\le\dim\_H F$ 다.
 - 가산 합집합. $\dim\_H\bigcup\_n E\_n=\sup\_n\dim\_H E\_n$ 이다. 가산 집합의 차원은 $0$ 이다.
-- Lipschitz 사상. $f$ 가 Lipschitz 상수 $L$ 을 가지면 $\mathcal H^s(f(E))\le L^s\mathcal H^s(E)$ 이므로 $\dim\_H f(E)\le\dim\_H E$ 다. 양방향 Lipschitz 사상은 차원을 보존한다.
+- [Lipschitz 사상](lipschitz-maps.md). $f$ 가 Lipschitz 상수 $L$ 을 가지면 $\mathcal H^s(f(E))\le L^s\mathcal H^s(E)$ 이므로 $\dim\_H f(E)\le\dim\_H E$ 다. 양방향 Lipschitz 사상은 차원을 보존한다.
 - 위상동형은 차원을 보존하지 않는다. Cantor 집합과 $\lbrace 0,1\rbrace^{\mathbb N}$ 의 다른 거리화가 다른 차원을 준다.
 
 ## 자기유사 집합

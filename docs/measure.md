@@ -2,7 +2,7 @@
 
 # 개요
 
-측도는 집합의 길이다. 구간 $[0,1]$ 의 길이는 $1$ 이다. 그러면 $[0,1]$ 안의 유리수 전체의 길이는 얼마인가. 측도는 이런 집합에도 길이를 주는 방법이다.
+측도(measure)는 집합의 길이다. 구간 $[0,1]$ 의 길이는 $1$ 이다. 그러면 $[0,1]$ 안의 유리수 전체의 길이는 얼마인가. 측도는 이런 집합에도 길이를 주는 방법이다.
 
 주사위처럼 결과가 유한 개면 [유한 확률 공간](probability.md)에서 하듯 결과마다 확률을 주고 더하면 된다. $[0,1]$ 의 점은 셀 수 없이 많아서 점마다 확률을 줄 수 없고, 구간 같은 집합에 바로 준다. 어느 집합에 줄지는 [위상 공간](topology.md)의 열린집합으로 정하고, 조각을 몇 개까지 더할지는 셀 수 있는 무한과 셀 수 없는 무한의 구별([기수](cardinality.md))로 정한다.
 
@@ -22,7 +22,7 @@ $\varepsilon$ 은 얼마든지 작게 잡을 수 있으니 유리수 집합의 �
 
 # 정의
 
-## $\sigma$ 대수
+## σ 대수
 
 집합 $X$ 의 부분집합들의 모임 $\Sigma$ 가 다음 셋을 만족하면 $\sigma$ 대수다.
 
@@ -57,7 +57,7 @@ $$
 | Dirac 측도 $\delta_a$ | $a$ 를 포함하면 $1$ , 아니면 $0$ |
 | 확률측도 | 전체에 $1$ |
 
-## Borel $\sigma$ 대수
+## Borel σ 대수
 
 위상공간에서 열린집합을 모두 포함하는 가장 작은 $\sigma$ 대수가 Borel $\sigma$ 대수다. 열린집합, 닫힌집합, 그것들의 셀 수 있는 합집합과 교집합이 전부 들어간다. 실수 직선의 Lebesgue 측도는 이 $\sigma$ 대수 위에서 정의한다.
 
@@ -97,7 +97,7 @@ $$
 
 ## 다른 측도
 
-[Hausdorff 측도](hausdorff-dimension.md)는 프랙탈의 차원을 재고, Haar 측도는 군 위에서 평행이동 불변인 측도를 준다. 상측도는 확률변수가 유도하는 분포를 만든다([상측도](pushforward-measure.md)). 두 측도의 관계를 밀도로 표현하는 것이 [Radon–Nikodym 정리](radon-nikodym.md)다.[^1]
+[Hausdorff 측도](hausdorff-dimension.md)는 프랙탈의 차원을 재고, [Haar 측도](haar-measure.md)는 군 위에서 평행이동 불변인 측도를 준다. 상측도는 확률변수가 유도하는 분포를 만든다([상측도](pushforward-measure.md)). 두 측도의 관계를 밀도로 표현하는 것이 [Radon–Nikodym 정리](radon-nikodym.md)다.[^1]
 
 [^1]: Terence Tao, *A quick review of measure and integration theory* (245B Notes 0). 가측공간·측도·확률측도와 기본 예시. https://terrytao.wordpress.com/2009/01/01/245b-notes-0-a-quick-review-of-measure-and-integration-theory/
 

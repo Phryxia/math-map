@@ -2,7 +2,7 @@
 
 # 개요
 
-Lebesgue 미분정리는 국소 가적분 함수의 작은 공 위 평균이 거의 모든 점에서 그 점의 함숫값으로 수렴한다는 정리다. 미적분학의 기본정리는 피적분함수의 연속성을 가정하는데, 이 정리는 그 가정을 지우고 결론을 측도 $0$ 의 예외를 허용하는 형태로 바꾼다. 증명의 도구는 Vitali 덮개 보조정리와 극대함수의 약한 추정이다.
+Lebesgue 미분정리(Lebesgue differentiation theorem)는 국소 가적분 함수의 작은 공 위 평균이 거의 모든 점에서 그 점의 함숫값으로 수렴한다는 정리다. 미적분학의 기본정리는 피적분함수의 연속성을 가정하는데, 이 정리는 그 가정을 지우고 결론을 측도 $0$ 의 예외를 허용하는 형태로 바꾼다. 증명의 도구는 Vitali 덮개 보조정리와 극대함수의 약한 추정이다.
 
 # 직관
 
@@ -30,7 +30,7 @@ $$
 \lim\_{r\to 0}\frac{1}{\vert B\_r(x)\vert}\int\_{B\_r(x)}\vert f(y)-f(x)\vert\thinspace dy=0
 $$
 
-$f$ 의 **Hardy–Littlewood 극대함수**는 다음이다.
+$f$ 의 [Hardy–Littlewood 극대함수](hardy-littlewood-maximal-function.md)는 다음이다.
 
 $$
 Mf(x)=\sup\_{r\gt 0}\frac{1}{\vert B\_r(x)\vert}\int\_{B\_r(x)}\vert f\vert\thinspace dy
@@ -74,9 +74,9 @@ $$
 
 밀도점 진술은 $f=\mathbf 1\_E$ 를 넣은 경우다. 단조함수판은 [유계변동 함수](bounded-variation.md)의 Jordan 분해와 함께 쓰면 유계변동 함수가 거의 어디서나 미분가능하다는 결론을 준다.
 
-## 도함수가 적분을 되돌리지 않는 경우
+## 복원에 필요한 절대연속성
 
-$F'=f$ 가 거의 어디서나 성립해도 $F(x)-F(a)=\int\_a^x F'$ 는 따라오지 않는다. Cantor 함수는 연속이고 증가하며 거의 모든 점에서 도함수가 $0$ 이지만 $F(1)-F(0)=1$ 이다. 적분으로 되돌리려면 절대연속성이 필요하고, 그 조건이 [Radon–Nikodym 정리](radon-nikodym.md)가 다루는 측도의 절대연속성과 같은 조건이다.
+$F'=f$ 가 거의 어디서나 성립해도 $F(x)-F(a)=\int\_a^x F'$ 는 따라오지 않는다. Cantor 함수는 연속이고 증가하며 거의 모든 점에서 도함수가 $0$ 이지만 $F(1)-F(0)=1$ 이다. 적분으로 복원하려면 절대연속성이 필요하고, 그 조건이 [Radon–Nikodym 정리](radon-nikodym.md)가 다루는 측도의 절대연속성과 같은 조건이다.
 
 # 활용
 
