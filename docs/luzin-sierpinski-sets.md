@@ -2,7 +2,7 @@
 
 # 개요
 
-Luzin 집합은 실직선의 비가산 부분집합 가운데 모든 제1범주 집합과 가산으로만 만나는 것이고, Sierpiński 집합은 모든 영집합과 가산으로만 만나는 것이다. 연속체 가설 아래에서 둘 다 존재한다.
+Luzin 집합(Luzin set)은 실직선의 비가산 부분집합 가운데 모든 제1범주 집합과 가산으로만 만나는 것이고, Sierpiński 집합(Sierpiński set)은 모든 영집합과 가산으로만 만나는 것이다. 연속체 가설 아래에서 둘 다 존재한다.
 
 Luzin 집합은 [측도](measure.md)가 $0$ 이면서 제1범주가 아니고, Sierpiński 집합은 제1범주이면서 측도가 양이다. 두 집합은 [Erdős–Sierpiński 쌍대성](erdos-sierpinski-duality.md)의 쌍대 사상으로 서로 옮겨진다.
 
@@ -58,7 +58,7 @@ Luzin 집합의 비가산 부분집합은 다시 Luzin 집합이므로, Luzin �
 
 - 측도와 범주가 서로 다른 뜻임을 보이는 반례를 준다. Luzin 집합은 영집합이면서 제1범주가 아니고 Sierpiński 집합은 그 반대이므로, Erdős–Sierpiński 쌍대성이 반례를 옮기는 구체적인 예가 된다.
 - [기수 불변량](cardinal-characteristics.md)의 값을 정한다. Luzin 집합의 존재가 $\mathrm{non}(\mathcal M)=\aleph\_1$ 을, Sierpiński 집합의 존재가 $\mathrm{non}(\mathcal N)=\aleph\_1$ 을 준다.
-- Borel 추측의 반증에 쓴다. Borel 추측은 모든 강 측도 영집합이 가산이라는 명제이고, 연속체 가설 아래의 Luzin 집합이 비가산인 강 측도 영집합이므로 이 추측이 거짓이 된다.[^3]
+- [Borel 추측](borel-conjecture.md)의 반증에 쓴다. Borel 추측은 모든 강 측도 영집합이 가산이라는 명제이고, 연속체 가설 아래의 Luzin 집합이 비가산인 강 측도 영집합이므로 이 추측이 거짓이 된다.[^3]
 
 [^1]: John C. Oxtoby, *Measure and Category*, Springer Graduate Texts in Mathematics 2 (1980), 19장. 두 집합의 초한귀납 구성과 쌍대 사상 아래의 대응이 이 장에 있다.
 
