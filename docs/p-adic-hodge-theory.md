@@ -71,7 +71,7 @@ $$
 
 ## BdR
 
-구성은 표수 $p$ 로 내려갔다가 Witt 벡터로 되올라온다.
+구성은 표수 $p$ 로 내려갔다가 [Witt 벡터](witt-vectors.md)로 되올라온다.
 
 $$
 R=\varprojlim_{x\mapsto x^p}\mathcal O_{\mathbb C_p}/p
@@ -250,7 +250,7 @@ $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_n(\bar{\mathbb Q}\_p)$ 가 기약이고
 1. 유한 개의 소수를 제외하고 비분기이며
 2. $G_{\mathbb Q_p}$ 로 제한하면 de Rham
 
-이면 $\rho$ 는 어떤 대수다양체의 에탈 코호몰로지에서 Tate 꼬임을 허용해 온다는 추측이다. 조건 2 가 기하에서 오는 표현을 국소적 조건으로 특징짓는다. 2차원 홀수 경우는 Kisin, Emerton 등이 대체로 해결했다.
+이면 $\rho$ 는 어떤 대수다양체의 에탈 코호몰로지에서 Tate 꼬임을 허용해 온다는 것이 [Fontaine–Mazur 추측](fontaine-mazur.md)이다. 조건 2 가 기하에서 오는 표현을 국소적 조건으로 특징짓는다. 2차원 홀수 경우는 Kisin, Emerton 등이 대체로 해결했다.
 
 ## perfectoid 공간과 프리즘 코호몰로지
 

@@ -58,7 +58,7 @@ $V_{k-2}\subset\mathcal A_k$ 이므로 쌍대로 $\mathcal D_k\twoheadrightarrow
 
 > **조절 정리 (Stevens).** $h\lt k-1$ 이면 $\rho$ 는 기울기 $\le h$ 부분공간 사이의 동형이다.
 
-분포를 다항식 위의 값만 기억하도록 자를 때 버려지는 부분, 곧 차수 $k-1$ 이상의 모멘트들에는 $U_p$ 가 $p^{k-1}$ 이상의 인자를 달고 작용한다. 특수화의 핵과 여핵 위에서 $U_p$ 의 기울기가 항상 $\ge k-1$ 이므로, 기울기가 작은 쪽에서는 잘려 나간 부분이 $U_p$ 에 짓눌려 보이지 않는다. $h=0$ 인 보통(ordinary) 경우가 Hida 이론의 조절 정리이고 Stevens 의 판본이 그것을 유한 기울기로 넓힌 것이다.
+분포를 다항식 위의 값만 기억하도록 자를 때 버려지는 부분, 곧 차수 $k-1$ 이상의 모멘트들에는 $U_p$ 가 $p^{k-1}$ 이상의 인자를 달고 작용한다. 특수화의 핵과 여핵 위에서 $U_p$ 의 기울기가 항상 $\ge k-1$ 이므로, 기울기가 작은 쪽에서는 잘려 나간 부분이 $U_p$ 에 짓눌려 보이지 않는다. $h=0$ 인 보통(ordinary) 경우가 [Hida 이론](hida-theory.md)의 조절 정리이고 Stevens 의 판본이 그것을 유한 기울기로 넓힌 것이다.
 
 ## p 진 L 함수
 
@@ -96,7 +96,7 @@ $h\lt k-1$ 은 버릴 수 없는 조건이다. $h=k-1$ 인 임계 기울기에�
 
 ## Iwasawa 불변량
 
-$\mu_\Phi$ 를 Iwasawa 대수 $\mathbb Z_p[[T]]$ 의 [멱급수](power-series.md)로 옮기면 $\lambda$ 와 $\mu$ 불변량이 정의된다. Newton 다각형에서 읽는 이 두 수가 [Iwasawa 주추측](iwasawa-main-conjecture.md)의 양변을 비교하는 자리에 놓인다. 과수렴 기호 알고리즘 이전에는 낮은 준위에서만 알 수 있던 값들을 이제 표로 만들어 추측을 수치적으로 검증한다.
+$\mu_\Phi$ 를 [Iwasawa 대수](iwasawa-algebra.md) $\mathbb Z_p[[T]]$ 의 [멱급수](power-series.md)로 옮기면 $\lambda$ 와 $\mu$ 불변량이 정의된다. Newton 다각형에서 읽는 이 두 수가 [Iwasawa 주추측](iwasawa-main-conjecture.md)의 양변을 비교하는 자리에 놓인다. 과수렴 기호 알고리즘 이전에는 낮은 준위에서만 알 수 있던 값들을 이제 표로 만들어 추측을 수치적으로 검증한다.
 
 ## 예외적 0 과 L 불변량
 
