@@ -10,7 +10,7 @@ $$
 f=\sum_{m\gg-\infty}c(m)\thinspace q^m
 $$
 
-이 주어지면 계수 $c(m)$ 을 지수로 삼은 무한곱이 자기동형 형식이 된다. 가장 알려진 경우가 괴물 Lie 대수의 분모 공식이다.
+이 주어지면 계수 $c(m)$ 을 지수로 삼은 무한곱이 자기동형 형식이 된다. 가장 알려진 경우가 괴물 [Lie 대수](lie-algebras.md)의 분모 공식이다.
 
 $$
 j(\sigma)-j(\tau)=p^{-1}\prod_{m\gt 0,\ n\in\mathbb Z}\bigl(1-p^mq^n\bigr)^{c(mn)},
@@ -77,7 +77,7 @@ $Z(m)$ 은 노름 $-m$ 벡터의 직교여공간들이 이루는 부분다양체
 | --- | --- |
 | $j-744$ | 괴물 Lie 대수 분모 공식 |
 | 무게 $1/2$ 이고 주요부 $q^{-1}$ | $j(\tau)-1728$ 계열의 무한곱 |
-| $\eta$ 몫 계열 | Siegel 모듈러 형식 $\Delta_5$ (Igusa) |
+| $\eta$ 몫 계열 | [Siegel 모듈러 형식](siegel-modular-forms.md) $\Delta_5$ (Igusa) |
 | 무게 $0$ 이고 상수 | $\Delta(\tau)^{k}$ 형태 |
 
 ## 주요부와 인자의 대응
@@ -88,7 +88,7 @@ $$
 \sum_{m\gt 0}c(-m)\thinspace a_g(m)=0\quad\text{for all }g\in S_{1+n/2}
 $$
 
-인자가 모듈러 형식의 인자인가라는 기하 문제가 유한 개의 선형 조건으로 환원된다. Gross–Kohnen–Zagier 정리의 Borcherds 판 증명이 이 관찰에 기댄다.
+인자가 모듈러 형식의 인자인가라는 기하 문제가 유한 개의 선형 조건으로 환원된다. [Gross–Kohnen–Zagier 정리](gross-kohnen-zagier.md)의 Borcherds 판 증명이 이 관찰에 기댄다.
 
 ## 지수의 부호
 
@@ -112,13 +112,13 @@ $$
 
 ## Kudla 강령
 
-Heegner 인자들의 산술적 교차수가 [Eisenstein 급수](eisenstein-series.md)의 Fourier 계수와 같으리라는 것이 Kudla 의 추측이다. Borcherds 곱은 인자가 주인자가 되는 경우를 다루고, 산술적 판본에서는 $\log\Vert\Psi_f\Vert$ 가 Arakelov 이론의 Green 함수가 된다.
+Heegner 인자들의 산술적 교차수가 [Eisenstein 급수](eisenstein-series.md)의 Fourier 계수와 같으리라는 것이 Kudla 의 추측이다. Borcherds 곱은 인자가 주인자가 되는 경우를 다루고, 산술적 판본에서는 $\log\Vert\Psi_f\Vert$ 가 Arakelov 이론의 [Green 함수](greens-function.md)가 된다.
 
 ## 달빛과 Lie 대수
 
 괴물 Lie 대수의 분모 공식이 Borcherds 곱임을 보인 것이 [괴물 달빛 추측](monstrous-moonshine.md) 증명의 마지막 조각이었다. 무한곱의 지수가 $j$ 의 계수이므로 곱을 전개해 얻은 항등식이 [Hecke 작용소](hecke-operators.md)가 주는 재귀식과 같아진다. 그 재귀식이 계수를 유일하게 결정하므로 괴물군의 지표와 일치함이 확인된다.[^1]
 
-[^1]: R. Borcherds, *Automorphic forms with singularities on Grassmannians*, Invent. Math. **132** (1998), 491–562. 분모 공식과 달빛은 같은 저자의 *Monstrous moonshine and monstrous Lie superalgebras*, Invent. Math. **109** (1992). 해설과 조화 Maass 형식과의 관계는 J. Bruinier, J. Funke, *On two geometric theta lifts*, Duke Math. J. **125** (2004), 그리고 K. Ono, *Unearthing the visions of a master: harmonic Maass forms and number theory* (2009). Gross–Kohnen–Zagier 의 원논문은 *Heegner points and derivatives of L-series II*, Math. Ann. **278** (1987).
+[^1]: R. Borcherds, *Automorphic forms with singularities on Grassmannians*, Invent. Math. **132** (1998), 491–562. 분모 공식과 달빛은 같은 저자의 *Monstrous moonshine and monstrous Lie superalgebras*, Invent. Math. **109** (1992). 해설과 조화 [Maass 형식](maass-forms.md)과의 관계는 J. Bruinier, J. Funke, *On two geometric theta lifts*, Duke Math. J. **125** (2004), 그리고 K. Ono, *Unearthing the visions of a master: harmonic Maass forms and number theory* (2009). Gross–Kohnen–Zagier 의 원논문은 *Heegner points and derivatives of L-series II*, Math. Ann. **278** (1987).
 
 # 연관 문서
 

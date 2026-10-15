@@ -2,7 +2,7 @@
 
 # 개요
 
-$L^2(\Gamma\backslash\mathbb H)$ 의 이산 스펙트럼을 이루는 Maass 형식의 고윳값 $\lambda_j=\tfrac14+r_j^2$ 에는 닫힌 형태의 표현이 없다. $\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 의 첫 고윳값 $r_1\approx9.533$ 도 수치 계산의 결과다.
+$L^2(\Gamma\backslash\mathbb H)$ 의 이산 스펙트럼을 이루는 [Maass 형식](maass-forms.md)의 고윳값 $\lambda_j=\tfrac14+r_j^2$ 에는 닫힌 형태의 표현이 없다. $\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 의 첫 고윳값 $r_1\approx9.533$ 도 수치 계산의 결과다.
 
 Selberg 대각합 공식은 개별 고윳값 대신 고윳값 전체에 걸친 합을 곡면의 닫힌 측지선으로 표현한다.
 
@@ -12,7 +12,7 @@ $$
 
 왼쪽은 해석, 오른쪽은 [Riemann 계량](riemannian-metrics.md)이 정하는 측지선의 길이다. 이 등식에서 Weyl 법칙, 소측지선 정리, Maass 형식의 존재가 따라 나온다.
 
-공식의 구조는 소수 정리의 명시공식과 같다. 거기서 $\zeta$ 의 영점과 소수의 거듭제곱이 짝을 이루듯, 여기서는 Laplace 고윳값과 닫힌 측지선이 짝을 이룬다. Selberg 는 이 유비를 따라 [Riemann 가설](riemann-hypothesis.md)이 성립하는 zeta 함수를 만들었다.
+공식의 구조는 [소수 정리](prime-number-theorem.md)의 명시공식과 같다. 거기서 $\zeta$ 의 영점과 소수의 거듭제곱이 짝을 이루듯, 여기서는 Laplace 고윳값과 닫힌 측지선이 짝을 이룬다. Selberg 는 이 유비를 따라 [Riemann 가설](riemann-hypothesis.md)이 성립하는 zeta 함수를 만들었다.
 
 # 직관
 
@@ -31,7 +31,7 @@ $$
 
 $\Gamma\subset\mathrm{PSL}\_2(\mathbb R)$ 는 유한 공부피 이산군, $X=\Gamma\backslash\mathbb H$ 는 쌍곡 곡면, $\Delta=-y^2(\partial_x^2+\partial_y^2)$ 는 Laplace 작용소다. 이산 스펙트럼을 $\lambda_j=\tfrac14+r_j^2$ 로 쓴다.
 
-검사함수 $h(r)$ 는 $|\mathrm{Im}\thinspace r|\le\tfrac12+\delta$ 에서 정칙이고 $h(r)=O((1+|r|)^{-2-\delta})$ 인 짝함수이며, 그 Fourier 변환은 $g(u)=\frac1{2\pi}\int h(r)e^{-iru}dr$ 다.
+검사함수 $h(r)$ 는 $|\mathrm{Im}\thinspace r|\le\tfrac12+\delta$ 에서 정칙이고 $h(r)=O((1+|r|)^{-2-\delta})$ 인 짝함수이며, 그 [Fourier 변환](fourier-transform.md)은 $g(u)=\frac1{2\pi}\int h(r)e^{-iru}dr$ 다.
 
 ## 쌍곡 공액류와 닫힌 측지선
 
@@ -63,7 +63,7 @@ $$
 =\text{(항등)}+\text{(쌍곡)}+\text{(타원)}+\text{(포물)}
 $$
 
-$\varphi$ 는 Eisenstein 급수의 산란 행렬식이고 $\mathrm{SL}\_2(\mathbb Z)$ 에서는 $\varphi(s)=\xi(2s-1)/\xi(2s)$ 다. [Riemann zeta 함수](riemann-zeta.md)가 공식 안에 직접 나타나는 자리이고, 정규화 뒤에 $\tfrac14h(0)\varphi(\tfrac12)$ 항이 함께 들어온다.
+$\varphi$ 는 [Eisenstein 급수](eisenstein-series.md)의 산란 행렬식이고 $\mathrm{SL}\_2(\mathbb Z)$ 에서는 $\varphi(s)=\xi(2s-1)/\xi(2s)$ 다. [Riemann zeta 함수](riemann-zeta.md)가 공식 안에 직접 나타나는 자리이고, 정규화 뒤에 $\tfrac14h(0)\varphi(\tfrac12)$ 항이 함께 들어온다.
 
 ## Selberg zeta 함수
 
@@ -139,7 +139,7 @@ $$
 \sum_{\lbrace\gamma\rbrace}\mathrm{vol}\cdot O_\gamma(f)\thickspace=\thickspace\sum_\pi m(\pi)\thinspace\mathrm{tr}\thinspace\pi(f)
 $$
 
-두 군 $G,H$ 에 대해 공식을 세우고 기하 쪽을 맞추면 스펙트럼 쪽이 맞아 표현의 대응이 나온다. [Langlands 강령](langlands-program.md)의 함수성을 증명하는 주요 수단이며, 기하 쪽을 맞추는 데 필요한 등식이 기본 보조정리다. 비콤팩트성의 발산을 잘라 내는 Arthur 의 절단은 $\varphi'/\varphi$ 항의 일반화다.
+두 군 $G,H$ 에 대해 공식을 세우고 기하 쪽을 맞추면 스펙트럼 쪽이 맞아 표현의 대응이 나온다. [Langlands 강령](langlands-program.md)의 함수성을 증명하는 주요 수단이며, 기하 쪽을 맞추는 데 필요한 등식이 [기본 보조정리](fundamental-lemma.md)다. 비콤팩트성의 발산을 잘라 내는 Arthur 의 절단은 $\varphi'/\varphi$ 항의 일반화다.
 
 ## 양자 혼돈
 
