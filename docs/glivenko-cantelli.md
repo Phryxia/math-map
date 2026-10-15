@@ -2,7 +2,7 @@
 
 # 개요
 
-Glivenko–Cantelli 정리는 경험 분포함수가 참 분포함수로 균등하게 수렴한다는 진술이다. 표본 $n$ 개에서 만든 계단함수 $F_n$ 과 참 함수 $F$ 의 차이를 모든 점에서 본 최대값이 거의 확실하게 $0$ 으로 간다.
+Glivenko–Cantelli 정리(Glivenko–Cantelli theorem)는 경험 분포함수가 참 분포함수로 균등하게 수렴한다는 진술이다. 표본 $n$ 개에서 만든 계단함수 $F_n$ 과 참 함수 $F$ 의 차이를 모든 점에서 본 최대값이 거의 확실하게 $0$ 으로 간다.
 
 점 하나를 고정하면 이 수렴은 [큰 수의 법칙](law-of-large-numbers.md)이다. 정리의 내용은 비가산 개의 점에서 그 수렴이 동시에 일어난다는 것이고, 근거는 $F_n$ 과 $F$ 가 모두 단조증가라는 데 있다.
 
@@ -46,7 +46,7 @@ $$D_n = \sup\_{x\in\mathbb R}\vert F_n(x)-F(x)\vert$$
 
 **정리.** $X_i$ 가 분포함수 $F$ 를 따르는 독립 표본이면 $D_n\to 0$ 이 거의 확실하게 성립한다.
 
-증명은 직관 절의 격자 계산에 Borel–Cantelli 보조정리를 붙인 것이다. 각 $\varepsilon$ 에 대해 $P(D_n\gt \varepsilon)$ 이 $n$ 에 대해 지수로 줄어 합이 유한하므로, $D_n\gt \varepsilon$ 인 사건이 유한 번만 일어난다. $\varepsilon$ 을 $1/m$ 으로 두고 $m$ 에 대해 합집합을 취한다.
+증명은 직관 절의 격자 계산에 [Borel–Cantelli 보조정리](borel-cantelli.md)를 붙인 것이다. 각 $\varepsilon$ 에 대해 $P(D_n\gt \varepsilon)$ 이 $n$ 에 대해 지수로 줄어 합이 유한하므로, $D_n\gt \varepsilon$ 인 사건이 유한 번만 일어난다. $\varepsilon$ 을 $1/m$ 으로 두고 $m$ 에 대해 합집합을 취한다.
 
 $F$ 가 불연속이어도 결론이 성립한다. 격자점을 $F$ 의 값이 $1/k$ 를 넘어 뛰는 자리에서 그 뜀의 양쪽에 두면 같은 계산이 간다.
 

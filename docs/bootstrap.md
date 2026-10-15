@@ -2,7 +2,7 @@
 
 # 개요
 
-붓스트랩은 표본에서 다시 표본을 뽑아 통계량의 분포를 근사하는 방법이다. 참 분포 $P$ 를 모르는 자리에 경험 분포 $P_n$ 을 넣고, $P_n$ 에서 크기 $n$ 의 표본을 복원추출로 뽑아 통계량을 다시 계산한다.
+붓스트랩(bootstrap)은 표본에서 다시 표본을 뽑아 통계량의 분포를 근사하는 방법이다. 참 분포 $P$ 를 모르는 자리에 경험 분포 $P_n$ 을 넣고, $P_n$ 에서 크기 $n$ 의 표본을 복원추출로 뽑아 통계량을 다시 계산한다.
 
 근사의 근거는 [경험 과정](empirical-process.md)의 수렴이다. 통계량이 $P$ 를 매끄럽게 따르는 함수이고 함수족이 Donsker 족이면 재표본 통계량의 분포가 원래 통계량의 분포와 같은 극한을 갖는다.
 
@@ -65,11 +65,11 @@ $\sqrt n\thinspace (T_n^{\ast}-T_n)$ 의 분위수를 $T_n$ 에 더해 만드는
 
 **정리.** $E X^2\lt\infty$ 이면 조건부 분포 $\sqrt n\thinspace (\bar X^{\ast}-\bar X)$ 가 거의 확실하게 $N(0,\sigma^2)$ 으로 [약수렴](weak-convergence.md)한다[^1].
 
-증명의 요지. $\sqrt n\thinspace (\bar X^{\ast}-\bar X) = n^{-1/2}\sum_{i=1}^n (M_i-1)X_i$ 이고 다항 횟수 $M_i$ 는 평균 $1$, 분산 $1-1/n$ 을 갖는다. 원래 표본을 고정하면 이 합의 조건부 분산이 표본분산이고, 큰 수의 법칙이 그것을 $\sigma^2$ 으로 보낸다. Lindeberg 조건을 표본의 네제곱 평균으로 확인한다.
+증명의 요지. $\sqrt n\thinspace (\bar X^{\ast}-\bar X) = n^{-1/2}\sum_{i=1}^n (M_i-1)X_i$ 이고 다항 횟수 $M_i$ 는 평균 $1$, 분산 $1-1/n$ 을 갖는다. 원래 표본을 고정하면 이 합의 조건부 분산이 표본분산이고, [큰 수의 법칙](law-of-large-numbers.md)이 그것을 $\sigma^2$ 으로 보낸다. Lindeberg 조건을 표본의 네제곱 평균으로 확인한다.
 
 ## Donsker 족에서의 타당성
 
-**정리.** 함수족 $\mathcal F$ 가 Donsker 족이면 $\sqrt n\thinspace (P_n^{\ast}-P_n)$ 이 $\ell^\infty(\mathcal F)$ 에서 경험 과정의 극한 $\mathbb G$ 와 같은 Gauss 과정으로 조건부 약수렴한다[^1].
+**정리.** 함수족 $\mathcal F$ 가 Donsker 족이면 $\sqrt n\thinspace (P_n^{\ast}-P_n)$ 이 $\ell^\infty(\mathcal F)$ 에서 경험 과정의 극한 $\mathbb G$ 와 같은 [Gauss 과정](gaussian-processes.md)으로 조건부 약수렴한다[^1].
 
 함수 $T$ 가 $P$ 에서 Hadamard 미분가능하면 미분의 선형성으로 통계량 수준의 수렴이 따라온다. 중위수, 분위수, 절단평균, 상관계수가 이 조건을 만족한다.
 

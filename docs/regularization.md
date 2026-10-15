@@ -2,7 +2,7 @@
 
 # 개요
 
-최소제곱 추정은 잔차제곱합만 최소로 만든다. 여기에 계수의 크기를 재는 항을 더해 함께 최소로 만드는 것이 **정칙화**다.
+정칙화(regularization)는 추정의 목적함수에 계수의 크기를 재는 항을 더하는 방법이다. 최소제곱 추정은 잔차제곱합만 최소로 만들지만, 정칙화는 잔차제곱합과 그 항을 함께 최소로 만든다.
 
 $$
 \hat\beta=\arg\min\_\beta\thinspace \Vert y-X\beta\Vert^2+\lambda\thinspace P(\beta)
@@ -89,7 +89,7 @@ $\vert z_j\vert\le\lambda/2$ 인 좌표가 정확히 $0$ 이 된다. 같은 조�
 - **다중공선성.** 설명변수가 거의 선형종속이면 [선형회귀](linear-regression.md)의 계수 분산이 커진다. 능형회귀가 $X^\top X$ 의 대각을 키워 이 분산을 누른다.
 - **변수 선택.** 라소의 해에서 $0$ 이 아닌 좌표만 모형에 남는다. 적합과 선택을 한 번의 볼록 최적화로 함께 한다.
 - **벌점 세기의 결정.** $\lambda$ 를 격자 위에서 훑고 [교차검증](cross-validation.md) 오차가 가장 작은 값을 고른다. 능형회귀는 적합이 선형이라 하나 빼기 교차검증의 닫힌 꼴이 그대로 쓰인다.
-- **커널 방법.** 능형회귀의 벌점을 재생핵 Hilbert 공간의 노름으로 바꾸면 표현 정리가 해를 자료점에서의 핵 값들의 선형결합으로 준다. [Gauss 과정](gaussian-processes.md) 회귀의 사후평균이 같은 식이다.
+- **커널 방법.** 능형회귀의 벌점을 [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)의 노름으로 바꾸면 표현 정리가 해를 자료점에서의 핵 값들의 선형결합으로 준다. [Gauss 과정](gaussian-processes.md) 회귀의 사후평균이 같은 식이다.
 - **역문제.** 관측 연산자가 나쁜 조건수를 가질 때 $\ell^2$ 벌점을 더해 해를 안정시키는 것을 Tikhonov 정칙화라 한다. 능형회귀가 그 유한차원 경우다.
 
 [^1]: A. E. Hoerl, R. W. Kennard, "Ridge regression: biased estimation for nonorthogonal problems", *Technometrics* **12** (1970), 55–67. 교재 서술은 T. Hastie, R. Tibshirani, J. Friedman, *The Elements of Statistical Learning*, 2nd ed., Springer (2009), 3.4절.
