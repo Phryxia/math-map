@@ -48,7 +48,7 @@ $$
 S^+\_{3/2}(\Gamma_0(4N))=\Bigl\lbrace g=\sum a(m)q^m\in S_{3/2}(\Gamma_0(4N)):\ a(m)\ne0\Rightarrow -m\equiv0,1\ (\mathrm{mod}\ 4)\Bigr\rbrace
 $$
 
-계수가 살아남는 $m$ 의 조건이 Heegner 인자류가 $0$ 이 아닐 수 있는 $m$ 의 조건과 맞는다. Hecke 작용소가 $y_m$ 들을 섞는 방식도 Shimura 대응이 무게 $3/2$ 쪽에 주는 Hecke 작용과 맞는다.
+계수가 살아남는 $m$ 의 조건이 Heegner 인자류가 $0$ 이 아닐 수 있는 $m$ 의 조건과 맞는다. [Hecke 작용소](hecke-operators.md)가 $y_m$ 들을 섞는 방식도 Shimura 대응이 무게 $3/2$ 쪽에 주는 Hecke 작용과 맞는다.
 
 ## 정리
 
@@ -106,7 +106,7 @@ $$
 
 ## 특수 순환류의 모듈러성
 
-Heegner 점을 고차원 순환류로 바꾼 같은 모양의 진술이 뒤따랐다. Zhang 은 Kuga–Sato 다양체의 Heegner 순환류에 대해, Kudla 와 Millson 은 직교형 Shimura 다양체의 특수 순환류에 대해 생성함수가 모듈러임을 보였다.[^4] Kudla 강령은 이 계열을 산술적 교차수로 확장한다.
+Heegner 점을 고차원 순환류로 바꾼 같은 모양의 진술이 뒤따랐다. Zhang 은 Kuga–Sato 다양체의 Heegner 순환류에 대해, Kudla 와 Millson 은 직교형 [Shimura 다양체](shimura-varieties.md)의 특수 순환류에 대해 생성함수가 모듈러임을 보였다.[^4] Kudla 강령은 이 계열을 산술적 교차수로 확장한다.
 
 ## Borcherds 곱의 존재 판정
 

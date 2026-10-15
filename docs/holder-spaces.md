@@ -4,7 +4,7 @@
 
 Hölder 공간은 함수값의 차를 두 점 사이 거리의 $\alpha$ 제곱으로 통제하는 함수들의 공간이다. 지수 $\alpha$ 가 $1$ 이면 [Lipschitz 사상](lipschitz-maps.md)의 조건과 같고, $\alpha$ 를 $1$ 보다 작게 잡으면 Lipschitz 가 아닌 함수까지 들어온다.
 
-노름을 균등노름과 차의 비의 상한을 더해 정의하면 [Banach 공간](banach-spaces.md)이 된다. 타원형 방정식의 Schauder 추정과 Brown 운동 경로의 정칙성이 이 공간의 지수로 적힌다.
+노름을 균등노름과 차의 비의 상한을 더해 정의하면 [Banach 공간](banach-spaces.md)이 된다. 타원형 방정식의 [Schauder 추정](schauder-estimates.md)과 Brown 운동 경로의 정칙성이 이 공간의 지수로 적힌다.
 
 # 직관
 
@@ -105,7 +105,7 @@ $p$ 가 $n$ 에 가까우면 $\gamma$ 가 $0$ 에 가깝고, $p\to\infty$ 에서
 # 활용
 
 - **Schauder 추정.** [타원형 정칙성](elliptic-regularity.md) 문서의 Hölder 판은 $f\in C^{0,\alpha}(\overline U)$ 에서 약한 해가 $C^{2,\alpha}(\overline U)$ 에 든다는 추정이다. 자료와 해를 같은 지수 $\alpha$ 로 재고 미분 횟수만 둘 올리는 진술이라 $C^{k,\alpha}$ 의 두 지표가 모두 쓰인다.
-- **Lipschitz 사상.** $\alpha=1$ 인 경우가 Lipschitz 사상 문서의 조건이고, Rademacher 정리의 거의 모든 점에서의 미분가능성은 $\alpha\lt 1$ 에서 성립하지 않는다. 위의 차분몫 계산이 $\alpha\lt 1$ 에서는 아무 상한도 주지 않기 때문이다.
+- **Lipschitz 사상.** $\alpha=1$ 인 경우가 Lipschitz 사상 문서의 조건이고, [Rademacher 정리](rademacher-theorem.md)의 거의 모든 점에서의 미분가능성은 $\alpha\lt 1$ 에서 성립하지 않는다. 위의 차분몫 계산이 $\alpha\lt 1$ 에서는 아무 상한도 주지 않기 때문이다.
 - **Brown 운동의 경로.** [Brown 운동](brownian-motion.md)의 경로는 거의 확실히 $\alpha\lt 1/2$ 에서 지수 $\alpha$ 의 Hölder 조건을 만족하고 $\alpha\ge 1/2$ 에서는 만족하지 않는다.[^3] 증분의 분산이 시간 간격에 비례한다는 성질이 이 지수를 정한다.
 - **Sobolev 매입의 끝.** Morrey 부등식은 $p\gt n$ 에서 Sobolev 함수에 각 점의 값을 주고, 그 값이 얼마나 고른지를 Hölder 지수로 적는다.
 
