@@ -30,7 +30,7 @@ $$
 
 ## 일차 영점 밀도
 
-$\phi$ 를 짝인 Schwartz 함수이고 Fourier 변환 $\hat\phi$ 의 지지가 콤팩트라 한다. $L(s,f)$ 의 **일차 영점 밀도**는
+$\phi$ 를 짝인 Schwartz 함수이고 [Fourier 변환](fourier-transform.md) $\hat\phi$ 의 지지가 콤팩트라 한다. $L(s,f)$ 의 **일차 영점 밀도**는
 
 $$
 D(f;\phi)=\sum\_{\gamma_f}\phi(\tilde\gamma_f)
@@ -85,7 +85,7 @@ $\hat\phi$ 의 지지가 $(-\alpha,\alpha)$ 이면 소수 합에 실제로 들�
 
 **정리.** 레벨 $N$ 의 Hecke 고유형식 족에서 $\hat\phi$ 의 지지가 $(-2,2)$ 안이면, 일반 Riemann 가설 아래 일차 영점 밀도가 함수방정식의 부호에 따라 $\mathrm{O}^{+}$ 또는 $\mathrm{O}^{-}$ 커널과 일치한다. 지지를 좁히면 가설 없이 같은 결론이 나온다.[^2]
 
-증명의 요지. $\lambda_f(p)$ 의 족 평균을 Petersson 공식이 Kloosterman 합으로 바꾸고, 그 합을 Weil 의 추정으로 누른다.
+증명의 요지. $\lambda_f(p)$ 의 족 평균을 [Petersson 공식](petersson-formula.md)이 [Kloosterman 합](kloosterman-sums.md)으로 바꾸고, 그 합을 Weil 의 추정으로 누른다.
 
 ## 곡선족의 모노드로미
 
