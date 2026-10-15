@@ -78,7 +78,7 @@ $$
 
 $B_k$ 는 [Bernoulli 수](bernoulli-numbers.md)다. 두 식은 함수방정식으로 서로 옮겨진다. 앞 식의 $k=1$ 이 $\zeta(2)=\pi^2/6$ 이고, 뒤 식의 $n=1$ 이 $\zeta(-1)=-1/12$ 다.
 
-## 직선 $\mathrm{Re}\thinspace s=1$ 위의 비소멸
+## 직선 Re s=1 위의 비소멸
 
 $t\ne0$ 이면 $\zeta(1+it)\ne0$ 이다. 증명은 다음 부등식을 쓴다.
 

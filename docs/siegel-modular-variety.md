@@ -40,7 +40,7 @@ $N\ge 1$ 에 대해 주합동 부분군 $\Gamma_g(N)=\lbrace\gamma\in \mathrm{Sp
 
 # 성질
 
-## 차원과 $g=1$ 의 경우
+## 차원과 g=1 의 경우
 
 $\dim\mathcal A_g=g(g+1)/2$ 다. $g=1$ 이면 차원이 $1$ 이고 $\mathcal A_1=\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 로 [모듈러 곡선](modular-curves.md) $Y(1)$ 과 같다. $j$ 불변량이 이 몫과 $\mathbb C$ 사이의 동형이다.
 

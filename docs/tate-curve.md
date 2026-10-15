@@ -87,7 +87,7 @@ $$
 
 꼴이고 $\chi$ 는 원분 지표다. $\ast$ 는 $q$ 의 Kummer 코사이클이며, $q$ 가 $\ell$ 멱이 아니면 이 확장이 분해되지 않는다.
 
-## $\mathcal L$ 불변량
+## L 불변량
 
 $$
 \mathcal L=\frac{\log_p(q_E)}{\mathrm{ord}\_p(q_E)}
@@ -97,7 +97,7 @@ $$
 
 # 활용
 
-## $p$ 진 $L$ 함수의 예외적 영점
+## p 진 L 함수의 예외적 영점
 
 $E$ 가 $p$ 에서 분해 곱셈적 환원을 가지면 $p$ 진 $L$ 함수의 보간 인자가 $s=1$ 에서 $0$ 이 되어 복소 $L$ 함수와 소실 차수가 어긋난다. Mazur–Tate–Teitelbaum 추측은 그 차이를 $\mathcal L$ 로 메우며, Greenberg 와 Stevens 가 Hida 족 위의 변형으로 증명했다.[^2]
 

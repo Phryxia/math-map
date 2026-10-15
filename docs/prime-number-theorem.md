@@ -90,7 +90,7 @@ $$
 
 명시 공식에서 $\lvert x^\rho\rvert=x^{1/2}$ 가 되기 때문이다. 역도 성립하므로 이 오차 한계는 [Riemann 가설](riemann-hypothesis.md)과 동치다.
 
-## $\pi(x)$ 와 $\mathrm{Li}(x)$ 의 부호
+## π(x) 와 Li(x) 의 부호
 
 계산된 범위에서는 $\pi(x)\lt\mathrm{Li}(x)$ 이지만 Littlewood 는 차의 부호가 무한히 자주 바뀜을 증명했다. 처음 바뀌는 지점의 상계인 Skewes 수는 매우 크다.
 

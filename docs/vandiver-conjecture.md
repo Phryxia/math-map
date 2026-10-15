@@ -93,7 +93,7 @@ $E_\infty$ 는 단수의 극한, $C_\infty$ 는 순환체 단수의 극한이다
 
 Kummer 는 정칙소수에 대해 Fermat 방정식의 첫째 경우, 곧 $p\nmid xyz$ 인 경우를 해결했다. Vandiver 는 $p\nmid h^{+}$ 라는 더 약한 가정으로 $p\mid xyz$ 인 둘째 경우까지 처리했고, 이 응용에서 추측의 이름이 붙었다. Wiles 이후 Fermat 자체는 해결되었다.
 
-## 대수적 $K$ 이론
+## 대수적 K 이론
 
 $K_n(\mathbb Z)$ 의 계산에서 짝수 $n=4k$ 의 경우가 Vandiver 에 걸려 있다. Vandiver 를 가정하면 $K_{4k}(\mathbb Z)=0$ 이고 홀수 자리의 위수가 $\zeta(1-2k)$ 의 분자와 분모로 명시된다. 어떤 $k$ 에 대해 $K_{4k}(\mathbb Z)\ne0$ 이 증명되면 Vandiver 의 반례가 나오므로, 위상수학적 계산으로 이 추측을 판정한다.
 

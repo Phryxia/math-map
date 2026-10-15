@@ -91,7 +91,7 @@ $$
 
 Shalika 와 Gelfand–Kazhdan 의 정리로 $\mathrm{Hom}\_{N}(\pi_v,\psi_v)$ 는 많아야 1 차원이다. 그러므로 $\pi=\otimes_v\pi_v$ 가 첨점 표현이면 각 자리에서 $\psi_v$ 형 Whittaker 모형이 유일하게 존재하고 $W_\varphi=\prod_vW_v$ 로 분해된다. 피적분함수가 곱이고 측도가 곱이므로 전역 적분이 국소 적분의 곱이 된다.
 
-## $\mathrm{GL}\_n\times\mathrm{GL}\_m$ 적분
+## GLₙ×GLₘ 적분
 
 $m\lt n$ 이고 $\pi$ 와 $\pi'$ 가 각각 $\mathrm{GL}\_n(\mathbb A)$ 와 $\mathrm{GL}\_m(\mathbb A)$ 의 첨점 표현이라 하자. $m=n-1$ 이면
 
@@ -112,7 +112,7 @@ $$
 
 다. 고전적 적분의 $E(z,s)$ 가 이 자리에 온다.
 
-## 국소 인자와 전역 $L$ 함수
+## 국소 인자와 전역 L 함수
 
 각 자리에서 $\Psi_v(s,W_v,W'\_v)$ 는 $q_v^{-s}$ 의 유리함수이고, 이들이 생성하는 분수 아이디얼의 생성원으로 국소 $L$ 인자 $L(s,\pi_v\times\pi'\_v)$ 를 정의한다. 비분기 자리에서는 Satake 매개변수 $(\alpha_i)$ 와 $(\beta_j)$ 로
 
@@ -149,7 +149,7 @@ $$
 - **$\mathrm{Re}(s)=1$ 비소멸.** $L(1+it,\pi)\ne0$ 이다. $\pi\times\tilde\pi$ 의 $L$ 함수가 계수가 음이 아니고 $s=1$ 에 극을 가진다는 사실을 [소수 정리](prime-number-theorem.md)의 $\zeta$ 논법과 똑같이 쓴다.
 - **Ramanujan 형 추정.** $L(s,\pi\times\tilde\pi)$ 가 $\mathrm{Re}(s)\gt 1$ 에서 수렴한다는 사실만으로 Satake 매개변수가 $\lvert\alpha_i\rvert\lt q^{1/2}$ 로 갇힌다(Jacquet–Shalika). 더 정교한 논법이 $\lvert\alpha_i\rvert\le q^{1/2-1/(n^2+1)}$ 를 준다(Luo–Rudnick–Sarnak). 추측이 요구하는 $\lvert\alpha_i\rvert=1$ 에는 미치지 못한다.
 
-## 계수의 합과 $L$ 함수의 차이
+## 계수의 합과 L 함수의 차이
 
 고전적 적분이 주는 $\sum_na_n\overline{b_n}n^{-s}$ 는 Euler 곱이 아니다. Hecke 고유형식의 계수가 곱셈적이어도 $a_nb_n$ 의 국소 인자가 2 차가 아니기 때문이다. 국소 수준의 관계는 다음 항등식이다.
 

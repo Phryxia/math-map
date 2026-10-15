@@ -22,7 +22,7 @@ $\Theta$ 가 대각화 가능하고 고윳값이 정수 $k$ 이면 $\mathbb C_p\
 
 # 정의
 
-## 순환분체 확대와 $\mathbb C_p$ 표현
+## 순환분체 확대와 Cp 표현
 
 $K/\mathbb Q_p$ 를 유한 확장, $K_\infty=K(\mu_{p^\infty})$ , $\Gamma=\mathrm{Gal}(K_\infty/K)$ 로 두고, $\chi:\Gamma\to\mathbb Z_p^\times$ 를 순환분체 지표, $\widehat{K_\infty}$ 를 $K_\infty$ 의 완비화라 한다. $W$ 는 $\mathbb C_p$ 위의 유한차원 반선형 $G_K$ 표현이며, 예를 들어 $W=\mathbb C_p\otimes_{\mathbb Q_p}V$ 다.
 
@@ -81,7 +81,7 @@ $\Theta$ 는 Hodge–Tate 무게만 본다. $B_{\mathrm{dR}}$ 이 보는 여과�
 
 # 활용
 
-## $p$ 진 족
+## p 진 족
 
 고전적 무게에서 $\Theta$ 의 고윳값은 정수다. Coleman–Mazur 고윳값 곡선처럼 자기동형 형식의 $p$ 진 족을 다루면 무게가 $p$ 진적으로 변해 Hodge–Tate 무게가 정수가 아니게 되지만, $\Theta$ 는 여전히 정의된다. 일반화된 Hodge–Tate 무게는 족 위에서 해석적으로 변하고 곡선 위의 함수로 읽힌다.
 
@@ -89,7 +89,7 @@ $\Theta$ 는 Hodge–Tate 무게만 본다. $B_{\mathrm{dR}}$ 이 보는 여과�
 
 [Fontaine–Mazur 추측](fontaine-mazur.md) 쪽 작업에서 표현이 기하에서 오는지 판정하려면 de Rham 성을 확인해야 한다. $\Theta$ 의 고윳값이 정수가 아니거나 대각화되지 않으면 즉시 탈락이므로, 계산 가능한 필요조건으로 쓰인다.
 
-## 국소 Langlands 의 $p$ 진 판
+## 국소 Langlands 의 p 진 판
 
 $(\varphi,\Gamma)$ 가군의 언어에서 $\Gamma$ 작용의 미분이 Sen 작용소이고, $p$ 진 국소 Langlands 대응에서 무한소 자료가 된다. $\mathrm{GL}\_2(\mathbb Q_p)$ 의 Colmez 대응에서 Sen 무게가 표현 쪽의 무한소 지표로 옮겨간다. 아르키메데스 자리에서 $(\mathfrak g,K)$ 가군의 무한소 지표가 하던 일을 $p$ 진 자리에서 $\Theta$ 가 한다.
 
