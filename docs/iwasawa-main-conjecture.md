@@ -12,7 +12,7 @@ $$
 
 가 성립한다. 세 상수는 특성 멱급수에서 읽는다.
 
-[Dirichlet $L$ 함수](dirichlet-l-functions.md)의 특수값을 $p$ 진적으로 보간해 얻는 Kubota–Leopoldt [$p$ 진 $L$ 함수](p-adic-l-function.md) $L_p(s,\chi)$ 도 같은 $\Lambda$ 안의 원소로 실현된다. 한쪽은 이데알류군의 극한이고 다른 쪽은 Bernoulli 수의 보간이다.
+[Dirichlet $L$ 함수](dirichlet-l-functions.md)의 특수값을 $p$ 진적으로 보간해 얻는 Kubota–Leopoldt [$p$ 진 $L$ 함수](p-adic-l-function.md) $L_p(s,\chi)$ 도 같은 $\Lambda$ 안의 원소로 실현된다. 한쪽은 이데알류군의 극한이고 다른 쪽은 [Bernoulli 수](bernoulli-numbers.md)의 보간이다.
 
 > **Iwasawa 주추측.** 두 원소가 생성하는 $\Lambda$ 의 아이디얼은 같다.
 
@@ -32,7 +32,7 @@ $$
 
 # 정의
 
-## 순환 $\mathbb Z_p$ 확대와 Iwasawa 대수
+## 순환 Zₚ 확대와 Iwasawa 대수
 
 $\mathbb Q(\mu_{p^\infty})/\mathbb Q$ 의 Galois 군은 $\Delta\times\Gamma$ 로 쪼개진다. $\Delta\cong(\mathbb Z/p)^{\times}$ 는 위수 $p-1$ 의 유한군, $\Gamma\cong\mathbb Z_p$ 다. $\Gamma$ 의 고정체 탑 $\mathbb Q_n$ 이 순환 $\mathbb Z_p$ 확대다.
 
@@ -40,7 +40,7 @@ $$
 \Lambda=\mathbb Z_p[[\Gamma]]=\varprojlim_n\mathbb Z_p[\Gamma/\Gamma^{p^{n}}]\ \cong\ \mathbb Z_p[[T]],\qquad T=\gamma-1
 $$
 
-동형은 Serre 의 정리이며, 이후 모든 계산이 이 멱급수환 안에서 이루어진다.
+동형은 Serre 의 정리이며, 이후 모든 계산이 이 멱급수환, 곧 [Iwasawa 대수](iwasawa-algebra.md) 안에서 이루어진다.
 
 ## 구조정리와 특성 아이디얼
 
@@ -71,7 +71,7 @@ $$
 
 **Ferrero–Washington 정리.** 아벨 수체의 순환 $\mathbb Z_p$ 확대에서는 $\mu=0$ 이다. 그러므로 순환체의 경우 성장은 순수하게 $\lambda n+\nu$ 다.
 
-## Kubota–Leopoldt $p$ 진 $L$ 함수
+## Kubota–Leopoldt p 진 L 함수
 
 $\chi$ 를 도체가 $p$ 의 거듭제곱인 지표라 하자. 다음 보간 성질로 유일하게 결정되는 $p$ 진 해석함수 $L_p(s,\chi)$ 가 존재한다.
 
@@ -103,7 +103,7 @@ $$
 p\mid B_k\quad\Longleftrightarrow\quad A^{(\omega^{1-k})}\ne0
 $$
 
-Herbrand 가 $\Leftarrow$ 를, Ribet 이 $\Rightarrow$ 를 증명했다. Herbrand 쪽은 Stickelberger 원소가 류군을 소멸시킨다는 사실에서 바로 나오고, Ribet 쪽은 [Eisenstein 급수](eisenstein-series.md)와 첨점형식의 합동에서 불분해 확대를 만들어 류군의 원소를 생산해야 한다. 이 이론에서 어려운 방향은 늘 군이 크다는 쪽이다.
+Herbrand 가 $\Leftarrow$ 를, Ribet 이 $\Rightarrow$ 를 증명했다. Herbrand 쪽은 [Stickelberger 원소](stickelberger.md)가 류군을 소멸시킨다는 사실에서 바로 나오고, Ribet 쪽은 [Eisenstein 급수](eisenstein-series.md)와 첨점형식의 합동에서 불분해 확대를 만들어 류군의 원소를 생산해야 한다. 이 이론에서 어려운 방향은 늘 군이 크다는 쪽이다.
 
 Mazur–Wiles 는 Ribet 의 방법을 탑 전체로 밀어 올렸고, Rubin 은 군이 작다는 반대 방향을 Euler 계로 잡아 남은 절반을 채웠다.
 
@@ -121,7 +121,7 @@ $1-\zeta_{p^{n}}$ 자체는 $p$ 위의 소원소이고 단수가 되는 것은 �
 
 ## Rubin 의 증명
 
-1. **Euler 계의 확보.** $c_n=\frac{1-\zeta_{n}^{a}}{1-\zeta_n}$ 들이 $H^1(\mathbb Q(\mu_n),\mathbb Z_p(1))$ 안에서 자취 관계 $\mathrm{cor}(c_{n\ell})=(1-\mathrm{Fr}\_\ell^{-1})c_n$ 을 만족한다. Kummer 이론으로 단수군이 곧 $H^1(\cdot,\mathbb Z_p(1))$ 이므로 대수적 원소가 그대로 코호몰로지 류다.
+1. **Euler 계의 확보.** $c_n=\frac{1-\zeta_{n}^{a}}{1-\zeta_n}$ 들이 $H^1(\mathbb Q(\mu_n),\mathbb Z_p(1))$ 안에서 자취 관계 $\mathrm{cor}(c_{n\ell})=(1-\mathrm{Fr}\_\ell^{-1})c_n$ 을 만족한다. [Kummer 이론](kummer-theory.md)으로 단수군이 곧 $H^1(\cdot,\mathbb Z_p(1))$ 이므로 대수적 원소가 그대로 코호몰로지 류다.
 2. **유도.** Kolyvagin 유도 연산자로 $\kappa_n$ 을 만든다. 각 $\kappa_n$ 은 $n$ 밖에서만 국소 조건을 만족한다.
 3. **상호법칙.** [Poitou–Tate](poitou-tate.md) 의 대역 상호법칙으로 이데알류군의 원소를 하나씩 죽인다. $\ell$ 을 Chebotarev 로 고르는 자유가 여기서 쓰인다.
 4. **결론.** $\char35{}X_\infty^{(\chi)}$ 가 $L_p$ 쪽이 허용하는 크기 이하임을 얻어 한쪽 나눔이 나온다.
@@ -152,7 +152,7 @@ $p$ 가 $h$ 를 나누지 않는 정칙소수일 조건이 $p\nmid B_2B_4\cdots 
 
 같은 도식이 [타원곡선](elliptic-curves.md)에 옮겨진다. $E$ 의 Selmer 군을 순환 $\mathbb Z_p$ 탑 위에서 모아 $\Lambda$ 가군을 만들고, 그 특성 아이디얼이 Mazur–Swinnerton-Dyer 의 $p$ 진 $L$ 함수와 같다는 것이 타원곡선 주추측이다. Kato 의 Euler 계가 한쪽 나눔을, Skinner–Urban 이 Eisenstein 합동으로 반대쪽을 주었다. 이 정리에서 $p$ 진 [BSD](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer)와 조건부로 고전적 BSD 의 일부가 따라 나온다. Euler 계가 상한을, 합동이 하한을 주는 구도는 순환체에서와 같다.
 
-## $p$ 진 $L$ 함수의 계산
+## p 진 L 함수의 계산
 
 류군을 직접 계산하기 어려운 층에서도 $L_p$ 의 $\lambda$ 불변량을 Bernoulli 수로 계산해 류군의 성장을 예측할 수 있고, 반대로 작은 층의 류군에서 $L_p$ 의 영점 위치를 읽을 수 있다. Iwasawa 불변량 표가 수백만까지의 소수에 대해 이 방식으로 작성되어 있다.
 

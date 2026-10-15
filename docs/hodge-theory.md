@@ -6,7 +6,7 @@
 
 [Riemann 계량](riemannian-metrics.md)은 형식들 사이의 내적을 주므로 류 안에서 가장 짧은 형식을 물을 수 있게 하고, [콤팩트](compactness.md) 다양체에서는 그런 형식이 정확히 하나 존재한다. 그것이 조화형식이고 Laplace 작용소의 핵에 드는 형식이다.
 
-Hodge 정리는 구멍의 개수라는 위상 불변량과 타원형 편미분방정식 $\Delta\omega=0$ 의 해공간을 잇는다. 계량을 바꿔도 해공간의 차원이 변하지 않는다는 뜻이며, 지표 정리 계열의 원형이다. 대수기하의 Hodge 구조와 물리의 게이지 이론이 여기에 기댄다.
+Hodge 정리는 구멍의 개수라는 위상 불변량과 타원형 편미분방정식 $\Delta\omega=0$ 의 해공간을 잇는다. 계량을 바꿔도 해공간의 차원이 변하지 않는다는 뜻이며, [지표 정리](index-theorem.md) 계열의 원형이다. 대수기하의 Hodge 구조와 물리의 게이지 이론이 여기에 기댄다.
 
 # 직관
 
@@ -38,7 +38,7 @@ $$
 
 이고, 벡터 해석의 회전과 발산이 같은 $d$ 를 차수만 달리해 쓴 것인 까닭이 여기에 있다. Riemann 계량에서 $\star\star=(-1)^{k(n-k)}$ 다.
 
-## $L^2$ 내적과 딸림미분
+## L² 내적과 딸림미분
 
 $$
 \langle\negthinspace\langle\alpha,\beta\rangle\negthinspace\rangle=\int_M\alpha\wedge\star\beta=\int_M\langle\alpha,\beta\rangle\thinspace\mathrm{vol}
@@ -112,9 +112,9 @@ $$
 b_k=b_{n-k}
 $$
 
-다. $\star^2=\pm\mathrm{id}$ 이므로 전단사이고 역은 부호를 붙인 $\star$ 다. 방향지어진 콤팩트 다양체라는 가정이 $\mathrm{vol}$ 과 경계항 소거에 쓰이며, 방향이 없으면 실계수에서도 성립하지 않는다.
+다. 이 동형이 조화형식으로 본 [Poincaré 쌍대성](poincare-duality.md)이다. $\star^2=\pm\mathrm{id}$ 이므로 전단사이고 역은 부호를 붙인 $\star$ 다. 방향지어진 콤팩트 다양체라는 가정이 $\mathrm{vol}$ 과 경계항 소거에 쓰이며, 방향이 없으면 실계수에서도 성립하지 않는다.
 
-$4k$ 차원에서는 $\star$ 가 $\mathcal H^{2k}$ 를 자기 자신으로 보내고 $\star^2=\mathrm{id}$ 이므로 고유공간 $\mathcal H^\pm$ 로 쪼개진다. 그 차원의 차 $b^+-b^-$ 가 부호수이고, 4 차원 다양체 이론과 Yang–Mills 이론의 자기쌍대 방정식이 이 분해 위에서 전개된다.
+$4k$ 차원에서는 $\star$ 가 $\mathcal H^{2k}$ 를 자기 자신으로 보내고 $\star^2=\mathrm{id}$ 이므로 고유공간 $\mathcal H^\pm$ 로 쪼개진다. 그 차원의 차 $b^+-b^-$ 가 부호수이고, 4 차원 다양체 이론과 [Yang–Mills 이론](yang-mills-theory.md)의 자기쌍대 방정식이 이 분해 위에서 전개된다.
 
 ## Bochner 소멸 정리
 
@@ -146,7 +146,7 @@ Kac 의 "북의 모양을 들을 수 있는가" 에 대한 답은 아니오다. 
 
 $b_1(M)=r$ 이면 조화 1-형식이 $r$ 차원만큼 있다. 각각을 적분하면 $M$ 에서 원환면 $\mathbb R^r/\Lambda$ 로 가는 Albanese 사상이 나온다.
 
-복소 다양체에서는 $\Delta$ 가 $\partial$ 과 $\bar\partial$ 에 대해 같은 값을 주는 Kähler 항등식 덕분에 조화형식 공간이 $(p,q)$ 형으로 쪼개지고 $H^k=\bigoplus_{p+q=k}H^{p,q}$ 와 $h^{p,q}=h^{q,p}$ 가 나온다. Kähler 다양체에서 홀수 Betti 수가 짝수라는 결론이 따라오고, 어떤 다양체가 복소구조를 가질 수 없는지를 이것으로 판정한다.
+복소 다양체에서는 $\Delta$ 가 $\partial$ 과 $\bar\partial$ 에 대해 같은 값을 주는 Kähler 항등식 덕분에 조화형식 공간이 $(p,q)$ 형으로 쪼개지고 $H^k=\bigoplus_{p+q=k}H^{p,q}$ 와 $h^{p,q}=h^{q,p}$ 가 나온다. [Kähler 다양체](kahler-manifolds.md)에서 홀수 Betti 수가 짝수라는 결론이 따라오고, 어떤 다양체가 복소구조를 가질 수 없는지를 이것으로 판정한다.
 
 ## 물리의 장방정식
 
