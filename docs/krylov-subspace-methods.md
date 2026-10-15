@@ -2,7 +2,7 @@
 
 # 개요
 
-Krylov 부분공간 방법은 행렬 $A$ 를 분해하지 않고 행렬-벡터 곱만으로 선형계 $Ax = b$ 를 풀거나 고윳값을 근사하는 반복법이다. 곱을 되풀이해 얻은 벡터들이 펼치는 공간 $\mathrm{span}\lbrace b, Ab, \dots, A^{m-1}b\rbrace$ 안에서 근사해를 고른다.
+Krylov 부분공간 방법(Krylov subspace method)은 행렬 $A$ 를 분해하지 않고 행렬-벡터 곱만으로 선형계 $Ax = b$ 를 풀거나 고윳값을 근사하는 반복법이다. 곱을 되풀이해 얻은 벡터들이 펼치는 공간 $\mathrm{span}\lbrace b, Ab, \dots, A^{m-1}b\rbrace$ 안에서 근사해를 고른다.
 
 무엇을 최소화하느냐가 방법을 가른다. 잔차를 부분공간에 수직으로 두면 공액기울기법이고, 잔차의 크기를 최소화하면 GMRES(generalized minimal residual)다. 수렴 속도는 $A$ 의 스펙트럼이 어떻게 모여 있는지로 정해진다.
 
