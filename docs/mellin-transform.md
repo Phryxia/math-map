@@ -2,19 +2,21 @@
 
 # 개요
 
+Mellin 변환(Mellin transform)은 함수에 $x^{s-1}$ 을 곱해 $(0,\infty)$ 에서 적분한 변환이다.
+
 $$
 \tilde f(s)=\int_0^{\infty}f(x)\thinspace x^{s-1}dx,
 \qquad
 f(x)=\frac1{2\pi i}\int_{c-i\infty}^{c+i\infty}\tilde f(s)\thinspace x^{-s}\thinspace ds
 $$
 
-$x=e^{u}$ 로 바꾸면 이것은 Fourier 변환이다. 덧셈군 $\mathbb R$ 대신 곱셈군 $(0,\infty)$ 위에서 한다는 점이 다르다. $n^{-s}$ 꼴의 항, 스케일이 $2$ 배씩 늘어나는 합, $x\to0$ 과 $x\to\infty$ 에서 거듭제곱으로 행동하는 함수를 다룰 때 Mellin 변환은 계산을 극점 찾기로 바꾼다.
+$x=e^{u}$ 로 바꾸면 이것은 [Fourier 변환](fourier-transform.md)이다. 덧셈군 $\mathbb R$ 대신 곱셈군 $(0,\infty)$ 위에서 한다는 점이 다르다. $n^{-s}$ 꼴의 항, 스케일이 $2$ 배씩 늘어나는 합, $x\to0$ 과 $x\to\infty$ 에서 거듭제곱으로 행동하는 함수를 다룰 때 Mellin 변환은 계산을 극점 찾기로 바꾼다.
 
 > $\tilde f$ 의 극점 하나가 $f$ 의 점근전개 항 하나다. 극점의 위치가 지수, 유수가 계수, 극점의 차수가 $\log$ 의 거듭제곱을 준다.
 
 역변환의 윤곽을 왼쪽이나 오른쪽으로 밀면서 지나치는 극점의 유수를 모으는 것이 계산이다. [감마 함수](gamma-function.md)가 자주 나오는 것은 $\Gamma$ 가 $e^{-x}$ 의 Mellin 변환이고 그 극점들이 $e^{-x}$ 의 Taylor 계수를 담고 있기 때문이다.
 
-수론 쪽 판본이 Perron 공식이다. Dirichlet 급수 $D(s)=\sum a_nn^{-s}$ 에 대해
+수론 쪽 판본이 Perron 공식이다. [Dirichlet 급수](dirichlet-series.md) $D(s)=\sum a_nn^{-s}$ 에 대해
 
 $$
 \sum_{n\le x}a_n=\frac1{2\pi i}\int_{c-i\infty}^{c+i\infty}D(s)\thinspace\frac{x^{s}}{s}\thinspace ds
@@ -99,7 +101,7 @@ $$
 \int_0^{\infty}f(x)g(x)\frac{dx}x=\frac1{2\pi i}\int_{(c)}\tilde f(s)\thinspace\tilde g(1-s)\thinspace ds
 $$
 
-Fourier 의 Parseval 등식에 해당한다. $dx/x$ 가 곱셈군의 Haar 측도이므로 이 꼴이 나오며, $\zeta$ 의 적률을 다룰 때 표준 도구다.
+Fourier 의 Parseval 등식에 해당한다. $dx/x$ 가 곱셈군의 [Haar 측도](haar-measure.md)이므로 이 꼴이 나오며, $\zeta$ 의 적률을 다룰 때 표준 도구다.
 
 ## 2 의 거듭제곱으로 겹친 합
 
@@ -123,7 +125,7 @@ $$
 \frac2{\log2}\left|\Gamma\negthinspace\left(\frac{2\pi i}{\log2}\right)\right|=\frac{2}{\log 2}\sqrt{\frac{\pi}{y\sinh\pi y}}\Big|\_{y=2\pi/\log2}=1.573\times10^{-6}
 $$
 
-주도항 $\log_2(1/x)$ 에 백만 분의 일 수준의 주기 떨림이 얹힌다.
+주도항 $\log_2(1/x)$ 에 백만 분의 일 수준의 주기 떨림이 더해진다.
 
 $x$ 를 $2$ 배 할 때마다 잔차가 같은 값으로 돌아오므로 이 떨림은 $\log_2x$ 에 대해 주기 $1$ 이다. $x\approx10^{-6}$ 에서 진폭이 $1.6\times10^{-6}$ 규모다.
 
@@ -147,7 +149,7 @@ $$
 
 ## 알고리즘 분석
 
-이진 트라이의 평균 깊이, 자릿수 기반 자료구조의 비용, 해시의 충돌 횟수처럼 크기가 2 배씩 갈라지는 구조의 평균 비용은 조화합으로 쓰인다. 그 Mellin 변환에 $\chi_k=2\pi ik/\log2$ 극점이 생기고, 결과가 $\log_2n$ 의 주요항에 작은 주기 변동이 얹힌 형태가 된다. 실험에서 보이는 톱니 무늬가 이 항이다.
+이진 트라이의 평균 깊이, 자릿수 기반 자료구조의 비용, 해시의 충돌 횟수처럼 크기가 2 배씩 갈라지는 구조의 평균 비용은 조화합으로 쓰인다. 그 Mellin 변환에 $\chi_k=2\pi ik/\log2$ 극점이 생기고, 결과가 $\log_2n$ 의 주요항에 작은 주기 변동이 더해진 형태가 된다. 실험에서 보이는 톱니 무늬가 이 항이다.
 
 ## 특수함수의 점근
 

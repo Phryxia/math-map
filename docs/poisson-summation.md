@@ -2,7 +2,7 @@
 
 # 개요
 
-정수점 위에서 함수를 다 더한 값과, 그 Fourier 변환을 정수점 위에서 다 더한 값이 같다.
+Poisson 합 공식(Poisson summation formula)은 정수점 위에서 함수를 다 더한 값과 그 Fourier 변환을 정수점 위에서 다 더한 값이 같다는 항등식이다.
 
 $$
 \sum_{n\in\mathbb Z}f(n)=\sum_{k\in\mathbb Z}\hat f(k),
@@ -14,7 +14,7 @@ $$
 
 [Euler–Maclaurin](euler-maclaurin.md)은 합과 적분의 차이를 발산하는 도함수 급수로 전개하고 최적 절단에서 $e^{-2\pi N}$ 규모의 오차를 남긴다. Poisson 합은 그 차이를 $\sum_{k\ne0}\hat f(k)$ 로 정확히 준다. 하나는 점근 전개이고 하나는 항등식이다.
 
-증명은 [Fourier 급수](fourier-series.md)의 수렴 정리를 한 점에서 읽는 것이다. 결과는 theta 함수의 변환식, $\zeta$ 의 함수방정식, 표본화 정리, 구 채우기의 상한에 닿는다.
+증명은 [Fourier 급수](fourier-series.md)의 수렴 정리를 한 점에서 읽는 것이다. 결과는 theta 함수의 변환식, $\zeta$ 의 함수방정식, [표본화 정리](sampling-theorem.md), 구 채우기의 상한에 닿는다.
 
 # 직관
 
@@ -116,7 +116,7 @@ $t$ 가 크면 좌변이 항 몇 개로 끝나고 $t$ 가 작으면 우변이 �
 
 ## ζ 의 함수방정식
 
-$\theta$ 의 변환식을 Mellin 변환으로 읽으면 함수방정식이 나온다. [감마 함수](gamma-function.md)를 써서
+$\theta$ 의 변환식을 [Mellin 변환](mellin-transform.md)으로 읽으면 함수방정식이 나온다. [감마 함수](gamma-function.md)를 써서
 
 $$
 \pi^{-s/2}\Gamma\negthinspace\left(\frac s2\right)\zeta(s)=\int_0^{\infty}\frac{\theta(t)-1}{2}\thinspace t^{s/2-1}dt
@@ -126,7 +126,7 @@ $$
 
 ## 표본화와 에일리어싱
 
-$\hat f$ 가 $[-B,B]$ 밖에서 0 인 대역제한 함수를 간격 $h$ 로 표본화하면, 주기화된 스펙트럼 $\sum_k\hat f(\xi-k/h)$ 가 겹치지 않을 조건이 $1/h\ge2B$ 다. 이것이 Nyquist 조건이고 겹칠 때 생기는 왜곡이 에일리어싱이다. 이산 Fourier 변환이 연속 변환을 근사하는 정도도 같은 식으로 평가된다.
+$\hat f$ 가 $[-B,B]$ 밖에서 0 인 대역제한 함수를 간격 $h$ 로 표본화하면, 주기화된 스펙트럼 $\sum_k\hat f(\xi-k/h)$ 가 겹치지 않을 조건이 $1/h\ge2B$ 다. 이것이 Nyquist 조건이고 겹칠 때 생기는 왜곡이 에일리어싱이다. [이산 Fourier 변환](fourier.md)이 연속 변환을 근사하는 정도도 같은 식으로 평가된다.
 
 ## 사다리꼴 규칙의 오차
 

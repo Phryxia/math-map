@@ -2,7 +2,7 @@
 
 # 개요
 
-$n!$ 은 자연수에서만 정의된다. 이것을 실수와 복소수로 잇는 함수가 감마 함수다.
+감마 함수(gamma function)는 자연수에서만 정의되는 계승 $n!$ 을 실수와 복소수로 잇는 함수다.
 
 $$
 \Gamma(s)=\int_0^{\infty}t^{s-1}e^{-t}\thinspace dt\quad(\mathrm{Re}s\gt 0),
@@ -10,7 +10,7 @@ $$
 \Gamma(n+1)=n!
 $$
 
-계승의 보간은 여럿이지만 감마가 표준이 된 근거는 둘이다. 함수방정식 $\Gamma(s+1)=s\thinspace\Gamma(s)$ 를 로그볼록성과 함께 요구하면 후보가 하나로 좁혀진다(Bohr–Mollerup). 적분 정의가 $e^{-t}$ 의 Mellin 변환이라 적분과 급수의 변환 공식마다 나타난다. [유수 정리](residue-theorem.md)로 윤곽을 옮길 때 붙는 인자, zeta 의 함수방정식에 붙는 인자, 확률분포의 정규화 상수가 감마다.
+계승의 보간은 여럿이지만 감마가 표준이 된 근거는 둘이다. 함수방정식 $\Gamma(s+1)=s\thinspace\Gamma(s)$ 를 로그볼록성과 함께 요구하면 후보가 하나로 좁혀진다(Bohr–Mollerup). 적분 정의가 $e^{-t}$ 의 [Mellin 변환](mellin-transform.md)이라 적분과 급수의 변환 공식마다 나타난다. [유수 정리](residue-theorem.md)로 윤곽을 옮길 때 붙는 인자, zeta 의 함수방정식에 붙는 인자, 확률분포의 정규화 상수가 감마다.
 
 극점의 위치와 유수, 무한곱, 해석적 연속은 복소해석에서 나오고, 큰 $s$ 에서의 크기인 Stirling 급수는 [Euler–Maclaurin 공식](euler-maclaurin.md)이 주는 점근전개다.
 
@@ -120,7 +120,7 @@ $$
 \xi(s)=\xi(1-s)
 $$
 
-적분 정의 $\int_0^\infty t^{s-1}e^{-t}dt$ 는 $e^{-t}$ 의 Mellin 변환이다. Mellin 변환은 곱셈군 $(0,\infty)$ 위의 Fourier 변환이고 스케일 변환의 지표 $t^{s}$ 로 함수를 분해하므로, 스케일을 바꾸며 적분을 정리하는 계산마다 감마가 나온다.
+적분 정의 $\int_0^\infty t^{s-1}e^{-t}dt$ 는 $e^{-t}$ 의 Mellin 변환이다. Mellin 변환은 곱셈군 $(0,\infty)$ 위의 [Fourier 변환](fourier-transform.md)이고 스케일 변환의 지표 $t^{s}$ 로 함수를 분해하므로, 스케일을 바꾸며 적분을 정리하는 계산마다 감마가 나온다.
 
 $$
 \int_0^{\infty}t^{s-1}e^{-\lambda t}dt=\frac{\Gamma(s)}{\lambda^{s}},
