@@ -96,7 +96,7 @@ $$
 
 $\mathbb R^3$ 의 grad, curl, div 는 각각 $\Omega^0\to\Omega^1$ , $\Omega^1\to\Omega^2$ , $\Omega^2\to\Omega^3$ 의 $d$ 이고, $\mathrm{curl}\circ\mathrm{grad}=0$ 과 $\mathrm{div}\circ\mathrm{curl}=0$ 이 $d\circ d=0$ 의 사례다. 세 연산이 3 차원에서만 이렇게 정리되는 것은 $\binom3k$ 가 $1,3,3,1$ 이라 1-형식과 2-형식을 모두 벡터장으로 볼 수 있기 때문이다.
 
-## $d\circ d=0$
+## d∘d=0
 
 혼합 편미분이 순서에 무관하다는 사실과 쐐기곱의 반대칭성이 만나 상쇄되어 $d\circ d=0$ 이 된다. 기하적으로는 경계의 경계가 없다는 진술이다. 정육면체의 경계는 여섯 면이고 그 여섯 면의 경계인 변들은 두 번씩 반대 방향으로 나타나 상쇄된다. Stokes 정리가 $d$ 와 $\partial$ 의 수반이므로 두 사실이 같은 내용이다.
 

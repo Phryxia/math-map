@@ -14,7 +14,7 @@ Seiberg–Witten 이론은 콤팩트 4 차원 다양체의 $\mathrm{spin}^c$ 구
 
 # 정의
 
-## $\mathrm{spin}^c$ 구조
+## spinᶜ 구조
 
 $\mathrm{Spin}^c(n)$ 은 $\mathbb Z/2$ 를 대각으로 나눈 곱이다.
 
