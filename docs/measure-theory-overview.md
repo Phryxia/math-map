@@ -2,7 +2,7 @@
 
 # 개요
 
-측도론은 집합에 크기를 매기는 방법과 그 크기로 정의한 적분을 다룬다. 물음은 "어떤 집합에 길이나 넓이를 일관되게 줄 수 있고, 그 위에서 극한과 적분을 언제 바꿔칠 수 있는가" 다. 답은 가산가법성을 만족하는 $\sigma$ 대수 위의 측도, 그 측도로 세운 Lebesgue 적분, 그리고 극한과 적분의 교환을 보장하는 수렴정리로 나온다.
+측도론(measure theory)은 집합에 크기를 매기는 방법과 그 크기로 정의한 적분을 다룬다. 물음은 "어떤 집합에 길이나 넓이를 일관되게 줄 수 있고, 그 위에서 극한과 적분을 언제 바꿔칠 수 있는가" 다. 답은 가산가법성을 만족하는 $\sigma$ 대수 위의 측도, 그 측도로 세운 Lebesgue 적분, 그리고 극한과 적분의 교환을 보장하는 수렴정리로 나온다.
 
 측도론의 갈래는 다섯 줄기다. 측도와 가측성을 세우는 기초, 적분과 세 수렴정리, 한 측도를 다른 측도로 옮기거나 견주는 상측도와 Radon–Nikodym 도함수, 이 셋을 쓰는 확률론과 최적수송, 그리고 측도를 보존하는 변환의 궤도를 재는 측도보존 동역학이다. 극한정리와 확률과정은 [확률론 개관](probability-overview.md)에 있다.
 
@@ -26,7 +26,7 @@ graph TD
   LI --> MC["단조 수렴 정리"]
   MC --> DC["지배 수렴 정리"]
   DC --> UI["균등적분가능성"]
-  LI --> RV["확률변수와 기댓값"]
+  LI --> RV["확률변수"]
   PM --> RV
   PM --> WC["약수렴"]
   UI --> WC
@@ -41,26 +41,24 @@ graph TD
 
 # 갈래
 
+처음 읽는 사람은 측도와 가측성, 적분과 수렴정리의 순서로 읽는다. 측도 사이의 비교는 적분을 읽은 뒤에 오고, 작은 집합과 차원은 그 비교에서 쓰는 유계변동 함수를 전제한다. 확률론과 최적수송, 측도보존 동역학은 마지막에 온다.
+
 ## 측도와 가측성
+
+먼저 읽을 것: [기수](cardinality.md)(기초론 개관), [위상 공간](topology.md)(위상 개관). 시작 문서: [측도](measure.md).
 
 - [측도](measure.md): $\sigma$ 대수, 가산가법성, Lebesgue 측도와 비가측 집합
 - [가측함수](measurable-functions.md): 원상이 가측인 함수, 극한에 닫힌 성질
 - [Carathéodory 확장정리](caratheodory-extension.md): 외측도에서 측도를 얻는 구성, 전측도의 확장과 $\sigma$ 유한 유일성
-- [Cantor 집합](cantor-set.md): 측도 $0$ 인 비가산 완전집합, Cantor 함수와 특이연속분포
-- [Hausdorff 차원](hausdorff-dimension.md): 덮개의 지름 제곱 합으로 잰 척도, 자기유사 집합의 차원
-- [면적공식](area-formula.md): Lipschitz 사상의 상의 Hausdorff 측도를 Jacobi 행렬식의 적분으로 재는 등식, 여면적공식
-- [Dynkin 계](dynkin-system.md): $\pi$ 계에서 확인한 성질을 생성된 $\sigma$ 대수로 넓히는 정리, 측도의 일치와 독립성 판정
-- [Vitali 집합](vitali-set.md): 유리수 평행이동의 대표를 모은 비가측 집합, 측도를 멱집합으로 넓히지 못하는 이유
-- [Borel 계층](borel-hierarchy.md): 열린집합에서 가산 연산을 초한으로 되풀이한 단계, Suslin 정리
-- [강 측도 영집합](strong-measure-zero.md): 구간 길이를 미리 지정해도 덮을 수 있는 집합, Borel 추측
-- [Galvin–Mycielski–Solovay 정리](galvin-mycielski-solovay.md): 강 측도 영집합을 제1범주 집합과의 합으로 특징짓는 정리
-- [측도-범주 분해](measure-category-decomposition.md): 직선을 영집합과 제1 범주 집합으로 가르는 분해, 두 작음의 뜻이 어긋나는 자리
-- [Loeb 측도](loeb-measure.md): 초유한 집합 위의 유한가법측도에서 표준부분으로 얻는 측도, 포화성이 $\sigma$ 가법성을 준다
-- [Haar 측도](haar-measure.md): 국소콤팩트 위상군 위의 평행이동 불변 측도, 존재와 상수배 유일성, 모듈러 함수
+  - [Dynkin 계](dynkin-system.md): $\pi$ 계에서 확인한 성질을 생성된 $\sigma$ 대수로 넓히는 정리, 측도의 일치와 독립성 판정
+  - [Haar 측도](haar-measure.md): 국소콤팩트 위상군 위의 평행이동 불변 측도, 존재와 상수배 유일성, 모듈러 함수
+  - [Loeb 측도](loeb-measure.md): 초유한 집합 위의 유한가법측도에서 표준부분으로 얻는 측도, 포화성이 $\sigma$ 가법성을 준다
 
 ## 적분과 수렴정리
 
-- [Lebesgue 적분](lebesgue-integral.md): 단순함수의 극한으로 세운 적분, [Riemann 적분](riemann-integral.md)과의 관계
+먼저 읽을 갈래: 측도와 가측성. 먼저 읽을 것: [Riemann 적분](riemann-integral.md)(해석학 개관). 시작 문서: [Lebesgue 적분](lebesgue-integral.md).
+
+- [Lebesgue 적분](lebesgue-integral.md): 단순함수의 극한으로 세운 적분, Riemann 적분과의 관계
 - [단조 수렴 정리](monotone-convergence.md): 증가하는 비음 함수열에서 극한과 적분의 교환
 - [지배 수렴 정리](dominated-convergence.md): 적분가능한 지배함수 아래에서의 교환, Fatou 보조정리
 - [곱측도](product-measure.md): 직사각형의 규칙을 단면의 적분으로 넓힌 측도, 완비화와 무한 곱
@@ -69,23 +67,42 @@ graph TD
 
 ## 측도 사이의 비교
 
+먼저 읽을 갈래: 적분과 수렴정리. 시작 문서: [상측도](pushforward-measure.md).
+
 - [상측도](pushforward-measure.md): 가측사상이 옮기는 측도, 변수변환 공식
 - [Radon–Nikodym 정리](radon-nikodym.md): 절대연속인 두 측도의 도함수, Lebesgue 분해
 - [측도변환](change-of-measure.md): Radon–Nikodym 도함수로서의 우도비, 중요도 표본추출
 - [유계변동 함수](bounded-variation.md): Jordan 분해, 절대연속과 미적분의 기본정리, Cantor 함수
-- [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md): 적분자의 증분으로 무게를 주는 적분, 유계변동 적분자에서의 존재와 부분적분, Lebesgue–Stieltjes 측도와의 대응
+  - [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md): 적분자의 증분으로 무게를 주는 적분, 유계변동 적분자에서의 존재와 부분적분, Lebesgue–Stieltjes 측도와의 대응
 - [Lebesgue 미분정리](lebesgue-differentiation.md): 작은 공 위 평균의 수렴, 극대함수와 Vitali 덮개, 밀도점
 
+## 작은 집합과 차원
+
+먼저 읽을 갈래: 측도 사이의 비교. 먼저 읽을 것: [Lipschitz 사상](lipschitz-maps.md)(해석학 개관). 시작 문서: [Vitali 집합](vitali-set.md).
+
+- [Vitali 집합](vitali-set.md): 유리수 평행이동의 대표를 모은 비가측 집합, 측도를 멱집합으로 넓히지 못하는 이유
+  - [Borel 계층](borel-hierarchy.md): 열린집합에서 가산 연산을 초한으로 되풀이한 단계, Suslin 정리
+- [Cantor 집합](cantor-set.md): 측도 $0$ 인 비가산 완전집합, Cantor 함수와 특이연속분포
+- [Hausdorff 차원](hausdorff-dimension.md): 덮개의 지름 제곱 합으로 잰 척도, 자기유사 집합의 차원
+  - [면적공식](area-formula.md): Lipschitz 사상의 상을 재는 Hausdorff 측도를 Jacobi 행렬식의 적분으로 바꾸는 등식, 여면적공식
+- [측도-범주 분해](measure-category-decomposition.md): 직선을 영집합과 제1 범주 집합으로 가르는 분해, 두 작음의 뜻이 어긋나는 자리
+- [강 측도 영집합](strong-measure-zero.md): 구간 길이를 미리 지정해도 덮을 수 있는 집합, [Borel 추측](borel-conjecture.md)
+- [Galvin–Mycielski–Solovay 정리](galvin-mycielski-solovay.md): 강 측도 영집합을 제1범주 집합과의 합으로 특징짓는 정리
+
 ## 확률론과 최적수송
+
+먼저 읽을 갈래: 측도 사이의 비교. 시작 문서: [확률변수](random-variables.md).
 
 - [확률변수](random-variables.md): 가측함수로서의 확률변수, 적분으로서의 기댓값
 - [조건부 기댓값](conditional-expectation.md): Radon–Nikodym 정리로 정의하는 부분 $\sigma$ 대수 위의 사영
 - [약수렴](weak-convergence.md): 유계 연속함수의 적분으로 재는 측도의 수렴과 tightness
 - [최적 수송](optimal-transport.md): 두 측도를 잇는 결합과 수송비용
-- [전변동거리](total-variation-distance.md): 사건 확률의 최대 차, 결합 표현과 Pinsker 부등식
-- [Girsanov 정리](girsanov.md): 측도변환이 Brown 운동의 표류항을 바꾸는 방식
+  - [전변동거리](total-variation-distance.md): 사건 확률의 최대 차, 결합 표현과 Pinsker 부등식
+  - [Girsanov 정리](girsanov.md): 측도변환이 확산과정의 표류항을 바꾸는 방식, 위험중립측도
 
 ## 측도보존 동역학
+
+먼저 읽을 갈래: 확률론과 최적수송. 시작 문서: [에르고딕 정리](ergodic-theorem.md).
 
 - [에르고딕 정리](ergodic-theorem.md): 측도보존변환의 시간평균과 공간평균의 일치, Birkhoff 정리와 von Neumann 정리
 - [혼합성](mixing.md): 집합이 퍼지는 속도로 재는 강혼합과 약혼합, 에르고딕성과의 위계, 스펙트럼 판정
