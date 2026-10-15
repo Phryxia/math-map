@@ -2,7 +2,7 @@
 
 # 개요
 
-소멸 사이클은 특이 올로 다가갈 때 한 점으로 줄어드는 호몰로지류다. 복소 다양체 위의 정칙 함수가 비퇴화 임계점 하나를 가지면 그 근처의 올은 구에 호모토피 동치이고, 임계값에서 그 구가 점으로 찌그러든다. 임계값 주위를 한 바퀴 도는 모노드로미가 이 류 하나로 적히며, 그 식이 Picard–Lefschetz 공식이다.
+소멸 사이클(vanishing cycle)은 특이 올로 다가갈 때 한 점으로 줄어드는 호몰로지류다. 복소 다양체 위의 정칙 함수가 비퇴화 임계점 하나를 가지면 그 근처의 올은 구에 호모토피 동치이고, 임계값에서 그 구가 점으로 찌그러든다. 임계값 주위를 한 바퀴 도는 모노드로미가 이 류 하나로 적히며, 그 식이 Picard–Lefschetz 공식이다.
 
 # 직관
 
@@ -85,7 +85,7 @@ Lefschetz 올다발의 특이값이 여러 개이면 각각을 둘러싼 모노�
 # 활용
 
 - [Morse 이론](morse-theory.md)의 활용 절은 정칙 함수의 Morse 이론이 소멸 사이클로 호몰로지의 생성원을 준다고 적는다. 실 Morse 이론에서 임계점이 세포를 붙이는 자리에 복소 쪽에서는 소멸 사이클이 온다.
-- [Hodge 이론](hodge-theory.md)의 Poincaré 쌍대성 절이 주는 교차형식이 Picard–Lefschetz 공식의 $\langle\cdot,\cdot\rangle$ 이다.
+- [Hodge 이론](hodge-theory.md)의 [Poincaré 쌍대성](poincare-duality.md) 절이 주는 교차형식이 Picard–Lefschetz 공식의 $\langle\cdot,\cdot\rangle$ 이다.
 - [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)은 환원 단계에서 약한 Lefschetz 정리로 중간 코호몰로지만 남기고, 모노드로미의 Zariski 조밀성으로 Frobenius 고윳값의 절댓값을 결정한다.
 - [Kähler 다양체](kahler-manifolds.md)의 초평면 절단에 Lefschetz 올다발을 세우면 올이 차원 $n$ 인 Kähler 다양체이고, 소멸 사이클이 그 올의 중간 호몰로지에 놓인다.
 

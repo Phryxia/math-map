@@ -2,7 +2,7 @@
 
 # 개요
 
-특성류는 벡터다발에 밑공간의 코호몰로지류를 대응시키는 불변량이다. 자명한 다발의 특성류는 소멸하므로, 류가 $0$ 이 아니면 그 다발은 자명하지 않다.
+특성류(characteristic class)는 벡터다발에 밑공간의 코호몰로지류를 대응시키는 불변량이다. 자명한 다발의 특성류는 소멸하므로, 류가 $0$ 이 아니면 그 다발은 자명하지 않다.
 
 Chern–Weil 이론이 이 류를 접속의 곡률에서 만든다. 곡률은 접속마다 다르지만 곡률의 불변 다항식이 정하는 코호몰로지류는 접속에 의존하지 않는다.
 
@@ -30,7 +30,7 @@ Chern–Weil 이론이 이 류를 접속의 곡률에서 만든다. 곡률은 �
 
 $c(E) = 1 + c_1(E) + \dots + c_r(E)$ 로 쓰고 $c_i(E) \in H^{2i}(M;\mathbb Z)$ 를 $i$ 번째 **Chern 류**라 한다.
 
-실 벡터다발에는 $\mathbb Z/2$ 계수의 **Stiefel–Whitney 류** $w_i \in H^i(M;\mathbb Z/2)$ 가 같은 꼴의 공리로 정의되고, 방향 지어진 실 다발에는 계수 $r$ 차수의 **Euler 류** $e(E) \in H^r(M;\mathbb Z)$ 가 있다.
+실 벡터다발에는 $\mathbb Z/2$ 계수의 **[Stiefel–Whitney 류](stiefel-whitney-classes.md)** $w_i \in H^i(M;\mathbb Z/2)$ 가 같은 꼴의 공리로 정의되고, 방향 지어진 실 다발에는 계수 $r$ 차수의 **Euler 류** $e(E) \in H^r(M;\mathbb Z)$ 가 있다.
 
 ## Chern–Weil 사상
 

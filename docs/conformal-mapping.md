@@ -2,7 +2,7 @@
 
 # 개요
 
-등각사상은 각의 크기와 방향을 보존하는 사상이다. 평면에서는 도함수가 $0$ 이 아닌 정칙함수가 정확히 등각사상이고, 그래서 복소해석의 정리들이 평면 영역의 기하학으로 읽힌다. 중심 결과는 Riemann 사상정리다. $\mathbb C$ 가 아닌 단순연결 영역은 어느 것이나 단위원판과 등각동치이므로, 원판에서 푼 문제를 임의의 단순연결 영역으로 옮길 수 있다.
+등각사상(conformal map)은 각의 크기와 방향을 보존하는 사상이다. 평면에서는 도함수가 $0$ 이 아닌 정칙함수가 정확히 등각사상이고, 그래서 복소해석의 정리들이 평면 영역의 기하학으로 읽힌다. 중심 결과는 [Riemann 사상정리](riemann-mapping-theorem.md)다. $\mathbb C$ 가 아닌 단순연결 영역은 어느 것이나 단위원판과 등각동치이므로, 원판에서 푼 문제를 임의의 단순연결 영역으로 옮길 수 있다.
 
 # 직관
 
@@ -48,7 +48,7 @@ $$\varphi(z)=e^{i\theta}\thinspace\frac{z-a}{1-\bar az},\qquad a\in\mathbb D,\ \
 
 ## Riemann 사상정리
 
-$\Omega\subsetneq\mathbb C$ 가 공집합이 아닌 단순연결 영역이면 $\Omega$ 는 $\mathbb D$ 와 등각동치다[^1]. 지정한 점 $z_0\in\Omega$ 를 $0$ 으로 보내고 $f'(z_0)\gt 0$ 이라는 정규화를 걸면 사상은 유일하다. 증명은 도함수를 최대로 하는 단사 정칙함수를 찾는 극값 문제이고, Montel 정리와 Hurwitz 정리를 쓴다.
+$\Omega\subsetneq\mathbb C$ 가 공집합이 아닌 단순연결 영역이면 $\Omega$ 는 $\mathbb D$ 와 등각동치다[^1]. 지정한 점 $z_0\in\Omega$ 를 $0$ 으로 보내고 $f'(z_0)\gt 0$ 이라는 정규화를 걸면 사상은 유일하다. 증명은 도함수를 최대로 하는 단사 정칙함수를 찾는 극값 문제이고, [Montel 정리](montel-theorem.md)와 [Hurwitz 정리](hurwitz-theorem.md)를 쓴다.
 
 정리는 사상의 존재만 주고 명시적 공식을 주지 않는다. $\mathbb C$ 자체가 제외되는 것은 Liouville 정리 때문이다. $\mathbb C$ 에서 $\mathbb D$ 로 가는 유계 전해석함수는 상수뿐이다.
 
