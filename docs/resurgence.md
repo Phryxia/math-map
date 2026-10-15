@@ -84,7 +84,7 @@ $m = -1$ 항 $\dot\Delta_{-A}F = S_{-1}\partial_\sigma F$ 는 비섭동 sector �
 
 ## Large-order 관계
 
-Bridge equation 을 $\sigma$ 의 거듭제곱으로 전개하고 $\Delta$ 의 정의를 되돌리면, $k=0$ sector 계수의 큰 $n$ 점근이 $k=1$ sector 계수로 쓰인다.
+Bridge equation 을 $\sigma$ 의 거듭제곱으로 전개하고 $\Delta$ 의 정의를 역으로 적용하면, $k=0$ sector 계수의 큰 $n$ 점근이 $k=1$ sector 계수로 쓰인다.
 
 $$
 a_n^{(0)} \thickspace\sim\thickspace \frac{S_1}{2\pi i}\sum_{m\ge0}\frac{\Gamma(n-m-b)}{A^{\thinspace n-m-b}}\thickspace a_m^{(1)}

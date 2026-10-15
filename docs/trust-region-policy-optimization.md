@@ -80,7 +80,7 @@ $\min$ 을 취하지 않고 잘라내기만 쓰면 구간 밖에서 되돌아오
 
 - **연속 행동 제어.** 관절 토크를 출력하는 Gauss 정책에서 [정책 경사](policy-gradient.md)의 보폭 문제가 직접 드러나므로, 보행과 조작 과제의 표준 알고리즘으로 쓰인다.
 - **언어모형의 정렬.** 사람 선호로 학습한 보상 모형 아래에서 생성 정책을 올릴 때 PPO 를 쓰고, 참조 정책과의 KL divergence 를 보상에 벌점으로 더해 보폭을 한 번 더 묶는다.
-- **행위자–비평자 구현.** [행위자–비평자](actor-critic.md)의 이점 추정에 잘라낸 목적을 얹어 한 묶음의 표본으로 여러 번 갱신한다. 중요도비가 표본을 재사용할 수 있게 하는 부분이다.
+- **행위자–비평자 구현.** [행위자–비평자](actor-critic.md)의 이점 추정에 잘라낸 목적을 결합해 한 묶음의 표본으로 여러 번 갱신한다. 중요도비가 표본을 재사용할 수 있게 하는 부분이다.
 - **자연 경사법.** $F^{-1}g$ 는 분포족 위의 [KL divergence](kl-divergence.md)가 주는 2차 근사에서 나오므로, 같은 계산이 변분 추론과 최대가능도 추정의 Fisher scoring 에도 쓰인다.
 
 [^1]: J. Schulman, S. Levine, P. Abbeel, M. Jordan, P. Moritz, "Trust Region Policy Optimization", Proceedings of the 32nd International Conference on Machine Learning (2015), 1889–1897. 하한과 $C$ 의 값, 평균 KL 로의 완화를 준다.
