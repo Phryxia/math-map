@@ -90,10 +90,10 @@ $w=\pm1$ 이 함수방정식의 부호다. $w=-1$ 이면 $\Lambda(1)=-\Lambda(1)
 | Coates–Wiles (1977) | [복소 곱셈](complex-multiplication.md)(complex multiplication, CM)을 가진 곡선에서 $r\gt 0\Rightarrow L(E,1)=0$ |
 | Gross–Zagier (1986) | $L'(E,1)$ 이 Heegner 점의 정준 높이와 같다 |
 | Kolyvagin (1988) | 해석적 순위 $\le1$ 이면 대수적 순위가 같고 $\text{Ш}$ 가 유한 |
-| Skinner–Urban, Kato | Iwasawa 주추측을 통해 순위 $0$ 의 강한 BSD 를 여러 경우에 |
+| Skinner–Urban, Kato | [Iwasawa 주추측](iwasawa-main-conjecture.md)을 통해 순위 $0$ 의 강한 BSD 를 여러 경우에 |
 | Bhargava–Skinner–Zhang | 도체로 정렬한 타원곡선의 양의 비율(> 66%)에서 BSD 성립 |
 
-Gross–Zagier 가 $L$ 의 미분을 기하적 점의 높이로 바꾸고 Kolyvagin 이 그 점에서 Euler 계를 만들어 Selmer 군을 누른다. 두 정리가 맞물려 해석적 순위가 0 또는 1 인 경우가 해결된다. 해석적 순위 $\ge2$ 에서는 어떤 곡선에 대해서도 대수적 순위가 같음이 증명되어 있지 않다.
+Gross–Zagier 가 $L$ 의 미분을 기하적 점의 높이로 바꾸고 Kolyvagin 이 그 점에서 [Euler 계](euler-systems.md)를 만들어 Selmer 군을 누른다. 두 정리가 맞물려 해석적 순위가 0 또는 1 인 경우가 해결된다. 해석적 순위 $\ge2$ 에서는 어떤 곡선에 대해서도 대수적 순위가 같음이 증명되어 있지 않다.
 
 ## 순위 2 이상과 Heegner 점
 

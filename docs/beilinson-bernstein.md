@@ -82,7 +82,7 @@ $\lambda$ 가 벽 위에 있으면 $\mathcal D_X^\lambda$ 의 전역단면은 �
 | --- | --- |
 | 표수 $p$ (Bezrukavnikov–Mirković–Rumynin) | Frobenius 중심 위의 국소화, Lusztig 추측 |
 | 양자군 | 양자 깃발다양체 위의 $\mathcal D$ 가군 |
-| 아핀 Lie 대수 | 임계 준위의 국소화, 기하적 Langlands 와 연결 |
+| [아핀 Lie 대수](affine-lie-algebras.md) | 임계 준위의 국소화, 기하적 Langlands 와 연결 |
 | $p$ 진 해석적 | Ardakov–Wadsley 의 $\mathcal D^\dagger$ 가군 |
 
 # 활용
@@ -93,7 +93,7 @@ $\lambda$ 가 벽 위에 있으면 $\mathcal D_X^\lambda$ 의 전역단면은 �
 
 ## Soergel 쌍가군과 범주화
 
-Soergel 은 편향층의 초코호몰로지가 불변식환 위의 쌍가군이 되고 그 쌍가군들이 Hecke 대수를 범주화함을 보였다. Elias 와 Williamson 이 이 범주에서 Hodge 이론을 세워 KL(Kazhdan–Lusztig) 다항식의 양수성을 기하 없이 증명했다.
+Soergel 은 편향층의 초코호몰로지가 불변식환 위의 쌍가군이 되고 그 쌍가군들이 Hecke 대수를 범주화함을 보였다. Elias 와 Williamson 이 이 범주에서 [Hodge 이론](hodge-theory.md)을 세워 KL(Kazhdan–Lusztig) 다항식의 양수성을 기하 없이 증명했다.
 
 ## 기하적 Langlands
 
