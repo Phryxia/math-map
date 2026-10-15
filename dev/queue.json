@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-15T17:03:54.675Z",
-  "nextSeq": 2099,
+  "savedAt": "2026-10-15T21:06:18.920Z",
+  "nextSeq": 2105,
   "items": [
     {
       "id": "3fd64c72",
@@ -148,12 +148,36 @@
       "seq": 2092
     },
     {
-      "id": "75c42fbf",
-      "title": "본문 미링크 전수 교정 (430 건, 298 문서)",
+      "id": "347ef8b7",
+      "title": "문학적 비유 grep 의 오탐 네 꼴",
+      "priority": 90,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 4절 문체 규칙의 비유 grep(은탄환|청구서|사다리[^꼴]|열쇠|씨앗|뼈대|심장|지름길|함정|공짜|무기[^억]|마법[^ 상]|잠식|청사진|적신호|신호탄|디딤돌|징검다리|주춧돌)을 47차에 docs 전체로 돌리면 5 건 4 문서가 나오는데 전부 용어의 일부여서 고칠 것이 없다. elliptic-curves:118 의 'Montgomery 사다리'(Montgomery ladder, 스칼라 곱 알고리즘), lie-algebras:162 의 '사다리 연산자'(ladder operator), mandelbrot-set:55 의 '심장꼴'(cardioid), post-quantum-cryptography:126 의 '함정문'(trapdoor) 두 번이다. 규칙이 '용어의 일부인 것은 예외'라고 적은 그 경우다. grep 의 '사다리[^꼴]' 는 '사다리꼴' 만 걸러내므로 '사다리 연산자' 와 'Montgomery 사다리' 를 잡는다. 다음 회차에서 이 grep 이 같은 네 자리를 내놓으면 확인하지 않고 넘긴다. 새 자리가 나오면 그때만 본다.",
+      "createdAt": "2026-10-15T20:59:29.370Z",
+      "seq": 2101
+    },
+    {
+      "id": "508c2bff",
+      "title": "개관 안의 금지 동사 두 자리는 갈래 재작성과 함께 고친다",
+      "priority": 90,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 47차에 금지 동사를 교정하다 abstract-algebra-overview:105 의 '거듭제곱근을 품은 체에서' 를 '포함하는' 으로 고쳤는데, 4.5절이 '개관을 고쳤으면 갈래 순서 검사를 돌리고 보고가 하나라도 있으면 커밋하지 않는다' 고 하고 이 개관은 갈래 순서가 이미 150 곳 가까이 어긋나 있어 그 커밋이 막혔다. 문장만 고치고 링크를 건드리지 않아도 검사는 문서 단위로 걸린다. 그래서 그 한 자리를 되돌리고 커밋에서 뺐다. 남은 자리는 abstract-algebra-overview:105 와 computation-overview:88, 113 세 곳이다. 개관 안의 문체 교정은 7565e952(분야 개관 21 개의 갈래를 읽는 순서로 다시 쓰기) 회차에서 그 개관을 다시 쓸 때 함께 한다. 일반 문서의 금지 동사 교정(16e16442)에서는 개관 파일을 건드리지 않는다.",
+      "createdAt": "2026-10-15T21:01:22.893Z",
+      "seq": 2102
+    },
+    {
+      "id": "4a73c80f",
+      "title": "금지 동사 grep 의 남은 자리와 오탐 두 꼴",
+      "priority": 90,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 4절 문체 규칙의 금지 동사 grep -noE '[가-힣]+(을|를|가|이) (품|얹|거느리|되돌|새기|눈금)[가-힣]*' docs/*.md 를 47차에 전수로 돌려 42 건 39 문서를 찾고 일반 문서 36 자리를 전부 고쳤다(옛 항목 16e16442 는 그래서 지웠다). 바꾼 말. '품는다'는 포함한다, '얹는다'는 더한다·배정한다·정의한다·결합한다·대응한다, '되돌린다'는 복원한다·역으로 적용한다·인수분해한다·취소한다, '눈금'은 지름이다. 남은 6 건 가운데 2 건은 오탐이다. hamiltonian-monte-carlo:86 의 '궤적이 되돌아오기' 와 wkb-approximation:148 의 '파동이 되돌아오는' 은 '되돌아오다' 로 실제 운동을 가리키고 수학적 관계의 비유가 아니다. grep 의 '되돌' 이 이것까지 잡으므로 다음 회차에서도 같은 두 자리가 나오면 넘긴다. 나머지 4 건은 개관 안이다. abstract-algebra-overview:105, computation-overview:88 과 113, foundations-overview:81 이고, 개관을 고치면 갈래 순서 검사를 통과해야 커밋할 수 있어 보류했다(메모 508c2bff). 7565e952 의 갈래 재작성 회차에서 함께 고친다.",
+      "createdAt": "2026-10-15T21:04:34.179Z",
+      "seq": 2103
+    },
+    {
+      "id": "097d2a48",
+      "title": "본문 미링크 전수 교정 (262 건, 231 문서)",
       "priority": 60,
-      "note": "4절 본문 링크 규칙(본문에 다른 문서의 제목이 나오면 첫 등장은 그 문서로 링크). 44차에 666 건 410 문서에서 574 건 392 문서로, 46차에 문서 96 개를 고쳐 430 건 298 문서가 되었다. 남은 건수 상위는 combinatorics-overview 6, etale-cohomology 4, 그리고 3 건짜리 여럿(zhu-algebra weyl-character-formula theta-series tangent-bundle supersingular-isogeny-graphs stiefel-whitney-classes)이다. 개관은 갈래 설명 줄에 링크를 넣으면 갈래 순서 검사가 반드시 걸리므로(메모 0bb8e7fb) 일반 문서부터 한다. 전수 스크립트는 스크래치패드에 Node 로 만든다. titles.tsv 를 읽고, 각 문서에서 '# 연관 문서' 앞을 자르고, 코드블록을 정규식으로 지우고, 제목이 본문에 있는데 '](oid.md)' 가 없으면 보고하되 다른 후보 제목이 그 제목을 포함하고 본문에도 있으면 건너뛴다. 고칠 때 걸린 꼴 넷. (1) 첫 등장이 헤딩뿐이다. 저장소에 헤딩 링크를 쓰는 문서가 하나도 없으므로 헤딩은 두고 바로 아래 문단에 이름을 넣어 링크한다. 46차에 chain-complexes 의 Euler 지표 절은 정리 뒤 '이다.' 를 '이고, 이 교대합이 Euler 지표 링크다.' 로, szemeredi-regularity-lemma 의 Roth 정리 절은 정리 진술의 '**정리.**' 를 '**정리(Roth 정리 링크).**' 로, vandiver-conjecture 의 대수적 K 이론 절은 군 기호 앞에 '대수적 K 이론의 군' 을 넣어 처리했다. (2) 제목이 더 긴 이름의 일부다. 'Weyl 군 다중 Dirichlet 급수', '아핀 Grassmann 다양체', '삼소수 정리', 'Kővári–Sós–Turán 정리' 가 그렇고 링크하지 않는다. (3) 이름은 같으나 다른 진술이다. class-number-one 의 '일반화 Riemann 가설', khintchine-inequality 의 'Gauss 합'(정규확률변수의 합이고 수론의 gauss-sums 가 아니다), boolean-fourier 의 'Borell 의 등주부등식'(Gauss 공간의 등주이고 평면 등주부등식이 아니다)이 그렇다. (4) 본문이 이미 같은 이름으로 다른 문서를 링크한다. siegel-weil 의 'Eichler 의 질량 공식' 이 jacquet-langlands 를 가리키고 mass-formula 로 바꾸지 않았다. 참고문헌 각주 안의 책 절 제목(limits 의 '단조 수렴 정리')도 링크하지 않는다.",
-      "createdAt": "2026-10-15T17:03:35.980Z",
-      "seq": 2098
+      "note": "4절 본문 링크 규칙(본문에 다른 문서의 제목이 나오면 첫 등장은 그 문서로 링크). 44차 666 건 410 문서, 46차 430 건 298 문서, 47차에 문서 64 개를 고쳐 262 건 231 문서가 되었다. 옛 항목 75c42fbf 와 1ccb0ade 를 이것으로 갈음한다. 남은 것은 대부분 문서당 1~2 건이고 상위는 combinatorics-overview 6, machine-learning-overview 3, analysis-overview 2, computation-overview 2 로 개관에 몰려 있다. 개관은 갈래 설명 줄에 링크를 넣으면 갈래 순서 검사가 반드시 걸리므로(메모 0bb8e7fb) 개관 하나를 한 회차로 잡고 7565e952 의 갈래 재작성과 함께 한다. 전수 스크립트는 스크래치패드에 Node 로 만든다. titles.tsv 를 읽고 각 문서에서 '# 연관 문서' 앞을 자르고 코드블록을 지운 뒤, 제목이 본문에 있는데 '](oid.md)' 가 없으면 보고하되 더 긴 다른 제목이 그것을 포함하고 본문에도 있으면 건너뛴다. 치환은 perl -i -pe 대신 JSON 명세를 Node 가 읽어 indexOf 와 slice 로 하면 $ 보간 사고(메모 bb29a567, b699c20d)를 피하고, 같은 문자열이 둘 이상이면 중단되므로 첫 등장만 바꾸려는 의도가 지켜진다. 47차에 새로 확인한 (3)꼴 오탐. fargues-scholze 의 '기본 보조정리'(일반적인 보조정리들이고 Langlands 의 fundamental-lemma 가 아니다), gittins-index 의 '지표 정리'(밴딧의 Gittins 지표 정리이고 Atiyah-Singer 가 아니다), gauss-bonnet 의 '곡면의 기하화 정리'(2 차원이고 geometrization 은 3 차원이다), class-field-theory 의 '등차수열 소수 정리'(Dirichlet 정리다). (2)꼴은 casselman-shalika 와 fundamental-lemma 의 '아핀 Grassmann 다양체', casselman-shalika 의 'Weyl 군 다중 Dirichlet 급수' 다. 헤딩에만 제목이 있는 (1)꼴은 헤딩을 두고 바로 아래 문단에 이름을 넣어 링크했다(fourier-series 의 Fejer 핵, hecke-operators 의 Eichler-Shimura 관계, p-adic-hodge-theory 의 Fontaine-Mazur 추측, class-field-theory 의 Chebotarev 밀도 정리, zhu-algebra 의 Virasoro 대수). 굵은 글씨로 정의 표시된 다른 문서의 제목(theta-series 의 Leech 격자, selmer-tate-shafarevich 의 Euler 계, rankin-selberg 의 Eisenstein 급수, group-extensions 의 Schur 곱셈자)은 굵은 표시를 지우고 링크로 바꿨다. 그 개념의 문서가 따로 있으면 정의하는 자리가 아니기 때문이다.",
+      "createdAt": "2026-10-15T21:06:09.571Z",
+      "seq": 2104
     },
     {
       "id": "14ae777a",
