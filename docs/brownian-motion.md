@@ -10,7 +10,7 @@ Brown 운동은 연속시간 확률과정의 원형이다. 시작점이 원점�
 
 ## 무작위 걷기의 축소 극한
 
-시간 간격 $h$ 마다 $\pm\sqrt{h}$ 만큼 움직이는 대칭 무작위 걷기를 본다. 시각 $t$ 까지의 위치는 약 $t/h$ 번의 독립 걸음의 합이고, 걸음 크기를 $h$ 가 아니라 $\sqrt{h}$ 로 잡았으므로 분산이 $(t/h) \cdot h = t$ 로 $h$ 와 무관하다. 중심극한정리로 극한 분포는 $N(0, t)$ 이고, 이 극한이 분포 수준이 아니라 경로 수준에서도 존재한다는 것이 Donsker 불변원리다. 눈금은 비대칭이어서 시간을 $c$ 배 늘리면 공간은 $\sqrt{c}$ 배 늘어난다.
+시간 간격 $h$ 마다 $\pm\sqrt{h}$ 만큼 움직이는 대칭 무작위 걷기를 본다. 시각 $t$ 까지의 위치는 약 $t/h$ 번의 독립 걸음의 합이고, 걸음 크기를 $h$ 가 아니라 $\sqrt{h}$ 로 잡았으므로 분산이 $(t/h) \cdot h = t$ 로 $h$ 와 무관하다. 중심극한정리로 극한 분포는 $N(0, t)$ 이고, 이 극한이 분포 수준이 아니라 경로 수준에서도 존재한다는 것이 [Donsker 불변원리](donsker-invariance-principle.md)다. 눈금은 비대칭이어서 시간을 $c$ 배 늘리면 공간은 $\sqrt{c}$ 배 늘어난다.
 
 ## 두 종류의 변동
 
@@ -38,7 +38,7 @@ $$
 
 4. 거의 모든 표본점에서 $t \mapsto B_t$ 가 연속이다.
 
-유한차원 분포만으로는 3번까지가 정해지고, 4번을 만족하는 판본이 실제로 존재한다는 것은 따로 증명해야 한다. Kolmogorov 확장정리로 과정을 만든 뒤 연속 판본을 고르거나, 구간 $[0,1]$ 위에서 Haar 기저에 독립 정규 계수를 붙여 급수로 직접 구성하는 Lévy–Ciesielski 방법을 쓴다. 후자는 [균등수렴](uniform-convergence.md)하는 급수를 주므로 연속성이 구성에서 바로 따라온다.
+유한차원 분포만으로는 3번까지가 정해지고, 4번을 만족하는 판본이 실제로 존재한다는 것은 따로 증명해야 한다. [Kolmogorov 확장정리](kolmogorov-extension.md)로 과정을 만든 뒤 연속 판본을 고르거나, 구간 $[0,1]$ 위에서 Haar 기저에 독립 정규 계수를 붙여 급수로 직접 구성하는 Lévy–Ciesielski 방법을 쓴다. 후자는 [균등수렴](uniform-convergence.md)하는 급수를 주므로 연속성이 구성에서 바로 따라온다.
 
 ## 전이밀도
 
@@ -102,7 +102,7 @@ $$
 
 ## 확률미분방정식
 
-2차변동이 살아 있으므로 $dB_t$ 에 대한 적분은 보통의 Riemann–Stieltjes 적분으로 정의되지 않는다. 대신 적분을 martingale 의 극한으로 정의하면 Itô 적분이 되고, 연쇄법칙에 2차항이 남는다.
+2차변동이 살아 있으므로 $dB_t$ 에 대한 적분은 보통의 [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md)으로 정의되지 않는다. 대신 적분을 martingale 의 극한으로 정의하면 Itô 적분이 되고, 연쇄법칙에 2차항이 남는다.
 
 $$
 df(B_t)=f'(B_t)\thinspace dB_t+\tfrac12 f''(B_t)\thinspace dt
@@ -128,6 +128,7 @@ $$
 
 ## 더 알아보기
 
+- [Donsker 불변원리](donsker-invariance-principle.md)
 - [Itô 적분](ito-calculus.md)
 
 #probability #analysis #measure_theory #construction

@@ -87,18 +87,24 @@ graph TD
 - [기수](cardinality.md): 대각선 논법과 무한의 크기
 - [ZFC 공리계](zfc-axioms.md) → [서수](ordinals.md) → [선택공리](axiom-of-choice.md)
 - [선택공리](axiom-of-choice.md) → [Banach–Tarski 분해](banach-tarski.md): 자유 부분군의 역설적 분해를 구면으로 내린 결과, 조각은 비가측이다
+- [선택공리의 약한 형태](weak-choice-principles.md): 가산 선택, 종속 선택, 초필터 보조정리의 강도 차이와 각 세기로 증명되는 정리
 
 ## 독립성과 강제법
 
 - [연속체 가설](continuum-hypothesis.md) → [강제법](forcing.md) → [Martin 의 공리](martins-axiom.md) → [Suslin 문제](suslin-problem.md)
+- [반복 강제법](iterated-forcing.md): 두 단계 반복과 지지 조건, 유한지지 반복의 ccc 와 가산지지 반복의 properness
 - [Boolean 값 모형](boolean-valued-models.md): 강제법을 완비 Boolean 대수 위의 진리값으로 다시 쓴 판본
+- [Laver 강제법](laver-forcing.md): 나무 조건으로 지배 실수를 더하는 강제법, 순수 결정과 Laver 성질, 강 측도 영집합의 파괴
 - [무작위 실수 강제법](random-real-forcing.md): [측도](measure.md) 대수를 조건으로 쓰는 강제법, Cohen 실수와의 대비
 - [구성가능 우주](constructible-universe.md): 정의 가능한 부분집합만 쌓은 내부 모형, 일반화 연속체 가설(generalized continuum hypothesis, GCH)과 선택공리가 정리가 된다
 - [큰 기수](large-cardinals.md): 도달 불가능 기수부터 측도 가능 기수까지, 무모순성 강도를 재는 눈금
+- [큰 기수의 층](large-cardinal-hierarchy.md): Mahlo 기수부터 초콤팩트 기수까지, 반사 조건과 기본 매장으로 정의하는 층과 무모순성 강도의 순서
+- [결정성](determinacy.md): 무한 게임의 필승 전략, Gale–Stewart 정리와 큰 기수에서 오는 사영 결정성
 
 ## 기술집합론
 
 - [Borel 계층](borel-hierarchy.md): 열린집합에서 가산 연산을 초한으로 되풀이한 단계, Suslin 정리
+- [사영 계층](projective-hierarchy.md): 사영과 여집합을 번갈아 붙인 단계, 나무 표현과 유계 정리, 정규성이 큰 기수에 달리는 자리
 - [기수 불변량](cardinal-characteristics.md): 영집합과 제1범주 아이디얼의 네 기수, Cichoń 도표
 - [Luzin 집합과 Sierpiński 집합](luzin-sierpinski-sets.md): 한쪽 뜻으로만 작은 비가산 집합, 연속체 가설 아래의 구성
 - [Borel 추측](borel-conjecture.md): 강 측도 영집합이 모두 가산인가, Laver 모형에서의 무모순성

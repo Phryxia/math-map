@@ -112,6 +112,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [퍼텐셜 이론](potential-theory.md)
 
 #analysis #functional_analysis #complex_analysis

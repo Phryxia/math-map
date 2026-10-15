@@ -79,5 +79,6 @@ $r\ge g$ 이면 $J(\mathbb Q)$ 의 닫음이 $J(\mathbb Q_p)$ 를 다 덮을 수
 ## 더 알아보기
 
 - [Coleman 적분](coleman-integration.md)
+- [Mordell–Weil 시브](mordell-weil-sieve.md)
 
 #number_theory #algebra #complex_analysis

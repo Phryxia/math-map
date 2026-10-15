@@ -26,7 +26,7 @@ $$
 \mathrm{Vol}=\Lambda(\alpha)+\Lambda(\beta)+\Lambda(\gamma)
 $$
 
-세 각의 합이 $\pi$ 라는 제약 아래 이 합은 $\alpha=\beta=\gamma=\pi/3$ 인 **정이면체 사면체**에서 최대이고, 쌍곡 3 차원의 어떤 사면체도 이보다 부피가 클 수 없다. 1 의 $N$ 제곱근 $\zeta=e^{2\pi i/N}$ 에 대해 $\prod_{j=1}^{k}\vert 1-\zeta^j\vert$ 의 로그는 $\vert 1-e^{i\theta}\vert=2\vert\sin(\theta/2)\vert$ 에 의해 $\sum_{j=1}^{k}\log(2\sin(\pi j/N))$ 이 되고, 이것은 $\log(2\sin)$ 의 Riemann 합이다. 색 Jones 다항식의 항이 이런 곱이므로 합의 최대항을 찾는 문제가 $\Lambda$ 의 최대화 문제가 되고, 그 최대점이 사면체의 이면각을 정한다. $N\to\infty$ 에서 합의 극한은 다음이다.
+세 각의 합이 $\pi$ 라는 제약 아래 이 합은 $\alpha=\beta=\gamma=\pi/3$ 인 **정이면체 사면체**에서 최대이고, 쌍곡 3 차원의 어떤 사면체도 이보다 부피가 클 수 없다. 1 의 $N$ 제곱근 $\zeta=e^{2\pi i/N}$ 에 대해 $\prod_{j=1}^{k}\vert 1-\zeta^j\vert$ 의 로그는 $\vert 1-e^{i\theta}\vert=2\vert\sin(\theta/2)\vert$ 를 쓰면 $\sum_{j=1}^{k}\log(2\sin(\pi j/N))$ 이 되고, 이것은 $\log(2\sin)$ 의 Riemann 합이다. 색 Jones 다항식의 항이 이런 곱이므로 합의 최대항을 찾는 문제가 $\Lambda$ 의 최대화 문제가 되고, 그 최대점이 사면체의 이면각을 정한다. $N\to\infty$ 에서 합의 극한은 다음이다.
 
 $$
 \frac1N\sum_{j=1}^{k}\log\Big(2\sin\frac{\pi j}N\Big)\thinspace\longrightarrow\thinspace\frac1\pi\int_0^{\pi k/N}\log(2\sin t)\thinspace dt=-\frac1\pi\Lambda\Big(\frac{\pi k}N\Big)

@@ -88,5 +88,6 @@ $\sum(-1)^{n+1}/n=\log 2$ 가 조건수렴의 표준 예다.
 ## 더 알아보기
 
 - [멱급수](power-series.md)
+- [Dirichlet 급수](dirichlet-series.md)
 
 #analysis #number_theory

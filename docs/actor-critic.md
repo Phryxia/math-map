@@ -95,7 +95,7 @@ $\lambda$ 를 $0$ 에 가깝게 잡으면 더해지는 항이 적어 분산이 �
 # 활용
 
 - **연속 행동 제어.** 행동이 실수 벡터이면 Gauss 정책의 평균을 행위자가 내고 비평자가 상태가치만 추정한다. 행동집합에 대한 최대화를 풀지 않으므로 관절 토크나 조향각을 그대로 다룬다.
-- **보폭의 제한.** 갱신 전후 정책의 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)를 제약이나 벌점으로 걸어 한 번의 이동을 제한한다. 신뢰영역 정책 최적화(trust region policy optimization, TRPO)와 근접 정책 최적화(proximal policy optimization, PPO)가 이 형태이고, 이점 추정에 GAE 를 쓴다.
+- **보폭의 제한.** 갱신 전후 정책의 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)를 제약이나 벌점으로 걸어 한 번의 이동을 제한한다. [신뢰영역 정책 최적화](trust-region-policy-optimization.md)(trust region policy optimization, TRPO)와 근접 정책 최적화(proximal policy optimization, PPO)가 이 형태이고, 이점 추정에 GAE 를 쓴다.
 - **병렬 수집.** 환경 복제본 여럿에서 전이를 모아 한 모수에 갱신을 모으면 표본의 상관이 줄어든다. 비동기 이득 행위자–비평자(asynchronous advantage actor-critic, A3C)와 그 동기 판이 이 구조다.
 - **비평자의 대상 선택.** 비평자가 $V$ 대신 $Q$ 를 추정하면 행동까지 입력으로 받아 결정적 정책의 기울기를 $\nabla_a Q$ 로 받을 수 있다. 정책에서 떨어진 표본을 재사용하는 알고리즘들이 이 쪽을 쓴다.
 

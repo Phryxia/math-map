@@ -52,7 +52,7 @@ $$
 y - \hat{y} \thickspace\perp\thickspace C(X), \qquad \text{즉}\quad X^{\top}(y - X\hat\beta) = 0
 $$
 
-으로 특징지어진다. 이를 정리하면 정규방정식
+가 그 조건이다. 식을 풀면 정규방정식
 
 $$
 X^{\top}X\thinspace\hat\beta \thickspace=\thickspace X^{\top}y
@@ -190,7 +190,10 @@ $$
 
 ## 더 알아보기
 
+- [일반화선형모형](generalized-linear-models.md)
 - [편향-분산 분해](bias-variance-decomposition.md)
+- [핵 능형회귀](kernel-ridge-regression.md)
 - [교차검증](cross-validation.md)
+- [압축 센싱](compressed-sensing.md)
 
 #statistics #linear_algebra #optimization

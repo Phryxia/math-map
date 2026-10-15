@@ -123,8 +123,21 @@ $$
 
 ## 더 알아보기
 
-- [경사하강법](gradient-descent.md)
+### 볼록 해석과 쌍대성
+
+- [볼록 공액](convex-conjugate.md)
+- [준볼록 함수](quasiconvex-functions.md)
 - [Lagrange 쌍대성](lagrange-duality.md)
+
+### 볼록체의 기하
+
+- [Krein–Milman 정리](krein-milman.md)
+- [Brunn–Minkowski 부등식](brunn-minkowski.md)
+
+### 알고리즘과 응용
+
+- [경사하강법](gradient-descent.md)
 - [선형계획법](linear-programming.md)
+- [압축 센싱](compressed-sensing.md)
 
 #optimization #analysis

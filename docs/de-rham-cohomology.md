@@ -66,7 +66,7 @@ $$
 
 ## Mayer–Vietoris 수열
 
-$M=U\cup V$ 로 열린집합 둘로 덮으면 다음 긴 완전열이 있다.
+특이 호몰로지의 [Mayer–Vietoris 완전열](mayer-vietoris.md)에 대응하는 열이 미분형식의 복합체에도 있다. $M=U\cup V$ 로 열린집합 둘로 덮으면 다음 긴 완전열이 있다.
 
 $$
 \cdots\to H^k(M)\to H^k(U)\oplus H^k(V)\to H^k(U\cap V)\xrightarrow{\ \delta\ }H^{k+1}(M)\to\cdots

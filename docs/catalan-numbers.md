@@ -94,6 +94,7 @@ $C_n$ 이 홀수인 것은 $n+1$ 이 $2$ 의 거듭제곱일 때뿐이다[^1]. �
 
 ## 더 알아보기
 
+- [비교차 분할](noncrossing-partitions.md)
 - [Temperley–Lieb 대수](temperley-lieb-algebras.md)
 
 #combinatorics #algebra #probability

@@ -104,6 +104,7 @@ $$
 
 ## 더 알아보기
 
+- [결합](coupling.md)
 - [Markov 연쇄의 혼합시간](mixing-time.md)
 
 #probability #measure_theory #statistics #information_theory

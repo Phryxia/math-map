@@ -92,6 +92,7 @@ $$
 
 ## 더 알아보기
 
+- [비교차 분할](noncrossing-partitions.md)
 - [조합적 종](combinatorial-species.md)
 
 #combinatorics #probability #number_theory

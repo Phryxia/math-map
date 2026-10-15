@@ -36,9 +36,9 @@ $$
 
 *증명의 요지.* $K=\lbrace x:\varphi_x(x)\text{ 가 멈춘다}\rbrace$ 를 쓴다. $K$ 는 인식 가능하고 그 여집합 $\overline K$ 는 인식 가능하지 않다. 두 방향을 각각 $\overline K$ 의 인식 가능성으로 환산한다.
 
-오른쪽에서 왼쪽. 유한 $\theta\in\mathcal A$ 와 $\theta\subseteq\psi$ 인데 $\psi\notin\mathcal A$ 라 가정한다. 입력 $x$ 마다 프로그램 $g(x)$ 를 다음으로 만든다. 입력 $y$ 를 받아 $\theta(y)$ 가 정의되면 그 값을 내고, 그와 함께 $\varphi_x(x)$ 를 돌려 멈추면 $\psi(y)$ 를 계산한다. 그러면 $x\notin K$ 일 때 $\varphi_{g(x)}=\theta$ 이고 $x\in K$ 일 때 $\varphi_{g(x)}=\psi$ 다. 따라서 $x\in\overline K$ 인 것과 $g(x)\in I\_\mathcal A$ 인 것이 같아져 $\overline K$ 가 인식 가능해진다.
+오른쪽에서 왼쪽. 유한 $\theta\in\mathcal A$ 와 $\theta\subseteq\psi$ 인데 $\psi\notin\mathcal A$ 라 가정한다. 입력 $x$ 마다 프로그램 $g(x)$ 를 다음으로 만든다. 입력 $y$ 를 받아 $\theta(y)$ 가 정의되면 그 값을 내고, 그와 함께 $\varphi_x(x)$ 를 돌려 멈추면 $\psi(y)$ 를 계산한다. 그러면 $x\notin K$ 일 때 $\varphi_{g(x)}=\theta$ 이고 $x\in K$ 일 때 $\varphi_{g(x)}=\psi$ 다. 따라서 $x\in\overline K$ 인 것과 $g(x)\in I\_\mathcal A$ 인 것이 같아져 $\overline K$ 를 인식할 수 있다.
 
-왼쪽에서 오른쪽. $\psi\in\mathcal A$ 인데 $\psi$ 의 어떤 유한 부분함수도 $\mathcal A$ 에 없다고 가정한다. 프로그램 $h(x)$ 를 다음으로 만든다. 입력 $y$ 를 받아 $\varphi_x(x)$ 를 $y$ 단계까지 돌려 보고, 그 안에 멈추지 않으면 $\psi(y)$ 를 계산하고 멈추면 값을 내지 않는다. $x\notin K$ 이면 $\varphi_{h(x)}=\psi$ 이고, $x\in K$ 이면 $\varphi_x(x)$ 가 어떤 $s$ 단계에 멈추므로 $\varphi_{h(x)}$ 는 $y\lt s$ 에서만 정의된 $\psi$ 의 유한 부분함수다. 가정에 따라 앞은 $\mathcal A$ 에 들고 뒤는 들지 않으므로 다시 $\overline K$ 가 인식 가능해진다.
+왼쪽에서 오른쪽. $\psi\in\mathcal A$ 인데 $\psi$ 의 어떤 유한 부분함수도 $\mathcal A$ 에 없다고 가정한다. 프로그램 $h(x)$ 를 다음으로 만든다. 입력 $y$ 를 받아 $\varphi_x(x)$ 를 $y$ 단계까지 돌려 보고, 그 안에 멈추지 않으면 $\psi(y)$ 를 계산하고 멈추면 값을 내지 않는다. $x\notin K$ 이면 $\varphi_{h(x)}=\psi$ 이고, $x\in K$ 이면 $\varphi_x(x)$ 가 어떤 $s$ 단계에 멈추므로 $\varphi_{h(x)}$ 는 $y\lt s$ 에서만 정의된 $\psi$ 의 유한 부분함수다. 가정에 따라 앞은 $\mathcal A$ 에 들고 뒤는 들지 않으므로 다시 $\overline K$ 를 인식할 수 있다.
 
 ## Rice 정리의 유도
 

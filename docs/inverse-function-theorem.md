@@ -90,6 +90,6 @@ $Df(a)$ 의 계수가 $a$ 의 근방에서 일정하면, 정의역과 공역의 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Brouwer 차수](brouwer-degree.md)
 
 #analysis #differential_geometry #optimization

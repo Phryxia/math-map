@@ -46,7 +46,7 @@ $$
 \mathfrak S(\mathcal H)=\prod\_p\Bigl(1-\frac{\nu(p)}{p}\Bigr)\Bigl(1-\frac1p\Bigr)^{-k}
 $$
 
-를 **특이급수**라 한다. 허용집합이면 각 인자가 $0$ 이 아니고 곱이 수렴한다.
+를 **특이급수**라 한다. 허용집합이면 각 인자가 $0$ 이 아니고 곱이 수렴한다. 소수마다의 인자가 법 $p$ 에서 재는 국소 밀도이고, [원법](circle-method.md)이 다른 가법 문제에서 얻는 특이급수도 같은 꼴로 쪼개진다.
 
 **Hardy–Littlewood 추측.** $n+h_1,\dots,n+h_k$ 가 모두 소수인 $n\le x$ 의 개수가 $\mathfrak S(\mathcal H)\thinspace x/(\log x)^k$ 에 점근한다.
 
@@ -89,7 +89,7 @@ $k=2$ 로 두고 위 논증을 돌리면 쌍둥이 소수의 무한성이 나올
 # 활용
 
 - **쌍둥이 소수의 밀도 예측.** $\mathcal H=\lbrace 0,2\rbrace$ 의 특이급수가 쌍둥이 소수 상수이고, Hardy–Littlewood 추측이 주는 점근값이 [체 방법](sieve-methods.md)의 Brun 상한과 같은 크기다.
-- **Bombieri–Vinogradov 정리의 범위.** 유계 간격의 상한이 법의 범위 $\theta$ 에 단조로 의존하므로, Elliott–Halberstam 추측이 성립하면 상한이 $6$ 으로 내려간다. 큰 체의 결과를 개선하는 동기가 여기서 나온다.
+- **Bombieri–Vinogradov 정리의 범위.** 유계 간격의 상한이 법의 범위 $\theta$ 에 단조로 의존하므로, Elliott–Halberstam 추측이 성립하면 상한이 $6$ 으로 내려간다. 큰 체의 결과가 $\theta$ 를 올리면 상한이 더 내려간다.
 - **소수 계량 함수의 오차.** [Riemann 가설](riemann-hypothesis.md)은 $\pi(x)$ 의 오차에 $x^{1/2}\log x$ 상한을 주지만, 간격에 대해서는 $d_n\ll p_n^{1/2}\log p_n$ 밖에 주지 않는다. Cramér 추측의 $d_n\ll(\log p_n)^2$ 와 차이가 크다.
 
 [^1]: R. A. Rankin, *The difference between consecutive prime numbers*, J. London Math. Soc. **13** (1938), 242–247. 상수 $c$ 를 임의로 키운 것은 K. Ford, B. Green, S. Konyagin, J. Maynard, T. Tao, *Long gaps between primes*, J. Amer. Math. Soc. **31** (2018), 65–105 다.

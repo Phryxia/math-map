@@ -101,7 +101,7 @@ $$
 \chi(X\times Y)=\chi(X)\thinspace\chi(Y),\qquad \chi(X\cup Y)=\chi(X)+\chi(Y)-\chi(X\cap Y)
 $$
 
-두 번째 식은 두 조각이 부분복합체로 맞물릴 때 성립하는 [포함배제](inclusion-exclusion.md)의 위상판이다. 원의 지표가 0 이므로 곱 규칙에서 원환면의 지표 0 이 따른다.
+두 번째 식은 두 조각이 부분복합체로 맞물릴 때 성립하는 [포함배제](inclusion-exclusion.md)의 위상판이고, [Mayer–Vietoris 완전열](mayer-vietoris.md)에 완전열의 덧셈 공식을 적용해 얻는다. 원의 지표가 0 이므로 곱 규칙에서 원환면의 지표 0 이 따른다.
 
 ## Gauss–Bonnet
 

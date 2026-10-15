@@ -86,6 +86,7 @@ $T$ 의 유한 부분집합 전체를 $I$ 로 두고, 각 $i \in I$ 에 $i$ 의 
 ## 선수지식
 
 - [모형론](model-theory.md)
+- [필터와 그물](filters-and-nets.md)
 
 ## 더 알아보기
 

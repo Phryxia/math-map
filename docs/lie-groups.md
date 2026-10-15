@@ -144,6 +144,7 @@ $$
 ## 더 알아보기
 
 - [Peter–Weyl 정리](peter-weyl.md)
+- [모멘트 사상](moment-map.md)
 - [Chern–Simons 이론](chern-simons.md)
 
 #differential_geometry #group_theory #linear_algebra

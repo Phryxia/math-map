@@ -82,6 +82,7 @@ $$
 
 ## 더 알아보기
 
+- [Korovkin 정리](korovkin-theorem.md)
 - [Chebyshev 다항식](chebyshev-polynomials.md)
 
 #analysis #functional_analysis #topology

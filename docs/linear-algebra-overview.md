@@ -12,6 +12,7 @@
 graph TD
   VS["벡터 공간"] --> LM["선형사상"] --> DT["행렬식"] --> EV["고윳값"]
   VS --> IP["내적 공간"] --> ST["스펙트럼 정리"] --> SVD["특이값 분해"] --> PCA["주성분 분석"]
+  EV --> MP["최소다항식"] --> JC["Jordan 표준형"]
   EV --> ST
   LM --> GL["그래프 Laplacian"] --> EX["Expander 그래프"]
   EV --> EX
@@ -37,6 +38,7 @@ graph TD
 ## 고윳값과 스펙트럼
 
 - [행렬식](determinants.md) → [고윳값](eigenvalues.md): 부피와 불변 방향
+- [최소다항식](minimal-polynomial.md): 선형사상을 소멸시키는 최소 차수 다항식, 나눗셈 판정과 대각화 판정
 - [Jordan 표준형](jordan-canonical-form.md): 대각화가 안 되는 행렬의 유사 불변량
 - [유리 표준형](rational-canonical-form.md): 고윳값이 체 밖에 있어도 쓰는 유사 불변량
 - [Perron–Frobenius 정리](perron-frobenius.md): 음이 아닌 행렬의 최대 고윳값과 양의 고유벡터

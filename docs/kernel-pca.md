@@ -124,6 +124,7 @@ Isomap, 라플라시안 고유사상, 확산 사상은 각각 특정한 커널�
 ## 선수지식
 
 - [주성분 분석](principal-component-analysis.md)
+- [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)
 
 ## 더 알아보기
 

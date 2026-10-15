@@ -55,7 +55,7 @@ $$
 q^k\sum_{i=0}^{t}\binom{n}{i}(q-1)^i\le q^n
 $$
 
-등호를 달성하면 완전부호이고 공간에 빈틈이 없다. Hamming 부호와 Golay 부호가 그런 예다. 완전부호는 드물다.
+등호를 달성하면 완전부호이고 공간에 빈틈이 없다. Hamming 부호와 [Golay 부호](golay-codes.md)가 그런 예다. 완전부호는 드물다.
 
 ## Hamming 부호
 
@@ -93,7 +93,7 @@ Hamming 쪽은 부호어가 $2^4$ 개이고 최소거리가 3 이라 $[7,4,3]$ �
 ## 더 알아보기
 
 - [채널 부호화 정리](channel-coding.md)
-- [Mathieu 군](mathieu-groups.md)
+- [Golay 부호](golay-codes.md)
 - [구 채우기](sphere-packing.md)
 
 #field_theory #linear_algebra #computation

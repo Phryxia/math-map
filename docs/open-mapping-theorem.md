@@ -65,7 +65,7 @@ $T$ 가 열린 사상이므로 $T^{-1}$ 의 역상이 열린 집합이고, [선�
 - **작용소의 역의 존재.** 미분방정식을 $Tu=f$ 로 쓰고 $T$ 의 전단사성을 보이면 해의 존재와 유일성뿐 아니라 자료 $f$ 에 대한 연속 의존성이 따라온다.
 - **비유계 작용소의 다룸.** 미분작용소는 $L^2$ 전체에서 정의되지 않고 정의역에서만 닫힌 작용소다. 닫힌 그래프 정리가 전역 정의와 유계성을 묶으므로, 전역에서 정의된 비유계 작용소를 다루려면 [선택공리](axiom-of-choice.md)가 필요하다.
 - **노름의 비교.** 한 공간 위의 두 완비 노름이 한쪽 부등식만으로 동치가 된다. Sobolev 공간의 서로 다른 정의가 같은 위상을 준다는 확인이 이 형태다.
-- **닫힌 치역 정리.** 열린 사상 정리를 상공간 $Y/\overline{\mathrm{ran}\thinspace T}$ 에 적용해 치역이 닫혀 있을 조건을 작용소의 쌍대 쪽 조건으로 바꾼다. [Fredholm 작용소](fredholm-operators.md)의 이론이 이 위에 선다.
+- **[닫힌 치역 정리](closed-range-theorem.md).** 열린 사상 정리를 상공간 $Y/\overline{\mathrm{ran}\thinspace T}$ 에 적용해 치역이 닫혀 있을 조건을 작용소의 쌍대 쪽 조건으로 바꾼다. [Fredholm 작용소](fredholm-operators.md)의 이론이 이 위에 선다.
 
 [^1]: Walter Rudin, *Functional Analysis*, 2nd ed., McGraw–Hill, 1991, Theorem 2.11 (열린 사상 정리)과 Theorem 2.15 (닫힌 그래프 정리).
 
@@ -78,6 +78,6 @@ $T$ 가 열린 사상이므로 $T^{-1}$ 의 역상이 열린 집합이고, [선�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [닫힌 치역 정리](closed-range-theorem.md)
 
 #functional_analysis #analysis #topology

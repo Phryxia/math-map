@@ -175,7 +175,9 @@ $$
 
 ## 더 알아보기
 
+- [Fisher 정보](fisher-information.md)
 - [대편차 원리](large-deviations.md)
+- [기댓값 최대화 알고리즘](em-algorithm.md)
 - [변분 오토인코더](variational-autoencoder.md)
 - [Sinkhorn 알고리즘](sinkhorn.md)
 

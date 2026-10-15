@@ -76,7 +76,7 @@ $\lbrace m\_\lambda\rbrace$ , $\lbrace e\_\lambda\rbrace$ , $\lbrace h\_\lambda\
 # 활용
 
 - Schur 다항식의 정의와 Littlewood–Richardson 규칙. 대칭함수환이 기저를 갖는 환이라는 사실이 두 Schur 함수의 곱을 다시 Schur 함수의 정수계수 결합으로 적게 한다.
-- [Galois 이론](galois-theory.md)의 판별식과 종결식. 근의 차의 제곱의 곱이 대칭식이므로 기본정리에 의해 계수의 다항식이고, 그 값으로 근의 중복과 기약성을 판정한다.
+- [Galois 이론](galois-theory.md)의 판별식과 종결식. 근의 차의 제곱의 곱이 대칭식이므로 기본정리로 계수의 다항식이 되고, 그 값으로 근의 중복과 기약성을 판정한다.
 - [고윳값](eigenvalues.md)의 특성다항식 계수. $n\times n$ 행렬의 특성다항식 계수가 고윳값의 기본 대칭함수이고, $e\_1$ 이 대각합, $e\_n$ 이 행렬식이다. 거듭제곱합 $p\_k$ 는 $\mathrm{tr}(A^k)$ 이므로 Newton 항등식이 대각합에서 특성다항식을 계산하는 절차를 준다.
 - [Pólya 세기 정리](polya-enumeration.md)의 순환 지표. 순환 지표가 거듭제곱합 기저의 원소들의 결합이고, 가중치를 대입하는 단계가 기저 변환이다.
 

@@ -81,6 +81,7 @@ $f(x)\ne x$ 인 각 $x$ 에서 $r(x)$ 를 $f(x)$ 에서 $x$ 방향으로 나가�
 ## 더 알아보기
 
 - [Sperner 보조정리](sperner-lemma.md)
+- [Borsuk–Ulam 정리](borsuk-ulam.md)
 - [Schauder 고정점 정리](schauder-fixed-point.md)
 - [Kakutani 고정점 정리](kakutani-fixed-point.md)
 - [Lefschetz 고정점 정리](lefschetz-fixed-point.md)

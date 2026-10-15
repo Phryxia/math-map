@@ -15,6 +15,11 @@
 ```mermaid
 graph TD
   MLO["기계학습 개관"] --> GD["경사하강법"]
+  CI["집중부등식"] --> RC["Rademacher 복잡도"]
+  RC --> VC["VC 차원"]
+  VC --> GC["Glivenko-Cantelli 정리"]
+  RC --> SVM["서포트 벡터 머신"]
+  LD["Lagrange 쌍대성"] --> SVM
   CVX["볼록성"] --> GD
   DER["미분"] --> GD
   GD --> VAE["변분 오토인코더"]
@@ -24,7 +29,7 @@ graph TD
   PCA --> KPCA["커널 PCA"]
   PPCA --> VAE
   VAE --> DM["확산모형"]
-  ITO["Itô 적분"] --> DM
+  SDE["확률미분방정식"] --> DM
   DM --> FM["흐름 정합"]
   OT["최적 수송"] --> FM
   OT --> SINK["Sinkhorn 알고리즘"]
@@ -34,16 +39,23 @@ graph TD
 
 # 갈래
 
-## 최적화와 일반화
+## 최적화
 
 - [경사하강법](gradient-descent.md) — 기울기 반대 방향으로 반복한다. 볼록과 강볼록에서 수렴률이 다르고 보폭이 Lipschitz 상수에 묶인다
+
+## 일반화 이론
+
 - [집중부등식](concentration-inequalities.md) — 표본평균이 기댓값에서 벗어날 확률의 지수 한계. 일반화 오차를 표본 수로 제한하는 데 쓴다
+- [Rademacher 복잡도](rademacher-complexity.md) — 함수족이 무작위 부호열과 갖는 상관의 기댓값. 무한 가설류의 일반화 오차를 가설 개수 없이 막는다
+- [VC 차원](vc-dimension.md) — 가설족이 부수는 집합의 최대 크기. 성장함수가 다항식인지 지수인지를 가른다
+- [서포트 벡터 머신](support-vector-machine.md) — 마진을 최대화하는 초평면. 쌍대문제가 자료의 내적만으로 적히고 마진이 일반화 경계에 들어간다
 
 ## 표현과 차원 축소
 
 - [주성분 분석](principal-component-analysis.md) — 공분산행렬의 고유벡터로 분산이 큰 방향을 찾는다
 - [확률적 PCA](probabilistic-pca.md) — 주성분 분석을 잠재변수와 Gauss 잡음을 가진 생성모형으로 다시 쓴다
 - [커널 PCA](kernel-pca.md) — 특징 사상 뒤의 공분산을 내적만으로 다룬다
+- [핵 능형회귀](kernel-ridge-regression.md) — 재생핵 Hilbert 공간에서 제곱오차와 노름 벌점을 최소화한다. 해가 n 차 선형계 하나다
 
 ## 확률적 모형
 
@@ -70,6 +82,7 @@ graph TD
 - [Q 학습](q-learning.md) — 전이확률을 모르고 표본 하나마다 시간차 오차로 갱신한다
 - [정책 경사](policy-gradient.md) — 가치함수를 거치지 않고 정책을 직접 미분한다. 점수함수 추정량이 전이확률을 지운다
 - [행위자–비평자](actor-critic.md) — 시간차 오차 하나로 정책과 가치를 함께 갱신한다
+- [신뢰영역 정책 최적화](trust-region-policy-optimization.md) — 보폭을 KL divergence 로 재는 제약 갱신. 잘라낸 대리 목적이 제약을 1차 계산으로 바꾼다
 - [다중 슬롯머신](multi-armed-bandits.md) — 상태가 하나뿐인 경우. 신뢰상한이 탐색과 활용을 한 식에 담는다
 - [최적 정지](optimal-stopping.md) — 행동이 멈춤과 계속 둘뿐인 경우. Snell 포락이 언제 멈출지를 정한다
 

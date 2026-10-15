@@ -113,6 +113,7 @@ $f_n = n \cdot \mathbf{1}\_{(0,1/n)}$ 은 점별로 $0$ 에 수렴하지만 모�
 ### 수렴과 교환
 
 - [단조 수렴 정리](monotone-convergence.md)
+- [곱측도](product-measure.md)
 - [Fubini–Tonelli 정리](fubini-tonelli.md)
 
 ### 함수공간

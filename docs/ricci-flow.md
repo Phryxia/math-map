@@ -118,6 +118,7 @@ $$
 
 ## 더 알아보기
 
+- [Ricci 솔리톤](ricci-solitons.md)
 - [기하화 정리](geometrization.md)
 
 #differential_geometry #topology #analysis

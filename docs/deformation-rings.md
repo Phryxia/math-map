@@ -131,7 +131,7 @@ $H^2(G_{\mathbb Q,S},\mathrm{ad}^0\bar\rho)=0$ 이면 변형 문제가 장애 �
 - **Serre 추측**: Khare–Wintenberger 의 증명은 $\bar\rho$ 를 올려 특성 $0$ 표현을 만들고 모듈러성 올림으로 옮기는 귀납이다. 올리는 단계가 변형환의 점을 찾는 일이고, Ramakrishna 의 올림 정리가 국소 조건을 단 변형환이 비어 있지 않음을 보장한다.
 - **모듈러성 올림**: $\bar\rho$ 가 모듈러이면 조건을 만족하는 변형도 모듈러라는 정리들이 $R=T$ 의 변주다. Fermat 의 마지막 정리가 첫 응용이었다.
 - **Fontaine–Mazur**: de Rham 조건을 단 변형환의 $\mathbb Q_p$ 값 점이 모두 $\mathbb T$ 에서 온다는 것이 추측의 내용이다. Kisin 과 Emerton 의 $\mathrm{GL}\_2$ 증명은 국소 변형환의 기하를 $p$ 진 국소 Langlands 로 읽는다.
-- **고유다양체**: 변형환의 점을 강체적으로 해석해 얻는 $p$ 진 해석공간이 Hida 족과 eigenvariety 다. 고전점이 그 안에 조밀하게 놓이고, 어느 점이 de Rham 인지가 다시 Fontaine–Mazur 다.
+- **고유다양체**: 변형환의 점을 강체적으로 해석해 얻는 $p$ 진 해석공간이 [Hida 족](hida-theory.md)과 [고유다양체](eigenvariety.md)다. 고전점이 그 안에 조밀하게 놓이고, 어느 점이 de Rham 인지가 다시 Fontaine–Mazur 다.
 
 # 활용
 

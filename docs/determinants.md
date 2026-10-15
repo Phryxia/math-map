@@ -124,6 +124,7 @@ Kirchhoff 의 matrix-tree 정리로 연결 [그래프](graphs.md)의 신장트�
 
 - [고윳값](eigenvalues.md)
 - [격자](lattices.md)
+- [완전 단일모듈 행렬](totally-unimodular-matrices.md)
 - [Fredholm 행렬식](fredholm-determinant.md)
 - [Reidemeister 비틀림](reidemeister-torsion.md)
 

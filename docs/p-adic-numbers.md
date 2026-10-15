@@ -89,7 +89,7 @@ $e$ 는 부치군의 지표(분기지수), $f$ 는 잉여체 확대의 차수다
 
 ## Hensel 보조정리
 
-$f\in\mathbb Z_p\lbrack x\rbrack$ 와 $a\in\mathbb Z_p$ 가 $\vert f(a)\vert\_p\lt \vert f'(a)\vert\_p^2$ 를 만족하면 $a$ 에 가까운 근 $\alpha\in\mathbb Z_p$ 가 유일하게 있다. 법 $p$ 에서의 단순근이 $p$ 진 근으로 올라간다는 것이고, 제곱원소 판정과 Teichmüller 대표원과 불분기 확대가 여기서 나온다. 증명과 따름은 [Hensel 보조정리](hensel-lemma.md)에 있다.
+$f\in\mathbb Z_p\lbrack x\rbrack$ 와 $a\in\mathbb Z_p$ 가 $\vert f(a)\vert\_p\lt \vert f'(a)\vert\_p^2$ 를 만족하면 $a$ 에 가까운 근 $\alpha\in\mathbb Z_p$ 가 유일하게 있다. 법 $p$ 에서의 단순근이 $p$ 진 근으로 올라간다는 것이고, 제곱원소 판정과 Teichmüller 대표원과 불분기 확대의 구성이 이 올림을 쓴다. 증명과 따름은 [Hensel 보조정리](hensel-lemma.md)에 있다.
 
 ## 초거리 기하
 
@@ -161,10 +161,13 @@ $\mathbb R$ 와 $\mathbb Q_p$ 는 $\mathbb Q$ 의 완비화로서 대등하다. 
 - [아델](adeles.md)
 - [국소 유체론](local-class-field-theory.md)
 - [Newton 다각형](newton-polygon.md)
+- [강체해석공간](rigid-analytic-spaces.md)
 - [이차형식](quadratic-forms.md)
 
-### 타원곡선과 모듈러 형식
+### L 함수와 타원곡선
 
+- [Iwasawa 대수](iwasawa-algebra.md)
+- [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md)
 - [Tate 곡선](tate-curve.md)
 - [p 진 L 함수](p-adic-l-function.md)
 - [과수렴 모듈러 기호](overconvergent-modular-symbols.md)

@@ -56,7 +56,7 @@ Dilworth 정리와 Mirsky 정리는 사슬 $k$ 개의 합집합에 대한 하나
 
 - **작업 스케줄링.** 의존 관계가 부분순서인 작업 집합에서 최대 사슬은 총 소요 시간의 하한이고 너비는 동시에 실행할 수 있는 작업 수의 상한이다. 최소 사슬 덮개가 필요한 처리기 수를 준다.
 - **최소 경로 덮개.** [방향 비순환 그래프](topological-sort.md)(directed acyclic graph, DAG)의 정점을 서로소인 경로로 덮는 최소 개수를 구하는 문제는 도달가능성 순서에 Dilworth 정리를 적용한 것이며, 이분 매칭으로 푼다.
-- **완전그래프.** 비교가능성 그래프는 [완전그래프](perfect-graphs.md)이고, Dilworth 정리는 그 여그래프에서 색칠수와 클릭수가 같다는 진술에 해당한다.
+- **완벽그래프.** 비교가능성 그래프는 [완벽그래프](perfect-graphs.md)이고, Dilworth 정리는 그 여그래프에서 색칠수와 클릭수가 같다는 진술에 해당한다.
 - **최대유량 최소절단.** 사슬 덮개 문제를 [네트워크 유량](network-flow.md)으로 옮기면 최소절단이 최대 반사슬에 대응한다. 최소최대 쌍대성이 유량 문제의 쌍대성과 같은 근원임을 보여 주는 대응이다.
 
 [^1]: Greene and Kleitman, "The structure of Sperner k-families", *Journal of Combinatorial Theory, Series A* 20 (1976), 41–68.

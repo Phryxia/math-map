@@ -14,7 +14,7 @@ $$
 
 양쪽 대상의 생김새는 다르다. $v\in\Sigma$ 에서 $B_v^\times$ 는 중심을 나누면 콤팩트하므로 기약 표현이 유한차원인데, 반대편 $\mathrm{GL}\_2(F_v)$ 에서 같은 자리의 표현은 무한차원 이산계열이다. 1 차원 자명 표현과 무한차원 Steinberg 표현이 같은 이름표를 단다.
 
-실용적 가치는 방향에 있다. $\Sigma\ne\varnothing$ 이면 $B^\times$ 쪽 몫공간이 콤팩트해서 첨점도 [Eisenstein 급수](eisenstein-series.md)도 [연속 스펙트럼](speh-representations.md)도 없고, 모든 것이 이산이며 유한차원 선형대수로 계산된다. JL(Jacquet–Langlands) 대응은 어려운 해석이 사는 세계의 문제를 유한 행렬의 문제로 옮긴다. [Waldspurger 정리](waldspurger-formula.md)가 사원수 대수 위에서 주기를 재는 것도 같은 이유다.
+실용적 가치는 방향에 있다. $\Sigma\ne\varnothing$ 이면 $B^\times$ 쪽 몫공간이 콤팩트해서 첨점도 [Eisenstein 급수](eisenstein-series.md)도 연속 스펙트럼도 없고, 모든 것이 이산이며 유한차원 선형대수로 계산된다. JL(Jacquet–Langlands) 대응은 어려운 해석이 사는 세계의 문제를 유한 행렬의 문제로 옮긴다. [Waldspurger 정리](waldspurger-formula.md)가 사원수 대수 위에서 주기를 재는 것도 같은 이유다.
 
 # 직관
 
@@ -44,7 +44,7 @@ $$
 \mathrm{JL}\_v:\ \mathrm{Irr}\bigl(B_v^\times\bigr)\ \xrightarrow{\ \sim\ }\ \lbrace\mathrm{GL}\_2(F_v)\text{ 의 이산계열}\rbrace
 $$
 
-이고 아래 지표 항등식으로 특징지어진다. 자명 표현이 Steinberg 표현에, 차원이 큰 표현이 초첨점 표현에 대응한다.
+이고 아래 지표 항등식이 그 대응을 정한다. 자명 표현이 Steinberg 표현에, 차원이 큰 표현이 초첨점 표현에 대응한다.
 
 정칙 타원원소 $\gamma$ 에서 지표의 부호가 뒤집힌다.
 
@@ -52,7 +52,7 @@ $$
 \Theta_{\mathrm{JL}(\rho)}(\gamma)=-\thinspace\Theta_\rho(\gamma)
 $$
 
-[Vogan 꾸러미](vogan-packets.md)의 언어로는 $\mathrm{GL}\_2$ 쪽 표현과 $B^\times$ 쪽 표현이 같은 매개변수를 갖는 꾸러미의 두 원소이고, 성분군 $\mathbb Z/2$ 의 자명 지표와 부호 지표에 각각 대응한다. 부호 지표가 붙은 쪽이 비분열 내부형식 위에 있다는 규칙이 이 $-1$ 로 나타난다.
+[Vogan L 꾸러미](vogan-packets.md)의 언어로는 $\mathrm{GL}\_2$ 쪽 표현과 $B^\times$ 쪽 표현이 같은 매개변수를 갖는 꾸러미의 두 원소이고, 성분군 $\mathbb Z/2$ 의 자명 지표와 부호 지표에 각각 대응한다. 부호 지표가 붙은 쪽이 비분열 내부형식 위에 있다는 규칙이 이 $-1$ 로 나타난다.
 
 ## 전역 대응
 

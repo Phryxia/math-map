@@ -39,6 +39,7 @@ graph TD
 - [정수의 합동](modular-arithmetic.md): 정수를 나머지로 분류하는 첫 도구
 - [유클리드 알고리즘](euclidean-algorithm.md): 최대공약수와 Bézout 항등식
 - [소수](primes.md): 산술의 기본 정리
+- [Möbius 반전 공식](mobius-inversion.md): 약수 합성곱이 주는 산술함수의 환과 그 환에서의 역원
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
 - [중국인의 나머지 정리](chinese-remainder-theorem.md): 서로소 법의 합동식 결합
 - [이차 상호법칙](quadratic-reciprocity.md): 제곱잉여의 대칭성, 유체론의 시작점
@@ -55,9 +56,11 @@ graph TD
 - [Pell 방정식](pell-equation.md): $x^2-dy^2=1$ 의 해가 기본해의 거듭제곱으로 전부 나온다
 - [이차형식](quadratic-forms.md): 대칭행렬로 본 2 차 동차식, 부호수와 Hasse–Minkowski 정리, 제곱수의 합
 - [Diophantine 근사](diophantine-approximation.md): 근사 지수가 대수적 수와 초월수를 가른다
+- [Roth 정리](roth-theorem.md): 대수적 무리수의 근사 지수가 $2$ 라는 정리, 보조 다항식과 지표, 비유효성
 - [초월수](transcendental-numbers.md): $e$ 와 $\pi$ 의 초월성, 로그의 일차형식
 - [Baker 정리](baker-theorem.md): 로그의 일차형식에 대한 유효 하한, Diophantus 방정식의 해 상한
 - [Thue 방정식](thue-equation.md): 차수 3 이상 이진형식의 정수해, 유한성과 Baker 하한이 주는 유효 상한
+- [S-단위 방정식](s-unit-equation.md): 단위군에서 푸는 $u+v=1$, Thue 방정식과 정수점 유한성의 공통 환원
 - [Siegel 의 정수점 정리](siegel-integral-points.md): 종수와 무한원점의 개수로 가른 정수점의 유한성, 유효 상한의 두 길
 
 ## 암호와 계산
@@ -76,6 +79,7 @@ graph TD
 
 - [Dedekind 정역](dedekind-domains.md) → [대수적 수체](algebraic-number-fields.md)
 - [대수적 수체](algebraic-number-fields.md) → [Dirichlet 단수 정리](dirichlet-unit-theorem.md): 단수군의 계수와 조절자, 류수 공식
+- [류수 1 문제](class-number-one.md): 소인수분해가 유일한 허이차체 아홉 개, 류수 공식의 비유효성과 특이 모듈러 값으로 얻은 상한
 - [p 진수](p-adic-numbers.md) → [Hensel 보조정리](hensel-lemma.md), [Newton 다각형](newton-polygon.md), [아델](adeles.md)
 - [유체론](class-field-theory.md) → [국소 유체론](local-class-field-theory.md), [Chebotarev 밀도 정리](chebotarev.md), [복소 곱셈](complex-multiplication.md)
 - [Brauer 군](brauer-groups.md), [Poitou–Tate 완전열](poitou-tate.md): 국소–대역 원리의 코호몰로지
@@ -84,14 +88,22 @@ graph TD
 
 소수를 세려면 복소함수가 필요하다. $\zeta$ 에서 $L$ 함수로, 다시 Tate 의 아델적 재해석으로.
 
+- [Dirichlet 급수](dirichlet-series.md): 계수에 $n^{-s}$ 를 붙인 급수, 수렴 가로선과 합성곱의 곱 대응, Perron 공식
 - [Riemann zeta 함수](riemann-zeta.md) → [소수 정리](prime-number-theorem.md) → [Dirichlet L 함수](dirichlet-l-functions.md) → [Gauss 합](gauss-sums.md)
+- [Chebyshev 추정](chebyshev-bounds.md): 이항계수의 소인수로 얻는 $\pi(x)$ 의 상하한과 Bertrand 가설
+- [Mertens 정리](mertens-theorem.md): 소수 역수 합의 크기와 Euler 곱의 점근, 소수 정리를 쓰지 않는 세 추정
 - [체 방법](sieve-methods.md): 작은 소수의 배수를 걸러 남는 개수를 재는 Brun 의 절단과 Selberg 의 가중
 - [큰 체](large-sieve.md): 소수마다 절반을 거르는 문제의 지수합 부등식과 Bombieri–Vinogradov 정리
+- [Vaughan 항등식](vaughan-identity.md): von Mangoldt 함수를 쌍선형합으로 가르는 항등식, Type I 과 Type II 합의 추정
+- [원법](circle-method.md): 가법적 문제의 해의 개수를 지수합의 주기 적분으로 적고 단위원을 주 호와 부 호로 가르는 절차, Waring 문제와 삼소수 정리
 - [소수 간격](prime-gaps.md): 연속한 소수의 차의 하한과 상한, 허용집합과 유계 간격
+- [Chen 정리](chen-theorem.md): 짝수가 소수와 거의 소수의 합이라는 결론, 가중 체와 전환 원리
 - [Riemann 가설](riemann-hypothesis.md): 영점의 실수부와 소수 계량 함수의 오차, GRH(generalized Riemann hypothesis) 의 응용
 - [쌍 상관 추측](pair-correlation-conjecture.md): 임계선 위 영점의 간격 분포와 무작위 행렬 고윳값 통계의 일치
 - [Poisson 합 공식](poisson-summation.md), [Mellin 변환](mellin-transform.md), [Euler–Maclaurin 공식](euler-maclaurin.md): 해석적 도구
 - [Bernoulli 수](bernoulli-numbers.md) → [Stickelberger 원소](stickelberger.md)
+- [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md): Bernoulli 수의 Kummer 합동으로 $\mathbb Z_p$ 위에 이은 zeta 함수, Iwasawa 대수의 멱급수 표현과 Leopoldt 의 $s=1$ 공식
+- [다중 zeta 값](multiple-zeta-values.md): 순서 조건을 붙인 다중 급수, 스터플·셔플 두 곱셈 규칙과 이중 셔플 관계
 - [Tate 의 논문](tate-thesis.md): $\zeta$ 함수의 아델적 증명
 
 ## 모듈러 형식
@@ -101,8 +113,11 @@ graph TD
 - [모듈러 형식](modular-forms.md) → [Eisenstein 급수](eisenstein-series.md), [Hecke 작용소](hecke-operators.md), [theta 급수](theta-series.md)
 - [Maass 형식](maass-forms.md), [Selberg 대각합 공식](selberg-trace-formula.md): 비정칙 스펙트럼
 - [모듈러 곡선](modular-curves.md) → [모듈러 기호](modular-symbols.md), [과수렴 모듈러 기호](overconvergent-modular-symbols.md)
+- [Hida 이론](hida-theory.md): 보통 부분으로 자른 형식의 공간을 Iwasawa 대수 위 유한 평탄 가군으로 묶어 무게를 변수로 움직이는 족
+- [고유다양체](eigenvariety.md): $U_p$ 의 특성 멱급수의 영점 자취 위에 Hecke 고윳값을 올린 강체해석공간, 기울기를 열어 둔 족
 - [Siegel 모듈라이 다양체](siegel-modular-variety.md) → [Siegel 모듈러 형식](siegel-modular-forms.md): 주편극 아벨 다양체를 분류하는 Siegel 상반공간의 몫과 그 위 선다발의 절단
 - [Jacobi 형식](jacobi-forms.md): 차수 2 Siegel 형식을 한 변수로 전개한 계수. 지표 1 의 공간이 반정수 가중치 형식과 동형이다
+- [Igusa 불변량](igusa-invariants.md): 종수 2 곡선을 정의하는 이진 6차형식의 불변량 $J_2,J_4,J_6,J_{10}$ 과 그 비로 얻는 모듈라이 공간의 좌표
 - [분할수](partitions.md), [Mock 모듈러 형식](mock-modular-forms.md), [Dyson 의 rank 와 crank](dyson-rank-crank.md), [Borcherds 곱](borcherds-products.md): 조합론과의 접점
 - [Weil 표현](weil-representation.md) → [Shimura 대응](shimura-correspondence.md), [Siegel–Weil 공식](siegel-weil.md) → [질량 공식](mass-formula.md) → [Niemeier 격자](niemeier-lattices.md)
 - [구 채우기](sphere-packing.md): 격자와 부호가 정하는 최대 밀도
@@ -123,6 +138,7 @@ graph TD
 - [p 진 L 함수](p-adic-l-function.md): 모듈러 기호로 만든 $\mathbb Z_p^\times$ 위 측도의 적분, 복소 특수값을 보간하고 Iwasawa 주추측의 해석적 변에 놓이는 함수
 - [p 진 높이](p-adic-height.md): 국소 분해의 로그를 $p$ 진 로그로 바꾸고 $p$ 자리를 Coleman 적분으로 채운 높이쌍, $p$ 진 BSD 의 조절자
 - [Chabauty–Kim 방법](chabauty-kim.md): 기본군의 깊은 몫으로 Chabauty 를 반복해 계수 조건을 $r\lt g+s-1$ 로 느슨하게 만든 방법
+- [Mordell–Weil 시브](mordell-weil-sieve.md): 유리점의 잉여류를 소수마다 환원해 걸러내는 절차, 유리점 목록의 완결과 부재 증명
 - [Mordell–Lang 추측](mordell-lang.md): 유한생성 부분군과 부분다양체의 교집합이 아벨 부분다양체의 잉여류 유한 개로 설명된다는 진술, Mordell 추측을 포함한다
 
 ## Galois 표현과 p 진 Hodge 이론
@@ -131,6 +147,7 @@ graph TD
 
 - [Galois 표현](galois-representations.md) → [Galois 표현의 변형환](deformation-rings.md) → [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
 - [p 진 Hodge 이론](p-adic-hodge-theory.md) → [Sen 이론](sen-theory.md), [Fontaine–Mazur 추측](fontaine-mazur.md)
+- [강체해석공간](rigid-analytic-spaces.md): 허용 덮개만 인정하는 Grothendieck 위상 위에 친화 준위를 붙여 비아르키메데스 체에서 해석접속을 되살린 공간
 - [Herbrand–Ribet 정리](herbrand-ribet.md): 류수와 모듈러 형식의 합동
 - [Dwork 의 유리성 정리](dwork-rationality.md) → [Deligne 의 Weil 추측 증명](deligne-weil-conjectures.md)
 - [대수적 K 이론](algebraic-k-theory.md): Quillen–Lichtenbaum 정리가 수체의 $K$ 군을 에탈 코호몰로지로 계산한다

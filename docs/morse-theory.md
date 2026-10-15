@@ -44,7 +44,7 @@ $$
 
 $M$ 에 Riemann 계량을 주고 $-\nabla f$ 의 흐름을 본다. 임계점 $p$ 에서 흘러나오는 점 전체를 **불안정 다양체** $W^u(p)$, 흘러들어오는 점 전체를 **안정 다양체** $W^s(p)$ 라 하고, $\dim W^u(p)=\lambda(p)$ 다.
 
-모든 쌍에서 $W^u(p)$ 와 $W^s(q)$ 가 횡단으로 만나면 $(f,g)$ 를 **Morse–Smale** 쌍이라 한다. 이때 지표 $k$ 인 임계점을 기저로 하는 자유 아벨군 $C_k$ 와, $\lambda(p)-\lambda(q)=1$ 인 쌍을 잇는 흐름선을 부호와 함께 센 경계사상 $\partial_k$ 가 복합체를 이룬다.
+모든 쌍에서 $W^u(p)$ 와 $W^s(q)$ 가 [횡단](transversality.md)으로 만나면 $(f,g)$ 를 **Morse–Smale** 쌍이라 한다. 이때 지표 $k$ 인 임계점을 기저로 하는 자유 아벨군 $C_k$ 와, $\lambda(p)-\lambda(q)=1$ 인 쌍을 잇는 흐름선을 부호와 함께 센 경계사상 $\partial_k$ 가 복합체를 이룬다.
 
 $$
 \partial_k:C_k\to C_{k-1},\qquad \partial\_{k-1}\circ\partial_k=0
@@ -91,7 +91,7 @@ $M$ 위의 모든 Morse 함수가 적어도 $\sum_k b_k$ 개의 임계점을 갖
 # 활용
 
 - **고차원 Poincaré 추측.** [s-코보디즘 정리](s-cobordism.md)의 증명은 코보디즘 위의 Morse 함수를 잡고 임계점을 쌍으로 지워 나간다. 차원이 $5$ 이상이면 상쇄할 임계점 쌍을 잇는 흐름선을 Whitney 기교로 분리할 수 있고, 임계점을 전부 지우면 곱 구조가 나온다.
-- **Lefschetz 올다발.** 대수다양체에 정칙 함수의 Morse 이론을 적용하면 특이 올을 지날 때 생기는 소멸 사이클이 호몰로지의 생성원을 준다. [Hodge 이론](hodge-theory.md)의 약한 Lefschetz 정리를 이 방식으로 증명한다.
+- **Lefschetz 올다발.** 대수다양체에 정칙 함수의 Morse 이론을 적용하면 특이 올을 지날 때 생기는 [소멸 사이클](vanishing-cycles.md)이 호몰로지의 생성원을 준다. [Hodge 이론](hodge-theory.md)의 약한 Lefschetz 정리를 이 방식으로 증명한다.
 - **점근 전개.** 적분 $\int e^{-f(x)/\hbar}\thinspace dx$ 의 $\hbar\to0$ 전개에서 주된 기여가 $f$ 의 임계점에서 나오고, 비퇴화 조건이 Gauss 적분으로 각 항을 계산하게 한다. [정류위상법](stationary-phase.md)과 [Laplace 방법](laplace-method.md)이 이 계산이다.
 - **최적화의 안장점.** 비볼록 함수의 임계점을 지표로 분류하면 극소점과 안장점이 갈라진다. 지표가 $1$ 이상인 임계점에서 내려가는 방향이 있다는 것이 기울기 방법이 안장점에 머물지 않는 근거다.
 
@@ -104,6 +104,7 @@ $M$ 위의 모든 Morse 함수가 적어도 $\sum_k b_k$ 개의 임계점을 갖
 
 ## 더 알아보기
 
+- [소멸 사이클](vanishing-cycles.md)
 - [s-코보디즘 정리와 고차원 Poincaré 추측](s-cobordism.md)
 - [순간자 Floer 호몰로지](instanton-floer-homology.md)
 

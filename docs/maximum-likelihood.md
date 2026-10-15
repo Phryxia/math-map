@@ -12,7 +12,7 @@
 
 # 정의
 
-모수 공간 $\Theta$ 에 대해 모형이란 확률밀도 또는 확률질량함수의 족 $f(x;\theta)$ 다. 관측값 $x_1,\dots,x_n$ 이 이 모형에서 독립으로 나왔다고 가정할 때 가능도(likelihood)와 로그가능도를 다음으로 정의한다. 가능도는 데이터를 고정하고 $\theta$ 의 함수로 본 것이다.
+모수 공간 $\Theta$ 에 대해 모형이란 [확률밀도](probability-density.md) 또는 확률질량함수의 족 $f(x;\theta)$ 다. 관측값 $x_1,\dots,x_n$ 이 이 모형에서 독립으로 나왔다고 가정할 때 가능도(likelihood)와 로그가능도를 다음으로 정의한다. 가능도는 데이터를 고정하고 $\theta$ 의 함수로 본 것이다.
 
 $$
 L(\theta)=\prod_{i=1}^{n} f(x_i;\theta),
@@ -161,6 +161,8 @@ $$
 
 ## 더 알아보기
 
+- [Fisher 정보](fisher-information.md)
+- [기댓값 최대화 알고리즘](em-algorithm.md)
 - [가설검정](hypothesis-testing.md)
 - [선형회귀](linear-regression.md)
 - [지수족](exponential-families.md)

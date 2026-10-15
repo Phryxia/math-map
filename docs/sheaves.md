@@ -91,5 +91,6 @@ $$
 
 - [층 코호몰로지](sheaf-cohomology.md)
 - [토포스](topos-theory.md)
+- [강체해석공간](rigid-analytic-spaces.md)
 
 #category_theory #topology #algebraic_topology

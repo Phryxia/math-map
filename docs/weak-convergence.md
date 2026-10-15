@@ -85,7 +85,7 @@ $$
 
 이며, 더 강하게 다음이 성립한다. $\varphi_n$ 이 각 점에서 어떤 함수 $\varphi$ 로 수렴하고 $\varphi$ 가 0 에서 연속이면, $\varphi$ 는 어떤 확률측도의 특성함수이고 $\mu_n$ 은 그 측도로 약수렴한다.
 
-0 에서의 연속성이 tightness 를 대신한다. $\mu_n=\delta_n$ 이면 $\varphi_n(t)=e^{int}$ 는 $t=0$ 에서만 수렴하므로 가정이 깨진다. [Fourier 변환](fourier.md)이 tightness 를 원점 근방의 국소적 성질로 번역한다. 중심극한정리의 표준 증명이 이 정리에 기댄다.
+0 에서의 연속성이 tightness 를 대신한다. $\mu_n=\delta_n$ 이면 $\varphi_n(t)=e^{int}$ 는 $t=0$ 에서만 수렴하므로 가정이 깨진다. [Fourier 변환](fourier-transform.md)이 tightness 를 원점 근방의 국소적 성질로 번역한다. 중심극한정리의 표준 증명이 이 정리에 기댄다.
 
 ## 적률의 비보존
 
@@ -103,7 +103,7 @@ $$
 
 $S$ 가 Polish 이고 $\mu_n\Rightarrow\mu$ 이면, 하나의 확률공간 위에 $Y_n\sim\mu_n$ , $Y\sim\mu$ 인 확률변수들을 잡아 $Y_n\to Y$ 가 거의 확실히 성립하게 할 수 있다.
 
-분포 수렴을 거의 확실한 수렴으로 "실현"할 수 있다는 뜻이다. 표본점 사이 대응을 새로 설계해 얻는 것이므로 원래 확률변수들과는 무관하지만, 증명 도구로는 대단히 쓸모가 크다. 거의 확실한 수렴에 대한 정리(Fatou 보조정리, [지배 수렴 정리](dominated-convergence.md))를 분포 수렴 상황으로 곧장 옮길 수 있기 때문이다. 연속사상 정리 $X_n\xrightarrow{d}X\implies g(X_n)\xrightarrow{d}g(X)$ (단 $g$ 는 $\mu$ 거의 어디서나 연속)도 이 표현을 쓰면 한 줄로 끝난다.
+거의 확실한 수렴을 가정하는 정리(Fatou 보조정리, [지배 수렴 정리](dominated-convergence.md))를 분포 수렴 상황에 적용하는 데 이 표현을 쓴다. 연속사상 정리 $X_n\xrightarrow{d}X\implies g(X_n)\xrightarrow{d}g(X)$ (단 $g$ 는 $\mu$ 거의 어디서나 연속)의 증명이 그 예다. 표본점 사이 대응을 새로 설계해 얻으므로 원래 확률변수들과는 무관하다. 구성과 증명은 [Skorokhod 표현정리](skorokhod-representation.md)에 있다.
 
 ## 수렴의 위계
 
@@ -122,7 +122,7 @@ $$
 1. **Tightness.** 족이 tight 함을 보여 수렴 부분열의 존재를 확보한다. 보통 $\sup_n\mathbb E[|X_n|^p]\lt\infty$ 같은 적률 유계에 Markov 부등식을 써서 얻는다.
 2. **극한의 유일성.** 모든 수렴 부분열이 같은 극한을 가짐을 보인다. 특성함수나 적률로 극한을 식별한다.
 
-두 단계가 맞물리면 수열 전체가 수렴한다. 중심극한정리는 2 단계를 Lévy 연속성 정리로 처리해 1 단계를 생략할 수 있는 경우다. [Brown 운동](brownian-motion.md)의 구성에서 나오는 Donsker 불변원리는 같은 구조를 함수공간 $C[0,1]$ 위에서 돌린 것으로, 거기서는 tightness 확인이 논증의 대부분을 차지한다.
+두 단계가 맞물리면 수열 전체가 수렴한다. 중심극한정리는 2 단계를 Lévy 연속성 정리로 처리해 1 단계를 생략할 수 있는 경우다. [Brown 운동](brownian-motion.md)의 구성에서 나오는 [Donsker 불변원리](donsker-invariance-principle.md)는 같은 구조를 함수공간 $C[0,1]$ 위에서 돌린 것으로, 거기서는 tightness 확인이 논증의 대부분을 차지한다.
 
 ## 통계적 추론
 
@@ -140,6 +140,8 @@ $$
 
 - [중심극한정리](central-limit-theorem.md)
 - [특성함수](characteristic-functions.md)
+- [Donsker 불변원리](donsker-invariance-principle.md)
 - [최적 수송](optimal-transport.md)
+- [Skorokhod 표현정리](skorokhod-representation.md)
 
 #probability #measure_theory #theorem

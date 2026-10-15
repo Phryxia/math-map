@@ -94,6 +94,7 @@ $$
 ## 선수지식
 
 - [고윳값](eigenvalues.md)
+- [최소다항식](minimal-polynomial.md)
 - [PID 위의 유한생성 가군](finitely-generated-modules.md)
 
 ## 더 알아보기

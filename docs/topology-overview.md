@@ -29,21 +29,28 @@ graph TD
 ## 점집합 위상
 
 - [거리 공간](metric-spaces.md) → [위상 공간](topology.md): 거리를 버리고 열린집합만 남기기
+- [필터와 그물](filters-and-nets.md): 수열이 모자라는 자리를 메우는 두 수렴 언어와 그 번역
 - [콤팩트성](compactness.md), [연결성](connectedness.md): 두 기본 불변량
 - [Tychonoff 정리](tychonoff-theorem.md): 콤팩트 공간의 임의 곱이 콤팩트하다는 정리, 선택공리와 동치
 - [분리공리](separation-axioms.md): Hausdorff 부터 정규까지, Urysohn 보조정리와 Tietze 확장 정리
 - [Stone–Čech 콤팩트화](stone-cech-compactification.md): 유계 연속함수를 모두 확장하는 가장 큰 콤팩트화, 초필터와의 대응
 - [위상군](topological-groups.md): 연산이 연속인 군, 항등원 근방이 정하는 위상과 국소콤팩트성
+- [격자 부분군](lattice-subgroups.md): 몫이 유한 부피인 이산 부분군, 기본 영역과 공부피
 
 ## 호모토피와 호몰로지
 
 - [기본군](fundamental-group.md) → [덮개공간](covering-spaces.md): 고리와 그 들어 올림
 - [기본군](fundamental-group.md) → [호모토피군](homotopy-groups.md): 고리를 고차원 구면으로 올린 불변량
+- [호모토피군](homotopy-groups.md) → [Freudenthal 매달기 정리](freudenthal-suspension.md): 매달기가 호모토피군의 동형을 주는 차수 범위, 안정 호모토피군
 - [단체 호몰로지](homology.md) → [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology): 원판을 테두리째 붙여 쌓은 공간, 세포마다 사슬군의 생성원 하나
+- [단체 호몰로지](homology.md) → [Mayer–Vietoris 완전열](mayer-vietoris.md): 두 열린집합과 그 교집합의 호몰로지에서 합집합의 호몰로지를 얻는 긴 완전열
 - [단체 호몰로지](homology.md) → [Euler 지표](euler-characteristic.md) → [평면 그래프](planar-graphs.md), [곡면의 분류](classification-of-surfaces.md)
 - [단체 호몰로지](homology.md) → [코호몰로지](cohomology.md): 사슬 위의 함수, 컵곱이 주는 환 구조와 Poincaré 쌍대성
+- [코호몰로지](cohomology.md) → [실사영공간](real-projective-space.md): 차원마다 세포 하나인 CW 구조, 절단 다항식환이 되는 $\mathbb Z/2$ 코호몰로지
 - [단체 호몰로지](homology.md) → [Brouwer 고정점 정리](brouwer-fixed-point.md): 수축의 부재가 고정점의 존재를 준다
+- [단체 호몰로지](homology.md) → [Brouwer 차수](brouwer-degree.md): 경계에서 값을 피하는 사상에 붙는 정수, 해의 개수를 부호와 함께 센다
 - [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Sperner 보조정리](sperner-lemma.md), [Kakutani 고정점 정리](kakutani-fixed-point.md): 조합적 증명과 집합값 사상으로의 확장
+- [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Borsuk–Ulam 정리](borsuk-ulam.md): 대척점 쌍에서 값이 같아진다는 정리, Kneser 그래프 채색수의 하한
 - [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Lefschetz 고정점 정리](lefschetz-fixed-point.md): 호몰로지 대각합의 교대합이 고정점의 존재를 판정한다
 ## 코호몰로지와 비틀림
 

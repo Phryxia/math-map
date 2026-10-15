@@ -105,5 +105,6 @@ $$
 
 - [Marchenko–Pastur 법칙](marchenko-pastur.md)
 - [Tracy–Widom 분포](tracy-widom.md)
+- [자유확률](free-probability.md)
 
 #probability #linear_algebra #theorem

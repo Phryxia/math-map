@@ -43,20 +43,32 @@ graph TD
 
 - [다양체](manifolds.md): 국소적으로 유클리드 공간인 위상공간과 매끄러운 구조
 - [단위분할](partitions-of-unity.md): 국소에서 정의한 대상을 전역으로 붙이는 매끄러운 무게 함수족
+- [Sard 정리](sard-theorem.md): 매끄러운 사상의 임계값 집합이 측도 $0$ 이라는 정리, 정칙값을 일반적 위치로 고르는 근거
+- [횡단성](transversality.md): 교점마다 접공간의 합이 전체를 채우는 조건, 매개변수 횡단성 정리와 교차수
+- [Whitney 매장 정리](whitney-embedding.md): $n$ 차원 다양체가 $\mathbb R^{2n}$ 에 매장된다는 정리, 좌표 사상을 단위분할로 묶는 구성
 - [벡터다발](vector-bundles.md): 점마다 붙인 벡터 공간, 전이함수와 접속, 곡률
+- [접다발](tangent-bundle.md): 접공간을 모은 다발, 좌표변환의 야코비가 전이함수, 평행화 가능성
 - [특성류](characteristic-classes.md): 곡률의 불변 다항식이 주는 코호몰로지류, Chern–Weil 이론
 - [벡터장](vector-fields.md): 접다발의 단면, 흐름과 Lie 괄호, 영점의 지수
+- [Lie 미분](lie-derivative.md): 흐름으로 끌어온 텐서장의 미분, Cartan 공식과 불변성 판정
 - [미분형식](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
 - [Morse 이론](morse-theory.md): 매끄러운 함수의 임계점이 주는 세포 구조와 Betti 수의 하한
+- [소멸 사이클](vanishing-cycles.md): 정칙 함수의 임계점에서 줄어드는 호몰로지류, Picard–Lefschetz 공식
 - [심플렉틱 다양체](symplectic-manifolds.md): 닫힌 비퇴화 2 형식, Hamilton 벡터장과 Darboux 정리
+- [모멘트 사상](moment-map.md): 심플렉틱 작용의 보존량을 Lie 대수 쌍대공간에 모은 사상, Marsden–Weinstein 축소와 모멘트 다면체
+- [여접다발](cotangent-bundle.md): 좌표 없이 정의되는 표준 1 형식과 그 외미분이 주는 심플렉틱 구조, 정준변환
+- [Hamilton 역학](hamiltonian-mechanics.md): 속도를 운동량으로 바꾼 1차 방정식계, 에너지 보존과 흐름의 심플렉틱 성질
 
 ## 계량과 곡률
 
 - [곡률](curvature.md): 곡선과 곡면의 휘어짐, Gauss 곡률과 평균 곡률
 - [Riemann 계량](riemannian-metrics.md): 접공간의 내적, Levi-Civita 접속, 측지선 방정식
 - [측지선](geodesics.md): 가속도의 접성분이 0 인 곡선, 지수사상과 Hopf–Rinow 정리, 켤레점
+- [측지선의 비교정리](geodesic-comparison-theorems.md): 곡률의 상한과 하한으로 Jacobi 장을 상수곡률 모형과 견준다, Rauch 와 Cartan-Hadamard 와 Bonnet-Myers
+- [Killing 벡터장](killing-vector-fields.md): 계량을 보존하는 흐름, 측지선을 따르는 보존량과 차원 상한
 - [Gauss–Bonnet 정리](gauss-bonnet.md): 곡률 적분이 Euler 지표를 준다
 - [Ricci 흐름](ricci-flow.md): 계량을 Ricci 곡률로 변형하는 열방정식 꼴 흐름, 특이점과 수술
+- [Ricci 솔리톤](ricci-solitons.md): 확대에 변하지 않는 자기상사해, 특이점의 모형
 - [Poincaré–Hopf 정리](poincare-hopf.md): 벡터장의 특이점 지수의 합도 Euler 지표다
 - [쌍곡 3 다양체](hyperbolic-3-manifolds.md): 3 차원에서 쌍곡 계량이 위상으로 결정된다
 

@@ -80,7 +80,7 @@ function reinforce(policy, env, stepSize, baseline) {
 - **연속 행동 제어.** 관절 토크나 조향각처럼 행동이 실수 벡터인 문제에서 Gauss 정책 $\pi_\theta(a\mid s)=\mathcal N(\mu_\theta(s),\sigma^2)$ 을 두고 $\mu_\theta$ 를 올린다.
 - **이산 잠재변수의 미분.** [변분 오토인코더](variational-autoencoder.md)에서 잠재변수가 이산이면 재모수화를 쓸 수 없고, 점수함수 추정량이 그 자리를 대신한다.
 - **행위자–비평자.** 이점 함수를 따로 학습한 근사로 대신하면 한 경로가 끝나기를 기다리지 않고 매 단계 갱신한다. 비평자의 갱신이 Q 학습의 시간차 오차와 같은 꼴이다.
-- **보폭의 제한.** 정책이 한 번에 크게 움직이면 표본을 모은 정책과 갱신된 정책이 달라져 추정이 무너진다. 두 정책 사이의 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)를 제약으로 걸어 보폭을 재는 방법을 쓴다.
+- **보폭의 제한.** 정책이 한 번에 크게 움직이면 표본을 모은 정책과 갱신된 정책이 달라져 추정이 무너진다. 두 정책 사이의 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)를 제약으로 걸어 보폭을 재는 [신뢰영역 정책 최적화](trust-region-policy-optimization.md)를 쓴다.
 
 [^1]: R. J. Williams, "Simple statistical gradient-following algorithms for connectionist reinforcement learning", Machine Learning **8** (1992), 229–256.
 
@@ -96,5 +96,6 @@ function reinforce(policy, env, stepSize, baseline) {
 ## 더 알아보기
 
 - [행위자–비평자](actor-critic.md)
+- [신뢰영역 정책 최적화](trust-region-policy-optimization.md)
 
 #machine_learning #optimization #probability #algorithms

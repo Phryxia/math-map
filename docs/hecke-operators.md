@@ -147,6 +147,7 @@ $$
 - [Satake 동형](satake-isomorphism.md)
 - [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
 - [모듈러 기호](modular-symbols.md)
+- [Hida 이론](hida-theory.md)
 - [Shimura 대응](shimura-correspondence.md)
 
 #number_theory #complex_analysis #linear_algebra

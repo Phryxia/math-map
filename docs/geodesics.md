@@ -76,7 +76,7 @@ $(M,g)$ 가 연결일 때 다음이 동치다.[^1]
 
 측지선 $\gamma$ 를 따르는 Jacobi 방정식 $\nabla\_{\dot\gamma}\nabla\_{\dot\gamma}J+R(J,\dot\gamma)\dot\gamma=0$ 의 해를 Jacobi 장이라 한다. $\gamma(0)$ 과 $\gamma(t_0)$ 에서 모두 $0$ 이 되는 $0$ 아닌 Jacobi 장이 있으면 두 점을 켤레점이라 한다.
 
-켤레점을 지난 뒤의 측지선은 최단이 아니다.[^1] 곡률 $R$ 이 방정식의 계수이므로 켤레점의 위치가 곡률로 통제된다. 단면곡률이 $\kappa\gt 0$ 이상이면 길이 $\pi/\sqrt\kappa$ 안에 켤레점이 생기고, 단면곡률이 $0$ 이하이면 켤레점이 없다.
+켤레점을 지난 뒤의 측지선은 최단이 아니다.[^1] 곡률 $R$ 이 방정식의 계수이므로 켤레점의 위치가 곡률로 통제된다. 단면곡률이 $\kappa\gt 0$ 이상이면 길이 $\pi/\sqrt\kappa$ 안에 켤레점이 생기고, 단면곡률이 $0$ 이하이면 켤레점이 없다. 이 두 진술이 [측지선의 비교정리](geodesic-comparison-theorems.md)의 특수한 경우다.
 
 [^1]: Manfredo P. do Carmo, *Riemannian Geometry*, Birkhäuser, 1992. 측지선과 지수사상은 3 장, 변분 공식과 국소 최단성은 3 장과 9 장, Hopf–Rinow 는 7 장, Jacobi 장과 켤레점은 5 장과 10 장이다.
 
@@ -85,6 +85,7 @@ $(M,g)$ 가 연결일 때 다음이 동치다.[^1]
 - **곡률의 측정.** 측지선 다발이 퍼지는지 모이는지가 [곡률](curvature.md)의 부호다. 켤레점의 유무로 적은 이 성질이 Cartan–Hadamard 정리와 Bonnet–Myers 정리의 가정이다.
 - **쌍곡 다양체.** [쌍곡 3 다양체](hyperbolic-3-manifolds.md)에서 닫힌 측지선의 길이가 위상 불변량이고, 그 길이 스펙트럼이 [Selberg 대각합 공식](selberg-trace-formula.md)에서 Laplace 고윳값과 짝지어진다.
 - **임계점 이론.** 두 점을 잇는 측지선은 경로공간 위 에너지 함수의 임계점이므로, [Morse 이론](morse-theory.md)이 그 개수의 하한을 경로공간의 호몰로지로 준다.
+- **1차 적분.** 계량이 [Killing 벡터장](killing-vector-fields.md)을 가지면 그 방향의 운동량이 측지선을 따라 상수이므로 방정식을 낮은 차수로 푼다. 회전면에서 이 보존량이 Clairaut 관계식 $r\sin\psi=$ 상수이고, $r$ 은 회전축까지의 거리, $\psi$ 는 측지선과 자오선이 이루는 각이다.
 - **일반상대성.** Lorentz 계량에서 자유낙하하는 물체의 세계선이 측지선이고, 측지선 방정식이 중력에 의한 운동방정식이다.
 
 # 연관 문서
@@ -95,6 +96,6 @@ $(M,g)$ 가 연결일 때 다음이 동치다.[^1]
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [측지선의 비교정리](geodesic-comparison-theorems.md)
 
 #differential_geometry #analysis #topology

@@ -24,7 +24,7 @@ $(X,\mathcal A,\mu)$ 와 $(Y,\mathcal B,\nu)$ 를 $\sigma$ 유한 측도공간�
 
 $$(\mu\times\nu)(A\times B)=\mu(A)\nu(B)$$
 
-를 만족하며, $\sigma$ 유한성 아래에서 이런 측도는 하나뿐이다.
+를 만족하며, $\sigma$ 유한성 아래에서 이런 측도는 하나뿐이다. 존재의 구성과 완비화에서 생기는 차이는 [곱측도](product-measure.md)에 있다.
 
 ## 단면과 반복적분
 
@@ -76,6 +76,7 @@ Lebesgue 측도를 완비화하면 $\mathcal L(\mathbb R)\otimes\mathcal L(\math
 ## 선수지식
 
 - [Lebesgue 적분](lebesgue-integral.md)
+- [곱측도](product-measure.md)
 - [단조 수렴 정리](monotone-convergence.md)
 
 ## 더 알아보기

@@ -159,7 +159,6 @@ $\mathrm{Sym}^k$ 함자성으로 $\mathrm{Sym}^k\pi_E$ 가 자기동형임을 �
 - [유체론](class-field-theory.md)
 - [군의 표현](group-representations.md)
 - [모듈러 형식](modular-forms.md)
-- [타원곡선](elliptic-curves.md)
 
 ## 더 알아보기
 

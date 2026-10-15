@@ -77,6 +77,7 @@ $\lambda$ 를 매개변수로 하는 족 $x=T(\lambda,x)$ 에서, 어떤 해 근
 
 ## 선수지식
 
+- [Brouwer 차수](brouwer-degree.md)
 - [Schauder 고정점 정리](schauder-fixed-point.md)
 
 ## 더 알아보기

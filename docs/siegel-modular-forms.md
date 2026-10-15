@@ -68,7 +68,7 @@ $k$ 가 짝수일 때 $S_k(\Gamma_2)$ 안에는 Fourier 계수가 판별식 $\de
 
 # 활용
 
-- **Siegel 모듈라이 다양체의 사영 모델.** 등급환의 $\mathrm{Proj}$ 가 $\mathcal A_g$ 의 콤팩트화를 준다. $g=2$ 에서 $E_4,E_6,\chi_{10},\chi_{12}$ 의 비로 만드는 Igusa 불변량이 종수 $2$ 곡선의 동형류를 판정한다.
+- **Siegel 모듈라이 다양체의 사영 모델.** 등급환의 $\mathrm{Proj}$ 가 $\mathcal A_g$ 의 콤팩트화를 준다. $g=2$ 에서 $E_4,E_6,\chi_{10},\chi_{12}$ 의 비로 만드는 [Igusa 불변량](igusa-invariants.md)이 종수 $2$ 곡선의 동형류를 판정한다.
 - **격자의 theta 급수.** 계수 $m$ 의 짝수 유니모듈러 격자 $L$ 에 대해 $\theta_L^{(g)}(\tau)=\sum e^{\pi i\thinspace\mathrm{tr}(G(x)\tau)}$ 가 가중치 $m/2$, 차수 $g$ 의 Siegel 모듈러 형식이다. 합은 $L^g$ 의 원소 $x=(x_1,\dots,x_g)$ 를 달리고 $G(x)$ 는 내적행렬 $(\langle x_i,x_j\rangle)$ 다. $g=1$ 이면 [theta 급수](theta-series.md)이고, 차수를 올리면 격자를 더 세밀하게 구별한다. [Niemeier 격자](niemeier-lattices.md)의 분류에서 차수 $1$ 로는 같은 급수를 주는 격자들이 차수 $2$ 에서 갈라진다.
 - **Galois 표현.** $S_k(\Gamma_2)$ 의 Hecke 고유형식에 $4$ 차원 [Galois 표현](galois-representations.md)이 대응한다. $\mathcal A_2$ 의 코호몰로지에서 그 표현을 뽑는 것이 [Langlands 강령](langlands-program.md)의 $\mathrm{GSp}\_4$ 에 대한 경우다.
 - **아벨 곡면의 판정.** $\chi_{10}$ 의 값이 $0$ 인지로 주편극 아벨 곡면이 [Jacobian](jacobian-variety.md)인지 두 타원곡선의 곱인지가 갈린다.
@@ -89,5 +89,6 @@ $k$ 가 짝수일 때 $S_k(\Gamma_2)$ 안에는 Fourier 계수가 판별식 $\de
 ## 더 알아보기
 
 - [Jacobi 형식](jacobi-forms.md)
+- [Igusa 불변량](igusa-invariants.md)
 
 #number_theory #complex_analysis #algebra

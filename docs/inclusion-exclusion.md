@@ -152,6 +152,7 @@ $$
 
 ## 더 알아보기
 
+- [Möbius 반전 공식](mobius-inversion.md)
 - [체 방법](sieve-methods.md)
 
 #combinatorics #probability #number_theory

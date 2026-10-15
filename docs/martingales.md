@@ -163,6 +163,7 @@ $$
 
 ## 더 알아보기
 
+- [Doob 분해](doob-decomposition.md)
 - [최적 정지](optimal-stopping.md)
 - [확률근사](stochastic-approximation.md)
 - [Brown 운동](brownian-motion.md)

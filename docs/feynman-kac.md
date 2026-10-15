@@ -88,7 +88,7 @@ $$
 
 ## Kolmogorov 방정식과의 관계
 
-$\varphi$ 를 지시함수로 두면 $u(t,x) = \Pr(X_T \in A \mid X_t = x)$ 이므로 Feynman–Kac 은 전이확률이 만족하는 Kolmogorov 후방방정식의 일반화다. 전이밀도가 도착점에 대해 만족하는 방정식이 전방방정식, 곧 Fokker–Planck 방정식이며 생성원의 수반연산자를 쓴다.
+$\varphi$ 를 지시함수로 두면 $u(t,x) = \Pr(X_T \in A \mid X_t = x)$ 이므로 Feynman–Kac 은 전이확률이 만족하는 Kolmogorov 후방방정식의 일반화다. 전이밀도가 도착점에 대해 만족하는 방정식이 전방방정식, 곧 [Fokker–Planck 방정식](fokker-planck.md)이며 생성원의 수반연산자를 쓴다.
 
 | 대상 | 방정식 | 변수 |
 |---|---|---|
@@ -113,13 +113,9 @@ $\varphi$ 를 지시함수로 두면 $u(t,x) = \Pr(X_T \in A \mid X_t = x)$ 이�
 
 ## Black–Scholes 방정식과 위험중립 가격
 
-파생상품 가격을 얻는 길은 둘이다. 복제 포트폴리오로 방정식을 세워 푸는 길과 Girsanov 정리로 위험중립측도를 만들어 할인된 기댓값을 계산하는 길이다.
+[Black–Scholes 방정식](black-scholes-equation.md)의 좌변은 표류가 $rs$ 이고 소멸항이 $-r$ 인 작용소다. 위 정리가 그 해를 할인된 보수의 위험중립 기댓값으로 주고, 좌변의 $-rV$ 가 우변의 할인 계수에, 좌변의 표류 $rs$ 가 위험중립측도의 표류에 대응한다.
 
-$$
-\partial_tV+rS\thinspace\partial_SV+\tfrac12\sigma^2S^2\partial_S^2V-rV=0\qquad\Longleftrightarrow\qquad V_t=e^{-r(T-t)}\thinspace\mathbb E_Q\big[\Phi(S_T)\big]
-$$
-
-이 동치가 Feynman–Kac 의 결론이다. 좌변의 $-rV$ 가 우변의 할인 계수이고 좌변의 표류 $rS$ 가 위험중립측도의 표류다. 경로에 의존하는 지급이나 고차원 바스켓에서는 기댓값 쪽이, 조기 행사가 있는 미국형에서는 방정식 쪽이 유리하다.
+경로에 의존하는 지급이나 고차원 바스켓에서는 기댓값 쪽이, 조기 행사가 있는 [미국형 옵션](american-options.md)에서는 방정식 쪽이 유리하다.
 
 ## 고차원 방정식의 Monte Carlo 해법
 
@@ -139,10 +135,11 @@ Feynman 의 경로적분은 양자역학의 전파자를 경로에 대한 합으
 
 ## 선수지식
 
+- [확률미분방정식](stochastic-differential-equations.md)
 - [Girsanov 정리](girsanov.md)
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Black–Scholes 방정식](black-scholes-equation.md)
 
 #probability #analysis #theorem

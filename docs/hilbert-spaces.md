@@ -71,7 +71,7 @@ $$
 \Vert x+y\Vert^2 + \Vert x-y\Vert^2 = 2\Vert x\Vert^2 + 2\Vert y\Vert^2.
 $$
 
-역도 참이다(Jordan–von Neumann). 이 등식을 만족하는 노름 공간은 편극 항등식으로 내적을 복원할 수 있다. 그러므로 [Banach 공간](banach-spaces.md) 가운데 Hilbert 공간은 "평행사변형 법칙을 만족하는 것"으로 정확히 특징지어진다.
+역도 참이다(Jordan–von Neumann). 이 등식을 만족하는 노름 공간은 편극 항등식으로 내적을 복원할 수 있다. 그러므로 [Banach 공간](banach-spaces.md) 가운데 평행사변형 법칙을 만족하는 것이 정확히 Hilbert 공간이다.
 
 # 성질
 
@@ -183,10 +183,19 @@ $L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개�
 
 ## 더 알아보기
 
+### 직교계와 전개
+
 - [Fourier 급수](fourier-series.md)
-- [유계 작용소](bounded-operators.md)
-- [Lax–Milgram 정리](lax-milgram.md)
 - [Peter–Weyl 정리](peter-weyl.md)
 - [구면조화함수](spherical-harmonics.md)
+
+### 작용소
+
+- [유계 작용소](bounded-operators.md)
+
+### 다른 분야에서의 쓰임
+
+- [Lax–Milgram 정리](lax-milgram.md)
+- [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)
 
 #functional_analysis #analysis #linear_algebra #probability

@@ -62,12 +62,12 @@ $G$ 가 위수 $m$ 인 순환군이면 직관 절의 분해가 주기 $2$ 이므
 
 $$H^k(G,A)=\begin{cases}A^G & k=0\cr \ker N/(t-1)A & k\ \text{ 홀수}\cr A^G/NA & k\ \text{ 짝수},\ k\ge 2\end{cases}$$
 
-여기서 $t$ 는 생성원이고 $N=1+t+\cdots+t^{m-1}$ 이다. 짝수 차수의 값 $A^G/NA$ 를 Herbrand 몫의 계산에 쓴다.
+여기서 $t$ 는 생성원이고 $N=1+t+\cdots+t^{m-1}$ 이다. 짝수 차수의 값 $A^G/NA$ 를 [Herbrand 몫](tate-cohomology.md)의 계산에 쓴다.
 
 # 활용
 
 - **확대와 중심확대.** $H^2(G,A)$ 가 확대를 분류하고, 계수를 $\mathbb C^\times$ 로 두면 [Schur 곱셈자](schur-multipliers.md)가 되어 사영표현이 보통 표현으로 올라가는지를 판정한다.
-- **Galois 코호몰로지.** $G=\mathrm{Gal}(L/K)$ 와 $A=L^\times$ 에서 $H^1(G,L^\times)=0$ 이 Hilbert 정리 90 이고 $H^2(G,L^\times)$ 가 Brauer 군의 부분군이다. [유체론](class-field-theory.md)은 이 군의 계산을 상호법칙으로 옮긴다.
+- **Galois 코호몰로지.** $G=\mathrm{Gal}(L/K)$ 와 $A=L^\times$ 에서 $H^1(G,L^\times)=0$ 이 [Hilbert 정리 90](hilbert-theorem-90.md)이고 $H^2(G,L^\times)$ 가 Brauer 군의 부분군이다. [유체론](class-field-theory.md)은 이 군의 계산을 상호법칙으로 옮긴다.
 - **분류공간.** $EG$ 의 사슬 복합체가 $\mathbb Z G$ 위의 자유 분해이므로, 이산군 $G$ 에서 [분류공간](classifying-spaces.md) $BG$ 의 특이 [코호몰로지](cohomology.md)가 $H^n(G,M)$ 과 같다.
 - **Galois 표현의 변형.** [변형환](deformation-rings.md)의 접공간이 $H^1(G,\mathrm{ad}\thinspace\bar\rho)$ 이고 올림의 장애류가 $H^2(G,\mathrm{ad}\thinspace\bar\rho)$ 에 산다.
 
@@ -83,6 +83,7 @@ $$H^k(G,A)=\begin{cases}A^G & k=0\cr \ker N/(t-1)A & k\ \text{ 홀수}\cr A^G/NA
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Tate 코호몰로지](tate-cohomology.md)
+- [Hilbert 정리 90](hilbert-theorem-90.md)
 
 #group_theory #algebra #algebraic_topology #number_theory

@@ -87,6 +87,6 @@ $h_K$ 는 류수, $w_K$ 는 $\mu_K$ 의 위수, $d_K$ 는 판별식이다. 류�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [S-단위 방정식](s-unit-equation.md)
 
 #number_theory #field_theory #algebra

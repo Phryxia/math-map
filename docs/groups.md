@@ -146,6 +146,7 @@ $$
 - [가해군](solvable-groups.md)
 - [군의 표시](group-presentations.md)
 - [환](rings.md)
+- [대수군](algebraic-groups.md)
 - [범주](category.md)
 - [수학적 구조주의](mathematical-structuralism.md)
 

@@ -88,5 +88,6 @@ $$
 ## 더 알아보기
 
 - [Peter–Weyl 정리](peter-weyl.md)
+- [격자 부분군](lattice-subgroups.md)
 
 #measure_theory #group_theory #functional_analysis #number_theory

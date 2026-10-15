@@ -80,12 +80,7 @@ $F \dashv G$ 에 unit $\eta$ 와 counit $\varepsilon$ 이 있으면 $T = GF$ 와
 
 ## monad 의 수반 분해
 
-역방향은 유일하지 않고 분해의 양 끝이 존재한다.
-
-- **Kleisli 범주** $\mathcal C_T$ 는 대상이 $\mathcal C$ 와 같고 $X$ 에서 $Y$ 로 가는 사상이 $\mathcal C$ 의 사상 $X \to T(Y)$ 다. 합성은 $g^\ast \circ f$ 다. 자유 함자 $\mathcal C \to \mathcal C_T$ 와 망각 함자가 이루는 수반이 $T$ 를 준다.
-- **Eilenberg–Moore 범주** $\mathcal C^T$ 는 $T$ 대수 범주다. 망각 함자 $\mathcal C^T \to \mathcal C$ 는 자유대수 함자의 오른쪽 수반이고 이 수반도 $T$ 를 준다.
-
-$T$ 를 주는 모든 수반의 범주에서 Kleisli 는 시작대상, Eilenberg–Moore 는 종단대상이다. Kleisli 범주는 $\mathcal C^T$ 에서 자유대수만 모은 충만한 부분범주와 동치다.
+역방향은 유일하지 않다. $T=GF$ 가 되는 수반 $F\dashv G$ 가 여럿 있고, 그 전체가 하나의 범주를 이루며 양 끝이 있다. 시작대상이 사상을 $X\to T(Y)$ 로 바꾼 Kleisli 범주 $\mathcal C_T$ 이고 종단대상이 $T$ 대수 범주 $\mathcal C^T$ 다. 두 구성과 그 사이의 비교 함자는 [Kleisli 범주와 Eilenberg–Moore 범주](kleisli-eilenberg-moore.md)에서 다룬다.
 
 ## 대수 이론으로서의 monad
 

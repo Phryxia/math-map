@@ -77,7 +77,7 @@ Serre 가 물었고 Quillen 과 Suslin 이 각자 증명했다. 계수가 하나
 
 ## 더 알아보기
 
-- [유도 함자](derived-functors.md)
+- [단사가군](injective-modules.md)
 - [대수적 K 이론](algebraic-k-theory.md)
 
 #ring_theory #algebra #category_theory

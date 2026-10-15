@@ -73,7 +73,7 @@ $$
 
 측도가 $0$ 인 집합이 영집합이다. 한 점의 Lebesgue 측도는 $0$ 이고, 셀 수 있는 만큼의 점을 모아도 가산 가법성에 따라 $0$ 이다. 구간도 점들의 합집합이지만 점이 셀 수 없이 많아 가산 가법성을 쓸 수 없다.
 
-"거의 모든 점에서 성립한다"는 예외 집합이 영집합이라는 뜻이다. 영집합에 셀 수 없이 많은 점이 있을 수도 있다. Cantor 집합은 실수와 기수가 같으면서 측도는 $0$ 이다.
+"거의 모든 점에서 성립한다"는 예외 집합이 영집합이라는 뜻이다. 영집합에 셀 수 없이 많은 점이 있을 수도 있다. [Cantor 집합](cantor-set.md)은 실수와 기수가 같으면서 측도는 $0$ 이다.
 
 ## 잴 수 없는 집합
 
@@ -83,7 +83,7 @@ $$
 
 ## 구성과 유일성
 
-측도를 정의할 때 모든 가측집합에 값을 직접 주지는 않는다. 구간처럼 다루기 쉬운 집합에만 값을 정하고, 직관 절의 계산처럼 셀 수 있는 구간으로 덮은 길이의 하한(외측도)을 거쳐 Carathéodory 조건을 만족하는 집합으로 넓힌다. 이렇게 얻은 측도는 $\sigma$ -유한이면 유일하다. Dynkin 의 $\pi\text{-}\lambda$ 정리에 따르면 생성하는 모임에서 일치하는 두 측도는 전체에서 일치한다. 확률론에서 분포함수만으로 분포를 지정할 수 있는 것도 이 정리로 증명한다.
+측도를 정의할 때 모든 가측집합에 값을 직접 주지는 않는다. 구간처럼 다루기 쉬운 집합에만 값을 정하고, 직관 절의 계산처럼 셀 수 있는 구간으로 덮은 길이의 하한(외측도)을 거쳐 [Carathéodory 조건](caratheodory-extension.md)을 만족하는 집합으로 넓힌다. 이렇게 얻은 측도는 $\sigma$ -유한이면 유일하다. [Dynkin 의 $\pi\text{-}\lambda$ 정리](dynkin-system.md)에 따르면 생성하는 모임에서 일치하는 두 측도는 전체에서 일치한다. 확률론에서 분포함수만으로 분포를 지정할 수 있는 것도 이 정리로 증명한다.
 
 # 활용
 
@@ -97,7 +97,7 @@ $$
 
 ## 다른 측도
 
-Hausdorff 측도는 프랙탈의 차원을 재고, Haar 측도는 군 위에서 평행이동 불변인 측도를 준다. 상측도는 확률변수가 유도하는 분포를 만든다([상측도](pushforward-measure.md)). 두 측도의 관계를 밀도로 표현하는 것이 [Radon–Nikodym 정리](radon-nikodym.md)다.[^1]
+[Hausdorff 측도](hausdorff-dimension.md)는 프랙탈의 차원을 재고, Haar 측도는 군 위에서 평행이동 불변인 측도를 준다. 상측도는 확률변수가 유도하는 분포를 만든다([상측도](pushforward-measure.md)). 두 측도의 관계를 밀도로 표현하는 것이 [Radon–Nikodym 정리](radon-nikodym.md)다.[^1]
 
 [^1]: Terence Tao, *A quick review of measure and integration theory* (245B Notes 0). 가측공간·측도·확률측도와 기본 예시. https://terrytao.wordpress.com/2009/01/01/245b-notes-0-a-quick-review-of-measure-and-integration-theory/
 
@@ -121,10 +121,17 @@ Hausdorff 측도는 프랙탈의 차원을 재고, Haar 측도는 군 위에서 
 
 ### 집합의 복잡도와 다른 구성
 
+- [Carathéodory 확장정리](caratheodory-extension.md)
+- [Dynkin 계](dynkin-system.md)
+- [곱측도](product-measure.md)
+- [Brunn–Minkowski 부등식](brunn-minkowski.md)
+- [Cantor 집합](cantor-set.md)
 - [Vitali 집합](vitali-set.md)
 - [순종군](amenable-groups.md)
 - [Borel 계층](borel-hierarchy.md)
 - [강 측도 영집합](strong-measure-zero.md)
+- [Sard 정리](sard-theorem.md)
+- [측도-범주 분해](measure-category-decomposition.md)
 - [Loeb 측도](loeb-measure.md)
 - [Haar 측도](haar-measure.md)
 - [Banach–Tarski 분해](banach-tarski.md)

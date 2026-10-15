@@ -84,7 +84,7 @@ $$
 M \cong R^{(S)} = \bigoplus_{s \in S} R
 $$
 
-과 동형이며, 다음 보편성질로 특징지어진다. 집합 사상 $S\to N$ 은 $R$ 준동형 $R^{(S)}\to N$ 으로 유일하게 확장된다. 이것이 자유가군 [함자](functors.md)와 망각 함자의 [수반](adjunctions.md)이다.
+과 동형이고, 다음 보편성질이 이를 정한다. 집합 사상 $S\to N$ 은 $R$ 준동형 $R^{(S)}\to N$ 으로 유일하게 확장된다. 이것이 자유가군 [함자](functors.md)와 망각 함자의 [수반](adjunctions.md)이다.
 
 가환환 위에서는 자유가군의 계수(rank)가 잘 정의된다. $R^m \cong R^n$ 이면 극대 아이디얼 $\mathfrak{m}$ 하나를 잡아 $R/\mathfrak{m}$ 를 텐서하면 체 위 벡터 공간의 차원 비교가 되어 $m = n$ 이다.
 
@@ -189,11 +189,19 @@ $$
 
 ## 더 알아보기
 
+### 가군의 구성
+
 - [완전열](exact-sequences.md)
+- [텐서곱](tensor-products.md)
+
+### 특수한 가군
+
 - [PID 위의 유한생성 가군](finitely-generated-modules.md)
 - [Nakayama 보조정리](nakayama-lemma.md)
 - [사영가군](projective-modules.md)
-- [텐서곱](tensor-products.md)
+
+### 표현론에서의 쓰임
+
 - [세포대수](cellular-algebras.md)
 
 #ring_theory #algebra #linear_algebra #group_theory

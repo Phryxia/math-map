@@ -39,10 +39,13 @@ graph TD
 
 - [군](groups.md) → [군 작용](group-actions.md): 대칭의 공리화와 궤도–안정자
 - [군 작용](group-actions.md) → [순종군](amenable-groups.md): 불변 평균을 갖는 군, Følner 조건과 역설적 분해의 부재
+- [켤레류](conjugacy-classes.md): 켤레 관계의 동치류, 류 방정식, 대칭군의 켤레류와 분할
 - [정규화군](normalizer.md): 부분집합을 켤레로 보존하는 부분군, 중심화군과 N/C 정리, 켤레 개수의 지표 공식
 - [가해군](solvable-groups.md): 가환인 몫을 쌓아 얻는 군, 유도열과 하강 중심열, Burnside 와 Feit–Thompson 의 판정 정리
 - [Sylow 정리](sylow-theorems.md) → [유한 단순군 분류](finite-simple-groups.md) → [군 확대](group-extensions.md) → [군 코호몰로지](group-cohomology.md), [Schur 곱셈자](schur-multipliers.md)
+- [Tate 코호몰로지](tate-cohomology.md): 노름 사상으로 음의 차수까지 이은 코호몰로지, 순환군의 주기성과 Herbrand 몫
 - [군의 표현](group-representations.md): 군을 행렬로 보는 기본 도구
+- [지표표](character-table.md): 기약지표를 켤레류별로 적은 정사각 배열, 두 직교관계로 표를 채우는 절차
 - [군의 표시](group-presentations.md): 생성원과 관계자로 군을 적는 방법, 낱말 문제
 - [Coxeter 군](coxeter-groups.md): 반사로 생성된 군의 표시, 길이 함수와 Bruhat 순서
 - [Mathieu 군](mathieu-groups.md), [땋임군](braid-groups.md): 조합론·위상과 맞닿은 군
@@ -55,6 +58,7 @@ graph TD
 - [Krull 차원](krull-dimension.md): 소 아이디얼 사슬로 잰 차원, 차원 정리와 높이 정리, 정칙 국소환
 - [정칙 국소환](regular-local-rings.md): 차원과 접공간 차원이 같은 국소환, Serre 의 호몰로지 판정과 유일분해
 - [이산부값환](discrete-valuation-rings.md): 차원 1 의 정칙 국소환, 원소의 표준형과 이산부값, 완비화와 혼합표수
+- [Iwasawa 대수](iwasawa-algebra.md): $\mathbb Z_p$ 계수 멱급수환, Weierstrass 준비 정리와 유한생성 가군의 구조 정리, 특성 아이디얼
 - [Cohen–Macaulay 환](cohen-macaulay-rings.md): 깊이와 차원이 같은 국소환, 박힌 성분의 부재와 Auslander–Buchsbaum 공식
 - [Gorenstein 환](gorenstein-rings.md): 유형이 1 인 Cohen–Macaulay 환, 표준 가군의 자유성과 국소 쌍대성
 - [완전교차환](complete-intersection-rings.md): 정칙 국소환을 정칙열로 나눈 몫, Koszul 자유분해와 Betti 수의 다항식 증가
@@ -71,6 +75,7 @@ graph TD
 - [PID 위의 유한생성 가군](finitely-generated-modules.md): 구조정리와 Smith 표준형
 - [Nakayama 보조정리](nakayama-lemma.md): 국소환 위의 가군을 잉여체로 내려 읽기
 - [사영가군](projective-modules.md): 들어 올리기 성질, 국소적 자유성, Quillen–Suslin 정리
+- [단사가군](injective-modules.md): 부분가군에서의 확장 성질, Baer 판정, 나눗셈 가능 아벨군과 단사 포락
 - [대수적 K 이론](algebraic-k-theory.md): 환의 사영가군에서 나오는 고차 불변량
 
 ## 대수다양체
@@ -78,13 +83,18 @@ graph TD
 - [대수다양체](algebraic-varieties.md): 다항식의 해집합, 영점정리가 잇는 근기 아이디얼과의 대응, Zariski 위상
 - [사영다양체](projective-varieties.md): 동차좌표로 넓힌 공간 위의 대수적 집합, 완비성과 Bezout 정리
 - [아벨 다양체](abelian-varieties.md): 군 구조를 갖춘 완비 다양체, 강체성에서 따라 나오는 교환성, Tate 가군
+- [대수군](algebraic-groups.md): 다항식 사상으로 곱이 주어진 다양체, Borel 부분군의 공역성과 근계 데이터에 따른 반단순군의 분류
 
 ## 체와 Galois 이론
 
 - [체](fields.md) → [체의 확대](field-extensions.md) → [유한체](finite-fields.md), [Galois 이론](galois-theory.md)
+- [Hilbert 정리 90](hilbert-theorem-90.md): 순환 확대에서 노름 1 인 원소가 켤레의 비로 쓰인다는 정리, $H^1$ 의 소멸과 Kummer 이론
+- [Kummer 이론](kummer-theory.md): 1 의 거듭제곱근을 품은 체에서 지수 $n$ 아벨 확대와 $K^\ast/(K^\ast)^n$ 의 부분군이 짝지어지는 대응
+- [Artin–Schreier 이론](artin-schreier-theory.md): 표수 $p$ 에서 차수 $p$ 순환확대를 $y^p-y=a$ 로 생성하고 $K/\wp(K)$ 로 분류하는 대응
 - [오류정정부호](error-correcting-codes.md): 유한체 위의 선형 부호, 대수가 통신에 쓰이는 첫 자리
 - [p 진수](p-adic-numbers.md) → [Newton 다각형](newton-polygon.md): 완비화한 체
 - [대수적 수체](algebraic-number-fields.md) → [유체론](class-field-theory.md): 이후는 정수론 개관
+- [Witt 환](witt-ring.md): 이차형식을 쌍곡형식을 법으로 모은 환, 기본 아이디얼의 여과와 Galois 코호몰로지의 일치
 - [미분 Galois 이론](differential-galois-theory.md): 선형 미분방정식의 가해성을 선형 대수군으로 판정
 - [에탈 기본군](etale-fundamental-group.md): 유한 에탈 덮개를 분류하는 유한위상군, 한 점에서는 절대 Galois 군이고 복소다양체에서는 기본군의 완비화
 

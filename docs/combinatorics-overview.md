@@ -51,8 +51,10 @@ graph TD
 
 - [Stirling 수](stirling-numbers.md): 집합 분할과 순열의 순환을 세는 수, 거듭제곱과 내림 계승의 기저 변환
 - [Bell 수](bell-numbers.md): 집합 분할 전체의 수, 지수생성함수와 Dobinski 공식
+- [비교차 분할](noncrossing-partitions.md): 현이 교차하지 않는 분할, Catalan 수와 Narayana 수, 자유 누적량
 - [조합적 종](combinatorial-species.md): 구조를 배정하는 규칙의 합·곱·합성이 지수생성함수의 연산이 된다
 - [분자종](molecular-species.md): 합으로 쪼갤 수 없는 종은 $X^n/H$ 뿐이고 모든 종이 그 합으로 유일하게 분해된다
+- [가상 종](virtual-species.md): 분자종의 계수를 정수로 넓힌 환, 가역원과 종의 등식 풀이
 - [Lagrange 반전 공식](lagrange-inversion.md): $w=z\varphi(w)$ 의 해의 계수를 $\varphi$ 의 거듭제곱에서 읽는다
 ## 설계와 접촉 구조
 
@@ -65,6 +67,7 @@ graph TD
 
 - [확률적 방법](probabilistic-method.md): 무작위 대상이 존재를 증명한다
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md): 문턱 현상, 연결성과 거대 성분
+- [Potts 모형](potts-model.md): 그래프 위의 색 배정 분포, 무작위 클러스터 표현과 Tutte 다항식
 - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위의 조화해석, 복잡도 이론의 도구
 
 ## 그래프와 매트로이드
@@ -73,7 +76,7 @@ graph TD
 
 - [매칭](matchings.md): 이분 그래프의 완전 매칭 조건
 - [Matroid](matroids.md): 독립성의 공리화, 탐욕 알고리즘이 통하는 이유
-- [완전그래프와 강한 완전그래프 정리](perfect-graphs.md): 색칠수와 클릭수가 일치하는 그래프
+- [완벽그래프와 강한 완벽그래프 정리](perfect-graphs.md): 색칠수와 클릭수가 일치하는 그래프
 
 ## 대수적 조합론
 

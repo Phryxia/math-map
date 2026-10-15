@@ -45,7 +45,9 @@ graph TD
 - [위상정렬](topological-sort.md): 방향 비순환 그래프(directed acyclic graph, DAG)와 선형 순서
 - [평면 그래프](planar-graphs.md): Euler 공식과 Kuratowski 정리
 - [교차수 부등식](crossing-number-inequality.md): 변이 많을 때 교차수의 세제곱 하한, 무작위 부분그래프 논증
-- [그래프 마이너](graph-minors.md): 정렬 유사 순서와 유한 금지 마이너, 나무폭
+- [완전그래프의 교차수](complete-graph-crossing-number.md): $\mathrm{cr}(K_n)$ 의 확정값과 Guy 의 그림, 두 번 세기 하한
+- [그래프 마이너](graph-minors.md): 정렬 유사 순서와 유한 금지 마이너
+- [나무폭](treewidth.md): 주머니로 묶은 나무 분해, 마이너 단조성, 주머니 단위 동적 계획법
 - [Hamilton 순환](hamiltonian-cycles.md): Dirac 과 Ore 의 차수 조건, 닫힘, 판정의 NP-완전성
 
 ## 색칠과 매칭
@@ -53,7 +55,7 @@ graph TD
 - [그래프 색칠](graph-coloring.md): 채색수, 탐욕 상한, 4색 정리
 - [Tutte 다항식](tutte-polynomial.md): 채색 다항식과 신장트리 개수를 함께 거두는 두 변수 불변량
 - [매칭](matchings.md): 이분그래프의 완전매칭 조건
-- [완전그래프와 강한 완전그래프 정리](perfect-graphs.md): 채색수와 클릭 수가 모든 유도부분그래프에서 같은 그래프
+- [완벽그래프와 강한 완벽그래프 정리](perfect-graphs.md): 채색수와 클릭 수가 모든 유도부분그래프에서 같은 그래프
 
 ## 알고리즘과 최적화
 
@@ -84,6 +86,6 @@ graph TD
 
 - [그래프](graphs.md)
 - [최소 신장트리](minimum-spanning-tree.md)
-- [완전그래프와 강한 완전그래프 정리](perfect-graphs.md)
+- [완벽그래프와 강한 완벽그래프 정리](perfect-graphs.md)
 
 #graph_theory #combinatorics #algorithms #overview

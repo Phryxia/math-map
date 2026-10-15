@@ -28,7 +28,7 @@ $M$ 을 매끄러운 다양체, $\lbrace U\_\alpha\rbrace\_{\alpha\in A}$ 를 $M
 2. 각 점에 근방이 있어 그 근방과 만나는 $\mathrm{supp}\thinspace\rho\_\alpha$ 가 유한 개다.
 3. 모든 $x\in M$ 에서 $\sum\_\alpha\rho\_\alpha(x)=1$ 이다.
 
-조건 2 에 의해 조건 3 의 합은 각 점에서 유한합이다.
+조건 2 가 조건 3 의 합을 각 점에서 유한합으로 만든다.
 
 # 성질
 
@@ -42,7 +42,7 @@ $M$ 을 매끄러운 다양체, $\lbrace U\_\alpha\rbrace\_{\alpha\in A}$ 를 $M
 
 $K\subseteq U\subseteq M$ 에서 $K$ 가 닫힌 집합이고 $U$ 가 열린 집합이면, $K$ 에서 값이 $1$ 이고 $U$ 밖에서 $0$ 인 매끄러운 함수 $\chi\colon M\to\lbrack 0,1\rbrack$ 이 존재한다. 덮개 $\lbrace U,M\setminus K\rbrace$ 에 종속된 단위분할 $\lbrace\rho\_U,\rho\_0\rbrace$ 를 잡고 $\chi=\rho\_U$ 로 두면 된다. 이 함수를 bump 함수라 한다.
 
-## 해석함수로는 불가능
+## 실해석함수의 제약
 
 $\rho\_\alpha$ 들을 실해석함수로 잡을 수 없다. 실해석함수가 열린 집합에서 $0$ 이면 연결된 정의역 전체에서 $0$ 이므로, 지지집합이 진부분집합인 해석함수는 연결 다양체에서 $0$ 뿐이다. 직관 절의 $h$ 가 원점에서 모든 계 도함수가 $0$ 이면서 $h\ne 0$ 인 함수인 것이 이 차이를 만든다.
 
@@ -54,6 +54,7 @@ $\rho\_\alpha$ 들을 실해석함수로 잡을 수 없다. 실해석함수가 �
 
 - [Riemann 계량](riemannian-metrics.md)의 존재. 좌표 조각마다 유클리드 내적을 놓고 단위분할로 가중합하면, 양의 정부호성이 양의 계수 볼록 결합에 닫혀 있으므로 전역 계량이 된다.
 - [미분형식](differential-forms.md)의 적분과 Stokes 정리. 적분을 좌표 조각 하나의 계산으로 국소화하는 단계가 단위분할이고, 그 뒤에 남는 것은 반공간에서의 직접 계산이다.
+- [Whitney 매장 정리](whitney-embedding.md). 유한 덮개의 좌표 사상에 단위분할을 곱해 더하면 다양체를 유클리드 공간에 넣는 매장이 된다.
 - [de Rham 코호몰로지](de-rham-cohomology.md)의 Mayer–Vietoris 수열. 두 열린 집합의 덮개에 종속된 단위분할로 연결 준동형을 만든다.
 - [특성류](characteristic-classes.md)의 계산. 벡터다발의 접속이 언제나 존재한다는 사실이 단위분할에서 나오고, 그 접속의 곡률로 Chern 형식을 적는다.
 
@@ -67,6 +68,6 @@ $\rho\_\alpha$ 들을 실해석함수로 잡을 수 없다. 실해석함수가 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Whitney 매장 정리](whitney-embedding.md)
 
 #differential_geometry #topology #analysis

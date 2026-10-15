@@ -10,7 +10,7 @@ $$
 
 해 근처에서 오차는 매 단계 제곱으로 줄어든다. 반복 사상이 해 근처에서 축약이므로 [축약사상 고정점 정리](banach-fixed-point.md)로 수렴을 증명하고, 줄어드는 속도는 [미분](derivative.md)의 Taylor 전개로 계산한다.
 
-초깃값이 해에서 멀면 반복열이 발산하거나 주기 궤도에 갇힌다. Newton 계열 알고리즘은 이 반복에 선탐색(line search)이나 신뢰영역을 붙여 먼 초깃값을 다룬다.
+초깃값이 해에서 멀면 반복열이 발산하거나 주기 궤도에 갇힌다. Newton 계열 알고리즘은 이 반복에 [선탐색](line-search.md)(line search)이나 신뢰영역을 붙여 먼 초깃값을 다룬다.
 
 # 직관
 
@@ -114,12 +114,7 @@ $$
 
 ## 준Newton 법
 
-Jacobian 이나 Hessian 을 계산하고 분해하는 비용이 큰 경우, 근사 행렬을 반복적으로 갱신한다.
-
-- 할선법(secant). 스칼라에서 도함수를 차분으로 대체한다. 수렴 차수는 황금비 약 1.618이다.
-- Broyden 법. 다변수에서 $\Delta$ 와 $F$ 의 변화만으로 Jacobian 근사를 계급 1 갱신한다.
-- BFGS(Broyden–Fletcher–Goldfarb–Shanno) 및 L-BFGS. 최적화에서 Hessian 의 역을 대칭 양정부호로 유지하며 갱신한다. 큰 규모 문제의 표준이다.
-- Gauss–Newton 과 Levenberg–Marquardt. 최소제곱 구조를 이용해 Hessian 을 Jacobian 의 곱으로 근사하고 감쇠항을 더한다. 제약이 붙은 문제에서는 [Lagrange 쌍대성](lagrange-duality.md)의 KKT(Karush–Kuhn–Tucker) 정류 조건에 Newton 법을 적용하는 것이 내부점 방법의 기본 절차다.
+Jacobian 이나 Hessian 을 계산하고 분해하는 비용이 큰 경우 근사 행렬을 걸음마다 갱신한다. 갱신은 직전 두 점의 기울기 차가 주는 secant 조건을 만족하도록 정하고, 수렴 차수는 이차에서 초선형으로 떨어진다. 한 변수에서는 도함수를 두 점의 차분으로 바꾼 할선법이 되고 수렴 차수가 $(1+\sqrt5)/2$ 다. 다변수의 Broyden 법, BFGS(Broyden–Fletcher–Goldfarb–Shanno) 와 L-BFGS, 최소제곱의 Gauss–Newton 과 Levenberg–Marquardt 가 [준Newton 법](quasi-newton-methods.md)에 있다.
 
 # 활용
 
@@ -147,7 +142,7 @@ $$
 
 - 비선형 [상미분방정식](ordinary-differential-equations.md)의 암시적 시간 적분, 곧 후진 Euler 나 BDF(backward differentiation formula)에서는 매 시간 단계마다 비선형 방정식이 나오고, 이를 Newton 법으로 푼다.
 - 유한요소법으로 이산화한 비선형 편미분방정식도 같은 구조다. 이때 선형계는 직접 분해 대신 반복법으로 풀며, Jacobian 벡터 곱만 필요로 하는 Newton–Krylov 방식이 쓰인다.
-- 통계에서 [최대가능도 추정](maximum-likelihood.md)의 정규방정식을 풀 때 Fisher 정보 행렬을 Hessian 대신 쓰면 Fisher 점수법이 된다. 일반화선형모형의 표준 적합 절차인 IRLS(iteratively reweighted least squares)가 그 구체형이다.
+- 통계에서 [최대가능도 추정](maximum-likelihood.md)의 정규방정식을 풀 때 [Fisher 정보](fisher-information.md)행렬을 Hessian 대신 쓰면 Fisher 점수법이 된다. 일반화선형모형의 표준 적합 절차인 IRLS(iteratively reweighted least squares)가 그 구체형이다.
 - 다항식의 근을 구할 때는 동반행렬의 [고윳값](eigenvalues.md)를 쓰는 방법이 더 안정적이지만, 근을 정밀하게 다듬는 마지막 단계는 여전히 Newton 법이다.
 
 ## 볼록 최적화
@@ -169,6 +164,7 @@ Newton 방향 $-H(x)^{-1}\nabla f(x)$ 는 좌표의 아핀 변환으로 바뀌�
 
 ## 더 알아보기
 
+- [준Newton 법](quasi-newton-methods.md)
 - [완전 근사 저장](full-approximation-scheme.md)
 
 #optimization #analysis #linear_algebra

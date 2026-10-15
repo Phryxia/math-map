@@ -60,7 +60,7 @@ $$
 \text{Lipschitz}\subset\text{절대연속}\subset BV\cap C^0\subset BV
 $$
 
-절대연속 함수는 유계변동이고 연속이다. Cantor 함수는 연속이고 증가하므로 유계변동이다. 도함수가 거의 어디서나 $0$ 인데 함숫값은 $0$ 에서 $1$ 까지 오르므로 절대연속은 아니다.
+절대연속 함수는 유계변동이고 연속이다. [Cantor 함수](cantor-set.md)는 연속이고 증가하므로 유계변동이다. 도함수가 거의 어디서나 $0$ 인데 함숫값은 $0$ 에서 $1$ 까지 오르므로 절대연속은 아니다.
 
 ## 미적분의 기본정리
 
@@ -76,11 +76,21 @@ $$
 
 유계변동이고 연속인 함수는 절대연속 부분과 특이 부분의 합으로 갈라진다. 특이 부분은 도함수가 거의 어디서나 $0$ 인 부분이고 Cantor 함수가 그 예다. 같은 분해가 [측도](measure.md) 쪽에서 [Radon–Nikodym 정리](radon-nikodym.md)의 절대연속 성분과 특이 성분의 분해다.
 
+## 측도의 절대연속과의 대응
+
+절대연속이라는 말은 함수에 대해서도 측도에 대해서도 쓴다. 증가하는 오른쪽 연속 함수에서 두 뜻이 같은 조건이 된다.
+
+**정리.** $F$ 가 $\lbrack a,b\rbrack$ 에서 증가하고 오른쪽 연속이라 하고, $\mu_F$ 를 $\mu_F((c,d\rbrack)=F(d)-F(c)$ 로 정한 [Lebesgue–Stieltjes 측도](caratheodory-extension.md)라 한다. $F$ 가 절대연속 함수인 것과 $\mu_F\ll\lambda$ 인 것이 동치이고, 그때 Radon–Nikodym 도함수가 $F'$ 과 거의 어디서나 같다.
+
+증명의 요지. $\mu_F\ll\lambda$ 의 $\varepsilon$ -$\delta$ 형태는 $\lambda(E)\lt\delta$ 이면 $\mu_F(E)\lt\varepsilon$ 이다. $E$ 를 겹치지 않는 구간 $(a_i,b_i\rbrack$ 의 합집합으로 잡으면 $\lambda(E)=\sum(b_i-a_i)$ 이고 $\mu_F(E)=\sum(F(b_i)-F(a_i))$ 이므로 위의 절대연속 정의와 같은 식이다. 구간의 유한 합집합이 Borel 집합을 생성하므로 두 조건이 동치다. 도함수의 일치는 미적분의 기본정리 절의 표현 $F(x)=F(a)+\int_a^x F'$ 을 $\mu_F$ 의 적분으로 읽은 것이다.
+
+Cantor 함수에서는 $\mu_F$ 가 Cantor 집합에 실려 있고 그 집합의 Lebesgue 측도가 $0$ 이므로 $\mu_F\ll\lambda$ 가 깨진다. 함수 쪽에서 절대연속이 아닌 것과 측도 쪽에서 특이인 것이 같은 사실이다.
+
 # 활용
 
 ## Riemann–Stieltjes 적분
 
-적분자 $g$ 가 유계변동이면 연속함수 $f$ 에 대해 $\int_a^b f\thinspace dg$ 가 존재한다. 유계변동은 이 적분이 정의되는 적분자의 부류이고, 대응하는 부호 측도의 전변동이 $V_a^b(g)$ 다. 연속함수 공간의 쌍대공간을 유계변동 함수로 기술하는 것이 Riesz 표현정리다.
+적분자 $g$ 가 유계변동이면 연속함수 $f$ 에 대해 [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md) $\int_a^b f\thinspace dg$ 가 존재한다. 유계변동은 이 적분이 정의되는 적분자의 부류이고, 대응하는 부호 측도의 전변동이 $V_a^b(g)$ 다. 연속함수 공간의 쌍대공간을 유계변동 함수로 기술하는 것이 Riesz 표현정리다.
 
 ## 곡선의 길이
 
@@ -88,7 +98,7 @@ $$
 
 ## 확률에서의 쓰임
 
-분포함수는 증가하고 유계이므로 유계변동이다. 분포가 절대연속이라는 것은 분포함수가 절대연속 함수라는 것과 같고, 그때 도함수가 확률밀도다. 이산 성분과 특이 성분의 분리가 위의 Lebesgue 분해다.
+분포함수는 증가하고 유계이므로 유계변동이다. 분포가 절대연속이라는 것은 분포함수가 절대연속 함수라는 것과 같고, 그때 도함수가 [확률밀도](probability-density.md)다. 이산 성분과 특이 성분의 분리가 위의 Lebesgue 분해다.
 
 # 연관 문서
 
@@ -99,6 +109,7 @@ $$
 
 ## 더 알아보기
 
+- [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md)
 - [Lebesgue 미분정리](lebesgue-differentiation.md)
 - [Rademacher 정리](rademacher-theorem.md)
 

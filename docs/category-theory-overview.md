@@ -35,6 +35,7 @@ graph TD
 - [범주](category.md): 대상과 사상, 합성과 항등
 - [함자](functors.md): 범주 사이의 구조 보존 사상
 - [자연변환](natural-transformations.md): 함자 사이의 사상, 함자 범주
+- [무한 범주](infinity-categories.md): 사상 사이의 사상을 모든 차수에서 갖는 범주, 안쪽 Kan 조건
 
 ## 보편성질
 
@@ -53,6 +54,7 @@ graph TD
 ## 텐서범주와 응용
 
 - [모노이드 범주](monoidal-categories.md): 텐서곱과 단위 대상, 오각형 등식과 연접 정리
+- [Tannaka 쌍대성](tannaka-duality.md): 섬유함자를 가진 대칭 모노이드 범주에서 아핀 군 스킴을 복원하는 정리
 - [모듈러 텐서범주](modular-tensor-categories.md): 짜임과 모듈러 $S$ 행렬을 가진 범주
 - [애니온](anyons.md): 준입자의 교환 통계가 범주의 짜임으로 기술된다
 

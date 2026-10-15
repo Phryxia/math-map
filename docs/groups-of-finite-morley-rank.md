@@ -106,6 +106,7 @@ $1\in X$ 인 정의 가능 집합 $X$ 가 **불가분**이라 함은, 정의 가
 
 ## 선수지식
 
+- [대수군](algebraic-groups.md)
 - [강최소 군](strongly-minimal-groups.md)
 
 ## 더 알아보기
