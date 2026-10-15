@@ -2,7 +2,7 @@
 
 # 개요
 
-Catalan 수 $C_n$ 은 괄호 $n$ 쌍을 올바르게 늘어놓는 방법의 수다.
+Catalan 수(Catalan number) $C_n$ 은 괄호 $n$ 쌍을 올바르게 늘어놓는 방법의 수다.
 
 $$
 C_n=\frac{1}{n+1}\binom{2n}{n}
@@ -80,7 +80,7 @@ $C_n$ 이 홀수인 것은 $n+1$ 이 $2$ 의 거듭제곱일 때뿐이다[^1]. �
 
 ## 다른 분야에서의 쓰임
 
-- 교차하지 않는 짝짓기 도형이 $C_k$ 개이므로 Temperley–Lieb 대수의 차원이 $C_k$ 다. 교차를 허용한 [Brauer 대수](brauer-algebras.md)는 차원이 $(2k-1)!!$ 로 커진다.
+- 교차하지 않는 짝짓기 도형이 $C_k$ 개이므로 [Temperley–Lieb 대수](temperley-lieb-algebras.md)의 차원이 $C_k$ 다. 교차를 허용한 [Brauer 대수](brauer-algebras.md)는 차원이 $(2k-1)!!$ 로 커진다.
 - [Wigner 반원법칙](wigner-semicircle.md)의 $2n$ 차 모멘트가 $C_n$ 이다. 무작위 행렬의 대각합을 전개하면 각 항이 짝지어진 걸음에 대응하고, 살아남는 항이 교차하지 않는 짝짓기다.
 - 스택 하나로 정렬할 수 있는 길이 $n$ 치환의 개수가 $C_n$ 이다. 스택의 넣고 빼기가 괄호의 열고 닫기와 같다.
 

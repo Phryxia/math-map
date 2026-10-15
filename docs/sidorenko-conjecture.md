@@ -2,7 +2,7 @@
 
 # 개요
 
-Sidorenko 추측은 이분그래프 $H$ 와 그래폰 $W$ 에 대해
+Sidorenko 추측(Sidorenko's conjecture)은 이분그래프 $H$ 와 그래폰 $W$ 에 대해
 
 $$
 t(H,W)\ge\left(\int\_{\lbrack 0,1\rbrack^2}W\right)^{\vert E(H)\vert}

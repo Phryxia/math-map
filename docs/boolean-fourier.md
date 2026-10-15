@@ -2,7 +2,7 @@
 
 # 개요
 
-부울 함수의 Fourier 해석은 $f\colon\lbrace-1,1\rbrace^n\to\lbrace-1,1\rbrace$ 를 군 $(\mathbb Z/2)^n$ 의 지표로 전개해 조합적 성질을 계수로 읽는 이론이다. 이 군의 지표는 부분집합 $S\subseteq[n]$ 마다 하나씩 있다.
+부울 함수의 Fourier 해석(Fourier analysis of Boolean functions)은 $f\colon\lbrace-1,1\rbrace^n\to\lbrace-1,1\rbrace$ 를 군 $(\mathbb Z/2)^n$ 의 지표로 전개해 조합적 성질을 계수로 읽는 이론이다. 이 군의 지표는 부분집합 $S\subseteq[n]$ 마다 하나씩 있다.
 
 $$
 \chi_S(x)=\prod_{i\in S}x_i
