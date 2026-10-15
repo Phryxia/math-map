@@ -88,7 +88,7 @@ $$
 
 $\zeta$ 의 로그를 $\sum_{p,k}p^{-k\sigma}\cos(kt\ln p)/k$ 로 전개하고 $\theta=kt\ln p$ 를 대입하면 $\sigma\gt 1$ 에서 $\lvert\zeta(\sigma)^3\zeta(\sigma+it)^4\zeta(\sigma+2it)\rvert\ge1$ 이 나온다. $\zeta(1+it)=0$ 을 가정하면 $\sigma\to1^+$ 에서 $\lvert\zeta(\sigma)\rvert^3$ 이 $(\sigma-1)^{-3}$ 규모로 커지고 $\lvert\zeta(\sigma+it)\rvert^4$ 가 $(\sigma-1)^4$ 규모로 작아져 좌변이 $0$ 으로 가므로 모순이다.
 
-이 논증을 정량화하면 무영점 영역 $\sigma\gt 1-c/\ln(\lvert t\rvert+2)$ 가 나온다(de la Vallée Poussin). Vinogradov 와 Korobov 는 지수합 추정으로 이 영역을 $\sigma\gt 1-c(\ln\lvert t\rvert)^{-2/3}(\ln\ln\lvert t\rvert)^{-1/3}$ 까지 넓혔다.
+이 논증을 정량화하면 무영점 영역 $\sigma\gt 1-c/\ln(\lvert t\rvert+2)$ 가 나온다(de la Vallée Poussin). Vinogradov 와 Korobov 는 [지수합 추정](vinogradov-mean-value.md)으로 이 영역을 $\sigma\gt 1-c(\ln\lvert t\rvert)^{-2/3}(\ln\ln\lvert t\rvert)^{-1/3}$ 까지 넓혔다.
 
 ## 임계띠 안의 영점 개수
 
