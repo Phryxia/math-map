@@ -118,7 +118,7 @@ $f_n = n \cdot \mathbf{1}\_{(0,1/n)}$ 은 점별로 $0$ 에 수렴하지만 모�
 
 ### 함수공간
 
-- [$L^p$ 공간](lp-spaces.md)
+- [Lᵖ 공간](lp-spaces.md)
 - [유계변동 함수](bounded-variation.md)
 
 ### 측도와 확률

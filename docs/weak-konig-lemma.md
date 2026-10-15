@@ -72,6 +72,6 @@ $\mathrm{WKL}\_0$ 은 $\mathrm{RCA}\_0$ 에 대해 $\Pi^1_1$ 보존적이고, �
 
 ## 더 알아보기
 
-- [$\Pi^0_1$ 부류](pi01-classes.md)
+- [Π⁰₁ 부류](pi01-classes.md)
 
 #logic #computation #foundations

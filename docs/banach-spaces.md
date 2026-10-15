@@ -127,7 +127,7 @@ Banach 공간에는 직교성, 사영 정리, 쌍대공간과 자기 자신의 �
 
 ### 공간의 예
 
-- [$L^p$ 공간](lp-spaces.md)
+- [Lᵖ 공간](lp-spaces.md)
 - [Hölder 공간](holder-spaces.md)
 
 ### 쌍대성과 구조 정리

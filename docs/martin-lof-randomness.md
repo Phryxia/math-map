@@ -27,7 +27,7 @@ $2^{\mathbb N}$ 에 균등측도 $\mu$ 를 준다. 열린 집합의 열 $(U_n)\_
 
 수열 $x$ 가 $x\notin\bigcap_nU_n$ 이면 이 검정을 **통과**한다. 모든 Martin-Löf 검정을 통과하는 $x$ 를 **Martin-Löf 무작위**라 한다.
 
-$\bigcap_nU_n$ 은 측도 $0$ 이고, 각 $U_n$ 의 여집합은 [$\Pi^0_1$ 부류](pi01-classes.md)다. 검정 하나를 통과하는 수열 전체는 그 여집합들의 합집합이다.
+$\bigcap_nU_n$ 은 측도 $0$ 이고, 각 $U_n$ 의 여집합은 [Π⁰₁ 부류](pi01-classes.md)다. 검정 하나를 통과하는 수열 전체는 그 여집합들의 합집합이다.
 
 ## 보편 검정
 
@@ -86,7 +86,7 @@ $\Pi^0_1$ 부류의 기저 정리는 공집합이 아닌 부류에서 성질이 
 
 ## 선수지식
 
-- [$\Pi^0_1$ 부류](pi01-classes.md)
+- [Π⁰₁ 부류](pi01-classes.md)
 - [Kolmogorov 복잡도](kolmogorov-complexity.md)
 
 ## 더 알아보기

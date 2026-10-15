@@ -108,7 +108,7 @@ $f(x)=e^{-\pi x^2}$ 의 변환은 $\hat f(\xi)=e^{-\pi\xi^2}$ 로 자기 자신�
 ## 선수지식
 
 - [Fourier 급수](fourier-series.md)
-- [$L^p$ 공간](lp-spaces.md)
+- [Lᵖ 공간](lp-spaces.md)
 
 ## 더 알아보기
 

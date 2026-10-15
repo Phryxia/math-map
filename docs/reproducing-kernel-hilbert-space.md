@@ -53,7 +53,7 @@ $$\Big\langle\sum_i a_iK\_{x_i},\ \sum_j b_jK\_{z_j}\Big\rangle=\sum_i\sum_j a_i
 
 ## 점 평가의 연속성
 
-재생 성질과 Cauchy–Schwarz 부등식에서 $\vert f(x)\vert\le\Vert f\Vert\thinspace\sqrt{K(x,x)}$ 다. 노름 수렴이 각 점에서의 수렴을 함의하므로, 재생핵 Hilbert 공간의 원소는 동치류가 아니라 함수 하나다. [$L^p$ 공간](lp-spaces.md)의 원소가 영집합에서 다른 함수들의 동치류인 것과 다르다.
+재생 성질과 Cauchy–Schwarz 부등식에서 $\vert f(x)\vert\le\Vert f\Vert\thinspace\sqrt{K(x,x)}$ 다. 노름 수렴이 각 점에서의 수렴을 함의하므로, 재생핵 Hilbert 공간의 원소는 동치류가 아니라 함수 하나다. [Lᵖ 공간](lp-spaces.md)의 원소가 영집합에서 다른 함수들의 동치류인 것과 다르다.
 
 ## 특징 사상
 

@@ -68,7 +68,7 @@ $$
 ## 선수지식
 
 - [정칙함수](holomorphic-functions.md)
-- [$L^p$ 공간](lp-spaces.md)
+- [Lᵖ 공간](lp-spaces.md)
 
 ## 더 알아보기
 

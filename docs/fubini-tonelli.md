@@ -67,7 +67,7 @@ Lebesgue 측도를 완비화하면 $\mathcal L(\mathbb R)\otimes\mathcal L(\math
 - **Fourier 변환의 성질.** [Fourier 변환](fourier-transform.md)의 합성곱 정리는 $\int\int f(x-y)g(y)e^{-2\pi i\xi x}\thinspace dy\thinspace dx$ 의 순서를 바꿔 얻고, 반전 공식과 Plancherel 정리의 증명도 같은 교환을 쓴다. 교환의 근거가 피적분함수의 절댓값이 $L^1$ 에 든다는 Fubini 정리의 가정이다.
 - **층 분해.** $f\ge 0$ 에 대한 $\int_Xf\thinspace d\mu=\int_0^\infty\mu(\lbrace f\gt t\rbrace)\thinspace dt$ 는 $\mathbf 1_{\lbrace f(x)\gt t\rbrace}$ 를 $X\times(0,\infty)$ 에서 적분하고 Tonelli 정리로 순서를 바꾼 것이다. 적분을 측도의 값으로 바꾸는 계산에 쓰인다.
 - **독립 확률변수의 합.** [확률변수](random-variables.md) $X,Y$ 가 독립이면 결합분포가 곱측도이므로, $\mathbb E\lbrack g(X)h(Y)\rbrack=\mathbb E g(X)\thinspace\mathbb E h(Y)$ 가 Fubini 정리의 결론이고, 합의 분포가 합성곱으로 나오는 것도 같다.
-- **$L^p$ 의 부등식.** [$L^p$ 공간](lp-spaces.md)에서 Minkowski 적분 부등식은 반복적분의 순서를 바꿔 증명한다.
+- **$L^p$ 의 부등식.** [Lᵖ 공간](lp-spaces.md)에서 Minkowski 적분 부등식은 반복적분의 순서를 바꿔 증명한다.
 
 [^1]: Walter Rudin, *Real and Complex Analysis*, 3판, McGraw–Hill, 1987, 8 장. 곱측도의 구성과 두 정리의 증명이 여기 있다. 완비화에서 단면의 가측성이 약해지는 점도 같은 장에 있다.
 

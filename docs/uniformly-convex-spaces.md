@@ -42,7 +42,7 @@ $\Vert x\Vert=\Vert y\Vert=1$ 이고 $x\ne y$ 이면 $\Vert(x+y)/2\Vert\lt 1$ �
 
 ## Clarkson 부등식
 
-$1\lt p\lt\infty$ 에서 [$L^p$ 공간](lp-spaces.md)은 균일 볼록이다. $2\le p\lt\infty$ 에서는 다음 부등식이 그 근거다.[^1]
+$1\lt p\lt\infty$ 에서 [Lᵖ 공간](lp-spaces.md)은 균일 볼록이다. $2\le p\lt\infty$ 에서는 다음 부등식이 그 근거다.[^1]
 
 $$
 \left\Vert\frac{f+g}2\right\Vert\_p^p+\left\Vert\frac{f-g}2\right\Vert\_p^p\le\frac12\Vert f\Vert\_p^p+\frac12\Vert g\Vert\_p^p

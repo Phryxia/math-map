@@ -62,7 +62,7 @@ Banach 공간 $X$ 가 반사적인 것과, 모든 $f\in X^\ast$ 가 닫힌 단�
 
 # 활용
 
-- $1\lt p\lt\infty$ 에서 [$L^p$ 공간](lp-spaces.md)의 쌍대가 $L^q$ 이고 두 번 취하면 $L^p$ 로 돌아오므로 반사적이다. $p=1$ 과 $p=\infty$ 에서 이 사슬이 끊긴다.
+- $1\lt p\lt\infty$ 에서 [Lᵖ 공간](lp-spaces.md)의 쌍대가 $L^q$ 이고 두 번 취하면 $L^p$ 로 돌아오므로 반사적이다. $p=1$ 과 $p=\infty$ 에서 이 사슬이 끊긴다.
 - [Hilbert 공간](hilbert-spaces.md)은 Riesz 표현 정리로 자기 쌍대와 등거리이고 그 동형이 표준 매장과 맞물려 반사적이다.
 - [변분법의 직접법](direct-method.md)은 최소화열이 유계일 때 약수렴 부분열을 뽑는다. 정의역을 반사 공간으로 잡는 것이 그 단계의 전제다.
 - [Sobolev 공간](sobolev-spaces.md) $W^{k,p}$ 는 $1\lt p\lt\infty$ 에서 반사적이므로 타원형 방정식의 약해 존재 증명에 쓰인다. $p=1$ 과 $p=\infty$ 에서는 다른 논증이 필요하다.
