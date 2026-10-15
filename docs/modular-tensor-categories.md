@@ -4,7 +4,7 @@
 
 [Zhu 대수](zhu-algebra.md)에서 강유리 [정점작용소대수](vertex-operator-algebras.md)의 기약가군들은 서로 곱해지는 **융합 구조**와 지표의 모듈러 변환에서 나오는 $S$ 행렬을 동시에 갖고, Verlinde 공식이 둘을 묶는다.
 
-이 자료를 정점작용소대수에서 떼어내 공리로 세운 것이 **모듈러 텐서범주**(modular tensor category, MTC)다. [범주](category.md) 하나에 다음이 얹힌다.
+이 자료를 정점작용소대수에서 떼어내 공리로 세운 것이 **모듈러 텐서범주**(modular tensor category, MTC)다. [범주](category.md) 하나에 다음 자료가 더해진다.
 
 - 대상의 [텐서곱](tensor-products.md)과 유한개의 단순대상. 곱이 단순대상의 직합으로 분해된다.
 - **꼬임**(braiding) $c_{X,Y}:X\otimes Y\to Y\otimes X$ . 대칭이 아니어도 되고 두 번 꼬아 제자리로 돌아오지 않아도 된다.
