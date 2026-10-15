@@ -114,7 +114,7 @@ $$
 
 ## 대역 상호법칙
 
-[Brauer 군](brauer-groups.md)과 [국소 유체론](local-class-field-theory.md)에서 본 "국소 불변량의 합은 0" 이 Poitou–Tate 완전열의 형태로 코호몰로지에 올라간다. $c,s\in H^1(K,E[p])$ 가 모두 대역류면
+[Brauer 군](brauer-groups.md)과 [국소 유체론](local-class-field-theory.md)에서 본 "국소 불변량의 합은 0" 이 [Poitou–Tate 완전열](poitou-tate.md)의 형태로 코호몰로지에 올라간다. $c,s\in H^1(K,E[p])$ 가 모두 대역류면
 
 $$
 \sum_v \big\langle \mathrm{loc}\_v(c),\ \mathrm{loc}\_v(s)\big\rangle_v=0
@@ -156,7 +156,7 @@ $$
 
 | Euler 계 | 계수 $T$ | 얻는 결과 |
 |---|---|---|
-| 순환체 단수 $1-\zeta_n$ | $\mathbb Z_p(1)$ | Mazur–Wiles 의 재증명, 순환체 Iwasawa 주추측(Rubin) |
+| 순환체 단수 $1-\zeta_n$ | $\mathbb Z_p(1)$ | Mazur–Wiles 의 재증명, 순환체 [Iwasawa 주추측](iwasawa-main-conjecture.md)(Rubin) |
 | 타원 단수 | 허수이차체의 $\mathbb Z_p(1)$ | 허수이차체 위의 주추측 |
 | Heegner 점 | $T_pE$ (반순환) | 해석적 순위 $\le1$ 인 BSD, $\text{Ш}$ 유한 |
 | Beilinson–Kato 원소 | 모듈러 형식의 $T$ | $L(E,1)\ne0\Rightarrow$ 순위 0, 주추측의 한쪽 나눔 |

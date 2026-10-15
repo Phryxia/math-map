@@ -121,7 +121,7 @@ $$
 P\big(|\bar{X}\_n - \mu| \ge \varepsilon\big) \thickspace\le\thickspace \frac{\sigma^2}{n \varepsilon^2} \thickspace\to\thickspace 0 .
 $$
 
-유계성을 추가하면 Hoeffding 이 지수 경계를 주고, 이때 우변이 합 가능하므로 Borel–Cantelli 보조정리로 **강한** 수렴까지 바로 얻는다. 즉 유계 경우에는 집중부등식이 강한 큰 수의 법칙의 짧은 증명을 제공한다.
+유계성을 추가하면 Hoeffding 이 지수 경계를 주고, 이때 우변이 합 가능하므로 [Borel–Cantelli 보조정리](borel-cantelli.md)로 **강한** 수렴까지 바로 얻는다. 즉 유계 경우에는 집중부등식이 강한 큰 수의 법칙의 짧은 증명을 제공한다.
 
 정밀도를 역으로 읽으면 표본 크기 공식이 된다. 오차 $\varepsilon$ 와 신뢰수준 $1 - \delta$ 를 원하면
 
@@ -165,7 +165,7 @@ $$
 n \thickspace\ge\thickspace \frac{1}{2\varepsilon^2}\Big(\log |\mathcal{H}| + \log \frac{2}{\delta}\Big)
 $$
 
-이면 충분하다. 가설 개수에 로그로만 의존하므로 유한 가설류는 **PAC**(probably approximately correct) 학습 가능하다. 무한 가설류에서는 $\log|H|$ 자리에 VC(Vapnik–Chervonenkis) 차원이나 Rademacher 복잡도가 들어가고, 경험 과정 전체의 상한에 McDiarmid 부등식을 적용해 집중을 보장한다. [가설검정](hypothesis-testing.md)이나 [신뢰구간](confidence-intervals.md)에서 분포 가정 없이 유한 표본 보장을 얻고 싶을 때도 같은 부등식을 쓴다.
+이면 충분하다. 가설 개수에 로그로만 의존하므로 유한 가설류는 **PAC**(probably approximately correct) 학습 가능하다. 무한 가설류에서는 $\log|H|$ 자리에 VC(Vapnik–Chervonenkis) 차원이나 [Rademacher 복잡도](rademacher-complexity.md)가 들어가고, 경험 과정 전체의 상한에 McDiarmid 부등식을 적용해 집중을 보장한다. [가설검정](hypothesis-testing.md)이나 [신뢰구간](confidence-intervals.md)에서 분포 가정 없이 유한 표본 보장을 얻고 싶을 때도 같은 부등식을 쓴다.
 
 [^1]: Gábor Lugosi, Concentration-of-measure inequalities (lecture notes), https://www.upf.edu/documents/298368705/0/anu.pdf
 

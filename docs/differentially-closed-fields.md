@@ -71,8 +71,8 @@ DCF$\_0$ 는 모형완전하다. 미분체의 언어에 상수만 더해도 양�
 # 활용
 
 - **Mordell–Lang 추측의 함수체 경우.** 함수체 $K$ 를 미분적으로 닫힌 체에 넣고 Manin 사상의 핵으로 유한 Morley 계수의 군을 만든 뒤 위 삼분법을 적용한다. [Mordell–Lang 추측](mordell-lang.md)의 증명이 이 경로를 쓴다.
-- **미분 Galois 이론.** 선형 미분 방정식의 Picard–Vessiot 확대는 상수체가 늘지 않는 미분 확대이고, 그 자기동형군이 상수체 위의 선형 대수군이다. 미분 닫힘 안에서 이 확대들을 찾는다.
-- **미분 방정식의 해의 초월성.** Painlevé 방정식의 일반해가 고전적인 특수함수로 표현되지 않는다는 진술이 미분 대수적 군의 정의 가능성 판정으로 환원된다.
+- **[미분 Galois 이론](differential-galois-theory.md).** 선형 미분 방정식의 Picard–Vessiot 확대는 상수체가 늘지 않는 미분 확대이고, 그 자기동형군이 상수체 위의 선형 대수군이다. 미분 닫힘 안에서 이 확대들을 찾는다.
+- **미분 방정식의 해의 초월성.** [Painlevé 방정식](painleve-equations.md)의 일반해가 고전적인 특수함수로 표현되지 않는다는 진술이 미분 대수적 군의 정의 가능성 판정으로 환원된다.
 - **차분체와의 대비.** 미분 대신 자기동형사상을 붙인 차분체의 이론 ACFA(algebraically closed fields with an automorphism)에서도 삼분법이 성립하고, 같은 방법이 아벨 다양체의 꼬임점을 다룬다.
 
 [^1]: L. Blum, "Differentially closed fields: a model-theoretic tour", *Contributions to Algebra*, Academic Press (1977), 37–61. 위수와 차수로 공리를 적는 방식이 여기서 나왔다.
