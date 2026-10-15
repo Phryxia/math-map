@@ -2,6 +2,8 @@
 
 # 개요
 
+Girsanov 정리(Girsanov's theorem)는 확률측도를 바꾸어 확률과정의 표류를 지우는 정리다.
+
 표류가 있는 확률과정 $dX = \mu\thinspace dt + \sigma\thinspace dB$ 에서는 martingale 성질이 깨져 기댓값을 다루는 도구를 쓸 수 없다.
 
 Girsanov 정리는 과정이 아니라 확률측도를 바꿔 표류를 지운다. 같은 경로들에 다른 확률을 배정하면 원래 [측도](measure.md)에서 위로 흐르던 과정이 새 측도에서 표준 [Brown 운동](brownian-motion.md)이 된다.
@@ -12,7 +14,7 @@ Girsanov 정리는 과정이 아니라 확률측도를 바꿔 표류를 지운�
 
 경로 하나만 보고는 표류가 있는지 판정할 수 없다. 위로 올라가는 경로는 표류 없는 Brown 운동에서도 나오고 표류가 있으면 더 자주 나온다. 표류는 경로의 성질이 아니라 경로들 위의 확률분포의 성질이므로, 확률을 다시 배정하면 표류가 바뀐다. 두 측도가 서로 절대연속이면 가능한 경로는 그대로이고 그 확률만 달라진다.
 
-시간을 눈금 $h$ 로 자르고 한 눈금의 증분 $\Delta B$ 를 평균 $0$, 분산 $h$ 인 Gauss 변량으로 보자. 평균을 $\theta h$ 로 옮긴 밀도와 원래 밀도의 비는 $\exp(-(\Delta B-\theta h)^2/2h+(\Delta B)^2/2h)=\exp(\theta\thinspace\Delta B-\tfrac12\theta^2h)$ 다. 눈금마다 이 비를 곱하면 지수 안이 합이 되어 $\theta B_t-\tfrac12\theta^2t$ 가 남는다. 이 지수를 밀도로 쓰는 측도에서 표류가 $\theta$ 만큼 옮겨지고, 이차항은 밀도의 평균을 $1$ 로 유지한다.
+시간을 간격 $h$ 로 자르고 한 간격의 증분 $\Delta B$ 를 평균 $0$, 분산 $h$ 인 Gauss 변량으로 보자. 평균을 $\theta h$ 로 옮긴 밀도와 원래 밀도의 비는 $\exp(-(\Delta B-\theta h)^2/2h+(\Delta B)^2/2h)=\exp(\theta\thinspace\Delta B-\tfrac12\theta^2h)$ 다. 눈금마다 이 비를 곱하면 지수 안이 합이 되어 $\theta B_t-\tfrac12\theta^2t$ 가 남는다. 이 지수를 밀도로 쓰는 측도에서 표류가 $\theta$ 만큼 옮겨지고, 이차항은 밀도의 평균을 $1$ 로 유지한다.
 
 # 정의
 
@@ -124,7 +126,7 @@ $\Phi$ 가 유럽형 콜의 지급이면 이 기댓값이 닫힌 꼴로 계산�
 
 ## 편미분방정식과의 대응
 
-표류를 다루는 다른 방법은 기댓값을 방정식으로 바꾸는 것이다. [Feynman–Kac 공식](feynman-kac.md)이 포물형 편미분방정식의 해를 확산 과정의 기댓값으로 표현하고, 위 가격 공식과 Black–Scholes 방정식이 같다는 것을 준다.
+표류를 다루는 다른 방법은 기댓값을 방정식으로 바꾸는 것이다. [Feynman–Kac 공식](feynman-kac.md)이 포물형 편미분방정식의 해를 확산 과정의 기댓값으로 표현하고, 위 가격 공식과 [Black–Scholes 방정식](black-scholes-equation.md)이 같다는 것을 준다.
 
 # 연관 문서
 
