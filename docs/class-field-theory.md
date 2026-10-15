@@ -80,7 +80,7 @@ $\mathrm{Frob}\_{\mathfrak p}$ 를 정하려면 $\mathfrak p$ 위에 있는 $L$ 
 
 > **유일성과 격자 동형.** 두 대응은 서로 역이며 포함관계를 뒤집는다. $H_1\subseteq H_2\iff L_1\supseteq L_2$ 이고, 교집합과 합성이 곱과 교집합에 대응한다.
 
-$H$ 가 자명군일 때 나오는 확대 $K_{\mathfrak m}$ 가 **광선유체**다. $\mathfrak m$ 밖에서 불분기인 아벨 확대 전체를 품는 최대 확대이며 $\mathrm{Gal}(K_{\mathfrak m}/K)\cong\mathrm{Cl}\_{\mathfrak m}(K)$ 다.
+$H$ 가 자명군일 때 나오는 확대 $K_{\mathfrak m}$ 가 **광선유체**다. $\mathfrak m$ 밖에서 불분기인 아벨 확대 전체를 포함하는 최대 확대이며 $\mathrm{Gal}(K_{\mathfrak m}/K)\cong\mathrm{Cl}\_{\mathfrak m}(K)$ 다.
 
 ## 이델류군을 쓴 서술
 
@@ -170,7 +170,7 @@ $x^2+5y^2$ 으로 표현되는 소수와 $H$ 에서 완전분해하는 소수가
 
 ## Chebotarev 밀도 정리
 
-유체론의 해석적 짝이다. $L/K$ 가 Galois 이고 $C\subseteq\mathrm{Gal}(L/K)$ 가 켤레류면 $\mathrm{Frob}\_{\mathfrak p}=C$ 인 소 아이디얼의 밀도가 $|C|/[L:K]$ 다.
+[Chebotarev 밀도 정리](chebotarev.md)는 유체론의 해석적 짝이다. $L/K$ 가 Galois 이고 $C\subseteq\mathrm{Gal}(L/K)$ 가 켤레류면 $\mathrm{Frob}\_{\mathfrak p}=C$ 인 소 아이디얼의 밀도가 $|C|/[L:K]$ 다.
 
 아벨 확대에 적용하면 각 광선류에 속하는 소 아이디얼의 밀도가 모두 같다는 뜻이고, $K=\mathbb Q$ 에서는 [Dirichlet L 함수](dirichlet-l-functions.md)의 등차수열 소수 정리가 된다. Frobenius 의 균등 분포 덕분에 충분히 많은 $\mathfrak p$ 에서 분해 양상이 같으면 두 확대가 같다는 논증이 가능하다.
 
@@ -209,7 +209,7 @@ CM(complex multiplication) 방법은 원하는 위수를 갖는 타원곡선을 
 
 힐베르트 유체를 계산하는 것은 류군을 계산하는 것과 같은 문제다. 허수 이차체에서는 축약 이차형식을 세는 방법이 쓰이고, 일반 수체에서는 아이디얼의 관계를 모아 선형대수로 풀어 류군과 단원군을 동시에 얻는다.
 
-어떤 정수가 노름이 될 수 있는지를 묻는 질문에는 Hasse 노름 정리를 쓴다. 순환 확대 $L/K$ 에서 $a\in K^\times$ 가 대역적으로 노름인 것과 모든 자리에서 국소적으로 노름인 것이 동치라는 정리이며, 순환이 아니면 깨진다. 그 깨짐을 재는 것이 Brauer 군이고 Hasse 원리의 실패를 설명하는 Brauer–Manin 장애로 이어진다.
+어떤 정수가 노름이 될 수 있는지를 묻는 질문에는 Hasse 노름 정리를 쓴다. 순환 확대 $L/K$ 에서 $a\in K^\times$ 가 대역적으로 노름인 것과 모든 자리에서 국소적으로 노름인 것이 동치라는 정리이며, 순환이 아니면 깨진다. 그 깨짐을 재는 것이 [Brauer 군](brauer-groups.md)이고 Hasse 원리의 실패를 설명하는 Brauer–Manin 장애로 이어진다.
 
 [^1]: R. P. Langlands, *Some contemporary problems with origins in the Jugendtraum*, Mathematical Developments Arising from Hilbert Problems, Proc. Sympos. Pure Math. **28** (1976), 401–418. 유리수체와 허수 이차체 밖에서 Hilbert 의 12 번 문제가 풀리지 않은 채임을 전제로 그 너머의 접근을 논한다.
 

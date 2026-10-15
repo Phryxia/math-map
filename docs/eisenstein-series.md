@@ -10,7 +10,7 @@ $$
 
 첨점형식 $S_k$ 는 첨점에서 사라지고 Eisenstein 급수 $E_k$ 는 사라지지 않는다. Eisenstein 급수의 계수는 $\sigma_{k-1}(n)=\sum_{d\mid n}d^{k-1}$ 로 완전히 명시적이다.
 
-그 명시성이 쓸모다. $E_4^3-E_6^2=1728\Delta$ 처럼 명시적인 것들의 조합으로 첨점형식이 만들어지고, 무게 대신 복소 매개변수 $s$ 를 넣은 실해석적 Eisenstein 급수 $E(z,s)$ 는 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 의 Laplace 작용소의 연속 스펙트럼을 전부 만든다. 이산 스펙트럼인 Maass 형식이 미지인 것과 달리 연속 쪽은 $\zeta$ 함수로 기술된다.
+그 명시성이 쓸모다. $E_4^3-E_6^2=1728\Delta$ 처럼 명시적인 것들의 조합으로 첨점형식이 만들어지고, 무게 대신 복소 매개변수 $s$ 를 넣은 실해석적 Eisenstein 급수 $E(z,s)$ 는 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 의 Laplace 작용소의 연속 스펙트럼을 전부 만든다. 이산 스펙트럼인 [Maass 형식](maass-forms.md)이 미지인 것과 달리 연속 쪽은 $\zeta$ 함수로 기술된다.
 
 $$
 E^\ast(z,s)=\xi(2s)E(z,s)\qquad\Longrightarrow\qquad E^\ast(z,s)=E^\ast(z,1-s)
@@ -57,7 +57,7 @@ E_k(z)=1-\frac{2k}{B_k}\sum_{n\ge1}\sigma_{k-1}(n)\thinspace q^n,
 \qquad q=e^{2\pi iz}
 $$
 
-이고 $B_k$ 는 Bernoulli 수다. $k=4,6$ 에서 계수가 각각 $240\sigma_3(n)$ 과 $-504\sigma_5(n)$ 이다. $k=2$ 에서는 합이 조건수렴이라 $E_2$ 가 모듈러가 아닌 준모듈러 형식이다.
+이고 $B_k$ 는 [Bernoulli 수](bernoulli-numbers.md)다. $k=4,6$ 에서 계수가 각각 $240\sigma_3(n)$ 과 $-504\sigma_5(n)$ 이다. $k=2$ 에서는 합이 조건수렴이라 $E_2$ 가 모듈러가 아닌 준모듈러 형식이다.
 
 ## 실해석적 Eisenstein 급수
 
@@ -170,7 +170,7 @@ $L$ 함수의 해석적 성질이 $\zeta$ 의 함수방정식으로 환원된다
 
 ## Selberg 대각합 공식
 
-Selberg 대각합 공식은 $\Gamma\backslash\mathbb H$ 의 Laplace 스펙트럼과 닫힌 측지선의 길이를 잇는다. 좌변에는 이산 스펙트럼과 함께 연속 스펙트럼의 기여가 들어가고 그 기여가 $\varphi'/\varphi(s)$ , 곧 $\zeta'/\zeta$ 로 적힌다.
+[Selberg 대각합 공식](selberg-trace-formula.md)은 $\Gamma\backslash\mathbb H$ 의 Laplace 스펙트럼과 닫힌 측지선의 길이를 잇는다. 좌변에는 이산 스펙트럼과 함께 연속 스펙트럼의 기여가 들어가고 그 기여가 $\varphi'/\varphi(s)$ , 곧 $\zeta'/\zeta$ 로 적힌다.
 
 $$
 -\frac1{4\pi}\int_{-\infty}^{\infty}h(t)\thinspace\frac{\varphi'}{\varphi}\Bigl(\tfrac12+it\Bigr)dt

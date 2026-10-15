@@ -22,7 +22,7 @@ $\mathrm{tr}(F\wedge F)$ 는 닫혀 있으므로 $A$ 가 전역적으로 정의�
 
 ## 접속과 곡률
 
-$G$ 를 콤팩트 단순 Lie 군, $P\to M$ 을 주 $G$ 다발이라 하자. 3 차원 다양체 위에서 $G=\mathrm{SU}(n)$ 이면 모든 주다발이 자명하므로 접속을 전역적으로 $\mathfrak g$ 값 1 형식 $A\in\Omega^1(M,\mathfrak g)$ 로 쓸 수 있다. 곡률은
+$G$ 를 콤팩트 단순 [Lie 군](lie-groups.md), $P\to M$ 을 주 $G$ 다발이라 하자. 3 차원 다양체 위에서 $G=\mathrm{SU}(n)$ 이면 모든 주다발이 자명하므로 접속을 전역적으로 $\mathfrak g$ 값 1 형식 $A\in\Omega^1(M,\mathfrak g)$ 로 쓸 수 있다. 곡률은
 
 $$
 F=dA+A\wedge A\in\Omega^2(M,\mathfrak g)
@@ -116,7 +116,7 @@ $$
 
 ## 경계와 등각장론
 
-$M$ 에 경계가 있으면 $\delta\thinspace\mathrm{CS}$ 의 부분적분에서 경계항이 남아 작용이 게이지 불변이 아니다. 이 결함을 고치려면 경계에 자유도를 두어야 하고 그것이 Wess–Zumino–Witten 모형이다. 3 차원 벌크와 2 차원 경계가 짝을 이루는 구조가 벌크-경계 대응의 가장 오래된 예이며, Reshetikhin–Turaev 구성에서 $\Delta_+/\mathcal D=e^{2\pi ic/8}$ 의 $c$ 가 경계 등각장론의 중심 전하다.
+$M$ 에 경계가 있으면 $\delta\thinspace\mathrm{CS}$ 의 부분적분에서 경계항이 남아 작용이 게이지 불변이 아니다. 이 결함을 고치려면 경계에 자유도를 두어야 하고 그것이 [Wess–Zumino–Witten 모형](wess-zumino-witten.md)이다. 3 차원 벌크와 2 차원 경계가 짝을 이루는 구조가 벌크-경계 대응의 가장 오래된 예이며, Reshetikhin–Turaev 구성에서 $\Delta_+/\mathcal D=e^{2\pi ic/8}$ 의 $c$ 가 경계 등각장론의 중심 전하다.
 
 ## 엄밀함의 범위
 
@@ -150,7 +150,7 @@ Hopf 링크에서 값이 $\pm1$ , 풀린 두 원에서 $0$ , 원환면 위를 �
 ## 양자 불변량과 2 차 특성류
 
 - 임계점의 CS 값이 양자 불변량의 점근 위상으로 나타나는 것이 Witten 점근 추측이다.
-- $\pi_3(G)=\mathbb Z$ 가 레벨을 양자화하듯 경계 이론의 레벨이 아핀 Lie 대수의 표현론을 유한하게 만들고, [모듈러 텐서범주](modular-tensor-categories.md)의 단순대상이 유한개가 된다.
+- $\pi_3(G)=\mathbb Z$ 가 레벨을 양자화하듯 경계 이론의 레벨이 [아핀 Lie 대수](affine-lie-algebras.md)의 표현론을 유한하게 만들고, [모듈러 텐서범주](modular-tensor-categories.md)의 단순대상이 유한개가 된다.
 - 4 차원에서 한 차원 내려 3 차원 작용을 얻는 조작은 임의의 특성류에 대해 가능하며 그렇게 얻는 부류가 2 차 특성류다.
 
 [^1]: 원전은 S.-S. Chern–J. Simons, *Characteristic forms and geometric invariants*, Ann. of Math. 99 (1974). 물리적 해석과 매듭 이론과의 연결은 E. Witten, *Quantum field theory and the Jones polynomial*, Comm. Math. Phys. 121 (1989).

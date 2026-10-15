@@ -67,7 +67,7 @@ $X$ 가 표수 $p$ 이면 계수 $\mathbb Z/p$ 에서는 위상적 답이 나오
 
 ## 유한성과 소멸
 
-$X$ 가 대수적으로 닫힌 체 위의 차원 $d$ 인 유한형 스킴이면 $H^i\_c(X,\mathbb Z/\ell^n)$ 이 유한군이고 $i\gt2d$ 에서 $0$ 이다. $X$ 가 고유하고 매끄러우면 Poincaré 쌍대성이 성립해 $H^i$ 와 $H^{2d-i}$ 가 짝을 이룬다.
+$X$ 가 대수적으로 닫힌 체 위의 차원 $d$ 인 유한형 스킴이면 $H^i\_c(X,\mathbb Z/\ell^n)$ 이 유한군이고 $i\gt2d$ 에서 $0$ 이다. $X$ 가 고유하고 매끄러우면 [Poincaré 쌍대성](poincare-duality.md)이 성립해 $H^i$ 와 $H^{2d-i}$ 가 짝을 이룬다.
 
 ## Frobenius 자취 공식
 
@@ -93,11 +93,11 @@ $X$ 가 체 $k$ 위에 정의되어 있으면 $H^i(X_{\bar k},\mathbb Q_\ell)$ �
 
 ## Galois 표현의 공급원
 
-모듈러 곡선과 Shimura 다양체의 $\ell$ 진 코호몰로지가 자기동형 형식에 붙는 Galois 표현을 만든다. 모듈러성 정리와 [Langlands 강령](langlands-program.md)의 대응이 이 표현을 양쪽에서 견준다.
+모듈러 곡선과 [Shimura 다양체](shimura-varieties.md)의 $\ell$ 진 코호몰로지가 자기동형 형식에 붙는 [Galois 표현](galois-representations.md)을 만든다. 모듈러성 정리와 [Langlands 강령](langlands-program.md)의 대응이 이 표현을 양쪽에서 견준다.
 
 ## 대수적 K 이론의 계산
 
-$K$ 군을 에탈 코호몰로지로 환원하는 Quillen–Lichtenbaum 추측이 Voevodsky 의 모티브 코호몰로지 작업으로 증명되었고, 유한체와 수체의 $K$ 군 계산이 그 환원을 쓴다.[^3]
+[대수적 K 이론](algebraic-k-theory.md)의 $K$ 군을 에탈 코호몰로지로 환원하는 Quillen–Lichtenbaum 추측이 Voevodsky 의 모티브 코호몰로지 작업으로 증명되었고, 유한체와 수체의 $K$ 군 계산이 그 환원을 쓴다.[^3]
 
 [^1]: M. Artin, A. Grothendieck, J.-L. Verdier, *Théorie des topos et cohomologie étale des schémas* (SGA 4), Lecture Notes in Math. 269, 270, 305, Springer (1972–73). 교과서 서술은 J. Milne, *Étale Cohomology*, Princeton (1980) 3 장이다.
 [^2]: P. Deligne, *La conjecture de Weil. I*, Publ. Math. Inst. Hautes Études Sci. **43** (1974), 273–307. 자취 공식과 유리성은 A. Grothendieck, *Formule de Lefschetz et rationalité des fonctions L*, Séminaire Bourbaki 279 (1965).

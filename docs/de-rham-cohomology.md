@@ -108,13 +108,13 @@ de Rham 정리의 따름으로 삼각분할로 센 값과 일치하므로 $\chi$
 
 ## Hodge 이론
 
-$M$ 이 콤팩트이고 Riemann 계량을 가지면 각 코호몰로지류에 조화형식 대표원이 정확히 하나 있다.
+$M$ 이 콤팩트이고 [Riemann 계량](riemannian-metrics.md)을 가지면 각 코호몰로지류에 조화형식 대표원이 정확히 하나 있다.
 
 $$
 H^k_{\mathrm{dR}}(M)\cong\mathcal H^k=\ker\Delta|\_{\Omega^k},\qquad\Delta=d\delta+\delta d
 $$
 
-위상적 불변량이 타원형 편미분방정식의 해공간으로 실현되고, 코호몰로지의 유한차원성도 이 타원성에서 나온다. Poincaré 쌍대성 $H^k\cong H^{n-k}$ 는 Hodge 별작용소로 주어진다.
+위상적 불변량이 타원형 편미분방정식의 해공간으로 실현되고, 코호몰로지의 유한차원성도 이 타원성에서 나온다. [Poincaré 쌍대성](poincare-duality.md) $H^k\cong H^{n-k}$ 는 Hodge 별작용소로 주어진다. [Hodge 이론](hodge-theory.md)은 복소다양체에서 이 조화형식 공간을 $(p,q)$ 형으로 다시 쪼갠다.
 
 ## 계산 가능성과 한계
 
