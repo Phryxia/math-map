@@ -26,7 +26,7 @@ $$
 \widehat G=\mathrm{Aut}^{\otimes}\bigl(\text{올림자 } H^\ast\bigr)
 $$
 
-이 정리가 [Langlands 강령](langlands-program.md)에서 쌍대군이 등장하는 근거이고, 기하학적 Langlands 강령이 이를 바탕으로 세워진다.
+이 정리가 [Langlands 강령](langlands-program.md)에서 쌍대군이 등장하는 근거이고, [기하학적 Langlands 강령](geometric-langlands.md)이 이를 바탕으로 세워진다.
 
 # 직관
 
@@ -76,7 +76,7 @@ $$
 
 이 곱은 정의상 교환적이지 않으므로 교환 제약을 따로 준다. 곡선 $X$ 위의 두 점 $x_1,x_2$ 에 층을 하나씩 놓고 두 점을 충돌시키는 족(Beilinson–Drinfeld Grassmann 다양체)에서, 두 점이 떨어져 있을 때 곱이 교환적이고 충돌 극한에서 합성곱이 나온다. 점을 맞바꾸는 경로가 주는 제약이 **융합**(fusion) 교환 제약이다.
 
-> **정리 (Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 는 대칭 텐서 범주이고, 전체 코호몰로지 $H^\ast$ 를 올림자로 하는 Tannaka 쌍대성으로
+> **정리 (Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 는 대칭 텐서 범주이고, 전체 코호몰로지 $H^\ast$ 를 올림자로 하는 [Tannaka 쌍대성](tannaka-duality.md)으로
 > $$
 > \mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\thickspace\simeq\thickspace\mathrm{Rep}(\widehat G)
 > $$
@@ -121,7 +121,7 @@ H^\ast\bigl(\mathrm{Gr}\_G,\mathcal{IC}\_\lambda\bigr)
 S_\mu=N(F)\cdot t^\mu
 $$
 
-이고 오른쪽 $\mu$ 항이 무게 $\mu$ 의 무게 공간이다. 그 차원을 세는 것이 $\overline{\mathrm{Gr}^\lambda}\cap\overline{S_\mu}$ 의 기약성분들, 곧 **MV 순환**(Mirković–Vilonen)이다.
+이고 오른쪽 $\mu$ 항이 무게 $\mu$ 의 무게 공간이다. 그 차원을 세는 것이 $\overline{\mathrm{Gr}^\lambda}\cap\overline{S_\mu}$ 의 기약성분들, 곧 **[MV 순환](mv-cycles.md)**(Mirković–Vilonen)이다.
 
 $$
 \dim V_\lambda(\mu)=\char35{}\bigl\lbrace\text{MV 순환}\bigr\rbrace
@@ -149,7 +149,7 @@ $$
 
 ## 변형과 확장
 
-- $G=\mathrm{GL}\_n$ 이면 $\mathrm{Gr}\_G$ 의 궤도 폐포가 아핀 Schubert 다양체이고, MV 순환의 조합이 Young 표와 Littlewood–Richardson 규칙을 재현한다.
+- $G=\mathrm{GL}\_n$ 이면 $\mathrm{Gr}\_G$ 의 궤도 폐포가 아핀 Schubert 다양체이고, MV 순환의 조합이 Young 표와 [Littlewood–Richardson 규칙](littlewood-richardson.md)을 재현한다.
 - 계수를 $\mathbb Z$ 나 표수 $p$ 체로 바꾸면 대응하는 것은 $\widehat G$ 의 **대수적 표현** 범주다. 표수 $p$ 의 표현론(Lusztig 추측 등)이 기하 문제로 번역된다.
 - $\mathrm{Gr}\_G$ 대신 아핀 깃발 다양체를 쓰면 반복 Hecke 범주가 나오고, 그것이 아핀 Hecke 대수의 범주화다.
 
@@ -174,7 +174,7 @@ $$
 
 ## 함수성과 기본 보조정리
 
-쌍대군 준동형 $\widehat H\to\widehat G$ 가 표현 범주 사이의 함자를 주고 그것이 층 범주 사이의 함자로 번역된다. 함수성을 기하적으로 실현하려는 Braverman–Kazhdan 과 L. Lafforgue 의 제안이 이 구도를 쓴다. Ngô 의 기본 보조정리 증명도 Hitchin 올뭉치의 기하로 궤도적분을 다룬다.
+쌍대군 준동형 $\widehat H\to\widehat G$ 가 표현 범주 사이의 함자를 주고 그것이 층 범주 사이의 함자로 번역된다. 함수성을 기하적으로 실현하려는 Braverman–Kazhdan 과 L. Lafforgue 의 제안이 이 구도를 쓴다. Ngô 의 [기본 보조정리](fundamental-lemma.md) 증명도 Hitchin 올뭉치의 기하로 궤도적분을 다룬다.
 
 ## 표현론에의 적용
 

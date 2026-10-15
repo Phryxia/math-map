@@ -15,13 +15,13 @@ $$
 괴물 달빛과 다른 점이 둘이다.
 
 - 모듈러 쪽 대상이 [모듈러 형식](modular-forms.md)이 아니다. 계수를 담는 함수 $H(\tau)$ 는 Ramanujan 이 마지막 편지에 남긴 mock theta 함수와 같은 종류, 곧 **mock 모듈러 형식**이다. 변환법칙이 딱 맞지 않고 비정칙 보정항을 더해야 맞는다.
-- 사례가 하나가 아니다. Cheng, Duncan, Harvey 가 2012 년에 이 현상이 23 개의 짝을 이루는 집합의 한 원소임을 보였다. 색인 집합은 Leech 격자를 제외한 23 개의 **Niemeier 격자**, 곧 24 차원 짝수 유니모듈러 격자다.
+- 사례가 하나가 아니다. Cheng, Duncan, Harvey 가 2012 년에 이 현상이 23 개의 짝을 이루는 집합의 한 원소임을 보였다. 색인 집합은 [Leech 격자](leech-lattice.md)를 제외한 23 개의 **[Niemeier 격자](niemeier-lattices.md)**, 곧 24 차원 짝수 유니모듈러 격자다.
 
-이 23 겹 짝짓기가 **umbral moonshine** 이다. mock 모듈러 형식에는 shadow 라 불리는 진짜 모듈러 형식이 딸려 있고, 각 사례에서 그 shadow 가 해당 Niemeier 격자의 근계로 만들어진 theta 급수다. 이름은 그림자를 뜻하는 라틴어 *umbra* 에서 왔다.
+이 23 겹 짝짓기가 **umbral moonshine** 이다. [mock 모듈러 형식](mock-modular-forms.md)에는 shadow 라 불리는 진짜 모듈러 형식이 딸려 있고, 각 사례에서 그 shadow 가 해당 Niemeier 격자의 근계로 만들어진 theta 급수다. 이름은 그림자를 뜻하는 라틴어 *umbra* 에서 왔다.
 
 # 직관
 
-$Z_{K3}(\tau,z)$ 는 약한 Jacobi 형식이라 $\tau\mapsto-1/\tau$ 에서 변환이 정해진다. 계수를 꺼내려면 $N=4$ 초등각대수의 지표로 분해해야 하고, 분해하면 짧은 지표 하나에 붙은 $24\thinspace\mathrm{ch}\_{1/4,0}$ 과 긴 지표들의 무한합 $\sum_n A_n\thinspace\mathrm{ch}\_{n+1/4,1/2}$ 두 조각이 된다. 짧은 지표는 모듈러 변환에서 긴 지표들의 무한합과 섞인다. 두 조각 각각은 변환이 닫히지 않으므로 $A_n$ 을 모은 $H(\tau)$ 도 모듈러 형식이 아니다.
+$Z_{K3}(\tau,z)$ 는 약한 [Jacobi 형식](jacobi-forms.md)이라 $\tau\mapsto-1/\tau$ 에서 변환이 정해진다. 계수를 꺼내려면 $N=4$ 초등각대수의 지표로 분해해야 하고, 분해하면 짧은 지표 하나에 붙은 $24\thinspace\mathrm{ch}\_{1/4,0}$ 과 긴 지표들의 무한합 $\sum_n A_n\thinspace\mathrm{ch}\_{n+1/4,1/2}$ 두 조각이 된다. 짧은 지표는 모듈러 변환에서 긴 지표들의 무한합과 섞인다. 두 조각 각각은 변환이 닫히지 않으므로 $A_n$ 을 모은 $H(\tau)$ 도 모듈러 형식이 아니다.
 
 합은 모듈러이고 조각은 아니니, 조각이 어긋나는 양을 잰다. 그 양은 무게 $3/2$ 의 정칙 모듈러 형식 $g$ 하나로 적히고, $H$ 에 $g$ 로 만든 비정칙 적분을 더하면 변환법칙이 정확히 맞는다. 이 $g$ 를 **shadow** 라 한다. Mathieu 사례의 shadow 는 $24\thinspace\theta(\tau)$ 이고 이 theta 급수는 근계 $A_1^{24}$ 에서 나온다. 근계를 다른 Niemeier 근계로 바꾸면 shadow 가 바뀌고 사례가 23 개로 갈라진다.
 
@@ -43,7 +43,7 @@ $$
 
 $z=0$ 을 넣으면 $Z_{K3}(\tau,0)=24=\chi(K3)$ 로 [Euler 지표](euler-characteristic.md)가 나온다.
 
-## $N=4$ 지표 분해와 $H(\tau)$
+## N=4 지표 분해와 H(τ)
 
 $Z_{K3}$ 를 $c=6$ 인 $N=4$ 초등각대수의 지표로 분해한다. 짧은 지표 하나와 긴 지표들의 무한합으로 갈라진다.
 
@@ -69,11 +69,11 @@ $$
 G^X=\mathrm{Aut}(N^X)/W^X
 $$
 
-를 **umbral 군**이라 한다. $m=h(X)$ 를 $X$ 의 공통 Coxeter 수라 할 때, 각 $g\in G^X$ 에 대응하는 무게 $1/2$ 와 지표 $m$ 의 벡터값 mock 모듈러 형식 $H^X_g=(H^X_{g,r})\_{r\bmod 2m}$ 이 정해지고 그 shadow 는 $X$ 의 근계 theta 급수에 $g$ 의 작용을 얹은 것이다.
+를 **umbral 군**이라 한다. $m=h(X)$ 를 $X$ 의 공통 Coxeter 수라 할 때, 각 $g\in G^X$ 에 대응하는 무게 $1/2$ 와 지표 $m$ 의 벡터값 mock 모듈러 형식 $H^X_g=(H^X_{g,r})\_{r\bmod 2m}$ 이 정해지고 그 shadow 는 $X$ 의 근계 theta 급수에 $g$ 가 작용한 것이다.
 
 > **Umbral moonshine 추측 (Cheng–Duncan–Harvey 2012).** 각 $X$ 마다 무한차원 등급 $G^X$ [가군](modules.md) $K^X$ 가 있어, 그 등급 지표의 생성함수가 정확히 $H^X_g$ 다.
 
-$\mathrm{Aut}(N^X)$ 를 Weyl 군으로 나누면 근계의 대칭 가운데 반사가 걷히고 근계 성분들을 뒤섞는 순열 대칭만 남는다. $A_1^{24}$ 에서 그것은 24 개 성분의 순열 가운데 격자가 허용하는 것들, 곧 Golay 부호의 자기동형군 $M_{24}$ 다.
+$\mathrm{Aut}(N^X)$ 를 Weyl 군으로 나누면 근계의 대칭 가운데 반사가 걷히고 근계 성분들을 뒤섞는 순열 대칭만 남는다. $A_1^{24}$ 에서 그것은 24 개 성분의 순열 가운데 격자가 허용하는 것들, 곧 [Golay 부호](golay-codes.md)의 자기동형군 $M_{24}$ 다.
 
 $X=A_1^{24}$ 이면 $m=2$ 이고 $G^X=M_{24}$ 이며 앞의 Mathieu 달빛이 된다.
 
@@ -132,7 +132,7 @@ Ramanujan 의 mock theta 함수는 오랫동안 고립된 호기심이었다. Zw
 
 ## 끈이론의 BPS 상태 개수
 
-타원 종수는 **BPS**(Bogomolny–Prasad–Sommerfield) 상태의 지표 세기이고, 블랙홀 엔트로피의 미시적 계산이 같은 형태의 급수로 나온다. $N=4$ 초대칭 끈 이론의 dyon 세기 함수가 Siegel 모듈러 형식이고, 그것을 분해할 때 나오는 조각이 mock 모듈러 형식이라는 것을 Dabholkar, Murthy, Zagier 가 보였다. 벽 넘기 현상(모듈라이를 바꾸면 상태 수가 점프하는 것)이 mock 성질, 곧 shadow 의 존재와 대응한다.
+타원 종수는 **BPS**(Bogomolny–Prasad–Sommerfield) 상태의 지표 세기이고, 블랙홀 엔트로피의 미시적 계산이 같은 형태의 급수로 나온다. $N=4$ 초대칭 끈 이론의 dyon 세기 함수가 [Siegel 모듈러 형식](siegel-modular-forms.md)이고, 그것을 분해할 때 나오는 조각이 mock 모듈러 형식이라는 것을 Dabholkar, Murthy, Zagier 가 보였다. 벽 넘기 현상(모듈라이를 바꾸면 상태 수가 점프하는 것)이 mock 성질, 곧 shadow 의 존재와 대응한다.
 
 ## 다른 산재군의 달빛
 
