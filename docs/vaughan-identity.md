@@ -2,7 +2,7 @@
 
 # 개요
 
-Vaughan 항등식은 von Mangoldt 함수를 두 수열의 곱에 걸친 쌍선형합 몇 개로 가르는 항등식이다. 소수에 걸친 합을 직접 다루는 대신 약수 구조가 드러난 합으로 바꾸면 각 조각에 Cauchy–Schwarz 부등식과 지수합 추정을 쓸 수 있다. Bombieri–Vinogradov 정리와 Vinogradov 의 세 소수 정리가 이 분해를 출발 자료로 쓴다.
+Vaughan 항등식(Vaughan's identity)은 von Mangoldt 함수를 두 수열의 곱에 걸친 쌍선형합 몇 개로 가르는 항등식이다. 소수에 걸친 합을 직접 다루는 대신 약수 구조가 드러난 합으로 바꾸면 각 조각에 Cauchy–Schwarz 부등식과 지수합 추정을 쓸 수 있다. Bombieri–Vinogradov 정리와 Vinogradov 의 세 소수 정리가 이 분해를 출발 자료로 쓴다.
 
 # 직관
 
@@ -10,7 +10,7 @@ $\sum\_{n\le x}\Lambda(n)e(n\alpha)$ 의 크기를 재려고 한다. $\Lambda$ �
 
 약수 구조가 있는 함수라면 사정이 다르다. $\sum\_{n\le x}d(n)e(n\alpha)$ 에서 $d(n)$ 을 $n=mk$ 의 꼴로 풀어 쓰면 합이 $\sum\_{m}\sum\_{k\le x/m}e(mk\alpha)$ 가 되고, 안쪽 합이 공비 $e(m\alpha)$ 의 등비급수라 $\vert\sin\pi m\alpha\vert^{-1}$ 로 묶인다. 두 변수로 풀어 쓸 수 있으면 한 변수를 고정하고 다른 변수에서 상쇄를 얻는다.
 
-그러므로 $\Lambda$ 를 두 변수의 곱에 걸친 합으로 바꾼다. $\Lambda$ 자체는 곱으로 풀리지 않지만, Dirichlet 급수의 항등식 $-\zeta'/\zeta=F-\zeta F G+(\dots)$ 꼴로 $\Lambda$ 를 Möbius 함수와 $\Lambda$ 의 합성곱 몇 개의 합으로 쓸 수 있다. 각 합성곱은 두 수열의 곱에 걸친 합이다.
+그러므로 $\Lambda$ 를 두 변수의 곱에 걸친 합으로 바꾼다. $\Lambda$ 자체는 곱으로 풀리지 않지만, [Dirichlet 급수](dirichlet-series.md)의 항등식 $-\zeta'/\zeta=F-\zeta F G+(\dots)$ 꼴로 $\Lambda$ 를 Möbius 함수와 $\Lambda$ 의 합성곱 몇 개의 합으로 쓸 수 있다. 각 합성곱은 두 수열의 곱에 걸친 합이다.
 
 분해의 조각은 두 가지 꼴이다. 한쪽 변수의 길이가 짧아 안쪽 합을 등비급수로 묶는 조각과, 두 변수의 길이가 모두 중간이어서 Cauchy–Schwarz 부등식으로 두 변수를 분리하는 조각이다. 각각을 Type I 과 Type II 라 부르고, 두 꼴의 추정을 합치면 처음 합의 상한이 나온다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-Tate 곡선은 $p$ 진체 $K$ 와 $|q|\lt 1$ 인 $q\in K^{\times}$ 에 대해
+Tate 곡선(Tate curve)은 $p$ 진체 $K$ 와 $|q|\lt 1$ 인 $q\in K^{\times}$ 에 대해
 
 $$
 E_q(K)\cong K^{\times}/q^{\mathbb Z}
@@ -79,7 +79,7 @@ $E$ 가 비분해 곱셈적 환원을 가지면 이차 불분기 확대 $K'/K$ �
 
 ## Tate 가군의 모양
 
-균등화에서 $\ell$ 등분점은 $\zeta_\ell$ 과 $q^{1/\ell}$ 이 생성한다. 따라서 $\ell$ 진 Tate 가군 위의 Galois 표현이
+균등화에서 $\ell$ 등분점은 $\zeta_\ell$ 과 $q^{1/\ell}$ 이 생성한다. 따라서 $\ell$ 진 Tate 가군 위의 [Galois 표현](galois-representations.md)이
 
 $$
 \rho\sim\begin{pmatrix}\chi&\ast\cr 0&1\end{pmatrix}
@@ -93,13 +93,13 @@ $$
 \mathcal L=\frac{\log_p(q_E)}{\mathrm{ord}\_p(q_E)}
 $$
 
-를 $E$ 의 $\mathcal L$ 불변량이라 한다. $\log_p$ 는 Iwasawa 대수 로그다. 분모가 $j$ 의 극의 위수이므로 두 값 모두 Tate 주기에서 읽힌다.
+를 $E$ 의 $\mathcal L$ 불변량이라 한다. $\log_p$ 는 [Iwasawa 대수](iwasawa-algebra.md)의 로그다. 분모가 $j$ 의 극의 위수이므로 두 값 모두 Tate 주기에서 읽힌다.
 
 # 활용
 
 ## p 진 L 함수의 예외적 영점
 
-$E$ 가 $p$ 에서 분해 곱셈적 환원을 가지면 $p$ 진 $L$ 함수의 보간 인자가 $s=1$ 에서 $0$ 이 되어 복소 $L$ 함수와 소실 차수가 어긋난다. Mazur–Tate–Teitelbaum 추측은 그 차이를 $\mathcal L$ 로 메우며, Greenberg 와 Stevens 가 Hida 족 위의 변형으로 증명했다.[^2]
+$E$ 가 $p$ 에서 분해 곱셈적 환원을 가지면 [p 진 L 함수](p-adic-l-function.md)의 보간 인자가 $s=1$ 에서 $0$ 이 되어 복소 $L$ 함수와 소실 차수가 어긋난다. Mazur–Tate–Teitelbaum 추측은 그 차이를 $\mathcal L$ 로 메우며, Greenberg 와 Stevens 가 Hida 족 위의 변형으로 증명했다.[^2]
 
 ## 곱셈적 환원 곡선의 국소점
 

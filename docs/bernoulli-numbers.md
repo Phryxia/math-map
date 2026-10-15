@@ -2,7 +2,7 @@
 
 # 개요
 
-Bernoulli 수 $B_j$ 는 거듭제곱의 합을 닫힌 꼴로 쓸 때 나타나는 유리수열이다[^1].
+Bernoulli 수(Bernoulli number) $B_j$ 는 거듭제곱의 합을 닫힌 꼴로 쓸 때 나타나는 유리수열이다[^1].
 
 $$
 \sum_{a=0}^{n-1}a^{k}=\frac1{k+1}\sum_{j=0}^{k}\binom{k+1}{j}B_j\thinspace n^{\thinspace k+1-j}
@@ -144,7 +144,7 @@ $p$ 가 정칙이면 $x^{p}+y^{p}=z^{p}$ 에 $p\nmid xyz$ 인 해가 없다. 증
 
 ## p 진 L 함수와 Iwasawa 이론
 
-Kummer 합동이 $L_p(s,\chi)$ 의 존재를 주고, 그 함수의 $\Lambda$ 원소로서의 실현이 Iwasawa 주추측의 해석적 변이 된다. 주추측을 $T=0$ 에서 읽은 것이 Herbrand–Ribet 이며, 그 진술이 $p\mid B_k$ 라는 조건으로 쓰인다.
+Kummer 합동이 [p 진 L 함수](p-adic-l-function.md) $L_p(s,\chi)$ 의 존재를 주고, 그 함수의 $\Lambda$ 원소로서의 실현이 Iwasawa 주추측의 해석적 변이 된다. 주추측을 $T=0$ 에서 읽은 것이 Herbrand–Ribet 이며, 그 진술이 $p\mid B_k$ 라는 조건으로 쓰인다.
 
 ## Euler–Maclaurin 공식
 

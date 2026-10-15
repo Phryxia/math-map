@@ -2,7 +2,7 @@
 
 # 개요
 
-Arthur 매개변수는 L 매개변수에 $\mathrm{SL}\_2$ 를 하나 더 붙여 비템퍼드 표현까지 분류하는 매개변수다.
+Arthur 매개변수(Arthur parameter)는 L 매개변수에 $\mathrm{SL}\_2$ 를 하나 더 붙여 비템퍼드 표현까지 분류하는 매개변수다.
 
 $$
 \psi:\ W_F\times\mathrm{SL}\_2(\mathbb C)\times\mathrm{SL}\_2(\mathbb C)\longrightarrow{}^LG
@@ -88,7 +88,7 @@ n=dm,\qquad
 \sigma\ \text{는 }\mathrm{GL}\_m\text{ 의 첨점 표현}
 $$
 
-$d=1$ 이 첨점 표현이고, $d\gt 1$ 이면 잔여 스펙트럼의 Speh 표현이며, $m=1,d=n$ 이면 자명 표현이다. 이 목록이 전부라는 것이 Mœglin–Waldspurger 의 정리다.
+$d=1$ 이 첨점 표현이고, $d\gt 1$ 이면 잔여 스펙트럼의 [Speh 표현](speh-representations.md)이며, $m=1,d=n$ 이면 자명 표현이다. 이 목록이 전부라는 것이 Mœglin–Waldspurger 의 정리다.
 
 둘째 $\mathrm{SL}\_2$ 가 자명한 $d=1$ 이 템퍼드에 대응하고, $d$ 가 클수록 스펙트럼의 얕은 곳에 있는 표현이 나온다. 유한군의 지표 하나를 계산하면 무한차원 공간에서의 중복도가 나오고, [기본 보조정리](fundamental-lemma.md)로 안정화한 대각합 공식이 그 증명 도구다.
 
@@ -130,7 +130,7 @@ Saito–Kurokawa, Ikeda, Miyawaki 올림처럼 한 군의 형식에서 다른 �
 
 ## 산술적 응용의 입력
 
-고전군의 자기동형 표현을 [Galois 표현](galois-representations.md)과 잇는 작업(Shimura 다양체의 [코호몰로지](cohomology.md) 분해)은 어떤 표현이 이산 스펙트럼에 있는지를 먼저 알아야 한다. 최근의 모듈러성 올림 정리와 Langlands 상호성의 부분적 결과들이 Arthur 의 분류를 입력으로 쓴다.
+고전군의 자기동형 표현을 [Galois 표현](galois-representations.md)과 잇는 작업([Shimura 다양체](shimura-varieties.md)의 [코호몰로지](cohomology.md) 분해)은 어떤 표현이 이산 스펙트럼에 있는지를 먼저 알아야 한다. 최근의 모듈러성 올림 정리와 Langlands 상호성의 부분적 결과들이 Arthur 의 분류를 입력으로 쓴다.
 
 # 연관 문서
 

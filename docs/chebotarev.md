@@ -2,7 +2,7 @@
 
 # 개요
 
-Chebotarev 밀도 정리로 Galois 확대 $L/K$ 에서 Frobenius 켤레류는 균등하게 분포한다.
+Chebotarev 밀도 정리(Chebotarev density theorem)는 Galois 확대 $L/K$ 에서 Frobenius 켤레류가 균등하게 분포한다는 정리다.
 
 $$
 \delta\Big(\Big\lbrace\mathfrak p:\Big[\tfrac{L/K}{\mathfrak p}\Big]=C\Big\rbrace\Big)=\frac{|C|}{[L:K]}

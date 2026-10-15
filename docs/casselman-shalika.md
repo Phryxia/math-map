@@ -2,7 +2,7 @@
 
 # 개요
 
-Casselman–Shalika 공식[^1]은 비분기 자리에서 구면 Whittaker 함수의 값을 쌍대군의 기약지표로 준다.
+Casselman–Shalika 공식(Casselman–Shalika formula)[^1]은 비분기 자리에서 구면 Whittaker 함수의 값을 쌍대군의 기약지표로 준다.
 
 $$
 W^\circ(\varpi^\lambda)=\delta_B^{1/2}(\varpi^\lambda)\thickspace s_\lambda(\alpha_1,\dots,\alpha_n)
