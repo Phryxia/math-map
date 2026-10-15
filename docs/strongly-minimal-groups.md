@@ -2,7 +2,7 @@
 
 # 개요
 
-강최소 군은 정의 가능한 부분집합이 유한이거나 여유한인 군이다. 정의 가능성에만 건 이 조건이 대수 구조를 아벨군으로 좁힌다.
+강최소 군(strongly minimal group)은 정의 가능한 부분집합이 유한이거나 여유한인 군이다. 정의 가능성에만 건 이 조건이 대수 구조를 아벨군으로 좁힌다.
 
 **정리**(Reineke). 강최소 군은 아벨군이다.[^1]
 
@@ -42,7 +42,7 @@ $Z(G)$ 가 무한하면 $Z(G)=G$ 이므로 $G$ 가 아벨군이다. 남는 것�
 
 증명의 요지는 직관 절의 두 단계다. 중심이 무한하면 끝나고, 유한하면 중심 밖이 켤레류 하나인 군이 되는데 안정성이 그런 군을 허용하지 않는다.
 
-이 정리는 위수 $1$ 에서 단순 무한군을 배제한다. 유한 Morley 위수 군의 분류에서 위수 $1$ 인 경우가 이것으로 끝난다.
+이 정리는 위수 $1$ 에서 단순 무한군을 배제한다. [유한 Morley 위수 군](groups-of-finite-morley-rank.md)의 분류에서 위수 $1$ 인 경우가 이것으로 끝난다.
 
 ## 기하의 비퇴화성
 
@@ -76,7 +76,7 @@ Zilber 삼분법의 세 경우 가운데 퇴화가 배제되므로, 강최소 �
 
 ## 유한 Morley 위수 군의 분류
 
-Cherlin–Zilber 추측은 단순 무한 유한 Morley 위수 군이 대수적으로 닫힌 체 위의 대수군이라고 한다.[^3] 위수 $1$ 인 경우는 Reineke 정리가 아벨성을 주어 단순군이 없음을 보이므로, 분류의 출발점이 위수 $2$ 다.
+[Cherlin–Zilber 추측](cherlin-zilber-conjecture.md)은 단순 무한 유한 Morley 위수 군이 대수적으로 닫힌 체 위의 대수군이라고 한다.[^3] 위수 $1$ 인 경우는 Reineke 정리가 아벨성을 주어 단순군이 없음을 보이므로, 분류의 출발점이 위수 $2$ 다.
 
 [^1]: J. Reineke, *Minimale Gruppen*, Z. Math. Logik Grundlagen Math. **21** (1975), 357–359. 중심 밖이 켤레류 하나인 경우의 배제는 B. Poizat, *Groupes stables* (Nur al-Mantiq wal-Ma'rifah, 1987) 2 장에 안정 이론의 사슬 조건으로 정리되어 있다.
 [^2]: E. Hrushovski, A. Pillay, *Weakly normal groups*, in *Logic Colloquium '85*, North-Holland (1987), 233–244.
