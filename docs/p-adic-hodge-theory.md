@@ -46,7 +46,7 @@ $$
 
 가 동형인 것과 같고 이것이 비교동형의 추상적 형태다. $B$ 허용 표현들은 부분표현, 몫, [텐서곱](tensor-products.md), 쌍대에 닫혀 탄나키안 부분[범주](category.md)를 이룬다.
 
-## $\mathbb C_p$ 와 Hodge–Tate 환
+## Cp 와 Hodge–Tate 환
 
 $\mathbb C_p=\widehat{\bar K}$ 를 $\bar K$ 의 $p$ 진 완비화라 하자. Tate 의 계산은 다음이다.
 
@@ -69,7 +69,7 @@ $$
 
 중복도를 세어 나온 정수 $h_1\le\dots\le h_n$ 이 **Hodge–Tate 무게**다. 이 관례에서 $\mathbb Q_p(1)$ 의 무게는 $-1$ 이고 de Rham 여과 점프와 부호가 일치한다[^1].
 
-## $B_{\mathrm{dR}}$
+## BdR
 
 구성은 표수 $p$ 로 내려갔다가 Witt 벡터로 되올라온다.
 
@@ -102,7 +102,7 @@ $B_{\mathrm{dR}}$ 에는 $\mathbb C_p$ 로 가는 $G_K$ 동변 단면이 없다.
 
 $D_{\mathrm{dR}}(V)=(B_{\mathrm{dR}}\otimes V)^{G_K}$ 는 $K$ 위 벡터공간이며 여과를 물려받는다. 차원이 꽉 차면 $V$ 가 **de Rham 표현**이다.
 
-## $B_{\mathrm{cris}}$ 와 $B_{\mathrm{st}}$
+## Bcris 와 Bst
 
 $B_{\mathrm{dR}}$ 은 $K$ 를 통째로 품고 있어 Frobenius 를 가질 수 없다. Frobenius 를 살리려면 $A_{\mathrm{inf}}$ 에서 나누어진 거듭제곱 포락을 취해 작은 부분환을 만든다.
 
@@ -126,7 +126,7 @@ $$
 
 는 $K_0$ 위의 벡터공간이고 각각 $\varphi$ 와 $(\varphi,N)$ 을 가지며 $D_K=K\otimes_{K_0}D$ 위에 여과가 온다. 차원이 꽉 차면 **결정적(crystalline)**, **반안정(semistable)** 표현이다.
 
-## 여과 $\varphi$ 가군과 약허용성
+## 여과 φ 가군과 약허용성
 
 여과 $\varphi$ 가군은 유한차원 $K_0$ 벡터공간 $D$ 에 $\sigma$ 반선형 전단사 $\varphi$ 와 $D_K$ 위의 감소 여과가 주어진 것이다. 두 정수를 붙인다.
 
@@ -188,7 +188,7 @@ $$
 
 [Hodge 이론](hodge-theory.md)의 $H^n(X,\mathbb C)=\bigoplus H^{p,q}$ 와 형태가 같고 $\mathbb C$ 자리에 $\mathbb C_p$ 가, 켤레 대칭 자리에 Tate 꼬임이 들어간다.
 
-## $p$ 진 단일화 정리
+## p 진 단일화 정리
 
 $\ell\ne p$ 에서 Grothendieck 준안정 정리는 순한 관성의 작용이 열린 부분군 위에서 $\rho(\sigma)=\exp\bigl(t_\ell(\sigma)N\bigr)$ 꼴이고 $N$ 이 멱영이라는 진술이다. $p$ 진에서 이에 해당하는 것은 다음이다.
 
@@ -198,7 +198,7 @@ $$
 
 곧 어떤 유한확대 $L/K$ 위에서 $V|\_{G_L}$ 가 반안정이다. Berger 가 이를 $p$ 진 미분방정식의 Crew 추측(André, Kedlaya, Mebkhout 이 독립적으로 증명)으로 환원해 해결했다. 이 정리로 de Rham 표현에서도 Weil–Deligne 표현을 뽑을 수 있고 $p$ 에서의 국소 Langlands 대응을 $\ell\ne p$ 와 같은 언어로 쓴다.
 
-## $(\varphi,\Gamma)$ 가군
+## (φ,Γ) 가군
 
 허용성 이론이 좋은 표현만 다루는 반면 모든 $p$ 진 표현을 선형대수로 옮기는 길도 있다. $K_\infty=K(\mu_{p^\infty})$ 와 $\Gamma=\mathrm{Gal}(K_\infty/K)$ 로 두면 Fontaine–Wintenberger 의 노름체 정리가 다음을 준다.
 

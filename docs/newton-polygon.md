@@ -67,7 +67,7 @@ $$
 
 무한차원이 유한차원으로 잘리므로 Dwork 이론에서 [Fredholm 행렬식](fredholm-determinant.md)을 다룰 수 있다. 완전연속 작용소의 특성급수가 정함수이고 그 Newton 다각형이 고윳값의 부치를 층층이 준다.
 
-## $p$ 진 exp 의 수렴반경
+## p 진 exp 의 수렴반경
 
 $\exp(x)=\sum x^n/n!$ 의 계수 부치는 $-v_p(n!)$ 이고 Legendre 공식이 다음을 준다($s_p(n)$ 은 $p$ 진 자릿수의 합).
 

@@ -64,7 +64,7 @@ $y\to\infty$ 에서 $K_{ir}(y)\sim\sqrt{\pi/2y}\thinspace e^{-y}$ 로 지수적�
 
 $z\mapsto-\bar z$ 에 대한 대칭으로 $a_{-n}=a_n$ 인 **짝**과 $a_{-n}=-a_n$ 인 **홀**로 나뉜다.
 
-## Hecke 작용소와 $L$ 함수
+## Hecke 작용소와 L 함수
 
 [Hecke 작용소](hecke-operators.md)는 $\Delta$ 와 가환이므로 각 고윳값 공간에서 동시대각화할 수 있다. Hecke 고유형식으로 $a_1=1$ 이 되게 정규화하면 계수가 곱셈적이 되고, $L$ 함수가 정칙 형식과 같은 모양으로 나온다.
 

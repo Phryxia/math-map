@@ -164,7 +164,7 @@ $\mathcal F=\mathcal F^\ast$ 이고 $T\cong T^\ast$ 이면 두 군이 같으므�
 
 $p$ 가 홀수라 $H^1(\mathbb R,T)=0$ 이고 $\det=-1$ 이므로 복소켤레의 고유공간이 $1$ 차원씩 갈려 $\dim H^0(\mathbb R,T)=1$ 이다. 합이 $0$ 이므로 자기쌍대 구조만으로는 Kolyvagin 계가 없다.
 
-## $p$ 에서의 완화
+## p 에서의 완화
 
 위 표에서 $v=p$ 의 조건만 $H^1(\mathbb Q_p,T)$ 전체로 바꾸면 $\dim H^1(\mathbb Q_p,E[p])=2$ 이므로 기여가 $+2$ 가 되고
 
