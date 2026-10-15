@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-15T13:10:10.775Z",
-  "nextSeq": 2094,
+  "savedAt": "2026-10-15T17:03:54.675Z",
+  "nextSeq": 2099,
   "items": [
     {
       "id": "3fd64c72",
@@ -84,6 +84,14 @@
       "seq": 2091
     },
     {
+      "id": "b699c20d",
+      "title": "Node 스크립트의 String.replace 치환문에서 $$ 가 수식 구분자를 먹는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 46차에 개요 첫 문단 앞에 정의 문장을 끼우는 Node 스크립트를 s.replace(anchor, text + anchor) 로 썼다. anchor 가 '$$ 로 시작하는 블록이어서 치환문에 $$ 가 들어갔고, String.replace 는 치환문의 $$ 를 리터럴 $ 하나로 바꾼다. 그 결과 airy-functions 와 mellin-transform 의 블록 구분자 '$$' 가 '$' 한 글자가 되어 블록 수식이 깨졌다. $& $' $` $1~$9 도 같은 치환 패턴이다(문자열 패턴에는 포획 그룹이 없어 $1 은 리터럴로 남는 것을 46차에 확인했다). render-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다. 깨진 결과도 $ 하나로 둘러싼 인라인 수식으로 읽히기 때문이다. 잡아낸 것은 git diff -U0 으로 바뀐 줄을 눈으로 본 것이다. 규칙. docs 를 고치는 Node 스크립트에서 String.replace 와 String.replaceAll 을 쓰지 않는다. s.split(from) 으로 가르고 parts[0]+to+parts[1] 로 이어 붙이면 치환 패턴 해석이 없다(일치 횟수 확인도 함께 된다). 앞서 같은 자리에서 perl -i -pe 의 $ 보간 사고가 있었다(메모 bb29a567). 스크립트로 docs 를 고친 회차에는 커밋 전에 반드시 git diff -U0 으로 바뀐 줄 전부를 보고, 수식 구분자 $$ 가 $ 로 줄어든 줄이 없는지 확인한다.",
+      "createdAt": "2026-10-15T17:00:24.833Z",
+      "seq": 2096
+    },
+    {
       "id": "c4f40bdb",
       "title": "큐에서 신규 주제를 꺼낼 때 저장소 선확인",
       "priority": 90,
@@ -140,20 +148,12 @@
       "seq": 2092
     },
     {
-      "id": "2b6e9e11",
-      "title": "본문 미링크 전수 교정 (574 건, 392 문서)",
+      "id": "75c42fbf",
+      "title": "본문 미링크 전수 교정 (430 건, 298 문서)",
       "priority": 60,
-      "note": "4절 본문 링크 규칙(본문에 다른 문서의 제목이 나오면 첫 등장은 그 문서로 링크). 44차에 9절 손 검사를 Node 로 전수화해 돌렸더니 666 건 410 문서였고, 같은 회차에 문서 20 개를 고쳐 574 건 392 문서로 줄었다. 고친 문서는 modular-forms geometric-satake umbral-moonshine schubert-calculus schur-polynomials borcherds-products selberg-trace-formula weil-representation borel-weil-bott hodge-theory iwasawa-main-conjecture deligne-weil-conjectures low-lying-zeros dwork-rationality tate-thesis symplectic-manifolds satake-isomorphism mock-modular-forms waldspurger-formula whittaker-models adeles arzela-ascoli 다. 남은 건수 상위는 combinatorics-overview 6 과 3 건짜리 여럿(brownian-motion chern-simons class-field-theory coleman-integration conformal-mapping)이다. 개관은 갈래 설명 줄에 링크를 넣으면 갈래 순서 검사가 반드시 걸리므로(메모 0bb8e7fb) 일반 문서부터 한다. 전수 스크립트는 /tmp 에 만든다. titles.tsv 를 읽고, 각 문서에서 '# 연관 문서' 앞을 자르고, 코드블록을 정규식으로 지우고, 제목이 본문에 있는데 '](oid.md)' 가 없으면 보고하되, 다른 후보 제목이 그 제목을 포함하고 본문에도 있으면 건너뛴다. 고칠 때 걸린 세 꼴. (1) 첫 등장이 헤딩뿐이다. 저장소에 헤딩 링크를 쓰는 문서가 하나도 없으므로 헤딩은 두고 바로 아래 문단에 이름을 넣어 링크한다. modular-forms 의 '가환 연산자족이 있다' 를 'Hecke 작용소라는 가환 연산자족이 작용한다' 로, arzela-ascoli 의 '해의 존재' 절 첫 문장 앞에 '상미분방정식' 을 붙인 것이 그 예다. (2) 제목이 더 긴 이름의 일부다. '아핀 Grassmann 다양체', '아핀 Lie 대수', 'Arthur-Selberg 대각합 공식' 이 그렇고 링크하지 않는다. (3) 이름은 같으나 다른 진술이다. deligne-weil-conjectures 의 'Riemann 가설' 은 유한체 위의 유비이고 low-lying-zeros 의 '일반 Riemann 가설' 은 일반화이므로 riemann-hypothesis 로 링크하지 않았다. 고치는 김에 H2 헤딩의 수식도 함께 평문화했고 그래서 헤딩 수식 문서는 114 개에서 107 개가 되었다.",
-      "createdAt": "2026-10-15T05:04:25.537Z",
-      "seq": 2079
-    },
-    {
-      "id": "16268abe",
-      "title": "개요 첫 문단에 원어가 없는 문서 전수 교정",
-      "priority": 60,
-      "note": "4절 용어 규칙(개요 첫 문장에서 제목 개념에 원어 병기). 43차 시작에 302 개, 44차에 240 개였고 45차에 범주론·집합론 13, 기계학습·위상 13, 복소해석·미분기하 15, 함수해석·대수적위상 16, 선형대수 17, 최적화 14 를 처리해 150 개가 남았다. 분야별로 analysis 38, number_theory 30, probability 23, combinatorics 23, logic 15, algebra 15 와 1 개씩 남은 여섯 분야(order_theory, information_theory, foundations, field_theory, cryptography, computation)다. 그 여섯은 전부 오탐이거나 개관이다(메모 56df77a9). 한 회차에 한 분야씩, 9절 손 검사가 0 이 될 때까지. 개요 첫 문장이 'X 는 Y 다' 꼴이 아닌 문서는 정의형 문장을 첫 문장으로 새로 쓰고 기존 동기 문장을 뒤에 둔다(45차의 tannaka-duality, knot-invariants, lie-derivative, peter-weyl, multigrid, perron-frobenius, incomplete-lu, optimal-transport 가 그 꼴이었다). 같은 문서를 손대는 김에 9절 미링크 검사와 4절 금지 동사 grep 도 함께 돌린다. 45차에는 그 두 검사가 문서 88 개에서 미링크 46 건과 금지 동사 7 건을 내놓아 같은 커밋에서 고쳤다.",
-      "createdAt": "2026-10-15T09:06:36.769Z",
-      "seq": 2084
+      "note": "4절 본문 링크 규칙(본문에 다른 문서의 제목이 나오면 첫 등장은 그 문서로 링크). 44차에 666 건 410 문서에서 574 건 392 문서로, 46차에 문서 96 개를 고쳐 430 건 298 문서가 되었다. 남은 건수 상위는 combinatorics-overview 6, etale-cohomology 4, 그리고 3 건짜리 여럿(zhu-algebra weyl-character-formula theta-series tangent-bundle supersingular-isogeny-graphs stiefel-whitney-classes)이다. 개관은 갈래 설명 줄에 링크를 넣으면 갈래 순서 검사가 반드시 걸리므로(메모 0bb8e7fb) 일반 문서부터 한다. 전수 스크립트는 스크래치패드에 Node 로 만든다. titles.tsv 를 읽고, 각 문서에서 '# 연관 문서' 앞을 자르고, 코드블록을 정규식으로 지우고, 제목이 본문에 있는데 '](oid.md)' 가 없으면 보고하되 다른 후보 제목이 그 제목을 포함하고 본문에도 있으면 건너뛴다. 고칠 때 걸린 꼴 넷. (1) 첫 등장이 헤딩뿐이다. 저장소에 헤딩 링크를 쓰는 문서가 하나도 없으므로 헤딩은 두고 바로 아래 문단에 이름을 넣어 링크한다. 46차에 chain-complexes 의 Euler 지표 절은 정리 뒤 '이다.' 를 '이고, 이 교대합이 Euler 지표 링크다.' 로, szemeredi-regularity-lemma 의 Roth 정리 절은 정리 진술의 '**정리.**' 를 '**정리(Roth 정리 링크).**' 로, vandiver-conjecture 의 대수적 K 이론 절은 군 기호 앞에 '대수적 K 이론의 군' 을 넣어 처리했다. (2) 제목이 더 긴 이름의 일부다. 'Weyl 군 다중 Dirichlet 급수', '아핀 Grassmann 다양체', '삼소수 정리', 'Kővári–Sós–Turán 정리' 가 그렇고 링크하지 않는다. (3) 이름은 같으나 다른 진술이다. class-number-one 의 '일반화 Riemann 가설', khintchine-inequality 의 'Gauss 합'(정규확률변수의 합이고 수론의 gauss-sums 가 아니다), boolean-fourier 의 'Borell 의 등주부등식'(Gauss 공간의 등주이고 평면 등주부등식이 아니다)이 그렇다. (4) 본문이 이미 같은 이름으로 다른 문서를 링크한다. siegel-weil 의 'Eichler 의 질량 공식' 이 jacquet-langlands 를 가리키고 mass-formula 로 바꾸지 않았다. 참고문헌 각주 안의 책 절 제목(limits 의 '단조 수렴 정리')도 링크하지 않는다.",
+      "createdAt": "2026-10-15T17:03:35.980Z",
+      "seq": 2098
     },
     {
       "id": "14ae777a",
@@ -170,14 +170,6 @@
       "note": "4.5절 '갈래는 읽는 순서다' 가 새로 생긴 규칙이라 기존 개관 21 개가 모두 분류표 꼴이다. 한 회차에 개관 하나씩, /tmp/branch-order.sh 의 보고가 0 이 될 때까지. 측도론은 별도 항목에 있다.",
       "createdAt": "2026-10-15T00:45:47.229Z",
       "seq": 2063
-    },
-    {
-      "id": "ca0493f4",
-      "title": "정보이론 개관의 갈래 순서와 개요 원어",
-      "priority": 50,
-      "note": "43차 확인. 손 검사가 'error-correcting-codes 는 channel-coding 의 조상인데 뒤에 온다' 하나를 낸다. 갈래 '부호의 구성' 이 갈래 'Shannon 의 부호화 정리' 보다 앞에 와야 한다(4.5절). 두 H2 를 맞바꾼 뒤 검사를 다시 돌려 반대 방향 위반이 생기지 않는지 본다. 같은 작업에서 개요 첫 문장을 '정보이론(information theory)은' 으로 고친다(43차에 고쳤다가 커밋에서 빠졌다). 미링크로 보고되는 집중부등식은 지도 mermaid 의 라벨이므로 손대지 않는다(03eb5402 메모).",
-      "createdAt": "2026-10-15T01:06:28.656Z",
-      "seq": 2072
     },
     {
       "id": "b9e3aeb5",
@@ -226,6 +218,14 @@
       "note": "4절 제목 규칙은 제목이 개념 하나이고 파일명이 그 개념의 영문 id 라고 한다. 이 문서는 제목까지 영문이라 개요 첫 문장이 'Boolean algebra 는 ... 대수 구조다' 가 되고, 용어 규칙이 요구하는 '한국어 용어를 앞에 두고 원어를 괄호에' 를 지킬 자리가 없다. 제목을 'Boole 대수' 로 바꾸고(사람 이름은 원어 표기 그대로 쓴다는 규칙에 맞는다) grep -rln '(boolean-algebras.md)' docs README.md 로 링크 텍스트를 전부 고친 뒤, 개요 첫 문장을 'Boole 대수(Boolean algebra)는' 으로 쓴다. 43차에 발견했고 제목 변경이라 따로 뗀다.",
       "createdAt": "2026-10-15T01:01:43.443Z",
       "seq": 2068
+    },
+    {
+      "id": "050aaa8f",
+      "title": "개요 첫 문단에 원어가 없는 문서 전수 교정 (완료 확인용)",
+      "priority": 30,
+      "note": "4절 용어 규칙(개요 첫 문장에서 제목 개념에 원어 병기). 43차 302 개, 44차 240 개, 45차 150 개였고 46차에 analysis 38, number_theory 31, logic 5, algebra 15, probability 21, combinatorics 22 를 처리해 9절 손 검사의 보고가 8 개로 줄었다. 그 8 개는 전부 오탐이거나 개관이라 고칠 것이 없다. 개관 넷(analysis-overview combinatorics-overview foundations-overview probability-overview)은 4.5절 구조여서 개요가 분야의 물음을 적는 자리이고 제목 개념의 정의 문장이 없다. boolean-algebras(제목 'Boolean algebra')와 martingales(제목 'Martingale')는 제목 자체가 로마자라 병기할 원어가 없고, etale-fundamental-group 은 괄호 안이 악센트 글자로, sigma11-boundedness 는 그리스 대문자로 시작해 검사가 ASCII 로마자만 세는 탓에 보고된다(메모 56df77a9). 즉 이 전수 작업은 끝났다. 다음 회차에는 손 검사를 한 번 돌려 보고가 이 8 개뿐인지 확인하고, 새로 쓰거나 보강한 문서가 규칙을 지키는지만 본다. 보고가 9 개 이상이면 새 문서가 규칙을 어긴 것이므로 그것만 고친다. 46차의 교정 방법. 첫 문장이 'X 는 Y 다' 꼴이면 제목 개념 바로 뒤에 괄호를 넣는다. 꼴이 아니면 정의형 문장을 첫 문장으로 새로 쓰고 기존 동기 문장을 뒤에 두거나, 정의형 문단이 둘째 문단에 있으면 두 문단의 순서를 바꾼다(littlewood-paley marcinkiewicz-interpolation riesz-thorin). 순서 바꾸기가 분량을 늘리지 않아 낫다.",
+      "createdAt": "2026-10-15T17:03:35.861Z",
+      "seq": 2097
     },
     {
       "id": "17ce5c43",
