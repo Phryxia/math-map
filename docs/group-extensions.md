@@ -103,7 +103,7 @@ $A$ 가 비가환이면 $Q$ 가 $A$ 가 아니라 $\mathrm{Out}(A)$ 에 작용�
 
 ## Schur 곱셈자와 완전 중심확대
 
-$Q$ 가 완전군, 곧 $Q=[Q,Q]$ 이면 가장 큰 중심확대가 유일하게 존재한다. 그 핵 $H_2(Q,\mathbb Z)$ 가 **Schur 곱셈자**이고 대응하는 확대 $\tilde Q$ 가 **보편 중심확대**다.
+$Q$ 가 완전군, 곧 $Q=[Q,Q]$ 이면 가장 큰 중심확대가 유일하게 존재한다. 그 핵 $H_2(Q,\mathbb Z)$ 가 [Schur 곱셈자](schur-multipliers.md)이고 대응하는 확대 $\tilde Q$ 가 **보편 중심확대**다.
 
 $$
 1\to H_2(Q,\mathbb Z)\to\tilde Q\to Q\to1
@@ -131,7 +131,7 @@ $$
 
 $c$ 가 $H^2(Q,\mathrm U(1))$ 의 2-코사이클이다. 사영표현은 중심확대의 표현과 같고, $\mathrm{SO}(3)$ 의 사영표현이 [Lie 군](lie-groups.md) $\mathrm{SU}(2)$ 의 표현이 되며 반정수 스핀이 $H^2$ 의 비자명 원소에서 나온다.
 
-[Lie 대수](lie-algebras.md)의 Virasoro 대수는 원 위의 벡터장 대수의 중심확대이고 중심전하 $c$ 가 그 확대를 지정한다. Lie 대수 코호몰로지 $H^2(\mathfrak g,\mathbb C)$ 가 1 차원이라 확대가 한 매개변수 족을 이룬다.
+[Lie 대수](lie-algebras.md)의 [Virasoro 대수](virasoro-algebra.md)는 원 위의 벡터장 대수의 중심확대이고 중심전하 $c$ 가 그 확대를 지정한다. Lie 대수 코호몰로지 $H^2(\mathfrak g,\mathbb C)$ 가 1 차원이라 확대가 한 매개변수 족을 이룬다.
 
 ## Galois 이론의 매장 문제
 

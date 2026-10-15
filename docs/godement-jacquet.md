@@ -13,7 +13,7 @@ $$
 
 $\Phi$ 는 행렬공간 위의 Schwartz 함수이고 $\varphi$ 는 표현 $\pi$ 의 **행렬 계수**다. 이 적분이 $\mathrm{GL}\_n$ 의 모든 첨점 자기동형 표현에 대해 **표준 $L$ 함수** $L(s,\pi)$ 의 해석적 접속과 함수방정식을 준다.
 
-$\mathbb A^\times$ 가 벡터공간 $\mathbb A$ 의 열린 부분집합이므로 Tate 가 그 위의 적분을 다룰 수 있었다. 벡터공간에는 Schwartz 함수와 Fourier 변환과 Poisson 합공식이 있다. $\mathrm{GL}\_n$ 을 담는 벡터공간은 **행렬대수** $M_n$ 이다.
+$\mathbb A^\times$ 가 벡터공간 $\mathbb A$ 의 열린 부분집합이므로 Tate 가 그 위의 적분을 다룰 수 있었다. 벡터공간에는 Schwartz 함수와 [Fourier 변환](fourier-transform.md)과 Poisson 합공식이 있다. $\mathrm{GL}\_n$ 을 담는 벡터공간은 **행렬대수** $M_n$ 이다.
 
 $$
 \mathbb G_m\subset\mathbb A^1
@@ -126,7 +126,7 @@ $$
 L(s,\pi_f)=\prod_p\big(1-a_pp^{-s}+p^{k-1-2s}\big)^{-1}=\sum_{n\ge1}\frac{a_n}{n^s}
 $$
 
-이다. 오일러 곱과 Dirichlet 급수가 같다는 이 등식이 [Hecke 작용소](hecke-operators.md)의 곱셈성이고, 국소 인자가 $2\times2$ 행렬의 특성다항식이라는 진술이다.
+이다. 오일러 곱과 [Dirichlet 급수](dirichlet-series.md)가 같다는 이 등식이 [Hecke 작용소](hecke-operators.md)의 곱셈성이고, 국소 인자가 $2\times2$ 행렬의 특성다항식이라는 진술이다.
 
 # 활용
 

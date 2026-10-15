@@ -4,7 +4,7 @@
 
 Gärtner–Ellis 정리는 독립 가정 없이 [대편차 원리](large-deviations.md)를 주는 정리다. 확률벡터열 $Z_n$ 의 스케일된 로그 적률생성함수가 극한 $\Lambda$ 를 갖고 $\Lambda$ 가 미분가능하면, $Z_n/n$ 이 rate function $\Lambda^\ast$ 로 대편차 원리를 만족한다.
 
-Cramér 정리가 독립이고 같은 분포를 따르는 열에만 적용되는 것을 상관이 있는 열로 넓힌다. Markov 연쇄의 시간평균이 주된 적용 대상이다.
+Cramér 정리가 독립이고 같은 분포를 따르는 열에만 적용되는 것을 상관이 있는 열로 넓힌다. [Markov 연쇄](markov-chains.md)의 시간평균이 주된 적용 대상이다.
 
 # 직관
 
@@ -84,7 +84,7 @@ $$
 \Lambda(\lambda)=\log\rho(P_\lambda)
 $$
 
-이고 $\rho$ 는 Perron 고윳값이다.[^2] Perron–Frobenius 정리가 $\rho(P_\lambda)$ 를 단순 고윳값으로 주므로 $\rho$ 가 $\lambda$ 에 해석적으로 의존하고 $\Lambda$ 가 $\mathbb R$ 전체에서 매끄럽다. 정리의 가정이 모두 성립하므로 $S_n/n$ 이 $\Lambda^\ast$ 로 대편차 원리를 만족한다.
+이고 $\rho$ 는 Perron 고윳값이다.[^2] [Perron–Frobenius 정리](perron-frobenius.md)가 $\rho(P_\lambda)$ 를 단순 고윳값으로 주므로 $\rho$ 가 $\lambda$ 에 해석적으로 의존하고 $\Lambda$ 가 $\mathbb R$ 전체에서 매끄럽다. 정리의 가정이 모두 성립하므로 $S_n/n$ 이 $\Lambda^\ast$ 로 대편차 원리를 만족한다.
 
 # 활용
 
