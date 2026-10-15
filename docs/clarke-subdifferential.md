@@ -54,7 +54,7 @@ $$
 f^\circ(x;d)=\max_{p\in\partial_C f(x)}\langle p,\thinspace d\rangle
 $$
 
-증명의 요지. $d\mapsto f^\circ(x;d)$ 는 양으로 동차이고 볼록이므로 어떤 볼록 콤팩트 집합의 지지함수이고, 그 집합이 $\partial_C f(x)$ 와 같음을 평균값 정리로 확인한다. 이 표현을 정의로 삼으면 Clarke 준미분을 미분가능한 점을 거치지 않고 세울 수 있어, Banach 공간으로 옮길 때 쓰는 쪽은 이 표현이다.
+증명의 요지. $d\mapsto f^\circ(x;d)$ 는 양으로 동차이고 볼록이므로 어떤 볼록 콤팩트 집합의 지지함수이고, 그 집합이 $\partial_C f(x)$ 와 같음을 평균값 정리로 확인한다. 이 표현을 정의로 삼으면 Clarke 준미분을 미분가능한 점을 거치지 않고 세울 수 있어, [Banach 공간](banach-spaces.md)으로 옮길 때 쓰는 쪽은 이 표현이다.
 
 ## 볼록 함수와의 일치
 
@@ -85,7 +85,7 @@ $$
 - 비평활 최적화의 정지 조건. $0\in\partial_C f(x)$ 를 수치적으로 쓰려면 한 점의 일반화 기울기 하나만으로는 부족하므로, 묶음 방법은 지난 걸음에서 얻은 기울기들을 모아 준미분을 다면체로 근사한다.
 - 최대 함수의 최소화. 유한 개 매끄러운 함수의 최대는 최대를 주는 지표가 둘 이상인 점에서 꺾이고, 그 점의 준미분이 활성 지표의 기울기들의 볼록껍질이다. 민맥스 문제의 최적성 조건을 이 꼴로 쓴다.
 - 불연속 벡터장의 미분방정식. 오른쪽이 불연속인 $\dot x=F(x)$ 에서 해를 정의할 때 $F$ 를 근방의 값들의 볼록껍질로 바꾸는 Filippov 의 구성이 같은 꼴이다.
-- 역함수 정리. $f:\mathbb{R}^n\to\mathbb{R}^n$ 이 국소 Lipschitz 이고 $\partial_C f(x)$ 의 모든 행렬이 가역이면 $f$ 가 $x$ 근방에서 Lipschitz 역사상을 갖는다[^1].
+- [역함수 정리](inverse-function-theorem.md). $f:\mathbb{R}^n\to\mathbb{R}^n$ 이 국소 Lipschitz 이고 $\partial_C f(x)$ 의 모든 행렬이 가역이면 $f$ 가 $x$ 근방에서 Lipschitz 역사상을 갖는다[^1].
 - ReLU(rectified linear unit) 신경망의 자동미분. 활성함수 $\max(0,t)$ 가 $t=0$ 에서 꺾이고 망 전체가 국소 Lipschitz 이므로, 역전파가 그 점에서 돌려주는 값은 기울기가 아니라 준미분의 원소 하나다.
 
 [^1]: F. H. Clarke, *Optimization and Nonsmooth Analysis*, Wiley, 1983, 2.1 절과 2.3 절, 7.1 절.

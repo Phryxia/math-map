@@ -111,7 +111,7 @@ $\mathbb R$ 에서는 부호만 보면 되고 $\mathbb Q_p$ 에서는 Hensel 덕
 
 $x^2+y^2=3z^2$ 에 자명하지 않은 정수해가 없는 것은 $\mathbb Q_3$ 에서 막힌다는 것으로 설명된다. 법 3 에서 $x^2+y^2\equiv0$ 이려면 $x\equiv y\equiv0$ 이어야 하고 그러면 $3$ 으로 나눠 무한강하가 된다.
 
-차수를 올리면 성립하지 않는다. Selmer 의 예 $3x^3+4y^3+5z^3=0$ 은 모든 $\mathbb Q_v$ 에서 자명하지 않은 해를 갖지만 $\mathbb Q$ 에서는 갖지 않는다. 이 실패를 재는 것이 Brauer 군이고 [유체론](class-field-theory.md)이 그 계산의 기반이다.
+차수를 올리면 성립하지 않는다. Selmer 의 예 $3x^3+4y^3+5z^3=0$ 은 모든 $\mathbb Q_v$ 에서 자명하지 않은 해를 갖지만 $\mathbb Q$ 에서는 갖지 않는다. 이 실패를 재는 것이 [Brauer 군](brauer-groups.md)이고 [유체론](class-field-theory.md)이 그 계산의 기반이다.
 
 ## p 진 해석학
 
@@ -120,7 +120,7 @@ $\mathbb Q_p$ 위에서도 미적분을 하지만 규칙이 다르다.
 - [멱급수](power-series.md) $\sum a_nx^n$ 의 수렴반경은 $|a_n|\_p^{1/n}$ 의 극한으로 정해지고 경계에서의 판정이 $|a_nx^n|\_p\to0$ 이라 단순하다.
 - $\exp(x)=\sum x^n/n!$ 은 $n!$ 의 부치 때문에 $|x|\_p\lt p^{-1/(p-1)}$ 에서만 수렴하고, $\log(1+x)$ 는 $|x|\_p\lt 1$ 에서 수렴한다.
 - 도함수가 어디서나 0 인데 상수가 아닌 함수가 있다. 공간이 완전분리라 평균값 정리가 없다.
-- 국소해석적 함수, $p$ 진 [측도](measure.md), [p 진 L 함수](p-adic-l-function.md)의 이론이 발달해 있다. Kubota–Leopoldt 의 $p$ 진 zeta 함수가 Bernoulli 수의 합동 관계를 보간하며 Iwasawa 이론이 이 함수를 대상으로 삼는다.
+- 국소해석적 함수, $p$ 진 [측도](measure.md), [p 진 L 함수](p-adic-l-function.md)의 이론이 발달해 있다. Kubota–Leopoldt 의 $p$ 진 zeta 함수가 [Bernoulli 수](bernoulli-numbers.md)의 합동 관계를 보간하며 Iwasawa 이론이 이 함수를 대상으로 삼는다.
 
 # 활용
 

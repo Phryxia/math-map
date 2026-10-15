@@ -108,7 +108,7 @@ $\lambda=0$ 의 블록에는 무게가 둘 있다. $e\cdot0=0$ 과 $s\cdot0=-2$ 
 - $P(0)=M(0)$ 이고 Verma 여과 길이는 $1$ 이다.
 - $P(-2)$ 는 길이 $2$ 의 Verma 여과를 갖는다. $M(-2)$ 와 $M(0)$ 이 한 번씩 들어가고 조성인자로 $L(-2)$ 가 두 번, $L(0)$ 이 한 번 나온다.
 
-$\bigl(P(-2):M(0)\bigr)=1$ 이고 $\bigl[M(0):L(-2)\bigr]=1$ 로 상반성이 성립한다. $\mathrm{ch}\thinspace L(0)=\mathrm{ch}\thinspace M(0)-\mathrm{ch}\thinspace M(-2)$ 도 여기서 읽힌다. 유한차원 가군의 지표를 Verma 지표의 교대합으로 쓰는 이 식이 일반 $\mathfrak g$ 에서 Weyl 지표 공식이고, 일반 $\lambda$ 에서 교대합의 계수를 KL 다항식이 준다.
+$\bigl(P(-2):M(0)\bigr)=1$ 이고 $\bigl[M(0):L(-2)\bigr]=1$ 로 상반성이 성립한다. $\mathrm{ch}\thinspace L(0)=\mathrm{ch}\thinspace M(0)-\mathrm{ch}\thinspace M(-2)$ 도 여기서 읽힌다. 유한차원 가군의 지표를 Verma 지표의 교대합으로 쓰는 이 식이 일반 $\mathfrak g$ 에서 [Weyl 지표 공식](weyl-character-formula.md)이고, 일반 $\lambda$ 에서 교대합의 계수를 KL 다항식이 준다.
 
 ## 작은 랭크의 경우
 
@@ -132,7 +132,7 @@ $A_3$ 부터 $1$ 이 아닌 KL 다항식이 나타나고 중복도가 $2$ 이상
 
 - **[Beilinson–Bernstein 국소화](beilinson-bernstein.md).** $\mathcal O$ 의 블록이 깃발다양체 위 $D$ 가군의 범주와 동치이며, KL 추측의 증명이 이 동치를 타고 위상수학으로 건너간다.
 - **범주화.** $\mathcal O$ 의 사영가군과 번역 함자가 Hecke 대수의 작용을 실현하고, 이것이 Soergel 쌍가군 연구의 출발점이 되었다.
-- **아핀과 모듈러 판본.** 아핀 Lie 대수의 범주 $\mathcal O$ 는 [정점작용소대수](vertex-operator-algebras.md)와 등각장론에 닿고, 양의 표수에서는 Lusztig 추측과 그 반례 이후의 $p$ KL 다항식으로 이어진다.
+- **아핀과 모듈러 판본.** [아핀 Lie 대수](affine-lie-algebras.md)의 범주 $\mathcal O$ 는 [정점작용소대수](vertex-operator-algebras.md)와 등각장론에 닿고, 양의 표수에서는 Lusztig 추측과 그 반례 이후의 $p$ KL 다항식으로 이어진다.
 
 # 활용
 

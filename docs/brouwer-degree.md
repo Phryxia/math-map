@@ -64,12 +64,12 @@ $n\ge 1$ 에서 $g,h:S^n\to S^n$ 이 호모토픽인 것과 $\deg g=\deg h$ 인 
 
 ## 벡터장의 지표
 
-$v$ 가 $\mathbb R^n$ 의 열린집합에서 정의된 벡터장이고 $x\_0$ 이 고립된 영점이면, $x\_0$ 을 둘러싼 작은 구면에서 $v/\Vert v\Vert$ 가 주는 사상의 차수를 $x\_0$ 에서 $v$ 의 지표라 한다. Poincaré–Hopf 정리는 콤팩트 다양체 위의 벡터장에서 이 지표의 합이 Euler 지표와 같다고 말한다.
+$v$ 가 $\mathbb R^n$ 의 열린집합에서 정의된 벡터장이고 $x\_0$ 이 고립된 영점이면, $x\_0$ 을 둘러싼 작은 구면에서 $v/\Vert v\Vert$ 가 주는 사상의 차수를 $x\_0$ 에서 $v$ 의 지표라 한다. 콤팩트 다양체 위의 벡터장에서 이 지표의 합이 [Euler 지표](euler-characteristic.md)와 같다는 것이 Poincaré–Hopf 정리다.
 
 # 활용
 
 - [Brouwer 고정점 정리](brouwer-fixed-point.md): $f:D^n\to D^n$ 에 고정점이 없으면 $x-f(x)$ 가 $0$ 을 피하므로 차수가 정의되고, 호모토피 불변성으로 그 값이 $1$ 이면서 해의 존재 조건과 어긋난다.
-- [Leray–Schauder 차수](leray-schauder-degree.md): Banach 공간의 콤팩트 섭동 $I-T$ 에서 유한차원 근사의 Brouwer 차수를 극한으로 옮긴 정의다.
+- [Leray–Schauder 차수](leray-schauder-degree.md): [Banach 공간](banach-spaces.md)의 콤팩트 섭동 $I-T$ 에서 유한차원 근사의 Brouwer 차수를 극한으로 옮긴 정의다.
 - [Poincaré–Hopf 정리](poincare-hopf.md): 고립 영점의 지표를 작은 구면 위의 차수로 정의하는 자리에서 쓴다.
 - 털난 공 정리: $S^n$ 의 대척사상의 차수가 $(-1)^{n+1}$ 이고, 영점 없는 접벡터장이 있으면 항등사상과 대척사상이 호모토픽이 되어 $n$ 이 짝수일 때 모순이다.
 - 분기 이론: 매개변수 $\lambda$ 에 따라 $f(x,\lambda)=0$ 의 해를 셀 때, 차수가 $\lambda$ 를 지나며 바뀌는 자리에서 해의 개수가 바뀐다.
