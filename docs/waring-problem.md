@@ -84,6 +84,7 @@ $$
 ## 선수지식
 
 - [원법](circle-method.md)
+- [Lagrange 네 제곱수 정리](four-squares-theorem.md)
 
 ## 더 알아보기
 

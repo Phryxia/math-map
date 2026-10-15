@@ -87,6 +87,7 @@ $\mathbb Q$ 위의 비퇴화 이차형식 $q$ 에 대해, $q$ 가 $\mathbb Q$ �
 ## 더 알아보기
 
 - [이진 이차형식](binary-quadratic-forms.md)
+- [Lagrange 네 제곱수 정리](four-squares-theorem.md)
 - [Clifford 대수](clifford-algebras.md)
 - [Witt 환](witt-ring.md)
 - [교차형식](intersection-form.md)
