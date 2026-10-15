@@ -16,7 +16,7 @@ $p$ 진 $L$ 함수의 예외적 영점에 나타나는 $\mathcal L$ 불변량 $\
 
 # 직관
 
-복소 타원곡선은 격자 몫 $\mathbb C/\Lambda$ 이고 $\Lambda=\mathbb Z+\mathbb Z\tau$ 인데, 같은 것을 [$p$ 진수](p-adic-numbers.md) 위에서 하려고 $K$ 안에 $\mathbb Z+\mathbb Z\tau$ 를 놓는다. $K$ 의 절댓값은 비아르키메데스이므로 정수 $p^k$ 에서 $\vert p^k\vert=p^{-k}\to0$ 이다. 부분군 $\mathbb Z$ 자체가 $0$ 에 쌓이므로 이산이 아니고 몫을 곡선으로 볼 수 없어, 격자 모형은 여기서 막힌다. 복소수에서는 $z\mapsto e^{2\pi iz}$ 가 $\mathbb C/\mathbb Z\cong\mathbb C^{\times}$ 를 주고 남은 생성원 $\tau$ 는 $q=e^{2\pi i\tau}$ 를 곱하는 사상이 되므로, 같은 곡선을 다음과 같이 쓴다.
+복소 타원곡선은 격자 몫 $\mathbb C/\Lambda$ 이고 $\Lambda=\mathbb Z+\mathbb Z\tau$ 인데, 같은 것을 [p 진수](p-adic-numbers.md) 위에서 하려고 $K$ 안에 $\mathbb Z+\mathbb Z\tau$ 를 놓는다. $K$ 의 절댓값은 비아르키메데스이므로 정수 $p^k$ 에서 $\vert p^k\vert=p^{-k}\to0$ 이다. 부분군 $\mathbb Z$ 자체가 $0$ 에 쌓이므로 이산이 아니고 몫을 곡선으로 볼 수 없어, 격자 모형은 여기서 막힌다. 복소수에서는 $z\mapsto e^{2\pi iz}$ 가 $\mathbb C/\mathbb Z\cong\mathbb C^{\times}$ 를 주고 남은 생성원 $\tau$ 는 $q=e^{2\pi i\tau}$ 를 곱하는 사상이 되므로, 같은 곡선을 다음과 같이 쓴다.
 
 $$
 \mathbb C/\Lambda\cong\mathbb C^{\times}/q^{\mathbb Z}
@@ -118,7 +118,7 @@ $X_0(N)$ 의 첨점 근방에서 보편 타원곡선을 쓰려면 퇴화하는 �
 ## 선수지식
 
 - [타원곡선](elliptic-curves.md)
-- [$p$ 진수](p-adic-numbers.md)
+- [p 진수](p-adic-numbers.md)
 
 ## 더 알아보기
 

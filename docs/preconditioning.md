@@ -76,7 +76,7 @@ $A = D - E - F$ 를 대각, 아래삼각, 위삼각으로의 분할이라 할 �
 
 ## 불완전 분해
 
-비영 자리의 집합을 정하고 Gauss 소거를 하되 그 밖에 생기는 값을 버린 것이 [불완전 $LU$ 분해](incomplete-lu.md)다. 대칭 양정부호에서 같은 절차를 Cholesky 분해에 적용한 것이 불완전 Cholesky 분해다.
+비영 자리의 집합을 정하고 Gauss 소거를 하되 그 밖에 생기는 값을 버린 것이 [불완전 LU 분해](incomplete-lu.md)다. 대칭 양정부호에서 같은 절차를 Cholesky 분해에 적용한 것이 불완전 Cholesky 분해다.
 
 버린 값 때문에 $LU$ 가 $A$ 와 같지 않지만 저장량이 $A$ 와 같은 차수로 고정되고 $M^{-1}v$ 가 삼각계 두 번 풀이로 계산된다. 무늬를 넓히면 $M$ 이 $A$ 에 가까워지는 대신 저장량이 늘어난다.
 
@@ -105,7 +105,7 @@ $A = D - E - F$ 를 대각, 아래삼각, 위삼각으로의 분할이라 할 �
 
 ## 더 알아보기
 
-- [불완전 $LU$ 분해](incomplete-lu.md)
+- [불완전 LU 분해](incomplete-lu.md)
 - [다중격자](multigrid.md)
 
 #linear_algebra #algorithms #computation

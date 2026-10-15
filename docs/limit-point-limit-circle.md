@@ -85,7 +85,7 @@ von Neumann 정리가 결손지수에서 자기수반 확장의 개수를 정한
 - **Bessel 작용소.** $-u''+(\nu^2-\tfrac14)x^{-2}u$ 에서 원점은 $\nu\ge 1$ 이면 극한점이고 $0\le\nu\lt 1$ 이면 극한원이다. 직관 절의 지수 계산이 이 판정이다.
 - **Legendre 작용소.** $-\bigl((1-x^2)u'\bigr)'$ 에서 $p=1-x^2$ 가 양 끝에서 $0$ 이다. $\lambda=0$ 의 해 $1$ 과 $\log\frac{1+x}{1-x}$ 가 모두 $L^2(-1,1)$ 에 들어 양 끝이 극한원이고, 결손지수가 $2$ 다. 경계조건을 정하지 않으면 자기수반 작용소가 하나로 정해지지 않는다.
 - **Schrödinger 작용소의 자기수반성.** 1 차원 작용소 $-u''+qu$ 에서 $q$ 가 아래로 유계이면 무한원점이 극한점이므로 경계조건 없이 자기수반 확장이 유일하다. 원점에 $x^{-2}$ 꼴 특이 퍼텐셜이 있으면 원점의 분류가 경계조건의 필요 여부를 정한다.
-- **[Weyl–Titchmarsh $m$ 함수](weyl-titchmarsh-m-function.md).** 극한점인 끝점에서는 제곱적분가능한 해가 상수배까지 하나이므로 그 해의 초기값 비가 $\lambda$ 의 해석함수로 정해진다. 이 함수의 실축 위 경계값이 [스펙트럼](spectral-theorem.md) 측도를 준다.
+- **[Weyl–Titchmarsh m 함수](weyl-titchmarsh-m-function.md).** 극한점인 끝점에서는 제곱적분가능한 해가 상수배까지 하나이므로 그 해의 초기값 비가 $\lambda$ 의 해석함수로 정해진다. 이 함수의 실축 위 경계값이 [스펙트럼](spectral-theorem.md) 측도를 준다.
 
 [^1]: H. Weyl, *Über gewöhnliche Differentialgleichungen mit Singularitäten und die zugehörigen Entwicklungen willkürlicher Funktionen*, Math. Ann. **68** (1910), 220–269.
 

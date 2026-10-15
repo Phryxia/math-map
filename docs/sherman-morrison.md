@@ -8,7 +8,7 @@
 
 # 직관
 
-$n\times n$ 행렬 $A$ 의 [$LU$ 분해](matrix-factorizations.md)를 이미 구해 두었고, 그것으로 $Ay=b$ 를 풀어 $y$ 를 손에 쥐고 있다. 이제 $A$ 의 $(1,1)$ 성분만 $\alpha$ 만큼 키운 행렬 $A+\alpha e_1e_1^{\mathsf T}$ 로 같은 우변을 풀어야 하는데, 분해를 처음부터 다시 하면 곱셈이 $n^3/3$ 번이다. 바뀐 것은 성분 하나이니 새 해 $x$ 를 $y$ 에서 얼마나 움직였는지로 적는다.
+$n\times n$ 행렬 $A$ 의 [LU 분해](matrix-factorizations.md)를 이미 구해 두었고, 그것으로 $Ay=b$ 를 풀어 $y$ 를 손에 쥐고 있다. 이제 $A$ 의 $(1,1)$ 성분만 $\alpha$ 만큼 키운 행렬 $A+\alpha e_1e_1^{\mathsf T}$ 로 같은 우변을 풀어야 하는데, 분해를 처음부터 다시 하면 곱셈이 $n^3/3$ 번이다. 바뀐 것은 성분 하나이니 새 해 $x$ 를 $y$ 에서 얼마나 움직였는지로 적는다.
 
 $$
 Ax=b-\alpha(e_1^{\mathsf T}x)\thinspace e_1

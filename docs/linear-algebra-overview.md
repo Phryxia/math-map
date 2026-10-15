@@ -50,7 +50,7 @@ graph TD
 - [삼중대각계](tridiagonal-systems.md): 세 대각에만 성분이 놓인 계, 미지수 개수에 비례하는 Thomas 알고리즘과 대각 우세에서의 안정성
 - [Krylov 부분공간 방법](krylov-subspace-methods.md): 행렬-벡터 곱만 쓰는 반복법, 공액기울기법과 Lanczos 반복
 - [전처리](preconditioning.md): 스펙트럼을 모아 반복 횟수를 줄이는 행렬의 선택
-- [불완전 $LU$ 분해](incomplete-lu.md): 채움을 버려 저장량을 고정한 근사 분해, M-행렬에서의 존재와 무늬 선택
+- [불완전 LU 분해](incomplete-lu.md): 채움을 버려 저장량을 고정한 근사 분해, M-행렬에서의 존재와 무늬 선택
 - [Schur 보수](schur-complement.md): 블록 소거가 남기는 작은 계, 행렬식과 양의 정부호성의 분리
 - [Sherman–Morrison 공식](sherman-morrison.md): 랭크 $1$ 갱신의 역행렬을 벡터 둘로 적는 식, 행렬식 보조정리와 Woodbury 항등식
 - [유한요소법](finite-element-method.md): 약한 꼴 방정식을 조각마다 다항식인 부분공간에서 푸는 방법, Céa 보조정리와 강성행렬의 희소성

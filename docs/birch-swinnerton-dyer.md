@@ -14,7 +14,7 @@ $$
 \prod_{p\le X}\frac{N_p}{p}\ \sim\ C\thinspace(\log X)^{r}
 $$
 
-를 관측했다. 좌변은 [유한체](finite-fields.md) 위의 점 세기이고 우변의 $r$ 은 $E(\mathbb Q)$ 의 계수다. 이 곱을 정돈한 것이 [Dirichlet $L$ 함수](dirichlet-l-functions.md)와 같은 꼴의 $L(E,s)$ 이고, $\log X$ 의 거듭제곱이 $s=1$ 에서의 소멸 차수로 번역된다.
+를 관측했다. 좌변은 [유한체](finite-fields.md) 위의 점 세기이고 우변의 $r$ 은 $E(\mathbb Q)$ 의 계수다. 이 곱을 정돈한 것이 [Dirichlet L 함수](dirichlet-l-functions.md)와 같은 꼴의 $L(E,s)$ 이고, $\log X$ 의 거듭제곱이 $s=1$ 에서의 소멸 차수로 번역된다.
 
 위 등식이 약한 BSD 이며 밀레니엄 문제의 하나다. 강한 형태는 선행계수까지 명시해 $\char35{}\text{Ш}$ 를 포함한 공식으로 쓴다.
 
@@ -101,7 +101,7 @@ Heegner 점은 하나뿐이다. $L'(E,1)$ 하나에 점 하나가 대응하므�
 
 ## p 진 판본과 Bloch–Kato 추측
 
-- **$p$ 진 BSD.** $L$ 함수 대신 [$p$ 진 $L$ 함수](p-adic-l-function.md)를 쓰고 Selmer 군의 특성 아이디얼과 비교한다. Iwasawa 주추측이 그 기본 도구이고 고전 BSD 보다 증명된 부분이 많다.
+- **$p$ 진 BSD.** $L$ 함수 대신 [p 진 L 함수](p-adic-l-function.md)를 쓰고 Selmer 군의 특성 아이디얼과 비교한다. Iwasawa 주추측이 그 기본 도구이고 고전 BSD 보다 증명된 부분이 많다.
 - **Bloch–Kato 추측.** 임의의 모티브 $M$ 에 대해 $L(M,s)$ 의 소멸 차수와 선행계수를 Selmer 군과 행렬식으로 예측한다. BSD 는 $M=h^1(E)(1)$ 인 경우다.
 - **수체 위의 BSD.** $\text{Ш}$ 와 조절자의 정의가 그대로 확장된다.
 

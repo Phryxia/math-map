@@ -64,7 +64,7 @@ $\mathrm{Gr}\_n$ 의 Schubert 세포 분할로 코호몰로지를 계산하고, 
 
 - 특성류를 정의하는 자리다. Chern 류를 곡률로 정의하면 접속에 의존하지 않음을 따로 보여야 하지만, $H^\ast(BU(n))$ 의 생성원으로 정의하면 당김의 함자성에서 바로 나온다.
 - $K$ 이론의 분류공간이 $\mathbb Z \times BU$ 다. 콤팩트 $X$ 에서 $K^0(X) = \lbrack X, \mathbb Z \times BU\rbrack$ 이고, [Fredholm 작용소](fredholm-operators.md) 공간이 같은 호모토피형을 갖는다.
-- 대수적 $K$ 이론에서 환 $R$ 의 $K$ 군을 $\mathrm{GL}(R)$ 의 분류공간에 세포를 붙여 정의한다. [대수적 $K$ 이론](algebraic-k-theory.md)의 plus 구성이 그 절차다.
+- 대수적 $K$ 이론에서 환 $R$ 의 $K$ 군을 $\mathrm{GL}(R)$ 의 분류공간에 세포를 붙여 정의한다. [대수적 K 이론](algebraic-k-theory.md)의 plus 구성이 그 절차다.
 - 게이지 이론에서 주다발의 모듈라이를 다룰 때 다발의 동형류가 $\lbrack X, BG\rbrack$ 로 이산화되고, 그 안에서 접속의 공간을 게이지군으로 나눈다.
 
 [^1]: J. Milnor, "Construction of universal bundles II", *Annals of Mathematics* 63 (1956), 430–436.

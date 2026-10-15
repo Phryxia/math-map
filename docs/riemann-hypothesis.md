@@ -38,7 +38,7 @@ Riemann 가설은 $N_0(T)=N(T)$ 와 같은 말이다.
 
 ## 일반화된 Riemann 가설
 
-**GRH**(generalized Riemann hypothesis)는 같은 진술을 [Dirichlet $L$ 함수](dirichlet-l-functions.md)로 넓힌 것이다. 모든 Dirichlet 지표 $\chi$ 에 대해 $L(s,\chi)$ 의 비자명한 영점이 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 주장이며, 주지표의 경우가 원래 Riemann 가설이다. 수체의 Dedekind zeta 함수로 넓힌 판본을 확장된 Riemann 가설이라 부른다.
+**GRH**(generalized Riemann hypothesis)는 같은 진술을 [Dirichlet L 함수](dirichlet-l-functions.md)로 넓힌 것이다. 모든 Dirichlet 지표 $\chi$ 에 대해 $L(s,\chi)$ 의 비자명한 영점이 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 주장이며, 주지표의 경우가 원래 Riemann 가설이다. 수체의 Dedekind zeta 함수로 넓힌 판본을 확장된 Riemann 가설이라 부른다.
 
 # 성질
 

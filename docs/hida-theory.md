@@ -102,7 +102,7 @@ $p$ 에서의 분해군 $D_p$ 로 제한하면 $\rho_{\mathbb I}$ 가 상삼각�
 
 # 활용
 
-- [$p$ 진 $L$ 함수](p-adic-l-function.md)의 예외적 영점. Greenberg 와 Stevens 는 Mazur–Tate–Teitelbaum 추측을 Hida 족 위에서 무게를 변수로 미분해 증명했다[^2]. [Tate 곡선](tate-curve.md)의 $\mathcal L$ 불변량이 그 미분에서 나온다.
+- [p 진 L 함수](p-adic-l-function.md)의 예외적 영점. Greenberg 와 Stevens 는 Mazur–Tate–Teitelbaum 추측을 Hida 족 위에서 무게를 변수로 미분해 증명했다[^2]. [Tate 곡선](tate-curve.md)의 $\mathcal L$ 불변량이 그 미분에서 나온다.
 - [Galois 표현의 변형환](deformation-rings.md). $\mathbf h$ 가 변형환의 몫으로 나타나고, 변형환의 $p$ 진 해석공간 안에서 Hida 족은 기울기 $0$ 자리에 놓인 성분이다.
 - [Fontaine–Mazur 추측](fontaine-mazur.md). 족의 점 가운데 de Rham 인 것이 정수 무게의 고전점뿐이라는 현상이 Hida 족에서 관찰된다.
 - [Iwasawa 주추측](iwasawa-main-conjecture.md). 족을 따라 움직이는 Euler 계를 구성해 주추측의 대수적 변과 해석적 변을 비교한다.

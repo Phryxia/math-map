@@ -80,7 +80,7 @@ $F$ 의 같은 범위에서 이웃 영점의 정규화한 간격의 하극한이
 
 - **모멘트 추측.** Keating 과 Snaith 는 **CUE**(circular unitary ensemble)의 특성다항식 $\vert\Lambda(\theta)\vert^{2k}$ 의 평균을 [Haar 측도](haar-measure.md)로 계산해 $\frac{1}{T}\int_0^T\vert\zeta(\tfrac12+it)\vert^{2k}dt$ 의 $(\ln T)^{k^2}$ 계수를 예측했다.[^3] $k=1,2$ 에서 이 예측은 고전적으로 증명된 값과 맞는다.
 - **유한체 위 곡선족.** Katz 와 Sarnak 는 유한체 위 곡선족의 Frobenius 고윳값 통계가 그 족의 monodromy 군으로 정해짐을 증명했다.[^4] 곡선에 대한 Riemann 가설이 증명되어 있어 이 족에서는 영점 통계가 정리이고, 같은 대칭형 분류를 수체의 $L$ 함수족으로 옮긴 것이 저수준 통계 추측이다.
-- **임계점에서의 비소멸.** [Dirichlet $L$ 함수](dirichlet-l-functions.md)의 족에서 $L(\tfrac12,\chi)\ne 0$ 인 지표의 비율 하한은 저수준 영점 밀도를 계산해 얻는다. 쌍 상관과 같은 가중 합을 족 전체에 대해 평균하는 방식이다.
+- **임계점에서의 비소멸.** [Dirichlet L 함수](dirichlet-l-functions.md)의 족에서 $L(\tfrac12,\chi)\ne 0$ 인 지표의 비율 하한은 저수준 영점 밀도를 계산해 얻는다. 쌍 상관과 같은 가중 합을 족 전체에 대해 평균하는 방식이다.
 - **고윳값 통계의 출처.** 임계선 위 영점을 에르미트 행렬의 고윳값으로 보는 이 대응이 [Wigner 반원법칙](wigner-semicircle.md)을 비롯한 무작위 행렬 결과를 $L$ 함수 예측에 쓰는 근거다.
 
 [^1]: H. L. Montgomery, "The pair correlation of zeros of the zeta function", Analytic Number Theory, Proc. Sympos. Pure Math. 24, AMS, 1973, 181-193.

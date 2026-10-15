@@ -116,7 +116,7 @@ $$
 # 활용
 
 - **타원곡선족의 랭크.** 타원곡선의 $L$ 함수족은 함수방정식의 부호에 따라 $\mathrm{O}^{+}$ 와 $\mathrm{O}^{-}$ 로 갈린다. $\mathrm{O}^{-}$ 커널의 델타 항이 임계점의 강제 영점이고, [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)의 랭크 등식을 통해 Mordell–Weil 랭크의 하한으로 읽는다.
-- **Dirichlet L 함수의 비소멸.** [Dirichlet $L$ 함수](dirichlet-l-functions.md)족에서 $L(\tfrac12,\chi)\ne0$ 인 지표의 비율 하한을 위 논법으로 얻는다.
+- **Dirichlet L 함수의 비소멸.** [Dirichlet L 함수](dirichlet-l-functions.md)족에서 $L(\tfrac12,\chi)\ne0$ 인 지표의 비율 하한을 위 논법으로 얻는다.
 - **족의 대칭형 판정.** 수체의 $L$ 함수족에서 대칭형은 추측이지만, 같은 족을 유한체 위 곡선족으로 바꾸면 모노드로미 계산으로 정해진다. 곡선족 쪽의 군이 수체 쪽 족의 대칭형 예측을 준다.
 
 [^1]: A. E. Özlük, C. Snyder, *Small zeros of quadratic $L$-functions*, Bull. Austral. Math. Soc. **47** (1993), 307–319.

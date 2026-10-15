@@ -4,7 +4,7 @@
 
 $p$ 진 $L$ 함수는 복소 $L$ 함수의 특수값을 $p$ 진 해석 함수 하나로 모은 것이다. 값들은 유리수이고, 유리수는 복소수로도 $p$ 진수로도 읽힌다. $p$ 진 거리로 읽으면 서로 다른 지표에서 나온 값들이 가까워지고, 그 가까움이 한 함수의 연속성이 된다.
 
-원형은 [Kubota–Leopoldt 의 $p$ 진 zeta 함수](kubota-leopoldt-zeta.md)다. Riemann zeta 의 음의 정수 값 $\zeta(1-n)=-B_n/n$ 을 [Bernoulli 수](bernoulli-numbers.md)의 Kummer 합동으로 이어 $\mathbb Z_p$ 위의 함수로 연장한다.
+원형은 [Kubota–Leopoldt 의 p 진 zeta 함수](kubota-leopoldt-zeta.md)다. Riemann zeta 의 음의 정수 값 $\zeta(1-n)=-B_n/n$ 을 [Bernoulli 수](bernoulli-numbers.md)의 Kummer 합동으로 이어 $\mathbb Z_p$ 위의 함수로 연장한다.
 
 [타원곡선](elliptic-curves.md) $E/\mathbb Q$ 의 경우를 Mazur 와 Swinnerton-Dyer 가 세웠다[^1]. 재료는 [모듈러 기호](modular-symbols.md)이고, 얻는 것은 $\mathbb Z_p$ 위의 해석 함수 $L_p(E,s)$ 다. 이 함수가 Birch–Swinnerton-Dyer(BSD) 추측의 $p$ 진 판본과 [Iwasawa 주추측](iwasawa-main-conjecture.md)의 해석적 변에 놓인다.
 
@@ -117,7 +117,7 @@ Weierstrass 예비정리가 $\mathcal L_E=p^{\mu}\cdot u\cdot P(T)$ 로 갈라 �
 
 # 활용
 
-- **$p$ 진 BSD.** [$p$ 진 높이](p-adic-height.md)로 만든 조절자와 $L_p$ 의 선행계수를 견주는 등식이 $p$ 진 BSD 추측이다. 양변이 모두 $\mathbb Q_p$ 의 원소라 등식이 성립할 자리가 있다. split multiplicative 자리에서는 위의 $\mathcal L(E)$ 가 추가 인자로 들어간다[^2].
+- **$p$ 진 BSD.** [p 진 높이](p-adic-height.md)로 만든 조절자와 $L_p$ 의 선행계수를 견주는 등식이 $p$ 진 BSD 추측이다. 양변이 모두 $\mathbb Q_p$ 의 원소라 등식이 성립할 자리가 있다. split multiplicative 자리에서는 위의 $\mathcal L(E)$ 가 추가 인자로 들어간다[^2].
 - **Iwasawa 주추측.** Iwasawa 주추측은 $\mathcal L_E$ 가 생성하는 아이디얼이 원분탑 위 [Selmer 군](selmer-tate-shafarevich.md)의 특성 아이디얼과 같다는 진술이다. Kato 의 [Euler 계](euler-systems.md)가 한쪽 포함을, Skinner 와 Urban 의 Eisenstein 합동이 반대쪽을 준다[^5].
 - **순위 0 의 판정.** Kato 의 포함 하나만으로도 $L(E,1)\neq0$ 에서 $E(\mathbb Q)$ 의 유한성이 따라 나온다. 보간 공식이 $L(E,1)\neq0$ 을 $L_p(E,1)\neq0$ 으로 옮기고, 그것이 $\Lambda$ 가군의 여차원 조건이 된다[^5].
 - **수치 계산.** [과수렴 모듈러 기호](overconvergent-modular-symbols.md)가 $\mathcal L_E$ 의 계수를 유한 번의 선형대수로 준다. 보간으로 정의된 함수를 층마다 따라가지 않고 $\mu,\lambda$ 를 직접 표로 만든다.

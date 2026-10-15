@@ -2,7 +2,7 @@
 
 # 개요
 
-강체해석공간은 [$p$ 진수](p-adic-numbers.md)와 같은 비아르키메데스 체 위에서 해석기하를 하기 위한 공간이다. 복소해석의 정의를 그대로 옮기면 함수가 너무 많아져 해석접속이 사라지므로, Tate 는 어떤 덮개를 허용할지 제한하는 쪽으로 구성을 바꿨다.
+강체해석공간은 [p 진수](p-adic-numbers.md)와 같은 비아르키메데스 체 위에서 해석기하를 하기 위한 공간이다. 복소해석의 정의를 그대로 옮기면 함수가 너무 많아져 해석접속이 사라지므로, Tate 는 어떤 덮개를 허용할지 제한하는 쪽으로 구성을 바꿨다.
 
 함수의 대수를 먼저 정하고 그 극대 스펙트럼을 점의 집합으로 삼는다. 덮개는 유한 개로 가늘게 할 수 있는 것만 허용하고, 그 제한을 [층](sheaves.md)의 조건으로 쓸 수 있게 Grothendieck 위상으로 적는다.
 
@@ -91,7 +91,7 @@ $K$ 위의 고유 스킴에는 강체해석공간이 하나 대응하고, 연접
 - [Tate 곡선](tate-curve.md). $q\in K^\times$ 가 $\vert q\vert\lt1$ 이면 몫 $K^\times/q^{\mathbb Z}$ 가 강체해석공간이고 [타원곡선](elliptic-curves.md)의 해석화와 동형이다. 복소해석의 격자 몫에 대응하는 구성이다.
 - [고유다양체](eigenvariety.md). 무게 공간과 스펙트럼 곡선이 강체해석공간이고, 과수렴 형식의 족이 그 위의 층으로 놓인다.
 - [Coleman 적분](coleman-integration.md). 잔차 원판마다 항별 적분을 정의하고 Frobenius 작용으로 이어 붙일 때 원판과 그 붙임이 강체해석적이다.
-- [$p$ 진 Hodge 이론](p-adic-hodge-theory.md). 주기환과 비교 동형을 세우는 자리의 공간이 강체해석공간이고, perfectoid 공간이 그 확장이다.
+- [p 진 Hodge 이론](p-adic-hodge-theory.md). 주기환과 비교 동형을 세우는 자리의 공간이 강체해석공간이고, perfectoid 공간이 그 확장이다.
 
 [^1]: J. Tate, "Rigid analytic spaces", Invent. Math. 12 (1971), 257–289. 교과서는 S. Bosch, U. Güntzer, R. Remmert, *Non-Archimedean Analysis*, Springer (1984).
 

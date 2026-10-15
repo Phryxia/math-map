@@ -61,7 +61,7 @@ $X=\varprojlim A_n$ 에 구조 정리를 적용해 $\mu=\sum_i m_i$ , $\lambda=\
 # 활용
 
 - **Iwasawa 주추측.** [Iwasawa 주추측](iwasawa-main-conjecture.md)은 순환체의 류군 쪽 모듈의 특성 아이디얼이 $p$ 진 $L$ 함수의 멱급수가 생성하는 아이디얼과 같다는 진술이다. 양변이 모두 $\Lambda$ 의 아이디얼이라는 데서 진술이 성립한다.
-- **p 진 L 함수의 멱급수 표현.** [Kubota–Leopoldt $p$ 진 zeta 함수](kubota-leopoldt-zeta.md)를 $f_\chi((1+q)^{1-s}-1)$ 로 쓸 때의 $f_\chi$ 가 $\Lambda$ 의 원소다. Weierstrass 준비 정리가 그 영점과 $p$ 지수를 분리한다.
+- **p 진 L 함수의 멱급수 표현.** [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md)를 $f_\chi((1+q)^{1-s}-1)$ 로 쓸 때의 $f_\chi$ 가 $\Lambda$ 의 원소다. Weierstrass 준비 정리가 그 영점과 $p$ 지수를 분리한다.
 - **mu 불변량의 소멸.** Ferrero–Washington 정리는 아벨 체의 원분 $\mathbb Z_p$ 확대에서 $\mu=0$ 이라는 진술이고[^4], 류수 공식의 $\mu p^n$ 항이 사라져 $e_n$ 이 $n$ 에 일차로 자란다.
 - **Selmer 군의 Iwasawa 이론.** 타원곡선의 Selmer 군을 탑에서 모은 모듈도 유한생성 $\Lambda$ 모듈이고, 그 특성 아이디얼을 [p 진 L 함수](p-adic-l-function.md)와 견주는 것이 같은 틀의 되풀이다.
 
