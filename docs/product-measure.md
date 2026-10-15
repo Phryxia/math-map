@@ -78,7 +78,7 @@ $N\subseteq\mathbb R$ 이 Lebesgue 비가측이면 $N\times\lbrace 0\rbrace$ 이
 
 따라서 $\mathbb R^n$ 의 Lebesgue 측도는 1차원 Lebesgue 측도의 곱측도가 아니라 그 완비화다. 완비 곱측도에 대해 가측인 함수의 단면은 영집합 밖의 $x$ 에서만 가측이고, Fubini 정리의 진술에 "거의 모든 $x$" 가 붙는 것이 이 때문이다.[^1]
 
-## Borel $\sigma$ 대수의 곱
+## Borel σ 대수의 곱
 
 두 번째 가산 위상공간에서는 Borel 쪽에 같은 문제가 없다.
 

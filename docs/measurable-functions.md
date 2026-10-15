@@ -96,7 +96,7 @@ $\sigma(X) = \lbrace X^{-1}(B) : B \text{ Borel}\rbrace$ 은 $X$ 를 가측으�
 
 Lebesgue 적분은 단순함수 근사로 정의하므로 피적분함수가 가측이어야 한다. 가측성은 보통 생성 판정법과 극한 닫힘성으로 확인한다.
 
-## 정보로서의 $\sigma$ -대수
+## 정보로서의 σ 대수
 
 $\sigma$ -대수가 클수록 답할 수 있는 사건이 많다. [조건부 기댓값](conditional-expectation.md)은 큰 $\sigma$ -대수에서 가측인 함수를 작은 $\sigma$ -대수에서 가측인 함수로 가장 가깝게 근사한 것이다. [Martingale](martingales.md)은 시간에 따라 커지는 $\sigma$ -대수의 열로 정의한다.[^1]
 
