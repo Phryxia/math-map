@@ -16,7 +16,7 @@ $$
 
 # 직관
 
-고전적 서술에서 $\zeta(s)$ 의 Euler 곱은 소수에서 오고 완비화에 붙는 $\pi^{-s/2}\Gamma(s/2)$ 는 해석에서 온다. 아델로 올라가면 둘이 같은 식의 값이다. 각 자리 $v$ 에서 국소 zeta 적분을 같은 모양으로 정의하고 자리마다 시험함수를 하나씩 고른다. 유한 자리에서는 정수환의 정의함수 $\mathbf 1_{\mathbb Z_p}$ 이고 무한 자리에서는 Gauss 함수 $e^{-\pi x^2}$ 로, 둘 다 그 자리의 덧셈 Fourier 변환에 대해 자기쌍대인 함수다.
+고전적 서술에서 $\zeta(s)$ 의 Euler 곱은 소수에서 오고 완비화에 붙는 $\pi^{-s/2}\Gamma(s/2)$ 는 해석에서 온다. 아델로 올라가면 둘이 같은 식의 값이다. 각 자리 $v$ 에서 국소 zeta 적분을 같은 모양으로 정의하고 자리마다 시험함수를 하나씩 고른다. 유한 자리에서는 정수환의 정의함수 $\mathbf 1_{\mathbb Z_p}$ 이고 무한 자리에서는 Gauss 함수 $e^{-\pi x^2}$ 로, 둘 다 그 자리의 덧셈 [Fourier 변환](fourier-transform.md)에 대해 자기쌍대인 함수다.
 
 $$
 Z_v(f_v,s)=\int_{K_v^\times}f_v(x)\thinspace\vert x\vert\_v^{s}\thickspace d^\times x
@@ -55,7 +55,7 @@ $$
 
 ## 곱군 위의 Fourier 변환
 
-Mellin 변환 $\int_0^\infty f(t)t^s\thinspace dt/t$ 에서 $dt/t$ 는 곱군 $\mathbb R_{\gt 0}$ 의 Haar 측도이고 $t\mapsto t^s$ 는 그 군의 준지표다. Mellin 변환은 $\mathbb R_{\gt 0}$ 위의 Fourier 변환이다.
+[Mellin 변환](mellin-transform.md) $\int_0^\infty f(t)t^s\thinspace dt/t$ 에서 $dt/t$ 는 곱군 $\mathbb R_{\gt 0}$ 의 [Haar 측도](haar-measure.md)이고 $t\mapsto t^s$ 는 그 군의 준지표다. Mellin 변환은 $\mathbb R_{\gt 0}$ 위의 Fourier 변환이다.
 
 Tate 의 zeta 적분은 이 관찰을 이델류군으로 일반화한 것이다. $\mathbb R_{\gt 0}$ 자리에 $K^\times\backslash\mathbb A_K^\times$ 를 놓고, $t^s$ 자리에 Hecke 지표 $\chi\cdot|\cdot|^s$ 를 놓는다. Dirichlet 지표로 잘게 쪼개던 작업과 Mellin 변환이 하나의 조화해석으로 합쳐진다.
 
@@ -156,7 +156,7 @@ Dirichlet 의 유수 공식이 "노름 1 이델류군의 부피" 한 줄로 정�
 | 함수방정식의 출처 | theta 변환식(수체마다 격자 계산) | 아델의 자기쌍대성 + Poisson |
 | 감마 인자 | 밖에서 맞춰 넣음 | 무한 자리 국소 적분 |
 | 판별식 $\vert d_K\vert^{s/2}$ | 격자의 공변량 계산 | 자기쌍대 측도의 부피 |
-| $\varepsilon$ 인자 | Gauss 합으로 개별 계산 | 국소 근 수의 곱 |
+| $\varepsilon$ 인자 | [Gauss 합](gauss-sums.md)으로 개별 계산 | 국소 근 수의 곱 |
 | Hecke 지표 | 법과 무한 성분의 조건 | 이델류군의 지표 하나 |
 | 적용 범위 | 수체마다 다시 계산 | 함수체까지 같은 증명 |
 

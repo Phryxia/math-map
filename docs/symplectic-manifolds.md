@@ -2,7 +2,7 @@
 
 # 개요
 
-심플렉틱 다양체는 닫히고 비퇴화인 2형식을 가진 다양체다. 그 2형식은 매끄러운 함수 하나를 벡터장 하나로 바꾸고, 그 벡터장의 흐름이 Hamilton 역학의 운동이다. 비퇴화성은 차원을 짝수로 묶고, 닫힘은 흐름이 2형식을 보존하게 한다.
+심플렉틱 다양체는 닫히고 비퇴화인 2형식을 가진 다양체다. 그 2형식은 매끄러운 함수 하나를 벡터장 하나로 바꾸고, 그 벡터장의 흐름이 [Hamilton 역학](hamiltonian-mechanics.md)의 운동이다. 비퇴화성은 차원을 짝수로 묶고, 닫힘은 흐름이 2형식을 보존하게 한다.
 
 국소적으로는 모두 같다. Darboux 정리가 모든 점의 근방에서 2형식을 표준형으로 바꾸므로 Riemann 기하의 곡률에 해당하는 국소 불변량이 없다. 구별은 전역에서 생기고, 코호몰로지류 $\lbrack\omega\rbrack$ 가 그 첫 장애다.
 
@@ -69,7 +69,7 @@ $\dim M=2n$ 일 때, $n$ 차원 부분다양체 $L\subset M$ 이 포함사상으
 
 증명의 요지는 Moser 의 논법이다. 한 점에서 선형대수로 $\omega$ 를 표준형에 맞춘 뒤, 두 형식을 잇는 경로 $\omega_t=(1-t)\omega_0+t\omega$ 를 잡는다. 각 $\omega_t$ 가 그 점 근방에서 비퇴화이고 $\omega-\omega_0$ 가 닫혀 있으므로 Poincaré 보조정리가 $\omega-\omega_0=d\sigma$ 를 준다. $\omega_t(X_t,\cdot)=-\sigma$ 로 정한 벡터장의 흐름이 $\omega_t$ 를 $\omega_0$ 으로 끌어온다.
 
-Riemann 계량은 곡률이라는 국소 불변량을 갖지만 심플렉틱 형식은 갖지 않는다. 같은 차원의 두 심플렉틱 다양체는 국소적으로 구별되지 않는다.
+[Riemann 계량](riemannian-metrics.md)은 곡률이라는 국소 불변량을 갖지만 심플렉틱 형식은 갖지 않는다. 같은 차원의 두 심플렉틱 다양체는 국소적으로 구별되지 않는다.
 
 ## 흐름의 불변량
 
@@ -81,7 +81,7 @@ $$L_{X_H}\omega=0$$
 
 ## Poisson 괄호와 Jacobi 항등식
 
-$d\omega=0$ 이면 $\lbrace f,\lbrace g,h\rbrace\rbrace+\lbrace g,\lbrace h,f\rbrace\rbrace+\lbrace h,\lbrace f,g\rbrace\rbrace=0$ 이다. 좌변을 $\omega$ 와 세 Hamilton 벡터장으로 적으면 $d\omega(X_f,X_g,X_h)$ 의 상수배가 되기 때문이다. 그러므로 닫힘 조건은 $C^\infty(M)$ 이 Poisson 괄호로 Lie 대수가 된다는 것과 같다.
+$d\omega=0$ 이면 $\lbrace f,\lbrace g,h\rbrace\rbrace+\lbrace g,\lbrace h,f\rbrace\rbrace+\lbrace h,\lbrace f,g\rbrace\rbrace=0$ 이다. 좌변을 $\omega$ 와 세 Hamilton 벡터장으로 적으면 $d\omega(X_f,X_g,X_h)$ 의 상수배가 되기 때문이다. 그러므로 닫힘 조건은 $C^\infty(M)$ 이 Poisson 괄호로 [Lie 대수](lie-algebras.md)가 된다는 것과 같다.
 
 ## 코호몰로지 장애
 
@@ -101,7 +101,7 @@ $\mathbb R^{2n}$ 의 표준 형식에서, 반지름 $r$ 인 공을 반지름 $R$
 - **여접다발.** 다양체 $N$ 의 여접다발 $T^\ast N$ 에는 표준 1형식 $\lambda$ 가 있고 $\omega=-d\lambda$ 가 심플렉틱 형식이다. 좌표로 적으면 표준형이고, 고전역학의 위상공간이 이 꼴이다. 영단면과 각 섬유가 Lagrangian 부분다양체다.
 - **Kähler 다양체.** [Kähler 다양체](kahler-manifolds.md)의 Kähler 형식은 닫히고 비퇴화이므로 심플렉틱 형식이다. 복소구조와 계량을 잊으면 심플렉틱 다양체가 남는다.
 - **[적분가능계](integrable-systems.md).** $2n$ 차원 다양체에서 Poisson 괄호가 서로 소멸하는 $n$ 개의 보존량이 있으면, Arnold–Liouville 정리가 공통 준위집합의 콤팩트 성분을 원환면으로 보고 그 위에서 흐름을 일차함수로 적는다.[^2] 준위집합이 Lagrangian 부분다양체다.
-- **[모멘트 사상](moment-map.md).** Lie 군이 $\omega$ 를 보존하며 작용할 때, 작용의 보존량을 Lie 대수의 쌍대공간 값 함수로 모은 것이 모멘트 사상이다. 각운동량이 회전군에 대응하는 예다.
+- **[모멘트 사상](moment-map.md).** [Lie 군](lie-groups.md)이 $\omega$ 를 보존하며 작용할 때, 작용의 보존량을 Lie 대수의 쌍대공간 값 함수로 모은 것이 모멘트 사상이다. 각운동량이 회전군에 대응하는 예다.
 
 # 연관 문서
 
