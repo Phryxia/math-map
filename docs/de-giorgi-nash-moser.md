@@ -2,7 +2,7 @@
 
 # 개요
 
-De Giorgi–Nash–Moser 정리는 발산형 2계 타원형 방정식의 계수가 유계 측정가능일 뿐일 때 약한 해가 국소적으로 Hölder 연속이라는 정리다. 지수는 차원과 타원성 상수의 비에만 의존하고 계수의 연속성에는 의존하지 않는다.
+De Giorgi–Nash–Moser 정리(De Giorgi–Nash–Moser theorem)는 발산형 2계 타원형 방정식의 계수가 유계 측정가능일 뿐일 때 약한 해가 국소적으로 Hölder 연속이라는 정리다. 지수는 차원과 타원성 상수의 비에만 의존하고 계수의 연속성에는 의존하지 않는다.
 
 [Schauder 추정](schauder-estimates.md)은 계수가 $C^{0,\alpha}$ 에 든다는 가정으로 2계 도함수까지 올린다. 계수에 연속성이 없으면 2계 도함수를 얻을 수 없고, 남는 결론이 해 자신의 [Hölder 공간](holder-spaces.md) 소속이다.
 

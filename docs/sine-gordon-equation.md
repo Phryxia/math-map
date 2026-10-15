@@ -2,7 +2,7 @@
 
 # 개요
 
-sine-Gordon 방정식은
+sine-Gordon 방정식(sine-Gordon equation)은
 
 $$
 u\_{tt}-u\_{xx}+\sin u=0

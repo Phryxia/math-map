@@ -2,7 +2,7 @@
 
 # 개요
 
-점근급수는 함수를 유한 항까지 전개하고 나머지를 마지막 항보다 작은 양으로 묶은 식이다. 급수 전체가 수렴할 것을 요구하지 않는다. 계수를 무한히 더하면 발산하는 전개가 처음 몇 항만으로 함숫값을 소수점 아래 여러 자리까지 준다.
+점근급수(asymptotic series)는 함수를 유한 항까지 전개하고 나머지를 마지막 항보다 작은 양으로 묶은 식이다. 급수 전체가 수렴할 것을 요구하지 않는다. 계수를 무한히 더하면 발산하는 전개가 처음 몇 항만으로 함숫값을 소수점 아래 여러 자리까지 준다.
 
 감마 함수의 Stirling 급수, Laplace 방법이 내놓는 적분의 전개, WKB 근사(Wentzel–Kramers–Brillouin)의 해가 모두 이 꼴이다.
 
@@ -107,7 +107,7 @@ $$
 # 활용
 
 - [Laplace 방법](laplace-method.md): 적분 $\int e^{-\lambda S(t)}h(t)\thinspace dt$ 를 $S$ 의 최소점 근방에서 치환해 Watson 보조정리를 적용한다. 그 결과로 나오는 $\lambda^{-n}$ 의 전개가 점근전개이고 대개 발산한다.
-- [감마 함수](gamma-function.md): $\log\Gamma(z)$ 의 Stirling 급수가 $z\to\infty$ 에서의 점근전개다. 계수에 Bernoulli 수가 나오고 급수는 발산한다.
+- [감마 함수](gamma-function.md): $\log\Gamma(z)$ 의 Stirling 급수가 $z\to\infty$ 에서의 점근전개다. 계수에 [Bernoulli 수](bernoulli-numbers.md)가 나오고 급수는 발산한다.
 - [Euler–Maclaurin 공식](euler-maclaurin.md): 합과 적분의 차를 Bernoulli 수로 쓴 전개가 점근전개이고, 공식의 나머지항 한계가 최적 절단의 자리를 알려준다.
 - [WKB 근사](wkb-approximation.md): 작은 매개변수의 거듭제곱으로 쓴 해가 점근전개이고, 회전점 근방에서 전개가 깨진다.
 - [Resurgence 이론](resurgence.md): 점근급수의 계수가 계승처럼 커질 때 그 성장률에서 지수적으로 작은 항의 위치를 읽는다.

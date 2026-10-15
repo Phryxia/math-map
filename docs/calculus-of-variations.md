@@ -2,7 +2,7 @@
 
 # 개요
 
-변분법은 함수에 수를 대응시키는 범함수의 극값을 찾는 방법이다. 곡선의 길이, 곡선 아래 넓이, 경로를 따라 흐른 시간처럼 곡선 전체가 정해야 값이 나오는 양이 대상이다.
+변분법(calculus of variations)은 함수에 수를 대응시키는 범함수의 극값을 찾는 방법이다. 곡선의 길이, 곡선 아래 넓이, 경로를 따라 흐른 시간처럼 곡선 전체가 정해야 값이 나오는 양이 대상이다.
 
 극값 조건은 Euler–Lagrange 방정식이라는 [미분방정식](ordinary-differential-equations.md)으로 나온다. 변수 하나의 미분에서 $f'(x)=0$ 이 하던 일을 범함수에서 하는 것이 이 방정식이다.
 
@@ -56,7 +56,7 @@ $$
 \int_a^b\eta\Bigl(\frac{\partial F}{\partial y}-\frac{d}{dx}\frac{\partial F}{\partial y'}\Bigr)dx=0
 $$
 
-이 모든 $\eta$ 에서 성립한다. 변분법의 기본 보조정리로 괄호 안이 항등적으로 $0$ 이다.
+이 모든 $\eta$ 에서 성립한다. 변분법의 [기본 보조정리](fundamental-lemma.md)로 괄호 안이 항등적으로 $0$ 이다.
 
 **보조정리 (변분법의 기본 보조정리).** [연속함수](continuity.md) $g$ 가 양 끝에서 $0$ 인 모든 매끄러운 $\eta$ 에 대해 $\int_a^b g\eta=0$ 을 만족하면 $g\equiv0$ 이다. 어떤 점에서 $g\gt 0$ 이면 그 점 주위의 작은 구간에서만 양수인 $\eta$ 를 잡아 적분을 양수로 만들 수 있다.
 
@@ -74,7 +74,7 @@ $\frac{d}{dx}$ 를 좌변에 적용하고 Euler–Lagrange 방정식을 대입�
 
 부가조건 $\int_a^bG(x,y,y')dx=c$ 아래에서 $J$ 의 극값을 찾는 문제는 $F-\lambda G$ 의 Euler–Lagrange 방정식으로 바뀐다. $\lambda$ 는 유한차원의 [Lagrange 쌍대성](lagrange-duality.md)에서 쓰는 곱수와 같다.
 
-길이를 고정하고 둘러싼 넓이를 최대로 하는 곡선이 원이라는 등주부등식이 이 형태의 문제다.
+길이를 고정하고 둘러싼 넓이를 최대로 하는 곡선이 원이라는 [등주부등식](isoperimetric-inequality.md)이 이 형태의 문제다.
 
 ## 이차 변분과 최소의 판정
 

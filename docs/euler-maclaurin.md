@@ -2,7 +2,7 @@
 
 # 개요
 
-Euler–Maclaurin 공식은 유한합과 적분의 차이를 도함수의 급수로 전개한다.
+Euler–Maclaurin 공식(Euler–Maclaurin formula)은 유한합과 적분의 차이를 도함수의 급수로 전개한다.
 
 $$
 \sum_{a=M}^{N}f(a)

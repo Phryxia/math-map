@@ -2,7 +2,7 @@
 
 # 개요
 
-Sturm–Liouville 이론은 구간 $\lbrack a,b\rbrack$ 위의 2계 선형 미분방정식
+Sturm–Liouville 이론(Sturm–Liouville theory)은 구간 $\lbrack a,b\rbrack$ 위의 2계 선형 미분방정식
 
 $$
 -\bigl(p(x)u'\bigr)'+q(x)u=\lambda\thinspace w(x)\thinspace u
@@ -10,7 +10,7 @@ $$
 
 와 양 끝에서의 경계조건이 이루는 [고윳값](eigenvalues.md) 문제를 다룬다. 고윳값은 실수이고 아래로 유계인 이산 열을 이루며 무한대로 발산한다. 서로 다른 고윳값의 고유함수는 가중 $w$ 에 대해 직교하고, 전체가 $L^2$ 에서 완전계를 이룬다.
 
-직교성은 부분적분 두 번에서 나오고, 완전성은 문제를 Green 함수로 적분방정식으로 바꾼 뒤 콤팩트 자기수반 작용소의 [스펙트럼 정리](spectral-theorem.md)를 적용해 얻는다.
+직교성은 부분적분 두 번에서 나오고, 완전성은 문제를 [Green 함수](greens-function.md)로 적분방정식으로 바꾼 뒤 콤팩트 자기수반 작용소의 [스펙트럼 정리](spectral-theorem.md)를 적용해 얻는다.
 
 # 직관
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-Korovkin 정리는 양선형작용소 열이 연속함수 전체에서 균등수렴하는지를 세 함수에서의 수렴만으로 판정한다. $C\lbrack 0,1\rbrack$ 에서 그 세 함수는 $1$ , $t$ , $t^2$ 이다.
+Korovkin 정리(Korovkin's theorem)는 양선형작용소 열이 연속함수 전체에서 균등수렴하는지를 세 함수에서의 수렴만으로 판정한다. $C\lbrack 0,1\rbrack$ 에서 그 세 함수는 $1$ , $t$ , $t^2$ 이다.
 
 [Stone–Weierstrass 정리](stone-weierstrass.md)는 근사하는 함수족이 어떤 대수적 조건을 만족할 때 조밀한지를 말하고, Korovkin 정리는 주어진 근사 작용소 열이 수렴하는지를 말한다. Bernstein 다항식의 균등수렴이 이 정리의 특수한 경우다.
 

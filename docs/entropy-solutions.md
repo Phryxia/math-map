@@ -2,7 +2,7 @@
 
 # 개요
 
-엔트로피 해는 1차 보존법칙
+엔트로피 해(entropy solution)는 1차 보존법칙
 
 $$
 u\_t+\partial\_xf(u)=0
@@ -102,7 +102,7 @@ $$
 \partial\_t(\partial\_xw)+\partial\_xf(\partial\_xw)=0
 $$
 
-이고 $x$ 로 한 번 적분하면 $w\_t+f(w\_x)=0$ 이다. 보존법칙의 해를 적분한 함수가 Hamilton-Jacobi 방정식의 해다.
+이고 $x$ 로 한 번 적분하면 $w\_t+f(w\_x)=0$ 이다. 보존법칙의 해를 적분한 함수가 [Hamilton-Jacobi 방정식](hamilton-jacobi-equation.md)의 해다.
 
 이 대응에서 엔트로피 해는 점성해로 간다. 충격파 조건 $u\_l\gt u\_r$ 은 $w\_x$ 가 끊김에서 감소한다는 뜻이고, 그것이 $w$ 가 그 점에서 위로 꺾인다는 뜻이다. 점성해 조건은 아래로 꺾인 점을 배제하므로 두 조건이 같은 해를 고른다.[^3]
 
