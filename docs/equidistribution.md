@@ -80,7 +80,7 @@ $$
 D_N\le C\left(\frac1K+\sum_{k=1}^{K}\frac1k\left\vert\frac1N\sum_{n\le N}e^{2\pi ikx_n}\right\vert\right)
 $$
 
-Weyl 판정법은 등분포의 여부만 주지만 이 부등식은 불일치도를 지수합으로 묶으므로 속도까지 준다. 지수합을 추정하는 해석적 방법이 그대로 등분포의 속도 추정이 된다.
+Weyl 판정법은 등분포의 여부만 주지만 이 부등식은 불일치도를 지수합으로 묶으므로 속도까지 준다. 지수합을 추정하는 해석적 방법이 그대로 등분포의 속도 추정이 된다. 다항식 수열에서는 [Vinogradov 평균값 정리](vinogradov-mean-value.md)가 그 추정을 준다.
 
 # 활용
 
