@@ -16,7 +16,7 @@ $$
 
 곱해지는 양은 모든 $\xi\ne 0$ 에서 절댓값이 $1$ 이하다. Plancherel 정리가 $\Vert\partial_i\partial_j u\Vert\_{L^2}\le\Vert f\Vert\_{L^2}$ 를 준다.
 
-$f$ 가 $L^3$ 에 들 때 같은 추정을 얻으려 하면 이 계산이 막힌다. Fourier 변환은 $L^3$ 노름을 바꾸므로 심볼의 크기에서 $\Vert\partial_i\partial_j u\Vert\_{L^3}$ 를 읽을 수 없다. 변환을 되돌려 작용소를 적분으로 적으면 핵이 나온다.
+$f$ 가 $L^3$ 에 들 때 같은 추정을 얻으려 하면 이 계산이 막힌다. Fourier 변환은 $L^3$ 노름을 바꾸므로 심볼의 크기에서 $\Vert\partial_i\partial_j u\Vert\_{L^3}$ 를 읽을 수 없다. 역변환으로 작용소를 적분으로 적으면 핵이 나온다.
 
 $$
 \partial_i\partial_j u(x)=\int\_{\mathbb R^n}K(x-y)\thinspace f(y)\thinspace dy,\qquad K(z)=c_n\thinspace\frac{n\thinspace z_iz_j-\delta\_{ij}\vert z\vert^2}{\vert z\vert^{n+2}}
