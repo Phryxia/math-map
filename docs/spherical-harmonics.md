@@ -93,7 +93,7 @@ $$
 
 가 성립한다. Funk–Hecke 정리다. 구면 위의 합성곱이 $\ell$ 마다 하나의 곱셈으로 대각화된다는 뜻이며, 원에서 합성곱이 Fourier 계수의 곱이 되는 것의 구면판이다.
 
-## $\mathrm{SU}(2)$ 와 반정수
+## SU(2) 와 반정수
 
 $\mathrm{SU}(2)\to\mathrm{SO}(3)$ 는 핵이 $\lbrace\pm I\rbrace$ 인 이중덮개다. $\mathrm{SU}(2)$ 의 기약표현은 각 차원마다 하나씩, 곧 최고무게 $j\in\frac12\mathbb Z$ 마다 $2j+1$ 차원짜리가 있다.
 

@@ -58,7 +58,7 @@ $\mathrm{HYP}\subseteq\Delta^1_1$ 쪽은 $H_a$ 의 구성을 논리식으로 옮
 
 $\Delta^1_1\subseteq\mathrm{HYP}$ 쪽은 $\Sigma^1_1$ 경계 정리를 쓴다. $A$ 와 여집합이 모두 $\Sigma^1_1$ 이면 각각 계산가능한 나무의 족으로 정규형을 갖고, $x\notin A$ 를 증언하는 나무들은 전부 정렬근거이므로 그 순위의 집합이 $\Sigma^1_1$ 로 정의된다. 경계 정리가 이 순위들을 $\omega_1^{\mathrm{CK}}$ 미만의 한 서수로 묶어 주고, 그 서수의 표기 $a$ 에서 $A\le_T H_a$ 가 된다.
 
-## $\mathcal O$ 의 복잡도
+## Kleene O 의 복잡도
 
 $\mathcal O$ 는 $\Pi^1_1$ 완전이다.[^1] 셋째 조항이 $\varphi_e$ 의 값 전체가 이미 $\mathcal O$ 에 있기를 요구하므로 정의가 정렬근거성에 걸리고, 그 조건이 $\Pi^1_1$ 이다.
 
