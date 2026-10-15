@@ -74,7 +74,7 @@ $$
 \chi(G) \ge \frac{|V|}{\alpha(G)}
 $$
 
-이다. 이 부등식은 Ramsey 이론이나 [확률적 방법](probabilistic-method.md)에서 독립수 상한을 채색수 하한으로 바꿔 쓸 때 반복해서 등장한다.
+이다. 이 부등식은 [Ramsey 이론](ramsey-theory.md)이나 [확률적 방법](probabilistic-method.md)에서 독립수 상한을 채색수 하한으로 바꿔 쓸 때 반복해서 등장한다.
 
 ## 탐욕 색칠과 퇴화도
 
@@ -146,7 +146,7 @@ $$
 P(G, k) = \sum_{S \subseteq E} (-1)^{|S|} k^{\thinspace c(S)}
 $$
 
-를 얻는다. 여기서 $c(S)$ 는 간선 집합 $S$ 만 남긴 그래프의 연결 성분 수다. 이 표현은 Whitney 의 정리이며, 채색 다항식이 Tutte 다항식의 특수화이고 [matroid](matroids.md) 이론과 이어진다.
+를 얻는다. 여기서 $c(S)$ 는 간선 집합 $S$ 만 남긴 그래프의 연결 성분 수다. 이 표현은 Whitney 의 정리이며, 채색 다항식이 [Tutte 다항식](tutte-polynomial.md)의 특수화이고 [matroid](matroids.md) 이론과 이어진다.
 
 예: 완전 그래프는 $P(K_n,k)=k(k-1)\cdots(k-n+1)$ , 트리는 $P(T,k)=k(k-1)^{n-1}$ , 길이 $n$ 의 사이클은
 
@@ -178,7 +178,7 @@ $k \ge 3$ 고정에 대해 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 
 ## 이론적 위치
 
-색칠은 "국소 제약에서 전역 분할을 얻는" 문제의 원형이다. 같은 형태가 [선형계획법](linear-programming.md)의 완화(분수 채색수), 준정부호 계획법(Lovász 세타 함수, 완벽 그래프 이론), 확률적 방법의 Lovász local lemma 기반 색칠 정리에서 반복된다. 특히 완벽 그래프(모든 유도 부분그래프에서 $\omega = \chi$ 인 그래프)의 이론은 $\omega \le \chi$ 라는 자명한 부등식이 언제 등호가 되는지를 묻는 질문이고, 강한 완벽 그래프 정리(2006)로 답이 나왔다. 색칠의 어려움은 대부분 $\omega$ 와 $\chi$ 사이의 간격에서 나온다는 관점이 여기서 가장 뚜렷하다.
+색칠은 "국소 제약에서 전역 분할을 얻는" 문제의 원형이다. 같은 형태가 [선형계획법](linear-programming.md)의 완화(분수 채색수), 준정부호 계획법([Lovász 세타 함수](lovasz-theta.md), 완벽 그래프 이론), 확률적 방법의 Lovász local lemma 기반 색칠 정리에서 반복된다. 특히 완벽 그래프(모든 유도 부분그래프에서 $\omega = \chi$ 인 그래프)의 이론은 $\omega \le \chi$ 라는 자명한 부등식이 언제 등호가 되는지를 묻는 질문이고, 강한 완벽 그래프 정리(2006)로 답이 나왔다. 색칠의 어려움은 대부분 $\omega$ 와 $\chi$ 사이의 간격에서 나온다는 관점이 여기서 가장 뚜렷하다.
 
 [^1]: K. Appel, W. Haken, "Every planar map is four colorable", Bulletin of the American Mathematical Society 82 (1976), https://www.ams.org/journals/bull/1976-82-05/S0002-9904-1976-14122-5/
 [^2]: N. Robertson, D. Sanders, P. Seymour, R. Thomas, "The Four-Colour Theorem", Journal of Combinatorial Theory Series B 70 (1997), https://doi.org/10.1006/jctb.1997.1750

@@ -18,7 +18,7 @@ $$
 
 좌변은 해석, 우변은 기하다. $L'(E/K,1)\ne0$ 이면 $\hat h(y_K)\ne0$ 이므로 $y_K$ 가 무한위수이고 $\mathrm{rank}\thinspace E(K)\ge1$ 이다.
 
-Kolyvagin 은 반대 부등식을 얻었다. $y_K$ 가 무한위수이면 그것에서 Euler 계를 만들어 [Selmer 군](selmer-tate-shafarevich.md)을 누를 수 있고, 순위가 정확히 $1$ 이며 $\text{Ш}$ 가 유한하다. 두 정리를 합친 것이 해석적 순위 $\le1$ 인 경우의 BSD(Birch–Swinnerton-Dyer) 추측이다.
+Kolyvagin 은 반대 부등식을 얻었다. $y_K$ 가 무한위수이면 그것에서 [Euler 계](euler-systems.md)를 만들어 [Selmer 군](selmer-tate-shafarevich.md)을 누를 수 있고, 순위가 정확히 $1$ 이며 $\text{Ш}$ 가 유한하다. 두 정리를 합친 것이 해석적 순위 $\le1$ 인 경우의 BSD(Birch–Swinnerton-Dyer) 추측이다.
 
 # 직관
 
@@ -112,7 +112,7 @@ $r_{\mathrm{an}}=0$ 인 경우도 같은 장치로 처리된다. 꼬임 $E^{D}$ 
 
 Gross–Zagier 증명은 같은 양을 두 방식으로 국소 항의 합으로 쓰고 항끼리 맞춘다.
 
-- **기하 쪽.** 정준 높이가 Néron 국소 높이의 합 $\hat h(y_K)=\sum_v \lambda_v$ 로 분해된다. 각 $\lambda_v$ 는 $v$ 자리에서 두 CM(complex multiplication) 점의 교차수이고, 유한 자리에서는 준동형사상 개수를 세는 문제로, 무한 자리에서는 상반평면의 Green 함수 적분으로 바뀐다.
+- **기하 쪽.** 정준 높이가 Néron 국소 높이의 합 $\hat h(y_K)=\sum_v \lambda_v$ 로 분해된다. 각 $\lambda_v$ 는 $v$ 자리에서 두 CM(complex multiplication) 점의 교차수이고, 유한 자리에서는 준동형사상 개수를 세는 문제로, 무한 자리에서는 상반평면의 [Green 함수](greens-function.md) 적분으로 바뀐다.
 - **해석 쪽.** $L(E/K,s)$ 가 $f$ 와 $K$ 에 붙는 [theta 급수](theta-series.md)의 [Rankin–Selberg 적분](rankin-selberg.md)으로 표현된다. $s=1$ 에서 미분하면 [Eisenstein 급수](eisenstein-series.md)의 Fourier 계수가 나오고 그 계수들이 국소 항의 합으로 쪼개진다.
 
 두 분해의 항이 자리마다 일치한다는 것이 정리의 내용이다. 양쪽 모두 $K$ 의 아이디얼을 세되 한쪽은 격자의 교차로, 다른 쪽은 이차형식의 표현수로 센다.
@@ -135,7 +135,7 @@ $D$ 를 잘못 고르면 $y_K$ 가 비틀림 점이 되어 정보를 주지 않�
 ## Gross–Zagier 공식의 확장
 
 - **Gross–Zagier–Zhang.** Zhang 이 공식을 총실체 위의 Shimura 곡선으로 확장했고, Yuan–Zhang–Zhang 이 자기동형 표현의 언어로 일반화했다. 그 형태에서 공식은 Waldspurger 공식의 미분판이다.
-- **$p$ 진 Gross–Zagier.** Perrin-Riou 가 $p$ 진 $L$ 함수의 미분과 $p$ 진 높이를 잇는 판본을 얻었다. Iwasawa 주추측과 결합해 $\text{Ш}$ 의 $p$ 부분을 재는 데 쓰인다.
+- **$p$ 진 Gross–Zagier.** Perrin-Riou 가 $p$ 진 $L$ 함수의 미분과 $p$ 진 높이를 잇는 판본을 얻었다. [Iwasawa 주추측](iwasawa-main-conjecture.md)과 결합해 $\text{Ш}$ 의 $p$ 부분을 재는 데 쓰인다.
 - **Stark–Heegner 점.** Darmon 이 실이차체에서 유사한 점을 $p$ 진 상반평면 위의 적분으로 정의하는 구성을 제안했고, 그 점이 대수적이라는 것은 추측으로 남겼다[^2].
 
 # 활용

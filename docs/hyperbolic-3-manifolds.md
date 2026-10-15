@@ -134,11 +134,11 @@ $\omega^\omega$ 라는 순서형은 극한점의 층이 무한히 쌓인다는 �
 
 cusp 를 메우면 부피가 줄고, 복잡하게 메울수록 원래 부피에 아래에서 수렴한다. $\mathcal V$ 안의 각 부피값이 그보다 큰 부피값들의 극한이 되고, 이 과정을 겹쳐 $\omega^\omega$ 가 나온다. 수술로 만드는 3 다양체 가운데 쌍곡이 아닌 것은 유한개의 예외뿐이다.
 
-강직성은 고정된 위상형에서 계량이 유일하다는 진술이고 Dehn 수술은 위상형 자체를 바꾸므로 둘은 어긋나지 않는다. 붙임 방정식의 말로는, 완비성 조건을 풀어 준 해의 족이 불완비 구조들의 1 복소차원 가족을 이루고 그 가운데 홀로노미가 $(p,q)$ 조건을 만족하는 이산점들이 채워진 다양체의 완비 구조다.
+강직성은 고정된 위상형에서 계량이 유일하다는 진술이고 [Dehn 수술](dehn-surgery.md)은 위상형 자체를 바꾸므로 둘은 어긋나지 않는다. 붙임 방정식의 말로는, 완비성 조건을 풀어 준 해의 족이 불완비 구조들의 1 복소차원 가족을 이루고 그 가운데 홀로노미가 $(p,q)$ 조건을 만족하는 이산점들이 채워진 다양체의 완비 구조다.
 
 ## 기하화 정리 안에서의 위치
 
-> **정리 (Thurston 의 기하화 추측, Perelman 증명).** 모든 닫힌 방향 가능 3 다양체는 소수 분해와 원환면 분해를 거쳐 8 개 모형 기하 중 하나를 갖는 조각으로 잘린다.
+> **정리 ([기하화 정리](geometrization.md)).** 모든 닫힌 방향 가능 3 다양체는 소수 분해와 원환면 분해를 거쳐 8 개 모형 기하 중 하나를 갖는 조각으로 잘린다. Thurston 이 추측하고 Perelman 이 증명했다.
 
 8 개는 $\mathbb H^3,\ \mathbb E^3,\ S^3,\ S^2\times\mathbb R,\ \mathbb H^2\times\mathbb R,\ \widetilde{\mathrm{SL}\_2\mathbb R},\ \mathrm{Nil},\ \mathrm{Sol}$ 이고 이 가운데 $\mathbb H^3$ 조각이 압도적으로 많다. 나머지 일곱은 Seifert 올뭉치거나 원환면 다발로 분류되어 있어 3 차원 위상수학의 내용이 쌍곡 조각에 몰린다. 강직성이 그 조각들을 기하로 식별하므로 3 다양체의 분류가 Kleinian 군의 분류가 된다.
 
@@ -176,7 +176,7 @@ SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자
 
 - **산술 쌍곡 다양체.** $\Gamma$ 가 사원수 대수의 정수원에서 오면 Bianchi 군 $\mathrm{PSL}\_2(\mathcal O_d)$ 류가 되고 부피가 [Dedekind zeta 함수](dirichlet-l-functions.md)의 값으로 계산된다. [Selberg 대각합 공식](selberg-trace-formula.md)이 길이 스펙트럼과 Laplace 스펙트럼을 잇는다.
 - **Chern–Simons 이론.** 쌍곡 구조는 $\mathrm{SL}\_2(\mathbb C)$ 평탄 접속이므로 [Chern–Simons](chern-simons.md) 불변량이 정의되고 $\mathrm{CS}+i\thinspace\mathrm{Vol}/2\pi$ 라는 복소수 하나로 묶인다. [Witten 점근](witten-asymptotics.md)과 볼륨 추측이 이 복소수의 실수부와 허수부를 본다.
-- **$K$ 이론.** 사면체 모양들이 정하는 Bloch 군의 원소가 있고 그 Borel 조절자가 부피다. 대수적 K 이론이 3 다양체의 부피와 이렇게 이어진다.
+- **$K$ 이론.** 사면체 모양들이 정하는 Bloch 군의 원소가 있고 그 Borel 조절자가 부피다. [대수적 K 이론](algebraic-k-theory.md)이 3 다양체의 부피와 이렇게 이어진다.
 
 [^1]: $\mathrm{Im}\mathrm{Li}\_2(e^{i\theta})=\sum_n\sin(n\theta)/n^2$ 이고 $\Lambda(\theta)=\tfrac12\sum_n\sin(2n\theta)/n^2$ 이므로 $\mathrm{Im}\mathrm{Li}\_2(e^{i\theta})=2\Lambda(\theta/2)$ 다. $\theta=\pi/3$ 에서 $2\Lambda(\pi/6)=1.0149416\ldots=V_3$ 이 나온다.
 
