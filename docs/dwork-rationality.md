@@ -33,7 +33,7 @@ $$
 \char35{}\lbrace x:f(x)=0\rbrace=\frac1q\sum_{t\in\mathbb F_q}\sum_{x}\psi\big(\mathrm{Tr}\_{\mathbb F_q/\mathbb F_p}(tf(x))\big)
 $$
 
-가 되고, 기하 문제가 $\sum_x\psi(\mathrm{Tr}\thinspace f(x))$ 꼴의 지수합 하나로 바뀐다. Gauss 합은 $f(x)=ax$ 에 곱셈 지표를 곁들인 사례이고 Kloosterman 합은 $f(x)=ax+b/x$ 다.
+가 되고, 기하 문제가 $\sum_x\psi(\mathrm{Tr}\thinspace f(x))$ 꼴의 지수합 하나로 바뀐다. Gauss 합은 $f(x)=ax$ 에 곱셈 지표를 곁들인 사례이고 [Kloosterman 합](kloosterman-sums.md)은 $f(x)=ax+b/x$ 다.
 
 여기서 막히는 것은 $\psi$ 가 유한군 위의 함수라 미분도 급수전개도 없다는 점이다. 복소수 쪽에서 $\psi$ 의 값 $e^{2\pi ik/p}$ 는 단위원 위에 흩어진 점일 뿐이다. $p$ 진 쪽에서는 $\pi^{p-1}=-p$ 인 $\pi$ 를 잡아 $\exp(\pi x)$ 로 $\psi$ 를 실현할 수 있을 것 같지만, $p$ 진 지수함수가 $\mathrm{ord}\_p(x)\gt\frac1{p-1}$ 에서만 수렴해 절댓값이 정확히 $1$ 인 Teichmüller 대표원을 넣을 수 없다. 이 벽을 넘는 급수가 Dwork 의 분해함수다.
 
@@ -158,7 +158,7 @@ $$
 여기서 두 절댓값이 서로 다른 일을 한다.
 
 - **아르키메데스.** $|\alpha|=|\beta|=\sqrt q$ 는 Weil 의 곡선 Riemann 가설이다. Dwork 의 방법으로는 나오지 않는다.
-- **$p$ 진.** $\mathrm{Kl}\_1$ 은 $p$ 진 단위다. $\psi$ 의 값이 전부 $1\bmod\pi$ 이므로 $\mathrm{Kl}\_1\equiv q-1\equiv-1\pmod\pi$ 다. 그러면 $1+\mathrm{Kl}\_1T+qT^2$ 의 Newton 다각형이 $(0,0),(1,0),(2,1)$ 의 아래쪽 볼록포이고 기울기가 $0$ 과 $1$ 이다. 즉 $\mathrm{ord}\_q\alpha=0$ (단위근), $\mathrm{ord}\_q\beta=1$ 이다.
+- **$p$ 진.** $\mathrm{Kl}\_1$ 은 $p$ 진 단위다. $\psi$ 의 값이 전부 $1\bmod\pi$ 이므로 $\mathrm{Kl}\_1\equiv q-1\equiv-1\pmod\pi$ 다. 그러면 $1+\mathrm{Kl}\_1T+qT^2$ 의 [Newton 다각형](newton-polygon.md)이 $(0,0),(1,0),(2,1)$ 의 아래쪽 볼록포이고 기울기가 $0$ 과 $1$ 이다. 즉 $\mathrm{ord}\_q\alpha=0$ (단위근), $\mathrm{ord}\_q\beta=1$ 이다.
 
 단위근의 존재는 Dwork 이론에서 나오고 Weil 의 상계는 다른 증명을 요구한다.
 
@@ -203,9 +203,9 @@ $n=1$ 하나가 모든 확대체의 값을 결정하며, 이것이 $L$ 함수가
 
 ## 점 세기와 에탈 코호몰로지
 
-- **점 세기 알고리즘.** Dwork 의 방법을 Monsky–Washnitzer 코호몰로지로 다듬은 것이 Kedlaya 알고리즘(2001)이다. 초타원곡선의 zeta 함수를 $p$ 진 정밀도로 계산하며 비용이 $p$ 에 선형이고 확대차수에 다항식이라 작은 $p$ 와 큰 $n$ 을 맡고, 큰 $p$ 를 맡는 Schoof–Elkies–Atkin 과 상보적이다. Lauder–Wan 이 일반 다양체로 확장했다.
+- **점 세기 알고리즘.** Dwork 의 방법을 Monsky–Washnitzer 코호몰로지로 다듬은 것이 [Kedlaya 알고리즘](kedlaya-algorithm.md)(2001)이다. 초타원곡선의 zeta 함수를 $p$ 진 정밀도로 계산하며 비용이 $p$ 에 선형이고 확대차수에 다항식이라 작은 $p$ 와 큰 $n$ 을 맡고, 큰 $p$ 를 맡는 Schoof–Elkies–Atkin 과 상보적이다. Lauder–Wan 이 일반 다양체로 확장했다.
 - **암호.** 위 알고리즘이 곡선 암호의 군 위수를 정하는 실무 도구다. [타원곡선](elliptic-curves.md) 위수를 모르면 안전성을 논할 수 없다.
-- **해석적 정수론.** Kloosterman 합은 사원 이차형식의 표현수를 원법으로 다루면서 나왔다. Weil 한계 $2\sqrt q$ 가 원법의 오차항을 결정하고 Kuznetsov 공식을 거쳐 [모듈러 형식](modular-forms.md)의 해석적 이론으로 들어간다.
+- **해석적 정수론.** Kloosterman 합은 사원 이차형식의 표현수를 원법으로 다루면서 나왔다. Weil 한계 $2\sqrt q$ 가 원법의 오차항을 결정하고 [Kuznetsov 공식](kuznetsov-formula.md)을 거쳐 [모듈러 형식](modular-forms.md)의 해석적 이론으로 들어간다.
 - **Newton 다각형의 기하.** 지수합의 $p$ 진 부치를 다면체로 예측하는 Adolphson–Sperber 이론과 Katz 의 Newton 다각형 도약 문제가 이 줄기에 있다.
 - **에탈 코호몰로지.** Grothendieck 의 에탈 코호몰로지가 유리성과 함수방정식을 다시 증명했고 1974 년 Deligne 이 Riemann 가설을 닫았다.
 
