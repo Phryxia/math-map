@@ -42,13 +42,13 @@ $$
 
 계수의 개수가 $n$ 과 $d$ 로 정해지므로 양화사가 유한 개다. 차수 제한을 풀면 1차 문장이 아니므로, 정리를 문장들의 모임 $\lbrace\sigma_{n,d}\rbrace$ 로 쪼개는 것이 증명의 첫 단계다.
 
-## 특성 $p$ 에서의 증명
+## 특성 p 에서의 증명
 
 $k$ 가 특성 $p$ 인 대수적 닫힌 체이면 $k$ 는 $\overline{\mathbb F_p}$ 를 포함하고, 다항식 사상 $f$ 의 계수는 유한 개다.
 
 $f$ 가 단사라 하고 $y\in k^n$ 을 잡는다. $y$ 의 좌표와 $f$ 의 계수를 모두 담는 유한체 $\mathbb F_q\subseteq\overline{\mathbb F_p}$ 가 있고, $f$ 는 $\mathbb F_q^n$ 을 자기 자신으로 보낸다. 유한집합 위의 단사 함수는 전사이므로 $f(x)=y$ 인 $x\in\mathbb F_q^n$ 이 있다. $y$ 가 임의이므로 $f$ 가 전사다. ∎
 
-## 특성 $0$ 이전
+## 특성 0 이전
 
 **보조정리.** $\sigma$ 가 체의 언어의 문장이고 충분히 큰 모든 소수 $p$ 에 대해 $\mathrm{ACF}\_p\models\sigma$ 이면 $\mathrm{ACF}\_0\models\sigma$ 다.
 

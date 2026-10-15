@@ -28,7 +28,7 @@ $$
 
 이고 순서는 $(p',\dot q')\le(p,\dot q)$ 를 $p'\le p$ 와 $p'\Vdash\dot q'\le\dot q$ 로 정의한다.
 
-## 길이 $\alpha$ 의 반복
+## 길이 α 의 반복
 
 $\mathbb P\_0$ 을 자명한 순서로 두고, 각 단계에서 $\mathbb P\_\beta$ 이름 $\dot{\mathbb Q}\_\beta$ 를 하나 고른다. 후계 단계는 $\mathbb P\_{\beta+1}=\mathbb P\_\beta\ast\dot{\mathbb Q}\_\beta$ 다. 극한 단계 $\gamma$ 에서 $\mathbb P\_\gamma$ 의 조건은 정의역이 $\gamma$ 인 함수 $p$ 이고, 각 $\beta$ 에서 $p(\beta)$ 는 $\dot{\mathbb Q}\_\beta$ 의 원소를 가리키는 이름이다.
 

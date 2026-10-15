@@ -82,7 +82,7 @@ $\Delta_G$ 가 자명하지 않으면 그 상은 $\mathbb R\_{\gt 0}$ 에서 위
 
 증명의 요지. $\Gamma=\bigsqcup_{i=1}^{n}\Gamma'\gamma_i$ 로 분해하면 $\Gamma$ 의 기본 영역 $F$ 에 대해 $\bigsqcup_{i}F\gamma_i$ 가 $\Gamma'$ 의 기본 영역이다. 조각마다 측도가 같으므로 공부피가 $n$ 배다.
 
-## $\mathrm{SL}\_2(\mathbb Z)$
+## SL₂(Z)
 
 **정리.** $\mathrm{SL}\_2(\mathbb Z)$ 는 $\mathrm{SL}\_2(\mathbb R)$ 의 비균질 격자다.
 

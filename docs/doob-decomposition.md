@@ -54,7 +54,7 @@ $(X_n)$ 이 submartingale 인 것과 $(A_n)$ 이 증가하는 것이 동치다. 
 
 증분 $A_n-A_{n-1}=\mathbb E\lbrack X_n\mid\mathcal F_{n-1}\rbrack-X_{n-1}$ 의 부호가 submartingale 조건과 같은 식이므로 세 경우가 바로 따라온다. submartingale 은 martingale 과 증가과정의 합이고, 그 증가과정의 극한 $A_\infty$ 가 적분 가능한지가 수렴 판정의 조건이다.
 
-## $L^2$ 수렴 판정
+## L² 수렴 판정
 
 $M_0=0$ 인 martingale 에 대해 $\mathbb E\lbrack M_n^2\rbrack=\mathbb E\lbrack\langle M\rangle_n\rbrack$ 이다. $\mathbb E\lbrack\langle M\rangle_\infty\rbrack\lt\infty$ 이면 $(M_n)$ 은 거의 확실하게 그리고 $L^2$ 에서 수렴한다.
 

@@ -46,7 +46,7 @@ $$
 
 # 성질
 
-## $\omega$ 모형
+## ω 모형
 
 $L_2$ 의 모형은 수 부분과 집합 부분의 쌍이다. 수 부분이 표준 자연수 $\mathbb N$ 인 모형을 $\omega$ 모형이라 하고, 이때 모형은 집합족 $\mathcal S\subseteq\mathcal P(\mathbb N)$ 하나로 정해진다.
 
