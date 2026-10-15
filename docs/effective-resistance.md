@@ -2,9 +2,7 @@
 
 # 개요
 
-최단 경로 길이는 두 정점을 잇는 경로가 하나인지 백 개인지 구별하지 못한다. 유일한 다리와 백 갈래로 갈라진 연결이 같은 거리 2 를 받는다.
-
-유효저항은 [그래프](graphs.md)를 전기 회로로 보고 간선 가중치를 전도도로 삼아, 두 정점 사이에 단위 전류를 흘릴 때의 전위차를 잰다. 경로가 많으면 전류가 나뉘어 흘러 저항이 낮아지므로 최단 거리가 아니라 연결의 두께를 재는 양이다.
+유효저항(effective resistance)은 [그래프](graphs.md)를 전기 회로로 보고 간선 가중치를 전도도로 삼아, 두 정점 사이에 단위 전류를 흘릴 때의 전위차를 잰다. 경로가 많으면 전류가 나뉘어 흘러 저항이 낮아지므로 최단 거리가 아니라 연결의 두께를 재는 양이다.
 
 계산은 [그래프 Laplacian](graph-laplacian.md)의 선형방정식 하나로 끝난다. Laplacian 이 회로의 Kirchhoff 법칙을 표현하기 때문이다. 이 양은 무작위 걷기의 도달 시간, 신장트리의 개수, 간선의 중요도 샘플링으로 이어진다.
 
@@ -131,7 +129,7 @@ $$
 - 전염, 정보 확산, 혼잡처럼 흐름이 여러 경로로 분산되는 문제에서는 유효저항 거리가 최단 경로보다 적절하다. 모든 쌍의 저항 합 $\sum_{u\lt v} R(u,v)$ 을 Kirchhoff 지표라 하며 네트워크의 견고함을 재는 값으로 쓴다.
 - 정확한 계산은 $L^+$ 를 요구해 큰 그래프에서 비싸다. Johnson–Lindenstrauss 사영과 Laplacian 방정식의 빠른 해법을 결합해 모든 간선의 저항을 근사하고 그 값으로 샘플링한다.
 
-[^1]: Spielman, Srivastava, *Graph Sparsification by Effective Resistances* (2008), https://arxiv.org/abs/0803.0929. 전기적 해석과 저항 기반 샘플링의 연결, Foster 정리의 역할. 전위 방정식과 Schur 보수의 관계는 Spielman 의 강의 노트 https://www.cs.yale.edu/homes/spielman/561/lect08-15.pdf 를 참고했다.
+[^1]: Spielman, Srivastava, *Graph Sparsification by Effective Resistances* (2008), https://arxiv.org/abs/0803.0929. 전기적 해석과 저항 기반 샘플링의 연결, Foster 정리의 역할. 전위 방정식과 [Schur 보수](schur-complement.md)의 관계는 Spielman 의 강의 노트 https://www.cs.yale.edu/homes/spielman/561/lect08-15.pdf 를 참고했다.
 
 # 연관 문서
 
