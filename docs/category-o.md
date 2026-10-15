@@ -34,7 +34,7 @@ Poincaré–Birkhoff–Witt 정리로 $M(\lambda)$ 는 음근 벡터들의 단�
 
 # 정의
 
-## 범주 $\mathcal O$
+## 범주 O
 
 $\mathfrak g$ 를 복소 반단순 Lie 대수, $\mathfrak h\subset\mathfrak b\subset\mathfrak g$ 를 Cartan 과 Borel 이라 하자. $\mathcal O$ 의 대상은 다음 셋을 만족하는 $U(\mathfrak g)$ 가군 $M$ 이다[^2].
 
@@ -99,7 +99,7 @@ Beilinson–Bernstein 과 Brylinski–Kashiwara 가 깃발다양체 위의 $D$ �
 
 # 성질
 
-## $\mathfrak{sl}\_2$ 의 블록
+## sl₂ 의 블록
 
 $\lambda=0$ 의 블록에는 무게가 둘 있다. $e\cdot0=0$ 과 $s\cdot0=-2$ 다.
 

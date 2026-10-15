@@ -76,7 +76,7 @@ $\sigma_i\mapsto q^{1/2}-q^{-1/2}e_i$ 로 두면 [땋임군](braid-groups.md) $B
 
 [매듭 불변량](knot-invariants.md)의 Jones 다항식을 땋임 낱말의 Markov 대각합으로 계산한다[^1]. 매듭을 땋임으로 적고 Jones 표현으로 $TL_k(\delta)$ 의 원소를 얻은 뒤, 세포 구조가 주는 대각합을 취하면 Markov 이동에 불변인 값이 나온다. 평면 도형의 수가 $C_k$ 로 유한하므로 이 계산이 유한 차원 선형대수가 된다.
 
-## $\mathrm{SL}\_2$ 불변 사상
+## SL₂ 불변 사상
 
 $\mathrm{End}\_{\mathrm{SL}\_2}(V^{\otimes k})$ 의 기저가 평면 도형이고 $\delta=2$ 에서 $TL_k(2)$ 가 이 대수로 전사한다. $k$ 차 텐서의 불변 사상을 나열하는 문제의 답 목록이 교차하지 않는 짝짓기다. Jones–Wenzl 멱등원 $f_k$ 는 최고무게 성분 $V\_{(k)}$ 로의 사영이다.
 

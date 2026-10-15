@@ -25,7 +25,7 @@ $\sigma^2\neq\mathrm{id}$ 인 사상을 얻으려면 교환 사상 자리에 다
 
 $\Delta$ 가 두 표현의 텐서곱 위의 작용을 정하고 $S$ 가 쌍대표현 위의 작용을 정한다. 군환 $kG$ 는 $\Delta(g)=g\otimes g$, $S(g)=g^{-1}$ 로 Hopf 대수이고, 보편포락대수 $U(\mathfrak g)$ 는 $\Delta(x)=x\otimes 1+1\otimes x$, $S(x)=-x$ 로 Hopf 대수다.
 
-## $U_q(\mathfrak{sl}\_2)$
+## Uq(sl₂)
 
 $q\in k$ 가 $0$ 도 $\pm1$ 도 아니라 하자. $U_q(\mathfrak{sl}\_2)$ 는 생성원 $E,F,K,K^{-1}$ 과 관계
 
@@ -69,7 +69,7 @@ $c\_{W,V}c\_{V,W}\neq\mathrm{id}$ 이므로 이 꼬임은 대칭이 아니다. $
 
 $\mathfrak{sl}\_2$ 의 2차원 표현에서 이 표현의 지표를 매듭의 사영도형마다 모으면 Jones 다항식이 나온다. 같은 구성을 [모듈러 텐서범주](modular-tensor-categories.md)로 추상화한 것이 [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)이다.
 
-## $q$ 가 1 의 거듭제곱근인 경우
+## q 가 1 의 거듭제곱근인 경우
 
 $q$ 가 1 의 원시 $\ell$ 제곱근이면 $E^{\ell}$ 과 $F^{\ell}$ 이 중심에 들어가고 표현론이 달라진다. 유한차원 표현의 범주는 반단순이 아니지만, 양자 차원이 $0$ 인 대상을 모은 부분을 지워 반단순 몫을 얻는다. 그 몫이 단순대상 유한개를 갖는 모듈러 텐서범주다.
 
