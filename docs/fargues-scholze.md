@@ -45,7 +45,7 @@ $$
 
 가 **Fargues–Fontaine 곡선**이다. 다이아몬드 언어로는 $X^{\mathrm{ad}}=\mathcal Y/\varphi^{\mathbb Z}$ 형태의 아디크 공간이다.
 
-## $\mathrm{Bun}\_G$
+## BunG
 
 $G$ 를 $\mathbb Q_p$ 위의 축소군이라 하자. $S\mapsto\lbrace S\ \text{위 상대 곡선 }X_{\mathrm{FF},S}\ \text{의 }G\ \text{다발}\rbrace$ 이 perfectoid 공간의 v 위상에 대해 스택을 이루고, 이를 $\mathrm{Bun}\_G$ 라 쓴다. Fargues 의 정리가 그 점들을
 

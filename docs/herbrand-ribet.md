@@ -105,7 +105,7 @@ $c$ 가 정의하는 확대가 $p$ 밖에서 불분기여야 류군의 원소가
 
 상한은 소멸자나 [Euler 계](euler-systems.md)로, 하한은 합동으로 얻는 분담이 산술 기하 전반에서 반복된다. Iwasawa 주추측의 두 나눔이 이 두 기술에 대응하고, 타원곡선 쪽에서는 Kato 의 Euler 계가 상한을, Skinner–Urban 의 Eisenstein 합동이 하한을 준다.
 
-## 지표 $\omega^{1-k}$
+## 지표 ω¹⁻ᵏ
 
 $\ast$ 가 사는 곳이 $H^1(G,\mathbb F_p(\omega^{k-1}))$ 이므로 대응하는 확대에서 $\Delta$ 가 $\omega^{k-1}$ 로 작용한다. Kummer 이론으로 류군 쪽으로 옮기면 쌍대성에서 $\mu_p$ 한 겹이 끼어들어 지표가 $\omega^{2-k}$ 가 아니라 $\omega^{1-k}$ 가 된다.
 

@@ -142,7 +142,7 @@ $$
 
 $p$ 가 정칙이면 $x^{p}+y^{p}=z^{p}$ 에 $p\nmid xyz$ 인 해가 없다. 증명은 $\mathbb Q(\mu_p)$ 에서 좌변을 인수분해한 뒤 유일분해가 깨지는 정도를 류군으로 재고, $p\nmid h$ 를 써서 각 인자를 주 아이디얼로 만든다. Bernoulli 수는 $p\nmid h$ 를 계산 가능한 조건으로 번역한다. 류수를 직접 계산하기는 어렵지만 $B_k$ 를 $\bmod p$ 로 보는 것은 쉽다.
 
-## $p$ 진 $L$ 함수와 Iwasawa 이론
+## p 진 L 함수와 Iwasawa 이론
 
 Kummer 합동이 $L_p(s,\chi)$ 의 존재를 주고, 그 함수의 $\Lambda$ 원소로서의 실현이 Iwasawa 주추측의 해석적 변이 된다. 주추측을 $T=0$ 에서 읽은 것이 Herbrand–Ribet 이며, 그 진술이 $p\mid B_k$ 라는 조건으로 쓰인다.
 

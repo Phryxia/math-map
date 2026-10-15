@@ -73,7 +73,7 @@ $$
 
 $H$ 는 $G$ 의 부분군이 아니다. 계수는 같고 크기는 작다. $\mathrm{SL}\_2$ 의 내시군이 토러스이고, $\mathrm{SO}\_{2n+1}$ 의 내시군이 $\mathrm{SO}\_{2a+1}\times\mathrm{SO}\_{2b+1}$ 꼴이다. 쌍대군 준동형 $\eta:\widehat H\to\widehat G$ 까지 묶은 $(H,\kappa,\eta)$ 를 **내시 자료**라 한다.
 
-## 안정 궤도적분과 $\kappa$ 궤도적분
+## 안정 궤도적분과 κ 궤도적분
 
 $\gamma$ 의 안정 켤레류에 든 $G(F)$ 켤레류 대표들을 $\gamma_1,\dots,\gamma_r$ 이라 하고, 각각에 $\mathfrak D$ 의 원소 $\mathrm{inv}(\gamma,\gamma_i)$ 를 대응시킨다. $\mathfrak D$ 의 지표 $\kappa$ 에 대해
 

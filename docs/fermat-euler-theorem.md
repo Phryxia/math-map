@@ -84,7 +84,7 @@ $$
 
 역원 계산은 [유클리드 알고리즘](euclidean-algorithm.md)의 확장형이 더 빠르다.
 
-## $\varphi$ 의 계산
+## φ 의 계산
 
 $\varphi$ 는 곱셈적이다. 곱셈성은 [중국인의 나머지 정리](chinese-remainder-theorem.md)가 주는 군 동형에서 따라온다.
 

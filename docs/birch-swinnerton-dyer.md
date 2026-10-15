@@ -26,7 +26,7 @@ $P\in E(\mathbb Q)$ 가 무한위수 점이면 $P,2P,3P,\dots$ 가 모두 다르
 
 # 정의
 
-## $L$ 함수
+## L 함수
 
 $a_p=p+1-N_p$ 로 두고 Euler 곱을 만든다.
 
@@ -99,7 +99,7 @@ Gross–Zagier 가 $L$ 의 미분을 기하적 점의 높이로 바꾸고 Kolyva
 
 Heegner 점은 하나뿐이다. $L'(E,1)$ 하나에 점 하나가 대응하므로 순위 1 까지는 점을 공급할 수 있지만, 순위 2 이상에서 필요한 독립적 점들을 만드는 구성이 없다. Gross–Zagier–Kolyvagin 의 방법은 여기서 멈춘다.
 
-## $p$ 진 판본과 Bloch–Kato 추측
+## p 진 판본과 Bloch–Kato 추측
 
 - **$p$ 진 BSD.** $L$ 함수 대신 [$p$ 진 $L$ 함수](p-adic-l-function.md)를 쓰고 Selmer 군의 특성 아이디얼과 비교한다. Iwasawa 주추측이 그 기본 도구이고 고전 BSD 보다 증명된 부분이 많다.
 - **Bloch–Kato 추측.** 임의의 모티브 $M$ 에 대해 $L(M,s)$ 의 소멸 차수와 선행계수를 Selmer 군과 행렬식으로 예측한다. BSD 는 $M=h^1(E)(1)$ 인 경우다.
@@ -107,7 +107,7 @@ Heegner 점은 하나뿐이다. $L'(E,1)$ 하나에 점 하나가 대응하므�
 
 # 활용
 
-## $\text{Ш}$ 의 위수 예측
+## Ш 의 위수 예측
 
 순위 0 곡선에서는 강한 BSD 를 역으로 쓴다. $L(E,1)$ 을 수치로 계산하고 $\Omega_E,c_p,\char35{}E_{\mathrm{tors}}$ 를 구하면
 

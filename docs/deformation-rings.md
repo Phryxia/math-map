@@ -110,7 +110,7 @@ $$
 
 # 성질
 
-## $R=T$
+## R=T
 
 같은 $\bar\rho$ 로 환원되는 고유형식들의 Hecke 대수 $\mathbb T_{\bar\rho}$ 도 $\mathcal C_\Lambda$ 의 대상이고, Galois 표현을 만드는 구성이 자연사상
 

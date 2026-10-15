@@ -58,7 +58,7 @@ $$
 
 $n$ 을 Kolyvagin 소수들의 곱이라 하고 $K_n$ 을 도체 $n$ 의 링 유체, $G_n=\mathrm{Gal}(K_n/K_1)\cong\prod_{\ell\mid n}G_\ell$ 라 쓴다. $G_\ell$ 은 위수 $\ell+1$ 인 순환군이다.
 
-## 유도류 $\kappa_n$
+## 유도류 κₙ
 
 $G_\ell$ 의 생성원 $\sigma_\ell$ 에 대해 $D_\ell=\sum_{i=1}^{\ell}i\thinspace\sigma_\ell^{\thinspace i}$ 로 두고 $D_n=\prod_{\ell\mid n}D_\ell$ 라 하자[^1]. 위수 $m$ 인 순환군의 군환에서 $D=\sum_{i=1}^{m-1}i\thinspace\sigma^i$ 와 자취 $N=\sum_{i=0}^{m-1}\sigma^i$ 는 지수를 한 칸 밀어 상쇄시키면 $(\sigma-1)D=m-N$ 을 만족한다.
 
@@ -184,11 +184,11 @@ $$
 
 Rubin 은 순환체 단수의 Euler 계로 Mazur–Wiles 의 주추측을 다시 증명했다. 주추측은 $\mathbb Q(\mu_{p^\infty})$ 의 이데알류군의 $\chi$ 성분이 이루는 Iwasawa 가군의 특성 아이디얼이 $p$ 진 [Dirichlet $L$ 함수](dirichlet-l-functions.md)가 생성하는 아이디얼과 같다는 진술이다. Euler 계 쪽 증명은 단수와 순환체 단수의 지표가 류수라는 사실(Kummer, Sinnott)에서 한쪽 나눔을 얻고 해석적 류수 공식으로 반대쪽을 채운다.
 
-## BSD 의 $r_{\mathrm{an}}\le1$
+## 해석적 순위 1 이하의 BSD
 
 Gross–Zagier 가 $L'(E/K,1)\ne0\iff y_K$ 무한위수를, Kolyvagin 이 $y_K$ 무한위수 $\Rightarrow$ 순위 1 과 $\text{Ш}$ 유한을 준다. 둘을 합치면 해석적 순위가 0 이거나 1 인 모듈러 타원곡선에서 BSD 의 계수 부분이 따른다. 순위 0 인 경우는 비소실 꼬임을 골라 순위 1 인 상황으로 옮겨 처리하거나, Kato 의 Euler 계로 직접 처리한다.
 
-## $\text{Ш}$ 의 위수 계산
+## Ш 의 위수 계산
 
 Kolyvagin 지표는 계산 가능한 양이다. Heegner 점을 수치적으로 구하고 $\mathcal P_n$ 이 $p$ 로 나뉘는 횟수를 보면 $\text{Ш}[p^\infty]$ 의 위수 상계가 나온다. BSD 공식의 다른 항(실주기, Tamagawa 수, 조절자)으로 얻은 예측값과 상계가 일치하면 위수가 확정된다. 순위 1 곡선의 $\text{Ш}$ 계산이 이 절차를 쓴다.
 

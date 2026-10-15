@@ -52,7 +52,7 @@ $$
 
 증명이 쓰는 것은 완비성과 초거리 부등식뿐이므로, 같은 진술이 완비 [이산부값환](discrete-valuation-rings.md) 전부에서 성립한다. 형식적 멱급수환 $k\lbrack\lbrack t\rbrack\rbrack$ 이 그런 예이고, 거기서는 올리기가 계수를 차수 순으로 결정하는 계산이 된다.
 
-## $\mathbb Q_p$ 에서의 따름
+## Qp 에서의 따름
 
 - $p$ 가 홀소수일 때 $a\in\mathbb Z_p^\times$ 가 $\mathbb Q_p$ 에서 제곱원소일 필요충분조건은 $a\bmod p$ 가 $\mathbb F_p$ 의 제곱잉여인 것이고, $\mathbb Q_p^\times/(\mathbb Q_p^\times)^2$ 의 크기가 $4$ 다. $p=2$ 에서는 $f'=2x$ 가 단원이 아니라 한 자리를 더 봐야 하고 크기가 $8$ 이다.
 - $x^{p-1}-1$ 의 근이 $\mathbb Z_p$ 안에 $p-1$ 개 있다. Teichmüller 대표원이며 $\mathbb Z_p^\times\cong\mu\_{p-1}\times(1+p\mathbb Z_p)$ 를 준다.

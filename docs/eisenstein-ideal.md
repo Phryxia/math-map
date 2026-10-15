@@ -93,7 +93,7 @@ $$
 
 이고 마지막 여섯은 CM(complex multiplication) 점에 대응한다. $163$ 이 여기 나타나는 것과 $e^{\pi\sqrt{163}}$ 이 거의 정수인 것은 같은 사실에서 나온다.
 
-## $\mathbb T$ 의 구조
+## T 의 구조
 
 Mazur 의 계산은 Eisenstein 극대 아이디얼에서의 완비화 $\mathbb T_{\mathfrak m}$ 이 [Gorenstein](gorenstein-rings.md) 이고 $\mathbb Z_p$ 위 유한평탄임까지 준다. 이 성질이 Wiles 의 $R=T$ 논법, Ribet 의 레벨 낮추기, Skinner–Urban 의 Eisenstein 합동에서 반복해 쓰인다. Hecke 대수의 국소 구조를 정확히 아는 방식이 이 논문에서 시작되었다.
 

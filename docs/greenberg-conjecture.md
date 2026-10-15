@@ -22,7 +22,7 @@ $\mu=0$ 은 아벨체에 대해 증명되어 있고(Ferrero–Washington), $\lam
 
 # 정의
 
-## 순환 $\mathbb Z_p$ 확대
+## 순환 Zp 확대
 
 $\mu_{p^{n}}$ 을 차례로 붙여 만든 $\mathbb Q_\infty=\bigcup\mathbb Q(\mu_{p^{n}})^{+}$ 가 $\mathbb Q$ 의 유일한 $\mathbb Z_p$ 확대다. 일반 수체 $F$ 에 대해 $F_\infty=F\mathbb Q_\infty$ 를 **순환 $\mathbb Z_p$ 확대**라 하고, $\Gamma=\mathrm{Gal}(F_\infty/F)\cong\mathbb Z_p$ 로 둔다.
 
@@ -46,7 +46,7 @@ $$
 
 # 성질
 
-## 아벨체에서의 $\mu=0$
+## 아벨체에서의 μ=0
 
 **정리(Ferrero–Washington, 1979).** $F/\mathbb Q$ 가 아벨 확대면 $\mu_p(F)=0$ 이다.
 
@@ -82,7 +82,7 @@ $\lambda^{-}$ 는 $p$ 진 $L$ 함수의 영점을 세는 문제로 번역된다.
 
 # 활용
 
-## $K$ 이론 번역
+## K 이론 번역
 
 Quillen–Lichtenbaum 이후 $\mathbb Z$ 의 대수적 $K$ 군은 순환체의 에탈 코호몰로지로 계산되고, 짝수 지표 성분의 소멸이 $K_{4k}(\mathbb Z)=0$ 과 맞물린다. Greenberg 추측이 참이면 이 소멸이 탑 전체에서 유지된다. 정수환의 위상적 불변량이 실수체의 Iwasawa 불변량과 이어진다.
 

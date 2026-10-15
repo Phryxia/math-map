@@ -49,7 +49,7 @@ $$
 
 소수 $\ell$ 에 대해 $I_\ell\subset G_{\mathbb Q}$ 를 관성군이라 할 때 $\rho(I_\ell)=1$ 이면 $\ell$ 에서 비분기다. 조건 1 은 유한집합 $S$ 밖의 모든 $\ell$ 에서 비분기라는 뜻이고, 이는 $\rho$ 가 $\mathbb Q$ 의 최대 $S$ 비분기 확대의 Galois 군 $G_{\mathbb Q,S}$ 를 통해 인수분해된다는 것과 같다. Hermite–Minkowski 정리가 $G_{\mathbb Q,S}$ 를 유한생성에 가깝게 통제한다.
 
-## 조건 2: $p$ 에서 de Rham
+## 조건 2: p 에서 de Rham
 
 $\rho|\_{G_{\mathbb Q_p}}$ 가 de Rham 이라 함은 $D_{\mathrm{dR}}(\rho)=\bigl(B_{\mathrm{dR}}\otimes\rho\bigr)^{G_{\mathbb Q_p}}$ 의 차원이 $n$ 과 같다는 것이다. Berger 의 $p$ 진 모노드로미(monodromy) 정리로 이는 **잠재적 반안정**과 동치다. 즉 유한 확대 $L/\mathbb Q_p$ 위에서 $\rho$ 가 반안정이 된다는 조건이다.
 

@@ -60,7 +60,7 @@ $$
 
 $\mathbf h$ 는 $T$ 의 작용을 통해 $\Lambda$ 대수이고 $\Lambda$ 위 유한 평탄이다. $\mathbf h$ 의 기약 성분 $\mathbb I$ 는 $\Lambda$ 위 유한 평탄인 국소 정역이다.
 
-## $\Lambda$ 진 고유형식
+## Λ 진 고유형식
 
 $\mathbb I$ 계수의 형식 급수
 
