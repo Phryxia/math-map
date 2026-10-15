@@ -16,7 +16,7 @@ $$
 
 완성된 $\widehat h=h+(\text{보정항})$ 은 모듈러이지만 정칙이 아니고, 원래의 $h$ 는 정칙이지만 모듈러가 아니다. 정칙성과 모듈러성 중 하나를 포기해야 하고 포기한 양을 재는 것이 shadow 다. $g=0$ 이면 [모듈러 형식](modular-forms.md)으로 돌아온다. 모듈러 형식 공간을 한 겹 넓힌 것이고 넓힌 방향을 [theta 급수](theta-series.md)가 통제한다.
 
-완성 과정은 Appell–Lerch 합, 부정부호 theta 급수, [Eisenstein 급수](eisenstein-series.md)의 무게 $3/2$ 판본에서 같은 모습으로 나타난다. 셋 모두 같은 형태의 보정항을 요구하고 그 공통 구조가 조화 Maass 형식이다.
+완성 과정은 Appell–Lerch 합, 부정부호 theta 급수, [Eisenstein 급수](eisenstein-series.md)의 무게 $3/2$ 판본에서 같은 모습으로 나타난다. 셋 모두 같은 형태의 보정항을 요구하고 그 공통 구조가 조화 [Maass 형식](maass-forms.md)이다.
 
 # 직관
 
@@ -92,7 +92,7 @@ $$
 \widehat\mu(u,v;\tau)=\mu(u,v;\tau)+\tfrac{i}{2}R(u-v;\tau)
 $$
 
-가 무게 $1/2$ Jacobi 형식의 변환법칙을 만족함을 보였다.
+가 무게 $1/2$ [Jacobi 형식](jacobi-forms.md)의 변환법칙을 만족함을 보였다.
 
 $$
 R(u;\tau)=\sum_{n\in\mathbb Z+\frac12}\left\lbrace\mathrm{sgn}(n)-E\negthinspace\left((n+a)\sqrt{2y}\right)\right\rbrace(-1)^{n-\frac12}e^{-2\pi i n u}q^{-n^2/2}
@@ -146,7 +146,7 @@ $$
 \alpha(n)=\frac{(-1)^{n+1}}{\sqrt{n-\frac1{24}}}\sum_{c\gt 0}\frac{A_{2c}(n)}{c}\thinspace I_{1/2}\negthinspace\left(\frac{\pi\sqrt{24n-1}}{12c}\right)+O(1)
 $$
 
-Andrews–Dragonette 추측이 이 공식의 따름결과로 해결되었다. [분할수](partitions.md) 쪽 원법의 계산이 재사용되고 Kloosterman 합 자리에 다른 곱수계가 들어간다.
+Andrews–Dragonette 추측이 이 공식의 따름결과로 해결되었다. [분할수](partitions.md) 쪽 원법의 계산이 재사용되고 [Kloosterman 합](kloosterman-sums.md) 자리에 다른 곱수계가 들어간다.
 
 ## 단위근에서의 점근
 
@@ -166,7 +166,7 @@ Ramanujan 의 mock theta 함수는 전부 무게 $1/2$ 이고 shadow 는 무게 
 
 # 활용
 
-- **[Umbral moonshine](umbral-moonshine.md).** K3 타원 종수를 $N=4$ 지표로 분해하면 짧은 지표 쪽 계수가 mock 모듈러 형식을 이룬다. 23 개 사례 각각에서 shadow 가 Niemeier 격자의 근계 theta 급수이며, 이 점이 괴물 달빛과의 차이다.
+- **[Umbral moonshine](umbral-moonshine.md).** K3 타원 종수를 $N=4$ 지표로 분해하면 짧은 지표 쪽 계수가 mock 모듈러 형식을 이룬다. 23 개 사례 각각에서 shadow 가 [Niemeier 격자](niemeier-lattices.md)의 근계 theta 급수이며, 이 점이 괴물 달빛과의 차이다.
 - **분할수의 계수 합동.** rank [생성함수](generating-functions.md)의 합동이 mock 모듈러성으로 설명된다. Dyson 의 rank 는 mock 을, crank 는 보통 Jacobi 형식을 준다.
 - **블랙홀 엔트로피.** $N=4$ 끈이론에서 단일중심 BPS(Bogomolny–Prasad–Sommerfield) 상태의 축퇴도가 mock Jacobi 형식의 계수로 나온다. 다중중심 상태를 빼는 조작이 $\mathrm{sgn}$ 을 넣는 자리다.
 - **Gross–Zagier 와 높이.** Zagier 의 무게 $3/2$ Eisenstein 급수가 Heegner 점 높이 생성함수의 Eisenstein 부분으로 등장하고, 계급수가 거기서 기하적 의미를 얻는다.

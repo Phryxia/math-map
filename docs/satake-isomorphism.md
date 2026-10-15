@@ -109,7 +109,7 @@ $r$ 이 표준표현이면 표준 $L$ 인자 $\prod_i(1-\alpha_iq^{-s})^{-1}$ �
 
 # 성질
 
-## $\mathrm{GL}\_2$ 의 명시적 상
+## GL₂ 의 명시적 상
 
 $G=\mathrm{GL}\_2(\mathbb Q_p)$ 와 $K=\mathrm{GL}\_2(\mathbb Z_p)$ 에서 기저를 $a\ge0$ 에 대한 $T(p^b,p^{a+b})=1_{K\thinspace\mathrm{diag}(p^b,p^{a+b})K}$ 로 쓰면
 
@@ -181,7 +181,7 @@ $c$ 인자는 Harish-Chandra 의 $c$ 함수의 $p$ 진 판이고, [Eisenstein �
 
 $\mathrm{GL}\_n$ 의 첨점 자기동형 표현이 모든 자리에서 온도적이라는 **Ramanujan–Petersson 추측**은 $n\ge2$ 에서 일반적으로 증명되지 않았다[^2]. 무게 $k$ 의 정칙 첨점형식에 대해서는 Deligne 이 Weil 추측으로 증명했다. 이때 Satake 매개변수가 단위원 위에 있고 $\alpha_p\beta_p=1$ 이므로 $\alpha_p=e^{i\theta_p}$ , $\beta_p=e^{-i\theta_p}$ 로 쓴다. 이 각 $\theta_p$ 의 분포를 묻는 것이 [Sato–Tate](sato-tate.md) 문제다.
 
-## 국소 $L$ 인자와 Euler 인자
+## 국소 L 인자와 Euler 인자
 
 Satake 매개변수가 $L$ 인자를 주고, 그 기하급수 전개가 Hecke 고윳값 수열을 준다.
 
@@ -227,11 +227,11 @@ $$
 b:\mathcal H(G,K)\to\mathcal H(H,K_H)
 $$
 
-으로 정의된다. 이 $b$ 가 궤도적분 수준에서도 맞는다는 것이 **기본 보조정리**이고, Ngô Bảo Châu 가 Hitchin 올뭉치의 기하로 증명했다. 진술 자체가 Satake 동형 위에서 쓰인다.
+으로 정의된다. 이 $b$ 가 궤도적분 수준에서도 맞는다는 것이 **[기본 보조정리](fundamental-lemma.md)**이고, Ngô Bảo Châu 가 Hitchin 올뭉치의 기하로 증명했다. 진술 자체가 Satake 동형 위에서 쓰인다.
 
 ## 기하학적 Satake
 
-동형의 오른쪽이 표현환이라는 것은 Grothendieck 군 수준의 진술이다. 이것을 [범주](category.md) 수준으로 올린 것이 **기하학적 Satake 대응**이다. 아핀 Grassmann 다양체 $\mathrm{Gr}\_G=G(F)/G(\mathcal O)$ 위의 $G(\mathcal O)$ 동변 퍼버스 층의 범주가 텐서 범주로서 $\widehat G$ 의 표현 범주와 동치다.
+동형의 오른쪽이 표현환이라는 것은 Grothendieck 군 수준의 진술이다. 이것을 [범주](category.md) 수준으로 올린 것이 **[기하학적 Satake 대응](geometric-satake.md)**이다. 아핀 Grassmann 다양체 $\mathrm{Gr}\_G=G(F)/G(\mathcal O)$ 위의 $G(\mathcal O)$ 동변 퍼버스 층의 범주가 텐서 범주로서 $\widehat G$ 의 표현 범주와 동치다.
 
 $$
 \mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\thickspace\simeq\thickspace\mathrm{Rep}(\widehat G)
