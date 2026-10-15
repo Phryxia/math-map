@@ -175,10 +175,24 @@ $$
 
 ## 더 알아보기
 
+### 부호화
+
+- [율왜곡 이론](rate-distortion-theory.md)
+
+### 추정과 모형 비교
+
 - [Fisher 정보](fisher-information.md)
-- [대편차 원리](large-deviations.md)
+- [상호정보량 추정](mutual-information-estimation.md)
+- [정보 기준](information-criteria.md)
+
+### 알고리즘
+
 - [기댓값 최대화 알고리즘](em-algorithm.md)
-- [변분 오토인코더](variational-autoencoder.md)
+- [변분 추론](variational-inference.md)
 - [Sinkhorn 알고리즘](sinkhorn.md)
+
+### 확률의 점근
+
+- [대편차 원리](large-deviations.md)
 
 #information_theory #probability #statistics #machine_learning

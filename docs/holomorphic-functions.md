@@ -140,6 +140,7 @@ $$
 ### 다른 분야에서의 쓰임
 
 - [Riesz–Thorin 정리](riesz-thorin.md)
+- [Weyl–Titchmarsh m 함수](weyl-titchmarsh-m-function.md)
 - [모듈러 형식](modular-forms.md)
 - [Riemann–Roch 정리](riemann-roch.md)
 - [Kähler 다양체](kahler-manifolds.md)

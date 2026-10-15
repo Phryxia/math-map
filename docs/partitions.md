@@ -100,7 +100,7 @@ $$
 p(n)=\frac1{\pi\sqrt2}\sum_{k\ge1}A_k(n)\sqrt k\thinspace\frac{d}{dn}\left(\frac{\sinh\big(\frac\pi k\sqrt{\frac23(n-\frac1{24})}\big)}{\sqrt{n-\frac1{24}}}\right)
 $$
 
-$A_k(n)$ 은 Kloosterman 합 꼴의 유한합이다. 몇 항만 더해 반올림하면 $p(n)$ 이 나온다.
+$A_k(n)$ 은 [Kloosterman 합](kloosterman-sums.md) 꼴의 유한합이다. 몇 항만 더해 반올림하면 $p(n)$ 이 나온다.
 
 ## Ramanujan 합동
 
@@ -126,7 +126,7 @@ Dyson 은 분할에 rank 라는 통계량을 붙여 $5,7$ 의 경우 분할 집�
 
 - **대칭군의 표현.** $S_n$ 의 기약표현은 $n$ 의 분할과 일대일 대응한다. 그래서 $p(n)$ 이 기약표현의 개수이고, 켤레류의 개수이기도 하다. Young 도표의 조합이 표현론의 계산을 그대로 대신한다.
 - **통계역학.** 에너지 준위가 정수인 보손계의 상태수가 분할수다. $\log p(n)\sim c\sqrt n$ 이 엔트로피를 주고, 여기서 Hagedorn 온도 같은 물리량이 나온다.
-- **가환대수와 기하.** 유한 아벨 $p$ 군의 동형류가 분할로 분류되고, Hilbert 스킴과 Nakajima 다양체의 셈 문제에서도 분할이 기본 단위로 등장한다.
+- **가환대수와 기하.** 유한 아벨 $p$ 군의 동형류가 분할로 분류되고, [Hilbert 스킴](hilbert-scheme.md)과 Nakajima 다양체의 셈 문제에서도 분할이 기본 단위로 등장한다.
 - **정수론의 도구.** $\eta$ 몫이 만드는 모듈러 형식은 [theta 급수](theta-series.md)와 함께 이차형식의 표현 개수를 세는 데 쓰인다.
 - **집합 분할과의 대비.** 원소를 구별하지 않고 개수만 보면 분할수 $p(n)$ 이 세고, 원소를 구별하면 [Bell 수](bell-numbers.md)가 센다. $n=4$ 에서 $p(4)=5$ 이고 $B_4=15$ 다.
 

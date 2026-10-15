@@ -158,6 +158,7 @@ $\mathbb R$ 와 $\mathbb Q_p$ 는 $\mathbb Q$ 의 완비화로서 대등하다. 
 ### 국소체의 구조
 
 - [Hensel 보조정리](hensel-lemma.md)
+- [Witt 벡터](witt-vectors.md)
 - [아델](adeles.md)
 - [국소 유체론](local-class-field-theory.md)
 - [Newton 다각형](newton-polygon.md)

@@ -95,6 +95,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Tucker 보조정리](tucker-lemma.md)
 
 #algebraic_topology #topology #combinatorics #graph_theory #theorem

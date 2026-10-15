@@ -4,7 +4,7 @@
 
 해석학은 극한으로 정의되는 대상을 다룬다. 물음은 "이 근사가 무엇으로 수렴하고, 그 극한이 원래의 성질을 보존하는가" 다. 답은 수렴의 종류를 구분하는 데서 나온다. 점별수렴은 연속성을 보존하지 않고 균등수렴은 보존한다는 사실이 이 분야의 첫 분기점이다.
 
-해석학의 갈래는 다섯 줄기다. 극한과 연속, 미분과 적분, 급수와 적분변환, 발산급수를 다루는 점근해석, 작용소의 $L^p$ 유계성을 다루는 보간과 특이적분이다. 측도론으로 적분을 다시 세우는 갈래는 [Lebesgue 적분](lebesgue-integral.md)에서, 복소평면으로 넘어가는 갈래는 [정칙함수](holomorphic-functions.md)에서, 무한차원 공간의 선형해석은 [Hilbert 공간](hilbert-spaces.md)과 [Banach 공간](banach-spaces.md)에서 이어진다.
+해석학의 갈래는 극한과 연속, 함수족이 수렴하는 조건을 재는 함수공간의 정리, 거리를 상수배 이내로 옮기는 Lipschitz 조건, 미분과 적분, 급수와 적분변환, 발산급수를 다루는 점근해석, 작용소의 $L^p$ 유계성을 다루는 보간과 특이적분, 작용소 노름과 스펙트럼을 다루는 작용소와 함수해석이다. 측도론으로 적분을 다시 세우는 갈래는 [Lebesgue 적분](lebesgue-integral.md)에서, 복소평면으로 넘어가는 갈래는 [정칙함수](holomorphic-functions.md)에서, 무한차원 공간의 선형해석은 [Hilbert 공간](hilbert-spaces.md)과 [Banach 공간](banach-spaces.md)에서 이어진다.
 
 시작은 [수열의 극한](limits.md)과 [연속함수](continuity.md)다. 거기서 [미분](derivative.md)과 [Riemann 적분](riemann-integral.md)이 갈라지고 [미적분학의 기본 정리](fundamental-calculus.md)에서 다시 만난다. [완비성](completeness.md)은 극한의 존재를 보장하는 축이고, [축약사상 고정점 정리](banach-fixed-point.md)를 거쳐 미분방정식의 해의 존재로 이어진다.
 
@@ -87,15 +87,25 @@ graph TD
 - [최단강하선 문제](brachistochrone.md): 낙하 시간 범함수와 Beltrami 항등식, 사이클로이드 해와 등시성
 - [현수선](catenary.md): 길이를 고정한 위치 에너지 최소화, 쌍곡코사인 해와 수평 장력의 뜻
 - [Brunn–Minkowski 부등식](brunn-minkowski.md): Minkowski 합의 부피 하한, 상자 분해 증명과 Prékopa–Leindler 부등식
+- [혼합부피](mixed-volumes.md): Minkowski 합의 부피를 계수별로 분해한 양, Steiner 공식과 Alexandrov–Fenchel 부등식
+- [내재부피](intrinsic-volumes.md): 주변 차원에 의존하지 않는 기하량의 족, Hadwiger 정리와 Kubota 투영 공식
+- [McMullen 분해](mcmullen-decomposition.md): 평행이동 불변 평가의 공간을 동차차수로 가른 직합, Alesker 조밀성 정리
 - [등주부등식](isoperimetric-inequality.md): 길이를 고정한 넓이의 최대, 정류 곡선이 원인 것과 Hurwitz 의 Fourier 증명
 - [Sturm–Liouville 이론](sturm-liouville.md): 2 계 고윳값 문제의 직교성과 완전성, Sturm 진동정리
 - [Peano 존재정리](peano-existence-theorem.md): 연속성만으로 얻는 해의 존재, 유일성의 실패와 Osgood 조건
+- [점성해](viscosity-solutions.md): 시험함수와의 접촉으로 정의하는 약한 해, 비교 원리와 Hopf-Lax 공식
+- [엔트로피 해](entropy-solutions.md): 보존법칙의 불연속 해를 가려내는 볼록 부등식, Rankine-Hugoniot 조건과 충격파·희박파의 구별
+- [Riemann 문제](riemann-problem.md): 두 상수 상태를 잇는 자기유사 해, 파 곡선과 Lax 의 존재 정리
+- [솔리톤](solitons.md): 분산과 비선형의 상쇄로 모양이 유지되는 고립파, Hirota 쌍선형 꼴과 충돌의 탄성
+- [sine-Gordon 방정식](sine-gordon-equation.md): 위상 전하로 분류되는 kink 와 breather, Bäcklund 변환과 상수 음곡률 곡면의 대응
 
 ## 급수와 변환
 
 - [급수의 수렴판정](series-convergence.md): 비교, 비율, 근, 적분, 교대급수 판정과 재배열
 - [멱급수](power-series.md): 수렴반경과 해석성
+- [쌍곡함수](hyperbolic-functions.md): 지수함수를 짝과 홀로 가른 두 함수, 삼각 항등식과 부호만 다른 항등식
 - [Fourier 급수](fourier-series.md): 직교계 전개와 $L^2$ 수렴
+- [Wirtinger 부등식](wirtinger-inequality.md): 평균이 $0$ 인 주기함수를 도함수의 $L^2$ 노름으로 누르는 부등식, 최적 상수와 등호 조건
 - [Fourier 변환](fourier-transform.md): 실직선 위의 적분변환과 반전 공식, Plancherel 정리
 - [불확정성 원리](uncertainty-principle.md): 함수와 변환의 분산의 곱에 대한 하한
 - [이산 Fourier 변환](fourier.md): 유한 순환군 위의 Fourier 해석

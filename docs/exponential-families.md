@@ -199,5 +199,6 @@ $$
 ## 더 알아보기
 
 - [일반화선형모형](generalized-linear-models.md)
+- [조건부 무작위장](conditional-random-fields.md)
 
 #statistics #probability #information_theory

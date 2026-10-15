@@ -2,7 +2,7 @@
 
 # 개요
 
-조합론은 유한한 대상을 세고, 배열하고, 극단적인 구성이 존재하는지 묻는 분야다. 기본 물음은 "몇 개인가" 이지만 답하는 방식이 갈래를 만든다. 직접 세는 대신 생성함수로 세고, 존재를 보이는 대신 확률로 보이고, 개별 대상 대신 대칭군의 표현으로 센다. 조합론의 갈래는 네 줄기다. 세기의 기초, 극단·확률 조합론, 그래프와 매트로이드, 그리고 표현론과 맞닿은 대수적 조합론이다.
+조합론은 유한한 대상을 세고, 배열하고, 극단적인 구성이 존재하는지 묻는 분야다. 기본 물음은 "몇 개인가" 이지만 답하는 방식이 갈래를 만든다. 직접 세는 대신 생성함수로 세고, 존재를 보이는 대신 확률로 보이고, 개별 대상 대신 대칭군의 표현으로 센다. 조합론의 갈래는 세기의 기초, 집합 분할과 조합적 종, 원소쌍이 고르게 나타나는 설계와 접촉 구조, 극단·확률 조합론, 그래프와 매트로이드, 표현론과 맞닿은 대수적 조합론, 격자와 부호다.
 
 시작점은 [셈의 기본 원리](counting-principles.md)다. 거기서 [비둘기집 원리](pigeonhole-principle.md)로 가면 [Ramsey 이론](ramsey-theory.md)과 [확률적 방법](probabilistic-method.md)이 이어지고, [생성함수](generating-functions.md)로 가면 [분할수](partitions.md)를 거쳐 [모듈러 형식](modular-forms.md)과 만난다. 대수적 조합론은 [근계](root-systems.md)와 [Weyl 지표 공식](weyl-character-formula.md)에서 [Schur 다항식](schur-polynomials.md)으로 내려온다.
 
@@ -30,6 +30,7 @@ graph TD
 - [비둘기집 원리](pigeonhole-principle.md), [포함배제 원리](inclusion-exclusion.md): 존재와 개수의 두 기본 도구
 - [생성함수](generating-functions.md) → [분할수](partitions.md): 수열을 함수로 바꿔 세기
 - [Catalan 수](catalan-numbers.md): 괄호 배열, 이진트리, 삼각분할을 한 수열이 센다
+- [Ehrhart 다항식](ehrhart-polynomial.md): 격자 다면체를 팽창했을 때의 격자점 개수, 계수가 주는 부피와 Pick 정리
 - [Burnside 보조정리](burnside-lemma.md): 궤도 개수를 고정점 개수의 평균으로 세기
 - [Pólya 세기 정리](polya-enumeration.md): 대칭을 무시한 색칠의 개수
 - [Laplace 방법](laplace-method.md): 세는 수의 점근
@@ -41,11 +42,16 @@ graph TD
 - [Turán 정리](turan-theorem.md): $K_{r+1}$ 을 금지한 그래프의 최대 간선 수와 그 값을 주는 Turán 그래프
 - [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md): 조각 쌍마다 간선이 고른 분할, 삼각형 제거 보조정리와 Roth 정리
 - [Erdős–Stone 정리](erdos-stone-theorem.md): 금지 부분그래프의 극단 간선 수가 색칠수로 정해진다는 정리
+- [그래폰](graphons.md): 조밀 그래프 열의 극한인 대칭 가측함수, cut 거리와 그래폰 공간의 콤팩트성
+- [Sidorenko 추측](sidorenko-conjecture.md): 이분그래프의 준동형 밀도를 무작위 그래프가 최소화한다는 추측, 나무와 짝수 사이클에서의 증명
+- [공통 그래프](common-graphs.md): 단색 사본의 밀도 합을 무작위 색칠이 최소화하는 그래프, Goodman 정리와 $K_4$ 의 반례
 - [Dilworth 정리](dilworth-theorem.md): 사슬 덮개와 반사슬의 최소최대 정리, Erdős–Szekeres 정리
 - [Sperner 정리](sperner-theorem.md): 부분집합 격자의 최대 반사슬과 LYM(Lubell–Yamamoto–Meshalkin) 부등식
 - [Erdős–Ko–Rado 정리](erdos-ko-rado.md): 교차족의 최대 크기, Katona 의 순환 배열 세기
 - [Littlewood–Offord 문제](littlewood-offord.md): 부호합의 반집중, 반사슬 논법이 주는 상한
 - [Sperner 보조정리](sperner-lemma.md): 단체의 이름표가 강제하는 완전 단체, Brouwer 고정점 정리의 조합적 증명
+- [Tucker 보조정리](tucker-lemma.md): 반대칭 이름표가 강제하는 보완 간선, Borsuk–Ulam 정리의 조합적 판본
+- [목걸이 분할 정리](necklace-splitting.md): $t$ 종류의 구슬을 $q$ 명에게 공평히 나누는 절단 $t(q-1)$ 개
 - [KKM 정리](kkm-theorem.md): 면 구조를 따르는 닫힌 덮개의 공통점, Brouwer 고정점 정리와의 동치
 ## 분할과 조합적 종
 
@@ -93,6 +99,7 @@ graph TD
 
 - [구 채우기](sphere-packing.md) → [Niemeier 격자](niemeier-lattices.md) → [Schellekens 목록](schellekens-list.md)
 - [Mathieu 군](mathieu-groups.md): 부호와 산재 단순군
+- [Leech 격자](leech-lattice.md): Golay 부호로 좌표를 걸러 얻는 24 차원 격자, 접촉수 196560 과 Conway 군, 깊은 구멍과 Niemeier 격자 23 개의 대응
 - [theta 급수](theta-series.md), [Siegel–Weil 공식](siegel-weil.md): 격자 벡터 세기와 모듈러 형식
 - [Mock 모듈러 형식](mock-modular-forms.md), [Dyson 의 rank 와 crank](dyson-rank-crank.md): 분할수의 합동
 

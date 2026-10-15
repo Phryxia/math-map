@@ -4,7 +4,7 @@
 
 최적화는 제약 아래에서 목적함수를 최소화하는 문제를 다룬다. 물음은 "국소 최적해가 전역 최적해인가, 그리고 최적해를 몇 번의 반복으로 찾는가" 이고, 답을 가르는 조건이 볼록성이다. 볼록 문제에서는 두 물음이 모두 풀리고, 볼록하지 않으면 둘 다 일반적으로 어렵다.
 
-최적화의 갈래는 네 줄기다. 볼록성과 쌍대성의 이론, 반복법으로 해를 찾는 알고리즘, 조합 문제를 완화해 푸는 선형·반정부호 계획법, 그리고 확률분포 사이의 거리를 최소화하는 최적 수송이다. 근사 알고리즘의 복잡도 쪽은 [PCP 정리](pcp-theorem.md)(probabilistically checkable proof)와 [유일게임 추측](unique-games.md)에 있다.
+최적화의 갈래는 볼록성과 쌍대성의 이론, 반복법으로 해를 찾는 알고리즘, 조합 문제를 완화해 푸는 선형·반정부호 계획법, 여러 주체의 목적이 맞서는 게임과 균형, 확률분포 사이의 거리를 최소화하는 최적 수송이다. 근사 알고리즘의 복잡도 쪽은 [PCP 정리](pcp-theorem.md)(probabilistically checkable proof)와 [유일게임 추측](unique-games.md)에 있다.
 
 시작은 [볼록성](convexity.md)이다. 거기서 [Lagrange 쌍대성](lagrange-duality.md)이 이론의 축으로, [경사하강법](gradient-descent.md)이 알고리즘의 축으로, [선형계획법](linear-programming.md)이 조합 최적화의 축으로 갈라진다.
 
@@ -14,6 +14,8 @@
 graph TD
   VS["벡터 공간"] --> CX["볼록성"]
   MS["거리 공간"] --> CX
+  CX --> SG["부분미분"]
+  SG --> CS["Clarke 준미분"]
   CX --> LD["Lagrange 쌍대성과 KKT"]
   CX --> GD["경사하강법"]
   CX --> LP["선형계획법"]
@@ -39,6 +41,8 @@ graph TD
 
 - [볼록성](convexity.md): 볼록집합과 볼록함수, 국소 최적해가 전역 최적해가 되는 조건
 - [준볼록 함수](quasiconvex-functions.md): 수준집합만 볼록인 함수, 이분 탐색으로 푸는 최소화
+- [부분미분](subdifferential.md): 꺾인 볼록 함수에서 기울기를 대신하는 집합, $0$ 을 품는 것이 최적성 조건
+- [Clarke 준미분](clarke-subdifferential.md): 볼록하지 않은 Lipschitz 함수에서 기울기 극한의 볼록껍질로 세우는 준미분
 - [볼록 공액](convex-conjugate.md): 함수를 받침 아핀 함수의 모임으로 바꾸는 변환, Fenchel–Moreau 정리
 - [Lagrange 쌍대성](lagrange-duality.md): 제약을 쌍대변수로 옮기는 변환과 최적성 조건
 - [압축 센싱](compressed-sensing.md): 미지수보다 적은 측정에서 희소해를 복원하는 $\ell\_1$ 최소화, 제한 등거리 성질
@@ -54,6 +58,8 @@ graph TD
 - [분산 축소 경사법](variance-reduced-gradient-methods.md): 항별 기울기를 기억해 추정량의 분산을 없애는 SVRG 와 SAGA
 - [Kiefer–Wolfowitz 절차](kiefer-wolfowitz.md): 함숫값만 관측할 때 차분으로 기울기를 흉내 내는 반복, 동시 섭동과 $t^{-1/3}$ 수렴
 - [Newton 법](newton-method.md): 2 차 정보를 쓰는 국소 이차수렴
+- [신뢰영역 방법](trust-region.md): 2 차 모형을 믿을 반경 안에서 최소화하는 반복, 감소 비율로 반경을 갱신하는 전역 수렴
+- [비선형 최소제곱](nonlinear-least-squares.md): 잔차 제곱합의 최소화, Jacobian 으로 Hessian 을 근사하는 Gauss–Newton 과 감쇠를 더한 Levenberg–Marquardt
 - [준Newton 법](quasi-newton-methods.md): secant 조건으로 Hessian 근사를 갱신하는 BFGS 와 L-BFGS, 초선형 수렴
 
 ## 선형·반정부호 계획법
@@ -70,6 +76,8 @@ graph TD
 
 - [Nash 균형](nash-equilibrium.md): 전략형 게임의 혼합전략 균형, 고정점 논증과 minimax 값, 계산의 복잡도
 - [상관균형](correlated-equilibrium.md): 공통 신호를 보고 행동을 고르는 균형, 선형계획 표현과 후회 최소화의 수렴
+- [곱셈 가중치 절차](multiplicative-weights.md): 누적 손실의 지수로 가중치를 두는 온라인 절차, $O(\sqrt{T\log n})$ 후회 상한과 선형계획 근사해
+- [가격 무정부](price-of-anarchy.md): 가장 나쁜 균형의 사회적 비용과 최적 비용의 비, 아핀 지연에서 $4/3$ 유계와 Braess 역설
 
 ## 최적 수송
 

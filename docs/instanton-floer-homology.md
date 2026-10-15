@@ -88,7 +88,7 @@ $$
 
 > **함자성.** 호몰로지 3 구 $\Sigma_0,\Sigma_1$ 사이의 4 차원 코보디즘 $W$ 는 준동형 $\Phi_W:HF_\ast(\Sigma_0)\to HF_{\ast+d}(\Sigma_1)$ 을 유도하고, 코보디즘을 이어 붙이면 준동형이 합성된다.
 
-경계가 있는 4 다양체의 Donaldson 불변량은 수가 아니라 경계의 Floer 군 안의 원소가 된다. 4 다양체를 둘로 잘랐을 때 각 조각이 주는 원소를 짝지으면 전체의 불변량이 나오고, 이 자르고 붙이기가 위상장론의 공리가 요구하는 구조다.
+경계가 있는 4 다양체의 [Donaldson 불변량](donaldson-invariants.md)은 수가 아니라 경계의 Floer 군 안의 원소가 된다. 4 다양체를 둘로 잘랐을 때 각 조각이 주는 원소를 짝지으면 전체의 불변량이 나오고, 이 자르고 붙이기가 위상장론의 공리가 요구하는 구조다.
 
 ## 수술 완전 삼각형
 
@@ -98,7 +98,7 @@ $$
 \cdots\to HF_\ast(\Sigma_0)\to HF_\ast(\Sigma_1)\to HF_\ast(\Sigma_\infty)\to HF_{\ast-1}(\Sigma_0)\to\cdots
 $$
 
-수술로 다양체를 만들고 완전열로 불변량을 따라가는 방식이 이후 Floer 이론의 표준 도구가 되었다. Heegaard Floer, 매듭 Floer, [Khovanov 호몰로지](khovanov-homology.md)의 사각형 완전열이 같은 형태다.
+수술로 다양체를 만들고 완전열로 불변량을 따라가는 방식이 이후 Floer 이론의 표준 도구가 되었다. [Heegaard Floer 호몰로지](heegaard-floer-homology.md), 매듭 Floer, [Khovanov 호몰로지](khovanov-homology.md)의 사각형 완전열이 같은 형태다.
 
 ## Casson 불변량을 넘는 정보
 
@@ -147,9 +147,10 @@ $c=+1$ 인 경우 표현이 $\pi_1$ 의 몫인 정이십면체군을 지나야 �
 
 - [Casson 불변량](casson-invariant.md)
 - [Morse 이론](morse-theory.md)
+- [Yang–Mills 이론](yang-mills-theory.md)
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Heegaard Floer 호몰로지](heegaard-floer-homology.md)
 
 #algebraic_topology #topology #differential_geometry

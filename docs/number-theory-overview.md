@@ -2,7 +2,7 @@
 
 # 개요
 
-정수론은 정수와 그 확장(대수적 정수, $p$ 진수, 아델)에서 나눗셈, 소수, 합동, 방정식의 정수해를 묻는 분야다. 물음은 초등적이지만 답은 대수, 해석, 기하, 표현론을 전부 동원한다. 정수론의 갈래는 여섯 줄기다. 합동과 소수에서 시작하는 초등 정수론, 정수환의 아이디얼과 유체론으로 가는 대수적 정수론, $\zeta$ 와 $L$ 함수로 소수를 세는 해석적 정수론, 모듈러 형식, 타원곡선과 BSD(Birch–Swinnerton-Dyer) 추측, 그리고 이 모두를 표현론으로 통합하는 Langlands 강령이다.
+정수론은 정수와 그 확장(대수적 정수, $p$ 진수, 아델)에서 나눗셈, 소수, 합동, 방정식의 정수해를 묻는 분야다. 물음은 초등적이지만 답은 대수, 해석, 기하, 표현론을 전부 동원한다. 정수론의 갈래는 합동과 소수에서 시작하는 초등 정수론, 유리수 근사가 해의 유한성을 통제하는 Diophantine 근사와 방정식, 난해성을 안전성의 근거로 삼는 암호와 계산, 정수환의 아이디얼과 유체론으로 가는 대수적 정수론, $\zeta$ 와 $L$ 함수로 소수를 세는 해석적 정수론, 모듈러 형식, 타원곡선과 BSD(Birch–Swinnerton-Dyer) 추측, 대상을 Galois 군의 표현으로 바꿔 읽는 Galois 표현과 $p$ 진 Hodge 이론, 이 모두를 표현론으로 통합하는 Langlands 강령이다.
 
 처음 읽는다면 [정수의 합동](modular-arithmetic.md)에서 시작해 [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md), [이차 상호법칙](quadratic-reciprocity.md)까지 가면 초등 정수론의 기본이 잡힌다. 그 다음 갈림길은 셋이다. 대수 쪽으로 [Dedekind 정역](dedekind-domains.md)과 [대수적 수체](algebraic-number-fields.md), 해석 쪽으로 [소수 정리](prime-number-theorem.md), 기하 쪽으로 [타원곡선](elliptic-curves.md)이다. 셋은 [유체론](class-field-theory.md)과 [모듈러 형식](modular-forms.md)을 거쳐 [Langlands 강령](langlands-program.md)에서 다시 만난다.
 
@@ -26,7 +26,6 @@ graph TD
   MF --> MC["모듈러 곡선"]
   CFT --> LP["Langlands 강령"]
   MF --> LP
-  EC --> LP
   LP --> GR["Galois 표현"] --> PH["p 진 Hodge 이론"]
 ```
 
@@ -79,6 +78,7 @@ graph TD
 
 - [Dedekind 정역](dedekind-domains.md) → [대수적 수체](algebraic-number-fields.md)
 - [대수적 수체](algebraic-number-fields.md) → [Dirichlet 단수 정리](dirichlet-unit-theorem.md): 단수군의 계수와 조절자, 류수 공식
+- [이진 이차형식](binary-quadratic-forms.md): 판별식을 고정한 동치류의 축약 대표와 Gauss 합성이 주는 유형군, 이데알 류군과의 동형
 - [류수 1 문제](class-number-one.md): 소인수분해가 유일한 허이차체 아홉 개, 류수 공식의 비유효성과 특이 모듈러 값으로 얻은 상한
 - [p 진수](p-adic-numbers.md) → [Hensel 보조정리](hensel-lemma.md), [Newton 다각형](newton-polygon.md), [아델](adeles.md)
 - [유체론](class-field-theory.md) → [국소 유체론](local-class-field-theory.md), [Chebotarev 밀도 정리](chebotarev.md), [복소 곱셈](complex-multiplication.md)
@@ -97,14 +97,20 @@ graph TD
 - [Vaughan 항등식](vaughan-identity.md): von Mangoldt 함수를 쌍선형합으로 가르는 항등식, Type I 과 Type II 합의 추정
 - [원법](circle-method.md): 가법적 문제의 해의 개수를 지수합의 주기 적분으로 적고 단위원을 주 호와 부 호로 가르는 절차, Waring 문제와 삼소수 정리
 - [Waring 문제](waring-problem.md): 모든 자연수를 $k$ 제곱수의 합으로 쓰는 데 드는 항의 개수, 모든 수를 덮는 $g(k)$ 와 충분히 큰 수를 덮는 $G(k)$ 의 구분
+- [Kloosterman 합](kloosterman-sums.md): 역원을 지수에 올린 합의 Weil 상계 $2\sqrt p$ 와 Salié 합의 닫힌 꼴, 모듈러 형식의 계수와 원법의 오차항에서의 쓰임
+- [Petersson 공식](petersson-formula.md): 정칙 첨점 형식 기저의 Fourier 계수 가중 합을 대각 항과 Kloosterman 합의 Bessel 가중 합으로 가르는 등식, $L$ 함수의 적률과 비소멸
+- [Kuznetsov 공식](kuznetsov-formula.md): Kloosterman 합의 가중 합과 Maass 형식 계수의 스펙트럼 합을 잇는 등식, 이동 합성곱 합과 아족 평균
 - [소수 간격](prime-gaps.md): 연속한 소수의 차의 하한과 상한, 허용집합과 유계 간격
+- [Cramér 추측](cramer-conjecture.md): 소수를 독립 시행으로 바꾼 모형이 주는 최대 간격 $(\log p)^2$ 와 Maier 정리가 드러낸 모형의 어긋남
 - [Chen 정리](chen-theorem.md): 짝수가 소수와 거의 소수의 합이라는 결론, 가중 체와 전환 원리
 - [Riemann 가설](riemann-hypothesis.md): 영점의 실수부와 소수 계량 함수의 오차, GRH(generalized Riemann hypothesis) 의 응용
 - [쌍 상관 추측](pair-correlation-conjecture.md): 임계선 위 영점의 간격 분포와 무작위 행렬 고윳값 통계의 일치
+- [저수준 영점](low-lying-zeros.md): 족을 모아 재는 임계점 근처 영점의 분포, 세 대칭형 커널과 곡선족의 모노드로미
 - [Poisson 합 공식](poisson-summation.md), [Mellin 변환](mellin-transform.md), [Euler–Maclaurin 공식](euler-maclaurin.md): 해석적 도구
 - [Bernoulli 수](bernoulli-numbers.md) → [Stickelberger 원소](stickelberger.md)
 - [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md): Bernoulli 수의 Kummer 합동으로 $\mathbb Z_p$ 위에 이은 zeta 함수, Iwasawa 대수의 멱급수 표현과 Leopoldt 의 $s=1$ 공식
 - [다중 zeta 값](multiple-zeta-values.md): 순서 조건을 붙인 다중 급수, 스터플·셔플 두 곱셈 규칙과 이중 셔플 관계
+- [p 진 다중 zeta 값](p-adic-multiple-zeta-values.md): 같은 단어의 반복 Coleman 적분, 접기저점 정규화와 p 진 Drinfeld 결합자
 - [Tate 의 논문](tate-thesis.md): $\zeta$ 함수의 아델적 증명
 
 ## 모듈러 형식
@@ -117,6 +123,7 @@ graph TD
 - [Hida 이론](hida-theory.md): 보통 부분으로 자른 형식의 공간을 Iwasawa 대수 위 유한 평탄 가군으로 묶어 무게를 변수로 움직이는 족
 - [고유다양체](eigenvariety.md): $U_p$ 의 특성 멱급수의 영점 자취 위에 Hecke 고윳값을 올린 강체해석공간, 기울기를 열어 둔 족
 - [Siegel 모듈라이 다양체](siegel-modular-variety.md) → [Siegel 모듈러 형식](siegel-modular-forms.md): 주편극 아벨 다양체를 분류하는 Siegel 상반공간의 몫과 그 위 선다발의 절단
+- [Shimura 다양체](shimura-varieties.md): 환원군과 Hermite 대칭영역의 쌍으로 모듈러 곡선과 Siegel 모듈라이 다양체를 한 구성으로 묶은 것. 수체 위의 모형과 코호몰로지 위의 Hecke 작용
 - [Jacobi 형식](jacobi-forms.md): 차수 2 Siegel 형식을 한 변수로 전개한 계수. 지표 1 의 공간이 반정수 가중치 형식과 동형이다
 - [Igusa 불변량](igusa-invariants.md): 종수 2 곡선을 정의하는 이진 6차형식의 불변량 $J_2,J_4,J_6,J_{10}$ 과 그 비로 얻는 모듈라이 공간의 좌표
 - [분할수](partitions.md), [Mock 모듈러 형식](mock-modular-forms.md), [Dyson 의 rank 와 crank](dyson-rank-crank.md), [Borcherds 곱](borcherds-products.md): 조합론과의 접점
@@ -147,6 +154,7 @@ graph TD
 정수론의 대상을 Galois 군의 표현으로 바꿔 읽는다. 모듈러성 정리가 사는 곳이다.
 
 - [Galois 표현](galois-representations.md) → [Galois 표현의 변형환](deformation-rings.md) → [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
+- [Eichler–Shimura 관계](eichler-shimura.md): 모듈러 곡선의 Jacobi 다양체에서 Hecke 작용소가 Frobenius 와 그 쌍대의 합으로 적히는 등식. 고유형식에서 2 차원 Galois 표현을 만드는 자리
 - [p 진 Hodge 이론](p-adic-hodge-theory.md) → [Sen 이론](sen-theory.md), [Fontaine–Mazur 추측](fontaine-mazur.md)
 - [강체해석공간](rigid-analytic-spaces.md): 허용 덮개만 인정하는 Grothendieck 위상 위에 친화 준위를 붙여 비아르키메데스 체에서 해석접속을 되살린 공간
 - [Herbrand–Ribet 정리](herbrand-ribet.md): 류수와 모듈러 형식의 합동

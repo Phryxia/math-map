@@ -33,9 +33,12 @@ graph TD
 ## 추정
 
 - [Glivenko–Cantelli 정리](glivenko-cantelli.md): 경험 분포함수의 균등수렴, Kolmogorov–Smirnov 거리, Dvoretzky–Kiefer–Wolfowitz 부등식
+- [경험 과정](empirical-process.md): 함수족을 지표로 갖는 확률과정, Glivenko–Cantelli 족과 Donsker 족, 덮개수와 묶음수, 사슬 묶기와 Dudley 적분
+- [붓스트랩](bootstrap.md): 경험 분포에서의 재표본 추출, 붓스트랩 분포와 백분위 구간, Donsker 족에서의 타당성, 표본 최대값에서 깨지는 예
 - [최대가능도 추정](maximum-likelihood.md): 가능도함수, 점근 정규성, Fisher 정보량과 Cramér–Rao 하한
 - [기댓값 최대화 알고리즘](em-algorithm.md): 은닉변수 모형의 최대가능도 추정, 증거 하한과 두 단계, 가능도의 단조 증가
 - [Fisher 정보](fisher-information.md): 점수함수의 공분산, 정보 등식, Cramér–Rao 하한, Fisher–Rao 계량
+- [정보기하](information-geometry.md): 분포족을 다양체로 보는 Fisher–Rao 계량, 쌍대 접속과 평평한 좌표계, 자연 경사법
 - [지수족](exponential-families.md): 자연모수와 로그분배함수, 충분통계량, 켤레 사전분포
 - [Bayes 추론](bayesian-inference.md): 사전분포와 사후분포, 사후예측분포, 최대사후추정
 
@@ -56,6 +59,7 @@ graph TD
 - [편향-분산 분해](bias-variance-decomposition.md): 평균제곱오차를 편향의 제곱과 분산으로 가르는 항등식, 축소 추정과 모형 선택의 근거
 - [정칙화](regularization.md): 잔차제곱합에 계수의 크기를 재는 벌점을 더하는 추정, 능형회귀와 라소의 축소와 희소성
 - [교차검증](cross-validation.md): 자료를 나누어 적합에 쓰지 않은 조각으로 오차를 재는 절차, 선형 적합에서의 닫힌 꼴
+- [정보 기준](information-criteria.md): 로그가능도에 모수 개수의 벌점을 더해 모형을 비교하는 양, AIC 와 BIC 의 유도와 두 기준이 갈리는 자리
 
 # 연관 문서
 

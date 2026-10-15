@@ -153,5 +153,6 @@ Gauss 잡음 채널에서 격자 부호가 용량에 접근하고, $E_8$ 과 Lee
 - [최단벡터 문제](shortest-vector-problem.md)
 - [구 채우기](sphere-packing.md)
 - [theta 급수](theta-series.md)
+- [Leech 격자](leech-lattice.md)
 
 #number_theory #linear_algebra #cryptography

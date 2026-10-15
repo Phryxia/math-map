@@ -2,7 +2,7 @@
 
 # 개요
 
-추상대수는 연산의 규칙만 남기고 대상을 잊는다. 군은 대칭을, 환은 덧셈과 곱셈을, 체는 나눗셈까지를 공리화한다. 물음은 "이 공리만으로 무엇이 따라오는가" 와 "구체적 대상이 어느 공리계의 예인가" 다. 추상대수의 갈래는 네 줄기다. 군론, 환과 가군, 체와 Galois 이론, 그리고 Lie 이론과 표현론이다. 정수론으로 넘어가는 대수, 곧 유체론과 Iwasawa 이론은 [정수론 개관](number-theory-overview.md)에 있다.
+추상대수는 연산의 규칙만 남기고 대상을 잊는다. 군은 대칭을, 환은 덧셈과 곱셈을, 체는 나눗셈까지를 공리화한다. 물음은 "이 공리만으로 무엇이 따라오는가" 와 "구체적 대상이 어느 공리계의 예인가" 다. 추상대수의 갈래는 군론, 환과 가군, 체와 Galois 이론, Lie 이론과 표현론이고, 여기에 다항식의 해집합을 다루는 대수다양체와 그 모듈라이가 더해진다. 정수론으로 넘어가는 대수, 곧 유체론과 Iwasawa 이론은 [정수론 개관](number-theory-overview.md)에 있다.
 
 시작은 [군](groups.md)이다. [군 작용](group-actions.md)에서 [Sylow 정리](sylow-theorems.md)와 [Galois 이론](galois-theory.md)이 갈라지고, [환](rings.md)에서 [아이디얼](ideals-quotient-rings.md)을 거쳐 [체](fields.md)와 [가군](modules.md)이 나온다. 연속적인 대칭은 [Lie 대수](lie-algebras.md)에서 시작한다.
 
@@ -48,6 +48,7 @@ graph TD
 - [지표표](character-table.md): 기약지표를 켤레류별로 적은 정사각 배열, 두 직교관계로 표를 채우는 절차
 - [군의 표시](group-presentations.md): 생성원과 관계자로 군을 적는 방법, 낱말 문제
 - [Coxeter 군](coxeter-groups.md): 반사로 생성된 군의 표시, 길이 함수와 Bruhat 순서
+- [쌍곡군](hyperbolic-groups.md): Cayley 그래프의 측지삼각형이 일정한 폭 안에서 얇은 군, 낱말 문제의 선형 시간 해법
 - [Mathieu 군](mathieu-groups.md), [땋임군](braid-groups.md): 조합론·위상과 맞닿은 군
 
 ## 환과 아이디얼
@@ -72,11 +73,13 @@ graph TD
 
 - [가군](modules.md) → [텐서곱](tensor-products.md) → [유도 함자](derived-functors.md): 환 위의 벡터 공간과 완전성의 실패를 재는 Tor, Ext
 - [완전열](exact-sequences.md): 상과 핵이 맞물린 사슬, 짧은 완전열과 뱀 보조정리
+- [사슬 복합체](chain-complexes.md): 합성이 0 인 가군의 열, 호몰로지와 호모토피 불변성, 짧은 완전열이 주는 긴 완전열
 - [PID 위의 유한생성 가군](finitely-generated-modules.md): 구조정리와 Smith 표준형
 - [Nakayama 보조정리](nakayama-lemma.md): 국소환 위의 가군을 잉여체로 내려 읽기
 - [사영가군](projective-modules.md): 들어 올리기 성질, 국소적 자유성, Quillen–Suslin 정리
 - [단사가군](injective-modules.md): 부분가군에서의 확장 성질, Baer 판정, 나눗셈 가능 아벨군과 단사 포락
 - [대수적 K 이론](algebraic-k-theory.md): 환의 사영가군에서 나오는 고차 불변량
+- [Bloch 군](bloch-group.md): 다섯 항 관계로 나눈 군, $K_3$ 의 표현과 Borel 조절자
 
 ## 대수다양체
 
@@ -85,12 +88,23 @@ graph TD
 - [아벨 다양체](abelian-varieties.md): 군 구조를 갖춘 완비 다양체, 강체성에서 따라 나오는 교환성, Tate 가군
 - [대수군](algebraic-groups.md): 다항식 사상으로 곱이 주어진 다양체, Borel 부분군의 공역성과 근계 데이터에 따른 반단순군의 분류
 
+## 모듈라이와 불변량
+
+- [모듈라이 공간](moduli-space.md): 동형류를 점으로 갖는 공간, 모듈라이 함자의 표현가능성과 안정성 조건, 섬세와 조대의 구별
+- [Hilbert 스킴](hilbert-scheme.md): 사영공간 안에서 Hilbert 다항식이 정해진 닫힌 부분스킴의 모듈라이, 접공간이 법층의 절단이라는 점, Hilbert-Chow 사상
+- [기하 불변량 이론](geometric-invariant-theory.md): 환원적 군의 작용에 따른 몫, 불변식환의 유한생성과 안정성 조건, Hilbert-Mumford 판정
+- [벡터다발의 모듈라이 공간](moduli-of-vector-bundles.md): 곡선 위의 안정 벡터다발의 모듈라이, 기울기 조건과 S-동치, Narasimhan-Seshadri 대응
+- [Gromov–Witten 불변량](gromov-witten-invariants.md): 안정 사상의 모듈라이 위의 교차수, 가상 기본류와 변형 불변성, 유리곡선 셈의 점화식
+- [양자 코호몰로지](quantum-cohomology.md): 세 점 불변량으로 변형한 컵곱, 결합성과 WDVV 방정식, 사영공간의 관계식
+
 ## 체와 Galois 이론
 
 - [체](fields.md) → [체의 확대](field-extensions.md) → [유한체](finite-fields.md), [Galois 이론](galois-theory.md)
+- [나눗셈 대수](division-algebras.md): 체의 비가환 일반화, 실수 위의 셋과 넷, 차원이 $1, 2, 4, 8$ 로 제한되는 것
 - [Hilbert 정리 90](hilbert-theorem-90.md): 순환 확대에서 노름 1 인 원소가 켤레의 비로 쓰인다는 정리, $H^1$ 의 소멸과 Kummer 이론
 - [Kummer 이론](kummer-theory.md): 1 의 거듭제곱근을 품은 체에서 지수 $n$ 아벨 확대와 $K^\ast/(K^\ast)^n$ 의 부분군이 짝지어지는 대응
 - [Artin–Schreier 이론](artin-schreier-theory.md): 표수 $p$ 에서 차수 $p$ 순환확대를 $y^p-y=a$ 로 생성하고 $K/\wp(K)$ 로 분류하는 대응
+- [Witt 벡터](witt-vectors.md): 고스트 성분과 Witt 덧셈 다항식, 표수 $p$ 완전환의 표수 $0$ 올림, 지수 $p^m$ 아벨 확대의 분류
 - [오류정정부호](error-correcting-codes.md): 유한체 위의 선형 부호, 대수가 통신에 쓰이는 첫 자리
 - [p 진수](p-adic-numbers.md) → [Newton 다각형](newton-polygon.md): 완비화한 체
 - [대수적 수체](algebraic-number-fields.md) → [유체론](class-field-theory.md): 이후는 정수론 개관
@@ -101,7 +115,10 @@ graph TD
 ## Lie 이론과 표현론
 
 - [Lie 대수](lie-algebras.md) → [근계](root-systems.md) → [Weyl 지표 공식](weyl-character-formula.md)
+- [아핀 Lie 대수](affine-lie-algebras.md): 일반화 Cartan 행렬의 아핀형에 대응하는 무한차원 Lie 대수, 허근과 Weyl–Kac 지표 공식
 - [Lie 군](lie-groups.md) → [Peter–Weyl 정리](peter-weyl.md) → [구면조화함수](spherical-harmonics.md)
+- [양자군](quantum-groups.md): 보편포락대수를 $q$ 로 변형한 Hopf 대수, Yang–Baxter 방정식을 푸는 $R$ 행렬과 대칭이 아닌 꼬임
+- [Clifford 대수](clifford-algebras.md): 벡터의 제곱을 이차형식으로 놓은 결합대수, 주기성과 직교군의 이중덮개
 - [Borel–Weil–Bott 정리](borel-weil-bott.md) → [Beilinson–Bernstein 국소화](beilinson-bernstein.md), [Schubert 계산](schubert-calculus.md), [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md) → [범주 O](category-o.md)
 - [Schur 다항식](schur-polynomials.md) → [Littlewood–Richardson 규칙](littlewood-richardson.md), [Schur–Weyl 쌍대성](schur-weyl-duality.md) → [Brauer 대수](brauer-algebras.md) → [Temperley–Lieb 대수](temperley-lieb-algebras.md), [분할 대수](partition-algebras.md)
 - [세포대수](cellular-algebras.md): 반단순이 아닌 대수의 기약 가군을 세포 기저와 쌍선형형식으로 분류하는 틀, 도형 대수와 Hecke 대수의 공통 구조
@@ -109,7 +126,7 @@ graph TD
 
 ## 정점작용소대수와 달빛
 
-- [정점작용소대수](vertex-operator-algebras.md) → [Zhu 대수](zhu-algebra.md) → [Schellekens 목록](schellekens-list.md), [모듈러 텐서범주](modular-tensor-categories.md)
+- [Virasoro 대수](virasoro-algebra.md) → [정점작용소대수](vertex-operator-algebras.md) → [Zhu 대수](zhu-algebra.md) → [Schellekens 목록](schellekens-list.md), [모듈러 텐서범주](modular-tensor-categories.md)
 - [Wess–Zumino–Witten 모형](wess-zumino-witten.md): 아핀 Lie 대수의 물리
 - [괴물 달빛 추측](monstrous-moonshine.md) → [Umbral moonshine](umbral-moonshine.md)
 

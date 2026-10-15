@@ -110,6 +110,34 @@ $$
 
 가정 $u\in H^{k+1}(\Omega)$ 는 자료 $f$ 에 대한 조건으로 바꿀 수 있다. [타원형 정칙성](elliptic-regularity.md)이 $f\in H^{k-1}(\Omega)$ 와 매끄러운 경계에서 $u\in H^{k+1}(\Omega)$ 를 주기 때문이다. 영역에 들어간 각이 있으면 이 정칙성이 깨지고 수렴률이 $h^k$ 보다 낮아진다.
 
+## $L^2$ 노름의 수렴률
+
+**정리.** $B$ 가 대칭이고 $\Omega$ 가 볼록 다각형이거나 경계가 매끄러우면
+
+$$
+\Vert u-u\_h\Vert\_{L^2}\le Ch^{k+1}\Vert u\Vert\_{H^{k+1}}
+$$
+
+이다.[^3] $H^1$ 노름의 추정보다 $h$ 의 차수가 하나 높다.
+
+증명의 요지. 오차를 $e=u-u\_h$ 로 두고 $L^2$ 노름을 내적의 상한으로 적는다.
+
+$$
+\Vert e\Vert\_{L^2}=\sup\_{g\in L^2(\Omega),\thinspace g\ne 0}\frac{(e,g)}{\Vert g\Vert\_{L^2}}
+$$
+
+각 $g$ 에 **쌍대 문제**를 세운다. 모든 $v\in H\_0^1(\Omega)$ 에서 $B(w,v)=(g,v)$ 인 $w\in H\_0^1(\Omega)$ 를 잡는 것이고, Lax–Milgram 정리가 그 해를 준다. 타원형 정칙성이 가정한 영역에서 $w\in H^2(\Omega)$ 와 $\Vert w\Vert\_{H^2}\le C\Vert g\Vert\_{L^2}$ 를 준다.
+
+$v=e$ 를 넣고 $B$ 의 대칭성을 쓰면 $(e,g)=B(w,e)=B(e,w)$ 다. Galerkin 직교성이 $B(e,v\_h)=0$ 을 주므로 $v\_h=I\_hw$ 를 빼도 값이 같다.
+
+$$
+(e,g)=B(e,w-I\_hw)\le\beta\Vert e\Vert\_{H^1}\Vert w-I\_hw\Vert\_{H^1}
+$$
+
+보간 추정을 $k=1$ 로 쓰면 $\Vert w-I\_hw\Vert\_{H^1}\le Ch\Vert w\Vert\_{H^2}$ 이고, 쌍대 문제의 정칙성으로 이것이 $Ch\Vert g\Vert\_{L^2}$ 이하다. $g$ 에 대한 상한을 취하면 $\Vert e\Vert\_{L^2}\le Ch\Vert e\Vert\_{H^1}$ 이고, $H^1$ 추정을 넣으면 $h^{k+1}$ 이 나온다. $\square$
+
+이 논법을 **Aubin–Nitsche 논법**이라 한다. 추가로 얻는 한 차수는 쌍대 해의 보간 오차에서 나오므로 $w$ 의 $H^2$ 정칙성이 필요하고, 들어간 각이 있는 영역에서는 그 정칙성이 깨져 차수가 떨어진다. $B$ 가 대칭이 아니면 쌍대 문제를 수반형식 $B(v,w)$ 로 세우고 같은 계산을 한다.
+
 ## 강성행렬의 희소성과 조건수
 
 $S_{ij}\ne 0$ 은 $\phi_i$ 와 $\phi_j$ 의 받침이 겹칠 때만 일어난다. 자유도 하나와 받침이 겹치는 자유도의 개수는 한 자유도가 닿는 요소의 개수로 묶이고, 형상 정칙 조건에서 이 개수는 $h$ 와 무관하다. 따라서 $S$ 의 행마다 $0$ 이 아닌 성분의 개수가 고정이고 $S$ 는 희소하다.
@@ -126,6 +154,7 @@ $B$ 가 대칭이면 $S$ 는 대칭 양의 정부호이고, $d$ 차원 등간격
 
 [^1]: Susanne C. Brenner, L. Ridgway Scott, *The Mathematical Theory of Finite Element Methods*, 3판, Springer, 2008, 2.8 절.
 [^2]: Philippe G. Ciarlet, *The Finite Element Method for Elliptic Problems*, North-Holland, 1978, 3.2 절. 형상 정칙 조건과 아핀 사상의 특잇값비는 같은 책 3.1 절이다.
+[^3]: Susanne C. Brenner, L. Ridgway Scott, *The Mathematical Theory of Finite Element Methods*, 3판, Springer, 2008, 5.4 절. Aubin–Nitsche 논법과 쌍대 문제의 정칙성 가정이 그 절의 내용이다.
 
 # 연관 문서
 

@@ -121,6 +121,7 @@ Seifert–van Kampen 정리는 공간을 열린집합 두 개로 덮었을 때 �
 - [호모토피군](homotopy-groups.md)
 - [곡면의 분류](classification-of-surfaces.md)
 - [덮개공간](covering-spaces.md)
+- [Seifert–van Kampen 정리](seifert-van-kampen.md)
 - [매듭 불변량](knot-invariants.md)
 - [Brouwer 고정점 정리](brouwer-fixed-point.md)
 

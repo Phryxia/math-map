@@ -135,6 +135,7 @@ Schellekens 는 $c=24$ 인 홀로모픽 VOA 의 무게 1 Lie 대수가 71 개의
 
 - [Lie 대수](lie-algebras.md)
 - [모듈러 형식](modular-forms.md)
+- [Virasoro 대수](virasoro-algebra.md)
 
 ## 더 알아보기
 

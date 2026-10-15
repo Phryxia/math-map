@@ -155,7 +155,7 @@ $$
 [L_m,L_n]=(m-n)L_{m+n}+\frac{c}{12}m(m^2-1)\delta_{m+n,0}
 $$
 
-중심원소 $c$ 가 **중심전하**다. 이 두 대수가 2 차원 등각장론의 대칭이고, 그 표현론을 공리화한 것이 정점작용소대수다. [괴물 달빛](monstrous-moonshine.md)의 $V^\natural$ 은 중심전하 24 의 그런 대수이며, Borcherds 의 일반화된 Kac–Moody 대수도 이 계보에 있다.
+중심원소 $c$ 가 **중심전하**다. [아핀 Lie 대수](affine-lie-algebras.md)와 [Virasoro 대수](virasoro-algebra.md)가 2 차원 등각장론의 대칭이고, 그 표현론을 공리화한 것이 정점작용소대수다. [괴물 달빛](monstrous-moonshine.md)의 $V^\natural$ 은 중심전하 24 의 그런 대수이며, Borcherds 의 일반화된 Kac–Moody 대수도 이 계보에 있다.
 
 # 활용
 
@@ -176,10 +176,17 @@ $$
 
 ## 더 알아보기
 
+### 구조와 표현론
+
 - [Lie 군](lie-groups.md)
 - [근계](root-systems.md)
+- [범주 O](category-o.md)
+- [양자군](quantum-groups.md)
+
+### 무한차원 대수
+
+- [Virasoro 대수](virasoro-algebra.md)
 - [정점작용소대수](vertex-operator-algebras.md)
 - [Wess–Zumino–Witten 모형](wess-zumino-witten.md)
-- [범주 O](category-o.md)
 
 #algebra #linear_algebra #group_theory

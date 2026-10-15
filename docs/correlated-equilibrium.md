@@ -50,7 +50,7 @@ Nash 균형 하나를 찾는 문제는 두 참가자에서도 PPAD(polynomial pa
 
 ## 곱셈 가중치 절차
 
-행동이 $n$ 개일 때 각 행동의 가중치를 누적 보수의 지수로 두고 가중치에 비례해 고르는 절차는 외부 후회를 $O(\sqrt{T\log n})$ 으로 묶는다. 이 값이 $o(T)$ 이므로 두 참가자가 이 절차를 돌리면 평균 전략이 조상관균형으로 가고, 영합 게임에서는 그 조건이 minimax 값으로의 수렴과 같다.
+행동이 $n$ 개일 때 각 행동의 가중치를 누적 보수의 지수로 두고 가중치에 비례해 고르는 [곱셈 가중치 절차](multiplicative-weights.md)는 외부 후회를 $O(\sqrt{T\log n})$ 으로 묶는다. 이 값이 $o(T)$ 이므로 두 참가자가 이 절차를 돌리면 평균 전략이 조상관균형으로 가고, 영합 게임에서는 그 조건이 minimax 값으로의 수렴과 같다.
 
 # 활용
 
@@ -68,6 +68,6 @@ Nash 균형 하나를 찾는 문제는 두 참가자에서도 PPAD(polynomial pa
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [곱셈 가중치 절차](multiplicative-weights.md)
 
 #optimization #probability #machine_learning

@@ -211,6 +211,7 @@ $$
 
 - [측지선](geodesics.md)
 - [Killing 벡터장](killing-vector-fields.md)
+- [대칭공간](symmetric-spaces.md)
 - [Gauss–Bonnet 정리](gauss-bonnet.md)
 - [Ricci 흐름](ricci-flow.md)
 
@@ -223,5 +224,9 @@ $$
 
 - [쌍곡 3 다양체](hyperbolic-3-manifolds.md)
 - [Teichmüller 공간](teichmuller-space.md)
+
+### 다른 분야에서의 쓰임
+
+- [정보기하](information-geometry.md)
 
 #differential_geometry #optimization #statistics

@@ -93,6 +93,7 @@ graph TD
 
 - [연속체 가설](continuum-hypothesis.md) → [강제법](forcing.md) → [Martin 의 공리](martins-axiom.md) → [Suslin 문제](suslin-problem.md)
 - [반복 강제법](iterated-forcing.md): 두 단계 반복과 지지 조건, 유한지지 반복의 ccc 와 가산지지 반복의 properness
+- [Proper 강제법](proper-forcing.md): 가산 기본 부분모형에 대한 일반 조건, ccc 와 가산 닫힘을 함께 포함하는 조건, 가산지지 반복에서의 보존
 - [Boolean 값 모형](boolean-valued-models.md): 강제법을 완비 Boolean 대수 위의 진리값으로 다시 쓴 판본
 - [Laver 강제법](laver-forcing.md): 나무 조건으로 지배 실수를 더하는 강제법, 순수 결정과 Laver 성질, 강 측도 영집합의 파괴
 - [무작위 실수 강제법](random-real-forcing.md): [측도](measure.md) 대수를 조건으로 쓰는 강제법, Cohen 실수와의 대비

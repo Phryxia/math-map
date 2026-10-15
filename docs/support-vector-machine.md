@@ -68,7 +68,7 @@ $$\alpha_i\lbrack y_i(\langle w,x_i\rangle+b)-1+\xi_i\rbrack=0$$
 
 $$\min\_{w,b}\ \frac12\Vert w\Vert\_2^2+C\sum_{i=1}^n\max(0,1-y_i(\langle w,x_i\rangle+b))$$
 
-이다. 연성 마진 문제는 힌지 손실에 $\ell^2$ 벌점을 붙인 제약 없는 볼록 문제와 같다. 이 꼴은 [경사하강법](gradient-descent.md)의 변형으로 바로 풀 수 있고, 미분 불가능한 자리에서는 열미분을 쓴다.
+이다. 연성 마진 문제는 힌지 손실에 $\ell^2$ 벌점을 붙인 제약 없는 볼록 문제와 같다. 이 꼴은 [경사하강법](gradient-descent.md)의 변형으로 바로 풀 수 있고, 미분 불가능한 자리에서는 [부분미분](subdifferential.md)을 쓴다.
 
 ## 커널 치환
 

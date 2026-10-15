@@ -104,6 +104,6 @@ $\wp$ 가 분류하는 것은 지수 $p$ 아벨 확대까지다. 차수 $p^{m}$ 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Witt 벡터](witt-vectors.md)
 
 #field_theory #algebra #number_theory #group_theory

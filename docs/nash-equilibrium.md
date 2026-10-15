@@ -91,7 +91,7 @@ $\varepsilon$ 오차를 허용한 근사 균형도 상수 $\varepsilon$ 에서 P
 | 협력 | $3,3$ | $0,5$ |
 | 배신 | $5,0$ | $1,1$ |
 
-균형의 사회적 비용을 최적의 사회적 비용으로 나눈 값의 최댓값을 **가격 무정부**라 한다. 이 값이 게임의 종류마다 묶이는지가 알고리즘 게임 이론의 문제다.
+균형의 사회적 비용을 최적의 사회적 비용으로 나눈 값의 최댓값을 [가격 무정부](price-of-anarchy.md)라 한다. 아핀 지연 함수를 둔 비이기적 경로배정에서 이 값이 $4/3$ 이다.
 
 # 활용
 
@@ -113,5 +113,6 @@ $\varepsilon$ 오차를 허용한 근사 균형도 상수 $\varepsilon$ 에서 P
 ## 더 알아보기
 
 - [상관균형](correlated-equilibrium.md)
+- [가격 무정부](price-of-anarchy.md)
 
 #optimization #probability #complexity

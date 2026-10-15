@@ -155,5 +155,7 @@ $\tau(p^2)=\tau(p)^2-p^{11}$ 은 $\alpha_p+\beta_p=\tau(p)$ 와 $\alpha_p\beta_p
 ## 더 알아보기
 
 - [Sato–Tate 분포](sato-tate.md)
+- [Kloosterman 합](kloosterman-sums.md)
+- [저수준 영점](low-lying-zeros.md)
 
 #number_theory #algebraic_topology #theorem #complex_analysis

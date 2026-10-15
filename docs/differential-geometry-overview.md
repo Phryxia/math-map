@@ -4,7 +4,7 @@
 
 미분기하는 미적분이 되는 공간 위에서 휘어짐을 재고, 그 국소량의 적분이 위상 불변량이 되는 현상을 다룬다. 물음은 "국소적으로 잰 곡률이 공간 전체에 대해 무엇을 결정하는가" 이고, 답의 원형은 Gauss–Bonnet 정리다. 곡면의 곡률을 적분하면 [Euler 지표](euler-characteristic.md)가 나온다.
 
-미분기하의 갈래는 네 줄기다. 미분이 정의되는 공간인 다양체와 그 위의 미분형식, 계량과 곡률, Hodge 이론에서 지표 정리로 가는 해석적 갈래, 그리고 Lie 군 위의 게이지 이론이다. 위상 불변량 쪽은 [위상수학 개관](topology-overview.md)에, 대수 쪽 기반은 [Lie 대수](lie-algebras.md)에 있다.
+미분기하의 갈래는 여섯 줄기다. 미분이 정의되는 공간인 다양체와 그 위의 미분형식, 닫힌 비퇴화 2 형식이 주는 심플렉틱 기하와 역학, 다발과 그 위의 접속, 계량과 곡률, Hodge 이론에서 지표 정리로 가는 해석적 갈래, 그리고 Lie 군 위의 게이지 이론이다. 위상 불변량 쪽은 [위상수학 개관](topology-overview.md)에, 대수 쪽 기반은 [Lie 대수](lie-algebras.md)에 있다.
 
 시작은 [다양체](manifolds.md)와 [곡률](curvature.md)이다. 둘이 [Riemann 계량](riemannian-metrics.md)에서 만나 거리를 가진 다양체가 되고, 거기서 [Gauss–Bonnet 정리](gauss-bonnet.md)와 [Hodge 이론](hodge-theory.md)으로 갈라진 뒤 [지표 정리](index-theorem.md)에서 다시 만난다.
 
@@ -20,6 +20,10 @@ graph TD
   MF --> RM["Riemann 계량"]
   CV --> RM
   DF --> DR["de Rham 코호몰로지"]
+  DF --> SY["심플렉틱 다양체"]
+  SY --> CT["여접다발"]
+  CT --> HM["Hamilton 역학"]
+  HM --> IS["적분가능계"]
   DR --> HT["Hodge 이론"]
   RM --> HT
   EC["Euler 지표"] --> GB["Gauss–Bonnet 정리"]
@@ -46,18 +50,36 @@ graph TD
 - [Sard 정리](sard-theorem.md): 매끄러운 사상의 임계값 집합이 측도 $0$ 이라는 정리, 정칙값을 일반적 위치로 고르는 근거
 - [횡단성](transversality.md): 교점마다 접공간의 합이 전체를 채우는 조건, 매개변수 횡단성 정리와 교차수
 - [Whitney 매장 정리](whitney-embedding.md): $n$ 차원 다양체가 $\mathbb R^{2n}$ 에 매장된다는 정리, 좌표 사상을 단위분할로 묶는 구성
-- [벡터다발](vector-bundles.md): 점마다 붙인 벡터 공간, 전이함수와 접속, 곡률
-- [접다발](tangent-bundle.md): 접공간을 모은 다발, 좌표변환의 야코비가 전이함수, 평행화 가능성
-- [특성류](characteristic-classes.md): 곡률의 불변 다항식이 주는 코호몰로지류, Chern–Weil 이론
 - [벡터장](vector-fields.md): 접다발의 단면, 흐름과 Lie 괄호, 영점의 지수
 - [Lie 미분](lie-derivative.md): 흐름으로 끌어온 텐서장의 미분, Cartan 공식과 불변성 판정
 - [미분형식](differential-forms.md): 좌표에 의존하지 않는 적분과 외미분
 - [Morse 이론](morse-theory.md): 매끄러운 함수의 임계점이 주는 세포 구조와 Betti 수의 하한
 - [소멸 사이클](vanishing-cycles.md): 정칙 함수의 임계점에서 줄어드는 호몰로지류, Picard–Lefschetz 공식
+
+## 심플렉틱 기하와 역학
+
 - [심플렉틱 다양체](symplectic-manifolds.md): 닫힌 비퇴화 2 형식, Hamilton 벡터장과 Darboux 정리
-- [모멘트 사상](moment-map.md): 심플렉틱 작용의 보존량을 Lie 대수 쌍대공간에 모은 사상, Marsden–Weinstein 축소와 모멘트 다면체
 - [여접다발](cotangent-bundle.md): 좌표 없이 정의되는 표준 1 형식과 그 외미분이 주는 심플렉틱 구조, 정준변환
+- [Lagrangian 부분다양체](lagrangian-submanifolds.md): 심플렉틱 형식이 소멸하는 절반 차원 부분다양체, 생성함수와 Weinstein 근방 정리
+- [모멘트 사상](moment-map.md): 심플렉틱 작용의 보존량을 Lie 대수 쌍대공간에 모은 사상, Marsden–Weinstein 축소와 모멘트 다면체
 - [Hamilton 역학](hamiltonian-mechanics.md): 속도를 운동량으로 바꾼 1차 방정식계, 에너지 보존과 흐름의 심플렉틱 성질
+- [Hamilton-Jacobi 방정식](hamilton-jacobi-equation.md): 생성함수가 만족하는 1차 편미분방정식, Jacobi 정리와 변수분리
+- [적분가능계](integrable-systems.md): 자유도만큼의 대합적 보존량, Arnold–Liouville 정리와 작용-각 좌표
+- [Birkhoff 정규형](birkhoff-normal-form.md): 교란 Hamilton 함수에서 비공명 모드를 소거하는 정준변환, 소분모와 최적 절단
+- [Kolmogorov-Arnold-Moser 정리](kam-theorem.md): 교란에서 살아남는 불변 원환면, Diophantine 조건과 작은 분모
+- [Nekhoroshev 추정](nekhoroshev-estimate.md): 모든 초기조건에서 작용 변수가 지수적으로 긴 시간 동안 머무는 상한, 준볼록 조건과 공명 구역 분해
+- [Lax 쌍](lax-pairs.md): 흐름을 등스펙트럼 변형으로 적는 두 행렬, Toda 격자와 미분연산자 판본
+- [역산란 변환](inverse-scattering-transform.md): 산란 자료로 옮겨 선형이 되는 Korteweg–de Vries 방정식의 흐름, Gelfand–Levitan–Marchenko 방정식과 고립파
+- [심플렉틱 적분기](symplectic-integrators.md): 심플렉틱 2형식을 보존하는 수치 사상, leapfrog 와 수정 Hamiltonian 이 주는 유계 에너지 오차
+
+## 다발과 접속
+
+- [벡터다발](vector-bundles.md): 점마다 붙인 벡터 공간, 전이함수와 접속, 곡률
+- [접다발](tangent-bundle.md): 접공간을 모은 다발, 좌표변환의 야코비가 전이함수, 평행화 가능성
+- [접속](connection.md): 다발 단면을 미분하는 규칙, 평행이동과 비틀림, Levi-Civita 접속의 유일성
+- [주다발](principal-bundles.md): 구조군이 섬유에 자유롭게 작용하는 다발, 틀다발과 결합다발, 구조군의 축소와 주접속
+- [특성류](characteristic-classes.md): 곡률의 불변 다항식이 주는 코호몰로지류, Chern–Weil 이론
+- [스핀 구조](spin-structures.md): 회전군 틀다발의 이중덮개 들어올림, 둘째 Stiefel–Whitney 류의 소멸과 Dirac 작용소
 
 ## 계량과 곡률
 
@@ -66,6 +88,7 @@ graph TD
 - [측지선](geodesics.md): 가속도의 접성분이 0 인 곡선, 지수사상과 Hopf–Rinow 정리, 켤레점
 - [측지선의 비교정리](geodesic-comparison-theorems.md): 곡률의 상한과 하한으로 Jacobi 장을 상수곡률 모형과 견준다, Rauch 와 Cartan-Hadamard 와 Bonnet-Myers
 - [Killing 벡터장](killing-vector-fields.md): 계량을 보존하는 흐름, 측지선을 따르는 보존량과 차원 상한
+- [대칭공간](symmetric-spaces.md): 점마다 측지선을 뒤집는 등거리변환을 갖는 다양체, Cartan 분해와 세 유형의 분류
 - [Gauss–Bonnet 정리](gauss-bonnet.md): 곡률 적분이 Euler 지표를 준다
 - [Ricci 흐름](ricci-flow.md): 계량을 Ricci 곡률로 변형하는 열방정식 꼴 흐름, 특이점과 수술
 - [Ricci 솔리톤](ricci-solitons.md): 확대에 변하지 않는 자기상사해, 특이점의 모형
@@ -76,14 +99,19 @@ graph TD
 
 - [Hodge 이론](hodge-theory.md): 코호몰로지류마다 조화형식 대표원이 하나
 - [Kähler 다양체](kahler-manifolds.md): 복소구조와 계량이 양립할 때의 분해
+- [Dirac 작용소](dirac-operator.md): 스피너 다발의 공변미분에 Clifford 곱을 합성한 1 계 작용소, Weitzenböck 공식과 소멸 정리
 - [지표 정리](index-theorem.md): 타원작용소의 해석적 지표가 위상적 지표와 같다
 - [Riemann–Roch 정리](riemann-roch.md): 곡선 위 선다발의 단면 차원을 세는 공식
 
 ## Lie 군과 게이지 이론
 
 - [Lie 군](lie-groups.md): 군 구조와 매끄러운 구조를 함께 가진 공간
+- [등질공간](homogeneous-spaces.md): 군이 추이적으로 작용하는 다양체, 안정자로 적은 잉여류 공간과 불변 텐서장
+- [Yang–Mills 이론](yang-mills-theory.md): 곡률의 $L^2$ 노름 범함수, 4 차원의 순간자와 Donaldson 의 대각화 정리
+- [Donaldson 불변량](donaldson-invariants.md): 순간자 모듈라이의 교차수, 대각화 정리와 소실 정리
 - [Chern–Simons 이론](chern-simons.md): 3 차원 다양체 위의 위상적 게이지 이론
 - [Wess–Zumino–Witten 모형](wess-zumino-witten.md): 경계의 공형장론과의 대응
+- [Seiberg–Witten 이론](seiberg-witten-theory.md): 4 차원 다양체의 $\mathrm{spin}^c$ 구조마다 꼬인 Dirac 방정식과 곡률 방정식을 묶은 모듈라이 공간의 불변량
 
 # 연관 문서
 

@@ -125,6 +125,7 @@ $$
 
 ### 볼록 해석과 쌍대성
 
+- [부분미분](subdifferential.md)
 - [볼록 공액](convex-conjugate.md)
 - [준볼록 함수](quasiconvex-functions.md)
 - [Lagrange 쌍대성](lagrange-duality.md)
@@ -139,5 +140,6 @@ $$
 - [경사하강법](gradient-descent.md)
 - [선형계획법](linear-programming.md)
 - [압축 센싱](compressed-sensing.md)
+- [곱셈 가중치 절차](multiplicative-weights.md)
 
 #optimization #analysis

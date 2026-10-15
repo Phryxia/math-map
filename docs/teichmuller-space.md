@@ -139,6 +139,6 @@ $\mathcal T_g$ 는 $\mathbb C^{3g-3}$ 안의 유계영역으로 실현되며(Ber
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [곡선의 모듈라이 공간](moduli-of-curves.md)
 
 #topology #differential_geometry #complex_analysis

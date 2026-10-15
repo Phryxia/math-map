@@ -78,6 +78,7 @@ $\mathrm{Gr}\_n$ 의 Schubert 세포 분할로 코호몰로지를 계산하고, 
 ## 선수지식
 
 - [특성류](characteristic-classes.md)
+- [주다발](principal-bundles.md)
 
 ## 더 알아보기
 

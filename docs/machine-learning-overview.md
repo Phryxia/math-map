@@ -53,6 +53,7 @@ graph TD
 ## 표현과 차원 축소
 
 - [주성분 분석](principal-component-analysis.md) — 공분산행렬의 고유벡터로 분산이 큰 방향을 찾는다
+- [k 평균 군집화](k-means.md) — 점을 k 개 묶음으로 나누어 묶음 안 제곱거리의 합을 줄인다. 배정과 중심을 번갈아 갱신한다
 - [확률적 PCA](probabilistic-pca.md) — 주성분 분석을 잠재변수와 Gauss 잡음을 가진 생성모형으로 다시 쓴다
 - [커널 PCA](kernel-pca.md) — 특징 사상 뒤의 공분산을 내적만으로 다룬다
 - [핵 능형회귀](kernel-ridge-regression.md) — 재생핵 Hilbert 공간에서 제곱오차와 노름 벌점을 최소화한다. 해가 n 차 선형계 하나다
@@ -61,6 +62,8 @@ graph TD
 
 - [Bayes 추론](bayesian-inference.md) — 사전분포와 가능도에서 사후분포를 얻고 예측분포로 옮긴다
 - [Gauss 과정](gaussian-processes.md) — 함수 위의 사전분포. 유한 차원 주변분포가 모두 Gauss 분포다
+- [조건부 무작위장](conditional-random-fields.md) — 라벨열의 조건부 분포를 지수족으로 적고 전향 후향 재귀로 분할함수와 기울기를 구한다
+- [변분 추론](variational-inference.md) — 사후분포를 분포족 안에서 근사하고 KL divergence 최소화를 ELBO 최대화로 바꾼다
 
 ## 생성모형
 

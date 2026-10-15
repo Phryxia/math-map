@@ -23,6 +23,9 @@ graph TD
   YL --> AD
   AD --> MO["Monad"]
   MO --> KE["Kleisli와 Eilenberg–Moore"]
+  CC["사슬 복합체"] --> AB["아벨 범주"]
+  LC --> AB
+  AB --> DC["유도 범주"]
   NT --> MN["모노이드 범주"] --> MT["모듈러 텐서범주"]
   TP["텐서곱"] --> MT
   MT --> AN["애니온"]
@@ -42,6 +45,8 @@ graph TD
 - [Yoneda lemma](yoneda-lemma.md): 대상이 그것이 받는 사상 전체로 결정된다
 - [표현 가능 함자](representable-functors.md): 보편 성질로 정의한 대상을 함자의 표현으로 읽는다
 - [극한과 쌍대극한](limits-colimits.md): 곱, 당김, 쌍대곱을 하나의 보편성질로
+- [아벨 범주](abelian-categories.md): 핵과 여핵으로 상을 지목해 완전열을 원소 없이 쓰는 범주, Freyd-Mitchell 매장정리
+- [유도 범주](derived-categories.md): 준동형을 뒤집어 분해와 가군을 같은 대상으로 만든 범주, 삼각 구조와 유도 함자의 올림
 - [수반](adjunctions.md): 자유 구성과 망각 함자의 쌍, 단위와 쌍대단위
 - [층](sheaves.md): 국소 데이터를 붙이는 조건을 만족하는 전층, 줄기와 층화
 - [토포스](topos-theory.md): 집합의 범주를 공리로 뽑아낸 범주, 부분대상 분류자와 내부 논리

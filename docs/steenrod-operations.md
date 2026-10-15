@@ -79,6 +79,6 @@ $H^\ast(K(\mathbb Z/2,n);\mathbb Z/2)$ 는 $n$ 이하의 초과분을 갖는 허
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Stiefel–Whitney 류](stiefel-whitney-classes.md)
 
 #algebraic_topology #topology #algebra

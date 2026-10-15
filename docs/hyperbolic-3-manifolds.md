@@ -49,7 +49,7 @@ $$
 
 거꾸로 이산 충실 표현이 있으면 몫이 쌍곡 다양체다. 쌍곡 구조를 찾는 문제가 표현을 찾는 대수 문제가 되고, Mostow 강직성은 그 표현이 $\mathrm{PSL}\_2(\mathbb C)$ 켤레를 빼고 하나뿐이라는 진술이 된다.
 
-$\rho(\gamma)$ 의 대각합은 켤레 불변이므로 위상 불변량이고, 대각합들이 생성하는 불변 대각합체는 [대수적 수체](algebraic-number-fields.md)다. 부피는 초월수인데 대각합체는 수체라는 대비가 [Bloch 군](algebraic-k-theory.md)과 조절자로 이어진다.
+$\rho(\gamma)$ 의 대각합은 켤레 불변이므로 위상 불변량이고, 대각합들이 생성하는 불변 대각합체는 [대수적 수체](algebraic-number-fields.md)다. 부피는 초월수인데 대각합체는 수체라는 대비가 [Bloch 군](bloch-group.md)과 조절자로 이어진다.
 
 ## 이상 사면체와 모양 매개변수
 
@@ -190,6 +190,7 @@ SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자
 
 ## 더 알아보기
 
+- [Bloch 군](bloch-group.md)
 - [볼륨 추측](volume-conjecture.md)
 - [기하화 정리](geometrization.md)
 

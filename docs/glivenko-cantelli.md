@@ -98,6 +98,6 @@ Dvoretzky–Kiefer–Wolfowitz 부등식에서 $\varepsilon=\sqrt{\log(2/\alpha)
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [경험 과정](empirical-process.md)
 
 #statistics #probability #machine_learning

@@ -148,6 +148,6 @@ NFA 의 동치성·전체성 판정은 PSPACE(polynomial space)-완전이며([NP
 
 ## 더 알아보기
 
-- [Courcelle 정리](courcelle-theorem.md)
+- [나무 오토마타](tree-automata.md)
 
 #computation #algorithms #logic

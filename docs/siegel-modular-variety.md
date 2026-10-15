@@ -87,5 +87,6 @@ $$\mathcal A_g^\ast=\mathcal A_g\sqcup\mathcal A_{g-1}\sqcup\cdots\sqcup\mathcal
 ## 더 알아보기
 
 - [Siegel 모듈러 형식](siegel-modular-forms.md)
+- [Shimura 다양체](shimura-varieties.md)
 
 #number_theory #algebra #complex_analysis

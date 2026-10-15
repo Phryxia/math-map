@@ -196,6 +196,7 @@ $$
 ## 더 알아보기
 
 - [Riemann 곡면](riemann-surfaces.md)
+- [사상류군](mapping-class-group.md)
 - [Teichmüller 공간](teichmuller-space.md)
 
 #topology #differential_geometry #graph_theory #theorem

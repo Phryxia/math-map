@@ -4,7 +4,7 @@
 
 복소해석은 복소평면의 열린집합에서 복소 미분가능한 함수를 다룬다. 물음은 "방향을 가리지 않는 미분가능성이 함수에 무엇을 강제하는가" 이고, 답은 강성으로 나온다. 한 번 복소 미분가능하면 무한 번 미분 가능하고, 멱급수로 전개되며, 경계값이 내부값을 결정하고, 작은 집합 위의 값이 함수 전체를 결정한다.
 
-복소해석의 갈래는 네 줄기다. 정칙함수와 그 실수판인 조화함수, 멱급수와 Laurent 급수로 특이점을 다루는 유수 계산, 영점의 위치가 함수를 결정하는 인수분해와 값 분포, 그리고 정의역을 넓히거나 영역을 바꿔치는 해석적 연속과 등각사상이다. 이 도구들을 가장 많이 쓰는 곳은 해석적 정수론이고, 그쪽 문서는 [정수론 개관](number-theory-overview.md)에 있다.
+복소해석의 갈래는 정칙함수와 그 실수판인 조화함수, 멱급수와 Laurent 급수로 특이점을 다루는 유수 계산, 영점의 위치가 함수를 결정하는 인수분해와 값 분포, 정의역을 넓히거나 영역을 바꿔치는 해석적 연속과 등각사상이다. 이 도구들을 가장 많이 쓰는 곳은 해석적 정수론이다. 복소해석에서 바로 이어지는 문서는 해석적 수론 갈래에 모았고, 나머지는 [정수론 개관](number-theory-overview.md)에 있다.
 
 시작은 [정칙함수](holomorphic-functions.md)다. 거기서 [유수 정리](residue-theorem.md)로 가면 특이점과 실적분 계산이 나오고, [해석적 연속](analytic-continuation.md)으로 가면 감마 함수와 zeta 함수의 정의역 확장이 나오며, [등각사상](conformal-mapping.md)에서 [Riemann 곡면](riemann-surfaces.md)으로 갈라진다.
 
@@ -30,7 +30,6 @@ graph TD
   RT --> GF["감마 함수"]
   AC --> GF
   RT --> PNT["소수 정리와 Riemann zeta 함수"]
-  AC --> PNT
   PNT --> DL["Dirichlet L 함수"]
   HF --> MF["모듈러 형식"]
   HF --> RR["Riemann–Roch 정리"]
@@ -64,10 +63,12 @@ graph TD
 ## 확장과 사상
 
 - [해석적 연속](analytic-continuation.md): 함수 요소와 경로를 따른 연속, 항등정리와 유일성, 단일가치 정리, 자연 경계
-- [등각사상](conformal-mapping.md): Möbius 변환, Schwarz 보조정리, Riemann 사상정리, Schwarz–Christoffel 공식
+- [등각사상](conformal-mapping.md): Möbius 변환, Schwarz 보조정리, 원판의 자기동형군
+- [Riemann 사상정리](riemann-mapping-theorem.md): 단순연결 영역과 원판의 등각동치, 극값 문제로 가는 증명과 Carathéodory 경계 확장
 - [Riemann 곡면](riemann-surfaces.md): 다가함수를 단일가치로 만드는 곡면, 구면·평면·원판의 삼분법
 - [준등각 사상](quasiconformal-maps.md): 왜곡을 유계로 묶은 동형사상, Beltrami 방정식과 가측 Riemann 사상 정리
 - [Jacobi 다양체](jacobian-variety.md): 주기 격자로 나눈 복소 토러스, Abel 정리가 주는 주 divisor 판정
+- [곡선의 모듈라이 공간](moduli-of-curves.md): 종수 $g$ 곡선의 동형류가 이루는 차원 $3g-3$ 의 공간, 안정곡선을 더한 Deligne–Mumford 콤팩트화와 Torelli 사상
 
 ## 해석적 수론
 

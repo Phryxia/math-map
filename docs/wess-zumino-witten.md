@@ -28,7 +28,7 @@ $$
 \frac{\mathcal G_{\text{전체}}}{\mathcal G_{\text{진짜 게이지}}}=\mathrm{Map}(\Sigma,G)
 $$
 
-몫으로 남는 $\Sigma$ 위의 $G$ 값 함수들이 **루프군**이다. 벌크에 국소 자유도가 없는 이론이 경계에 루프군만큼의 자유도를 남긴다. **WZW 모형**의 장 $g:\Sigma\to G$ 가 이 몫에서 오고, 이론의 대칭이 루프군의 중심확대인 **아핀 Lie 대수**가 된다. 양자 Hall 계에서 벌크에 틈이 있고 가장자리에 무질량 모드가 도는 현상이 같은 구조다.
+몫으로 남는 $\Sigma$ 위의 $G$ 값 함수들이 **루프군**이다. 벌크에 국소 자유도가 없는 이론이 경계에 루프군만큼의 자유도를 남긴다. **WZW 모형**의 장 $g:\Sigma\to G$ 가 이 몫에서 오고, 이론의 대칭이 루프군의 중심확대인 [아핀 Lie 대수](affine-lie-algebras.md)가 된다. 양자 Hall 계에서 벌크에 틈이 있고 가장자리에 무질량 모드가 도는 현상이 같은 구조다.
 
 # 정의
 
@@ -159,6 +159,7 @@ $$
 
 - [Chern–Simons 이론](chern-simons.md)
 - [Lie 대수](lie-algebras.md)
+- [아핀 Lie 대수](affine-lie-algebras.md)
 
 ## 더 알아보기
 

@@ -12,11 +12,11 @@
 
 # 정의
 
-## 단순 집합
+## 뿔
 
-$\Delta$ 를 유한 전순서집합 $\lbrack n\rbrack=\lbrace 0\lt 1\lt \cdots\lt n\rbrace$ 과 순서를 보존하는 함수의 범주라 한다. **단순 집합**은 함자 $X\colon\Delta^{\mathrm{op}}\to\mathbf{Set}$ 이고, $X_n=X(\lbrack n\rbrack)$ 의 원소를 $n$ 단체라 한다.
+[단순 집합](simplicial-sets.md) $X$ 는 함자 $X\colon\Delta^{\mathrm{op}}\to\mathbf{Set}$ 이고, $X_n$ 의 원소를 $n$ 단체라 한다. 표준 단체 $\Delta^n$ 은 $\lbrack n\rbrack=\lbrace 0\lt 1\lt \cdots\lt n\rbrace$ 을 표현하는 단순 집합이다.
 
-표준 단체 $\Delta^n$ 은 $\lbrack n\rbrack$ 을 표현하는 단순 집합이다. 그 $i$ 번째 **뿔** $\Lambda^n_i$ 는 $\Delta^n$ 에서 $i$ 번째 꼭짓점을 마주보는 면과 최대 단체를 뺀 부분단순집합이고, $0\lt i\lt n$ 인 것을 안쪽 뿔이라 한다.
+$\Delta^n$ 의 $i$ 번째 **뿔** $\Lambda^n_i$ 는 $i$ 번째 꼭짓점을 마주보는 면과 최대 단체를 뺀 부분단순집합이고, $0\lt i\lt n$ 인 것을 안쪽 뿔이라 한다.
 
 ## 무한 범주
 
@@ -66,6 +66,7 @@ $X$ 자신이 Kan 복합체인 것은 $hX$ 의 모든 사상이 가역인 것과
 
 - [자연변환](natural-transformations.md)
 - [호모토피군](homotopy-groups.md)
+- [단순 집합](simplicial-sets.md)
 
 ## 더 알아보기
 

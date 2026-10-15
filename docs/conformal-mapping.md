@@ -48,30 +48,18 @@ $$\varphi(z)=e^{i\theta}\thinspace\frac{z-a}{1-\bar az},\qquad a\in\mathbb D,\ \
 
 ## Riemann 사상정리
 
-$\Omega\subsetneq\mathbb C$ 가 공집합이 아닌 단순연결 영역이면 $\Omega$ 는 $\mathbb D$ 와 등각동치다. 지정한 점 $z_0\in\Omega$ 를 $0$ 으로 보내고 $f'(z_0)\gt 0$ 이라는 정규화를 걸면 사상은 유일하다[^1].
-
-증명의 요지는 극값 문제다. $\Omega$ 에서 $\mathbb D$ 로 가는 단사 정칙함수 가운데 $\vert f'(z_0)\vert$ 를 최대로 하는 것을 찾는다. 이 집합이 비어 있지 않음을 제곱근 가지를 써서 보이고, Montel 정리로 정규족에서 극대원이 존재함을 얻은 뒤, 극대원이 전사가 아니라면 Koebe 사상으로 도함수를 더 키울 수 있음을 보여 모순을 얻는다.
+$\Omega\subsetneq\mathbb C$ 가 공집합이 아닌 단순연결 영역이면 $\Omega$ 는 $\mathbb D$ 와 등각동치다[^1]. 지정한 점 $z_0\in\Omega$ 를 $0$ 으로 보내고 $f'(z_0)\gt 0$ 이라는 정규화를 걸면 사상은 유일하다. 증명은 도함수를 최대로 하는 단사 정칙함수를 찾는 극값 문제이고, Montel 정리와 Hurwitz 정리를 쓴다.
 
 정리는 사상의 존재만 주고 명시적 공식을 주지 않는다. $\mathbb C$ 자체가 제외되는 것은 Liouville 정리 때문이다. $\mathbb C$ 에서 $\mathbb D$ 로 가는 유계 전해석함수는 상수뿐이다.
 
-## 경계 대응
-
-$\partial\Omega$ 가 Jordan 곡선이면 Riemann 사상은 $\overline\Omega$ 에서 $\overline{\mathbb D}$ 로 가는 위상동형으로 확장된다(Carathéodory 정리)[^1]. 경계에서의 값이 정해지므로 [Dirichlet 문제](dirichlet-problem.md)를 원판에서 풀고 되돌릴 수 있다.
-
-다각형 영역에서는 사상이 명시적이다. Schwarz–Christoffel 공식
-
-$$f(z)=A+C\int_0^z\prod_{k=1}^{n}(\zeta-x_k)^{\alpha_k-1}\thinspace d\zeta$$
-
-는 상반평면을 내각이 $\pi\alpha_k$ 인 $n$ 각형으로 옮긴다. $x_k$ 는 실축 위의 사전점이고, 그 위치는 초월방정식이 정한다.
-
 # 활용
 
-- [조화함수](harmonic-functions.md): 조화성은 등각사상으로 보존된다. 임의의 단순연결 영역의 Dirichlet 문제를 원판으로 옮겨 Poisson 공식으로 푼다.
+- [조화함수](harmonic-functions.md): 조화성은 등각사상으로 보존된다. 임의의 단순연결 영역의 [Dirichlet 문제](dirichlet-problem.md)를 원판으로 옮겨 Poisson 공식으로 푼다.
 - [균일화 정리](riemann-surfaces.md): Riemann 사상정리의 곡면판이다. 모든 단순연결 Riemann 곡면은 구면, 평면, 원판 셋 중 하나와 등각동치다.
 - [모듈러 형식](modular-forms.md): 상반평면 위의 $\mathrm{SL}\_2(\mathbb Z)$ 작용이 Möbius 변환이고, 그 몫이 [모듈러 곡선](modular-curves.md)이다.
 - [쌍곡 3차원 다양체](hyperbolic-3-manifolds.md): $\widehat{\mathbb C}$ 의 Möbius 변환군이 쌍곡 3차원 공간의 등거리변환군과 같아서, 무한원 구면 위의 등각구조가 다양체의 기하를 결정한다.
 
-[^1]: W. Rudin, *Real and Complex Analysis*, 3rd ed., 14장 (Riemann 사상정리와 경계 거동).
+[^1]: W. Rudin, *Real and Complex Analysis*, 3rd ed., 14.8절.
 
 # 연관 문서
 
@@ -81,6 +69,7 @@ $$f(z)=A+C\int_0^z\prod_{k=1}^{n}(\zeta-x_k)^{\alpha_k-1}\thinspace d\zeta$$
 
 ## 더 알아보기
 
+- [Riemann 사상정리](riemann-mapping-theorem.md)
 - [Riemann 곡면](riemann-surfaces.md)
 
 #complex_analysis #analysis #topology #differential_geometry

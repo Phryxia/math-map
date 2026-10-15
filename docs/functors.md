@@ -101,6 +101,7 @@ $$
 ## 더 알아보기
 
 - [자연변환](natural-transformations.md)
+- [단순 집합](simplicial-sets.md)
 - [유도 함자](derived-functors.md)
 - [층](sheaves.md)
 

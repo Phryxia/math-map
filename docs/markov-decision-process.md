@@ -109,6 +109,7 @@ $$\text{minimize}\thinspace\sum_{s}V(s)\quad\text{subject to}\quad V(s)\ge r(s,a
 
 ## 더 알아보기
 
+- [부분관측 Markov 결정 과정](partially-observable-mdp.md)
 - [다중 슬롯머신](multi-armed-bandits.md)
 - [Q 학습](q-learning.md)
 - [정책 경사](policy-gradient.md)

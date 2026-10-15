@@ -134,6 +134,7 @@ $X(K)\subset X(\mathbb A_K)^{\mathrm{Br}}\subset X(\mathbb A_K)$ 가 항상 성�
 
 - [유체론](class-field-theory.md)
 - [아델](adeles.md)
+- [나눗셈 대수](division-algebras.md)
 
 ## 더 알아보기
 
