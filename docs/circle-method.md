@@ -183,6 +183,6 @@ $n$ 이 홀수면 $\mathfrak S(n)\gg1$ 이고, 짝수면 $p=2$ 의 인자가 $0$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Waring 문제](waring-problem.md)
 
 #number_theory #analysis #combinatorics
