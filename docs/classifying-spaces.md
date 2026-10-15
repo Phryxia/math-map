@@ -2,7 +2,7 @@
 
 # 개요
 
-분류공간은 다발을 세는 문제를 사상의 호모토피류를 세는 문제로 바꾸는 공간이다. 위상군 $G$ 마다 공간 $BG$ 와 그 위의 주다발 $EG \to BG$ 가 있어, 파라콤팩트 공간 $X$ 위의 주 $G$ 다발이 연속사상 $X \to BG$ 의 호모토피류와 일대일로 대응한다.
+분류공간(classifying space)은 다발을 세는 문제를 사상의 호모토피류를 세는 문제로 바꾸는 공간이다. 위상군 $G$ 마다 공간 $BG$ 와 그 위의 주다발 $EG \to BG$ 가 있어, 파라콤팩트 공간 $X$ 위의 주 $G$ 다발이 연속사상 $X \to BG$ 의 호모토피류와 일대일로 대응한다.
 
 [특성류](characteristic-classes.md)는 이 대응에서 $BG$ 의 [코호몰로지](cohomology.md) 원소를 당긴 것이다. $H^\ast(BU(n))$ 이 Chern 류로 생성되는 [다항식환](polynomial-rings.md)이라는 계산이 Chern 류의 항등식을 전부 담는다.
 
@@ -10,7 +10,7 @@
 
 공간 $X$ 위의 랭크 $r$ 인 [벡터다발](vector-bundles.md)을 동형을 빼고 전부 세려 한다. 자료는 덮개 $\lbrace U\_\alpha\rbrace$ 와 전이함수 $g\_{\alpha\beta} : U\_\alpha \cap U\_\beta \to \mathrm{GL}\_r$ 의 모임인데, 덮개를 더 잘게 나누면 다른 자료가 같은 다발을 주므로 이 목록을 직접 셀 수 없다. $X = S^n$ 에서는 위아래 반구가 수축가능해 다발이 자명하므로 남는 자료가 적도에서 두 자명화를 붙이는 사상 $S^{n-1} \to \mathrm{GL}\_r$ 하나이고, 그 사상을 연속으로 움직여도 다발이 동형인 채로 있으므로 [호모토피군](homotopy-groups.md) $\pi\_{n-1}(\mathrm{GL}\_r)$ 의 원소가 다발을 센다. 덮개가 두 조각이어서 이 계산이 끝났고, 일반 $X$ 에서는 덮개가 몇 조각이 될지 모른다.
 
-덮개 대신 다발 자체를 한 공간으로 보낸다. 랭크 $r$ 다발을 큰 공간 $\mathbb R^N$ 안에 넣으면 점 $x$ 를 그 위의 $r$ 차원 부분공간으로 보내는 사상 $X \to \mathrm{Gr}\_r(\mathbb R^N)$ 이 생기고, Grassmann 다양체 위의 정준 다발을 이 사상으로 당긴 것이 원래 다발이다. $X$ 가 콤팩트하면 유한한 $N$ 으로 충분하지만 $N$ 이 $X$ 에 따라 달라지므로 $N$ 을 무한으로 키운 $\mathrm{Gr}\_r(\mathbb R^\infty)$ 를 쓴다. 호모토픽한 두 사상이 당긴 다발은 동형이므로, 다발을 세는 문제가 $\lbrack X, \mathrm{Gr}\_r(\mathbb R^\infty)\rbrack$ 를 세는 문제가 된다.
+덮개 대신 다발 자체를 한 공간으로 보낸다. 랭크 $r$ 다발을 큰 공간 $\mathbb R^N$ 안에 넣으면 점 $x$ 를 그 위의 $r$ 차원 부분공간으로 보내는 사상 $X \to \mathrm{Gr}\_r(\mathbb R^N)$ 이 생기고, [Grassmann 다양체](grassmannian.md) 위의 정준 다발을 이 사상으로 당긴 것이 원래 다발이다. $X$ 가 콤팩트하면 유한한 $N$ 으로 충분하지만 $N$ 이 $X$ 에 따라 달라지므로 $N$ 을 무한으로 키운 $\mathrm{Gr}\_r(\mathbb R^\infty)$ 를 쓴다. 호모토픽한 두 사상이 당긴 다발은 동형이므로, 다발을 세는 문제가 $\lbrack X, \mathrm{Gr}\_r(\mathbb R^\infty)\rbrack$ 를 세는 문제가 된다.
 
 # 정의
 
@@ -71,7 +71,7 @@ $\mathrm{Gr}\_n$ 의 Schubert 세포 분할로 코호몰로지를 계산하고, 
 
 [^2]: D. Husemoller, *Fibre Bundles*, 3rd ed., Springer (1994), Ch. 4. 파라콤팩트 밑공간에서 분류 정리와 당김의 호모토피 불변성을 증명한다.
 
-[^3]: J. Milnor and J. Stasheff, *Characteristic Classes*, Princeton University Press (1974), §14, §7. Chern 류와 Stiefel–Whitney 류가 분류공간의 코호몰로지를 생성함을 보인다.
+[^3]: J. Milnor and J. Stasheff, *Characteristic Classes*, Princeton University Press (1974), §14, §7. Chern 류와 [Stiefel–Whitney 류](stiefel-whitney-classes.md)가 분류공간의 코호몰로지를 생성함을 보인다.
 
 # 연관 문서
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-Friedrichs 확장은 아래로 유계인 대칭 작용소에 붙는 자기수반 확장이다. 작용소가 정하는 이차형식을 형식 노름으로 닫고, 닫힌 형식에 대응하는 자기수반 작용소를 취해 얻는다.
+Friedrichs 확장(Friedrichs extension)은 아래로 유계인 대칭 작용소에 붙는 자기수반 확장이다. 작용소가 정하는 이차형식을 형식 노름으로 닫고, 닫힌 형식에 대응하는 자기수반 작용소를 취해 얻는다.
 
 자기수반 확장이 여럿일 때 Friedrichs 확장은 원래 형식의 하한을 그대로 갖는 확장이다. 다른 확장은 하한이 내려가거나 아래로 유계인 성질을 잃을 수 있다.
 
@@ -24,7 +24,7 @@ $\int_0^1\lvert u'\rvert^2dx$ 라는 값은 콤팩트 지지 함수에서 이미
 
 ## 아래로 유계인 대칭 작용소
 
-Hilbert 공간 $\mathcal H$ 의 조밀한 정의역 $D(T)$ 에서 정의된 대칭 작용소 $T$ 가 어떤 실수 $c$ 에 대해
+[Hilbert 공간](hilbert-spaces.md) $\mathcal H$ 의 조밀한 정의역 $D(T)$ 에서 정의된 대칭 작용소 $T$ 가 어떤 실수 $c$ 에 대해
 
 $$
 \langle Tu,u\rangle\ge c\thinspace\Vert u\Vert^2\qquad(u\in D(T))

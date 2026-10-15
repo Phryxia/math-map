@@ -2,7 +2,7 @@
 
 # 개요
 
-호모토피군이 한 차수에만 남아 있는 공간을 Eilenberg–MacLane 공간이라 한다. 이 공간으로 가는 사상을 호모토피 동치까지 세면 코호몰로지군이 나온다.
+호모토피군이 한 차수에만 남아 있는 공간을 Eilenberg–MacLane 공간(Eilenberg–MacLane space)이라 한다. 이 공간으로 가는 사상을 호모토피 동치까지 세면 코호몰로지군이 나온다.
 
 [코호몰로지](cohomology.md)는 사슬 복합체로 정의되지만 이 대응을 거치면 공간 사이의 사상 집합이 된다. 코호몰로지 연산과 [장애 이론](obstruction-theory.md)의 계산이 이 대응 위에서 이루어진다.
 
@@ -65,7 +65,7 @@ $$
 
 # 활용
 
-- **선다발의 분류.** 복소 선다발의 동형류는 $\lbrack X,\mathbb{CP}^{\infty}\rbrack$ 이고 표현가능성으로 $H^2(X;\mathbb Z)$ 다. 이 대응이 [특성류](characteristic-classes.md)의 첫 Chern 류이고, 같은 논법이 실 선다발과 $H^1(X;\mathbb Z/2)$ 의 첫 Stiefel–Whitney 류를 준다.
+- **선다발의 분류.** 복소 선다발의 동형류는 $\lbrack X,\mathbb{CP}^{\infty}\rbrack$ 이고 표현가능성으로 $H^2(X;\mathbb Z)$ 다. 이 대응이 [특성류](characteristic-classes.md)의 첫 Chern 류이고, 같은 논법이 실 선다발과 $H^1(X;\mathbb Z/2)$ 의 첫 [Stiefel–Whitney 류](stiefel-whitney-classes.md)를 준다.
 - **군 코호몰로지.** 이산군 $G$ 에서 $K(G,1)$ 의 특이 코호몰로지가 군 코호몰로지 $H^{\ast}(G;M)$ 과 같다. 위상적 계산과 대수적 계산이 같은 값을 준다.
 - **사상의 개수.** 구면에서 구면으로 가는 사상의 호모토피류를 세는 문제에서 Postnikov 탑을 한 단계씩 올라가며 장애를 계산한다. 각 단계의 장애가 위 $H^{n+1}$ 의 원소다.
 

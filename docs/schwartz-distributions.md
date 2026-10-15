@@ -2,7 +2,7 @@
 
 # 개요
 
-Schwartz 분포는 매끄러운 시험함수에 수를 대응시키는 연속 선형범함수다. 국소적분가능 함수는 적분으로 분포를 주고, Dirac 델타처럼 함수로 쓸 수 없는 대상도 분포가 된다.
+Schwartz 분포(Schwartz distribution)는 매끄러운 시험함수에 수를 대응시키는 연속 선형범함수다. 국소적분가능 함수는 적분으로 분포를 주고, Dirac 델타처럼 함수로 쓸 수 없는 대상도 분포가 된다.
 
 [Sobolev 공간](sobolev-spaces.md)의 약한 도함수는 결과가 다시 함수일 때만 정의되지만, 분포에서는 미분이 항상 정의되고 횟수에 제한이 없다. 대신 두 분포의 곱이 정의되지 않는다.
 
@@ -82,7 +82,7 @@ Heaviside 함수를 $x\ge 0$ 에서 $1$ , $x\lt 0$ 에서 $0$ 이라 하면 그 
 
 $\mathbb R^n$ 의 매끄러운 함수 $\varphi$ 가 **급감소**라는 것은 모든 $\alpha$ 와 모든 정수 $N$ 에서 $\vert x\vert^N\vert\partial^\alpha\varphi(x)\vert$ 가 유계라는 뜻이다. 급감소 함수 전체를 $\mathcal S$ , 그 위의 연속 선형범함수를 **완만 분포**라 하고 $\mathcal S'$ 로 쓴다.
 
-**정리.** Fourier 변환이 $\mathcal S$ 의 선형 동형이고, $\widehat T(\varphi)=T(\widehat\varphi)$ 로 $\mathcal S'$ 로 확장된다.
+**정리.** [Fourier 변환](fourier-transform.md)이 $\mathcal S$ 의 선형 동형이고, $\widehat T(\varphi)=T(\widehat\varphi)$ 로 $\mathcal S'$ 로 확장된다.
 
 증명의 요지. $\mathcal S$ 에서는 Fourier 변환이 미분을 곱셈으로 바꾸므로 급감소성이 보존되고, 반전 공식이 역을 준다. 쌍대로 옮긴 정의는 $\mathcal S$ 에서 Parseval 항등식과 일치하므로 함수에 대한 변환의 확장이다. $\delta_0$ 의 변환이 상수함수 $1$ 이고, 상수함수 $1$ 의 변환이 $\delta_0$ 의 상수배다.[^1]
 
