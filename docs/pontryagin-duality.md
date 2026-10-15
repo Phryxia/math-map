@@ -4,7 +4,7 @@
 
 Pontryagin 쌍대성은 국소콤팩트 [아벨 위상군](topological-groups.md) $G$ 와 그 지표들이 이루는 군 $\hat G$ 사이의 대응이다. $\hat G$ 를 다시 쌍대로 보내면 $G$ 로 돌아오고, 이 대응이 Fourier 변환을 군 위에서 정의하는 틀이 된다.
 
-Fourier 급수는 $S^1$ 과 $\mathbb Z$ 의 쌍, Fourier 변환은 $\mathbb R$ 과 $\mathbb R$ 의 쌍, 유한 Fourier 변환은 $\mathbb Z/n$ 과 자기 자신의 쌍이다. 세 변환이 한 정리의 사례이고, 어느 쌍에서나 Plancherel 등식과 역변환 공식이 같은 형태로 성립한다.
+[Fourier 급수](fourier-series.md)는 $S^1$ 과 $\mathbb Z$ 의 쌍, Fourier 변환은 $\mathbb R$ 과 $\mathbb R$ 의 쌍, 유한 Fourier 변환은 $\mathbb Z/n$ 과 자기 자신의 쌍이다. 세 변환이 한 정리의 사례이고, 어느 쌍에서나 Plancherel 등식과 역변환 공식이 같은 형태로 성립한다.
 
 # 직관
 
@@ -14,7 +14,7 @@ $$
 \hat{S^1}\cong\mathbb Z,\qquad \hat{\mathbb Z}\cong S^1,\qquad \hat{\mathbb R}\cong\mathbb R
 $$
 
-전개에 쓰는 지수들이 그 자체로 군을 이루고, 그 군이 무엇인지가 원래 군으로 정해진다. 콤팩트한 $S^1$ 의 쌍대는 이산적인 $\mathbb Z$ 이고 그 반대도 성립하므로, 한쪽에서 급수가 되는 자리가 다른 쪽에서는 적분이 된다. 두 번 쌍대를 취하면 제자리로 온다는 것이 Fourier 역변환이 원래 함수를 되돌려 준다는 사실의 군론 쪽 진술이다.
+전개에 쓰는 지수들이 그 자체로 군을 이루고, 그 군이 무엇인지가 원래 군으로 정해진다. 콤팩트한 $S^1$ 의 쌍대는 이산적인 $\mathbb Z$ 이고 그 반대도 성립하므로, 한쪽에서 급수가 되는 자리가 다른 쪽에서는 적분이 된다. 두 번 쌍대를 취하면 제자리로 온다는 것이 Fourier 역변환이 원래 함수를 복원한다는 진술의 군론 쪽 판본이다.
 
 # 정의
 
@@ -52,7 +52,7 @@ $\hat f$ 는 $\hat G$ 위의 유계 연속함수다. $G=\mathbb R$, $\chi(x)=e^{
 
 $G$ 가 [콤팩트](compactness.md)인 것과 $\hat G$ 가 이산인 것은 동치이고, $G$ 가 이산인 것과 $\hat G$ 가 콤팩트인 것도 동치다.
 
-$G$ 가 콤팩트면 $N(G,1)$ 이 항등원만 담는 열린집합이므로 $\hat G$ 가 이산이다. $G$ 가 이산이면 $\hat G$ 는 $\mathbb T^G$ 의 닫힌 부분집합이고 Tychonoff 정리로 콤팩트다.
+$G$ 가 콤팩트면 $N(G,1)$ 이 항등원만 담는 열린집합이므로 $\hat G$ 가 이산이다. $G$ 가 이산이면 $\hat G$ 는 $\mathbb T^G$ 의 닫힌 부분집합이고 [Tychonoff 정리](tychonoff-theorem.md)로 콤팩트다.
 
 | $G$ | $\hat G$ |
 | --- | --- |

@@ -2,7 +2,7 @@
 
 # 개요
 
-쌍 상관 추측은 [Riemann zeta 함수](riemann-zeta.md)의 임계선 위 영점 쌍의 간격 분포가 큰 에르미트 무작위 행렬의 고윳값 쌍의 간격 분포와 같다는 추측이다.[^1] 평균 간격이 $1$ 이 되게 영점 높이를 정규화하면, 간격이 $\lbrack a,b\rbrack$ 에 드는 쌍의 비율이 밀도 $1-(\sin\pi u/\pi u)^2$ 의 적분으로 간다고 말한다. Montgomery 는 이 밀도의 Fourier 변환을 변수의 한 범위에서 [Riemann 가설](riemann-hypothesis.md) 아래 증명했다.
+쌍 상관 추측은 [Riemann zeta 함수](riemann-zeta.md)의 임계선 위 영점 쌍의 간격 분포가 큰 에르미트 무작위 행렬의 고윳값 쌍의 간격 분포와 같다는 추측이다.[^1] 평균 간격이 $1$ 이 되게 영점 높이를 정규화하면, 간격이 $\lbrack a,b\rbrack$ 에 드는 쌍의 비율이 밀도 $1-(\sin\pi u/\pi u)^2$ 의 적분으로 간다. Montgomery 는 이 밀도의 [Fourier 변환](fourier-transform.md)을 변수의 한 범위에서 [Riemann 가설](riemann-hypothesis.md) 아래 증명했다.
 
 # 직관
 
@@ -62,7 +62,7 @@ $$
 F(\alpha,T)=\vert\alpha\vert+o(1)
 $$
 
-증명의 요지는 명시 공식으로 영점 쪽 합을 소수 쪽 합으로 옮기는 것이다. $x=T^\alpha$ 로 두면 $F(\alpha,T)$ 가 von Mangoldt 함수의 합으로 쓰이고, $m=n$ 인 항이 $\sum_{n\le x}\Lambda(n)^2/n$ 를 주어 Mertens 정리로 $\vert\alpha\vert$ 가 나온다. $\vert\alpha\vert\lt 1$ 이면 $m\ne n$ 인 항은 Montgomery–Vaughan 의 평균값 정리로 $o(1)$ 이다. $\vert\alpha\vert\ge 1$ 에서는 그 항이 $\sum_{n\le x}\Lambda(n)\Lambda(n+h)$ 의 크기에 걸리고, 이 합의 주항은 [소수 간격](prime-gaps.md)의 Hardy–Littlewood 추측이 준다.
+증명의 요지는 명시 공식으로 영점 쪽 합을 소수 쪽 합으로 옮기는 것이다. $x=T^\alpha$ 로 두면 $F(\alpha,T)$ 가 von Mangoldt 함수의 합으로 쓰이고, $m=n$ 인 항이 $\sum_{n\le x}\Lambda(n)^2/n$ 를 주어 [Mertens 정리](mertens-theorem.md)로 $\vert\alpha\vert$ 가 나온다. $\vert\alpha\vert\lt 1$ 이면 $m\ne n$ 인 항은 Montgomery–Vaughan 의 평균값 정리로 $o(1)$ 이다. $\vert\alpha\vert\ge 1$ 에서는 그 항이 $\sum_{n\le x}\Lambda(n)\Lambda(n+h)$ 의 크기에 걸리고, 이 합의 주항은 [소수 간격](prime-gaps.md)의 Hardy–Littlewood 추측이 준다.
 
 ## 단순 영점의 비율
 
