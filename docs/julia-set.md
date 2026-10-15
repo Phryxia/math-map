@@ -60,7 +60,7 @@ $z\in J(f)$ 의 임의의 근방 $U$ 에 대해 $\bigcup\_{n\ge 1}f^n(U)$ 는 $\
 | --- | --- |
 | $z^2$ | 단위원 |
 | $z^2-2$ | 구간 $\lbrack -2,2\rbrack$ |
-| $z^2+c$, $\lvert c\rvert$ 가 큰 경우 | Cantor 집합과 위상동형 |
+| $z^2+c$, $\lvert c\rvert$ 가 큰 경우 | [Cantor 집합](cantor-set.md)과 위상동형 |
 
 $z^2-2$ 는 $z=w+w^{-1}$ 로 바꾸면 $w\mapsto w^2$ 가 되고, 단위원이 구간 $\lbrack -2,2\rbrack$ 으로 옮겨진다. $\lvert c\rvert$ 가 크면 임계점 $0$ 의 궤도가 무한으로 가고, $K(f)$ 가 두 조각으로 갈라지는 과정이 반복되어 완전불연속이 된다.
 
@@ -68,7 +68,7 @@ $z^2-2$ 는 $z=w+w^{-1}$ 로 바꾸면 $w\mapsto w^2$ 가 되고, 단위원이 �
 
 - **Montel 정리의 적용.** [Montel 정리](montel-theorem.md)의 세 점 판이 반복 전사성의 증명에 쓰이고, 그 하나로 $J(f)$ 의 불변성, 완전성, 반발 주기점의 조밀성이 모두 나온다.
 - **Newton 법의 수렴 영역.** [Newton 법](newton-method.md)의 초깃값 민감성 절이 $z^3-1$ 에서 세 근의 유인 영역 경계를 든다. 그 경계가 Newton 사상 $z-f(z)/f'(z)$ 의 Julia 집합이고, 유인 영역은 Fatou 집합의 성분이다.
-- **매개변수 공간.** $f\_c(z)=z^2+c$ 에서 $J(f\_c)$ 가 연결인 $c$ 전체가 Mandelbrot 집합이고, 그 판정은 임계점 $0$ 의 궤도가 유계인지로 환원된다.
+- **매개변수 공간.** $f\_c(z)=z^2+c$ 에서 $J(f\_c)$ 가 연결인 $c$ 전체가 [Mandelbrot 집합](mandelbrot-set.md)이고, 그 판정은 임계점 $0$ 의 궤도가 유계인지로 환원된다.
 
 [^1]: J. Milnor, *Dynamics in One Complex Variable*, 3rd ed. (2006), 4장과 14장. 반복 전사성과 반발 주기점의 조밀성은 A. F. Beardon, *Iteration of Rational Functions* (1991) 의 4장과 6장에 있다.
 

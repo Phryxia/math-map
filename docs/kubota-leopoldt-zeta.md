@@ -56,7 +56,7 @@ $$
 L_p(1,\chi)=-\big(1-\chi(p)p^{-1}\big)\frac{\tau(\chi)}{f}\sum_{a=1}^{f-1}\bar\chi(a)\thinspace\log_p(1-\zeta_f^{a})
 $$
 
-$\tau(\chi)=\sum_{a=1}^{f}\chi(a)\zeta_f^{a}$ 는 Gauss 합, $\log_p$ 는 $p$ 진 로그, $\zeta_f$ 는 원시 $f$ 제 거듭제곱근이다. $\bar\chi(a)$ 는 $a$ 가 $f$ 와 서로소가 아니면 $0$ 이므로 합에 남는 항은 $\gcd(a,f)=1$ 인 $a$ 의 것뿐이다.
+$\tau(\chi)=\sum_{a=1}^{f}\chi(a)\zeta_f^{a}$ 는 [Gauss 합](gauss-sums.md), $\log_p$ 는 $p$ 진 로그, $\zeta_f$ 는 원시 $f$ 제 거듭제곱근이다. $\bar\chi(a)$ 는 $a$ 가 $f$ 와 서로소가 아니면 $0$ 이므로 합에 남는 항은 $\gcd(a,f)=1$ 인 $a$ 의 것뿐이다.
 
 $1-\zeta_f^{a}$ 는 순환체 $\mathbb Q(\zeta_f)$ 의 원분 단수이므로 오른쪽은 단수군의 $\chi$ 성분에서 계산된다. 짝수 지표를 모두 모은 곱이 $p$ 진 류수 공식이고, 그 비소멸이 Leopoldt 추측과 같은 진술이다.
 
@@ -64,7 +64,7 @@ $1-\zeta_f^{a}$ 는 순환체 $\mathbb Q(\zeta_f)$ 의 원분 단수이므로 �
 
 - **Iwasawa 주추측의 해석적 변.** [Iwasawa 주추측](iwasawa-main-conjecture.md)은 $f_\chi(T)$ 가 생성하는 아이디얼이 순환체의 아이디얼 류군의 특성 아이디얼과 같다는 진술이다. 위의 멱급수 표현이 그 좌변을 준다.
 - **Herbrand–Ribet 정리.** 보간 공식을 $n=k$ 에서 읽으면 $p\mid B_k$ 조건이 $L_p(1-k,\omega^{1-k})$ 의 $p$ 진 값으로 번역되고, 류군의 $\omega^{1-k}$ 성분이 자명하지 않다는 것과 묶인다.
-- **Stickelberger 원소.** [Stickelberger](stickelberger.md) 원소의 계수가 일반화 Bernoulli 수이므로 그 $p$ 진 극한이 이 함수의 보간값이 된다. Euler 계 논증이 이 대응을 쓴다.
+- **Stickelberger 원소.** [Stickelberger](stickelberger.md) 원소의 계수가 일반화 Bernoulli 수이므로 그 $p$ 진 극한이 이 함수의 보간값이 된다. [Euler 계](euler-systems.md) 논증이 이 대응을 쓴다.
 - **p 진 L 함수의 원형.** 타원곡선의 [p 진 L 함수](p-adic-l-function.md)는 모듈러 기호의 측도로 같은 꼴의 보간 공식을 세운다. 보간할 특수값을 Bernoulli 수에서 모듈러 형식의 주기로 바꾼 것이다.
 
 [^1]: T. Kubota, H. W. Leopoldt, *Eine p-adische Theorie der Zetawerte I*, Journal für die reine und angewandte Mathematik **214/215** (1964), 328–339.
