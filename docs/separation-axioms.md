@@ -2,7 +2,7 @@
 
 # 개요
 
-분리공리는 위상공간에서 서로 다른 점이나 닫힌집합을 열린집합으로 갈라 놓을 수 있는 정도를 재는 조건들이다. $T_0$ 부터 $T_4$ 까지 강해지는 계열로 쓴다.
+분리공리(separation axioms)는 위상공간에서 서로 다른 점이나 닫힌집합을 열린집합으로 갈라 놓을 수 있는 정도를 재는 조건들이다. $T_0$ 부터 $T_4$ 까지 강해지는 계열로 쓴다.
 
 거리공간은 이 계열의 맨 위를 만족하고, 일반 위상공간은 아무것도 만족하지 않을 수 있다. [연속함수](continuity.md)를 충분히 많이 만들 수 있는지가 분리 정도에 달려 있으며, 그 관계를 진술한 것이 Urysohn 보조정리다.
 
@@ -63,8 +63,8 @@ Urysohn 보조정리로 만든 함수를 써서 오차를 $2/3$ 배씩 줄이는
 # 활용
 
 - **연속함수의 공급.** Urysohn 보조정리가 정규 공간 위에 충분히 많은 연속함수를 준다. 그 함수들이 만드는 대수에 [Stone–Weierstrass 정리](stone-weierstrass.md)를 적용해 근사를 얻는다.
-- **콤팩트화.** 완전정칙 공간을 $\lbrack0,1\rbrack$ 값 연속함수들의 곱에 심고 닫힘을 취하면 Stone–Čech 콤팩트화가 된다. Tychonoff 정리가 그 곱의 콤팩트성을 보증한다.
-- **함수해석.** 단위공이 약 $\ast$ 위상에서 콤팩트라는 Banach–Alaoglu 정리의 증명이 Tychonoff 정리를 쓴다([Banach 공간](banach-spaces.md)).
+- **콤팩트화.** 완전정칙 공간을 $\lbrack0,1\rbrack$ 값 연속함수들의 곱에 심고 닫힘을 취하면 [Stone–Čech 콤팩트화](stone-cech-compactification.md)가 된다. Tychonoff 정리가 그 곱의 콤팩트성을 보증한다.
+- **함수해석.** 단위공이 약 $\ast$ 위상에서 콤팩트라는 [Banach–Alaoglu 정리](banach-alaoglu.md)의 증명이 Tychonoff 정리를 쓴다([Banach 공간](banach-spaces.md)).
 - **다양체.** Hausdorff 조건이 없으면 수렴하는 점열의 극한이 유일하지 않고 매끄러운 분할이 만들어지지 않는다. 그래서 [다양체](manifolds.md)의 정의에 이 조건을 넣는다.
 
 # 연관 문서

@@ -2,7 +2,7 @@
 
 # 개요
 
-$n$ 가닥 땋임군 $B_n$ 은 가닥을 꼬는 조작들이 이루는 유한표시군이고, 두 정리가 이 군을 매듭 이론과 잇는다.
+$n$ 가닥 땋임군(braid group) $B_n$ 은 가닥을 꼬는 조작들이 이루는 유한표시군이고, 두 정리가 이 군을 매듭 이론과 잇는다.
 
 - **Alexander 정리.** 모든 링크는 어떤 땋임의 닫힘으로 얻어진다.
 - **Markov 정리.** 두 땋임의 닫힘이 같은 링크인 것은 두 땋임이 켤레 이동과 안정화 이동의 유한 열로 연결되는 것과 같다.
@@ -63,7 +63,7 @@ $$
 
 ## Temperley–Lieb 대수의 대각합
 
-Jones 는 $\mathrm{II}\_1$ 인자의 부분인자를 연구하다 Temperley–Lieb 대수 $TL_n(\delta)$ 위에서 Markov 대각합을 찾았다. $B_n\to TL_n$ 은
+Jones 는 $\mathrm{II}\_1$ 인자의 부분인자를 연구하다 [Temperley–Lieb 대수](temperley-lieb-algebras.md) $TL_n(\delta)$ 위에서 Markov 대각합을 찾았다. $B_n\to TL_n$ 은
 
 $$
 \sigma_i\longmapsto A+A^{-1}e_i,\qquad e_i^2=\delta e_i,\ e_ie_{i\pm1}e_i=e_i

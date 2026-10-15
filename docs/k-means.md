@@ -2,7 +2,7 @@
 
 # 개요
 
-$k$ 평균 군집화는 점 집합을 $k$ 개의 묶음으로 나누어 묶음 안 제곱거리의 합을 가장 작게 하는 문제다.
+$k$ 평균 군집화(k-means clustering)는 점 집합을 $k$ 개의 묶음으로 나누어 묶음 안 제곱거리의 합을 가장 작게 하는 문제다.
 
 $$
 \min_{C_1,\dots,C_k}\sum_{j=1}^{k}\sum_{x\in C_j}\Vert x-\mu_j\Vert^2,\qquad\mu_j=\frac{1}{\lvert C_j\rvert}\sum_{x\in C_j}x

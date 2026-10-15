@@ -2,7 +2,7 @@
 
 # 개요
 
-**Dehn 수술**은 3 다양체에서 매듭의 관다발 근방을 떼고 다시 붙여 새 3 다양체를 얻는 조작이다. 떼어낸 자리의 경계는 원환면이고, 붙이는 방법은 그 원환면 위의 단순 닫힌 곡선 하나가 정한다.
+**Dehn 수술**(Dehn surgery)은 3 다양체에서 매듭의 관다발 근방을 떼고 다시 붙여 새 3 다양체를 얻는 조작이다. 떼어낸 자리의 경계는 원환면이고, 붙이는 방법은 그 원환면 위의 단순 닫힌 곡선 하나가 정한다.
 
 $$
 M_{p/q}=\bigl(M\setminus\mathrm{int}\thinspace N(K)\bigr)\cup_\varphi (S^1\times D^2)
@@ -102,7 +102,7 @@ $M$ 이 cusp 를 가진 유한 부피 쌍곡 다양체일 때, [쌍곡 3 다양�
 
 - **3 다양체 불변량.** [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)은 틀 지은 고리 도형에 색칠한 매듭 불변량의 합을 붙여 정의된다. 그 합이 Kirby 이동에 불변이라는 것이 불변량의 정의가 성립하는 근거이고, 그래서 위 Kirby 정리가 구성의 전제다.
 
-- **렌즈 공간.** 풀린 매듭의 $p/q$ 수술이 렌즈 공간 $L(p,q)$ 다. 렌즈 공간들의 동형 판정($L(p,q)\cong L(p,q^\prime)$ 인 것은 $q^\prime\equiv\pm q^{\pm 1}\bmod p$ 와 같다)이 Dehn 수술 서술로 Reidemeister 비틀림 계산이 된다.
+- **렌즈 공간.** 풀린 매듭의 $p/q$ 수술이 렌즈 공간 $L(p,q)$ 다. 렌즈 공간들의 동형 판정($L(p,q)\cong L(p,q^\prime)$ 인 것은 $q^\prime\equiv\pm q^{\pm 1}\bmod p$ 와 같다)이 Dehn 수술 서술로 [Reidemeister 비틀림](reidemeister-torsion.md) 계산이 된다.
 
 - **쌍곡 부피의 집합.** [쌍곡 3 다양체](hyperbolic-3-manifolds.md)의 부피 집합이 순서형 $\omega^\omega$ 인 정렬집합이라는 Jørgensen–Thurston 정리의 증명에서 cusp 채움이 부피의 극한을 만든다. 채우는 기울기를 복잡하게 하면 부피가 원래 값에 아래에서 수렴한다.
 

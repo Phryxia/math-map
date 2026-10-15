@@ -2,7 +2,7 @@
 
 # 개요
 
-위상군은 군 연산이 연속인 위상공간이다. 군에 수렴 개념을 주면 극한, 급수, 적분을 군 위에서 쓸 수 있고, 유한군에서 원소를 세어 하던 일을 무한군에서 적분으로 할 수 있다.
+위상군(topological group)은 군 연산이 연속인 위상공간이다. 군에 수렴 개념을 주면 극한, 급수, 적분을 군 위에서 쓸 수 있고, 유한군에서 원소를 세어 하던 일을 무한군에서 적분으로 할 수 있다.
 
 $\mathbb R$ 과 $\mathbb C^\times$, 행렬군 $\mathrm{GL}\_n(\mathbb R)$, [$p$ 진수](p-adic-numbers.md)의 덧셈군 $\mathbb Q\_p$, 유한군에 이산위상을 준 것이 모두 위상군이다. 군 구조와 위상이 따로 놓여 있지 않고 연산의 연속성으로 묶이므로, 위상에 관한 정보가 항등원 근방 하나에 모인다.
 
@@ -34,7 +34,7 @@ $G\times G$ 에는 곱위상을 준다. 두 조건을 합쳐 $(g,h)\mapsto gh^{-
 
 $G$ 가 Hausdorff 이고 $e$ 가 [콤팩트](compactness.md) 근방을 가지면 **국소콤팩트군**이라 한다. 평행이동이 위상동형이므로 모든 점이 콤팩트 근방을 갖는다.
 
-$\mathbb R^n$, $\mathrm{GL}\_n(\mathbb R)$, $\mathbb Q\_p$, $\mathbb Z\_p$, 이산군, 콤팩트군이 국소콤팩트다. 무한차원 Banach 공간의 덧셈군은 국소콤팩트가 아니다.
+$\mathbb R^n$, $\mathrm{GL}\_n(\mathbb R)$, $\mathbb Q\_p$, $\mathbb Z\_p$, 이산군, 콤팩트군이 국소콤팩트다. 무한차원 [Banach 공간](banach-spaces.md)의 덧셈군은 국소콤팩트가 아니다.
 
 ## 몫공간
 
@@ -70,7 +70,7 @@ $G$ 가 콤팩트면 $\mu(G)\lt\infty$ 이므로 $\mu(G)=1$ 로 정규화할 수
 
 국소콤팩트 아벨군 $G$ 에 대해 연속 준동형 $\chi:G\to\lbrace z\in\mathbb C:\vert z\vert=1\rbrace$ 를 **지표**라 하고, 지표 전체가 점별 곱으로 군을 이룬다. 콤팩트 집합 위의 균등수렴 위상을 주면 이 **쌍대군** $\hat G$ 도 국소콤팩트 아벨군이다.
 
-$\widehat{\mathbb R}\cong\mathbb R$, $\widehat{\mathbb Z}\cong S^1$, $\widehat{S^1}\cong\mathbb Z$, $\widehat{\mathbb Q\_p}\cong\mathbb Q\_p$ 다. Pontryagin 쌍대성은 자연사상 $G\to\hat{\hat G}$ 가 위상군 동형이라는 정리이고, 이것이 [Fourier 변환](fourier-transform.md)을 군 위에서 정의하는 틀이다.
+$\widehat{\mathbb R}\cong\mathbb R$, $\widehat{\mathbb Z}\cong S^1$, $\widehat{S^1}\cong\mathbb Z$, $\widehat{\mathbb Q\_p}\cong\mathbb Q\_p$ 다. [Pontryagin 쌍대성](pontryagin-duality.md)은 자연사상 $G\to\hat{\hat G}$ 가 위상군 동형이라는 정리이고, 이것이 [Fourier 변환](fourier-transform.md)을 군 위에서 정의하는 틀이다.
 
 # 활용
 
