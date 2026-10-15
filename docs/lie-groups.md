@@ -72,7 +72,7 @@ $$
 
 ## BCH 공식
 
-$\exp$ 의 $0$ 에서의 미분이 항등사상이므로 역함수 정리로 $0$ 의 어떤 근방에서 $\exp$ 가 미분동형이다. 그 근방에서 **BCH**(Baker–Campbell–Hausdorff) 공식이 군의 곱셈을 괄호로 복원한다.
+$\exp$ 의 $0$ 에서의 미분이 항등사상이므로 [역함수 정리](inverse-function-theorem.md)로 $0$ 의 어떤 근방에서 $\exp$ 가 미분동형이다. 그 근방에서 **BCH**(Baker–Campbell–Hausdorff) 공식이 군의 곱셈을 괄호로 복원한다.
 
 $$
 \exp X\thinspace\exp Y=\exp\Big(X+Y+\tfrac12\lbrack X,Y\rbrack+\tfrac1{12}\lbrack X,\lbrack X,Y\rbrack\rbrack-\tfrac1{12}\lbrack Y,\lbrack X,Y\rbrack\rbrack+\cdots\Big)
@@ -86,7 +86,7 @@ $$
 
 $X\in\mathfrak{sl}\_2(\mathbb R)$ 는 대각합이 0 이므로 고윳값이 $\pm\lambda$ 다. $\lambda$ 가 실수면 $\exp X$ 의 대각합이 $2\cosh\lambda\ge2$ 이고, $\lambda=i\mu$ 가 순허수면 $2\cos\mu\in\lbrack-2,2\rbrack$ 이며, $X$ 가 멱영이면 $2$ 다. 어느 경우든 $\mathrm{tr}(\exp X)\ge-2$ 이므로 대각합이 $-\tfrac52$ 인 $\mathrm{diag}(-2,-\tfrac12)$ 는 상 밖에 있다.
 
-콤팩트 연결 Lie 군에는 양불변 Riemann 계량이 존재하고 지수사상이 측지선의 지수사상과 일치하므로, Hopf–Rinow 정리로 $\exp$ 가 전사다. 전사가 아닌 군에서도 $\exp$ 의 상이 항등원의 근방을 포함하므로 연결군이면 유한 번 곱해 모든 원소에 닿는다.
+콤팩트 연결 Lie 군에는 양불변 [Riemann 계량](riemannian-metrics.md)이 존재하고 지수사상이 측지선의 지수사상과 일치하므로, Hopf–Rinow 정리로 $\exp$ 가 전사다. 전사가 아닌 군에서도 $\exp$ 의 상이 항등원의 근방을 포함하므로 연결군이면 유한 번 곱해 모든 원소에 닿는다.
 
 ## 이중덮개 SU(2)→SO(3) 의 계산
 
@@ -104,7 +104,7 @@ Pauli 행렬로 $\mathfrak{su}(2)$ 의 원소를 지수화하고 딸림표현을
 
 - [Haar 측도](haar-measure.md)로 평균을 낼 수 있어 모든 유한차원 표현이 완전가약이다(Weyl 의 유니터리 트릭).
 - 기약표현이 전부 유한차원이고 가산개다.
-- Peter–Weyl 정리로 $L^2(G)$ 가 기약표현들의 행렬계수로 분해된다.
+- [Peter–Weyl 정리](peter-weyl.md)로 $L^2(G)$ 가 기약표현들의 행렬계수로 분해된다.
 - 극대 원환면 $T\subset G$ 가 있고 모든 원소가 어떤 극대 원환면의 켤레에 속한다. 표현은 $T$ 의 무게로 분류된다.
 
 $G=\mathrm{SO}(3)$ 에서 이 분해가 [구면조화함수](spherical-harmonics.md)이고 $G=S^1$ 에서는 [Fourier 급수](fourier-series.md)다.

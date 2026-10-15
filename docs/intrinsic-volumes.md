@@ -65,7 +65,7 @@ $$
 
 ## Kubota 공식
 
-$G(n,j)$ 를 $\mathbb R^n$ 의 $j$ 차원 부분공간 전체의 Grassmann 다양체, $\nu$ 를 그 위의 회전불변 확률측도, $K\vert E$ 를 $K$ 의 $E$ 위 정사영이라 하면
+$G(n,j)$ 를 $\mathbb R^n$ 의 $j$ 차원 부분공간 전체의 [Grassmann 다양체](grassmannian.md), $\nu$ 를 그 위의 회전불변 확률측도, $K\vert E$ 를 $K$ 의 $E$ 위 정사영이라 하면
 
 $$
 V_j(K) = \binom{n}{j}\frac{\kappa_n}{\kappa_j\thinspace\kappa\_{n-j}}\int\_{G(n,j)}\mathrm{vol}\_j(K\vert E)\thinspace d\nu(E)
@@ -75,7 +75,7 @@ $$
 
 ## 운동학 공식
 
-$K,L\in\mathcal K^n$ 과 강체운동군의 Haar 측도 $\mu$ 에 대해 다음 등식이 성립하고 상수는 $n,j,k$ 로만 정해진다.[^1]
+$K,L\in\mathcal K^n$ 과 강체운동군의 [Haar 측도](haar-measure.md) $\mu$ 에 대해 다음 등식이 성립하고 상수는 $n,j,k$ 로만 정해진다.[^1]
 
 $$
 \int V_j(K\cap gL)\thinspace d\mu(g) = \sum\_{k=j}^{n} c\_{n,j,k}\thinspace V_k(K)\thinspace V\_{n+j-k}(L)
@@ -88,7 +88,7 @@ $j=0$ 인 경우는 $L$ 을 무작위로 놓았을 때 $K$ 와 만날 확률을 
 # 활용
 
 - **적분기하의 공식.** Crofton 공식(아핀 부분공간과의 교차의 측도가 내재부피를 준다)과 Cauchy 투영 공식이 Kubota 공식의 특수 경우다. 입체계측학에서 단면의 측정값으로 3차원 양을 추정할 때 이 공식들을 쓴다.
-- **볼록체의 부등식.** Alexandrov–Fenchel 부등식을 quermassintegral 로 적으면 내재부피 사이의 부등식 $V_j(K)^2\ge V\_{j-1}(K)V\_{j+1}(K)$ 꼴이 되고, $j=n-1$ 경우가 등주부등식이다.
+- **볼록체의 부등식.** Alexandrov–Fenchel 부등식을 quermassintegral 로 적으면 내재부피 사이의 부등식 $V_j(K)^2\ge V\_{j-1}(K)V\_{j+1}(K)$ 꼴이 되고, $j=n-1$ 경우가 [등주부등식](isoperimetric-inequality.md)이다.
 - **[McMullen 분해](mcmullen-decomposition.md).** 평행이동 불변만 요구하고 회전 불변을 빼면 평가의 공간이 무한차원이 되고, 그 차수별 분해가 McMullen 분해다. 회전 불변을 더하면 Hadwiger 정리로 차원이 $n+1$ 로 떨어진다.
 - **격자점 셈.** 격자 다면체의 [Ehrhart 다항식](ehrhart-polynomial.md)의 최고차 두 계수가 $V_n$ 과 정규화된 $V\_{n-1}$ 이다. 상수항이 $V_0=1$ 인 것도 같은 대응이다.
 

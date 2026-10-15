@@ -2,9 +2,9 @@
 
 # 개요
 
-[Borel–Weil–Bott 정리](borel-weil-bott.md)는 표수 $0$ 에서 기약표현의 지표를 결정한다. 깃발다양체 위 직선다발의 [코호몰로지](cohomology.md)가 한 자리에만 살고 그 자리에서 Weyl 지표 공식이 나온다. 표수 $p$ 에서는 코호몰로지가 여러 차수에 흩어지고 기약가군의 지표가 닫힌 공식으로 주어지지 않는다.
+[Borel–Weil–Bott 정리](borel-weil-bott.md)는 표수 $0$ 에서 기약표현의 지표를 결정한다. 깃발다양체 위 직선다발의 [코호몰로지](cohomology.md)가 한 자리에만 살고 그 자리에서 [Weyl 지표 공식](weyl-character-formula.md)이 나온다. 표수 $p$ 에서는 코호몰로지가 여러 차수에 흩어지고 기약가군의 지표가 닫힌 공식으로 주어지지 않는다.
 
-Kazhdan 과 Lusztig 은 1979 년에 이 빈자리를 메울 조합적 대상을 정의했다.[^1] Weyl 군(더 일반적으로 Coxeter 군) $W$ 의 군환을 매개변수 $q$ 로 변형한 **Iwahori–Hecke 대수** $\mathcal H$ 를 잡고, 거기에 자연스러운 대합에 대해 자기쌍대인 기저 $\lbrace C'\_w\rbrace$ 가 유일하게 존재함을 보인다. 표준기저로 전개할 때 나오는 계수가
+Kazhdan 과 Lusztig 은 1979 년에 이 빈자리를 메울 조합적 대상을 정의했다.[^1] Weyl 군(더 일반적으로 [Coxeter 군](coxeter-groups.md)) $W$ 의 군환을 매개변수 $q$ 로 변형한 **Iwahori–Hecke 대수** $\mathcal H$ 를 잡고, 거기에 자연스러운 대합에 대해 자기쌍대인 기저 $\lbrace C'\_w\rbrace$ 가 유일하게 존재함을 보인다. 표준기저로 전개할 때 나오는 계수가
 
 $$
 C'\_w=q^{-\ell(w)/2}\sum_{x\le w}P_{x,w}(q)\thinspace T_x,\qquad P_{x,w}\in\mathbb Z[q]
@@ -124,7 +124,7 @@ $P_{x,w}$ 의 계산은 $\char35{}\mathrm P$ 난해로 여겨진다. 재귀가 B
 
 ## Schubert 다양체의 기하
 
-$X_w$ 의 특이점 판정, 국소 교차 코호몰로지, 유리 매끄러움 여부가 $P_{x,w}$ 로 읽힌다. Schubert 계산의 구조상수는 [Schur 다항식](schur-polynomials.md) 조합론과 이어지고 특이점 정보는 KL 조합론과 이어져, 두 조합론이 같은 다양체의 다른 측면을 본다.
+$X_w$ 의 특이점 판정, 국소 교차 코호몰로지, 유리 매끄러움 여부가 $P_{x,w}$ 로 읽힌다. [Schubert 계산](schubert-calculus.md)의 구조상수는 [Schur 다항식](schur-polynomials.md) 조합론과 이어지고 특이점 정보는 KL 조합론과 이어져, 두 조합론이 같은 다양체의 다른 측면을 본다.
 
 ## 정준기저의 원형
 

@@ -4,7 +4,7 @@
 
 [모듈러 형식](modular-forms.md)은 상반평면 $\mathbb H$ 위의 함수이지만 변환 규칙 때문에 몫공간 $\Gamma\backslash\mathbb H$ 위의 대상이다. 이 몫이 **모듈러 곡선**이고 첨점을 채워 콤팩트화하면 $X_0(N)$ 이다.
 
-이 곡선은 해석적으로 Riemann 곡면이고 대수적으로 $\mathbb Q$ 위에서 정의된 대수곡선이며, 모듈라이 해석을 갖는다. $X_0(N)$ 의 점이 [타원곡선](elliptic-curves.md)과 그 위의 위수 $N$ 순환 부분군의 쌍을 분류한다.
+이 곡선은 해석적으로 [Riemann 곡면](riemann-surfaces.md)이고 대수적으로 $\mathbb Q$ 위에서 정의된 대수곡선이며, 모듈라이 해석을 갖는다. $X_0(N)$ 의 점이 [타원곡선](elliptic-curves.md)과 그 위의 위수 $N$ 순환 부분군의 쌍을 분류한다.
 
 $$
 Y_0(N)=\Gamma_0(N)\backslash\mathbb H\ \longleftrightarrow\ \lbrace(E,C):C\subset E\ \text{순환},\ |C|=N\rbrace/\negthinspace\cong
@@ -144,7 +144,7 @@ $N=11$ 에서 $g=1$ 이므로 $\dim S_2(\Gamma_0(11))=1$ 이고, 그 1 차원 �
 - **비틀림점의 분류.** Mazur 의 정리와 그 일반화가 $X_0(N)$ 이나 $X_1(N)$ 의 유리점 계산이다.
 - **모듈러성과 Fermat.** Frey 곡선이 레벨 2 의 새형식에서 와야 하는데 $g(X_0(2))=0$ 이라 그런 형식이 없고, 이것이 모순의 마지막 고리다.
 - **새형식 계산.** 모듈러 기호로 $H_1(X_0(N))$ 과 Hecke 행렬을 구해 새형식을 열거하며, 행렬의 크기를 종수 공식이 미리 준다.
-- **Galois 표현.** $J_0(N)$ 의 $\ell$ 진 Tate 가군이 2 차원 Galois 표현들을 담고 Eichler–Shimura 관계가 $T_p$ 와 Frobenius 를 잇는다.
+- **Galois 표현.** $J_0(N)$ 의 $\ell$ 진 Tate 가군이 2 차원 [Galois 표현](galois-representations.md)들을 담고 [Eichler–Shimura 관계](eichler-shimura.md)가 $T_p$ 와 Frobenius 를 잇는다.
 
 [^1]: 종수 공식과 첨점·타원점의 개수는 F. Diamond, J. Shurman, *A First Course in Modular Forms* (2005) 3.7절. 모듈라이 해석은 같은 책 1.5절과 8장. 종수 0 과 1 인 레벨 목록은 같은 책의 표와 B. Birch, W. Kuyk 편, *Modular Functions of One Variable IV* (1975) 에 있다. Mazur 의 정리는 B. Mazur, *Modular curves and the Eisenstein ideal*, Publ. IHÉS 47 (1977).
 
