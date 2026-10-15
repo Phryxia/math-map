@@ -36,7 +36,7 @@ $$
 
 를 $f$ 의 **$\alpha$ 차 Hölder 반노름**이라 한다. $\lbrack f\rbrack\_\alpha\lt \infty$ 이면 $f$ 가 **지수 $\alpha$ 의 Hölder 조건**을 만족한다고 한다. $\lbrack f\rbrack\_\alpha=0$ 인 것은 $f$ 가 상수인 것과 같으므로 이것은 노름이 아니라 반노름이다.
 
-## $C^{k,\alpha}$ 공간
+## k 차 Hölder 공간
 
 $k$ 가 음이 아닌 정수일 때
 
@@ -80,7 +80,7 @@ $$
 
 유계가 아닌 $U$ 에서는 포함이 깨진다. $\mathbb R$ 에서 $f(x)=x$ 는 $\lbrack f\rbrack\_1=1$ 이지만 $\alpha\lt 1$ 에서 $\lbrack f\rbrack\_\alpha=\infty$ 다.
 
-## 지수가 $1$ 을 넘는 경우
+## 지수가 1 을 넘는 경우
 
 **정리.** $U$ 가 연결 열린집합이고 $\alpha\gt 1$ 이면 $\lbrack f\rbrack\_\alpha\lt \infty$ 인 함수는 상수뿐이다.
 

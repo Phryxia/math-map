@@ -76,7 +76,7 @@ $$
 
 $n=1$ 에서 $K(z)=1/(\pi z)$ 는 Calderón–Zygmund 핵이고 그 특이적분 작용소가 **Hilbert 변환** $H$ 다. 심볼은 $-i\thinspace\mathrm{sgn}\thinspace\xi$ 이므로 Plancherel 정리가 $L^2$ 유계성을 준다. $\mathbb R^n$ 에서 $j$ 번째 **Riesz 변환**은 핵 $c_n z_j\vert z\vert^{-n-1}$ 의 작용소이고 심볼은 $-i\xi_j/\vert\xi\vert$ 다. 두 경우 심볼이 유계이므로 정리의 가정이 채워지고, 직관 절의 핵 $K$ 도 Riesz 변환 둘의 합성이다.
 
-## $L^1$ 과 $L^\infty$ 에서의 비유계성
+## L¹ 과 L∞ 에서의 비유계성
 
 $p=1$ 과 $p=\infty$ 는 정리의 범위 밖이고, 그 두 자리에서 유계성은 성립하지 않는다. $f=\mathbf 1\_{\lbrack 0,1\rbrack}$ 의 Hilbert 변환은 다음과 같다.
 

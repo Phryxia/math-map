@@ -66,7 +66,7 @@ $$
 
 따라서 $\vert T\_\varepsilon f(x)\vert\le\vert Tf(z)\vert+\vert Tf_1(z)\vert+C\thinspace A\thinspace Mf(x)$ 이고, 앞의 두 항이 동시에 작은 $z$ 가 $B\_{\varepsilon/2}(x)$ 안에 있음을 보이면 된다. $\vert Tf(z)\vert\gt 2^{n+1}M(Tf)(x)$ 인 $z$ 의 집합은 Chebyshev 부등식으로 $\vert B\_{\varepsilon/2}\vert$ 의 절반 이하다. $\vert Tf_1(z)\vert\gt\lambda$ 인 $z$ 의 집합은 약한 $(1,1)$ 추정으로 $C\lambda^{-1}\Vert f_1\Vert\_{L^1}$ 이하이고 $\Vert f_1\Vert\_{L^1}\le\vert B\vert\thinspace Mf(x)$ 이므로, $\lambda$ 를 $Mf(x)$ 의 큰 상수배로 잡으면 이 집합도 절반 이하다. 두 집합의 부피 합이 $\vert B\_{\varepsilon/2}\vert$ 보다 작으므로 둘 다 피하는 $z$ 가 있다.
 
-## $L^p$ 유계성
+## Lᵖ 유계성
 
 $T$ 가 $L^2$ 유계인 Calderón–Zygmund 작용소이면 $T^\ast$ 는 각 $1\lt p\lt\infty$ 에서 $L^p(\mathbb R^n)$ 유계다.
 
@@ -76,7 +76,7 @@ $$
 
 Cotlar 부등식의 오른쪽 두 항을 각각 받친다. $Mf$ 는 극대함수의 $L^p$ 유계성으로, $M(Tf)$ 는 같은 유계성과 Calderón–Zygmund 정리의 $\Vert Tf\Vert\_{L^p}\le C\Vert f\Vert\_{L^p}$ 를 이어서 받친다.
 
-## 약한 유형 $(1,1)$ 추정
+## 약한 유형 (1,1) 추정
 
 $T^\ast$ 는 약한 유형 $(1,1)$ 이다.
 

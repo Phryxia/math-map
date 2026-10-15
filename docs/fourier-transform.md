@@ -42,7 +42,7 @@ $$f(x)=\int_{\mathbb R}\hat f(\xi)e^{2\pi i\xi x}\thinspace d\xi$$
 
 $\mathcal S(\mathbb R)$ 은 매끄럽고 모든 도함수가 임의의 다항식의 역수보다 빨리 감소하는 함수의 모임이다. 조건은 모든 $m,k\ge 0$ 에 대해 $\sup_x\vert x^m f^{(k)}(x)\vert\lt\infty$ 다. $e^{-\pi x^2}$ 가 여기 들고, $\mathcal S(\mathbb R)\subset L^1(\mathbb R)\cap L^2(\mathbb R)$ 이다.
 
-## $L^2$ 로의 확장
+## L² 로의 확장
 
 $L^2(\mathbb R)$ 의 함수는 적분가능하지 않을 수 있어 정의식이 수렴하지 않는다. $\mathcal S(\mathbb R)$ 이 $L^2(\mathbb R)$ 에서 조밀하고 변환이 그 위에서 $L^2$ 노름을 보존하므로, 변환은 $L^2(\mathbb R)$ 전체로 유일하게 확장된다. 확장된 변환은 $\int_{-R}^{R}f(x)e^{-2\pi i\xi x}\thinspace dx$ 의 $R\to\infty$ 에서의 $L^2$ 극한이다.
 

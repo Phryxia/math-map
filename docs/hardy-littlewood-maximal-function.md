@@ -42,7 +42,7 @@ $$
 
 # 성질
 
-## 약한 유형 $(1,1)$ 추정
+## 약한 유형 (1,1) 추정
 
 모든 $f\in L^1(\mathbb R^n)$ 과 $\lambda\gt 0$ 에서 다음이 성립한다.
 
@@ -52,7 +52,7 @@ $$
 
 증명의 요지. $E\_\lambda=\lbrace Mf\gt \lambda\rbrace$ 의 각 점 $x$ 에는 평균이 $\lambda$ 를 넘는 공 $B_x$ 가 있어 $\vert B_x\vert\lt\lambda^{-1}\int\_{B_x}\vert f\vert$ 다. $E\_\lambda$ 의 콤팩트 부분집합을 그 공들 가운데 유한 개로 덮고 Vitali 보조정리로 겹치지 않는 부분열을 뽑으면, 그 콤팩트 집합의 부피가 $3^n$ 배의 부분열 부피 합 이하이고 부분열이 겹치지 않으므로 그 합이 $\lambda^{-1}\Vert f\Vert\_{L^1}$ 이하다. 콤팩트 부분집합에 대해 상한을 취한다.
 
-## $L^p$ 유계성
+## Lᵖ 유계성
 
 $\Vert Mf\Vert\_{L^\infty}\le\Vert f\Vert\_{L^\infty}$ 는 평균이 상한을 넘지 못하는 것에서 바로 나온다. 이 강한 유형 $(\infty,\infty)$ 와 위의 약한 유형 $(1,1)$ 에 [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md)를 쓰면 각 $1\lt p\le\infty$ 에서 유계성이 나온다.
 
@@ -62,7 +62,7 @@ $$
 
 $M$ 이 선형이 아니므로 선형 작용소를 요구하는 보간 정리로는 이 결론을 얻지 못한다.
 
-## $p=1$ 에서의 비유계성
+## p=1 에서의 비유계성
 
 $f\in L^1$ 이고 $f$ 가 영함수가 아니면 $Mf\notin L^1$ 이다. $\vert f\vert$ 의 적분이 양수인 공 $B$ 를 하나 잡고 $\vert x\vert$ 가 충분히 크면, $x$ 를 중심으로 $B$ 를 품는 공의 반지름이 $\vert x\vert$ 와 같은 크기이므로 $Mf(x)\ge c_n\vert x\vert^{-n}\int_B\vert f\vert$ 다. $\vert x\vert^{-n}$ 은 무한대 근방에서 적분되지 않는다.
 
