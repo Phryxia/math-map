@@ -64,7 +64,7 @@ $$
 
 ## G(k) 의 상계
 
-[원법](circle-method.md)이 $s\gt 2^k$ 에서 $r_s(n)$ 의 점근식을 주므로 $G(k)\le 2^k+1$ 이다. 부 호 추정에 Weyl 의 부등식 대신 Vinogradov 의 평균값 정리를 넣으면 $G(k)\ll k\log k$ 로 내려간다. 작은 $k$ 에서는 $G(2)=4$, $G(4)=16$ 이 정확한 값이고, 후자는 Davenport 의 결과다[^4]. $G(3)\le7$ 은 Linnik 이 증명했다[^5].
+[원법](circle-method.md)이 $s\gt 2^k$ 에서 $r_s(n)$ 의 점근식을 주므로 $G(k)\le 2^k+1$ 이다. 부 호 추정에 Weyl 의 부등식 대신 [Vinogradov 평균값 정리](vinogradov-mean-value.md)를 넣으면 $G(k)\ll k\log k$ 로 내려간다. 작은 $k$ 에서는 $G(2)=4$, $G(4)=16$ 이 정확한 값이고, 후자는 Davenport 의 결과다[^4]. $G(3)\le7$ 은 Linnik 이 증명했다[^5].
 
 # 활용
 

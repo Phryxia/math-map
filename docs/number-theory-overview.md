@@ -97,6 +97,7 @@ graph TD
 - [Vaughan 항등식](vaughan-identity.md): von Mangoldt 함수를 쌍선형합으로 가르는 항등식, Type I 과 Type II 합의 추정
 - [원법](circle-method.md): 가법적 문제의 해의 개수를 지수합의 주기 적분으로 적고 단위원을 주 호와 부 호로 가르는 절차, Waring 문제와 삼소수 정리
 - [Waring 문제](waring-problem.md): 모든 자연수를 $k$ 제곱수의 합으로 쓰는 데 드는 항의 개수, 모든 수를 덮는 $g(k)$ 와 충분히 큰 수를 덮는 $G(k)$ 의 구분
+- [Vinogradov 평균값 정리](vinogradov-mean-value.md): 차수 $k$ 까지의 지수합의 $2s$ 제곱 평균이 세는 멱합 방정식의 해 개수, 효율적 합동법과 분해 정리가 준 주 추측
 - [Kloosterman 합](kloosterman-sums.md): 역원을 지수에 올린 합의 Weil 상계 $2\sqrt p$ 와 Salié 합의 닫힌 꼴, 모듈러 형식의 계수와 원법의 오차항에서의 쓰임
 - [Petersson 공식](petersson-formula.md): 정칙 첨점 형식 기저의 Fourier 계수 가중 합을 대각 항과 Kloosterman 합의 Bessel 가중 합으로 가르는 등식, $L$ 함수의 적률과 비소멸
 - [Kuznetsov 공식](kuznetsov-formula.md): Kloosterman 합의 가중 합과 Maass 형식 계수의 스펙트럼 합을 잇는 등식, 이동 합성곱 합과 아족 평균
