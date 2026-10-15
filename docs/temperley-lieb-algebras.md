@@ -2,7 +2,7 @@
 
 # 개요
 
-Temperley–Lieb 대수 $TL_k(\delta)$ 는 교차하지 않는 짝짓기 도형이 만드는 대수다. 생성원 $e_1,\dots,e_{k-1}$ 과 관계
+Temperley–Lieb 대수(Temperley–Lieb algebra) $TL_k(\delta)$ 는 교차하지 않는 짝짓기 도형이 만드는 대수다. 생성원 $e_1,\dots,e_{k-1}$ 과 관계
 
 $$
 e_i^2=\delta e_i,\qquad e_ie\_{i\pm 1}e_i=e_i,\qquad e_ie_j=e_je_i\ (\vert i-j\vert\ge 2)
@@ -54,7 +54,7 @@ $e_i$ 는 $i$ 와 $i+1$ 을 잇고 $i'$ 와 $(i+1)'$ 를 잇고 나머지 $j$ �
 
 > **정리.** $\delta\notin\lbrace 2\cos(\pi j/\ell):2\le\ell\le k,\thinspace 1\le j\lt \ell\rbrace$ 이면 $TL_k(\delta)$ 는 반단순이다[^1].
 
-증명의 요지. Jones–Wenzl 멱등원 $f_1,f_2,\dots$ 을 $f_1=1$ 과 점화식
+증명의 요지. [Jones–Wenzl 멱등원](jones-wenzl-idempotents.md) $f_1,f_2,\dots$ 을 $f_1=1$ 과 점화식
 
 $$
 f\_{m+1}=f_m-\frac{\lbrack m\rbrack\_q}{\lbrack m+1\rbrack\_q}f_me_mf_m
@@ -82,7 +82,7 @@ $\mathrm{End}\_{\mathrm{SL}\_2}(V^{\otimes k})$ 의 기저가 평면 도형이�
 
 ## 격자 모형의 전달행렬
 
-6-vertex 모형과 Potts 모형의 전달행렬이 $TL_k(\delta)$ 안에서 적힌다[^3]. $\delta$ 는 Potts 모형의 상태 수 $Q$ 에 $\delta=\sqrt Q$ 로 대응하고, 전달행렬이 $e_i$ 들의 곱과 합으로 쓰이므로 모형의 분배함수가 대수의 표현론으로 계산된다.
+6-vertex 모형과 [Potts 모형](potts-model.md)의 전달행렬이 $TL_k(\delta)$ 안에서 적힌다[^3]. $\delta$ 는 Potts 모형의 상태 수 $Q$ 에 $\delta=\sqrt Q$ 로 대응하고, 전달행렬이 $e_i$ 들의 곱과 합으로 쓰이므로 모형의 분배함수가 대수의 표현론으로 계산된다.
 
 ## 분할 대수와의 관계
 

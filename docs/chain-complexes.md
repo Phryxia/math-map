@@ -2,7 +2,7 @@
 
 # 개요
 
-사슬 복합체는 연속한 두 사상의 합성이 $0$ 인 가군의 열이다. 각 자리에서 핵을 상으로 나눈 몫가군을 호몰로지라 하고, 호몰로지가 모든 자리에서 $0$ 인 것과 그 열이 완전열인 것이 같다. 완전열이 아닌 열에서도 호몰로지는 정의되므로, 완전성이 깨지는 양을 가군으로 적는 자리가 된다.
+사슬 복합체(chain complex)는 연속한 두 사상의 합성이 $0$ 인 가군의 열이다. 각 자리에서 핵을 상으로 나눈 몫가군을 호몰로지라 하고, 호몰로지가 모든 자리에서 $0$ 인 것과 그 열이 완전열인 것이 같다. 완전열이 아닌 열에서도 호몰로지는 정의되므로, 완전성이 깨지는 양을 가군으로 적는 자리가 된다.
 
 # 직관
 
@@ -104,7 +104,7 @@ $$\cdots\to H_n(A\_\bullet)\to H_n(B\_\bullet)\to H_n(C\_\bullet)\xrightarrow{\t
 
 $$\sum_n(-1)^n\dim C_n=\sum_n(-1)^n\dim H_n(C\_\bullet)$$
 
-이다.
+이고, 이 교대합이 [Euler 지표](euler-characteristic.md)다.
 
 $\dim C_n=\dim Z_n+\dim\mathrm{Im}\thinspace d_n$ 이고 $\dim Z_n=\dim H_n(C\_\bullet)+\dim\mathrm{Im}\thinspace d_{n+1}$ 이다. 두 식을 합쳐 교대합을 취하면 $\mathrm{Im}\thinspace d_n$ 의 차원이 인접한 두 항에서 반대 부호로 나타나 지워진다. ∎
 
