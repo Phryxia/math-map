@@ -2,7 +2,7 @@
 
 # 개요
 
-미국형 옵션은 보유자가 만기까지 아무 때나 한 번 행사할 수 있는 계약이다. 가격은 위험중립 측도 아래에서 할인된 보수의 기댓값을 정지시각 전체에서 최대화한 값이고, 행사하는 주가의 범위와 가격함수를 함께 결정해야 하므로 경계가 미지인 편미분방정식 문제가 된다.
+미국형 옵션(American option)은 보유자가 만기까지 아무 때나 한 번 행사할 수 있는 계약이다. 가격은 위험중립 측도 아래에서 할인된 보수의 기댓값을 정지시각 전체에서 최대화한 값이고, 행사하는 주가의 범위와 가격함수를 함께 결정해야 하므로 경계가 미지인 편미분방정식 문제가 된다.
 
 # 직관
 
@@ -66,7 +66,7 @@ $T=\infty$ 이고 $h(s)=(K-s)^+$ 이면 가격과 행사 경계가 닫힌 식으
 
 $$b=\frac{\gamma}{\gamma+1}K,\qquad V(s)=\begin{cases}K-s & s\le b\cr \dfrac{K}{\gamma+1}\Bigl(\dfrac{s}{b}\Bigr)^{-\gamma} & s\gt b\end{cases}$$
 
-증명의 요지. 시간에 의존하지 않으므로 계속 영역에서 $\mathcal LV=0$ 이 상미분방정식 $\sigma^2s^2V''/2+rsV'-rV=0$ 이 된다. $V=s^\alpha$ 를 넣으면 $\alpha=1$ 과 $\alpha=-\gamma$ 가 나오고, $s\to\infty$ 에서 $V\to 0$ 이므로 $V=As^{-\gamma}$ 다. 여기에 평활 맞춤 두 식 $Ab^{-\gamma}=K-b$ 와 $-\gamma Ab^{-\gamma-1}=-1$ 을 적용하면 $\gamma(K-b)=b$ 에서 $b$ 가 나오고 $A=Kb^\gamma/(\gamma+1)$ 이다.
+증명의 요지. 시간에 의존하지 않으므로 계속 영역에서 $\mathcal LV=0$ 이 [상미분방정식](ordinary-differential-equations.md) $\sigma^2s^2V''/2+rsV'-rV=0$ 이 된다. $V=s^\alpha$ 를 넣으면 $\alpha=1$ 과 $\alpha=-\gamma$ 가 나오고, $s\to\infty$ 에서 $V\to 0$ 이므로 $V=As^{-\gamma}$ 다. 여기에 평활 맞춤 두 식 $Ab^{-\gamma}=K-b$ 와 $-\gamma Ab^{-\gamma-1}=-1$ 을 적용하면 $\gamma(K-b)=b$ 에서 $b$ 가 나오고 $A=Kb^\gamma/(\gamma+1)$ 이다.
 
 ## 행사 경계
 

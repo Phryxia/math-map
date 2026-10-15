@@ -2,7 +2,7 @@
 
 # 개요
 
-Gauss 과정은 유한 개의 시점을 잡을 때마다 다변량 정규분포가 되는 확률과정이다. 평균함수와 공분산핵 두 개가 과정 전체를 결정하므로, 무한차원 대상을 유한차원 선형대수로 다룰 수 있다.
+Gauss 과정(Gaussian process)은 유한 개의 시점을 잡을 때마다 다변량 정규분포가 되는 확률과정이다. 평균함수와 공분산핵 두 개가 과정 전체를 결정하므로, 무한차원 대상을 유한차원 선형대수로 다룰 수 있다.
 
 [Brown 운동](brownian-motion.md)이 공분산핵 $\min(s,t)$ 를 가진 Gauss 과정이고, 회귀에서 쓰는 사후평균과 사후분산도 같은 공식의 특수한 경우다.
 
@@ -24,7 +24,7 @@ $k$ 는 대칭이다. 임의의 유한 시점과 계수에 대해 $\sum_{i,j}c_i
 
 역으로 대칭이고 양의 준정부호인 $k$ 와 임의의 $m$ 이 주어지면 그것을 평균과 공분산으로 갖는 Gauss 과정이 존재한다. 유한차원 분포들이 Kolmogorov 의 양립 조건을 만족하므로 [확장정리](kolmogorov-extension.md)가 과정을 준다.
 
-정상핵 $k(s,t)=\kappa(s-t)$ 의 경우 유효성 판정이 [특성함수](characteristic-functions.md)의 Bochner 정리와 같은 문제가 된다. $\kappa$ 가 양의 준정부호인 것과 $\kappa$ 가 어떤 유한 측도의 Fourier 변환인 것이 동치다.
+정상핵 $k(s,t)=\kappa(s-t)$ 의 경우 유효성 판정이 [특성함수](characteristic-functions.md)의 Bochner 정리와 같은 문제가 된다. $\kappa$ 가 양의 준정부호인 것과 $\kappa$ 가 어떤 유한 측도의 [Fourier 변환](fourier-transform.md)인 것이 동치다.
 
 ## 표준 핵
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-Doob 분해는 적분 가능한 adapted 과정을 martingale 과 예측 가능 과정의 합으로 쪼갠 것이다.
+Doob 분해(Doob decomposition)는 적분 가능한 adapted 과정을 martingale 과 예측 가능 과정의 합으로 쪼갠 것이다.
 
 $$X_n \thickspace=\thickspace X_0 + M_n + A_n$$
 

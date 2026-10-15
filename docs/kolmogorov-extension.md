@@ -2,7 +2,7 @@
 
 # 개요
 
-Kolmogorov 확장정리는 유한개의 시점에서의 분포만 지정해 확률과정을 만드는 정리다. 지정한 유한차원 분포들이 서로 모순되지 않으면, 그것들을 모두 유한차원 분포로 갖는 측도가 경로 공간 위에 존재하고 하나뿐이다. Brown 운동과 Gauss 과정의 존재가 이 정리로 나온다.
+Kolmogorov 확장정리(Kolmogorov extension theorem)는 유한개의 시점에서의 분포만 지정해 확률과정을 만드는 정리다. 지정한 유한차원 분포들이 서로 모순되지 않으면, 그것들을 모두 유한차원 분포로 갖는 측도가 경로 공간 위에 존재하고 하나뿐이다. Brown 운동과 Gauss 과정의 존재가 이 정리로 나온다.
 
 # 직관
 
@@ -36,7 +36,7 @@ $$
 
 증명의 요지. 통조림 집합들은 대수를 이룬다. 두 통조림 집합의 좌표를 합쳐 공통의 유한 집합에서 보면 유한 곱공간의 Borel 집합들이고, 그 모임이 유한 합집합과 차집합에 닫혀 있다. 이 대수 위에 $\mu\_0(C)=\mu\_F(A)$ 로 정의하면 정합성 때문에 $C$ 를 적는 유한 집합을 어떻게 택해도 값이 같아 잘 정의된다.
 
-$\mu\_0$ 가 전측도임을 보이는 데 유한차원 측도의 정칙성을 쓴다. 대수 안에서 $C\_n\downarrow\varnothing$ 이고 $\mu\_0(C\_n)\ge\varepsilon$ 이라 가정하면, 각 $C\_n$ 안에 측도가 $\varepsilon/2$ 이상인 콤팩트 통조림 집합 $K\_n$ 을 잡을 수 있다. $\mathbb R^{t}$ 들의 곱에서 Tychonoff 정리로 $\bigcap K\_n\ne\varnothing$ 이므로 $\bigcap C\_n\ne\varnothing$ 이고 가정에 어긋난다. 따라서 $\mu\_0$ 는 대수 위에서 가산 가법적이다.
+$\mu\_0$ 가 전측도임을 보이는 데 유한차원 측도의 정칙성을 쓴다. 대수 안에서 $C\_n\downarrow\varnothing$ 이고 $\mu\_0(C\_n)\ge\varepsilon$ 이라 가정하면, 각 $C\_n$ 안에 측도가 $\varepsilon/2$ 이상인 콤팩트 통조림 집합 $K\_n$ 을 잡을 수 있다. $\mathbb R^{t}$ 들의 곱에서 [Tychonoff 정리](tychonoff-theorem.md)로 $\bigcap K\_n\ne\varnothing$ 이므로 $\bigcap C\_n\ne\varnothing$ 이고 가정에 어긋난다. 따라서 $\mu\_0$ 는 대수 위에서 가산 가법적이다.
 
 Carathéodory 확장이 $\mathcal B(\mathbb R^T)$ 위의 측도를 주고, 유일성은 통조림 집합이 $\pi$ 계이므로 [Dynkin 의 π-λ 정리](dynkin-system.md)에서 나온다.
 
