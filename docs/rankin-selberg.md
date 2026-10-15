@@ -10,14 +10,14 @@ $$
 
 에는 그런 벡터공간이 없다. 차수가 $nm$ 인 이 $L$ 함수는 [Langlands 강령](langlands-program.md)에서 자주 쓰이지만 정의만으로는 해석적 성질이 나오지 않는다.
 
-Rankin 과 Selberg 가 1939–40 년에 각각 찾은 방법은 두 첨점형식의 곱에 **Eisenstein 급수**를 곱해 적분한다.
+Rankin 과 Selberg 가 1939–40 년에 각각 찾은 방법은 두 첨점형식의 곱에 [Eisenstein 급수](eisenstein-series.md)를 곱해 적분한다.
 
 $$
 I(s)=\int_{\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H}
 f(z)\thinspace\overline{g(z)}\thinspace y^{k}\thinspace E(z,s)\thinspace\frac{dx\thinspace dy}{y^2}
 $$
 
-$E(z,s)=\sum_{\Gamma_\infty\backslash\Gamma}\mathrm{Im}(\gamma z)^s$ 는 잉여류에 대한 합이다. 이 합을 적분 영역으로 흡수하는 조작이 **펼치기**(unfolding)다. 기본영역 위의 적분이 띠 $\Gamma_\infty\backslash\mathbb H$ 위의 적분이 되고, Fourier 전개를 넣으면 Dirichlet 급수가 나온다.
+$E(z,s)=\sum_{\Gamma_\infty\backslash\Gamma}\mathrm{Im}(\gamma z)^s$ 는 잉여류에 대한 합이다. 이 합을 적분 영역으로 흡수하는 조작이 **펼치기**(unfolding)다. 기본영역 위의 적분이 띠 $\Gamma_\infty\backslash\mathbb H$ 위의 적분이 되고, Fourier 전개를 넣으면 [Dirichlet 급수](dirichlet-series.md)가 나온다.
 
 $$
 I(s)\thickspace=\thickspace(\Gamma \text{ 인자})\cdot\sum_{n\ge1}\frac{a_n\overline{b_n}}{n^{s+k-1}}
