@@ -17,7 +17,7 @@ $$
 =\frac{1}{2}\cdot\frac{L\negthinspace\left(\tfrac12,\pi_K\times\chi\right)}{L(1,\pi,\mathrm{Ad})}\cdot\prod_v\alpha_v
 $$
 
-고전적 판본은 반정수 무게 [모듈러 형식](modular-forms.md)의 Fourier 계수 제곱이 중심 $L$ 값과 같다는 Kohnen–Zagier 공식이다. 두 판본을 잇는 것이 Shimura 대응, 곧 theta 올림이다.
+고전적 판본은 반정수 무게 [모듈러 형식](modular-forms.md)의 Fourier 계수 제곱이 중심 $L$ 값과 같다는 Kohnen–Zagier 공식이다. 두 판본을 잇는 것이 [Shimura 대응](shimura-correspondence.md), 곧 theta 올림이다.
 
 $L(1/2)$ 가 함수방정식의 부호 때문에 0 이 되는 경우에는 주기도 0 이 되고, 도함수와 [Heegner 점](heegner-points.md)의 세계로 넘어간다. Waldspurger 와 Gross–Zagier 는 $\varepsilon=+1$ 과 $\varepsilon=-1$ 로 갈라진 분업 관계다.
 
@@ -35,7 +35,7 @@ $$
 
 ## 사원수 대수와 토릭 주기
 
-$F$ 를 수체, $K/F$ 를 이차 확대, $B/F$ 를 사원수 대수라 하고 매장 $K\hookrightarrow B$ 를 고정한다. $\pi$ 를 $B^\times(\mathbb A)$ 의 자기동형 표현이라 하고 Jacquet–Langlands 대응으로 $\mathrm{PGL}\_2$ 위의 표현 $\pi'$ 와 짝지운다. $\chi$ 는 $K^\times\backslash\mathbb A_K^\times$ 의 지표이고 $\chi|\_{\mathbb A_F^\times}=1$ 이다. **토릭 주기**는 위의 $\mathcal P_\chi$ 이고, 적분 구간 $\mathbb A_F^\times K^\times\backslash\mathbb A_K^\times$ 가 콤팩트이므로 수렴한다.
+$F$ 를 수체, $K/F$ 를 이차 확대, $B/F$ 를 사원수 대수라 하고 매장 $K\hookrightarrow B$ 를 고정한다. $\pi$ 를 $B^\times(\mathbb A)$ 의 자기동형 표현이라 하고 [Jacquet–Langlands 대응](jacquet-langlands.md)으로 $\mathrm{PGL}\_2$ 위의 표현 $\pi'$ 와 짝지운다. $\chi$ 는 $K^\times\backslash\mathbb A_K^\times$ 의 지표이고 $\chi|\_{\mathbb A_F^\times}=1$ 이다. **토릭 주기**는 위의 $\mathcal P_\chi$ 이고, 적분 구간 $\mathbb A_F^\times K^\times\backslash\mathbb A_K^\times$ 가 콤팩트이므로 수렴한다.
 
 ## 국소 정리 (Tunnell–Saito)
 
@@ -110,7 +110,7 @@ $$
 
 ## 증명의 계보
 
-- **Waldspurger (1985)**: [theta 급수](theta-series.md)가 주는 theta 대응과 Siegel–Weil 공식으로 반정수 무게 쪽과 토릭 주기 쪽을 직접 잇는다. 쌍대쌍 $(\widetilde{\mathrm{SL}}\_2,\mathrm{PGL}\_2)$ 의 theta 올림이 한쪽에서는 반정수 무게 형식의 계수를, 다른 쪽에서는 토릭 주기를 내놓는다.[^2]
+- **Waldspurger (1985)**: [theta 급수](theta-series.md)가 주는 theta 대응과 [Siegel–Weil 공식](siegel-weil.md)으로 반정수 무게 쪽과 토릭 주기 쪽을 직접 잇는다. 쌍대쌍 $(\widetilde{\mathrm{SL}}\_2,\mathrm{PGL}\_2)$ 의 theta 올림이 한쪽에서는 반정수 무게 형식의 계수를, 다른 쪽에서는 토릭 주기를 내놓는다.[^2]
 - **Jacquet 의 상대 대각합 공식**: 토러스 주기를 담은 대각합 공식과 $\mathrm{GL}\_2$ 의 Kuznetsov 형 대각합 공식을 비교한다. 이 방법이 고계수로 확장되어 Jacquet–Rallis 가 되었고 유니터리군 GGP 의 증명 틀이 되었다.
 - **Ichino–Ikeda 형 증명**: 삼중곱 $L$ 함수의 주기 공식을 특수화한다.
 
@@ -122,7 +122,7 @@ $$
 
 - **중심값의 수치 계산.** 중심 $L$ 값을 직접 계산하려면 근사 함수방정식으로 급수를 자르고 오차를 관리해야 한다. 반정수 무게 형식의 Fourier 계수는 theta 급수의 곱으로 표현되어 정수 연산만으로 나오고, 한 번의 $q$ 전개로 여러 판별식 $D$ 의 중심값을 얻는다. BSD 추측의 수치 검증, 이차 뒤틀림 족의 계수 0 분포 조사, 합동수 판정에 쓰인다. Tunnell 정리가 합동수를 삼항이차형식의 표현수로 판정하는 것도 이 계산의 사례다.
 - **비소멸의 통계.** $\chi$ 나 $D$ 를 움직이며 중심값의 비소멸 비율을 묻는 문제는 Waldspurger 로 옮기면 반정수 무게 형식 계수의 비소멸 문제가 되고, Fourier 계수의 크기 추정과 합 공식을 쓸 수 있다. 계수 0 인 [타원곡선](elliptic-curves.md)이 양의 비율을 차지한다는 결과들이 이 경로를 지난다.
-- **BSD 로의 입력.** $L(E,1)\ne0$ 이면 Mordell–Weil 계수가 0 이라는 [BSD](birch-swinnerton-dyer.md)의 절반은 Kolyvagin 의 Euler 계 논법이 준다. 그 논법에 필요한 비소멸 조건의 확인을 Waldspurger 가 계수 계산으로 바꾼다.
+- **BSD 로의 입력.** $L(E,1)\ne0$ 이면 Mordell–Weil 계수가 0 이라는 [BSD](birch-swinnerton-dyer.md)의 절반은 Kolyvagin 의 [Euler 계](euler-systems.md) 논법이 준다. 그 논법에 필요한 비소멸 조건의 확인을 Waldspurger 가 계수 계산으로 바꾼다.
 
 [^1]: J. Tunnell, *Local epsilon factors and characters of GL(2)*, Amer. J. Math. **105** (1983). H. Saito, *On Tunnell's formula for characters of* $\mathrm{GL}(2)$ (Compositio Math. **85**, 1993).
 
