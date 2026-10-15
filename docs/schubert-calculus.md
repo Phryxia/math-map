@@ -4,7 +4,7 @@
 
 3 차원 사영공간에서 일반 위치에 있는 직선 네 개와 모두 만나는 직선은 $2$ 개다. Schubert 는 19 세기 말에 이런 문제를 대량으로 풀었다. 그의 보존 원리는 직선들을 특수한 위치로 옮겨도 답이 변하지 않는다고 가정하고 퇴화한 배치에서 세는 방법이었다. 답은 대부분 맞았지만 근거가 엄밀하지 않았고, Hilbert 가 그 정당화를 15 번 문제로 걸었다.
 
-현대적 답은 문제를 [코호몰로지](cohomology.md) 계산으로 바꾼다. $\mathbb C^n$ 의 $k$ 차원 부분공간이 이루는 Grassmann 다양체 $\mathrm{Gr}(k,n)$ 에서 주어진 직선과 만난다는 조건이 부분다양체를 정의하고, 조건 여러 개를 동시에 만족하는 개수가 코호몰로지류의 곱이 된다.
+현대적 답은 문제를 [코호몰로지](cohomology.md) 계산으로 바꾼다. $\mathbb C^n$ 의 $k$ 차원 부분공간이 이루는 [Grassmann 다양체](grassmannian.md) $\mathrm{Gr}(k,n)$ 에서 주어진 직선과 만난다는 조건이 부분다양체를 정의하고, 조건 여러 개를 동시에 만족하는 개수가 코호몰로지류의 곱이 된다.
 
 $$
 \text{기하 조건의 교차}\ \longleftrightarrow\ \text{코호몰로지류의 곱}
@@ -81,7 +81,7 @@ Schubert 기저는 교차 쌍에 대해 자기 쌍대 기저를 갖는다. 열�
 
 # 성질
 
-## $\sigma_1$ 의 거듭제곱
+## σ₁ 의 거듭제곱
 
 Pieri 규칙에서 $\sigma_1\cdot\sigma_\lambda$ 는 $\lambda$ 에 상자 하나를 더해 얻는 유효한 도형들의 합이다. $N=k(n-k)$ 이면 $\sigma_1^N$ 이 최고 차수에 도달하고, 그 계수는 빈 도형에서 상자를 하나씩 채워 $k\times(n-k)$ 직사각형에 이르는 경로의 수, 곧 그 직사각형의 표준 Young 배열 개수다.
 
@@ -99,13 +99,13 @@ $\mathbb C$ 위에서 답이 $N$ 이어도 $\mathbb R$ 위의 실해가 $N$ 개�
 
 ## 양자 코호몰로지 변형
 
-$\mathrm{Gr}(k,n)$ 의 코호몰로지환을 유리곡선 세기로 변형한 것이 양자 코호몰로지환이고 구조상수가 Gromov–Witten 불변량이다. 그 환은 Bertram 의 양자 Pieri 규칙으로 기술되고 아핀 Lie 대수의 융합 규칙과 일치한다.
+$\mathrm{Gr}(k,n)$ 의 코호몰로지환을 유리곡선 세기로 변형한 것이 양자 코호몰로지환이고 구조상수가 [Gromov–Witten 불변량](gromov-witten-invariants.md)이다. 그 환은 Bertram 의 양자 Pieri 규칙으로 기술되고 [아핀 Lie 대수](affine-lie-algebras.md)의 융합 규칙과 일치한다.
 
 # 활용
 
 ## 4 직선 문제
 
-$\mathrm{Gr}(2,4)$ 의 $2$ 가 Schubert 의 답이고 상자를 채우는 경우의 수로 나온다. $\mathrm{Gr}(2,5)$ 의 $5$ , $\mathrm{Gr}(2,6)$ 의 $14$ , $\mathrm{Gr}(3,6)$ 의 $42$ 는 Catalan 수다. 두 줄짜리 직사각형의 표준 배열이 Catalan 수를 세기 때문이다.
+$\mathrm{Gr}(2,4)$ 의 $2$ 가 Schubert 의 답이고 상자를 채우는 경우의 수로 나온다. $\mathrm{Gr}(2,5)$ 의 $5$ , $\mathrm{Gr}(2,6)$ 의 $14$ , $\mathrm{Gr}(3,6)$ 의 $42$ 는 [Catalan 수](catalan-numbers.md)다. 두 줄짜리 직사각형의 표준 배열이 Catalan 수를 세기 때문이다.
 
 $\sigma_1^{k(n-k)}$ 은 일반 위치의 여차원 $1$ 조건을 차원만큼 걸었을 때의 해의 개수이고, 그것이 상자를 한 칸씩 채우는 순서의 개수와 같다. Hilbert 의 15 번 문제는 이 대응을 교차이론으로 세우는 작업이었다.
 
@@ -116,7 +116,7 @@ $\sigma_1^{k(n-k)}$ 은 일반 위치의 여차원 $1$ 조건을 차원만큼 �
 - **행렬 스펙트럼**: Horn 문제와 포화 정리[^2]를 통해 Hermite 행렬 합의 [고윳값](eigenvalues.md) 문제로 이어진다.
 - **양자 코호몰로지와 등각장론**: 양자 변형의 구조상수가 $\widehat{\mathfrak{sl}}\_n$ 준위 $k$ 의 융합 규칙과 일치한다.
 
-[^1]: W. Fulton, *Young Tableaux*, Cambridge, 1997. 9 장이 Schubert 계산과 Littlewood–Richardson 규칙의 표준 서술이다.
+[^1]: W. Fulton, *Young Tableaux*, Cambridge, 1997. 9 장이 Schubert 계산과 [Littlewood–Richardson 규칙](littlewood-richardson.md)의 표준 서술이다.
 [^2]: A. Knutson, T. Tao, *The honeycomb model of* $\mathrm{GL}\_n(\mathbb C)$ *tensor products I*, JAMS 12 (1999). 포화 정리.
 
 # 연관 문서

@@ -93,7 +93,7 @@ $$
 \mathrm{ch}:\bigoplus_n R(S_n)\ \xrightarrow{\ \sim\ }\ \Lambda,\qquad [S^\lambda]\mapsto s_\lambda
 $$
 
-$\mathrm{GL}\_n$ 의 표현론과 $S_n$ 의 표현론이 같은 대상 위에서 만나는 이 현상이 **Schur–Weyl 쌍대성**의 대칭함수 판본이다.
+$\mathrm{GL}\_n$ 의 표현론과 $S_n$ 의 표현론이 같은 대상 위에서 만나는 이 현상이 **[Schur–Weyl 쌍대성](schur-weyl-duality.md)**의 대칭함수 판본이다.
 
 ## Littlewood–Richardson 규칙
 
@@ -103,7 +103,7 @@ $$
 s_\lambda s_\mu=\sum_\nu c^\nu_{\lambda\mu}s_\nu
 $$
 
-표현론에서는 $V_\lambda\otimes V_\mu$ 의 기약 분해 중복도이고, 기하에서는 Grassmann 다양체의 Schubert 셈법 구조상수다. 정의만으로는 계산할 수 없지만 조합론적 규칙이 있다.
+표현론에서는 $V_\lambda\otimes V_\mu$ 의 기약 분해 중복도이고, 기하에서는 [Grassmann 다양체](grassmannian.md)의 Schubert 셈법 구조상수다. 정의만으로는 계산할 수 없지만 조합론적 규칙이 있다.
 
 > $c^\nu_{\lambda\mu}$ 는 모양이 $\nu/\lambda$ 이고 내용이 $\mu$ 인 반표준 대각표 중 그 읽기 낱말이 **격자 낱말**인 것의 개수다.
 
@@ -121,7 +121,7 @@ $$
 
 **Robinson–Schensted–Knuth 대응**이고, 개수를 세면 $n!=\sum_\lambda(f^\lambda)^2$ 이 나온다. 대칭군의 표현론에서 아는 항등식을 조합적으로 증명한다.
 
-이 대응은 순열의 통계량을 대각표의 모양으로 번역한다. $\lambda_1$ 이 가장 긴 증가 부분열의 길이이고 $\lambda'\_1$ 이 가장 긴 감소 부분열의 길이다(Schensted 정리). 무작위 순열의 가장 긴 증가 부분열이 $2\sqrt n$ 에 접근하고 요동이 Tracy–Widom 분포를 따른다는 결과가 이 번역 위에서 증명되었고, 랜덤 행렬 이론과 조합론을 이었다.
+이 대응은 순열의 통계량을 대각표의 모양으로 번역한다. $\lambda_1$ 이 가장 긴 증가 부분열의 길이이고 $\lambda'\_1$ 이 가장 긴 감소 부분열의 길이다(Schensted 정리). 무작위 순열의 가장 긴 증가 부분열이 $2\sqrt n$ 에 접근하고 요동이 [Tracy–Widom 분포](tracy-widom.md)를 따른다는 결과가 이 번역 위에서 증명되었고, 랜덤 행렬 이론과 조합론을 이었다.
 
 # 활용
 
@@ -151,7 +151,7 @@ Schur 다항식에 매개변수를 하나나 둘 넣으면 다음 다항식족�
 
 | 대상 | 매개변수 | 연결 |
 |---|---|---|
-| Hall–Littlewood | $t$ | $p$ 진 군의 구면함수, Satake 동형 |
+| Hall–Littlewood | $t$ | $p$ 진 군의 구면함수, [Satake 동형](satake-isomorphism.md) |
 | Jack | $\alpha$ | 랜덤 행렬의 $\beta$ 앙상블 |
 | Macdonald | $q,t$ | 이중 아핀 Hecke 대수, $n!$ 정리 |
 | LLT(Lascoux–Leclerc–Thibon), 비대칭 Macdonald | 여럿 | 아핀 결정 기저, 대각조화함수 |
@@ -162,7 +162,7 @@ Schur 다항식에 매개변수를 하나나 둘 넣으면 다음 다항식족�
 
 계산에 따라 유리한 정의가 다르다.
 
-- 곱 $s_\lambda s_\mu$ 를 전개할 때는 대각표 쪽이 낫다. Littlewood–Richardson 규칙이 나온다.
+- 곱 $s_\lambda s_\mu$ 를 전개할 때는 대각표 쪽이 낫다. [Littlewood–Richardson 규칙](littlewood-richardson.md)이 나온다.
 - 변수의 개수를 무한으로 보내거나 특수화할 때는 Jacobi–Trudi 쪽이 낫다. 행렬식이 변수 개수를 명시적으로 쓰지 않기 때문이다.
 - 모듈러성이나 대칭군 작용을 볼 때는 bialternant 쪽이 낫다. 분자와 분모가 각각 반대칭이라는 구조가 드러난다.
 
