@@ -97,7 +97,7 @@ $\text{Ш}(E/K)$ 의 유한성은 추측이며 알려진 것은 부분적이다.
 |---|---|
 | Rubin (1987) | CM(complex multiplication) 타원곡선, 해석적 순위 $0$ |
 | Kolyvagin (1988) | [모듈러 곡선](modular-curves.md), 해석적 순위 $\le1$ |
-| Kato, Skinner–Urban | Iwasawa 주추측 경유, 순위 $0$ 의 여러 경우 |
+| Kato, Skinner–Urban | [Iwasawa 주추측](iwasawa-main-conjecture.md) 경유, 순위 $0$ 의 여러 경우 |
 
 $\text{Ш}$ 가 나눌 수 있는 부분군을 갖지 않는 것이 유한성과 동치이며, 이것이 BSD(Birch–Swinnerton-Dyer) 추측의 일부다.
 
@@ -145,7 +145,7 @@ $\text{Ш}$ 의 원소인 곡선에 유리점이 없음을 증명하는 일은 �
 
 ## 국소 가해성 판정
 
-$C$ 를 원시 정수해로 동차화하면 $2Y^2=X^4-17Z^4$ , $\gcd(X,Z)=1$ 이다. 홀수 소수에서는 $\bmod\thinspace p$ 의 비특이 해 하나면 Hensel 보조정리가 $\mathbb Z_p$ 해로 올려 준다.
+$C$ 를 원시 정수해로 동차화하면 $2Y^2=X^4-17Z^4$ , $\gcd(X,Z)=1$ 이다. 홀수 소수에서는 $\bmod\thinspace p$ 의 비특이 해 하나면 [Hensel 보조정리](hensel-lemma.md)가 $\mathbb Z_p$ 해로 올려 준다.
 
 $p=2$ 는 따로 본다. $X=11,\ Z=1$ 에서
 
@@ -177,7 +177,7 @@ $$
 
 ## Euler 계와 Kolyvagin
 
-Kolyvagin 의 방법은 $\text{Ш}$ 를 위에서 누르는 알려진 일반적 도구다. 모듈러 곡선 위의 Heegner 점들이 허수이차체의 환체 탑을 따라 정합적인 족을 이루고, 이 족이 **Euler 계**를 이루어 Selmer 군의 원소를 소거한다. 결론은 해석적 순위가 $\le1$ 이면 대수적 순위가 그와 같고 $\text{Ш}$ 가 유한하다는 것이다.
+Kolyvagin 의 방법은 $\text{Ш}$ 를 위에서 누르는 알려진 일반적 도구다. 모듈러 곡선 위의 Heegner 점들이 허수이차체의 환체 탑을 따라 정합적인 족을 이루고, 이 족이 [Euler 계](euler-systems.md)를 이루어 Selmer 군의 원소를 소거한다. 결론은 해석적 순위가 $\le1$ 이면 대수적 순위가 그와 같고 $\text{Ш}$ 가 유한하다는 것이다.
 
 Kato 의 Euler 계는 모듈러 단위에서 오고, Iwasawa 주추측을 통해 [p 진 L 함수](p-adic-l-function.md)와 Selmer 군의 특성 아이디얼을 잇는다.
 

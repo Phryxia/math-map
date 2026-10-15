@@ -60,7 +60,7 @@ $$
 Y(a,z)=\sum_{n\in\mathbb Z}a_{(n)}z^{-n-1},\qquad a_{(n)}\in\mathrm{End}(V)
 $$
 
-를 대응시키는 사상, 진공 $\mathbf 1$ 과 Virasoro 원소 $\omega$ 가 주어지고 국소성 공리를 만족한다. $\omega$ 의 모드가 중심전하 $c$ 의 Virasoro 대수를 이루며 $L_0$ 의 고윳값이 등급을 준다.
+를 대응시키는 사상, 진공 $\mathbf 1$ 과 Virasoro 원소 $\omega$ 가 주어지고 국소성 공리를 만족한다. $\omega$ 의 모드가 중심전하 $c$ 의 [Virasoro 대수](virasoro-algebra.md)를 이루며 $L_0$ 의 고윳값이 등급을 준다.
 
 **moonshine 가군** $V^\natural$ 은 Frenkel–Lepowsky–Meurman 이 구성한 중심전하 $24$ 의 VOA 로 다음을 만족한다.
 
@@ -68,7 +68,7 @@ $$
 \mathrm{Aut}(V^\natural)\cong\mathbb M,\qquad \sum_{n\ge-1}(\dim V^\natural_n)\thinspace q^n=j(\tau)-744
 $$
 
-구성은 두 단계다. Leech 격자 $\Lambda$ 에서 격자 VOA $V_\Lambda$ 를 만들고, $\Lambda$ 의 $-1$ 자기동형이 유도하는 $\mathbb Z/2$ 작용의 **궤도체**(orbifold)를 취한다. 고정부분공간 $V_\Lambda^+$ 에 뒤틀린 부분 $V_\Lambda^{T,+}$ 를 더한 것이 $V^\natural$ 이다.
+구성은 두 단계다. [Leech 격자](leech-lattice.md) $\Lambda$ 에서 격자 VOA $V_\Lambda$ 를 만들고, $\Lambda$ 의 $-1$ 자기동형이 유도하는 $\mathbb Z/2$ 작용의 **궤도체**(orbifold)를 취한다. 고정부분공간 $V_\Lambda^+$ 에 뒤틀린 부분 $V_\Lambda^{T,+}$ 를 더한 것이 $V^\natural$ 이다.
 
 $$
 V^\natural=V_\Lambda^+\oplus V_\Lambda^{T,+}
@@ -136,7 +136,7 @@ $V^\natural$ 을 구성하려는 시도가 정점작용소대수의 공리를 �
 
 - **일반화된 달빛.** Norton 은 켤레류 하나가 아니라 교환하는 쌍 $(g,h)$ 에 모듈러 함수를 대응시키는 확장을 제안했고 Carnahan 이 증명했다. $V^\natural$ 의 $g$ 뒤틀린 가군 위에서 $h$ 의 지표를 보는 것이다.
 - **Mathieu 달빛.** Eguchi–Ooguri–Tachikawa (2010) 가 K3 곡면의 타원 종수를 $\mathcal N=4$ 지표로 분해하면서 계수가 산재군 $M_{24}$ 의 기약표현 차원으로 분해됨을 관찰했다.
-- **umbral moonshine.** Cheng–Duncan–Harvey 가 Mathieu 달빛을 23 개의 Niemeier 격자 각각에 대한 사례로 확장했다. $M_{24}$ 는 Leech 를 뺀 24 차원 짝수 유니모듈러 격자 중 하나에 딸린 경우다. Duncan–Griffin–Ono 가 존재를 증명했다.
+- **umbral moonshine.** Cheng–Duncan–Harvey 가 Mathieu 달빛을 23 개의 [Niemeier 격자](niemeier-lattices.md) 각각에 대한 사례로 확장했다. $M_{24}$ 는 Leech 를 뺀 24 차원 짝수 유니모듈러 격자 중 하나에 딸린 경우다. Duncan–Griffin–Ono 가 존재를 증명했다.
 
 $M_{24}$ 와 Niemeier 격자가 다시 나오므로 24 차원 격자의 분류가 이 현상들의 공통 바탕이다.
 

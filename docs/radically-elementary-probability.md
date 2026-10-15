@@ -2,7 +2,7 @@
 
 # 개요
 
-Nelson 이 세운 이 체계는 표본공간을 [유한 확률 공간](probability.md)으로만 두되 원소 개수가 초유한인 것을 허용한다. 기댓값이 언제나 유한합이므로 $\sigma$ 대수, [측도](measure.md)의 가산가법성, Kolmogorov 확장 정리를 쓰지 않고 Brown 운동과 확률적분을 세운다. 초유한 자연수는 [내부집합론](internal-set-theory.md)의 이상화 공리가 준다.
+Nelson 이 세운 이 체계는 표본공간을 [유한 확률 공간](probability.md)으로만 두되 원소 개수가 초유한인 것을 허용한다. 기댓값이 언제나 유한합이므로 $\sigma$ 대수, [측도](measure.md)의 가산가법성, Kolmogorov 확장 정리를 쓰지 않고 [Brown 운동](brownian-motion.md)과 확률적분을 세운다. 초유한 자연수는 [내부집합론](internal-set-theory.md)의 이상화 공리가 준다.
 
 # 직관
 
@@ -51,7 +51,7 @@ $\pm 1/\sqrt\nu$ 걷기 $w$ 는 거의 모든 $\omega$ 에서 $S$ 연속이고, 
 
 ## 중심극한정리
 
-독립이고 같은 분포를 따르며 분산이 $1$ 인 $x_1,\dots,x_\nu$ 의 정규화된 합 $\nu^{-1/2}\sum x_i$ 의 분포함수는 표준 Gauss 분포함수와 모든 표준 실수에서 무한히 가깝다. 특성함수의 유한곱을 전개하고 나머지를 무한소로 누른다.
+독립이고 같은 분포를 따르며 분산이 $1$ 인 $x_1,\dots,x_\nu$ 의 정규화된 합 $\nu^{-1/2}\sum x_i$ 의 분포함수는 표준 Gauss 분포함수와 모든 표준 실수에서 무한히 가깝다. 특성함수의 유한곱을 전개하고 나머지를 무한소로 누르면 [중심극한정리](central-limit-theorem.md)가 나온다.
 
 ## 확률적분
 
@@ -70,7 +70,7 @@ $$
 # 활용
 
 - **Brown 운동의 구성.** 경로공간 위의 측도를 짓지 않고 유한 걷기 하나로 끝낸다. 연속성은 적률 계산에서 직접 나온다.
-- **확률미분방정식.** Euler 도식 $x(t+\delta)=x(t)+b\thinspace\delta+\sigma\thinspace\lbrack w(t+\delta)-w(t)\rbrack$ 이 수치 근사가 아니라 해의 정의다. 표준부분이 표준 해와 같다.
+- **[확률미분방정식](stochastic-differential-equations.md).** Euler 도식 $x(t+\delta)=x(t)+b\thinspace\delta+\sigma\thinspace\lbrack w(t+\delta)-w(t)\rbrack$ 이 수치 근사가 아니라 해의 정의다. 표준부분이 표준 해와 같다.
 - **Loeb 측도.** 이 체계가 다루지 않는 비가산 표본공간의 진술은 Loeb 측도를 거쳐 옮긴다.
 - **[마팅게일](martingales.md).** 정지시각과 선택정리가 유한합의 재배열이 되어 증명이 짧아진다.
 

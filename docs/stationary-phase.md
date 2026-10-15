@@ -40,7 +40,7 @@ $\varphi'(x_0)=0$ 인 점에서는 $1/\varphi'$ 이 폭발해 이 논법이 깨�
 >
 > 정상점이 여럿이면 각각의 기여를 더한다.
 
-$\varphi''(x_0)\ne0$ 이 **비퇴화** 조건이다. Morse 이론의 비퇴화 임계점과 같은 조건이며, 이것이 있어야 2 차 항만으로 근사가 끝난다.
+$\varphi''(x_0)\ne0$ 이 **비퇴화** 조건이다. [Morse 이론](morse-theory.md)의 비퇴화 임계점과 같은 조건이며, 이것이 있어야 2 차 항만으로 근사가 끝난다.
 
 *증명의 요지.* 1 은 $e^{i\lambda\varphi}=\frac1{i\lambda\varphi'}\frac{d}{dx}e^{i\lambda\varphi}$ 로 쓰고 부분적분하는 것을 되풀이한다. $g$ 가 옹골 받침을 가지므로 경계항이 없고 매번 $1/\lambda$ 이 떨어진다. Riemann–Lebesgue 보조정리의 정량적 판본이며 $g$ 가 해석적이면 감소가 지수적이다. 2 는 정상점 주위를 잘라 내고 $\varphi$ 를 2 차까지 전개한 뒤 Fresnel 적분을 쓴다.
 
@@ -63,7 +63,7 @@ $$
 \mathrm{Ai}(t)=\frac1{2\pi}\int_{-\infty}^{\infty}e^{i(s^3/3+ts)}ds
 $$
 
-$t\lt 0$ 이면 정상점이 둘이라 진동하고 $t\gt 0$ 이면 실수 정상점이 없어 지수적으로 작아진다. 경계 $t=0$ 에서 두 정상점이 충돌해 퇴화한다. 무지개의 밝은 띠, 파동의 초곡선(caustic), WKB 근사가 전향점에서 깨지는 현상이 이 그림이다.
+$t\lt 0$ 이면 정상점이 둘이라 진동하고 $t\gt 0$ 이면 실수 정상점이 없어 지수적으로 작아진다. 경계 $t=0$ 에서 두 정상점이 충돌해 퇴화한다. 무지개의 밝은 띠, 파동의 초곡선(caustic), [WKB 근사](wkb-approximation.md)가 전향점에서 깨지는 현상이 이 그림이다.
 
 # 성질
 
@@ -102,7 +102,7 @@ $$
 
 이다. 두 항의 위상차가 $\lambda(\varphi(x_1)-\varphi(x_2))+\pi/2$ 이므로 $|I(\lambda)|$ 가 $\lambda^{-1/2}$ 로 줄면서 주기적으로 진동하고, 어떤 $\lambda$ 에서는 거의 0 이 된다.
 
-같은 구조가 양자 불변량의 점근에서 되풀이된다. Chern–Simons 경로적분에서 임계점은 평탄 접속, 임계값 $\varphi(x_\alpha)$ 는 Chern–Simons 불변량, $|\det H|^{-1/2}$ 는 Reidemeister 비틀림, $\sigma(H)$ 는 스펙트럼 흐름이고, 그 사전이 Witten 점근 추측의 진술이다. 양자 불변량이 어떤 $k$ 에서 0 이 되는 현상도 두 항의 상쇄와 같다.
+같은 구조가 양자 불변량의 점근에서 되풀이된다. Chern–Simons 경로적분에서 임계점은 평탄 접속, 임계값 $\varphi(x_\alpha)$ 는 Chern–Simons 불변량, $|\det H|^{-1/2}$ 는 [Reidemeister 비틀림](reidemeister-torsion.md), $\sigma(H)$ 는 스펙트럼 흐름이고, 그 사전이 Witten 점근 추측의 진술이다. 양자 불변량이 어떤 $k$ 에서 0 이 되는 현상도 두 항의 상쇄와 같다.
 
 # 활용
 
