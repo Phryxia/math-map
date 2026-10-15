@@ -2,7 +2,7 @@
 
 # 개요
 
-벡터 공간의 차원은 기저의 개수다. 다항식환에는 기저가 없고, $k[x,y]$ 는 $k$ 위에서 무한 차원이지만 이 환이 좌표환인 평면은 $2$ 차원이다.
+Krull 차원(Krull dimension)은 환의 소아이디얼 사슬의 최대 길이다. 벡터 공간의 차원은 기저의 개수다. 다항식환에는 기저가 없고, $k[x,y]$ 는 $k$ 위에서 무한 차원이지만 이 환이 좌표환인 평면은 $2$ 차원이다.
 
 **Krull 차원**은 [소 아이디얼](prime-ideals.md)의 포함 사슬이 얼마나 길어지는지로 환의 차원을 잰다. [Noether 환](noetherian-rings.md)에서는 이 값이 극대 아이디얼을 정의하는 원소의 최소 개수와 같고, 방정식 하나가 차원을 얼마나 떨어뜨리는지도 정해진다.
 
@@ -100,7 +100,7 @@ $$
 - **특이점 판정.** 다양체의 점에서 국소환이 정칙이면 매끄러운 점, 아니면 특이점이다. $\dim_\kappa\mathfrak m/\mathfrak m^2$ 는 접공간의 차원이므로 판정은 접공간이 다양체보다 큰지를 보는 것이다.
 - **Dedekind 정역.** 차원 $1$ 인 Noether 정칙 정역이 [Dedekind 정역](dedekind-domains.md)이다. 높이 정리로 $0$ 이 아닌 소 아이디얼이 모두 극대가 되고, 아이디얼이 소 아이디얼의 곱으로 분해된다.
 - **Morley 위수와의 일치.** 대수적으로 닫힌 체에서 정의 가능 집합의 Morley 위수가 Zariski 닫음의 차원과 같다. [안정 이론](stable-theories.md)의 성질 절이 이 일치를 든다.
-- **Iwasawa 대수.** $\Lambda=\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 가 $2$ 차원 정칙 국소환이고, 유한생성 가군의 구조 정리가 높이 $1$ 소 아이디얼마다의 조각으로 분해한다. [Iwasawa 주추측](iwasawa-main-conjecture.md)의 정식화가 이 분해 위에 놓인다.
+- **[Iwasawa 대수](iwasawa-algebra.md).** $\Lambda=\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 가 $2$ 차원 정칙 국소환이고, 유한생성 가군의 구조 정리가 높이 $1$ 소 아이디얼마다의 조각으로 분해한다. [Iwasawa 주추측](iwasawa-main-conjecture.md)의 정식화가 이 분해 위에 놓인다.
 
 [^1]: D. Eisenbud, *Commutative Algebra with a View Toward Algebraic Geometry* (1995), 10–11장. 차원 정리와 Krull 높이 정리가 이 두 장에 있다.
 [^2]: H. Matsumura, *Commutative Ring Theory* (1986), 5장과 14장. 다항식환의 차원이 Noether 조건 없이 깨지는 예가 부록에 있다.

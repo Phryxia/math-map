@@ -2,7 +2,7 @@
 
 # 개요
 
-완전교차환은 완비화가 정칙 국소환을 정칙열로 나눈 몫인 Noether 국소환이다. 정칙 국소환보다 넓고 Gorenstein 환보다 좁은 부류이며, 자유분해가 Koszul 복합체로 주어지므로 호몰로지 불변량이 생성원의 개수만으로 계산된다.
+완전교차환(complete intersection ring)은 완비화가 정칙 국소환을 정칙열로 나눈 몫인 Noether 국소환이다. 정칙 국소환보다 넓고 Gorenstein 환보다 좁은 부류이며, 자유분해가 Koszul 복합체로 주어지므로 호몰로지 불변량이 생성원의 개수만으로 계산된다.
 
 Betti 수의 증가 속도가 이 부류를 특징짓는다. 정칙환에서는 Betti 수가 유한 단계에서 끊기고, 완전교차환에서는 다항식 규모로 자라며, 그렇지 않은 환에서는 지수 규모로 자라는 가군이 있다.
 
@@ -38,7 +38,7 @@ $c$ 는 $A$ 의 선택에 의존하지 않고 $\dim A-\dim R$ 와 같으며, 이
 
 ## 부류의 포함 관계
 
-정칙 국소환은 $c=0$ 인 완전교차환이다. 완전교차환은 [Gorenstein 환](gorenstein-rings.md)이고, Gorenstein 환은 Cohen–Macaulay 환이다. 두 포함 모두 진포함이다.
+정칙 국소환은 $c=0$ 인 완전교차환이다. 완전교차환은 [Gorenstein 환](gorenstein-rings.md)이고, Gorenstein 환은 [Cohen–Macaulay 환](cohen-macaulay-rings.md)이다. 두 포함 모두 진포함이다.
 
 $R=A/(f_1,\dots,f_c)$ 의 $A$ 위 자유분해는 Koszul 복합체 $K\_\bullet(f_1,\dots,f_c)$ 이고, 이 복합체의 쌍대가 차수를 뒤집은 자기 자신이므로 $R$ 의 유형이 $1$ 이다. 유형 $1$ 이 Gorenstein 조건이다. 역이 성립하지 않는 예로 유형은 $1$ 이지만 여차원이 $c$ 인 어떤 $A$ 로도 표현되지 않는 환이 있다.
 
