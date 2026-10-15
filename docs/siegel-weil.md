@@ -8,7 +8,7 @@ $$
 r_Q(n)=\char35{}\lbrace x\in\mathbb Z^m:\ Q(x)=n\rbrace
 $$
 
-을 묻는 문제는 Lagrange 의 네 제곱수 정리와 Gauss 의 세 제곱수 정리의 형태다. 각 $\mathbb Z_p$ 와 $\mathbb R$ 에서 해의 존재는 유한한 계산이지만, 국소 해가 전부 있어도 정수해가 없을 수 있다. 정수 위에서 국소-전역 원리가 깨지는 정도를 재는 것이 **Siegel–Weil 공식**이다.
+을 묻는 문제는 [Lagrange 의 네 제곱수 정리](four-squares-theorem.md)와 Gauss 의 세 제곱수 정리의 형태다. 각 $\mathbb Z_p$ 와 $\mathbb R$ 에서 해의 존재는 유한한 계산이지만, 국소 해가 전부 있어도 정수해가 없을 수 있다. 정수 위에서 국소-전역 원리가 깨지는 정도를 재는 것이 **Siegel–Weil 공식**이다.
 
 Siegel 의 형태는 같은 **류(genus)** 에 속하는 형식들의 표현수를 자기동형군 크기로 가중 평균하면 국소 밀도의 곱과 같다는 것이다.
 

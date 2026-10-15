@@ -6,7 +6,7 @@ $n$ 을 정해진 모양의 수 $s$ 개의 합으로 쓰는 방법이 몇 가지
 
 원법은 그 개수를 지수합의 거듭제곱을 한 주기 적분한 값으로 적고, 적분 구간을 분모가 작은 유리수의 근방과 나머지로 갈라 계산한다. 앞쪽에서 주항이 나오고 뒤쪽은 오차로 묶인다.
 
-Hardy 와 Ramanujan 이 1918 년 분할수의 점근식에서 썼고[^1], Hardy 와 Littlewood 가 Waring 문제와 Goldbach 문제로 넓혔다. Vinogradov 가 지수합 추정을 바꿔 삼소수 정리를 얻었다.
+Hardy 와 Ramanujan 이 1918 년 분할수의 점근식에서 썼고[^1], Hardy 와 Littlewood 가 [Waring 문제](waring-problem.md)와 Goldbach 문제로 넓혔다. Vinogradov 가 지수합 추정을 바꿔 삼소수 정리를 얻었다.
 
 # 직관
 
