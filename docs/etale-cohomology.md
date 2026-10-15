@@ -40,7 +40,7 @@ $$
 
 가 동등자가 되는 것이다. 아벨군 값 층들의 범주는 단사 대상을 충분히 가지므로 $\Gamma(X,-)$ 의 [우유도함자](derived-functors.md)로 $H^i(X_{\text{ét}},F)$ 를 정의한다.
 
-## $\ell$ 진 코호몰로지
+## ℓ 진 코호몰로지
 
 $$
 H^i(X,\mathbb Z_\ell)=\varprojlim_n H^i(X,\mathbb Z/\ell^n),\qquad
@@ -95,7 +95,7 @@ $X$ 가 체 $k$ 위에 정의되어 있으면 $H^i(X_{\bar k},\mathbb Q_\ell)$ �
 
 모듈러 곡선과 Shimura 다양체의 $\ell$ 진 코호몰로지가 자기동형 형식에 붙는 Galois 표현을 만든다. 모듈러성 정리와 [Langlands 강령](langlands-program.md)의 대응이 이 표현을 양쪽에서 견준다.
 
-## 대수적 $K$ 이론의 계산
+## 대수적 K 이론의 계산
 
 $K$ 군을 에탈 코호몰로지로 환원하는 Quillen–Lichtenbaum 추측이 Voevodsky 의 모티브 코호몰로지 작업으로 증명되었고, 유한체와 수체의 $K$ 군 계산이 그 환원을 쓴다.[^3]
 

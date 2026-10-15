@@ -106,7 +106,7 @@ Pontryagin 류의 정의는 접다발을 쓰므로 미분구조에 의존해 보
 
 $\Omega^{SO}\_\ast\otimes\mathbb Q$ 는 $\lbrack\mathbb{CP}^{2i}\rbrack$ 들의 다항식환이다. Pontryagin 수가 이 환의 각 차수에서 $\mathbb Q$ 로 가는 선형함수를 전부 주므로, 유리 코보디즘류와 Pontryagin 수의 목록이 같은 자료다. ∎
 
-## $L$-류와 $\hat A$-류
+## L 류와 Â 류
 
 Pontryagin 근 $y_j$ 의 멱급수로 두 류를 정의한다.
 
