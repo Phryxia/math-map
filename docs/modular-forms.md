@@ -11,7 +11,7 @@ $$
 
 무한히 많은 변환 각각에 대한 등식에 정칙성까지 요구하지만 해가 $0$ 만은 아니다. 각 무게 $k$ 마다 유한차원 벡터공간이 남는다.
 
-유한차원성이 도구가 된다. 다른 방식으로 만든 두 모듈러 형식이 같은 작은 공간에 있으면 몇 개의 계수만 맞춰 보아도 둘이 같고, 나머지 무한히 많은 계수의 항등식이 따라온다. 약수 함수의 합성곱 항등식, 분할수의 점근식, 격자의 theta 급수, [타원곡선](elliptic-curves.md)의 점 개수가 이 방식으로 연결된다.
+유한차원성이 도구가 된다. 다른 방식으로 만든 두 모듈러 형식이 같은 작은 공간에 있으면 몇 개의 계수만 맞춰 보아도 둘이 같고, 나머지 무한히 많은 계수의 항등식이 따라온다. 약수 함수의 합성곱 항등식, 분할수의 점근식, 격자의 [theta 급수](theta-series.md), [타원곡선](elliptic-curves.md)의 점 개수가 이 방식으로 연결된다.
 
 이 대칭이 $\mathrm{GL}\_2$ 자기동형 표현을 고전적으로 쓴 것이며, [Langlands 강령](langlands-program.md)에서 [Galois 표현](galois-representations.md)과 짝지어지는 쪽이다.
 
@@ -63,7 +63,7 @@ $$
 
 ## 표준적인 예
 
-**Eisenstein 급수.** $k\ge4$ 가 짝수일 때 격자 위의 합 $G_k(\Lambda)=\sum_{0\ne\lambda\in\Lambda}\lambda^{-k}$ 가 무게 $k$ 의 형식을 주고, 상수항을 1 로 정규화하면 다음이다.
+**[Eisenstein 급수](eisenstein-series.md).** $k\ge4$ 가 짝수일 때 격자 위의 합 $G_k(\Lambda)=\sum_{0\ne\lambda\in\Lambda}\lambda^{-k}$ 가 무게 $k$ 의 형식을 주고, 상수항을 1 로 정규화하면 다음이다.
 
 $$
 E_k(\tau)=1-\frac{2k}{B_k}\sum_{n\ge1}\sigma_{k-1}(n)q^n
@@ -89,7 +89,7 @@ $$
 
 ## Hecke 작용소
 
-$M_k$ 위에 작용하는 가환 연산자족이 있다. 소수 $p$ 에서 $q$ 전개로 쓰면 다음이다.
+$M_k$ 위에 [Hecke 작용소](hecke-operators.md)라는 가환 연산자족이 작용한다. 소수 $p$ 에서 $q$ 전개로 쓰면 다음이다.
 
 $$
 (T_pf)\_n=a_{np}+p^{k-1}a_{n/p}\qquad(p\nmid n \text{ 이면 둘째 항은 0})
@@ -113,7 +113,7 @@ $$
 
 $-I$ 가 $(-1)^k$ 를 곱하므로 홀수 무게가 사라진다. $k=4,6,8,10$ 에서 차원이 1 이고 $k=12$ 에서 처음 2 가 된다. $S_{12}$ 가 1 차원이라 $\Delta$ 가 상수배를 빼고 유일한 무게 12 첨점형식이다.
 
-차원이 유한한 것은 영점의 개수가 유계이기 때문이다. $f$ 가 무게 $k$ 의 모듈러 형식이면 기본영역의 경계에 유수 정리를 적용해 다음을 얻는다.
+차원이 유한한 것은 영점의 개수가 유계이기 때문이다. $f$ 가 무게 $k$ 의 모듈러 형식이면 기본영역의 경계에 [유수 정리](residue-theorem.md)를 적용해 다음을 얻는다.
 
 $$
 \mathrm{ord}\_\infty(f)+\tfrac12\mathrm{ord}\_i(f)+\tfrac13\mathrm{ord}\_\rho(f)+\sum_{\text{나머지}}\mathrm{ord}\_P(f)=\frac k{12}
@@ -123,7 +123,7 @@ $1/2$ 과 $1/3$ 은 $i$ 와 $\rho=e^{2\pi i/3}$ 에서 고정자군이 자명하
 
 무게 $k$ 의 두 형식이 $\lfloor k/12\rfloor+1$ 개의 계수에서 일치하면 완전히 같다. 이 논법이 **Sturm 한계**이고 항등식의 기계적 증명 절차가 된다.
 
-## Ramanujan 의 $\tau$
+## Ramanujan 의 τ
 
 $\Delta$ 가 유일한 무게 12 첨점형식이므로 Hecke 고유형식이고 $\tau$ 가 곱셈적이다.
 
@@ -143,7 +143,7 @@ $$
 
 ## 모듈러 곡선
 
-$Y_0(N)=\Gamma_0(N)\backslash\mathbb H$ 는 Riemann 곡면이고 첨점을 더해 콤팩트화한 것이 $X_0(N)$ 이다. 이 곡면 위에서 무게 2 의 첨점형식이 정칙 미분형식 $f(\tau)d\tau$ 와 대응한다.
+$Y_0(N)=\Gamma_0(N)\backslash\mathbb H$ 는 [Riemann 곡면](riemann-surfaces.md)이고 첨점을 더해 콤팩트화한 것이 $X_0(N)$ 이다. 이 곡면 위에서 무게 2 의 첨점형식이 정칙 미분형식 $f(\tau)d\tau$ 와 대응한다.
 
 $$
 \dim S_2(\Gamma_0(N))=g\big(X_0(N)\big)
@@ -167,7 +167,7 @@ $$
 q\frac{dE_4}{dq}=\frac{E_2E_4-E_6}3,\qquad q\frac{dE_6}{dq}=\frac{E_2E_6-E_4^2}2
 $$
 
-이 등급환을 미분에 대해 닫는다. 조화적 Maass 형식은 Ramanujan 의 유사 theta 함수를 설명하며 분할수의 합동을 다루는 현대적 틀이다.
+이 등급환을 미분에 대해 닫는다. 조화적 [Maass 형식](maass-forms.md)은 Ramanujan 의 유사 theta 함수를 설명하며 분할수의 합동을 다루는 현대적 틀이다.
 
 # 활용
 
