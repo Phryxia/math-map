@@ -24,7 +24,7 @@ $$
 
 물리 쪽 그림에서 $\mathrm{ch}\_M(\tau)$ 는 복소 원환면 $\mathbb C/(\mathbb Z+\mathbb Z\tau)$ 위의 분배함수다. 원환면은 $\tau$ 와 $-1/\tau$ 를 같은 모양으로 보므로 분배함수도 그 두 값에서 같아야 한다. 그런데 대각합을 계산할 때는 한 방향을 시간, 다른 방향을 공간으로 고르고, 두 방향을 맞바꾼 계산이 같은 값을 준다는 논증은 급수가 수렴하고 대각합이 잘 정의될 때만 성립한다. $\mathfrak{sl}\_2$ 아핀 VOA 를 음의 정수가 아닌 레벨에서 보거나 $C_2$ 여유한이 아닌 VOA 를 보면 지표가 수렴하지 않거나, 수렴해도 모듈러 궤도가 무한차원이 된다.
 
-$C_2$ 여유한 조건은 $C_2(V)=\mathrm{span}\lbrace a_{-2}b:a,b\in V\rbrace$ 에 대해 $\dim V/C_2(V)\lt\infty$ 를 요구한다. $V/C_2(V)$ 가 유한차원이면 그 위의 연산이 유한 단계에서 선형종속을 만들고, 그것이 모듈러 형식을 계수로 갖는 선형상미분방정식으로 번역된다.
+$C_2$ 여유한 조건은 $C_2(V)=\mathrm{span}\lbrace a_{-2}b:a,b\in V\rbrace$ 에 대해 $\dim V/C_2(V)\lt\infty$ 를 요구한다. $V/C_2(V)$ 가 유한차원이면 그 위의 연산이 유한 단계에서 선형종속을 만들고, 그것이 모듈러 형식을 계수로 갖는 선형 [상미분방정식](ordinary-differential-equations.md)으로 번역된다.
 
 $$
 \left(\partial_q^{(n)}+g_2(\tau)\partial_q^{(n-2)}+\cdots+g_n(\tau)\right)f=0,\qquad g_k\in M_{2k}(\mathrm{SL}\_2(\mathbb Z))
@@ -85,7 +85,7 @@ $M$ 이 기약이면 최저층 $M(0)$ 이 전체를 생성한다. $a\in V$ 의 �
 | 격자 VOA $V_L$ ($L$ 짝수) | $\mathbb C[L^\ast/L]$ | $\vert L^\ast/L\vert$ 개, 잉여류로 색인 |
 | $V^\natural$ | $\mathbb C$ | 자기 자신 하나뿐 |
 
-$A(V)=\mathbb C[x]$ 인 경우 $x=[\omega]$ 이고 그 고윳값이 최고무게 $h$ 다. 최소모형에서는 $f(x)$ 의 근이 Kac 표의 $h_{r,s}$ 값들이라 가군 개수가 유한하다. 기약가군 분류가 다항식 하나의 근을 찾는 문제로 내려온다.
+$A(V)=\mathbb C[x]$ 인 경우는 [Virasoro 대수](virasoro-algebra.md)의 Zhu 대수다. 이때 $x=[\omega]$ 이고 그 고윳값이 최고무게 $h$ 다. 최소모형에서는 $f(x)$ 의 근이 Kac 표의 $h_{r,s}$ 값들이라 가군 개수가 유한하다. 기약가군 분류가 다항식 하나의 근을 찾는 문제로 내려온다.
 
 $V^\natural$ 은 $A(V)=\mathbb C$ 라 기약가군이 자기 자신뿐이고(**홀로모픽**), 지표가 1 차원 표현이므로 $\mathrm{SL}\_2(\mathbb Z)$ 에 대해 상수배로만 변한다. 무게 0 이고 첨점에서 극이 하나인 그런 함수는 $j$ 의 상수 이동뿐이다.
 
@@ -122,7 +122,7 @@ $$
 
 ## 등각장론의 분류
 
-$c$ 를 고정하고 홀로모픽 VOA 를 분류하는 문제는 격자 분류의 VOA 판본이다. $c=8$ 에서 $V_{E_8}$ 하나, $c=16$ 에서 둘, $c=24$ 에서 71 개(Schellekens 목록)로 [Niemeier 격자](niemeier-lattices.md)의 24 개와 평행하게 커진다. 무게 0 모듈러 함수의 공간이 유한차원이므로 가능한 지표가 유한개로 제한되고, 그 목록이 분류의 후보를 만든다.
+$c$ 를 고정하고 홀로모픽 VOA 를 분류하는 문제는 격자 분류의 VOA 판본이다. $c=8$ 에서 $V_{E_8}$ 하나, $c=16$ 에서 둘, $c=24$ 에서 71 개([Schellekens 목록](schellekens-list.md))로 [Niemeier 격자](niemeier-lattices.md)의 24 개와 평행하게 커진다. 무게 0 모듈러 함수의 공간이 유한차원이므로 가능한 지표가 유한개로 제한되고, 그 목록이 분류의 후보를 만든다.
 
 [^1]: 원논문은 Y. Zhu, *Modular invariance of characters of vertex operator algebras*, J. Amer. Math. Soc. 9 (1996). $C_2$ 여유한이되 유리적이 아닌 경우로의 확장은 M. Miyamoto, *Modular invariance of vertex operator algebras satisfying $C_2$ cofiniteness*, Duke Math. J. 122 (2004). Verlinde 공식의 증명은 Y.-Z. Huang, *Vertex operator algebras and the Verlinde conjecture*, Commun. Contemp. Math. 10 (2008). 교과서적 정리는 C. Dong–J. Lepowsky 와 A. Matsuo–K. Nagatomo 의 강의록.
 

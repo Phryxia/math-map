@@ -77,7 +77,7 @@ $\ell$ 동종사상 그래프는 모든 $\ell\ne p$ 에 대해 연결이다. 사
 
 $k$ 정규 그래프의 인접행렬 [고윳값](eigenvalues.md)은 $k=\lambda_1\ge\lambda_2\ge\dots$ 이고, Alon–Boppana 가 $\lambda_2\ge2\sqrt{k-1}-o(1)$ 이라는 하한을 준다. 자명한 것을 뺀 모든 고윳값에서 이 하한을 달성하는 그래프가 Ramanujan 그래프다.
 
-초특이 $\ell$ 동종사상 그래프의 인접행렬은 사원수대수의 Brandt 행렬이고 그 고윳값은 무게 $2$ 새형식의 Hecke 고윳값 $a_\ell$ 이다. Jacquet–Langlands 대응이 둘을 잇고 Deligne 이 증명한 Ramanujan 추정 $|a_\ell|\le2\sqrt\ell$ 이 Ramanujan 조건을 준다[^1].
+초특이 $\ell$ 동종사상 그래프의 인접행렬은 사원수대수의 Brandt 행렬이고 그 고윳값은 무게 $2$ 새형식의 Hecke 고윳값 $a_\ell$ 이다. [Jacquet–Langlands 대응](jacquet-langlands.md)이 둘을 잇고 Deligne 이 증명한 Ramanujan 추정 $|a_\ell|\le2\sqrt\ell$ 이 Ramanujan 조건을 준다[^1].
 
 ## 스펙트럼 간극과 혼합 시간
 
@@ -112,7 +112,7 @@ $$
 
 - **CGL 해시.** 메시지 비트로 그래프를 걷고 도착 $j$ 를 출력한다. 보조점을 공개하지 않으므로 공격이 닿지 않고, 충돌 저항성이 경로 문제와 자기준동형환 계산에 직결된다.
 - **CSIDH**(commutative supersingular isogeny Diffie–Hellman)**.** $\mathbb F_p$ 유리 초특이 곡선만 쓰면 유수군의 가환 군 작용이 복원된다. 가환 구조라 준지수 양자 공격(Kuperberg)에 노출되지만 매개변수를 키워 대응하며, 토션 상을 공개하지 않는다.
-- **SQIsign.** Deuring 대응을 정면으로 활용해 서명을 만들고, 서명 길이가 짧아 후양자 서명 후보로 남아 있다.
+- **SQIsign.** [Deuring 대응](deuring-correspondence.md)을 정면으로 활용해 서명을 만들고, 서명 길이가 짧아 후양자 서명 후보로 남아 있다.
 
 # 활용
 

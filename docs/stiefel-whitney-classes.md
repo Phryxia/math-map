@@ -4,7 +4,7 @@
 
 Stiefel–Whitney 류는 실 [벡터다발](vector-bundles.md)에 붙는 $\mathbb Z/2$ 계수 코호몰로지류다. 밑공간 $X$ 위의 다발 $E$ 마다 $w_i(E)\in H^i(X;\mathbb Z/2)$ 가 있고 자명한 다발에서는 $i\ge 1$ 인 것이 모두 소멸한다.
 
-[특성류](characteristic-classes.md) 가운데 Chern 류와 Pontryagin 류가 복소 구조나 실수 계수를 요구하는 자리에서, 이 류는 아무 실 다발에나 있다. 접다발에 적용하면 $w_1$ 이 방향가능성을, $w_2$ 가 스핀 구조의 존재를, 전체 류의 역이 몰입에 필요한 차원의 하한을 판정한다.
+[특성류](characteristic-classes.md) 가운데 Chern 류와 [Pontryagin 류](pontryagin-classes.md)가 복소 구조나 실수 계수를 요구하는 자리에서, 이 류는 아무 실 다발에나 있다. 접다발에 적용하면 $w_1$ 이 방향가능성을, $w_2$ 가 스핀 구조의 존재를, 전체 류의 역이 몰입에 필요한 차원의 하한을 판정한다.
 
 # 직관
 
@@ -25,7 +25,7 @@ Stiefel–Whitney 류는 실 [벡터다발](vector-bundles.md)에 붙는 $\mathb
 
 ## Steenrod 제곱을 쓴 구성
 
-랭크 $r$ 인 다발 $E$ 의 Thom 공간을 $\mathrm{Th}(E)$ 라 하고 Thom 동형을 $\phi:H^k(X;\mathbb Z/2)\to H^{k+r}(\mathrm{Th}(E);\mathbb Z/2)$ 라 하면
+랭크 $r$ 인 다발 $E$ 의 [Thom 공간](thom-space.md)을 $\mathrm{Th}(E)$ 라 하고 Thom 동형을 $\phi:H^k(X;\mathbb Z/2)\to H^{k+r}(\mathrm{Th}(E);\mathbb Z/2)$ 라 하면
 
 $$
 w_i(E)=\phi^{-1}(\mathrm{Sq}^i\phi(1))
@@ -79,7 +79,7 @@ $n=2^r$ 인 $\mathbb{RP}^n$ 에서 이 역을 계산하면 $w(TM)^{-1}=1+a+\dots
 - [스핀 구조](spin-structures.md)의 존재 조건. 지표정리와 스피너 장을 쓰는 자리에서 $w_2$ 의 소멸이 전제가 된다.
 - 몰입과 매장의 하한. 위 계산이 Whitney 매장정리의 차원 $2n$ 을 낮출 수 없는 다양체를 준다.
 - 비방향 코보디즘 환의 계산. Stiefel–Whitney 수가 완전 불변량이므로 이 환을 다항식환으로 결정하는 Thom 의 계산에 쓰인다.
-- 판정의 한계. $S^n$ 의 접다발은 모든 $w_i$ 가 소멸하지만 $n$ 이 $1, 3, 7$ 일 때만 자명하다. 평행가능성과 [나눗셈 대수](division-algebras.md)의 차원 제약은 이 류가 아니라 Steenrod 연산과 Hopf 불변량으로 판정한다.
+- 판정의 한계. $S^n$ 의 접다발은 모든 $w_i$ 가 소멸하지만 $n$ 이 $1, 3, 7$ 일 때만 자명하다. 평행가능성과 [나눗셈 대수](division-algebras.md)의 차원 제약은 이 류가 아니라 Steenrod 연산과 [Hopf 불변량](hopf-invariant.md)으로 판정한다.
 
 # 연관 문서
 
