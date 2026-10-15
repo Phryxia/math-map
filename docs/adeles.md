@@ -47,7 +47,7 @@ $$
 
 를 열린 부분환으로 두고 그 곱위상의 합집합으로 준다. 결과는 국소콤팩트 위상환이며 대각 매장 $K\hookrightarrow\mathbb A_K$ 가 정의된다.
 
-곱 $\prod_p\mathbb Z_p$ 는 Tychonoff 정리로 콤팩트하지만 $\prod_p\mathbb Q_p$ 는 국소콤팩트조차 아니다. 각 $\mathbb Q_p$ 가 콤팩트하지 않아 무한 곱에서 콤팩트 근방을 만들 수 없다. 제한직적은 $\prod_v\mathcal O_v$ 라는 콤팩트 열린 부분군을 심어 두고 그 평행이동으로 위상을 주므로 전체가 국소콤팩트가 되고 Haar 측도가 생긴다.
+곱 $\prod_p\mathbb Z_p$ 는 [Tychonoff 정리](tychonoff-theorem.md)로 콤팩트하지만 $\prod_p\mathbb Q_p$ 는 국소콤팩트조차 아니다. 각 $\mathbb Q_p$ 가 콤팩트하지 않아 무한 곱에서 콤팩트 근방을 만들 수 없다. 제한직적은 $\prod_v\mathcal O_v$ 라는 콤팩트 열린 부분군을 심어 두고 그 평행이동으로 위상을 주므로 전체가 국소콤팩트가 되고 Haar 측도가 생긴다.
 
 거의 모든 자리에서 정수라는 조건은 $K$ 의 원소 하나의 분모에 유한 개의 소수만 나오는 데서 온다. 직합이었다면 $x_v=x$ 인 대각 원소가 거의 모든 자리에서 0 이 아니라 들어가지 못한다.
 
@@ -89,7 +89,7 @@ $$
 
 > **정리.** $K$ 는 $\mathbb A_K$ 의 이산 부분군이고 $\mathbb A_K/K$ 는 콤팩트하다.
 
-증명의 요지는 $\mathbb Q$ 에서의 분해와 같다. $\mathcal O_K$ 를 $\prod_{v\mid\infty}K_v$ 의 격자로 실현하는 Minkowski 논증에, 유한 자리에서 분모를 없애는 중국인의 나머지 정리를 붙인다.
+증명의 요지는 $\mathbb Q$ 에서의 분해와 같다. $\mathcal O_K$ 를 $\prod_{v\mid\infty}K_v$ 의 격자로 실현하는 Minkowski 논증에, 유한 자리에서 분모를 없애는 [중국인의 나머지 정리](chinese-remainder-theorem.md)를 붙인다.
 
 $K=\mathbb Q$ 에서 그 분해는 $\mathbb A_{\mathbb Q}=\mathbb Q+\big(\lbrack 0,1)\times\hat{\mathbb Z}\big)$ 다. 아델 하나에서 유한 자리들의 분모를 유리수 하나로 없애고 실수 자리를 $\lbrack 0,1)$ 로 옮기면 된다. $\mathbb R=\mathbb Z+\lbrack 0,1)$ 의 아델 판이며 $\lbrack 0,1)\times\hat{\mathbb Z}$ 가 콤팩트 기본영역이다.
 
@@ -160,7 +160,7 @@ $$
 
 - **모듈러스의 소거.** 유체론을 광선류군으로 쓰면 모듈러스 $\mathfrak m$ 을 매번 고르고 정합성을 확인해야 한다. 이델류군은 모든 $\mathfrak m$ 을 동시에 담아 $C_K\to\mathrm{Gal}(K^{\mathrm{ab}}/K)$ 한 줄로 끝난다.
 - **국소와 대역의 통일.** 각 $K_v^\times$ 에서의 국소 유체론과 대역 유체론이 같은 그림의 부분과 전체가 된다. 국소 조건을 붙여 대역 대상을 만드는 절차가 제한직적으로 형식화된다.
-- **해석적 도구.** 국소콤팩트라 Haar 측도와 Fourier 변환이 있다. Tate 논문이 그 첫 적용이고, 자기동형 형식의 스펙트럼 분해와 대각합 공식이 그 위에 세워진다.
+- **해석적 도구.** 국소콤팩트라 Haar 측도와 [Fourier 변환](fourier-transform.md)이 있다. Tate 논문이 그 첫 적용이고, 자기동형 형식의 스펙트럼 분해와 대각합 공식이 그 위에 세워진다.
 - **군의 교체.** $\mathrm{GL}\_1$ 을 $\mathrm{GL}\_n$ 이나 다른 환원군으로 바꾸어도 서술이 그대로 통한다.
 
 ## 수체와 함수체의 평행
