@@ -2,7 +2,7 @@
 
 # 개요
 
-정보 병목은 입력 $X$ 를 압축한 $T$ 가운데 목표 $Y$ 에 대한 정보를 가장 많이 남기는 것을 찾는 문제다.
+정보 병목(information bottleneck)은 입력 $X$ 를 압축한 $T$ 가운데 목표 $Y$ 에 대한 정보를 가장 많이 남기는 것을 찾는 문제다.
 
 $$
 \min_{p(t\mid x)}\thinspace I(X;T)-\beta\thinspace I(T;Y)
