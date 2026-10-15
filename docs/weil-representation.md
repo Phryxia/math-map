@@ -12,13 +12,13 @@ $$
 
 이 사영표현은 2 겹 덮개 $\mathrm{Mp}(W)$ 로 올라가야 진짜 표현이 되며, 그것이 Weil 표현 $\omega_\psi$ 다. 2 겹이 필요하다는 데서 **반정수 무게 모듈러 형식**이 나온다. theta 급수는 $\omega_\psi$ 안의 불변 범함수가 주는 자기동형 형식이고, 모듈러성은 군론의 결과가 된다.
 
-$\mathrm{Sp}$ 안의 두 부분군이 서로의 중심화군일 때(쌍대쌍) $\omega_\psi$ 를 그 곱으로 제한하면 두 군의 표현 사이의 사전이 생기고, 이것이 **theta 대응**이다. Shimura 대응과 Jacquet–Langlands 대응의 여러 사례가 이 사전의 특수한 경우다.
+$\mathrm{Sp}$ 안의 두 부분군이 서로의 중심화군일 때(쌍대쌍) $\omega_\psi$ 를 그 곱으로 제한하면 두 군의 표현 사이의 사전이 생기고, 이것이 **theta 대응**이다. [Shimura 대응](shimura-correspondence.md)과 [Jacquet–Langlands 대응](jacquet-langlands.md)의 여러 사례가 이 사전의 특수한 경우다.
 
 # 직관
 
 Heisenberg 군 $H(W)$ 의 기약 유니터리 표현 $\rho_\psi$ 는 중심 지표를 고정하면 유일하다. $\mathrm{Sp}(W)$ 가 $H(W)$ 에 중심을 고정하며 작용하므로 $g\in\mathrm{Sp}(W)$ 마다 $\rho_\psi\circ g$ 도 같은 중심 지표의 기약 표현이고, 유일성으로 $\rho_\psi$ 와 동형이다. 그 동형을 주는 연산자 $\omega(g)$ 를 고르면 $\rho_\psi(g\cdot h)=\omega(g)\thinspace\rho_\psi(h)\thinspace\omega(g)^{-1}$ 이 성립한다.
 
-$\omega(g)$ 는 Schur 보조정리로 스칼라 차이까지만 정해지므로 $\omega(g_1)\omega(g_2)$ 와 $\omega(g_1g_2)$ 가 스칼라만큼 어긋난다. $\mathrm{SL}\_2$ 에서 Fourier 변환에 대응하는 원소 $w$ 는 $w^2=-I$ 를 만족하고 $-I$ 는 $\varphi(x)\mapsto\varphi(-x)$ 로 작용해야 하는데, Fourier 변환의 제곱이 그것이 되게 하는 정규화 상수는 Gauss 적분의 제곱근이라 부호가 두 가지다. 그 부호를 고르는 것이 2 겹 덮개의 원소를 고르는 것이고, 거기서 반정수 무게가 나온다.
+$\omega(g)$ 는 Schur 보조정리로 스칼라 차이까지만 정해지므로 $\omega(g_1)\omega(g_2)$ 와 $\omega(g_1g_2)$ 가 스칼라만큼 어긋난다. $\mathrm{SL}\_2$ 에서 [Fourier 변환](fourier-transform.md)에 대응하는 원소 $w$ 는 $w^2=-I$ 를 만족하고 $-I$ 는 $\varphi(x)\mapsto\varphi(-x)$ 로 작용해야 하는데, Fourier 변환의 제곱이 그것이 되게 하는 정규화 상수는 Gauss 적분의 제곱근이라 부호가 두 가지다. 그 부호를 고르는 것이 2 겹 덮개의 원소를 고르는 것이고, 거기서 반정수 무게가 나온다.
 
 # 정의
 
@@ -64,7 +64,7 @@ $\gamma_\psi$ 가 Weil 지표이고 제곱근의 모호함은 여기에만 들�
 
 ## theta 범함수
 
-아델 위에서 $\omega_\psi$ 는 Schwartz 공간 $\mathcal S(\mathbb A^n)$ 에 작용한다. 유리점의 값을 모두 더하는 범함수를 얹는다.
+아델 위에서 $\omega_\psi$ 는 Schwartz 공간 $\mathcal S(\mathbb A^n)$ 에 작용한다. 유리점의 값을 모두 더하는 범함수를 정의한다.
 
 $$
 \theta:\mathcal S(\mathbb A^n)\to\mathbb C,\qquad
@@ -127,7 +127,7 @@ $$
 
 ## Siegel–Weil 공식
 
-theta 급수를 $O(V)$ 방향으로 적분하면 [Eisenstein 급수](eisenstein-series.md)가 나온다.
+theta 급수를 $O(V)$ 방향으로 적분하면 [Eisenstein 급수](eisenstein-series.md)가 나온다는 것이 [Siegel–Weil 공식](siegel-weil.md)이다.
 
 $$
 \int_{O(V)(F)\backslash O(V)(\mathbb A)}\Theta_\varphi(g,h)\thinspace dh
@@ -143,7 +143,7 @@ $$
 # 활용
 
 - **이차형식의 표현수.** $\theta^k$ 의 계수가 $k$ 개의 제곱수 합으로 $n$ 을 적는 방법의 수다. Weil 표현이 보장하는 모듈러성 덕분에 이 급수가 유한차원 공간에 놓이고 Eisenstein 부분과 첨점 부분으로 쪼개지며, 앞쪽이 주항을 뒤쪽이 오차항을 준다. $k=4$ 에서는 첨점 부분이 없어 Jacobi 의 네 제곱수 정리 $r_4(n)=8\sum_{4\nmid d\mid n}d$ 가 정확한 공식이 된다.
-- **반정수 무게 형식의 공급원.** 반정수 무게는 메타플렉틱군의 표현이고 그 군의 기본 표현이 $\omega_\psi$ 이므로, 반정수 무게 형식을 만드는 체계적 방법이 theta 급수다. Zagier 의 Eisenstein 급수, Cohen 의 형식, Jacobi 형식이 이 틀에서 나온다.
+- **반정수 무게 형식의 공급원.** 반정수 무게는 메타플렉틱군의 표현이고 그 군의 기본 표현이 $\omega_\psi$ 이므로, 반정수 무게 형식을 만드는 체계적 방법이 theta 급수다. Zagier 의 Eisenstein 급수, Cohen 의 형식, [Jacobi 형식](jacobi-forms.md)이 이 틀에서 나온다.
 - **정준교환관계의 유일성.** Stone–von Neumann 정리는 물리에서 양자화의 유일성 정리다. 위치와 운동량의 교환관계를 만족하는 연산자 쌍은 구현 방식에 관계없이 유니터리 동치이고, Schrödinger 표현과 Heisenberg 행렬역학이 같은 이론인 근거가 된다. 메타플렉틱 표현은 선형 정준변환의 양자화이며, 광학의 ABCD 행렬의 양자 판본이 $\omega_\psi$ 다. 유일성은 유한 자유도에서만 성립하고, 장론에서는 동치가 아닌 표현이 연속적으로 많이 생겨 상전이와 자발적 대칭깨짐이 표현론적 의미를 갖는다.
 
 [^1]: R. Howe, *Transcending classical invariant theory*, J. Amer. Math. Soc. **2** (1989). Weil 표현의 원 논문은 A. Weil, *Sur certains groupes d'opérateurs unitaires*, Acta Math. **111** (1964).

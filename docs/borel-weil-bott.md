@@ -34,7 +34,7 @@ $G=\mathrm{SL}\_2$ 면 $G/B=\mathbb P^1$ 이고, $G=\mathrm{SL}\_3$ 면 $G/B$ �
 
 $G=\mathrm{GL}\_n$ 에서 $G/B$ 는 $\mathbb C^n$ 의 완전 깃발 $0\subset V_1\subset\cdots\subset V_{n-1}\subset\mathbb C^n$ 들의 공간이고 $B$ 는 표준 깃발의 안정자다.
 
-## 직선다발 $\mathcal L_\lambda$
+## 직선다발 Lλ
 
 무게 $\lambda\in X^\ast(T)$ 는 $B\to T\to\mathbb C^\times$ 로 확장되어 $B$ 의 일차원 표현 $\mathbb C_\lambda$ 를 준다. 연관다발
 
@@ -105,7 +105,7 @@ $$
 
 왼쪽은 Atiyah–Bott 고정점 공식이나 등변 Riemann–Roch 로 계산되고 결과가 Weyl 지표 공식의 우변이다. 교대합 $\sum_w(-1)^{\ell(w)}e^{w(\lambda+\rho)}$ 은 고정점 $wB\in(G/B)^T$ 들의 기여를 모은 것이며, 부호 $(-1)^{\ell(w)}$ 가 코호몰로지 차수다.
 
-## 표수 $p$ 에서의 실패
+## 표수 p 에서의 실패
 
 Borel–Weil 의 $H^0$ 부분은 표수 $p$ 인 체 위에서도 성립한다[^2]. $H^0(G/B,\mathcal L_\lambda)$ 는 기약가군의 쌍대가 아니라 **Weyl 가군**의 쌍대를 주고, 기약가군은 그 안의 부분가군으로 나타난다. Bott 의 소멸 부분은 무너져, 지배적이지 않은 $\lambda$ 에 대해 여러 차수에서 동시에 코호몰로지가 살아남는 일이 $p$ 가 작을 때 일어난다.
 
@@ -113,11 +113,11 @@ Borel–Weil 의 $H^0$ 부분은 표수 $p$ 인 체 위에서도 성립한다[^2
 
 ## 포물형 판본
 
-$B$ 대신 포물형 부분군 $P$ 를 쓰면 $G/P$ 도 사영다양체이고 같은 정리가 $W$ 를 $W_P$ 로 나눈 잉여류 대표들로 성립한다. $G=\mathrm{GL}\_n$ 이고 $P$ 가 $k$ 차원 부분공간의 안정자이면 $G/P$ 는 Grassmann 다양체 $\mathrm{Gr}(k,n)$ 이고 Schubert 세포 분해가 Schubert 계산이 된다. 코호몰로지환의 구조상수가 Littlewood–Richardson 계수이며 [Schur 다항식](schur-polynomials.md) 조합론과 같은 표를 만든다.
+$B$ 대신 포물형 부분군 $P$ 를 쓰면 $G/P$ 도 사영다양체이고 같은 정리가 $W$ 를 $W_P$ 로 나눈 잉여류 대표들로 성립한다. $G=\mathrm{GL}\_n$ 이고 $P$ 가 $k$ 차원 부분공간의 안정자이면 $G/P$ 는 [Grassmann 다양체](grassmannian.md) $\mathrm{Gr}(k,n)$ 이고 Schubert 세포 분해가 [Schubert 계산](schubert-calculus.md)이 된다. 코호몰로지환의 구조상수가 Littlewood–Richardson 계수이며 [Schur 다항식](schur-polynomials.md) 조합론과 같은 표를 만든다.
 
 ## 무한차원 확장
 
-$G$ 를 아핀 Kac–Moody 군으로 바꾸면 $G/B$ 가 무한차원 아핀 깃발다양체가 되고 같은 정리가 성립한다. 얻는 표현이 아핀 Lie 대수의 적분 최고무게 표현이고, 그 지표가 [모듈러 형식](modular-forms.md)의 성질을 갖는 Weyl–Kac 지표 공식으로 나온다. [기하학적 Satake 대응](geometric-satake.md)은 아핀 Grassmann 다양체 위 [층](sheaves.md)으로 표현[범주](category.md) 전체를 복원한다.
+$G$ 를 아핀 Kac–Moody 군으로 바꾸면 $G/B$ 가 무한차원 아핀 깃발다양체가 되고 같은 정리가 성립한다. 얻는 표현이 [아핀 Lie 대수](affine-lie-algebras.md)의 적분 최고무게 표현이고, 그 지표가 [모듈러 형식](modular-forms.md)의 성질을 갖는 Weyl–Kac 지표 공식으로 나온다. [기하학적 Satake 대응](geometric-satake.md)은 아핀 Grassmann 다양체 위 [층](sheaves.md)으로 표현[범주](category.md) 전체를 복원한다.
 
 # 활용
 
@@ -151,7 +151,7 @@ $$
 - **표현의 실현.** 분류된 $V_\lambda$ 를 함수공간으로 얻는다. 물리에서 스핀 $j$ 표현을 $\mathbb P^1$ 위 $\mathcal O(2j)$ 의 단면으로 보는 것이 $\mathrm{SU}(2)$ 판본이다.
 - **Schubert 계산.** $G/P$ 의 코호몰로지환에서 Schubert 류의 곱이 고전 열거기하의 문제를 푼다.
 - **Kazhdan–Lusztig 이론.** Schubert 다양체는 특이점을 가지며 그 국소 구조를 재는 것이 KL(Kazhdan–Lusztig) 다항식이다. 표수 $p$ 에서 Bott 정리가 깨지는 방식이 이 다항식으로 기술된다.
-- **기하학적 표현론.** 표현을 공간 위 층으로 실현하는 강령의 최초 사례이며, 기하학적 Satake 와 Beilinson–Bernstein 국소화가 이 길을 잇는다.
+- **기하학적 표현론.** 표현을 공간 위 층으로 실현하는 강령의 최초 사례이며, 기하학적 Satake 와 [Beilinson–Bernstein 국소화](beilinson-bernstein.md)가 이 길을 잇는다.
 
 [^1]: R. Bott, *Homogeneous vector bundles*, Ann. of Math. 66 (1957). 소멸 정리와 이동 규칙의 원전.
 [^2]: J. C. Jantzen, *Representations of Algebraic Groups*, 2nd ed., AMS, 2003. 표수 $p$ 에서 무엇이 남고 무엇이 깨지는지에 대한 표준 참고서.
