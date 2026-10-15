@@ -73,7 +73,7 @@ $$
 
 > **Weil 추측(정리).**
 > 1. $Z(X,t)$ 는 유리함수이고 $\prod_iP_i(t)^{(-1)^{i+1}}$ 로 쓰인다. 여기서 $P_i(t)=\det(1-\mathrm{Frob}\thinspace t\mid H^i_{\mathrm{et}})$ 다.
-> 2. $t\mapsto1/(q^dt)$ 에 대한 함수방정식이 성립한다(Poincaré 쌍대성).
+> 2. $t\mapsto1/(q^dt)$ 에 대한 함수방정식이 성립한다([Poincaré 쌍대성](poincare-duality.md)).
 > 3. $P_i$ 의 역근 $\alpha$ 는 모두 $|\alpha|=q^{i/2}$ 를 만족한다([Riemann 가설](riemann-hypothesis.md)).
 > 4. $X$ 가 표수 0 의 다양체의 환원이면 $\deg P_i$ 가 그 다양체의 Betti 수와 같다.
 
@@ -118,7 +118,7 @@ Serre 추측은 $\bar\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\bar{\mathbb F}\_
 # 활용
 
 - **부호와 암호.** Hasse–Weil 한계가 대수기하 부호의 성능을 결정하고, 타원곡선 암호에서 군의 위수를 추정하는 근거가 된다. Schoof 알고리즘은 $\ell$ 진 표현을 작은 $\ell$ 마다 계산해 $a_p$ 를 다항시간에 구한다.
-- **지수합 추정.** Kloosterman 합 같은 지수합이 어떤 다양체의 점 개수로 해석되고 Riemann 가설이 그 크기의 상계를 준다. 해석적 정수론의 여러 추정이 이 상계를 쓴다.
+- **지수합 추정.** [Kloosterman 합](kloosterman-sums.md) 같은 지수합이 어떤 다양체의 점 개수로 해석되고 Riemann 가설이 그 크기의 상계를 준다. 해석적 정수론의 여러 추정이 이 상계를 쓴다.
 - **모듈러성 증명.** 변형 이론과 $R=T$ 논법의 모든 단계가 $\ell$ 진 표현의 언어로 진행된다.
 - **동기 이론.** 서로 다른 $\ell$ 에서 만든 표현들이 같은 정보를 담는다는 관찰에서 동기라는 대상이 나온다. 이 관점의 정리화는 진행 중이다.
 

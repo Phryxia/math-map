@@ -2,7 +2,7 @@
 
 # 개요
 
-[기하학적 Langlands 강령](geometric-langlands.md)은 곡선 $X$ 위의 다발 모듈라이 $\mathrm{Bun}\_G$ 위에서 전개된다. 함수체 쪽에는 곡선이 실제로 있다. $\mathbb Q_p$ 같은 $p$ 진체에는 곡선이 없다. 국소체 하나는 점 하나처럼 보이고, 그 위에 다발을 얹을 공간이 없다.
+[기하학적 Langlands 강령](geometric-langlands.md)은 곡선 $X$ 위의 다발 모듈라이 $\mathrm{Bun}\_G$ 위에서 전개된다. 함수체 쪽에는 곡선이 실제로 있다. $\mathbb Q_p$ 같은 $p$ 진체에는 곡선이 없다. 국소체 하나는 점 하나처럼 보이고, 그 위에 다발을 정의할 공간이 없다.
 
 Fargues 와 Scholze 는 곡선을 먼저 만들었다[^1]. Fargues–Fontaine 곡선
 
@@ -92,7 +92,7 @@ $$
 \mathrm{Bun}\_G=\bigsqcup_{b\in B(G)}\mathrm{Bun}\_G^b
 $$
 
-기본 층 위에 $G(\mathbb Q_p)$ 의 매끄러운 표현론이 얹히고, 비기본 층 위에는 내부형식의 Levi 의 표현론이 얹힌다. 국소 Langlands 가 다루는 대상 전체가 한 공간 위에 층화되어 배열된다.
+기본 층 위에 $G(\mathbb Q_p)$ 의 매끄러운 표현론이 대응하고, 비기본 층 위에는 내부형식의 Levi 의 표현론이 대응한다. 국소 Langlands 가 다루는 대상 전체가 한 공간 위에 층화되어 배열된다.
 
 ## 여행 작용소
 
@@ -130,7 +130,7 @@ $$
 
 ## Kottwitz 추측
 
-국소 Shimura 다양체(Rapoport–Zink 공간의 일반화)의 코호몰로지에 어떤 표현이 나타나는지를 Kottwitz 가 추측했다. 이 공간들이 $\mathrm{Bun}\_G$ 의 두 층 사이의 Hecke 대응으로 실현되므로, 기하화의 틀에서 추측이 층의 함자적 성질로 번역된다. 상당 부분이 이 방법으로 증명되었다.
+국소 [Shimura 다양체](shimura-varieties.md)(Rapoport–Zink 공간의 일반화)의 코호몰로지에 어떤 표현이 나타나는지를 Kottwitz 가 추측했다. 이 공간들이 $\mathrm{Bun}\_G$ 의 두 층 사이의 Hecke 대응으로 실현되므로, 기하화의 틀에서 추측이 층의 함자적 성질로 번역된다. 상당 부분이 이 방법으로 증명되었다.
 
 ## 모듈러성 올림의 국소 조건
 

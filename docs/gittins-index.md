@@ -12,7 +12,7 @@ Gittins 지표는 할인 [다중 슬롯머신](multi-armed-bandits.md) 문제에
 
 # 정의
 
-할인율 $\beta\in(0,1)$ 이고 팔 $i$ 가 상태 $x$ 에서 보상 $r_i(x)$ 를 주며 Markov 연쇄로 움직인다고 하자. 상태 $x$ 에서 팔 $i$ 의 **Gittins 지표**는
+할인율 $\beta\in(0,1)$ 이고 팔 $i$ 가 상태 $x$ 에서 보상 $r_i(x)$ 를 주며 [Markov 연쇄](markov-chains.md)로 움직인다고 하자. 상태 $x$ 에서 팔 $i$ 의 **Gittins 지표**는
 
 $$
 \nu_i(x)=\sup_{\tau\gt 0}\frac{E\lbrack\sum_{t=0}^{\tau-1}\beta^t r_i(x_t)\mid x_0=x\rbrack}{E\lbrack\sum_{t=0}^{\tau-1}\beta^t\mid x_0=x\rbrack}
