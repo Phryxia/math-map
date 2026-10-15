@@ -2,6 +2,8 @@
 
 # 개요
 
+Jacquet–Langlands 대응(Jacquet–Langlands correspondence)은 사원수 대수의 곱셈군의 자기동형 표현을 $\mathrm{GL}\_2$ 의 첨점 표현으로 보내는 대응이다.
+
 사원수 대수 $B/F$ 의 곱셈군은 $\mathrm{GL}\_2$ 의 **내부형식**이다. 대수적으로 닫힌 체 위에서는 $B\cong M_2$ 이므로 두 군이 같고 $F$ 위에서만 달라진다. 두 군의 자기동형 표현은 사실상 같고, 이것이 **Jacquet–Langlands 대응**이다.
 
 $$
@@ -76,7 +78,7 @@ $\Sigma\ne\varnothing$ 이면 $B^\times(F)Z(\mathbb A)\backslash B^\times(\mathb
 
 ## 류수와 종수
 
-$\Sigma=\lbrace\infty,p\rbrace$ 인 확정 사원수 대수의 좌이념류 수 $h(p)$ 는 Eichler 의 질량 공식과 타원점 계산으로 닫힌 식이 된다. Eichler 의 정리로 무게 2 레벨 $p$ 의 첨점형식 공간의 차원이 $h(p)-1$ 이고, 이는 모듈러 곡선 $X_0(p)$ 의 종수다.
+$\Sigma=\lbrace\infty,p\rbrace$ 인 확정 사원수 대수의 좌이념류 수 $h(p)$ 는 Eichler 의 [질량 공식](mass-formula.md)과 타원점 계산으로 닫힌 식이 된다. Eichler 의 정리로 무게 2 레벨 $p$ 의 첨점형식 공간의 차원이 $h(p)-1$ 이고, 이는 모듈러 곡선 $X_0(p)$ 의 종수다.
 
 $$
 h(p)=\frac{p-1}{12}+\frac14\Bigl(1-\Bigl(\frac{-4}{p}\Bigr)\Bigr)+\frac13\Bigl(1-\Bigl(\frac{-3}{p}\Bigr)\Bigr)
@@ -95,7 +97,7 @@ $$
 
 ## Shimura 곡선
 
-$\Sigma$ 가 무한 자리를 포함하지 않으면 $B^\times(\mathbb R)\cong\mathrm{GL}\_2(\mathbb R)$ 이라 상반평면 위의 작용이 남고, 몫이 **Shimura 곡선**이 된다. 모듈러 곡선과 달리 첨점이 없는 콤팩트 곡선이다. JL 대응은 이 곡선의 Jacobi 다양체가 모듈러 곡선 쪽 Jacobi 다양체의 일부와 동종임을 함의한다. [Heegner 점](heegner-points.md) 구성이 Shimura 곡선 위에서도 작동하므로 Gross–Zagier 공식이 더 넓은 상황으로 확장된다.
+$\Sigma$ 가 무한 자리를 포함하지 않으면 $B^\times(\mathbb R)\cong\mathrm{GL}\_2(\mathbb R)$ 이라 상반평면 위의 작용이 남고, 몫이 **Shimura 곡선**이 된다. 모듈러 곡선과 달리 첨점이 없는 콤팩트 곡선이다. JL 대응은 이 곡선의 [Jacobi 다양체](jacobian-variety.md)가 모듈러 곡선 쪽 Jacobi 다양체의 일부와 동종임을 함의한다. [Heegner 점](heegner-points.md) 구성이 Shimura 곡선 위에서도 작동하므로 Gross–Zagier 공식이 더 넓은 상황으로 확장된다.
 
 # 활용
 
@@ -109,7 +111,7 @@ Waldspurger 정리는 토릭 주기를 사원수 대수 위에서 잰다. 어느
 
 ## 초특이 타원곡선과 계산 정수론
 
-Deuring 대응으로 확정 사원수 대수의 극대차수는 표수 $p$ 의 초특이 [타원곡선](elliptic-curves.md)의 자기준동형환이다. 위에서 센 이념류가 초특이 곡선들과 대응하고, Brandt 행렬은 그 곡선들을 잇는 등원사상 그래프의 인접행렬이다. 모듈러 형식의 Hecke 작용소, 사원수 대수의 이념류, 초특이 곡선의 등원사상 그래프가 같은 유한 행렬로 만난다. 이 그래프는 Ramanujan 그래프이고 등원사상 기반 암호가 여기서 구성된다.
+[Deuring 대응](deuring-correspondence.md)으로 확정 사원수 대수의 극대차수는 표수 $p$ 의 초특이 [타원곡선](elliptic-curves.md)의 자기준동형환이다. 위에서 센 이념류가 초특이 곡선들과 대응하고, Brandt 행렬은 그 곡선들을 잇는 등원사상 그래프의 인접행렬이다. 모듈러 형식의 Hecke 작용소, 사원수 대수의 이념류, 초특이 곡선의 등원사상 그래프가 같은 유한 행렬로 만난다. 이 그래프는 Ramanujan 그래프이고 등원사상 기반 암호가 여기서 구성된다.
 
 # 연관 문서
 

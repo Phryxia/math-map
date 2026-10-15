@@ -2,6 +2,8 @@
 
 # 개요
 
+S-단위 방정식(S-unit equation)은 수체의 $S$-단위 두 개의 합이 $1$ 이 되는 해를 찾는 방정식이다.
+
 $S$ 를 수체 $K$ 의 소수 자리 유한집합이라 하자. $S$ 밖에서 값이 $1$ 인 원소를 $S$-단위라 하고, 그들의 군 $\mathcal O_{K,S}^\ast$ 에서 방정식
 
 $$
@@ -62,7 +64,7 @@ $S$-단위 방정식의 해는 유한하다. Dirichlet 단수 정리로 $\mathca
 
 ## 유효성
 
-위 논증은 해의 높이에 명시적 상계를 준다. $S$, $K$, $a$, $b$ 로 계산되는 상수 $C$ 가 있어 모든 해가 $h(u)\le C$ 를 만족한다. 그 범위를 탐색하면 해를 전부 찾을 수 있고, 이 점이 Thue 방정식과 [Siegel 의 정수점 정리](siegel-integral-points.md)를 가르는 차이다. Siegel 의 증명은 Diophantine 근사의 비유효 논법을 쓰므로 정수점의 개수에 상계를 주지 못한다.
+위 논증은 해의 높이에 명시적 상계를 준다. $S$, $K$, $a$, $b$ 로 계산되는 상수 $C$ 가 있어 모든 해가 $h(u)\le C$ 를 만족한다. 그 범위를 탐색하면 해를 전부 찾을 수 있고, 이 점이 Thue 방정식과 [Siegel 의 정수점 정리](siegel-integral-points.md)를 가르는 차이다. Siegel 의 증명은 [Diophantine 근사](diophantine-approximation.md)의 비유효 논법을 쓰므로 정수점의 개수에 상계를 주지 못한다.
 
 ## 해의 개수 상계
 

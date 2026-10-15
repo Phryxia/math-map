@@ -2,6 +2,8 @@
 
 # 개요
 
+Greenberg 추측(Greenberg's conjecture)은 총실수체 위의 $\mathbb Z_p$ 확대 탑에서 류수의 $p$ 부분이 유계에 머문다는 주장이다.
+
 수체 $F$ 위에 순환 $\mathbb Z_p$ 확대의 탑 $F=F_0\subset F_1\subset\cdots$ 을 쌓고 각 층의 류수의 $p$ 지수를 $p^{e_n}$ 이라 하면, 충분히 큰 $n$ 에서
 
 $$
@@ -16,9 +18,9 @@ $\mu=0$ 은 아벨체에 대해 증명되어 있고(Ferrero–Washington), $\lam
 
 # 직관
 
-탑의 각 층 류군을 하나로 모은 $X_\infty=\varprojlim A_n$ 은 Iwasawa 대수 $\Lambda=\mathbb Z_p[[T]]$ 위의 유한생성 비틀림 가군이고, 구조 정리로 $\bigoplus_i\Lambda/(p^{m_i})$ 와 $\bigoplus_j\Lambda/(f_j(T))$ 의 직합에 유사동형이다. $\mu=\sum m_i$ 는 $p$ 로 나뉘는 부분의 크기이고 $\lambda=\sum\deg f_j$ 는 비틀림 [멱급수](power-series.md) 부분의 차수다. 따라서 $\lambda=\mu=0$ 은 $X_\infty$ 가 유한하다는 것이고, 어느 층부터 탑의 류군이 자라지 않는다는 것이다.
+탑의 각 층 류군을 하나로 모은 $X_\infty=\varprojlim A_n$ 은 [Iwasawa 대수](iwasawa-algebra.md) $\Lambda=\mathbb Z_p[[T]]$ 위의 유한생성 비틀림 가군이고, 구조 정리로 $\bigoplus_i\Lambda/(p^{m_i})$ 와 $\bigoplus_j\Lambda/(f_j(T))$ 의 직합에 유사동형이다. $\mu=\sum m_i$ 는 $p$ 로 나뉘는 부분의 크기이고 $\lambda=\sum\deg f_j$ 는 비틀림 [멱급수](power-series.md) 부분의 차수다. 따라서 $\lambda=\mu=0$ 은 $X_\infty$ 가 유한하다는 것이고, 어느 층부터 탑의 류군이 자라지 않는다는 것이다.
 
-허수 순환체에서 $A^{-}$ 는 Stickelberger 원소를 소멸자로 갖고 그 소멸자의 크기가 $L$ 값으로 주어진다. $L$ 값이 $p$ 로 나뉘는 일이 자주 있으므로 $A^{-}$ 가 비자명해지고 $\lambda^{-}\gt 0$ 이 된다. $A^{+}$ 쪽에는 그런 소멸자가 없고, 단수군이 순환체 단수로 거의 채워져 있으리라는 기대가 $\lambda^{+}=0$ 의 근거다.
+허수 순환체에서 $A^{-}$ 는 [Stickelberger 원소](stickelberger.md)를 소멸자로 갖고 그 소멸자의 크기가 $L$ 값으로 주어진다. $L$ 값이 $p$ 로 나뉘는 일이 자주 있으므로 $A^{-}$ 가 비자명해지고 $\lambda^{-}\gt 0$ 이 된다. $A^{+}$ 쪽에는 그런 소멸자가 없고, 단수군이 순환체 단수로 거의 채워져 있으리라는 기대가 $\lambda^{+}=0$ 의 근거다.
 
 # 정의
 

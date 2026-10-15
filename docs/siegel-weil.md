@@ -2,6 +2,8 @@
 
 # 개요
 
+Siegel–Weil 공식(Siegel–Weil formula)은 같은 류에 속하는 정부호 이차형식들의 표현 개수를 가중 평균한 값에 닫힌 식을 주는 공식이다.
+
 정수계수 이차형식 $Q$ 가 정수 $n$ 을 표현하는 방법의 수
 
 $$
@@ -135,7 +137,7 @@ $$
 \Theta_L=E_{12}+c_L\thinspace\Delta
 $$
 
-$E_{12}$ 는 모든 $L$ 에서 같고 $c_L$ 만 격자마다 다르며, Siegel 공식으로 $c_L$ 의 가중 평균은 0 이다. Leech 격자는 근벡터가 없어 $\Theta$ 의 2 차 계수가 0 이고, 이 조건이 $c_L$ 을 결정한다. 류 평균은 국소 정보가 주고 개별 격자의 개성은 첨점 형식의 계수가 담는다.
+$E_{12}$ 는 모든 $L$ 에서 같고 $c_L$ 만 격자마다 다르며, Siegel 공식으로 $c_L$ 의 가중 평균은 0 이다. [Leech 격자](leech-lattice.md)는 근벡터가 없어 $\Theta$ 의 2 차 계수가 0 이고, 이 조건이 $c_L$ 을 결정한다. 류 평균은 국소 정보가 주고 개별 격자의 개성은 첨점 형식의 계수가 담는다.
 
 ## 세 변수의 어려움
 
@@ -145,7 +147,7 @@ $r_3(n)$ 을 중심 $L$ 값과 잇는 것이 [Waldspurger 정리](waldspurger-fo
 
 ## 정칙화와 확장
 
-Kudla–Rallis 는 Eisenstein 급수를 $s$ 의 함수로 놓고 유수를 취해 Weil 조건을 크게 완화했다. 정칙화된 Siegel–Weil 공식은 theta 올림의 비소멸 판정과 [GGP](gan-gross-prasad.md)(Gan–Gross–Prasad) 계열 주기 문제의 표준 도구다. Kudla 는 좌변의 theta 적분을 Shimura 다양체 위 사이클의 [생성함수](generating-functions.md)로 바꾸는 **산술 Siegel–Weil 공식**을 제안했다.
+Kudla–Rallis 는 Eisenstein 급수를 $s$ 의 함수로 놓고 유수를 취해 Weil 조건을 크게 완화했다. 정칙화된 Siegel–Weil 공식은 theta 올림의 비소멸 판정과 [GGP](gan-gross-prasad.md)(Gan–Gross–Prasad) 계열 주기 문제의 표준 도구다. Kudla 는 좌변의 theta 적분을 [Shimura 다양체](shimura-varieties.md) 위 사이클의 [생성함수](generating-functions.md)로 바꾸는 **산술 Siegel–Weil 공식**을 제안했다.
 
 # 활용
 

@@ -2,6 +2,8 @@
 
 # 개요
 
+Coleman 적분(Coleman integration)은 $p$ 진수체 위의 곡선에서 미분형식의 적분을 정의하는 방법이다.
+
 복소곡선에서 $\int_P^Q\omega$ 는 두 점을 잇는 경로를 따라 정해진다. $p$ 진수체 위의 곡선에는 그런 경로가 없어서 같은 방법으로 적분을 정의하지 못한다.
 
 **Coleman 적분**은 잔차 원판 안에서 멱급수를 항별로 적분하고, 원판 사이의 적분상수를 Frobenius 작용으로 정한 $p$ 진 적분이다. [Chabauty 방법](chabauty-method.md)에서 유리점을 이 적분의 영점으로 바꾸어 세는 자리에 쓴다.
@@ -16,7 +18,7 @@ $$
 
 이 그 원시함수다. 분모의 $n+1$ 은 $p$ 진 절댓값을 $n$ 에 대해 다항식 규모로만 키우므로 이 급수도 같은 올 위에서 수렴한다. 올 하나 안에서는 적분이 이렇게 나온다.
 
-올 두 개를 잇는 자리에서 막힌다. $\mathbb Q_p$ 는 완전 비연결이라 서로 다른 올을 잇는 경로가 없고, 각 올 위의 원시함수는 상수만큼 다르게 잡을 수 있다. 상수를 정할 것을 곡선 자체에서 찾는다. Frobenius 올림 $\phi$ 가 올을 올로 보내므로, 적분이 $\phi$ 와 가환하도록 요구하면 상수들에 선형 조건이 생기고 $\phi$ 가 de Rham 코호몰로지에 작용할 때 $1$ 이 고윳값이 아니어서 해가 하나다.
+올 두 개를 잇는 자리에서 막힌다. $\mathbb Q_p$ 는 완전 비연결이라 서로 다른 올을 잇는 경로가 없고, 각 올 위의 원시함수는 상수만큼 다르게 잡을 수 있다. 상수를 정할 것을 곡선 자체에서 찾는다. Frobenius 올림 $\phi$ 가 올을 올로 보내므로, 적분이 $\phi$ 와 가환하도록 요구하면 상수들에 선형 조건이 생기고 $\phi$ 가 [de Rham 코호몰로지](de-rham-cohomology.md)에 작용할 때 $1$ 이 고윳값이 아니어서 해가 하나다.
 
 # 정의
 
@@ -73,7 +75,7 @@ $\phi^\ast$ 의 de Rham 코호몰로지 위의 행렬을 구하면 적분상수�
 
 - **Chabauty–Coleman 상한.** 소멸 미분형식 $\omega$ 를 잡으면 $C(\mathbb Q)$ 의 점이 모두 $\int\omega=0$ 을 만족하므로 위 영점 정리가 유리점 개수의 상한을 준다. Chabauty 방법의 상한이 이것이다.
 - **[이차 Chabauty](chabauty-kim.md).** 계수가 종수 이상이어서 한 겹 적분으로 조건이 모자랄 때 반복 적분을 쓴다. 이중 적분이 $p$ 진 높이함수를 표현하고, 그 함수의 영점 조건이 조건을 $r\lt g+s-1$ 로 바꾼다.
-- **$p$ 진 높이.** 아벨 다양체 위의 [p 진 높이쌍](p-adic-height.md)이 반복 Coleman 적분으로 적힌다. [p 진 L 함수](p-adic-l-function.md)와 잇는 $p$ 진 Birch–Swinnerton-Dyer 추측의 정식화가 이 표현을 쓴다.
+- **$p$ 진 높이.** 아벨 다양체 위의 [p 진 높이쌍](p-adic-height.md)이 반복 Coleman 적분으로 적힌다. [p 진 L 함수](p-adic-l-function.md)와 잇는 $p$ 진 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)의 정식화가 이 표현을 쓴다.
 - **[p 진 다중 zeta 값](p-adic-multiple-zeta-values.md).** 사영직선에서 $0,1,\infty$ 를 뺀 공간의 반복 적분이 $p$ 진 다중 zeta 값을 준다. 복소수에서 다중 zeta 값을 반복 적분으로 얻는 것과 같은 꼴이다.
 
 [^1]: R. Coleman, "Torsion points on curves and $p$-adic abelian integrals", *Ann. of Math.* **121** (1985), 111–168.
