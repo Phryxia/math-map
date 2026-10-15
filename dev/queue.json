@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-15T05:04:47.967Z",
-  "nextSeq": 2080,
+  "savedAt": "2026-10-15T09:09:31.412Z",
+  "nextSeq": 2087,
   "items": [
     {
       "id": "74d02178",
@@ -124,20 +124,12 @@
       "seq": 2074
     },
     {
-      "id": "92f7d55c",
-      "title": "H2 헤딩에 수식이 든 문서의 평문화",
-      "priority": 60,
-      "note": "4절 제목 규칙이 헤딩에도 $ 를 금지한다. 43차에 H1 제목이 수식이던 세 문서(lp-spaces, pi01-classes, sigma11-boundedness)를 고쳤고, 44차에 문서 하나에 헤딩 하나뿐인 작은 분야 13 개(banach-alaoglu finite-element-method group-representations hyperarithmetical-hierarchy localization-rings lp-rounding modular-tensor-categories monads regular-local-rings spherical-harmonics tridiagonal-systems unique-games vc-dimension)를 고쳤다. grep -lE '^#.*\\$' docs/*.md 가 아직 114 개를 내놓는다. 분야별로 number_theory 50, algebra 12, analysis 10, combinatorics 7, differential_geometry 6, optimization 5, algebraic_topology 5, measure_theory 4, topology 3, set_theory 3, probability 3, logic 3, field_theory 3 과 나머지 소수다. H1 과 달리 다른 문서의 링크 텍스트를 깨뜨리지 않으므로 급하지 않지만, 헤딩의 수식은 목차와 앵커에서 글자 그대로 보인다. 한 회차에 한 분야씩 처리한다. 평문화는 4절 제목 규칙대로 유니코드 첨자를 쓰고(L^2 는 L 제곱, S_3 는 S 아래첨자 3, SL_2 는 SL 아래첨자 2), 첨자 글자가 없으면 붙여 쓴다(alpha_GW 는 alphaGW). 헤딩 바로 아래 본문에서 그 기호가 수식으로 다시 나오는지 확인하고, 안 나오면 본문 첫 등장을 수식으로 쓴다.",
-      "createdAt": "2026-10-15T04:45:49.985Z",
-      "seq": 2075
-    },
-    {
-      "id": "ae04b856",
-      "title": "개요 첫 문단에 원어가 없는 문서 전수 교정",
-      "priority": 60,
-      "note": "4절 용어 규칙(개요 첫 문장에서 제목 개념에 원어 병기). 43차 시작에 9절 손 검사로 302 개였고, 44차에 algorithms 4 개(barvinok-algorithm courcelle-theorem dynamic-programming gaussian-quadrature)를 처리해 240 개가 남았다. 분야별로 analysis 38, number_theory 31, probability 23, combinatorics 23, linear_algebra 17, logic 15, algebra 15, optimization 14, functional_analysis 8, differential_geometry 8, complex_analysis 8, algebraic_topology 8, topology 7, category_theory 7, set_theory 6, machine_learning 6 과 1 개씩 남은 여섯 분야다. 그 여섯(order_theory, information_theory, foundations, field_theory, cryptography, computation)은 전부 오탐이거나 개관이다. 오탐 두 꼴은 별도 메모에 있다. 개관 셋(cryptography-overview, foundations-overview, information-theory-overview)은 각자 큐 항목이 있다. 한 회차에 한 분야씩, 손 검사가 0 이 될 때까지. 개요 첫 문장이 'X 는 Y 다' 꼴이 아닌 문서는 문장을 정의형으로 먼저 바꾼다. 같은 문서를 손대는 김에 9절 미링크 검사와 4절 금지 동사 grep 도 함께 돌린다. 44차에는 그 두 검사가 barvinok-algorithm 의 Euler-Maclaurin 공식 미링크와 '격자점을 품고', courcelle-theorem 의 Hamilton 순환 미링크를 내놓아 같은 커밋에서 고쳤다.",
-      "createdAt": "2026-10-15T04:46:12.732Z",
-      "seq": 2076
+      "id": "47996dff",
+      "title": "제목과 헤딩의 수식 재발 검사",
+      "priority": 90,
+      "note": "4절 제목 규칙(제목, 헤딩, 링크 텍스트, 표 머리 셀에 $ 금지). 45차에 남아 있던 107 문서 128 개 헤딩을 전부 평문화해 grep -lE '^#.*\\$' docs/*.md 가 0 이 되었다. 평문화 관례는 유니코드 첨자(Lᵖ L² K₄ S₃ E₈ GLₙ sl₂ ℵ₁ pᵐ ω¹⁻ᵏ), 첨자 글자가 없으면 붙여 쓰기(PII Vκ BdR Bcris Qp Zp Cp BunG Uq), 그리스 문자와 기호 그대로(ζ σ μ λ Φ Λ ℓ ∘ ± → ≠ √ Ш Â), 수식이 길면 개념 이름으로 바꾸기(C^{k,alpha} 공간 -> k 차 Hölder 공간, 더 높은 c -> 더 높은 중심전하, BSD 의 r_an<=1 -> 해석적 순위 1 이하의 BSD) 다. 새 문서나 보강 문서가 헤딩에 수식을 넣지 않았는지 이 grep 으로 확인한다.",
+      "createdAt": "2026-10-15T08:45:21.687Z",
+      "seq": 2080
     },
     {
       "id": "2b6e9e11",
@@ -148,12 +140,28 @@
       "seq": 2079
     },
     {
+      "id": "16268abe",
+      "title": "개요 첫 문단에 원어가 없는 문서 전수 교정",
+      "priority": 60,
+      "note": "4절 용어 규칙(개요 첫 문장에서 제목 개념에 원어 병기). 43차 시작에 302 개, 44차에 240 개였고 45차에 범주론·집합론 13, 기계학습·위상 13, 복소해석·미분기하 15, 함수해석·대수적위상 16, 선형대수 17, 최적화 14 를 처리해 150 개가 남았다. 분야별로 analysis 38, number_theory 30, probability 23, combinatorics 23, logic 15, algebra 15 와 1 개씩 남은 여섯 분야(order_theory, information_theory, foundations, field_theory, cryptography, computation)다. 그 여섯은 전부 오탐이거나 개관이다(메모 56df77a9). 한 회차에 한 분야씩, 9절 손 검사가 0 이 될 때까지. 개요 첫 문장이 'X 는 Y 다' 꼴이 아닌 문서는 정의형 문장을 첫 문장으로 새로 쓰고 기존 동기 문장을 뒤에 둔다(45차의 tannaka-duality, knot-invariants, lie-derivative, peter-weyl, multigrid, perron-frobenius, incomplete-lu, optimal-transport 가 그 꼴이었다). 같은 문서를 손대는 김에 9절 미링크 검사와 4절 금지 동사 grep 도 함께 돌린다. 45차에는 그 두 검사가 문서 88 개에서 미링크 46 건과 금지 동사 7 건을 내놓아 같은 커밋에서 고쳤다.",
+      "createdAt": "2026-10-15T09:06:36.769Z",
+      "seq": 2084
+    },
+    {
       "id": "14ae777a",
       "title": "수학기초론 개관의 갈래를 읽는 순서로 다시 쓰기",
       "priority": 55,
       "note": "4.5절 '갈래는 읽는 순서다'. 43차에 손 검사로 재면 조상이 뒤에 온 자리가 150 곳 넘게 나온다. 원인은 갈래 절의 설명 줄이 sets, proofs, functions, cardinality, equivalence-relations 같은 뿌리와 기본 문서를 링크하는데 그 링크가 갈래 목록 아래쪽에 흩어져 있는 것이다(0bb8e7fb 메모의 (1) 꼴). 갈래를 다시 쓸 때 설명 줄의 링크를 먼저 걷어내고, 분야 밖 선수 문서는 갈래 H2 의 '먼저 읽을 것' 줄로 올린다. 그 다음 갈래 안을 위상순으로 놓는다. 분량이 커서 한 회차를 통째로 쓴다. 개요 첫 문장의 원어 병기(수학기초론(foundations of mathematics))도 43차에 했다가 커밋에서 빠졌으므로 다시 한다.",
       "createdAt": "2026-10-15T01:04:36.317Z",
       "seq": 2070
+    },
+    {
+      "id": "7516b590",
+      "title": "역수학 문서의 금지 동사 여섯 곳과 미링크",
+      "priority": 55,
+      "note": "reverse-mathematics 에 4절 문체 규칙의 금지 동사가 여섯 곳 있다. 5 줄 '공리를 되돌려 증명하는지', 11 줄 '양화를 품는다'와 '양화를 품은', 13 줄 '내포가 되돌아', 88 줄 '증명 강도를 눈금으로 잰다'. CLAUDE.md 4절이 이 문서의 문장을 금지 동사의 예로 들고 고침안까지 적어 두었다('정리로부터 공리가 증명된다', '한정사(quantifier)가 들어 있다', '증명 강도의 순서가 된다'). 같은 문서에 '약한 König 보조정리'(weak-konig-lemma.md) 미링크도 있고, 개요 첫 문장의 원어 병기 '역수학(reverse mathematics)' 도 아직 없다. 45차에 개요 원어만 고치려다 금지 동사 분량이 커서 통째로 미루었다. 한 작업으로 문서 전체를 문체 규칙에 맞춰 고친다.",
+      "createdAt": "2026-10-15T09:09:13.069Z",
+      "seq": 2086
     },
     {
       "id": "7565e952",
@@ -178,6 +186,38 @@
       "note": "43차 확인. 손 검사가 'error-correcting-codes 는 channel-coding 의 조상인데 뒤에 온다' 하나를 낸다. 갈래 '부호의 구성' 이 갈래 'Shannon 의 부호화 정리' 보다 앞에 와야 한다(4.5절). 두 H2 를 맞바꾼 뒤 검사를 다시 돌려 반대 방향 위반이 생기지 않는지 본다. 같은 작업에서 개요 첫 문장을 '정보이론(information theory)은' 으로 고친다(43차에 고쳤다가 커밋에서 빠졌다). 미링크로 보고되는 집중부등식은 지도 mermaid 의 라벨이므로 손대지 않는다(03eb5402 메모).",
       "createdAt": "2026-10-15T01:06:28.656Z",
       "seq": 2072
+    },
+    {
+      "id": "1792ad5f",
+      "title": "기계학습 개관의 본문 미링크 6 건",
+      "priority": 50,
+      "note": "machine-learning-overview 의 본문에 Color refinement, Shannon 엔트로피, Hilbert 공간, Lagrange 쌍대성, 재생핵 Hilbert 공간, 확률미분방정식의 제목이 링크 없이 나온다(9절 미링크 손 검사, 45차 확인). 개관이므로 갈래 절의 설명 줄에 링크를 넣으면 갈래 순서 검사가 걸린다(메모 0bb8e7fb). 개요 절이나 갈래 H2 의 '먼저 읽을 것' 줄에서 링크하고, 고친 뒤 bash /tmp/branch-order.sh machine-learning-overview 로 확인한다.",
+      "createdAt": "2026-10-15T08:52:07.861Z",
+      "seq": 2081
+    },
+    {
+      "id": "873d555a",
+      "title": "복소해석 개관의 본문 미링크 2 건",
+      "priority": 50,
+      "note": "complex-analysis-overview 의 본문에 '미적분학의 기본 정리'(fundamental-calculus.md)와 'Teichmüller 공간'(teichmuller-space.md) 이 링크 없이 나온다(9절 미링크 손 검사, 45차 확인). 개관이므로 갈래 설명 줄에 링크를 넣으면 갈래 순서 검사가 걸린다(메모 0bb8e7fb). 개요 절이나 갈래 H2 의 '먼저 읽을 것' 줄에서 링크하고 bash /tmp/branch-order.sh complex-analysis-overview 로 확인한다.",
+      "createdAt": "2026-10-15T08:55:48.181Z",
+      "seq": 2082
+    },
+    {
+      "id": "4a2d39e2",
+      "title": "선형대수 개관의 본문 미링크 1 건",
+      "priority": 50,
+      "note": "linear-algebra-overview 의 본문에 'Fourier 변환'(fourier-transform.md)이 링크 없이 나온다(9절 미링크 손 검사, 45차 확인). 개관이므로 갈래 설명 줄에 링크를 넣으면 갈래 순서 검사가 걸린다(메모 0bb8e7fb).",
+      "createdAt": "2026-10-15T09:03:08.224Z",
+      "seq": 2083
+    },
+    {
+      "id": "5f68ea39",
+      "title": "최적화 개관의 본문 미링크 4 건",
+      "priority": 50,
+      "note": "optimization-overview 의 본문에 '근사 알고리즘'(approximation-algorithms.md), '축약사상 고정점 정리'(banach-fixed-point.md), 'Fokker–Planck 방정식'(fokker-planck.md), 'LP 반올림'(lp-rounding.md) 이 링크 없이 나온다(9절 미링크 손 검사, 45차 확인). 개관이므로 갈래 설명 줄에 링크를 넣으면 갈래 순서 검사가 걸린다(메모 0bb8e7fb).",
+      "createdAt": "2026-10-15T09:06:36.897Z",
+      "seq": 2085
     },
     {
       "id": "08e59419",
