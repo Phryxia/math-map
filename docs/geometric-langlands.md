@@ -6,7 +6,7 @@
 
 출발점은 세 열의 유비다. 수체와 함수체가 나란하고, 함수체 $\mathbb F_q(X)$ 가 곡선 $X/\mathbb F_q$ 의 함수체이므로 곡선 자체를 다룰 수 있다.
 
-| | 수체 $\mathbb Q$ | 함수체 $\mathbb F\_q(X)$ | 복소 곡선 $X/\mathbb C$ |
+| | 수체 Q | 함수체 Fq(X) | 복소 곡선 X/C |
 | --- | --- | --- | --- |
 | 밑 | $\mathrm{Spec}\thinspace\mathbb Z$ | $\mathbb F\_q$ 위의 곡선 $X$ | $\mathbb C$ 위의 곡선 $X$ |
 | 자기동형 쪽 | 자기동형 형식 | $\mathrm{Bun}\_G(\mathbb F\_q)$ 위의 함수 | $\mathrm{Bun}\_G$ 위의 $D$ 가군 |

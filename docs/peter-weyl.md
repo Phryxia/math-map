@@ -68,7 +68,7 @@ $$
 
 ## 고전적 특수 경우
 
-| $G$ | 기약표현 | Peter–Weyl 분해 |
+| G | 기약표현 | Peter–Weyl 분해 |
 |---|---|---|
 | $S^1$ | 1 차원의 $e^{in\theta}$ | Fourier 급수 |
 | $\mathrm{SU}(2)$ | 스핀 $j$ 의 $(2j+1)$ 차원 | Wigner $D$ 함수 전개 |

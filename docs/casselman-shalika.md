@@ -21,7 +21,7 @@ $\alpha_i$ 는 $\pi_v$ 의 Satake 매개변수, $\lambda$ 는 지배적 여무�
 
 비분기 자리에서 $W^\circ$ 는 오른쪽으로 $K=\mathrm{GL}\_n(\mathcal O)$ 불변이고 왼쪽으로 $N$ 에 대해 $\psi_N$ 변환하므로, Iwasawa 분해 $G=NAK$ 를 쓰면 $A$ 위의 값으로 결정된다. $A\cap K$ 불변이므로 값이 놓이는 자리는 $\varpi^\lambda=\mathrm{diag}(\varpi^{\lambda_1},\dots,\varpi^{\lambda_n})$ 뿐이고, $W^\circ$ 는 $\lambda\in\mathbb Z^n$ 위의 함수 하나다. $\psi_N$ 의 비퇴화성이 $\lambda_1\ge\dots\ge\lambda_n$ 이 아닌 자리의 값을 0 으로 만들어 지배적 여무게만 남는다.
 
-| | 왼쪽 ($p$ 진군) | 오른쪽 (복소 Lie 군) |
+| | 왼쪽 (p 진군) | 오른쪽 (복소 Lie 군) |
 |---|---|---|
 | 매개변수의 집합 | $A/(A\cap K)=X_\ast(T)$ 의 지배적 부분 | $\widehat G=\mathrm{GL}\_n(\mathbb C)$ 의 최고무게 $X^\ast(\widehat T)^+$ |
 | 변수 | Satake 매개변수 $\alpha_i$ | 쌍대 토러스의 좌표 |

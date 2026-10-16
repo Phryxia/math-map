@@ -89,7 +89,7 @@ $$
 
 [유한체](finite-fields.md) 위 다양체의 zeta 함수 분자 $P(T)=\prod(1-\alpha_jT)$ 에서 근은 $\alpha_j^{-1}$ 이므로 다각형의 기울기가 $\mathrm{ord}\thinspace\alpha_j$ 와 같다. 타원곡선의 $P(T)=1-a_pT+pT^2$ 에서 점은 $(0,0),(1,v(a_p)),(2,1)$ 이고 두 경우로 갈린다.
 
-| 조건 | 다각형 | $\mathrm{ord}\_p\alpha,\ \mathrm{ord}\_p\beta$ | 이름 |
+| 조건 | 다각형 | ordₚα, ordₚβ | 이름 |
 |---|---|---|---|
 | $p\nmid a_p$ | 꺾인 두 변 | $0,\ 1$ | 보통(ordinary) |
 | $p\mid a_p$ | 곧은 한 변 | $\tfrac12,\ \tfrac12$ | 초특이(supersingular) |

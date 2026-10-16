@@ -85,7 +85,7 @@ $$
 
 $\mathrm{ST}(E)$ 는 $\ell$ 진 표현의 상의 Zariski 폐포에 대응하는 콤팩트 실형태이고, 타원곡선에서는 두 경우뿐이다. 복소곱셈이 없으면 $\ell$ 진 표현의 상이 열려 있고(Serre 의 정리), 있으면 그 상이 허수이차체 안의 Hecke 지표로 설명된다.
 
-| | $\mathrm{ST}(E)$ | 측도 | $a_p=0$ 인 소수의 밀도 |
+| | ST(E) | 측도 | aₚ=0 인 소수의 밀도 |
 |---|---|---|---|
 | CM 없음 | $\mathrm{SU}(2)$ | $\frac2\pi\sin^2\theta\thinspace d\theta$ | $0$ |
 | CM 있음 | $N(\mathrm{U}(1))$ | $\frac12\delta_{\pi/2}+\frac1{2\pi}d\theta$ | $\tfrac12$ |

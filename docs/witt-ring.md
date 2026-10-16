@@ -82,7 +82,7 @@ $\langle\langle a\rangle\rangle=\langle 1,-a\rangle$ 이 등방인 것은 $a$ �
 
 ## 구체적인 Witt 환
 
-| $K$ | $W(K)$ | 완전 불변량 |
+| K | W(K) | 완전 불변량 |
 | --- | --- | --- |
 | $\mathbb C$ | $\mathbb Z/2$ | 차원을 $2$ 로 나눈 나머지 |
 | $\mathbb R$ | $\mathbb Z$ | 부호수 $r-s$ |

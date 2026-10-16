@@ -44,7 +44,7 @@ $\mu_G(F)$ 는 $F$ 를 어떻게 잡아도 같고, 그 값을 $\Gamma$ 의 **공
 
 $G/\Gamma$ 가 콤팩트한 격자를 **균질 격자**, 콤팩트하지 않은 격자를 **비균질 격자**라 한다.
 
-| $G$ | $\Gamma$ | 공부피 | 균질 |
+| G | Γ | 공부피 | 균질 |
 | --- | --- | --- | --- |
 | $\mathbb R^n$ | $\mathbb Z^n$ | $1$ | 예 |
 | $\mathbb R^n$ | $A\mathbb Z^n$, $A\in\mathrm{GL}\_n(\mathbb R)$ | $\vert\det A\vert$ | 예 |

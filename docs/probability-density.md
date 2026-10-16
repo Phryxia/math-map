@@ -34,7 +34,7 @@ $B=\mathbb R^n$ 을 넣으면 $\int\rho\thinspace d\lambda=1$ 이다.
 
 밀도는 기준측도를 정한 뒤에 정해진다. 일반적으로 $\sigma$ 유한 측도 $\mu$ 에 대해 $P\_X\ll\mu$ 이면 $\rho=dP\_X/d\mu$ 가 $\mu$ 에 대한 밀도이고, 이것이 [Radon–Nikodym 도함수](radon-nikodym.md)다. $\mu$ 가 Lebesgue 측도면 확률밀도함수, 셈측도면 확률질량함수다.
 
-| 기준측도 $\mu$ | $dP\_X/d\mu$ | 분포의 종류 |
+| 기준측도 μ | 밀도 | 분포의 종류 |
 | --- | --- | --- |
 | Lebesgue 측도 | 확률밀도함수 | 연속분포 |
 | 셈측도 | 확률질량함수 $P(X=x)$ | 이산분포 |

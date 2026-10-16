@@ -34,7 +34,7 @@ $G(\mathbb Q)$ 는 $X$ 와 $G(\mathbb A_f)$ 에 동시에 작용한다. 이 집�
 
 ## 예
 
-| $G$ | $X^+$ | $\mathrm{Sh}\_K(G,X)$ |
+| G | X⁺ | Shimura 다양체 |
 | --- | --- | --- |
 | $\mathrm{GL}\_2$ | $\mathbb H$ | 모듈러 곡선 |
 | $\mathrm{Sp}\_{2g}$ | $\mathbb H_g$ | Siegel 모듈라이 다양체 |

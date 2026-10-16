@@ -46,7 +46,7 @@ $\mathcal N$ 이 열린집합이면 정칙(regular), $T$ 의 성분들과 상수
 
 ## 표준 분포의 지수족 표현
 
-| 분포 | $T(x)$ | 자연모수 $\eta$ | $A(\eta)$ |
+| 분포 | T(x) | 자연모수 η | A(η) |
 | --- | --- | --- | --- |
 | $\mathrm{Bernoulli}(p)$ | $x$ | $\log(p/(1-p))$ | $\log(1 + e^{\eta})$ |
 | $\mathrm{Poisson}(\lambda)$ | $x$ | $\log \lambda$ | $e^{\eta}$ |

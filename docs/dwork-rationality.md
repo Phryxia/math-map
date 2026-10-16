@@ -166,7 +166,7 @@ $$
 
 $p$ 진 부치는 유리성보다 미세한 정보를 준다. 다항식 $\sum c_iT^i$ 의 Newton 다각형은 점 $(i,\mathrm{ord}\_p c_i)$ 의 아래쪽 볼록포이고, 기울기의 목록이 근의 $\mathrm{ord}\_p$ 의 목록(부호 반대)이다. 타원곡선의 $P(T)=1-a_pT+pT^2$ 에서 바로 보인다.
 
-| 경우 | $\mathrm{ord}\_p a_p$ | 기울기 | 이름 |
+| 경우 | ordₚ aₚ | 기울기 | 이름 |
 |---|---|---|---|
 | $p\nmid a_p$ | $0$ | $0,\ 1$ | 보통(ordinary) |
 | $p\mid a_p$ | $\ge1$ | $\tfrac12,\ \tfrac12$ | 초특이(supersingular) |

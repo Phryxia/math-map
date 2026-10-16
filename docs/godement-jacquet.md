@@ -99,7 +99,7 @@ $n=1$ 의 자명한 지표에서는 $\zeta$ 함수에 극점이 생기고, $n\ge
 
 ## Tate 와의 대응
 
-| $\mathrm{GL}\_1$ 의 Tate | $\mathrm{GL}\_n$ 의 Godement–Jacquet |
+| GL₁ 의 Tate | GLₙ 의 Godement–Jacquet |
 |---|---|
 | 벡터공간 $\mathbb A$ | 행렬대수 $M_n(\mathbb A)$ |
 | 군 $\mathbb A^\times$ | $\mathrm{GL}\_n(\mathbb A)$ |

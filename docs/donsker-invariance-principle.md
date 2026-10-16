@@ -57,7 +57,7 @@ $$
 
 연속사상 정리를 $\Phi:C\lbrack 0,1\rbrack\to\mathbb R$ 에 적용하면 $\Phi(W_n)$ 의 극한분포가 $\Phi(B)$ 의 분포다.
 
-| $\Phi(f)$ | 부분합 쪽 양 | 극한분포 |
+| Φ(f) | 부분합 쪽 양 | 극한분포 |
 | --- | --- | --- |
 | $\max_{t}f(t)$ | $\max_{k\le n}S_k/(\sigma\sqrt n)$ | $\max_{t\le1}B_t$, 곧 $\vert N(0,1)\vert$ |
 | $\max_{t}\vert f(t)\vert$ | $\max_{k\le n}\vert S_k\vert/(\sigma\sqrt n)$ | $\max_{t\le1}\vert B_t\vert$ |

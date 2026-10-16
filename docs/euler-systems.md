@@ -154,7 +154,7 @@ $$
 
 ## 알려진 Euler 계의 목록
 
-| Euler 계 | 계수 $T$ | 얻는 결과 |
+| Euler 계 | 계수 T | 얻는 결과 |
 |---|---|---|
 | 순환체 단수 $1-\zeta_n$ | $\mathbb Z_p(1)$ | Mazur–Wiles 의 재증명, 순환체 [Iwasawa 주추측](iwasawa-main-conjecture.md)(Rubin) |
 | 타원 단수 | 허수이차체의 $\mathbb Z_p(1)$ | 허수이차체 위의 주추측 |

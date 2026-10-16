@@ -51,7 +51,7 @@ $\widetilde X$ 가 무엇이냐에 따라 $X$ 를 **타원형**, **포물형**, 
 
 ## 세 유형의 목록
 
-| 보편덮개 | 가능한 $X$ |
+| 보편덮개 | 가능한 X |
 | --- | --- |
 | $\widehat{\mathbb C}$ | $\widehat{\mathbb C}$ 뿐이다 |
 | $\mathbb C$ | $\mathbb C$ 와 $\mathbb C^\times$ 와 복소 토러스 $\mathbb C/\Lambda$ |

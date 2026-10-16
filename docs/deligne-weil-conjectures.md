@@ -100,7 +100,7 @@ $$
 
 [Kloosterman 합](kloosterman-sums.md)에서 $\alpha,\beta$ 는 두 절댓값에서 서로 다른 성질을 갖는다. $p$ 진 부치는 [Newton 다각형](newton-polygon.md)이 주고, 복소 절댓값 $\sqrt q$ 가 어려운 쪽이다.
 
-| | $p$ 진 | 복소 |
+| | p 진 | 복소 |
 |---|---|---|
 | 도구 | Newton 다각형, Dwork 이론 | 에탈 코호몰로지, 무게 |
 | 난이도 | 계수에서 바로 읽힌다 | Deligne 의 정리 |

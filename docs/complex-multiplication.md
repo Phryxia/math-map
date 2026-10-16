@@ -95,7 +95,7 @@ CM 곡선의 $L$ 함수가 Hecke $L$ 함수와 같다는 Deuring 의 정리가 �
 
 $E$ 가 $\mathcal O_K$ 로 CM 을 갖고 $p$ 에서 좋은 환원을 가지면 환원 $\tilde E/\mathbb F_p$ 의 유형은 $p$ 의 분해로 결정된다.
 
-| $K$ 에서 $p$ 의 분해 | 환원 $\tilde E$ | Frobenius |
+| K 에서 p 의 분해 | 환원 Ẽ | Frobenius |
 |---|---|---|
 | 분열 $p=\pi\bar\pi$ | 보통(ordinary) | $\pi\in\mathcal O_K$ 로 주어짐, $a_p=\pi+\bar\pi$ |
 | 비활성 | 초특이(supersingular) | $a_p=0$ 이고 $\mathrm{End}$ 가 사원수 대수 |

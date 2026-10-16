@@ -93,7 +93,7 @@ $$
 
 $K=\mathbb Q$ 에서 그 분해는 $\mathbb A_{\mathbb Q}=\mathbb Q+\big(\lbrack 0,1)\times\hat{\mathbb Z}\big)$ 다. 아델 하나에서 유한 자리들의 분모를 유리수 하나로 없애고 실수 자리를 $\lbrack 0,1)$ 로 옮기면 된다. $\mathbb R=\mathbb Z+\lbrack 0,1)$ 의 아델 판이며 $\lbrack 0,1)\times\hat{\mathbb Z}$ 가 콤팩트 기본영역이다.
 
-| 자리 | $\mathbb R$ 안의 $\mathbb Z$ | $\mathbb A_{\mathbb Q}$ 안의 $\mathbb Q$ |
+| 자리 | R 안의 Z | 아델 환 안의 Q |
 | --- | --- | --- |
 | 전체 | $\mathbb R$ | $\mathbb A_{\mathbb Q}=\mathbb R\times\mathbb A_f$ |
 | 이산 부분군 | $\mathbb Z$ | 대각으로 들어간 $\mathbb Q$ |

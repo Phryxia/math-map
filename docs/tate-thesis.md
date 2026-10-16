@@ -90,7 +90,7 @@ $$
 
 무한 자리는 실수와 복소수를 나눠 계산한다.
 
-| 자리 | 시험함수 $f_v$ | $Z_v(f_v,s)$ |
+| 자리 | 시험함수 fᵥ | Zᵥ(fᵥ,s) |
 |---|---|---|
 | $v$ 유한, $\chi_v$ 비분기 | $\mathbf 1_{\mathcal O_v}$ | $(1-\chi_v(\varpi)N\mathfrak p^{-s})^{-1}$ |
 | $v$ 유한, $\chi_v$ 분기 | $\mathbf 1_{\mathcal O_v}$ | $1$ |

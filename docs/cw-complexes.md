@@ -68,7 +68,7 @@ $$d_k=\begin{cases}2 & k\text{ 가 짝수}\cr 0 & k\text{ 가 홀수}\end{cases}
 
 여기서 정수 계수 호몰로지가 나온다.
 
-| $k$ | $H_k(\mathbb{RP}^n)$ |
+| k | Hₖ(RPⁿ) |
 | --- | --- |
 | $0$ | $\mathbb Z$ |
 | $0\lt k\lt n$, $k$ 홀수 | $\mathbb Z/2$ |

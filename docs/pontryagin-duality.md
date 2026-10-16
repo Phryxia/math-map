@@ -54,7 +54,7 @@ $G$ 가 [콤팩트](compactness.md)인 것과 $\hat G$ 가 이산인 것은 동�
 
 $G$ 가 콤팩트면 $N(G,1)$ 이 항등원만 담는 열린집합이므로 $\hat G$ 가 이산이다. $G$ 가 이산이면 $\hat G$ 는 $\mathbb T^G$ 의 닫힌 부분집합이고 [Tychonoff 정리](tychonoff-theorem.md)로 콤팩트다.
 
-| $G$ | $\hat G$ |
+| G | Ĝ |
 | --- | --- |
 | $\mathbb R$ | $\mathbb R$ |
 | $S^1$ | $\mathbb Z$ |

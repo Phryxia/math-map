@@ -110,7 +110,7 @@ $K_{\pi,n}=K(\Lambda_n)$ 으로 두고 $K_\pi=\bigcup_nK_{\pi,n}$ 이라 쓴다.
 
 $K=\mathbb Q_p$ , $\pi=p$ , $f(X)=(1+X)^p-1$ 을 넣으면 표의 오른쪽 열이 나온다.
 
-| Lubin–Tate | $K=\mathbb Q_p,\ f=(1+X)^p-1$ |
+| Lubin–Tate | K=Qₚ, f=(1+X)ᵖ-1 |
 |---|---|
 | $F_f(X,Y)$ | 형식 곱군 $\hat{\mathbb G}\_m$ 의 $X+Y+XY$ |
 | $[a]\_f(X)$ | $(1+X)^a-1$ |
