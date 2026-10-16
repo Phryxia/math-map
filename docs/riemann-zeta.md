@@ -20,7 +20,7 @@ $$
 \zeta(s)=\sum_{n=1}^\infty\frac1{n^s}
 $$
 
-$\mathrm{Re}\thinspace s\gt 1$ 에서 절대수렴한다. $\lvert n^{-s}\rvert=n^{-\mathrm{Re}\thinspace s}$ 이므로 수렴 판정이 실급수 $\sum n^{-\sigma}$ 와 같다.
+계수가 모두 $1$ 인 [Dirichlet 급수](dirichlet-series.md)다. $\mathrm{Re}\thinspace s\gt 1$ 에서 절대수렴한다. $\lvert n^{-s}\rvert=n^{-\mathrm{Re}\thinspace s}$ 이므로 수렴 판정이 실급수 $\sum n^{-\sigma}$ 와 같다.
 
 ## 해석적 연속과 함수방정식
 
