@@ -117,7 +117,7 @@ $$
 \Big(\frac qp\Big)=\Big(\frac{p^\ast}q\Big)
 $$
 
-오른쪽을 보충 법칙으로 풀면 상호법칙이다. 표수가 다른 두 체에서 같은 Gauss 합을 계산한 것이 두 쪽을 이었다. $\mathbb Q(\zeta_p)$ 에서의 계산으로 읽으면 원분체의 [Galois 이론](galois-theory.md)이 주는 Frobenius 분해와 같은 내용이다.
+오른쪽을 보충 법칙으로 풀면 상호법칙이다. 표수가 다른 두 체에서 같은 [Gauss 합](gauss-sums.md)을 계산한 것이 두 쪽을 이었다. $\mathbb Q(\zeta_p)$ 에서의 계산으로 읽으면 원분체의 [Galois 이론](galois-theory.md)이 주는 Frobenius 분해와 같은 내용이다.
 
 ## 원분체의 이차 부분체
 

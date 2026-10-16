@@ -40,7 +40,7 @@ $$
 
 이다. 변은 모두 직선의 조각이므로 두 변이 교차하는 자리는 직선 두 개의 교점이고, 직선 쌍마다 그런 자리가 한 개 이하다. 따라서 $G$ 를 평면에 이렇게 그렸을 때 교차수가 $\binom n2$ 를 넘지 않는다.
 
-교차수 부등식은 $\vert E\vert\ge4\vert V\vert$ 인 그래프에서
+[교차수 부등식](crossing-number-inequality.md)은 $\vert E\vert\ge4\vert V\vert$ 인 그래프에서
 
 $$
 \mathrm{cr}(G)\ge\frac{\vert E\vert^3}{64\thinspace\vert V\vert^2}

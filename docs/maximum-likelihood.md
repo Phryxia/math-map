@@ -36,7 +36,7 @@ s(\theta;x)=\frac{\partial}{\partial\theta}\log f(x;\theta),
 \mathbb E_\theta\big[s(\theta;X)\big]=0
 $$
 
-Fisher 정보는 점수함수의 분산이며, 같은 조건 아래 로그가능도의 2차 도함수의 기댓값의 음수와 같다.
+[Fisher 정보](fisher-information.md)는 점수함수의 분산이며, 같은 조건 아래 로그가능도의 2차 도함수의 기댓값의 음수와 같다.
 
 $$
 I(\theta)=\mathbb E_\theta\negthinspace\left[s(\theta;X)^2\right]

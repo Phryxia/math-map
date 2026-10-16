@@ -28,7 +28,7 @@ $$
 \rho\colon G_K\to\mathrm{GL}\_n(E)
 $$
 
-를 **Galois 표현**이라 한다. 계수체 $E$ 의 선택이 표현의 성격을 정한다.
+를 [Galois 표현](galois-representations.md)이라 한다. 계수체 $E$ 의 선택이 표현의 성격을 정한다.
 
 - $E=\mathbb C$ : 상이 반드시 유한군이다. $\mathrm{GL}\_n(\mathbb C)$ 에 1 의 근방에 자명하지 않은 부분군이 없기 때문이다. 이런 $\rho$ 를 **Artin 표현**이라 하고, 유한 Galois 확대의 표현과 같다.
 - $E=\bar{\mathbb Q}\_\ell$ : 상이 무한할 수 있다. $\ell$ 진 위상이 profinite 위상과 어울리기 때문이다. 기하에서 나오는 표현은 대부분 이쪽이며, 대수다양체의 [에탈 코호몰로지](etale-cohomology.md)가 표준적인 공급원이다.
