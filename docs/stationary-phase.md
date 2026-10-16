@@ -80,7 +80,7 @@ $e^{\pm i\pi/4}$ 는 $\int e^{-ax^2}dx=\sqrt{\pi/a}$ 를 $a=-i\lambda\varphi''/2
 
 ## Laplace 방법과의 대조
 
-| | Laplace $\int g e^{\lambda\varphi}$ | 정상위상 $\int g e^{i\lambda\varphi}$ |
+| | Laplace 적분 (실 지수) | 정상위상 적분 (허 지수) |
 |---|---|---|
 | 크기를 정하는 것 | 감쇠 | 상쇄 |
 | 지배하는 점 | 최대점 | 모든 정상점 |

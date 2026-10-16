@@ -218,7 +218,7 @@ Galois 코호몰로지는 Herr 복체 $D\xrightarrow{(\varphi-1,\gamma-1)}D\oplu
 
 $E/K$ 가 [타원곡선](elliptic-curves.md)이고 $V=V_p(E)^\ast\cong H^1_{\mathrm{et}}$ 라 하자. Hodge–Tate 무게는 $\lbrace 0,1\rbrace$ 이고 $t_H=1$ 이다.
 
-| 환원 | $V$ | $D_{\mathrm{cris}}$ 의 Frobenius 부치 |
+| 환원 | V | Dcris 의 Frobenius 부치 |
 |---|---|---|
 | 좋은 환원, 초특이 | 결정적 | $\lbrace 1/2,1/2\rbrace$ 이고 $K_0$ 위 고윳값 없음 |
 | 좋은 환원, 보통 | 결정적 | $\lbrace 0,1\rbrace$ 이고 단위근 방향이 $\mathrm{Fil}^1$ 밖 |

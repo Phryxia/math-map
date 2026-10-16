@@ -72,7 +72,7 @@ $f$ 가 $\mu$ 강볼록이면 $\nabla f^\ast$ 가 $1/\mu$ Lipschitz 이고, $\na
 
 ## 계산
 
-| $f(x)$ | $f^\ast(y)$ | 조건 |
+| f(x) | f∗(y) | 조건 |
 | --- | --- | --- |
 | $\Vert x\Vert\_2^2/2$ | $\Vert y\Vert\_2^2/2$ | 유일한 고정점 |
 | $\vert x\vert^p/p$ | $\vert y\vert^q/q$ | $p\gt 1$, $1/p+1/q=1$ |

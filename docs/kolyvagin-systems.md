@@ -155,7 +155,7 @@ $$
 
 $\mathcal F=\mathcal F^\ast$ 이고 $T\cong T^\ast$ 이면 두 군이 같으므로 $\chi=0$ 이다. [타원곡선](elliptic-curves.md) $E$ 에 대해 $K=\mathbb Q$ , $T=E[p]$ , $p\ge5$ 이고 $E[p]$ 가 기약이며 $E$ 가 $p$ 에서 좋은 환원을 가질 때 자리별 기여는 다음과 같다.
 
-| 자리 $v$ | $\dim H^1_{\mathcal F}(\mathbb Q_v,T)$ | $\dim H^0(\mathbb Q_v,T)$ | 기여 |
+| 자리 v | 국소 조건의 차원 | 영차 코호몰로지의 차원 | 기여 |
 | --- | --- | --- | --- |
 | $\infty$ | $0$ | $1$ | $-1$ |
 | $p$ | $1$ | $0$ | $+1$ |

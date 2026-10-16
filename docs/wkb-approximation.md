@@ -60,7 +60,7 @@ $$
 
 $Q(x_0)=0$ 이고 $Q'(x_0)\gt 0$ 인 단순 회전점에서 $Q(x)\approx Q'(x_0)(x-x_0)$ 로 근사하면 방정식이 Airy 방정식이 된다. $\mathrm{Ai}$ 의 두 방향 점근을 양쪽 WKB 해에 맞추면 다음 규칙을 얻는다. $\phi(x)=\epsilon^{-1}\bigl\lvert\int_{x_0}^{x}\sqrt{\lvert Q\rvert}\thinspace dt\bigr\rvert$ 로 둔다.
 
-| 감쇠 영역 $Q\gt 0$ | ↔ | 진동 영역 $Q\lt 0$ |
+| 감쇠 영역 Q > 0 | ↔ | 진동 영역 Q < 0 |
 |---|---|---|
 | $\dfrac{1}{2Q^{1/4}}e^{-\phi}$ | ↔ | $\dfrac{1}{\lvert Q\rvert^{1/4}}\cos\left(\phi - \dfrac{\pi}{4}\right)$ |
 | $\dfrac{1}{Q^{1/4}}e^{+\phi}$ | ↔ | $\dfrac{-1}{\lvert Q\rvert^{1/4}}\sin\left(\phi - \dfrac{\pi}{4}\right)$ |

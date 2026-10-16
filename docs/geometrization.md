@@ -68,7 +68,7 @@ $\mathbb H^3$ 을 뺀 일곱 기하의 다양체는 분류되어 있다.
 
 Seifert 조각은 밑 오비폴드의 Euler 지표와 다발의 Euler 수, 두 부호가 어느 기하인지를 정한다.
 
-| $\chi^{\mathrm{orb}}$ / 다발 Euler 수 | $=0$ | $\ne0$ |
+| 오비폴드 Euler 지표 / 다발 Euler 수 | 0 | 0 이 아님 |
 |---|---|---|
 | $\gt 0$ | $S^2\times\mathbb R$ | $S^3$ |
 | $=0$ | $\mathbb E^3$ | $\mathrm{Nil}$ |

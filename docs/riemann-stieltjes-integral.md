@@ -86,7 +86,7 @@ $$
 
 ## 적분자에 따른 환원
 
-| 적분자 $g$ | $\int\_a^b f\thinspace dg$ |
+| 적분자 g | 적분값 |
 | --- | --- |
 | $g(x)=x$ | Riemann 적분 $\int\_a^b f(x)\thinspace dx$ |
 | $g$ 가 $C^1$ | $\int\_a^b f(x)g'(x)\thinspace dx$ |

@@ -158,7 +158,7 @@ $$
 
 $n=5$ 에서 $\mathrm{Cl}(\mathbb Q(\sqrt{-5}))\cong\mathbb Z/2$ 이므로 $[H:K]=2$ 이고 $H=K(i)=\mathbb Q(i,\sqrt5)$ 다. $\mathbb Q(i,\sqrt5)/\mathbb Q$ 가 $(\mathbb Z/2)^2$ 확대라 $p$ 의 완전분해가 합동조건 $p\equiv1,9\pmod{20}$ 으로 떨어진다.
 
-| $p\bmod 20$ | 소수의 예 | $x^2+5y^2$ | $2x^2+2xy+3y^2$ | $H$ 에서 완전분해 |
+| p mod 20 | 소수의 예 | x²+5y² | 2x²+2xy+3y² | H 에서 완전분해 |
 |---|---|---|---|---|
 | $1,\thickspace 9$ | 29, 41 | O | | O |
 | $3,\thickspace 7$ | 3, 7, 23, 43, 47 | | O | |
