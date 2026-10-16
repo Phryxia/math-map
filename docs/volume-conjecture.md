@@ -26,7 +26,7 @@ $$
 \frac1N\sum_{j}\log\big\vert 1-e^{2\pi ij/N}\big\vert\ \longrightarrow\ \frac1{2\pi}\int\log\vert 1-e^{i\theta}\vert\thinspace d\theta
 $$
 
-$-\int\log\vert 2\sin(\theta/2)\vert\thinspace d\theta$ 가 **Lobachevsky 함수**이고 쌍곡 사면체의 부피가 이 함수로 표현된다. 8 자매듭 여집합은 정이면체 사면체 두 개로 분할되고 그 부피가 $2.0298\ldots$ 다. 합의 최대항을 찾는 안장점 조건이 사면체의 이면각을 정하는 붙임 방정식과 같은 식이 된다. 안장점이 실축 위에 없으므로 $e^{iN\cdot(\text{복소수})}$ 가 지수적으로 커지고, 그 지수의 허수부가 부피다.
+$-\int\log\vert 2\sin(\theta/2)\vert\thinspace d\theta$ 가 [Lobachevsky 함수](lobachevsky-function.md)이고 쌍곡 사면체의 부피가 이 함수로 표현된다. 8 자매듭 여집합은 정이면체 사면체 두 개로 분할되고 그 부피가 $2.0298\ldots$ 다. 합의 최대항을 찾는 안장점 조건이 사면체의 이면각을 정하는 붙임 방정식과 같은 식이 된다. 안장점이 실축 위에 없으므로 $e^{iN\cdot(\text{복소수})}$ 가 지수적으로 커지고, 그 지수의 허수부가 부피다.
 
 # 정의
 

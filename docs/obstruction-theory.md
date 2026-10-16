@@ -63,7 +63,7 @@ $Y=K(G,n)$ 이면 $\pi_i(Y)$ 가 $i=n$ 에서만 $0$ 이 아니므로 장애가 
 # 활용
 
 - **벡터장과 Euler 류.** 차수 $n$ 인 실[벡터다발](vector-bundles.md)에서 영점 없는 단면을 찾는 문제는 올이 $\mathbb R^n\setminus\lbrace 0\rbrace\simeq S^{n-1}$ 인 다발의 단면 문제다. 첫 장애가 $H^n(B;\mathbb Z)$ 의 Euler 류이고, 접다발에 적용하면 이 류의 값이 Euler 표수라 $S^2$ 의 접벡터장 문제가 닫힌다.
-- **Stiefel–Whitney 류.** 차수 $n$ 다발에서 서로 일차독립인 단면 $k$ 개를 찾는 문제의 첫 장애가 $w_{n-k+1}$ 이다. 이 해석이 [특성류](characteristic-classes.md)의 기하학적 뜻을 준다.
+- **[Stiefel–Whitney 류](stiefel-whitney-classes.md).** 차수 $n$ 다발에서 서로 일차독립인 단면 $k$ 개를 찾는 문제의 첫 장애가 $w_{n-k+1}$ 이다. 이 해석이 [특성류](characteristic-classes.md)의 기하학적 뜻을 준다.
 - **Postnikov 탑.** 탑의 한 단계 $X_n\to X_{n-1}$ 은 올이 $K(\pi_n(X),n)$ 인 올다발이고, 그 올다발을 정하는 k-불변량이 $H^{n+1}(X_{n-1};\pi_n(X))$ 의 원소다. 사상을 한 단계씩 올릴 때 나오는 장애가 그 류와의 비교로 계산된다.
 - **사상의 올림.** 올다발 $p\colon E\to B$ 와 사상 $g\colon X\to B$ 에 대해 $g$ 를 $E$ 로 올리는 문제는 $g$ 로 끌어온 다발의 단면 문제와 같다. [피복공간](covering-spaces.md)의 올림 판정이 $F$ 가 이산일 때의 특수한 경우다.
 

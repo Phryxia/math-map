@@ -79,7 +79,7 @@ $$
 - **Kneser 추측.** Kneser 그래프 $K(n,k)$ 는 $\lbrace 1,\dots,n\rbrace$ 의 $k$ 원소 부분집합을 정점으로 하고 서로 만나지 않는 두 집합을 간선으로 잇는다. Lovász 는 이 그래프의 채색수가 $n-2k+2$ 임을 Lusternik–Schnirelmann 판본으로 증명했다.[^2] 색을 $n-2k+1$ 개만 쓴다고 가정하면 색류를 $S^{n-2k+1}$ 의 덮개로 옮기고, 한 색류가 서로 만나지 않는 두 집합을 담는다는 결론을 얻어 색칠의 정의에 모순이 생긴다.
 - **[그래프 색칠](graph-coloring.md)의 하한.** [Erdős–Ko–Rado 정리](erdos-ko-rado.md)가 주는 독립수 $\binom{n-1}{k-1}$ 을 정점 수 $\binom nk$ 와 견주면 $K(n,k)$ 의 채색수 하한 $n/k$ 가 나온다. Lovász 의 값 $n-2k+2$ 가 이보다 크므로 독립수만으로는 이 하한에 닿지 않는다.
 - **목걸이 분할.** $t$ 종류의 구슬이 꿰인 열린 목걸이를 두 사람이 각 종류의 개수를 똑같이 갖도록 나누려면 $t$ 번의 자르기로 충분하다. 증명은 구슬의 분포를 구간 위의 측도로 바꾸고 햄 샌드위치 정리를 쓰는 것이다.[^3]
-- **Tucker 보조정리.** 대척 대칭인 단체 분할의 꼭짓점에 $\pm 1,\dots,\pm n$ 의 라벨을 홀사상으로 붙이면 두 끝의 라벨이 $i$ 와 $-i$ 인 간선이 있다는 진술이다. 홀사상의 부재와 동치이고, [Sperner 보조정리](sperner-lemma.md)가 Brouwer 고정점 정리에 대응하는 것과 같은 자리에 있다.
+- **[Tucker 보조정리](tucker-lemma.md).** 대척 대칭인 단체 분할의 꼭짓점에 $\pm 1,\dots,\pm n$ 의 라벨을 홀사상으로 붙이면 두 끝의 라벨이 $i$ 와 $-i$ 인 간선이 있다는 진술이다. 홀사상의 부재와 동치이고, [Sperner 보조정리](sperner-lemma.md)가 Brouwer 고정점 정리에 대응하는 것과 같은 자리에 있다.
 
 [^1]: K. Borsuk, *Drei Sätze über die $n$-dimensionale euklidische Sphäre*, Fund. Math. **20** (1933), 177–190. 정리를 추측한 사람은 S. Ulam 이다.
 

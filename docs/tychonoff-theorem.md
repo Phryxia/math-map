@@ -74,8 +74,8 @@ $\lbrace 0,1\rbrace^{\lbrack 0,1\rbrack}$ 은 Tychonoff 정리로 콤팩트하�
 
 # 활용
 
-- **Banach–Alaoglu 정리.** [Banach 공간](banach-spaces.md) $X$ 의 쌍대공간 단위구가 약 $\ast$ 위상에서 콤팩트하다는 정리다. 그 단위구를 $\prod\_{x\in X}\lbrace c\in\mathbb C\thinspace :\thinspace \vert c\vert\le\Vert x\Vert\rbrace$ 의 닫힌 부분집합으로 보고 Tychonoff 정리를 쓴다.
-- **Stone–Čech 콤팩트화.** 완전정칙 공간을 $\lbrack 0,1\rbrack$ 값 연속함수들의 곱에 심고 닫힘을 취하는 구성이다([분리공리](separation-axioms.md)). 그 곱의 콤팩트성이 Tychonoff 정리다.
+- **[Banach–Alaoglu 정리](banach-alaoglu.md).** [Banach 공간](banach-spaces.md) $X$ 의 쌍대공간 단위구가 약 $\ast$ 위상에서 콤팩트하다는 정리다. 그 단위구를 $\prod\_{x\in X}\lbrace c\in\mathbb C\thinspace :\thinspace \vert c\vert\le\Vert x\Vert\rbrace$ 의 닫힌 부분집합으로 보고 Tychonoff 정리를 쓴다.
+- **[Stone–Čech 콤팩트화](stone-cech-compactification.md).** 완전정칙 공간을 $\lbrack 0,1\rbrack$ 값 연속함수들의 곱에 심고 닫힘을 취하는 구성이다([분리공리](separation-axioms.md)). 그 곱의 콤팩트성이 Tychonoff 정리다.
 - **1차 논리의 콤팩트성 정리.** [1차 논리](first-order-logic.md)의 문장들에 진리값을 주는 배정 전체가 $\lbrace 0,1\rbrace$ 의 곱이고, 각 문장이 정하는 닫힌집합족의 유한 교집합 성질에서 유한 만족 가능성이 전체 만족 가능성으로 올라간다.
 - **유한에서 무한으로의 색칠 확장.** 모든 유한 부분그래프가 $k$ 색칠 가능한 그래프는 전체가 $k$ 색칠 가능하다(de Bruijn–Erdős 정리). $\lbrace 1,\dots,k\rbrace^V$ 의 콤팩트성에서 나온다([그래프 색칠](graph-coloring.md)).
 - **Haar 측도의 존재.** 콤팩트 집합을 작은 열린집합의 평행이동으로 덮는 개수의 비가 유계 구간들의 곱에 들어가고, 그 곱의 콤팩트성으로 극한을 하나 잡는다([Haar 측도](haar-measure.md)).

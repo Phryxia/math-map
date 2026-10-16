@@ -14,7 +14,7 @@ $$
 
 # 직관
 
-$A$ 를 규격화한 Wigner 행렬이라 하고 $\frac1N\mathbb E\lbrack\mathrm{tr}A^{k}\rbrack$ 를 성분으로 펼치면 $\lbrace 1,\dots,N\rbrace$ 위의 길이 $k$ 짜리 닫힌 경로 전부를 훑는 합이 된다. 성분의 평균이 0 이므로 어떤 변을 한 번만 지나는 경로는 기댓값이 0 이고, 남으려면 모든 변을 정확히 두 번씩 지나야 하므로 $k$ 가 홀수면 기여가 없다. $k=2m$ 일 때 남는 경로는 $m$ 개의 변으로 된 나무를 한 바퀴 도는 경로이고, 그 개수가 **Catalan 수** $C_m=\frac{1}{m+1}\binom{2m}{m}$ 이다. 펼친 식은 다음이다.
+$A$ 를 규격화한 Wigner 행렬이라 하고 $\frac1N\mathbb E\lbrack\mathrm{tr}A^{k}\rbrack$ 를 성분으로 펼치면 $\lbrace 1,\dots,N\rbrace$ 위의 길이 $k$ 짜리 닫힌 경로 전부를 훑는 합이 된다. 성분의 평균이 0 이므로 어떤 변을 한 번만 지나는 경로는 기댓값이 0 이고, 남으려면 모든 변을 정확히 두 번씩 지나야 하므로 $k$ 가 홀수면 기여가 없다. $k=2m$ 일 때 남는 경로는 $m$ 개의 변으로 된 나무를 한 바퀴 도는 경로이고, 그 개수가 [Catalan 수](catalan-numbers.md) $C_m=\frac{1}{m+1}\binom{2m}{m}$ 이다. 펼친 식은 다음이다.
 
 $$
 \frac{1}{N}\mathbb E\bigl\lbrack\mathrm{tr}A^{k}\bigr\rbrack

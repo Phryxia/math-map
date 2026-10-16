@@ -87,7 +87,7 @@ $$
 W=\langle s_1,\dots,s_n\rangle,\qquad (s_is_j)^{m_{ij}}=1
 $$
 
-$m_{ii}=1$ 이고 $m_{ij}$ 는 $\alpha_i,\alpha_j$ 사이의 각도가 정한다. $90^\circ$ 이면 2, $120^\circ$ 이면 3, $135^\circ$ 이면 4, $150^\circ$ 이면 6 이다. 이 형태의 표시를 가진 군이 **Coxeter 군**이고, Weyl 군은 결정학적 조건을 만족하는 유한 Coxeter 군이다.
+$m_{ii}=1$ 이고 $m_{ij}$ 는 $\alpha_i,\alpha_j$ 사이의 각도가 정한다. $90^\circ$ 이면 2, $120^\circ$ 이면 3, $135^\circ$ 이면 4, $150^\circ$ 이면 6 이다. 이 형태의 표시를 가진 군이 [Coxeter 군](coxeter-groups.md)이고, Weyl 군은 결정학적 조건을 만족하는 유한 Coxeter 군이다.
 
 ## 근격자와 무게격자
 

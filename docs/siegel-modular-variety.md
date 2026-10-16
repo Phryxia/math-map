@@ -70,7 +70,7 @@ $$\mathcal A_g^\ast=\mathcal A_g\sqcup\mathcal A_{g-1}\sqcup\cdots\sqcup\mathcal
 
 - **Siegel 모듈러 형식.** $\mathbb H_g$ 위의 정칙함수로 $f(\gamma\cdot\tau)=\det(C\tau+D)^k f(\tau)$ 를 만족하는 것이 가중치 $k$ 의 Siegel 모듈러 형식이고, $\mathcal A_g$ 위 선다발의 절단이다. $g=1$ 이면 [모듈러 형식](modular-forms.md)의 정의와 같다.
 - **theta 함수.** [theta 급수](theta-series.md)의 변수 $\tau$ 가 $\mathbb H_g$ 를 달리고, 등분점에서 잰 theta 상수들이 $\mathcal A_g(N)$ 을 사영공간에 넣는다. Schottky 문제의 방정식도 이 상수들로 쓴다.
-- **Shimura 다양체.** $\mathcal A_g$ 는 심플렉틱 군에 딸린 Shimura 다양체이고, 그 코호몰로지 위의 Hecke 작용과 [Galois 표현](galois-representations.md)의 대응이 Langlands 대응의 한 경우다.
+- **[Shimura 다양체](shimura-varieties.md).** $\mathcal A_g$ 는 심플렉틱 군에 딸린 Shimura 다양체이고, 그 코호몰로지 위의 Hecke 작용과 [Galois 표현](galois-representations.md)의 대응이 Langlands 대응의 한 경우다.
 - **아벨 곡면의 산술.** $g=2$ 에서 $\mathcal A_2$ 의 유리점 계산이 종수 $2$ 곡선의 Jacobian 분류로 옮겨진다.
 
 [^1]: W. L. Baily and A. Borel, "Compactification of Arithmetic Quotients of Bounded Symmetric Domains", Annals of Mathematics **84** (1966), 442–528.
