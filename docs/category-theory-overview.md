@@ -14,15 +14,15 @@
 graph TD
   GP["군"] --> CA["범주"]
   PO["부분순서"] --> CA
-  CA --> FU["Functor"]
+  CA --> FU["함자"]
   LM["선형사상"] --> FU
   FU --> NT["자연변환"]
   NT --> YL["Yoneda lemma"]
   NT --> LC["극한과 쌍대극한"]
-  NT --> AD["Adjunction"]
+  NT --> AD["수반"]
   YL --> AD
   AD --> MO["Monad"]
-  MO --> KE["Kleisli와 Eilenberg–Moore"]
+  MO --> KE["Kleisli 범주와 Eilenberg–Moore 범주"]
   CC["사슬 복합체"] --> AB["아벨 범주"]
   LC --> AB
   AB --> DC["유도 범주"]

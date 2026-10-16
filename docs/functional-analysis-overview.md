@@ -23,7 +23,7 @@ graph TD
   COMP --> BS
   VS --> BS
   LM["선형사상"] --> DS["쌍대 공간"]
-  BS --> LPS["Lp 공간"] --> SOB["Sobolev 공간"] --> SD["Schwartz 분포"]
+  BS --> LPS["Lᵖ 공간"] --> SOB["Sobolev 공간"] --> SD["Schwartz 분포"]
   DS --> RF["반사 공간"] --> UC["균일 볼록 공간"]
   DS --> SD
   BS --> HB["Hahn–Banach 정리"]

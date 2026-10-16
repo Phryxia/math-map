@@ -22,10 +22,10 @@ graph TD
   FE --> RSA
   DL --> EC["타원곡선"]
   FF --> EC
-  EC --> PBC["Weil 쌍과 쌍선형 암호"]
+  EC --> PBC["쌍선형 암호"]
   EC --> MC["모듈러 곡선"]
   MC --> SEA["Schoof–Elkies–Atkin 알고리즘"]
-  DW["Dwork 의 유리성 정리"] --> KED["Kedlaya 알고리즘"]
+  DW["Dwork 의 유리성 정리와 지수합"] --> KED["Kedlaya 알고리즘"]
   DL --> PQC["격자 기반 후양자 암호"]
   LAT["격자"] --> SVP["최단벡터 문제"]
   SVP --> PQC

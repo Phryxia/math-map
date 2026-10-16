@@ -31,7 +31,7 @@ graph TD
   CI["집중부등식"] --> LD
   KL --> SINK["Sinkhorn 알고리즘"]
   OT["최적 수송"] --> SINK
-  KL --> VAE["변분 오토인코더"]
+  KL --> VI["변분 추론"] --> VAE["변분 오토인코더"]
 ```
 
 # 갈래

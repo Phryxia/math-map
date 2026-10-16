@@ -10,16 +10,16 @@
 
 ```mermaid
 graph TD
-  S["집합"] --> F["함수"] --> CD["기수"] --> CM["계산 가능성"] --> GD["Gödel 불완전성"]
+  S["집합"] --> F["함수"] --> CD["기수"] --> CM["계산 가능성"] --> GD["Gödel 불완전성 정리"]
   P["증명"] --> FOL["1차 논리"] --> ZFC["ZFC 공리계"] --> OR["서수"] --> AC["선택공리"]
   ZFC --> CH["연속체 가설"] --> FC["강제법"]
-  FOL --> GD --> FM["형식주의"]
+  FOL --> GD --> FM["형식주의와 Hilbert 프로그램"]
   FOL --> LG["논리주의"]
-  PL["플라톤주의"] --> LG
-  P --> IN["직관주의"] --> KR["Kripke 의미론"] --> HA["Heyting 대수"]
-  IN --> CH2["Curry–Howard"]
+  PL["수학적 플라톤주의"] --> LG
+  P --> IN["직관주의"] --> KR["직관주의 논리의 Kripke 의미론"] --> HA["Heyting 대수"]
+  IN --> CH2["Curry–Howard 대응"]
   CM --> LC["Lambda calculus"] --> CH2
-  ST["구조주의"] --> SST["구조적 집합론"]
+  ST["수학적 구조주의"] --> SST["구조적 집합론"]
   ZFC --> SST
 ```
 

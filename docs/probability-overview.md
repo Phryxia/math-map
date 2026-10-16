@@ -14,7 +14,7 @@
 graph TD
   FN["함수"] --> PR["유한 확률 공간"]
   PR --> BY["Bayes 정리"]
-  PR --> RV["확률변수와 기댓값"]
+  PR --> RV["확률변수"]
   LI["Lebesgue 적분"] --> RV
   PM["상측도"] --> WC["약수렴"]
   RV --> LLN["큰 수의 법칙"]

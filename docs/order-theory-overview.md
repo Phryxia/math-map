@@ -19,7 +19,7 @@ graph TD
   OTO --> GC["Galois 연결"]
   PO --> LAT["순서론의 격자"]
   LAT --> BA["Boole 대수"]
-  PO --> KS["Kripke 의미론"]
+  PO --> KS["직관주의 논리의 Kripke 의미론"]
   KS --> HA["Heyting 대수"]
   LAT --> HA
   PO --> GC

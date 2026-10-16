@@ -24,11 +24,11 @@ graph TD
   CB --> DT["영역 이론"]
   LC --> CH["Curry–Howard 대응"]
   CB --> PN["P 대 NP 문제"]
-  PN --> NPC["NP-완전성"]
+  PN --> NPC["NP-완전성과 Cook–Levin 정리"]
   NPC --> AA["근사 알고리즘"]
   AA --> LPR["LP 반올림"]
   AA --> PCP["PCP 정리"]
-  PCP --> UG["유일게임 추측"]
+  PCP --> UG["유일게임 추측과 2-to-2 정리"]
   LP["선형계획법"] --> LPR
   LPR --> SDP["반정부호 계획법"]
   SDP --> UG
