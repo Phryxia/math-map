@@ -37,26 +37,37 @@ graph TD
 
 # 갈래
 
+처음 읽는 사람은 산술 기반, 공개키의 두 가정의 순서로 읽는다. 그 뒤는 가정마다 갈린다. 타원곡선 암호와 동종사상 암호는 이산로그 쪽이고, 격자 기반 암호는 양자 알고리즘이 이산로그와 소인수분해를 깨는 경우에 쓰는 가정이다.
+
 ## 산술 기반
 
-- [정수의 합동](modular-arithmetic.md) — 공개키 방식이 실제로 계산하는 자리. 반복 제곱과 [확장 유클리드 알고리즘](euclidean-algorithm.md)
+먼저 읽을 것: [동치관계](equivalence-relations.md)와 [함수](functions.md)(수학기초론 개관). 시작 문서: [정수의 합동](modular-arithmetic.md).
+
+- [정수의 합동](modular-arithmetic.md) — 공개키 방식이 실제로 계산하는 자리. 반복 제곱으로 거듭제곱을 구한다
+  - [확장 유클리드 알고리즘](euclidean-algorithm.md) — 최대공약수와 함께 역원을 주는 계수를 구한다
 - [군](groups.md) — 이산로그를 정의하는 데 필요한 것은 연산 하나와 위수뿐이다
 - [중국인의 나머지 정리](chinese-remainder-theorem.md) — 서로소인 법의 연립 합동식을 한 법의 합동식으로 합친다
 - [유한체](finite-fields.md) — 위수 $q=p^k$ 의 체. 곱셈군이 순환군이므로 이산로그를 여기에 건다
 
 ## 공개키의 두 가정
 
-- [RSA 암호](rsa-cryptosystem.md) — 소인수분해의 어려움. Euler 정리가 지수의 주기를 주고 중국인의 나머지 정리가 복호를 가속한다
+먼저 읽을 갈래: 산술 기반. 먼저 읽을 것: [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)(정수론 개관). 시작 문서: [이산로그](discrete-logarithm.md).
+
 - [이산로그](discrete-logarithm.md) — 유한군에서 $g^x$ 로부터 $x$ 를 되찾는 문제. Pohlig–Hellman 환산과 지표 계산법이 안전한 군의 조건을 정한다
+  - [RSA 암호](rsa-cryptosystem.md) — 소인수분해의 어려움. Euler 정리가 지수의 주기를 주고 중국인의 나머지 정리가 복호를 가속한다
 
 ## 타원곡선 암호
 
+먼저 읽을 갈래: 공개키의 두 가정. 시작 문서: [타원곡선](elliptic-curves.md).
+
 - [타원곡선](elliptic-curves.md) — 곡선 위의 점에 현과 접선으로 군 구조를 준다. 준지수 시간 알고리즘이 없어 키 길이가 짧다
-- [쌍선형 암호](pairing-based-cryptography.md) — 비틀림점 위의 쌍선형 사상. MOV(Menezes–Okamoto–Vanstone) 환산의 공격 도구이자 신원 기반 암호의 구성 도구
-- [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md) — 곡선의 점 개수를 $\log p$ 의 다항시간에 센다. 곡선을 고른 뒤 위수가 큰 소인수를 가지는지 확인하는 단계
-- [Kedlaya 알고리즘](kedlaya-algorithm.md) — 초타원곡선의 zeta 함수를 $p$ 진 코호몰로지로 계산한다
+  - [쌍선형 암호](pairing-based-cryptography.md) — 비틀림점 위의 쌍선형 사상. MOV(Menezes–Okamoto–Vanstone) 환산의 공격 도구이자 신원 기반 암호의 구성 도구
+  - [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md) — 곡선의 점 개수를 $\log p$ 의 다항시간에 센다. 곡선을 고른 뒤 위수가 큰 소인수를 가지는지 확인하는 단계
+  - [Kedlaya 알고리즘](kedlaya-algorithm.md) — 초타원곡선의 zeta 함수를 $p$ 진 코호몰로지로 계산한다
 
 ## 격자 기반 암호
+
+먼저 읽을 갈래: 공개키의 두 가정. 먼저 읽을 것: [내적 공간](inner-product-spaces.md)(선형대수 개관). 시작 문서: [격자](lattices.md).
 
 - [격자](lattices.md) — 같은 점집합을 짧고 거의 직교하는 기저와 길고 거의 평행한 기저가 함께 나타낸다. 기저 축소와 Minkowski 정리
 - [최단벡터 문제](shortest-vector-problem.md) — 근사율 $\gamma$ 에 따라 난해성이 갈리고, 암호는 $\gamma$ 가 다항식인 구간을 쓴다
@@ -64,6 +75,8 @@ graph TD
 - [완전동형암호](homomorphic-encryption.md) — 암호문을 복호하지 않고 덧셈과 곱셈을 수행한다. 연산마다 커지는 잡음을 재부팅으로 초기화한다
 
 ## 동종사상 암호
+
+먼저 읽을 갈래: 타원곡선 암호. 먼저 읽을 것: [Sato–Tate 분포](sato-tate.md)(정수론 개관). 시작 문서: [Lang–Trotter 추측](lang-trotter.md).
 
 - [Lang–Trotter 추측](lang-trotter.md) — 고정된 곡선을 여러 소수로 환원할 때 초특이가 되는 빈도
 - [초특이 동종사상 그래프](supersingular-isogeny-graphs.md) — 초특이 $j$ 불변량을 정점으로 하는 정규 그래프. 그 위의 무작위 걸음이 SIDH(supersingular isogeny Diffie–Hellman)의 가정이다
