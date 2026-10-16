@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-16T17:03:39.853Z",
-  "nextSeq": 2133,
+  "savedAt": "2026-10-16T21:03:06.382Z",
+  "nextSeq": 2139,
   "items": [
     {
       "id": "9443e5ca",
@@ -196,28 +196,12 @@
       "seq": 2118
     },
     {
-      "id": "71b23884",
-      "title": "분야 개관의 지도 mermaid 노드 라벨이 문서 제목과 어긋난 자리",
-      "priority": 50,
-      "note": "4.5절은 지도가 실제 간선의 부분그래프여야 한다고만 적고 노드 라벨은 말하지 않는다. 라벨이 제목과 다르면 독자가 지도에서 본 이름으로 갈래 목록을 찾지 못한다. 개관 21 개의 지도 노드 라벨을 문서 제목과 대조하는 작업이다.\n\n처리한 것. 49차 foundations 의 cardinality 라벨 '가산성' -> '기수'. 50차에 갈래를 다시 쓰면서 함께 고친 것 다섯. statistics 의 random-variables 라벨 '확률변수와 기댓값' -> '확률변수', graph-theory 의 topological-sort 라벨 'DAG 와 위상정렬' -> '위상정렬', gnn-expressivity 'GNN 표현력' -> '그래프 신경망의 표현력', ramanujan-graphs 'Ramanujan 그래프' -> 'Ramanujan 그래프의 명시적 구성', perfect-graphs '완전그래프' -> '완벽그래프와 강한 완벽그래프 정리', optimization 의 lagrange-duality 'Lagrange 쌍대성과 KKT' -> 'Lagrange 쌍대성'. graph-theory 의 '완전그래프' 는 완전그래프(complete graph)와 완벽그래프(perfect graph)를 뒤바꾼 오류였다. 개념이 다른 라벨이 섞일 수 있으므로 대조는 눈으로 한다.\n\n검사법. 개관마다 mermaid 블록의 노드 정의 ID[\"라벨\"] 를 뽑아 그 라벨이 그 개관의 갈래 목록 링크 텍스트와 맞는지 본다. 노드가 분야 밖 문서(선수지식)인 경우가 많아 갈래 목록에 없는 라벨이 정상으로 나오므로, 라벨을 docs 전체의 제목 목록(/tmp/titles.tsv)과 대조하는 편이 낫다. 제목에 없는 라벨만 추리면 줄여 볼 수 있다. 라벨이 제목보다 짧게 줄여 쓴 것(약어나 앞머리만)도 바꿀 대상이다.\n\n주의. 지도의 노드 라벨은 mermaid 코드블록 안이라 9절의 미링크 손 검사가 그것을 본문 미링크로 보고한다. 50차에 graph-theory 의 'Euler 지표', 'Lovász 세타 함수', 'Matroid' 와 optimization 의 'LP 반올림' 이 그렇게 걸렸다. 코드블록 안이므로 전부 오탐이고 링크할 수 없다(mermaid 라벨에 마크다운 링크를 넣으면 깨진다).",
-      "createdAt": "2026-10-16T09:05:46.308Z",
-      "seq": 2119
-    },
-    {
       "id": "85cb6359",
       "title": "갈래 한 줄 설명의 미링크와 갈래 순서 규칙이 부딪히는 자리",
       "priority": 50,
       "note": "4절 본문 링크 규칙과 4.5절 갈래 순서 규칙이 개관의 한 줄 설명에서 부딪힌다. 큐 항목 6f71d977 의 규칙 (3)은 '한 줄 설명 안에 분야 밖 선수 문서를 링크하면 조상 역전이 되므로 그 갈래 첫 줄로 올린다' 고 적는데, 올릴 수 없는 경우가 51차 computation 에서 나왔다.\n\n사례. '[고속 Fourier 변환](fft.md): 분할정복으로 $O(n\\log n)$ 에 이산 Fourier 변환' 에서 미링크 손 검사가 fourier(이산 Fourier 변환)를 보고한다. 설명 안에 링크하면 fourier 가 fft 뒤에 와서 조상 역전이다. 갈래 첫 줄로 올리려 해도 fourier 의 다른 후손 boolean-fourier 가 앞 갈래(복잡도와 근사 한계)에 있어 규칙 (1)에 걸린다. 올릴 수 있는 자리가 없다.\n\n네 번째 수. 설명 문구에서 그 제목 문자열을 없앤다. 'Fourier 계수를 $O(n\\log n)$ 에 계산한다' 로 바꾸면 '이산 Fourier 변환' 도 'Fourier 변환' 도 문자열로 나타나지 않아 손 검사가 조용해지고 순서도 멀쩡하다. 설명은 그 문서가 무엇을 계산하는지를 말하는 자리이므로 제목을 그대로 되풀이할 필요가 없고(4.5절도 '문서 제목을 되풀이하지 않는다' 고 적는다), 개념 이름을 바꿔 적는 것이 규칙 둘을 함께 지키는 길이다. galois-connections 처럼 후손이 모두 같은 갈래 안이나 뒤에 있는 문서는 (3)대로 갈래 첫 줄로 올리면 된다.\n\n오탐 하나. 미링크 손 검사는 긴 제목의 링크 텍스트 안에 짧은 제목이 들어 있으면 짧은 쪽을 보고한다. '[고속 Fourier 변환](fft.md)' 이 있는 문서는 fourier-transform(Fourier 변환)을 늘 미링크로 보고한다. 51차 computation 과 50차 집계의 measure.md 오탐과 같은 종류다. 큐 항목 b9e3aeb5 가 적은 '더 긴 제목이 같은 자리를 덮으면 보고하지 않는' 스크립트가 이것을 거른다.",
       "createdAt": "2026-10-16T12:52:38.254Z",
       "seq": 2122
-    },
-    {
-      "id": "76082585",
-      "title": "combinatorics-overview 갈래 재작성은 linear-algebra 와 같은 꼴이다",
-      "priority": 50,
-      "note": "51차에 집으려다 분량을 재고 물린 작업이다. 큐 항목 7565e952 의 남은 여섯 가운데 combinatorics(67 링크 위반 27)는 링크 수로는 computation(54)과 differential-geometry(52) 다음으로 작지만, 실제 분량은 linear-algebra 와 같은 유형이라 한 회차를 통째로 잡아야 한다.\n\n꼴이 다른 점 셋. (1) 한 줄에 문서 둘셋을 화살표나 쉼표로 묶어 적는다. '[생성함수](generating-functions.md) -> [분할수](partitions.md)', '[근계](root-systems.md) -> [Weyl 지표 공식](weyl-character-formula.md) -> [Schur 다항식](schur-polynomials.md)', '[theta 급수](theta-series.md), [Siegel–Weil 공식](siegel-weil.md)' 꼴이 대수적 조합론과 격자와 부호 갈래에 몰려 있다. 4.5절은 문서마다 한 줄에 한 줄 설명을 요구하므로 이 묶음을 풀면서 설명을 새로 지어야 하는 문서가 18 개다(근계, Weyl 지표 공식, Schur 다항식, Littlewood–Richardson 규칙, Schubert 계산, Schur–Weyl 쌍대성, Brauer 대수, Kazhdan–Lusztig 다항식, 범주 O, MV 순환, Casselman–Shalika 공식, 구 채우기, Niemeier 격자, Schellekens 목록, theta 급수, Siegel–Weil 공식, Mock 모듈러 형식, Dyson 의 rank 와 crank). 설명은 그 문서가 무엇을 정의하거나 증명하는지여야 하므로 18 개 문서를 열어 보고 써야 한다. (2) '## 그래프와 매트로이드' 와 '## 대수적 조합론' 갈래에 H2 바로 아래 설명 문단이 있다. 4.5절이 정한 첫 줄('먼저 읽을 갈래', '시작 문서')과 자리를 다투므로 그 문단의 내용을 첫 줄 꼴로 옮기거나 지워야 한다. (3) 갈래 셋(극단 조합론, 분할과 조합적 종, 설계와 접촉 구조)이 다음 H2 앞에 빈 줄 없이 붙어 있다.\n\n위반 27 건의 원인은 거의 하나다. graphs 가 16 건, matchings 가 4 건, matroids 가 1 건으로 '## 그래프와 매트로이드' 갈래가 여섯 번째인데 그 안의 세 문서가 앞 갈래(극단 조합론, 설계와 접촉 구조, 확률적 방법과 무작위 구조)의 ramsey-theory, turan-theorem, dilworth-theorem, sperner-theorem, erdos-ko-rado, littlewood-offord, zarankiewicz-problem, szemeredi-trotter, probabilistic-method, erdos-renyi-graphs, potts-model 등의 조상이다. graphs 와 matchings 와 matroids 는 그래프 이론이 주 분야이므로(4.5절은 다른 분야가 주인 문서는 관련이 깊을 때만 넣는다고 한다) 이 갈래를 해체해 graphs 를 첫 갈래의 '먼저 읽을 것' 으로 올리고 perfect-graphs 만 남기는 수가 있다. 51차 differential-geometry 가 같은 수로 위반 33 건을 0 으로 만들었다. 나머지 넷은 laplace-method 가 partitions 뒤에 와야 하는 것(세기의 기초 갈래 안 순서)과 siegel-weil, theta-series 가 niemeier-lattices, schellekens-list 앞에 와야 하는 것(격자와 부호 갈래 안 순서)이라 갈래 안 재배치로 풀린다.",
-      "createdAt": "2026-10-16T12:53:42.518Z",
-      "seq": 2123
     },
     {
       "id": "f9d81fac",
@@ -244,6 +228,30 @@
       "seq": 2126
     },
     {
+      "id": "eb861f93",
+      "title": "분야 개관 갈래 재작성의 남은 목록 (53차 집계)",
+      "priority": 50,
+      "note": "큐 항목 7565e952(개관 21 개의 갈래를 읽는 순서로 다시 쓰기)의 진행 집계다. 52차 집계(f9d81fac)를 갱신한 판이다. 53차(2026-10-16)에 combinatorics 를 다시 썼다. 다시 쓴 개관은 measure-theory(48차), foundations, complex-analysis, functional-analysis, machine-learning, cryptography, category-theory(49차), statistics, graph-theory, optimization, probability(50차), computation, differential-geometry(51차), linear-algebra(52차), combinatorics(53차) 열다섯이고, order-theory 와 information-theory 는 손대기 전부터 규격을 갖추고 있었다.\n\n53차에 개관 21 개의 갈래 순서를 전수로 다시 측정했다. 위반이 남은 넷뿐이고 나머지 열일곱은 0 건이다. number-theory 162 링크 위반 167, abstract-algebra 107 링크 위반 147, analysis 82 링크 위반 78, topology 97 링크 위반 43. 50차 측정치와 같은 수이므로 그 사이 회차가 늘리거나 줄인 것은 없다. 다시 쓴 combinatorics 는 86 링크 위반 0 이다(재작성 전 67 링크였고 묶음 줄을 풀어 링크가 늘었다).\n\n53차 combinatorics 에 20 분이 들었다. 갈래 여덟을 아홉으로 늘렸다. (1) '그래프와 매트로이드' 를 해체하지 않고 '매칭과 매트로이드' 로 이름을 바꿔 세 번째로 올렸다. 52차 메모가 적은 해체안(graphs 를 첫 갈래 '먼저 읽을 것' 으로 올리고 perfect-graphs 만 남기기)보다 정보를 덜 잃는다. graphs, matchings, matroids 가 뒤 갈래 열한 문서의 조상이라 위반 27 건 가운데 21 건이 이 한 수로 사라졌다. (2) 극단 조합론에 섞여 있던 위상적 조합론 넷(sperner-lemma, kkm-theorem, tucker-lemma, necklace-splitting)을 '위상적 조합론' 갈래로 떼어 극단 조합론과 설계와 확률적 방법 뒤에 두었다. 극단 조합론 갈래가 17 항목이어서 과했다. (3) partitions 를 세기의 기초에서 빼고 분할과 조합적 종 갈래에만 두어 laplace-method 역전을 없앴다. 갈래 안 재배치는 격자와 부호에서 theta-series, siegel-weil 을 niemeier-lattices 앞으로 올린 것이다. 개요 첫 문장에 '조합론(combinatorics)' 을 붙였고(항목 c615841d), 본문 미링크 여섯(항목 9dd3fc55)도 같은 회차에 없앴다. 남은 넷도 같은 묶음으로 처리된다.",
+      "createdAt": "2026-10-16T20:54:21.422Z",
+      "seq": 2133
+    },
+    {
+      "id": "8b1ce231",
+      "title": "갈래 첫 줄의 '먼저 읽을 것' 은 '시작 문서' 보다 앞에 적는다",
+      "priority": 50,
+      "note": "4.5절 갈래 첫 줄의 어순 문제다. 53차 combinatorics 재작성에서 9절 갈래 순서 손 검사가 'graphs 는 matchings 의 조상인데 뒤에 온다' 와 'lattices 는 sphere-packing 의 조상인데 뒤에 온다' 를 보고했다. 원인은 첫 줄을 '먼저 읽을 갈래: 세기의 기초. 시작 문서: [매칭](matchings.md). 먼저 읽을 것: [그래프](graphs.md)(그래프 이론 개관).' 순서로 적은 것이다. 검사기는 갈래 절의 링크를 나타나는 순서대로 읽으므로 시작 문서가 분야 밖 선수 문서보다 앞에 적히면 역전으로 센다.\n\n규칙. 갈래 첫 줄은 '먼저 읽을 갈래: X. 먼저 읽을 것: [분야 밖 선수](id.md)(어느 개관). 시작 문서: [시작](id.md).' 순서로 적는다. 4.5절 본문의 예시는 '먼저 읽을 갈래'와 '시작 문서'를 한 문장에, '먼저 읽을 것'을 다른 문장에 적어 두어 어순을 정하지 않는다. 독자가 4.5절에 이 어순을 한 줄로 못 박을지 판단할 자리다.\n\n이미 다시 쓴 개관 열다섯에 같은 어순이 남아 있는지는 53차에 전수로 확인했고 없다(열일곱 개관이 위반 0 건). 앞으로 재작성하는 넷에서만 조심하면 된다. 전수 확인은 node 한 번으로 돌리는 것이 빠르다. 개관마다 bash 손 검사를 돌리면 문서마다 node 를 띄워 2 분이 넘고 백그라운드로 밀린다. dev/graph.mjs dump --json 을 한 번 받아 부모 맵에서 조상을 캐시하고 개관 21 개의 갈래 절 링크를 순서대로 훑으면 2 초다.\n\n그 검사기를 쓸 때의 함정. 갈래 절을 /^# 갈래$[\\s\\S]*?(?=^# |\\Z)/m 으로 잘라내면 안 된다. JavaScript 정규식에 \\Z 가 없어 리터럴 'Z' 로 읽히고, 갈래 절 안에 처음 나오는 대문자 Z 에서 절이 끊긴다. 53차에 이 버그로 foundations 가 0 링크, combinatorics 가 44 링크(실제 86), number-theory 가 76 링크(실제 162)로 집계되어 위반을 86 건으로 과소 보고했다. 실제는 435 건이다. 줄 배열에서 '^# 갈래' 줄을 찾고 다음 '^# ' 줄까지 slice 하면 9절 awk 와 같은 수가 나온다.",
+      "createdAt": "2026-10-16T20:54:39.743Z",
+      "seq": 2134
+    },
+    {
+      "id": "beadb4f0",
+      "title": "분야 개관의 지도 mermaid 노드 라벨과 화살표 전수 검사 (53차 갱신)",
+      "priority": 50,
+      "note": "옛 항목 71b23884 를 갱신한 판이다. 4.5절은 지도가 실제 간선의 부분그래프여야 한다고만 적고 노드 라벨은 말하지 않는다. 라벨이 제목과 다르면 독자가 지도에서 본 이름으로 갈래 목록을 찾지 못한다.\n\n53차(2026-10-16)에 개관 21 개를 전수로 검사했다. 라벨 28 건이 제목과 달랐고 화살표 2 개가 실제 없는 간선이었다. 라벨 18 건과 화살표 2 개를 고쳤다. category-theory(Functor->함자, Adjunction->수반, Kleisli와 Eilenberg-Moore->Kleisli 범주와 Eilenberg-Moore 범주), computation(NP-완전성->NP-완전성과 Cook-Levin 정리, 유일게임 추측->유일게임 추측과 2-to-2 정리), cryptography(Weil 쌍과 쌍선형 암호->쌍선형 암호, Dwork 의 유리성 정리->Dwork 의 유리성 정리와 지수합), foundations 여섯(Gödel 불완전성, 형식주의, 플라톤주의, Kripke 의미론, Curry-Howard, 구조주의가 모두 제목보다 짧았다), functional-analysis(Lp 공간->Lᵖ 공간, 유니코드 첨자), machine-learning(Glivenko-Cantelli 의 하이픈을 en dash 로), order-theory(Kripke 의미론->직관주의 논리의 Kripke 의미론), probability(확률변수와 기댓값->확률변수)다.\n\n화살표 둘은 information-theory 와 machine-learning 의 kl-divergence -> variational-autoencoder 다. 실제 간선은 kl-divergence -> variational-inference -> variational-autoencoder 이고 변분 추론 문서가 중간에 들어온 뒤 지도를 고치지 않은 것이다(큐 메모 9443e5ca 가 적은 사고와 같은 꼴). 두 지도에 'VI[\"변분 추론\"]' 노드를 끼워 꿰었다.\n\n남은 10 건은 갈래 순서 위반이 남은 개관 넷에 있다. abstract-algebra(Borel-Weil-Bott->Borel-Weil-Bott 정리), analysis(Resurgence->Resurgence 이론), number-theory 넷(Fermat-Euler 정리->Fermat 소정리와 Euler 정리, Riemann zeta->Riemann zeta 함수, Selmer 군->Selmer 군과 Tate-Shafarevich 군, BSD 추측->Birch-Swinnerton-Dyer 추측), topology 넷(Compactness->콤팩트성, Reshetikhin-Turaev->Reshetikhin-Turaev 불변량, Gauss-Bonnet->Gauss-Bonnet 정리, Chern-Simons->Chern-Simons 이론)이다. 53차에 고쳤다가 되돌렸다. 2절 10단계가 개관을 고친 회차에 갈래 순서 검사 0 건을 요구하므로 단독으로 커밋할 수 없고, 갈래 재작성(7565e952)과 같은 회차에 넣는다. 항목 8df79c51 이 적은 '개관 넷에 묶인 것' 목록에 이 10 건을 더한다.\n\n검사법. node 한 번으로 돈다. dump --json 의 제목 집합과 개관의 mermaid 블록에서 뽑은 ID[\"라벨\"] 를 대조해 제목에 없는 라벨을 추리고, 같은 블록의 '-->' 줄을 노드 id 로 바꿔 간선 집합에 있는지 본다. 53차에는 라벨 0 건 화살표 534 개 문제 0 개가 되었다(남은 넷 되돌리기 전 기준). 라벨이 정확해지면 화살표 검사의 노드 해결이 100 퍼센트가 되어 두 검사가 서로를 교차검증한다.",
+      "createdAt": "2026-10-16T21:02:50.953Z",
+      "seq": 2138
+    },
+    {
       "id": "08e59419",
       "title": "CLAUDE.md 4절의 '직관 두 문단' 규칙과 모범 예의 어긋남",
       "priority": 40,
@@ -268,20 +276,20 @@
       "seq": 1544
     },
     {
+      "id": "dd50c2bc",
+      "title": "개관 갈래의 한 줄 설명 미링크를 푸는 두 수 (53차 사례)",
+      "priority": 40,
+      "note": "큐 항목 85cb6359 가 적은 두 수를 53차 combinatorics 에서 열 건에 적용한 기록이다. 미링크 손 검사가 갈래 설명 안의 제목 열 개를 보고했고, 설명 안에 링크하면 그 문서가 설명을 달고 있는 문서 뒤에 오므로 열 건 전부가 조상 역전이 되었다(순서 검사 12 건 보고). 설명 안 링크는 언제나 역전이 되므로 두 수 가운데 하나를 골라야 한다.\n\n첫 번째 수(갈래 첫 줄 '먼저 읽을 것' 으로 올리기)를 쓴 다섯. brouwer-fixed-point 와 borsuk-ulam 은 후손이 전부 위상적 조합론 갈래 안이어서 그 갈래 첫 줄로, lie-algebras 와 coxeter-groups 는 후손이 대수적 조합론과 그 뒤 갈래에만 있어 대수적 조합론 첫 줄로, golay-codes 는 후손이 leech-lattice 와 mathieu-groups 둘뿐이어서 격자와 부호 첫 줄로 올렸다. 올린 뒤 설명 안의 그 이름은 링크를 지우고 평문으로 되돌린다(4절은 첫 등장만 링크한다).\n\n네 번째 수(설명 문구에서 제목 문자열 없애기)를 쓴 셋. eisenstein-series 는 'Eisenstein 급수로 준다' 를 '닫힌 식을 준다' 로, crossing-number-inequality 는 '교차수 부등식이 주는 증명' 을 '평면 그래프의 교차 횟수를 세어 얻는 증명' 으로, tutte-polynomial 은 '무작위 클러스터 표현과 Tutte 다항식' 을 '무작위 클러스터 표현과 분배함수의 전개' 로 바꿨다. 셋 다 갈래 전체의 선수가 아니라 한 항목의 배경이라 첫 줄에 올릴 자리가 아니다.\n\n가르는 기준. 그 문서가 갈래 전체의 바탕이면 첫 줄로 올리고, 한 항목의 배경일 뿐이면 문구를 바꾼다. 올리기 전에 'node dev/graph.mjs descendants <id>' 의 후손이 그 갈래와 뒤 갈래에만 있는지 확인한다. 앞 갈래에 후손이 있으면 올려도 역전이 남는다.\n\n첫 줄에 올릴 때 괄호의 개관 이름을 그 문서의 첫 태그로 확인한다. 53차에 lattices 를 '추상대수 개관' 으로 적었으나 첫 태그가 number_theory 여서 '정수론 개관' 이 맞았다. golay-codes 는 information_theory, coxeter-groups 는 group_theory(추상대수 개관), borsuk-ulam 은 algebraic_topology(위상 개관)다. 4.5절 매핑표가 태그에서 개관을 정한다.",
+      "createdAt": "2026-10-16T20:54:58.087Z",
+      "seq": 2135
+    },
+    {
       "id": "8ce35057",
       "title": "'A와 B' 제목 전수 현황 (35차)과 grep 로케일",
       "priority": 30,
       "note": "4절 제목 규칙의 grep -l '^# .*[와과] ' docs/*.md 는 로케일을 지정해야 한다. 기본 로케일에서는 '# 연관 문서' 가 전부 걸려 문서 600 여 개가 후보로 나온다. LC_ALL=C.UTF-8 을 앞에 붙이면 25 건이 나온다. 25 건의 분류. 파일명이 두 개념을 모두 가리켜 규칙에 맞는 것: dyson-rank-crank fermat-euler-theorem filters-and-nets formalism-hilbert-program ideals-quotient-rings kleisli-eilenberg-moore limits-colimits luzin-sierpinski-sets selmer-tate-shafarevich. 정리 이름과 그 정리가 답하는 개념을 나란히 둔 4절 예외: canonical-height eisenstein-ideal greenberg-conjecture heegner-points np-completeness perfect-graphs serre-conjecture unique-games vandiver-conjecture waldspurger-theorem witten-asymptotics. 파일명이 한쪽만 가리켜 판정이 남은 것 다섯: dwork-rationality(지수합) herbrand-ribet(Eisenstein 합동) s-cobordism(고차원 Poincare 추측) speh-representations(잔여 스펙트럼, 큐 b102cbdd 와 같은 건) whittaker-models(중복도 1). 이 다섯은 각 문서를 보강하는 회차에 제목을 파일명의 개념으로 좁힐지 8절대로 나눌지 판단한다",
       "createdAt": "2026-10-06T05:03:41.371Z",
       "seq": 1774
-    },
-    {
-      "id": "60d2eee0",
-      "title": "Heyting 대수 제목 한국어화와 초필터 링크 텍스트",
-      "priority": 30,
-      "note": "48차에 boolean-algebras 의 제목을 'Boolean algebra' 에서 'Boole 대수' 로 바꾸고 링크 텍스트 19 개를 제목으로 통일했다(항목 c6b597c3). 옛 항목 116b15bd 의 셋 가운데 (1) 은 50차에 처리했다. boolean-valued-models 의 '완비 Boolean 대수' 6 자리를 '완비 Boole 대수' 로 고쳤다(제목이자 그 문서의 개념인 'Boolean 값 모형' 과 헤딩 'Boolean 값 우주' 는 그대로 두었다). foundations-overview 에는 '완비 Boolean 대수' 가 남아 있지 않았다.\n\n남은 둘. (2) 링크 텍스트가 '초필터' 인 두 자리는 constructible-universe 63 줄과 large-cardinals 29 줄이다(ultraproducts 와 weak-choice-principles 로 기억한 48차 메모가 틀렸다. grep -rn '\\[초필터\\](boolean-algebras.md)' docs/*.md 로 확인했다). 둘 다 측도 가능 기수의 정의에서 '비주요 초필터가 있으면' 꼴로 쓴다. 4절은 링크 텍스트가 제목이거나 제목을 문장에 맞게 바꾼 것이라 하는데 '초필터' 는 둘 다 아니다. 초필터 문서를 따로 세울지, 링크 텍스트를 'Boole 대수의 초필터' 로 바꿀지 정한다. 문장 흐름으로는 뒤쪽이 어색하므로 초필터를 주제로 한 문서를 세우는 쪽이 낫고, 그러면 ultraproducts 와 stone-cech-compactification 의 부모 후보가 된다.\n\n(3) heyting-algebras 의 제목이 'Heyting algebra' 로 같은 문제를 갖는다. 'Heyting 대수' 로 바꾸고 그 문서를 가리키는 링크 텍스트를 전부 맞춘다. 본문도 'Heyting algebra 는' 꼴로 적혀 있어 함께 고친다. 제목을 바꿀 때는 개요 첫 문장의 원어 병기가 전역 치환에 먹히지 않게 조심한다. 48차에 'Boole 대수(Boolean algebra)는' 을 넣은 뒤 전역 치환이 괄호 안까지 바꿔 'Boole 대수(Boole 대수)는' 이 되었고, 괄호 안에 로마자 'Boole' 이 남아 4절의 원어 병기 검사도 통과해 버렸다. 원어를 먼저 토큰으로 보호하거나 전역 치환을 먼저 하고 첫 문장을 나중에 쓴다.",
-      "createdAt": "2026-10-16T08:58:34.697Z",
-      "seq": 2116
     },
     {
       "id": "8df79c51",
@@ -930,6 +938,14 @@
       "note": "판정 완료 메모. pop 으로 꺼낼 작업이 아니다. 2026-10-10 41차에 1절에 없는 전수 검사 아홉을 docs 775 개에 돌려 교정할 것이 0 건이다.\n\n(1) 태그가 하나뿐인 문서 0 건. (2) 1000 줄 초과 0 건. (3) 구형 문서 0 건. 판정법을 바꿨다. 'grep -l ^## 정의' 는 신형 문서의 하위 절을 잡아 5 건 이상을 보고하므로 쓰면 안 되고, 'H1 # 정의 가 없으면서 H2 ## 정의 가 있는 문서' 로 걸러야 한다. 그 기준으로 0 건이다. (4) 언어 없는 코드블록과 javascript/typescript/mermaid 아닌 코드블록 0 건. (5) '## 수치로 확인', '## 시뮬레이션', '## 계산으로 확인' 절 0 건. (6) 방향형 절 이름과 '대부분 열려' 꼴 범위 뭉뚱그림 0 건. (7) 4절 금지 매크로(operatorname, bm, DeclareMathOperator, newcommand) 0 건.\n\n(8) 문장형 헤딩 grep 보고 17 건이 전부 오탐이다. 16 건이 '## 증명의 요지'(baker-theorem 55, banach-alaoglu 47, casselman-shalika 69, chebotarev 60, deligne-weil-conjectures 112, finitely-generated-modules 47, gauss-bonnet 47, hartshorne-lichtenbaum 61, index-theorem 69, lagrange-inversion 45, noether-theorem 43, pila-wilkie-theorem 47, rademacher-theorem 39, spectral-sparsification 63, spectral-theorem 58, tunnell-saito 57)이고 나머지는 potential-theory 37 의 '## 퍼텐셜과 에너지' 다. 둘 다 명사구다(큐 f7c54f08, 5bc27ea2 의 판정과 같다).\n\n(9) 비유 금지 grep 보고 5 건이 전부 굳은 용어다. elliptic-curves 118 'Montgomery 사다리'(Montgomery ladder, 알고리즘 이름), lie-algebras 162 '사다리 연산자', mandelbrot-set 55 '심장꼴'(cardioid), post-quantum-cryptography 126 '함정문'(trapdoor, 두 건). 4절이 '용어의 일부인 것은 예외' 로 허용한다.\n\n'A와 B' 제목 후보는 LC_ALL=C.UTF-8 로 20 개 이상 나오는데 큐 8ce35057 의 35차 전수 판정 범위이므로 이 회차에 다시 보지 않았다.",
       "createdAt": "2026-10-10T17:00:32.523Z",
       "seq": 2053
+    },
+    {
+      "id": "8f08fd3f",
+      "title": "초필터 문서를 새로 세우지 않는다는 판정 (53차)",
+      "priority": 20,
+      "note": "옛 항목 60d2eee0 과 그 갱신판(a7c81f61)이 '초필터(ultrafilter)를 주제로 한 문서를 세우는 쪽이 낫다' 고 적었으나 53차(2026-10-16)에 뒤집었다. filters-and-nets(제목 '필터와 그물')가 이미 초필터를 '## 초필터' 절에서 극대 필터로 정의하고, 주 초필터와 비주요 초필터를 구분하고, '## 초필터 보조정리' 절과 Tychonoff 정리의 초필터 증명까지 담는다. 새 문서를 세우면 8절의 통합 기준('같은 개념을 두 문서에 나누지 않는다')에 어긋난다. 큐 메모 ae0b674e 가 경고한 '큐 note 가 작성 당시의 저장소 상태를 적어 둔 것' 이 또 걸렸고, 이번에는 작업 전 'ls docs | grep -iE' 로 걸러 냈다.\n\n처리한 것. constructible-universe 63 줄과 large-cardinals 29 줄의 '[초필터](boolean-algebras.md)' 두 자리를 '[초필터](filters-and-nets.md)' 로 돌렸다. 측도 가능 기수의 정의에 나오는 것은 집합 위의 초필터이지 Boole 대수의 초필터가 아니므로 가리키는 문서가 틀렸던 것이다.\n\n남은 판단 하나. 링크 텍스트 '초필터' 는 4절의 '링크 텍스트는 그 문서의 제목이거나 제목을 문장에 맞게 바꾼 것' 에 엄격히는 맞지 않다. 'filters-and-nets' 가 '필터와 그물' 이라는 'A와 B' 꼴 제목이어서(4절 제목 규칙) 생기는 문제다. 그 문서를 보강하는 회차에 제목을 파일명의 개념으로 좁힐지, 8절대로 '필터' 와 '그물' 두 문서로 나눌지 정하면 링크 텍스트 문제도 함께 풀린다. 나눌 경우 초필터는 필터 쪽으로 간다.",
+      "createdAt": "2026-10-16T20:58:53.122Z",
+      "seq": 2137
     },
     {
       "id": "410fd79d",
