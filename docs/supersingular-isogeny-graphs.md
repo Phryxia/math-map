@@ -136,7 +136,7 @@ $$
 
 초특이 곡선과 사원수 극대차수의 대응은 Brandt 행렬을 통해 무게 $2$ 새형식의 Hecke 고윳값을 계산하게 해 주며, [모듈러 기호](modular-symbols.md)와 나란한 또 하나의 계산 경로다. 준위가 소수일 때는 사원수 쪽이 더 빠르다.
 
-[^1]: A. Pizer, *Ramanujan graphs and Hecke operators*, Bull. AMS **23** (1990). 이 그래프가 Ramanujan 임을 Eichler–Selberg 대각합 공식과 Deligne 의 추정으로 보인다.
+[^1]: A. Pizer, *Ramanujan graphs and Hecke operators*, Bull. AMS **23** (1990). 이 그래프가 Ramanujan 임을 Eichler–[Selberg 대각합 공식](selberg-trace-formula.md)과 Deligne 의 추정으로 보인다.
 
 [^2]: W. Castryck, T. Decru, *An efficient key recovery attack on SIDH*, EUROCRYPT 2023. 독립적인 공격으로 Maino–Martindale 와 Robert 의 것이 있고, Robert 의 방법은 시작 곡선의 자기준동형환을 몰라도 통한다. Deuring 대응 쪽 정리는 B. Wesolowski, *The supersingular isogeny path and endomorphism ring problems are equivalent*, FOCS 2021.
 

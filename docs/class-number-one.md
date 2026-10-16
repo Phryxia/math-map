@@ -54,7 +54,7 @@ $$
 
 $\chi_D$ 는 판별식 $D$ 의 Kronecker 지표이고 $w$ 는 $\mathcal O_K$ 의 단원 개수로, $D\lt -4$ 이면 $w=2$ 다.
 
-Hecke 는 일반화 Riemann 가설 아래 $L(1,\chi_D)\gg1/\log\vert D\vert$ 를 얻었다. Deuring 과 Heilbronn 은 그 가설이 깨지는 경우, 곧 어떤 $L(s,\chi)$ 에 $1$ 에 아주 가까운 실영점이 있는 경우에 거꾸로 다른 판별식의 류수가 커짐을 보였다. 두 경우를 합쳐 Heilbronn 이 1934 년에 $h(D)\to\infty$ 를 증명했다[^2].
+Hecke 는 일반화 [Riemann 가설](riemann-hypothesis.md) 아래 $L(1,\chi_D)\gg1/\log\vert D\vert$ 를 얻었다. Deuring 과 Heilbronn 은 그 가설이 깨지는 경우, 곧 어떤 $L(s,\chi)$ 에 $1$ 에 아주 가까운 실영점이 있는 경우에 거꾸로 다른 판별식의 류수가 커짐을 보였다. 두 경우를 합쳐 Heilbronn 이 1934 년에 $h(D)\to\infty$ 를 증명했다[^2].
 
 이 증명은 판별식의 상한을 주지 않는다. 결론은 두 경우 가운데 하나에서 나오는데 어느 쪽인지 알 수 없고, 둘째 경우의 상수는 가정한 영점의 위치에 달려 있다.
 

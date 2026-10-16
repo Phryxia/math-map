@@ -24,7 +24,7 @@ $$
 \mathrm{injdim}\_R R\lt\infty
 $$
 
-국소가 아닌 Noether 환은 모든 극대 아이디얼에서의 국소화가 Gorenstein 일 때 Gorenstein 이라 한다.
+국소가 아닌 [Noether 환](noetherian-rings.md)은 모든 극대 아이디얼에서의 국소화가 Gorenstein 일 때 Gorenstein 이라 한다.
 
 ## 동치 조건
 

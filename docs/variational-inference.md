@@ -140,7 +140,7 @@ $\mathrm{KL}\bigl(q\thinspace\Vert\thinspace p\bigr)$ 의 피적분함수는 $p(
 # 활용
 
 - [변분 오토인코더](variational-autoencoder.md)(variational autoencoder, VAE)는 변분족을 신경망이 출력하는 Gauss 분포로 잡고 ELBO 를 재매개화 기법으로 최대화한다. 평균장 좌표상승 대신 전역 경사상승을 쓰는 갈래다.
-- [Bayes 추론](bayesian-inference.md)에서 사후분포의 정규화상수가 닫힌 형태로 없을 때 Markov 연쇄 Monte Carlo(Markov chain Monte Carlo, MCMC)와 함께 쓰는 두 표준 도구의 하나다. MCMC 가 표본으로 참 분포에 접근하는 대신, 변분 추론은 최적화 문제를 풀어 분포족 안의 한 점을 준다.
+- [Bayes 추론](bayesian-inference.md)에서 사후분포의 정규화상수가 닫힌 형태로 없을 때 [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)(Markov chain Monte Carlo, MCMC)와 함께 쓰는 두 표준 도구의 하나다. MCMC 가 표본으로 참 분포에 접근하는 대신, 변분 추론은 최적화 문제를 풀어 분포족 안의 한 점을 준다.
 - [기댓값 최대화 알고리즘](em-algorithm.md)(expectation–maximization, EM)의 E 단계는 변분족에 제약이 없어 $q=p(z\mid x,\theta)$ 를 그대로 쓸 수 있는 경우다. 그 분포를 계산할 수 없을 때 $q$ 를 평균장 족으로 제한한 것이 변분 EM 이다.
 - [확률 그래프 모형](graphical-models.md)의 순환 그래프에서 믿음 전파가 주변분포를 주지 않을 때 평균장 갱신을 쓴다. 이웃의 기댓값만 받으므로 좌표 사이의 상관은 버린다.
 - [지수족](exponential-families.md)의 자연모수와 충분통계량이 갱신식의 형태를 정한다. 완전 조건부가 지수족인 모형에서만 CAVI 가 닫힌 형태로 적힌다.

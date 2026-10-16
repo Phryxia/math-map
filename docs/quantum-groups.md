@@ -82,7 +82,7 @@ $q\to0$ 극한에서 $U_q(\mathfrak g)$ 의 적분형 표현은 기저를 하나
 - [땋임군](braid-groups.md): $R$ 행렬이 땋임군의 유한차원 표현을 주고, 그 표현에서 Jones 다항식과 HOMFLY(Hoste–Ocneanu–Millett–Freyd–Lickorish–Yetter) 다항식이 나온다.
 - [모듈러 텐서범주](modular-tensor-categories.md): 1 의 거듭제곱근에서의 반단순 몫이 이 범주의 주요 예를 공급한다.
 - [아핀 Lie 대수](affine-lie-algebras.md): 준위 $k$ 의 적분가능 표현이 이루는 융합 범주가 $q=e^{\pi i/(k+h)}$ 에서 양자군의 몫 범주와 동형이다.
-- 반복 표현의 교환자 대수: $U_q(\mathfrak{sl}\_n)$ 이 $V^{\otimes m}$ 에 작용할 때 그 작용과 교환하는 대수가 A 형 Hecke 대수이고, 이 쌍이 Schur–Weyl 쌍대성의 변형이다.
+- 반복 표현의 교환자 대수: $U_q(\mathfrak{sl}\_n)$ 이 $V^{\otimes m}$ 에 작용할 때 그 작용과 교환하는 대수가 A 형 Hecke 대수이고, 이 쌍이 [Schur–Weyl 쌍대성](schur-weyl-duality.md)의 변형이다.
 
 [^1]: V. Chari and A. Pressley, *A Guide to Quantum Groups*, Cambridge University Press, 1994, 6장과 8장.
 [^2]: M. Kashiwara, "On crystal bases of the $q$-analogue of universal enveloping algebras", *Duke Mathematical Journal* 63 (1991), 465–516.

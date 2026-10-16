@@ -112,7 +112,7 @@ $$
 
 ## 다른 규칙들과의 관계
 
-Berenstein–Zelevinsky 다면체, Gelfand–Tsetlin 패턴, puzzle 규칙이 모두 같은 수를 세는 서로 다른 모형이다. 그중 Knutson–Tao–Woodward 의 **puzzle** 은 세 종류의 조각으로 삼각형을 채우는 문제로, Schubert 계산의 구조상수를 다룰 때 특히 편하다. 각 모형이 서로 다른 일반화로 뻗는다. 동변 코호몰로지, $K$ 이론, 양자 코호몰로지가 그 방향이다.
+Berenstein–Zelevinsky 다면체, Gelfand–Tsetlin 패턴, puzzle 규칙이 모두 같은 수를 세는 서로 다른 모형이다. 그중 Knutson–Tao–Woodward 의 **puzzle** 은 세 종류의 조각으로 삼각형을 채우는 문제로, [Schubert 계산](schubert-calculus.md)의 구조상수를 다룰 때 특히 편하다. 각 모형이 서로 다른 일반화로 뻗는다. 동변 코호몰로지, $K$ 이론, 양자 코호몰로지가 그 방향이다.
 
 # 활용
 

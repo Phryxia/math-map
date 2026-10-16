@@ -88,7 +88,7 @@ Khot, Kindler, Mossel, O'Donnell 은 유일게임 추측 아래에서 $\alpha+\e
 | 최대 절단 | $0.878$ | UG(unique games) 추측 아래 최적 |
 | 최대 2-SAT(satisfiability) | $0.940$ | 같은 기법 |
 | 색칠 (3-채색 가능 그래프) | $\tilde O(n^{0.19})$ 색 | 조합적 방법보다 우수 |
-| Lovász 세타 함수 | 독립수와 색수 사이 | 완전그래프에서 정확 |
+| [Lovász 세타 함수](lovasz-theta.md) | 독립수와 색수 사이 | 완전그래프에서 정확 |
 | 희소 최대 절단 | $1-\Theta(1/\sqrt d)$ | 차수 $d$ 정칙 |
 
 Lovász 세타 함수는 $\alpha(G)\le\vartheta(G)\le\chi(\bar G)$ 라는 샌드위치를 준다. 두 NP(nondeterministic polynomial time)-어려운 양 사이에 다항시간에 계산되는 값이 끼어 있고, 완전그래프에서는 부등식이 등식이 되어 최대 독립집합이 다항시간에 풀린다.

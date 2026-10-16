@@ -16,7 +16,7 @@ $R_{xy}$ 의 원소 $1/(xy)$ 를 $R_x$ 의 원소와 $R_y$ 의 원소의 차로 
 
 ## 꼬임 부분가군의 유도 함자
 
-Noether 환 $R$, 아이디얼 $I$, $R$-가군 $M$ 에 대해
+[Noether 환](noetherian-rings.md) $R$, 아이디얼 $I$, $R$-가군 $M$ 에 대해
 
 $$\Gamma\_I(M)=\lbrace m\in M: I^nm=0 \text{ 인 } n\ge1 \text{ 이 있다}\rbrace$$
 

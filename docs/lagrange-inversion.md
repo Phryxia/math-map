@@ -66,7 +66,7 @@ $$
 \lbrack z^n\rbrack w=\frac1n\lbrack w^{n-1}\rbrack(1+w)^{2n}=\frac1n\binom{2n}{n-1}
 $$
 
-$n=1,2,3$ 에서 $1,2,5$ 이고 Catalan 수가 나온다. 이차방정식을 푸는 대신 이항계수 하나를 읽은 것이다.
+$n=1,2,3$ 에서 $1,2,5$ 이고 [Catalan 수](catalan-numbers.md)가 나온다. 이차방정식을 푸는 대신 이항계수 하나를 읽은 것이다.
 
 # 활용
 

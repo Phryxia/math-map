@@ -86,7 +86,7 @@ $\sqrt 2 = \lbrack 1; \overline{2}\rbrack$ 과 황금비 $\varphi = \lbrack 1; \
 - [모듈러 기호](modular-symbols.md)에서 두 첨점을 잇는 경로를 수렴분을 따라 쪼개면 각 조각이 모듈러 군의 원소 하나로 표현된다. 이것이 모듈러 기호의 계산을 유한하게 만드는 절차다.
 - [Diophantine 근사](diophantine-approximation.md)의 무리수 측도를 정한다. 몫이 얼마나 크게 자라는지가 그 수를 유리수로 얼마나 잘 근사할 수 있는지를 정하고, 몫이 유계인 수들은 나쁘게 근사되는 수로 분류된다.
 
-[^1]: G. H. Hardy and E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press (2008), Ch. X. 수렴분의 최적성, Legendre 판정, Hurwitz 정리가 이 장에 있다.
+[^1]: G. H. Hardy and E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press (2008), Ch. X. 수렴분의 최적성, Legendre 판정, [Hurwitz 정리](hurwitz-theorem.md)가 이 장에 있다.
 
 # 연관 문서
 

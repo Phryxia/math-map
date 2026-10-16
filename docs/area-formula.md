@@ -2,7 +2,7 @@
 
 # 개요
 
-면적공식은 Lipschitz 사상이 집합을 보낸 상의 크기를 Jacobi 행렬식의 적분으로 재는 등식이다. 정의역의 차원이 공역의 차원보다 작아 상이 Lebesgue 영집합일 때도 성립하고, 상의 크기를 [Hausdorff 차원](hausdorff-dimension.md) 쪽 $n$ 차원 Hausdorff 측도로 잰다.
+면적공식은 [Lipschitz 사상](lipschitz-maps.md)이 집합을 보낸 상의 크기를 Jacobi 행렬식의 적분으로 재는 등식이다. 정의역의 차원이 공역의 차원보다 작아 상이 Lebesgue 영집합일 때도 성립하고, 상의 크기를 [Hausdorff 차원](hausdorff-dimension.md) 쪽 $n$ 차원 Hausdorff 측도로 잰다.
 
 사상의 미분가능성은 가정하지 않는다. 거의 모든 점에서 미분가능하다는 [Rademacher 정리](rademacher-theorem.md)가 Jacobi 행렬식을 거의 어디서나 정의해 준다.
 

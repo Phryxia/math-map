@@ -221,7 +221,7 @@ $$
 
 ## 기본 보조정리와 대각합 공식
 
-Arthur–Selberg 대각합 공식에서 두 군의 궤도적분을 맞추려면, $\mathcal H(G,K)$ 의 원소와 내시형 군 $H$ 의 $\mathcal H(H,K_H)$ 의 원소를 짝지어야 한다. 그 짝은 쌍대군 준동형 $\widehat H\to\widehat G$ 를 Satake 동형으로 끌어내린 **기본 사상**
+Arthur–[Selberg 대각합 공식](selberg-trace-formula.md)에서 두 군의 궤도적분을 맞추려면, $\mathcal H(G,K)$ 의 원소와 내시형 군 $H$ 의 $\mathcal H(H,K_H)$ 의 원소를 짝지어야 한다. 그 짝은 쌍대군 준동형 $\widehat H\to\widehat G$ 를 Satake 동형으로 끌어내린 **기본 사상**
 
 $$
 b:\mathcal H(G,K)\to\mathcal H(H,K_H)

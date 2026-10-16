@@ -76,7 +76,7 @@ $$
 J_N(K;e^{2\pi i/N})\ \sim\ N^{3/2}\thinspace e^{N\big(\mathrm{Vol}+i\thinspace\mathrm{CS}\big)/2\pi}\cdot\big(c+O(1/N)\big)
 $$
 
-지수 앞의 멱이 $3/2$ 라는 것은 안장점이 비퇴화이고 실질 차원이 3 이라는 뜻이다. 상수 $c$ 는 비틀림과 관련되며, Witten 점근 추측에서 진폭이 Reidemeister 비틀림이던 구조가 복소 안장점에서 반복된다.
+지수 앞의 멱이 $3/2$ 라는 것은 안장점이 비퇴화이고 실질 차원이 3 이라는 뜻이다. 상수 $c$ 는 비틀림과 관련되며, Witten 점근 추측에서 진폭이 [Reidemeister 비틀림](reidemeister-torsion.md)이던 구조가 복소 안장점에서 반복된다.
 
 ## Witten 점근 추측과의 대비
 

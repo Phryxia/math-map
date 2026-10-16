@@ -63,7 +63,7 @@ $$
 \langle U, V \rangle \thickspace=\thickspace E[UV]
 $$
 
-를 가진 Hilbert 공간이고, $L^2(\Omega, \mathcal G, P)$ 는 그 닫힌 부분공간이다. 정사영 정리로 $X$ 에 가장 가까운 원소 $Y$ 가 유일하게 존재하며, 최적성의 1차 조건은
+를 가진 [Hilbert 공간](hilbert-spaces.md)이고, $L^2(\Omega, \mathcal G, P)$ 는 그 닫힌 부분공간이다. 정사영 정리로 $X$ 에 가장 가까운 원소 $Y$ 가 유일하게 존재하며, 최적성의 1차 조건은
 
 $$
 E[(X - Y) W] = 0 \quad \text{for all } W \in L^2(\Omega, \mathcal{G}, P)

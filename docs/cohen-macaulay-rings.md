@@ -24,7 +24,7 @@ $x_1,\dots,x_n\in\mathfrak m$ 이 **$M$ 정칙열**이라는 것은 각 $i$ 에�
 
 ## Cohen–Macaulay 환
 
-**Cohen–Macaulay 환**은 $\mathrm{depth}\thinspace R=\dim R$ 인 Noether 국소환이다. 국소가 아닌 Noether 환은 모든 극대 아이디얼에서의 국소화가 이 조건을 만족할 때 Cohen–Macaulay 라 한다.
+**Cohen–Macaulay 환**은 $\mathrm{depth}\thinspace R=\dim R$ 인 Noether 국소환이다. 국소가 아닌 [Noether 환](noetherian-rings.md)은 모든 극대 아이디얼에서의 국소화가 이 조건을 만족할 때 Cohen–Macaulay 라 한다.
 
 $M$ 에 대해서도 $\mathrm{depth}\thinspace M=\dim M$ 이면 **Cohen–Macaulay 가군**이라 한다.
 

@@ -96,7 +96,7 @@ $$
 
 - [Stiefel–Whitney 류](stiefel-whitney-classes.md)의 구성. 공리로 정의한 류가 Thom 류와 Steenrod 제곱으로 다시 나오고, 공리의 검증이 Steenrod 제곱의 성질로 바뀐다.
 - Euler 류와 지표. 영이 되지 않는 단면의 존재를 $H^r(X;R)$ 의 한 원소로 판정하고, 접다발에서 [Poincaré–Hopf 정리](poincare-hopf.md)를 준다.
-- 구면다발의 코호몰로지. Gysin 열이 복소사영공간과 Grassmann 다양체의 코호몰로지 환 계산에 쓰인다.
+- 구면다발의 코호몰로지. Gysin 열이 복소사영공간과 [Grassmann 다양체](grassmannian.md)의 코호몰로지 환 계산에 쓰인다.
 - 코보디즘의 번역. 닫힌 다양체를 법다발의 Thom 공간으로 보내는 Pontryagin–Thom 구성이 코보디즘군을 $\mathrm{MO}(k)$ 의 호모토피군으로 바꾼다.
 - [Poincaré 쌍대성](poincare-duality.md)과의 관계. Thom 동형은 다발의 전체공간을 밑공간에 쌍대로 놓은 것이고, 매장된 부분다양체의 법다발에 적용하면 쌍대류를 준다.
 

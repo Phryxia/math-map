@@ -104,7 +104,7 @@ $$
 K^{M}\_{n}(F)/m\ \xrightarrow{\ \sim\ }\ H^{n}\_{\text{ét}}\big(F,\mu_m^{\otimes n}\big)
 $$
 
-이 확립되었다. $n=1$ 은 Kummer 이론, $n=2$ 는 Merkurjev–Suslin 이며 [Brauer 군](brauer-groups.md)의 구조 정리를 포함한다.[^1]
+이 확립되었다. $n=1$ 은 [Kummer 이론](kummer-theory.md), $n=2$ 는 Merkurjev–Suslin 이며 [Brauer 군](brauer-groups.md)의 구조 정리를 포함한다.[^1]
 
 [^1]: D. Quillen, *Higher algebraic K-theory I*, Lecture Notes in Math. 341 (1973). 표준 교과서는 C. Weibel, *The K-book: An Introduction to Algebraic K-theory* (2013) 이며 $K_n(\mathbb Z)$ 의 표와 Vandiver 와의 동치가 6 장에 정리되어 있다. Quillen–Lichtenbaum 의 증명 경로는 V. Voevodsky, *On motivic cohomology with Z/l coefficients*, Ann. of Math. 174 (2011).
 

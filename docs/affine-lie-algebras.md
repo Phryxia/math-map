@@ -14,7 +14,7 @@ $$
 
 # 직관
 
-$\mathfrak{sl}\_2$ 의 표현론은 Cartan 부분대수 하나와 근 $\pm\alpha$ 로 끝난다. 이제 $\mathfrak{sl}\_2$ 값 함수를 원 $S^1$ 위에서 생각한다. Fourier 급수로 펼치면 기저가 $x\otimes t^n$ 이고, 괄호는 다음으로 정해진다.
+$\mathfrak{sl}\_2$ 의 표현론은 Cartan 부분대수 하나와 근 $\pm\alpha$ 로 끝난다. 이제 $\mathfrak{sl}\_2$ 값 함수를 원 $S^1$ 위에서 생각한다. [Fourier 급수](fourier-series.md)로 펼치면 기저가 $x\otimes t^n$ 이고, 괄호는 다음으로 정해진다.
 
 $$
 \lbrack x\otimes t^m,y\otimes t^n\rbrack=\lbrack x,y\rbrack\otimes t^{m+n}

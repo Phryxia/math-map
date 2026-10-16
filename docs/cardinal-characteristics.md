@@ -71,7 +71,7 @@ $\mathrm{cov}(\mathcal N)$ 과 $\mathrm{non}(\mathcal N)$ 사이에는 도표의
 
 - **강제법의 분류.** 어떤 강제법이 어느 불변량을 키우는지가 그 강제법의 성질을 요약한다. 무작위 실수는 $\mathrm{cov}(\mathcal N)$ 을, Cohen 실수는 $\mathrm{cov}(\mathcal M)$ 을 키운다.
 - **Martin 공리.** [Martin 공리](martins-axiom.md)는 도표의 모든 불변량을 $2^{\aleph_0}$ 으로 만든다. 불변량 사이의 차이를 보려면 이 공리를 버려야 한다.
-- **측도와 범주의 대응.** 두 아이디얼의 불변량이 도표에서 대칭인 자리에 놓이고, $\mathrm{cov}$ 와 $\mathrm{non}$ 이 서로 자리를 바꾼다. Erdős–Sierpiński 쌍대성이 이 대칭의 한 형태다.
+- **측도와 범주의 대응.** 두 아이디얼의 불변량이 도표에서 대칭인 자리에 놓이고, $\mathrm{cov}$ 와 $\mathrm{non}$ 이 서로 자리를 바꾼다. [Erdős–Sierpiński 쌍대성](erdos-sierpinski-duality.md)이 이 대칭의 한 형태다.
 
 [^1]: Tomek Bartoszyński, Haim Judah, *Set Theory: On the Structure of the Real Line*, A K Peters (1995). 도표의 모든 화살표와 두 등식의 증명, 각 화살표가 역으로 성립하지 않는 모형의 구성이 이 책에 있다.
 

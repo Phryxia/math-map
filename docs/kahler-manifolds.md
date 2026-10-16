@@ -2,7 +2,7 @@
 
 # 개요
 
-[Hodge 이론](hodge-theory.md)은 Riemann 계량 하나를 주고 코호몰로지류마다 조화 대표원을 얻었다. 복소 다양체에서는 구조가 하나 더 있다. 각 접공간에 $i$ 를 곱하는 연산이 있고, 그 결과 미분형식이 [정칙](holomorphic-functions.md) 방향과 반정칙 방향으로 쪼개진다.
+[Hodge 이론](hodge-theory.md)은 [Riemann 계량](riemannian-metrics.md) 하나를 주고 코호몰로지류마다 조화 대표원을 얻었다. 복소 다양체에서는 구조가 하나 더 있다. 각 접공간에 $i$ 를 곱하는 연산이 있고, 그 결과 미분형식이 [정칙](holomorphic-functions.md) 방향과 반정칙 방향으로 쪼개진다.
 
 여기에는 계량 $g$ , 복소구조 $J$ , 둘이 만드는 2-형식 $\omega$ 세 구조가 놓인다. 셋이 서로 정합적이고 $\omega$ 가 닫혀 있으면 **Kähler 다양체**라 한다.
 

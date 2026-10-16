@@ -42,7 +42,7 @@ $\Gamma$ 를 $A$ 의 비틀림점 전체로 두면 위 나눗셈 닫힘의 계�
 
 ## 증명의 갈래
 
-수체 위의 경우는 Faltings 가 Vojta 의 Diophantine 근사 방법을 확장해 증명했다[^2]. 함수체 위의 경우와 표수 $p$ 의 경우는 Hrushovski 가 모형론으로 증명했다[^3].
+수체 위의 경우는 Faltings 가 Vojta 의 [Diophantine 근사](diophantine-approximation.md) 방법을 확장해 증명했다[^2]. 함수체 위의 경우와 표수 $p$ 의 경우는 Hrushovski 가 모형론으로 증명했다[^3].
 
 ## 모형론적 증명
 

@@ -119,7 +119,7 @@ $$
 
 이면 $T+V$ 가 $\mathcal D(T)$ 위에서 자기수반이다.
 
-자유 Hamilton 작용소 $-\Delta$ 는 Fourier 변환으로 곱셈 작용소가 되어 자기수반이고, 여기에 위치에너지를 더한 것이 자기수반인지를 위 조건으로 판정한다. Coulomb 위치에너지 $-1/|x|$ 가 $\mathbb R^3$ 에서 조건을 만족하므로 수소 원자의 Hamilton 작용소가 자기수반이다.
+자유 Hamilton 작용소 $-\Delta$ 는 [Fourier 변환](fourier-transform.md)으로 곱셈 작용소가 되어 자기수반이고, 여기에 위치에너지를 더한 것이 자기수반인지를 위 조건으로 판정한다. Coulomb 위치에너지 $-1/|x|$ 가 $\mathbb R^3$ 에서 조건을 만족하므로 수소 원자의 Hamilton 작용소가 자기수반이다.
 
 ## 스펙트럼의 분해
 

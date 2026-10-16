@@ -103,7 +103,7 @@ $$
 \frac{d}{dt}\mathcal F(\rho_t)=-\int\rho_t\Big|\nabla\frac{\delta\mathcal F}{\delta\rho}\Big|^2=-\mathcal I(\rho_t)
 $$
 
-$\mathcal F$ 가 상대 엔트로피이면 $\mathcal I$ 는 Fisher 정보이고 위 식이 de Bruijn 항등식이다.
+$\mathcal F$ 가 상대 엔트로피이면 $\mathcal I$ 는 [Fisher 정보](fisher-information.md)이고 위 식이 de Bruijn 항등식이다.
 
 $\mathcal F$ 가 $\lambda\gt 0$ 변위 볼록이면 흐름이 지수적으로 수렴한다.
 

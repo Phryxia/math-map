@@ -60,7 +60,7 @@ $$
 
 ## 방향 코보디즘과 부호수
 
-$\Omega\_\ast$ 에 유리수를 텐서하면 $\lbrack\mathbb{CP}^{2i}\rbrack$ 들이 생성하는 다항식환이 된다. $4k$ 차원에서 [교차형식](intersection-form.md)의 부호수가 코보디즘 불변량이고, Hirzebruch 부호수 정리가 그 값을 [Pontryagin 류](pontryagin-classes.md)의 다항식으로 적는다. 이 정리가 [지표 정리](index-theorem.md)의 특수한 경우다.
+$\Omega\_\ast$ 에 유리수를 텐서하면 $\lbrack\mathbb{CP}^{2i}\rbrack$ 들이 생성하는 다항식환이 된다. $4k$ 차원에서 [교차형식](intersection-form.md)의 부호수가 코보디즘 불변량이고, [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md)가 그 값을 [Pontryagin 류](pontryagin-classes.md)의 다항식으로 적는다. 이 정리가 [지표 정리](index-theorem.md)의 특수한 경우다.
 
 # 활용
 

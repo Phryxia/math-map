@@ -93,7 +93,7 @@ $$
 
 ## 비교 정리
 
-Eichler–Shimura 대응이 복소수 계수에서 다음을 준다.
+Eichler–[Shimura 대응](shimura-correspondence.md)이 복소수 계수에서 다음을 준다.
 
 $$
 \mathbb S_k(\Gamma)\otimes\mathbb C\thickspace\cong\thickspace S_k(\Gamma)\oplus\overline{S_k(\Gamma)}

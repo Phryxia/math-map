@@ -38,7 +38,7 @@ $o=eH\in G/H$ 의 접공간 $T_o(G/H)$ 는 $\mathfrak g/\mathfrak h$ 와 동형�
 
 **정리.** $G$ 가 $M$ 에 추이적으로 작용하면 $g\thinspace G_p\mapsto g\thinspace p$ 가 미분동형 $G/G_p\to M$ 을 준다.
 
-증명의 요지. 이 사상은 잘 정의되고 전단사다. 미분이 $\mathfrak g/\mathfrak g_p\to T_pM$ 로 단사이므로 잠입이고, $G$ 가 2차 가산이므로 Baire 범주 정리로 상이 내부점을 가져 차원이 같아진다. 따라서 국소 미분동형이고, 추이성으로 전역 미분동형이 된다. ∎
+증명의 요지. 이 사상은 잘 정의되고 전단사다. 미분이 $\mathfrak g/\mathfrak g_p\to T_pM$ 로 단사이므로 잠입이고, $G$ 가 2차 가산이므로 [Baire 범주 정리](baire-category.md)로 상이 내부점을 가져 차원이 같아진다. 따라서 국소 미분동형이고, 추이성으로 전역 미분동형이 된다. ∎
 
 이 정리로 등질공간은 모두 $G/H$ 꼴이다. 구면은 $\mathrm{SO}(n+1)/\mathrm{SO}(n)$, 실 사영공간은 $\mathrm{SO}(n+1)/(\mathrm{O}(n)\times\mathrm{O}(1))$, 쌍곡공간은 $\mathrm{SO}(n,1)^+/\mathrm{SO}(n)$ 이다.
 

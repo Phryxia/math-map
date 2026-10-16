@@ -2,7 +2,7 @@
 
 # 개요
 
-현재 쓰이는 공개키 암호는 소인수분해의 어려움([RSA](rsa-cryptosystem.md))과 [이산로그](discrete-logarithm.md)의 어려움(Diffie–Hellman, [타원곡선](elliptic-curves.md) 암호) 위에 선다. 두 문제는 모두 유한 아벨군의 숨은 부분군 문제이고, 양자 Fourier 변환이 그 구조를 겨냥하므로 Shor 알고리즘이 둘을 함께 다항시간에 푼다.
+현재 쓰이는 공개키 암호는 소인수분해의 어려움([RSA](rsa-cryptosystem.md))과 [이산로그](discrete-logarithm.md)의 어려움(Diffie–Hellman, [타원곡선](elliptic-curves.md) 암호) 위에 선다. 두 문제는 모두 유한 아벨군의 숨은 부분군 문제이고, 양자 [Fourier 변환](fourier-transform.md)이 그 구조를 겨냥하므로 Shor 알고리즘이 둘을 함께 다항시간에 푼다.
 
 대체 가정은 아벨 숨은 부분군으로 환원되지 않아야 한다. [격자](lattices.md)의 근사 최단벡터 문제가 가장 유력한 후보다. 최선의 알고리즘이 고전이든 양자든 $2^{\Theta(n)}$ 시간을 쓰고 양자가 주는 이득은 상수배다.
 

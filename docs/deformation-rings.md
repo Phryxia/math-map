@@ -172,7 +172,7 @@ $\mathbb Z_p$ 쪽에서는 $R=\mathbb Z_p[[T]]$ 가 $\mathbb Z_p$ 위 상대 차
 1. $\bar\rho$ 의 상을 결정하고 $\mathrm{ad}^0$ 의 $G$ -[가군](modules.md) 분해를 본다.
 2. $H^0$ 를 읽는다. 상이 충분히 크면 $H^0(\mathrm{ad}^0)=0$ 이다.
 3. Tate 의 전역 Euler 표수 공식으로 $\dim H^1-\dim H^2$ 를 얻는다. 홀수 $\bar\rho$ 와 $\mathrm{ad}^0$ 에서 이 값은 $S$ 와 무한소수 자리의 기여로 정해진다.
-4. Poitou–Tate 완전열로 국소 조건을 단 Selmer 군과 쌍대 Selmer 군을 연결하고 조건이 자른 $H^1$ 을 센다.
+4. [Poitou–Tate 완전열](poitou-tate.md)로 국소 조건을 단 Selmer 군과 쌍대 Selmer 군을 연결하고 조건이 자른 $H^1$ 을 센다.
 
 3 단계까지가 형식적이고 4 단계에서 쌍대 Selmer 군을 죽이는 것이 어렵다. Taylor–Wiles 계에서 보조 소수를 붙이는 목적이 그 쌍대 군을 $0$ 으로 만드는 것이다.
 

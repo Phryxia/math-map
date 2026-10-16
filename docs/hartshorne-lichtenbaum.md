@@ -64,7 +64,7 @@ $I$ 가 한 원소로 생성된 경우로 먼저 줄인다. 일반의 $I$ 는 �
 
 ## 최고차 하나만의 정리
 
-정리로 차수 $d$ 만 정해지고 그 아래 차수는 정해지지 않는다. $\mathrm{cd}(I)$ 를 정확히 정하는 문제는 표수에 따라 답이 다르다. 표수 $p\gt0$ 에서는 Peskine–Szpiro 가 Frobenius 로 $\mathrm{cd}(I)\lt d$ 와 $\dim R/I\gt0$ 의 동치를 확장했고, 표수 $0$ 에서는 de Rham 코호몰로지를 쓰는 Ogus 의 판정이 있다.[^2]
+정리로 차수 $d$ 만 정해지고 그 아래 차수는 정해지지 않는다. $\mathrm{cd}(I)$ 를 정확히 정하는 문제는 표수에 따라 답이 다르다. 표수 $p\gt0$ 에서는 Peskine–Szpiro 가 Frobenius 로 $\mathrm{cd}(I)\lt d$ 와 $\dim R/I\gt0$ 의 동치를 확장했고, 표수 $0$ 에서는 [de Rham 코호몰로지](de-rham-cohomology.md)를 쓰는 Ogus 의 판정이 있다.[^2]
 
 # 활용
 

@@ -153,7 +153,7 @@ $$
 - **조화함수와 도달 확률.** Markov 연쇄에서 경계값 문제의 해는 $h(X_n)$ 이 martingale 이라는 사실과 선택적 정지 정리로 표현된다. 무작위 걷기의 전압-도달확률 대응이 이 원리의 물리적 표현이다.
 - **강한 수렴 결과.** 독립 합의 큰 수의 법칙은 $\sum \xi_k / k$ 형태의 martingale 수렴과 Kronecker 보조정리로 증명할 수 있다. Lévy 의 0-1 법칙, Kolmogorov 0-1 법칙도 Doob martingale 의 수렴으로 나온다.
 - **통계.** 순차적 검정(sequential probability ratio test, SPRT)의 우도비는 곱 martingale 이고, 정지 규칙의 오류 확률 경계는 선택적 정지 정리와 최대부등식에서 직접 나온다. 측도 변환의 Radon–Nikodym 밀도과정도 같은 구조다.
-- **연속시간.** Brownian motion 에서 $B_t$ 와 $B_t^2 - t$ 그리고 $\exp(\theta B_t - \theta^2 t / 2)$ 는 모두 martingale 이며, Itô 적분은 "martingale 변환"의 연속시간 판이다. 금융의 무차익 가격결정은 할인된 가격과정을 martingale 로 만드는 측도의 존재로 서술된다.
+- **연속시간.** Brownian motion 에서 $B_t$ 와 $B_t^2 - t$ 그리고 $\exp(\theta B_t - \theta^2 t / 2)$ 는 모두 martingale 이며, [Itô 적분](ito-calculus.md)은 "martingale 변환"의 연속시간 판이다. 금융의 무차익 가격결정은 할인된 가격과정을 martingale 로 만드는 측도의 존재로 서술된다.
 
 # 연관 문서
 

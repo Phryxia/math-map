@@ -131,7 +131,7 @@ $\mu\ast 1=\delta$ 와 $1\ast 1=d$ 와 $\Lambda\ast 1=\log$ 가 각각 첫 두 �
 - **소수 정리.** $-\zeta'(s)/\zeta(s)$ 가 $s=1$ 에서 단순극을 갖고 $\sigma=1$ 에서 $\zeta$ 의 영점이 없다는 것이 Wiener–Ikehara 정리의 조건을 채운다([소수 정리](prime-number-theorem.md)).
 - **산술진수의 소수.** 지표 $\chi$ 의 Dirichlet 급수가 [Dirichlet L 함수](dirichlet-l-functions.md)이고, $L(1,\chi)\ne0$ 이 법 $q$ 의 각 잉여류에 소수가 무한히 많다는 것을 준다.
 - **약수 문제.** $\zeta(s)^2$ 의 $s=1$ 에서의 Laurent 전개가 $\sum\_{n\le x}d(n)=x\log x+(2\gamma-1)x+O(x^{\theta})$ 를 주고, 오차항의 지수 $\theta$ 를 얼마까지 줄일 수 있는지 묻는 것이 Dirichlet 약수 문제다.
-- **모듈러 형식의 L 함수.** 모듈러 형식의 Fourier 계수를 Dirichlet 급수의 계수로 삼으면 함수방정식과 Euler 곱을 갖는 함수가 되고, 계수의 곱셈성이 Hecke 작용소의 고유성에서 나온다([모듈러 형식](modular-forms.md)).
+- **모듈러 형식의 L 함수.** 모듈러 형식의 Fourier 계수를 Dirichlet 급수의 계수로 삼으면 함수방정식과 Euler 곱을 갖는 함수가 되고, 계수의 곱셈성이 [Hecke 작용소](hecke-operators.md)의 고유성에서 나온다([모듈러 형식](modular-forms.md)).
 - **격자점 세기.** 이차형식이 값 $n$ 을 취하는 횟수를 계수로 삼은 급수가 Epstein 제타 함수이고, 그 극이 격자점 개수의 점근을 준다.
 
 [^1]: S. Ikehara, "An extension of Landau's theorem in the analytical theory of numbers", Journal of Mathematics and Physics 10 (1931), https://doi.org/10.1002/sapm1931101

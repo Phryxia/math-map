@@ -10,7 +10,7 @@ Kolmogorov–Arnold–Moser 정리는 [적분가능계](integrable-systems.md)�
 
 적분가능계의 상태공간은 작용 변수로 매긴 원환면들로 쪼개지고, 각 원환면 위에서 운동은 진동수 $\nu(I)$ 의 등속 운동이다. 여기에 작은 교란을 더한 $H=H\_0(I)+\varepsilon H\_1(I,\theta)$ 에서도 원환면이 남는지 묻는다.
 
-남는지 보려면 교란을 없애는 좌표 바꾸기를 찾으면 된다. 생성함수를 $S=I'\cdot\theta+\varepsilon\sigma(I',\theta)$ 로 두고 $\sigma$ 와 $H\_1$ 을 Fourier 급수로 적으면, 새 Hamilton 함수에서 $\theta$ 에 의존하는 항이 사라지는 조건은 각 정수벡터 $k\ne0$ 마다
+남는지 보려면 교란을 없애는 좌표 바꾸기를 찾으면 된다. 생성함수를 $S=I'\cdot\theta+\varepsilon\sigma(I',\theta)$ 로 두고 $\sigma$ 와 $H\_1$ 을 [Fourier 급수](fourier-series.md)로 적으면, 새 Hamilton 함수에서 $\theta$ 에 의존하는 항이 사라지는 조건은 각 정수벡터 $k\ne0$ 마다
 
 $$
 \hat\sigma(k)=\frac{\hat H\_1(k)}{i\thinspace k\cdot\nu}

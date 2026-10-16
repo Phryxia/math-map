@@ -68,7 +68,7 @@ $$
 
 ## Weil 상계
 
-$p$ 가 소수이고 $p\nmid ab$ 이면 $\vert K(a,b;p)\vert\le2\sqrt p$ 다[^2]. 증명의 요지는 지수합을 곡선의 점의 수로 바꾸는 것이다. $\mathbb F_p$ 의 곱셈군 위 함수 $x\mapsto ax+b\bar x$ 에 Artin–Schreier 덮개를 올리면 그 덮개의 [L 함수](dwork-rationality.md)가 차수 $2$ 다항식이고, 역근 $\alpha,\beta$ 가 $K(a,b;p)=-(\alpha+\beta)$ 와 $\alpha\beta=p$ 를 만족한다. 곡선의 Riemann 가설이 $\vert\alpha\vert=\vert\beta\vert=\sqrt p$ 를 주므로 합의 절댓값이 $2\sqrt p$ 이하다.
+$p$ 가 소수이고 $p\nmid ab$ 이면 $\vert K(a,b;p)\vert\le2\sqrt p$ 다[^2]. 증명의 요지는 지수합을 곡선의 점의 수로 바꾸는 것이다. $\mathbb F_p$ 의 곱셈군 위 함수 $x\mapsto ax+b\bar x$ 에 Artin–Schreier 덮개를 올리면 그 덮개의 [L 함수](dwork-rationality.md)가 차수 $2$ 다항식이고, 역근 $\alpha,\beta$ 가 $K(a,b;p)=-(\alpha+\beta)$ 와 $\alpha\beta=p$ 를 만족한다. 곡선의 [Riemann 가설](riemann-hypothesis.md)이 $\vert\alpha\vert=\vert\beta\vert=\sqrt p$ 를 주므로 합의 절댓값이 $2\sqrt p$ 이하다.
 
 ## 소수 거듭제곱 법에서의 평가
 

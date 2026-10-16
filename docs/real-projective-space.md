@@ -76,7 +76,7 @@ $$
 H^\ast(\mathbb{RP}^n;\mathbb Z/2)\cong\mathbb Z/2\lbrack t\rbrack/(t^{n+1}),\qquad\deg t=1
 $$
 
-증명의 요지. 1 차 생성원 $t$ 의 $k$ 제곱이 $k$ 차 생성원임을 $n$ 에 대한 귀납으로 본다. 포함 $\mathbb{RP}^{n-1}\hookrightarrow\mathbb{RP}^n$ 이 $k\lt n$ 에서 코호몰로지의 동형을 주므로 낮은 차수의 곱은 한 차원 아래에서 결정된다. 최고차에서 $t^n\ne 0$ 인 것은 $\mathbb{RP}^n$ 이 $\mathbb Z/2$ 계수로 Poincaré 쌍대성을 만족하는 닫힌 다양체라는 데서 나온다.
+증명의 요지. 1 차 생성원 $t$ 의 $k$ 제곱이 $k$ 차 생성원임을 $n$ 에 대한 귀납으로 본다. 포함 $\mathbb{RP}^{n-1}\hookrightarrow\mathbb{RP}^n$ 이 $k\lt n$ 에서 코호몰로지의 동형을 주므로 낮은 차수의 곱은 한 차원 아래에서 결정된다. 최고차에서 $t^n\ne 0$ 인 것은 $\mathbb{RP}^n$ 이 $\mathbb Z/2$ 계수로 [Poincaré 쌍대성](poincare-duality.md)을 만족하는 닫힌 다양체라는 데서 나온다.
 
 ## 방향 가능성
 

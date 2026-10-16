@@ -79,7 +79,7 @@ $$
 
 $\hat\phi$ 의 지지가 $(-\alpha,\alpha)$ 이면 소수 합에 실제로 들어가는 소수는 $p\le c_f^{\alpha}$ 뿐이다. 족 평균을 취하면 그 합이 $\sum\_{f\in\mathcal F(Q)}\lambda_f(p^k)$ 꼴의 지표 합이나 Hecke 고윳값 합이 되고, $\alpha$ 를 키우면 $p$ 가 $Q^{\alpha}$ 까지 올라가 그 합의 평가가 어려워진다. 그래서 결과가 $\alpha$ 의 범위에 조건을 단다.
 
-**정리.** 이차 지표족에서 $\hat\phi$ 의 지지가 $(-2,2)$ 안이면, 일반 Riemann 가설 아래 일차 영점 밀도가 심플렉틱 커널과 일치한다.[^1]
+**정리.** 이차 지표족에서 $\hat\phi$ 의 지지가 $(-2,2)$ 안이면, 일반 [Riemann 가설](riemann-hypothesis.md) 아래 일차 영점 밀도가 심플렉틱 커널과 일치한다.[^1]
 
 증명의 요지. $\lambda\_{\chi_d}(p)=\chi_d(p)$ 이고 $d$ 에 걸친 $\sum_d\chi_d(p)$ 는 [이차 상호법칙](quadratic-reciprocity.md)으로 $p$ 를 법으로 하는 지표 합이 된다. $p$ 가 $D^2$ 까지인 범위에서 그 합을 평가하면 $\hat\phi$ 의 지지 $(-2,2)$ 가 나온다.
 

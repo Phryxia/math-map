@@ -50,7 +50,7 @@ $$
 0\longrightarrow H_p(x';M)/x_nH_p(x';M)\longrightarrow H_p(x;M)\longrightarrow \lbrace m\in H_{p-1}(x';M):x_nm=0\rbrace\longrightarrow0
 $$
 
-을 주고, 여기서 $x'=(x_1,\dots,x_{n-1})$ 이다. 귀납 가정으로 $p\ge2$ 의 항이 사라지고 $p=1$ 만 남아 $x_n$ 이 $M/(x')M$ 의 영인자가 아니라는 조건이 된다. 역방향은 같은 완전열에 Nakayama 보조정리를 써서 $H_p$ 의 소멸을 하나씩 내린다. ∎
+을 주고, 여기서 $x'=(x_1,\dots,x_{n-1})$ 이다. 귀납 가정으로 $p\ge2$ 의 항이 사라지고 $p=1$ 만 남아 $x_n$ 이 $M/(x')M$ 의 영인자가 아니라는 조건이 된다. 역방향은 같은 완전열에 [Nakayama 보조정리](nakayama-lemma.md)를 써서 $H_p$ 의 소멸을 하나씩 내린다. ∎
 
 ## 자유 분해
 

@@ -24,7 +24,7 @@ Gauss 합은 곱셈 지표와 덧셈 지표를 한 식에 섞어 [유한체](fin
 
 # 직관
 
-$\mathbb Z/p$ 위의 함수 공간에서 덧셈 Fourier 변환의 기저는 덧셈 지표 $\psi(n)=e^{2\pi in/p}$ 이고, 곱셈군 $(\mathbb Z/p)^\times$ 에는 곱셈 지표 $\chi$ 가 있다. $\chi$ 를 덧셈 Fourier 변환으로 보내면 상수배만 붙어 $\chi$ 가 되돌아온다.
+$\mathbb Z/p$ 위의 함수 공간에서 덧셈 [Fourier 변환](fourier-transform.md)의 기저는 덧셈 지표 $\psi(n)=e^{2\pi in/p}$ 이고, 곱셈군 $(\mathbb Z/p)^\times$ 에는 곱셈 지표 $\chi$ 가 있다. $\chi$ 를 덧셈 Fourier 변환으로 보내면 상수배만 붙어 $\chi$ 가 되돌아온다.
 
 $$
 \sum_n\chi(n)\psi(mn)=\chi^{-1}(m)\thinspace g(\chi)

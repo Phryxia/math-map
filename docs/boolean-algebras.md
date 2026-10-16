@@ -124,7 +124,7 @@ $$
 
 ## 모형론과 집합론
 
-초필터는 모형을 만드는 도구다. 첨자 집합 위의 초필터로 구조들의 곱을 나누면 ultraproduct 가 되고, 이것이 [1차 논리](first-order-logic.md)의 compactness 정리에 대한 대수적 증명을 준다. 집합론에서는 Boolean 값 모형이 forcing 의 한 형태로 쓰여, [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice, 곧 ZF 에 선택공리를 더한 것)에서 증명되지 않는 문장들의 독립성을 보이는 데 사용된다.
+초필터는 모형을 만드는 도구다. 첨자 집합 위의 초필터로 구조들의 곱을 나누면 ultraproduct 가 되고, 이것이 [1차 논리](first-order-logic.md)의 compactness 정리에 대한 대수적 증명을 준다. 집합론에서는 [Boolean 값 모형](boolean-valued-models.md)이 forcing 의 한 형태로 쓰여, [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice, 곧 ZF 에 선택공리를 더한 것)에서 증명되지 않는 문장들의 독립성을 보이는 데 사용된다.
 
 ## 순서론에서의 위치
 

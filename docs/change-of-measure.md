@@ -4,7 +4,7 @@
 
 측도변환은 확률측도 $Q$ 에 대한 기댓값을 다른 확률측도 $P$ 에 대한 기댓값으로 바꿔 쓰는 것이다. $Q$ 가 $P$ 에 절대연속이면 [Radon–Nikodym 정리](radon-nikodym.md)의 밀도 $dQ/dP$ 가 있어 $E_Q[f]=E_P[f\thinspace dQ/dP]$ 다. 통계에서는 이 밀도를 우도비(likelihood ratio)라 부른다.
 
-가설검정의 Neyman–Pearson 검정통계량, 몬테카를로의 importance sampling, 확률해석의 Girsanov 정리가 모두 이 식을 쓴다.
+가설검정의 Neyman–Pearson 검정통계량, 몬테카를로의 importance sampling, 확률해석의 [Girsanov 정리](girsanov.md)가 모두 이 식을 쓴다.
 
 # 직관
 

@@ -54,7 +54,7 @@ $\omega$ 가 완전형식이므로 콤팩트 심플렉틱 다양체는 여접다
 
 ## 측지선 흐름
 
-$N$ 에 Riemann 계량이 있으면 그것이 $TN$ 과 $T^\ast N$ 사이의 동형을 주고, 함수 $H(q,p)=\frac12\lvert p\rvert^2$ 가 정해진다. $H$ 의 Hamilton 흐름의 궤적을 $\pi$ 로 내리면 [측지선](geodesics.md)이다. 측지선 방정식의 2계 꼴과 Hamilton 방정식의 1계 꼴이 이 동형으로 옮겨진다.
+$N$ 에 [Riemann 계량](riemannian-metrics.md)이 있으면 그것이 $TN$ 과 $T^\ast N$ 사이의 동형을 주고, 함수 $H(q,p)=\frac12\lvert p\rvert^2$ 가 정해진다. $H$ 의 Hamilton 흐름의 궤적을 $\pi$ 로 내리면 [측지선](geodesics.md)이다. 측지선 방정식의 2계 꼴과 Hamilton 방정식의 1계 꼴이 이 동형으로 옮겨진다.
 
 # 활용
 

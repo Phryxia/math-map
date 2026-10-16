@@ -4,7 +4,7 @@
 
 순환 Galois 확대 $L/K$ 에서 노름이 $1$ 인 $L$ 의 원소는 어떤 원소와 그 켤레의 비로 쓰인다. 생성원 $\sigma$ 에 대해 $N_{L/K}(a)=1$ 인 것과 $a=b/\sigma(b)$ 인 $b\in L^{\times}$ 가 있는 것이 동치다.
 
-코호몰로지로 적으면 $H^1(G,L^{\times})=1$ 이고, 이 소멸이 Kummer 이론과 Galois 강하의 출발 조건이 된다.
+코호몰로지로 적으면 $H^1(G,L^{\times})=1$ 이고, 이 소멸이 [Kummer 이론](kummer-theory.md)과 Galois 강하의 출발 조건이 된다.
 
 # 직관
 

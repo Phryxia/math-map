@@ -76,7 +76,7 @@ $p=5$ 에서 $q=1$ 과 $q^\prime=2$ 를 넣으면 $qq^\prime=2$ 이고 $\bmod 5$
 
 > **정리 (Reidemeister).** $L(p,q)\cong L(p,q^\prime)$ 인 것은 $q^\prime\equiv\pm q\bmod p$ 이거나 $qq^\prime\equiv\pm 1\bmod p$ 인 것과 같다[^2].
 
-증명의 요지는 Reidemeister 비틀림을 계산하는 것이다. 사슬복체의 비틀림이 $\pi_1$ 의 표현마다 수를 주고, 그 수들의 집합이 위 네 경우에서만 일치한다.
+증명의 요지는 [Reidemeister 비틀림](reidemeister-torsion.md)을 계산하는 것이다. 사슬복체의 비틀림이 $\pi_1$ 의 표현마다 수를 주고, 그 수들의 집합이 위 네 경우에서만 일치한다.
 
 $p=7$ 에서 $q=1$ 과 $q^\prime=2$ 를 본다. $qq^\prime=2\not\equiv\pm 1\bmod 7$ 이고 $2\not\equiv\pm 1\bmod 7$ 이므로 두 공간은 미분동형이 아니다. 호모토피 쪽은 $2\equiv 3^2=9\equiv 2\bmod 7$ 이라 통과한다. 그래서 $L(7,1)$ 과 $L(7,2)$ 가 호모토피 동치이면서 미분동형이 아니다.
 

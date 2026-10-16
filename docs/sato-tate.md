@@ -109,7 +109,7 @@ Taylor 와 공저자들은 $L(\mathrm{Sym}^nE,s)$ 가 $\mathbb Q$ 위에서 자�
 
 ## 대칭곱의 지표
 
-측도를 확정하려면 모든 모멘트를 확정해야 한다. $\mathrm{SU}(2)$ 의 기약표현은 대칭곱 $\mathrm{Sym}^n$ 이고 그 지표가 제2종 Chebyshev 다항식이다.
+측도를 확정하려면 모든 모멘트를 확정해야 한다. $\mathrm{SU}(2)$ 의 기약표현은 대칭곱 $\mathrm{Sym}^n$ 이고 그 지표가 제2종 [Chebyshev 다항식](chebyshev-polynomials.md)이다.
 
 $$
 \mathrm{tr}\thinspace\mathrm{Sym}^n(\theta)=\frac{\sin((n+1)\theta)}{\sin\theta}=U_n(\cos\theta)

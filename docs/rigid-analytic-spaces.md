@@ -36,7 +36,7 @@ $$
 \Vert f\Vert=\max_\alpha\vert a_\alpha\vert
 $$
 
-으로 $T_n$ 이 Banach 대수가 된다. $T_n$ 은 Noether 환이고 유일 인수분해 정역이며, 극대 아이디얼의 잉여체가 모두 $K$ 의 유한확대다.
+으로 $T_n$ 이 Banach 대수가 된다. $T_n$ 은 [Noether 환](noetherian-rings.md)이고 유일 인수분해 정역이며, 극대 아이디얼의 잉여체가 모두 $K$ 의 유한확대다.
 
 ## 친화 대수와 친화 준위
 

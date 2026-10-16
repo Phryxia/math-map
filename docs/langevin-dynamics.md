@@ -52,7 +52,7 @@ $\pi\propto e^{-\beta V}$ 를 확률흐름 $J=-\pi\nabla V-\beta^{-1}\nabla\pi$ 
 
 ## 강볼록 아래의 수축
 
-$V$ 가 $\lambda$ 강볼록이면 같은 Brown 운동으로 만든 두 해 $X_t$, $Y_t$ 의 거리가 지수적으로 줄어든다. 잡음 항이 소거되어 차 $Z_t=X_t-Y_t$ 가 결정론적 부등식을 만족한다.
+$V$ 가 $\lambda$ 강볼록이면 같은 [Brown 운동](brownian-motion.md)으로 만든 두 해 $X_t$, $Y_t$ 의 거리가 지수적으로 줄어든다. 잡음 항이 소거되어 차 $Z_t=X_t-Y_t$ 가 결정론적 부등식을 만족한다.
 
 $$
 \frac{d}{dt}\lvert Z_t\rvert^2=-2\bigl(\nabla V(X_t)-\nabla V(Y_t)\bigr)\cdot Z_t\le-2\lambda\lvert Z_t\rvert^2

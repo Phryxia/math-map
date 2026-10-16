@@ -78,7 +78,7 @@ Bernoulli 이동에서는 엔트로피 하나가 완전 불변량이다. Bernoul
 | 두 배 사상 | $\log 2$ |
 | Bernoulli 이동 $B(p,1-p)$ | $-p\log p-(1-p)\log(1-p)$ |
 | Arnold 고양이 사상 | $\log\frac{3+\sqrt5}{2}$ |
-| Gauss 사상 | $\pi^2/(6\log 2)$ |
+| [Gauss 사상](gauss-map.md) | $\pi^2/(6\log 2)$ |
 
 [^1]: D. S. Ornstein, "Bernoulli shifts with the same entropy are isomorphic", Advances in Math. 4 (1970), 337–352.
 

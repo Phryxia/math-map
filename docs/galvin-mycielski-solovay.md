@@ -16,7 +16,7 @@ $$
 
 이고 평행이동이 제1범주를 보존하므로 오른쪽은 제1범주 집합의 가산 합집합이다. [Baire 범주 정리](baire-category.md)로 $\mathbb R$ 는 제1범주가 아니므로 $X+M\neq\mathbb R$ 이다.
 
-Cantor 집합 $C$ 에서는 같은 덧셈이 직선을 채운다. $M=C+\mathbb Z$ 는 조밀하지 않은 닫힌 집합을 가산 개 합친 것이라 제1범주다. $x\in\lbrack 0,2\rbrack$ 에 대해 $x/2$ 의 삼진 전개에서 자리값 $0,1,2$ 를 각각 $(0,0),(0,2),(2,2)$ 로 가르면 $u,v\in C$ 와 $u+v=x$ 를 얻으므로 $C+C=\lbrack 0,2\rbrack$ 이고, 따라서 $C+M=\lbrack 0,2\rbrack+\mathbb Z=\mathbb R$ 이다. Cantor 집합이 강 측도 영집합이 아니라는 것이 길이 대신 덧셈으로 판정된다.
+[Cantor 집합](cantor-set.md) $C$ 에서는 같은 덧셈이 직선을 채운다. $M=C+\mathbb Z$ 는 조밀하지 않은 닫힌 집합을 가산 개 합친 것이라 제1범주다. $x\in\lbrack 0,2\rbrack$ 에 대해 $x/2$ 의 삼진 전개에서 자리값 $0,1,2$ 를 각각 $(0,0),(0,2),(2,2)$ 로 가르면 $u,v\in C$ 와 $u+v=x$ 를 얻으므로 $C+C=\lbrack 0,2\rbrack$ 이고, 따라서 $C+M=\lbrack 0,2\rbrack+\mathbb Z=\mathbb R$ 이다. Cantor 집합이 강 측도 영집합이 아니라는 것이 길이 대신 덧셈으로 판정된다.
 
 # 정의
 

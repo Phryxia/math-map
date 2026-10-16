@@ -54,7 +54,7 @@ $$
 \lim_{N\to\infty}\frac1N\sum_{n=1}^{N}e^{2\pi ikx_n}=0
 $$
 
-한 방향은 등분포가 Riemann 적분가능한 $f$ 에서 평균과 적분의 일치를 주기 때문이고, $f(x)=e^{2\pi ikx}$ 를 넣으면 된다. 역방향은 삼각다항식이 $\lbrack 0,1\rbrack$ 의 연속함수를 균등근사한다는 사실을 쓴다. 구간의 지시함수를 위아래에서 조이는 연속함수 $g\_-\le\mathbf 1\_{\lbrack a,b)}\le g\_+$ 를 $\int(g\_+-g\_-)\lt\varepsilon$ 이 되게 잡고 각각을 삼각다항식으로 근사하면, 빈도의 상극한과 하극한이 $b-a$ 를 중심으로 $\varepsilon$ 안에 들어간다.
+한 방향은 등분포가 [Riemann 적분](riemann-integral.md)가능한 $f$ 에서 평균과 적분의 일치를 주기 때문이고, $f(x)=e^{2\pi ikx}$ 를 넣으면 된다. 역방향은 삼각다항식이 $\lbrack 0,1\rbrack$ 의 연속함수를 균등근사한다는 사실을 쓴다. 구간의 지시함수를 위아래에서 조이는 연속함수 $g\_-\le\mathbf 1\_{\lbrack a,b)}\le g\_+$ 를 $\int(g\_+-g\_-)\lt\varepsilon$ 이 되게 잡고 각각을 삼각다항식으로 근사하면, 빈도의 상극한과 하극한이 $b-a$ 를 중심으로 $\varepsilon$ 안에 들어간다.
 
 ## 다항식 수열
 

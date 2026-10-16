@@ -60,7 +60,7 @@ $C_c^\infty(U)$ 의 $W^{k,p}(U)$ 안에서의 닫힘을 $W_0^{k,p}(U)$ 라 한�
 
 ## 완비성
 
-**정리.** $W^{k,p}(U)$ 는 Banach 공간이고 $H^k(U)$ 는 Hilbert 공간이다.
+**정리.** $W^{k,p}(U)$ 는 [Banach 공간](banach-spaces.md)이고 $H^k(U)$ 는 Hilbert 공간이다.
 
 증명의 요지. Cauchy 열 $u_m$ 에서 각 $\partial^\alpha u_m$ 이 $L^p(U)$ 의 Cauchy 열이므로 $L^p$ 의 완비성이 극한 $v_\alpha$ 를 준다. 약한 도함수의 정의식은 양변이 적분이어서 $L^p$ 수렴을 극한 안으로 넘길 수 있고, 따라서 $v_\alpha=\partial^\alpha v_0$ 이다. $H^k(U)$ 의 내적은
 

@@ -42,7 +42,7 @@ $$
 
 ## Schellekens 목록
 
-자료 $(\mathfrak g_i,k_i)\_i$ 가 $V$ 의 **타입**이다. Schellekens 목록은 $c=24$ 홀로모픽 VOA 가 가질 수 있는 타입 71 가지의 표이고, $V_1=0$ 인 경우, $V_1$ 이 아벨 $24$ 차원인 경우(Leech 격자 VOA), 반단순인 경우 69 가지로 나뉜다.
+자료 $(\mathfrak g_i,k_i)\_i$ 가 $V$ 의 **타입**이다. Schellekens 목록은 $c=24$ 홀로모픽 VOA 가 가질 수 있는 타입 71 가지의 표이고, $V_1=0$ 인 경우, $V_1$ 이 아벨 $24$ 차원인 경우([Leech 격자](leech-lattice.md) VOA), 반단순인 경우 69 가지로 나뉜다.
 
 ## 분류 정리의 현재 상태
 
@@ -106,7 +106,7 @@ $c=32$ 에서는 짝수 자기쌍대 격자만 해도 십억 개가 넘어 분�
 
 ## 새로운 달빛의 원천
 
-$V^\natural$ 밖의 항목들도 자기동형군을 갖고, 그 군의 원소에 대한 꼬인 지표가 모듈러 함수를 준다. Umbral moonshine 을 비롯한 이후의 달빛 현상이 이 표를 훑는 과정에서 발견되었다.
+$V^\natural$ 밖의 항목들도 자기동형군을 갖고, 그 군의 원소에 대한 꼬인 지표가 모듈러 함수를 준다. [Umbral moonshine](umbral-moonshine.md) 을 비롯한 이후의 달빛 현상이 이 표를 훑는 과정에서 발견되었다.
 
 [^1]: A. N. Schellekens, *Meromorphic c=24 conformal field theories*, Comm. Math. Phys. **153** (1993), 159–185. 수학적 재구성과 유일성 완결은 G. Höhn, *On the genus of the moonshine module* (2017), J. van Ekeren, S. Möller, N. Scheithauer, *Construction and classification of holomorphic vertex operator algebras*, J. reine angew. Math. **759** (2020), C. H. Lam 등의 일련의 논문에 걸쳐 있다.
 [^2]: I. Frenkel, J. Lepowsky, A. Meurman, *Vertex Operator Algebras and the Monster*, Academic Press (1988). 서문이 $V^\natural$ 의 유일성을 추측으로 제기한다.

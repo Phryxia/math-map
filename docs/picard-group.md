@@ -46,7 +46,7 @@ $$
 
 ## 콤팩트 Riemann 면
 
-종수 $g$ 인 콤팩트 Riemann 면에서 divisor 의 차수가 군 준동형 $\deg:\mathrm{Pic}(X)\to\mathbb Z$ 를 주고 이것은 전사다. 핵 $\mathrm{Pic}^0(X)$ 는 차원 $g$ 인 복소 토러스이고 Jacobi 다양체라 한다.
+종수 $g$ 인 콤팩트 Riemann 면에서 divisor 의 차수가 군 준동형 $\deg:\mathrm{Pic}(X)\to\mathbb Z$ 를 주고 이것은 전사다. 핵 $\mathrm{Pic}^0(X)$ 는 차원 $g$ 인 복소 토러스이고 [Jacobi 다양체](jacobian-variety.md)라 한다.
 
 차수 $0$ 인 divisor 가 주 divisor 인 것과 Abel–Jacobi 사상으로 보낸 값이 $0$ 인 것이 동치다. 원환면에서 $p-q$ 가 주 divisor 가 아닌 것이 이 판정의 한 경우다.
 

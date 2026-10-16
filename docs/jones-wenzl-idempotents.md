@@ -60,7 +60,7 @@ $f_n$ 의 Markov 대각합은 $\lbrack n+1\rbrack\_q$ 다[^1]. $q\to 1$ 에서 $
 
 ## Chebyshev 점화식
 
-$\Delta_n=\lbrack n+1\rbrack\_q$ 로 두면 $\Delta\_{n+1}=\delta\Delta_n-\Delta\_{n-1}$ 이 성립한다. $\Delta_n$ 이 $\delta$ 의 다항식으로 제 2 종 Chebyshev 다항식이고, 점화식의 분모가 언제 $0$ 이 되는지를 이 다항식의 근으로 읽는다. 근은 $\delta=2\cos(\pi j/(n+1))$ 꼴이다.
+$\Delta_n=\lbrack n+1\rbrack\_q$ 로 두면 $\Delta\_{n+1}=\delta\Delta_n-\Delta\_{n-1}$ 이 성립한다. $\Delta_n$ 이 $\delta$ 의 다항식으로 제 2 종 [Chebyshev 다항식](chebyshev-polynomials.md)이고, 점화식의 분모가 언제 $0$ 이 되는지를 이 다항식의 근으로 읽는다. 근은 $\delta=2\cos(\pi j/(n+1))$ 꼴이다.
 
 # 활용
 

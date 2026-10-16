@@ -97,7 +97,7 @@ $1\le p\lt\infty$ 이고 $f\in L^p(\mathbb R^n)$ 이면 거의 모든 $x$ 에서
 - **주값 적분의 정의.** Calderón–Zygmund 이론은 특이적분 작용소를 절단의 극한으로 정의한다. 그 정의가 거의 모든 점에서 값을 갖는 함수를 내놓는 근거가 위의 각점 존재 정리다.
 - **Hilbert 변환의 경계값.** $n=1$ 과 $K(z)=1/(\pi z)$ 에서 절단 Hilbert 변환의 상한이 $L^p$ 유계이므로, $f\in L^p$ 의 Hilbert 변환이 거의 모든 점에서 존재한다. 상반평면에서 조화 공액함수가 실축에 거의 모든 점에서 경계값을 갖는다는 것이 이것이다.
 - **에르고딕 Hilbert 변환.** 측도 보존 변환의 궤도에서 $f(S^kx)/k$ 를 $k\ne 0$ 에 대해 더한 대칭 부분합이 거의 모든 점에서 수렴한다. [Birkhoff 에르고딕 정리](ergodic-theorem.md)의 극대 부등식과 Cotlar 부등식이 같은 구조이고, Cotlar 가 두 정리를 한 틀로 다룬 자리가 여기다.
-- **극대 작용소 방법.** 각점 수렴을 조밀한 부분집합에서의 수렴과 극대 작용소의 약한 추정 둘로 가르는 방식이 여러 수렴 정리의 틀이다. Fourier 급수의 각점 수렴을 Carleson 연산자의 유계성으로 얻는 증명이 같은 구조다.
+- **극대 작용소 방법.** 각점 수렴을 조밀한 부분집합에서의 수렴과 극대 작용소의 약한 추정 둘로 가르는 방식이 여러 수렴 정리의 틀이다. [Fourier 급수](fourier-series.md)의 각점 수렴을 Carleson 연산자의 유계성으로 얻는 증명이 같은 구조다.
 
 [^1]: M. Cotlar, "A unified theory of Hilbert transforms and ergodic theorems", Revista Matemática Cuyana **1** (1955), 105–167.
 

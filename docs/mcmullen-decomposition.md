@@ -20,7 +20,7 @@ $$
 
 # 정의
 
-$\mathcal K^n$ 을 $\mathbb R^n$ 의 콤팩트 볼록집합 전체라 한다. $\varphi:\mathcal K^n\to\mathbb R$ 이 평가이고 Hausdorff 거리에 연속이며 모든 $v\in\mathbb R^n$ 에서 $\varphi(K+v)=\varphi(K)$ 이면 **평행이동 불변 연속 평가**라 하고, 그 전체를 $\mathrm{Val}(\mathbb R^n)$ 이라 쓴다. 상한노름으로 Banach 공간이다.
+$\mathcal K^n$ 을 $\mathbb R^n$ 의 콤팩트 볼록집합 전체라 한다. $\varphi:\mathcal K^n\to\mathbb R$ 이 평가이고 Hausdorff 거리에 연속이며 모든 $v\in\mathbb R^n$ 에서 $\varphi(K+v)=\varphi(K)$ 이면 **평행이동 불변 연속 평가**라 하고, 그 전체를 $\mathrm{Val}(\mathbb R^n)$ 이라 쓴다. 상한노름으로 [Banach 공간](banach-spaces.md)이다.
 
 $\varphi$ 가 **$j$ 차 동차**라는 것은 모든 $t\gt 0$ 과 $K\in\mathcal K^n$ 에서
 

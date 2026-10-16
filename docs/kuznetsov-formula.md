@@ -2,7 +2,7 @@
 
 # 개요
 
-Kuznetsov 공식은 [Kloosterman 합](kloosterman-sums.md)의 가중 합을 [Maass 형식](maass-forms.md)과 Eisenstein 급수의 Fourier 계수로 이루어진 스펙트럼 합과 같다고 하는 등식이다. 양변의 어느 쪽을 추정의 대상으로 두는지에 따라 Kloosterman 합 사이의 상쇄와 자기동형 형식 계수의 평균을 서로 준다.
+Kuznetsov 공식은 [Kloosterman 합](kloosterman-sums.md)의 가중 합을 [Maass 형식](maass-forms.md)과 [Eisenstein 급수](eisenstein-series.md)의 Fourier 계수로 이루어진 스펙트럼 합과 같다고 하는 등식이다. 양변의 어느 쪽을 추정의 대상으로 두는지에 따라 Kloosterman 합 사이의 상쇄와 자기동형 형식 계수의 평균을 서로 준다.
 
 Kuznetsov 가 1980 년에 증명했고[^1], 무게가 양인 정칙 형식 쪽의 짝은 [Petersson 공식](petersson-formula.md)이다.
 

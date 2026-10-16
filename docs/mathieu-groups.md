@@ -65,7 +65,7 @@ $M\_{24}$ 는 Conway 군과 함께 행복한 가족의 첫 두 층을 이룬다.
 
 2010 년에 Eguchi, Ooguri, Tachikawa 가 K3 곡면의 타원 종수를 $\mathcal N=4$ 지표로 분해하면서 계수들이 $M\_{24}$ 의 기약표현 차원으로 분해됨을 관찰했다. 괴물 달빛과 같은 구조다.
 
-이것을 23 개 Niemeier 격자 각각의 사례로 확장한 것이 umbral moonshine 이고, Duncan–Griffin–Ono 가 존재를 증명했다. $M\_{24}$ 는 Leech 격자를 뺀 24 차원 짝수 유니모듈러 격자 하나에 딸린 경우다.[^1]
+이것을 23 개 [Niemeier 격자](niemeier-lattices.md) 각각의 사례로 확장한 것이 umbral moonshine 이고, Duncan–Griffin–Ono 가 존재를 증명했다. $M\_{24}$ 는 Leech 격자를 뺀 24 차원 짝수 유니모듈러 격자 하나에 딸린 경우다.[^1]
 
 [^1]: 다중추이 순열군의 분류와 군 자료는 J. Conway 외, *ATLAS of Finite Groups* (1985). 부호에서 Leech 격자까지의 경로는 J. Conway, N. Sloane, *Sphere Packings, Lattices and Groups* (3판, 1999) 10, 11 장.
 

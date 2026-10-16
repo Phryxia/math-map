@@ -56,7 +56,7 @@ $\mathbb R^{2n+1}$ 에서 한 번 더 사영하면 위 논법의 부등식이 $2
 
 ## 최적성
 
-차원 $2n$ 을 더 내릴 수 없는 다양체가 있다. 실사영평면 $\mathbb{RP}^2$ 는 $\mathbb R^4$ 에 매장되지만 $\mathbb R^3$ 에는 매장되지 않고, $\mathbb{RP}^{2^k}$ 가 $\mathbb R^{2^{k+1}-1}$ 에 매장되지 않는다. 장애는 Stiefel–Whitney 류가 주는 조건으로 나타난다([특성류](characteristic-classes.md)).
+차원 $2n$ 을 더 내릴 수 없는 다양체가 있다. 실사영평면 $\mathbb{RP}^2$ 는 $\mathbb R^4$ 에 매장되지만 $\mathbb R^3$ 에는 매장되지 않고, $\mathbb{RP}^{2^k}$ 가 $\mathbb R^{2^{k+1}-1}$ 에 매장되지 않는다. 장애는 [Stiefel–Whitney 류](stiefel-whitney-classes.md)가 주는 조건으로 나타난다([특성류](characteristic-classes.md)).
 
 ## 비콤팩트 다양체
 

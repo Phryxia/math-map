@@ -112,7 +112,7 @@ $n$ 차원 공간에서 $n+1$ 개를 반대칭화하면 $0$ 이므로 행이 $n$
 | 한쪽 | 다른 쪽 | 이름 |
 |---|---|---|
 | $\mathrm{GL}\_n$ | $S_k$ | Schur–Weyl |
-| $O_n$ 또는 $\mathrm{Sp}\_n$ | Brauer 대수 | Brauer 쌍대성 |
+| $O_n$ 또는 $\mathrm{Sp}\_n$ | [Brauer 대수](brauer-algebras.md) | Brauer 쌍대성 |
 | 양자군 $U_q(\mathfrak{gl}\_n)$ | Hecke 대수 $H_k(q)$ | Jimbo 쌍대성 |
 | $\mathfrak{gl}\_n$ | 퇴화 아핀 Hecke | 아핀 판본 |
 | $\mathrm{GL}\_n\times\mathrm{GL}\_m$ | — | Howe 쌍대성 |
@@ -132,7 +132,7 @@ $n$ 차원 공간에서 $n+1$ 개를 반대칭화하면 $0$ 이므로 행이 $n$
 ## 두 표현론 사이의 사전
 
 - **표현론의 사전**: 대칭군 표현론(조합적, Young 배열)과 $\mathrm{GL}\_n$ 표현론(기하적, 최고무게)을 서로 번역한다. 한쪽의 정리가 다른 쪽 정리를 곧바로 준다.
-- **대칭함수 이론의 근거**: 거듭제곱합–Schur 전개, Cauchy 항등식, Littlewood–Richardson 규칙이 전부 이 분해에서 따라 나온다. Schur 다항식의 여러 정의가 왜 일치하는지가 여기서 설명된다.
+- **대칭함수 이론의 근거**: 거듭제곱합–Schur 전개, Cauchy 항등식, [Littlewood–Richardson 규칙](littlewood-richardson.md)이 전부 이 분해에서 따라 나온다. Schur 다항식의 여러 정의가 왜 일치하는지가 여기서 설명된다.
 - **양자정보**: Schur–Weyl 변환이 $k$ 개 복사본에서 스펙트럼을 추정하는 최적 측정을 주고, 양자 자료 압축과 얽힘 농축에 쓰인다.
 - **통계물리와 적분가능계**: 스핀 사슬의 대칭성을 두 방향에서 쪼개는 표준 기법이고, 양자군 판본이 Yang–Baxter 방정식과 직접 연결된다.
 

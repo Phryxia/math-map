@@ -68,7 +68,7 @@ $g\in G(\mathbb A_f)$ 는 오른쪽 곱으로 $\mathrm{Sh}\_K(G,X)$ 에서 $\mat
 
 # 활용
 
-- **Langlands 대응.** $\ell$ 진 코호몰로지 $H^i(\mathrm{Sh}\_K,\mathbb Q_\ell)$ 에서 Hecke 작용과 Galois 작용이 가환이므로, Hecke 고유값의 꾸러미마다 [Galois 표현](galois-representations.md)이 붙는다. $G=\mathrm{GL}\_2$ 의 경우가 모듈러 곡선의 Jacobi 다양체에서 $2$ 차원 Galois 표현을 얻는 Eichler–Shimura 관계다. [Langlands 강령](langlands-program.md)은 이 대응을 일반 환원군으로 확장한다.
+- **Langlands 대응.** $\ell$ 진 코호몰로지 $H^i(\mathrm{Sh}\_K,\mathbb Q_\ell)$ 에서 Hecke 작용과 Galois 작용이 가환이므로, Hecke 고유값의 꾸러미마다 [Galois 표현](galois-representations.md)이 붙는다. $G=\mathrm{GL}\_2$ 의 경우가 모듈러 곡선의 [Jacobi 다양체](jacobian-variety.md)에서 $2$ 차원 Galois 표현을 얻는 [Eichler–Shimura 관계](eichler-shimura.md)다. [Langlands 강령](langlands-program.md)은 이 대응을 일반 환원군으로 확장한다.
 - **아벨 다양체의 모듈라이.** $G=\mathrm{Sp}\_{2g}$ 와 유니터리군의 경우 $\mathrm{Sh}\_K$ 의 점이 추가 자기준동형을 가진 [아벨 다양체](abelian-varieties.md)를 분류한다. 레벨 $K$ 가 등분점 위의 구조를 정한다.
 - **복소 곱셈.** 특수점의 좌표가 생성하는 체를 유체론으로 기술한다. $\mathrm{GL}\_2$ 에서 이것이 허수 이차체의 류체를 타원곡선의 $j$ 불변량으로 생성하는 결과다.
 

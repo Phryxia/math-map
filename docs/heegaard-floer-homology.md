@@ -14,7 +14,7 @@ $$
 
 # 직관
 
-3 다양체 $Y$ 의 불변량을 Morse 이론으로 만들려 한다. [순간자 Floer 호몰로지](instanton-floer-homology.md)는 접속 공간 위의 Chern-Simons 범함수를 Morse 함수로 보고 임계점과 순간자를 센다. 해 공간이 무한차원이라 횡단성과 compactification 을 손으로 다뤄야 한다.
+3 다양체 $Y$ 의 불변량을 [Morse 이론](morse-theory.md)으로 만들려 한다. [순간자 Floer 호몰로지](instanton-floer-homology.md)는 접속 공간 위의 Chern-Simons 범함수를 Morse 함수로 보고 임계점과 순간자를 센다. 해 공간이 무한차원이라 횡단성과 compactification 을 손으로 다뤄야 한다.
 
 유한차원에서 같은 일을 하려면 $Y$ 를 유한한 자료로 적어야 한다. Heegaard 분해가 그 자료다. $Y$ 를 두 손잡이체로 자르면 경계가 종수 $g$ 의 곡면 $\Sigma$ 이고, 각 손잡이체는 $\Sigma$ 위의 곡선 $g$ 개가 어디서 원판을 경계로 하는지로 정해진다. 그 두 벌의 곡선이 $\boldsymbol\alpha=\lbrace\alpha_1,\dots,\alpha_g\rbrace$ 와 $\boldsymbol\beta=\lbrace\beta_1,\dots,\beta_g\rbrace$ 다.
 
