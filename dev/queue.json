@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-10-16T05:07:01.746Z",
-  "nextSeq": 2114,
+  "savedAt": "2026-10-16T09:06:04.152Z",
+  "nextSeq": 2121,
   "items": [
-    {
-      "id": "4f29a976",
-      "title": "큐 서버가 작업 디렉터리 밖에서 기동되어 stop 이 커밋하지 못하는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차 시작에서 세션 시작 pull 이 divergent 로 실패해(큐의 shallow clone 메모) 원격 브랜치를 스크래치패드에 따로 클론하고 거기서 1절 명령을 돌렸다. 그때 node dev/queue.mjs list 가 큐 서버를 그 클론 경로로 기동했다. 뒤에 --unshallow 로 원래 작업 트리를 정상화하고 그 클론을 지웠지만, 서버는 포트 7777 에 그대로 살아 있었다. 그래서 회차 내내 /home/user/math-map 에서 돌린 push 와 remove 가 전부 그 서버로 갔고, 종료 단계의 queue.mjs stop 이 'stopped. saved=true committed=false (git 저장소가 아니다)' 를 냈다. dev/queue.json 은 세션 시작 상태 그대로였고 git status 는 깨끗했다. 메모 넷과 통독 항목 교체가 커밋되지 않을 뻔했다.\n\n복구. 서버는 저장할 때 지운 디렉터리를 다시 만들었으므로 파일이 남아 있었다. find /tmp -name queue.json -newermt '<회차 시작 시각>' 로 찾아 스크래치패드 클론 경로의 queue.json 을 작업 트리의 dev/queue.json 으로 복사하고, JSON 유효성과 항목 수와 이 회차 메모의 존재를 확인한 뒤 'queue: N items (날짜)' 로 따로 커밋했다.\n\n규칙. 큐 서버는 작업 트리에서만 기동한다. 세션 시작 pull 이 실패하면 저장소를 다른 곳에 클론하지 말고 --unshallow 와 rev-list 로 정상화한다(shallow clone 메모). 어떤 이유로 작업 트리 밖에서 queue.mjs 를 한 번이라도 돌렸으면, 이어서 작업 트리에서 node dev/queue.mjs status 로 서버가 어디 것인지 확인하고 stop 으로 끊은 뒤 다시 기동한다. 종료 단계에서는 stop 의 출력에 committed=true 가 있는지 반드시 읽는다. committed=false 면 git log 로 'queue:' 커밋이 생겼는지 보고, 없으면 위 복구를 한다.",
-      "createdAt": "2026-10-08T20:36:53.886Z",
-      "seq": 1922
-    },
     {
       "id": "9443e5ca",
       "title": "문서 분할이 개관 지도 mermaid 의 간선을 어긋나게 하는 사고",
@@ -92,6 +84,14 @@
       "seq": 2105
     },
     {
+      "id": "32cb54cd",
+      "title": "큐 서버가 작업 디렉터리 밖에서 기동되어 stop 이 커밋하지 못하는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 34차 회차 시작에서 세션 시작 pull 이 divergent 로 실패해(큐의 shallow clone 메모) 원격 브랜치를 스크래치패드에 따로 클론하고 거기서 1절 명령을 돌렸다. 그때 node dev/queue.mjs list 가 큐 서버를 그 클론 경로로 기동했다. 뒤에 --unshallow 로 원래 작업 트리를 정상화하고 그 클론을 지웠지만, 서버는 포트 7777 에 그대로 살아 있었다. 그래서 회차 내내 /home/user/math-map 에서 돌린 push 와 remove 가 전부 그 서버로 갔고, 종료 단계의 queue.mjs stop 이 'stopped. saved=true committed=false (git 저장소가 아니다)' 를 냈다. dev/queue.json 은 세션 시작 상태 그대로였고 git status 는 깨끗했다. 메모 넷과 통독 항목 교체가 커밋되지 않을 뻔했다.\n\n복구. 서버는 저장할 때 지운 디렉터리를 다시 만들었으므로 파일이 남아 있었다. find /tmp -name queue.json -newermt '<회차 시작 시각>' 로 찾아 스크래치패드 클론 경로의 queue.json 을 작업 트리의 dev/queue.json 으로 복사하고, JSON 유효성과 항목 수와 이 회차 메모의 존재를 확인한 뒤 'queue: N items (날짜)' 로 따로 커밋했다.\n\n규칙. 큐 서버는 작업 트리에서만 기동한다. 세션 시작 pull 이 실패하면 저장소를 다른 곳에 클론하지 말고 --unshallow 와 rev-list 로 정상화한다(shallow clone 메모). 어떤 이유로 작업 트리 밖에서 queue.mjs 를 한 번이라도 돌렸으면, 이어서 작업 트리에서 node dev/queue.mjs status 로 서버가 어디 것인지 확인하고 stop 으로 끊은 뒤 다시 기동한다. 종료 단계에서는 stop 의 출력에 committed=true 가 있는지 반드시 읽는다. committed=false 면 git log 로 'queue:' 커밋이 생겼는지 보고, 없으면 위 복구를 한다.",
+      "createdAt": "2026-10-16T08:37:40.569Z",
+      "seq": 2114
+    },
+    {
       "id": "c4f40bdb",
       "title": "큐에서 신규 주제를 꺼낼 때 저장소 선확인",
       "priority": 90,
@@ -164,12 +164,12 @@
       "seq": 2103
     },
     {
-      "id": "f6528d5d",
+      "id": "7333d596",
       "title": "제목·헤딩·링크 텍스트·표 머리 셀의 수식 재발 검사",
       "priority": 90,
-      "note": "4절 제목 규칙(제목, 헤딩, 링크 텍스트, 표 머리 셀에 $ 금지)의 상시 검사. 47차(2026-10-16)에 네 자리를 모두 0 건으로 만들었다. 헤딩은 grep -lE '^#.*\\$' docs/*.md 가 0 건, 링크 텍스트는 0 건(46차에 56 건을 평문화했다, a783a50), 표 머리 셀은 이 회차에 90 표 187 셀을 평문화했다(0950a11a 69 문서 자동, a4364366 18 표 손).\n\n표 머리 셀 찾기. 46차까지의 검사는 머리 셀을 보지 않아 90 표가 남아 있었다. 머리 행은 '|' 로 시작하고 다음 줄이 구분 행(/^\\s*\\|[\\s:|-]+\\|?\\s*$/)인 줄이다. node 로 docs 전체를 훑어 그 줄에 $ 가 있는 것을 뽑는다.\n\n평문화 치환기. 스크래치패드에 node 모듈로 만든다(dev/ 는 고치지 않는다, 0절). 순서는 (1) 글꼴 명령 \\mathbb \\mathrm \\mathcal \\mathbf \\mathfrak \\mathsf \\text 는 인자만 남기고 \\hat \\tilde 는 결합 문자로 바꾼다, (2) 그리스 명령을 유니코드 문자로 바꾸고 명령 뒤 공백 하나를 지운다(\\lambda I 가 'λ I' 가 되지 않게), (3) 첨자 _ 와 ^ 를 유니코드 첨자 글자로 바꾼다, (4) 백슬래시나 중괄호나 $ 가 남으면 null 을 돌려 그 표를 건너뛰고 보고한다. 90 표 가운데 72 표가 이것으로 처리되었다.\n\n첨자 규칙. 4절은 유니코드 첨자가 없으면 붙여 쓰라고 한다. 두 글자 이상 첨자에 이것을 그대로 적용하면 D_{\\mathrm{cris}} 가 'Dcᵣᵢₛ' 가 되어 읽히지 않는다. 그래서 두 글자 이상은 전부 첨자 글자로 바뀔 때만 받아들이고(\\pi_1^{\\mathrm{et}} -> π₁ᵉᵗ, bP_{n+1} -> bPₙ₊₁), 한 글자는 없으면 붙여 쓴다(\\mathrm{Sh}\\_K -> ShK).\n\n말로 바꿀 자리. 평문화하면 읽히지 않는 식이 든 머리 셀은 열 이름을 말로 쓴다. \\dim H^1_{\\mathcal F}(\\mathbb Q_v,T) -> '국소 조건의 차원', \\int\\_a^b f\\thinspace dg -> '적분값', \\int g e^{\\lambda\\varphi} -> 'Laplace 적분 (실 지수)'. 본문 셀에 식이 남아 있으므로 정보가 줄지 않는다. 붙여 쓴 첨자가 곱으로 오독되는 자리도 같이 바꿨다. G^X -> 'umbral 군', W_G(x) -> '커널', dP\\_X/d\\mu -> '밀도', \\mathrm{Sh}\\_K(G,X) -> 'Shimura 다양체', \\mathbb A_{\\mathbb Q} -> '아델 환'.\n\n다음 회차는 새로 쓰거나 보강한 문서에만 네 검사를 돌리면 된다.\n\n검사 주의. 링크 텍스트를 grep -noE '\\[[^]]*\\$[^]]*\\]\\([a-z0-9-]+\\.md\\)' 로 보면 수식 안의 여는 대괄호($\\lbrack 0,1)$ 같은 구간 표기)부터 한참 뒤의 링크까지 한 덩어리로 잡는 오탐을 낸다. 46차에 13 건이 그것이었고 measure, metric-spaces, lattices, unbounded-operators 등이다. node 로 /\\[([^\\[\\]]*\\$[^\\[\\]]*)\\]\\(([a-z0-9-]+\\.md)\\)/g 를 줄마다 돌리면 대괄호 안에 대괄호를 허용하지 않아 이 오탐이 없다. 47차에 이것으로 전수를 돌려 0 건을 확인했다.",
-      "createdAt": "2026-10-16T00:45:39.643Z",
-      "seq": 2107
+      "note": "4절 제목 규칙(제목, 헤딩, 링크 텍스트, 표 머리 셀에 $ 금지)의 상시 검사. 47차에 네 자리를 모두 0 건으로 만들었다(링크 텍스트는 46차에 56 건 평문화 a783a50, 표 머리 셀은 47차에 90 표 187 셀). 50차(2026-10-16) 전수 재검사에서도 헤딩 0 건, 표 머리 셀 0 건, operatorname 류 0 건이었고 링크 텍스트만 1 건이 나왔는데 오탐이다. docs/measure.md 80 줄의 '$[0,1)$ 의 두 수를 ... 골라([선택공리](axiom-of-choice.md))' 에서 grep 이 앞의 수식부터 뒤의 대괄호까지를 한 링크 텍스트로 본다. 실제 링크 텍스트는 '선택공리' 이므로 고칠 것이 없다. 이 오탐은 같은 문단에 인라인 수식과 링크가 함께 있으면 언제든 다시 나온다.\n\n검사 네 가지.\n  grep -lE '^#.*$' docs/*.md\n  grep -ohE '\\[[^]]*$[^]]*\\]\\([a-z0-9-]+\\.md\\)' docs/*.md\n  표 머리 셀: 머리 행이 '|' 로 시작하고 다음 줄이 구분 행인 것을 awk 로 짝지어 $ 를 본다\n  grep -nE '\\\\(operatorname|bm[^a-zA-Z]|DeclareMathOperator|newcommand|renewcommand|def[^a-zA-Z])' docs/*.md",
+      "createdAt": "2026-10-16T09:05:46.541Z",
+      "seq": 2120
     },
     {
       "id": "35a44079",
@@ -196,20 +196,28 @@
       "seq": 2093
     },
     {
-      "id": "c1800c02",
-      "title": "개관 갈래의 '먼저 읽을 것' 링크는 가장 이른 갈래에 둔다",
+      "id": "25907d30",
+      "title": "분야 개관 갈래 재작성의 남은 목록 (50차 집계)",
       "priority": 50,
-      "note": "4.5절 갈래 재작성의 실무 메모. 49차에 foundations-overview 를 다시 쓰면서 겪었다. 갈래 H2 첫 줄의 '먼저 읽을 것' 에 분야 밖 선수 문서를 링크하면 그 링크도 갈래 절의 링크 순서에 들어가므로, 손 검사(/tmp/branch-order.sh)가 그 문서를 조상으로 두는 뒤 갈래 문서들을 전부 위반으로 보고한다. 49차에는 기술집합론 갈래의 '먼저 읽을 것' 에 metric-spaces 를 두었더니 filters-and-nets, ultraproducts, nonstandard-analysis, internal-set-theory, measure, banach-tarski, martins-axiom, suslin-problem, borel-hierarchy 의 9 건이 보고됐다. 고침은 그 링크를 그 문서가 처음 필요해지는 가장 이른 갈래(모형론)의 '먼저 읽을 것' 으로 올리고, 뒤 갈래에서는 4절 본문 링크 규칙대로 링크 없이 이름만 적는 것이다. 분야 밖 선수 문서가 여러 갈래에 걸리면 이 순서를 먼저 정하고 갈래를 쓴다.",
-      "createdAt": "2026-10-16T04:47:18.880Z",
-      "seq": 2111
+      "note": "큐 항목 7565e952(개관 21 개의 갈래를 읽는 순서로 다시 쓰기)의 진행 집계다. 50차(2026-10-16)까지 다시 쓴 개관은 measure-theory(48차), foundations, complex-analysis, functional-analysis, machine-learning, cryptography, category-theory(49차), statistics, graph-theory, optimization, probability(50차) 열하나고, order-theory 와 information-theory 는 손대기 전부터 규격을 갖추고 있었다. 남은 여덟은 abstract-algebra, analysis, combinatorics, computation, differential-geometry, linear-algebra, number-theory, topology 다.\n\n남은 여덟의 규모(50차 측정. 링크 수는 갈래 절의 링크, 위반은 손 검사 /tmp/branch-order.sh 기준이 아니라 같은 판정을 node 로 한 번에 돌린 값이라 손 검사보다 크게 나온다. 상대 크기만 본다).\n  computation 54 링크 8 갈래 위반 5\n  probability 54 링크 6 갈래 위반 10 (50차에 처리)\n  linear-algebra 66 링크 9 갈래 위반 12\n  combinatorics 67 링크 8 갈래 위반 27\n  differential-geometry 52 링크 6 갈래 위반 33\n  topology 97 링크 8 갈래 위반 43\n  analysis 82 링크 9 갈래 위반 78\n  abstract-algebra 107 링크 8 갈래 위반 147\n  number-theory 162 링크 9 갈래 위반 167\n다음 회차는 computation 부터 집으면 된다. 40 분 회차에 54 링크 개관 하나가 10 분이고, 작은 개관 셋에 큐 메모 정리까지가 한 회차 분량이다(50차가 statistics 22, graph-theory 25, optimization 34, probability 54 링크 넷을 했다).\n\nlinear-algebra 는 꼴이 다르다. 갈래가 10 개이고 'A -> B: 설명' 처럼 한 줄에 문서 둘셋을 화살표로 묶어 적는다. 위반 12 건의 원인은 표현론 갈래(맨 끝)의 lie-groups, lie-algebras, group-representations, schur-polynomials 가 앞 갈래의 grassmannian(공간과 사상), mass-formula 와 niemeier-lattices(격자와 부호), 같은 갈래의 schur-weyl-duality 의 조상인 것과, 무한차원 갈래의 hilbert-spaces 가 앞 갈래의 finite-element-method(수치 선형대수)와 kernel-pca(통계와 데이터)의 조상인 것이다. 갈래 안 순서로 풀리지 않고 갈래 사이 배치를 바꿔야 하며 화살표 묶음을 한 문서 한 줄로 풀어 쓰는 일까지 들어가므로 회차 앞머리에 20 분 이상 잡고 시작한다.\n\n위반이 많은 개관을 푸는 수는 셋이다. (1) 갈래 H2 의 순서를 바꾼다. (2) 한 문서를 다른 갈래로 옮긴다. 50차의 probability 는 위반 10 건을 이동 다섯으로 풀었다. conditional-expectation 과 kolmogorov-extension 을 '확률 공간과 확률변수' 로, total-variation-distance 와 coupling 을 '극한정리' 로, freidlin-wentzell 을 '연속시간 확률과정' 으로 옮기니 0 건이 되었다. 기초 도구가 뒤 갈래에 있는 것이 위반의 주된 원인이므로 먼저 그것을 찾는다. (3) 갈래를 나눈다. statistics 는 갈래 셋을 다섯으로 늘려(경험 분포와 재표본, 잠재변수 모형을 떼어) 분야 밖 선수 문서의 링크 자리까지 함께 풀었다.",
+      "createdAt": "2026-10-16T09:04:41.975Z",
+      "seq": 2117
     },
     {
-      "id": "d7b8da82",
-      "title": "분야 개관 갈래 재작성의 남은 목록 (49차 집계)",
+      "id": "6f71d977",
+      "title": "개관 갈래의 분야 밖 선수 문서를 어디에 링크하는가",
       "priority": 50,
-      "note": "큐 항목 7565e952(개관 21 개의 갈래를 읽는 순서로 다시 쓰기)의 진행 집계다. 49차(2026-10-16)까지 읽는 순서로 다시 쓴 개관은 measure-theory(48차), foundations, complex-analysis, functional-analysis, machine-learning, cryptography, category-theory(49차) 일곱이고, order-theory 와 information-theory 는 손대기 전부터 이미 규격을 갖추고 있었다(첫 문단이 읽는 순서, 갈래마다 먼저 읽을 갈래와 시작 문서, 주 경로와 곁가지의 들여쓰기). 남은 열둘은 abstract-algebra, analysis, combinatorics, computation, differential-geometry, graph-theory, linear-algebra, number-theory, optimization, probability, statistics, topology 다.\n\n규격 미비의 꼴은 둘이다. (1) 갈래 절에 첫 문단이 없고 H2 마다 첫 줄도 없이 목록만 있는 분류표 꼴. statistics, graph-theory, optimization, linear-algebra 가 이것이고 손 검사 위반은 0 건이므로 위상순은 이미 맞다. 첫 문단과 갈래 첫 줄을 더하고 조상관계로 주 경로와 곁가지를 가르면 된다. (2) 갈래 순서 자체가 어긋난 꼴. differential-geometry 33 건, combinatorics 27 건, machine-learning 26 건(49차에 해결)처럼 손 검사가 위반을 내놓는다. 한 회차에 하나씩 하고, 큰 것은 갈래 H2 의 순서를 바꾸는 것부터 본다(49차의 complex-analysis 는 복소역학을 확장과 사상 뒤로 떼어 8 건을, machine-learning 은 분포 사이의 거리를 표현과 차원 축소 앞으로 올려 26 건 가운데 대부분을 지웠다).\n\n회차 분량의 기준. 49차에 링크 79 개인 foundations 가 11 분, 32 개인 functional-analysis 가 4 분, 18 개인 category-theory 가 5 분 걸렸다. 40 분 회차면 작은 개관 셋이나 큰 개관 하나에 작은 것 둘이다. 남은 시간이 8 분 아래면 새 개관을 시작하지 않는다. 첫 문단만 더하고 들여쓰기를 못 가르면 규격 위반 상태로 커밋하게 된다.",
-      "createdAt": "2026-10-16T05:06:50.713Z",
-      "seq": 2113
+      "note": "4.5절 갈래 재작성의 실무 메모. 갈래 H2 첫 줄의 '먼저 읽을 것' 에 분야 밖 선수 문서를 링크하면 그 링크도 갈래 절의 링크 순서에 들어가므로 손 검사(/tmp/branch-order.sh)가 조상 관계를 그 자리로 따진다. 49차 foundations 와 50차 statistics, graph-theory, optimization, probability 에서 겪은 규칙은 셋이다.\n\n(1) 분야 밖 문서 X 를 링크할 수 있는 자리는 X 의 후손이 갈래 절에 처음 나오는 자리보다 앞이다. 뒤 갈래에 적으면 앞 갈래에 있는 후손이 전부 위반으로 보고된다. 49차에는 기술집합론 갈래의 '먼저 읽을 것' 에 metric-spaces 를 두어 9 건이 났고, 50차 probability 는 연속시간 갈래에 ordinary-differential-equations 를 두었더니 앞 갈래의 hamiltonian-monte-carlo 가 보고됐다. 고침은 그 링크를 가장 이른 갈래로 올리고 뒤 갈래에서는 4절 본문 링크 규칙대로 이름만 적는 것이다.\n\n(2) X 가 갈래 절의 어느 문서를 조상으로 두면 그 문서 뒤에만 링크할 수 있고, 갈래 첫 줄에는 적을 수 없다. 50차 graph-theory 의 euler-characteristic, matroids, union-find, dynamic-programming, lovasz-theta 가 모두 graphs 나 graph-coloring 을 조상으로 둔다. probability 의 lebesgue-integral 은 probability(유한 확률 공간)의 후손이라 확률 개관 첫 줄에 쓸 수 없었다. 이런 문서는 적지 않고 지나간다. 각 문서의 선수지식 절에 이미 있으므로 독자가 잃는 것이 없다.\n\n(3) 한 줄 설명 안에 분야 밖 선수 문서를 링크하면 그 링크가 설명이 붙은 문서의 링크보다 뒤에 와서 조상 역전이 된다. 50차 probability 에서 '특성함수: Fourier 변환으로 분포 수렴을 판정' 의 Fourier 변환을 설명 안에 링크했더니 바로 보고됐다. 설명이 아니라 그 갈래 첫 줄로 올린다.\n\n그래서 갈래를 쓰는 순서는 이렇다. 먼저 갈래 안 문서를 위상순으로 놓고, 다음에 각 문서의 분야 밖 부모를 모아 (2) 로 쓸 수 없는 것을 걸러내고, 남은 것을 (1) 로 가장 이른 갈래의 첫 줄에 배치한 뒤, 마지막에 손 검사를 돌린다. 시작 문서를 읽는 데 필요한 것만 적고 곁가지의 선수까지 모으지 않는 편이 짧고 위반도 적다. 또 '먼저 읽을 것' 안에서도 순서를 지켜야 한다. 50차 graph-theory 는 비둘기집 원리를 셈의 기본 원리보다 앞에 적어 한 건이 났다.",
+      "createdAt": "2026-10-16T09:05:06.597Z",
+      "seq": 2118
+    },
+    {
+      "id": "71b23884",
+      "title": "분야 개관의 지도 mermaid 노드 라벨이 문서 제목과 어긋난 자리",
+      "priority": 50,
+      "note": "4.5절은 지도가 실제 간선의 부분그래프여야 한다고만 적고 노드 라벨은 말하지 않는다. 라벨이 제목과 다르면 독자가 지도에서 본 이름으로 갈래 목록을 찾지 못한다. 개관 21 개의 지도 노드 라벨을 문서 제목과 대조하는 작업이다.\n\n처리한 것. 49차 foundations 의 cardinality 라벨 '가산성' -> '기수'. 50차에 갈래를 다시 쓰면서 함께 고친 것 다섯. statistics 의 random-variables 라벨 '확률변수와 기댓값' -> '확률변수', graph-theory 의 topological-sort 라벨 'DAG 와 위상정렬' -> '위상정렬', gnn-expressivity 'GNN 표현력' -> '그래프 신경망의 표현력', ramanujan-graphs 'Ramanujan 그래프' -> 'Ramanujan 그래프의 명시적 구성', perfect-graphs '완전그래프' -> '완벽그래프와 강한 완벽그래프 정리', optimization 의 lagrange-duality 'Lagrange 쌍대성과 KKT' -> 'Lagrange 쌍대성'. graph-theory 의 '완전그래프' 는 완전그래프(complete graph)와 완벽그래프(perfect graph)를 뒤바꾼 오류였다. 개념이 다른 라벨이 섞일 수 있으므로 대조는 눈으로 한다.\n\n검사법. 개관마다 mermaid 블록의 노드 정의 ID[\"라벨\"] 를 뽑아 그 라벨이 그 개관의 갈래 목록 링크 텍스트와 맞는지 본다. 노드가 분야 밖 문서(선수지식)인 경우가 많아 갈래 목록에 없는 라벨이 정상으로 나오므로, 라벨을 docs 전체의 제목 목록(/tmp/titles.tsv)과 대조하는 편이 낫다. 제목에 없는 라벨만 추리면 줄여 볼 수 있다. 라벨이 제목보다 짧게 줄여 쓴 것(약어나 앞머리만)도 바꿀 대상이다.\n\n주의. 지도의 노드 라벨은 mermaid 코드블록 안이라 9절의 미링크 손 검사가 그것을 본문 미링크로 보고한다. 50차에 graph-theory 의 'Euler 지표', 'Lovász 세타 함수', 'Matroid' 와 optimization 의 'LP 반올림' 이 그렇게 걸렸다. 코드블록 안이므로 전부 오탐이고 링크할 수 없다(mermaid 라벨에 마크다운 링크를 넣으면 깨진다).",
+      "createdAt": "2026-10-16T09:05:46.308Z",
+      "seq": 2119
     },
     {
       "id": "08e59419",
@@ -252,20 +260,12 @@
       "seq": 2097
     },
     {
-      "id": "116b15bd",
-      "title": "Boole 대수의 옛 표기와 초필터 링크 텍스트 정리",
+      "id": "60d2eee0",
+      "title": "Heyting 대수 제목 한국어화와 초필터 링크 텍스트",
       "priority": 30,
-      "note": "48차에 boolean-algebras 의 제목을 'Boolean algebra' 에서 'Boole 대수' 로 바꾸고(항목 c6b597c3) 그 문서를 가리키는 링크 텍스트 19 개를 제목으로 통일했다. 남은 것 셋. (1) boolean-valued-models 와 foundations-overview 가 본문에서 '완비 Boolean 대수' 로 쓴다. 'Boolean 값 모형' 은 그 문서의 제목이므로 그대로 두고, '대수' 쪽만 'Boole 대수' 로 맞춘다. (2) 링크 텍스트가 '초필터' 인 두 자리(ultraproducts, weak-choice-principles 로 기억한다. grep -rn '\\[초필터\\](boolean-algebras.md)' 로 확인한다)는 제목도 그 문서의 개념도 아니다. 초필터 문서를 따로 세울지, 링크 텍스트를 'Boole 대수의 초필터' 로 바꿀지 정한다. (3) heyting-algebras 의 제목이 'Heyting algebra' 로 같은 문제를 갖는다. 'Heyting 대수' 로 바꾸고 그 문서를 가리키는 링크 텍스트를 전부 맞춘다. 본문도 'Heyting algebra 는' 꼴로 적혀 있어 함께 고친다. 제목을 바꿀 때는 개요 첫 문장의 원어 병기가 전역 치환에 먹히지 않게 조심한다. 48차에 'Boole 대수(Boolean algebra)는' 을 넣은 뒤 전역 치환이 괄호 안까지 바꿔 'Boole 대수(Boole 대수)는' 이 되었고, 괄호 안에 로마자 'Boole' 이 남아 4절의 원어 병기 검사도 통과해 버렸다. 원어를 먼저 토큰으로 보호하거나 전역 치환을 먼저 하고 첫 문장을 나중에 쓴다.",
-      "createdAt": "2026-10-16T01:00:49.477Z",
-      "seq": 2110
-    },
-    {
-      "id": "c9464ab4",
-      "title": "분야 개관의 지도 mermaid 노드 라벨이 문서 제목과 어긋난 자리",
-      "priority": 30,
-      "note": "4.5절은 지도가 실제 간선의 부분그래프여야 한다고만 적고 노드 라벨은 말하지 않는다. 49차에 foundations-overview 의 지도에서 cardinality 노드 라벨이 '가산성' 인데 문서 제목은 '기수' 여서 '기수' 로 고쳤다. 라벨이 제목과 다르면 독자가 지도에서 본 이름으로 갈래 목록을 찾지 못한다. 개관 21 개의 지도 노드 라벨을 문서 제목과 대조하는 작업이다. 검사법은 개관마다 mermaid 블록의 노드 정의 ID[\"라벨\"] 를 뽑아 그 라벨이 갈래 목록의 어느 링크 텍스트와도 맞지 않는 것을 보고하는 것이다.",
-      "createdAt": "2026-10-16T04:47:19.007Z",
-      "seq": 2112
+      "note": "48차에 boolean-algebras 의 제목을 'Boolean algebra' 에서 'Boole 대수' 로 바꾸고 링크 텍스트 19 개를 제목으로 통일했다(항목 c6b597c3). 옛 항목 116b15bd 의 셋 가운데 (1) 은 50차에 처리했다. boolean-valued-models 의 '완비 Boolean 대수' 6 자리를 '완비 Boole 대수' 로 고쳤다(제목이자 그 문서의 개념인 'Boolean 값 모형' 과 헤딩 'Boolean 값 우주' 는 그대로 두었다). foundations-overview 에는 '완비 Boolean 대수' 가 남아 있지 않았다.\n\n남은 둘. (2) 링크 텍스트가 '초필터' 인 두 자리는 constructible-universe 63 줄과 large-cardinals 29 줄이다(ultraproducts 와 weak-choice-principles 로 기억한 48차 메모가 틀렸다. grep -rn '\\[초필터\\](boolean-algebras.md)' docs/*.md 로 확인했다). 둘 다 측도 가능 기수의 정의에서 '비주요 초필터가 있으면' 꼴로 쓴다. 4절은 링크 텍스트가 제목이거나 제목을 문장에 맞게 바꾼 것이라 하는데 '초필터' 는 둘 다 아니다. 초필터 문서를 따로 세울지, 링크 텍스트를 'Boole 대수의 초필터' 로 바꿀지 정한다. 문장 흐름으로는 뒤쪽이 어색하므로 초필터를 주제로 한 문서를 세우는 쪽이 낫고, 그러면 ultraproducts 와 stone-cech-compactification 의 부모 후보가 된다.\n\n(3) heyting-algebras 의 제목이 'Heyting algebra' 로 같은 문제를 갖는다. 'Heyting 대수' 로 바꾸고 그 문서를 가리키는 링크 텍스트를 전부 맞춘다. 본문도 'Heyting algebra 는' 꼴로 적혀 있어 함께 고친다. 제목을 바꿀 때는 개요 첫 문장의 원어 병기가 전역 치환에 먹히지 않게 조심한다. 48차에 'Boole 대수(Boolean algebra)는' 을 넣은 뒤 전역 치환이 괄호 안까지 바꿔 'Boole 대수(Boole 대수)는' 이 되었고, 괄호 안에 로마자 'Boole' 이 남아 4절의 원어 병기 검사도 통과해 버렸다. 원어를 먼저 토큰으로 보호하거나 전역 치환을 먼저 하고 첫 문장을 나중에 쓴다.",
+      "createdAt": "2026-10-16T08:58:34.697Z",
+      "seq": 2116
     },
     {
       "id": "17ce5c43",
