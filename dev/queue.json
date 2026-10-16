@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-16T09:06:04.152Z",
-  "nextSeq": 2121,
+  "savedAt": "2026-10-16T12:53:51.548Z",
+  "nextSeq": 2124,
   "items": [
     {
       "id": "9443e5ca",
@@ -196,14 +196,6 @@
       "seq": 2093
     },
     {
-      "id": "25907d30",
-      "title": "분야 개관 갈래 재작성의 남은 목록 (50차 집계)",
-      "priority": 50,
-      "note": "큐 항목 7565e952(개관 21 개의 갈래를 읽는 순서로 다시 쓰기)의 진행 집계다. 50차(2026-10-16)까지 다시 쓴 개관은 measure-theory(48차), foundations, complex-analysis, functional-analysis, machine-learning, cryptography, category-theory(49차), statistics, graph-theory, optimization, probability(50차) 열하나고, order-theory 와 information-theory 는 손대기 전부터 규격을 갖추고 있었다. 남은 여덟은 abstract-algebra, analysis, combinatorics, computation, differential-geometry, linear-algebra, number-theory, topology 다.\n\n남은 여덟의 규모(50차 측정. 링크 수는 갈래 절의 링크, 위반은 손 검사 /tmp/branch-order.sh 기준이 아니라 같은 판정을 node 로 한 번에 돌린 값이라 손 검사보다 크게 나온다. 상대 크기만 본다).\n  computation 54 링크 8 갈래 위반 5\n  probability 54 링크 6 갈래 위반 10 (50차에 처리)\n  linear-algebra 66 링크 9 갈래 위반 12\n  combinatorics 67 링크 8 갈래 위반 27\n  differential-geometry 52 링크 6 갈래 위반 33\n  topology 97 링크 8 갈래 위반 43\n  analysis 82 링크 9 갈래 위반 78\n  abstract-algebra 107 링크 8 갈래 위반 147\n  number-theory 162 링크 9 갈래 위반 167\n다음 회차는 computation 부터 집으면 된다. 40 분 회차에 54 링크 개관 하나가 10 분이고, 작은 개관 셋에 큐 메모 정리까지가 한 회차 분량이다(50차가 statistics 22, graph-theory 25, optimization 34, probability 54 링크 넷을 했다).\n\nlinear-algebra 는 꼴이 다르다. 갈래가 10 개이고 'A -> B: 설명' 처럼 한 줄에 문서 둘셋을 화살표로 묶어 적는다. 위반 12 건의 원인은 표현론 갈래(맨 끝)의 lie-groups, lie-algebras, group-representations, schur-polynomials 가 앞 갈래의 grassmannian(공간과 사상), mass-formula 와 niemeier-lattices(격자와 부호), 같은 갈래의 schur-weyl-duality 의 조상인 것과, 무한차원 갈래의 hilbert-spaces 가 앞 갈래의 finite-element-method(수치 선형대수)와 kernel-pca(통계와 데이터)의 조상인 것이다. 갈래 안 순서로 풀리지 않고 갈래 사이 배치를 바꿔야 하며 화살표 묶음을 한 문서 한 줄로 풀어 쓰는 일까지 들어가므로 회차 앞머리에 20 분 이상 잡고 시작한다.\n\n위반이 많은 개관을 푸는 수는 셋이다. (1) 갈래 H2 의 순서를 바꾼다. (2) 한 문서를 다른 갈래로 옮긴다. 50차의 probability 는 위반 10 건을 이동 다섯으로 풀었다. conditional-expectation 과 kolmogorov-extension 을 '확률 공간과 확률변수' 로, total-variation-distance 와 coupling 을 '극한정리' 로, freidlin-wentzell 을 '연속시간 확률과정' 으로 옮기니 0 건이 되었다. 기초 도구가 뒤 갈래에 있는 것이 위반의 주된 원인이므로 먼저 그것을 찾는다. (3) 갈래를 나눈다. statistics 는 갈래 셋을 다섯으로 늘려(경험 분포와 재표본, 잠재변수 모형을 떼어) 분야 밖 선수 문서의 링크 자리까지 함께 풀었다.",
-      "createdAt": "2026-10-16T09:04:41.975Z",
-      "seq": 2117
-    },
-    {
       "id": "6f71d977",
       "title": "개관 갈래의 분야 밖 선수 문서를 어디에 링크하는가",
       "priority": 50,
@@ -218,6 +210,30 @@
       "note": "4.5절은 지도가 실제 간선의 부분그래프여야 한다고만 적고 노드 라벨은 말하지 않는다. 라벨이 제목과 다르면 독자가 지도에서 본 이름으로 갈래 목록을 찾지 못한다. 개관 21 개의 지도 노드 라벨을 문서 제목과 대조하는 작업이다.\n\n처리한 것. 49차 foundations 의 cardinality 라벨 '가산성' -> '기수'. 50차에 갈래를 다시 쓰면서 함께 고친 것 다섯. statistics 의 random-variables 라벨 '확률변수와 기댓값' -> '확률변수', graph-theory 의 topological-sort 라벨 'DAG 와 위상정렬' -> '위상정렬', gnn-expressivity 'GNN 표현력' -> '그래프 신경망의 표현력', ramanujan-graphs 'Ramanujan 그래프' -> 'Ramanujan 그래프의 명시적 구성', perfect-graphs '완전그래프' -> '완벽그래프와 강한 완벽그래프 정리', optimization 의 lagrange-duality 'Lagrange 쌍대성과 KKT' -> 'Lagrange 쌍대성'. graph-theory 의 '완전그래프' 는 완전그래프(complete graph)와 완벽그래프(perfect graph)를 뒤바꾼 오류였다. 개념이 다른 라벨이 섞일 수 있으므로 대조는 눈으로 한다.\n\n검사법. 개관마다 mermaid 블록의 노드 정의 ID[\"라벨\"] 를 뽑아 그 라벨이 그 개관의 갈래 목록 링크 텍스트와 맞는지 본다. 노드가 분야 밖 문서(선수지식)인 경우가 많아 갈래 목록에 없는 라벨이 정상으로 나오므로, 라벨을 docs 전체의 제목 목록(/tmp/titles.tsv)과 대조하는 편이 낫다. 제목에 없는 라벨만 추리면 줄여 볼 수 있다. 라벨이 제목보다 짧게 줄여 쓴 것(약어나 앞머리만)도 바꿀 대상이다.\n\n주의. 지도의 노드 라벨은 mermaid 코드블록 안이라 9절의 미링크 손 검사가 그것을 본문 미링크로 보고한다. 50차에 graph-theory 의 'Euler 지표', 'Lovász 세타 함수', 'Matroid' 와 optimization 의 'LP 반올림' 이 그렇게 걸렸다. 코드블록 안이므로 전부 오탐이고 링크할 수 없다(mermaid 라벨에 마크다운 링크를 넣으면 깨진다).",
       "createdAt": "2026-10-16T09:05:46.308Z",
       "seq": 2119
+    },
+    {
+      "id": "d504380f",
+      "title": "분야 개관 갈래 재작성의 남은 목록 (51차 집계)",
+      "priority": 50,
+      "note": "큐 항목 7565e952(개관 21 개의 갈래를 읽는 순서로 다시 쓰기)의 진행 집계다. 50차 집계(25907d30)를 갱신한 판이다. 51차(2026-10-16)까지 다시 쓴 개관은 measure-theory(48차), foundations, complex-analysis, functional-analysis, machine-learning, cryptography, category-theory(49차), statistics, graph-theory, optimization, probability(50차), computation, differential-geometry(51차) 열셋이고, order-theory 와 information-theory 는 손대기 전부터 규격을 갖추고 있었다. 남은 여섯은 abstract-algebra, analysis, combinatorics, linear-algebra, number-theory, topology 다.\n\n남은 여섯의 규모(50차 측정. 상대 크기만 본다).\n  linear-algebra 66 링크 9 갈래 위반 12\n  combinatorics 67 링크 8 갈래 위반 27\n  topology 97 링크 8 갈래 위반 43\n  analysis 82 링크 9 갈래 위반 78\n  abstract-algebra 107 링크 8 갈래 위반 147\n  number-theory 162 링크 9 갈래 위반 167\n51차는 computation(54 링크 위반 5)에 11 분, differential-geometry(52 링크 위반 33)에 13 분이 들었다. 위반 수보다 링크 수가 시간을 결정한다. 위반 33 은 갈래 하나를 해체해 앞으로 옮기는 수 하나로 풀렸다.\n\nlinear-algebra 는 꼴이 다르다. 갈래가 10 개이고 'A -> B: 설명' 처럼 한 줄에 문서 둘셋을 화살표로 묶어 적는다. 위반 12 건의 원인은 표현론 갈래(맨 끝)의 lie-groups, lie-algebras, group-representations, schur-polynomials 가 앞 갈래의 grassmannian(공간과 사상), mass-formula 와 niemeier-lattices(격자와 부호), 같은 갈래의 schur-weyl-duality 의 조상인 것과, 무한차원 갈래의 hilbert-spaces 가 앞 갈래의 finite-element-method(수치 선형대수)와 kernel-pca(통계와 데이터)의 조상인 것이다. 갈래 안 순서로 풀리지 않고 갈래 사이 배치를 바꿔야 하며 화살표 묶음을 한 문서 한 줄로 풀어 쓰는 일까지 들어가므로 회차 앞머리에 20 분 이상 잡고 시작한다.\n\n위반이 많은 개관을 푸는 수는 넷이다. (1) 갈래 H2 의 순서를 바꾼다. (2) 한 문서를 다른 갈래로 옮긴다. 50차의 probability 는 위반 10 건을 이동 다섯으로 풀었다. 기초 도구가 뒤 갈래에 있는 것이 위반의 주된 원인이므로 먼저 그것을 찾는다. (3) 갈래를 나눈다. statistics 는 갈래 셋을 다섯으로 늘려 분야 밖 선수 문서의 링크 자리까지 함께 풀었다. (4) 갈래를 해체해 그 문서들을 다른 갈래에 흡수시킨다. 51차의 differential-geometry 가 위반 33 건을 이것 하나로 풀었다. '다발과 접속' 갈래가 세 번째였는데 그 안의 vector-bundles 와 tangent-bundle 이 첫 갈래의 transversality, whitney-embedding 의 조상이고, 맨 끝 '게이지 이론' 갈래의 lie-groups 와 homogeneous-spaces 가 principal-bundles, spin-structures, symmetric-spaces, dirac-operator 의 조상이었다. 다발 둘을 첫 갈래로 흡수하고 Lie 군 둘을 떼어 'Lie 군과 다발' 갈래를 두 번째에 세우니 0 건이 되었다. 갈래 이름이 분류 이름일 때(다발, 계량) 이런 역전이 모이고, 읽는 순서 이름일 때는 적다.\n\ncomputation(51차)은 갈래 여덟을 아홉으로 바꾸었다. '자료구조' 와 '정보이론' 과 '생성모형' 은 그대로 두고, 알고리즘 갈래를 '알고리즘 설계' 와 '대수와 수론의 계산' 으로 나누어 sea-algorithm 과 kedlaya-algorithm 을 암호 갈래 뒤로 보냈고(discrete-logarithm 이 sea-algorithm 의 조상이다), lp-rounding 을 복잡도 갈래로 옮겼고(unique-games 의 조상이다), courcelle-theorem 을 계산 모형 갈래에서 알고리즘 설계로 옮겼고(dynamic-programming 이 조상이다), kolmogorov-complexity 와 martin-lof-randomness 를 계산 가능성 갈래에서 떼어 정보이론 갈래와 합쳐 '정보이론과 무작위성' 으로 두었다(entropy 가 둘의 조상이다).",
+      "createdAt": "2026-10-16T12:52:15.677Z",
+      "seq": 2121
+    },
+    {
+      "id": "85cb6359",
+      "title": "갈래 한 줄 설명의 미링크와 갈래 순서 규칙이 부딪히는 자리",
+      "priority": 50,
+      "note": "4절 본문 링크 규칙과 4.5절 갈래 순서 규칙이 개관의 한 줄 설명에서 부딪힌다. 큐 항목 6f71d977 의 규칙 (3)은 '한 줄 설명 안에 분야 밖 선수 문서를 링크하면 조상 역전이 되므로 그 갈래 첫 줄로 올린다' 고 적는데, 올릴 수 없는 경우가 51차 computation 에서 나왔다.\n\n사례. '[고속 Fourier 변환](fft.md): 분할정복으로 $O(n\\log n)$ 에 이산 Fourier 변환' 에서 미링크 손 검사가 fourier(이산 Fourier 변환)를 보고한다. 설명 안에 링크하면 fourier 가 fft 뒤에 와서 조상 역전이다. 갈래 첫 줄로 올리려 해도 fourier 의 다른 후손 boolean-fourier 가 앞 갈래(복잡도와 근사 한계)에 있어 규칙 (1)에 걸린다. 올릴 수 있는 자리가 없다.\n\n네 번째 수. 설명 문구에서 그 제목 문자열을 없앤다. 'Fourier 계수를 $O(n\\log n)$ 에 계산한다' 로 바꾸면 '이산 Fourier 변환' 도 'Fourier 변환' 도 문자열로 나타나지 않아 손 검사가 조용해지고 순서도 멀쩡하다. 설명은 그 문서가 무엇을 계산하는지를 말하는 자리이므로 제목을 그대로 되풀이할 필요가 없고(4.5절도 '문서 제목을 되풀이하지 않는다' 고 적는다), 개념 이름을 바꿔 적는 것이 규칙 둘을 함께 지키는 길이다. galois-connections 처럼 후손이 모두 같은 갈래 안이나 뒤에 있는 문서는 (3)대로 갈래 첫 줄로 올리면 된다.\n\n오탐 하나. 미링크 손 검사는 긴 제목의 링크 텍스트 안에 짧은 제목이 들어 있으면 짧은 쪽을 보고한다. '[고속 Fourier 변환](fft.md)' 이 있는 문서는 fourier-transform(Fourier 변환)을 늘 미링크로 보고한다. 51차 computation 과 50차 집계의 measure.md 오탐과 같은 종류다. 큐 항목 b9e3aeb5 가 적은 '더 긴 제목이 같은 자리를 덮으면 보고하지 않는' 스크립트가 이것을 거른다.",
+      "createdAt": "2026-10-16T12:52:38.254Z",
+      "seq": 2122
+    },
+    {
+      "id": "76082585",
+      "title": "combinatorics-overview 갈래 재작성은 linear-algebra 와 같은 꼴이다",
+      "priority": 50,
+      "note": "51차에 집으려다 분량을 재고 물린 작업이다. 큐 항목 7565e952 의 남은 여섯 가운데 combinatorics(67 링크 위반 27)는 링크 수로는 computation(54)과 differential-geometry(52) 다음으로 작지만, 실제 분량은 linear-algebra 와 같은 유형이라 한 회차를 통째로 잡아야 한다.\n\n꼴이 다른 점 셋. (1) 한 줄에 문서 둘셋을 화살표나 쉼표로 묶어 적는다. '[생성함수](generating-functions.md) -> [분할수](partitions.md)', '[근계](root-systems.md) -> [Weyl 지표 공식](weyl-character-formula.md) -> [Schur 다항식](schur-polynomials.md)', '[theta 급수](theta-series.md), [Siegel–Weil 공식](siegel-weil.md)' 꼴이 대수적 조합론과 격자와 부호 갈래에 몰려 있다. 4.5절은 문서마다 한 줄에 한 줄 설명을 요구하므로 이 묶음을 풀면서 설명을 새로 지어야 하는 문서가 18 개다(근계, Weyl 지표 공식, Schur 다항식, Littlewood–Richardson 규칙, Schubert 계산, Schur–Weyl 쌍대성, Brauer 대수, Kazhdan–Lusztig 다항식, 범주 O, MV 순환, Casselman–Shalika 공식, 구 채우기, Niemeier 격자, Schellekens 목록, theta 급수, Siegel–Weil 공식, Mock 모듈러 형식, Dyson 의 rank 와 crank). 설명은 그 문서가 무엇을 정의하거나 증명하는지여야 하므로 18 개 문서를 열어 보고 써야 한다. (2) '## 그래프와 매트로이드' 와 '## 대수적 조합론' 갈래에 H2 바로 아래 설명 문단이 있다. 4.5절이 정한 첫 줄('먼저 읽을 갈래', '시작 문서')과 자리를 다투므로 그 문단의 내용을 첫 줄 꼴로 옮기거나 지워야 한다. (3) 갈래 셋(극단 조합론, 분할과 조합적 종, 설계와 접촉 구조)이 다음 H2 앞에 빈 줄 없이 붙어 있다.\n\n위반 27 건의 원인은 거의 하나다. graphs 가 16 건, matchings 가 4 건, matroids 가 1 건으로 '## 그래프와 매트로이드' 갈래가 여섯 번째인데 그 안의 세 문서가 앞 갈래(극단 조합론, 설계와 접촉 구조, 확률적 방법과 무작위 구조)의 ramsey-theory, turan-theorem, dilworth-theorem, sperner-theorem, erdos-ko-rado, littlewood-offord, zarankiewicz-problem, szemeredi-trotter, probabilistic-method, erdos-renyi-graphs, potts-model 등의 조상이다. graphs 와 matchings 와 matroids 는 그래프 이론이 주 분야이므로(4.5절은 다른 분야가 주인 문서는 관련이 깊을 때만 넣는다고 한다) 이 갈래를 해체해 graphs 를 첫 갈래의 '먼저 읽을 것' 으로 올리고 perfect-graphs 만 남기는 수가 있다. 51차 differential-geometry 가 같은 수로 위반 33 건을 0 으로 만들었다. 나머지 넷은 laplace-method 가 partitions 뒤에 와야 하는 것(세기의 기초 갈래 안 순서)과 siegel-weil, theta-series 가 niemeier-lattices, schellekens-list 앞에 와야 하는 것(격자와 부호 갈래 안 순서)이라 갈래 안 재배치로 풀린다.",
+      "createdAt": "2026-10-16T12:53:42.518Z",
+      "seq": 2123
     },
     {
       "id": "08e59419",
