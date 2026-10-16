@@ -2,7 +2,7 @@
 
 # 개요
 
-Boolean 값 모형은 논리식의 값을 참과 거짓 둘 대신 완비 [Boolean 대수](boolean-algebras.md)의 원소로 주는 모형이다. [강제법](forcing.md)의 강제 관계를 값으로 바꿔 쓴 것이고, 일반 필터를 고르는 단계 없이 독립성 증명을 할 수 있다.
+Boolean 값 모형은 논리식의 값을 참과 거짓 둘 대신 완비 [Boole 대수](boolean-algebras.md)의 원소로 주는 모형이다. [강제법](forcing.md)의 강제 관계를 값으로 바꿔 쓴 것이고, 일반 필터를 고르는 단계 없이 독립성 증명을 할 수 있다.
 
 강제 순서마다 완비 Boolean 대수가 하나 딸리고, 그 대수 위의 Boolean 값 모형이 강제 확대와 같은 문장들을 만족한다.
 
@@ -79,7 +79,7 @@ $B$ 의 극대 필터 $U$ 로 $V^B$ 를 나누면 두 값 모형이 되고, 이 
 
 ## 선수지식
 
-- [Boolean algebra](boolean-algebras.md)
+- [Boole 대수](boolean-algebras.md)
 - [강제법](forcing.md)
 
 ## 더 알아보기

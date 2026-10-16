@@ -4,7 +4,7 @@
 
 Heyting algebra 는 유계 [격자](order-lattices.md)에 함의 연산을 하나 더 붙인 대수 구조다. 함의는 만남 연산의 오른쪽 수반으로 유일하게 결정되고, 이 조건 하나가 직관주의 명제논리의 정리를 대수적으로 재현한다.
 
-Boolean algebra 가 고전 명제논리의 대수적 대응물이듯 Heyting algebra 는 [직관주의 논리](intuitionism.md)의 대수적 대응물이다. 차이는 배중률에 해당하는 항등식이 성립하지 않아도 된다는 것뿐이고, 분배법칙과 de Morgan 법칙의 절반과 이중부정 도입은 남는다.
+[Boole 대수](boolean-algebras.md)가 고전 명제논리의 대수적 대응물이듯 Heyting algebra 는 [직관주의 논리](intuitionism.md)의 대수적 대응물이다. 차이는 배중률에 해당하는 항등식이 성립하지 않아도 된다는 것뿐이고, 분배법칙과 de Morgan 법칙의 절반과 이중부정 도입은 남는다.
 
 주요 예는 위상공간의 열린집합 격자와 [Kripke 프레임](kripke-semantics.md)의 상향닫힌 집합 격자다. 두 예 모두 여집합이 구조를 벗어나기 때문에 배중률을 잃는다.
 
@@ -112,7 +112,7 @@ $\neg\neg a \le a$ 와 $\neg(a \wedge b) = \neg a \vee \neg b$ 와 배중률 $a 
 
 1. 모든 $a$ 에 대해 $a \vee \neg a = 1$ 이다.
 2. 모든 $a$ 에 대해 $\neg\neg a = a$ 다.
-3. $H$ 는 [Boolean algebra](boolean-algebras.md) 이며 $a \to b = \neg a \vee b$ 다.
+3. $H$ 는 Boole 대수이며 $a \to b = \neg a \vee b$ 다.
 
 *증명의 요지.* 1에서 2는 $a \vee \neg a = 1$ 의 양변에 $\neg\neg a$ 를 만나게 하고 $\neg a \wedge \neg\neg a = 0$ 을 쓴다. 2에서 3은 $\neg$ 가 대합이 되어 de Morgan 법칙이 양방향 모두 회복되고 의사보수가 보수가 된다. 3에서 1은 자명하다. ∎
 

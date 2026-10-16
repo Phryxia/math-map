@@ -66,7 +66,7 @@ $T$ 의 유한 부분집합 전체를 $I$ 로 두고, 각 $i \in I$ 에 $i$ 의 
 
 ## Boolean 값 모형과의 관계
 
-완비 [Boolean 대수](boolean-algebras.md) 위의 [Boolean 값 모형](boolean-valued-models.md)을 극대 필터로 나누면 두 값 구조가 나온다. 초곱은 이 조작에서 대수를 멱집합 대수로, 필터를 초필터로 잡은 경우다. 일반 필터로 나누면 강제 확대가 나온다.
+완비 [Boole 대수](boolean-algebras.md) 위의 [Boolean 값 모형](boolean-valued-models.md)을 극대 필터로 나누면 두 값 구조가 나온다. 초곱은 이 조작에서 대수를 멱집합 대수로, 필터를 초필터로 잡은 경우다. 일반 필터로 나누면 강제 확대가 나온다.
 
 # 활용
 

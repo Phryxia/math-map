@@ -72,7 +72,7 @@ $$
 (A\cup B)^c=A^c\cap B^c,\qquad (A\cap B)^c=A^c\cup B^c
 $$
 
-증명은 원소 수준에서 $\lnot(P\lor Q)\iff\lnot P\land\lnot Q$ 를 확인하는 것이다. 이 구조를 추상화한 것이 [Boolean algebra](boolean-algebras.md) 다.
+증명은 원소 수준에서 $\lnot(P\lor Q)\iff\lnot P\land\lnot Q$ 를 확인하는 것이다. 이 구조를 추상화한 것이 [Boole 대수](boolean-algebras.md)다.
 
 ## 멱집합의 크기
 
@@ -113,7 +113,7 @@ $R=\lbrace x:x\notin x\rbrace$ 를 집합으로 인정하면 $R\in R\iff R\notin
 
 - [셈의 기본 원리](counting-principles.md)
 - [1차 논리](first-order-logic.md)
-- [Boolean algebra](boolean-algebras.md)
+- [Boole 대수](boolean-algebras.md)
 - [ZFC 공리계](zfc-axioms.md)
 - [수학적 플라톤주의](mathematical-platonism.md)
 

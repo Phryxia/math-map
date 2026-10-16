@@ -1,24 +1,24 @@
-# Boolean algebra
+# Boole 대수
 
 # 개요
 
-Boolean algebra 는 "합집합, 교집합, 여집합"의 규칙만 뽑아낸 대수 구조다. 집합 연산, 고전 명제논리의 연결사, 논리회로의 게이트가 모두 같은 법칙을 따른다는 관찰에서 출발한다.
+Boole 대수(Boolean algebra)는 "합집합, 교집합, 여집합"의 규칙만 뽑아낸 대수 구조다. 집합 연산, 고전 명제논리의 연결사, 논리회로의 게이트가 모두 같은 법칙을 따른다는 관찰에서 출발한다.
 
 이 구조는 두 방향에서 볼 수 있다. 하나는 항등식 목록으로 정의된 대수이고, 다른 하나는 보수를 가지는 분배 [부분순서](partial-orders.md), 즉 [격자](order-lattices.md)다. 두 정의는 동치이며, 순서 쪽이 "정보의 강약"이라는 직관을 준다.
 
-핵심 결과는 Stone 표현 정리다. 모든 Boolean algebra 는 어떤 [집합](sets.md)의 부분집합족과 동형이다. 유한 경우에는 그 집합이 원자들의 집합이고, 무한 경우에는 위상공간(Stone 공간)의 열린닫힌 집합족이 된다. 즉 이 구조의 추상적 공리들은 결국 집합 연산 이상도 이하도 아니다.
+핵심 결과는 Stone 표현 정리다. 모든 Boole 대수는 어떤 [집합](sets.md)의 부분집합족과 동형이다. 유한 경우에는 그 집합이 원자들의 집합이고, 무한 경우에는 위상공간(Stone 공간)의 열린닫힌 집합족이 된다. 즉 이 구조의 추상적 공리들은 결국 집합 연산 이상도 이하도 아니다.
 
 # 직관
 
-Boolean algebra 는 예와 아니오가 언제나 갈리는 세계의 대수다. 원소를 명제로 읽으면 $a \vee \neg a = 1$ 은 모든 명제가 참이거나 거짓이라는 요구이고, $\neg\neg a = a$ 는 부정을 두 번 하면 제자리로 온다는 요구다.
+Boole 대수는 예와 아니오가 언제나 갈리는 세계의 대수다. 원소를 명제로 읽으면 $a \vee \neg a = 1$ 은 모든 명제가 참이거나 거짓이라는 요구이고, $\neg\neg a = a$ 는 부정을 두 번 하면 제자리로 온다는 요구다.
 
-함의가 있는 격자라고 해서 이 두 요구가 따라오지는 않는다. 열린집합 격자에서는 여집합이 격자 밖으로 나가므로 보수가 존재하지 않고, 그런 격자가 [Heyting algebra](heyting-algebras.md)다. Boolean algebra 는 보수의 존재를 공리로 요구한다.
+함의가 있는 격자라고 해서 이 두 요구가 따라오지는 않는다. 열린집합 격자에서는 여집합이 격자 밖으로 나가므로 보수가 존재하지 않고, 그런 격자가 [Heyting algebra](heyting-algebras.md)다. Boole 대수는 보수의 존재를 공리로 요구한다.
 
 # 정의
 
 ## 공리적 정의
 
-**정의.** Boolean algebra 는 집합 $B$ 와 이항연산 $\wedge$ , $\vee$ , 단항연산 $\neg$ , 상수 $0$ , $1$ 의 조합으로, 모든 원소에 대해 다음이 성립하는 것이다.
+**정의.** Boole 대수는 집합 $B$ 와 이항연산 $\wedge$ , $\vee$ , 단항연산 $\neg$ , 상수 $0$ , $1$ 의 조합으로, 모든 원소에 대해 다음이 성립하는 것이다.
 
 $$
 a \vee b = b \vee a, \qquad a \wedge b = b \wedge a
@@ -40,13 +40,13 @@ $$
 
 ## 격자 정의
 
-**정의(동치).** Boolean algebra 는 보수를 가지는 유계 분배격자다. 여기서 순서는 다음으로 정의된다.
+**정의(동치).** Boole 대수는 보수를 가지는 유계 분배격자다. 여기서 순서는 다음으로 정의된다.
 
 $$
 a \le b \iff a \wedge b = a \iff a \vee b = b
 $$
 
-이 순서에 대해 $a \wedge b$ 는 하한, $a \vee b$ 는 상한이다. 함의는 다음처럼 정의할 수 있고, 이렇게 정의하면 Boolean algebra 는 $\neg\neg a = a$ 를 만족하는 Heyting algebra 와 같아진다.
+이 순서에 대해 $a \wedge b$ 는 하한, $a \vee b$ 는 상한이다. 함의는 다음처럼 정의할 수 있고, 이렇게 정의하면 Boole 대수는 $\neg\neg a = a$ 를 만족하는 Heyting algebra 와 같아진다.
 
 $$
 a \to b \thickspace:=\thickspace \neg a \vee b
@@ -54,15 +54,15 @@ $$
 
 ## 멱집합 대수, Lindenbaum–Tarski 대수, Boolean 환
 
-**멱집합 대수.** 집합 $X$ 에 대해 $P(X)$ 는 합집합, 교집합, 여집합으로 Boolean algebra 다. 이것이 원형이다. 더 일반적으로 $X$ 의 부분집합들 중 합집합, 교집합, 여집합에 닫힌 족을 field of sets 라 하며, 이것도 Boolean algebra 다. 유한집합과 여유한집합들만 모은 족이 대표적인 부분 예다.
+**멱집합 대수.** 집합 $X$ 에 대해 $P(X)$ 는 합집합, 교집합, 여집합으로 Boole 대수다. 이것이 원형이다. 더 일반적으로 $X$ 의 부분집합들 중 합집합, 교집합, 여집합에 닫힌 족을 field of sets 라 하며, 이것도 Boole 대수다. 유한집합과 여유한집합들만 모은 족이 대표적인 부분 예다.
 
-**Lindenbaum–Tarski 대수.** 고전 명제논리의 논리식들을 논리적 동치로 나눈 몫은 Boolean algebra 다. 연산은 연결사에서 유도되고 순서는 도출 가능성이다.
+**Lindenbaum–Tarski 대수.** 고전 명제논리의 논리식들을 논리적 동치로 나눈 몫은 Boole 대수다. 연산은 연결사에서 유도되고 순서는 도출 가능성이다.
 
 $$
 [\varphi] \le [\psi] \iff \varphi \vdash \psi
 $$
 
-변수가 $n$ 개면 이 대수는 크기 $2$ 의 $2^n$ 거듭제곱, 즉 $n$ 개 생성원 위의 자유 Boolean algebra 다. 변수가 가산무한이면 원자가 하나도 없는 무한 대수가 된다.
+변수가 $n$ 개면 이 대수는 크기 $2$ 의 $2^n$ 거듭제곱, 즉 $n$ 개 생성원 위의 자유 Boole 대수다. 변수가 가산무한이면 원자가 하나도 없는 무한 대수가 된다.
 
 **Boolean ring.** 모든 원소가 멱등인 [환](rings.md), 즉 모든 $x$ 에 대해 $x$ 의 제곱이 $x$ 인 단위원 있는 가환환을 Boolean ring 이라 한다. 두 구조는 다음 번역으로 서로 옮겨진다.
 
@@ -80,27 +80,27 @@ $$
 
 **정의.** $B$ 의 부분집합 $F$ 가 필터라 함은 $1 \in F$ 이고, 위로 닫혀 있고, 유한 만남에 닫혀 있다는 뜻이다. $0$ 을 포함하지 않는 극대 필터를 초필터(ultrafilter)라 한다.
 
-$F$ 가 초필터일 필요충분조건은 모든 $a$ 에 대해 $a \in F$ 와 $\neg a \in F$ 중 정확히 하나가 성립하는 것이다. 초필터는 두 원소 Boolean algebra 로 가는 준동형과 일대일 대응하고, Boolean ring 의 언어로는 [극대 아이디얼](prime-ideals.md)의 여집합이다.
+$F$ 가 초필터일 필요충분조건은 모든 $a$ 에 대해 $a \in F$ 와 $\neg a \in F$ 중 정확히 하나가 성립하는 것이다. 초필터는 두 원소 Boole 대수로 가는 준동형과 일대일 대응하고, Boolean ring 의 언어로는 [극대 아이디얼](prime-ideals.md)의 여집합이다.
 
 # 성질
 
-## 유한 Boolean algebra 의 구조
+## 유한 Boole 대수의 구조
 
 **정의.** $0$ 이 아닌 원소 $a$ 가 원자(atom)라 함은 $0 \lt x \le a$ 인 $x$ 가 $a$ 뿐이라는 뜻이다.
 
-**정리.** 유한 Boolean algebra $B$ 는 원자들의 집합 $\mathrm{At}(B)$ 의 멱집합 대수와 동형이다. 따라서 유한 Boolean algebra 의 크기는 항상 2의 거듭제곱이며, 크기가 같으면 동형이다.
+**정리.** 유한 Boole 대수 $B$ 는 원자들의 집합 $\mathrm{At}(B)$ 의 멱집합 대수와 동형이다. 따라서 유한 Boole 대수의 크기는 항상 2의 거듭제곱이며, 크기가 같으면 동형이다.
 
 *증명의 요지.* 각 $a$ 에 대해 $a$ 아래의 원자들을 모으는 사상 $a \mapsto \lbrace p \in \mathrm{At}(B) : p \le a\rbrace$ 를 본다. 유한성에서 $a$ 는 자기 아래 원자들의 이음과 같다(아니라면 차이 부분에서 더 작은 원소를 계속 잡아 무한 하강열이 나온다). 분배성에서 이 사상이 연산을 보존하고, 보수의 존재에서 단사임이 나온다. 전사성은 원자들의 임의의 부분집합의 이음을 취하면 된다.
 
-무한에서는 이것이 깨진다. 가산 생성 자유 Boolean algebra 처럼 원자가 전혀 없는 무한 대수(atomless)가 존재한다.
+무한에서는 이것이 깨진다. 가산 생성 자유 Boole 대수 처럼 원자가 전혀 없는 무한 대수(atomless)가 존재한다.
 
 ## Stone 표현 정리
 
-**정리(Stone, 1936).** 모든 Boolean algebra $B$ 는 어떤 field of sets 와 동형이다. 더 정확히, $B$ 의 초필터 전체에 적절한 위상을 주면 콤팩트 Hausdorff 이고 완전분리된 공간 $S(B)$ 가 되고, $B$ 는 $S(B)$ 의 열린닫힌 집합들이 이루는 대수와 동형이다[^1].
+**정리(Stone, 1936).** 모든 Boole 대수 $B$ 는 어떤 field of sets 와 동형이다. 더 정확히, $B$ 의 초필터 전체에 적절한 위상을 주면 콤팩트 Hausdorff 이고 완전분리된 공간 $S(B)$ 가 되고, $B$ 는 $S(B)$ 의 열린닫힌 집합들이 이루는 대수와 동형이다[^1].
 
 *증명의 요지.* 각 $a$ 에 대해 $U_a$ 를 $a$ 를 포함하는 초필터들의 집합이라 하자. 이 집합들을 기저로 삼아 [위상](topology.md)을 준다. 사상 $a \mapsto U_a$ 가 연산을 보존함은 초필터의 성질에서 바로 나온다. 단사성이 핵심인데, $a \ne b$ 이면 어느 한쪽만 포함하는 초필터가 존재해야 한다. 이것이 Boolean 소 아이디얼 정리이며, [선택공리](axiom-of-choice.md)보다 약하지만 **ZF**(Zermelo–Fraenkel 집합론) 만으로는 증명되지 않는다.
 
-이 대응은 Boolean algebra 의 [범주](category.md)와 Stone 공간의 범주 사이의 쌍대 동치로 확장된다. 대수의 질문이 위상의 질문으로 바뀌며, 예를 들어 $S(B)$ 의 [콤팩트성](compactness.md)는 명제논리의 compactness 정리와 같은 사실이다.
+이 대응은 Boole 대수의 [범주](category.md)와 Stone 공간의 범주 사이의 쌍대 동치로 확장된다. 대수의 질문이 위상의 질문으로 바뀌며, 예를 들어 $S(B)$ 의 [콤팩트성](compactness.md)는 명제논리의 compactness 정리와 같은 사실이다.
 
 ## 완전성과 고전 명제논리
 
@@ -110,13 +110,13 @@ $$
 \vdash \varphi \iff v(\varphi) = 1 \ \text{for every Boolean algebra valuation } v
 $$
 
-임의의 Boolean algebra 에서 값이 1이 아니면 초필터를 하나 잡아 두 원소 대수로 보낼 수 있다. 두 원소 대수만으로 충분한 점이 Heyting 경우와 다르고, 고전 명제논리는 진리표로 결정 가능하다.
+임의의 Boole 대수에서 값이 1이 아니면 초필터를 하나 잡아 두 원소 대수로 보낼 수 있다. 두 원소 대수만으로 충분한 점이 Heyting 경우와 다르고, 고전 명제논리는 진리표로 결정 가능하다.
 
 # 활용
 
 ## 집합 연산과 확률
 
-멱집합 대수는 집합론의 기본 계산 도구다. 사건들의 족이 합집합·여집합에 닫혀 있다는 요구가 [측도](measure.md)에서의 대수(algebra of sets) 개념이고, 여기에 가산 연산을 요구하면 $\sigma$ 대수가 된다. 측도를 영집합으로 나눈 몫인 measure algebra 는 원자가 없는 완비 Boolean algebra 의 대표적 예이며, [유한 확률 공간](probability.md)에서는 원자가 표본점이 된다. [포함배제 원리](inclusion-exclusion.md)도 이 대수 안의 항등식으로 읽을 수 있다.
+멱집합 대수는 집합론의 기본 계산 도구다. 사건들의 족이 합집합·여집합에 닫혀 있다는 요구가 [측도](measure.md)에서의 대수(algebra of sets) 개념이고, 여기에 가산 연산을 요구하면 $\sigma$ 대수가 된다. 측도를 영집합으로 나눈 몫인 measure algebra 는 원자가 없는 완비 Boole 대수의 대표적 예이며, [유한 확률 공간](probability.md)에서는 원자가 표본점이 된다. [포함배제 원리](inclusion-exclusion.md)도 이 대수 안의 항등식으로 읽을 수 있다.
 
 ## 논리회로와 최적화
 
@@ -128,7 +128,7 @@ $$
 
 ## 순서론에서의 위치
 
-Boolean algebra 는 격자 이론의 여러 계층 중 가장 강한 조건을 만족하는 층에 있다. 분배성만 요구하면 분배격자, 여기에 상대 의사보수를 요구하면 Heyting algebra, 보수까지 요구하면 Boolean algebra 다. 이 계층은 각각 고전논리 이하의 논리 체계들과 정확히 대응하고, 포기하는 법칙마다 남는 구조가 다르다[^2].
+Boole 대수는 격자 이론의 여러 계층 중 가장 강한 조건을 만족하는 층에 있다. 분배성만 요구하면 분배격자, 여기에 상대 의사보수를 요구하면 Heyting algebra, 보수까지 요구하면 Boole 대수다. 이 계층은 각각 고전논리 이하의 논리 체계들과 정확히 대응하고, 포기하는 법칙마다 남는 구조가 다르다[^2].
 
 [^1]: Stanford Encyclopedia of Philosophy, "The Mathematics of Boolean Algebra", https://plato.stanford.edu/entries/boolalg-math/
 [^2]: Stanford Encyclopedia of Philosophy, "Intuitionistic Logic", https://plato.stanford.edu/entries/logic-intuitionistic/

@@ -16,7 +16,7 @@ $V$ 안의 측도 $0$ 집합 $N$ 을 하나 고른다. 조건 $B$ 의 측도가 
 
 ## 무작위 대수
 
-$\mathcal B$ 를 $\lbrack 0,1\rbrack$ 의 Borel 집합족, $\mathcal N$ 을 Lebesgue [측도](measure.md) $0$ 인 집합들의 아이디얼이라 할 때 몫 $\mathcal B/\mathcal N$ 을 **무작위 대수**라 한다. 완비 [Boolean 대수](boolean-algebras.md)이고, $0$ 이 아닌 원소는 측도가 양수인 Borel 집합의 동치류다.
+$\mathcal B$ 를 $\lbrack 0,1\rbrack$ 의 Borel 집합족, $\mathcal N$ 을 Lebesgue [측도](measure.md) $0$ 인 집합들의 아이디얼이라 할 때 몫 $\mathcal B/\mathcal N$ 을 **무작위 대수**라 한다. 완비 [Boole 대수](boolean-algebras.md)이고, $0$ 이 아닌 원소는 측도가 양수인 Borel 집합의 동치류다.
 
 강제법의 조건 순서는 포함관계이고, $B' \le B$ 는 $B' \setminus B$ 의 측도가 $0$ 이라는 뜻이다.
 
