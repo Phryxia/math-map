@@ -104,7 +104,7 @@ $\xi$ 의 로그 미분을 임계띠를 둘러싼 직사각형에서 적분하�
 
 ## 명시 공식
 
-$-\zeta'/\zeta$ 를 Perron 공식에 넣고 유수 정리로 계산하면 [소수 정리](prime-number-theorem.md)의 명시 공식이 나온다. $s=1$ 의 극이 주항을 주고 비자명한 영점이 오차항을 준다.
+$-\zeta'/\zeta$ 를 Perron 공식에 넣고 [유수 정리](residue-theorem.md)로 계산하면 [소수 정리](prime-number-theorem.md)의 명시 공식이 나온다. $s=1$ 의 극이 주항을 주고 비자명한 영점이 오차항을 준다.
 
 ## L 함수
 

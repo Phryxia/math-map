@@ -99,7 +99,7 @@ $f(x)=e^{-\pi x^2}$ 의 변환은 $\hat f(\xi)=e^{-\pi\xi^2}$ 로 자기 자신�
 - **완만 분포.** [Schwartz 분포](schwartz-distributions.md) 가운데 $\mathcal S(\mathbb R)$ 의 쌍대에 드는 것에는 $\widehat T(\varphi)=T(\hat\varphi)$ 로 변환이 확장된다. 변환이 $\mathcal S(\mathbb R)$ 의 선형 동형이라는 성질이 이 정의를 받친다.
 - **Poisson 합 공식.** [Poisson 합 공식](poisson-summation.md)은 적당한 조건에서 $\sum_{n\in\mathbb Z}f(n)=\sum_{n\in\mathbb Z}\hat f(n)$ 을 준다. 격자 위의 합을 변환의 합으로 바꾸는 데 쓰인다.
 - **Sobolev 공간.** [Sobolev 공간](sobolev-spaces.md)의 노름은 $\hat f$ 에 $(1+\vert\xi\vert^2)^{s/2}$ 를 곱한 $L^2$ 노름으로 쓸 수 있다. 미분이 곱셈으로 바뀌는 성질이 정수 $s$ 를 실수 $s$ 로 넓힌다.
-- **상수계수 편미분방정식.** 열방정식 $\partial_t u=\partial_x^2u$ 에 $x$ 에 대한 변환을 적용하면 $\partial_t\hat u=-4\pi^2\xi^2\hat u$ 로 $\xi$ 마다 상미분방정식이 되고, 해 $\hat u(t,\xi)=e^{-4\pi^2\xi^2t}\hat u(0,\xi)$ 를 역변환하면 Gauss 핵과의 합성곱이 나온다.
+- **상수계수 편미분방정식.** 열방정식 $\partial_t u=\partial_x^2u$ 에 $x$ 에 대한 변환을 적용하면 $\partial_t\hat u=-4\pi^2\xi^2\hat u$ 로 $\xi$ 마다 [상미분방정식](ordinary-differential-equations.md)이 되고, 해 $\hat u(t,\xi)=e^{-4\pi^2\xi^2t}\hat u(0,\xi)$ 를 역변환하면 Gauss 핵과의 합성곱이 나온다.
 
 [^1]: Elias M. Stein, Rami Shakarchi, *Fourier Analysis: An Introduction*, Princeton University Press, 2003, 5 장. 반전 공식과 Plancherel 정리의 증명이 여기 있다.
 

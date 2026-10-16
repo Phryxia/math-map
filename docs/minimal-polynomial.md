@@ -74,7 +74,7 @@ $\chi\_T(T)=0$ 이 Cayley–Hamilton 정리다. $k=1$ 인 경우, 곧 $m\_T=\chi
 
 *정리.* $T$ 가 대각화 가능한 것과 $m\_T$ 가 $k$ 안에서 서로 다른 일차식들의 곱인 것이 동치다[^1].
 
-*증명의 요지.* 대각화되면 서로 다른 고윳값 $\lambda\_1,\dots,\lambda\_r$ 에 대해 $\prod\_i(T-\lambda\_iI)$ 가 각 고유벡터를 $0$ 으로 보내므로 소멸 다항식이고, 앞의 나눗셈 판정으로 $m\_T$ 가 그것을 나눈다. 역으로 $m\_T=\prod\_i(x-\lambda\_i)$ 가 서로 다른 일차식들의 곱이면 중국인의 나머지 정리로 다음이 성립한다.
+*증명의 요지.* 대각화되면 서로 다른 고윳값 $\lambda\_1,\dots,\lambda\_r$ 에 대해 $\prod\_i(T-\lambda\_iI)$ 가 각 고유벡터를 $0$ 으로 보내므로 소멸 다항식이고, 앞의 나눗셈 판정으로 $m\_T$ 가 그것을 나눈다. 역으로 $m\_T=\prod\_i(x-\lambda\_i)$ 가 서로 다른 일차식들의 곱이면 [중국인의 나머지 정리](chinese-remainder-theorem.md)로 다음이 성립한다.
 
 $$
 k\lbrack x\rbrack/(m\_T)\cong\bigoplus\_{i=1}^{r}k\lbrack x\rbrack/(x-\lambda\_i)

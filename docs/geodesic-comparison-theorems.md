@@ -16,7 +16,7 @@ $$
 
 의 해 $J$ 의 크기가 말해 준다. 단면곡률이 상수 $\kappa$ 이면 이 방정식은 $\gamma$ 에 수직인 성분에서 $\vert J\vert''+\kappa\vert J\vert=0$ 이 되고, $\vert J(0)\vert=0$, $\vert J\vert'(0)=1$ 인 해는 $\kappa\gt0$ 에서 $\sin(\sqrt\kappa\thinspace t)/\sqrt\kappa$, $\kappa=0$ 에서 $t$, $\kappa\lt0$ 에서 $\sinh(\sqrt{-\kappa}\thinspace t)/\sqrt{-\kappa}$ 다.
 
-첫 해는 $t=\pi/\sqrt\kappa$ 에서 다시 $0$ 이 되고 나머지 둘은 $0$ 이 되지 않는다. 곡률이 상수가 아니면 방정식의 계수가 변하지만, 계수에 상한이나 하한이 있으면 2계 선형 상미분방정식의 해를 계수끼리 견주는 Sturm 비교로 $\vert J\vert$ 를 위 세 함수와 견줄 수 있다. 곡률이 큰 쪽이 해를 더 빨리 $0$ 으로 되돌리므로 켤레점이 더 이르게 나타난다.
+첫 해는 $t=\pi/\sqrt\kappa$ 에서 다시 $0$ 이 되고 나머지 둘은 $0$ 이 되지 않는다. 곡률이 상수가 아니면 방정식의 계수가 변하지만, 계수에 상한이나 하한이 있으면 2계 선형 [상미분방정식](ordinary-differential-equations.md)의 해를 계수끼리 견주는 Sturm 비교로 $\vert J\vert$ 를 위 세 함수와 견줄 수 있다. 곡률이 큰 쪽이 해를 더 빨리 $0$ 으로 되돌리므로 켤레점이 더 이르게 나타난다.
 
 # 정의
 

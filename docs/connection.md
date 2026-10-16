@@ -52,7 +52,7 @@ $$
 
 ## 평행이동
 
-곡선 $\gamma\colon\lbrack 0,1\rbrack\to M$ 을 따르는 단면 $s$ 가 $\nabla_{\dot\gamma}s=0$ 을 만족하면 $\gamma$ 를 따라 **평행**하다고 한다. 좌표에서 이 조건은 성분에 대한 1계 선형 상미분방정식이다.
+곡선 $\gamma\colon\lbrack 0,1\rbrack\to M$ 을 따르는 단면 $s$ 가 $\nabla_{\dot\gamma}s=0$ 을 만족하면 $\gamma$ 를 따라 **평행**하다고 한다. 좌표에서 이 조건은 성분에 대한 1계 선형 [상미분방정식](ordinary-differential-equations.md)이다.
 
 $$
 \dot s^b(t)+\sum_{i,a}\Gamma^b\_{ia}(\gamma(t))\thinspace\dot\gamma^i(t)\thinspace s^a(t)=0

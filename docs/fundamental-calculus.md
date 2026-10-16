@@ -106,7 +106,7 @@ $\int_0^3 2t\thinspace dt = 9$ 이고, 원시함수에 더한 상수는 양 끝�
 
 [상미분방정식](ordinary-differential-equations.md)을 푸는 첫 단계는 양변을 적분해 초기조건을 반영한 적분방정식으로 바꾸는 것이고, 이 변환이 기본 정리다. Picard 반복법은 그 적분방정식에 [Banach 부동점 정리](banach-fixed-point.md)를 적용한다.
 
-[정칙함수](holomorphic-functions.md)의 경로적분이 경로에 무관하다는 Cauchy 적분 정리가 원시함수의 존재에 해당하는 복소판이고, 여기서 Cauchy 적분 공식과 유수 정리가 나온다.[^1]
+[정칙함수](holomorphic-functions.md)의 경로적분이 경로에 무관하다는 Cauchy 적분 정리가 원시함수의 존재에 해당하는 복소판이고, 여기서 Cauchy 적분 공식과 [유수 정리](residue-theorem.md)가 나온다.[^1]
 
 [^1]: Jiří Lebl, *Basic Analysis*, The fundamental theorem of calculus. 두 형태의 정리와 증명, 연속성 가정의 역할. https://www.jirka.org/ra/html/sec_ftc.html
 

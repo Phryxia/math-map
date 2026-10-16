@@ -95,7 +95,7 @@ Hedge 판본의 갱신은 선형화한 손실에 [KL divergence](kl-divergence.m
 - [선형계획법](linear-programming.md)의 포장 문제와 덮개 문제에서 제약마다 가중치를 두고 위반된 제약의 가중치를 올리면, $O(\varepsilon^{-2}\log m)$ 회차로 $(1+\varepsilon)$ 근사해를 얻는다. $m$ 은 제약 개수다.
 - 부스팅에서 분류가 틀린 표본의 가중치를 올리는 갱신이 이 절차이고, 약한 학습기의 이점이 $\gamma$ 이면 훈련오차가 회차에 지수로 줄어든다.
 - [다중 슬롯머신 문제](multi-armed-bandits.md)는 고른 선택지의 손실만 공개되는 판본이다. 손실벡터 전체를 못 보므로 중요도 가중으로 추정값을 만들어 같은 갱신에 넣고, 후회 상한의 $\log n$ 이 $n$ 으로 바뀐다.
-- 최대 유량과 최소 컷의 근사, 희소화, 반정부호 계획의 근사 알고리즘이 제약의 가중치를 이 규칙으로 갱신한다[^3].
+- 최대 유량과 최소 컷의 근사, 희소화, 반정부호 계획의 [근사 알고리즘](approximation-algorithms.md)이 제약의 가중치를 이 규칙으로 갱신한다[^3].
 
 [^1]: Nicolò Cesa-Bianchi, Gábor Lugosi, *Prediction, Learning, and Games*, Cambridge University Press (2006), 정리 3.7.
 

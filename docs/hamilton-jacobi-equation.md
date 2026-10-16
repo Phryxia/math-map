@@ -2,7 +2,7 @@
 
 # 개요
 
-Hamilton–Jacobi 방정식은 Hamilton 계의 운동을 함수 하나가 만족하는 1차 편미분방정식으로 적는다. [Hamilton 역학](hamiltonian-mechanics.md)의 정준방정식은 $2n$ 개의 연립 상미분방정식이지만, 생성함수 $S(q,t)$ 를
+Hamilton–Jacobi 방정식은 Hamilton 계의 운동을 함수 하나가 만족하는 1차 편미분방정식으로 적는다. [Hamilton 역학](hamiltonian-mechanics.md)의 정준방정식은 $2n$ 개의 연립 [상미분방정식](ordinary-differential-equations.md)이지만, 생성함수 $S(q,t)$ 를
 
 $$
 \frac{\partial S}{\partial t}+H\left(q,\frac{\partial S}{\partial q}\right)=0

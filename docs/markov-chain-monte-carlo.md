@@ -94,7 +94,7 @@ $$
 
 ## 점근분산과 유효표본수
 
-궤적은 독립이 아니므로 표본평균의 분산이 같은 크기의 독립표본보다 크다. 중심극한정리가 성립하는 경우 $\sqrt n$ 배 한 오차의 점근분산은
+궤적은 독립이 아니므로 표본평균의 분산이 같은 크기의 독립표본보다 크다. [중심극한정리](central-limit-theorem.md)가 성립하는 경우 $\sqrt n$ 배 한 오차의 점근분산은
 
 $$
 \sigma^2=\gamma_0+2\sum_{k=1}^{\infty}\gamma_k,\qquad \gamma_k=\mathrm{Cov}\big(f(X_0),f(X_k)\big)
