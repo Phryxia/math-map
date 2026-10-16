@@ -95,7 +95,7 @@ $$
 
 ## Arthur 매개변수
 
-템퍼드가 아닌 표현까지 다루려면 매개변수에 $\mathrm{SL}\_2$ 를 하나 더 붙인다.
+템퍼드가 아닌 표현까지 다루려면 매개변수에 $\mathrm{SL}\_2$ 를 하나 더 붙여 [Arthur 매개변수](arthur-parameters.md)로 넓힌다.
 
 $$
 \psi:W_F\times\mathrm{SL}\_2(\mathbb C)\times\mathrm{SL}\_2(\mathbb C)\to{}^LG
