@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-16T01:01:23.657Z",
-  "nextSeq": 2111,
+  "savedAt": "2026-10-16T05:07:01.746Z",
+  "nextSeq": 2114,
   "items": [
     {
       "id": "4f29a976",
@@ -180,14 +180,6 @@
       "seq": 2109
     },
     {
-      "id": "14ae777a",
-      "title": "수학기초론 개관의 갈래를 읽는 순서로 다시 쓰기",
-      "priority": 55,
-      "note": "4.5절 '갈래는 읽는 순서다'. 43차에 손 검사로 재면 조상이 뒤에 온 자리가 150 곳 넘게 나온다. 원인은 갈래 절의 설명 줄이 sets, proofs, functions, cardinality, equivalence-relations 같은 뿌리와 기본 문서를 링크하는데 그 링크가 갈래 목록 아래쪽에 흩어져 있는 것이다(0bb8e7fb 메모의 (1) 꼴). 갈래를 다시 쓸 때 설명 줄의 링크를 먼저 걷어내고, 분야 밖 선수 문서는 갈래 H2 의 '먼저 읽을 것' 줄로 올린다. 그 다음 갈래 안을 위상순으로 놓는다. 분량이 커서 한 회차를 통째로 쓴다. 개요 첫 문장의 원어 병기(수학기초론(foundations of mathematics))도 43차에 했다가 커밋에서 빠졌으므로 다시 한다.",
-      "createdAt": "2026-10-15T01:04:36.317Z",
-      "seq": 2070
-    },
-    {
       "id": "7565e952",
       "title": "분야 개관 21 개의 갈래를 읽는 순서로 다시 쓰기",
       "priority": 50,
@@ -202,6 +194,22 @@
       "note": "46차(2026-10-15)에 오탐을 거른 검사로 개관 21 개를 전수 집계했다. 코드블록(mermaid 포함)을 건너뛰고, 더 긴 제목이 같은 자리를 덮으면 보고하지 않는 node 스크립트를 스크래치패드에 만들어 돌렸다. 22 건 가운데 optimization 2 건과 cryptography 2 건은 이 회차에 고쳤고 남은 18 건은 다음과 같다.\n\nanalysis-overview: Bernoulli 수(bernoulli-numbers), Gauss 구적(gaussian-quadrature)\ncombinatorics-overview: Borsuk–Ulam 정리(borsuk-ulam), Brouwer 고정점 정리(brouwer-fixed-point), 교차수 부등식(crossing-number-inequality), Golay 부호(golay-codes), Roth 정리(roth-theorem), Tutte 다항식(tutte-polynomial)\ncomputation-overview: 이산 Fourier 변환(fourier), Galois 연결(galois-connections)\ndifferential-geometry-overview: Stiefel–Whitney 류(stiefel-whitney-classes)\nfunctional-analysis-overview: Fourier 변환(fourier-transform)\nmachine-learning-overview: Color refinement(color-refinement), 재생핵 Hilbert 공간(reproducing-kernel-hilbert-space), 확률미분방정식(stochastic-differential-equations)\nnumber-theory-overview: Iwasawa 대수(iwasawa-algebra), Jacobi 다양체(jacobian-variety)\nprobability-overview: Fourier 변환(fourier-transform)\n\n주의. 이 가운데 analysis(78), combinatorics(27), computation(5), differential-geometry(33), functional-analysis(3), machine-learning(26), number-theory(167), probability(10) 는 갈래 순서 손 검사가 이미 보고를 내는 개관이다. 2절 10단계가 개관을 고쳤으면 갈래 순서 검사에 출력이 없어야 한다고 하므로, 이 개관들의 미링크는 갈래를 다시 쓰는 작업(7565e952)과 같이 해야 한다. 46차에 cryptography 는 보고 0 건이어서 단독으로 고쳤고, 그때도 설명 줄 링크가 갈래 순서를 깨서 중국인의 나머지 정리를 갈래 항목으로 올려 풀었다(메모 0bb8e7fb 의 (3) 방식).",
       "createdAt": "2026-10-15T13:09:16.452Z",
       "seq": 2093
+    },
+    {
+      "id": "c1800c02",
+      "title": "개관 갈래의 '먼저 읽을 것' 링크는 가장 이른 갈래에 둔다",
+      "priority": 50,
+      "note": "4.5절 갈래 재작성의 실무 메모. 49차에 foundations-overview 를 다시 쓰면서 겪었다. 갈래 H2 첫 줄의 '먼저 읽을 것' 에 분야 밖 선수 문서를 링크하면 그 링크도 갈래 절의 링크 순서에 들어가므로, 손 검사(/tmp/branch-order.sh)가 그 문서를 조상으로 두는 뒤 갈래 문서들을 전부 위반으로 보고한다. 49차에는 기술집합론 갈래의 '먼저 읽을 것' 에 metric-spaces 를 두었더니 filters-and-nets, ultraproducts, nonstandard-analysis, internal-set-theory, measure, banach-tarski, martins-axiom, suslin-problem, borel-hierarchy 의 9 건이 보고됐다. 고침은 그 링크를 그 문서가 처음 필요해지는 가장 이른 갈래(모형론)의 '먼저 읽을 것' 으로 올리고, 뒤 갈래에서는 4절 본문 링크 규칙대로 링크 없이 이름만 적는 것이다. 분야 밖 선수 문서가 여러 갈래에 걸리면 이 순서를 먼저 정하고 갈래를 쓴다.",
+      "createdAt": "2026-10-16T04:47:18.880Z",
+      "seq": 2111
+    },
+    {
+      "id": "d7b8da82",
+      "title": "분야 개관 갈래 재작성의 남은 목록 (49차 집계)",
+      "priority": 50,
+      "note": "큐 항목 7565e952(개관 21 개의 갈래를 읽는 순서로 다시 쓰기)의 진행 집계다. 49차(2026-10-16)까지 읽는 순서로 다시 쓴 개관은 measure-theory(48차), foundations, complex-analysis, functional-analysis, machine-learning, cryptography, category-theory(49차) 일곱이고, order-theory 와 information-theory 는 손대기 전부터 이미 규격을 갖추고 있었다(첫 문단이 읽는 순서, 갈래마다 먼저 읽을 갈래와 시작 문서, 주 경로와 곁가지의 들여쓰기). 남은 열둘은 abstract-algebra, analysis, combinatorics, computation, differential-geometry, graph-theory, linear-algebra, number-theory, optimization, probability, statistics, topology 다.\n\n규격 미비의 꼴은 둘이다. (1) 갈래 절에 첫 문단이 없고 H2 마다 첫 줄도 없이 목록만 있는 분류표 꼴. statistics, graph-theory, optimization, linear-algebra 가 이것이고 손 검사 위반은 0 건이므로 위상순은 이미 맞다. 첫 문단과 갈래 첫 줄을 더하고 조상관계로 주 경로와 곁가지를 가르면 된다. (2) 갈래 순서 자체가 어긋난 꼴. differential-geometry 33 건, combinatorics 27 건, machine-learning 26 건(49차에 해결)처럼 손 검사가 위반을 내놓는다. 한 회차에 하나씩 하고, 큰 것은 갈래 H2 의 순서를 바꾸는 것부터 본다(49차의 complex-analysis 는 복소역학을 확장과 사상 뒤로 떼어 8 건을, machine-learning 은 분포 사이의 거리를 표현과 차원 축소 앞으로 올려 26 건 가운데 대부분을 지웠다).\n\n회차 분량의 기준. 49차에 링크 79 개인 foundations 가 11 분, 32 개인 functional-analysis 가 4 분, 18 개인 category-theory 가 5 분 걸렸다. 40 분 회차면 작은 개관 셋이나 큰 개관 하나에 작은 것 둘이다. 남은 시간이 8 분 아래면 새 개관을 시작하지 않는다. 첫 문단만 더하고 들여쓰기를 못 가르면 규격 위반 상태로 커밋하게 된다.",
+      "createdAt": "2026-10-16T05:06:50.713Z",
+      "seq": 2113
     },
     {
       "id": "08e59419",
@@ -250,6 +258,14 @@
       "note": "48차에 boolean-algebras 의 제목을 'Boolean algebra' 에서 'Boole 대수' 로 바꾸고(항목 c6b597c3) 그 문서를 가리키는 링크 텍스트 19 개를 제목으로 통일했다. 남은 것 셋. (1) boolean-valued-models 와 foundations-overview 가 본문에서 '완비 Boolean 대수' 로 쓴다. 'Boolean 값 모형' 은 그 문서의 제목이므로 그대로 두고, '대수' 쪽만 'Boole 대수' 로 맞춘다. (2) 링크 텍스트가 '초필터' 인 두 자리(ultraproducts, weak-choice-principles 로 기억한다. grep -rn '\\[초필터\\](boolean-algebras.md)' 로 확인한다)는 제목도 그 문서의 개념도 아니다. 초필터 문서를 따로 세울지, 링크 텍스트를 'Boole 대수의 초필터' 로 바꿀지 정한다. (3) heyting-algebras 의 제목이 'Heyting algebra' 로 같은 문제를 갖는다. 'Heyting 대수' 로 바꾸고 그 문서를 가리키는 링크 텍스트를 전부 맞춘다. 본문도 'Heyting algebra 는' 꼴로 적혀 있어 함께 고친다. 제목을 바꿀 때는 개요 첫 문장의 원어 병기가 전역 치환에 먹히지 않게 조심한다. 48차에 'Boole 대수(Boolean algebra)는' 을 넣은 뒤 전역 치환이 괄호 안까지 바꿔 'Boole 대수(Boole 대수)는' 이 되었고, 괄호 안에 로마자 'Boole' 이 남아 4절의 원어 병기 검사도 통과해 버렸다. 원어를 먼저 토큰으로 보호하거나 전역 치환을 먼저 하고 첫 문장을 나중에 쓴다.",
       "createdAt": "2026-10-16T01:00:49.477Z",
       "seq": 2110
+    },
+    {
+      "id": "c9464ab4",
+      "title": "분야 개관의 지도 mermaid 노드 라벨이 문서 제목과 어긋난 자리",
+      "priority": 30,
+      "note": "4.5절은 지도가 실제 간선의 부분그래프여야 한다고만 적고 노드 라벨은 말하지 않는다. 49차에 foundations-overview 의 지도에서 cardinality 노드 라벨이 '가산성' 인데 문서 제목은 '기수' 여서 '기수' 로 고쳤다. 라벨이 제목과 다르면 독자가 지도에서 본 이름으로 갈래 목록을 찾지 못한다. 개관 21 개의 지도 노드 라벨을 문서 제목과 대조하는 작업이다. 검사법은 개관마다 mermaid 블록의 노드 정의 ID[\"라벨\"] 를 뽑아 그 라벨이 갈래 목록의 어느 링크 텍스트와도 맞지 않는 것을 보고하는 것이다.",
+      "createdAt": "2026-10-16T04:47:19.007Z",
+      "seq": 2112
     },
     {
       "id": "17ce5c43",
