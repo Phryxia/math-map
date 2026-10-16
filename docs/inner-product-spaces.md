@@ -147,6 +147,7 @@ $$
 
 ### 직교분해와 스펙트럼
 
+- [Cauchy–Schwarz 부등식](cauchy-schwarz.md)
 - [스펙트럼 정리](spectral-theorem.md)
 - [Hilbert 공간](hilbert-spaces.md)
 - [직교다항식](orthogonal-polynomials.md)

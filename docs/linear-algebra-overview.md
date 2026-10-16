@@ -50,6 +50,7 @@ graph TD
     - [유리 표준형](rational-canonical-form.md): 고윳값이 체 밖에 있을 때 쓰는 유사 불변량
   - [Perron–Frobenius 정리](perron-frobenius.md): 음이 아닌 행렬의 최대 고윳값이 단순하고 고유벡터가 양이라는 정리
 - [내적 공간](inner-product-spaces.md): 길이와 각도를 정하는 양의 정부호 쌍선형 형식
+  - [Cauchy–Schwarz 부등식](cauchy-schwarz.md): 내적의 절댓값이 노름의 곱을 넘지 않는다는 부등식, 각의 정의와 삼각부등식의 근거
 - [스펙트럼 정리](spectral-theorem.md): 자기수반 연산자가 정규직교 고유기저를 갖는다는 정리
 - [특이값 분해](singular-value-decomposition.md): 직사각행렬을 회전, 축별 확대, 회전의 합성으로 쪼개는 분해
 
