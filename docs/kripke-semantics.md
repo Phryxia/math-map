@@ -70,10 +70,10 @@ $w_0$ 에서 배중률과 이중부정 제거가 모두 실패하고 배중률�
 | 의미론 | 구조 | 대응 |
 |---|---|---|
 | Kripke | 부분순서 상태 | 정보의 증가 |
-| [Heyting algebra](heyting-algebras.md) | 격자 | 대수적 진리값 |
+| [Heyting 대수](heyting-algebras.md) | 격자 | 대수적 진리값 |
 | 위상 | 열린집합 | $\vee$ 는 합집합, $\to$ 는 내부 |
 
-세 의미론이 모두 직관주의 논리에 대해 완전하고 서로 번역된다. Kripke frame 의 위로 닫힌 집합들과 위상공간의 열린집합 격자가 각각 Heyting algebra 를 이룬다. 격자에서 $A \to B$ 는 $A \wedge x \le B$ 를 만족하는 최대의 $x$ 이고, 이 상대 여원이 Kripke 의 미래 양화와 같은 일을 한다.
+세 의미론이 모두 직관주의 논리에 대해 완전하고 서로 번역된다. Kripke frame 의 위로 닫힌 집합들과 위상공간의 열린집합 격자가 각각 Heyting 대수 를 이룬다. 격자에서 $A \to B$ 는 $A \wedge x \le B$ 를 만족하는 최대의 $x$ 이고, 이 상대 여원이 Kripke 의 미래 양화와 같은 일을 한다.
 
 # 활용
 
@@ -102,6 +102,6 @@ $w_0$ 에서 배중률과 이중부정 제거가 모두 실패하고 배중률�
 
 ## 더 알아보기
 
-- [Heyting algebra](heyting-algebras.md)
+- [Heyting 대수](heyting-algebras.md)
 
 #logic #order_theory #computation

@@ -4,7 +4,7 @@
 
 순서 이론(order theory)은 비교 관계 하나만 가진 구조를 다루는 분야다. 원소 사이에 $x \le y$ 가 정의되고 반사성, 반대칭성, 추이성만 요구한다. 두 원소가 비교되지 않아도 되므로 집합의 포함, 정수의 나눔, 작업의 의존, 명제의 함의가 모두 같은 틀에 들어간다.
 
-[부분순서](partial-orders.md)에서 시작한다. 여기서 세 방향으로 갈린다. 상한과 하한을 늘 가지도록 요구하면 [순서론의 격자](order-lattices.md)가 되고, 거기에 보수 연산을 더하면 [Boole 대수](boolean-algebras.md), 함의 연산을 더하면 [Heyting algebra](heyting-algebras.md)가 되어 고전 논리와 직관주의 논리의 대수적 대응물을 준다. 순서를 보존하는 사상의 쌍을 보면 [Galois 연결](galois-connections.md)이 되고, 그 고정점에서 [영역 이론](domain-theory.md)과 [추상해석](abstract-interpretation.md)이 나온다. 순서집합을 사슬과 반사슬로 쪼개면 [Dilworth 정리](dilworth-theorem.md)의 조합론이 된다.
+[부분순서](partial-orders.md)에서 시작한다. 여기서 세 방향으로 갈린다. 상한과 하한을 늘 가지도록 요구하면 [순서론의 격자](order-lattices.md)가 되고, 거기에 보수 연산을 더하면 [Boole 대수](boolean-algebras.md), 함의 연산을 더하면 [Heyting 대수](heyting-algebras.md)가 되어 고전 논리와 직관주의 논리의 대수적 대응물을 준다. 순서를 보존하는 사상의 쌍을 보면 [Galois 연결](galois-connections.md)이 되고, 그 고정점에서 [영역 이론](domain-theory.md)과 [추상해석](abstract-interpretation.md)이 나온다. 순서집합을 사슬과 반사슬로 쪼개면 [Dilworth 정리](dilworth-theorem.md)의 조합론이 된다.
 
 순서는 범주의 특수한 경우이기도 하다. 사상이 각 쌍마다 최대 하나인 범주가 부분순서집합이다. 그 위의 수반이 Galois 연결이고 상한과 하한이 쌍대극한과 극한이다.
 
@@ -20,7 +20,7 @@ graph TD
   PO --> LAT["순서론의 격자"]
   LAT --> BA["Boole 대수"]
   PO --> KS["Kripke 의미론"]
-  KS --> HA["Heyting algebra"]
+  KS --> HA["Heyting 대수"]
   LAT --> HA
   PO --> GC
   PO --> DW["Dilworth 정리"]
@@ -56,7 +56,7 @@ graph TD
 - [순서론의 격자](order-lattices.md) — 순서 정의와 대수 정의의 동치, 분배격자와 모듈러 격자, Birkhoff 표현 정리
   - [Boole 대수](boolean-algebras.md) — 보수를 가지는 분배 격자. Stone 표현 정리로 이 구조가 집합의 부분집합족으로 표현된다
 - [직관주의 논리의 Kripke 의미론](kripke-semantics.md) — 부분순서를 시간이나 정보의 증가로 읽는 모형
-- [Heyting algebra](heyting-algebras.md) — 만남 연산의 오른쪽 수반으로 함의를 정의한 격자. 배중률이 성립하지 않는다
+- [Heyting 대수](heyting-algebras.md) — 만남 연산의 오른쪽 수반으로 함의를 정의한 격자. 배중률이 성립하지 않는다
 
 ## 수반과 고정점
 

@@ -6,7 +6,7 @@
 
 격자는 순서로도 대수로도 정의된다. 순서 쪽에서는 $x \vee y$ 와 $x \wedge y$ 가 상한과 하한이고, 대수 쪽에서는 두 이항연산이 결합법칙, 교환법칙, 흡수법칙을 만족한다. 두 정의는 동치이므로 격자는 순서 구조인 동시에 대수 구조다.
 
-분배법칙을 요구하면 분배격자가 되고, 여기에 보원을 더하면 [Boole 대수](boolean-algebras.md), 보원 대신 상대 유사보원을 더하면 [Heyting algebra](heyting-algebras.md)가 된다. 모든 부분집합이 상한과 하한을 가지는 완비 격자는 [Galois 연결](galois-connections.md)에서 다룬다.
+분배법칙을 요구하면 분배격자가 되고, 여기에 보원을 더하면 [Boole 대수](boolean-algebras.md), 보원 대신 상대 유사보원을 더하면 [Heyting 대수](heyting-algebras.md)가 된다. 모든 부분집합이 상한과 하한을 가지는 완비 격자는 [Galois 연결](galois-connections.md)에서 다룬다.
 
 # 직관
 
@@ -140,7 +140,7 @@ $$
 
 ## 논리의 대수
 
-명제를 함의로 순서지으면 이접이 이음, 합취가 만남이다. 고전 명제논리의 Lindenbaum–Tarski 대수가 Boolean algebra 이고, 직관주의 명제논리의 것이 Heyting algebra 다. 두 구조 모두 분배격자이며, 차이는 보원을 요구하는지에 있다.
+명제를 함의로 순서지으면 이접이 이음, 합취가 만남이다. 고전 명제논리의 Lindenbaum–Tarski 대수가 Boolean algebra 이고, 직관주의 명제논리의 것이 Heyting 대수다. 두 구조 모두 분배격자이며, 차이는 보원을 요구하는지에 있다.
 
 ## 정적 분석의 추상 영역
 
@@ -161,6 +161,6 @@ $$
 ## 더 알아보기
 
 - [Boole 대수](boolean-algebras.md)
-- [Heyting algebra](heyting-algebras.md)
+- [Heyting 대수](heyting-algebras.md)
 
 #order_theory #algebra #logic

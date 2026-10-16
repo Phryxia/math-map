@@ -16,7 +16,7 @@ graph TD
   FOL --> GD --> FM["형식주의"]
   FOL --> LG["논리주의"]
   PL["플라톤주의"] --> LG
-  P --> IN["직관주의"] --> KR["Kripke 의미론"] --> HA["Heyting algebra"]
+  P --> IN["직관주의"] --> KR["Kripke 의미론"] --> HA["Heyting 대수"]
   IN --> CH2["Curry–Howard"]
   CM --> LC["Lambda calculus"] --> CH2
   ST["구조주의"] --> SST["구조적 집합론"]
@@ -96,7 +96,7 @@ graph TD
 
 - [직관주의](intuitionism.md): 대상은 정신의 구성이고 참은 증명을 가졌다는 뜻이다
 - [직관주의 논리의 Kripke 의미론](kripke-semantics.md): 부분순서로 놓은 세계에서 직관주의 논리의 타당성을 정한다
-  - [Heyting algebra](heyting-algebras.md): 직관주의 논리의 대수 모형, 상대 여원과 이중부정의 비자명성
+  - [Heyting 대수](heyting-algebras.md): 직관주의 논리의 대수 모형, 상대 여원과 이중부정의 비자명성
 - [Boole 대수](boolean-algebras.md): 고전 논리의 대수 모형, Stone 표현 정리
 - [Curry–Howard 대응](curry-howard.md): 증명이 프로그램이고 명제가 타입이다
 - [호모토피 타입 이론](homotopy-type-theory.md): 등식의 증명을 경로로 읽고, 일가성 공리로 동치를 등식과 같은 것으로 삼는다

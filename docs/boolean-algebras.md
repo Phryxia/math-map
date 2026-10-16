@@ -12,7 +12,7 @@ Boole 대수(Boolean algebra)는 "합집합, 교집합, 여집합"의 규칙만 
 
 Boole 대수는 예와 아니오가 언제나 갈리는 세계의 대수다. 원소를 명제로 읽으면 $a \vee \neg a = 1$ 은 모든 명제가 참이거나 거짓이라는 요구이고, $\neg\neg a = a$ 는 부정을 두 번 하면 제자리로 온다는 요구다.
 
-함의가 있는 격자라고 해서 이 두 요구가 따라오지는 않는다. 열린집합 격자에서는 여집합이 격자 밖으로 나가므로 보수가 존재하지 않고, 그런 격자가 [Heyting algebra](heyting-algebras.md)다. Boole 대수는 보수의 존재를 공리로 요구한다.
+함의가 있는 격자라고 해서 이 두 요구가 따라오지는 않는다. 열린집합 격자에서는 여집합이 격자 밖으로 나가므로 보수가 존재하지 않고, 그런 격자가 [Heyting 대수](heyting-algebras.md)다. Boole 대수는 보수의 존재를 공리로 요구한다.
 
 # 정의
 
@@ -46,7 +46,7 @@ $$
 a \le b \iff a \wedge b = a \iff a \vee b = b
 $$
 
-이 순서에 대해 $a \wedge b$ 는 하한, $a \vee b$ 는 상한이다. 함의는 다음처럼 정의할 수 있고, 이렇게 정의하면 Boole 대수는 $\neg\neg a = a$ 를 만족하는 Heyting algebra 와 같아진다.
+이 순서에 대해 $a \wedge b$ 는 하한, $a \vee b$ 는 상한이다. 함의는 다음처럼 정의할 수 있고, 이렇게 정의하면 Boole 대수는 $\neg\neg a = a$ 를 만족하는 Heyting 대수와 같아진다.
 
 $$
 a \to b \thickspace:=\thickspace \neg a \vee b
@@ -128,7 +128,7 @@ $$
 
 ## 순서론에서의 위치
 
-Boole 대수는 격자 이론의 여러 계층 중 가장 강한 조건을 만족하는 층에 있다. 분배성만 요구하면 분배격자, 여기에 상대 의사보수를 요구하면 Heyting algebra, 보수까지 요구하면 Boole 대수다. 이 계층은 각각 고전논리 이하의 논리 체계들과 정확히 대응하고, 포기하는 법칙마다 남는 구조가 다르다[^2].
+Boole 대수는 격자 이론의 여러 계층 중 가장 강한 조건을 만족하는 층에 있다. 분배성만 요구하면 분배격자, 여기에 상대 의사보수를 요구하면 Heyting 대수, 보수까지 요구하면 Boole 대수다. 이 계층은 각각 고전논리 이하의 논리 체계들과 정확히 대응하고, 포기하는 법칙마다 남는 구조가 다르다[^2].
 
 [^1]: Stanford Encyclopedia of Philosophy, "The Mathematics of Boolean Algebra", https://plato.stanford.edu/entries/boolalg-math/
 [^2]: Stanford Encyclopedia of Philosophy, "Intuitionistic Logic", https://plato.stanford.edu/entries/logic-intuitionistic/
