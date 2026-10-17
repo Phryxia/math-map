@@ -2,7 +2,7 @@
 
 # 개요
 
-모듈러 형식은 상반평면 $\mathbb H=\lbrace z:\mathrm{Im}\thinspace z\gt 0\rbrace$ 위의 [정칙함수](holomorphic-functions.md) 가운데 무한군 $\mathrm{SL}\_2(\mathbb Z)$ 의 [작용](group-actions.md)에 대해 다음 규칙으로 변하는 것이다.
+**모듈러 형식(modular form)** 은 상반평면 $\mathbb H=\lbrace z:\mathrm{Im}\thinspace z\gt 0\rbrace$ 위의 [정칙함수](holomorphic-functions.md) 가운데 무한군 $\mathrm{SL}\_2(\mathbb Z)$ 의 [작용](group-actions.md)에 대해 다음 규칙으로 변하는 것이다.
 
 $$
 f\Big(\frac{az+b}{cz+d}\Big)=(cz+d)^kf(z)\qquad

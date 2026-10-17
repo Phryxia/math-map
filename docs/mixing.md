@@ -2,7 +2,7 @@
 
 # 개요
 
-혼합성은 측도보존변환이 집합을 공간 전체에 퍼뜨리는 성질이다. 확률공간 $(X,\mathcal B,\mu)$ 의 측도보존변환 $T$ 가 모든 $A,B\in\mathcal B$ 에서
+**혼합성(mixing)** 은 측도보존변환이 집합을 공간 전체에 퍼뜨리는 성질이다. 확률공간 $(X,\mathcal B,\mu)$ 의 측도보존변환 $T$ 가 모든 $A,B\in\mathcal B$ 에서
 
 $$
 \lim_{n\to\infty}\mu(A\cap T^{-n}B)=\mu(A)\mu(B)

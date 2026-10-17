@@ -2,7 +2,7 @@
 
 # 개요
 
-혼합시간은 [Markov 연쇄](markov-chains.md)의 분포가 정상분포에 가까워지기까지 걸리는 걸음 수다. 가까움은 [전변동거리](total-variation-distance.md)로 재고, 출발점 가운데 가장 나쁜 것을 택한다.
+**혼합시간(mixing time)** 은 [Markov 연쇄](markov-chains.md)의 분포가 정상분포에 가까워지기까지 걸리는 걸음 수다. 가까움은 [전변동거리](total-variation-distance.md)로 재고, 출발점 가운데 가장 나쁜 것을 택한다.
 
 $$
 d(t)=\max_x d_{\mathrm{TV}}\big(P^t(x,\cdot),\thinspace\pi\big),\qquad t_{\mathrm{mix}}(\varepsilon)=\min\lbrace t:\ d(t)\le\varepsilon\rbrace

@@ -2,7 +2,7 @@
 
 # 개요
 
-Mock 모듈러 형식(mock modular form)은 비정칙 보정항을 더하면 모듈러 형식이 되는 정칙 $q$ 급수다.
+**Mock 모듈러 형식(mock modular form)** 은 비정칙 보정항을 더하면 모듈러 형식이 되는 정칙 $q$ 급수다.
 
 Ramanujan 은 1920 년 Hardy 에게 보낸 마지막 편지에서 함수 열일곱 개를 적고 **mock theta 함수**라 불렀다.
 
