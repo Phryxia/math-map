@@ -2,7 +2,7 @@
 
 # 개요
 
-Peano 존재정리는 초깃값 문제 $x'=f(t,x)$ , $x(t_0)=x_0$ 에서 $f$ 의 연속성만으로 해가 하나 이상 존재함을 보장한다. Picard–Lindelöf 정리가 요구하는 Lipschitz 조건이 빠지고, 그 대가로 유일성이 빠진다. 증명은 [축약사상 고정점 정리](banach-fixed-point.md) 대신 [Arzelà–Ascoli 정리](arzela-ascoli.md)로 근사해의 극한을 꺼낸다.
+**Peano 존재정리(Peano existence theorem)** 는 초깃값 문제 $x'=f(t,x)$ , $x(t_0)=x_0$ 에서 $f$ 의 연속성만으로 해가 하나 이상 존재함을 보장한다. Picard–Lindelöf 정리가 요구하는 Lipschitz 조건이 빠지고, 그 대가로 유일성이 빠진다. 증명은 [축약사상 고정점 정리](banach-fixed-point.md) 대신 [Arzelà–Ascoli 정리](arzela-ascoli.md)로 근사해의 극한을 꺼낸다.
 
 # 직관
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-부분관측 Markov 결정 과정(partially observable Markov decision process, POMDP)은 상태를 직접 보지 못하고 상태에 따라 분포가 달라지는 관측만 보면서 행동을 고르는 결정 문제다. [Markov 결정 과정](markov-decision-process.md)(Markov decision process, MDP)은 매 시각 상태를 알고 정책을 상태의 함수로 쓰지만, 관측만 있으면 그럴 수 없다.
+**부분관측 Markov 결정 과정(partially observable Markov decision process, POMDP)** 은 상태를 직접 보지 못하고 상태에 따라 분포가 달라지는 관측만 보면서 행동을 고르는 결정 문제다. [Markov 결정 과정](markov-decision-process.md)(Markov decision process, MDP)은 매 시각 상태를 알고 정책을 상태의 함수로 쓰지만, 관측만 있으면 그럴 수 없다.
 
 상태 위의 사후분포를 상태로 삼으면 문제가 다시 MDP 가 된다. 그 사후분포를 믿음 상태라 하고, 갱신식은 [은닉 Markov 모형](hidden-markov-model.md)의 전향 재귀와 같은 꼴이다. 값함수는 믿음에 대해 조각마다 선형이고 볼록하다.
 

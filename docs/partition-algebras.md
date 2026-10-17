@@ -2,7 +2,7 @@
 
 # 개요
 
-분할 대수 $P_k(n)$ 은 대칭군 $S_n$ 이 $V^{\otimes k}$ 에 작용할 때의 중심화대수다. $V=\mathbb C^n$ 이고 $S_n$ 은 기저 $e_1,\dots,e_n$ 을 치환한다.
+**분할 대수(partition algebra)** $P_k(n)$ 은 대칭군 $S_n$ 이 $V^{\otimes k}$ 에 작용할 때의 중심화대수다. $V=\mathbb C^n$ 이고 $S_n$ 은 기저 $e_1,\dots,e_n$ 을 치환한다.
 
 $$
 \mathrm{End}\_{S_n}\bigl(V^{\otimes k}\bigr)=P_k(n)\qquad (n\ge 2k)

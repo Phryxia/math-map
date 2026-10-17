@@ -2,7 +2,7 @@
 
 # 개요
 
-쌍 상관 추측은 [Riemann zeta 함수](riemann-zeta.md)의 임계선 위 영점 쌍의 간격 분포가 큰 에르미트 무작위 행렬의 고윳값 쌍의 간격 분포와 같다는 추측이다.[^1] 평균 간격이 $1$ 이 되게 영점 높이를 정규화하면, 간격이 $\lbrack a,b\rbrack$ 에 드는 쌍의 비율이 밀도 $1-(\sin\pi u/\pi u)^2$ 의 적분으로 간다. Montgomery 는 이 밀도의 [Fourier 변환](fourier-transform.md)을 변수의 한 범위에서 [Riemann 가설](riemann-hypothesis.md) 아래 증명했다.
+**쌍 상관 추측(pair correlation conjecture)** 은 [Riemann zeta 함수](riemann-zeta.md)의 임계선 위 영점 쌍의 간격 분포가 큰 에르미트 무작위 행렬의 고윳값 쌍의 간격 분포와 같다는 추측이다.[^1] 평균 간격이 $1$ 이 되게 영점 높이를 정규화하면, 간격이 $\lbrack a,b\rbrack$ 에 드는 쌍의 비율이 밀도 $1-(\sin\pi u/\pi u)^2$ 의 적분으로 간다. Montgomery 는 이 밀도의 [Fourier 변환](fourier-transform.md)을 변수의 한 범위에서 [Riemann 가설](riemann-hypothesis.md) 아래 증명했다.
 
 # 직관
 
@@ -66,7 +66,7 @@ $$
 
 ## 단순 영점의 비율
 
-Montgomery 정리만으로 단순 영점의 비율이 $2/3$ 이상이라는 하한이 나온다.[^1] 영점 $\rho$ 의 중복도를 $m_\rho$ 라 하면 그 자리의 쌍이 $m_\rho^2$ 개이므로 $\sum_\rho m_\rho^2$ 가 $F$ 의 가중 적분으로 위에서 잡히고, $\sum_\rho m_\rho=N(T)$ 와 Cauchy–Schwarz 부등식을 함께 쓰면 $m_\rho=1$ 인 영점의 개수가 아래에서 잡힌다.
+Montgomery 정리만으로 단순 영점의 비율이 $2/3$ 이상이라는 하한이 나온다.[^1] 영점 $\rho$ 의 중복도를 $m_\rho$ 라 하면 그 자리의 쌍이 $m_\rho^2$ 개이므로 $\sum_\rho m_\rho^2$ 가 $F$ 의 가중 적분으로 위에서 잡히고, $\sum_\rho m_\rho=N(T)$ 와 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)을 함께 쓰면 $m_\rho=1$ 인 영점의 개수가 아래에서 잡힌다.
 
 ## 평균보다 작은 간격
 
