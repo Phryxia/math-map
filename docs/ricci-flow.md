@@ -2,7 +2,7 @@
 
 # 개요
 
-Ricci 흐름은 [Riemann 계량](riemannian-metrics.md)을 Ricci 곡률의 음수 방향으로 움직이는 편미분방정식이다.
+**Ricci 흐름(Ricci flow)** 은 [Riemann 계량](riemannian-metrics.md)을 Ricci 곡률의 음수 방향으로 움직이는 편미분방정식이다.
 
 $$
 \frac{\partial g}{\partial t}=-2\mathrm{Ric}(g)

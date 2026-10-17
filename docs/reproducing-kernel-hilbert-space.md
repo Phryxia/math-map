@@ -2,7 +2,7 @@
 
 # 개요
 
-재생핵 Hilbert 공간은 함수들로 이루어진 [Hilbert 공간](hilbert-spaces.md)이면서 점에서의 평가가 내적으로 적히는 공간이다. 어떤 점 $x$ 마다 공간의 원소 $K_x$ 가 있어 모든 $f$ 에 대해 $f(x)=\langle f,K_x\rangle$ 가 성립한다.
+**재생핵 Hilbert 공간(reproducing kernel Hilbert space)** 은 함수들로 이루어진 [Hilbert 공간](hilbert-spaces.md)이면서 점에서의 평가가 내적으로 적히는 공간이다. 어떤 점 $x$ 마다 공간의 원소 $K_x$ 가 있어 모든 $f$ 에 대해 $f(x)=\langle f,K_x\rangle$ 가 성립한다.
 
 두 변수 함수 $K(x,z)=\langle K_x,K_z\rangle$ 가 이 공간을 결정한다. 양의 준정부호인 $K$ 마다 그것을 재생핵으로 갖는 공간이 유일하게 있고, 고차원 좌표를 만들지 않고 $K$ 의 값만으로 그 공간에서의 계산을 수행한다.
 
@@ -53,7 +53,7 @@ $$\Big\langle\sum_i a_iK\_{x_i},\ \sum_j b_jK\_{z_j}\Big\rangle=\sum_i\sum_j a_i
 
 ## 점 평가의 연속성
 
-재생 성질과 Cauchy–Schwarz 부등식에서 $\vert f(x)\vert\le\Vert f\Vert\thinspace\sqrt{K(x,x)}$ 다. 노름 수렴이 각 점에서의 수렴을 함의하므로, 재생핵 Hilbert 공간의 원소는 동치류가 아니라 함수 하나다. [Lᵖ 공간](lp-spaces.md)의 원소가 영집합에서 다른 함수들의 동치류인 것과 다르다.
+재생 성질과 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)에서 $\vert f(x)\vert\le\Vert f\Vert\thinspace\sqrt{K(x,x)}$ 다. 노름 수렴이 각 점에서의 수렴을 함의하므로, 재생핵 Hilbert 공간의 원소는 동치류가 아니라 함수 하나다. [Lᵖ 공간](lp-spaces.md)의 원소가 영집합에서 다른 함수들의 동치류인 것과 다르다.
 
 ## 특징 사상
 

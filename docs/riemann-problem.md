@@ -2,7 +2,7 @@
 
 # 개요
 
-Riemann 문제(Riemann problem)는 1차 쌍곡계의 초기값 문제 가운데 초기자료가 원점에서 한 번 끊기는 두 상수 상태인 것이다.
+**Riemann 문제(Riemann problem)** 는 1차 쌍곡계의 초기값 문제 가운데 초기자료가 원점에서 한 번 끊기는 두 상수 상태인 것이다.
 
 $$
 u\_t+\partial\_xf(u)=0,\qquad u(x,0)=\begin{cases}u\_l&x\lt 0\cr u\_r&x\gt 0\end{cases}
