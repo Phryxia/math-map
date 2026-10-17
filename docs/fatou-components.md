@@ -2,7 +2,7 @@
 
 # 개요
 
-Fatou 성분의 분류는 유리함수의 반복합성에서 [Fatou 집합](julia-set.md)의 연결성분이 어떤 것일 수 있는지 정하는 결과다. 모든 성분이 유한 번의 반복 뒤에 주기 성분으로 들어가고, 주기 성분은 네 종류뿐이다.
+**Fatou 성분의 분류(classification of Fatou components)** 는 유리함수의 반복합성에서 [Fatou 집합](julia-set.md)의 연결성분이 어떤 것일 수 있는지 정하는 결과다. 모든 성분이 유한 번의 반복 뒤에 주기 성분으로 들어가고, 주기 성분은 네 종류뿐이다.
 
 성분이 주기적인 경우의 분류는 Fatou 와 Cremer 가 끝냈고, 주기로 들어가지 않는 성분이 없다는 것은 [준등각 사상](quasiconformal-maps.md)의 변형으로 Sullivan 이 증명했다.
 

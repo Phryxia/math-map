@@ -2,7 +2,7 @@
 
 # 개요
 
-지수족(exponential family)은 밀도가
+**지수족(exponential family)** 은 밀도가
 
 $$
 p(x \mid \eta) = h(x)\thinspace\exp\negthinspace\big(\eta^{\top}T(x) - A(\eta)\big)
