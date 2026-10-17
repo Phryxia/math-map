@@ -38,7 +38,7 @@ $$
 
 ## 본질적 매끄러움
 
-$\Lambda$ 가 다음 셋을 만족하면 **본질적으로 매끄럽다**고 한다.
+$\Lambda$ 가 다음 셋을 만족하면 **본질적 매끄러움(essential smoothness)** 을 갖는다.
 
 - $\mathcal D$ 의 내부 $\mathcal D^\circ$ 가 비어 있지 않다.
 - $\Lambda$ 가 $\mathcal D^\circ$ 에서 미분가능하다.
