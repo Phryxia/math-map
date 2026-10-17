@@ -45,7 +45,7 @@ L(\gamma) = \int_a^b \sqrt{g_{\gamma(t)}(\dot\gamma(t), \dot\gamma(t))}\thinspac
 E(\gamma) = \frac{1}{2}\int_a^b g_{\gamma(t)}(\dot\gamma(t), \dot\gamma(t))\thinspace dt .
 $$
 
-길이는 매개화에 무관하고 에너지는 그렇지 않다. Cauchy–Schwarz 부등식에서 다음이 나오며, 등호는 속력이 일정할 때 성립한다.
+길이는 매개화에 무관하고 에너지는 그렇지 않다. [Cauchy–Schwarz 부등식](cauchy-schwarz.md)에서 다음이 나오며, 등호는 속력이 일정할 때 성립한다.
 
 $$
 L(\gamma)^2 \le 2 (b-a) E(\gamma) .
@@ -133,7 +133,7 @@ $$
 
 곡률이 0이라는 것은 평행이동이 경로에 무관하다는 뜻이고, 이는 국소적으로 Euclid 공간과 등거리라는 것과 동치다. 2차원 평면 방향에 대한 단면곡률을 뽑아내면 곡면의 경우 그것이 Gauss 곡률이다.
 
-**Theorema Egregium (재해석).** 3차원 공간에 매장된 곡면의 Gauss 곡률은 제1기본형식(즉 유도 계량)만으로 결정된다. Riemann 기하의 언어로는, 곡률 텐서가 계량에서만 만들어지는 양이므로 등거리 사상은 곡률을 보존한다는 진술이다.
+**Theorema Egregium (재해석).** 3차원 공간에 매장된 곡면의 Gauss 곡률은 제1기본형식(즉 유도 계량)만으로 결정된다. Riemann 기하에서는 곡률 텐서가 계량에서만 만들어지는 양이므로 등거리 사상은 곡률을 보존한다는 진술이다.
 
 따라서 다음이 따라온다.
 

@@ -47,7 +47,7 @@ $E[r]\times E[r]\to\mu_r$ 인 사상으로 다음 성질을 가진다.
 - 비퇴화: $P\ne O$ 면 $e(P,Q)\ne1$ 인 $Q$ 가 존재한다.
 - Galois 동변: $e(\sigma P,\sigma Q)=\sigma(e(P,Q))$ 이다.
 
-정의는 인자의 언어로 주어진다. $\mathrm{div}(f_P)=r[P]-r[O]$ 인 함수를 잡아 $e(P,Q)=f_P(Q)/f_Q(P)$ 로 쓰고, 극점은 평행이동으로 피한다.
+정의는 인자로 주어진다. $\mathrm{div}(f_P)=r[P]-r[O]$ 인 함수를 잡아 $e(P,Q)=f_P(Q)/f_Q(P)$ 로 쓰고, 극점은 평행이동으로 피한다.
 
 ## Tate 쌍
 

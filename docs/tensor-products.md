@@ -99,7 +99,7 @@ $$
 \mathrm{Hom}\_R(M \otimes_R N, P) \thickspace\cong\thickspace \mathrm{Hom}\_R\big(M, \mathrm{Hom}\_R(N, P)\big)
 $$
 
-좌변의 사상은 $M \times N$ 위의 쌍선형 사상과 같고, 우변은 $m$ 을 넣으면 $N \to P$ 사상이 나오는 사상이다. 두 쪽이 같은 자료를 가리킨다. 범주론의 언어로는
+좌변의 사상은 $M \times N$ 위의 쌍선형 사상과 같고, 우변은 $m$ 을 넣으면 $N \to P$ 사상이 나오는 사상이다. 두 쪽이 같은 자료를 가리킨다. 범주론에서는
 
 $$
 {-} \otimes_R N \thickspace\dashv\thickspace \mathrm{Hom}\_R(N, -)

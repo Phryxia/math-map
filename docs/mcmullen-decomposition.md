@@ -69,7 +69,7 @@ Hadwiger 정리는 회전 불변 조건으로 각 $\mathrm{Val}\_j$ 에서 1차�
 - **적분기하의 공식 유도.** 운동학 공식의 양변이 연속 평가이므로 차수별로 비교해 상수를 결정한다. 회전 불변이 없는 경우에도 차수별 분해가 남아 비교가 가능하다.
 - **Hermitian 적분기하.** $\mathbb C^n$ 에서 유니터리군 불변 평가의 공간은 유한차원이고 그 차원이 $\binom{n+2}{2}$ 꼴로 계산된다. 분해의 각 차수에서 유니터리 불변 성분을 세는 것이 그 계산이다.
 - **값매김의 대수 구조.** 매끄러운 평가에 Alesker 곱을 주면 등급대수가 되고, 그 구조가 다양체 위의 특성류와 대응한다. 등급은 McMullen 분해의 차수다.
-- **볼록체의 부등식.** Alexandrov–Fenchel 부등식을 평가의 언어로 적으면 특정 차수 성분 사이의 부등식이 된다. 차수를 고정하면 변수의 개수가 줄어 부등식의 등호 조건을 다루기 쉬워진다.
+- **볼록체의 부등식.** Alexandrov–Fenchel 부등식을 평가로 적으면 특정 차수 성분 사이의 부등식이 된다. 차수를 고정하면 변수의 개수가 줄어 부등식의 등호 조건을 다루기 쉬워진다.
 
 [^1]: Peter McMullen, "Valuations and Euler-type relations on certain classes of convex polytopes", *Proceedings of the London Mathematical Society* 35 (1977), 113–135.
 [^2]: Semyon Alesker, "Description of translation invariant valuations on convex sets with solution of P. McMullen's conjecture", *Geometric and Functional Analysis* 11 (2001), 244–272.
