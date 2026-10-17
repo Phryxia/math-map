@@ -2,7 +2,7 @@
 
 # 개요
 
-율왜곡 이론(rate-distortion theory)은 압축률과 왜곡의 교환을 다룬다. 율왜곡 함수는 평균 왜곡을 $D$ 이하로 두었을 때 기호당 부호율의 하한이다.
+**율왜곡 이론(rate-distortion theory)** 은 압축률과 왜곡의 교환을 다룬다. 율왜곡 함수는 평균 왜곡을 $D$ 이하로 두었을 때 기호당 부호율의 하한이다.
 
 $$
 R(D)=\min_{p(\hat x\mid x)\thinspace:\thinspace\mathbb E\lbrack d(X,\hat X)\rbrack\le D}I(X;\hat X)

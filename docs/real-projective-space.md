@@ -2,7 +2,7 @@
 
 # 개요
 
-실사영공간 $\mathbb{RP}^n$ 은 $\mathbb R^{n+1}$ 에서 원점을 지나는 직선 전체의 공간이다. 단위구면 $S^n$ 에서 대척점 쌍을 한 점으로 보아 얻는 것과 같고, 차원마다 세포가 하나인 [CW 복합체](cw-complexes.md)(closure-finite weak topology) 구조를 갖는다. 그 구조로 호몰로지와 $\mathbb Z/2$ 계수 코호몰로지환이 바로 계산된다.
+**실사영공간(real projective space)** $\mathbb{RP}^n$ 은 $\mathbb R^{n+1}$ 에서 원점을 지나는 직선 전체의 공간이다. 단위구면 $S^n$ 에서 대척점 쌍을 한 점으로 보아 얻는 것과 같고, 차원마다 세포가 하나인 [CW 복합체](cw-complexes.md)(closure-finite weak topology) 구조를 갖는다. 그 구조로 호몰로지와 $\mathbb Z/2$ 계수 코호몰로지환이 바로 계산된다.
 
 # 직관
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-정칙화(regularization)는 추정의 목적함수에 계수의 크기를 재는 항을 더하는 방법이다. 최소제곱 추정은 잔차제곱합만 최소로 만들지만, 정칙화는 잔차제곱합과 그 항을 함께 최소로 만든다.
+**정칙화(regularization)** 는 추정의 목적함수에 계수의 크기를 재는 항을 더하는 방법이다. 최소제곱 추정은 잔차제곱합만 최소로 만들지만, 정칙화는 잔차제곱합과 그 항을 함께 최소로 만든다.
 
 $$
 \hat\beta=\arg\min\_\beta\thinspace \Vert y-X\beta\Vert^2+\lambda\thinspace P(\beta)
