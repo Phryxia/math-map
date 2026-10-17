@@ -2,7 +2,7 @@
 
 # 개요
 
-Schauder 추정은 2계 타원형 방정식 $Lu=f$ 에서 계수와 $f$ 가 지수 $\alpha$ 의 Hölder 조건을 만족하면 해의 2계 도함수까지 같은 지수의 Hölder 조건을 만족한다는 부등식이다. 자료와 해를 모두 [Hölder 공간](holder-spaces.md)에서 재고, 미분 횟수만 둘 올린다.
+**Schauder 추정(Schauder estimates)** 은 2계 타원형 방정식 $Lu=f$ 에서 계수와 $f$ 가 지수 $\alpha$ 의 Hölder 조건을 만족하면 해의 2계 도함수까지 같은 지수의 Hölder 조건을 만족한다는 부등식이다. 자료와 해를 모두 [Hölder 공간](holder-spaces.md)에서 재고, 미분 횟수만 둘 올린다.
 
 [타원형 정칙성](elliptic-regularity.md)의 $H^k$ 판은 자료가 $H^k$ 에 들면 해가 $H^{k+2}$ 에 든다는 것을 주고, 그 결론에서 각 점의 2계 도함수를 읽으려면 Sobolev 매입을 한 번 더 거쳐야 한다. Schauder 추정은 그 매입 없이 $C^{2,\alpha}$ 를 바로 준다.
 
