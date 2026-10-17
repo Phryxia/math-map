@@ -2,7 +2,7 @@
 
 # 개요
 
-Fourier 변환은 실직선 위의 함수를 주파수의 함수로 바꾼다. 적분가능한 $f$ 에 $\hat f(\xi)=\int_{\mathbb R}f(x)e^{-2\pi i\xi x}\thinspace dx$ 를 대응시키고, 반전 공식이 $\hat f$ 에서 $f$ 를 되돌린다. [Fourier 급수](fourier-series.md)는 주기함수의 계수를 정수로 센 수열로 주는데, 사각 펄스처럼 주기가 없는 함수에는 그 수열이 없다. Fourier 변환은 수열 자리에 실수 변수의 함수를 놓고, 계수를 더하던 합 자리에 적분을 놓는다.
+**Fourier 변환(Fourier transform)** 은 실직선 위의 함수를 주파수의 함수로 바꾼다. 적분가능한 $f$ 에 $\hat f(\xi)=\int_{\mathbb R}f(x)e^{-2\pi i\xi x}\thinspace dx$ 를 대응시키고, 반전 공식이 $\hat f$ 에서 $f$ 를 되돌린다. [Fourier 급수](fourier-series.md)는 주기함수의 계수를 정수로 센 수열로 주는데, 사각 펄스처럼 주기가 없는 함수에는 그 수열이 없다. Fourier 변환은 수열 자리에 실수 변수의 함수를 놓고, 계수를 더하던 합 자리에 적분을 놓는다.
 
 # 직관
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-Lagrange 네 제곱수 정리(Lagrange's four-square theorem)는 모든 음이 아닌 정수가 제곱수 네 개의 합이라고 말한다. 셋으로는 모자라는 수가 무한히 많으므로 넷이 최선이다. 표현의 개수까지 Jacobi 의 공식이 약수의 합으로 준다.
+**Lagrange 네 제곱수 정리(Lagrange's four-square theorem)** 는 모든 음이 아닌 정수가 제곱수 네 개의 합이라고 말한다. 셋으로는 모자라는 수가 무한히 많으므로 넷이 최선이다. 표현의 개수까지 Jacobi 의 공식이 약수의 합으로 준다.
 
 # 직관
 

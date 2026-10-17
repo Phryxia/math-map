@@ -2,7 +2,7 @@
 
 # 개요
 
-Fisher 정보(Fisher information)는 관측 하나가 모수에 대해 담은 정보의 양을 재는 행렬이다. 로그가능도의 모수에 대한 도함수인 점수함수의 공분산으로 정의하고, 정칙 조건 아래에서 로그가능도의 Hessian 의 기댓값의 음수와 같다. 불편추정량의 분산 하한, 최대가능도 추정량의 점근분산, 분포족 위의 [Riemann 계량](riemannian-metrics.md)이 모두 이 행렬로 적힌다.
+**Fisher 정보(Fisher information)** 는 관측 하나가 모수에 대해 담은 정보의 양을 재는 행렬이다. 로그가능도의 모수에 대한 도함수인 점수함수의 공분산으로 정의하고, 정칙 조건 아래에서 로그가능도의 Hessian 의 기댓값의 음수와 같다. 불편추정량의 분산 하한, 최대가능도 추정량의 점근분산, 분포족 위의 [Riemann 계량](riemannian-metrics.md)이 모두 이 행렬로 적힌다.
 
 # 직관
 
@@ -66,7 +66,7 @@ $$
 \mathrm{Cov}\_\theta(\hat\theta)\succeq I\_n(\theta)^{-1}
 $$
 
-증명의 요지. 불편성 $\mathbb E\_\theta\lbrack\hat\theta\rbrack=\theta$ 를 $\theta$ 로 미분하면 $\mathrm{Cov}(\hat\theta,s)=\mathrm I\_d$ 가 나온다. 임의의 벡터 $a,b$ 에 Cauchy–Schwarz 부등식을 적용하면 $(a^{\mathsf T}b)^2\le(a^{\mathsf T}\mathrm{Cov}(\hat\theta)a)(b^{\mathsf T}I\_nb)$ 이고, $b=I\_n^{-1}a$ 로 두면 결론이 된다.
+증명의 요지. 불편성 $\mathbb E\_\theta\lbrack\hat\theta\rbrack=\theta$ 를 $\theta$ 로 미분하면 $\mathrm{Cov}(\hat\theta,s)=\mathrm I\_d$ 가 나온다. 임의의 벡터 $a,b$ 에 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)을 적용하면 $(a^{\mathsf T}b)^2\le(a^{\mathsf T}\mathrm{Cov}(\hat\theta)a)(b^{\mathsf T}I\_nb)$ 이고, $b=I\_n^{-1}a$ 로 두면 결론이 된다.
 
 등호는 점수함수가 $\hat\theta-\theta$ 의 상수배일 때, 곧 모형이 [지수족](exponential-families.md)이고 $\hat\theta$ 가 충분통계량의 함수일 때 성립한다.[^1]
 

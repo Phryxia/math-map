@@ -2,7 +2,7 @@
 
 # 개요
 
-Freidlin–Wentzell 이론(Freidlin–Wentzell theory)은 잡음의 세기가 $0$ 으로 가는 [확률미분방정식](stochastic-differential-equations.md)의 해가 결정론적 궤도에서 벗어날 확률을 작용범함수로 재는 이론이다.
+**Freidlin–Wentzell 이론(Freidlin–Wentzell theory)** 은 잡음의 세기가 $0$ 으로 가는 [확률미분방정식](stochastic-differential-equations.md)의 해가 결정론적 궤도에서 벗어날 확률을 작용범함수로 재는 이론이다.
 
 잡음의 세기가 $0$ 으로 가는 확률미분방정식의 해는 결정론적 궤도로 수렴한다. 안정 평형에서 출발한 해도 언젠가는 평형의 끌림 영역을 벗어난다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-완전 근사 저장(full approximation scheme, FAS)은 [다중격자](multigrid.md)를 비선형 방정식 $A(u)=f$ 로 옮긴 것이다. 성긴 격자에서 오차를 풀지 않고 근사해 전체를 푸는 점이 이름의 뜻이다.
+**완전 근사 저장(full approximation scheme, FAS)** 은 [다중격자](multigrid.md)를 비선형 방정식 $A(u)=f$ 로 옮긴 것이다. 성긴 격자에서 오차를 풀지 않고 근사해 전체를 푸는 점이 이름의 뜻이다.
 
 성긴 격자 방정식은
 

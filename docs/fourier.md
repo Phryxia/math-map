@@ -2,7 +2,7 @@
 
 # 개요
 
-이산 Fourier 변환은 길이 $N$ 의 수열을 각 시점의 값에서 회전 성분의 계수로 바꾸는 좌표 변환이다. [선형사상](linear-maps.md)으로 보면 $\mathbb{C}^N$ 위의 가역 선형변환이고, 그 행렬의 열들이 [정규직교 기저](inner-product-spaces.md)를 이룬다.
+**이산 Fourier 변환(discrete Fourier transform, DFT)** 은 길이 $N$ 의 수열을 각 시점의 값에서 회전 성분의 계수로 바꾸는 좌표 변환이다. [선형사상](linear-maps.md)으로 보면 $\mathbb{C}^N$ 위의 가역 선형변환이고, 그 행렬의 열들이 [정규직교 기저](inner-product-spaces.md)를 이룬다.
 
 이 기저에서 순환 이동이 대각행렬이 된다. 합성곱이 성분별 곱이 되고 순환 구조를 가진 선형 문제가 단순해진다. FFT(fast Fourier transform)가 이 변환을 $O(N\log N)$ 에 계산하면서 신호처리, 다항식 곱셈, 편미분방정식 수치해법의 표준 도구가 되었다.
 
@@ -94,7 +94,7 @@ $N$ 이 $2$ 의 거듭제곱이 아니면 소인수분해를 이용하거나 Blu
 
 ## 유한군 위의 변환
 
-DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 Fourier 변환이다. 지수함수 $t \mapsto \omega^{kt}$ 가 그 군의 지표이고 직교성이 지표의 직교 관계다.
+DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 [Fourier 변환](fourier-transform.md)이다. 지수함수 $t \mapsto \omega^{kt}$ 가 그 군의 지표이고 직교성이 지표의 직교 관계다.
 
 변환은 일반 유한 아벨군으로 확장되고, 비가환군에서는 [군의 표현](group-representations.md)이 지수함수를 대신한다. $(\mathbb{Z}/2\mathbb{Z})^n$ 위의 변환이 Walsh–Hadamard 변환이고 부울 함수 해석에 쓰인다. 이 변환들이 군 위의 조화해석이라는 하나의 틀에 들어간다.
 

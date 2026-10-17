@@ -2,7 +2,7 @@
 
 # 개요
 
-Fokker–Planck 방정식은 [확률미분방정식](stochastic-differential-equations.md)의 해가 갖는 확률밀도가 만족하는 편미분방정식이다. 표류와 확산 계수로 만든 2계 연산자의 수반작용소가 밀도의 시간 변화를 준다. 경로 하나하나를 따라가는 대신 밀도의 방정식을 풀어 정상분포와 그 수렴 속도를 얻는다.
+**Fokker–Planck 방정식(Fokker–Planck equation)** 은 [확률미분방정식](stochastic-differential-equations.md)의 해가 갖는 확률밀도가 만족하는 편미분방정식이다. 표류와 확산 계수로 만든 2계 연산자의 수반작용소가 밀도의 시간 변화를 준다. 경로 하나하나를 따라가는 대신 밀도의 방정식을 풀어 정상분포와 그 수렴 속도를 얻는다.
 
 # 직관
 
