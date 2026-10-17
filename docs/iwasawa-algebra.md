@@ -2,7 +2,7 @@
 
 # 개요
 
-Iwasawa 대수(Iwasawa algebra)는 $\mathbb Z_p$ 계수 한 변수 형식 멱급수환 $\Lambda=\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 이다. $\Gamma\cong\mathbb Z_p$ 인 위수 무한 군의 완비 군환과 같은 환이고, 유한생성 $\Lambda$ 모듈이 유한 오차를 허용한 직합으로 분류된다.
+**Iwasawa 대수(Iwasawa algebra)** 는 $\mathbb Z_p$ 계수 한 변수 형식 멱급수환 $\Lambda=\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 이다. $\Gamma\cong\mathbb Z_p$ 인 위수 무한 군의 완비 군환과 같은 환이고, 유한생성 $\Lambda$ 모듈이 유한 오차를 허용한 직합으로 분류된다.
 
 이 분류가 주는 두 정수 $\lambda$ 와 $\mu$ 가 $\mathbb Z_p$ 확대의 층마다 자라는 류수를 하나의 공식으로 쓴다.
 

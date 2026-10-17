@@ -2,7 +2,7 @@
 
 # 개요
 
-역산란 변환은 비선형 편미분방정식의 초기값 문제를 산란 자료의 선형 흐름으로 바꾸는 방법이다. Korteweg–de Vries 방정식(KdV)
+**역산란 변환(inverse scattering transform)** 은 비선형 편미분방정식의 초기값 문제를 산란 자료의 선형 흐름으로 바꾸는 방법이다. Korteweg–de Vries 방정식(KdV)
 
 $$
 u\_t=6uu\_x-u\_{xxx}

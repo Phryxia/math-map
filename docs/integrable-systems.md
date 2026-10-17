@@ -2,7 +2,7 @@
 
 # 개요
 
-적분가능계는 보존량이 자유도만큼 있는 Hamilton 계다. [Hamilton 역학](hamiltonian-mechanics.md)의 정준방정식은 일반적으로 해를 식으로 적을 수 없지만, $2n$ 차원 위상공간에서 Poisson 괄호가 서로 소멸하는 보존량 $n$ 개를 찾으면 해가 적분 유한 번으로 나온다.
+**적분가능계(integrable system)** 는 보존량이 자유도만큼 있는 Hamilton 계다. [Hamilton 역학](hamiltonian-mechanics.md)의 정준방정식은 일반적으로 해를 식으로 적을 수 없지만, $2n$ 차원 위상공간에서 Poisson 괄호가 서로 소멸하는 보존량 $n$ 개를 찾으면 해가 적분 유한 번으로 나온다.
 
 Arnold–Liouville 정리가 그 보존량들의 공통 준위집합을 $n$ 차원 원환면으로 보고, 그 근방에 흐름이 등속 운동으로 적히는 좌표를 준다.
 
