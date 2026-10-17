@@ -2,7 +2,7 @@
 
 # 개요
 
-Burnside 보조정리는 [군 작용](group-actions.md)의 궤도 개수를 각 군 원소가 고정하는 점의 개수의 평균으로 준다. 대칭으로 같다고 보는 배치가 몇 가지인지를 배치를 직접 분류하지 않고 세는 방법이다.
+**Burnside 보조정리(Burnside's lemma)** 는 [군 작용](group-actions.md)의 궤도 개수를 각 군 원소가 고정하는 점의 개수의 평균으로 준다. 대칭으로 같다고 보는 배치가 몇 가지인지를 배치를 직접 분류하지 않고 세는 방법이다.
 
 Cauchy 와 Frobenius 가 먼저 썼고 Burnside 의 교과서를 통해 퍼져서 Cauchy–Frobenius 보조정리라고도 한다.
 

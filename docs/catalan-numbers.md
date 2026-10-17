@@ -2,7 +2,7 @@
 
 # 개요
 
-Catalan 수(Catalan number) $C_n$ 은 괄호 $n$ 쌍을 올바르게 늘어놓는 방법의 수다.
+**Catalan 수(Catalan number)** $C_n$ 은 괄호 $n$ 쌍을 올바르게 늘어놓는 방법의 수다.
 
 $$
 C_n=\frac{1}{n+1}\binom{2n}{n}
