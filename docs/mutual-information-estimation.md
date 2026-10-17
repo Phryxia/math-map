@@ -2,7 +2,7 @@
 
 # 개요
 
-상호정보량 추정은 결합분포를 모르고 표본만 있을 때 $I(X;Y)$ 의 값을 재는 문제다. 밀도를 먼저 추정하는 대신 [KL divergence](kl-divergence.md)(Kullback–Leibler)의 변분 표현을 써서 하한을 최대화한다.
+**상호정보량 추정(mutual information estimation)** 은 결합분포를 모르고 표본만 있을 때 $I(X;Y)$ 의 값을 재는 문제다. 밀도를 먼저 추정하는 대신 [KL divergence](kl-divergence.md)(Kullback–Leibler)의 변분 표현을 써서 하한을 최대화한다.
 
 $$
 I(X;Y)=\mathrm{KL}(p\_{XY}\Vert p_X p_Y)=\sup_{T}\thinspace\mathbb E_{p\_{XY}}\lbrack T\rbrack-\log\mathbb E_{p_X p_Y}\lbrack e^{T}\rbrack
