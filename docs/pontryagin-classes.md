@@ -2,7 +2,7 @@
 
 # 개요
 
-Pontryagin 류(Pontryagin class)는 실 벡터다발의 정수 계수 특성류다. 다발을 복소화해 Chern 류를 취하고 짝수 번째만 부호를 맞춰 남긴다.
+**Pontryagin 류(Pontryagin class)** 는 실 벡터다발의 정수 계수 특성류다. 다발을 복소화해 Chern 류를 취하고 짝수 번째만 부호를 맞춰 남긴다.
 
 $$
 p_i(E) \thinspace=\thinspace (-1)^i c_{2i}(E\otimes\mathbb C)

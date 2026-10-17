@@ -2,9 +2,9 @@
 
 # 개요
 
-Pontryagin 쌍대성은 국소콤팩트 [아벨 위상군](topological-groups.md) $G$ 와 그 지표들이 이루는 군 $\hat G$ 사이의 대응이다. $\hat G$ 를 다시 쌍대로 보내면 $G$ 로 돌아오고, 이 대응이 Fourier 변환을 군 위에서 정의하는 틀이 된다.
+**Pontryagin 쌍대성(Pontryagin duality)** 은 국소콤팩트 [아벨 위상군](topological-groups.md) $G$ 와 그 지표들이 이루는 군 $\hat G$ 사이의 대응이다. $\hat G$ 를 다시 쌍대로 보내면 $G$ 로 돌아오고, 이 대응이 Fourier 변환을 군 위에서 정의하는 틀이 된다.
 
-[Fourier 급수](fourier-series.md)는 $S^1$ 과 $\mathbb Z$ 의 쌍, Fourier 변환은 $\mathbb R$ 과 $\mathbb R$ 의 쌍, 유한 Fourier 변환은 $\mathbb Z/n$ 과 자기 자신의 쌍이다. 세 변환이 한 정리의 사례이고, 어느 쌍에서나 Plancherel 등식과 역변환 공식이 같은 형태로 성립한다.
+[Fourier 급수](fourier-series.md)는 $S^1$ 과 $\mathbb Z$ 의 쌍, [Fourier 변환](fourier-transform.md)은 $\mathbb R$ 과 $\mathbb R$ 의 쌍, 유한 Fourier 변환은 $\mathbb Z/n$ 과 자기 자신의 쌍이다. 세 변환이 한 정리의 사례이고, 어느 쌍에서나 Plancherel 등식과 역변환 공식이 같은 형태로 성립한다.
 
 # 직관
 
