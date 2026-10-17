@@ -2,7 +2,7 @@
 
 # 개요
 
-Littlewood–Paley 이론(Littlewood–Paley theory)은 주파수를 이진 띠로 가른 조각들을 제곱해 더한 함수를 두고, 그 함수의 $L^p$ 노름이 원래 노름과 동등하다는 정리다.
+**Littlewood–Paley 이론(Littlewood–Paley theory)** 은 주파수를 이진 띠로 가른 조각들을 제곱해 더한 함수를 두고, 그 함수의 $L^p$ 노름이 원래 노름과 동등하다는 정리다.
 
 Plancherel 정리는 주파수를 겹치지 않는 조각으로 가른 함수의 $L^2$ 노름 제곱이 조각들의 노름 제곱의 합과 같다고 한다. $L^p$ 노름에는 같은 등식이 없다. $L^2$ 에서 직교성이 맡던 자리를 $1\lt p\lt\infty$ 에서 이 동등성이 맡는다.
 

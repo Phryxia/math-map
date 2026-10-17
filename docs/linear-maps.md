@@ -2,7 +2,7 @@
 
 # 개요
 
-선형사상은 [벡터 공간](vector-spaces.md)의 두 연산인 덧셈과 스칼라배를 보존하는 함수다.
+**선형사상(linear map)** 은 [벡터 공간](vector-spaces.md)의 두 연산인 덧셈과 스칼라배를 보존하는 함수다.
 
 $$
 T(au+bv)=aT(u)+bT(v)
