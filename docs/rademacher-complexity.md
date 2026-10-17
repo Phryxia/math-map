@@ -2,7 +2,7 @@
 
 # 개요
 
-Rademacher 복잡도(Rademacher complexity)는 함수족이 표본 위에서 무작위 부호열과 맞출 수 있는 상관의 크기다. 표본점마다 $\pm 1$ 을 동전으로 붙이고, 그 부호열과 상관이 가장 큰 함수를 족에서 골라 상관값을 재고 동전에 대해 평균한다.
+**Rademacher 복잡도(Rademacher complexity)** 는 함수족이 표본 위에서 무작위 부호열과 맞출 수 있는 상관의 크기다. 표본점마다 $\pm 1$ 을 동전으로 붙이고, 그 부호열과 상관이 가장 큰 함수를 족에서 골라 상관값을 재고 동전에 대해 평균한다.
 
 이 양이 경험 오차와 실제 오차의 최대 차이를 위에서 막는다. 유한 가설류에서는 가설 개수의 로그가 그 역할을 하고, 무한 가설류에서는 개수를 셀 수 없으므로 표본 위에서 함수족이 실제로 만드는 값만 재는 양이 필요하다.
 
@@ -94,7 +94,7 @@ $\mathcal F=\lbrace x\mapsto\langle w,x\rangle:\Vert w\Vert\_2\le B\rbrace$ 이�
 
 $$\hat{\mathfrak R}\_S(\mathcal F)\le\frac{BR}{\sqrt n}$$
 
-증명. Cauchy–Schwarz 부등식으로 상한이 $\frac{B}{n}\Vert\sum_i\sigma_i x_i\Vert\_2$ 와 같다. Jensen 부등식으로 기댓값을 제곱근 안으로 넣고 $E\_\sigma\Vert\sum_i\sigma_i x_i\Vert\_2^2=\sum_i\Vert x_i\Vert\_2^2\le nR^2$ 를 쓴다.
+증명. [Cauchy–Schwarz 부등식](cauchy-schwarz.md)으로 상한이 $\frac{B}{n}\Vert\sum_i\sigma_i x_i\Vert\_2$ 와 같다. Jensen 부등식으로 기댓값을 제곱근 안으로 넣고 $E\_\sigma\Vert\sum_i\sigma_i x_i\Vert\_2^2=\sum_i\Vert x_i\Vert\_2^2\le nR^2$ 를 쓴다.
 
 경계에 차원이 없다. 가중벡터의 노름과 자료의 노름만 들어가므로 좌표의 개수가 표본 수보다 커도 같은 수가 나온다.
 

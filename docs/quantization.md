@@ -2,7 +2,7 @@
 
 # 개요
 
-양자화(quantization)는 연속 값의 집합을 유한 개의 대표값으로 보내는 사상이다.
+**양자화(quantization)** 는 연속 값의 집합을 유한 개의 대표값으로 보내는 사상이다.
 
 $$
 Q:\mathbb R^k\to\lbrace y_1,\dots,y_N\rbrace,\qquad D=\mathbb E\lbrack\Vert X-Q(X)\Vert^2\rbrack

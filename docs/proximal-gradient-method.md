@@ -2,7 +2,7 @@
 
 # 개요
 
-근접 경사법은 [미분](derivative.md)가능한 볼록 함수와 미분 불가능한 볼록 함수의 합을 최소화하는 1 차 방법이다. 미분가능한 항에는 [경사하강법](gradient-descent.md)의 걸음을 밟고, 나머지 항은 근접 연산자로 한 걸음에 정확히 처리한다. 근접 연산자를 닫힌 식으로 계산할 수 있는 항에서는 걸음 비용이 경사하강법과 같고 수렴률도 같은 $O(1/k)$ 다.
+**근접 경사법(proximal gradient method)** 은 [미분](derivative.md)가능한 볼록 함수와 미분 불가능한 볼록 함수의 합을 최소화하는 1 차 방법이다. 미분가능한 항에는 [경사하강법](gradient-descent.md)의 걸음을 밟고, 나머지 항은 근접 연산자로 한 걸음에 정확히 처리한다. 근접 연산자를 닫힌 식으로 계산할 수 있는 항에서는 걸음 비용이 경사하강법과 같고 수렴률도 같은 $O(1/k)$ 다.
 
 # 직관
 
@@ -64,7 +64,7 @@ $$
 
 정리. 모든 $z,w$ 에 대해 $\Vert\mathrm{prox}\_{\eta g}(z)-\mathrm{prox}\_{\eta g}(w)\Vert\le\Vert z-w\Vert$ 다[^1].
 
-증명의 요지. $u=\mathrm{prox}\_{\eta g}(z)$ , $v=\mathrm{prox}\_{\eta g}(w)$ 로 두면 $(z-u)/\eta\in\partial g(u)$ 이고 $(w-v)/\eta\in\partial g(v)$ 다. 부분미분의 정의 부등식을 두 점에서 쓰고 더하면 $\langle p-q,\thinspace u-v\rangle\ge 0$ 이 모든 $p\in\partial g(u)$ , $q\in\partial g(v)$ 에서 성립하므로 $\langle (z-u)-(w-v),\thinspace u-v\rangle\ge 0$ 이다. 정리하면 $\Vert u-v\Vert^2\le\langle z-w,\thinspace u-v\rangle$ 이고 Cauchy–Schwarz 부등식으로 결론이 나온다.
+증명의 요지. $u=\mathrm{prox}\_{\eta g}(z)$ , $v=\mathrm{prox}\_{\eta g}(w)$ 로 두면 $(z-u)/\eta\in\partial g(u)$ 이고 $(w-v)/\eta\in\partial g(v)$ 다. 부분미분의 정의 부등식을 두 점에서 쓰고 더하면 $\langle p-q,\thinspace u-v\rangle\ge 0$ 이 모든 $p\in\partial g(u)$ , $q\in\partial g(v)$ 에서 성립하므로 $\langle (z-u)-(w-v),\thinspace u-v\rangle\ge 0$ 이다. 정리하면 $\Vert u-v\Vert^2\le\langle z-w,\thinspace u-v\rangle$ 이고 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)으로 결론이 나온다.
 
 ## 고정점과 최적성
 
