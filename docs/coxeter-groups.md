@@ -2,7 +2,7 @@
 
 # 개요
 
-Coxeter 군(Coxeter group)은 생성원이 모두 위수 2 이고 관계가 두 생성원의 곱의 위수만으로 주어지는 군이다. 표시가
+**Coxeter 군(Coxeter group)** 은 생성원이 모두 위수 2 이고 관계가 두 생성원의 곱의 위수만으로 주어지는 군이다. 표시가
 
 $$
 W=\langle s_1,\dots,s_n\mid(s_is_j)^{m_{ij}}=e\rangle,\qquad m_{ii}=1,\quad m_{ij}=m_{ji}\in\lbrace 2,3,\dots,\infty\rbrace

@@ -2,7 +2,7 @@
 
 # 개요
 
-De Giorgi–Nash–Moser 정리(De Giorgi–Nash–Moser theorem)는 발산형 2계 타원형 방정식의 계수가 유계 측정가능일 뿐일 때 약한 해가 국소적으로 Hölder 연속이라는 정리다. 지수는 차원과 타원성 상수의 비에만 의존하고 계수의 연속성에는 의존하지 않는다.
+**De Giorgi–Nash–Moser 정리(De Giorgi–Nash–Moser theorem)** 는 발산형 2계 타원형 방정식의 계수가 유계 측정가능일 뿐일 때 약한 해가 국소적으로 Hölder 연속이라는 정리다. 지수는 차원과 타원성 상수의 비에만 의존하고 계수의 연속성에는 의존하지 않는다.
 
 [Schauder 추정](schauder-estimates.md)은 계수가 $C^{0,\alpha}$ 에 든다는 가정으로 2계 도함수까지 올린다. 계수에 연속성이 없으면 2계 도함수를 얻을 수 없고, 남는 결론이 해 자신의 [Hölder 공간](holder-spaces.md) 소속이다.
 
@@ -66,7 +66,7 @@ $$
 
 이고 $C$ 는 $n$ 과 $\Lambda/\lambda$ 에만 의존한다.[^1]
 
-증명의 요지. $B\_{r/2}$ 에서 $1$ 이고 $B_r$ 밖에서 $0$ 이며 $\vert\nabla\eta\vert\le C/r$ 인 절단함수 $\eta$ 를 잡고 $\varphi=\eta^2(u-k)^+$ 를 약한 꼴에 넣는다. 왼쪽을 전개하면 $(u-k)^+$ 의 기울기 제곱 항과 $\eta\nabla\eta$ 가 붙은 교차항이 나오고, 타원성이 앞 항을 아래에서 $\lambda$ 배로 묶는다. 교차항에 Cauchy–Schwarz 부등식과 Young 부등식을 쓰면 기울기 제곱 항의 일부와 $\vert\nabla\eta\vert^2(u-k)^{+2}$ 의 적분으로 갈라지고, 앞쪽을 왼쪽으로 넘긴다. $\square$
+증명의 요지. $B\_{r/2}$ 에서 $1$ 이고 $B_r$ 밖에서 $0$ 이며 $\vert\nabla\eta\vert\le C/r$ 인 절단함수 $\eta$ 를 잡고 $\varphi=\eta^2(u-k)^+$ 를 약한 꼴에 넣는다. 왼쪽을 전개하면 $(u-k)^+$ 의 기울기 제곱 항과 $\eta\nabla\eta$ 가 붙은 교차항이 나오고, 타원성이 앞 항을 아래에서 $\lambda$ 배로 묶는다. 교차항에 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)과 Young 부등식을 쓰면 기울기 제곱 항의 일부와 $\vert\nabla\eta\vert^2(u-k)^{+2}$ 의 적분으로 갈라지고, 앞쪽을 왼쪽으로 넘긴다. $\square$
 
 양변에 계수가 $\lambda,\Lambda$ 로만 들어가는 점이 이 부등식의 쓰임을 정한다. 해의 기울기를 해의 크기로 묶으므로 자른 값을 올리며 되풀이할 수 있다.
 
