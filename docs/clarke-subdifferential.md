@@ -2,7 +2,7 @@
 
 # 개요
 
-Clarke 준미분은 볼록하지 않은 Lipschitz 함수에서 [부분미분](subdifferential.md)을 대신하는 집합이다. 미분가능한 점들의 기울기가 한 점으로 모일 때의 극한을 모아 볼록껍질을 취한 것이고, 그런 점이 거의 어디서나 있다는 것이 [Rademacher 정리](rademacher-theorem.md)다.
+**Clarke 준미분(Clarke subdifferential)** 은 볼록하지 않은 Lipschitz 함수에서 [부분미분](subdifferential.md)을 대신하는 집합이다. 미분가능한 점들의 기울기가 한 점으로 모일 때의 극한을 모아 볼록껍질을 취한 것이고, 그런 점이 거의 어디서나 있다는 것이 [Rademacher 정리](rademacher-theorem.md)다.
 
 국소 극소점과 국소 극대점에서 모두 $0$ 을 품으므로 최적성의 필요조건만 준다. 볼록 함수에서는 부분미분과 일치한다.
 

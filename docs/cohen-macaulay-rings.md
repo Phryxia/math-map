@@ -2,7 +2,7 @@
 
 # 개요
 
-Cohen–Macaulay 환은 깊이와 [Krull 차원](krull-dimension.md)이 같은 Noether 국소환이다. [정칙 국소환](regular-local-rings.md)의 조건을 약화한 것이고, 극대 아이디얼의 원소로 차례차례 나누어 차원을 하나씩 떨어뜨리는 계산이 차원 횟수만큼 이어진다는 뜻이다.
+**Cohen–Macaulay 환(Cohen–Macaulay ring)** 은 깊이와 [Krull 차원](krull-dimension.md)이 같은 Noether 국소환이다. [정칙 국소환](regular-local-rings.md)의 조건을 약화한 것이고, 극대 아이디얼의 원소로 차례차례 나누어 차원을 하나씩 떨어뜨리는 계산이 차원 횟수만큼 이어진다는 뜻이다.
 
 # 직관
 

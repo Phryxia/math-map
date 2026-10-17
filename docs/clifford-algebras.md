@@ -2,7 +2,7 @@
 
 # 개요
 
-Clifford 대수는 [이차형식](quadratic-forms.md)을 가진 벡터 공간에서 벡터의 제곱이 그 이차형식의 값이 되도록 강제해 얻는 결합대수다. [외대수](exterior-algebra.md)가 벡터의 제곱을 $0$ 으로 놓은 것이고, 그 자리에 이차형식을 놓은 것이 Clifford 대수다.
+**Clifford 대수(Clifford algebra)** 는 [이차형식](quadratic-forms.md)을 가진 벡터 공간에서 벡터의 제곱이 그 이차형식의 값이 되도록 강제해 얻는 결합대수다. [외대수](exterior-algebra.md)가 벡터의 제곱을 $0$ 으로 놓은 것이고, 그 자리에 이차형식을 놓은 것이 Clifford 대수다.
 
 차원은 외대수와 같은 $2^n$ 이지만 곱이 다르고, 가역원이 많아 직교군의 이중덮개를 이 대수 안에서 만들 수 있다.
 
