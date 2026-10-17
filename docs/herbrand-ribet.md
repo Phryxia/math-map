@@ -133,7 +133,7 @@ $p$ 가 비정칙일 때 어느 성분이 비자명한지가 Herbrand–Ribet �
 
 ## 합동을 통한 표현의 구성
 
-고유형식이 Eisenstein 급수와 합동이면 그 표현이 가약이라는 원리는 Serre 추측과 변형 이론에서 쓰인다. [변형환](deformation-rings.md)의 언어로는 Eisenstein 극대 아이디얼에서의 Hecke 대수의 국소 구조를 묻는 문제이고, Mazur 의 Eisenstein 아이디얼 연구가 그 시작이다. $\mathbb Q$ 위 타원곡선의 비틀림점 분류(Mazur 의 정리)가 같은 기술의 산물이다.
+고유형식이 Eisenstein 급수와 합동이면 그 표현이 가약이라는 원리는 Serre 추측과 변형 이론에서 쓰인다. [변형환](deformation-rings.md)에서는 Eisenstein 극대 아이디얼에서의 Hecke 대수의 국소 구조를 묻는 문제이고, Mazur 의 Eisenstein 아이디얼 연구가 그 시작이다. $\mathbb Q$ 위 타원곡선의 비틀림점 분류(Mazur 의 정리)가 같은 기술의 산물이다.
 
 ## 현대적 일반화
 

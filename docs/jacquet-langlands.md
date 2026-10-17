@@ -54,7 +54,7 @@ $$
 \Theta_{\mathrm{JL}(\rho)}(\gamma)=-\thinspace\Theta_\rho(\gamma)
 $$
 
-[Vogan L 꾸러미](vogan-packets.md)의 언어로는 $\mathrm{GL}\_2$ 쪽 표현과 $B^\times$ 쪽 표현이 같은 매개변수를 갖는 꾸러미의 두 원소이고, 성분군 $\mathbb Z/2$ 의 자명 지표와 부호 지표에 각각 대응한다. 부호 지표가 붙은 쪽이 비분열 내부형식 위에 있다는 규칙이 이 $-1$ 로 나타난다.
+[Vogan L 꾸러미](vogan-packets.md)에서는 $\mathrm{GL}\_2$ 쪽 표현과 $B^\times$ 쪽 표현이 같은 매개변수를 갖는 꾸러미의 두 원소이고, 성분군 $\mathbb Z/2$ 의 자명 지표와 부호 지표에 각각 대응한다. 부호 지표가 붙은 쪽이 비분열 내부형식 위에 있다는 규칙이 이 $-1$ 로 나타난다.
 
 ## 전역 대응
 

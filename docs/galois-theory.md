@@ -138,7 +138,7 @@ $\mathbb{Q}$ 의 Galois 확대에서 Galois 군의 부분군이 [소수](primes.
 
 ## 다른 분야의 같은 대응
 
-군과 부분대상 격자의 같은 대응이 위상수학의 피복공간과 [기본군](fundamental-group.md) 사이에, 미분방정식의 [미분 Galois 이론](differential-galois-theory.md)에 나타난다. [범주](category.md)의 언어로 쓴 Galois 범주가 이 대응들을 함께 다룬다.
+군과 부분대상 격자의 같은 대응이 위상수학의 피복공간과 [기본군](fundamental-group.md) 사이에, 미분방정식의 [미분 Galois 이론](differential-galois-theory.md)에 나타난다. [범주](category.md)로 쓴 Galois 범주가 이 대응들을 함께 다룬다.
 
 [^1]: MathWorld, "Fundamental Theorem of Galois Theory" — 유한 Galois 확대에서 부분군과 중간체의 일대일 대응, 차수와 지수의 관계, 정규부분군과 Galois 중간체의 대응. https://mathworld.wolfram.com/FundamentalTheoremofGaloisTheory.html
 [^2]: M. Mrinal, "Galois theory and the Abel–Ruffini theorem", University of Chicago REU 2019 — 근호 가해성과 Galois 군 가해성의 동치, $S_n$ 이 $n\ge 5$ 에서 비가해임, Galois 군이 $S_5$ 인 5차 다항식( $x^5-6x+3$ ) 예. https://math.uchicago.edu/~may/REU2019/REUPapers/Mrinal.pdf
