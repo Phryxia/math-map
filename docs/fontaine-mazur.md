@@ -67,7 +67,7 @@ $$
 
 무게가 같은 $\lbrace 0,0\rbrace$ 인 경우 추측은 $\rho$ 의 상이 유한하다고 주장한다. 그러면 $\rho$ 가 Artin 표현이 되고 Artin 추측의 영역으로 넘어간다. 이 경우는 증명되지 않았다[^1].
 
-## 변형환의 언어
+## 보편 변형환과 Hecke 대수
 
 Mazur 의 변형이론이 추측을 기하적 대상 사이의 진술로 바꾼다. 잔여표현 $\bar\rho\colon G_{\mathbb Q,S}\to\mathrm{GL}\_2(\mathbb F_p)$ 를 고정하면 그 변형을 분류하는 보편 변형환 $R_{\bar\rho}$ 가 있고, 한편 같은 잔여표현을 주는 고유형식들이 Hecke 대수 $\mathbb T_{\bar\rho}$ 를 이룬다. 모듈러성이 자연사상
 
