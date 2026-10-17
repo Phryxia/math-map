@@ -2,7 +2,7 @@
 
 # 개요
 
-근사 알고리즘은 최적해 대신 최적해와의 비율이 증명된 해를 다항시간에 내놓는 알고리즘이다. [NP-완전](np-completeness.md)(nondeterministic polynomial time) 문제에서 최적성을 포기하되 얼마나 포기하는지를 증명과 함께 밝힌다.
+**근사 알고리즘(approximation algorithm)** 은 최적해 대신 최적해와의 비율이 증명된 해를 다항시간에 내놓는 알고리즘이다. [NP-완전](np-completeness.md)(nondeterministic polynomial time) 문제에서 최적성을 포기하되 얼마나 포기하는지를 증명과 함께 밝힌다.
 
 최소화 문제에서 근사비 $\rho$ 를 보장한다는 것은 모든 입력에 대해 다음이 성립한다는 뜻이다.
 

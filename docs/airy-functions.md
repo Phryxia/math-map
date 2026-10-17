@@ -2,7 +2,7 @@
 
 # 개요
 
-Airy 함수(Airy function)는 미분방정식
+**Airy 함수(Airy function)** 는 미분방정식
 
 $$
 y''(z) = z\thinspace y(z)

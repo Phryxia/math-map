@@ -2,7 +2,7 @@
 
 # 개요
 
-대수군은 [대수다양체](algebraic-varieties.md)이면서 [군](groups.md)이고, 곱과 역원이 다항식 사상인 것이다. $\mathrm{GL}\_n$, $\mathrm{SL}\_n$, 직교군, 심플렉틱군이 모두 이 꼴이다.
+**대수군(algebraic group)** 은 [대수다양체](algebraic-varieties.md)이면서 [군](groups.md)이고, 곱과 역원이 다항식 사상인 것이다. $\mathrm{GL}\_n$, $\mathrm{SL}\_n$, 직교군, 심플렉틱군이 모두 이 꼴이다.
 
 부분군을 통제하는 수단은 다양체의 차원이다. 극대 연결 가해 부분군이 모두 공역이라는 Borel 의 정리가 부분군의 모양을 결정하고, 대수적으로 닫힌 체 위의 반단순군은 [근계](root-systems.md)로 분류된다.
 
