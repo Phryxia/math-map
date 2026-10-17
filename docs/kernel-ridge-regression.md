@@ -2,7 +2,7 @@
 
 # 개요
 
-핵 능형회귀는 [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)에서 제곱오차와 노름 벌점의 합을 최소화하는 회귀다. 표현자 정리가 해를 자료점의 핵 함수들의 선형결합으로 묶으므로, 무한차원 공간에서의 최소화가 $n$ 차 선형계 하나로 끝난다.
+**핵 능형회귀(kernel ridge regression)** 는 [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)에서 제곱오차와 노름 벌점의 합을 최소화하는 회귀다. 표현자 정리가 해를 자료점의 핵 함수들의 선형결합으로 묶으므로, 무한차원 공간에서의 최소화가 $n$ 차 선형계 하나로 끝난다.
 
 해는 핵 행렬 $K$ 와 벌점 상수 $\lambda$ 로 $\alpha=(K+\lambda I)^{-1}y$ 다. 특징 좌표를 만들지 않고 핵의 값만으로 예측값을 계산한다.
 

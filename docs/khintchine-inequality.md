@@ -2,7 +2,7 @@
 
 # 개요
 
-Khintchine 부등식(Khintchine inequality)은 무작위 부호를 붙인 합 $\sum_j\varepsilon_ja_j$ 의 $L^p$ 노름이 계수의 $\ell^2$ 노름과 상수배로 동등하다는 것이다. 상수는 $p$ 에만 의존하고 항의 개수와 계수에 의존하지 않는다.
+**Khintchine 부등식(Khintchine inequality)** 은 무작위 부호를 붙인 합 $\sum_j\varepsilon_ja_j$ 의 $L^p$ 노름이 계수의 $\ell^2$ 노름과 상수배로 동등하다는 것이다. 상수는 $p$ 에만 의존하고 항의 개수와 계수에 의존하지 않는다.
 
 $p=2$ 에서는 직교성으로 등식이 성립한다. 이 부등식은 그 등식이 모든 $p$ 에서 상수배까지 유지됨을 말한다.
 

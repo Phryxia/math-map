@@ -2,7 +2,7 @@
 
 # 개요
 
-Kolmogorov–Sinai 엔트로피는 측도보존변환이 한 걸음마다 만들어 내는 정보의 양이다. 유한 가측분할 $\mathcal P$ 를 변환으로 되풀이해 세분한 것의 [Shannon 엔트로피](entropy.md)가 $n$ 에 비례해 자라고, 그 비례상수의 상한이 변환의 엔트로피다.
+**Kolmogorov–Sinai 엔트로피(Kolmogorov–Sinai entropy)** 는 측도보존변환이 한 걸음마다 만들어 내는 정보의 양이다. 유한 가측분할 $\mathcal P$ 를 변환으로 되풀이해 세분한 것의 [Shannon 엔트로피](entropy.md)가 $n$ 에 비례해 자라고, 그 비례상수의 상한이 변환의 엔트로피다.
 
 $$
 h(T)=\sup_{\mathcal P}\lim_{n\to\infty}\frac1n H\Big(\bigvee_{k=0}^{n-1}T^{-k}\mathcal P\Big)

@@ -2,7 +2,7 @@
 
 # 개요
 
-Kloosterman 합은 법 $c$ 의 가역 잉여류에서 수와 그 역원을 함께 지수에 올려 더한 값이다. [Gauss 합](gauss-sums.md)이 제곱을 올려 절댓값이 $\sqrt c$ 로 정확히 계산되는 데 비해, 역원을 올린 합은 닫힌 꼴로 평가되지 않고 소수 법에서 크기만 $2\sqrt c$ 로 묶인다.
+**Kloosterman 합(Kloosterman sum)** 은 법 $c$ 의 가역 잉여류에서 수와 그 역원을 함께 지수에 올려 더한 값이다. [Gauss 합](gauss-sums.md)이 제곱을 올려 절댓값이 $\sqrt c$ 로 정확히 계산되는 데 비해, 역원을 올린 합은 닫힌 꼴로 평가되지 않고 소수 법에서 크기만 $2\sqrt c$ 로 묶인다.
 
 Kloosterman 이 네 변수 이차형식의 표현 개수를 세며 도입했다[^1]. 모듈러 형식의 Fourier 계수와 [원법](circle-method.md)의 주 호에서 같은 합이 나온다.
 
