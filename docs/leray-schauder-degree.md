@@ -2,7 +2,7 @@
 
 # 개요
 
-Leray–Schauder 차수는 [Banach 공간](banach-spaces.md)에서 항등사상의 콤팩트 섭동 $I-T$ 에 붙이는 정수값 불변량이다. 유한차원의 [Brouwer 차수](brouwer-degree.md)를 유한차원 근사의 극한으로 옮긴 것이고, [Schauder 고정점 정리](schauder-fixed-point.md)가 주는 고정점의 존재보다 많은 것, 곧 해의 개수와 매개변수에 따른 해의 분기를 센다.
+**Leray–Schauder 차수(Leray–Schauder degree)** 는 [Banach 공간](banach-spaces.md)에서 항등사상의 콤팩트 섭동 $I-T$ 에 붙이는 정수값 불변량이다. 유한차원의 [Brouwer 차수](brouwer-degree.md)를 유한차원 근사의 극한으로 옮긴 것이고, [Schauder 고정점 정리](schauder-fixed-point.md)가 주는 고정점의 존재보다 많은 것, 곧 해의 개수와 매개변수에 따른 해의 분기를 센다.
 
 # 직관
 

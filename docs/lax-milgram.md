@@ -2,7 +2,7 @@
 
 # 개요
 
-Lax–Milgram 정리는 Hilbert 공간 위의 쌍선형형식 $B$ 가 유계이고 강제이면 $B(u,v)=f(v)$ 꼴 방정식이 유일한 해를 갖는다는 정리다. $B$ 가 대칭일 필요가 없다.
+**Lax–Milgram 정리(Lax–Milgram theorem)** 는 Hilbert 공간 위의 쌍선형형식 $B$ 가 유계이고 강제이면 $B(u,v)=f(v)$ 꼴 방정식이 유일한 해를 갖는다는 정리다. $B$ 가 대칭일 필요가 없다.
 
 미분방정식을 적분 항등식으로 바꿔 쓴 약한 꼴이 이 형태다. [Sobolev 공간](sobolev-spaces.md)에서 해의 존재와 유일성을 얻는 자리가 이 정리이고, 유한요소법의 오차 추정도 같은 두 상수 $\alpha,\beta$ 로 쓴다.
 
@@ -114,7 +114,7 @@ $$
 
 # 활용
 
-- **타원형 경계값 문제의 약한 해.** [Dirichlet 문제](dirichlet-problem.md) $-\Delta u=f$ 와 경계값 $0$ 에서 $B(u,v)=\int\_U\nabla u\cdot\nabla v\thinspace dx$ 를 놓으면 Poincaré 부등식이 강제성을 주고 Cauchy–Schwarz 부등식이 유계성을 준다. Sobolev 공간 문서의 약한 해 서술이 존재와 유일성을 이 정리에서 받는다.
+- **타원형 경계값 문제의 약한 해.** [Dirichlet 문제](dirichlet-problem.md) $-\Delta u=f$ 와 경계값 $0$ 에서 $B(u,v)=\int\_U\nabla u\cdot\nabla v\thinspace dx$ 를 놓으면 Poincaré 부등식이 강제성을 주고 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)이 유계성을 준다. Sobolev 공간 문서의 약한 해 서술이 존재와 유일성을 이 정리에서 받는다.
 - **이류-확산 방정식.** $-\mathrm{div}(a\nabla u)+b\cdot\nabla u+cu=f$ 의 쌍선형형식은 $b\ne 0$ 에서 대칭이 아니다. $a$ 가 아래로 유계이고 $c$ 가 음이 아니며 $\Vert b\Vert\_{L^\infty}$ 가 작으면 강제성이 남는다.
 - **Galerkin 근사의 오차.** 유한차원 부분공간 $V_h\subset H$ 에서 모든 $v\in V_h$ 에 대해 $B(u_h,v)=f(v)$ 인 $u_h$ 를 구하면, Céa 보조정리가 $\Vert u-u\_h\Vert\le(\beta/\alpha)\inf\_{v\in V\_h}\Vert u-v\Vert$ 을 준다. 유한요소법의 수렴 증명이 이 부등식과 부분공간의 근사 능력으로 갈라진다.
 - **강제성이 없는 안장점 문제.** Stokes 방정식의 쌍선형형식은 속도와 압력을 함께 놓은 공간에서 강제가 아니다. 이 경우에는 Lax–Milgram 정리 대신 두 공간 사이의 부등식을 가정하는 Babuška–Brezzi 조건을 쓴다.[^2]

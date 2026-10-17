@@ -2,7 +2,7 @@
 
 # 개요
 
-Lax 쌍은 Hamilton 흐름을 행렬 하나의 닮음 변형으로 적는 두 행렬의 짝이다. 시간에 따라 변하는 행렬 $L(t)$ 와 $P(t)$ 가
+**Lax 쌍(Lax pair)** 은 Hamilton 흐름을 행렬 하나의 닮음 변형으로 적는 두 행렬의 짝이다. 시간에 따라 변하는 행렬 $L(t)$ 와 $P(t)$ 가
 
 $$
 \dot L=\lbrack P,L\rbrack

@@ -2,7 +2,7 @@
 
 # 개요
 
-격자 부분군은 몫이 유한 부피인 이산 부분군이다. $\mathbb Z^n$ 으로 $\mathbb R^n$ 을 나누면 부피 $1$ 인 환면이 남는다. $\mathrm{SL}\_2(\mathbb Z)$ 로 $\mathrm{SL}\_2(\mathbb R)$ 을 나눈 몫은 콤팩트하지 않지만 [Haar 측도](haar-measure.md)로 재면 부피가 유한하다. 두 경우를 함께 담는 조건이 격자다.
+**격자 부분군(lattice subgroup)** 은 몫이 유한 부피인 이산 부분군이다. $\mathbb Z^n$ 으로 $\mathbb R^n$ 을 나누면 부피 $1$ 인 환면이 남는다. $\mathrm{SL}\_2(\mathbb Z)$ 로 $\mathrm{SL}\_2(\mathbb R)$ 을 나눈 몫은 콤팩트하지 않지만 [Haar 측도](haar-measure.md)로 재면 부피가 유한하다. 두 경우를 함께 담는 조건이 격자다.
 
 # 직관
 
