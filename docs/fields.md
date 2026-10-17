@@ -98,7 +98,7 @@ $$
 
 ## 다항식과 확대
 
-체 위의 [다항식환](polynomial-rings.md)은 나눗셈 정리를 가지므로 유클리드 정역이 된다. 기약다항식으로 몫을 취하면 더 큰 체가 나오고, 이 과정을 반복해 대수방정식의 해를 담는 체를 구성한다.
+체 위의 [다항식환](polynomial-rings.md)은 나눗셈 정리를 가지므로 [유클리드 정역](euclidean-domains.md)이 된다. 기약다항식으로 몫을 취하면 더 큰 체가 나오고, 이 과정을 반복해 대수방정식의 해를 담는 체를 구성한다.
 
 [^1]: Dummit, Math 5111 Lecture #5, "Subfields and Simple Extensions" — 표수가 0 또는 소수임과 소체가 $\mathbb{Q}$ 또는 $\mathbb{F}\_p$ 와 동형임의 증명. https://dummit.cos.northeastern.edu/teaching_fa20_5111/5111_lecture_05_subfields_simple_extensions.pdf
 [^2]: MIT OpenCourseWare 18.703, Lecture 18 "Prime and Maximal Ideals", Theorem 18.8. https://ocw.mit.edu/courses/18-703-modern-algebra-spring-2013/247dc7bcf731827674f4a2338f929a7a_MIT18_703S13_pra_l_18.pdf

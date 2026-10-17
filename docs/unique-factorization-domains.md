@@ -4,7 +4,7 @@
 
 유일분해정역(unique factorization domain, UFD)은 $0$ 이 아닌 비단위 원소가 기약원의 곱으로 쓰이고 그 분해가 순서와 단위원 배수를 무시하면 유일한 정역이다. [소수](primes.md)에서 정수에 대해 성립한 산술의 기본정리를 환 일반으로 옮긴 조건이다.
 
-정역 가운데 이 성질을 갖는 것을 가려내는 기준이 유클리드 정역과 주아이디얼정역이다. 셋은 포함 사슬을 이루고, [다항식환](polynomial-rings.md)은 계수환이 무엇이냐에 따라 사슬의 어느 칸에 놓일지가 갈린다. [대수적 수체](algebraic-number-fields.md)의 정수환은 이 사슬에서 떨어져 나가며, 분해의 대상을 원소에서 아이디얼로 바꾸어 유일성을 복구한 것이 [Dedekind 정역](dedekind-domains.md)이다.
+정역 가운데 이 성질을 갖는 것을 가려내는 기준이 [유클리드 정역](euclidean-domains.md)과 주아이디얼정역이다. 셋은 포함 사슬을 이루고, [다항식환](polynomial-rings.md)은 계수환이 무엇이냐에 따라 사슬의 어느 칸에 놓일지가 갈린다. [대수적 수체](algebraic-number-fields.md)의 정수환은 이 사슬에서 떨어져 나가며, 분해의 대상을 원소에서 아이디얼로 바꾸어 유일성을 복구한 것이 [Dedekind 정역](dedekind-domains.md)이다.
 
 # 직관
 
@@ -99,7 +99,7 @@ UFD 에서는 두 원소의 최대공약수가 지수별 최솟값으로 정의�
 
 ## 더 알아보기
 
-- [Gauss 정수환](gaussian-integers.md)
+- [유클리드 정역](euclidean-domains.md)
 - [PID 위의 유한생성 가군](finitely-generated-modules.md)
 - [Dedekind 정역](dedekind-domains.md)
 

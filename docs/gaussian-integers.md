@@ -2,7 +2,7 @@
 
 # 개요
 
-Gauss 정수환 $\mathbb Z[i]$ 는 $a+bi\ (a,b\in\mathbb Z)$ 꼴의 복소수가 이루는 환이다. 노름 $N(a+bi)=a^2+b^2$ 을 Euclid 함수로 삼으면 나눗셈 정리가 성립하므로 이 환은 [유일분해정역](unique-factorization-domains.md)이다.
+Gauss 정수환 $\mathbb Z[i]$ 는 $a+bi\ (a,b\in\mathbb Z)$ 꼴의 복소수가 이루는 환이다. 노름 $N(a+bi)=a^2+b^2$ 을 Euclid 함수로 삼으면 나눗셈 정리가 성립하므로 이 환은 [유클리드 정역](euclidean-domains.md)이고 [유일분해정역](unique-factorization-domains.md)이다.
 
 유일분해가 성립한다는 사실 하나로 정수에 대한 두 물음이 풀린다. 어떤 소수가 두 제곱수의 합인가, 그리고 $x^2+y^2=n$ 의 정수해가 몇 개인가다. 답은 $\mathbb Z$ 의 소수가 $\mathbb Z[i]$ 에서 어떻게 쪼개지는지로 환원되고, 그 판정 기준을 주는 것이 [이차 상호법칙](quadratic-reciprocity.md)의 보충 법칙이다.
 
@@ -93,7 +93,7 @@ $d$ 가 제곱인수 없는 정수일 때 $\mathbb Z[\sqrt d\thinspace]$ 나 그
 ## 선수지식
 
 - [이차 상호법칙](quadratic-reciprocity.md)
-- [유일분해정역](unique-factorization-domains.md)
+- [유클리드 정역](euclidean-domains.md)
 
 ## 더 알아보기
 
