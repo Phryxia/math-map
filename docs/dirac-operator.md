@@ -2,7 +2,7 @@
 
 # 개요
 
-Dirac 작용소는 [스피너 다발](spin-structures.md)의 공변미분에 [Clifford 대수](clifford-algebras.md)의 곱을 합성해 얻는 1계 미분작용소다. 제곱이 Laplace 꼴 작용소와 스칼라 곡률의 합이 된다.
+**Dirac 작용소(Dirac operator)** 는 [스피너 다발](spin-structures.md)의 공변미분에 [Clifford 대수](clifford-algebras.md)의 곱을 합성해 얻는 1계 미분작용소다. 제곱이 Laplace 꼴 작용소와 스칼라 곡률의 합이 된다.
 
 콤팩트 다양체에서 이 작용소는 자기수반이고 타원형이므로 스펙트럼이 이산이고 핵이 유한차원이다. 짝수 차원에서 핵과 쌍대핵의 차원 차이가 특성류의 적분으로 적힌다.
 

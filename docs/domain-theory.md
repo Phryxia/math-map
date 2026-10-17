@@ -2,7 +2,7 @@
 
 # 개요
 
-영역 이론(domain theory)은 재귀적으로 정의된 프로그램에 의미를 주는 순서 구조를 다룬다. 재귀적으로 정의된 프로그램은 자기 자신을 참조한다.
+**영역 이론(domain theory)** 은 재귀적으로 정의된 프로그램에 의미를 주는 순서 구조를 다룬다. 재귀적으로 정의된 프로그램은 자기 자신을 참조한다.
 
 $$
 \mathrm{fact}(n)=\begin{cases}1,&n=0\cr n\cdot\mathrm{fact}(n-1),&n\gt 0\end{cases}

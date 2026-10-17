@@ -2,7 +2,7 @@
 
 # 개요
 
-Donsker 불변원리(Donsker's invariance principle)는 독립 증분의 부분합을 꺾은선으로 이은 과정의 분포가 Brown 운동의 분포로 약수렴한다는 정리다.
+**Donsker 불변원리(Donsker's invariance principle)** 는 독립 증분의 부분합을 꺾은선으로 이은 과정의 분포가 Brown 운동의 분포로 약수렴한다는 정리다.
 
 평균이 $0$ 이고 분산이 유한한 독립 증분의 부분합을 시간은 $n$, 공간은 $\sqrt n$ 으로 줄여 꺾은선으로 이으면, 그 꺾은선의 분포가 연속함수 공간 $C\lbrack 0,1\rbrack$ 위에서 표준 Brown 운동의 분포로 약수렴한다.
 
