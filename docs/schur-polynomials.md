@@ -93,7 +93,7 @@ $$
 \mathrm{ch}:\bigoplus_n R(S_n)\ \xrightarrow{\ \sim\ }\ \Lambda,\qquad [S^\lambda]\mapsto s_\lambda
 $$
 
-$\mathrm{GL}\_n$ 의 표현론과 $S_n$ 의 표현론이 같은 대상 위에서 만나는 이 현상이 **[Schur–Weyl 쌍대성](schur-weyl-duality.md)**의 대칭함수 판본이다.
+$\mathrm{GL}\_n$ 의 표현론과 $S_n$ 의 표현론이 같은 대상 위에서 만나는 이 현상이 **[Schur–Weyl 쌍대성](schur-weyl-duality.md)** 의 대칭함수 판본이다.
 
 ## Littlewood–Richardson 규칙
 

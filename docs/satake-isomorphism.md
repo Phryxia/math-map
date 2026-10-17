@@ -227,11 +227,11 @@ $$
 b:\mathcal H(G,K)\to\mathcal H(H,K_H)
 $$
 
-으로 정의된다. 이 $b$ 가 궤도적분 수준에서도 맞는다는 것이 **[기본 보조정리](fundamental-lemma.md)**이고, Ngô Bảo Châu 가 Hitchin 올뭉치의 기하로 증명했다. 진술 자체가 Satake 동형 위에서 쓰인다.
+으로 정의된다. 이 $b$ 가 궤도적분 수준에서도 맞는다는 것이 **[기본 보조정리](fundamental-lemma.md)** 이고, Ngô Bảo Châu 가 Hitchin 올뭉치의 기하로 증명했다. 진술 자체가 Satake 동형 위에서 쓰인다.
 
 ## 기하학적 Satake
 
-동형의 오른쪽이 표현환이라는 것은 Grothendieck 군 수준의 진술이다. 이것을 [범주](category.md) 수준으로 올린 것이 **[기하학적 Satake 대응](geometric-satake.md)**이다. 아핀 Grassmann 다양체 $\mathrm{Gr}\_G=G(F)/G(\mathcal O)$ 위의 $G(\mathcal O)$ 동변 퍼버스 층의 범주가 텐서 범주로서 $\widehat G$ 의 표현 범주와 동치다.
+동형의 오른쪽이 표현환이라는 것은 Grothendieck 군 수준의 진술이다. 이것을 [범주](category.md) 수준으로 올린 것이 **[기하학적 Satake 대응](geometric-satake.md)** 이다. 아핀 Grassmann 다양체 $\mathrm{Gr}\_G=G(F)/G(\mathcal O)$ 위의 $G(\mathcal O)$ 동변 퍼버스 층의 범주가 텐서 범주로서 $\widehat G$ 의 표현 범주와 동치다.
 
 $$
 \mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\thickspace\simeq\thickspace\mathrm{Rep}(\widehat G)
