@@ -2,7 +2,7 @@
 
 # 개요
 
-Cauchy–Schwarz 부등식(Cauchy–Schwarz inequality)은 [내적 공간](inner-product-spaces.md)의 두 벡터 $u,v$ 에 대해 내적의 절댓값이 노름의 곱을 넘지 않는다는 정리다.
+**Cauchy–Schwarz 부등식(Cauchy–Schwarz inequality)** 은 [내적 공간](inner-product-spaces.md)의 두 벡터 $u,v$ 에 대해 내적의 절댓값이 노름의 곱을 넘지 않는다는 정리다.
 
 $$
 \lvert\langle u,v\rangle\rvert\le\lVert u\rVert\thinspace\lVert v\rVert
@@ -56,7 +56,7 @@ $$
 | 적분 내적 | $\left(\int\_a^b fg\right)^2\le\int\_a^b f^2\int\_a^b g^2$ |
 | 대각합 내적 | $\lvert\mathrm{tr}(A^\ast B)\rvert^2\le\mathrm{tr}(A^\ast A)\thinspace\mathrm{tr}(B^\ast B)$ |
 
-지수 $p=q=2$ 인 Hölder 부등식(Hölder's inequality)이 첫 두 줄과 같은 식을 준다. Hölder 부등식은 측도공간의 적분으로 진술되고 켤레지수 조건 $1/p+1/q=1$ 을 쓰므로, 내적이 없는 공간에서도 성립하는 더 넓은 정리다.
+지수 $p=q=2$ 인 [Hölder 부등식](holder-inequality.md)이 첫 두 줄과 같은 식을 준다. Hölder 부등식은 측도공간의 적분으로 진술되고 켤레지수 조건 $1/p+1/q=1$ 을 쓰므로, 내적이 없는 공간에서도 성립하는 더 넓은 정리다.
 
 ## 반정부호 내적에서의 성립
 

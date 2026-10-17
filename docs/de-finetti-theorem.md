@@ -2,7 +2,7 @@
 
 # 개요
 
-de Finetti 정리는 교환가능한 무한 $\lbrace 0,1\rbrace$ 열의 분포가 Bernoulli 분포의 혼합으로 유일하게 적힌다는 정리다. 혼합에 쓰이는 $\lbrack 0,1\rbrack$ 위의 측도가 [Bayes 추론](bayesian-inference.md)의 사전분포에 해당하므로, 순서에 무관한 관측을 모형으로 적으면 모수와 사전분포가 따라 나온다. 일반 상태공간으로 넓힌 것이 Hewitt–Savage 정리다.
+**de Finetti 정리(de Finetti's theorem)** 는 교환가능한 무한 $\lbrace 0,1\rbrace$ 열의 분포가 Bernoulli 분포의 혼합으로 유일하게 적힌다는 정리다. 혼합에 쓰이는 $\lbrack 0,1\rbrack$ 위의 측도가 [Bayes 추론](bayesian-inference.md)의 사전분포에 해당하므로, 순서에 무관한 관측을 모형으로 적으면 모수와 사전분포가 따라 나온다. 일반 상태공간으로 넓힌 것이 Hewitt–Savage 정리다.
 
 # 직관
 
