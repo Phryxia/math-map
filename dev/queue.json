@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-17T13:02:29.905Z",
-  "nextSeq": 2168,
+  "savedAt": "2026-10-17T17:08:38.794Z",
+  "nextSeq": 2169,
   "items": [
     {
       "id": "ae0b674e",
@@ -100,12 +100,12 @@
       "seq": 2164
     },
     {
-      "id": "042eae9a",
-      "title": "규칙 #3 적용: 개요 첫 문장의 정의 용어를 굵게, 757 곳 남음",
+      "id": "da0503ee",
+      "title": "규칙 #3 적용: 개요 첫 문장의 정의 용어를 굵게, 510 곳 남음",
       "priority": 100,
-      "note": "이슈 #3(규칙 추가 요청: 용어 정의 시 굵게 처리)의 적용 범위. 규칙은 CLAUDE.md 4절 마크다운 소절에 있다. 55차에 깨지는 꼴 4 곳과 문서 9 개, 56차에 문서 13 개, 57차(2026-10-17)에 문서 33 개를 처리했다. 57차 목록: fourier-series, galois-theory, generating-functions, godel-incompleteness, hamiltonian-monte-carlo, hidden-markov-model, hypothesis-testing, inclusion-exclusion, information-bottleneck, information-geometry, langevin-dynamics, markov-chain-monte-carlo, mathematical-platonism, measurable-functions, moment-map, monotone-convergence, newton-method, ordinary-differential-equations, pigeonhole-principle, poisson-summation, potts-model, pushforward-measure, radon-nikodym, riemann-integral, riemann-mapping-theorem, riemann-zeta, sard-theorem, singular-value-decomposition, spectral-theorem, stiefel-whitney-classes, transversality, vaughan-identity, wirtinger-inequality.\n\n남은 집계: for f in docs/*.md; do case $f in *-overview.md) continue;; esac; awk '/^# 개요/{f=1;next} f&&NF{print;exit}' \"$f\" | grep -q '[*][*]' || echo $f; done 가 757 개를 내놓는다. 그 가운데 문서 전체에 ** 가 하나도 없는 것(grep -L '[*][*]' docs/*.md | grep -v -- '-overview.md')은 12 개로 줄었고, 그 12 개는 전부 개요 첫 문장이 정의 꼴이 아닌 문서다. 곧 쉬운 자리는 다 끝났고 남은 것은 손이 더 가는 쪽이다. 한 회차에 10~13 개씩 처리하고 커밋 메시지에는 이 항목 id 를 달지 않는다(미완 항목이라 다른 세션이 완료로 오해한다). 개관은 4.5절의 다른 구조를 따르므로 제외한다.\n\n처리 절차. 개요 첫 문장을 보고 'X 는 Y 다' 꼴이면 X 를 굵게 하고 원어가 없으면 함께 넣는다. 닫는 ** 뒤에 공백 하나를 두고 조사를 붙인다(괄호 뒤에서 굵게가 닫히지 않는 이슈 #3). 굵게 안에 링크나 수식을 넣지 않는다(57차 potts-model 은 '$q$ 상태 **Potts 모형(Potts model)** 은' 으로 수식을 굵게 밖에 두었다). 문서가 두 개념을 정의하면 두 자리 모두 굵게 한다. 제목과 굵게한 용어가 같은 것을 가리키는지 head -1 로 대조한다. 약어는 문서 본문에서 실제로 쓰일 때만 괄호에 넣는다(57차에 hidden-markov-model 은 HMM 이 본문에 없어 넣지 않았고, hamiltonian-monte-carlo 의 HMC 와 singular-value-decomposition 의 SVD 는 쓰이므로 넣었다. SVD 는 약어만 있고 풀네임이 없었으므로 '특이값 분해(singular value decomposition, SVD)' 로 채웠다).\n\n검수. 커밋 전에 markdown-it 으로 그 줄을 renderInline 해 <strong> 이 나오고 ** 가 남지 않는지 확인한다. 4절의 굵게 grep 은 여는 ** 를 오탐하므로 그것만 믿지 않는다(별도 메모 있음). 굵게를 넣으면서 개요 첫 문장에 원어를 함께 넣게 되므로 9절의 원어 없는 개요 검사도 같이 통과한다. 그 줄을 건드린 문서는 9절 미링크 손 검사도 돌린다. 57차에 poisson-summation 의 Fourier 변환과 vaughan-identity 의 Cauchy-Schwarz 부등식이 그렇게 걸려 링크했다.\n\n남은 12 개는 개요가 정의 꼴이 아니다. 막히는 계산이나 배경부터 꺼내는 문서이므로 정의 절의 정의 자리에 넣는다. dynamic-connectivity 는 정의 절이 '## 간선 갱신과 연결 질의' 아래 INSERT/DELETE/QUERY 연산 목록이고 '동적 연결성' 을 정의하는 문장이 본문에 없다(1 줄 제목과 89 줄 '오프라인 동적 연결성' 뿐). ito-calculus 는 정의 절이 'filtration 이라 하자' 로 시작해 adapted 과정부터 쌓아 올린다. kleisli-eilenberg-moore 는 제목이 두 개념이라 두 자리가 필요하다. 나머지는 lovasz-theta, perfect-graphs, prime-ideals, prime-number-theorem, quadratic-reciprocity, rice-theorem, rings, semidefinite-programming, union-find. 용어를 선언하는 문장을 한 줄 넣어야 하므로 4절 '설명의 순서' 를 지켜 분량을 늘리지 않는 자리에 넣는다.",
-      "createdAt": "2026-10-17T13:02:14.560Z",
-      "seq": 2167
+      "note": "이슈 #3(규칙 추가 요청: 용어 정의 시 굵게 처리)의 적용 범위. 규칙은 CLAUDE.md 4절 마크다운 소절에 있다. 55차에 깨지는 꼴 4 곳과 문서 9 개, 56차에 문서 13 개, 57차에 문서 33 개, 58차(2026-10-17)에 문서 206 개를 처리했다. 58차는 /tmp/nobold.txt 의 알파벳 순서를 따라 abelian-categories 부터 kolmogorov-sinai-entropy 까지 한 커밋에 11~14 개씩 열여덟 묶음으로 올렸다. 다음 회차는 k 이후(kolyvagin-systems 부터)를 같은 방식으로 이어간다.\n\n남은 집계: for f in docs/*.md; do case $f in *-overview.md) continue;; esac; awk '/^# 개요/{f=1;next} f&&NF{print;exit}' \"$f\" | grep -q '[*][*]' || echo $f; done 가 510 개를 내놓는다. 개관은 4.5절의 다른 구조를 따르므로 제외한다. 커밋 메시지에는 이 항목 id 를 달지 않는다(미완 항목이라 다른 세션이 완료로 오해한다).\n\n처리 절차. 개요 첫 문장이 'X 는 Y 다' 꼴이면 X 를 굵게 하고 원어가 없으면 함께 넣는다. 닫는 ** 뒤에 공백 하나를 두고 조사를 붙인다. 굵게 안에 링크나 수식을 넣지 않는다(수식은 굵게 밖에 둔다. 'Bell 수(Bell number)' 뒤에 $B_n$, 'Grassmann 다양체(Grassmannian)' 뒤에 $\\mathrm{Gr}(k,n)$). 약어는 본문에서 실제로 쓰일 때만 괄호에 넣는다(58차에 fourier 의 DFT 는 9 회 쓰여 넣었고 central-limit-theorem 의 CLT 는 각주의 영문 제목뿐이라 넣지 않았다). 같은 문장이 정의 절에도 똑같이 있으면(integrable-systems) 개요만 굵게 한다. 제목에 수식이 든 문서(algebraic-k-theory 의 '대수적 $K$ 이론', incomplete-lu 의 '불완전 $LU$ 분해')와 각주가 용어 바로 뒤에 붙은 문서(casselman-shalika, casson-invariant)는 굵게 자리를 잡기 어려워 건너뛰었다. 58차가 건너뛴 정의 꼴 아닌 문서: abelian-varieties, affine-lie-algebras, algebraic-multigrid, analytical-hierarchy, artin-schreier-theory, baker-theorem, banach-tarski, borel-hierarchy, cardinality 등.\n\n검수. 묶음마다 치환 뒤 markdown-it 의 renderInline 으로 그 줄에 <strong> 이 나오고 ** 가 남지 않는지 보고, 4절 굵게 grep(여는 ** 를 오탐한다), tail -1 태그 줄, 9절 미링크 손 검사를 돌린다. 미링크 보고는 긴 제목의 부분문자열이 대부분 오탐이지만 58차에 Heyting 대수, Cauchy-Schwarz 부등식 3 건, Fourier 변환, 기하화 정리, Newton 법 일곱 자리는 진짜였고 그 자리를 링크했다.",
+      "createdAt": "2026-10-17T17:08:24.483Z",
+      "seq": 2168
     },
     {
       "id": "c4f40bdb",
