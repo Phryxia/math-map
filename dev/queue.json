@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-17T05:03:28.948Z",
-  "nextSeq": 2155,
+  "savedAt": "2026-10-17T08:57:29.705Z",
+  "nextSeq": 2160,
   "items": [
     {
       "id": "9443e5ca",
@@ -92,20 +92,20 @@
       "seq": 2114
     },
     {
-      "id": "def952d4",
-      "title": "규칙 적용: 본문의 '~의 언어로' 은유 표현, 60 여 곳",
+      "id": "f2d03ea0",
+      "title": "규칙 적용: 본문의 '~의 언어로' 은유 표현, 35 곳 남음",
       "priority": 100,
-      "note": "이슈 #4(개선 요청: 소수 > 어색한 표현)의 남은 적용 범위. 규칙은 CLAUDE.md 4절 문체 소절에 이미 있다(320줄). 55차에 헤딩과 목록 머리말 7 곳을 고쳤다(primes '정수 문제의 표준 언어' -> '정수 문제를 푸는 주된 방법', fontaine-mazur '변형환의 언어' -> '보편 변형환과 Hecke 대수', lambda-calculus '항의 문법' -> '항의 정의', pcp-theorem '근사 가능성의 지형' -> '근사 가능성의 계층', schellekens-list '등각장론의 지형도' -> '끈이론에서의 해석', np-completeness '하드니스의 언어' -> '난해성 증명의 표준 절차', vogan-packets '분류 정리의 언어' -> '분류 정리의 진술 형식'). 남은 것은 본문 문장의 '~의 언어로 옮기면', '~의 언어로 쓰면', '~의 언어로 진술된다' 꼴로 60 여 곳이다. 4절은 '스킴의 언어로 쓰면' 은 '스킴으로 쓰면' 이라고 지시하므로 대개 '의 언어로' 를 '으로' 로 줄이면 된다. 목록: grep -rnE '[가-힣A-Za-z]의 (표준 언어|언어|문법|지형|세계|무대|얼굴|초상)' docs/*.md | grep -vE '(형식|정규|문맥 자유|프로그래밍|자연|인간|기계) 언어|언어 [A-Z$]'. 한 회차에 10~15 곳씩 끊어 처리한다. mathematical-platonism 의 '인간의 언어와 사고' 와 rice-theorem 의 '질의 언어', structural-set-theory 의 '체계의 언어' 는 용어나 일상 표현이라 예외 판정이 필요하다.",
-      "createdAt": "2026-10-17T04:58:52.427Z",
-      "seq": 2153
+      "note": "이슈 #4(개선 요청: 소수 > 어색한 표현)의 남은 적용 범위. 규칙은 CLAUDE.md 4절 문체 소절에 있다. 55차에 헤딩과 목록 머리말 7 곳, 56차(2026-10-17)에 본문 16 곳(brauer-algebras 2, dedekind-domains, deformation-rings, differential-forms, diophantine-approximation, exponential-families, free-probability, galois-representations, heegner-points, iwasawa-main-conjecture, kolyvagin-systems 2, langlands-program, lowenheim-skolem, mathematical-structuralism)을 고쳤다. 대개 '의 언어로' 를 '으로' 로 줄이면 되고, 어색해지면 '~에서는', '~의 방법으로', '~의 틀로' 를 쓴다(4절이 '틀' 을 대체 예로 든다). 목록: grep -rnE '[가-힣A-Za-z]의 (표준 언어|언어|문법|지형|세계|무대|얼굴|초상)' docs/*.md | grep -vE '(형식|정규|문맥 자유|프로그래밍|자연|인간|기계) 언어|언어 [A-Z$]'. 한 회차에 10~15 곳씩 끊어 처리하고 커밋 메시지에 이 항목 id 를 달지 않는다(미완 항목이라 다른 세션이 완료로 오해한다). 56차에 판정한 예외 8 곳은 고치지 않는다. 모형이론과 논리의 형식 언어는 4절이 명시한 예외다. ax-grothendieck 39·55 '체의 언어', cardinality 94 '1 계 논리의 언어', differentially-closed-fields 59 '미분체의 언어', reverse-mathematics 19 '2차 산술의 언어', second-order-arithmetic 5, structural-set-theory 66 '체계의 언어', formalism-hilbert-program 17 '논리식의 문법'(형식체계의 syntax), rice-theorem 90 '전체 함수만 쓸 수 있는 언어'(프로그래밍 언어). 물리 용어도 예외다. braid-groups 120 과 geodesics 89 의 '세계선'(world line)은 grep 이 '의 세계' 로 오탐한 것이다. mathematical-platonism 5·28 '인간의 언어와 사고' 와 functions 85(교재 챕터 요약)도 두었다. 남은 것은 대개 'X 의 언어로 쓰면/옮기면/진술된다' 꼴이다.",
+      "createdAt": "2026-10-17T08:42:24.489Z",
+      "seq": 2155
     },
     {
-      "id": "d42b60fa",
-      "title": "규칙 #3 적용: 개요 첫 문장의 정의 용어를 굵게, 804 곳 남음",
+      "id": "dfa8bd0b",
+      "title": "규칙 #3 적용: 개요 첫 문장의 정의 용어를 굵게, 791 곳 남음",
       "priority": 100,
-      "note": "이슈 #3(규칙 추가 요청: 용어 정의 시 굵게 처리)의 적용 범위. 규칙은 CLAUDE.md 4절 마크다운 소절에 이미 있다(530줄). 55차에 깨지는 꼴 4 곳(satake-isomorphism 2, schur-polynomials 1, symplectic-manifolds 1)을 고치고, 굵게가 아예 없던 문서 9 개(groups, graphs, ordinals, partial-orders, fields, topology, entropy, hilbert-spaces, eigenvalues)의 개요 첫 문장에 굵게와 원어를 넣었다. 그 커밋이 앞 항목 54f86b34 를 메시지에 달아 완료로 보이게 되어 이 항목으로 옮겼다. 남은 집계: for f in docs/*.md; do case $f in *-overview.md) continue;; esac; awk '/^# 개요/{f=1;next} f&&NF{print;exit}' \"$f\" | grep -q '[*][*]' || echo $f; done 가 804 개를 내놓는다. 그 가운데 문서 전체에 ** 가 하나도 없는 것(grep -L '[*][*]' docs/*.md)이 58 개로 그쪽이 먼저다. 한 회차에 10 개 남짓씩 처리하고 커밋 메시지에는 이 항목 id 를 달지 않는다. 원어가 없는 문서는 굵게와 함께 원어를 넣어 4절 용어 규칙도 같이 채운다. 개요 첫 문장이 'X 는 Y 다' 꼴이 아닌 문서(rings 처럼 선수 개념부터 꺼내는 문서)는 정의 절의 정의 자리에 굵게를 넣는다.",
-      "createdAt": "2026-10-17T05:03:11.685Z",
-      "seq": 2154
+      "note": "이슈 #3(규칙 추가 요청: 용어 정의 시 굵게 처리)의 적용 범위. 규칙은 CLAUDE.md 4절 마크다운 소절에 있다. 55차에 깨지는 꼴 4 곳과 문서 9 개, 56차(2026-10-17)에 문서 13 개(brouwer-degree, cauchy-schwarz, character-table, chinese-remainder-theorem, correlated-equilibrium, counting-principles, curry-howard, curvature, de-finetti-theorem, euler-characteristic, euler-maclaurin, field-extensions, formalism-hilbert-program)를 처리했다. 남은 집계: for f in docs/*.md; do case $f in *-overview.md) continue;; esac; awk '/^# 개요/{f=1;next} f&&NF{print;exit}' \"$f\" | grep -q '[*][*]' || echo $f; done 가 791 개를 내놓는다. 그 가운데 문서 전체에 ** 가 하나도 없는 것(grep -L '[*][*]' docs/*.md | grep -v -- '-overview.md')이 45 개로 그쪽이 먼저다. 한 회차에 10~13 개씩 처리하고 커밋 메시지에는 이 항목 id 를 달지 않는다(미완 항목이라 다른 세션이 완료로 오해한다). 개관은 4.5절의 다른 구조를 따르므로 제외한다. 처리 절차. 개요 첫 문장을 보고 'X 는 Y 다' 꼴이면 X 를 굵게 하고 원어가 없으면 함께 넣는다. 닫는 ** 뒤에 공백 하나를 두고 조사를 붙인다(괄호 뒤에서 굵게가 닫히지 않는 이슈 #3). 굵게 안에 링크를 넣지 않는다. 문서가 두 개념을 정의하면(formalism-hilbert-program 의 형식주의와 Hilbert 프로그램) 두 자리 모두 굵게 한다. 제목과 굵게한 용어가 같은 것을 가리키는지 head -1 로 대조한다. 개요 첫 문장이 정의 꼴이 아닌 문서(dynamic-connectivity 처럼 막히는 계산부터 꺼내는 문서)는 정의 절의 정의 자리에 넣는다.",
+      "createdAt": "2026-10-17T08:46:42.313Z",
+      "seq": 2156
     },
     {
       "id": "c4f40bdb",
@@ -988,6 +988,22 @@
       "seq": 2148
     },
     {
+      "id": "a31b164e",
+      "title": "신규 주제 후보 넷의 전담 판정 (56차)",
+      "priority": 20,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 9cc51325(54차 전수 판정)의 뒤를 잇는 집계다. 56차(2026-10-17)에 신규 주제 큐 항목 넷을 가려 모두 제거했다. 판정법은 9cc51325 의 두 수(ls docs 제목 대조, grep -c 로 언급이 몰리는 문서 찾기)에 하나를 더한 것이다. 후보가 정리나 부등식이면 그 이름의 헤딩을 grep -nE '^#+ .*<이름>' docs/*.md 로 찾는다. 전담 문서는 제목이 아니라 절 이름으로 그 개념을 담고 있을 때가 많다.\\n\\n(1) 871fd694 Minkowski 부등식과 Young 부등식: holder-inequality(54차에 쓴 62줄 문서)가 '## Young 부등식에서의 유도' 와 '## Minkowski 부등식' 두 절로 전담한다. 8절 통합 기준상 나눌 자리가 아니고, 'A와 B' 제목이 되므로 4절 제목 규칙에도 어긋난다. (2) fc4248a3 Liouville 정리(복소해석): holomorphic-functions 가 '## Cauchy 추정과 Liouville 정리' 절로 전담한다. 54차 메모가 '## Liouville 정리' 절이라 적어 grep -n '^## Liouville' 로는 찾지 못했다. (3) 90958ad0 Gross-Zagier 공식: heegner-points 가 제목 자체가 'Heegner 점과 Gross-Zagier 공식' 이고 '## Gross-Zagier 공식' 절을 갖는다. (4) a2b6802e Hasse 원리: bf5c88c7 과 중복이라 더 상세한 bf5c88c7(부모 후보 quadratic-forms, adeles)만 남겼다. Hasse 원리는 참 빈자리이지만 주 분야가 정수론이어서 number-theory-overview 의 갈래 순서 위반 167 건이 풀린 뒤에 꺼낸다(9cc51325).",
+      "createdAt": "2026-10-17T08:54:10.391Z",
+      "seq": 2158
+    },
+    {
+      "id": "036c49fb",
+      "title": "fubini-tonelli 를 리프로 두는 판정 (56차)",
+      "priority": 20,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 30차 항목(20546c19)의 갱신판이고 그 항목은 지웠다. 그 메모는 '곱측도 문서가 지금 없다' 고 적었으나 그 뒤 product-measure(115줄)가 생겨 fubini-tonelli 의 부모가 되었고, 분담도 이미 정리되어 있다. fubini-tonelli 의 정의 절 '## 곱측도' 는 곱 시그마 대수와 곱측도의 진술만 두고 '존재의 구성과 완비화에서 생기는 차이는 [곱측도](product-measure.md)에 있다' 로 넘기며, product-measure 는 '## 존재와 유일성', '## Carathéodory 구성과의 일치', '## 완비화' 를 맡는다. 8절 중복 절 기준에 걸리지 않는다.\\n\\n56차 판정. fubini-tonelli 는 리프로 둔다. 5절 더 알아보기 기준(자식이 부모 주제의 특수 사례, 확장, 응용, 부분인가)을 넘는 문서가 저장소에 없다. 30차가 든 자식 후보 가운데 곱측도는 부모가 되었고, Minkowski 적분 부등식과 분포함수의 층 분해 적분 표현은 문서가 없다. fourier-transform 을 자식으로 두지 않은 30차 판정은 그대로 유효하다. 그 문서의 개요와 직관에 Fubini 가 나오지 않고 증명 도구로만 쓰이므로 본문 링크로 충분하다. Minkowski 적분 부등식 문서가 생기면 그때 fubini-tonelli 의 자식으로 단다.",
+      "createdAt": "2026-10-17T08:57:17.265Z",
+      "seq": 2159
+    },
+    {
       "id": "410fd79d",
       "title": "Zilber 삼분법 갈래의 후속 간선 (15차)",
       "priority": 12,
@@ -1130,14 +1146,6 @@
       "note": "greens-function 을 harmonic-functions 와 schwartz-distributions 의 자식으로 달고 리프로 남겼다. 활용 절에서 본문 링크만 둔 것: dirichlet-problem(표현 공식의 둘째 항이 해), conformal-mapping(평면 영역의 Green 함수가 등각불변), brownian-motion(점유시간 밀도). 세 문서 모두 이미 다른 축에 부모가 있어 간선으로 두지 않았다. 자식 후보: 퍼텐셜 이론(용량과 Wiener 기준), 열핵, 타원형 정칙성. 저장소에 없다. dirichlet-problem 은 이번 회차에 본문에서 greens-function 을 링크했다.",
       "createdAt": "2026-10-04T09:01:22.050Z",
       "seq": 1647
-    },
-    {
-      "id": "20546c19",
-      "title": "fubini-tonelli 의 후속 간선",
-      "priority": 11,
-      "note": "30차 회차에 fubini-tonelli 를 썼고(86줄, 커밋 10bc62a) 자식 없이 리프로 두었다. fourier-transform 을 자식으로 두지 않은 이유는 5절 '부모를 빼도 자식의 개요가 그대로 읽히는가' 에 걸리기 때문이다. Fourier 변환 문서의 개요와 직관에 Fubini 가 나오지 않고 증명 도구로만 세 번 쓰이므로 본문 링크로 두었다. 자식 후보는 곱측도 자체를 다루는 문서(product-measure, 지금 없다. 30차에는 fubini-tonelli 의 정의 절에 곱측도 구성을 넣어 분담했다), Minkowski 적분 부등식, 층 분해를 쓰는 분포함수 적분 표현이다. 곱측도 문서를 따로 세우면 fubini-tonelli 의 정의 절 '## 곱측도' 와 중복되므로 분담을 먼저 정해야 한다.",
-      "createdAt": "2026-10-04T12:49:41.845Z",
-      "seq": 1653
     },
     {
       "id": "6ec2c933",
@@ -3162,46 +3170,6 @@
       "note": "신규 주제. 분야 number_theory. 붙일 부모 후보는 quadratic-forms 와 adeles. 52차에 손 검사가 17 회 언급으로 집계했고 ls docs | grep -iE 'hasse|local-global' 이 0 건이다. 이차형식이 유리수체에서 해를 가지는 것과 모든 완비화에서 해를 가지는 것이 동치라는 Hasse-Minkowski 정리가 중심이고, 삼차 이상에서 원리가 깨지는 Selmer 의 반례와 Brauer-Manin 장애가 그 뒤에 온다. 저장소에 adeles, quadratic-forms, tate-shafarevich-group 이 있어 부모와 자식이 모두 준비되어 있다.",
       "createdAt": "2026-10-16T17:03:26.026Z",
       "seq": 2131
-    },
-    {
-      "id": "90958ad0",
-      "title": "Gross–Zagier 공식",
-      "priority": 10,
-      "note": "신규 주제. 분야 number_theory. 붙일 부모는 heegner-points(Heegner 점)와 lfunctions 계열 문서. 52차에 손 검사가 19 회 언급으로 집계했고 ls docs | grep -i gross 가 0 건이다. 모듈러 곡선의 Heegner 점의 Neron-Tate 높이를 L 함수의 중심점 미분값으로 적는 공식이고, BSD 추측의 랭크 1 경우와 Kolyvagin 의 Euler 계 논증에 쓰인다. 저장소에 heegner-points, euler-systems, neron-tate 계열 문서가 있으므로 그 사이를 잇는 자리다.",
-      "createdAt": "2026-10-16T17:03:26.147Z",
-      "seq": 2132
-    },
-    {
-      "id": "a2b6802e",
-      "title": "Hasse 원리",
-      "priority": 10,
-      "note": "신규 주제. 분야는 정수론. 54차(2026-10-17)에 9절의 '문서 없는 이름' 손 검사가 본문 17 회 언급으로 내놓은 후보이고, ls docs 와 제목 전수 대조로 저장소에 없음을 확인했다. 쓰는 문서는 brauer-groups 8 회, selmer-tate-shafarevich 2 회, poitou-tate 2 회, quadratic-forms 1 회, localization-rings 1 회다. 한 문서가 전담하는 것이 아니라 여러 문서가 도구로 쓰면서 아무도 정의하지 않는 자리다. 붙일 부모 후보는 quadratic-forms(Hasse-Minkowski 정리가 이차형식의 국소-전역 원리다)와 adeles 다. brauer-groups 가 Hasse 원리의 실패를 Brauer 군으로 재는 쪽이므로 자식 후보다. 본문에 국소-전역 원리(local-global principle)의 성립과 실패를 함께 적고, 실패를 열린 문제로 적지 않도록 4절 열린 문제 규칙을 본다.",
-      "createdAt": "2026-10-17T00:52:56.929Z",
-      "seq": 2142
-    },
-    {
-      "id": "827a1e34",
-      "title": "Zorn 보조정리",
-      "priority": 10,
-      "note": "신규 주제. 분야는 수학기초론 또는 순서 이론. 54차(2026-10-17)에 손 검사가 본문 20 회 언급으로 내놓았고 제목 전수 대조로 저장소에 없음을 확인했다. axiom-of-choice 가 5 회 쓰고 banach-spaces, filters-and-nets 를 비롯한 여러 문서가 증명 도구로 쓴다. 다만 선택공리 문서가 동치 진술 가운데 하나로 이미 다루고 있을 수 있으므로, 문서를 새로 쓸지 axiom-of-choice 보강으로 갈지는 그 문서의 해당 절을 읽고 정한다(8절 통합 기준). 새로 쓸 경우 부모는 axiom-of-choice 와 partial-orders 이고, 본문은 사슬과 상계로 하는 진술, 정렬정리와 선택공리와의 동치, 대표적 적용(모든 벡터공간에 기저가 있다, 극대 아이디얼의 존재)을 담는다.",
-      "createdAt": "2026-10-17T00:52:57.084Z",
-      "seq": 2143
-    },
-    {
-      "id": "fc4248a3",
-      "title": "Liouville 정리 (복소해석)",
-      "priority": 10,
-      "note": "신규 주제 후보. 분야는 복소해석. 54차(2026-10-17)에 손 검사가 'Liouville 정리' 를 본문 18 회로 내놓았고 제목 대조로 sturm-liouville(Sturm-Liouville 이론)만 나왔다. 다만 이 18 회에는 복소해석의 Liouville 정리(유계 전해석함수는 상수), 초월수론의 Liouville 수, 해밀턴 역학의 Liouville 정리(위상공간 부피 보존)가 섞여 있을 수 있어 꺼내기 전에 grep -n 'Liouville 정리' docs/*.md 로 어느 뜻인지 가른다. 복소해석 판이 다수이면 부모는 holomorphic-functions 이고, Cauchy 적분 공식에서 유도하는 요지와 대수학의 기본정리 증명을 활용으로 담는다. 세 뜻이 섞여 있으면 각각 다른 문서의 보강 자리이므로 신규 주제에서 뺀다.",
-      "createdAt": "2026-10-17T00:52:57.403Z",
-      "seq": 2145
-    },
-    {
-      "id": "871fd694",
-      "title": "Minkowski 부등식과 Young 부등식",
-      "priority": 10,
-      "note": "신규 주제. 분야는 해석학 또는 함수해석. 54차(2026-10-17)에 holder-inequality 를 쓰면서 두 이름을 링크 없이 원어 병기로만 적었다(4절 본문 링크 규칙이 문서 없는 개념에 요구하는 꼴이다). Young 부등식(Young's inequality)은 ab <= a^p/p + b^q/q 이고 Hölder 부등식의 증명 한 단계이며 convexity 의 가중평균 부등식에서 나온다. Minkowski 부등식(Minkowski's inequality)은 Lᵖ 노름의 삼각부등식이고 Hölder 부등식에서 유도된다. 둘을 한 문서로 묶을지 각각 둘지는 분량으로 정한다. 묶으면 제목이 'A와 B' 꼴이 되어 4절 제목 규칙의 판단이 필요하다. 부모 후보는 holder-inequality 와 convexity 다. brunn-minkowski(Brunn-Minkowski 부등식)는 볼록체의 부피 부등식이라 다른 대상이므로 혼동하지 않는다. 저장소에 cauchy-schwarz 가 독립 문서로 있으므로 같은 급의 부등식 문서가 설 자리는 있다.",
-      "createdAt": "2026-10-17T00:57:55.383Z",
-      "seq": 2146
     },
     {
       "id": "dfb3e493",
