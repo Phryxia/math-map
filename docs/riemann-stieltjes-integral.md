@@ -2,7 +2,7 @@
 
 # 개요
 
-Riemann–Stieltjes 적분은 분할의 구간 길이 $x\_i-x\_{i-1}$ 대신 적분자 $g$ 의 증분 $g(x\_i)-g(x\_{i-1})$ 로 무게를 주는 적분이다. $g(x)=x$ 로 두면 Riemann 적분이고, $g$ 가 계단함수면 합이 된다. 적분자가 [유계변동](bounded-variation.md)이고 피적분함수가 연속이면 적분이 존재하며, 이때 $g$ 는 Lebesgue–Stieltjes 측도를 정하고 적분은 그 측도에 대한 적분과 일치한다. 분포함수에 대한 기댓값과 수열의 부분합을 적분으로 바꾸는 계산이 이 적분의 자리다.
+**Riemann–Stieltjes 적분(Riemann–Stieltjes integral)** 은 분할의 구간 길이 $x\_i-x\_{i-1}$ 대신 적분자 $g$ 의 증분 $g(x\_i)-g(x\_{i-1})$ 로 무게를 주는 적분이다. $g(x)=x$ 로 두면 Riemann 적분이고, $g$ 가 계단함수면 합이 된다. 적분자가 [유계변동](bounded-variation.md)이고 피적분함수가 연속이면 적분이 존재하며, 이때 $g$ 는 Lebesgue–Stieltjes 측도를 정하고 적분은 그 측도에 대한 적분과 일치한다. 분포함수에 대한 기댓값과 수열의 부분합을 적분으로 바꾸는 계산이 이 적분의 자리다.
 
 # 직관
 

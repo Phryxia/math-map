@@ -2,7 +2,7 @@
 
 # 개요
 
-Roth 정리는 대수적 무리수의 [근사 지수](diophantine-approximation.md)가 $2$ 라는 정리다. $\alpha$ 가 대수적 무리수이고 $\varepsilon\gt 0$ 이면 다음 부등식을 만족하는 기약분수 $p/q$ 는 유한 개다[^1].
+**Roth 정리(Roth's theorem)** 는 대수적 무리수의 [근사 지수](diophantine-approximation.md)가 $2$ 라는 정리다. $\alpha$ 가 대수적 무리수이고 $\varepsilon\gt 0$ 이면 다음 부등식을 만족하는 기약분수 $p/q$ 는 유한 개다[^1].
 
 $$\left\lvert \alpha-\frac{p}{q}\right\rvert\lt \frac{1}{q^{2+\varepsilon}}$$
 

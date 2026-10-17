@@ -2,7 +2,7 @@
 
 # 개요
 
-RSA(Rivest–Shamir–Adleman)는 1977년에 제안된 최초의 실용적 공개키 암호이자 서명 방식이다[^1]. 두 소수의 곱 $n=pq$ 를 공개하고 소인수 $p$ , $q$ 는 비밀로 둔다. $n$ 만 아는 사람은 거듭제곱 $m\mapsto m^e\bmod n$ 을 계산할 수 있지만, 그 역연산은 $p$ , $q$ 를 아는 사람만 효율적으로 할 수 있다.
+**RSA**(Rivest–Shamir–Adleman)는 1977년에 제안된 최초의 실용적 공개키 암호이자 서명 방식이다[^1]. 두 소수의 곱 $n=pq$ 를 공개하고 소인수 $p$ , $q$ 는 비밀로 둔다. $n$ 만 아는 사람은 거듭제곱 $m\mapsto m^e\bmod n$ 을 계산할 수 있지만, 그 역연산은 $p$ , $q$ 를 아는 사람만 효율적으로 할 수 있다.
 
 수학적 재료는 두 개뿐이다. [Euler 정리](fermat-euler-theorem.md)가 지수의 주기를 정해 주고, [중국인의 나머지 정리](chinese-remainder-theorem.md)가 $\bmod n$ 계산을 $\bmod p$ 와 $\bmod q$ 로 쪼개 준다. 정당성 증명과 복호화 가속이 모두 이 두 도구로 나온다.
 
