@@ -2,7 +2,7 @@
 
 # 개요
 
-Morley 범주성 정리(Morley's categoricity theorem)는 가산 언어의 완전 이론이 어떤 비가산 [기수](cardinality.md)에서 모형을 하나만 가지면 모든 비가산 기수에서 그렇다는 정리다.
+**Morley 범주성 정리(Morley's categoricity theorem)** 는 가산 언어의 완전 이론이 어떤 비가산 [기수](cardinality.md)에서 모형을 하나만 가지면 모든 비가산 기수에서 그렇다는 정리다.
 
 1차 이론은 무한 모형을 동형을 빼고 하나로 정하지 못한다. 크기를 하나 고정하고 물으면 사정이 달라져서, 크기 $\kappa$ 인 모형이 동형을 빼고 하나뿐인 이론이 있다.
 

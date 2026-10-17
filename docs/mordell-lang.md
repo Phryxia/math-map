@@ -2,7 +2,7 @@
 
 # 개요
 
-Mordell–Lang 추측은 [아벨 다양체](abelian-varieties.md)의 부분다양체 $X$ 와 유한생성 부분군 $\Gamma$ 의 교집합을 결정한다. 답은 $X$ 안에 통째로 들어가는 아벨 부분다양체의 잉여류 유한 개다. 종수 $2$ 이상 곡선의 유리점이 유한하다는 Mordell 추측이 이 진술의 한 경우이고, 함수체 경우의 증명은 [Zilber 삼분법](zilber-trichotomy.md)을 쓴다.
+**Mordell–Lang 추측(Mordell–Lang conjecture)** 은 [아벨 다양체](abelian-varieties.md)의 부분다양체 $X$ 와 유한생성 부분군 $\Gamma$ 의 교집합을 결정한다. 답은 $X$ 안에 통째로 들어가는 아벨 부분다양체의 잉여류 유한 개다. 종수 $2$ 이상 곡선의 유리점이 유한하다는 Mordell 추측이 이 진술의 한 경우이고, 함수체 경우의 증명은 [Zilber 삼분법](zilber-trichotomy.md)을 쓴다.
 
 # 직관
 
