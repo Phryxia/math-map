@@ -1,16 +1,8 @@
 {
   "version": 1,
-  "savedAt": "2026-10-17T08:57:29.705Z",
-  "nextSeq": 2160,
+  "savedAt": "2026-10-17T13:02:29.905Z",
+  "nextSeq": 2168,
   "items": [
-    {
-      "id": "9443e5ca",
-      "title": "문서 분할이 개관 지도 mermaid 의 간선을 어긋나게 하는 사고",
-      "priority": 100,
-      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 36차에 golay-codes 를 mathieu-groups 에서 분할하며 error-correcting-codes -> mathieu-groups 간선을 빼고 error-correcting-codes -> golay-codes -> mathieu-groups 로 꿰었다. 그런데 information-theory-overview 의 '# 지도' mermaid 에 'ECC --> MAT' 가 남아 있었다. 4.5절은 지도가 실제 간선의 부분그래프여야 한다고 하는데, 간선을 뺀 뒤 지도를 고치지 않으면 지도가 없는 간선을 그린다.\n\nvalidate, cycles, render-check, order-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다. 간선은 '# 연관 문서' 절에만 있고 지도의 화살표는 코드블록 안이라 파서가 보지 않는다. 36차에는 같은 회차 안에서 눈으로 잡아 'ECC --> GOL --> MAT' 로 고쳤다.\n\n검사법. 개관의 mermaid 블록만 뽑아 바꾼 문서의 제목이 들어간 줄을 본다. for f in docs/*-overview.md; do awk '/^```mermaid/{m=1} m{print FILENAME\": \"$0} /^```$/{if(m){m=0}}' $f; done | grep -iE '<바뀐 문서들의 제목>' 로 충분하다. 36차에는 이 grep 이 두 줄을 내놓아 한 곳만 고치면 됨이 드러났다.\n\n규칙. 8절의 통합·분할 절차(새 id 정하기, 부모와 자식 옮기기, 본문 링크 바꾸기, 옛 파일 git rm)에 '개관 지도 mermaid 맞추기' 를 더해 생각한다. 간선을 뺀 회차에는 반드시 위 grep 을 돌린다. 간선을 더한 경우는 지도가 부분그래프이면 되므로 더하지 않아도 규격 위반이 아니지만, 핵심 문서라면 넣는다.",
-      "createdAt": "2026-10-09T08:37:13.630Z",
-      "seq": 1956
-    },
     {
       "id": "ae0b674e",
       "title": "큐에 넣기 전 저장소 전수 확인",
@@ -92,20 +84,28 @@
       "seq": 2114
     },
     {
-      "id": "f2d03ea0",
-      "title": "규칙 적용: 본문의 '~의 언어로' 은유 표현, 35 곳 남음",
+      "id": "408f73c5",
+      "title": "문서 분할이 개관 지도 mermaid 의 간선을 어긋나게 하는 사고",
       "priority": 100,
-      "note": "이슈 #4(개선 요청: 소수 > 어색한 표현)의 남은 적용 범위. 규칙은 CLAUDE.md 4절 문체 소절에 있다. 55차에 헤딩과 목록 머리말 7 곳, 56차(2026-10-17)에 본문 16 곳(brauer-algebras 2, dedekind-domains, deformation-rings, differential-forms, diophantine-approximation, exponential-families, free-probability, galois-representations, heegner-points, iwasawa-main-conjecture, kolyvagin-systems 2, langlands-program, lowenheim-skolem, mathematical-structuralism)을 고쳤다. 대개 '의 언어로' 를 '으로' 로 줄이면 되고, 어색해지면 '~에서는', '~의 방법으로', '~의 틀로' 를 쓴다(4절이 '틀' 을 대체 예로 든다). 목록: grep -rnE '[가-힣A-Za-z]의 (표준 언어|언어|문법|지형|세계|무대|얼굴|초상)' docs/*.md | grep -vE '(형식|정규|문맥 자유|프로그래밍|자연|인간|기계) 언어|언어 [A-Z$]'. 한 회차에 10~15 곳씩 끊어 처리하고 커밋 메시지에 이 항목 id 를 달지 않는다(미완 항목이라 다른 세션이 완료로 오해한다). 56차에 판정한 예외 8 곳은 고치지 않는다. 모형이론과 논리의 형식 언어는 4절이 명시한 예외다. ax-grothendieck 39·55 '체의 언어', cardinality 94 '1 계 논리의 언어', differentially-closed-fields 59 '미분체의 언어', reverse-mathematics 19 '2차 산술의 언어', second-order-arithmetic 5, structural-set-theory 66 '체계의 언어', formalism-hilbert-program 17 '논리식의 문법'(형식체계의 syntax), rice-theorem 90 '전체 함수만 쓸 수 있는 언어'(프로그래밍 언어). 물리 용어도 예외다. braid-groups 120 과 geodesics 89 의 '세계선'(world line)은 grep 이 '의 세계' 로 오탐한 것이다. mathematical-platonism 5·28 '인간의 언어와 사고' 와 functions 85(교재 챕터 요약)도 두었다. 남은 것은 대개 'X 의 언어로 쓰면/옮기면/진술된다' 꼴이다.",
-      "createdAt": "2026-10-17T08:42:24.489Z",
-      "seq": 2155
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 36차에 golay-codes 를 mathieu-groups 에서 분할하며 error-correcting-codes -> mathieu-groups 간선을 빼고 error-correcting-codes -> golay-codes -> mathieu-groups 로 꿰었다. 그런데 information-theory-overview 의 '# 지도' mermaid 에 'ECC --> MAT' 가 남아 있었다. 4.5절은 지도가 실제 간선의 부분그래프여야 한다고 하는데, 간선을 뺀 뒤 지도를 고치지 않으면 지도가 없는 간선을 그린다.\n\nvalidate, cycles, render-check, order-check 와 4절 검사 여섯 가지가 이것을 전혀 잡지 못한다. 간선은 '# 연관 문서' 절에만 있고 지도의 화살표는 코드블록 안이라 파서가 보지 않는다. 36차에는 같은 회차 안에서 눈으로 잡아 'ECC --> GOL --> MAT' 로 고쳤다.\n\n검사법. 개관의 mermaid 블록만 뽑아 바꾼 문서의 제목이 들어간 줄을 본다. for f in docs/*-overview.md; do awk '/^```mermaid/{m=1} m{print FILENAME\": \"$0} /^```$/{if(m){m=0}}' $f; done | grep -iE '<바뀐 문서들의 제목>' 로 충분하다. 36차에는 이 grep 이 두 줄을 내놓아 한 곳만 고치면 됨이 드러났다.\n\n규칙. 8절의 통합·분할 절차(새 id 정하기, 부모와 자식 옮기기, 본문 링크 바꾸기, 옛 파일 git rm)에 '개관 지도 mermaid 맞추기' 를 더해 생각한다. 간선을 뺀 회차에는 반드시 위 grep 을 돌린다. 간선을 더한 경우는 지도가 부분그래프이면 되므로 더하지 않아도 규격 위반이 아니지만, 핵심 문서라면 넣는다.",
+      "createdAt": "2026-10-17T12:37:51.019Z",
+      "seq": 2160
     },
     {
-      "id": "dfa8bd0b",
-      "title": "규칙 #3 적용: 개요 첫 문장의 정의 용어를 굵게, 791 곳 남음",
+      "id": "976e0798",
+      "title": "이슈 #4 '~의 언어로' 은유 규칙 적용 완료와 예외 17 곳",
       "priority": 100,
-      "note": "이슈 #3(규칙 추가 요청: 용어 정의 시 굵게 처리)의 적용 범위. 규칙은 CLAUDE.md 4절 마크다운 소절에 있다. 55차에 깨지는 꼴 4 곳과 문서 9 개, 56차(2026-10-17)에 문서 13 개(brouwer-degree, cauchy-schwarz, character-table, chinese-remainder-theorem, correlated-equilibrium, counting-principles, curry-howard, curvature, de-finetti-theorem, euler-characteristic, euler-maclaurin, field-extensions, formalism-hilbert-program)를 처리했다. 남은 집계: for f in docs/*.md; do case $f in *-overview.md) continue;; esac; awk '/^# 개요/{f=1;next} f&&NF{print;exit}' \"$f\" | grep -q '[*][*]' || echo $f; done 가 791 개를 내놓는다. 그 가운데 문서 전체에 ** 가 하나도 없는 것(grep -L '[*][*]' docs/*.md | grep -v -- '-overview.md')이 45 개로 그쪽이 먼저다. 한 회차에 10~13 개씩 처리하고 커밋 메시지에는 이 항목 id 를 달지 않는다(미완 항목이라 다른 세션이 완료로 오해한다). 개관은 4.5절의 다른 구조를 따르므로 제외한다. 처리 절차. 개요 첫 문장을 보고 'X 는 Y 다' 꼴이면 X 를 굵게 하고 원어가 없으면 함께 넣는다. 닫는 ** 뒤에 공백 하나를 두고 조사를 붙인다(괄호 뒤에서 굵게가 닫히지 않는 이슈 #3). 굵게 안에 링크를 넣지 않는다. 문서가 두 개념을 정의하면(formalism-hilbert-program 의 형식주의와 Hilbert 프로그램) 두 자리 모두 굵게 한다. 제목과 굵게한 용어가 같은 것을 가리키는지 head -1 로 대조한다. 개요 첫 문장이 정의 꼴이 아닌 문서(dynamic-connectivity 처럼 막히는 계산부터 꺼내는 문서)는 정의 절의 정의 자리에 넣는다.",
-      "createdAt": "2026-10-17T08:46:42.313Z",
-      "seq": 2156
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 이슈 #4(개선 요청: 소수 > 어색한 표현)의 은유 명사 규칙은 CLAUDE.md 4절 문체 소절에 있고, 저장소 전체 적용이 57차(2026-10-17)에 끝났다. 55차에 헤딩과 목록 머리말 7 곳, 56차에 본문 16 곳, 57차에 46 곳(4절 grep 분 20 곳과 링크 뒤 꼴 26 곳)을 고쳤다.\n\n4절이 적어 둔 grep 은 위반을 다 잡지 못한다. 패턴이 '[가-힣A-Za-z]의 (표준 언어|...)' 라서 '의' 앞이 링크의 닫는 괄호나 수식의 닫는 달러이면 걸리지 않는다. '[Hilbert 공간](hilbert-spaces.md)의 언어로 주어진다'(fourier-series 5)가 그렇게 56차까지 살아남았다. 57차에 앞 글자 조건을 뒤집은 다음 grep 으로 29 곳을 새로 찾았다. 이 규칙을 다시 점검할 때는 두 grep 을 모두 돌린다.\n\ngrep -rnE '[^가-힣A-Za-z]의 (표준 언어|언어|문법|지형|세계|무대|얼굴|초상)' docs/*.md | grep -vE '(형식|정규|문맥 자유|프로그래밍|자연|인간|기계) 언어|언어 [A-Z$]'\n\n지금 두 grep 은 17 곳을 내놓는데 전부 판정된 예외다. 다시 고치려 들지 않는다. 숫자가 늘면 그때 새로 생긴 자리만 고친다. 4절 grep 쪽 14 곳: ax-grothendieck 39·55 '체의 언어', cardinality 94 '1 계 논리의 언어', differentially-closed-fields 59 '미분체의 언어', reverse-mathematics 19 '2차 산술의 언어', second-order-arithmetic 5 '산술의 언어', structural-set-theory 66 '체계의 언어', lambda-calculus 49 '원리의 문법적 대응'(eta 축약이 외연성 원리에 대응하는 구문 규칙이라는 뜻, 56차의 formalism-hilbert-program 17 '논리식의 문법' 과 같은 근거로 57차에 판정), rice-theorem 90 '전체 함수만 쓸 수 있는 언어'(프로그래밍 언어), braid-groups 120 과 geodesics 89 의 '세계선'(world line, grep 이 '의 세계' 로 오탐), mathematical-platonism 5·28 '인간의 언어와 사고'(입장의 진술 자체), functions 85(교재 챕터 요약 각주). 링크 뒤 꼴 3 곳: forcing 11 '$M$ 의 언어로 지목할 수 없다'(모형의 1 계 언어), internal-set-theory 5·17 'ZFC 의 언어에 술어를 더한다'(형식 언어).\n\n쓸 수 있는 치환. 구조나 분야 이름 뒤에는 '~에서는', '~로', '~으로'. '~의 언어가 필요하다' 는 '~이 필요하다', '~의 언어만 필요하다' 는 '~의 개념만 필요하다', '~의 언어로만 정의된다' 는 '~의 개념으로만 정의된다'. 사람 이름 뒤('Langlands 의 언어로는', '기하학적 Satake 의 언어로')는 '~ 대응으로는', '~ 대응으로'. '~의 언어로 말하면' 꼴은 '~로 말하면'. '~의 세계로 넘어간다' 는 '~으로 넘어간다'.",
+      "createdAt": "2026-10-17T12:52:57.474Z",
+      "seq": 2164
+    },
+    {
+      "id": "042eae9a",
+      "title": "규칙 #3 적용: 개요 첫 문장의 정의 용어를 굵게, 757 곳 남음",
+      "priority": 100,
+      "note": "이슈 #3(규칙 추가 요청: 용어 정의 시 굵게 처리)의 적용 범위. 규칙은 CLAUDE.md 4절 마크다운 소절에 있다. 55차에 깨지는 꼴 4 곳과 문서 9 개, 56차에 문서 13 개, 57차(2026-10-17)에 문서 33 개를 처리했다. 57차 목록: fourier-series, galois-theory, generating-functions, godel-incompleteness, hamiltonian-monte-carlo, hidden-markov-model, hypothesis-testing, inclusion-exclusion, information-bottleneck, information-geometry, langevin-dynamics, markov-chain-monte-carlo, mathematical-platonism, measurable-functions, moment-map, monotone-convergence, newton-method, ordinary-differential-equations, pigeonhole-principle, poisson-summation, potts-model, pushforward-measure, radon-nikodym, riemann-integral, riemann-mapping-theorem, riemann-zeta, sard-theorem, singular-value-decomposition, spectral-theorem, stiefel-whitney-classes, transversality, vaughan-identity, wirtinger-inequality.\n\n남은 집계: for f in docs/*.md; do case $f in *-overview.md) continue;; esac; awk '/^# 개요/{f=1;next} f&&NF{print;exit}' \"$f\" | grep -q '[*][*]' || echo $f; done 가 757 개를 내놓는다. 그 가운데 문서 전체에 ** 가 하나도 없는 것(grep -L '[*][*]' docs/*.md | grep -v -- '-overview.md')은 12 개로 줄었고, 그 12 개는 전부 개요 첫 문장이 정의 꼴이 아닌 문서다. 곧 쉬운 자리는 다 끝났고 남은 것은 손이 더 가는 쪽이다. 한 회차에 10~13 개씩 처리하고 커밋 메시지에는 이 항목 id 를 달지 않는다(미완 항목이라 다른 세션이 완료로 오해한다). 개관은 4.5절의 다른 구조를 따르므로 제외한다.\n\n처리 절차. 개요 첫 문장을 보고 'X 는 Y 다' 꼴이면 X 를 굵게 하고 원어가 없으면 함께 넣는다. 닫는 ** 뒤에 공백 하나를 두고 조사를 붙인다(괄호 뒤에서 굵게가 닫히지 않는 이슈 #3). 굵게 안에 링크나 수식을 넣지 않는다(57차 potts-model 은 '$q$ 상태 **Potts 모형(Potts model)** 은' 으로 수식을 굵게 밖에 두었다). 문서가 두 개념을 정의하면 두 자리 모두 굵게 한다. 제목과 굵게한 용어가 같은 것을 가리키는지 head -1 로 대조한다. 약어는 문서 본문에서 실제로 쓰일 때만 괄호에 넣는다(57차에 hidden-markov-model 은 HMM 이 본문에 없어 넣지 않았고, hamiltonian-monte-carlo 의 HMC 와 singular-value-decomposition 의 SVD 는 쓰이므로 넣었다. SVD 는 약어만 있고 풀네임이 없었으므로 '특이값 분해(singular value decomposition, SVD)' 로 채웠다).\n\n검수. 커밋 전에 markdown-it 으로 그 줄을 renderInline 해 <strong> 이 나오고 ** 가 남지 않는지 확인한다. 4절의 굵게 grep 은 여는 ** 를 오탐하므로 그것만 믿지 않는다(별도 메모 있음). 굵게를 넣으면서 개요 첫 문장에 원어를 함께 넣게 되므로 9절의 원어 없는 개요 검사도 같이 통과한다. 그 줄을 건드린 문서는 9절 미링크 손 검사도 돌린다. 57차에 poisson-summation 의 Fourier 변환과 vaughan-identity 의 Cauchy-Schwarz 부등식이 그렇게 걸려 링크했다.\n\n남은 12 개는 개요가 정의 꼴이 아니다. 막히는 계산이나 배경부터 꺼내는 문서이므로 정의 절의 정의 자리에 넣는다. dynamic-connectivity 는 정의 절이 '## 간선 갱신과 연결 질의' 아래 INSERT/DELETE/QUERY 연산 목록이고 '동적 연결성' 을 정의하는 문장이 본문에 없다(1 줄 제목과 89 줄 '오프라인 동적 연결성' 뿐). ito-calculus 는 정의 절이 'filtration 이라 하자' 로 시작해 adapted 과정부터 쌓아 올린다. kleisli-eilenberg-moore 는 제목이 두 개념이라 두 자리가 필요하다. 나머지는 lovasz-theta, perfect-graphs, prime-ideals, prime-number-theorem, quadratic-reciprocity, rice-theorem, rings, semidefinite-programming, union-find. 용어를 선언하는 문장을 한 줄 넣어야 하므로 4절 '설명의 순서' 를 지켜 분량을 늘리지 않는 자리에 넣는다.",
+      "createdAt": "2026-10-17T13:02:14.560Z",
+      "seq": 2167
     },
     {
       "id": "c4f40bdb",
@@ -274,6 +274,22 @@
       "note": "9절 미링크 검사는 제목 문자열을 grep -qF 로 찾으므로, 그 제목이 다른 용어의 일부로 들어간 자리를 미링크로 보고한다. 55차 사례 둘. dirichlet-l-functions 의 '고속 Fourier 변환'(이미 fft.md 로 링크됨)이 'Fourier 변환'(fourier-transform.md) 미링크로, satake-isomorphism 의 '아핀 Grassmann 다양체'(affine Grassmannian, 무한차원 대상)가 'Grassmann 다양체'(grassmannian.md) 미링크로 잡혔다. 둘 다 링크하면 독자를 다른 개념으로 보낸다. 검사를 스크립트로 만들 때 후보 제목이 더 긴 용어의 꼬리인 경우(제목 바로 앞 글자가 한글이나 로마자인 경우)를 걸러야 한다.",
       "createdAt": "2026-10-17T04:55:45.038Z",
       "seq": 2152
+    },
+    {
+      "id": "1be83176",
+      "title": "4절 굵게 검사 grep 이 여는 ** 를 오탐한다",
+      "priority": 50,
+      "note": "4절 마크다운 소절의 검사 grep -nE '[^a-zA-Z0-9가-힣 ]\\*\\*[가-힣A-Za-z0-9]' 는 닫는 ** 가 닫히지 않는 자리(이슈 #3)를 잡으려는 것인데, 여는 ** 앞이 문장부호인 정상 표기도 잡는다. 57차에 model-theory 19 '$L$ -**구조** $\\mathcal M$' 와 43 '$\\kappa$ -**범주적**이라' 가 걸렸다. 둘 다 markdown-it 으로 renderInline 해 보면 <strong>구조</strong>, <strong>범주적</strong> 으로 정상 렌더된다. GFM 의 delimiter run 규칙상 여는 ** 는 뒤가 한글이면 left-flanking 이어서 열리고, 닫는 ** 는 뒤가 공백이어서 닫힌다. 이슈 #3 이 말한 깨짐은 닫는 ** 바로 앞이 괄호이고 바로 뒤에 글자가 오는 '**소수(prime number)**는' 꼴뿐이다. 그래서 이 grep 이 보고한 자리는 닫는 ** 인지 여는 ** 인지 먼저 가리고, 여는 쪽이면 고치지 않는다. 확인법은 node -e 'console.log(require(\"markdown-it\")().renderInline(<그 줄>))' 로 <strong> 이 나오는지 보는 것이다. 2절 10단계가 '고친 문서마다 출력이 없어야 한다' 고 하므로, 오탐인 자리를 만나면 이 메모를 근거로 넘어간다.",
+      "createdAt": "2026-10-17T12:45:00.526Z",
+      "seq": 2162
+    },
+    {
+      "id": "c6e02e70",
+      "title": "미링크 손 검사 오탐 2 건 추가 (57차)",
+      "priority": 50,
+      "note": "9절 미링크 손 검사가 더 긴 링크된 제목의 부분 문자열을 잡은 오탐. 항목 35a44079 의 '다시 집지 않는 오탐' (나) 부류에 더한다. hamiltonian-monte-carlo 의 'Markov 연쇄' 는 '[Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)' 안에 들어 있고 markov-chains.md 로 링크하면 다른 문서로 보낸다. generating-functions 의 'Fourier 변환' 은 '[이산 Fourier 변환](fourier.md)' 안에 들어 있고 이산 Fourier 변환은 fourier-transform.md 와 다른 개념이다. 9절 손 검사 스크립트는 '더 긴 다른 제목이 그것을 품고 본문에도 있으면 건너뛴다' 는 처리를 하지 않아서(35a44079 가 적은 검사기에는 그 처리가 있다) 이 꼴을 계속 보고한다. 보고된 자리가 이미 다른 문서로 링크된 더 긴 제목 안에 있으면 링크하지 않는다.",
+      "createdAt": "2026-10-17T12:56:05.269Z",
+      "seq": 2166
     },
     {
       "id": "08e59419",
