@@ -2,7 +2,7 @@
 
 # 개요
 
-호모토피 타입 이론(homotopy type theory, HoTT)은 타입을 공간으로, 등식의 증명을 경로로 읽는 타입 이론이다. [Curry–Howard 대응](curry-howard.md)이 명제를 타입으로 보았다면, 여기서는 타입 $A$ 의 두 항 $a,b$ 에 대한 등식 타입 $a=\_A b$ 의 항을 $a$ 에서 $b$ 로 가는 경로로 본다.
+**호모토피 타입 이론(homotopy type theory, HoTT)** 은 타입을 공간으로, 등식의 증명을 경로로 읽는 타입 이론이다. [Curry–Howard 대응](curry-howard.md)이 명제를 타입으로 보았다면, 여기서는 타입 $A$ 의 두 항 $a,b$ 에 대한 등식 타입 $a=\_A b$ 의 항을 $a$ 에서 $b$ 로 가는 경로로 본다.
 
 $$
 \text{타입}=\text{공간},\qquad \text{항}=\text{점},\qquad a=\_A b\ \text{의 항}=\text{경로}

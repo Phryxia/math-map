@@ -2,7 +2,7 @@
 
 # 개요
 
-정보 기준은 최대 로그가능도에서 모수 개수에 따른 벌점을 뺀 값으로 모형을 비교하는 양이다. Akaike 정보 기준(Akaike information criterion, AIC)은 참 분포와 추정한 분포 사이의 [KL divergence](kl-divergence.md)(Kullback-Leibler divergence)를 추정하고, Bayes 정보 기준(Bayesian information criterion, BIC)은 주변가능도의 로그를 근사한다. 두 기준은 벌점의 크기가 다르고, 그래서 표본이 커질 때 고르는 모형이 갈린다.
+**정보 기준(information criterion)** 은 최대 로그가능도에서 모수 개수에 따른 벌점을 뺀 값으로 모형을 비교하는 양이다. Akaike 정보 기준(Akaike information criterion, AIC)은 참 분포와 추정한 분포 사이의 [KL divergence](kl-divergence.md)(Kullback-Leibler divergence)를 추정하고, Bayes 정보 기준(Bayesian information criterion, BIC)은 주변가능도의 로그를 근사한다. 두 기준은 벌점의 크기가 다르고, 그래서 표본이 커질 때 고르는 모형이 갈린다.
 
 # 직관
 

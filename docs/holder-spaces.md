@@ -2,7 +2,7 @@
 
 # 개요
 
-Hölder 공간은 함수값의 차를 두 점 사이 거리의 $\alpha$ 제곱으로 통제하는 함수들의 공간이다. 지수 $\alpha$ 가 $1$ 이면 [Lipschitz 사상](lipschitz-maps.md)의 조건과 같고, $\alpha$ 를 $1$ 보다 작게 잡으면 Lipschitz 가 아닌 함수까지 들어온다.
+**Hölder 공간(Hölder space)** 은 함수값의 차를 두 점 사이 거리의 $\alpha$ 제곱으로 통제하는 함수들의 공간이다. 지수 $\alpha$ 가 $1$ 이면 [Lipschitz 사상](lipschitz-maps.md)의 조건과 같고, $\alpha$ 를 $1$ 보다 작게 잡으면 Lipschitz 가 아닌 함수까지 들어온다.
 
 노름을 균등노름과 차의 비의 상한을 더해 정의하면 [Banach 공간](banach-spaces.md)이 된다. 타원형 방정식의 [Schauder 추정](schauder-estimates.md)과 Brown 운동 경로의 정칙성이 이 공간의 지수로 적힌다.
 
