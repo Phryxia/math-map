@@ -2,7 +2,7 @@
 
 # 개요
 
-Nekhoroshev 추정은 교란된 적분가능계에서 작용 변수의 변화에 대한 상한이다. [Kolmogorov-Arnold-Moser 정리](kam-theorem.md)는 측도의 뜻에서 대부분인 초기조건에 대해 모든 시간의 운동을 정하지만, 살아남지 못한 진동수에서 출발한 궤도는 다루지 않는다.
+**Nekhoroshev 추정(Nekhoroshev estimate)** 은 교란된 적분가능계에서 작용 변수의 변화에 대한 상한이다. [Kolmogorov-Arnold-Moser 정리](kam-theorem.md)는 측도의 뜻에서 대부분인 초기조건에 대해 모든 시간의 운동을 정하지만, 살아남지 못한 진동수에서 출발한 궤도는 다루지 않는다.
 
 Nekhoroshev 추정은 모든 초기조건에 대해 성립한다. 교란의 크기를 $\varepsilon$ 이라 하면, 작용 변수의 변화가 $\varepsilon$ 의 거듭제곱 이하로 머무는 시간이 $\exp(\varepsilon^{-a})$ 꼴로 길다. 측도 하나를 시간으로 바꾼 것이며, 바꾸는 대가로 교란 전 Hamilton 함수에 준볼록 조건이 붙는다.
 

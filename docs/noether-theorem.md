@@ -2,7 +2,7 @@
 
 # 개요
 
-Noether 정리는 작용의 연속 대칭 하나마다 보존량 하나를 준다. [변분법](calculus-of-variations.md)의 Euler–Lagrange 방정식을 풀지 않고도 그 해를 따라 상수인 함수를 Lagrange 함수의 불변성에서 바로 읽는다.
+**Noether 정리(Noether's theorem)** 는 작용의 연속 대칭 하나마다 보존량 하나를 준다. [변분법](calculus-of-variations.md)의 Euler–Lagrange 방정식을 풀지 않고도 그 해를 따라 상수인 함수를 Lagrange 함수의 불변성에서 바로 읽는다.
 
 [Hamilton 역학](hamiltonian-mechanics.md) 쪽에서는 같은 대응이 Poisson 괄호의 반대칭으로 적히고, 대칭에서 보존량으로 가는 길과 그 역이 한 식이 된다.
 
