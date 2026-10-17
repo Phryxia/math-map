@@ -2,7 +2,7 @@
 
 # 개요
 
-Shimura 다양체는 $\mathbb Q$ 위의 환원 대수군과 그 실점이 작용하는 복소 대칭영역의 쌍에서 얻는 대수다양체다. [모듈러 곡선](modular-curves.md)과 [Siegel 모듈라이 다양체](siegel-modular-variety.md)는 군을 $\mathrm{GL}\_2$ 와 $\mathrm{Sp}\_{2g}$ 로 잡은 두 경우다. 이 다양체는 수체 위에 모형을 갖고, 그 코호몰로지에 Hecke 작용과 Galois 작용이 함께 놓인다.
+**Shimura 다양체(Shimura variety)** 는 $\mathbb Q$ 위의 환원 대수군과 그 실점이 작용하는 복소 대칭영역의 쌍에서 얻는 대수다양체다. [모듈러 곡선](modular-curves.md)과 [Siegel 모듈라이 다양체](siegel-modular-variety.md)는 군을 $\mathrm{GL}\_2$ 와 $\mathrm{Sp}\_{2g}$ 로 잡은 두 경우다. 이 다양체는 수체 위에 모형을 갖고, 그 코호몰로지에 Hecke 작용과 Galois 작용이 함께 놓인다.
 
 # 직관
 

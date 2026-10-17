@@ -2,7 +2,7 @@
 
 # 개요
 
-Siegel 모듈러 형식은 Siegel 상반공간 위의 정칙함수로, 정수 심플렉틱 군의 작용에서 $\det(C\tau+D)^k$ 만큼 변하는 것이다. 차수 $g=1$ 이면 [모듈러 형식](modular-forms.md)과 같고, $g\ge 2$ 에서는 [Siegel 모듈라이 다양체](siegel-modular-variety.md) 위 선다발의 절단이다. 같은 가중치의 두 형식의 비가 그 다양체 위의 함수를 주므로, 주편극 아벨 다양체의 불변량이 이 형식들로 적힌다.
+**Siegel 모듈러 형식(Siegel modular form)** 은 Siegel 상반공간 위의 정칙함수로, 정수 심플렉틱 군의 작용에서 $\det(C\tau+D)^k$ 만큼 변하는 것이다. 차수 $g=1$ 이면 [모듈러 형식](modular-forms.md)과 같고, $g\ge 2$ 에서는 [Siegel 모듈라이 다양체](siegel-modular-variety.md) 위 선다발의 절단이다. 같은 가중치의 두 형식의 비가 그 다양체 위의 함수를 주므로, 주편극 아벨 다양체의 불변량이 이 형식들로 적힌다.
 
 # 직관
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-대수집합 $X$ 가 집합론적 완전교차(set-theoretic complete intersection)라 함은 여차원과 같은 개수의 방정식으로 $X$ 를 잘라낼 수 있다는 것이다. 방정식이 생성하는 아이디얼은 $X$ 의 아이디얼과 달라도 되고 근기만 같으면 된다.
+대수집합 $X$ 가 **집합론적 완전교차(set-theoretic complete intersection)** 라 함은 여차원과 같은 개수의 방정식으로 $X$ 를 잘라낼 수 있다는 것이다. 방정식이 생성하는 아이디얼은 $X$ 의 아이디얼과 달라도 되고 근기만 같으면 된다.
 
 아이디얼의 말로는 $\mathrm{ara}(I)=\mathrm{ht}\thinspace I$ 다. [국소 코호몰로지](local-cohomology.md)의 비소멸이 $\mathrm{ara}$ 의 하한을 주므로, 어떤 집합이 집합론적 완전교차가 아님을 보이는 계산은 대개 코호몰로지의 계산이다.
 

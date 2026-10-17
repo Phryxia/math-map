@@ -2,7 +2,7 @@
 
 # 개요
 
-Sidorenko 추측(Sidorenko's conjecture)은 이분그래프 $H$ 와 그래폰 $W$ 에 대해
+**Sidorenko 추측(Sidorenko's conjecture)** 은 이분그래프 $H$ 와 그래폰 $W$ 에 대해
 
 $$
 t(H,W)\ge\left(\int\_{\lbrack 0,1\rbrack^2}W\right)^{\vert E(H)\vert}
@@ -16,7 +16,7 @@ $$
 
 $H$ 가 삼각형이면 적게 담을 수 있다. 양쪽이 각각 절반인 완전이분그래프는 $p=1/2$ 인데 삼각형 밀도가 $0$ 이고 $p^3=1/8$ 보다 작다. 홀수 사이클은 어느 것이나 이분그래프에서 밀도가 $0$ 이므로 같은 반례가 된다.
 
-$H$ 가 간선 두 개를 이어 붙인 경로이면 적게 담을 수 없다. $W$ 의 점 $x$ 마다 $d(x)=\int W(x,y)\thinspace dy$ 로 두면 경로의 밀도가 $\int d(x)^2dx$ 이고 간선 밀도가 $\int d(x)dx=p$ 다. Cauchy–Schwarz 부등식이 $\int d^2\ge\left(\int d\right)^2=p^2$ 를 주므로 경로의 밀도는 $p^2$ 이상이다.
+$H$ 가 간선 두 개를 이어 붙인 경로이면 적게 담을 수 없다. $W$ 의 점 $x$ 마다 $d(x)=\int W(x,y)\thinspace dy$ 로 두면 경로의 밀도가 $\int d(x)^2dx$ 이고 간선 밀도가 $\int d(x)dx=p$ 다. [Cauchy–Schwarz 부등식](cauchy-schwarz.md)이 $\int d^2\ge\left(\int d\right)^2=p^2$ 를 주므로 경로의 밀도는 $p^2$ 이상이다.
 
 같은 계산이 어느 이분그래프 $H$ 에서나 되는지가 추측의 내용이다. 홀수 사이클이 없다는 조건은 반례를 막는 데 필요하고, 그것으로 충분한지는 $H$ 마다 따로 묻는다.
 
