@@ -2,7 +2,7 @@
 
 # 개요
 
-선택공리(axiom of choice, AC)는 공집합이 아닌 집합들의 임의의 족에서 각 집합의 원소를 하나씩 동시에 고를 수 있다는 주장이다. 유한 족에서는 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)의 다른 공리만으로 증명되고, 무한 족에서는 독립적인 가정이 필요하다.
+**선택공리(axiom of choice, AC)** 는 공집합이 아닌 집합들의 임의의 족에서 각 집합의 원소를 하나씩 동시에 고를 수 있다는 주장이다. 유한 족에서는 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)의 다른 공리만으로 증명되고, 무한 족에서는 독립적인 가정이 필요하다.
 
 AC 는 정렬 정리와 Zorn 보조정리와 ZF(선택공리를 뺀 Zermelo–Fraenkel) 안에서 동치다. 실제 수학에서는 Zorn 보조정리를 가장 많이 쓴다. 극대 원소의 존재를 요구하는 형태가 대수와 해석의 존재 정리에 맞는다.
 

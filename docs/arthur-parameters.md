@@ -2,7 +2,7 @@
 
 # 개요
 
-Arthur 매개변수(Arthur parameter)는 L 매개변수에 $\mathrm{SL}\_2$ 를 하나 더 붙여 비템퍼드 표현까지 분류하는 매개변수다.
+**Arthur 매개변수(Arthur parameter)** 는 L 매개변수에 $\mathrm{SL}\_2$ 를 하나 더 붙여 비템퍼드 표현까지 분류하는 매개변수다.
 
 $$
 \psi:\ W_F\times\mathrm{SL}\_2(\mathbb C)\times\mathrm{SL}\_2(\mathbb C)\longrightarrow{}^LG

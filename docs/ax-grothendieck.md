@@ -2,7 +2,7 @@
 
 # 개요
 
-Ax–Grothendieck 정리(Ax–Grothendieck theorem)는 복소 아핀 공간에서 자기 자신으로 가는 단사인 다항식 사상이 전사라는 정리다.
+**Ax–Grothendieck 정리(Ax–Grothendieck theorem)** 는 복소 아핀 공간에서 자기 자신으로 가는 단사인 다항식 사상이 전사라는 정리다.
 
 복소 아핀 공간 $\mathbb C^n$ 에서 자기 자신으로 가는 다항식 사상이 단사이면 전사다. 정의역과 공역이 같은 무한집합이므로 유한집합의 비둘기집 논증이 직접 쓰이지 않는다.
 
