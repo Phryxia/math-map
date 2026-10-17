@@ -2,7 +2,7 @@
 
 # 개요
 
-엔트로피 해(entropy solution)는 1차 보존법칙
+**엔트로피 해(entropy solution)** 는 1차 보존법칙
 
 $$
 u\_t+\partial\_xf(u)=0

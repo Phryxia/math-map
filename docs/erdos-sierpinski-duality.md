@@ -2,7 +2,7 @@
 
 # 개요
 
-Erdős–Sierpiński 쌍대성은 [연속체 가설](continuum-hypothesis.md) 아래에서 실직선의 영집합과 제1범주 집합을 서로 맞바꾸는 전단사가 있다는 정리다. 그 전단사는 자기 자신의 역함수로 잡을 수 있다.
+**Erdős–Sierpiński 쌍대성(Erdős–Sierpiński duality)** 은 [연속체 가설](continuum-hypothesis.md) 아래에서 실직선의 영집합과 제1범주 집합을 서로 맞바꾸는 전단사가 있다는 정리다. 그 전단사는 자기 자신의 역함수로 잡을 수 있다.
 
 따라서 영집합과 제1범주 집합만으로 쓴 진술은 두 낱말을 맞바꿔도 성립한다. 이 원리가 [기수 불변량](cardinal-characteristics.md)의 두 아이디얼이 같은 모양으로 놓이는 이유를 설명한다.
 

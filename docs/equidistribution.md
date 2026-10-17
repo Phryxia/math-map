@@ -2,7 +2,7 @@
 
 # 개요
 
-등분포는 수열이 구간에 길이만큼의 빈도로 들어가는 성질이다. $\lbrack 0,1)$ 의 수열 $(x_n)$ 이 모든 부분구간 $\lbrack a,b)$ 에서
+**등분포(equidistribution)** 는 수열이 구간에 길이만큼의 빈도로 들어가는 성질이다. $\lbrack 0,1)$ 의 수열 $(x_n)$ 이 모든 부분구간 $\lbrack a,b)$ 에서
 
 $$
 \lim_{N\to\infty}\frac{\char35{}\lbrace n\le N:\ x_n\in\lbrack a,b)\rbrace}{N}=b-a

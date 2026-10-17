@@ -2,7 +2,7 @@
 
 # 개요
 
-Eichler–Shimura 관계(Eichler–Shimura relation)는 모듈러 곡선의 Jacobi 다양체 위에서 Hecke 작용소 $T_p$ 가 Frobenius 사상과 그 쌍대의 합으로 적힌다는 등식이다. 이 등식에서 무게 $2$ 고유형식의 Hecke 고유값과 Galois 표현의 Frobenius 특성다항식이 맞물린다.
+**Eichler–Shimura 관계(Eichler–Shimura relation)** 는 모듈러 곡선의 Jacobi 다양체 위에서 Hecke 작용소 $T_p$ 가 Frobenius 사상과 그 쌍대의 합으로 적힌다는 등식이다. 이 등식에서 무게 $2$ 고유형식의 Hecke 고유값과 Galois 표현의 Frobenius 특성다항식이 맞물린다.
 
 # 직관
 
