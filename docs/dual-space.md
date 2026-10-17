@@ -92,7 +92,7 @@ $f\colon V\to W$ 가 유한차원 사이의 선형사상이면 $\mathrm{rank}(f^
 
 $\mathrm{im}(f^\ast)=(\ker f)^\circ$ 를 보인다. $\varphi\circ f$ 는 $\ker f$ 에서 0 이므로 포함 한쪽이 나온다. 거꾸로 $\psi\in(\ker f)^\circ$ 는 $V/\ker f\cong \mathrm{im}(f)$ 를 거쳐 분해되고, 그 범함수를 $W$ 로 확장하면 $\psi=f^\ast(\varphi)$ 다. 소멸자의 차원 공식을 쓰면 $\dim \mathrm{im}(f^\ast)=\dim V-\dim\ker f=\mathrm{rank}(f)$ 다.
 
-행렬의 언어로는 $A$ 와 $A^{T}$ 의 계수가 같다는 진술이다.
+행렬로는 $A$ 와 $A^{T}$ 의 계수가 같다는 진술이다.
 
 ## 쌍선형 형식과의 대응
 

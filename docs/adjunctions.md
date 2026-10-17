@@ -40,7 +40,7 @@ $$
 F \dashv G
 $$
 
-범주론의 언어로는 두 함자
+범주론에서는 두 함자
 
 $$
 \mathrm{Hom}\_{\mathcal{D}}(F-, -), \quad \mathrm{Hom}\_{\mathcal{C}}(-, G-) \thickspace : \thickspace \mathcal{C}^{\mathrm{op}} \times \mathcal{D} \to \mathbf{Set}
@@ -121,7 +121,7 @@ $$
 
 ## Yoneda lemma 와의 관계
 
-수반은 표현가능성의 언어로 다시 쓸 수 있다.
+수반은 표현가능성으로 다시 쓸 수 있다.
 
 - $G:\mathcal D\to\mathcal C$ 의 왼쪽 수반이 존재할 필요충분조건은, 각 대상 $c$ 에 대해 함자 $\mathrm{Hom}\_{\mathcal C}(c,G-):\mathcal D\to\mathbf{Set}$ 가 표현가능한 것이다. 그때 표현 대상이 $Fc$ 다.
 - Yoneda lemma 는 이 표현 대상이 유일하며 $c$ 에 대한 함자성이 자동으로 따라옴을 보장한다. 수반의 자연성 조건은 Yoneda 매장이 충실충만하다는 사실의 응용이다.

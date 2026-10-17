@@ -103,7 +103,7 @@ $$
 a\in N_{L/K}L^\times\quad\Longleftrightarrow\quad a\in N_{L_w/K_v}L_w^\times\ \ \text{(모든 }v\text{)}
 $$
 
-순환이 아니면 깨진다. $L=\mathbb Q(\sqrt{13},\sqrt{17})$ 처럼 Galois 군이 $(\mathbb Z/2)^2$ 인 경우 반례가 있다. 깨짐의 크기를 재는 것이 $\mathrm{Sha}$ 류의 군이고 이 역시 Brauer 군의 언어로 표현된다.
+순환이 아니면 깨진다. $L=\mathbb Q(\sqrt{13},\sqrt{17})$ 처럼 Galois 군이 $(\mathbb Z/2)^2$ 인 경우 반례가 있다. 깨짐의 크기를 재는 것이 $\mathrm{Sha}$ 류의 군이고 이 역시 Brauer 군으로 표현된다.
 
 ## Brauer–Manin 장애
 
