@@ -40,7 +40,7 @@ $$
 
 가 성립한다[^1].
 
-$p\ge 2$ 에서는 Hölder 부등식이 $\Vert S\Vert_2\le\Vert S\Vert_p$ 를 주므로 $A_p=1$ 이다. 상계는 [집중부등식](concentration-inequalities.md)의 Hoeffding 부등식에서 나온다. $P(\vert S\vert\ge t)\le 2e^{-t^2/(2\sigma^2)}$ 를 꼬리 적분에 넣으면
+$p\ge 2$ 에서는 [Hölder 부등식](holder-inequality.md)이 $\Vert S\Vert_2\le\Vert S\Vert_p$ 를 주므로 $A_p=1$ 이다. 상계는 [집중부등식](concentration-inequalities.md)의 Hoeffding 부등식에서 나온다. $P(\vert S\vert\ge t)\le 2e^{-t^2/(2\sigma^2)}$ 를 꼬리 적분에 넣으면
 
 $$
 E\lbrack\vert S\vert^p\rbrack=\int_0^\infty pt^{p-1}P(\vert S\vert\ge t)\thinspace dt\le 2p\int_0^\infty t^{p-1}e^{-t^2/(2\sigma^2)}\thinspace dt=p\thinspace 2^{p/2}\Gamma(p/2)\thinspace\sigma^p
@@ -62,7 +62,7 @@ $p\ge 2$ 에서 최적 상수 $B_p$ 는 표준 Gauss 확률변수 $g$ 의 $p$ �
 
 $p=1$ 에서 최적 상수는 $A_1=1/\sqrt 2$ 이고 계수가 둘일 때 등호가 성립한다[^3]. 위 증명이 준 $1/\sqrt 3$ 은 최적이 아니다.
 
-## Gauss 합과의 비교
+## Gauss 확률변수와의 비교
 
 계수가 같은 $\sum_j\varepsilon_ja_j$ 와 $\sum_jg_ja_j$ 는 $L^p$ 노름이 $p$ 에만 의존하는 상수배로 동등하다. 여기서 $g_j$ 는 독립인 표준 Gauss 확률변수다. 두 합이 모두 $\sigma$ 와 동등하므로 상수를 합성하면 된다.
 

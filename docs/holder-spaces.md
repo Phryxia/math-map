@@ -92,7 +92,7 @@ $$
 
 **정리.** $U\subset\mathbb R^n$ 가 유계이고 경계가 $C^1$ 이며 $p\gt n$ 이면 $W^{1,p}(U)\subset C^{0,\gamma}(\overline U)$ 이고 $\gamma=1-n/p$ 에서 매입이 유계다.[^2]
 
-증명의 요지. $u\in C^1$ 에서 공 위의 평균과 값의 차를 기울기의 적분으로 올려 쓰고 Hölder 부등식을 쓰면 $\vert u(x)-u(y)\vert\le C\vert x-y\vert^{1-n/p}\Vert\nabla u\Vert\_{L^p}$ 가 나온다. [Sobolev 공간](sobolev-spaces.md)에서 $C^1$ 함수가 조밀하므로 추정이 확장된다. $\square$
+증명의 요지. $u\in C^1$ 에서 공 위의 평균과 값의 차를 기울기의 적분으로 올려 쓰고 [Hölder 부등식](holder-inequality.md)을 쓰면 $\vert u(x)-u(y)\vert\le C\vert x-y\vert^{1-n/p}\Vert\nabla u\Vert\_{L^p}$ 가 나온다. [Sobolev 공간](sobolev-spaces.md)에서 $C^1$ 함수가 조밀하므로 추정이 확장된다. $\square$
 
 $p$ 가 $n$ 에 가까우면 $\gamma$ 가 $0$ 에 가깝고, $p\to\infty$ 에서 $\gamma\to 1$ 이다. 이 지수가 약한 해의 정칙성을 재는 척도로 쓰인다.
 

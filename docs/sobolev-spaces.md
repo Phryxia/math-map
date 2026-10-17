@@ -76,7 +76,7 @@ $U\subset\mathbb R^n$ 을 유계이고 경계가 $C^1$ 인 열린집합이라 �
 
 **정리.** $1\le p\lt n$ 이면 $p^\ast=np/(n-p)$ 에 대해 $W^{1,p}(U)\subset L^{p^\ast}(U)$ 이고 포함사상이 유계다. $p\gt n$ 이면 $\gamma=1-n/p$ 에 대해 $W^{1,p}(U)\subset C^{0,\gamma}(\overline U)$ 다.[^1]
 
-증명의 요지. $u\in C_c^1(\mathbb R^n)$ 에서 $\vert u(x)\vert$ 를 각 좌표 방향으로 $\nabla u$ 의 적분으로 올려 쓰고, $n$ 개의 추정을 Hölder 부등식으로 묶으면
+증명의 요지. $u\in C_c^1(\mathbb R^n)$ 에서 $\vert u(x)\vert$ 를 각 좌표 방향으로 $\nabla u$ 의 적분으로 올려 쓰고, $n$ 개의 추정을 [Hölder 부등식](holder-inequality.md)으로 묶으면
 
 $$
 \Vert u\Vert\_{L^{n/(n-1)}}\le C\Vert\nabla u\Vert\_{L^1}

@@ -16,7 +16,7 @@ $$
 
 오른쪽은 노름 둘의 합이고 $\Vert f\Vert\_{L^{4/3}}$ 의 상수배가 아니다. 왼쪽의 $L^{4/3}$ 노름을 $L^1$ 노름과 $L^2$ 노름으로 받친 것도 틀린 부등식이다. 가르는 방법으로는 $M_0$ 과 $M_1$ 이 곱으로 섞이지 않는다.
 
-가르는 대신 지수를 움직인다. $1/p_\theta=(1-\theta)/1+\theta/2$ 에서 $\theta$ 를 복소수 $z$ 로 바꾸면 $\vert f\vert^{p/p_z}$ 꼴의 함수가 $z$ 에 대해 정칙이다. 쌍대성으로 노름을 적분 $\int (Tf_z)\thinspace g_z$ 로 적으면 이 적분이 띠 $0\le\mathrm{Re}\thinspace z\le 1$ 에서 정칙이고, 두 경계선 위에서 가정과 Hölder 부등식이 각각 $M_0$ 과 $M_1$ 의 상계를 준다. 띠에서 유계인 정칙함수는 내부에서 두 경계값의 기하평균으로 받쳐지므로 $z=\theta$ 의 값이 $M_0^{1-\theta}M_1^\theta$ 이하다.
+가르는 대신 지수를 움직인다. $1/p_\theta=(1-\theta)/1+\theta/2$ 에서 $\theta$ 를 복소수 $z$ 로 바꾸면 $\vert f\vert^{p/p_z}$ 꼴의 함수가 $z$ 에 대해 정칙이다. 쌍대성으로 노름을 적분 $\int (Tf_z)\thinspace g_z$ 로 적으면 이 적분이 띠 $0\le\mathrm{Re}\thinspace z\le 1$ 에서 정칙이고, 두 경계선 위에서 가정과 [Hölder 부등식](holder-inequality.md)이 각각 $M_0$ 과 $M_1$ 의 상계를 준다. 띠에서 유계인 정칙함수는 내부에서 두 경계값의 기하평균으로 받쳐지므로 $z=\theta$ 의 값이 $M_0^{1-\theta}M_1^\theta$ 이하다.
 
 # 정의
 

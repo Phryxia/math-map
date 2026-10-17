@@ -2,7 +2,7 @@
 
 # 개요
 
-Martingale 은 "공정한 게임"의 수학적 모형이다. 시간에 따라 정보가 쌓이는 상황에서, 지금까지 관측한 모든 것을 알고 있어도 다음 시각의 값에 대한 최선의 예측이 현재 값과 같은 확률과정이다.
+**Martingale** 은 "공정한 게임"의 수학적 모형이다. 시간에 따라 정보가 쌓이는 상황에서, 지금까지 관측한 모든 것을 알고 있어도 다음 시각의 값에 대한 최선의 예측이 현재 값과 같은 확률과정이다.
 
 $$
 E[X_{n+1} \mid \mathcal{F}\_n] \thickspace=\thickspace X_n .
@@ -116,7 +116,7 @@ $$
 E\Big[\max_{k \le n} |X_k|^p\Big] \thickspace\le\thickspace \Big(\frac{p}{p-1}\Big)^p E\big[|X_n|^p\big]
 $$
 
-은 위 부등식과 층 공식(layer cake), Hölder 부등식으로 얻는다. $p = 2$ 인 경우가 가장 많이 쓰이며, 무작위 걷기의 최대 편차 추정과 확률적분의 등거리 성질(Itô isometry)의 이산 대응물이 된다.
+은 위 부등식과 층 공식(layer cake), [Hölder 부등식](holder-inequality.md)으로 얻는다. $p = 2$ 인 경우가 가장 많이 쓰이며, 무작위 걷기의 최대 편차 추정과 확률적분의 등거리 성질(Itô isometry)의 이산 대응물이 된다.
 
 ## Upcrossing 부등식과 수렴 정리
 

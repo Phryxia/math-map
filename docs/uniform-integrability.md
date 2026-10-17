@@ -82,7 +82,7 @@ $$
 다음은 모두 UI 를 함의한다. 증명은 모두 Markov 부등식과 절단 기댓값의 직접 평가다.
 
 - **지배함수**: $|f|\le g$ 가 모든 $f$ 에 대해 성립하고 $g$ 가 적분가능하면, 절단 적분이 $g$ 의 꼬리 적분으로 눌린다. 따라서 지배 수렴 정리의 가정은 UI 를 준다.
-- **$L^p$ 유계 ($p\gt 1$ )**: Hölder 부등식으로
+- **$L^p$ 유계 ($p\gt 1$ )**: [Hölder 부등식](holder-inequality.md)으로
 
 $$
 \int_{\lbrace|f| \gt M\rbrace} |f| \thinspace d\mu \ \le \ \Big( \int |f|^p d\mu \Big)^{1/p} \mu(|f| \gt M)^{1 - 1/p}
