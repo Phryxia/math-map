@@ -232,7 +232,7 @@ $T=T_p(E)$ 에서 $p$ 자리를 완화한 구조가 $\chi=1$ 이고, Kato 의 ze
 
 ## 형식화의 범위
 
-Kolyvagin 계의 문법에 필요한 것은 Galois 가군 하나와 국소 조건의 지정뿐이다. [변형환](deformation-rings.md)의 접공간 계산, 고차 무게 모듈러 형식의 Bloch–Kato 추측, $p$ 진 $L$ 함수와 Selmer 군의 비교가 같은 언어로 진술된다. 국소 조건을 하나 바꿀 때 Selmer 군이 얼마나 변하는가가 공통의 물음이고, 그 답을 담은 정수가 핵심계수다.
+Kolyvagin 계를 정의하는 데 필요한 것은 Galois 가군 하나와 국소 조건의 지정뿐이다. [변형환](deformation-rings.md)의 접공간 계산, 고차 무게 모듈러 형식의 Bloch–Kato 추측, $p$ 진 $L$ 함수와 Selmer 군의 비교가 같은 틀로 진술된다. 국소 조건을 하나 바꿀 때 Selmer 군이 얼마나 변하는가가 공통의 물음이고, 그 답을 담은 정수가 핵심계수다.
 
 [^1]: B. Mazur, K. Rubin, *Kolyvagin Systems*, Memoirs AMS **168** (2004) 가 핵심계수와 구조 정리의 원전이다. Greenberg–Wiles 공식은 A. Wiles, *Modular elliptic curves and Fermat's Last Theorem*, Ann. of Math. **141** (1995) 의 부록과 R. Greenberg 의 계산에서 왔고, 교과서 서술은 K. Rubin, *Euler Systems* (Annals of Math. Studies 147, 2000) 의 1 장에 있다. 이분 Euler 계는 B. Howard, *Bipartite Euler systems*, J. reine angew. Math. **597** (2006).
 

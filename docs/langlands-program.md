@@ -148,7 +148,7 @@ $\mathrm{Sym}^k$ 함자성으로 $\mathrm{Sym}^k\pi_E$ 가 자기동형임을 �
 - **Ramanujan–Petersson 추측**: 첨점형식의 계수 상계. 무게 $k$ 고유형식에서 $|a_p|\le2p^{(k-1)/2}$ 이고, Deligne 이 Weil 추측에서 유도했다.
 - **[Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)**: $L(s,E)$ 의 $s=1$ 에서의 영점 차수가 계수와 같다는 추측. 모듈러성이 있어야 $L(s,E)$ 가 $s=1$ 에서 정의되기부터 한다.
 
-수체의 산술을 해석과 표현론의 언어로 옮기는 사전이 있다는 것이 강령의 주장이고 그 사전의 첫 항목이 유체론이다. $\mathrm{GL}\_1$ 에서 확인된 원리를 모든 환원군으로 옮기려는 시도가 반세기 넘게 이어지고 있다.
+수체의 산술을 해석과 표현론으로 옮기는 사전이 있다는 것이 강령의 주장이고 그 사전의 첫 항목이 유체론이다. $\mathrm{GL}\_1$ 에서 확인된 원리를 모든 환원군으로 옮기려는 시도가 반세기 넘게 이어지고 있다.
 
 [^1]: S. Gelbart, "An elementary introduction to the Langlands program", Bulletin of the AMS 10 (1984), 177–219. 상호성 추측의 진술과 당시까지 증명된 경우를 정리한다. 함수체의 해결은 L. Lafforgue, "Chtoucas de Drinfeld et correspondance de Langlands", Inventiones Mathematicae 147 (2002), 1–241.
 

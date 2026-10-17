@@ -59,7 +59,7 @@ $$
 \mathrm{End}\_{\mathrm O(n)}\bigl(V^{\otimes k}\bigr)\ \text{는 계약과 치환으로 생성된다}
 $$
 
-고전 불변론의 언어로는 $\mathrm O(n)$ 의 벡터 불변량이 내적 $\langle v_i,v_j\rangle$ 들의 다항식이라는 진술이며, 도형 언어로는 모든 도형이 기저라는 진술이다.
+고전 불변론에서는 $\mathrm O(n)$ 의 벡터 불변량이 내적 $\langle v_i,v_j\rangle$ 들의 다항식이라는 진술이며, 도형으로는 모든 도형이 기저라는 진술이다.
 
 # 성질
 
