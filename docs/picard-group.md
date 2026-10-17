@@ -2,7 +2,7 @@
 
 # 개요
 
-공간 위의 가역층은 텐서곱으로 군을 이루고 이 군을 Picard 군이라 한다. Picard 군은 [층 코호몰로지](sheaf-cohomology.md)로 $H^1(X,\mathcal O_X^{\ast})$ 와 같다.
+공간 위의 가역층은 텐서곱으로 군을 이루고 이 군을 **Picard 군(Picard group)** 이라 한다. Picard 군은 [층 코호몰로지](sheaf-cohomology.md)로 $H^1(X,\mathcal O_X^{\ast})$ 와 같다.
 
 지수열의 긴 완전열이 이 군을 두 조각으로 나눈다. 위상적 조각이 첫 Chern 류이고 나머지가 복소 구조에서 오는 조각이다.
 

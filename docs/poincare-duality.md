@@ -2,7 +2,7 @@
 
 # 개요
 
-Poincaré 쌍대성은 닫힌 유향 $n$ 차원 [다양체](manifolds.md)에서 $k$ 차 [코호몰로지](cohomology.md)와 $n-k$ 차 [호몰로지](homology.md)가 동형이라는 정리다. 동형은 기본류와의 cap 곱으로 주어진다.
+**Poincaré 쌍대성(Poincaré duality)** 은 닫힌 유향 $n$ 차원 [다양체](manifolds.md)에서 $k$ 차 [코호몰로지](cohomology.md)와 $n-k$ 차 [호몰로지](homology.md)가 동형이라는 정리다. 동형은 기본류와의 cap 곱으로 주어진다.
 
 이 동형 아래 컵곱이 부분다양체의 교차에 대응하고, 차수의 합이 $n$ 인 두 코호몰로지류의 곱을 기본류에서 값매김한 정수가 교차수다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-Petersson 공식은 무게 $k$ 의 정칙 첨점 형식 기저에 대한 Fourier 계수의 가중 합을 두 항으로 적는 등식이다. 첫 항은 두 첨자가 같을 때만 남는 대각 항이고 둘째 항은 [Kloosterman 합](kloosterman-sums.md)의 Bessel 가중 합이다.
+**Petersson 공식(Petersson formula)** 은 무게 $k$ 의 정칙 첨점 형식 기저에 대한 Fourier 계수의 가중 합을 두 항으로 적는 등식이다. 첫 항은 두 첨자가 같을 때만 남는 대각 항이고 둘째 항은 [Kloosterman 합](kloosterman-sums.md)의 Bessel 가중 합이다.
 
 Petersson 이 내적을 도입하며 얻었고[^1], 무게 $0$ 의 [Maass 형식](maass-forms.md) 쪽 짝이 [Kuznetsov 공식](kuznetsov-formula.md)이다. 개별 계수의 크기를 쓰지 않고 아족 전체의 평균을 다루는 자리에 쓴다.
 
