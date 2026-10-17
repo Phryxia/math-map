@@ -2,7 +2,7 @@
 
 # 개요
 
-Vaughan 항등식(Vaughan's identity)은 von Mangoldt 함수를 두 수열의 곱에 걸친 쌍선형합 몇 개로 가르는 항등식이다. 소수에 걸친 합을 직접 다루는 대신 약수 구조가 드러난 합으로 바꾸면 각 조각에 Cauchy–Schwarz 부등식과 지수합 추정을 쓸 수 있다. Bombieri–Vinogradov 정리와 Vinogradov 의 세 소수 정리가 이 분해를 출발 자료로 쓴다.
+**Vaughan 항등식(Vaughan's identity)** 은 von Mangoldt 함수를 두 수열의 곱에 걸친 쌍선형합 몇 개로 가르는 항등식이다. 소수에 걸친 합을 직접 다루는 대신 약수 구조가 드러난 합으로 바꾸면 각 조각에 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)과 지수합 추정을 쓸 수 있다. Bombieri–Vinogradov 정리와 Vinogradov 의 세 소수 정리가 이 분해를 출발 자료로 쓴다.
 
 # 직관
 

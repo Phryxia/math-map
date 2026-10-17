@@ -2,7 +2,7 @@
 
 # 개요
 
-Riemann zeta 함수는 $\mathrm{Re}\thinspace s\gt 1$ 에서 급수 $\zeta(s)=\sum_{n=1}^\infty n^{-s}$ 로 정의되는 복소함수다. 이 급수는 그 범위 밖에서 발산하지만 함수 자신은 $s=1$ 의 극 하나를 제외한 복소평면 전체로 [해석적 연속](analytic-continuation.md)된다.
+**Riemann zeta 함수(Riemann zeta function)** 는 $\mathrm{Re}\thinspace s\gt 1$ 에서 급수 $\zeta(s)=\sum_{n=1}^\infty n^{-s}$ 로 정의되는 복소함수다. 이 급수는 그 범위 밖에서 발산하지만 함수 자신은 $s=1$ 의 극 하나를 제외한 복소평면 전체로 [해석적 연속](analytic-continuation.md)된다.
 
 [소수](primes.md)의 유일분해가 이 함수를 소수에 대한 곱으로 다시 쓰게 한다. 그래서 $\zeta$ 의 극과 영점의 위치에서 소수의 분포를 읽는다.
 
