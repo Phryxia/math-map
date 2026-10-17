@@ -2,7 +2,7 @@
 
 # 개요
 
-Poisson 합 공식(Poisson summation formula)은 정수점 위에서 함수를 다 더한 값과 그 Fourier 변환을 정수점 위에서 다 더한 값이 같다는 항등식이다.
+**Poisson 합 공식(Poisson summation formula)** 은 정수점 위에서 함수를 다 더한 값과 그 [Fourier 변환](fourier-transform.md)을 정수점 위에서 다 더한 값이 같다는 항등식이다.
 
 $$
 \sum_{n\in\mathbb Z}f(n)=\sum_{k\in\mathbb Z}\hat f(k),
