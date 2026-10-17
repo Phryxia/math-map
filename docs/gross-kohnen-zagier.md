@@ -2,7 +2,7 @@
 
 # 개요
 
-Gross–Kohnen–Zagier 정리는 판별식마다 하나씩 만든 [Heegner 점](heegner-points.md)들을 계수로 삼은 $q$ 급수가 무게 $3/2$ 의 [모듈러 형식](modular-forms.md)이라는 진술이다.
+**Gross–Kohnen–Zagier 정리(Gross–Kohnen–Zagier theorem)** 는 판별식마다 하나씩 만든 [Heegner 점](heegner-points.md)들을 계수로 삼은 $q$ 급수가 무게 $3/2$ 의 [모듈러 형식](modular-forms.md)이라는 진술이다.
 
 $$
 \sum_{m\gt 0}y_m\thinspace q^m\ \in\ S^+\_{3/2}(\Gamma_0(4N))\otimes J

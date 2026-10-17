@@ -2,7 +2,7 @@
 
 # 개요
 
-Grassmann 다양체 $\mathrm{Gr}(k,n)$ 은 $n$ 차원 벡터공간의 $k$ 차원 부분공간 하나하나를 점으로 삼은 공간이다. $k=1$ 이면 사영공간이다. 차원이 $k(n-k)$ 인 콤팩트 [다양체](manifolds.md)이고, [외대수](exterior-algebra.md)의 $k$ 차 성분으로 보내는 Plücker 매장이 이것을 사영공간의 닫힌 부분다양체로 놓는다. 부분공간이 고정된 깃발과 만나는 방식으로 공간을 가르면 아핀 공간 조각들이 나오고, 그 조각이 [CW 복합체](cw-complexes.md)(CW complex) 구조와 코호몰로지의 기저를 준다.
+**Grassmann 다양체(Grassmannian)** $\mathrm{Gr}(k,n)$ 은 $n$ 차원 벡터공간의 $k$ 차원 부분공간 하나하나를 점으로 삼은 공간이다. $k=1$ 이면 사영공간이다. 차원이 $k(n-k)$ 인 콤팩트 [다양체](manifolds.md)이고, [외대수](exterior-algebra.md)의 $k$ 차 성분으로 보내는 Plücker 매장이 이것을 사영공간의 닫힌 부분다양체로 놓는다. 부분공간이 고정된 깃발과 만나는 방식으로 공간을 가르면 아핀 공간 조각들이 나오고, 그 조각이 [CW 복합체](cw-complexes.md)(CW complex) 구조와 코호몰로지의 기저를 준다.
 
 # 직관
 
