@@ -2,7 +2,7 @@
 
 # 개요
 
-Hida 이론은 무게를 변수로 두어 보통 모듈러 형식을 하나의 $p$ 진 족으로 묶는다. 무게 $k$ 마다 따로 놓여 있던 [모듈러 형식](modular-forms.md)의 공간을 $U_p$ 의 고윳값이 $p$ 진 단위원인 부분으로 자르면, 그 조각들이 [Iwasawa 대수](iwasawa-algebra.md) $\Lambda=\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 위의 유한 평탄 가군 하나의 특수화로 나온다.
+**Hida 이론(Hida theory)** 은 무게를 변수로 두어 보통 모듈러 형식을 하나의 $p$ 진 족으로 묶는다. 무게 $k$ 마다 따로 놓여 있던 [모듈러 형식](modular-forms.md)의 공간을 $U_p$ 의 고윳값이 $p$ 진 단위원인 부분으로 자르면, 그 조각들이 [Iwasawa 대수](iwasawa-algebra.md) $\Lambda=\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 위의 유한 평탄 가군 하나의 특수화로 나온다.
 
 그 가군이 **Hida 대수** $\mathbf h$ 이고, $\mathbf h$ 의 준동형 하나가 무게를 움직여도 따라 움직이는 고유형식 한 줄을 준다. 각 형식의 [Hecke 작용소](hecke-operators.md) 고윳값은 무게의 $p$ 진 해석함수가 되고, [Galois 표현](galois-representations.md)도 족 전체에 걸쳐 하나로 붙는다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-Hamilton 역학은 운동을 [여접다발](cotangent-bundle.md) 위의 1차 미분방정식계로 적는다. [변분법](calculus-of-variations.md)의 Euler–Lagrange 방정식은 위치에 대한 2차 방정식이고, 속도를 운동량으로 바꾸면 같은 운동이 위치와 운동량에 대한 1차 방정식 두 개가 된다.
+**Hamilton 역학(Hamiltonian mechanics)** 은 운동을 [여접다발](cotangent-bundle.md) 위의 1차 미분방정식계로 적는다. [변분법](calculus-of-variations.md)의 Euler–Lagrange 방정식은 위치에 대한 2차 방정식이고, 속도를 운동량으로 바꾸면 같은 운동이 위치와 운동량에 대한 1차 방정식 두 개가 된다.
 
 이 바꾸기가 [볼록 공액](convex-conjugate.md)이고, 바꾼 뒤의 방정식은 심플렉틱 형식 하나로 좌표 없이 적힌다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-고차 귀납 타입은 점을 짓는 생성자와 함께 경로를 짓는 생성자를 지정하는 귀납 타입이다. [호모토피 타입 이론](homotopy-type-theory.md)에서 등식 타입의 항이 경로이므로, 생성자가 등식 타입의 항을 직접 내놓을 수 있다.
+**고차 귀납 타입(higher inductive type)** 은 점을 짓는 생성자와 함께 경로를 짓는 생성자를 지정하는 귀납 타입이다. [호모토피 타입 이론](homotopy-type-theory.md)에서 등식 타입의 항이 경로이므로, 생성자가 등식 타입의 항을 직접 내놓을 수 있다.
 
 $$
 \mathrm{base}\colon S^1,\qquad \mathrm{loop}\colon \mathrm{base}=\_{S^1}\mathrm{base}

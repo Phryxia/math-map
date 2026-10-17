@@ -2,7 +2,7 @@
 
 # 개요
 
-유한 Morley 위수 군(group of finite Morley rank)은 바탕집합의 Morley 위수가 유한한 자연수인 정의 가능 군이다. 대수군의 차원이 하던 일을 위수 하나가 대신하고, Zariski 위상 없이 부분군의 사슬과 생성 부분군을 다룰 수 있다.
+**유한 Morley 위수 군(group of finite Morley rank)** 은 바탕집합의 Morley 위수가 유한한 자연수인 정의 가능 군이다. 대수군의 차원이 하던 일을 위수 하나가 대신하고, Zariski 위상 없이 부분군의 사슬과 생성 부분군을 다룰 수 있다.
 
 대수적으로 닫힌 체 위의 대수군은 전부 이 부류에 든다. [Cherlin–Zilber 추측](cherlin-zilber-conjecture.md)은 역도 성립하는지, 곧 단순 무한인 것이 모두 대수군인지를 묻는다.
 
