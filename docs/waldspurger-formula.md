@@ -19,7 +19,7 @@ $$
 
 고전적 판본은 반정수 무게 [모듈러 형식](modular-forms.md)의 Fourier 계수 제곱이 중심 $L$ 값과 같다는 Kohnen–Zagier 공식이다. 두 판본을 잇는 것이 [Shimura 대응](shimura-correspondence.md), 곧 theta 올림이다.
 
-$L(1/2)$ 가 함수방정식의 부호 때문에 0 이 되는 경우에는 주기도 0 이 되고, 도함수와 [Heegner 점](heegner-points.md)의 세계로 넘어간다. Waldspurger 와 Gross–Zagier 는 $\varepsilon=+1$ 과 $\varepsilon=-1$ 로 갈라진 분업 관계다.
+$L(1/2)$ 가 함수방정식의 부호 때문에 0 이 되는 경우에는 주기도 0 이 되고, 도함수와 [Heegner 점](heegner-points.md)으로 넘어간다. Waldspurger 와 Gross–Zagier 는 $\varepsilon=+1$ 과 $\varepsilon=-1$ 로 갈라진 분업 관계다.
 
 # 직관
 

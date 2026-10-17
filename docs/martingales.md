@@ -8,7 +8,7 @@ $$
 E[X_{n+1} \mid \mathcal{F}\_n] \thickspace=\thickspace X_n .
 $$
 
-이 조건 하나에서 기댓값이 시간에 대해 불변이고, 적절한 조건에서 임의의 **정지시간**까지 그 불변성이 유지되며(선택적 정지 정리), 최댓값의 꼬리가 제어되고(Doob 부등식), 유계성 가정 아래 경로가 거의 확실하게 수렴한다(martingale 수렴 정리). 조건은 [조건부 기댓값](conditional-expectation.md)의 언어로만 쓸 수 있으므로 martingale 이론은 측도론적 조건부 기댓값 위에 바로 얹힌다.
+이 조건 하나에서 기댓값이 시간에 대해 불변이고, 적절한 조건에서 임의의 **정지시간**까지 그 불변성이 유지되며(선택적 정지 정리), 최댓값의 꼬리가 제어되고(Doob 부등식), 유계성 가정 아래 경로가 거의 확실하게 수렴한다(martingale 수렴 정리). 조건은 [조건부 기댓값](conditional-expectation.md)으로만 쓸 수 있으므로 martingale 이론은 측도론적 조건부 기댓값 위에 바로 얹힌다.
 
 응용 범위는 도박꾼 파산 문제와 [Markov 연쇄](markov-chains.md)의 도달 확률 계산에서 시작해, [큰 수의 법칙](law-of-large-numbers.md)의 강화, [집중부등식](concentration-inequalities.md)의 의존성 있는 버전(Azuma–Hoeffding), 확률적분과 금융 수리의 무차익 이론까지 이어진다.
 
