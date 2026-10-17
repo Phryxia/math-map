@@ -2,7 +2,7 @@
 
 # 개요
 
-Borel 추측은 모든 강 측도 영집합이 가산이라는 명제다. [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)는 이 명제를 결정하지 못한다. [연속체 가설](continuum-hypothesis.md) 아래에서 거짓이고, Laver 가 [강제법](forcing.md)으로 만든 모형에서 참이다.
+**Borel 추측(Borel conjecture)** 은 모든 강 측도 영집합이 가산이라는 명제다. [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)는 이 명제를 결정하지 못한다. [연속체 가설](continuum-hypothesis.md) 아래에서 거짓이고, Laver 가 [강제법](forcing.md)으로 만든 모형에서 참이다.
 
 # 직관
 

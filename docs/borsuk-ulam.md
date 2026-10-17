@@ -2,7 +2,7 @@
 
 # 개요
 
-Borsuk–Ulam 정리는 구면 $S^n$ 에서 $\mathbb R^n$ 으로 가는 연속사상이 대척점 쌍에서 같은 값을 갖는다는 정리다. 정의역의 차원이 공역보다 하나 크다는 것만으로 결론이 나온다. 증명은 그런 쌍이 없다고 가정해 $S^n$ 에서 $S^{n-1}$ 로 가는 대척점 보존 사상을 만들고, 그런 사상이 없음을 [실사영공간](real-projective-space.md)의 $\mathbb Z/2$ 계수 [코호몰로지](cohomology.md)로 보이는 것이다.
+**Borsuk–Ulam 정리(Borsuk–Ulam theorem)** 는 구면 $S^n$ 에서 $\mathbb R^n$ 으로 가는 연속사상이 대척점 쌍에서 같은 값을 갖는다는 정리다. 정의역의 차원이 공역보다 하나 크다는 것만으로 결론이 나온다. 증명은 그런 쌍이 없다고 가정해 $S^n$ 에서 $S^{n-1}$ 로 가는 대척점 보존 사상을 만들고, 그런 사상이 없음을 [실사영공간](real-projective-space.md)의 $\mathbb Z/2$ 계수 [코호몰로지](cohomology.md)로 보이는 것이다.
 
 # 직관
 

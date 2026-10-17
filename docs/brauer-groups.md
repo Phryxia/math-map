@@ -2,7 +2,7 @@
 
 # 개요
 
-Brauer 군 $\mathrm{Br}(K)$ 는 체 $K$ 위의 중심단순대수를 Brauer 동치로 분류하는 군이며, [유체론](class-field-theory.md)이 이 군을 완전히 계산한다.
+**Brauer 군(Brauer group)** $\mathrm{Br}(K)$ 는 체 $K$ 위의 중심단순대수를 Brauer 동치로 분류하는 군이며, [유체론](class-field-theory.md)이 이 군을 완전히 계산한다.
 
 $$
 0\longrightarrow\mathrm{Br}(K)\longrightarrow\bigoplus_v\mathrm{Br}(K_v)\xrightarrow{\ \sum\mathrm{inv}\_v\ }\mathbb Q/\mathbb Z\longrightarrow0

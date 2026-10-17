@@ -2,7 +2,7 @@
 
 # 개요
 
-최단강하선 문제(brachistochrone problem)는 두 점을 잇는 곡선 가운데 중력만 받는 구슬이 가장 빨리 내려오는 것을 찾는 문제다. 답은 직선이 아니라 사이클로이드다.
+**최단강하선 문제(brachistochrone problem)** 는 두 점을 잇는 곡선 가운데 중력만 받는 구슬이 가장 빨리 내려오는 것을 찾는 문제다. 답은 직선이 아니라 사이클로이드다.
 
 낙하 시간을 곡선의 범함수로 쓰면 [변분법](calculus-of-variations.md)의 문제가 되고, Beltrami 항등식이 그 범함수의 Euler–Lagrange 방정식을 한 번 적분한다.
 
