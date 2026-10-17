@@ -2,7 +2,7 @@
 
 # 개요
 
-감마 함수(gamma function)는 자연수에서만 정의되는 계승 $n!$ 을 실수와 복소수로 잇는 함수다.
+**감마 함수(gamma function)** 는 자연수에서만 정의되는 계승 $n!$ 을 실수와 복소수로 잇는 함수다.
 
 $$
 \Gamma(s)=\int_0^{\infty}t^{s-1}e^{-t}\thinspace dt\quad(\mathrm{Re}s\gt 0),

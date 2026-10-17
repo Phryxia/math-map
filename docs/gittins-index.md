@@ -2,7 +2,7 @@
 
 # 개요
 
-Gittins 지표는 할인 [다중 슬롯머신](multi-armed-bandits.md) 문제에서 팔마다 따로 계산하는 수다. 각 시점에 지표가 가장 큰 팔을 당기는 정책이 최적이며, 팔 $K$ 개의 결합 상태를 한꺼번에 다루는 동적 계획법을 팔 하나짜리 [최적 정지](optimal-stopping.md) 문제 $K$ 개로 바꾼다.
+**Gittins 지표(Gittins index)** 는 할인 [다중 슬롯머신](multi-armed-bandits.md) 문제에서 팔마다 따로 계산하는 수다. 각 시점에 지표가 가장 큰 팔을 당기는 정책이 최적이며, 팔 $K$ 개의 결합 상태를 한꺼번에 다루는 동적 계획법을 팔 하나짜리 [최적 정지](optimal-stopping.md) 문제 $K$ 개로 바꾼다.
 
 # 직관
 

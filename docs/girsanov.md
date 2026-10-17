@@ -2,7 +2,7 @@
 
 # 개요
 
-Girsanov 정리(Girsanov's theorem)는 확률측도를 바꾸어 확률과정의 표류를 지우는 정리다.
+**Girsanov 정리(Girsanov's theorem)** 는 확률측도를 바꾸어 확률과정의 표류를 지우는 정리다.
 
 표류가 있는 확률과정 $dX = \mu\thinspace dt + \sigma\thinspace dB$ 에서는 martingale 성질이 깨져 기댓값을 다루는 도구를 쓸 수 없다.
 

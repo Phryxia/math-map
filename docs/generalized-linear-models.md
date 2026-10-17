@@ -2,9 +2,9 @@
 
 # 개요
 
-일반화선형모형(generalized linear model)은 반응변수의 분포를 [지수족](exponential-families.md)으로 두고 그 자연모수를 설명변수의 선형결합으로 놓은 회귀 모형이다. 정규분포를 넣으면 [선형회귀](linear-regression.md), Bernoulli 분포를 넣으면 로지스틱 회귀, Poisson 분포를 넣으면 로그선형모형이 된다.
+**일반화선형모형(generalized linear model)** 은 반응변수의 분포를 [지수족](exponential-families.md)으로 두고 그 자연모수를 설명변수의 선형결합으로 놓은 회귀 모형이다. 정규분포를 넣으면 [선형회귀](linear-regression.md), Bernoulli 분포를 넣으면 로지스틱 회귀, Poisson 분포를 넣으면 로그선형모형이 된다.
 
-반응분포를 바꿔도 추정 절차는 하나다. 자연모수를 선형으로 두면 로그가능도가 회귀계수에 대해 오목해지고, Newton 법이 가중최소제곱의 반복으로 정리된다.
+반응분포를 바꿔도 추정 절차는 하나다. 자연모수를 선형으로 두면 로그가능도가 회귀계수에 대해 오목해지고, [Newton 법](newton-method.md)이 가중최소제곱의 반복으로 정리된다.
 
 # 직관
 

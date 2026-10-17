@@ -2,7 +2,7 @@
 
 # 개요
 
-Galvin–Mycielski–Solovay 정리는 [강 측도 영집합](strong-measure-zero.md)을 덧셈과 [Baire 범주](baire-category.md)로 특징짓는다. $X\subseteq\mathbb R$ 이 강 측도 영집합인 것은 모든 제1범주 집합 $M$ 에 대해 $X+M$ 이 직선 전체가 되지 않는 것과 같다.
+**Galvin–Mycielski–Solovay 정리(Galvin–Mycielski–Solovay theorem)** 는 [강 측도 영집합](strong-measure-zero.md)을 덧셈과 [Baire 범주](baire-category.md)로 특징짓는다. $X\subseteq\mathbb R$ 이 강 측도 영집합인 것은 모든 제1범주 집합 $M$ 에 대해 $X+M$ 이 직선 전체가 되지 않는 것과 같다.
 
 강 측도 영집합의 정의는 구간의 길이를 쓰고 이 특징은 쓰지 않는다. 그래서 거리가 없는 위상군에서도 오른쪽 조건은 그대로 뜻을 가진다.
 

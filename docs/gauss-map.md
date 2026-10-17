@@ -2,7 +2,7 @@
 
 # 개요
 
-Gauss 사상은 [연분수](continued-fractions.md) 전개의 한 걸음을 주는 변환이다.
+**Gauss 사상(Gauss map)** 은 [연분수](continued-fractions.md) 전개의 한 걸음을 주는 변환이다.
 
 $$
 T:\lbrack 0,1)\to\lbrack 0,1),\qquad Tx=\frac1x-\Big\lfloor\frac1x\Big\rfloor\quad(x\ne0),\qquad T0=0
