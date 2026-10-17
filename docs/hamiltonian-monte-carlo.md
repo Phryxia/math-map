@@ -2,7 +2,7 @@
 
 # 개요
 
-Hamiltonian Monte Carlo(HMC)는 목표분포에 보조 운동량 변수를 더하고 [Hamilton 역학](hamiltonian-mechanics.md)의 흐름을 따라 움직이는 제안을 쓰는 [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)(Markov chain Monte Carlo, MCMC)다. 제안을 흐름으로 만들면 한 걸음이 궤적의 길이만큼 멀리 가고, 에너지가 보존되어 수락확률이 1 에 가깝다. 흐름의 수치 적분에는 가역이고 부피를 보존하는 leapfrog 적분기를 쓴다.
+**Hamiltonian Monte Carlo(HMC)** 는 목표분포에 보조 운동량 변수를 더하고 [Hamilton 역학](hamiltonian-mechanics.md)의 흐름을 따라 움직이는 제안을 쓰는 [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)(Markov chain Monte Carlo, MCMC)다. 제안을 흐름으로 만들면 한 걸음이 궤적의 길이만큼 멀리 가고, 에너지가 보존되어 수락확률이 1 에 가깝다. 흐름의 수치 적분에는 가역이고 부피를 보존하는 leapfrog 적분기를 쓴다.
 
 # 직관
 
