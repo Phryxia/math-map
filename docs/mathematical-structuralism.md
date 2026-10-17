@@ -2,7 +2,7 @@
 
 # 개요
 
-수학적 구조주의(mathematical structuralism)는 수학의 대상이 구조 안의 자리일 뿐 그 자체로는 정체를 갖지 않는다는 주장이다. 집합론으로 자연수를 만들 때 von Neumann 은 $2 = \lbrace\emptyset, \lbrace\emptyset\rbrace\rbrace$ 라 하고 Zermelo 는 $2 = \lbrace\lbrace\emptyset\rbrace\rbrace$ 라 한다. 두 정의 모두 산술 전체를 재현하지만 서로 다른 집합이고, $2 \in 3$ 은 한쪽에서 참이고 다른 쪽에서 거짓이다.
+**수학적 구조주의(mathematical structuralism)** 는 수학의 대상이 구조 안의 자리일 뿐 그 자체로는 정체를 갖지 않는다는 주장이다. 집합론으로 자연수를 만들 때 von Neumann 은 $2 = \lbrace\emptyset, \lbrace\emptyset\rbrace\rbrace$ 라 하고 Zermelo 는 $2 = \lbrace\lbrace\emptyset\rbrace\rbrace$ 라 한다. 두 정의 모두 산술 전체를 재현하지만 서로 다른 집합이고, $2 \in 3$ 은 한쪽에서 참이고 다른 쪽에서 거짓이다.
 
 구조주의는 수학적 대상이 무엇으로 만들어졌는지가 아니라 구조 안에서 차지하는 자리로 결정된다고 본다. $2$ 는 어떤 집합이 아니라 자연수 구조에서 $1$ 다음이고 $3$ 앞인 위치다.
 

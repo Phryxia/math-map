@@ -2,7 +2,7 @@
 
 # 개요
 
-Martin 의 공리는 조건이 좋은 [부분순서](partial-orders.md)에서 조밀집합을 연속체 개수 미만으로 만나는 필터가 실제로 존재한다는 주장이다. [강제법](forcing.md)은 가산 개의 조밀집합을 만나는 필터를 가산 추이 모형 위에서 만든다. Martin 의 공리는 그 개수를 연속체 미만까지 올리고, 모형을 바꾸지 않고 지금의 우주 안에서 필터를 준다.
+**Martin 의 공리(Martin's axiom)** 는 조건이 좋은 [부분순서](partial-orders.md)에서 조밀집합을 연속체 개수 미만으로 만나는 필터가 실제로 존재한다는 주장이다. [강제법](forcing.md)은 가산 개의 조밀집합을 만나는 필터를 가산 추이 모형 위에서 만든다. Martin 의 공리는 그 개수를 연속체 미만까지 올리고, 모형을 바꾸지 않고 지금의 우주 안에서 필터를 준다.
 
 [연속체 가설](continuum-hypothesis.md)이 참이면 이 주장은 Rasiowa–Sikorski 보조정리와 같아진다. 연속체 가설이 거짓인 모형에서는 새 주장이 되고, 그 경우도 ZFC(Zermelo–Fraenkel with choice)와 무모순이다.
 
@@ -24,7 +24,7 @@ $D \subseteq P$ 가 **조밀**하다는 것은 모든 $p \in P$ 에 대해 $q \l
 
 ## Martin 의 공리
 
-Martin 의 공리(Martin's axiom)를 조밀집합의 개수마다 나누어 쓴다. [기수](cardinality.md) $\kappa$ 에 대해 $\mathrm{MA}(\kappa)$ 는 다음 주장이다.
+Martin 의 공리를 조밀집합의 개수마다 나누어 쓴다. [기수](cardinality.md) $\kappa$ 에 대해 $\mathrm{MA}(\kappa)$ 는 다음 주장이다.
 
 > $P$ 가 ccc 를 만족하는 부분순서이고 $\mathcal D$ 가 $P$ 의 조밀집합들의 모임으로 $\vert \mathcal D\vert \le \kappa$ 이면, 모든 $D \in \mathcal D$ 에 대해 $G \cap D \neq \varnothing$ 인 필터 $G \subseteq P$ 가 있다.
 

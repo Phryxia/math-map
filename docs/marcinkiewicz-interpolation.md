@@ -2,7 +2,7 @@
 
 # 개요
 
-Marcinkiewicz 보간 정리(Marcinkiewicz interpolation theorem)는 작용소의 약한 추정 둘에서 그 사이 지수의 $L^p$ 유계성을 끌어낸다[^1].
+**Marcinkiewicz 보간 정리(Marcinkiewicz interpolation theorem)** 는 작용소의 약한 추정 둘에서 그 사이 지수의 $L^p$ 유계성을 끌어낸다[^1].
 
 작용소가 두 지수 $p_0$ 과 $p_1$ 에서 $L^p$ 노름을 받치지 못하고 $\lambda$ 를 넘는 집합의 크기만 받칠 때가 있다. 특이적분 작용소의 $p=1$ 이 그 자리다. 이 정리는 선형성 대신 준선형성만 쓰고 끝점 지수는 결론에서 빠진다.
 
