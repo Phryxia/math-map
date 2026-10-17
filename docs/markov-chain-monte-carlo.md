@@ -2,7 +2,7 @@
 
 # 개요
 
-Markov 연쇄 Monte Carlo(Markov chain Monte Carlo, MCMC)는 목표분포 $\pi$ 를 불변분포로 갖는 [Markov 연쇄](markov-chains.md)를 만들어 그 궤적을 $\pi$ 의 표본으로 쓰는 방법이다. 연쇄를 짓는 데 쓰는 것은 두 점의 밀도 비 $\pi(y)/\pi(x)$ 뿐이므로 정규화상수를 모르는 분포에서도 표본이 나온다. Metropolis–Hastings 알고리즘이 제안과 수락으로 그 연쇄를 구성하고, Gibbs 표본추출이 좌표별 조건부분포로 같은 일을 한다.
+**Markov 연쇄 Monte Carlo(Markov chain Monte Carlo, MCMC)** 는 목표분포 $\pi$ 를 불변분포로 갖는 [Markov 연쇄](markov-chains.md)를 만들어 그 궤적을 $\pi$ 의 표본으로 쓰는 방법이다. 연쇄를 짓는 데 쓰는 것은 두 점의 밀도 비 $\pi(y)/\pi(x)$ 뿐이므로 정규화상수를 모르는 분포에서도 표본이 나온다. Metropolis–Hastings 알고리즘이 제안과 수락으로 그 연쇄를 구성하고, Gibbs 표본추출이 좌표별 조건부분포로 같은 일을 한다.
 
 # 직관
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-수학적 플라톤주의(platonism)는 수, 집합, 함수 같은 수학적 대상이 실제로 존재한다고 보는 존재론적 입장이다. 그 대상은 추상적이고 인간의 언어와 사고, 관행에 의존하지 않는다. 표준 정식화는 Existence, Abstractness, Independence 세 주장이다[^1].
+**수학적 플라톤주의(platonism)** 는 수, 집합, 함수 같은 수학적 대상이 실제로 존재한다고 보는 존재론적 입장이다. 그 대상은 추상적이고 인간의 언어와 사고, 관행에 의존하지 않는다. 표준 정식화는 Existence, Abstractness, Independence 세 주장이다[^1].
 
 수학자의 일상적 화법을 문자 그대로 읽으면 나오는 입장이지만, 인과적으로 접근할 수 없는 대상에 대한 지식을 설명해야 한다. 이 부담이 Benacerraf 딜레마이고, 이를 피하려는 시도에서 [직관주의](intuitionism.md), [구조주의](mathematical-structuralism.md), 유명론(nominalism)이 갈라진다. 수학의 내용이 아니라 수학의 대상과 정당화에 관한 해석이다.
 

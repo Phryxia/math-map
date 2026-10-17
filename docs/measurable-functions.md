@@ -2,7 +2,7 @@
 
 # 개요
 
-가측함수는 함숫값의 범위로 정한 집합 $\lbrace x: f(x)\gt c\rbrace$ 가 모든 $c$ 에 대해 가측집합인 함수다. [Lebesgue 적분](lebesgue-integral.md)은 이 집합의 [측도](measure.md)에 함숫값을 곱해 더하므로, 이 집합에 측도가 없으면 적분도 없다.
+**가측함수(measurable function)** 는 함숫값의 범위로 정한 집합 $\lbrace x: f(x)\gt c\rbrace$ 가 모든 $c$ 에 대해 가측집합인 함수다. [Lebesgue 적분](lebesgue-integral.md)은 이 집합의 [측도](measure.md)에 함숫값을 곱해 더하므로, 이 집합에 측도가 없으면 적분도 없다.
 
 확률에서는 확률변수가 가측함수다. $X$ 가 $3$ 보다 클 확률은 집합 $\lbrace X\gt 3\rbrace$ 의 확률이고, 그 집합이 사건이어야 확률이 정해진다. 확률변수의 [분포](pushforward-measure.md)도 이런 집합의 확률로 정한다.
 

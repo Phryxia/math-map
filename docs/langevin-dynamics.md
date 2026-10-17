@@ -2,7 +2,7 @@
 
 # 개요
 
-Langevin 동역학은 퍼텐셜의 기울기를 따라 내려가는 흐름에 열잡음을 더한 [확률미분방정식](stochastic-differential-equations.md)이다. 정상분포가 Gibbs 측도 $e^{-\beta V}$ 이므로, 이 방정식을 이산화해 돌리면 정규화상수를 계산하지 않고 그 분포의 표본을 얻는다.
+**Langevin 동역학(Langevin dynamics)** 은 퍼텐셜의 기울기를 따라 내려가는 흐름에 열잡음을 더한 [확률미분방정식](stochastic-differential-equations.md)이다. 정상분포가 Gibbs 측도 $e^{-\beta V}$ 이므로, 이 방정식을 이산화해 돌리면 정규화상수를 계산하지 않고 그 분포의 표본을 얻는다.
 
 # 직관
 
