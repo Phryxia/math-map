@@ -51,12 +51,13 @@ graph TD
 
 먼저 읽을 것: [벡터 공간](vector-spaces.md)과 [선형사상](linear-maps.md)(선형대수 개관), [완비성](completeness.md)(해석 개관). 시작 문서: [내적 공간](inner-product-spaces.md).
 
-- [내적 공간](inner-product-spaces.md) — 내적이 정하는 노름과 직교성. Cauchy–Schwarz 부등식과 Gram–Schmidt 직교화
+- [내적 공간](inner-product-spaces.md) — 내적이 정하는 노름과 직교성. [Cauchy–Schwarz 부등식](cauchy-schwarz.md)과 Gram–Schmidt 직교화
 - [Hilbert 공간](hilbert-spaces.md) — 완비 내적 공간. 닫힌 부분공간으로의 직교사영과 Riesz 표현 정리
   - [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md) — 점 평가가 내적으로 적히는 함수 공간. 양의 준정부호 핵과의 일대일 대응, Moore–Aronszajn 정리, 표현자 정리
 - [Banach 공간](banach-spaces.md) — 완비 노름 공간. 열린 사상 정리, 닫힌 그래프 정리, 균등유계성 원리
 - [쌍대 공간](dual-space.md) — 선형범함수 전체가 이루는 공간. 유한차원과 달리 원공간과 표준적으로 동형이 아니다
 - [Lᵖ 공간](lp-spaces.md) — 측도공간 위의 적분가능 함수들이 이루는 Banach 공간. Hölder 와 Minkowski 부등식, 쌍대성
+  - [Hölder 부등식](holder-inequality.md) — 곱의 적분을 켤레 지수의 거듭제곱 적분으로 누르는 부등식. 삼각부등식과 쌍대성의 근거
 - [Sobolev 공간](sobolev-spaces.md) — 약한 도함수가 $L^p$ 에 드는 함수들의 Banach 공간. 매장 정리, Rellich–Kondrachov 콤팩트성, 흔적 정리
 
 ## 수렴과 직교기저

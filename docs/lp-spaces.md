@@ -8,7 +8,7 @@ $$
 \Vert f\Vert\_p=\Bigl(\int_X\vert f\vert^p\thinspace d\mu\Bigr)^{1/p}
 $$
 
-이고, 이 노름에 대해 $L^p$ 는 완비다. 삼각부등식이 Minkowski 부등식이고, 두 함수의 곱을 재는 Hölder 부등식이 그 증명과 쌍대성을 함께 준다.
+이고, 이 노름에 대해 $L^p$ 는 완비다. 삼각부등식이 Minkowski 부등식이고, 두 함수의 곱을 재는 [Hölder 부등식](holder-inequality.md)이 그 증명과 쌍대성을 함께 준다.
 
 $p=2$ 에서만 노름이 내적에서 나오며, 그 경우가 [Hilbert 공간](hilbert-spaces.md)이다.
 
@@ -62,7 +62,7 @@ $$
 
 이다. ∎
 
-등호는 $\vert f\vert^p$ 와 $\vert g\vert^q$ 가 거의 어디서나 비례할 때 성립한다. $p=q=2$ 인 경우가 Cauchy–Schwarz 부등식이다.
+등호는 $\vert f\vert^p$ 와 $\vert g\vert^q$ 가 거의 어디서나 비례할 때 성립한다. $p=q=2$ 인 경우가 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)이다.
 
 ## Minkowski 부등식
 
@@ -122,6 +122,7 @@ $1\le p\lt\infty$ 이고 $\mu$ 가 $\sigma$ 유한이면 사상 $g\mapsto\bigl(f
 
 ## 더 알아보기
 
+- [Hölder 부등식](holder-inequality.md)
 - [Riesz–Thorin 정리](riesz-thorin.md)
 - [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md)
 - [Fourier 변환](fourier-transform.md)
