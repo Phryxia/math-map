@@ -2,7 +2,7 @@
 
 # 개요
 
-혼합부피는 볼록체 여러 개의 Minkowski 합의 부피를 계수별로 분해해 얻는 양이다. 볼록체 $K_1,\dots,K_m$ 과 음이 아닌 $t_1,\dots,t_m$ 에 대해 $\mathrm{vol}(t_1K_1+\dots+t_mK_m)$ 이 $t_i$ 들의 $n$ 차 동차다항식이고, 그 계수가 혼합부피다. 부피, 겉면적, 평균 폭이 모두 특수한 혼합부피이고, 이들 사이의 부등식 체계의 가장 강한 형태가 Alexandrov–Fenchel 부등식이다. [Brunn–Minkowski 부등식](brunn-minkowski.md)이 그 특수 경우다.
+**혼합부피(mixed volume)** 는 볼록체 여러 개의 Minkowski 합의 부피를 계수별로 분해해 얻는 양이다. 볼록체 $K_1,\dots,K_m$ 과 음이 아닌 $t_1,\dots,t_m$ 에 대해 $\mathrm{vol}(t_1K_1+\dots+t_mK_m)$ 이 $t_i$ 들의 $n$ 차 동차다항식이고, 그 계수가 혼합부피다. 부피, 겉면적, 평균 폭이 모두 특수한 혼합부피이고, 이들 사이의 부등식 체계의 가장 강한 형태가 Alexandrov–Fenchel 부등식이다. [Brunn–Minkowski 부등식](brunn-minkowski.md)이 그 특수 경우다.
 
 # 직관
 

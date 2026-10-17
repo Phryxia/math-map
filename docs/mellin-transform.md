@@ -2,7 +2,7 @@
 
 # 개요
 
-Mellin 변환(Mellin transform)은 함수에 $x^{s-1}$ 을 곱해 $(0,\infty)$ 에서 적분한 변환이다.
+**Mellin 변환(Mellin transform)** 은 함수에 $x^{s-1}$ 을 곱해 $(0,\infty)$ 에서 적분한 변환이다.
 
 $$
 \tilde f(s)=\int_0^{\infty}f(x)\thinspace x^{s-1}dx,
