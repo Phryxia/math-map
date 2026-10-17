@@ -2,7 +2,7 @@
 
 # 개요
 
-Proper 강제법은 바탕 모형의 가산 기본 부분모형마다 그 모형에 대해 일반적인 조건을 찾을 수 있는 [강제 순서](forcing.md)다.
+**Proper 강제법(proper forcing)** 은 바탕 모형의 가산 기본 부분모형마다 그 모형에 대해 일반적인 조건을 찾을 수 있는 [강제 순서](forcing.md)다.
 
 가산 반사슬 조건(countable chain condition, ccc)과 가산 닫힘이 모두 proper 를 함의하고, proper 순서는 $\aleph\_1$ 을 보존한다. 가산지지 [반복](iterated-forcing.md)이 이 성질을 보존하므로 ccc 가 아닌 순서를 $\omega\_2$ 번 반복하는 무모순성 증명이 가능하다.
 
