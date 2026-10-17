@@ -2,7 +2,7 @@
 
 # 개요
 
-Birkhoff 정규형은 [적분가능계](integrable-systems.md)에 작은 교란을 더한 Hamilton 함수
+**Birkhoff 정규형(Birkhoff normal form)** 은 [적분가능계](integrable-systems.md)에 작은 교란을 더한 Hamilton 함수
 
 $$
 H(I,\theta)=H\_0(I)+\varepsilon H\_1(I,\theta)
