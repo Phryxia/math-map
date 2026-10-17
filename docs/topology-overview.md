@@ -2,109 +2,175 @@
 
 # 개요
 
-위상수학은 늘리고 구부려도 변하지 않는 성질을 다룬다. 물음은 "두 공간이 같은가" 이고, 답은 대개 불변량으로 온다. 연결성분의 수, 기본군, 호몰로지, Euler 지표, 매듭 다항식이 그것이다. 위상수학의 갈래는 열린집합의 언어인 점집합 위상, 불변량을 만드는 대수적 위상, 미적분이 되는 공간인 다양체, 3 차원과 매듭, 물리에서 온 양자 위상이다. 정수론과 만나는 산술 위상, 곧 에탈 코호몰로지와 기하학적 Langlands 는 [정수론 개관](number-theory-overview.md)에 있다.
+위상수학(topology)은 늘리고 구부려도 변하지 않는 성질을 다룬다. 물음은 두 공간이 같은가이고, 답은 대개 불변량으로 온다. 연결성분의 수, 기본군, 호몰로지, Euler 지표, 매듭 다항식이 그것이다. 정수론과 만나는 에탈 코호몰로지와 기하적 Langlands 는 [정수론 개관](number-theory-overview.md)에 있다.
 
-시작은 [거리 공간](metric-spaces.md)에서 [위상 공간](topology.md)으로 가는 추상화다. 거기서 [콤팩트성](compactness.md)과 [연결성](connectedness.md)이 점집합 위상의 두 축이고, [기본군](fundamental-group.md)과 [단체 호몰로지](homology.md)가 대수적 위상의 두 입구이며, [다양체](manifolds.md)가 기하로 가는 문이다.
+시작은 [거리 공간](metric-spaces.md)에서 [위상 공간](topology.md)으로 가는 추상화다. 거기서 [콤팩트성](compactness.md)이 점집합 위상의 축이고, [기본군](fundamental-group.md)과 [단체 호몰로지](homology.md)가 불변량을 만드는 두 입구이며, [다양체](manifolds.md)에서 미분 쪽 갈래가 시작한다.
 
 # 지도
 
 ```mermaid
 graph TD
   MS["거리 공간"] --> CT["연속함수"] --> TP["위상 공간"]
-  TP --> CP["Compactness"] --> CS["곡면의 분류"]
-  TP --> CN["연결성"]
-  TP --> FG["기본군"] --> CV["덮개공간"] --> H3["쌍곡 3 다양체"] --> GZ["기하화 정리"]
-  FG --> CS --> RS["Riemann 곡면"] --> TS["Teichmüller 공간"]
-  FG --> KN["매듭 불변량"] --> KH["Khovanov 호몰로지"]
-  KN --> RT["Reshetikhin–Turaev"]
-  KN --> VC["볼륨 추측"]
-  TP --> HM["단체 호몰로지"] --> EC["Euler 지표"] --> GB["Gauss–Bonnet"]
-  HM --> DR["de Rham 코호몰로지"] --> HT["Hodge 이론"] --> IT["지표 정리"]
-  TP --> MF["다양체"] --> DF["미분형식"] --> DR
-  DR --> CSM["Chern–Simons"] --> CI["Casson 불변량"]
+  TP --> CP["콤팩트성"]
+  TP --> FG["기본군"] --> CV["덮개공간"]
+  TP --> HM["단체 호몰로지"] --> CH["코호몰로지"]
+  HM --> EC["Euler 지표"]
+  TP --> MF["다양체"] --> DF["미분형식"] --> DR["de Rham 코호몰로지"]
+  HM --> DR
+  CH --> PD["Poincaré 쌍대성"]
+  MF --> PD
+  CH --> SQ["Steenrod 연산"] --> SW["Stiefel–Whitney 류"] --> CB["코보디즘"]
+  CH --> TH["Thom 공간"] --> CB
+  EC --> CS["곡면의 분류"]
+  FG --> CS
+  CP --> CS
+  FG --> KN["매듭 불변량"] --> RT["Reshetikhin–Turaev 불변량"]
+  DR --> CSM["Chern–Simons 이론"]
 ```
 
 # 갈래
 
+처음 읽는 사람은 점집합 위상, 기본군과 덮개공간, 호몰로지와 코호몰로지의 순서로 읽는다. 고정점 정리는 호몰로지 뒤에 오는 응용 갈래다. 미분 쪽은 다양체와 de Rham 이론에서 시작해 쌍대성과 고차원 분류, 호모토피론의 도구, 특성류와 코보디즘으로 간다. 층 코호몰로지는 대수기하로 갈라지고, 곡면과 3 다양체와 양자 위상과 게이지 이론이 저차원 갈래다.
+
 ## 점집합 위상
 
-- [거리 공간](metric-spaces.md) → [위상 공간](topology.md): 거리를 버리고 열린집합만 남기기
-- [필터와 그물](filters-and-nets.md): 수열이 모자라는 자리를 메우는 두 수렴 언어와 그 번역
-- [콤팩트성](compactness.md), [연결성](connectedness.md): 두 기본 불변량
+먼저 읽을 것: [함수](functions.md)(수학기초론 개관), [수열의 극한](limits.md)(해석학 개관). 시작 문서: [거리 공간](metric-spaces.md).
+
+- [거리 공간](metric-spaces.md): 두 점 사이의 거리로 수렴과 연속을 정의하는 공간
+- [위상 공간](topology.md): 거리값을 버리고 열린집합의 모임만 남긴 공간
+- [콤팩트성](compactness.md): 모든 열린 덮개에서 유한 부분덮개를 뽑을 수 있다는 성질
+  - [연결성](connectedness.md): 겹치지 않는 두 열린집합으로 나눌 수 없다는 성질
+  - [필터와 그물](filters-and-nets.md): 수열이 모자라는 공간에서 수렴을 적는 두 언어와 그 번역
 - [Tychonoff 정리](tychonoff-theorem.md): 콤팩트 공간의 임의 곱이 콤팩트하다는 정리, 선택공리와 동치
-- [분리공리](separation-axioms.md): Hausdorff 부터 정규까지, Urysohn 보조정리와 Tietze 확장 정리
-- [Stone–Čech 콤팩트화](stone-cech-compactification.md): 유계 연속함수를 모두 확장하는 가장 큰 콤팩트화, 초필터와의 대응
-- [위상군](topological-groups.md): 연산이 연속인 군, 항등원 근방이 정하는 위상과 국소콤팩트성
-- [격자 부분군](lattice-subgroups.md): 몫이 유한 부피인 이산 부분군, 기본 영역과 공부피
+- [분리공리](separation-axioms.md): 점과 닫힌집합을 열린집합으로 갈라 놓을 수 있는 정도를 재는 조건들
+- [Stone–Čech 콤팩트화](stone-cech-compactification.md): 유계 연속함수를 모두 확장하는 가장 큰 콤팩트화
+- [위상군](topological-groups.md): 연산이 연속인 군, 항등원 근방이 위상 전체를 정한다
+  - [격자 부분군](lattice-subgroups.md): 몫이 유한 부피인 이산 부분군, 기본 영역과 공부피
 
-## 호모토피와 호몰로지
+## 기본군과 덮개공간
 
-- [기본군](fundamental-group.md) → [덮개공간](covering-spaces.md): 고리와 그 들어 올림
-- [기본군](fundamental-group.md) → [Seifert–van Kampen 정리](seifert-van-kampen.md): 열린 두 조각으로 기본군을 계산하는 정리, 자유곱의 몫과 세포 부착
-- [기본군](fundamental-group.md) → [호모토피군](homotopy-groups.md): 고리를 고차원 구면으로 올린 불변량
-- [호모토피군](homotopy-groups.md) → [Freudenthal 매달기 정리](freudenthal-suspension.md): 매달기가 호모토피군의 동형을 주는 차수 범위, 안정 호모토피군
-- [단체 호몰로지](homology.md) → [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology): 원판을 테두리째 붙여 쌓은 공간, 세포마다 사슬군의 생성원 하나
-- [단체 호몰로지](homology.md) → [Mayer–Vietoris 완전열](mayer-vietoris.md): 두 열린집합과 그 교집합의 호몰로지에서 합집합의 호몰로지를 얻는 긴 완전열
-- [단체 호몰로지](homology.md) → [Euler 지표](euler-characteristic.md) → [평면 그래프](planar-graphs.md), [곡면의 분류](classification-of-surfaces.md)
-- [단체 호몰로지](homology.md) → [코호몰로지](cohomology.md): 사슬 위의 함수, 컵곱이 주는 환 구조와 Poincaré 쌍대성
-- [코호몰로지](cohomology.md) → [실사영공간](real-projective-space.md): 차원마다 세포 하나인 CW 구조, 절단 다항식환이 되는 $\mathbb Z/2$ 코호몰로지
-- [단체 호몰로지](homology.md) → [Brouwer 고정점 정리](brouwer-fixed-point.md): 수축의 부재가 고정점의 존재를 준다
-- [단체 호몰로지](homology.md) → [Brouwer 차수](brouwer-degree.md): 경계에서 값을 피하는 사상에 붙는 정수, 해의 개수를 부호와 함께 센다
-- [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Sperner 보조정리](sperner-lemma.md), [Kakutani 고정점 정리](kakutani-fixed-point.md): 조합적 증명과 집합값 사상으로의 확장
-- [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Borsuk–Ulam 정리](borsuk-ulam.md): 대척점 쌍에서 값이 같아진다는 정리, Kneser 그래프 채색수의 하한
-- [Brouwer 고정점 정리](brouwer-fixed-point.md) → [Lefschetz 고정점 정리](lefschetz-fixed-point.md): 호몰로지 대각합의 교대합이 고정점의 존재를 판정한다
-## 코호몰로지와 비틀림
+먼저 읽을 갈래: 점집합 위상. 시작 문서: [기본군](fundamental-group.md).
 
-- [Poincaré 쌍대성](poincare-duality.md): 닫힌 유향 다양체에서 $k$ 차 코호몰로지와 $n-k$ 차 호몰로지의 동형, 교차수와 4 차원의 교차형식
-- [콤팩트 지지 코호몰로지](compactly-supported-cohomology.md): 지지가 콤팩트한 코사슬의 코호몰로지, 비콤팩트 다양체의 쌍대성
-- [교차형식](intersection-form.md): 4 차원 다양체의 단모듈러 대칭형식, Rokhlin 과 Freedman 과 Donaldson 의 정리
-- [de Rham 코호몰로지](de-rham-cohomology.md) → [Hodge 이론](hodge-theory.md) → [Kähler 다양체](kahler-manifolds.md), [지표 정리](index-theorem.md)
-- [Reidemeister 비틀림](reidemeister-torsion.md) → [s-코보디즘 정리](s-cobordism.md): 단순 호모토피와 고차원 분류
-- [수술 이론](surgery-theory.md): 손잡이 교체로 호모토피 핵을 없애기, Wall 군과 수술 완전열
-- [이색 구면](exotic-spheres.md): 표준 구면과 위상동형이지만 미분동형이 아닌 다양체, $\Theta_n$ 과 Kervaire 불변량
+- [기본군](fundamental-group.md): 한 점을 지나는 닫힌 경로를 연속 변형으로 동일시해 얻는 군
+  - [Seifert–van Kampen 정리](seifert-van-kampen.md): 열린 두 조각의 기본군에서 전체의 기본군을 계산하는 정리
+- [덮개공간](covering-spaces.md): 경로를 유일하게 올릴 수 있는 사상, 기본군의 부분군과의 대응
+- [호모토피군](homotopy-groups.md): 고차원 구면에서 오는 사상을 연속 변형으로 분류한 군
+  - [Freudenthal 매달기 정리](freudenthal-suspension.md): 매달기가 동형을 주는 차수 범위
+
+## 호몰로지와 코호몰로지
+
+먼저 읽을 갈래: 기본군과 덮개공간. 시작 문서: [단체 호몰로지](homology.md).
+
+- [단체 호몰로지](homology.md): 경계가 없으면서 무엇의 경계도 아닌 사슬을 세어 얻는 아벨군
+- [코호몰로지](cohomology.md): 사슬 위의 함수로 만든 불변량, 컵곱이 주는 환 구조
+  - [Mayer–Vietoris 완전열](mayer-vietoris.md): 두 조각과 그 교집합의 호몰로지를 전체의 것과 잇는 긴 완전열
+- [CW 복합체](cw-complexes.md)(CW complex, closure-finite weak topology): 원판을 테두리째 붙여 차원 순으로 쌓은 공간, 세포마다 생성원 하나
+  - [실사영공간](real-projective-space.md): 차원마다 세포가 하나인 몫공간, 절단 다항식환이 되는 코호몰로지
+- [Euler 지표](euler-characteristic.md): 조각 수의 교대합으로 정의되는 정수
+  - [평면 그래프](planar-graphs.md): 간선이 교차하지 않게 평면에 그릴 수 있는 그래프
+
+## 고정점 정리
+
+먼저 읽을 갈래: 호몰로지와 코호몰로지. 시작 문서: [Brouwer 고정점 정리](brouwer-fixed-point.md).
+
+- [Brouwer 고정점 정리](brouwer-fixed-point.md): 닫힌 공의 연속 자기사상에 고정점이 있다는 정리
+  - [Sperner 보조정리](sperner-lemma.md): 삼각형을 쪼개고 꼭짓점에 이름을 붙여 얻는 조합적 증명
+  - [Kakutani 고정점 정리](kakutani-fixed-point.md): 집합값 사상으로의 확장, 균형의 존재 증명에 쓰인다
+  - [Borsuk–Ulam 정리](borsuk-ulam.md): 구면의 연속사상이 대척점 쌍에서 같은 값을 갖는다는 정리
+  - [Lefschetz 고정점 정리](lefschetz-fixed-point.md): 유도 준동형의 대각합으로 고정점의 존재를 판정하는 정리
+  - [Brouwer 차수](brouwer-degree.md): 경계에서 값을 피하는 사상에 붙는 정수, 해를 부호와 함께 센다
+
+## 다양체와 de Rham 이론
+
+먼저 읽을 갈래: 호몰로지와 코호몰로지. 시작 문서: [다양체](manifolds.md).
+
+- [다양체](manifolds.md): 작은 영역마다 좌표계를 붙여 미적분을 옮기는 공간
+- [미분형식](differential-forms.md): 적분 정리 넷을 한 정리로 묶는 반대칭 텐서
+- [de Rham 코호몰로지](de-rham-cohomology.md): 닫힘형식을 완전형식으로 나눈 몫
+- [Hodge 이론](hodge-theory.md): 코호몰로지류마다 조화 대표원 하나를 골라내는 분해
+  - [Kähler 다양체](kahler-manifolds.md): 복소구조와 계량이 맞물린 다양체, 차수별로 갈라지는 코호몰로지
+- [Gauss–Bonnet 정리](gauss-bonnet.md): 곡률의 적분이 계량과 무관하게 위상으로 결정된다는 정리
+  - [Poincaré–Hopf 정리](poincare-hopf.md): 벡터장 특이점 지표의 합이 벡터장과 무관하다는 정리
+- [Fredholm 작용소](fredholm-operators.md): 핵과 여핵이 유한차원인 작용소, 두 차원의 차가 연속변형으로 바뀌지 않는다
+- [지표 정리](index-theorem.md): 타원 미분작용소의 해석적 지표가 위상적 불변량과 같다는 정리
+
+## 쌍대성과 고차원 분류
+
+먼저 읽을 갈래: 다양체와 de Rham 이론. 시작 문서: [Poincaré 쌍대성](poincare-duality.md).
+
+- [Poincaré 쌍대성](poincare-duality.md): 닫힌 유향 다양체에서 차수가 상보적인 코호몰로지와 호몰로지의 동형
+  - [콤팩트 지지 코호몰로지](compactly-supported-cohomology.md): 지지가 콤팩트한 코사슬만으로 만든 판본
+  - [교차형식](intersection-form.md): 4 차원 다양체의 둘째 코호몰로지에 생기는 단모듈러 대칭형식
+- [Reidemeister 비틀림](reidemeister-torsion.md): 사슬복합체의 행렬식이 남기는 단순 호모토피 불변량
+- [s-코보디즘 정리와 고차원 Poincaré 추측](s-cobordism.md): 호모토피만 같은 코보디즘이 원기둥이 되는 조건
+- [수술 이론](surgery-theory.md): 손잡이 교체로 호모토피 핵을 없애고 분류를 장애군으로 적는 이론
+  - [이색 구면](exotic-spheres.md): 위상동형이지만 미분동형이 아닌 매끄러운 구면
+
 ## 호모토피론의 도구
 
-- [단순 집합](simplicial-sets.md): 차수마다 단체의 집합과 면 사상을 적은 자료, 기하적 실현이 CW 복합체를 준다
-- [Kan 복합체](kan-complexes.md): 모든 뿔이 채워지는 단순 집합, 호모토피군을 단체 사상의 호모토피류로 정의한다
-- [분류공간](classifying-spaces.md): 주다발을 사상의 호모토피류로 세고, 특성류가 그 코호몰로지에서 나온다
-- [올화](fibrations.md): 호모토피를 올릴 수 있는 사상, 올과 전체공간과 밑공간의 호모토피군을 잇는 긴 완전열
-- [Hopf 불변량](hopf-invariant.md): 사상뿔의 컵곱이 주는 정수, 값이 $1$ 인 차원이 넷뿐이라는 Adams 의 정리
-- [Steenrod 연산](steenrod-operations.md): 현수를 지나도 남는 코호몰로지 연산, Adem 관계와 Steenrod 대수
-- [Stiefel–Whitney 류](stiefel-whitney-classes.md): 실 벡터다발의 $\mathbb Z/2$ 계수 특성류, 방향가능성과 스핀 구조와 몰입 차원의 판정
-- [Pontryagin 류](pontryagin-classes.md): 실 다발을 복소화해 얻는 정수 계수 특성류, $L$-류와 $\hat A$-류의 입력
-- [곱셈적 종수](multiplicative-genera.md): 멱급수 하나가 정하는 코보디즘 환의 환 준동형, $L$ 과 $\hat A$ 와 Todd 류가 그 예
-- [Thom 공간](thom-space.md): 섬유마다 무한원점을 붙인 공간, 차수를 랭크만큼 올리는 Thom 동형과 Euler 류
-- [코보디즘](cobordism.md): 경계를 공유하는 닫힌 다양체의 동치관계, Pontryagin–Thom 구성과 Thom 의 환 계산
-- [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md): 교차형식의 부호수를 Pontryagin 류의 다항식으로 적는 공식, 지표 정리의 한 경우
-- [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md): 호모토피군이 한 차수에만 있는 공간, 코호몰로지의 표현가능성과 Postnikov 탑
-- [장애 이론](obstruction-theory.md): 사상을 세포 하나씩 늘릴 때 나오는 코호몰로지류가 확장과 단면의 존재를 판정한다
-- [스펙트럼 수열](spectral-sequences.md): 여과에서 나오는 페이지의 열, 올화에서 올과 밑공간의 코호몰로지로 전체공간의 것을 계산한다
-- [Postnikov 탑](postnikov-tower.md): 호모토피군을 차수별로 쌓은 탑, k-불변량이 호모토피군 목록에 없는 정보를 담는다
-## 층과 가역층
+먼저 읽을 갈래: 다양체와 de Rham 이론. 시작 문서: [올화](fibrations.md).
 
-- [층 코호몰로지](sheaf-cohomology.md): 전역 단면 함자의 유도 함자, 국소에서 전역으로 가는 장애
-- [에탈 코호몰로지](etale-cohomology.md): Zariski 열린집합 대신 에탈 사상을 덮개로 쓴 층 코호몰로지, Frobenius 자취 공식과 Weil 추측
-- [Picard 군](picard-group.md): 가역층의 동형류가 이루는 군, 지수열이 가르는 위상적 조각과 정칙 조각
+- [올화](fibrations.md): 호모토피를 올릴 수 있는 사상, 올과 밑공간과 전체공간을 잇는 긴 완전열
+  - [Hopf 불변량](hopf-invariant.md): 차원이 다른 구면 사이의 사상에 붙는 정수
+  - [스펙트럼 수열](spectral-sequences.md): 페이지를 차례로 고쳐 가며 코호몰로지를 계산하는 도구
+- [단순 집합](simplicial-sets.md): 차수마다 단체의 집합과 면 사상을 적은 조합적 자료
+  - [Kan 복합체](kan-complexes.md): 모든 뿔이 채워지는 단순 집합, 호모토피를 자료 안에서 끝낸다
+- [Steenrod 연산](steenrod-operations.md): 현수를 지나도 남는 코호몰로지 연산, Adem 관계
+- [분류공간](classifying-spaces.md): 다발을 세는 문제를 사상의 호모토피류를 세는 문제로 바꾸는 공간
+- [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md): 호모토피군이 한 차수에만 있는 공간, 코호몰로지의 표현가능성
+- [장애 이론](obstruction-theory.md): 사상을 차원마다 늘릴 때 나오는 류가 확장과 단면의 존재를 판정한다
+  - [Postnikov 탑](postnikov-tower.md): 높은 차수의 호모토피군을 차례로 지워 얻는 공간의 열
 
-## 다양체와 기하
+## 특성류와 코보디즘
 
-- [다양체](manifolds.md) → [미분형식](differential-forms.md)
-- [Gauss–Bonnet 정리](gauss-bonnet.md) → [Poincaré–Hopf 정리](poincare-hopf.md): 곡률과 위상의 첫 만남
-- [Riemann 곡면](riemann-surfaces.md) → [Teichmüller 공간](teichmuller-space.md)
-- [사상류군](mapping-class-group.md): 곡면의 미분동형을 동위로 나눈 군. Dehn 비틀림 생성원, Dehn–Nielsen–Baer 정리, Nielsen–Thurston 분류
-- [Fredholm 작용소](fredholm-operators.md): 지표 정리의 해석 쪽
+먼저 읽을 갈래: 호모토피론의 도구. 시작 문서: [Stiefel–Whitney 류](stiefel-whitney-classes.md).
 
-## 3 차원과 매듭
+- [Stiefel–Whitney 류](stiefel-whitney-classes.md): 실 벡터다발에 붙는 계수 2 의 특성류, 방향가능성과 스핀 구조의 판정
+- [Pontryagin 류](pontryagin-classes.md): 다발을 복소화해 얻는 정수 계수 특성류
+- [Thom 공간](thom-space.md): 섬유마다 무한원점을 붙인 공간, 차수를 랭크만큼 올리는 동형
+- [코보디즘](cobordism.md): 분리합이 어떤 콤팩트 다양체의 경계가 되는 동치관계
+- [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md): 부호수를 특성류의 다항식으로 적는 공식
+- [곱셈적 종수](multiplicative-genera.md): 멱급수 하나가 정하는 코보디즘 환의 환 준동형
 
-- [매듭 불변량](knot-invariants.md) → [땋임군](braid-groups.md), [Khovanov 호몰로지](khovanov-homology.md), [Dehn 수술](dehn-surgery.md) → [렌즈 공간](lens-spaces.md)
-- [쌍곡 3 다양체](hyperbolic-3-manifolds.md) → [기하화 정리](geometrization.md)
-- [Lobachevsky 함수](lobachevsky-function.md) → [볼륨 추측](volume-conjecture.md): 양자 불변량이 쌍곡 부피를 본다
-- [Casson 불변량](casson-invariant.md) → [순간자 Floer 호몰로지](instanton-floer-homology.md) → [Heegaard Floer 호몰로지](heegaard-floer-homology.md)
+## 층 코호몰로지
 
-## 양자 위상
+먼저 읽을 갈래: 호몰로지와 코호몰로지. 먼저 읽을 것: [층](sheaves.md)(범주론 개관). 시작 문서: [층 코호몰로지](sheaf-cohomology.md).
 
-- [Chern–Simons 이론](chern-simons.md) → [Wess–Zumino–Witten 모형](wess-zumino-witten.md), [Witten 점근 추측](witten-asymptotics.md)
-- [모듈러 텐서범주](modular-tensor-categories.md) → [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md), [애니온](anyons.md)
+- [층 코호몰로지](sheaf-cohomology.md): 전역 단면 함자의 유도 함자, 국소에서 전역으로 가는 장애를 잰다
+  - [에탈 코호몰로지](etale-cohomology.md): 에탈 사상을 덮개로 쓴 판본, 유한체 위 다양체의 점을 센다
+  - [Picard 군](picard-group.md): 가역층의 동형류가 텐서곱으로 이루는 군
+
+## 곡면과 3 다양체
+
+먼저 읽을 갈래: 호몰로지와 코호몰로지. 시작 문서: [곡면의 분류](classification-of-surfaces.md).
+
+- [곡면의 분류](classification-of-surfaces.md): 닫힌 곡면이 가향성과 종수 둘로 결정된다는 정리
+  - [사상류군](mapping-class-group.md): 곡면의 미분동형을 동위로 나눈 군, Dehn 비틀림 생성원
+- [Riemann 곡면](riemann-surfaces.md): 다가 함수를 한 값으로 만드는 복소 1 차원 다양체
+  - [Teichmüller 공간](teichmuller-space.md): 같은 곡면 위 복소구조의 모듈라이
+- [매듭 불변량](knot-invariants.md): 도식 조작에 변하지 않는 양, 매듭군과 Jones 다항식
+  - [땋임군](braid-groups.md): 가닥을 꼬는 조작이 이루는 유한표시군
+  - [Khovanov 호몰로지](khovanov-homology.md): 상태합을 사슬복합체로 올려 얻는 매듭 불변량
+- [Dehn 수술](dehn-surgery.md): 매듭 근방을 떼고 다시 붙여 새 3 다양체를 얻는 조작
+  - [렌즈 공간](lens-spaces.md): 3 구면을 순환군의 자유 작용으로 나눈 몫
+- [Lobachevsky 함수](lobachevsky-function.md): 쌍곡 사면체의 부피를 적는 함수
+- [쌍곡 3 다양체](hyperbolic-3-manifolds.md): 곡률이 음으로 일정한 계량을 갖는 3 다양체, 계량의 유일성
+  - [기하화 정리](geometrization.md): 닫힌 3 다양체가 여덟 기하 조각으로 분해된다는 정리
+  - [볼륨 추측](volume-conjecture.md): 양자 불변량의 점근이 쌍곡 부피를 준다는 추측
+
+## 양자 위상과 게이지 이론
+
+먼저 읽을 갈래: 곡면과 3 다양체. 시작 문서: [Chern–Simons 이론](chern-simons.md).
+
+- [Chern–Simons 이론](chern-simons.md): 계량 없이 정의되는 3 차원 접속의 범함수
+  - [Wess–Zumino–Witten 모형](wess-zumino-witten.md): 경계에 나타나는 2 차원 등각장론
+- [모듈러 텐서범주](modular-tensor-categories.md): 융합 구조와 모듈러 변환을 갖춘 텐서범주
+- [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md): 범주 하나에서 3 다양체와 매듭의 불변량을 만드는 구성
+  - [애니온](anyons.md): 교환 통계가 땋임군의 표현으로 주어지는 2 차원 준입자
+  - [Witten 점근 추측과 Ohtsuki 급수](witten-asymptotics.md): 레벨이 커질 때 불변량의 점근 전개
+- [Casson 불변량](casson-invariant.md): 호몰로지 3 구면의 표현을 부호와 함께 센 정수
+- [순간자 Floer 호몰로지](instanton-floer-homology.md): 평탄 접속을 임계점으로 보아 얻는 호몰로지
+  - [Heegaard Floer 호몰로지](heegaard-floer-homology.md): Heegaard 분해의 대칭곱에서 만드는 3 다양체 불변량
 
 # 연관 문서
 
