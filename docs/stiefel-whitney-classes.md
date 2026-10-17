@@ -2,7 +2,7 @@
 
 # 개요
 
-Stiefel–Whitney 류는 실 [벡터다발](vector-bundles.md)에 붙는 $\mathbb Z/2$ 계수 코호몰로지류다. 밑공간 $X$ 위의 다발 $E$ 마다 $w_i(E)\in H^i(X;\mathbb Z/2)$ 가 있고 자명한 다발에서는 $i\ge 1$ 인 것이 모두 소멸한다.
+**Stiefel–Whitney 류(Stiefel–Whitney class)** 는 실 [벡터다발](vector-bundles.md)에 붙는 $\mathbb Z/2$ 계수 코호몰로지류다. 밑공간 $X$ 위의 다발 $E$ 마다 $w_i(E)\in H^i(X;\mathbb Z/2)$ 가 있고 자명한 다발에서는 $i\ge 1$ 인 것이 모두 소멸한다.
 
 [특성류](characteristic-classes.md) 가운데 Chern 류와 [Pontryagin 류](pontryagin-classes.md)가 복소 구조나 실수 계수를 요구하는 자리에서, 이 류는 아무 실 다발에나 있다. 접다발에 적용하면 $w_1$ 이 방향가능성을, $w_2$ 가 스핀 구조의 존재를, 전체 류의 역이 몰입에 필요한 차원의 하한을 판정한다.
 
