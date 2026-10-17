@@ -2,7 +2,7 @@
 
 # 개요
 
-Lagrangian 부분다양체는 심플렉틱 형식이 소멸하는 최대 차원의 부분다양체다. [심플렉틱 다양체](symplectic-manifolds.md) $(M,\omega)$ 의 차원이 $2n$ 이면 그런 부분다양체의 차원은 $n$ 이다.
+**Lagrangian 부분다양체(Lagrangian submanifold)** 는 심플렉틱 형식이 소멸하는 최대 차원의 부분다양체다. [심플렉틱 다양체](symplectic-manifolds.md) $(M,\omega)$ 의 차원이 $2n$ 이면 그런 부분다양체의 차원은 $n$ 이다.
 
 심플렉틱 다양체 사이의 사상, 보존량의 공통 준위집합, 정준변환을 만드는 생성함수가 모두 Lagrangian 부분다양체 하나로 적힌다. Weinstein 근방 정리는 Lagrangian 의 근방을 [여접다발](cotangent-bundle.md)의 영단면 근방으로 고정한다.
 

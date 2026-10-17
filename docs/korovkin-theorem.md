@@ -2,7 +2,7 @@
 
 # 개요
 
-Korovkin 정리(Korovkin's theorem)는 양선형작용소 열이 연속함수 전체에서 균등수렴하는지를 세 함수에서의 수렴만으로 판정한다. $C\lbrack 0,1\rbrack$ 에서 그 세 함수는 $1$ , $t$ , $t^2$ 이다.
+**Korovkin 정리(Korovkin's theorem)** 는 양선형작용소 열이 연속함수 전체에서 균등수렴하는지를 세 함수에서의 수렴만으로 판정한다. $C\lbrack 0,1\rbrack$ 에서 그 세 함수는 $1$ , $t$ , $t^2$ 이다.
 
 [Stone–Weierstrass 정리](stone-weierstrass.md)는 근사하는 함수족이 어떤 대수적 조건을 만족할 때 조밀한지를 말하고, Korovkin 정리는 주어진 근사 작용소 열이 수렴하는지를 말한다. Bernstein 다항식의 균등수렴이 이 정리의 특수한 경우다.
 
@@ -68,7 +68,7 @@ $B_nf(x)$ 는 성공확률 $x$ 인 시행 $n$ 회의 성공 비율에 $f$ 를 �
 
 **정리.** $\vert f(t)-f(s)\vert\le M\vert t-s\vert$ 이면 $\Vert B_nf-f\Vert\le M/(2\sqrt n)$ 이다.
 
-$\vert B_nf(x)-f(x)\vert\le B_n(\vert t-x\vert)(x)$ 이고, 양작용소의 Cauchy–Schwarz 부등식에서 $B_n(\vert t-x\vert)(x)\le(B_n\varphi_x(x))^{1/2}=(x(1-x)/n)^{1/2}$ 이다. $x(1-x)\le 1/4$ 이므로 상계가 $M/(2\sqrt n)$ 이다. ∎
+$\vert B_nf(x)-f(x)\vert\le B_n(\vert t-x\vert)(x)$ 이고, 양작용소의 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)에서 $B_n(\vert t-x\vert)(x)\le(B_n\varphi_x(x))^{1/2}=(x(1-x)/n)^{1/2}$ 이다. $x(1-x)\le 1/4$ 이므로 상계가 $M/(2\sqrt n)$ 이다. ∎
 
 ## 검정함수 셋의 필요성
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-큰 기수는 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)가 존재를 증명하지 못하는 크기의 [기수](cardinality.md)다. 도달 불가능 기수, 측도 가능 기수처럼 여러 종류가 있고, 각각을 존재한다고 가정한 것이 큰 기수 공리다.
+**큰 기수(large cardinal)** 는 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)가 존재를 증명하지 못하는 크기의 [기수](cardinality.md)다. 도달 불가능 기수, 측도 가능 기수처럼 여러 종류가 있고, 각각을 존재한다고 가정한 것이 큰 기수 공리다.
 
 이 공리들은 세기가 다르고, 센 것을 가정하면 약한 것의 존재가 따라 나온다. 집합론은 이 줄을 명제의 세기를 재는 눈금으로 쓴다.
 
