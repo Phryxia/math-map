@@ -2,7 +2,7 @@
 
 # 개요
 
-Mandelbrot 집합은 $f_c(z)=z^2+c$ 의 임계점 궤도가 유계인 매개변수 $c$ 전체다. 매개변수 하나마다 [Julia 집합](julia-set.md)이 하나 있고, 그 Julia 집합이 연결인지 흩어지는지가 이 집합에 속하는지로 갈린다.
+**Mandelbrot 집합(Mandelbrot set)** 은 $f_c(z)=z^2+c$ 의 임계점 궤도가 유계인 매개변수 $c$ 전체다. 매개변수 하나마다 [Julia 집합](julia-set.md)이 하나 있고, 그 Julia 집합이 연결인지 흩어지는지가 이 집합에 속하는지로 갈린다.
 
 내부의 성분 가운데 유인 주기를 갖는 것을 쌍곡 성분이라 하고, 성분마다 그 주기와 [Fatou 성분](fatou-components.md)의 구조가 정해진다.
 

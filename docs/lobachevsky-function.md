@@ -2,7 +2,7 @@
 
 # 개요
 
-Lobachevsky 함수(Lobachevsky function)는 쌍곡 3 차원 공간의 사면체 부피를 적는 함수다. 그 부피는 초등함수로 쓰이지 않고, Euclid 공간의 밑면 곱하기 높이에 해당하는 자리를 이 함수가 대신한다.
+**Lobachevsky 함수(Lobachevsky function)** 는 쌍곡 3 차원 공간의 사면체 부피를 적는 함수다. 그 부피는 초등함수로 쓰이지 않고, Euclid 공간의 밑면 곱하기 높이에 해당하는 자리를 이 함수가 대신한다.
 
 $$
 \Lambda(\theta)=-\int_0^\theta\log\big|2\sin t\big|\thinspace dt
