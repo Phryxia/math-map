@@ -123,7 +123,7 @@ $$
 
 ## Jensen 부등식
 
-$\varphi$ 가 볼록함수이고 $X$ 와 $\varphi(X)$ 가 적분 가능하면 다음이 성립한다. 증명의 요지는 지지 직선이다. [볼록함수](convexity.md)는 각 점에서 지지 직선을 가지므로 $\mathbb E X$ 에서 $\varphi(t)\ge\varphi(\mathbb E X)+c(t-\mathbb E X)$ 를 잡고, $t=X$ 를 대입한 뒤 양변에 기댓값을 취한다.
+$\varphi$ 가 볼록함수이고 $X$ 와 $\varphi(X)$ 가 적분 가능하면 다음 [Jensen 부등식](jensen-inequality.md)이 성립한다. 증명의 요지는 지지 직선이다. [볼록함수](convexity.md)는 각 점에서 지지 직선을 가지므로 $\mathbb E X$ 에서 $\varphi(t)\ge\varphi(\mathbb E X)+c(t-\mathbb E X)$ 를 잡고, $t=X$ 를 대입한 뒤 양변에 기댓값을 취한다.
 
 $$
 \varphi\big(\mathbb E[X]\big)\le\mathbb E\big[\varphi(X)\big]
