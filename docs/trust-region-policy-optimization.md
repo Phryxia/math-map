@@ -2,7 +2,7 @@
 
 # 개요
 
-신뢰영역 정책 최적화(trust region policy optimization, TRPO)는 정책의 갱신 보폭을 파라미터 거리가 아니라 정책 분포 사이의 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 재는 제약 최적화다.
+**신뢰영역 정책 최적화(trust region policy optimization, TRPO)** 는 정책의 갱신 보폭을 파라미터 거리가 아니라 정책 분포 사이의 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 재는 제약 최적화다.
 
 $$\max_{\theta'}\thinspace L_\theta(\theta')\quad \text{subject to}\quad \bar D_{\mathrm{KL}}(\theta,\theta')\le\delta$$
 

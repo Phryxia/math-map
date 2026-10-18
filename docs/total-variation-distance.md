@@ -2,7 +2,7 @@
 
 # 개요
 
-전변동거리(total variation distance)는 두 확률측도가 같은 사건에 주는 확률의 차 가운데 가장 큰 것이다.
+**전변동거리(total variation distance)** 는 두 확률측도가 같은 사건에 주는 확률의 차 가운데 가장 큰 것이다.
 
 $$
 d_{\mathrm{TV}}(\mu,\nu)=\sup_{A\in\mathcal B}\vert\mu(A)-\nu(A)\vert

@@ -2,7 +2,7 @@
 
 # 개요
 
-Tychonoff 정리는 [콤팩트](compactness.md) 공간들의 임의의 곱이 곱위상에서 콤팩트하다는 정리다. 좌표의 개수에 제한이 없어 비가산 개의 좌표를 가진 함수공간에도 적용된다.
+**Tychonoff 정리(Tychonoff's theorem)** 는 [콤팩트](compactness.md) 공간들의 임의의 곱이 곱위상에서 콤팩트하다는 정리다. 좌표의 개수에 제한이 없어 비가산 개의 좌표를 가진 함수공간에도 적용된다.
 
 ZF(선택공리를 뺀 Zermelo–Fraenkel) 안에서 이 정리는 [선택공리](axiom-of-choice.md)와 동치다. 콤팩트 Hausdorff 공간의 곱으로 제한한 판본은 그보다 약한 초필터 보조정리와 동치다.
 
