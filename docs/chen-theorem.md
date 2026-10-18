@@ -36,7 +36,7 @@ $$
 
 ## Chen 정리
 
-충분히 큰 모든 짝수 $N$ 에 대해 $D(N)\gt 0$ 이고, 더 정확히 다음이 성립한다[^1].
+**Chen 정리(Chen's theorem)** 는 충분히 큰 모든 짝수 $N$ 에 대해 $D(N)\gt 0$ 이라는 진술이다. 더 정확히 다음이 성립한다[^1].
 
 $$
 D(N)\gg\frac{N}{(\log N)^2}\prod\_{p\mid N,\thinspace p\gt 2}\frac{p-1}{p-2}

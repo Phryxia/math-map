@@ -2,7 +2,7 @@
 
 # 개요
 
-간선이 많은 [그래프](graphs.md)에서 Laplacian 계산은 간선 수에 비례해 비싸진다. 그래프를 간선이 적은 다른 그래프로 바꾸되 계산 결과가 거의 같게 만드는 것이 희소화이고, 남는 문제는 "거의 같다" 의 기준이다.
+간선이 많은 [그래프](graphs.md)에서 Laplacian 계산은 간선 수에 비례해 비싸진다. 그래프를 간선이 적은 다른 그래프로 바꾸되 계산 결과가 거의 같게 만드는 것이 **스펙트럼 희소화(spectral sparsification)** 이고, 남는 문제는 "거의 같다" 의 기준이다.
 
 Spielman 과 Srivastava 는 모든 정점값 배정에 대해 Laplacian 이차형식이 $1 \pm \epsilon$ 배 안에 들어야 한다는 기준을 택한다. 질의 하나가 아니라 무한히 많은 질의를 동시에 보존하는 요구인데도 정점 수의 로그배 개수의 간선이면 충분하다는 것이 이 논문의 결과다.
 
@@ -20,7 +20,7 @@ Foster 정리는 연결 그래프에서 $\sum_{e\in E}w_eR_e=n-1$ 이라고 한�
 
 $G$ 를 정점 $n$ 개의 연결 가중 무향 그래프, $L_G$ 를 그 Laplacian 이라 한다. $H$ 는 같은 정점 집합 위에서 $G$ 의 간선 일부에 새 가중치를 준 그래프이고, 오차 허용량은 $0 \lt\epsilon \lt 1$ 이다.
 
-$H$ 가 $G$ 의 spectral sparsifier 라는 것은 모든 실수 벡터 $x$ 에 대해
+$H$ 가 $G$ 의 **spectral sparsifier** 라는 것은 모든 실수 벡터 $x$ 에 대해
 
 $$
 (1-\varepsilon)\thinspace x^{\mathsf T}L_Gx\ \le\ x^{\mathsf T}L_Hx\ \le\ (1+\varepsilon)\thinspace x^{\mathsf T}L_Gx
