@@ -2,7 +2,7 @@
 
 # 개요
 
-Chebyshev 추정은 $x$ 이하 소수의 개수 $\pi(x)$ 가 $x/\log x$ 의 두 상수배 사이에 놓인다는 부등식이다. [소수 정리](prime-number-theorem.md)와 달리 복소해석을 쓰지 않고 이항계수의 소인수를 세는 것으로 증명되며, 상수를 꼼꼼히 잡으면 Bertrand 가설이 따라 나온다.
+**Chebyshev 추정(Chebyshev's bounds)** 은 $x$ 이하 소수의 개수 $\pi(x)$ 가 $x/\log x$ 의 두 상수배 사이에 놓인다는 부등식이다. [소수 정리](prime-number-theorem.md)와 달리 복소해석을 쓰지 않고 이항계수의 소인수를 세는 것으로 증명되며, 상수를 꼼꼼히 잡으면 Bertrand 가설이 따라 나온다.
 
 # 직관
 

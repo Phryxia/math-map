@@ -2,7 +2,7 @@
 
 # 개요
 
-Chebyshev 다항식(Chebyshev polynomials)은 $T_n(\cos\theta)=\cos n\theta$ 를 만족하는 차수 $n$ 의 다항식이다. 구간 $\lbrack-1,1\rbrack$ 에서 최고차 계수가 $1$ 인 차수 $n$ 다항식 가운데 균등노름이 가장 작은 것이 $2^{1-n}T_n$ 이다.
+**Chebyshev 다항식(Chebyshev polynomials)** 은 $T_n(\cos\theta)=\cos n\theta$ 를 만족하는 차수 $n$ 의 다항식이다. 구간 $\lbrack-1,1\rbrack$ 에서 최고차 계수가 $1$ 인 차수 $n$ 다항식 가운데 균등노름이 가장 작은 것이 $2^{1-n}T_n$ 이다.
 
 [Stone–Weierstrass 정리](stone-weierstrass.md)는 다항식으로 연속함수를 균등근사할 수 있다는 것을 주고 차수마다의 오차는 말하지 않는다. Chebyshev 다항식은 차수를 고정했을 때의 최선을 준다.
 

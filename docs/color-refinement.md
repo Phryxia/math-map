@@ -2,7 +2,7 @@
 
 # 개요
 
-Color refinement 는 각 정점에 색을 붙이고 이웃 색의 중복집합(multiset)으로 색을 쪼개는 일을 더 쪼개지지 않을 때까지 반복하는 절차다. 1-dimensional Weisfeiler–Leman refinement, 줄여서 1-WL 이라고도 한다.
+**Color refinement** 는 각 정점에 색을 붙이고 이웃 색의 중복집합(multiset)으로 색을 쪼개는 일을 더 쪼개지지 않을 때까지 반복하는 절차다. 1-dimensional Weisfeiler–Leman refinement, 줄여서 1-WL 이라고도 한다.
 
 [그래프 동형](graph-isomorphism.md) 판정은 정점 이름표를 지운 뒤 두 그래프가 같은지 묻는 문제이고, 모든 대응을 시도하면 정점 수의 계승만큼 경우가 생긴다. Color refinement 는 국소 정보만으로 정점을 구분해 대응 후보를 줄인다. 이웃의 이웃까지 정보가 번지므로 몇 번의 반복으로 먼 구조가 색에 반영된다.
 
