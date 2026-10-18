@@ -4,7 +4,7 @@
 
 [비교차 분할](noncrossing-partitions.md)로 적률을 전개하면 확률변수의 독립을 대신하는 조건이 나온다. 그 조건을 만족하는 변수들의 합은 보통의 합성곱이 아닌 다른 법칙을 따른다.
 
-자유확률은 곱이 교환하지 않는 변수에 그 조건을 둔 확률론이다. [중심극한정리](central-limit-theorem.md)의 자리에 [Wigner 반원법칙](wigner-semicircle.md)이 오고, 큰 무작위 행렬의 고윳값 분포가 이 이론의 계산으로 나온다.
+**자유확률(free probability)** 은 곱이 교환하지 않는 변수에 그 조건을 둔 확률론이다. [중심극한정리](central-limit-theorem.md)의 자리에 [Wigner 반원법칙](wigner-semicircle.md)이 오고, 큰 무작위 행렬의 고윳값 분포가 이 이론의 계산으로 나온다.
 
 # 직관
 
@@ -18,11 +18,11 @@ $A$ 와 $B$ 의 고유벡터가 서로 무작위한 방향을 향하면 그 항�
 
 ## 비교환 확률공간
 
-단위원을 갖는 대수 $\mathcal A$ 와 선형함수 $\tau:\mathcal A\to\mathbb C$ 가 $\tau(1)=1$ 을 만족하는 쌍 $(\mathcal A,\tau)$ 를 **비교환 확률공간**이라 한다. $\mathcal A$ 의 원소를 확률변수라 부르고 $\tau(a^n)$ 을 적률이라 한다. $\mathcal A$ 가 교환하는 함수들의 대수이고 $\tau$ 가 적분이면 보통의 확률공간이다.
+단위원을 갖는 대수 $\mathcal A$ 와 선형함수 $\tau:\mathcal A\to\mathbb C$ 가 $\tau(1)=1$ 을 만족하는 쌍 $(\mathcal A,\tau)$ 를 **비교환 확률공간(non-commutative probability space)** 이라 한다. $\mathcal A$ 의 원소를 확률변수라 부르고 $\tau(a^n)$ 을 적률이라 한다. $\mathcal A$ 가 교환하는 함수들의 대수이고 $\tau$ 가 적분이면 보통의 확률공간이다.
 
 ## 자유독립
 
-부분대수 $\mathcal A_1,\mathcal A_2\subset\mathcal A$ 가 **자유독립**이라는 것은, 번갈아 고른 원소들의 중심화된 곱의 $\tau$ 값이 $0$ 이라는 뜻이다. $a_1,\dots,a_k$ 가 번갈아 두 부분대수에서 오고 각각 $\tau(a_i)=0$ 이면 다음이 성립한다.
+부분대수 $\mathcal A_1,\mathcal A_2\subset\mathcal A$ 가 **자유독립(free independence)** 이라는 것은, 번갈아 고른 원소들의 중심화된 곱의 $\tau$ 값이 $0$ 이라는 뜻이다. $a_1,\dots,a_k$ 가 번갈아 두 부분대수에서 오고 각각 $\tau(a_i)=0$ 이면 다음이 성립한다.
 
 $$
 \tau(a_1a_2\cdots a_k)=0

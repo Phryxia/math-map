@@ -22,7 +22,7 @@ $$
 \rho : G \to \mathrm{GL}(V)
 $$
 
-의 쌍이 $G$ 의 **표현**이다. $\dim V$ 가 표현의 차수다. 아래에서 $G$ 는 유한군, $k=\mathbb C$ 로 둔다.
+의 쌍이 $G$ 의 **표현(group representation)** 이다. $\dim V$ 가 표현의 차수다. 아래에서 $G$ 는 유한군, $k=\mathbb C$ 로 둔다.
 
 동치인 서술은 $V$ 가 군환 $k[G]$ 위의 [가군](modules.md)이라는 것이다. 표현론의 정리들은 군환 위 가군론의 정리로 번역된다.
 
@@ -186,7 +186,7 @@ $$
 f(g) = \sum_{\chi} \hat{f}(\chi)\thinspace \chi(g), \qquad \hat{f}(\chi) = \frac{1}{|G|}\sum_{g} f(g) \overline{\chi(g)}
 $$
 
-로 전개된다. $G=\mathbb Z/n$ 이면 지표가 $\chi_k(j) = e^{2\pi i jk/n}$ 이고 위 식이 [이산 Fourier 변환](fourier.md)이다. 비아벨군으로 확장하면 행렬 값을 갖는 Fourier 변환이 된다.[^1]
+로 전개된다. $G=\mathbb Z/n$ 이면 지표가 $\chi_k(j) = e^{2\pi i jk/n}$ 이고 위 식이 [이산 Fourier 변환](fourier.md)이다. 비아벨군으로 확장하면 행렬 값을 갖는 [Fourier 변환](fourier-transform.md)이 된다.[^1]
 
 ## 군의 구조 판정
 

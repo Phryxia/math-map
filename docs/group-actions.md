@@ -14,7 +14,7 @@
 
 ## 작용
 
-$G$ 를 군, $e$ 를 항등원, $X$ 를 집합이라 하자. 대응 $G \times X \to X$ , $(g, x) \mapsto g \cdot x$ 가 다음을 만족하면 $G$ 가 $X$ 에 왼쪽으로 작용한다고 한다.
+$G$ 를 군, $e$ 를 항등원, $X$ 를 집합이라 하자. 대응 $G \times X \to X$ , $(g, x) \mapsto g \cdot x$ 가 다음을 만족하면 이 대응을 $G$ 의 $X$ 위 왼쪽 **군 작용(group action)** 이라 한다.
 
 $$
 e\cdot x=x,\qquad(gh)\cdot x=g\cdot(h\cdot x)
