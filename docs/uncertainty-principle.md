@@ -2,7 +2,7 @@
 
 # 개요
 
-불확정성 원리는 함수와 그 [Fourier 변환](fourier-transform.md)이 동시에 한 점 주위로 모일 수 없다는 부등식이다. 두 함수의 퍼짐을 분산으로 재면 그 곱이 아래로 유계이고, 하한은 Gauss 함수에서만 등호가 된다.
+**불확정성 원리(uncertainty principle)** 는 함수와 그 [Fourier 변환](fourier-transform.md)이 동시에 한 점 주위로 모일 수 없다는 부등식이다. 두 함수의 퍼짐을 분산으로 재면 그 곱이 아래로 유계이고, 하한은 Gauss 함수에서만 등호가 된다.
 
 # 직관
 
@@ -10,7 +10,7 @@ Fourier 변환의 늘림 성질은 $f(ax)$ 의 변환이 $\hat f(\xi/a)/\vert a\
 
 폭 $\delta$ 의 사각 펄스 $f=\mathbf 1_{\lbrack -\delta,\delta\rbrack}$ 로 해 본다. 변환은 $\hat f(\xi)=\sin(2\pi\delta\xi)/(\pi\xi)$ 이고, 처음 영점이 $\xi=1/(2\delta)$ 에 있으므로 주된 봉우리의 폭이 $1/\delta$ 쯤이다. $\delta$ 를 반으로 줄이면 봉우리가 두 배로 넓어진다. 끝이 꺾이지 않은 Gauss 함수 $e^{-\pi x^2/\delta^2}$ 로 바꿔도 변환이 $\delta e^{-\pi\delta^2\xi^2}$ 라서 폭이 $\delta$ 와 $1/\delta$ 로 갈린다.
 
-폭을 재는 방법을 정하면 이 관찰이 부등식이 된다. $\vert f\vert^2$ 를 질량분포로 보고 그 분산을 $f$ 의 폭으로, $\vert\hat f\vert^2$ 의 분산을 $\hat f$ 의 폭으로 잡는다. 두 분산의 곱에 하한이 있고, 그 하한은 미분을 곱셈으로 바꾸는 성질과 Cauchy–Schwarz 부등식에서 나온다.
+폭을 재는 방법을 정하면 이 관찰이 부등식이 된다. $\vert f\vert^2$ 를 질량분포로 보고 그 분산을 $f$ 의 폭으로, $\vert\hat f\vert^2$ 의 분산을 $\hat f$ 의 폭으로 잡는다. 두 분산의 곱에 하한이 있고, 그 하한은 미분을 곱셈으로 바꾸는 성질과 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)에서 나온다.
 
 # 정의
 

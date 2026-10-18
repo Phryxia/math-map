@@ -2,7 +2,7 @@
 
 # 개요
 
-변분 추론은 사후분포를 계산할 수 있는 분포족 안에서 근사하는 방법이다. 근사의 품질을 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 재면 사후분포의 정규화상수를 모르고도 최소화 문제를 세울 수 있고, 그 문제는 ELBO(evidence lower bound)의 최대화로 적힌다. 분포족을 좌표별 곱으로 잡으면 좌표마다 차례로 푸는 갱신식이 나오고, 완전 조건부가 [지수족](exponential-families.md)이면 그 갱신이 자연모수의 기댓값으로 닫힌 형태가 된다.
+**변분 추론(variational inference)** 은 사후분포를 계산할 수 있는 분포족 안에서 근사하는 방법이다. 근사의 품질을 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 재면 사후분포의 정규화상수를 모르고도 최소화 문제를 세울 수 있고, 그 문제는 ELBO(evidence lower bound)의 최대화로 적힌다. 분포족을 좌표별 곱으로 잡으면 좌표마다 차례로 푸는 갱신식이 나오고, 완전 조건부가 [지수족](exponential-families.md)이면 그 갱신이 자연모수의 기댓값으로 닫힌 형태가 된다.
 
 # 직관
 

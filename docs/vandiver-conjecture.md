@@ -2,7 +2,7 @@
 
 # 개요
 
-Vandiver 추측(Vandiver's conjecture)은 순환체 $\mathbb Q(\mu_p)$ 의 류군의 $p$ 부분에서 짝수 지표 성분이 모두 $0$ 이라는 주장이다.
+**Vandiver 추측(Vandiver's conjecture)** 은 순환체 $\mathbb Q(\mu_p)$ 의 류군의 $p$ 부분에서 짝수 지표 성분이 모두 $0$ 이라는 주장이다.
 
 순환체 $\mathbb Q(\mu_p)$ 의 류군의 $p$ 부분 $A$ 는 지표 성분으로 완전히 쪼개진다.
 

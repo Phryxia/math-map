@@ -2,7 +2,7 @@
 
 # 개요
 
-분산 축소 경사법은 유한합 손실에서 기울기 추정량의 분산을 $0$ 으로 보내 [확률적 경사하강법](stochastic-gradient-descent.md)의 잡음 구간을 없애는 방법이다. 과거에 계산한 항별 기울기를 기억해 현재 표본의 기울기에서 빼 주고, 그만큼을 전체 평균으로 되돌려 추정량의 불편성을 지킨다.
+**분산 축소 경사법(variance reduced gradient method)** 은 유한합 손실에서 기울기 추정량의 분산을 $0$ 으로 보내 [확률적 경사하강법](stochastic-gradient-descent.md)의 잡음 구간을 없애는 방법이다. 과거에 계산한 항별 기울기를 기억해 현재 표본의 기울기에서 빼 주고, 그만큼을 전체 평균으로 되돌려 추정량의 불편성을 지킨다.
 
 고정 보폭에서 강볼록 손실의 기하급수적 수렴이 회복된다. 항이 $N$ 개이고 조건수가 $\kappa$ 일 때 정확도 $\varepsilon$ 까지 드는 항별 기울기 계산 횟수가 $O\bigl((N+\kappa)\log(1/\varepsilon)\bigr)$ 이고, 이는 경사하강법의 $O(N\kappa\log(1/\varepsilon))$ 보다 적다. SVRG(stochastic variance reduced gradient)와 SAGA 가 대표적인 두 형태다.
 
