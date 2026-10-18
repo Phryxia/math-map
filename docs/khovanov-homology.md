@@ -60,6 +60,8 @@ $$
 Kh^{i,j}(D)=H^i\big(C^{\bullet,j}(D)\big)
 $$
 
+이 이중 등급 호몰로지가 **Khovanov 호몰로지(Khovanov homology)** 다.
+
 **정리(Khovanov).** $Kh^{i,j}$ 는 Reidemeister 이동에서 변하지 않는다. 따라서 매듭 불변량이다.
 
 $n_+,n_-$ 로 준 이동은 Jones 다항식의 비틀림수 보정과 같은 일을 해서 R1 에서 생기는 어긋남을 상쇄한다.
