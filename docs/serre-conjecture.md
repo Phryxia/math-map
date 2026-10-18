@@ -60,6 +60,8 @@ $\rho_{f,\lambda}$ 는 [모듈러 곡선](modular-curves.md)의 [코호몰로지
 
 ## 추측의 두 형태
 
+**Serre 추측(Serre's conjecture)** 은 두 형태로 진술된다.
+
 **약한 형태.** 연속, 기약, 홀수인 $\bar\rho$ 는 모듈러다.
 
 **강한 형태.** 그런 $\bar\rho$ 는 무게 $k(\bar\rho)$ 와 레벨 $N(\bar\rho)$ 에서 모듈러다. 두 값은 다음으로 정한다.

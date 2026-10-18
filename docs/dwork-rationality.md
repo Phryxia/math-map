@@ -117,7 +117,7 @@ $$
 
 ## Dwork 의 정리
 
-> **정리 (Dwork, 1960).**
+> **Dwork 의 유리성 정리(Dwork's rationality theorem, 1960).**
 > $\mathbb F_q$ 위의 모든 유한형 스킴 $X$ 에 대해 $Z(X/\mathbb F_q,T)$ 는 $\mathbb Q(T)$ 의 원소다.
 
 증명의 요지는 네 단계다.
