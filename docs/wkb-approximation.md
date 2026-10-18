@@ -2,7 +2,7 @@
 
 # 개요
 
-WKB 근사(Wentzel–Kramers–Brillouin approximation)는 해를 지수부에서 전개해 특이 섭동 미분방정식을 푸는 방법이다. 최고계 도함수 앞에 작은 매개변수가 붙은 미분방정식
+**WKB 근사(Wentzel–Kramers–Brillouin approximation)** 는 해를 지수부에서 전개해 특이 섭동 미분방정식을 푸는 방법이다. 최고계 도함수 앞에 작은 매개변수가 붙은 미분방정식
 
 $$
 \epsilon^2 y''(x) = Q(x)\thinspace y(x)
