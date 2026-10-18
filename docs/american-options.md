@@ -54,7 +54,7 @@ $$V(t,b(t))=h(b(t)),\qquad \partial_sV(t,b(t))=h'(b(t))$$
 
 배당이 없고 $r\ge 0$ 이면 미국형 콜의 가격이 같은 조건의 유럽형 콜과 같다[^3]. 즉 $\tau^\ast=T$ 이고 정지 영역이 비어 있다.
 
-증명의 요지. $x\mapsto(x-c)^+$ 가 볼록이고 원점에서 값이 $0$ 이므로 $t\le T$ 와 $r\ge 0$ 에서 $e^{-rt}(S_t-K)^+\le(e^{-rt}S_t-e^{-rT}K)^+$ 가 성립한다. $e^{-rt}S_t$ 가 $\mathbb Q$-martingale 이므로 조건부 Jensen 부등식으로 다음이 나온다.
+증명의 요지. $x\mapsto(x-c)^+$ 가 볼록이고 원점에서 값이 $0$ 이므로 $t\le T$ 와 $r\ge 0$ 에서 $e^{-rt}(S_t-K)^+\le(e^{-rt}S_t-e^{-rT}K)^+$ 가 성립한다. $e^{-rt}S_t$ 가 $\mathbb Q$-martingale 이므로 조건부 [Jensen 부등식](jensen-inequality.md)으로 다음이 나온다.
 
 $$(e^{-r\tau}S_\tau-e^{-rT}K)^+\le\mathbb E^{\mathbb Q}\lbrack (e^{-rT}S_T-e^{-rT}K)^+\mid\mathcal F_\tau\rbrack$$
 

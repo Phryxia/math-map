@@ -34,7 +34,7 @@ $A_0=M_0=0$ 이고 $X_n=X_0+M_n+A_n$ 이다. $A_n$ 은 $\mathcal F_{n-1}$ 가측
 
 ## 예측 가능 2차 변동
 
-martingale $(M_n)$ 에 대해 $(M_n^2)$ 은 조건부 Jensen 부등식으로 submartingale 이다. 그 Doob 분해의 예측 가능 부분을 $\langle M\rangle_n$ 으로 쓰고 **예측 가능 2차 변동**이라 한다.
+martingale $(M_n)$ 에 대해 $(M_n^2)$ 은 조건부 [Jensen 부등식](jensen-inequality.md)으로 submartingale 이다. 그 Doob 분해의 예측 가능 부분을 $\langle M\rangle_n$ 으로 쓰고 **예측 가능 2차 변동**이라 한다.
 
 $$\langle M\rangle_n \thickspace=\thickspace \sum_{k=1}^{n} \mathbb E\lbrack (M_k-M_{k-1})^2\mid\mathcal F_{k-1}\rbrack$$
 

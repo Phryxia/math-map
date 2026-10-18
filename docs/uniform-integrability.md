@@ -96,7 +96,7 @@ $$
 \lbrace \mathbb{E}[Z \mid \mathcal{G}] : \mathcal{G} \subseteq \mathcal{F}\thinspace\text{ 인 부분 }\sigma\text{ 대수} \rbrace
 $$
 
-는 UI 다. Jensen 부등식으로 절단 기댓값을 $Z$ 의 절단 기댓값으로 눌러 얻으며, 조건부 기댓값이 정의하는 martingale 이론의 기본 사실이다.
+는 UI 다. [Jensen 부등식](jensen-inequality.md)으로 절단 기댓값을 $Z$ 의 절단 기댓값으로 눌러 얻으며, 조건부 기댓값이 정의하는 martingale 이론의 기본 사실이다.
 
 - **유한합과 볼록결합**: UI 족 두 개의 합, UI 족의 볼록포(convex hull), UI 족의 $L^1$ 폐포는 모두 UI 다.
 

@@ -42,7 +42,7 @@ $$
 E[X_n] = E[X_0] \quad \text{for all } n.
 $$
 
-$(X_n)$ 이 martingale 이고 $\varphi$ 가 [볼록](convexity.md)함수이며 $E\lvert \varphi(X_n) \rvert \lt\infty$ 이면 조건부 Jensen 부등식으로 $(\varphi(X_n))$ 은 submartingale 이다. $\varphi(x) = \lvert x \rvert$ 나 $\varphi(x) = x^2$ 가 대표적이다.
+$(X_n)$ 이 martingale 이고 $\varphi$ 가 [볼록](convexity.md)함수이며 $E\lvert \varphi(X_n) \rvert \lt\infty$ 이면 조건부 [Jensen 부등식](jensen-inequality.md)으로 $(\varphi(X_n))$ 은 submartingale 이다. $\varphi(x) = \lvert x \rvert$ 나 $\varphi(x) = x^2$ 가 대표적이다.
 
 ## 무작위 걷기, 곱 martingale, Doob martingale
 

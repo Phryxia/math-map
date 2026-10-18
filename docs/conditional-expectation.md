@@ -123,7 +123,7 @@ $B \in \mathcal G$ 인 지시함수 $W = \mathbf 1_B$ 에 대해 확인한 뒤 �
 
 조건 없는 적분의 수렴 정리들은 모두 조건부 버전을 갖는다. $0 \le X_n \uparrow X$ 이면 $E[X_n \mid \mathcal G] \uparrow E[X \mid \mathcal G]$ 이고(조건부 단조수렴), $\lvert X_n \rvert \le Z$ 이고 $X_n \to X$ 이면 $E[X_n \mid \mathcal G] \to E[X \mid \mathcal G]$ 이며([지배 수렴 정리](dominated-convergence.md)의 조건부 버전), $X_n \ge 0$ 이면 $E[\liminf X_n \mid \mathcal G] \le \liminf E[X_n \mid \mathcal G]$ 다(조건부 Fatou).
 
-**조건부 Jensen 부등식.** $\varphi$ 가 [볼록](convexity.md)이고 $X$ 와 $\varphi(X)$ 가 적분 가능하면
+**조건부 [Jensen 부등식](jensen-inequality.md).** $\varphi$ 가 [볼록](convexity.md)이고 $X$ 와 $\varphi(X)$ 가 적분 가능하면
 
 $$
 \varphi\big(E[X \mid \mathcal{G}]\big) \thickspace\le\thickspace E[\varphi(X) \mid \mathcal{G}].

@@ -48,7 +48,7 @@ $$E\_S\lbrack\sup\_{f\in\mathcal F}(E\lbrack f\rbrack-\hat E\_S\lbrack f\rbrack)
 
 여기서 $\hat E\_S\lbrack f\rbrack=\frac1n\sum_{i=1}^n f(x_i)$ 이고 $E\lbrack f\rbrack$ 은 분포 $P$ 에 대한 기댓값이다.
 
-증명의 요지. $E\lbrack f\rbrack$ 을 같은 분포에서 독립으로 뽑은 복제 표본 $S'$ 의 평균의 기댓값으로 바꾸고 Jensen 부등식으로 기댓값을 상한 안으로 넣으면 좌변이 $E\_{S,S'}\lbrack\sup_f(\hat E\_{S'}\lbrack f\rbrack-\hat E\_S\lbrack f\rbrack)\rbrack$ 이하다. 두 표본의 $i$ 번째 점을 맞바꾸어도 결합분포가 같으므로 $i$ 번째 차이에 $\sigma_i$ 를 곱한 것과 분포가 같다. 상한을 두 조각으로 가르면 각각이 $\mathfrak R\_n(\mathcal F)$ 다.
+증명의 요지. $E\lbrack f\rbrack$ 을 같은 분포에서 독립으로 뽑은 복제 표본 $S'$ 의 평균의 기댓값으로 바꾸고 [Jensen 부등식](jensen-inequality.md)으로 기댓값을 상한 안으로 넣으면 좌변이 $E\_{S,S'}\lbrack\sup_f(\hat E\_{S'}\lbrack f\rbrack-\hat E\_S\lbrack f\rbrack)\rbrack$ 이하다. 두 표본의 $i$ 번째 점을 맞바꾸어도 결합분포가 같으므로 $i$ 번째 차이에 $\sigma_i$ 를 곱한 것과 분포가 같다. 상한을 두 조각으로 가르면 각각이 $\mathfrak R\_n(\mathcal F)$ 다.
 
 ## 일반화 경계
 

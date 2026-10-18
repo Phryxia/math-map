@@ -12,7 +12,7 @@ $z\mapsto x$ 를 신경망으로 바꾸면 표현력이 늘지만 주변가능�
 
 # 직관
 
-$\log p(x)$ 를 직접 계산할 수 없으니 임의의 분포 $q(z)$ 를 끼워 넣고 $\log$ 의 오목성에 Jensen 부등식을 쓴다. 이렇게 얻은 하계가 ELBO 이고, 기댓값 안에 로그가 들어가 있으므로 표본으로 추정할 수 있다.
+$\log p(x)$ 를 직접 계산할 수 없으니 임의의 분포 $q(z)$ 를 끼워 넣고 $\log$ 의 오목성에 [Jensen 부등식](jensen-inequality.md)을 쓴다. 이렇게 얻은 하계가 ELBO 이고, 기댓값 안에 로그가 들어가 있으므로 표본으로 추정할 수 있다.
 
 $$
 \log p(x)=\log\int p(x,z)\thinspace dz=\log\mathbb E_{q}\Big[\frac{p(x,z)}{q(z)}\Big]

@@ -68,7 +68,7 @@ $$
 
 **정리.** $D(P\Vert Q) \ge 0$ 이고 등호는 $P = Q$ 일 때에만 성립한다.
 
-*증명.* 로그가 오목함수이므로 Jensen 부등식을 쓴다([볼록성](convexity.md)). $P$ 의 지지집합 위에서
+*증명.* 로그가 오목함수이므로 [Jensen 부등식](jensen-inequality.md)을 쓴다([볼록성](convexity.md)). $P$ 의 지지집합 위에서
 
 $$
 -D(P\thinspace\Vert\thinspace Q) = \mathbb{E}\_{P}\negthinspace\left[\log \frac{q(X)}{p(X)}\right] \le \log \mathbb{E}\_{P}\negthinspace\left[\frac{q(X)}{p(X)}\right] = \log \sum_{x:\thinspace p(x)\gt 0} q(x) \le \log 1 = 0 .
