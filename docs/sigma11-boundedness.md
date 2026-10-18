@@ -2,7 +2,7 @@
 
 # 개요
 
-$\Sigma^1_1$ 경계 정리(Σ¹₁ bounding theorem)는 정렬근거 나무들의 $\Sigma^1_1$ 집합에 속한 나무의 순위가 Church–Kleene 서수 $\omega_1^{\mathrm{CK}}$ 미만의 한 서수에서 유계라는 정리다. 개별 나무의 순위가 모두 $\omega_1^{\mathrm{CK}}$ 미만이라는 것에서 공통 상한이 따라 나오지는 않고, 집합이 $\Sigma^1_1$ 이라는 조건이 그 상한을 준다.
+**Σ¹₁ 경계 정리(Σ¹₁ bounding theorem)** 는 정렬근거 나무들의 $\Sigma^1_1$ 집합에 속한 나무의 순위가 Church–Kleene 서수 $\omega_1^{\mathrm{CK}}$ 미만의 한 서수에서 유계라는 정리다. 개별 나무의 순위가 모두 $\omega_1^{\mathrm{CK}}$ 미만이라는 것에서 공통 상한이 따라 나오지는 않고, 집합이 $\Sigma^1_1$ 이라는 조건이 그 상한을 준다.
 
 정렬근거 조건은 $\Pi^1_1$ 이므로 이 정리가 $\Sigma^1_1$ 과 $\Pi^1_1$ 의 비대칭을 서수의 말로 바꾼다. [초산술적 계층](hyperarithmetical-hierarchy.md)에서 $\Delta^1_1$ 이 초산술적 집합과 같다는 Kleene 정리의 증명이 이 정리를 쓴다.
 
