@@ -2,7 +2,7 @@
 
 # 개요
 
-Whitney 매장 정리는 $n$ 차원 매끄러운 [다양체](manifolds.md)가 $\mathbb R^{2n}$ 에 매장된다는 정리다. 아틀라스로만 정의한 다양체가 유클리드 공간의 부분다양체와 같다는 뜻이다. 콤팩트인 경우의 증명은 좌표 사상 유한 개를 [단위분할](partitions-of-unity.md)로 묶어 한 벡터로 늘어놓는 것이고, 차원을 $2n$ 까지 내리는 단계에는 [Sard 정리](sard-theorem.md)가 들어간다.
+**Whitney 매장 정리(Whitney embedding theorem)** 는 $n$ 차원 매끄러운 [다양체](manifolds.md)가 $\mathbb R^{2n}$ 에 매장된다는 정리다. 아틀라스로만 정의한 다양체가 유클리드 공간의 부분다양체와 같다는 뜻이다. 콤팩트인 경우의 증명은 좌표 사상 유한 개를 [단위분할](partitions-of-unity.md)로 묶어 한 벡터로 늘어놓는 것이고, 차원을 $2n$ 까지 내리는 단계에는 [Sard 정리](sard-theorem.md)가 들어간다.
 
 # 직관
 
