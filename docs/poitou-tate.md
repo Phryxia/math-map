@@ -217,7 +217,7 @@ Euler 계는 상호법칙의 합에서 한 항만 남게 대역류를 설계한�
 
 ## Hasse 원리의 장애
 
-$\text{Ш}^{2}(K,M)\cong \text{Ш}^{1}(K,M^{\ast})^{\vee}$ 는 국소적으로 자명한 2 차 류의 개수를 1 차 쪽 계산으로 옮긴다. 매몰 문제의 국소-대역 원리와 Brauer 군의 Hasse 원리 반례가 이 대응을 쓴다. $M^{\ast}$ 쪽이 다루기 쉬운 경우가 많아 장애의 존재가 유한 계산으로 바뀐다.
+$\text{Ш}^{2}(K,M)\cong \text{Ш}^{1}(K,M^{\ast})^{\vee}$ 는 국소적으로 자명한 2 차 류의 개수를 1 차 쪽 계산으로 옮긴다. 매몰 문제의 국소-대역 원리와 Brauer 군의 [Hasse 원리](hasse-principle.md) 반례가 이 대응을 쓴다. $M^{\ast}$ 쪽이 다루기 쉬운 경우가 많아 장애의 존재가 유한 계산으로 바뀐다.
 
 [^1]: 표준 참고는 J. Neukirch, A. Schmidt, K. Wingberg, *Cohomology of Number Fields* (2판, Springer 2008) 8 장, 그리고 J. S. Milne, *Arithmetic Duality Theorems* (2판, 2006) I 장. Greenberg–Wiles 공식은 A. Wiles, *Modular elliptic curves and Fermat's Last Theorem*, Ann. of Math. **141** (1995) 의 명제 1.6 과 R. Greenberg 의 Iwasawa 이론 강의록에 있다. 읽기 쉬운 입문으로 B. Mazur, K. Rubin, *Kolyvagin Systems* (Memoirs AMS 168, 2004) 2 장을 권한다.
 

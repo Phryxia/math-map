@@ -8,9 +8,9 @@ $$
 0\longrightarrow\mathrm{Br}(K)\longrightarrow\bigoplus_v\mathrm{Br}(K_v)\xrightarrow{\ \sum\mathrm{inv}\_v\ }\mathbb Q/\mathbb Z\longrightarrow0
 $$
 
-가운데 사상이 [아델](adeles.md)적이다. 각 자리의 불변량을 모두 더하면 $0$ 이라는 이 완전열이 유체론의 압축된 형태이고, Hasse 원리가 언제 성립하고 언제 깨지는지를 재는 자다.
+가운데 사상이 [아델](adeles.md)적이다. 각 자리의 불변량을 모두 더하면 $0$ 이라는 이 완전열이 유체론의 압축된 형태이고, [Hasse 원리](hasse-principle.md)가 언제 성립하고 언제 깨지는지를 재는 자다.
 
-**Hasse 원리**는 국소적으로 다 풀리면 유리수해가 있다는 진술이다. 이차형식에서는 정리이지만 차수가 올라가면 깨진다. Selmer 의 $3x^3+4y^3+5z^3=0$ 은 모든 자리에서 풀리지만 유리수해가 없다.
+Hasse 원리는 국소적으로 다 풀리면 유리수해가 있다는 진술이다. 이차형식에서는 정리이지만 차수가 올라가면 깨진다. Selmer 의 $3x^3+4y^3+5z^3=0$ 은 모든 자리에서 풀리지만 유리수해가 없다.
 
 # 직관
 

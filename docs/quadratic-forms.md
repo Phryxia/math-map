@@ -74,7 +74,7 @@ $\mathbb Q$ 위의 비퇴화 이차형식 $q$ 에 대해, $q$ 가 $\mathbb Q$ �
 
 - **격자.** 양정부호 정수 이차형식은 [격자](lattices.md)의 Gram 행렬이고, 형식이 표현하는 수가 격자점의 노름이다. 형식의 동치가 격자의 동형이므로 양정부호 형식의 분류가 격자의 분류와 같다.
 - **대수적 정수론.** 판별식 $D$ 의 이진형식 유형군이 이차체의 이데알 류군이므로, 소수가 어느 형식으로 표현되는지가 그 체에서 소수가 어떻게 분해되는지와 같다. [대수적 수체](algebraic-number-fields.md)의 류수 계산이 유형수 계산이다.
-- **Brauer 군.** 세 변수 이차형식의 등방성은 사원수 대수가 쪼개지는지와 같다. [Brauer 군](brauer-groups.md)의 원소가 그 사원수 대수의 류이고, Hasse–Minkowski 의 국소-전역 원리가 Brauer 군의 Hasse 원리다.
+- **Brauer 군.** 세 변수 이차형식의 등방성은 사원수 대수가 쪼개지는지와 같다. [Brauer 군](brauer-groups.md)의 원소가 그 사원수 대수의 류이고, Hasse–Minkowski 의 국소-전역 원리가 Brauer 군의 [Hasse 원리](hasse-principle.md)다.
 - **이차 상호법칙.** 홀수 소수 $p$ 에 대해 $x^2\equiv a\pmod p$ 의 풀림은 한 변수 이차형식의 표현 문제다. [이차 상호법칙](quadratic-reciprocity.md)이 두 소수 사이의 풀림을 맞바꾼다.
 
 # 연관 문서

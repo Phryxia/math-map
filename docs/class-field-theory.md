@@ -209,7 +209,7 @@ CM(complex multiplication) 방법은 원하는 위수를 갖는 타원곡선을 
 
 힐베르트 유체를 계산하는 것은 류군을 계산하는 것과 같은 문제다. 허수 이차체에서는 축약 이차형식을 세는 방법이 쓰이고, 일반 수체에서는 아이디얼의 관계를 모아 선형대수로 풀어 류군과 단원군을 동시에 얻는다.
 
-어떤 정수가 노름이 될 수 있는지를 묻는 질문에는 Hasse 노름 정리를 쓴다. 순환 확대 $L/K$ 에서 $a\in K^\times$ 가 대역적으로 노름인 것과 모든 자리에서 국소적으로 노름인 것이 동치라는 정리이며, 순환이 아니면 깨진다. 그 깨짐을 재는 것이 [Brauer 군](brauer-groups.md)이고 Hasse 원리의 실패를 설명하는 Brauer–Manin 장애로 이어진다.
+어떤 정수가 노름이 될 수 있는지를 묻는 질문에는 Hasse 노름 정리를 쓴다. 순환 확대 $L/K$ 에서 $a\in K^\times$ 가 대역적으로 노름인 것과 모든 자리에서 국소적으로 노름인 것이 동치라는 정리이며, 순환이 아니면 깨진다. 그 깨짐을 재는 것이 [Brauer 군](brauer-groups.md)이고 [Hasse 원리](hasse-principle.md)의 실패를 설명하는 Brauer–Manin 장애로 이어진다.
 
 [^1]: R. P. Langlands, *Some contemporary problems with origins in the Jugendtraum*, Mathematical Developments Arising from Hilbert Problems, Proc. Sympos. Pure Math. **28** (1976), 401–418. 유리수체와 허수 이차체 밖에서 Hilbert 의 12 번 문제가 풀리지 않은 채임을 전제로 그 너머의 접근을 논한다.
 

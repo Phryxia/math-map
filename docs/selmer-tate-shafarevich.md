@@ -24,7 +24,7 @@ $$
 0\longrightarrow E(K)/mE(K)\longrightarrow\mathrm{Sel}^m(E/K)\longrightarrow \text{Ш}(E/K)[m]\longrightarrow0
 $$
 
-이 셋의 관계를 요약한다. $\text{Ш}$ 의 원소는 모든 자리에서 국소점을 가지면서 유리점이 없는 곡선, 곧 [Brauer 군](brauer-groups.md)에서 다룬 Hasse 원리의 반례다. 순위 계산이 막히는 지점과 Hasse 원리가 깨지는 지점이 같은 대상이다.
+이 셋의 관계를 요약한다. $\text{Ш}$ 의 원소는 모든 자리에서 국소점을 가지면서 유리점이 없는 곡선, 곧 [Brauer 군](brauer-groups.md)에서 다룬 [Hasse 원리](hasse-principle.md)의 반례다. 순위 계산이 막히는 지점과 Hasse 원리가 깨지는 지점이 같은 대상이다.
 
 # 직관
 
