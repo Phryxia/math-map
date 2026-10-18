@@ -2,7 +2,7 @@
 
 # 개요
 
-KKM(Knaster–Kuratowski–Mazurkiewicz) 정리는 단체를 닫힌집합으로 덮을 때 그 덮개가 면의 구조를 따르면 모든 집합이 한 점을 공유한다는 정리다. [Sperner 보조정리](sperner-lemma.md)의 연속 판본이고 [Brouwer 고정점 정리](brouwer-fixed-point.md)와 서로를 함의한다.
+**KKM(Knaster–Kuratowski–Mazurkiewicz) 정리** 는 단체를 닫힌집합으로 덮을 때 그 덮개가 면의 구조를 따르면 모든 집합이 한 점을 공유한다는 정리다. [Sperner 보조정리](sperner-lemma.md)의 연속 판본이고 [Brouwer 고정점 정리](brouwer-fixed-point.md)와 서로를 함의한다.
 
 # 직관
 

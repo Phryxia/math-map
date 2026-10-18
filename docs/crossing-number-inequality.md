@@ -34,7 +34,7 @@ $\mathrm{cr}(G)=0$ 인 것과 $G$ 가 평면 그래프인 것이 같다.
 
 ## 부등식
 
-> **정리.** $\vert E\vert\ge4\vert V\vert$ 이면 $\mathrm{cr}(G)\ge\dfrac{\vert E\vert^3}{64\thinspace\vert V\vert^2}$ 이다.[^1]
+> **교차수 부등식(crossing number inequality).** $\vert E\vert\ge4\vert V\vert$ 이면 $\mathrm{cr}(G)\ge\dfrac{\vert E\vert^3}{64\thinspace\vert V\vert^2}$ 이다.[^1]
 
 증명은 직관 절의 계산이다. 상수를 $1/64$ 로 두면 $p$ 를 잡을 때 생기는 오차를 흡수한다. 같은 논증을 다듬어 상수를 $1/29$ 까지 올릴 수 있다.[^2]
 

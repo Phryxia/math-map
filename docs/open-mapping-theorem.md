@@ -34,7 +34,7 @@ $$
 
 ## 열린 사상 정리
 
-**정리(Banach–Schauder).** $X,Y$ 가 Banach 공간이고 $T\in\mathcal B(X,Y)$ 가 전사이면 $T$ 는 열린 사상이다.[^1]
+**열린 사상 정리(open mapping theorem, Banach–Schauder).** $X,Y$ 가 Banach 공간이고 $T\in\mathcal B(X,Y)$ 가 전사이면 $T$ 는 열린 사상이다.[^1]
 
 전사성에서 $Y=\bigcup_{n\ge1}\overline{T(nB_X)}$ 이고 $Y$ 가 완비이므로 Baire 범주 정리가 어떤 $N$ 에 대해 $\overline{T(NB_X)}$ 의 내부가 비어 있지 않다고 준다. 차집합 $\overline{T(B_X)}-\overline{T(B_X)}\subseteq\overline{T(2B_X)}$ 와 대칭성으로 원점을 중심으로 하는 공 $B_Y(0,2c)\subseteq\overline{T(B_X)}$ 를 얻는다.
 

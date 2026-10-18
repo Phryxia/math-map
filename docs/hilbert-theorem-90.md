@@ -48,7 +48,7 @@ $$
 
 ## 순환 판본
 
-**정리(Hilbert).** $G=\langle\sigma\rangle$ 이 위수 $n$ 의 순환군이면, $a\in L^{\times}$ 에 대해 $N_{L/K}(a)=1$ 인 것과 $a=b/\sigma(b)$ 인 $b\in L^{\times}$ 가 있는 것이 동치다.[^1]
+**Hilbert 정리 90(Hilbert's theorem 90).** $G=\langle\sigma\rangle$ 이 위수 $n$ 의 순환군이면, $a\in L^{\times}$ 에 대해 $N_{L/K}(a)=1$ 인 것과 $a=b/\sigma(b)$ 인 $b\in L^{\times}$ 가 있는 것이 동치다.[^1]
 
 ## 코호몰로지 판본
 
