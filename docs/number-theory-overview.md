@@ -84,6 +84,7 @@ graph TD
 - [류수 1 문제](class-number-one.md): 소인수분해가 유일한 허이차체 아홉 개, 류수 공식의 비유효성과 특이 모듈러 값으로 얻은 상한
 - [p 진수](p-adic-numbers.md) → [Hensel 보조정리](hensel-lemma.md), [Newton 다각형](newton-polygon.md), [아델](adeles.md)
 - [유체론](class-field-theory.md) → [국소 유체론](local-class-field-theory.md), [Chebotarev 밀도 정리](chebotarev.md), [복소 곱셈](complex-multiplication.md)
+- [Hasse 원리](hasse-principle.md): 모든 자리에서 풀리면 유리수해가 있다는 주장, 이차형식에서의 성립과 차수 3 에서의 반례
 - [Brauer 군](brauer-groups.md), [Poitou–Tate 완전열](poitou-tate.md): 국소–대역 원리의 코호몰로지
 
 ## 해석적 정수론과 L 함수
