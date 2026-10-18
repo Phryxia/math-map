@@ -2,7 +2,7 @@
 
 # 개요
 
-Greenberg 추측(Greenberg's conjecture)은 총실수체 위의 $\mathbb Z_p$ 확대 탑에서 류수의 $p$ 부분이 유계에 머문다는 주장이다.
+**Greenberg 추측(Greenberg's conjecture)** 은 총실수체 위의 $\mathbb Z_p$ 확대 탑에서 류수의 $p$ 부분이 유계에 머문다는 주장이다.
 
 수체 $F$ 위에 순환 $\mathbb Z_p$ 확대의 탑 $F=F_0\subset F_1\subset\cdots$ 을 쌓고 각 층의 류수의 $p$ 지수를 $p^{e_n}$ 이라 하면, 충분히 큰 $n$ 에서
 
