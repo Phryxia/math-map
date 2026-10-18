@@ -36,7 +36,7 @@ $$
 d(v)=\inf\lbrace\thinspace\text{길이}(P)\ :\ P\ \text{는}\ s\to v\ \text{경로}\thinspace\rbrace
 $$
 
-로 둔다. 도달할 수 없으면 $\infty$ 이고, 음수 사이클을 거쳐 갈 수 있으면 $-\infty$ 다.
+로 둔다. 길이가 $d(v)$ 인 경로가 $s$ 에서 $v$ 로 가는 **최단경로(shortest path)** 다. 도달할 수 없으면 $\infty$ 이고, 음수 사이클을 거쳐 갈 수 있으면 $-\infty$ 다.
 
 ## Bellman–Ford
 

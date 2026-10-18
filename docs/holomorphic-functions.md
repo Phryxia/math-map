@@ -18,7 +18,7 @@ $$
 f'(z)=\lim_{h\to 0}\frac{f(z+h)-f(z)}{h}
 $$
 
-$f$ 가 $U$ 의 모든 점에서 복소 미분가능하면 $U$ 에서 정칙(holomorphic)이라 한다. $f$ 를 실부와 허부로 쪼개어 $f=u+iv$ , $z=x+iy$ 로 쓰면, $u$ 와 $v$ 가 실미분가능하다는 전제 아래 복소 미분가능성은 Cauchy–Riemann 방정식과 동치다.
+$f$ 가 $U$ 의 모든 점에서 복소 미분가능하면 $f$ 를 $U$ 의 **정칙함수(holomorphic function)** 라 한다. $f$ 를 실부와 허부로 쪼개어 $f=u+iv$ , $z=x+iy$ 로 쓰면, $u$ 와 $v$ 가 실미분가능하다는 전제 아래 복소 미분가능성은 Cauchy–Riemann 방정식과 동치다.
 
 $$
 \frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\qquad \frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}

@@ -30,7 +30,7 @@ $\frac1{1-q^k}=1+q^k+q^{2k}+\cdots$ 이므로 이 인자에서 $q^{mk}$ 를 고�
 
 ## 분할
 
-$\lambda_1\ge\cdots\ge\lambda_r\ge1$ 인 $n=\lambda_1+\cdots+\lambda_r$ 을 $n$ 의 분할이라 하고 그 개수를 $p(n)$ 이라 한다. $p(0)=1$ 로 약속한다.
+$\lambda_1\ge\cdots\ge\lambda_r\ge1$ 인 $n=\lambda_1+\cdots+\lambda_r$ 을 $n$ 의 **분할(partition)** 이라 하고 그 개수를 **분할수(partition number)** $p(n)$ 이라 한다. $p(0)=1$ 로 약속한다.
 
 Ferrers 도표는 $i$ 번째 줄에 $\lambda_i$ 개의 점을 찍은 그림이다. 행과 열을 바꾸면 켤레 분할이 된다. 이 대합으로 부분이 $m$ 개 이하인 분할과 부분이 모두 $m$ 이하인 분할의 개수가 같음이 나온다.
 

@@ -16,7 +16,7 @@
 
 ## 거리와 거리 공간
 
-$X$ 를 집합, $d : X \times X \to \mathbb{R}$ 를 함수라 하자. 임의의 $x, y, z \in X$ 에 대해 다음을 만족하면 $d$ 가 거리이고 $(X, d)$ 가 거리 공간이다.
+$X$ 를 집합, $d : X \times X \to \mathbb{R}$ 를 함수라 하자. 임의의 $x, y, z \in X$ 에 대해 다음을 만족하면 $d$ 가 **거리(metric)** 이고 $(X, d)$ 가 **거리 공간(metric space)** 이다.
 
 $$
 \begin{aligned}
