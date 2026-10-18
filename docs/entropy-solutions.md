@@ -94,7 +94,7 @@ $$
 
 엔트로피 해는 [유계변동 함수](bounded-variation.md)의 전변동을 늘리지 않는다. 충격파가 합쳐지면 끊김의 개수가 줄고 전변동이 감소하며, 희박파에서는 변동이 보존된다.
 
-## Hamilton-Jacobi 방정식과의 대응
+## Hamilton–Jacobi 방정식과의 대응
 
 1차원에서 $u=\partial\_xw$ 로 두면 보존법칙이
 
@@ -102,7 +102,7 @@ $$
 \partial\_t(\partial\_xw)+\partial\_xf(\partial\_xw)=0
 $$
 
-이고 $x$ 로 한 번 적분하면 $w\_t+f(w\_x)=0$ 이다. 보존법칙의 해를 적분한 함수가 [Hamilton-Jacobi 방정식](hamilton-jacobi-equation.md)의 해다.
+이고 $x$ 로 한 번 적분하면 $w\_t+f(w\_x)=0$ 이다. 보존법칙의 해를 적분한 함수가 [Hamilton–Jacobi 방정식](hamilton-jacobi-equation.md)의 해다.
 
 이 대응에서 엔트로피 해는 점성해로 간다. 충격파 조건 $u\_l\gt u\_r$ 은 $w\_x$ 가 끊김에서 감소한다는 뜻이고, 그것이 $w$ 가 그 점에서 위로 꺾인다는 뜻이다. 점성해 조건은 아래로 꺾인 점을 배제하므로 두 조건이 같은 해를 고른다.[^3]
 
@@ -117,7 +117,7 @@ $f$ 가 볼록이면 Hopf-Lax 공식이 $w$ 를 명시적으로 주고, 그것�
 
 [^1]: Stanislav N. Kružkov, "First order quasilinear equations in several independent variables", *Mathematics of the USSR-Sbornik* 10 (1970), 217-243. $\vert u-c\vert$ 꼴 엔트로피 조건과 $L^1$ 수축에 따른 존재성과 유일성이 여기 있다.
 [^2]: Randall J. LeVeque, *Finite Volume Methods for Hyperbolic Problems*, Cambridge University Press, 2002, 11 장과 12 장. Lax 엔트로피 조건, 충격파와 희박파의 구별, 수치해법의 엔트로피 조건을 다룬다.
-[^3]: Lawrence C. Evans, *Partial Differential Equations*, 2판, American Mathematical Society, 2010, 3 장과 11 장. Hopf-Lax 공식, Lax-Oleinik 공식, 보존법칙과 Hamilton-Jacobi 방정식의 대응을 다룬다.
+[^3]: Lawrence C. Evans, *Partial Differential Equations*, 2판, American Mathematical Society, 2010, 3 장과 11 장. Hopf-Lax 공식, Lax-Oleinik 공식, 보존법칙과 Hamilton–Jacobi 방정식의 대응을 다룬다.
 
 # 연관 문서
 

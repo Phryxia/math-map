@@ -1,4 +1,4 @@
-# Hamilton-Jacobi 방정식
+# Hamilton–Jacobi 방정식
 
 # 개요
 

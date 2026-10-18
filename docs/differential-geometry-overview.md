@@ -88,7 +88,7 @@ graph TD
 - [Lagrangian 부분다양체](lagrangian-submanifolds.md): 심플렉틱 형식이 소멸하는 절반 차원 부분다양체, 생성함수와 Weinstein 근방 정리
   - [모멘트 사상](moment-map.md): 심플렉틱 작용의 보존량을 Lie 대수 쌍대공간에 모은 사상, Marsden–Weinstein 축소와 모멘트 다면체
 - [Hamilton 역학](hamiltonian-mechanics.md): 속도를 운동량으로 바꾼 1차 방정식계, 에너지 보존과 흐름의 심플렉틱 성질
-  - [Hamilton-Jacobi 방정식](hamilton-jacobi-equation.md): 생성함수가 만족하는 1차 편미분방정식, Jacobi 정리와 변수분리
+  - [Hamilton–Jacobi 방정식](hamilton-jacobi-equation.md): 생성함수가 만족하는 1차 편미분방정식, Jacobi 정리와 변수분리
   - [심플렉틱 적분기](symplectic-integrators.md): 심플렉틱 2형식을 보존하는 수치 사상, leapfrog 와 수정 Hamiltonian 이 주는 유계 에너지 오차
 - [적분가능계](integrable-systems.md): 자유도만큼의 대합적 보존량, Arnold–Liouville 정리와 작용-각 좌표
   - [Birkhoff 정규형](birkhoff-normal-form.md): 교란 Hamilton 함수에서 비공명 모드를 소거하는 정준변환, 소분모와 최적 절단

@@ -87,6 +87,6 @@ $\varphi$ 가 미분동형이 아닌 Lagrangian 부분다양체도 같은 자리
 
 ## 더 알아보기
 
-- [Hamilton-Jacobi 방정식](hamilton-jacobi-equation.md)
+- [Hamilton–Jacobi 방정식](hamilton-jacobi-equation.md)
 
 #differential_geometry #topology #analysis

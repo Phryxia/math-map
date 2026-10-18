@@ -2,7 +2,7 @@
 
 # 개요
 
-**점성해(viscosity solution)** 는 1차 비선형 편미분방정식의 해를 미분 없이 정의하는 방법이다. [Hamilton-Jacobi 방정식](hamilton-jacobi-equation.md)의 매끄러운 해는 특성곡선이 교차하는 곳에서 끊기고, 꺾인 함수를 허용하면 거의 모든 점에서 방정식을 만족하는 함수가 여러 개 나온다.
+**점성해(viscosity solution)** 는 1차 비선형 편미분방정식의 해를 미분 없이 정의하는 방법이다. [Hamilton–Jacobi 방정식](hamilton-jacobi-equation.md)의 매끄러운 해는 특성곡선이 교차하는 곳에서 끊기고, 꺾인 함수를 허용하면 거의 모든 점에서 방정식을 만족하는 함수가 여러 개 나온다.
 
 점성해는 꺾인 점에서 도함수를 쓰는 대신 그 점에서 위나 아래로 접하는 매끄러운 함수의 도함수에 부등식을 요구한다. 그 조건을 만족하는 연속함수는 하나뿐이다.
 
@@ -82,7 +82,7 @@ $$
 
 # 활용
 
-- [Hamilton-Jacobi 방정식](hamilton-jacobi-equation.md)의 전역해를 정의하는 자리다. 매끄러운 해는 특성곡선이 교차하기 전까지만 있고, 점성해는 교차 뒤에도 유일하게 이어진다.
+- [Hamilton–Jacobi 방정식](hamilton-jacobi-equation.md)의 전역해를 정의하는 자리다. 매끄러운 해는 특성곡선이 교차하기 전까지만 있고, 점성해는 교차 뒤에도 유일하게 이어진다.
 - [동적 계획법](dynamic-programming.md)의 연속시간 판본에서 가치함수가 만족하는 방정식의 해가 점성해다. 가치함수는 보통 꺾이므로 고전해로는 다룰 수 없고, 유일성이 수치해법의 수렴을 보장하는 근거가 된다.
 - [볼록 공액](convex-conjugate.md)이 Hopf-Lax 공식에 들어간다. Hamilton 함수가 볼록이면 공액으로 적은 최솟값 공식이 해를 명시적으로 준다.
 - 보존법칙의 [엔트로피 해](entropy-solutions.md)와 같은 자리에 있다. 1차원에서 보존법칙의 해를 적분한 함수가 Hamilton–Jacobi 방정식의 해이고, 엔트로피 조건이 점성해 조건에 대응한다.[^1]
@@ -93,7 +93,7 @@ $$
 
 ## 선수지식
 
-- [Hamilton-Jacobi 방정식](hamilton-jacobi-equation.md)
+- [Hamilton–Jacobi 방정식](hamilton-jacobi-equation.md)
 
 ## 더 알아보기
 
