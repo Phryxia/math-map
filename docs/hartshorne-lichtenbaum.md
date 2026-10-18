@@ -2,7 +2,7 @@
 
 # 개요
 
-Hartshorne–Lichtenbaum 소멸 정리는 [국소 코호몰로지](local-cohomology.md) $H^i\_I(R)$ 의 최고차 $i=\dim R$ 이 언제 $0$ 인지를 $R/I$ 의 차원으로 판정한다.
+**Hartshorne–Lichtenbaum 소멸 정리(Hartshorne–Lichtenbaum vanishing theorem)** 는 [국소 코호몰로지](local-cohomology.md) $H^i\_I(R)$ 의 최고차 $i=\dim R$ 이 언제 $0$ 인지를 $R/I$ 의 차원으로 판정한다.
 
 **정리.** $(R,\mathfrak m)$ 이 $d$ 차원 완비 국소 정역이면
 

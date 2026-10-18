@@ -2,7 +2,7 @@
 
 # 개요
 
-Hirzebruch 부호수 정리는 $4k$ 차원 닫힌 방향 다양체의 [교차형식](intersection-form.md) 부호수를 [Pontryagin 류](pontryagin-classes.md)의 다항식으로 적는다.
+**Hirzebruch 부호수 정리(Hirzebruch signature theorem)** 는 $4k$ 차원 닫힌 방향 다양체의 [교차형식](intersection-form.md) 부호수를 [Pontryagin 류](pontryagin-classes.md)의 다항식으로 적는다.
 
 $$
 \mathrm{sign}(M)=\langle L_k(p_1,\dots,p_k),\lbrack M\rbrack\rangle

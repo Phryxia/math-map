@@ -2,7 +2,7 @@
 
 # 개요
 
-Hensel 보조정리는 법 $p$ 의 근 하나를 [p 진 정수](p-adic-numbers.md)환의 근으로 올린다. 올릴 수 있는지는 그 근에서 도함수가 단원인지가 정한다.
+**Hensel 보조정리(Hensel's lemma)** 는 법 $p$ 의 근 하나를 [p 진 정수](p-adic-numbers.md)환의 근으로 올린다. 올릴 수 있는지는 그 근에서 도함수가 단원인지가 정한다.
 
 증명이 [Newton 법](newton-method.md)의 반복이고, 그 반복을 그대로 돌리는 것이 계산기 대수의 표준 절차다.
 

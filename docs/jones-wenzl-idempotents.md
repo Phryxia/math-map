@@ -2,7 +2,7 @@
 
 # 개요
 
-Jones–Wenzl 멱등원 $f_n$ 은 [Temperley–Lieb 대수](temperley-lieb-algebras.md) $TL_n(\delta)$ 안에서 모든 생성원을 죽이는 유일한 멱등원이다.
+**Jones–Wenzl 멱등원(Jones–Wenzl idempotent)** $f_n$ 은 [Temperley–Lieb 대수](temperley-lieb-algebras.md) $TL_n(\delta)$ 안에서 모든 생성원을 죽이는 유일한 멱등원이다.
 
 $$
 f_n^2=f_n,\qquad e_if_n=f_ne_i=0\quad (1\le i\le n-1)

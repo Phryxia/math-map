@@ -2,7 +2,7 @@
 
 # 개요
 
-Jacobi 형식은 $\mathbb H\times\mathbb C$ 위의 정칙함수로, 첫 변수에서는 가중치 $k$ 의 [모듈러 형식](modular-forms.md)처럼 변하고 둘째 변수에서는 격자 평행이동에 지수인수를 달고 변하는 것이다. 차수 $2$ 의 [Siegel 모듈러 형식](siegel-modular-forms.md)을 한 변수로 전개하면 계수마다 Jacobi 형식이 나온다. Fourier 계수가 판별식 하나와 나머지 하나에만 의존하므로, 지표 $1$ 의 공간이 반정수 가중치 형식의 공간과 동형이고 그 동형이 Saito–Kurokawa 승강의 중간 단계다.
+**Jacobi 형식(Jacobi form)** 은 $\mathbb H\times\mathbb C$ 위의 정칙함수로, 첫 변수에서는 가중치 $k$ 의 [모듈러 형식](modular-forms.md)처럼 변하고 둘째 변수에서는 격자 평행이동에 지수인수를 달고 변하는 것이다. 차수 $2$ 의 [Siegel 모듈러 형식](siegel-modular-forms.md)을 한 변수로 전개하면 계수마다 Jacobi 형식이 나온다. Fourier 계수가 판별식 하나와 나머지 하나에만 의존하므로, 지표 $1$ 의 공간이 반정수 가중치 형식의 공간과 동형이고 그 동형이 Saito–Kurokawa 승강의 중간 단계다.
 
 # 직관
 

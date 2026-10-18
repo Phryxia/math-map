@@ -2,7 +2,7 @@
 
 # 개요
 
-Jacquet–Langlands 대응(Jacquet–Langlands correspondence)은 사원수 대수의 곱셈군의 자기동형 표현을 $\mathrm{GL}\_2$ 의 첨점 표현으로 보내는 대응이다.
+**Jacquet–Langlands 대응(Jacquet–Langlands correspondence)** 은 사원수 대수의 곱셈군의 자기동형 표현을 $\mathrm{GL}\_2$ 의 첨점 표현으로 보내는 대응이다.
 
 사원수 대수 $B/F$ 의 곱셈군은 $\mathrm{GL}\_2$ 의 **내부형식**이다. 대수적으로 닫힌 체 위에서는 $B\cong M_2$ 이므로 두 군이 같고 $F$ 위에서만 달라진다. 두 군의 자기동형 표현은 사실상 같고, 이것이 **Jacquet–Langlands 대응**이다.
 
