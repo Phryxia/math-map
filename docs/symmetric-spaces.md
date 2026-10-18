@@ -2,7 +2,7 @@
 
 # 개요
 
-대칭공간은 각 점에서 측지선의 방향을 모두 뒤집는 등거리변환을 갖는 [Riemann 다양체](riemannian-metrics.md)다. 이 변환이 있으면 곡률 텐서가 평행하므로 한 점의 곡률이 공간 전체의 곡률을 정한다.
+**대칭공간(symmetric space)** 은 각 점에서 측지선의 방향을 모두 뒤집는 등거리변환을 갖는 [Riemann 다양체](riemannian-metrics.md)다. 이 변환이 있으면 곡률 텐서가 평행하므로 한 점의 곡률이 공간 전체의 곡률을 정한다.
 
 [등질공간](homogeneous-spaces.md) $G/H$ 가운데 $H$ 가 $G$ 의 대합의 고정부분군인 것이 대칭공간이고, 분류가 [Lie 대수](lie-algebras.md)와 그 대합의 분류로 바뀐다.
 
