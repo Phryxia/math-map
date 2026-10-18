@@ -53,7 +53,7 @@ $$
 
 ## Qp 와 Zp
 
-$|\cdot|\_p$ 에 대한 $\mathbb Q$ 의 완비화가 $\mathbb Q_p$ 다. 그 안의 **정수환**은 다음이다.
+$|\cdot|\_p$ 에 대한 $\mathbb Q$ 의 완비화가 **$p$ 진수(p-adic number)** 의 체 $\mathbb Q_p$ 다. 그 안의 **정수환**은 다음이다.
 
 $$
 \mathbb Z_p=\lbrace x\in\mathbb Q_p:|x|\_p\le1\rbrace=\lbrace x:v_p(x)\ge0\rbrace

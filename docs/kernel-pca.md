@@ -16,6 +16,8 @@ $\langle\phi(x),\phi(y)\rangle$ 를 원래 좌표의 식으로 계산하는 함�
 
 # 정의
 
+**커널 PCA(kernel PCA)** 는 데이터를 사상 $\phi$ 로 옮긴 공간에서 주성분 분석을 하는 방법이다. $\phi$ 를 직접 계산하지 않고 내적만 커널로 계산한다.
+
 ## 커널과 특징공간
 
 대칭함수 $k:\mathcal X\times\mathcal X\to\mathbb R$ 가 양의 준정부호라는 것은 임의의 유한한 점들 $x_1,\dots,x_n$ 에 대해 행렬 $K_{ij}=k(x_i,x_j)$ 가 양의 준정부호라는 뜻이다.
