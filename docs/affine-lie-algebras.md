@@ -54,9 +54,9 @@ Cartan 부분대수는 $\hat{\mathfrak h}=\mathfrak h\oplus\mathbb CK\oplus\math
 
 여기서 $v\gt 0$ 은 성분이 모두 양수라는 뜻이다. 아핀형에서 $Av=0$ 의 해 $v=(a_0,\dots,a_n)$ 의 성분이 **표시**(mark)이고, $\sum a_i$ 를 더한 값이 **Coxeter 수**다.
 
-## Kac-Moody 대수
+## Kac–Moody 대수
 
-GCM $A$ 에 대해 **Kac-Moody 대수** $\mathfrak g(A)$ 는 생성원 $e_i,f_i,h_i$ 와 다음 관계로 정의되는 Lie 대수다.
+GCM $A$ 에 대해 **Kac–Moody 대수** $\mathfrak g(A)$ 는 생성원 $e_i,f_i,h_i$ 와 다음 관계로 정의되는 Lie 대수다.
 
 $$
 \lbrack h_i,h_j\rbrack=0,\qquad \lbrack h_i,e_j\rbrack=a_{ij}e_j,\qquad \lbrack h_i,f_j\rbrack=-a_{ij}f_j,\qquad \lbrack e_i,f_j\rbrack=\delta_{ij}h_i
@@ -147,9 +147,9 @@ $\alpha_0=\delta-\theta$ 이므로 $\hat\Lambda(h_0)\ge 0$ 이 $\langle\lambda,\
 
 > **정리.** 기약 일반화 Cartan 행렬은 유한형, 아핀형, 부정형 가운데 정확히 하나다.
 
-증명의 요지는 Perron-Frobenius 정리다. $A$ 의 비대각성분이 음이 아닌 꼴로 $2I-A$ 를 보면 비음행렬이고 기약이므로 성분이 모두 양수인 고유벡터 $v$ 가 최대 고윳값에 붙는다. 그 고윳값이 $2$ 보다 작으면 $Av\gt 0$ , 같으면 $Av=0$ , 크면 $Av\lt 0$ 이고, 세 경우가 각각 유한형, 아핀형, 부정형이다. 최대 고윳값이 유일하므로 세 경우가 배타적이다.
+증명의 요지는 Perron–Frobenius 정리다. $A$ 의 비대각성분이 음이 아닌 꼴로 $2I-A$ 를 보면 비음행렬이고 기약이므로 성분이 모두 양수인 고유벡터 $v$ 가 최대 고윳값에 붙는다. 그 고윳값이 $2$ 보다 작으면 $Av\gt 0$ , 같으면 $Av=0$ , 크면 $Av\lt 0$ 이고, 세 경우가 각각 유한형, 아핀형, 부정형이다. 최대 고윳값이 유일하므로 세 경우가 배타적이다.
 
-아핀형에서 핵이 1 차원이라는 것은 최대 고윳값의 고유공간이 1 차원이라는 Perron-Frobenius 의 결론이다. 그 유일한 핵벡터가 표시 $(a_0,\dots,a_n)$ 이고, $\delta=\sum_i a_i\alpha_i$ 가 성립한다.
+아핀형에서 핵이 1 차원이라는 것은 최대 고윳값의 고유공간이 1 차원이라는 Perron–Frobenius 의 결론이다. 그 유일한 핵벡터가 표시 $(a_0,\dots,a_n)$ 이고, $\delta=\sum_i a_i\alpha_i$ 가 성립한다.
 
 ## 허근의 중복도
 
@@ -159,7 +159,7 @@ $\alpha_0=\delta-\theta$ 이므로 $\hat\Lambda(h_0)\ge 0$ 이 $\langle\lambda,\
 
 실근의 Weyl 궤도는 하나뿐이지만 허근 $n\delta$ 는 $\hat W$ 가 고정한다. $\hat W$ 가 $\delta$ 를 고정하므로 길이 $0$ 인 방향이 군의 작용에 보존되고, 이것이 $\hat W$ 가 유한군이 아닌 이유다. 반사를 반복하면 $\delta$ 방향으로 평행이동이 쌓인다.
 
-## Weyl-Kac 지표 공식
+## Weyl–Kac 지표 공식
 
 > **정리.** 적분가능 최고무게 표현 $L(\hat\Lambda)$ 의 지표는 다음이다[^2].
 
@@ -193,9 +193,9 @@ $q=e^{2\pi i\tau}$ 로 두고 지표를 $\tau$ 의 함수로 보면, 레벨 $k$ 
 
 - **Macdonald 항등식.** 위 지표 공식에 $\hat\Lambda=0$ 을 넣어 얻는 $q$ 급수 항등식이 Jacobi 삼중곱과 Euler 오각수 정리를 포함한다. 분할수의 생성함수 항등식 여럿이 같은 방식으로 나온다.
 
-- **범주 O.** [범주 O](category-o.md) 의 구성이 Kac-Moody 대수에서 그대로 작동한다. Verma 가군, 블록 분해, Kazhdan-Lusztig 중복도가 아핀형에서도 정의되고, 아핀 Kazhdan-Lusztig 다항식이 레벨 $k$ 표현의 지표를 계산한다.
+- **범주 O.** [범주 O](category-o.md) 의 구성이 Kac–Moody 대수에서 그대로 작동한다. Verma 가군, 블록 분해, Kazhdan–Lusztig 중복도가 아핀형에서도 정의되고, 아핀 Kazhdan–Lusztig 다항식이 레벨 $k$ 표현의 지표를 계산한다.
 
-- **기하학적 Langlands 강령.** 임계 레벨 $k=-h^\vee$ 는 Weyl-Kac 지표 공식의 분모가 뜻을 잃는 레벨이다. 이 레벨에서 $\hat{\mathfrak g}$ 의 중심이 커지고, 그 중심을 [기하학적 Langlands 강령](geometric-langlands.md) 대응의 쌍대 쪽 자료와 맞추는 것이 Feigin-Frenkel 동형이다.
+- **기하학적 Langlands 강령.** 임계 레벨 $k=-h^\vee$ 는 Weyl–Kac 지표 공식의 분모가 뜻을 잃는 레벨이다. 이 레벨에서 $\hat{\mathfrak g}$ 의 중심이 커지고, 그 중심을 [기하학적 Langlands 강령](geometric-langlands.md) 대응의 쌍대 쪽 자료와 맞추는 것이 Feigin-Frenkel 동형이다.
 
 [^1]: V. Kac, *Infinite Dimensional Lie Algebras*, 3rd ed., Cambridge University Press, 1990, 4 장.
 [^2]: V. Kac, *Infinite Dimensional Lie Algebras*, 3rd ed., Cambridge University Press, 1990, 10 장과 13 장.

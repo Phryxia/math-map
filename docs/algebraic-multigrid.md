@@ -38,7 +38,7 @@ $$
 첫 조건이 보간의 정확도를, 둘째가 성긴 단계의 크기를 정한다. 두 조건을 다 만족시킬 수는 없어 첫 조건을 지키고 둘째를 완화한다.
 
 ```javascript
-// Ruge-Stüben C/F 분할
+// Ruge–Stüben C/F 분할
 // strong[i]: i 가 강하게 연결된 변수, strongInv[i]: i 에 강하게 연결된 변수
 function coarsen(strong, strongInv, n) {
   const coarse = new Set(), fine = new Set(), undecided = new Set()

@@ -87,7 +87,7 @@ NP-완전성을 새로 증명할 때는 Cook–Levin 을 반복하지 않는다.
 
 ```mermaid
 flowchart TD
-  NP["임의의 L in NP"] -->|"계산 표를 CNF 로 부호화 (Cook-Levin)"| SAT["SAT"]
+  NP["임의의 L in NP"] -->|"계산 표를 CNF 로 부호화 (Cook–Levin)"| SAT["SAT"]
   SAT -->|"절을 길이 3 으로 쪼개기 (새 변수 도입)"| TSAT["3SAT"]
   TSAT -->|"절별 리터럴을 정점으로, 양립 가능 쌍을 간선으로"| CLQ["CLIQUE"]
   CLQ -->|"여그래프와 보집합"| VC["VERTEX-COVER"]

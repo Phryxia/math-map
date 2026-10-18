@@ -106,7 +106,7 @@ $$
 
 [^1]: Frenet–Serret 공식과 일반 매개변수 공식. Wolfram MathWorld, "Frenet Formulas". https://mathworld.wolfram.com/FrenetFormulas.html
 [^2]: Theorema Egregium: Gauss 곡률이 Riemann metric의 불변량이라는 Gauss(1827)의 결과. 개요와 Brioschi 공식은 O. Jaïbi, "Gaussian Curvature and The Gauss–Bonnet Theorem", Leiden bachelor thesis, §2. https://math.leidenuniv.nl/scripties/JaibiBach.pdf
-[^3]: Gauss–Bonnet 공식의 경계·꼭짓점 항을 포함한 진술. Wolfram MathWorld, "Gauss-Bonnet Formula". https://mathworld.wolfram.com/Gauss-BonnetFormula.html
+[^3]: Gauss–Bonnet 공식의 경계·꼭짓점 항을 포함한 진술. Wolfram MathWorld, "Gauss–Bonnet Formula". https://mathworld.wolfram.com/Gauss–BonnetFormula.html
 
 # 연관 문서
 

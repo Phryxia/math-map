@@ -66,7 +66,7 @@ $N_1=1$ 에서 출발하면 $N_2=1$, $N_3=12$, $N_4=620$ 이 나온다. 차수 $
 - **거울대칭의 검증.** Calabi–Yau 삼차원 다양체의 Gromov–Witten 불변량을 모은 생성함수가 거울짝의 주기 적분이 만족하는 미분방정식에서 나오는 급수와 일치한다. 이 일치가 거울대칭의 수치적 내용이다.
 - **곡선 셈 문제의 통일.** 고전적 열거기하의 셈(점을 지나는 원뿔곡선, 접하는 곡선의 수)을 안정 사상의 모듈라이 공간 위의 교차수 하나로 적는다. 셈이 퇴화에서 깨지는 자리를 가상 기본류가 메운다.
 
-[^1]: M. Kontsevich and Yu. Manin, "Gromov-Witten Classes, Quantum Cohomology, and Enumerative Geometry", Communications in Mathematical Physics **164** (1994), 525–562.
+[^1]: M. Kontsevich and Yu. Manin, "Gromov–Witten Classes, Quantum Cohomology, and Enumerative Geometry", Communications in Mathematical Physics **164** (1994), 525–562.
 
 # 연관 문서
 

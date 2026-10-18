@@ -134,7 +134,7 @@ ZFC 로 판정되지 않는 문장을 다루기 위해 도달 불가능 기수, 
 
 실제 수학 대부분은 거듭제곱집합을 몇 번만 쓰는 낮은 층에서 진행되므로, ZFC 의 강한 공리 전부를 필요로 하지 않는다. 어떤 정리가 어느 공리를 정말 필요로 하는지 재는 작업이 reverse mathematics 다.
 
-[^1]: Zermelo-Fraenkel Axioms, Wolfram MathWorld. https://mathworld.wolfram.com/Zermelo-FraenkelAxioms.html
+[^1]: Zermelo–Fraenkel Axioms, Wolfram MathWorld. https://mathworld.wolfram.com/Zermelo–FraenkelAxioms.html
 [^2]: Set-theoretic definition of natural numbers (von Neumann ordinals). https://en.wikipedia.org/wiki/Set-theoretic_definition_of_natural_numbers
 
 # 연관 문서

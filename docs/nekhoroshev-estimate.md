@@ -2,7 +2,7 @@
 
 # 개요
 
-**Nekhoroshev 추정(Nekhoroshev estimate)** 은 교란된 적분가능계에서 작용 변수의 변화에 대한 상한이다. [Kolmogorov-Arnold-Moser 정리](kam-theorem.md)는 측도의 뜻에서 대부분인 초기조건에 대해 모든 시간의 운동을 정하지만, 살아남지 못한 진동수에서 출발한 궤도는 다루지 않는다.
+**Nekhoroshev 추정(Nekhoroshev estimate)** 은 교란된 적분가능계에서 작용 변수의 변화에 대한 상한이다. [Kolmogorov–Arnold–Moser 정리](kam-theorem.md)는 측도의 뜻에서 대부분인 초기조건에 대해 모든 시간의 운동을 정하지만, 살아남지 못한 진동수에서 출발한 궤도는 다루지 않는다.
 
 Nekhoroshev 추정은 모든 초기조건에 대해 성립한다. 교란의 크기를 $\varepsilon$ 이라 하면, 작용 변수의 변화가 $\varepsilon$ 의 거듭제곱 이하로 머무는 시간이 $\exp(\varepsilon^{-a})$ 꼴로 길다. 측도 하나를 시간으로 바꾼 것이며, 바꾸는 대가로 교란 전 Hamilton 함수에 준볼록 조건이 붙는다.
 
@@ -14,7 +14,7 @@ Nekhoroshev 추정은 모든 초기조건에 대해 성립한다. 교란의 크�
 
 이 상한을 늘리려면 $\partial\_\theta H\_1$ 이 평균 $0$ 인 것을 쓴다. $\theta$ 가 빠르게 돌 때 그 항은 상쇄되므로, 교란에서 $\theta$ 에 의존하는 부분을 좌표 바꾸기로 없애면 남는 교란이 $\varepsilon^2$ 의 크기다. 새 작용 변수의 변화율이 $\varepsilon^2$ 이고 시간이 $1/\varepsilon^2$ 으로 늘어난다. $r$ 번 되풀이하면 $1/\varepsilon^r$ 이다.
 
-되풀이가 막히는 자리는 Kolmogorov-Arnold-Moser 정리와 같은 작은 분모다. $k$ 번째 Fourier 항을 없애는 계수에 $k\cdot\nu$ 가 분모로 들어가는데, 여기서는 진동수를 Diophantine 인 것으로 고정할 수 없다. 모든 초기조건을 다루므로 $k\cdot\nu$ 가 $0$ 에 가까운 $I$ 도 함께 봐야 한다. 그런 $k$ 가 나오면 그 항을 남기고 전개를 멈춘다. 멈추는 단계 $r$ 을 $\varepsilon$ 에 맞춰 크게 고르면 $\varepsilon^{-r}$ 이 $\exp(\varepsilon^{-a})$ 꼴로 자란다.
+되풀이가 막히는 자리는 Kolmogorov–Arnold–Moser 정리와 같은 작은 분모다. $k$ 번째 Fourier 항을 없애는 계수에 $k\cdot\nu$ 가 분모로 들어가는데, 여기서는 진동수를 Diophantine 인 것으로 고정할 수 없다. 모든 초기조건을 다루므로 $k\cdot\nu$ 가 $0$ 에 가까운 $I$ 도 함께 봐야 한다. 그런 $k$ 가 나오면 그 항을 남기고 전개를 멈춘다. 멈추는 단계 $r$ 을 $\varepsilon$ 에 맞춰 크게 고르면 $\varepsilon^{-r}$ 이 $\exp(\varepsilon^{-a})$ 꼴로 자란다.
 
 멈춘 뒤 남은 항은 유한 개의 $k$ 가 만드는 방향으로만 $I$ 를 밀 수 있다. 그 방향으로 $H\_0$ 이 증가하거나 감소하면 에너지 보존이 이동을 막는다. 준볼록 조건이 요구하는 것이 이것이다.
 
@@ -78,9 +78,9 @@ $H\_0$ 이 $I$ 에 선형이면 진동수가 상수이고 Hessian 이 $0$ 이므
 
 그러므로 지수적 시간 상한은 $H\_0$ 의 조건에서 오는 것이고 교란의 작음만으로는 얻을 수 없다.
 
-## Kolmogorov-Arnold-Moser 정리와의 차이
+## Kolmogorov–Arnold–Moser 정리와의 차이
 
-| | Kolmogorov-Arnold-Moser 정리 | Nekhoroshev 추정 |
+| | Kolmogorov–Arnold–Moser 정리 | Nekhoroshev 추정 |
 | --- | --- | --- |
 | 초기조건 | Diophantine 진동수의 원환면 위 | 전부 |
 | 시간 | 무한 | $\exp(\varepsilon^{-a})$ 까지 |
@@ -91,9 +91,9 @@ $H\_0$ 이 $I$ 에 선형이면 진동수가 상수이고 Hessian 이 $0$ 이므
 
 # 활용
 
-- [Kolmogorov-Arnold-Moser 정리](kam-theorem.md)의 자유도 $3$ 이상에서 끊긴 논법을 메운다. 원환면이 에너지면을 분리하지 못하는 경우에 작용 변수의 유계성 대신 지수적으로 긴 시간의 상한이 들어간다.
+- [Kolmogorov–Arnold–Moser 정리](kam-theorem.md)의 자유도 $3$ 이상에서 끊긴 논법을 메운다. 원환면이 에너지면을 분리하지 못하는 경우에 작용 변수의 유계성 대신 지수적으로 긴 시간의 상한이 들어간다.
 - [적분가능계](integrable-systems.md)의 작용 변수를 교란 아래에서 근사 보존량으로 쓰는 근거다. 지수적 시간 안에서는 $I$ 를 상수로 보고 계산해도 오차가 $\varepsilon^b$ 를 넘지 않는다.
-- [Diophantine 근사](diophantine-approximation.md)의 쓰임이 두 결과에서 다르다. Kolmogorov-Arnold-Moser 정리는 진동수를 Diophantine 인 것으로 고정하고, Nekhoroshev 추정은 고정하지 않는 대신 공명의 계수로 작용 변수의 공간을 가른다.
+- [Diophantine 근사](diophantine-approximation.md)의 쓰임이 두 결과에서 다르다. Kolmogorov–Arnold–Moser 정리는 진동수를 Diophantine 인 것으로 고정하고, Nekhoroshev 추정은 고정하지 않는 대신 공명의 계수로 작용 변수의 공간을 가른다.
 
 [^1]: Nikolai N. Nekhoroshev, "An exponential estimate of the time of stability of nearly integrable Hamiltonian systems", *Russian Mathematical Surveys* 32 (1977), 1-65. 급경사 조건의 정의와 지수적 시간 상한이 여기 있다.
 [^2]: Jürgen Pöschel, "Nekhoroshev estimates for quasi-convex Hamiltonian systems", *Mathematische Zeitschrift* 213 (1993), 187-216. 준볼록 가정에서 지수 $1/(2n)$, 공명 구역 분해, 기하적 부분의 논법을 다룬다.
@@ -103,7 +103,7 @@ $H\_0$ 이 $I$ 에 선형이면 진동수가 상수이고 Hessian 이 $0$ 이므
 
 ## 선수지식
 
-- [Kolmogorov-Arnold-Moser 정리](kam-theorem.md)
+- [Kolmogorov–Arnold–Moser 정리](kam-theorem.md)
 
 ## 더 알아보기
 

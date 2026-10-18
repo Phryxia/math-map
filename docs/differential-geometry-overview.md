@@ -92,7 +92,7 @@ graph TD
   - [심플렉틱 적분기](symplectic-integrators.md): 심플렉틱 2형식을 보존하는 수치 사상, leapfrog 와 수정 Hamiltonian 이 주는 유계 에너지 오차
 - [적분가능계](integrable-systems.md): 자유도만큼의 대합적 보존량, Arnold–Liouville 정리와 작용-각 좌표
   - [Birkhoff 정규형](birkhoff-normal-form.md): 교란 Hamilton 함수에서 비공명 모드를 소거하는 정준변환, 소분모와 최적 절단
-- [Kolmogorov-Arnold-Moser 정리](kam-theorem.md): 교란에서 살아남는 불변 원환면, Diophantine 조건과 작은 분모
+- [Kolmogorov–Arnold–Moser 정리](kam-theorem.md): 교란에서 살아남는 불변 원환면, Diophantine 조건과 작은 분모
   - [Nekhoroshev 추정](nekhoroshev-estimate.md): 모든 초기조건에서 작용 변수가 지수적으로 긴 시간 동안 머무는 상한, 준볼록 조건과 공명 구역 분해
 - [Lax 쌍](lax-pairs.md): 흐름을 등스펙트럼 변형으로 적는 두 행렬, Toda 격자와 미분연산자 판본
   - [역산란 변환](inverse-scattering-transform.md): 산란 자료로 옮겨 선형이 되는 Korteweg–de Vries 방정식의 흐름, Gelfand–Levitan–Marchenko 방정식과 고립파
@@ -107,7 +107,7 @@ graph TD
   - [대칭공간](symmetric-spaces.md): 점마다 측지선을 뒤집는 등거리변환을 갖는 다양체, Cartan 분해와 세 유형의 분류
   - [쌍곡 3 다양체](hyperbolic-3-manifolds.md): 3 차원에서 쌍곡 계량이 위상으로 결정된다
 - [측지선](geodesics.md): 가속도의 접성분이 0 인 곡선, 지수사상과 Hopf–Rinow 정리, 켤레점
-  - [측지선의 비교정리](geodesic-comparison-theorems.md): 곡률의 상한과 하한으로 Jacobi 장을 상수곡률 모형과 견준다, Rauch 와 Cartan-Hadamard 와 Bonnet-Myers
+  - [측지선의 비교정리](geodesic-comparison-theorems.md): 곡률의 상한과 하한으로 Jacobi 장을 상수곡률 모형과 견준다, Rauch 와 Cartan–Hadamard 와 Bonnet–Myers
 - [Gauss–Bonnet 정리](gauss-bonnet.md): 곡률 적분이 Euler 지표를 준다
   - [Poincaré–Hopf 정리](poincare-hopf.md): 벡터장의 특이점 지수의 합도 Euler 지표다
 - [Ricci 흐름](ricci-flow.md): 계량을 Ricci 곡률로 변형하는 열방정식 꼴 흐름, 특이점과 수술

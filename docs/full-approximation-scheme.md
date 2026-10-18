@@ -51,7 +51,7 @@ $$
 ```javascript
 function fas(level, u, f) {
   if (isCoarsest(level)) return solveNonlinear(level, u, f)
-  u = smoothNonlinear(level, u, f, nu1)              // 비선형 Gauss-Seidel
+  u = smoothNonlinear(level, u, f, nu1)              // 비선형 Gauss–Seidel
   const r = sub(f, apply(level, u))                  // 잔차
   const uc = restrict(level, u)                      // 해를 성긴 격자로
   const fc = add(restrict(level, r), apply(level - 1, uc))

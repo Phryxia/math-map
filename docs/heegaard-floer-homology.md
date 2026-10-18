@@ -14,7 +14,7 @@ $$
 
 # 직관
 
-3 다양체 $Y$ 의 불변량을 [Morse 이론](morse-theory.md)으로 만들려 한다. [순간자 Floer 호몰로지](instanton-floer-homology.md)는 접속 공간 위의 Chern-Simons 범함수를 Morse 함수로 보고 임계점과 순간자를 센다. 해 공간이 무한차원이라 횡단성과 compactification 을 손으로 다뤄야 한다.
+3 다양체 $Y$ 의 불변량을 [Morse 이론](morse-theory.md)으로 만들려 한다. [순간자 Floer 호몰로지](instanton-floer-homology.md)는 접속 공간 위의 Chern–Simons 범함수를 Morse 함수로 보고 임계점과 순간자를 센다. 해 공간이 무한차원이라 횡단성과 compactification 을 손으로 다뤄야 한다.
 
 유한차원에서 같은 일을 하려면 $Y$ 를 유한한 자료로 적어야 한다. Heegaard 분해가 그 자료다. $Y$ 를 두 손잡이체로 자르면 경계가 종수 $g$ 의 곡면 $\Sigma$ 이고, 각 손잡이체는 $\Sigma$ 위의 곡선 $g$ 개가 어디서 원판을 경계로 하는지로 정해진다. 그 두 벌의 곡선이 $\boldsymbol\alpha=\lbrace\alpha_1,\dots,\alpha_g\rbrace$ 와 $\boldsymbol\beta=\lbrace\beta_1,\dots,\beta_g\rbrace$ 다.
 
@@ -117,9 +117,9 @@ $d$ 불변량이 채울 수 있는 4 다양체의 교차형식에 상한을 준�
 
 ## 순간자 판본과의 관계
 
-> **정리.** Seiberg-Witten Floer 호몰로지와 Heegaard Floer 호몰로지가 동형이다[^3].
+> **정리.** Seiberg–Witten Floer 호몰로지와 Heegaard Floer 호몰로지가 동형이다[^3].
 
-두 이론은 정의가 완전히 다르다. 한쪽은 3 다양체 위의 Seiberg-Witten 방정식 해를 세고, 다른 쪽은 대칭곱 안의 원판을 센다. 동형의 증명은 양쪽을 접촉 기하의 중간 이론인 매장 접촉 호몰로지(embedded contact homology, ECH)에 연결하는 두 단계를 거친다.
+두 이론은 정의가 완전히 다르다. 한쪽은 3 다양체 위의 Seiberg–Witten 방정식 해를 세고, 다른 쪽은 대칭곱 안의 원판을 센다. 동형의 증명은 양쪽을 접촉 기하의 중간 이론인 매장 접촉 호몰로지(embedded contact homology, ECH)에 연결하는 두 단계를 거친다.
 
 $\mathrm{spin}^c$ 분해와 $d$ 불변량, 수술 완전 삼각형이 양쪽에서 대응한다. 그래서 조합적 계산이 쉬운 Heegaard 쪽에서 계산하고 게이지 이론 쪽 결론으로 옮긴다.
 
@@ -131,7 +131,7 @@ $\mathrm{spin}^c$ 분해와 $d$ 불변량, 수술 완전 삼각형이 양쪽에�
 
 - **접촉 구조.** 접촉 3 다양체마다 $\widehat{\mathrm{HF}}$ 의 원소 하나가 정해지고, 그것이 $0$ 이 아닌 것이 접촉 구조가 채울 수 있음의 필요조건이다. 접촉 구조의 분류에 이 원소를 쓴다.
 
-- **순간자 판본의 계산.** [순간자 Floer 호몰로지](instanton-floer-homology.md)의 Brieskorn 구면 계산을 Heegaard 쪽 조합 계산으로 대체한다. Seiberg-Witten 판본과의 동형을 거쳐 순간자 쪽 결론으로 옮긴다.
+- **순간자 판본의 계산.** [순간자 Floer 호몰로지](instanton-floer-homology.md)의 Brieskorn 구면 계산을 Heegaard 쪽 조합 계산으로 대체한다. Seiberg–Witten 판본과의 동형을 거쳐 순간자 쪽 결론으로 옮긴다.
 
 [^1]: P. Ozsváth, Z. Szabó, *Holomorphic disks and topological invariants for closed three-manifolds*, Ann. of Math. 159 (2004), 1027–1158.
 [^2]: P. Ozsváth, Z. Szabó, *Absolutely graded Floer homologies and intersection forms for four-manifolds with boundary*, Adv. Math. 173 (2003), 179–261.

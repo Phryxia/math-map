@@ -60,7 +60,7 @@ $$\langle\gamma_1\ast\gamma_2,\gamma_3\rangle=\langle\gamma_1,\gamma_2\ast\gamma
 - **거울대칭.** Calabi–Yau 다양체의 양자 코호몰로지에서 나오는 미분방정식이 거울짝의 주기 적분이 만족하는 방정식과 일치한다. 양쪽을 짝지으면 곡선 셈이 주기 적분의 계산으로 바뀐다.
 - **심플렉틱 불변량.** Gromov–Witten 불변량이 심플렉틱 구조만으로 정해지므로 양자 코호몰로지 환도 그렇다. 두 사영다양체의 양자 코호몰로지가 다르면 심플렉틱 다양체로서도 다르다.
 
-[^1]: M. Kontsevich and Yu. Manin, "Gromov-Witten Classes, Quantum Cohomology, and Enumerative Geometry", Communications in Mathematical Physics **164** (1994), 525–562.
+[^1]: M. Kontsevich and Yu. Manin, "Gromov–Witten Classes, Quantum Cohomology, and Enumerative Geometry", Communications in Mathematical Physics **164** (1994), 525–562.
 
 # 연관 문서
 

@@ -92,7 +92,7 @@ $$
 
 ## 적분가능계와의 거리
 
-정규형 전개가 수렴하지 않으므로 교란된 계가 적분가능계와 정준변환으로 같다고 할 수 없다. 전개가 주는 것은 유한한 시간 동안의 근사다. 그 시간이 지수적으로 길다는 것이 [Nekhoroshev 추정](nekhoroshev-estimate.md)이고, 전개를 특정 작용 값에서 수렴시켜 불변 원환면을 얻는 것이 [Kolmogorov-Arnold-Moser 정리](kam-theorem.md)다.
+정규형 전개가 수렴하지 않으므로 교란된 계가 적분가능계와 정준변환으로 같다고 할 수 없다. 전개가 주는 것은 유한한 시간 동안의 근사다. 그 시간이 지수적으로 길다는 것이 [Nekhoroshev 추정](nekhoroshev-estimate.md)이고, 전개를 특정 작용 값에서 수렴시켜 불변 원환면을 얻는 것이 [Kolmogorov–Arnold–Moser 정리](kam-theorem.md)다.
 
 # 활용
 

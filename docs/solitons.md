@@ -77,7 +77,7 @@ $A\_{12}$ 는 $\kappa\_1$ 과 $\kappa\_2$ 가 가까울 때 $0$ 에 가깝고 �
 
 # 활용
 
-- [역산란 변환](inverse-scattering-transform.md)에서 반사계수가 $0$ 인 산란 자료에 대응한다. 그 경우 Gelfand-Levitan-Marchenko 방정식이 유한 차원 선형계가 되어 닫힌 꼴로 풀리고, 결과가 $N$ 솔리톤 해의 행렬식 공식이다.
+- [역산란 변환](inverse-scattering-transform.md)에서 반사계수가 $0$ 인 산란 자료에 대응한다. 그 경우 Gelfand–Levitan–Marchenko 방정식이 유한 차원 선형계가 되어 닫힌 꼴로 풀리고, 결과가 $N$ 솔리톤 해의 행렬식 공식이다.
 - [Lax 쌍](lax-pairs.md)의 등스펙트럼성이 충돌의 탄성을 준다. 깊이와 속도가 고윳값으로 적히고 고윳값이 보존되므로, 충돌이 바꿀 수 있는 것은 위치뿐이다.
 - [적분가능계](integrable-systems.md)의 무한차원 판본에서 작용 변수에 대응한다. 유한 자유도에서 작용 변수가 보존량이고 각 변수가 선형으로 흐르는 것처럼, $\kappa\_n$ 이 보존량이고 $\log c\_n$ 이 선형으로 흐른다.
 

@@ -136,7 +136,7 @@ $h^\vee$ 는 쌍대 Coxeter 수이고 콜론은 정규순서다. 검산의 요�
 
 - **정점작용소대수.** [정점작용소대수](vertex-operator-algebras.md)의 공리는 Virasoro 원소 $\omega$ 를 요구하고, 그 모드가 중심전하 $c$ 의 Virasoro 대수를 이룬다. 등급과 모듈러성이 이 원소에서 나오므로 모듈러 형식 쪽 응용에 필요하다.
 
-- **Wess-Zumino-Witten 모형.** [Wess–Zumino–Witten 모형](wess-zumino-witten.md)의 에너지–운동량 텐서를 위 Sugawara 이차식으로 만든다. 그 모형의 중심전하 $c=k\dim\mathfrak g/(k+h^\vee)$ 가 Sugawara 정리의 값이다.
+- **Wess–Zumino–Witten 모형.** [Wess–Zumino–Witten 모형](wess-zumino-witten.md)의 에너지–운동량 텐서를 위 Sugawara 이차식으로 만든다. 그 모형의 중심전하 $c=k\dim\mathfrak g/(k+h^\vee)$ 가 Sugawara 정리의 값이다.
 
 - **모듈라이 공간.** [곡선의 모듈라이 공간](moduli-of-curves.md) 위의 벡터다발 구성에 Virasoro 작용을 쓴다. 원 위의 벡터장이 곡면을 붙이는 변형을 생성하므로 중심확대가 다발의 사영성을 결정한다.
 

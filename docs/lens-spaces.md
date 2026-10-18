@@ -102,7 +102,7 @@ $p=7$ 에서 $q=1$ 과 $q^\prime=2$ 를 본다. $qq^\prime=2\not\equiv\pm 1\bmod
 
 - **호모토피와 미분동형의 분리.** $L(7,1)$ 과 $L(7,2)$ 가 호모토피 동치이면서 미분동형이 아니므로, 3 차원에서 호모토피형이 다양체를 결정하지 않는다. 단일연결 3 다양체가 $S^3$ 뿐이라는 Poincaré 정리와 대비된다.
 
-- **Chern-Simons 불변량.** [Chern–Simons 이론](chern-simons.md)의 접속 불변량이 렌즈 공간에서 명시적으로 계산된다. $\pi_1=\mathbb Z/p\mathbb Z$ 의 $\mathrm{SU}(2)$ 표현이 유한개이므로 임계점이 유한개이고, Chern-Simons 값이 분모 $p$ 의 유리수다.
+- **Chern–Simons 불변량.** [Chern–Simons 이론](chern-simons.md)의 접속 불변량이 렌즈 공간에서 명시적으로 계산된다. $\pi_1=\mathbb Z/p\mathbb Z$ 의 $\mathrm{SU}(2)$ 표현이 유한개이므로 임계점이 유한개이고, Chern–Simons 값이 분모 $p$ 의 유리수다.
 
 - **Reidemeister 비틀림.** 위 미분동형 분류의 증명이 비틀림 불변량의 전형적인 쓰임이다. 호몰로지가 구별하지 못하는 두 공간을 사슬복체의 비틀림이 구별한다.
 

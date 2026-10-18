@@ -128,7 +128,7 @@ $$
 - [Fourier 변환](fourier-transform.md)의 비선형 대응으로 쓰인다. $u$ 가 작으면 Gelfand–Levitan–Marchenko 방정식의 일차 항만 남아 $r(k)$ 가 $\hat u$ 에 비례하고, 자료의 시간 인자 $e^{8ik^3t}$ 는 선형화한 KdV $u\_t=-u\_{xxx}$ 의 분산 인자와 같다.
 
 [^1]: Clifford S. Gardner, John M. Greene, Martin D. Kruskal, Robert M. Miura, "Method for solving the Korteweg-de Vries equation", *Physical Review Letters* 19 (1967), 1095-1097. 산란 자료로 KdV 를 푸는 방법이 처음 나온 논문이다.
-[^2]: Philip G. Drazin, Robin S. Johnson, *Solitons: an Introduction*, Cambridge University Press, 1989, 3 장과 4 장. 산란 자료의 정의, 시간 변화의 유도, Gelfand-Levitan-Marchenko 방정식의 부호 규약을 다룬다.
+[^2]: Philip G. Drazin, Robin S. Johnson, *Solitons: an Introduction*, Cambridge University Press, 1989, 3 장과 4 장. 산란 자료의 정의, 시간 변화의 유도, Gelfand–Levitan–Marchenko 방정식의 부호 규약을 다룬다.
 [^3]: Mark J. Ablowitz, Peter A. Clarkson, *Solitons, Nonlinear Evolution Equations and Inverse Scattering*, Cambridge University Press, 1991, 2 장. N 고립파의 행렬식 꼴과 Ablowitz-Kaup-Newell-Segur 체계가 여기 있다.
 
 # 연관 문서
