@@ -2,7 +2,7 @@
 
 # 개요
 
-Steenrod 제곱은 $\mathbb Z/2$ 계수 [코호몰로지](cohomology.md)의 차수를 올리는 자연변환 $\mathrm{Sq}^i:H^n(X;\mathbb Z/2)\to H^{n+i}(X;\mathbb Z/2)$ 이다. 컵곱은 현수를 지나면 사라지지만 Steenrod 제곱은 남으므로, 코호몰로지 환이 같은 두 공간을 구별한다. 안정 연산 전체가 이루는 대수가 Steenrod 대수이고 [스펙트럼 수열](spectral-sequences.md)의 계산이 그 구조를 준다.
+**Steenrod 제곱(Steenrod square)** 은 $\mathbb Z/2$ 계수 [코호몰로지](cohomology.md)의 차수를 올리는 자연변환 $\mathrm{Sq}^i:H^n(X;\mathbb Z/2)\to H^{n+i}(X;\mathbb Z/2)$ 이다. 컵곱은 현수를 지나면 사라지지만 Steenrod 제곱은 남으므로, 코호몰로지 환이 같은 두 공간을 구별한다. 안정 연산 전체가 이루는 대수가 Steenrod 대수이고 [스펙트럼 수열](spectral-sequences.md)의 계산이 그 구조를 준다.
 
 # 직관
 

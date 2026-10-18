@@ -2,7 +2,7 @@
 
 # 개요
 
-Sturm–Liouville 이론(Sturm–Liouville theory)은 구간 $\lbrack a,b\rbrack$ 위의 2계 선형 미분방정식
+**Sturm–Liouville 이론(Sturm–Liouville theory)** 은 구간 $\lbrack a,b\rbrack$ 위의 2계 선형 미분방정식
 
 $$
 -\bigl(p(x)u'\bigr)'+q(x)u=\lambda\thinspace w(x)\thinspace u

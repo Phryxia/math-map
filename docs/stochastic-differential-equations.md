@@ -2,7 +2,7 @@
 
 # 개요
 
-확률미분방정식(stochastic differential equation, SDE)은 미지의 확률과정 $X$ 에 대한 적분 등식
+**확률미분방정식(stochastic differential equation, SDE)** 은 미지의 확률과정 $X$ 에 대한 적분 등식
 
 $$
 X_t=X_0+\int_0^ta(s,X_s)\thinspace ds+\int_0^tb(s,X_s)\thinspace dB_s

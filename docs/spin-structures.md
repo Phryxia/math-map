@@ -2,7 +2,7 @@
 
 # 개요
 
-스핀 구조는 방향 지어진 [Riemann 다양체](riemannian-metrics.md)의 정규직교 틀다발을 회전군의 이중덮개로 들어 올린 [주다발](principal-bundles.md)이다. 들어 올림이 있는 것은 둘째 Stiefel–Whitney 류가 $0$ 인 것과 같다.
+**스핀 구조(spin structure)** 는 방향 지어진 [Riemann 다양체](riemannian-metrics.md)의 정규직교 틀다발을 회전군의 이중덮개로 들어 올린 [주다발](principal-bundles.md)이다. 들어 올림이 있는 것은 둘째 Stiefel–Whitney 류가 $0$ 인 것과 같다.
 
 들어 올림이 있으면 회전군의 표현으로는 만들 수 없는 스피너 다발이 생기고, 그 위에서 Dirac 작용소를 세울 수 있다.
 
