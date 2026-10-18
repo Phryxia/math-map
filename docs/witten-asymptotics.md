@@ -22,7 +22,7 @@ Witten 의 출발점은 형식적 경로적분 $Z_k(M)=\int\mathcal DA\thickspac
 
 $M$ 을 닫힌 유향 3 차원 [다양체](manifolds.md), $\tau_k(M)$ 을 $\mathrm{SU}(2)\_k$ 의 RT 불변량이라 한다. $M$ 위의 평탄 $\mathrm{SU}(2)$ 접속의 게이지 동치류 모듈라이를 $\mathcal M(M)$ 이라 하고 그 점들이 고립되고 비퇴화라고 가정한다.
 
-**추측 (Witten 1989).** $k\to\infty$ 에서 다음이 성립한다.
+**Witten 점근 추측(Witten's asymptotic expansion conjecture, 1989).** $k\to\infty$ 에서 다음이 성립한다.
 
 $$
 \tau_k(M)\thickspace\sim\thickspace\sum_{\alpha\in\mathcal M(M)}e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}\thickspace k^{(h^1_\alpha-h^0_\alpha)/2}\thickspace\sqrt{T_\alpha}\thickspace e^{i\pi I_\alpha/4}\cdot\big(c_\alpha+O(k^{-1})\big)

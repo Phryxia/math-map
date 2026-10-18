@@ -41,7 +41,7 @@ $k=3$ 부터는 자명표현과 부호표현 말고 2 차원 기약표현이 하
 
 $\rho:\mathbb C[S_k]\to\mathrm{End}(V^{\otimes k})$ 와 $\pi:\mathbb C[\mathrm{GL}\_n]\to\mathrm{End}(V^{\otimes k})$ 를 위 작용으로 두고 상을 각각 $\mathcal S$ 와 $\mathcal G$ 라 하자.
 
-**정리 (Schur, 1901; Weyl, 1939)**
+**Schur–Weyl 쌍대성(Schur–Weyl duality, Schur 1901, Weyl 1939)**
 
 $$
 \mathrm{End}\_{\mathcal G}(V^{\otimes k})=\mathcal S,\qquad \mathrm{End}\_{\mathcal S}(V^{\otimes k})=\mathcal G

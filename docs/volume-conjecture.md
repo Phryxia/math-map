@@ -36,7 +36,7 @@ $K$ 를 매듭이라 하자. $\mathfrak{sl}\_2$ 의 $N$ 차원 기약표현으�
 
 ## 추측
 
-**추측 (Kashaev 1997, Murakami–Murakami 2001).** 모든 매듭 $K$ 에 대해
+**볼륨 추측(volume conjecture, Kashaev 1997, Murakami–Murakami 2001).** 모든 매듭 $K$ 에 대해
 
 $$
 \lim_{N\to\infty}\frac{2\pi}N\log\big|J_N(K;e^{2\pi i/N})\big|=\mathrm{Vol}(S^3\setminus K)
