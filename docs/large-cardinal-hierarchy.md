@@ -4,7 +4,7 @@
 
 **큰 기수의 층(large cardinal hierarchy)** 은 도달 불가능 기수 위에 놓이는 [큰 기수](large-cardinals.md) 공리들의 줄이다. Mahlo 기수와 약콤팩트 기수는 $\kappa$ 아래에 같은 종류의 기수가 많다는 반사 조건으로, 강기수와 초콤팩트 기수와 Woodin 기수는 $\kappa$ 를 임계점으로 하는 기본 매장 $j\colon V\to M$ 에서 $M$ 이 $V$ 를 얼마나 담는지로 정의한다.
 
-아래 층의 존재는 위 층의 정의에서 따라 나오고, 거꾸로는 따라 나오지 않는다. 이 줄이 집합론에서 명제의 무모순성 강도를 재는 눈금이다.
+아래 층의 존재는 위 층의 정의에서 따라 나오고, 거꾸로는 따라 나오지 않는다. 이 줄이 집합론에서 명제의 무모순성 강도를 비교하는 순서다.
 
 # 직관
 
@@ -30,7 +30,7 @@ $\kappa\to(\kappa)^{\lt \omega}\_2$ 는 크기마다 따로 주어진 칠하기�
 
 ## 강기수
 
-서수 $\gamma$ 에 대해, 기본 매장 $j\colon V\to M$ 이 있어 $\mathrm{crit}(j)=\kappa$ 이고 $V_\gamma\subseteq M$ 이면 $\kappa$ 가 $\gamma$-**강**이라 한다. 모든 서수 $\gamma$ 에서 $\gamma$-강인 기수를 **강기수**라 한다.
+서수 $\gamma$ 에 대해, 기본 매장 $j\colon V\to M$ 이 있어 $\mathrm{crit}(j)=\kappa$ 이고 $V_\gamma\subseteq M$ 이면 $\kappa$ 가 $\gamma$-강이라 한다. 모든 서수 $\gamma$ 에서 $\gamma$-강인 기수를 **강기수**라 한다.
 
 ## 초콤팩트 기수
 
@@ -38,7 +38,7 @@ $\kappa\to(\kappa)^{\lt \omega}\_2$ 는 크기마다 따로 주어진 칠하기�
 
 ## Woodin 기수
 
-$A\subseteq V_\kappa$ 와 서수 $\gamma$ 를 둔다. 기본 매장 $j\colon V\to M$ 이 있어 $\mathrm{crit}(j)=\lambda$ , $\gamma\lt j(\lambda)$ , $V_\gamma\subseteq M$ , $j(A)\cap V_\gamma=A\cap V_\gamma$ 이면 $\lambda$ 가 $A$ 에 대해 $\gamma$-**강**이라 한다.
+$A\subseteq V_\kappa$ 와 서수 $\gamma$ 를 둔다. 기본 매장 $j\colon V\to M$ 이 있어 $\mathrm{crit}(j)=\lambda$ , $\gamma\lt j(\lambda)$ , $V_\gamma\subseteq M$ , $j(A)\cap V_\gamma=A\cap V_\gamma$ 이면 $\lambda$ 가 $A$ 에 대해 $\gamma$-강이라 한다.
 
 도달 불가능 기수 $\kappa$ 가 **Woodin 기수**라는 것은 모든 $A\subseteq V_\kappa$ 에 대해 어떤 $\lambda\lt \kappa$ 가 모든 $\gamma\lt \kappa$ 에서 $A$ 에 대해 $\gamma$-강이라는 것이다. 강기수의 조건을 $V_\kappa$ 의 부분집합 하나하나에 상대화하고, 그 조건을 만족하는 $\lambda$ 를 $\kappa$ 아래에서 찾도록 바꾼 꼴이다.
 
@@ -83,7 +83,7 @@ Woodin 기수의 존재는 측도 가능 기수의 존재보다 무모순성 강
 # 활용
 
 - **결정성의 가정.** [결정성](determinacy.md) 문서의 큰 기수 절이 쓰는 가정이 이 층의 이름으로 적힌다. Woodin 기수가 $n$ 개 있고 그 위에 측도 가능 기수가 있으면 $\mathbf\Pi^1\_{n+1}$ 집합이 결정되고, Woodin 기수가 무한히 많으면 사영집합 전체가 결정된다[^5].
-- **무모순성 강도의 눈금.** 큰 기수 문서의 무모순성 강도 절이 쓰는 눈금의 눈금점이 이 층들이다. 명제 $\varphi$ 의 강도를 재려면 $\varphi$ 의 모형을 만드는 데 필요한 층과 $\varphi$ 에서 되얻는 층을 양쪽에서 좁힌다.
+- **무모순성 강도의 순서.** 큰 기수 문서의 무모순성 강도 절이 쓰는 순서의 각 단계가 이 층들이다. 명제 $\varphi$ 의 강도를 재려면 $\varphi$ 의 모형을 만드는 데 필요한 층과 $\varphi$ 에서 되얻는 층을 양쪽에서 좁힌다.
 - **특이 기수 가설의 독립성.** 초콤팩트 기수에서 출발한 강제법이 특이 기수 가설이 깨지는 모형을 준다[^6]. 이 결론에 초콤팩트성이 필요한 이유는 강제법이 $\kappa$ 위의 모든 작은 부분집합을 매장의 상 안에서 다뤄야 하는 데 있다.
 
 [^1]: F. Rowbottom, *Some strong axioms of infinity incompatible with the axiom of constructibility*, Annals of Mathematical Logic **3** (1971), 1–44.
