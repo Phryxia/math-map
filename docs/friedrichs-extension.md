@@ -54,7 +54,7 @@ $$
 D(A)\subset Q,\qquad \langle Au,v\rangle=q\lbrack u,v\rbrack\quad(u\in D(A),\thinspace v\in Q)
 $$
 
-증명의 요지. $Q$ 를 형식 노름의 Hilbert 공간으로 보면 $q+(1-c)\langle\cdot,\cdot\rangle$ 이 그 내적이다. $v\mapsto\langle f,v\rangle$ 는 이 공간의 유계 범함수이므로 Riesz 표현정리가 $u$ 를 준다. 이 대응 $f\mapsto u$ 는 유계 자기수반이고 단사이므로 그 역이 자기수반 작용소를 주고, 상수 $1-c$ 를 되돌리면 $A$ 가 된다. ∎
+증명의 요지. $Q$ 를 형식 노름의 Hilbert 공간으로 보면 $q+(1-c)\langle\cdot,\cdot\rangle$ 이 그 내적이다. $v\mapsto\langle f,v\rangle$ 는 이 공간의 유계 범함수이므로 Riesz 표현정리가 $u$ 를 준다. 이 대응 $f\mapsto u$ 는 유계 자기수반이고 단사이므로 그 역이 자기수반 작용소를 주고, 상수 $1-c$ 를 빼면 $A$ 가 된다. ∎
 
 ## 하한의 보존
 

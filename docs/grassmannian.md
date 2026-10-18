@@ -24,7 +24,7 @@ $W\in\mathrm{Gr}(k,V)$ 의 기저 $w_1,\dots,w_k$ 에 대해 외적 $w_1\wedge\c
 
 $$\mathrm{Gr}(k,V)\hookrightarrow\mathbb P\bigl(\Lambda^k V\bigr),\qquad W\mapsto\lbrack w_1\wedge\cdots\wedge w_k\rbrack$$
 
-이 사상은 단사다. $w_1\wedge\cdots\wedge w_k$ 가 $v\wedge(w_1\wedge\cdots\wedge w_k)=0$ 인 $v$ 들로 $W$ 를 되돌려 주기 때문이다. 상은 Plücker 좌표의 이차식으로 정의되는 닫힌 부분다양체다. $\mathrm{Gr}(2,4)$ 에서는 관계식이 하나다.
+이 사상은 단사다. $w_1\wedge\cdots\wedge w_k$ 가 $v\wedge(w_1\wedge\cdots\wedge w_k)=0$ 인 $v$ 들로 $W$ 를 복원하기 때문이다. 상은 Plücker 좌표의 이차식으로 정의되는 닫힌 부분다양체다. $\mathrm{Gr}(2,4)$ 에서는 관계식이 하나다.
 
 $$p\_{12}p\_{34}-p\_{13}p\_{24}+p\_{14}p\_{23}=0$$
 
