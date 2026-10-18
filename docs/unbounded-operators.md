@@ -20,6 +20,8 @@ $H=L^2[0,1]$ 에서 $T=-i\thinspace d/dx$ 를 생각하자. 이 표현만으로�
 
 # 정의
 
+**비유계 작용소(unbounded operator)** 는 [Hilbert 공간](hilbert-spaces.md)의 조밀한 부분공간에서 정의되고 유계가 아닌 선형작용소다.
+
 ## 조밀 정의 작용소와 수반
 
 $\mathcal D(T)\subset H$ 가 조밀하고 $T:\mathcal D(T)\to H$ 가 선형이라 하자. 수반작용소의 정의역은 다음이다.
