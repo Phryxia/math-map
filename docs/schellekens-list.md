@@ -42,7 +42,7 @@ $$
 
 ## Schellekens 목록
 
-자료 $(\mathfrak g_i,k_i)\_i$ 가 $V$ 의 **타입**이다. Schellekens 목록은 $c=24$ 홀로모픽 VOA 가 가질 수 있는 타입 71 가지의 표이고, $V_1=0$ 인 경우, $V_1$ 이 아벨 $24$ 차원인 경우([Leech 격자](leech-lattice.md) VOA), 반단순인 경우 69 가지로 나뉜다.
+자료 $(\mathfrak g_i,k_i)\_i$ 가 $V$ 의 **타입**이다. **Schellekens 목록(Schellekens list)** 은 $c=24$ 홀로모픽 VOA 가 가질 수 있는 타입 71 가지의 표이고, $V_1=0$ 인 경우, $V_1$ 이 아벨 $24$ 차원인 경우([Leech 격자](leech-lattice.md) VOA), 반단순인 경우 69 가지로 나뉜다.
 
 ## 분류 정리의 현재 상태
 
