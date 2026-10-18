@@ -2,7 +2,7 @@
 
 # 개요
 
-Temperley–Lieb 대수(Temperley–Lieb algebra) $TL_k(\delta)$ 는 교차하지 않는 짝짓기 도형이 만드는 대수다. 생성원 $e_1,\dots,e_{k-1}$ 과 관계
+**Temperley–Lieb 대수(Temperley–Lieb algebra)** $TL_k(\delta)$ 는 교차하지 않는 짝짓기 도형이 만드는 대수다. 생성원 $e_1,\dots,e_{k-1}$ 과 관계
 
 $$
 e_i^2=\delta e_i,\qquad e_ie\_{i\pm 1}e_i=e_i,\qquad e_ie_j=e_je_i\ (\vert i-j\vert\ge 2)

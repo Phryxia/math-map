@@ -2,7 +2,7 @@
 
 # 개요
 
-Thom 공간은 [벡터다발](vector-bundles.md)의 섬유마다 무한원점을 붙여 얻는 공간이다. 랭크 $r$ 인 다발 $E\to X$ 에서 이 공간을 $\mathrm{Th}(E)$ 라 쓴다.
+**Thom 공간(Thom space)** 은 [벡터다발](vector-bundles.md)의 섬유마다 무한원점을 붙여 얻는 공간이다. 랭크 $r$ 인 다발 $E\to X$ 에서 이 공간을 $\mathrm{Th}(E)$ 라 쓴다.
 
 $\mathrm{Th}(E)$ 의 [코호몰로지](cohomology.md)는 $X$ 의 코호몰로지를 차수 $r$ 만큼 올린 것과 같고(Thom 동형 정리), 이 동형을 주는 차수 $r$ 인 류가 Thom 류다. Euler 류와 Stiefel–Whitney 류를 Thom 류에서 끌어내고, 코보디즘군을 Thom 공간의 호모토피군으로 번역한다.
 

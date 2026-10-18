@@ -2,7 +2,7 @@
 
 # 개요
 
-Tate 곡선(Tate curve)은 $p$ 진체 $K$ 와 $|q|\lt 1$ 인 $q\in K^{\times}$ 에 대해
+**Tate 곡선(Tate curve)** 은 $p$ 진체 $K$ 와 $|q|\lt 1$ 인 $q\in K^{\times}$ 에 대해
 
 $$
 E_q(K)\cong K^{\times}/q^{\mathbb Z}

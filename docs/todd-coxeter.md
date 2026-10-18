@@ -2,7 +2,7 @@
 
 # 개요
 
-Todd–Coxeter 알고리즘은 [군의 표시](group-presentations.md) $G=\langle S\mid R\rangle$ 와 부분군 $H=\langle h_1,\dots,h_m\rangle$ 이 주어졌을 때 잉여류 $H\backslash G$ 를 하나씩 열거하는 절차다. 열거가 끝나면 지표 $\lbrack G:H\rbrack$ 과 잉여류 위의 순열표현을 얻는다.
+**Todd–Coxeter 알고리즘(Todd–Coxeter algorithm)** 은 [군의 표시](group-presentations.md) $G=\langle S\mid R\rangle$ 와 부분군 $H=\langle h_1,\dots,h_m\rangle$ 이 주어졌을 때 잉여류 $H\backslash G$ 를 하나씩 열거하는 절차다. 열거가 끝나면 지표 $\lbrack G:H\rbrack$ 과 잉여류 위의 순열표현을 얻는다.
 
 표시만으로는 군의 위수조차 알 수 없지만, 지표가 유한한 부분군을 하나 찾으면 이 절차가 그 지표를 반드시 계산해 낸다. $H$ 를 자명군으로 두면 $G$ 자체의 위수가 나온다.
 
