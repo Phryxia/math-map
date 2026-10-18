@@ -68,7 +68,7 @@ $$
 
 ## Herbrand–Ribet 정리
 
-**정리.** $p$ 가 홀소수, $k$ 가 짝수, $2\le k\le p-3$ 일 때
+**Herbrand–Ribet 정리(Herbrand–Ribet theorem).** $p$ 가 홀소수, $k$ 가 짝수, $2\le k\le p-3$ 일 때
 
 $$
 p\mid B_k\quad\Longleftrightarrow\quad A^{(\omega^{1-k})}\ne0

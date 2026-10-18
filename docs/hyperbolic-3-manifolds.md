@@ -35,7 +35,7 @@ $$
 
 ## 쌍곡 다양체와 Kleinian 군
 
-> **정의.** $\Gamma\le\mathrm{PSL}\_2(\mathbb C)$ 가 이산이고 비틀림이 없으면 **Kleinian 군**이라 하고, $M=\mathbb H^3/\Gamma$ 를 완비 쌍곡 3 다양체라 한다. $\mathrm{Vol}(M)\lt\infty$ 이면 유한 부피다.
+> **정의.** $\Gamma\le\mathrm{PSL}\_2(\mathbb C)$ 가 이산이고 비틀림이 없으면 **Kleinian 군**이라 하고, $M=\mathbb H^3/\Gamma$ 를 **완비 쌍곡 3 다양체(complete hyperbolic 3-manifold)** 라 한다. $\mathrm{Vol}(M)\lt\infty$ 이면 유한 부피다.
 
 비틀림이 없다는 조건이 타원형 원소를 배제하므로 작용이 자유롭고 몫이 다양체가 된다. 유한 부피이면 $M$ 은 콤팩트한 부분과 유한개의 **cusp**(원환면 $\times[0,\infty)$ 꼴, 포물형 원소들이 만든다)로 나뉜다.
 

@@ -76,7 +76,7 @@ $$
 
 이 곱은 정의상 교환적이지 않으므로 교환 제약을 따로 준다. 곡선 $X$ 위의 두 점 $x_1,x_2$ 에 층을 하나씩 놓고 두 점을 충돌시키는 족(Beilinson–Drinfeld Grassmann 다양체)에서, 두 점이 떨어져 있을 때 곱이 교환적이고 충돌 극한에서 합성곱이 나온다. 점을 맞바꾸는 경로가 주는 제약이 **융합**(fusion) 교환 제약이다.
 
-> **정리 (Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 는 대칭 텐서 범주이고, 전체 코호몰로지 $H^\ast$ 를 올림자로 하는 [Tannaka 쌍대성](tannaka-duality.md)으로
+> **기하학적 Satake 대응(geometric Satake equivalence, Lusztig, Ginzburg, Beilinson–Drinfeld, Mirković–Vilonen).** 합성곱과 융합 교환 제약에 대해 $\mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)$ 는 대칭 텐서 범주이고, 전체 코호몰로지 $H^\ast$ 를 올림자로 하는 [Tannaka 쌍대성](tannaka-duality.md)으로
 > $$
 > \mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\thickspace\simeq\thickspace\mathrm{Rep}(\widehat G)
 > $$
