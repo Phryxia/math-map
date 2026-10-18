@@ -44,7 +44,7 @@ $$
 \tau^{\mathrm{Ohtsuki}}(M)=\sum_{n\ge0}\lambda_n(M)\thinspace h^n
 $$
 
-점근 추측이 여러 임계점의 기여를 모두 보는 데 비해 Ohtsuki 급수는 자명한 접속 하나 주위의 섭동전개를 본다. 첫 계수 $\lambda_1$ 이 [Casson 불변량](casson-invariant.md)의 상수배다.
+이 급수가 **Ohtsuki 급수(Ohtsuki series)** 다. 점근 추측이 여러 임계점의 기여를 모두 보는 데 비해 Ohtsuki 급수는 자명한 접속 하나 주위의 섭동전개를 본다. 첫 계수 $\lambda_1$ 이 [Casson 불변량](casson-invariant.md)의 상수배다.
 
 # 성질
 
