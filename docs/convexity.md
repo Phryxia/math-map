@@ -125,6 +125,7 @@ $$
 
 ### 볼록 해석과 쌍대성
 
+- [Jensen 부등식](jensen-inequality.md)
 - [부분미분](subdifferential.md)
 - [볼록 공액](convex-conjugate.md)
 - [준볼록 함수](quasiconvex-functions.md)

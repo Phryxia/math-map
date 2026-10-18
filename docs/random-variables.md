@@ -187,6 +187,7 @@ $n$ 명에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 �
 
 - [Borel–Cantelli 보조정리](borel-cantelli.md)
 - [큰 수의 법칙](law-of-large-numbers.md)
+- [Jensen 부등식](jensen-inequality.md)
 - [집중부등식](concentration-inequalities.md)
 - [특성함수](characteristic-functions.md)
 

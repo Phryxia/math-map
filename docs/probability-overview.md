@@ -58,6 +58,7 @@ graph TD
   - [Radically elementary 확률론](radically-elementary-probability.md): 초유한 크기의 유한 확률공간 위에서 측도 없이 세운 Brown 운동과 확률적분
 - [확률변수](random-variables.md): 가측함수로서의 확률변수와 적분으로서의 기댓값
   - [확률밀도](probability-density.md): 분포를 기준측도로 적분해 쓴 함수와 밀도가 없는 분포
+  - [Jensen 부등식](jensen-inequality.md): 평균을 먼저 낼 때와 나중에 낼 때의 대소, 지지선 증명과 등호 조건
 - [조건부 기댓값](conditional-expectation.md): 부분 $\sigma$ 대수 위로의 사영
 - [Kolmogorov 확장정리](kolmogorov-extension.md): 정합적 유한차원 분포족에서 확률과정을 세우는 정리
 
