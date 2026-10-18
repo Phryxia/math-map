@@ -50,7 +50,7 @@ $$
 \pi_{E,r}(X)=\char35{}\lbrace p\le X:\ p\ \text{좋은 환원},\ a_p=r\rbrace
 $$
 
-> **추측 (Lang–Trotter, 1976).** $r\ne0$ 이거나 $r=0$ 이면
+> **Lang–Trotter 추측(Lang–Trotter conjecture, 1976).** $r\ne0$ 이거나 $r=0$ 이면
 > $$\pi_{E,r}(X)\sim C_{E,r}\frac{\sqrt X}{\log X}\qquad(X\to\infty)$$
 > 단 $C_{E,r}=0$ 인 자명한 경우(합동 조건 때문에 $a_p=r$ 이 유한 번만 가능한 경우)는 제외한다.
 

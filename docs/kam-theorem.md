@@ -44,7 +44,7 @@ $$
 
 ## Kolmogorov–Arnold–Moser 정리
 
-**정리.** $H\_0$ 이 해석적이고 Kolmogorov 비퇴화이며 $H\_1$ 이 해석적이라 한다. $\gamma\gt 0$ 과 $\tau\gt n-1$ 을 고정하면, $\vert\varepsilon\vert$ 이 충분히 작을 때 $\nu(I)\in D(\gamma,\tau)$ 인 각 원환면에 대응하는 $H\_0+\varepsilon H\_1$ 의 불변 원환면이 있다. 그 원환면 위의 운동은 진동수 $\nu(I)$ 의 등속 운동이고, 원환면은 교란 전의 것에서 $\varepsilon$ 의 크기만큼 떨어져 있다.[^1]
+**Kolmogorov–Arnold–Moser 정리(Kolmogorov–Arnold–Moser theorem).** $H\_0$ 이 해석적이고 Kolmogorov 비퇴화이며 $H\_1$ 이 해석적이라 한다. $\gamma\gt 0$ 과 $\tau\gt n-1$ 을 고정하면, $\vert\varepsilon\vert$ 이 충분히 작을 때 $\nu(I)\in D(\gamma,\tau)$ 인 각 원환면에 대응하는 $H\_0+\varepsilon H\_1$ 의 불변 원환면이 있다. 그 원환면 위의 운동은 진동수 $\nu(I)$ 의 등속 운동이고, 원환면은 교란 전의 것에서 $\varepsilon$ 의 크기만큼 떨어져 있다.[^1]
 
 살아남은 원환면들의 합집합의 여집합은 측도가 $\gamma$ 의 상수배 이하다. $\gamma$ 를 $\varepsilon$ 과 함께 $0$ 으로 보내면 합집합의 측도가 전체로 간다.
 
