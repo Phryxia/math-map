@@ -2,7 +2,7 @@
 
 # 개요
 
-$p$ 진 다중 zeta 값은 사영직선에서 $0,1,\infty$ 를 뺀 공간 위의 반복 [Coleman 적분](coleman-integration.md)으로 정의되는 $\mathbb Q_p$ 의 수다. [다중 zeta 값](multiple-zeta-values.md)의 반복 적분 표현에서 복소 적분을 $p$ 진 적분으로 바꾼 것이다.
+**p 진 다중 zeta 값(p-adic multiple zeta value)** 은 사영직선에서 $0,1,\infty$ 를 뺀 공간 위의 반복 [Coleman 적분](coleman-integration.md)으로 정의되는 $\mathbb Q_p$ 의 수다. [다중 zeta 값](multiple-zeta-values.md)의 반복 적분 표현에서 복소 적분을 $p$ 진 적분으로 바꾼 것이다.
 
 급수 표현이 $p$ 진수체에서 수렴하지 않으므로 급수에서 나오는 관계는 그대로 옮겨지지 않는다. 반복 적분에서 나오는 셔플 관계는 그대로 성립한다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-$p$ 진 $L$ 함수(p-adic L-function)는 복소 $L$ 함수의 특수값을 $p$ 진 해석 함수 하나로 모은 것이다. 값들은 유리수이고, 유리수는 복소수로도 $p$ 진수로도 읽힌다. $p$ 진 거리로 읽으면 서로 다른 지표에서 나온 값들이 가까워지고, 그 가까움이 한 함수의 연속성이 된다.
+**p 진 L 함수(p-adic L-function)** 는 복소 $L$ 함수의 특수값을 $p$ 진 해석 함수 하나로 모은 것이다. 값들은 유리수이고, 유리수는 복소수로도 $p$ 진수로도 읽힌다. $p$ 진 거리로 읽으면 서로 다른 지표에서 나온 값들이 가까워지고, 그 가까움이 한 함수의 연속성이 된다.
 
 원형은 [Kubota–Leopoldt 의 p 진 zeta 함수](kubota-leopoldt-zeta.md)다. Riemann zeta 의 음의 정수 값 $\zeta(1-n)=-B_n/n$ 을 [Bernoulli 수](bernoulli-numbers.md)의 Kummer 합동으로 이어 $\mathbb Z_p$ 위의 함수로 연장한다.
 
