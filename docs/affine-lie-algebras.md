@@ -20,11 +20,11 @@ $$
 \lbrack x\otimes t^m,y\otimes t^n\rbrack=\lbrack x,y\rbrack\otimes t^{m+n}
 $$
 
-이 대수의 표현을 찾으려 하면 막힌다. $\mathbb C\lbrack t,t^{-1}\rbrack$ 쪽으로 무한히 뻗은 방향에 최고무게 벡터를 세울 자리가 없다. $t$ 의 지수를 재는 눈금이 대수 안에 없어서 어느 벡터가 위인지 정할 수 없다.
+이 대수의 표현을 찾으려 하면 막힌다. $\mathbb C\lbrack t,t^{-1}\rbrack$ 쪽으로 무한히 뻗은 방향에 최고무게 벡터를 세울 자리가 없다. $t$ 의 지수를 읽는 연산자가 대수 안에 없어서 어느 벡터가 위인지 정할 수 없다.
 
-눈금을 넣는다. $d=t\thinspace\partial_t$ 를 더해 $\lbrack d,x\otimes t^n\rbrack=n\thinspace x\otimes t^n$ 으로 두면 $d$ 의 고윳값이 지수 $n$ 을 읽는다. 그러면 $n$ 이 가장 큰 벡터를 최고무게로 잡을 수 있다.
+지수를 읽는 연산자를 넣는다. $d=t\thinspace\partial_t$ 를 더해 $\lbrack d,x\otimes t^n\rbrack=n\thinspace x\otimes t^n$ 으로 두면 $d$ 의 고윳값이 지수 $n$ 을 읽는다. 그러면 $n$ 이 가장 큰 벡터를 최고무게로 잡을 수 있다.
 
-눈금만으로는 표현이 자명해진다. $x\otimes t^m$ 과 $y\otimes t^{-m}$ 의 괄호가 $\lbrack x,y\rbrack\otimes t^0$ 뿐이어서 올림과 내림을 반복해도 $\mathfrak g$ 안에서 맴돌고, 최고무게 벡터에 작용해 얻는 공간이 유한차원이 된다. 그래서 중심원소 $K$ 를 더해 괄호에 항을 하나 보탠다.
+이 연산자만으로는 표현이 자명해진다. $x\otimes t^m$ 과 $y\otimes t^{-m}$ 의 괄호가 $\lbrack x,y\rbrack\otimes t^0$ 뿐이어서 올림과 내림을 반복해도 $\mathfrak g$ 안에서 맴돌고, 최고무게 벡터에 작용해 얻는 공간이 유한차원이 된다. 그래서 중심원소 $K$ 를 더해 괄호에 항을 하나 보탠다.
 
 $$
 \lbrack x\otimes t^m,y\otimes t^n\rbrack=\lbrack x,y\rbrack\otimes t^{m+n}+m\thinspace\delta_{m+n,0}\thinspace(x,y)\thinspace K
@@ -147,7 +147,7 @@ $\alpha_0=\delta-\theta$ 이므로 $\hat\Lambda(h_0)\ge 0$ 이 $\langle\lambda,\
 
 > **정리.** 기약 일반화 Cartan 행렬은 유한형, 아핀형, 부정형 가운데 정확히 하나다.
 
-증명의 요지는 Perron–Frobenius 정리다. $A$ 의 비대각성분이 음이 아닌 꼴로 $2I-A$ 를 보면 비음행렬이고 기약이므로 성분이 모두 양수인 고유벡터 $v$ 가 최대 고윳값에 붙는다. 그 고윳값이 $2$ 보다 작으면 $Av\gt 0$ , 같으면 $Av=0$ , 크면 $Av\lt 0$ 이고, 세 경우가 각각 유한형, 아핀형, 부정형이다. 최대 고윳값이 유일하므로 세 경우가 배타적이다.
+증명의 요지는 [Perron–Frobenius 정리](perron-frobenius.md)다. $A$ 의 비대각성분이 음이 아닌 꼴로 $2I-A$ 를 보면 비음행렬이고 기약이므로 성분이 모두 양수인 고유벡터 $v$ 가 최대 고윳값에 붙는다. 그 고윳값이 $2$ 보다 작으면 $Av\gt 0$ , 같으면 $Av=0$ , 크면 $Av\lt 0$ 이고, 세 경우가 각각 유한형, 아핀형, 부정형이다. 최대 고윳값이 유일하므로 세 경우가 배타적이다.
 
 아핀형에서 핵이 1 차원이라는 것은 최대 고윳값의 고유공간이 1 차원이라는 Perron–Frobenius 의 결론이다. 그 유일한 핵벡터가 표시 $(a_0,\dots,a_n)$ 이고, $\delta=\sum_i a_i\alpha_i$ 가 성립한다.
 
@@ -193,9 +193,9 @@ $q=e^{2\pi i\tau}$ 로 두고 지표를 $\tau$ 의 함수로 보면, 레벨 $k$ 
 
 - **Macdonald 항등식.** 위 지표 공식에 $\hat\Lambda=0$ 을 넣어 얻는 $q$ 급수 항등식이 Jacobi 삼중곱과 Euler 오각수 정리를 포함한다. 분할수의 생성함수 항등식 여럿이 같은 방식으로 나온다.
 
-- **범주 O.** [범주 O](category-o.md) 의 구성이 Kac–Moody 대수에서 그대로 작동한다. Verma 가군, 블록 분해, Kazhdan–Lusztig 중복도가 아핀형에서도 정의되고, 아핀 Kazhdan–Lusztig 다항식이 레벨 $k$ 표현의 지표를 계산한다.
+- **범주 O.** [범주 O](category-o.md) 의 구성이 Kac–Moody 대수에서 그대로 작동한다. Verma 가군, 블록 분해, Kazhdan–Lusztig 중복도가 아핀형에서도 정의되고, 아핀 [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)이 레벨 $k$ 표현의 지표를 계산한다.
 
-- **기하학적 Langlands 강령.** 임계 레벨 $k=-h^\vee$ 는 Weyl–Kac 지표 공식의 분모가 뜻을 잃는 레벨이다. 이 레벨에서 $\hat{\mathfrak g}$ 의 중심이 커지고, 그 중심을 [기하학적 Langlands 강령](geometric-langlands.md) 대응의 쌍대 쪽 자료와 맞추는 것이 Feigin-Frenkel 동형이다.
+- **기하학적 Langlands 강령.** 임계 레벨 $k=-h^\vee$ 는 Weyl–Kac 지표 공식의 분모가 뜻을 잃는 레벨이다. 이 레벨에서 $\hat{\mathfrak g}$ 의 중심이 커지고, 그 중심을 [기하학적 Langlands 강령](geometric-langlands.md) 대응의 쌍대 쪽 자료와 맞추는 것이 Feigin–Frenkel 동형이다.
 
 [^1]: V. Kac, *Infinite Dimensional Lie Algebras*, 3rd ed., Cambridge University Press, 1990, 4 장.
 [^2]: V. Kac, *Infinite Dimensional Lie Algebras*, 3rd ed., Cambridge University Press, 1990, 10 장과 13 장.
