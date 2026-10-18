@@ -18,7 +18,7 @@ Euler 는 $\zeta$ 의 $s=1$ 극에서 $\sum_p 1/p$ 의 발산을 얻었다. $p\e
 
 ## Dirichlet 지표
 
-법 $q$ 의 **Dirichlet 지표**는 다음을 만족하는 함수 $\chi:\mathbb Z\to\mathbb C$ 다.
+법 $q$ 의 **Dirichlet 지표(Dirichlet character)** 는 다음을 만족하는 함수 $\chi:\mathbb Z\to\mathbb C$ 다.
 
 - $\chi(n+q)=\chi(n)$
 - $\chi(mn)=\chi(m)\chi(n)$
@@ -36,7 +36,7 @@ $\chi$ 가 법 $q$ 의 지표이고 $d\mid q$ 인 어떤 $d$ 와 법 $d$ 의 지
 
 ## Dirichlet L 함수
 
-$\mathrm{Re}\thinspace s\gt 1$ 에서 다음 급수가 절대수렴한다.
+지표 $\chi$ 의 **Dirichlet L 함수(Dirichlet L-function)** 는 다음 급수이고, $\mathrm{Re}\thinspace s\gt 1$ 에서 절대수렴한다.
 
 $$
 L(s,\chi)=\sum_{n=1}^\infty\frac{\chi(n)}{n^s}

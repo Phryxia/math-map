@@ -36,7 +36,7 @@ Poincaré–Birkhoff–Witt 정리로 $M(\lambda)$ 는 음근 벡터들의 단�
 
 ## 범주 O
 
-$\mathfrak g$ 를 복소 반단순 Lie 대수, $\mathfrak h\subset\mathfrak b\subset\mathfrak g$ 를 Cartan 과 Borel 이라 하자. $\mathcal O$ 의 대상은 다음 셋을 만족하는 $U(\mathfrak g)$ 가군 $M$ 이다[^2].
+$\mathfrak g$ 를 복소 반단순 Lie 대수, $\mathfrak h\subset\mathfrak b\subset\mathfrak g$ 를 Cartan 과 Borel 이라 하자. **범주 O(category O)** $\mathcal O$ 의 대상은 다음 셋을 만족하는 $U(\mathfrak g)$ 가군 $M$ 이다[^2].
 
 1. $M$ 은 유한생성이다.
 2. $M=\bigoplus_{\mu\in\mathfrak h^\ast}M_\mu$ 로 $\mathfrak h$ 무게 분해가 되고 각 $M_\mu$ 는 유한차원이다.
