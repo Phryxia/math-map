@@ -26,9 +26,9 @@ $\sigma$ 대수는 $\pi$ 계이면서 $\lambda$ 계다. 역도 성립한다. $\p
 
 ## 정리
 
-**정리(Dynkin).** $\mathcal P$ 가 $\pi$ 계이고 $\mathcal L$ 이 $\mathcal P$ 를 품는 $\lambda$ 계이면 $\sigma(\mathcal P)\subseteq\mathcal L$ 이다.[^1]
+**정리(Dynkin).** $\mathcal P$ 가 $\pi$ 계이고 $\mathcal L$ 이 $\mathcal P$ 를 포함하는 $\lambda$ 계이면 $\sigma(\mathcal P)\subseteq\mathcal L$ 이다.[^1]
 
-증명의 요지. $\mathcal P$ 를 품는 가장 작은 $\lambda$ 계를 $\mathcal D$ 라 한다. $\mathcal D$ 가 $\pi$ 계임을 보이면 위의 역에 따라 $\mathcal D$ 가 $\sigma$ 대수이므로 $\sigma(\mathcal P)\subseteq\mathcal D\subseteq\mathcal L$ 이 된다.
+증명의 요지. $\mathcal P$ 를 포함하는 가장 작은 $\lambda$ 계를 $\mathcal D$ 라 한다. $\mathcal D$ 가 $\pi$ 계임을 보이면 위의 역에 따라 $\mathcal D$ 가 $\sigma$ 대수이므로 $\sigma(\mathcal P)\subseteq\mathcal D\subseteq\mathcal L$ 이 된다.
 
 $\pi$ 계임을 두 단계로 얻는다. $A\in\mathcal P$ 에 대해 $\mathcal D\_A=\lbrace B\in\mathcal D:A\cap B\in\mathcal D\rbrace$ 라 두면 $\mathcal D\_A$ 가 $\lambda$ 계이고, $\mathcal P$ 가 $\pi$ 계이므로 $\mathcal P\subseteq\mathcal D\_A$ 다. $\mathcal D$ 의 최소성에서 $\mathcal D\_A=\mathcal D$ 다. 다음으로 $B\in\mathcal D$ 를 고정하고 $\mathcal D\_B$ 를 같은 꼴로 두면, 앞 단계가 $\mathcal P\subseteq\mathcal D\_B$ 를 주므로 다시 $\mathcal D\_B=\mathcal D$ 다. 곧 $\mathcal D$ 의 두 원소의 교집합이 $\mathcal D$ 에 든다.
 
