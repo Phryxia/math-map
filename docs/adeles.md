@@ -134,7 +134,7 @@ $$
 Z(f,s)=\int_{\mathbb A_K^\times}f(x)\thinspace|x|\_{\mathbb A}^s\thinspace d^\times x
 $$
 
-를 얹었다. 적분이 국소 인자의 곱으로 쪼개져 Euler 곱이 나오고, Poisson 합공식이 $s\leftrightarrow1-s$ 대칭을 준다. Riemann 과 Hecke 가 theta 함수의 변환식으로 얻었던 $\zeta_K(s)$ 의 해석적 접속과 함수방정식이 감마 인자와 판별식까지 포함해 따라 나온다.
+를 결합했다. 적분이 국소 인자의 곱으로 쪼개져 Euler 곱이 나오고, Poisson 합공식이 $s\leftrightarrow1-s$ 대칭을 준다. Riemann 과 Hecke 가 theta 함수의 변환식으로 얻었던 $\zeta_K(s)$ 의 해석적 접속과 함수방정식이 감마 인자와 판별식까지 포함해 따라 나온다.
 
 $L$ 함수를 급수가 아니라 군 위의 적분으로 정의하면 해석적 성질이 표현론에서 나온다. [Langlands 강령](langlands-program.md)도 같은 전략을 쓴다.
 
