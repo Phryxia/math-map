@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-17T21:06:44.178Z",
-  "nextSeq": 2171,
+  "savedAt": "2026-10-18T01:03:19.647Z",
+  "nextSeq": 2174,
   "items": [
     {
       "id": "ae0b674e",
@@ -100,12 +100,12 @@
       "seq": 2164
     },
     {
-      "id": "490f0be8",
-      "title": "규칙 #3 적용: 개요 첫 문장의 정의 용어를 굵게, 305 곳 남음",
+      "id": "00398441",
+      "title": "규칙 #3 적용: 개요 첫 문장의 정의 용어를 굵게, 187 곳 남음",
       "priority": 100,
-      "note": "이슈 #3(규칙 추가 요청: 용어 정의 시 굵게 처리)의 적용 범위. 규칙은 CLAUDE.md 4절 마크다운 소절에 있다. 55차에 깨지는 꼴 4 곳과 문서 9 개, 56차에 문서 13 개, 57차에 문서 33 개, 58차에 문서 206 개, 59차(2026-10-17)에 문서 205 개를 처리했다. 59차는 /tmp/nobold.txt 의 알파벳 순서를 따라 korovkin-theorem 부터 solvable-groups 까지 한 커밋에 7~13 개씩 스물한 묶음으로 올렸다. 다음 회차는 source-coding 부터 같은 방식으로 이어간다.\n\n남은 집계: for f in docs/*.md; do case $f in *-overview.md) continue;; esac; awk '/^# 개요/{f=1;next} f&&NF{print;exit}' \"$f\" | grep -q '[*][*]' || echo $f; done 가 305 개를 내놓는다. 개관은 4.5절의 다른 구조를 따르므로 제외한다. 커밋 메시지에는 이 항목 id 를 달지 않는다(미완 항목이라 다른 세션이 완료로 오해한다).\n\n처리 절차. 개요 첫 문장이 'X 는 Y 다' 꼴이면 X 를 굵게 하고 원어가 없으면 함께 넣는다. 닫는 ** 뒤에 공백 하나를 두고 조사를 붙인다. 굵게 안에 링크나 수식을 넣지 않는다(수식은 굵게 밖에 둔다. 59차의 '분할 대수(partition algebra)' 뒤에 $P_k(n)$, '실사영공간(real projective space)' 뒤에 $\\mathbb{RP}^n$). 약어는 본문에서 실제로 쓰일 때만 괄호에 넣는다(59차에 large-deviations 의 LDP, law-of-large-numbers 의 LLN(WLLN/SLLN 으로만 쓰인다), minimum-spanning-tree 의 MST, reproducing-kernel-hilbert-space 의 RKHS 는 쓰이지 않아 넣지 않았다). 정의 자리가 첫 문장이 아니어도 개요 첫 문단 안이면 굵게 한다(picard-group 의 '이 군을 Picard 군이라 한다', postnikov-tower 의 '열이 Postnikov 탑이다', set-theoretic-complete-intersection 의 '~라 함은'). 한 문단에서 두 용어를 정의하면 둘 다 굵게 한다(luzin-sierpinski-sets). 약어가 용어 자체인 문서는 4절 두문자어 소절의 꼴을 따라 약어만 굵게 하고 풀네임 괄호는 굵게 밖에 둔다(rsa-cryptosystem 의 '**RSA**(Rivest–Shamir–Adleman)는'). 개요에 원어를 넣으면 뒤쪽 절의 같은 병기는 중복이므로 뺀다(59차에 martins-axiom 27 줄).\n\n59차가 건너뛴 꼴 셋. (1) 용어가 수식으로 시작하는 문서(lp-spaces 의 '$L^p$ 공간', p-adic-l-function, p-adic-multiple-zeta-values, sigma11-boundedness, kubota-leopoldt-zeta 의 'Kubota–Leopoldt $p$ 진 zeta 함수'). (2) 약어 풀이가 용어 중간에 든 문서(np-completeness 의 'NP(nondeterministic polynomial time)-완전성'). (3) 개요 첫 문단이 정의가 아니라 배경이나 정리 진술로 시작하는 문서(59차 구간에서 kolyvagin-logachev, kolyvagin-systems, kummer-theory, lagrange-inversion, lang-trotter, langlands-program, lefschetz-fixed-point, lie-algebras, limits-colimits, littlewood-richardson, local-class-field-theory, local-cohomology, lovasz-theta, lp-rounding, mathieu-groups, matroids, maximal-singular-integral, merel-theorem, metric-spaces, minimal-polynomial, modular-symbols, mordell-weil-sieve, mv-cycles, newton-polygon, obstruction-theory, open-mapping-theorem, overconvergent-modular-symbols, p-adic-height, p-adic-hodge-theory, p-adic-numbers, p-np, painleve-equations, pairing-based-cryptography, partitions, pcp-theorem, perfect-graphs, pila-wilkie-theorem, poincare-hopf, poitou-tate, post-quantum-cryptography, potential-theory, prime-ideals, prime-number-theorem, probabilistic-pca, quadratic-reciprocity, radically-elementary-probability, ramanujan-graphs, rankin-selberg, regular-local-rings, reidemeister-torsion, residue-theorem, resurgence, ricci-solitons, rice-theorem, riemann-surfaces, riemannian-metrics, rings, root-systems, satake-isomorphism, sato-tate, schellekens-list, schur-complement, schur-multipliers, schur-polynomials, schur-weyl-duality, sea-algorithm, selberg-trace-formula, selmer-tate-shafarevich, semidefinite-programming, serre-conjecture, sherman-morrison, shimura-correspondence, shortest-paths, siegel-integral-points, sinkhorn, source-coding). 이 셋은 개요를 다시 쓰는 별도 보강 작업이다.\n\n검수. 묶음마다 치환 뒤 markdown-it 의 renderInline 으로 그 줄에 <strong> 이 나오고 ** 가 남지 않는지 보고, 4절 굵게 grep(여는 ** 를 오탐한다. 59차에 large-cardinal-hierarchy, martins-axiom, mass-formula, model-theory, morley-categoricity 다섯 문서에서 오탐이 났고 모두 렌더가 정상이었다), tail -1 태그 줄, 9절 미링크 손 검사를 돌린다. 59차의 미링크 진짜 건은 Cauchy-Schwarz 부등식 일곱 자리(korovkin-theorem, lax-milgram, pair-correlation-conjecture, proximal-gradient-method, rademacher-complexity, reproducing-kernel-hilbert-space, sidorenko-conjecture)와 Fourier 변환 한 자리(pontryagin-duality)였다.",
-      "createdAt": "2026-10-17T21:06:04.799Z",
-      "seq": 2169
+      "note": "이슈 #3(규칙 추가 요청: 용어 정의 시 굵게 처리)의 적용 범위. 규칙은 CLAUDE.md 4절 마크다운 소절에 있다. 55차에 깨지는 꼴 4 곳과 문서 9 개, 56차에 문서 13 개, 57차에 문서 33 개, 58차에 문서 206 개, 59차에 문서 205 개, 60차(2026-10-18)에 문서 118 개를 처리했다.\n\n60차가 한 일. /tmp/nobold.txt 의 알파벳 순서로 spectral-sequences 부터 zilber-indecomposability 까지 훑어 개요 첫 문단이 정의인 문서를 모두 처리하고, 이어서 목록 전체에서 처리 가능한 꼴 둘을 더 찾아 처리했다. (1) 제목이 개요 첫 문단의 머리에 오는 문서(banach-tarski, bayesian-inference, chebotarev 등 24 개). (2) 제목이 첫 문단 중간의 정의 자리에 오는 문서(borel-hierarchy 의 \"매긴 것이 Borel 계층이고\", dual-space 의 \"이 공간이 V 의 쌍대 공간이다\", schur-complement 의 \"그 계의 행렬이 Schur 보수다\" 등 18 개). 이 둘은 다음 두 셸 한 줄로 찾는다.\n  for id in $(cat /tmp/nobold.txt); do t=$(head -1 docs/$id.md | sed \"s/^# //\"); first=$(awk \"/^# 개요/{f=1;next} f&&NF{print;exit}\" docs/$id.md); case \"$first\" in \"$t\"*) echo \"머리 $id\";; *\"$t\"*) echo \"중간 $id\";; esac; done\n\n남은 187 개의 성격. 거의 전부 개요 첫 문단이 정의가 아니라 배경, 동기, 정리 진술로 시작하는 문서다. 굵게만 넣을 자리가 없으므로 개요를 다시 쓰는 별도 보강 작업이고, 이 항목으로 묶어 한 묶음씩 처리할 일이 아니다. 그 밖에 59차가 적은 두 꼴도 그대로 남아 있다. (1) 용어가 수식으로 시작하거나 수식을 품은 문서(lp-spaces, p-adic-l-function, p-adic-multiple-zeta-values, sigma11-boundedness, kubota-leopoldt-zeta, incomplete-lu 의 \"불완전 $LU$ 분해\", k-means 의 \"$k$ 평균 군집화\", algebraic-k-theory 의 \"대수적 $K$ 이론\", bell-numbers 꼴과 달리 수식이 용어 안에 든 경우다). 굵게 안에 수식을 넣지 않는 규칙 때문에 제목을 평문으로 다시 쓰는 작업과 함께 해야 한다. (2) 약어 풀이가 용어 중간에 든 문서는 60차에 처리법을 정했다. vc-dimension 의 \"**VC(Vapnik–Chervonenkis) 차원** 은\", np-completeness 의 \"**NP(nondeterministic polynomial time)-완전성** 은\" 처럼 괄호까지 굵게에 넣고 닫는 ** 뒤에 공백과 조사를 둔다. markdown-it 으로 확인했고 4절 굵게 grep 도 통과한다.\n\n60차가 새로 쓴 처리법. 각주가 용어 뒤에 붙은 문서는 각주를 굵게 밖에 두고 그 뒤에 공백과 조사를 둔다. casselman-shalika 의 \"**Casselman–Shalika 공식(Casselman–Shalika formula)**[^1] 은\", casson-invariant 의 \"**Casson 불변량(Casson invariant)**[^1] $\\lambda(M)$ 은\". 둘 다 markdown-it renderInline 으로 strong 이 나오는 것을 확인했다.\n\n남은 집계: for f in docs/*.md; do case $f in *-overview.md) continue;; esac; awk \"/^# 개요/{f=1;next} f&&NF{print;exit}\" \"$f\" | grep -q \"[*][*]\" || echo $f; done 가 187 개를 내놓는다. 개관은 4.5절의 다른 구조를 따르므로 제외한다. 커밋 메시지에는 이 항목 id 를 달지 않는다(미완 항목이라 다른 세션이 완료로 오해한다).",
+      "createdAt": "2026-10-18T00:53:23.919Z",
+      "seq": 2171
     },
     {
       "id": "c4f40bdb",
@@ -2108,6 +2108,14 @@
       "seq": 2051
     },
     {
+      "id": "5a01de4e",
+      "title": "Zorn 보조정리를 별도 문서로 만들지 않은 판정",
+      "priority": 11,
+      "note": "60차(2026-10-18) 판정. 9절 문서 없는 이름 검사에서 Zorn 보조정리가 20 곳으로 나왔고 제목이 그것인 문서가 없다. 그러나 axiom-of-choice(선택공리, 129줄)가 이미 정의 절에 \"## Zorn 보조정리\" 소절을, 성질 절에 AC·정렬 정리·Zorn 의 ZF 동치 증명을, 활용 절에 \"## Zorn 보조정리 적용 절차\" 를 담고 있다. 떼어내면 8절의 통합 기준(서로 없이는 설명되지 않는 쌍)에 정면으로 어긋나고 선택공리 쪽에 중복만 남는다. 만들지 않는다. 다음 회차가 같은 검사에서 이 이름을 다시 집지 않도록 남긴다. 같은 검사의 다른 상위 이름은 거의 다 다른 제목으로 이미 있다(Weil 추측은 deligne-weil-conjecture, Waldspurger 정리는 waldspurger-formula, Serre 추측은 serre-conjecture, Mordell–Weil 정리는 canonical-height, König 보조정리는 weak-konig-lemma, Fubini 정리는 fubini-tonelli). 검사를 돌릴 때는 ls docs | grep -i 로 한 번 더 확인한다.",
+      "createdAt": "2026-10-18T01:02:31.445Z",
+      "seq": 2173
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -3186,6 +3194,14 @@
       "note": "신규 주제. 분야 number_theory. 붙일 부모 후보는 quadratic-forms 와 adeles. 52차에 손 검사가 17 회 언급으로 집계했고 ls docs | grep -iE 'hasse|local-global' 이 0 건이다. 이차형식이 유리수체에서 해를 가지는 것과 모든 완비화에서 해를 가지는 것이 동치라는 Hasse-Minkowski 정리가 중심이고, 삼차 이상에서 원리가 깨지는 Selmer 의 반례와 Brauer-Manin 장애가 그 뒤에 온다. 저장소에 adeles, quadratic-forms, tate-shafarevich-group 이 있어 부모와 자식이 모두 준비되어 있다.",
       "createdAt": "2026-10-16T17:03:26.026Z",
       "seq": 2131
+    },
+    {
+      "id": "8f882188",
+      "title": "hasse-principle 의 후속 간선",
+      "priority": 10,
+      "note": "60차(2026-10-18)에 새로 썼다(69줄, 부모 quadratic-forms 와 p-adic-numbers, number-theory-overview 의 대수적 정수론 갈래에서 p-adic-numbers 다음, Brauer 군 줄 앞). 리프다. 9절 문서 없는 이름 검사에서 Hasse 원리가 17 곳으로 나왔고 저장소에 문서가 없어 골랐다. 본문 링크는 같은 회차에 일곱 문서(brauer-groups, class-field-theory, fontaine-mazur, localization-rings, poitou-tate, quadratic-forms, selmer-tate-shafarevich)에 넣었고 brauer-groups 개요의 굵은 Hasse 원리는 평문으로 바꿨다. 자식 후보는 셋이다. (1) Brauer–Manin 장애. 성질 절에서 한 문단으로만 다뤘고 brauer-groups 와 selmer-tate-shafarevich 가 각자 다루므로 별도 문서가 필요한지 판정할 자리다. (2) Hilbert 기호. 활용 절 첫 항목이 이것의 계산이고 저장소에 문서가 없다. quadratic-forms 와 hasse-principle 의 공통 자식 후보다. (3) Hasse 노름 정리. class-field-theory 212 줄이 순환 확대의 노름 판정으로 다루고 있어 그 문서에 남길지 떼어낼지 판정한다.",
+      "createdAt": "2026-10-18T01:02:31.286Z",
+      "seq": 2172
     },
     {
       "id": "dfb3e493",
