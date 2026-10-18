@@ -39,7 +39,7 @@ V=\lbrace j\in\mathbb F_{p^2}:\ j\ \text{초특이}\rbrace,\qquad
 j_1\sim j_2\iff\Phi_\ell(j_1,j_2)=0
 $$
 
-중복도를 세면 $(\ell+1)$ 정규다. $j=0,1728$ 근처에서는 여분의 자기동형 때문에 서로 다른 이웃의 개수가 $\ell+1$ 보다 적을 수 있다.
+이 그래프 $G_\ell(p)$ 가 **초특이 동종사상 그래프(supersingular isogeny graph)** 다. 중복도를 세면 $(\ell+1)$ 정규다. $j=0,1728$ 근처에서는 여분의 자기동형 때문에 서로 다른 이웃의 개수가 $\ell+1$ 보다 적을 수 있다.
 
 정점 수는 Eichler 의 [질량 공식](mass-formula.md)이 준다.
 

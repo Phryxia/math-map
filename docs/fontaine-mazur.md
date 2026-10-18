@@ -4,7 +4,7 @@
 
 [p 진 Hodge 이론](p-adic-hodge-theory.md)은 국소 Galois 군 $G_{\mathbb Q_p}$ 의 표현에 de Rham, 반안정, 결정적이라는 등급을 매긴다. 이 등급은 소수 $p$ 자리만 보고 판정하는 국소 조건이다.
 
-Fontaine 과 Mazur 는 1995 년에 이 국소 조건이 표현의 전역적 출처를 결정한다고 추측했다.[^1] 전역 표현
+**Fontaine–Mazur 추측(Fontaine–Mazur conjecture)** 은 이 국소 조건이 표현의 전역적 출처를 결정한다는 1995 년의 추측이다.[^1] 전역 표현
 
 $$
 \rho\colon G_{\mathbb Q}=\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\longrightarrow \mathrm{GL}\_n(\mathbb Q_p)

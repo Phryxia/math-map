@@ -64,7 +64,7 @@ $$
 
 $\delta_B^{1/2}$ 인자가 없으면 $\mathcal S(f)$ 가 Weyl 군 불변이 아니다. 반쪽 지표를 곱해야 $N$ 방향 적분에서 생긴 비대칭이 상쇄된다. 이 인자는 유도표현 $\mathrm{Ind}\_B^G\chi$ 의 정규화와 같고, $W$ 불변성은 $\mathrm{Ind}\_B^G\chi\cong\mathrm{Ind}\_B^G(w\chi)$ 에 대응한다.
 
-> **정리 (Satake, 1963).** $\mathcal S$ 는 $\mathbb C$ 대수의 동형
+> **Satake 동형(Satake isomorphism, 1963).** $\mathcal S$ 는 $\mathbb C$ 대수의 동형
 > $$
 > \mathcal H(G,K)\thickspace\xrightarrow{\ \sim\ }\thickspace\mathbb C[X_\ast(T)]^{W}
 > $$
