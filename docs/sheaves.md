@@ -31,7 +31,7 @@ $V \subseteq U$ 에 대응하는 사상을 **제한사상**이라 하고 $s \in 
 
 ## 줄기
 
-점 $x$ 를 품는 열린집합들 위의 쌍대극한을 $x$ 에서의 **줄기**라 한다.
+점 $x$ 를 포함하는 열린집합들 위의 쌍대극한을 $x$ 에서의 **줄기**라 한다.
 
 $$
 \mathcal F\_x \thinspace=\thinspace \mathop{\mathrm{colim}}\_{x \in U} \mathcal F(U)

@@ -24,7 +24,7 @@ $$
 f(z)=f(x_0)+z_1^2+\cdots+z_{n+1}^2
 $$
 
-$x_0$ 을 품은 작은 공 $B$ 와 작은 원판 $D=\lbrace t:\vert t-f(x_0)\vert\lt\varepsilon\rbrace$ 에 대해 $X_t=f^{-1}(t)\cap B$ 라 한다. $t\ne f(x_0)$ 이면 $X_t$ 는 $n$ 차원 구 $S^n$ 에 호모토피 동치다. 그 구의 기본류가 주는
+$x_0$ 을 포함하는 작은 공 $B$ 와 작은 원판 $D=\lbrace t:\vert t-f(x_0)\vert\lt\varepsilon\rbrace$ 에 대해 $X_t=f^{-1}(t)\cap B$ 라 한다. $t\ne f(x_0)$ 이면 $X_t$ 는 $n$ 차원 구 $S^n$ 에 호모토피 동치다. 그 구의 기본류가 주는
 
 $$
 \delta\in H_n(X_t;\mathbb Z)

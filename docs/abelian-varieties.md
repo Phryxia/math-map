@@ -74,7 +74,7 @@ $$
 
 **보조정리.** $X$ 가 완비이고 $f:X\times Y\to Z$ 가 사상이며 어떤 $y_0$ 에 대해 $f(X\times\lbrace y_0\rbrace)$ 가 한 점이면, $f$ 는 첫 인자에 의존하지 않는다.
 
-$z_0=f(X\times\lbrace y_0\rbrace)$ 의 아핀 근방 $U$ 를 잡고 닫힌 집합 $W=f^{-1}(Z\setminus U)$ 를 본다. $X$ 가 완비이므로 $W$ 의 $Y$ 로의 상이 닫혀 있고 $y_0$ 을 품지 않는다. 그 여집합의 점 $y$ 에서 $f(X\times\lbrace y\rbrace)$ 는 아핀 $U$ 에 들어가는 완비 다양체의 상이므로 한 점이다. ∎
+$z_0=f(X\times\lbrace y_0\rbrace)$ 의 아핀 근방 $U$ 를 잡고 닫힌 집합 $W=f^{-1}(Z\setminus U)$ 를 본다. $X$ 가 완비이므로 $W$ 의 $Y$ 로의 상이 닫혀 있고 $y_0$ 을 포함하지 않는다. 그 여집합의 점 $y$ 에서 $f(X\times\lbrace y\rbrace)$ 는 아핀 $U$ 에 들어가는 완비 다양체의 상이므로 한 점이다. ∎
 
 **정리.** 아벨 다양체의 군 연산은 교환적이다.
 
