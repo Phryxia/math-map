@@ -32,7 +32,7 @@ $$
 \vartheta(G)=\min_{\lbrace u_i\rbrace,\thinspace c}\ \max_{i\in V}\frac1{\langle c,u_i\rangle^2}
 $$
 
-$\lbrace u_i\rbrace$ 는 $G$ 의 직교 표현이고 $c$ 는 단위벡터다. 모든 정점이 $c$ 와 되도록 가까운 방향을 갖도록 표현을 고르는 문제다.
+$\lbrace u_i\rbrace$ 는 $G$ 의 직교 표현이고 $c$ 는 단위벡터다. 모든 정점이 $c$ 와 되도록 가까운 방향을 갖도록 표현을 고르는 문제다. 이 최솟값이 $G$ 의 **Lovász 세타 함수(Lovász theta function)** 다.
 
 ## 반정부호 계획 형식
 

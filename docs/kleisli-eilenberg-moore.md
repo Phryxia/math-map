@@ -24,7 +24,7 @@ monad $T$ 를 고정한다. 대상은 $T = GF$ 이고 unit 과 $\mu$ 가 monad �
 
 ## Kleisli 범주
 
-$\mathcal C_T$ 의 대상은 $\mathcal C$ 의 대상과 같다. 사상은 다음이다.
+**Kleisli 범주(Kleisli category)** $\mathcal C_T$ 의 대상은 $\mathcal C$ 의 대상과 같다. 사상은 다음이다.
 
 $$
 \mathcal C_T(X,Y)=\mathcal C(X,T(Y))
@@ -40,7 +40,7 @@ monad 법칙이 이 합성의 결합법칙과 단위법칙이다. 자유 함자 
 
 ## Eilenberg–Moore 범주
 
-$\mathcal C^T$ 의 대상은 $T$ 대수 $(A, a: T(A)\to A)$ 로 다음 두 법칙을 만족하는 것이다.
+**Eilenberg–Moore 범주(Eilenberg–Moore category)** $\mathcal C^T$ 의 대상은 $T$ 대수 $(A, a: T(A)\to A)$ 로 다음 두 법칙을 만족하는 것이다.
 
 $$
 a\circ\eta_A=\mathrm{id}\_A,\qquad a\circ\mu_A=a\circ T(a)

@@ -85,7 +85,7 @@ $$
 
 ## 상호법칙
 
-서로 다른 홀소수 $p,q$ 에 대해
+**이차 상호법칙(quadratic reciprocity law)** 은 서로 다른 홀소수 $p,q$ 에 대한 다음 등식이다.
 
 $$
 \Big(\frac pq\Big)\Big(\frac qp\Big)=(-1)^{\frac{p-1}2\cdot\frac{q-1}2}

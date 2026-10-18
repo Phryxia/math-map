@@ -8,7 +8,7 @@ $$
 \pi(x)\sim\frac{x}{\ln x}
 $$
 
-이것이 소수 정리다. $x$ 근처의 정수가 소수일 확률이 대략 $1/\ln x$ 다.
+이것이 **소수 정리(prime number theorem)** 다. $x$ 근처의 정수가 소수일 확률이 대략 $1/\ln x$ 다.
 
 증명은 [Riemann zeta 함수](riemann-zeta.md)의 극과 영점의 위치를 소수를 세는 합으로 옮기고, 그 합을 [유수 정리](residue-theorem.md)로 계산한다.
 

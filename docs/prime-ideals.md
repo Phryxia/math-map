@@ -30,9 +30,9 @@ $$
 ab\in P\quad\Longrightarrow\quad a\in P\ \text{또는}\ b\in P
 $$
 
-를 만족하면 소 아이디얼이다.
+를 만족하면 **소 아이디얼(prime ideal)** 이다.
 
-진아이디얼 $M$ 을 진부분집합으로 포함하는 진아이디얼이 없으면, 곧 $M \subseteq J \subseteq R$ 인 아이디얼 $J$ 가 $M$ 또는 $R$ 뿐이면 $M$ 을 극대 아이디얼이라 한다.
+진아이디얼 $M$ 을 진부분집합으로 포함하는 진아이디얼이 없으면, 곧 $M \subseteq J \subseteq R$ 인 아이디얼 $J$ 가 $M$ 또는 $R$ 뿐이면 $M$ 을 **극대 아이디얼(maximal ideal)** 이라 한다.
 
 두 정의 모두 $R$ 자신이 아닐 것을 요구한다. $R$ 을 허용하면 영환이 정역이나 체가 된다.
 

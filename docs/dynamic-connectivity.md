@@ -32,7 +32,7 @@ graph LR
 
 ## 간선 갱신과 연결 질의
 
-정점 집합이 고정된 무향 그래프에 대해 다음을 처리한다.
+**동적 연결성(dynamic connectivity)** 은 간선이 추가되고 제거되는 그래프에서 두 정점이 연결되었는지 답하는 문제다. 정점 집합이 고정된 무향 그래프에 대해 다음을 처리한다.
 
 - `INSERT(u,v)` 는 간선 $\lbrace u,v\rbrace$ 를 추가한다.
 - `DELETE(u,v)` 는 기존 간선 $\lbrace u,v\rbrace$ 를 제거한다.
