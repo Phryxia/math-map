@@ -2,7 +2,7 @@
 
 # 개요
 
-미적분학의 기본정리, Green 정리, 발산 정리, 곡면에 대한 Stokes 정리는 모양이 비슷하면서 차원과 기호가 다르다. 미분형식(differential form)은 이 넷을 한 정리로 묶는다.
+미적분학의 기본정리, Green 정리, 발산 정리, 곡면에 대한 Stokes 정리는 모양이 비슷하면서 차원과 기호가 다르다. **미분형식(differential form)** 은 이 넷을 한 정리로 묶는다.
 
 $$
 \int_M d\omega=\int_{\partial M}\omega
