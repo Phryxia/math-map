@@ -34,7 +34,7 @@ $X$ 에 포함되는 연결 반대수적 집합 가운데 차원이 양수인 �
 
 ## 셈 정리
 
-**정리(Pila, Wilkie).** $X\subseteq\mathbb R^n$ 이 o-최소 구조에서 정의 가능하면, 각 $\varepsilon\gt 0$ 에 대해 상수 $c(X,\varepsilon)$ 이 있어 모든 $T\ge 1$ 에서 다음이 성립한다.[^1]
+**Pila–Wilkie 정리(Pila–Wilkie theorem).** $X\subseteq\mathbb R^n$ 이 o-최소 구조에서 정의 가능하면, 각 $\varepsilon\gt 0$ 에 대해 상수 $c(X,\varepsilon)$ 이 있어 모든 $T\ge 1$ 에서 다음이 성립한다.[^1]
 
 $$
 N(X^{\mathrm{trans}},T)\ \le\ c(X,\varepsilon)\thinspace T^{\varepsilon}
