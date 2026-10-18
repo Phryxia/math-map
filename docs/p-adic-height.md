@@ -4,7 +4,7 @@
 
 [Néron–Tate 높이](canonical-height.md)는 타원곡선의 유리점에 실수를 붙이고, 생성원들의 높이쌍 행렬식이 [BSD 추측](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer)의 선행계수에 들어가는 조절자다.
 
-**$p$ 진 높이**는 같은 점에 $\mathbb Q_p$ 의 원소를 붙이는 쌍선형 형식이다. [p 진 L 함수](p-adic-l-function.md)의 값이 $\mathbb Q_p$ 에 있으므로 그 선행계수와 견줄 조절자도 $\mathbb Q_p$ 값이어야 한다. 정준 높이의 국소 분해에서 실수 로그를 $p$ 진 로그로 바꾸고, $p$ 자리의 항은 [Coleman 적분](coleman-integration.md)으로 정한다.
+**p 진 높이(p-adic height)** 는 같은 점에 $\mathbb Q_p$ 의 원소를 붙이는 쌍선형 형식이다. [p 진 L 함수](p-adic-l-function.md)의 값이 $\mathbb Q_p$ 에 있으므로 그 선행계수와 견줄 조절자도 $\mathbb Q_p$ 값이어야 한다. 정준 높이의 국소 분해에서 실수 로그를 $p$ 진 로그로 바꾸고, $p$ 자리의 항은 [Coleman 적분](coleman-integration.md)으로 정한다.
 
 # 직관
 
@@ -42,7 +42,7 @@ $$
 
 를 **$p$ 진 높이쌍**이라 한다. 유한 개의 자리에서만 항이 $0$ 이 아니고, 값은 두 인자의 선형동치류에만 의존한다. 그러므로 이 쌍은 [Jacobi 다양체](jacobian-variety.md) 위의 쌍선형 대칭형식 $\langle\cdot,\cdot\rangle_p$ 을 준다. 지지가 겹치는 두 인자에는 선형동치인 인자로 옮겨 값을 매긴다.
 
-타원곡선에서 $h_p(P)=\langle P,P\rangle_p$ 를 점 $P$ 의 **$p$ 진 높이**라 하고, 생성원 $P_1,\dots,P_r$ 에 대해
+타원곡선에서 $h_p(P)=\langle P,P\rangle_p$ 를 점 $P$ 의 **p 진 높이** 라 하고, 생성원 $P_1,\dots,P_r$ 에 대해
 
 $$
 R_p(E)=\det\bigl(\langle P_i,P_j\rangle_p\bigr)\_{1\le i,j\le r}
