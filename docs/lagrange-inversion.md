@@ -30,7 +30,7 @@ $\varphi(w)=\sum_{k\ge 0}\varphi_k w^k$ 이 $\varphi_0\ne 0$ 을 만족하면 �
 
 ## 반전 공식
 
-**정리(Lagrange).** 위 조건에서 $n\ge 1$ 이면 다음이 성립한다.[^1]
+**Lagrange 반전 공식(Lagrange inversion formula).** 위 조건에서 $n\ge 1$ 이면 다음이 성립한다.[^1]
 
 $$
 \lbrack z^n\rbrack w(z)=\frac1n\lbrack w^{n-1}\rbrack\varphi(w)^n

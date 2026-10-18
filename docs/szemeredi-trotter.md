@@ -26,7 +26,7 @@ $$
 
 ## 정리
 
-> **정리(Szemerédi, Trotter).** $I(P,L)=O\big(m^{2/3}n^{2/3}+m+n\big)$ 이다.[^1]
+> **Szemerédi–Trotter 정리.** $I(P,L)=O\big(m^{2/3}n^{2/3}+m+n\big)$ 이다.[^1]
 
 $m=n$ 일 때 주항은 $n^{4/3}$ 이고, Kővári–Sós–Turán 이 주는 $n^{3/2}$ 보다 작다.
 

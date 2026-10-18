@@ -28,7 +28,7 @@ $K$ 를 수체, $\mathcal O_K$ 를 그 정수환, $S$ 를 유한한 소수 집�
 
 $\widetilde C$ 를 $C$ 의 매끄러운 사영 모형이라 하고, $C$ 가 $\widetilde C$ 에서 유한히 많은 점을 뺀 것이라 하자.
 
-> **정리(Siegel).** $\widetilde C$ 의 종수가 $1$ 이상이거나, 종수가 $0$ 이고 $\widetilde C\setminus C$ 의 점이 셋 이상이면 $C(\mathcal O_{K,S})$ 는 유한하다.[^1]
+> **Siegel 의 정수점 정리(Siegel's theorem on integral points).** $\widetilde C$ 의 종수가 $1$ 이상이거나, 종수가 $0$ 이고 $\widetilde C\setminus C$ 의 점이 셋 이상이면 $C(\mathcal O_{K,S})$ 는 유한하다.[^1]
 
 # 성질
 
