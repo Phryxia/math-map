@@ -38,7 +38,7 @@ $$
 
 ## 대응 정리
 
-**정리.** $\Delta\mapsto K(\Delta^{1/n})$ 이 $(K^{\times})^{n}$ 을 품는 $K^{\times}$ 의 부분군과 $K$ 의 지수 $n$ 아벨 확대 사이의 포함관계를 보존하는 전단사다.[^1]
+**정리.** $\Delta\mapsto K(\Delta^{1/n})$ 이 $(K^{\times})^{n}$ 을 포함하는 $K^{\times}$ 의 부분군과 $K$ 의 지수 $n$ 아벨 확대 사이의 포함관계를 보존하는 전단사다.[^1]
 
 역대응은 $L\mapsto\Delta=\lbrace a\in K^{\times}:a^{1/n}\in L\rbrace$ 다. $\Delta/(K^{\times})^{n}$ 이 유한하면 $\lbrack L:K\rbrack$ 가 그 위수와 같다.
 

@@ -8,7 +8,7 @@ $\mathbb R$ 과 $\mathbb C^\times$, 행렬군 $\mathrm{GL}\_n(\mathbb R)$, [p �
 
 # 직관
 
-실수 덧셈군에서 점 $a$ 의 근방은 $0$ 의 근방을 옮긴 것이다. $U$ 가 $0$ 을 품은 열린집합이면 $a+U$ 는 $a$ 를 품은 열린집합이고, 거꾸로 $a$ 의 열린 근방 $V$ 에 대해 $-a+V$ 는 $0$ 의 열린 근방이다. 옮기는 사상 $x\mapsto a+x$ 가 연속이고 그 역사상 $x\mapsto -a+x$ 도 연속이므로 두 근방계가 서로 옮겨진다. 군 연산이 연속이면 같은 계산이 임의의 군에서 된다.
+실수 덧셈군에서 점 $a$ 의 근방은 $0$ 의 근방을 옮긴 것이다. $U$ 가 $0$ 을 포함하는 열린집합이면 $a+U$ 는 $a$ 를 포함하는 열린집합이고, 거꾸로 $a$ 의 열린 근방 $V$ 에 대해 $-a+V$ 는 $0$ 의 열린 근방이다. 옮기는 사상 $x\mapsto a+x$ 가 연속이고 그 역사상 $x\mapsto -a+x$ 도 연속이므로 두 근방계가 서로 옮겨진다. 군 연산이 연속이면 같은 계산이 임의의 군에서 된다.
 
 $$
 V\ \text{가}\ a\ \text{의 근방}\quad\Longleftrightarrow\quad a^{-1}V\ \text{가}\ e\ \text{의 근방}
@@ -48,7 +48,7 @@ $H$ 가 정규부분군이면 $G/H$ 는 군이고 이 위상에서 위상군이�
 
 $e$ 의 근방 전체 $\mathcal N$ 을 알면 $G$ 의 위상이 정해진다. 점 $a$ 의 근방은 $a\mathcal N=\lbrace aU:U\in\mathcal N\rbrace$ 이고, 평행이동이 위상동형이므로 이것이 $a$ 의 근방계 전부다.
 
-역으로 군 $G$ 와 $e$ 를 품은 집합족 $\mathcal B$ 가 주어졌을 때, 각 $U\in\mathcal B$ 에 대해 $VV\subseteq U$ 인 $V\in\mathcal B$ 가 있고 $V^{-1}\subseteq U$ 인 $V\in\mathcal B$ 가 있으며 각 $g\in G$ 에 대해 $gVg^{-1}\subseteq U$ 인 $V\in\mathcal B$ 가 있으면, $\mathcal B$ 를 $e$ 의 근방 기저로 하는 위상군 구조가 유일하게 결정된다. 세 조건은 각각 곱의 연속성, 역원의 연속성, 켤레의 연속성에서 온다.
+역으로 군 $G$ 와 $e$ 를 포함하는 집합족 $\mathcal B$ 가 주어졌을 때, 각 $U\in\mathcal B$ 에 대해 $VV\subseteq U$ 인 $V\in\mathcal B$ 가 있고 $V^{-1}\subseteq U$ 인 $V\in\mathcal B$ 가 있으며 각 $g\in G$ 에 대해 $gVg^{-1}\subseteq U$ 인 $V\in\mathcal B$ 가 있으면, $\mathcal B$ 를 $e$ 의 근방 기저로 하는 위상군 구조가 유일하게 결정된다. 세 조건은 각각 곱의 연속성, 역원의 연속성, 켤레의 연속성에서 온다.
 
 ## 몫의 분리성
 
