@@ -55,7 +55,7 @@ Z(s,\Phi,\varphi)=\int_{\mathrm{GL}\_n(F)}\Phi(g)\thinspace\varphi(g)\thinspace
 \lvert\det g\rvert^{\thinspace s+\frac{n-1}2}\thinspace dg
 $$
 
-$\mathrm{Re}(s)$ 가 충분히 크면 수렴하고 $q^{-s}$ 의 유리함수로 접속한다. 이런 적분 전체가 만드는 $\mathbb C[q^{\pm s}]$ 가군의 생성원이 국소 $L$ 인자 $L(s,\pi)$ 다. 지수를 $s+\frac{n-1}2$ 로 옮기는 것은 함수방정식이 $s\leftrightarrow1-s$ 가 되게 하는 정규화다.
+이 적분이 **Godement–Jacquet 적분(Godement–Jacquet integral)** 이다. $\mathrm{Re}(s)$ 가 충분히 크면 수렴하고 $q^{-s}$ 의 유리함수로 접속한다. 이런 적분 전체가 만드는 $\mathbb C[q^{\pm s}]$ 가군의 생성원이 국소 $L$ 인자 $L(s,\pi)$ 다. 지수를 $s+\frac{n-1}2$ 로 옮기는 것은 함수방정식이 $s\leftrightarrow1-s$ 가 되게 하는 정규화다.
 
 ## 대역 적분과 함수방정식
 

@@ -38,7 +38,7 @@ $\alpha=p/q$ 가 기약분수이면 $h(\alpha)=\log\max(\vert p\vert,\vert q\ver
 
 ## 일차독립 정리
 
-**정리(Baker).** $\log\alpha_1,\dots,\log\alpha_n$ 이 $\mathbb Q$ 위에서 일차독립이면 $1,\log\alpha_1,\dots,\log\alpha_n$ 이 대수적 수 위에서 일차독립이다.[^1]
+**Baker 정리(Baker's theorem).** $\log\alpha_1,\dots,\log\alpha_n$ 이 $\mathbb Q$ 위에서 일차독립이면 $1,\log\alpha_1,\dots,\log\alpha_n$ 이 대수적 수 위에서 일차독립이다.[^1]
 
 따라서 대수적 수 $\beta_0,\dots,\beta_n$ 이 모두 $0$ 은 아니면 $\beta_0+\beta_1\log\alpha_1+\dots+\beta_n\log\alpha_n\ne 0$ 이다. $n=1$ 이고 $\beta_0\ne 0$ 인 경우가 Hermite–Lindemann 정리이고, $n=2$ 이고 $\beta_0=0$ 인 경우가 Gelfond–Schneider 정리다. 두 고전 정리가 이 진술의 특수 사례다.
 
