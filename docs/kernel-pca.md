@@ -20,7 +20,7 @@ $\langle\phi(x),\phi(y)\rangle$ 를 원래 좌표의 식으로 계산하는 함�
 
 대칭함수 $k:\mathcal X\times\mathcal X\to\mathbb R$ 가 양의 준정부호라는 것은 임의의 유한한 점들 $x_1,\dots,x_n$ 에 대해 행렬 $K_{ij}=k(x_i,x_j)$ 가 양의 준정부호라는 뜻이다.
 
-이 조건에서 어떤 [내적 공간](inner-product-spaces.md) $\mathcal H$ 와 사상 $\phi:\mathcal X\to\mathcal H$ 가 존재해 $k(x,y)=\langle\phi(x),\phi(y)\rangle$ 가 성립한다(Moore–Aronszajn). $\mathcal H$ 가 **재생 커널 Hilbert 공간**이고, 알고리즘은 $\phi$ 의 존재만 쓴다.
+이 조건에서 어떤 [내적 공간](inner-product-spaces.md) $\mathcal H$ 와 사상 $\phi:\mathcal X\to\mathcal H$ 가 존재해 $k(x,y)=\langle\phi(x),\phi(y)\rangle$ 가 성립한다(Moore–Aronszajn). $\mathcal H$ 가 [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)이고, 알고리즘은 $\phi$ 의 존재만 쓴다.
 
 | 커널 | 식 | 특징공간 |
 |---|---|---|
