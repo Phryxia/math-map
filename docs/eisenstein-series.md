@@ -42,7 +42,7 @@ $y^s$ 는 $\gamma=1$ 인 항에서 오고 둘째 항은 나머지 전부가 모�
 
 ## 정칙 Eisenstein 급수
 
-짝수 $k\ge4$ 에 대해
+짝수 $k\ge4$ 에 대해 다음 급수를 **Eisenstein 급수(Eisenstein series)** 라 한다.
 
 $$
 G_k(z)=\sum_{(m,n)\ne(0,0)}\frac1{(mz+n)^k},

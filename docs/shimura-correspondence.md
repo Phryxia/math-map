@@ -59,7 +59,7 @@ $$
 
 ## Shimura 대응
 
-$g\in S_{k+1/2}(\Gamma_0(4N))$ 이 모든 $T(p^2)$ 의 고유형식이고 고윳값이 $\lambda_p$ 라 하자. $S_{2k}(\Gamma_0(2N))$ 안에 고유형식 $f$ 가 존재해 모든 $p\nmid 2N$ 에서 $a_p(f)=\lambda_p$ 이며, 이 $f$ 를 $\mathrm{Sh}(g)$ 라 쓴다.
+$g\in S_{k+1/2}(\Gamma_0(4N))$ 이 모든 $T(p^2)$ 의 고유형식이고 고윳값이 $\lambda_p$ 라 하자. $S_{2k}(\Gamma_0(2N))$ 안에 고유형식 $f$ 가 존재해 모든 $p\nmid 2N$ 에서 $a_p(f)=\lambda_p$ 이며, 이 $f$ 를 $\mathrm{Sh}(g)$ 라 쓴다. 이 사상 $g\mapsto f$ 가 **Shimura 대응(Shimura correspondence)** 이다.
 
 ## Kohnen 플러스 공간
 
