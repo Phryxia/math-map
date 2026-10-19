@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-19T13:01:07.259Z",
-  "nextSeq": 2244,
+  "savedAt": "2026-10-19T17:02:27.501Z",
+  "nextSeq": 2253,
   "items": [
     {
       "id": "9bab7237",
@@ -234,6 +234,22 @@
       "note": "개관의 지도 mermaid 는 코드블록이라 링크를 넣을 수 없는데, 미링크 손 검사는 본문 전체를 문자열로 훑으므로 노드 라벨에 쓰인 문서 제목을 미링크로 보고한다. 71차 abstract-algebra-overview 에서 Lie 군과 Peter-Weyl 정리 두 건이 그랬다. 그 회차에는 지도를 다시 그려 두 노드가 빠지면서 사라졌지만, 지도에 남겨야 하는 라벨이면 고칠 수 없는 오탐이다. 손 검사 스크립트는 코드블록 안을 본문에서 빼야 한다.",
       "createdAt": "2026-10-19T12:48:21.816Z",
       "seq": 2238
+    },
+    {
+      "id": "a50afa3f",
+      "title": "문서 없는 이름 검사의 절 제목 필터와 72차 오탐 넷",
+      "priority": 90,
+      "note": "72차(2026-10-19)에 9절 문서 없는 이름 검사에 절 제목 필터를 붙여 돌렸다. 필터는 후보 이름이 어느 문서의 ^#+ 헤딩에 들어 있으면 건너뛰는 것이고, 메모 d0f6bdd6 이 요구한 검사다. 필터를 붙여도 남은 상위 후보 넷이 오탐이었다. Markov 부등식(14 회)과 Hoeffding 부등식(9 회)은 concentration-inequalities 의 절 제목이 각각 \"## Markov 와 Chebyshev\", \"## Hoeffding 보조정리와 부등식\" 이라 이름이 그대로 들어 있지 않아 필터를 빠져나간다. Cayley-Hamilton 정리(6 회)는 eigenvalues 의 절 제목이 \"## Cayley-Hamilton\" 으로 \"정리\" 가 없어 빠져나간다. Bolzano-Weierstrass 정리(6 회)만 참 빈자리였고 이 회차에 문서를 썼다. 규칙. 필터를 쓸 때 후보 이름에서 끝말(정리, 보조정리, 부등식, 공식, 추측, 원리, 법칙)을 떼고 고유명사 부분만으로 헤딩을 찾는다. 그래야 \"## Markov 와 Chebyshev\" 와 \"## Cayley-Hamilton\" 이 걸린다.",
+      "createdAt": "2026-10-19T16:48:35.123Z",
+      "seq": 2244
+    },
+    {
+      "id": "f201c682",
+      "title": "72차 문서 없는 이름 후보 다섯의 판정",
+      "priority": 90,
+      "note": "72차(2026-10-19)에 끝말 제거 필터를 붙인 검사가 내놓은 여섯 후보를 모두 확인했다. 오탐 셋. Cramer 공식(5 회)은 determinants 가 70 번째 줄에서 공식을 적고 유도까지 하므로 새 문서 자리가 아니다. Foster 정리(4 회)는 effective-resistance 가 108 번째 줄에서 신장트리 간선 수로 증명한다. Institute 공식(4 회)은 각주의 Clay Mathematics Institute 공식 문제 설명이 걸린 것이고 grep 패턴 자체의 결함이다. 대문자로 시작하는 두 단어를 사람 이름으로 보는 패턴이므로 기관명이 걸린다. 참 빈자리 둘은 De Morgan 법칙과 Freedman 정리이고 각각 따로 항목을 세웠다. Goldbach 추측은 이 회차에 문서를 썼다.",
+      "createdAt": "2026-10-19T17:02:18.798Z",
+      "seq": 2250
     },
     {
       "id": "f9d8e8af",
@@ -2220,6 +2236,14 @@
       "seq": 2173
     },
     {
+      "id": "b4d4af99",
+      "title": "goldbach-conjecture 와 chen-theorem 사이 간선을 긋지 않은 판정",
+      "priority": 11,
+      "note": "72차(2026-10-19) 판정. goldbach-conjecture 를 circle-method 의 자식으로 쓰고 리프로 남겼다. chen-theorem 을 자식으로 두려고 간선을 한 번 넣었다가 뺐다. 이유 둘. (1) 갈래 순서. number-theory-overview 에서 chen-theorem 은 해석적 정수론과 L 함수 갈래(90 번째 줄 부근)에 있고 circle-method 는 지수합과 영점 통계 갈래(218 번째 줄 부근)에 있다. 간선을 넣으면 뒤 갈래의 circle-method 가 앞 갈래의 chen-theorem 의 조상이 되어 4.5 절의 갈래 순서 규칙을 깬다. 두 갈래가 서로 조상을 두는 꼴이 되므로 갈래를 다시 나눠야 하고 그것은 한 회차짜리 작업이다. (2) 5 절 기준으로도 배경 관계다. chen-theorem 의 개요는 체 방법의 패리티 현상을 말하고 Goldbach 를 예로만 든다. Goldbach 문서를 읽지 않아도 chen-theorem 의 개요가 그대로 읽힌다. 두 문서는 본문에서 서로를 링크한다. 갈래를 다시 나누는 작업을 할 때 이 간선을 다시 검토한다.",
+      "createdAt": "2026-10-19T17:00:36.617Z",
+      "seq": 2249
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -3314,6 +3338,38 @@
       "note": "분야는 대수기하와 표현론이고 부모 후보는 [Grassmann 다양체](grassmannian.md)와 [loop 군 또는 대수군] 쪽이다. 아핀 Grassmann 다양체(affine Grassmannian) $\\mathrm{Gr}_G=G(F)/G(\\mathcal O)$ 는 유한차원 Grassmann 다양체와 이름만 닮은 별개 대상이고, satake-isomorphism 234 줄과 geometric-satake 가 이 대상 위의 퍼버스 층 범주로 기하학적 Satake 대응을 진술한다. 64차에 satake-isomorphism 의 미링크 검사가 'Grassmann 다양체' 를 보고했을 때 두 개념이 다름을 확인하고 원어만 병기했다(커밋 4fc0f9e). 문서를 만들면 satake-isomorphism 과 geometric-satake 의 그 자리를 링크한다.",
       "createdAt": "2026-10-18T20:54:53.973Z",
       "seq": 2214
+    },
+    {
+      "id": "6bffdd66",
+      "title": "bolzano-weierstrass 의 후속 간선",
+      "priority": 10,
+      "note": "72차에 bolzano-weierstrass 를 limits 와 completeness 의 자식으로 만들고 리프로 남겼다. 자식 후보와 판단할 점. (1) compactness. 수열 콤팩트성이 콤팩트성의 원형이지만 compactness 는 topology 의 자식으로 위상 쪽에서 정의되고 B-W 없이 정의된다. 5절 기준으로 도구로 한 번 쓰는 관계라 본문 링크로 충분하다고 보아 긋지 않았다. (2) arzela-ascoli 와 tychonoff-theorem 은 증명에서 B-W 를 쓰지만 둘 다 이미 다른 부모를 갖고 B-W 의 심화나 부분이 아니다. 본문 링크만 넣었다. (3) heine-borel 문서가 저장소에 없다. 있으면 B-W 의 자식으로 분명하다. Heine-Borel 정리는 second-order-arithmetic 과 compactness 를 비롯해 여러 문서가 이름만 쓰고 있어 신규 주제 후보다.",
+      "createdAt": "2026-10-19T16:48:35.247Z",
+      "seq": 2245
+    },
+    {
+      "id": "677450d6",
+      "title": "heine-borel 의 후속 간선과 WKL 축의 남은 자리",
+      "priority": 10,
+      "note": "72차(2026-10-19)에 heine-borel 을 compactness 와 bolzano-weierstrass 의 자식으로 만들고 리프로 남겼다. 자식 후보와 판단할 점. (1) uniform-continuity. Heine-Cantor 정리의 증명이 덮개 논증을 쓰지만 uniform-continuity 는 이미 compactness 의 자식이고 heine-borel 없이 정의된다. 본문 링크만 넣었다. (2) arzela-ascoli 는 정의역의 콤팩트성을 전제로 쓰므로 도구 관계다. 본문 링크만 넣었다. (3) weak-konig-lemma 와의 관계는 역방향 후보다. 역수학에서 둘이 동치이므로 어느 쪽도 다른 쪽의 선수지식이 아니다. 간선을 긋지 않고 양쪽 본문에서 서로를 링크했다. 지금 weak-konig-lemma 가 heine-borel 을 링크하고 heine-borel 이 weak-konig-lemma 를 링크한다.",
+      "createdAt": "2026-10-19T16:53:51.684Z",
+      "seq": 2246
+    },
+    {
+      "id": "996a6f8c",
+      "title": "De Morgan 법칙",
+      "priority": 10,
+      "note": "신규 주제 후보. 72차(2026-10-19) 확인. 저장소에 제목도 헤딩도 없고 여섯 문서가 이름만 쓴다. sets(69 번째 줄에 한 줄), boolean-algebras, heyting-algebras, kripke-semantics, measure, foundations-overview 다. 분야는 set_theory 또는 logic 이고 붙일 부모 후보는 sets 와 boolean-algebras 다. 쓸 내용의 축은 둘이다. 집합과 명제에서의 쌍대성, 그리고 Heyting 대수에서 네 법칙 가운데 어느 것이 성립하지 않는지다. 직관주의 논리에서 이중부정 제거가 없으므로 한쪽 방향만 성립한다는 것이 heyting-algebras 와 kripke-semantics 를 잇는다. 다만 기본 법칙이어서 sets 의 보강으로 절 하나를 키우는 쪽이 맞을 수도 있다. 먼저 sets 와 boolean-algebras 의 분량을 보고 정한다.",
+      "createdAt": "2026-10-19T17:02:18.963Z",
+      "seq": 2251
+    },
+    {
+      "id": "bc8e83c0",
+      "title": "Freedman 정리",
+      "priority": 10,
+      "note": "신규 주제 후보. 72차(2026-10-19) 확인. 저장소에 제목도 헤딩도 없고 donaldson-invariants(4 곳)와 intersection-form 이 이름만 쓴다. 닫힌 단연결 4 차원 위상다양체를 교차형식으로 분류하는 정리다. 분야는 topology 이고 붙일 부모 후보는 intersection-form 과 s-cobordism 이다. donaldson-invariants 가 이 정리와 대각화 정리를 합쳐 매끄러운 구조가 없는 위상 4 다양체와 이색 R4 를 끌어내므로 그 문서의 부모 후보이기도 하다. 쓸 내용은 교차형식의 분류, Casson 손잡이, 매끄러운 범주와의 차이다.",
+      "createdAt": "2026-10-19T17:02:19.113Z",
+      "seq": 2252
     },
     {
       "id": "dfb3e493",
