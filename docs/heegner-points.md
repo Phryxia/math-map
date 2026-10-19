@@ -8,7 +8,7 @@ $$
 \varphi\colon X_0(N)\longrightarrow E
 $$
 
-로 옮긴 뒤 자취를 취하면 $E$ 의 대수적 점 $y_K\in E(K)$ 가 만들어진다. 이것이 **Heegner 점**이다.
+로 옮긴 뒤 자취를 취하면 $E$ 의 대수적 점 $y_K\in E(K)$ 가 만들어진다. 이것이 **Heegner 점(Heegner point)** 이다.
 
 Gross 와 Zagier 는 1986 년에 이 점의 정준 높이가 $L$ 함수의 미분과 같음을 증명했다.[^1]
 
@@ -66,7 +66,7 @@ $$
 L'(E/K,1)=\frac{32\pi^2\thinspace\langle f,f\rangle}{u^2\sqrt{|D|}}\thickspace\hat h(y_K)
 $$
 
-이다. 우변의 상수가 양수이므로
+이것이 **Gross–Zagier 공식(Gross–Zagier formula)** 이다. 우변의 상수가 양수이므로
 
 $$
 L'(E/K,1)\ne0\iff \hat h(y_K)\ne0\iff y_K\ \text{가 무한위수}

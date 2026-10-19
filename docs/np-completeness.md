@@ -2,7 +2,7 @@
 
 # 개요
 
-**NP(nondeterministic polynomial time)-완전성** 은 [P 대 NP 문제](p-np.md)를 개별 문제 수준으로 내려놓는 도구다. $\mathrm{NP}$ 에 속하는 문제들 가운데 "가장 어려운" 것들을 골라내면, 그중 하나만 다항시간에 풀려도 $\mathrm{NP}$ 전체가 $\mathrm P$ 와 같아진다. 이런 문제를 NP-완전(NP-complete)이라 한다.
+**NP-완전성(NP-completeness, nondeterministic polynomial time)** 은 [P 대 NP 문제](p-np.md)를 개별 문제 수준으로 내려놓는 도구다. $\mathrm{NP}$ 에 속하는 문제들 가운데 "가장 어려운" 것들을 골라내면, 그중 하나만 다항시간에 풀려도 $\mathrm{NP}$ 전체가 $\mathrm P$ 와 같아진다. 이런 문제를 NP-완전(NP-complete)이라 한다.
 
 이 개념이 성립하려면 그런 가장 어려운 문제가 실제로 존재해야 한다. Cook–Levin 정리가 그것을 보장한다: 명제논리식의 충족가능성 문제(satisfiability, SAT)가 NP-완전이다[^1]. 증명은 비결정적 Turing 기계의 계산 과정을 시간-공간 표(tableau)로 펼친 뒤 그 표의 국소 규칙을 **CNF**(conjunctive normal form) 절로 부호화하는 것이다.
 
@@ -56,7 +56,7 @@ NP-hard 는 $\mathrm{NP}$ 안에 있을 필요가 없다. 정지 문제는 NP-ha
 
 ## Cook–Levin 정리
 
-**정리 (Cook 1971, Levin 1973).** SAT 은 NP-complete 다.
+**Cook–Levin 정리(Cook–Levin theorem, 1971, 1973).** SAT 은 NP-complete 다.
 
 증명의 요지. $L \in \mathrm{NP}$ 를 잡으면 시간 $p(n)$ 의 비결정적 Turing 기계 $M$ 이 $L$ 을 판정한다. 입력 $w$ (길이 $n$ )에 대해 $M$ 의 한 실행을 $p(n) \times p(n)$ 크기의 **계산 표**로 적는다. $i$ 번째 행이 시각 $i$ 의 테이프 구성(각 칸의 기호, 헤드 위치, 상태)이다. 시간이 $p(n)$ 이므로 헤드는 $p(n)$ 칸을 넘어 움직이지 못해 표의 폭도 $p(n)$ 이면 충분하다.
 

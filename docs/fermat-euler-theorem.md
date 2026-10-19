@@ -2,7 +2,7 @@
 
 # 개요
 
-Euler 정리는 법 $n$ 과 서로 소인 정수 $a$ 에 대해 $a^{\varphi(n)}\equiv 1 \pmod n$ 이라는 정리이고, Fermat 소정리는 $n$ 이 소수인 경우다. 두 정리는 모듈러 거듭제곱이 지수에 관해 주기적임을 말하며, 근거는 [군](groups.md)의 Lagrange 정리다. 이 주기성을 모듈러 역원 계산, 큰 지수의 축약, **RSA**(Rivest–Shamir–Adleman)의 정확성, 확률적 소수판정이 쓴다.
+**Euler 정리(Euler's theorem)** 는 법 $n$ 과 서로 소인 정수 $a$ 에 대해 $a^{\varphi(n)}\equiv 1 \pmod n$ 이라는 정리이고, **Fermat 소정리(Fermat's little theorem)** 는 $n$ 이 소수인 경우다. 두 정리는 모듈러 거듭제곱이 지수에 관해 주기적임을 말하며, 근거는 [군](groups.md)의 Lagrange 정리다. 이 주기성을 모듈러 역원 계산, 큰 지수의 축약, **RSA**(Rivest–Shamir–Adleman)의 정확성, 확률적 소수판정이 쓴다.
 
 # 직관
 
