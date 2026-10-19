@@ -89,7 +89,7 @@ $$
 
 **(a) 중복도 1.** 언제나 $m(\pi)\le1$ 이다.
 
-**(b) 지표 공식.** $\varphi=\varphi_{n+1}\otimes\varphi_n$ 을 $\pi$ 의 Langlands 매개변수라 하자. 이 매개변수를 공유하는 표현들은 여러 순수 내부형식 위의 Vogan 꾸러미 $\Pi_\varphi$ 를 이루고, 성분군의 지표로 매개된다. 그러면
+**(b) 지표 공식.** $\varphi=\varphi_{n+1}\otimes\varphi_n$ 을 $\pi$ 의 Langlands 매개변수라 하자. 이 매개변수를 공유하는 표현들은 여러 순수 내부형식 위의 [Vogan L 꾸러미](vogan-packets.md) $\Pi_\varphi$ 를 이루고, 성분군의 지표로 매개된다. 그러면
 
 $$
 \sum_{\pi\in\Pi_\varphi}m(\pi)=1

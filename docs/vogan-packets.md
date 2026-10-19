@@ -20,13 +20,13 @@ $$
 \Pi_\varphi^{\mathrm{Vogan}}=\bigsqcup_{b\in H^1(F,G)}\Pi_\varphi\bigl(G_b\bigr)
 $$
 
-[Gan–Gross–Prasad 추측](gan-gross-prasad.md)의 지표 공식에서 "중복도의 합이 1" 이라고 할 때의 합이 Vogan 꾸러미 위의 합이다.
+[Gan–Gross–Prasad 추측](gan-gross-prasad.md)의 지표 공식에서 "중복도의 합이 1" 이라고 할 때의 합이 Vogan L 꾸러미 위의 합이다.
 
 # 직관
 
 $\mathrm{GL}\_2(F)$ 의 기약 표현을 $\mathrm{SL}\_2(F)$ 로 제한하면 쪼개질 수 있고, 쪼개진 조각들은 $\mathrm{GL}\_2(F)$ 의 켤레작용으로 서로 옮겨 다니며 같은 매개변수를 갖는다. $\mathrm{GL}\_n$ 에서는 중심화군이 연결되어 성분군이 자명하고 꾸러미가 하나지만, 쌍대군 $\mathrm{PGL}\_2(\mathbb C)$ 안에서는 중심화군이 연결되지 않을 수 있다. 그 성분군의 지표가 조각마다 붙는 이름표다.
 
-$\mathrm{PGL}\_2(\mathbb R)$ 의 이산계열은 $\mathrm{SL}\_2(\mathbb R)$ 에서 정칙과 반정칙 두 조각으로 갈라져 성분군 $\mathbb Z/2$ 의 두 지표를 채운다. 매개변수에 따라서는 $\mathrm{PGL}\_2(\mathbb R)$ 쪽에 표현이 하나뿐이고, 남은 지표에 해당하는 표현은 **콤팩트 내부형식** $\mathrm{PB}^\times=\mathrm{SU}(2)/\lbrace\pm1\rbrace$ 의 유한차원 표현이다. 무한차원 표현과 유한차원 표현을 같은 이름표 아래 두는 것은 [Jacquet–Langlands 대응](jacquet-langlands.md)이 이미 하던 일이고, 순수 내부형식 전체의 표현을 한 꾸러미로 모아 성분군의 지표와 짝지은 것이 Vogan 꾸러미다.
+$\mathrm{PGL}\_2(\mathbb R)$ 의 이산계열은 $\mathrm{SL}\_2(\mathbb R)$ 에서 정칙과 반정칙 두 조각으로 갈라져 성분군 $\mathbb Z/2$ 의 두 지표를 채운다. 매개변수에 따라서는 $\mathrm{PGL}\_2(\mathbb R)$ 쪽에 표현이 하나뿐이고, 남은 지표에 해당하는 표현은 **콤팩트 내부형식** $\mathrm{PB}^\times=\mathrm{SU}(2)/\lbrace\pm1\rbrace$ 의 유한차원 표현이다. 무한차원 표현과 유한차원 표현을 같은 이름표 아래 두는 것은 [Jacquet–Langlands 대응](jacquet-langlands.md)이 이미 하던 일이고, 순수 내부형식 전체의 표현을 한 꾸러미로 모아 성분군의 지표와 짝지은 것이 Vogan L 꾸러미다.
 
 # 정의
 
@@ -48,7 +48,7 @@ $$
 
 를 **성분군**이라 한다. 고전군에서는 $(\mathbb Z/2)^r$ 의 몫으로 나온다.
 
-## Vogan 꾸러미와 정련된 대응
+## Vogan L 꾸러미와 정련된 대응
 
 $$
 \Pi_\varphi^{\mathrm{Vogan}}=\bigsqcup_{b\in H^1(F,G)}\Pi_\varphi(G_b)
@@ -91,7 +91,7 @@ $$
 \chi(\pi)=\varepsilon\negthinspace\left(\tfrac12,\varphi_{n+1}\otimes\varphi_n\right)
 $$
 
-왼쪽 합은 Vogan 꾸러미 위의 합이다. 유사분열형 군 하나만 보면 중복도가 전부 0 일 수 있고, 그때 해당 표현은 비유사분열 내부형식 위에 있다. [Waldspurger 정리](waldspurger-formula.md)에서 주기가 어느 사원수 대수 위에서 소멸하지 않는지 묻는 것이 이 현상의 $n=1$ 판본이다. 오른쪽 등식은 $\varepsilon$ 인자가 $\mathcal S_\varphi$ 위의 지표를 지정한다는 뜻이고, 그 지표를 $Z(\widehat G)^\Gamma$ 에 제한하면 내부형식이 나온다.
+왼쪽 합은 Vogan L 꾸러미 위의 합이다. 유사분열형 군 하나만 보면 중복도가 전부 0 일 수 있고, 그때 해당 표현은 비유사분열 내부형식 위에 있다. [Waldspurger 정리](waldspurger-formula.md)에서 주기가 어느 사원수 대수 위에서 소멸하지 않는지 묻는 것이 이 현상의 $n=1$ 판본이다. 오른쪽 등식은 $\varepsilon$ 인자가 $\mathcal S_\varphi$ 위의 지표를 지정한다는 뜻이고, 그 지표를 $Z(\widehat G)^\Gamma$ 에 제한하면 내부형식이 나온다.
 
 ## Arthur 매개변수
 
