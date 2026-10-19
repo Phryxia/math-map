@@ -12,7 +12,7 @@ $$
 D_B(V)=(B\otimes_{\mathbb Q_p}V)^{G_K}
 $$
 
-$B$ 를 잘 고르면 불변식을 취하는 과정에서 $G_K$ 작용이 상쇄되고 $D_B(V)$ 에는 Frobenius 나 여과 같은 선형대수 자료만 남는다. 이런 $B$ 가 주기환(period ring)이고, $\mathbb Q_p\subset B_{\mathrm{HT}},B_{\mathrm{dR}},B_{\mathrm{st}},B_{\mathrm{cris}}$ 의 사슬이 표현의 네 등급을 정의한다.
+$B$ 를 잘 고르면 불변식을 취하는 과정에서 $G_K$ 작용이 상쇄되고 $D_B(V)$ 에는 Frobenius 나 여과 같은 선형대수 자료만 남는다. 이런 $B$ 가 주기환(period ring)이고, $\mathbb Q_p\subset B_{\mathrm{HT}},B_{\mathrm{dR}},B_{\mathrm{st}},B_{\mathrm{cris}}$ 의 사슬이 표현의 네 등급을 정의한다. 주기환으로 $p$ 진 표현을 분류하는 이 이론이 **p 진 Hodge 이론(p-adic Hodge theory)** 이다.
 
 복소다양체에서 [de Rham 코호몰로지](de-rham-cohomology.md)와 특이 코호몰로지를 잇는 비교동형은 $\mathbb C$ 로 계수를 올려야 성립하고 그 동형의 행렬 성분이 주기다. $p$ 진 세계에서 $\mathbb C$ 자리에 $B_{\mathrm{dR}}$ 이, $2\pi i$ 자리에 $g(t)=\chi(g)\thinspace t$ 를 만족하는 원소 $t$ 가 놓인다.
 
