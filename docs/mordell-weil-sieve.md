@@ -22,7 +22,7 @@ $$
 \iota: X\to J,\qquad P\mapsto\lbrack P-P_0\rbrack
 $$
 
-는 $\mathbb Q$ 위에서 정의된 닫힌 삽입이다. 이 삽입으로 $X(\mathbb Q)$ 를 $J(\mathbb Q)$ 의 부분집합으로 본다. Mordell–Weil 정리로 $J(\mathbb Q)$ 는 유한생성이고, 그 생성원은 [하강](selmer-tate-shafarevich.md)으로 구한다.
+는 $\mathbb Q$ 위에서 정의된 닫힌 삽입이다. 이 삽입으로 $X(\mathbb Q)$ 를 $J(\mathbb Q)$ 의 부분집합으로 본다. [Mordell–Weil 정리](canonical-height.md)로 $J(\mathbb Q)$ 는 유한생성이고, 그 생성원은 [하강](selmer-tate-shafarevich.md)으로 구한다.
 
 ## 시브 도형
 

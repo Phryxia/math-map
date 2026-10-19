@@ -2,7 +2,7 @@
 
 # 개요
 
-수체 $K$ 위의 [타원곡선](elliptic-curves.md) $E$ 에 대해 Mordell–Weil 정리는
+수체 $K$ 위의 [타원곡선](elliptic-curves.md) $E$ 에 대해 [Mordell–Weil 정리](canonical-height.md)는
 
 $$
 E(K)\thickspace\cong\thickspace\mathbb Z^r\oplus E(K)\_{\mathrm{tors}}

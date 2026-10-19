@@ -16,7 +16,7 @@ $y_m$ 은 판별식 $-m$ 의 Heegner 점들을 자취로 모은 인자류이고 
 
 # 직관
 
-$X_0(N)$ 위에는 허수이차체마다 Heegner 점이 있고 허수이차 판별식은 무한히 많다. 이 점들을 $J_0(N)$ 안의 인자류로 옮기면 $y_1,y_2,y_3,\dots$ 가 나온다. Mordell–Weil 정리로 $J_0(N)(\mathbb Q)$ 는 유한생성이므로 유리수 계수의 선형관계 $\sum_{m\gt 0}c_m\thinspace y_m=0$ 이 무한히 많다. 어느 $(c_m)$ 이 관계인지 하나씩 찾는 길은 끝나지 않는다.
+$X_0(N)$ 위에는 허수이차체마다 Heegner 점이 있고 허수이차 판별식은 무한히 많다. 이 점들을 $J_0(N)$ 안의 인자류로 옮기면 $y_1,y_2,y_3,\dots$ 가 나온다. [Mordell–Weil 정리](canonical-height.md)로 $J_0(N)(\mathbb Q)$ 는 유한생성이므로 유리수 계수의 선형관계 $\sum_{m\gt 0}c_m\thinspace y_m=0$ 이 무한히 많다. 어느 $(c_m)$ 이 관계인지 하나씩 찾는 길은 끝나지 않는다.
 
 관계를 하나씩 찾는 대신 점을 계수로 삼은 급수 $\sum_m y_m q^m$ 을 본다. 이 급수가 유한차원 형식 공간 $S$ 와 $J$ 의 텐서곱 $S\otimes J$ 에 들면 $\sum_m y_mq^m=\sum_j g_j\otimes v_j$ 로 적히고 $y_m=\sum_j a_{g_j}(m)v_j$ 가 된다. 그러면 $\sum_m c_m\thinspace y_m=0$ 은 $S$ 의 모든 $g$ 에 대해 $\sum_m c_m\thinspace a_g(m)=0$ 이라는 조건과 같고 역도 성립한다. 관계를 전부 아는 것이 급수가 어느 공간에 드는지 아는 것으로 바뀐다.
 
