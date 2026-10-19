@@ -4,7 +4,7 @@
 
 $\mathbb Q$ 위 [타원곡선](elliptic-curves.md)의 비틀림 부분군으로 무엇이 가능한지는 1977 년 Mazur 의 정리 전까지 유한성조차 증명되지 않았다[^1].
 
-**정리(Mazur).** $E/\mathbb Q$ 의 비틀림군은 다음 15 개 중 하나다.
+**Mazur 의 비틀림점 정리(Mazur's torsion theorem).** $E/\mathbb Q$ 의 비틀림군은 다음 15 개 중 하나다.
 
 $$
 \mathbb Z/n\ (1\le n\le10,\ n=12),\qquad
