@@ -8,7 +8,7 @@ $$
 \mathrm{CS}(A)=\frac1{8\pi^2}\int_M\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)
 $$
 
-$A$ 는 $G$ 주다발 위의 접속, 곧 [Lie 대수](lie-algebras.md) 값을 갖는 1 형식이다. [미분형식](differential-forms.md)의 3 형식을 3 차원 다양체 위에서 적분하는 것뿐이라 계량이 들어갈 자리가 없고, 그래서 3 차원 위상적 장론이 존재한다.
+$A$ 는 $G$ 주다발 위의 접속, 곧 [Lie 대수](lie-algebras.md) 값을 갖는 1 형식이다. [미분형식](differential-forms.md)의 3 형식을 3 차원 다양체 위에서 적분하는 것뿐이라 계량이 들어갈 자리가 없다. 이 작용으로 세운 3 차원 위상적 장론이 **Chern–Simons 이론(Chern–Simons theory)** 이다.
 
 이 식은 4 차원 특성류 $\mathrm{tr}(F\wedge F)$ 를 한 차원 내려 적은 것이다. $\mathrm{CS}(A)$ 는 게이지 변환에서 정수만큼 변하므로 $e^{2\pi ik\thinspace\mathrm{CS}(A)}$ 가 $k\in\mathbb Z$ 일 때만 잘 정의된다. 임계점은 평탄 접속이고 거기서 $\mathrm{CS}$ 는 $\mathbb R/\mathbb Z$ 값의 위상 불변량이 되며, 이 수들이 [Witten 점근 추측](witten-asymptotics.md)에서 양자 불변량의 점근 위상으로 나타난다.
 
