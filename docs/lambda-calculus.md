@@ -46,7 +46,7 @@ $$
 \lambda x.\thinspace M\thinspace x \thickspace\to_\eta\thickspace M .
 $$
 
-두 함수가 모든 인자에 대해 같은 값을 주면 같다는 원리의 문법적 대응이다.
+$\lambda x.\thinspace M\thinspace x$ 와 $M$ 은 어느 인자에서도 같은 값을 준다. $\eta$ -축약은 이 외연성(extensionality)을 구문 규칙으로 적은 것이다.
 
 $\to^\ast$ 로 여러 단계 축약을, $=\_\beta$ 로 $\beta$ -축약으로 생성되는 [동치관계](equivalence-relations.md)를 쓴다.
 
@@ -132,7 +132,7 @@ flowchart TD
 
 ## 단순 타입과 정규화
 
-**단순 타입 lambda calculus(STLC).** 타입을 기본 타입과 함수 타입 $A \to B$ 로 정의하고, 항에 타입 판정 규칙을 준다. 변수는 문맥에서 타입을 받고, $\lambda x : A.\thinspace M$ 은 $M : B$ 일 때 $A \to B$ 를 가지며, 적용 $M\thinspace N$ 은 $M : A \to B$ 이고 $N : A$ 일 때 $B$ 를 갖는다.
+**단순 타입 lambda calculus(simply typed lambda calculus, STLC).** 타입을 기본 타입과 함수 타입 $A \to B$ 로 정의하고, 항에 타입 판정 규칙을 준다. 변수는 문맥에서 타입을 받고, $\lambda x : A.\thinspace M$ 은 $M : B$ 일 때 $A \to B$ 를 가지며, 적용 $M\thinspace N$ 은 $M : A \to B$ 이고 $N : A$ 일 때 $B$ 를 갖는다.
 
 **정리 (강한 정규화).** STLC 의 모든 타입 있는 항은 어떤 축약 순서로도 유한 단계 안에 정규형에 도달한다.
 
