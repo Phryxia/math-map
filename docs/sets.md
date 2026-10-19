@@ -66,7 +66,7 @@ $I$ 는 무한집합이어도 된다.
 
 ## 대수 법칙
 
-합집합과 교집합은 교환·결합·분배 법칙을 만족한다. 여집합에 대해 De Morgan 법칙이 성립한다.
+합집합과 교집합은 교환·결합·분배 법칙을 만족한다. 여집합에 대해 [De Morgan 법칙](de-morgan-laws.md)이 성립한다.
 
 $$
 (A\cup B)^c=A^c\cap B^c,\qquad (A\cap B)^c=A^c\cup B^c

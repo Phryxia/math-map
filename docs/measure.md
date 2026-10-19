@@ -30,7 +30,7 @@ $\varepsilon$ 은 얼마든지 작게 잡을 수 있으니 유리수 집합의 �
 - $A \in \Sigma$ 이면 $X \setminus A \in \Sigma$
 - $A_1, A_2, \dots \in \Sigma$ 이면 $\bigcup_n A_n \in \Sigma$
 
-셀 수 있는 무한을 가산이라 한다. $\Sigma$ 의 원소를 가측집합, 쌍 $(X, \Sigma)$ 를 가측공간이라 한다. 여집합과 가산 합집합에 닫혀 있으므로 De Morgan 법칙에 따라 가산 교집합에도 닫혀 있다.
+셀 수 있는 무한을 가산이라 한다. $\Sigma$ 의 원소를 가측집합, 쌍 $(X, \Sigma)$ 를 가측공간이라 한다. 여집합과 가산 합집합에 닫혀 있으므로 [De Morgan 법칙](de-morgan-laws.md)에 따라 가산 교집합에도 닫혀 있다.
 
 ## 측도
 
