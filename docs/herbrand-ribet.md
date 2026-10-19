@@ -62,7 +62,7 @@ $$
 a_\ell(f)\equiv1+\ell^{k-1}\pmod{\mathfrak p}\qquad(\forall\ell\ne p)
 $$
 
-이다.
+이다. 이 합동이 **Eisenstein 합동(Eisenstein congruence)** 이다.
 
 무게 $k$ 의 형식 공간에서 Eisenstein 부분을 상수항 1 로 정규화하면 계수의 분모에 $B_k$ 가 들어간다. $p\mid B_k$ 는 그 정규화가 $\mathbb Z_p$ 위에서 불가능하다는 뜻이고, Hecke 대수의 Eisenstein 아이디얼이 극대 아이디얼에 포함된다는 진술과 같다.
 
