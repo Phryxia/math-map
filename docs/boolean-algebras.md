@@ -36,7 +36,7 @@ $$
 a \vee \neg a = 1, \qquad a \wedge \neg a = 0
 $$
 
-이 목록(Huntington 공리계)에서 결합법칙, 멱등법칙, 흡수법칙, de Morgan 법칙, 보수의 유일성이 모두 따라 나온다. 특히 보수는 유일하므로 다른 연산들이 $\neg$ 를 결정한다.
+이 목록(Huntington 공리계)에서 결합법칙, 멱등법칙, 흡수법칙, [De Morgan 법칙](de-morgan-laws.md), 보수의 유일성이 모두 따라 나온다. 특히 보수는 유일하므로 다른 연산들이 $\neg$ 를 결정한다.
 
 ## 격자 정의
 
