@@ -178,7 +178,7 @@ Rankin 이 1939 년에 이 항등식에서 $\tau(n)=O(n^{29/5})$ 를 얻었다. 
 
 ## 두 가지 방법의 비교
 
-$L$ 함수를 값으로 갖는 적분을 만들고 적분의 다른 표현에서 성질을 읽는 전략은 [Tate 의 논문](tate-thesis.md)과 Godement–Jacquet 과 같고, 함수방정식의 출처만 다르다. 그쪽은 Poisson 합공식이고 여기서는 Eisenstein 급수다.
+$L$ 함수를 값으로 갖는 적분을 만들고 적분의 다른 표현에서 성질을 읽는 전략은 [Tate 의 zeta 적분](tate-zeta-integral.md)과 Godement–Jacquet 과 같고, 함수방정식의 출처만 다르다. 그쪽은 Poisson 합공식이고 여기서는 Eisenstein 급수다.
 
 자기동형 $L$ 함수의 해석적 성질을 얻는 방법은 두 갈래다.
 

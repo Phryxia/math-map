@@ -128,7 +128,7 @@ $$
 \zeta(s)\thinspace\Gamma(s)=\int_0^{\infty}\frac{t^{s-1}}{e^{t}-1}dt
 $$
 
-오른쪽 식이 $\zeta(s)$ 를 적분으로 바꾸는 표준 수법이고, 이 관점의 일반화가 [Tate 논문](tate-thesis.md)이다.
+오른쪽 식이 $\zeta(s)$ 를 적분으로 바꾸는 표준 수법이고, 이 관점의 일반화가 [Tate 의 zeta 적분](tate-zeta-integral.md)이다.
 
 [Riemann zeta](riemann-zeta.md) 의 함수방정식은 감마 인자를 붙여야 대칭이 된다. 소수마다 Euler 인자 $(1-p^{-s})^{-1}$ 가 있듯 무한 자리의 인자가 감마다. $\zeta$ 의 자명한 영점 $s=-2,-4,\dots$ 는 $\Gamma(s/2)$ 의 극점을 상쇄하느라 생긴 것이고 $\zeta$ 자신의 성질이 아니다. [모듈러 형식](modular-forms.md)과 [Dirichlet L 함수](dirichlet-l-functions.md)의 완비화에도 무게에 맞춘 감마 인자가 같은 자리에 붙는다.
 

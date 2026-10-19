@@ -120,7 +120,7 @@ $S=\lbrace\infty\rbrace$ 로 두면 유한 개의 소수에서 지정한 합동�
 
 빼는 자리가 하나는 있어야 한다. 곱 공식이 모든 자리를 묶고 있으므로 다른 자리를 다 지정하면 남은 자리의 절댓값이 강제된다.
 
-## Tate 논문과 함수방정식
+## Tate 의 zeta 적분과 함수방정식
 
 $\mathbb A_K$ 는 가법군으로서 자기쌍대다. 비자명한 가법 지표 $\psi$ 를 고정하면 $x\mapsto\psi(xy)$ 가 쌍대군 전체를 준다. $K$ 가 이산이고 몫이 콤팩트하므로 Poisson 합공식이 성립한다.
 
@@ -160,7 +160,7 @@ $$
 
 - **모듈러스의 소거.** 유체론을 광선류군으로 쓰면 모듈러스 $\mathfrak m$ 을 매번 고르고 정합성을 확인해야 한다. 이델류군은 모든 $\mathfrak m$ 을 동시에 담아 $C_K\to\mathrm{Gal}(K^{\mathrm{ab}}/K)$ 한 줄로 끝난다.
 - **국소와 대역의 통일.** 각 $K_v^\times$ 에서의 국소 유체론과 대역 유체론이 같은 그림의 부분과 전체가 된다. 국소 조건을 붙여 대역 대상을 만드는 절차가 제한직적으로 형식화된다.
-- **해석적 도구.** 국소콤팩트라 Haar 측도와 [Fourier 변환](fourier-transform.md)이 있다. Tate 논문이 그 첫 적용이고, 자기동형 형식의 스펙트럼 분해와 대각합 공식이 그 위에 세워진다.
+- **해석적 도구.** 국소콤팩트라 Haar 측도와 [Fourier 변환](fourier-transform.md)이 있다. [Tate 의 zeta 적분](tate-zeta-integral.md)이 그 첫 적용이고, 자기동형 형식의 스펙트럼 분해와 대각합 공식이 그 위에 세워진다.
 - **군의 교체.** $\mathrm{GL}\_1$ 을 $\mathrm{GL}\_n$ 이나 다른 환원군으로 바꾸어도 서술이 그대로 통한다.
 
 ## 수체와 함수체의 평행
@@ -178,7 +178,7 @@ $$
 
 ## 더 알아보기
 
-- [Tate 의 논문](tate-thesis.md)
+- [Tate 의 zeta 적분](tate-zeta-integral.md)
 - [Brauer 군](brauer-groups.md)
 
 #number_theory #field_theory #analysis

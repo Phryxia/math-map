@@ -88,7 +88,7 @@ $$
 # 활용
 
 - **조화해석의 통일.** Fourier 급수, Fourier 변환, [이산 Fourier 변환](fourier.md)이 각각 $S^1$, $\mathbb R$, $\mathbb Z/n$ 의 쌍대성이다. 수렴 정리와 Plancherel 등식을 군마다 다시 증명하지 않고 한 번에 얻는다.
-- **아델 위의 해석.** [아델](adeles.md) 군 $\mathbb A$ 는 자기쌍대이고 $\mathbb Q$ 가 자기 직교 부분군이다. $\mathbb A/\mathbb Q$ 가 콤팩트이므로 쌍대가 이산군 $\mathbb Q$ 이고, 이 자기쌍대성이 [Tate 논문](tate-thesis.md)의 국소-전역 함수방정식을 준다.
+- **아델 위의 해석.** [아델](adeles.md) 군 $\mathbb A$ 는 자기쌍대이고 $\mathbb Q$ 가 자기 직교 부분군이다. $\mathbb A/\mathbb Q$ 가 콤팩트이므로 쌍대가 이산군 $\mathbb Q$ 이고, 이 자기쌍대성이 [Tate 의 zeta 적분](tate-zeta-integral.md)의 국소-전역 함수방정식을 준다.
 - **콤팩트군의 표현.** 아벨이 아닌 콤팩트군에서는 지표 대신 기약표현 전체가 쌍대의 자리에 오고, [Peter–Weyl 정리](peter-weyl.md)가 $L^2(G)$ 의 분해를 준다. 아벨군에서 모든 기약표현이 $1$ 차원이므로 두 정리가 겹친다.
 - **격자와 theta 급수.** 격자의 쌍대격자에 대한 Poisson 합이 [theta 급수](theta-series.md)의 모듈러 변환식을 준다. 자기쌍대 격자에서 변환식이 가장 단순해지고 그것이 부호 이론의 불변량 계산에 쓰인다.
 
@@ -101,6 +101,6 @@ $$
 ## 더 알아보기
 
 - [Poisson 합 공식](poisson-summation.md)
-- [Tate 의 논문](tate-thesis.md)
+- [Tate 의 zeta 적분](tate-zeta-integral.md)
 
 #functional_analysis #topology #analysis #number_theory

@@ -1,4 +1,4 @@
-# Tate 의 논문
+# Tate 의 zeta 적분
 
 # 개요
 
@@ -10,9 +10,9 @@ $$
 Z(f,\chi,s)=\int_{\mathbb A_K^\times}f(x)\thinspace\chi(x)\thinspace|x|\_{\mathbb A}^{s}\thickspace d^\times x
 $$
 
-이 적분이 자리마다 쪼개지면서 Euler 인자와 감마 인자가 같은 종류의 국소 적분으로 통일되고, 함수방정식은 아델군의 자기쌍대성에서 자동으로 나온다. 판별식은 자기쌍대 측도를 정규화할 때 생기는 부피 인자다.
+이 적분이 **Tate 의 zeta 적분(Tate's zeta integral)** 이다. 적분이 자리마다 쪼개지면서 Euler 인자와 감마 인자가 같은 종류의 국소 적분으로 통일되고, 함수방정식은 아델군의 자기쌍대성에서 자동으로 나온다. 판별식은 자기쌍대 측도를 정규화할 때 생기는 부피 인자다.
 
-수론의 해석적 정리를 국소콤팩트군 위의 조화해석으로 번역하는 방식이 여기서 시작했고, [Langlands 강령](langlands-program.md)의 $\mathrm{GL}\_1$ 사례가 바로 이 논문이다.
+수론의 해석적 정리를 국소콤팩트군 위의 조화해석으로 번역하는 방식이 여기서 시작했고, [Langlands 강령](langlands-program.md)의 $\mathrm{GL}\_1$ 사례가 이 적분이다.
 
 # 직관
 
@@ -170,7 +170,7 @@ $$
 Z(f,\pi,s)=\int_{\mathrm{GL}\_n(\mathbb A)}f(g)\thinspace\langle\pi(g)v,\tilde v\rangle\thinspace|\det g|^{s+\frac{n-1}2}\thinspace dg
 $$
 
-가 되고, 같은 논법이 $L(s,\pi)$ 의 해석적 접속과 함수방정식을 준다. $n=1$ 이 Tate 의 논문이다. Langlands 강령이 $L$ 함수를 급수가 아니라 군 위의 적분으로 정의하는 전략을 쓰는 것이 이 계보에서 나왔다. 자기동형 쪽에는 Poisson 합공식이 있으므로, Galois 쪽에서 보이지 않던 해석적 성질이 그쪽에서 나온다.
+가 되고, 같은 논법이 $L(s,\pi)$ 의 해석적 접속과 함수방정식을 준다. $n=1$ 이 Tate 의 zeta 적분이다. Langlands 강령이 $L$ 함수를 급수가 아니라 군 위의 적분으로 정의하는 전략을 쓰는 것이 이 계보에서 나왔다. 자기동형 쪽에는 Poisson 합공식이 있으므로, Galois 쪽에서 보이지 않던 해석적 성질이 그쪽에서 나온다.
 
 [^1]: John Tate, *Fourier Analysis in Number Fields and Hecke's Zeta-Functions*, 1950년 Princeton 학위논문. Cassels–Fröhlich, *Algebraic Number Theory* (1967) 15장에 수록. 국소 계산은 2절, Riemann–Roch 항등식과 대역 정리는 4.2절이다.
 

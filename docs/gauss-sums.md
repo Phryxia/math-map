@@ -2,7 +2,7 @@
 
 # 개요
 
-[Tate 논문](tate-thesis.md)은 자리마다 국소 함수방정식을 준다. 두 국소 zeta 적분의 비가 시험함수에 의존하지 않는 인자 하나로 정리된다.
+[Tate 의 zeta 적분](tate-zeta-integral.md)은 자리마다 국소 함수방정식을 준다. 두 국소 zeta 적분의 비가 시험함수에 의존하지 않는 인자 하나로 정리된다.
 
 $$
 Z_v(\hat f_v,\chi_v^{-1},1-s)=\gamma_v(\chi_v,s)\thinspace Z_v(f_v,\chi_v,s),
@@ -133,7 +133,7 @@ Deligne 은 국소 근 수가 [Galois 표현](galois-representations.md)의 자�
 
 ## 선수지식
 
-- [Tate 의 논문](tate-thesis.md)
+- [Tate 의 zeta 적분](tate-zeta-integral.md)
 - [Dirichlet L 함수](dirichlet-l-functions.md)
 
 ## 더 알아보기

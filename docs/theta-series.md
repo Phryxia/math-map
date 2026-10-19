@@ -92,7 +92,7 @@ $$
 \Theta_L(-1/\tau)=\frac{(\tau/i)^{n/2}}{\mathrm{vol}(L)}\thinspace\Theta_{L^\ast}(\tau)
 $$
 
-$L^\ast=L$ 이면 오른쪽이 다시 $\Theta_L$ 이라 무게 $n/2$ 의 모듈러 변환이 된다. [Tate 논문](tate-thesis.md)에서 $\zeta$ 의 함수방정식을 준 것도 같은 Poisson 합공식이며, 자기쌍대성이 대칭을 낳는 구조가 격자에서 되풀이된다.
+$L^\ast=L$ 이면 오른쪽이 다시 $\Theta_L$ 이라 무게 $n/2$ 의 모듈러 변환이 된다. [Tate 의 zeta 적분](tate-zeta-integral.md)에서 $\zeta$ 의 함수방정식을 준 것도 같은 Poisson 합공식이며, 자기쌍대성이 대칭을 낳는 구조가 격자에서 되풀이된다.
 
 ## 짝수 유니모듈러 격자의 분류
 

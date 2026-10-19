@@ -108,7 +108,7 @@ $-\zeta'/\zeta$ 를 Perron 공식에 넣고 [유수 정리](residue-theorem.md)�
 
 ## L 함수
 
-[Dirichlet 지표](dirichlet-l-functions.md) $\chi$ 를 계수에 붙인 $L(s,\chi)=\sum_{n\ge1}\chi(n)n^{-s}$ 도 Euler 곱과 함수방정식을 가지며, 자명한 지표가 $\zeta$ 를 준다. 수체 $K$ 의 아이디얼로 같은 곱을 만든 것이 [Dedekind zeta 함수](algebraic-number-fields.md) $\zeta_K(s)=\sum_{\mathfrak a}(N\mathfrak a)^{-s}$ 이고, 그 $s=1$ 유수가 류수 공식에서 류수와 조절자를 묶는다. [Tate 의 박사논문](tate-thesis.md)은 이 함수방정식을 아델 위의 Fourier 해석으로 다시 증명한다.
+[Dirichlet 지표](dirichlet-l-functions.md) $\chi$ 를 계수에 붙인 $L(s,\chi)=\sum_{n\ge1}\chi(n)n^{-s}$ 도 Euler 곱과 함수방정식을 가지며, 자명한 지표가 $\zeta$ 를 준다. 수체 $K$ 의 아이디얼로 같은 곱을 만든 것이 [Dedekind zeta 함수](algebraic-number-fields.md) $\zeta_K(s)=\sum_{\mathfrak a}(N\mathfrak a)^{-s}$ 이고, 그 $s=1$ 유수가 류수 공식에서 류수와 조절자를 묶는다. 이 함수방정식을 아델 위의 Fourier 해석으로 다시 증명하는 것이 [Tate 의 zeta 적분](tate-zeta-integral.md)이다.
 
 ## 모듈러 형식의 계수
 
@@ -144,6 +144,6 @@ Montgomery 와 Dyson 은 임계선 위 영점의 간격 분포가 Gauss 유니�
 ### 자동형 형식과 일반화
 
 - [Eisenstein 급수](eisenstein-series.md)
-- [Tate 의 논문](tate-thesis.md)
+- [Tate 의 zeta 적분](tate-zeta-integral.md)
 
 #number_theory #complex_analysis #analysis

@@ -157,7 +157,7 @@ $\Gamma$ , Bessel 함수, 초기하함수의 점근전개를 얻는 표준 절�
 
 ## 함수방정식
 
-$\theta$ 의 변환식을 Mellin 으로 읽으면 $\zeta$ 의 함수방정식이 나온다. 거꾸로 Mellin 변환이 띠에서 정칙이고 양쪽 끝 거동이 대칭이면 함수방정식이 따라온다. 이 시각을 아델 위로 올린 것이 [Tate 논문](tate-thesis.md)이며, 거기서는 각 소수 자리마다 국소 Mellin 변환을 하고 전부 곱한다. 감마 인자가 무한대 자리의 Mellin 변환이다.[^1]
+$\theta$ 의 변환식을 Mellin 으로 읽으면 $\zeta$ 의 함수방정식이 나온다. 거꾸로 Mellin 변환이 띠에서 정칙이고 양쪽 끝 거동이 대칭이면 함수방정식이 따라온다. 이 시각을 아델 위로 올린 것이 [Tate 의 zeta 적분](tate-zeta-integral.md)이며, 거기서는 각 소수 자리마다 국소 Mellin 변환을 하고 전부 곱한다. 감마 인자가 무한대 자리의 Mellin 변환이다.[^1]
 
 [^1]: 표준 참고는 P. Flajolet, X. Gourdon, P. Dumas, *Mellin transforms and asymptotics: harmonic sums*, Theoret. Comput. Sci. 144 (1995) 와 H. Iwaniec, E. Kowalski, *Analytic Number Theory* 5 장. Perron 공식의 유효판과 오차항은 H. Montgomery, R. Vaughan, *Multiplicative Number Theory I* 5 장에 정리되어 있다.
 
