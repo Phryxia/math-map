@@ -136,7 +136,7 @@ Ramanujan 의 mock theta 함수는 오랫동안 고립된 호기심이었다. Zw
 
 ## 다른 산재군의 달빛
 
-umbral moonshine 은 $M_{24}$ 와 $M_{12}$ 를 포함한 여러 군에 달빛 대응을 준다. 이후 Conway 군 $\mathrm{Co}\_0$ 에 대한 달빛, Thompson 군 달빛, O'Nan 군 달빛이 이어졌다. O'Nan 달빛의 계수는 [타원곡선](elliptic-curves.md)의 계급수와 Selmer 군 정보를 담는다.
+umbral moonshine 은 $M_{24}$ 와 $M_{12}$ 를 포함한 여러 군에 달빛 대응을 준다. 이후 Conway 군 $\mathrm{Co}\_0$ 에 대한 달빛, Thompson 군 달빛, O'Nan 군 달빛이 이어졌다. O'Nan 달빛의 계수는 [타원곡선](elliptic-curves.md)의 계급수와 [Selmer 군](selmer-tate-shafarevich.md) 정보를 담는다.
 
 [유한 단순군 분류](finite-simple-groups.md)는 26 개의 산재군을 예외로 남긴다. 달빛 현상은 그 가운데 여럿에 모듈러 형식과 등각장론 쪽 대응을 붙인다.
 

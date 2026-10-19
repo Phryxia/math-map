@@ -12,7 +12,7 @@ Kolyvagin–Logachev 는 이것을 [모듈러 형식](modular-forms.md)에서 �
 
 # 직관
 
-$E(\mathbb Q)$ 의 유한성은 Selmer 군이 작음에서 나온다. [Euler 계](euler-systems.md)에서는 서로 다른 준위의 코호몰로지류가 노름 관계로 묶이고, 그 관계로 소수마다 국소 조건을 하나씩 죽이면 Selmer 군의 크기가 줄어든다. Kolyvagin 이 쓴 Euler 계는 허수이차체 위의 [Heegner 점](heegner-points.md)이고, 소수를 하나씩 추가하며 얻는 유도류가 각각 Selmer 군에 제약을 건다. 제약을 충분히 모으면 Selmer 군이 유한하다.
+$E(\mathbb Q)$ 의 유한성은 [Selmer 군](selmer-tate-shafarevich.md)이 작음에서 나온다. [Euler 계](euler-systems.md)에서는 서로 다른 준위의 코호몰로지류가 노름 관계로 묶이고, 그 관계로 소수마다 국소 조건을 하나씩 죽이면 Selmer 군의 크기가 줄어든다. Kolyvagin 이 쓴 Euler 계는 허수이차체 위의 [Heegner 점](heegner-points.md)이고, 소수를 하나씩 추가하며 얻는 유도류가 각각 Selmer 군에 제약을 건다. 제약을 충분히 모으면 Selmer 군이 유한하다.
 
 Euler 계가 정보를 주려면 첫 원소가 0 이 아니어야 하고, 그 비소멸이 해석적 조건에서 온다. 해석 순위 0 에서는 $L(E,1)\ne0$ 이 겨냥 원소의 성분이 0 이 아니라는 [모듈러 기호](modular-symbols.md) 쪽 사실과 같다. 해석 순위 1 에서는 Gross–Zagier 공식이 Heegner 점의 정준 높이를 $L'(E,1)$ 로 계산하므로 $L'\ne0$ 이면 그 점이 무한위수다.
 

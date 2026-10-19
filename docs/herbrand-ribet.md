@@ -137,7 +137,7 @@ $p$ 가 비정칙일 때 어느 성분이 비자명한지가 Herbrand–Ribet �
 
 ## 현대적 일반화
 
-Skinner–Urban 은 $\mathrm{GL}\_2$ 의 Eisenstein 급수를 $\mathrm{GSp}\_4$ 로 올려 타원곡선 주추측의 한쪽 부등식을 얻었다. 합동으로 가약 표현을 만들고 불분해성에서 Selmer 군의 원소를 뽑아내며 그 개수를 $L$ 함수가 예측하는 만큼 확보하는 구조는 Ribet 과 같다. Eisenstein 합동이 Selmer 군에 원소를 공급하고 Euler 계가 원소를 제거하며, 두 기계가 만나는 곳에서 주추측이 증명된다.
+Skinner–Urban 은 $\mathrm{GL}\_2$ 의 Eisenstein 급수를 $\mathrm{GSp}\_4$ 로 올려 타원곡선 주추측의 한쪽 부등식을 얻었다. 합동으로 가약 표현을 만들고 불분해성에서 [Selmer 군](selmer-tate-shafarevich.md)의 원소를 뽑아내며 그 개수를 $L$ 함수가 예측하는 만큼 확보하는 구조는 Ribet 과 같다. Eisenstein 합동이 Selmer 군에 원소를 공급하고 Euler 계가 원소를 제거하며, 두 기계가 만나는 곳에서 주추측이 증명된다.
 
 [^1]: K. Ribet, *A modular construction of unramified p-extensions of* $\mathbb Q(\mu_p)$ (Invent. Math. **34**, 1976), 151–162. 해설은 L. Washington, *Introduction to Cyclotomic Fields* (2판) 15 장과 B. Mazur, *Modular curves and the Eisenstein ideal*, Publ. IHES **47** (1977). Mazur–Wiles 는 Invent. Math. **76** (1984), Skinner–Urban 은 Invent. Math. **195** (2014).
 
