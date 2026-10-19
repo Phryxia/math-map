@@ -8,7 +8,7 @@ $$
 s_\lambda s_\mu=\sum_\nu c^\nu_{\lambda\mu}\thinspace s_\nu
 $$
 
-가 격자 낱말을 세는 규칙으로 주어진다. 규칙은 계수의 값을 주지만 구조는 드러내지 않는다. 대칭성이 그런 예다. 표현론에서 $V_\lambda\otimes V_\mu\cong V_\mu\otimes V_\lambda$ 이므로
+가 격자 낱말을 세는 규칙으로 주어진다. 이것이 **Littlewood–Richardson 규칙(Littlewood–Richardson rule)** 이다. 규칙은 계수의 값을 주지만 구조는 드러내지 않는다. 대칭성이 그런 예다. 표현론에서 $V_\lambda\otimes V_\mu\cong V_\mu\otimes V_\lambda$ 이므로
 
 $$
 c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}
