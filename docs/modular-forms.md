@@ -139,7 +139,7 @@ $$
 \tau(n)\equiv\sigma_{11}(n)\pmod{691}
 $$
 
-이런 합동을 Galois 표현의 환원으로 설명하는 것이 Serre 와 Deligne 의 관점이며 Iwasawa 이론과 Serre 추측으로 이어진다.
+이런 합동을 Galois 표현의 환원으로 설명하는 것이 Serre 와 Deligne 의 관점이며 Iwasawa 이론과 [Serre 추측](serre-conjecture.md)으로 이어진다.
 
 ## 모듈러 곡선
 

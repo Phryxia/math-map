@@ -142,7 +142,7 @@ $\Gamma\backslash\mathbb H$ 는 음곡률 곡면이므로 측지선 흐름이 �
 
 2 차원 [Galois 표현](galois-representations.md) $\rho:\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q)\to\mathrm{GL}\_2(\mathbb C)$ 를 자기동형 형식에 대응시킬 때, $\rho(c)$ 의 [행렬식](determinants.md)으로 두 경우가 갈린다.
 
-- **홀수** 곧 $\det\rho(c)=-1$ 인 경우는 무게 1 의 정칙 첨점형식에 대응한다. Khare–Wintenberger 의 Serre 추측 증명으로 해결되었다.
+- **홀수** 곧 $\det\rho(c)=-1$ 인 경우는 무게 1 의 정칙 첨점형식에 대응한다. Khare–Wintenberger 의 [Serre 추측](serre-conjecture.md) 증명으로 해결되었다.
 - **짝수** 곧 $\det\rho(c)=+1$ 인 경우는 **고윳값 $\lambda=\tfrac14$ 인 Maass 형식**에 대응한다.
 
 짝수 경우가 정확히 $\tfrac14$ 라는 문턱 위에 앉는다. 대응하는 Maass 형식이 $r=0$ 이어서 온도적이면서 경계에 있는 것이다. 상이 가해군인 경우는 Langlands 와 Tunnell 이 해결했고, 일반적인 경우는 증명되지 않았다[^4]. 정칙 형식으로 잡히지 않는 Galois 표현이 여기에 있다.

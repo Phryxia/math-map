@@ -50,7 +50,7 @@ $S_k$ 는 첨점형식, $\mathcal E_k$ 는 Eisenstein 부분이다. $k=2$ 에서
 
 - **모듈러성.** 타원곡선 $E$ 가 $J_0(N)$ 의 몫으로 나오면 $E$ 의 $\ell$ 진 표현이 고유형식의 표현과 같고, 각 $p$ 에서 $\char35{}E(\mathbb F_p)=p+1-a_p$ 가 성립한다. 모든 $\mathbb Q$ 위 타원곡선이 그런 몫이라는 것이 모듈러성 정리다.
 - **Galois 표현의 구성.** 무게 $2$ 고유형식에서 [Galois 표현](galois-representations.md)을 만들 때 이 관계를 쓴다. 무게가 큰 경우는 Jacobi 다양체 대신 모듈러 곡선 위 층의 코호몰로지를 쓴다.
-- **Hecke 고유값의 합동.** 두 고유형식의 $a_p$ 가 법 $\ell$ 로 모두 같으면 두 Galois 표현의 환원이 같다. 이 판정이 Serre 추측과 레벨 내리기 논법에서 쓰인다.
+- **Hecke 고유값의 합동.** 두 고유형식의 $a_p$ 가 법 $\ell$ 로 모두 같으면 두 Galois 표현의 환원이 같다. 이 판정이 [Serre 추측](serre-conjecture.md)과 레벨 내리기 논법에서 쓰인다.
 
 [^1]: G. Shimura, *Introduction to the Arithmetic Theory of Automorphic Functions*, Princeton University Press (1971), Ch. 8. 합동 관계는 M. Eichler, "Quaternäre quadratische Formen und die Riemannsche Vermutung für die Kongruenzzetafunktion", Archiv der Mathematik **5** (1954), 355–366.
 

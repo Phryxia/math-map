@@ -88,7 +88,7 @@ $H$ 를 자명군으로 두면 ${}^LH=G_K$ 이고 $G_K\to\mathrm{GL}\_n(\mathbb 
 | 경우 | 상태 |
 |---|---|
 | 모든 수체의 $n=1$ | 증명 (유체론) |
-| $n=2$ 이고 $K=\mathbb Q$ 인 홀수 기약 | 대부분 증명 (Serre 추측, Khare–Wintenberger 2009) |
+| $n=2$ 이고 $K=\mathbb Q$ 인 홀수 기약 | 대부분 증명 ([Serre 추측](serre-conjecture.md), Khare–Wintenberger 2009) |
 | $\mathbb Q$ 위 타원곡선 | 증명 (Wiles–Taylor 1995, Breuil–Conrad–Diamond–Taylor 2001) |
 | 함수체 $\mathbb F_q(X)$ 의 모든 $n$ | 증명 (Drinfeld 가 $n=2$ 를, L. Lafforgue 가 일반 $n$ 을) |
 | 일반 수체, $n\ge2$ | 증명되지 않음[^1] |
