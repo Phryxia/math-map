@@ -30,7 +30,7 @@ $$
 h_{t+1}(v)=U_t\Big(h_t(v),\thinspace A_t\big(\lbrace\negthinspace\lbrace h_t(u):u\in N(v)\rbrace\negthinspace\rbrace\big)\Big)
 $$
 
-그래프 전체의 출력은 정점 특징에 순열 불변 readout 을 적용해 만든다. **표현력**은 두 입력 그래프에 서로 다른 출력을 주는 능력이다.
+그래프 전체의 출력은 정점 특징에 순열 불변 readout 을 적용해 만든다. **그래프 신경망의 표현력(expressivity)** 은 두 입력 그래프에 서로 다른 출력을 주는 능력이다.
 
 ## Graph Isomorphism Network
 
