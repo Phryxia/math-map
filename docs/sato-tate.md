@@ -61,7 +61,7 @@ $$
 \qquad\Big(\text{동치로}\quad\frac2\pi\sqrt{1-x^2}\thinspace dx,\ x=\cos\theta\Big)
 $$
 
-다. 전체 질량이 $1$ 이고 $[0,\pi]$ 위에서 대칭이다.
+다. 이 측도가 **Sato–Tate 분포(Sato–Tate distribution)** 다. 전체 질량이 $1$ 이고 $[0,\pi]$ 위에서 대칭이다.
 
 ## Sato–Tate 추측(정리)
 
