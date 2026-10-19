@@ -162,7 +162,7 @@ $$
 | Beilinson–Kato 원소 | 모듈러 형식의 $T$ | $L(E,1)\ne0\Rightarrow$ 순위 0, 주추측의 한쪽 나눔 |
 | Rubin–Stark 원소 | 일반 $\mathbb Z_p(1)$ 꼬임 | 추측 단계 |
 
-Kato 의 Euler 계는 [모듈러 곡선](modular-curves.md)의 $K_2$ 안의 Beilinson 원소에서 오고, $K$ 나 CM(complex multiplication) 을 쓰지 않아 [모듈러 형식](modular-forms.md) 일반으로 확장된다. 얻는 방향은 반대다. Heegner 쪽이 $L'\ne0\Rightarrow$ 순위 1 을, Kato 쪽이 $L\ne0\Rightarrow$ 순위 0 과 주추측의 한쪽 나눔을 준다. 나머지 한쪽은 Skinner–Urban 이 Eisenstein 합동으로 채웠다.
+Kato 의 Euler 계는 [모듈러 곡선](modular-curves.md)의 $K_2$ 안의 Beilinson 원소에서 오고, $K$ 나 CM(complex multiplication) 을 쓰지 않아 [모듈러 형식](modular-forms.md) 일반으로 확장된다. 얻는 방향은 반대다. Heegner 쪽이 $L'\ne0\Rightarrow$ 순위 1 을, Kato 쪽이 $L\ne0\Rightarrow$ 순위 0 과 주추측의 한쪽 나눔을 준다. 나머지 한쪽은 Skinner–Urban 이 [Eisenstein 합동](herbrand-ribet.md)으로 채웠다.
 
 알려진 Euler 계는 순위 1 까지의 Selmer 군만 누른다.
 

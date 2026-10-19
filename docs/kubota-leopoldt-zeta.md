@@ -63,7 +63,7 @@ $1-\zeta_f^{a}$ 는 순환체 $\mathbb Q(\zeta_f)$ 의 원분 단수이므로 �
 # 활용
 
 - **Iwasawa 주추측의 해석적 변.** [Iwasawa 주추측](iwasawa-main-conjecture.md)은 $f_\chi(T)$ 가 생성하는 아이디얼이 순환체의 아이디얼 류군의 특성 아이디얼과 같다는 진술이다. 위의 멱급수 표현이 그 좌변을 준다.
-- **Herbrand–Ribet 정리.** 보간 공식을 $n=k$ 에서 읽으면 $p\mid B_k$ 조건이 $L_p(1-k,\omega^{1-k})$ 의 $p$ 진 값으로 번역되고, 류군의 $\omega^{1-k}$ 성분이 자명하지 않다는 것과 묶인다.
+- **[Herbrand–Ribet 정리](herbrand-ribet.md).** 보간 공식을 $n=k$ 에서 읽으면 $p\mid B_k$ 조건이 $L_p(1-k,\omega^{1-k})$ 의 $p$ 진 값으로 번역되고, 류군의 $\omega^{1-k}$ 성분이 자명하지 않다는 것과 묶인다.
 - **Stickelberger 원소.** [Stickelberger](stickelberger.md) 원소의 계수가 일반화 Bernoulli 수이므로 그 $p$ 진 극한이 이 함수의 보간값이 된다. [Euler 계](euler-systems.md) 논증이 이 대응을 쓴다.
 - **p 진 L 함수의 원형.** 타원곡선의 [p 진 L 함수](p-adic-l-function.md)는 모듈러 기호의 측도로 같은 꼴의 보간 공식을 세운다. 보간할 특수값을 Bernoulli 수에서 모듈러 형식의 주기로 바꾼 것이다.
 
