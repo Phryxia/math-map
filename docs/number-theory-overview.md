@@ -247,6 +247,7 @@ graph TD
 먼저 읽을 갈래: Iwasawa 이론과 비틀림점. 시작 문서: [원법](circle-method.md).
 
 - [원법](circle-method.md): 가법적 문제의 해의 개수를 지수합의 주기 적분으로 적고 단위원을 주 호와 부 호로 가르는 절차, Waring 문제와 삼소수 정리
+  - [Goldbach 추측](goldbach-conjecture.md): 짝수를 두 소수의 합으로 쓰는 문제의 주 호 점근식과 삼소수 형태의 증명
   - [Waring 문제](waring-problem.md): 모든 자연수를 $k$ 제곱수의 합으로 쓰는 데 드는 항의 개수, 모든 수를 덮는 $g(k)$ 와 충분히 큰 수를 덮는 $G(k)$ 의 구분
   - [Vinogradov 평균값 정리](vinogradov-mean-value.md): 차수 $k$ 까지의 지수합의 $2s$ 제곱 평균이 세는 멱합 방정식의 해 개수, 효율적 합동법과 분해 정리가 준 주 추측
 - [Kloosterman 합](kloosterman-sums.md): 역원을 지수에 올린 합의 Weil 상계 $2\sqrt p$ 와 Salié 합의 닫힌 꼴, 모듈러 형식의 계수와 원법의 오차항에서의 쓰임
