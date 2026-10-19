@@ -112,6 +112,7 @@ $R=\lbrace x:x\notin x\rbrace$ 를 집합으로 인정하면 $R\in R\iff R\notin
 ### 세기와 논리
 
 - [셈의 기본 원리](counting-principles.md)
+- [De Morgan 법칙](de-morgan-laws.md)
 - [1차 논리](first-order-logic.md)
 - [Boole 대수](boolean-algebras.md)
 - [ZFC 공리계](zfc-axioms.md)
