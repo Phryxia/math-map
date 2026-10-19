@@ -42,7 +42,7 @@ $$
 \mathrm{Nat}(h_A,F)\cong F(A)
 $$
 
-인 전단사가 있으며 $A$ 와 $F$ 양쪽에 대해 자연스럽다. 대응은 자연변환 $\alpha$ 를 $\alpha_A(\mathrm{id}\_A)$ 로 보낸다.
+인 전단사가 있으며 $A$ 와 $F$ 양쪽에 대해 자연스럽다. 이 전단사가 **Yoneda lemma** 다. 대응은 자연변환 $\alpha$ 를 $\alpha_A(\mathrm{id}\_A)$ 로 보낸다.
 
 # 성질
 
