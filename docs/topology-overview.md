@@ -104,6 +104,7 @@ graph TD
   - [교차형식](intersection-form.md): 4 차원 다양체의 둘째 코호몰로지에 생기는 단모듈러 대칭형식
 - [Reidemeister 비틀림](reidemeister-torsion.md): 사슬복합체의 행렬식이 남기는 단순 호모토피 불변량
 - [s-코보디즘 정리와 고차원 Poincaré 추측](s-cobordism.md): 호모토피만 같은 코보디즘이 원기둥이 되는 조건
+- [Freedman 정리](freedman-theorem.md): 닫힌 단연결 4 차원 위상다양체를 교차형식과 Kirby–Siebenmann 불변량으로 분류하는 정리
 - [수술 이론](surgery-theory.md): 손잡이 교체로 호모토피 핵을 없애고 분류를 장애군으로 적는 이론
   - [이색 구면](exotic-spheres.md): 위상동형이지만 미분동형이 아닌 매끄러운 구면
 

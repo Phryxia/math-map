@@ -123,5 +123,6 @@ s-코보디즘 정리 자체는 분류를 주지 않고, 호모토피 정보와 
 ## 더 알아보기
 
 - [수술 이론](surgery-theory.md)
+- [Freedman 정리](freedman-theorem.md)
 
 #algebraic_topology #topology #theorem
