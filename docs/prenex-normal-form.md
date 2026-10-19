@@ -86,6 +86,7 @@ $$
 
 ## 더 알아보기
 
+- [Herbrand 정리](herbrand-theorem.md)
 - [결의법](resolution.md)
 - [산술적 계층](arithmetical-hierarchy.md)
 

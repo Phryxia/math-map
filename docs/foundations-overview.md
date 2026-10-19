@@ -57,6 +57,7 @@ graph TD
 
 - [1차 논리](first-order-logic.md): 구문과 의미, 건전성과 완전성
   - [한정사 표준형](prenex-normal-form.md): 한정사를 식 앞으로 모으는 변환, 접두부의 교대 횟수와 Skolem 함수
+  - [Herbrand 정리](herbrand-theorem.md): 전칭 한정된 식의 만족가능성을 닫힌 항 대입으로 명제 수준으로 내리는 정리
   - [결의법](resolution.md): 절 집합에서 빈 절을 유도하는 단일 추론 규칙과 반박 완전성
 - [Peano 공리](peano-axioms.md): 자연수의 공리계, 2차 형태의 범주성과 1차 형태의 비표준 모형
 - [Löwenheim–Skolem 정리](lowenheim-skolem.md): 1차 논리가 무한 모형의 크기를 구별하지 못한다
