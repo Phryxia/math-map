@@ -64,7 +64,7 @@ $$
 
 이다. 이 합동이 **Eisenstein 합동(Eisenstein congruence)** 이다.
 
-무게 $k$ 의 형식 공간에서 Eisenstein 부분을 상수항 1 로 정규화하면 계수의 분모에 $B_k$ 가 들어간다. $p\mid B_k$ 는 그 정규화가 $\mathbb Z_p$ 위에서 불가능하다는 뜻이고, Hecke 대수의 Eisenstein 아이디얼이 극대 아이디얼에 포함된다는 진술과 같다.
+무게 $k$ 의 형식 공간에서 Eisenstein 부분을 상수항 1 로 정규화하면 계수의 분모에 $B_k$ 가 들어간다. $p\mid B_k$ 는 그 정규화가 $\mathbb Z_p$ 위에서 불가능하다는 뜻이고, Hecke 대수의 [Eisenstein 아이디얼](eisenstein-ideal.md)이 극대 아이디얼에 포함된다는 진술과 같다.
 
 ## Herbrand–Ribet 정리
 
@@ -109,7 +109,7 @@ $c$ 가 정의하는 확대가 $p$ 밖에서 불분기여야 류군의 원소가
 
 $\ast$ 가 사는 곳이 $H^1(G,\mathbb F_p(\omega^{k-1}))$ 이므로 대응하는 확대에서 $\Delta$ 가 $\omega^{k-1}$ 로 작용한다. [Kummer 이론](kummer-theory.md)으로 류군 쪽으로 옮기면 쌍대성에서 $\mu_p$ 한 겹이 끼어들어 지표가 $\omega^{2-k}$ 가 아니라 $\omega^{1-k}$ 가 된다.
 
-$k$ 가 짝수이므로 $1-k$ 는 홀수이고, 이 정리는 류군의 홀수 성분만 다룬다. Stickelberger 원소도 홀수 성분만 보므로 두 방향이 같은 자리에서 만난다. 짝수 성분이 0 이라는 주장이 Vandiver 추측이다.
+$k$ 가 짝수이므로 $1-k$ 는 홀수이고, 이 정리는 류군의 홀수 성분만 다룬다. Stickelberger 원소도 홀수 성분만 보므로 두 방향이 같은 자리에서 만난다. 짝수 성분이 0 이라는 주장이 [Vandiver 추측](vandiver-conjecture.md)이다.
 
 ## 무게의 범위
 

@@ -164,7 +164,7 @@ $$
 
 가 결합법칙과 단위법칙을 만족한다. 이 데이터 $(T, \eta, \mu)$ 가 [monad](monads.md) 다. 자유군 수반의 monad 는 집합에 형식적 낱말을 붙이는 연산이고, 자유가군 수반의 monad 는 형식적 선형결합을 취하는 연산이다.
 
-역으로 모든 monad 는 적어도 두 가지 수반에서 나온다. Eilenberg–Moore 범주(대수의 범주)와 Kleisli 범주가 각각 그 분해의 끝과 시작을 준다. 프로그래밍 언어에서 쓰는 monad 는 후자 쪽이다.
+역으로 모든 monad 는 적어도 두 가지 수반에서 나온다. Eilenberg–Moore 범주(대수의 범주)와 [Kleisli 범주](kleisli-eilenberg-moore.md)가 각각 그 분해의 끝과 시작을 준다. 프로그래밍 언어에서 쓰는 monad 는 후자 쪽이다.
 
 ## 부분순서에서의 수반
 

@@ -69,7 +69,7 @@ $\text{Ш}$ 의 유한성이 증명되지 않았으므로 $\char35{}\text{Ш}$ �
 
 ## 정준 높이와 조절자
 
-Néron–Tate 높이 $\hat h\colon E(\mathbb Q)\to\mathbb R_{\ge0}$ 는 $\hat h(mP)=m^2\hat h(P)$ 를 만족하는 이차형식이고, 쌍 $\langle P,Q\rangle=\tfrac12(\hat h(P+Q)-\hat h(P)-\hat h(Q))$ 가 자유 부분에서 양정치다. 생성원 $P_1,\dots,P_r$ 에 대해
+[Néron–Tate 높이](canonical-height.md) $\hat h\colon E(\mathbb Q)\to\mathbb R_{\ge0}$ 는 $\hat h(mP)=m^2\hat h(P)$ 를 만족하는 이차형식이고, 쌍 $\langle P,Q\rangle=\tfrac12(\hat h(P+Q)-\hat h(P)-\hat h(Q))$ 가 자유 부분에서 양정치다. 생성원 $P_1,\dots,P_r$ 에 대해
 
 $$
 \mathrm{Reg}\_E=\det\big(\langle P_i,P_j\rangle\big)
@@ -88,7 +88,7 @@ $w=\pm1$ 이 함수방정식의 부호다. $w=-1$ 이면 $\Lambda(1)=-\Lambda(1)
 | 결과 | 내용 |
 |---|---|
 | Coates–Wiles (1977) | [복소 곱셈](complex-multiplication.md)(complex multiplication, CM)을 가진 곡선에서 $r\gt 0\Rightarrow L(E,1)=0$ |
-| Gross–Zagier (1986) | $L'(E,1)$ 이 Heegner 점의 정준 높이와 같다 |
+| Gross–Zagier (1986) | $L'(E,1)$ 이 [Heegner 점](heegner-points.md)의 정준 높이와 같다 |
 | Kolyvagin (1988) | 해석적 순위 $\le1$ 이면 대수적 순위가 같고 $\text{Ш}$ 가 유한 |
 | Skinner–Urban, Kato | [Iwasawa 주추측](iwasawa-main-conjecture.md)을 통해 순위 $0$ 의 강한 BSD 를 여러 경우에 |
 | Bhargava–Skinner–Zhang | 도체로 정렬한 타원곡선의 양의 비율(> 66%)에서 BSD 성립 |

@@ -128,7 +128,7 @@ $H^2(G_{\mathbb Q,S},\mathrm{ad}^0\bar\rho)=0$ 이면 변형 문제가 장애 �
 
 ## Serre 추측과 모듈러성 올림
 
-- **Serre 추측**: Khare–Wintenberger 의 증명은 $\bar\rho$ 를 올려 특성 $0$ 표현을 만들고 모듈러성 올림으로 옮기는 귀납이다. 올리는 단계가 변형환의 점을 찾는 일이고, Ramakrishna 의 올림 정리가 국소 조건을 단 변형환이 비어 있지 않음을 보장한다.
+- **[Serre 추측](serre-conjecture.md)**: Khare–Wintenberger 의 증명은 $\bar\rho$ 를 올려 특성 $0$ 표현을 만들고 모듈러성 올림으로 옮기는 귀납이다. 올리는 단계가 변형환의 점을 찾는 일이고, Ramakrishna 의 올림 정리가 국소 조건을 단 변형환이 비어 있지 않음을 보장한다.
 - **모듈러성 올림**: $\bar\rho$ 가 모듈러이면 조건을 만족하는 변형도 모듈러라는 정리들이 $R=T$ 의 변주다. Fermat 의 마지막 정리가 첫 응용이었다.
 - **Fontaine–Mazur**: de Rham 조건을 단 변형환의 $\mathbb Q_p$ 값 점이 모두 $\mathbb T$ 에서 온다는 것이 추측의 내용이다. Kisin 과 Emerton 의 $\mathrm{GL}\_2$ 증명은 국소 변형환의 기하를 $p$ 진 국소 Langlands 로 읽는다.
 - **고유다양체**: 변형환의 점을 강체적으로 해석해 얻는 $p$ 진 해석공간이 [Hida 족](hida-theory.md)과 [고유다양체](eigenvariety.md)다. 고전점이 그 안에 조밀하게 놓이고, 어느 점이 de Rham 인지가 다시 Fontaine–Mazur 다.
@@ -172,7 +172,7 @@ $\mathbb Z_p$ 쪽에서는 $R=\mathbb Z_p[[T]]$ 가 $\mathbb Z_p$ 위 상대 차
 1. $\bar\rho$ 의 상을 결정하고 $\mathrm{ad}^0$ 의 $G$ -[가군](modules.md) 분해를 본다.
 2. $H^0$ 를 읽는다. 상이 충분히 크면 $H^0(\mathrm{ad}^0)=0$ 이다.
 3. Tate 의 전역 Euler 표수 공식으로 $\dim H^1-\dim H^2$ 를 얻는다. 홀수 $\bar\rho$ 와 $\mathrm{ad}^0$ 에서 이 값은 $S$ 와 무한소수 자리의 기여로 정해진다.
-4. [Poitou–Tate 완전열](poitou-tate.md)로 국소 조건을 단 Selmer 군과 쌍대 Selmer 군을 연결하고 조건이 자른 $H^1$ 을 센다.
+4. [Poitou–Tate 완전열](poitou-tate.md)로 국소 조건을 단 [Selmer 군](selmer-tate-shafarevich.md)과 쌍대 Selmer 군을 연결하고 조건이 자른 $H^1$ 을 센다.
 
 3 단계까지가 형식적이고 4 단계에서 쌍대 Selmer 군을 죽이는 것이 어렵다. Taylor–Wiles 계에서 보조 소수를 붙이는 목적이 그 쌍대 군을 $0$ 으로 만드는 것이다.
 

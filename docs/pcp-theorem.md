@@ -73,7 +73,7 @@ MAX-3LIN(법 $2$ 선형방정식 최대 만족)에서 $\frac12+\varepsilon$ 근�
 
 PCP 정리만으로 최적 상수가 나오지 않는 문제가 많다. MAX-CUT 은 [반정부호 계획법](semidefinite-programming.md)의 Goemans–Williamson 알고리즘이 $\alpha_{GW}\approx0.878$ 을 주는데, PCP 만으로는 $16/17\approx0.941$ 아래로 하한을 내리지 못한다.
 
-Khot 의 **유일게임 추측**은 한 변수의 값이 다른 변수의 값을 유일하게 정하는 2 변수 제약으로 된 간극 문제가 임의의 $\varepsilon,\delta$ 에 대해 $\mathrm{Gap}[1-\varepsilon,\delta]$ 수준에서 NP-어렵다고 주장한다. 이 추측 아래에서 Goemans–Williamson 의 $0.878$ 이 최적이 되고, 넓은 종류의 제약충족 문제에서 기본 SDP(semidefinite programming) 완화가 최적 근사 알고리즘이 된다.
+Khot 의 **[유일게임 추측](unique-games.md)** 은 한 변수의 값이 다른 변수의 값을 유일하게 정하는 2 변수 제약으로 된 간극 문제가 임의의 $\varepsilon,\delta$ 에 대해 $\mathrm{Gap}[1-\varepsilon,\delta]$ 수준에서 NP-어렵다고 주장한다. 이 추측 아래에서 Goemans–Williamson 의 $0.878$ 이 최적이 되고, 넓은 종류의 제약충족 문제에서 기본 SDP(semidefinite programming) 완화가 최적 근사 알고리즘이 된다.
 
 이 추측의 절반에 해당하는 **2-to-2 게임 정리**는 Khot, Minzer, Safra 가 증명했다[^4].
 

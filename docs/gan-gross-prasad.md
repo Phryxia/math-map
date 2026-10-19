@@ -17,7 +17,7 @@ $$
 L\negthinspace\left(\tfrac12,\pi_{n+1}\times\pi_n\right)\ne0
 $$
 
-왼쪽은 표현론의 양이고 오른쪽은 해석적 정수론의 양이다. 콤팩트군에서 조합적 사실이던 분지 법칙이 아델 위에서 $L$ 함수의 산술과 이어진다. $n=1$ 인 경우가 Waldspurger 정리이고 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)과 [Heegner 점](heegner-points.md)으로 이어진다.
+왼쪽은 표현론의 양이고 오른쪽은 해석적 정수론의 양이다. 콤팩트군에서 조합적 사실이던 분지 법칙이 아델 위에서 $L$ 함수의 산술과 이어진다. $n=1$ 인 경우가 [Waldspurger 정리](waldspurger-formula.md)이고 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)과 [Heegner 점](heegner-points.md)으로 이어진다.
 
 # 직관
 

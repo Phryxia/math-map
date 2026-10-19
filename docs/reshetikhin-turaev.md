@@ -139,7 +139,7 @@ $$
 
 $\tau$ 는 완전 불변량이 아니다. 한 레벨의 $\mathrm{SU}(2)\_k$ 만으로는 구별하지 못하는 다양체 쌍이 있고, 값이 0 이 되어 아무 정보도 주지 않는 경우도 있다. 모든 $k$ 를 한꺼번에 보면 $k\to\infty$ 에서의 점근 거동과, $q$ 를 형식 변수로 보는 Ohtsuki 급수가 고전적 불변량과 이어진다.
 
-> **Witten 점근 추측.** $k\to\infty$ 에서 $\tau_k(M)$ 의 점근전개의 선행항이 $M$ 위의 평탄 $\mathrm{SU}(2)$ 접속들의 기여 합으로 주어지고, 각 기여의 위상이 Chern–Simons 작용값, 진폭이 [Reidemeister 비틀림](reidemeister-torsion.md)으로 나온다.
+> **[Witten 점근 추측](witten-asymptotics.md).** $k\to\infty$ 에서 $\tau_k(M)$ 의 점근전개의 선행항이 $M$ 위의 평탄 $\mathrm{SU}(2)$ 접속들의 기여 합으로 주어지고, 각 기여의 위상이 Chern–Simons 작용값, 진폭이 [Reidemeister 비틀림](reidemeister-torsion.md)으로 나온다.
 
 이 추측은 여러 다양체족에서 증명되었고, 1 차 보정항에서 Casson 불변량이 나온다.
 

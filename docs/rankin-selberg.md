@@ -89,7 +89,7 @@ $$
 W_\varphi\negthinspace\left(\begin{pmatrix}\gamma&\cr&1\end{pmatrix}g\right)
 $$
 
-Shalika 와 Gelfand–Kazhdan 의 정리로 $\mathrm{Hom}\_{N}(\pi_v,\psi_v)$ 는 많아야 1 차원이다. 그러므로 $\pi=\otimes_v\pi_v$ 가 첨점 표현이면 각 자리에서 $\psi_v$ 형 Whittaker 모형이 유일하게 존재하고 $W_\varphi=\prod_vW_v$ 로 분해된다. 피적분함수가 곱이고 측도가 곱이므로 전역 적분이 국소 적분의 곱이 된다.
+Shalika 와 Gelfand–Kazhdan 의 정리로 $\mathrm{Hom}\_{N}(\pi_v,\psi_v)$ 는 많아야 1 차원이다. 그러므로 $\pi=\otimes_v\pi_v$ 가 첨점 표현이면 각 자리에서 $\psi_v$ 형 [Whittaker 모형](whittaker-models.md)이 유일하게 존재하고 $W_\varphi=\prod_vW_v$ 로 분해된다. 피적분함수가 곱이고 측도가 곱이므로 전역 적분이 국소 적분의 곱이 된다.
 
 ## GLₙ×GLₘ 적분
 
