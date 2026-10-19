@@ -14,7 +14,7 @@ $$
 \Pi_\varphi\ \longleftrightarrow\ \mathrm{Irr}(\mathcal S_\varphi)
 $$
 
-군 $G$ 하나만 보면 이 대응은 전사가 아니다. 지표는 있는데 대응하는 표현이 없는 경우가 생기고, 모자란 표현은 $G$ 의 **내부형식** 위에 있다. $G$ 와 그 순수 내부형식들의 표현을 모두 모은 큰 꾸러미가 **Vogan 꾸러미**다.
+군 $G$ 하나만 보면 이 대응은 전사가 아니다. 지표는 있는데 대응하는 표현이 없는 경우가 생기고, 모자란 표현은 $G$ 의 **내부형식** 위에 있다. $G$ 와 그 순수 내부형식들의 표현을 모두 모은 큰 꾸러미가 **Vogan L 꾸러미(Vogan L-packet)** 다.
 
 $$
 \Pi_\varphi^{\mathrm{Vogan}}=\bigsqcup_{b\in H^1(F,G)}\Pi_\varphi\bigl(G_b\bigr)

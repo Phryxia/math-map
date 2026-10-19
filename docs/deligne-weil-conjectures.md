@@ -42,7 +42,7 @@ $$
 
 이다.
 
-> **정리 (Deligne, 1974).** 모든 $i,j$ 와 $\mathbb Q_\ell\hookrightarrow\mathbb C$ 의 모든 심에 대해
+> **Deligne 의 정리(Deligne's theorem, 1974).** 모든 $i,j$ 와 $\mathbb Q_\ell\hookrightarrow\mathbb C$ 의 모든 심에 대해
 > $$|\alpha_{ij}|=q^{i/2}$$
 > 특히 $P_i(T)\in\mathbb Z[T]$ 이고 $\ell$ 에 무관하다.
 
