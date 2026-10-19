@@ -39,6 +39,7 @@ graph TD
 - [거리 공간](metric-spaces.md): 두 점 사이의 거리로 수렴과 연속을 정의하는 공간
 - [위상 공간](topology.md): 거리값을 버리고 열린집합의 모임만 남긴 공간
 - [콤팩트성](compactness.md): 모든 열린 덮개에서 유한 부분덮개를 뽑을 수 있다는 성질
+  - [Heine–Borel 정리](heine-borel.md): 유클리드 공간에서 콤팩트성이 닫힘과 유계로 판정된다는 정리
   - [연결성](connectedness.md): 겹치지 않는 두 열린집합으로 나눌 수 없다는 성질
   - [필터와 그물](filters-and-nets.md): 수열이 모자라는 공간에서 수렴을 적는 두 언어와 그 번역
 - [Tychonoff 정리](tychonoff-theorem.md): 콤팩트 공간의 임의 곱이 콤팩트하다는 정리, 선택공리와 동치

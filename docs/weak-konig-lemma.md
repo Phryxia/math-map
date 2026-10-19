@@ -32,7 +32,7 @@ $\mathrm{WKL}\_0$ 은 $\mathrm{RCA}\_0$ 에 이 보조정리를 공리로 더한
 
 $\mathrm{RCA}\_0$ 위에서 다음이 모두 약한 König 보조정리와 동치다.[^1]
 
-- $\lbrack 0,1\rbrack$ 의 Heine–Borel [콤팩트성](compactness.md).
+- $\lbrack 0,1\rbrack$ 의 [Heine–Borel 콤팩트성](heine-borel.md).
 - $\lbrack 0,1\rbrack$ 위 연속함수가 최댓값을 갖는다.
 - 가산 언어의 일차 논리에 대한 Gödel 완전성 정리.
 - $\lbrack 0,1\rbrack^n$ 에서의 [Brouwer 고정점 정리](brouwer-fixed-point.md).

@@ -40,7 +40,7 @@ $(a_n)$ 이 $\lbrack A,B\rbrack$ 에 있다고 한다. $I_0=\lbrack A,B\rbrack$ 
 
 ## 고차원과 수열 콤팩트성
 
-$\mathbb R^d$ 의 유계 수열에서 첫 좌표가 수렴하는 부분수열을 뽑고 그 안에서 둘째 좌표가 수렴하는 부분수열을 뽑기를 $d$ 번 되풀이하면 모든 좌표가 수렴하는 부분수열이 나온다. 유계이고 닫힌 $\mathbb R^d$ 의 부분집합에서는 모든 수열이 그 집합 안의 점으로 수렴하는 부분수열을 가지며, 이 성질을 수열 콤팩트성(sequential compactness)이라 한다. [거리 공간](metric-spaces.md)에서 수열 콤팩트성과 [콤팩트성](compactness.md)은 동치이고, $\mathbb R^d$ 에서 둘이 유계성과 닫힘의 결합과 동치라는 것이 Heine–Borel 정리(Heine–Borel theorem)다.
+$\mathbb R^d$ 의 유계 수열에서 첫 좌표가 수렴하는 부분수열을 뽑고 그 안에서 둘째 좌표가 수렴하는 부분수열을 뽑기를 $d$ 번 되풀이하면 모든 좌표가 수렴하는 부분수열이 나온다. 유계이고 닫힌 $\mathbb R^d$ 의 부분집합에서는 모든 수열이 그 집합 안의 점으로 수렴하는 부분수열을 가지며, 이 성질을 수열 콤팩트성(sequential compactness)이라 한다. [거리 공간](metric-spaces.md)에서 수열 콤팩트성과 [콤팩트성](compactness.md)은 동치이고, $\mathbb R^d$ 에서 둘이 유계성과 닫힘의 결합과 동치라는 것이 [Heine–Borel 정리](heine-borel.md)다.
 
 ## 무한차원에서의 실패
 
@@ -66,6 +66,6 @@ $\ell^2$ 의 표준기저 $(e_n)$ 은 $\Vert e_n\Vert=1$ 로 유계이지만 $n\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Heine–Borel 정리](heine-borel.md)
 
 #analysis #topology #foundations
