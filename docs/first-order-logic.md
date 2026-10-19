@@ -130,6 +130,7 @@ $$
 
 ### 형식 체계와 모형
 
+- [한정사 표준형](prenex-normal-form.md)
 - [Löwenheim–Skolem 정리](lowenheim-skolem.md)
 - [Peano 공리](peano-axioms.md)
 - [2차 산술](second-order-arithmetic.md)

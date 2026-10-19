@@ -56,6 +56,7 @@ graph TD
 먼저 읽을 갈래: 계산 가능성. 시작 문서: [1차 논리](first-order-logic.md).
 
 - [1차 논리](first-order-logic.md): 구문과 의미, 건전성과 완전성
+  - [한정사 표준형](prenex-normal-form.md): 한정사를 식 앞으로 모으는 변환, 접두부의 교대 횟수와 Skolem 함수
 - [Peano 공리](peano-axioms.md): 자연수의 공리계, 2차 형태의 범주성과 1차 형태의 비표준 모형
 - [Löwenheim–Skolem 정리](lowenheim-skolem.md): 1차 논리가 무한 모형의 크기를 구별하지 못한다
 - [Gödel 불완전성 정리](godel-incompleteness.md): 산술을 담는 무모순 체계는 자기 무모순성을 증명하지 못한다

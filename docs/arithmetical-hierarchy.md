@@ -88,6 +88,7 @@ $n=0$ 은 $\Sigma^0_1$ 집합이 재귀적 열거 가능하다는 정의다. 귀
 ## 선수지식
 
 - [1차 논리](first-order-logic.md)
+- [한정사 표준형](prenex-normal-form.md)
 - [Turing 차수](turing-degrees.md)
 
 ## 더 알아보기
