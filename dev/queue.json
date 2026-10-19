@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-19T09:01:40.919Z",
-  "nextSeq": 2237,
+  "savedAt": "2026-10-19T13:01:07.259Z",
+  "nextSeq": 2244,
   "items": [
     {
       "id": "9bab7237",
@@ -228,6 +228,14 @@
       "seq": 2231
     },
     {
+      "id": "1131a175",
+      "title": "9절 미링크 손 검사가 mermaid 라벨을 오탐한다",
+      "priority": 90,
+      "note": "개관의 지도 mermaid 는 코드블록이라 링크를 넣을 수 없는데, 미링크 손 검사는 본문 전체를 문자열로 훑으므로 노드 라벨에 쓰인 문서 제목을 미링크로 보고한다. 71차 abstract-algebra-overview 에서 Lie 군과 Peter-Weyl 정리 두 건이 그랬다. 그 회차에는 지도를 다시 그려 두 노드가 빠지면서 사라졌지만, 지도에 남겨야 하는 라벨이면 고칠 수 없는 오탐이다. 손 검사 스크립트는 코드블록 안을 본문에서 빼야 한다.",
+      "createdAt": "2026-10-19T12:48:21.816Z",
+      "seq": 2238
+    },
+    {
       "id": "f9d8e8af",
       "title": "본문 미링크 재발 검사 (64차 전수: 실제 잔량 0, 오탐 14 건)",
       "priority": 60,
@@ -244,12 +252,28 @@
       "seq": 2218
     },
     {
-      "id": "7565e952",
-      "title": "분야 개관 21 개의 갈래를 읽는 순서로 다시 쓰기",
-      "priority": 50,
-      "note": "4.5절 '갈래는 읽는 순서다' 가 새로 생긴 규칙이라 기존 개관 21 개가 모두 분류표 꼴이다. 한 회차에 개관 하나씩, /tmp/branch-order.sh 의 보고가 0 이 될 때까지. 측도론은 별도 항목에 있다.",
-      "createdAt": "2026-10-15T00:45:47.229Z",
-      "seq": 2063
+      "id": "822c6919",
+      "title": "분야 개관 21 개의 갈래 재작성 완료 (71차)",
+      "priority": 60,
+      "note": "4.5절 '갈래는 읽는 순서다' 에 따른 개관 21 개 재작성이 71차에 끝났다. 마지막은 abstract-algebra-overview 였고 재작성 전 위반 148 건이었다. 전수 검사(개관 21 개)가 위반 0 이다. 재작성에서 쓴 수 셋을 남긴다. (1) 한 갈래가 다른 갈래를 서로 조상으로 두면 갈래를 쪼갠다. 군 코호몰로지는 유도 함자를, 유도 함자는 환을, 환은 군을 조상으로 두어 군론 갈래와 가군 갈래가 맞물렸다. 군 코호몰로지 계열을 '코호몰로지와 K 이론' 으로 떼어 가군 갈래 뒤에 놓아 풀었다. (2) 한 갈래의 뒷부분만 뒤 갈래의 조상을 쓰면 그 부분을 떼어 뒤로 옮긴다. 모듈라이 다섯은 Lie 대수를 조상으로 두어 '대수다양체' 와 '모듈라이와 불변량' 으로 갈랐다. (3) 분야 밖 선수 문서는 그 후손이 처음 나오는 갈래의 첫 줄에 적는다. 벡터 공간과 선형 사상을 가군 갈래 첫 줄에 두었더니 군의 표현 등 앞 갈래 6 문서가 보고되어 군론 갈래 첫 줄로 올렸다. 다양체는 올릴 자리가 없어 적지 않고 지나갔다. 전수 검사기는 /tmp 에 node 한 프로세스로 만든다(항목 4fafa6a8).",
+      "createdAt": "2026-10-19T12:52:32.674Z",
+      "seq": 2239
+    },
+    {
+      "id": "ca5bd2f8",
+      "title": "9절 미링크 손 검사가 제목의 일부로 불리는 개념을 놓친다",
+      "priority": 60,
+      "note": "손 검사는 제목 문자열 전체가 본문에 나타날 때만 보고한다. 그래서 제목이 두 이름을 나란히 둔 문서는 그 가운데 한 이름으로만 불리는 자리를 전부 놓친다. 71차에 canonical-height(제목 'Neron-Tate 높이와 Mordell-Weil 정리')가 그랬다. 본문에서 'Mordell-Weil 정리' 로만 불리며 링크가 없는 자리가 일곱 문서(chabauty-method, elliptic-curves, gross-kohnen-zagier, jacobian-variety, mordell-lang, mordell-weil-sieve, selmer-tate-shafarevich)에 있었고 손 검사는 0 건을 냈다. 4절 본문 링크 규칙은 '제목이 다른 꼴로 나와도 같은 개념이면 링크한다' 이므로 이들은 실제 위반이다. 같은 꼴의 제목을 찾아 각 이름으로 따로 훑어야 한다. 후보는 'A와 B' 제목과 '와' '과' 로 이어진 제목 전부다. 검사기를 만들 때는 제목을 '와/과' 로 쪼갠 조각도 검색어에 넣되, 조각이 너무 짧거나 흔하면 오탐이 늘므로 4절 기준(로마자가 들어가거나 정리/보조정리/공식 등으로 끝남)을 조각에도 적용한다.",
+      "createdAt": "2026-10-19T12:54:51.037Z",
+      "seq": 2240
+    },
+    {
+      "id": "1250f869",
+      "title": "두 이름 제목 조각의 미링크 전수 완료 (71차), 남은 1 건은 오탐",
+      "priority": 60,
+      "note": "4절 본문 링크 규칙. 제목이 '와/과' 로 두 이름을 나란히 둔 문서는 본문에서 한 이름으로만 불리는데 9절 손 검사는 제목 전체 일치만 보아 전부 놓친다. 71차에 /tmp 에 검사기를 만들어 전수 49 건을 찾아 다 고쳤다(canonical-height 로 가는 7 건은 그와 별도). 남은 1 건은 오탐이다. speh-representations 의 '## Mœglin-Waldspurger 정리' 는 waldspurger-formula 의 제목 조각 'Waldspurger 정리' 를 문자열로 품지만 다른 정리의 이름이고 헤딩이다. 검사기를 다시 만들 때 넣을 것 넷. (1) 제목을 '와/과' 로 쪼갠 조각 가운데 다섯 글자 이상이고 로마자가 들어가거나 정리/추측/공식/군/함수 등으로 끝나는 것만 센다. (2) 제목 전체가 본문에 있으면 기존 손 검사에 맡기고 건너뛴다. (3) 조각 앞에 다른 고유명사가 붙어 더 긴 이름을 이루는 자리는 오탐이다. (4) 헤딩 줄과 이미 링크 안인 자리는 센다 해도 고칠 수 없으니 뺀다. 고칠 때 주의. 굵게 안의 용어를 링크로 바꾸면 닫는 ** 바로 앞이 ')' 가 되어 이슈 #3 의 굵게 미닫힘이 생긴다. 71차에 pcp-theorem 과 reidemeister-torsion 에서 났고 4절대로 닫는 ** 뒤에 공백을 하나 두어 고쳤다. 굵게 안을 링크할 때는 늘 그 검사를 함께 돌린다.",
+      "createdAt": "2026-10-19T13:00:48.522Z",
+      "seq": 2243
     },
     {
       "id": "6f71d977",
@@ -338,38 +362,6 @@
       "note": "62차(2026-10-18)에 만난 오탐 둘. bc871443 과 c6e02e70 의 목록에 더한다.\n\n(1) 동명이의. group-actions 82 줄 표 셀의 '지표 정리, Sylow' 를 검사기가 index-theorem.md 미링크로 보고한다. 그 자리의 '지표 정리' 는 부분군의 지표에 관한 군론의 정리이고 index-theorem.md 의 제목 '지표 정리' 는 콤팩트 다양체 위 타원 미분작용소의 Atiyah-Singer 지표 정리다. 링크하면 독자를 다른 개념으로 보내므로 고치지 않는다. 같은 꼴은 한국어 용어가 겹치는 제목이 있을 때 다시 난다.\n\n(2) 더 긴 링크 텍스트 안의 부분 문자열. dirichlet-l-functions 139 줄의 '[고속 Fourier 변환](fft.md)' 과 holomorphic-functions 109 줄의 '[이산 Fourier 변환](fourier.md)' 을 검사기가 fourier-transform.md('Fourier 변환') 미링크로 보고한다. 이미 맞는 문서로 링크된 자리이고 고칠 것이 없다. bc871443 이 적은 것과 같은 꼴이지만 보고가 링크 텍스트 안에서 난다는 점이 다르다.\n\n같은 회차에 실제 미링크 1 건도 나왔다. group-representations 189 줄은 '[이산 Fourier 변환](fourier.md)이다' 다음 문장에서 '행렬 값을 갖는 Fourier 변환이 된다' 로 제목 용어를 링크 없이 썼고 fourier-transform.md 로 링크했다(커밋 1655d61). 그러므로 이 두 꼴의 보고를 일괄로 넘기면 안 되고, 보고된 자리를 열어 링크 텍스트 안인지 본문인지 가린다.",
       "createdAt": "2026-10-18T08:57:57.999Z",
       "seq": 2191
-    },
-    {
-      "id": "692bb062",
-      "title": "금지 동사 grep 의 수식 뒤 자리: 개관 한 곳만 남음",
-      "priority": 50,
-      "note": "4절 문체 규칙의 금지 동사 grep 은 '[가-힣]+(을|를|가|이) (품|얹|...)' 로 조사 앞에 한글을 요구하므로, 수식 뒤에 조사가 붙는 자리를 구조적으로 놓친다. 40차(2026-10-18)에 앞 글자 제한을 뺀 grep -noE '(을|를|가|이|은|는) (품|얹|거느리|되돌리|되돌려|새기)[가-힣]*' docs/*.md | grep -v 되돌아 로 전수를 돌려 43 건을 찾았다. 47차가 4절 grep 으로 42 건을 고쳤고 52차와 40차에 그 grep 은 3 건(오탐 2 + 개관 1)만 내놓는데, 이 43 건은 그와 겹치지 않는 새 자리다. 예. kummer-theory:41 '$(K^{\\times})^{n}$ 을 품는 $K^{\\times}$ 의 부분군', algebraic-groups:15,39, zilber-indecomposability:31,33,35, injective-modules:9,45,81, topological-groups:11(두 자리),51, subdifferential:7,19, clarke-subdifferential:7,17, dynkin-system:29,31, hardy-littlewood-maximal-function:31,67, riemann-stieltjes-integral:19,100, abelian-varieties:77, borel-cantelli:27, compactness:13, em-algorithm:23, fields:7, grassmannian:27, sheaves:34, ultraproducts:57, morley-categoricity:13, groups-of-finite-morley-rank:56, hyperbolic-functions:96, vanishing-cycles:27, waldspurger-formula:32, hilbert-theorem-90:79, dirichlet-series:21, friedrichs-extension:57, adeles:137, modular-tensor-categories:52, siegel-weil:52, network-flow:11, abstract-algebra-overview:106. 47차가 쓴 치환이 그대로 통한다. '품는다'는 포함한다, '얹는다'는 더한다·배정한다·정의한다, '되돌린다'는 복원한다·역으로 적용한다. 10 곳을 넘으므로 1.5절 4단계대로 여러 회차에 나눠 고친다. 한 회차에 10 개씩 잡고, 고친 문서마다 render-check 와 4절 검사 여섯 가지를 돌린다. 개관(abstract-algebra-overview:106)은 메모 508c2bff 대로 갈래 재작성 회차에 함께 고친다.\n\n40차가 커밋 29c91e88 로 11 자리 5 문서를 고쳤다. kummer-theory:41, algebraic-groups:15,39, zilber-indecomposability:31,33,35, injective-modules:9,45,81, topological-groups:11(두 자리),51 이다. 포함 관계는 '포함하는', 원소가 성분에 드는 자리(algebraic-groups:39 의 '$e$ 를 품은 연결 성분')는 '가 속한' 으로 썼다. 남은 자리는 위 목록에서 이 다섯 문서를 뺀 것이다.\n\n40차 커밋 직후 같은 grep 의 실측 잔량은 31 건이다(43 에서 11 을 뺀 32 와 한 건 차이가 나는 것은 algebraic-groups:39 를 \"가 속한\" 으로 바꿔 패턴에서 빠진 데다 한 줄에 두 자리가 있던 topological-groups:11 의 셈이 겹친 탓이다. 다음 회차는 제목의 수를 믿지 말고 grep 을 다시 돌려 센다).\n40차가 이 항목을 끝까지 돌렸다. 커밋 다섯이다. 29c91e88(11 자리 5 문서), bb77fe31(12 자리 7 문서), 2e7edb50(11 자리 11 문서), 62eba0cd(되돌리다·얹다 6 자리), 5880ea5e(adeles:137). 회차 끝에 같은 grep 의 잔량은 abstract-algebra-overview:106 한 자리뿐이고, 그것은 메모 508c2bff 대로 abstract-algebra 갈래 재작성 회차가 함께 고친다(개관의 갈래 순서 검사가 147 건을 보고해 단독 커밋이 막힌다).\n\n40차가 쓴 치환을 꼴별로 적어 둔다. 집합이나 군이 부분집합을 품는다는 포함 관계는 '포함하는·포함한다·포함하지 않는다·포함하므로'. 원소가 성분이나 조각에 드는 자리는 '가 속한'(algebraic-groups:39 의 '$e$ 를 품은 연결 성분', riemann-stieltjes-integral:100 의 '$c$ 를 품은 조각'). 식이나 값이 다른 양을 안에 담은 자리는 '가 들어 있는'(hyperbolic-functions:96 의 '$\\sqrt{x^2+a^2}$ 를 품은 적분', riemann-stieltjes-integral:19 의 '질량 $1/2$ 을 품는다'). 극이나 가정에서 결과가 나오는 자리는 '에서 ~가 나온다'(dirichlet-series:21 의 '되돌려 준다'). 원래 대상을 다시 얻는 자리는 '복원한다'(grassmannian:27). 상수를 다시 뺀다는 자리는 '빼면'(friedrichs-extension:57). 구조를 더해 새 구조가 되는 자리는 '더하면'(modular-tensor-categories:52), 대상에 구조가 주어진 자리는 '가 주어진'(siegel-weil:52), 이론에 도구를 합친 자리는 '결합했다'(adeles:137). 알고리즘이 취소 수단을 넣는 자리는 앞 문장이 이미 '취소할 수단' 을 썼으므로 '그 수단을'(network-flow:11).\n\n치환에서 두 번 걸린 자리. em-algorithm:23 은 '우변의 $w_i$ 가 $\\mu_1$ 과 $\\mu_2$ 를 품고 있어' 를 '가 들어 있어' 로 바꾸니 주어가 둘이 되어 비문이었다. '를 포함하고 있어' 로 고쳤다. network-flow:11 은 첫 치환이 앞 문장의 '취소할 수단' 을 되풀이해 '그 수단을' 로 고쳤다. 치환 뒤에는 바꾼 문장을 끝까지 읽어 주어와 서술어가 맞는지 본다. git diff -U0 의 출력이 길면 cut 으로 잘려 치환 자리가 안 보이므로, grep -o 로 치환한 말 주변만 뽑아 본다.",
-      "createdAt": "2026-10-18T13:00:59.229Z",
-      "seq": 2201
-    },
-    {
-      "id": "3716c5ea",
-      "title": "abstract-algebra-overview 갈래를 읽는 순서로 다시 쓴다",
-      "priority": 50,
-      "note": "4.5절 '갈래는 읽는 순서다' 적용. 63차(2026-10-18)에 9절 갈래 순서 손 검사를 돌려 148 건 44 문서가 조상보다 앞에 온 것을 확인했다. 갈래 H2 여덟(군론, 환과 아이디얼, 가군, 대수다양체, 모듈라이와 불변량, 체와 Galois 이론, Lie 이론과 표현론, 정점작용소대가와 달빛)이고 어긋난 문서가 44 개라 갈래 절을 통째로 다시 쓰는 작업이다. node dev/graph.mjs topo 로 선수관계를 받아 갈래를 나누고 갈래 안을 위상순으로 놓고 주 경로와 곁가지를 가른다. 어긋남이 큰 자식은 group-cohomology(조상 아홉이 뒤에 온다), finite-simple-groups 와 group-extensions(group-representations 가 뒤), 환론 묶음(noetherian-rings, dedekind-domains, krull-dimension, regular-local-rings, cohen-macaulay-rings, gorenstein-rings 계열), 대수다양체와 모듈라이 묶음이다. 같은 작업에 4절 금지 동사 한 자리도 고친다. 갈래 절 106 줄의 Kummer 이론 설명 '1 의 거듭제곱근을 품은 체에서' 를 '포함한 체에서' 로 쓴다. 63차가 그 한 줄만 고치려 했으나 2절 10단계가 개관을 고친 회차에 갈래 순서 검사 통과를 요구하므로 되돌리고 이 항목으로 넘겼다.",
-      "createdAt": "2026-10-18T16:47:30.365Z",
-      "seq": 2204
-    },
-    {
-      "id": "a4a855f4",
-      "title": "분야 개관 갈래 재작성의 남은 하나: abstract-algebra",
-      "priority": 50,
-      "note": "큐 항목 7565e952 의 진행 집계. 67차(2026-10-19)에 number-theory 를 다시 썼다(커밋 0433ffb). 다시 쓴 개관은 measure-theory, foundations, complex-analysis, functional-analysis, machine-learning, cryptography, category-theory, statistics, graph-theory, optimization, probability, computation, differential-geometry, linear-algebra, combinatorics, topology, analysis, number-theory 열여덟이고 order-theory 와 information-theory 는 손대기 전부터 규격을 갖추고 있었다. 남은 하나는 abstract-algebra 로 큐 항목 3716c5ea 에 있다. 67차 number-theory 에 쓴 수는 다섯이다. (1) 갈래 아홉을 열넷으로 늘렸다. 교차 갈래였던 암호와 계산을 둘로 갈라 기초(discrete-logarithm, rsa, lattices, elliptic-curves)는 둘째 갈래로 올리고 곡선의 점 세기(sea-algorithm, kedlaya-algorithm, supersingular-isogeny-graphs, deuring-correspondence, pairing-based-cryptography)는 마지막 갈래로 내렸다. 이 한 수가 위반 대부분을 없앴다. (2) elliptic-curves 를 모듈러 형식 갈래보다 앞으로 올렸다. modular-curves 를 비롯한 모듈러 문서 아홉이 elliptic-curves 의 후손이기 때문이다. (3) langlands-program 이 galois-representations 의 부모이므로 Langlands 갈래를 Galois 갈래보다 앞에 두고, galois-representations 의 후손인 vogan-packets 계열 여섯은 'L 꾸러미와 주기 공식' 으로 떼어 Galois 뒤에 두었다. (4) 타원곡선 갈래에서 herbrand-ribet 과 galois-representations 의 후손인 sato-tate, lang-trotter, eisenstein-ideal, merel-theorem, vandiver-conjecture, greenberg-conjecture 여섯을 'Iwasawa 이론과 비틀림점' 으로 떼어 Galois 뒤에 두었다. (5) partitions 와 modular-forms 의 후손인 circle-method, kloosterman-sums, petersson-formula, kuznetsov-formula, low-lying-zeros 계열 일곱을 '지수합과 영점 통계' 로 떼어 뒤로 내렸다. chebotarev 는 dirichlet-l-functions 의 자식이라 대수적 갈래에서 해석적 갈래로, adeles 는 algebraic-number-fields 의 자식이라 p 진 갈래에서 대수적 갈래로 옮겼다. 설명 줄에서 제목 문자열을 없앤 자리 넷. Iwasawa 대수(hida-theory 설명), Jacobi 다양체(chabauty-method 와 eichler-shimura 설명), 아벨 다양체(siegel-modular-variety 설명). 셋 다 그 문서의 선수 문서라 설명 줄에 링크하면 갈래 순서 검사가 걸린다(메모 0bb8e7fb). kubota-leopoldt-zeta 설명의 Iwasawa 대수는 조상 관계가 없어 링크로 풀었다.",
-      "createdAt": "2026-10-19T08:55:04.646Z",
-      "seq": 2232
-    },
-    {
-      "id": "776be55b",
-      "title": "분야 개관의 개요 첫 문장에 분야 원어가 없는 것: abstract-algebra 하나",
-      "priority": 50,
-      "note": "4절 용어 규칙(제목 개념은 개요 첫 문장에서 원어를 병기)의 개관 몫이다. 옛 항목 3b8eb2d3(55차 집계)을 갱신한 판이다. 67차(2026-10-19)에 number-theory 를 '정수론(number theory)은' 으로 고쳤다(커밋 0aed8bb). 남은 하나는 abstract-algebra(추상대수, abstract algebra) 이고, 그 개관은 갈래 순서 검사가 148 건을 보고해 2절 10단계 때문에 단독으로 커밋할 수 없으므로 갈래 재작성(큐 항목 3716c5ea)과 같은 회차에 첫 문장도 함께 고친다. 67차 기준으로 개관 21 개 가운데 스물이 병기한다. 9절의 원어 없는 개요 손 검사는 이것을 잡지 못한다. 검사가 개요 첫 문단에 로마자 괄호가 하나라도 있으면 통과시키므로 첫 문장의 분야 이름에 원어가 없어도 뒤 문장에 다른 원어 괄호가 있으면 조용하다. 손 검사를 스크립트로 만들 때는 괄호가 첫 문장 안에 있는지, 그 앞이 제목 개념인지까지 본다. 큐 항목 56df77a9 가 적은 오탐 두 꼴과 합쳐 생각한다.",
-      "createdAt": "2026-10-19T08:56:13.695Z",
-      "seq": 2234
     },
     {
       "id": "e91d925f",
