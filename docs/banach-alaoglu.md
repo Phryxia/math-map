@@ -8,7 +8,7 @@
 
 # 직관
 
-최소화 문제에서 유계인 수열의 극한을 잡으려 한다. 유한차원에서는 Bolzano–Weierstrass 정리가 그 극한을 준다([수열의 극한](limits.md)). 무한차원에서 같은 일을 $\ell^2$ 의 표준기저 $e_1,e_2,\dots$ 로 해 본다. $\Vert e_n\Vert=1$ 이므로 이 수열은 유계이지만 $n\neq m$ 에서
+최소화 문제에서 유계인 수열의 극한을 잡으려 한다. 유한차원에서는 [Bolzano–Weierstrass 정리](bolzano-weierstrass.md)가 그 극한을 준다([수열의 극한](limits.md)). 무한차원에서 같은 일을 $\ell^2$ 의 표준기저 $e_1,e_2,\dots$ 로 해 본다. $\Vert e_n\Vert=1$ 이므로 이 수열은 유계이지만 $n\neq m$ 에서
 
 $$
 \Vert e_n-e_m\Vert=\sqrt 2

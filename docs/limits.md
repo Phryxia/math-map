@@ -61,7 +61,7 @@ $$
 
 단조 증가하면서 위로 유계인 실수 수열은 수렴한다. 이 명제는 실수의 완비성(상한 공리)과 동치이고 유리수 안에서는 거짓이다. $\sqrt2$ 로 다가가는 유리수 단조 수열은 유리수 안에 극한을 갖지 않는다.
 
-- **Bolzano–Weierstrass.** 유계 수열은 수렴하는 부분수열을 갖는다. 구간을 반씩 쪼개며 항이 무한히 많은 쪽을 택한다.
+- **[Bolzano–Weierstrass 정리](bolzano-weierstrass.md).** 유계 수열은 수렴하는 부분수열을 갖는다. 구간을 반씩 쪼개며 항이 무한히 많은 쪽을 택한다.
 - **Cauchy 판정.** 항들이 서로 가까워지는 것만으로 수렴이 따라온다. 이 동치성이 [완비성](completeness.md)의 내용이며, 극한값을 모르는 채로 수렴을 증명하게 해 준다.
 
 ## 차분이 0 으로 가는 발산 수열
@@ -88,6 +88,7 @@ $$
 ### 수렴을 다루는 틀
 
 - [거리 공간](metric-spaces.md)
+- [Bolzano–Weierstrass 정리](bolzano-weierstrass.md)
 - [균등수렴](uniform-convergence.md)
 - [비표준 해석학](nonstandard-analysis.md)
 

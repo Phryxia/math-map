@@ -93,8 +93,14 @@ $\mathbb{R}$ 은 완비지만 유계가 아니고, $(0,1]$ 은 유계지만 완�
 
 ## 더 알아보기
 
+### 완비성에서 나오는 정리
+
+- [Bolzano–Weierstrass 정리](bolzano-weierstrass.md)
 - [축약사상 고정점 정리](banach-fixed-point.md)
 - [Baire 범주 정리](baire-category.md)
+
+### 완비인 공간
+
 - [Hilbert 공간](hilbert-spaces.md)
 - [Banach 공간](banach-spaces.md)
 - [p 진수](p-adic-numbers.md)
