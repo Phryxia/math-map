@@ -92,6 +92,7 @@ graph TD
   - [Sherman–Morrison 공식](sherman-morrison.md): 랭크 $1$ 갱신의 역행렬을 벡터 둘로 적는 식, 행렬식 보조정리와 Woodbury 항등식
 - [유한요소법](finite-element-method.md): 약한 꼴 방정식을 조각마다 다항식인 부분공간에서 푸는 방법, Céa 보조정리와 강성행렬의 희소성
   - [혼합 유한요소법](mixed-finite-element-method.md): 해와 그 도함수를 서로 다른 공간에서 동시에 근사하는 이산화, Babuška–Brezzi 조건과 Raviart–Thomas 요소
+  - [후처리 오차 추정자](a-posteriori-error-estimator.md): 근사해와 자료만으로 오차의 상한을 계산하는 양, 잔차형 추정자와 Dörfler 표시
 - [다중격자](multigrid.md): 주파수대마다 격자 단계를 맡기는 V 사이클, 격자 간격과 무관한 수렴률
   - [완전 다중격자](full-multigrid.md): 성긴 격자의 해를 보간해 초기 근사로 쓰는 절차, 미지수 개수에 비례하는 연산으로 이산화 오차에 닿는 것
   - [완전 근사 저장](full-approximation-scheme.md): 비선형 방정식의 다중격자, 성긴 격자가 오차 대신 해 전체를 풀고 tau 보정이 두 격자의 이산화 차이를 메우는 것

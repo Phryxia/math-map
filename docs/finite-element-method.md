@@ -166,5 +166,6 @@ $B$ 가 대칭이면 $S$ 는 대칭 양의 정부호이고, $d$ 차원 등간격
 ## 더 알아보기
 
 - [혼합 유한요소법](mixed-finite-element-method.md)
+- [후처리 오차 추정자](a-posteriori-error-estimator.md)
 
 #linear_algebra #analysis #functional_analysis #algorithms
