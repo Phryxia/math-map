@@ -2,7 +2,7 @@
 
 # 개요
 
-[Fontaine–Mazur 추측](fontaine-mazur.md)은 어떤 $p$ 진 [Galois 표현](galois-representations.md)이 기하에서 오는지를 국소 조건으로 판정한다. 그 진술을 정리로 바꾸는 기계가 $R=T$ 이고, 그 $R$ 쪽이 **변형환**이다.
+Galois 표현의 변형환(deformation ring)은 유한체 위의 Galois 표현 $\bar\rho$ 를 들어 올린 표현들을 매개하는 완비 국소환이다. [Fontaine–Mazur 추측](fontaine-mazur.md)은 어떤 $p$ 진 [Galois 표현](galois-representations.md)이 기하에서 오는지를 국소 조건으로 판정한다. 그 진술을 정리로 바꾸는 기계가 $R=T$ 이고, 그 $R$ 쪽이 변형환이다.
 
 Mazur 의 착상은[^1] [유한체](finite-fields.md) 위의 표현
 

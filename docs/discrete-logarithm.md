@@ -2,7 +2,7 @@
 
 # 개요
 
-[합동 연산](modular-arithmetic.md)에서 $g^x \bmod p$ 는 반복 제곱으로 $O(\log x)$ 번의 곱셈에 계산된다. 그 역인 $g^x \equiv h$ 를 만족하는 $x$ 를 찾는 일은 어렵다고 믿어진다.
+이산로그(discrete logarithm)는 순환군에서 $g^x=h$ 를 만족하는 지수 $x$ 다. [합동 연산](modular-arithmetic.md)에서 $g^x \bmod p$ 는 반복 제곱으로 $O(\log x)$ 번의 곱셈에 계산된다. 그 역인 $g^x \equiv h$ 를 만족하는 $x$ 를 찾는 일은 어렵다고 믿어진다.
 
 실수 위의 로그는 단조성을 이용해 좁혀 갈 수 있지만, 유한 [군](groups.md) 위에서는 값들이 순서 없이 흩어져 있어 국소적 정보로 전역해에 접근할 수 없다.
 

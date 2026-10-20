@@ -2,7 +2,7 @@
 
 # 개요
 
-정의역을 부분영역으로 쪼개고, 각 부분영역에서 작은 계를 푼 결과를 모아 전체 해의 근사를 만든다. 부분영역의 계산이 서로 독립이므로 병렬 계산에 쓰고, [전처리](preconditioning.md) 행렬을 이 꼴로 만들어 [Krylov 부분공간 방법](krylov-subspace-methods.md)에 넘긴다.
+영역 분할법(domain decomposition method)은 정의역을 부분영역으로 쪼개고, 각 부분영역에서 작은 계를 푼 결과를 모아 전체 해의 근사를 만든다. 부분영역의 계산이 서로 독립이므로 병렬 계산에 쓰고, [전처리](preconditioning.md) 행렬을 이 꼴로 만들어 [Krylov 부분공간 방법](krylov-subspace-methods.md)에 넘긴다.
 
 부분영역만으로는 먼 곳의 정보가 전달되지 않는다. 성긴 공간을 하나 더해 그 통로를 만드는 것이 [다중격자](multigrid.md)의 성긴 격자 보정과 같은 구실을 한다.
 
