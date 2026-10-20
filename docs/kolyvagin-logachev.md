@@ -48,7 +48,7 @@ $J_e$ 는 그런 $A_f$ 들로만 이루어지므로 $J_e(\mathbb Q)$ 가 유한�
 4. 첫 원소의 비소멸을 Gross–Zagier 또는 $L(f,1)\ne0$ 에서 확보한다.
 5. Selmer 군의 유한성에서 Mordell–Weil 과 $\text{Ш}$ 의 유한성을 읽는다.
 
-모듈러성, 복소곱셈, 류체론, Galois 코호몰로지가 한 증명 안에서 차례로 쓰인다.
+모듈러성, 복소곱셈, 류체론, [Galois 코호몰로지](galois-cohomology.md)가 한 증명 안에서 차례로 쓰인다.
 
 ## 증명된 범위
 

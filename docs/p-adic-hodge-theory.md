@@ -212,7 +212,7 @@ $$
 \mathrm{Rep}\_{\mathbb Z_p}(G_K)\thickspace\cong\thickspace\lbrace\text{에탈 }\varphi\text{–}\Gamma\text{ 가군 over }\mathbf A_K\rbrace
 $$
 
-Galois 코호몰로지는 Herr 복체 $D\xrightarrow{(\varphi-1,\gamma-1)}D\oplus D\to D$ 로 계산되어, 프로유한군의 코호몰로지가 두 작용소의 유한 복체가 된다.
+[Galois 코호몰로지](galois-cohomology.md)는 Herr 복체 $D\xrightarrow{(\varphi-1,\gamma-1)}D\oplus D\to D$ 로 계산되어, 프로유한군의 코호몰로지가 두 작용소의 유한 복체가 된다.
 
 ## 예: 타원곡선의 Tate 가군
 

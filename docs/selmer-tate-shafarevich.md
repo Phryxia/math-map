@@ -16,7 +16,7 @@ $$
 E(K)/mE(K)\ \hookrightarrow\ H^1(K,E[m])
 $$
 
-는 목표를 Galois 코호몰로지 안에 넣지만 오른쪽은 무한군이다. 모든 자리 $v$ 에서 국소적으로 점에서 오는 류만 남기고 잘라내면 유한군 **Selmer 군** $\mathrm{Sel}^m(E/K)$ 이 되고, 이것은 유효하게 계산된다.
+는 목표를 [Galois 코호몰로지](galois-cohomology.md) 안에 넣지만 오른쪽은 무한군이다. 모든 자리 $v$ 에서 국소적으로 점에서 오는 류만 남기고 잘라내면 유한군 **Selmer 군** $\mathrm{Sel}^m(E/K)$ 이 되고, 이것은 유효하게 계산된다.
 
 걸러낸 결과는 목표보다 크다. 차이를 재는 군이 **Tate–Shafarevich 군** $\text{Ш}(E/K)$ 이며, 기본 완전열
 
@@ -189,7 +189,7 @@ Kato 의 Euler 계는 모듈러 단위에서 오고, Iwasawa 주추측을 통해
 ## 선수지식
 
 - [타원곡선](elliptic-curves.md)
-- [Kummer 이론](kummer-theory.md)
+- [Galois 코호몰로지](galois-cohomology.md)
 - [Brauer 군](brauer-groups.md)
 
 ## 더 알아보기

@@ -84,7 +84,7 @@ $\wp$ 를 Witt 벡터로 확장해 $\wp = F-1$ 로 둔다. 표수 $p$ 체 $K$ �
 
 **정리.** $K$ 의 지수 $p^m$ 아벨 확대는 몫군 $W_m(K)/\wp\thinspace W_m(K)$ 의 부분군과 일대일 대응한다[^2]. 차수 $p^m$ 순환확대는 그 몫군에서 위수 $p^m$ 인 원소가 생성하는 부분군에 대응한다.
 
-증명의 요지. $\wp$ 의 핵이 $\mathbb Z/p^m$ 이므로 짧은 완전열 $0\to\mathbb Z/p^m\to W_m(K^{\mathrm{sep}})\to W_m(K^{\mathrm{sep}})\to 0$ 을 얻고, Galois 코호몰로지의 긴 완전열에서 $H^1(\mathrm{Gal}(K^{\mathrm{sep}}/K),\mathbb Z/p^m)\cong W_m(K)/\wp\thinspace W_m(K)$ 가 나온다. $m=1$ 에서 $W_1=K$ 이므로 Artin–Schreier 이론의 대응이 된다.
+증명의 요지. $\wp$ 의 핵이 $\mathbb Z/p^m$ 이므로 짧은 완전열 $0\to\mathbb Z/p^m\to W_m(K^{\mathrm{sep}})\to W_m(K^{\mathrm{sep}})\to 0$ 을 얻고, [Galois 코호몰로지](galois-cohomology.md)의 긴 완전열에서 $H^1(\mathrm{Gal}(K^{\mathrm{sep}}/K),\mathbb Z/p^m)\cong W_m(K)/\wp\thinspace W_m(K)$ 가 나온다. $m=1$ 에서 $W_1=K$ 이므로 Artin–Schreier 이론의 대응이 된다.
 
 # 활용
 

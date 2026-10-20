@@ -135,7 +135,7 @@ $c$ 가 $H^2(Q,\mathrm U(1))$ 의 2-코사이클이다. 사영표현은 중심�
 
 ## Galois 이론의 매장 문제
 
-[Galois 이론](galois-theory.md)에서 군 $Q$ 를 Galois 군으로 갖는 확대를 $G$ 를 Galois 군으로 갖는 더 큰 확대 안에 넣을 수 있는지를 묻는 것이 매장 문제다. 장애가 Galois 코호몰로지의 원소로 표현되고, 역 Galois 문제의 접근법 가운데 하나다.
+[Galois 이론](galois-theory.md)에서 군 $Q$ 를 Galois 군으로 갖는 확대를 $G$ 를 Galois 군으로 갖는 더 큰 확대 안에 넣을 수 있는지를 묻는 것이 매장 문제다. 장애가 [Galois 코호몰로지](galois-cohomology.md)의 원소로 표현되고, 역 Galois 문제의 접근법 가운데 하나다.
 
 # 연관 문서
 

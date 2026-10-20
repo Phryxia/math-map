@@ -142,7 +142,7 @@ $$
 
 거의 모든 자리에서 $x_v\in\mathcal O_v^\times$ 이고 그 자리가 비분기이므로 곱이 유한하다. 대역 상호법칙은 이 곱이 $K^\times$ 의 대각선 원소에서 자명하다는 진술, 곧 $\psi_K$ 가 이델류군 $K^\times\backslash\mathbb A_K^\times$ 에서 정의된다는 진술이다. 이차체로 내리면 $\prod_v|x|\_v=1$ 과 같은 모양의 곱 공식이 되고, [이차 상호법칙](quadratic-reciprocity.md)의 Hilbert 기호 형태가 이 진술이다.
 
-증명은 국소에서 대역으로 간다. 국소 유체론을 Galois 코호몰로지로 세운 뒤($H^2(\mathrm{Gal}(L/K),L^\times)\cong\frac1{[L:K]}\mathbb Z/\mathbb Z$ 를 계산한다) 그 위에서 대역 정리를 얻는다. Lubin–Tate 는 그 국소 단계를 코호몰로지 없이 명시적으로 해내는 길이다.
+증명은 국소에서 대역으로 간다. 국소 유체론을 [Galois 코호몰로지](galois-cohomology.md)로 세운 뒤($H^2(\mathrm{Gal}(L/K),L^\times)\cong\frac1{[L:K]}\mathbb Z/\mathbb Z$ 를 계산한다) 그 위에서 대역 정리를 얻는다. Lubin–Tate 는 그 국소 단계를 코호몰로지 없이 명시적으로 해내는 길이다.
 
 # 활용
 

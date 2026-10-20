@@ -75,6 +75,6 @@ $\sigma$ 쪽의 비퇴화는 Galois 대응에서 나온다. $a$ 쪽, 곧 모든 
 
 ## 더 알아보기
 
-- [Selmer 군과 Tate–Shafarevich 군](selmer-tate-shafarevich.md)
+- [Galois 코호몰로지](galois-cohomology.md)
 
 #field_theory #algebra #number_theory #group_theory

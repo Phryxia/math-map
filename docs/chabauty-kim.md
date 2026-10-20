@@ -32,7 +32,7 @@ $$
 X(\mathbb Q)\ \longrightarrow\ \mathrm{Sel}\_n(X)\ \xrightarrow{\ \mathrm{loc}\_p\ }\ H^1_f(G\_{\mathbb Q_p},U_n)\ \longleftarrow\ X(\mathbb Q_p)
 $$
 
-오른쪽 사상 $j_n$ 이 **단일값 Albanese 사상**이고, 그 좌표가 깊이 $n$ 까지의 반복 Coleman 적분으로 적힌다. 왼쪽 사상은 유리점의 Galois 코호몰로지 류를 대응시킨다. 두 사상의 상이 $H^1_f(G\_{\mathbb Q_p},U_n)$ 안에서 만나는 자리에 유리점이 들어간다.
+오른쪽 사상 $j_n$ 이 **단일값 Albanese 사상**이고, 그 좌표가 깊이 $n$ 까지의 반복 Coleman 적분으로 적힌다. 왼쪽 사상은 유리점의 [Galois 코호몰로지](galois-cohomology.md) 류를 대응시킨다. 두 사상의 상이 $H^1_f(G\_{\mathbb Q_p},U_n)$ 안에서 만나는 자리에 유리점이 들어간다.
 
 ## Kim 의 절단
 
