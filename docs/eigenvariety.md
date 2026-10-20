@@ -75,7 +75,7 @@ $\mathcal E$ 위에 유사표현이 하나 있어 각 점에서 그 점의 고�
 - [Fontaine–Mazur 추측](fontaine-mazur.md). $\mathcal E$ 의 점은 모두 거의 모든 곳 비분기인 표현을 주지만 de Rham 인 점은 고전점뿐이다. 고전점이 조밀하면서도 그 여집합이 더 크다.
 - [Galois 표현의 변형환](deformation-rings.md). 변형환을 강체화한 공간 안에서 $\mathcal E$ 가 모듈러 자취로 나타나고, 두 공간의 비교가 모듈러성 올림 정리의 $p$ 진 판본이다.
 - [p 진 L 함수](p-adic-l-function.md). 과수렴 기호를 $\mathcal E$ 위에서 모으면 점마다의 $L$ 함수가 두 변수 함수 하나로 붙는다.
-- 고차 군. Buzzard 의 고유다양체 기계와 Urban 의 구성이 같은 절차를 $\mathrm{GL}\_n$ 과 유니터리군으로 옮긴다. 필요한 것은 과수렴 공간과 그 위의 콤팩트 작용소다.
+- 고차 군. Buzzard 의 고유다양체 기계와 Urban 의 구성이 같은 절차를 $\mathrm{GL}\_n$ 과 유니터리군으로 옮긴다. 필요한 것은 과수렴 공간과 그 위의 [콤팩트 작용소](compact-operators.md)다.
 
 [^1]: R. Coleman, B. Mazur, "The eigencurve", in *Galois Representations in Arithmetic Algebraic Geometry*, London Math. Soc. Lecture Note Ser. 254 (1998), 1–113.
 [^2]: R. Coleman, "Classical and overconvergent modular forms", Invent. Math. 124 (1996), 215–241.

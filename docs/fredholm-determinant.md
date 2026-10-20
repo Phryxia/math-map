@@ -28,7 +28,7 @@ $n\to\infty$ 에서 값이 $0$ 이다. 모든 $\lambda_i$ 가 $1$ 과 다르므�
 
 ## 대각합류 작용소
 
-[Hilbert 공간](hilbert-spaces.md) 위의 콤팩트 작용소 $K$ 의 특이값을 $s_1 \ge s_2 \ge \cdots$ 라 할 때
+[Hilbert 공간](hilbert-spaces.md) 위의 [콤팩트 작용소](compact-operators.md) $K$ 의 특이값을 $s_1 \ge s_2 \ge \cdots$ 라 할 때
 
 $$
 \lVert K\rVert_1 = \sum_i s_i \lt\infty

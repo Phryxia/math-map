@@ -26,7 +26,7 @@ $$
 \tilde\varphi(t)=\int_0^\infty J_{2it}(x)\thinspace\varphi(x)\thinspace\frac{dx}{x}
 $$
 
-를 $t$ 에 대해 대칭화한 것이다. $J_\nu$ 는 제1종 Bessel 함수다.
+를 $t$ 에 대해 대칭화한 것이다. $J_\nu$ 는 제1종 [Bessel 함수](bessel-functions.md)다.
 
 ## 공식
 

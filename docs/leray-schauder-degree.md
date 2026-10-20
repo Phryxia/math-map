@@ -32,7 +32,7 @@ $X$ 가 Banach 공간, $\Omega\subseteq X$ 가 유계 열린집합이고 $T\colo
 
 ## Leray–Schauder 차수
 
-$y\notin\Phi(\partial\Omega)$ 일 때, $T$ 를 유한차원 치역을 갖는 콤팩트 작용소 $T_m$ 으로 균등근사하고 그 치역과 $y$ 를 담는 유한차원 부분공간을 $X_m$ 이라 하면
+$y\notin\Phi(\partial\Omega)$ 일 때, $T$ 를 유한차원 치역을 갖는 [콤팩트 작용소](compact-operators.md) $T_m$ 으로 균등근사하고 그 치역과 $y$ 를 담는 유한차원 부분공간을 $X_m$ 이라 하면
 
 $$
 \deg\_{\mathrm{LS}}(\Phi,\Omega,y)=\deg\bigl((I-T_m)\vert\_{X_m},\Omega\cap X_m,y\bigr)

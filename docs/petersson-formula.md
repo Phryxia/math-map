@@ -42,7 +42,7 @@ $$
 \frac{\Gamma(k-1)}{(4\pi\sqrt{mn})^{k-1}}\sum_{f\in\mathcal B_k}\frac{\overline{a_f(m)}\thinspace a_f(n)}{\langle f,f\rangle}=\delta_{mn}+2\pi i^{-k}\sum_{c\ge1}\frac{K(m,n;c)}{c}J_{k-1}\left(\frac{4\pi\sqrt{mn}}{c}\right)
 $$
 
-가 성립한다. $\delta_{mn}$ 은 $m=n$ 에서 $1$, 아니면 $0$ 이고 $J_{k-1}$ 은 제1종 Bessel 함수다. 왼변은 기저의 선택에 의존하지 않는다.
+가 성립한다. $\delta_{mn}$ 은 $m=n$ 에서 $1$, 아니면 $0$ 이고 $J_{k-1}$ 은 제1종 [Bessel 함수](bessel-functions.md)다. 왼변은 기저의 선택에 의존하지 않는다.
 
 # 성질
 

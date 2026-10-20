@@ -87,7 +87,7 @@ E^\ast(z,s)=\xi(2s)\thinspace y^s+\xi(2s-1)\thinspace y^{1-s}
 +4\sqrt y\sum_{n\ge1}n^{s-\frac12}\sigma_{1-2s}(n)\thinspace K_{s-\frac12}(2\pi ny)\cos(2\pi nx)
 $$
 
-$K_\nu$ 는 변형 Bessel 함수이고 $K_\nu=K_{-\nu}$ 다. 오른쪽 전체가 $s\mapsto1-s$ 에서 대칭이므로 함수방정식이 나오고, $\xi(2s-1)$ 의 극에서 $s=1$ 의 극이 나온다.
+$K_\nu$ 는 변형 [Bessel 함수](bessel-functions.md)이고 $K_\nu=K_{-\nu}$ 다. 오른쪽 전체가 $s\mapsto1-s$ 에서 대칭이므로 함수방정식이 나오고, $\xi(2s-1)$ 의 극에서 $s=1$ 의 극이 나온다.
 
 # 성질
 

@@ -54,7 +54,7 @@ $$
 u(z)=\sqrt y\sum_{n\neq0}a_n\thinspace K_{ir}(2\pi|n|y)\thinspace e^{2\pi inx}
 $$
 
-가 된다. $K_\nu$ 는 제2종 변형 Bessel 함수이고, 다음 적분으로 주어진다.
+가 된다. $K_\nu$ 는 제2종 변형 [Bessel 함수](bessel-functions.md)이고, 다음 적분으로 주어진다.
 
 $$
 K_{ir}(z)=\int_0^\infty e^{-z\cosh t}\cos(rt)\thinspace dt
