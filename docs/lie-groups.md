@@ -143,7 +143,13 @@ $$
 
 ## 더 알아보기
 
+### 표현과 근사
+
 - [Peter–Weyl 정리](peter-weyl.md)
+- [Solovay–Kitaev 정리](solovay-kitaev.md)
+
+### 기하 구조
+
 - [모멘트 사상](moment-map.md)
 - [주다발](principal-bundles.md)
 - [등질공간](homogeneous-spaces.md)
