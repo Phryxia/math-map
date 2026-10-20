@@ -10,7 +10,7 @@ $$
 
 을 준다. 비틀림 부분은 쉽게 계산되지만 계수 $r$ 은 그렇지 않다. 높이 함수를 쓰는 증명의 뒷부분은 구성적인 반면, 앞부분인 약 Mordell–Weil 정리는 $E(K)/mE(K)$ 의 유한성만 줄 뿐 그 군을 내놓지 않는다.
 
-$E(K)/mE(K)$ 를 붙잡는 방법이 **하강**이다. Kummer 열의 단사
+$E(K)/mE(K)$ 를 붙잡는 방법이 **하강(descent)** 이다. [Kummer 이론](kummer-theory.md)의 쌍을 타원곡선의 $m$ 배 사상으로 옮긴 Kummer 열의 단사
 
 $$
 E(K)/mE(K)\ \hookrightarrow\ H^1(K,E[m])
@@ -189,6 +189,7 @@ Kato 의 Euler 계는 모듈러 단위에서 오고, Iwasawa 주추측을 통해
 ## 선수지식
 
 - [타원곡선](elliptic-curves.md)
+- [Kummer 이론](kummer-theory.md)
 - [Brauer 군](brauer-groups.md)
 
 ## 더 알아보기
