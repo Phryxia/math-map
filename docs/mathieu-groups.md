@@ -2,7 +2,7 @@
 
 # 개요
 
-[유한 단순군 분류](finite-simple-groups.md)의 26 개 산재군 가운데 다섯 개를 Mathieu 가 1861–1873 년에 발견했다.
+Mathieu 군(Mathieu group)은 Mathieu 가 1861–1873 년에 발견한 다섯 개의 단순군 $M_{11},M_{12},M_{22},M_{23},M_{24}$ 이고, [유한 단순군 분류](finite-simple-groups.md)의 26 개 산재군 가운데 다섯이다.
 
 $$
 M\_{11},\ M\_{12},\ M\_{22},\ M\_{23},\ M\_{24}

@@ -2,7 +2,7 @@
 
 # 개요
 
-[근사 알고리즘](approximation-algorithms.md)의 근사비를 증명하려면 최적해를 모르는 채로 쓸 비교 대상이 필요하다.
+LP 반올림(linear programming rounding)은 정수계획 문제의 선형계획 완화를 푼 뒤 그 해를 정수해로 반올림하는 근사 알고리즘 설계법이다. [근사 알고리즘](approximation-algorithms.md)의 근사비를 증명하려면 최적해를 모르는 채로 쓸 비교 대상이 필요하다.
 
 **LP**(linear programming) 완화가 그 비교 대상이다. 정수 제약 $x_i \in \lbrace 0,1\rbrace$ 을 $0 \le x_i \le 1$ 로 풀면 문제가 [선형계획법](linear-programming.md)이 되어 다항시간에 풀리고, 제약을 없앴으므로 그 최적값이 원래 최적값의 하한이다.
 

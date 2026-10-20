@@ -2,7 +2,7 @@
 
 # 개요
 
-[Calderón–Zygmund 이론](calderon-zygmund-theory.md)은 특이적분 작용소를 주값 극한으로 정의하고 그 작용소의 $L^p$ 유계성을 준다. 그 극한이 어느 점에서 존재하는지는 그 정리가 말하지 않는다.
+극대 특이적분(maximal singular integral)은 특이적분을 원점 근방에서 잘라 낸 적분들의 절댓값의 상한으로 정의되는 작용소다. [Calderón–Zygmund 이론](calderon-zygmund-theory.md)은 특이적분 작용소를 주값 극한으로 정의하고 그 작용소의 $L^p$ 유계성을 준다. 그 극한이 어느 점에서 존재하는지는 그 정리가 말하지 않는다.
 
 극대 특이적분은 절단 적분들의 절댓값의 상한이다. Cotlar 부등식이 이 상한을 [Hardy–Littlewood 극대함수](hardy-littlewood-maximal-function.md) 두 개로 받치고, 그 추정에서 주값 극한이 거의 모든 점에서 존재한다는 결론이 나온다.
 

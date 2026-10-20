@@ -2,7 +2,7 @@
 
 # 개요
 
-두 점의 거리가 사상을 지나며 일정 비율 이상으로 늘어나지 않으면 **Lipschitz 사상**이다. [균등연속](uniform-continuity.md)이 $\varepsilon$ 마다 $\delta$ 를 요구하는 데 비해 Lipschitz 조건은 $\delta$ 를 $\varepsilon$ 의 상수배로 고정한다.
+**Lipschitz 사상(Lipschitz map)** 은 두 점의 거리가 사상을 지나며 일정 비율 이상으로 늘어나지 않는 사상이다. [균등연속](uniform-continuity.md)이 $\varepsilon$ 마다 $\delta$ 를 요구하는 데 비해 Lipschitz 조건은 $\delta$ 를 $\varepsilon$ 의 상수배로 고정한다.
 
 비율의 상한인 Lipschitz 상수가 $1$ 보다 작으면 사상이 거리를 줄이고 반복이 한 점으로 모인다. 이 성질이 미분방정식 해의 유일성과 수치 반복법의 수렴을 준다.
 
