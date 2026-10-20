@@ -60,7 +60,7 @@ $$
 \dim X=\mathrm{trdeg}\_k\thinspace k(X)
 $$
 
-이고, 이 값이 좌표환의 [Krull 차원](krull-dimension.md)과 같다. 증명은 Noether 정규화(Noether normalization)로 좌표환을 다항식환 $k\lbrack y_1,\dots,y_d\rbrack$ 위의 유한 가군으로 만들어 $d$ 를 양쪽에서 읽는다.
+이고, 이 값이 좌표환의 [Krull 차원](krull-dimension.md)과 같다. 증명은 [Noether 정규화](noether-normalization.md)로 좌표환을 다항식환 $k\lbrack y_1,\dots,y_d\rbrack$ 위의 유한 가군으로 만들어 $d$ 를 양쪽에서 읽는다.
 
 ## Lindemann–Weierstrass 정리
 
@@ -86,6 +86,6 @@ $n=1$, $\alpha_1=1$ 에서 $e$ 가 초월수이고, $\alpha_1=\pi i$ 로 두면 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Noether 정규화](noether-normalization.md)
 
 #field_theory #algebra #logic

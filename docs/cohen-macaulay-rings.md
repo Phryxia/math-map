@@ -60,7 +60,7 @@ $$\mathrm{pd}\thinspace M+\mathrm{depth}\thinspace M=\mathrm{depth}\thinspace R$
 
 ## 자유성 판정
 
-$A\subseteq R$ 가 Noether 정규화, 곧 $A$ 가 정칙 국소환이고 $R$ 가 $A$ 위에서 유한생성 가군이라 하자. $R$ 가 Cohen–Macaulay 인 것과 $R$ 가 $A$ 위의 자유가군인 것이 같다[^1]. 이 판정이 Cohen–Macaulay 성질을 차원과 깊이 계산 없이 확인하는 수단을 준다.
+$A\subseteq R$ 가 [Noether 정규화](noether-normalization.md), 곧 $A$ 가 정칙 국소환이고 $R$ 가 $A$ 위에서 유한생성 가군이라 하자. $R$ 가 Cohen–Macaulay 인 것과 $R$ 가 $A$ 위의 자유가군인 것이 같다[^1]. 이 판정이 Cohen–Macaulay 성질을 차원과 깊이 계산 없이 확인하는 수단을 준다.
 
 # 활용
 

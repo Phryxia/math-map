@@ -76,7 +76,7 @@ $$
 
 이고 $R$ 의 모든 극대 사슬의 길이가 같다.[^2]
 
-Noether 정규화로 $R$ 을 다항식환 $k\lbrack y_1,\dots,y_d\rbrack$ 위의 유한 가군으로 만든다. 유한 확대는 소 아이디얼 사슬을 보존하므로 차원이 옮겨 가고, 다항식환 쪽에서 $d$ 가 [초월차수](transcendence-degree.md)다. ∎
+[Noether 정규화](noether-normalization.md)로 $R$ 을 다항식환 $k\lbrack y_1,\dots,y_d\rbrack$ 위의 유한 가군으로 만든다. 유한 확대는 소 아이디얼 사슬을 보존하므로 차원이 옮겨 가고, 다항식환 쪽에서 $d$ 가 [초월차수](transcendence-degree.md)다. ∎
 
 **따름정리.** $\dim k\lbrack x_1,\dots,x_n\rbrack=n$ 이다.
 
