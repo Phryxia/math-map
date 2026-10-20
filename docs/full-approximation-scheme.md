@@ -108,7 +108,7 @@ $A$ 가 선형이면 $A_{2h}(v_{2h})-A_{2h}(R\thinspace u_h)=A_{2h}(v_{2h}-R\thi
 
 ## tau 보정을 쓴 이산화 오차 추정
 
-$\tau$ 는 두 격자의 이산화 차이이므로 그 크기가 국소 이산화 오차의 추정값이 된다. 격자 세분을 어디에 할지 정하는 기준으로 쓴다.[^1]
+$\tau$ 는 두 격자의 이산화 차이이므로 그 크기가 국소 이산화 오차의 추정값이 된다. 격자 세분을 어디에 할지 정하는 기준으로 쓴다.[^1] 격자 두 단계를 쓰지 않고 잔차에서 같은 기준을 얻는 것이 [후처리 오차 추정자](a-posteriori-error-estimator.md)다.
 
 [^1]: A. Brandt, *Multi-level adaptive solutions to boundary-value problems*, Math. Comp. **31** (1977), 333–390. FAS 와 tau 보정이 이 논문에서 함께 나온다. 교과서 서술은 U. Trottenberg, C. Oosterlee, A. Schüller, *Multigrid*, Academic Press (2001) 5 장이다.
 [^2]: A. Jameson, *Solution of the Euler equations for two dimensional transonic flow by a multigrid method*, Appl. Math. Comput. **13** (1983), 327–355.
