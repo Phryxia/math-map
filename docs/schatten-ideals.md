@@ -2,7 +2,7 @@
 
 # 개요
 
-**Schatten 아이디얼(Schatten ideal)** $\mathcal S_p$ 는 특이값 수열이 $\ell^p$ 에 드는 콤팩트 작용소의 모임이다. $p=1$ 인 것을 추적류(trace class), $p=2$ 인 것을 Hilbert–Schmidt 류(Hilbert–Schmidt class)라 한다.
+**Schatten 아이디얼(Schatten ideal)** $\mathcal S_p$ 는 특이값 수열이 $\ell^p$ 에 드는 [콤팩트 작용소](compact-operators.md)의 모임이다. $p=1$ 인 것을 추적류(trace class), $p=2$ 인 것을 Hilbert–Schmidt 류(Hilbert–Schmidt class)라 한다.
 
 작용소 노름은 가장 큰 특이값만 재므로 대각합이나 행렬식이 수렴하는지 말해 주지 않는다. Schatten 노름은 특이값 전체를 수열로 보고 그 수열의 $\ell^p$ 크기를 재며, $p$ 가 작을수록 좁은 모임이 된다.
 
