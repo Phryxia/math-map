@@ -2,7 +2,7 @@
 
 # 개요
 
-[Krull 차원](krull-dimension.md)은 Noether 국소환 $(R,\mathfrak m)$ 에서 $\dim R\le\dim_\kappa\mathfrak m/\mathfrak m^2$ 을 준다. 오른쪽은 $\mathfrak m$ 의 최소 생성원 개수이고, 기하에서는 접공간의 차원이다.
+정칙 국소환(regular local ring)은 극대 아이디얼의 최소 생성원 개수가 [Krull 차원](krull-dimension.md)과 같은 Noether 국소환이다. Krull 차원은 Noether 국소환 $(R,\mathfrak m)$ 에서 $\dim R\le\dim_\kappa\mathfrak m/\mathfrak m^2$ 을 준다. 오른쪽은 $\mathfrak m$ 의 최소 생성원 개수이고, 기하에서는 접공간의 차원이다.
 
 등호가 성립하는 환이 **정칙 국소환**이다. 대수다양체의 매끄러운 점에서 국소환이 이 조건을 만족한다. 정칙성은 잉여체의 자유분해 길이로도 읽히고, 그 형태에서 유일분해정역이라는 결론이 나온다.
 
