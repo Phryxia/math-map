@@ -2,9 +2,9 @@
 
 # 개요
 
-[Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)에서 $L$ 함수의 $s=1$ 에서의 소멸 차수는 Mordell–Weil 군의 계수와 같다. 이 추측에서 실제로 증명된 것은 해석 순위가 0 이나 1 인 경우의 한쪽 방향뿐이고, 그 증명이 Kolyvagin 의 정리다.
+Kolyvagin–Logachev 정리(Kolyvagin–Logachev theorem)는 $\mathbb Q$ 위 [타원곡선](elliptic-curves.md)의 해석 순위가 $0$ 이나 $1$ 이면 Mordell–Weil 군의 계수가 해석 순위와 같고 Tate–Shafarevich 군이 유한하다는 정리다. [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)에서 $L$ 함수의 $s=1$ 에서의 소멸 차수는 Mordell–Weil 군의 계수와 같다. 이 추측에서 실제로 증명된 것은 해석 순위가 0 이나 1 인 경우의 한쪽 방향뿐이고, 그 증명이 Kolyvagin 의 정리다.
 
-> **정리(Kolyvagin).** $E/\mathbb Q$ 가 [타원곡선](elliptic-curves.md)이고 $L(E,1)\ne0$ 이면 $E(\mathbb Q)$ 가 유한하고 $\text{Ш}(E/\mathbb Q)$ 도 유한하다. $L(E,1)=0$ 이고 $L'(E,1)\ne0$ 이면 $\mathrm{rank}E(\mathbb Q)=1$ 이고 Heegner 점이 유한 지표의 부분군을 생성한다.
+> **정리(Kolyvagin).** $E/\mathbb Q$ 가 타원곡선이고 $L(E,1)\ne0$ 이면 $E(\mathbb Q)$ 가 유한하고 $\text{Ш}(E/\mathbb Q)$ 도 유한하다. $L(E,1)=0$ 이고 $L'(E,1)\ne0$ 이면 $\mathrm{rank}E(\mathbb Q)=1$ 이고 Heegner 점이 유한 지표의 부분군을 생성한다.
 
 Kolyvagin–Logachev 는 이것을 [모듈러 형식](modular-forms.md)에서 만들어지는 아벨 다양체 $A_f$ 로 확장해, 차원이 1 보다 커도 $L(f,1)\ne0$ 이면 $A_f(\mathbb Q)$ 가 유한함을 보인다. 이것이 **Kolyvagin–Logachev 정리(Kolyvagin–Logachev theorem)** 다. 이 일반화로 [모듈러 곡선](modular-curves.md)의 Jacobian 에서 유리점이 유한한 몫을 만들 수 있다.
 

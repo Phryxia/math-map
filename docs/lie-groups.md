@@ -2,7 +2,7 @@
 
 # 개요
 
-[Lie 대수](lie-algebras.md)는 연속 대칭군을 항등원 근처에서 선형화한 것이다. 반대 방향으로 대수에서 군을 복원하는 사상이 **지수사상**이다.
+Lie 군(Lie group)은 매끄러운 [다양체](manifolds.md)이면서 곱셈과 역원이 매끄러운 군이다. [Lie 대수](lie-algebras.md)는 연속 대칭군을 항등원 근처에서 선형화한 것이다. 반대 방향으로 대수에서 군을 복원하는 사상이 **지수사상**이다.
 
 $$
 \exp:\mathfrak g\to G,\qquad \exp(X)=\sum_{k\ge0}\frac{X^k}{k!}
@@ -28,7 +28,7 @@ $\mathfrak g=T_eG$ 는 $G$ 를 항등원에서 선형화한 것이고 $\exp$ 가
 
 ## Lie 군
 
-**Lie 군**은 매끄러운 [다양체](manifolds.md) $G$ 이면서 군이고, 곱셈 $G\times G\to G$ 와 역원 $G\to G$ 가 매끄러운 것이다.
+**Lie 군**은 매끄러운 다양체 $G$ 이면서 군이고, 곱셈 $G\times G\to G$ 와 역원 $G\to G$ 가 매끄러운 것이다.
 
 $\mathfrak g=T_eG$ 의 괄호는 왼쪽불변 벡터장으로 정의한다. $X\in T_eG$ 에 대해 $X^L_g=(dL_g)\_eX$ 로 벡터장을 만들면 벡터장의 Lie 괄호가 다시 왼쪽불변이므로 $T_eG$ 위의 괄호가 유도된다. 이것이 $\mathrm{Lie}(G)=\mathfrak g$ 이고, 행렬군에서는 교환자 $XY-YX$ 와 일치한다.
 
