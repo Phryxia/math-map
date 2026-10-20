@@ -2,15 +2,13 @@
 
 # 개요
 
-공간에 무작위로 놓인 점들의 집합을 점과정이라 한다. 점들이 서로 무관한 [Poisson 과정](poisson-process.md)과 달리, 무작위 행렬의 [고윳값](eigenvalues.md)이나 결정 속 전자의 배치는 서로 밀어낸다.
-
-**결정점과정**(determinantal point process)은 점들 사이의 모든 상관을 핵 $K$ 하나로 압축하고, $k$ 개의 점이 특정 자리에 함께 있을 밀도를
+**결정점과정(determinantal point process)** 은 점들 사이의 모든 상관을 핵 $K$ 하나로 압축한 점과정(point process)이다. 점과정은 공간에 무작위로 놓인 점들의 집합이고, 결정점과정은 $k$ 개의 점이 특정 자리에 함께 있을 밀도를
 
 $$
 \rho_k(x_1,\dots,x_k) = \det\bigl[K(x_i,x_j)\bigr]\_{i,j=1}^{k}
 $$
 
-라는 [행렬식](determinants.md)으로 쓴다. 행렬식은 인자가 비슷해지면 0 으로 가므로 점들이 서로를 밀어낸다. 반발하는 무작위 배치의 표준 모형이며 [Tracy–Widom 분포](tracy-widom.md)가 Airy 핵의 결정점과정에서 나온다.
+라는 [행렬식](determinants.md)으로 쓴다. 행렬식은 인자가 비슷해지면 0 으로 가므로 점들이 서로를 밀어낸다. 점들이 서로 무관한 [Poisson 과정](poisson-process.md)과 달리 무작위 행렬의 [고윳값](eigenvalues.md)이나 결정 속 전자의 배치가 이렇게 서로 밀어내고, [Tracy–Widom 분포](tracy-widom.md)가 Airy 핵의 결정점과정에서 나온다.
 
 유한 개의 점은 위의 유한 행렬식으로 충분하고, 구간 전체에 점이 없을 확률 같은 질문에는 무한차원 판본인 [Fredholm 행렬식](fredholm-determinant.md)이 필요하다.
 

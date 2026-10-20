@@ -2,9 +2,9 @@
 
 # 개요
 
-[WKB 근사](wkb-approximation.md)(Wentzel–Kramers–Brillouin)는 발산하는 급수를 잘라 쓰고 회전점에서 Airy 함수로 이어 붙이며, 연결 공식을 규칙으로 외워 쓴다.
+**정확한 WKB(exact WKB)** 는 [WKB 근사](wkb-approximation.md)(Wentzel–Kramers–Brillouin)의 발산하는 급수를 자르는 대신 [Borel 재합산](borel-pade.md)해서 각 영역에서 정의된 정확한 해를 얻는 방법이다. WKB 근사는 급수를 잘라 쓰고 회전점에서 Airy 함수로 이어 붙이며, 연결 공식을 규칙으로 외워 쓴다.
 
-**정확한 WKB**(exact WKB)는 급수를 자르는 대신 [Borel 재합산](borel-pade.md)한다. 합한 결과가 각 영역에서 정의된 정확한 해이고, 연결 공식은 외우는 규칙이 아니라 계산되는 대상이 된다. Voros 가 시작하고 Écalle 의 [resurgence](resurgence.md) 가 언어를 준 뒤 Delabaere–Dillinger–Pham 이 정리했다.
+정확한 WKB 에서는 연결 공식이 외우는 규칙이 아니라 계산되는 대상이다. Voros 가 시작하고 Écalle 의 [resurgence](resurgence.md) 이론을 바탕으로 Delabaere–Dillinger–Pham 이 정리했다.
 
 회전점을 감싸는 주기 적분을 Borel 합한 **Voros 기호**를 좌표로 잡으면 Stokes 선을 건너는 일이 좌표 사이의 변환식 한 줄이 된다. WKB 의 $\pi/4$ 위상은 그 변환식의 특수한 경우다.
 
