@@ -2,7 +2,7 @@
 
 # 개요
 
-$x$ 이하의 [소수](primes.md) 개수 $\pi(x)$ 에는 닫힌 공식이 없지만 큰 $x$ 에서의 점근 행동은 단순하다.
+소수 정리(prime number theorem)는 $x$ 이하의 [소수](primes.md) 개수 $\pi(x)$ 가 $x/\log x$ 와 점근적으로 같다는 정리다. $\pi(x)$ 에는 닫힌 공식이 없지만 큰 $x$ 에서의 점근 행동은 단순하다.
 
 $$
 \pi(x)\sim\frac{x}{\ln x}

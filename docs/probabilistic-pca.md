@@ -2,7 +2,7 @@
 
 # 개요
 
-[주성분 분석](principal-component-analysis.md)은 분산을 최대로 담는 부분공간을 찾는 기하적 절차다. 확률모형이 아니므로 결측값 처리, 성분 개수 선택, 새 점의 적합도 측정에 원칙이 없다.
+확률적 PCA(probabilistic principal component analysis)는 [주성분 분석](principal-component-analysis.md)을 잠재변수가 있는 Gauss 선형 모형의 최대우도 추정으로 다시 얻는 방법이다. 주성분 분석은 분산을 최대로 담는 부분공간을 찾는 기하적 절차다. 확률모형이 아니므로 결측값 처리, 성분 개수 선택, 새 점의 적합도 측정에 원칙이 없다.
 
 **확률적 PCA(probabilistic principal component analysis)** 는 같은 답을 주는 생성모형이다. 저차원 잠재변수를 Gauss 분포에서 뽑아 선형변환하고 모든 방향에 같은 크기의 등방성 잡음을 더한 것이 관측이다.
 

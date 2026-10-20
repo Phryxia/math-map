@@ -2,7 +2,7 @@
 
 # 개요
 
-[아이디얼로 나눈](ideals-quotient-rings.md) 몫환의 모양은 아이디얼이 결정한다. $\mathbb{Z}/6\mathbb{Z}$ 에는 영인자가 있고 $\mathbb{Z}/7\mathbb{Z}$ 는 체다.
+소 아이디얼(prime ideal)은 곱 $ab$ 가 속하면 $a$ 나 $b$ 가 속하는 진아이디얼이다. [아이디얼로 나눈](ideals-quotient-rings.md) 몫환의 모양은 아이디얼이 결정한다. $\mathbb{Z}/6\mathbb{Z}$ 에는 영인자가 있고 $\mathbb{Z}/7\mathbb{Z}$ 는 체다.
 
 소 아이디얼로 나누면 정역이 나오고 극대 아이디얼로 나누면 체가 나온다. 정수에서는 두 조건이 모두 소수에 해당하지만 일반 환에서는 갈라지고, 그 간극이 환의 기하적 크기를 잰다.
 

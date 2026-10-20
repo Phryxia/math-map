@@ -2,7 +2,7 @@
 
 # 개요
 
-합동식 $x^2\equiv a\pmod p$ 의 해의 존재는 [Fermat 소정리](fermat-euler-theorem.md)에서 나오는 Euler 판정법이 $a^{(p-1)/2}\bmod p$ 한 번의 계산으로 판정한다.
+이차 상호법칙(law of quadratic reciprocity)은 서로 다른 홀소수 $p,q$ 에 대해 $q$ 가 법 $p$ 의 제곱잉여인지와 $p$ 가 법 $q$ 의 제곱잉여인지를 하나의 부호 관계로 잇는 정리다. 합동식 $x^2\equiv a\pmod p$ 의 해의 존재는 [Fermat 소정리](fermat-euler-theorem.md)에서 나오는 Euler 판정법이 $a^{(p-1)/2}\bmod p$ 한 번의 계산으로 판정한다.
 
 $p$ 가 법 $q$ 에서 제곱수인지와 $q$ 가 법 $p$ 에서 제곱수인지는 별개의 계산인데 두 답이 서로를 결정한다. 둘 중 하나라도 $4k+1$ 이면 두 답이 같고, 둘 다 $4k+3$ 이면 반대다.
 
