@@ -66,7 +66,7 @@ $X$ 가 콤팩트가 아니면 정리는 그대로 성립하지 않는다. $\mat
 
 ## 함수공간의 콤팩트 작용소
 
-적분작용소가 콤팩트임을 보일 때 상이 동등연속인 족임을 확인한다. 이 판정이 [Fredholm 작용소](fredholm-operators.md)의 이론으로 이어진다.
+적분작용소가 [콤팩트 작용소](compact-operators.md)임을 보일 때 상이 동등연속인 족임을 확인한다. 이 판정이 [Fredholm 작용소](fredholm-operators.md)의 이론으로 이어진다.
 
 # 연관 문서
 
