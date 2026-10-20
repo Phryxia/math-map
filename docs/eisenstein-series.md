@@ -2,7 +2,7 @@
 
 # 개요
 
-[모듈러 형식](modular-forms.md)의 공간은 두 조각으로 나뉜다.
+Eisenstein 급수(Eisenstein series)는 $(m,n)\ne(0,0)$ 에 대해 $(mz+n)^{-k}$ 를 더해 얻는 [모듈러 형식](modular-forms.md)이다. 모듈러 형식의 공간은 두 조각으로 나뉜다.
 
 $$
 M_k(\mathrm{SL}\_2(\mathbb Z))=S_k\thickspace\oplus\thickspace\mathbb C\thinspace E_k

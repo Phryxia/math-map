@@ -2,9 +2,9 @@
 
 # 개요
 
-[이산로그](discrete-logarithm.md)의 난이도는 군에 달렸다. $(\mathbb Z/p\mathbb Z)^\times$ 에서는 원소가 정수로 표현되는 성질을 이용한 지표 계산법이 준지수 시간을 주고, 그런 구조가 없는 군에서는 $O(\sqrt N)$ 이 최선이다.
+타원곡선(elliptic curve)은 체 위의 매끄러운 삼차 곡선에 무한원점을 더한 것이고, 그 점들은 기하적인 덧셈으로 아벨군을 이룬다. [이산로그](discrete-logarithm.md)의 난이도는 군에 달렸다. $(\mathbb Z/p\mathbb Z)^\times$ 에서는 원소가 정수로 표현되는 성질을 이용한 지표 계산법이 준지수 시간을 주고, 그런 구조가 없는 군에서는 $O(\sqrt N)$ 이 최선이다.
 
-[유한체](finite-fields.md) 위의 삼차 곡선에 놓인 점들에 기하적인 덧셈을 정의하면 아벨군이 되고, 이 군에는 작은 소수로 쪼개진다는 개념이 없다. 그래서 같은 안전성에 훨씬 짧은 키를 쓴다.
+[유한체](finite-fields.md) 위 타원곡선의 군에는 작은 소수로 쪼개진다는 개념이 없다. 그래서 같은 안전성에 훨씬 짧은 키를 쓴다.
 
 유리수 위의 타원곡선은 [Mordell–Weil 정리](canonical-height.md)로 유한생성 아벨군이 되고, 그 계수를 예측하는 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)이 밀레니엄 문제 중 하나다. Fermat 마지막 정리의 증명도 타원곡선과 [모듈러 형식](modular-forms.md)의 대응을 통해 이루어졌다.
 
