@@ -8,7 +8,7 @@
 
 # 직관
 
-Galois 코호몰로지의 Kummer 열은 $a\in F^{\times}$ 에 류 $(a)\in H^1(F,\mu_2)$ 를 주고 $H^1(F,\mu_2)\cong F^{\times}/(F^{\times})^{2}$ 이다. 표수가 $2$ 가 아니면 두 류의 컵곱 $(a)\cup(b)$ 는 $H^2(F,\mu_2)\cong\mathrm{Br}(F)\lbrack2\rbrack$ 에 들어가고, 그 원소는 $i^2=a$, $j^2=b$, $ij=-ji$ 로 정한 사원수 대수 $(a,b)$ 의 류다. 사원수 대수가 행렬 대수와 동형인 것은 $x^2-ay^2-bz^2=0$ 이 $0$ 아닌 해를 갖는 것과 동치다.
+Galois 코호몰로지의 Kummer 열은 $a\in F^{\times}$ 에 류 $(a)\in H^1(F,\mu_2)$ 를 주고 $H^1(F,\mu_2)\cong F^{\times}/(F^{\times})^{2}$ 이다. 표수가 $2$ 가 아니면 두 류의 컵곱 $(a)\cup(b)$ 는 $H^2(F,\mu_2)\cong\mathrm{Br}(F)\lbrack2\rbrack$ 에 들어가고, 그 원소는 $i^2=a$, $j^2=b$, $ij=-ji$ 로 정한 [사원수 대수](quaternion-algebras.md) $(a,b)$ 의 류다. 사원수 대수가 행렬 대수와 동형인 것은 $x^2-ay^2-bz^2=0$ 이 $0$ 아닌 해를 갖는 것과 동치다.
 
 $b=1-a$ 로 두면 $x=y=z=1$ 에서 $1-a-(1-a)=0$ 이므로 해가 있다. 그래서 모든 $a\ne0,1$ 에서 $(a)\cup(1-a)=0$ 이다. 컵곱은 양쪽 변수에 대해 준동형이므로 $(a,b)\mapsto(a)\cup(b)$ 는 $F^{\times}\otimes F^{\times}$ 에서 정의된 사상이고, $a\otimes(1-a)$ 를 전부 $0$ 으로 보낸다.
 

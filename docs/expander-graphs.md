@@ -67,7 +67,7 @@ $$
 
 이다. $\max(|\lambda_2|,|\lambda_n|)\le\frac{2\sqrt{d-1}}{d}$ 인 그래프를 **Ramanujan 그래프**라 한다. 무한족의 구성은 $d=p+1$ ($p$ 소수)에서 LPS(Lubotzky–Phillips–Sarnak)가 주었고, 모든 $d\ge3$ 에 대한 이분 Ramanujan 족의 존재는 Marcus–Spielman–Srivastava 가 교대 다항식 방법으로 증명했다.
 
-Ramanujan 이라는 이름은 LPS 구성이 사원수 대수와 [모듈러 형식](modular-forms.md)의 계수 평가, 곧 Deligne 이 증명한 Ramanujan 추측을 쓰는 데서 왔다. 무작위 $d$ 정규 그래프는 Friedman 의 정리로 거의 확실히 $\max(|\lambda_2|,|\lambda_n|)\le\frac{2\sqrt{d-1}}{d}+\varepsilon$ 을 만족하고, 명시적으로 하나를 적어 내는 데는 정수론이 필요하다.
+Ramanujan 이라는 이름은 LPS 구성이 [사원수 대수](quaternion-algebras.md)와 [모듈러 형식](modular-forms.md)의 계수 평가, 곧 Deligne 이 증명한 Ramanujan 추측을 쓰는 데서 왔다. 무작위 $d$ 정규 그래프는 Friedman 의 정리로 거의 확실히 $\max(|\lambda_2|,|\lambda_n|)\le\frac{2\sqrt{d-1}}{d}+\varepsilon$ 을 만족하고, 명시적으로 하나를 적어 내는 데는 정수론이 필요하다.
 
 # 성질
 

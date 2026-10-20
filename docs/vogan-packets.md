@@ -34,7 +34,7 @@ $\mathrm{PGL}\_2(\mathbb R)$ 의 이산계열은 $\mathrm{SL}\_2(\mathbb R)$ 에
 
 $G$ 를 $F$ 위의 유사분열 환원군이라 하자. $G$ 의 **내부형식**은 $\bar F$ 위에서 $G$ 와 동형이지만 $F$ 위에서는 다를 수 있는 군이고 $H^1(F,G_{\mathrm{ad}})$ 로 분류된다. **순수 내부형식**은 $H^1(F,G)$ 로 분류되며 각 코사이클 $b$ 가 군 $G_b$ 를 준다.
 
-- $G=\mathrm{PGL}\_2$ : 내부형식은 $B^\times/F^\times$ , 곧 사원수 대수들이다.
+- $G=\mathrm{PGL}\_2$ : 내부형식은 $B^\times/F^\times$ , 곧 [사원수 대수](quaternion-algebras.md)들이다.
 - $G=U(V)$ : 순수 내부형식은 같은 차원의 에르미트 공간 $V'$ 들이고, 국소체 위에서는 판별식으로 구별되어 정확히 두 개다.
 - $G=\mathrm{GL}\_n$ : $H^1(F,\mathrm{GL}\_n)=1$ 이므로 순수 내부형식이 자기 자신뿐이다.
 

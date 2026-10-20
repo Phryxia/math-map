@@ -96,7 +96,7 @@ $\mathbb R$ 위의 유한차원 합성 대수는 $\mathbb R$, $\mathbb C$, $\mat
 - 3차원 회전. 노름 $1$ 인 사원수의 곱이 $\mathbb R^3$ 의 회전을 주고, [Lie 군](lie-groups.md) $\mathrm{SU}(2)$ 가 단위 사원수군이며 $\mathrm{SU}(2)\to\mathrm{SO}(3)$ 이 이중덮개다.
 - [Clifford 대수](clifford-algebras.md)의 예. 2차원 음정부호 [이차형식](quadratic-forms.md)의 Clifford 대수가 $\mathbb H$ 이고, $\mathbb R$ 위 Clifford 대수의 분류표에 나눗셈 대수로 등장하는 것은 $\mathbb R$, $\mathbb C$, $\mathbb H$ 뿐이다.
 - 평행가능 구면. 차원 제약의 증명이 그대로 $S^{n-1}$ 이 평행가능일 조건을 $n\in\lbrace 1,2,4,8\rbrace$ 로 준다.
-- [질량 공식](mass-formula.md). 확정 사원수 대수에서 극대 순서를 잡고 그 좌이념류를 자기동형군 크기로 가중해 세는 것이 Eichler 의 질량 공식이다.
+- [질량 공식](mass-formula.md). 확정 [사원수 대수](quaternion-algebras.md)에서 극대 순서를 잡고 그 좌이념류를 자기동형군 크기로 가중해 세는 것이 Eichler 의 질량 공식이다.
 
 # 연관 문서
 
@@ -107,5 +107,6 @@ $\mathbb R$ 위의 유한차원 합성 대수는 $\mathbb R$, $\mathbb C$, $\mat
 ## 더 알아보기
 
 - [Brauer 군](brauer-groups.md)
+- [사원수 대수](quaternion-algebras.md)
 
 #field_theory #algebra #ring_theory #algebraic_topology

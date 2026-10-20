@@ -81,6 +81,7 @@ graph TD
 - [Lagrange 네 제곱수 정리](four-squares-theorem.md): 모든 정수가 제곱수 넷의 합이라는 정리, Euler 항등식에 의한 소수로의 환원과 Jacobi 의 표현 개수 공식
 - [Gauss 세 제곱수 정리](three-squares-theorem.md): 세 제곱수의 합이 되는 정수의 판정, 8 을 법으로 한 제외 조건과 표현 개수를 주는 유형수 공식
 - [Hasse 원리](hasse-principle.md): 모든 자리에서 풀리면 유리수해가 있다는 주장, 이차형식에서의 성립과 차수 3 에서의 반례
+  - [사원수 대수](quaternion-algebras.md): 노름형식이 0 을 표현하는지로 갈리는 분해와 나눗셈, 분기 자리의 짝수 조건, 극대 순서와 Eichler 질량 공식
 
 ## 대수적 수체와 유체론
 

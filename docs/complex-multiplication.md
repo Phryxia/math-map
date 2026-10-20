@@ -98,7 +98,7 @@ $E$ 가 $\mathcal O_K$ 로 CM 을 갖고 $p$ 에서 좋은 환원을 가지면 �
 | K 에서 p 의 분해 | 환원 Ẽ | Frobenius |
 |---|---|---|
 | 분열 $p=\pi\bar\pi$ | 보통(ordinary) | $\pi\in\mathcal O_K$ 로 주어짐, $a_p=\pi+\bar\pi$ |
-| 비활성 | 초특이(supersingular) | $a_p=0$ 이고 $\mathrm{End}$ 가 사원수 대수 |
+| 비활성 | 초특이(supersingular) | $a_p=0$ 이고 $\mathrm{End}$ 가 [사원수 대수](quaternion-algebras.md) |
 | 분기 | 보통 또는 초특이 ($D$ 에 따름) | — |
 
 분열하는 경우 $p=\pi\bar\pi=N(\pi)$ 이므로 $p$ 를 $K$ 의 노름으로 쓰는 것과 점 개수 $\char35{}\tilde E(\mathbb F_p)=p+1-(\pi+\bar\pi)$ 는 같은 자료다. $p=x^2+ny^2$ 꼴 표현 문제가 CM 이론으로 풀린다. $p=x^2+27y^2$ 인 것은 $p\equiv1\pmod3$ 이고 $2$ 가 $\bmod\thinspace p$ 세제곱잉여인 것과 동치이며, $h(-108)=3$ 인 순서환의 유체 다항식 $X^3-2$ 가 이를 설명한다.
