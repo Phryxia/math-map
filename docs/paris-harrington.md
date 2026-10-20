@@ -56,7 +56,7 @@ $$
 
 **정리.** Peano 산술은 강화된 Ramsey 명제를 증명하지 않는다.
 
-증명이 둘 있다. 하나는 증가 속도를 재는 것이다. $N$ 의 최솟값을 $f(n,k,m)$ 이라 하면 이 함수는 빠르게 자라는 계층(fast-growing hierarchy)에서 $F\_{\varepsilon_0}$ 와 같은 속도로 자란다. Peano 산술이 전 함수임을 증명하는 재귀 함수는 $\varepsilon_0$ 보다 작은 [서수](ordinals.md) 수준에 머무르므로 $f$ 를 담지 못한다.
+증명이 둘 있다. 하나는 증가 속도를 재는 것이다. $N$ 의 최솟값을 $f(n,k,m)$ 이라 하면 이 함수는 [빠르게 자라는 계층](fast-growing-hierarchy.md)에서 $F\_{\varepsilon_0}$ 와 같은 속도로 자란다. Peano 산술이 전 함수임을 증명하는 재귀 함수는 $\varepsilon_0$ 보다 작은 [서수](ordinals.md) 수준에 머무르므로 $f$ 를 담지 못한다.
 
 다른 하나는 모형을 만드는 것이다. 강화된 Ramsey 명제를 가정하면 Peano 산술의 가산 비표준 모형 안에서, 다시 Peano 산술의 모형이 되는 절단을 만들 수 있다. 그러므로 강화된 Ramsey 명제로부터 Peano 산술의 무모순성이 증명되고, Gödel 둘째 불완전성 정리로 Peano 산술은 이 명제를 증명하지 못한다. ∎
 
@@ -67,7 +67,7 @@ $$
 # 활용
 
 - **자기 지시 없는 독립 명제.** Gödel 문장은 증명 가능성 술어로 자기를 가리키게 만든 식이라 산술의 다른 명제와 생김새가 다르다. 강화된 Ramsey 명제는 유한집합과 색칠만으로 적히고, Peano 산술에서 독립인 명제가 조합론 안에도 있음을 보인다.
-- **체계의 세기 측정.** 체계가 전 함수임을 증명하는 재귀 함수의 증가 속도로 그 체계의 세기를 잰다. 강화된 Ramsey 명제는 Peano 산술의 한계인 $\varepsilon_0$ 를 조합론 명제의 꼴로 드러낸다. Goodstein 정리가 같은 자리에 있다.
+- **체계의 세기 측정.** 체계가 전 함수임을 증명하는 재귀 함수의 증가 속도로 그 체계의 세기를 잰다. 강화된 Ramsey 명제는 Peano 산술의 한계인 $\varepsilon_0$ 를 조합론 명제의 꼴로 드러낸다. [Goodstein 정리](goodstein-theorem.md)가 같은 자리에 있다.
 - **공리 강도의 비교.** [역수학](reverse-mathematics.md)은 정리마다 그 증명에 필요한 공리를 찾는다. 강화된 Ramsey 명제는 [2차 산술](second-order-arithmetic.md)의 부분체계 가운데 산술적 내포 공리(arithmetical comprehension axiom)를 갖춘 $\mathrm{ACA}\_0$ 에서 증명된다. 무한 Ramsey 정리를 쓰는 위 논증이 그 체계 안에서 돌아간다.
 
 [^1]: J. Paris and L. Harrington, "A Mathematical Incompleteness in Peano Arithmetic", in J. Barwise (ed.), Handbook of Mathematical Logic, North-Holland (1977), 1133–1142.

@@ -44,7 +44,7 @@ $a_n=\alpha_{n+1}(G_n(m))$ 으로 둔다. 밑을 $n+1$ 에서 $n+2$ 로 올리�
 
 ## 수열의 길이
 
-$m=4$ 의 Goodstein 수열은 $3\cdot2^{402653211}-2$ 번째 항에서 $0$ 이 된다. 수열의 길이를 $m$ 의 함수로 본 것은 빠르게 자라는 계층(fast-growing hierarchy)에서 $F\_{\varepsilon_0}$ 와 같은 속도로 자란다.
+$m=4$ 의 Goodstein 수열은 $3\cdot2^{402653211}-2$ 번째 항에서 $0$ 이 된다. 수열의 길이를 $m$ 의 함수로 본 것은 [빠르게 자라는 계층](fast-growing-hierarchy.md)에서 $F\_{\varepsilon_0}$ 와 같은 속도로 자란다.
 
 ## Peano 산술에서의 독립성
 
