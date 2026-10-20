@@ -66,7 +66,7 @@ Peano 산술은 표준 모형 $\mathbb N$ 과 동형이 아닌 모형을 가진�
 
 Peano 산술은 재귀적으로 공리화되고 기본 산술을 표현하므로 [Gödel 불완전성 정리](godel-incompleteness.md)의 가정을 만족한다. Peano 산술이 무모순이면 표준 모형에서 참이지만 Peano 산술에서 증명되지 않는 산술 문장이 존재한다.
 
-Gödel 문장 외에 조합적 내용을 가진 예도 알려져 있다. Goodstein 수열이 항상 $0$ 에서 끝난다는 정리와 Paris–Harrington 정리가 표준 모형에서 참이면서 Peano 산술에서 증명되지 않는다.[^1]
+Gödel 문장 외에 조합적 내용을 가진 예도 알려져 있다. Goodstein 수열이 항상 $0$ 에서 끝난다는 [Goodstein 정리](goodstein-theorem.md)와 [Paris–Harrington 정리](paris-harrington.md)가 표준 모형에서 참이면서 Peano 산술에서 증명되지 않는다.[^1]
 
 ## 무모순성 증명의 서수
 
