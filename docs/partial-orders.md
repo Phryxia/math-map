@@ -130,9 +130,10 @@ $P$ 의 원소를 대상으로 삼고 $x \le y$ 일 때 $x$ 에서 $y$ 로 가�
 - [서수](ordinals.md)
 - [선택공리](axiom-of-choice.md)
 
-### 그래프, 범주, 논리
+### 알고리즘, 범주, 논리
 
 - [위상정렬](topological-sort.md)
+- [균형 이진 탐색 트리](balanced-binary-search-trees.md)
 - [범주](category.md)
 - [직관주의 논리의 Kripke 의미론](kripke-semantics.md)
 

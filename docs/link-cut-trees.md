@@ -163,6 +163,7 @@ Sleator 와 Tarjan 은 최대유량 알고리즘을 위해 이 자료구조를 �
 
 ## 선수지식
 
+- [균형 이진 탐색 트리](balanced-binary-search-trees.md)
 - [동적 연결성](dynamic-connectivity.md)
 
 ## 더 알아보기
