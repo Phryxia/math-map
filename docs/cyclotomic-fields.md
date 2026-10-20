@@ -67,7 +67,7 @@ $\mathbb Q(\sqrt d)$ 는 판별식을 $D$ 라 할 때 $\mathbb Q(\zeta\_{\vert D
 
 ## 정칙 소수
 
-홀수 소수 $p$ 가 $\mathbb Q(\zeta_p)$ 의 류수를 나누지 않으면 **정칙 소수(regular prime)** 라 한다. Kummer 는 정칙 소수 $p$ 에서 $x^p+y^p=z^p$ 이 $xyz\ne0$ 인 정수해를 갖지 않음을 증명했고, $p$ 가 정칙인 것이 $p$ 가 [Bernoulli 수](bernoulli-numbers.md) $B_2,B_4,\dots,B\_{p-3}$ 의 분자를 하나도 나누지 않는 것과 동치임을 보였다.[^1] 가장 작은 비정칙 소수는 $37$ 이고 $B\_{32}$ 의 분자를 나눈다.
+홀수 소수 $p$ 가 $\mathbb Q(\zeta_p)$ 의 류수를 나누지 않으면 **정칙 소수(regular prime)** 라 한다. Kummer 는 정칙 소수 $p$ 에서 $x^p+y^p=z^p$ 이 $xyz\ne0$ 인 정수해를 갖지 않음을 증명했고, $p$ 가 정칙인 것이 $p$ 가 [Bernoulli 수](bernoulli-numbers.md) $B_2,B_4,\dots,B\_{p-3}$ 의 분자를 하나도 나누지 않는 것과 동치임을 보였다.[^1] 가장 작은 비정칙 소수는 $37$ 이고 $B\_{32}$ 의 분자를 나눈다. 류군의 $p$ 부분을 Galois 군의 지표로 가른 고유공간 가운데 어느 것이 $0$ 이 아닌지는 [Herbrand–Ribet 정리](herbrand-ribet.md)가 Bernoulli 수의 합동으로 정한다.
 
 # 활용
 
