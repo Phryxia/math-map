@@ -144,6 +144,7 @@ $$
 
 ## 더 알아보기
 
+- [Paris–Harrington 정리](paris-harrington.md)
 - [형식주의와 Hilbert 프로그램](formalism-hilbert-program.md)
 
 #logic #foundations #theorem
