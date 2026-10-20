@@ -120,7 +120,7 @@ $K=\mathbb Q(\zeta_m)$ 에서 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ �
 
 ## 류수 공식
 
-Dedekind zeta 함수 $\zeta_K(s)=\sum_{\mathfrak a}N(\mathfrak a)^{-s}$ 의 $s=1$ 에서의 유수(residue)가 다음과 같다.
+[Dedekind zeta 함수](dedekind-zeta.md) $\zeta_K(s)=\sum_{\mathfrak a}N(\mathfrak a)^{-s}$ 의 $s=1$ 에서의 유수(residue)가 다음과 같다.
 
 $$
 \lim_{s\to1}(s-1)\zeta_K(s)=\frac{2^{r_1}(2\pi)^{r_2}h_KR_K}{w_K\sqrt{|d_K|}}
@@ -188,6 +188,7 @@ Ring-LWE(learning with errors) 가 쓰는 $\mathbb Z[x]/(x^n+1)$ 은 $\mathbb Z[
 - [분기군](ramification-groups.md)
 - [아델](adeles.md)
 - [유체론](class-field-theory.md)
+- [Dedekind zeta 함수](dedekind-zeta.md)
 
 ### 허이차체
 

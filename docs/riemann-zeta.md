@@ -145,5 +145,6 @@ Montgomery 와 Dyson 은 임계선 위 영점의 간격 분포가 Gauss 유니�
 
 - [Eisenstein 급수](eisenstein-series.md)
 - [Tate 의 zeta 적분](tate-zeta-integral.md)
+- [Dedekind zeta 함수](dedekind-zeta.md)
 
 #number_theory #complex_analysis #analysis

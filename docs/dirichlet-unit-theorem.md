@@ -64,7 +64,7 @@ $$
 
 ## 류수 공식과의 관계
 
-Dedekind zeta 함수 $\zeta_K(s)$ 의 $s=1$ 에서의 유수가 다음과 같다.
+[Dedekind zeta 함수](dedekind-zeta.md) $\zeta_K(s)$ 의 $s=1$ 에서의 유수가 다음과 같다.
 
 $$
 \mathop{\mathrm{Res}}\_{s=1}\zeta_K(s)=\frac{2^{r_1}(2\pi)^{r_2}h_KR_K}{w_K\sqrt{\lvert d_K\rvert}}
