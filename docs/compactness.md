@@ -95,5 +95,6 @@ $$
 - [분리공리](separation-axioms.md)
 - [균등연속](uniform-continuity.md)
 - [곡면의 분류](classification-of-surfaces.md)
+- [콤팩트 작용소](compact-operators.md)
 
 #topology #analysis

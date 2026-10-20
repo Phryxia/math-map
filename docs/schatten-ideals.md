@@ -105,7 +105,7 @@ $1\lt p\lt\infty$ 에서 $\mathcal S_p$ 의 [쌍대 공간](dual-space.md)은 $\
 
 ## 선수지식
 
-- [유계 작용소](bounded-operators.md)
+- [콤팩트 작용소](compact-operators.md)
 - [특이값 분해](singular-value-decomposition.md)
 
 ## 더 알아보기
