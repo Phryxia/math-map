@@ -2,7 +2,7 @@
 
 # 개요
 
-Cantor 는 실수 집합이 자연수 집합보다 크다는 것을 보인 뒤 그 사이에 다른 크기가 있는지 물었다. 없다는 주장이 **연속체 가설(continuum hypothesis, CH)** 이다.
+**연속체 가설(continuum hypothesis, CH)** 은 자연수 집합보다 크고 실수 집합보다 작은 집합이 없다는 주장이다. Cantor 가 실수 집합이 자연수 집합보다 크다는 것을 보인 뒤 이 질문을 제기했다.
 
 이 질문은 Hilbert 가 1900년에 제시한 23개 문제 중 첫 번째였다. Gödel 은 1938년에 CH 를 반증할 수 없음을 보였고, Cohen 은 1963년에 증명할 수도 없음을 보였다. [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)는 CH 에 대해 아무 말도 하지 않는다.
 
