@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-19T20:59:41.383Z",
-  "nextSeq": 2259,
+  "savedAt": "2026-10-20T01:02:02.844Z",
+  "nextSeq": 2269,
   "items": [
     {
       "id": "9bab7237",
@@ -250,6 +250,14 @@
       "note": "72차(2026-10-19)에 끝말 제거 필터를 붙인 검사가 내놓은 여섯 후보를 모두 확인했다. 오탐 셋. Cramer 공식(5 회)은 determinants 가 70 번째 줄에서 공식을 적고 유도까지 하므로 새 문서 자리가 아니다. Foster 정리(4 회)는 effective-resistance 가 108 번째 줄에서 신장트리 간선 수로 증명한다. Institute 공식(4 회)은 각주의 Clay Mathematics Institute 공식 문제 설명이 걸린 것이고 grep 패턴 자체의 결함이다. 대문자로 시작하는 두 단어를 사람 이름으로 보는 패턴이므로 기관명이 걸린다. 참 빈자리 둘은 De Morgan 법칙과 Freedman 정리이고 각각 따로 항목을 세웠다. Goldbach 추측은 이 회차에 문서를 썼다.",
       "createdAt": "2026-10-19T17:02:18.798Z",
       "seq": 2250
+    },
+    {
+      "id": "39b2f919",
+      "title": "73차 문서 없는 이름 후보 열셋의 판정",
+      "priority": 90,
+      "note": "73차(2026-10-20)에 9절 문서 없는 이름 검사를 끝말 제거 필터와 헤딩 필터를 함께 붙여 전수로 돌렸다(코드블록 제외, 제목 부분문자열 제외). 3 회 이상 후보 열셋 가운데 참 빈자리는 Faltings 정리와 Paris–Harrington 정리 둘뿐이고 이 회차에 둘 다 문서를 썼다. 나머지 열한 건의 판정은 다음과 같다. Cramer 공식, Foster 정리, Institute 공식은 항목 f201c682 가 72차에 이미 오탐으로 판정했다. MP 법칙은 marchenko-pastur 문서가 있고 약어라 걸린 것이다. Albert-Brauer-Hasse-Noether 정리는 brauer-groups 84 줄이 진술과 각주를 달고 hasse-principle 50 줄도 진술한다. Peirce 법칙은 curry-howard 80 줄과 intuitionism 62 줄이 식까지 적는다. Kirchhoff 법칙은 graph-laplacian 이 15 줄과 115 줄에서 설명하고 전기 회로의 법칙 자체는 이 저장소의 주제가 아니다. Siegel-Walfisz 정리는 dirichlet-l-functions 118 줄이 범위와 비유효성까지 적는다. Wilks 정리는 hypothesis-testing 101 줄이 점근분포를 적는다. Fan-Glicksberg 정리는 kakutani-fixed-point 47 줄이 한 절로 다루고 54 줄이 활용을 든다. Rasiowa-Sikorski 보조정리는 forcing 82 줄과 martins-axiom 45 줄이 정리로 진술한다. 이 열한 건은 다음 회차가 다시 조사하지 않는다. 검사 스크립트는 메모 d0f6bdd6 과 a50afa3f 이 요구한 두 필터를 모두 붙인 것이고 스크래치패드에 node 로 만들었다.",
+      "createdAt": "2026-10-20T00:59:49.782Z",
+      "seq": 2268
     },
     {
       "id": "f9d8e8af",
@@ -2244,6 +2252,38 @@
       "seq": 2249
     },
     {
+      "id": "3af9353f",
+      "title": "faltings-theorem 의 후속 간선",
+      "priority": 11,
+      "note": "73차(2026-10-20)에 faltings-theorem(Faltings 정리, 122줄)을 썼다. 9절 문서 없는 이름 검사가 Faltings 정리를 3 회로 내놓았고 참 빈자리였다. 부모 셋은 abelian-varieties, jacobian-variety, canonical-height 이고 자식은 mordell-lang 하나다. number-theory-overview 의 타원곡선과 BSD 추측 갈래에서 canonical-height 아래 곁가지로 mordell-lang 앞에 넣었다. 문서 구성: 개요, 직관(타원곡선의 현과 접선 계산으로 유리점을 늘리고 5차 초타원곡선에서 같은 계산이 막히는 것, Jacobi 다양체 차원 비교), 정의(진술, Faltings 높이, Shafarevich 추측), 성질(Parshin 트릭, 동종사상 정리, 증명의 요지 세 단계, 유효성, Vojta 의 증명), 활용 넷. chabauty-method 는 자식으로 긋지 않았다. 유한성을 Faltings 가 주고 목록을 Chabauty 가 내는 보완 관계이지 특수화나 확장이 아니어서 5절 기준에 들지 않는다. 후속 후보: Shafarevich 추측을 따로 떼는 문서, Parshin 트릭의 Kodaira-Parshin 구성.",
+      "createdAt": "2026-10-20T00:45:12.455Z",
+      "seq": 2262
+    },
+    {
+      "id": "87f90080",
+      "title": "paris-harrington 의 후속 간선",
+      "priority": 11,
+      "note": "73차(2026-10-20)에 paris-harrington(Paris–Harrington 정리, 88줄)을 썼다. 9절 문서 없는 이름 검사가 3 회로 내놓았고 참 빈자리였다(godel-incompleteness 122줄, peano-axioms 69줄, ramsey-theory 133줄이 이름만 쓴다). 부모는 ramsey-theory 와 godel-incompleteness 둘이고 리프다. peano-axioms 는 godel-incompleteness 의 부모라 조상으로 들어가므로 부모에 넣지 않았다. foundations-overview 논리의 체계 갈래에서 godel-incompleteness 아래 곁가지로 넣었다. 문서 구성: 개요, 직관(R(3,3)=6 에서 상대적으로 큰 조건으로 요구를 바꾸고 칠하는 쪽이 유리해지는 것), 정의(상대적으로 큰 집합, 강화된 Ramsey 명제와 화살표 기호), 성질(König 보조정리와 무한 Ramsey 에서의 유도, 독립성의 두 증명, 유한 Ramsey 와의 차이), 활용 셋. 후속 후보: Goodstein 정리, 빠르게 자라는 계층.",
+      "createdAt": "2026-10-20T00:50:19.310Z",
+      "seq": 2263
+    },
+    {
+      "id": "90646944",
+      "title": "goodstein-theorem 의 후속 간선",
+      "priority": 11,
+      "note": "73차(2026-10-20)에 goodstein-theorem(Goodstein 정리, 74줄)을 썼다. 부모는 peano-axioms 와 ordinals 둘이고 리프다. ordinals 의 더 알아보기에 이미 묶음 둘(기수와 우주, 초한 계층)이 있어 세 번째 묶음 \"산술의 증명 강도\" 를 만들어 넣었다. 지금 항목이 하나뿐이고 빠르게 자라는 계층 문서가 생기면 그리로 들어간다. foundations-overview 집합론의 공리계 갈래에서 ordinals 아래 곁가지로 넣었다. 논리의 체계 갈래가 주제에 더 맞지만 조상 ordinals 가 집합론의 공리계 갈래에 있어 갈래 순서 검사에 걸리므로 그리로 두었다. paris-harrington 과는 간선을 긋지 않았다. 둘 다 PA 독립 예이지만 한쪽이 다른 쪽의 특수화나 확장이 아니어서 5절 기준에 들지 않는다.",
+      "createdAt": "2026-10-20T00:54:39.794Z",
+      "seq": 2266
+    },
+    {
+      "id": "3b1d06e4",
+      "title": "fast-growing-hierarchy 의 후속 간선",
+      "priority": 11,
+      "note": "73차(2026-10-20)에 fast-growing-hierarchy(빠르게 자라는 계층, 92줄)를 썼다. 부모는 ordinals 와 computability 둘이고 리프다. ordinals 의 산술의 증명 강도 묶음에 goodstein-theorem 다음으로, computability 의 결정 불가능성과 논리 묶음에 reverse-mathematics 다음으로 넣었다. foundations-overview 집합론의 공리계 갈래에서 goodstein-theorem 다음 곁가지다. 문서 구성: 개요, 직관(되풀이로 번호를 올리고 대각선으로 omega 에 이르는 것), 정의(기본열, 계층, 작은 번호의 값), 성질(순서, Wainer 정리, 기본열 의존성), 활용 셋. goodstein-theorem 과 paris-harrington 을 자식으로 긋지 않았다. 둘은 이 계층을 쓰지 않고도 진술되며 5절의 심화나 has 관계가 아니다. 후속 후보: Hardy 계층, 증명론적 서수를 따로 떼는 문서, Hydra 게임.",
+      "createdAt": "2026-10-20T00:59:04.316Z",
+      "seq": 2267
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -3394,6 +3434,30 @@
       "note": "73차(2026-10-19)에 herbrand-theorem(Herbrand 정리, 80줄)을 썼다. 큐 e88d9443 의 후보 (1) 처리 결과다. 부모는 prenex-normal-form 하나이고 리프다. resolution 의 반박 완전성 절에서 본문 링크로 잇고 간선은 긋지 않았다. resolution 의 부모를 herbrand-theorem 으로 바꾸면 prenex-normal-form 이 조상으로 중복되고 개관 갈래와 지도도 함께 고쳐야 하므로 그대로 두었다. 문서 구성: 개요, 직관(정의역에 제한이 없어 모든 구조를 볼 수 없는 자리, forall x P(x) 와 not P(c) 를 상수 대입으로 끝내는 계산, 정의역을 항으로 두는 수), 정의(Herbrand 전체와 기저, Herbrand 해석, 기본 사례), 성질(동치 셋과 증명 요지, 콤팩트성을 쓴 반박 판본, 반쯤 결정 가능성, Skolem 표준형과의 결합), 활용 넷. 후속 후보 셋. (1) 단일화(unification). resolution 의 정의 절 한 소절이고 Robinson 알고리즘, 가장 일반적인 단일화자의 유일성, 선형 시간 판본을 쓸 자리가 있다. 부모는 resolution 이다. (2) 명제 논리의 콤팩트성 정리. 이 문서의 반박 판본이 쓰고 저장소에 제목이 없다. first-order-logic 과 ultraproducts 가 1차 논리 판본을 다루므로 중복을 먼저 본다. (3) 완전성 정리의 Henkin 구성. 활용 절 셋째 항목이 이름 없이 서술만 하고 first-order-logic 이 건전성과 완전성을 한 절로 다룬다.",
       "createdAt": "2026-10-19T20:59:27.463Z",
       "seq": 2258
+    },
+    {
+      "id": "85f5daac",
+      "title": "Néron 모델",
+      "priority": 10,
+      "note": "정수론. 수체 위 아벨 다양체의 O_K 위 매끄러운 군스킴 모델. 73차에 쓴 faltings-theorem 이 Faltings 높이를 정의하며 링크 없이 이름만 쓴다. canonical-height 와 elliptic-curves 도 환원을 다루므로 부모 후보는 elliptic-curves 와 abelian-varieties 다.",
+      "createdAt": "2026-10-20T00:45:12.101Z",
+      "seq": 2259
+    },
+    {
+      "id": "12788e4d",
+      "title": "Riemann–Hurwitz 공식",
+      "priority": 10,
+      "note": "복소해석/대수기하. 곡선 사이 유한 사상의 종수와 분기 지수를 잇는 공식. faltings-theorem 의 Parshin 트릭 절이 링크 없이 이름만 쓴다. riemann-surfaces 와 algebraic-curves 쪽이 부모 후보.",
+      "createdAt": "2026-10-20T00:45:12.217Z",
+      "seq": 2260
+    },
+    {
+      "id": "bf3200f1",
+      "title": "Arakelov 기하",
+      "priority": 10,
+      "note": "정수론. 산술 곡면에 무한 자리의 계량을 더해 교차이론을 세우는 틀. Arakelov 차수가 faltings-theorem 의 Faltings 높이 정의에 쓰이는데 저장소에 문서가 없다. 부모 후보는 algebraic-number-fields 와 canonical-height.",
+      "createdAt": "2026-10-20T00:45:12.336Z",
+      "seq": 2261
     },
     {
       "id": "dfb3e493",
