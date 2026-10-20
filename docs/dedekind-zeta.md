@@ -76,7 +76,7 @@ $$
 
 - [대수적 수체](algebraic-number-fields.md): 류수 공식으로 류수를 $\zeta_K$ 의 유수나 $L$ 값으로 계산한다.
 - [Dirichlet 단수 정리](dirichlet-unit-theorem.md): 조절자가 류수 공식의 유수에 들어가므로 단원군의 크기와 류군의 크기가 하나의 해석적 양으로 묶인다.
-- [Chebotarev 밀도 정리](chebotarev.md): 확대체와 중간체의 Dedekind zeta 함수의 비가 Artin L 함수(Artin L-function)의 곱이고, 그 $s=1$ 근방의 거동으로 Frobenius 의 밀도를 구한다.
+- [Chebotarev 밀도 정리](chebotarev.md): 확대체와 중간체의 Dedekind zeta 함수의 비가 [Artin L 함수](artin-l-functions.md)의 곱이고, 그 $s=1$ 근방의 거동으로 Frobenius 의 밀도를 구한다.
 - [류수 1 문제](class-number-one.md): 허이차체의 류수 공식 $h=w\sqrt{\vert d\vert}\thinspace L(1,\chi_d)/(2\pi)$ 가 문제를 $L(1,\chi_d)$ 의 하한 문제로 바꾼다.
 
 [^1]: J. Neukirch, *Algebraic Number Theory*, Grundlehren 322, Springer, 1999, 7장 5절.
@@ -91,6 +91,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Artin L 함수](artin-l-functions.md)
 
 #number_theory #complex_analysis #algebra

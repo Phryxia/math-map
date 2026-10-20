@@ -218,6 +218,7 @@ $$
 
 - [구면조화함수](spherical-harmonics.md)
 - [Dirichlet L 함수](dirichlet-l-functions.md)
+- [Artin L 함수](artin-l-functions.md)
 - [Langlands 강령](langlands-program.md)
 
 #group_theory #linear_algebra

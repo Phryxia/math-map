@@ -102,7 +102,7 @@ Khare–Wintenberger 의 증명은 세 부품을 귀납으로 엮는다.
 ## 따름정리
 
 - **Fermat 의 마지막 정리.** Frey 곡선의 mod $p$ 표현이 레벨 $2$ 무게 $2$ 에서 모듈러여야 하는데 그 공간이 $0$ 이다. Serre 추측의 강한 형태만으로 모순이 나온다. 역사적으로는 Ribet 의 레벨 낮추기와 Wiles 의 모듈러성 정리로 따로 증명되었지만, 더 짧은 논리적 경로는 Serre 추측을 거친다.
-- **홀수 2 차원 Artin 추측.** 상이 유한한 홀수 기약 표현 $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\mathbb C)$ 의 Artin $L$ 함수가 정칙이라는 주장. Serre 추측에서 $k(\bar\rho)=1$ 인 경우에 해당하고, 무게 $1$ 형식에서 모듈러성이 나오면 정칙성이 따라온다. 이 방향이 Khare–Wintenberger 이후 정리가 되었다.
+- **홀수 2 차원 Artin 추측.** 상이 유한한 홀수 기약 표현 $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\mathbb C)$ 의 [Artin L 함수](artin-l-functions.md)가 정칙이라는 주장. Serre 추측에서 $k(\bar\rho)=1$ 인 경우에 해당하고, 무게 $1$ 형식에서 모듈러성이 나오면 정칙성이 따라온다. 이 방향이 Khare–Wintenberger 이후 정리가 되었다.
 - **[Fontaine–Mazur 추측](fontaine-mazur.md)의 입력.** $\mathrm{GL}\_2$ 경우를 증명하는 Kisin–Emerton 논법은 잔여표현이 모듈러라는 가정에서 출발한다. Serre 추측이 그 가정을 불필요하게 만든다.
 - **계산 가능한 판정.** $\bar\rho$ 를 주면 $(k,N)$ 을 계산하고 유한 차원 공간에서 대각합을 맞춰 보면 된다. [모듈러 기호](modular-symbols.md)로 그 공간을 다루므로 절차 전체가 컴퓨터에서 돈다.
 

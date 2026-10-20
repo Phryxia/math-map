@@ -118,6 +118,7 @@ graph TD
 - [Dirichlet L 함수](dirichlet-l-functions.md): 지표로 꼰 급수와 등차수열의 소수 정리
   - [Chebotarev 밀도 정리](chebotarev.md): Galois 확대에서 Frobenius 켤레류가 균등하게 분포한다는 정리
   - [Dedekind zeta 함수](dedekind-zeta.md): 아이디얼 노름에 대한 zeta 함수의 함수방정식, 류수·조절자·판별식으로 적히는 s=1 의 유수
+  - [Artin L 함수](artin-l-functions.md): Galois 표현의 Frobenius 특성다항식으로 만든 L 함수, Brauer 유도 정리와 Artin 추측
   - [Tate 의 zeta 적분](tate-zeta-integral.md): 아델 위의 적분 하나로 Hecke L 함수의 함수방정식을 얻는 방법
   - [Gauss 합](gauss-sums.md): 가법 지표와 곱셈 지표의 합, 절댓값과 부호의 결정
   - [Stickelberger 원소](stickelberger.md): Gauss 합의 소인수분해가 주는 류군의 소멸자

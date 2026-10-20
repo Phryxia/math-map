@@ -107,5 +107,6 @@ $$
 ## 더 알아보기
 
 - [국소 유체론](local-class-field-theory.md)
+- [Artin L 함수](artin-l-functions.md)
 
 #number_theory #field_theory #group_theory
