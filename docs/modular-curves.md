@@ -2,7 +2,7 @@
 
 # 개요
 
-[모듈러 형식](modular-forms.md)은 상반평면 $\mathbb H$ 위의 함수이지만 변환 규칙 때문에 몫공간 $\Gamma\backslash\mathbb H$ 위의 대상이다. 이 몫이 **모듈러 곡선**이고 첨점을 채워 콤팩트화하면 $X_0(N)$ 이다.
+모듈러 곡선(modular curve)은 상반평면 $\mathbb H$ 를 합동부분군 $\Gamma$ 로 나눈 몫에 첨점을 채운 곡선이다. [모듈러 형식](modular-forms.md)은 상반평면 $\mathbb H$ 위의 함수이지만 변환 규칙 때문에 몫공간 $\Gamma\backslash\mathbb H$ 위의 대상이다. 이 몫이 **모듈러 곡선**이고 첨점을 채워 콤팩트화하면 $X_0(N)$ 이다.
 
 이 곡선은 해석적으로 [Riemann 곡면](riemann-surfaces.md)이고 대수적으로 $\mathbb Q$ 위에서 정의된 대수곡선이며, 모듈라이 해석을 갖는다. $X_0(N)$ 의 점이 [타원곡선](elliptic-curves.md)과 그 위의 위수 $N$ 순환 부분군의 쌍을 분류한다.
 

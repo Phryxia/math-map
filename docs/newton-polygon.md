@@ -2,7 +2,7 @@
 
 # 개요
 
-[p 진수](p-adic-numbers.md)에서 [Hensel 보조정리](hensel-lemma.md)는 근사해 $a$ 와 $f'(a)$ 가 단위라는 가설을 요구하고, $\mathbb Z_p$ 안에 근이 있는지만 답한다.
+Newton 다각형(Newton polygon)은 다항식 계수의 $p$ 진 값매김으로 찍은 점들의 아래쪽 볼록 껍질이고, 그 변의 기울기가 근의 $p$ 진 값매김을 준다. [p 진수](p-adic-numbers.md)에서 [Hensel 보조정리](hensel-lemma.md)는 근사해 $a$ 와 $f'(a)$ 가 단위라는 가설을 요구하고, $\mathbb Z_p$ 안에 근이 있는지만 답한다.
 
 Newton 다각형은 근을 하나도 구하지 않고 계수의 부치만으로 대수적 폐포 위 모든 근의 부치를 준다.
 
