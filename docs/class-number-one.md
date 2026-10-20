@@ -30,7 +30,7 @@ $$
 
 제곱인자 없는 $d\gt 0$ 에 대해 $K=\mathbb Q(\sqrt{-d})$ 의 판별식은 $-d\equiv1\pmod 4$ 이면 $D=-d$, 아니면 $D=-4d$ 다. 정수환 $\mathcal O_K$ 의 이데알 류군의 위수를 **류수** $h(D)$ 라 한다.
 
-$h(D)$ 는 판별식 $D$ 의 원시 양정부호 이진 [이차형식](quadratic-forms.md)의 동치류 개수와 같다. 소인수분해의 유일성, 곧 $\mathcal O_K$ 가 주 아이디얼 정역인 것은 $h(D)=1$ 과 동치다.
+$h(D)$ 는 판별식 $D$ 의 원시 양정부호 [이진 이차형식](binary-quadratic-forms.md)의 동치류 개수와 같다. 소인수분해의 유일성, 곧 $\mathcal O_K$ 가 주 아이디얼 정역인 것은 $h(D)=1$ 과 동치다.
 
 ## 류수 1 문제
 
@@ -118,6 +118,7 @@ $h(D)=1$ 인 판별식에서 $j$ 의 값은 다음과 같다.
 ## 선수지식
 
 - [대수적 수체](algebraic-number-fields.md)
+- [이진 이차형식](binary-quadratic-forms.md)
 - [Baker 정리](baker-theorem.md)
 
 ## 더 알아보기

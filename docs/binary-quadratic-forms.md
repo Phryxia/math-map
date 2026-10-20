@@ -100,6 +100,6 @@ $$D=-3,-4,-7,-8,-11,-19,-43,-67,-163$$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [류수 1 문제](class-number-one.md)
 
 #number_theory #algebra #field_theory
