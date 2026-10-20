@@ -4,7 +4,7 @@
 
 **Lambda calculus** 는 Alonzo Church 가 1930년대에 도입한 계산 모형(model of computation)이다. 기본 대상은 [함수](functions.md)뿐이고, 연산은 함수를 만드는 추상(abstraction)과 함수를 인자에 적용하는 적용(application) 둘뿐이다. 숫자, 진리값, 자료구조, 재귀는 모두 함수로 부호화된다.
 
-lambda calculus 로 정의할 수 있는 함수는 Turing 기계(Turing machine)가 계산하는 함수와 같고, Kleene 의 일반 재귀함수(general recursive function)와도 같다. 세 정의가 같은 함수족을 내놓는다는 것이 Church–Turing 논제(Church–Turing thesis)의 근거다. 따라서 [계산 가능성](computability.md)의 결정 불가능성 결과가 lambda calculus 에서도 성립한다.
+lambda calculus 로 정의할 수 있는 함수는 Turing 기계(Turing machine)가 계산하는 함수와 같고, Kleene 의 [일반 재귀함수](recursive-functions.md)와도 같다. 세 정의가 같은 함수족을 내놓는다는 것이 Church–Turing 논제(Church–Turing thesis)의 근거다. 따라서 [계산 가능성](computability.md)의 결정 불가능성 결과가 lambda calculus 에서도 성립한다.
 
 lambda calculus 는 프로그래밍 언어의 의미론과 증명론에서도 쓰인다. 함수형 언어의 클로저, 고차함수, 지연 평가는 lambda calculus 에 자료형을 더한 체계로 정의된다. 항에 단순 타입을 붙이면 항이 증명에, 타입이 명제에 대응하는 [Curry–Howard 대응](curry-howard.md)이 나타난다. 이때 모든 계산이 유한 단계에서 끝나고 계산할 수 있는 함수는 줄어든다.
 
