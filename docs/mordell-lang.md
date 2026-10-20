@@ -68,6 +68,7 @@ $K$ 가 상수체 $k$ 위의 함수체라 하자. $K$ 를 표수 $0$ 인 [미분
 ## 선수지식
 
 - [아벨 다양체](abelian-varieties.md)
+- [Faltings 정리](faltings-theorem.md)
 - [Zilber 삼분법](zilber-trichotomy.md)
 
 ## 더 알아보기

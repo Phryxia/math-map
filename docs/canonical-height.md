@@ -129,6 +129,7 @@ Baker 의 방법이 타원곡선 위 정수점의 크기에 유효한 상한을 
 
 ## 더 알아보기
 
+- [Faltings 정리](faltings-theorem.md)
 - [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)
 - [p 진 높이](p-adic-height.md)
 
