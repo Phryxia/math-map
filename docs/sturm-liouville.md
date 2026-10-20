@@ -118,6 +118,7 @@ $$
 
 ## 더 알아보기
 
+- [Bessel 함수](bessel-functions.md)
 - [극한점·극한원 분류](limit-point-limit-circle.md)
 - [역산란 변환](inverse-scattering-transform.md)
 

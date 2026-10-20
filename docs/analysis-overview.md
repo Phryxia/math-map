@@ -142,6 +142,7 @@ graph TD
 - [감마 함수](gamma-function.md): 계승의 해석적 연속
 - [Laplace 방법](laplace-method.md): 지수적으로 집중된 적분의 주항
 - [정상위상법](stationary-phase.md): 진동적분의 위상이 멈추는 자리
+  - [Bessel 함수](bessel-functions.md): 원통 대칭 경계값 문제의 반지름 방향 해, 영점이 정하는 고유진동수와 가중 직교성
 - [Stokes 현상](stokes-phenomenon.md): 점근전개의 계수가 불연속으로 바뀌는 선
 - [Borel–Padé 재합산](borel-pade.md): Borel 변환의 해석적 연장을 Padé 근사로 대신하는 절차, 가짜 극점과 등각사상 재합산
 - [Resurgence 이론](resurgence.md): 섭동급수와 비섭동 효과의 연결

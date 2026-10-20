@@ -169,9 +169,15 @@ $$
 
 ## 더 알아보기
 
-- [쌍곡함수](hyperbolic-functions.md)
+### 복소평면으로의 확장
+
 - [유수 정리](residue-theorem.md)
 - [해석적 연속](analytic-continuation.md)
+
+### 급수로 정의되는 함수
+
+- [쌍곡함수](hyperbolic-functions.md)
+- [Bessel 함수](bessel-functions.md)
 - [Bernoulli 수](bernoulli-numbers.md)
 - [점근급수](asymptotic-series.md)
 
