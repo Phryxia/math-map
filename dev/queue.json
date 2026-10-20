@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-20T13:00:36.604Z",
-  "nextSeq": 2297,
+  "savedAt": "2026-10-20T17:05:49.776Z",
+  "nextSeq": 2304,
   "items": [
     {
       "id": "9bab7237",
@@ -1242,6 +1242,14 @@
       "note": "76차(2026-10-20) 산출물은 새 문서 둘(solovay-kitaev, von-neumann-algebras)과 고친 문서 다섯(anyons, lie-groups, bounded-operators, abstract-algebra-overview, functional-analysis-overview)이다. 커밋 넷: a9eacb6(solovay-kitaev 신설과 lie-groups 더 알아보기 묶음 둘로 분할), 13a047a(anyons:83 역방향 본문 링크), 04f8a7b(von-neumann-algebras 신설과 bounded-operators:155 역방향 본문 링크). 일곱 문서 전수 점검 결과 전부 0 건이다. 점검한 것: 4절 수식 검사 여섯(이스케이프, 태그로 읽히는 부등호, 링크로 읽히는 대괄호, 줄 끝 백슬래시, 이스케이프 안 된 밑줄, render-check), 제목과 헤딩의 달러, 굵게 뒤 공백, 문장형 헤딩, 금지 동사, 은유 명사, 문학 비유, 번역체 관용구, 두문자어 첫 등장, 개요 첫 문단 원어, 표 머리 셀 수식, 혼동문자(메모 b50bb0c8 의 좁힌 집합), 글자 연산자(메모 174707dc), 9절 미링크, 4.5절 개관 수록 매핑, 갈래 순서 21 개관, validate, cycles, order-check, dev 테스트 23 개. 태그 줄은 일곱 문서 모두 tail -1 로 눈으로 확인했다(메모 9bab7237). 스크립트 치환은 전부 split 방식으로 했고 git diff -U0 으로 바뀐 줄을 보았다(메모 b699c20d). 다음 회차가 이 둘을 다시 점검할 자리는 solovay-kitaev 의 더 알아보기(지금 비었다. 양자 회로 문서 11e247cf 가 생기면 그 자식 자리)와 von-neumann-algebras 의 더 알아보기(부분인자 문서 d72cb87b 가 생기면 그 자식 자리)다.",
       "createdAt": "2026-10-20T12:55:38.041Z",
       "seq": 2293
+    },
+    {
+      "id": "93096150",
+      "title": "poitou-tate 와 local-class-field-theory 의 Tate 국소 쌍대성 중복 판정",
+      "priority": 20,
+      "note": "number_theory. 85차에 galois-cohomology 성질 절에 Tate 국소 쌍대성과 Euler 지표 공식을 넣었다. poitou-tate 도 같은 진술을 쓰는지 보고, 같으면 poitou-tate 쪽을 galois-cohomology 링크로 줄인다.",
+      "createdAt": "2026-10-20T17:00:58.497Z",
+      "seq": 2302
     },
     {
       "id": "410fd79d",
@@ -2748,14 +2756,6 @@
       "seq": 1622
     },
     {
-      "id": "a904955c",
-      "title": "이진 이차형식의 유형군",
-      "priority": 10,
-      "note": "정수론. 부모는 quadratic-forms 와 algebraic-number-fields. Gauss 합성, 축약 형식, 이데알 류군과의 동형, 유형수 1 인 판별식의 목록. quadratic-forms 성질 절 한 절로만 있다.",
-      "createdAt": "2026-10-04T20:50:29.500Z",
-      "seq": 1675
-    },
-    {
       "id": "d3542cdb",
       "title": "행위자-비평자의 후속 간선",
       "priority": 10,
@@ -2796,14 +2796,6 @@
       "seq": 1721
     },
     {
-      "id": "fb9f69e2",
-      "title": "경로폭과 분지폭",
-      "priority": 10,
-      "note": "graph_theory. 이번 회차에 쓴 treewidth 가 나무 분해만 다룬다. 경로 분해(나무가 경로인 경우)와 가지 분해는 폭 불변량이 셋이 서로 상수배 안에서 묶이는 관계를 이룬다. 부모는 treewidth",
-      "createdAt": "2026-10-06T04:42:49.602Z",
-      "seq": 1759
-    },
-    {
       "id": "fbb7d6c7",
       "title": "확률 그래프 모형의 추론",
       "priority": 10,
@@ -2818,22 +2810,6 @@
       "note": "class-number-one 이 리프다. 본문에서 이름만 쓰고 링크하지 않은 개념: Weber 함수, Kronecker 지표, 힐베르트 류체(class-field-theory 가 거두는지 확인), Rabinowitz 판정, Chudnovsky 급수, Deuring-Heilbronn 현상, Siegel 영점. 후속 후보: 실이차체의 류수(Cohen-Lenstra 휴리스틱), Siegel 영점 문서(prime-number-theorem 과 dirichlet-l-functions 아래). complex-multiplication 과 heegner-points 로는 본문 링크만 걸었고 간선은 긋지 않았다. 간선을 그으려면 complex-multiplication 이 class-number-one 의 부모가 맞는지(특이값의 정수성이 선수지식인지) 먼저 판정할 것.",
       "createdAt": "2026-10-07T04:48:39.908Z",
       "seq": 1838
-    },
-    {
-      "id": "c1c68107",
-      "title": "witt-ring 의 후속 간선",
-      "priority": 10,
-      "note": "witt-ring 이 리프다. 본문에서 이름만 쓰고 링크하지 않은 개념: Hasse-Witt 불변량, Milnor K 군, Galois 코호몰로지(저장소에 galois-cohomology.md 가 없다), 수술 장애와 L 군, 형식적 실체와 실닫힌체, 순서 공간. 후속 후보: Galois 코호몰로지 문서(brauer-groups 와 poitou-tate 가 이미 쓰고 있으므로 중복 판정 먼저), Pfister 형식 전용 문서(witt-ring 의 두 절로 충분한지 8절 기준으로 판단), 실닫힌체와 Artin-Schreier 이론. quadratic-forms -> witt-ring 간선만 그었고 brauer-groups 와는 본문 링크만 걸었다.",
-      "createdAt": "2026-10-07T04:52:19.510Z",
-      "seq": 1839
-    },
-    {
-      "id": "25805f9f",
-      "title": "hilbert-theorem-90 의 후속 간선",
-      "priority": 10,
-      "note": "hilbert-theorem-90 이 리프다. 본문에서 이름만 쓰고 링크하지 않은 개념: Dedekind 의 지표 독립성, 정규기저 정리, Kummer 이론(별도 문서 후보), Galois 강하, 순환대수. 후속 후보: Kummer 이론 문서(galois-theory 와 hilbert-theorem-90 이 부모, 차수 n 순환확대와 K^*/(K^*)^n 의 대응, Kummer 쌍대성), Galois 코호몰로지 문서(brauer-groups poitou-tate group-cohomology 가 나눠 쓰고 있으므로 8절 중복 판정 먼저). brauer-groups 와는 본문 링크만 걸었다. brauer-groups 의 부모가 adeles 와 class-field-theory 둘이라 hilbert-theorem-90 을 셋째 부모로 둘지는 5절 부모 수 기준으로 판정할 것.",
-      "createdAt": "2026-10-07T05:02:08.508Z",
-      "seq": 1841
     },
     {
       "id": "6ff3c891",
@@ -3410,6 +3386,38 @@
       "note": "분야: 함수해석(#functional_analysis #topology #algebra). 붙일 부모: c-star-algebras(76차에 생겼다). 76차에 c-star-algebras 의 활용 절에서 \"사영 가군의 분류가 작용소 K 이론이다\" 라고 적고 링크할 문서가 없어 이름만 썼다. 76차 확인 결과 저장소에는 algebraic-k-theory.md 만 있고 위상 K 이론 문서는 없다(ls docs | grep -i k-theory 가 그 하나를 낸다). 그래서 중복 판정은 algebraic-k-theory 와만 하면 된다. 작용소 K 이론이 따로 설 자리는 C 스타 대수의 사영과 유니터리로 정의한 K0 과 K1, Bott 주기성, 6 항 완전열, 교차곱의 Pimsner–Voiculescu 열, Baum–Connes 추측으로 가는 경로다. 벡터다발 쪽 위상 K 이론이 먼저 필요하면 그 문서가 선행 작업이고, 그 경우 큐에 따로 넣는다. algebraic-k-theory 와 중복이 크면 문서를 만들지 않고 c-star-algebras 활용 절의 그 문장을 그 문서로 링크하는 것으로 끝낸다.",
       "createdAt": "2026-10-20T12:59:56.510Z",
       "seq": 2295
+    },
+    {
+      "id": "892f49ef",
+      "title": "witt-ring 의 후속 간선 (85차 갱신)",
+      "priority": 10,
+      "note": "algebra. 85차에 galois-cohomology 와 milnor-k-theory 를 새로 써서 witt-ring 본문의 Galois 코호몰로지와 Milnor K 군 언급을 링크했다. witt-ring 은 여전히 리프다. 남은 후보: Pfister 형식 전용 문서(witt-ring 의 두 절로 충분한지 8절 기준 판단), 형식적 실체와 실닫힌체(Artin–Schreier 의 실체 이론, 순서 공간), Hasse–Witt 불변량. Pfister 형식을 쓰면 부모는 witt-ring, milnor-k-theory 와의 본문 링크.",
+      "createdAt": "2026-10-20T16:44:51.383Z",
+      "seq": 2298
+    },
+    {
+      "id": "f0effede",
+      "title": "real-closed-fields 의 후속 간선",
+      "priority": 10,
+      "note": "field_theory/logic. 85차에 새로 썼다(부모 galois-theory, sylow-theorems, 자식 o-minimality). 후속 후보: 반대수집합과 실대수기하(Positivstellensatz, Tarski–Seidenberg 의 기하적 판본, 원통 대수 분해), Hilbert 17번 문제를 별도 문서로 나눌지(지금은 성질 절 한 절), witt-ring 의 순서 공간과 부호수.",
+      "createdAt": "2026-10-20T16:47:39.507Z",
+      "seq": 2299
+    },
+    {
+      "id": "1d4cf68b",
+      "title": "artin-l-functions 와 dedekind-zeta 의 후속 간선",
+      "priority": 10,
+      "note": "number_theory. 85차에 dedekind-zeta(부모 algebraic-number-fields, riemann-zeta)와 artin-l-functions(부모 dedekind-zeta, ramification-groups, group-representations)를 새로 썼다. artin-l-functions 가 리프다. 후속 후보: Hecke L 함수(tate-zeta-integral 의 Hecke 지표 절과 중복 판정 먼저), Brauer–Siegel 정리, Artin 근 번호와 국소 상수(Langlands–Deligne). chebotarev 의 부모에 artin-l-functions 를 둘지도 본다(본문이 Artin L 함수를 쓴다).",
+      "createdAt": "2026-10-20T17:00:58.327Z",
+      "seq": 2301
+    },
+    {
+      "id": "94c9b9f2",
+      "title": "85차 새 문서 리프 정리: milnor-k-theory, artin-l-functions, noether-normalization, cyclotomic 후속",
+      "priority": 10,
+      "note": "85차(2026-10-20)에 galois-cohomology, milnor-k-theory, real-closed-fields, quaternion-algebras, cyclotomic-fields, ramification-groups, dedekind-zeta, artin-l-functions, transcendence-degree, noether-normalization 열 개를 새로 썼다. 리프로 남은 것: milnor-k-theory(후보: 노름 잉여 동형 정리를 따로 쓸지, Pfister 형식), noether-normalization(후보: Hilbert 영점 정리 문서, 정수적 확대와 going-up), real-closed-fields 는 o-minimality 로 이어졌다. cyclotomic-fields 의 정칙 소수 절은 herbrand-ribet, stickelberger 와 본문 링크로 잇는 것을 검토한다.",
+      "createdAt": "2026-10-20T17:05:22.261Z",
+      "seq": 2303
     },
     {
       "id": "dfb3e493",
