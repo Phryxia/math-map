@@ -2,9 +2,7 @@
 
 # 개요
 
-**산술적 계층(arithmetical hierarchy)** 은 자연수 집합을 정의하는 식의 한정사 교대 횟수로 집합에 등급을 매기는 계층이다. 결정 불가능한 문제라도 난이도가 같지 않다. 정지 문제는 답이 "예" 일 때 증거를 제시할 수 있지만, 기계가 모든 입력에서 멈추는지 묻는 문제는 답이 "예" 여도 제시할 증거가 없다.
-
-**산술적 계층**은 자연수 집합을 정의하는 산술 논리식의 한정기호 교대 횟수로 집합을 분류한다. $n$ 번째 층은 [Turing 도약](turing-degrees.md)을 $n$ 번 반복한 차수에 대응한다.
+**산술적 계층(arithmetical hierarchy)** 은 자연수 집합을 정의하는 식의 한정사 교대 횟수로 집합에 등급을 매기는 계층이다. 결정 불가능한 문제라도 난이도가 같지 않다. 정지 문제는 답이 "예" 일 때 증거를 제시할 수 있지만, 기계가 모든 입력에서 멈추는지 묻는 문제는 답이 "예" 여도 제시할 증거가 없다. $n$ 번째 층은 [Turing 도약](turing-degrees.md)을 $n$ 번 반복한 차수에 대응한다.
 
 # 직관
 
@@ -26,11 +24,11 @@ $$
 
 같은 종류의 한정기호가 이어지면 쌍함수 $\langle\cdot,\cdot\rangle$ 로 하나로 합치므로 층은 교대 횟수만으로 정해진다.
 
-집합 $A\subseteq\mathbb N$ 이 $\Sigma^0_n$ 이라는 것은 $A=\lbrace x:\varphi(x)\rbrace$ 인 $\Sigma^0_n$ 논리식 $\varphi$ 가 있다는 뜻이다. $\Pi^0_n$ 도 같다. 두 쪽에 모두 속하면 $\Delta^0_n$ 이라 하고, 어떤 $n$ 에 대해 $\Sigma^0_n$ 인 집합을 **산술적 집합**이라 한다.
+집합 $A\subseteq\mathbb N$ 이 $\Sigma^0_n$ 이라는 것은 $A=\lbrace x:\varphi(x)\rbrace$ 인 $\Sigma^0_n$ 논리식 $\varphi$ 가 있다는 뜻이다. $\Pi^0_n$ 도 같다. 두 쪽에 모두 속하면 $\Delta^0_n$ 이라 하고, 어떤 $n$ 에 대해 $\Sigma^0_n$ 인 집합을 **산술적 집합(arithmetical set)** 이라 한다.
 
 ## 낮은 층의 이름
 
-$\Delta^0_1$ 은 계산 가능한 집합이고 $\Sigma^0_1$ 은 재귀적 열거 가능한 집합이다. 정지 문제 $K=\lbrace e:\Phi_e(e)\thinspace\text{가 멈춘다}\rbrace$ 가 $\Sigma^0_1$ 이고 그 여집합이 $\Pi^0_1$ 이다.
+$\Delta^0_1$ 은 계산 가능한 집합이고 $\Sigma^0_1$ 은 재귀적 열거 가능한(recursively enumerable) 집합이다. 정지 문제 $K=\lbrace e:\Phi_e(e)\thinspace\text{가 멈춘다}\rbrace$ 가 $\Sigma^0_1$ 이고 그 여집합이 $\Pi^0_1$ 이다. [재귀함수](recursive-functions.md)의 Kleene 정규형 정리로 $e\in K$ 는 $\exists y\thinspace T(e,e,y)$ 로 적히고, 원시 재귀 술어 $T$ 는 $\Delta^0_1$ 이므로 $K$ 는 $\Sigma^0_1$ 이다.
 
 ## 상대화
 
