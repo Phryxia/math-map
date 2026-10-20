@@ -2,9 +2,9 @@
 
 # 개요
 
-유한차원 반단순 [Lie 대수](lie-algebras.md)는 [근계](root-systems.md)로 분류되고, 근계는 Cartan 행렬로 결정된다. Cartan 행렬의 조건 가운데 양정부호성만 빼면 분류가 셋으로 갈라진다. 유한형, 아핀형, 부정형이다.
+**아핀 Lie 대수(affine Lie algebra)** 는 아핀형 Cartan 행렬에 대응하는 무한차원 [Lie 대수](lie-algebras.md)다. 유한차원 반단순 Lie 대수는 [근계](root-systems.md)로 분류되고, 근계는 Cartan 행렬로 결정된다. Cartan 행렬의 조건 가운데 양정부호성만 빼면 분류가 유한형, 아핀형, 부정형 셋으로 갈라진다.
 
-아핀형 Cartan 행렬에 대응하는 무한차원 Lie 대수가 **아핀 Lie 대수**다. 유한차원 대수 $\mathfrak g$ 의 루프대수에 중심원소와 미분작용소를 더한 것으로 실현된다.
+아핀 Lie 대수는 유한차원 대수 $\mathfrak g$ 의 루프대수에 중심원소와 미분작용소를 더한 것으로 실현된다.
 
 $$
 \hat{\mathfrak g}=\bigl(\mathfrak g\otimes\mathbb C\lbrack t,t^{-1}\rbrack\bigr)\oplus\mathbb CK\oplus\mathbb Cd
