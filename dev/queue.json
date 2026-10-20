@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-20T09:03:11.219Z",
-  "nextSeq": 2288,
+  "savedAt": "2026-10-20T12:55:55.025Z",
+  "nextSeq": 2294,
   "items": [
     {
       "id": "9bab7237",
@@ -146,6 +146,14 @@
       "note": "67차에 /tmp/branch-order.sh 로 number-theory-overview(링크 165 문서)를 검사했더니 2 분이 지나도 끝나지 않아 백그라운드로 밀렸다. 문서마다 node dev/graph.mjs ancestors 를 따로 띄우기 때문이다. 같은 판정을 node 한 프로세스에서 하는 스크립트를 /tmp 에 썼고 몇 초에 끝났다. 방법은 graph.mjs dump --json 으로 간선을 한 번 받아 메모된 조상 집합을 만들고, 개관의 갈래 절에서 링크를 등장 순서대로 뽑아 각 문서의 조상이 앞에 있는지 보는 것이다. 같은 문서가 여러 번 링크되면 첫 등장 위치로 센다. dev/order-check.mjs 에 개관 갈래 검사를 더하는 것이 정식 해결이고, 0절이 dev 수정을 막으므로 이 항목으로 남긴다.",
       "createdAt": "2026-10-19T08:55:04.813Z",
       "seq": 2233
+    },
+    {
+      "id": "9123c552",
+      "title": "겹이름 선확인에서 grep 의 점 하나가 en dash 를 매칭하지 못하는 사고",
+      "priority": 100,
+      "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 76차(2026-10-20)에 신규 주제 선확인으로 grep -lni \"Nielsen.Thurston\" docs/*.md 를 돌렸더니 출력이 없어 저장소에 없는 개념으로 판정했다. 그런데 mapping-class-group.md:43 에 \"## Nielsen–Thurston 분류\" 절이 있었다. 원인은 겹이름을 잇는 en dash(U+2013)가 UTF-8 에서 3 바이트인데 grep 의 점 하나가 한 바이트만 매칭한다는 것이다. 같은 회차에 grep -lni \"Solovay.Kitaev\" 도 anyons.md:83 의 \"Solovay–Kitaev 정리\" 를 놓쳤고, 두 번째 grep 에 en dash 꼴을 직접 적어 넣고서야 잡혔다. 이 함정은 9절 문서 없는 이름 검사와 메모 d0f6bdd6 의 절 확인 절차를 둘 다 무력화한다. 저장소의 겹이름 제목이 거의 모두 en dash 를 쓰므로(메모 41866606) 적용 범위가 넓다. 규칙. 겹이름을 grep 할 때 점 하나로 구분자를 대신하지 않는다. 이름 조각 하나만 쓰거나(grep -niE \"Nielsen\" docs/*.md), 구분자 자리를 문자 클래스로 쓴다(grep -niE \"Nielsen[-–—] ?Thurston\"). 절 제목 확인은 grep -nE \"^##+ .*(조각1|조각2)\" docs/*.md 처럼 조각으로 돌린다. 76차에 이 꼴로 다시 돌려 Kac–Moody(affine-lie-algebras:57), Kervaire–Milnor(exotic-spheres:51), Borel 조절자(bloch-group:73)가 모두 기존 절로 있음을 확인하고 큐 항목 다섯을 뺐다.",
+      "createdAt": "2026-10-20T12:49:40.215Z",
+      "seq": 2288
     },
     {
       "id": "c4f40bdb",
@@ -450,6 +458,14 @@
       "note": "55차(2026-10-20)에 네 문서를 새로 쓰고 나서 그 제목을 이미 본문에 적고 있던 기존 문서를 세어 보니 19 곳이었다. 4절 본문 링크 규칙은 제목이 본문에 나오면 첫 등장을 링크하라고 하는데, 새 문서가 생긴 순간 기존 문서 전부가 이 규칙을 위반한 상태가 된다. 문서를 쓴 그 회차에 함께 걸지 않으면 미링크 잔량이 문서 하나당 열 곳 넘게 쌓인다. 55차의 집계와 처리. bessel-functions 7 곳(eisenstein-series gaussian-processes kuznetsov-formula maass-forms mellin-transform petersson-formula whittaker-models), compact-operators 8 곳(bounded-operators eigenvariety fredholm-determinant leray-schauder-degree overconvergent-modular-symbols peter-weyl sobolev-spaces sturm-liouville), balanced-binary-search-trees 2 곳(dynamic-connectivity link-cut-trees), schatten-ideals 0 곳. 커밋 18407cb 에서 17 문서를 한 번에 걸고 298e782 에서 헤딩에만 있던 두 자리를 처리했다. 자동 치환에서 걸린 것 둘. (1) bounded-operators 가 굵게 안에 링크를 넣어 4절 굵게 규칙을 깼다. 기계 치환 뒤에는 굵게 grep 을 반드시 돌린다. 정의 문서가 따로 생겼으면 그 자리의 굵게를 풀고 링크만 남기는 것이 맞다. (2) schauder-fixed-point 의 헤딩은 콤팩트 작용소 였는데 본문은 비선형 콤팩트 사상을 정의한다. 선형작용소 문서로 링크할 자리가 아니어서 헤딩을 콤팩트 사상 으로 고쳤다. 헤딩에만 있는 용어는 링크 대상이 아니므로 본문과 헤딩이 같은 개념인지 먼저 본다.",
       "createdAt": "2026-10-20T09:02:59.775Z",
       "seq": 2287
+    },
+    {
+      "id": "08df02a1",
+      "title": "76차 큐 선확인: 신규 주제 후보 열 가운데 아홉이 이미 문서나 절로 있었다",
+      "priority": 50,
+      "note": "76차(2026-10-20) 결과. 뺀 항목 열. a13b8d9d(model-selection: information-criteria 와 cross-validation 과 bias-variance-decomposition 과 regularization 이 모두 있다), 3dfff8be(Alon–Boppana: expander-graphs:60 절), 33e35baf(Kleene 고정점: domain-theory:53 절), 6090d14a(Solovay–Kitaev: 이 회차에 문서로 썼다), b1f43504(Kac–Moody: affine-lie-algebras:57 절), 8f7d693e(Nielsen–Thurston: mapping-class-group:43 절), a18bfa4f(Borel 조절자: bloch-group:73 절), 0fa48047(Dehn 수술: dehn-surgery.md), c661b591(수술 이론: surgery-theory.md), 96ba0f25(Kervaire–Milnor: exotic-spheres:51 절), 8585373a(Coleman–Mazur 고윳값 곡선: eigenvariety.md 가 스펙트럼 곡선과 고유다양체 절로 다루고 Coleman 을 네 번 적는다). 남긴 항목 둘. 2de49d51(Temperley–Lieb 대수와 부분인자)은 temperley-lieb-algebras.md 가 있으나 부분인자(subfactor) 언급이 0 회이므로 부분인자 쪽이 실제 빈자리다. 50f81215(Kirby 계산법과 4 차원 손잡이 분해)는 dehn-surgery:74 가 Kirby 이동을 다루지만 4 차원 손잡이 분해는 아직 없다. 판정에 쓴 절차는 세 단계다. (1) ls docs | grep -iE 로 파일명, (2) grep -nE \"^##+ .*(이름 조각)\" docs/*.md 로 절 제목, (3) 조각이 여러 문서에 흩어져 있으면 그 문서들의 헤딩 목록을 본다. 1 단계만으로는 절로 들어간 개념을 놓치고(메모 d0f6bdd6), 겹이름을 점 하나로 grep 하면 en dash 때문에 2 단계가 통째로 빈다(메모 9123c552). 큐의 p3~p6 구간이 이 꼴의 항목으로 차 있으므로 다음 회차들도 꺼내기 전에 세 단계를 돌린다.",
+      "createdAt": "2026-10-20T12:49:58.913Z",
+      "seq": 2289
     },
     {
       "id": "08e59419",
@@ -1210,6 +1226,14 @@
       "note": "55차(2026-10-20)에 9절 문서 없는 이름 검사가 Zorn 보조정리를 20 회 언급 2 위 후보로 내놓았고 ls docs 에 해당 문서가 없었다. 그러나 axiom-of-choice 가 이미 충실히 다룬다. 41 줄에 진술과 조건 해설(상계가 P 안에 있어야 하는 이유, 공집합 사슬이 P 가 공집합이 아니라는 조건을 담당하는 것, 극대와 최대의 차이), 55 줄에 AC/WO/ZL 세 진술의 동치와 증명 요지, 98 줄에 적용 절차 6 단계(후보 집합, 부분순서, 공집합 아님, 사슬의 합집합, 극대 원소, 원하는 대상임을 보이기)가 있다. 별도 문서를 만들면 중복이므로 만들지 않는다. 메모 d0f6bdd6 이 경고한 꼴, 곧 기존 문서의 절이 이미 다루는 개념을 검사가 걸러내지 못하는 사례다. Zorn 을 언급하는 문서 13 개는 전부 선택공리로 링크하고 있어 독자가 막히는 자리도 없다.",
       "createdAt": "2026-10-20T08:46:05.499Z",
       "seq": 2280
+    },
+    {
+      "id": "75bb5555",
+      "title": "76차 회차 산출물 회귀 점검 결과",
+      "priority": 20,
+      "note": "76차(2026-10-20) 산출물은 새 문서 둘(solovay-kitaev, von-neumann-algebras)과 고친 문서 다섯(anyons, lie-groups, bounded-operators, abstract-algebra-overview, functional-analysis-overview)이다. 커밋 넷: a9eacb6(solovay-kitaev 신설과 lie-groups 더 알아보기 묶음 둘로 분할), 13a047a(anyons:83 역방향 본문 링크), 04f8a7b(von-neumann-algebras 신설과 bounded-operators:155 역방향 본문 링크). 일곱 문서 전수 점검 결과 전부 0 건이다. 점검한 것: 4절 수식 검사 여섯(이스케이프, 태그로 읽히는 부등호, 링크로 읽히는 대괄호, 줄 끝 백슬래시, 이스케이프 안 된 밑줄, render-check), 제목과 헤딩의 달러, 굵게 뒤 공백, 문장형 헤딩, 금지 동사, 은유 명사, 문학 비유, 번역체 관용구, 두문자어 첫 등장, 개요 첫 문단 원어, 표 머리 셀 수식, 혼동문자(메모 b50bb0c8 의 좁힌 집합), 글자 연산자(메모 174707dc), 9절 미링크, 4.5절 개관 수록 매핑, 갈래 순서 21 개관, validate, cycles, order-check, dev 테스트 23 개. 태그 줄은 일곱 문서 모두 tail -1 로 눈으로 확인했다(메모 9bab7237). 스크립트 치환은 전부 split 방식으로 했고 git diff -U0 으로 바뀐 줄을 보았다(메모 b699c20d). 다음 회차가 이 둘을 다시 점검할 자리는 solovay-kitaev 의 더 알아보기(지금 비었다. 양자 회로 문서 11e247cf 가 생기면 그 자식 자리)와 von-neumann-algebras 의 더 알아보기(부분인자 문서 d72cb87b 가 생기면 그 자식 자리)다.",
+      "createdAt": "2026-10-20T12:55:38.041Z",
+      "seq": 2293
     },
     {
       "id": "410fd79d",
@@ -2780,14 +2804,6 @@
       "seq": 1761
     },
     {
-      "id": "a13b8d9d",
-      "title": "model-selection 문서",
-      "priority": 10,
-      "note": "분야: 통계(#statistics #machine_learning #information_theory). 붙일 부모 후보: regularization 과 kl-divergence. 37차에 kolmogorov-complexity 활용 '최소기술길이' 절을 쓰며 링크를 걸 문서가 없어 이름만 썼다. 내용: 편향-분산 분해와 검증오차, AIC(Akaike information criterion)와 BIC(Bayesian information criterion)의 유도, 교차검증, 최소기술길이 원리와 Kolmogorov 복잡도의 계산 가능한 대체물, Bayes 인자(bayesian-inference 와의 중복 판정 필요).",
-      "createdAt": "2026-10-06T12:49:11.505Z",
-      "seq": 1798
-    },
-    {
       "id": "4dc79b76",
       "title": "class-number-one 의 후속 간선",
       "priority": 10,
@@ -3364,6 +3380,30 @@
       "seq": 2286
     },
     {
+      "id": "4574cad3",
+      "title": "C 스타 대수와 Gelfand–Naimark 정리",
+      "priority": 10,
+      "note": "분야: 함수해석(#functional_analysis #analysis #topology). 붙일 부모: bounded-operators. 76차에 von-neumann-algebras 를 쓰면서 bounded-operators:155 가 \"노름 닫힌 것이 C 스타 대수, 약작용소 위상에서 닫힌 것이 von Neumann 대수다\" 로 두 개념을 나란히 적는 것을 보았다. von Neumann 대수 쪽만 문서가 생겼고 C 스타 대수는 없다. 파일명 후보는 c-star-algebras. 제목에 달러를 쓸 수 없으므로(4절 제목 규칙) 제목은 \"C 스타 대수\" 나 \"C* 대수\" 가 아니라 별표 없는 평문으로 정한다. 내용: 노름 조건과 수반, 가환 경우의 Gelfand–Naimark 정리와 콤팩트 Hausdorff 공간과의 쌍대, 일반 Gelfand–Naimark 로 작용소 대수 표현, GNS(Gelfand–Naimark–Segal) 구성, 양의 원소와 상태, K 이론으로 가는 자리. von Neumann 대수와의 차이는 위상이고 그 차이가 사영의 양을 가른다는 점을 성질 절에 둔다.",
+      "createdAt": "2026-10-20T12:54:30.895Z",
+      "seq": 2290
+    },
+    {
+      "id": "d72cb87b",
+      "title": "부분인자와 Jones 지표",
+      "priority": 10,
+      "note": "분야: 함수해석(#functional_analysis #group_theory #topology). 붙일 부모: von-neumann-algebras(76차에 생겼다). 76차 선확인에서 temperley-lieb-algebras.md 가 있으나 부분인자(subfactor) 언급이 0 회임을 확인했다. 큐 항목 2de49d51 이 같은 자리를 가리키므로 그 항목과 겹친다. 내용: II 1 형 인자의 부분인자와 지표의 정의, 지표가 4 코사인 제곱 파이 나누기 n 꼴의 값과 4 이상 전체만 가진다는 Jones 정리, 기본 구성과 Jones 사영의 열, 그 사영이 만족하는 관계가 Temperley–Lieb 대수의 관계와 같다는 점, 거기서 Jones 다항식이 나오는 경로. von-neumann-algebras 의 활용 절이 이 내용을 세 문장으로 적어 두었으므로 문서가 생기면 그 자리를 링크로 바꾼다. 문서를 쓸 때 von-neumann-algebras 의 더 알아보기에 넣고 functional-analysis-overview 의 작용소와 스펙트럼 갈래에서 von Neumann 대수 다음 자리에 넣는다.",
+      "createdAt": "2026-10-20T12:54:47.815Z",
+      "seq": 2291
+    },
+    {
+      "id": "11e247cf",
+      "title": "양자 회로와 보편 게이트 집합",
+      "priority": 10,
+      "note": "분야: 계산(#computation #linear_algebra #group_theory). 붙일 부모 후보: solovay-kitaev(76차에 생겼다) 또는 computation 쪽 문서. 76차에 solovay-kitaev 를 쓰면서 저장소에 양자 계산 문서가 anyons 하나뿐이고 computation-overview 의 갈래에 양자 계산 자리가 없음을 확인했다. anyons 는 첫 태그가 category_theory 라 category-theory-overview 가 거둔다. 내용: 큐비트와 유니터리 회로 모형, Clifford 군과 T 게이트, 보편성의 정의와 Solovay–Kitaev 로 얻는 컴파일 길이, 측정과 BQP(bounded-error quantum polynomial time). 문서가 둘 이상 생기면 computation-overview 에 양자 계산 갈래를 세울지 판단한다. 갈래를 세우면 그 갈래의 먼저 읽을 것에 선형대수 쪽 문서를 적는다.",
+      "createdAt": "2026-10-20T12:54:47.938Z",
+      "seq": 2292
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -3644,28 +3684,12 @@
       "seq": 615
     },
     {
-      "id": "b1f43504",
-      "title": "아핀 Lie 대수와 Kac-Moody 분류",
-      "priority": 6,
-      "note": "lie-algebras 와 root-systems 아래. 일반화 Cartan 행렬, 아핀 근계와 허근, 중심확대와 미분작용소, wess-zumino-witten 이 선수로 기대는 내용",
-      "createdAt": "2026-09-15T16:48:10.985Z",
-      "seq": 288
-    },
-    {
       "id": "bb5c14a1",
       "title": "공형장론과 Virasoro 대수",
       "priority": 6,
       "note": "wess-zumino-witten 이 Sugawara 로 만들어 쓰는 구조인데 문서가 없다. 중심전하, 1 차 장, OPE, 최소모형, 모듈러 불변 분배함수",
       "createdAt": "2026-09-15T16:48:11.132Z",
       "seq": 289
-    },
-    {
-      "id": "8f7d693e",
-      "title": "사상류군과 Nielsen-Thurston 분류",
-      "priority": 6,
-      "note": "teichmuller-space 아래. Dehn 비틀림 생성, 곡선복합체, 유사 Anosov 와 팽창률, 사상원환면이 쌍곡 3 다양체가 되는 정리",
-      "createdAt": "2026-09-15T20:49:22.903Z",
-      "seq": 297
     },
     {
       "id": "314d255d",
@@ -3722,38 +3746,6 @@
       "note": "4.5절은 \"지도의 mermaid 는 실제 간선의 부분그래프여야 한다\" 고 한다. 2026-09-29 첫 회차에 개관 21 개의 mermaid 화살표를 전수로 실제 간선과 맞춰 보고 어긋난 4 건을 모두 고쳤다. 지금은 확인 가능한 화살표 387 개가 전부 실제 간선이다.\n\n고친 것 넷. (1) analysis-overview 의 \"연속함수 -> 축약사상 고정점 정리\"(커밋 e8e0b8f). 축약사상 고정점 정리의 부모는 완비성과 Lipschitz 사상이다. (2) category-theory-overview 의 \"함수 -> 범주\". 범주의 부모는 category-theory-overview, groups, partial-orders 다. (3) computation-overview 의 \"증명 -> 계산 가능성\". 계산 가능성의 부모는 cardinality 와 computation-overview 다. (4) machine-learning-overview 의 \"기계학습 개관 -> 변분 오토인코더\". 변분 오토인코더의 부모는 gradient-descent, kl-divergence, probabilistic-pca 다. 둘에서 넷까지는 커밋 f8d4d6a 다.\n\n고칠 때 걸린 함정 하나를 남긴다. mermaid 에서 노드의 라벨 정의는 그 노드가 처음 나오는 줄에 붙어 있다. 지우려는 화살표 줄에 라벨 정의가 있으면 줄을 지우는 것만으로 라벨이 사라지고, 남은 화살표가 그 노드를 키 이름(CB, CA, VAE)으로 렌더한다. 세 건에서 이 일이 났고 라벨을 남은 화살표 쪽으로 옮겨 고쳤다. 다음에 mermaid 화살표를 지울 때는 지운 뒤 그 노드의 라벨이 남아 있는지 반드시 확인할 것. 화살표를 받는 노드가 다른 화살표로 연결을 유지하는지도 함께 본다.\n\n검사기는 scratchpad/mermaid-check.mjs 다(회차마다 사라지므로 다시 짜야 한다). 문서의 첫 줄에서 제목을 읽어 제목 -> id 표를 만들고, 개관의 코드펜스 안에서 KEY[\"라벨\"] 로 노드를 모으고 한 줄의 키 순서로 인접 쌍을 내어 graph.mjs edges 의 결과와 맞춘다.\n\n검사에서 빠진 자리. 제목을 못 찾은 화살표가 75 건이다. mermaid 라벨이 제목의 축약형이기 때문이고(4.5절은 라벨을 제목과 같게 하라고 요구하지 않는다) 그 자체는 위반이 아니다. 축약 라벨의 예는 \"Selmer 군\"(selmer-tate-shafarevich), \"Lagrange 쌍대성과 KKT\"(lagrange-duality), \"확률변수와 기댓값\"(random-variables), \"Compactness\"(compactness 로 보이나 제목이 다르다), \"Riemann 곡면\"(riemann-surfaces. 제목이 \"Riemann 곡면과 균일화 정리\" 다. 이 제목은 22차 제목 좁히기의 다음 차례이므로 좁히면 이 라벨이 검사에 들어온다), \"Gauss-Bonnet\", \"Chern-Simons\", \"Reshetikhin-Turaev\", \"볼륨 추측\", \"Tracy-Widom 분포\" 다. 이 75 건을 검사에 넣으려면 축약 라벨 -> id 매핑을 검사기에 손으로 넣어야 한다. 다음에 돌리는 사람은 어긋난 화살표가 4 건보다 많을 수 있음을 염두에 둘 것. 제목 좁히기 차수가 진행되면 라벨과 제목이 맞아 자동으로 범위가 넓어진다.",
       "createdAt": "2026-09-29T01:01:50.787Z",
       "seq": 1423
-    },
-    {
-      "id": "a18bfa4f",
-      "title": "Bloch 군과 Borel 조절자",
-      "priority": 5,
-      "note": "hyperbolic-3-manifolds 와 algebraic-k-theory 아래. 이중로그 항등식, K_3(C) 와의 관계, 쌍곡 부피가 조절자 값이 되는 구조",
-      "createdAt": "2026-09-15T16:39:31.179Z",
-      "seq": 286
-    },
-    {
-      "id": "0fa48047",
-      "title": "Dehn 수술과 3 다양체 구성",
-      "priority": 5,
-      "note": "hyperbolic-3-manifolds 아래. 기울기와 채움, Lickorish-Wallace 정리, 예외 수술과 6 정리, Kirby 계산법 항목과 이어진다",
-      "createdAt": "2026-09-15T16:39:31.344Z",
-      "seq": 287
-    },
-    {
-      "id": "c661b591",
-      "title": "수술 이론과 Browder-Novikov-Sullivan-Wall",
-      "priority": 5,
-      "note": "s-cobordism 아래. 정상 불변량, 수술 장애군 L_n(Z pi), 수술 완전열, 고차원 다양체 분류의 뼈대",
-      "createdAt": "2026-09-15T16:50:41.857Z",
-      "seq": 290
-    },
-    {
-      "id": "96ba0f25",
-      "title": "이색 구면과 Kervaire-Milnor",
-      "priority": 5,
-      "note": "s-cobordism 아래. Theta_n 군, S^7 의 28 개 구조, 평행화 가능 구면과 Kervaire 불변량 1 문제",
-      "createdAt": "2026-09-15T16:50:42.003Z",
-      "seq": 291
     },
     {
       "id": "90a7dd3d",
@@ -3852,14 +3844,6 @@
       "seq": 162
     },
     {
-      "id": "8585373a",
-      "title": "Coleman-Mazur 고윳값 곡선",
-      "priority": 4,
-      "note": "sen-theory 와 p-adic-hodge-theory 아래. 과수렴 형식의 p 진 족, 기울기와 Hodge-Tate 무게의 변동, Sen 작용소가 족 위에서 해석적",
-      "createdAt": "2026-09-13T23:16:45.466Z",
-      "seq": 165
-    },
-    {
       "id": "4ef9f72d",
       "title": "Soergel 쌍가군과 Hodge 이론",
       "priority": 4,
@@ -3882,14 +3866,6 @@
       "note": "braid-groups 아래. TL_n(delta) 의 도형 기저, Jones 자취, II_1 인자의 지표가 4cos^2(pi/n) 로 양자화되는 정리",
       "createdAt": "2026-09-14T00:16:58.049Z",
       "seq": 174
-    },
-    {
-      "id": "33e35baf",
-      "title": "Kleene 고정점 정리와 영역 이론",
-      "priority": 4,
-      "note": "abstract-interpretation 아래 또는 galois-connections 아래. cpo 와 스콧 연속성, 최소 고정점의 구성적 계산, 재귀 프로그램의 표시적 의미론",
-      "createdAt": "2026-09-14T00:19:34.132Z",
-      "seq": 176
     },
     {
       "id": "794351e5",
@@ -4052,14 +4028,6 @@
       "seq": 265
     },
     {
-      "id": "6090d14a",
-      "title": "Solovay-Kitaev 정리",
-      "priority": 4,
-      "note": "anyons 아래 또는 독립. 조밀한 부분군에서 다항 길이 근사, 군 정류자 기법, 게이트 컴파일의 기본 정리",
-      "createdAt": "2026-09-15T08:57:25.579Z",
-      "seq": 266
-    },
-    {
       "id": "05e85f83",
       "title": "Kudla 강령과 산술 교차수",
       "priority": 4,
@@ -4074,14 +4042,6 @@
       "note": "beilinson-bernstein 이 쓰는 도구인데 문서가 없다. 정칙 홀로노믹 D 가군과 구성가능층의 동치, 편향 t 구조, 교차 코호몰로지",
       "createdAt": "2026-09-15T09:01:31.032Z",
       "seq": 268
-    },
-    {
-      "id": "3dfff8be",
-      "title": "Alon-Boppana 경계의 증명",
-      "priority": 4,
-      "note": "ramanujan-graphs 아래. 무한 d 정규 나무의 스펙트럼 반지름, 자취 계산으로 하한 유도, 비역행 걷기",
-      "createdAt": "2026-09-15T09:05:04.949Z",
-      "seq": 270
     },
     {
       "id": "cd345008",
