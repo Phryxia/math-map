@@ -22,7 +22,7 @@ $$
 
 이고 $p$ 가 완전분해할 조건은 $\mathrm{Frob}\_p=1$ , 곧 $p\equiv1\pmod m$ 이다. 소수의 분해라는 대수적 질문이 나머지 계산으로 번역된다.
 
-이것은 원분체만의 현상이 아니다. $K$ 의 모든 아벨 확대에서 분해법칙이 합동조건으로 서술되고, 기저체가 $\mathbb Q$ 가 아니면 법 $m$ 의 나머지 자리에 광선류군의 원소가 들어간다.
+이것은 [원분체](cyclotomic-fields.md)만의 현상이 아니다. $K$ 의 모든 아벨 확대에서 분해법칙이 합동조건으로 서술되고, 기저체가 $\mathbb Q$ 가 아니면 법 $m$ 의 나머지 자리에 광선류군의 원소가 들어간다.
 
 # 정의
 
@@ -218,6 +218,7 @@ CM(complex multiplication) 방법은 원하는 위수를 갖는 타원곡선을 
 ## 선수지식
 
 - [대수적 수체](algebraic-number-fields.md)
+- [원분체](cyclotomic-fields.md)
 - [이차 상호법칙](quadratic-reciprocity.md)
 
 ## 더 알아보기
