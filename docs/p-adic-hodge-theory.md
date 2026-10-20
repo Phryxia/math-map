@@ -18,7 +18,7 @@ $B$ 를 잘 고르면 불변식을 취하는 과정에서 $G_K$ 작용이 상쇄
 
 # 직관
 
-$\ell\ne p$ 인 표현 $\rho\colon G_K\to\mathrm{GL}\_n(\mathbb Q_\ell)$ 에서 관성군의 야생 부분 $P_K$ 는 프로-$p$ 군이므로 프로-$\ell$ 군 안의 상 $\rho(P_K)$ 가 유한하고, 표현 하나가 유한 자료로 끝난다. $\ell=p$ 에서는 그 상이 프로-$p$ 군 안의 프로-$p$ 군이라 무한히 클 수 있다. 1차원 표현을 세어 보면 연속 지표는 $G_K^{\mathrm{ab}}\cong\widehat{K^\times}\to\mathbb Z_p^\times$ 이고, 국소 [유체론](class-field-theory.md)이 주는 $K^\times\cong\pi^{\mathbb Z}\times\mathcal O_K^\times$ 에서 $\mathcal O_K^\times$ 가 $\mathbb Z_p^{[K:\mathbb Q_p]}$ 를 포함한다. 지표가 양의 차원의 족을 이루므로 표현을 유한 자료로 압축하는 길이 막힌다.
+$\ell\ne p$ 인 표현 $\rho\colon G_K\to\mathrm{GL}\_n(\mathbb Q_\ell)$ 에서 [관성군](ramification-groups.md)의 야생 부분 $P_K$ 는 프로-$p$ 군이므로 프로-$\ell$ 군 안의 상 $\rho(P_K)$ 가 유한하고, 표현 하나가 유한 자료로 끝난다. $\ell=p$ 에서는 그 상이 프로-$p$ 군 안의 프로-$p$ 군이라 무한히 클 수 있다. 1차원 표현을 세어 보면 연속 지표는 $G_K^{\mathrm{ab}}\cong\widehat{K^\times}\to\mathbb Z_p^\times$ 이고, 국소 [유체론](class-field-theory.md)이 주는 $K^\times\cong\pi^{\mathbb Z}\times\mathcal O_K^\times$ 에서 $\mathcal O_K^\times$ 가 $\mathbb Z_p^{[K:\mathbb Q_p]}$ 를 포함한다. 지표가 양의 차원의 족을 이루므로 표현을 유한 자료로 압축하는 길이 막힌다.
 
 표현을 줄이는 대신 계수를 키운다. Tate 꼬임 $\mathbb Q_p(1)$ 에서 $g\in G_K$ 는 순환지표의 값 $\chi(g)$ 로 곱하므로 $\mathbb Q_p$ 계수의 불변원소는 $0$ 뿐이고 $D_B$ 의 차원이 모자란다. $g(t)=\chi(g)\thinspace t$ 를 만족하는 가역원소 $t$ 를 계수환에 넣으면 $t^{-1}\otimes e$ 가 불변이 되어 차원이 채워진다. 주기환은 이런 $t$ 를 갖춰 정해진 꼬임을 자명하게 만드는 계수환이고, 복소 쪽에서 $\mathbb G_m$ 의 $\oint dz/z=2\pi i$ 가 놓인 자리에 $t$ 가 온다.
 

@@ -105,7 +105,7 @@ $$
 \psi_v\colon K_v^\times\longrightarrow\mathrm{Gal}(K_v^{\mathrm{ab}}/K_v)
 $$
 
-가 있어 단원군 $\mathcal O_v^\times$ 가 관성군에 대응하고 소원 $\pi$ 가 Frobenius 로 간다. 대역 사상 $\psi_K$ 는 국소 사상들의 곱으로 만들어지며, 국소 조건들의 대역적 정합성이 상호법칙의 내용이다. 국소 쪽은 Lubin–Tate 형식군으로 명시적으로 구성된다.
+가 있어 단원군 $\mathcal O_v^\times$ 가 [관성군](ramification-groups.md)에 대응하고 소원 $\pi$ 가 Frobenius 로 간다. 대역 사상 $\psi_K$ 는 국소 사상들의 곱으로 만들어지며, 국소 조건들의 대역적 정합성이 상호법칙의 내용이다. 국소 쪽은 Lubin–Tate 형식군으로 명시적으로 구성된다.
 
 # 성질
 

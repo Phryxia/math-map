@@ -181,11 +181,17 @@ Ring-LWE(learning with errors) 가 쓰는 $\mathbb Z[x]/(x^n+1)$ 은 $\mathbb Z[
 
 ## 더 알아보기
 
+### 수체의 구조
+
 - [Dirichlet 단수 정리](dirichlet-unit-theorem.md)
 - [원분체](cyclotomic-fields.md)
+- [분기군](ramification-groups.md)
+- [아델](adeles.md)
+- [유체론](class-field-theory.md)
+
+### 허이차체
+
 - [이진 이차형식](binary-quadratic-forms.md)
 - [류수 1 문제](class-number-one.md)
-- [유체론](class-field-theory.md)
-- [아델](adeles.md)
 
 #number_theory #ring_theory #field_theory

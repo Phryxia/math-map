@@ -17,7 +17,7 @@ $$
 
 # 직관
 
-국소체 $K$ 의 확대 $L/K$ 에서는 잔여체가 커지거나(비분기) 소원이 잘게 쪼개지거나(분기) 둘뿐이고, 같은 이분법이 곱군의 분해 $K^\times\cong\pi^{\mathbb Z}\times\mathcal O^\times$ 에 나타난다. 이 분해가 Galois 쪽의 분해와 맞물려 소원 $\pi$ 는 Frobenius 로, 단원군 $\mathcal O^\times$ 는 관성군으로 간다.
+국소체 $K$ 의 확대 $L/K$ 에서는 잔여체가 커지거나(비분기) 소원이 잘게 쪼개지거나(분기) 둘뿐이고, 같은 이분법이 곱군의 분해 $K^\times\cong\pi^{\mathbb Z}\times\mathcal O^\times$ 에 나타난다. 이 분해가 Galois 쪽의 분해와 맞물려 소원 $\pi$ 는 Frobenius 로, 단원군 $\mathcal O^\times$ 는 [관성군](ramification-groups.md)으로 간다.
 
 $$
 \begin{array}{ccc}
@@ -176,7 +176,7 @@ $$
 
 ## 선수지식
 
-- [p 진수](p-adic-numbers.md)
+- [분기군](ramification-groups.md)
 - [유체론](class-field-theory.md)
 
 ## 더 알아보기

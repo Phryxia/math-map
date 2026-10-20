@@ -100,7 +100,7 @@ $$
 \mathrm{loc}\_\ell(\kappa_n)\ \text{는 }\ell\mid n\text{ 에서 분기할 수 있다}
 $$
 
-$\kappa_n$ 은 $n$ 을 나누는 자리에서만 Selmer 조건을 어긴다. $D_\ell$ 이 $\ell$ 자리에서 관성군을 건드리므로 그 자리에서만 흔적이 남는다.
+$\kappa_n$ 은 $n$ 을 나누는 자리에서만 Selmer 조건을 어긴다. $D_\ell$ 이 $\ell$ 자리에서 [관성군](ramification-groups.md)을 건드리므로 그 자리에서만 흔적이 남는다.
 
 두 개의 **명시적 상호법칙**이 성립한다.
 

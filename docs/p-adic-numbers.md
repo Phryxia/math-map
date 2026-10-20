@@ -160,7 +160,7 @@ $\mathbb R$ 와 $\mathbb Q_p$ 는 $\mathbb Q$ 의 완비화로서 대등하다. 
 - [Hensel 보조정리](hensel-lemma.md)
 - [Witt 벡터](witt-vectors.md)
 - [아델](adeles.md)
-- [국소 유체론](local-class-field-theory.md)
+- [분기군](ramification-groups.md)
 - [Newton 다각형](newton-polygon.md)
 - [강체해석공간](rigid-analytic-spaces.md)
 - [이차형식](quadratic-forms.md)
