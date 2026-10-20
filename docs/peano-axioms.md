@@ -92,5 +92,6 @@ Gentzen 은 $\varepsilon_0$ 까지의 [초한귀납법](ordinals.md)을 원시�
 
 - [Gödel 불완전성 정리](godel-incompleteness.md)
 - [2차 산술](second-order-arithmetic.md)
+- [Goodstein 정리](goodstein-theorem.md)
 
 #logic #foundations #set_theory

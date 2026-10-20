@@ -178,4 +178,8 @@ $$
 - [초산술적 계층](hyperarithmetical-hierarchy.md)
 - [Borel 계층](borel-hierarchy.md)
 
+### 산술의 증명 강도
+
+- [Goodstein 정리](goodstein-theorem.md)
+
 #set_theory #logic #analysis
