@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-20T01:02:02.844Z",
-  "nextSeq": 2269,
+  "savedAt": "2026-10-20T04:57:12.616Z",
+  "nextSeq": 2280,
   "items": [
     {
       "id": "9bab7237",
@@ -260,6 +260,14 @@
       "seq": 2268
     },
     {
+      "id": "74ffc4d4",
+      "title": "74차 큐 선확인: 꺼낸 신규 주제 후보 여덟 가운데 일곱이 이미 문서로 있었다",
+      "priority": 90,
+      "note": "74차(2026-10-20) 기록. 2절 3단계의 pop 대신 list 에서 p10 항목을 골라 저장소 전수 확인을 먼저 했고, 다음 일곱 항목은 요청한 문서가 이미 있어 remove 했다. 53a5fb93 모듈라이 공간 -> moduli-space.md. aad86bc9 양자군 -> quantum-groups.md. 52e3a930 단순 집합 -> simplicial-sets.md. 087ff912 Kan 복합체 -> kan-complexes.md. b8b6de68 Leech 격자와 Conway 군 -> leech-lattice.md. 56c50227 쌍둥이 소수와 Hardy-Littlewood 추측 -> prime-gaps.md 가 허용집합, 특이급수, Hardy-Littlewood 추측 진술, 쌍둥이 소수 상수를 이미 담는다(111줄). 493a738d Perron 공식과 명시적 공식 -> dirichlet-series.md 의 Perron 공식과 절단된 Perron 공식 두 절이 오차항까지 담고, 명시 공식은 prime-number-theorem.md 의 한 절과 riemann-hypothesis.md 에 있다. 67f0e6b4 유한요소법 L2 추정 -> finite-element-method.md 에 L2 노름의 수렴률 절과 Aubin-Nitsche 논법이 이미 들어가 있다. 교훈은 b38b75e1 과 c4f40bdb 가 적은 것과 같고 규모가 더 크다. p10 구간의 신규 주제 항목은 상당 부분이 처리 뒤 remove 되지 않은 것이므로, 꺼내기 전에 ls docs grep 과 /tmp/titles.tsv 조회를 반드시 한다. 한 회차에 이 구간을 통째로 훑어 처리된 항목을 remove 하는 작업이 신규 주제보다 먼저일 수 있다.",
+      "createdAt": "2026-10-20T04:47:07.320Z",
+      "seq": 2271
+    },
+    {
       "id": "f9d8e8af",
       "title": "본문 미링크 재발 검사 (64차 전수: 실제 잔량 0, 오탐 14 건)",
       "priority": 60,
@@ -394,6 +402,30 @@
       "note": "4절 본문 링크 규칙의 개관 몫이다. 옛 항목 745aa649(55차 재집계)를 갱신한 판이다. 67차(2026-10-19)에 개관 21 개를 전수로 다시 보아 미링크 2 건을 받았고 둘 다 오탐이다. combinatorics-overview 와 number-theory-overview 의 'Grassmann 다양체' 로, 본문은 '아핀 Grassmann 다양체' 이고 이것은 grassmannian(Grassmann 다양체)과 다른 대상이므로 링크하면 틀린 안내가 된다. 55차에 고칠 것으로 적힌 둘(number-theory-overview 의 'Iwasawa 대수의 멱급수 표현' 과 'Jacobi 다양체의 계수가')은 67차 갈래 재작성 커밋 0433ffb 에서 처리했다. kubota-leopoldt-zeta 설명의 Iwasawa 대수는 조상 역전이 없어 링크로 풀었고, hida-theory 설명의 Iwasawa 대수와 chabauty-method 와 eichler-shimura 설명의 Jacobi 다양체, siegel-modular-variety 설명의 아벨 다양체는 그 문서의 선수 문서여서 링크하면 갈래 순서 검사가 걸리므로 설명 문구에서 제목 문자열을 없앴다(메모 0bb8e7fb, 85cb6359). 55차가 '링크해도 조상 역전이 없다' 고 적은 것은 재작성 전 갈래 순서를 기준으로 한 판단이었다. 전수 집계를 빠르게 하는 방법. 9절 손 검사는 개관마다 수십 초가 걸리지만, node 한 프로세스에서 제목 목록을 한 번 읽고 개관마다 본문을 검사하면 몇 초에 끝난다. 55차가 받은 18 건 가운데 16 건이 두 꼴의 오탐이었고 그 둘을 검사기에 넣으면 사라진다. (1) 본문에서 코드블록(세 겹 백틱으로 열고 닫는 구간)을 뺀다. mermaid 지도 절의 노드 라벨 열한 건이 사라진다. 라벨에 마크다운 링크를 넣으면 그래프가 깨지므로 영영 고칠 수 없는 자리다. (2) 더 긴 제목이 같은 자리를 덮으면 보고하지 않는다. '고속 Fourier 변환' 안의 'Fourier 변환', '재생 커널 Hilbert 공간' 안의 'Hilbert 공간', 'p 진 Hodge 이론' 안의 'Hodge 이론' 넷이 사라진다. 두 수를 넣은 뒤 남는 것이 위 오탐 2 건이다.",
       "createdAt": "2026-10-19T08:59:00.738Z",
       "seq": 2235
+    },
+    {
+      "id": "9fea1b52",
+      "title": "p10 구간의 처리 완료된 신규 주제 항목 전수 정리",
+      "priority": 50,
+      "note": "74차에 표본 여덟 가운데 일곱이 이미 문서로 있었다(큐의 74차 선확인 메모 참조). p10 이하 항목이 266 개이고 그 가운데 제목이 개념 이름인 신규 주제 요청이 다수다. 할 일은 그 항목마다 제목의 개념이 /tmp/titles.tsv 나 ls docs 에 있는지 보고, 있으면 remove 하고 없으면 남기는 것이다. 자동화할 수 있는 부분은 제목에서 로마자 토큰을 뽑아 ls docs 에 grep -i 하는 것까지이고, 한국어 제목은 titles.tsv 의 제목 열과 대조해야 하므로 손으로 본다. 한 회차에 다 못 하면 seq 순으로 나눠 돈다. 이 정리가 끝나면 2절 3단계의 pop 이 실제 작업을 집는다.",
+      "createdAt": "2026-10-20T04:47:07.445Z",
+      "seq": 2272
+    },
+    {
+      "id": "c8d64ca1",
+      "title": "74차 p12 이하 신규 주제 항목 정리 1회분: 16 건 remove, 반쯤 처리된 13 건 목록",
+      "priority": 50,
+      "note": "74차(2026-10-20) 2회분 작업. p12 이하에서 제목이 개념 이름인 항목 123 개를 골라 제목의 로마자 토큰과 한국어 3글자 이상 토큰으로 /tmp/titles.tsv 를 대조했다. 요청한 개념의 문서가 그대로 있는 16 건을 remove 했다. 4601e33a 가격 무정부 price-of-anarchy. e35a2da6 부분관측 Markov 결정 과정 partially-observable-mdp. 7a958c30 조건부 무작위장 conditional-random-fields. 1f852268 Martin-Lof 무작위성 martin-lof-randomness. 621c77df p 진 다중 zeta 값 p-adic-multiple-zeta-values. eeb33804 proper 강제법 proper-forcing. 5a6e0bef Riemann 사상정리 riemann-mapping-theorem. d887f1e7 information-geometry. d864eb75 trust-region. 0e8fe999 mixed-volumes. 490be5a7 de Finetti 정리 de-finetti-theorem. 3a6799e2 Bolzano-Weierstrass 정리 bolzano-weierstrass. f5aa316b Heine-Borel 정리 heine-borel. bf5c88c7 Hasse 원리 hasse-principle. 947ce369 Heegaard Floer 호몰로지 heegaard-floer-homology. f1983ec0 나무 오토마타 tree-automata 이고 courcelle-theorem 의 부모로 이미 걸려 있다. 다음 회차가 이어서 볼 것은 두 개념을 묶은 제목 가운데 한쪽만 문서가 된 13 건이다. 34f1ab7d(markov-chain-monte-carlo 있음, Metropolis-Hastings 없음), b1f43504(affine-lie-algebras 있음, Kac-Moody 분류 없음), bb5c14a1(virasoro-algebra 있음, 공형장론 없음), a18bfa4f(bloch-group 있음, Borel 조절자 없음), 0fa48047(dehn-surgery 있음, 3 다양체 구성 문서 없음), c422fd89(donaldson-invariants 와 intersection-form 둘 다 있음 - 전수 확인 필요), fb74846f(kuznetsov-formula 와 kloosterman-sums 둘 다 있음 - 전수 확인 필요), f69dfd16(hida-theory 와 eigenvariety 둘 다 있음 - 전수 확인 필요), 2de49d51(temperley-lieb-algebras 있음, 부분인자 없음), 4ef9f72d(hodge-theory 있음, Soergel 쌍가군 없음), 73e2341f(integrable-systems 있음, Arnold-Liouville 정리 절 확인 필요), a7264651(low-lying-zeros 있음, Katz-Sarnak 대칭형 절 확인 필요), 5c017ee3(wirtinger-inequality 있음, 쌍곡함수 없음). 둘 다 있는 셋은 해당 문서의 절 제목을 보고 요청 내용이 들어갔는지 확인한 뒤 remove 한다. 또 0f028766 은 Hasse 원리를 별도 문서로 만들지 않았다는 판정인데 지금 hasse-principle.md 가 있으므로 그 판정이 뒤집혔다. 그 메모도 다음 정리에서 remove 한다.",
+      "createdAt": "2026-10-20T04:48:39.719Z",
+      "seq": 2273
+    },
+    {
+      "id": "5c7fb761",
+      "title": "74차 p12 이하 정리 2회분: 요청 내용이 기존 문서의 절로 들어가 있던 8 건",
+      "priority": 50,
+      "note": "74차(2026-10-20) 3회분. 1회분이 남긴 13 건 가운데 요청 내용이 이미 기존 문서의 절로 들어가 있던 것들을 확인하고 remove 했다. 73e2341f 적분가능계와 Arnold-Liouville 정리 - integrable-systems 에 Arnold-Liouville 정리 절, 올의 Lagrangian 성질, 준주기 운동 절이 있다. a7264651 저수준 영점 통계와 Katz-Sarnak 대칭형 - low-lying-zeros 에 대칭형 커널 절과 Katz-Sarnak 추측 절이 있다. c422fd89 Donaldson 불변량과 4 다양체의 교차형식 - donaldson-invariants 에 Donaldson 불변량, 대각화 정리, 미분동형이 아닌 위상동형 짝 절이 있고 intersection-form 문서도 따로 있다. fb74846f Kuznetsov 공식과 Kloosterman 합 - kuznetsov-formula 와 kloosterman-sums 둘 다 있다. f69dfd16 Hida 족과 고유다양체 - hida-theory 와 eigenvariety 둘 다 있다. 67ab3af8 중간값 정리 - connectedness 의 연속상과 중간값 정리 절이 위상적 형태와 고전적 경우를 모두 담고 활용 절이 이분법까지 쓴다. 별도 문서는 중복이므로 만들지 않는다. 44ea5249 호몰로지 대수 문서 신설 - abelian-categories, chain-complexes, exact-sequences, derived-functors, spectral-sequences 다섯이 그 note 가 적은 내용을 나눠 담는다. 분야 전체를 거두는 문서는 4.5절의 개관의 몫이고 호몰로지 대수는 abstract-algebra-overview 의 갈래에 들어갈 자리이므로 신규 문서를 만들지 않는다. 0f028766 Hasse 원리를 별도 문서로 만들지 않은 판정 - 그 뒤 hasse-principle.md 가 생겨 판정이 뒤집혔으므로 메모를 버린다. 다음 회차가 이어볼 것은 1회분 목록의 나머지 다섯이다. 34f1ab7d(Metropolis-Hastings 가 markov-chain-monte-carlo 의 절인지 확인), b1f43504(Kac-Moody 분류), bb5c14a1(공형장론), a18bfa4f(Borel 조절자), 2de49d51(부분인자), 4ef9f72d(Soergel 쌍가군), 5c017ee3(쌍곡함수). 이 가운데 Kac-Moody, 공형장론, 부분인자, Soergel 쌍가군, 쌍곡함수는 저장소에 문서도 절도 없는지 확인한 뒤 실제 신규 주제로 남긴다.",
+      "createdAt": "2026-10-20T04:49:38.699Z",
+      "seq": 2274
     },
     {
       "id": "08e59419",
@@ -714,14 +746,6 @@
       "note": "37차 회차 판정 기록. tangent-bundle 을 새로 쓰면서 manifolds.md:51-66 의 '## 접공간' 절과 중복이 생길 수 있어 분담을 정했다. manifolds 는 derivation 구성 하나와 좌표 기저만 적고, tangent-bundle 이 세 구성(derivation, 곡선류, 좌표류)의 동일성과 다발 구조(전이함수, 2n 차원 매끄러운 구조, 미분사상, 여접다발)를 담는다. manifolds 의 접공간 절은 그대로 두었다. 두 문서를 다음에 손댈 때 manifolds 쪽을 두 문장과 링크로 줄일지 판단한다. 지금 줄이면 manifolds 를 단독으로 읽는 독자가 접공간 정의를 잃는다.",
       "createdAt": "2026-10-07T00:51:49.108Z",
       "seq": 1830
-    },
-    {
-      "id": "0f028766",
-      "title": "Hasse 원리를 별도 문서로 만들지 않은 판정",
-      "priority": 20,
-      "note": "38차 판정. circle-method 활용 절이 Hasse 원리를 이름만 쓰기에 hasse-principle.md 를 만들려다 중단했다. 이유: brauer-groups 가 성질 절에서 '원뿔곡선의 Hasse 원리'(Hasse-Minkowski 진술, Legendre 판정법), '노름 정리와의 관계'(Hasse 노름 정리와 Q(sqrt13,sqrt17) 반례), 'Brauer-Manin 장애'(X(A)^Br 정의, Colliot-Thelene-Sansuc 추측, Skorobogatov 의 예)를 이미 다루고, quadratic-forms 성질 절이 Hasse-Minkowski 를 증명 요지와 함께 다룬다. 새 문서를 세우면 세 번째 중복이 된다. 대신 circle-method 활용 절에서 brauer-groups 로 본문 링크했다. 뒤집을 조건: 국소-전역 원리가 이차형식과 Brauer 군 밖으로(예: Hasse 원리가 깨지는 삼차 곡면의 체계적 서술, 정수점의 국소-전역, 적분 Hasse 원리) 넓어져 brauer-groups 가 1000줄에 닿으면 8절대로 그때 나눈다.",
-      "createdAt": "2026-10-07T04:44:39.466Z",
-      "seq": 1837
     },
     {
       "id": "bc1a219e",
@@ -1148,6 +1172,14 @@
       "seq": 2159
     },
     {
+      "id": "cd9263ee",
+      "title": "아핀 Grassmann 다양체는 지금 새 문서로 만들지 않는다 (74차 판정)",
+      "priority": 20,
+      "note": "74차(2026-10-20) 판정. 아핀 Grassmann 다양체는 본문에서 링크 없이 10 문서에 나오지만(borel-weil-bott, casselman-shalika, combinatorics-overview, fundamental-lemma, geometric-langlands 두 자리, geometric-satake 네 자리, mv-cycles 두 자리) 새 문서를 만들지 않는다. geometric-satake(202줄)의 정의 절이 이미 Gr_G 를 함자로 정의하고(Spec R[[t]] 위의 G 다발과 Spec R((t)) 위의 자명화의 쌍), k 점이 G(F)/G(O) 인 것, GL_n 에서 O 격자 전체와 같은 것, Cartan 분해가 G(O) 궤도를 지배적 쌍대지표로 분류하는 것, 궤도의 IC 층까지 담는다. 별도 문서를 세우면 이 절과 중복이고 d0f6bdd6 이 적은 꼴이다. 또 저 10 자리는 4절 본문 링크 규칙의 위반이 아니다. 그 규칙은 다른 문서의 제목이 본문에 나오는 자리만 다루고 아핀 Grassmann 다양체는 어느 문서의 제목도 아니다. 9절 문서 없는 이름 검사가 내놓는 신규 주제 후보일 뿐이다. 다시 볼 조건은 8절의 분할 기준이다. geometric-satake 가 1000줄에 닿거나 아핀 Grassmann 다양체 쪽 서술(격자 모형, 궤도의 차원과 닫힘 순서, 고리군 구조, Schubert 세포)이 그 문서의 절반을 넘으면 affine-grassmannian 으로 떼고 geometric-satake 를 자식으로 둔다. 그때 부모 후보는 grassmannian 과 algebraic-groups 이고 check-cycle affine-grassmannian geometric-satake --allow-new 는 74차에 OK 였다.",
+      "createdAt": "2026-10-20T04:51:27.067Z",
+      "seq": 2276
+    },
+    {
       "id": "410fd79d",
       "title": "Zilber 삼분법 갈래의 후속 간선 (15차)",
       "priority": 12,
@@ -1418,14 +1450,6 @@
       "note": "2026-09-25 둘째 회차에 새 문서 셋(cw-complexes, banach-tarski, vitali-set)을 쓴 뒤 전수로 돌려 누락 0 건이다. 셋 다 주 분야 개관의 갈래에 넣었다: cw-complexes -> topology-overview '호모토피와 호몰로지', banach-tarski -> foundations-overview '집합론의 기초', vitali-set -> measure-theory-overview '측도와 가측성'. 검사법은 앞 note 그대로다(분야 태그를 개관 id 로 옮기는 bash 연상 배열을 만들고 개관이 아닌 문서마다 첫 태그를 읽어 그 개관이 링크하는지 grep). 개관이 따로 없는 주 분야 태그 셋은 수가 그대로다: complexity 5(approximation-algorithms, np-completeness, p-np, pcp-theorem, unique-games), philosophy_of_math 4, data_structures 2. 셋 다 4.5절의 10 개 기준에 못 미치고 다른 개관이 이미 거두고 있다. 앞 note 가 남긴 감시 항목(complexity 가 10 개를 넘으면 computation-overview 에서 뗄지 판정)은 아직 5 개이므로 그대로 둔다. 새 문서를 여러 개 쓴 회차 뒤에 다시 돌릴 것\n\n2026-10-05 32차 회차에 새 문서 둘(homotopy-type-theory, higher-inductive-types)을 쓴 뒤 4.5절의 매핑 검사기를 docs 627 개로 전수 실행해 누락 0 건, 매핑 없는 태그 0 건이다. 둘 다 주 태그가 foundations 이므로 foundations-overview 의 '구성적 논리' 갈래에 Curry-Howard 다음 줄로 차례로 넣었다. 개관의 지도 mermaid 에는 넣지 않았다. 그 지도의 노드가 이미 22 개여서 4.5절의 '핵심 문서 12~20개' 상한에 닿았고, 두 문서는 Curry-Howard 아래의 심화라 핵심 축이 아니다. 지도는 실제 간선의 부분그래프라는 조건만 지키면 되므로 넣지 않아도 어긋나지 않는다.",
       "createdAt": "2026-10-05T13:02:21.017Z",
       "seq": 1725
-    },
-    {
-      "id": "4f124acb",
-      "title": "finite-element-method 의 후속 간선",
-      "priority": 11,
-      "note": "33차에 finite-element-method(유한요소법, 140줄)를 lax-milgram 의 자식으로 새로 달고 리프로 남겼다. 부모는 lax-milgram 하나이고 check-cycle --allow-new 는 OK 였다. hilbert-spaces 와 sobolev-spaces 는 lax-milgram 의 조상이라 5절대로 뺐다. 태그는 #linear_algebra #analysis #functional_analysis #algorithms 이고 주 분야를 linear_algebra 로 잡아 linear-algebra-overview 의 '수치 선형대수' 갈래에 다중격자 바로 앞에 넣었다. 다중격자 영역분할법 전처리 국소Fourier해석 선완화 등 PDE 격자 문서들이 전부 그 갈래에 주 분야 linear_algebra 로 모여 있는 선례를 따랐다. 담은 것: 1차원 -u''=f 를 모자함수 기저로 풀어 삼중대각계가 나오는 직관, 삼각분할과 P_k 유한요소공간 정의, 강성행렬, 이산 가해성, Galerkin 직교성, Céa 보조정리, 형상 정칙 가정 아래 H^1 오차 O(h^k), 희소성과 조건수 h^{-2}. 자식 후보: (1) 혼합 유한요소법과 Babuska-Brezzi 조건 - 저장소에 없다. lax-milgram 의 활용 넷째와 이 문서가 함께 이름만 쓴다. 부모는 finite-element-method 와 lax-milgram 이 맞다. (2) 후처리 오차 추정자와 적응 격자 세분 - 없다. Cea 보조정리의 하한을 계산 가능한 양으로 바꾸는 자리라 이 문서의 자연스러운 자식이다. (3) 불연속 Galerkin 법 - 없다. V_h 의 연속성 가정을 버리는 변형이라 특수화가 아니라 변형이고, 부모 판정이 필요하다. (4) multigrid 를 자식으로 둘지는 판정이 필요하다. 다중격자는 강성행렬을 푸는 반복법이고 유한차분 이산화에도 쓰이므로 5절의 심화나 has 가 아니라 도구 관계로 보아 33차에는 본문 활용 절의 링크로만 두었다. 부모가 preconditioning 하나인 현 상태도 그 판정과 맞는다.",
-      "createdAt": "2026-10-05T16:42:37.699Z",
-      "seq": 1728
     },
     {
       "id": "e8225573",
@@ -2284,6 +2308,22 @@
       "seq": 2267
     },
     {
+      "id": "663d236d",
+      "title": "mixed-finite-element-method 와 a-posteriori-error-estimator 신규 두 문서의 회귀 점검 (74차)",
+      "priority": 11,
+      "note": "74차(2026-10-20)에 쓴 두 문서에 대해 돌린 검사와 결과. 수식 여섯(이스케이프 awk, 태그 부등호, 링크 대괄호, 줄끝 백슬래시, 미이스케이프 밑줄, render-check) 전부 0 건. 문장형 헤딩 grep, 제목·헤딩·링크텍스트 수식 grep, 금지 동사 grep, 은유 명사 grep, 문학 비유 grep, 굵게 grep, 금지 매크로 grep, 번역체·금지표현 grep 전부 0 건. 두문자어 grep 은 각주의 학술지명 RAIRO 와 SIAM 만 잡았고 둘 다 고유명사라 4절의 예외다. 개요 첫 문단 원어 병기 OK. 혼동문자(키릴·그리스) 좁힌 검사 0 건. 9절 미링크 손 검사는 a-posteriori-error-estimator 에서 Cauchy-Schwarz 부등식 1 건을 잡아 링크로 고쳤고 재검사 0 건. 4.5절 매핑 검사 0 건(둘 다 linear-algebra-overview 수치 선형대수 갈래의 유한요소법 곁가지). 갈래 순서 손 검사 0 건. validate, cycles, render-check, order-check, node --test 23 pass 전부 통과. README 뿌리 diff 0 건, 구조 절의 문서·간선 수를 910/1592 에서 912/1594 로 맞췄다. 다음 회차가 이 두 문서의 문체를 다시 볼 때 기준선으로 쓴다.",
+      "createdAt": "2026-10-20T04:55:20.840Z",
+      "seq": 2278
+    },
+    {
+      "id": "3c0b9430",
+      "title": "74차 저장소 전체 회귀 점검: 실제 위반 0 건, 오탐 25 건의 꼴",
+      "priority": 11,
+      "note": "74차(2026-10-20) 전수. 4절 수식·문체 grep 열 가지를 docs 전체(912 문서)에 돌린 결과다. 이스케이프 awk 0, 태그로 읽히는 부등호 0, 줄 끝 백슬래시 0, 금지 매크로 0, 제목·헤딩 수식 0, 열린 문제 절 이름 0, 범위 뭉뚱그린 문장 0, 코드블록 언어 위반 0. 보고가 나온 둘은 모두 오탐이고 기존 메모의 꼴과 같다. (1) 문장형 헤딩 grep 23 건. 22 건이 ## 증명의 요지 이고(area-formula, baker-theorem, banach-alaoglu, bolzano-weierstrass, casselman-shalika, chebotarev, deligne-weil-conjectures, faltings-theorem, finitely-generated-modules, freedman-theorem, gauss-bonnet, hartshorne-lichtenbaum, heine-borel, index-theorem, lagrange-inversion, noether-theorem, pila-wilkie-theorem, rademacher-theorem, seifert-van-kampen, spectral-sparsification, spectral-theorem, tunnell-saito) b6d57420, 4df4b0f8, 5bd27ea2 가 적은 요지 오탐이다. 남은 1 건은 potential-theory 37줄의 ## 퍼텐셜과 에너지 이고 에너지의 끝글자 지 때문에 걸린 새 오탐 꼴이다. 패턴의 [^로]지 를 좁히려면 요지 와 에너지 를 함께 빼야 한다. (2) 금지 동사 grep 2 건. hamiltonian-monte-carlo 86줄 궤적이 되돌아오기 와 wkb-approximation 148줄 파동이 되돌아오는 이다. 둘 다 물체가 실제로 되돌아오는 운동을 적은 것이고 4절이 금지하는 것은 수학적 관계를 되돌린다 로 적는 비유(정리가 공리를 되돌려 증명한다)이므로 오탐이다. f0ed53a3 의 오탐 목록에 이 두 꼴을 더한다. 다음 회차는 이 수치를 기준선으로 쓴다. 23 과 2 를 넘는 보고가 나오면 그 회차에 생긴 실제 위반이다.",
+      "createdAt": "2026-10-20T04:56:08.719Z",
+      "seq": 2279
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -2636,14 +2676,6 @@
       "seq": 1590
     },
     {
-      "id": "53a5fb93",
-      "title": "모듈라이 공간",
-      "priority": 10,
-      "note": "분야: 대수기하 또는 위상(#algebra 또는 #algebraic_topology). 양자 코호몰로지와 Gromov-Witten 불변량 문서의 선수지식인데 docs 에 없다. 부모 후보는 algebraic-varieties 와 grassmannian 이다. 담을 것: 분류 문제를 공간으로 바꾸는 구성, 대상의 족과 보편족, 안정성 조건과 콤팩트화(안정곡선, 안정 사상), M_g 와 M_{g,n}, grassmannian 과 사영공간이 가장 단순한 예라는 점. 이 문서가 생기면 Gromov-Witten 불변량과 양자 코호몰로지를 그 위에 올릴 수 있다(큐 0b983ce9 참조).",
-      "createdAt": "2026-10-03T20:47:22.115Z",
-      "seq": 1596
-    },
-    {
       "id": "652d6b1f",
       "title": "cherlin-zilber-conjecture 의 후속 간선",
       "priority": 10,
@@ -2652,36 +2684,12 @@
       "seq": 1622
     },
     {
-      "id": "73e2341f",
-      "title": "적분가능계와 Arnold-Liouville 정리",
-      "priority": 10,
-      "note": "미분기하/해석학. 부모는 symplectic-manifolds. 작용-각 좌표, 원환면 올갱이, Poisson 괄호 소멸하는 n 개 보존량. symplectic-manifolds 활용 절에서 이름만 썼다.",
-      "createdAt": "2026-10-04T20:42:50.827Z",
-      "seq": 1671
-    },
-    {
       "id": "a904955c",
       "title": "이진 이차형식의 유형군",
       "priority": 10,
       "note": "정수론. 부모는 quadratic-forms 와 algebraic-number-fields. Gauss 합성, 축약 형식, 이데알 류군과의 동형, 유형수 1 인 판별식의 목록. quadratic-forms 성질 절 한 절로만 있다.",
       "createdAt": "2026-10-04T20:50:29.500Z",
       "seq": 1675
-    },
-    {
-      "id": "aad86bc9",
-      "title": "양자군",
-      "priority": 10,
-      "note": "대수/범주론. 부모 후보는 monoidal-categories 와 lie-algebras. U_q(g) 의 Hopf 대수 구조, R 행렬, 표현 범주의 꼬임이 대칭이 아닌 점. monoidal-categories 와 modular-tensor-categories 가 이름만 쓴다.",
-      "createdAt": "2026-10-04T20:55:45.870Z",
-      "seq": 1679
-    },
-    {
-      "id": "44ea5249",
-      "title": "호몰로지 대수 문서 신설",
-      "priority": 10,
-      "note": "대수. 부모 후보는 exact-sequences 와 derived-functors. 아벨 범주, 사슬 복합체, 분해와 스펙트럼열의 자리. 30차 회차에 exact-sequences 를 쓰면서 뱀 보조정리와 사영분해를 한 절씩만 다뤘다.",
-      "createdAt": "2026-10-04T20:58:51.963Z",
-      "seq": 1680
     },
     {
       "id": "d3542cdb",
@@ -2708,22 +2716,6 @@
       "seq": 1698
     },
     {
-      "id": "56c50227",
-      "title": "쌍둥이 소수와 Hardy-Littlewood 추측 문서 신설",
-      "priority": 10,
-      "note": "분야는 number_theory. 부모 후보는 prime-gaps 와 sieve-methods. pair-correlation-conjecture 의 성질 절(Montgomery 정리의 |alpha|>=1 범위)이 이 추측의 상관 합 sum Lambda(n)Lambda(n+h) 를 링크 없이 이름만 쓰는 자리다. 내용 후보: 쌍둥이 소수 상수와 특이급수, 원 방법, 허용집합으로의 일반화(Hardy-Littlewood k 중쌍 추측), Brun 의 체로 얻는 상한, Zhang 과 Maynard 의 유계 간격 결과와의 관계.",
-      "createdAt": "2026-10-05T05:15:23.755Z",
-      "seq": 1701
-    },
-    {
-      "id": "a7264651",
-      "title": "저수준 영점 통계와 Katz-Sarnak 대칭형 문서 신설",
-      "priority": 10,
-      "note": "분야는 number_theory/probability. 부모는 pair-correlation-conjecture 와 유한체 위 곡선 쪽 문서. 쌍 상관은 유니터리 직교 심플렉틱 세 대칭형에서 같은 함수를 주고 갈리는 것은 임계점 근처의 저수준 통계라는 것이 pair-correlation-conjecture 의 성질 절 '대칭형에 둔감한 통계' 에 한 문단으로만 있다. 내용 후보: 일차 영점 밀도 함수, 시험함수의 Fourier 지지 범위와 조건부 결과, 곡선족의 monodromy 계산, 비소멸 비율 하한.",
-      "createdAt": "2026-10-05T05:15:23.881Z",
-      "seq": 1702
-    },
-    {
       "id": "a949f824",
       "title": "homotopy-type-theory 의 후속 간선",
       "priority": 10,
@@ -2738,14 +2730,6 @@
       "note": "32차 회차(2026-10-05)에 새로 썼다(higher-inductive-types, 104줄, 커밋 91ad192e). 부모는 homotopy-type-theory 하나이고 foundations-overview 의 '구성적 논리' 갈래에 호모토피 타입 이론 다음 줄로 넣었다. 태그는 #foundations #logic #algebraic_topology 다. README 를 627 과 1124 로 맞췄다.\n\n담은 것: 점 하나만 생성자로 두면 등식 타입이 전부 수축 가능해 원이 나오지 않는다는 직관, 원의 두 생성자와 재귀 원리, transport 를 쓴 귀납 원리, 매달기, 명제적 절단, 집합 몫, 사상이 점과 루프로 결정된다는 동치 (S^1 -> B) = sum_{b:B}(b=b), 매달기로 구면을 짓는 동치, 절단으로 존재 양화를 정의하는 성질, 집합 몫의 등식 타입이 관계와 동치임, 활용 넷(수 체계의 구성, 호모토피 군 계산, 논리의 층위 분리, 기하 대상의 정의).\n\n다음 차수에 볼 것 둘. (1) 이 문서가 새 리프다. 자식 후보는 Freudenthal 매달기 정리와 합성 호모토피론이다. 둘 다 주 분야를 algebraic_topology 로 둘지 foundations 로 둘지 먼저 정해야 한다. 타입 이론 안의 증명을 다루면 foundations 가 맞고 매달기 정리 자체를 다루면 topology 쪽이다. 후자면 homotopy-groups 가 부모로 더 맞고 이 문서는 두 번째 부모가 된다.\n(2) cw-complexes 와의 간선은 긋지 않았다. 활용 절 넷째가 '세포와 붙임 경로를 주면 CW 복합체에 대응하는 타입이 나온다' 로 본문 링크만 두었다. 5절 기준으로 이 문서가 CW 복합체의 심화나 부분이 아니고, cw-complexes 의 더 알아보기에서 보았을 때 안내가 되지 않는다. 반대 방향(cw-complexes 를 부모로)도 이 문서의 개요와 직관이 CW 구조를 전제하지 않으므로 기각했다.",
       "createdAt": "2026-10-05T12:56:15.272Z",
       "seq": 1721
-    },
-    {
-      "id": "67f0e6b4",
-      "title": "유한요소법 수렴률의 L^2 추정과 Aubin-Nitsche 트릭",
-      "priority": 10,
-      "note": "finite-element-method 보강 후보. 33차 문서는 H^1 노름의 O(h^k) 만 담았다. L^2 노름에서 한 차수 더 나오는 O(h^{k+1}) 추정은 쌍대 문제를 세우고 그 해의 정칙성을 쓰는 Aubin-Nitsche 논법이라 elliptic-regularity 와 dual-space 를 함께 쓴다. 성질 절의 '수렴률' 뒤에 한 절로 들어가는 것이 맞고, 별도 문서로 떼면 1000줄 기준에 한참 못 미친다. 출처는 Brenner-Scott 3판 5.4 절.",
-      "createdAt": "2026-10-05T16:42:37.835Z",
-      "seq": 1729
     },
     {
       "id": "fb9f69e2",
@@ -2764,84 +2748,12 @@
       "seq": 1761
     },
     {
-      "id": "4601e33a",
-      "title": "가격 무정부",
-      "priority": 10,
-      "note": "optimization, graph_theory. nash-equilibrium 의 '균형의 비효율' 절이 정의만 적고 혼잡 게임의 유계를 다루지 않는다. 비이기적 경로배정의 4/3 유계(Roughgarden-Tardos), 혼잡 게임의 가능함수와 순수전략 균형의 존재가 담길 자리다. 부모는 nash-equilibrium 과 network-flow 를 볼 것",
-      "createdAt": "2026-10-06T04:50:13.499Z",
-      "seq": 1764
-    },
-    {
-      "id": "493a738d",
-      "title": "Perron 공식과 명시적 공식",
-      "priority": 10,
-      "note": "number_theory, complex_analysis. 이번 회차에 쓴 dirichlet-series 가 Perron 공식을 진술만 하고 절단된 판본의 오차항과 적분선 이동의 실제 계산을 다루지 않는다. Riemann-von Mangoldt 의 명시적 공식(psi(x) 를 zeta 의 영점 합으로 적는 것)이 같은 문서에 들어갈 수 있다. 부모는 dirichlet-series 와 riemann-zeta",
-      "createdAt": "2026-10-06T04:58:30.797Z",
-      "seq": 1768
-    },
-    {
-      "id": "e35a2da6",
-      "title": "부분관측 Markov 결정 과정",
-      "priority": 10,
-      "note": "확률론/기계학습(#probability #machine_learning #computation). 36차에 hidden-markov-model 활용 셋째 항목이 '상태가 보이지 않는 제어 문제에서 사후분포가 믿음 상태가 된다' 를 적고 markov-decision-process 를 링크했으나 믿음 상태 위의 결정 문제 자체는 문서가 없다. 담을 내용은 믿음 상태의 갱신식(전향 재귀와 같은 꼴), 믿음 공간 위의 Bellman 방정식, 값함수가 믿음에 대해 조각마다 선형이고 볼록하다는 정리, 유한 지평 해법과 계산 복잡도. 부모 후보는 markov-decision-process 와 hidden-markov-model 둘이다.",
-      "createdAt": "2026-10-06T08:42:57.706Z",
-      "seq": 1778
-    },
-    {
-      "id": "7a958c30",
-      "title": "조건부 무작위장",
-      "priority": 10,
-      "note": "기계학습/확률(#machine_learning #probability #statistics). 36차에 hidden-markov-model 을 쓰며 확인한 빈자리다. 은닉 Markov 모형은 상태와 관측의 결합분포를 모형화하지만 라벨 예측에는 조건부 분포만 필요하고, 선형사슬 조건부 무작위장이 같은 격자 위에서 조건부 분포를 직접 모형화한다. 담을 내용은 지수족 꼴의 조건부 분포, 분할함수를 전향 재귀로 계산하는 것, 로그 우도가 볼록하다는 사실과 기울기가 기대 특성의 차이라는 것, 은닉 Markov 모형과의 생성 판별 대비. 부모 후보는 hidden-markov-model 과 exponential-family 류 문서다.",
-      "createdAt": "2026-10-06T08:42:57.858Z",
-      "seq": 1779
-    },
-    {
-      "id": "b8b6de68",
-      "title": "Leech 격자와 Conway 군",
-      "priority": 10,
-      "note": "대수/조합(#group_theory #combinatorics #number_theory). 36차에 golay-codes 를 분할하며 확인했다. Leech 격자는 지금 golay-codes 의 '## Leech 격자' 절(Construction B 와 최소노름)과 sphere-packing, niemeier-lattices, mathieu-groups 에 흩어져 있고 독립 문서가 없다. 담을 내용은 Construction B 의 보정 단계, 최소노름 4 와 노름 2 벡터의 부재 증명, kissing number 196560, Conway 군 Co_0 와 Co_1 의 정의, 깊은 구멍과 Niemeier 격자 23 개의 대응(Conway-Parker-Sloane), theta 급수. 부모 후보는 golay-codes 와 lattices 다. 만들면 sphere-packing 과 niemeier-lattices 의 Leech 언급을 그리로 돌린다.",
-      "createdAt": "2026-10-06T08:48:57.686Z",
-      "seq": 1781
-    },
-    {
-      "id": "1f852268",
-      "title": "Martin-Lof 무작위성",
-      "priority": 10,
-      "note": "분야: 계산(#computation #information_theory #measure_theory). 붙일 부모: kolmogorov-complexity(37차에 새로 썼다)와 pi01-classes. 큐 62cc389f 가 남긴 갈래이고 그 note 가 확인하라던 kolmogorov-complexity 는 이제 있다. 내용: 실효적 영집합과 Martin-Lof 검정, 무작위 실수, Schnorr 정리(접두사 없는 복잡도로 K(x_{1:n}) >= n-c 와 동치), Chaitin 상수 Omega, 무작위 집합의 Turing 차수. kolmogorov-complexity 활용 첫 두 절이 이 내용을 한 문단씩 요약하고 있으므로 문서를 만들면 그 절을 링크로 줄인다.",
-      "createdAt": "2026-10-06T12:49:11.402Z",
-      "seq": 1797
-    },
-    {
       "id": "a13b8d9d",
       "title": "model-selection 문서",
       "priority": 10,
       "note": "분야: 통계(#statistics #machine_learning #information_theory). 붙일 부모 후보: regularization 과 kl-divergence. 37차에 kolmogorov-complexity 활용 '최소기술길이' 절을 쓰며 링크를 걸 문서가 없어 이름만 썼다. 내용: 편향-분산 분해와 검증오차, AIC(Akaike information criterion)와 BIC(Bayesian information criterion)의 유도, 교차검증, 최소기술길이 원리와 Kolmogorov 복잡도의 계산 가능한 대체물, Bayes 인자(bayesian-inference 와의 중복 판정 필요).",
       "createdAt": "2026-10-06T12:49:11.505Z",
       "seq": 1798
-    },
-    {
-      "id": "621c77df",
-      "title": "p 진 다중 zeta 값",
-      "priority": 10,
-      "note": "정수론. 신규 주제. multiple-zeta-values 가 생겼으므로 이제 부모가 둘 선다. coleman-integration(활용 절 넷째 항목이 이 값을 언급한다)과 multiple-zeta-values 다. 쓸 내용: 사영직선에서 0,1,infinity 를 뺀 공간 위의 Coleman 반복 적분, 복소수 쪽 단어 표현과의 대응, Frobenius 불변 경로와 p 진 다중 로그, 복소수 쪽 이중 셔플 관계가 p 진 쪽에서도 성립하는 범위. 간선 추가 전 check-cycle 로 coleman-integration 과 multiple-zeta-values 가 서로 조상이 아닌지 확인할 것",
-      "createdAt": "2026-10-06T16:50:11.058Z",
-      "seq": 1810
-    },
-    {
-      "id": "eeb33804",
-      "title": "proper 강제법 문서",
-      "priority": 10,
-      "note": "집합론. 신규 주제. iterated-forcing(37차)이 properness 를 이름만 쓰고 정의하지 않았다. 쓸 내용: 가산 기본 모형 M 에 대한 (M,P) 일반 조건, proper 가 ccc 와 적정 닫힘을 함께 포함하는 것, 정상집합 보존과의 동치, Laver 와 Mathias 순서가 proper 인 예. 부모는 iterated-forcing 과 forcing 가운데 하나. 간선 추가 전 borel-conjecture 와의 조상관계를 check-cycle 로 확인할 것",
-      "createdAt": "2026-10-06T16:55:35.235Z",
-      "seq": 1812
-    },
-    {
-      "id": "5a6e0bef",
-      "title": "Riemann 사상정리 문서 신설 판단",
-      "priority": 10,
-      "note": "복소해석. 37차에 hurwitz-theorem 을 쓰면서 Riemann 사상정리를 conformal-mapping.md 로 링크했다. conformal-mapping(등각사상) 49줄에 '## Riemann 사상정리' 절이 있어 현재는 그쪽이 거두고 있다. 별도 문서로 분리할지 판단이 필요하다. 분리하면 Montel 정리로 정규족을 뽑고 Hurwitz 정리로 극한의 단사성을 얻는 증명 전체가 내용이 되고 hurwitz-theorem 과 montel-theorem 의 자식이 된다. 분리하지 않으면 conformal-mapping 의 그 절을 보강하고 두 정리를 본문 링크로 잇는다. conformal-mapping 의 현재 분량과 그 절의 길이를 먼저 볼 것",
-      "createdAt": "2026-10-06T20:59:06.221Z",
-      "seq": 1821
     },
     {
       "id": "4dc79b76",
@@ -2930,22 +2842,6 @@
       "note": "2026-10-08 회차에 killing-vector-fields(Killing 벡터장)를 새로 썼다(73줄, 부모 riemannian-metrics 하나, 미분기하 개관 '계량과 곡률' 갈래). 50906bbe note 가 남긴 자식 후보 (3) 을 닫은 것이다. 담은 것: 극좌표 계량에서 각운동량이 보존되는 계산을 직관 두 문단으로 끌고 가 좌표에 의존하지 않는 조건이 필요한 자리까지 간 것, Lie 미분 조건과 Killing 방정식, 측지선을 따르는 보존량 g(X, gamma')의 두 줄 증명, Lie 대수 구조와 n(n+1)/2 상한, Noether 전하와의 일치. 리프다. 판정이 필요한 것: riemannian-metrics 의 더 알아보기에서 '### 곡률과 위상' 묶음의 측지선 뒤에 넣었는데 묶음 이름과 내용이 어긋난다. Killing 벡터장은 대칭 쪽이고 그 묶음의 나머지 둘은 Gauss-Bonnet 과 Ricci 흐름이다. 항목 하나로 '### 대칭' 묶음을 세우는 것은 과하다고 보아 두지 않았다. 등거리변환군이나 상수곡률 공간 문서가 생기면 묶음을 새로 가를 것. 자식 후보: (1) 등거리변환군 - 저장소에 없다. 이 문서와 lie-groups 가 부모 후보다. (2) 상수곡률 공간과 공간형 - 없다. curvature 와 이 문서가 부모 후보다. (3) 모멘트 사상 - 50906bbe 의 후보 (1) 과 같다.",
       "createdAt": "2026-10-08T01:01:44.007Z",
       "seq": 1886
-    },
-    {
-      "id": "52e3a930",
-      "title": "단순 집합",
-      "priority": 10,
-      "note": "39차에 infinity-categories 를 쓰며 단순 집합과 뿔을 그 문서의 정의 절에서 간략히 정의했다. 단순 집합이 독립 문서가 되면 infinity-categories 의 부모가 되고(방향: simplicial-sets -> infinity-categories), 그 정의 절을 링크로 줄일 수 있다. 분야는 위상/대수적 위상(#algebraic_topology #category_theory). 붙일 부모 후보는 functors 와 cw-complexes. 특이 호몰로지의 단체 분할과의 관계도 담을 자리다.",
-      "createdAt": "2026-10-08T12:49:02.880Z",
-      "seq": 1905
-    },
-    {
-      "id": "087ff912",
-      "title": "Kan 복합체",
-      "priority": 10,
-      "note": "39차에 infinity-categories 의 사상 공간 절에서 Kan 복합체를 정의만 하고 지나갔다. 모든 뿔의 확장을 요구하는 단순 집합이고 위상공간의 호모토피형과 대응한다(호모토피 가설). 부모는 단순 집합 문서가 생기면 그것, 없으면 infinity-categories 와 homotopy-groups. 분야 #algebraic_topology #category_theory.",
-      "createdAt": "2026-10-08T12:49:03.021Z",
-      "seq": 1906
     },
     {
       "id": "b6b5191d",
@@ -3108,14 +3004,6 @@
       "seq": 1952
     },
     {
-      "id": "f1983ec0",
-      "title": "Courcelle 정리의 남은 후속: 나무 오토마타 문서 신설",
-      "priority": 10,
-      "note": "40차(2026-10-09)에 courcelle-theorem(Courcelle 정리, 85줄)을 썼다. 부모는 treewidth 와 finite-automata, 지금은 리프다. 담은 것은 MSO 의 정의(변수 네 종류, inc 관계, 단항인 까닭)와 3-색칠 가능성 논리식, f(k,|phi|)*n 진술(Courcelle 1990 각주), 증명의 세 단계(좋은 나무 분해를 항으로, 논리식을 나무 오토마타로, 항 위에서 한 번 돌리기), 세는 문제로의 확장, 나무폭 조건의 필요성, 상수를 기본함수로 줄일 수 없다는 하한(Frick-Grohe 2004 각주)이다. treewidth 146줄의 정리 진술에 본문 링크를 걸었고 그 문서의 리프도 풀렸다. 남은 것은 나무 오토마타(tree automata) 문서다. 지금 courcelle-theorem 의 증명 절이 나무 오토마타의 곱·여집합·사영 구성을 이름만 쓰고 정의 없이 쓴다. 부모 후보는 finite-automata 와 courcelle-theorem 이고, 담을 것은 상향 결정적·비결정적 나무 오토마타의 정의, 사영이 비결정성을 낳고 결정화가 상태를 지수로 늘리는 것, Rabin 의 나무 정리와의 관계다.",
-      "createdAt": "2026-10-09T05:00:52.866Z",
-      "seq": 1953
-    },
-    {
       "id": "7f402c88",
       "title": "상관균형의 남은 후속: 곱셈 가중치 절차 문서 신설",
       "priority": 10,
@@ -3194,46 +3082,6 @@
       "note": "2026-10-09 회차에 새로 썼다(84줄, 부모 branching-processes 와 erdos-renyi-graphs, 확률 개관 '조건부 구조와 이산시간 확률과정' 갈래). 리프다. 두 부모 사이에 조상관계가 없다. 담은 것: 차수 3 나무에서 3p 가 1 을 넘는지로 가르는 직관과 격자에서 자손 독립성이 깨지는 대비, 변 침투와 점 침투, 임계 확률의 단조성을 결합으로 얻기, 나무의 p_c=1/d, Z^d 의 상전이 존재(경로 셈 하한과 쌍대 회로 상한), AKN 유일성, Kesten 의 1/2. 후속 후보. (1) 격자 스핀 모형. 활용 넷째가 Fortuin-Kasteleyn 표현과 Ising 측도를 이름만 쓴다. 저장소에 ising-model 문서가 없어 링크를 걸지 못했고 랜덤 클러스터 모형이 침투의 자식 자리다. information_theory 나 probability 가 주 분야다. (2) 교차 추정과 RSW 정리. Kesten 증명의 핵심이고 성질 절에서 두 문장으로 줄였다. (3) 임계 지수와 등각 불변성. Smirnov 의 삼각격자 결과와 SLE 로 가는 길이다. (1)이 먼저이고 ising-model 이 없는 것 자체가 확률·조합 쪽 공백이다",
       "createdAt": "2026-10-09T09:07:18.511Z",
       "seq": 1965
-    },
-    {
-      "id": "d887f1e7",
-      "title": "information-geometry 문서 신설",
-      "priority": 10,
-      "note": "통계·미분기하(#statistics #differential_geometry #information_theory). 39차에 fisher-information 을 쓰며 확인했다. 그 문서의 '## KL divergence 의 2차 근사' 절이 Fisher-Rao 계량을 한 문단으로 적고 끝낸다. 저장소에 information-geometry 가 없다. 담을 내용은 통계적 다양체, Fisher-Rao 계량이 재모수화에 불변인 Riemann 계량인 것, Chentsov 정리(충분통계량 불변성이 계량을 상수배까지 정한다), 지수접속과 혼합접속의 쌍대성, Bregman divergence 와 쌍대 좌표, 자연 경사법이 계량에 대한 경사하강인 것, 지수족이 평평한 다양체인 것이다. 부모 후보는 fisher-information 과 differential-geometry-overview 또는 riemannian-metric 류. 쓰기 전에 kl-divergence 110줄의 Bregman divergence 언급과 exponential-families 의 로그분배함수 절을 읽고 분담을 정할 것",
-      "createdAt": "2026-10-09T12:52:38.720Z",
-      "seq": 1973
-    },
-    {
-      "id": "d864eb75",
-      "title": "trust-region 문서 신설",
-      "priority": 10,
-      "note": "최적화(#optimization #analysis #linear_algebra). 39차에 line-search 를 쓰며 확인했다. 저장소에 trust-region 류 파일이 없고 세 문서가 이름만 쓴다. line-search 의 '## 신뢰영역 방법과의 대비' 절(한 문단), newton-method 13줄과 113줄, trust-region-policy-optimization(이름은 신뢰영역이지만 강화학습 문서이고 신뢰영역 방법 자체를 정의하지 않는다). 담을 내용은 신뢰영역 부분문제 min m(p) s.t. ||p|| <= Delta 의 진술, Cauchy 점과 감소 비율로 Delta 를 갱신하는 절차, 부분문제의 정확해 조건(Hessian + lambda I 가 준양정부호인 lambda), 음의 곡률 방향을 쓸 수 있는 점에서 선탐색과 갈리는 것, 2차원 부분공간 방법과 Steihaug 절단 공액기울기, 전역 수렴 정리다. 부모 후보는 newton-method. 만들면 line-search 의 대비 절과 newton-method 113줄에 링크를 건다",
-      "createdAt": "2026-10-09T12:56:15.968Z",
-      "seq": 1975
-    },
-    {
-      "id": "0e8fe999",
-      "title": "mixed-volumes 문서 신설",
-      "priority": 10,
-      "note": "해석·조합(#analysis #combinatorics #measure_theory). 39차에 brunn-minkowski 를 쓰며 확인했다. 그 문서의 '## 활용' 절 셋째가 혼합부피와 Alexandrov-Fenchel 부등식을 링크 없이 이름만 쓴다(0절). 저장소에 mixed-volumes 가 없다. 담을 내용은 Minkowski 의 정리(볼록체들의 선형결합의 부피가 동차다항식이고 그 계수가 혼합부피), Steiner 공식과 내재부피, 혼합부피의 단조성과 평행이동 불변성, Alexandrov-Fenchel 부등식과 Brunn-Minkowski 가 그 특수 경우인 것, Minkowski 의 1차 부등식, 조합론에서 행렬식 영구치의 van der Waerden 추측 증명에 쓰인 것이다. 부모 후보는 brunn-minkowski. 만들면 brunn-minkowski 활용 절에 링크를 건다",
-      "createdAt": "2026-10-09T13:00:20.495Z",
-      "seq": 1978
-    },
-    {
-      "id": "490be5a7",
-      "title": "de Finetti 정리 문서 신설",
-      "priority": 10,
-      "note": "확률론(#probability #measure_theory #statistics). 41차에 kolmogorov-extension 을 쓰며 활용 절 '## 무한 교환가능열' 에서 이름만 쓰고 지나갔다(0절). 저장소에 de-finetti 류 파일이 없고 교환가능성(exchangeability)을 다룬 문서도 없다. 담을 내용은 교환가능열의 정의(유한 순열에 분포가 불변), 0-1 열의 de Finetti 정리(교환가능 무한열은 베타 혼합이 아니라 임의의 사전분포에 대한 Bernoulli 혼합으로 유일하게 적힌다), 일반 상태공간의 Hewitt-Savage 판, 유한열에서는 정리가 깨지는 것(유한 교환가능열의 반례), 교환가능 sigma 대수와 Hewitt-Savage 0-1 법칙, Bayes 통계에서 사전분포의 근거로 쓰이는 자리다. 부모 후보는 random-variables 와 bayesian-inference 이고 kolmogorov-extension 도 후보다(무한열이 사는 확률공간을 그 정리가 준다). 만들면 kolmogorov-extension 활용 절의 이름을 링크로 바꾼다.",
-      "createdAt": "2026-10-09T16:53:54.256Z",
-      "seq": 1985
-    },
-    {
-      "id": "34f1ab7d",
-      "title": "Markov 연쇄 Monte Carlo 와 Metropolis-Hastings 문서 신설",
-      "priority": 10,
-      "note": "확률론/계산(#probability #statistics #computation). 39차에 langevin-dynamics 를 쓰며 드러났다. 그 문서 '이산화의 편향' 절 둘째 문단이 '한 걸음을 제안으로 쓰고 수락 확률로 보정하면 정상분포가 정확히 pi 가 된다' 고 적고 Metropolis 보정을 링크 없이 이름만 썼다(0절). 저장소에 metropolis 나 mcmc 문서가 없다. 담을 내용은 불변분포를 목표로 하는 전이핵의 구성, 세부균형과 수락 확률 min(1, pi(y)q(y,x)/pi(x)q(x,y)), 에르고딕성과 혼합시간, Gibbs 표본추출, 수락률과 제안 분산의 조정. 부모 후보는 markov-chains 와 langevin-dynamics 이고(MALA 가 Langevin 제안의 보정판) mixing-time 과의 간선도 함께 판정한다.",
-      "createdAt": "2026-10-10T00:58:30.262Z",
-      "seq": 2005
     },
     {
       "id": "7bd7ef61",
@@ -3332,38 +3180,6 @@
       "seq": 2060
     },
     {
-      "id": "3a6799e2",
-      "title": "Bolzano–Weierstrass 정리",
-      "priority": 10,
-      "note": "해석학의 기본 정리인데 문서가 없다(2026-10-15 확인: ls docs | grep -iE 'bolzano|weierstrass' 에 stone-weierstrass 와 weierstrass-factorization 만 있다). reverse-mathematics 의 직관 절 전체가 이 정리를 예로 쓰고, 유계 수열의 수렴 부분열 존재를 ACA_0 과의 동치 사례로 든다. 분야는 해석학(#analysis #topology). 부모 후보는 sequences-series 나 compactness, real-numbers 계열에서 고른다. analysis-overview 의 극한과 연속 갈래에 들어간다.",
-      "createdAt": "2026-10-15T12:46:18.943Z",
-      "seq": 2088
-    },
-    {
-      "id": "f5aa316b",
-      "title": "Heine–Borel 정리",
-      "priority": 10,
-      "note": "닫힌 유계 구간의 콤팩트성. 2026-10-15 확인: ls docs | grep -iE 'heine|borel' 에 borel-cantelli, borel-hierarchy 등만 있고 이 정리의 문서는 없다. compactness 문서가 콤팩트성 일반을 다루므로 그 자식으로 붙는다. reverse-mathematics 의 동치 목록에서 WKL_0 과 동치인 진술로 나오고, 본문은 'Heine–Borel 콤팩트성' 이라 쓴다. 분야는 #topology #analysis.",
-      "createdAt": "2026-10-15T12:46:19.089Z",
-      "seq": 2089
-    },
-    {
-      "id": "67ab3af8",
-      "title": "중간값 정리",
-      "priority": 10,
-      "note": "2026-10-15 확인: ls docs | grep -iE 'intermediate' 가 비어 있다. reverse-mathematics 가 RCA_0 에서 증명되는 정리의 대표로 들고 이분법 증명의 요지를 적어 둔다. 부모는 continuity(연속함수). 분야는 #analysis. analysis-overview 의 극한과 연속 갈래에 들어간다.",
-      "createdAt": "2026-10-15T12:46:19.245Z",
-      "seq": 2090
-    },
-    {
-      "id": "bf5c88c7",
-      "title": "Hasse 원리",
-      "priority": 10,
-      "note": "신규 주제. 분야 number_theory. 붙일 부모 후보는 quadratic-forms 와 adeles. 52차에 손 검사가 17 회 언급으로 집계했고 ls docs | grep -iE 'hasse|local-global' 이 0 건이다. 이차형식이 유리수체에서 해를 가지는 것과 모든 완비화에서 해를 가지는 것이 동치라는 Hasse-Minkowski 정리가 중심이고, 삼차 이상에서 원리가 깨지는 Selmer 의 반례와 Brauer-Manin 장애가 그 뒤에 온다. 저장소에 adeles, quadratic-forms, tate-shafarevich-group 이 있어 부모와 자식이 모두 준비되어 있다.",
-      "createdAt": "2026-10-16T17:03:26.026Z",
-      "seq": 2131
-    },
-    {
       "id": "8f882188",
       "title": "hasse-principle 의 후속 간선",
       "priority": 10,
@@ -3458,6 +3274,30 @@
       "note": "정수론. 산술 곡면에 무한 자리의 계량을 더해 교차이론을 세우는 틀. Arakelov 차수가 faltings-theorem 의 Faltings 높이 정의에 쓰이는데 저장소에 문서가 없다. 부모 후보는 algebraic-number-fields 와 canonical-height.",
       "createdAt": "2026-10-20T00:45:12.336Z",
       "seq": 2261
+    },
+    {
+      "id": "e640013d",
+      "title": "finite-element-method 축의 남은 자식 후보 둘 (74차 갱신)",
+      "priority": 10,
+      "note": "74차(2026-10-20)에 큐 4f124acb 가 꼽은 자식 후보 (1) 혼합 유한요소법을 mixed-finite-element-method 로 썼다. 부모는 finite-element-method 하나다. lax-milgram 은 그 문서의 부모여서 조상이므로 5절대로 뺐다. 태그는 FEM 과 같은 #linear_algebra #analysis #functional_analysis #algorithms 이고 linear-algebra-overview 의 수치 선형대수 갈래에서 유한요소법의 곁가지로 한 단계 들여썼다. 다중격자 이하 주 경로가 이 문서를 필요로 하지 않아 곁가지가 맞다. 담은 것: 1차원 -u 두번미분 = f 의 유속을 미지수로 올리는 직관, 안장점 문제와 혼합 유한요소공간 정의, 블록 행렬의 오른쪽 아래 영블록, Babuska-Brezzi 정리와 증명 요지(닫힌 치역 정리로 B 전사, 핵에서 Lax-Milgram, 소멸자로 u), 이산 안정성과 부분공간이 조건을 물려받지 않는 이유, 혼합 Cea 추정, 차원 조건과 1차원 체커보드 모드의 손계산, Raviart-Thomas 요소. 본문 링크를 lax-milgram 활용 넷째와 finite-element-method 활용에 걸었다. 남은 자식 후보 둘. (2) 후처리 오차 추정자와 적응 격자 세분 - 저장소에 없다. Cea 보조정리의 상한을 계산 가능한 양으로 바꾸는 자리라 finite-element-method 의 자식이 맞다. (3) 불연속 Galerkin 법 - 없다. V_h 의 연속성을 버리는 변형이라 특수화가 아니고 부모 판정이 필요하다. 혼합 유한요소법이 생겼으므로 하이브리드화한 혼합법과의 관계도 함께 본다.",
+      "createdAt": "2026-10-20T04:46:46.959Z",
+      "seq": 2269
+    },
+    {
+      "id": "dbfd93d1",
+      "title": "mixed-finite-element-method 의 후속 간선",
+      "priority": 10,
+      "note": "74차에 새로 쓴 문서이고 리프다. 자식 후보 셋. (1) Stokes 방정식 - 저장소에 없다. 이 문서의 활용 둘째와 lax-milgram 활용 넷째가 이름만 쓰고, Taylor-Hood 요소와 체커보드 압력이 그 문서의 자리다. navier-stokes 문서도 없으니 유체 쪽 축이 비어 있다. (2) Raviart-Thomas 요소를 독립 문서로 뗄지 - 지금은 이 문서의 성질 절 한 절(국소공간 정의, div V_h = Q_h, 오차 차수)이고 143줄이라 8절의 1000줄 기준에 한참 못 미친다. 뗄 때가 아니다. (3) 하이브리드화와 혼합 유한부피법 - 없다. 둘 다 혼합 꼴의 변형이라 이 문서의 자식 방향이 맞다.",
+      "createdAt": "2026-10-20T04:46:47.089Z",
+      "seq": 2270
+    },
+    {
+      "id": "80c38e24",
+      "title": "a-posteriori-error-estimator 의 후속 간선",
+      "priority": 10,
+      "note": "74차(2026-10-20)에 finite-element-method 의 자식으로 새로 썼다(106줄, 리프). 담은 것: Cea 보조정리의 상한이 참해의 노름을 포함해 수치를 주지 못한다는 막힘, 1차원 조각일차 요소에서 잔차가 요소 안의 f 와 자른 점의 도약으로 갈라지는 계산, 잔차 범함수와 Galerkin 직교성, 잔차형 국소 추정자, 신뢰성과 효율성의 두 부등식과 각각의 증명 요지(보간 추정과 거품함수), Dorfler 표시와 네 단계 순환. 자식 후보 셋. (1) 목적 지향 오차 추정(쌍대 가중 잔차) - 저장소에 없고 지금은 이 문서의 활용 셋째 한 항목이다. 쌍대 문제를 세우는 점이 finite-element-method 의 Aubin-Nitsche 논법과 같은 수이므로 둘을 함께 읽는 자리다. (2) 적응 유한요소법의 수렴과 최적 차수 - 없다. Dorfler 표시의 수축 증명과 Cascon-Kreuzer-Nochetto-Siebert 의 최적성이 내용이고 이 문서의 적응 격자 세분 절을 넘기면 별도 문서가 맞다. (3) 거품함수와 국소 역추정 - 없다. 효율성 증명의 도구이고 단독 문서로는 짧다. 또 full-multigrid 67줄과 full-approximation-scheme 111줄이 격자 세분 판정을 격자 두 단계의 차로 적는데, 이 문서의 제목을 쓰지 않으므로 4절 본문 링크 의무는 없다. 그쪽에서 이 문서로 거는 본문 링크를 더할지는 다음 회차의 판단이다.",
+      "createdAt": "2026-10-20T04:55:20.713Z",
+      "seq": 2277
     },
     {
       "id": "dfb3e493",
@@ -3852,22 +3692,6 @@
       "seq": 291
     },
     {
-      "id": "947ce369",
-      "title": "Heegaard Floer 호몰로지",
-      "priority": 5,
-      "note": "instanton-floer-homology 아래. Heegaard 도식과 대칭곱, 정칙 원판, d 불변량, 순간자 판본과의 동치",
-      "createdAt": "2026-09-15T16:53:44.816Z",
-      "seq": 292
-    },
-    {
-      "id": "c422fd89",
-      "title": "Donaldson 불변량과 4 다양체의 교차형식",
-      "priority": 5,
-      "note": "chern-simons 와 instanton-floer-homology 아래. ASD 모듈라이, 대각화 정리, 이색 R^4, Seiberg-Witten 과의 대비",
-      "createdAt": "2026-09-15T16:53:44.968Z",
-      "seq": 293
-    },
-    {
       "id": "90a7dd3d",
       "title": "render-check 가 마크다운 파싱 뒤의 수식을 검사하게 보강",
       "priority": 5,
@@ -3964,28 +3788,12 @@
       "seq": 162
     },
     {
-      "id": "fb74846f",
-      "title": "Kuznetsov 공식과 Kloosterman 합",
-      "priority": 4,
-      "note": "maass-forms 아래. 스펙트럼 쪽과 Kloosterman 쪽의 쌍대성, 대각합 공식과 대비되는 비대각 판, 예외 고윳값이 어디서 문제가 되는지",
-      "createdAt": "2026-09-13T23:07:03.275Z",
-      "seq": 163
-    },
-    {
       "id": "8585373a",
       "title": "Coleman-Mazur 고윳값 곡선",
       "priority": 4,
       "note": "sen-theory 와 p-adic-hodge-theory 아래. 과수렴 형식의 p 진 족, 기울기와 Hodge-Tate 무게의 변동, Sen 작용소가 족 위에서 해석적",
       "createdAt": "2026-09-13T23:16:45.466Z",
       "seq": 165
-    },
-    {
-      "id": "f69dfd16",
-      "title": "Hida 족과 고유다양체",
-      "priority": 4,
-      "note": "fontaine-mazur 와 modular-symbols 아래. 순종 사영자, p 진 무게 공간, 고전점의 조밀성, de Rham 점이 고전점이라는 문제",
-      "createdAt": "2026-09-13T23:56:31.987Z",
-      "seq": 168
     },
     {
       "id": "4ef9f72d",
