@@ -117,7 +117,7 @@ $$
 - **타원형 경계값 문제의 약한 해.** [Dirichlet 문제](dirichlet-problem.md) $-\Delta u=f$ 와 경계값 $0$ 에서 $B(u,v)=\int\_U\nabla u\cdot\nabla v\thinspace dx$ 를 놓으면 Poincaré 부등식이 강제성을 주고 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)이 유계성을 준다. Sobolev 공간 문서의 약한 해 서술이 존재와 유일성을 이 정리에서 받는다.
 - **이류-확산 방정식.** $-\mathrm{div}(a\nabla u)+b\cdot\nabla u+cu=f$ 의 쌍선형형식은 $b\ne 0$ 에서 대칭이 아니다. $a$ 가 아래로 유계이고 $c$ 가 음이 아니며 $\Vert b\Vert\_{L^\infty}$ 가 작으면 강제성이 남는다.
 - **Galerkin 근사의 오차.** 유한차원 부분공간 $V_h\subset H$ 에서 모든 $v\in V_h$ 에 대해 $B(u_h,v)=f(v)$ 인 $u_h$ 를 구하면, Céa 보조정리가 $\Vert u-u\_h\Vert\le(\beta/\alpha)\inf\_{v\in V\_h}\Vert u-v\Vert$ 을 준다. 유한요소법의 수렴 증명이 이 부등식과 부분공간의 근사 능력으로 갈라진다.
-- **강제성이 없는 안장점 문제.** Stokes 방정식의 쌍선형형식은 속도와 압력을 함께 놓은 공간에서 강제가 아니다. 이 경우에는 Lax–Milgram 정리 대신 두 공간 사이의 부등식을 가정하는 Babuška–Brezzi 조건을 쓴다.[^2]
+- **강제성이 없는 안장점 문제.** Stokes 방정식의 쌍선형형식은 속도와 압력을 함께 놓은 공간에서 강제가 아니다. 이 경우에는 Lax–Milgram 정리 대신 두 공간 사이의 부등식을 가정하는 Babuška–Brezzi 조건을 쓰고, 그 조건 아래 이산화하는 방법이 [혼합 유한요소법](mixed-finite-element-method.md)이다.[^2]
 
 [^1]: Lawrence C. Evans, *Partial Differential Equations*, 2판, American Mathematical Society, 2010, 6.2.1 절. Peter D. Lax, Arthur N. Milgram, "Parabolic equations", *Contributions to the Theory of Partial Differential Equations*, Princeton University Press, 1954, 167–190 이 원 논문이다.
 [^2]: Daniele Boffi, Franco Brezzi, Michel Fortin, *Mixed Finite Element Methods and Applications*, Springer, 2013, 4 장. Céa 보조정리는 Susanne C. Brenner, L. Ridgway Scott, *The Mathematical Theory of Finite Element Methods*, 3판, Springer, 2008, 2.8 절이다.

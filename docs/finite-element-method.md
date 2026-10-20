@@ -150,6 +150,7 @@ $B$ 가 대칭이면 $S$ 는 대칭 양의 정부호이고, $d$ 차원 등간격
 - **다중격자.** [다중격자](multigrid.md)가 쓰는 격자 계층은 삼각분할을 성기게 한 단계들이고, 각 단계에서 푸는 계가 그 격자의 강성행렬이다. 다중격자의 수렴률이 격자 간격과 무관하다는 성질이 위의 조건수 증가를 상쇄한다.
 - **영역 분할법.** [영역 분할법](domain-decomposition.md)은 삼각분할을 부분영역으로 나누고 부분영역마다 작은 강성행렬을 푼다.
 - **전처리.** [전처리](preconditioning.md) 문서의 불완전 분해와 응집 전처리는 강성행렬의 희소 무늬를 입력으로 받는다.
+- **유속을 미지수로 두는 이산화.** [혼합 유한요소법](mixed-finite-element-method.md)은 $\sigma=-\nabla u$ 를 독립 미지수로 두어 $u$ 와 같은 차수로 근사한다. 위 삼각분할과 강성행렬을 그대로 쓰지만 공간을 둘 고르므로 가해성이 Lax–Milgram 정리가 아니라 Babuška–Brezzi 조건에서 나온다.
 - **이류-확산 방정식.** Lax–Milgram 정리 문서의 이류-확산 쌍선형형식에서 $\Vert b\Vert\_{L^\infty}$ 가 커지면 $\beta/\alpha$ 가 커지고 Céa 보조정리의 상한이 느슨해진다. 이 경우 격자를 가늘게 하기 전에는 수렴률이 보이지 않는다.
 
 [^1]: Susanne C. Brenner, L. Ridgway Scott, *The Mathematical Theory of Finite Element Methods*, 3판, Springer, 2008, 2.8 절.
@@ -164,6 +165,6 @@ $B$ 가 대칭이면 $S$ 는 대칭 양의 정부호이고, $d$ 차원 등간격
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [혼합 유한요소법](mixed-finite-element-method.md)
 
 #linear_algebra #analysis #functional_analysis #algorithms
