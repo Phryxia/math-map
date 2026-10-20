@@ -121,6 +121,7 @@ graph TD
 - [ZFC 공리계](zfc-axioms.md): Zermelo–Fraenkel 집합론에 선택공리를 더한 공리계, 분리와 치환
 - [서수](ordinals.md): 정렬순서의 유형, 초한 귀납법과 초한 재귀
   - [Goodstein 정리](goodstein-theorem.md): 밑을 올리고 1 을 빼는 수열이 언제나 0 에서 끝난다는 정리, 증명에 초한 귀납법을 쓴다
+  - [빠르게 자라는 계층](fast-growing-hierarchy.md): 서수마다 자연수 함수를 붙여 만든 증가 속도의 순서, 체계가 전역성을 증명하는 함수의 한계
 - [선택공리](axiom-of-choice.md): 선택함수의 존재, Zorn 보조정리와 정렬 정리의 동치
   - [선택공리의 약한 형태](weak-choice-principles.md): 가산 선택, 종속 선택, 초필터 보조정리의 강도 차이
   - [Banach–Tarski 분해](banach-tarski.md): 자유 부분군의 역설적 분해를 구면으로 내린 결과, 조각은 비가측이다

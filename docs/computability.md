@@ -93,6 +93,7 @@ $A$ 의 입력을 $B$ 의 입력으로 바꾸는 계산 가능한 함수 $f$ 가
 - [Rice 정리](rice-theorem.md)
 - [Gödel 불완전성 정리](godel-incompleteness.md)
 - [역수학](reverse-mathematics.md)
+- [빠르게 자라는 계층](fast-growing-hierarchy.md)
 
 ### 계산 모형
 

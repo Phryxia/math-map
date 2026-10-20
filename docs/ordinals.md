@@ -181,5 +181,6 @@ $$
 ### 산술의 증명 강도
 
 - [Goodstein 정리](goodstein-theorem.md)
+- [빠르게 자라는 계층](fast-growing-hierarchy.md)
 
 #set_theory #logic #analysis
