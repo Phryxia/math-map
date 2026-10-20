@@ -131,5 +131,6 @@ $$
 ## 더 알아보기
 
 - [Selmer 군과 Tate–Shafarevich 군](selmer-tate-shafarevich.md)
+- [Milnor K 이론](milnor-k-theory.md)
 
 #field_theory #number_theory #group_theory #algebra

@@ -98,7 +98,7 @@ $K$ 군의 유리계수 부분에서 정의되는 Borel 정규화자가 $\zeta_F
 
 ## 동기 코호몰로지와의 연결
 
-Quillen–Lichtenbaum 의 증명은 $K$ 이론을 동기 코호몰로지로 번역하고 거기서 노름 잉여 동형 정리를 쓴다. 그 결과 Milnor $K$ 이론과 [Galois 코호몰로지](galois-cohomology.md) 사이의 동형
+Quillen–Lichtenbaum 의 증명은 $K$ 이론을 동기 코호몰로지로 번역하고 거기서 노름 잉여 동형 정리를 쓴다. 그 결과 [Milnor K 이론](milnor-k-theory.md)과 [Galois 코호몰로지](galois-cohomology.md) 사이의 동형
 
 $$
 K^{M}\_{n}(F)/m\ \xrightarrow{\ \sim\ }\ H^{n}\_{\text{ét}}\big(F,\mu_m^{\otimes n}\big)
