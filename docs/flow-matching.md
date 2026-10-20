@@ -2,9 +2,9 @@
 
 # 개요
 
-[확산모형](diffusion-models.md)은 데이터에 잡음을 더하는 [확률미분방정식](stochastic-differential-equations.md)을 세우고 그 역과정을 학습한다. 샘플 하나에 신경망 호출이 수백 번 든다.
+흐름 정합(flow matching)은 잡음 분포에서 데이터 분포로 가는 경로를 먼저 정하고 그 경로를 만드는 속도장을 회귀로 학습하는 생성모형 학습법이다. [확산모형](diffusion-models.md)은 데이터에 잡음을 더하는 [확률미분방정식](stochastic-differential-equations.md)을 세우고 그 역과정을 학습한다. 샘플 하나에 신경망 호출이 수백 번 든다.
 
-흐름 정합은 잡음 분포에서 데이터 분포로 가는 경로를 먼저 정하고 그 경로를 만드는 속도장을 회귀로 학습한다. 학습 목표가 [상미분방정식](ordinary-differential-equations.md)이고 손실함수가 제곱오차다.
+흐름 정합의 학습 목표는 [상미분방정식](ordinary-differential-equations.md)이고 손실함수는 제곱오차다.
 
 $$
 \frac{dx}{dt}=v_\theta(x,t),\qquad

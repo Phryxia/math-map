@@ -2,7 +2,7 @@
 
 # 개요
 
-[Langlands 강령](langlands-program.md)의 대상인 Galois 표현 $\rho\colon G_K\to\mathrm{GL}\_n(E)$ 는 기하에서 온다.
+Galois 표현(Galois representation)은 Galois 군에서 행렬군으로 가는 연속 준동형 $\rho\colon G_K\to\mathrm{GL}\_n(E)$ 다. [Langlands 강령](langlands-program.md)이 다루는 Galois 표현은 기하에서 온다.
 
 계수를 $\mathbb C$ 로 잡으면 상이 유한군이라 유한 Galois 확대의 표현만 나온다. 공급원은 $\ell$ 진 계수다. 대수다양체 $X$ 에 위상적 [코호몰로지](cohomology.md) 대신 $\mathbb Q_\ell$ 계수의 [에탈 코호몰로지](etale-cohomology.md)를 붙이면
 
