@@ -2,7 +2,7 @@
 
 # 개요
 
-유체론은 [수체](algebraic-number-fields.md) $K$ 의 아벨 확대를 $K$ 안의 산술 자료만으로 분류한다. 분류하는 자료가 류군을 넓힌 **광선류군**이고, 분류를 실현하는 사상이 **Artin 상호법칙**이다.
+**유체론(class field theory)** 은 [수체](algebraic-number-fields.md) $K$ 의 아벨 확대를 $K$ 안의 산술 자료만으로 분류한다. 분류하는 자료가 류군을 넓힌 **광선류군**이고, 분류를 실현하는 사상이 **Artin 상호법칙**이다.
 
 $$
 \mathrm{Cl}\_{\mathfrak m}(K)/H \thickspace\xrightarrow{\ \sim\ }\thickspace \mathrm{Gal}(L/K)

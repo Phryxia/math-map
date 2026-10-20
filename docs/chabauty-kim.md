@@ -2,9 +2,9 @@
 
 # 개요
 
-[Chabauty 방법](chabauty-method.md)은 [Jacobi 다양체](jacobian-variety.md)의 계수 $r$ 이 종수 $g$ 보다 작을 때 곡선의 유리점을 $p$ 진 적분의 영점으로 가둔다. $r\ge g$ 이면 쓸 수 있는 적분이 없어진다.
+**Chabauty–Kim 방법(Chabauty–Kim method)** 은 [Chabauty 방법](chabauty-method.md)에서 Jacobi 다양체 대신 곡선의 단일값 기본군을 써서 곡선의 유리점을 유한집합에 가두는 방법이다. Chabauty 방법은 [Jacobi 다양체](jacobian-variety.md)의 계수 $r$ 이 종수 $g$ 보다 작을 때 곡선의 유리점을 $p$ 진 적분의 영점으로 가둔다. $r\ge g$ 이면 쓸 수 있는 적분이 없어진다.
 
-**Chabauty–Kim 방법**은 Jacobi 다양체 대신 곡선의 단일값 기본군을 쓴다. 기본군의 하강 중심열을 따라 몫을 깊이 $n$ 까지 취하면 자리마다 조건이 늘어나고, 깊이 $2$ 에서는 $r\lt g+s-1$ 에서 유리점이 유한집합에 갇힌다. $s$ 는 Jacobi 다양체의 Néron–Severi 군의 계수다.
+기본군의 하강 중심열을 따라 몫을 깊이 $n$ 까지 취하면 자리마다 조건이 늘어나고, 깊이 $2$ 에서는 $r\lt g+s-1$ 에서 유리점이 유한집합에 갇힌다. $s$ 는 Jacobi 다양체의 Néron–Severi 군의 계수다.
 
 # 직관
 
