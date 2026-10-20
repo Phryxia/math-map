@@ -152,7 +152,7 @@ Sturm–Liouville 문제의 고유함수 전개가 그 사례다. 미분방정�
 
 ## 작용소 대수
 
-$\mathcal B(H)$ 의 부분대수로 노름 닫힌 것이 $C^\ast$ 대수, 약작용소 위상에서 닫힌 것이 von Neumann 대수다. Gelfand–Naimark 정리로 모든 가환 $C^\ast$ 대수는 콤팩트 Hausdorff 공간 위의 [연속함수](continuity.md) 대수와 동형이므로, 작용소 대수를 비가환 위상공간으로 읽는 관점이 나온다.
+$\mathcal B(H)$ 의 부분대수로 노름 닫힌 것이 $C^\ast$ 대수, 약작용소 위상에서 닫힌 것이 [von Neumann 대수](von-neumann-algebras.md)다. Gelfand–Naimark 정리로 모든 가환 $C^\ast$ 대수는 콤팩트 Hausdorff 공간 위의 [연속함수](continuity.md) 대수와 동형이므로, 작용소 대수를 비가환 위상공간으로 읽는 관점이 나온다.
 
 # 연관 문서
 
@@ -166,5 +166,6 @@ $\mathcal B(H)$ 의 부분대수로 노름 닫힌 것이 $C^\ast$ 대수, 약작
 - [콤팩트 작용소](compact-operators.md)
 - [비유계 작용소](unbounded-operators.md)
 - [Fredholm 작용소](fredholm-operators.md)
+- [von Neumann 대수](von-neumann-algebras.md)
 
 #functional_analysis #analysis #linear_algebra
