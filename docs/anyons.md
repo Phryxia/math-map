@@ -80,7 +80,7 @@ $$
 
 Freedman, Larsen, Wang 은 Fibonacci 애니온의 땋임 표현의 상이 $\mathrm{SU}(V)$ 에서 조밀함을 증명했다. 임의의 유니터리를 원하는 정확도로 근사할 수 있으므로 땋기만으로 보편 양자계산이 된다. 증명은 상이 되는 부분군이 닫힌 리 부분군을 생성함을 보이고 그 리 대수가 전체임을 확인한다.
 
-Solovay–Kitaev 정리에 따라 오차 $\varepsilon$ 을 얻는 데 $O(\log^c(1/\varepsilon))$ 개의 교차면 충분하다.
+[Solovay–Kitaev 정리](solovay-kitaev.md)에 따라 오차 $\varepsilon$ 을 얻는 데 $O(\log^c(1/\varepsilon))$ 개의 교차면 충분하다.
 
 ## Ising 모형의 한계
 
