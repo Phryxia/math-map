@@ -132,6 +132,7 @@ Eckart–Young 정리로 상위 $k$ 개 성분만 남기면 저장량이 $(m+n+1
 
 ## 더 알아보기
 
+- [Schatten 아이디얼](schatten-ideals.md)
 - [주성분 분석](principal-component-analysis.md)
 
 #linear_algebra #statistics #optimization

@@ -144,6 +144,7 @@ Laplace 작용소처럼 대각합류가 아닌 대상에는 zeta 정규화 행�
 
 - [행렬식](determinants.md)
 - [Fredholm 작용소](fredholm-operators.md)
+- [Schatten 아이디얼](schatten-ideals.md)
 
 ## 더 알아보기
 
