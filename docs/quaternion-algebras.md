@@ -106,6 +106,7 @@ $p=2$ 에서 $h=1$ 이고 Hurwitz 순서의 단위군이 위수 $24$ 이므로 �
 
 ## 더 알아보기
 
+- [Deuring 대응](deuring-correspondence.md)
 - [Jacquet–Langlands 대응](jacquet-langlands.md)
 
 #number_theory #algebra #ring_theory
