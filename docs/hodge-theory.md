@@ -2,7 +2,7 @@
 
 # 개요
 
-[de Rham 코호몰로지](de-rham-cohomology.md)의 원소는 닫힘형식의 동치류다. 한 류 안에는 $\omega+d\eta$ 꼴의 형식이 무한히 많고, 코호몰로지가 위상적 대상인 이상 그중 어느 것도 특별하지 않다.
+Hodge 이론(Hodge theory)은 콤팩트 Riemann 다양체의 코호몰로지류마다 조화형식 하나를 골라 코호몰로지를 해석으로 다루는 이론이다. [de Rham 코호몰로지](de-rham-cohomology.md)의 원소는 닫힘형식의 동치류다. 한 류 안에는 $\omega+d\eta$ 꼴의 형식이 무한히 많고, 코호몰로지가 위상적 대상인 이상 그중 어느 것도 특별하지 않다.
 
 [Riemann 계량](riemannian-metrics.md)은 형식들 사이의 내적을 주므로 류 안에서 가장 짧은 형식을 물을 수 있게 하고, [콤팩트](compactness.md) 다양체에서는 그런 형식이 정확히 하나 존재한다. 그것이 조화형식이고 Laplace 작용소의 핵에 드는 형식이다.
 

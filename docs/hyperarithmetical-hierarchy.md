@@ -2,9 +2,9 @@
 
 # 개요
 
-[산술적 계층](arithmetical-hierarchy.md)은 공집합의 [Turing 도약](turing-degrees.md)을 유한 번 반복해 얻는 집합을 층으로 나눈다. 반복을 유한에서 멈출 이유는 없다.
+**초산술적 계층(hyperarithmetical hierarchy)** 은 공집합의 [Turing 도약](turing-degrees.md)을 계산가능한 [서수](ordinals.md) 단계까지 반복해 얻는 집합의 계층이다. [산술적 계층](arithmetical-hierarchy.md)은 도약을 유한 번 반복해 얻는 집합을 층으로 나눈다.
 
-**초산술적 계층**은 도약의 반복을 계산가능한 [서수](ordinals.md)까지 밀어 올린 것이다. 이렇게 얻는 집합 전체가 [해석적 계층](analytical-hierarchy.md)의 $\Delta^1_1$ 과 같다.
+초산술적 계층의 집합 전체가 [해석적 계층](analytical-hierarchy.md)의 $\Delta^1_1$ 과 같다.
 
 # 직관
 
