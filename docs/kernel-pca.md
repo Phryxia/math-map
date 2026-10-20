@@ -2,7 +2,7 @@
 
 # 개요
 
-[주성분 분석](principal-component-analysis.md)은 데이터가 저차원 평면 근처에 있을 때 그 평면을 찾는다. 데이터가 원이나 나선 위에 있으면 어떤 평면도 구조를 담지 못하고, 동심원 두 개는 분산이 모든 방향에서 같아 **PCA**(principal component analysis)가 정보를 주지 않는다.
+커널 PCA(kernel principal component analysis, kernel PCA)는 데이터를 사상 $\phi$ 로 고차원 공간에 보낸 뒤 그 공간에서 주성분 분석을 하는 방법이다. [주성분 분석](principal-component-analysis.md)은 데이터가 저차원 평면 근처에 있을 때 그 평면을 찾는다. 데이터가 원이나 나선 위에 있으면 어떤 평면도 구조를 담지 못하고, 동심원 두 개는 분산이 모든 방향에서 같아 **PCA**(principal component analysis)가 정보를 주지 않는다.
 
 데이터를 적당한 사상 $\phi$ 로 고차원에 보내면 휘어 있던 구조가 펴져 선형이 된다. 원 위의 점들을 반지름 제곱 좌표로 보내면 두 원이 서로 다른 높이의 평면이 된다. 옮긴 공간에서 보통의 PCA 를 하면 원래 공간에서 비선형인 성분을 얻는다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-Kolmogorov–Arnold–Moser 정리는 [적분가능계](integrable-systems.md)에 작은 교란을 준 계에서 불변 원환면 대부분이 살아남는다고 말한다. 교란 전의 원환면 가운데 진동수가 정수벡터와 충분히 멀리 떨어진 것들이 살아남고, 그 합집합이 상태공간에서 차지하는 측도는 교란이 작아질 때 전체로 간다.
+Kolmogorov–Arnold–Moser 정리(Kolmogorov–Arnold–Moser theorem)는 [적분가능계](integrable-systems.md)에 작은 교란을 준 계에서 불변 원환면 대부분이 살아남는다는 정리다. 교란 전의 원환면 가운데 진동수가 정수벡터와 충분히 멀리 떨어진 것들이 살아남고, 그 합집합이 상태공간에서 차지하는 측도는 교란이 작아질 때 전체로 간다.
 
 살아남는 조건은 진동수에 대한 [Diophantine 근사](diophantine-approximation.md)의 조건이고, 증명이 어려운 까닭은 교란을 없애는 좌표 바꾸기의 Fourier 계수에 작은 분모가 나오는 것이다.
 
