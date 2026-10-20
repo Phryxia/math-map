@@ -75,7 +75,7 @@ $$
 
 **정리.** 부분함수 $f : \mathbb N^k \rightharpoonup \mathbb N$ 가 부분 재귀 함수인 것과 Turing 기계로 계산되는 것은 동치다.
 
-한쪽은 기본 함수, 합성, 원시 재귀, 최소화를 각각 Turing 기계로 구현해 보인다. 최소화는 $y = 0, 1, 2, \dots$ 를 차례로 시험하는 반복이다. 다른 쪽은 Turing 기계의 상태와 테이프를 수 하나로 부호화하고, 한 단계의 전이가 원시 재귀 함수임을 보인다. [Lambda calculus](lambda-calculus.md)의 $\lambda$ 정의가능성도 같은 함수족을 준다.
+한쪽은 기본 함수, 합성, 원시 재귀, 최소화를 각각 Turing 기계로 구현해 보인다. 최소화는 $y = 0, 1, 2, \dots$ 를 차례로 시험하는 반복이다. 다른 쪽은 Turing 기계의 상태와 테이프를 수 하나로 부호화하고, 한 단계의 전이가 원시 재귀 함수임을 보인다. [Lambda calculus](lambda-calculus.md)의 $\lambda$ 정의가능성도 같은 함수족을 준다. 세 정의의 일치가 [Church–Turing 논제](church-turing-thesis.md)의 근거다.
 
 ## Kleene 정규형 정리
 
@@ -106,6 +106,7 @@ $e$ 는 $f$ 를 계산하는 프로그램의 번호이고, $T(e, x, y)$ 는 "$y$
 
 ## 더 알아보기
 
+- [Church–Turing 논제](church-turing-thesis.md)
 - [빠르게 자라는 계층](fast-growing-hierarchy.md)
 
 #computation #logic #foundations
