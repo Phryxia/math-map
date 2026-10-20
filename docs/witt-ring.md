@@ -105,7 +105,7 @@ $K$ 에 순서가 하나라도 있으면(형식적 실체) 그 순서마다 부�
 - **수체 위의 분류.** $\mathbb Q$ 위의 형식은 차원, 판별식, Hasse 불변량, 부호수로 결정된다. $W(\mathbb Q)\to W(\mathbb R)\times\prod_p W(\mathbb Q_p)$ 가 단사라는 것이 Hasse–Minkowski 정리의 Witt 환 판본이고, 단사성의 증명에 [Brauer 군](brauer-groups.md)의 불변량 사상이 쓰인다.
 - **대수적 $K$ 이론.** Milnor 추측이 $I^{n}/I^{n+1}$, $K^{M}\_n(K)/2$, $H^{n}(K,\mathbb Z/2)$ 세 쪽을 맺으므로 이차형식의 계산이 $K$ 이론의 계산으로 옮겨진다.
 - **수술 이론.** 다양체의 [수술 장애](surgery-theory.md)가 기본군의 군환 위 이차형식의 Witt 군에 값을 갖는다. 짝수 차원의 장애군이 그 Witt 군이다.
-- **실대수기하.** $W(K)$ 의 소아이디얼 스펙트럼이 $K$ 의 순서 공간과 맺어지므로, 실닫힌체 위의 반대수집합을 다루는 데 쓰인다.
+- **실대수기하.** $W(K)$ 의 소아이디얼 스펙트럼이 $K$ 의 순서 공간과 맺어지므로, [실폐체](real-closed-fields.md) 위의 반대수집합을 다루는 데 쓰인다.
 
 [^1]: T. Y. Lam, *Introduction to Quadratic Forms over Fields*, Graduate Studies in Mathematics 67, American Mathematical Society, 2005. Witt 분해와 소거는 1 장, 기본 아이디얼과 Pfister 형식은 2 장과 10 장이다.
 [^2]: V. Voevodsky, "Motivic cohomology with $\mathbb Z/2$ coefficients", Publ. Math. IHÉS 98 (2003), 59–104. $I^n/I^{n+1}$ 쪽 진술은 D. Orlov, A. Vishik, V. Voevodsky, "An exact sequence for $K^M_*/2$ with applications to quadratic forms", Ann. of Math. 165 (2007), 1–13.

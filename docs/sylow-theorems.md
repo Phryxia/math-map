@@ -132,7 +132,7 @@ Sylow 정리는 유한군을 소수별 조각으로 나누어 보는 첫 단계�
 ## 다른 분야에서의 쓰임
 
 - 모듈러 표현론(modular representation theory)은 $p$ 부분군으로 제한하는 조작을 도구로 쓴다. [군의 표현](group-representations.md)에서는 지표를 Sylow 부분군 위에서 검사하는 기법으로 나온다.
-- [Galois 이론](galois-theory.md)에서 Galois 군의 Sylow 부분군은 고정체의 탑에 대응한다. 대수적으로 닫힌 체로 가는 확대의 차수를 제한하는 논증(예: 대수학의 기본정리의 대수적 증명)이 Sylow 정리를 그대로 쓴다.
+- [Galois 이론](galois-theory.md)에서 Galois 군의 Sylow 부분군은 고정체의 탑에 대응한다. 대수적으로 닫힌 체로 가는 확대의 차수를 제한하는 논증(예: [실폐체](real-closed-fields.md)에서 쓰는 대수학의 기본정리의 대수적 증명)이 Sylow 정리를 그대로 쓴다.
 - 계산군론 소프트웨어는 Sylow 부분군 계산을 기본 연산으로 제공한다. 치환군의 구조 분석에서 이 연산을 되풀이해 쓴다.[^2]
 
 [^1]: Wikipedia, Sylow theorems, https://en.wikipedia.org/wiki/Sylow_theorems
@@ -147,5 +147,6 @@ Sylow 정리는 유한군을 소수별 조각으로 나누어 보는 첫 단계�
 ## 더 알아보기
 
 - [유한 단순군 분류](finite-simple-groups.md)
+- [실폐체](real-closed-fields.md)
 
 #group_theory #algebra #number_theory #theorem
