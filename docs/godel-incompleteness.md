@@ -30,7 +30,7 @@ $$
 \ulcorner\varphi\urcorner\in\mathbb{N}
 $$
 
-" $n$ 은 $T$ 에서의 증명의 부호이고 그 결론은 $m$ 이다"라는 관계는 순수하게 구문적 검사이므로 primitive recursive하다. 따라서 산술 논리식으로 표현된다. 이를 써서 증명 가능성 술어를 정의한다.
+" $n$ 은 $T$ 에서의 증명의 부호이고 그 결론은 $m$ 이다"라는 관계는 순수하게 구문적 검사이므로 [원시 재귀](recursive-functions.md) 관계다. 따라서 산술 논리식으로 표현된다. 이를 써서 증명 가능성 술어를 정의한다.
 
 $$
 \mathrm{Pr}\_T(m)\ :\equiv\ \exists n\ \mathrm{Proof}\_T(n,m)

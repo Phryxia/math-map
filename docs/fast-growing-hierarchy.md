@@ -52,7 +52,7 @@ $F_\omega(n)=F_n(n)$ 은 Ackermann 함수(Ackermann function)와 같은 속도�
 
 ## 체계가 증명하는 전 함수
 
-**정리(Wainer).** 함수 $f$ 가 재귀적이고 [Peano 공리](peano-axioms.md)계가 $f$ 는 모든 입력에서 값을 갖는다는 명제를 증명하면, 어떤 $\alpha\lt\varepsilon_0$ 에 대해 $f$ 가 $F_\alpha$ 로 유계다.[^1]
+**정리(Wainer).** 함수 $f$ 가 [재귀함수](recursive-functions.md)이고 [Peano 공리](peano-axioms.md)계가 $f$ 는 모든 입력에서 값을 갖는다는 명제를 증명하면, 어떤 $\alpha\lt\varepsilon_0$ 에 대해 $f$ 가 $F_\alpha$ 로 유계다.[^1]
 
 거꾸로 $\alpha\lt\varepsilon_0$ 마다 Peano 산술이 $F_\alpha$ 의 전역성을 증명한다. 그러므로 $F\_{\varepsilon_0}$ 는 Peano 산술이 전역성을 증명하지 못하는 가장 작은 자리에 놓이고, 이 서수를 Peano 산술의 증명론적 서수(proof-theoretic ordinal)라 한다.
 
@@ -73,7 +73,7 @@ $F_\omega(n)=F_n(n)$ 은 Ackermann 함수(Ackermann function)와 같은 속도�
 ## 선수지식
 
 - [서수](ordinals.md)
-- [계산 가능성](computability.md)
+- [재귀함수](recursive-functions.md)
 
 ## 더 알아보기
 

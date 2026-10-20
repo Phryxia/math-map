@@ -116,7 +116,7 @@ graph TD
 
 ## 집합론의 공리계
 
-먼저 읽을 갈래: 논리의 체계. 시작 문서: [ZFC 공리계](zfc-axioms.md). 먼저 읽을 것: [측도](measure.md)(측도론 개관).
+먼저 읽을 갈래: 논리의 체계. 시작 문서: [ZFC 공리계](zfc-axioms.md). 먼저 읽을 것: [측도](measure.md)(측도론 개관), [재귀함수](recursive-functions.md)(계산 개관).
 
 - [ZFC 공리계](zfc-axioms.md): Zermelo–Fraenkel 집합론에 선택공리를 더한 공리계, 분리와 치환
 - [서수](ordinals.md): 정렬순서의 유형, 초한 귀납법과 초한 재귀
