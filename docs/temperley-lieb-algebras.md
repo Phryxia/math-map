@@ -104,5 +104,6 @@ $\mathrm{End}\_{\mathrm{SL}\_2}(V^{\otimes k})$ 의 기저가 평면 도형이�
 ## 더 알아보기
 
 - [Jones–Wenzl 멱등원](jones-wenzl-idempotents.md)
+- [부분인자](subfactors.md)
 
 #algebra #combinatorics #topology #group_theory

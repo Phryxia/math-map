@@ -63,7 +63,7 @@ $$
 
 ## Temperley–Lieb 대수의 대각합
 
-Jones 는 $\mathrm{II}\_1$ 인자의 부분인자를 연구하다 [Temperley–Lieb 대수](temperley-lieb-algebras.md) $TL_n(\delta)$ 위에서 Markov 대각합을 찾았다. $B_n\to TL_n$ 은
+Jones 는 $\mathrm{II}\_1$ 인자의 [부분인자](subfactors.md)를 연구하다 [Temperley–Lieb 대수](temperley-lieb-algebras.md) $TL_n(\delta)$ 위에서 Markov 대각합을 찾았다. $B_n\to TL_n$ 은
 
 $$
 \sigma_i\longmapsto A+A^{-1}e_i,\qquad e_i^2=\delta e_i,\ e_ie_{i\pm1}e_i=e_i

@@ -115,11 +115,12 @@ graph TD
 
 ## 표현론
 
-먼저 읽을 갈래: 공간. 먼저 읽을 것: [위상군](topological-groups.md)(위상 개관), [군 표현](group-representations.md)(대수 개관). 시작 문서: [Pontryagin 쌍대성](pontryagin-duality.md).
+먼저 읽을 갈래: 공간, 작용소와 스펙트럼. 먼저 읽을 것: [위상군](topological-groups.md)(위상 개관), [군 표현](group-representations.md)(대수 개관). 시작 문서: [Pontryagin 쌍대성](pontryagin-duality.md).
 
 - [Pontryagin 쌍대성](pontryagin-duality.md) — 국소콤팩트 아벨군과 지표군의 대응, Fourier 변환의 군론적 틀
 - [Peter–Weyl 정리](peter-weyl.md) — 콤팩트 군의 정칙 표현이 기약 표현의 직합으로 분해되고 행렬계수가 $L^2$ 의 기저가 된다
   - [구면조화함수](spherical-harmonics.md) — 구면 위 $L^2$ 공간의 회전군 표현에 따른 분해
+- [부분인자](subfactors.md) — II₁ 형 인자의 부분인자와 Jones 지표. 지표가 4 미만에서 4cos²(π/n) 꼴만 가지고, Jones 사영이 Temperley–Lieb 관계를 만족한다
 
 # 연관 문서
 

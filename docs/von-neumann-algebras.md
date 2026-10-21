@@ -62,7 +62,7 @@ I 형은 $B(H)$ 와 동형이고 유한차원에서는 행렬 대수다. II$\_1$
 
 - 양자역학의 관측가능량. 한 물리계의 관측가능량 전체를 von Neumann 대수로 놓고 상태를 그 위의 양의 선형범함수로 본다. 교환자는 그 계와 독립적으로 측정되는 양의 대수다.
 - 군의 측도론적 동역학. 작용이 서로 켤레인지를 교차곱 대수의 동형으로 바꿔 묻는다. 측도 보존 작용의 불변량이 대수의 불변량이 된다.
-- 부분인자의 지표. 인자 $\mathcal N\subseteq\mathcal M$ 의 상대적 크기를 재는 지표는 $\lbrace 4\cos^2(\pi/n)\rbrace$ 과 $\lbrack 4,\infty\rbrack$ 에만 값을 가진다. 이 값의 제한에서 나온 대수적 자료가 [Temperley–Lieb 대수](temperley-lieb-algebras.md)와 매듭 불변량으로 이어진다.
+- [부분인자](subfactors.md)의 지표. 인자 $\mathcal N\subseteq\mathcal M$ 의 상대적 크기를 재는 지표는 $\lbrace 4\cos^2(\pi/n)\rbrace$ 과 $\lbrack 4,\infty\rbrack$ 에만 값을 가진다. 이 값의 제한에서 나온 대수적 자료가 [Temperley–Lieb 대수](temperley-lieb-algebras.md)와 매듭 불변량으로 이어진다.
 - [정점작용소대수](vertex-operator-algebras.md)와 공형장론의 작용소 대수적 정식화. 시공간 영역마다 대수를 배정하고 영역의 포함을 대수의 포함으로 옮긴다.
 
 [^1]: J. Dixmier, *von Neumann Algebras*, North-Holland (1981), 1장. 이중교환자 정리와 약작용소 위상의 비교가 여기 있다.
@@ -76,6 +76,6 @@ I 형은 $B(H)$ 와 동형이고 유한차원에서는 행렬 대수다. II$\_1$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [부분인자](subfactors.md)
 
 #functional_analysis #analysis #measure_theory #group_theory
