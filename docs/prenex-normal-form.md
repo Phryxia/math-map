@@ -73,7 +73,7 @@ $$
 
 - [결의법](resolution.md) 기반 자동 정리 증명은 입력 논리식을 Skolem 표준형으로 옮긴 뒤 모체를 논리곱 표준형으로 바꿔 절(clause) 집합을 만든다.
 - [Löwenheim–Skolem 정리](lowenheim-skolem.md)의 증명이 Skolem 함수로 부분구조를 만든다. 모형에서 존재 주장의 증거를 고르는 함수가 그대로 기본 부분구조를 준다.
-- 산술적 계층의 정의가 접두부의 교대 횟수를 쓴다. 정지 문제가 $\Sigma_1$ 에 드는 것은 그 문제를 "멈추는 단계 수가 존재한다" 꼴로 적을 수 있기 때문이다.
+- 산술적 계층의 정의가 접두부의 교대 횟수를 쓴다. [정지 문제](halting-problem.md)가 $\Sigma_1$ 에 드는 것은 그 문제를 "멈추는 단계 수가 존재한다" 꼴로 적을 수 있기 때문이다.
 - 2차 산술의 부분체계를 가르는 내포 공리는 내포 조건에 허용되는 접두부로 분류된다.
 
 [^1]: Herbert B. Enderton, *A Mathematical Introduction to Logic*, 2nd ed., Academic Press (2001), Ch. 2. 한정사 표준형의 존재, Skolem 함수, 만족가능성 보존이 이 장에 있다.

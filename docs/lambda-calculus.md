@@ -131,7 +131,7 @@ flowchart TD
 
 계산 능력이 같으므로 결정 불가능성 결과도 그대로 성립한다.
 
-- 주어진 항이 정규형을 갖는지는 결정 불가능하다. 정지 문제에 대응한다.
+- 주어진 항이 정규형을 갖는지는 결정 불가능하다. [정지 문제](halting-problem.md)에 대응한다.
 - 두 항이 $=\_\beta$ 인지도 결정 불가능하다(Church 의 정리). Scott–Curry 정리(Scott–Curry theorem)에 따르면 $=\_\beta$ 로 닫혀 있고 비어 있지 않으며 전체도 아닌 항 집합은 결정 불가능하다. 이것은 [Rice 정리](rice-theorem.md)의 lambda calculus 판본이다.
 - [유한 오토마타](finite-automata.md)처럼 계산 능력이 제한된 모형에서는 같은 질문들이 결정 가능하다.
 

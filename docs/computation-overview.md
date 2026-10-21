@@ -2,7 +2,7 @@
 
 # 개요
 
-계산 이론(theory of computation)은 기계가 무엇을 풀 수 있는지, 풀 수 있다면 얼마나 빨리 푸는지를 묻는다. 두 물음이 층위를 나눈다. 첫째 층위는 가부이고, 정지 문제가 알고리즘으로 풀리지 않는다는 대각선 논법이 답한다. 둘째 층위는 비용이고, $\mathrm P$ 와 $\mathrm{NP}$ 의 분리 여부와 NP(nondeterministic polynomial time)-완전 문제의 근사 한계가 답한다.
+계산 이론(theory of computation)은 기계가 무엇을 풀 수 있는지, 풀 수 있다면 얼마나 빨리 푸는지를 묻는다. 두 물음이 층위를 나눈다. 첫째 층위는 가부이고, [정지 문제](halting-problem.md)가 알고리즘으로 풀리지 않는다는 대각선 논법이 답한다. 둘째 층위는 비용이고, $\mathrm P$ 와 $\mathrm{NP}$ 의 분리 여부와 NP(nondeterministic polynomial time)-완전 문제의 근사 한계가 답한다.
 
 계산 이론의 갈래는 계산 모형과 결정 불가능성, 복잡도류와 환원, 알고리즘 설계와 그 알고리즘이 쓰는 자료구조, 계산 난해성을 안전성의 가정으로 삼는 암호, 유한체와 격자 위의 대수적 계산, 부호화 길이로 불확실성과 무작위성을 재는 정보이론, 분포를 학습해 표본을 만드는 생성모형이다. 최적화 쪽의 완화와 쌍대성은 [최적화 개관](optimization-overview.md)에, 논리 쪽의 대응은 [수학기초론 개관](foundations-overview.md)에 있다.
 
@@ -57,6 +57,7 @@ graph TD
 먼저 읽을 것: [기수](cardinality.md)(기초 개관). 시작 문서: [계산 가능성](computability.md).
 
 - [계산 가능성](computability.md): Turing 기계, 대각선 논법, 결정 불가능성
+  - [정지 문제](halting-problem.md): 프로그램이 멈추는지 판정하는 알고리즘이 없다는 Turing 의 정리, 계산 가능하게 열거 가능한 집합 가운데 완전성과 바쁜 비버 함수
   - [재귀함수](recursive-functions.md): 합성, 원시 재귀, 최소화로 정의한 함수족, Ackermann 함수와 Kleene 정규형
 - [Rice 정리](rice-theorem.md): 자명하지 않은 의미론적 성질은 모두 결정 불가능
   - [Rice–Shapiro 정리](rice-shapiro-theorem.md): 인식 가능한 의미론적 성질은 유한 조각으로 확인되는 것뿐

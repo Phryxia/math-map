@@ -6,7 +6,7 @@
 
 제약이 극단적인데도 이론이 유난히 잘 맞아떨어진다. 결정적 모델(deterministic finite automaton, DFA)과 비결정적 모델(nondeterministic finite automaton, NFA)은 같은 표현력을 갖는다. 정규 표현식이라는 문법적 기술과도 일치한다(Kleene 정리). 각 정규언어에는 상태 수가 최소인 DFA 가 동형을 제외하고 유일하게 존재한다(Myhill–Nerode 정리). 마지막 결과는 [동치관계](equivalence-relations.md)로 언어 자체를 분석해 얻고, 최소 DFA 의 상태가 곧 동치류다.
 
-[계산 가능성](computability.md)의 관점에서는 유한 오토마타가 Turing 기계의 가장 약한 극단이다. 정지 문제 같은 결정불가능성이 여기서는 전혀 나타나지 않는다. 공허성, 동치성, 포함관계가 모두 결정가능하며, 그 대가로 $0^n1^n$ 같은 간단한 언어조차 인식하지 못한다.
+[계산 가능성](computability.md)의 관점에서는 유한 오토마타가 Turing 기계의 가장 약한 극단이다. [정지 문제](halting-problem.md) 같은 결정불가능성이 여기서는 전혀 나타나지 않는다. 공허성, 동치성, 포함관계가 모두 결정가능하며, 그 대가로 $0^n1^n$ 같은 간단한 언어조차 인식하지 못한다.
 
 # 직관
 

@@ -63,7 +63,7 @@ Martin-Löf 무작위 수열 $x$ 에서는 다음이 성립한다.
 
 ## 차수
 
-Kučera–Gács 정리는 모든 수열이 어떤 Martin-Löf 무작위 수열에 Turing 환원된다고 말한다[^2]. 무작위성이 계산 능력의 약함을 뜻하지 않는다. 반대로 $\Omega$ 의 [Turing 차수](turing-degrees.md)는 $0'$ 이고, 정지 문제와 같은 정보를 담는 무작위 수열이 있다.
+Kučera–Gács 정리는 모든 수열이 어떤 Martin-Löf 무작위 수열에 Turing 환원된다고 말한다[^2]. 무작위성이 계산 능력의 약함을 뜻하지 않는다. 반대로 $\Omega$ 의 [Turing 차수](turing-degrees.md)는 $0'$ 이고, [정지 문제](halting-problem.md)와 같은 정보를 담는 무작위 수열이 있다.
 
 # 활용
 

@@ -8,7 +8,7 @@
 
 # 직관
 
-정지 문제 $\varnothing'$ 을 신탁으로 주고 다시 정지 문제를 물으면 $\varnothing''$ 이 나온다. 이것을 $n$ 번 되풀이한 $\varnothing^{(n)}$ 은 Post 정리에 따라 $\Sigma^0\_n$ 완전이고, 산술적 계층의 $n$ 번째 층이 이 집합으로 설명된다. $n$ 을 다 쓰면 층이 떨어진다. 그래도 다음 집합을 적을 수는 있다.
+[정지 문제](halting-problem.md) $\varnothing'$ 을 신탁으로 주고 다시 정지 문제를 물으면 $\varnothing''$ 이 나온다. 이것을 $n$ 번 되풀이한 $\varnothing^{(n)}$ 은 Post 정리에 따라 $\Sigma^0\_n$ 완전이고, 산술적 계층의 $n$ 번째 층이 이 집합으로 설명된다. $n$ 을 다 쓰면 층이 떨어진다. 그래도 다음 집합을 적을 수는 있다.
 
 $$
 \varnothing^{(\omega)}=\lbrace (n,x):x\in\varnothing^{(n)}\rbrace
