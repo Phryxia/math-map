@@ -74,7 +74,7 @@ $\vert K\vert\thinspace dA$ 는 단위법벡터 사상으로 당긴 구면의 �
 
 **정리(Fujimoto).** 평면이 아닌 완비 극소곡면의 단위법벡터 사상은 구면의 점을 많아야 $4$ 개 피한다[^3].
 
-평면 전체 위의 그래프로 된 극소곡면은 법벡터가 위쪽 반구에 있어 열린 집합을 피하므로 평면이다. [극소곡면](minimal-surfaces.md)의 Bernstein 정리가 이 정리에서 따라 나온다. Scherk 곡면은 정확히 $4$ 점을 피하므로 상한 $4$ 는 줄일 수 없다.
+평면 전체 위의 그래프로 된 극소곡면은 법벡터가 위쪽 반구에 있어 열린 집합을 피하므로 평면이다. [극소곡면](minimal-surfaces.md)의 Bernstein 정리가 이 정리에서 따라 나온다. [Scherk 곡면](scherk-surface.md)은 정확히 $4$ 점을 피하므로 상한 $4$ 는 줄일 수 없다.
 
 # 활용
 
@@ -95,6 +95,6 @@ $\vert K\vert\thinspace dA$ 는 단위법벡터 사상으로 당긴 구면의 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Scherk 곡면](scherk-surface.md)
 
 #differential_geometry #complex_analysis
