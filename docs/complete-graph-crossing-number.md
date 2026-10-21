@@ -30,7 +30,7 @@ $K_n$ 을 정점 $n$ 개의 완전그래프라 하고, $\mathrm{cr}(K_n)$ 을 �
 
 ## 직선 교차수
 
-변을 선분으로만 그린 그림에서 교차 개수의 최솟값을 $\overline{\mathrm{cr}}(G)$ 라 쓰고 **직선 교차수**라 한다. 곡선 그림이 더 많으므로 $\mathrm{cr}(G)\le\overline{\mathrm{cr}}(G)$ 이고, $K_8$ 에서 $\mathrm{cr}(K_8)=18$ 과 $\overline{\mathrm{cr}}(K_8)=19$ 로 두 값이 갈린다.[^2]
+변을 선분으로만 그린 그림에서 교차 개수의 최솟값을 $\overline{\mathrm{cr}}(G)$ 라 쓰고 **직선 교차수**라 한다. 곡선 그림이 더 많으므로 $\mathrm{cr}(G)\le\overline{\mathrm{cr}}(G)$ 이고, $K_8$ 에서 $\mathrm{cr}(K_8)=18$ 과 $\overline{\mathrm{cr}}(K_8)=19$ 로 두 값이 갈린다.[^2] $\overline{\mathrm{cr}}(K_n)$ 의 점근 상수는 [Sylvester 네 점 문제](sylvester-four-point.md)의 확률의 하한과 같다.
 
 # 성질
 
@@ -92,6 +92,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Sylvester 네 점 문제](sylvester-four-point.md)
 
 #graph_theory #combinatorics
