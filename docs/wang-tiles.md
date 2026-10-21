@@ -52,7 +52,7 @@ $$
 
 - [1차 논리](first-order-logic.md)의 결정 문제. Kahr, Moore, Wang 은 원점을 정한 도미노 문제를 써서, 한정사가 $\forall\exists\forall$ 꼴로 시작하는 문장의 충족 가능성이 결정 불가능함을 증명했다.
 - [Π⁰₁ 부류](pi01-classes.md). 타일 집합의 타일링 전체는 Π⁰₁ 부류로 부호화된다. Hanf 와 Myers 는 타일링이 존재하지만 계산 가능한 타일링은 존재하지 않는 타일 집합을 만들었다.
-- 비주기 쪽매. 회전을 허용한 다각형 타일에서도 비주기 집합이 존재하고, Penrose 는 두 종의 타일로 된 비주기 집합을 찾았다. Robinson 의 $56$ 종도 다각형 타일 $6$ 종에서 나왔다.
+- 비주기 쪽매. 회전을 허용한 다각형 타일에서도 비주기 집합이 존재하고, Penrose 는 두 종의 타일로 된 비주기 집합을 찾았다([Penrose 쪽매](penrose-tiling.md)). Robinson 의 $56$ 종도 다각형 타일 $6$ 종에서 나왔다.
 
 [^1]: H. Wang, Proving theorems by pattern recognition II, *Bell System Technical Journal* **40** (1961), 1–41.
 [^2]: R. Berger, The undecidability of the domino problem, *Memoirs of the American Mathematical Society* **66** (1966).
@@ -67,6 +67,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Penrose 쪽매](penrose-tiling.md)
 
 #computation #logic #combinatorics

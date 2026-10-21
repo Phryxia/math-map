@@ -149,9 +149,18 @@ Gauss 잡음 채널에서 격자 부호가 용량에 접근하고, $E_8$ 과 Lee
 
 ## 더 알아보기
 
+### 구조와 알고리즘
+
 - [격자 부분군](lattice-subgroups.md)
 - [최단벡터 문제](shortest-vector-problem.md)
+
+### 채우기와 쪽매
+
 - [구 채우기](sphere-packing.md)
+- [Penrose 쪽매](penrose-tiling.md)
+
+### 생성함수와 특수 격자
+
 - [theta 급수](theta-series.md)
 - [Leech 격자](leech-lattice.md)
 

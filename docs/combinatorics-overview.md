@@ -137,6 +137,7 @@ graph TD
 먼저 읽을 갈래: 세기의 기초. 먼저 읽을 것: [격자](lattices.md), [모듈러 형식](modular-forms.md)(정수론 개관), [Golay 부호](golay-codes.md)(정보이론 개관). 시작 문서: [구 채우기](sphere-packing.md).
 
 - [구 채우기](sphere-packing.md): 같은 크기의 공을 겹치지 않게 쌓아 얻는 밀도의 최댓값
+  - [Penrose 쪽매](penrose-tiling.md): 연과 화살촉 두 종으로 평면을 비주기적으로 덮는 쪽매, 합성의 유일성과 결정학적 제한
 - [theta 급수](theta-series.md): 격자 벡터를 길이별로 세어 만든 생성함수, 짝수 유니모듈러 격자에서 모듈러 형식이 된다
   - [Siegel–Weil 공식](siegel-weil.md): 같은 류의 정부호 이차형식의 표현 개수를 가중 평균한 값에 닫힌 식을 준다
 - [Niemeier 격자](niemeier-lattices.md): 24 차원 짝수 유니모듈러 격자 24 개의 분류, 근계로 구분된다
