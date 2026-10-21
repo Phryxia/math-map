@@ -75,6 +75,7 @@ $$
 # 활용
 
 - **평형점의 판정.** [상미분방정식](ordinary-differential-equations.md)의 평형점 안정성 절이 쓰는 고윳값 판정이 선형화 정리이고, 실수부가 $0$ 인 고윳값이 있을 때 찾는 함수가 Lyapunov 함수다.
+- **주기해의 존재.** 평면의 방정식에서 불안정한 평형점 둘레에 해가 빠져나가지 못하는 고리 영역이 있으면 [Poincaré–Bendixson 정리](poincare-bendixson.md)가 그 안의 주기해를 준다. 평형점이 불안정하다는 것은 선형화로 판정한다.
 - **보존계.** [Hamilton 역학](hamiltonian-mechanics.md)에서 에너지는 해를 따라 보존되므로 $\dot V=0$ 이다. 에너지가 극소인 평형점은 안정하지만 점근 안정하지는 않다.
 - **경사 흐름.** $x'=-\nabla F(x)$ 에서 $V=F-F(x^\ast)$ 는 $\dot V=-\vert\nabla F\vert^2\le 0$ 을 만족한다. [경사하강법](gradient-descent.md)의 수렴 증명은 이 계산을 이산 시간에서 하는 것이다.
 - **선형 행렬 부등식.** 조건 $P\succ 0$, $A^{\mathsf T}P+PA\prec 0$ 을 만족하는 $P$ 를 찾는 문제는 [반정부호 계획법](semidefinite-programming.md)의 실현가능성 문제다. 매개변수가 불확실한 선형계에서 모든 $A$ 에 공통인 $P$ 를 찾아 안정성을 보이는 데 쓴다.
@@ -90,6 +91,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Poincaré–Bendixson 정리](poincare-bendixson.md)
 
 #analysis #optimization
