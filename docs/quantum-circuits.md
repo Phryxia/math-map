@@ -62,7 +62,7 @@ $H$, $S$, $\mathrm{CNOT}$ 이 생성하는 군을 **Clifford 군(Clifford group)
 
 # 활용
 
-- 소인수분해. Shor 알고리즘은 정수 $N$ 의 소인수분해를 $\log N$ 의 다항 크기 회로로 풀고, 그래서 [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 안전성 가정이 양자 회로 앞에서 무너진다. 이 위험에 대비한 체계가 [양자 내성 암호](post-quantum-cryptography.md)다.
+- 소인수분해. [Shor 알고리즘](shor-algorithm.md)은 정수 $N$ 의 소인수분해를 $\log N$ 의 다항 크기 회로로 풀고, 그래서 [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 안전성 가정이 양자 회로 앞에서 무너진다. 이 위험에 대비한 체계가 [양자 내성 암호](post-quantum-cryptography.md)다.
 - 회로 컴파일. 하드웨어가 제공하는 보편 게이트 집합으로 알고리즘의 유니터리를 근사할 때 Solovay–Kitaev 정리의 근사 길이를 쓴다.
 - 오류정정. 양자 오류정정부호는 Clifford 회로로 부호화와 증후 측정을 하고, Gottesman–Knill 정리로 그 부분을 고전 시뮬레이션해 검증한다.
 
@@ -79,6 +79,6 @@ $H$, $S$, $\mathrm{CNOT}$ 이 생성하는 군을 **Clifford 군(Clifford group)
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Shor 알고리즘](shor-algorithm.md)
 
 #computation #linear_algebra #group_theory
