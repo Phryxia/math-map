@@ -121,6 +121,7 @@ $Y$ 가 단순연결이면 조건이 자동으로 만족된다. 경로와 호모
 
 - [감김수](winding-number.md)
 - [올화](fibrations.md)
+- [공간형](space-forms.md)
 - [쌍곡 3 다양체](hyperbolic-3-manifolds.md)
 
 ### 다른 분야에서의 쓰임

@@ -55,7 +55,7 @@ Killing 방정식과 그 한 번 미분한 식이 한 점에서 $X$ 와 $\nabla 
 # 활용
 
 - 측지선 방정식의 1차 적분을 얻는다. 보존량 하나마다 풀어야 할 방정식이 하나 줄어든다.
-- 상수곡률 공간을 가려낸다. Killing 벡터장의 차원이 상한에 닿는 것이 상수곡률의 특징이다.
+- 상수곡률 공간([공간형](space-forms.md))을 가려낸다. Killing 벡터장의 차원이 상한에 닿는 것이 상수곡률의 특징이다.
 - 등거리변환군의 차원을 계량에서 바로 읽는다. 일반적인 계량에서는 Killing 벡터장이 $0$ 뿐이다.
 
 [^1]: Shoshichi Kobayashi, Katsumi Nomizu, *Foundations of Differential Geometry*, vol. 1, Interscience (1963), 6 장. Killing 벡터장의 Lie 대수와 차원 상한을 다룬다.

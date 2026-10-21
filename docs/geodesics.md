@@ -98,5 +98,6 @@ $(M,g)$ 가 연결일 때 다음이 동치다.[^1]
 ## 더 알아보기
 
 - [측지선의 비교정리](geodesic-comparison-theorems.md)
+- [공간형](space-forms.md)
 
 #differential_geometry #analysis #topology
