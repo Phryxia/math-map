@@ -129,5 +129,6 @@ $$
 - [Siegel 모듈라이 다양체](siegel-modular-variety.md)
 - [Faltings 정리](faltings-theorem.md)
 - [Mordell–Lang 추측](mordell-lang.md)
+- [Néron 모델](neron-models.md)
 
 #algebra #number_theory #complex_analysis

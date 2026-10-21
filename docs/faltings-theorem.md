@@ -30,7 +30,7 @@ $$
 
 ## Faltings 높이
 
-$A$ 를 수체 $K$ 위의 $g$ 차원 아벨 다양체, $\mathcal A\to\mathrm{Spec}\thinspace O_K$ 를 그 Néron 모델(Néron model), $e$ 를 영 절단이라 한다. 상대 미분형식의 최고차 외부거듭제곱을 영 절단으로 당긴
+$A$ 를 수체 $K$ 위의 $g$ 차원 아벨 다양체, $\mathcal A\to\mathrm{Spec}\thinspace O_K$ 를 그 [Néron 모델](neron-models.md), $e$ 를 영 절단이라 한다. 상대 미분형식의 최고차 외부거듭제곱을 영 절단으로 당긴
 
 $$
 \omega\_{\mathcal A}=e^\ast\Omega^g\_{\mathcal A/O_K}
