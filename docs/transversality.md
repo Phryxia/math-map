@@ -65,7 +65,7 @@ $M$ 이 콤팩트 방향가능이고 $\dim A+\dim B=\dim M$ 이면 횡단 교차
 - [Morse 이론](morse-theory.md): 임계점의 안정다양체와 불안정다양체가 모든 쌍에서 횡단으로 만나는 조건이 Morse–Smale 쌍의 정의이고, 흐름선을 세어 경계사상을 만드는 자리에서 쓴다.
 - [Whitney 매장 정리](whitney-embedding.md): 사영한 상의 이중점이 일반 위치에서 횡단 교차이므로 유한 개이고, 그래야 Whitney 트릭으로 쌍을 지울 수 있다.
 - [Brouwer 차수](brouwer-degree.md): 호모토피 불변성의 증명에서 원상이 $1$ 차원 다양체가 되는 것이 호모토피의 횡단성이다.
-- 교차 이론: 대수다양체의 교차 중복도를 정의하는 자리에서 횡단 교차를 중복도 $1$ 의 기준으로 삼는다.
+- [교차 이론](intersection-theory.md): 대수다양체의 교차 중복도를 정의하는 자리에서 횡단 교차를 중복도 $1$ 의 기준으로 삼는다.
 
 [^1]: Guillemin–Pollack, *Differential Topology*, 2 장에 이 정리와 조밀성 결과의 증명이 있다.
 
@@ -78,6 +78,6 @@ $M$ 이 콤팩트 방향가능이고 $\dim A+\dim B=\dim M$ 이면 횡단 교차
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [교차 이론](intersection-theory.md)
 
 #differential_geometry #topology #algebraic_topology

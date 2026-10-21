@@ -64,7 +64,7 @@ $A\subseteq R$ 가 [Noether 정규화](noether-normalization.md), 곧 $A$ 가 �
 
 # 활용
 
-- **교차 이론.** Cohen–Macaulay 스킴 위에서 초곡면을 자를 때마다 차원이 정확히 $1$ 씩 떨어지므로, 정칙열로 정의한 완전교차의 차원 계산이 예상대로 나온다.
+- **[교차 이론](intersection-theory.md).** Cohen–Macaulay 스킴 위에서 초곡면을 자를 때마다 차원이 정확히 $1$ 씩 떨어지므로, 정칙열로 정의한 완전교차의 차원 계산이 예상대로 나온다.
 - **불변량 이론.** 선형 환원군이 정칙환에 작용할 때 불변량환이 Cohen–Macaulay 다[^2].
 - **조합론.** 단체 복합체의 Stanley–Reisner 환이 Cohen–Macaulay 인 조건이 복합체의 위상으로 읽히고, 이것이 단체 다포체의 면 개수 상한을 준다[^3].
 - **정규성 판정.** Noether 환이 정규인 것은 Serre 조건 $R_1$ 과 $S_2$ 를 함께 만족하는 것이고, Cohen–Macaulay 환은 $S_2$ 를 자동으로 만족한다.
