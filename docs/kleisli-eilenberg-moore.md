@@ -2,7 +2,7 @@
 
 # 개요
 
-[Monad](monads.md)는 수반에서 나온다. $F \dashv G$ 가 있으면 $T = GF$ 가 monad 다. 반대로 monad $T$ 가 주어졌을 때 $T = GF$ 가 되는 수반은 여럿이고, 이들 전체가 하나의 범주를 이룬다.
+**Kleisli 범주(Kleisli category)** 와 **Eilenberg–Moore 범주(Eilenberg–Moore category)** 는 [monad](monads.md) $T$ 를 낳는 수반들의 범주에서 각각 시작대상과 종단대상이 되는 분해다. Monad 는 수반에서 나온다. $F \dashv G$ 가 있으면 $T = GF$ 가 monad 다. 반대로 monad $T$ 가 주어졌을 때 $T = GF$ 가 되는 수반은 여럿이고, 이들 전체가 하나의 범주를 이룬다.
 
 그 범주에는 양 끝이 있다. Kleisli 범주가 시작대상이고 Eilenberg–Moore 범주가 종단대상이므로, $T$ 를 낳는 가장 작은 분해와 가장 큰 분해가 존재하고 다른 모든 분해가 그 사이에 낀다.
 
