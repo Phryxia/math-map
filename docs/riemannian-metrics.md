@@ -214,6 +214,7 @@ $$
 - [대칭공간](symmetric-spaces.md)
 - [Gauss–Bonnet 정리](gauss-bonnet.md)
 - [Ricci 흐름](ricci-flow.md)
+- [양의 질량 정리](positive-mass-theorem.md)
 
 ### 해석과 스펙트럼
 

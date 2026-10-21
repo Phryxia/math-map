@@ -89,7 +89,7 @@ Douglas 는 넓이 대신 Dirichlet 에너지 $\tfrac12\iint(\vert r_u\vert^2+\v
 # 활용
 
 - **비선형 타원형 방정식의 정칙성.** 극소곡면 방정식은 비선형 타원형 방정식이다. 약한 해가 매끄럽다는 증명은 선형화한 방정식에 [타원형 정칙성](elliptic-regularity.md)과 [De Giorgi–Nash–Moser 정리](de-giorgi-nash-moser.md)를 쓴다.
-- **일반상대성이론의 양의 질량 정리(positive mass theorem).** Schoen 과 Yau 는 질량이 음수라고 가정하면 넓이를 최소화하는 곡면이 존재하고, 그 곡면의 안정성 조건이 스칼라 곡률의 부호와 모순됨을 보여 정리를 증명했다[^7].
+- **일반상대성이론의 [양의 질량 정리](positive-mass-theorem.md).** Schoen 과 Yau 는 질량이 음수라고 가정하면 넓이를 최소화하는 곡면이 존재하고, 그 곡면의 안정성 조건이 스칼라 곡률의 부호와 모순됨을 보여 정리를 증명했다[^7].
 - **건축의 막 구조.** 경계 케이블을 고정한 인장막 지붕의 형상을 극소곡면 방정식의 수치해로 정한다. 모든 점에서 막의 장력이 같아진다.
 
 [^1]: R. Osserman, *A Survey of Minimal Surfaces*, Dover, 1986, §1 과 §3. 회전 극소곡면과 선직 극소곡면의 분류.
@@ -111,5 +111,6 @@ Douglas 는 넓이 대신 Dirichlet 에너지 $\tfrac12\iint(\vert r_u\vert^2+\v
 
 - [Weierstrass–Enneper 표현](weierstrass-enneper.md)
 - [평균곡률 흐름](mean-curvature-flow.md)
+- [양의 질량 정리](positive-mass-theorem.md)
 
 #differential_geometry #analysis #optimization
