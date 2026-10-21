@@ -80,6 +80,7 @@ graph TD
 - [반정부호 계획법](semidefinite-programming.md): 반정부호 행렬 위의 완화와 Goemans–Williamson 알고리즘
   - [행렬 완성](matrix-completion.md): 일부만 관측된 저계수 행렬을 핵노름 최소화로 복원하는 문제, coherence 조건과 정확 복원 정리
   - [Lovász 세타 함수](lovasz-theta.md): 독립수와 채색수 사이에 끼는 반정부호 계획값
+- [안정집합 다면체](stable-set-polytope.md): 안정집합 지시벡터의 볼록 껍질, 홀수 사이클 부등식과 클릭 부등식, 완벽그래프 판정과 확장 복잡도
 
 ## 게임과 균형
 

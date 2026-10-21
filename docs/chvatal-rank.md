@@ -64,7 +64,7 @@ $\mathrm{rank}(P)=0$ 인 것과 $P=P_I$ 인 것이 같다. [완전 단일모듈 
 
 ## 홀수 사이클 부등식
 
-그래프 $G$ 의 안정집합 완화 $\lbrace x\ge0:x_i+x_j\le1\ (ij\in E)\rbrace$ 에서, 길이 $2k+1$ 인 사이클 $C$ 의 변 부등식에 $u=1/2$ 씩 주고 내림하면 다음을 얻는다.
+그래프 $G$ 의 [안정집합 다면체](stable-set-polytope.md)의 변 완화 $\lbrace x\ge0:x_i+x_j\le1\ (ij\in E)\rbrace$ 에서, 길이 $2k+1$ 인 사이클 $C$ 의 변 부등식에 $u=1/2$ 씩 주고 내림하면 다음을 얻는다.
 
 $$
 \sum_{i\in C}x_i\le k
