@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-21T09:01:43.903Z",
-  "nextSeq": 2321,
+  "savedAt": "2026-10-21T13:01:38.732Z",
+  "nextSeq": 2327,
   "items": [
     {
       "id": "9bab7237",
@@ -2410,6 +2410,14 @@
       "note": "74차(2026-10-20) 전수. 4절 수식·문체 grep 열 가지를 docs 전체(912 문서)에 돌린 결과다. 이스케이프 awk 0, 태그로 읽히는 부등호 0, 줄 끝 백슬래시 0, 금지 매크로 0, 제목·헤딩 수식 0, 열린 문제 절 이름 0, 범위 뭉뚱그린 문장 0, 코드블록 언어 위반 0. 보고가 나온 둘은 모두 오탐이고 기존 메모의 꼴과 같다. (1) 문장형 헤딩 grep 23 건. 22 건이 ## 증명의 요지 이고(area-formula, baker-theorem, banach-alaoglu, bolzano-weierstrass, casselman-shalika, chebotarev, deligne-weil-conjectures, faltings-theorem, finitely-generated-modules, freedman-theorem, gauss-bonnet, hartshorne-lichtenbaum, heine-borel, index-theorem, lagrange-inversion, noether-theorem, pila-wilkie-theorem, rademacher-theorem, seifert-van-kampen, spectral-sparsification, spectral-theorem, tunnell-saito) b6d57420, 4df4b0f8, 5bd27ea2 가 적은 요지 오탐이다. 남은 1 건은 potential-theory 37줄의 ## 퍼텐셜과 에너지 이고 에너지의 끝글자 지 때문에 걸린 새 오탐 꼴이다. 패턴의 [^로]지 를 좁히려면 요지 와 에너지 를 함께 빼야 한다. (2) 금지 동사 grep 2 건. hamiltonian-monte-carlo 86줄 궤적이 되돌아오기 와 wkb-approximation 148줄 파동이 되돌아오는 이다. 둘 다 물체가 실제로 되돌아오는 운동을 적은 것이고 4절이 금지하는 것은 수학적 관계를 되돌린다 로 적는 비유(정리가 공리를 되돌려 증명한다)이므로 오탐이다. f0ed53a3 의 오탐 목록에 이 두 꼴을 더한다. 다음 회차는 이 수치를 기준선으로 쓴다. 23 과 2 를 넘는 보고가 나오면 그 회차에 생긴 실제 위반이다.",
       "createdAt": "2026-10-20T04:56:08.719Z",
       "seq": 2279
+    },
+    {
+      "id": "d1014280",
+      "title": "83차 새 문서 여덟의 후속 간선",
+      "priority": 11,
+      "note": "83차(2026-10-21)에 halting-problem 아래 kleene-recursion-theorem, post-correspondence-problem, hilberts-tenth-problem(부모 pell-equation 도), wang-tiles 를, 그 아래 penrose-tiling(부모 lattices 도, combinatorics-overview 격자와 부호 갈래)과 arslanov-completeness-criterion(부모 turing-degrees 도)을 썼다. finite-automata 아래 context-free-grammars, perron-frobenius 와 entropy 아래 shifts-of-finite-type(information-theory-overview 정보량 갈래)도 썼다. 리프 후보: Kolmogorov 복잡도의 계산 불가능성을 재귀 정리로 증명하는 절(kolmogorov-complexity 보강, 상수 처리 확인 뒤), 준결정(문서 없음, penrose-tiling 활용 첫 항목), 단일 비주기 타일(penrose-tiling 활용 둘째 항목), 대각선 비계산 함수(arslanov 의 정의 절에 있다, 분리 여부 판단), 푸시다운 오토마타 분리 여부와 Ogden 보조정리(context-free-grammars), Markov 분할(shifts-of-finite-type 활용 셋째 항목). Post 의 단순 집합 문서를 만들면 제목이 simplicial-sets 의 '단순 집합' 과 겹치므로 다른 이름을 고른다.",
+      "createdAt": "2026-10-21T13:01:27.793Z",
+      "seq": 2326
     },
     {
       "id": "09c81cac",
