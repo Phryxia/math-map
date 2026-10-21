@@ -127,5 +127,6 @@ $$
 
 - [Fredholm 행렬식](fredholm-determinant.md)
 - [지표 정리](index-theorem.md)
+- [작용소 K 이론](operator-k-theory.md)
 
 #functional_analysis #analysis #topology
