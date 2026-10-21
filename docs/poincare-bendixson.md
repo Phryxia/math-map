@@ -51,7 +51,7 @@ $K$ 에 평형점이 없으면 1 과 3 이 불가능하므로 $\omega(x_0)$ 은 
 
 ## 3 차원 이상
 
-정리는 평면에서만 성립한다. 증명의 횡단선 논증이 Jordan 곡선 정리에 기대고, 3 차원 공간에서는 닫힌 곡선이 공간을 두 조각으로 나누지 않는다. Lorenz 방정식(Lorenz system)
+정리는 평면에서만 성립한다. 증명의 횡단선 논증이 Jordan 곡선 정리에 기대고, 3 차원 공간에서는 닫힌 곡선이 공간을 두 조각으로 나누지 않는다. [Lorenz 방정식](lorenz-system.md)
 
 $$
 x'=\sigma(y-x),\qquad y'=x(\rho-z)-y,\qquad z'=xy-\beta z
@@ -77,6 +77,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lorenz 방정식](lorenz-system.md)
 
 #analysis #topology
