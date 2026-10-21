@@ -66,5 +66,6 @@ $K$ 는 계산 가능하게 열거 가능하다. $e=0,1,2,\dots$ 의 계산을 �
 - [Kleene 재귀 정리](kleene-recursion-theorem.md)
 - [Post 대응 문제](post-correspondence-problem.md)
 - [Hilbert 의 10번 문제](hilberts-tenth-problem.md)
+- [Wang 타일](wang-tiles.md)
 
 #computation #logic #theorem
