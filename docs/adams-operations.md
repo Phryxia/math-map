@@ -67,6 +67,7 @@ $$
 ## 선수지식
 
 - [Bott 주기성](bott-periodicity.md)
+- [Hopf 불변량](hopf-invariant.md)
 
 ## 더 알아보기
 
