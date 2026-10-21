@@ -75,7 +75,7 @@ $$S\_\lambda(u)=\mathrm{sign}(u)\max(\vert u\vert-\lambda,0)$$
 - LASSO 회귀: 설명변수가 표본보다 많은 자료에서 계수를 추정하면서 $0$ 이 아닌 계수의 집합을 함께 고른다. 벌점 $\lambda$ 가 고르는 변수의 개수를 조절한다.
 - [근접 경사법](proximal-gradient-method.md): 연성 문턱을 근접 단계로 쓰는 반복이 기저 추구와 LASSO 의 표준 알고리즘이다.
 - 자기공명영상(magnetic resonance imaging, MRI): 영상이 웨이블릿 기저에서 희소하다는 것을 써서 측정 횟수를 줄인다.
-- 행렬 완성: 벡터의 희소성 자리에 특잇값의 희소성을 놓고 $\ell\_1$ 노름 자리에 핵노름을 놓으면 같은 구조의 볼록 문제가 된다.
+- [행렬 완성](matrix-completion.md): 벡터의 희소성 자리에 특잇값의 희소성을 놓고 $\ell\_1$ 노름 자리에 핵노름을 놓으면 같은 구조의 볼록 문제가 된다.
 
 [^1]: Natarajan, *Sparse approximate solutions to linear systems*, SIAM Journal on Computing 24 (1995), 227–234.
 [^2]: Candès, *The restricted isometry property and its implications for compressed sensing*, Comptes Rendus Mathematique 346 (2008), 589–592.
@@ -90,6 +90,6 @@ $$S\_\lambda(u)=\mathrm{sign}(u)\max(\vert u\vert-\lambda,0)$$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [행렬 완성](matrix-completion.md)
 
 #optimization #statistics #linear_algebra #machine_learning
