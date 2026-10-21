@@ -2,7 +2,7 @@
 
 # 개요
 
-[Gan–Gross–Prasad 추측](gan-gross-prasad.md)의 계수를 끝까지 내리면 쌍 $\mathrm{SO}(3)\times\mathrm{SO}(2)$ 가 남는다. $\mathrm{SO}(3)$ 는 $\mathrm{PGL}\_2$ 이고 $\mathrm{SO}(2)$ 는 토러스다. 이 경우의 GGP 는 1985 년에 증명된 **Waldspurger 정리**다.
+**Waldspurger 정리(Waldspurger's theorem)** 는 $\mathrm{PGL}\_2$ 의 첨점형식의 토릭 주기의 제곱을 중심 $L$ 값과 국소 인자의 곱으로 나타내는 공식이다. [Gan–Gross–Prasad 추측](gan-gross-prasad.md)의 계수를 끝까지 내리면 쌍 $\mathrm{SO}(3)\times\mathrm{SO}(2)$ 가 남는다. $\mathrm{SO}(3)$ 는 $\mathrm{PGL}\_2$ 이고 $\mathrm{SO}(2)$ 는 토러스다. 이 경우의 GGP 는 1985 년에 증명된 Waldspurger 정리다.
 
 $\mathrm{PGL}\_2$ 위의 첨점형식 $\pi$ 와 허수이차체 $K$ 의 지표 $\chi$ 에 대해 **토릭 주기**를 정의한다.
 

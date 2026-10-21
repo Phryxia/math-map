@@ -2,7 +2,7 @@
 
 # 개요
 
-[Chern–Simons 이론](chern-simons.md)의 작용은 게이지 불변이 아니다. 닫힌 3 다양체에서는 게이지 변환에 따른 변화가 $2\pi\mathbb Z$ 라서 $e^{iS}$ 가 불변이고, 레벨 $k$ 의 정수성이 거기서 나왔다. 3 다양체에 경계가 있으면 변화량에 경계 적분 항이 남고 그 항은 사라지지 않는다.
+**Wess–Zumino–Witten 모형(Wess–Zumino–Witten model)** 은 곡면에서 콤팩트 [Lie 군](lie-groups.md)으로 가는 사상을 장으로 두고, 운동 항에 Wess–Zumino 항을 더한 작용을 갖는 2 차원 등각장론이다. [Chern–Simons 이론](chern-simons.md)의 작용은 게이지 불변이 아니다. 닫힌 3 다양체에서는 게이지 변환에 따른 변화가 $2\pi\mathbb Z$ 라서 $e^{iS}$ 가 불변이고, 레벨 $k$ 의 정수성이 거기서 나왔다. 3 다양체에 경계가 있으면 변화량에 경계 적분 항이 남고 그 항은 사라지지 않는다.
 
 $$
 M=\text{3 다양체},\quad \partial M=\Sigma \ \Longrightarrow\ \delta_{\text{gauge}}S_{\mathrm{CS}}\big|\_{\Sigma}\ne0
@@ -44,7 +44,7 @@ $$
 
 ## 작용
 
-콤팩트 단순 [Lie 군](lie-groups.md) $G$ 와 정수 $k$ 에 대해 장 $g:\Sigma\to G$ 의 **WZW 작용**은 다음이고 $\Gamma$ 는 Wess–Zumino 항이다.
+콤팩트 단순 Lie 군 $G$ 와 정수 $k$ 에 대해 장 $g:\Sigma\to G$ 의 **WZW 작용**은 다음이고 $\Gamma$ 는 Wess–Zumino 항이다.
 
 $$
 S_k(g)=\frac{k}{16\pi}\int_\Sigma\mathrm{tr}\big(g^{-1}\partial^\mu g\thinspace g^{-1}\partial_\mu g\big)\thinspace d^2x\thickspace+\thickspace k\thinspace\Gamma(g)

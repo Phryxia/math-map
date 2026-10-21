@@ -2,7 +2,7 @@
 
 # 개요
 
-확률측도 전체가 이루는 공간에 [최적 수송](optimal-transport.md)의 $W_2$ 거리를 주면 그 공간이 형식적인 Riemann 다양체가 된다. 이 기하에서 열방정식 $\partial_t\rho=\Delta\rho$ 가 엔트로피의 경사하강이다.
+**Wasserstein 기울기 흐름(Wasserstein gradient flow)** 은 확률측도의 공간에 [최적 수송](optimal-transport.md)의 $W_2$ 거리를 주고 그 거리에 대해 범함수를 가장 빨리 줄이는 방향으로 움직이는 흐름이다. 확률측도 전체가 이루는 공간에 최적 수송의 $W_2$ 거리를 주면 그 공간이 형식적인 Riemann 다양체가 된다. 이 기하에서 열방정식 $\partial_t\rho=\Delta\rho$ 가 엔트로피의 경사하강이다.
 
 $$
 \partial_t\rho=\nabla\negthinspace\cdot\negthinspace\Big(\rho\thinspace\nabla\frac{\delta\mathcal F}{\delta\rho}\Big),

@@ -2,7 +2,7 @@
 
 # 개요
 
-[정점작용소대수](vertex-operator-algebras.md) $V$ 의 [가군](modules.md) $M$ 에 지표를 붙인다.
+**Zhu 대수(Zhu algebra)** $A(V)$ 는 [정점작용소대수](vertex-operator-algebras.md) $V$ 에서 만든 결합대수로, 그 기약 가군이 $V$ 의 기약 가군의 최저 무게 공간과 일대일 대응한다. $V$ 의 [가군](modules.md) $M$ 에 지표를 붙인다.
 
 $$
 \mathrm{ch}\_M(\tau)=\mathrm{tr}\_Mq^{L_0-c/24},\qquad q=e^{2\pi i\tau}

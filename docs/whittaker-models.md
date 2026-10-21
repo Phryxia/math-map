@@ -2,7 +2,7 @@
 
 # 개요
 
-[Rankin–Selberg 적분](rankin-selberg.md)이 Euler 곱으로 쪼개지려면 전역 적분의 피적분함수가 자리마다의 곱으로 분해되어야 하고, 그 분해를 보장하는 것이 **Whittaker 모형의 유일성**이다.
+**Whittaker 모형(Whittaker model)** 은 $\mathrm{GL}\_n$ 의 표현을 상삼각 멱단군 위에서 비퇴화 지표로 변환하는 함수들의 공간으로 실현한 것이다. [Rankin–Selberg 적분](rankin-selberg.md)이 Euler 곱으로 쪼개지려면 전역 적분의 피적분함수가 자리마다의 곱으로 분해되어야 하고, 그 분해를 보장하는 것이 Whittaker 모형의 유일성이다.
 
 $\mathrm{GL}\_n$ 의 상삼각 멱단군 $N$ 과 그 위의 비퇴화 지표 $\psi_N$ 에 대해, 표현 $\pi$ 의 Whittaker 모형은 $\pi$ 를 다음 성질을 갖는 함수공간으로 실현한 것이다.
 

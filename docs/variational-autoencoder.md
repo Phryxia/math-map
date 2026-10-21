@@ -2,11 +2,11 @@
 
 # 개요
 
-[확률적 PCA](probabilistic-pca.md)(principal component analysis)는 잠재변수 $z$ 를 Gauss 분포에서 뽑고 선형변환한 뒤 등방성 잡음을 더해 데이터를 만든다. 선형이라는 가정 덕분에 사후분포 $p(z\mid x)$ 가 Gauss 로 닫힌 형태로 나오고, 최대가능도 해가 고전 PCA 와 일치한다.
+**변분 오토인코더(variational autoencoder, VAE)** 는 잠재변수 생성모형의 디코더와 근사 사후분포의 인코더를 신경망으로 두고, 로그 가능도의 변분 하계를 함께 최대화해 학습하는 모형이다. [확률적 PCA](probabilistic-pca.md)(principal component analysis)는 잠재변수 $z$ 를 Gauss 분포에서 뽑고 선형변환한 뒤 등방성 잡음을 더해 데이터를 만든다. 선형이라는 가정 덕분에 사후분포 $p(z\mid x)$ 가 Gauss 로 닫힌 형태로 나오고, 최대가능도 해가 고전 PCA 와 일치한다.
 
 $z\mapsto x$ 를 신경망으로 바꾸면 표현력이 늘지만 주변가능도 $p(x)=\int p(x\mid z)p(z)\thinspace dz$ 의 적분이 닫히지 않고 사후분포도 계산할 수 없다. 최대가능도 학습의 두 축이 동시에 막힌다.
 
-**변분 오토인코더(variational autoencoder, VAE)** 의 해법은 둘이다. 사후분포를 다루기 쉬운 분포족으로 근사하고 그 품질을 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 재면 $\log p(x)$ 의 하계인 **ELBO**(evidence lower bound)가 나오고, 최대가능도가 하계 최대화로 바뀐다. 그 하계를 [경사하강법](gradient-descent.md)으로 올릴 때 기댓값 안에 최적화 대상이 있어 생기는 기울기 추정 문제는 재매개화라는 변수변환이 해결한다.
+VAE 의 해법은 둘이다. 사후분포를 다루기 쉬운 분포족으로 근사하고 그 품질을 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 재면 $\log p(x)$ 의 하계인 **ELBO**(evidence lower bound)가 나오고, 최대가능도가 하계 최대화로 바뀐다. 그 하계를 [경사하강법](gradient-descent.md)으로 올릴 때 기댓값 안에 최적화 대상이 있어 생기는 기울기 추정 문제는 재매개화라는 변수변환이 해결한다.
 
 인코더와 디코더 두 신경망을 함께 학습한다. 확률적 PCA 의 선형 사영과 복원을 각각 신경망으로 바꾼다.
 

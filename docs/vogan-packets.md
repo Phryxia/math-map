@@ -2,7 +2,7 @@
 
 # 개요
 
-[Langlands 강령](langlands-program.md)의 국소 판본은 국소체 $F$ 위의 환원군 $G$ 의 기약 표현에 **L 매개변수**로 이름표를 붙인다.
+**Vogan L 꾸러미(Vogan L-packet)** 는 하나의 L 매개변수에 대응하는 기약 표현들을 순수 내부 형식(pure inner form) 전체에 걸쳐 모은 집합이다. [Langlands 강령](langlands-program.md)의 국소 판본은 국소체 $F$ 위의 환원군 $G$ 의 기약 표현에 **L 매개변수**로 이름표를 붙인다.
 
 $$
 \varphi:W_F\times\mathrm{SL}\_2(\mathbb C)\longrightarrow{}^LG

@@ -2,7 +2,7 @@
 
 # 개요
 
-$N\times N$ 실 대칭행렬의 성분을 평균 0, 분산 1 로 독립하게 뽑고 $\sqrt N$ 으로 나누면 [고윳값](eigenvalues.md)의 경험분포가 다음으로 수렴한다.
+**Wigner 반원법칙(Wigner semicircle law)** 은 무작위 대칭행렬의 [고윳값](eigenvalues.md) 경험분포가 행렬 크기가 커질 때 반원 분포로 수렴한다는 정리다. $N\times N$ 실 대칭행렬의 성분을 평균 0, 분산 1 로 독립하게 뽑고 $\sqrt N$ 으로 나누면 고윳값의 경험분포가 다음으로 수렴한다.
 
 $$
 \rho_{\mathrm{sc}}(x) = \frac{1}{2\pi}\sqrt{4 - x^2}, \qquad x \in [-2, 2]

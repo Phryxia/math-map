@@ -2,7 +2,7 @@
 
 # 개요
 
-[PCP 정리](pcp-theorem.md)(probabilistically checkable proof)는 어떤 문제를 특정 비율보다 잘 근사하는 것이 $\mathrm{NP}$ 난해임을 보인다. 그 한계선과 [반정부호 계획법](semidefinite-programming.md)이 주는 알고리즘의 성능 사이에는 대체로 간극이 남고, 최대 절단이 대표적이다.
+**유일게임 추측(unique games conjecture)** 은 간선마다 양 끝 라벨 사이의 순열 제약이 붙은 그래프에서, 제약을 거의 전부 만족시킬 수 있는 경우와 거의 만족시킬 수 없는 경우를 가르는 것이 $\mathrm{NP}$ 난해라는 추측이다. [PCP 정리](pcp-theorem.md)(probabilistically checkable proof)는 어떤 문제를 특정 비율보다 잘 근사하는 것이 $\mathrm{NP}$ 난해임을 보인다. 그 한계선과 [반정부호 계획법](semidefinite-programming.md)이 주는 알고리즘의 성능 사이에는 대체로 간극이 남고, 최대 절단이 대표적이다.
 
 | 방향 | 값 |
 |---|---|

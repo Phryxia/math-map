@@ -2,7 +2,7 @@
 
 # 개요
 
-원 위의 벡터장은 교환자로 무한차원 [Lie 대수](lie-algebras.md)를 이룬다. 복소 기저로 쓰면 $L_n=-t^{n+1}\partial_t$ 이고 괄호가 다음이다.
+**Virasoro 대수(Virasoro algebra)** 는 원 위의 다항식 벡터장이 이루는 Witt 대수의 유일한 비자명 중심확대다. 원 위의 벡터장은 교환자로 무한차원 [Lie 대수](lie-algebras.md)를 이룬다. 복소 기저로 쓰면 $L_n=-t^{n+1}\partial_t$ 이고 괄호가 다음이다.
 
 $$
 \lbrack L_m,L_n\rbrack=(m-n)L_{m+n}

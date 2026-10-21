@@ -2,7 +2,7 @@
 
 # 개요
 
-[괴물 달빛](monstrous-moonshine.md)은 가장 큰 산재군과 모듈러 함수 하나를 짝지었고 Borcherds 가 그 짝을 증명했다. 2010 년에 Eguchi, Ooguri, Tachikawa 가 다른 자리에서 같은 종류의 수 일치를 발견했다.
+**Umbral moonshine** 은 24 차원 짝수 유니모듈러 격자 23 개마다 유한군 하나와 [mock 모듈러 형식](mock-modular-forms.md) 하나를 짝지어, 형식의 계수가 그 군의 표현의 차원으로 분해되는 현상이다. [괴물 달빛](monstrous-moonshine.md)은 가장 큰 산재군과 모듈러 함수 하나를 짝지었고 Borcherds 가 그 짝을 증명했다. 2010 년에 Eguchi, Ooguri, Tachikawa 가 다른 자리에서 같은 종류의 수 일치를 발견했다.
 
 출발점은 K3 곡면의 **타원 종수**다. 위상적 불변량 하나를 두 변수 $q,y$ 의 급수로 확장한 것이고, $N=4$ 초등각대수의 지표들로 분해하면 계수가 나온다.
 
@@ -17,7 +17,7 @@ $$
 - 모듈러 쪽 대상이 [모듈러 형식](modular-forms.md)이 아니다. 계수를 담는 함수 $H(\tau)$ 는 Ramanujan 이 마지막 편지에 남긴 mock theta 함수와 같은 종류, 곧 **mock 모듈러 형식**이다. 변환법칙이 딱 맞지 않고 비정칙 보정항을 더해야 맞는다.
 - 사례가 하나가 아니다. Cheng, Duncan, Harvey 가 2012 년에 이 현상이 23 개의 짝을 이루는 집합의 한 원소임을 보였다. 색인 집합은 [Leech 격자](leech-lattice.md)를 제외한 23 개의 **[Niemeier 격자](niemeier-lattices.md)**, 곧 24 차원 짝수 유니모듈러 격자다.
 
-이 23 겹 짝짓기가 **umbral moonshine** 이다. [mock 모듈러 형식](mock-modular-forms.md)에는 shadow 라 불리는 진짜 모듈러 형식이 딸려 있고, 각 사례에서 그 shadow 가 해당 Niemeier 격자의 근계로 만들어진 theta 급수다. 이름은 그림자를 뜻하는 라틴어 *umbra* 에서 왔다.
+이 23 겹 짝짓기가 umbral moonshine 이다. mock 모듈러 형식에는 shadow 라 불리는 진짜 모듈러 형식이 딸려 있고, 각 사례에서 그 shadow 가 해당 Niemeier 격자의 근계로 만들어진 theta 급수다. 이름은 그림자를 뜻하는 라틴어 *umbra* 에서 왔다.
 
 # 직관
 

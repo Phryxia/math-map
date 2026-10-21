@@ -2,9 +2,9 @@
 
 # 개요
 
-[확률변수](random-variables.md)열이 수렴한다는 말에는 여러 층위가 있다. 거의 확실한 수렴과 $L^1$ 수렴은 "같은 표본점에서 값이 가까워진다"를 요구한다. 그런데 [중심극한정리](central-limit-theorem.md)가 말하는 수렴은 그런 종류가 아니다. 정규화된 합 $S_n/\sqrt n$ 은 어떤 고정된 확률변수로 다가가지 않는다. 다가가는 것은 그 **분포**, 곧 [상측도](pushforward-measure.md)로 얻은 확률측도다.
+**약수렴(weak convergence)** 은 확률측도열 $\mu_n$ 이 모든 유계 연속함수 $f$ 에 대해 $\int f\thinspace d\mu_n\to\int f\thinspace d\mu$ 를 만족하는 수렴이다. [확률변수](random-variables.md)열이 수렴한다는 말에는 여러 층위가 있다. 거의 확실한 수렴과 $L^1$ 수렴은 "같은 표본점에서 값이 가까워진다"를 요구한다. 그런데 [중심극한정리](central-limit-theorem.md)가 말하는 수렴은 그런 종류가 아니다. 정규화된 합 $S_n/\sqrt n$ 은 어떤 고정된 확률변수로 다가가지 않는다. 다가가는 것은 그 **분포**, 곧 [상측도](pushforward-measure.md)로 얻은 확률측도다.
 
-분포들이 사는 공간 위에 수렴 개념을 정의하는 것이 약수렴(weak convergence)이고, 그 공간에서 콤팩트성이 무엇인지 답하는 것이 Prokhorov 정리다. [균등적분가능성](uniform-integrability.md)이 $L^1$ 안에서 약콤팩트성을 판정했다면, tightness 는 확률측도 공간에서 약콤팩트성을 판정한다.
+약수렴은 분포들이 사는 공간 위의 수렴 개념이고, 그 공간에서 콤팩트성이 무엇인지 답하는 것이 Prokhorov 정리다. [균등적분가능성](uniform-integrability.md)이 $L^1$ 안에서 약콤팩트성을 판정했다면, tightness 는 확률측도 공간에서 약콤팩트성을 판정한다.
 
 # 직관
 
