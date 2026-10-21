@@ -2,9 +2,9 @@
 
 # 개요
 
-[유체론](class-field-theory.md)은 수체 $K$ 의 아벨확대를 아이디얼류 자료로 분류하지만 그 확대를 생성하는 원소를 주지는 않는다. $K=\mathbb Q$ 에서는 Kronecker–Weber 정리가 모든 아벨확대를 $\zeta_n=e^{2\pi i/n}$ 로 생성한다.
+**복소 곱셈(complex multiplication)** 은 [타원곡선](elliptic-curves.md)의 자기준동형환이 $\mathbb Z$ 보다 큰 성질이고, 복소 곱셈 이론은 그런 곡선의 특수값으로 허수이차체의 아벨확대를 생성한다. [유체론](class-field-theory.md)은 수체 $K$ 의 아벨확대를 아이디얼류 자료로 분류하지만 그 확대를 생성하는 원소를 주지는 않는다. $K=\mathbb Q$ 에서는 Kronecker–Weber 정리가 모든 아벨확대를 $\zeta_n=e^{2\pi i/n}$ 로 생성한다.
 
-$K$ 가 허수이차체일 때 지수함수의 자리를 타원곡선의 특수값이 대신한다. [타원곡선](elliptic-curves.md) $\mathbb C/\Lambda$ 가운데 자기준동형환이 $\mathbb Z$ 보다 큰 것을 복소 곱셈(complex multiplication)을 가진다고 하고, 이때
+$K$ 가 허수이차체일 때 지수함수의 자리를 타원곡선의 특수값이 대신한다. 타원곡선 $\mathbb C/\Lambda$ 가운데 자기준동형환이 $\mathbb Z$ 보다 큰 것을 복소 곱셈을 가진다고 하고, 이때
 
 $$
 \mathrm{End}(\mathbb C/\Lambda)\cong\mathcal O\subset K

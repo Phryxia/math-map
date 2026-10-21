@@ -2,7 +2,7 @@
 
 # 개요
 
-[Tate 의 zeta 적분](tate-zeta-integral.md)은 자리마다 국소 함수방정식을 준다. 두 국소 zeta 적분의 비가 시험함수에 의존하지 않는 인자 하나로 정리된다.
+**Gauss 합(Gauss sum)** 은 유한체 위의 곱셈 지표 $\chi$ 와 덧셈 지표 $\psi$ 의 곱을 모든 원소에 걸쳐 더한 값 $g(\chi)=\sum_x\chi(x)\psi(x)$ 다. [Tate 의 zeta 적분](tate-zeta-integral.md)은 자리마다 국소 함수방정식을 준다. 두 국소 zeta 적분의 비가 시험함수에 의존하지 않는 인자 하나로 정리된다.
 
 $$
 Z_v(\hat f_v,\chi_v^{-1},1-s)=\gamma_v(\chi_v,s)\thinspace Z_v(f_v,\chi_v,s),

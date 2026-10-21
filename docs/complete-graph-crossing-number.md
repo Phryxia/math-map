@@ -2,7 +2,7 @@
 
 # 개요
 
-$\mathrm{cr}(K_n)$ 은 $n\le12$ 까지 값이 확정되어 있고, 그 값은 모두 Guy 의 그림이 주는 수
+**완전그래프의 교차수(crossing number of the complete graph)** $\mathrm{cr}(K_n)$ 은 완전그래프 $K_n$ 을 평면에 그릴 때 생기는 간선 교차점 개수의 최솟값이다. $\mathrm{cr}(K_n)$ 은 $n\le12$ 까지 값이 확정되어 있고, 그 값은 모두 Guy 의 그림이 주는 수
 
 $$
 Z(n)=\frac14\Big\lfloor\frac n2\Big\rfloor\Big\lfloor\frac{n-1}2\Big\rfloor\Big\lfloor\frac{n-2}2\Big\rfloor\Big\lfloor\frac{n-3}2\Big\rfloor

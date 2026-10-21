@@ -2,7 +2,7 @@
 
 # 개요
 
-유한 차원에서 [선형사상](linear-maps.md) $T\colon V\to W$ 의 지표
+**Fredholm 작용소(Fredholm operator)** 는 핵과 여핵이 유한차원인 [Banach 공간](banach-spaces.md) 사이의 유계 선형작용소다. 유한 차원에서 [선형사상](linear-maps.md) $T\colon V\to W$ 의 지표
 
 $$
 \mathrm{ind}(T)=\dim\ker T-\dim\mathrm{coker}\thinspace T

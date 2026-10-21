@@ -2,7 +2,7 @@
 
 # 개요
 
-Hecke 의 $L$ 함수를 아델 위의 적분 하나로 다시 쓴 것이 [Tate 의 zeta 적분](tate-zeta-integral.md)이다. 해석적 접속과 함수방정식이 Fourier 해석과 Poisson 합공식에서 나오고, 자리마다의 국소 인자와 근 수가 국소 적분에서 읽힌다.
+**Godement–Jacquet 적분(Godement–Jacquet integral)** 은 $\mathrm{GL}\_n$ 의 자기동형 표현의 행렬계수와 $n\times n$ 행렬 공간 위의 Schwartz 함수의 곱에 $\vert\det g\vert^s$ 를 붙여 적분한 것으로, 표준 $L$ 함수를 준다. Hecke 의 $L$ 함수를 아델 위의 적분 하나로 다시 쓴 것이 [Tate 의 zeta 적분](tate-zeta-integral.md)이다. 해석적 접속과 함수방정식이 Fourier 해석과 Poisson 합공식에서 나오고, 자리마다의 국소 인자와 근 수가 국소 적분에서 읽힌다.
 
 그 논문은 $\mathrm{GL}\_1$ 을 다루고, Godement 와 Jacquet 이 1972 년에 같은 일을 $\mathrm{GL}\_n$ 에서 했다[^1].
 

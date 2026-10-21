@@ -2,7 +2,7 @@
 
 # 개요
 
-[Selberg 대각합 공식](selberg-trace-formula.md)은 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 의 Laplace 스펙트럼을 닫힌 측지선으로 바꿔 놓았다. 왼쪽이 해석(스펙트럼), 오른쪽이 기하였다. Arthur 가 이것을 임의의 환원군 $G$ 와 아델 상 $G(\mathbb Q)\backslash G(\mathbb A)$ 로 올린 것이 **Arthur–Selberg 대각합 공식**이고, 그 모양은 여전히 같다.
+**기본 보조정리(fundamental lemma)** 는 환원군 $G$ 의 $\kappa$ 궤도적분과 내시군(endoscopic group) $H$ 의 안정 궤도적분이 전이 인자를 곱하면 같다는 진술이다. [Selberg 대각합 공식](selberg-trace-formula.md)은 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 의 Laplace 스펙트럼을 닫힌 측지선으로 바꿔 놓았다. 왼쪽이 해석(스펙트럼), 오른쪽이 기하였다. Arthur 가 이것을 임의의 환원군 $G$ 와 아델 상 $G(\mathbb Q)\backslash G(\mathbb A)$ 로 올린 것이 **Arthur–Selberg 대각합 공식**이고, 그 모양은 여전히 같다.
 
 $$
 \underbrace{\sum_\pi m(\pi)\thinspace\mathrm{tr}\thinspace\pi(f)}\_{\text{스펙트럼}}\thickspace=\thickspace\underbrace{\sum_{\lbrace\gamma\rbrace}\mathrm{vol}(\cdot)\thinspace\mathrm{O}\_\gamma(f)}\_{\text{기하}}

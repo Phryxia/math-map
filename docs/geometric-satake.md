@@ -2,7 +2,7 @@
 
 # 개요
 
-[Satake 동형](satake-isomorphism.md)에서 비분기 Hecke 대수는 쌍대군의 표현환과 같다.
+**기하학적 Satake 대응(geometric Satake equivalence)** 은 아핀 Grassmann 다양체 위의 $G(\mathcal O)$ 동변 퍼버스 층(perverse sheaf)의 범주가 쌍대군의 표현 범주와 텐서 범주로서 동치라는 정리다. [Satake 동형](satake-isomorphism.md)에서 비분기 Hecke 대수는 쌍대군의 표현환과 같다.
 
 $$
 \mathcal H(G,K)\thickspace\cong\thickspace R(\widehat G)\otimes\mathbb C

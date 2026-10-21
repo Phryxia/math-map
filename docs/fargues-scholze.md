@@ -2,7 +2,7 @@
 
 # 개요
 
-[기하학적 Langlands 강령](geometric-langlands.md)은 곡선 $X$ 위의 다발 모듈라이 $\mathrm{Bun}\_G$ 위에서 전개된다. 함수체 쪽에는 곡선이 실제로 있다. $\mathbb Q_p$ 같은 $p$ 진체에는 곡선이 없다. 국소체 하나는 점 하나처럼 보이고, 그 위에 다발을 정의할 공간이 없다.
+**Fargues–Scholze 기하화(Fargues–Scholze geometrization)** 는 $p$ 진체 위 환원군의 국소 Langlands 대응을 Fargues–Fontaine 곡선 위의 $G$ 다발 모듈라이 $\mathrm{Bun}\_G$ 의 기하로 구성하는 이론이다. [기하학적 Langlands 강령](geometric-langlands.md)은 곡선 $X$ 위의 다발 모듈라이 $\mathrm{Bun}\_G$ 위에서 전개된다. 함수체 쪽에는 곡선이 실제로 있다. $\mathbb Q_p$ 같은 $p$ 진체에는 곡선이 없다. 국소체 하나는 점 하나처럼 보이고, 그 위에 다발을 정의할 공간이 없다.
 
 Fargues 와 Scholze 는 곡선을 먼저 만들었다[^1]. Fargues–Fontaine 곡선
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-[유한 단순군 분류](finite-simple-groups.md)와 **확대 문제**가 유한군론의 두 축이다.
+**군 확대(group extension)** 는 짧은 완전열 $1\to N\to E\to Q\to1$ 이고, 이때 $E$ 를 $N$ 에 의한 $Q$ 의 확대라 한다. [유한 단순군 분류](finite-simple-groups.md)와 **확대 문제**가 유한군론의 두 축이다.
 
 Jordan–Hölder 정리는 유한군 $G$ 의 합성인자가 유일하게 정해진다고 진술한다. 역은 성립하지 않고, 합성인자가 $\mathbb Z/2,\mathbb Z/2$ 인 군은 둘이다.
 
