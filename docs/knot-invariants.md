@@ -95,7 +95,7 @@ $$
 ## 분리력
 
 - **카이랄성.** 삼엽매듭에서 $V(t)\ne V(t^{-1})$ 이므로 삼엽매듭은 거울상과 다르다.
-- **풀린 매듭 판정.** $V(K)=1$ 이면 $K$ 가 풀린 매듭인가는 열린 문제다. 링크에서는 반례가 있다(Eliahou–Kauffman–Thistlethwaite).
+- **풀린 매듭 판정.** $V(K)=1$ 이면 $K$ 가 풀린 매듭인가는 열린 문제다[^4]. 링크에서는 반례가 있다(Eliahou–Kauffman–Thistlethwaite).
 - **불완전성.** 서로 다른 매듭이 같은 Jones 다항식을 갖는 예가 많다. Conway 매듭과 Kinoshita–Terasaka 매듭은 Alexander 다항식이 같은 고전적 예다.
 - **교차수의 하한.** 괄호의 지수 폭이 교대 도식의 교차수와 맞물려 Tait 추측 셋 중 둘이 Jones 다항식으로 풀렸다.
 
@@ -129,6 +129,7 @@ $V\ne1$ 이므로 삼엽매듭은 풀린 매듭이 아니고, $V(t)\ne V(t^{-1})
 [^1]: V. F. R. Jones, *A polynomial invariant for knots via von Neumann algebras*, Bull. AMS 12 (1985). 원전.
 [^2]: L. H. Kauffman, *State models and the Jones polynomial*, Topology 26 (1987). 괄호를 통한 초등적 재구성.
 [^3]: E. Witten, *Quantum field theory and the Jones polynomial*, Comm. Math. Phys. 121 (1989). 3 차원 해석.
+[^4]: V. F. R. Jones, *Ten problems*, in Mathematics: Frontiers and Perspectives, AMS (2000), 79–91.
 
 # 연관 문서
 
