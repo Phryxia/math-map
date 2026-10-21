@@ -97,6 +97,7 @@ $$(c\otimes\mathrm{id})(\mathrm{id}\otimes c)(c\otimes\mathrm{id})=(\mathrm{id}\
 ## 더 알아보기
 
 - [Tannaka 쌍대성](tannaka-duality.md)
+- [위상 양자장론](topological-quantum-field-theory.md)
 - [모듈러 텐서범주](modular-tensor-categories.md)
 - [양자군](quantum-groups.md)
 

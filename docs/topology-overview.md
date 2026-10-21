@@ -134,6 +134,7 @@ graph TD
 - [코보디즘](cobordism.md): 분리합이 어떤 콤팩트 다양체의 경계가 되는 동치관계
 - [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md): 부호수를 특성류의 다항식으로 적는 공식
 - [곱셈적 종수](multiplicative-genera.md): 멱급수 하나가 정하는 코보디즘 환의 환 준동형
+- [위상 양자장론](topological-quantum-field-theory.md): 코보디즘 범주에서 벡터공간 범주로 가는 대칭 모노이드 함자, 2 차원에서는 가환 Frobenius 대수와 같다
 
 ## 층 코호몰로지
 

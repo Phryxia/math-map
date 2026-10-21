@@ -36,7 +36,7 @@ $$
 \Delta(1)=1\otimes X+X\otimes1,\qquad \Delta(X)=X\otimes X
 $$
 
-이 구조가 $A$ 를 가환 **Frobenius 대수**로 만들고, 정육면체의 정사각형 면이 가환인 근거다. 원 몇 개가 합쳐지고 갈라지는 것은 2 차원 cobordism 이므로 원의 모임에 벡터공간을, cobordism 에 사상을 붙이는 일은 1+1 차원 TQFT(topological quantum field theory)를 고르는 일이고, 1+1 차원 TQFT 는 가환 Frobenius 대수와 같다. $A$ 는 그중 가장 작은 비자명한 것이고 $H^\ast(S^2)$ 와 같은 꼴이다. 면에 해당하는 두 cobordism 이 동위이므로 두 합성이 같다.
+이 구조가 $A$ 를 가환 **Frobenius 대수**로 만들고, 정육면체의 정사각형 면이 가환인 근거다. 원 몇 개가 합쳐지고 갈라지는 것은 2 차원 cobordism 이므로 원의 모임에 벡터공간을, cobordism 에 사상을 붙이는 일은 1+1 차원 [TQFT](topological-quantum-field-theory.md)(topological quantum field theory)를 고르는 일이고, 1+1 차원 TQFT 는 가환 Frobenius 대수와 같다. $A$ 는 그중 가장 작은 비자명한 것이고 $H^\ast(S^2)$ 와 같은 꼴이다. 면에 해당하는 두 cobordism 이 동위이므로 두 합성이 같다.
 
 ## 정육면체 복합체
 
@@ -151,6 +151,7 @@ $Kh^{3,7}=\mathbb Z/2$ 는 Euler 지표에 기여하지 않으므로 Jones 다�
 
 - [매듭 불변량](knot-invariants.md)
 - [단체 호몰로지](homology.md)
+- [위상 양자장론](topological-quantum-field-theory.md)
 
 ## 더 알아보기
 

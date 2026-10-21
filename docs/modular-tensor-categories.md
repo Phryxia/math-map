@@ -16,7 +16,7 @@ $$
 S=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix},\qquad T=\begin{pmatrix}1&1\cr 0&1\end{pmatrix}
 $$
 
-이 공리계에서 MTC 하나가 3 차원 위상적 장론(topological quantum field theory, TQFT) 하나와 대응한다. Reshetikhin–Turaev 구성이 MTC 에서 3 차원 다양체와 그 안의 매듭에 대한 불변량을 만들고, 역으로 3 차원 TQFT 에서 원환면에 붙는 벡터공간과 그 위의 $\mathrm{SL}\_2(\mathbb Z)$ 작용이 MTC 를 복원한다.
+이 공리계에서 MTC 하나가 3 차원 [위상적 장론](topological-quantum-field-theory.md)(topological quantum field theory, TQFT) 하나와 대응한다. Reshetikhin–Turaev 구성이 MTC 에서 3 차원 다양체와 그 안의 매듭에 대한 불변량을 만들고, 역으로 3 차원 TQFT 에서 원환면에 붙는 벡터공간과 그 위의 $\mathrm{SL}\_2(\mathbb Z)$ 작용이 MTC 를 복원한다.
 
 $$
 \lbrace\text{MTC}\rbrace\ \longleftrightarrow\ \lbrace\text{3 차원 TQFT}\rbrace
