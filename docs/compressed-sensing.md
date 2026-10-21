@@ -54,6 +54,14 @@ $\delta\_{2k}\lt\sqrt 2-1$ 이면 $k$-희소해가 있을 때 기저 추구의 �
 
 증명의 요지. 기저 추구의 해를 $x+h$ 라 하면 $Ah=0$ 이고 $\Vert x+h\Vert\_1\le\Vert x\Vert\_1$ 이다. $x$ 의 지지집합 $T$ 와 그 밖에서 $\ell\_1$ 노름을 나누면 $\Vert h\_{T^c}\Vert\_1\le\Vert h\_T\Vert\_1$ 이 나온다. 한편 $h\_{T^c}$ 를 크기 $k$ 의 조각으로 잘라 제한 등거리 성질을 쓰면 $\Vert h\_T\Vert\_2$ 가 $\Vert h\_{T^c}\Vert\_1$ 의 상수배 이하로 묶이고, 두 부등식을 합치면 $\delta\_{2k}$ 가 위 문턱보다 작을 때 $h=0$ 이 된다.
 
+## 영공간 성질
+
+$A$ 가 차수 $k$ 의 **영공간 성질(null space property)** 을 만족한다는 것은 $Ah=0$ 인 모든 $h\neq 0$ 과 크기 $k$ 이하인 모든 첨자 집합 $T$ 에서 $\Vert h\_T\Vert\_1\lt\Vert h\_{T^c}\Vert\_1$ 이 성립한다는 것이다. 이것은 모든 $k$-희소 $x$ 가 $b=Ax$ 에서 기저 추구의 유일한 해로 복원되는 것과 동치다.[^4]
+
+증명의 요지. 영공간 성질을 가정하고 $x$ 의 지지집합을 $T$ 라 하면, 다른 해 $x+h$ 에서 $\Vert x+h\Vert\_1\ge\Vert x\Vert\_1-\Vert h\_T\Vert\_1+\Vert h\_{T^c}\Vert\_1\gt\Vert x\Vert\_1$ 이다. 거꾸로 $Ah=0$ 이면 $Ah\_T=A(-h\_{T^c})$ 이므로 $-h\_{T^c}$ 는 $k$-희소 벡터 $h\_T$ 의 측정에 대한 다른 해이고, $h\_T$ 가 유일한 최소해이므로 $\Vert h\_T\Vert\_1\lt\Vert h\_{T^c}\Vert\_1$ 이다.
+
+앞 절의 증명은 $\delta\_{2k}\lt\sqrt 2-1$ 에서 영공간 성질이 성립함을 보인 것이다. 역은 성립하지 않는다. 가역행렬 $G$ 를 곱한 $GA$ 는 $A$ 와 영공간이 같아 영공간 성질을 그대로 갖지만, $G$ 가 길이를 크게 바꾸면 제한 등거리 성질은 깨진다.
+
 ## 무작위 행렬의 제한 등거리 성질
 
 성분이 독립인 평균 $0$ 분산 $1/m$ 의 Gauss 분포를 따르는 $m\times n$ 행렬은
@@ -80,6 +88,7 @@ $$S\_\lambda(u)=\mathrm{sign}(u)\max(\vert u\vert-\lambda,0)$$
 [^1]: Natarajan, *Sparse approximate solutions to linear systems*, SIAM Journal on Computing 24 (1995), 227–234.
 [^2]: Candès, *The restricted isometry property and its implications for compressed sensing*, Comptes Rendus Mathematique 346 (2008), 589–592.
 [^3]: Baraniuk, Davenport, DeVore, Wakin, *A simple proof of the restricted isometry property for random matrices*, Constructive Approximation 28 (2008), 253–263.
+[^4]: Cohen, Dahmen, DeVore, *Compressed sensing and best k-term approximation*, Journal of the American Mathematical Society 22 (2009), 211–231.
 
 # 연관 문서
 
