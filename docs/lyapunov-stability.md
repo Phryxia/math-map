@@ -58,7 +58,7 @@ $$
 
 증명의 요지. 모든 고윳값의 실수부가 음수이면 $P=\int_0^\infty e^{tA^{\mathsf T}}e^{tA}\thinspace dt$ 가 수렴하고 양의 정부호이며 $A^{\mathsf T}P+PA=-I$ 를 만족한다. $V(x)=(x-x^\ast)^{\mathsf T}P(x-x^\ast)$ 로 두면 $f(x)=A(x-x^\ast)+O(\vert x-x^\ast\vert^2)$ 이므로 $\dot V=-\vert x-x^\ast\vert^2+O(\vert x-x^\ast\vert^3)$ 이다. $x^\ast$ 근처에서 $\dot V\le -V/(2\lambda_{\max}(P))$ 가 되어 $V$ 가 지수적으로 줄어든다.
 
-고윳값 가운데 실수부가 $0$ 인 것이 있고 나머지 실수부가 음수이면 선형화로는 판정되지 않는다. $x'=-x^3$ 과 $x'=x^3$ 은 둘 다 $A=0$ 이지만 앞의 것은 점근 안정하고 뒤의 것은 불안정하다. $V=x^2$ 에 대해 $\dot V$ 가 각각 $-2x^4$ 와 $2x^4$ 이다.
+고윳값 가운데 실수부가 $0$ 인 것이 있고 나머지 실수부가 음수이면 선형화로는 판정되지 않는다. $x'=-x^3$ 과 $x'=x^3$ 은 둘 다 $A=0$ 이지만 앞의 것은 점근 안정하고 뒤의 것은 불안정하다. $V=x^2$ 에 대해 $\dot V$ 가 각각 $-2x^4$ 와 $2x^4$ 이다. 실수부가 $0$ 인 고윳값이 없으면 평형점 근처의 해들의 모양까지 선형계와 같고, 이것이 [Hartman–Grobman 정리](hartman-grobman.md)다.
 
 ## Lyapunov 방정식
 
@@ -91,6 +91,7 @@ $$
 
 ## 더 알아보기
 
+- [Hartman–Grobman 정리](hartman-grobman.md)
 - [Poincaré–Bendixson 정리](poincare-bendixson.md)
 
 #analysis #optimization
