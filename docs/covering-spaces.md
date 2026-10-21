@@ -117,9 +117,15 @@ $Y$ 가 단순연결이면 조건이 자동으로 만족된다. 경로와 호모
 
 ## 더 알아보기
 
+### 위상의 계산
+
+- [감김수](winding-number.md)
 - [올화](fibrations.md)
-- [Lie 군](lie-groups.md)
 - [쌍곡 3 다양체](hyperbolic-3-manifolds.md)
+
+### 다른 분야에서의 쓰임
+
+- [Lie 군](lie-groups.md)
 - [Riemann 곡면](riemann-surfaces.md)
 - [에탈 기본군](etale-fundamental-group.md)
 

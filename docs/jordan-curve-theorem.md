@@ -50,7 +50,7 @@ $n=2$, $k=1$ 이면 $\tilde H_0(S^2\setminus C)\cong\mathbb Z$ 이므로 $S^2\se
 - [Riemann 사상정리](riemann-mapping-theorem.md): 경계가 Jordan 곡선인 영역에서는 Riemann 사상이 닫힌 영역에서 닫힌 원판으로 가는 위상동형으로 확장된다.
 - [Poincaré–Bendixson 정리](poincare-bendixson.md): 해 곡선과 횡단선 조각으로 만든 닫힌 곡선이 평면을 둘로 나누므로, 해가 횡단선을 지나는 점들이 단조로 늘어선다.
 - [평면 그래프](planar-graphs.md): 평면에 그린 그래프의 면을 그래프 바깥의 연결 성분으로 정의할 때, 순환 하나가 평면을 두 면으로 나눈다는 것이 Euler 공식의 귀납 증명의 첫 단계다.
-- 복소해석의 감김수: Jordan 곡선을 한 번 따라 도는 닫힌 경로의 감김수(winding number)는 내부의 점에서 $\pm 1$ 이고 외부의 점에서 $0$ 이다. Cauchy 적분 공식을 Jordan 곡선 위에서 쓸 때 이 값을 쓴다.
+- 복소해석의 감김수: Jordan 곡선을 한 번 따라 도는 닫힌 경로의 [감김수](winding-number.md)는 내부의 점에서 $\pm 1$ 이고 외부의 점에서 $0$ 이다. Cauchy 적분 공식을 Jordan 곡선 위에서 쓸 때 이 값을 쓴다.
 
 [^1]: A. Hatcher, *Algebraic Topology*, Cambridge University Press, 2002, 2B 절 Proposition 2B.1 과 Corollary 2B.2.
 [^2]: J. R. Munkres, *Topology*, 2nd ed., Prentice Hall, 2000, 63 절(Jordan 곡선 정리)과 64 절. Alexander 뿔 달린 구면은 J. W. Alexander, *An example of a simply connected surface bounding a region which is not simply connected*, Proceedings of the National Academy of Sciences **10** (1924), 8–10.

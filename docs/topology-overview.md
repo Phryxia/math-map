@@ -55,6 +55,7 @@ graph TD
 - [기본군](fundamental-group.md): 한 점을 지나는 닫힌 경로를 연속 변형으로 동일시해 얻는 군
   - [Seifert–van Kampen 정리](seifert-van-kampen.md): 열린 두 조각의 기본군에서 전체의 기본군을 계산하는 정리
 - [덮개공간](covering-spaces.md): 경로를 유일하게 올릴 수 있는 사상, 기본군의 부분군과의 대응
+  - [감김수](winding-number.md): 닫힌 경로가 한 점 둘레를 도는 횟수, 각의 올림과 복소적분, 편각 원리
 - [호모토피군](homotopy-groups.md): 고차원 구면에서 오는 사상을 연속 변형으로 분류한 군
   - [Freudenthal 매달기 정리](freudenthal-suspension.md): 매달기가 동형을 주는 차수 범위
 
