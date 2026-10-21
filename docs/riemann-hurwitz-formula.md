@@ -60,7 +60,7 @@ $2g_X-2$ 와 $n(2g_Y-2)$ 가 짝수이므로 $\sum_p(e_p-1)$ 은 짝수다. 차�
 
 ## 초타원곡선의 종수
 
-$P$ 가 서로 다른 근 $d$ 개를 갖는 다항식일 때 $w^2=P(z)$ 의 콤팩트 Riemann 곡면 $X$ 를 **초타원곡선(hyperelliptic curve)** 이라 한다($d\ge 5$). $z$ 로의 사영은 차수 $2$ 이고, $P$ 의 근 $d$ 개에서 분기하며, $d$ 가 홀수일 때에만 $\infty$ 에서도 분기한다. 분기점 수를 $r$ 이라 하면 $r=2\lceil d/2\rceil$ 이고 공식에서
+$P$ 가 서로 다른 근 $d$ 개를 갖는 다항식일 때 $w^2=P(z)$ 의 콤팩트 Riemann 곡면 $X$ 를 [초타원곡선](hyperelliptic-curves.md)이라 한다($d\ge 5$). $z$ 로의 사영은 차수 $2$ 이고, $P$ 의 근 $d$ 개에서 분기하며, $d$ 가 홀수일 때에만 $\infty$ 에서도 분기한다. 분기점 수를 $r$ 이라 하면 $r=2\lceil d/2\rceil$ 이고 공식에서
 
 $$
 2g-2=2\cdot(-2)+r,\qquad g=\frac r2-1
@@ -121,6 +121,6 @@ $k$ 의 표수 $\ell$ 이 $e_p$ 를 나누지 않으면 **길들여진 분기(ta
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [초타원곡선](hyperelliptic-curves.md)
 
 #complex_analysis #algebraic_topology #number_theory #theorem
