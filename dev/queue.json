@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-21T05:05:18.432Z",
-  "nextSeq": 2318,
+  "savedAt": "2026-10-21T09:01:43.903Z",
+  "nextSeq": 2321,
   "items": [
     {
       "id": "9bab7237",
@@ -3212,14 +3212,6 @@
       "seq": 2258
     },
     {
-      "id": "85f5daac",
-      "title": "Néron 모델",
-      "priority": 10,
-      "note": "정수론. 수체 위 아벨 다양체의 O_K 위 매끄러운 군스킴 모델. 73차에 쓴 faltings-theorem 이 Faltings 높이를 정의하며 링크 없이 이름만 쓴다. canonical-height 와 elliptic-curves 도 환원을 다루므로 부모 후보는 elliptic-curves 와 abelian-varieties 다.",
-      "createdAt": "2026-10-20T00:45:12.101Z",
-      "seq": 2259
-    },
-    {
       "id": "bf3200f1",
       "title": "Arakelov 기하",
       "priority": 10,
@@ -3284,22 +3276,6 @@
       "seq": 2286
     },
     {
-      "id": "d72cb87b",
-      "title": "부분인자와 Jones 지표",
-      "priority": 10,
-      "note": "분야: 함수해석(#functional_analysis #group_theory #topology). 붙일 부모: von-neumann-algebras(76차에 생겼다). 76차 선확인에서 temperley-lieb-algebras.md 가 있으나 부분인자(subfactor) 언급이 0 회임을 확인했다. 큐 항목 2de49d51 이 같은 자리를 가리키므로 그 항목과 겹친다. 내용: II 1 형 인자의 부분인자와 지표의 정의, 지표가 4 코사인 제곱 파이 나누기 n 꼴의 값과 4 이상 전체만 가진다는 Jones 정리, 기본 구성과 Jones 사영의 열, 그 사영이 만족하는 관계가 Temperley–Lieb 대수의 관계와 같다는 점, 거기서 Jones 다항식이 나오는 경로. von-neumann-algebras 의 활용 절이 이 내용을 세 문장으로 적어 두었으므로 문서가 생기면 그 자리를 링크로 바꾼다. 문서를 쓸 때 von-neumann-algebras 의 더 알아보기에 넣고 functional-analysis-overview 의 작용소와 스펙트럼 갈래에서 von Neumann 대수 다음 자리에 넣는다.",
-      "createdAt": "2026-10-20T12:54:47.815Z",
-      "seq": 2291
-    },
-    {
-      "id": "85914b88",
-      "title": "작용소 K 이론",
-      "priority": 10,
-      "note": "분야: 함수해석(#functional_analysis #topology #algebra). 붙일 부모: c-star-algebras(76차에 생겼다). 76차에 c-star-algebras 의 활용 절에서 \"사영 가군의 분류가 작용소 K 이론이다\" 라고 적고 링크할 문서가 없어 이름만 썼다. 76차 확인 결과 저장소에는 algebraic-k-theory.md 만 있고 위상 K 이론 문서는 없다(ls docs | grep -i k-theory 가 그 하나를 낸다). 그래서 중복 판정은 algebraic-k-theory 와만 하면 된다. 작용소 K 이론이 따로 설 자리는 C 스타 대수의 사영과 유니터리로 정의한 K0 과 K1, Bott 주기성, 6 항 완전열, 교차곱의 Pimsner–Voiculescu 열, Baum–Connes 추측으로 가는 경로다. 벡터다발 쪽 위상 K 이론이 먼저 필요하면 그 문서가 선행 작업이고, 그 경우 큐에 따로 넣는다. algebraic-k-theory 와 중복이 크면 문서를 만들지 않고 c-star-algebras 활용 절의 그 문장을 그 문서로 링크하는 것으로 끝낸다.",
-      "createdAt": "2026-10-20T12:59:56.510Z",
-      "seq": 2295
-    },
-    {
       "id": "892f49ef",
       "title": "witt-ring 의 후속 간선 (85차 갱신)",
       "priority": 10,
@@ -3332,12 +3308,12 @@
       "seq": 2303
     },
     {
-      "id": "3739da57",
-      "title": "Brouwer 차수의 남은 후속: 분기 이론",
+      "id": "6166cb94",
+      "title": "Baum–Connes 추측",
       "priority": 10,
-      "note": "d5174b07 에서 털난 공 정리를 hairy-ball-theorem 으로 썼다(부모 brouwer-degree, vector-fields). 남은 것은 분기 이론: 매개변수를 지나며 차수가 바뀌는 자리에서 해의 개수가 바뀐다는 것, Krasnosel'skii 와 Rabinowitz 의 전역 분기 정리. 부모 후보 brouwer-degree, leray-schauder-degree. brouwer-degree 활용 절이 이름만 쓴다.",
-      "createdAt": "2026-10-21T04:44:46.972Z",
-      "seq": 2314
+      "note": "함수해석(#functional_analysis #group_theory #topology). 부모 후보 crossed-products, operator-k-theory(둘 다 82차에 생겼다). 축소 군 C 스타 대수의 K 이론과 분류공간의 K 호몰로지를 잇는 조립 사상의 정의, 추측의 진술, 증명된 경우는 출처가 있는 것만 적는다. 문서가 생기면 crossed-products 활용 절에서 링크한다.",
+      "createdAt": "2026-10-21T09:01:43.049Z",
+      "seq": 2320
     },
     {
       "id": "dfb3e493",
@@ -3588,14 +3564,6 @@
       "seq": 1588
     },
     {
-      "id": "fe6525ed",
-      "title": "Artin-Schreier-Witt 이론",
-      "priority": 8,
-      "note": "대수. 표수 p 체의 차수 p^m 순환확대를 길이 m Witt 벡터의 Artin-Schreier 사상으로 분류한다. artin-schreier-theory 의 '차수 p^m 순환확대' 절이 이름만 쓰고 정의를 주지 않는다. 부모 후보는 artin-schreier-theory 하나. 쓸 내용: 표수 p 의 Witt 벡터 W(k) 와 Witt 덧셈 다항식, F-1 의 성분별 확장, 지수 p^m 아벨 확대와 W_m(K)/(F-1)W_m(K) 의 대응, p 진 코호몰로지와의 연결. 주의: witt-ring 은 이차형식의 Witt 환이므로 id 가 겹치지 않게 witt-vectors 로 잡는다.",
-      "createdAt": "2026-10-09T00:45:46.925Z",
-      "seq": 1936
-    },
-    {
       "id": "fb947ff9",
       "title": "상호정보량을 별도 문서로 뗄 시점",
       "priority": 7,
@@ -3772,36 +3740,12 @@
       "seq": 173
     },
     {
-      "id": "2de49d51",
-      "title": "Temperley-Lieb 대수와 부분인자",
-      "priority": 4,
-      "note": "braid-groups 아래. TL_n(delta) 의 도형 기저, Jones 자취, II_1 인자의 지표가 4cos^2(pi/n) 로 양자화되는 정리",
-      "createdAt": "2026-09-14T00:16:58.049Z",
-      "seq": 174
-    },
-    {
       "id": "794351e5",
       "title": "Sum-of-Squares 위계와 증명 복잡도",
       "priority": 4,
       "note": "unique-games 와 semidefinite-programming 아래. 다항식 증명계로서의 SoS, 차수와 라운드, 평면화 값과 하계, UGC 반증 시도",
       "createdAt": "2026-09-14T00:22:00.030Z",
       "seq": 177
-    },
-    {
-      "id": "1a7c2c5c",
-      "title": "Lee 호몰로지와 Rasmussen s 불변량",
-      "priority": 4,
-      "note": "khovanov-homology 아래. X^2=1 변형, 2^l 정리, q 여과와 s 의 정의, 슬라이스 종수 하한과 Milnor 추측의 조합적 증명",
-      "createdAt": "2026-09-14T00:56:46.213Z",
-      "seq": 179
-    },
-    {
-      "id": "25d5e4c9",
-      "title": "1+1 차원 TQFT 와 Frobenius 대수",
-      "priority": 4,
-      "note": "khovanov-homology 가 원 하나에 2 차원 공간을 붙이는 근거인데 문서가 없다. cobordism 범주의 생성원과 관계, 가환 Frobenius 대수와의 동치, monads/modular-tensor-categories 와 이어진다",
-      "createdAt": "2026-09-14T00:56:46.328Z",
-      "seq": 180
     },
     {
       "id": "460b3891",
@@ -3818,14 +3762,6 @@
       "note": "serre-conjecture 아래. epsilon 추측, Mazur 원리, Frey 곡선의 mod p 표현이 레벨 2 로 내려가 모순, FLT 의 최종 조립",
       "createdAt": "2026-09-14T01:06:12.331Z",
       "seq": 184
-    },
-    {
-      "id": "37b52d8a",
-      "title": "초축약성과 KKL 정리",
-      "priority": 4,
-      "note": "boolean-fourier 아래. Bonami-Beckner 부등식의 증명, 준위 k 이하에서 ||f||_4 <= 3^{k/2} ||f||_2, KKL 의 log n / n 하한과 임계현상",
-      "createdAt": "2026-09-14T01:09:53.511Z",
-      "seq": 185
     },
     {
       "id": "9c13738c",
@@ -3858,14 +3794,6 @@
       "note": "tracy-widom 아래. 1:2:3 스케일링, 모서리 성장과 ASEP, 방향성 중합체, KPZ 방정식과 고정점",
       "createdAt": "2026-09-14T20:52:11.260Z",
       "seq": 232
-    },
-    {
-      "id": "bc8a216a",
-      "title": "RSK 대응과 최장증가부분수열",
-      "priority": 4,
-      "note": "tracy-widom 아래 또는 조합론 쪽. Robinson-Schensted 삽입, Young 도형과 Plancherel 측도, BDJ 정리의 조합적 뼈대",
-      "createdAt": "2026-09-14T21:00:54.957Z",
-      "seq": 237
     },
     {
       "id": "3f7be672",
@@ -3986,22 +3914,6 @@
       "note": "casselman-shalika 아래. 메타플렉틱 덮개에서 Whittaker 유일성이 깨질 때 나오는 대체물, Gelfand-Tsetlin 패턴의 가중 세기, 결정 기저와의 관계",
       "createdAt": "2026-09-13T23:10:25.787Z",
       "seq": 164
-    },
-    {
-      "id": "70bc06a7",
-      "title": "Garside 구조와 땋임군의 알고리즘",
-      "priority": 3,
-      "note": "braid-groups 아래. 기본 땋임 Delta, 왼쪽 정규형, 낱말/켤레 문제의 알고리즘과 복잡도",
-      "createdAt": "2026-09-14T00:16:58.172Z",
-      "seq": 175
-    },
-    {
-      "id": "ecf45219",
-      "title": "콩코던스 군과 슬라이스 매듭",
-      "priority": 3,
-      "note": "khovanov-homology 의 s 불변량이 실제로 사는 곳. 매끄러운 것과 위상적인 것의 갈림, Fox-Milnor 조건, 4 차원 매끄러운 Poincare 추측 후보와의 관계",
-      "createdAt": "2026-09-14T00:56:46.445Z",
-      "seq": 181
     },
     {
       "id": "7d1c9a4a",
