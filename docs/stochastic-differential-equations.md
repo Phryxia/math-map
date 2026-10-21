@@ -68,7 +68,7 @@ $$
 
 를 만족하며 $\mathbb E\lbrack X_0^2\rbrack\lt\infty$ 이면 강한 해가 존재하고 경로마다 유일하다.
 
-증명은 [축약사상 고정점 정리](banach-fixed-point.md)의 Picard 반복이다. $X^{(n+1)}$ 을 $X^{(n)}$ 을 계수에 넣어 적분한 것으로 정의하고 $\mathbb E\lbrack \sup\_{s\le t}\vert X^{(n+1)}\_s-X^{(n)}\_s\vert^2\rbrack$ 을 재면, Itô 등거리와 Doob 최대부등식이 확률적분 항을 $\int_0^t\mathbb E\lbrack\vert X^{(n)}\_s-X^{(n-1)}\_s\vert^2\rbrack ds$ 로 바꾼다. Lipschitz 상수가 붙은 이 적분 부등식에 Gronwall 부등식을 쓰면 수렴이 나온다. 선형 증가 조건은 해가 유한 시간에 발산하지 않게 한다.
+증명은 [축약사상 고정점 정리](banach-fixed-point.md)의 Picard 반복이다. $X^{(n+1)}$ 을 $X^{(n)}$ 을 계수에 넣어 적분한 것으로 정의하고 $\mathbb E\lbrack \sup\_{s\le t}\vert X^{(n+1)}\_s-X^{(n)}\_s\vert^2\rbrack$ 을 재면, Itô 등거리와 Doob 최대부등식이 확률적분 항을 $\int_0^t\mathbb E\lbrack\vert X^{(n)}\_s-X^{(n-1)}\_s\vert^2\rbrack ds$ 로 바꾼다. Lipschitz 상수가 붙은 이 적분 부등식에 [Grönwall 부등식](gronwall-inequality.md)을 쓰면 수렴이 나온다. 선형 증가 조건은 해가 유한 시간에 발산하지 않게 한다.
 
 Lipschitz 조건이 깨지면 유일성도 깨진다. $dX=3X^{2/3}\thinspace dt$ 는 $X_0=0$ 에서 $X_t=0$ 과 $X_t=t^3$ 을 모두 해로 갖는다. 확산계수가 있으면 더 약한 조건으로도 유일성이 나와, $b$ 가 균등타원형이고 유계일 때는 $a,b$ 가 유계 가측이기만 하면 약한 해가 유일하다[^2].
 

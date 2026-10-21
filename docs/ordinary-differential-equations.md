@@ -52,7 +52,7 @@ $$
 \left\lVert Tx-Ty\right\rVert_{\infty}\le K\varepsilon\thinspace\left\lVert x-y\right\rVert_{\infty}
 $$
 
-따라서 $\varepsilon$ 을 추가로 $1/K$ 보다 작게 잡으면 $T$ 는 축약사상이고, 완비 [거리 공간](metric-spaces.md) 위의 축약사상은 유일한 고정점을 가진다[^2]. 그 고정점이 적분방정식의 해, 즉 초깃값 문제의 유일한 해다. (Lipschitz 상수와 무관한 구간을 얻으려면 지수 가중 노름을 쓰거나 Gronwall 부등식을 이용한다.)
+따라서 $\varepsilon$ 을 추가로 $1/K$ 보다 작게 잡으면 $T$ 는 축약사상이고, 완비 [거리 공간](metric-spaces.md) 위의 축약사상은 유일한 고정점을 가진다[^2]. 그 고정점이 적분방정식의 해, 즉 초깃값 문제의 유일한 해다. (Lipschitz 상수와 무관한 구간을 얻으려면 지수 가중 노름을 쓰거나 [Grönwall 부등식](gronwall-inequality.md)을 이용한다.)
 
 $f$ 가 연속이지만 Lipschitz 가 아니면 Peano 정리로 존재성은 남지만 유일성은 잃는다. 예를 들어 다음 문제는 해가 여러 개다.
 
@@ -147,6 +147,7 @@ $f$ 가 Lipschitz 이고 해가 두 번 미분가능한 구간에서 전역 오�
 
 ### 해의 존재와 고윳값
 
+- [Grönwall 부등식](gronwall-inequality.md)
 - [Peano 존재정리](peano-existence-theorem.md)
 - [Sturm–Liouville 이론](sturm-liouville.md)
 
