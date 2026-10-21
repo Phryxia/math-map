@@ -88,7 +88,7 @@ $P$ 가 격자 다면체이면 $tP$ 에 알고리즘을 $n+1$ 개의 $t$ 값에�
 - **정수계획법의 해의 개수.** 연립 선형 부등식의 정수해 개수를 세는 문제가 그대로 격자점 세기다. 변수의 개수가 고정된 경우의 계수 문제가 이 알고리즘으로 다항시간이 된다.
 - **매개변수 다면체.** 우변 $b$ 를 매개변수로 둔 $\lbrace x:Ax\le b\rbrace$ 의 격자점 개수가 $b$ 의 준다항식이고, 분해를 매개변수 상태로 수행해 그 준다항식을 얻는다. 컴파일러의 반복문 변환에서 반복 횟수를 세는 데 쓰인다.
 - **분할수의 계산.** 고정된 동전 종류로 금액 $t$ 를 만드는 방법의 수가 매개변수 다면체의 격자점 개수이고, 그 준다항식 표현을 직접 계산한다.
-- **토릭 다양체의 불변량.** 격자 다면체의 생성함수가 대응하는 토릭 다양체의 Hilbert 급수이므로, 분해의 각 항이 아핀 조각의 기여에 대응한다. Todd 류를 쓰는 [Euler–Maclaurin 공식](euler-maclaurin.md)의 계산이 같은 분해를 쓴다.
+- **토릭 다양체의 불변량.** 격자 다면체의 생성함수가 대응하는 [토릭 다양체](toric-varieties.md)의 Hilbert 급수이므로, 분해의 각 항이 아핀 조각의 기여에 대응한다. Todd 류를 쓰는 [Euler–Maclaurin 공식](euler-maclaurin.md)의 계산이 같은 분해를 쓴다.
 
 [^1]: Matthias Beck and Sinai Robins, *Computing the Continuous Discretely*, 2nd ed., Springer, 2015, ch. 11.
 [^2]: Alexander I. Barvinok, "A polynomial time algorithm for counting integral points in polyhedra when the dimension is fixed", *Mathematics of Operations Research* 19 (1994), 769–779.

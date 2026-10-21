@@ -69,7 +69,7 @@ $$X^{ss}/\negthinspace\negthinspace/G\cong \mu^{-1}(0)/K$$
 # 활용
 
 - **모듈라이 공간의 구성.** [모듈라이 공간](moduli-space.md)을 만들 때 대상을 사영공간에 심은 전체를 [Hilbert 스킴](hilbert-scheme.md)으로 매개하고 심기의 자유도를 $\mathrm{GL}\_n$ 의 작용으로 지운다. 안정곡선과 안정 벡터다발의 안정성 조건이 Hilbert–Mumford 판정을 그 작용에 적용해 나온 것이다.
-- **사영공간의 몫과 토릭 다양체.** 토러스가 $\mathbb C^n$ 에 무게로 작용할 때 선형화를 바꾸면 안정점의 집합이 바뀌고 몫도 바뀐다. 이렇게 얻는 몫이 토릭 다양체이고, 선형화의 공간을 나누는 벽을 넘을 때 몫이 쌍유리 변환으로 바뀐다.
+- **사영공간의 몫과 토릭 다양체.** 토러스가 $\mathbb C^n$ 에 무게로 작용할 때 선형화를 바꾸면 안정점의 집합이 바뀌고 몫도 바뀐다. 이렇게 얻는 몫이 [토릭 다양체](toric-varieties.md)이고, 선형화의 공간을 나누는 벽을 넘을 때 몫이 쌍유리 변환으로 바뀐다.
 - **표현의 분류.** 군이나 대수의 표현을 행렬의 조로 적으면 기저의 선택이 $\mathrm{GL}\_n$ 의 작용이 된다. 표현의 동형류를 매개하는 공간을 이 작용의 몫으로 얻고, 안정성 조건이 기약성이나 반단순성에 대응한다.
 
 [^1]: M. Nagata, "Invariants of a Group in an Affine Ring", Journal of Mathematics of Kyoto University **3** (1964), 369–377.
