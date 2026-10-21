@@ -2,7 +2,7 @@
 
 # 개요
 
-수체 $K$ 위의 [타원곡선](elliptic-curves.md) $E$ 에 대해 [Mordell–Weil 정리](canonical-height.md)는
+**Selmer 군(Selmer group)** 은 수체 위 [타원곡선](elliptic-curves.md)의 $m$ 비틀림 부분의 [Galois 코호몰로지](galois-cohomology.md) 가운데 모든 자리에서 국소적으로 점에서 오는 류들의 유한군이고, **Tate–Shafarevich 군(Tate–Shafarevich group)** 은 그 곡선의 Galois 코호몰로지 가운데 모든 자리에서 국소적으로 자명한 류들의 군이다. 수체 $K$ 위의 타원곡선 $E$ 에 대해 [Mordell–Weil 정리](canonical-height.md)는
 
 $$
 E(K)\thickspace\cong\thickspace\mathbb Z^r\oplus E(K)\_{\mathrm{tors}}
@@ -16,9 +16,9 @@ $$
 E(K)/mE(K)\ \hookrightarrow\ H^1(K,E[m])
 $$
 
-는 목표를 [Galois 코호몰로지](galois-cohomology.md) 안에 넣지만 오른쪽은 무한군이다. 모든 자리 $v$ 에서 국소적으로 점에서 오는 류만 남기고 잘라내면 유한군 **Selmer 군** $\mathrm{Sel}^m(E/K)$ 이 되고, 이것은 유효하게 계산된다.
+는 목표를 Galois 코호몰로지 안에 넣지만 오른쪽은 무한군이다. 모든 자리 $v$ 에서 국소적으로 점에서 오는 류만 남기고 잘라내면 유한군 Selmer 군 $\mathrm{Sel}^m(E/K)$ 이 되고, 이것은 유효하게 계산된다.
 
-걸러낸 결과는 목표보다 크다. 차이를 재는 군이 **Tate–Shafarevich 군** $\text{Ш}(E/K)$ 이며, 기본 완전열
+걸러낸 결과는 목표보다 크다. 차이를 재는 군이 Tate–Shafarevich 군 $\text{Ш}(E/K)$ 이며, 기본 완전열
 
 $$
 0\longrightarrow E(K)/mE(K)\longrightarrow\mathrm{Sel}^m(E/K)\longrightarrow \text{Ш}(E/K)[m]\longrightarrow0
