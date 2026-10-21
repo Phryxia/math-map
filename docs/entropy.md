@@ -96,5 +96,6 @@ $H(f(X)) \le H(X)$ 이고 $f$ 가 단사이면 등호다. 데이터를 가공해
 - [무손실 부호화 정리](source-coding.md)
 - [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md)
 - [Kolmogorov 복잡도](kolmogorov-complexity.md)
+- [유한형 이동](shifts-of-finite-type.md)
 
 #information_theory #probability #computation

@@ -97,6 +97,6 @@ $x$ 를 전부 1 인 벡터로 두면 $(Ax)\_i/x_i=r_i$ 이므로, $r(x)\le\rho(
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [유한형 이동](shifts-of-finite-type.md)
 
 #linear_algebra #graph_theory #probability
