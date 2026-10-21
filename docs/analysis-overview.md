@@ -96,6 +96,7 @@ graph TD
 - [상미분방정식](ordinary-differential-equations.md): Picard–Lindelöf 존재 정리와 선형 이론
   - [Grönwall 부등식](gronwall-inequality.md): 자기 적분으로 눌린 함수의 지수 상한, 해의 유일성과 연속의존성
   - [Peano 존재정리](peano-existence-theorem.md): 연속성만으로 얻는 해의 존재, 유일성의 실패와 Osgood 조건
+  - [Lyapunov 안정성](lyapunov-stability.md): 해를 구하지 않고 평형점 근처에 머무는지 판정하는 Lyapunov 함수와 선형화
 - [Sturm–Liouville 이론](sturm-liouville.md): 2 계 고윳값 문제의 직교성과 완전성, Sturm 진동정리
 
 ## 측도와 복소평면으로의 확장

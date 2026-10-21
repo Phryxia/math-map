@@ -38,7 +38,7 @@ $$
 (Tx)(t)=x_0+\int_{t_0}^{t}f\bigl(s,x(s)\bigr)\thinspace ds
 $$
 
-자율 방정식에서 $f$ 를 $0$ 으로 만드는 점을 평형점(equilibrium)이라 한다. 평형점이 Lyapunov 안정이라는 것은 초깃값을 충분히 가깝게 두면 궤적이 영원히 가까이 머무는 것, 점근 안정이라는 것은 여기에 더해 궤적이 평형점으로 수렴하는 것이다.
+자율 방정식에서 $f$ 를 $0$ 으로 만드는 점을 평형점(equilibrium)이라 한다. 평형점이 [Lyapunov 안정](lyapunov-stability.md)이라는 것은 초깃값을 충분히 가깝게 두면 궤적이 영원히 가까이 머무는 것, 점근 안정이라는 것은 여기에 더해 궤적이 평형점으로 수렴하는 것이다.
 
 # 성질
 
@@ -145,10 +145,11 @@ $f$ 가 Lipschitz 이고 해가 두 번 미분가능한 구간에서 전역 오�
 
 ## 더 알아보기
 
-### 해의 존재와 고윳값
+### 해의 존재, 안정성, 고윳값
 
 - [Grönwall 부등식](gronwall-inequality.md)
 - [Peano 존재정리](peano-existence-theorem.md)
+- [Lyapunov 안정성](lyapunov-stability.md)
 - [Sturm–Liouville 이론](sturm-liouville.md)
 
 ### 점근해
