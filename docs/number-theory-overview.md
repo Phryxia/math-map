@@ -126,6 +126,7 @@ graph TD
 - [체 방법](sieve-methods.md): 작은 소수의 배수를 걸러 남는 개수를 재는 Brun 의 절단과 Selberg 의 가중
   - [큰 체](large-sieve.md): 소수마다 절반을 거르는 문제의 지수합 부등식과 Bombieri–Vinogradov 정리
   - [Vaughan 항등식](vaughan-identity.md): von Mangoldt 함수를 쌍선형합으로 가르는 항등식, Type I 과 Type II 합의 추정
+  - [Heath-Brown 항등식](heath-brown-identity.md): von Mangoldt 함수를 Möbius 함수와 1, log 의 합성곱 교대합으로 쓰는 항등식, 변수 길이를 고르는 분류
   - [Chen 정리](chen-theorem.md): 짝수가 소수와 거의 소수의 합이라는 결론, 가중 체와 전환 원리
   - [소수 간격](prime-gaps.md): 연속한 소수의 차의 하한과 상한, 허용집합과 유계 간격
   - [Cramér 추측](cramer-conjecture.md): 소수를 독립 시행으로 바꾼 모형이 주는 최대 간격 $(\log p)^2$ 와 Maier 정리가 드러낸 모형의 어긋남

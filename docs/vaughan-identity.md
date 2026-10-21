@@ -69,7 +69,7 @@ $$\sum\_{n\le x}\Lambda(n)e(n\alpha)\ll\Bigl(\frac{x}{\sqrt q}+x^{4/5}+\sqrt{xq}
 - [큰 체](large-sieve.md): Bombieri–Vinogradov 정리의 증명이 $\Lambda$ 를 이 항등식으로 분해한 뒤 각 쌍선형합을 Dirichlet 지표합으로 쓰고 큰 체의 해석적 꼴을 적용한다.
 - [원법](circle-method.md): 세 소수 정리의 소호 추정이 위의 Weyl 합 상한이다. 주호에서는 $\Lambda$ 의 분포를 직접 쓰고 소호에서는 이 분해를 쓴다.
 - 지수합의 쌍선형 분해: 소수에 걸친 다른 합에서도 같은 형태의 분해를 쓰고, Type I 과 Type II 가운데 어느 쪽이 병목인지로 얻을 수 있는 범위가 정해진다.
-- Heath-Brown 항등식: 같은 역할을 하는 다른 분해로, $\Lambda$ 를 약수 함수의 합으로 쓰며 조각의 개수가 더 많지만 각 조각의 변수 길이를 세밀하게 고를 수 있다.
+- [Heath-Brown 항등식](heath-brown-identity.md): 같은 역할을 하는 다른 분해로, $\Lambda$ 를 약수 함수의 합으로 쓰며 조각의 개수가 더 많지만 각 조각의 변수 길이를 세밀하게 고를 수 있다.
 
 [^1]: Vaughan, *Sommes trigonométriques sur les nombres premiers*, Comptes Rendus de l'Académie des Sciences Paris 285 (1977), 981–983.
 [^2]: Davenport, *Multiplicative Number Theory*, 2 판, 24 장. Vinogradov 의 원래 추정을 이 항등식으로 다시 증명하는 서술이 여기 있다.
@@ -83,6 +83,6 @@ $$\sum\_{n\le x}\Lambda(n)e(n\alpha)\ll\Bigl(\frac{x}{\sqrt q}+x^{4/5}+\sqrt{xq}
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Heath-Brown 항등식](heath-brown-identity.md)
 
 #number_theory #analysis
