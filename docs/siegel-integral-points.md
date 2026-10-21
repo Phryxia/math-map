@@ -2,7 +2,7 @@
 
 # 개요
 
-[Thue 방정식](thue-equation.md)의 해가 유한한 것과 [Pell 방정식](pell-equation.md)의 해가 무한한 것은 차수의 차이에서 온다. 이 차이를 방정식이 정의하는 곡선의 기하로 바꿔 읽으면 유한성의 기준이 나온다.
+**Siegel 의 정수점 정리(Siegel's theorem on integral points)** 는 수체 위의 아핀 곡선이 종수 1 이상이거나, 종수 0 이고 무한원점이 셋 이상이면 정수점이 유한 개라는 정리다. [Thue 방정식](thue-equation.md)의 해가 유한한 것과 [Pell 방정식](pell-equation.md)의 해가 무한한 것은 차수의 차이에서 온다. 이 차이를 방정식이 정의하는 곡선의 기하로 바꿔 읽으면 유한성의 기준이 나온다.
 
 Siegel 의 정리는 곡선의 종수와 무한원점의 개수로 정수점의 유한성을 가른다. 차수가 아니라 곡선의 모양이 기준이므로 Thue 방정식, [타원곡선](elliptic-curves.md)의 정수점, Mordell 방정식이 한 정리에 들어간다.
 

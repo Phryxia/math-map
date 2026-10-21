@@ -2,9 +2,9 @@
 
 # 개요
 
-[p 진 Hodge 이론](p-adic-hodge-theory.md)의 가장 아래 칸인 $B_{\mathrm{HT}}$ 에서 Hodge–Tate 표현이 정의되고 **Hodge–Tate 무게**가 붙는다. 그 정의는 $\mathbb C_p\otimes V$ 가 $\mathbb C_p(h_i)$ 들의 직합으로 쪼개진다는 형태라서, 주어진 표현이 조건을 만족하는지 확인할 방법을 주지 않는다.
+**Sen 이론(Sen theory)** 은 $p$ 진 [Galois 표현](galois-representations.md)에 Galois 군 작용을 무한소로 미분한 선형작용소를 붙여, 표현이 Hodge–Tate 인지와 그 무게를 이 작용소의 고윳값으로 판정하는 이론이다. [p 진 Hodge 이론](p-adic-hodge-theory.md)의 가장 아래 칸인 $B_{\mathrm{HT}}$ 에서 Hodge–Tate 표현이 정의되고 **Hodge–Tate 무게**가 붙는다. 그 정의는 $\mathbb C_p\otimes V$ 가 $\mathbb C_p(h_i)$ 들의 직합으로 쪼개진다는 형태라서, 주어진 표현이 조건을 만족하는지 확인할 방법을 주지 않는다.
 
-**Sen 이론(Sen theory)** 은 그 확인을 행렬 계산 하나로 바꾼다. 순환분체 확장 $K_\infty/K$ 의 Galois 군 $\Gamma\cong\mathbb Z_p^\times$ 의 작용을 무한소로 미분해 얻는 선형작용소가
+Sen 이론은 그 확인을 행렬 계산 하나로 바꾼다. 순환분체 확장 $K_\infty/K$ 의 Galois 군 $\Gamma\cong\mathbb Z_p^\times$ 의 작용을 무한소로 미분해 얻는 선형작용소가
 
 $$
 \Theta=\lim_{n\to\infty}\frac{\log\bigl(\gamma^{p^n}\bigr)}{p^n\log\chi(\gamma)}

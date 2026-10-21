@@ -2,7 +2,7 @@
 
 # 개요
 
-자기동형 형식의 공간 $L^2\bigl(\mathrm{GL}\_n(F)\backslash\mathrm{GL}\_n(\mathbb A)^1\bigr)$ 는 세 조각으로 나뉜다.
+**Speh 표현(Speh representation)** 은 $\mathrm{GL}\_n$ 의 자기동형 형식 공간에서 잔여 스펙트럼(residual spectrum)을 채우는 표현 $\mathrm{Speh}(\sigma,d)$ 이다. 여기서 $n=dm$, $d\gt 1$ 이고 $\sigma$ 는 $\mathrm{GL}\_m$ 의 첨점 표현(cuspidal representation)이다. 자기동형 형식의 공간 $L^2\bigl(\mathrm{GL}\_n(F)\backslash\mathrm{GL}\_n(\mathbb A)^1\bigr)$ 는 세 조각으로 나뉜다.
 
 $$
 L^2=\underbrace{L^2_{\mathrm{cusp}}}\_{\text{첨점}}\ \oplus\ \underbrace{L^2_{\mathrm{res}}}\_{\text{잔여}}\ \oplus\ \underbrace{L^2_{\mathrm{cont}}}\_{\text{연속}}
@@ -14,7 +14,7 @@ $$
 L^2_{\mathrm{disc}}\bigl(\mathrm{GL}\_n\bigr)=\bigoplus_{n=dm}\ \bigoplus_{\sigma\ \text{첨점}(\mathrm{GL}\_m)}\mathrm{Speh}(\sigma,d)
 $$
 
-각 항이 정확히 한 번씩 나온다. $d=1$ 이 첨점 표현 자신이고 $d\gt 1$ 인 것들이 잔여 스펙트럼을 채우는 **Speh 표현**이다.
+각 항이 정확히 한 번씩 나온다. $d=1$ 이 첨점 표현 자신이고 $d\gt 1$ 인 것들이 잔여 스펙트럼을 채우는 Speh 표현이다.
 
 [Arthur 매개변수](arthur-parameters.md) 쪽에서 이 분류는 $\psi=\sigma\boxtimes[d]$ 한 줄이며, 둘째 $\mathrm{SL}\_2(\mathbb C)$ 의 $d$ 차원 표현이 Speh 표현의 $d$ 다. $\mathrm{GL}\_n$ 은 Arthur 의 분류가 완전히 증명된 유일한 경우이고 고전군 쪽 그림의 원본이다.
 

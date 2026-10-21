@@ -2,7 +2,7 @@
 
 # 개요
 
-구면 위의 함수를 전개하는 기저는 회전군이 정한다. $L^2(S^2)$ 에 $\mathrm{SO}(3)$ 가 작용하고, 이 [Hilbert 공간](hilbert-spaces.md)이 [기약표현](group-representations.md)들의 직교합으로 쪼개진다.
+**구면조화함수(spherical harmonics)** 는 $\mathbb R^3$ 의 조화 동차다항식을 구면 $S^2$ 에 제한한 함수, 곧 구면 위 Laplace 작용소의 고유함수다. 구면 위의 함수를 전개하는 기저는 회전군이 정한다. $L^2(S^2)$ 에 $\mathrm{SO}(3)$ 가 작용하고, 이 [Hilbert 공간](hilbert-spaces.md)이 [기약표현](group-representations.md)들의 직교합으로 쪼개진다.
 
 $$
 L^2(S^2)=\widehat{\bigoplus_{\ell\ge0}}\ \mathcal H_\ell,\qquad \dim\mathcal H_\ell=2\ell+1

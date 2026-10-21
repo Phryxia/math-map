@@ -2,7 +2,7 @@
 
 # 개요
 
-역행렬을 이미 아는 행렬에 랭크 $1$ 행렬을 더하면, 새 역행렬이 옛 역행렬과 벡터 두 개로 적힌다. 행렬을 다시 뒤집지 않고 $n^2$ 번의 곱셈으로 갱신하는 **Sherman–Morrison 공식(Sherman–Morrison formula)** 이다.
+**Sherman–Morrison 공식(Sherman–Morrison formula)** 은 역행렬을 이미 아는 행렬에 랭크 $1$ 행렬을 더했을 때 새 역행렬을 옛 역행렬과 벡터 두 개로 적는 공식이다. 행렬을 다시 뒤집지 않고 $n^2$ 번의 곱셈으로 역행렬을 갱신한다.
 
 [Schur 보수](schur-complement.md)를 블록 $\begin{pmatrix}A&u\cr v^{\mathsf T}&-1\end{pmatrix}$ 에 쓰면 이 공식이 나온다. 랭크가 $k$ 인 갱신으로 넓힌 것이 Woodbury 항등식이다.
 

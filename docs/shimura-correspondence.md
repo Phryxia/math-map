@@ -2,7 +2,7 @@
 
 # 개요
 
-[모듈러 형식](modular-forms.md)의 무게는 보통 정수이지만, [theta 급수](theta-series.md) $\theta(\tau)=\sum_{n\in\mathbb Z}q^{n^2}$ 의 무게는 변환식에 붙는 제곱근 때문에 $1/2$ 이다.
+**Shimura 대응(Shimura correspondence)** 은 반정수 무게 $k+1/2$ 의 [모듈러 형식](modular-forms.md)을 정수 무게 $2k$ 의 모듈러 형식으로 보내고 Hecke 고윳값을 보존하는 사상이다. 모듈러 형식의 무게는 보통 정수이지만, [theta 급수](theta-series.md) $\theta(\tau)=\sum_{n\in\mathbb Z}q^{n^2}$ 의 무게는 변환식에 붙는 제곱근 때문에 $1/2$ 이다.
 
 $$
 \theta\negthinspace\left(\frac{-1}{4\tau}\right)=\sqrt{-2i\tau}\thinspace\theta(\tau)
