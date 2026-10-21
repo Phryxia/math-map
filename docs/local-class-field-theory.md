@@ -2,7 +2,7 @@
 
 # 개요
 
-**국소 유체론(local class field theory)** 은 국소체 $K$ 의 아벨 확대를 $K^\times$ 의 유한지수 열린 부분군과 대응시키는 이론이다. [유체론](class-field-theory.md)은 수체 $K$ 의 아벨 확대를 $K$ 안의 산술로 분류한다. 존재정리로 모든 광선유체가 존재하지만 그 체를 만드는 다항식은 나오지 않는다. $K=\mathbb Q$ 에서 [원분체](cyclotomic-fields.md)라는 답은 Kronecker–Weber 정리가 주고, 일반 $K$ 에서 그런 명시적 구성은 열린 문제다.
+**국소 유체론(local class field theory)** 은 국소체 $K$ 의 아벨 확대를 $K^\times$ 의 유한지수 열린 부분군과 대응시키는 이론이다. [유체론](class-field-theory.md)은 수체 $K$ 의 아벨 확대를 $K$ 안의 산술로 분류한다. 존재정리로 모든 광선유체가 존재하지만 그 체를 만드는 다항식은 나오지 않는다. $K=\mathbb Q$ 에서 [원분체](cyclotomic-fields.md)라는 답은 Kronecker–Weber 정리가 주고, $K=\mathbb Q$ 와 허수 이차체를 뺀 수체에서는 그런 명시적 구성이 알려져 있지 않다[^2].
 
 한 자리에서는 사정이 다르다. [p 진수](p-adic-numbers.md)를 완비화해 얻는 국소체 $K$ 에 대해서는 아벨 확대 전체를 손으로 만들 수 있다. 이 분류가 **국소 유체론(local class field theory)** 이다.
 
