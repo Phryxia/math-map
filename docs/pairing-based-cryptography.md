@@ -2,7 +2,7 @@
 
 # 개요
 
-[타원곡선](elliptic-curves.md)의 비틀림점 사이에는 쌍선형 사상이 정의된다. 이 사상은 곡선의 군을 [유한체](finite-fields.md)의 곱셈군으로 옮긴다.
+**쌍선형 암호(pairing-based cryptography)** 는 [타원곡선](elliptic-curves.md)의 쌍선형 사상을 이용해 신원 기반 암호(identity-based encryption)나 짧은 서명을 구성하는 공개키 암호다. 타원곡선의 비틀림점 사이에는 쌍선형 사상이 정의된다. 이 사상은 곡선의 군을 [유한체](finite-fields.md)의 곱셈군으로 옮긴다.
 
 $$
 e:E[r]\times E[r]\to\mu_r\subset\mathbb F_{q^k}^\times

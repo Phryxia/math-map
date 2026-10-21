@@ -2,7 +2,7 @@
 
 # 개요
 
-[Godement–Jacquet](godement-jacquet.md)은 $\mathrm{GL}\_n$ 을 담는 벡터공간 $M_n$ 위에서 표준 $L$ 함수를 다룬다. 두 자기동형 표현의 곱
+**Rankin–Selberg 적분(Rankin–Selberg integral)** 은 두 자기동형 형식의 곱을 [Eisenstein 급수](eisenstein-series.md)와 함께 적분해 두 표현의 곱 $L$ 함수를 얻는 적분 표현이다. [Godement–Jacquet](godement-jacquet.md)은 $\mathrm{GL}\_n$ 을 담는 벡터공간 $M_n$ 위에서 표준 $L$ 함수를 다룬다. 두 자기동형 표현의 곱
 
 $$
 L(s,\pi\times\pi'),\qquad \pi \text{ 는 } \mathrm{GL}\_n,\quad \pi' \text{ 는 } \mathrm{GL}\_m
@@ -10,7 +10,7 @@ $$
 
 에는 그런 벡터공간이 없다. 차수가 $nm$ 인 이 $L$ 함수는 [Langlands 강령](langlands-program.md)에서 자주 쓰이지만 정의만으로는 해석적 성질이 나오지 않는다.
 
-Rankin 과 Selberg 가 1939–40 년에 각각 찾은 방법은 두 첨점형식의 곱에 [Eisenstein 급수](eisenstein-series.md)를 곱해 적분한다.
+Rankin 과 Selberg 가 1939–40 년에 각각 찾은 방법은 두 첨점형식의 곱에 Eisenstein 급수를 곱해 적분한다.
 
 $$
 I(s)=\int_{\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H}

@@ -2,7 +2,7 @@
 
 # 개요
 
-복소 반단순 [Lie 대수](lie-algebras.md)는 Cartan 부분대수 $\mathfrak h$ 의 동시 고유공간으로 분해된다[^1].
+**근계(root system)** 는 유클리드 공간에서 각 원소에 대한 반사로 닫혀 있고 정수성 조건을 만족하는 유한 벡터 집합이다. 복소 반단순 [Lie 대수](lie-algebras.md)는 Cartan 부분대수 $\mathfrak h$ 의 동시 고유공간으로 분해된다[^1].
 
 $$
 \mathfrak g=\mathfrak h\oplus\bigoplus_{\alpha\in\Phi}\mathfrak g_\alpha

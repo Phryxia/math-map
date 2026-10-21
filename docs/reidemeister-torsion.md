@@ -2,7 +2,7 @@
 
 # 개요
 
-[호몰로지](homology.md)는 강력하지만 많은 것을 버린다. 사슬복합체
+**Reidemeister 비틀림(Reidemeister torsion)** 은 비순환 사슬복합체에 기저를 고정해 정하는 행렬식의 교대곱으로, 호모토피 동치로는 보존되지 않는 위상 불변량이다. [호몰로지](homology.md)는 강력하지만 많은 것을 버린다. 사슬복합체
 
 $$
 \cdots\to C_2\xrightarrow{\partial_2}C_1\xrightarrow{\partial_1}C_0

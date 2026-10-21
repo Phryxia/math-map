@@ -2,7 +2,7 @@
 
 # 개요
 
-[Stokes 현상](stokes-phenomenon.md)에서 점근급수 하나는 함수를 결정하지 못하고 빠진 정보가 지수적으로 작은 항에 들어 있다. 급수의 계수가 $n!$ 규모로 발산한다는 사실이 빠진 항의 크기를 준다. Écalle 의 **Resurgence 이론(resurgence theory)** 이 이 관찰을 연산으로 만든다.
+**Resurgence 이론(resurgence theory)** 은 발산하는 점근급수를 Borel 변환(Borel transform)과 그 특이점으로 다뤄 지수적으로 작은 항까지 복원하는 Écalle 의 이론이다. [Stokes 현상](stokes-phenomenon.md)에서 점근급수 하나는 함수를 결정하지 못하고 빠진 정보가 지수적으로 작은 항에 들어 있다. 급수의 계수가 $n!$ 규모로 발산한다는 사실이 빠진 항의 크기를 준다. Resurgence 이론은 이 관찰을 연산으로 만든다.
 
 Borel 평면의 특이점 $\omega$ 마다 정의되는 **alien 미분** $\Delta_\omega$ 는 곱셈에 대해 Leibniz 법칙을 만족하고 보통의 미분 $\partial_x$ 와 교환한다. 지수적으로 작은 항이 켜지는 현상이 자동사상 $\exp\bigl(\sum_\omega \dot\Delta_\omega\bigr)$ 로 쓰이고, 미분방정식이 주는 제약이 **bridge equation** 한 줄로 압축된다. 여기서 점근급수 계수의 큰 $n$ 점근이 따라 나온다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-[근사 알고리즘](approximation-algorithms.md)은 NP(nondeterministic polynomial time)-어려운 문제에 대해 보장된 비율의 답을 낸다. 어떤 문제는 임의로 좋은 근사가 가능하고(FPTAS, fully polynomial-time approximation scheme) 어떤 문제는 어느 비율에서 멈춘다. 알고리즘 설계만으로는 그 경계를 알 수 없다.
+**PCP 정리(PCP theorem)** 는 NP(nondeterministic polynomial time)의 모든 언어가 증명의 상수 개 비트만 무작위로 읽는 검증자로 확인되는 확률적 검사 가능 증명(probabilistically checkable proof, PCP)을 갖는다는 정리다. [근사 알고리즘](approximation-algorithms.md)은 NP-어려운 문제에 대해 보장된 비율의 답을 낸다. 어떤 문제는 임의로 좋은 근사가 가능하고(FPTAS, fully polynomial-time approximation scheme) 어떤 문제는 어느 비율에서 멈춘다. 알고리즘 설계만으로는 그 경계를 알 수 없다.
 
 1992 년에 완성된 **PCP 정리**(probabilistically checkable proof)가 경계를 준다.
 

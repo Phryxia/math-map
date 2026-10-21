@@ -2,7 +2,7 @@
 
 # 개요
 
-[Selmer 군](selmer-tate-shafarevich.md)은 대역 [Galois 코호몰로지](galois-cohomology.md) $H^1(K,M)$ 을 모든 자리의 국소 코호몰로지 $H^1(K_v,M)$ 로 보내고 국소 조건으로 걸러 정의한다. **Poitou–Tate 완전열(Poitou–Tate exact sequence)**[^1] 은 이 국소화 사상의 핵과 상을 결정한다.
+**Poitou–Tate 완전열(Poitou–Tate exact sequence)**[^1] 은 수체 위 유한 Galois 가군의 대역 코호몰로지와 국소 코호몰로지를 잇는 9 항 완전열이다. [Selmer 군](selmer-tate-shafarevich.md)은 대역 [Galois 코호몰로지](galois-cohomology.md) $H^1(K,M)$ 을 모든 자리의 국소 코호몰로지 $H^1(K_v,M)$ 로 보내고 국소 조건으로 걸러 정의한다. Poitou–Tate 완전열은 이 국소화 사상의 핵과 상을 결정한다.
 
 $$
 \begin{aligned}

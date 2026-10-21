@@ -2,7 +2,7 @@
 
 # 개요
 
-[Expander 그래프](expander-graphs.md)는 스펙트럼 간극이 클수록 잘 섞인다. Alon–Boppana 정리가 그 한계를 정한다. $d$ 정규 그래프의 두 번째 절댓값 고윳값 $\lambda$ 는 정점 수가 커질 때
+**Ramanujan 그래프(Ramanujan graph)** 는 자명하지 않은 고윳값의 절댓값이 모두 $2\sqrt{d-1}$ 이하인 $d$ 정규 그래프다. [Expander 그래프](expander-graphs.md)는 스펙트럼 간극이 클수록 잘 섞인다. Alon–Boppana 정리가 그 한계를 정한다. $d$ 정규 그래프의 두 번째 절댓값 고윳값 $\lambda$ 는 정점 수가 커질 때
 
 $$
 \lambda\ \ge\ 2\sqrt{d-1}-o(1)
