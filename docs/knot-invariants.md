@@ -144,5 +144,6 @@ $V\ne1$ 이므로 삼엽매듭은 풀린 매듭이 아니고, $V(t)\ne V(t^{-1})
 - [땋임군](braid-groups.md)
 - [Khovanov 호몰로지](khovanov-homology.md)
 - [볼륨 추측](volume-conjecture.md)
+- [매듭 콩코던스](knot-concordance.md)
 
 #topology #algebraic_topology #combinatorics #computation

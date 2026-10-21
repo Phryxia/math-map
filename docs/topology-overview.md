@@ -155,6 +155,7 @@ graph TD
 - [매듭 불변량](knot-invariants.md): 도식 조작에 변하지 않는 양, 매듭군과 Jones 다항식
   - [땋임군](braid-groups.md): 가닥을 꼬는 조작이 이루는 유한표시군
   - [Khovanov 호몰로지](khovanov-homology.md): 상태합을 사슬복합체로 올려 얻는 매듭 불변량
+  - [매듭 콩코던스](knot-concordance.md): 4 차원 공 안의 고리면으로 매듭을 묶는 동치관계와 그 군, 부호수와 Fox–Milnor 조건, 위상적 슬라이스와 매끄러운 슬라이스의 차이
 - [Dehn 수술](dehn-surgery.md): 매듭 근방을 떼고 다시 붙여 새 3 다양체를 얻는 조작
   - [렌즈 공간](lens-spaces.md): 3 구면을 순환군의 자유 작용으로 나눈 몫
 - [Lobachevsky 함수](lobachevsky-function.md): 쌍곡 사면체의 부피를 적는 함수

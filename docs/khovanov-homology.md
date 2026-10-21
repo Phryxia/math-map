@@ -155,6 +155,6 @@ $Kh^{3,7}=\mathbb Z/2$ 는 Euler 지표에 기여하지 않으므로 Jones 다�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [매듭 콩코던스](knot-concordance.md)
 
 #topology #algebraic_topology #construction #computation
