@@ -24,7 +24,7 @@ $$
 
 $\gamma:\lbrack 0,L\rbrack\to\mathbb R^2$ 를 호의 길이로 매개화한 단순닫힌곡선이라 하고 $\gamma=(x,y)$ 로 쓴다. 호의 길이 매개화는 $x'^2+y'^2=1$ 을 뜻한다.
 
-길이와 넓이는 다음 두 범함수다. 넓이 쪽은 Green 정리로 얻은 꼴이다.
+길이와 넓이는 다음 두 범함수다. 넓이 쪽은 [Green 정리](greens-theorem.md)로 얻은 꼴이다.
 
 $$
 L\lbrack\gamma\rbrack=\oint\sqrt{x'^2+y'^2}\thinspace dt,\qquad A\lbrack\gamma\rbrack=\frac12\oint(xy'-yx')\thinspace dt
