@@ -10,7 +10,7 @@
 
 1928 년 Alexander 가 만든 다항식 불변량이 반세기 동안 유일했다. 1984 년 Jones 가 작용소대수 연구 도중 다른 불변량을 발견했고, Kauffman 이 그것을 도식의 교차점마다 두 가지로 끊어 더하는 초등적 구성으로 다시 세웠다.
 
-이 구성은 Alexander 다항식이 놓치던 **카이랄성**, 곧 매듭과 거울상의 구별을 잡아낸다.
+이 구성은 [Alexander 다항식](alexander-polynomial.md)이 놓치던 **카이랄성**, 곧 매듭과 거울상의 구별을 잡아낸다.
 
 # 직관
 
@@ -144,6 +144,6 @@ $V\ne1$ 이므로 삼엽매듭은 풀린 매듭이 아니고, $V(t)\ne V(t^{-1})
 - [땋임군](braid-groups.md)
 - [Khovanov 호몰로지](khovanov-homology.md)
 - [볼륨 추측](volume-conjecture.md)
-- [매듭 콩코던스](knot-concordance.md)
+- [Alexander 다항식](alexander-polynomial.md)
 
 #topology #algebraic_topology #combinatorics #computation

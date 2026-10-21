@@ -34,7 +34,7 @@ $$
 \sigma(K)=\mathrm{sign}(V+V^{T}),\qquad\Delta_K(t)=\det(V-tV^{T})
 $$
 
-를 각각 부호수(signature)와 Alexander 다항식(Alexander polynomial)이라 한다. 둘 다 $F$ 의 선택에 의존하지 않는다($\Delta_K$ 는 $\pm t^k$ 배를 빼고).
+를 각각 부호수(signature)와 [Alexander 다항식](alexander-polynomial.md)이라 한다. 둘 다 $F$ 의 선택에 의존하지 않는다($\Delta_K$ 는 $\pm t^k$ 배를 빼고).
 
 부호수는 콩코던스 불변량이고 군 준동형 $\sigma\colon\mathcal C\to\mathbb Z$ 이며 $\vert\sigma(K)\vert\le 2g_4(K)$ 를 만족한다[^1]. 삼엽매듭은 $\sigma=\pm 2$ 이므로 슬라이스가 아니고 $\mathcal C$ 에서 위수가 무한이다.
 
@@ -65,7 +65,7 @@ $K$ 가 슬라이스이면 정수 계수 다항식 $f$ 가 있어 $\pm t^k$ 배�
 
 ## 선수지식
 
-- [매듭 불변량](knot-invariants.md)
+- [Alexander 다항식](alexander-polynomial.md)
 - [Khovanov 호몰로지](khovanov-homology.md)
 
 ## 더 알아보기
