@@ -79,7 +79,7 @@ A_6\cong\mathrm{PSL}\_2(9),\qquad
 A_8\cong\mathrm{PSL}\_4(2)
 $$
 
-$\mathrm{PSL}\_2(7)\cong\mathrm{PSL}\_3(2)$ 도 있다. 위수 168 인 이 군은 Klein 4 차곡선의 자기동형군이자 Fano 평면의 자기동형군이다. 작은 위수에서는 서로 다른 구성이 자꾸 같은 군을 낳고, 위수가 커지면 이런 우연이 사라진다.
+$\mathrm{PSL}\_2(7)\cong\mathrm{PSL}\_3(2)$ 도 있다. 위수 168 인 이 군은 [Klein 사차곡선](klein-quartic.md)의 자기동형군이자 Fano 평면의 자기동형군이다. 작은 위수에서는 서로 다른 구성이 자꾸 같은 군을 낳고, 위수가 커지면 이런 우연이 사라진다.
 
 ## Feit–Thompson 정리
 

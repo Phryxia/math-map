@@ -88,7 +88,7 @@ $$
 2g-2=\vert G\vert\Bigl(2h-2+\sum_{i=1}^r\Bigl(1-\frac1{m_i}\Bigr)\Bigr)
 $$
 
-이다. 괄호 안의 값 $T$ 는 양수다. $h\ge 1$ 이면 $T\ge 1/2$ 이고, $h=0$ 이면 $r\ge 3$ 이어야 하며 $T$ 의 가장 작은 양수 값은 $(m_1,m_2,m_3)=(2,3,7)$ 에서 나오는 $1-\tfrac12-\tfrac13-\tfrac17=\tfrac1{42}$ 다. 따라서 $\vert G\vert=(2g-2)/T\le 84(g-1)$ 이다. 등호는 Klein 사차곡선(Klein quartic) $x^3y+y^3z+z^3x=0$ 에서 $g=3$, $\vert G\vert=168$ 로 성립한다.
+이다. 괄호 안의 값 $T$ 는 양수다. $h\ge 1$ 이면 $T\ge 1/2$ 이고, $h=0$ 이면 $r\ge 3$ 이어야 하며 $T$ 의 가장 작은 양수 값은 $(m_1,m_2,m_3)=(2,3,7)$ 에서 나오는 $1-\tfrac12-\tfrac13-\tfrac17=\tfrac1{42}$ 다. 따라서 $\vert G\vert=(2g-2)/T\le 84(g-1)$ 이다. 등호는 [Klein 사차곡선](klein-quartic.md) $x^3y+y^3z+z^3x=0$ 에서 $g=3$, $\vert G\vert=168$ 로 성립한다.
 
 ## 양의 표수
 
@@ -122,5 +122,6 @@ $k$ 의 표수 $\ell$ 이 $e_p$ 를 나누지 않으면 **길들여진 분기(ta
 ## 더 알아보기
 
 - [초타원곡선](hyperelliptic-curves.md)
+- [Klein 사차곡선](klein-quartic.md)
 
 #complex_analysis #algebraic_topology #number_theory #theorem
