@@ -102,6 +102,7 @@ graph TD
 먼저 읽을 갈래: Lie 군과 다발. 먼저 읽을 것: [내적 공간](inner-product-spaces.md)(선형대수 개관). 시작 문서: [곡률](curvature.md).
 
 - [곡률](curvature.md): 곡선과 곡면의 휘어짐, Gauss 곡률과 평균 곡률
+  - [극소곡면](minimal-surfaces.md): 평균곡률이 0 인 곡면, 넓이의 일차 변분과 현수면, Bernstein 정리와 Plateau 문제
 - [Riemann 계량](riemannian-metrics.md): 접공간의 내적, Levi-Civita 접속, 측지선 방정식
   - [Killing 벡터장](killing-vector-fields.md): 계량을 보존하는 흐름, 측지선을 따르는 보존량과 차원 상한
   - [대칭공간](symmetric-spaces.md): 점마다 측지선을 뒤집는 등거리변환을 갖는 다양체, Cartan 분해와 세 유형의 분류

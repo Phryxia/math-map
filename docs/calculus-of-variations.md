@@ -90,7 +90,7 @@ $\delta J=0$ 은 극값의 필요조건일 뿐이다. 이차 변분의 부호가
 
 - **고전역학.** 작용 $\int(T-V)dt$ 의 정류 조건이 Newton 방정식과 같다. 좌표 선택에 무관한 형태라 구속이 있는 계에서 방정식을 세우기 쉽다. 속도를 운동량으로 바꾸면 같은 운동이 [Hamilton 역학](hamiltonian-mechanics.md)의 1차 방정식계가 된다.
 - **기하.** 곡면 위 두 점을 잇는 최단 곡선의 방정식이 측지선 방정식이다([Riemann 계량](riemannian-metrics.md)).
-- **최소곡면.** 넓이 범함수의 Euler–Lagrange 방정식이 평균곡률 $0$ 조건이고, 비눗막이 그 해다([곡률](curvature.md)).
+- **[극소곡면](minimal-surfaces.md).** 넓이 범함수의 Euler–Lagrange 방정식이 평균곡률 $0$ 조건이고, 비눗막이 그 해다([곡률](curvature.md)).
 - **편미분방정식.** Dirichlet 에너지 $\int\lvert\nabla u\rvert^2$ 의 정류 조건이 Laplace 방정식이다([Dirichlet 문제](dirichlet-problem.md)).
 
 # 연관 문서
@@ -112,5 +112,6 @@ $\delta J=0$ 은 극값의 필요조건일 뿐이다. 이차 변분의 부호가
 - [최단강하선 문제](brachistochrone.md)
 - [현수선](catenary.md)
 - [등주부등식](isoperimetric-inequality.md)
+- [극소곡면](minimal-surfaces.md)
 
 #analysis #differential_geometry #optimization

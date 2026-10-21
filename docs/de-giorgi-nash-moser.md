@@ -107,7 +107,7 @@ $\alpha$ 를 $\Lambda/\lambda$ 와 무관하게 잡을 수는 없다. 평면에�
 - **Hilbert 의 열아홉째 문제.** 볼록 적분범함수의 최소점이 매끄러운지 묻는 문제다. 최소점은 Euler–Lagrange 방정식의 약한 해이고, 그 방정식을 한 번 미분하면 미분한 함수가 유계 측정가능 계수의 발산형 방정식을 만족한다. 이 정리가 그 함수의 Hölder 연속성을 주고, 그러면 원래 방정식의 계수가 Hölder 연속이 되어 Schauder 추정을 되풀이 쓸 수 있다.
 - **타원형 정칙성의 측정가능 계수 판.** [타원형 정칙성](elliptic-regularity.md) 문서가 계수가 유계 측정가능일 때의 결론으로 든 것이 이 정리다. $H^k$ 판과 달리 계단을 올리지 않고 해 자신의 정칙성만 준다.
 - **Calderón–Zygmund 이론과의 분업.** [Calderón–Zygmund 이론](calderon-zygmund-theory.md)의 $W^{2,p}$ 추정은 비발산형 방정식에서 계수의 연속성을 쓴다. 이 정리는 발산형에서 연속성 없이 성립하고 2계 도함수를 주지 않는다.
-- **비선형 변분 문제.** 최소곡면 방정식과 $p$-Laplace 방정식의 정칙성 증명은 선형화한 방정식에 이 정리를 쓴 뒤 계수를 되먹이는 순서를 따른다.
+- **비선형 변분 문제.** [극소곡면](minimal-surfaces.md) 방정식과 $p$-Laplace 방정식의 정칙성 증명은 선형화한 방정식에 이 정리를 쓴 뒤 계수를 되먹이는 순서를 따른다.
 
 [^1]: Qing Han, Fanghua Lin, *Elliptic Partial Differential Equations*, 2판, American Mathematical Society, 2011, 4.1 절.
 [^2]: Ennio De Giorgi, "Sulla differenziabilità e l'analiticità delle estremali degli integrali multipli regolari", *Memorie della Accademia delle Scienze di Torino* **3** (1957), 25–43. John Nash, "Continuity of solutions of parabolic and elliptic equations", *American Journal of Mathematics* **80** (1958), 931–954 가 포물형 판을 독립으로 얻었다.
