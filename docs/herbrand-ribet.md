@@ -2,7 +2,7 @@
 
 # 개요
 
-[Stickelberger](stickelberger.md) 소멸 정리는 한 방향만 준다. $p$ 가 Bernoulli 수 $B_k$ 를 나누지 않으면 순환체 류군의 $\omega^{1-k}$ 성분이 0 이다. 이것이 Herbrand 의 정리이고, 소멸자가 단원이라는 말이므로 증명은 한 줄이다.
+**Herbrand–Ribet 정리(Herbrand–Ribet theorem)** 는 짝수 $2\le k\le p-3$ 에 대해 $p\mid B_k$ 와 원분체 $\mathbb Q(\mu_p)$ 의 류군의 $\omega^{1-k}$ 성분이 0 이 아닌 것이 동치라는 정리다. [Stickelberger](stickelberger.md) 소멸 정리는 한 방향만 준다. $p$ 가 Bernoulli 수 $B_k$ 를 나누지 않으면 순환체 류군의 $\omega^{1-k}$ 성분이 0 이다. 이것이 Herbrand 의 정리이고, 소멸자가 단원이라는 말이므로 증명은 한 줄이다.
 
 반대 방향은
 

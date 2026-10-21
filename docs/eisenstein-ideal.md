@@ -2,7 +2,7 @@
 
 # 개요
 
-$\mathbb Q$ 위 [타원곡선](elliptic-curves.md)의 비틀림 부분군으로 무엇이 가능한지는 1977 년 Mazur 의 정리 전까지 유한성조차 증명되지 않았다[^1].
+**Eisenstein 아이디얼(Eisenstein ideal)** 은 무게 2, 레벨 $N$ 의 Hecke 대수에서 $N$ 을 나누지 않는 소수 $\ell$ 마다 $T_\ell-1-\ell$ 을 모아 생성한 아이디얼이다. $\mathbb Q$ 위 [타원곡선](elliptic-curves.md)의 비틀림 부분군으로 무엇이 가능한지는 1977 년 Mazur 의 정리 전까지 유한성조차 증명되지 않았다[^1].
 
 **Mazur 의 비틀림점 정리(Mazur's torsion theorem).** $E/\mathbb Q$ 의 비틀림군은 다음 15 개 중 하나다.
 
@@ -13,7 +13,7 @@ $$
 
 증명은 곡선 하나에 대한 물음을 모듈러 곡선의 유리점 문제로 바꾼다. $E$ 가 위수 $N$ 의 유리점을 가지면 $X_1(N)$ 의 유리점이 생기므로 그런 점이 없음을 보이면 된다. [모듈러 곡선](modular-curves.md) $X_0(N)$ 은 $N$ 이 클 때 종수가 크고 Faltings 이전에는 유리점 유한성도 없었다.
 
-Mazur 가 쓴 도구가 **Eisenstein 아이디얼**이다. Hecke 대수 $\mathbb T$ 안에서
+Mazur 가 쓴 도구가 Eisenstein 아이디얼이다. Hecke 대수 $\mathbb T$ 안에서
 
 $$
 I=\big(T_\ell-1-\ell\ :\ \ell\nmid N\big)\subset\mathbb T
@@ -45,7 +45,7 @@ $$
 I=\big(T_\ell-1-\ell\ :\ \ell\nmid N\big)+\big(U_q-1\ :\ q\mid N\big)
 $$
 
-가 **Eisenstein 아이디얼**이다. 생성원은 $E_2$ 형 Eisenstein 급수의 고윳값 $1+\ell$ 을 빼는 원소다. 극대 아이디얼 $\mathfrak m\supset I$ 를 Eisenstein 극대 아이디얼이라 한다.
+가 Eisenstein 아이디얼이다. 생성원은 $E_2$ 형 Eisenstein 급수의 고윳값 $1+\ell$ 을 빼는 원소다. 극대 아이디얼 $\mathfrak m\supset I$ 를 Eisenstein 극대 아이디얼이라 한다.
 
 ## 첨점군
 
