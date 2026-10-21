@@ -58,7 +58,7 @@ $$
 # 활용
 
 - **구면 위의 다발.** 계수가 큰 복소 벡터다발이 $S^k$ 위에 몇 가지인지는 $\pi\_{k-1}(U)$ 이므로 $k$ 가 짝수이면 $\mathbb Z$, 홀수이면 하나다.
-- **Hopf 불변량 $1$ 문제.** Adams 와 Atiyah 는 K 이론의 Adams 연산으로 [Hopf 불변량](hopf-invariant.md)이 $1$ 인 사상이 $S^1$, $S^3$, $S^7$ 에서 오는 것뿐임을 보였다. 이 계산이 Bott 주기성으로 정한 $\widetilde K(S^{2n})$ 의 생성원을 쓴다.
+- **Hopf 불변량 $1$ 문제.** Adams 와 Atiyah 는 K 이론의 [Adams 연산](adams-operations.md)으로 [Hopf 불변량](hopf-invariant.md)이 $1$ 인 사상이 $S^1$, $S^3$, $S^7$ 에서 오는 것뿐임을 보였다. 이 계산이 Bott 주기성으로 정한 $\widetilde K(S^{2n})$ 의 생성원을 쓴다.
 - **지표 정리.** [지표 정리](index-theorem.md)의 위상적 지표는 K 이론의 Thom 동형과 Bott 주기성으로 정의된다. [작용소 K 이론](operator-k-theory.md)에서 같은 주기성이 $C^\ast$ 대수의 $K\_0$ 과 $K\_1$ 을 잇는다.
 
 [^1]: R. Bott, "The stable homotopy of the classical groups", *Annals of Mathematics* 70 (1959), 313–337.
@@ -74,6 +74,7 @@ $$
 
 ## 더 알아보기
 
+- [Adams 연산](adams-operations.md)
 - [J 준동형](j-homomorphism.md)
 
 #algebraic_topology #topology #differential_geometry

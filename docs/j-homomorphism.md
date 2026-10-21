@@ -33,7 +33,7 @@ $$
 | SO 의 호모토피군 | $\mathbb Z/2$ | $\mathbb Z/2$ | $\mathbb Z$ | $\mathbb Z$ | $0$ |
 | J 의 상 | $\mathbb Z/2$ | $\mathbb Z/2$ | 순환군 | 순환군 | $0$ |
 
-$k=4s-1$ 이면 상은 위수가 $B\_{2s}/4s$ 의 기약분수 분모인 순환군이다. Adams 는 K 이론의 Adams 연산으로 만든 e 불변량으로 상이 이 위수를 넘지 않음을 보였고, 같은 위수에 닿는다는 것은 Adams 추측에 의존했다. Adams 추측은 Quillen 과 Sullivan 이 증명했다[^2].
+$k=4s-1$ 이면 상은 위수가 $B\_{2s}/4s$ 의 기약분수 분모인 순환군이다. Adams 는 K 이론의 [Adams 연산](adams-operations.md)으로 만든 e 불변량으로 상이 이 위수를 넘지 않음을 보였고, 같은 위수에 닿는다는 것은 Adams 추측에 의존했다. Adams 추측은 Quillen 과 Sullivan 이 증명했다[^2].
 
 ## 낮은 차수의 값
 

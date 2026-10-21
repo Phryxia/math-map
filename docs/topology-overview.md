@@ -123,6 +123,7 @@ graph TD
 - [Steenrod 연산](steenrod-operations.md): 현수를 지나도 남는 코호몰로지 연산, Adem 관계
 - [분류공간](classifying-spaces.md): 다발을 세는 문제를 사상의 호모토피류를 세는 문제로 바꾸는 공간
 - [Bott 주기성](bott-periodicity.md): 안정 유니터리군과 직교군의 호모토피군이 주기 2 와 8 로 되풀이된다, K 이론의 주기성
+  - [Adams 연산](adams-operations.md): 선다발을 거듭제곱으로 보내는 K 이론의 환 준동형, Hopf 불변량 1 문제의 풀이
   - [J 준동형](j-homomorphism.md): 회전의 족에서 구면 사이의 사상을 만드는 준동형, 상의 위수와 Bernoulli 수
 - [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md): 호모토피군이 한 차수에만 있는 공간, 코호몰로지의 표현가능성
   - [Brown 표현 정리](brown-representability.md): 쐐기합 공리와 Mayer–Vietoris 공리를 만족하는 함자를 표현하는 공간의 존재
