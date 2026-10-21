@@ -98,6 +98,7 @@ $A$ 와 $B$ 가 각각 어떤 열린 근방의 변형 수축핵이면 그 근방
 - **[Euler 지표](euler-characteristic.md)의 합 규칙.** $\chi(X\cup Y)=\chi(X)+\chi(Y)-\chi(X\cap Y)$ 는 Mayer–Vietoris 열에 완전열의 덧셈 공식을 적용한 것이다. 유한 길이 완전열에서 차수의 교대합이 $0$ 이라는 사실이 그 공식이다.
 - **de Rham 정리.** [de Rham 코호몰로지](de-rham-cohomology.md)와 특이 코호몰로지가 같다는 정리의 증명은 좋은 덮개를 잡아 두 이론의 Mayer–Vietoris 열을 나란히 놓고 다섯 보조정리로 귀납하는 것이다.
 - **[Hartshorne–Lichtenbaum 소멸 정리](hartshorne-lichtenbaum.md).** 증명은 아이디얼이 한 원소로 생성된 경우를 먼저 처리하고, 생성원 개수에 대한 귀납과 [국소 코호몰로지](local-cohomology.md)의 Mayer–Vietoris 열로 일반의 경우를 그 경우에 붙인다. 열의 꼴이 같고 덮개 대신 아이디얼의 쪼갬이 들어간다.
+- **[Jordan 곡선 정리](jordan-curve-theorem.md).** 구면에서 원판의 상과 구면의 상을 뺀 집합의 호몰로지를 반쪽씩 나눠 이 완전열로 귀납 계산하면, 평면의 Jordan 곡선 바깥의 연결 성분이 둘이라는 것이 나온다.
 
 # 연관 문서
 
@@ -108,6 +109,6 @@ $A$ 와 $B$ 가 각각 어떤 열린 근방의 변형 수축핵이면 그 근방
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Jordan 곡선 정리](jordan-curve-theorem.md)
 
 #algebraic_topology #topology #algebra #differential_geometry
