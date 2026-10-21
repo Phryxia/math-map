@@ -72,7 +72,7 @@ $p=1$ 이면 $W^{1,1}(\Omega)$ 이 반사적이 아니어서 유계 최소화열
 
 # 활용
 
-- [Dirichlet 문제](dirichlet-problem.md)의 해를 에너지 최소화로 얻는다. Dirichlet 원리가 이 논증이고, 최소점의 1차 변분이 약조화성을 주고 정칙성이 조화함수를 준다.
+- [Dirichlet 문제](dirichlet-problem.md)의 해를 에너지 최소화로 얻는다. [Dirichlet 원리](dirichlet-principle.md)가 이 논증이고, 최소점의 1차 변분이 약조화성을 주고 정칙성이 조화함수를 준다.
 - [Lax–Milgram 정리](lax-milgram.md)의 쌍선형형식이 대칭이면 약해가 이차 범함수의 최소점이고, 그 존재가 직접법으로도 나온다. 대칭이 아닌 경우는 최소화 문제로 적히지 않아 정리의 사영 논증이 필요하다.
 - [Wasserstein 기울기 흐름](wasserstein-gradient-flow.md)의 JKO(Jordan–Kinderlehrer–Otto) 스킴은 각 단계가 측도 공간의 최소화 문제다. $W_2$ 의 아래반연속성과 자유에너지의 콤팩트 준위집합이 직접법의 두 조건을 채운다.
 - [등주부등식](isoperimetric-inequality.md)의 최적 집합의 존재도 같은 틀로 얻는다. 둘레를 전변동으로 적고 유계변동 공간에서 최소화열의 극한을 잡는다.
@@ -90,6 +90,6 @@ $p=1$ 이면 $W^{1,1}(\Omega)$ 이 반사적이 아니어서 유계 최소화열
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dirichlet 원리](dirichlet-principle.md)
 
 #analysis #functional_analysis #optimization
