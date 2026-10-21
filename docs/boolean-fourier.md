@@ -102,7 +102,7 @@ $$
 
 ## 주요 정리
 
-- **KKL.** $\mathbb E[f]$ 가 상수에서 떨어져 있으면 어떤 좌표는 영향력이 $\Omega(\log n/n)$ 이상이다. 증명이 초축약성의 첫 큰 응용이었다.
+- **[KKL](kkl-theorem.md)**(Kahn–Kalai–Linial)**.** $\mathbb E[f]$ 가 상수에서 떨어져 있으면 어떤 좌표는 영향력이 $\Omega(\log n/n)$ 이상이다. 증명이 초축약성의 첫 큰 응용이었다.
 - **Friedgut.** 총 영향력이 $k$ 이면 $f$ 는 $2^{O(k/\varepsilon)}$ 개 좌표에만 의존하는 함수로 $\varepsilon$ 근사된다.
 - **FKN**(Friedgut–Kalai–Naor)**.** 무게가 거의 전부 준위 $1$ 에 있으면 $f$ 는 독재자에 가깝다. 독재자 검사의 안정성 보증이 이 형태다.
 - **Kindler–Safra.** 무게가 거의 준위 $k$ 이하에 있으면 $f$ 는 차수 $k$ 의 junta 에 가깝다.
@@ -149,6 +149,7 @@ Walsh–Hadamard 변환으로 $2^n$ 개 계수를 $O(n2^n)$ 에 뽑고, Parseval
 
 ## 더 알아보기
 
+- [Kahn–Kalai–Linial 정리](kkl-theorem.md)
 - [유일게임 추측과 2-to-2 정리](unique-games.md)
 
 #combinatorics #complexity #analysis #computation
