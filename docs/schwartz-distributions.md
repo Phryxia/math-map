@@ -97,7 +97,7 @@ $H^{-k}(U)$ 를 $H_0^k(U)$ 의 쌍대로 정의하면 그 원소가 분포이고
 - **기본해.** $-\Delta E=\delta_0$ 를 만족하는 분포 $E$ 를 찾으면 $-\Delta u=f$ 의 해가 $E$ 와 $f$ 의 합성곱으로 주어진다. [Dirichlet 문제](dirichlet-problem.md)의 고전적 해법에 나오는 핵이 이 $E$ 다.
 - **Fourier 변환의 확장.** $e^{iax}$ 와 다항식은 적분가능하지도 제곱적분가능하지도 않지만 완만 분포이므로 변환이 정의된다. [Poisson 합 공식](poisson-summation.md)을 격자 위의 델타 분포의 변환으로 쓰면 양변이 한 등식이 된다.
 - **측도와 분포.** 유한 Borel [측도](measure.md) $\mu$ 는 $\varphi\mapsto\int\varphi\thinspace d\mu$ 로 분포를 주고, 위 조건을 $m=0$ 으로 만족한다. $m=0$ 으로 만족하는 분포가 국소 유한 측도의 차로 표현된다.
-- **약한 해의 정식화.** 편미분방정식의 양변을 분포로 읽으면 미분가능성을 가정하지 않고 등식을 쓸 수 있다. 해가 실제로 매끄러운지는 정칙성 정리가 따로 답한다.
+- **약한 해의 정식화.** 편미분방정식의 양변을 분포로 읽으면 미분가능성을 가정하지 않고 등식을 쓸 수 있다. 해가 실제로 매끄러운지는 정칙성 정리가 따로 답하고, Laplace 방정식의 경우가 [Weyl 보조정리](weyl-lemma.md)다.
 
 [^1]: Lars Hörmander, *The Analysis of Linear Partial Differential Operators I*, 2판, Springer, 1990, 2 장과 7 장. 분포의 정의, 미분, 완만 분포의 Fourier 변환이 여기 있다.
 
@@ -113,6 +113,7 @@ $H^{-k}(U)$ 를 $H_0^k(U)$ 의 쌍대로 정의하면 그 원소가 분포이고
 
 ## 더 알아보기
 
+- [Weyl 보조정리](weyl-lemma.md)
 - [Green 함수](greens-function.md)
 - [타원형 정칙성](elliptic-regularity.md)
 

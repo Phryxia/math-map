@@ -52,7 +52,7 @@ $$
 
 ## 직접법에 의한 증명
 
-$H^1(\Omega)$ 에서 $\mathcal A\_g$ 는 닫힌 볼록 집합이다. Poincaré 부등식(Poincaré inequality)으로 $E$ 는 $\mathcal A\_g$ 에서 $\Vert u\Vert\_{H^1}$ 이 커지면 커지고, 볼록이므로 약수렴에 대해 아래반연속이다. 최소화열은 $H^1$ 에서 유계이므로 약수렴하는 부분열을 갖고, 그 극한이 최소점이다. 최소점은 약한 의미에서 $\Delta u=0$ 을 만족하고, Weyl 보조정리(Weyl's lemma)로 매끄러운 조화함수다.[^1] 이 증명에서 반례를 막은 것은 Poincaré 부등식이다. Weierstrass 의 범함수에서는 가중치 $x^2$ 가 $x=0$ 에서 사라져 이런 부등식이 성립하지 않는다.
+$H^1(\Omega)$ 에서 $\mathcal A\_g$ 는 닫힌 볼록 집합이다. Sobolev 공간의 Poincaré 부등식(Poincaré inequality)으로 $E$ 는 $\mathcal A\_g$ 에서 $\Vert u\Vert\_{H^1}$ 이 커지면 커지고, 볼록이므로 약수렴에 대해 아래반연속이다. 최소화열은 $H^1$ 에서 유계이므로 약수렴하는 부분열을 갖고, 그 극한이 최소점이다. 최소점은 약한 의미에서 $\Delta u=0$ 을 만족하고, [Weyl 보조정리](weyl-lemma.md)로 매끄러운 조화함수다.[^1] 이 증명에서 반례를 막은 것은 Poincaré 부등식이다. Weierstrass 의 범함수에서는 가중치 $x^2$ 가 $x=0$ 에서 사라져 이런 부등식이 성립하지 않는다.
 
 # 활용
 
