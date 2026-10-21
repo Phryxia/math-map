@@ -82,7 +82,7 @@ $A=\mathcal B(H)$, $I=\mathcal K(H)$ 이면 $K_0(\mathcal K(H))=\mathbb Z$ 이�
 
 ## Bott 주기성
 
-$A$ 의 현수(suspension) $SA=C_0((0,1),A)$ 에 대해 $K_1(A)\cong K_0(SA)$ 는 정의에서 바로 나온다. **Bott 주기성(Bott periodicity)** 은 다음 동형이다[^1].
+$A$ 의 현수(suspension) $SA=C_0((0,1),A)$ 에 대해 $K_1(A)\cong K_0(SA)$ 는 정의에서 바로 나온다. **[Bott 주기성](bott-periodicity.md)(Bott periodicity)** 은 다음 동형이다[^1].
 
 $$
 K_0(A)\cong K_1(SA)
