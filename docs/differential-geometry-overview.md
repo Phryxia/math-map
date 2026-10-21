@@ -103,6 +103,7 @@ graph TD
 
 - [곡률](curvature.md): 곡선과 곡면의 휘어짐, Gauss 곡률과 평균 곡률
 - [극소곡면](minimal-surfaces.md): 평균곡률이 0 인 곡면, 넓이의 일차 변분과 현수면, Bernstein 정리와 Plateau 문제
+  - [Weierstrass–Enneper 표현](weierstrass-enneper.md): 등온 좌표의 극소곡면을 정칙함수와 유리형함수 쌍으로 적는 공식, 전곡률과 법벡터가 피하는 점
   - [평균곡률 흐름](mean-curvature-flow.md): 넓이를 가장 빨리 줄이는 방향으로 곡면을 움직이는 비선형 열방정식, 볼록 곡면의 수축과 목의 특이점
 - [Riemann 계량](riemannian-metrics.md): 접공간의 내적, Levi-Civita 접속, 측지선 방정식
   - [대칭공간](symmetric-spaces.md): 점마다 측지선을 뒤집는 등거리변환을 갖는 다양체, Cartan 분해와 세 유형의 분류
