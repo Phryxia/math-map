@@ -99,7 +99,7 @@ $$
 
 ## 보편성
 
-같은 극한이 무작위 행렬 바깥에서도 나타난다. **최장증가부분수열**이 대표적이다. $n$ 개 원소의 무작위 순열에서 가장 긴 증가부분수열의 길이 $\ell_n$ 은 $2\sqrt n$ 근처에 있고, Baik–Deift–Johansson 의 정리가
+같은 극한이 무작위 행렬 바깥에서도 나타난다. [최장 증가 부분수열](longest-increasing-subsequence.md)이 대표적이다. $n$ 개 원소의 무작위 순열에서 가장 긴 증가부분수열의 길이 $\ell_n$ 은 $2\sqrt n$ 근처에 있고, Baik–Deift–Johansson 의 정리가
 
 $$
 \frac{\ell_n - 2\sqrt n}{n^{1/6}} \thickspace\longrightarrow\thickspace \mathrm{TW}\_2
@@ -133,6 +133,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [최장 증가 부분수열](longest-increasing-subsequence.md)
 
 #probability #analysis #linear_algebra

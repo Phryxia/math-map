@@ -6,7 +6,7 @@
 
 $y'' = F(x, y, y')$ 꼴에서 움직이는 특이점이 극점뿐이라는 조건($\mathbf{P}$ 성질)을 만족하는 방정식을 분류하면, 알려진 함수로 풀리는 것을 제외하고 여섯 개가 남는다. 이것이 **Painlevé 방정식** $\mathrm{P}\_{\mathrm{I}}$ 부터 $\mathrm{P}\_{\mathrm{VI}}$ 이고, 그 해가 Painlevé 초월함수다.
 
-무작위 행렬의 [Tracy–Widom 분포](tracy-widom.md), 2차원 Ising 모형의 상관함수, 최장증가부분수열의 길이 분포가 모두 이 여섯 개 가운데 하나로 쓰인다. [Airy 함수](airy-functions.md)가 선형 방정식의 표준형이라면 Painlevé 방정식은 비선형의 표준형이다.
+무작위 행렬의 [Tracy–Widom 분포](tracy-widom.md), 2차원 Ising 모형의 상관함수, [최장 증가 부분수열](longest-increasing-subsequence.md)의 길이 분포가 모두 이 여섯 개 가운데 하나로 쓰인다. [Airy 함수](airy-functions.md)가 선형 방정식의 표준형이라면 Painlevé 방정식은 비선형의 표준형이다.
 
 # 직관
 

@@ -102,5 +102,6 @@ Bellman 방정식은 원래 동적 계획법에서 나온 식이고, 유한 시�
 - [최단경로](shortest-paths.md)
 - [나무폭](treewidth.md)
 - [은닉 Markov 모형](hidden-markov-model.md)
+- [최장 증가 부분수열](longest-increasing-subsequence.md)
 
 #algorithms #computation

@@ -68,7 +68,7 @@ $$
 N\ \ge\ (r-1)(s-1)+1
 $$
 
-각 항 $a_i$ 에 쌍 $(x_i,y_i)$ 를 붙인다. $x_i$ 는 $a_i$ 에서 끝나는 최장 증가 부분수열의 길이, $y_i$ 는 $a_i$ 에서 끝나는 최장 감소 부분수열의 길이다. $i\lt j$ 일 때 $a_i\lt a_j$ 이면 $x_j\gt x_i$ 이고 $a_i\gt a_j$ 이면 $y_j\gt y_i$ 이므로, 서로 다른 두 항의 쌍은 항상 다르다. 결론이 거짓이라면 모든 쌍이 다음 집합에 속한다.
+각 항 $a_i$ 에 쌍 $(x_i,y_i)$ 를 붙인다. $x_i$ 는 $a_i$ 에서 끝나는 [최장 증가 부분수열](longest-increasing-subsequence.md)의 길이, $y_i$ 는 $a_i$ 에서 끝나는 최장 감소 부분수열의 길이다. $i\lt j$ 일 때 $a_i\lt a_j$ 이면 $x_j\gt x_i$ 이고 $a_i\gt a_j$ 이면 $y_j\gt y_i$ 이므로, 서로 다른 두 항의 쌍은 항상 다르다. 결론이 거짓이라면 모든 쌍이 다음 집합에 속한다.
 
 $$
 \lbrace 1,\dots,r-1\rbrace\times\lbrace 1,\dots,s-1\rbrace,\qquad \bigl|\thinspace\cdot\thinspace\bigr|=(r-1)(s-1)

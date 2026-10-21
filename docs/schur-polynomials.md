@@ -121,7 +121,7 @@ $$
 
 **Robinson–Schensted–Knuth 대응**이고, 개수를 세면 $n!=\sum_\lambda(f^\lambda)^2$ 이 나온다. 대칭군의 표현론에서 아는 항등식을 조합적으로 증명한다.
 
-이 대응은 순열의 통계량을 대각표의 모양으로 번역한다. $\lambda_1$ 이 가장 긴 증가 부분열의 길이이고 $\lambda'\_1$ 이 가장 긴 감소 부분열의 길이다(Schensted 정리). 무작위 순열의 가장 긴 증가 부분열이 $2\sqrt n$ 에 접근하고 요동이 [Tracy–Widom 분포](tracy-widom.md)를 따른다는 결과가 이 번역 위에서 증명되었고, 랜덤 행렬 이론과 조합론을 이었다.
+이 대응은 순열의 통계량을 대각표의 모양으로 번역한다. $\lambda_1$ 이 [가장 긴 증가 부분열](longest-increasing-subsequence.md)의 길이이고 $\lambda'\_1$ 이 가장 긴 감소 부분열의 길이다(Schensted 정리). 무작위 순열의 가장 긴 증가 부분열이 $2\sqrt n$ 에 접근하고 요동이 [Tracy–Widom 분포](tracy-widom.md)를 따른다는 결과가 이 번역 위에서 증명되었고, 랜덤 행렬 이론과 조합론을 이었다.
 
 # 활용
 
@@ -181,5 +181,6 @@ Schur 다항식에 매개변수를 하나나 둘 넣으면 다음 다항식족�
 - [Schubert 계산](schubert-calculus.md)
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md)
 - [Littlewood–Richardson 규칙](littlewood-richardson.md)
+- [최장 증가 부분수열](longest-increasing-subsequence.md)
 
 #combinatorics #algebra #linear_algebra
