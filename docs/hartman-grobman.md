@@ -55,7 +55,7 @@ $h$ 는 일반적으로 미분가능하지 않다. 위상 공액은 안정한 �
 # 활용
 
 - **평형점의 국소 분류.** 쌍곡 평형점 근처의 해들의 모양은 실수부가 음수인 고윳값과 양수인 고윳값의 개수만으로 정해진다. 평면에서는 안정점, 불안정점, 안장점(saddle) 셋이다. [Lorenz 방정식](lorenz-system.md)의 원점은 $\rho\gt 1$ 에서 실수부가 양수인 고윳값 하나와 음수인 고윳값 둘을 가진 쌍곡 평형점이므로 1 차원 불안정 다양체와 2 차원 안정 다양체를 갖는다.
-- **분기의 자리.** 쌍곡 평형점은 방정식을 조금 바꿔도 근처에 쌍곡 평형점이 남고 그 근처의 해들의 모양도 그대로다. 그래서 해들의 모양이 바뀌는 분기는 고윳값이 허수축에 닿는 매개변수에서만 일어난다. Lorenz 방정식의 Hopf 분기가 그 예다.
+- **분기의 자리.** 쌍곡 평형점은 방정식을 조금 바꿔도 근처에 쌍곡 평형점이 남고 그 근처의 해들의 모양도 그대로다. 그래서 해들의 모양이 바뀌는 분기는 고윳값이 허수축에 닿는 매개변수에서만 일어난다. Lorenz 방정식의 [Hopf 분기](hopf-bifurcation.md)가 그 예다.
 
 [^1]: L. Perko, *Differential Equations and Dynamical Systems*, 3rd ed., Springer, 2001, 2 장 7 절(안정 다양체 정리), 2 장 8 절(Hartman–Grobman 정리). P. Hartman, *A lemma in the theory of structural stability of differential equations*, Proceedings of the American Mathematical Society **11** (1960), 610–620.
 [^2]: S. Sternberg, *Local contractions and a theorem of Poincaré*, American Journal of Mathematics **79** (1957), 809–824.
@@ -68,6 +68,6 @@ $h$ 는 일반적으로 미분가능하지 않다. 위상 공액은 안정한 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hopf 분기](hopf-bifurcation.md)
 
 #analysis #topology

@@ -68,6 +68,7 @@ $$
 - 기둥의 좌굴. 양 끝을 고정한 막대에 압축력 $\lambda$ 를 주면 처짐 $u$ 는 선형화에서 $u''+\lambda u=0$, $u(0)=u(\pi)=0$ 을 만족한다. 특성값 $\lambda=n^2$ 은 모두 단순이므로 Crandall–Rabinowitz 정리로 각 $n^2$ 에서 굽은 해의 가지가 하나씩 갈라져 나온다. 첫 값 $\lambda=1$ 이 Euler 좌굴 하중이다.
 - [Sturm–Liouville 문제](sturm-liouville.md)의 비선형 판. 고윳값이 모두 단순이므로 $k$ 번째 고윳값에서 갈라진 가지는 Rabinowitz 정리에 따라 유계가 아니고, 가지 위의 해는 영점을 정확히 $k-1$ 개 가진다.
 - [상미분방정식](ordinary-differential-equations.md)의 평형점. $x'=\lambda x-x^3$ 의 평형점은 직관 절의 해이고, $\lambda$ 가 $0$ 을 지나면 $x=0$ 이 안정에서 불안정으로 바뀌고 새 평형점 $\pm\sqrt\lambda$ 가 안정하다.
+- 주기해의 분기. 평형점은 그대로 있고 일차 근사의 켤레 복소 고윳값 한 쌍이 허수축을 가로지를 때 주기해가 갈라져 나오는 것이 [Hopf 분기](hopf-bifurcation.md)다.
 
 [^1]: M. Krasnosel'skii, *Topological Methods in the Theory of Nonlinear Integral Equations*, Pergamon (1964), 4장.
 [^2]: P. Rabinowitz, Some global results for nonlinear eigenvalue problems, *J. Funct. Anal.* **7** (1971), 487–513.
@@ -82,6 +83,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hopf 분기](hopf-bifurcation.md)
 
 #functional_analysis #analysis #topology

@@ -72,7 +72,7 @@ $$
 1\lt\rho\lt\rho_H=\frac{\sigma(\sigma+\beta+3)}{\sigma-\beta-1}
 $$
 
-에서 점근 안정하고 $\rho\gt\rho_H$ 에서 불안정하다. $\rho=\rho_H$ 에서 선형화의 켤레 고윳값 한 쌍이 허수축을 가로지르며, 이것이 Hopf 분기(Hopf bifurcation)다. $\sigma=10$, $\beta=8/3$ 이면 $\rho_H=470/19$ 이고 $\rho=28$ 은 이보다 크다.[^2]
+에서 점근 안정하고 $\rho\gt\rho_H$ 에서 불안정하다. $\rho=\rho_H$ 에서 선형화의 켤레 고윳값 한 쌍이 허수축을 가로지르며, 이것이 [Hopf 분기](hopf-bifurcation.md)다. $\sigma=10$, $\beta=8/3$ 이면 $\rho_H=470/19$ 이고 $\rho=28$ 은 이보다 크다.[^2]
 
 ## 이상 끌개의 존재
 
