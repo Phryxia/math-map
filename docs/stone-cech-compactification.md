@@ -2,7 +2,7 @@
 
 # 개요
 
-콤팩트화는 공간을 콤팩트 공간의 조밀한 부분으로 심는 것이다. 완전정칙 공간 $X$ 의 콤팩트화 가운데 $X$ 위의 유계 연속함수를 모두 연속 확장하는 것이 **Stone–Čech 콤팩트화(Stone–Čech compactification)** $\beta X$ 이고, 그 확장 성질이 $\beta X$ 를 유일하게 정한다.
+**Stone–Čech 콤팩트화(Stone–Čech compactification)** $\beta X$ 는 완전정칙 공간 $X$ 의 콤팩트화 가운데 $X$ 위의 유계 연속함수를 모두 연속 확장하는 것이다. 콤팩트화(compactification)는 공간을 콤팩트 공간의 조밀한 부분으로 심는 것이고, 확장 성질이 $\beta X$ 를 유일하게 정한다.
 
 # 직관
 

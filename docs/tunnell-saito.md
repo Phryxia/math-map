@@ -2,7 +2,7 @@
 
 # 개요
 
-[Waldspurger 정리](waldspurger-formula.md)에서 토릭 주기가 소멸하지 않는 [사원수 대수](quaternion-algebras.md)가 어느 것인지는 $\varepsilon$ 인자가 결정한다. 그 결정 규칙의 국소 성분이 **Tunnell–Saito 국소 부호 공식(Tunnell–Saito local root number formula)** 이다.
+**Tunnell–Saito 국소 부호 공식(Tunnell–Saito local root number formula)** 은 국소체 위 $\mathrm{GL}\_2$ 의 기약 표현과 그 내부 형식(inner form)의 표현 가운데 어느 쪽이 이차 확대의 토러스 위에서 주어진 지표로 변환하는 범함수를 갖는지를 국소 $\varepsilon$ 인자로 판정하는 공식이다. [Waldspurger 정리](waldspurger-formula.md)에서 토릭 주기가 소멸하지 않는 [사원수 대수](quaternion-algebras.md)가 어느 것인지는 $\varepsilon$ 인자가 결정한다. Tunnell–Saito 공식은 그 결정 규칙의 국소 성분이다.
 
 국소체 $F$ 와 이차 확대 $K/F$ 와 $\mathrm{GL}\_2(F)$ 의 기약 표현 $\pi$ 를 놓자. 토러스 $K^\times$ 위에서 지표 $\chi$ 로 변환하는 범함수가 존재하는지 묻는다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-평면의 점과 직선에서 "점이 직선 위에 있다" 는 쌍의 개수를 접촉수라 한다. [Zarankiewicz 문제](zarankiewicz-problem.md)의 상한을 그대로 쓰면 접촉수의 상한이 나오지만 최선이 아니다.
+**Szemerédi–Trotter 정리(Szemerédi–Trotter theorem)** 는 실평면의 점 $n$ 개와 직선 $m$ 개 사이의 접촉수가 $O(n^{2/3}m^{2/3}+n+m)$ 이하라는 정리다. 평면의 점과 직선에서 "점이 직선 위에 있다" 는 쌍의 개수를 접촉수라 한다. [Zarankiewicz 문제](zarankiewicz-problem.md)의 상한을 그대로 쓰면 접촉수의 상한이 나오지만 최선이 아니다.
 
 Szemerédi–Trotter 정리는 실평면의 기하를 써서 이 상한을 개선하고, 그 값이 최선임을 구성으로 확인한다. 개선의 근거는 직선의 배열이 [평면 그래프](planar-graphs.md)를 이룬다는 것이다.
 

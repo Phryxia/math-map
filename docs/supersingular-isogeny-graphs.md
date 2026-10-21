@@ -2,7 +2,7 @@
 
 # 개요
 
-[Lang–Trotter 추측](lang-trotter.md)이 고정된 곡선 $E/\mathbb Q$ 를 여러 $p$ 로 환원하며 초특이가 되는 때를 묻는다. 여기서는 $p$ 를 고정하고 표수 $p$ 의 초특이 곡선 전체를 모아 그 사이의 관계를 본다.
+**초특이 동종사상 그래프(supersingular isogeny graph)** 는 표수 $p$ 의 초특이 곡선의 $j$ 불변량을 정점으로, 차수 $\ell$ 의 동종사상(isogeny)을 간선으로 둔 그래프다. [Lang–Trotter 추측](lang-trotter.md)이 고정된 곡선 $E/\mathbb Q$ 를 여러 $p$ 로 환원하며 초특이가 되는 때를 묻는다. 여기서는 $p$ 를 고정하고 표수 $p$ 의 초특이 곡선 전체를 모아 그 사이의 관계를 본다.
 
 $\overline{\mathbb F_p}$ 위의 초특이 $j$ 불변량은 모두 $\mathbb F_{p^2}$ 에 있고 개수가
 

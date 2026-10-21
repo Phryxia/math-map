@@ -2,7 +2,7 @@
 
 # 개요
 
-Riemann 은 $\zeta(s)$ 의 함수방정식을 theta 함수 $\theta(t)=\sum_ne^{-\pi n^2t}$ 의 변환식 $\theta(1/t)=\sqrt t\thinspace\theta(t)$ 에서 끌어냈다. Hecke 는 같은 방법을 [수체](algebraic-number-fields.md) $K$ 위로 옮겨 $\zeta_K(s)$ 와 Hecke $L$ 함수까지 처리했지만, 그 계산은 수체마다 격자와 단원군을 손으로 다루는 작업이었고 감마 인자의 모양과 판별식 $\sqrt{|d_K|}$ 의 출처는 계산이 끝난 뒤에야 드러났다.
+**Tate 의 zeta 적분(Tate's zeta integral)** 은 [수체](algebraic-number-fields.md)의 이델군 위에서 Schwartz–Bruhat 함수와 지표의 곱에 $\vert x\vert^s$ 를 붙여 적분한 것이다. Riemann 은 $\zeta(s)$ 의 함수방정식을 theta 함수 $\theta(t)=\sum_ne^{-\pi n^2t}$ 의 변환식 $\theta(1/t)=\sqrt t\thinspace\theta(t)$ 에서 끌어냈다. Hecke 는 같은 방법을 수체 $K$ 위로 옮겨 $\zeta_K(s)$ 와 Hecke $L$ 함수까지 처리했지만, 그 계산은 수체마다 격자와 단원군을 손으로 다루는 작업이었고 감마 인자의 모양과 판별식 $\sqrt{|d_K|}$ 의 출처는 계산이 끝난 뒤에야 드러났다.
 
 Tate 의 학위논문[^1]은 계산을 [아델](adeles.md) 위로 옮긴다. theta 변환식이 Poisson 합공식의 특수한 경우가 되고 $\zeta_K(s)$ 가 이델군 위의 적분 하나가 된다.
 

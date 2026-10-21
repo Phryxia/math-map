@@ -2,7 +2,7 @@
 
 # 개요
 
-[Gauss 합](gauss-sums.md)의 절댓값은 $\sqrt p$ 로 정해져 있지만, 그 수가 순환체 안의 어디에 놓이는지는 절댓값이 말해 주지 않는다. $g(\chi)$ 가 생성하는 아이디얼의 소인수분해를 지표 $\chi$ 에 따라 결정하는 것이 Stickelberger 의 정리다.
+**Stickelberger 원소(Stickelberger element)** 는 원분체 $\mathbb Q(\mu_m)$ 의 Galois 군 $G$ 의 군환 $\mathbb Q\lbrack G\rbrack$ 에 놓인 원소 $\theta_m=\sum_a\lbrace a/m\rbrace\thinspace\sigma_a^{-1}$ 이다. [Gauss 합](gauss-sums.md)의 절댓값은 $\sqrt p$ 로 정해져 있지만, 그 수가 순환체 안의 어디에 놓이는지는 절댓값이 말해 주지 않는다. $g(\chi)$ 가 생성하는 아이디얼의 소인수분해를 지표 $\chi$ 에 따라 결정하는 것이 Stickelberger 의 정리다.
 
 $\pi=1-\zeta_p$ 로 두고 $\omega$ 를 Teichmüller 지표라 하면
 
@@ -16,7 +16,7 @@ $$
 \theta_m=\sum_{a\in(\mathbb Z/m)^{\times}}\Big\lbrace\frac{a}{m}\Big\rbrace\thinspace\sigma_a^{-1}
 $$
 
-이것이 **Stickelberger 원소**다. 계수는 유리수지만 $(c-\sigma_c)\theta_m$ 꼴은 정수계수이고, 그렇게 얻은 정수계수 원소들이 $\mathbb Q(\mu_m)$ 의 이데알류군을 소멸시킨다.
+이것이 Stickelberger 원소다. 계수는 유리수지만 $(c-\sigma_c)\theta_m$ 꼴은 정수계수이고, 그렇게 얻은 정수계수 원소들이 $\mathbb Q(\mu_m)$ 의 이데알류군을 소멸시킨다.
 
 $\theta_m$ 의 지표 성분이 $L(0,\chi)$ 이므로, 이 정리는 $L$ 함수의 값을 계수로 삼은 군환 원소가 이데알류군을 죽인다는 진술이다. [Iwasawa 주추측](iwasawa-main-conjecture.md)에서 Herbrand 방향이 쉬운 것이 이 정리 때문이고, 반대 방향이 어려운 것은 소멸자가 크기를 말해 주지 않기 때문이다.
 
@@ -85,7 +85,7 @@ $$
 
 ## 홀수 성분으로의 제한
 
-$\lbrace a/m\rbrace+\lbrace-a/m\rbrace=1$ 이므로 $(1+\sigma_{-1})\theta_m=\sum_a\sigma_a$ 이고, $\theta$ 의 짝수 부분에는 노름원소밖에 없다. 노름원소는 류군의 짝수 성분에 대해 아무 정보도 주지 않으므로 Stickelberger 의 소멸 정리는 홀수 성분만 다룬다. 이 비대칭이 Herbrand–Ribet 과 Vandiver 추측까지 이어진다.
+$\lbrace a/m\rbrace+\lbrace-a/m\rbrace=1$ 이므로 $(1+\sigma_{-1})\theta_m=\sum_a\sigma_a$ 이고, $\theta$ 의 짝수 부분에는 노름원소밖에 없다. 노름원소는 류군의 짝수 성분에 대해 아무 정보도 주지 않으므로 Stickelberger 의 소멸 정리는 홀수 성분만 다룬다. 이 비대칭이 [Herbrand–Ribet 정리](herbrand-ribet.md)와 [Vandiver 추측](vandiver-conjecture.md)까지 이어진다.
 
 ## Herbrand 방향
 
@@ -95,7 +95,7 @@ $$
 L_p(0,\omega^{-k})\ \equiv\ -\frac{B_k}{k}\pmod p
 $$
 
-이다. $p\nmid B_k$ 이면 그 성분이 $\mathbb Z_p$ 의 단원이 되고 소멸 정리가 $A^{(\omega^{1-k})}=0$ 을 준다. 이것이 **Herbrand 정리**다.
+이다. $p\nmid B_k$ 이면 그 성분이 $\mathbb Z_p$ 의 단원이 되고 소멸 정리가 $A^{(\omega^{1-k})}=0$ 을 준다. 이것이 Herbrand 방향의 정리다.
 
 반대 방향, 곧 $p\mid B_k$ 일 때 그 성분이 0 이 아님을 보이는 것이 Ribet 의 정리다. 군이 크다는 것을 보이려면 소멸자가 아니라 원소를 만들어야 한다.
 
@@ -146,7 +146,7 @@ $$
 
 ## 정칙소수 판정
 
-Kummer 의 기준, 곧 $p\nmid B_2B_4\cdots B_{p-3}$ 이면 $p\nmid h$ 라는 진술의 홀수 쪽 절반이 Herbrand 방향에서 나온다. 짝수 쪽은 [Vandiver 추측](vandiver-conjecture.md)에 기대며, 그 추측은 대규모 수치 검증을 받았다.
+Kummer 의 기준, 곧 $p\nmid B_2B_4\cdots B_{p-3}$ 이면 $p\nmid h$ 라는 진술의 홀수 쪽 절반이 Herbrand 방향에서 나온다. 짝수 쪽은 Vandiver 추측에 기대며, 그 추측은 대규모 수치 검증을 받았다.
 
 ## Jacobi 합과 곡선의 점 개수
 
