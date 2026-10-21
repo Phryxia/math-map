@@ -48,6 +48,7 @@ graph TD
   - [Schur 곱셈자](schur-multipliers.md): 중심 확대를 분류하는 둘째 호몰로지군
 - [군의 표시](group-presentations.md): 생성원과 관계자로 군을 적는 방법과 낱말 문제
   - [쌍곡군](hyperbolic-groups.md): Cayley 그래프의 측지삼각형이 일정한 폭 안에서 얇은 군
+  - [Garside 정규형](garside-normal-form.md): 땋임군의 원소를 기본 땋임의 거듭제곱과 단순 땋임의 곱으로 유일하게 적는 표준형, 낱말 문제와 켤레 문제의 알고리즘
 
 ## 환과 아이디얼
 

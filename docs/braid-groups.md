@@ -96,7 +96,7 @@ Lawrence–Krammer 표현은 모든 $n$ 에 대해 충실함이 증명되어(Big
 
 ## 낱말 문제와 켤레 문제
 
-$B_n$ 의 낱말 문제는 Garside 구조, 곧 양의 땋임 반군과 기본 땋임 $\Delta$ 로 다항시간에 풀린다. 켤레 문제도 초정상형(super summit set)으로 풀리지만 복잡도가 크고, 이 난이도가 한때 땋임군 기반 암호의 근거로 제안되었다. 이후 길이 기반 공격이 개발되어 실용적 안전성은 부정적으로 평가된다.
+$B_n$ 의 낱말 문제는 [Garside 정규형](garside-normal-form.md)의 구조, 곧 양의 땋임 반군과 기본 땋임 $\Delta$ 로 다항시간에 풀린다. 켤레 문제도 초정상형(super summit set)으로 풀리지만 복잡도가 크고, 이 난이도가 한때 땋임군 기반 암호의 근거로 제안되었다. 이후 길이 기반 공격이 개발되어 실용적 안전성은 부정적으로 평가된다.
 
 ## Yang–Baxter 방정식
 
@@ -135,6 +135,6 @@ $B_n$ 이 구멍 뚫린 원판의 사상류군이므로 [곡면의 분류](class
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Garside 정규형](garside-normal-form.md)
 
 #topology #group_theory #algebra
