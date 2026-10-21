@@ -94,7 +94,7 @@ Toeplitz 확대(Toeplitz extension) $0\to\mathcal K\to\mathcal T\to C(S^1)\to 0$
 
 ## Pimsner–Voiculescu 완전열
 
-$\alpha$ 가 $A$ 의 자기동형이면 정수군 $\mathbb Z$ 의 작용으로 교차곱(crossed product) $A\rtimes_\alpha\mathbb Z$ 가 정의된다. 그 K 군은 다음 6항 완전열에서 계산된다[^2].
+$\alpha$ 가 $A$ 의 자기동형이면 정수군 $\mathbb Z$ 의 작용으로 [교차곱](crossed-products.md)(crossed product) $A\rtimes_\alpha\mathbb Z$ 가 정의된다. 그 K 군은 다음 6항 완전열에서 계산된다[^2].
 
 $$
 \begin{array}{ccccc}
