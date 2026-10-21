@@ -191,7 +191,7 @@ $$
 ## 군의 구조 판정
 
 - 기약표현의 차수는 $|G|$ 를 나눈다. [Sylow 정리](sylow-theorems.md)의 세기와 결합하면 작은 위수 군의 단순성 판정이 강해진다.
-- 두 소수만으로 이루어진 위수의 군은 가해군이라는 Burnside 의 $p^aq^b$ 정리는 지표 이론으로 증명된다.
+- 두 소수만으로 이루어진 위수의 군은 가해군이라는 [Burnside 의 pᵃqᵇ 정리](burnside-pq-theorem.md)는 지표 이론으로 증명된다.
 - 기약 지표 하나를 고정해 $\chi(g)=\chi(1)$ 인 원소를 모으면 그 표현의 핵이고, 이런 핵들의 교집합으로 모든 정규부분군을 얻는다. 지표표만으로 단순군 여부를 판정할 수 있다.
 
 [^1]: Wikipedia, Character theory, https://en.wikipedia.org/wiki/Character_theory

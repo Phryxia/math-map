@@ -34,14 +34,15 @@ graph TD
 먼저 읽을 것: [함수](functions.md)(기초), [벡터 공간](vector-spaces.md), [선형 사상](linear-maps.md)(선형대수 개관). 시작 문서: [군](groups.md).
 
 - [군](groups.md): 결합법칙, 항등원, 역원 세 공리와 부분군, 준동형, 몫군
-  - [가해군](solvable-groups.md): 가환인 몫을 쌓아 얻는 군, 유도열과 Feit–Thompson 판정
+- [가해군](solvable-groups.md): 가환인 몫을 쌓아 얻는 군, 유도열과 Feit–Thompson 판정
 - [군 작용](group-actions.md): 군이 집합에 작용하는 방식과 궤도–안정자 정리
   - [켤레류](conjugacy-classes.md): 켤레 관계의 동치류와 류 방정식
   - [정규화군](normalizer.md): 부분집합을 켤레로 보존하는 부분군과 N/C 정리
   - [순종군](amenable-groups.md): 불변 평균을 갖는 군, Følner 조건과 역설적 분해의 부재
 - [Sylow 정리](sylow-theorems.md): 소수 거듭제곱 차수 부분군의 존재와 개수
 - [군의 표현](group-representations.md): 군을 가역행렬의 군으로 보내는 준동형과 기약분해
-  - [지표표](character-table.md): 기약지표를 켤레류별로 적은 정사각 배열과 두 직교관계
+- [지표표](character-table.md): 기약지표를 켤레류별로 적은 정사각 배열과 두 직교관계
+  - [Burnside 의 pᵃqᵇ 정리](burnside-pq-theorem.md): 지표값의 대수적 정수성과 열 직교관계로 위수 pᵃqᵇ 인 군이 가해군임을 증명
 - [유한 단순군 분류](finite-simple-groups.md): 유한 단순군이 네 계열과 산재군 26 개로 다한다는 정리
 - [군 확대](group-extensions.md): 주어진 몫과 핵으로 군을 복원하는 문제와 분해 조건
   - [Schur 곱셈자](schur-multipliers.md): 중심 확대를 분류하는 둘째 호몰로지군

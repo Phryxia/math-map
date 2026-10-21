@@ -68,7 +68,7 @@ $$
 
 ## 가해성의 판정 정리
 
-**Burnside.** 위수가 $p^aq^b$ 인 유한군은 가해군이다.[^1] 소인수가 둘 이하이면 단순군이 될 수 없다는 뜻이다.
+**Burnside.** 위수가 $p^aq^b$ 인 유한군은 가해군이다([Burnside 의 pᵃqᵇ 정리](burnside-pq-theorem.md)).[^1] 소인수가 둘 이하이면 단순군이 될 수 없다는 뜻이다.
 
 **Feit–Thompson.** 홀수 위수의 유한군은 가해군이다.[^2] 곧 비가환 유한 단순군의 위수는 짝수이고, [유한 단순군의 분류](finite-simple-groups.md)가 이 정리 위에서 진행되었다.
 
@@ -93,6 +93,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Burnside 의 pᵃqᵇ 정리](burnside-pq-theorem.md)
 
 #group_theory #algebra #field_theory
