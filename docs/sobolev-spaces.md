@@ -132,5 +132,6 @@ $W^{1,p}(U)$ 의 원소는 거의 어디서나 같은 함수를 동일시한 것
 - [Lax–Milgram 정리](lax-milgram.md)
 - [변분법의 직접법](direct-method.md)
 - [Schwartz 분포](schwartz-distributions.md)
+- [Yamabe 문제](yamabe-problem.md)
 
 #functional_analysis #analysis #measure_theory

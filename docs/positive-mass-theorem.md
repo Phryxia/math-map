@@ -75,7 +75,7 @@ $M$ 이 넓이 $A$ 인 바깥쪽 극소곡면을 경계로 가지면 $m\ge\sqrt{
 # 활용
 
 - **일반상대성이론.** 지배 에너지 조건을 만족하는 물질로 이루어진 고립계의 총질량이 음수가 아니라는 것이 이 정리의 물리적 진술이고, 시간 대칭이 아닌 초기값에 대한 판본도 Schoen–Yau 와 Witten 이 증명했다.
-- **Yamabe 문제.** 콤팩트 다양체의 등각류에서 스칼라 곡률이 상수인 계량을 찾는 문제의 남은 경우를 Schoen 이 이 정리로 풀었다. 한 점에서의 [Green 함수](greens-function.md)로 만든 점근적으로 평탄한 계량의 질량이 양수라는 것이 쓰인다.
+- **[Yamabe 문제](yamabe-problem.md).** 콤팩트 다양체의 등각류에서 스칼라 곡률이 상수인 계량을 찾는 문제의 남은 경우를 Schoen 이 이 정리로 풀었다. 한 점에서의 [Green 함수](greens-function.md)로 만든 점근적으로 평탄한 계량의 질량이 양수라는 것이 쓰인다.
 - **스칼라 곡률의 장애.** 원환면 $T^3$ 에는 스칼라 곡률이 양인 계량이 없다. 이 결론은 양의 질량 정리와 같은 두 방법, 곧 Schoen–Yau 의 극소곡면 방법과 Gromov–Lawson 의 스피너 방법으로 증명된다.
 
 [^1]: R. Bartnik, "The mass of an asymptotically flat manifold", *Communications on Pure and Applied Mathematics* 39 (1986), 661–693.
@@ -92,6 +92,6 @@ $M$ 이 넓이 $A$ 인 바깥쪽 극소곡면을 경계로 가지면 $m\ge\sqrt{
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Yamabe 문제](yamabe-problem.md)
 
 #differential_geometry #analysis
