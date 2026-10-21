@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-21T13:01:38.732Z",
-  "nextSeq": 2327,
+  "savedAt": "2026-10-21T17:02:25.693Z",
+  "nextSeq": 2337,
   "items": [
     {
       "id": "9bab7237",
@@ -3322,6 +3322,30 @@
       "note": "함수해석(#functional_analysis #group_theory #topology). 부모 후보 crossed-products, operator-k-theory(둘 다 82차에 생겼다). 축소 군 C 스타 대수의 K 이론과 분류공간의 K 호몰로지를 잇는 조립 사상의 정의, 추측의 진술, 증명된 경우는 출처가 있는 것만 적는다. 문서가 생기면 crossed-products 활용 절에서 링크한다.",
       "createdAt": "2026-10-21T09:01:43.049Z",
       "seq": 2320
+    },
+    {
+      "id": "f532654e",
+      "title": "Sternberg 정리",
+      "priority": 10,
+      "note": "#analysis. 비공명 조건에서 매끄러운 선형화. hartman-grobman 의 '위상 공액의 한계' 절이 이름만 쓴다. 부모 hartman-grobman",
+      "createdAt": "2026-10-21T17:00:29.048Z",
+      "seq": 2332
+    },
+    {
+      "id": "3fc58743",
+      "title": "Hilbert 의 16 번째 문제",
+      "priority": 10,
+      "note": "#analysis #algebraic_geometry. 평면 다항식 벡터장의 극한 순환 개수. lienard-theorem 이 이름만 쓴다. 부모 lienard-theorem. 열린 문제 서술은 Ilyashenko 2002 같은 출처의 각주가 필요하다",
+      "createdAt": "2026-10-21T17:00:29.180Z",
+      "seq": 2333
+    },
+    {
+      "id": "d7f833c6",
+      "title": "Cauchy 적분 정리",
+      "priority": 10,
+      "note": "#complex_analysis. holomorphic-functions 의 절과 greens-theorem 활용이 이름만 쓴다. 독립 문서로 둘지 holomorphic-functions 절로 둘지 판정 필요",
+      "createdAt": "2026-10-21T17:00:29.549Z",
+      "seq": 2336
     },
     {
       "id": "dfb3e493",
