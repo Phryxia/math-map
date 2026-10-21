@@ -102,6 +102,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Bihari 부등식](bihari-inequality.md)
 
 #analysis #probability #computation

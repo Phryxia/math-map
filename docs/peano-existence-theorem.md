@@ -52,7 +52,7 @@ $x_c$ 는 $t=c$ 에서 도함수가 $0$ 으로 이어지므로 모든 점에서 
 
 ## Osgood 조건
 
-$\Vert f(t,x)-f(t,y)\Vert\le\omega(\Vert x-y\Vert)$ 인 증가함수 $\omega$ 가 $\omega(0)=0$ 과 $\int_0^1 du/\omega(u)=\infty$ 를 만족하면 해가 유일하다.[^2] Lipschitz 조건은 $\omega(u)=Ku$ 인 경우이고, 위 예의 $\omega(u)=3u^{2/3}$ 은 $\int_0^1 u^{-2/3}du=3$ 이 유한해서 조건을 벗어난다. 유일성을 결정하는 것은 $f$ 의 매끄러움이 아니라 이 적분의 발산이다.
+$\Vert f(t,x)-f(t,y)\Vert\le\omega(\Vert x-y\Vert)$ 인 증가함수 $\omega$ 가 $\omega(0)=0$ 과 $\int_0^1 du/\omega(u)=\infty$ 를 만족하면 해가 유일하다.[^2] Lipschitz 조건은 $\omega(u)=Ku$ 인 경우이고, 위 예의 $\omega(u)=3u^{2/3}$ 은 $\int_0^1 u^{-2/3}du=3$ 이 유한해서 조건을 벗어난다. 유일성을 결정하는 것은 $f$ 의 매끄러움이 아니라 이 적분의 발산이다. 증명은 두 해의 차이에 [Bihari 부등식](bihari-inequality.md)을 쓰는 것이다.
 
 ## 해의 연장
 
