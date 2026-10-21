@@ -86,6 +86,7 @@ graph TD
 먼저 읽을 갈래: 호몰로지와 코호몰로지. 시작 문서: [다양체](manifolds.md).
 
 - [다양체](manifolds.md): 작은 영역마다 좌표계를 붙여 미적분을 옮기는 공간
+  - [털난 공 정리](hairy-ball-theorem.md): 짝수 차원 구면의 접벡터장에 영점이 있다는 정리, 항등사상과 대척사상의 차수 비교
 - [미분형식](differential-forms.md): 적분 정리 넷을 한 정리로 묶는 반대칭 텐서
 - [de Rham 코호몰로지](de-rham-cohomology.md): 닫힘형식을 완전형식으로 나눈 몫
 - [Hodge 이론](hodge-theory.md): 코호몰로지류마다 조화 대표원 하나를 골라내는 분해

@@ -60,7 +60,7 @@ $X(p)\ne 0$ 이면 $p$ 의 어떤 좌표근방에서 $X=\partial/\partial x^1$ �
 
 ## 영점의 장애
 
-짝수 차원 구면 $S^{2n}$ 에는 영점이 없는 벡터장이 없다. 콤팩트 다양체 $M$ 에 영점이 없는 벡터장이 있는 것과 [Euler 지표](euler-characteristic.md) $\chi(M)=0$ 인 것이 동치이고, $\chi(S^{2n})=2$ 다. 영점이 유한 개인 벡터장에서 영점의 지수의 합이 $\chi(M)$ 이라는 것이 [Poincaré–Hopf 정리](poincare-hopf.md)다.
+짝수 차원 구면 $S^{2n}$ 에는 영점이 없는 벡터장이 없다는 것이 [털난 공 정리](hairy-ball-theorem.md)다. 콤팩트 다양체 $M$ 에 영점이 없는 벡터장이 있는 것과 [Euler 지표](euler-characteristic.md) $\chi(M)=0$ 인 것이 동치이고, $\chi(S^{2n})=2$ 다. 영점이 유한 개인 벡터장에서 영점의 지수의 합이 $\chi(M)$ 이라는 것이 [Poincaré–Hopf 정리](poincare-hopf.md)다.
 
 [^1]: John M. Lee, *Introduction to Smooth Manifolds*, 2판, Springer, 2013. 벡터장과 미분의 대응은 8 장, 흐름과 흐름 상자 정리는 9 장, Lie 괄호와 흐름의 교환은 8 장과 9 장이다.
 
@@ -81,5 +81,6 @@ $X(p)\ne 0$ 이면 $p$ 의 어떤 좌표근방에서 $X=\partial/\partial x^1$ �
 
 - [Lie 미분](lie-derivative.md)
 - [Poincaré–Hopf 정리](poincare-hopf.md)
+- [털난 공 정리](hairy-ball-theorem.md)
 
 #differential_geometry #analysis #topology
