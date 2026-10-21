@@ -63,6 +63,6 @@ $K$ 는 계산 가능하게 열거 가능하다. $e=0,1,2,\dots$ 의 계산을 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kleene 재귀 정리](kleene-recursion-theorem.md)
 
 #computation #logic #theorem
