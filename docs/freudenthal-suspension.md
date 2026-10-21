@@ -95,6 +95,6 @@ Serre 의 유리 호모토피 계산이 근거다. $\pi_k(S^n)\otimes\mathbb Q$ 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [J 준동형](j-homomorphism.md)
 
 #algebraic_topology #topology
