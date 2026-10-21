@@ -75,7 +75,7 @@ $$
 > g\big(X_0(N)\big)=1+\frac\mu{12}-\frac{\nu_2}4-\frac{\nu_3}3-\frac{\nu_\infty}2
 > $$
 
-$X_0(1)=\mathbb P^1$ 의 종수가 $0$ 이라는 사실에서 Riemann–Hurwitz 로 끌어낸 것이다[^1]. $\mu/12$ 가 덮개의 차수에서 오는 주항이고 나머지 세 항이 분기 보정이다.
+$X_0(1)=\mathbb P^1$ 의 종수가 $0$ 이라는 사실에서 [Riemann–Hurwitz 공식](riemann-hurwitz-formula.md)으로 끌어낸 것이다[^1]. $\mu/12$ 가 덮개의 차수에서 오는 주항이고 나머지 세 항이 분기 보정이다.
 
 ## 모듈라이 해석
 

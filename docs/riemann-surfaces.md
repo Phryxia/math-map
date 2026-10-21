@@ -79,13 +79,13 @@ $$
 
 ## Riemann–Hurwitz 공식
 
-정칙사상 $f:X\to Y$ 가 차수 $n$ 이고 분기지수가 $e_p$ 라 하면
+정칙사상 $f:X\to Y$ 가 차수 $n$ 이고 분기지수가 $e_p$ 라 하면 다음 [Riemann–Hurwitz 공식](riemann-hurwitz-formula.md)이 성립한다.
 
 $$
 2g_X-2=n(2g_Y-2)+\sum_{p\in X}(e_p-1)
 $$
 
-이다. 분기가 없으면 Euler 지표가 곱셈적이라는 덮개공간의 사실이고 분기가 그것을 보정한다. 이 공식이 곡면 사이의 사상을 제한한다. 우변이 $n\cdot4$ 이상인데 좌변이 2 이므로 종수 2 곡면에서 종수 3 곡면으로 가는 상수 아닌 정칙사상은 없다.
+분기가 없으면 Euler 지표가 곱셈적이라는 덮개공간의 사실이고 분기가 그것을 보정한다. 이 공식이 곡면 사이의 사상을 제한한다. 우변이 $n\cdot4$ 이상인데 좌변이 2 이므로 종수 2 곡면에서 종수 3 곡면으로 가는 상수 아닌 정칙사상은 없다.
 
 ## 자기동형군의 유한성
 
@@ -116,6 +116,7 @@ $g\ge2$ 에서는 이 족이 복소차원 $3g-3$ 이다. 그 공간을 다루는
 
 ## 더 알아보기
 
+- [Riemann–Hurwitz 공식](riemann-hurwitz-formula.md)
 - [Jacobi 다양체](jacobian-variety.md)
 - [준등각 사상](quasiconformal-maps.md)
 - [Teichmüller 공간](teichmuller-space.md)
