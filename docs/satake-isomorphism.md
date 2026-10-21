@@ -2,7 +2,7 @@
 
 # 개요
 
-[Hecke 작용소](hecke-operators.md) $T_p$ 는 이중 잉여류 $\mathrm{SL}\_2(\mathbb Z)\begin{pmatrix}1&0\cr 0&p\end{pmatrix}\mathrm{SL}\_2(\mathbb Z)$ 로 정의된다. 이 정의에서는 작용소들이 서로 가환인 이유도, 고윳값이 $L$ 함수의 Euler 인자가 되는 이유도 보이지 않는다.
+**Satake 동형(Satake isomorphism)** 은 비분기 연결 환원군(reductive group)의 비분기 Hecke 대수를 쌍대군(dual group)의 표현환(representation ring)과 동일시하는 대수 동형이다. [Hecke 작용소](hecke-operators.md) $T_p$ 는 이중 잉여류 $\mathrm{SL}\_2(\mathbb Z)\begin{pmatrix}1&0\cr 0&p\end{pmatrix}\mathrm{SL}\_2(\mathbb Z)$ 로 정의된다. 이 정의에서는 작용소들이 서로 가환인 이유도, 고윳값이 $L$ 함수의 Euler 인자가 되는 이유도 보이지 않는다.
 
 [아델](adeles.md) 위로 올리면 두 사실이 함께 나온다. 자리 $p$ 를 고정하고 $G=\mathrm{GL}\_n(\mathbb Q_p)$ , $K=\mathrm{GL}\_n(\mathbb Z_p)$ 라 하자. 콤팩트 받침을 갖는 양쪽 $K$ 불변 함수들이 합성곱으로 이루는 대수
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-[Deligne 의 정리](deligne-weil-conjectures.md)는 Frobenius 고윳값의 절댓값을 확정한다. [타원곡선](elliptic-curves.md) $E/\mathbb Q$ 와 좋은 환원의 소수 $p$ 에서
+**Sato–Tate 분포(Sato–Tate distribution)** 는 [타원곡선](elliptic-curves.md)의 좋은 환원(good reduction) 소수마다 정해지는 Frobenius 고윳값의 각이 소수 전체에 걸쳐 따르는 분포 $\tfrac2\pi\sin^2\theta\thinspace d\theta$ 다. [Deligne 의 정리](deligne-weil-conjectures.md)는 Frobenius 고윳값의 절댓값을 확정한다. 타원곡선 $E/\mathbb Q$ 와 좋은 환원의 소수 $p$ 에서
 
 $$
 a_p=p+1-\char35{}E(\mathbb F_p),

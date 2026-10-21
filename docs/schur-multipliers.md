@@ -2,7 +2,7 @@
 
 # 개요
 
-군 $G$ 를 $\mathbb C^\times$ 의 부분군으로 [중심확대](group-extensions.md)하는 방법은 여러 가지이고, Schur 는 1904 년에 그중 가장 큰 것이 존재함을 보였다.
+**Schur 곱셈자(Schur multiplier)** 는 군 $G$ 의 둘째 코호몰로지군(second cohomology group) $M(G)=H^2(G,\mathbb C^\times)$ 다. $G$ 를 $\mathbb C^\times$ 의 부분군으로 [중심확대](group-extensions.md)하는 방법은 여러 가지이고, Schur 는 1904 년에 그중 가장 큰 것이 존재함을 보였다.
 
 $G\to\mathrm{PGL}(V)$ 가 **사영표현**이다. 양자역학에서 상태가 위상인자까지만 정해지므로 대칭이 사영표현으로 나타난다. 사영표현을 보통 표현처럼 다루려면 $\mathrm{GL}(V)$ 로 들어올려야 하고, 그 걸림돌을 2-코사이클이 잰다.
 

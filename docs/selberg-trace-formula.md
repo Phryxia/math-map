@@ -2,9 +2,9 @@
 
 # 개요
 
-$L^2(\Gamma\backslash\mathbb H)$ 의 이산 스펙트럼을 이루는 [Maass 형식](maass-forms.md)의 고윳값 $\lambda_j=\tfrac14+r_j^2$ 에는 닫힌 형태의 표현이 없다. $\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 의 첫 고윳값 $r_1\approx9.533$ 도 수치 계산의 결과다.
+**Selberg 대각합 공식(Selberg trace formula)** 은 쌍곡면(hyperbolic surface)의 Laplace 고윳값 전체에 걸친 합을 곡면의 닫힌 측지선(geodesic)의 길이에 걸친 합으로 표현하는 공식이다.
 
-**Selberg 대각합 공식(Selberg trace formula)** 은 개별 고윳값 대신 고윳값 전체에 걸친 합을 곡면의 닫힌 측지선으로 표현한다.
+$L^2(\Gamma\backslash\mathbb H)$ 의 이산 스펙트럼을 이루는 [Maass 형식](maass-forms.md)의 고윳값 $\lambda_j=\tfrac14+r_j^2$ 에는 닫힌 형태의 표현이 없다. $\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 의 첫 고윳값 $r_1\approx9.533$ 도 수치 계산의 결과이므로 공식은 개별 고윳값 대신 그 합을 다룬다.
 
 $$
 \underbrace{\sum_j h(r_j)}\_{\text{스펙트럼}}\thickspace+\thickspace\text{(연속 기여)}\thickspace=\thickspace\underbrace{\frac{\mathrm{vol}}{4\pi}\int_{-\infty}^\infty h(r)\thinspace r\tanh(\pi r)\thinspace dr+\sum_{\lbrace\gamma\rbrace}\sum_{k\ge1}\frac{\ell_\gamma\thinspace g(k\ell_\gamma)}{2\sinh(k\ell_\gamma/2)}}\_{\text{기하}}
