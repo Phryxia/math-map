@@ -45,6 +45,7 @@ graph TD
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
 - [유한체](finite-fields.md): 소수 위수의 체와 그 확대
 - [이차 상호법칙](quadratic-reciprocity.md): 제곱잉여의 대칭성
+  - [제곱잉여의 Gauss 보조정리](gauss-lemma-quadratic-residues.md): 나머지 가운데 절반보다 큰 것의 개수로 정하는 Legendre 기호, 제2 보충 법칙과 Eisenstein 의 격자점 증명
 - [Gauss 정수환](gaussian-integers.md): 소수의 분해 유형과 두 제곱수의 합
 
 ## 고전 공개키 암호와 곡선

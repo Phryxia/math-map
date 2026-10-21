@@ -81,7 +81,7 @@ $$
 
 첫째는 Euler 판정법에 $a=-1$ 을 넣은 것이다. 곧 $-1$ 이 제곱수인 것과 $p\equiv1\pmod4$ 인 것이 동치이고, Dirichlet L 함수에 있는 두 제곱수 정리의 증명에 이 사실을 쓴다.
 
-둘째는 $p\equiv\pm1\pmod8$ 일 때만 2 가 제곱수라는 뜻이다. Gauss 보조정리나 $\mathbb Z[\zeta_8]$ 에서 $(\zeta_8+\zeta_8^{-1})^2=2$ 를 쓰는 증명이 있다.
+둘째는 $p\equiv\pm1\pmod8$ 일 때만 2 가 제곱수라는 뜻이다. [Gauss 보조정리](gauss-lemma-quadratic-residues.md)나 $\mathbb Z[\zeta_8]$ 에서 $(\zeta_8+\zeta_8^{-1})^2=2$ 를 쓰는 증명이 있다.
 
 ## 상호법칙
 
@@ -178,6 +178,7 @@ Jacobi 기호는 쉽게 계산되지만 제곱잉여 여부는 인수분해 없�
 
 ## 더 알아보기
 
+- [제곱잉여의 Gauss 보조정리](gauss-lemma-quadratic-residues.md)
 - [Gauss 정수환](gaussian-integers.md)
 - [Dirichlet L 함수](dirichlet-l-functions.md)
 - [유체론](class-field-theory.md)
