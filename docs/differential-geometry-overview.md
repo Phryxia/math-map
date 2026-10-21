@@ -105,9 +105,10 @@ graph TD
 - [극소곡면](minimal-surfaces.md): 평균곡률이 0 인 곡면, 넓이의 일차 변분과 현수면, Bernstein 정리와 Plateau 문제
   - [평균곡률 흐름](mean-curvature-flow.md): 넓이를 가장 빨리 줄이는 방향으로 곡면을 움직이는 비선형 열방정식, 볼록 곡면의 수축과 목의 특이점
 - [Riemann 계량](riemannian-metrics.md): 접공간의 내적, Levi-Civita 접속, 측지선 방정식
-  - [Killing 벡터장](killing-vector-fields.md): 계량을 보존하는 흐름, 측지선을 따르는 보존량과 차원 상한
   - [대칭공간](symmetric-spaces.md): 점마다 측지선을 뒤집는 등거리변환을 갖는 다양체, Cartan 분해와 세 유형의 분류
   - [쌍곡 3 다양체](hyperbolic-3-manifolds.md): 3 차원에서 쌍곡 계량이 위상으로 결정된다
+- [Killing 벡터장](killing-vector-fields.md): 계량을 보존하는 흐름, 측지선을 따르는 보존량과 차원 상한
+  - [등거리변환군](isometry-groups.md): 계량을 보존하는 미분동형의 Lie 군, 한 점의 값과 미분으로 정해지는 원소와 차원 상한
 - [측지선](geodesics.md): 가속도의 접성분이 0 인 곡선, 지수사상과 Hopf–Rinow 정리, 켤레점
   - [측지선의 비교정리](geodesic-comparison-theorems.md): 곡률의 상한과 하한으로 Jacobi 장을 상수곡률 모형과 견준다, Rauch 와 Cartan–Hadamard 와 Bonnet–Myers
   - [공간형](space-forms.md): 단면곡률이 상수인 완비 다양체, 세 모형 공간의 이산 등거리변환군에 의한 몫과 Bieberbach 정리

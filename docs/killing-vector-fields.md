@@ -4,7 +4,7 @@
 
 **Killing 벡터장(Killing vector field)** 은 흐름이 [Riemann 계량](riemannian-metrics.md)을 보존하는 벡터장이다. 계량의 대칭을 좌표 없이 적은 것이고, 하나가 있으면 [측지선](geodesics.md)을 따라 상수인 함수가 하나 나온다.
 
-등거리변환군의 [Lie 대수](lie-algebras.md)가 Killing 벡터장 전체이므로, 이 벡터장을 세는 일이 다양체가 가진 대칭을 세는 일이다.
+[등거리변환군](isometry-groups.md)의 [Lie 대수](lie-algebras.md)가 Killing 벡터장 전체이므로, 이 벡터장을 세는 일이 다양체가 가진 대칭을 세는 일이다.
 
 # 직관
 
@@ -69,6 +69,6 @@ Killing 방정식과 그 한 번 미분한 식이 한 점에서 $X$ 와 $\nabla 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [등거리변환군](isometry-groups.md)
 
 #differential_geometry #analysis

@@ -22,7 +22,7 @@ $\nabla R=0$ 만 요구하면 **국소 대칭공간**이라 한다. 측지적 �
 
 ## 대합과 Cartan 분해
 
-$G$ 를 $M$ 의 등거리변환군의 항등성분, $H$ 를 한 점 $o$ 의 안정자라 하면 $M=G/H$ 다. $\sigma(g)=s_o\thinspace g\thinspace s_o$ 는 $G$ 의 대합 자기동형이고 $H$ 는 그 고정부분군의 항등성분을 포함한다.
+$G$ 를 $M$ 의 [등거리변환군](isometry-groups.md)의 항등성분, $H$ 를 한 점 $o$ 의 안정자라 하면 $M=G/H$ 다. $\sigma(g)=s_o\thinspace g\thinspace s_o$ 는 $G$ 의 대합 자기동형이고 $H$ 는 그 고정부분군의 항등성분을 포함한다.
 
 $\sigma$ 의 미분이 $\mathfrak g$ 를 고윳값 $\pm 1$ 로 가른다.
 
