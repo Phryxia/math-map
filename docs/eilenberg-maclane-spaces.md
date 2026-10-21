@@ -83,5 +83,6 @@ $$
 ## 더 알아보기
 
 - [장애 이론](obstruction-theory.md)
+- [Brown 표현 정리](brown-representability.md)
 
 #algebraic_topology #topology #category_theory

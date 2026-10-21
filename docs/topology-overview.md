@@ -123,6 +123,7 @@ graph TD
 - [Steenrod 연산](steenrod-operations.md): 현수를 지나도 남는 코호몰로지 연산, Adem 관계
 - [분류공간](classifying-spaces.md): 다발을 세는 문제를 사상의 호모토피류를 세는 문제로 바꾸는 공간
 - [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md): 호모토피군이 한 차수에만 있는 공간, 코호몰로지의 표현가능성
+  - [Brown 표현 정리](brown-representability.md): 쐐기합 공리와 Mayer–Vietoris 공리를 만족하는 함자를 표현하는 공간의 존재
 - [장애 이론](obstruction-theory.md): 사상을 차원마다 늘릴 때 나오는 류가 확장과 단면의 존재를 판정한다
   - [Postnikov 탑](postnikov-tower.md): 높은 차수의 호모토피군을 차례로 지워 얻는 공간의 열
 

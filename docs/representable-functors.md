@@ -85,6 +85,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Brown 표현 정리](brown-representability.md)
 
 #category_theory #algebra #algebraic_topology
