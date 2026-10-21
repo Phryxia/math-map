@@ -60,7 +60,7 @@ $$
 
 $A$ 의 입력을 $B$ 의 입력으로 바꾸는 계산 가능한 함수 $f$ 가 있어 $x \in A \iff f(x) \in B$ 이면 $A \le_m B$ 라 쓴다. $B$ 가 결정 가능하면 $A$ 도 결정 가능하므로, $A$ 가 결정 불가능하면 $B$ 도 그렇다.
 
-새 문제의 결정 불가능성은 대각선 논증을 반복하는 대신 정지 문제를 환원해 보인다. Post 대응 문제, Diophantus 방정식의 정수해 존재성([Hilbert 의 10번 문제](hilberts-tenth-problem.md)), 문맥자유 문법의 모호성, 타일링 문제가 이 방식으로 판명되었다. 프로그램의 의미적 성질은 [Rice 정리](rice-theorem.md)가 자명하지 않은 모든 성질을 한꺼번에 결정 불가능으로 만든다.
+새 문제의 결정 불가능성은 대각선 논증을 반복하는 대신 정지 문제를 환원해 보인다. [Post 대응 문제](post-correspondence-problem.md), Diophantus 방정식의 정수해 존재성([Hilbert 의 10번 문제](hilberts-tenth-problem.md)), 문맥자유 문법의 모호성, 타일링 문제가 이 방식으로 판명되었다. 프로그램의 의미적 성질은 [Rice 정리](rice-theorem.md)가 자명하지 않은 모든 성질을 한꺼번에 결정 불가능으로 만든다.
 
 ## Turing 차수
 
