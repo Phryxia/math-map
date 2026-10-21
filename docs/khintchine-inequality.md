@@ -84,6 +84,6 @@ $p=1$ 에서 최적 상수는 $A_1=1/\sqrt 2$ 이고 계수가 둘일 때 등호
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Rademacher type](rademacher-type.md)
 
 #probability #analysis #functional_analysis
