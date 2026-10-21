@@ -164,7 +164,7 @@ $$
 - **미분방정식.** 방정식을 보존하는 무한소 변환이 Lie 대수를 이루고, 그 구조에서 적분인자와 해의 축소가 나온다. [Galois 이론](galois-theory.md)이 대수방정식에 대해 하는 일의 연속군 판이다.
 - **조화해석.** $\mathrm{SO}(3)$ 의 기약표현 분해가 [구면조화함수](spherical-harmonics.md)이고 각 표현의 차원이 $2\ell+1$ 이다.
 - **Langlands 강령.** [Langlands 강령](langlands-program.md)의 쌍대군 ${}^L\negthinspace G$ 는 근계의 근과 쌍대근을 맞바꿔 얻는다.
-- **대수기하.** 반단순군의 깃발다양체와 Schubert 셈법이 근계 조합론 위에서 계산된다.
+- **대수기하.** 반단순군의 [깃발다양체](flag-varieties.md)와 Schubert 셈법이 근계 조합론 위에서 계산된다.
 
 # 연관 문서
 

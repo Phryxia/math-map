@@ -67,6 +67,7 @@ $\mathrm{Gr}(k,n)$ 위에 각 점 $W$ 의 올을 $W$ 자신으로 두는 계수 
 
 ## 더 알아보기
 
+- [깃발다양체](flag-varieties.md)
 - [Schubert 계산](schubert-calculus.md)
 - [모듈라이 공간](moduli-space.md)
 

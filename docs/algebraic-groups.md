@@ -93,7 +93,7 @@ $G$ 를 연결 환원적군, $T\le G$ 를 극대 원환면이라 한다. 지표 
 - **Chevalley 군.** 각 근계에 딸린 $\mathbb Z$ 위의 군을 유한체 $\mathbb F\_q$ 에서 보면 유한군이 나온다. [유한 단순군 분류](finite-simple-groups.md)의 족 가운데 가장 큰 부분이 이 꼴이고, 뒤틀어 얻는 것까지 더하면 산재군 $26$ 개를 뺀 나머지가 된다.
 - **유한 Morley 위수 군.** Zariski 차원이 하는 일을 Morley 위수가 대신한다. 대수적으로 닫힌 체 위의 대수군은 모두 [유한 Morley 위수 군](groups-of-finite-morley-rank.md)이고, 역을 묻는 것이 [Cherlin–Zilber 추측](cherlin-zilber-conjecture.md)이다.
 - **미분 Galois 이론.** 선형 미분방정식의 Picard–Vessiot 확대의 자기동형군이 상수체 위의 선형 대수군이고, 그 군의 가해성이 해를 적분과 지수로 쓸 수 있는지를 판정한다. [미분 Galois 이론](differential-galois-theory.md)이 그 대응이다.
-- **깃발다양체.** 몫 $G/B$ 는 매끄러운 사영 다양체이고 그 위의 직선다발의 코호몰로지가 $G$ 의 기약 표현을 준다. [Borel–Weil–Bott 정리](borel-weil-bott.md)가 그 계산이다.
+- **[깃발다양체](flag-varieties.md).** 몫 $G/B$ 는 매끄러운 사영 다양체이고 그 위의 직선다발의 코호몰로지가 $G$ 의 기약 표현을 준다. [Borel–Weil–Bott 정리](borel-weil-bott.md)가 그 계산이다.
 - **표현의 완전환원성.** 표수 $0$ 에서 환원적군의 유한차원 표현은 기약 표현의 직합이다. 표수가 양이면 이것이 깨지고, 그 자리에서 모듈러 표현론이 시작한다.
 
 [^1]: A. Borel, *Linear Algebraic Groups*, 2nd ed., Springer GTM 126, 1991.
@@ -110,7 +110,7 @@ $G$ 를 연결 환원적군, $T\le G$ 를 극대 원환면이라 한다. 지표 
 
 ## 더 알아보기
 
-- [Borel–Weil–Bott 정리](borel-weil-bott.md)
+- [깃발다양체](flag-varieties.md)
 - [유한 Morley 위수 군](groups-of-finite-morley-rank.md)
 - [Shimura 다양체](shimura-varieties.md)
 - [기하 불변량 이론](geometric-invariant-theory.md)
