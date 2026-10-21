@@ -51,7 +51,7 @@ $K$ 는 계산 가능하게 열거 가능하다. $e=0,1,2,\dots$ 의 계산을 �
 # 활용
 
 - [Rice 정리](rice-theorem.md). 프로그램의 자명하지 않은 의미적 성질의 판정에 정지 문제를 환원해, 그런 성질이 모두 결정 불가능함을 증명한다.
-- 다른 결정 불가능 문제. [군의 표시](group-presentations.md)의 낱말 문제, [1차 논리](first-order-logic.md) 문장의 타당성, Post 대응 문제, 정수계수 다항식의 정수해 존재(Hilbert 의 10번 문제)가 정지 문제의 환원으로 결정 불가능함이 증명되었다.
+- 다른 결정 불가능 문제. [군의 표시](group-presentations.md)의 낱말 문제, [1차 논리](first-order-logic.md) 문장의 타당성, Post 대응 문제, 정수계수 다항식의 정수해 존재([Hilbert 의 10번 문제](hilberts-tenth-problem.md))가 정지 문제의 환원으로 결정 불가능함이 증명되었다.
 - [Gödel 불완전성 정리](godel-incompleteness.md). 계산을 표현하는 무모순 형식 체계에서 정리 집합은 계산 가능하게 열거 가능하므로, 체계가 모든 참인 "멈추지 않는다" 문장을 증명하면 $K$ 의 여집합이 열거되어 모순이다.
 - 프로그램 분석. 정지 여부나 그로 환원되는 성질을 판정하는 정적 분석기는 틀린 답을 내거나 답을 보류하는 경우를 반드시 갖는다.
 
@@ -64,5 +64,6 @@ $K$ 는 계산 가능하게 열거 가능하다. $e=0,1,2,\dots$ 의 계산을 �
 ## 더 알아보기
 
 - [Kleene 재귀 정리](kleene-recursion-theorem.md)
+- [Hilbert 의 10번 문제](hilberts-tenth-problem.md)
 
 #computation #logic #theorem
