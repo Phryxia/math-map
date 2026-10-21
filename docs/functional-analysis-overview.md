@@ -112,6 +112,7 @@ graph TD
 
 - [Schauder 고정점 정리](schauder-fixed-point.md) — 콤팩트 볼록집합 위의 연속사상이 갖는 고정점. 유한차원 근사로 Brouwer 정리에서 얻는다
 - [Leray–Schauder 차수](leray-schauder-degree.md) — 콤팩트 섭동에 붙이는 정수 불변량. 선험적 추정에서 해의 존재를 얻는 대체 원리
+- [분기 이론](bifurcation-theory.md) — 매개변수를 지나며 해가 갈라지는 자리. 홀수 중복도 특성값에서의 Krasnosel'skii 정리, Rabinowitz 전역 분기, Crandall–Rabinowitz 정리
 
 ## 표현론
 

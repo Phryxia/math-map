@@ -71,7 +71,7 @@ $\lambda$ 를 매개변수로 하는 족 $x=T(\lambda,x)$ 에서, 어떤 해 근
 
 - **비선형 타원 방정식.** 해의 크기에 대한 선험적 추정을 [Schauder 추정](schauder-estimates.md)으로 얻고 대체 원리를 적용해 약한 해의 존재를 보인다. 선형 문제에서 [Lax–Milgram 정리](lax-milgram.md)가 하는 일을 비선형 문제에서 이 차수가 맡는다.
 - **[상미분방정식](ordinary-differential-equations.md)의 주기해.** 주기해를 적분 작용소의 고정점으로 바꾸면 그 작용소가 콤팩트이고, 차수가 $0$ 이 아님을 보여 주기해의 존재를 얻는다.
-- **분기 이론.** 고윳값을 지나며 차수가 바뀌는 자리를 찾아 해의 갈래가 생기는 매개변수 값을 센다.
+- **[분기 이론](bifurcation-theory.md).** 고윳값을 지나며 차수가 바뀌는 자리를 찾아 해의 갈래가 생기는 매개변수 값을 센다.
 
 # 연관 문서
 
@@ -82,6 +82,6 @@ $\lambda$ 를 매개변수로 하는 족 $x=T(\lambda,x)$ 에서, 어떤 해 근
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [분기 이론](bifurcation-theory.md)
 
 #functional_analysis #analysis #topology
