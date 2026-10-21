@@ -214,5 +214,6 @@ $$
 - [외대수](exterior-algebra.md)
 - [유도 함자](derived-functors.md)
 - [모듈러 텐서범주](modular-tensor-categories.md)
+- [양자 회로](quantum-circuits.md)
 
 #ring_theory #linear_algebra #construction

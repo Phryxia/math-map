@@ -87,6 +87,7 @@ graph TD
 먼저 읽을 갈래: 계산 가능성과 계층. 시작 문서: [P 대 NP 문제](p-np.md).
 
 - [P 대 NP 문제](p-np.md): 다항시간 판정과 다항시간 검증의 분리 문제
+  - [양자 회로](quantum-circuits.md): 큐비트의 텐서곱 공간 위 유니터리 게이트와 측정, 보편 게이트 집합과 BQP(bounded-error quantum polynomial time)
 - [NP-완전성과 Cook–Levin 정리](np-completeness.md): 환원과 완전성, SAT(satisfiability) 의 보편성
 - [근사 알고리즘](approximation-algorithms.md): 최적해 대신 보장된 비율의 해
 - [LP 반올림](lp-rounding.md): LP(linear programming) 완화로 정수 제약을 푼 뒤 정수해로 반올림하는 근사 설계
