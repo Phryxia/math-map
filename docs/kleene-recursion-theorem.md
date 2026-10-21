@@ -55,7 +55,7 @@ s-m-n 정리로 $\varphi_{s(e)}(x)\simeq\psi(e,x)$ 인 계산 가능한 전함�
 
 ## 고정점이 없는 함수의 계산 불가능성
 
-$\varphi_{g(e)}\ne\varphi_e$ 가 모든 $e$ 에서 성립하는 $g$ 를 **고정점 없는 함수(fixed-point-free function)** 라 한다. 계산 가능한 전함수는 재귀 정리로 고정점을 가지므로 고정점 없는 전함수는 계산 가능하지 않다. 정지 집합 $K$ 로 $\varphi_e(e)$ 가 정의되는지 물어, 정의되면 그 값에 $1$ 을 더한 상수 함수의 번호를, 정의되지 않으면 상수 $0$ 함수의 번호를 내는 함수는 고정점 없는 함수다. 그래서 고정점 없는 함수를 계산하는 집합의 [Turing 차수](turing-degrees.md)는 $\mathbf 0$ 보다 크다.
+$\varphi_{g(e)}\ne\varphi_e$ 가 모든 $e$ 에서 성립하는 $g$ 를 **고정점 없는 함수(fixed-point-free function)** 라 한다. 계산 가능한 전함수는 재귀 정리로 고정점을 가지므로 고정점 없는 전함수는 계산 가능하지 않다. 정지 집합 $K$ 로 $\varphi_e(e)$ 가 정의되는지 물어, 정의되면 그 값에 $1$ 을 더한 상수 함수의 번호를, 정의되지 않으면 상수 $0$ 함수의 번호를 내는 함수는 고정점 없는 함수다. 그래서 고정점 없는 함수를 계산하는 집합의 [Turing 차수](turing-degrees.md)는 $\mathbf 0$ 보다 크다. 계산 가능하게 열거 가능한 집합에서는 이 차수가 정확히 $\mathbf 0'$ 이고, 이것이 [Arslanov 완비성 판정법](arslanov-completeness-criterion.md)이다.
 
 ## 영역 이론의 고정점 정리와의 구별
 
@@ -79,6 +79,6 @@ $\varphi_{g(e)}\ne\varphi_e$ 가 모든 $e$ 에서 성립하는 $g$ 를 **고정
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Arslanov 완비성 판정법](arslanov-completeness-criterion.md)
 
 #computation #logic #theorem

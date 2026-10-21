@@ -87,5 +87,6 @@ $A'$ 가 $\mathbf 0'$ 를 넘지 않는 집합을 **저차**라 한다. 저차 �
 
 - [산술적 계층](arithmetical-hierarchy.md)
 - [Π⁰₁ 부류](pi01-classes.md)
+- [Arslanov 완비성 판정법](arslanov-completeness-criterion.md)
 
 #computation #logic #set_theory
