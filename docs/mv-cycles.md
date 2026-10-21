@@ -2,7 +2,7 @@
 
 # 개요
 
-[기하학적 Satake 대응](geometric-satake.md)에서 아핀 Grassmann 다양체 위의 퍼버스 층의 [범주](category.md)는 쌍대군의 표현 범주와 같다.
+**MV 순환(Mirković–Vilonen cycle)** 은 아핀 Grassmann 다양체에서 반무한 궤도와 $G(\mathcal O)$ 궤도의 교집합의 기약 성분이고, 쌍대군 표현의 무게 공간의 기저를 준다. [기하학적 Satake 대응](geometric-satake.md)에서 아핀 Grassmann 다양체 위의 퍼버스 층의 [범주](category.md)는 쌍대군의 표현 범주와 같다.
 
 $$
 \mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\ \simeq\ \mathrm{Rep}(\widehat G)

@@ -2,7 +2,7 @@
 
 # 개요
 
-[유한 단순군 분류](finite-simple-groups.md)의 끝에 26 개의 **산재군**(sporadic group)이 남는다. 어떤 무한 계열에도 속하지 않는 예외들이고, 그 중 가장 큰 것이 **괴물군**(Monster) $\mathbb M$ 이다. 위수가
+**괴물 달빛 추측(monstrous moonshine conjecture)** 은 가장 큰 산재군의 표현과 모듈러 함수 $j$ 의 Fourier 계수를 짝짓는 Conway–Norton 추측이고, Borcherds 가 1992 년에 증명했다. [유한 단순군 분류](finite-simple-groups.md)의 끝에 26 개의 **산재군**(sporadic group)이 남는다. 어떤 무한 계열에도 속하지 않는 예외들이고, 그 중 가장 큰 것이 **괴물군**(Monster) $\mathbb M$ 이다. 위수가
 
 $$
 \vert\mathbb M\vert=2^{46}3^{20}5^97^611^213^3\cdot17\cdot19\cdot23\cdot29\cdot31\cdot41\cdot47\cdot59\cdot71\approx8\times10^{53}

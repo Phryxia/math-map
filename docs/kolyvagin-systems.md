@@ -2,7 +2,7 @@
 
 # 개요
 
-[Euler 계](euler-systems.md)의 논법에는 두 가지 한계가 있다. 결론이 상계뿐이라 [Selmer 군](selmer-tate-shafarevich.md)이 이보다 작다는 것은 얻어도 정확한 크기는 얻지 못하고, 자취 정합성을 만족하는 대수적 원소의 탑을 만드는 존재성 문제가 사례마다 따로 풀려야 한다.
+**Kolyvagin 계(Kolyvagin system)** 는 제곱인수 없는 정수로 첨자화된 [Galois 코호몰로지](galois-cohomology.md) 류들이 소수마다 유한 특이 사상으로 이어지는 모임이고, [Selmer 군](selmer-tate-shafarevich.md)의 크기를 상계와 하계 양쪽에서 정한다. [Euler 계](euler-systems.md)의 논법에는 두 가지 한계가 있다. 결론이 상계뿐이라 Selmer 군이 이보다 작다는 것은 얻어도 정확한 크기는 얻지 못하고, 자취 정합성을 만족하는 대수적 원소의 탑을 만드는 존재성 문제가 사례마다 따로 풀려야 한다.
 
 Mazur 와 Rubin 은 Euler 계 자체를 버리고 거기서 나온 유도류의 족만 남겨 공리화했다. 이것이 **Kolyvagin 계**이고, 물음이 그런 족의 존재에서 그런 족 전체가 이루는 가군의 구조로 바뀐다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-[Eisenstein 급수](eisenstein-series.md)는 $L^2(\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H)$ 를 두 조각으로 가른다. 연속 스펙트럼은 실해석적 Eisenstein 급수 $E(z,\tfrac12+ir)$ 가 전부 만들어 내고, $\zeta$ 함수로 완전히 기술된다. 남는 것이 **이산 스펙트럼**이고, 그것을 이루는 함수가 **Maass 형식**이다.
+**Maass 형식(Maass form)** 은 상반평면 위의 $\mathrm{SL}\_2(\mathbb Z)$ 불변 제곱적분가능 함수 가운데 쌍곡 Laplace 작용소의 고유함수인 첨점형식이다. [Eisenstein 급수](eisenstein-series.md)는 $L^2(\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H)$ 를 두 조각으로 가른다. 연속 스펙트럼은 실해석적 Eisenstein 급수 $E(z,\tfrac12+ir)$ 가 전부 만들어 내고, $\zeta$ 함수로 완전히 기술된다. 남는 것이 **이산 스펙트럼**이고, 그것을 이루는 함수가 Maass 형식이다.
 
 $$
 L^2(\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H)=\mathbb C\oplus\underbrace{\bigoplus_j\mathbb C\thinspace u_j}\_{\text{Maass 첨점형식}}\oplus\underbrace{\int_{(1/2)}E(z,s)\thinspace ds}\_{\text{Eisenstein}}

@@ -2,7 +2,7 @@
 
 # 개요
 
-[Zhu 대수](zhu-algebra.md)에서 강유리 [정점작용소대수](vertex-operator-algebras.md)의 기약가군들은 서로 곱해지는 **융합 구조**와 지표의 모듈러 변환에서 나오는 $S$ 행렬을 동시에 갖고, Verlinde 공식이 둘을 묶는다.
+**모듈러 텐서범주(modular tensor category)** 는 단순 대상이 유한 개인 반단순 꼬임 리본 범주(braided ribbon category) 가운데 $S$ 행렬이 가역인 것이다. [Zhu 대수](zhu-algebra.md)에서 강유리 [정점작용소대수](vertex-operator-algebras.md)의 기약가군들은 서로 곱해지는 **융합 구조**와 지표의 모듈러 변환에서 나오는 $S$ 행렬을 동시에 갖고, Verlinde 공식이 둘을 묶는다.
 
 이 자료를 정점작용소대수에서 떼어내 공리로 세운 것이 **모듈러 텐서범주**(modular tensor category, MTC)다. [범주](category.md) 하나에 다음 자료가 더해진다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-[Sato–Tate 분포](sato-tate.md)에서 Frobenius 각 $\theta_p$ 는 $\frac2\pi\sin^2\theta\thinspace d\theta$ 를 따른다. 연속측도다. 그러므로 한 점의 질량이 $0$ 이고, 특정한 정수값
+**Lang–Trotter 추측(Lang–Trotter conjecture)** 은 [복소 곱셈](complex-multiplication.md)이 없는 [타원곡선](elliptic-curves.md) $E/\mathbb Q$ 와 고정된 정수 $r$ 에 대해 $a_p=r$ 인 소수 $p\le x$ 의 개수가 상수배의 $\sqrt x/\log x$ 로 자란다는 추측이다. [Sato–Tate 분포](sato-tate.md)에서 Frobenius 각 $\theta_p$ 는 $\frac2\pi\sin^2\theta\thinspace d\theta$ 를 따른다. 연속측도다. 그러므로 한 점의 질량이 $0$ 이고, 특정한 정수값
 
 $$
 a_p=r\qquad(r\ \text{고정})
@@ -26,7 +26,7 @@ $$
 
 가 된다. 상수 $C_{E,r}$ 는 이 발견법을 $\ell$ 진 표현의 상으로 보정한 것으로, $a_p\equiv r$ 이 $\bmod\ell$ 에서 일어나는 빈도를 모든 $\ell$ 에 걸쳐 곱한 오일러 곱이다.
 
-추측은 증명되지 않았고 알려진 것은 예상 점근보다 약한 상계뿐이다[^1]. $r=0$ 에서는 무한성이 증명되어 있다. Elkies 가 1987 년에 $\mathbb Q$ 위의 모든 [타원곡선](elliptic-curves.md)이 무한히 많은 초특이 소수를 가짐을 보였다.
+추측은 증명되지 않았고 알려진 것은 예상 점근보다 약한 상계뿐이다[^1]. $r=0$ 에서는 무한성이 증명되어 있다. Elkies 가 1987 년에 $\mathbb Q$ 위의 모든 타원곡선이 무한히 많은 초특이 소수를 가짐을 보였다.
 
 # 직관
 

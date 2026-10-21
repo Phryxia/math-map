@@ -2,7 +2,7 @@
 
 # 개요
 
-[Schur 다항식](schur-polynomials.md)에서 곱의 전개 계수
+**Littlewood–Richardson 규칙(Littlewood–Richardson rule)** 은 두 [Schur 다항식](schur-polynomials.md)의 곱을 Schur 다항식으로 전개한 계수를 조건을 만족하는 반표준 Young 표의 개수로 세는 규칙이다. Schur 다항식에서 곱의 전개 계수
 
 $$
 s_\lambda s_\mu=\sum_\nu c^\nu_{\lambda\mu}\thinspace s_\nu

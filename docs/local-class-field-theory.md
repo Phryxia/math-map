@@ -2,7 +2,7 @@
 
 # 개요
 
-[유체론](class-field-theory.md)은 수체 $K$ 의 아벨 확대를 $K$ 안의 산술로 분류한다. 존재정리로 모든 광선유체가 존재하지만 그 체를 만드는 다항식은 나오지 않는다. $K=\mathbb Q$ 에서 [원분체](cyclotomic-fields.md)라는 답은 Kronecker–Weber 정리가 주고, 일반 $K$ 에서 그런 명시적 구성은 열린 문제다.
+**국소 유체론(local class field theory)** 은 국소체 $K$ 의 아벨 확대를 $K^\times$ 의 유한지수 열린 부분군과 대응시키는 이론이다. [유체론](class-field-theory.md)은 수체 $K$ 의 아벨 확대를 $K$ 안의 산술로 분류한다. 존재정리로 모든 광선유체가 존재하지만 그 체를 만드는 다항식은 나오지 않는다. $K=\mathbb Q$ 에서 [원분체](cyclotomic-fields.md)라는 답은 Kronecker–Weber 정리가 주고, 일반 $K$ 에서 그런 명시적 구성은 열린 문제다.
 
 한 자리에서는 사정이 다르다. [p 진수](p-adic-numbers.md)를 완비화해 얻는 국소체 $K$ 에 대해서는 아벨 확대 전체를 손으로 만들 수 있다. 이 분류가 **국소 유체론(local class field theory)** 이다.
 
@@ -166,7 +166,7 @@ $$
 
 - **Galois 표현의 국소 조건.** $\mathrm{Gal}(\bar K_v/K_v)$ 의 표현에서 아벨 부분은 $K_v^\times$ 의 지표로 번역된다. 대역 [Galois 표현](galois-representations.md)의 도체와 $L$ 인자를 자리마다 계산하는 근거다.
 - **국소 $\varepsilon$ 인자.** 자기동형 $L$ 함수의 함수방정식에 나오는 근 수가 분기 지표의 [Gauss 합](gauss-sums.md)으로 주어지고, 그 계산이 분기 여과 위에서 이루어진다.
-- **$p$ 진 Hodge 이론.** $K_\pi$ 를 붙여 만든 탑이 $p$ 진 표현을 $\varphi$ 가군으로 바꾸는 장의 원형이다. Fontaine 의 주기환과 Coleman 의 노름 사상이 Lubin–Tate 탑 위에서 세워진다.
+- **[p 진 Hodge 이론](p-adic-hodge-theory.md).** $K_\pi$ 를 붙여 만든 탑이 $p$ 진 표현을 $\varphi$ 가군으로 바꾸는 장의 원형이다. Fontaine 의 주기환과 Coleman 의 노름 사상이 Lubin–Tate 탑 위에서 세워진다.
 - **국소 Langlands 대응.** $\mathrm{GL}\_1$ 의 국소 Langlands 대응이 국소 상호법칙이다. $\mathrm{GL}\_n$ 으로 올린 진술을 Harris–Taylor 와 Henniart 가 증명했고, [Langlands 강령](langlands-program.md)의 국소 성분을 이룬다.
 
 [^1]: Jonathan Lubin, John Tate, *Formal Complex Multiplication in Local Fields*, Annals of Mathematics 81 (1965), 380–387. 형식군의 존재와 유일성은 Lemma 1 과 그 따름정리, 분할점의 $\mathcal O$ 가군 구조와 Galois 군 계산은 Theorem 2 다.

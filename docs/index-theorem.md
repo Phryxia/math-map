@@ -2,7 +2,7 @@
 
 # 개요
 
-$D$ 가 콤팩트 [다양체](manifolds.md) 위의 타원 미분작용소면 해공간이 유한차원이므로 정수 하나가 정의된다.
+**지표 정리(Atiyah–Singer index theorem)** 는 콤팩트 [다양체](manifolds.md) 위 타원 미분작용소의 해석적 지표가 작용소의 최고차 기호로 정해지는 위상적 지표와 같다는 정리다. $D$ 가 콤팩트 다양체 위의 타원 미분작용소면 해공간이 유한차원이므로 정수 하나가 정의된다.
 
 $$
 \mathrm{ind}(D)=\dim\ker D-\dim\mathrm{coker}\thinspace D

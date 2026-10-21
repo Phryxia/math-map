@@ -2,7 +2,7 @@
 
 # 개요
 
-곡면에서는 위상과 기하가 분리된다. 종수 2 인 닫힌 곡면에 [곡률](curvature.md) $-1$ 인 계량을 줄 수 있고 그런 계량은 6 차원 가족을 이룬다. 바지 분해의 경계 길이와 비틀림을 돌리면 서로 다른 쌍곡 곡면이 계속 나온다. 넓이는 [Gauss–Bonnet](gauss-bonnet.md)으로 $2\pi|\chi|$ 로 고정되지만 측지선의 길이 스펙트럼은 계량마다 다르다.
+**쌍곡 3 다양체(hyperbolic 3-manifold)** 는 상수 단면[곡률](curvature.md) $-1$ 인 완비 계량을 갖는 3 차원 다양체다. 곡면에서는 위상과 기하가 분리된다. 종수 2 인 닫힌 곡면에 곡률 $-1$ 인 계량을 줄 수 있고 그런 계량은 6 차원 가족을 이룬다. 바지 분해의 경계 길이와 비틀림을 돌리면 서로 다른 쌍곡 곡면이 계속 나온다. 넓이는 [Gauss–Bonnet](gauss-bonnet.md)으로 $2\pi|\chi|$ 로 고정되지만 측지선의 길이 스펙트럼은 계량마다 다르다.
 
 3 차원에서는 사정이 다르다.
 
@@ -174,7 +174,7 @@ SnapPy 같은 프로그램은 매듭 도식에서 이상 사면체 분할을 자
 
 ## 산술 다양체, Chern–Simons 이론, K 이론
 
-- **산술 쌍곡 다양체.** $\Gamma$ 가 [사원수 대수](quaternion-algebras.md)의 정수원에서 오면 Bianchi 군 $\mathrm{PSL}\_2(\mathcal O_d)$ 류가 되고 부피가 [Dedekind zeta 함수](dirichlet-l-functions.md)의 값으로 계산된다. [Selberg 대각합 공식](selberg-trace-formula.md)이 길이 스펙트럼과 Laplace 스펙트럼을 잇는다.
+- **산술 쌍곡 다양체.** $\Gamma$ 가 [사원수 대수](quaternion-algebras.md)의 정수원에서 오면 Bianchi 군 $\mathrm{PSL}\_2(\mathcal O_d)$ 류가 되고 부피가 [Dedekind zeta 함수](dedekind-zeta.md)의 값으로 계산된다. [Selberg 대각합 공식](selberg-trace-formula.md)이 길이 스펙트럼과 Laplace 스펙트럼을 잇는다.
 - **Chern–Simons 이론.** 쌍곡 구조는 $\mathrm{SL}\_2(\mathbb C)$ 평탄 접속이므로 [Chern–Simons](chern-simons.md) 불변량이 정의되고 $\mathrm{CS}+i\thinspace\mathrm{Vol}/2\pi$ 라는 복소수 하나로 묶인다. [Witten 점근](witten-asymptotics.md)과 볼륨 추측이 이 복소수의 실수부와 허수부를 본다.
 - **$K$ 이론.** 사면체 모양들이 정하는 Bloch 군의 원소가 있고 그 Borel 조절자가 부피다. [대수적 K 이론](algebraic-k-theory.md)이 3 다양체의 부피와 이렇게 이어진다.
 
