@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-20T21:06:30.803Z",
-  "nextSeq": 2311,
+  "savedAt": "2026-10-21T00:59:10.553Z",
+  "nextSeq": 2312,
   "items": [
     {
       "id": "9bab7237",
@@ -332,6 +332,14 @@
       "seq": 2243
     },
     {
+      "id": "f0e29551",
+      "title": "개요 첫 문단 정의 문장화 완료 (79차), 남은 76 개는 정상 꼴",
+      "priority": 60,
+      "note": "260829fc 를 79차(2026-10-21)에 끝내고 remove 했다. root-systems 다음 파일부터 끝까지와 78차가 건너뛴 긴 첫 문단 목록, 'A와 B' 제목 문서 열둘(dyson-rank-crank eisenstein-ideal filters-and-nets heegner-points herbrand-ribet ideals-quotient-rings kleisli-eilenberg-moore limits-colimits perfect-graphs selmer-tate-shafarevich witten-asymptotics s-cobordism)에 개요 첫머리 굵은 정의 문장을 넣었다(커밋 506ad1f 부터 a3987c3 까지 9 개). 260829fc 의 검사(개요 첫 문단이 ** 로 시작하지 않는 문서)가 지금 76 개를 내놓는데 전부 'X(원어) 는 Y 다' 꼴로 정의로 시작하는 정상 문서다(braid-groups chvatal-rank jacobian-variety set-theoretic-complete-intersection 은 수식이나 수식어가 앞에 오고 굵게 정의가 첫 문장 안에 있다). 이것들의 굵게 누락은 규칙 #3 잔량 항목의 몫이다. A와 B 제목 열둘의 제목 판정(4절 제목 규칙, 8절)은 따로 남아 있다.",
+      "createdAt": "2026-10-21T00:57:43.005Z",
+      "seq": 2311
+    },
+    {
       "id": "6f71d977",
       "title": "개관 갈래의 분야 밖 선수 문서를 어디에 링크하는가",
       "priority": 50,
@@ -474,14 +482,6 @@
       "note": "76차(2026-10-20) 결과. 뺀 항목 열. a13b8d9d(model-selection: information-criteria 와 cross-validation 과 bias-variance-decomposition 과 regularization 이 모두 있다), 3dfff8be(Alon–Boppana: expander-graphs:60 절), 33e35baf(Kleene 고정점: domain-theory:53 절), 6090d14a(Solovay–Kitaev: 이 회차에 문서로 썼다), b1f43504(Kac–Moody: affine-lie-algebras:57 절), 8f7d693e(Nielsen–Thurston: mapping-class-group:43 절), a18bfa4f(Borel 조절자: bloch-group:73 절), 0fa48047(Dehn 수술: dehn-surgery.md), c661b591(수술 이론: surgery-theory.md), 96ba0f25(Kervaire–Milnor: exotic-spheres:51 절), 8585373a(Coleman–Mazur 고윳값 곡선: eigenvariety.md 가 스펙트럼 곡선과 고유다양체 절로 다루고 Coleman 을 네 번 적는다). 남긴 항목 둘. 2de49d51(Temperley–Lieb 대수와 부분인자)은 temperley-lieb-algebras.md 가 있으나 부분인자(subfactor) 언급이 0 회이므로 부분인자 쪽이 실제 빈자리다. 50f81215(Kirby 계산법과 4 차원 손잡이 분해)는 dehn-surgery:74 가 Kirby 이동을 다루지만 4 차원 손잡이 분해는 아직 없다. 판정에 쓴 절차는 세 단계다. (1) ls docs | grep -iE 로 파일명, (2) grep -nE \"^##+ .*(이름 조각)\" docs/*.md 로 절 제목, (3) 조각이 여러 문서에 흩어져 있으면 그 문서들의 헤딩 목록을 본다. 1 단계만으로는 절로 들어간 개념을 놓치고(메모 d0f6bdd6), 겹이름을 점 하나로 grep 하면 en dash 때문에 2 단계가 통째로 빈다(메모 9123c552). 큐의 p3~p6 구간이 이 꼴의 항목으로 차 있으므로 다음 회차들도 꺼내기 전에 세 단계를 돌린다.",
       "createdAt": "2026-10-20T12:49:58.913Z",
       "seq": 2289
-    },
-    {
-      "id": "260829fc",
-      "title": "개요 첫 문단이 정의로 시작하지 않는 문서 (78차 이후 잔량 196 개 집계)",
-      "priority": 50,
-      "note": "78차(2026-10-20) 집계. 4절 5.5단계는 개요 첫 문장이 'X(원어) 는 Y 다' 꼴이기를 요구하는데, 개관을 뺀 문서 가운데 개요 첫 문단이 굵은 정의로 시작하지 않는 것이 240 개다. 9절의 원어 손 검사는 첫 문단의 링크 주소 '(xxx.md)' 를 원어 괄호로 세어 이것들을 통과시킨다. 검사: for f in docs/*.md; do case $f in *-overview.md) continue;; esac; awk '/^# 개요/{f=1;next} f&&NF{if($0 !~ /^\\*\\*/) print FILENAME; exit}' $f; done. 굵게 없이 'X(원어) 는' 으로 시작하는 정상 꼴과 제목이 로마자인 문서가 섞이므로 하나씩 본다. 흔한 꼴은 첫 문단이 선수 문서로 시작하는 동기이고 둘째 문단이 정의인 것이다. 둘째 문단이 첫 문단을 '이', '그', '같은 값' 으로 가리키지 않으면 두 문단을 바꾸고(78차 algebraic-multigrid calderon-zygmund-theory diffusion-models), 가리키면 정의 문장에 대상을 밝혀 쓴다(78차 fft). determinantal-point-process exact-wkb fontaine-mazur free-probability 는 78차에 손으로 다시 썼다(커밋 8a28b43). 회차당 10 개 안팎 이전 id f38fcee6 은 커밋 8a28b43 메시지에 들어가 pop 의 처리 확인에 걸리므로 새 id 로 다시 넣었다. 78차 진행: /tmp/nodef.txt 순서(파일명 알파벳순)로 1~166 번째까지 훑어 약 110 개를 고쳤다(regular-local-rings 까지). 남은 집계 196 개에는 첫 문장이 굵게 없이 'X(원어) 는 Y 다' 꼴이라 정상인 것(finite-simple-groups 처럼)과 'A와 B' 제목이라 제목 판정이 먼저인 것(dyson-rank-crank eisenstein-ideal filters-and-nets ideals-quotient-rings kleisli-eilenberg-moore limits-colimits perfect-graphs heegner-points herbrand-ribet), 첫 문단이 길어 손으로 다시 써야 해서 건너뛴 것(category-o complete-graph-crossing-number complex-multiplication fargues-scholze fredholm-determinant fredholm-operators fundamental-lemma gauss-sums geometric-satake geometrization godement-jacquet group-extensions hyperbolic-3-manifolds index-theorem instanton-floer-homology iwasawa-main-conjecture kolyvagin-systems lang-trotter langlands-program littlewood-richardson local-class-field-theory maass-forms modular-symbols modular-tensor-categories monstrous-moonshine mv-cycles overconvergent-modular-symbols p-adic-height p-adic-hodge-theory painleve-equations pairing-based-cryptography pcp-theorem poitou-tate post-quantum-cryptography potential-theory ramanujan-graphs rankin-selberg reidemeister-torsion resurgence riemann-surfaces root-systems)이 섞여 있다. 다음 회차는 root-systems 다음 파일부터 이어 가거나 건너뛴 목록을 손으로 다시 쓴다.",
-      "createdAt": "2026-10-20T21:06:22.854Z",
-      "seq": 2310
     },
     {
       "id": "08e59419",
