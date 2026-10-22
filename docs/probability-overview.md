@@ -80,6 +80,7 @@ graph TD
   - [Kolmogorov 세 급수 정리](kolmogorov-three-series.md): 독립 확률변수 급수가 거의 확실히 수렴하는 조건, Kolmogorov 최대 부등식
 - [큰 수의 법칙](law-of-large-numbers.md): 표본평균이 기댓값으로
 - [중심극한정리](central-limit-theorem.md): 요동의 정규분포 근사
+  - [Stein 방법](stein-method.md): 정규분포의 특징 항등식을 얼마나 어기는지로 분포 거리를 누르는 방법, 독립이 없는 합의 수렴 속도
 
 ## 편차와 Gauss 구조
 

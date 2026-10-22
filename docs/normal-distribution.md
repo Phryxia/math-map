@@ -132,5 +132,6 @@ $$
 - [Gauss 과정](gaussian-processes.md)
 - [Cramér 분해 정리](cramer-decomposition.md)
 - [James–Stein 추정량](james-stein-estimator.md)
+- [Stein 방법](stein-method.md)
 
 #probability #statistics #analysis
