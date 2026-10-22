@@ -97,7 +97,7 @@ $$
 \mathbb E[XY]=\mathbb E[X]\thinspace\mathbb E[Y]
 $$
 
-따라서 공분산을 $\mathrm{Cov}(X,Y)=\mathbb E[XY]-\mathbb E[X]\thinspace\mathbb E[Y]$ 로 두면 독립인 경우 $0$ 이고, 일반적으로 다음이 성립한다.
+따라서 [공분산](covariance.md)을 $\mathrm{Cov}(X,Y)=\mathbb E[XY]-\mathbb E[X]\thinspace\mathbb E[Y]$ 로 두면 독립인 경우 $0$ 이고, 일반적으로 다음이 성립한다.
 
 $$
 \mathrm{Var}\negthinspace\left(\sum_{i=1}^n X_i\right)=\sum_{i=1}^n\mathrm{Var}(X_i)+2\sum_{i\lt j}\mathrm{Cov}(X_i,X_j)

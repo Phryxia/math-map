@@ -84,7 +84,7 @@ $L^p$ 수렴에서 확률수렴. Markov 부등식으로 $P(\lvert X_n-X\rvert\gt
 
 - 확률수렴하지만 거의 확실히 수렴하지 않는다. 직관 절의 수열이다. $\mathbb E\lvert X_n\rvert^p=\lvert I_n\rvert\to 0$ 이어서 $L^p$ 수렴도 한다. 그래서 $L^p$ 수렴도 거의 확실한 수렴을 함의하지 않는다.
 - 거의 확실히 수렴하지만 $L^1$ 수렴하지 않는다. $X_n=n\mathbf 1\_{[0,1/n]}$ 은 $\omega\gt 0$ 에서 결국 $0$ 이지만 $\mathbb E X_n=1$ 이다.
-- 분포수렴하지만 확률수렴하지 않는다. $X$ 가 표준정규분포를 따르고 $X_n=-X$ 이면 모든 $X_n$ 의 분포가 $X$ 와 같지만 $\lvert X_n-X\rvert=2\lvert X\rvert$ 다.
+- 분포수렴하지만 확률수렴하지 않는다. $X$ 가 [표준정규분포](normal-distribution.md)를 따르고 $X_n=-X$ 이면 모든 $X_n$ 의 분포가 $X$ 와 같지만 $\lvert X_n-X\rvert=2\lvert X\rvert$ 다.
 
 ## 부분열 정리
 

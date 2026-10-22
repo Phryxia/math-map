@@ -64,7 +64,7 @@ $$
 
 ## 필요성
 
-$\sum X_n$ 이 거의 확실히 수렴하면 $X_n\to 0$ 이므로 $\lvert X_n\rvert\gt A$ 는 유한 번만 일어난다. 사건들이 독립이므로 Borel–Cantelli 보조정리의 둘째 부분에 따라 첫째 급수가 수렴한다. 셋째 급수가 발산한다고 하자. $s_n^2=\sum_{k\le n}\mathrm{Var}(Y_k)\to\infty$ 이고 $\lvert Y_k\rvert\le A$ 이므로 Lindeberg 조건이 성립해 $s_n^{-1}\sum_{k\le n}(Y_k-\mathbb E Y_k)$ 가 표준정규분포로 분포수렴한다([중심극한정리](central-limit-theorem.md)). 한편 $\sum Y_k$ 가 수렴하므로 $s_n^{-1}\sum_{k\le n}Y_k\to 0$ 이고, Slutsky 정리에 따라 상수열 $-s_n^{-1}\sum_{k\le n}\mathbb E Y_k$ 가 표준정규분포로 분포수렴해야 하는데 이는 불가능하다. 그래서 셋째 급수가 수렴하고, 분산 판정으로 $\sum(Y_n-\mathbb E Y_n)$ 이 수렴하므로 $\sum Y_n$ 과의 차인 둘째 급수가 수렴한다.
+$\sum X_n$ 이 거의 확실히 수렴하면 $X_n\to 0$ 이므로 $\lvert X_n\rvert\gt A$ 는 유한 번만 일어난다. 사건들이 독립이므로 Borel–Cantelli 보조정리의 둘째 부분에 따라 첫째 급수가 수렴한다. 셋째 급수가 발산한다고 하자. $s_n^2=\sum_{k\le n}\mathrm{Var}(Y_k)\to\infty$ 이고 $\lvert Y_k\rvert\le A$ 이므로 Lindeberg 조건이 성립해 $s_n^{-1}\sum_{k\le n}(Y_k-\mathbb E Y_k)$ 가 [표준정규분포](normal-distribution.md)로 분포수렴한다([중심극한정리](central-limit-theorem.md)). 한편 $\sum Y_k$ 가 수렴하므로 $s_n^{-1}\sum_{k\le n}Y_k\to 0$ 이고, Slutsky 정리에 따라 상수열 $-s_n^{-1}\sum_{k\le n}\mathbb E Y_k$ 가 표준정규분포로 분포수렴해야 하는데 이는 불가능하다. 그래서 셋째 급수가 수렴하고, 분산 판정으로 $\sum(Y_n-\mathbb E Y_n)$ 이 수렴하므로 $\sum Y_n$ 과의 차인 둘째 급수가 수렴한다.
 
 ## 무작위 부호 급수
 

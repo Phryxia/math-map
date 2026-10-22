@@ -90,7 +90,7 @@ Cantor 함수에서는 $\mu_F$ 가 Cantor 집합에 실려 있고 그 집합의 
 
 ## Riemann–Stieltjes 적분
 
-적분자 $g$ 가 유계변동이면 연속함수 $f$ 에 대해 [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md) $\int_a^b f\thinspace dg$ 가 존재한다. 유계변동은 이 적분이 정의되는 적분자의 부류이고, 대응하는 부호 측도의 전변동이 $V_a^b(g)$ 다. 연속함수 공간의 쌍대공간을 유계변동 함수로 기술하는 것이 Riesz 표현정리다.
+적분자 $g$ 가 유계변동이면 연속함수 $f$ 에 대해 [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md) $\int_a^b f\thinspace dg$ 가 존재한다. 유계변동은 이 적분이 정의되는 적분자의 부류이고, 대응하는 [부호 측도](signed-measures.md)의 전변동이 $V_a^b(g)$ 다. 연속함수 공간의 쌍대공간을 유계변동 함수로 기술하는 것이 Riesz 표현정리다.
 
 ## 곡선의 길이
 

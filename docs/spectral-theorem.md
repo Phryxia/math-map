@@ -108,7 +108,7 @@ $$
 
 ## 최적화와 곡률
 
-Hessian 이 양의 준정부호인 것이 [볼록성](convexity.md)의 이차 조건이고, 양의 정부호이면 임계점이 국소 최솟값이다. 최대 고윳값과 최소 고윳값의 비인 조건수가 [gradient descent](gradient-descent.md)의 수렴 속도를 지배한다.
+[Hessian](hessian.md) 이 양의 준정부호인 것이 [볼록성](convexity.md)의 이차 조건이고, 양의 정부호이면 임계점이 국소 최솟값이다. 최대 고윳값과 최소 고윳값의 비인 조건수가 [gradient descent](gradient-descent.md)의 수렴 속도를 지배한다.
 
 $$
 \kappa=\frac{\lambda_1}{\lambda_n}

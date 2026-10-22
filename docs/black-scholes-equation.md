@@ -26,7 +26,7 @@ $$\partial_tV+rs\thinspace\partial_sV+\frac{\sigma^2s^2}{2}\partial_s^2V-rV=0,\q
 
 ## 유럽형 콜의 닫힌 해
 
-$h(s)=(s-K)^+$ 이면 해가 다음이다. $\Phi$ 는 표준정규분포의 누적분포함수다.
+$h(s)=(s-K)^+$ 이면 해가 다음이다. $\Phi$ 는 [표준정규분포](normal-distribution.md)의 누적분포함수다.
 
 $$V(t,s)=s\thinspace\Phi(d_+)-Ke^{-r(T-t)}\Phi(d_-)$$
 
