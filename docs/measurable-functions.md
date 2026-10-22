@@ -112,5 +112,6 @@ $\sigma$ -대수가 클수록 답할 수 있는 사건이 많다. [조건부 기
 
 - [Lebesgue 적분](lebesgue-integral.md)
 - [상측도](pushforward-measure.md)
+- [Egorov 정리](egorov-theorem.md)
 
 #measure_theory #analysis #probability

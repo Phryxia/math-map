@@ -173,5 +173,6 @@ $$
 
 - [멱급수](power-series.md)
 - [Stone–Weierstrass 정리](stone-weierstrass.md)
+- [Egorov 정리](egorov-theorem.md)
 
 #analysis #functional_analysis #probability
