@@ -85,7 +85,7 @@ $$
 ## 더 알아보기
 
 - [Weyl 법칙](weyl-law.md)
-- [제타 정규화 행렬식](zeta-regularized-determinant.md)
+- [열핵 전개](heat-kernel-asymptotics.md)
 - [양자 혼돈](quantum-chaos.md)
 
 #differential_geometry #analysis #functional_analysis

@@ -74,7 +74,7 @@ $$
 \zeta\_\Delta(s)=\frac{1}{\Gamma(s)}\int_0^\infty t^{s-1}\bigl(\mathrm{tr}\thinspace e^{-t\Delta}-1\bigr)\thinspace dt
 $$
 
-$t\to\infty$ 에서는 피적분함수가 $e^{-\lambda_1t}$ 로 줄어 문제가 없다. $t\to 0$ 에서는 열핵의 점근 전개 $\mathrm{tr}\thinspace e^{-t\Delta}\sim(4\pi t)^{-n/2}\sum_{j\ge 0}a_jt^j$ 를 항별로 적분하면 $s=n/2-j$ 에 단순극이 생긴다. $s=0$ 에 생길 수 있는 극은 $1/\Gamma(s)$ 의 영점이 지운다.
+$t\to\infty$ 에서는 피적분함수가 $e^{-\lambda_1t}$ 로 줄어 문제가 없다. $t\to 0$ 에서는 [열핵 전개](heat-kernel-asymptotics.md) $\mathrm{tr}\thinspace e^{-t\Delta}\sim(4\pi t)^{-n/2}\sum_{j\ge 0}a_jt^j$ 를 항별로 적분하면 $s=n/2-j$ 에 단순극이 생긴다. $s=0$ 에 생길 수 있는 극은 $1/\Gamma(s)$ 의 영점이 지운다.
 
 같은 계산에서 $\zeta\_\Delta(0)$ 의 값이 나온다. $n$ 이 홀수이면 $\zeta\_\Delta(0)=-1$ 이고, 짝수이면 $\zeta\_\Delta(0)=(4\pi)^{-n/2}a_{n/2}-1$ 이다. $-1$ 은 뺀 고윳값 $0$ 의 개수다.
 
@@ -112,9 +112,9 @@ Ray 와 Singer 는 해석적 비틀림이 계량의 선택과 무관함을 보�
 
 ## 선수지식
 
-- [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)
 - [Riemann zeta 함수](riemann-zeta.md)
 - [Weyl 법칙](weyl-law.md)
+- [열핵 전개](heat-kernel-asymptotics.md)
 
 ## 더 알아보기
 

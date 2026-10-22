@@ -76,7 +76,7 @@ $$
 \mathrm{ind}(D)=\mathrm{tr}\thinspace e^{-tD^\ast D}-\mathrm{tr}\thinspace e^{-tDD^\ast}
 $$
 
-이 모든 $t\gt 0$ 에서 성립한다. 좌변이 $t$ 에 무관하므로 $t\to0$ 극한을 취하면 열핵의 국소 전개에서 특성류 적분이 나온다. 초대칭을 쓰는 물리학자들의 논증이 같은 구조를 따른다.
+이 모든 $t\gt 0$ 에서 성립한다. 좌변이 $t$ 에 무관하므로 $t\to0$ 극한을 취하면 [열핵 전개](heat-kernel-asymptotics.md)에서 특성류 적분이 나온다. 초대칭을 쓰는 물리학자들의 논증이 같은 구조를 따른다.
 
 # 성질
 
