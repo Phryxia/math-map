@@ -116,6 +116,7 @@ $$
 
 ## 더 알아보기
 
+- [Szegő–Weinberger 부등식](szego-weinberger.md)
 - [Courant 마디 영역 정리](courant-nodal-domain-theorem.md)
 
 #analysis #differential_geometry #optimization #theorem
