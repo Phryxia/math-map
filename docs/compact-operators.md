@@ -80,5 +80,6 @@ $T$ 가 콤팩트이면 $I-T$ 의 핵과 여핵이 유한차원이고 차원이 
 ## 더 알아보기
 
 - [Schatten 아이디얼](schatten-ideals.md)
+- [Nyström 법](nystrom-method.md)
 
 #functional_analysis #analysis #linear_algebra

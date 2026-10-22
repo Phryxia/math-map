@@ -118,7 +118,7 @@ $$
 \det(I-K) \thickspace\approx\thickspace \det\Bigl(\delta_{ij} - \sqrt{w_i w_j}\thinspace K(x_i,x_j)\Bigr)\_{i,j=1}^{n}
 $$
 
-라는 $n \times n$ 행렬식 하나를 계산하는 것이다. $\sqrt{w_iw_j}$ 는 대칭을 유지하려고 나눠 붙였고, 계산의 본체는 적분작용소를 구적으로 이산화한 Nyström 근사다. 커널이 해석적이고 [Gauss 구적](gaussian-quadrature.md)을 쓰면 수렴이 지수적이라 마디 몇 개로 기계정밀도에 닿는다.
+라는 $n \times n$ 행렬식 하나를 계산하는 것이다. $\sqrt{w_iw_j}$ 는 대칭을 유지하려고 나눠 붙였고, 계산의 본체는 적분작용소를 구적으로 이산화한 [Nyström 법](nystrom-method.md)의 근사다. 커널이 해석적이고 [Gauss 구적](gaussian-quadrature.md)을 쓰면 수렴이 지수적이라 마디 몇 개로 기계정밀도에 닿는다.
 
 랭크 2 커널은 유한 랭크라 Gauss 구적이 다항식을 정확히 적분하고 $n = 8$ 에서 15 자리가 맞는다.
 
