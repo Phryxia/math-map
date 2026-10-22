@@ -163,5 +163,6 @@ Menger 정리는 그래프의 연결도(connectivity)를 국소적 경로 개수
 ## 더 알아보기
 
 - [가격 무정부](price-of-anarchy.md)
+- [Chvátal–Erdős 정리](chvatal-erdos-theorem.md)
 
 #graph_theory #algorithms

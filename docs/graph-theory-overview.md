@@ -71,6 +71,7 @@ graph TD
 
 - [최소 신장트리](minimum-spanning-tree.md): 탐욕 알고리즘이 최적해를 주는 독립성 구조
 - [네트워크 흐름](network-flow.md): 흐름의 최댓값과 절단의 최솟값이 같다
+- [Chvátal–Erdős 정리](chvatal-erdos-theorem.md): 연결도가 독립수 이상이면 Hamilton 순환이 있다는 정리, 가장 긴 순환과 부채 보조정리
 
 ## 동형과 구별
 
