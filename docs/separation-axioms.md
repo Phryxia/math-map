@@ -77,5 +77,6 @@ Urysohn 보조정리로 만든 함수를 써서 오차를 $2/3$ 배씩 줄이는
 ## 더 알아보기
 
 - [Stone–Čech 콤팩트화](stone-cech-compactification.md)
+- [Riesz–Markov–Kakutani 표현 정리](riesz-markov-kakutani.md)
 
 #topology #analysis #set_theory

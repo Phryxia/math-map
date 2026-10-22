@@ -71,7 +71,8 @@ graph TD
 
 - [상측도](pushforward-measure.md): 가측사상이 옮기는 측도, 변수변환 공식
 - [Radon–Nikodym 정리](radon-nikodym.md): 절대연속인 두 측도의 도함수, Lebesgue 분해
-  - [부호 측도](signed-measures.md): 음수 값을 허용한 가산가법 집합함수, Hahn 분해와 Jordan 분해, 전변동 노름
+- [부호 측도](signed-measures.md): 음수 값을 허용한 가산가법 집합함수, Hahn 분해와 Jordan 분해, 전변동 노름
+  - [Riesz–Markov–Kakutani 표현 정리](riesz-markov-kakutani.md): 연속함수 공간 위의 양의 선형범함수를 정칙 측도의 적분으로 쓰는 정리, $C(K)$ 의 쌍대 공간
 - [측도변환](change-of-measure.md): Radon–Nikodym 도함수로서의 우도비, 중요도 표본추출
 - [유계변동 함수](bounded-variation.md): Jordan 분해, 절대연속과 미적분의 기본정리, Cantor 함수
   - [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md): 적분자의 증분으로 무게를 주는 적분, 유계변동 적분자에서의 존재와 부분적분, Lebesgue–Stieltjes 측도와의 대응

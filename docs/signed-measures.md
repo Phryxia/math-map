@@ -99,7 +99,7 @@ $(X,\mathcal M)$ 위의 유한 부호 측도 전체는 집합마다 값을 더�
 - [Radon–Nikodym 정리](radon-nikodym.md)는 Jordan 분해로 부호 측도에 확장된다. 유한 부호 측도 $\nu$ 에서 $\lvert\nu\rvert\ll\mu$ 이면 $\nu^+$ 와 $\nu^-$ 에 각각 정리를 적용해 $\nu(E)=\int_E f\thinspace d\mu$ 인 적분가능한 $f$ 를 얻는다.
 - [전변동거리](total-variation-distance.md)는 두 확률측도의 차 $\mu-\lambda$ 의 전변동 노름의 절반이다. 차가 가장 큰 사건 $A^\ast$ 는 $\mu-\lambda$ 의 Hahn 분해의 양집합이다.
 - [유계변동 함수](bounded-variation.md)와 대응한다. $[a,b]$ 위의 오른쪽 연속인 유계변동 함수 $g$ 는 $\nu((a,x\rbrack)=g(x)-g(a)$ 인 유한 부호 Borel 측도를 정하고, 그 Jordan 분해가 $g$ 를 두 증가함수의 차로 쓰는 분해에 대응한다. 이 측도로 적분한 것이 [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md)의 일반화다.
-- Riesz–Markov–Kakutani 표현 정리(Riesz–Markov–Kakutani representation theorem)는 콤팩트 Hausdorff 공간 $K$ 위의 연속함수 공간 $C(K)$ 의 쌍대공간이 $K$ 위의 유한 부호 정칙 Borel 측도의 공간이고 쌍대 노름이 전변동 노름이라는 정리다.
+- [Riesz–Markov–Kakutani 표현 정리](riesz-markov-kakutani.md)는 콤팩트 Hausdorff 공간 $K$ 위의 연속함수 공간 $C(K)$ 의 쌍대공간이 $K$ 위의 유한 부호 정칙 Borel 측도의 공간이고 쌍대 노름이 전변동 노름이라는 정리다.
 
 # 연관 문서
 
@@ -110,6 +110,6 @@ $(X,\mathcal M)$ 위의 유한 부호 측도 전체는 집합마다 값을 더�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Riesz–Markov–Kakutani 표현 정리](riesz-markov-kakutani.md)
 
 #measure_theory #analysis #probability
