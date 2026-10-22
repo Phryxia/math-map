@@ -166,6 +166,7 @@ graph TD
   - [매듭 콩코던스](knot-concordance.md): 4 차원 공 안의 고리면으로 매듭을 묶는 동치관계와 그 군, 부호수와 Fox–Milnor 조건, 위상적 슬라이스와 매끄러운 슬라이스의 차이
 - [Dehn 수술](dehn-surgery.md): 매듭 근방을 떼고 다시 붙여 새 3 다양체를 얻는 조작
   - [렌즈 공간](lens-spaces.md): 3 구면을 순환군의 자유 작용으로 나눈 몫
+  - [Kirby 계산법](kirby-calculus.md): 4 차원 다양체를 틀 지은 고리 도형으로 적고 같은 다양체를 주는 도형을 손잡이 미끄러짐과 상쇄로 잇는 방법
 - [Lobachevsky 함수](lobachevsky-function.md): 쌍곡 사면체의 부피를 적는 함수
 - [쌍곡 3 다양체](hyperbolic-3-manifolds.md): 곡률이 음으로 일정한 계량을 갖는 3 다양체, 계량의 유일성
   - [기하화 정리](geometrization.md): 닫힌 3 다양체가 여덟 기하 조각으로 분해된다는 정리

@@ -76,6 +76,7 @@ $Q\_{M\char35{}N}=Q_M\oplus Q_N$ 이다. 연결합이 두 다양체의 둘째 �
 ## 더 알아보기
 
 - [Freedman 정리](freedman-theorem.md)
+- [Kirby 계산법](kirby-calculus.md)
 - [Donaldson 불변량](donaldson-invariants.md)
 
 #algebraic_topology #topology #differential_geometry #linear_algebra

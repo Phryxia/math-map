@@ -21,7 +21,7 @@ $$
 \omega=\sum_id_iX_i
 $$
 
-으로 수술 링크를 색칠하면 그 값이 Kirby 이동에 불변이 된다. 이 불변성은 $S$ 행렬의 가역성, 곧 모듈러 조건과 동치다.
+으로 수술 링크를 색칠하면 그 값이 [Kirby 계산법](kirby-calculus.md)의 Kirby 이동에 불변이 된다. 이 불변성은 $S$ 행렬의 가역성, 곧 모듈러 조건과 동치다.
 
 # 직관
 
@@ -175,6 +175,7 @@ $\tau$ 를 정확히 계산하는 것은 어렵다. $\mathrm{SU}(2)\_k$ 에서 $
 
 - [모듈러 텐서범주](modular-tensor-categories.md)
 - [매듭 불변량](knot-invariants.md)
+- [Kirby 계산법](kirby-calculus.md)
 
 ## 더 알아보기
 

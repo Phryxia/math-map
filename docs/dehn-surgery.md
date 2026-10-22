@@ -10,7 +10,7 @@ $$
 
 $N(K)$ 는 매듭 $K$ 의 관다발 근방이고 $\varphi$ 는 경계 원환면 사이의 미분동형이다. $\varphi$ 는 $D^2$ 의 경계가 가는 곡선 $p\mu+q\lambda$ 로 보내는지로 결정되며, 그 기약분수 $p/q$ 가 **수술 계수**다.
 
-이 조작으로 닫힌 방향 가능 3 다양체를 모두 얻는다. 모든 닫힌 방향 가능 3 다양체가 $S^3$ 안의 어떤 고리의 정수 수술이라는 것이 Lickorish-Wallace 정리다. 같은 다양체를 주는 두 고리 도형을 잇는 조작의 유한 목록이 Kirby 이동이다.
+이 조작으로 닫힌 방향 가능 3 다양체를 모두 얻는다. 모든 닫힌 방향 가능 3 다양체가 $S^3$ 안의 어떤 고리의 정수 수술이라는 것이 Lickorish-Wallace 정리다. 같은 다양체를 주는 두 고리 도형을 잇는 조작의 유한 목록이 [Kirby 계산법](kirby-calculus.md)의 Kirby 이동이다.
 
 # 직관
 
@@ -124,5 +124,6 @@ $M$ 이 cusp 를 가진 유한 부피 쌍곡 다양체일 때, [쌍곡 3 다양�
 ## 더 알아보기
 
 - [렌즈 공간](lens-spaces.md)
+- [Kirby 계산법](kirby-calculus.md)
 
 #topology #algebraic_topology #differential_geometry #group_theory
