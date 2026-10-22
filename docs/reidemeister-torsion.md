@@ -105,8 +105,8 @@ $\mathrm{Wh}(\mathbb Z/p)$ 가 자명하지 않으므로 렌즈 공간에서 두
 
 ## 다른 정의와의 일치
 
-- **Alexander 다항식.** 매듭 여집합의 비틀림이 Alexander 다항식이다(Milnor).
-- **해석적 비틀림.**[^2] Ray–Singer 가 Laplace 작용소의 행렬식으로 같은 양을 정의했고, Cheeger 와 Müller 가 두 양의 일치를 증명했다.
+- **Alexander 다항식.** 매듭 여집합의 비틀림이 [Alexander 다항식](alexander-polynomial.md)이다(Milnor).
+- **해석적 비틀림.**[^2] Ray–Singer 가 Laplace 작용소의 [제타 정규화 행렬식](zeta-regularized-determinant.md)으로 같은 양을 정의했고, Cheeger 와 Müller 가 두 양의 일치를 증명했다.
 - **점근의 진폭.** [Witten 점근 추측](witten-asymptotics.md)에서 각 평탄 접속의 기여 크기 $\sqrt{T_\alpha}$ 의 $T_\alpha$ 가 이 비틀림이다. 경로적분의 2 차 변분 행렬식을 정규화하면 비틀림이 된다.
 
 # 활용

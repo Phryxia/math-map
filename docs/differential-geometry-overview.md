@@ -107,11 +107,12 @@ graph TD
 - [Weierstrass–Enneper 표현](weierstrass-enneper.md): 등온 좌표의 극소곡면을 정칙함수와 유리형함수 쌍으로 적는 공식, 전곡률과 법벡터가 피하는 점
   - [Scherk 곡면](scherk-surface.md): 변수분리로 얻은 이중 주기 극소곡면, 정사각형 위의 무한 경계값과 법벡터가 피하는 네 점
 - [Riemann 계량](riemannian-metrics.md): 접공간의 내적, Levi-Civita 접속, 측지선 방정식
-  - [Laplace–Beltrami 연산자](laplace-beltrami-operator.md): 계량으로 정의한 기울기의 발산, 콤팩트 다양체의 스펙트럼과 Lichnerowicz·Cheeger 하한, 스펙트럼이 정하는 것
   - [대칭공간](symmetric-spaces.md): 점마다 측지선을 뒤집는 등거리변환을 갖는 다양체, Cartan 분해와 세 유형의 분류
   - [쌍곡 3 다양체](hyperbolic-3-manifolds.md): 3 차원에서 쌍곡 계량이 위상으로 결정된다
   - [양의 질량 정리](positive-mass-theorem.md): 스칼라 곡률이 음이 아닌 점근적으로 평탄한 3 다양체의 무한원 질량은 음이 아니다, 극소곡면 증명과 스피너 증명
   - [Yamabe 문제](yamabe-problem.md): 등각류 안에서 스칼라 곡률이 상수인 계량의 존재, 임계 Sobolev 지수와 Aubin 판정
+- [Laplace–Beltrami 연산자](laplace-beltrami-operator.md): 계량으로 정의한 기울기의 발산, 콤팩트 다양체의 스펙트럼과 Lichnerowicz·Cheeger 하한, 스펙트럼이 정하는 것
+  - [제타 정규화 행렬식](zeta-regularized-determinant.md): 고윳값 zeta 함수의 원점 도함수로 정한 Laplace 작용소의 행렬식, 열핵 전개와 해석적 비틀림
 - [Killing 벡터장](killing-vector-fields.md): 계량을 보존하는 흐름, 측지선을 따르는 보존량과 차원 상한
   - [등거리변환군](isometry-groups.md): 계량을 보존하는 미분동형의 Lie 군, 한 점의 값과 미분으로 정해지는 원소와 차원 상한
 - [측지선](geodesics.md): 가속도의 접성분이 0 인 곡선, 지수사상과 Hopf–Rinow 정리, 켤레점

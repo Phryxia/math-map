@@ -147,4 +147,8 @@ Montgomery 와 Dyson 은 임계선 위 영점의 간격 분포가 Gauss 유니�
 - [Tate 의 zeta 적분](tate-zeta-integral.md)
 - [Dedekind zeta 함수](dedekind-zeta.md)
 
+### 다른 분야에서의 쓰임
+
+- [제타 정규화 행렬식](zeta-regularized-determinant.md)
+
 #number_theory #complex_analysis #analysis
