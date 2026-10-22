@@ -76,7 +76,7 @@ $f$ 가 유한 번만 미분가능해도 비슷한 결론이 있다. 주어진 $
 
 ## Poincaré–Dulac 정규형
 
-공명이 있으면 호몰로지 방정식에서 $m\cdot\lambda-\lambda_i=0$ 인 단항식 $x^m e_i$ 만 지울 수 없다. 나머지를 모두 지우면 방정식의 비선형 항이 공명 단항식만으로 이루어진다. 이것을 Poincaré–Dulac 정규형(Poincaré–Dulac normal form)이라 한다. 직관 절의 $y'=-2y+x^2$ 은 이미 이 꼴이고, $x^2e_2$ 가 유일한 공명 단항식이다.[^2]
+공명이 있으면 호몰로지 방정식에서 $m\cdot\lambda-\lambda_i=0$ 인 단항식 $x^m e_i$ 만 지울 수 없다. 나머지를 모두 지우면 방정식의 비선형 항이 공명 단항식만으로 이루어진다. 이것을 [Poincaré–Dulac 정규형](poincare-dulac-normal-form.md)이라 한다. 직관 절의 $y'=-2y+x^2$ 은 이미 이 꼴이고, $x^2e_2$ 가 유일한 공명 단항식이다.[^2]
 
 ## 해석적인 경우
 
@@ -86,7 +86,8 @@ $f$ 가 해석적이면 형식적 멱급수가 수렴하는지가 따로 문제�
 
 - **매끄러운 국소 분류.** 두 흐름이 원점 근처에서 미분동형사상 $h$ 로 공액이면 $h\circ\varphi\_t=\psi\_t\circ h$ 를 원점에서 미분해 $Dh(0)e^{tA}=e^{tB}Dh(0)$ 을 얻으므로 두 일차 근사 $A$, $B$ 가 닮음이다. Sternberg 정리와 합치면, 비공명인 평형점 둘은 일차 근사가 닮음일 때 그리고 그때만 매끄럽게 공액이다. Hartman–Grobman 정리의 위상 공액이 가르지 못하는 마디점과 나선점이 이 분류에서 갈린다.
 - **안정 다양체의 매끄러움.** 비공명인 평형점에서는 선형화 좌표에서 Hartman–Grobman 정리 성질 절의 안정 다양체와 불안정 다양체가 각각 부분공간 $E^s$, $E^u$ 이므로, 원래 좌표에서 두 다양체가 무한 번 미분가능하다.
-- **정규형 계산.** 분기 매개변수가 있는 방정식을 다룰 때 호몰로지 방정식으로 비공명 항을 먼저 지우고 공명 항만 남긴다. 고윳값이 $\pm i\omega$ 인 평형점에서는 복소좌표 $z$ 의 3 차 항 가운데 $z\lvert zvert^2$ 이 공명 단항식이고, [Hopf 분기](hopf-bifurcation.md)의 증명이 쓰는 정규형 변환이 이 단계이며 첫 Lyapunov 계수는 남은 항의 계수의 실수부에서 나온다.
+- **정규형 계산.** 분기 매개변수가 있는 방정식을 다룰 때 호몰로지 방정식으로 비공명 항을 먼저 지우고 공명 항만 남긴다. 고윳값이 $\pm i\omega$ 인 평형점에서는 복소좌표 $z$ 의 3 차 항 가운데 $z\lvert z
+vert^2$ 이 공명 단항식이고, [Hopf 분기](hopf-bifurcation.md)의 증명이 쓰는 정규형 변환이 이 단계이며 첫 Lyapunov 계수는 남은 항의 계수의 실수부에서 나온다.
 
 [^1]: S. Sternberg, *Local contractions and a theorem of Poincaré*, American Journal of Mathematics **79** (1957), 809–824. S. Sternberg, *On the structure of local homeomorphisms of euclidean n-space, II*, American Journal of Mathematics **80** (1958), 623–631.
 [^2]: V. I. Arnold, *Geometrical Methods in the Theory of Ordinary Differential Equations*, 2nd ed., Springer, 1988, 5 장.
@@ -101,6 +102,6 @@ $f$ 가 해석적이면 형식적 멱급수가 수렴하는지가 따로 문제�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Poincaré–Dulac 정규형](poincare-dulac-normal-form.md)
 
 #analysis #differential_geometry
