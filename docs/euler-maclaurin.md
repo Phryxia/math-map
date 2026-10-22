@@ -173,5 +173,6 @@ $\gamma$ 는 공식이 만들어 내는 적분상수이고, 이 식이 $\gamma$ 
 
 - [감마 함수](gamma-function.md)
 - [Poisson 합 공식](poisson-summation.md)
+- [Richardson 외삽](richardson-extrapolation.md)
 
 #analysis #computation #number_theory

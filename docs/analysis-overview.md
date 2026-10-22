@@ -162,6 +162,7 @@ graph TD
   - [쌍곡함수](hyperbolic-functions.md): 지수함수를 짝과 홀로 가른 두 함수, 삼각 항등식과 부호만 다른 항등식
 - [점근급수](asymptotic-series.md): 수렴을 요구하지 않는 전개와 나머지항 조건, 최적 절단, Watson 보조정리
 - [Euler–Maclaurin 공식](euler-maclaurin.md): 합과 적분의 차이를 도함수 값의 급수로 전개
+  - [Richardson 외삽](richardson-extrapolation.md): 오차 전개의 첫 항을 두 간격의 근삿값의 선형결합으로 지우는 방법, Romberg 적분표
 - [감마 함수](gamma-function.md): 계승의 해석적 연속
 - [Laplace 방법](laplace-method.md): 지수적으로 집중된 적분의 주항
 - [정상위상법](stationary-phase.md): 진동적분의 위상이 멈추는 자리

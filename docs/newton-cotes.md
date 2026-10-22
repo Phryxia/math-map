@@ -48,7 +48,7 @@ $n=8$ 의 닫힌 공식부터 음의 가중치가 나타나고, $n\to\infty$ 에
 
 ## Romberg 적분
 
-[Euler–Maclaurin 공식](euler-maclaurin.md)으로 복합 사다리꼴 규칙의 오차는 $f$ 가 매끄러우면 $c_1h^2+c_2h^4+\cdots$ 꼴로 전개된다. 칸 길이 $h$ 와 $h/2$ 의 값 $T(h)$, $T(h/2)$ 로 $\frac{4T(h/2)-T(h)}{3}$ 를 만들면 $h^2$ 항이 지워지고, 이것은 복합 Simpson 규칙과 같다. 이 소거를 되풀이하는 것이 Romberg 적분(Romberg integration)이다.
+[Euler–Maclaurin 공식](euler-maclaurin.md)으로 복합 사다리꼴 규칙의 오차는 $f$ 가 매끄러우면 $c_1h^2+c_2h^4+\cdots$ 꼴로 전개된다. 칸 길이 $h$ 와 $h/2$ 의 값 $T(h)$, $T(h/2)$ 로 $\frac{4T(h/2)-T(h)}{3}$ 를 만들면 $h^2$ 항이 지워지고, 이것은 복합 Simpson 규칙과 같다. 이 소거를 되풀이하는 것이 [Richardson 외삽](richardson-extrapolation.md)을 쓴 Romberg 적분(Romberg integration)이다.
 
 # 활용
 
@@ -64,6 +64,6 @@ $n=8$ 의 닫힌 공식부터 음의 가중치가 나타나고, $n\to\infty$ 에
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Richardson 외삽](richardson-extrapolation.md)
 
 #analysis #algorithms
