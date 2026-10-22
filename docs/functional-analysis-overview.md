@@ -108,6 +108,7 @@ graph TD
   - [Weyl 보조정리](weyl-lemma.md) — 약조화함수는 매끄러운 조화함수다. 완화자와 평균값 성질로 증명하고, Laplace 작용소의 저타원성이다
 - [Lax–Milgram 정리](lax-milgram.md) — 유계 강제 쌍선형형식이 주는 약한 꼴 방정식의 유일해. 비대칭 타원형 문제와 Galerkin 근사의 오차 추정
 - [타원형 정칙성](elliptic-regularity.md) — 자료가 $H^k$ 에 들면 약해가 $H^{k+2}$ 에 든다. 차분몫 방법과 측정가능 계수의 Hölder 추정
+  - [유일 연속 정리](unique-continuation.md) — 열린집합에서 0 인 타원형 방정식의 해는 연결 영역 전체에서 0 이다. 진동수 함수와 두배 부등식, Carleman 부등식, Hölder 계수의 반례
 - [Schauder 추정](schauder-estimates.md) — 자료와 계수가 $C^{0,\alpha}$ 에 들면 해가 $C^{2,\alpha}$ 에 든다. 계수 동결과 연속법
 
 ## 고정점과 존재정리

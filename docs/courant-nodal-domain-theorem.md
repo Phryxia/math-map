@@ -32,7 +32,7 @@ $D$ 를 $\varphi$ 의 마디 영역이라 하면 $\varphi$ 를 $D$ 로 제한한
 
 ## Courant 정리의 증명
 
-$\varphi$ 의 마디 영역이 $D_1,\dots,D_{k+1}$ 이상 있다고 하자. $u_i=\varphi\mathbf 1_{D_i}$ 는 $H^1_0(\Omega)$ 에 속하고 Rayleigh 몫이 모두 $\lambda_k$ 다. $u_1,\dots,u_k$ 는 서로 겹치지 않는 곳에서 $0$ 이 아니므로, 그 선형결합 $v$ 의 Rayleigh 몫도 $\lambda_k$ 다. $v\ne 0$ 을 $\varphi_1,\dots,\varphi_{k-1}$ 과 직교하게 고를 수 있고, [스펙트럼 정리](spectral-theorem.md)의 min–max 정리에서 이런 $v$ 는 $\lambda_k$ 의 고유함수다. 그런데 $v$ 는 열린집합 $D_{k+1}$ 에서 $0$ 이다. Aronszajn 의 유일 연속 정리(unique continuation theorem)는 열린집합에서 $0$ 인 고유함수가 연결 영역 전체에서 $0$ 이라고 하므로[^3] 모순이다.
+$\varphi$ 의 마디 영역이 $D_1,\dots,D_{k+1}$ 이상 있다고 하자. $u_i=\varphi\mathbf 1_{D_i}$ 는 $H^1_0(\Omega)$ 에 속하고 Rayleigh 몫이 모두 $\lambda_k$ 다. $u_1,\dots,u_k$ 는 서로 겹치지 않는 곳에서 $0$ 이 아니므로, 그 선형결합 $v$ 의 Rayleigh 몫도 $\lambda_k$ 다. $v\ne 0$ 을 $\varphi_1,\dots,\varphi_{k-1}$ 과 직교하게 고를 수 있고, [스펙트럼 정리](spectral-theorem.md)의 min–max 정리에서 이런 $v$ 는 $\lambda_k$ 의 고유함수다. 그런데 $v$ 는 열린집합 $D_{k+1}$ 에서 $0$ 이다. Aronszajn 의 [유일 연속 정리](unique-continuation.md)는 열린집합에서 $0$ 인 고유함수가 연결 영역 전체에서 $0$ 이라고 하므로[^3] 모순이다.
 
 ## 일차원의 등호
 
@@ -69,6 +69,7 @@ $n$ 차원에서는 같은 증명으로 상한이 $(2\pi)^n/(\omega_n^2j_{n/2-1,
 
 - [Weyl 법칙](weyl-law.md)
 - [Faber–Krahn 부등식](faber-krahn.md)
+- [유일 연속 정리](unique-continuation.md)
 
 ## 더 알아보기
 

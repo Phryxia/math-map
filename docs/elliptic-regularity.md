@@ -91,6 +91,7 @@ $\Omega$ 에서 $\Delta u=0$ 을 만족하는 [분포](schwartz-distributions.md
 ## 더 알아보기
 
 - [Schauder 추정](schauder-estimates.md)
+- [유일 연속 정리](unique-continuation.md)
 - [De Giorgi–Nash–Moser 정리](de-giorgi-nash-moser.md)
 
 #functional_analysis #analysis #measure_theory
