@@ -90,6 +90,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Sherali–Adams 계층](sherali-adams-hierarchy.md)
 
 #optimization #combinatorics #algorithms
