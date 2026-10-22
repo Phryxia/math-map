@@ -44,7 +44,7 @@ $G$ 가 유한이면 $\underline EG$ 는 한 점이고 $K^G_0(\mathrm{pt})$ 는 
 
 ## 증명된 경우
 
-- Haagerup 성질(Haagerup property)을 갖는 군에서 계수가 있는 판이 성립한다(Higson–Kasparov)[^2]. [순종군](amenable-groups.md)은 모두 이 성질을 갖는다.
+- [Haagerup 성질](haagerup-property.md)을 갖는 군에서 계수가 있는 판이 성립한다(Higson–Kasparov)[^2]. [순종군](amenable-groups.md)은 모두 이 성질을 갖는다.
 - [쌍곡군](hyperbolic-groups.md)에서 성립한다(Lafforgue, Mineyev–Yu)[^3].
 
 Higson–Kasparov 의 증명은 Kasparov 의 Dirac–쌍대 Dirac 방법(Dirac–dual-Dirac method)을 쓴다. $KK$ 이론의 원소 $\gamma$ 를 만들고 $\gamma=1$ 을 보이면 $\mu$ 가 동형이 된다. Kazhdan 성질 (T)(Kazhdan's property (T)) 를 갖는 무한군에서는 $\gamma\ne 1$ 이어서 이 방법이 그대로 통하지 않고, Lafforgue 는 Banach 대수 위의 $KK$ 이론으로 이 제약을 피했다[^1].

@@ -197,5 +197,6 @@ $L^2$ 의 삼각함수계는 정규직교기저이고, 이때의 계수 전개�
 
 - [Lax–Milgram 정리](lax-milgram.md)
 - [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)
+- [Haagerup 성질](haagerup-property.md)
 
 #functional_analysis #analysis #linear_algebra #probability

@@ -39,6 +39,7 @@ graph TD
   - [켤레류](conjugacy-classes.md): 켤레 관계의 동치류와 류 방정식
   - [정규화군](normalizer.md): 부분집합을 켤레로 보존하는 부분군과 N/C 정리
   - [순종군](amenable-groups.md): 불변 평균을 갖는 군, Følner 조건과 역설적 분해의 부재
+  - [Haagerup 성질](haagerup-property.md): 무한원에서 0 으로 가는 양의 정부호 함수로 1 을 근사하는 군, 고유 아핀 등거리 작용과 성질 (T) 와의 배타
 - [Sylow 정리](sylow-theorems.md): 소수 거듭제곱 차수 부분군의 존재와 개수
 - [군의 표현](group-representations.md): 군을 가역행렬의 군으로 보내는 준동형과 기약분해
 - [지표표](character-table.md): 기약지표를 켤레류별로 적은 정사각 배열과 두 직교관계

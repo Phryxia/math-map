@@ -81,6 +81,6 @@ $F\_2$ 를 첫 글자로 가른 조각들로 $F\_2=S(a)\cup aS(a^{-1})=S(b)\cup 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Haagerup 성질](haagerup-property.md)
 
 #group_theory #measure_theory #algebra #functional_analysis
