@@ -60,7 +60,7 @@ $$
 =2\thinspace\pi^{-n(n+1)/4}\prod_{j=1}^{n}\Gamma\negthinspace\left(\frac j2\right)\cdot\prod_{p}\frac{2}{\alpha_p(L)}
 $$
 
-$\alpha_p(L)$ 는 $L$ 이 자기 자신을 $\mathbb Z_p$ 위에서 표현하는 국소 밀도다. 앞의 상수 2 가 $\mathrm{SO}\_n$ 의 Tamagawa 수이고, 거의 모든 $p$ 에서 $\alpha_p$ 가 1 에 가까워 곱이 수렴한다. Conway 와 Sloane 이 $\alpha_p$ 를 Jordan 분해에서 읽는 절차를 정리했다.
+$\alpha_p(L)$ 는 $L$ 이 자기 자신을 $\mathbb Z_p$ 위에서 표현하는 국소 밀도다. 앞의 상수 2 가 $\mathrm{SO}\_n$ 의 [Tamagawa 수](tamagawa-numbers.md)이고, 거의 모든 $p$ 에서 $\alpha_p$ 가 1 에 가까워 곱이 수렴한다. Conway 와 Sloane 이 $\alpha_p$ 를 Jordan 분해에서 읽는 절차를 정리했다.
 
 $8\mid n$ 인 **짝수 유니모듈러 격자**에서는 국소 인자가 모두 자명해져 Bernoulli 수만 남는다.
 

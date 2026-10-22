@@ -86,7 +86,7 @@ graph TD
 
 ## 대수적 수체와 유체론
 
-먼저 읽을 갈래: p 진수와 이차형식. 시작 문서: [Dedekind 정역](dedekind-domains.md).
+먼저 읽을 갈래: p 진수와 이차형식. 먼저 읽을 것: [대수군](algebraic-groups.md)(추상대수 개관). 시작 문서: [Dedekind 정역](dedekind-domains.md).
 
 - [Dedekind 정역](dedekind-domains.md): 원소의 소인수분해가 깨진 자리에서 아이디얼의 분해가 유일해지는 정역
 - [대수적 수체](algebraic-number-fields.md): 유리수체의 유한 확대와 그 정수환, 판별식과 소수의 분해
@@ -97,6 +97,7 @@ graph TD
   - [이진 이차형식](binary-quadratic-forms.md): 판별식을 고정한 동치류의 축약 대표와 Gauss 합성이 주는 유형군, 이데알 류군과의 동형
   - [류수 1 문제](class-number-one.md): 소인수분해가 유일한 허이차체 아홉 개, 류수 공식의 비유효성과 특이 모듈러 값으로 얻은 상한
   - [S-단위 방정식](s-unit-equation.md): 단위군에서 푸는 $u+v=1$, Thue 방정식과 정수점 유한성의 공통 환원
+  - [대수군의 Tamagawa 수](tamagawa-numbers.md): 불변 미분형식으로 정한 아델 점의 몫의 부피, 단순연결 반단순군에서 1 이라는 Weil 추측과 질량 공식
 - [유체론](class-field-theory.md): 수체의 아벨 확대를 아이디얼류군으로 분류하는 상호법칙
   - [국소 유체론](local-class-field-theory.md): 국소체의 아벨 확대를 그 곱셈군으로 분류하는 상호법칙과 노름 잉여 기호
   - [Brauer 군](brauer-groups.md): 중심단순대수의 Brauer 동치류가 이루는 군과 유체론이 주는 그 계산

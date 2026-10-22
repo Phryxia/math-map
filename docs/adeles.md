@@ -180,5 +180,6 @@ $$
 
 - [Tate 의 zeta 적분](tate-zeta-integral.md)
 - [Brauer 군](brauer-groups.md)
+- [대수군의 Tamagawa 수](tamagawa-numbers.md)
 
 #number_theory #field_theory #analysis
