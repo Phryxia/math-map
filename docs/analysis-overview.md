@@ -174,6 +174,7 @@ graph TD
 - [Fourier 변환](fourier-transform.md): 실직선 위의 적분변환과 반전 공식, Plancherel 정리
   - [불확정성 원리](uncertainty-principle.md): 함수와 변환의 분산의 곱에 대한 하한
   - [이산 Fourier 변환](fourier.md): 유한 순환군 위의 Fourier 해석
+  - [열방정식](heat-equation.md): 열핵과의 합성곱으로 쓴 해, 평활화와 최대값 원리, 고유함수 전개, 역방향 불량설정
 - [Poisson 합 공식](poisson-summation.md): 격자 합과 쌍대격자 합의 등식
 - [Mellin 변환](mellin-transform.md): 곱셈적 구조 위의 적분변환
 - [표본화 정리](sampling-theorem.md): 대역제한 함수를 균일한 표본으로 복원하는 공식과 Nyquist 조건

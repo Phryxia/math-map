@@ -126,7 +126,7 @@ graph TD
   - [Freidlin–Wentzell 이론](freidlin-wentzell.md): 작은 잡음 확률미분방정식의 대편차, 작용범함수와 탈출 시간
 - [Girsanov 정리](girsanov.md): 측도변환으로 표류항을 바꾼다
 - [Feynman–Kac 공식](feynman-kac.md): 편미분방정식의 해를 경로 적분의 기댓값으로
-- [Black–Scholes 방정식](black-scholes-equation.md): 복제로 얻는 가격 방정식, 추세의 소거와 열방정식 변환
+- [Black–Scholes 방정식](black-scholes-equation.md): 복제로 얻는 가격 방정식, 추세의 소거와 [열방정식](heat-equation.md) 변환
   - [미국형 옵션](american-options.md): 행사 시각을 함께 고르는 가격 문제, 변분 부등식과 행사 경계
 
 ## 무작위 행렬과 점과정

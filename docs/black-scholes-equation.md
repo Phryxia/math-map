@@ -52,7 +52,7 @@ $\tau=T-t$ 와 $x=\log s+(r-\sigma^2/2)\tau$ 로 두고 $u(\tau,x)=e^{r\tau}V(t,
 
 $$\partial_\tau u=\frac{\sigma^2}{2}\thinspace\partial_x^2u,\qquad u(0,x)=h(e^x)$$
 
-상수계수 열방정식이므로 해가 Gauss 핵과 초기값의 합성곱으로 유일하게 정해지고, $h$ 가 연속이고 다항식 증가이면 해가 $\tau\gt 0$ 에서 매끄럽다. 콜의 닫힌 해도 이 합성곱을 계산한 결과다.
+상수계수 [열방정식](heat-equation.md)이므로 해가 Gauss 핵과 초기값의 합성곱으로 유일하게 정해지고, $h$ 가 연속이고 다항식 증가이면 해가 $\tau\gt 0$ 에서 매끄럽다. 콜의 닫힌 해도 이 합성곱을 계산한 결과다.
 
 ## 그릭스
 

@@ -8,7 +8,7 @@ $$
 \frac{\partial g}{\partial t}=-2\mathrm{Ric}(g)
 $$
 
-곡률이 큰 방향으로는 계량이 줄고 작은 방향으로는 늘어난다. 계량에 대한 열방정식 꼴이어서 곡률이 시간이 지나며 고르게 퍼진다. Hamilton 이 1982 년에 도입했고, Perelman 이 특이점에서 수술을 붙여 [기하화 정리](geometrization.md)를 증명했다.
+곡률이 큰 방향으로는 계량이 줄고 작은 방향으로는 늘어난다. 계량에 대한 [열방정식](heat-equation.md) 꼴이어서 곡률이 시간이 지나며 고르게 퍼진다. Hamilton 이 1982 년에 도입했고, Perelman 이 특이점에서 수술을 붙여 [기하화 정리](geometrization.md)를 증명했다.
 
 # 직관
 

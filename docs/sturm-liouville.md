@@ -102,7 +102,7 @@ $$
 
 # 활용
 
-- **편미분방정식의 분리변수.** 열방정식과 파동방정식을 공간 변수로 분리하면 Sturm–Liouville 문제가 남고, 고유함수 전개가 초기조건을 처리한다. 계수가 변하는 매질에서도 같은 절차가 통한다.
+- **편미분방정식의 분리변수.** [열방정식](heat-equation.md)과 파동방정식을 공간 변수로 분리하면 Sturm–Liouville 문제가 남고, 고유함수 전개가 초기조건을 처리한다. 계수가 변하는 매질에서도 같은 절차가 통한다.
 - **특수함수의 직교성.** Legendre 방정식, Bessel 방정식, Hermite 방정식은 모두 Sturm–Liouville 꼴이다. Legendre 다항식이 $\lbrack -1,1\rbrack$ 에서 가중 $1$ 로, [구면조화함수](spherical-harmonics.md)의 동경 성분이 대응하는 가중으로 직교하는 것이 이 이론의 결론이다.
 - **작용소의 스펙트럼.** 비유계인 미분 작용소를 Green 함수로 [콤팩트 작용소](compact-operators.md)로 바꾸는 이 절차가 [유계 작용소](bounded-operators.md)의 스펙트럼 정리를 미분방정식에 적용하는 표준 절차다. 양자역학의 1 차원 Schrödinger 작용소도 같은 틀에서 다룬다.
 
