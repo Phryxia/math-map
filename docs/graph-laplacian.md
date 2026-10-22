@@ -118,7 +118,7 @@ $dx/dt = -Lx$ 는 그래프 위의 열방정식이고 해가 $e^{-tL}x_0$ 다. �
 
 [스펙트럼 희소화](spectral-sparsification.md)는 두 Laplacian 의 이차형식이 서로 상수배 안에 있다는 조건으로 정의된다. 유효저항에 비례해 간선을 표본추출하면 이 조건을 만족하는 희소 그래프를 얻고, 대규모 그래프의 선형계를 거의 선형 시간에 푸는 알고리즘이 이를 쓴다.
 
-기계학습에서는 $x^{\mathsf T}Lx$ 를 정칙화 항으로 써서 이웃한 데이터가 비슷한 예측을 받게 한다. 준지도 학습의 라벨 전파와 그래프 신경망의 스펙트럼 합성곱이 이 이차형식을 쓴다.[^1]
+기계학습에서는 $x^{\mathsf T}Lx$ 를 정칙화 항으로 써서 이웃한 데이터가 비슷한 예측을 받게 한다. 준지도 학습의 라벨 전파와 그래프 신경망의 스펙트럼 [합성곱](convolution.md)이 이 이차형식을 쓴다.[^1]
 
 [^1]: Daniel A. Spielman, *The Laplacian Matrix and Spectral Graph Drawing*. Laplacian 과 이차형식, 고윳값과 그래프 구조. https://www.cs.yale.edu/homes/spielman/561/lect02-15.pdf
 

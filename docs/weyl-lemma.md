@@ -26,7 +26,7 @@ $$
 
 ## 증명의 요지
 
-$\eta$ 를 원점 중심 공 $B(0,1)$ 에 지지를 갖고 회전대칭이며 적분이 $1$ 인 매끄러운 함수라 하고 $\eta\_\varepsilon(x)=\varepsilon^{-n}\eta(x/\varepsilon)$ 로 둔다. $u\_\varepsilon=u\ast\eta\_\varepsilon$ 은 경계에서 $\varepsilon$ 보다 먼 점에서 매끄럽고, $\Delta u\_\varepsilon(x)=\int u(y)\Delta\_x\eta\_\varepsilon(x-y)\thinspace dy=0$ 이므로 조화다. 조화함수의 평균값 성질과 $\eta\_\delta$ 의 회전대칭으로 $u\_\varepsilon\ast\eta\_\delta=u\_\varepsilon$ 이다. 합성곱의 교환법칙으로
+$\eta$ 를 원점 중심 공 $B(0,1)$ 에 지지를 갖고 회전대칭이며 적분이 $1$ 인 매끄러운 함수라 하고 $\eta\_\varepsilon(x)=\varepsilon^{-n}\eta(x/\varepsilon)$ 로 둔다. $u\_\varepsilon=u\ast\eta\_\varepsilon$ 은 경계에서 $\varepsilon$ 보다 먼 점에서 매끄럽고, $\Delta u\_\varepsilon(x)=\int u(y)\Delta\_x\eta\_\varepsilon(x-y)\thinspace dy=0$ 이므로 조화다. 조화함수의 평균값 성질과 $\eta\_\delta$ 의 회전대칭으로 $u\_\varepsilon\ast\eta\_\delta=u\_\varepsilon$ 이다. [합성곱](convolution.md)의 교환법칙으로
 
 $$
 u\_\varepsilon=u\_\varepsilon\ast\eta\_\delta=u\ast\eta\_\varepsilon\ast\eta\_\delta=u\_\delta\ast\eta\_\varepsilon=u\_\delta

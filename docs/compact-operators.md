@@ -66,7 +66,7 @@ $T$ 가 콤팩트이면 $I-T$ 의 핵과 여핵이 유한차원이고 차원이 
 - **고유함수 전개의 완전성.** [Sturm–Liouville 이론](sturm-liouville.md)에서 미분작용소의 역이 연속 핵을 갖는 적분작용소이므로 콤팩트이고, 자기수반 대각화가 고유함수의 완전성을 준다.
 - **매입 정리.** 유계 영역에서 [Sobolev 공간](sobolev-spaces.md)의 매입 $H^1\to L^2$ 가 콤팩트이며, 이것이 타원형 방정식의 변분해에서 약수렴을 강수렴으로 올리는 데 쓰인다.
 - **고정점 정리.** [Schauder 고정점 정리](schauder-fixed-point.md)와 [Leray–Schauder 차수](leray-schauder-degree.md)는 사상의 콤팩트성을 가정해 무한차원에서 Brouwer 정리를 되살린다.
-- **콤팩트군의 표현.** [Peter–Weyl 정리](peter-weyl.md)의 증명에서 합성곱작용소가 콤팩트 자기수반이므로 유한차원 표현의 직합 분해가 나온다.
+- **콤팩트군의 표현.** [Peter–Weyl 정리](peter-weyl.md)의 증명에서 [합성곱](convolution.md)작용소가 콤팩트 자기수반이므로 유한차원 표현의 직합 분해가 나온다.
 
 [^1]: A. Pietsch, *History of Banach Spaces and Linear Operators*, Birkhäuser, 2007. 근사 성질을 갖지 않는 Banach 공간의 예와 Enflo 의 구성이 있다.
 

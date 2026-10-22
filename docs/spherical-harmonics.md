@@ -91,7 +91,7 @@ $$
 \lambda_\ell=2\pi\int_{-1}^1k(t)P_\ell(t)\thinspace dt
 $$
 
-가 성립한다. Funk–Hecke 정리다. 구면 위의 합성곱이 $\ell$ 마다 하나의 곱셈으로 대각화된다는 뜻이며, 원에서 합성곱이 Fourier 계수의 곱이 되는 것의 구면판이다.
+가 성립한다. Funk–Hecke 정리다. 구면 위의 [합성곱](convolution.md)이 $\ell$ 마다 하나의 곱셈으로 대각화된다는 뜻이며, 원에서 합성곱이 Fourier 계수의 곱이 되는 것의 구면판이다.
 
 ## SU(2) 와 반정수
 

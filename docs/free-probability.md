@@ -2,7 +2,7 @@
 
 # 개요
 
-**자유확률(free probability)** 은 곱이 교환하지 않는 변수에 독립 대신 자유독립이라는 조건을 둔 확률론이다. 자유독립은 [비교차 분할](noncrossing-partitions.md)로 적률을 전개할 때 나오는 조건이고, 이 조건을 만족하는 변수들의 합은 보통의 합성곱이 아닌 다른 법칙을 따른다.
+**자유확률(free probability)** 은 곱이 교환하지 않는 변수에 독립 대신 자유독립이라는 조건을 둔 확률론이다. 자유독립은 [비교차 분할](noncrossing-partitions.md)로 적률을 전개할 때 나오는 조건이고, 이 조건을 만족하는 변수들의 합은 보통의 [합성곱](convolution.md)이 아닌 다른 법칙을 따른다.
 
 [중심극한정리](central-limit-theorem.md)의 자리에 [Wigner 반원법칙](wigner-semicircle.md)이 오고, 큰 무작위 행렬의 고윳값 분포가 이 이론의 계산으로 나온다.
 

@@ -22,7 +22,7 @@ $$
 \partial_i\partial_j u(x)=\int\_{\mathbb R^n}K(x-y)\thinspace f(y)\thinspace dy,\qquad K(z)=c_n\thinspace\frac{n\thinspace z_iz_j-\delta\_{ij}\vert z\vert^2}{\vert z\vert^{n+2}}
 $$
 
-$\vert K(z)\vert$ 는 $\vert z\vert^{-n}$ 크기이고 $\vert z\vert^{-n}$ 의 적분은 원점과 무한대 양쪽에서 발산한다. 따라서 $\vert Tf\vert$ 를 $\vert K\vert$ 와 $\vert f\vert$ 의 합성곱으로 받치는 계산은 쓸 수 없고, 쓸 수 있는 것은 $K$ 가 구면 위에서 부호를 바꾸어 생기는 상쇄다. 이 상쇄는 $f$ 가 한 자리에서 일정할 때 가장 크게 작동하므로, 평균이 $\lambda$ 를 넘는 정육면체들을 모아 그 안에서는 각 정육면체의 평균을 뺀 조각을 보고 그 밖에서는 $f$ 가 $\lambda$ 이하라는 것을 써서 $L^2$ 추정으로 넘긴다.
+$\vert K(z)\vert$ 는 $\vert z\vert^{-n}$ 크기이고 $\vert z\vert^{-n}$ 의 적분은 원점과 무한대 양쪽에서 발산한다. 따라서 $\vert Tf\vert$ 를 $\vert K\vert$ 와 $\vert f\vert$ 의 [합성곱](convolution.md)으로 받치는 계산은 쓸 수 없고, 쓸 수 있는 것은 $K$ 가 구면 위에서 부호를 바꾸어 생기는 상쇄다. 이 상쇄는 $f$ 가 한 자리에서 일정할 때 가장 크게 작동하므로, 평균이 $\lambda$ 를 넘는 정육면체들을 모아 그 안에서는 각 정육면체의 평균을 뺀 조각을 보고 그 밖에서는 $f$ 가 $\lambda$ 이하라는 것을 써서 $L^2$ 추정으로 넘긴다.
 
 # 정의
 

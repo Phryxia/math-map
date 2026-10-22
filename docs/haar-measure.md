@@ -76,7 +76,7 @@ $$
 - [Weyl 지표 공식](weyl-character-formula.md)의 해석적 증명은 콤팩트 연결 Lie 군의 Haar 측도를 극대원환면으로 밀어낸다. 그 [상측도](pushforward-measure.md)가 Weyl 적분 공식의 야코비안 $\frac1{\vert W\vert}\vert\Delta\vert^2$ 를 준다.
 - [Sato–Tate 분포](sato-tate.md)는 정규화된 Frobenius 각이 $\mathrm{SU}(2)$ 의 켤레류에서 Haar 측도로 등분포한다는 진술이다. 그 측도를 각으로 읽은 것이 반원 분포다.
 - [아델](adeles.md)의 제한직적은 국소콤팩트라서 Haar 측도를 갖는다. [질량 공식](mass-formula.md)은 이중잉여류의 부피를 이 측도로 재어 격자류의 개수 대신 부피를 센다.
-- [Satake 동형](satake-isomorphism.md)은 $\mathrm{vol}(K)=1$ 로 정규화한 Haar 측도의 합성곱으로 비분기 Hecke 대수를 정의한다.
+- [Satake 동형](satake-isomorphism.md)은 $\mathrm{vol}(K)=1$ 로 정규화한 Haar 측도의 [합성곱](convolution.md)으로 비분기 Hecke 대수를 정의한다.
 
 # 연관 문서
 

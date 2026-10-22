@@ -52,7 +52,7 @@ $L^2(\mathbb R)$ 의 함수는 적분가능하지 않을 수 있어 정의식이
 
 **정리.** $f\in L^1(\mathbb R)$ 이고 $\hat f\in L^1(\mathbb R)$ 이면 거의 모든 $x$ 에서 $f(x)=\int_{\mathbb R}\hat f(\xi)e^{2\pi i\xi x}\thinspace d\xi$ 다.[^1]
 
-증명의 요지. 오른쪽 적분에 $e^{-\pi\varepsilon^2\xi^2}$ 를 곱해 자르면 이중적분이 절대수렴하므로 Fubini 정리로 순서를 바꿀 수 있고, 그 결과는 $f$ 와 폭 $\varepsilon$ 인 Gauss 핵의 합성곱이다. $\varepsilon\to 0$ 에서 핵의 적분이 $1$ 로 유지되고 질량이 원점에 모이므로 합성곱이 $L^1$ 에서 $f$ 로 수렴한다.
+증명의 요지. 오른쪽 적분에 $e^{-\pi\varepsilon^2\xi^2}$ 를 곱해 자르면 이중적분이 절대수렴하므로 Fubini 정리로 순서를 바꿀 수 있고, 그 결과는 $f$ 와 폭 $\varepsilon$ 인 Gauss 핵의 [합성곱](convolution.md)이다. $\varepsilon\to 0$ 에서 핵의 적분이 $1$ 로 유지되고 질량이 원점에 모이므로 합성곱이 $L^1$ 에서 $f$ 로 수렴한다.
 
 ## Plancherel 정리
 

@@ -54,7 +54,7 @@ $$
 
 ## Dirichlet 핵
 
-부분합은 합성곱으로 쓰인다.
+부분합은 [합성곱](convolution.md)으로 쓰인다.
 
 $$
 S_N f(x) = \frac{1}{2\pi}\int_{-\pi}^{\pi} f(x-t)\thinspace D_N(t)\thinspace dt,\qquad D_N(t) = \sum_{n=-N}^{N} e^{int} = \frac{\sin\big((N+\tfrac12)t\big)}{\sin(t/2)} .

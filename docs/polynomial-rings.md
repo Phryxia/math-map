@@ -18,7 +18,7 @@ $$
 
 # 정의
 
-$R$ 를 항등원 있는 가환환이라 하자. $R$ 위 한 변수 다항식환은 유한개만 $0$ 이 아닌 계수열의 집합에 통상의 덧셈과 합성곱(convolution) 곱셈을 준 환이다.
+$R$ 를 항등원 있는 가환환이라 하자. $R$ 위 한 변수 다항식환은 유한개만 $0$ 이 아닌 계수열의 집합에 통상의 덧셈과 [합성곱](convolution.md) 곱셈을 준 환이다.
 
 $$
 R[x]=\Big\lbrace\textstyle\sum_{i=0}^{n}a_ix^i \ :\ n\ge 0,\ a_i\in R\Big\rbrace,\qquad

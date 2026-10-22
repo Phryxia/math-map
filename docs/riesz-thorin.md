@@ -57,7 +57,7 @@ $$
 # 활용
 
 - **Fourier 변환의 유계성.** Hausdorff–Young 부등식이 $p=1$ 과 $p=2$ 사이의 모든 지수에서 변환의 유계성을 준다. $p\gt 2$ 에서는 성립하지 않는다.
-- **합성곱 작용소.** $g\in L^r$ 을 고정한 합성곱 $f\mapsto f\ast g$ 가 두 끝 지수에서 유계이므로, 보간이 Young 부등식 $\Vert f\ast g\Vert\_{L^q}\le\Vert f\Vert\_{L^p}\Vert g\Vert\_{L^r}$ 의 일반 지수 꼴을 준다.
+- **합성곱 작용소.** $g\in L^r$ 을 고정한 [합성곱](convolution.md) $f\mapsto f\ast g$ 가 두 끝 지수에서 유계이므로, 보간이 Young 부등식 $\Vert f\ast g\Vert\_{L^q}\le\Vert f\Vert\_{L^p}\Vert g\Vert\_{L^r}$ 의 일반 지수 꼴을 준다.
 - **행렬의 노름.** 유한 차원에서 $\ell^p$ 노름 사이의 작용소 노름을 보간하면, 행 합과 열 합으로 받친 $\ell^1$ 과 $\ell^\infty$ 추정에서 $\ell^2$ 노름의 상계가 나온다. Schur 판정법이 이 보간이다.
 - **복소 보간 공간.** 두 [Banach 공간](banach-spaces.md) 쌍에 이 증명의 구조를 적용해 $\lbrack X_0,X_1\rbrack\_\theta$ 를 만드는 것이 복소 보간이며, [Sobolev 공간](sobolev-spaces.md)의 분수 차수를 이 방식으로도 정의한다.
 

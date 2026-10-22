@@ -10,7 +10,7 @@ resurgence 는 되살아남이다. 급수 하나의 계수를 멀리까지 따�
 
 # 직관
 
-발산급수 $\tilde f$ 를 Borel 변환하면 수렴 반경이 유한한 함수 $\hat f(\zeta)$ 가 되고, 이 함수는 $\zeta$ 평면에 특이점들을 가진다. 두 번째 안장점이 $\zeta = A$ 에, 세 번째가 $\zeta = 2A$ 에 있는 식이다. 함수의 정보가 이 특이점 목록과 각 특이점 주변의 국소 거동에 담기므로, $\zeta=\omega$ 에서의 특이성을 $x$ 공간의 급수로 옮겨 적는 연산 $\Delta_\omega$ 를 본다. Borel 평면에서 곱은 합성곱이다.
+발산급수 $\tilde f$ 를 Borel 변환하면 수렴 반경이 유한한 함수 $\hat f(\zeta)$ 가 되고, 이 함수는 $\zeta$ 평면에 특이점들을 가진다. 두 번째 안장점이 $\zeta = A$ 에, 세 번째가 $\zeta = 2A$ 에 있는 식이다. 함수의 정보가 이 특이점 목록과 각 특이점 주변의 국소 거동에 담기므로, $\zeta=\omega$ 에서의 특이성을 $x$ 공간의 급수로 옮겨 적는 연산 $\Delta_\omega$ 를 본다. Borel 평면에서 곱은 [합성곱](convolution.md)이다.
 
 $$
 \widehat{fg}(\zeta) = \int_0^{\zeta}\hat f(\eta)\thinspace\hat g(\zeta - \eta)\thinspace d\eta

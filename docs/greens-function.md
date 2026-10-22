@@ -4,7 +4,7 @@
 
 **Green 함수(Green's function)** 는 Laplace 작용소를 점질량으로 돌린 방정식 $-\Delta E=\delta_0$ 의 해다. 해를 [Schwartz 분포](schwartz-distributions.md)로 찾으면 미분가능성을 가정하지 않고 등식을 쓸 수 있다.
 
-전체 공간에서의 해를 기본해라 하고, 영역 $U$ 의 경계에서 $0$ 이 되도록 [조화함수](harmonic-functions.md)를 더해 고친 것을 $U$ 의 Green 함수라 한다. 두 경우 모두 합성곱이나 적분으로 $-\Delta u=f$ 의 해를 준다.
+전체 공간에서의 해를 기본해라 하고, 영역 $U$ 의 경계에서 $0$ 이 되도록 [조화함수](harmonic-functions.md)를 더해 고친 것을 $U$ 의 Green 함수라 한다. 두 경우 모두 [합성곱](convolution.md)이나 적분으로 $-\Delta u=f$ 의 해를 준다.
 
 # 직관
 

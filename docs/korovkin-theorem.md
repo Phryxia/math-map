@@ -77,7 +77,7 @@ $e_0$ 과 $e_1$ 만으로는 판정이 성립하지 않는다. $Lf(x)=f(0)(1-x)+
 # 활용
 
 - **Weierstrass 근사정리.** Stone–Weierstrass 정리의 Weierstrass 근사정리 절이 Bernstein 다항식으로 근사열을 직접 쓴다. 그 수렴을 세 함수의 계산으로 끌어내는 것이 이 정리다.
-- **Fejér 작용소.** [Fourier 급수](fourier-series.md)의 Cesàro 평균은 음이 아닌 핵과의 합성곱이므로 양작용소이고, 원 위의 검정함수 $1$ , $\cos t$ , $\sin t$ 에서의 수렴이 연속인 주기함수에서의 균등수렴을 준다.
+- **Fejér 작용소.** [Fourier 급수](fourier-series.md)의 Cesàro 평균은 음이 아닌 핵과의 [합성곱](convolution.md)이므로 양작용소이고, 원 위의 검정함수 $1$ , $\cos t$ , $\sin t$ 에서의 수렴이 연속인 주기함수에서의 균등수렴을 준다.
 - **구적공식의 수렴.** 구간을 나눠 값을 가중평균하는 구적공식은 가중값이 음이 아니면 양작용소다. 세 검정함수에서 정확하면 모든 연속함수에서 적분값으로 수렴한다.
 
 [^1]: P. P. Korovkin, *Linear Operators and Approximation Theory*, Hindustan Publishing, 1960, 1 장. 검정함수 셋과 그것을 콤팩트 거리공간으로 옮긴 판본이 함께 있다.

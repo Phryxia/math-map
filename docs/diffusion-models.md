@@ -26,7 +26,7 @@ $$
 x_t=x_0+\sqrt t\thinspace\epsilon,\qquad\epsilon\sim\mathcal N(0,I)
 $$
 
-$q_t$ 는 데이터 분포에 분산 $t$ 인 Gauss 를 합성곱한 것이고, $t$ 가 크면 $\mathcal N(0,tI)$ 와 구별되지 않는다.
+$q_t$ 는 데이터 분포에 분산 $t$ 인 Gauss 를 [합성곱](convolution.md)한 것이고, $t$ 가 크면 $\mathcal N(0,tI)$ 와 구별되지 않는다.
 
 실무에서는 분산 보존(variance preserving, VP) 형식을 쓴다.
 

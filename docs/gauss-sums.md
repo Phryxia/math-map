@@ -50,7 +50,7 @@ $$
 
 를 **Gauss 합**이라 한다. $\chi$ 는 법 $m$ 의 지표일 수 있고, 덧셈 지표 $\psi$ 를 명시하면 $g(\chi,\psi)$ 로 쓴다.
 
-**Jacobi 합**은 곱셈 지표 두 개의 합성곱이다.
+**Jacobi 합**은 곱셈 지표 두 개의 [합성곱](convolution.md)이다.
 
 $$
 J(\chi_1,\chi_2)=\sum_{n}\chi_1(n)\chi_2(1-n),\qquad

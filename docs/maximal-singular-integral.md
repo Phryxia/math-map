@@ -36,7 +36,7 @@ $$
 T^\ast f(x)=\sup\_{\varepsilon\gt 0}\vert T\_\varepsilon f(x)\vert
 $$
 
-$\varepsilon$ 마다 $T\_\varepsilon$ 은 절대적분 가능한 핵의 합성곱이므로 $f\in L^p$ 에서 각 점의 값이 정의된다. 상한을 취하므로 $T^\ast$ 는 선형이 아니고 $T^\ast(f+g)\le T^\ast f+T^\ast g$ 를 만족하는 준선형 작용소다.
+$\varepsilon$ 마다 $T\_\varepsilon$ 은 절대적분 가능한 핵의 [합성곱](convolution.md)이므로 $f\in L^p$ 에서 각 점의 값이 정의된다. 상한을 취하므로 $T^\ast$ 는 선형이 아니고 $T^\ast(f+g)\le T^\ast f+T^\ast g$ 를 만족하는 준선형 작용소다.
 
 ## 절단의 진동량
 
