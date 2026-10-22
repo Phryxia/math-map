@@ -95,7 +95,7 @@ Lovász 세타 함수는 $\alpha(G)\le\vartheta(G)\le\chi(\bar G)$ 라는 샌드
 
 ## 계층 확장
 
-Lasserre 와 Sum-of-Squares 계층은 $k$ 차 모멘트까지의 상관을 담아 $n^{O(k)}$ 시간에 풀리는 완화들의 열을 준다. $k$ 가 커지면 정확해지지만 비용이 커진다.
+[Lasserre 계층](lasserre-hierarchy.md)(Sum-of-Squares 계층)은 $k$ 차 모멘트까지의 상관을 담아 $n^{O(k)}$ 시간에 풀리는 완화들의 열을 준다. $k$ 가 커지면 정확해지지만 비용이 커진다.
 
 최대 절단에서는 계층을 올려도 $0.878$ 을 넘지 못한다. 유일게임 추측과 정합적인 결과다.
 

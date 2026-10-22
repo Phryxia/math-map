@@ -113,7 +113,7 @@ $n$ 이 커지면 $\vartheta(C_n)/\alpha(C_n)\to1$ 이다. 무작위 그래프�
 
 $\vartheta$ 는 $\alpha$ 를 $n^{1-\epsilon}$ 배 이내로 근사하지 못하며, 무작위 그래프가 그 간격을 실현한다.
 
-더 정밀한 완화는 SDP(semidefinite programming)에 유효부등식을 더한 $\vartheta'$ 이나 $\vartheta^+$ , 또는 Lasserre 계층이다. 계층을 $r$ 단계 올리면 $n^{O(r)}$ 크기의 SDP 가 되지만 독립집합 문제에서는 상수 단계로 근사비가 크게 개선되지 않는다는 하계가 있다. [유일게임 추측](unique-games.md)을 가정하면 $\vartheta$ 계열의 완화가 주는 근사비를 다항시간에 넘지 못한다.
+더 정밀한 완화는 SDP(semidefinite programming)에 유효부등식을 더한 $\vartheta'$ 이나 $\vartheta^+$ , 또는 [Lasserre 계층](lasserre-hierarchy.md)이다. 계층을 $r$ 단계 올리면 $n^{O(r)}$ 크기의 SDP 가 되지만 독립집합 문제에서는 상수 단계로 근사비가 크게 개선되지 않는다는 하계가 있다. [유일게임 추측](unique-games.md)을 가정하면 $\vartheta$ 계열의 완화가 주는 근사비를 다항시간에 넘지 못한다.
 
 # 활용
 

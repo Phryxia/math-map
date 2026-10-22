@@ -82,6 +82,7 @@ graph TD
   - [Lovász 세타 함수](lovasz-theta.md): 독립수와 채색수 사이에 끼는 반정부호 계획값
 - [안정집합 다면체](stable-set-polytope.md): 안정집합 지시벡터의 볼록 껍질, 홀수 사이클 부등식과 클릭 부등식, 완벽그래프 판정과 확장 복잡도
 - [Sherali–Adams 계층](sherali-adams-hierarchy.md): 제약에 변수의 곱을 곱해 선형화하는 완화의 열, 단계 n 에서 정수 껍질, Lovász–Schrijver 연산과 국소 분포
+- [Lasserre 계층](lasserre-hierarchy.md): 모멘트 행렬의 반정부호 조건을 더한 완화의 열, 세타 몸체와 제곱합 증명서, 단계의 하한
 
 ## 게임과 균형
 
