@@ -41,6 +41,7 @@ graph TD
 - [유클리드 알고리즘](euclidean-algorithm.md): 최대공약수와 Bézout 항등식
 - [소수](primes.md): 산술의 기본 정리
   - [Möbius 반전 공식](mobius-inversion.md): 약수 합성곱이 주는 산술함수의 환과 그 환에서의 역원
+  - [abc 추측](abc-conjecture.md): 서로소 $a+b=c$ 에서 $c$ 가 $\mathrm{rad}(abc)^{1+\varepsilon}$ 을 넘는 경우가 유한개라는 추측, 다항식의 Mason–Stothers 정리
 - [중국인의 나머지 정리](chinese-remainder-theorem.md): 서로소 법의 합동식 결합
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
 - [유한체](finite-fields.md): 소수 위수의 체와 그 확대
