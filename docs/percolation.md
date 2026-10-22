@@ -65,7 +65,7 @@ $\theta$ 가 $p$ 에 대해 단조증가이므로 $p\lt p_c$ 에서 $\theta(p)=0
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md). 완전그래프 위의 변 침투가 $G(n,p)$ 이고, 평균 차수 $1$ 에서 거대 성분이 나타나는 상전이가 나무 위 침투의 판정과 같은 계산이다.
 - 다공질 매질의 유체 흐름. 열린 변을 통로로 보면 $p_c$ 가 유체가 매질을 통과하기 시작하는 밀도다.
 - 전염병의 확산 한계. 접촉망의 변을 감염 전파 확률로 열면 대규모 유행 조건이 무한 클러스터의 존재와 같다.
-- 격자 스핀 모형의 상관. Fortuin–Kasteleyn 표현이 Ising 측도를 변 침투의 상관 판본으로 바꾸고, 스핀 상관이 두 정점이 같은 클러스터에 속할 확률이 된다.
+- 격자 스핀 모형의 상관. Fortuin–Kasteleyn 표현이 [Ising 모형](ising-model.md)의 측도를 변 침투의 상관 판본으로 바꾸고, 스핀 상관이 두 정점이 같은 클러스터에 속할 확률이 된다.
 
 [^1]: M. Aizenman, H. Kesten, C. Newman, "Uniqueness of the infinite cluster and continuity of connectivity functions", Comm. Math. Phys. 111 (1987), 505–531.
 [^2]: H. Kesten, "The critical probability of bond percolation on the square lattice equals 1/2", Comm. Math. Phys. 74 (1980), 41–59.
@@ -79,6 +79,6 @@ $\theta$ 가 $p$ 에 대해 단조증가이므로 $p\lt p_c$ 에서 $\theta(p)=0
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Ising 모형](ising-model.md)
 
 #probability #graph_theory #combinatorics

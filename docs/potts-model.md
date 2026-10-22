@@ -71,7 +71,7 @@ $T$ 는 $G$ 의 Tutte 다항식이다. 쌍곡선 $(x-1)(y-1)=q$ 가 $q$ 를 고�
 ## 특수한 값
 
 - $v=-1$ 에서 $Z\_G(q,-1)=(-1)^{\vert E\vert}P(q)$ 이고 $P$ 는 색다항식이다. 반강자성 영도 극한이 [그래프 색칠](graph-coloring.md)의 수 세기다.
-- $q=2$ 는 Ising 모형이다. 상태 둘을 $\pm 1$ 로 적으면 $\delta_{\sigma(u),\sigma(v)}=(1+\sigma(u)\sigma(v))/2$ 이므로 가중치가 $\exp(\beta\sigma(u)\sigma(v))$ 의 상수배가 된다.
+- $q=2$ 는 [Ising 모형](ising-model.md)이다. 상태 둘을 $\pm 1$ 로 적으면 $\delta_{\sigma(u),\sigma(v)}=(1+\sigma(u)\sigma(v))/2$ 이므로 가중치가 $\exp(\beta\sigma(u)\sigma(v))$ 의 상수배가 된다.
 - $q=1$ 에서 $Z\_G(1,v)=(1+v)^{\vert E\vert}$ 이고 무작위 클러스터 모형은 변을 독립으로 고르는 [무작위 그래프](erdos-renyi-graphs.md)다.
 
 ## 계산 복잡도
@@ -102,6 +102,6 @@ Tutte 다항식의 활용 절이 드는 통계물리 항목이 이 모형이다.
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Ising 모형](ising-model.md)
 
 #combinatorics #graph_theory #probability

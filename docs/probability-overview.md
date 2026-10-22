@@ -112,7 +112,8 @@ graph TD
 - [최적 정지](optimal-stopping.md): Snell 포락과 문턱 규칙, 비서 문제
   - [Gittins 지표](gittins-index.md): 팔마다 따로 계산한 수의 최댓값이 할인 밴딧의 최적 정책이다
 - [분지과정](branching-processes.md): 자손 생성함수의 합성으로 세대를 잇는 과정, 소멸 확률이 생성함수의 고정점
-  - [침투](percolation.md): 변을 확률 $p$ 로 열어 무한 클러스터가 생기는 임계값, 나무에서는 분지과정과 같은 판정
+- [침투](percolation.md): 변을 확률 $p$ 로 열어 무한 클러스터가 생기는 임계값, 나무에서는 분지과정과 같은 판정
+  - [Ising 모형](ising-model.md): 정점마다 부호를 배정하고 같은 부호의 이웃을 선호하는 분포, 2 차원 이상에서 낮은 온도의 자발 자화
 
 ## 연속시간 확률과정
 
@@ -127,7 +128,7 @@ graph TD
   - [Freidlin–Wentzell 이론](freidlin-wentzell.md): 작은 잡음 확률미분방정식의 대편차, 작용범함수와 탈출 시간
 - [Girsanov 정리](girsanov.md): 측도변환으로 표류항을 바꾼다
 - [Feynman–Kac 공식](feynman-kac.md): 편미분방정식의 해를 경로 적분의 기댓값으로
-- [Black–Scholes 방정식](black-scholes-equation.md): 복제로 얻는 가격 방정식, 추세의 소거와 [열방정식](heat-equation.md) 변환
+- [Black–Scholes 방정식](black-scholes-equation.md): 복제로 얻는 가격 방정식, 추세를 지우고 변수를 바꾸어 열전도 꼴의 편미분방정식으로 옮기는 풀이
   - [미국형 옵션](american-options.md): 행사 시각을 함께 고르는 가격 문제, 변분 부등식과 행사 경계
 
 ## 무작위 행렬과 점과정

@@ -111,7 +111,7 @@ $$
 - [Bayes 추론](bayesian-inference.md)의 사후분포 요약. 주변가능도의 적분이 닫힌 형태로 없을 때 사후평균과 신용구간을 궤적의 표본평균과 분위수로 낸다.
 - [Langevin 동역학](langevin-dynamics.md)의 이산화 보정. 한 걸음을 제안으로 쓰고 수락확률을 곱한 것이 Metropolis 보정 Langevin 알고리즘이고, 이산화에서 생기는 불변분포의 편향이 사라진다.
 - [Markov 연쇄의 혼합시간](mixing-time.md). 궤적 앞부분을 얼마나 버려야 표본이 $\pi$ 를 대표하는지가 혼합시간으로 정해진다.
-- 격자 모형의 표본추출. Ising 모형에서 한 자리의 부호만 바꾸는 제안을 쓰면 Gibbs 표본추출이 Glauber 동역학이 된다.
+- 격자 모형의 표본추출. [Ising 모형](ising-model.md)에서 한 자리의 부호만 바꾸는 제안을 쓰면 Gibbs 표본추출이 Glauber 동역학이 된다.
 
 [^1]: W. K. Hastings, "Monte Carlo sampling methods using Markov chains and their applications", Biometrika 57 (1970), 97–109. 일반 제안분포에 대한 수락확률과 세부균형 확인.
 [^2]: G. O. Roberts, A. Gelman, W. R. Gilks, "Weak convergence and optimal scaling of random walk Metropolis algorithms", Annals of Applied Probability 7 (1997), 110–120. 곱형 목표분포의 확산 극한에서 최적 수락률 0.234.
