@@ -125,6 +125,6 @@ $X$ 가 $\mathbb R^n$ 의 $\lambda$ 측도 $0$ 인 집합에 값을 가지면 $\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [정규분포](normal-distribution.md)
 
 #probability #measure_theory #statistics

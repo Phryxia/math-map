@@ -2,7 +2,7 @@
 
 # 개요
 
-**Gauss 과정(Gaussian process)** 은 유한 개의 시점을 잡을 때마다 다변량 정규분포가 되는 확률과정이다. 평균함수와 공분산핵 두 개가 과정 전체를 결정하므로, 무한차원 대상을 유한차원 선형대수로 다룰 수 있다.
+**Gauss 과정(Gaussian process)** 은 유한 개의 시점을 잡을 때마다 다변량 [정규분포](normal-distribution.md)가 되는 확률과정이다. 평균함수와 공분산핵 두 개가 과정 전체를 결정하므로, 무한차원 대상을 유한차원 선형대수로 다룰 수 있다.
 
 [Brown 운동](brownian-motion.md)이 공분산핵 $\min(s,t)$ 를 가진 Gauss 과정이고, 회귀에서 쓰는 사후평균과 사후분산도 같은 공식의 특수한 경우다.
 
@@ -75,6 +75,7 @@ Brown 운동은 $m=0,\ k(s,t)=\min(s,t)$ 인 Gauss 과정이다. Brown 다리, �
 
 - [특성함수](characteristic-functions.md)
 - [조건부 기댓값](conditional-expectation.md)
+- [정규분포](normal-distribution.md)
 
 ## 더 알아보기
 
