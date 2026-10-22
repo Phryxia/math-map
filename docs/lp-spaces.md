@@ -125,6 +125,7 @@ $1\le p\lt\infty$ 이고 $\mu$ 가 $\sigma$ 유한이면 사상 $g\mapsto\bigl(f
 - [Hölder 부등식](holder-inequality.md)
 - [Riesz–Thorin 정리](riesz-thorin.md)
 - [Marcinkiewicz 보간 정리](marcinkiewicz-interpolation.md)
+- [합성곱](convolution.md)
 - [Fourier 변환](fourier-transform.md)
 - [Sobolev 공간](sobolev-spaces.md)
 

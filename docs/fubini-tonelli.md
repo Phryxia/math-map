@@ -81,6 +81,6 @@ Lebesgue 측도를 완비화하면 $\mathcal L(\mathbb R)\otimes\mathcal L(\math
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [합성곱](convolution.md)
 
 #measure_theory #analysis #probability
