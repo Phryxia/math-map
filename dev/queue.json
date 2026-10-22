@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-22T05:04:21.055Z",
-  "nextSeq": 2356,
+  "savedAt": "2026-10-22T09:03:00.017Z",
+  "nextSeq": 2361,
   "items": [
     {
       "id": "9bab7237",
@@ -2452,36 +2452,12 @@
       "seq": 697
     },
     {
-      "id": "1fd9f4cd",
-      "title": "rademacher-theorem 의 후속 간선",
-      "priority": 10,
-      "note": "2026-09-20 회차에 새로 썼다(147줄, 부모 lipschitz-maps 와 bounded-variation, 해석학 개관 '극한과 연속' 갈래). 리프다. 후속 후보 넷. (1) 면적공식과 여면적공식, 그리고 rectifiable 집합을 다루는 기하측도론 문서. 활용 절이 이름만 쓰고 링크를 걸지 못했다. (2) Sobolev 공간. W^{1,infty} 와 Lipschitz 의 동일시가 활용 절 첫 항목인데 문서가 없다. (3) Clarke 준미분과 비평활 최적화. optimization 개관 아래 자리다. (4) Kirchheim 과 Cheeger 의 거리공간 판본. 넷 다 새 문서 후보이고 이 순서가 선수관계 순이다. 무한차원 실패 절은 Lindenstrauss-Preiss-Tiser 를 각주로 달았다",
-      "createdAt": "2026-09-20T04:45:49.814Z",
-      "seq": 701
-    },
-    {
       "id": "c162c9e2",
       "title": "nonstandard-analysis 의 후속 간선",
       "priority": 10,
       "note": "2026-09-20 회차에 새로 썼다(119줄, 부모 limits 와 lowenheim-skolem, foundations 개관 '논리' 갈래). 리프다. lowenheim-skolem 의 '비표준 해석학' 절 두 문장은 요약으로 줄이고 링크를 걸었다. limits 의 자식이 6 개가 되어 5절대로 '수렴을 다루는 틀' 과 '급수와 응용' 두 묶음으로 나눴다. 후속 후보 셋. (1) 초곱과 Los 정리. lowenheim-skolem:45 가 ultraproduct 구성을 언급만 하고 문서가 없다. 부모는 first-order-logic 과 boolean-algebras 이고 nonstandard-analysis 의 형제 자리다. (2) Loeb 측도. 활용 절에서 이름만 썼고 부모는 nonstandard-analysis 와 측도론 쪽이다. (3) 모형론(기본 부분구조, 범주성, Morley 정리, 안정성 이론). lowenheim-skolem 노트가 남긴 항목이고 이 문서보다 lowenheim-skolem 의 직계 자식 자리에 가깝다. 보수성 절은 Robinson 원저를, 교재 항목은 Keisler 를 각주로 달았다",
       "createdAt": "2026-09-20T04:51:15.726Z",
       "seq": 706
-    },
-    {
-      "id": "3de75166",
-      "title": "erdos-ko-rado 의 후속 간선",
-      "priority": 10,
-      "note": "2026-09-20 회차에 새로 썼다(부모 sperner-theorem, combinatorics-overview 극단 조합론 갈래, 94줄). Katona 의 순환 배열 이중 세기로 증명하고 등호 조건과 Hilton-Milner 정리를 성질 절에 두었다. graph-coloring 과 boolean-fourier 를 활용 절에서 본문 링크했다. 리프다. 후속 후보: Kneser 그래프의 색수(Lovasz 의 위상적 증명. algebraic-topology 쪽 Borsuk-Ulam 문서가 생기면 이을 것), Ahlswede-Khachatrian 의 완전 교차 정리(활용 절 둘째 항목), Frankl-Wilson 형 모듈로 제한 교차 정리와 Borsuk 추측 반례, 교차족의 확률 판본과 Friedgut 의 안정성(boolean-fourier 의 후속으로 두는 것이 나을 수 있다)",
-      "createdAt": "2026-09-20T16:45:34.804Z",
-      "seq": 752
-    },
-    {
-      "id": "6a5cf79c",
-      "title": "hamiltonian-cycles 의 후속 간선",
-      "priority": 10,
-      "note": "2026-09-20 회차에 새로 썼다(부모 graphs, graph-theory-overview 기본 구조 갈래, 104줄). Ore 정리의 세기 증명을 직관 절에서 먼저 보이고 성질 절에서 형식화했다. Dirac 은 따름정리로, Bondy-Chvatal 닫힘은 둘을 묶는 것으로 두었다. np-completeness 와 approximation-algorithms 를 본문 링크했다. graphs 의 더 알아보기에서는 '색칠, 매칭, 극단' 묶음 안 Ramsey 이론 앞에 넣었다(차수 조건이 극단 그래프 이론 쪽이다). 리프다. 후속 후보: Chvatal-Erdos 조건(연결도와 독립수의 비교. Menger 정리가 network-flow 안에 절로 있어 연결도 문서를 따로 만들지 먼저 판정할 것), 외판원 문제와 Christofides 절차를 approximation-algorithms 에서 뗄지, Gray 코드와 하이퍼큐브(combinatorics 쪽), Posa 의 회전 논법과 랜덤 그래프의 Hamilton 성(erdos-renyi 문서가 생기면 이을 것)",
-      "createdAt": "2026-09-20T16:48:11.056Z",
-      "seq": 753
     },
     {
       "id": "b3033078",
@@ -3244,60 +3220,28 @@
       "seq": 2303
     },
     {
-      "id": "f532654e",
-      "title": "Sternberg 정리",
-      "priority": 10,
-      "note": "#analysis. 비공명 조건에서 매끄러운 선형화. hartman-grobman 의 '위상 공액의 한계' 절이 이름만 쓴다. 부모 hartman-grobman",
-      "createdAt": "2026-10-21T17:00:29.048Z",
-      "seq": 2332
-    },
-    {
-      "id": "d7f833c6",
-      "title": "Cauchy 적분 정리",
-      "priority": 10,
-      "note": "#complex_analysis. holomorphic-functions 의 절과 greens-theorem 활용이 이름만 쓴다. 독립 문서로 둘지 holomorphic-functions 절로 둘지 판정 필요",
-      "createdAt": "2026-10-21T17:00:29.549Z",
-      "seq": 2336
-    },
-    {
-      "id": "d995af57",
-      "title": "Lovász–Schrijver 와 Sherali–Adams 올림 계층",
-      "priority": 10,
-      "note": "최적화. 0-1 정수계획의 완화를 단계적으로 조이는 두 계층과 Chvátal 계수와의 비교. 부모 후보 stable-set-polytope 와 chvatal-rank. 옛 큐 c6758923 의 (3). 제목은 4절 규칙대로 하나로 좁힐 것(lift-and-project).",
-      "createdAt": "2026-10-21T20:59:23.960Z",
-      "seq": 2343
-    },
-    {
-      "id": "9925cf4d",
-      "title": "Slutsky 정리와 연속사상 정리를 별도 문서로 뗄지 판정",
-      "priority": 10,
-      "note": "convergence-of-random-variables 의 마지막 절이 둘을 다룬다. central-limit-theorem, maximum-likelihood 가 Slutsky 를 이름만 쓴다. 절이 길어지면 slutsky-theorem 으로 떼고 부모는 convergence-of-random-variables.",
-      "createdAt": "2026-10-22T01:09:58.104Z",
-      "seq": 2349
-    },
-    {
-      "id": "7287f027",
-      "title": "Faltings 높이",
-      "priority": 10,
-      "note": "number_theory. arakelov-geometry(이번 회차 신설)가 활용 절에서 Faltings 높이를 산술 차수로 설명하고, faltings-theorem 45줄 근처가 정의를 적는다. 별도 문서로 뗄지 8절로 먼저 판정. 떼면 부모 arakelov-geometry 와 abelian-varieties. 이번 회차에 arakelov-geometry 를 faltings-theorem 의 부모로 두지 않은 이유는 faltings-theorem 의 부모가 이미 셋이고 canonical-height 가 조상 중복이 되기 때문이다.",
-      "createdAt": "2026-10-22T04:58:57.266Z",
-      "seq": 2351
-    },
-    {
-      "id": "6917b197",
-      "title": "Abel 적분과 약한 Hilbert 16 번째 문제",
-      "priority": 10,
-      "note": "analysis. hilbert-sixteenth-problem(이번 회차 신설) 활용 셋째 항목이 Varchenko-Khovanskii 정리를 이름만 쓴다. 부모 hilbert-sixteenth-problem 하나. Poincare-Pontryagin 함수, Melnikov 함수와의 관계.",
-      "createdAt": "2026-10-22T04:58:57.387Z",
-      "seq": 2352
-    },
-    {
       "id": "450afa7c",
       "title": "laplace-beltrami-operator 와 algebraic-stacks 의 후속 간선",
       "priority": 10,
       "note": "이번 회차 신설 문서 둘이 리프다. laplace-beltrami-operator 후보: 열핵과 열핵 전개(문서 없음), Weyl 법칙을 별도 문서로 뗄지(laplace-operator 와 laplace-beltrami-operator 의 성질 절이 진술하고 selberg-trace-formula, maass-forms 가 이름을 쓴다), yamabe-problem 과 mean-curvature-flow 를 자식으로 둘지(둘 다 정의에 Laplace-Beltrami 를 쓴다). algebraic-stacks 후보: moduli-of-curves 와 gromov-witten-invariants 를 자식으로 둘지(부모 수 확인), 대수 공간(문서 없음).",
       "createdAt": "2026-10-22T04:58:57.522Z",
       "seq": 2353
+    },
+    {
+      "id": "52f83870",
+      "title": "erdos-ko-rado 의 남은 후속 간선",
+      "priority": 10,
+      "note": "kneser-graphs 로 리프는 닫혔다. 남은 후보: Ahlswede-Khachatrian 완전 교차 정리, Frankl-Wilson 모듈로 제한 교차 정리와 Borsuk 추측 반례, Hilton-Milner 를 독립 문서로 뗄지. kneser-graphs 의 후속 후보: Schrijver 그래프(현재 성질 절), 위상적 하한의 일반화(근방 복합체, Hom 복합체)",
+      "createdAt": "2026-10-22T08:56:37.907Z",
+      "seq": 2359
+    },
+    {
+      "id": "442846a0",
+      "title": "hamiltonian-cycles 의 남은 후속 간선",
+      "priority": 10,
+      "note": "chvatal-erdos-theorem 으로 리프는 닫혔다. 남은 후보: 그래프 강인성(toughness)과 Chvátal 강인성 추측(chvatal-erdos-theorem 활용 절이 정의만 적었다), 외판원 문제(Christofides 근사, approximation-algorithms 아래), 연결도와 Menger 정리를 network-flow 의 절에서 별도 문서로 뗄지",
+      "createdAt": "2026-10-22T08:58:46.720Z",
+      "seq": 2360
     },
     {
       "id": "dfb3e493",
@@ -3802,14 +3746,6 @@
       "note": "mass-formula 아래. p 이웃 그래프, 스피너 류가 연결성분, Hecke 작용소로서의 이웃 행렬, 사원수 쪽 Brandt 행렬과 같은 대상",
       "createdAt": "2026-09-15T08:40:49.702Z",
       "seq": 259
-    },
-    {
-      "id": "2e8d1aac",
-      "title": "Tamagawa 수와 Weil 추측",
-      "priority": 4,
-      "note": "adeles 아래. 아델군의 표준 측도, tau(SO_n)=2 와 질량 공식의 동치, 단순연결 반단순군에서 tau=1, Kottwitz 의 증명",
-      "createdAt": "2026-09-15T08:40:49.824Z",
-      "seq": 260
     },
     {
       "id": "5697b765",
