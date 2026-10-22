@@ -60,8 +60,8 @@ Gromov 의 무작위 군에서 계수가 있는 Baum–Connes 추측은 성립�
 # 활용
 
 - Kadison–Kaplansky 추측(Kadison–Kaplansky conjecture). 꼬임원이 없는 $G$ 에서 $\mu$ 가 전사이면 $C^\ast_r(G)$ 에 $0$ 과 $1$ 밖의 사영이 없다. 사영 $p$ 의 류가 조립 사상의 상에 있으면 Atiyah 의 $L^2$ [지표 정리](index-theorem.md)($L^2$ index theorem)로 표준 대각합 $\tau(p)$ 가 정수다. $0\le\tau(p)\le 1$ 이고 $\tau$ 가 충실하므로 $p$ 는 $0$ 이나 $1$ 이다.
-- Novikov 추측(Novikov conjecture). $\mu$ 가 유리수 계수에서 단사이면 $\pi_1(M)=G$ 인 닫힌 다양체 $M$ 의 고차 부호수가 호모토피 불변이다.
-- 교차곱의 K 군 계산. 계수가 있는 판이 성립하는 군에서는 [교차곱](crossed-products.md) $A\rtimes_r G$ 의 K 군을 동변 K 호몰로지로 계산한다. $G=\mathbb Z$ 일 때 이 계산이 Pimsner–Voiculescu 완전열과 같다.
+- [Novikov 추측](novikov-conjecture.md). $\mu$ 가 유리수 계수에서 단사이면 $\pi_1(M)=G$ 인 닫힌 다양체 $M$ 의 고차 부호수가 호모토피 불변이다.
+- 교차곱의 K 군 계산. 계수가 있는 판이 성립하는 군에서는 교차곱 $A\rtimes_r G$ 의 K 군을 동변 K 호몰로지로 계산한다. $G=\mathbb Z$ 일 때 이 계산이 Pimsner–Voiculescu 완전열과 같다.
 
 [^1]: A. Valette, *Introduction to the Baum–Connes Conjecture*, Lectures in Mathematics ETH Zürich, Birkhäuser (2002). 추측의 원래 진술은 P. Baum, A. Connes, N. Higson, Classifying space for proper actions and K-theory of group C\*-algebras, *Contemp. Math.* 167 (1994), 241–291.
 [^2]: N. Higson, G. Kasparov, E-theory and KK-theory for groups which act properly and isometrically on Hilbert space, *Invent. Math.* 144 (2001), 23–74.
@@ -77,6 +77,6 @@ Gromov 의 무작위 군에서 계수가 있는 Baum–Connes 추측은 성립�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Novikov 추측](novikov-conjecture.md)
 
 #functional_analysis #group_theory #topology

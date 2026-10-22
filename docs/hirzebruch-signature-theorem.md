@@ -72,6 +72,6 @@ $L_k$ 의 계수는 분수이지만 $\langle L_k,\lbrack M\rbrack\rangle$ 은 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Novikov 추측](novikov-conjecture.md)
 
 #algebraic_topology #topology #differential_geometry
