@@ -90,5 +90,6 @@ $\mathbb Q(\sqrt d)$ 는 판별식을 $D$ 라 할 때 $\mathbb Q(\zeta\_{\vert D
 
 - [유체론](class-field-theory.md)
 - [Fermat 마지막 정리](fermats-last-theorem.md)
+- [AKS 소수 판정법](aks-primality-test.md)
 
 #number_theory #field_theory #algebra

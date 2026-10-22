@@ -162,5 +162,6 @@ $$
 
 - [RSA 암호](rsa-cryptosystem.md)
 - [이차 상호법칙](quadratic-reciprocity.md)
+- [AKS 소수 판정법](aks-primality-test.md)
 
 #number_theory #cryptography #group_theory #theorem
