@@ -112,6 +112,7 @@ graph TD
   - [양의 질량 정리](positive-mass-theorem.md): 스칼라 곡률이 음이 아닌 점근적으로 평탄한 3 다양체의 무한원 질량은 음이 아니다, 극소곡면 증명과 스피너 증명
   - [Yamabe 문제](yamabe-problem.md): 등각류 안에서 스칼라 곡률이 상수인 계량의 존재, 임계 Sobolev 지수와 Aubin 판정
 - [Laplace–Beltrami 연산자](laplace-beltrami-operator.md): 계량으로 정의한 기울기의 발산, 콤팩트 다양체의 스펙트럼과 Lichnerowicz·Cheeger 하한, 스펙트럼이 정하는 것
+  - [양자 혼돈](quantum-chaos.md): 측지선 흐름이 혼돈적일 때 Laplace 고윳값의 간격 통계와 고유함수의 분포, Shnirelman 정리
   - [제타 정규화 행렬식](zeta-regularized-determinant.md): 고윳값 zeta 함수의 원점 도함수로 정한 Laplace 작용소의 행렬식, 열핵 전개와 해석적 비틀림
 - [Killing 벡터장](killing-vector-fields.md): 계량을 보존하는 흐름, 측지선을 따르는 보존량과 차원 상한
   - [등거리변환군](isometry-groups.md): 계량을 보존하는 미분동형의 Lie 군, 한 점의 값과 미분으로 정해지는 원소와 차원 상한

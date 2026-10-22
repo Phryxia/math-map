@@ -85,5 +85,6 @@ Weyl 법칙은 다양체에서도 성립하여, 고윳값이 $\lambda$ 이하인
 ## 더 알아보기
 
 - [제타 정규화 행렬식](zeta-regularized-determinant.md)
+- [양자 혼돈](quantum-chaos.md)
 
 #differential_geometry #analysis #functional_analysis

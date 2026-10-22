@@ -132,7 +132,7 @@ Maass 형식은 그 자체로 목적이면서 동시에 도구다. 산술 함수
 
 ## 산술 양자 혼돈
 
-$\Gamma\backslash\mathbb H$ 는 음곡률 곡면이므로 측지선 흐름이 혼돈적이다. 그 위의 Laplace 고유함수가 $\lambda\to\infty$ 에서 어떻게 분포하는지가 양자 혼돈의 표준 물음이고, Maass 형식이 그 물음의 산술적 사례다.
+$\Gamma\backslash\mathbb H$ 는 음곡률 곡면이므로 측지선 흐름이 혼돈적이다. 그 위의 Laplace 고유함수가 $\lambda\to\infty$ 에서 어떻게 분포하는지가 [양자 혼돈](quantum-chaos.md)의 표준 물음이고, Maass 형식이 그 물음의 산술적 사례다.
 
 > **양자 유일 에르고딕성 (Lindenstrauss 2006, Soundararajan–Holowinsky 2010).** $\mathrm{SL}\_2(\mathbb Z)$ 의 Hecke–Maass 형식에 대해 $|u_j(z)|^2d\mu$ 가 $\lambda_j\to\infty$ 에서 균등측도로 약수렴한다.
 
