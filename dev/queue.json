@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-22T01:11:42.034Z",
-  "nextSeq": 2350,
+  "savedAt": "2026-10-22T05:04:21.055Z",
+  "nextSeq": 2356,
   "items": [
     {
       "id": "9bab7237",
@@ -1266,6 +1266,14 @@
       "note": "quantum-circuits 와 shor-algorithm 두 문서가 생겼다. 지금은 복잡도와 근사 한계 갈래의 P 대 NP 곁가지로 두었다. 11e247cf note 가 문서 둘 이상이면 갈래를 판단하라고 했다. 갈래를 세우면 먼저 읽을 것에 텐서곱(선형대수 개관)과 이산 Fourier 변환(해석 개관)을 적는다.",
       "createdAt": "2026-10-21T05:04:33.056Z",
       "seq": 2317
+    },
+    {
+      "id": "c0e381c2",
+      "title": "아핀 Grassmann 다양체를 별도 문서로 만들지 않은 판정",
+      "priority": 20,
+      "note": "옛 큐 ebb32287 의 판정. geometric-satake 의 정의 절 '## 아핀 Grassmann 다양체'(함자 정의, ind-사영 ind-스킴, GL_n 격자 묘사)와 '## 궤도와 IC 층'(Cartan 분해, 궤도 차원, 폐포 순서), mv-cycles 의 정의 절과 '## 아핀 Grassmann 다양체의 특이점' 이 이 대상을 이미 다룬다. 별도 문서를 만들면 geometric-satake 의 두 절과 통째로 겹친다. 다룰 내용이 늘어 geometric-satake 가 커지면 그때 8절 분할로 뗀다.",
+      "createdAt": "2026-10-22T04:58:57.776Z",
+      "seq": 2354
     },
     {
       "id": "410fd79d",
@@ -3092,14 +3100,6 @@
       "seq": 2172
     },
     {
-      "id": "ebb32287",
-      "title": "아핀 Grassmann 다양체",
-      "priority": 10,
-      "note": "분야는 대수기하와 표현론이고 부모 후보는 [Grassmann 다양체](grassmannian.md)와 [loop 군 또는 대수군] 쪽이다. 아핀 Grassmann 다양체(affine Grassmannian) $\\mathrm{Gr}_G=G(F)/G(\\mathcal O)$ 는 유한차원 Grassmann 다양체와 이름만 닮은 별개 대상이고, satake-isomorphism 234 줄과 geometric-satake 가 이 대상 위의 퍼버스 층 범주로 기하학적 Satake 대응을 진술한다. 64차에 satake-isomorphism 의 미링크 검사가 'Grassmann 다양체' 를 보고했을 때 두 개념이 다름을 확인하고 원어만 병기했다(커밋 4fc0f9e). 문서를 만들면 satake-isomorphism 과 geometric-satake 의 그 자리를 링크한다.",
-      "createdAt": "2026-10-18T20:54:53.973Z",
-      "seq": 2214
-    },
-    {
       "id": "6bffdd66",
       "title": "bolzano-weierstrass 의 후속 간선",
       "priority": 10,
@@ -3154,14 +3154,6 @@
       "note": "73차(2026-10-19)에 herbrand-theorem(Herbrand 정리, 80줄)을 썼다. 큐 e88d9443 의 후보 (1) 처리 결과다. 부모는 prenex-normal-form 하나이고 리프다. resolution 의 반박 완전성 절에서 본문 링크로 잇고 간선은 긋지 않았다. resolution 의 부모를 herbrand-theorem 으로 바꾸면 prenex-normal-form 이 조상으로 중복되고 개관 갈래와 지도도 함께 고쳐야 하므로 그대로 두었다. 문서 구성: 개요, 직관(정의역에 제한이 없어 모든 구조를 볼 수 없는 자리, forall x P(x) 와 not P(c) 를 상수 대입으로 끝내는 계산, 정의역을 항으로 두는 수), 정의(Herbrand 전체와 기저, Herbrand 해석, 기본 사례), 성질(동치 셋과 증명 요지, 콤팩트성을 쓴 반박 판본, 반쯤 결정 가능성, Skolem 표준형과의 결합), 활용 넷. 후속 후보 셋. (1) 단일화(unification). resolution 의 정의 절 한 소절이고 Robinson 알고리즘, 가장 일반적인 단일화자의 유일성, 선형 시간 판본을 쓸 자리가 있다. 부모는 resolution 이다. (2) 명제 논리의 콤팩트성 정리. 이 문서의 반박 판본이 쓰고 저장소에 제목이 없다. first-order-logic 과 ultraproducts 가 1차 논리 판본을 다루므로 중복을 먼저 본다. (3) 완전성 정리의 Henkin 구성. 활용 절 셋째 항목이 이름 없이 서술만 하고 first-order-logic 이 건전성과 완전성을 한 절로 다룬다.",
       "createdAt": "2026-10-19T20:59:27.463Z",
       "seq": 2258
-    },
-    {
-      "id": "bf3200f1",
-      "title": "Arakelov 기하",
-      "priority": 10,
-      "note": "정수론. 산술 곡면에 무한 자리의 계량을 더해 교차이론을 세우는 틀. Arakelov 차수가 faltings-theorem 의 Faltings 높이 정의에 쓰이는데 저장소에 문서가 없다. 부모 후보는 algebraic-number-fields 와 canonical-height.",
-      "createdAt": "2026-10-20T00:45:12.336Z",
-      "seq": 2261
     },
     {
       "id": "e640013d",
@@ -3252,28 +3244,12 @@
       "seq": 2303
     },
     {
-      "id": "6166cb94",
-      "title": "Baum–Connes 추측",
-      "priority": 10,
-      "note": "함수해석(#functional_analysis #group_theory #topology). 부모 후보 crossed-products, operator-k-theory(둘 다 82차에 생겼다). 축소 군 C 스타 대수의 K 이론과 분류공간의 K 호몰로지를 잇는 조립 사상의 정의, 추측의 진술, 증명된 경우는 출처가 있는 것만 적는다. 문서가 생기면 crossed-products 활용 절에서 링크한다.",
-      "createdAt": "2026-10-21T09:01:43.049Z",
-      "seq": 2320
-    },
-    {
       "id": "f532654e",
       "title": "Sternberg 정리",
       "priority": 10,
       "note": "#analysis. 비공명 조건에서 매끄러운 선형화. hartman-grobman 의 '위상 공액의 한계' 절이 이름만 쓴다. 부모 hartman-grobman",
       "createdAt": "2026-10-21T17:00:29.048Z",
       "seq": 2332
-    },
-    {
-      "id": "3fc58743",
-      "title": "Hilbert 의 16 번째 문제",
-      "priority": 10,
-      "note": "#analysis #algebraic_geometry. 평면 다항식 벡터장의 극한 순환 개수. lienard-theorem 이 이름만 쓴다. 부모 lienard-theorem. 열린 문제 서술은 Ilyashenko 2002 같은 출처의 각주가 필요하다",
-      "createdAt": "2026-10-21T17:00:29.180Z",
-      "seq": 2333
     },
     {
       "id": "d7f833c6",
@@ -3284,14 +3260,6 @@
       "seq": 2336
     },
     {
-      "id": "530e3bb3",
-      "title": "대수적 스택",
-      "priority": 10,
-      "note": "대수기하. 표현 가능하지 않은 모듈라이 함자를 군준층으로 넓힌 대상. 부모 후보 representable-functors 와 moduli-space. representable-functors 활용 절이 대수기하 쪽을 비워 두었다(옛 큐 bc4d00eb 의 (3)).",
-      "createdAt": "2026-10-21T20:57:18.766Z",
-      "seq": 2342
-    },
-    {
       "id": "d995af57",
       "title": "Lovász–Schrijver 와 Sherali–Adams 올림 계층",
       "priority": 10,
@@ -3300,20 +3268,36 @@
       "seq": 2343
     },
     {
-      "id": "493b5eac",
-      "title": "Laplace 연산자",
-      "priority": 10,
-      "note": "analysis. 부모 후보 derivative 와 hessian(대각합). heat-equation, wave-equation, harmonic-functions, graph-laplacian 이 이름만 쓴다. 회전 불변성, 극좌표 표현, Laplace–Beltrami 연산자, 고윳값과 Weyl 법칙.",
-      "createdAt": "2026-10-22T01:09:57.822Z",
-      "seq": 2347
-    },
-    {
       "id": "9925cf4d",
       "title": "Slutsky 정리와 연속사상 정리를 별도 문서로 뗄지 판정",
       "priority": 10,
       "note": "convergence-of-random-variables 의 마지막 절이 둘을 다룬다. central-limit-theorem, maximum-likelihood 가 Slutsky 를 이름만 쓴다. 절이 길어지면 slutsky-theorem 으로 떼고 부모는 convergence-of-random-variables.",
       "createdAt": "2026-10-22T01:09:58.104Z",
       "seq": 2349
+    },
+    {
+      "id": "7287f027",
+      "title": "Faltings 높이",
+      "priority": 10,
+      "note": "number_theory. arakelov-geometry(이번 회차 신설)가 활용 절에서 Faltings 높이를 산술 차수로 설명하고, faltings-theorem 45줄 근처가 정의를 적는다. 별도 문서로 뗄지 8절로 먼저 판정. 떼면 부모 arakelov-geometry 와 abelian-varieties. 이번 회차에 arakelov-geometry 를 faltings-theorem 의 부모로 두지 않은 이유는 faltings-theorem 의 부모가 이미 셋이고 canonical-height 가 조상 중복이 되기 때문이다.",
+      "createdAt": "2026-10-22T04:58:57.266Z",
+      "seq": 2351
+    },
+    {
+      "id": "6917b197",
+      "title": "Abel 적분과 약한 Hilbert 16 번째 문제",
+      "priority": 10,
+      "note": "analysis. hilbert-sixteenth-problem(이번 회차 신설) 활용 셋째 항목이 Varchenko-Khovanskii 정리를 이름만 쓴다. 부모 hilbert-sixteenth-problem 하나. Poincare-Pontryagin 함수, Melnikov 함수와의 관계.",
+      "createdAt": "2026-10-22T04:58:57.387Z",
+      "seq": 2352
+    },
+    {
+      "id": "450afa7c",
+      "title": "laplace-beltrami-operator 와 algebraic-stacks 의 후속 간선",
+      "priority": 10,
+      "note": "이번 회차 신설 문서 둘이 리프다. laplace-beltrami-operator 후보: 열핵과 열핵 전개(문서 없음), Weyl 법칙을 별도 문서로 뗄지(laplace-operator 와 laplace-beltrami-operator 의 성질 절이 진술하고 selberg-trace-formula, maass-forms 가 이름을 쓴다), yamabe-problem 과 mean-curvature-flow 를 자식으로 둘지(둘 다 정의에 Laplace-Beltrami 를 쓴다). algebraic-stacks 후보: moduli-of-curves 와 gromov-witten-invariants 를 자식으로 둘지(부모 수 확인), 대수 공간(문서 없음).",
+      "createdAt": "2026-10-22T04:58:57.522Z",
+      "seq": 2353
     },
     {
       "id": "dfb3e493",
