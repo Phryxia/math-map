@@ -72,6 +72,7 @@ graph TD
   - [Skorokhod 표현정리](skorokhod-representation.md): 분포 수렴을 거의 확실한 수렴으로 실현하는 결합
 - [특성함수](characteristic-functions.md): Fourier 변환으로 분포 수렴을 판정
 - [Borel–Cantelli 보조정리](borel-cantelli.md): 사건열의 상극한을 확률의 합으로 판정하는 두 보조정리
+  - [확률변수의 수렴](convergence-of-random-variables.md): 거의 확실한 수렴, 확률수렴, Lᵖ 수렴, 분포수렴의 함의와 반례, 부분열 정리, Slutsky 정리
 - [큰 수의 법칙](law-of-large-numbers.md): 표본평균이 기댓값으로
 - [중심극한정리](central-limit-theorem.md): 요동의 정규분포 근사
 

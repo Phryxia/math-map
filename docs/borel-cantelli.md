@@ -80,6 +80,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [확률변수의 수렴](convergence-of-random-variables.md)
 
 #probability #measure_theory #analysis

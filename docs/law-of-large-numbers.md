@@ -24,7 +24,7 @@ $$
 
 ## 수렴 개념
 
-확률변수열 $Y_n$ 과 확률변수 $Y$ 에 대해 세 가지 수렴을 구별한다.
+확률변수열 $Y_n$ 과 확률변수 $Y$ 에 대해 세 가지 수렴을 구별한다([확률변수의 수렴](convergence-of-random-variables.md)).
 
 확률수렴(convergence in probability):
 
