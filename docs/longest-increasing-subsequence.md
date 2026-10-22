@@ -95,6 +95,6 @@ $\mathrm{TW}\_2$ 는 Gauss 유니터리 앙상블(Gaussian unitary ensemble)의 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [KPZ 보편성류](kpz-universality.md)
 
 #combinatorics #algorithms #probability

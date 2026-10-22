@@ -139,7 +139,8 @@ graph TD
   - [Marchenko–Pastur 법칙](marchenko-pastur.md): 표본공분산행렬의 스펙트럼
   - [자유확률](free-probability.md): 교환하지 않는 변수의 자유독립, R 변환과 자유 합성곱
 - [결정점과정](determinantal-point-process.md): 상관함수가 행렬식으로 주어지는 점과정
-  - [Tracy–Widom 분포](tracy-widom.md): 최대 고윳값의 요동
+- [Tracy–Widom 분포](tracy-widom.md): 최대 고윳값의 요동
+  - [KPZ 보편성류](kpz-universality.md): 높이 요동이 시간의 1/3 제곱 규모인 무작위 성장 모형의 부류, 마지막 통과 침투와 배제 과정
 
 # 연관 문서
 
