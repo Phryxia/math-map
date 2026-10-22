@@ -126,6 +126,6 @@ $A=C(S^1)$ 이고 $\alpha$ 가 각 $2\pi\theta$ 회전이면 교차곱은 무리
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Baum–Connes 추측](baum-connes-conjecture.md)
 
 #functional_analysis #topology #algebraic_topology #algebra
