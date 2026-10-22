@@ -124,5 +124,6 @@ $$
 ## 더 알아보기
 
 - [제타 정규화 행렬식](zeta-regularized-determinant.md)
+- [등스펙트럼 다양체](isospectral-manifolds.md)
 
 #differential_geometry #analysis #probability
