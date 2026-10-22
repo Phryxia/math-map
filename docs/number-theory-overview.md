@@ -204,6 +204,7 @@ graph TD
 
 - [Langlands 강령](langlands-program.md): 유체론의 상호법칙을 비가환 군의 자기동형 표현으로 확장하려는 프로그램
   - [Jacquet–Langlands 대응](jacquet-langlands.md): 사원수 대수의 표현과 두 차원 일반선형군의 첨점 표현을 잇는 대응
+  - [Langlands–Tunnell 정리](langlands-tunnell.md): 사영 상이 가해군인 2 차원 홀수 Artin 표현이 무게 1 새형식에서 온다는 정리, 순환 확대의 기저변환으로 증명
 - [Godement–Jacquet 적분](godement-jacquet.md): 행렬대수 위의 적분으로 표준 $L$ 함수의 함수방정식을 얻는 방법
 - [Satake 동형](satake-isomorphism.md): 비분기 Hecke 대수와 쌍대군의 표현환이 같다는 동형
   - [Rankin–Selberg 적분](rankin-selberg.md): 두 형식의 곱에 Eisenstein 급수를 짝지어 꼰 $L$ 함수를 얻는 적분

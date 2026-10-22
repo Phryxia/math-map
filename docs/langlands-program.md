@@ -166,5 +166,6 @@ $\mathrm{Sym}^k$ 함자성으로 $\mathrm{Sym}^k\pi_E$ 가 자기동형임을 �
 - [Godement–Jacquet 적분](godement-jacquet.md)
 - [Vogan L 꾸러미](vogan-packets.md)
 - [Jacquet–Langlands 대응](jacquet-langlands.md)
+- [Langlands–Tunnell 정리](langlands-tunnell.md)
 
 #number_theory #group_theory #field_theory

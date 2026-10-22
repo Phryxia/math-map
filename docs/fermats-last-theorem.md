@@ -76,7 +76,7 @@ Frey 곡선에서 홀수 소수 $\ell\mid abc$ 의 최소 판별식 지수는 $2
 
 **정리(Wiles, Taylor–Wiles, 1995).** $\mathbb Q$ 위의 반안정 타원곡선은 모듈러다.[^2]
 
-증명은 [Galois 표현의 변형환](deformation-rings.md) $R$ 과 [Hecke 작용소](hecke-operators.md)가 생성하는 Hecke 대수 $\mathbb T$ 가 동형이라는 $R=\mathbb T$ 정리다. 출발점은 $\bar\rho_{E,3}$ 다. $\mathrm{GL}\_2(\mathbb F_3)$ 이 [가해군](solvable-groups.md)이므로 Langlands–Tunnell 정리(Langlands–Tunnell theorem)로 $\bar\rho_{E,3}$ 이 모듈러이고, $R=\mathbb T$ 가 이것을 $E$ 의 $3$ 진 표현 전체로 올린다. $\bar\rho_{E,3}$ 이 가약인 곡선은 $\bar\rho_{E,5}$ 에서 출발한다. Breuil, Conrad, Diamond, Taylor 가 2001 년에 반안정 조건을 뗐다.
+증명은 [Galois 표현의 변형환](deformation-rings.md) $R$ 과 [Hecke 작용소](hecke-operators.md)가 생성하는 Hecke 대수 $\mathbb T$ 가 동형이라는 $R=\mathbb T$ 정리다. 출발점은 $\bar\rho_{E,3}$ 다. $\mathrm{GL}\_2(\mathbb F_3)$ 이 [가해군](solvable-groups.md)이므로 [Langlands–Tunnell 정리](langlands-tunnell.md)로 $\bar\rho_{E,3}$ 이 모듈러이고, $R=\mathbb T$ 가 이것을 $E$ 의 $3$ 진 표현 전체로 올린다. $\bar\rho_{E,3}$ 이 가약인 곡선은 $\bar\rho_{E,5}$ 에서 출발한다. Breuil, Conrad, Diamond, Taylor 가 2001 년에 반안정 조건을 뗐다.
 
 ## 모순
 

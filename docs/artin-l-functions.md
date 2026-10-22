@@ -86,6 +86,6 @@ Artin 추측은 자명하지 않은 기약 표현 $\rho$ 의 $L(s,\rho)$ 가 정
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Langlands–Tunnell 정리](langlands-tunnell.md)
 
 #number_theory #group_theory #complex_analysis
