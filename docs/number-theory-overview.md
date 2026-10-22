@@ -181,6 +181,7 @@ graph TD
   - [Faltings 정리](faltings-theorem.md): 종수 2 이상 곡선의 유리점이 유한 개라는 정리, Shafarevich 추측과 Parshin 트릭을 거치는 증명
   - [Mordell–Lang 추측](mordell-lang.md): 유한생성 부분군과 부분다양체의 교집합이 아벨 부분다양체의 잉여류 유한 개로 설명된다는 진술, Mordell 추측을 포함한다
   - [Siegel 의 정수점 정리](siegel-integral-points.md): 종수와 무한원점의 개수로 가른 정수점의 유한성, 유효 상한의 두 길
+  - [Szpiro 추측](szpiro-conjecture.md): 최소 판별식이 도체의 $6+\varepsilon$ 제곱 이하라는 추측, 변형판과 abc 추측의 동치, 높이 하한
 - [Selmer 군과 Tate–Shafarevich 군](selmer-tate-shafarevich.md): 국소 조건으로 자른 코호몰로지 군과 계수 계산의 장애
   - [Poitou–Tate 완전열](poitou-tate.md): 국소 항과 대역 항을 잇는 아홉 항 완전열
 - [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md): $L$ 함수의 $s=1$ 소멸 차수가 계수와 같다는 추측

@@ -78,7 +78,7 @@ $$
 
 - [Fermat 마지막 정리](fermats-last-theorem.md): 서로소 해 $x^n+y^n=z^n$ 에서 $\mathrm{rad}(x^ny^nz^n)\le xyz\lt z^3$ 이므로 abc 추측에서 $z^n\le K_\varepsilon z^{3+3\varepsilon}$ 이다. $\varepsilon\lt 1/3$ 으로 잡으면 $n\ge4$ 인 해는 $z$ 가 유계라 유한개뿐이다.
 - [Faltings 정리](faltings-theorem.md): Elkies 는 abc 추측의 명시적 판본에서 종수 $2$ 이상인 곡선의 유리점의 높이 상계가 유도됨을 보였다. Faltings 정리의 증명은 이 상계를 주지 않는다.[^5]
-- [타원곡선](elliptic-curves.md)의 판별식: Szpiro 추측(Szpiro's conjecture)은 $\mathbb Q$ 위 타원곡선의 최소 판별식이 도체의 $6+\varepsilon$ 제곱으로 위에서 유계라는 진술이다. Oesterlé 는 $a+b=c$ 의 Frey 곡선 $y^2=x(x-a)(x+b)$ 를 써서 abc 추측이 Szpiro 추측의 변형과 동치임을 보였다.[^1]
+- [타원곡선](elliptic-curves.md)의 판별식: [Szpiro 추측](szpiro-conjecture.md)은 $\mathbb Q$ 위 타원곡선의 최소 판별식이 도체의 $6+\varepsilon$ 제곱으로 위에서 유계라는 진술이다. Oesterlé 는 $a+b=c$ 의 Frey 곡선 $y^2=x(x-a)(x+b)$ 를 써서 abc 추측이 Szpiro 추측의 변형과 동치임을 보였다.[^1]
 - [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md): Hindry 와 Silverman 은 Szpiro 비가 유계인 곡선족에서 Lang 의 높이 하한을 증명했으므로, abc 추측에서 모든 곡선의 하한이 따라온다.
 
 [^1]: J. Oesterlé, *Nouvelles approches du «théorème» de Fermat*, Séminaire Bourbaki exp. 694, Astérisque **161–162** (1988), 165–186. Masser 와 Oesterlé 의 추측 제시와 Szpiro 추측과의 동치가 여기 정리되어 있다.
@@ -95,6 +95,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Szpiro 추측](szpiro-conjecture.md)
 
 #number_theory #algebra #theorem
