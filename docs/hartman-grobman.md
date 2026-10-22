@@ -40,7 +40,7 @@ $x^\ast=0$ 으로 옮기고, 원점 근처를 벗어난 곳에서 $f$ 를 잘라
 
 ## 위상 공액의 한계
 
-$h$ 는 일반적으로 미분가능하지 않다. 위상 공액은 안정한 마디점(node)과 안정한 나선점(spiral)을 구별하지 않는다. 예컨대 $x'=-x$, $y'=-y$ 와 $x'=-x-y$, $y'=x-y$ 는 둘 다 원점으로 다가가는 흐름이고 서로 위상 공액이다. 고윳값이 특정 정수 관계를 만족하지 않는다는 비공명(non-resonance) 조건을 더하면 $h$ 를 매끄럽게 잡을 수 있고, 이것이 **Sternberg 정리(Sternberg's theorem)** 다.[^2]
+$h$ 는 일반적으로 미분가능하지 않다. 위상 공액은 안정한 마디점(node)과 안정한 나선점(spiral)을 구별하지 않는다. 예컨대 $x'=-x$, $y'=-y$ 와 $x'=-x-y$, $y'=x-y$ 는 둘 다 원점으로 다가가는 흐름이고 서로 위상 공액이다. 고윳값이 특정 정수 관계를 만족하지 않는다는 비공명(non-resonance) 조건을 더하면 $h$ 를 매끄럽게 잡을 수 있고, 이것이 [Sternberg 정리](sternberg-theorem.md)다.[^2]
 
 ## 안정 다양체 정리
 
@@ -70,5 +70,6 @@ $h$ 는 일반적으로 미분가능하지 않다. 위상 공액은 안정한 �
 
 - [중심 다양체 정리](center-manifold-theorem.md)
 - [Hopf 분기](hopf-bifurcation.md)
+- [Sternberg 정리](sternberg-theorem.md)
 
 #analysis #topology

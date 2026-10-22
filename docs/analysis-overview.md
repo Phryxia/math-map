@@ -104,6 +104,7 @@ graph TD
 - [Hartman–Grobman 정리](hartman-grobman.md): 쌍곡 평형점 근처의 흐름이 선형화와 위상 공액이라는 정리, 안정 다양체 정리
   - [중심 다양체 정리](center-manifold-theorem.md): 실수부가 0 인 고윳값의 방향에 접하는 불변 다양체, 축소 원리
   - [Hopf 분기](hopf-bifurcation.md): 켤레 고윳값 한 쌍이 허수축을 가로지를 때 평형점에서 주기해가 갈라져 나오는 현상, 초임계와 아임계
+  - [Sternberg 정리](sternberg-theorem.md): 고윳값에 공명이 없을 때 쌍곡 평형점 근처의 흐름을 선형화하는 매끄러운 좌표 변환, 호몰로지 방정식
 - [Poincaré–Bendixson 정리](poincare-bendixson.md): 평면에서 유계인 해가 다가가는 곳, 극한 순환의 존재와 Bendixson 판정법
   - [Lorenz 방정식](lorenz-system.md): 유계 영역에 갇히고 평형점이 모두 불안정한데도 주기해로 가지 않는 3 차원 계, 이상 끌개
 - [Liénard 정리](lienard-theorem.md): 감쇠와 복원력의 부호 조건에서 극한 순환이 하나뿐이고 안정하다는 정리, van der Pol 방정식
