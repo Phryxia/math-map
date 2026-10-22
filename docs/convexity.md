@@ -135,6 +135,7 @@ $$
 
 - [Krein–Milman 정리](krein-milman.md)
 - [Brunn–Minkowski 부등식](brunn-minkowski.md)
+- [Helly 정리](helly-theorem.md)
 
 ### 알고리즘과 응용
 

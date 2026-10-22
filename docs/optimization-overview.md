@@ -45,6 +45,7 @@ graph TD
 
 - [볼록성](convexity.md): 볼록집합과 볼록함수, 국소 최적해가 전역 최적해가 되는 조건
   - [준볼록 함수](quasiconvex-functions.md): 수준집합만 볼록인 함수, 이분 탐색으로 푸는 최소화
+  - [Helly 정리](helly-theorem.md): 볼록집합 모임의 공통점을 $d+1$ 개씩의 교집합으로 판정하는 정리, Radon 분할과 Carathéodory 정리
 - [부분미분](subdifferential.md): 꺾인 볼록 함수에서 기울기를 대신하는 집합, $0$ 이 들어 있는 것이 최적성 조건
   - [Clarke 준미분](clarke-subdifferential.md): 볼록하지 않은 Lipschitz 함수에서 기울기 극한의 볼록껍질로 세우는 준미분
 - [볼록 공액](convex-conjugate.md): 함수를 받침 아핀 함수의 모임으로 바꾸는 변환, Fenchel–Moreau 정리
