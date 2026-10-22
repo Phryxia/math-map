@@ -45,11 +45,12 @@ graph TD
 
 ## 측도와 가측성
 
-먼저 읽을 것: [기수](cardinality.md)(기초론 개관), [위상 공간](topology.md)(위상 개관). 시작 문서: [측도](measure.md).
+먼저 읽을 것: [기수](cardinality.md)(기초론 개관), [위상 공간](topology.md)(위상 개관), [균등수렴](uniform-convergence.md)(해석학 개관). 시작 문서: [측도](measure.md).
 
 - [측도](measure.md): $\sigma$ 대수, 가산가법성, Lebesgue 측도와 비가측 집합
 - [가측함수](measurable-functions.md): 원상이 가측인 함수, 극한에 닫힌 성질
-  - [Egorov 정리](egorov-theorem.md): 유한 측도에서 거의 어디서나 수렴이 작은 집합 밖의 균등수렴이 되는 정리, 측도 수렴과의 관계
+- [Egorov 정리](egorov-theorem.md): 유한 측도에서 거의 어디서나 수렴이 작은 집합 밖의 균등수렴이 되는 정리, 측도 수렴과의 관계
+  - [Lusin 정리](lusin-theorem.md): 가측함수가 길이가 작은 집합 밖에서 연속이라는 정리, Tietze 확장과 Radon 측도판
 - [Carathéodory 확장정리](caratheodory-extension.md): 외측도에서 측도를 얻는 구성, 전측도의 확장과 $\sigma$ 유한 유일성
   - [Dynkin 계](dynkin-system.md): $\pi$ 계에서 확인한 성질을 생성된 $\sigma$ 대수로 넓히는 정리, 측도의 일치와 독립성 판정
   - [Haar 측도](haar-measure.md): 국소콤팩트 위상군 위의 평행이동 불변 측도, 존재와 상수배 유일성, 모듈러 함수

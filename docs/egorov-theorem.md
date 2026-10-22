@@ -52,7 +52,7 @@ $\mu(X)\lt\infty$ 는 뺄 수 없다. $\mathbb R$ 위의 Lebesgue 측도에서 $
 
 # 활용
 
-- Lusin 정리(Lusin's theorem)의 증명에 쓴다. $[a,b]$ 위의 가측함수 $f$ 에 거의 어디서나 수렴하는 연속함수열을 잡고 Egorov 정리를 적용하면, 측도가 작은 집합 밖에서 연속함수의 균등극한이 되어 $f$ 가 그 위에서 연속이다.
+- [Lusin 정리](lusin-theorem.md)의 증명에 쓴다. $[a,b]$ 위의 가측함수 $f$ 에 거의 어디서나 수렴하는 연속함수열을 잡고 Egorov 정리를 적용하면, 측도가 작은 집합 밖에서 연속함수의 균등극한이 되어 $f$ 가 그 위에서 연속이다.
 - 유계 수렴 정리(bounded convergence theorem)를 증명한다. 유한 측도 공간에서 $\lvert f_n\rvert\le M$ 이고 거의 어디서나 $f_n\to f$ 이면, $\int\lvert f_n-f\rvert\thinspace d\mu$ 를 $E$ 위의 적분과 $X\setminus E$ 위의 적분으로 나눈다. 앞의 것은 $2M\mu(E)$ 이하이고 뒤의 것은 균등수렴으로 $0$ 으로 간다. [지배 수렴 정리](dominated-convergence.md)의 특수한 경우다.
 - [균등적분가능성](uniform-integrability.md)에서 Vitali 수렴정리(Vitali convergence theorem)의 한 증명이 같은 분할을 쓴다. 측도가 작은 집합 위의 적분은 균등적분가능성으로, 나머지는 Egorov 정리의 균등수렴으로 작게 만든다.
 - 확률론에서 거의 확실한 수렴은 확률수렴을 함의한다. 확률측도의 전체 측도가 $1$ 이므로 위의 측도 수렴 절이 그대로 적용된다.
@@ -66,6 +66,6 @@ $\mu(X)\lt\infty$ 는 뺄 수 없다. $\mathbb R$ 위의 Lebesgue 측도에서 $
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Lusin 정리](lusin-theorem.md)
 
 #measure_theory #analysis #probability #theorem
