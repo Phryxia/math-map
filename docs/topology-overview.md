@@ -64,6 +64,7 @@ graph TD
 먼저 읽을 갈래: 기본군과 덮개공간. 시작 문서: [단체 호몰로지](homology.md).
 
 - [단체 호몰로지](homology.md): 경계가 없으면서 무엇의 경계도 아닌 사슬을 세어 얻는 아벨군
+  - [Hurewicz 정리](hurewicz-theorem.md): 처음 사라지지 않는 차수에서 호모토피군과 호몰로지가 같다는 정리, 1 차원에서는 기본군의 아벨화
 - [코호몰로지](cohomology.md): 사슬 위의 함수로 만든 불변량, 컵곱이 주는 환 구조
 - [Mayer–Vietoris 완전열](mayer-vietoris.md): 두 조각과 그 교집합의 호몰로지를 전체의 것과 잇는 긴 완전열
   - [Jordan 곡선 정리](jordan-curve-theorem.md): 평면의 단순 닫힌 곡선이 평면을 두 성분으로 나눈다는 정리, 원판과 구면을 뺀 공간의 호몰로지 계산

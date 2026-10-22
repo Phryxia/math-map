@@ -68,7 +68,7 @@ $\pi_{n+k}(S^n)$ 은 $n\gt k+1$ 에서 $n$ 에 무관하고([Freudenthal 매달�
 
 ## 호몰로지와의 관계
 
-**정리 (Hurewicz).** $X$ 가 $(n-1)$ 연결이고 $n\ge2$ 이면 $\pi_n(X)\to H_n(X)$ 가 동형이다.
+**정리 ([Hurewicz](hurewicz-theorem.md)).** $X$ 가 $(n-1)$ 연결이고 $n\ge2$ 이면 $\pi_n(X)\to H_n(X)$ 가 동형이다.
 
 아래 차수가 모두 사라지는 첫 자리에서만 두 이론이 일치한다. 그 위에서는 호몰로지가 절단 정리(excision)를 만족해 계산이 쉬운 반면 호모토피군은 그렇지 않고, $\pi_k(S^n)$ 의 계산이 어려운 것이 이 차이 때문이다.
 
@@ -88,10 +88,19 @@ $\pi_{n+k}(S^n)$ 은 $n\gt k+1$ 에서 $n$ 에 무관하고([Freudenthal 매달�
 
 ## 더 알아보기
 
+### 공간의 구성
+
 - [CW 복합체](cw-complexes.md)
-- [Freudenthal 매달기 정리](freudenthal-suspension.md)
 - [올화](fibrations.md)
 - [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)
+
+### 호모토피군의 계산
+
+- [Hurewicz 정리](hurewicz-theorem.md)
+- [Freudenthal 매달기 정리](freudenthal-suspension.md)
+
+### 고차 범주
+
 - [무한 범주](infinity-categories.md)
 
 #algebraic_topology #topology #group_theory

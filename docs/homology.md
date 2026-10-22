@@ -98,7 +98,7 @@ $m_n$ 은 n-단체의 개수다. 이 계산은 [선형사상](linear-maps.md)의
 
 ## 기본군과의 관계
 
-경로연결 공간에서 1차 호몰로지는 기본군의 아벨화와 동형이다(Hurewicz).
+경로연결 공간에서 1차 호몰로지는 기본군의 아벨화와 동형이다([Hurewicz 정리](hurewicz-theorem.md)).
 
 $$
 H_1(X)\cong\pi_1(X)^{\mathrm{ab}}=\pi_1(X)/[\pi_1(X),\pi_1(X)]
@@ -140,6 +140,7 @@ $$
 
 - [Mayer–Vietoris 완전열](mayer-vietoris.md)
 - [CW 복합체](cw-complexes.md)
+- [Hurewicz 정리](hurewicz-theorem.md)
 - [Morse 이론](morse-theory.md)
 - [Euler 지표](euler-characteristic.md)
 - [코호몰로지](cohomology.md)
