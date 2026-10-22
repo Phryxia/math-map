@@ -174,6 +174,7 @@ graph TD
 
 - [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md): 유리점의 군이 유한생성이라는 정리와 그 증명에 쓰는 높이함수
   - [Néron 모델](neron-models.md): 아벨 다양체를 정수환 위로 넓힌 매끄러운 군 스킴, 성분군과 Tamagawa 수, Néron–Ogg–Shafarevich 판정법
+  - [Arakelov 기하](arakelov-geometry.md): 무한 자리에 Hermite 계량을 더한 산술 곡면의 교차이론, 산술 차수와 Faltings–Hriljac 정리
   - [Faltings 정리](faltings-theorem.md): 종수 2 이상 곡선의 유리점이 유한 개라는 정리, Shafarevich 추측과 Parshin 트릭을 거치는 증명
   - [Mordell–Lang 추측](mordell-lang.md): 유한생성 부분군과 부분다양체의 교집합이 아벨 부분다양체의 잉여류 유한 개로 설명된다는 진술, Mordell 추측을 포함한다
   - [Siegel 의 정수점 정리](siegel-integral-points.md): 종수와 무한원점의 개수로 가른 정수점의 유한성, 유효 상한의 두 길

@@ -42,7 +42,7 @@ $$
 \Vert\alpha\Vert\_\sigma^2=\frac{i^{g^2}}{2^g}\int\_{A\_\sigma(\mathbb C)}\alpha\wedge\bar\alpha
 $$
 
-로 계량을 주면 $\omega\_{\mathcal A}$ 가 계량 선다발이 되고, 그 Arakelov 차수 $\widehat{\deg}$ 를 체의 차수로 나눈
+로 계량을 주면 $\omega\_{\mathcal A}$ 가 계량 선다발이 되고, [Arakelov 기하](arakelov-geometry.md)의 산술 차수 $\widehat{\deg}$ 를 체의 차수로 나눈
 
 $$
 h_F(A)=\frac{1}{\lbrack K:\mathbb Q\rbrack}\widehat{\deg}\thinspace\omega\_{\mathcal A}
