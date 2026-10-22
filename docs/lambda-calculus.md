@@ -177,5 +177,6 @@ flowchart TD
 
 - [Curry–Howard 대응](curry-howard.md)
 - [Church–Turing 논제](church-turing-thesis.md)
+- [Scott 의 D∞ 모형](scott-d-infinity.md)
 
 #computation #logic

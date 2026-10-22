@@ -63,7 +63,8 @@ graph TD
 먼저 읽을 갈래: 순서의 기초. 시작 문서: [Galois 연결](galois-connections.md).
 
 - [Galois 연결](galois-connections.md) — 순서 보존 사상의 쌍과 Knaster–Tarski 고정점 정리
-  - [영역 이론](domain-theory.md) — 재귀 정의의 의미를 최소 고정점으로 주는 틀
+- [영역 이론](domain-theory.md) — 재귀 정의의 의미를 최소 고정점으로 주는 틀
+  - [Scott 의 D∞ 모형](scott-d-infinity.md) — 자기 위의 연속 사상 공간과 동형인 cpo 를 역극한으로 만든 λ 항의 첫 수학적 모형
   - [추상해석](abstract-interpretation.md) — 구체 의미론과 추상 영역을 Galois 연결로 잇고 과대근사의 건전성을 얻는다
 
 ## 순서의 조합론
