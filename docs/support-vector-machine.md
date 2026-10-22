@@ -72,7 +72,7 @@ $$\min\_{w,b}\ \frac12\Vert w\Vert\_2^2+C\sum_{i=1}^n\max(0,1-y_i(\langle w,x_i\
 
 ## 커널 치환
 
-쌍대문제와 판별함수 $f(x)=\sum_i\alpha_i y_i\langle x_i,x\rangle+b$ 에 자료가 내적으로만 들어간다. 내적을 양의 준정부호 핵 $K(x,x')$ 으로 바꾸면 특징 사상을 명시하지 않고 고차원에서의 선형 분류를 계산한다. [커널 PCA](kernel-pca.md)(principal component analysis)가 공분산에 쓰는 것과 같은 치환이다.
+쌍대문제와 판별함수 $f(x)=\sum_i\alpha_i y_i\langle x_i,x\rangle+b$ 에 자료가 내적으로만 들어간다. 내적을 양의 준정부호 핵 $K(x,x')$ 으로 바꾸면 특징 사상을 명시하지 않고 고차원에서의 선형 분류를 계산한다. [커널 PCA](kernel-pca.md)(principal component analysis)가 [공분산](covariance.md)에 쓰는 것과 같은 치환이다.
 
 ## 일반화 경계
 

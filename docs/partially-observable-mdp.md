@@ -80,7 +80,7 @@ $\Gamma_n$ 을 귀납식 그대로 만들면 크기가 $\vert A\vert\thinspace\v
 
 - [다중 슬롯머신](multi-armed-bandits.md): 각 팔의 보수 분포를 모르는 문제는 그 분포의 모수 위의 사후분포를 믿음으로 하는 POMDP 다. 팔마다 믿음이 따로 갱신되는 구조에서 [Gittins 지표](gittins-index.md)가 문제를 팔 하나짜리 문제로 분해한다.
 - [최적 정지](optimal-stopping.md): 관측을 더 받을지 멈출지 고르는 문제는 행동이 둘인 POMDP 다. [순차확률비 검정](sequential-probability-ratio-test.md)의 두 문턱이 믿음 구간을 세 조각으로 나눈 최적 정책이다.
-- [Kalman 필터](kalman-filter.md): 상태와 관측이 선형이고 잡음이 Gauss 이면 믿음이 평균과 공분산으로 적히고, 갱신식이 Kalman 재귀가 된다. 이차 보상에서는 최적 제어가 평균에만 의존한다.
+- [Kalman 필터](kalman-filter.md): 상태와 관측이 선형이고 잡음이 Gauss 이면 믿음이 평균과 [공분산](covariance.md)으로 적히고, 갱신식이 Kalman 재귀가 된다. 이차 보상에서는 최적 제어가 평균에만 의존한다.
 - [Q 학습](q-learning.md): 모형을 모르는 상태에서 관측 이력을 그대로 상태로 쓰면 수렴 보장이 깨진다. 믿음의 근사를 상태로 두는 것이 그 자리의 대응이다.
 
 [^1]: K. J. Åström, "Optimal control of Markov processes with incomplete state information", *Journal of Mathematical Analysis and Applications* 10 (1965), 174–205.

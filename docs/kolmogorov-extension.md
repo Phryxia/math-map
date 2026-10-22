@@ -6,7 +6,7 @@
 
 # 직관
 
-Brown 운동을 만들려 한다. 가진 것은 시점마다의 분포다. $B\_t$ 는 평균 $0$, 분산 $t$ 인 [정규분포](normal-distribution.md)이고, 시점 $t\_1,\dots,t\_n$ 을 유한개 고르면 $(B\_{t\_1},\dots,B\_{t\_n})$ 은 공분산이 $\min(t\_i,t\_j)$ 인 다변량 정규분포다. 시점이 유한하면 이 분포가 $\mathbb R^n$ 위의 측도로 끝난다. 시점이 $\lbrack 0,\infty)$ 전체이면 표본점이 함수 $\omega:\lbrack 0,\infty)\to\mathbb R$ 이고 표본공간은 함수들의 집합 $\mathbb R^{\lbrack 0,\infty)}$ 여서 측도를 세우는 일이 남는다.
+Brown 운동을 만들려 한다. 가진 것은 시점마다의 분포다. $B\_t$ 는 평균 $0$, 분산 $t$ 인 [정규분포](normal-distribution.md)이고, 시점 $t\_1,\dots,t\_n$ 을 유한개 고르면 $(B\_{t\_1},\dots,B\_{t\_n})$ 은 [공분산](covariance.md)이 $\min(t\_i,t\_j)$ 인 다변량 정규분포다. 시점이 유한하면 이 분포가 $\mathbb R^n$ 위의 측도로 끝난다. 시점이 $\lbrack 0,\infty)$ 전체이면 표본점이 함수 $\omega:\lbrack 0,\infty)\to\mathbb R$ 이고 표본공간은 함수들의 집합 $\mathbb R^{\lbrack 0,\infty)}$ 여서 측도를 세우는 일이 남는다.
 
 좌표 유한개로만 조건을 주는 집합 $\lbrace \omega:(\omega(t\_1),\dots,\omega(t\_n))\in A\rbrace$ 에는 적어 놓은 분포가 값을 준다. 이런 집합들은 대수를 이루고 그 위의 집합함수는 전측도이므로 [Carathéodory 확장정리](caratheodory-extension.md)가 측도를 준다. 다만 같은 집합을 시점 셋으로도 넷으로도 적을 수 있어, 셋째 좌표를 적분해 없앤 분포가 두 시점의 분포와 같아야 값이 하나로 정해진다. 이 조건이 정합성이다.
 

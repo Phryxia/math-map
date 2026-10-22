@@ -51,7 +51,7 @@ graph TD
 
 ## 확률 공간과 확률변수
 
-먼저 읽을 것: [함수](functions.md)(기초 개관). 시작 문서: [유한 확률 공간](probability.md).
+먼저 읽을 것: [함수](functions.md)(기초 개관), [Cauchy–Schwarz 부등식](cauchy-schwarz.md)(선형대수 개관). 시작 문서: [유한 확률 공간](probability.md).
 
 - [유한 확률 공간](probability.md): 표본공간, 사건, 확률측도
   - [Bayes 정리](bayes.md): 조건부확률의 역전
@@ -59,6 +59,7 @@ graph TD
 - [확률변수](random-variables.md): 가측함수로서의 확률변수와 적분으로서의 기댓값
   - [Jensen 부등식](jensen-inequality.md): 평균을 먼저 낼 때와 나중에 낼 때의 대소, 지지선 증명과 등호 조건
 - [확률밀도](probability-density.md): 분포를 기준측도로 적분해 쓴 함수와 밀도가 없는 분포
+- [공분산](covariance.md): 두 확률변수가 함께 벗어나는 정도, 상관계수와 Cauchy–Schwarz, 공분산행렬, 최적 선형 예측
   - [정규분포](normal-distribution.md): 평균과 분산으로 정해지는 종 모양 분포, 다변량 정규분포의 선형변환과 조건부분포, 꼬리와 최대 엔트로피
 - [조건부 기댓값](conditional-expectation.md): 부분 $\sigma$ 대수 위로의 사영
 - [Kolmogorov 확장정리](kolmogorov-extension.md): 정합적 유한차원 분포족에서 확률과정을 세우는 정리

@@ -111,7 +111,7 @@ $\log p(x,z)=\log p(z_j\mid z_{-j},x)+\log p(z_{-j},x)$ 이고 둘째 항은 $z_
 
 ## 평균장 근사의 분산 과소추정
 
-**정리.** 사후분포가 평균 $0$, 공분산 $\begin{pmatrix}1&\rho\cr\rho&1\end{pmatrix}$ 인 2차원 Gauss 분포이고 $\vert\rho\vert\lt 1$ 이면, 평균장 근사의 고정점은 각 좌표의 분산이 $1-\rho^2$ 인 Gauss 분포의 곱이다.
+**정리.** 사후분포가 평균 $0$, [공분산](covariance.md) $\begin{pmatrix}1&\rho\cr\rho&1\end{pmatrix}$ 인 2차원 Gauss 분포이고 $\vert\rho\vert\lt 1$ 이면, 평균장 근사의 고정점은 각 좌표의 분산이 $1-\rho^2$ 인 Gauss 분포의 곱이다.
 
 정밀도행렬은 $\Lambda=(1-\rho^2)^{-1}\begin{pmatrix}1&-\rho\cr-\rho&1\end{pmatrix}$ 이고
 

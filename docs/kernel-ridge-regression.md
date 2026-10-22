@@ -60,7 +60,7 @@ $$\hat y=\sum_j\frac{\mu_j}{\mu_j+\lambda}\thinspace u_ju_j^\top y$$
 
 ## Gauss 과정 회귀와의 일치
 
-[Gauss 과정](gaussian-processes.md)의 사전분포를 공분산핵 $K$ 로 두고 관측잡음의 분산을 $\lambda$ 로 두면 사후평균이 $\hat f$ 와 같다. 한쪽은 노름 벌점이 붙은 최소화의 해이고 다른 쪽은 조건부 기댓값이지만 식이 같다. 사후분산은 최소화 쪽에 대응하는 양이 없다.
+[Gauss 과정](gaussian-processes.md)의 사전분포를 [공분산](covariance.md)핵 $K$ 로 두고 관측잡음의 분산을 $\lambda$ 로 두면 사후평균이 $\hat f$ 와 같다. 한쪽은 노름 벌점이 붙은 최소화의 해이고 다른 쪽은 조건부 기댓값이지만 식이 같다. 사후분산은 최소화 쪽에 대응하는 양이 없다.
 
 # 활용
 

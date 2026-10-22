@@ -66,7 +66,7 @@ $$
 
 - [내적 공간](inner-product-spaces.md)에서 두 벡터가 이루는 각을 $\cos\theta=\langle u,v\rangle/(\lVert u\rVert\lVert v\rVert)$ 로 정의하는 근거다. 우변이 $-1$ 과 $1$ 사이에 있다는 것이 이 부등식이다.
 - [Hilbert 공간](hilbert-spaces.md)에서 내적이 두 변수에 대해 연속임을 보이는 데 쓴다. 한 변수를 고정한 내적이 유계 선형범함수라는 사실이 Riesz 표현정리(Riesz representation theorem)의 출발점이다.
-- 확률변수의 공분산을 내적으로 보면 상관계수가 $-1$ 과 $1$ 사이에 있다는 것이 이 부등식이다. 분산이 유한한 두 [확률변수](random-variables.md)의 곱의 기댓값이 유한하다는 것도 같은 식에서 나온다.
+- 확률변수의 [공분산](covariance.md)을 내적으로 보면 상관계수가 $-1$ 과 $1$ 사이에 있다는 것이 이 부등식이다. 분산이 유한한 두 [확률변수](random-variables.md)의 곱의 기댓값이 유한하다는 것도 같은 식에서 나온다.
 - [행렬 분해](matrix-factorizations.md)가 주는 조건수를 비롯해, 수치해석의 오차 상한에서 잔차와 오차를 잇는 데 쓴다.
 
 # 연관 문서
@@ -77,6 +77,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [공분산](covariance.md)
 
 #linear_algebra #analysis #functional_analysis #probability

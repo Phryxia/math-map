@@ -131,7 +131,7 @@ $$
 
 ## 연산자 이론 연결
 
-내적이 있으면 수반연산자와 자기수반성을 정의할 수 있고 [스펙트럼 정리](spectral-theorem.md)로 이어진다. 확률에서는 제곱적분 가능한 [확률변수](random-variables.md)들의 공분산이 내적이 되어 상관계수가 Cauchy–Schwarz 의 코사인, 조건부기댓값이 정사영이 된다.
+내적이 있으면 수반연산자와 자기수반성을 정의할 수 있고 [스펙트럼 정리](spectral-theorem.md)로 이어진다. 확률에서는 제곱적분 가능한 [확률변수](random-variables.md)들의 [공분산](covariance.md)이 내적이 되어 상관계수가 Cauchy–Schwarz 의 코사인, 조건부기댓값이 정사영이 된다.
 
 [^1]: Anne Schilling et al., MAT067 — Inner Product Spaces, University of California, Davis. https://www.math.ucdavis.edu/~anne/WQ2007/mat67-Lj-Inner_Product_Spaces.pdf
 [^2]: Beifang Chen, Math 111 — Inner Product Spaces and Orthogonality, HKUST. https://www.math.hkust.edu.hk/~mabfchen/Math111/Week13-14.pdf

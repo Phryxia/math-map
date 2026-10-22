@@ -44,7 +44,7 @@ $$
 
 ## 다변량 정규분포
 
-$\mathbb R^d$ 값 확률벡터 $X$ 가 모든 $a\in\mathbb R^d$ 에서 $a^\top X$ 가 (퇴화를 포함한) 일변량 정규분포를 따르면 $X$ 를 **다변량 정규분포(multivariate normal distribution)** 를 따른다고 한다. 평균벡터 $\mu=\mathbb E X$ 와 공분산행렬 $\Sigma=\mathbb E\lbrack(X-\mu)(X-\mu)^\top\rbrack$ 가 분포를 결정하고 $N(\mu,\Sigma)$ 로 쓴다. $\Sigma$ 는 대칭이고 양의 준정부호다.
+$\mathbb R^d$ 값 확률벡터 $X$ 가 모든 $a\in\mathbb R^d$ 에서 $a^\top X$ 가 (퇴화를 포함한) 일변량 정규분포를 따르면 $X$ 를 **다변량 정규분포(multivariate normal distribution)** 를 따른다고 한다. 평균벡터 $\mu=\mathbb E X$ 와 [공분산](covariance.md)행렬 $\Sigma=\mathbb E\lbrack(X-\mu)(X-\mu)^\top\rbrack$ 가 분포를 결정하고 $N(\mu,\Sigma)$ 로 쓴다. $\Sigma$ 는 대칭이고 양의 준정부호다.
 
 $\Sigma$ 가 가역이면 밀도는
 
@@ -125,6 +125,7 @@ $$
 ## 선수지식
 
 - [확률밀도](probability-density.md)
+- [공분산](covariance.md)
 
 ## 더 알아보기
 

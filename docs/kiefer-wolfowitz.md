@@ -81,7 +81,7 @@ $\alpha_t=a/t$ 와 $c_t=c\thinspace t^{-1/6}$ 으로 잡고 $g$ 가 $\theta^\ast
 
 ## 동시 섭동의 관측 비용
 
-SPSA 의 오차도 $O(t^{-1/3})$ 이고 점근 정규성의 공분산이 차원 $d$ 에 의존하지 않는다. 좌표별 유한차분이 한 걸음에 $2d$ 번, SPSA 가 두 번 관측하므로 관측 횟수를 같게 두면 SPSA 가 $d$ 배 많은 걸음을 밟는다. 관측 횟수를 기준으로 비교하면 SPSA 의 오차가 $d$ 차원에서 $d^{1/3}$ 배 작다.
+SPSA 의 오차도 $O(t^{-1/3})$ 이고 점근 정규성의 [공분산](covariance.md)이 차원 $d$ 에 의존하지 않는다. 좌표별 유한차분이 한 걸음에 $2d$ 번, SPSA 가 두 번 관측하므로 관측 횟수를 같게 두면 SPSA 가 $d$ 배 많은 걸음을 밟는다. 관측 횟수를 기준으로 비교하면 SPSA 의 오차가 $d$ 차원에서 $d^{1/3}$ 배 작다.
 
 증명의 요지. $\Delta_{t,i}$ 가 평균 $0$ 이고 서로 독립이므로 $\mathbb E\lbrack\Delta_{t,j}/\Delta_{t,i}\rbrack=0$ 이 $j\ne i$ 에서 성립한다. $Y_t^+-Y_t^-$ 를 전개한 $2c_t\sum_j\Delta_{t,j}\partial_jg(\theta_t)$ 를 $2c_t\Delta_{t,i}$ 로 나누고 조건부 기댓값을 취하면 $j\ne i$ 인 항이 사라져 $\partial_ig(\theta_t)$ 만 남는다.
 

@@ -20,7 +20,7 @@ $$
 \pi(x,p)\propto\exp\big({-}H(x,p)\big),\qquad H(x,p)=-\log\pi(x)+\tfrac12 p^{\mathsf T}M^{-1}p
 $$
 
-를 불변분포로 갖는 연쇄를 Hamilton 흐름으로 짓는 방법이다. $H$ 를 Hamiltonian, $M$ 을 양정의 질량행렬이라 한다. 둘째 항이 $p$ 만의 함수이므로 $\pi(x,p)$ 는 $\pi(x)$ 와 평균 $0$, 공분산 $M$ 인 Gauss 분포의 곱이고, $x$ 주변분포가 $\pi(x)$ 다.
+를 불변분포로 갖는 연쇄를 Hamilton 흐름으로 짓는 방법이다. $H$ 를 Hamiltonian, $M$ 을 양정의 질량행렬이라 한다. 둘째 항이 $p$ 만의 함수이므로 $\pi(x,p)$ 는 $\pi(x)$ 와 평균 $0$, [공분산](covariance.md) $M$ 인 Gauss 분포의 곱이고, $x$ 주변분포가 $\pi(x)$ 다.
 
 ## Hamilton 흐름
 

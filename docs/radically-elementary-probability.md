@@ -18,7 +18,7 @@ $$
 E\thinspace x=\sum_{\omega\in\Omega}\mathrm{pr}(\omega)\thinspace x(\omega)
 $$
 
-이다. 분산과 공분산도 같은 합으로 정의한다.
+이다. 분산과 [공분산](covariance.md)도 같은 합으로 정의한다.
 
 ## 근사의 어휘
 

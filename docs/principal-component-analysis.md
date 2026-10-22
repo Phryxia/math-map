@@ -115,6 +115,7 @@ $$
 
 - [특이값 분해](singular-value-decomposition.md)
 - [확률변수](random-variables.md)
+- [공분산](covariance.md)
 
 ## 더 알아보기
 

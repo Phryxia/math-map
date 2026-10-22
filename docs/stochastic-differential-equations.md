@@ -136,7 +136,7 @@ $$
 
 ## 필터링
 
-관측 $dY_t=h(X_t)\thinspace dt+dW_t$ 에서 숨은 상태 $X$ 를 추정하는 문제는 조건부 분포가 만족하는 SDE 로 표현된다. $a$ 와 $h$ 가 선형이고 잡음이 Gauss 이면 조건부 분포가 Gauss 로 유지되어 평균과 공분산의 유한차원 방정식으로 닫히고, 그 이산시간 판이 [Kalman 필터](kalman-filter.md)다.
+관측 $dY_t=h(X_t)\thinspace dt+dW_t$ 에서 숨은 상태 $X$ 를 추정하는 문제는 조건부 분포가 만족하는 SDE 로 표현된다. $a$ 와 $h$ 가 선형이고 잡음이 Gauss 이면 조건부 분포가 Gauss 로 유지되어 평균과 [공분산](covariance.md)의 유한차원 방정식으로 닫히고, 그 이산시간 판이 [Kalman 필터](kalman-filter.md)다.
 
 ## 생성모형
 

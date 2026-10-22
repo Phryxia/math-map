@@ -46,7 +46,7 @@ $$\Vert P_n - P\Vert\_{\mathcal F} = \sup\_{f\in\mathcal F}\vert P_n f - Pf\vert
 
 이 확률수렴으로 성립하는 것이다. 거의 확실한 수렴을 요구하면 강 Glivenko–Cantelli 족이다.
 
-$\mathcal F$ 가 **Donsker 족**이라는 것은 $\mathbb G_n$ 이 유계함수 공간 $\ell^\infty(\mathcal F)$ 에서 [Gauss 과정](gaussian-processes.md) $\mathbb G$ 로 [약수렴](weak-convergence.md)하는 것이다. 극한의 평균은 $0$ 이고 공분산은
+$\mathcal F$ 가 **Donsker 족**이라는 것은 $\mathbb G_n$ 이 유계함수 공간 $\ell^\infty(\mathcal F)$ 에서 [Gauss 과정](gaussian-processes.md) $\mathbb G$ 로 [약수렴](weak-convergence.md)하는 것이다. 극한의 평균은 $0$ 이고 [공분산](covariance.md)은
 
 $$E\lbrack\mathbb G f\thinspace\mathbb G g\rbrack = Pfg - Pf\thinspace Pg$$
 
