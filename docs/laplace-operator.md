@@ -102,7 +102,7 @@ $$
 - [열방정식](heat-equation.md) $\partial_tu=\kappa\Delta u$ 는 평균값 공식대로 각 점의 값을 주변 평균 쪽으로 옮긴다. [파동방정식](wave-equation.md) $\partial_t^2u=c^2\Delta u$ 는 같은 차이로 가속도를 정한다.
 - [Fourier 변환](fourier-transform.md)은 $\Delta$ 를 곱셈 연산자로 바꾼다. $\Delta e^{i\xi\cdot x}=-\lVert\xi\rVert^2e^{i\xi\cdot x}$ 이므로 평면파가 $\mathbb R^n$ 위의 고유함수다.
 - [그래프 Laplacian](graph-laplacian.md) $L$ 은 $-\Delta$ 의 이산판이다. 격자 $h\mathbb Z$ 에서 $\bigl(u(x+h)+u(x-h)-2u(x)\bigr)/h^2$ 가 $\partial_x^2u$ 를 근사하고, 이웃 값의 합에서 차수배를 뺀 것의 부호를 바꾸면 $L$ 이다.
-- [Riemann 계량](riemannian-metrics.md)이 있는 다양체에서는 계량으로 정의한 기울기와 발산으로 $\Delta f=\mathrm{div}\thinspace\nabla f$ 를 쓴 Laplace–Beltrami 연산자(Laplace–Beltrami operator)를 쓴다. [Hodge 이론](hodge-theory.md)은 미분형식 위의 Laplace 연산자의 핵으로 [de Rham 코호몰로지](de-rham-cohomology.md)를 나타낸다.
+- [Riemann 계량](riemannian-metrics.md)이 있는 다양체에서는 계량으로 정의한 기울기와 발산으로 $\Delta f=\mathrm{div}\thinspace\nabla f$ 를 쓴 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)를 쓴다. [Hodge 이론](hodge-theory.md)은 미분형식 위의 Laplace 연산자의 핵으로 [de Rham 코호몰로지](de-rham-cohomology.md)를 나타낸다.
 - [Brown 운동](brownian-motion.md)의 생성작용소(generator)는 $\tfrac12\Delta$ 다. 평균값 공식의 구면 평균 자리에 Brown 운동의 기댓값이 들어간다.
 - [Sturm–Liouville 이론](sturm-liouville.md)은 일차원 고윳값 문제 $-u''=\lambda u$ 를 변수계수 연산자로 확장한다.
 
@@ -119,5 +119,6 @@ $$
 - [조화함수](harmonic-functions.md)
 - [열방정식](heat-equation.md)
 - [파동방정식](wave-equation.md)
+- [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)
 
 #analysis #differential_geometry #probability

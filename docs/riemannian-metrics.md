@@ -191,7 +191,7 @@ $$
 
 ## 데이터와 계산 기하
 
-고차원 데이터가 저차원 다양체 근처에 놓인다는 가정 아래, 표본 사이의 국소 거리로 [그래프](graphs.md)를 만들고 그래프 최단경로로 측지 거리를 근사하는 방법이 있다. 이렇게 얻은 거리 행렬을 저차원 좌표로 옮기면 차원 축소가 된다. 여기서 [그래프 Laplacian](graph-laplacian.md)이 Laplace–Beltrami 연산자의 이산 근사로 나타나며, 그래프 스펙트럼과 다양체의 기하가 대응한다.
+고차원 데이터가 저차원 다양체 근처에 놓인다는 가정 아래, 표본 사이의 국소 거리로 [그래프](graphs.md)를 만들고 그래프 최단경로로 측지 거리를 근사하는 방법이 있다. 이렇게 얻은 거리 행렬을 저차원 좌표로 옮기면 차원 축소가 된다. 여기서 [그래프 Laplacian](graph-laplacian.md)이 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)의 이산 근사로 나타나며, 그래프 스펙트럼과 다양체의 기하가 대응한다.
 
 ## 다른 기하 구조와의 관계
 
@@ -218,6 +218,7 @@ $$
 
 ### 해석과 스펙트럼
 
+- [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)
 - [Hodge 이론](hodge-theory.md)
 - [Selberg 대각합 공식](selberg-trace-formula.md)
 

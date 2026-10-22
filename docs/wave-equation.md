@@ -97,7 +97,7 @@ $$
 - [Bessel 함수](bessel-functions.md)는 원판 모양의 북에서 파동방정식을 극좌표로 변수분리할 때 반지름 방향의 고유함수로 나온다.
 - [비유계 작용소](unbounded-operators.md)의 함수해석으로 자기수반 작용소 $A=-c^2\Delta$ 에 대해 해를 $\cos(t\sqrt A)f+\sin(t\sqrt A)A^{-1/2}g$ 로 쓴다. 영역의 모양과 경계조건은 $A$ 의 정의역에 들어간다.
 - Maxwell 방정식(Maxwell's equations)에서 전기장과 자기장의 각 성분은 진공에서 빛의 속도를 $c$ 로 하는 파동방정식을 만족한다.
-- 다양체 위의 파동방정식은 Laplace–Beltrami 연산자로 쓰고, 그 고유진동수로 다양체의 모양을 얼마나 정할 수 있는지가 "북의 모양을 들을 수 있는가" 라는 Kac 의 문제다.
+- 다양체 위의 파동방정식은 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)로 쓰고, 그 고유진동수로 다양체의 모양을 얼마나 정할 수 있는지가 "북의 모양을 들을 수 있는가" 라는 Kac 의 문제다.
 
 # 연관 문서
 
