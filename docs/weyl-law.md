@@ -180,5 +180,6 @@ $$
 
 - [양자 혼돈](quantum-chaos.md)
 - [제타 정규화 행렬식](zeta-regularized-determinant.md)
+- [Courant 마디 영역 정리](courant-nodal-domain-theorem.md)
 
 #differential_geometry #analysis #functional_analysis #theorem
