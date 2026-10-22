@@ -28,7 +28,7 @@ $$
 s_\kappa(t)=\begin{cases}\sin(\sqrt\kappa\thinspace t)/\sqrt\kappa & \kappa\gt0\cr t & \kappa=0\cr \sinh(\sqrt{-\kappa}\thinspace t)/\sqrt{-\kappa} & \kappa\lt0\end{cases}
 $$
 
-를 **모형 함수**라 한다. $s_\kappa$ 는 $s''+\kappa s=0$, $s(0)=0$, $s'(0)=1$ 의 해이고, 단면곡률이 상수 $\kappa$ 인 공간에서 Jacobi 장의 크기가 $s_\kappa$ 다.
+를 **모형 함수**라 한다. $s_\kappa$ 는 $s''+\kappa s=0$, $s(0)=0$, $s'(0)=1$ 의 해이고, 단면곡률이 상수 $\kappa$ 인 공간에서 [Jacobi 장](jacobi-fields.md)의 크기가 $s_\kappa$ 다.
 
 ## 곡률 조건
 
@@ -81,6 +81,7 @@ $r\to0$ 에서 비가 $1$ 이므로 $\mathrm{vol}\thinspace B(p,r)\le V_\kappa(r
 ## 선수지식
 
 - [측지선](geodesics.md)
+- [Jacobi 장](jacobi-fields.md)
 
 ## 더 알아보기
 

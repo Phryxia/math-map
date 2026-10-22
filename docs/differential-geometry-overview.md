@@ -117,7 +117,8 @@ graph TD
 - [Killing 벡터장](killing-vector-fields.md): 계량을 보존하는 흐름, 측지선을 따르는 보존량과 차원 상한
   - [등거리변환군](isometry-groups.md): 계량을 보존하는 미분동형의 Lie 군, 한 점의 값과 미분으로 정해지는 원소와 차원 상한
 - [측지선](geodesics.md): 가속도의 접성분이 0 인 곡선, 지수사상과 Hopf–Rinow 정리, 켤레점
-  - [측지선의 비교정리](geodesic-comparison-theorems.md): 곡률의 상한과 하한으로 Jacobi 장을 상수곡률 모형과 견준다, Rauch 와 Cartan–Hadamard 와 Bonnet–Myers
+  - [Jacobi 장](jacobi-fields.md): 측지선의 변분을 미분한 벡터장과 Jacobi 방정식, 켤레점과 지수사상의 특이점, 지표 형식과 Morse 지표 정리
+    - [측지선의 비교정리](geodesic-comparison-theorems.md): 곡률의 상한과 하한으로 Jacobi 장을 상수곡률 모형과 견준다, Rauch 와 Cartan–Hadamard 와 Bonnet–Myers
   - [공간형](space-forms.md): 단면곡률이 상수인 완비 다양체, 세 모형 공간의 이산 등거리변환군에 의한 몫과 Bieberbach 정리
 - [Gauss–Bonnet 정리](gauss-bonnet.md): 곡률 적분이 Euler 지표를 준다
   - [Poincaré–Hopf 정리](poincare-hopf.md): 벡터장의 특이점 지수의 합도 Euler 지표다

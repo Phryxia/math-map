@@ -74,7 +74,7 @@ $(M,g)$ 가 연결일 때 다음이 동치다.[^1]
 
 ## 켤레점
 
-측지선 $\gamma$ 를 따르는 Jacobi 방정식 $\nabla\_{\dot\gamma}\nabla\_{\dot\gamma}J+R(J,\dot\gamma)\dot\gamma=0$ 의 해를 Jacobi 장이라 한다. $\gamma(0)$ 과 $\gamma(t_0)$ 에서 모두 $0$ 이 되는 $0$ 아닌 Jacobi 장이 있으면 두 점을 켤레점이라 한다.
+측지선 $\gamma$ 를 따르는 Jacobi 방정식 $\nabla\_{\dot\gamma}\nabla\_{\dot\gamma}J+R(J,\dot\gamma)\dot\gamma=0$ 의 해를 [Jacobi 장](jacobi-fields.md)이라 한다. $\gamma(0)$ 과 $\gamma(t_0)$ 에서 모두 $0$ 이 되는 $0$ 아닌 Jacobi 장이 있으면 두 점을 켤레점이라 한다.
 
 켤레점을 지난 뒤의 측지선은 최단이 아니다.[^1] 곡률 $R$ 이 방정식의 계수이므로 켤레점의 위치가 곡률로 통제된다. 단면곡률이 $\kappa\gt 0$ 이상이면 길이 $\pi/\sqrt\kappa$ 안에 켤레점이 생기고, 단면곡률이 $0$ 이하이면 켤레점이 없다. 이 두 진술이 [측지선의 비교정리](geodesic-comparison-theorems.md)의 특수한 경우다.
 
@@ -97,6 +97,7 @@ $(M,g)$ 가 연결일 때 다음이 동치다.[^1]
 
 ## 더 알아보기
 
+- [Jacobi 장](jacobi-fields.md)
 - [측지선의 비교정리](geodesic-comparison-theorems.md)
 - [공간형](space-forms.md)
 
