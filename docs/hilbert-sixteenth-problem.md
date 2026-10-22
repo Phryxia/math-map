@@ -62,7 +62,7 @@ $H(2)$ 가 유한한지는 알려져 있지 않다[^2]. Smale 은 1998 년에 21
 
 - [Hopf 분기](hopf-bifurcation.md)는 평형점에서 극한 순환을 하나씩 만든다. 이차 벡터장의 초점 하나에서 분기로 생기는 극한 순환은 많아야 3 개라는 것이 Bautin 정리(Bautin's theorem)다[^2]. $H(2)\ge 4$ 의 예는 한 초점을 도는 극한 순환 3 개와 다른 초점을 도는 극한 순환 1 개를 갖는다.
 - Liénard 정리의 조건 밖에서 다항식 Liénard 방정식의 극한 순환 개수를 묻는 것은 이 문제를 Liénard 방정식으로 좁힌 판이다. $g(x)=x$ 이고 $F$ 가 3 차 다항식이면 극한 순환은 많아야 하나다[^2].
-- Hamilton 벡터장(Hamiltonian vector field)을 작게 섭동했을 때 닫힌 궤도 족에서 갈라져 나오는 극한 순환의 개수는 Abel 적분(Abelian integral)의 영점 개수로 정해진다. 이 영점 개수가 차수에만 의존하는 상한을 갖는다는 것은 Varchenko 와 Khovanskii 가 1984 년에 증명했다[^2].
+- Hamilton 벡터장(Hamiltonian vector field)을 작게 섭동했을 때 닫힌 궤도 족에서 갈라져 나오는 극한 순환의 개수는 Abel 적분(Abelian integral)의 영점 개수로 정해지고, 이 영점 개수의 상한을 묻는 것이 [약한 Hilbert 16 번째 문제](weak-hilbert-sixteenth-problem.md)다. 이 영점 개수가 차수에만 의존하는 상한을 갖는다는 것은 Varchenko 와 Khovanskii 가 1984 년에 증명했다[^2].
 
 [^1]: A. Harnack, "Über die Vieltheiligkeit der ebenen algebraischen Curven", Math. Ann. 10 (1876), 189–198.
 [^2]: Yu. Ilyashenko, "Centennial history of Hilbert's 16th problem", Bull. Amer. Math. Soc. 39 (2002), 301–354.
@@ -77,6 +77,6 @@ $H(2)$ 가 유한한지는 알려져 있지 않다[^2]. Smale 은 1998 년에 21
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [약한 Hilbert 16 번째 문제](weak-hilbert-sixteenth-problem.md)
 
 #analysis #topology
