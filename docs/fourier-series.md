@@ -6,7 +6,7 @@
 
 이렇게 보면 세 가지가 정리된다. 첫째, 제곱평균($L^2$ ) 수렴은 언제나 성립하며 Parseval 등식이 따라온다. 둘째, 각 점에서의 수렴은 훨씬 미묘해서 추가 조건(Dirichlet, Dini)이 필요하다. 셋째, 불연속점 근처에서는 부분합이 함수를 넘어서 출렁이는 Gibbs 현상이 사라지지 않는다.
 
-Fourier 급수의 실질적인 힘은 미분이 계수의 곱셈으로 바뀐다는 데 있다. [열방정식](heat-equation.md)과 파동방정식이 상수계수 [상미분방정식](ordinary-differential-equations.md)의 모음으로 분해되는 것이 그 결과다.
+Fourier 급수의 실질적인 힘은 미분이 계수의 곱셈으로 바뀐다는 데 있다. [열방정식](heat-equation.md)과 [파동방정식](wave-equation.md)이 상수계수 [상미분방정식](ordinary-differential-equations.md)의 모음으로 분해되는 것이 그 결과다.
 
 # 직관
 

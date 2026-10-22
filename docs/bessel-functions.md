@@ -10,7 +10,7 @@
 
 반지름 $a$ 인 원형 북면이 낼 수 있는 진동수를 구하려 한다. 사각형 막이라면 두 변의 방향으로 변수를 분리해 각 방향에서 $\sin(n\pi x/L)$ 을 얻고, 진동수는 $\sqrt{(n/L_1)^2+(m/L_2)^2}$ 의 정수 조합으로 전부 나온다.
 
-원판에서는 극좌표를 쓴다. 파동방정식 $\partial_t^2u=\Delta u$ 의 해를 $u=R(r)\Theta(\theta)T(t)$ 로 놓으면 각 방향은 한 바퀴 돌아 제자리로 와야 하므로 $\Theta(\theta)=\cos m\theta$ 이고 $m$ 은 정수다. 시간 방향은 $T(t)=\cos\omega t$ 다. 남은 반지름 방향은 다음과 같다.
+원판에서는 극좌표를 쓴다. [파동방정식](wave-equation.md) $\partial_t^2u=\Delta u$ 의 해를 $u=R(r)\Theta(\theta)T(t)$ 로 놓으면 각 방향은 한 바퀴 돌아 제자리로 와야 하므로 $\Theta(\theta)=\cos m\theta$ 이고 $m$ 은 정수다. 시간 방향은 $T(t)=\cos\omega t$ 다. 남은 반지름 방향은 다음과 같다.
 
 $$
 r^2R''+rR'+(\omega^2r^2-m^2)R=0
