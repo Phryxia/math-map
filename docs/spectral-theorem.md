@@ -141,5 +141,6 @@ $$
 - [특이값 분해](singular-value-decomposition.md)
 - [Hecke 작용소](hecke-operators.md)
 - [유계 작용소](bounded-operators.md)
+- [Hessian 행렬](hessian.md)
 
 #linear_algebra #analysis #optimization #theorem

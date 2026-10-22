@@ -100,7 +100,7 @@ MP 법칙이 주는 기준은 $\lambda_+ = (1+\sqrt\gamma)^2$ 이고, 가장자�
 
 ## 잡음을 지우는 상관행렬
 
-자산 수백 개의 상관행렬을 추정하면 고윳값 대부분이 MP 받침 안에 들어온다. 받침 안쪽을 잡음으로 보고 밖으로 나온 몇 개(시장 전체 요인, 업종 요인)만 남긴 뒤 나머지를 평평하게 눌러 재구성하는 것이 표준적인 잡음 제거다. 같은 절차가 신호처리의 잡음 부분공간 판정, 뇌영상 자료의 성분 선택, 신경망 Hessian 의 스펙트럼 분석에서도 쓰인다. 어느 경우든 정보가 없을 때의 스펙트럼을 알기 때문에 거기서 벗어난 부분을 신호로 센다.[^1]
+자산 수백 개의 상관행렬을 추정하면 고윳값 대부분이 MP 받침 안에 들어온다. 받침 안쪽을 잡음으로 보고 밖으로 나온 몇 개(시장 전체 요인, 업종 요인)만 남긴 뒤 나머지를 평평하게 눌러 재구성하는 것이 표준적인 잡음 제거다. 같은 절차가 신호처리의 잡음 부분공간 판정, 뇌영상 자료의 성분 선택, 신경망 [Hessian](hessian.md) 의 스펙트럼 분석에서도 쓰인다. 어느 경우든 정보가 없을 때의 스펙트럼을 알기 때문에 거기서 벗어난 부분을 신호로 센다.[^1]
 
 [^1]: Zhidong Bai, Jack W. Silverstein, *Spectral Analysis of Large Dimensional Random Matrices*, 2nd ed., Chapters 3 and 6. MP 법칙의 Stieltjes 변환 증명, 적률의 조합적 표현, 받침 밖 고윳값의 부재. 스파이크 모형은 Jinho Baik, Gérard Ben Arous, Sandrine Péché, *Phase transition of the largest eigenvalue for nonnull complex sample covariance matrices*, Annals of Probability 33 (2005), §1.
 

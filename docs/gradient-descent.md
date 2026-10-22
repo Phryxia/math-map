@@ -38,7 +38,7 @@ $$
 f(y)\thinspace \ge\thinspace f(x)+\nabla f(x)^\top (y-x)+\frac{\mu}{2}\left\lVert y-x\right\rVert^2\quad(\forall x,y)
 $$
 
-두 번 미분가능하면 두 조건은 Hessian 의 스펙트럼 조건 $\mu I\preceq\nabla^2f(x)\preceq LI$ 와 같다. 조건수를 $\kappa=L/\mu$ 로 정의하고 최솟값을 $f^\star$ , 최소점을 $x^\star$ 로 쓴다.
+두 번 미분가능하면 두 조건은 [Hessian](hessian.md) 의 스펙트럼 조건 $\mu I\preceq\nabla^2f(x)\preceq LI$ 와 같다. 조건수를 $\kappa=L/\mu$ 로 정의하고 최솟값을 $f^\star$ , 최소점을 $x^\star$ 로 쓴다.
 
 # 성질
 

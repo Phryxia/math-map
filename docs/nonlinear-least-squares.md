@@ -2,7 +2,7 @@
 
 # 개요
 
-**비선형 최소제곱(nonlinear least squares)** 은 모수에 비선형으로 의존하는 잔차의 제곱합을 최소화하는 문제다. [선형회귀](linear-regression.md)의 정규방정식에 대응하는 닫힌 해가 없으므로 반복법으로 푼다. 잔차의 Jacobian 으로 Hessian 을 근사하는 Gauss–Newton 법과, 그 근사에 감쇠항을 더해 [신뢰영역 방법](trust-region.md)과 같은 걸음을 내는 Levenberg–Marquardt 법이 표준 해법이다.
+**비선형 최소제곱(nonlinear least squares)** 은 모수에 비선형으로 의존하는 잔차의 제곱합을 최소화하는 문제다. [선형회귀](linear-regression.md)의 정규방정식에 대응하는 닫힌 해가 없으므로 반복법으로 푼다. 잔차의 Jacobian 으로 [Hessian](hessian.md) 을 근사하는 Gauss–Newton 법과, 그 근사에 감쇠항을 더해 [신뢰영역 방법](trust-region.md)과 같은 걸음을 내는 Levenberg–Marquardt 법이 표준 해법이다.
 
 # 직관
 

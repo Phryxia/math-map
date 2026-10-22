@@ -64,7 +64,7 @@ $\theta'=\theta$ 에서 우변의 뒤 두 항이 $0$ 이므로 하한과 $J$ 가
 
 ## 자연 경사 방향
 
-$\theta'=\theta+u$ 로 두고 목적을 1차, 제약을 2차까지 전개한다. $L_\theta$ 의 기울기는 정책 경사 $g$ 와 같고, $\bar D_{\mathrm{KL}}$ 의 Hessian 은 Fisher 정보행렬 $F$ 다.
+$\theta'=\theta+u$ 로 두고 목적을 1차, 제약을 2차까지 전개한다. $L_\theta$ 의 기울기는 정책 경사 $g$ 와 같고, $\bar D_{\mathrm{KL}}$ 의 [Hessian](hessian.md) 은 Fisher 정보행렬 $F$ 다.
 
 $$u\thinspace=\thinspace\sqrt{\frac{2\delta}{g^\top F^{-1}g}}\thinspace F^{-1}g$$
 

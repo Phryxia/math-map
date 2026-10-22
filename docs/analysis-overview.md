@@ -87,10 +87,11 @@ graph TD
 
 ## 미분과 적분
 
-먼저 읽을 갈래: Lipschitz 조건과 고정점. 먼저 읽을 것: [선형사상](linear-maps.md)(선형대수 개관). 시작 문서: [미분](derivative.md).
+먼저 읽을 갈래: Lipschitz 조건과 고정점. 먼저 읽을 것: [선형사상](linear-maps.md), [스펙트럼 정리](spectral-theorem.md)(선형대수 개관). 시작 문서: [미분](derivative.md).
 
 - [미분](derivative.md): 국소 선형근사
   - [역함수 정리](inverse-function-theorem.md): 전미분과 연쇄법칙, 역함수 정리와 음함수 정리
+  - [Hessian 행렬](hessian.md): 이계 편미분의 대칭행렬, 이차 Taylor 전개와 임계점의 이계 판정, 볼록성 판정
 - [Riemann 적분](riemann-integral.md): 분할과 상하합, 적분 가능성의 판정
 - [미적분학의 기본 정리](fundamental-calculus.md): 미분과 적분의 역관계
   - [Green 정리](greens-theorem.md): 평면 영역의 이중적분을 경계의 선적분으로 바꾸는 정리, 넓이 공식과 신발끈 공식

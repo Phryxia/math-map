@@ -75,7 +75,7 @@ $$
 
 ## 반복 가중최소제곱
 
-Hessian 은 $\nabla^2\ell(\beta)=-X^{\top}WX$ 이고 $W=\mathrm{diag}\big(V(\mu_i)\big)$ 다. Newton 갱신을 펼치면 각 단계가 가중최소제곱 한 번과 같아진다. 작업반응 $z_i=\eta_i+(y_i-\mu_i)/V(\mu_i)$ 를 두면 갱신이 $\beta\leftarrow(X^{\top}WX)^{-1}X^{\top}Wz$ 다. 이 절차를 반복 가중최소제곱(iteratively reweighted least squares, IRLS)이라 한다.
+[Hessian](hessian.md) 은 $\nabla^2\ell(\beta)=-X^{\top}WX$ 이고 $W=\mathrm{diag}\big(V(\mu_i)\big)$ 다. Newton 갱신을 펼치면 각 단계가 가중최소제곱 한 번과 같아진다. 작업반응 $z_i=\eta_i+(y_i-\mu_i)/V(\mu_i)$ 를 두면 갱신이 $\beta\leftarrow(X^{\top}WX)^{-1}X^{\top}Wz$ 다. 이 절차를 반복 가중최소제곱(iteratively reweighted least squares, IRLS)이라 한다.
 
 ```javascript
 function irls(X, y, A1, A2, steps) {

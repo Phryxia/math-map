@@ -86,7 +86,7 @@ $\beta$ 가 $0$ 에 가까우면 공식의 분모가 작아지고 상대오차�
 - [선형회귀](linear-regression.md)에서 관측을 하나 더 받으면 정규방정식의 행렬이 $X^{\mathsf T}X+x\_{n+1}x\_{n+1}^{\mathsf T}$ 로 바뀐다. 공식으로 역행렬을 갱신하는 것이 순차 최소제곱이고, 상태공간 모형에서 같은 갱신을 하는 것이 [Kalman 필터](kalman-filter.md)의 관측 갱신 단계다.
 - 같은 식에서 관측 하나를 빼면 그 관측을 제외한 적합값이 나온다. 잔차를 $1-h_i$ 로 나눈 꼴의 하나 빼기 교차검증 공식이 이 계산이고, $h_i$ 는 사영행렬의 대각성분이다.
 - [Gauss 과정](gaussian-processes.md)의 예측은 커널 행렬의 역행렬을 쓴다. 자료점을 하나 더하면 커널 행렬이 한 행과 한 열 늘어나고, Woodbury 항등식과 Schur 보수로 옛 역행렬에서 새 역행렬을 만든다.
-- [준뉴턴법](newton-method.md)은 Hessian 근사를 랭크 $1$ 이나 랭크 $2$ 로 갱신한다. 갱신을 역행렬 쪽에 직접 적용하면 매 반복에서 선형계를 푸는 대신 행렬-벡터 곱만 하게 되고, BFGS(Broyden–Fletcher–Goldfarb–Shanno)의 역Hessian 갱신식이 Woodbury 항등식을 두 번 쓴 결과다.
+- [준뉴턴법](newton-method.md)은 [Hessian](hessian.md) 근사를 랭크 $1$ 이나 랭크 $2$ 로 갱신한다. 갱신을 역행렬 쪽에 직접 적용하면 매 반복에서 선형계를 푸는 대신 행렬-벡터 곱만 하게 되고, BFGS(Broyden–Fletcher–Goldfarb–Shanno)의 역Hessian 갱신식이 Woodbury 항등식을 두 번 쓴 결과다.
 
 [^1]: Gene H. Golub and Charles F. Van Loan, *Matrix Computations*, 4th ed., Johns Hopkins University Press (2013), §2.1.4 와 §6.5.4. 갱신 공식의 오차 증폭과 Cholesky 인자 갱신 알고리즘을 다룬다.
 

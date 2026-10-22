@@ -46,7 +46,7 @@ $$
 
 역행렬을 명시적으로 구하지 않고 매 단계 선형계를 푼다. [행렬식](determinants.md)이 0에 가까우면(즉 Jacobian 이 특이에 가까우면) 이 단계가 불안정해진다.
 
-최적화 문제 $\min f(x)$ 에 적용할 때는 $F=\nabla f$ 로 두므로 Jacobian 이 Hessian 이 된다.
+최적화 문제 $\min f(x)$ 에 적용할 때는 $F=\nabla f$ 로 두므로 Jacobian 이 [Hessian](hessian.md) 이 된다.
 
 $$
 x_{k+1} = x_k - H(x_k)^{-1} \nabla f(x_k).

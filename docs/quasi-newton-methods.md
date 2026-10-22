@@ -2,7 +2,7 @@
 
 # 개요
 
-**준Newton 법(quasi-Newton method)** 은 Hessian 을 계산하지 않고 그 근사 행렬을 걸음마다 계급 1 이나 계급 2 로 갱신하는 [Newton 법](newton-method.md)의 변형이다. 갱신은 직전 두 점의 기울기 차에서 읽히는 secant 조건 $B\_{k+1}s\_k=y\_k$ 를 만족하도록 정한다.
+**준Newton 법(quasi-Newton method)** 은 [Hessian](hessian.md) 을 계산하지 않고 그 근사 행렬을 걸음마다 계급 1 이나 계급 2 로 갱신하는 [Newton 법](newton-method.md)의 변형이다. 갱신은 직전 두 점의 기울기 차에서 읽히는 secant 조건 $B\_{k+1}s\_k=y\_k$ 를 만족하도록 정한다.
 
 Hessian 을 만들고 분해하는 비용이 사라지는 대신 수렴 차수가 이차에서 초선형으로 떨어진다. BFGS(Broyden–Fletcher–Goldfarb–Shanno) 갱신과 그 제한 기억 판 L-BFGS 가 미분 가능한 비제약 최소화의 기본 방법이다.
 

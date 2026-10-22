@@ -105,7 +105,7 @@ $H_m$ 의 고윳값을 **Ritz 값**이라 하고 $A$ 의 고윳값 근사로 쓴
 
 - 편미분방정식을 이산화한 큰 희소 계를 푸는 표준 방법이다. 유한요소법과 유한차분법이 만드는 강성행렬이 대칭 양정부호라 공액기울기법이 그대로 쓰인다.
 - 큰 행렬의 극단 [고윳값](eigenvalues.md)을 Lanczos 반복으로 구한다. [스펙트럼 정리](spectral-theorem.md)가 보장하는 직교 고유기저를 전부 만들지 않고 몇 개만 얻는 절차다.
-- Newton 방향을 구할 때 Hessian 을 만들지 않고 Hessian-벡터 곱만으로 계를 푼다. [경사하강법](gradient-descent.md)이 이차형식에서 느린 것과 달리 공액기울기법은 같은 정보로 $\kappa$ 대신 $\sqrt\kappa$ 규모의 반복을 쓴다.
+- Newton 방향을 구할 때 [Hessian](hessian.md) 을 만들지 않고 Hessian-벡터 곱만으로 계를 푼다. [경사하강법](gradient-descent.md)이 이차형식에서 느린 것과 달리 공액기울기법은 같은 정보로 $\kappa$ 대신 $\sqrt\kappa$ 규모의 반복을 쓴다.
 - 행렬함수 $f(A)v$ 를 계산한다. $Q_m f(H_m) e_1 \Vert v\Vert$ 로 근사하면 작은 행렬에서만 $f$ 를 계산하면 되고, 지수함수와 제곱근에 쓰인다.
 
 [^1]: C. Lanczos, "An iteration method for the solution of the eigenvalue problem of linear differential and integral operators", *Journal of Research of the National Bureau of Standards* 45 (1950), 255–282.
