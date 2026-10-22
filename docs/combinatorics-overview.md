@@ -130,6 +130,7 @@ graph TD
   - [최장 증가 부분수열](longest-increasing-subsequence.md): 꼬리 배열로 길이를 구하는 알고리즘, RSK 모양의 첫 행이 그 길이라는 Schensted 정리, 무작위 순열에서의 Tracy–Widom 요동
 - [Schur–Weyl 쌍대성](schur-weyl-duality.md): 텐서곱에 작용하는 대칭군과 일반선형군이 서로의 중심화대수가 된다
   - [Brauer 대수](brauer-algebras.md): 완전 짝짓기 도형이 기저인 대수, 직교군과 심플렉틱군 쪽의 중심화대수
+- [클러스터 대수](cluster-algebras.md): 변이라는 교환 규칙으로 생성한 가환환, 모든 변수가 Laurent 다항식이고 유한형이 Dynkin 도형으로 분류된다
 - [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md): Coxeter 군의 Hecke 대수에 정의되는 다항식, 기약표현의 지표 중복도를 준다
   - [범주 O](category-o.md): 무게 분해가 되는 Lie 대수 가군의 범주, Verma 가군의 합성열이 조합 자료가 된다
 
