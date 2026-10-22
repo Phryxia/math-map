@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-22T09:03:00.017Z",
-  "nextSeq": 2361,
+  "savedAt": "2026-10-22T13:05:02.896Z",
+  "nextSeq": 2368,
   "items": [
     {
       "id": "9bab7237",
@@ -482,6 +482,14 @@
       "note": "76차(2026-10-20) 결과. 뺀 항목 열. a13b8d9d(model-selection: information-criteria 와 cross-validation 과 bias-variance-decomposition 과 regularization 이 모두 있다), 3dfff8be(Alon–Boppana: expander-graphs:60 절), 33e35baf(Kleene 고정점: domain-theory:53 절), 6090d14a(Solovay–Kitaev: 이 회차에 문서로 썼다), b1f43504(Kac–Moody: affine-lie-algebras:57 절), 8f7d693e(Nielsen–Thurston: mapping-class-group:43 절), a18bfa4f(Borel 조절자: bloch-group:73 절), 0fa48047(Dehn 수술: dehn-surgery.md), c661b591(수술 이론: surgery-theory.md), 96ba0f25(Kervaire–Milnor: exotic-spheres:51 절), 8585373a(Coleman–Mazur 고윳값 곡선: eigenvariety.md 가 스펙트럼 곡선과 고유다양체 절로 다루고 Coleman 을 네 번 적는다). 남긴 항목 둘. 2de49d51(Temperley–Lieb 대수와 부분인자)은 temperley-lieb-algebras.md 가 있으나 부분인자(subfactor) 언급이 0 회이므로 부분인자 쪽이 실제 빈자리다. 50f81215(Kirby 계산법과 4 차원 손잡이 분해)는 dehn-surgery:74 가 Kirby 이동을 다루지만 4 차원 손잡이 분해는 아직 없다. 판정에 쓴 절차는 세 단계다. (1) ls docs | grep -iE 로 파일명, (2) grep -nE \"^##+ .*(이름 조각)\" docs/*.md 로 절 제목, (3) 조각이 여러 문서에 흩어져 있으면 그 문서들의 헤딩 목록을 본다. 1 단계만으로는 절로 들어간 개념을 놓치고(메모 d0f6bdd6), 겹이름을 점 하나로 grep 하면 en dash 때문에 2 단계가 통째로 빈다(메모 9123c552). 큐의 p3~p6 구간이 이 꼴의 항목으로 차 있으므로 다음 회차들도 꺼내기 전에 세 단계를 돌린다.",
       "createdAt": "2026-10-20T12:49:58.913Z",
       "seq": 2289
+    },
+    {
+      "id": "04aaf5f2",
+      "title": "미링크 손 검사 오탐 3 건 추가 (2026-10-22)",
+      "priority": 50,
+      "note": "9절 미링크 손 검사가 더 긴 용어의 일부를 잡은 오탐. bc871443 의 목록에 더한다. (1) kpz-universality 의 'Kingman 의 아가법 에르고딕 정리' 가 ergodic-theorem 미링크로 보고된다. Birkhoff 정리와 다른 정리다. (2) kpz-universality 의 '확률 열방정식'(stochastic heat equation)이 heat-equation 미링크로 보고된다. 다른 방정식이다. (3) ising-model 의 'Markov 연쇄 Monte Carlo', 'Markov 연쇄의 혼합시간' 링크 텍스트 안의 'Markov 연쇄' 가 markov-chains 미링크로 보고된다. 또 회차 시작 전부터 있던 보고 넷: combinatorics-overview 의 Grassmann 다양체(MV 순환 설명의 '아핀 Grassmann 다양체'), order-theory-overview 의 Rice 정리, functional-analysis-overview 의 Bott 주기성과 Haagerup 성질. 개관 설명 안의 이름이라 갈래 순서 규칙(85cb6359)과 함께 판정해야 한다.",
+      "createdAt": "2026-10-22T13:04:52.996Z",
+      "seq": 2367
     },
     {
       "id": "08e59419",
@@ -3244,6 +3252,46 @@
       "seq": 2360
     },
     {
+      "id": "226771e6",
+      "title": "ising-model 의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-22 회차에 새로 썼다(부모 potts-model 과 percolation, 확률 개관 '조건부 구조와 이산시간 확률과정' 갈래에서 침투 아래 곁가지). 리프다. 후속 후보: (1) 무작위 클러스터 모형을 Potts 정의 절에서 떼어 독립 문서로(FKG, 비교 부등식, q>=1 의 임계점). (2) Glauber 동역학의 혼합시간(Dobrushin 조건, 낮은 온도의 지수 하한). (3) 2 차원 임계 Ising 의 등각 불변성과 SLE(3). (4) Gibbs 측도와 DLR 조건.",
+      "createdAt": "2026-10-22T12:44:36.740Z",
+      "seq": 2361
+    },
+    {
+      "id": "de80065f",
+      "title": "kirby-calculus 의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-22 회차에 새로 썼다(부모 morse-theory, intersection-form, dehn-surgery, 자식 reshetikhin-turaev). 후속 후보: (1) Akbulut 코르크와 이색 R^4(활용 셋째가 이름만 쓴다). (2) Cerf 이론(Kirby 정리의 증명 요지가 이름만 쓴다, morse-theory 아래). (3) Poincaré 호몰로지 구면과 E8 연결 도형(plumbing). (4) Laudenbach-Poénaru 정리는 이 문서 성질 절에 진술만 있다.",
+      "createdAt": "2026-10-22T12:44:36.884Z",
+      "seq": 2362
+    },
+    {
+      "id": "19b463c2",
+      "title": "cluster-algebras 의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-22 회차에 새로 썼다(부모 polynomial-rings, root-systems, 조합론 개관 '대수적 조합론' 갈래). 리프다. 후속 후보: (1) 스펙트럼 네트워크(큐 3f7be672, exact-wkb 와 이 문서 아래). (2) 곡면의 삼각분할과 클러스터 대수(Fomin-Shapiro-Thurston, teichmuller-space 와 이 문서 아래). (3) Zamolodchikov 주기성과 Y 계(직관 절의 주기 5 가 A2 의 경우). (4) 계수 있는 클러스터 대수와 g 벡터, 산란 도형.",
+      "createdAt": "2026-10-22T12:47:32.018Z",
+      "seq": 2363
+    },
+    {
+      "id": "6ccd81f9",
+      "title": "james-stein-estimator 의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-22 회차에 새로 썼다. 리프다. 후속 후보: (1) 경험 Bayes(Robbins 공식, Tweedie 공식, Efron-Morris), statistics 갈래 '추정' 의 bayesian-inference 아래. (2) Stein 의 비편향 위험 추정(SURE), regularization 과 이 문서 아래. (3) Stein 방법(정규근사의 Stein 방정식, central-limit-theorem 아래, 이 문서의 Stein 항등식이 출발점).",
+      "createdAt": "2026-10-22T12:54:43.562Z",
+      "seq": 2365
+    },
+    {
+      "id": "0263dd0a",
+      "title": "2026-10-22 회차 새 문서 다섯의 후속 간선",
+      "priority": 10,
+      "note": "scott-d-infinity(부모 domain-theory, lambda-calculus): 후속 후보 Böhm 나무, Plotkin 의 PCF 와 완전 추상성, 영역 방정식의 범주론적 해(Smyth-Plotkin). nystrom-method(부모 compact-operators, gaussian-quadrature): Galerkin 법과 적분방정식의 투영법, 특이 핵의 구적. kpz-universality(부모 tracy-widom, longest-increasing-subsequence): Airy 과정, 확률 열방정식, 방향성 중합체. zeta-regularized-determinant(부모 laplace-beltrami-operator, riemann-zeta): 열핵 전개와 Minakshisundaram-Pleijel 계수, Polyakov 공식. quantum-chaos(부모 laplace-beltrami-operator, wigner-semicircle): 양자 유일 에르고딕성(Rudnick-Sarnak), Berry 무작위 파동 모형. stein-method(부모 central-limit-theorem, normal-distribution): Chen-Stein Poisson 근사, 교환가능한 쌍, 4 차 적률 정리. 다섯 모두 리프다.",
+      "createdAt": "2026-10-22T13:04:52.882Z",
+      "seq": 2366
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -3628,14 +3676,6 @@
       "seq": 1454
     },
     {
-      "id": "50f81215",
-      "title": "Kirby 계산법과 4 차원 손잡이 분해",
-      "priority": 4,
-      "note": "reshetikhin-turaev 의 선수지식 후보. Lickorish-Wallace, Kirby I/II 이동, 이음수 행렬과 교차형식, 4 다양체 쪽 연결",
-      "createdAt": "2026-09-13T22:57:49.893Z",
-      "seq": 160
-    },
-    {
       "id": "08170aab",
       "title": "Arthur 의 고전군 내시 분류",
       "priority": 4,
@@ -3714,14 +3754,6 @@
       "note": "kolyvagin-systems 아래. 핵심계수 1 을 확인해도 생성원을 실제로 만드는 문제는 남는다. Rubin-Stark 추측, Kato 의 zeta 원소 구성, 어떤 동기에 Euler 계가 있는지가 열린 문제라는 지점",
       "createdAt": "2026-09-14T05:09:45.032Z",
       "seq": 216
-    },
-    {
-      "id": "75c457d6",
-      "title": "KPZ 보편성류",
-      "priority": 4,
-      "note": "tracy-widom 아래. 1:2:3 스케일링, 모서리 성장과 ASEP, 방향성 중합체, KPZ 방정식과 고정점",
-      "createdAt": "2026-09-14T20:52:11.260Z",
-      "seq": 232
     },
     {
       "id": "3f7be672",
@@ -3820,12 +3852,12 @@
       "seq": 1180
     },
     {
-      "id": "c512345c",
-      "title": "양자 혼돈과 고윳값 통계",
-      "priority": 3,
-      "note": "selberg-trace-formula 아래. GOE/GUE 대 Poisson, 산술 곡면의 예외, Montgomery-Odlyzko 와 zeta 영점 간격",
-      "createdAt": "2026-09-13T19:12:19.670Z",
-      "seq": 116
+      "id": "c738b0ac",
+      "title": "Ledoit–Wolf 축소와 스펙트럼 역산",
+      "priority": 4,
+      "note": "옛 항목 1b7a084c 를 나눈 나머지. 2026-10-22 회차에 그 항목의 축소 추정 쪽 바탕으로 james-stein-estimator 를 썼다(부모 bias-variance-decomposition, normal-distribution). 남은 것: Ledoit-Wolf 의 최적 축소 비율, 관측 스펙트럼에서 참 스펙트럼을 Stieltjes 변환으로 역산(El Karoui, 비선형 축소). 부모는 marchenko-pastur 와 james-stein-estimator.",
+      "createdAt": "2026-10-22T12:54:43.421Z",
+      "seq": 2364
     },
     {
       "id": "340146bb",
@@ -3844,52 +3876,12 @@
       "seq": 188
     },
     {
-      "id": "cd44aa28",
-      "title": "Scott 위상과 D = D^D 의 구성",
-      "priority": 3,
-      "note": "domain-theory 아래. 역극한 구성, 사영쌍, lambda-calculus 의 최초 모형, 위상으로 본 관측 가능성",
-      "createdAt": "2026-09-14T01:15:47.027Z",
-      "seq": 189
-    },
-    {
-      "id": "aaceded4",
-      "title": "클러스터 대수와 뒤집기",
-      "priority": 3,
-      "note": "DDP 공식, 스펙트럼 네트워크, 삼각분할이 모두 쓰는 구조인데 문서가 없다. 교환 관계, Laurent 현상, 유한형 분류",
-      "createdAt": "2026-09-15T00:44:51.309Z",
-      "seq": 241
-    },
-    {
-      "id": "8610ee3c",
-      "title": "제타 정규화 행렬식과 해석적 비틀림",
-      "priority": 3,
-      "note": "fredholm-determinant 아래. exp(-zeta'(0)) 의 정의, 열핵 전개, Ray-Singer 비틀림, 자취류가 아닌 대상의 행렬식",
-      "createdAt": "2026-09-15T00:49:34.214Z",
-      "seq": 243
-    },
-    {
       "id": "9f904ab0",
       "title": "Airy 핵의 적분 표현과 양의 준정부호성",
       "priority": 3,
       "note": "tracy-widom 과 fredholm-determinant 사이. int_0^inf Ai(x+t)Ai(y+t)dt 가 왜 같은 핵인지, 사영작용소로서의 해석, 고유값이 [0,1] 에 드는 이유",
       "createdAt": "2026-09-15T00:55:11.182Z",
       "seq": 245
-    },
-    {
-      "id": "365ca162",
-      "title": "Nystrom 법과 적분방정식의 이산화",
-      "priority": 3,
-      "note": "fredholm-determinant 의 구적이 쓰는 방법. 수렴 정리, 해석적 핵에서의 지수수렴, Galerkin 과의 비교",
-      "createdAt": "2026-09-15T00:55:11.306Z",
-      "seq": 246
-    },
-    {
-      "id": "1b7a084c",
-      "title": "축소 추정과 스펙트럼 역산",
-      "priority": 3,
-      "note": "marchenko-pastur 아래. Ledoit-Wolf 축소, 관측 스펙트럼에서 참 스펙트럼을 Stieltjes 변환으로 역산, 역행렬이 필요한 응용에서 왜 중요한지",
-      "createdAt": "2026-09-15T00:58:41.457Z",
-      "seq": 247
     },
     {
       "id": "66f11efb",
