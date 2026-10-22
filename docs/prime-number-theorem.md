@@ -70,7 +70,7 @@ $\rho=\beta+i\gamma$ 이면 $\lvert x^\rho\rvert=x^\beta$ 이므로 $\beta$ 가 
 
 명시 공식의 영점 합은 절대수렴하지 않으므로 유한한 높이 $T$ 에서 자르고 꼬리를 따로 추정한다. 잘린 공식은 $\psi(x)=x+O(x(\ln x)^2/T)+O(\sum_{\lvert\gamma\rvert\le T}x^\beta/\lvert\rho\rvert)$ 꼴이고, 무영점 영역이 $\beta$ 를 $1$ 에서 떼어 놓아 둘째 항을 $x$ 보다 작게 만든다. Hadamard 와 de la Vallée Poussin 이 1896 년에 독립적으로 이 길을 완성했다.
 
-Tauber 형 정리를 쓰면 자르기 없이 끝난다. $\sum\Lambda(n)n^{-s}$ 가 $\mathrm{Re}\thinspace s=1$ 까지 정칙으로 연장된다는 사실에서 Newman 의 Tauber 정리가 $\psi(x)\sim x$ 를 바로 준다. 복소해석을 쓰지 않는 Erdős 와 Selberg 의 증명은 1949 년에 나왔다.
+[Tauber 정리](tauberian-theorems.md)를 쓰면 자르기 없이 끝난다. $\sum\Lambda(n)n^{-s}$ 가 $\mathrm{Re}\thinspace s=1$ 까지 정칙으로 연장된다는 사실에서 Newman 의 Tauber 정리가 $\psi(x)\sim x$ 를 바로 준다. 복소해석을 쓰지 않는 Erdős 와 Selberg 의 증명은 1949 년에 나왔다.
 
 ## 오차항
 

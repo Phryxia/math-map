@@ -74,4 +74,4 @@ $n$ 차원에서는 같은 증명으로 상한이 $(2\pi)^n/(\omega_n^2j_{n/2-1,
 
 아직 연결한 문서가 없다.
 
-#analysis #differential_geometry #theorem
+#differential_geometry #analysis #theorem

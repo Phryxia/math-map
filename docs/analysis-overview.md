@@ -136,7 +136,6 @@ graph TD
 - [Brunn–Minkowski 부등식](brunn-minkowski.md): Minkowski 합의 부피 하한, 상자 분해 증명과 Prékopa–Leindler 부등식
   - [등주부등식](isoperimetric-inequality.md): 길이를 고정한 넓이의 최대, 정류 곡선이 원인 것과 Hurwitz 의 Fourier 증명
     - [Faber–Krahn 부등식](faber-krahn.md): 부피가 같은 영역 가운데 Dirichlet 첫 고윳값이 가장 작은 것은 공이다, 대칭 감소 재배열과 Pólya–Szegő 부등식, Krahn–Szegő 정리
-      - [Courant 마디 영역 정리](courant-nodal-domain-theorem.md): k 번째 Dirichlet 고유함수의 마디 영역은 k 개 이하다, 유일 연속 정리를 쓴 증명과 Weyl 법칙과 Faber–Krahn 부등식에서 나오는 Pleijel 정리
 - [혼합부피](mixed-volumes.md): Minkowski 합의 부피를 계수별로 분해한 양, Steiner 공식과 Alexandrov–Fenchel 부등식
 - [내재부피](intrinsic-volumes.md): 주변 차원에 의존하지 않는 기하량의 족, Hadwiger 정리와 Kubota 투영 공식
 - [McMullen 분해](mcmullen-decomposition.md): 평행이동 불변 평가의 공간을 동차차수로 가른 직합, Alesker 조밀성 정리
@@ -156,6 +155,7 @@ graph TD
 먼저 읽을 갈래: 측도와 복소평면으로의 확장. 시작 문서: [멱급수](power-series.md).
 
 - [멱급수](power-series.md): 수렴반경과 해석성
+  - [Tauber 정리](tauberian-theorems.md): 평균의 수렴에 항의 조건을 더해 급수의 수렴과 점근을 얻는 정리, Tauber 와 Hardy–Littlewood 의 정리와 Karamata 의 다항식 근사 증명
   - [쌍곡함수](hyperbolic-functions.md): 지수함수를 짝과 홀로 가른 두 함수, 삼각 항등식과 부호만 다른 항등식
 - [점근급수](asymptotic-series.md): 수렴을 요구하지 않는 전개와 나머지항 조건, 최적 절단, Watson 보조정리
 - [Euler–Maclaurin 공식](euler-maclaurin.md): 합과 적분의 차이를 도함수 값의 급수로 전개

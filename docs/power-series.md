@@ -181,4 +181,8 @@ $$
 - [Bernoulli 수](bernoulli-numbers.md)
 - [점근급수](asymptotic-series.md)
 
+### 수렴원의 경계에서의 거동
+
+- [Tauber 정리](tauberian-theorems.md)
+
 #analysis #complex_analysis #combinatorics #optimization

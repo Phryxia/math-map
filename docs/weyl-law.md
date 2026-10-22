@@ -122,7 +122,7 @@ $$
 
 은 $t\to 0^+$ 에서 $\theta(t)\sim\mathrm{vol}\_g(M)\thinspace(4\pi t)^{-n/2}$ 를 만족한다[^3]. 짧은 시간에 [열방정식](heat-equation.md)의 해는 한 점 근처만 보므로, 열핵(heat kernel)이 대각선 근처에서 $\mathbb R^n$ 의 열핵 $(4\pi t)^{-n/2}e^{-\Vert x-y\Vert^2/4t}$ 와 같아진다. 대각선에서 적분하면 위 식이다.
 
-Karamata Tauber 정리(Karamata's Tauberian theorem)는 증가함수 $N$ 에 대해 $\int_0^\infty e^{-t\lambda}dN(\lambda)\sim At^{-\alpha}$ $(t\to 0^+)$ 이면 $N(\lambda)\sim A\lambda^\alpha/\Gamma(\alpha+1)$ 이라는 정리다. $\alpha=n/2$, $A=\mathrm{vol}\_g(M)(4\pi)^{-n/2}$ 를 넣으면 다양체의 Weyl 법칙이 나온다.
+[Tauber 정리](tauberian-theorems.md) 가운데 Karamata Tauber 정리(Karamata's Tauberian theorem)는 증가함수 $N$ 에 대해 $\int_0^\infty e^{-t\lambda}dN(\lambda)\sim At^{-\alpha}$ $(t\to 0^+)$ 이면 $N(\lambda)\sim A\lambda^\alpha/\Gamma(\alpha+1)$ 이라는 정리다. $\alpha=n/2$, $A=\mathrm{vol}\_g(M)(4\pi)^{-n/2}$ 를 넣으면 다양체의 Weyl 법칙이 나온다.
 
 ## 스펙트럼이 정하는 양
 
@@ -175,6 +175,7 @@ $$
 
 - [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)
 - [스펙트럼 정리](spectral-theorem.md)
+- [Tauber 정리](tauberian-theorems.md)
 
 ## 더 알아보기
 
