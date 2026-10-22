@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-22T13:05:02.896Z",
-  "nextSeq": 2368,
+  "savedAt": "2026-10-22T17:01:13.262Z",
+  "nextSeq": 2372,
   "items": [
     {
       "id": "9bab7237",
@@ -1282,6 +1282,14 @@
       "note": "옛 큐 ebb32287 의 판정. geometric-satake 의 정의 절 '## 아핀 Grassmann 다양체'(함자 정의, ind-사영 ind-스킴, GL_n 격자 묘사)와 '## 궤도와 IC 층'(Cartan 분해, 궤도 차원, 폐포 순서), mv-cycles 의 정의 절과 '## 아핀 Grassmann 다양체의 특이점' 이 이 대상을 이미 다룬다. 별도 문서를 만들면 geometric-satake 의 두 절과 통째로 겹친다. 다룰 내용이 늘어 geometric-satake 가 커지면 그때 8절 분할로 뗀다.",
       "createdAt": "2026-10-22T04:58:57.776Z",
       "seq": 2354
+    },
+    {
+      "id": "3adb5617",
+      "title": "균등유계성 원리를 별도 문서로 둘지 판단",
+      "priority": 20,
+      "note": "functional_analysis. baire-category:51 과 banach-spaces:66 두 문서가 같은 정리를 각자 절로 담는다. open-mapping-theorem 처럼 별도 문서(uniform-boundedness)로 모으고 두 절을 링크로 줄일지 8절 기준으로 판단한다.",
+      "createdAt": "2026-10-22T17:01:12.348Z",
+      "seq": 2371
     },
     {
       "id": "410fd79d",
@@ -3292,6 +3300,14 @@
       "seq": 2366
     },
     {
+      "id": "80b8368a",
+      "title": "중심점 정리",
+      "priority": 10,
+      "note": "combinatorics/optimization. helly-theorem 활용 첫째가 진술과 증명 요지만 쓴다. Rado 의 중심점 정리, Tukey 깊이, 중심점 계산 알고리즘. 부모 후보 helly-theorem. 저장소에 없다(centerpoint).",
+      "createdAt": "2026-10-22T17:01:12.213Z",
+      "seq": 2370
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -3722,14 +3738,6 @@
       "note": "deformation-rings 아래. 보조 소수로 쌍대 Selmer 를 죽이는 이유, 패칭 극한, 완전교차 판정, Calegari-Geraghty 의 유도 판본",
       "createdAt": "2026-09-14T01:01:59.588Z",
       "seq": 182
-    },
-    {
-      "id": "64488c1c",
-      "title": "Ribet 의 레벨 낮추기와 Frey 곡선",
-      "priority": 4,
-      "note": "serre-conjecture 아래. epsilon 추측, Mazur 원리, Frey 곡선의 mod p 표현이 레벨 2 로 내려가 모순, FLT 의 최종 조립",
-      "createdAt": "2026-09-14T01:06:12.331Z",
-      "seq": 184
     },
     {
       "id": "9c13738c",
