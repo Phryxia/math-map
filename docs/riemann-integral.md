@@ -125,5 +125,6 @@ Lebesgue 적분은 [단조수렴](monotone-convergence.md)과 [지배수렴](dom
 - [미적분학의 기본 정리](fundamental-calculus.md)
 - [Lebesgue 적분](lebesgue-integral.md)
 - [Fourier 급수](fourier-series.md)
+- [Newton–Cotes 공식](newton-cotes.md)
 
 #analysis #measure_theory #functional_analysis
