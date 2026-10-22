@@ -90,6 +90,7 @@ graph TD
 먼저 읽을 갈래: Lipschitz 조건과 고정점. 먼저 읽을 것: [선형사상](linear-maps.md), [스펙트럼 정리](spectral-theorem.md)(선형대수 개관). 시작 문서: [미분](derivative.md).
 
 - [미분](derivative.md): 국소 선형근사
+  - [다항식 보간](polynomial-interpolation.md): 주어진 점들의 값을 지나는 유일한 다항식, Lagrange 꼴과 Newton 꼴, 오차 공식과 Runge 현상
   - [역함수 정리](inverse-function-theorem.md): 전미분과 연쇄법칙, 역함수 정리와 음함수 정리
 - [Hessian 행렬](hessian.md): 이계 편미분의 대칭행렬, 이차 Taylor 전개와 임계점의 이계 판정, 볼록성 판정
 - [Laplace 연산자](laplace-operator.md): Hessian 의 대각합, 구면 평균과의 차를 재는 평균값 공식, 회전 불변성과 극좌표 표현, 고윳값의 Weyl 법칙

@@ -106,6 +106,7 @@ $$
 ## 선수지식
 
 - [직교다항식](orthogonal-polynomials.md)
+- [다항식 보간](polynomial-interpolation.md)
 
 ## 더 알아보기
 

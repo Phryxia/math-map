@@ -106,7 +106,7 @@ $$
 K[X]/\big((X-c_1)\cdots(X-c_k)\big)\ \cong\ \prod_{i=1}^{k} K
 $$
 
-이 동형이 Lagrange 보간이다. 오른쪽의 값 튜플 $(b_1,\dots,b_k)$ 에 대응하는 차수 $k-1$ 이하의 다항식이 유일하게 존재한다는 진술이 CRT 의 특수한 경우다.
+이 동형이 Lagrange [다항식 보간](polynomial-interpolation.md)이다. 오른쪽의 값 튜플 $(b_1,\dots,b_k)$ 에 대응하는 차수 $k-1$ 이하의 다항식이 유일하게 존재한다는 진술이 CRT 의 특수한 경우다.
 
 # 활용
 

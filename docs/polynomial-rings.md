@@ -119,5 +119,6 @@ $$
 - [대수다양체](algebraic-varieties.md)
 - [대칭함수](symmetric-functions.md)
 - [클러스터 대수](cluster-algebras.md)
+- [다항식 보간](polynomial-interpolation.md)
 
 #ring_theory #algebra #field_theory

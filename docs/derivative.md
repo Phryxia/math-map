@@ -112,6 +112,7 @@ $$
 - [멱급수](power-series.md)
 - [상미분방정식](ordinary-differential-equations.md)
 - [정칙함수](holomorphic-functions.md)
+- [다항식 보간](polynomial-interpolation.md)
 
 ### 최적화와 통계
 
