@@ -75,7 +75,7 @@ $g$ 가 유일한 최솟점 $\theta^\ast$ 를 갖고 $\theta\ne\theta^\ast$ 에�
 
 ## 수렴 속도
 
-$\alpha_t=a/t$ 와 $c_t=c\thinspace t^{-1/6}$ 으로 잡고 $g$ 가 $\theta^\ast$ 에서 세 번 미분 가능하면 $t^{1/3}(\theta_t-\theta^\ast)$ 가 정규분포로 수렴한다[^2]. 오차는 $O(t^{-1/3})$ 이다.
+$\alpha_t=a/t$ 와 $c_t=c\thinspace t^{-1/6}$ 으로 잡고 $g$ 가 $\theta^\ast$ 에서 세 번 미분 가능하면 $t^{1/3}(\theta_t-\theta^\ast)$ 가 [정규분포](normal-distribution.md)로 수렴한다[^2]. 오차는 $O(t^{-1/3})$ 이다.
 
 기울기의 불편추정을 쓰는 Robbins–Monro 절차의 오차는 $O(t^{-1/2})$ 다. 차분을 쓰면 편향 $c_t^2$ 와 잡음 $1/c_t$ 를 함께 억제해야 하므로 $c_t$ 를 줄이는 속도가 양쪽에서 제한된다. 보폭 일정을 $c_t=c\thinspace t^{-\gamma}$ 로 두면 편향에서 오는 오차가 $t^{-2\gamma}$, 잡음에서 오는 오차가 $t^{-(1-2\gamma)/2}$ 이고, 두 지수가 같아지는 $\gamma=1/6$ 에서 $t^{-1/3}$ 이 나온다.
 

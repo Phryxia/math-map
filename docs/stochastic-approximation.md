@@ -42,7 +42,7 @@ $$\mathbb E\lbrack V_{t+1}\mid\mathcal F_t\rbrack\le V_t+2\alpha_t(\theta_t-\the
 
 ## 수렴 속도
 
-$f$ 가 $\theta^\ast$ 에서 미분 가능하고 $\alpha_t=a/t$ 이면 $\sqrt t\thinspace(\theta_t-\theta^\ast)$ 가 정규분포로 수렴한다. 점근 분산은 $a$ 에 따라 달라지고, $a$ 가 너무 작으면 발산한다. 보폭을 $t^{-\beta}$ 로 $1/2\lt\beta\lt 1$ 에서 잡고 반복값을 평균하면 $a$ 를 고르지 않고도 최적의 점근 분산에 닿는다.
+$f$ 가 $\theta^\ast$ 에서 미분 가능하고 $\alpha_t=a/t$ 이면 $\sqrt t\thinspace(\theta_t-\theta^\ast)$ 가 [정규분포](normal-distribution.md)로 수렴한다. 점근 분산은 $a$ 에 따라 달라지고, $a$ 가 너무 작으면 발산한다. 보폭을 $t^{-\beta}$ 로 $1/2\lt\beta\lt 1$ 에서 잡고 반복값을 평균하면 $a$ 를 고르지 않고도 최적의 점근 분산에 닿는다.
 
 ## 축약사상 판본
 

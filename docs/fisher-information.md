@@ -92,7 +92,7 @@ $$
 
 # 활용
 
-- **[최대가능도 추정](maximum-likelihood.md)의 점근분산.** 정칙 조건 아래 $\sqrt n(\hat\theta-\theta)$ 가 평균 $0$ 이고 공분산 $I(\theta)^{-1}$ 인 정규분포로 수렴한다. 하한과 일치하므로 최대가능도 추정량이 점근적으로 효율적이다.
+- **[최대가능도 추정](maximum-likelihood.md)의 점근분산.** 정칙 조건 아래 $\sqrt n(\hat\theta-\theta)$ 가 평균 $0$ 이고 공분산 $I(\theta)^{-1}$ 인 [정규분포](normal-distribution.md)로 수렴한다. 하한과 일치하므로 최대가능도 추정량이 점근적으로 효율적이다.
 - **[신뢰구간](confidence-intervals.md).** 위의 점근분포에서 $\hat\theta\pm z\_{\alpha/2}\sqrt{(nI(\hat\theta))^{-1}}$ 꼴의 Wald 구간이 나온다. 분모에 관측 Fisher 정보를 넣는 변형도 쓴다.
 - **Fisher scoring.** [Newton 방법](newton-method.md)에서 Hessian 을 $I(\theta)$ 로 바꾼 반복이고, 일반화선형모형의 표준 적합 절차 IRLS(iteratively reweighted least squares)가 그 구체형이다. [지수족](exponential-families.md)의 자연매개화에서는 Hessian 이 이미 공분산이라 두 방법이 일치한다.
 - **자연 경사법.** 확률분포족 위의 최적화에서 걸음을 $I(\theta)^{-1}\nabla$ 로 잡는다. 유클리드 거리 대신 Fisher–Rao 계량으로 보폭을 재는 것이고, [신뢰영역 정책 최적화](trust-region-policy-optimization.md)의 KL 제약이 이 형태로 풀린다.

@@ -90,7 +90,7 @@ $J(x^\ast)$ 의 rank 가 $n$ 보다 작으면 극소점이 점이 아니라 다�
 
 # 활용
 
-- **곡선 맞춤.** 반응이 모수에 비선형으로 의존하는 모형(지수 감쇠, Michaelis–Menten 식, Gauss 봉우리의 합)의 계수 추정이 비선형 최소제곱 문제다. 잔차가 독립 등분산 정규분포를 따르면 이 해가 [최대가능도 추정](maximum-likelihood.md)의 해다.
+- **곡선 맞춤.** 반응이 모수에 비선형으로 의존하는 모형(지수 감쇠, Michaelis–Menten 식, Gauss 봉우리의 합)의 계수 추정이 비선형 최소제곱 문제다. 잔차가 독립 등분산 [정규분포](normal-distribution.md)를 따르면 이 해가 [최대가능도 추정](maximum-likelihood.md)의 해다.
 - **번들 조정.** 여러 시점의 영상에서 카메라의 자세와 점의 3차원 좌표를 함께 추정할 때, 영상 좌표의 재투영 오차가 잔차다. Jacobian 이 희소하므로 $J^{\mathsf T}J$ 의 블록 구조를 써서 [Schur 보수](schur-complement.md)로 변수를 소거한다.
 - **신경망의 2차 방법.** 제곱오차를 쓰는 회귀 신경망에서 $J^{\mathsf T}J$ 는 Gauss–Newton 행렬이고 준양정부호다. 전체 Hessian 과 달리 안장점에서도 준양정부호여서, 이 근사 위에서 자연기울기 방법과 K-FAC(Kronecker-factored approximate curvature)이 구성된다.
 - **역문제의 정칙화.** 관측에서 계수를 복원하는 문제에서 $\lambda$ 를 수렴 보조 수단이 아니라 정칙화 모수로 둔다. 감쇠항 $\lambda\Vert p\Vert^2$ 가 Tikhonov 정칙화와 같은 형태이고, $\lambda$ 를 관측 잡음 수준으로 고정하면 해가 잡음에 안정해진다.

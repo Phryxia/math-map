@@ -24,7 +24,7 @@
 
 $$P_0\lbrace \exists k:\thinspace\lvert Z_k\rvert\ge c_k\rbrace=\alpha$$
 
-**정보 비율**은 $t_k=n_k/n_K$ 다. $Z_k$ 들의 결합분포는 귀무가설 아래에서 $\mathrm{Cov}(Z_j,Z_k)=\sqrt{t_j/t_k}$ 인 다변량 정규분포로 근사된다.
+**정보 비율**은 $t_k=n_k/n_K$ 다. $Z_k$ 들의 결합분포는 귀무가설 아래에서 $\mathrm{Cov}(Z_j,Z_k)=\sqrt{t_j/t_k}$ 인 다변량 [정규분포](normal-distribution.md)로 근사된다.
 
 ## 알파 소비 함수
 

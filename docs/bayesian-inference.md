@@ -102,7 +102,7 @@ $$
 
 ## Normal–Normal
 
-분산 $\sigma^2$ 을 아는 정규표본 $x_1, \dots, x_n$ 에 평균의 사전분포를 $N(\mu_0, \tau_0^2)$ 로 주면, 정밀도(precision)를 $\lambda = 1/\text{분산}$ 으로 쓸 때 사후분포는 정규분포이고
+분산 $\sigma^2$ 을 아는 정규표본 $x_1, \dots, x_n$ 에 평균의 사전분포를 $N(\mu_0, \tau_0^2)$ 로 주면, 정밀도(precision)를 $\lambda = 1/\text{분산}$ 으로 쓸 때 사후분포는 [정규분포](normal-distribution.md)이고
 
 $$
 \lambda_n = \lambda_0 + n\lambda, \qquad
