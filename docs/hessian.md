@@ -8,7 +8,7 @@ $$
 H_f(a)=\Bigl(\frac{\partial^2 f}{\partial x_i\partial x_j}(a)\Bigr)\_{i,j=1}^n
 $$
 
-이다. 일계 [미분](derivative.md)이 $f$ 를 일차함수로 근사하듯 Hessian 은 그 다음 항, 곧 이차 근사를 준다. 임계점이 극소인지 극대인지 안장점인지를 Hessian 의 고윳값 부호로 판정하고, 그 근거가 [스펙트럼 정리](spectral-theorem.md)다.
+이다. 일계 [미분](derivative.md)이 $f$ 를 일차함수로 근사하듯 Hessian 은 그 다음 항, 곧 이차 근사를 준다. Hessian 의 대각합이 [Laplace 연산자](laplace-operator.md)다. 임계점이 극소인지 극대인지 안장점인지를 Hessian 의 고윳값 부호로 판정하고, 그 근거가 [스펙트럼 정리](spectral-theorem.md)다.
 
 # 직관
 
@@ -82,6 +82,6 @@ $a$ 가 임계점이면 $f\circ\varphi$ 의 $\varphi^{-1}(a)$ 에서의 Hessian 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Laplace 연산자](laplace-operator.md)
 
 #analysis #optimization #linear_algebra

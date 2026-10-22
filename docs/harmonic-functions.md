@@ -18,7 +18,7 @@
 
 $$\Delta u=\sum_{k=1}^n\frac{\partial^2u}{\partial x_k^2}=0$$
 
-를 만족하면 $u$ 를 $\Omega$ 에서 **조화함수**라 한다. $\Delta$ 는 Laplace 연산자다. $\Delta u\ge0$ 인 함수는 **열조화함수**, $\Delta u\le0$ 인 함수는 **상조화함수**다.
+를 만족하면 $u$ 를 $\Omega$ 에서 **조화함수**라 한다. $\Delta$ 는 [Laplace 연산자](laplace-operator.md)다. $\Delta u\ge0$ 인 함수는 **열조화함수**, $\Delta u\le0$ 인 함수는 **상조화함수**다.
 
 ## 조화 켤레
 
@@ -81,6 +81,7 @@ $$\frac{R-r}{R+r}\thinspace u(0)\le u(z)\le\frac{R+r}{R-r}\thinspace u(0)$$
 ## 선수지식
 
 - [정칙함수](holomorphic-functions.md)
+- [Laplace 연산자](laplace-operator.md)
 
 ## 더 알아보기
 

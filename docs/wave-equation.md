@@ -8,7 +8,7 @@ $$
 \partial_t^2u=c^2\Delta u
 $$
 
-이다. $x\in\mathbb R^n$ 은 위치, $t$ 는 시간, $c\gt 0$ 은 파동의 속도이고 $\Delta=\sum_i\partial_{x_i}^2$ 다. 줄의 진동, 소리, 전자기파가 이 방정식을 따른다.
+이다. $x\in\mathbb R^n$ 은 위치, $t$ 는 시간, $c\gt 0$ 은 파동의 속도이고 $\Delta=\sum_i\partial_{x_i}^2$ 는 [Laplace 연산자](laplace-operator.md)다. 줄의 진동, 소리, 전자기파가 이 방정식을 따른다.
 
 [열방정식](heat-equation.md)이 시간에 대한 일계 도함수를 갖는 것과 달리 파동방정식은 이계 도함수를 가져서 성질이 다르다. 신호가 유한한 속도 $c$ 로 전파되고, 에너지가 보존되며, 초기값의 매끄럽지 않은 부분이 사라지지 않고 이동한다.
 
@@ -104,6 +104,7 @@ $$
 ## 선수지식
 
 - [Fourier 변환](fourier-transform.md)
+- [Laplace 연산자](laplace-operator.md)
 
 ## 더 알아보기
 
