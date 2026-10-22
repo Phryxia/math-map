@@ -68,5 +68,6 @@ $f$ 의 위수 $\rho$ 가 유한하면 위 표현에서 $g$ 는 차수 $\le\rho$
 ## 더 알아보기
 
 - [Picard 정리](picard-theorems.md)
+- [Cramér 분해 정리](cramer-decomposition.md)
 
 #complex_analysis #analysis #number_theory

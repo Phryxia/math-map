@@ -82,7 +82,7 @@ $$
 
 $X\sim N(m_1,\sigma_1^2)$ 과 $Y\sim N(m_2,\sigma_2^2)$ 이 독립이면 $X+Y\sim N(m_1+m_2,\thinspace\sigma_1^2+\sigma_2^2)$ 이다. 특성함수의 곱이 지수의 합이 되므로 나온다.
 
-역도 성립한다. 독립인 $X,Y$ 의 합이 정규분포를 따르면 $X$ 와 $Y$ 도 각각 정규분포를 따른다. 이것이 Cramér 분해 정리(Cramér's decomposition theorem)이고 증명은 특성함수가 전해석함수라는 것과 Hadamard 인수분해 정리(Hadamard factorization theorem)를 쓴다. 이 정리는 [Weierstrass 인수분해 정리](weierstrass-factorization.md)를 유한 위수의 전해석함수로 좁힌 것이다.
+역도 성립한다. 독립인 $X,Y$ 의 합이 정규분포를 따르면 $X$ 와 $Y$ 도 각각 정규분포를 따른다. 이것이 [Cramér 분해 정리](cramer-decomposition.md)이고 증명은 특성함수가 전해석함수라는 것과 Hadamard 인수분해 정리(Hadamard factorization theorem)를 쓴다. 이 정리는 [Weierstrass 인수분해 정리](weierstrass-factorization.md)를 유한 위수의 전해석함수로 좁힌 것이다.
 
 ## 무상관과 독립
 
@@ -130,5 +130,6 @@ $$
 ## 더 알아보기
 
 - [Gauss 과정](gaussian-processes.md)
+- [Cramér 분해 정리](cramer-decomposition.md)
 
 #probability #statistics #analysis
