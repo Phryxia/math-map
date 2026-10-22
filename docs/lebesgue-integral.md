@@ -124,6 +124,7 @@ $f_n = n \cdot \mathbf{1}\_{(0,1/n)}$ 은 점별로 $0$ 에 수렴하지만 모�
 ### 측도와 확률
 
 - [Radon–Nikodym 정리](radon-nikodym.md)
+- [부호 측도](signed-measures.md)
 - [확률변수](random-variables.md)
 
 #measure_theory #analysis #probability
