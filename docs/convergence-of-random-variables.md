@@ -127,6 +127,6 @@ Slutsky 정리(Slutsky's theorem)는 $X_n\xrightarrow{d}X$ 이고 $Y_n\xrightarr
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kolmogorov 세 급수 정리](kolmogorov-three-series.md)
 
 #probability #measure_theory #analysis

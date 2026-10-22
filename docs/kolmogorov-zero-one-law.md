@@ -61,7 +61,7 @@ $\limsup_n X_n$, $\liminf_n X_n$, $\limsup_n\frac1n\sum_{k\le n}X_k$ 가 그런 
 # 활용
 
 - [큰 수의 법칙](law-of-large-numbers.md)에서 표본평균의 극한은 꼬리 가측이다. 독립이면 극한이 존재하는 사건의 확률이 $0$ 이나 $1$ 이고, 존재할 때 극한값은 상수다.
-- 독립 무작위 부호 $\varepsilon_n$ 을 붙인 급수 $\sum_n\varepsilon_na_n$ 은 확률 $1$ 로 수렴하거나 확률 $1$ 로 발산한다. 수렴하는 쪽인 조건은 $\sum_n a_n^2\lt\infty$ 이다.
+- 독립 무작위 부호 $\varepsilon_n$ 을 붙인 급수 $\sum_n\varepsilon_na_n$ 은 확률 $1$ 로 수렴하거나 확률 $1$ 로 발산한다. 수렴하는 쪽인 조건은 $\sum_n a_n^2\lt\infty$ 이고, [Kolmogorov 세 급수 정리](kolmogorov-three-series.md)로 증명된다.
 - [침투](percolation.md)에서 무한 성분이 존재하는 사건은 유한 개 변의 상태를 바꿔도 변하지 않으므로 꼬리사건이고, 확률이 $0$ 이나 $1$ 이다. 임계 확률 $p_c$ 는 이 확률이 $0$ 에서 $1$ 로 바뀌는 경계다.
 - [무작위 걷기](random-walks.md)가 원점으로 무한히 자주 돌아오는 사건은 Hewitt–Savage 0-1 법칙으로 확률이 $0$ 이나 $1$ 이고, 재귀와 비재귀의 이분법이 여기서 나온다.
 
@@ -74,6 +74,6 @@ $\limsup_n X_n$, $\liminf_n X_n$, $\limsup_n\frac1n\sum_{k\le n}X_k$ 가 그런 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kolmogorov 세 급수 정리](kolmogorov-three-series.md)
 
 #probability #measure_theory #theorem
