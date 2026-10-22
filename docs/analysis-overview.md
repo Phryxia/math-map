@@ -103,13 +103,14 @@ graph TD
 - [Lyapunov 안정성](lyapunov-stability.md): 해를 구하지 않고 평형점 근처에 머무는지 판정하는 Lyapunov 함수와 선형화
 - [Hartman–Grobman 정리](hartman-grobman.md): 쌍곡 평형점 근처의 흐름이 선형화와 위상 공액이라는 정리, 안정 다양체 정리
   - [중심 다양체 정리](center-manifold-theorem.md): 실수부가 0 인 고윳값의 방향에 접하는 불변 다양체, 축소 원리
-  - [Hopf 분기](hopf-bifurcation.md): 켤레 고윳값 한 쌍이 허수축을 가로지를 때 평형점에서 주기해가 갈라져 나오는 현상, 초임계와 아임계
   - [Sternberg 정리](sternberg-theorem.md): 고윳값에 공명이 없을 때 쌍곡 평형점 근처의 흐름을 선형화하는 매끄러운 좌표 변환, 호몰로지 방정식
+- [Hopf 분기](hopf-bifurcation.md): 켤레 고윳값 한 쌍이 허수축을 가로지를 때 평형점에서 주기해가 갈라져 나오는 현상, 초임계와 아임계
 - [Poincaré–Bendixson 정리](poincare-bendixson.md): 평면에서 유계인 해가 다가가는 곳, 극한 순환의 존재와 Bendixson 판정법
   - [Lorenz 방정식](lorenz-system.md): 유계 영역에 갇히고 평형점이 모두 불안정한데도 주기해로 가지 않는 3 차원 계, 이상 끌개
 - [Liénard 정리](lienard-theorem.md): 감쇠와 복원력의 부호 조건에서 극한 순환이 하나뿐이고 안정하다는 정리, van der Pol 방정식
 - [Hilbert 의 16 번째 문제](hilbert-sixteenth-problem.md): 다항식 벡터장의 극한 순환 개수의 상한, 개별 유한성 정리와 Hilbert 수의 하한
-  - [약한 Hilbert 16 번째 문제](weak-hilbert-sixteenth-problem.md): Hamilton 벡터장의 섭동에서 극한 순환을 세는 Abel 적분의 영점 수, Poincaré–Pontryagin 정리와 Varchenko–Khovanskii 정리
+- [약한 Hilbert 16 번째 문제](weak-hilbert-sixteenth-problem.md): Hamilton 벡터장의 섭동에서 극한 순환을 세는 Abel 적분의 영점 수, Poincaré–Pontryagin 정리와 Varchenko–Khovanskii 정리
+- [Bogdanov–Takens 분기](bogdanov-takens-bifurcation.md): 고윳값 0 이 두 번인 평형점에서 안장점 마디점, Hopf, 호모클리닉 곡선이 만나는 여차원 2 분기, Abel 적분으로 본 극한 순환의 유일성
 - [Sturm–Liouville 이론](sturm-liouville.md): 2 계 고윳값 문제의 직교성과 완전성, Sturm 진동정리
 
 ## 측도와 복소평면으로의 확장

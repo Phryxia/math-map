@@ -83,7 +83,7 @@ $Z(n)$ 의 상한은 Hilbert 수 $H(n)$ 의 상한을 주지 않는다. 극한 �
 # 활용
 
 - **극한 순환의 하한 구성.** Hamilton 벡터장과 섭동을 골라 $I$ 가 단순 영점을 많이 갖게 하면 Poincaré–Pontryagin 정리로 그만큼의 극한 순환을 갖는 다항식 벡터장을 얻는다. Hilbert 의 16 번째 문제 성질 절의 $H(n)$ 하한들이 이런 섭동 구성을 쓴다.[^1]
-- **Bogdanov–Takens 분기.** 고윳값이 둘 다 $0$ 인 평형점의 Bogdanov–Takens 분기(Bogdanov–Takens bifurcation)에서 극한 순환이 많아야 하나라는 증명은, 축척을 바꾼 계를 $x$ 에 대해 3 차인 Hamilton 함수의 섭동으로 쓰고, 두 Abel 적분의 비가 $h$ 에 대해 단조라는 것으로 $I$ 의 영점이 하나뿐임을 보인다.[^5]
+- **Bogdanov–Takens 분기.** 고윳값이 둘 다 $0$ 인 평형점의 [Bogdanov–Takens 분기](bogdanov-takens-bifurcation.md)에서 극한 순환이 많아야 하나라는 증명은, 축척을 바꾼 계를 $x$ 에 대해 3 차인 Hamilton 함수의 섭동으로 쓰고, 두 Abel 적분의 비가 $h$ 에 대해 단조라는 것으로 $I$ 의 영점이 하나뿐임을 보인다.[^5]
 
 [^1]: Yu. Ilyashenko, "Centennial history of Hilbert's 16th problem", Bull. Amer. Math. Soc. 39 (2002), 301–354.
 [^2]: Yu. Ilyashenko, S. Yakovenko, *Lectures on Analytic Differential Equations*, Graduate Studies in Mathematics 86, American Mathematical Society, 2008, 26 장.
@@ -99,6 +99,6 @@ $Z(n)$ 의 상한은 Hilbert 수 $H(n)$ 의 상한을 주지 않는다. 극한 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Bogdanov–Takens 분기](bogdanov-takens-bifurcation.md)
 
 #analysis #topology
