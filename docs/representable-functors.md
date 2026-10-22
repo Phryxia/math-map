@@ -74,6 +74,7 @@ $$
 - **텐서곱.** [가군](modules.md) $A,B$ 를 고정하고 $C$ 에 쌍선형 사상의 집합을 주는 함자를 표현하는 대상이 [텐서곱](tensor-products.md) $A\otimes B$ 이고, 보편원소는 $(a,b)\mapsto a\otimes b$ 다.
 - **극한.** [극한과 쌍대극한](limits-colimits.md)의 정의도 표현이다. 원뿔 전체를 주는 함자를 표현하는 대상이 제한이다.
 - **코호몰로지.** $H^n(X;G)\cong\lbrack X,K(G,n)\rbrack$ 는 [코호몰로지](cohomology.md) 함자를 [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)이 표현한다는 뜻이다.
+- **모듈라이.** [모듈라이 공간](moduli-space.md)의 섬세 모듈라이 공간은 모듈라이 함자를 표현하는 스킴이다. 자기동형 때문에 표현이 없으면 집합 대신 군준에 값을 두는 [대수적 스택](algebraic-stacks.md)을 쓴다.
 
 [^1]: Emily Riehl, *Category Theory in Context*, §2.4 와 §4.2. 표현 가능성, 보편원소, 수반의 판정. https://emilyriehl.github.io/files/context.pdf
 
@@ -86,5 +87,6 @@ $$
 ## 더 알아보기
 
 - [Brown 표현 정리](brown-representability.md)
+- [대수적 스택](algebraic-stacks.md)
 
 #category_theory #algebra #algebraic_topology
