@@ -4,7 +4,7 @@
 
 **대수적 수체(algebraic number field)** 는 $\mathbb Q$ 의 유한 확대체이고, 그 정수환 $\mathcal O_K$ 는 $\mathbb Z$ 의 자리를 대신하는 [Dedekind 정역](dedekind-domains.md)이다. 정수론의 문제는 정수 밖으로 나가게 만든다. $x^2+y^2=p$ 는 $(x+iy)(x-iy)$ 로 쪼개려면 $\mathbb Z[i]$ 를, $x^n+y^n=z^n$ 은 $\mathbb Z[\zeta_n]$ 을 요구한다.
 
-넓힌 환에서는 유일분해가 깨진다. $\mathbb Z[\sqrt{-5}]$ 에서 $6=2\cdot3=(1+\sqrt{-5})(1-\sqrt{-5})$ 이고 네 인수가 모두 더 쪼개지지 않는다. 19 세기에 제출된 Fermat 마지막 정리의 증명들이 이 지점에서 무너졌다.
+넓힌 환에서는 유일분해가 깨진다. $\mathbb Z[\sqrt{-5}]$ 에서 $6=2\cdot3=(1+\sqrt{-5})(1-\sqrt{-5})$ 이고 네 인수가 모두 더 쪼개지지 않는다. 19 세기에 제출된 [Fermat 마지막 정리](fermats-last-theorem.md)의 증명들이 이 지점에서 무너졌다.
 
 Dedekind 의 해결책은 원소 대신 [아이디얼](ideals-quotient-rings.md)을 분해하는 것이다. 원소의 분해는 깨져도 아이디얼의 [소 아이디얼](prime-ideals.md) 분해는 언제나 유일하다. 깨진 정도를 재는 유한군이 류군이고, 그 크기인 류수가 수체의 기본 불변량이다.
 

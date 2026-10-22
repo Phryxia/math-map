@@ -228,6 +228,7 @@ graph TD
   - [Fontaine–Mazur 추측](fontaine-mazur.md): 기하에서 오는 표현을 국소 조건으로 판정하는 추측
   - [Galois 표현의 변형환](deformation-rings.md): 잉여 표현의 올림을 매개하는 보편환과 그 국소 조건
     - [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md): 2 차원 mod $p$ 표현이 모듈러라는 추측과 그 증명
+      - [Fermat 마지막 정리](fermats-last-theorem.md): Frey 곡선, 레벨 낮추기, 반안정 곡선의 모듈러성으로 $x^n+y^n=z^n$ 의 해가 없음을 보이는 증명과 Kummer 의 정칙 소수 경우
   - [강체해석공간](rigid-analytic-spaces.md): 허용 덮개만 인정하는 Grothendieck 위상 위에 친화 준위를 붙여 비아르키메데스 체에서 해석접속을 되살린 공간
   - [Fargues–Scholze 기하화](fargues-scholze.md): 번들의 모듈라이 위에서 국소 Langlands 를 층으로 다시 쓴 구성
 
