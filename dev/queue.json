@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-21T21:07:18.658Z",
-  "nextSeq": 2344,
+  "savedAt": "2026-10-22T01:11:42.034Z",
+  "nextSeq": 2350,
   "items": [
     {
       "id": "9bab7237",
@@ -3298,6 +3298,22 @@
       "note": "최적화. 0-1 정수계획의 완화를 단계적으로 조이는 두 계층과 Chvátal 계수와의 비교. 부모 후보 stable-set-polytope 와 chvatal-rank. 옛 큐 c6758923 의 (3). 제목은 4절 규칙대로 하나로 좁힐 것(lift-and-project).",
       "createdAt": "2026-10-21T20:59:23.960Z",
       "seq": 2343
+    },
+    {
+      "id": "493b5eac",
+      "title": "Laplace 연산자",
+      "priority": 10,
+      "note": "analysis. 부모 후보 derivative 와 hessian(대각합). heat-equation, wave-equation, harmonic-functions, graph-laplacian 이 이름만 쓴다. 회전 불변성, 극좌표 표현, Laplace–Beltrami 연산자, 고윳값과 Weyl 법칙.",
+      "createdAt": "2026-10-22T01:09:57.822Z",
+      "seq": 2347
+    },
+    {
+      "id": "9925cf4d",
+      "title": "Slutsky 정리와 연속사상 정리를 별도 문서로 뗄지 판정",
+      "priority": 10,
+      "note": "convergence-of-random-variables 의 마지막 절이 둘을 다룬다. central-limit-theorem, maximum-likelihood 가 Slutsky 를 이름만 쓴다. 절이 길어지면 slutsky-theorem 으로 떼고 부모는 convergence-of-random-variables.",
+      "createdAt": "2026-10-22T01:09:58.104Z",
+      "seq": 2349
     },
     {
       "id": "dfb3e493",
