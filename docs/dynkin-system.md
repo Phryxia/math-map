@@ -76,6 +76,6 @@ $\pi$ 계임을 두 단계로 얻는다. $A\in\mathcal P$ 에 대해 $\mathcal D
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kolmogorov 0-1 법칙](kolmogorov-zero-one-law.md)
 
 #measure_theory #probability #set_theory
