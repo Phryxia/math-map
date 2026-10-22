@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-22T17:01:13.262Z",
-  "nextSeq": 2372,
+  "savedAt": "2026-10-22T21:03:48.556Z",
+  "nextSeq": 2377,
   "items": [
     {
       "id": "9bab7237",
@@ -3306,6 +3306,22 @@
       "note": "combinatorics/optimization. helly-theorem 활용 첫째가 진술과 증명 요지만 쓴다. Rado 의 중심점 정리, Tukey 깊이, 중심점 계산 알고리즘. 부모 후보 helly-theorem. 저장소에 없다(centerpoint).",
       "createdAt": "2026-10-22T17:01:12.213Z",
       "seq": 2370
+    },
+    {
+      "id": "f5349599",
+      "title": "Pólya 추측",
+      "priority": 10,
+      "note": "analysis. Dirichlet 고윳값이 Weyl 주항 이상이라는 명명된 추측. weyl-law 와 faber-krahn 에 절로 있다. 별도 문서로 세울지 판단: 타일링 영역(Pólya 1961), 곱 영역(Laptev 1997), 공(Filonov–Levitin–Polterovich–Sher 2023)의 경우와 출처 확인 필요. 부모 후보 weyl-law, faber-krahn",
+      "createdAt": "2026-10-22T21:02:13.647Z",
+      "seq": 2374
+    },
+    {
+      "id": "bbab9da2",
+      "title": "Bogomolny–Schmit 추측",
+      "priority": 10,
+      "note": "differential_geometry. 혼돈 영역 고유함수의 마디 영역 개수가 임계 침투 모형으로 정해진다는 추측. courant-nodal-domain-theorem 활용 절이 이름만 쓴다. 부모 후보 courant-nodal-domain-theorem, quantum-chaos",
+      "createdAt": "2026-10-22T21:02:13.767Z",
+      "seq": 2375
     },
     {
       "id": "dfb3e493",
