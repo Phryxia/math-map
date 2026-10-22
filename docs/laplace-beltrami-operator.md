@@ -57,7 +57,7 @@ $$
 ## 고윳값의 하한
 
 - Lichnerowicz 정리(Lichnerowicz's theorem). $n$ 차원 콤팩트 다양체의 Ricci 곡률이 $(n-1)k$ 이상이고 $k\gt 0$ 이면 $\lambda\_1\ge nk$ 다. 단위구면에서 등호가 성립한다[^1].
-- Cheeger 부등식(Cheeger's inequality). 다양체를 두 부분으로 자르는 초곡면의 넓이를 작은 쪽 부피로 나눈 값의 하한을 $h$ 라 하면 $\lambda\_1\ge h^2/4$ 다[^2]. 잘록한 목이 있으면 $h$ 가 작다.
+- [Cheeger 부등식](cheeger-inequality.md). 다양체를 두 부분으로 자르는 초곡면의 넓이를 작은 쪽 부피로 나눈 값의 하한을 $h$ 라 하면 $\lambda\_1\ge h^2/4$ 다[^2]. 잘록한 목이 있으면 $h$ 가 작다.
 
 ## 스펙트럼과 모양
 
@@ -86,6 +86,7 @@ $$
 
 - [Weyl 법칙](weyl-law.md)
 - [열핵 전개](heat-kernel-asymptotics.md)
+- [Cheeger 부등식](cheeger-inequality.md)
 - [양자 혼돈](quantum-chaos.md)
 
 #differential_geometry #analysis #functional_analysis

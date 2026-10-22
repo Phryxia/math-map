@@ -118,6 +118,7 @@ graph TD
   - [열핵 전개](heat-kernel-asymptotics.md): 짧은 시간에서 열핵을 시간의 거듭제곱으로 전개한 식, 곡률로 정해지는 계수와 곡면의 Euler 지표, Varadhan 공식
     - [제타 정규화 행렬식](zeta-regularized-determinant.md)
     - [등스펙트럼 다양체](isospectral-manifolds.md): 고윳값이 중복도까지 같고 등거리가 아닌 다양체, Milnor 의 16 차원 평탄 원환면과 Sunada 의 Gassmann 삼중쌍, 평면의 등스펙트럼 다각형: 고윳값 zeta 함수의 원점 도함수로 정한 Laplace 작용소의 행렬식, 열핵 전개와 해석적 비틀림
+  - [Cheeger 부등식](cheeger-inequality.md): 첫 고윳값이 Cheeger 상수의 제곱의 1/4 이상이다, 여면적공식을 쓴 증명과 곡률 하한 아래의 Buser 역부등식
 - [Killing 벡터장](killing-vector-fields.md): 계량을 보존하는 흐름, 측지선을 따르는 보존량과 차원 상한
   - [등거리변환군](isometry-groups.md): 계량을 보존하는 미분동형의 Lie 군, 한 점의 값과 미분으로 정해지는 원소와 차원 상한
 - [측지선](geodesics.md): 가속도의 접성분이 0 인 곡선, 지수사상과 Hopf–Rinow 정리, 켤레점
