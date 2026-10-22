@@ -120,5 +120,6 @@ $$
 - [열방정식](heat-equation.md)
 - [파동방정식](wave-equation.md)
 - [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)
+- [Faber–Krahn 부등식](faber-krahn.md)
 
 #analysis #differential_geometry #probability
