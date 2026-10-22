@@ -61,7 +61,7 @@ $$
 
 ## 스펙트럼과 모양
 
-Weyl 법칙은 다양체에서도 성립하여, 고윳값이 $\lambda$ 이하인 것의 개수가 $\lambda\to\infty$ 에서 $\omega\_n\thinspace\mathrm{vol}(M)\lambda^{n/2}/(2\pi)^n$ 에 가깝다. 그래서 스펙트럼은 차원과 부피를 정한다. 스펙트럼이 계량을 정하지는 않는다. Milnor 는 스펙트럼이 같고 등거리가 아닌 16 차원 평평한 원환면 두 개를 만들었다[^3].
+[Weyl 법칙](weyl-law.md)은 다양체에서도 성립하여, 고윳값이 $\lambda$ 이하인 것의 개수가 $\lambda\to\infty$ 에서 $\omega\_n\thinspace\mathrm{vol}(M)\lambda^{n/2}/(2\pi)^n$ 에 가깝다. 그래서 스펙트럼은 차원과 부피를 정한다. 스펙트럼이 계량을 정하지는 않는다. Milnor 는 스펙트럼이 같고 등거리가 아닌 16 차원 평평한 원환면 두 개를 만들었다[^3].
 
 # 활용
 
@@ -84,6 +84,7 @@ Weyl 법칙은 다양체에서도 성립하여, 고윳값이 $\lambda$ 이하인
 
 ## 더 알아보기
 
+- [Weyl 법칙](weyl-law.md)
 - [제타 정규화 행렬식](zeta-regularized-determinant.md)
 - [양자 혼돈](quantum-chaos.md)
 

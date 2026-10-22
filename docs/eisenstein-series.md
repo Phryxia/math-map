@@ -176,7 +176,7 @@ $$
 -\frac1{4\pi}\int_{-\infty}^{\infty}h(t)\thinspace\frac{\varphi'}{\varphi}\Bigl(\tfrac12+it\Bigr)dt
 $$
 
-Weyl 법칙으로 Maass 첨점형식의 개수를 셀 때 이 항을 빼야 하므로 $\zeta$ 의 0 점 분포에 대한 지식이 자기동형 형식의 개수 세기에 들어온다.
+[Weyl 법칙](weyl-law.md)으로 Maass 첨점형식의 개수를 셀 때 이 항을 빼야 하므로 $\zeta$ 의 0 점 분포에 대한 지식이 자기동형 형식의 개수 세기에 들어온다.
 
 ## 유수와 부피
 

@@ -71,7 +71,7 @@ Linnik 추측은 $\sum_{c\le C}c^{-1}K(m,n;c)$ 가 모든 $\varepsilon\gt 0$ 에
 - **이동 합성곱 합.** $\sum_{n\le N}a(n)\thinspace\overline{a(n+h)}$ 꼴의 합에서 $a$ 가 첨점 형식의 계수이면 합이 Kloosterman 합의 합으로 바뀌고 Kuznetsov 공식이 상계를 준다.
 - **첨점 형식 계수의 평균.** [모듈러 형식](modular-forms.md)의 Ramanujan 추측이 주는 개별 상계를 쓰지 않고 $\rho_j(n)$ 의 제곱 평균만으로 결과를 얻는 자리에 쓴다. 준위나 고윳값을 움직이는 아족 평균이 그렇다.
 - **산술 함수의 합.** 약수 함수와 Fourier 계수를 곱해 더하는 합에서 오차항을 스펙트럼 쪽으로 넘긴다.
-- **Weyl 법칙의 정량화.** 고윳값의 개수 세기에 Fourier 계수의 분포를 함께 쓰는 결과가 이 공식에서 나온다.
+- **[Weyl 법칙](weyl-law.md)의 정량화.** 고윳값의 개수 세기에 Fourier 계수의 분포를 함께 쓰는 결과가 이 공식에서 나온다.
 
 [^1]: N. V. Kuznetsov, "Petersson's conjecture for cusp forms of weight zero and Linnik's conjecture. Sums of Kloosterman sums", Matematicheskii Sbornik 111 (1980), 334–383.
 [^2]: J.-M. Deshouillers, H. Iwaniec, "Kloosterman sums and Fourier coefficients of cusp forms", Inventiones Mathematicae 70 (1982), 219–288.

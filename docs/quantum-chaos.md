@@ -8,7 +8,7 @@
 
 # 직관
 
-평면 영역에서 경계값 $0$ 인 Laplace 고윳값 $\lambda_1\le\lambda_2\le\cdots$ 를 구한다. Weyl 법칙은 $\lambda$ 이하인 고윳값의 개수가 넓이에 비례해 $\vert\Omega\vert\lambda/4\pi$ 근처라고 정하지만, 이웃한 두 고윳값이 얼마나 떨어져 있는지는 정하지 않는다. 평균 간격이 $1$ 이 되도록 척도를 맞추고 이웃 간격의 분포를 본다.
+평면 영역에서 경계값 $0$ 인 Laplace 고윳값 $\lambda_1\le\lambda_2\le\cdots$ 를 구한다. [Weyl 법칙](weyl-law.md)은 $\lambda$ 이하인 고윳값의 개수가 넓이에 비례해 $\vert\Omega\vert\lambda/4\pi$ 근처라고 정하지만, 이웃한 두 고윳값이 얼마나 떨어져 있는지는 정하지 않는다. 평균 간격이 $1$ 이 되도록 척도를 맞추고 이웃 간격의 분포를 본다.
 
 변의 길이가 $a,b$ 인 직사각형에서는 고윳값이 $\pi^2(m^2/a^2+n^2/b^2)$ 로 주어진다. $a^2/b^2$ 이 무리수이면 서로 다른 $(m,n)$ 의 값들이 서로 무관하게 흩어져, 간격 분포가 독립인 점들의 간격 분포 $e^{-s}$ 에 가깝다. 간격이 $0$ 근처에 가장 많이 몰린다.
 
@@ -75,6 +75,7 @@ $\Gamma\backslash\mathbb H$ 꼴의 산술 곡면은 측지선 흐름이 혼돈�
 
 - [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)
 - [Wigner 반원법칙](wigner-semicircle.md)
+- [Weyl 법칙](weyl-law.md)
 
 ## 더 알아보기
 

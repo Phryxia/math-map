@@ -94,7 +94,7 @@ $$
 N(\lambda)\sim\frac{\omega_n\thinspace\mathrm{vol}(\Omega)}{(2\pi)^n}\lambda^{n/2}\qquad(\lambda\to\infty)
 $$
 
-가 성립한다. $\omega_n$ 은 $n$ 차원 단위공의 부피다. 이것이 Weyl 법칙(Weyl's law)이다[^1]. 첫 항은 영역의 부피만으로 정해지고 모양에 의존하지 않는다.
+가 성립한다. $\omega_n$ 은 $n$ 차원 단위공의 부피다. 이것이 [Weyl 법칙](weyl-law.md)이다[^1]. 첫 항은 영역의 부피만으로 정해지고 모양에 의존하지 않는다.
 
 # 활용
 

@@ -96,7 +96,7 @@ $\zeta$ 함수의 영점 허수부 $14.1347\dots,\ 21.0220\dots$ 와 같은 성�
 
 개별 고윳값을 모르는 대신 개수는 안다. Selberg 대각합 공식에 적당한 시험함수를 넣으면 나온다.
 
-> **Weyl 법칙.** $\mathrm{SL}\_2(\mathbb Z)$ 에 대해
+> **[Weyl 법칙](weyl-law.md).** $\mathrm{SL}\_2(\mathbb Z)$ 에 대해
 > $$
 > \char35{}\lbrace j:r_j\le T\rbrace=\frac{\mathrm{vol}(\Gamma\backslash\mathbb H)}{4\pi}T^2-\frac{2}\pi T\log T+O(T)
 > $$

@@ -10,7 +10,7 @@ $$
 \underbrace{\sum_j h(r_j)}\_{\text{스펙트럼}}\thickspace+\thickspace\text{(연속 기여)}\thickspace=\thickspace\underbrace{\frac{\mathrm{vol}}{4\pi}\int_{-\infty}^\infty h(r)\thinspace r\tanh(\pi r)\thinspace dr+\sum_{\lbrace\gamma\rbrace}\sum_{k\ge1}\frac{\ell_\gamma\thinspace g(k\ell_\gamma)}{2\sinh(k\ell_\gamma/2)}}\_{\text{기하}}
 $$
 
-왼쪽은 해석, 오른쪽은 [Riemann 계량](riemannian-metrics.md)이 정하는 측지선의 길이다. 이 등식에서 Weyl 법칙, 소측지선 정리, Maass 형식의 존재가 따라 나온다.
+왼쪽은 해석, 오른쪽은 [Riemann 계량](riemannian-metrics.md)이 정하는 측지선의 길이다. 이 등식에서 [Weyl 법칙](weyl-law.md), 소측지선 정리, Maass 형식의 존재가 따라 나온다.
 
 공식의 구조는 [소수 정리](prime-number-theorem.md)의 명시공식과 같다. 거기서 $\zeta$ 의 영점과 소수의 거듭제곱이 짝을 이루듯, 여기서는 Laplace 고윳값과 닫힌 측지선이 짝을 이룬다. Selberg 는 이 유비를 따라 [Riemann 가설](riemann-hypothesis.md)이 성립하는 zeta 함수를 만들었다.
 

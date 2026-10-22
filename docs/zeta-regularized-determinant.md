@@ -40,7 +40,7 @@ $$
 \zeta\_\Delta(s)=\sum_{k\ge 1}\lambda_k^{-s}
 $$
 
-Weyl 법칙에서 $\lambda_k$ 가 $k^{2/n}$ 규모로 자라므로 이 급수는 $\mathrm{Re}\thinspace s\gt n/2$ 에서 수렴한다. 이것이 **스펙트럼 zeta 함수(spectral zeta function)** 다.
+[Weyl 법칙](weyl-law.md)에서 $\lambda_k$ 가 $k^{2/n}$ 규모로 자라므로 이 급수는 $\mathrm{Re}\thinspace s\gt n/2$ 에서 수렴한다. 이것이 **스펙트럼 zeta 함수(spectral zeta function)** 다.
 
 ## 행렬식
 
@@ -114,6 +114,7 @@ Ray 와 Singer 는 해석적 비틀림이 계량의 선택과 무관함을 보�
 
 - [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)
 - [Riemann zeta 함수](riemann-zeta.md)
+- [Weyl 법칙](weyl-law.md)
 
 ## 더 알아보기
 

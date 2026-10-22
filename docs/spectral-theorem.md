@@ -142,5 +142,6 @@ $$
 - [Hecke 작용소](hecke-operators.md)
 - [유계 작용소](bounded-operators.md)
 - [Hessian 행렬](hessian.md)
+- [Weyl 법칙](weyl-law.md)
 
 #linear_algebra #analysis #optimization #theorem
