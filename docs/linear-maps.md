@@ -94,7 +94,11 @@ $$
 
 - [행렬식](determinants.md)
 - [고윳값](eigenvalues.md)
+
+### 행렬 계산
+
 - [행렬 분해](matrix-factorizations.md)
+- [Strassen 알고리즘](strassen-algorithm.md)
 
 ### 선형성이 나타나는 곳
 
