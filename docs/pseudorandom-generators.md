@@ -88,5 +88,6 @@ $$
 ## 더 알아보기
 
 - [약속 방식](commitment-schemes.md)
+- [의미론적 안전성](semantic-security.md)
 
 #cryptography #complexity #computation

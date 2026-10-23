@@ -156,5 +156,6 @@ $$
 ## 더 알아보기
 
 - [전자서명](digital-signatures.md)
+- [의미론적 안전성](semantic-security.md)
 
 #cryptography #number_theory #computation
