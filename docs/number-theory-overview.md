@@ -55,6 +55,7 @@ graph TD
 먼저 읽을 갈래: 합동과 소수. 시작 문서: [이산로그](discrete-logarithm.md).
 
 - [이산로그](discrete-logarithm.md): 거듭제곱은 빠르고 그 역이 어렵다는 비대칭, Pohlig–Hellman 과 Pollard rho 의 비용
+  - [Pollard rho 알고리즘](pollard-rho.md): 되풀이한 수열이 $O(\sqrt m)$ 단계에 고리를 닫는 것으로 인수와 이산로그를 찾는다. Floyd 고리 찾기와 병렬 충돌 탐색
   - [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman): 두 소수의 곱을 공개하고 소인수를 비밀로 두는 공개키 암호와 서명
   - [격자](lattices.md): 실벡터공간의 이산 부분군과 그 기본 영역의 부피
 - [타원곡선](elliptic-curves.md): 세제곱 곡선 위의 점이 이루는 아벨군과 그 군에서의 이산로그
