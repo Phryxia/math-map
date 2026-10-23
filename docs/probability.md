@@ -124,5 +124,6 @@ $$
 - [확률적 방법](probabilistic-method.md)
 - [부울 함수의 Fourier 해석](boolean-fourier.md)
 - [스펙트럼 희소화](spectral-sparsification.md)
+- [범용 해시족](universal-hashing.md)
 
 #probability #measure_theory #statistics #algorithms

@@ -119,6 +119,7 @@ $$
 - [중국인의 나머지 정리](chinese-remainder-theorem.md)
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)
 - [이산로그](discrete-logarithm.md)
+- [범용 해시족](universal-hashing.md)
 
 ### 대수 구조 확장
 
