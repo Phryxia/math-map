@@ -74,7 +74,7 @@ $U_1,\dots,U_n$ 이 $\lbrack 0,1\rbrack$ 위 균등분포에서 독립으로 뽑
 
 - [Brown 운동](brownian-motion.md)의 직관. 그 문서는 시간 간격 $h$ 마다 $\pm\sqrt h$ 로 움직이는 걷기의 축소 극한으로 Brown 운동을 소개하고, 그 극한이 경로 수준에서 존재한다는 근거로 이 정리를 든다.
 - [약수렴](weak-convergence.md)의 극한정리 구조. tightness 와 극한의 유일성으로 나누는 두 단계 논증에서, 함수공간 위의 예가 이 정리다.
-- 검정통계량의 극한분포. 경험과정 판본의 $\max_t\vert F_n(t)-t\vert$ 가 Kolmogorov–Smirnov 검정의 통계량이고, 그 극한분포가 Brown 다리의 최댓값 분포다.
+- 검정통계량의 극한분포. 경험과정 판본의 $\max_t\vert F_n(t)-t\vert$ 가 [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)의 통계량이고, 그 극한분포가 Brown 다리의 최댓값 분포다.
 
 [^1]: Billingsley, *Convergence of Probability Measures*, 2nd ed., §8 "Donsker's theorem" — 꺾은선 과정의 구성과 수렴 증명.
 [^2]: Billingsley, 같은 책 §7 — $C\lbrack 0,1\rbrack$ 에서 tightness 와 진동 조건의 동치.

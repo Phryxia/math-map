@@ -157,5 +157,6 @@ $$
 - [신뢰구간](confidence-intervals.md)
 - [가능도비 검정](likelihood-ratio-test.md)
 - [순차확률비 검정](sequential-probability-ratio-test.md)
+- [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)
 
 #statistics #probability

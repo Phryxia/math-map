@@ -124,7 +124,7 @@ $$F(x\wedge y) - F(x)F(y)$$
 
 ## 적합도 검정
 
-$\Vert\mathbb G_n\Vert\_{\mathcal F}$ 의 극한분포가 검정통계량의 기각역을 준다. $\mathcal F$ 가 반직선족이면 Kolmogorov–Smirnov 검정이고, Glivenko–Cantelli 정리의 적합도 검정 절이 그 경우다.
+$\Vert\mathbb G_n\Vert\_{\mathcal F}$ 의 극한분포가 검정통계량의 기각역을 준다. $\mathcal F$ 가 반직선족이면 [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)이고, Glivenko–Cantelli 정리의 적합도 검정 절이 그 경우다.
 
 ## 붓스트랩의 타당성
 
