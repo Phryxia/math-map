@@ -66,7 +66,7 @@ $r=2$ 이면 점 $d+2$ 개이고 Radon 정리다.
 
 # 활용
 
-- 중심점 정리(centerpoint theorem): $\mathbb R^d$ 의 점 $n$ 개에 대해, 그 점을 포함하는 모든 닫힌 반공간이 주어진 점을 $n/(d+1)$ 개 이상 포함하는 점이 존재한다. 주어진 점을 $dn/(d+1)$ 개보다 많이 포함하는 닫힌 반공간(halfspace)마다 그 안에 든 점들의 볼록 껍질을 잡으면 어느 $d+1$ 개도 공통점을 가지므로, Helly 정리를 적용해 증명한다.
+- [중심점 정리](centerpoint-theorem.md): $\mathbb R^d$ 의 점 $n$ 개에 대해, 그 점을 포함하는 모든 닫힌 반공간이 주어진 점을 $n/(d+1)$ 개 이상 포함하는 점이 존재한다. 주어진 점을 $dn/(d+1)$ 개보다 많이 포함하는 닫힌 반공간(halfspace)마다 그 안에 든 점들의 볼록 껍질을 잡으면 어느 $d+1$ 개도 공통점을 가지므로, Helly 정리를 적용해 증명한다.
 - [선형계획법](linear-programming.md): $\mathbb R^d$ 의 일차 부등식 계가 해를 갖지 않으면 그 가운데 $d+1$ 개만으로 해가 없다. 반공간에 Helly 정리를 적용한 것이고, 최적해가 제약 $d$ 개로 정해진다는 조합적 차원의 근거다.
 - [Krein–Milman 정리](krein-milman.md): 콤팩트 볼록집합이 극점(extreme point)의 볼록 껍질의 닫힘이라는 정리이고, 유한 차원에서는 Carathéodory 정리와 함께 각 점이 극점 $d+1$ 개 이하의 볼록 결합이라는 Minkowski 정리가 된다.
 
@@ -83,6 +83,6 @@ $r=2$ 이면 점 $d+2$ 개이고 Radon 정리다.
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [중심점 정리](centerpoint-theorem.md)
 
 #optimization #combinatorics #analysis
