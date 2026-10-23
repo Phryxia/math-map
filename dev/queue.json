@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-23T17:08:39.509Z",
-  "nextSeq": 2399,
+  "savedAt": "2026-10-23T21:08:03.735Z",
+  "nextSeq": 2411,
   "items": [
     {
       "id": "9bab7237",
@@ -2884,28 +2884,12 @@
       "seq": 1925
     },
     {
-      "id": "c5272247",
-      "title": "totally-unimodular-matrices 의 후속 간선",
-      "priority": 10,
-      "note": "2026-10-08 회차에 totally-unimodular-matrices 를 새로 썼다(104줄, 리프). 부모는 determinants 와 integer-programming, 최적화 개관 정수계획법 줄 뒤에 한 줄 더했다. integer-programming 의 '## 완전 단일모듈성' 절은 새 문서와 중복이던 Cramer 증명 문단을 한 문장으로 줄이고 본문 링크를 걸었다(8절). 후속 후보. (1) 전체 쌍대 정수성(total dual integrality): Hoffman-Kruskal 의 쌍대 버전이고 Schrijver 22 장이 출처다. 부모는 이 문서. (2) Seymour 분해 정리와 정규 매트로이드: '판정의 복잡도' 절이 이름만 쓴다. 매트로이드 문서가 없으므로 먼저 만들 것. (3) 완전균형 행렬과 완전 이상 그래프: 0-1 행렬 쪽 일반화이고 perfect-graphs 가 있는지 먼저 볼 것. 이 문서가 정의 없이 쓴 용어: 정칙 부분행렬, 꼭짓점-변 근접행렬, 구간 행렬, 피봇, 단체법, 쌍대 문제, 최소 꼭짓점 덮개.",
-      "createdAt": "2026-10-08T20:53:49.412Z",
-      "seq": 1926
-    },
-    {
       "id": "a8843234",
       "title": "tannaka-duality 의 후속 간선",
       "priority": 10,
       "note": "2026-10-08 회차에 tannaka-duality 를 새로 썼다(96줄, 리프). 부모는 group-representations(구조와 분류 묶음, Peter-Weyl 다음)와 monoidal-categories, 범주론 개관 모노이드 범주 줄 뒤에 한 줄 더했다. monoidal-categories 활용 절 첫 항목의 Tannaka 언급에 본문 링크를 걸었다. 초안의 '## 대칭성을 뺐을 때' 헤딩이 4절 문장형 헤딩 grep 에 걸려 '## 꼬임 범주의 복원' 으로 고쳤다. 후속 후보. (1) 미분 Galois 이론: 활용 첫째가 이름만 쓴다. 부모 후보는 이 문서와 galois-theory, ordinary-differential-equations. Picard-Vessiot 확대가 핵심이다. (2) 모티브와 모티브 Galois 군: 활용 둘째가 가정 아래 진술만 쓴다. 모티브 문서가 없으므로 먼저 만들 것이고 8절 분량 판정 필요. (3) 양자군: 큐 항목 aad86bc9 와 겹치므로 그쪽 note 에 이 문서를 부모 후보로 적을 것. 이 문서가 정의 없이 쓴 용어: 아핀 군 스킴, 쌍대 대상, 완전충실 함자, 정칙표현, 쌍대곱, 좌표환, 아핀 Grassmann 다양체, 반전가능 층, 미분가군.",
       "createdAt": "2026-10-08T20:56:53.563Z",
       "seq": 1927
-    },
-    {
-      "id": "a1326f78",
-      "title": "potential-theory 의 후속 간선",
-      "priority": 10,
-      "note": "2026-10-08 회차에 potential-theory 를 새로 썼다(115줄, 리프). 부모는 dirichlet-problem 과 greens-function(둘 다 리프였다), 해석학 개관 Green 함수 줄 뒤에 한 줄 더했다. 큐 116f4b72 와 a2bc660b 가 요청한 내용(용량, Wiener 기준, 세분함수와 Perron 방법, Brownian 도달 확률)을 모두 담았다. 후속 후보. (1) 균형 측도와 Chebyshev 상수: 활용 셋째가 이름만 쓴다. 부모는 이 문서, 복소해석 쪽 태그. (2) 세분함수를 별도 문서로 분리할지: 정의 절 첫 절이 한 문단이므로 8절 분량 판정 먼저. (3) Kakutani 대응의 확률 쪽 확장(열방정식과 Dirichlet 형식): brownian-motion 과 dirichlet-forms 문서 유무를 먼저 볼 것. 이 문서가 정의 없이 쓴 용어: 상반연속, 균형 측도, 상위조화함수, Poisson 적분, 도달 시간, 로그 용량.",
-      "createdAt": "2026-10-08T20:59:54.336Z",
-      "seq": 1928
     },
     {
       "id": "f85f7415",
@@ -2922,14 +2906,6 @@
       "note": "38차 회차에 artin-schreier-theory 를 galois-theory 와 finite-fields 의 자식으로 새로 달고 리프로 남겼다. 자식 후보와 판단할 점. (1) etale-fundamental-group 은 간선을 긋지 않았다(아래 별도 항목의 판정). (2) 표수 p 의 Witt 벡터를 쓰는 Artin-Schreier-Witt 이론은 저장소에 문서가 없다. 성질 절의 '차수 p^m 순환확대' 가 이름만 쓰고 각주로 Serre, Local Fields II 5 를 달았다. witt-ring 은 이차형식의 Witt 환이므로 다른 문서다. (3) 유한체 위 Artin-Schreier 곡선(y^p-y=f(x), Hermite 곡선)은 유리점 개수가 많아 대수기하 부호에 쓰이지만 대수곡선 문서가 저장소에 없다. error-correcting-codes 가 선형 부호까지만 다룬다. (4) 국소체의 야생 분기. class-field-theory 는 수체의 아이디얼류군 쪽이고 표수 p 함수체를 다루지 않으므로 지금은 간선 후보가 아니다.",
       "createdAt": "2026-10-09T00:45:46.660Z",
       "seq": 1934
-    },
-    {
-      "id": "e63cfafb",
-      "title": "donsker-invariance-principle 의 후속 간선",
-      "priority": 10,
-      "note": "38차 회차에 donsker-invariance-principle 을 weak-convergence 와 brownian-motion 의 자식으로 새로 달고 리프로 남겼다. 자식 후보와 판단할 점. (1) Skorokhod 공간 D[0,1] 과 경험과정. 성질 절의 '경험과정 판본' 이 Brown 다리와 Skorokhod 위상을 이름만 쓰고 각주로 Billingsley 13, 16 절을 달았다. 저장소에 경험과정, Brown 다리, Skorokhod 공간 문서가 모두 없다. 큐의 0aaf9d9d 'Skorokhod 표현정리와 결합' 과 겹치는지 먼저 대조한다. (2) Kolmogorov-Smirnov 검정. 활용 절 셋째가 통계량과 극한분포를 말하지만 검정 문서가 저장소에 없다. statistics 분야의 신규 주제 후보다. (3) 반복로그법칙(Strassen 불변원리)은 같은 꺾은선 과정의 다른 스케일 극한이고 문서가 없다. (4) 단위근 검정과 Dickey-Fuller 는 계량 쪽이라 지금 저장소의 statistics 갈래에 자리가 없다.",
-      "createdAt": "2026-10-09T00:50:37.218Z",
-      "seq": 1937
     },
     {
       "id": "8b4ff3d5",
@@ -2972,28 +2948,12 @@
       "seq": 1961
     },
     {
-      "id": "dbcd0e19",
-      "title": "Gauss 구적의 후속 간선",
-      "priority": 10,
-      "note": "2026-10-09 회차에 새로 썼다(114줄, 부모 orthogonal-polynomials, 계산 개관 '알고리즘' 갈래, 주 분야 #algorithms). 리프다. 담은 것: 노드를 고정했을 때 x^2 에서 깨지고 노드를 미지수로 풀면 차수 3 까지 가는 2점 계산, 구적 공식과 정확도 차수, Lagrange 기저로 정한 가중치, Jacobi 행렬, 차수 2n-1 최적성과 p_n^2 반례, 가중치 양수성, Golub-Welsch 정리와 의사코드, 2n 차 미분으로 적은 오차항. 후속 후보. (1) Clenshaw-Curtis 구적. Chebyshev 절점과 FFT 로 계수를 얻는 쪽이고 Gauss 와 정확도를 비교하는 Trefethen 의 결과가 있다. chebyshev-polynomials 와 fft 가 부모가 되어 Gauss 구적의 형제가 된다. (2) Newton-Cotes 와 Runge 현상. 활용 첫째가 Newton-Cotes 를 이름으로만 쓴다. (3) 희소격자 구적. 고차원에서 텐서곱 노드 수가 지수로 늘어나는 것을 Smolyak 조합으로 줄이는 쪽이고 machine_learning 과 probability 에 붙는다. (1)이 먼저다",
-      "createdAt": "2026-10-09T08:58:12.091Z",
-      "seq": 1962
-    },
-    {
       "id": "baf48f70",
       "title": "분지과정의 후속 간선",
       "priority": 10,
       "note": "2026-10-09 회차에 새로 썼다(91줄, 부모 generating-functions 와 markov-chains, 확률 개관 '조건부 구조와 이산시간 확률과정' 갈래). 리프다. 담은 것: 자손이 0 또는 2 인 두 분포로 m=1 과 m=4/3 을 비교해 소멸 확률을 q=1 과 q=1/2 로 가르는 직관, Galton-Watson 정의, 생성함수 n 겹 합성 정리, 소멸 확률이 f(s)=s 의 최소근이라는 정리와 볼록성 증명, Z_n/m^n 의 Martingale 성질과 m=1 에서 균등적분성이 깨지는 예. 후속 후보. (1) 침투(percolation). 저장소에 문서가 없다. 분지과정이 나무 위 침투의 정확한 판본이고 격자에서 임계 확률로 넘어가는 자리다. erdos-renyi-graphs 와 union-find 가 이름만 쓴다. (2) 결합(coupling) 기법. mixing-time 과 total-variation-distance 가 '결합 상한' 을 이름으로 쓰는데 단독 문서가 없다. (3) 연속상태 분지과정과 Feller 확산. 연속시간 쪽이고 ito-calculus 가 부모가 된다. (1)과 (2)가 둘 다 확률 쪽 공백이고 (2)가 이미 두 문서에 걸려 있어 먼저다",
       "createdAt": "2026-10-09T09:01:43.443Z",
       "seq": 1963
-    },
-    {
-      "id": "13a17a37",
-      "title": "결합의 후속 간선",
-      "priority": 10,
-      "note": "2026-10-09 회차에 새로 썼다(84줄, 부모 total-variation-distance, 자식 mixing-time, 확률 개관 '조건부 구조와 이산시간 확률과정' 갈래). mixing-time 의 부모가 markov-chains, total-variation-distance, coupling 셋이 되었다. total-variation-distance 가 coupling 의 조상이지만 혼합시간의 정의가 전변동거리를 직접 쓰므로 둘 다 남겼고 부모가 3개라 5절 기준에 걸리지 않는다. 담은 것: 앞면 확률 0.5 와 0.51 동전을 따로 던지면 불일치가 0.5, 같은 난수로 던지면 0.01 이라는 직관, 결합과 최적 결합 정의, 결합 부등식과 최적 결합 구성, 만남 시각으로 쓴 연쇄 수렴 상한, Strassen 정리와 분위수 결합. 후속 후보. (1) 경로 결합(path coupling). 활용 첫째가 이름만 쓴다. Bubley-Dyer 의 보조정리로 인접 상태만 다루는 쪽이고 mixing-time 의 자식 자리다. (2) Stein 방법. 결합으로 분포 근사 오차를 재는 쪽이고 central-limit-theorem 과 poisson-process 에 붙는다. (3) 침투의 단조 결합. 분지과정 메모의 침투 문서가 생기면 그쪽 자식이다",
-      "createdAt": "2026-10-09T09:04:04.018Z",
-      "seq": 1964
     },
     {
       "id": "e2b36517",
@@ -3330,6 +3290,46 @@
       "note": "#number_theory #cryptography. discrete-logarithm 표와 '유한체에서의 준지수 시간' 절이 index calculus 를 이름만 쓴다. 부모 후보 discrete-logarithm, pohlig-hellman 과 이웃. 인수 기저, 매끄러운 수의 확률(L(1/2) 복잡도), 선형대수 단계.",
       "createdAt": "2026-10-23T17:08:32.276Z",
       "seq": 2398
+    },
+    {
+      "id": "40a219e3",
+      "title": "Clenshaw-Curtis 구적의 후속 간선과 희소격자 구적",
+      "priority": 10,
+      "note": "2026-10-23 회차에 clenshaw-curtis-quadrature 를 새로 썼다(부모 newton-cotes 와 chebyshev-polynomials, 해석학 개관 '미분과 적분' 갈래 Newton-Cotes 다음 곁가지). chebyshev-polynomials 의 리프가 풀렸다. dbcd0e19(Gauss 구적의 후속) 의 후보 (1) 을 닫았고 (2) Newton-Cotes 는 이미 문서가 있었다. 남은 후보: (a) Smolyak 희소격자 구적. 활용 셋째가 이름만 쓴다. 부모는 clenshaw-curtis-quadrature, 태그 #analysis #algorithms #probability. (b) Fejer 규칙. 정의 절이 이름만 쓴다. 별도 문서보다 이 문서의 절이 맞는지 8절 분량 판정 먼저. (c) 이산 코사인 변환. 계산 절이 이름만 쓴다. fourier 나 fft 의 자식 자리.",
+      "createdAt": "2026-10-23T20:40:25.319Z",
+      "seq": 2399
+    },
+    {
+      "id": "da713988",
+      "title": "경로 결합의 후속 간선",
+      "priority": 10,
+      "note": "2026-10-23 회차에 path-coupling 을 새로 썼다(부모 mixing-time 하나, 확률 개관 혼합시간 다음 곁가지). mixing-time 의 리프가 풀렸다. 13a17a37(결합의 후속) 의 후보 (1) 을 닫았다. (2) Stein 방법은 stein-method 로 이미 있고 (3) 침투는 percolation 으로 이미 있다. 남은 후보: (a) hard-core 모형과 Glauber 동역학. 활용 둘째가 이름만 쓴다. 부모는 path-coupling 과 graphical-models 후보. (b) 거친 Ricci 곡률(Ollivier). 성질 셋째 절이 이름만 쓴다. 부모는 path-coupling 과 optimal-transport. (c) 근사 계수와 표본 추출의 동치(Jerrum-Valiant-Vazirani). 활용 첫째가 이름만 쓴다.",
+      "createdAt": "2026-10-23T20:43:23.652Z",
+      "seq": 2400
+    },
+    {
+      "id": "d9bc1e0d",
+      "title": "KS 검정의 후속: Cramer-von Mises 와 Anderson-Darling 통계량",
+      "priority": 10,
+      "note": "2026-10-23 회차에 kolmogorov-smirnov-test, brownian-bridge, law-of-iterated-logarithm 을 새로 썼다. 반복로그 법칙은 brownian-motion 의 '반복로그 법칙' 언급에 본문 링크를 걸었다. 남은 후보: (a) Anderson-Darling 검정. KS 검정 '가정의 위반' 절이 이름만 쓴다. 부모 kolmogorov-smirnov-test 와 brownian-bridge. (b) Cramer-von Mises 통계량. brownian-bridge 활용 둘째가 이름만 쓴다. 둘 다 가중 이차 경험분포함수 통계량이고 극한분포가 Brown 다리의 Karhunen-Loeve 전개에서 나오므로 한 문서(이차 EDF 통계량)로 묶을지 8절과 제목 규칙('A와 B' 금지) 판정 먼저. (c) 단위근 검정은 statistics 갈래에 자리가 없다(38차 판정 유지). (d) law-of-iterated-logarithm 의 후속: Skorokhod 매장(부분합 절이 이름만 씀, 부모 brownian-motion), Lévy 연속률(활용 둘째가 이름만 씀), 신뢰열(활용 셋째, 부모 hypothesis-testing 과 이 문서).",
+      "createdAt": "2026-10-23T20:50:48.755Z",
+      "seq": 2403
+    },
+    {
+      "id": "5e384ccb",
+      "title": "potential-theory 와 로그 용량의 후속",
+      "priority": 10,
+      "note": "2026-10-23 회차에 logarithmic-capacity(로그 용량)를 새로 썼다(부모 potential-theory 와 chebyshev-polynomials, 해석학 개관 퍼텐셜 이론 아래 최대값 원리 다음 곁가지). potential-theory 의 리프가 풀렸고 활용 셋째의 '로그 용량' 에 본문 링크를 걸었다. a1326f78 의 후보 (1) 균형 측도와 Chebyshev 상수를 닫았다. 남은 후보: (a) 세분함수 분리 여부(8절 분량 판정). (b) Kakutani 대응의 확률 쪽 확장(열방정식과 Dirichlet 형식, dirichlet-forms 문서 유무 먼저). (c) Bernstein-Walsh 근사 정리. logarithmic-capacity 활용 둘째가 이름만 쓴다. (d) Fekete-Szegő 의 대수적 정수 정리와 Schur-Siegel-Smyth 문제. 정수론 쪽, 부모 logarithmic-capacity. (e) 무작위 행렬 고윳값의 평형 측도(로그 가스)는 wigner-semicircle 과 이 문서를 잇는 후보.",
+      "createdAt": "2026-10-23T20:54:21.297Z",
+      "seq": 2404
+    },
+    {
+      "id": "60026eea",
+      "title": "선형계획 쪽 신규 문서들의 후속",
+      "priority": 10,
+      "note": "2026-10-23 회차에 total-dual-integrality, matching-polytope, ellipsoid-method, simplex-method, farkas-lemma, gordan-lemma 를 새로 썼다. 사슬은 convexity -> farkas-lemma -> {linear-programming, gordan-lemma}, gordan-lemma -> total-dual-integrality -> matching-polytope. toric-varieties 의 'Gordan 보조정리' 에 본문 링크를 걸었다. 남은 후보: (a) Seymour 분해와 정규 매트로이드(부모 matroids, totally-unimodular-matrices). (b) 완전균형 행렬. (c) 부분모듈 흐름과 Lucchesi-Younger 정리. (d) 확장 복잡도(Yannakakis 정리). (e) 부분모듈 함수 최소화. (f) 쌍대 단체법과 네트워크 단체법. (g) 자산 가격 결정의 기본 정리(farkas-lemma 활용 셋째). (h) Graver 기저(gordan-lemma 활용 넷째).",
+      "createdAt": "2026-10-23T21:07:52.592Z",
+      "seq": 2410
     },
     {
       "id": "dfb3e493",
