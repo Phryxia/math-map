@@ -125,6 +125,6 @@ $2n\ln n\approx 1.39\thinspace n\log_2 n$ 이므로 기댓값은 하한 $\log_2 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [선택 알고리즘](selection-algorithm.md)
 
 #algorithms #data_structures #order_theory #probability
