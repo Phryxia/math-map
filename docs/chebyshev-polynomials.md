@@ -113,6 +113,6 @@ $n+1$ 개의 극값점에서 연속함수를 [다항식 보간](polynomial-inter
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Clenshaw–Curtis 구적](clenshaw-curtis-quadrature.md)
 
 #analysis #linear_algebra #algorithms

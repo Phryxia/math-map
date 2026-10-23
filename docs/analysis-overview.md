@@ -97,6 +97,7 @@ graph TD
 - [Laplace 연산자](laplace-operator.md): Hessian 의 대각합, 구면 평균과의 차를 재는 평균값 공식, 회전 불변성과 극좌표 표현, 고윳값의 Weyl 법칙
 - [Riemann 적분](riemann-integral.md): 분할과 상하합, 적분 가능성의 판정
   - [Newton–Cotes 공식](newton-cotes.md): 등간격 점의 보간 다항식을 적분한 수치적분, 사다리꼴 규칙과 Simpson 규칙의 오차, 높은 차수의 음의 가중치와 Romberg 적분
+  - [Clenshaw–Curtis 구적](clenshaw-curtis-quadrature.md): Chebyshev 극값점의 보간 다항식을 적분한 수치적분, 양수 가중치와 연속함수에서의 수렴, 두 배로 늘려도 유지되는 노드
 - [미적분학의 기본 정리](fundamental-calculus.md): 미분과 적분의 역관계
   - [Green 정리](greens-theorem.md): 평면 영역의 이중적분을 경계의 선적분으로 바꾸는 정리, 넓이 공식과 신발끈 공식
 - [상미분방정식](ordinary-differential-equations.md): Picard–Lindelöf 존재 정리와 선형 이론

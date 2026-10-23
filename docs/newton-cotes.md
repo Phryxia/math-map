@@ -65,5 +65,6 @@ $n=8$ 의 닫힌 공식부터 음의 가중치가 나타나고, $n\to\infty$ 에
 ## 더 알아보기
 
 - [Richardson 외삽](richardson-extrapolation.md)
+- [Clenshaw–Curtis 구적](clenshaw-curtis-quadrature.md)
 
 #analysis #algorithms
