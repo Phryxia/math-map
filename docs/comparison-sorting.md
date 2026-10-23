@@ -106,7 +106,7 @@ $2n\ln n\approx 1.39\thinspace n\log_2 n$ 이므로 기댓값은 하한 $\log_2 
 
 ## 비교 모형 밖의 정렬
 
-하한은 비교의 답만 쓰는 알고리즘에 대한 것이다. 키가 $0$ 이상 $k$ 미만의 정수이면 키마다 개수를 세어 두고 차례로 적는 계수 정렬(counting sort)이 비교 없이 $O(n+k)$ 시간에 정렬한다. 키의 값을 배열의 위치로 쓰므로 결정 트리로 나타나지 않는다.
+하한은 비교의 답만 쓰는 알고리즘에 대한 것이다. 키가 $0$ 이상 $k$ 미만의 정수이면 키마다 개수를 세어 두고 차례로 적는 계수 정렬(counting sort)이 비교 없이 $O(n+k)$ 시간에 정렬한다. 키의 값을 배열의 위치로 쓰므로 결정 트리로 나타나지 않는다. 자릿수마다 계수 정렬을 되풀이하는 것이 [기수 정렬](radix-sort.md)이다.
 
 # 활용
 
@@ -126,6 +126,7 @@ $2n\ln n\approx 1.39\thinspace n\log_2 n$ 이므로 기댓값은 하한 $\log_2 
 ## 더 알아보기
 
 - [선택 알고리즘](selection-algorithm.md)
+- [기수 정렬](radix-sort.md)
 - [접미사 배열](suffix-arrays.md)
 
 #algorithms #data_structures #order_theory #probability
