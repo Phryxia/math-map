@@ -130,5 +130,6 @@ $1$ 부터 $2n$ 까지에서 $n+1$ 개를 뽑으면 하나가 다른 하나를 �
 
 - [Ramsey 이론](ramsey-theory.md)
 - [그래프 색칠](graph-coloring.md)
+- [암호 해시 함수](cryptographic-hash-functions.md)
 
 #combinatorics #graph_theory #number_theory

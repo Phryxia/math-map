@@ -46,7 +46,7 @@ $$
 (m\_1m\_2)^d\equiv m\_1^d\thinspace m\_2^d \pmod n
 $$
 
-그래서 해시 함수(hash function) $\mathcal H$ 를 먼저 적용해 $s=\mathcal H(m)^d \bmod n$ 으로 서명한다. $\mathcal H$ 를 무작위 함수로 모형화하는 무작위 오라클 모형(random oracle model)에서는, 이 방식을 위조하는 공격자로부터 $x^e \bmod n$ 을 역산하는 알고리즘이 나온다[^5].
+그래서 [해시 함수](cryptographic-hash-functions.md) $\mathcal H$ 를 먼저 적용해 $s=\mathcal H(m)^d \bmod n$ 으로 서명한다. $\mathcal H$ 를 무작위 함수로 모형화하는 무작위 오라클 모형(random oracle model)에서는, 이 방식을 위조하는 공격자로부터 $x^e \bmod n$ 을 역산하는 알고리즘이 나온다[^5].
 
 ## Schnorr 서명
 

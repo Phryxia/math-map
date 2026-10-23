@@ -73,7 +73,7 @@ $$
 
 ## Fiat–Shamir 변환
 
-**Fiat–Shamir 변환(Fiat–Shamir transform)** 은 검증자의 무작위 질문을 지금까지의 메시지에 해시 함수를 적용한 값으로 바꿔 대화를 없애는 방법이다[^4]. Schnorr 프로토콜에서 $c=\mathcal H(t,m)$ 으로 두면 증명자 혼자 $(t,s)$ 를 만들 수 있고, 이것이 메시지 $m$ 에 대한 Schnorr 서명이다. 해시 함수를 무작위 함수로 모형화하면 서명의 위조가 이산로그 계산으로 환원된다.
+**Fiat–Shamir 변환(Fiat–Shamir transform)** 은 검증자의 무작위 질문을 지금까지의 메시지에 [해시 함수](cryptographic-hash-functions.md)를 적용한 값으로 바꿔 대화를 없애는 방법이다[^4]. Schnorr 프로토콜에서 $c=\mathcal H(t,m)$ 으로 두면 증명자 혼자 $(t,s)$ 를 만들 수 있고, 이것이 메시지 $m$ 에 대한 Schnorr 서명이다. 해시 함수를 무작위 함수로 모형화하면 서명의 위조가 이산로그 계산으로 환원된다.
 
 # 활용
 

@@ -95,6 +95,7 @@ $\mathrm P=\mathrm{NP}$ 이면 $L\_f$ 를 다항시간에 판정하고, $z$ 를 
 ## 더 알아보기
 
 - [유사난수 생성기](pseudorandom-generators.md)
+- [암호 해시 함수](cryptographic-hash-functions.md)
 - [전자서명](digital-signatures.md)
 
 #cryptography #complexity #computation
