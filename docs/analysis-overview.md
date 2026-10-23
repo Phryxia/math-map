@@ -74,7 +74,7 @@ graph TD
   - [Baire 범주 정리](baire-category.md): 완비 공간이 성긴 집합 가산 개로 덮이지 않는다는 정리, 구성 없는 존재 증명
 - [Stone–Weierstrass 정리](stone-weierstrass.md): 점을 분리하는 부분대수의 균등근사, Weierstrass 근사정리
 - [Korovkin 정리](korovkin-theorem.md): 양작용소 열의 균등수렴을 세 검정함수에서 판정, Bernstein 다항식의 수렴
-- [직교다항식](orthogonal-polynomials.md): 가중 내적의 직교 기저, 삼항 점화식과 영점의 실근 분리, 차수 $2n-1$ 까지 정확한 [Gauss 구적](gaussian-quadrature.md)
+- [직교다항식](orthogonal-polynomials.md): 가중 내적의 직교 기저, 삼항 점화식과 영점의 실근 분리, 영점을 절점으로 쓰면 차수 $2n-1$ 까지 정확한 구적 공식
 - [Chebyshev 다항식](chebyshev-polynomials.md): 구간에서 균등노름이 가장 작은 최고차 계수 $1$ 의 다항식, 등진동과 절점 보간
 
 ## Lipschitz 조건과 고정점
