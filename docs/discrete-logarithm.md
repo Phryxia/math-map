@@ -137,6 +137,7 @@ RSA 키 전송 방식에는 이 성질이 없어 서버의 개인키가 유출�
 ## 더 알아보기
 
 - [타원곡선](elliptic-curves.md)
+- [영지식 증명](zero-knowledge-proofs.md)
 - [격자 기반 후양자 암호](post-quantum-cryptography.md)
 
 #cryptography #number_theory #group_theory
