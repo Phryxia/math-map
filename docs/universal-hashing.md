@@ -62,7 +62,7 @@ $a$ 에 $0$ 도 허용하고 칸 수를 $m=p$ 로 두면 $h\_{a,b}(x)=ax+b \bmod
 
 - 해시 테이블. 표를 만들 때 함수를 한 번 고른다. 키를 넣는 쪽이 고른 함수를 모르면 목록 길이의 기댓값 정리가 어떤 키 집합에도 성립한다.
 - [메시지 인증 코드](message-authentication-codes.md). 일회용 MAC(message authentication code) $am+b \bmod p$ 는 쌍마다 독립인 족이고, 위조 확률 $1/p$ 는 두 칸의 값이 독립이라는 데서 나온다[^2].
-- 무작위성 추출. **잔여 해시 보조정리(leftover hash lemma)** 는 최소 엔트로피(min-entropy)가 $k$ 인 분포에서 뽑은 $x$ 와 범용 해시 함수 $h$ 에 대해 $(h,h(x))$ 가 균등 분포에 가깝다는 정리다. [유사난수 생성기](pseudorandom-generators.md)를 일반 [일방향 함수](one-way-functions.md)에서 만드는 Håstad–Impagliazzo–Levin–Luby 구성이 이 보조정리를 쓴다[^4].
+- [무작위성 추출기](randomness-extractors.md). 잔여 해시 보조정리(leftover hash lemma)는 최소 엔트로피(min-entropy)가 $k$ 인 분포에서 뽑은 $x$ 와 범용 해시 함수 $h$ 에 대해 $(h,h(x))$ 가 균등 분포에 가깝다는 정리다. [유사난수 생성기](pseudorandom-generators.md)를 일반 [일방향 함수](one-way-functions.md)에서 만드는 Håstad–Impagliazzo–Levin–Luby 구성이 이 보조정리를 쓴다[^4].
 - 스트림 요약. Count-Min 스케치(Count-Min sketch)는 쌍마다 독립인 해시 함수 몇 개로 항목마다 계수기를 골라 빈도를 고정된 메모리로 추정한다[^5].
 
 [^1]: J. L. Carter, M. N. Wegman, "Universal classes of hash functions", Journal of Computer and System Sciences 18 (1979), 143–154.
@@ -80,6 +80,6 @@ $a$ 에 $0$ 도 허용하고 칸 수를 $m=p$ 로 두면 $h\_{a,b}(x)=ax+b \bmod
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [무작위성 추출기](randomness-extractors.md)
 
 #data_structures #algorithms #probability #cryptography

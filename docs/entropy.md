@@ -92,10 +92,19 @@ $H(f(X)) \le H(X)$ 이고 $f$ 가 단사이면 등호다. 데이터를 가공해
 
 ## 더 알아보기
 
+### 부호화
+
 - [KL divergence](kl-divergence.md)
 - [무손실 부호화 정리](source-coding.md)
+
+### 동역학계
+
 - [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md)
-- [Kolmogorov 복잡도](kolmogorov-complexity.md)
 - [유한형 이동](shifts-of-finite-type.md)
+
+### 계산과 무작위성
+
+- [Kolmogorov 복잡도](kolmogorov-complexity.md)
+- [무작위성 추출기](randomness-extractors.md)
 
 #information_theory #probability #computation
