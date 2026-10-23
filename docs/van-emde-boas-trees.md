@@ -92,6 +92,6 @@ $u=2^{2^k}$ 이면 재귀 한 번에 $k$ 가 $1$ 줄므로 $T(u)=O(k)=O(\log\log
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [y-fast 트라이](y-fast-tries.md)
 
 #data_structures #algorithms

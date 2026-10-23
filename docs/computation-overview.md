@@ -134,7 +134,7 @@ graph TD
 - [서로소 집합 자료구조](union-find.md): 경로 압축과 랭크 병합, 역 Ackermann 함수 상한
 - [균형 이진 탐색 트리](balanced-binary-search-trees.md): 회전으로 높이를 로그로 유지하는 조건과 분할상환 분석
   - [B 트리](b-trees.md): 마디마다 키를 $t-1$ 개에서 $2t-1$ 개 두어 높이를 $\log_t n$ 으로 묶고 블록 읽기 $O(\log_B n)$ 번에 찾는다. 외부 메모리 하한과 2-3-4 트리
-  - [van Emde Boas 트리](van-emde-boas-trees.md): 비트를 위아래 절반으로 갈라 재귀해 정수의 다음 원소 찾기를 $O(\log\log u)$ 시간에 한다
+- [van Emde Boas 트리](van-emde-boas-trees.md): 비트를 위아래 절반으로 갈라 재귀해 정수의 다음 원소 찾기를 $O(\log\log u)$ 시간에 한다
 - [Splay 트리](splay-trees.md): 접근한 노드를 zig-zig 와 zig-zag 회전으로 뿌리까지 올리는 이진 탐색 트리, 접근 보조정리와 정적 최적성, 동적 최적성 추측
 - [이진 힙](binary-heaps.md): 부모의 키가 자식의 키 이하인 완전 이진 트리를 배열에 두어 우선순위 큐를 구현한다. 선형 시간 구성과 힙 정렬
   - [Fibonacci 힙](fibonacci-heaps.md): 정리를 최솟값 삭제까지 미뤄 키 감소를 분할상환 상수 시간에 한다. 연쇄 자르기와 차수의 상한
@@ -150,6 +150,7 @@ graph TD
   - [Bloom 필터](bloom-filters.md): 비트 배열과 해시 함수 $k$ 개로 원소 여부에 답한다. 거짓 양성 확률과 최적의 $k$, 공간의 하한
 - [해시 테이블](hash-tables.md): 체이닝과 개방 주소법, 균등 해싱에서 탐사 횟수의 기댓값 $1/(1-\alpha)$ 와 선형 탐사, 크기 두 배 늘리기의 분할상환 비용
   - [뻐꾸기 해싱](cuckoo-hashing.md): 키마다 두 칸 가운데 하나에만 두어 찾기를 최악의 경우에도 두 번의 조회로 끝낸다. 뻐꾸기 그래프와 적재율의 문턱
+  - [y-fast 트라이](y-fast-tries.md): 접두사를 길이별 해시 테이블에 두고 길이에 대해 이진 탐색해, 공간 $O(n)$ 에서 다음 원소를 $O(\log\log u)$ 에 찾는다
 - [동적 연결성](dynamic-connectivity.md): 간선 삽입과 삭제 아래에서 연결성 질의
   - [Link-cut tree](link-cut-trees.md): splay 트리로 구현한 동적 숲, 경로 질의
 

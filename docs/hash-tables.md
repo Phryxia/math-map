@@ -102,5 +102,6 @@ $\alpha=1/2$ 이면 두 값은 $2$ 와 약 $1.39$ 이고, $\alpha=0.9$ 이면 $1
 ## 더 알아보기
 
 - [뻐꾸기 해싱](cuckoo-hashing.md)
+- [y-fast 트라이](y-fast-tries.md)
 
 #data_structures #algorithms #probability
