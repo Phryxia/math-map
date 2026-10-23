@@ -80,7 +80,7 @@ $$
 
 ## 문자열과 생물정보학
 
-편집거리, 최장 공통 부분수열, 서열 정렬이 모두 격자 DAG 위의 최단·최장경로다. 유사도 점수를 바꾸면 같은 틀에서 다른 정렬이 나오고, 지역 정렬은 시작점을 자유롭게 두는 변형이다.
+[편집 거리](edit-distance.md), 최장 공통 부분수열, 서열 정렬이 모두 격자 DAG 위의 최단·최장경로다. 유사도 점수를 바꾸면 같은 틀에서 다른 정렬이 나오고, 지역 정렬은 시작점을 자유롭게 두는 변형이다.
 
 ## 확률모형의 추론
 
@@ -103,5 +103,6 @@ Bellman 방정식은 원래 동적 계획법에서 나온 식이고, 유한 시�
 - [나무폭](treewidth.md)
 - [은닉 Markov 모형](hidden-markov-model.md)
 - [최장 증가 부분수열](longest-increasing-subsequence.md)
+- [편집 거리](edit-distance.md)
 
 #algorithms #computation

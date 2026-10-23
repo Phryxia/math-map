@@ -111,6 +111,7 @@ graph TD
 먼저 읽을 갈래: 계산 모형과 의미론. 먼저 읽을 것: [위상정렬](topological-sort.md)(그래프 개관). 시작 문서: [동적 계획법](dynamic-programming.md).
 
 - [동적 계획법](dynamic-programming.md): 부분문제의 DAG(directed acyclic graph) 위에서 값을 위상순으로 채운다
+  - [편집 거리](edit-distance.md): 삽입, 삭제, 교체의 최소 횟수를 앞부분 쌍의 표로 $O(mn)$ 시간에 계산한다. 거리 공리와 최장 공통 부분수열, 이차 시간의 하한
   - [Courcelle 정리](courcelle-theorem.md): 단항 2차 논리로 쓴 그래프 성질이 나무폭으로 묶인 그래프에서 선형 시간에 판정된다는 정리, 나무 오토마타로의 번역
 - [비교 정렬](comparison-sorting.md): 비교 횟수의 하한 $\lceil\log_2 n!\rceil$ 과 병합 정렬, 무작위 quicksort 의 기대 비교 횟수 $2n\ln n+O(n)$
   - [기수 정렬](radix-sort.md): 자릿수마다 안정한 계수 정렬을 되풀이해 비교 없이 $O(d(n+b))$ 시간에 정렬한다
