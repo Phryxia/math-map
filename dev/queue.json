@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-23T01:09:15.620Z",
-  "nextSeq": 2379,
+  "savedAt": "2026-10-23T05:06:00.294Z",
+  "nextSeq": 2385,
   "items": [
     {
       "id": "9bab7237",
@@ -3316,6 +3316,14 @@
       "seq": 2378
     },
     {
+      "id": "128dacc2",
+      "title": "합 검사 프로토콜과 GKR 프로토콜",
+      "priority": 10,
+      "note": "complexity. 부모 후보 interactive-proofs. 계산 위임, 다중선형 확장",
+      "createdAt": "2026-10-23T05:02:40.606Z",
+      "seq": 2384
+    },
+    {
       "id": "dfb3e493",
       "title": "분야 개관이 없는 분야 점검",
       "priority": 9,
@@ -3698,6 +3706,14 @@
       "note": "2026-09-29 넷째 회차에 3차까지 끝내고 이 갈래를 닫았다. 남은 \"A와 B\" 꼴 제목 32 건은 전부 4절 제목 규칙의 예외다.\n\n3차에서 확인한 것. whittaker-models(\"Whittaker 모형과 중복도 1\"), zhu-algebra(\"Zhu 대수와 모듈러 불변성\"), siegel-weil(\"Siegel–Weil 공식과 이차형식의 표현수\"), waldspurger-formula(\"Waldspurger 정리와 토릭 주기\") 넷을 본문으로 확인했고 넷 다 예외다. 4절의 예외 문구는 \"정리 이름과 그 정리가 답하는 개념을 나란히 둔 제목\" 이고 둘의 순서는 따지지 않는다. siegel-weil 은 개요가 표현수라는 물음으로 시작하고 공식이 그 답이며, whittaker-models 와 zhu-algebra 는 앞의 개념에 뒤의 정리가 답한다.\n\n2차에서 좁힌 여섯과 가르는 선. 뒤 항목이 앞 정리가 답하는 물음이면 예외이고, 뒤 항목이 앞 정리가 다루는 대상이나 사는 공간이면 좁힌다. 깃발다양체는 Borel–Weil–Bott 정리가 사는 공간이고, 사원수 대수 위의 형식과 반정수 무게 형식은 각 대응의 한쪽 항이고, theta 대응은 Weil 표현의 응용이고, 색 Jones 다항식은 볼륨 추측의 진술에 쓰이는 대상이다.\n\n재점검이 필요해지는 때. 새 문서가 \"A와 B\" 꼴 제목으로 들어오면 다음으로 찾아 위 기준으로 가른다. 정기적으로 돌릴 일은 아니다.\n  for f in docs/*.md; do t=$(head -1 \"$f\"); case \"$t\" in *와\\ *|*과\\ *) echo \"$(basename $f .md): $t\";; esac; done",
       "createdAt": "2026-09-29T12:54:43.398Z",
       "seq": 1454
+    },
+    {
+      "id": "2eb95020",
+      "title": "zero-knowledge-proofs 개요 둘째 문단 다듬기",
+      "priority": 5,
+      "note": "개요 둘째 문단이 직관을 예고한다. 다음 보강 때 한 문장으로 줄일지 판단",
+      "createdAt": "2026-10-23T04:39:52.830Z",
+      "seq": 2381
     },
     {
       "id": "08170aab",
