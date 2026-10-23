@@ -69,7 +69,7 @@ $\mathrm P=\mathrm{NP}$ 이면 $L\_f$ 를 다항시간에 판정하고, $z$ 를 
 
 ## 일방향 함수에서 나오는 구성
 
-- **유사난수 생성기(pseudorandom generator).** 다항시간 함수 $G:\lbrace 0,1\rbrace^n\to\lbrace 0,1\rbrace^{\ell(n)}$, $\ell(n)\gt n$ 으로서 $G(s)$ 와 균등한 $\ell(n)$ 비트 문자열을 다항시간 알고리즘이 무시할 만한 확률 차로만 가르는 것이다. 일방향 함수가 존재하면 유사난수 생성기가 존재한다[^3]. 일방향 순열이면 Goldreich–Levin 비트로 $G(s)=(f(s),b(s))$ 를 만들어 한 비트를 늘린다.
+- [유사난수 생성기](pseudorandom-generators.md). 다항시간 함수 $G:\lbrace 0,1\rbrace^n\to\lbrace 0,1\rbrace^{\ell(n)}$, $\ell(n)\gt n$ 으로서 $G(s)$ 와 균등한 $\ell(n)$ 비트 문자열을 다항시간 알고리즘이 무시할 만한 확률 차로만 가르는 것이다. 일방향 함수가 존재하면 유사난수 생성기가 존재한다[^3]. 일방향 순열이면 Goldreich–Levin 비트로 $G(s)=(f(s),b(s))$ 를 만들어 한 비트를 늘린다.
 - **약속 방식(commitment scheme).** 유사난수 생성기에서 비트 약속이 구성된다[^4]. 이 약속이 영지식 증명의 3-색칠 프로토콜에 쓰인다.
 - **전자서명.** 일방향 함수가 존재하면 선택 메시지 공격에 안전한 서명이 존재한다[^5].
 
@@ -94,6 +94,6 @@ $\mathrm P=\mathrm{NP}$ 이면 $L\_f$ 를 다항시간에 판정하고, $z$ 를 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [유사난수 생성기](pseudorandom-generators.md)
 
 #cryptography #complexity #computation
