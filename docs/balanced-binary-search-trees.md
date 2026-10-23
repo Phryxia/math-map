@@ -102,6 +102,7 @@ splay 트리(splay tree)는 균형 조건을 저장하지 않는다. 접근한 �
 ## 더 알아보기
 
 - [B 트리](b-trees.md)
+- [van Emde Boas 트리](van-emde-boas-trees.md)
 - [Link-cut tree](link-cut-trees.md)
 
 #data_structures #algorithms #computation
