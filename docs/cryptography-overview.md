@@ -59,6 +59,7 @@ graph TD
 - [일방향 함수](one-way-functions.md) — 계산은 쉽고 무작위 입력의 역산은 무시할 만한 확률로만 성공하는 함수. 약속과 서명이 이것만으로 구성된다
 - [유사난수 생성기](pseudorandom-generators.md) — 짧은 씨를 균등 난수열과 구별되지 않는 긴 비트열로 늘린다. 일방향 함수의 존재와 동치다
   - [약속 방식](commitment-schemes.md) — 값을 감춘 채 맡겼다가 바꿀 수 없게 연다. Pedersen 약속과 Naor 약속
+  - [유사난수 순열](pseudorandom-permutations.md) — 무작위 순열과 구별되지 않는 블록 암호의 정의. Feistel 구조, Luby–Rackoff 정리, 전환 보조정리
 - [암호 해시 함수](cryptographic-hash-functions.md) — 같은 값을 내는 두 입력을 찾기 어려운 압축 함수. 생일 공격, Merkle–Damgård 구성
   - [Merkle 나무](merkle-trees.md) — 블록 해시값을 이진 나무로 쌓아 뿌리 하나로 전체를 대표한다. 포함 증명과 Merkle 서명
   - [전자서명](digital-signatures.md) — 비밀키로만 만들고 공개키로 확인하는 값. Lamport 서명, 해시 후 RSA 서명, Schnorr 서명
