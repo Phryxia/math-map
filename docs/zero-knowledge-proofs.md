@@ -78,7 +78,7 @@ $$
 # 활용
 
 - 신원 확인. 비밀번호를 서버에 보내지 않고 $h=g^x$ 의 $x$ 를 안다는 것을 Schnorr 프로토콜로 보인다. 서버가 저장하는 것은 $h$ 뿐이다.
-- 전자서명. Fiat–Shamir 변환으로 얻은 Schnorr 서명이 이산로그 가정 위의 서명 방식이고, [타원곡선](elliptic-curves.md) 군에서 쓰인다.
+- [전자서명](digital-signatures.md). Fiat–Shamir 변환으로 얻은 Schnorr 서명이 이산로그 가정 위의 서명 방식이고, [타원곡선](elliptic-curves.md) 군에서 쓰인다.
 - 간결한 비대화형 논증. [쌍선형 암호](pairing-based-cryptography.md)의 zk-SNARK(zero-knowledge succinct non-interactive argument of knowledge)는 다항식의 값에 대한 약속을 쌍선형 사상으로 검사해, 계산 전체의 정당성을 상수 크기 증명으로 보인다.
 - 암호 프로토콜의 정직성 강제. 여러 당사자가 함께 계산할 때 각자 프로토콜대로 메시지를 만들었다는 것을 영지식 증명으로 덧붙이면, 프로토콜을 어기는 공격자를 프로토콜을 지키는 공격자로 환원할 수 있다[^2].
 
