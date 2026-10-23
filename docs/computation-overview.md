@@ -119,8 +119,9 @@ graph TD
 
 ## 자료구조
 
-먼저 읽을 갈래: 알고리즘 설계. 시작 문서: [서로소 집합 자료구조](union-find.md).
+먼저 읽을 갈래: 알고리즘 설계. 시작 문서: [분할상환 분석](amortized-analysis.md).
 
+- [분할상환 분석](amortized-analysis.md): 연산 여러 번의 총비용으로 연산 하나의 비용을 정한다. 총합 방법, 회계 방법, 퍼텐셜 방법
 - [서로소 집합 자료구조](union-find.md): 경로 압축과 랭크 병합, 역 Ackermann 함수 상한
 - [균형 이진 탐색 트리](balanced-binary-search-trees.md): 회전으로 높이를 로그로 유지하는 조건과 분할상환 분석
 - [이진 힙](binary-heaps.md): 부모의 키가 자식의 키 이하인 완전 이진 트리를 배열에 두어 우선순위 큐를 구현한다. 선형 시간 구성과 힙 정렬
@@ -192,5 +193,6 @@ graph TD
 
 - [계산 가능성](computability.md)
 - [동적 계획법](dynamic-programming.md)
+- [분할상환 분석](amortized-analysis.md)
 
 #computation #complexity #algorithms #cryptography #overview

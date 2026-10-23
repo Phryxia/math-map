@@ -2,7 +2,7 @@
 
 # 개요
 
-**Link-cut tree** 는 뿌리 있는 숲(forest)을 동적으로 유지하면서 간선 추가(link), 간선 삭제(cut), 뿌리 찾기(findroot), 경로 질의(path aggregate)를 모두 분할상환 $O(\log n)$ 에 처리하는 자료구조다. Sleator 와 Tarjan 이 최대유량 알고리즘의 병목을 없애기 위해 고안했다[^1].
+**Link-cut tree** 는 뿌리 있는 숲(forest)을 동적으로 유지하면서 간선 추가(link), 간선 삭제(cut), 뿌리 찾기(findroot), 경로 질의(path aggregate)를 모두 [분할상환](amortized-analysis.md) $O(\log n)$ 에 처리하는 자료구조다. Sleator 와 Tarjan 이 최대유량 알고리즘의 병목을 없애기 위해 고안했다[^1].
 
 구성은 두 단계다.
 

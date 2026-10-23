@@ -2,7 +2,7 @@
 
 # 개요
 
-**Fibonacci 힙(Fibonacci heap)** 은 힙 조건을 만족하는 나무들의 모임으로 우선순위 큐를 구현하되, 정리 작업을 최솟값 삭제 때까지 미뤄 삽입과 키 감소를 분할상환 상수 시간에 하는 자료구조다. Fredman 과 Tarjan 이 1987 년에 제안했다[^1].
+**Fibonacci 힙(Fibonacci heap)** 은 힙 조건을 만족하는 나무들의 모임으로 우선순위 큐를 구현하되, 정리 작업을 최솟값 삭제 때까지 미뤄 삽입과 키 감소를 [분할상환](amortized-analysis.md) 상수 시간에 하는 자료구조다. Fredman 과 Tarjan 이 1987 년에 제안했다[^1].
 
 [이진 힙](binary-heaps.md)은 키 감소가 $O(\log n)$ 이어서, 키 감소가 간선 수만큼 일어나는 Dijkstra 알고리즘이 $O(\lvert E\rvert\log\lvert V\rvert)$ 이다. Fibonacci 힙으로는 $O(\lvert E\rvert+\lvert V\rvert\log\lvert V\rvert)$ 다. 이름은 마디의 차수와 부분트리 크기 사이의 관계에 Fibonacci 수가 나타나는 데서 왔다.
 
@@ -57,6 +57,7 @@ Fibonacci 힙은 뿌리 있는 나무들의 모임이고, 각 나무는 부모�
 ## 선수지식
 
 - [이진 힙](binary-heaps.md)
+- [분할상환 분석](amortized-analysis.md)
 
 ## 더 알아보기
 
