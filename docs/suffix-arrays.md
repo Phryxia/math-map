@@ -56,7 +56,7 @@ $P$ 로 시작하는 문자열들은 사전순에서 붙어 있으므로, $T_{\m
 
 - 반복되는 부분 문자열. 두 번 이상 나타나는 가장 긴 부분 문자열의 길이는 LCP 배열의 최댓값이다. $\mathtt{banana}$ 에서는 $3$ 이고 그 문자열은 $\mathtt{ana}$ 다.
 - 서로 다른 부분 문자열의 수. 비어 있지 않은 서로 다른 부분 문자열은 $n(n+1)/2-\sum\_{r}\mathrm{LCP}\lbrack r\rbrack$ 개다. 정렬된 접미사마다 앞 접미사와 공통인 접두사를 빼고 남은 접두사들이 새 부분 문자열이다. $\mathtt{banana}$ 에서는 $21-6=15$ 개다.
-- 압축과 색인. Burrows–Wheeler 변환(Burrows–Wheeler transform)은 접미사 배열의 순서로 각 접미사 바로 앞의 글자를 늘어놓은 문자열이고, bzip2 압축과 유전체 서열의 Ferragina–Manzini 색인(FM-index)이 이 변환을 쓴다[^4].
+- 압축과 색인. [Burrows–Wheeler 변환](burrows-wheeler-transform.md)은 접미사 배열의 순서로 각 접미사 바로 앞의 글자를 늘어놓은 문자열이고, bzip2 압축과 유전체 서열의 Ferragina–Manzini 색인(FM-index)이 이 변환을 쓴다[^4].
 
 [^1]: U. Manber, G. Myers, "Suffix arrays: a new method for on-line string searches", SIAM Journal on Computing 22 (1993), 935–948.
 [^2]: J. Kärkkäinen, P. Sanders, "Simple linear work suffix array construction", ICALP 2003, Lecture Notes in Computer Science 2719, 943–955.
@@ -72,6 +72,6 @@ $P$ 로 시작하는 문자열들은 사전순에서 붙어 있으므로, $T_{\m
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Burrows–Wheeler 변환](burrows-wheeler-transform.md)
 
 #data_structures #algorithms
