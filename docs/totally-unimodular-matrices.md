@@ -99,6 +99,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [전체 쌍대 정수성](total-dual-integrality.md)
 
 #optimization #linear_algebra #combinatorics #algorithms

@@ -79,7 +79,8 @@ graph TD
 - [선형계획법](linear-programming.md): 다면체 위의 선형 목적함수, 꼭짓점 최적성과 쌍대성
   - [내점법](interior-point-method.md): 경계에서 발산하는 장벽을 더해 내부를 지나는 다항시간 해법
 - [정수계획법](integer-programming.md): 정수 조건을 더한 선형계획, 분기한정과 절단평면
-  - [완전 단일모듈 행렬](totally-unimodular-matrices.md): 선형 완화가 정수해를 주는 제약행렬, Hoffman-Kruskal 정리와 Ghouila-Houri 판정
+- [완전 단일모듈 행렬](totally-unimodular-matrices.md): 선형 완화가 정수해를 주는 제약행렬, Hoffman-Kruskal 정리와 Ghouila-Houri 판정
+  - [전체 쌍대 정수성](total-dual-integrality.md): 모든 정수 목적함수에서 쌍대 문제가 정수해를 갖는 부등식계, Edmonds–Giles 정리와 Hilbert 기저, 매칭 다면체
 - [Chvátal 계수](chvatal-rank.md): 절단평면을 몇 번 반복해야 정수 껍질에 닿는지 재는 값
 - [반정부호 계획법](semidefinite-programming.md): 반정부호 행렬 위의 완화와 Goemans–Williamson 알고리즘
   - [행렬 완성](matrix-completion.md): 일부만 관측된 저계수 행렬을 핵노름 최소화로 복원하는 문제, coherence 조건과 정확 복원 정리
