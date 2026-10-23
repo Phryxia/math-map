@@ -4,7 +4,7 @@
 
 **Lempel–Ziv 압축(Lempel–Ziv compression)** 은 원천의 확률 분포를 모르는 채로, 기호열을 앞에서 이미 나온 조각을 가리키는 짧은 참조들로 바꾸는 무손실 압축 방법이다. 앞의 일정 범위에서 가장 긴 일치를 찾는 LZ77 과, 기호열을 서로 다른 구절로 자르는 LZ78 이 있다. Ziv 와 Lempel 이 1977 년과 1978 년에 발표했다[^1][^2].
 
-정상(stationary)이고 에르고딕(ergodic)인 원천에서 LZ78 의 기호당 부호 길이는 [무손실 부호화 정리](source-coding.md)의 하한인 엔트로피율에 수렴한다. 분포를 알고 부호를 짜는 Huffman 부호와 달리 같은 알고리즘이 모든 이런 원천에서 최적에 다가가므로 보편 부호(universal code)라 한다.
+정상(stationary)이고 에르고딕(ergodic)인 원천에서 LZ78 의 기호당 부호 길이는 [무손실 부호화 정리](source-coding.md)의 하한인 엔트로피율에 수렴한다. 분포를 알고 부호를 짜는 [Huffman 부호](huffman-coding.md)와 달리 같은 알고리즘이 모든 이런 원천에서 최적에 다가가므로 보편 부호(universal code)라 한다.
 
 # 직관
 
