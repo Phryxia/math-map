@@ -76,7 +76,7 @@ $g^xh^y=g^{x'}h^{y'}$ 이고 $(x,y)\ne(x',y')$ 이면 $\log\_gh=(x-x')(y'-y)^{-1
 
 - 해시 후 서명. 서명 방식은 메시지 대신 해시값에 서명한다. 충돌 저항성이 깨지면 서명이 두 메시지에 동시에 통한다.
 - Merkle 나무. 데이터 블록의 해시값을 이진 나무로 쌓아 뿌리 해시값 하나로 전체를 대표한다. 블록 하나가 포함되었음을 블록 수의 로그만큼의 해시값으로 보인다.
-- 메시지 인증. HMAC(hash-based message authentication code)은 $H\bigl((k\oplus\mathit{opad})\Vert H((k\oplus\mathit{ipad})\Vert m)\bigr)$ 로 길이 확장을 막는다[^6].
+- [메시지 인증 코드](message-authentication-codes.md). HMAC(hash-based message authentication code)은 $H\bigl((k\oplus\mathit{opad})\Vert H((k\oplus\mathit{ipad})\Vert m)\bigr)$ 로 길이 확장을 막는다[^6].
 - 비밀번호 저장. 서버는 비밀번호에 무작위 문자열을 붙여 해시값만 저장하고, 원상 저항성이 비밀번호를 감춘다.
 - 해시 기반 서명. 해시 함수의 안전성만 가정하는 서명은 Lamport 서명과 Merkle 나무에서 나왔고, [격자 기반 후양자 암호](post-quantum-cryptography.md)의 서명과 함께 NIST(National Institute of Standards and Technology)의 후양자 서명 표준에 SLH-DSA(stateless hash-based digital signature algorithm)로 들어 있다.
 
@@ -97,5 +97,6 @@ $g^xh^y=g^{x'}h^{y'}$ 이고 $(x,y)\ne(x',y')$ 이면 $\log\_gh=(x-x')(y'-y)^{-1
 ## 더 알아보기
 
 - [Fiat–Shamir 변환](fiat-shamir.md)
+- [메시지 인증 코드](message-authentication-codes.md)
 
 #cryptography #complexity #probability

@@ -62,7 +62,7 @@ $$
 
 ## 유사난수 함수
 
-**유사난수 함수(pseudorandom function)** 족 $\lbrace F\_k\rbrace$ 은 키 $k$ 를 무작위로 고르면, 질의를 마음대로 할 수 있는 다항시간 알고리즘이 $F\_k$ 와 균등한 무작위 함수를 무시할 만한 확률 차로만 구별하는 함수족이다. Goldreich, Goldwasser, Micali 는 두 배로 늘리는 생성기 $G(s)=(G\_0(s),G\_1(s))$ 로부터 $F\_k(x\_1\cdots x\_n)=G\_{x\_n}(\cdots G\_{x\_1}(k))$ 를 만들어 유사난수 함수를 구성했다[^5].
+**유사난수 함수(pseudorandom function)** 족 $\lbrace F\_k\rbrace$ 은 키 $k$ 를 무작위로 고르면, 질의를 마음대로 할 수 있는 다항시간 알고리즘이 $F\_k$ 와 균등한 무작위 함수를 무시할 만한 확률 차로만 구별하는 함수족이다. Goldreich, Goldwasser, Micali 는 두 배로 늘리는 생성기 $G(s)=(G\_0(s),G\_1(s))$ 로부터 $F\_k(x\_1\cdots x\_n)=G\_{x\_n}(\cdots G\_{x\_1}(k))$ 를 만들어 유사난수 함수를 구성했다[^5]. 유사난수 함수의 값을 그대로 꼬리표로 쓰면 [메시지 인증 코드](message-authentication-codes.md)가 된다.
 
 # 활용
 
@@ -89,5 +89,6 @@ $$
 
 - [약속 방식](commitment-schemes.md)
 - [의미론적 안전성](semantic-security.md)
+- [메시지 인증 코드](message-authentication-codes.md)
 
 #cryptography #complexity #computation
