@@ -54,7 +54,7 @@ $c$ 가 중심점임을 보인다. $c$ 를 포함하는 닫힌 반공간 $H$ 가
 
 ## Tverberg 정리로 보는 증명
 
-$r=\lceil n/(d+1)\rceil$ 이면 $(r-1)(d+1)+1\le n$ 이므로, Tverberg 정리(Tverberg's theorem)로 $P$ 를 $r$ 개의 부분 $P_1,\dots,P_r$ 로 나누어 볼록 껍질들에 공통점 $c$ 가 있게 할 수 있다. $c$ 를 포함하는 닫힌 반공간 $H$ 가 어느 $P_j$ 의 점도 포함하지 않으면 $\mathrm{conv}(P_j)$ 가 열린 여집합 안에 들어 $c\in\mathrm{conv}(P_j)$ 에 모순이다. 따라서 $H$ 는 부분마다 점을 하나 이상 포함하고 $D_P(c)\ge r$ 이다.
+$r=\lceil n/(d+1)\rceil$ 이면 $(r-1)(d+1)+1\le n$ 이므로, [Tverberg 정리](tverberg-theorem.md)로 $P$ 를 $r$ 개의 부분 $P_1,\dots,P_r$ 로 나누어 볼록 껍질들에 공통점 $c$ 가 있게 할 수 있다. $c$ 를 포함하는 닫힌 반공간 $H$ 가 어느 $P_j$ 의 점도 포함하지 않으면 $\mathrm{conv}(P_j)$ 가 열린 여집합 안에 들어 $c\in\mathrm{conv}(P_j)$ 에 모순이다. 따라서 $H$ 는 부분마다 점을 하나 이상 포함하고 $D_P(c)\ge r$ 이다.
 
 ## 상수의 최선성
 

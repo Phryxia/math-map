@@ -62,7 +62,7 @@ $$
 
 **정리(Tverberg, 1966).** $\mathbb R^d$ 의 점 $(r-1)(d+1)+1$ 개는 $r$ 개의 부분으로 나누어 그 볼록 껍질들이 공통점을 갖게 할 수 있다.[^4]
 
-$r=2$ 이면 점 $d+2$ 개이고 Radon 정리다.
+$r=2$ 인 [Tverberg 정리](tverberg-theorem.md)는 점 $d+2$ 개에 대한 것이고 Radon 정리다.
 
 # 활용
 
@@ -83,6 +83,7 @@ $r=2$ 이면 점 $d+2$ 개이고 Radon 정리다.
 
 ## 더 알아보기
 
+- [Tverberg 정리](tverberg-theorem.md)
 - [중심점 정리](centerpoint-theorem.md)
 
 #optimization #combinatorics #analysis
