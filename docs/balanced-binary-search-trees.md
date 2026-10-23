@@ -76,7 +76,7 @@ red-black 트리에서는 $h\le 2\log_2(n+1)$ 이다. 검은 높이가 $b$ 이�
 
 ## 분할상환 분석과 splay 트리
 
-splay 트리(splay tree)는 균형 조건을 저장하지 않는다. 접근한 노드를 회전으로 뿌리까지 올리기만 한다. 한 연산의 최악 비용은 $O(n)$ 이지만, 비어 있는 트리에서 시작한 $m$ 번의 연산 전체 비용이 $O((m+n)\log n)$ 이다[^1].
+[splay 트리](splay-trees.md)는 균형 조건을 저장하지 않는다. 접근한 노드를 회전으로 뿌리까지 올리기만 한다. 한 연산의 최악 비용은 $O(n)$ 이지만, 비어 있는 트리에서 시작한 $m$ 번의 연산 전체 비용이 $O((m+n)\log n)$ 이다[^1].
 
 *증명의 요지.* 노드 $v$ 의 부분 트리 크기를 $s(v)$ 라 하고 포텐셜을 $\Phi=\sum_v\log_2 s(v)$ 로 둔다. 노드를 두 단계씩 올리는 회전에서 실제 비용과 포텐셜 변화의 합이 뿌리까지의 크기 비의 로그로 억제되고, 그 합이 $3\log_2 n+1$ 이하다. 포텐셜은 항상 $0$ 이상이고 처음 값이 $O(n\log n)$ 이므로 전체 비용의 상한이 나온다.
 
@@ -103,6 +103,6 @@ splay 트리(splay tree)는 균형 조건을 저장하지 않는다. 접근한 �
 
 - [B 트리](b-trees.md)
 - [van Emde Boas 트리](van-emde-boas-trees.md)
-- [Link-cut tree](link-cut-trees.md)
+- [Splay 트리](splay-trees.md)
 
 #data_structures #algorithms #computation

@@ -63,7 +63,7 @@ $k$ 비트 이진 계수기를 $0$ 에서 시작해 $1$ 씩 $n$ 번 늘린다. �
 # 활용
 
 - [Fibonacci 힙](fibonacci-heaps.md)은 뿌리 수와 표시된 마디 수로 퍼텐셜을 정해, 키 감소의 분할상환 비용이 상수이고 최솟값 삭제가 $O(\log n)$ 임을 보인다.
-- [균형 이진 탐색 트리](balanced-binary-search-trees.md)의 splay 트리는 부분트리 크기의 로그를 더한 퍼텐셜로 연산 하나의 분할상환 비용 $O(\log n)$ 을 보인다. [Link-cut tree](link-cut-trees.md)의 시간 분석이 이 결과를 쓴다.
+- [균형 이진 탐색 트리](balanced-binary-search-trees.md)의 [splay 트리](splay-trees.md)는 부분트리 크기의 로그를 더한 퍼텐셜로 연산 하나의 분할상환 비용 $O(\log n)$ 을 보인다. [Link-cut tree](link-cut-trees.md)의 시간 분석이 이 결과를 쓴다.
 - [서로소 집합 자료구조](union-find.md)의 경로 압축과 랭크 병합은 연산 $m$ 번에 $O(m\thinspace\alpha(n))$ 시간이 들고, 상한의 증명은 분할상환 분석이다. $\alpha$ 는 역 Ackermann 함수다.
 - [해시 테이블](hash-tables.md)은 적재율이 상한을 넘을 때 크기를 두 배로 늘려, 늘어나는 배열과 같은 계산으로 삽입의 분할상환 비용이 상수다.
 
@@ -79,5 +79,6 @@ $k$ 비트 이진 계수기를 $0$ 에서 시작해 $1$ 씩 $n$ 번 늘린다. �
 ## 더 알아보기
 
 - [Fibonacci 힙](fibonacci-heaps.md)
+- [Splay 트리](splay-trees.md)
 
 #algorithms #data_structures
