@@ -152,7 +152,7 @@ $$
 
 ## 삼소수 정리
 
-$f(\alpha)=\sum_{p\le n}(\log p)\thinspace e(p\alpha)$ 로 두고 $s=3$ 을 쓴다. 주 호에서는 소수를 등차수열로 갈라 세어야 하므로 Siegel–Walfisz 정리가 들어가고, 부 호에서는 소수 계수 지수합을 약수 분해로 쌍선형합 두 종류로 바꾸는 Vinogradov 의 조작이 들어간다. 결과는 다음과 같다.
+$f(\alpha)=\sum_{p\le n}(\log p)\thinspace e(p\alpha)$ 로 두고 $s=3$ 을 쓴다. 주 호에서는 소수를 등차수열로 갈라 세어야 하므로 [Siegel–Walfisz 정리](siegel-walfisz.md)가 들어가고, 부 호에서는 소수 계수 지수합을 약수 분해로 쌍선형합 두 종류로 바꾸는 Vinogradov 의 조작이 들어간다. 결과는 다음과 같다.
 
 $$
 R(n)=\mathfrak S(n)\frac{n^2}{2}+O\left(\frac{n^2}{(\log n)^{A}}\right),\qquad

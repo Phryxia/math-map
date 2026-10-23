@@ -70,7 +70,7 @@ $$
 
 - **원법의 시험대.** [원법](circle-method.md)의 주 호 계산과 부 호 추정이 Waring 문제에서 먼저 다듬어졌고, 특이급수 $\mathfrak S(n)$ 의 양성 판정이 국소 해에서 전역 해를 얻는 전형이 됐다.
 - **지수합 추정의 기준.** Vinogradov 의 평균값 정리는 $G(k)$ 의 상계를 내리려는 목적에서 나왔고, 그 최적 지수가 Wooley 의 효율적 합동법과 Bourgain–Demeter–Guth 의 분해 정리로 증명됐다[^6].
-- **Waring–Goldbach 문제.** 변수 $x_i$ 를 [소수](primes.md)로 제한한 변종이고, 주 호 계산에 Siegel–Walfisz 정리가 들어간다는 점이 삼소수 정리와 같다.
+- **Waring–Goldbach 문제.** 변수 $x_i$ 를 [소수](primes.md)로 제한한 변종이고, 주 호 계산에 [Siegel–Walfisz 정리](siegel-walfisz.md)가 들어간다는 점이 삼소수 정리와 같다.
 
 [^1]: D. Hilbert, "Beweis für die Darstellbarkeit der ganzen Zahlen durch eine feste Anzahl n-ter Potenzen (Waringsches Problem)", Math. Ann. 67 (1909), 281–300.
 [^2]: R. Balasubramanian, J.-M. Deshouillers, F. Dress, "Problème de Waring pour les bicarrés", C. R. Acad. Sci. Paris 303 (1986), 85–88, 161–163.
