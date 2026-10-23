@@ -83,6 +83,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [블라인드 서명](blind-signatures.md)
 
 #cryptography #complexity #number_theory

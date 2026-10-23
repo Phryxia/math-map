@@ -62,7 +62,8 @@ graph TD
   - [유사난수 순열](pseudorandom-permutations.md) — 무작위 순열과 구별되지 않는 블록 암호의 정의. Feistel 구조, Luby–Rackoff 정리, 전환 보조정리
 - [암호 해시 함수](cryptographic-hash-functions.md) — 같은 값을 내는 두 입력을 찾기 어려운 압축 함수. 생일 공격, Merkle–Damgård 구성
   - [Merkle 나무](merkle-trees.md) — 블록 해시값을 이진 나무로 쌓아 뿌리 하나로 전체를 대표한다. 포함 증명과 Merkle 서명
-  - [전자서명](digital-signatures.md) — 비밀키로만 만들고 공개키로 확인하는 값. Lamport 서명, 해시 후 RSA 서명, Schnorr 서명
+- [전자서명](digital-signatures.md) — 비밀키로만 만들고 공개키로 확인하는 값. Lamport 서명, 해시 후 RSA 서명, Schnorr 서명
+  - [블라인드 서명](blind-signatures.md) — 서명자가 메시지를 보지 않고 서명한다. 은닉성과 일회 추가 위조 불가능성, RSA 와 Schnorr 의 블라인드 서명
 - [메시지 인증 코드](message-authentication-codes.md) — 공유한 비밀키로 붙이고 같은 키로 확인하는 꼬리표. CBC-MAC 의 길이 위조, HMAC, 일회용 MAC
 - [의미론적 안전성](semantic-security.md) — 암호문으로 평문에 대해 알아낼 것이 없다는 정의. IND-CPA 와의 동치, ElGamal 암호
   - [인증 암호화](authenticated-encryption.md) — 평문을 감추고 바뀐 암호문을 거절하는 비밀키 암호화. 암호화 후 인증, 선택 암호문 공격에 대한 안전성, 넌스 재사용
