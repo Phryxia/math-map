@@ -213,6 +213,7 @@ graph TD
 - [Green 함수](greens-function.md): $-\Delta E=\delta_0$ 의 해, 표현 공식과 Poisson 핵
 - [퍼텐셜 이론](potential-theory.md): 세분함수의 상한으로 만든 Dirichlet 해, 용량과 균형 측도, Wiener 기준
   - [최대값 원리](maximum-principle.md): $Lu\le 0$ 인 함수가 최대값을 경계에서 갖는다, Hopf 보조정리와 선험 상한
+  - [로그 용량](logarithmic-capacity.md): 평면 집합 위 확률측도의 로그 에너지 최솟값, 초월 지름과 Chebyshev 상수의 일치, 균형 측도와 대수적 정수의 분포
   - [De Giorgi–Nash–Moser 정리](de-giorgi-nash-moser.md): 유계 측정가능 계수의 약한 해가 Hölder 연속이다, Caccioppoli 부등식과 진동 감소
 - [유계 작용소](bounded-operators.md): 작용소 노름, 스펙트럼과 분해 스펙트럼
   - [비유계 작용소](unbounded-operators.md): 조밀한 정의역, 자기수반성, 한 모수 유니터리 군
