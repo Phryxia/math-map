@@ -86,7 +86,7 @@ $$
 C(1)=0,\qquad C(n)\le C(\lceil n/2\rceil)+C(\lfloor n/2\rfloor)+n-1
 $$
 
-재귀의 깊이는 $\lceil\log_2 n\rceil$ 이고, 같은 깊이의 부분 목록들은 서로 겹치지 않으므로 한 깊이에서 하는 비교는 모두 합쳐 $n$ 번 이하다.
+재귀의 깊이는 $\lceil\log_2 n\rceil$ 이고, 같은 깊이의 부분 목록들은 서로 겹치지 않으므로 한 깊이에서 하는 비교는 모두 합쳐 $n$ 번 이하다. 같은 점화식은 [마스터 정리](master-theorem.md)의 둘째 경우에 들어 $C(n)=O(n\log n)$ 이 나온다.
 
 ## 무작위 quicksort 의 기대 비교 횟수
 
@@ -129,5 +129,6 @@ $2n\ln n\approx 1.39\thinspace n\log_2 n$ 이므로 기댓값은 하한 $\log_2 
 - [이진 탐색](binary-search.md)
 - [기수 정렬](radix-sort.md)
 - [접미사 배열](suffix-arrays.md)
+- [마스터 정리](master-theorem.md)
 
 #algorithms #data_structures #order_theory #probability
