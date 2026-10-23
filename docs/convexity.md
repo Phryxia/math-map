@@ -129,6 +129,7 @@ $$
 - [부분미분](subdifferential.md)
 - [볼록 공액](convex-conjugate.md)
 - [준볼록 함수](quasiconvex-functions.md)
+- [Farkas 보조정리](farkas-lemma.md)
 - [Lagrange 쌍대성](lagrange-duality.md)
 
 ### 볼록체의 기하

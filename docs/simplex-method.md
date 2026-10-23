@@ -92,7 +92,7 @@ Klee 와 Minty 는 $n$ 차원 입방체를 조금 찌그러뜨린 다면체에�
 - **선형계획 문제의 실제 풀이.** 최악 피벗 횟수는 지수이지만 잡음이 섞인 자료에서는 평활 분석의 결과대로 다항식이다. [내점법](interior-point-method.md)과 함께 상용 풀이기에서 쓴다.
 - **[정수계획법](integer-programming.md)의 절단평면.** Gomory 분수 절단은 단체법이 끝난 기저의 한 행에서 분수 부분을 취해 만든다. 분기 한정법은 자식 문제마다 부모의 최적 기저에서 쌍대 단체법으로 다시 시작한다.
 - **[네트워크 흐름](network-flow.md).** 최소 비용 흐름 문제의 기저는 신장 트리에 대응하고, 피벗이 트리에 간선 하나를 넣고 하나를 빼는 연산이 되는 네트워크 단체법이 된다.
-- **조합적 증명.** 행렬 게임의 최적 전략, Farkas 보조정리(Farkas' lemma) 같은 대안 정리가 단체법의 종료 상태에서 읽힌다.
+- **조합적 증명.** 행렬 게임의 최적 전략, [Farkas 보조정리](farkas-lemma.md) 같은 대안 정리가 단체법의 종료 상태에서 읽힌다.
 
 [^1]: George B. Dantzig, *Linear Programming and Extensions*, Princeton University Press, 1963.
 [^2]: Robert G. Bland, "New finite pivoting rules for the simplex method", *Mathematics of Operations Research* **2** (1977), 103–107.
