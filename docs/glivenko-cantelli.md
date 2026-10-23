@@ -68,7 +68,7 @@ $$P(D_n\gt \varepsilon)\le 2e^{-2n\varepsilon^2}$$
 
 ## 수렴 속도
 
-$\sqrt n\thinspace D_n$ 은 분포수렴한다. 극한은 $\lbrack 0,1\rbrack$ 위의 Brown 다리의 절댓값의 최대값이고 그 분포함수는
+$\sqrt n\thinspace D_n$ 은 분포수렴한다. 극한은 $\lbrack 0,1\rbrack$ 위의 [Brown 다리](brownian-bridge.md)의 절댓값의 최대값이고 그 분포함수는
 
 $$P(\sqrt n\thinspace D_n\le z)\to 1-2\sum_{j=1}^{\infty}(-1)^{j-1}e^{-2j^2z^2}$$
 

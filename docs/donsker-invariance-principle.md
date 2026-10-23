@@ -68,7 +68,7 @@ $$
 
 ## 경험과정 판본
 
-$U_1,\dots,U_n$ 이 $\lbrack 0,1\rbrack$ 위 균등분포에서 독립으로 뽑힌 표본이고 $F_n$ 이 그 경험분포함수이면, $\sqrt n\thinspace(F_n(t)-t)$ 는 Brown 다리로 약수렴한다. 증명은 같은 두 단계를 쓰지만 경로가 불연속이므로 $C\lbrack 0,1\rbrack$ 대신 오른쪽 연속 함수의 공간과 Skorokhod 위상에서 돌린다.[^3]
+$U_1,\dots,U_n$ 이 $\lbrack 0,1\rbrack$ 위 균등분포에서 독립으로 뽑힌 표본이고 $F_n$ 이 그 경험분포함수이면, $\sqrt n\thinspace(F_n(t)-t)$ 는 [Brown 다리](brownian-bridge.md)로 약수렴한다. 증명은 같은 두 단계를 쓰지만 경로가 불연속이므로 $C\lbrack 0,1\rbrack$ 대신 오른쪽 연속 함수의 공간과 Skorokhod 위상에서 돌린다.[^3]
 
 # 활용
 

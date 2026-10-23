@@ -60,7 +60,7 @@ $F_0$ 이 연속이면 $U_i=F_0(X_i)$ 가 $H_0$ 아래에서 $\lbrack 0,1\rbrack
 
 > **정리 (Kolmogorov).** $H_0$ 아래에서 $n\to\infty$ 이면 $\Pr\lbrack\sqrt n D_n\le z\rbrack\to K(z)$ 이다.
 
-경험 과정 $\sqrt n(F_n-F_0)$ 은 균등 표본으로 옮기면 Brown 다리(Brownian bridge) $B^0$ 로 약수렴하고, 상한 사상의 연속성으로 $\sqrt n D_n$ 이 $\sup_t\vert B^0_t\vert$ 로 분포수렴한다. $\sup_t\vert B^0_t\vert$ 의 분포함수가 $K$ 다. 이 약수렴이 [Donsker 불변원리](donsker-invariance-principle.md)의 [경험 과정](empirical-process.md) 판본이다. 이표본에서는 $\sqrt{nm/(n+m)}(F_n-G_m)$ 이 같은 Brown 다리로 수렴하므로 같은 $K$ 가 나온다.
+경험 과정 $\sqrt n(F_n-F_0)$ 은 균등 표본으로 옮기면 [Brown 다리](brownian-bridge.md) $B^0$ 로 약수렴하고, 상한 사상의 연속성으로 $\sqrt n D_n$ 이 $\sup_t\vert B^0_t\vert$ 로 분포수렴한다. $\sup_t\vert B^0_t\vert$ 의 분포함수가 $K$ 다. 이 약수렴이 [Donsker 불변원리](donsker-invariance-principle.md)의 [경험 과정](empirical-process.md) 판본이다. 이표본에서는 $\sqrt{nm/(n+m)}(F_n-G_m)$ 이 같은 Brown 다리로 수렴하므로 같은 $K$ 가 나온다.
 
 ## 유한 표본의 기각역
 

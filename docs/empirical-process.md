@@ -110,7 +110,7 @@ $\mathcal F$ 가 분포함수 $F$ 를 갖는 분포의 반직선 지시함수족
 
 $$F(x\wedge y) - F(x)F(y)$$
 
-이고, 이 공분산을 갖는 과정이 Brown 다리다. [Donsker 불변원리](donsker-invariance-principle.md)의 경험과정 판본이 이 경우를 다룬다.
+이고, 이 공분산을 갖는 과정이 [Brown 다리](brownian-bridge.md)다. [Donsker 불변원리](donsker-invariance-principle.md)의 경험과정 판본이 이 경우를 다룬다.
 
 # 활용
 
