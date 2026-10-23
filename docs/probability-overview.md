@@ -124,6 +124,7 @@ graph TD
 - [Brown 운동](brownian-motion.md): 연속시간 Gauss 과정과 경로의 성질
   - [Donsker 불변원리](donsker-invariance-principle.md): 부분합의 꺾은선이 $C\lbrack 0,1\rbrack$ 에서 Brown 운동으로 약수렴
   - [Brown 다리](brownian-bridge.md): 양 끝값을 0 으로 묶은 Gauss 과정, Brown 운동의 조건부 분포와 최댓값의 Kolmogorov 분포
+  - [반복로그 법칙](law-of-iterated-logarithm.md): 부분합과 Brown 운동의 상극한이 $\sqrt{2t\log\log t}$ 규모라는 정리, Strassen 의 함수형 판본
 - [Itô 적분](ito-calculus.md): 유계변동이 없는 경로 위의 적분과 Itô 공식
 - [확률미분방정식](stochastic-differential-equations.md): 잡음 항이 들어간 미분방정식의 해와 그 밀도
   - [Fokker–Planck 방정식](fokker-planck.md): 해의 밀도가 만족하는 편미분방정식, 확률흐름과 정상분포, 세부균형

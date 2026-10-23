@@ -92,7 +92,7 @@ $$
 - 거의 확실히 모든 점에서 미분 불가능하다. 어떤 한 점을 지정해 보이는 것이 아니라 모든 점에서 동시에 성립한다.
 - 임의의 $\alpha \lt 1/2$ 에 대해 $\alpha$ Hölder 연속이지만 $\alpha = 1/2$ 에서는 아니다.
 - 영점의 집합은 [측도](measure.md) 0 인 비가산 닫힌 집합이고 고립점이 없다. [Cantor 집합](cantor-set.md)과 같은 종류의 구조다.
-- 반복로그 법칙은 원점 근처의 진동 폭을 정확히 준다.
+- [반복로그 법칙](law-of-iterated-logarithm.md)은 원점 근처의 진동 폭을 정확히 준다.
 
 $$
 \limsup_{t\to0^+}\frac{B_t}{\sqrt{2t\log\log(1/t)}}=1
@@ -130,6 +130,7 @@ $$
 
 - [Donsker 불변원리](donsker-invariance-principle.md)
 - [Brown 다리](brownian-bridge.md)
+- [반복로그 법칙](law-of-iterated-logarithm.md)
 - [Itô 적분](ito-calculus.md)
 
 #probability #analysis #measure_theory #construction
