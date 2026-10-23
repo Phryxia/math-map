@@ -1,0 +1,92 @@
+# Rabin–Karp 알고리즘
+
+# 개요
+
+**Rabin–Karp 알고리즘(Rabin–Karp algorithm)** 은 본문의 길이 $m$ 인 창마다 무작위로 고른 다항식 해시값을 한 칸 밀 때 상수 시간에 갱신하고, 해시값이 패턴과 같은 창만 글자로 비교해 패턴을 찾는 문자열 검색 알고리즘이다. 길이 $n$ 인 본문에서 기대 시간이 $O(n+m)$ 이다. Karp 와 Rabin 이 1987 년에 발표했다[^1].
+
+해시는 [범용 해시족](universal-hashing.md)처럼 키가 정해진 뒤 무작위로 고르고, 두 창이 같은 해시값을 가질 확률은 [다항식환](polynomial-rings.md)의 근의 개수로 묶인다.
+
+# 직관
+
+본문의 창마다 패턴과 글자를 하나씩 비교하면 창 하나에 $m$ 번이 든다. 창과 패턴을 각각 수 하나로 줄여 두면 창마다 수 하나만 비교하면 된다. 글자를 $0$ 부터 $9$ 까지의 숫자로 보면 창 $\mathtt{31415}$ 는 십진수 $31415$ 이고, 한 칸 밀어 $\mathtt{14159}$ 가 되면 맨 앞 $3$ 의 몫 $30000$ 을 빼고 $10$ 을 곱하고 $9$ 를 더해 $14159$ 를 얻는다. 창을 밀 때마다 덧셈과 곱셈이 상수 번이다.
+
+$m$ 이 크면 이 수가 $m$ 자리가 되어 상수 시간에 다룰 수 없다. 그래서 소수 $p$ 로 나눈 나머지만 들고 다닌다. 나머지가 같아도 수가 다를 수 있으므로 나머지가 같은 창은 글자로 다시 비교한다. 진법의 밑을 무작위로 고르면, 어떤 본문과 패턴이 주어져도 나머지만 같고 글자가 다른 창이 드물다.
+
+# 정의
+
+## 다항식 해시
+
+$p$ 는 알파벳 크기보다 큰 소수이고 글자는 $\lbrace 0,\dots,p-1\rbrace$ 의 수로 본다. $x$ 를 $\lbrace 0,\dots,p-1\rbrace$ 에서 균등하게 골라 길이 $m$ 인 문자열 $s=s_0\cdots s_{m-1}$ 의 해시를 다음으로 둔다.
+
+$$
+H(s)=\sum_{i=0}^{m-1}s_i\thinspace x^{m-1-i}\bmod p
+$$
+
+## 굴리기
+
+본문 $T=t_0\cdots t_{n-1}$ 의 위치 $i$ 의 창 $t_i\cdots t_{i+m-1}$ 의 해시를 $h_i$ 라 하면 다음이 성립한다.
+
+$$
+h_{i+1}=\bigl((h_i-t_i\thinspace x^{m-1})\thinspace x+t_{i+m}\bigr)\bmod p
+$$
+
+$x^{m-1}\bmod p$ 를 한 번 계산해 두면 $h_{i+1}$ 은 $h_i$ 에서 상수 번의 연산으로 나온다. 알고리즘은 $H(P)$ 와 $h_0$ 을 계산하고, $i=0,1,\dots,n-m$ 에서 $h_i=H(P)$ 이면 창을 $P$ 와 글자로 비교한다.
+
+```typescript
+function rabinKarp(t: number[], pat: number[], p: number): number[] {
+  const n = t.length;
+  const m = pat.length;
+  const x = Math.floor(Math.random() * p);
+  let top = 1; // x^(m-1) mod p
+  for (let k = 0; k < m - 1; k++) top = (top * x) % p;
+  let hp = 0;
+  let h = 0;
+  for (let k = 0; k < m; k++) {
+    hp = (hp * x + pat[k]) % p;
+    h = (h * x + t[k]) % p;
+  }
+  const found: number[] = [];
+  for (let i = 0; i + m <= n; i++) {
+    if (h === hp && pat.every((c, k) => t[i + k] === c)) found.push(i);
+    if (i + m < n) h = (((h - t[i] * top) % p + p) * x + t[i + m]) % p;
+  }
+  return found;
+}
+```
+
+# 성질
+
+## 충돌 확률
+
+정리. 길이가 $m$ 이고 서로 다른 두 문자열 $s,s'$ 에 대해 $\Pr\_x\lbrack H(s)=H(s')\rbrack\le (m-1)/p$ 이다[^1].
+
+증명의 요지. $H(s)-H(s')$ 는 $x$ 의 다항식 $\sum_i(s_i-s'\_i)x^{m-1-i}$ 을 $p$ 로 나눈 나머지다. 글자가 $p$ 보다 작으므로 계수 $s_i-s'\_i$ 가운데 $p$ 의 배수가 아닌 것이 있어, 이 다항식은 [체](fields.md) $\mathbb Z/p\mathbb Z$ 위에서 $0$ 이 아니고 차수가 $m-1$ 이하다. $0$ 이 아닌 다항식의 근은 차수 이하이므로 $p$ 개의 $x$ 가운데 충돌을 일으키는 것은 $m-1$ 개 이하다.
+
+## 기대 시간
+
+정리. $p\ge nm$ 이면 Rabin–Karp 알고리즘은 기대 시간 $O(n+m+zm)$ 에 모든 출현을 찾는다. $z$ 는 출현 횟수이고, 답은 언제나 옳다.
+
+증명의 요지. 해시 계산과 굴리기는 $O(n+m)$ 이다. 글자 비교는 출현한 창에서 $zm$ 번이고, 출현하지 않은 창은 충돌 확률이 $(m-1)/p$ 이하이므로 그런 창에서의 비교 횟수의 기댓값은 $n\cdot\frac{m-1}{p}\cdot m\le m$ 이하다. 해시가 같은 창만 비교하고 비교로 확인하므로 틀린 답을 내지 않는다.
+
+글자 비교를 생략하고 해시가 같은 창을 출현으로 보고하면 시간은 언제나 $O(n+m)$ 이고, 틀린 보고가 하나라도 있을 확률은 합집합 상한으로 $n(m-1)/p$ 이하다.
+
+# 활용
+
+- 길이가 같은 여러 패턴. 패턴들의 해시값을 [해시 테이블](hash-tables.md)에 넣어 두면, 본문의 창마다 해시값 하나를 조회해 모든 패턴을 한 번에 찾는다.
+- 부분 문자열의 동치 판정. 앞에서부터의 해시값 $H(t_0\cdots t_{j-1})$ 을 모두 저장해 두면 임의의 두 부분 문자열이 같은지를 상수 시간에 높은 확률로 판정한다. 두 문자열의 가장 긴 공통 부분 문자열의 길이를 이분 탐색할 때 각 길이의 판정에 쓴다.
+- 통신의 동치 검사. 두 사람이 각자 가진 $n$ 비트 문자열이 같은지를, 한 사람이 $x$ 와 $H(s)$ 만 보내 $O(\log n)$ 비트의 통신으로 높은 확률로 판정한다.
+- 2 차원 검색. 행마다 해시를 구한 뒤 그 해시값들의 열에 다시 굴리는 해시를 쓰면 행렬 안에서 작은 행렬을 찾는다.
+
+[^1]: R. M. Karp, M. O. Rabin, "Efficient randomized pattern-matching algorithms", IBM Journal of Research and Development 31 (1987), 249–260.
+
+# 연관 문서
+
+## 선수지식
+
+- [범용 해시족](universal-hashing.md)
+
+## 더 알아보기
+
+아직 연결한 문서가 없다.
+
+#algorithms #probability #data_structures

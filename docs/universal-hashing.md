@@ -83,6 +83,7 @@ $a$ 에 $0$ 도 허용하고 칸 수를 $m=p$ 로 두면 $h\_{a,b}(x)=ax+b \bmod
 - [Count-Min 스케치](count-min-sketch.md)
 - [Bloom 필터](bloom-filters.md)
 - [해시 테이블](hash-tables.md)
+- [Rabin–Karp 알고리즘](rabin-karp.md)
 - [무작위성 추출기](randomness-extractors.md)
 
 #data_structures #algorithms #probability #cryptography
