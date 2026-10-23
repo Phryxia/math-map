@@ -126,5 +126,6 @@ $$
 - [스펙트럼 희소화](spectral-sparsification.md)
 - [범용 해시족](universal-hashing.md)
 - [스킵 리스트](skip-lists.md)
+- [비교 정렬](comparison-sorting.md)
 
 #probability #measure_theory #statistics #algorithms
