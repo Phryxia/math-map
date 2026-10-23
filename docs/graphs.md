@@ -101,6 +101,7 @@ $$
 - [서로소 집합 자료구조](union-find.md)
 - [균형 이진 탐색 트리](balanced-binary-search-trees.md)
 - [트라이](tries.md)
+- [세그먼트 트리](segment-trees.md)
 - [이진 힙](binary-heaps.md)
 - [동적 연결성](dynamic-connectivity.md)
 - [네트워크 흐름](network-flow.md)
