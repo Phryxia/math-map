@@ -70,7 +70,7 @@ $$
 
 ## 키 감소
 
-각 키의 배열 위치를 따로 기록하면, 키를 줄인 뒤 `siftUp` 으로 $O(\log n)$ 에 조건을 복구한다. 키 감소를 분할상환 상수 시간에 하는 구조가 Fibonacci 힙(Fibonacci heap)이다[^3].
+각 키의 배열 위치를 따로 기록하면, 키를 줄인 뒤 `siftUp` 으로 $O(\log n)$ 에 조건을 복구한다. 키 감소를 분할상환 상수 시간에 하는 구조가 [Fibonacci 힙](fibonacci-heaps.md)이다[^3].
 
 # 활용
 
@@ -92,6 +92,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Fibonacci 힙](fibonacci-heaps.md)
 
 #data_structures #algorithms #order_theory
