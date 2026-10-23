@@ -28,7 +28,7 @@ $$
 
 ## 다색 Carathéodory 정리
 
-**다색 Carathéodory 정리(colorful Carathéodory theorem)** 는 $\mathbb R^D$ 의 유한집합 $C_1,\dots,C_{D+1}$ 이 모두 원점을 볼록 껍질에 포함하면, $c_i\in C_i$ 를 하나씩 골라 원점이 $\mathrm{conv}\lbrace c_1,\dots,c_{D+1}\rbrace$ 에 들게 할 수 있다는 정리다. Bárány 가 1982 년에 증명했다.[^2] $C_1=\cdots=C_{D+1}$ 인 경우가 Carathéodory 정리(Carathéodory's theorem)다.
+[다색 Carathéodory 정리](colorful-caratheodory.md)는 $\mathbb R^D$ 의 유한집합 $C_1,\dots,C_{D+1}$ 이 모두 원점을 볼록 껍질에 포함하면, $c_i\in C_i$ 를 하나씩 골라 원점이 $\mathrm{conv}\lbrace c_1,\dots,c_{D+1}\rbrace$ 에 들게 할 수 있다는 정리다. Bárány 가 1982 년에 증명했다.[^2] $C_1=\cdots=C_{D+1}$ 인 경우가 Carathéodory 정리(Carathéodory's theorem)다.
 
 # 성질
 
@@ -80,6 +80,7 @@ $N=(r-1)(d+1)$ 차원 단체 $\Delta^N$ 에서 $\mathbb R^d$ 로 가는 연속�
 ## 선수지식
 
 - [Helly 정리](helly-theorem.md)
+- [다색 Carathéodory 정리](colorful-caratheodory.md)
 
 ## 더 알아보기
 

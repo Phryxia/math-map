@@ -46,7 +46,8 @@ graph TD
 - [볼록성](convexity.md): 볼록집합과 볼록함수, 국소 최적해가 전역 최적해가 되는 조건
   - [준볼록 함수](quasiconvex-functions.md): 수준집합만 볼록인 함수, 이분 탐색으로 푸는 최소화
 - [Helly 정리](helly-theorem.md): 볼록집합 모임의 공통점을 $d+1$ 개씩의 교집합으로 판정하는 정리, Radon 분할과 Carathéodory 정리
-  - [Tverberg 정리](tverberg-theorem.md): 점 $(r-1)(d+1)+1$ 개를 볼록 껍질이 공통점을 갖는 $r$ 부분으로 나누는 분할, 위상적 판본
+- [다색 Carathéodory 정리](colorful-caratheodory.md): 색마다 원점을 둘러싸는 점 집합에서 하나씩 골라 원점을 둘러싸는 단체, 첫째 선택 보조정리
+- [Tverberg 정리](tverberg-theorem.md): 점 $(r-1)(d+1)+1$ 개를 볼록 껍질이 공통점을 갖는 $r$ 부분으로 나누는 분할, 위상적 판본
   - [중심점 정리](centerpoint-theorem.md): 어느 닫힌 반공간이 포함하든 점을 $n/(d+1)$ 개 이상 함께 포함하게 되는 점의 존재, Tukey 깊이
 - [부분미분](subdifferential.md): 꺾인 볼록 함수에서 기울기를 대신하는 집합, $0$ 이 들어 있는 것이 최적성 조건
   - [Clarke 준미분](clarke-subdifferential.md): 볼록하지 않은 Lipschitz 함수에서 기울기 극한의 볼록껍질로 세우는 준미분

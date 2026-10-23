@@ -83,6 +83,7 @@ $r=2$ 인 [Tverberg 정리](tverberg-theorem.md)는 점 $d+2$ 개에 대한 것�
 
 ## 더 알아보기
 
+- [다색 Carathéodory 정리](colorful-caratheodory.md)
 - [Tverberg 정리](tverberg-theorem.md)
 - [중심점 정리](centerpoint-theorem.md)
 
