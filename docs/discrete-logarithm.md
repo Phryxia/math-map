@@ -63,7 +63,7 @@ $$
 | 알고리즘 | 시간 | 공간 | 적용 범위 |
 | --- | --- | --- | --- |
 | 완전 탐색 | $O(p)$ | $O(1)$ | 모든 군 |
-| Baby-step giant-step | $O(\sqrt p)$ | $O(\sqrt p)$ | 모든 군 |
+| [Baby-step giant-step 알고리즘](baby-step-giant-step.md) | $O(\sqrt p)$ | $O(\sqrt p)$ | 모든 군 |
 | [Pollard rho 알고리즘](pollard-rho.md) | $O(\sqrt p)$ | $O(1)$ | 모든 군 |
 | Pohlig–Hellman | 가장 큰 소인수 $q$ 에 대해 $O(\sqrt q)$ | $O(1)$ | 위수가 매끄러운 군 |
 | 지표 계산법 | 준지수 | 준지수 | [유한체](finite-fields.md)의 곱셈군 |
@@ -138,6 +138,7 @@ RSA 키 전송 방식에는 이 성질이 없어 서버의 개인키가 유출�
 
 ### 이산로그의 계산
 
+- [Baby-step giant-step 알고리즘](baby-step-giant-step.md)
 - [Pollard rho 알고리즘](pollard-rho.md)
 - [타원곡선](elliptic-curves.md)
 

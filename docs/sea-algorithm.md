@@ -84,7 +84,7 @@ $\mathbb F_p$ 에서 $\Phi_\ell(j(E),Y)$ 의 근의 개수는 $0,1,2,\ell+1$ 중
 2. 각 $\ell\in S$ 에서 $t_\ell=a_p\bmod\ell$ 을 구한다.
    - **Schoof.** $R=\mathbb F_p[x,y]/(\psi_\ell,y^2-f)$ 에서 $(x^{p^2},y^{p^2})+p(x,y)=t(x^p,y^p)$ 를 $t$ 마다 시험한다.
    - **Elkies.** $\Phi_\ell(j(E),Y)$ 에 근이 있으면 차수 $(\ell-1)/2$ 의 인수 $g_\ell$ 을 만들고, $\mathbb F_p[x]/(g_\ell)$ 에서 고윳값 $\lambda$ 를 찾아 $t_\ell\equiv\lambda+p/\lambda$ 로 얻는다.
-   - **Atkin.** 근이 없으면 $\ell$ 차 확대에서의 위수 정보로 $t_\ell$ 의 후보 집합을 얻고, 마지막에 baby-step giant-step 으로 조합을 고른다.
+   - **Atkin.** 근이 없으면 $\ell$ 차 확대에서의 위수 정보로 $t_\ell$ 의 후보 집합을 얻고, 마지막에 [baby-step giant-step](baby-step-giant-step.md) 으로 조합을 고른다.
 3. CRT(Chinese remainder theorem)로 $a_p\bmod\prod\ell$ 을 얻고 Hasse 한계로 정수를 확정한다.
 
 Schoof 원본은 $\tilde O(\log^5p)$ 이고 Elkies–Atkin 개선으로 $\tilde O(\log^4p)$ 다.

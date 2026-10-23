@@ -127,7 +127,7 @@ Hasse 불변량이 $0$ 이면 $a_p\equiv0\pmod p$ 이고, [Newton 다각형](new
 | 알고리즘 | 비용 | 잘하는 영역 |
 |---|---|---|
 | 완전 탐색 | $O(q)$ | 장난감 크기 |
-| Shanks–Mestre (baby-step giant-step) | $\tilde O(q^{1/4})$ | 중간 크기, 종수 1 |
+| Shanks–Mestre ([baby-step giant-step](baby-step-giant-step.md)) | $\tilde O(q^{1/4})$ | 중간 크기, 종수 1 |
 | Schoof–Elkies–Atkin | $\log q$ 의 다항식 | 종수 1 과 큰 $p$ 일 때 |
 | Kedlaya (MW 코호몰로지) | $\tilde O(p\thinspace n^3g^4)$ | 임의 종수와 작은 $p$ 와 큰 $n$ 일 때 |
 | Lauder–Wan (Dwork 직계) | $p$ 에 다항식 | 일반 다양체 |
