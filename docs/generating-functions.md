@@ -62,7 +62,7 @@ EGF 의 곱에 이항계수가 붙으므로 라벨 있는 구조에 맞는다. $
 
 ## 선형 점화식과 유리함수의 동치
 
-상수 계수 선형 점화식을 만족하는 수열의 생성함수는 유리함수이고, 역도 성립한다. Fibonacci 수열 $F_0=0,\ F_1=1,\ F_n=F_{n-1}+F_{n-2}$ 에 급수를 곱하고 점화식을 대입하면 다음을 얻는다.
+상수 계수 선형 점화식을 만족하는 수열의 생성함수는 유리함수이고, 역도 성립한다. [Fibonacci 수](fibonacci-numbers.md)의 수열 $F_0=0,\ F_1=1,\ F_n=F_{n-1}+F_{n-2}$ 에 급수를 곱하고 점화식을 대입하면 다음을 얻는다.
 
 $$
 F(x)=\sum_{n\ge 0}F_n x^{n}=\frac{x}{1-x-x^{2}}
@@ -171,6 +171,7 @@ $$
 ### 조합적 수와 반전 공식
 
 - [Catalan 수](catalan-numbers.md)
+- [Fibonacci 수](fibonacci-numbers.md)
 - [Lagrange 반전 공식](lagrange-inversion.md)
 - [Ehrhart 다항식](ehrhart-polynomial.md)
 

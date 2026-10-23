@@ -45,6 +45,7 @@ graph TD
 - [비둘기집 원리](pigeonhole-principle.md): 상자보다 물건이 많으면 두 개가 같은 상자에 들어간다
 - [생성함수](generating-functions.md): 수열을 멱급수의 계수로 두어 점화식을 함수의 식으로 바꾼다
   - [Catalan 수](catalan-numbers.md): 괄호 배열, 이진트리, 다각형의 삼각분할을 한꺼번에 세는 수열
+  - [Fibonacci 수](fibonacci-numbers.md): 두 앞 항의 합으로 정해지는 수열, Binet 공식과 Cassini 항등식, Zeckendorf 정리와 최대공약수 성질
   - [Lagrange 반전 공식](lagrange-inversion.md): $w=z\varphi(w)$ 의 해의 계수를 $\varphi$ 의 거듭제곱에서 읽는 공식
   - [Ehrhart 다항식](ehrhart-polynomial.md): 격자 다면체를 정수배로 팽창했을 때의 격자점 개수
   - [Laplace 방법](laplace-method.md): 적분의 점근을 최대점 근처의 Gauss 근사로 구하는 방법
