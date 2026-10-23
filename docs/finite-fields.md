@@ -139,10 +139,16 @@ $\mathbb{F}\_q$ 위의 사영평면은 위수 $q$ 의 유한사영평면이고, 
 
 ## 더 알아보기
 
+### 체론과 수론
+
 - [Artin–Schreier 이론](artin-schreier-theory.md)
-- [오류정정부호](error-correcting-codes.md)
-- [타원곡선](elliptic-curves.md)
 - [이차 상호법칙](quadratic-reciprocity.md)
 - [Ax–Grothendieck 정리](ax-grothendieck.md)
+
+### 부호와 암호
+
+- [오류정정부호](error-correcting-codes.md)
+- [비밀 분산](secret-sharing.md)
+- [타원곡선](elliptic-curves.md)
 
 #field_theory #algebra #cryptography #combinatorics

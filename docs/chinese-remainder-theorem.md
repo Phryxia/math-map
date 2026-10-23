@@ -131,7 +131,7 @@ $$
 ## 그 밖에
 
 - 큰 정수 · 다항식 연산을 여러 작은 법에서 병렬로 수행한 뒤 합치는 multi-modular 산술. 계수 폭 추정이 있으면 정확한 정수 결과를 복원한다.
-- 비밀 분산. Mignotte 방식은 서로 소인 법들에 대한 나머지를 조각으로 나눠 준다.
+- [비밀 분산](secret-sharing.md). Mignotte 방식은 서로 소인 법들에 대한 나머지를 조각으로 나눠 준다.
 - 주기 결합. 주기 $n_1$ , $n_2$ 를 가진 두 순환 현상의 합성 주기가 최소공배수가 되는 사실의 구조적 근거이며, 유한 순환군의 분해 $\mathbb{Z}/mn\cong\mathbb{Z}/m\times\mathbb{Z}/n$ 으로 표현된다. [군](groups.md)의 분류에서 쓰인다.
 
 [^1]: Keith Conrad, The Chinese Remainder Theorem, Theorem 1 및 §2의 구성적 증명. https://kconrad.math.uconn.edu/blurbs/ringtheory/crt.pdf

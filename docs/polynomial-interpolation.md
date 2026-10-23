@@ -119,5 +119,6 @@ $\lbrack -1,1\rbrack$ 에서 $f(x)=1/(1+25x^2)$ 을 등간격 점 $n+1$ 개로 �
 
 - [Gauss 구적](gaussian-quadrature.md)
 - [Newton–Cotes 공식](newton-cotes.md)
+- [비밀 분산](secret-sharing.md)
 
 #analysis #algorithms #algebra
