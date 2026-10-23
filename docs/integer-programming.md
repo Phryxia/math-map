@@ -58,7 +58,7 @@ $u\ge 0$ 에 대해 $u^{T}Ax\le u^{T}b$ 는 $P$ 에서 성립한다. 계수를 �
 
 유계 다면체 $P$ 에 대해, Chvátal–Gomory 절단을 모두 더해 얻는 다면체를 $P'$ 이라 하고 이를 되풀이하면 유한 번의 단계에서 $P^{(k)}=P_I$ 가 된다.[^3] $P$ 를 $P_I$ 로 보내는 데 필요한 최소 횟수를 $P$ 의 [Chvátal 계수](chvatal-rank.md)라 한다.
 
-Gomory 의 분수 절단은 단체법의 기저에서 절단을 하나씩 뽑는 규칙이고, 절단을 더하고 완화를 다시 푸는 반복이 유한 번에 정수 최적해로 끝난다.[^3]
+Gomory 의 분수 절단은 [단체법](simplex-method.md)의 기저에서 절단을 하나씩 뽑는 규칙이고, 절단을 더하고 완화를 다시 푸는 반복이 유한 번에 정수 최적해로 끝난다.[^3]
 
 [^1]: Richard M. Karp, "Reducibility Among Combinatorial Problems", *Complexity of Computer Computations*, Plenum, 1972, 85–103 면. 0-1 정수계획법이 목록의 셋째 문제다.
 [^2]: H. W. Lenstra Jr., "Integer Programming with a Fixed Number of Variables", *Mathematics of Operations Research* 8권 4호, 1983, 538–548 면.

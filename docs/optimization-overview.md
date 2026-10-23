@@ -77,6 +77,7 @@ graph TD
 먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [행렬식](determinants.md)(선형대수 개관), [그래프 색칠](graph-coloring.md), [매칭](matchings.md)(그래프 이론 개관). 시작 문서: [선형계획법](linear-programming.md).
 
 - [선형계획법](linear-programming.md): 다면체 위의 선형 목적함수, 꼭짓점 최적성과 쌍대성
+  - [단체법](simplex-method.md): 기저 허용해를 따라 이웃 꼭짓점으로 옮기는 피벗, 축소 비용과 비율 검사, Bland 규칙과 Klee–Minty 예
   - [타원체법](ellipsoid-method.md): 분리 초평면으로 자른 반타원체를 최소 타원체로 감싸는 반복, 부피 감소율과 선형계획법의 다항 시간, 분리와 최적화의 동치
   - [내점법](interior-point-method.md): 경계에서 발산하는 장벽을 더해 내부를 지나는 다항시간 해법
 - [정수계획법](integer-programming.md): 정수 조건을 더한 선형계획, 분기한정과 절단평면
