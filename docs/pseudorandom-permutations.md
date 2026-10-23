@@ -55,7 +55,7 @@ $\Psi(f\_1,f\_2)$ 는 유사난수 순열이 아니다. 같은 $R$ 과 서로 �
 # 활용
 
 - 블록 암호. DES(data encryption standard)는 16 단계 Feistel 구조다. AES(advanced encryption standard)는 Feistel 구조가 아닌 치환·순열 연결망(substitution–permutation network)이지만 안전성 목표는 같은 유사난수 순열이다.
-- 운용 모드. 카운터 모드는 블록 암호를 $F\_k(N\Vert i)$ 꼴의 유사난수 함수로 쓰고, 전환 보조정리가 그 안전성 증명의 한 단계다. [인증 암호화](authenticated-encryption.md)의 Galois/카운터 모드가 이 방식으로 암호화한다.
+- [블록 암호 운용 모드](block-cipher-modes.md). 카운터 모드는 블록 암호를 $F\_k(N\Vert i)$ 꼴의 유사난수 함수로 쓰고, 전환 보조정리가 그 안전성 증명의 한 단계다. [인증 암호화](authenticated-encryption.md)의 Galois/카운터 모드가 이 방식으로 암호화한다.
 - 형식 보존 암호화(format-preserving encryption). 카드 번호처럼 정해진 형식의 작은 집합 위에서 Feistel 구조를 돌려 같은 형식의 값으로 암호화한다[^3].
 
 [^1]: M. Luby, C. Rackoff, "How to construct pseudorandom permutations from pseudorandom functions", SIAM Journal on Computing 17 (1988), 373–386.
@@ -70,6 +70,6 @@ $\Psi(f\_1,f\_2)$ 는 유사난수 순열이 아니다. 같은 $R$ 과 서로 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [블록 암호 운용 모드](block-cipher-modes.md)
 
 #cryptography #complexity #probability

@@ -95,6 +95,7 @@ $N=pq$ 에서 법 $p$ 와 법 $q$ 로 모두 제곱이 아닌 $y$ 를 공개한�
 ## 더 알아보기
 
 - [망각 전송](oblivious-transfer.md)
+- [블록 암호 운용 모드](block-cipher-modes.md)
 - [인증 암호화](authenticated-encryption.md)
 
 #cryptography #complexity #number_theory

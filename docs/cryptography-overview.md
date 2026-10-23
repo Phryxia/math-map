@@ -59,13 +59,14 @@ graph TD
 - [일방향 함수](one-way-functions.md) — 계산은 쉽고 무작위 입력의 역산은 무시할 만한 확률로만 성공하는 함수. 약속과 서명이 이것만으로 구성된다
 - [유사난수 생성기](pseudorandom-generators.md) — 짧은 씨를 균등 난수열과 구별되지 않는 긴 비트열로 늘린다. 일방향 함수의 존재와 동치다
   - [약속 방식](commitment-schemes.md) — 값을 감춘 채 맡겼다가 바꿀 수 없게 연다. Pedersen 약속과 Naor 약속
-  - [유사난수 순열](pseudorandom-permutations.md) — 무작위 순열과 구별되지 않는 블록 암호의 정의. Feistel 구조, Luby–Rackoff 정리, 전환 보조정리
+- [유사난수 순열](pseudorandom-permutations.md) — 무작위 순열과 구별되지 않는 블록 암호의 정의. Feistel 구조, Luby–Rackoff 정리, 전환 보조정리
 - [암호 해시 함수](cryptographic-hash-functions.md) — 같은 값을 내는 두 입력을 찾기 어려운 압축 함수. 생일 공격, Merkle–Damgård 구성
   - [Merkle 나무](merkle-trees.md) — 블록 해시값을 이진 나무로 쌓아 뿌리 하나로 전체를 대표한다. 포함 증명과 Merkle 서명
 - [전자서명](digital-signatures.md) — 비밀키로만 만들고 공개키로 확인하는 값. Lamport 서명, 해시 후 RSA 서명, Schnorr 서명
   - [블라인드 서명](blind-signatures.md) — 서명자가 메시지를 보지 않고 서명한다. 은닉성과 일회 추가 위조 불가능성, RSA 와 Schnorr 의 블라인드 서명
 - [메시지 인증 코드](message-authentication-codes.md) — 공유한 비밀키로 붙이고 같은 키로 확인하는 꼬리표. CBC-MAC 의 길이 위조, HMAC, 일회용 MAC
 - [의미론적 안전성](semantic-security.md) — 암호문으로 평문에 대해 알아낼 것이 없다는 정의. IND-CPA 와의 동치, ElGamal 암호
+  - [블록 암호 운용 모드](block-cipher-modes.md) — ECB, CBC, CTR 모드. ECB 의 실패, 무작위 시작값을 쓴 CBC 와 CTR 의 선택 평문 안전성, 생일 한계
   - [인증 암호화](authenticated-encryption.md) — 평문을 감추고 바뀐 암호문을 거절하는 비밀키 암호화. 암호화 후 인증, 선택 암호문 공격에 대한 안전성, 넌스 재사용
 - [망각 전송](oblivious-transfer.md) — 받는 사람이 두 메시지 가운데 하나만 받고 보내는 사람은 어느 것인지 모른다. 다자간 계산의 기본 단계
 - [영지식 증명](zero-knowledge-proofs.md) — 비밀을 보이지 않고 그 비밀을 안다는 것을 확인시키는 대화형 증명. Schnorr 프로토콜과 Fiat–Shamir 변환이 서명을 준다
