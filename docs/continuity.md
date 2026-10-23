@@ -75,7 +75,7 @@ $$
 | 정의역 조건 | 따라오는 성질 |
 |---|---|
 | 콤팩트 | 상도 콤팩트, 최댓값·최솟값 존재, 균등연속 |
-| 연결 | 상도 연결, 실수값이면 중간값 정리 |
+| 연결 | 상도 연결, 실수값이면 [중간값 정리](intermediate-value-theorem.md) |
 
 콤팩트 위의 연속함수가 균등연속이라는 Heine–Cantor 정리는 유계 닫힌 구간의 적분을 다룰 때 쓰인다. 중간값 정리는 이분 탐색으로 근을 찾는 알고리즘의 정당성을 준다.
 
@@ -104,10 +104,19 @@ $$
 
 ## 더 알아보기
 
-- [위상 공간](topology.md)
+### 실수 위의 연속함수
+
+- [중간값 정리](intermediate-value-theorem.md)
 - [균등연속](uniform-continuity.md)
 - [균등수렴](uniform-convergence.md)
+
+### 미분과 적분
+
 - [미분](derivative.md)
 - [Riemann 적분](riemann-integral.md)
+
+### 일반화
+
+- [위상 공간](topology.md)
 
 #analysis #topology

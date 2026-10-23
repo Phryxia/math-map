@@ -60,7 +60,7 @@ $$
 # 활용
 
 - 정렬된 자료의 질의. [접미사 배열](suffix-arrays.md)에서 패턴으로 시작하는 접미사의 구간 양 끝을 이진 탐색으로 찾는다.
-- 답의 이분법. 최적값 $t$ 를 직접 구하기 어렵지만 "답이 $t$ 이하인가" 를 판정할 수 있으면, 판정이 단조이므로 $t$ 에 대해 이분법을 쓴다. 정수 계수 문제에서는 판정을 $O(\log T)$ 번 부르고, 실수 문제에서는 중간값 정리(intermediate value theorem)의 이분법처럼 구간을 반씩 줄인다.
+- 답의 이분법. 최적값 $t$ 를 직접 구하기 어렵지만 "답이 $t$ 이하인가" 를 판정할 수 있으면, 판정이 단조이므로 $t$ 에 대해 이분법을 쓴다. 정수 계수 문제에서는 판정을 $O(\log T)$ 번 부르고, 실수 문제에서는 [중간값 정리](intermediate-value-theorem.md)의 이분법처럼 구간을 반씩 줄인다.
 - 정보량. 같은 확률의 후보 $N$ 개 가운데 하나를 가리키는 데는 예·아니오 질문이 $\log_2 N$ 번 필요하고, 이 값이 균등 분포의 [Shannon 엔트로피](entropy.md)다.
 
 [^1]: D. E. Knuth, *The Art of Computer Programming, Vol. 3: Sorting and Searching*, 2nd ed., Addison-Wesley, 1998, §6.2.1.
