@@ -104,6 +104,6 @@ $C_A$ 는 존재만 증명되고 증명에서 값이 나오지 않는다.[^3] �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Siegel 영점](siegel-zeros.md)
 
 #number_theory #complex_analysis
