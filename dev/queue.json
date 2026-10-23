@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-23T05:06:00.294Z",
-  "nextSeq": 2385,
+  "savedAt": "2026-10-23T09:06:19.901Z",
+  "nextSeq": 2390,
   "items": [
     {
       "id": "9bab7237",
@@ -3322,6 +3322,30 @@
       "note": "complexity. 부모 후보 interactive-proofs. 계산 위임, 다중선형 확장",
       "createdAt": "2026-10-23T05:02:40.606Z",
       "seq": 2384
+    },
+    {
+      "id": "ac69655f",
+      "title": "분할상환 분석",
+      "priority": 10,
+      "note": "union-find, balanced-binary-search-trees, fibonacci-heaps, link-cut-trees 가 분할상환 시간을 정의 없이 쓴다. 분야 #algorithms #data_structures, 부모 후보 dynamic-programming 이 아닌 random-variables 없이 쓸 수 있는 graphs 정도. 회계 방법과 퍼텐셜 방법, 동적 배열의 두 배 늘리기",
+      "createdAt": "2026-10-23T09:05:41.516Z",
+      "seq": 2387
+    },
+    {
+      "id": "f40208aa",
+      "title": "블록 암호 운용 모드",
+      "priority": 10,
+      "note": "pseudorandom-permutations 의 활용 절과 authenticated-encryption 이 카운터 모드와 CBC 를 정의 없이 쓴다. 분야 #cryptography, 부모 pseudorandom-permutations 와 semantic-security. 카운터 모드의 IND-CPA 증명, CBC 의 무작위 IV 조건",
+      "createdAt": "2026-10-23T09:05:41.653Z",
+      "seq": 2388
+    },
+    {
+      "id": "bb065764",
+      "title": "Fibonacci 수",
+      "priority": 10,
+      "note": "fibonacci-heaps 의 차수 상한이 F_{k+2} 와 황금비를 정의 없이 쓴다. 분야 #combinatorics #number_theory, 부모 후보 generating-functions. Binet 공식, Zeckendorf 표현, Lamé 정리(유클리드 알고리즘의 단계 수)",
+      "createdAt": "2026-10-23T09:05:41.789Z",
+      "seq": 2389
     },
     {
       "id": "dfb3e493",
