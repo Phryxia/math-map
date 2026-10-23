@@ -50,7 +50,7 @@ $$
 
 ## Schnorr 서명
 
-[영지식 증명](zero-knowledge-proofs.md)의 Schnorr 프로토콜에 Fiat–Shamir 변환을 적용한 것이 Schnorr 서명(Schnorr signature)이다. 위수 $q$ 인 군에서 $h=g^x$ 가 공개키일 때 다음과 같다.
+[영지식 증명](zero-knowledge-proofs.md)의 Schnorr 프로토콜에 [Fiat–Shamir 변환](fiat-shamir.md)을 적용한 것이 Schnorr 서명(Schnorr signature)이다. 위수 $q$ 인 군에서 $h=g^x$ 가 공개키일 때 다음과 같다.
 
 $$
 t=g^k,\qquad c=\mathcal H(t,m),\qquad s=k+cx \bmod q

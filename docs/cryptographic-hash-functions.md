@@ -26,7 +26,7 @@
 
 ## 무작위 오라클 모형
 
-**무작위 오라클 모형(random oracle model)** 은 모든 참가자가 해시 함수를 직접 계산하지 못하고, 입력마다 균등하게 고른 값을 돌려주는 공용 오라클에 질의로만 접근한다고 가정하는 증명 모형이다[^1]. Fiat–Shamir 변환과 해시 후 RSA 서명의 안전성 증명이 이 모형에서 이루어진다.
+**무작위 오라클 모형(random oracle model)** 은 모든 참가자가 해시 함수를 직접 계산하지 못하고, 입력마다 균등하게 고른 값을 돌려주는 공용 오라클에 질의로만 접근한다고 가정하는 증명 모형이다[^1]. [Fiat–Shamir 변환](fiat-shamir.md)과 해시 후 RSA 서명의 안전성 증명이 이 모형에서 이루어진다.
 
 # 성질
 
@@ -96,6 +96,6 @@ $g^xh^y=g^{x'}h^{y'}$ 이고 $(x,y)\ne(x',y')$ 이면 $\log\_gh=(x-x')(y'-y)^{-1
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Fiat–Shamir 변환](fiat-shamir.md)
 
 #cryptography #complexity #probability
