@@ -82,7 +82,7 @@ splay 트리(splay tree)는 균형 조건을 저장하지 않는다. 접근한 �
 
 ## 비교 기반 하한
 
-키를 비교로만 다루는 자료구조에서 탐색 비용은 $\log_2 n$ 보다 작아질 수 없다. 비교 한 번이 두 갈래를 주므로 $n$ 개를 가르는 결정 트리의 높이가 $\log_2 n$ 이상이다. 위 상한들이 상수배 안에서 최적이다.
+키를 비교로만 다루는 자료구조에서 탐색 비용은 $\log_2 n$ 보다 작아질 수 없다. 비교 한 번이 두 갈래를 주므로 $n$ 개를 가르는 [결정 트리](comparison-sorting.md)의 높이가 $\log_2 n$ 이상이다. 위 상한들이 상수배 안에서 최적이다.
 
 # 활용
 
@@ -101,6 +101,7 @@ splay 트리(splay tree)는 균형 조건을 저장하지 않는다. 접근한 �
 
 ## 더 알아보기
 
+- [B 트리](b-trees.md)
 - [Link-cut tree](link-cut-trees.md)
 
 #data_structures #algorithms #computation
