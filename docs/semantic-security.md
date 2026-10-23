@@ -94,6 +94,6 @@ $N=pq$ 에서 법 $p$ 와 법 $q$ 로 모두 제곱이 아닌 $y$ 를 공개한�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [망각 전송](oblivious-transfer.md)
 
 #cryptography #complexity #number_theory
