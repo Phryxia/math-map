@@ -100,5 +100,6 @@ NP 문제는 모두 결정 가능하다. 증명서 후보가 유한하므로 전
 
 - [NP-완전성과 Cook–Levin 정리](np-completeness.md)
 - [양자 회로](quantum-circuits.md)
+- [일방향 함수](one-way-functions.md)
 
 #complexity #computation #algorithms

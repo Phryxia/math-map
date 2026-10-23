@@ -72,7 +72,7 @@ $$
 
 ## NP 의 영지식 증명
 
-**Goldreich–Micali–Wigderson 정리(Goldreich–Micali–Wigderson theorem).** 일방향 함수(one-way function)가 존재하면 $\mathrm{NP}$ 의 모든 언어에 계산적 영지식 증명이 존재한다[^2].
+**Goldreich–Micali–Wigderson 정리(Goldreich–Micali–Wigderson theorem).** [일방향 함수](one-way-functions.md)가 존재하면 $\mathrm{NP}$ 의 모든 언어에 계산적 영지식 증명이 존재한다[^2].
 
 증명의 요지. [그래프 색칠](graph-coloring.md)의 3-색칠 문제가 NP-완전이므로 그 언어 하나에 대해 보이면 다항시간 환원으로 나머지가 따라온다. 증명자는 색칠의 세 색을 무작위로 바꾼 뒤 정점마다 색을 약속(commitment)하여 보낸다. 검증자가 간선 하나를 고르면 증명자는 그 양 끝의 약속만 열고, 검증자는 두 색이 다른지 본다. 약속은 열기 전에 내용을 감추고 연 뒤에 바꿀 수 없는 값이고, 일방향 함수에서 구성된다. 한 번에 속을 확률은 많아야 $1-1/\lvert E\rvert$ 이므로 $\lvert E\rvert k$ 번 되풀이한다.
 
