@@ -125,5 +125,6 @@ $$
 - [부울 함수의 Fourier 해석](boolean-fourier.md)
 - [스펙트럼 희소화](spectral-sparsification.md)
 - [범용 해시족](universal-hashing.md)
+- [스킵 리스트](skip-lists.md)
 
 #probability #measure_theory #statistics #algorithms
