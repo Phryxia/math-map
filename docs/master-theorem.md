@@ -70,7 +70,7 @@ $k=1$, $a_1=a$, $b_1=1/b$ 이면 $q=\log_b a$ 이고 마스터 정리의 세 경
 
 - [이진 탐색](binary-search.md)은 $T(n)=T(n/2)+O(1)$ 이다. $p=\log_2 1=0$ 이고 둘째 경우의 $k=0$ 이므로 $T(n)=\Theta(\log n)$ 이다.
 - 병합 정렬과 [고속 Fourier 변환](fft.md)의 기수 2 Cooley–Tukey 알고리즘은 $T(n)=2T(n/2)+\Theta(n)$ 이다. $p=1$ 이고 둘째 경우이므로 $T(n)=\Theta(n\log n)$ 이다.
-- Karatsuba 곱셈(Karatsuba multiplication)은 $n$ 자리 정수 두 개의 곱을 $n/2$ 자리 곱 세 번과 덧셈으로 구한다[^4]. $T(n)=3T(n/2)+\Theta(n)$ 이고 $p=\log_2 3\approx 1.585$ 이므로 첫째 경우에서 $T(n)=\Theta(n^{\log_2 3})$ 이다.
+- [Karatsuba 곱셈](karatsuba-multiplication.md)은 $n$ 자리 정수 두 개의 곱을 $n/2$ 자리 곱 세 번과 덧셈으로 구한다[^4]. $T(n)=3T(n/2)+\Theta(n)$ 이고 $p=\log_2 3\approx 1.585$ 이므로 첫째 경우에서 $T(n)=\Theta(n^{\log_2 3})$ 이다.
 - Strassen 알고리즘(Strassen algorithm)은 $n\times n$ 행렬의 곱을 $n/2$ 크기 행렬 곱 일곱 번과 행렬 덧셈으로 구한다[^5]. $T(n)=7T(n/2)+\Theta(n^2)$ 이고 $p=\log_2 7\approx 2.807$ 이므로 첫째 경우에서 $T(n)=\Theta(n^{\log_2 7})$ 이다.
 - [선택 알고리즘](selection-algorithm.md)의 중앙값의 중앙값 방법은 $T(n)\le T(n/5)+T(7n/10)+an$ 을 만족한다. 부분 문제의 크기가 둘이므로 Akra–Bazzi 정리를 쓴다. $(1/5)^q+(7/10)^q=1$ 의 해는 $q\lt 1$ 이고 적분이 $\Theta(n^{1-q})$ 이므로 $T(n)=\Theta(n)$ 이다.
 
@@ -88,6 +88,6 @@ $k=1$, $a_1=a$, $b_1=1/b$ 이면 $q=\log_b a$ 이고 마스터 정리의 세 경
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Karatsuba 곱셈](karatsuba-multiplication.md)
 
 #algorithms #complexity #analysis
