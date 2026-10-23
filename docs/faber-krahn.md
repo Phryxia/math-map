@@ -92,7 +92,7 @@ $$
 
 ## Pólya 추측의 처음 두 경우
 
-[Weyl 법칙](weyl-law.md)의 Pólya 추측(Pólya's conjecture)은 $\lambda_k(\Omega)\ge 4\pi^2\bigl(k/(\omega_n\vert\Omega\vert)\bigr)^{2/n}$ 다. 모든 $n$ 에서 $j_{n/2-1,1}^2\omega_n^{4/n}\ge 4\pi^2$ 이므로 $k=1$ 인 경우는 Faber–Krahn 부등식에서 나온다. $n=2$ 에서는 $j_{0,1}^2\approx 5.78$ 이고 $4\pi^2/\omega_2^2=4$ 다. $k=2$ 인 경우는 Krahn–Szegő 정리에서 같은 방법으로 나온다.
+[Weyl 법칙](weyl-law.md)의 [Pólya 추측](polya-conjecture.md)은 $\lambda_k(\Omega)\ge 4\pi^2\bigl(k/(\omega_n\vert\Omega\vert)\bigr)^{2/n}$ 다. 모든 $n$ 에서 $j_{n/2-1,1}^2\omega_n^{4/n}\ge 4\pi^2$ 이므로 $k=1$ 인 경우는 Faber–Krahn 부등식에서 나온다. $n=2$ 에서는 $j_{0,1}^2\approx 5.78$ 이고 $4\pi^2/\omega_2^2=4$ 다. $k=2$ 인 경우는 Krahn–Szegő 정리에서 같은 방법으로 나온다.
 
 # 활용
 
@@ -118,5 +118,6 @@ $$
 
 - [Szegő–Weinberger 부등식](szego-weinberger.md)
 - [Courant 마디 영역 정리](courant-nodal-domain-theorem.md)
+- [Pólya 추측](polya-conjecture.md)
 
 #analysis #differential_geometry #optimization #theorem

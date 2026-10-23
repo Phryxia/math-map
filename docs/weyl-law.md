@@ -140,7 +140,7 @@ $$
 
 ## Pólya 추측과 Li–Yau 부등식
 
-Pólya 추측(Pólya's conjecture)은 모든 유계 영역과 모든 $\lambda$ 에서
+[Pólya 추측](polya-conjecture.md)은 모든 유계 영역과 모든 $\lambda$ 에서
 
 $$
 N_\Omega(\lambda)\le C_n\thinspace\mathrm{vol}(\Omega)\thinspace\lambda^{n/2}
@@ -182,5 +182,6 @@ $$
 - [양자 혼돈](quantum-chaos.md)
 - [제타 정규화 행렬식](zeta-regularized-determinant.md)
 - [Courant 마디 영역 정리](courant-nodal-domain-theorem.md)
+- [Pólya 추측](polya-conjecture.md)
 
 #differential_geometry #analysis #functional_analysis #theorem
