@@ -85,7 +85,7 @@ $O(1)$ 항은 극한을 갖지 않고 $\log\_2 n$ 에 대해 주기 $1$ 로 진�
 
 - 접두사 질의. 입력한 접두사로 시작하는 단어를 모두 찾는 자동 완성은 그 접두사의 마디 아래 부분트리를 훑는다.
 - 가장 긴 접두사 일치. 인터넷 경로 선택은 목적지 주소의 비트를 따라 이진 압축 트라이를 내려가며 끝 표시가 있는 가장 깊은 마디의 경로를 고른다.
-- 여러 패턴의 검색. Aho–Corasick 알고리즘(Aho–Corasick algorithm)은 패턴들의 트라이에 [Knuth–Morris–Pratt 알고리즘](knuth-morris-pratt.md)의 실패 함수를 마디마다 두어 본문을 한 번 읽고 모든 패턴을 찾는다.
+- 여러 패턴의 검색. [Aho–Corasick 알고리즘](aho-corasick.md)은 패턴들의 트라이에 [Knuth–Morris–Pratt 알고리즘](knuth-morris-pratt.md)의 실패 함수를 마디마다 두어 본문을 한 번 읽고 모든 패턴을 찾는다.
 
 [^1]: D. E. Knuth, *The Art of Computer Programming, Vol. 3: Sorting and Searching*, 2nd ed., Addison-Wesley, 1998, §6.3.
 [^2]: D. R. Morrison, "PATRICIA — practical algorithm to retrieve information coded in alphanumeric", Journal of the ACM 15 (1968), 514–534.
@@ -100,6 +100,6 @@ $O(1)$ 항은 극한을 갖지 않고 $\log\_2 n$ 에 대해 주기 $1$ 로 진�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Aho–Corasick 알고리즘](aho-corasick.md)
 
 #data_structures #algorithms #graph_theory
