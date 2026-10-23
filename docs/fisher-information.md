@@ -110,6 +110,7 @@ $$
 
 ## 더 알아보기
 
+- [가능도비 검정](likelihood-ratio-test.md)
 - [정보기하](information-geometry.md)
 
 #statistics #probability #information_theory #machine_learning
