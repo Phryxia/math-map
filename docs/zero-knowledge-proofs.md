@@ -96,6 +96,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [다자간 계산](secure-multiparty-computation.md)
 
 #cryptography #complexity #computation #graph_theory

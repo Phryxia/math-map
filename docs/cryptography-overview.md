@@ -48,7 +48,7 @@ graph TD
 - [군](groups.md) — 이산로그를 정의하는 데 필요한 것은 연산 하나와 위수뿐이다
 - [중국인의 나머지 정리](chinese-remainder-theorem.md) — 서로소인 법의 연립 합동식을 한 법의 합동식으로 합친다
 - [유한체](finite-fields.md) — 위수 $q=p^k$ 의 체. 곱셈군이 순환군이므로 이산로그를 여기에 건다
-  - [비밀 분산](secret-sharing.md) — 비밀을 다항식의 값으로 나눠 문턱 수 이상의 조각으로만 복원한다. Shamir 방식과 검증 가능한 분산
+- [비밀 분산](secret-sharing.md) — 비밀을 다항식의 값으로 나눠 문턱 수 이상의 조각으로만 복원한다. Shamir 방식과 검증 가능한 분산
 
 ## 공개키의 두 가정
 
@@ -59,10 +59,11 @@ graph TD
 - [일방향 함수](one-way-functions.md) — 계산은 쉽고 무작위 입력의 역산은 무시할 만한 확률로만 성공하는 함수. 약속과 서명이 이것만으로 구성된다
 - [유사난수 생성기](pseudorandom-generators.md) — 짧은 씨를 균등 난수열과 구별되지 않는 긴 비트열로 늘린다. 일방향 함수의 존재와 동치다
   - [약속 방식](commitment-schemes.md) — 값을 감춘 채 맡겼다가 바꿀 수 없게 연다. Pedersen 약속과 Naor 약속
-  - [영지식 증명](zero-knowledge-proofs.md) — 비밀을 보이지 않고 그 비밀을 안다는 것을 확인시키는 대화형 증명. Schnorr 프로토콜과 Fiat–Shamir 변환이 서명을 준다
   - [암호 해시 함수](cryptographic-hash-functions.md) — 같은 값을 내는 두 입력을 찾기 어려운 압축 함수. 생일 공격, Merkle–Damgård 구성
   - [전자서명](digital-signatures.md) — 비밀키로만 만들고 공개키로 확인하는 값. Lamport 서명, 해시 후 RSA 서명, Schnorr 서명
   - [의미론적 안전성](semantic-security.md) — 암호문으로 평문에 대해 알아낼 것이 없다는 정의. IND-CPA 와의 동치, ElGamal 암호
+- [영지식 증명](zero-knowledge-proofs.md) — 비밀을 보이지 않고 그 비밀을 안다는 것을 확인시키는 대화형 증명. Schnorr 프로토콜과 Fiat–Shamir 변환이 서명을 준다
+  - [다자간 계산](secure-multiparty-computation.md) — 입력을 감춘 채 여러 참가자가 함수값을 함께 계산한다. Beaver 삼중쌍, BGW 정리와 GMW 정리
 
 ## 타원곡선 암호
 
