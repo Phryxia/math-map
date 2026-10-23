@@ -76,7 +76,7 @@ $N=pq$ 에서 법 $p$ 와 법 $q$ 로 모두 제곱이 아닌 $y$ 를 공개한�
 - RSA 의 실제 사용. RSA 는 무작위 패딩 OAEP(optimal asymmetric encryption padding)를 붙여 암호화하고, 무작위 오라클 모형에서 IND-CCA2 가 증명된다[^6].
 - [완전동형암호](homomorphic-encryption.md)는 암호문 위의 연산을 허락하므로 정의상 IND-CCA2 가 될 수 없고, 안전성 목표가 IND-CPA 다.
 - 격자 기반 암호. [격자 기반 후양자 암호](post-quantum-cryptography.md)의 공개키 암호화는 오류 있는 학습 문제의 판정판에서 IND-CPA 를 얻고, 표준 변환으로 IND-CCA2 키 캡슐화를 만든다.
-- 대칭키 암호. 같은 정의를 비밀키 암호화에 쓰면 [유사난수 생성기](pseudorandom-generators.md)로 늘린 키와 배타적 논리합을 하는 방식이 한 메시지에 대해 의미론적으로 안전하다.
+- 대칭키 암호. 같은 정의를 비밀키 암호화에 쓰면 [유사난수 생성기](pseudorandom-generators.md)로 늘린 키와 배타적 논리합을 하는 방식이 한 메시지에 대해 의미론적으로 안전하다. 바뀐 암호문의 거절까지 요구하는 정의는 [인증 암호화](authenticated-encryption.md)다.
 
 [^1]: S. Goldwasser, S. Micali, "Probabilistic encryption", Journal of Computer and System Sciences 28 (1984), 270–299.
 [^2]: C. Rackoff, D. R. Simon, "Non-interactive zero-knowledge proof of knowledge and chosen ciphertext attack", CRYPTO 1991, LNCS 576, 433–444.
@@ -95,5 +95,6 @@ $N=pq$ 에서 법 $p$ 와 법 $q$ 로 모두 제곱이 아닌 $y$ 를 공개한�
 ## 더 알아보기
 
 - [망각 전송](oblivious-transfer.md)
+- [인증 암호화](authenticated-encryption.md)
 
 #cryptography #complexity #number_theory

@@ -82,7 +82,7 @@ $$
 
 # 활용
 
-- 인증 암호화. 암호화한 뒤 암호문에 MAC 을 붙이는 방식은 평문을 감추는 [의미론적 안전성](semantic-security.md)과 암호문의 위조 불가능성을 함께 가지며, 선택 암호문 공격에 대해 안전하다[^5]. 직관 절의 배타적 논리합 변조를 이 방식이 막는다.
+- [인증 암호화](authenticated-encryption.md). 암호화한 뒤 암호문에 MAC 을 붙이는 방식은 평문을 감추는 [의미론적 안전성](semantic-security.md)과 암호문의 위조 불가능성을 함께 가지며, 선택 암호문 공격에 대해 안전하다[^5]. 직관 절의 배타적 논리합 변조를 이 방식이 막는다.
 - 통신 규약. TLS(transport layer security)와 IPsec(internet protocol security)이 레코드마다 MAC 을 붙인다. TLS 1.3 이 쓰는 AES-GCM(advanced encryption standard Galois/counter mode)과 ChaCha20-Poly1305 의 인증 부분은 일회용 MAC 의 다항식 꼴을 [유한체](finite-fields.md) 위에서 계산한다.
 - 키 유도. HKDF(HMAC-based key derivation function)는 HMAC 을 유사난수 함수로 써서 [이산로그](discrete-logarithm.md)의 Diffie–Hellman 교환으로 합의한 값을 대칭키로 바꾼다[^6].
 
@@ -102,6 +102,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [인증 암호화](authenticated-encryption.md)
 
 #cryptography #complexity #probability
