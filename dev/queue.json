@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-23T13:05:24.877Z",
-  "nextSeq": 2395,
+  "savedAt": "2026-10-23T17:08:39.509Z",
+  "nextSeq": 2399,
   "items": [
     {
       "id": "9bab7237",
@@ -490,14 +490,6 @@
       "note": "9절 미링크 손 검사가 더 긴 용어의 일부를 잡은 오탐. bc871443 의 목록에 더한다. (1) kpz-universality 의 'Kingman 의 아가법 에르고딕 정리' 가 ergodic-theorem 미링크로 보고된다. Birkhoff 정리와 다른 정리다. (2) kpz-universality 의 '확률 열방정식'(stochastic heat equation)이 heat-equation 미링크로 보고된다. 다른 방정식이다. (3) ising-model 의 'Markov 연쇄 Monte Carlo', 'Markov 연쇄의 혼합시간' 링크 텍스트 안의 'Markov 연쇄' 가 markov-chains 미링크로 보고된다. 또 회차 시작 전부터 있던 보고 넷: combinatorics-overview 의 Grassmann 다양체(MV 순환 설명의 '아핀 Grassmann 다양체'), order-theory-overview 의 Rice 정리, functional-analysis-overview 의 Bott 주기성과 Haagerup 성질. 개관 설명 안의 이름이라 갈래 순서 규칙(85cb6359)과 함께 판정해야 한다.",
       "createdAt": "2026-10-22T13:04:52.996Z",
       "seq": 2367
-    },
-    {
-      "id": "460628b9",
-      "title": "Huffman 부호를 source-coding 에서 독립 문서로 나눌지 판정",
-      "priority": 50,
-      "note": "source-coding 에 'Huffman 부호의 최적성' 과 'Huffman 알고리즘' 두 절이 떨어져 있다. arithmetic-coding 과 lempel-ziv 의 개요가 Huffman 부호를 링크 없이 부른다. 분할하면 두 절을 합쳐 huffman-coding 으로 옮기고 두 문서의 본문을 링크",
-      "createdAt": "2026-10-23T13:02:52.821Z",
-      "seq": 2393
     },
     {
       "id": "08e59419",
@@ -3316,14 +3308,6 @@
       "seq": 2375
     },
     {
-      "id": "95c87a76",
-      "title": "예외 영점과 Landau–Page 정리",
-      "priority": 10,
-      "note": "number_theory. siegel-walfisz 의 정의 절이 예외 영점을 진술만 한다. 법마다 많아야 하나라는 Landau–Page 정리, Deuring–Heilbronn 현상, 유효 하한(Goldfeld–Gross–Zagier)과 류수. 부모 후보 siegel-walfisz, dirichlet-l-functions. 저장소에 없다(exceptional-zero, landau-page).",
-      "createdAt": "2026-10-23T00:51:00.864Z",
-      "seq": 2378
-    },
-    {
       "id": "128dacc2",
       "title": "합 검사 프로토콜과 GKR 프로토콜",
       "priority": 10,
@@ -3332,52 +3316,20 @@
       "seq": 2384
     },
     {
-      "id": "ac69655f",
-      "title": "분할상환 분석",
+      "id": "0b1edada",
+      "title": "Linnik 정리",
       "priority": 10,
-      "note": "union-find, balanced-binary-search-trees, fibonacci-heaps, link-cut-trees 가 분할상환 시간을 정의 없이 쓴다. 분야 #algorithms #data_structures, 부모 후보 dynamic-programming 이 아닌 random-variables 없이 쓸 수 있는 graphs 정도. 회계 방법과 퍼텐셜 방법, 동적 배열의 두 배 늘리기",
-      "createdAt": "2026-10-23T09:05:41.516Z",
-      "seq": 2387
+      "note": "#number_theory. siegel-zeros 활용 절이 등차수열의 가장 작은 소수 p ≤ Cq^L 을 링크 없이 부른다. 부모 후보 siegel-zeros. Deuring–Heilbronn 현상과 로그 영점 밀도 추정, L 의 개선 기록(출처 필요).",
+      "createdAt": "2026-10-23T17:08:32.126Z",
+      "seq": 2397
     },
     {
-      "id": "f40208aa",
-      "title": "블록 암호 운용 모드",
+      "id": "b814a4ac",
+      "title": "지표 계산법",
       "priority": 10,
-      "note": "pseudorandom-permutations 의 활용 절과 authenticated-encryption 이 카운터 모드와 CBC 를 정의 없이 쓴다. 분야 #cryptography, 부모 pseudorandom-permutations 와 semantic-security. 카운터 모드의 IND-CPA 증명, CBC 의 무작위 IV 조건",
-      "createdAt": "2026-10-23T09:05:41.653Z",
-      "seq": 2388
-    },
-    {
-      "id": "bb065764",
-      "title": "Fibonacci 수",
-      "priority": 10,
-      "note": "fibonacci-heaps 의 차수 상한이 F_{k+2} 와 황금비를 정의 없이 쓴다. 분야 #combinatorics #number_theory, 부모 후보 generating-functions. Binet 공식, Zeckendorf 표현, Lamé 정리(유클리드 알고리즘의 단계 수)",
-      "createdAt": "2026-10-23T09:05:41.789Z",
-      "seq": 2389
-    },
-    {
-      "id": "52351fbf",
-      "title": "y-fast 트라이",
-      "priority": 10,
-      "note": "data_structures. van-emde-boas-trees 아래. x-fast 트라이(비트 접두사의 해시 테이블, O(n log u) 공간)와 y-fast 트라이(O(n) 공간, 다음 원소 O(log log u) 기대). 부모 van-emde-boas-trees, tries, hash-tables 중 둘",
-      "createdAt": "2026-10-23T13:02:52.583Z",
-      "seq": 2391
-    },
-    {
-      "id": "52abbac8",
-      "title": "splay 트리",
-      "priority": 10,
-      "note": "data_structures. balanced-binary-search-trees 의 '분할상환 분석과 splay 트리' 절과 link-cut-trees 가 splay 의 접근 정리(access lemma)를 쓴다. 부모 balanced-binary-search-trees, amortized-analysis. 접근 정리, 정적 최적성, 동적 최적성 추측(Sleator-Tarjan 1985 명시)",
-      "createdAt": "2026-10-23T13:02:52.706Z",
-      "seq": 2392
-    },
-    {
-      "id": "2eff2564",
-      "title": "중간값 정리",
-      "priority": 10,
-      "note": "analysis. binary-search 의 활용 절이 실수 이분법의 근거로 링크 없이 부른다. 부모 후보 continuity 계열 문서, 이분법의 수렴과 Bolzano 의 증명",
-      "createdAt": "2026-10-23T13:05:03.799Z",
-      "seq": 2394
+      "note": "#number_theory #cryptography. discrete-logarithm 표와 '유한체에서의 준지수 시간' 절이 index calculus 를 이름만 쓴다. 부모 후보 discrete-logarithm, pohlig-hellman 과 이웃. 인수 기저, 매끄러운 수의 확률(L(1/2) 복잡도), 선형대수 단계.",
+      "createdAt": "2026-10-23T17:08:32.276Z",
+      "seq": 2398
     },
     {
       "id": "dfb3e493",
