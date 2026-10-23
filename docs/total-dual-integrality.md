@@ -4,7 +4,7 @@
 
 **전체 쌍대 정수성(total dual integrality, TDI)** 은 유리 부등식계 $Ax\le b$ 가 갖는 성질로, 최적값이 유한한 모든 정수 목적함수 $c$ 에 대해 [선형계획법](linear-programming.md)의 쌍대 문제가 정수 최적해를 갖는다는 것이다. $Ax\le b$ 가 TDI 이고 $b$ 가 정수이면 다면체 $\lbrace x:Ax\le b\rbrace$ 의 꼭짓점이 모두 정수점이다(Edmonds–Giles).
 
-[완전 단일모듈 행렬](totally-unimodular-matrices.md)은 모든 정수 우변에 대해 정수 다면체를 주는 제약행렬이다. 일반 그래프의 [매칭](matchings.md) 다면체처럼 제약행렬이 완전 단일모듈이 아닌 정수 다면체도 있고, TDI 는 그런 다면체의 정수성을 쌍대 문제의 정수해로 증명하는 틀이다.
+[완전 단일모듈 행렬](totally-unimodular-matrices.md)은 모든 정수 우변에 대해 정수 다면체를 주는 제약행렬이다. 일반 그래프의 [매칭](matchings.md)에서 얻는 [매칭 다면체](matching-polytope.md)처럼 제약행렬이 완전 단일모듈이 아닌 정수 다면체도 있고, TDI 는 그런 다면체의 정수성을 쌍대 문제의 정수해로 증명하는 틀이다.
 
 # 직관
 
@@ -70,6 +70,6 @@ $A$ 를 고정하지 않으면 계가 TDI 인지 판정하는 문제는 co-NP �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [매칭 다면체](matching-polytope.md)
 
 #optimization #combinatorics #linear_algebra

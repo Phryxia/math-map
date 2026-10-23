@@ -74,18 +74,19 @@ graph TD
 
 ## 선형·반정부호 계획법
 
-먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [행렬식](determinants.md)(선형대수 개관), [그래프 색칠](graph-coloring.md)(그래프 이론 개관). 시작 문서: [선형계획법](linear-programming.md).
+먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [행렬식](determinants.md)(선형대수 개관), [그래프 색칠](graph-coloring.md), [매칭](matchings.md)(그래프 이론 개관). 시작 문서: [선형계획법](linear-programming.md).
 
 - [선형계획법](linear-programming.md): 다면체 위의 선형 목적함수, 꼭짓점 최적성과 쌍대성
   - [내점법](interior-point-method.md): 경계에서 발산하는 장벽을 더해 내부를 지나는 다항시간 해법
 - [정수계획법](integer-programming.md): 정수 조건을 더한 선형계획, 분기한정과 절단평면
 - [완전 단일모듈 행렬](totally-unimodular-matrices.md): 선형 완화가 정수해를 주는 제약행렬, Hoffman-Kruskal 정리와 Ghouila-Houri 판정
-  - [전체 쌍대 정수성](total-dual-integrality.md): 모든 정수 목적함수에서 쌍대 문제가 정수해를 갖는 부등식계, Edmonds–Giles 정리와 Hilbert 기저, 매칭 다면체
+- [전체 쌍대 정수성](total-dual-integrality.md): 모든 정수 목적함수에서 쌍대 문제가 정수해를 갖는 부등식계, Edmonds–Giles 정리와 Hilbert 기저, 매칭 다면체
 - [Chvátal 계수](chvatal-rank.md): 절단평면을 몇 번 반복해야 정수 껍질에 닿는지 재는 값
 - [반정부호 계획법](semidefinite-programming.md): 반정부호 행렬 위의 완화와 Goemans–Williamson 알고리즘
   - [행렬 완성](matrix-completion.md): 일부만 관측된 저계수 행렬을 핵노름 최소화로 복원하는 문제, coherence 조건과 정확 복원 정리
   - [Lovász 세타 함수](lovasz-theta.md): 독립수와 채색수 사이에 끼는 반정부호 계획값
 - [안정집합 다면체](stable-set-polytope.md): 안정집합 지시벡터의 볼록 껍질, 홀수 사이클 부등식과 클릭 부등식, 완벽그래프 판정과 확장 복잡도
+- [매칭 다면체](matching-polytope.md): 매칭 지시벡터의 볼록 껍질, 홀수 집합 부등식과 Edmonds 의 정리, 분리 문제와 지수적 확장 복잡도
 - [Sherali–Adams 계층](sherali-adams-hierarchy.md): 제약에 변수의 곱을 곱해 선형화하는 완화의 열, 단계 n 에서 정수 껍질, Lovász–Schrijver 연산과 국소 분포
 - [Lasserre 계층](lasserre-hierarchy.md): 모멘트 행렬의 반정부호 조건을 더한 완화의 열, 세타 몸체와 제곱합 증명서, 단계의 하한
 

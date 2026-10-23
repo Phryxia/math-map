@@ -157,5 +157,6 @@ $$
 ## 더 알아보기
 
 - [Dilworth 정리](dilworth-theorem.md)
+- [매칭 다면체](matching-polytope.md)
 
 #graph_theory #combinatorics
