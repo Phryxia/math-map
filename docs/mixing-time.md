@@ -86,6 +86,6 @@ $\pi_{\min}=\min_x\pi(x)$ 다. 상한은 가역 연쇄를 $L^2(\pi)$ 의 자기�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [경로 결합](path-coupling.md)
 
 #probability #measure_theory #algorithms #linear_algebra
