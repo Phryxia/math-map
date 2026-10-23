@@ -80,6 +80,6 @@ $xy=(a+d)(b+e)=ab+db+ea+de$ 이므로 등식이 성립한다. $a$, $b$ 가 균�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [뒤섞인 회로](garbled-circuits.md)
 
 #cryptography #complexity

@@ -64,7 +64,8 @@ graph TD
 - [의미론적 안전성](semantic-security.md) — 암호문으로 평문에 대해 알아낼 것이 없다는 정의. IND-CPA 와의 동치, ElGamal 암호
 - [망각 전송](oblivious-transfer.md) — 받는 사람이 두 메시지 가운데 하나만 받고 보내는 사람은 어느 것인지 모른다. 다자간 계산의 기본 단계
 - [영지식 증명](zero-knowledge-proofs.md) — 비밀을 보이지 않고 그 비밀을 안다는 것을 확인시키는 대화형 증명. Schnorr 프로토콜과 Fiat–Shamir 변환이 서명을 준다
-  - [다자간 계산](secure-multiparty-computation.md) — 입력을 감춘 채 여러 참가자가 함수값을 함께 계산한다. Beaver 삼중쌍, BGW 정리와 GMW 정리
+- [다자간 계산](secure-multiparty-computation.md) — 입력을 감춘 채 여러 참가자가 함수값을 함께 계산한다. Beaver 삼중쌍, BGW 정리와 GMW 정리
+  - [뒤섞인 회로](garbled-circuits.md) — 게이트를 키의 암호화 표로 바꿔 두 사람 계산을 상수 번의 메시지로 끝낸다
 
 ## 타원곡선 암호
 
