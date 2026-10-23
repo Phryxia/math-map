@@ -95,7 +95,7 @@ $p = 998244353 = 119\cdot2^{23}+1$ 처럼 $p-1$ 이 큰 2 의 거듭제곱을 �
 
 지금까지 알려진 알고리즘의 최선은 $O(N\log N)$ 이다. 계수의 크기를 제한한 산술회로 모형에서는 Morgenstern 이 $\Omega(N\log N)$ 하한을 증명했다[^1]. 제한을 풀면 이 논법의 근거인 [행렬식](determinants.md) 증가율 논증이 통하지 않는다.
 
-정수 곱셈에서는 Schönhage–Strassen 의 $O(n\log n\log\log n)$ 을 거쳐 Harvey 와 van der Hoeven 이 $O(n\log n)$ 을 달성했다. 이 알고리즘들은 임계 크기가 커서 실무에서는 단순한 FFT 기반 곱셈을 쓴다.
+정수 곱셈에서는 [Schönhage–Strassen 알고리즘](schonhage-strassen.md)의 $O(n\log n\log\log n)$ 을 거쳐 Harvey 와 van der Hoeven 이 $O(n\log n)$ 을 달성했다. 이 알고리즘들은 임계 크기가 커서 실무에서는 단순한 FFT 기반 곱셈을 쓴다.
 
 # 활용
 
@@ -127,6 +127,6 @@ $n$ 자리 정수를 계수 배열로 보면 곱셈이 합성곱이고, 필산�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schönhage–Strassen 알고리즘](schonhage-strassen.md)
 
 #algorithms #analysis #computation

@@ -110,7 +110,7 @@ DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 [Fourier 변환](fourier-trans
 
 ## 곱셈의 가속
 
-다항식 곱셈과 큰 정수 곱셈은 합성곱이므로 FFT 로 $O(N\log N)$ 에 처리된다. Schönhage–Strassen 과 그 후속 알고리즘이 이 원리를 쓰고, 수십만 자리 이상의 정수를 다루는 계산 대수 시스템의 기본 루틴이다.
+다항식 곱셈과 큰 정수 곱셈은 합성곱이므로 FFT 로 $O(N\log N)$ 에 처리된다. [Schönhage–Strassen 알고리즘](schonhage-strassen.md)과 그 후속 알고리즘이 이 원리를 쓰고, 수십만 자리 이상의 정수를 다루는 계산 대수 시스템의 기본 루틴이다.
 
 ## 선형 연산의 대각화
 

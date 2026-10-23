@@ -81,7 +81,7 @@ $k=2$ 이고 점이 $0$, $1$, $\infty$ 이면 Karatsuba 곱셈이다. $k=3$ 이�
 
 # 활용
 
-- 큰 정수의 곱셈. 수백 자리에서 수천 자리 사이의 곱에 Karatsuba 곱셈과 Toom–Cook 곱셈을 쓰고, 그보다 큰 수에는 [고속 Fourier 변환](fft.md)에 기반한 곱셈을 쓴다[^3]. [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 모듈러 거듭제곱이 이 범위의 곱을 되풀이한다.
+- 큰 정수의 곱셈. 수백 자리에서 수천 자리 사이의 곱에 Karatsuba 곱셈과 Toom–Cook 곱셈을 쓰고, 그보다 큰 수에는 [고속 Fourier 변환](fft.md)에 기반한 [Schönhage–Strassen 알고리즘](schonhage-strassen.md) 같은 곱셈을 쓴다[^3]. [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 모듈러 거듭제곱이 이 범위의 곱을 되풀이한다.
 - 다항식의 곱셈. 정의 절의 다항식 꼴에서 $t$ 를 $B^m$ 에 대입하지 않으면 차수 $n$ 인 다항식 두 개를 $O(n^{\log_2 3})$ 번의 계수 연산으로 곱한다. 계수는 어느 환의 원소여도 된다.
 - [마스터 정리](master-theorem.md)의 첫째 경우의 예. 곱의 수 $a=3$ 이 나누는 비율 $b=2$ 의 제곱보다 작아 지수가 $2$ 아래로 내려간다.
 
@@ -99,6 +99,6 @@ $k=2$ 이고 점이 $0$, $1$, $\infty$ 이면 Karatsuba 곱셈이다. $k=3$ 이�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Schönhage–Strassen 알고리즘](schonhage-strassen.md)
 
 #algorithms #complexity #algebra
