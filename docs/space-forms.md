@@ -57,7 +57,7 @@ $\kappa\gt 0$ 이면 $M$ 은 콤팩트이므로 $\Gamma$ 는 유한군이다.
 
 ## 평탄 공간형
 
-$\kappa=0$ 이면 $\Gamma$ 는 $\mathbb R^n$ 의 등거리변환군 $\mathbb R^n\rtimes\mathrm O(n)$ 의 부분군이다. $M$ 이 콤팩트이면 Bieberbach 정리(Bieberbach theorems)에 따라 $\Gamma$ 의 평행이동 부분이 유한 지표의 [격자](lattices.md)이고, 차원마다 콤팩트 평탄 공간형은 아핀 동형을 빼고 유한 개다[^2]. $2$ 차원에서는 원환면과 Klein 병 둘이고, $3$ 차원에서는 $10$ 개이며 그 가운데 $6$ 개가 방향가능이다.
+$\kappa=0$ 이면 $\Gamma$ 는 $\mathbb R^n$ 의 등거리변환군 $\mathbb R^n\rtimes\mathrm O(n)$ 의 부분군이다. $M$ 이 콤팩트이면 [Bieberbach 정리](bieberbach-theorems.md)에 따라 $\Gamma$ 의 평행이동 부분이 유한 지표의 [격자](lattices.md)이고, 차원마다 콤팩트 평탄 공간형은 아핀 동형을 빼고 유한 개다[^2]. $2$ 차원에서는 원환면과 Klein 병 둘이고, $3$ 차원에서는 $10$ 개이며 그 가운데 $6$ 개가 방향가능이다.
 
 ## 쌍곡 공간형과 곡면
 
@@ -90,6 +90,6 @@ $n\ge 3$ 에서 닫힌 쌍곡 공간형은 기본군이 같으면 등거리다(M
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Bieberbach 정리](bieberbach-theorems.md)
 
 #differential_geometry #topology #group_theory

@@ -125,6 +125,7 @@ graph TD
   - [Jacobi 장](jacobi-fields.md): 측지선의 변분을 미분한 벡터장과 Jacobi 방정식, 켤레점과 지수사상의 특이점, 지표 형식과 Morse 지표 정리
     - [측지선의 비교정리](geodesic-comparison-theorems.md): 곡률의 상한과 하한으로 Jacobi 장을 상수곡률 모형과 견준다, Rauch 와 Cartan–Hadamard 와 Bonnet–Myers
   - [공간형](space-forms.md): 단면곡률이 상수인 완비 다양체, 세 모형 공간의 이산 등거리변환군에 의한 몫과 Bieberbach 정리
+    - [Bieberbach 정리](bieberbach-theorems.md): 결정군의 평행이동 격자와 유한 점군, 차원마다 유한 개인 결정군과 콤팩트 평탄 다양체의 분류
 - [Gauss–Bonnet 정리](gauss-bonnet.md): 곡률 적분이 Euler 지표를 준다
   - [Poincaré–Hopf 정리](poincare-hopf.md): 벡터장의 특이점 지수의 합도 Euler 지표다
 - [Ricci 흐름](ricci-flow.md): 계량을 Ricci 곡률로 변형하는 열방정식 꼴 흐름, 특이점과 수술
