@@ -2,7 +2,7 @@
 
 # 개요
 
-**암호 해시 함수(cryptographic hash function)** 는 임의 길이의 비트열을 고정 길이 $n$ 비트로 줄이는 다항시간 함수로서, 같은 값을 내는 서로 다른 두 입력을 찾기 어려운 것이다. [전자서명](digital-signatures.md)은 긴 메시지 대신 그 해시값에 서명하고, Merkle 나무(Merkle tree)와 [약속 방식](commitment-schemes.md)도 해시값으로 긴 데이터를 대신한다.
+**암호 해시 함수(cryptographic hash function)** 는 임의 길이의 비트열을 고정 길이 $n$ 비트로 줄이는 다항시간 함수로서, 같은 값을 내는 서로 다른 두 입력을 찾기 어려운 것이다. [전자서명](digital-signatures.md)은 긴 메시지 대신 그 해시값에 서명하고, [Merkle 나무](merkle-trees.md)와 [약속 방식](commitment-schemes.md)도 해시값으로 긴 데이터를 대신한다.
 
 입력이 출력보다 많으므로 [비둘기집 원리](pigeonhole-principle.md)로 같은 값을 내는 입력 쌍은 반드시 존재한다. 요구 조건은 그런 쌍이 없는 것이 아니라 찾는 데 오래 걸리는 것이다.
 
@@ -96,6 +96,7 @@ $g^xh^y=g^{x'}h^{y'}$ 이고 $(x,y)\ne(x',y')$ 이면 $\log\_gh=(x-x')(y'-y)^{-1
 
 ## 더 알아보기
 
+- [Merkle 나무](merkle-trees.md)
 - [Fiat–Shamir 변환](fiat-shamir.md)
 - [메시지 인증 코드](message-authentication-codes.md)
 

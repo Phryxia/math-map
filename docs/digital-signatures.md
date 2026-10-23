@@ -36,7 +36,7 @@
 
 **Rompel 정리(Rompel's theorem).** 일방향 함수가 존재하면 EUF-CMA 서명 방식이 존재한다[^3].
 
-증명의 요지. Lamport 서명은 일회용 서명이다. 긴 메시지는 충돌을 찾기 어려운 압축 함수로 줄인 뒤 서명하고, Rompel 은 그런 함수의 약한 형태인 범용 일방향 해시 함수(universal one-way hash function)를 일방향 함수로부터 구성했다. 일회용 서명을 여러 번 쓰는 것은 공개키들을 이진 나무로 묶어 뿌리 하나만 공개하는 Merkle 나무(Merkle tree)로 한다[^4]. 반대 방향은, 서명 방식이 있으면 $\mathrm{Gen}$ 의 난수에서 $\mathit{pk}$ 로 가는 함수가 일방향 함수라는 것이다.
+증명의 요지. Lamport 서명은 일회용 서명이다. 긴 메시지는 충돌을 찾기 어려운 압축 함수로 줄인 뒤 서명하고, Rompel 은 그런 함수의 약한 형태인 범용 일방향 해시 함수(universal one-way hash function)를 일방향 함수로부터 구성했다. 일회용 서명을 여러 번 쓰는 것은 공개키들을 이진 나무로 묶어 뿌리 하나만 공개하는 [Merkle 나무](merkle-trees.md)로 한다[^4]. 반대 방향은, 서명 방식이 있으면 $\mathrm{Gen}$ 의 난수에서 $\mathit{pk}$ 로 가는 함수가 일방향 함수라는 것이다.
 
 ## RSA 서명의 위조
 

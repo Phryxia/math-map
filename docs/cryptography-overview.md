@@ -60,6 +60,7 @@ graph TD
 - [유사난수 생성기](pseudorandom-generators.md) — 짧은 씨를 균등 난수열과 구별되지 않는 긴 비트열로 늘린다. 일방향 함수의 존재와 동치다
   - [약속 방식](commitment-schemes.md) — 값을 감춘 채 맡겼다가 바꿀 수 없게 연다. Pedersen 약속과 Naor 약속
 - [암호 해시 함수](cryptographic-hash-functions.md) — 같은 값을 내는 두 입력을 찾기 어려운 압축 함수. 생일 공격, Merkle–Damgård 구성
+  - [Merkle 나무](merkle-trees.md) — 블록 해시값을 이진 나무로 쌓아 뿌리 하나로 전체를 대표한다. 포함 증명과 Merkle 서명
   - [전자서명](digital-signatures.md) — 비밀키로만 만들고 공개키로 확인하는 값. Lamport 서명, 해시 후 RSA 서명, Schnorr 서명
 - [메시지 인증 코드](message-authentication-codes.md) — 공유한 비밀키로 붙이고 같은 키로 확인하는 꼬리표. CBC-MAC 의 길이 위조, HMAC, 일회용 MAC
 - [의미론적 안전성](semantic-security.md) — 암호문으로 평문에 대해 알아낼 것이 없다는 정의. IND-CPA 와의 동치, ElGamal 암호
