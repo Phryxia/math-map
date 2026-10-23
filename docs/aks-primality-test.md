@@ -88,7 +88,7 @@ $r$ 이 $\log n$ 의 다항식이므로 다항식 하나의 계수가 $r$ 개, �
 # 활용
 
 - 복잡도 이론: 소수 판정이 $\mathrm P$ 에 속한다는 것이 이 정리다. 그 전에는 [Riemann 가설](riemann-hypothesis.md)의 일반화를 가정한 Miller 판정과 기댓값 다항시간의 확률적 판정만 있었다.
-- 실무의 소수 생성: [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 키 생성은 Miller–Rabin 판정(Miller–Rabin test) 같은 확률적 판정을 쓴다. AKS 는 $\log^6n$ 의 인수 때문에 같은 크기에서 훨씬 느리다.
+- 실무의 소수 생성: [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 키 생성은 [Miller–Rabin 판정](miller-rabin-test.md) 같은 확률적 판정을 쓴다. AKS 는 $\log^6n$ 의 인수 때문에 같은 크기에서 훨씬 느리다.
 - 증명 기법: 다항식 항등식의 해를 유한체의 부분군 크기로 위아래에서 세는 논법은 [다항식환](polynomial-rings.md) 위의 항등식 판정에서 다시 쓰인다.
 
 [^1]: M. Agrawal, N. Kayal, N. Saxena, *PRIMES is in P*, Ann. of Math. **160** (2004), 781–793. 보조정리와 알고리즘과 정확성 증명이 여기 있다.

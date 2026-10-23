@@ -44,6 +44,7 @@ graph TD
   - [abc 추측](abc-conjecture.md): 서로소 $a+b=c$ 에서 $c$ 가 $\mathrm{rad}(abc)^{1+\varepsilon}$ 을 넘는 경우가 유한개라는 추측, 다항식의 Mason–Stothers 정리
 - [중국인의 나머지 정리](chinese-remainder-theorem.md): 서로소 법의 합동식 결합
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
+  - [Miller–Rabin 판정](miller-rabin-test.md): $1$ 의 제곱근이 $\pm 1$ 뿐인 것을 써서 합성수를 밑의 $3/4$ 이상으로 잡는 확률적 소수 판정, 일반화된 Riemann 가설 아래의 결정론적 판정
 - [유한체](finite-fields.md): 소수 위수의 체와 그 확대
 - [이차 상호법칙](quadratic-reciprocity.md): 제곱잉여의 대칭성
   - [제곱잉여의 Gauss 보조정리](gauss-lemma-quadratic-residues.md): 나머지 가운데 절반보다 큰 것의 개수로 정하는 Legendre 기호, 제2 보충 법칙과 Eisenstein 의 격자점 증명

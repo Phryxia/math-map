@@ -147,5 +147,6 @@ $$
 ## 더 알아보기
 
 - [RSA 암호](rsa-cryptosystem.md)
+- [Miller–Rabin 판정](miller-rabin-test.md)
 
 #number_theory #algebra #cryptography #theorem

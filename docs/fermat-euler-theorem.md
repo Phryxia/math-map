@@ -123,21 +123,7 @@ $m$ 이 $p$ 나 $q$ 의 배수인 경우도 각 소인수를 법으로 따로 �
 
 ## 확률적 소수판정
 
-Fermat 판정은 무작위 $a$ 에 대해 $a^{n-1}$ 을 계산하고 1 이 아니면 합성수로 판정한다. 이 판정은 Carmichael 수를 통과시키므로 Miller–Rabin 이 조건을 강화한다. $n-1$ 을 다음과 같이 분해하고
-
-$$
-n-1=2^{s}q\quad (q\ \text{홀수})
-$$
-
-$n$ 이 홀수 소수이면 $\mathbb Z/n$ 이 체라 1 의 제곱근이 $\pm1$ 뿐이라는 사실을 더 쓴다. 다음 중 하나가 성립해야 한다.
-
-$$
-a^{q}\equiv 1,\qquad\text{또는}\qquad \exists\thinspace 0\le i\lt s:\ a^{2^{i}q}\equiv -1 \pmod n
-$$
-
-합성수 $n$ 에 대해 이를 통과하는 밑(strong liar)은 최대 $1/4$ 이므로, 독립으로 $k$ 회 반복하면 오류 확률이 $4^{-k}$ 이하다[^3].
-
-밑을 처음 열두 개 소수 $2,3,\dots,37$ 로 고정하면 $2^{64}$ 미만의 모든 $n$ 에 대해 결정론적으로 정확하다.
+Fermat 판정은 무작위 $a$ 에 대해 $a^{n-1}$ 을 계산하고 $1$ 이 아니면 합성수로 판정한다. 이 판정은 Carmichael 수를 통과시킨다. $n-1=2^sq$ 로 쓰고 $a^q,a^{2q},\dots$ 에서 $1$ 의 제곱근이 $\pm 1$ 인지까지 보는 [Miller–Rabin 판정](miller-rabin-test.md)은 합성수의 밑 가운데 $3/4$ 이상을 증인으로 잡으므로, $k$ 번 되풀이하면 오류 확률이 $4^{-k}$ 이하다.
 
 ## 순환 소수와 이산로그
 
@@ -147,7 +133,6 @@ $$
 
 [^1]: Fermat's little theorem, Wikipedia (진술의 두 형태와 Euler 정리로의 일반화). https://en.wikipedia.org/wiki/Fermat%27s_little_theorem
 [^2]: D. R. Wilkins, Fermat's Little Theorem (Trinity College Dublin 강의노트 8장), Lagrange 정리로부터의 도출. https://www.maths.tcd.ie/pub/Maths/Courseware/NumberTheory/2016/ch08.pdf
-[^3]: Miller–Rabin primality test, Wikipedia (strong liar의 비율이 1/4 이하, Fermat 판정의 한계, 작은 밑 집합의 결정론적 범위). https://en.wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test
 [^4]: Carmichael number, Wikipedia (561이 최소, Korselt 판정법, Alford–Granville–Pomerance 1994의 무한성 증명). https://en.wikipedia.org/wiki/Carmichael_number
 
 # 연관 문서
@@ -163,5 +148,6 @@ $$
 - [RSA 암호](rsa-cryptosystem.md)
 - [이차 상호법칙](quadratic-reciprocity.md)
 - [AKS 소수 판정법](aks-primality-test.md)
+- [Miller–Rabin 판정](miller-rabin-test.md)
 
 #number_theory #cryptography #group_theory #theorem
