@@ -28,7 +28,7 @@ $$
 \sigma^\vee=\lbrace u\in M\_{\mathbb R}:\langle u,v\rangle\ge 0\thinspace\text{ 모든 } v\in\sigma \text{ 에 대해}\rbrace
 $$
 
-이고, $S\_\sigma=\sigma^\vee\cap M$ 은 덧셈에 닫힌 집합이다. Gordan 보조정리(Gordan's lemma)로 $S\_\sigma$ 는 유한 개의 원소로 생성된다[^1].
+이고, $S\_\sigma=\sigma^\vee\cap M$ 은 덧셈에 닫힌 집합이다. [Gordan 보조정리](gordan-lemma.md)로 $S\_\sigma$ 는 유한 개의 원소로 생성된다[^1].
 
 $k\lbrack S\_\sigma\rbrack$ 를 $u\in S\_\sigma$ 마다 기저 원소 $\chi^u$ 를 두고 곱을 $\chi^u\chi^{u'}=\chi^{u+u'}$ 로 정한 환이라 한다. 좌표환이 $k\lbrack S\_\sigma\rbrack$ 인 아핀 대수다양체 $U\_\sigma$ 를 **아핀 토릭 다양체** 라 한다. 생성원 $\chi^{u_1},\dots,\chi^{u_m}$ 이 $U\_\sigma$ 를 $k^m$ 안에 넣고, $u_i$ 사이의 덧셈 관계가 방정식이 된다.
 

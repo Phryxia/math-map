@@ -38,7 +38,7 @@ $$
 
 > **정리 (Giles–Pulleyblank).** 모든 유리 다면체 $P$ 는 $A$ 가 정수인 TDI 계 $Ax\le b$ 로 적을 수 있다. $P$ 가 정수 다면체이면 $b$ 도 정수로 고를 수 있다.[^2]
 
-증명의 요지. $P$ 의 면 $F$ 마다 $F$ 에서 등호인 부등식들의 법벡터가 생성하는 원뿔을 잡고, 그 원뿔의 정수점 가운데 Hilbert 기저를 이루는 유한 집합을 고른다. 법벡터 $a$ 마다 $a^{\mathsf T}x\le\max_P a^{\mathsf T}x$ 를 계에 더한다. 정수 $c$ 의 최댓값이 $F$ 에서 잡히면 $c$ 가 $F$ 의 원뿔에 들므로 Hilbert 기저의 정수 결합으로 쓰이고, 그 계수가 쌍대 정수해다. $\square$
+증명의 요지. $P$ 의 면 $F$ 마다 $F$ 에서 등호인 부등식들의 법벡터가 생성하는 원뿔을 잡고, 그 원뿔의 정수점 가운데 Hilbert 기저를 이루는 유한 집합을 고른다. 그런 집합은 [Gordan 보조정리](gordan-lemma.md)로 존재한다. 법벡터 $a$ 마다 $a^{\mathsf T}x\le\max_P a^{\mathsf T}x$ 를 계에 더한다. 정수 $c$ 의 최댓값이 $F$ 에서 잡히면 $c$ 가 $F$ 의 원뿔에 들므로 Hilbert 기저의 정수 결합으로 쓰이고, 그 계수가 쌍대 정수해다. $\square$
 
 같은 논법에서 $Ax\le b$ 가 TDI 인 것과, 모든 면에서 등호인 행들이 Hilbert 기저를 이루는 것이 동치다.
 
@@ -67,6 +67,7 @@ $A$ 를 고정하지 않으면 계가 TDI 인지 판정하는 문제는 co-NP �
 ## 선수지식
 
 - [완전 단일모듈 행렬](totally-unimodular-matrices.md)
+- [Gordan 보조정리](gordan-lemma.md)
 
 ## 더 알아보기
 

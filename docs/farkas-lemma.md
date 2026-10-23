@@ -73,5 +73,6 @@ $A$ 가 무한 개의 열을 갖거나 무한 차원 공간의 연속 선형사�
 ## 더 알아보기
 
 - [선형계획법](linear-programming.md)
+- [Gordan 보조정리](gordan-lemma.md)
 
 #optimization #linear_algebra #analysis
