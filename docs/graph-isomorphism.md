@@ -96,6 +96,6 @@ $\mathrm{Aut}(G)$ 를 알면 대칭적으로 동등한 경우를 한 번만 계�
 ## 더 알아보기
 
 - [Color refinement](color-refinement.md)
-- [영지식 증명](zero-knowledge-proofs.md)
+- [대화형 증명](interactive-proofs.md)
 
 #graph_theory #computation #complexity #group_theory

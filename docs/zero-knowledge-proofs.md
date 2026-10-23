@@ -2,7 +2,7 @@
 
 # 개요
 
-**영지식 증명(zero-knowledge proof)** 은 어떤 진술이 참이라는 것을 상대에게 확신시키되, 참이라는 사실 말고는 아무 정보도 넘기지 않는 대화형 증명이다. Goldwasser, Micali, Rackoff 가 1985 년에 정의했다[^1].
+**영지식 증명(zero-knowledge proof)** 은 어떤 진술이 참이라는 것을 상대에게 확신시키되, 참이라는 사실 말고는 아무 정보도 넘기지 않는 [대화형 증명](interactive-proofs.md)이다. Goldwasser, Micali, Rackoff 가 1985 년에 정의했다[^1].
 
 [그래프 동형](graph-isomorphism.md)의 증명은 보통 대응 하나를 내보이는 것이다. 영지식 증명은 대응을 내보이지 않고도 두 그래프가 동형임을 확신시킨다. [이산로그](discrete-logarithm.md)에서는 지수 $x$ 를 내보이지 않고 $x$ 를 안다는 것을 확신시킨다.
 
@@ -20,12 +20,7 @@ $\pi$ 를 보이지 않으려면 검증자가 받는 것이 $\pi$ 와 무관해�
 
 ## 대화형 증명
 
-언어 $L$ 의 **대화형 증명(interactive proof)** 은 증명자(prover) $P$ 와 다항시간 확률적 검증자(verifier) $V$ 의 쌍 $(P,V)$ 이다. 두 기계는 입력 $x$ 를 공유하고 메시지를 번갈아 보내며, 마지막에 $V$ 가 받아들이거나 거절한다. 다음 두 조건을 만족해야 한다.
-
-- **완전성(completeness).** $x\in L$ 이면 $V$ 가 $P$ 와의 대화 끝에 받아들일 확률이 $2/3$ 이상이다.
-- **건전성(soundness).** $x\notin L$ 이면 어떤 증명자 $P^\ast$ 에 대해서도 $V$ 가 받아들일 확률이 $1/3$ 이하다.
-
-$2/3$ 과 $1/3$ 은 되풀이로 $1-2^{-k}$ 과 $2^{-k}$ 로 바꿀 수 있다. 증명자가 증거를 한 번 보내고 $V$ 가 결정적으로 검사하는 경우가 [NP-완전성](np-completeness.md)의 $\mathrm{NP}$ 다.
+대화형 증명 $(P,V)$ 는 증명자(prover) $P$ 와 확률적 다항시간 검증자(verifier) $V$ 가 입력 $x$ 를 공유하고 메시지를 주고받는 체계다. $x\in L$ 이면 $V$ 가 높은 확률로 받아들이는 완전성(completeness)과, $x\notin L$ 이면 어떤 증명자 $P^\ast$ 에 대해서도 $V$ 가 낮은 확률로만 받아들이는 건전성(soundness)을 만족한다.
 
 ## 시뮬레이터와 영지식
 
@@ -74,7 +69,7 @@ $$
 
 **Goldreich–Micali–Wigderson 정리(Goldreich–Micali–Wigderson theorem).** [일방향 함수](one-way-functions.md)가 존재하면 $\mathrm{NP}$ 의 모든 언어에 계산적 영지식 증명이 존재한다[^2].
 
-증명의 요지. [그래프 색칠](graph-coloring.md)의 3-색칠 문제가 NP-완전이므로 그 언어 하나에 대해 보이면 다항시간 환원으로 나머지가 따라온다. 증명자는 색칠의 세 색을 무작위로 바꾼 뒤 정점마다 색을 약속(commitment)하여 보낸다. 검증자가 간선 하나를 고르면 증명자는 그 양 끝의 약속만 열고, 검증자는 두 색이 다른지 본다. 약속은 열기 전에 내용을 감추고 연 뒤에 바꿀 수 없는 값이고, 일방향 함수에서 구성된다. 한 번에 속을 확률은 많아야 $1-1/\lvert E\rvert$ 이므로 $\lvert E\rvert k$ 번 되풀이한다.
+증명의 요지. [그래프 색칠](graph-coloring.md)의 3-색칠 문제가 [NP-완전](np-completeness.md)이므로 그 언어 하나에 대해 보이면 다항시간 환원으로 나머지가 따라온다. 증명자는 색칠의 세 색을 무작위로 바꾼 뒤 정점마다 색을 약속(commitment)하여 보낸다. 검증자가 간선 하나를 고르면 증명자는 그 양 끝의 약속만 열고, 검증자는 두 색이 다른지 본다. 약속은 열기 전에 내용을 감추고 연 뒤에 바꿀 수 없는 값이고, 일방향 함수에서 구성된다. 한 번에 속을 확률은 많아야 $1-1/\lvert E\rvert$ 이므로 $\lvert E\rvert k$ 번 되풀이한다.
 
 ## Fiat–Shamir 변환
 
@@ -96,9 +91,8 @@ $$
 
 ## 선수지식
 
-- [그래프 동형](graph-isomorphism.md)
+- [대화형 증명](interactive-proofs.md)
 - [이산로그](discrete-logarithm.md)
-- [NP-완전성과 Cook–Levin 정리](np-completeness.md)
 
 ## 더 알아보기
 

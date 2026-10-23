@@ -168,6 +168,6 @@ $G$ 의 정점 집합 $S$ 가 클릭인 것과, 여그래프 $G'$ (같은 정점
 ## 더 알아보기
 
 - [근사 알고리즘](approximation-algorithms.md)
-- [영지식 증명](zero-knowledge-proofs.md)
+- [대화형 증명](interactive-proofs.md)
 
 #complexity #computation
