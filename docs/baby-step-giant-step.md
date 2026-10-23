@@ -66,11 +66,11 @@ $m$ 대신 표의 크기를 $s$ 로 두면 거인 걸음의 보폭이 $s$ 이고
 # 활용
 
 - 군 위수의 계산. 원소 $P$ 의 위수가 구간 $\lbrack L,L+W\rbrack$ 에 있다고 알면 $kP=0$ 인 $k$ 를 이 알고리즘으로 $O(\sqrt W)$ 번의 연산에 찾는다. [타원곡선](elliptic-curves.md)의 점 개수가 Hasse 구간 $\lvert\char35{}E(\mathbb F_q)-q-1\rvert\le 2\sqrt q$ 에 있으므로, Shanks–Mestre 방법이 이것으로 점의 개수를 $O(q^{1/4})$ 번의 연산에 센다.
-- Pohlig–Hellman 방법의 부분 문제. 위수의 소인수 $q_j$ 마다 생기는 이산로그 문제를 이 알고리즘으로 $O(\sqrt{q_j})$ 에 푼다.
+- [Pohlig–Hellman 방법](pohlig-hellman.md)의 부분 문제. 위수의 소인수 $q_j$ 마다 생기는 이산로그 문제를 이 알고리즘으로 $O(\sqrt{q_j})$ 에 푼다.
 - 류군의 구조. Shanks 의 원래 목적은 이차체의 류군에서 원소의 위수와 류수를 구하는 것이었다[^1].
 
 [^1]: D. Shanks, "Class number, a theory of factorization, and genera", Proceedings of Symposia in Pure Mathematics 20, American Mathematical Society, 1971, 415–440.
-[^2]: H. Cohen, *A Course in Computational Algebraic Number Theory*, GTM 138, Springer, 1993, §5.4.
+[^2]: A. J. Menezes, P. C. van Oorschot, S. A. Vanstone, *Handbook of Applied Cryptography*, CRC Press, 1996, §3.6.2.
 [^3]: V. Shoup, "Lower bounds for discrete logarithms and related problems", EUROCRYPT 1997, LNCS 1233, 256–266.
 
 # 연관 문서
@@ -81,6 +81,6 @@ $m$ 대신 표의 크기를 $s$ 로 두면 거인 걸음의 보폭이 $s$ 이고
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Pohlig–Hellman 방법](pohlig-hellman.md)
 
 #number_theory #algorithms #cryptography #group_theory

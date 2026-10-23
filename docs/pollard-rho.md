@@ -82,7 +82,7 @@ R. P. Brent 는 Floyd 고리 찾기 대신 $x_{2^k}$ 를 저장해 두고 다음
 # 활용
 
 - [타원곡선](elliptic-curves.md) 암호의 안전성. 타원곡선 이산로그 문제에 알려진 가장 좋은 일반적인 공격이 병렬화한 Pollard rho 알고리즘이고, 위수 $q$ 인 곡선의 안전성 수준을 $\sqrt q$ 로 셈한다.
-- Pohlig–Hellman 방법. 군의 위수가 $\prod q_j^{e_j}$ 이면 이산로그를 각 $q_j$ 위수 부분군의 문제로 나누고, 그 각각을 Pollard rho 알고리즘으로 푼다. 비용은 가장 큰 $q_j$ 의 제곱근으로 정해진다.
+- [Pohlig–Hellman 방법](pohlig-hellman.md). 군의 위수가 $\prod q_j^{e_j}$ 이면 이산로그를 각 $q_j$ 위수 부분군의 문제로 나누고, 그 각각을 Pollard rho 알고리즘으로 푼다. 비용은 가장 큰 $q_j$ 의 제곱근으로 정해진다.
 - 작은 인수 찾기. 큰 수의 인수분해에서 나눗셈으로 걸러지지 않는 십여 자리의 소인수를 이 알고리즘으로 먼저 떼어 낸다.
 
 [^1]: J. M. Pollard, "A Monte Carlo method for factorization", BIT Numerical Mathematics 15 (3) (1975), 331–334.

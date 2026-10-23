@@ -148,5 +148,6 @@ $$
 
 - [RSA 암호](rsa-cryptosystem.md)
 - [Miller–Rabin 판정](miller-rabin-test.md)
+- [Pohlig–Hellman 방법](pohlig-hellman.md)
 
 #number_theory #algebra #cryptography #theorem
