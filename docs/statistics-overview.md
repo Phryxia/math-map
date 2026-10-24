@@ -52,6 +52,7 @@ graph TD
 - [순차확률비 검정](sequential-probability-ratio-test.md): 누적 우도비와 두 문턱, Wald 의 오류율 경계와 기대 표본 수
 - [군축차 설계](group-sequential-design.md): 중간분석 시점마다의 경계, 알파 소비 함수로 1 종 오류율을 통제하는 설계
 - [신뢰열](confidence-sequences.md): 모든 표본 크기에서 동시에 모수를 포함하는 구간의 열. Ville 부등식과 혼합법, 반복로그 법칙이 주는 폭의 하한
+  - [e-값](e-values.md): 귀무가설 아래 기댓값이 1 이하인 음이 아닌 통계량. 곱과 평균으로 합치고, p-값과 보정 함수로 바꾸며, 보편 추론과 e-BH 다중검정에 쓴다
 
 ## 경험 분포와 재표본
 
