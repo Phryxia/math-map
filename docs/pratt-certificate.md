@@ -79,7 +79,7 @@ $$
 
 ## 증명서 작성과 인수분해
 
-증명서를 만들려면 $p-1$ 을 완전히 인수분해해야 한다. 증명서가 존재한다는 것은 NP 에 속한다는 데에 충분하지만, 큰 $p$ 에서 증명서를 실제로 만드는 데는 인수분해가 걸림돌이다. $p-1$ 의 인수 가운데 $\sqrt p$ 보다 큰 부분만 인수분해해도 되는 Pocklington 판정(Pocklington's criterion)이 이 요구를 줄이고, [타원곡선 소수 증명](elliptic-curve-primality-proving.md)은 $p-1$ 대신 곡선의 점 개수를 써서 인수분해를 피한다.
+증명서를 만들려면 $p-1$ 을 완전히 인수분해해야 한다. 증명서가 존재한다는 것은 NP 에 속한다는 데에 충분하지만, 큰 $p$ 에서 증명서를 실제로 만드는 데는 인수분해가 걸림돌이다. $p-1$ 의 인수 가운데 $\sqrt p$ 보다 큰 부분만 인수분해해도 되는 [Pocklington 판정](pocklington-criterion.md)(Pocklington's criterion)이 이 요구를 줄이고, [타원곡선 소수 증명](elliptic-curve-primality-proving.md)은 $p-1$ 대신 곡선의 점 개수를 써서 인수분해를 피한다.
 
 # 활용
 
@@ -98,6 +98,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Pocklington 판정](pocklington-criterion.md)
 
 #complexity #number_theory #algorithms
