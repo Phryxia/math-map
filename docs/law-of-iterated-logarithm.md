@@ -63,7 +63,7 @@ $\mathbb E X_1^2=\infty$ 이면 $\limsup_n\vert S_n\vert/\sqrt{n\log\log n}=\inf
 
 - **수렴 속도의 한계.** 강한 큰 수의 법칙의 오차 $S_n/n$ 은 $\sqrt{2\sigma^2\log\log n/n}$ 규모로 무한히 자주 나타나므로, 거의 확실한 수렴의 속도를 이보다 빠르게 줄 수 없다. Monte Carlo 방법(Monte Carlo method)의 표본평균 오차가 이 규모다.
 - **Brown 운동의 국소 진동.** 원점 근처 판본은 Brown 운동 경로가 각 고정점에서 $\sqrt{2t\log\log(1/t)}$ 의 폭으로 진동한다는 것을 준다. 모든 점에서 동시에 성립하는 [Lévy 연속률](levy-modulus.md)은 $\sqrt{2t\log(1/t)}$ 로 더 크다.
-- **반복 검정의 경계.** 귀무가설 아래의 부분합이 $c\sqrt n$ 을 무한히 자주 넘으므로, 자료가 들어올 때마다 고정된 $c\sqrt n$ 경계로 검정하면 귀무가설이 참이어도 결국 기각한다. 모든 $n$ 에서 동시에 성립하는 신뢰열(confidence sequence)의 폭은 그래서 $\sqrt{n\log\log n}$ 규모 이상이다.[^4]
+- **반복 검정의 경계.** 귀무가설 아래의 부분합이 $c\sqrt n$ 을 무한히 자주 넘으므로, 자료가 들어올 때마다 고정된 $c\sqrt n$ 경계로 검정하면 귀무가설이 참이어도 결국 기각한다. 모든 $n$ 에서 동시에 성립하는 [신뢰열](confidence-sequences.md)의 폭은 그래서 $\sqrt{n\log\log n}$ 규모 이상이다.[^4]
 
 [^1]: A. Khintchine, "Über einen Satz der Wahrscheinlichkeitsrechnung", *Fundamenta Mathematicae* **6** (1924), 9–20. P. Hartman, A. Wintner, "On the law of the iterated logarithm", *American Journal of Mathematics* **63** (1941), 169–176.
 [^2]: Richard Durrett, *Probability: Theory and Examples*, 5판, Cambridge University Press, 2019, 8 장.
@@ -79,6 +79,6 @@ $\mathbb E X_1^2=\infty$ 이면 $\limsup_n\vert S_n\vert/\sqrt{n\log\log n}=\inf
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [신뢰열](confidence-sequences.md)
 
 #probability #measure_theory #statistics #theorem

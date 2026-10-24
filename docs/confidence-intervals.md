@@ -173,6 +173,6 @@ $k$ 개의 모수 각각에 95% 구간을 만들면, 모두가 동시에 참값�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [신뢰열](confidence-sequences.md)
 
 #statistics #probability

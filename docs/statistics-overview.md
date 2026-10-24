@@ -44,13 +44,14 @@ graph TD
 
 ## 검정과 구간
 
-먼저 읽을 갈래: 추정. 먼저 읽을 것: [중심극한정리](central-limit-theorem.md)(확률 개관). 시작 문서: [가설검정](hypothesis-testing.md).
+먼저 읽을 갈래: 추정. 먼저 읽을 것: [중심극한정리](central-limit-theorem.md), [반복로그 법칙](law-of-iterated-logarithm.md)(확률 개관). 시작 문서: [가설검정](hypothesis-testing.md).
 
 - [가설검정](hypothesis-testing.md): 귀무가설과 검정통계량, 제1종·제2종 오류, Neyman–Pearson 보조정리
   - [가능도비 검정](likelihood-ratio-test.md): 두 모수 집합 위의 최대 가능도의 비로 세우는 검정, Wilks 정리의 카이제곱 극한
 - [신뢰구간](confidence-intervals.md): 피벗량으로 세우는 구간, 피복확률과 검정과의 쌍대성
 - [순차확률비 검정](sequential-probability-ratio-test.md): 누적 우도비와 두 문턱, Wald 의 오류율 경계와 기대 표본 수
 - [군축차 설계](group-sequential-design.md): 중간분석 시점마다의 경계, 알파 소비 함수로 1 종 오류율을 통제하는 설계
+- [신뢰열](confidence-sequences.md): 모든 표본 크기에서 동시에 모수를 포함하는 구간의 열. Ville 부등식과 혼합법, 반복로그 법칙이 주는 폭의 하한
 
 ## 경험 분포와 재표본
 
