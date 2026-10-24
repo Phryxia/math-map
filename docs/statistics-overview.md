@@ -41,6 +41,7 @@ graph TD
 - [Fisher 정보](fisher-information.md): 점수함수의 [공분산](covariance.md), 정보 등식과 Cramér–Rao 하한의 유도
   - [정보기하](information-geometry.md): 분포족을 다양체로 보는 Fisher–Rao 계량, 쌍대 접속과 자연 경사법
 - [Bayes 추론](bayesian-inference.md): 사전분포에서 사후분포로 가는 갱신, 사후예측분포와 최대사후추정
+  - [Laplace 계승 규칙](rule-of-succession.md): 균등 사전분포 아래 다음 시행의 성공 확률 (s+1)/(n+2). 가산 평활, Krichevsky–Trofimov 추정량, 부호 길이의 후회
 
 ## 검정과 구간
 

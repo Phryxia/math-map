@@ -186,6 +186,7 @@ $$
 ## 더 알아보기
 
 - [de Finetti 정리](de-finetti-theorem.md)
+- [Laplace 계승 규칙](rule-of-succession.md)
 - [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)
 - [확률 그래프 모형](graphical-models.md)
 
