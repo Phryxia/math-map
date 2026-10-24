@@ -84,6 +84,7 @@ M. Jerrum, A. Sinclair, E. Vigoda 는 성분이 음이 아닌 행렬의 영구�
 
 - [행렬식](determinants.md)
 - [매칭](matchings.md)
+- [셈 복잡도](counting-complexity.md)
 
 ## 더 알아보기
 

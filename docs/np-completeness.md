@@ -167,11 +167,17 @@ $G$ 의 정점 집합 $S$ 가 클릭인 것과, 여그래프 $G'$ (같은 정점
 
 ## 더 알아보기
 
-- [근사 알고리즘](approximation-algorithms.md)
-- [공간 복잡도](space-complexity.md)
-- [대화형 증명](interactive-proofs.md)
-- [Valiant–Vazirani 정리](valiant-vazirani.md)
-- [Ladner 정리](ladner-theorem.md)
+### 복잡도 부류
+
 - [다항 계층](polynomial-hierarchy.md)
+- [공간 복잡도](space-complexity.md)
+- [셈 복잡도](counting-complexity.md)
+- [대화형 증명](interactive-proofs.md)
+
+### 구조와 근사
+
+- [Ladner 정리](ladner-theorem.md)
+- [Valiant–Vazirani 정리](valiant-vazirani.md)
+- [근사 알고리즘](approximation-algorithms.md)
 
 #complexity #computation

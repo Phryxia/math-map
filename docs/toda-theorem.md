@@ -55,6 +55,7 @@
 
 - [다항 계층](polynomial-hierarchy.md)
 - [Valiant–Vazirani 정리](valiant-vazirani.md)
+- [셈 복잡도](counting-complexity.md)
 
 ## 더 알아보기
 
