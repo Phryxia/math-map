@@ -67,7 +67,7 @@ $$
 - [영지식 증명](zero-knowledge-proofs.md)은 대화형 증명에 검증자가 진술의 참 말고는 아무것도 배우지 않는다는 조건을 더한 것이다.
 - [그래프 동형](graph-isomorphism.md)의 복잡도. 그래프 비동형이 $\mathrm{AM}$ 에 속하므로, 그래프 동형이 NP-완전이면 다항 계층이 두 번째 단계로 붕괴한다.
 - 여러 증명자. 서로 통신하지 못하는 두 증명자를 허락한 류 $\mathrm{MIP}$ 는 비결정적 지수 시간 $\mathrm{NEXP}$ 와 같다[^6]. 이 결과의 규모를 줄인 것이 [PCP 정리](pcp-theorem.md)의 출발점이다.
-- 계산 위임. 약한 검증자가 강한 서버에 계산을 맡기고 결과가 맞는지 확인할 때, 회로를 층마다 합 검사 프로토콜로 검사하는 Goldwasser–Kalai–Rothblum 프로토콜을 쓴다[^7].
+- 계산 위임. 약한 검증자가 강한 서버에 계산을 맡기고 결과가 맞는지 확인할 때, 회로를 층마다 합 검사 프로토콜로 검사하는 [Goldwasser–Kalai–Rothblum 프로토콜](gkr-protocol.md)을 쓴다[^7].
 
 [^1]: S. Goldwasser, S. Micali, C. Rackoff, "The knowledge complexity of interactive proof systems", SIAM Journal on Computing 18 (1989), 186–208. 학회판은 STOC 1985.
 [^2]: L. Babai, "Trading group theory for randomness", STOC 1985, 421–429.
@@ -87,5 +87,6 @@ $$
 ## 더 알아보기
 
 - [영지식 증명](zero-knowledge-proofs.md)
+- [Goldwasser–Kalai–Rothblum 프로토콜](gkr-protocol.md)
 
 #complexity #computation #algorithms
