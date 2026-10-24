@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-24T01:04:26.097Z",
-  "nextSeq": 2419,
+  "savedAt": "2026-10-24T05:02:59.305Z",
+  "nextSeq": 2429,
   "items": [
     {
       "id": "9bab7237",
@@ -3276,46 +3276,6 @@
       "seq": 2366
     },
     {
-      "id": "bbab9da2",
-      "title": "Bogomolny–Schmit 추측",
-      "priority": 10,
-      "note": "differential_geometry. 혼돈 영역 고유함수의 마디 영역 개수가 임계 침투 모형으로 정해진다는 추측. courant-nodal-domain-theorem 활용 절이 이름만 쓴다. 부모 후보 courant-nodal-domain-theorem, quantum-chaos",
-      "createdAt": "2026-10-22T21:02:13.767Z",
-      "seq": 2375
-    },
-    {
-      "id": "128dacc2",
-      "title": "합 검사 프로토콜과 GKR 프로토콜",
-      "priority": 10,
-      "note": "complexity. 부모 후보 interactive-proofs. 계산 위임, 다중선형 확장",
-      "createdAt": "2026-10-23T05:02:40.606Z",
-      "seq": 2384
-    },
-    {
-      "id": "0b1edada",
-      "title": "Linnik 정리",
-      "priority": 10,
-      "note": "#number_theory. siegel-zeros 활용 절이 등차수열의 가장 작은 소수 p ≤ Cq^L 을 링크 없이 부른다. 부모 후보 siegel-zeros. Deuring–Heilbronn 현상과 로그 영점 밀도 추정, L 의 개선 기록(출처 필요).",
-      "createdAt": "2026-10-23T17:08:32.126Z",
-      "seq": 2397
-    },
-    {
-      "id": "b814a4ac",
-      "title": "지표 계산법",
-      "priority": 10,
-      "note": "#number_theory #cryptography. discrete-logarithm 표와 '유한체에서의 준지수 시간' 절이 index calculus 를 이름만 쓴다. 부모 후보 discrete-logarithm, pohlig-hellman 과 이웃. 인수 기저, 매끄러운 수의 확률(L(1/2) 복잡도), 선형대수 단계.",
-      "createdAt": "2026-10-23T17:08:32.276Z",
-      "seq": 2398
-    },
-    {
-      "id": "40a219e3",
-      "title": "Clenshaw-Curtis 구적의 후속 간선과 희소격자 구적",
-      "priority": 10,
-      "note": "2026-10-23 회차에 clenshaw-curtis-quadrature 를 새로 썼다(부모 newton-cotes 와 chebyshev-polynomials, 해석학 개관 '미분과 적분' 갈래 Newton-Cotes 다음 곁가지). chebyshev-polynomials 의 리프가 풀렸다. dbcd0e19(Gauss 구적의 후속) 의 후보 (1) 을 닫았고 (2) Newton-Cotes 는 이미 문서가 있었다. 남은 후보: (a) Smolyak 희소격자 구적. 활용 셋째가 이름만 쓴다. 부모는 clenshaw-curtis-quadrature, 태그 #analysis #algorithms #probability. (b) Fejer 규칙. 정의 절이 이름만 쓴다. 별도 문서보다 이 문서의 절이 맞는지 8절 분량 판정 먼저. (c) 이산 코사인 변환. 계산 절이 이름만 쓴다. fourier 나 fft 의 자식 자리.",
-      "createdAt": "2026-10-23T20:40:25.319Z",
-      "seq": 2399
-    },
-    {
       "id": "da713988",
       "title": "경로 결합의 후속 간선",
       "priority": 10,
@@ -3324,28 +3284,84 @@
       "seq": 2400
     },
     {
-      "id": "d9bc1e0d",
-      "title": "KS 검정의 후속: Cramer-von Mises 와 Anderson-Darling 통계량",
-      "priority": 10,
-      "note": "2026-10-23 회차에 kolmogorov-smirnov-test, brownian-bridge, law-of-iterated-logarithm 을 새로 썼다. 반복로그 법칙은 brownian-motion 의 '반복로그 법칙' 언급에 본문 링크를 걸었다. 남은 후보: (a) Anderson-Darling 검정. KS 검정 '가정의 위반' 절이 이름만 쓴다. 부모 kolmogorov-smirnov-test 와 brownian-bridge. (b) Cramer-von Mises 통계량. brownian-bridge 활용 둘째가 이름만 쓴다. 둘 다 가중 이차 경험분포함수 통계량이고 극한분포가 Brown 다리의 Karhunen-Loeve 전개에서 나오므로 한 문서(이차 EDF 통계량)로 묶을지 8절과 제목 규칙('A와 B' 금지) 판정 먼저. (c) 단위근 검정은 statistics 갈래에 자리가 없다(38차 판정 유지). (d) law-of-iterated-logarithm 의 후속: Skorokhod 매장(부분합 절이 이름만 씀, 부모 brownian-motion), Lévy 연속률(활용 둘째가 이름만 씀), 신뢰열(활용 셋째, 부모 hypothesis-testing 과 이 문서).",
-      "createdAt": "2026-10-23T20:50:48.755Z",
-      "seq": 2403
-    },
-    {
-      "id": "5e384ccb",
-      "title": "potential-theory 와 로그 용량의 후속",
-      "priority": 10,
-      "note": "2026-10-23 회차에 logarithmic-capacity(로그 용량)를 새로 썼다(부모 potential-theory 와 chebyshev-polynomials, 해석학 개관 퍼텐셜 이론 아래 최대값 원리 다음 곁가지). potential-theory 의 리프가 풀렸고 활용 셋째의 '로그 용량' 에 본문 링크를 걸었다. a1326f78 의 후보 (1) 균형 측도와 Chebyshev 상수를 닫았다. 남은 후보: (a) 세분함수 분리 여부(8절 분량 판정). (b) Kakutani 대응의 확률 쪽 확장(열방정식과 Dirichlet 형식, dirichlet-forms 문서 유무 먼저). (c) Bernstein-Walsh 근사 정리. logarithmic-capacity 활용 둘째가 이름만 쓴다. (d) Fekete-Szegő 의 대수적 정수 정리와 Schur-Siegel-Smyth 문제. 정수론 쪽, 부모 logarithmic-capacity. (e) 무작위 행렬 고윳값의 평형 측도(로그 가스)는 wigner-semicircle 과 이 문서를 잇는 후보.",
-      "createdAt": "2026-10-23T20:54:21.297Z",
-      "seq": 2404
-    },
-    {
       "id": "60026eea",
       "title": "선형계획 쪽 신규 문서들의 후속",
       "priority": 10,
       "note": "2026-10-23 회차에 total-dual-integrality, matching-polytope, ellipsoid-method, simplex-method, farkas-lemma, gordan-lemma 를 새로 썼다. 사슬은 convexity -> farkas-lemma -> {linear-programming, gordan-lemma}, gordan-lemma -> total-dual-integrality -> matching-polytope. toric-varieties 의 'Gordan 보조정리' 에 본문 링크를 걸었다. 남은 후보: (a) Seymour 분해와 정규 매트로이드(부모 matroids, totally-unimodular-matrices). (b) 완전균형 행렬. (c) 부분모듈 흐름과 Lucchesi-Younger 정리. (d) 확장 복잡도(Yannakakis 정리). (e) 부분모듈 함수 최소화. (f) 쌍대 단체법과 네트워크 단체법. (g) 자산 가격 결정의 기본 정리(farkas-lemma 활용 셋째). (h) Graver 기저(gordan-lemma 활용 넷째).",
       "createdAt": "2026-10-23T21:07:52.592Z",
       "seq": 2410
+    },
+    {
+      "id": "bb15e754",
+      "title": "Linnik 정리의 후속 간선",
+      "priority": 10,
+      "note": "#number_theory. linnik-theorem 은 리프다. 후보: 로그 없는 영점 밀도 추정을 별도 문서로(정의 절에 있다), Chebotarev 최소 소 아이디얼(Lagarias-Montgomery-Odlyzko, chebotarev 와 공동 부모), Chowla 추측. Xylouris 의 L 상한 5.2/5.18/5 는 출처 확인 뒤 표에 더할 것.",
+      "createdAt": "2026-10-24T04:39:30.007Z",
+      "seq": 2419
+    },
+    {
+      "id": "8ba576be",
+      "title": "지표 계산법의 후속 간선",
+      "priority": 10,
+      "note": "#number_theory #cryptography. index-calculus 는 리프다. 후보: 수체 체(number field sieve, 이산로그와 소인수분해 공통), 매끄러운 수와 Dickman 함수(Canfield-Erdos-Pomerance), 희소 선형대수(Lanczos, Wiedemann). 부모 index-calculus, rsa-cryptosystem.",
+      "createdAt": "2026-10-24T04:43:45.948Z",
+      "seq": 2420
+    },
+    {
+      "id": "5043da17",
+      "title": "Bogomolny–Schmit 추측의 후속 간선",
+      "priority": 10,
+      "note": "#differential_geometry #probability. bogomolny-schmit-conjecture 는 리프다. 후보: Berry 무작위 파동 추측(정의 절에 있다, 별도 문서 후보), Nazarov-Sodin 정리(성질 절), 임계 침투의 클러스터 밀도와 SLE. 부모 후보 quantum-chaos, percolation, gaussian-processes.",
+      "createdAt": "2026-10-24T04:46:32.041Z",
+      "seq": 2421
+    },
+    {
+      "id": "22d84e9f",
+      "title": "GKR 프로토콜의 후속 간선",
+      "priority": 10,
+      "note": "#complexity. gkr-protocol 은 리프다. 후보: 다중선형 확장을 별도 문서로(정의 절에 있다), 다항식 약속(polynomial commitment), 간결한 비대화형 논증(SNARK). 부모 후보 gkr-protocol, fiat-shamir, commitment-schemes.",
+      "createdAt": "2026-10-24T04:49:08.062Z",
+      "seq": 2422
+    },
+    {
+      "id": "7b96b8a1",
+      "title": "law-of-iterated-logarithm 의 후속: Skorokhod 매장, Lévy 연속률, 신뢰열",
+      "priority": 10,
+      "note": "d9bc1e0d 의 (d) 를 옮겼다. (a)(b) 는 quadratic-edf-statistics 로 닫았다. Skorokhod 매장(부분합 절이 이름만 씀, 부모 brownian-motion), Lévy 연속률(활용 둘째가 이름만 씀), 신뢰열(활용 셋째, 부모 hypothesis-testing 과 law-of-iterated-logarithm). 단위근 검정은 statistics 갈래에 자리가 없다(38차 판정 유지).",
+      "createdAt": "2026-10-24T04:51:21.682Z",
+      "seq": 2423
+    },
+    {
+      "id": "58eae815",
+      "title": "Clenshaw-Curtis 구적의 남은 후속: Fejér 규칙, 이산 코사인 변환",
+      "priority": 10,
+      "note": "40a219e3 의 (b)(c) 를 옮겼다. (a) Smolyak 희소격자 구적은 smolyak-quadrature 로 닫았다. (b) Fejér 규칙. 정의 절이 이름만 쓴다. 별도 문서보다 clenshaw-curtis-quadrature 의 절이 맞는지 8절 분량 판정 먼저. (c) 이산 코사인 변환. 계산 절이 이름만 쓴다. fourier 나 fft 의 자식 자리. smolyak-quadrature 의 후속 후보: 희소격자 보간(활용 셋째), 준 Monte Carlo(quasi-Monte Carlo).",
+      "createdAt": "2026-10-24T04:53:58.055Z",
+      "seq": 2424
+    },
+    {
+      "id": "e4617b9f",
+      "title": "potential-theory 와 로그 용량의 남은 후속",
+      "priority": 10,
+      "note": "5e384ccb 의 (a)(b)(d)(e) 를 옮겼다. (c) Bernstein-Walsh 근사 정리는 bernstein-walsh-theorem 으로 닫았다. (a) 세분함수 분리 여부(8절 분량 판정). (b) Kakutani 대응의 확률 쪽 확장(열방정식과 Dirichlet 형식, dirichlet-forms 문서 유무 먼저). (d) Fekete-Szegő 의 대수적 정수 정리와 Schur-Siegel-Smyth 문제, 부모 logarithmic-capacity. (e) 무작위 행렬 고윳값의 평형 측도(로그 가스), wigner-semicircle 과 logarithmic-capacity 를 잇는 후보. bernstein-walsh-theorem 의 후속 후보: Faber 다항식, Runge 현상.",
+      "createdAt": "2026-10-24T04:56:15.222Z",
+      "seq": 2425
+    },
+    {
+      "id": "99ea5212",
+      "title": "다항식의 불변 원리의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #probability. invariance-principle-polynomials 는 리프다. 후보: Borell 등주정리를 별도 문서로(성질 절에 있다, 부모 후보 isoperimetric-inequality 와 이 문서), Carbery-Wright 부등식, 다항식 문턱함수의 잡음 민감도. unique-games 의 Majority is Stablest 절에서 이 문서로 본문 링크를 걸지 판정.",
+      "createdAt": "2026-10-24T04:59:18.427Z",
+      "seq": 2426
+    },
+    {
+      "id": "045fb1b3",
+      "title": "Ledoit–Wolf 축소 추정의 후속과 Marchenko–Pastur 간선",
+      "priority": 10,
+      "note": "#statistics. ledoit-wolf-shrinkage 는 리프이고 부모는 james-stein-estimator 하나다. marchenko-pastur 를 부모로 두면 principal-component-analysis 가 조상이 되어 statistics-overview 갈래 순서 검사가 걸려 간선을 빼고 본문 링크만 남겼다(2026-10-24). 갈래 재배치로 풀 수 있으면 간선을 다시 건다. 후속 후보: 비선형 축소(성질 절, El Karoui 역산), 표본공분산 역행렬의 편향 보정.",
+      "createdAt": "2026-10-24T05:02:12.696Z",
+      "seq": 2428
     },
     {
       "id": "dfb3e493",
@@ -3772,28 +3788,12 @@
       "seq": 173
     },
     {
-      "id": "794351e5",
-      "title": "Sum-of-Squares 위계와 증명 복잡도",
-      "priority": 4,
-      "note": "unique-games 와 semidefinite-programming 아래. 다항식 증명계로서의 SoS, 차수와 라운드, 평면화 값과 하계, UGC 반증 시도",
-      "createdAt": "2026-09-14T00:22:00.030Z",
-      "seq": 177
-    },
-    {
       "id": "460b3891",
       "title": "Taylor-Wiles 패칭과 R=T",
       "priority": 4,
       "note": "deformation-rings 아래. 보조 소수로 쌍대 Selmer 를 죽이는 이유, 패칭 극한, 완전교차 판정, Calegari-Geraghty 의 유도 판본",
       "createdAt": "2026-09-14T01:01:59.588Z",
       "seq": 182
-    },
-    {
-      "id": "9c13738c",
-      "title": "불변 원리와 Borell 등주부등식",
-      "priority": 4,
-      "note": "boolean-fourier 의 Majority is Stablest 증명 뼈대. Lindeberg 치환, Gauss 공간으로의 이전, Borell 의 등주부등식이 답을 아는 이유",
-      "createdAt": "2026-09-14T01:09:53.626Z",
-      "seq": 186
     },
     {
       "id": "79314045",
@@ -3906,14 +3906,6 @@
       "note": "2026-09-25 둘째 회차에 판정했다. 결론은 간선을 긋지 않는 것이다. littlewood-richardson 은 실제로 이 대응을 다룬다(활용 절 '## Schubert 셈법의 구조상수' 가 Gr(k,n) 의 코호몰로지 곱셈 구조상수가 LR 수임을 적고, 183 줄이 puzzle 규칙과 Schubert 계산의 관계를 적는다). 그러나 5절 기준으로 재면 둘은 서로의 특수 사례도 확장도 부분도 아니다. LR 규칙은 조합론의 계수 공식이고 Grassmann 다양체는 그 계수가 나타나는 자리 가운데 하나이므로 '도구로 한 번 쓰는' 관계다. 그래서 양쪽 본문 링크로 마무리했다: grassmannian 의 코호몰로지 절이 littlewood-richardson 을 걸고, littlewood-richardson 195 줄이 grassmannian 을 건다. 같은 회차에 littlewood-richardson 의 제목도 'Littlewood-Richardson 규칙과 hive 모형' 에서 'Littlewood-Richardson 규칙' 으로 좁혔다(hive 는 그 규칙을 계산하는 모형이므로 하위 주제다). 이 항목은 기록용이며 다시 꺼낼 필요가 없다",
       "createdAt": "2026-09-25T12:56:44.314Z",
       "seq": 1180
-    },
-    {
-      "id": "c738b0ac",
-      "title": "Ledoit–Wolf 축소와 스펙트럼 역산",
-      "priority": 4,
-      "note": "옛 항목 1b7a084c 를 나눈 나머지. 2026-10-22 회차에 그 항목의 축소 추정 쪽 바탕으로 james-stein-estimator 를 썼다(부모 bias-variance-decomposition, normal-distribution). 남은 것: Ledoit-Wolf 의 최적 축소 비율, 관측 스펙트럼에서 참 스펙트럼을 Stieltjes 변환으로 역산(El Karoui, 비선형 축소). 부모는 marchenko-pastur 와 james-stein-estimator.",
-      "createdAt": "2026-10-22T12:54:43.421Z",
-      "seq": 2364
     },
     {
       "id": "340146bb",
