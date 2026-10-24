@@ -144,6 +144,7 @@ $\mathbb{F}\_q$ 위의 사영평면은 위수 $q$ 의 유한사영평면이고, 
 - [Artin–Schreier 이론](artin-schreier-theory.md)
 - [이차 상호법칙](quadratic-reciprocity.md)
 - [Ax–Grothendieck 정리](ax-grothendieck.md)
+- [Pratt 증명서](pratt-certificate.md)
 
 ### 부호와 암호
 
