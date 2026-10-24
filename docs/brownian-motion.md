@@ -131,6 +131,7 @@ $$
 - [Donsker 불변원리](donsker-invariance-principle.md)
 - [Brown 다리](brownian-bridge.md)
 - [반복로그 법칙](law-of-iterated-logarithm.md)
+- [Skorokhod 매장](skorokhod-embedding.md)
 - [Itô 적분](ito-calculus.md)
 
 #probability #analysis #measure_theory #construction

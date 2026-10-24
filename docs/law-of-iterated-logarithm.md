@@ -43,7 +43,7 @@ $$
 
 ## 부분합의 반복로그 법칙
 
-$X_i$ 가 정규분포를 따르면 $S_n$ 과 $\sigma B_n$ 의 분포가 같으므로 Brown 운동의 정리가 곧 부분합의 정리다. 일반 분포에서는 $S_n$ 과 $\sigma B_n$ 을 한 확률공간에 두어 그 차가 $h(n)$ 보다 작게 만드는 강근사(strong approximation)를 쓴다. Skorokhod 매장(Skorokhod embedding)은 정지시각 $\tau_1\le\tau_2\le\cdots$ 를 잡아 $(B\_{\tau_n})$ 이 $(S_n/\sigma)$ 와 같은 분포가 되게 하고, 큰 수의 법칙 $\tau_n/n\to 1$ 과 Brown 운동의 연속률로 $\vert B\_{\tau_n}-B_n\vert=o(h(n))$ 을 보인다.[^2]
+$X_i$ 가 정규분포를 따르면 $S_n$ 과 $\sigma B_n$ 의 분포가 같으므로 Brown 운동의 정리가 곧 부분합의 정리다. 일반 분포에서는 $S_n$ 과 $\sigma B_n$ 을 한 확률공간에 두어 그 차가 $h(n)$ 보다 작게 만드는 강근사(strong approximation)를 쓴다. [Skorokhod 매장](skorokhod-embedding.md)은 정지시각 $\tau_1\le\tau_2\le\cdots$ 를 잡아 $(B\_{\tau_n})$ 이 $(S_n/\sigma)$ 와 같은 분포가 되게 하고, 큰 수의 법칙 $\tau_n/n\to 1$ 과 Brown 운동의 연속률로 $\vert B\_{\tau_n}-B_n\vert=o(h(n))$ 을 보인다.[^2]
 
 ## Strassen 의 함수형 반복로그 법칙
 
