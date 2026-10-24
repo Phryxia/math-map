@@ -180,6 +180,7 @@ Jacobi 기호는 쉽게 계산되지만 제곱잉여 여부는 인수분해 없�
 
 - [제곱잉여의 Gauss 보조정리](gauss-lemma-quadratic-residues.md)
 - [Gauss 정수환](gaussian-integers.md)
+- [Lucas–Lehmer 판정](lucas-lehmer-test.md)
 - [Dirichlet L 함수](dirichlet-l-functions.md)
 - [유체론](class-field-theory.md)
 

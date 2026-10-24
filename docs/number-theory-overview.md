@@ -46,9 +46,10 @@ graph TD
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
   - [Miller–Rabin 판정](miller-rabin-test.md): $1$ 의 제곱근이 $\pm 1$ 뿐인 것을 써서 합성수를 밑의 $3/4$ 이상으로 잡는 확률적 소수 판정, 일반화된 Riemann 가설 아래의 결정론적 판정
 - [유한체](finite-fields.md): 소수 위수의 체와 그 확대
-  - [Pocklington 판정](pocklington-criterion.md): n − 1 의 √n 보다 큰 약수만 인수분해해서 n 의 소수성을 증명하는 판정, Proth 정리와 Pépin 판정
+- [Pocklington 판정](pocklington-criterion.md): n − 1 의 √n 보다 큰 약수만 인수분해해서 n 의 소수성을 증명하는 판정, Proth 정리와 Pépin 판정
 - [이차 상호법칙](quadratic-reciprocity.md): 제곱잉여의 대칭성
   - [제곱잉여의 Gauss 보조정리](gauss-lemma-quadratic-residues.md): 나머지 가운데 절반보다 큰 것의 개수로 정하는 Legendre 기호, 제2 보충 법칙과 Eisenstein 의 격자점 증명
+  - [Lucas–Lehmer 판정](lucas-lehmer-test.md): 2ᵖ − 1 의 소수성을 s → s² − 2 의 반복으로 결정하는 판정, 2 + √3 의 위수와 n + 1 의 인수분해
 - [Gauss 정수환](gaussian-integers.md): 소수의 분해 유형과 두 제곱수의 합
 
 ## 고전 공개키 암호와 곡선

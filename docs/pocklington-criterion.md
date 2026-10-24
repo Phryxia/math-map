@@ -58,6 +58,7 @@ Brillhart, Lehmer, Selfridge 는 $F\ge n^{1/3}$ 이면 같은 조건에 $R$ 을 
 
 ## 더 알아보기
 
+- [Lucas–Lehmer 판정](lucas-lehmer-test.md)
 - [타원곡선 소수 증명](elliptic-curve-primality-proving.md)
 
 #number_theory #algorithms #complexity

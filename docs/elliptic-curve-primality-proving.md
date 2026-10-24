@@ -73,7 +73,7 @@ Hasse 정리로 $m\le n+1+2\sqrt n$ 이다. $m=kq$ 에서 $k\ge 2$ 이면 $q$ �
 
 # 활용
 
-- **큰 소수의 증명.** Mersenne 수처럼 특별한 꼴이 아닌 수에서 수만 자리의 소수를 증명한 기록은 ECPP 로 얻었다. 특별한 꼴의 수에는 Lucas–Lehmer 판정처럼 $n\pm 1$ 의 인수분해를 쓰는 판정이 더 빠르다.
+- **큰 소수의 증명.** Mersenne 수처럼 특별한 꼴이 아닌 수에서 수만 자리의 소수를 증명한 기록은 ECPP 로 얻었다. 특별한 꼴의 수에는 [Lucas–Lehmer 판정](lucas-lehmer-test.md)처럼 $n\pm 1$ 의 인수분해를 쓰는 판정이 더 빠르다.
 - **증명서의 공개.** 증명서가 짧고 검증이 빠르므로, 큰 소수의 기록을 발표할 때 증명서를 함께 공개해 다른 사람이 검증하게 한다.
 
 [^1]: S. Goldwasser, J. Kilian, "Primality testing using elliptic curves", *Journal of the ACM* 46 (1999), 450–472.
