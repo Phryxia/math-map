@@ -68,7 +68,7 @@ $$
 
 - 대칭키 암호. 스트림 암호는 키를 유사난수 생성기로 늘려 메시지와 배타적 논리합을 한다. 블록 암호의 안전성 정의는 [유사난수 순열](pseudorandom-permutations.md)이다.
 - 비무작위화(derandomization). 계산 복잡도에서는 구별자를 고정된 크기의 회로로 제한한 생성기를 쓴다. 지수 시간 $\mathrm E$ 의 어떤 문제가 지수 크기의 회로를 요구하면 $\mathrm{BPP}=\mathrm P$ 다[^6]. 이 증명은 어려운 함수로부터 그런 생성기, 곧 [Nisan–Wigderson 생성기](nisan-wigderson-generator.md)를 만들고, 확률적 알고리즘의 난수를 짧은 씨의 모든 값으로 바꿔 돌린다.
-- 회로 하한의 한계. [P 대 NP 문제](p-np.md)에서 회로 하한을 보이는 흔한 논증, 곧 자연 증명(natural proof)은 충분히 강한 유사난수 함수가 존재하면 성공할 수 없다[^7].
+- 회로 하한의 한계. [P 대 NP 문제](p-np.md)에서 회로 하한을 보이는 흔한 논증, 곧 [자연 증명](natural-proofs.md)(natural proof)은 충분히 강한 유사난수 함수가 존재하면 성공할 수 없다[^7].
 - [영지식 증명](zero-knowledge-proofs.md)의 3-색칠 프로토콜이 쓰는 [약속](commitment-schemes.md)은 유사난수 생성기로 구성된다.
 
 [^1]: A. C. Yao, "Theory and applications of trapdoor functions", FOCS 1982, 80–91.
@@ -92,5 +92,6 @@ $$
 - [메시지 인증 코드](message-authentication-codes.md)
 - [유사난수 순열](pseudorandom-permutations.md)
 - [Nisan–Wigderson 생성기](nisan-wigderson-generator.md)
+- [자연 증명](natural-proofs.md)
 
 #cryptography #complexity #computation

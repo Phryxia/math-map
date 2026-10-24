@@ -65,5 +65,6 @@
 - [NC 계층](nc-hierarchy.md)
 - [통신 복잡도](communication-complexity.md)
 - [Nisan–Wigderson 생성기](nisan-wigderson-generator.md)
+- [자연 증명](natural-proofs.md)
 
 #complexity #logic #computation
