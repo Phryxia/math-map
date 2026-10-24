@@ -48,7 +48,7 @@ $a_n=\int g_n\thinspace d\mu$ 는 $T$ 가 측도를 보존하므로 부분가법
 
 # 활용
 
-- **최초 통과 침투.** 정수 격자의 각 변에 독립이고 같은 분포의 통과 시간을 주고 $0$ 에서 $nx$ 까지의 최소 통과 시간을 $\tau(0,nx)$ 라 하면 $\tau(0,(m+n)x)\le\tau(0,mx)+\tau(mx,(m+n)x)$ 다. 이 정리로 시간 상수 $\lim\tau(0,nx)/n$ 이 거의 확실히 존재한다. 최초 통과 침투(first-passage percolation)는 Hammersley 와 Welsh 가 도입한 [침투](percolation.md)의 변형이다.
+- **최초 통과 침투.** 정수 격자의 각 변에 독립이고 같은 분포의 통과 시간을 주고 $0$ 에서 $nx$ 까지의 최소 통과 시간을 $\tau(0,nx)$ 라 하면 $\tau(0,(m+n)x)\le\tau(0,mx)+\tau(mx,(m+n)x)$ 다. 이 정리로 시간 상수 $\lim\tau(0,nx)/n$ 이 거의 확실히 존재한다. [최초 통과 침투](first-passage-percolation.md)는 Hammersley 와 Welsh 가 도입한 [침투](percolation.md)의 변형이다.
 - **최장 증가 부분수열.** 단위정사각형에 Poisson 점을 뿌리고 오른쪽 위로 가는 경로가 지나는 점의 최대 개수를 보면 초가법 과정이 된다. Hammersley 는 이것으로 [최장 증가 부분수열](longest-increasing-subsequence.md)의 길이를 $\sqrt n$ 으로 나눈 값이 상수로 수렴함을 보였고, 그 상수가 $2$ 라는 것은 Vershik–Kerov 와 Logan–Shepp 가 증명했다.
 - **Oseledets 정리.** 최대 지수뿐 아니라 Lyapunov 지수 전체와 그에 맞는 부분공간의 분해를 주는 [Oseledets 곱셈 에르고딕 정리](oseledets-theorem.md)는 외대수 $\Lambda^kA$ 의 노름에 이 정리를 적용해 증명한다.
 
@@ -66,5 +66,6 @@ $a_n=\int g_n\thinspace d\mu$ 는 $T$ 가 측도를 보존하므로 부분가법
 ## 더 알아보기
 
 - [Oseledets 곱셈 에르고딕 정리](oseledets-theorem.md)
+- [최초 통과 침투](first-passage-percolation.md)
 
 #measure_theory #probability #analysis #theorem
