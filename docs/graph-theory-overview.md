@@ -55,6 +55,7 @@ graph TD
   - [경로폭](pathwidth.md): 주머니를 한 줄로 늘어놓은 분해의 폭, 구간 그래프와 정점 탐색 수와의 일치
   - [가지폭](branchwidth.md): 간선 집합의 가르기로 재는 폭, 나무폭과의 상수배 관계와 평면 그래프의 쌍대성
 - [Hamilton 순환](hamiltonian-cycles.md): Dirac 과 Ore 의 차수 조건, 닫힘, 판정의 NP-완전성
+- [Euler 회로](eulerian-circuits.md): 모든 변을 한 번씩 지나는 닫힌 걸음이 모든 차수가 짝수인 것과 동치라는 Euler 정리, Hierholzer 알고리즘과 유향 Euler 회로의 개수 공식
 
 ## 색칠과 매칭
 

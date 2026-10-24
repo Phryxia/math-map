@@ -87,7 +87,7 @@ function heldKarp(w: number[][]): number {
 
 정리. 거리 외판원 문제에서 길이가 $\tfrac32\mathrm{OPT}$ 이하인 순회를 다항시간에 찾는다[^3].
 
-절차는 최소 신장트리 $T$ 를 구하고, $T$ 에서 차수가 홀수인 정점 집합 $O$ 위에서 가중치가 최소인 완전 [매칭](matchings.md) $M$ 을 구하고, $T\cup M$ 의 Euler 회로(Eulerian circuit)를 따라가며 방문한 도시를 건너뛰는 것이다. $T\cup M$ 의 모든 정점은 차수가 짝수이므로 Euler 회로가 있다.
+절차는 최소 신장트리 $T$ 를 구하고, $T$ 에서 차수가 홀수인 정점 집합 $O$ 위에서 가중치가 최소인 완전 [매칭](matchings.md) $M$ 을 구하고, $T\cup M$ 의 [Euler 회로](eulerian-circuits.md)를 따라가며 방문한 도시를 건너뛰는 것이다. $T\cup M$ 의 모든 정점은 차수가 짝수이므로 Euler 회로가 있다.
 
 증명의 요지. 최적 순회에서 $O$ 의 정점만 남기고 건너뛰면 삼각부등식으로 길이가 $\mathrm{OPT}$ 이하인 $O$ 위의 순환이 된다. $\lvert O\rvert$ 가 짝수이므로 이 순환의 변을 번갈아 고르면 완전 매칭 두 개로 나뉘고, 그중 가벼운 것은 $\mathrm{OPT}/2$ 이하다. 따라서 $w(M)\le\mathrm{OPT}/2$ 이고, $w(T)+w(M)\le\tfrac32\mathrm{OPT}$ 이다.
 
