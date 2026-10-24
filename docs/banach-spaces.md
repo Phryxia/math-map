@@ -6,7 +6,7 @@
 
 유한차원에서 참이던 여러 명제가 여기서 깨진다. [선형사상](linear-maps.md)이 연속이 아닐 수 있다. 부분공간이 닫히지 않을 수 있다. 닫힌 유계집합이 콤팩트하지 않다.
 
-[Hahn–Banach 정리](hahn-banach-theorem.md), [열린 사상 정리](open-mapping-theorem.md), 균등유계성 원리가 이 공간의 기본 도구다. 뒤의 둘은 완비성에서 [Baire 범주 정리](baire-category.md)를 거쳐 나오고, 앞의 하나는 [선택공리](axiom-of-choice.md)에서 나온다.
+[Hahn–Banach 정리](hahn-banach-theorem.md), [열린 사상 정리](open-mapping-theorem.md), [균등유계성 원리](uniform-boundedness.md)가 이 공간의 기본 도구다. 뒤의 둘은 완비성에서 [Baire 범주 정리](baire-category.md)를 거쳐 나오고, 앞의 하나는 [선택공리](axiom-of-choice.md)에서 나온다.
 
 # 직관
 
@@ -65,11 +65,7 @@ Hahn–Banach 정리는 열등선형 범함수 $p$ 와 부분공간 $M$ 위에�
 
 ## 균등유계성 원리
 
-$X$ 가 Banach, $\lbrace T_\alpha\rbrace\subset\mathcal B(X,Y)$ 가 모든 $x$ 에서 $\sup_\alpha\lVert T_\alpha x\rVert\lt\infty$ 를 만족하면 $\sup_\alpha\lVert T_\alpha\rVert\lt\infty$ 다.
-
-*증명.* $E_n=\lbrace x:\sup_\alpha\lVert T_\alpha x\rVert\le n\rbrace$ 이 닫힌 집합이고 합집합이 $X$ 이므로 Baire 범주 정리로 어떤 $E_n$ 이 내부를 가진다. 그 공에서의 유계성을 평행이동과 스칼라배로 옮긴다.
-
-작용소 열이 점별로 수렴하면 노름이 균등 유계이고 극한도 [유계 작용소](bounded-operators.md)다. [Fourier 급수](fourier-series.md)가 발산하는 연속함수의 존재도 이 원리로 증명된다. 부분합 작용소의 노름이 발산한다는 계산에서 반례의 존재가 따라온다.
+$X$ 가 Banach, $\lbrace T_\alpha\rbrace\subset\mathcal B(X,Y)$ 가 모든 $x$ 에서 $\sup_\alpha\lVert T_\alpha x\rVert\lt\infty$ 를 만족하면 $\sup_\alpha\lVert T_\alpha\rVert\lt\infty$ 다. 증명과 따름정리는 [균등유계성 원리](uniform-boundedness.md)에 있다. 작용소 열이 점별로 수렴하면 극한도 [유계 작용소](bounded-operators.md)다.
 
 ## 열린 사상 정리
 
@@ -134,6 +130,7 @@ Banach 공간에는 직교성, 사영 정리, 쌍대공간과 자기 자신의 �
 
 - [Hahn–Banach 정리](hahn-banach-theorem.md)
 - [Banach–Alaoglu 정리](banach-alaoglu.md)
+- [균등유계성 원리](uniform-boundedness.md)
 - [열린 사상 정리](open-mapping-theorem.md)
 
 ### 콤팩트성과 고정점

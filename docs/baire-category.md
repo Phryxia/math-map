@@ -4,7 +4,7 @@
 
 **Baire 범주 정리(Baire category theorem)** 는 완비 거리공간에서 조밀한 열린집합 가산 개의 교집합이 다시 조밀하다는 정리다. 같은 말로, 완비 거리공간은 폐포에 내부가 없는 집합 가산 개로 덮이지 않는다.
 
-이 정리는 대상을 구성하지 않고 존재만 보이는 데 쓰인다. 원하는 성질을 갖지 않는 함수 전체가 가산 개의 작은 집합 안에 들어감을 보이면, 남는 함수가 원하는 성질을 갖는다. 함수해석의 균등유계성 원리, [열린 사상 정리](open-mapping-theorem.md), 닫힌 그래프 정리가 모두 이 정리 위에 선다.
+이 정리는 대상을 구성하지 않고 존재만 보이는 데 쓰인다. 원하는 성질을 갖지 않는 함수 전체가 가산 개의 작은 집합 안에 들어감을 보이면, 남는 함수가 원하는 성질을 갖는다. 함수해석의 [균등유계성 원리](uniform-boundedness.md), [열린 사상 정리](open-mapping-theorem.md), 닫힌 그래프 정리가 모두 이 정리 위에 선다.
 
 # 직관
 
@@ -50,11 +50,7 @@ $\mathbb Q$ 는 가산이고 각 점이 $\mathbb Q$ 안에서 성기므로 자�
 
 ## 균등유계성 원리
 
-**정리(Banach–Steinhaus).** $X$ 가 [Banach 공간](banach-spaces.md), $Y$ 가 노름 공간이고 유계 선형작용소들의 모임 $\mathcal F$ 가 모든 $x \in X$ 에서 $\sup_{T \in \mathcal F}\lVert Tx\rVert \lt \infty$ 를 만족하면, $\sup_{T \in \mathcal F}\lVert T\rVert \lt \infty$ 다.
-
-$E_n = \lbrace x \in X : \lVert Tx\rVert \le n \thinspace\text{ 가 모든 } T \in \mathcal F \thinspace\text{ 에 대해 성립}\rbrace$ 으로 놓는다. 각 $E_n$ 은 닫혀 있고 가정에서 $X = \bigcup_n E_n$ 이다. Baire 범주 정리로 어떤 $E_N$ 이 내부를 가지므로 열린 공 $B(x_0, r) \subseteq E_N$ 이 있다. 선형성으로 $\lVert Tz\rVert \le 2N/r$ 이 단위공의 모든 $z$ 에 대해 나온다. ∎
-
-각 점에서의 유계성이 전체의 유계성을 준다는 점이 이 정리의 내용이고, 같은 논법으로 열린 사상 정리와 닫힌 그래프 정리가 나온다.
+[Banach 공간](banach-spaces.md) 위의 유계 선형작용소들이 각 점에서 유계이면 작용소 노름도 균등하게 유계다. 이것이 균등유계성 원리이고, 점마다 유계인 값의 크기로 닫힌 집합 $E_n$ 을 만들어 이 정리를 적용한다. 같은 논법으로 열린 사상 정리와 닫힌 그래프 정리가 나온다.
 
 ## 미분 불가능한 연속함수
 
@@ -79,7 +75,13 @@ $E_n$ 을 $\vert f(t)-f(s)\vert \le n\vert t-s\vert$ 가 모든 $s$ 에 대해 �
 
 ## 더 알아보기
 
+### 함수해석의 기본정리
+
+- [균등유계성 원리](uniform-boundedness.md)
 - [열린 사상 정리](open-mapping-theorem.md)
+
+### 실직선의 작은 집합
+
 - [Galvin–Mycielski–Solovay 정리](galvin-mycielski-solovay.md)
 - [Martin 의 공리](martins-axiom.md)
 - [Polish 공간](polish-spaces.md)
