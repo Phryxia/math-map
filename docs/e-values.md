@@ -56,7 +56,7 @@ $E$ 가 e-변수이면 $\min(1,1/E)$ 는 p-변수다. 위의 타당성 부등식
 
 $H_0=\lbrace P_0\rbrace$ 가 하나의 분포이면 밀도 $q$ 를 무엇으로 잡든 $q(X)/p_0(X)$ 가 e-변수다. $E_{P_0}\lbrack q/p_0\rbrack=\int q=1$ 이기 때문이다. [순차확률비 검정](sequential-probability-ratio-test.md)의 누적 우도비가 이것을 곱한 검정 martingale 이다.
 
-자료가 실제로 $Q$ 를 따를 때 한 번의 관측에서 $E_Q\lbrack\log E\rbrack$ 를 가장 크게 하는 e-변수는 $q=dQ/d\mu$ 로 잡은 가능도비이고, 그 값은 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence) $D(Q\Vert P_0)$ 다. 검정 martingale 은 대략 $\exp(nD(Q\Vert P_0))$ 의 속도로 자라고, 기각에 필요한 관측 수가 $\log(1/\alpha)/D(Q\Vert P_0)$ 규모다.
+자료가 실제로 $Q$ 를 따를 때 한 번의 관측에서 $E_Q\lbrack\log E\rbrack$ 를 가장 크게 하는 e-변수, 곧 [Kelly 기준](kelly-criterion.md)으로 건 돈은 $q=dQ/d\mu$ 로 잡은 가능도비이고, 그 값은 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence) $D(Q\Vert P_0)$ 다. 검정 martingale 은 대략 $\exp(nD(Q\Vert P_0))$ 의 속도로 자라고, 기각에 필요한 관측 수가 $\log(1/\alpha)/D(Q\Vert P_0)$ 규모다.
 
 ## 보편 추론
 
