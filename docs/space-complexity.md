@@ -130,5 +130,6 @@ $$
 - [대화형 증명](interactive-proofs.md)
 - [교대 Turing 기계](alternating-turing-machines.md)
 - [NC 계층](nc-hierarchy.md)
+- [Reingold 정리](reingold-theorem.md)
 
 #complexity #computation #logic

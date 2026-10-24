@@ -114,6 +114,7 @@ graph TD
 - [그래프 동형](graph-isomorphism.md): $\mathrm P$ 와 NP-완전 사이에 놓인 문제, 준다항시간 알고리즘
 - [Schwartz–Zippel 보조정리](schwartz-zippel-lemma.md): 0 이 아닌 차수 d 다항식이 무작위 점에서 0 이 될 확률이 d/|S| 이하라는 상한, 다항식 항등 판정의 단측 오류 무작위 알고리즘과 Tutte 행렬의 완전 매칭 판정
   - [고립 보조정리](isolation-lemma.md): 무작위 무게 아래 최소 무게 집합이 하나뿐일 확률이 1 − m/N 이상이라는 정리, 행렬식으로 완전 매칭을 찾는 병렬 알고리즘
+- [Reingold 정리](reingold-theorem.md): 무방향 연결성이 결정적 로그 공간에 든다는 정리, 거듭제곱과 지그재그 곱으로 성분을 expander 로 바꾸는 변환, SL = L
 - [교대 Turing 기계](alternating-turing-machines.md): 존재 상태와 전칭 상태를 번갈아 쓰는 기계, AL = P 와 AP = PSPACE 와 APSPACE = EXPTIME, 교대 횟수로 본 다항 계층
 - [통신 복잡도](communication-complexity.md): 입력을 나눠 가진 두 사람이 주고받는 비트 수, 단색 직사각형과 계수 하한, 동등 판정의 무작위 규칙과 서로소 판정의 선형 하한, Karchmer–Wigderson 정리
 - [NC 계층](nc-hierarchy.md): 다항 크기 polylog 깊이 균일 회로로 본 병렬 계산, NC¹ ⊆ L ⊆ NL ⊆ AC¹ 의 포함, 회로 값 문제의 P-완전성

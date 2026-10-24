@@ -118,5 +118,6 @@ expander 그래프에서 만든 부호(expander code, Sipser–Spielman)는 선�
 
 - [PCP 정리](pcp-theorem.md)
 - [Ramanujan 그래프의 명시적 구성](ramanujan-graphs.md)
+- [Reingold 정리](reingold-theorem.md)
 
 #graph_theory #linear_algebra #algorithms #complexity
