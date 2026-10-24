@@ -58,7 +58,7 @@ $\log S_n^\ast-\log\hat S_n$ 을 **후회(regret)** 라 한다. 가격열을 확
 
 ## Dirichlet 사전분포
 
-균등분포 대신 매개변수가 모두 $1/2$ 인 Dirichlet 분포(Dirichlet distribution)로 평균하면 후회의 상한이 $\frac{m-1}2\log n+O(1)$ 로 줄어든다. 계수 $\frac{m-1}2$ 는 어떤 전략도 모든 가격열에서 더 줄일 수 없다.[^3]
+균등분포 대신 매개변수가 모두 $1/2$ 인 [Dirichlet 분포](dirichlet-distribution.md)로 평균하면 후회의 상한이 $\frac{m-1}2\log n+O(1)$ 로 줄어든다. 계수 $\frac{m-1}2$ 는 어떤 전략도 모든 가격열에서 더 줄일 수 없다.[^3]
 
 # 활용
 

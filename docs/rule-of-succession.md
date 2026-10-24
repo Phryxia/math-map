@@ -28,7 +28,7 @@ $$
 
 ## 사후분포
 
-균등분포는 $\mathrm{Beta}(1,1)$ 이므로 Bayes 추론의 Beta–Binomial 켤레 갱신으로 사후분포가 $\mathrm{Beta}(S_n+1,\thinspace n-S_n+1)$ 이다. 다음 시행의 성공 확률은 사후평균 $(S_n+1)/(n+2)$ 이다. 범주가 $m$ 개이면 사전분포가 매개변수 $(1,\dots,1)$ 인 Dirichlet 분포(Dirichlet distribution)이고, 사후평균이 $(n_j+1)/(n+m)$ 이다. 가산 평활의 $\lambda$ 는 매개변수 $(\lambda,\dots,\lambda)$ 인 Dirichlet 사전분포에 해당한다.
+균등분포는 $\mathrm{Beta}(1,1)$ 이므로 Bayes 추론의 Beta–Binomial 켤레 갱신으로 사후분포가 $\mathrm{Beta}(S_n+1,\thinspace n-S_n+1)$ 이다. 다음 시행의 성공 확률은 사후평균 $(S_n+1)/(n+2)$ 이다. 범주가 $m$ 개이면 사전분포가 매개변수 $(1,\dots,1)$ 인 [Dirichlet 분포](dirichlet-distribution.md)이고, 사후평균이 $(n_j+1)/(n+m)$ 이다. 가산 평활의 $\lambda$ 는 매개변수 $(\lambda,\dots,\lambda)$ 인 Dirichlet 사전분포에 해당한다.
 
 ## 성공 횟수의 분포
 

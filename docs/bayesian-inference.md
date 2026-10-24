@@ -185,6 +185,7 @@ $$
 
 ## 더 알아보기
 
+- [Dirichlet 분포](dirichlet-distribution.md)
 - [de Finetti 정리](de-finetti-theorem.md)
 - [Laplace 계승 규칙](rule-of-succession.md)
 - [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)
