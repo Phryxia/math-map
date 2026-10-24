@@ -138,10 +138,16 @@ $$
 
 ## 더 알아보기
 
+### 유한 차원 행렬
+
 - [특이값 분해](singular-value-decomposition.md)
-- [Hecke 작용소](hecke-operators.md)
-- [유계 작용소](bounded-operators.md)
 - [Hessian 행렬](hessian.md)
+- [민감도 정리](sensitivity-theorem.md)
+
+### 작용소와 무한 차원
+
+- [유계 작용소](bounded-operators.md)
+- [Hecke 작용소](hecke-operators.md)
 - [Weyl 법칙](weyl-law.md)
 
 #linear_algebra #analysis #optimization #theorem

@@ -151,6 +151,7 @@ Walsh–Hadamard 변환으로 $2^n$ 개 계수를 $O(n2^n)$ 에 뽑고, Parseval
 
 - [Kahn–Kalai–Linial 정리](kkl-theorem.md)
 - [유일게임 추측과 2-to-2 정리](unique-games.md)
+- [민감도 정리](sensitivity-theorem.md)
 - [다항식의 불변 원리](invariance-principle-polynomials.md)
 
 #combinatorics #complexity #analysis #computation
