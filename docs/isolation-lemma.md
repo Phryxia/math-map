@@ -49,7 +49,7 @@ $$
 # 활용
 
 - 병렬 매칭 알고리즘. 행렬식은 다항 개의 처리기로 $O(\log^2 n)$ 단계에 계산되므로, 위 판정으로 모든 변을 동시에 확인해 완전 매칭을 찾는다. 이것이 완전 매칭 찾기가 무작위 병렬 다항로그 시간 부류 RNC(randomized Nick's class)에 든다는 증명이다[^1]. 일반 그래프에서는 Tutte 행렬(Tutte matrix)로 같은 일을 한다.
-- 유일 해로의 환원. L. G. Valiant 와 V. V. Vazirani 는 [범용 해시족](universal-hashing.md)의 무작위 제약을 더해 만족 가능한 논리식을 해가 하나뿐인 논리식으로 바꾸는 무작위 환원을 주었다[^2]. 이 보조정리와 같은 목표를 다른 도구로 이룬 결과이고, 해가 하나뿐임이 약속된 SAT(satisfiability) 문제도 무작위 환원 아래에서 NP(nondeterministic polynomial time)-어렵다는 것을 보인다.
+- 유일 해로의 환원. L. G. Valiant 와 V. V. Vazirani 는 [범용 해시족](universal-hashing.md)의 무작위 제약을 더해 만족 가능한 논리식을 해가 하나뿐인 논리식으로 바꾸는 무작위 환원을 주었다[^2]. 이것이 [Valiant–Vazirani 정리](valiant-vazirani.md)다. 이 보조정리와 같은 목표를 다른 도구로 이룬 결과이고, 해가 하나뿐임이 약속된 SAT(satisfiability) 문제도 무작위 환원 아래에서 NP(nondeterministic polynomial time)-어렵다는 것을 보인다.
 - 탈무작위화. S. Fenner, R. Gurjar, T. Thierauf 는 이분 그래프에서 무게를 무작위로 고르는 대신 준다항 개의 무게 함수 가운데 하나가 반드시 고립시키도록 만들어, 이분 완전 매칭을 결정적 준다항 크기 병렬 회로로 찾았다[^3].
 
 [^1]: K. Mulmuley, U. V. Vazirani, V. V. Vazirani, "Matching is as easy as matrix inversion", Combinatorica 7(1) (1987), 105–113.
