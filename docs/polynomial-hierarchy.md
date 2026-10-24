@@ -80,5 +80,6 @@ $$
 ## 더 알아보기
 
 - [Toda 정리](toda-theorem.md)
+- [교대 Turing 기계](alternating-turing-machines.md)
 
 #complexity #logic

@@ -128,5 +128,6 @@ $$
 ## 더 알아보기
 
 - [대화형 증명](interactive-proofs.md)
+- [교대 Turing 기계](alternating-turing-machines.md)
 
 #complexity #computation #logic
