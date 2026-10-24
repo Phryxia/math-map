@@ -184,5 +184,6 @@ $$
 - [Khintchine 부등식](khintchine-inequality.md)
 - [Rademacher 복잡도](rademacher-complexity.md)
 - [다중 슬롯머신](multi-armed-bandits.md)
+- [무작위 복잡도 부류](randomized-complexity-classes.md)
 
 #probability #algorithms #machine_learning

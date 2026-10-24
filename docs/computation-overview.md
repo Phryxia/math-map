@@ -94,6 +94,7 @@ graph TD
 먼저 읽을 갈래: 계산 가능성과 계층. 시작 문서: [P 대 NP 문제](p-np.md).
 
 - [P 대 NP 문제](p-np.md): 다항시간 판정과 다항시간 검증의 분리 문제
+  - [무작위 복잡도 부류](randomized-complexity-classes.md): 한쪽 오류의 RP 와 coRP, 오류 없는 ZPP, 양쪽 유계 오류의 BPP, 반복으로 오류 줄이기와 Adleman 정리
   - [양자 회로](quantum-circuits.md): 큐비트의 텐서곱 공간 위 유니터리 게이트와 측정, 보편 게이트 집합과 BQP(bounded-error quantum polynomial time)
   - [Shor 알고리즘](shor-algorithm.md): 위수 찾기와 양자 Fourier 변환으로 소인수분해와 이산로그를 다항 시간에 푸는 양자 알고리즘
   - [Pratt 증명서](pratt-certificate.md): 곱셈군의 생성원과 p − 1 의 인수분해를 재귀적으로 모은 소수의 짧은 증명서, 소수 판정이 NP ∩ coNP 에 든다는 것

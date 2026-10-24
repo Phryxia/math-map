@@ -39,7 +39,7 @@ $$
 | $\mathrm{coNP}$ | 여집합이 NP. 아니오 쪽에 짧은 증거가 있음 |
 | $\mathrm{PSPACE}$ | 다항 크기 메모리로 판정 가능 |
 | $\mathrm{EXPTIME}$ | 지수시간에 판정 가능 |
-| $\mathrm{BPP}$ | 무작위 다항시간, 오답 확률 유계 |
+| $\mathrm{BPP}$ | 무작위 다항시간, 오답 확률 유계. [무작위 복잡도 부류](randomized-complexity-classes.md)의 하나 |
 
 알려진 포함 관계는 $\mathrm P\subseteq\mathrm{NP}\subseteq\mathrm{PSPACE}\subseteq\mathrm{EXPTIME}$ 이고, $\mathrm P\subsetneq\mathrm{EXPTIME}$ 은 시간 계층 정리로 증명되어 있다. 두 사실을 합치면 사슬의 세 포함 중 적어도 하나는 진포함이다. 어느 것인지는 판정되지 않았다[^1].
 
@@ -100,6 +100,7 @@ NP 문제는 모두 결정 가능하다. 증명서 후보가 유한하므로 전
 
 - [NP-완전성과 Cook–Levin 정리](np-completeness.md)
 - [Pratt 증명서](pratt-certificate.md)
+- [무작위 복잡도 부류](randomized-complexity-classes.md)
 - [양자 회로](quantum-circuits.md)
 - [일방향 함수](one-way-functions.md)
 
