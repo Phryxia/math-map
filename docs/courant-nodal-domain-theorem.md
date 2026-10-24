@@ -54,7 +54,7 @@ $n$ 차원에서는 같은 증명으로 상한이 $(2\pi)^n/(\omega_n^2j_{n/2-1,
 
 # 활용
 
-- [양자 혼돈](quantum-chaos.md)에서 고유함수의 마디 영역 개수는 고유함수의 분포를 재는 양 가운데 하나다. 혼돈적인 영역의 고유함수는 무작위 파동과 같은 마디 영역 개수를 가질 것이라는 Bogomolny–Schmit 추측(Bogomolny–Schmit conjecture)이 있다.
+- [양자 혼돈](quantum-chaos.md)에서 고유함수의 마디 영역 개수는 고유함수의 분포를 재는 양 가운데 하나다. 혼돈적인 영역의 고유함수는 무작위 파동과 같은 마디 영역 개수를 가질 것이라는 [Bogomolny–Schmit 추측](bogomolny-schmit-conjecture.md)이 있다.
 - [그래프 Laplacian](graph-laplacian.md)의 둘째 고유벡터인 Fiedler 벡터(Fiedler vector)의 부호로 정점을 둘로 가르는 것은 $\varphi_2$ 의 두 마디 영역의 이산판이다. 그래프에서도 $k$ 번째 고유벡터의 부호 영역 수에 대한 Courant 꼴의 상한이 성립한다[^5].
 
 [^1]: R. Courant, "Ein allgemeiner Satz zur Theorie der Eigenfunktionen selbstadjungierter Differentialausdrücke", Nachr. Ges. Wiss. Göttingen, Math.-Phys. Kl. (1923), 81–84.
@@ -73,6 +73,6 @@ $n$ 차원에서는 같은 증명으로 상한이 $(2\pi)^n/(\omega_n^2j_{n/2-1,
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Bogomolny–Schmit 추측](bogomolny-schmit-conjecture.md)
 
 #differential_geometry #analysis #theorem

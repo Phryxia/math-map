@@ -79,6 +79,6 @@ $\Gamma\backslash\mathbb H$ 꼴의 산술 곡면은 측지선 흐름이 혼돈�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Bogomolny–Schmit 추측](bogomolny-schmit-conjecture.md)
 
 #differential_geometry #probability #analysis

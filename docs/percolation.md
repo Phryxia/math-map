@@ -81,5 +81,6 @@ $\theta$ 가 $p$ 에 대해 단조증가이므로 $p\lt p_c$ 에서 $\theta(p)=0
 
 - [Ising 모형](ising-model.md)
 - [최초 통과 침투](first-passage-percolation.md)
+- [Bogomolny–Schmit 추측](bogomolny-schmit-conjecture.md)
 
 #probability #graph_theory #combinatorics

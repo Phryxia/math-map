@@ -115,6 +115,7 @@ graph TD
   - [Weyl 법칙](weyl-law.md): 고윳값이 λ 이하인 것의 개수가 부피와 차원으로 정해지는 점근식, 정육면체의 격자점 계산과 Dirichlet–Neumann 괄호 매김, 열 대각합
     - [양자 혼돈](quantum-chaos.md): 측지선 흐름이 혼돈적일 때 Laplace 고윳값의 간격 통계와 고유함수의 분포, Shnirelman 정리
     - [Courant 마디 영역 정리](courant-nodal-domain-theorem.md): k 번째 Dirichlet 고유함수의 마디 영역은 k 개 이하다, 유일 연속 정리를 쓴 증명과 Weyl 법칙과 Faber–Krahn 부등식에서 나오는 Pleijel 정리
+      - [Bogomolny–Schmit 추측](bogomolny-schmit-conjecture.md): 혼돈적인 영역의 고유함수가 갖는 마디 영역의 개수를 임계 결합 침투의 클러스터 개수로 예측한 값 (3√3−5)/π 와 Nazarov–Sodin 정리
     - [Pólya 추측](polya-conjecture.md): Dirichlet 고윳값 개수가 Weyl 주항 이하라는 진술, 평면을 덮는 영역과 공에서의 증명, Li–Yau 부등식
   - [열핵 전개](heat-kernel-asymptotics.md): 짧은 시간에서 열핵을 시간의 거듭제곱으로 전개한 식, 곡률로 정해지는 계수와 곡면의 Euler 지표, Varadhan 공식
     - [제타 정규화 행렬식](zeta-regularized-determinant.md)
