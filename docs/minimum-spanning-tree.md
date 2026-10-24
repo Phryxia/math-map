@@ -73,7 +73,7 @@ Kruskal 은 간선 정렬이 $O(|E|\log|E|)$ 이고 나머지 서로소 집합 �
 
 - **연결 비용의 최소화.** 통신망, 배전망, 도로망의 총 설치비를 줄이는 기본 모델이다. 연결만 보장하므로 장애 대비 여분 경로, 최대 이동거리 제한, 용량 제약은 따로 넣는다.
 - **군집화.** 간선을 가벼운 순서로 합치다가 $k$ 개 성분이 남았을 때 멈추면 단일 연결 군집화가 된다. 최소 신장트리에서 가장 무거운 간선 $k-1$ 개를 지운 것과 같으므로 트리 하나로 모든 $k$ 의 군집화를 얻는다.
-- **근사 알고리즘.** 외판원 문제의 2-근사는 트리를 두 번 순회해 최적 경로 길이의 두 배를 넘지 않게 하고, Christofides 알고리즘은 최소 가중치 완전 매칭을 더해 $1.5$ 로 개선한다. [근사 알고리즘](approximation-algorithms.md)에서 다루기 쉬운 하한을 주는 구조로 쓰인다.[^1]
+- **근사 알고리즘.** [외판원 문제](traveling-salesman-problem.md)의 2-근사는 트리를 두 번 순회해 최적 경로 길이의 두 배를 넘지 않게 하고, Christofides 알고리즘은 최소 가중치 완전 매칭을 더해 $1.5$ 로 개선한다. [근사 알고리즘](approximation-algorithms.md)에서 다루기 쉬운 하한을 주는 구조로 쓰인다.[^1]
 
 [^1]: Robert Sedgewick and Kevin Wayne, *Algorithms*, §4.3 Minimum Spanning Trees. 컷 성질, Kruskal 과 Prim 알고리즘, 시간 복잡도. https://algs4.cs.princeton.edu/43mst/
 

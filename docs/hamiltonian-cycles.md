@@ -70,7 +70,7 @@ $\mathrm{cl}(G)$ 가 완전그래프이면 $G$ 는 Hamilton 그래프다. Ore �
 
 # 활용
 
-- **외판원 문제.** 간선에 가중치가 있는 완전그래프에서 가중치 합이 최소인 Hamilton 순환을 찾는 문제다. 가중치가 삼각부등식을 만족하면 [근사 알고리즘](approximation-algorithms.md)의 Christofides 절차가 최적의 $3/2$ 배 안에 드는 순환을 준다.
+- **[외판원 문제](traveling-salesman-problem.md).** 간선에 가중치가 있는 완전그래프에서 가중치 합이 최소인 Hamilton 순환을 찾는 문제다. 가중치가 삼각부등식을 만족하면 [근사 알고리즘](approximation-algorithms.md)의 Christofides 절차가 최적의 $3/2$ 배 안에 드는 순환을 준다.
 - **Gray 코드.** 길이 $n$ 인 이진 문자열을 정점으로 하고 한 자리만 다른 두 문자열을 간선으로 이으면 $n$ 차원 하이퍼큐브가 된다. 이 그래프의 Hamilton 순환이 연속한 두 문자열이 한 자리만 다른 나열이고, 반사 이진 코드가 그 예다.
 - **기사 여행.** 체스판의 칸을 정점으로 하고 기사의 한 수로 오갈 수 있는 두 칸을 간선으로 이은 그래프에서 Hamilton 경로를 찾는 문제다. $8\times 8$ 판에서는 순환도 존재한다.
 
@@ -93,5 +93,6 @@ $\mathrm{cl}(G)$ 가 완전그래프이면 $G$ 는 Hamilton 그래프다. Ore �
 ## 더 알아보기
 
 - [Chvátal–Erdős 정리](chvatal-erdos-theorem.md)
+- [외판원 문제](traveling-salesman-problem.md)
 
 #graph_theory #combinatorics #algorithms #complexity

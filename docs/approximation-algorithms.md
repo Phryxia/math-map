@@ -37,7 +37,7 @@ $\mathrm{NP}$ 난해 문제 앞에서 포기할 수 있는 것은 셋이다. 세
 | 등급 | 뜻 | 예 |
 |---|---|---|
 | **FPTAS**(fully polynomial-time approximation scheme) | 임의의 $\varepsilon$ 에 대해 $1+\varepsilon$ 근사를 $1/\varepsilon$ 의 다항시간에 | [배낭 문제](knapsack-problem.md) |
-| **PTAS**(polynomial-time approximation scheme) | 임의의 $\varepsilon$ 에 대해 $1+\varepsilon$ 근사, 시간은 $\varepsilon$ 에 지수적이어도 됨 | 유클리드 TSP(traveling salesman problem) |
+| **PTAS**(polynomial-time approximation scheme) | 임의의 $\varepsilon$ 에 대해 $1+\varepsilon$ 근사, 시간은 $\varepsilon$ 에 지수적이어도 됨 | 유클리드 [외판원 문제](traveling-salesman-problem.md)(traveling salesman problem, TSP) |
 | **APX**(approximable) | 어떤 상수 $\rho$ 로 근사 가능 | 정점 덮개, 최대 절단 |
 | 로그 근사 | $\Theta(\log n)$ 이 최선 | 집합 덮개 |
 | 근사 불가 | 어떤 상수배로도 근사 불가($\mathrm{P} \ne \mathrm{NP}$ 가정) | 일반 TSP, 최대 클릭 |
@@ -88,5 +88,6 @@ $$
 - [LP 반올림](lp-rounding.md)
 - [PCP 정리](pcp-theorem.md)
 - [배낭 문제](knapsack-problem.md)
+- [외판원 문제](traveling-salesman-problem.md)
 
 #complexity #algorithms
