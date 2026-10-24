@@ -63,6 +63,7 @@ graph TD
   - [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman): 두 소수의 곱을 공개하고 소인수를 비밀로 두는 공개키 암호와 서명
   - [격자](lattices.md): 실벡터공간의 이산 부분군과 그 기본 영역의 부피
 - [타원곡선](elliptic-curves.md): 세제곱 곡선 위의 점이 이루는 아벨군과 그 군에서의 이산로그
+  - [타원곡선 인수분해](elliptic-curve-factorization.md): 법 n 의 곡선에서 스칼라 곱의 나눗셈이 실패하는 자리로 인수를 찾는다. 시간이 가장 작은 소인수의 크기로 정해진다
 
 ## 연분수와 Diophantine 근사
 
