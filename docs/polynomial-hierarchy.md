@@ -63,7 +63,7 @@ $$
 # 활용
 
 - 무작위 계산. [무작위 복잡도 부류](randomized-complexity-classes.md)의 BPP(bounded-error probabilistic polynomial time)는 $\Sigma_2^{\mathrm p}\cap\Pi_2^{\mathrm p}$ 에 든다(Sipser–Gács–Lautemann 정리).
-- 해의 수 세기. [Valiant–Vazirani 정리](valiant-vazirani.md)의 환원을 층마다 적용하면 PH 전체가 해의 수를 세는 신탁을 쓰는 다항시간 부류에 든다는 Toda 정리(Toda's theorem)가 나온다.
+- 해의 수 세기. [Valiant–Vazirani 정리](valiant-vazirani.md)의 환원을 층마다 적용하면 PH 전체가 해의 수를 세는 신탁을 쓰는 다항시간 부류에 든다는 [Toda 정리](toda-theorem.md)가 나온다.
 - [그래프 동형](graph-isomorphism.md). 그래프 동형이 NP-완전이면 PH 가 둘째 층에서 붕괴한다. 그래프 비동형에 짧은 대화형 증명이 있다는 것에서 나온다.
 - 회로 최소화와 두 사람 놀이. 직관 절의 최소 논리식 문제는 $\Sigma_2^{\mathrm p}$ 에 든다. 두 사람이 다항 길이의 수를 $k$ 번 번갈아 두고 승패가 다항시간에 판정되는 놀이에서 선수의 필승 판정은 $\Sigma_k^{\mathrm p}$ 에 든다.
 
@@ -79,6 +79,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Toda 정리](toda-theorem.md)
 
 #complexity #logic
