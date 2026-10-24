@@ -129,5 +129,6 @@ $$
 
 - [대화형 증명](interactive-proofs.md)
 - [교대 Turing 기계](alternating-turing-machines.md)
+- [NC 계층](nc-hierarchy.md)
 
 #complexity #computation #logic

@@ -62,6 +62,6 @@
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [NC 계층](nc-hierarchy.md)
 
 #complexity #logic #computation
