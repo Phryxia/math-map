@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-24T13:07:11.178Z",
-  "nextSeq": 2444,
+  "savedAt": "2026-10-24T17:07:23.345Z",
+  "nextSeq": 2449,
   "items": [
     {
       "id": "9bab7237",
@@ -3394,6 +3394,14 @@
       "note": "bch-codes(부모 reed-solomon-codes, 정보이론 개관 부호의 구성) 리프. 후보: 순환 부호 일반론을 별도 문서로(정의 절에 있다), Goppa 부호와 McEliece 암호, Hamming 부호 분리 여부(error-correcting-codes 절). pocklington-criterion(부모 pratt-certificate, 자식 elliptic-curve-primality-proving) 후보: Lucas-Lehmer 판정과 n+1 판정(Lucas 수열, Mersenne 수), Brillhart-Lehmer-Selfridge 판정 분리 여부(성질 절). pratt-certificate 는 computation 개관 P 대 NP 곁가지.",
       "createdAt": "2026-10-24T13:03:59.730Z",
       "seq": 2443
+    },
+    {
+      "id": "76326dc5",
+      "title": "2026-10-24 회차 새 문서 열셋의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #combinatorics #algorithms. 리프: traveling-salesman-problem, isolation-lemma, lyndon-words, de-bruijn-sequences, linear-feedback-shift-registers, randomized-complexity-classes, toda-theorem, kasteleyn-theorem, boolean-circuits. 후보: Held-Karp 1-트리 하한과 부분순회 제거 LP(부모 linear-programming, traveling-salesman-problem), 2-opt 와 Lin-Kernighan 국소 탐색; Tutte 행렬과 Pfaffian 을 별도 문서로(부모 matchings, kasteleyn-theorem); 자유 Lie 대수와 Witt 공식(부모 lie-algebras, lyndon-words); #P 와 해의 수 세기 복잡도를 별도 문서로(지금은 permanent 와 toda-theorem 이 정의 절에 적는다, 부모 np-completeness); 이합체 모형(부모 kasteleyn-theorem, ising-model); 중국인 우편배달부 문제(eulerian-circuits 활용 절에 한 항목); 상수 깊이 회로와 Håstad 전환 보조정리(부모 boolean-circuits); 대수적 복잡도 VP 와 VNP(부모 permanent, boolean-circuits).",
+      "createdAt": "2026-10-24T17:07:22.513Z",
+      "seq": 2448
     },
     {
       "id": "dfb3e493",
