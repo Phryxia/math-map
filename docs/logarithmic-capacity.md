@@ -80,7 +80,7 @@ $\frac1n\log\vert p\vert-\frac1n\log\Vert p\Vert_K-g_K$ 가 바깥 성분에서 
 # 활용
 
 - **대수적 정수의 분포.** 켤레가 모두 $K$ 에 드는 대수적 정수는 $\mathrm{cap}(K)\lt 1$ 이면 유한 개뿐이다(Fekete). 차수 $n$ 의 그런 대수적 정수의 최소다항식의 판별식은 $0$ 이 아닌 정수이므로 절댓값이 $1$ 이상인데, 판별식의 절댓값은 $\prod\_{i\lt j}\vert\alpha_i-\alpha_j\vert^2\le\delta_n(K)^{n(n-1)}$ 이하이고 $\delta_n(K)\to\mathrm{cap}(K)\lt 1$ 이므로 $n$ 이 유계다. $K$ 가 켤레에 대해 대칭이고 $\mathrm{cap}(K)\ge 1$ 이면 $K$ 의 어느 근방에도 켤레가 모두 그 근방에 드는 대수적 정수가 무한히 많다(Fekete–Szegő).[^3] $\lbrack-2,2\rbrack$ 는 경계의 경우이고 $2\cos(2\pi k/m)$ 들이 무한히 많은 예다.
-- **다항식 근사의 속도.** $K$ 위의 함수를 차수 $n$ 의 다항식으로 근사하는 최선 오차가 $e^{-n\rho}$ 규모로 줄어드는 것과 함수가 $g_K\lt\rho$ 인 영역까지 해석적으로 연장되는 것이 동치다(Bernstein–Walsh). [Clenshaw–Curtis 구적](clenshaw-curtis-quadrature.md)의 수렴 속도에 나오는 타원이 $\lbrack-1,1\rbrack$ 에서 $g_K$ 의 등위선이다.
+- **다항식 근사의 속도.** $K$ 위의 함수를 차수 $n$ 의 다항식으로 근사하는 최선 오차가 $e^{-n\rho}$ 규모로 줄어드는 것과 함수가 $g_K\lt\rho$ 인 영역까지 해석적으로 연장되는 것이 동치다([Bernstein–Walsh 정리](bernstein-walsh-theorem.md)). [Clenshaw–Curtis 구적](clenshaw-curtis-quadrature.md)의 수렴 속도에 나오는 타원이 $\lbrack-1,1\rbrack$ 에서 $g_K$ 의 등위선이다.
 - **제거가능 집합.** 용량 $0$ 인 콤팩트 집합 밖에서 유계인 조화함수는 그 집합으로 연장된다. 퍼텐셜 이론의 용량 $0$ 집합 정리를 평면에서 쓴 것이다.
 
 [^1]: M. Fekete, "Über die Verteilung der Wurzeln bei gewissen algebraischen Gleichungen mit ganzzahligen Koeffizienten", *Mathematische Zeitschrift* **17** (1923), 228–249. G. Szegő, "Bemerkungen zu einer Arbeit von Herrn M. Fekete", *Mathematische Zeitschrift* **21** (1924), 203–208.
@@ -96,6 +96,6 @@ $\frac1n\log\vert p\vert-\frac1n\log\Vert p\Vert_K-g_K$ 가 바깥 성분에서 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Bernstein–Walsh 정리](bernstein-walsh-theorem.md)
 
 #analysis #complex_analysis #number_theory
