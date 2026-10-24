@@ -183,6 +183,7 @@ graph TD
 먼저 읽을 갈래: 암호. 시작 문서: [오류정정부호](error-correcting-codes.md).
 
 - [오류정정부호](error-correcting-codes.md): 부호의 구성과 복호 알고리즘, 거리와 한계
+- [선형 되먹임 자리이동 레지스터](linear-feedback-shift-registers.md): 칸을 밀며 일차결합을 되먹이는 장치, 원시 특성다항식이 주는 최대 주기 qⁿ − 1 과 최대 길이 수열의 균형과 자기상관
 - [Berlekamp–Massey 알고리즘](berlekamp-massey.md): 수열을 만족하는 가장 짧은 선형 점화식을 불일치 보정으로 찾는다. 길이 정리와 처음 2L 항의 유일성
   - [Wiedemann 알고리즘](wiedemann-algorithm.md): 스칼라 수열 uᵀAⁱb 의 최소 점화식으로 희소 선형계를 행렬-벡터 곱만으로 푼다. 블록판과 인수분해의 선형대수
 - [Schoof–Elkies–Atkin 알고리즘](sea-algorithm.md): 유한체 위 타원곡선의 점 개수를 다항시간에 센다

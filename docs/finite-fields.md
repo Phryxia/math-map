@@ -120,7 +120,7 @@ $\mathbb{F}\_{p^n}$ 산술은 $\mathbb{F}\_p$ 계수 다항식을 기약다항�
 
 ## 암호와 난수
 
-$\mathbb{F}\_p$ 와 $\mathbb{F}\_{2^n}$ 의 곱셈군이 순환군이므로 [이산로그](discrete-logarithm.md) 문제가 정의되는 군이 나오고, Diffie–Hellman 키 교환이 그 위에 선다. 원시근을 이용한 선형 되풀이 수열(linear feedback shift register, LFSR)은 최대 주기 $2^n-1$ 의 비트열을 만든다.
+$\mathbb{F}\_p$ 와 $\mathbb{F}\_{2^n}$ 의 곱셈군이 순환군이므로 [이산로그](discrete-logarithm.md) 문제가 정의되는 군이 나오고, Diffie–Hellman 키 교환이 그 위에 선다. 원시근을 이용한 [선형 되먹임 자리이동 레지스터](linear-feedback-shift-registers.md)(linear feedback shift register, LFSR)는 최대 주기 $2^n-1$ 의 비트열을 만든다.
 
 ## 조합론과 기하
 
@@ -150,6 +150,7 @@ $\mathbb{F}\_q$ 위의 사영평면은 위수 $q$ 의 유한사영평면이고, 
 
 - [오류정정부호](error-correcting-codes.md)
 - [비밀 분산](secret-sharing.md)
+- [선형 되먹임 자리이동 레지스터](linear-feedback-shift-registers.md)
 - [타원곡선](elliptic-curves.md)
 
 #field_theory #algebra #cryptography #combinatorics

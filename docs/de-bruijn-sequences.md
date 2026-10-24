@@ -64,7 +64,7 @@ function deBruijn(k: number, n: number): number[] {
 
 ## 최대 길이 선형 귀환 수열
 
-[유한체](finite-fields.md) $\mathbb F_2$ 위의 차수 $n$ 원시 다항식으로 정한 선형 점화식 $s_{i+n}=c_{n-1}s_{i+n-1}+\cdots+c_0s_i$ 는 영이 아닌 초깃값에서 주기 $2^n-1$ 인 수열을 낸다. 한 주기 안에 영이 아닌 길이 $n$ 문자열이 모두 한 번씩 나오고 $0\cdots 0$ 만 빠지므로, $n-1$ 개의 $0$ 이 이어진 자리에 $0$ 하나를 더 넣으면 de Bruijn 수열이 된다. 이 수열을 **최대 길이 수열(maximum length sequence, m-sequence)** 이라 하고, 선형 귀환 시프트 레지스터(linear feedback shift register)로 한 글자에 상수 시간에 생성한다.
+[유한체](finite-fields.md) $\mathbb F_2$ 위의 차수 $n$ 원시 다항식으로 정한 선형 점화식 $s_{i+n}=c_{n-1}s_{i+n-1}+\cdots+c_0s_i$ 는 영이 아닌 초깃값에서 주기 $2^n-1$ 인 수열을 낸다. 한 주기 안에 영이 아닌 길이 $n$ 문자열이 모두 한 번씩 나오고 $0\cdots 0$ 만 빠지므로, $n-1$ 개의 $0$ 이 이어진 자리에 $0$ 하나를 더 넣으면 de Bruijn 수열이 된다. 이 수열을 **최대 길이 수열(maximum length sequence, m-sequence)** 이라 하고, [선형 되먹임 자리이동 레지스터](linear-feedback-shift-registers.md)로 한 글자에 상수 시간에 생성한다.
 
 # 활용
 

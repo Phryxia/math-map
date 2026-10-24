@@ -4,7 +4,7 @@
 
 **Berlekamp–Massey 알고리즘(Berlekamp–Massey algorithm)** 은 [체](fields.md) $F$ 위의 유한 수열 $s_0,\dots,s_{N-1}$ 을 만족하는 상수 계수 선형 점화식 가운데 길이가 가장 짧은 것을 $O(N^2)$ 번의 체 연산으로 찾는 알고리즘이다. 점화식을 한 항씩 늘려 가며 확인하고, 틀린 항이 나오면 앞서 틀렸던 점화식의 배수를 더해 고친다.
 
-E. Berlekamp 가 [BCH 부호](bch-codes.md)(Bose–Chaudhuri–Hocquenghem code)의 복호를 위해 만들었고, J. Massey 가 선형 되먹임 자리이동 레지스터(linear feedback shift register, LFSR)의 합성 문제로 다시 읽어 최소 길이의 증명을 붙였다.[^1]
+E. Berlekamp 가 [BCH 부호](bch-codes.md)(Bose–Chaudhuri–Hocquenghem code)의 복호를 위해 만들었고, J. Massey 가 [선형 되먹임 자리이동 레지스터](linear-feedback-shift-registers.md)(linear feedback shift register, LFSR)의 합성 문제로 다시 읽어 최소 길이의 증명을 붙였다.[^1]
 
 # 직관
 
