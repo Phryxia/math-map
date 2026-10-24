@@ -106,5 +106,6 @@ $\alpha=p/q$ 이면 $A=\bigcup_{k=0}^{q-1}\lbrack k/q, k/q+1/(2q))$ 가 불변�
 - [등분포](equidistribution.md)
 - [Gauss 사상](gauss-map.md)
 - [Poincaré 회전수](poincare-rotation-number.md)
+- [Kingman 부분가법 에르고딕 정리](kingman-subadditive-ergodic.md)
 
 #measure_theory #probability #analysis #theorem

@@ -48,7 +48,7 @@ $$
 - **스펙트럼 반지름.** 행렬 노름 $\Vert A^n\Vert$ 는 부분곱셈적이므로 $\lim\Vert A^n\Vert^{1/n}$ 이 존재한다. 그 값이 고윳값의 절댓값의 최댓값이라는 것이 Gelfand 공식(Gelfand's formula)이다.
 - **자기회피 보행.** 정수 격자 위에서 같은 점을 두 번 지나지 않는 길이 $n$ 인 경로의 개수 $c_n$ 은 $c_{m+n}\le c_mc_n$ 이므로 연결 상수(connective constant) $\lim c_n^{1/n}$ 이 존재한다.
 
-부분가법 확률과정으로 넓힌 것이 Kingman 부분가법 에르고딕 정리(Kingman's subadditive ergodic theorem)이고, 가법인 경우가 [에르고딕 정리](ergodic-theorem.md)다.
+부분가법 확률과정으로 넓힌 것이 [Kingman 부분가법 에르고딕 정리](kingman-subadditive-ergodic.md)이고, 가법인 경우가 [에르고딕 정리](ergodic-theorem.md)다.
 
 [^1]: M. Fekete, "Über die Verteilung der Wurzeln bei gewissen algebraischen Gleichungen mit ganzzahligen Koeffizienten", *Mathematische Zeitschrift* 17 (1923), 228–249.
 
@@ -60,6 +60,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Kingman 부분가법 에르고딕 정리](kingman-subadditive-ergodic.md)
 
 #analysis #combinatorics #probability
