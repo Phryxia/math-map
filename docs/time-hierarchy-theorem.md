@@ -91,6 +91,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Ladner 정리](ladner-theorem.md)
 
 #complexity #computation #logic #theorem

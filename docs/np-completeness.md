@@ -136,7 +136,7 @@ $G$ 의 정점 집합 $S$ 가 클릭인 것과, 여그래프 $G'$ (같은 정점
 - 실무에서 풀 수 없다는 뜻이 아니다. 현대 SAT solver 는 수백만 변수의 산업 인스턴스를 일상적으로 처리한다. 최악의 경우 지수 시간이라는 사실과 실제 인스턴스의 난이도는 별개다.
 - 모든 인스턴스가 어렵다는 뜻이 아니다. 특수한 입력 구조(트리 너비가 작은 그래프, 이분 그래프 등)에서는 다항시간에 풀리는 경우가 많다.
 - 근사도 어렵다는 뜻이 아니다. 근사 난이도는 별도의 이론이 필요하다. PCP(probabilistically checkable proof) 정리가 그것이고, 같은 NP-완전 문제라도 근사 가능성은 천차만별이다.
-- $\mathrm{NP}$ 에 속하는 모든 문제가 NP-완전은 아니다. $\mathrm P\ne\mathrm{NP}$ 라면 Ladner 정리로 두 부류 어디에도 속하지 않는 NP-중간(NP-intermediate) 문제가 존재한다. [그래프 동형](graph-isomorphism.md) 문제와 소인수분해([RSA 암호](rsa-cryptosystem.md)의 기반)가 그런 후보로 거론된다.
+- $\mathrm{NP}$ 에 속하는 모든 문제가 NP-완전은 아니다. $\mathrm P\ne\mathrm{NP}$ 라면 [Ladner 정리](ladner-theorem.md)로 두 부류 어디에도 속하지 않는 NP-중간(NP-intermediate) 문제가 존재한다. [그래프 동형](graph-isomorphism.md) 문제와 소인수분해([RSA 암호](rsa-cryptosystem.md)의 기반)가 그런 후보로 거론된다.
 - 결정불가능성과 다르다. NP-완전 문제는 모두 결정가능하며 지수 시간에 풀린다. [Rice 정리](rice-theorem.md)가 다루는 종류의 절대적 불가능성이 아니다.
 
 # 활용
@@ -171,6 +171,7 @@ $G$ 의 정점 집합 $S$ 가 클릭인 것과, 여그래프 $G'$ (같은 정점
 - [공간 복잡도](space-complexity.md)
 - [대화형 증명](interactive-proofs.md)
 - [Valiant–Vazirani 정리](valiant-vazirani.md)
+- [Ladner 정리](ladner-theorem.md)
 - [다항 계층](polynomial-hierarchy.md)
 
 #complexity #computation
