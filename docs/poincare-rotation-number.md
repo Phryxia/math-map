@@ -28,7 +28,7 @@ $$
 
 이다. 극한은 존재하고 $x$ 와 무관하다. $f$ 의 회전수는 $\rho(f)=\rho(F)\bmod 1$ 이고 올림의 선택과 무관하다. 회전 $R_\alpha(x)=x+\alpha$ 는 $\rho(R_\alpha)=\alpha\bmod 1$ 이다.
 
-존재의 증명은 $a_n=F^n(0)$ 이 $a_m+a_n-1\lt a_{m+n}\lt a_m+a_n+1$ 을 만족한다는 데서 나온다. $a_n+1$ 은 부분가법성(subadditivity)을 만족하므로 Fekete 보조정리(Fekete's lemma)로 $a_n/n$ 이 수렴한다. 직관 절의 부등식으로 극한이 $x$ 에 무관하다.
+존재의 증명은 $a_n=F^n(0)$ 이 $a_m+a_n-1\lt a_{m+n}\lt a_m+a_n+1$ 을 만족한다는 데서 나온다. $a_n+1$ 은 부분가법성(subadditivity)을 만족하므로 [Fekete 보조정리](fekete-lemma.md)로 $a_n/n$ 이 수렴한다. 직관 절의 부등식으로 극한이 $x$ 에 무관하다.
 
 # 성질
 

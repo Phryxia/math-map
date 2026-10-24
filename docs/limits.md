@@ -97,5 +97,6 @@ $$
 - [급수의 수렴판정](series-convergence.md)
 - [생성함수](generating-functions.md)
 - [큰 수의 법칙](law-of-large-numbers.md)
+- [Fekete 보조정리](fekete-lemma.md)
 
 #analysis #topology #algorithms

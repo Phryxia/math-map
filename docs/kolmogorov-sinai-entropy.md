@@ -38,7 +38,7 @@ $$
 h(T,\mathcal P)=\lim_{n\to\infty}\frac1n H\Big(\bigvee_{k=0}^{n-1}T^{-k}\mathcal P\Big)
 $$
 
-이고, $h(T)=\sup_{\mathcal P}h(T,\mathcal P)$ 를 $T$ 의 **엔트로피**라 한다. 극한은 $H$ 의 부분가법성과 Fekete 보조정리로 존재한다.
+이고, $h(T)=\sup_{\mathcal P}h(T,\mathcal P)$ 를 $T$ 의 **엔트로피**라 한다. 극한은 $H$ 의 부분가법성과 [Fekete 보조정리](fekete-lemma.md)로 존재한다.
 
 $\bigvee_{k=0}^{n-1}T^{-k}\mathcal P$ 의 조각은 처음 $n$ 걸음 동안 궤도가 $\mathcal P$ 의 어느 조각에 있었는지를 기록한 것이므로, $H$ 는 길이 $n$ 의 관측 기록이 담는 정보량이다.
 

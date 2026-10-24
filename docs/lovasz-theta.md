@@ -58,7 +58,7 @@ $$
 \Theta(G)=\lim_{k\to\infty}\alpha(G^{\boxtimes k})^{1/k}=\sup_k\alpha(G^{\boxtimes k})^{1/k}
 $$
 
-Fekete 보조정리로 극한이 존재하고 $\alpha(G)\le\Theta(G)$ 다.
+[Fekete 보조정리](fekete-lemma.md)로 극한이 존재하고 $\alpha(G)\le\Theta(G)$ 다.
 
 # 성질
 

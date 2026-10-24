@@ -26,7 +26,7 @@ $$
 h(X)=\lim\_{n\to\infty}\frac{1}{n}\log\lvert B\_n(X)\rvert
 $$
 
-를 $X$ 의 **위상 엔트로피(topological entropy)** 라 한다. 극한은 $\log\lvert B\_n\rvert$ 의 부분가법성으로 존재한다.
+를 $X$ 의 **위상 엔트로피(topological entropy)** 라 한다. 극한은 $\log\lvert B\_n\rvert$ 의 부분가법성과 [Fekete 보조정리](fekete-lemma.md)로 존재한다.
 
 # 성질
 

@@ -59,6 +59,7 @@ graph TD
 먼저 읽을 것: [함수](functions.md)(기초 개관). 시작 문서: [수열의 극한](limits.md).
 
 - [수열의 극한](limits.md): 수렴의 정의와 극한의 사칙연산
+  - [Fekete 보조정리](fekete-lemma.md): 부분가법 수열을 n 으로 나눈 극한의 존재와 그 값이 하한이라는 것, 엔트로피와 증가율
 - [연속함수](continuity.md): $\varepsilon\text{-}\delta$ 정의와 열린집합 정의의 동치
   - [중간값 정리](intermediate-value-theorem.md): 구간 위의 연속함수가 두 끝값 사이의 모든 값을 갖는다는 정리, 이분법 증명과 구성적 근사형
 - [완비성](completeness.md): 극한값을 모르고도 수렴을 판정하는 조건
