@@ -130,5 +130,6 @@ $Y$ 가 단순연결이면 조건이 자동으로 만족된다. 경로와 호모
 - [Riemann 곡면](riemann-surfaces.md)
 - [에탈 기본군](etale-fundamental-group.md)
 - [등스펙트럼 다양체](isospectral-manifolds.md)
+- [Poincaré 회전수](poincare-rotation-number.md)
 
 #algebraic_topology #topology #group_theory

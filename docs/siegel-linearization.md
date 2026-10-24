@@ -94,7 +94,7 @@ $z^2+c$ 의 고정점 승수가 $e^{2\pi i\theta}$ 가 되는 $c$ 는 [Mandelbro
 
 ## 작은 분모 문제
 
-[Kolmogorov–Arnold–Moser 정리](kam-theorem.md)의 불변 토러스도 Diophantine 진동수에서 작은 분모를 이겨 좌표 바꾸기를 수렴시키는 논법으로 증명된다. Siegel 정리가 이 논법이 성공한 첫 경우다. 원의 해석적 미분동형사상을 회전으로 선형화하는 Arnold 정리와 Herman 정리도 같은 꼴이고, Fatou 성분의 Herman 환의 존재가 Herman 정리에서 나온다.
+[Kolmogorov–Arnold–Moser 정리](kam-theorem.md)의 불변 토러스도 Diophantine 진동수에서 작은 분모가 있어도 좌표 바꾸기가 수렴함을 보이는 논법으로 증명된다. Siegel 정리가 이 논법이 성공한 첫 경우다. 원의 미분동형사상을 [Poincaré 회전수](poincare-rotation-number.md)의 회전으로 선형화하는 Arnold 정리와 Herman 정리도 같은 꼴이고, Fatou 성분의 Herman 환의 존재가 Herman 정리에서 나온다.
 
 [^1]: C. L. Siegel, "Iteration of analytic functions", *Annals of Mathematics* 43 (1942), 607–612. 증명과 Koenigs, Cremer 정리의 서술은 J. Milnor, *Dynamics in One Complex Variable*, 3rd ed. (2006), §8, §11.
 

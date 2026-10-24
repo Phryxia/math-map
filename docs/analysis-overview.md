@@ -124,6 +124,7 @@ graph TD
 
 - [Lebesgue 적분](lebesgue-integral.md): 적분을 측도로 다시 세운다
   - [Rademacher 정리](rademacher-theorem.md): Lipschitz 사상이 거의 모든 점에서 미분가능하다는 정리
+  - [Poincaré 회전수](poincare-rotation-number.md): 원 위상동형사상의 평균 회전량, 유리 회전수와 주기 궤도, Denjoy 정리와 Diophantine 회전수의 매끄러운 공액
 - [정칙함수](holomorphic-functions.md): 복소미분이 해석성을 강제한다
   - [비표준 해석학](nonstandard-analysis.md): 무한소를 원소로 갖는 순서체에서 극한을 계산으로 바꾼다
 
