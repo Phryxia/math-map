@@ -70,6 +70,7 @@ graph TD
   - [일반화선형모형](generalized-linear-models.md): 반응분포를 지수족으로 둔 회귀, 정준연결함수와 반복 가중최소제곱
 - [편향-분산 분해](bias-variance-decomposition.md): 평균제곱오차를 편향의 제곱과 분산으로 가르는 항등식
   - [James–Stein 추정량](james-stein-estimator.md): 세 개 이상의 정규 평균을 함께 줄여 추정하면 모든 모수에서 관측 자체보다 제곱오차가 작다
+    - [Ledoit–Wolf 축소 추정](ledoit-wolf-shrinkage.md): 표본공분산을 단위행렬의 배수 쪽으로 줄이는 볼록결합, 자료에서 계산한 최적 비율과 신탁 추정량에 대한 일치성
 - [정칙화](regularization.md): 잔차제곱합에 계수의 크기를 재는 벌점을 더하는 추정, 능형회귀와 라소의 축소와 희소성
 - [교차검증](cross-validation.md): 적합에 쓰지 않은 조각으로 오차를 재는 절차, 선형 적합에서의 닫힌 꼴
 - [정보 기준](information-criteria.md): 로그가능도에 모수 개수의 벌점을 더해 모형을 비교하는 양, 벌점의 크기에서 갈리는 두 기준

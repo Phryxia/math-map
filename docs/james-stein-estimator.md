@@ -89,7 +89,7 @@ James–Stein 추정량은 사후평균의 모르는 배수 $1/(1+\tau^2)$ 를 �
 # 활용
 
 - **능형회귀.** [정칙화](regularization.md)의 능형회귀는 최소제곱 계수를 원점 쪽으로 줄이는 추정이고, 직교 설계에서는 고정 배수 $cX$ 꼴이다. 배수를 자료에서 정하는 일반화교차검증과 Stein 의 비편향 위험 추정(Stein's unbiased risk estimate)이 위 위험 공식과 같은 계산이다.
-- **공분산행렬의 축소.** [Marchenko–Pastur 법칙](marchenko-pastur.md)이 보이는 표본공분산 고윳값의 퍼짐을 줄이려고, Ledoit 와 Wolf 는 표본공분산을 단위행렬의 배수 쪽으로 줄이고 그 비율을 자료에서 정했다.
+- **공분산행렬의 축소.** [Marchenko–Pastur 법칙](marchenko-pastur.md)이 보이는 표본공분산 고윳값의 퍼짐을 줄이려고, [Ledoit–Wolf 축소 추정](ledoit-wolf-shrinkage.md)은 표본공분산을 단위행렬의 배수 쪽으로 줄이고 그 비율을 자료에서 정한다.
 - **여러 평균의 동시 추정.** 야구 타율, 지역별 발생률처럼 같은 꼴의 평균을 여러 개 추정할 때 전체 평균 $\bar X$ 쪽으로 줄이는 판본 $\bar X+\bigl(1-(p-3)/\Vert X-\bar X\Vert^2\bigr)(X-\bar X)$ 를 쓴다.
 
 [^1]: C. Stein, *Inadmissibility of the usual estimator for the mean of a multivariate normal distribution*, Proc. Third Berkeley Symp. Math. Statist. Prob. 1 (1956), 197–206.
@@ -105,6 +105,6 @@ James–Stein 추정량은 사후평균의 모르는 배수 $1/(1+\tau^2)$ 를 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Ledoit–Wolf 축소 추정](ledoit-wolf-shrinkage.md)
 
 #statistics #probability
