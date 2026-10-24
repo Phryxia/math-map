@@ -78,6 +78,8 @@ $$
 
 **정리 (Mossel–O'Donnell–Oleszkiewicz).** 잡음 안정성을 최대화하는 함수는 좌표 하나에만 의존하는 독재자 함수 $f(x)=x_i$ 이고, 모든 좌표의 영향력이 작다는 조건을 걸면 다수결이다.
 
+증명은 [다항식의 불변 원리](invariance-principle-polynomials.md)로 문제를 Gauss 공간으로 옮기고 Borell 의 등주정리(Borell's isoperimetric theorem)를 쓴다.
+
 이 정리가 UGC 를 근사 난해성으로 번역한다. 유일게임 사례에서 정점마다 함수를 하나씩 두고 절단 문제로 옮기면 좋은 배정의 존재가 독재자 함수의 존재로, 나쁜 배정뿐인 상황이 영향력이 작은 함수만 있는 상황으로 바뀌고, 두 경우의 절단 값 차이가 $\alpha_{\mathrm{GW}}$ 만큼 벌어진다.
 
 ## 근사비 αGW 의 계산
