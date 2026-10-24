@@ -86,7 +86,7 @@ $$
 
 이다. 우변은 $n\to\infty$ 에서 다수결 함수의 안정성의 극한값이다.
 
-*증명.* 불변 원리로 $\pm1$ 입력을 Gauss 입력으로 바꿔도 저차 다항식의 분포가 거의 변하지 않음을 보이고, Gauss 쪽에서 Borell 의 [등주부등식](isoperimetric-inequality.md)을 쓴다. 옮기는 것을 정당화하는 것이 초축약성이다.
+*증명.* [불변 원리](invariance-principle-polynomials.md)로 $\pm1$ 입력을 Gauss 입력으로 바꿔도 저차 다항식의 분포가 거의 변하지 않음을 보이고, Gauss 쪽에서 Borell 의 [등주부등식](isoperimetric-inequality.md)을 쓴다. 옮기는 것을 정당화하는 것이 초축약성이다.
 
 # 성질
 
@@ -151,5 +151,6 @@ Walsh–Hadamard 변환으로 $2^n$ 개 계수를 $O(n2^n)$ 에 뽑고, Parseval
 
 - [Kahn–Kalai–Linial 정리](kkl-theorem.md)
 - [유일게임 추측과 2-to-2 정리](unique-games.md)
+- [다항식의 불변 원리](invariance-principle-polynomials.md)
 
 #combinatorics #complexity #analysis #computation
