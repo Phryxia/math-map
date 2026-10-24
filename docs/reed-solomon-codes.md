@@ -123,6 +123,6 @@ $t$ 보다 많은 오류가 있으면 가까운 부호어가 여럿일 수 있�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [BCH 부호](bch-codes.md)
 
 #information_theory #field_theory #algorithms
