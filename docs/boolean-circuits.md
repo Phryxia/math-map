@@ -63,5 +63,6 @@
 ## 더 알아보기
 
 - [NC 계층](nc-hierarchy.md)
+- [통신 복잡도](communication-complexity.md)
 
 #complexity #logic #computation

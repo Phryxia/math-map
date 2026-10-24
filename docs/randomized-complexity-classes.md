@@ -93,6 +93,6 @@ R. Impagliazzo 와 A. Wigderson 은 지수 시간 $\mathrm E=\mathrm{DTIME}(2^{O
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [통신 복잡도](communication-complexity.md)
 
 #complexity #algorithms #probability
