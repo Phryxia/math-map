@@ -74,7 +74,7 @@ $$
 
 ## 사상류군의 분류
 
-Bers 는 사상류 $\phi$ 에 대해 $\inf_X d(X,\phi X)$ 를 보고 Nielsen–Thurston 분류를 증명했다.[^2] 하한이 $0$ 으로 달성되면 $\phi$ 는 유한위수다. 하한이 양수로 달성되면 $\phi$ 가 어떤 Teichmüller 측지선을 보존하는 유사 Anosov 사상이고, 그 측지선의 이차미분의 수평·수직 엽층이 $\phi$ 가 늘이는 방향과 줄이는 방향이다. 하한이 달성되지 않으면 $\phi$ 는 곡선족을 보존하는 가약 사상이다.
+Bers 는 [사상류군](mapping-class-group.md)의 원소 $\phi$ 에 대해 $\inf_X d(X,\phi X)$ 를 보고 Nielsen–Thurston 분류(Nielsen–Thurston classification)를 증명했다.[^2] 하한이 $0$ 으로 달성되면 $\phi$ 는 주기적이다. 하한이 양수로 달성되면 $\phi$ 가 어떤 Teichmüller 측지선을 보존하는 의사 Anosov(pseudo-Anosov) 사상이고, 그 측지선의 이차미분의 수평·수직 엽층이 $\phi$ 가 늘이는 방향과 줄이는 방향이다. 하한이 달성되지 않으면 $\phi$ 는 서로 만나지 않는 단순 닫힌 곡선들의 모임을 보존하는 환원 가능 사상이다.
 
 ## 평평한 곡면
 

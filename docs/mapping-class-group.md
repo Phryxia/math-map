@@ -52,7 +52,7 @@ $\lambda$ 는 대수적 정수이고 그 원소의 늘임률이다. 토러스에
 
 ## Teichmüller 공간 위의 작용
 
-$\mathrm{Mod}(S_g)$ 는 [Teichmüller 공간](teichmuller-space.md) $\mathcal T_g$ 에 표시를 바꾸는 것으로 작용하고, 이 작용은 고유 불연속이다. 유한 위수 원소가 고정점을 가질 수 있으므로 작용은 자유롭지 않다.
+$\mathrm{Mod}(S_g)$ 는 [Teichmüller 공간](teichmuller-space.md) $\mathcal T_g$ 에 표시를 바꾸는 것으로 작용하고, 이 작용은 고유 불연속이다. 유한 위수 원소가 고정점을 가질 수 있으므로 작용은 자유롭지 않다. Bers 는 이 작용에서 원소가 점을 옮기는 거리의 하한을 [Teichmüller 정리](teichmuller-theorem.md)로 계산해 Nielsen–Thurston 분류를 증명했다.
 
 # 활용
 
