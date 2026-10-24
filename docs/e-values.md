@@ -72,7 +72,7 @@ $$
 
 - **연구 결과의 누적.** 한 연구의 e-값을 보고 다음 연구를 할지 정해도, 연구들의 e-값을 곱한 값이 e-값이다.
 - **신뢰열.** 모수 $\theta$ 마다 귀무가설 $\lbrace\theta\rbrace$ 의 검정 martingale $M_n(\theta)$ 를 두면 $\lbrace\theta:M_n(\theta)\lt 1/\alpha\rbrace$ 이 수준 $1-\alpha$ 의 신뢰열이다. 정규분포 평균에 대한 혼합법 신뢰열이 이 구성이다.
-- **다중검정.** 가설 $m$ 개의 e-값을 크기순으로 $e_{(1)}\ge\cdots\ge e_{(m)}$ 이라 하고 $e_{(k)}\ge m/(\alpha k)$ 인 가장 큰 $k$ 까지 기각하면, 가설들 사이의 의존 구조와 상관없이 거짓 발견률(false discovery rate, FDR)이 $\alpha$ 이하다. 이 절차를 e-BH(e-Benjamini–Hochberg) 라 하고, Benjamini–Hochberg 절차(Benjamini–Hochberg procedure)를 e-값으로 옮긴 것이다.[^3]
+- **다중검정.** 가설 $m$ 개의 e-값을 크기순으로 $e_{(1)}\ge\cdots\ge e_{(m)}$ 이라 하고 $e_{(k)}\ge m/(\alpha k)$ 인 가장 큰 $k$ 까지 기각하면, 가설들 사이의 의존 구조와 상관없이 [거짓 발견률](false-discovery-rate.md)(false discovery rate, FDR)이 $\alpha$ 이하다. 이 절차를 e-BH(e-Benjamini–Hochberg) 라 하고, Benjamini–Hochberg 절차(Benjamini–Hochberg procedure)를 e-값으로 옮긴 것이다.[^3]
 
 [^1]: Vladimir Vovk, Ruodu Wang, "E-values: Calibration, combination and applications", *Annals of Statistics* 49 (2021), 1736–1754.
 [^2]: Larry Wasserman, Aaditya Ramdas, Sivaraman Balakrishnan, "Universal inference", *Proceedings of the National Academy of Sciences* 117 (2020), 16880–16890.

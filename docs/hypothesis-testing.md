@@ -72,7 +72,7 @@ $$
 1-(1-\alpha)^m\qquad(\alpha=0.05,\ m=20\ \Rightarrow\ \approx 0.64)
 $$
 
-Bonferroni 보정이나 false discovery rate 통제가 이 문제를 다룬다. 유의해질 때까지 데이터를 더 모으거나 가설을 바꾸는 관행(p-hacking)은 명목 유의수준을 무의미하게 만든다.
+Bonferroni 보정이나 [거짓 발견률](false-discovery-rate.md) 통제가 이 문제를 다룬다. 유의해질 때까지 데이터를 더 모으거나 가설을 바꾸는 관행(p-hacking)은 명목 유의수준을 무의미하게 만든다.
 
 ## Neyman–Pearson 보조정리
 
@@ -157,6 +157,7 @@ $$
 - [신뢰구간](confidence-intervals.md)
 - [가능도비 검정](likelihood-ratio-test.md)
 - [순차확률비 검정](sequential-probability-ratio-test.md)
+- [거짓 발견률](false-discovery-rate.md)
 - [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)
 
 #statistics #probability
