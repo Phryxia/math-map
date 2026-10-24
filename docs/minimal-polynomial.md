@@ -125,5 +125,6 @@ $m\_T$ 와 $\chi\_T$ 를 함께 알아도 유사류는 결정되지 않는다. $
 ## 더 알아보기
 
 - [Jordan 표준형](jordan-canonical-form.md)
+- [Wiedemann 알고리즘](wiedemann-algorithm.md)
 
 #linear_algebra #algebra #ring_theory
