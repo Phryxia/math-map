@@ -93,6 +93,7 @@ Carmichael 수 $561$ 은 Fermat 판정을 모든 서로소인 밑에서 통과�
 - 소수 생성. [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 키 생성은 무작위 홀수를 뽑아 작은 소수로 나눠 본 뒤 Miller–Rabin 판정을 여러 밑으로 통과하는 수를 쓴다. 수가 클수록 무작위 합성수가 한 밑에서 통과할 확률은 $4^{-1}$ 보다 훨씬 작다[^3].
 - 인수분해. 직관 절처럼 $x^2\equiv 1$ 이고 $x\not\equiv\pm 1$ 인 $x$ 가 나오면 $\gcd(x-1,n)$ 이 진약수다. $\varphi(n)$ 이나 RSA 의 복호 지수를 아는 사람은 이 방법으로 $n$ 을 인수분해한다.
 - 무작위 알고리즘의 예. 합성수 판정이 다항시간 무작위 알고리즘으로 풀린다는 것, 곧 합성수 문제가 RP(randomized polynomial time) 에 속한다는 것이 이 판정에서 나온다.
+- 소수 증명의 앞 단계. 통과한 수가 소수라는 증명서가 필요하면 [타원곡선 소수 증명](elliptic-curve-primality-proving.md)을 돌린다. Miller–Rabin 으로 합성수를 먼저 걸러 두면 증명 단계의 곡선 탐색이 소수에서만 일어난다.
 
 [^1]: G. L. Miller, "Riemann's hypothesis and tests for primality", Journal of Computer and System Sciences 13 (3) (1976), 300–317.
 [^2]: M. O. Rabin, "Probabilistic algorithm for testing primality", Journal of Number Theory 12 (1) (1980), 128–138.
@@ -109,6 +110,6 @@ Carmichael 수 $561$ 은 Fermat 판정을 모든 서로소인 밑에서 통과�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [타원곡선 소수 증명](elliptic-curve-primality-proving.md)
 
 #number_theory #algorithms #cryptography #probability
