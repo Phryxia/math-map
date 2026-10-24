@@ -75,7 +75,7 @@ $b^\ast=p$ 이므로 기댓값은 $\sum_ip_i\cdot b_io_i/(p_io_i)=\sum_ib_i=1$ �
 # 활용
 
 - **e-값과 내기 검정.** 귀무가설 아래에서 공정한 배당으로 내기를 하면 돈의 기댓값이 $1$ 이므로 돈이 [e-값](e-values.md)이다. 대립가설에서 돈의 로그 성장률을 최대로 하는 e-변수가 Kelly 기준의 가능도비이고, 그 성장률이 KL divergence 다.
-- **포트폴리오 선택.** 자산 수익률이 매 기간 독립으로 같은 분포를 따를 때, 로그 수익의 기댓값을 최대로 하는 포트폴리오가 Kelly 기준의 일반화다. Cover 의 보편 포트폴리오(universal portfolio)는 분포를 모르고도 사후에 본 최선의 고정 포트폴리오와 같은 지수 성장률을 얻는다.[^4]
+- **포트폴리오 선택.** 자산 수익률이 매 기간 독립으로 같은 분포를 따를 때, 로그 수익의 기댓값을 최대로 하는 포트폴리오가 Kelly 기준의 일반화다. Cover 의 [보편 포트폴리오](universal-portfolio.md)는 분포를 모르고도 사후에 본 최선의 고정 포트폴리오와 같은 지수 성장률을 얻는다.[^4]
 - **자료 압축과의 대응.** 공정 배당 $o_i=m$ 에서 $W^\ast(p)=\log m-H(p)$ 이다. 성장률과 엔트로피의 합이 $\log m$ 으로 일정하므로, 결과를 잘 예측하는 분포가 짧은 부호도 준다.
 
 [^1]: J. L. Kelly Jr., "A new interpretation of information rate", *Bell System Technical Journal* 35 (1956), 917–926.
@@ -91,6 +91,6 @@ $b^\ast=p$ 이므로 기댓값은 $\sum_ip_i\cdot b_io_i/(p_io_i)=\sum_ib_i=1$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [보편 포트폴리오](universal-portfolio.md)
 
 #information_theory #probability #statistics
