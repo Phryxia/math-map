@@ -191,6 +191,10 @@ $$
 - [변분 추론](variational-inference.md)
 - [Sinkhorn 알고리즘](sinkhorn.md)
 
+### 내기와 검정
+
+- [Kelly 기준](kelly-criterion.md)
+
 ### 확률의 점근
 
 - [대편차 원리](large-deviations.md)

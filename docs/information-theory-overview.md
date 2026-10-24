@@ -76,6 +76,7 @@ graph TD
 
 - [대편차 원리](large-deviations.md) — 표본평균이 기댓값에서 벗어날 확률의 지수 감소율이 KL divergence 다
 - [지수족](exponential-families.md) — 로그분배함수의 Legendre 변환이 KL divergence 를 준다
+- [Kelly 기준](kelly-criterion.md) — 되풀이하는 내기에서 로그 성장률을 최대로 하는 비례 내기. 성장률이 엔트로피와 KL divergence 로 적히고 곁정보가 상호정보량만큼 늘린다
 
 ## 최적화와 학습
 
