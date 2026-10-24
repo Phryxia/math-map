@@ -94,5 +94,6 @@ $$
 ## 더 알아보기
 
 - [Burnside 의 pᵃqᵇ 정리](burnside-pq-theorem.md)
+- [Barrington 정리](barrington-theorem.md)
 
 #group_theory #algebra #field_theory

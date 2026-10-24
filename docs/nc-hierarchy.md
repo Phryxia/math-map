@@ -90,6 +90,6 @@ $\mathrm{AC}^0\ne\mathrm{NC}^1$ 이다. 홀짝 함수는 깊이 $O(\log n)$ 의 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Barrington 정리](barrington-theorem.md)
 
 #complexity #computation #algorithms
