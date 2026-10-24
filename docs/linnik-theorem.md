@@ -72,7 +72,6 @@ Heath-Brown 의 $5.5$ 는 영점 없는 영역과 Deuring–Heilbronn 현상의 
 
 # 활용
 
-- [Siegel 영점](siegel-zeros.md)의 활용 절이 이 정리를 Deuring–Heilbronn 현상의 대표적인 쓰임으로 든다.
 - [Chebotarev 밀도 정리](chebotarev.md)의 유효한 판본에서, Lagarias, Montgomery, Odlyzko 는 같은 방법으로 주어진 Frobenius 류에 속하는 가장 작은 소 아이디얼의 노름을 판별식의 거듭제곱으로 막았다[^4].
 - 법 $q$ 를 정하고 $p\equiv 1\pmod q$ 인 소수를 찾는 계산은 $kq+1$ 을 $k=1,2,\dots$ 차례로 소수 판정한다. Linnik 정리가 $k\le Cq^{L-1}$ 에서 끝난다는 것을 보장하므로, 이 탐색은 $q$ 의 다항식 횟수 안에 끝난다.
 

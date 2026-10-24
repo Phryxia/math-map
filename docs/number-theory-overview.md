@@ -58,6 +58,7 @@ graph TD
   - [Baby-step giant-step 알고리즘](baby-step-giant-step.md): 지수를 $\sqrt N$ 진법의 두 자리로 나눠 표와 걸음의 충돌로 이산로그를 $O(\sqrt N)$ 에 찾는다
     - [Pohlig–Hellman 방법](pohlig-hellman.md): 위수의 소인수마다 부분군의 이산로그로 나누고 중국인의 나머지 정리로 합친다. 안전 소수와 작은 부분군 공격
   - [Pollard rho 알고리즘](pollard-rho.md): 되풀이한 수열이 $O(\sqrt m)$ 단계에 고리를 닫는 것으로 인수와 이산로그를 찾는다. Floyd 고리 찾기와 병렬 충돌 탐색
+  - [지표 계산법](index-calculus.md): 작은 소수들의 로그를 연립 합동식으로 구해 유한체 곱셈군의 이산로그를 준지수 시간에 찾는다. 매끄러운 수의 확률과 수체 체
   - [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman): 두 소수의 곱을 공개하고 소인수를 비밀로 두는 공개키 암호와 서명
   - [격자](lattices.md): 실벡터공간의 이산 부분군과 그 기본 영역의 부피
 - [타원곡선](elliptic-curves.md): 세제곱 곡선 위의 점이 이루는 아벨군과 그 군에서의 이산로그

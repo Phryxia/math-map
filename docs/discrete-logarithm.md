@@ -66,7 +66,7 @@ $$
 | [Baby-step giant-step 알고리즘](baby-step-giant-step.md) | $O(\sqrt p)$ | $O(\sqrt p)$ | 모든 군 |
 | [Pollard rho 알고리즘](pollard-rho.md) | $O(\sqrt p)$ | $O(1)$ | 모든 군 |
 | [Pohlig–Hellman 방법](pohlig-hellman.md) | 가장 큰 소인수 $q$ 에 대해 $O(\sqrt q)$ | $O(1)$ | 위수가 매끄러운 군 |
-| 지표 계산법 | 준지수 | 준지수 | [유한체](finite-fields.md)의 곱셈군 |
+| [지표 계산법](index-calculus.md) | 준지수 | 준지수 | [유한체](finite-fields.md)의 곱셈군 |
 
 ## 일반 군에서의 하한
 
@@ -140,6 +140,7 @@ RSA 키 전송 방식에는 이 성질이 없어 서버의 개인키가 유출�
 
 - [Baby-step giant-step 알고리즘](baby-step-giant-step.md)
 - [Pollard rho 알고리즘](pollard-rho.md)
+- [지표 계산법](index-calculus.md)
 - [타원곡선](elliptic-curves.md)
 
 ### 이산로그에 기반한 구성
