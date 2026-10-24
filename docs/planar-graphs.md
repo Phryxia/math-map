@@ -164,5 +164,6 @@ $$
 
 - [그래프 마이너](graph-minors.md)
 - [교차수 부등식](crossing-number-inequality.md)
+- [Kasteleyn 정리](kasteleyn-theorem.md)
 
 #graph_theory #topology
