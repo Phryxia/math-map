@@ -166,7 +166,7 @@ $y^2=x^3-2$ 의 정수해는 $\mathbb Z[\sqrt{-2}]$ 에서 $(y+\sqrt{-2})(y-\sqr
 
 ## 암호와 계산
 
-수체 체 거름법은 가장 빠른 소인수분해 알고리즘이며, 수체에서 노름이 매끄러운 원소를 찾아 관계를 모은다. [RSA](rsa-cryptosystem.md)(Rivest–Shamir–Adleman) 의 키 길이가 이 알고리즘의 준지수 복잡도 $\exp(O((\log N)^{1/3}))$ 로 정해진다.
+[수체 체](number-field-sieve.md) 거름법은 가장 빠른 소인수분해 알고리즘이며, 수체에서 노름이 매끄러운 원소를 찾아 관계를 모은다. [RSA](rsa-cryptosystem.md)(Rivest–Shamir–Adleman) 의 키 길이가 이 알고리즘의 준지수 복잡도 $\exp(O((\log N)^{1/3}))$ 로 정해진다.
 
 Ring-LWE(learning with errors) 가 쓰는 $\mathbb Z[x]/(x^n+1)$ 은 $\mathbb Z[\zeta_{2n}]$ 이며, 이 환의 산술 구조가 효율을 주는 동시에 공격 표면이 된다. 단원군과 류군을 계산하는 양자 알고리즘이 특정 구성에 위협이 된 전례가 있어, 표준화 과정에서 구조를 얼마나 넣을지가 쟁점이었다.
 
@@ -195,5 +195,9 @@ Ring-LWE(learning with errors) 가 쓰는 $\mathbb Z[x]/(x^n+1)$ 은 $\mathbb Z[
 
 - [이진 이차형식](binary-quadratic-forms.md)
 - [류수 1 문제](class-number-one.md)
+
+### 계산
+
+- [수체 체](number-field-sieve.md)
 
 #number_theory #ring_theory #field_theory

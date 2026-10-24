@@ -66,7 +66,7 @@ $L_p[\alpha,c]=\exp\big((c+o(1))(\log p)^\alpha(\log\log p)^{1-\alpha}\big)$ 로
 
 ## 수체 체와 함수체 체
 
-관계 수집을 정수 하나가 아니라 두 환의 원소 쌍이 동시에 매끄러운지로 바꾸면 매끄러워야 하는 수의 크기가 줄어든다. 수체 체(number field sieve)는 $(\mathbb Z/p\mathbb Z)^\times$ 의 이산로그를 $L_p[1/3,(64/9)^{1/3}]$ 에 구한다[^2]. 같은 꼴의 시간이 정수 소인수분해에서도 나오므로 유한체 Diffie–Hellman 과 [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 권장 키 길이가 비슷하다.
+관계 수집을 정수 하나가 아니라 두 환의 원소 쌍이 동시에 매끄러운지로 바꾸면 매끄러워야 하는 수의 크기가 줄어든다. [수체 체](number-field-sieve.md)(number field sieve)는 $(\mathbb Z/p\mathbb Z)^\times$ 의 이산로그를 $L_p[1/3,(64/9)^{1/3}]$ 에 구한다[^2]. 같은 꼴의 시간이 정수 소인수분해에서도 나오므로 유한체 Diffie–Hellman 과 [RSA 암호](rsa-cryptosystem.md)(Rivest–Shamir–Adleman)의 권장 키 길이가 비슷하다.
 
 작은 표수의 [유한체](finite-fields.md) $\mathbb F_{q^n}$ 에서는 함수체에서 관계를 모으는 방법이 더 빠르다. Barbulescu, Gaudry, Joux, Thomé 는 고정된 작은 $q$ 에 대해 $\mathbb F_{q^n}$ 의 이산로그를 준다항식(quasi-polynomial) 시간 $(\log q^n)^{O(\log\log q^n)}$ 에 구하는 발견적(heuristic) 알고리즘을 주었다[^3].
 

@@ -98,6 +98,7 @@ graph TD
 
 - [Dedekind 정역](dedekind-domains.md): 원소의 소인수분해가 깨진 자리에서 아이디얼의 분해가 유일해지는 정역
 - [대수적 수체](algebraic-number-fields.md): 유리수체의 유한 확대와 그 정수환, 판별식과 소수의 분해
+  - [수체 체](number-field-sieve.md): 정수와 대수적 정수의 환에서 동시에 제곱을 모아 인수를 찾는다. 매끄러워야 하는 수가 작아져 기대 시간 $L_n\lbrack 1/3,(64/9)^{1/3}\rbrack$
 - [원분체](cyclotomic-fields.md): 1 의 거듭제곱근을 붙인 체의 Galois 군 (ℤ/n)ˣ, 나머지로 정해지는 소수 분해, Kronecker–Weber 정리와 정칙 소수
   - [AKS 소수 판정법](aks-primality-test.md): $(X+a)^n\equiv X^n+a$ 를 $X^r-1$ 을 법으로 확인해 소수 여부를 결정론적 다항시간에 가르는 알고리즘
 - [분기군](ramification-groups.md): 분해군, 관성군, Frobenius 원소와 야생 분기를 재는 하첨자·상첨자 여과, 차분과 Artin 도체

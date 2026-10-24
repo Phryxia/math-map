@@ -4,7 +4,7 @@
 
 **이차 체(quadratic sieve)** 는 $x^2\equiv y^2\pmod n$ 이고 $x\not\equiv\pm y$ 인 쌍을 찾아 최대공약수 $\gcd(x-y,n)$ 으로 정수 $n$ 의 인수를 얻는 인수분해 알고리즘이다. 쌍을 만드는 재료로 $Q(x)=x^2-n$ 의 값 가운데 작은 소수로만 이루어진 것을 모으고, 그런 값을 체(sieve)로 한꺼번에 골라낸다.
 
-관계를 모으고 선형대수로 합치는 구조가 [지표 계산법](index-calculus.md)과 같다. 기대 시간은 $\exp\bigl((1+o(1))\sqrt{\log n\log\log n}\bigr)$ 이고, 대략 100 자리 이하의 합성수에서는 수체 체(number field sieve)보다 빠르다.
+관계를 모으고 선형대수로 합치는 구조가 [지표 계산법](index-calculus.md)과 같다. 기대 시간은 $\exp\bigl((1+o(1))\sqrt{\log n\log\log n}\bigr)$ 이고, 대략 100 자리 이하의 합성수에서는 [수체 체](number-field-sieve.md)보다 빠르다.
 
 # 직관
 
@@ -91,6 +91,6 @@ $x$ 가 $m$ 에서 멀어지면 $Q(x)$ 가 커져 매끄러울 확률이 떨어�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [수체 체](number-field-sieve.md)
 
 #number_theory #algorithms #cryptography
