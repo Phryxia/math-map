@@ -58,6 +58,6 @@ Brillhart, Lehmer, Selfridge 는 $F\ge n^{1/3}$ 이면 같은 조건에 $R$ 을 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [타원곡선 소수 증명](elliptic-curve-primality-proving.md)
 
 #number_theory #algorithms #complexity
