@@ -60,7 +60,7 @@ $K$ 준등각 사상은 Lebesgue 영집합을 영집합으로 보내고 Hölder 
 
 ## Teichmüller 거리
 
-종수 $g$ 곡면의 표시된 복소구조 $X,Y$ 에 대해 표시를 지키는 준등각 사상의 최소 팽창률을 $K(X,Y)$ 라 하면 $d(X,Y)=\tfrac12\log K(X,Y)$ 가 [Teichmüller 공간](teichmuller-space.md)의 거리다. 최소를 실현하는 사상이 유일하게 존재하고 그 Beltrami 계수가 정칙 이차미분으로 적힌다는 것이 Teichmüller 정리다.
+종수 $g$ 곡면의 표시된 복소구조 $X,Y$ 에 대해 표시를 지키는 준등각 사상의 최소 팽창률을 $K(X,Y)$ 라 하면 $d(X,Y)=\tfrac12\log K(X,Y)$ 가 [Teichmüller 공간](teichmuller-space.md)의 거리다. 최소를 실현하는 사상이 유일하게 존재하고 그 Beltrami 계수가 정칙 이차미분으로 적힌다는 것이 [Teichmüller 정리](teichmuller-theorem.md)다.
 
 ## 복소구조의 변형
 
@@ -82,5 +82,6 @@ $K$ 준등각 사상은 Lebesgue 영집합을 영집합으로 보내고 Hölder 
 ## 더 알아보기
 
 - [Fatou 성분의 분류](fatou-components.md)
+- [Teichmüller 정리](teichmuller-theorem.md)
 
 #complex_analysis #topology #differential_geometry

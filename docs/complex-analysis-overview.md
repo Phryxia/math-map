@@ -79,6 +79,7 @@ graph TD
   - [초타원곡선](hyperelliptic-curves.md): y² = f(x) 로 쓰이는 곡선, 초타원 대합과 정칙 미분의 기저, 종수 2 곡선이 전부 초타원이라는 것
   - [Klein 사차곡선](klein-quartic.md): 자기동형군 PSL₂(F₇) 로 Hurwitz 상계 84(g−1) 의 등호를 이루는 종수 3 곡선, 모듈러 곡선 X(7)
 - [준등각 사상](quasiconformal-maps.md): 왜곡을 유계로 묶은 동형사상, Beltrami 방정식과 가측 Riemann 사상 정리
+  - [Teichmüller 정리](teichmuller-theorem.md): 팽창률이 최소인 준등각 사상의 존재와 유일성, 정칙 이차미분으로 쓴 Beltrami 계수와 Teichmüller 공간의 좌표
   - [Riemann–Roch 정리](riemann-roch.md): 곡면 위 유리형함수 공간의 차원
   - [Jacobi 다양체](jacobian-variety.md): 주기 격자로 나눈 복소 토러스, Abel 정리가 주는 주 divisor 판정
   - [Kähler 다양체](kahler-manifolds.md): 조화형식으로 읽는 코호몰로지
