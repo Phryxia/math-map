@@ -86,7 +86,7 @@ $t_w(G)$ 는 [그래프 Laplacian](graph-laplacian.md)의 행렬-트리 정리(m
 
 - [외판원 문제](traveling-salesman-problem.md)의 Christofides 알고리즘. 최소 신장트리에 홀수 차수 정점의 최소 가중치 매칭을 더하면 모든 차수가 짝수가 되고, 그 그래프의 Euler 회로에서 방문한 도시를 건너뛰어 순회를 만든다.
 - 중국인 우편배달부 문제(Chinese postman problem). 모든 변을 한 번 이상 지나는 가장 짧은 닫힌 걸음을 찾는 문제다. 홀수 차수 정점들을 최단경로 길이를 가중치로 하는 최소 가중치 완전 [매칭](matchings.md)으로 짝지어 그 경로를 한 번 더 지나게 하면 Euler 회로가 생기고, 이것이 최적이다[^5].
-- de Bruijn 수열(de Bruijn sequence). 길이 $n$ 인 이진 문자열을 모두 연속 부분열로 한 번씩 담는 길이 $2^n$ 의 순환 수열이다. 길이 $n-1$ 인 문자열을 정점으로, 길이 $n$ 인 문자열을 변으로 둔 유향 그래프는 모든 정점에서 들어오는 차수와 나가는 차수가 $2$ 이므로 Euler 회로가 있고, 그 회로가 de Bruijn 수열을 준다.
+- [de Bruijn 수열](de-bruijn-sequences.md). 길이 $n$ 인 이진 문자열을 모두 연속 부분열로 한 번씩 담는 길이 $2^n$ 의 순환 수열이다. 길이 $n-1$ 인 문자열을 정점으로, 길이 $n$ 인 문자열을 변으로 둔 유향 그래프는 모든 정점에서 들어오는 차수와 나가는 차수가 $2$ 이므로 Euler 회로가 있고, 그 회로가 de Bruijn 수열을 준다.
 - [동적 연결성](dynamic-connectivity.md)의 Euler tour tree. 트리의 변을 양방향 두 변으로 바꾸면 모든 정점에서 들어오는 차수와 나가는 차수가 같아 Euler 회로가 생기고, 그 회로의 정점 열을 균형 트리에 담아 연결과 절단을 처리한다.
 
 [^1]: L. Euler, "Solutio problematis ad geometriam situs pertinentis", Commentarii Academiae Scientiarum Petropolitanae 8 (1741), 128–140. 1736 년에 발표했다.
@@ -103,6 +103,6 @@ $t_w(G)$ 는 [그래프 Laplacian](graph-laplacian.md)의 행렬-트리 정리(m
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [de Bruijn 수열](de-bruijn-sequences.md)
 
 #graph_theory #combinatorics #algorithms
