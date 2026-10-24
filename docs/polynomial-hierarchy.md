@@ -56,7 +56,7 @@ $$
 
 ## Karp–Lipton 정리
 
-정리. NP 의 모든 언어가 다항 크기 불 회로의 족으로 판정되면 $\mathrm{PH}=\Sigma_2^{\mathrm p}$ 다. R. M. Karp 와 R. J. Lipton 이 증명했다[^3].
+정리. NP 의 모든 언어가 다항 크기 [불 회로](boolean-circuits.md)의 족으로 판정되면 $\mathrm{PH}=\Sigma_2^{\mathrm p}$ 다. R. M. Karp 와 R. J. Lipton 이 증명했다[^3].
 
 대우로, PH 가 둘째 층에서 붕괴하지 않으면 다항 크기 회로로 판정되지 않는 NP 의 언어가 있다.
 
