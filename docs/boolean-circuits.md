@@ -47,7 +47,7 @@
 
 - [대화형 증명](interactive-proofs.md)과 계산 위임. [Goldwasser–Kalai–Rothblum 프로토콜](gkr-protocol.md)은 층으로 나뉜 산술회로의 출력을 회로의 깊이에 비례하는 라운드로 검증한다.
 - 암호. [뒤섞인 회로](garbled-circuits.md)는 함수를 불 회로로 쓰고 게이트마다 진리표를 암호화해 두 사람이 입력을 숨긴 채 함수값을 계산한다.
-- 탈무작위화. [유사난수 생성기](pseudorandom-generators.md)의 비무작위화 정리는 지수 크기 회로가 필요한 함수의 존재를 가정으로 쓴다.
+- 탈무작위화. [유사난수 생성기](pseudorandom-generators.md)의 비무작위화 정리는 지수 크기 회로가 필요한 함수의 존재를 가정으로 쓰고, 그 구성이 [Nisan–Wigderson 생성기](nisan-wigderson-generator.md)다.
 - 병렬 계산. 깊이가 $\log n$ 의 거듭제곱이고 크기가 다항인 회로 족의 부류 NC(Nick's class)가 병렬로 빠르게 풀리는 문제의 모형이다.
 
 [^1]: C. E. Shannon, "The synthesis of two-terminal switching circuits", Bell System Technical Journal 28(1) (1949), 59–98.
@@ -64,5 +64,6 @@
 
 - [NC 계층](nc-hierarchy.md)
 - [통신 복잡도](communication-complexity.md)
+- [Nisan–Wigderson 생성기](nisan-wigderson-generator.md)
 
 #complexity #logic #computation

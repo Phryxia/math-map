@@ -69,7 +69,7 @@ $AB=C$ 이면 두 값은 항상 같다. $AB\ne C$ 이면 $D=AB-C$ 에 $0$ 이 �
 
 ## 비무작위화
 
-R. Impagliazzo 와 A. Wigderson 은 지수 시간 $\mathrm E=\mathrm{DTIME}(2^{O(n)})$ 의 어떤 언어가 크기 $2^{\Omega(n)}$ 미만의 회로로 계산되지 않으면 $\mathrm P=\mathrm{BPP}$ 라는 것을 증명했다[^3]. 회로 하한에서 [유사난수 생성기](pseudorandom-generators.md)를 만들고 그 출력으로 무작위 비트를 대신한다.
+R. Impagliazzo 와 A. Wigderson 은 지수 시간 $\mathrm E=\mathrm{DTIME}(2^{O(n)})$ 의 어떤 언어가 크기 $2^{\Omega(n)}$ 미만의 회로로 계산되지 않으면 $\mathrm P=\mathrm{BPP}$ 라는 것을 증명했다[^3]. 회로 하한에서 [유사난수 생성기](pseudorandom-generators.md)를 만들고 그 출력으로 무작위 비트를 대신한다. 생성기의 구성은 [Nisan–Wigderson 생성기](nisan-wigderson-generator.md)다.
 
 # 활용
 
@@ -94,5 +94,6 @@ R. Impagliazzo 와 A. Wigderson 은 지수 시간 $\mathrm E=\mathrm{DTIME}(2^{O
 ## 더 알아보기
 
 - [통신 복잡도](communication-complexity.md)
+- [Nisan–Wigderson 생성기](nisan-wigderson-generator.md)
 
 #complexity #algorithms #probability
