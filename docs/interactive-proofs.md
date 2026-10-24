@@ -4,7 +4,7 @@
 
 **대화형 증명(interactive proof)** 은 계산 능력에 제한이 없는 증명자와 무작위성을 쓰는 다항시간 검증자가 메시지를 주고받아, 검증자가 입력이 언어에 속한다는 것을 높은 확률로 확신하게 하는 절차다. 이런 절차가 있는 언어 전체의 복잡도 류를 $\mathrm{IP}$ 라 한다.
 
-[NP-완전성](np-completeness.md)의 $\mathrm{NP}$ 는 증명자가 증거를 한 번 보내고 검증자가 결정적으로 검사하는 경우다. 대화와 무작위성을 허락하면 검증할 수 있는 언어가 다항 공간에서 판정되는 언어 전체 $\mathrm{PSPACE}$ 로 넓어진다. 이것이 Shamir 정리 $\mathrm{IP}=\mathrm{PSPACE}$ 다.
+[NP-완전성](np-completeness.md)의 $\mathrm{NP}$ 는 증명자가 증거를 한 번 보내고 검증자가 결정적으로 검사하는 경우다. 대화와 무작위성을 허락하면 검증할 수 있는 언어가 다항 공간에서 판정되는 언어 전체, 곧 [공간 복잡도](space-complexity.md)의 부류 $\mathrm{PSPACE}$ 로 넓어진다. 이것이 Shamir 정리 $\mathrm{IP}=\mathrm{PSPACE}$ 다.
 
 # 직관
 
@@ -83,6 +83,7 @@ $$
 
 - [NP-완전성과 Cook–Levin 정리](np-completeness.md)
 - [그래프 동형](graph-isomorphism.md)
+- [공간 복잡도](space-complexity.md)
 
 ## 더 알아보기
 

@@ -53,7 +53,7 @@ $AB=C$ 이면 두 값은 항상 같다. $AB\ne C$ 이면 $D=AB-C$ 에 $0$ 이 �
 - $\mathrm{RP}\subseteq\mathrm{NP}$. 받아들이게 하는 무작위 비트열 $r$ 이 증거다.
 - $\mathrm{RP}\subseteq\mathrm{BPP}$. RP 알고리즘을 두 번 돌리면 $x\in L$ 에서 받아들일 확률이 $3/4$ 이상이다.
 - BPP 는 여집합에 대해 닫혀 있다. 받아들임과 거부를 바꾸면 표의 두 열이 바뀐다.
-- $\mathrm{BPP}\subseteq\mathrm{PSPACE}$. PSPACE 는 다항 공간(polynomial space)으로 판정되는 언어의 부류다. 무작위 비트열을 전부 하나씩 돌려 받아들이는 비율을 센다.
+- $\mathrm{BPP}\subseteq\mathrm{PSPACE}$. PSPACE 는 다항 공간(polynomial space)으로 판정되는 언어의 부류다([공간 복잡도](space-complexity.md)). 무작위 비트열을 전부 하나씩 돌려 받아들이는 비율을 센다.
 
 ## Adleman 정리
 

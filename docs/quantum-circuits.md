@@ -54,7 +54,7 @@ Toffoli 게이트 $\vert a,b,c\rangle\mapsto\vert a,b,c\oplus(a\wedge b)\rangle$
 
 ## BQP 의 상계
 
-$\mathrm{BQP}\subseteq\mathrm{PSPACE}$ 다[^2]. PSPACE(polynomial space)는 다항 공간으로 판정되는 문제의 부류다. 출력이 $1$ 일 확률은 진폭 $\langle b\vert G_m\cdots G_1\vert 0\cdots 0\rangle$ 의 제곱의 합이고, 각 진폭은 중간 기저 상태 $m-1$ 개에 걸친 경로 합이다. 경로를 하나씩 돌며 더하면 시간은 지수지만 공간은 다항으로 충분하다.
+$\mathrm{BQP}\subseteq\mathrm{PSPACE}$ 다[^2]. PSPACE(polynomial space)는 다항 공간으로 판정되는 문제의 부류다([공간 복잡도](space-complexity.md)). 출력이 $1$ 일 확률은 진폭 $\langle b\vert G_m\cdots G_1\vert 0\cdots 0\rangle$ 의 제곱의 합이고, 각 진폭은 중간 기저 상태 $m-1$ 개에 걸친 경로 합이다. 경로를 하나씩 돌며 더하면 시간은 지수지만 공간은 다항으로 충분하다.
 
 ## Clifford 회로
 

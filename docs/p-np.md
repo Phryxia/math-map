@@ -37,7 +37,7 @@ $$
 | 부류 | 뜻 |
 |---|---|
 | $\mathrm{coNP}$ | 여집합이 NP. 아니오 쪽에 짧은 증거가 있음 |
-| $\mathrm{PSPACE}$ | 다항 크기 메모리로 판정 가능 |
+| $\mathrm{PSPACE}$ | 다항 크기 메모리로 판정 가능. [공간 복잡도](space-complexity.md)의 부류 |
 | $\mathrm{EXPTIME}$ | 지수시간에 판정 가능 |
 | $\mathrm{BPP}$ | 무작위 다항시간, 오답 확률 유계. [무작위 복잡도 부류](randomized-complexity-classes.md)의 하나 |
 
