@@ -88,7 +88,7 @@ $$
 
 # 활용
 
-- **부호의 복호.** Reed–Solomon 부호와 BCH 부호에서 받은 단어의 신드롬 $2t$ 개는 오류 위치의 역수들을 근으로 하는 다항식의 점화식을 만족한다. 이 알고리즘으로 오류 위치 다항식을 구하고, 근을 찾아 오류 자리를 정한다. [오류정정부호](error-correcting-codes.md)의 Reed–Solomon 복호가 이 단계를 쓴다.
+- **부호의 복호.** [Reed–Solomon 부호](reed-solomon-codes.md)와 BCH 부호에서 받은 단어의 신드롬 $2t$ 개는 오류 위치의 역수들을 근으로 하는 다항식의 점화식을 만족한다. 이 알고리즘으로 오류 위치 다항식을 구하고, 근을 찾아 오류 자리를 정한다. [오류정정부호](error-correcting-codes.md)에서 이 방법이 표준 복호다.
 - **스트림 암호의 분석.** 선형 복잡도가 $L$ 인 키 수열(keystream)은 연속한 $2L$ 비트에서 전체가 복원된다. 그래서 LFSR 하나의 출력을 그대로 쓰는 스트림 암호는 안전하지 않고, 비선형 결합으로 선형 복잡도를 키운다.
 - **희소 선형계.** 유한체 위의 큰 희소행렬 $A$ 에서 스칼라 수열 $u^{\mathsf T}A^iv$ 의 최소 점화식을 이 알고리즘으로 구하면 $A$ 의 [최소다항식](minimal-polynomial.md)의 인수가 나오고, 그것으로 $Ax=v$ 를 푼다. 이것이 [Wiedemann 알고리즘](wiedemann-algorithm.md)이다.
 
@@ -104,5 +104,6 @@ $$
 ## 더 알아보기
 
 - [Wiedemann 알고리즘](wiedemann-algorithm.md)
+- [Reed–Solomon 부호](reed-solomon-codes.md)
 
 #algorithms #field_theory #cryptography

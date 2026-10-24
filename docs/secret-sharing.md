@@ -53,7 +53,7 @@ Shamir 방식에서 $t-1$ 개의 조각은 $s$ 와 독립으로 균등하게 분
 
 ## Reed–Solomon 부호와의 관계
 
-Shamir 조각 $(f(1),\dots,f(n))$ 은 [오류정정부호](error-correcting-codes.md)의 Reed–Solomon 부호어다. 그래서 조각 가운데 $e$ 개가 거짓이어도 $n\ge t+2e$ 이면 복호 알고리즘으로 $f$ 와 $s$ 를 복원한다[^5].
+Shamir 조각 $(f(1),\dots,f(n))$ 은 [오류정정부호](error-correcting-codes.md)의 하나인 [Reed–Solomon 부호](reed-solomon-codes.md)의 부호어다. 그래서 조각 가운데 $e$ 개가 거짓이어도 $n\ge t+2e$ 이면 복호 알고리즘으로 $f$ 와 $s$ 를 복원한다[^5].
 
 ## 검증 가능한 비밀 분산
 

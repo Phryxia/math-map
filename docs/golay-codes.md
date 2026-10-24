@@ -77,7 +77,7 @@ $\mathcal G\_{24}$ 로 $\mathbb Z^{24}$ 의 좌표에 조건을 걸어 얻는 $2
 - [Mathieu 군](mathieu-groups.md)은 $\mathcal G\_{24}$ 의 자기동형군 $M\_{24}$ 와 그 점 안정자 $M\_{23}$ , $M\_{22}$ 를 정의로 쓴다. 삼진 쪽 $[12,6,6]$ 에서 같은 방식으로 $M\_{12}$ 와 $M\_{11}$ 이 나온다.
 - Leech 격자의 최소노름이 [구 채우기](sphere-packing.md)에서 $24$ 차원 최밀 격자 채우기를 준다. Hamming 거리로 떨어진 부호어가 Euclid 거리로 떨어진 격자점이 되는 대응이다.
 - [Niemeier 격자](niemeier-lattices.md)의 분류에서 근계 $A\_1^{24}$ 에 딸린 glue 부호가 $\mathcal G\_{24}$ 다. 길이 $24$ 의 이진 자기쌍대 부호라는 조건이 그 자리를 정한다.
-- 확장 이진 Golay 부호 $[24,12,8]$ 은 보이저 1 호와 2 호가 목성과 토성의 사진을 보낼 때 쓰였다. 전송률이 절반으로 떨어지는 대신 세 비트까지 고친다. 이후 Reed–Solomon, 터보, LDPC(low-density parity-check) 부호로 대체되었다.
+- 확장 이진 Golay 부호 $[24,12,8]$ 은 보이저 1 호와 2 호가 목성과 토성의 사진을 보낼 때 쓰였다. 전송률이 절반으로 떨어지는 대신 세 비트까지 고친다. 이후 [Reed–Solomon](reed-solomon-codes.md), 터보, LDPC(low-density parity-check) 부호로 대체되었다.
 - 부호의 무게 열거다항식과 격자의 [theta 급수](theta-series.md)가 서로 번역되며, $\mathcal G\_{24}$ 의 무게 분포가 Leech 격자의 theta 급수를 준다.
 
 [^1]: 완전 부호의 분류와 Golay 부호의 유일성은 F. MacWilliams, N. Sloane, *The Theory of Error-Correcting Codes* (1977) 20 장. 부호에서 격자로 가는 구성은 J. Conway, N. Sloane, *Sphere Packings, Lattices and Groups* (3판, 1999) 10, 11 장.

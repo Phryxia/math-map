@@ -69,7 +69,7 @@ $$
 c=\big(f(x_1),\dots,f(x_n)\big),\qquad \deg f\lt k
 $$
 
-0 이 아닌 다항식의 근이 많아야 $k-1$ 개이므로 서로 다른 두 부호어는 최대 $k-1$ 자리에서만 일치하고, 따라서 $d \ge n-k+1$ 로 Singleton 한계를 달성하는 MDS 다. 복호는 보간이다. 남은 점이 $k$ 개면 그 점들을 지나는 차수 $k$ 미만 다항식이 유일하다. 위치를 모르는 오류까지 고치려면 [Berlekamp–Massey 알고리즘](berlekamp-massey.md)이나 Euclid 알고리즘으로 오류 위치 다항식을 먼저 찾는다.
+0 이 아닌 다항식의 근이 많아야 $k-1$ 개이므로 서로 다른 두 부호어는 최대 $k-1$ 자리에서만 일치하고, 따라서 $d \ge n-k+1$ 로 Singleton 한계를 달성하는 MDS 다. 복호 알고리즘은 [Reed–Solomon 부호](reed-solomon-codes.md)에서 다룬다. 복호는 보간이다. 남은 점이 $k$ 개면 그 점들을 지나는 차수 $k$ 미만 다항식이 유일하다. 위치를 모르는 오류까지 고치려면 [Berlekamp–Massey 알고리즘](berlekamp-massey.md)이나 Euclid 알고리즘으로 오류 위치 다항식을 먼저 찾는다.
 
 같은 원리가 Shamir [비밀 분산](secret-sharing.md)이다. 비밀을 상수항에 숨기고 $n$ 명에게 평가값을 나눠 주면 $k$ 명이 모여야 복원되고 $k-1$ 명은 아무 정보도 얻지 못한다.
 
@@ -95,6 +95,7 @@ Hamming 쪽은 부호어가 $2^4$ 개이고 최소거리가 3 이라 $[7,4,3]$ �
 - [채널 부호화 정리](channel-coding.md)
 - [Golay 부호](golay-codes.md)
 - [Berlekamp–Massey 알고리즘](berlekamp-massey.md)
+- [Reed–Solomon 부호](reed-solomon-codes.md)
 - [구 채우기](sphere-packing.md)
 
 #field_theory #linear_algebra #computation
