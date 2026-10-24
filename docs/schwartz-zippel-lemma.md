@@ -92,6 +92,6 @@ V. Kabanets 와 R. Impagliazzo 는 산술회로로 주어진 다항식의 항등
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [고립 보조정리](isolation-lemma.md)
 
 #algorithms #complexity #algebra #probability

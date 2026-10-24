@@ -158,5 +158,6 @@ $$
 
 - [Dilworth 정리](dilworth-theorem.md)
 - [매칭 다면체](matching-polytope.md)
+- [고립 보조정리](isolation-lemma.md)
 
 #graph_theory #combinatorics
