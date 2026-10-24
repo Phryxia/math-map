@@ -113,7 +113,7 @@ $\cos(k\pi/n)=\cos(2k\pi/2n)$ 이므로 $n$ 의 노드는 $2n$ 의 노드에 모
 
 - [Nyström 법](nystrom-method.md)에서 적분방정식의 적분을 구적 공식으로 바꿀 때 Clenshaw–Curtis 구적을 쓰면 노드가 늘어도 가중치가 양수로 유지된다.
 - 점을 두 배로 늘리며 오차를 추정하는 자동 적분 절차가 노드의 포함관계를 사용한다. Clenshaw 와 Curtis 의 1960 년 논문이 이 용도로 공식을 제안했다.[^1]
-- 고차원 적분을 1 차원 구적의 텐서곱으로 근사할 때 노드가 포함관계를 이루는 1 차원 공식으로 Clenshaw–Curtis 구적을 쓴다. Smolyak 희소격자(sparse grid)가 그 예다.
+- 고차원 적분을 1 차원 구적의 텐서곱으로 근사할 때 노드가 포함관계를 이루는 1 차원 공식으로 Clenshaw–Curtis 구적을 쓴다. [Smolyak 희소격자 구적](smolyak-quadrature.md)이 그 예다.
 
 [^1]: C. W. Clenshaw, A. R. Curtis, "A method for numerical integration on an automatic computer", *Numerische Mathematik* **2** (1960), 197–205.
 [^2]: J. P. Imhof, "On the method for numerical integration of Clenshaw and Curtis", *Numerische Mathematik* **5** (1963), 138–141.
@@ -130,6 +130,6 @@ $\cos(k\pi/n)=\cos(2k\pi/2n)$ 이므로 $n$ 의 노드는 $2n$ 의 노드에 모
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Smolyak 희소격자 구적](smolyak-quadrature.md)
 
 #analysis #algorithms #linear_algebra
