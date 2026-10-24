@@ -69,7 +69,7 @@ function verifyGKR(circuit: Circuit, input: Field[], prover: Prover): boolean {
 
 정리. 출력이 틀렸으면 검증자가 받아들일 확률은 $O(d\log S/\lvert\mathbb F\rvert)$ 이하다[^1].
 
-증명의 요지. 틀린 주장이 다음 층의 맞는 주장으로 바뀌려면 어느 단계에서 증명자가 보낸 일변수 다항식이 참 다항식과 다르면서 검증자의 무작위 점에서 같아야 한다. 합 검사의 각 단계에서 그 확률은 $2/\lvert\mathbb F\rvert$ 이하이고, 직선 단계에서는 $s_{i+1}/\lvert\mathbb F\rvert$ 이하다. 단계 수가 층마다 $O(s_{i+1})$ 이므로 합하면 위 상한이다.
+증명의 요지. 틀린 주장이 다음 층의 맞는 주장으로 바뀌려면 어느 단계에서 증명자가 보낸 일변수 다항식이 참 다항식과 다르면서 검증자의 무작위 점에서 같아야 한다. [Schwartz–Zippel 보조정리](schwartz-zippel-lemma.md)에 따라 합 검사의 각 단계에서 그 확률은 $2/\lvert\mathbb F\rvert$ 이하이고, 직선 단계에서는 $s_{i+1}/\lvert\mathbb F\rvert$ 이하다. 단계 수가 층마다 $O(s_{i+1})$ 이므로 합하면 위 상한이다.
 
 ## 비용
 

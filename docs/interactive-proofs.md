@@ -52,7 +52,7 @@ $$
 3. 남은 주장은 $\sum\_{x\_2,\dots,x\_n}g(r\_1,x\_2,\dots,x\_n)=g\_1(r\_1)$ 이고, 변수가 하나 줄었다. 같은 단계를 되풀이한다.
 4. $n$ 단계 뒤에 검증자는 $g(r\_1,\dots,r\_n)$ 을 직접 계산해 마지막 주장과 비교한다.
 
-증명자가 어느 단계에서 틀린 $g\_i$ 를 보내면, 차수 $d$ 이하의 서로 다른 두 일변수 다항식은 많아야 $d$ 개의 점에서 같으므로 무작위 $r\_i$ 에서 들킬 확률이 $1-d/\lvert\mathbb F\rvert$ 이상이다. 전체 건전성 오류는 $nd/\lvert\mathbb F\rvert$ 이하다.
+증명자가 어느 단계에서 틀린 $g\_i$ 를 보내면, 차수 $d$ 이하의 서로 다른 두 일변수 다항식은 많아야 $d$ 개의 점에서 같으므로([Schwartz–Zippel 보조정리](schwartz-zippel-lemma.md)의 일변수 경우) 무작위 $r\_i$ 에서 들킬 확률이 $1-d/\lvert\mathbb F\rvert$ 이상이다. 전체 건전성 오류는 $nd/\lvert\mathbb F\rvert$ 이하다.
 
 ## Shamir 정리
 
