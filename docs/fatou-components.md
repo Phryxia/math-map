@@ -45,7 +45,7 @@ $f(z)=z^2$ 의 Fatou 집합은 단위원판과 그 외부 두 성분이고 각�
 
 증명의 요지는 $U$ 위에서 $g=f^p$ 의 궤도의 극한집합을 보는 것이다. [Montel 정리](montel-theorem.md)로 $g^n$ 의 부분열이 수렴하고, 극한이 상수이면 그 값이 $U$ 안의 고정점이거나 $\partial U$ 의 고정점이어서 앞의 두 유형이 나온다. 극한이 상수가 아니면 $g$ 가 $U$ 의 등각 자기동형이고, 단순연결이면 원판의 회전, 아니면 환의 회전이다.
 
-유인 영역과 포물선 영역은 임계점을 포함하거나 그 궤도를 경계에 가지므로 임계점 개수 $2d-2$ 가 개수를 제한한다. Siegel 원판과 Herman 환은 임계점을 담지 않고 임계궤도의 집적으로 존재가 판정된다.
+유인 영역과 포물선 영역은 임계점을 포함하거나 그 궤도를 경계에 가지므로 임계점 개수 $2d-2$ 가 개수를 제한한다. Siegel 원판과 Herman 환은 임계점을 담지 않고 임계궤도의 집적으로 존재가 판정된다. Siegel 원판이 존재하는 승수는 [Siegel 선형화 정리](siegel-linearization.md)가 회전수의 Diophantine 조건으로 준다.
 
 # 활용
 
@@ -73,5 +73,6 @@ Riemann 구면의 동역학을 Julia 집합 위의 혼돈 부분과 Fatou 집합
 ## 더 알아보기
 
 - [Mandelbrot 집합](mandelbrot-set.md)
+- [Siegel 선형화 정리](siegel-linearization.md)
 
 #complex_analysis #analysis #topology
