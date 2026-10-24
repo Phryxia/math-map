@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-24T17:07:23.345Z",
-  "nextSeq": 2449,
+  "savedAt": "2026-10-24T21:05:05.082Z",
+  "nextSeq": 2456,
   "items": [
     {
       "id": "9bab7237",
@@ -490,6 +490,14 @@
       "note": "9절 미링크 손 검사가 더 긴 용어의 일부를 잡은 오탐. bc871443 의 목록에 더한다. (1) kpz-universality 의 'Kingman 의 아가법 에르고딕 정리' 가 ergodic-theorem 미링크로 보고된다. Birkhoff 정리와 다른 정리다. (2) kpz-universality 의 '확률 열방정식'(stochastic heat equation)이 heat-equation 미링크로 보고된다. 다른 방정식이다. (3) ising-model 의 'Markov 연쇄 Monte Carlo', 'Markov 연쇄의 혼합시간' 링크 텍스트 안의 'Markov 연쇄' 가 markov-chains 미링크로 보고된다. 또 회차 시작 전부터 있던 보고 넷: combinatorics-overview 의 Grassmann 다양체(MV 순환 설명의 '아핀 Grassmann 다양체'), order-theory-overview 의 Rice 정리, functional-analysis-overview 의 Bott 주기성과 Haagerup 성질. 개관 설명 안의 이름이라 갈래 순서 규칙(85cb6359)과 함께 판정해야 한다.",
       "createdAt": "2026-10-22T13:04:52.996Z",
       "seq": 2367
+    },
+    {
+      "id": "f3005902",
+      "title": "computation-overview 미링크 'Hamilton 순환'",
+      "priority": 50,
+      "note": "9절 미링크 검사가 computation-overview 의 외판원 문제 줄 '최소 가중치 Hamilton 순환' 을 hamiltonian-cycles 미링크로 보고한다. 갈래 순서 규칙(분야 밖 선수 문서 링크)과 함께 판단해야 해서 이번 회차에 고치지 않았다.",
+      "createdAt": "2026-10-24T21:05:04.196Z",
+      "seq": 2455
     },
     {
       "id": "08e59419",
@@ -2458,6 +2466,38 @@
       "note": "2026-10-24 회차에 fekete-lemma → kingman-subadditive-ergodic → (oseledets-theorem, first-passage-percolation) 를 썼다. 둘 다 리프다. first-passage-percolation 은 확률론 개관 조건부 구조 갈래 침투 아래 곁가지, 부모 kingman-subadditive-ergodic 과 percolation. 후보: (1) Pesin 공식과 Pesin 이론. oseledets-theorem 활용 첫째와 kolmogorov-sinai-entropy 89줄이 이름만 쓴다. (2) Furstenberg 의 양의 지수 정리. oseledets-theorem 활용 둘째. (3) 최초 통과 침투의 요동과 KPZ. 열린 문제이므로 출처를 각주로 달 것. kpz-universality 와 연결. Gelfand 공식은 bounded-operators 의 '스펙트럼의 콤팩트성' 절에 있으므로 별도 문서로 만들지 않는다.",
       "createdAt": "2026-10-24T01:04:25.230Z",
       "seq": 2418
+    },
+    {
+      "id": "1cc21a5d",
+      "title": "time-hierarchy-theorem 의 후속 간선",
+      "priority": 11,
+      "note": "time-hierarchy-theorem(시간 계층 정리)은 리프다. 후보: Ladner 정리(P 와 NP-완전 사이의 NP-중간 문제, 지연 대각선 논법, 부모 time-hierarchy-theorem 과 np-completeness), 자연 증명 장벽(Razborov-Rudich), 대수화 장벽(Aaronson-Wigderson).",
+      "createdAt": "2026-10-24T20:43:19.982Z",
+      "seq": 2450
+    },
+    {
+      "id": "0f2f5897",
+      "title": "communication-complexity 의 후속 간선",
+      "priority": 11,
+      "note": "communication-complexity(통신 복잡도)는 리프다. 후보: 로그 계수 추측(log-rank conjecture), 정보 복잡도(information complexity, 부모에 entropy), 다자간 통신과 수 위의 이마(number-on-forehead). 부모는 communication-complexity.",
+      "createdAt": "2026-10-24T20:51:15.250Z",
+      "seq": 2451
+    },
+    {
+      "id": "2ba7041a",
+      "title": "space-complexity 의 후속 간선",
+      "priority": 11,
+      "note": "space-complexity(공간 복잡도)의 자식은 interactive-proofs, alternating-turing-machines, nc-hierarchy, reingold-theorem 이다. 남은 후보: 게임의 PSPACE-완전성(generalized geography, 일반화 바둑), Immerman-Szelepcsenyi 정리의 별도 문서 여부(지금은 space-complexity 의 절). nc-hierarchy 의 남은 후보: P-완전 문제(선형계획법 실행 가능성, 단조 회로 값). barrington-theorem 과 reingold-theorem 은 리프다.",
+      "createdAt": "2026-10-24T20:55:53.061Z",
+      "seq": 2453
+    },
+    {
+      "id": "8f44727c",
+      "title": "복잡도 신규 문서 아홉의 후속 간선 (2026-10-24)",
+      "priority": 11,
+      "note": "이 회차에 쓴 리프: ladner-theorem, alternating-turing-machines, barrington-theorem, communication-complexity, reingold-theorem, counting-complexity 외 자식 없음 문서들(sensitivity-theorem, nisan-wigderson-generator, natural-proofs). 후보: 대수화 장벽(Aaronson-Wigderson, 부모 time-hierarchy-theorem 과 interactive-proofs), 로그 계수 추측(부모 communication-complexity), 질의 복잡도와 증명서 복잡도(부모 sensitivity-theorem), Impagliazzo-Wigderson 의 최악-평균 환원(부모 nisan-wigderson-generator 와 error-correcting-codes), 게임의 PSPACE-완전성(부모 alternating-turing-machines). computation-overview 의 지도 mermaid 에는 이 회차 문서를 넣지 않았다.",
+      "createdAt": "2026-10-24T21:05:04.068Z",
+      "seq": 2454
     },
     {
       "id": "09c81cac",
