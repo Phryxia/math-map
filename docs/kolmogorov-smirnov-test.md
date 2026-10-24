@@ -74,7 +74,7 @@ $F\ne F_0$ 이면 $\delta=\sup_x\vert F(x)-F_0(x)\vert\gt 0$ 이다. Glivenko–
 
 - **추정한 모수.** $F_0$ 의 모수를 같은 표본에서 추정해 넣으면 $F_n$ 과 $F_0$ 이 가까워져 $D_n$ 이 작아진다. $K$ 의 분위수를 그대로 쓰면 실제 크기가 $\alpha$ 보다 작다. 정규분포의 평균과 분산을 추정한 경우의 분위수는 Lilliefors 가 모의실험으로 표를 만들었다.[^3]
 - **이산분포.** $F_0$ 이 뛰는 점에서는 $F_n$ 과 $F_0$ 이 함께 뛰므로 $D_n$ 이 연속인 경우보다 작다. $K$ 의 분위수를 쓰면 실제 크기가 $\alpha$ 이하다.
-- **꼬리의 차이.** $F_n(x)-F_0(x)$ 의 분산은 $F_0(x)(1-F_0(x))/n$ 이어서 $F_0(x)$ 가 $0$ 이나 $1$ 에 가까운 꼬리에서 작다. 차이에 같은 가중을 주는 $D_n$ 은 꼬리의 차이에 둔하다. 이 분산으로 나눈 가중을 주는 통계량이 Anderson–Darling 통계량(Anderson–Darling statistic)이다.
+- **꼬리의 차이.** $F_n(x)-F_0(x)$ 의 분산은 $F_0(x)(1-F_0(x))/n$ 이어서 $F_0(x)$ 가 $0$ 이나 $1$ 에 가까운 꼬리에서 작다. 차이에 같은 가중을 주는 $D_n$ 은 꼬리의 차이에 둔하다. 이 분산으로 나눈 가중을 주는 통계량이 [이차 경험분포함수 통계량](quadratic-edf-statistics.md)의 Anderson–Darling 통계량이다.
 
 # 활용
 
@@ -96,6 +96,6 @@ $F\ne F_0$ 이면 $\delta=\sup_x\vert F(x)-F_0(x)\vert\gt 0$ 이다. Glivenko–
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [이차 경험분포함수 통계량](quadratic-edf-statistics.md)
 
 #statistics #probability

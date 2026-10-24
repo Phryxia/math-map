@@ -79,7 +79,7 @@ $$
 # 활용
 
 - **[Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md).** 통계량 $\sqrt n D_n$ 의 극한이 $\max_t\vert B^0_t\vert$ 이고, 최댓값의 분포 절이 기각역의 분위수를 준다. Doob 이 경험 분포함수의 극한을 Brown 다리로 보고 Kolmogorov 의 극한분포를 다시 유도했다.[^3]
-- **Cramér–von Mises 통계량.** $n\int_0^1(F_n(t)-t)^2\thinspace dt$ 의 극한이 $\int_0^1(B^0_t)^2\thinspace dt$ 이고, Karhunen–Loève 전개가 그 분포를 정규 제곱의 가중합으로 준다.
+- **[이차 경험분포함수 통계량](quadratic-edf-statistics.md).** Cramér–von Mises 통계량 $n\int_0^1(F_n(t)-t)^2\thinspace dt$ 의 극한이 $\int_0^1(B^0_t)^2\thinspace dt$ 이고, Karhunen–Loève 전개가 그 분포를 정규 제곱의 가중합으로 준다.
 - **[경험 과정](empirical-process.md).** 반직선의 지시함수족에서 경험 과정의 극한이 Brown 다리이고, [Donsker 불변원리](donsker-invariance-principle.md)의 경험과정 판본이 그 수렴을 준다.
 - **Brown 운동의 구성.** 두 시각의 값이 정해진 Brown 운동을 그 사이에서 채우는 것이 끝값을 묶은 Brown 다리다. Lévy 의 구성은 구간을 반씩 나누며 가운데 점의 값을 이 조건부 분포에서 뽑는다.
 
@@ -95,6 +95,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [이차 경험분포함수 통계량](quadratic-edf-statistics.md)
 
 #probability #statistics #measure_theory

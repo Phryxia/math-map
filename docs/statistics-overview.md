@@ -58,6 +58,7 @@ graph TD
 
 - [Glivenko–Cantelli 정리](glivenko-cantelli.md): 경험 분포함수가 참 분포함수로 균등수렴한다, Kolmogorov–Smirnov 거리와 Dvoretzky–Kiefer–Wolfowitz 부등식
   - [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md): 경험 분포함수와 가설 분포함수의 최대 차이로 세우는 적합도 검정, Kolmogorov 분포의 분위수와 이표본 판본
+    - [이차 경험분포함수 통계량](quadratic-edf-statistics.md): 차이의 제곱을 가중 적분한 Cramér–von Mises 와 Anderson–Darling 통계량, Brown 다리의 Karhunen–Loève 전개로 얻는 극한분포
 - [경험 과정](empirical-process.md): 함수족을 지표로 갖는 확률과정, Donsker 족과 덮개수, 사슬 묶기와 Dudley 적분
 - [붓스트랩](bootstrap.md): 경험 분포에서 다시 표본을 뽑아 분포를 세우는 절차, Donsker 족에서의 타당성과 표본 최대값에서 깨지는 예
 
