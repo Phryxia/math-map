@@ -92,6 +92,6 @@ $L_p[\alpha,c]=\exp\big((c+o(1))(\log p)^\alpha(\log\log p)^{1-\alpha}\big)$ 로
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [이차 체](quadratic-sieve.md)
 
 #number_theory #cryptography #algorithms
