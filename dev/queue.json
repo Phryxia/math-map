@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-24T05:02:59.305Z",
-  "nextSeq": 2429,
+  "savedAt": "2026-10-24T09:08:51.210Z",
+  "nextSeq": 2441,
   "items": [
     {
       "id": "9bab7237",
@@ -1282,14 +1282,6 @@
       "note": "옛 큐 ebb32287 의 판정. geometric-satake 의 정의 절 '## 아핀 Grassmann 다양체'(함자 정의, ind-사영 ind-스킴, GL_n 격자 묘사)와 '## 궤도와 IC 층'(Cartan 분해, 궤도 차원, 폐포 순서), mv-cycles 의 정의 절과 '## 아핀 Grassmann 다양체의 특이점' 이 이 대상을 이미 다룬다. 별도 문서를 만들면 geometric-satake 의 두 절과 통째로 겹친다. 다룰 내용이 늘어 geometric-satake 가 커지면 그때 8절 분할로 뗀다.",
       "createdAt": "2026-10-22T04:58:57.776Z",
       "seq": 2354
-    },
-    {
-      "id": "3adb5617",
-      "title": "균등유계성 원리를 별도 문서로 둘지 판단",
-      "priority": 20,
-      "note": "functional_analysis. baire-category:51 과 banach-spaces:66 두 문서가 같은 정리를 각자 절로 담는다. open-mapping-theorem 처럼 별도 문서(uniform-boundedness)로 모으고 두 절을 링크로 줄일지 8절 기준으로 판단한다.",
-      "createdAt": "2026-10-22T17:01:12.348Z",
-      "seq": 2371
     },
     {
       "id": "410fd79d",
@@ -3324,14 +3316,6 @@
       "seq": 2422
     },
     {
-      "id": "7b96b8a1",
-      "title": "law-of-iterated-logarithm 의 후속: Skorokhod 매장, Lévy 연속률, 신뢰열",
-      "priority": 10,
-      "note": "d9bc1e0d 의 (d) 를 옮겼다. (a)(b) 는 quadratic-edf-statistics 로 닫았다. Skorokhod 매장(부분합 절이 이름만 씀, 부모 brownian-motion), Lévy 연속률(활용 둘째가 이름만 씀), 신뢰열(활용 셋째, 부모 hypothesis-testing 과 law-of-iterated-logarithm). 단위근 검정은 statistics 갈래에 자리가 없다(38차 판정 유지).",
-      "createdAt": "2026-10-24T04:51:21.682Z",
-      "seq": 2423
-    },
-    {
       "id": "58eae815",
       "title": "Clenshaw-Curtis 구적의 남은 후속: Fejér 규칙, 이산 코사인 변환",
       "priority": 10,
@@ -3362,6 +3346,46 @@
       "note": "#statistics. ledoit-wolf-shrinkage 는 리프이고 부모는 james-stein-estimator 하나다. marchenko-pastur 를 부모로 두면 principal-component-analysis 가 조상이 되어 statistics-overview 갈래 순서 검사가 걸려 간선을 빼고 본문 링크만 남겼다(2026-10-24). 갈래 재배치로 풀 수 있으면 간선을 다시 건다. 후속 후보: 비선형 축소(성질 절, El Karoui 역산), 표본공분산 역행렬의 편향 보정.",
       "createdAt": "2026-10-24T05:02:12.696Z",
       "seq": 2428
+    },
+    {
+      "id": "0342633e",
+      "title": "skorokhod-embedding 의 후속 간선",
+      "priority": 10,
+      "note": "#probability. skorokhod-embedding 은 리프다(부모 brownian-motion). 후보: Komlós–Major–Tusnády 강근사(KMT, 오차 log n, Skorokhod 매장의 n의 1/4 제곱 한계를 넘는다), Root 매장과 Rost 의 최적성, 모형에 의존하지 않는 가격 한계(Hobson, martingale 최적 수송 쪽 문서가 있으면 그 아래). law-of-iterated-logarithm 과 donsker-invariance-principle 은 본문 링크만 두었다.",
+      "createdAt": "2026-10-24T08:42:56.660Z",
+      "seq": 2430
+    },
+    {
+      "id": "673bb5f9",
+      "title": "levy-modulus 와 confidence-sequences 의 후속 간선",
+      "priority": 10,
+      "note": "#probability #statistics. 둘 다 리프다. levy-modulus 후보: 빠른 점을 별도 문서로(Orey-Taylor, 성질 절에 있다), 무작위 걷기 쪽 Erdős–Rényi 법칙. confidence-sequences 후보: e-값과 검정 martingale(e-value, test martingale, Ville 부등식이 쓰인다, 부모 hypothesis-testing 과 confidence-sequences), 비모수 신뢰열(Howard 등 2021 의 sub-Gaussian 경계).",
+      "createdAt": "2026-10-24T08:48:51.707Z",
+      "seq": 2432
+    },
+    {
+      "id": "24b43dd3",
+      "title": "quadratic-sieve 와 elliptic-curve-factorization 의 후속 간선",
+      "priority": 10,
+      "note": "#number_theory #algorithms. 둘 다 리프다. 타원곡선 인수분해는 elliptic-curve-factorization 으로 닫았다(부모 elliptic-curves). 남은 후보: 수체 체(number field sieve, 이산로그와 인수분해 공통, 부모 quadratic-sieve 와 algebraic-number-fields, 8ba576be 의 후보와 같다), 희소행렬의 F2 일차종속(block Lanczos, Wiedemann), 타원곡선 소수 증명(ECPP, Goldwasser-Kilian 과 Atkin-Morain, 부모 elliptic-curve-factorization 과 aks-primality-test 후보), Pollard p-1 방법을 별도 문서로 뗄지(직관 절에 있다).",
+      "createdAt": "2026-10-24T08:55:54.133Z",
+      "seq": 2434
+    },
+    {
+      "id": "95cabda8",
+      "title": "e-values 와 false-discovery-rate 의 후속 간선",
+      "priority": 10,
+      "note": "#statistics. 둘 다 리프다. 거짓 발견률과 Benjamini-Hochberg 절차는 false-discovery-rate 로 닫았다(부모 hypothesis-testing). 남은 후보: 내기에 의한 검정(testing by betting, Shafer)과 Kelly 기준(e-values 아래), 보편 추론을 별도 문서로 뗄지(e-values 성질 절), Storey 의 q-값과 국소 거짓 발견률(Efron, 경험 Bayes 쪽, james-stein-estimator 후속 6ccd81f9 와 겹친다), 거짓 피복률(false coverage rate, false-discovery-rate 활용 셋째).",
+      "createdAt": "2026-10-24T09:00:08.051Z",
+      "seq": 2436
+    },
+    {
+      "id": "b7cb233a",
+      "title": "universal-portfolio, rule-of-succession, dirichlet-distribution 의 후속 간선",
+      "priority": 10,
+      "note": "#information_theory #statistics. 셋 다 리프다. Dirichlet 분포는 dirichlet-distribution 으로 닫았다(부모 bayesian-inference, gamma-function). 남은 후보: 내기에 의한 검정(testing by betting, 부모 kelly-criterion 과 e-values), 분수 Kelly 와 위험 제약, 온라인 Newton 법(online Newton step, 부모 multiplicative-weights 와 universal-portfolio), 최소 기술 길이(minimum description length, 부모 rule-of-succession 과 information-criteria), 잠재 Dirichlet 할당(LDA, 부모 dirichlet-distribution 과 variational-inference), Dirichlet 과정(부모 dirichlet-distribution), Pólya 항아리.",
+      "createdAt": "2026-10-24T09:08:35.082Z",
+      "seq": 2440
     },
     {
       "id": "dfb3e493",
