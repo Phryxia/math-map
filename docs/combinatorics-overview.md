@@ -42,6 +42,7 @@ graph TD
   - [포함배제 원리](inclusion-exclusion.md): 조건을 어기는 경우를 번갈아 더하고 빼서 세는 공식
   - [Burnside 보조정리](burnside-lemma.md): 궤도의 개수를 군 원소별 고정점 개수의 평균으로 세는 식
   - [Pólya 세기 정리](polya-enumeration.md): 대칭을 같은 것으로 보았을 때 색칠의 개수를 주는 순환 지표
+  - [Lyndon 단어](lyndon-words.md): 모든 진짜 순환 이동보다 사전순으로 작은 문자열, Möbius 반전으로 얻는 개수와 Chen–Fox–Lyndon 분해, Duval 알고리즘
 - [비둘기집 원리](pigeonhole-principle.md): 상자보다 물건이 많으면 두 개가 같은 상자에 들어간다
 - [생성함수](generating-functions.md): 수열을 멱급수의 계수로 두어 점화식을 함수의 식으로 바꾼다
   - [Catalan 수](catalan-numbers.md): 괄호 배열, 이진트리, 다각형의 삼각분할을 한꺼번에 세는 수열
