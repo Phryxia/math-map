@@ -46,7 +46,7 @@ $\Omega=(0,1)$ 에 Lebesgue 측도를 주고 $Y_n=F_n^{-1}(U)$ , $Y=F^{-1}(U)$ �
 
 ## Polish 공간으로의 확장
 
-> **정리.** $S$ 가 Polish 공간이고 $\mu_n\Rightarrow\mu$ 이면 $(\mu_n,\mu)$ 의 Skorokhod 표현이 존재한다.[^1]
+> **정리.** $S$ 가 [Polish 공간](polish-spaces.md)이고 $\mu_n\Rightarrow\mu$ 이면 $(\mu_n,\mu)$ 의 Skorokhod 표현이 존재한다.[^1]
 
 증명은 $S$ 를 지름이 작은 Borel 조각으로 유한 분할하고 조각마다 질량을 맞추는 사상을 세워 $\lbrack 0,1\rbrack$ 위 균등분포에서 두 변수를 함께 뽑는 것이다. 분할을 가늘게 하는 열을 따라 구성을 정교화하면 극한에서 거의 확실한 수렴이 나온다. 실수 경우의 분위수 함수가 하던 일을 분할과 질량 배분이 대신한다.
 

@@ -54,7 +54,7 @@ $$
 
 ## Prokhorov 정리
 
-$S$ 가 완비 분리가능 거리공간(Polish 공간)일 때
+$S$ 가 완비 분리가능 거리공간([Polish 공간](polish-spaces.md))일 때
 
 $$
 \Pi\subseteq\mathcal P(S)\ \text{가 tight}

@@ -54,7 +54,7 @@ $$
 
 ## Hewitt–Savage 정리
 
-상태공간이 Polish 공간인 교환가능 무한열의 분포는 곱측도들의 혼합이다. 곧 그 공간 위의 확률측도들의 공간에 측도 $\mu$ 가 유일하게 있어 결합분포가 $\int P^{\otimes\infty}\thinspace\mu(dP)$ 로 적힌다. 0-1 열에서 $\mu$ 가 $\lbrack 0,1\rbrack$ 위의 측도였던 것은 Bernoulli 분포가 모수 하나로 적히기 때문이다. 교환가능 분포 전체가 볼록집합이고 곱측도가 그 극점이라는 것이 정리의 다른 표현이다.[^3]
+상태공간이 [Polish 공간](polish-spaces.md)인 교환가능 무한열의 분포는 곱측도들의 혼합이다. 곧 그 공간 위의 확률측도들의 공간에 측도 $\mu$ 가 유일하게 있어 결합분포가 $\int P^{\otimes\infty}\thinspace\mu(dP)$ 로 적힌다. 0-1 열에서 $\mu$ 가 $\lbrack 0,1\rbrack$ 위의 측도였던 것은 Bernoulli 분포가 모수 하나로 적히기 때문이다. 교환가능 분포 전체가 볼록집합이고 곱측도가 그 극점이라는 것이 정리의 다른 표현이다.[^3]
 
 ## Hewitt–Savage 0-1 법칙
 

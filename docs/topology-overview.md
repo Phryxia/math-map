@@ -47,6 +47,7 @@ graph TD
 - [Stone–Čech 콤팩트화](stone-cech-compactification.md): 유계 연속함수를 모두 확장하는 가장 큰 콤팩트화
 - [위상군](topological-groups.md): 연산이 연속인 군, 항등원 근방이 위상 전체를 정한다
   - [격자 부분군](lattice-subgroups.md): 몫이 유한 부피인 이산 부분군, 기본 영역과 공부피
+- [Polish 공간](polish-spaces.md): 완비 거리로 위상을 줄 수 있는 가분 공간, Gδ 부분공간과 수열 공간의 연속상, Borel 동형 정리
 
 ## 기본군과 덮개공간
 

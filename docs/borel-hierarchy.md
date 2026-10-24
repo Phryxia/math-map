@@ -18,7 +18,7 @@ $$
 
 ## Polish 공간
 
-**Polish 공간**은 완비 가분 [거리 공간](metric-spaces.md)이다. $\mathbb R$ , $\lbrack 0,1\rbrack$ , $\mathbb R^n$ , 가분 [Banach 공간](banach-spaces.md)이 그 예다. 자연수열의 공간
+[Polish 공간](polish-spaces.md)은 완비 가분 [거리 공간](metric-spaces.md)이다. $\mathbb R$ , $\lbrack 0,1\rbrack$ , $\mathbb R^n$ , 가분 [Banach 공간](banach-spaces.md)이 그 예다. 자연수열의 공간
 
 $$
 \mathcal N=\mathbb N^{\mathbb N}
@@ -92,7 +92,7 @@ $\Sigma^0_\alpha$ 의 정의에서 가산 합집합의 지표를 임의로 두�
 
 ## 선수지식
 
-- [거리 공간](metric-spaces.md)
+- [Polish 공간](polish-spaces.md)
 - [서수](ordinals.md)
 - [측도](measure.md)
 

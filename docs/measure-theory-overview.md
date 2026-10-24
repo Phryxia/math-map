@@ -85,8 +85,8 @@ graph TD
 먼저 읽을 갈래: 측도 사이의 비교. 먼저 읽을 것: [Lipschitz 사상](lipschitz-maps.md)(해석학 개관). 시작 문서: [Vitali 집합](vitali-set.md).
 
 - [Vitali 집합](vitali-set.md): 유리수 평행이동의 대표를 모은 비가측 집합, 측도를 멱집합으로 넓히지 못하는 이유
-  - [Borel 계층](borel-hierarchy.md): 열린집합에서 가산 연산을 초한으로 되풀이한 단계, Suslin 정리
 - [Cantor 집합](cantor-set.md): 측도 $0$ 인 비가산 완전집합, Cantor 함수와 특이연속분포
+  - [Borel 계층](borel-hierarchy.md): 열린집합에서 가산 연산을 초한으로 되풀이한 단계, Suslin 정리
 - [Hausdorff 차원](hausdorff-dimension.md): 덮개의 지름 제곱 합으로 잰 척도, 자기유사 집합의 차원
   - [면적공식](area-formula.md): Lipschitz 사상의 상을 재는 Hausdorff 측도를 Jacobi 행렬식의 적분으로 바꾸는 등식, 여면적공식
 - [측도-범주 분해](measure-category-decomposition.md): 직선을 영집합과 제1 범주 집합으로 가르는 분해, 두 작음의 뜻이 어긋나는 자리

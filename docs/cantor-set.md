@@ -114,5 +114,6 @@ $\lvert c\rvert$ 가 큰 $z^2+c$ 의 [Julia 집합](julia-set.md)은 $C$ 와 위
 ## 더 알아보기
 
 - [Hausdorff 차원](hausdorff-dimension.md)
+- [Polish 공간](polish-spaces.md)
 
 #measure_theory #topology #set_theory #analysis

@@ -146,7 +146,7 @@ graph TD
 
 ## 기술집합론
 
-먼저 읽을 갈래: 독립성과 강제법. 시작 문서: [Borel 계층](borel-hierarchy.md). 먼저 읽을 것: 거리 공간(위상 개관).
+먼저 읽을 갈래: 독립성과 강제법. 먼저 읽을 것: [Polish 공간](polish-spaces.md)(위상 개관). 시작 문서: [Borel 계층](borel-hierarchy.md).
 
 - [Borel 계층](borel-hierarchy.md): 열린집합에서 가산 연산을 초한으로 되풀이한 단계, Suslin 정리
 - [사영 계층](projective-hierarchy.md): 사영과 여집합을 번갈아 붙인 단계, 나무 표현과 유계 정리
