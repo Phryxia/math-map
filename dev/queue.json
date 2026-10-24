@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-23T21:08:03.735Z",
-  "nextSeq": 2411,
+  "savedAt": "2026-10-24T01:04:26.097Z",
+  "nextSeq": 2419,
   "items": [
     {
       "id": "9bab7237",
@@ -2244,14 +2244,6 @@
       "seq": 1993
     },
     {
-      "id": "94aa056d",
-      "title": "quasiconformal-maps 의 후속 간선",
-      "priority": 11,
-      "note": "36차 회차(2026-10-09)에 quasiconformal-maps 를 썼다(85줄, 부모 riemann-surfaces 하나, complex-analysis-overview 의 Riemann 곡면 다음 줄). 큐 항목 fd3b5387 을 닫았다. 제목은 '준등각 사상' 으로 좁혔고 Beltrami 방정식은 정의 절, Bers 매장은 활용 절에 넣어 'A와 B' 제목을 피했다. 부모를 teichmuller-space 와 둘로 두지 않은 이유는 그 문서가 준등각을 전제하는 쪽이어서 방향이 반대이고, 그 문서 128줄에 본문 링크로 이었다. 같은 회차에 자식 fatou-components 를 만들어 리프를 풀었다(julia-set 과의 공통 자식). 남은 자식 후보: (1) Teichmüller 정리(극값 사상의 유일성과 정칙 이차미분). 저장소에 없고 teichmuller-space 90줄이 계량만 적는다. 만들면 부모는 quasiconformal-maps 와 teichmuller-space 둘이다. (2) 고차원 준등각 사상과 Mostow 강직성. mostow-rigidity 는 저장소에 없다(2026-10-09 확인). (3) 준등각 수술 자체를 문서로 세울지. fatou-components 의 성질 절이 Sullivan 증명의 수술을 이미 요지로 적으므로 중복 위험이 있다.",
-      "createdAt": "2026-10-09T20:54:49.900Z",
-      "seq": 1997
-    },
-    {
       "id": "cd5df21b",
       "title": "fatou-components 의 후속 간선",
       "priority": 11,
@@ -2444,6 +2436,38 @@
       "seq": 2326
     },
     {
+      "id": "c77b0dc4",
+      "title": "poincare-rotation-number 와 siegel-linearization 의 후속 간선",
+      "priority": 11,
+      "note": "2026-10-24 회차에 둘을 새로 썼다. siegel-linearization(부모 fatou-components, diophantine-approximation, 복소해석 개관 복소역학 갈래 곁가지)과 poincare-rotation-number(부모 covering-spaces, ergodic-theorem, 해석 개관 '측도와 복소평면으로의 확장' 갈래 Lebesgue 적분 아래 곁가지). 둘 다 리프다. 후보: (1) Arnold 혀와 원 사상의 모드 고정을 별도 문서로 둘지. 지금은 poincare-rotation-number 활용 절 첫 항목이다. (2) Brjuno 함수와 Yoccoz 정리. siegel-linearization 성질 절의 정리 둘이다. (3) poincare-rotation-number 를 siegel-linearization 의 부모로 둘지 판정. 지금은 본문 링크만 있다. Herman 정리가 두 문서의 공통 화제다.",
+      "createdAt": "2026-10-24T00:43:43.140Z",
+      "seq": 2412
+    },
+    {
+      "id": "769d228b",
+      "title": "teichmuller-theorem 의 후속 간선",
+      "priority": 11,
+      "note": "2026-10-24 회차에 썼다(부모 quasiconformal-maps, teichmuller-space. complex-analysis-overview 확장과 사상 갈래 준등각 사상 아래 곁가지). 큐 94aa056d(quasiconformal-maps 후속)의 후보 (1)을 처리했고 그 항목은 지웠다. 남은 후보: (1) Nielsen–Thurston 분류와 유사 Anosov 사상. 활용 절 둘째가 이름만 쓴다(ls docs 로 nielsen, pseudo-anosov 없음 확인 필요). 부모는 teichmuller-theorem 과 teichmuller-space. (2) 고차원 준등각 사상과 Mostow 강직성. Mostow 강직성은 hyperbolic-3-manifolds 의 성질 절에 증명 요지까지 있으므로 별도 문서는 중복이다. (3) 평평한 곡면(translation surface)과 Teichmüller 측지 흐름. 활용 절 셋째.",
+      "createdAt": "2026-10-24T00:47:27.631Z",
+      "seq": 2413
+    },
+    {
+      "id": "e3b6e3c6",
+      "title": "polish-spaces 의 후속 간선",
+      "priority": 11,
+      "note": "2026-10-24 회차에 썼다(부모 baire-category, cantor-set. 자식 borel-hierarchy 로 그 문서의 부모 metric-spaces 를 대체했다. topology-overview 점집합 위상 갈래 끝, measure-theory-overview 는 Borel 계층을 Cantor 집합 아래로 옮겼고 foundations-overview 기술집합론 갈래 첫 줄의 먼저 읽을 것을 Polish 공간으로 바꿨다). 본문 링크는 conditional-expectation, de-finetti-theorem, kolmogorov-extension, projective-hierarchy, skorokhod-representation, weak-convergence 에 걸었다. 자식 후보: (1) Prokhorov 정리(긴밀성과 상대콤팩트성). 저장소에 문서가 있는지 먼저 확인. 부모는 polish-spaces 와 weak-convergence. (2) 정칙 조건부 분포의 존재. conditional-expectation 154줄 근처가 다룬다면 절로 충분하다. (3) 표준 Borel 공간과 Kuratowski 동형 정리를 따로 둘지.",
+      "createdAt": "2026-10-24T00:55:54.737Z",
+      "seq": 2414
+    },
+    {
+      "id": "ffe70d85",
+      "title": "oseledets-theorem 과 first-passage-percolation 의 후속 간선",
+      "priority": 11,
+      "note": "2026-10-24 회차에 fekete-lemma → kingman-subadditive-ergodic → (oseledets-theorem, first-passage-percolation) 를 썼다. 둘 다 리프다. first-passage-percolation 은 확률론 개관 조건부 구조 갈래 침투 아래 곁가지, 부모 kingman-subadditive-ergodic 과 percolation. 후보: (1) Pesin 공식과 Pesin 이론. oseledets-theorem 활용 첫째와 kolmogorov-sinai-entropy 89줄이 이름만 쓴다. (2) Furstenberg 의 양의 지수 정리. oseledets-theorem 활용 둘째. (3) 최초 통과 침투의 요동과 KPZ. 열린 문제이므로 출처를 각주로 달 것. kpz-universality 와 연결. Gelfand 공식은 bounded-operators 의 '스펙트럼의 콤팩트성' 절에 있으므로 별도 문서로 만들지 않는다.",
+      "createdAt": "2026-10-24T01:04:25.230Z",
+      "seq": 2418
+    },
+    {
       "id": "09c81cac",
       "title": "계산·알고리즘 분야 개관을 만들지 판단",
       "priority": 10,
@@ -2514,14 +2538,6 @@
       "note": "2026-09-20 회차에 새로 썼다(부모 model-theory, foundations-overview 논리 갈래, 91줄). model-theory 의 리프를 풀려고 그 활용 절 둘째 항목(실폐체 양화사 소거와 Tarski 결정 절차)을 독립 문서로 뗀 것이다. lie-groups 를 활용 절에서 링크했다. 리프다. 후속 후보: Pila-Wilkie 셈 정리(활용 절 셋째 항목. Manin-Mumford 와 André-Oort 로 이어지고 elliptic-curves, modular-curves 쪽과 이을 수 있다), Wilkie 정리와 Pfaffian 함수(성질 절 'o-최소인 구조' 가 부른다), 준해석적 집합과 tame 위상(활용 절 둘째 항목). 셀 분해 정리의 증명 요지를 두 문단으로 줄여 두었으니 별도 문서로 떼면 그쪽에서 단조성 정리까지 다룰 것. 같은 회차에 판정한 것: 안정성 이론과 Ax-Grothendieck 정리도 model-theory 의 자식 자리이지만 아직 문서가 없다",
       "createdAt": "2026-09-20T21:00:48.450Z",
       "seq": 773
-    },
-    {
-      "id": "f3126e48",
-      "title": "open-mapping-theorem 의 후속 간선",
-      "priority": 10,
-      "note": "2026-09-21 회차에 open-mapping-theorem(열린 사상 정리)을 새로 썼다. 부모는 baire-category 와 banach-spaces 둘이고 지금은 리프다. 문서 구성: 개요(전사 유계 작용소가 열린 사상, 따름정리 둘), 직관(Y 완비가 Baire 로 폐포의 내부를 주고 X 완비가 폐포를 떼는 급수를 준다), 정의(열린 사상, 그래프와 닫힌 작용소), 성질(열린 사상 정리 Banach-Schauder, 유계 역작용소 정리, 닫힌 그래프 정리, c_00 반례), 활용(작용소 역의 존재, 비유계 작용소, 노름 비교, 닫힌 치역 정리). 함수해석 개관의 '작용소와 스펙트럼' 갈래 첫 줄과 지도 mermaid(BS --> OMT)에 넣었고 README 수치를 434/804 에서 435/806 으로 맞췄다. 같은 회차에 개관의 banach-spaces 설명 줄 표기 '열린사상 정리' 도 새 문서 제목에 맞춰 '열린 사상 정리' 로 띄웠다. 후속 간선 후보: (1) Hahn-Banach 정리 문서. 함수해석의 네 기본정리 가운데 유일하게 Baire 를 쓰지 않는 것이고 dual-space 가 부모로 더 자연스러우니 부모 판정을 먼저 할 것. (2) 닫힌 치역 정리. 활용 절 마지막 항목이 부르는 자리이고 fredholm-operators 와 dual-space 사이에 놓인다. 지금은 fredholm-operators 본문이 이 정리를 언급만 한다. (3) Sobolev 공간. 활용 절 '노름의 비교' 항목이 부르지만 부모는 lp-spaces 와 distributions 쪽이 맞아 열린 사상 정리의 자식으로 긋기 전에 판정할 것. baire-category 쪽 남은 후보는 지난 note 가 적은 Polish 공간과 일반적 성질(generic property)이다. 균등유계성 원리는 baire-category 57-63줄에 증명까지 있어 따로 떼지 않는다(8절 분할 기준 미달)",
-      "createdAt": "2026-09-21T04:52:32.181Z",
-      "seq": 803
     },
     {
       "id": "b21e6f13",
