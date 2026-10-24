@@ -126,6 +126,7 @@ graph TD
 - [Dirichlet L 함수](dirichlet-l-functions.md): 지표로 꼰 급수와 등차수열의 소수 정리
   - [Siegel–Walfisz 정리](siegel-walfisz.md): 법이 $\log x$ 의 거듭제곱 이하인 등차수열의 소수 분포, Siegel 영점과 비유효 상수
     - [Siegel 영점](siegel-zeros.md): 실수 지표의 $L$ 함수가 $1$ 근처에 갖는 실영점이 많아야 하나라는 Landau–Page 정리, 유효한 상계와 Deuring–Heilbronn 현상
+      - [Linnik 정리](linnik-theorem.md): 등차수열의 가장 작은 소수가 법의 거듭제곱 이하라는 정리와 Linnik 상수
   - [Chebotarev 밀도 정리](chebotarev.md): Galois 확대에서 Frobenius 켤레류가 균등하게 분포한다는 정리
   - [Dedekind zeta 함수](dedekind-zeta.md): 아이디얼 노름에 대한 zeta 함수의 함수방정식, 류수·조절자·판별식으로 적히는 s=1 의 유수
   - [Artin L 함수](artin-l-functions.md): Galois 표현의 Frobenius 특성다항식으로 만든 L 함수, Brauer 유도 정리와 Artin 추측

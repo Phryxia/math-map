@@ -63,7 +63,7 @@ $\beta_1$ 이 $1$ 에 가까울수록 오른쪽의 영점 없는 영역이 넓�
 # 활용
 
 - 류수의 하한. $L(1,\chi_D)$ 의 하한은 허이차체의 류수 $h(D)$ 의 하한과 같다. Siegel 정리는 $h(D)\gt c(\varepsilon)\vert D\vert^{1/2-\varepsilon}$ 을 비유효 상수로 준다. Goldfeld 는 해석적 계수가 $3$ 인 [타원곡선](elliptic-curves.md)의 $L$ 함수가 있으면 유효한 하한이 나온다는 것을 보였고, Gross–Zagier 정리(Gross–Zagier theorem)가 그런 곡선을 주어 유효한 하한 $h(D)\gg_\varepsilon(\log\vert D\vert)^{1-\varepsilon}$ 이 나왔다[^5]. [류수 1 문제](class-number-one.md)의 목록을 이 방법으로도 확정한다.
-- 등차수열의 가장 작은 소수. $\gcd(a,q)=1$ 일 때 $p\equiv a\pmod q$ 인 가장 작은 소수가 절대상수 $C$, $L$ 에 대해 $Cq^L$ 이하라는 Linnik 정리(Linnik's theorem)는 예외 영점이 있는 경우를 Deuring–Heilbronn 현상으로 처리한다[^3].
+- 등차수열의 가장 작은 소수. $\gcd(a,q)=1$ 일 때 $p\equiv a\pmod q$ 인 가장 작은 소수가 절대상수 $C$, $L$ 에 대해 $Cq^L$ 이하라는 [Linnik 정리](linnik-theorem.md)는 예외 영점이 있는 경우를 Deuring–Heilbronn 현상으로 처리한다[^3].
 - [Chebotarev 밀도 정리](chebotarev.md)의 유효한 판본. 무조건적인 오차항은 [Dedekind zeta 함수](dedekind-zeta.md)의 예외 영점 항을 따로 적는다.
 - 쌍둥이 소수. Heath-Brown 은 예외 영점이 무한히 많은 법에서 존재하면 차가 $2$ 인 소수 쌍이 무한히 많다는 것을 증명했다[^6]. [소수 간격](prime-gaps.md)의 문제가 예외 영점의 존재 여부와 이렇게 연결된다.
 
@@ -82,6 +82,6 @@ $\beta_1$ 이 $1$ 에 가까울수록 오른쪽의 영점 없는 영역이 넓�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Linnik 정리](linnik-theorem.md)
 
 #number_theory #complex_analysis
