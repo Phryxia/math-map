@@ -127,6 +127,7 @@ graph TD
   - [Barrington 정리](barrington-theorem.md): NC¹ 이 폭 5 의 다항 길이 분지 프로그램과 같다는 정리, S₅ 의 교환자로 계산하는 논리곱과 가해군의 한계
 - [대화형 증명](interactive-proofs.md): 무작위 질문과 대답으로 하는 검증, 합 검사 프로토콜과 $\mathrm{IP}=\mathrm{PSPACE}$
   - [Goldwasser–Kalai–Rothblum 프로토콜](gkr-protocol.md): 층마다 합 검사를 돌려 깊이가 작은 회로의 출력을 다시 계산하지 않고 검증하는 계산 위임, 다중선형 확장과 배선 술어
+  - [MIP = NEXP 정리](mip-nexp.md): 통신하지 못하는 두 증명자의 대화형 증명이 비결정적 지수 시간과 같다는 정리, 신탁 검증과 다중선형 검사와 합 검사, NEXP ⊆ P/poly 이면 NEXP = MA
 
 ## 알고리즘 설계
 

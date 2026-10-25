@@ -24,7 +24,7 @@ NEXP 의 언어 $L$ 은 검증기 $V$ 로 정해진다. $x\in L$ 이면 길이 $
 
 정리(Impagliazzo–Kabanets–Wigderson). $\mathrm{NEXP}\subseteq\mathrm{P/poly}$ 이면 NEXP 의 모든 검증기가 쉬운 증거를 갖는다[^1].
 
-증명의 요지. 쉬운 증거를 갖지 않는 검증기 $V$ 가 있다고 둔다. 그러면 무한히 많은 $x$ 에서 받아들여지는 증거가 모두 어려운 함수의 진리표이고, 그런 증거를 비결정적으로 추측해 Nisan–Wigderson 생성기에 넣으면 MA 의 무작위 검증기의 동전을 대신할 수 있다. 이로부터 MA 가 무한히 많은 길이에서 비결정적 시간 $2^{n^{c}}$ 에 짧은 조언과 함께 판정된다. 한편 $\mathrm{NEXP}\subseteq\mathrm{P/poly}$ 이면 L. Babai, L. Fortnow, C. Lund 의 결과로 $\mathrm{NEXP}=\mathrm{MA}$ 다. 두 결론을 합치면 NEXP 전체가 고정된 지수 시간의 비결정적 계산으로 판정되어 비결정적 시간 계층 정리와 모순이다.
+증명의 요지. 쉬운 증거를 갖지 않는 검증기 $V$ 가 있다고 둔다. 그러면 무한히 많은 $x$ 에서 받아들여지는 증거가 모두 어려운 함수의 진리표이고, 그런 증거를 비결정적으로 추측해 Nisan–Wigderson 생성기에 넣으면 MA 의 무작위 검증기의 동전을 대신할 수 있다. 이로부터 MA 가 무한히 많은 길이에서 비결정적 시간 $2^{n^{c}}$ 에 짧은 조언과 함께 판정된다. 한편 $\mathrm{NEXP}\subseteq\mathrm{P/poly}$ 이면 L. Babai, L. Fortnow, C. Lund 의 [MIP = NEXP 정리](mip-nexp.md)로 $\mathrm{NEXP}=\mathrm{MA}$ 다. 두 결론을 합치면 NEXP 전체가 고정된 지수 시간의 비결정적 계산으로 판정되어 비결정적 시간 계층 정리와 모순이다.
 
 ## 동치 판본
 
