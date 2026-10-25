@@ -62,10 +62,16 @@
 
 ## 더 알아보기
 
-- [NC 계층](nc-hierarchy.md)
+### 회로 하한
+
 - [Håstad 스위칭 보조정리](switching-lemma.md)
+- [Razborov–Smolensky 정리](razborov-smolensky.md)
+- [자연 증명](natural-proofs.md)
+
+### 병렬 계산과 탈무작위화
+
+- [NC 계층](nc-hierarchy.md)
 - [통신 복잡도](communication-complexity.md)
 - [Nisan–Wigderson 생성기](nisan-wigderson-generator.md)
-- [자연 증명](natural-proofs.md)
 
 #complexity #logic #computation
