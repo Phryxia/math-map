@@ -55,6 +55,7 @@ graph TD
   - [경로폭](pathwidth.md): 주머니를 한 줄로 늘어놓은 분해의 폭, 구간 그래프와 정점 탐색 수와의 일치
   - [가지폭](branchwidth.md): 간선 집합의 가르기로 재는 폭, 나무폭과의 상수배 관계와 평면 그래프의 쌍대성
 - [Hamilton 순환](hamiltonian-cycles.md): Dirac 과 Ore 의 차수 조건, 닫힘, 판정의 NP-완전성
+  - [그래프 강인성](graph-toughness.md): 지운 정점 수와 남은 조각 수의 비의 최솟값, Hamilton 그래프의 1 강인성과 Chvátal 의 강인성 추측, 완전 매칭과 k 인자의 충분조건
 - [Euler 회로](eulerian-circuits.md): 모든 변을 한 번씩 지나는 닫힌 걸음이 모든 차수가 짝수인 것과 동치라는 Euler 정리, Hierholzer 알고리즘과 유향 Euler 회로의 개수 공식
   - [de Bruijn 수열](de-bruijn-sequences.md): 길이 n 인 문자열을 모두 한 번씩 담는 길이 kⁿ 의 순환 수열, de Bruijn 그래프의 Euler 회로와 개수 공식, Lyndon 단어와 최대 길이 수열
 

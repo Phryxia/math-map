@@ -51,7 +51,7 @@ $\kappa(G)\ge\alpha(G)-1$ 이면 $G$ 에 Hamilton 경로가 있다. 모든 정�
 
 # 활용
 
-- **강인성과 Hamilton 순환.** 정점 $S$ 를 지웠을 때 남는 조각 수가 언제나 $\lvert S\rvert/t$ 이하인 그래프를 $t$ 강인(t-tough)이라 한다. Hamilton 그래프는 $1$ 강인이고, 직관 절의 논법이 그 증명이다. $\kappa\ge\alpha$ 인 그래프는 $1$ 강인이다. 충분히 큰 상수 $t$ 에 대해 $t$ 강인이면 Hamilton 그래프인지는 Chvátal 의 강인성 추측(Chvátal's toughness conjecture)이다.[^3]
+- **강인성과 Hamilton 순환.** 정점 $S$ 를 지웠을 때 남는 조각 수가 언제나 $\lvert S\rvert/t$ 이하인 그래프를 $t$ 강인(t-tough)이라 한다([그래프 강인성](graph-toughness.md)). Hamilton 그래프는 $1$ 강인이고, 직관 절의 논법이 그 증명이다. $\kappa\ge\alpha$ 인 그래프는 $1$ 강인이다. 충분히 큰 상수 $t$ 에 대해 $t$ 강인이면 Hamilton 그래프인지는 Chvátal 의 강인성 추측(Chvátal's toughness conjecture)이다.[^3]
 - **무작위 그래프와 조밀 그래프.** 간선 확률이 충분히 큰 무작위 그래프에서 연결도와 독립수를 각각 추정해 $\kappa\ge\alpha$ 를 확인하면 Hamilton 순환의 존재가 나온다. 차수 조건이 성립하지 않는 그래프에도 적용된다.
 
 [^1]: V. Chvátal, P. Erdős, "A note on Hamiltonian circuits", Discrete Mathematics 2 (1972), 111–113.

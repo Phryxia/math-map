@@ -94,5 +94,6 @@ $\mathrm{cl}(G)$ 가 완전그래프이면 $G$ 는 Hamilton 그래프다. Ore �
 
 - [Chvátal–Erdős 정리](chvatal-erdos-theorem.md)
 - [외판원 문제](traveling-salesman-problem.md)
+- [그래프 강인성](graph-toughness.md)
 
 #graph_theory #combinatorics #algorithms #complexity
