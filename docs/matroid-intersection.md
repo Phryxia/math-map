@@ -52,7 +52,7 @@ matroid 셋의 공통 독립집합의 최대 크기를 구하는 문제는 NP(no
 
 - König 정리. 이분 그래프 $(X\cup Y,E)$ 에서 $M_1$ 을 $X$ 쪽 끝점으로 묶은 분할 matroid, $M_2$ 를 $Y$ 쪽 끝점으로 묶은 분할 matroid 로 두면 공통 독립집합이 매칭이다. $r_1(A)$ 는 $A$ 가 닿는 $X$ 의 정점 수이고 $r_2(E\setminus A)$ 는 $E\setminus A$ 가 닿는 $Y$ 의 정점 수이므로, 오른쪽 최솟값이 최소 정점 덮개의 크기다.
 - 무지개 신장트리. 간선에 색이 칠해진 그래프에서 색이 모두 다른 신장트리는 그래프 matroid 와 색으로 묶은 분할 matroid 의 공통 기저다.
-- 뿌리 있는 유향 신장트리. 뿌리에서 모든 정점으로 가는 유향 신장트리는, 방향을 무시한 그래프 matroid 와 뿌리 아닌 정점마다 들어오는 간선 하나 이하인 분할 matroid 의 공통 기저다.
+- [유향 신장트리](arborescences.md). 뿌리에서 모든 정점으로 가는 유향 신장트리는, 방향을 무시한 그래프 matroid 와 뿌리 아닌 정점마다 들어오는 간선 하나 이하인 분할 matroid 의 공통 기저다.
 
 [^1]: J. Edmonds, "Submodular functions, matroids, and certain polyhedra", in Combinatorial Structures and Their Applications, Gordon and Breach (1970), 69–87.
 
@@ -65,6 +65,6 @@ matroid 셋의 공통 독립집합의 최대 크기를 구하는 문제는 NP(no
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [유향 신장트리](arborescences.md)
 
 #combinatorics #optimization #graph_theory

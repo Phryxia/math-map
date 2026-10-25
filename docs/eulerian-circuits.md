@@ -78,7 +78,7 @@ $$
 \mathrm{ec}(G)=t_w(G)\prod_{v\in V}\big(\deg^+(v)-1\big)!
 $$
 
-이다. $t_w(G)$ 는 모든 정점에서 $w$ 로 가는 유향 신장트리의 수이고, 회로는 순환 이동으로 같아지는 것을 하나로 센다. N. G. de Bruijn, T. van Aardenne-Ehrenfest, C. A. B. Smith, W. T. Tutte 의 머리글자를 따 BEST 정리(BEST theorem)라 한다[^3].
+이다. $t_w(G)$ 는 모든 정점에서 $w$ 로 가는 [유향 신장트리](arborescences.md)의 수이고, 회로는 순환 이동으로 같아지는 것을 하나로 센다. N. G. de Bruijn, T. van Aardenne-Ehrenfest, C. A. B. Smith, W. T. Tutte 의 머리글자를 따 BEST 정리(BEST theorem)라 한다[^3].
 
 $t_w(G)$ 는 [그래프 Laplacian](graph-laplacian.md)의 행렬-트리 정리(matrix-tree theorem)로 행렬식 하나로 계산되므로, Euler 회로의 수는 다항시간에 센다. 무향 그래프의 Euler 회로를 세는 문제는 #P(sharp P)-완전이다[^4].
 

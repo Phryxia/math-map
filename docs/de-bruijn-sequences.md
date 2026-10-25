@@ -34,7 +34,7 @@
 
 정리. $\lvert B(k,n)\rvert=(k!)^{k^{n-1}}/k^n$ 이다. 이진 경우는 $2^{2^{n-1}-n}$ 이다.
 
-증명의 요지. de Bruijn 수열과 $G(k,n-1)$ 의 Euler 회로가 일대일로 대응하므로 Euler 회로를 센다. de Bruijn, van Aardenne-Ehrenfest, Smith, Tutte 의 머리글자를 딴 BEST 정리(BEST theorem)는 회로의 수를 $t_w\prod_v(\deg^+(v)-1)!=t_w\thinspace\big((k-1)!\big)^{k^{n-1}}$ 로 준다. $t_w$ 는 한 정점 $w$ 로 모이는 유향 신장트리의 수이고, 행렬-트리 정리(matrix-tree theorem)로 계산하면 $t_w=k^{k^{n-1}-n}$ 이다. 곱하면 위 식이다[^3].
+증명의 요지. de Bruijn 수열과 $G(k,n-1)$ 의 Euler 회로가 일대일로 대응하므로 Euler 회로를 센다. de Bruijn, van Aardenne-Ehrenfest, Smith, Tutte 의 머리글자를 딴 BEST 정리(BEST theorem)는 회로의 수를 $t_w\prod_v(\deg^+(v)-1)!=t_w\thinspace\big((k-1)!\big)^{k^{n-1}}$ 로 준다. $t_w$ 는 한 정점 $w$ 로 모이는 [유향 신장트리](arborescences.md)의 수이고, 행렬-트리 정리(matrix-tree theorem)로 계산하면 $t_w=k^{k^{n-1}-n}$ 이다. 곱하면 위 식이다[^3].
 
 ## Lyndon 단어의 이어 붙이기
 

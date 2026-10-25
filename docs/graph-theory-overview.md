@@ -77,6 +77,7 @@ graph TD
 먼저 읽을 갈래: 기본 구조. 시작 문서: [최소 신장트리](minimum-spanning-tree.md).
 
 - [최소 신장트리](minimum-spanning-tree.md): 탐욕 알고리즘이 최적해를 주는 독립성 구조
+  - [유향 신장트리](arborescences.md): 뿌리에서 모든 정점으로 경로가 하나씩 있는 호의 집합, 순환을 줄이는 Chu–Liu/Edmonds 최소 비용 알고리즘과 Edmonds 가지 정리
 - [네트워크 흐름](network-flow.md): 흐름의 최댓값과 절단의 최솟값이 같다
 - [Chvátal–Erdős 정리](chvatal-erdos-theorem.md): 연결도가 독립수 이상이면 Hamilton 순환이 있다는 정리, 가장 긴 순환과 부채 보조정리
 
