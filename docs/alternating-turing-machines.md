@@ -82,6 +82,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [일반화 지리 게임](generalized-geography.md)
 
 #complexity #computation #logic
