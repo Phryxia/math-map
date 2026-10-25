@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-25T17:03:41.330Z",
-  "nextSeq": 2494,
+  "savedAt": "2026-10-25T21:06:11.197Z",
+  "nextSeq": 2510,
   "items": [
     {
       "id": "9bab7237",
@@ -3618,6 +3618,134 @@
       "note": "#optimization #graph_theory #probability #machine_learning. 부모 submodular-functions. 최적화 개관 선형·반정부호 계획법 갈래 부분모듈 함수 아래 곁가지. 리프다. 후보: 독립 연쇄 모형과 SIR 전염병 모형의 대응(침투 percolation 과 연결), 감시점 배치(Leskovec 등의 CELF), 적응적 부분모듈성(Golovin-Krause).",
       "createdAt": "2026-10-25T17:03:40.527Z",
       "seq": 2493
+    },
+    {
+      "id": "27f42239",
+      "title": "set-cover 의 후속 간선",
+      "priority": 10,
+      "note": "#algorithms #complexity #combinatorics #optimization. 부모 approximation-algorithms. 계산 개관 복잡도 갈래 근사 알고리즘 아래 곁가지. 리프다. 후보: 원시-쌍대 기법(근사 알고리즘의 기법 목록에 이름만 있다), 기하적 집합 덮개와 epsilon-그물(Brönnimann–Goodrich, vc-dimension 아래), 부분모듈 덮개(Wolsey), 시설 배치 문제.",
+      "createdAt": "2026-10-25T20:42:55.610Z",
+      "seq": 2494
+    },
+    {
+      "id": "3adeb0aa",
+      "title": "furstenberg-multiple-recurrence 의 후속 간선",
+      "priority": 10,
+      "note": "#measure_theory #combinatorics #number_theory. 부모 mixing, szemeredi-theorem. 측도론 개관 측도보존 동역학 갈래 혼합성 아래 곁가지. 리프다. 후보: Furstenberg–Zimmer 구조 정리와 콤팩트 확대, Host–Kra 이론과 멱영다양체(nilmanifold), 다차원 Szemerédi 정리(Furstenberg–Katznelson), 다항식 van der Waerden 정리(Bergelson–Leibman).",
+      "createdAt": "2026-10-25T20:42:55.735Z",
+      "seq": 2495
+    },
+    {
+      "id": "08cc307e",
+      "title": "green-tao-theorem 의 후속 간선",
+      "priority": 10,
+      "note": "#number_theory #combinatorics. 부모 gowers-norms, sieve-methods, prime-number-theorem. 정수론 개관 해석적 정수론 갈래 체 방법 아래 곁가지. 리프다. 후보: 소수 위의 일차 방정식계(Green–Tao 2010)와 Möbius 함수의 멱영열 비상관, 전이 원리의 희박 판본(Conlon–Gowers, Schacht), Erdős 등차수열 추측, Tao–Ziegler 다항식 판본.",
+      "createdAt": "2026-10-25T20:42:55.868Z",
+      "seq": 2496
+    },
+    {
+      "id": "ca763d1c",
+      "title": "primal-dual-method 의 후속 간선",
+      "priority": 10,
+      "note": "#algorithms #optimization #complexity. 부모 lp-rounding, set-cover. 계산 개관 복잡도 갈래 LP 반올림 아래 곁가지. 리프다. 후보: Steiner 나무와 Steiner 숲 문제를 별도 문서로, 시설 배치 문제(Jain–Vazirani, Shmoys–Tardos–Aardal), 온라인 원시-쌍대(Buchbinder–Naor).",
+      "createdAt": "2026-10-25T20:45:12.191Z",
+      "seq": 2497
+    },
+    {
+      "id": "531699a7",
+      "title": "erdos-szekeres-convex-polygons 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #graph_theory. 부모 ramsey-theory. 조합론 개관 극단 조합론 갈래 Ramsey 이론 아래 곁가지. 리프다. 후보: 빈 볼록 다각형(Horton 집합, 빈 육각형 정리), 순서 유형과 방향 행렬, 고차원 판본과 양의 비율 Erdős–Szekeres 정리.",
+      "createdAt": "2026-10-25T20:47:28.940Z",
+      "seq": 2498
+    },
+    {
+      "id": "9506ec36",
+      "title": "steiner-tree-problem 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #algorithms #complexity #optimization. 부모 minimum-spanning-tree, approximation-algorithms. 그래프 개관 알고리즘과 최적화 갈래 최소 신장트리 아래 곁가지. 리프다. 후보: Steiner 숲과 일반화 Steiner 망(primal-dual-method 의 절에서 뗄지), 방향 Steiner 나무, Euclid Steiner 비 문제(Gilbert–Pollak), 직선 거리 Steiner 나무와 Hanan 격자.",
+      "createdAt": "2026-10-25T20:49:30.498Z",
+      "seq": 2499
+    },
+    {
+      "id": "2d356ce8",
+      "title": "facility-location 의 후속 간선",
+      "priority": 10,
+      "note": "#algorithms #optimization #complexity. 부모 primal-dual-method. 계산 개관 복잡도 갈래 원시-쌍대 방법 아래 곁가지. 리프다. 후보: k-중앙값과 k-중심 문제를 별도 문서로, 용량 제한 시설 배치, 국소 탐색 근사의 일반론.",
+      "createdAt": "2026-10-25T20:50:43.673Z",
+      "seq": 2500
+    },
+    {
+      "id": "5f2dc098",
+      "title": "parameterized-complexity 의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #algorithms #graph_theory. 부모 np-completeness. 계산 개관 복잡도 갈래 NP-완전성 아래 곁가지. 리프다. 후보: 정점 덮개 문제를 별도 문서로(König 정리, 2-근사, Nemhauser–Trotter, 커널), 지수 시간 가설과 강한 지수 시간 가설, 색 입히기, 커널화 하한(OR-합성, Bodlaender 등).",
+      "createdAt": "2026-10-25T20:53:17.581Z",
+      "seq": 2501
+    },
+    {
+      "id": "393d34df",
+      "title": "exponential-time-hypothesis 의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #algorithms. 부모 parameterized-complexity. 계산 개관 복잡도 갈래 매개변수 복잡도 아래 곁가지. 리프다. 후보: 세분 복잡도(직교 벡터, 3SUM, 모든 쌍 최단경로 가설)를 별도 문서로, 최장 공통 부분 수열, PPSZ 와 Schöning 알고리즘, Williams 의 ACC 회로 하한.",
+      "createdAt": "2026-10-25T20:55:13.737Z",
+      "seq": 2502
+    },
+    {
+      "id": "965fb896",
+      "title": "vertex-cover 의 후속 간선",
+      "priority": 10,
+      "note": "#algorithms #graph_theory #complexity. 부모 approximation-algorithms, parameterized-complexity. 계산 개관 복잡도 갈래 근사 알고리즘 아래 곁가지. 리프다. 후보: 독립집합과 클릭 문제를 별도 문서로, 왕관 분해(crown decomposition), Baker 의 평면 그래프 근사 계획.",
+      "createdAt": "2026-10-25T20:57:06.611Z",
+      "seq": 2503
+    },
+    {
+      "id": "527a5828",
+      "title": "fine-grained-complexity 의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #algorithms. 부모 exponential-time-hypothesis, shortest-paths. 계산 개관 알고리즘 설계 갈래 최단경로 아래 곁가지. 리프다. 후보: 3SUM 문제를 별도 문서로(Grønlund–Pettie 의 결정 나무), 최장 공통 부분 수열, 동적 그래프 문제의 조건부 하한(OMv 가설).",
+      "createdAt": "2026-10-25T20:58:58.440Z",
+      "seq": 2504
+    },
+    {
+      "id": "be0929d8",
+      "title": "clique-problem 의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #graph_theory #algorithms. 부모 np-completeness, turan-theorem. 계산 개관 복잡도 갈래 NP-완전성 아래 곁가지. 리프다. 후보: Bron–Kerbosch 알고리즘과 Moon–Moser 경계, 독립집합 문제, 클릭수와 채색수의 근사 하한(FGLSS 그래프).",
+      "createdAt": "2026-10-25T21:00:48.426Z",
+      "seq": 2505
+    },
+    {
+      "id": "cb1a4f19",
+      "title": "planted-clique 의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #probability #graph_theory #statistics. 부모 clique-problem, erdos-renyi-graphs. 계산 개관 복잡도 갈래 클릭 문제 아래 곁가지. 리프다. 후보: 제곱합 계층(sum-of-squares)을 별도 문서로(lasserre-hierarchy 와의 관계 확인), 저차 다항식 방법, 통계적 질의 모형, 희소 주성분 분석의 계산 문턱.",
+      "createdAt": "2026-10-25T21:02:19.251Z",
+      "seq": 2506
+    },
+    {
+      "id": "998e015b",
+      "title": "3sum 의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #algorithms. 부모 fine-grained-complexity. 계산 개관 알고리즘 설계 갈래 세분 복잡도 아래 곁가지. 리프다. 후보: k-SUM 과 부분합의 관계, 선형 결정 나무와 Kane–Lovett–Moran 의 추론 차원, 계산 기하의 3SUM 어려운 문제 목록.",
+      "createdAt": "2026-10-25T21:03:25.680Z",
+      "seq": 2507
+    },
+    {
+      "id": "85164b7f",
+      "title": "k-center 의 후속 간선",
+      "priority": 10,
+      "note": "#algorithms #complexity #optimization. 부모 approximation-algorithms. 계산 개관 복잡도 갈래 근사 알고리즘 아래 곁가지. 리프다. 후보: 지배 집합 문제를 별도 문서로(집합 덮개와의 관계, W[2]-완전성), 용량 제한 k-중심, 핵심 집합(coreset).",
+      "createdAt": "2026-10-25T21:04:38.898Z",
+      "seq": 2508
+    },
+    {
+      "id": "adf8b465",
+      "title": "dominating-set 의 후속 간선",
+      "priority": 10,
+      "note": "#algorithms #graph_theory #complexity. 부모 set-cover, parameterized-complexity. 계산 개관 복잡도 갈래 집합 덮개 문제 아래 곁가지. 리프다. 후보: 연결 지배 집합과 무선망, 이분차원성(bidimensionality)과 평면 그래프의 부분지수 알고리즘, Vizing 추측(지배수의 곱 그래프).",
+      "createdAt": "2026-10-25T21:05:58.887Z",
+      "seq": 2509
     },
     {
       "id": "dfb3e493",
