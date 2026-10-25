@@ -121,5 +121,6 @@ $$
 ## 더 알아보기
 
 - [Markov 결정 과정](markov-decision-process.md)
+- [세분 복잡도](fine-grained-complexity.md)
 
 #algorithms #graph_theory #computation

@@ -45,7 +45,7 @@ ETH 를 가정하면 크기 $k$ 의 클릭을 $f(k)n^{o(k)}$ 시간에 찾을 �
 
 ## 세분 복잡도
 
-직교 벡터 문제에서 출발하는 환원으로 여러 다항시간 문제의 지수가 SETH 아래에서 정해진다. 이 분야를 **세분 복잡도(fine-grained complexity)** 라 한다.
+직교 벡터 문제에서 출발하는 환원으로 여러 다항시간 문제의 지수가 SETH 아래에서 정해진다. 이 분야를 [세분 복잡도](fine-grained-complexity.md)(fine-grained complexity)라 한다.
 
 | 문제 | 알려진 알고리즘 | SETH 아래 하한 |
 | --- | --- | --- |
@@ -79,6 +79,6 @@ Paturi, Pudlák, Saks, Zane 의 알고리즘은 변수를 무작위 순서로 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [세분 복잡도](fine-grained-complexity.md)
 
 #complexity #algorithms
