@@ -105,6 +105,7 @@ graph TD
   - [Pratt 증명서](pratt-certificate.md): 곱셈군의 생성원과 p − 1 의 인수분해를 재귀적으로 모은 소수의 짧은 증명서, 소수 판정이 NP ∩ coNP 에 든다는 것
 - [NP-완전성과 Cook–Levin 정리](np-completeness.md): 환원과 완전성, SAT(satisfiability) 의 보편성
   - [다항 계층](polynomial-hierarchy.md): 다항 길이 한정사를 번갈아 쓴 술어의 층 Σₖ 와 Πₖ, 한정 불 논리식의 완전성, 붕괴 정리와 Karp–Lipton 정리
+  - [매개변수 복잡도](parameterized-complexity.md): 실행 시간을 f(k)·n^c 로 막는 고정 매개변수 다루기 쉬움, 커널과의 동치, 정점 덮개의 분기와 커널, W 계층과 지수 시간 가설
 - [Ladner 정리](ladner-theorem.md): P ≠ NP 이면 P 에도 NP-완전에도 들지 않는 NP 언어가 있다는 정리, 느리게 자라는 덧붙이기와 중간 차수의 조밀성
 - [셈 복잡도](counting-complexity.md): 해의 수를 세는 함수의 부류 #P, 해 보존 환원과 #SAT 의 완전성, 판정이 쉬운 문제의 세기와 근사 세기
 - [공간 복잡도](space-complexity.md): 작업 테이프 칸 수로 잰 비용, L 과 NL 과 PSPACE, Savitch 정리와 Immerman–Szelepcsényi 정리, 한정 불 논리식의 PSPACE-완전성
