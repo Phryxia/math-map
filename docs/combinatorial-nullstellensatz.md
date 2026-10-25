@@ -113,6 +113,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [유한체 Kakeya 집합](finite-field-kakeya-sets.md)
 
 #combinatorics #algebra #number_theory #graph_theory

@@ -93,6 +93,7 @@ graph TD
 - [해바라기 보조정리](sunflower-lemma.md): 원소가 k 개 이하인 집합이 k!(p − 1)ᵏ 개보다 많으면 교집합이 모두 같은 집합 p 개가 있다는 Erdős–Rado 상한, 귀납과 비둘기집 원리의 증명과 해바라기 추측
 - [캡 집합](cap-sets.md): 한 직선 위의 세 점이 없는 F₃ⁿ 의 부분집합, 조각 계수와 다항식 차수 세기로 얻는 Ellenberg–Gijswijt 의 2.756ⁿ 상한
 - [조합적 영점 정리](combinatorial-nullstellensatz.md): 격자 위에서 다항식이 모두 0 이 될 수 없는 최고차 단항식 조건, Cauchy–Davenport 정리와 Chevalley 정리와 Erdős–Ginzburg–Ziv 정리의 증명
+- [유한체 Kakeya 집합](finite-field-kakeya-sets.md): 모든 방향의 직선을 포함하는 Fqⁿ 의 부분집합, 다항식 방법으로 얻는 Dvir 의 qⁿ/n! 하한
 
 ## 설계와 접촉 구조
 
