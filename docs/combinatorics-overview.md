@@ -80,7 +80,7 @@ graph TD
 - [Ramsey 이론](ramsey-theory.md): 충분히 큰 구조를 색칠하면 단색 부분구조가 강제된다
   - [Hindman 정리](hindman-theorem.md): 유한합이 단색인 무한집합의 존재, 멱등 초필터로 넘는 증명
 - [Turán 정리](turan-theorem.md): $K_{r+1}$ 을 포함하지 않는 그래프의 최대 간선 수와 그 값을 주는 Turán 그래프
-- [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md): 조각 쌍마다 간선 밀도가 고른 분할의 존재, 삼각형 제거 보조정리와 [Roth 정리](roth-theorem.md)
+- [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md): 조각 쌍마다 간선 밀도가 고른 분할의 존재, 삼각형 제거 보조정리와 길이 3 등차수열의 Roth 정리
   - [Erdős–Stone 정리](erdos-stone-theorem.md): 금지 부분그래프의 극단 간선 수가 그 그래프의 채색수로 정해진다
 - [그래폰](graphons.md): 조밀 그래프 열의 극한인 대칭 가측함수, cut 거리와 그래폰 공간의 콤팩트성
 - [Sidorenko 추측](sidorenko-conjecture.md): 이분그래프의 준동형 밀도를 무작위 그래프가 최소화한다는 추측, 나무와 짝수 사이클에서의 증명
