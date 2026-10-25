@@ -39,7 +39,7 @@
 
 ## W[1]-완전성과 하한
 
-크기 $k$ 의 클릭과 크기 $k$ 의 독립집합은 $\mathrm W\lbrack 1\rbrack$-완전이고, 크기 $k$ 의 지배 집합은 $\mathrm W\lbrack 2\rbrack$-완전이다[^1]. $\mathrm{FPT}\ne\mathrm W\lbrack 1\rbrack$ 를 가정하면 클릭은 FPT 가 아니다.
+크기 $k$ 의 클릭과 크기 $k$ 의 독립집합은 $\mathrm W\lbrack 1\rbrack$-완전이고, 크기 $k$ 의 [지배 집합](dominating-set.md)은 $\mathrm W\lbrack 2\rbrack$-완전이다[^1]. $\mathrm{FPT}\ne\mathrm W\lbrack 1\rbrack$ 를 가정하면 클릭은 FPT 가 아니다.
 
 [지수 시간 가설](exponential-time-hypothesis.md)(exponential time hypothesis, ETH)은 변수 $n$ 개의 3-SAT(satisfiability) 를 $2^{o(n)}$ 시간에 푸는 알고리즘이 없다는 가설이다[^4]. ETH 를 가정하면 크기 $k$ 의 클릭을 $f(k)n^{o(k)}$ 시간에 푸는 알고리즘이 없다[^5]. 이 하한으로 $n^k$ 꼴의 전수 탐색이 지수의 차수까지 최적임이 정해진다.
 
@@ -74,5 +74,6 @@
 
 - [지수 시간 가설](exponential-time-hypothesis.md)
 - [정점 덮개 문제](vertex-cover.md)
+- [지배 집합 문제](dominating-set.md)
 
 #complexity #algorithms #graph_theory
