@@ -61,6 +61,6 @@ Grundy 값은 국면의 그래프에서 역방향으로 계산되므로 국면 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Misère Nim](misere-nim.md)
 
 #computation #combinatorics
