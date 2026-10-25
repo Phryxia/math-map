@@ -92,5 +92,6 @@ $$
 ## 더 알아보기
 
 - [Ladner 정리](ladner-theorem.md)
+- [Williams 정리](williams-theorem.md)
 
 #complexity #computation #logic #theorem

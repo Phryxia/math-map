@@ -61,7 +61,7 @@ $\mathbb F_p$ 위의 다항식 $P(x_1,\dots,x_n)$ 이 불 함수 $f$ 를 **$\var
 # 활용
 
 - [자연 증명](natural-proofs.md). Razborov–Smolensky 정리의 성질 "낮은 차수 다항식으로 근사되지 않는다" 는 구성적이고 넓으므로 자연 증명이다. 따라서 이 방법은 유사난수 함수가 있는 회로 부류의 하한에는 쓰이지 않는다.
-- 법 $m$ 이 합성수인 회로. $m=6$ 처럼 서로 다른 소수 둘의 곱을 법으로 하는 게이트를 쓴 상수 깊이 회로에서는 이 논증이 통하지 않는다. NEXP(nondeterministic exponential time) 가 그런 다항 크기 회로 족, 곧 $\mathrm{ACC}^0$(alternating circuit with counters) 에 들지 않는다는 것을 R. Williams 가 2011 년에 다른 방법으로 증명했다[^3].
+- 법 $m$ 이 합성수인 회로. $m=6$ 처럼 서로 다른 소수 둘의 곱을 법으로 하는 게이트를 쓴 상수 깊이 회로에서는 이 논증이 통하지 않는다. NEXP(nondeterministic exponential time) 가 그런 다항 크기 회로 족, 곧 $\mathrm{ACC}^0$(alternating circuit with counters) 에 들지 않는다는 것을 R. Williams 가 2011 년에 다른 방법으로 증명했다([Williams 정리](williams-theorem.md))[^3].
 
 [^1]: A. A. Razborov, "Lower bounds on the size of bounded depth networks over a complete basis with logical addition", Mathematical Notes of the Academy of Sciences of the USSR 41(4) (1987), 333–338.
 [^2]: R. Smolensky, "Algebraic methods in the theory of lower bounds for Boolean circuit complexity", Proceedings of the 19th ACM Symposium on Theory of Computing (1987), 77–82.
@@ -76,6 +76,6 @@ $\mathbb F_p$ 위의 다항식 $P(x_1,\dots,x_n)$ 이 불 함수 $f$ 를 **$\var
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Williams 정리](williams-theorem.md)
 
 #complexity #computation #field_theory #combinatorics
