@@ -114,6 +114,7 @@ $$
 - [체의 확대](field-extensions.md)
 - [최소다항식](minimal-polynomial.md)
 - [Schwartz–Zippel 보조정리](schwartz-zippel-lemma.md)
+- [조합적 영점 정리](combinatorial-nullstellensatz.md)
 
 ### 기하와 조합
 

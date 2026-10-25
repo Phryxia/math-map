@@ -160,5 +160,6 @@ $\mathbb{F}\_q$ 위의 사영평면은 위수 $q$ 의 유한사영평면이고, 
 ### 조합론
 
 - [캡 집합](cap-sets.md)
+- [조합적 영점 정리](combinatorial-nullstellensatz.md)
 
 #field_theory #algebra #cryptography #combinatorics
