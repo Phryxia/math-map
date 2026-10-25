@@ -119,6 +119,7 @@ graph TD
 먼저 읽을 갈래: 세기의 기초, 극단 조합론. 먼저 읽을 것: [Brouwer 고정점 정리](brouwer-fixed-point.md), [Borsuk–Ulam 정리](borsuk-ulam.md)(위상 개관). 시작 문서: [Sperner 보조정리](sperner-lemma.md).
 
 - [Sperner 보조정리](sperner-lemma.md): 단체분할의 이름표가 강제하는 완전 이름표 단체, Brouwer 고정점 정리의 조합적 증명
+  - [Hex 게임](hex-game.md): 가득 찬 판에서 정확히 한 사람이 이겨 있다는 Hex 정리와 Brouwer 고정점 정리의 동치, 전략 훔치기로 얻는 먼저 두는 사람의 승리, 판정의 PSPACE-완전성
   - [KKM 정리](kkm-theorem.md)(Knaster–Kuratowski–Mazurkiewicz): 면 구조를 따르는 닫힌 덮개의 공통점, Brouwer 고정점 정리와의 동치
 - [Tucker 보조정리](tucker-lemma.md): 반대칭 이름표가 강제하는 보완 간선, Borsuk–Ulam 정리의 조합적 판본
 - [Kneser 그래프](kneser-graphs.md): 서로 만나지 않는 $k$ 집합을 잇는 그래프, 독립수와 Lovász 의 채색수 $n-2k+2$
