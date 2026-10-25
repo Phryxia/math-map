@@ -48,7 +48,7 @@ $A\subseteq X$, $B\subseteq Y$ 에 대해 $A\times B$ 꼴의 집합을 **조합�
 
 - 직관 절의 규칙으로 $R(\mathrm{EQ})=O(\log n)$ 이다. 공개 동전으로는 무작위 비트열 $r$ 과의 내적 $\langle x,r\rangle$ 을 몇 번 비교해 $O(1)$ 비트로 된다.
 - I. Newman 의 정리로 공개 동전 규칙은 비용을 $O(\log n)$ 만큼 더 들여 사적 동전 규칙으로 바뀐다[^4].
-- $x$ 와 $y$ 를 $\lbrace 1,\dots,n\rbrace$ 의 부분집합의 특성 벡터로 보고 두 집합이 겹치지 않는지 묻는 서로소 함수(disjointness) $\mathrm{DISJ}$ 는 $R(\mathrm{DISJ})=\Theta(n)$ 이다. B. Kalyanasundaram 과 G. Schnitger 가 증명했고 A. A. Razborov 가 간단한 증명을 주었다[^5][^6]. 무작위성을 써도 줄지 않는 대표적인 함수이고, 많은 하한이 이 함수로의 환원으로 증명된다.
+- $x$ 와 $y$ 를 $\lbrace 1,\dots,n\rbrace$ 의 부분집합의 특성 벡터로 보고 두 집합이 겹치지 않는지 묻는 서로소 함수(disjointness) $\mathrm{DISJ}$ 는 $R(\mathrm{DISJ})=\Theta(n)$ 이다. B. Kalyanasundaram 과 G. Schnitger 가 증명했고 A. A. Razborov 가 간단한 증명을 주었다[^5][^6]. Razborov 의 증명은 [Yao 최소최대 원리](yao-minimax-principle.md)로 입력 분포 하나를 정해 결정적 규칙의 오류를 센다. 무작위성을 써도 줄지 않는 대표적인 함수이고, 많은 하한이 이 함수로의 환원으로 증명된다.
 
 ## Karchmer–Wigderson 정리
 
