@@ -191,5 +191,6 @@ $$
 ## 더 알아보기
 
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md)
+- [Moser–Tardos 알고리즘](moser-tardos-algorithm.md)
 
 #combinatorics #probability
