@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-25T12:59:54.625Z",
-  "nextSeq": 2484,
+  "savedAt": "2026-10-25T17:03:41.330Z",
+  "nextSeq": 2494,
   "items": [
     {
       "id": "9bab7237",
@@ -3538,6 +3538,86 @@
       "note": "#combinatorics #number_theory. 부모 van-der-waerden-theorem, szemeredi-regularity-lemma. 조합론 개관 극단 조합론 갈래 정규성 보조정리 아래 곁가지. 리프다. 후보: Furstenberg 다중 되돌이 정리(ergodic-theorem 아래), Gowers 균등 노름, Green-Tao 정리, 초그래프 제거 보조정리, Behrend 구성, 큐 04dad73d 의 길이 3 Roth 정리(roth-theorem 은 Diophantine 근사의 동명이의어이므로 미링크 보고는 오탐).",
       "createdAt": "2026-10-25T09:01:16.316Z",
       "seq": 2480
+    },
+    {
+      "id": "d5f23023",
+      "title": "erdos-selfridge-theorem 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #probability #computation. 부모 hales-jewett-theorem, probabilistic-method. 조합론 개관 확률적 방법 갈래 확률적 방법 아래 곁가지. 리프다. 후보: Beck 의 Maker-Breaker 편향 게임(biased games)과 Chvátal-Erdős 의 간선 게임, 쌍 짝짓기 전략(pairing strategy)과 Hales-Jewett 의 n>=2^d 무승부, 위치 게임의 PSPACE-완전성(Schaefer).",
+      "createdAt": "2026-10-25T16:39:04.529Z",
+      "seq": 2484
+    },
+    {
+      "id": "0d421e9d",
+      "title": "strategy-stealing 의 후속 간선",
+      "priority": 10,
+      "note": "#computation #combinatorics #complexity. 부모 generalized-geography, 자식 hex-game. 계산 개관 복잡도 갈래 교대 Turing 기계 아래 곁가지. 후보: Chomp 를 별도 문서로(Zeilberger 의 3행 Chomp, 정사각형 판의 대칭 전략), Bridg-It 과 Lehman 의 Shannon 전환 게임 풀이(매트로이드 기저 두 개), 쌍 짝짓기 전략.",
+      "createdAt": "2026-10-25T16:43:23.004Z",
+      "seq": 2485
+    },
+    {
+      "id": "8c9a3376",
+      "title": "shannon-switching-game 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #graph_theory #computation. 부모 minimum-spanning-tree, strategy-stealing. 조합론 개관 매칭과 매트로이드 갈래 Matroid 아래 곁가지. 리프다. 후보: matroid 합 정리(Edmonds, Nash-Williams 의 나무 채우기)를 별도 문서로, Lehman 정리의 필요성 증명과 matroid 게임의 세 경우, 정점 판본의 PSPACE-완전성(Even-Tarjan).",
+      "createdAt": "2026-10-25T16:46:35.317Z",
+      "seq": 2486
+    },
+    {
+      "id": "ff08adcb",
+      "title": "biased-maker-breaker-games 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #graph_theory #probability. 부모 erdos-selfridge-theorem, erdos-renyi-graphs. 조합론 개관 확률적 방법 갈래 Erdős–Rényi 아래 곁가지. 리프다. 후보: 상자 게임(box game, Chvátal-Erdős)을 별도 문서로, Avoider-Enforcer 게임, Maker-Breaker 완전 부분그래프 게임과 Bednarska-Łuczak 의 일반 H 문턱, 무작위 Maker-Breaker 게임(Stojaković-Szabó).",
+      "createdAt": "2026-10-25T16:49:04.706Z",
+      "seq": 2487
+    },
+    {
+      "id": "728c9989",
+      "title": "matroid-union 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #graph_theory #optimization. 부모 matroids, 자식 shannon-switching-game. 조합론 개관 매칭과 매트로이드 갈래 주 경로. 후보: matroid 교집합 정리(Edmonds)를 별도 문서로, 뿌리 있는 유향 신장트리 채우기(Edmonds 가지 정리), 무지개 신장트리.",
+      "createdAt": "2026-10-25T16:51:28.035Z",
+      "seq": 2488
+    },
+    {
+      "id": "af2b54c1",
+      "title": "matroid-intersection 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #optimization #graph_theory. 부모 matchings, matroid-union. 조합론 개관 매칭과 매트로이드 갈래 Matroid 합 정리 아래 곁가지. 리프다. 후보: 유향 신장트리와 Chu-Liu/Edmonds 알고리즘, 가중 matroid 교집합과 교집합 다면체(Edmonds), 다모듈 함수의 다면체(polymatroid).",
+      "createdAt": "2026-10-25T16:53:52.491Z",
+      "seq": 2489
+    },
+    {
+      "id": "8840e59c",
+      "title": "arborescences 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #algorithms #optimization. 부모 minimum-spanning-tree, matroid-intersection. 그래프 개관 알고리즘과 최적화 갈래 최소 신장트리 아래 곁가지. 리프다. 후보: 유향 행렬-트리 정리(graph-laplacian 의 절에서 뗄지), Lovász 의 가지 정리 증명과 Nash-Williams 유향 연결도, Tarjan 의 O(m log n) 구현.",
+      "createdAt": "2026-10-25T16:56:58.978Z",
+      "seq": 2490
+    },
+    {
+      "id": "7750df70",
+      "title": "submodular-functions 의 후속 간선",
+      "priority": 10,
+      "note": "#optimization #combinatorics #machine_learning. 부모 matroids. 최적화 개관 선형·반정부호 계획법 갈래 끝 주 경로. 리프다. 후보: 다모듈 다면체(polymatroid)와 Edmonds 의 교집합 정리, 집합 덮개(set cover)와 최대 덮기의 Feige 하한, 영향력 최대화(Kempe-Kleinberg-Tardos), 연속 탐욕법과 다선형 확장.",
+      "createdAt": "2026-10-25T16:59:39.912Z",
+      "seq": 2491
+    },
+    {
+      "id": "067dedab",
+      "title": "polymatroids 의 후속 간선",
+      "priority": 10,
+      "note": "#optimization #combinatorics. 부모 submodular-functions, matroid-intersection. 최적화 개관 선형·반정부호 계획법 갈래 부분모듈 함수 아래 곁가지. 리프다. 후보: 부분모듈 흐름(Edmonds-Giles), 이산 볼록 해석(M-볼록 함수, Murota), 기저 다면체 위의 Fujishige-Wolfe 최소 노름 점.",
+      "createdAt": "2026-10-25T17:01:56.798Z",
+      "seq": 2492
+    },
+    {
+      "id": "121c4fb8",
+      "title": "influence-maximization 의 후속 간선",
+      "priority": 10,
+      "note": "#optimization #graph_theory #probability #machine_learning. 부모 submodular-functions. 최적화 개관 선형·반정부호 계획법 갈래 부분모듈 함수 아래 곁가지. 리프다. 후보: 독립 연쇄 모형과 SIR 전염병 모형의 대응(침투 percolation 과 연결), 감시점 배치(Leskovec 등의 CELF), 적응적 부분모듈성(Golovin-Krause).",
+      "createdAt": "2026-10-25T17:03:40.527Z",
+      "seq": 2493
     },
     {
       "id": "dfb3e493",
