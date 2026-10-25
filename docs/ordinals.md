@@ -183,4 +183,8 @@ $$
 - [Goodstein 정리](goodstein-theorem.md)
 - [빠르게 자라는 계층](fast-growing-hierarchy.md)
 
+### 수 체계의 확장
+
+- [초현실수](surreal-numbers.md)
+
 #set_theory #logic #analysis
