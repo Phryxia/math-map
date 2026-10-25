@@ -113,6 +113,7 @@ graph TD
 - [유한 사영평면](finite-projective-planes.md): 차수 $n$ 평면의 존재 문제와 직교 방진 $n-1$ 개의 동치
 - [Zarankiewicz 문제](zarankiewicz-problem.md): $K_{s,t}$ 를 포함하지 않는 이분 그래프의 최대 간선 수
 - [Szemerédi–Trotter 정리](szemeredi-trotter.md): 점과 직선의 접촉 횟수 상한, 평면 그래프의 교차 횟수를 세어 얻는 증명
+  - [합-곱 문제](sum-product-problem.md): 합집합과 곱집합이 함께 작을 수 없다는 Erdős–Szemerédi 추측, 접촉 수로 얻는 Elekes 의 5/4 와 Solymosi 의 4/3, 유한체의 Bourgain–Katz–Tao 판본
 
 ## 확률적 방법과 무작위 구조
 
