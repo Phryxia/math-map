@@ -112,7 +112,8 @@ graph TD
   - [외판원 문제](traveling-salesman-problem.md): 최소 가중치 Hamilton 순환, 일반 판본의 근사 불가능성과 Held–Karp 점화식, 최소 신장트리의 2-근사와 Christofides 의 3/2-근사
 - [집합 덮개 문제](set-cover.md): 남은 원소를 가장 많이 덮는 탐욕 선택의 조화수 근사비, 선형 완화의 로그 간극, (1−ε)ln n 근사 하한
 - [LP 반올림](lp-rounding.md): LP(linear programming) 완화로 정수 제약을 푼 뒤 정수해로 반올림하는 근사 설계
-  - [원시-쌍대 방법](primal-dual-method.md): 쌍대 가능해를 키워 빠듯해진 변수만 고르는 근사 설계, 완화된 상보 여유와 빈도 근사, Steiner 숲의 동시 증가와 역삭제
+- [원시-쌍대 방법](primal-dual-method.md): 쌍대 가능해를 키워 빠듯해진 변수만 고르는 근사 설계, 완화된 상보 여유와 빈도 근사, Steiner 숲의 동시 증가와 역삭제
+  - [시설 배치 문제](facility-location.md): 개설 비용과 연결 비용의 합을 최소화하는 시설 선택, 삼각부등식을 쓰는 LP 반올림과 원시-쌍대 상수 근사, k-중앙값의 국소 탐색
 - [PCP 정리](pcp-theorem.md): PCP(probabilistically checkable proof), 곧 상수 개의 비트만 읽는 검증과 근사 하한
 - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위의 Fourier 전개, 영향력과 잡음 안정성
   - [민감도 정리](sensitivity-theorem.md): 차수가 민감도의 제곱 이하라는 Huang 의 정리, 초입방체의 부호 붙은 인접 행렬과 Cauchy 끼움 정리, 블록 민감도와 결정 나무 깊이
