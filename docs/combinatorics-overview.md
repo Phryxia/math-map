@@ -89,6 +89,7 @@ graph TD
 - [Sperner 정리](sperner-theorem.md): 부분집합 격자의 최대 반사슬과 LYM(Lubell–Yamamoto–Meshalkin) 부등식
   - [Erdős–Ko–Rado 정리](erdos-ko-rado.md): 서로 만나는 $k$ 집합족의 최대 크기, Katona 의 순환 배열 세기
   - [Littlewood–Offord 문제](littlewood-offord.md): 부호를 바꿔 더한 값이 한 점에 몰리는 정도의 상한
+- [해바라기 보조정리](sunflower-lemma.md): 원소가 k 개 이하인 집합이 k!(p − 1)ᵏ 개보다 많으면 교집합이 모두 같은 집합 p 개가 있다는 Erdős–Rado 상한, 귀납과 비둘기집 원리의 증명과 해바라기 추측
 
 ## 설계와 접촉 구조
 
