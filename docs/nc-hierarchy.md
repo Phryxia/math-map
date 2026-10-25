@@ -52,7 +52,7 @@ $$
 - $\mathrm{NL}\subseteq\mathrm{AC}^1$. NL(nondeterministic logarithmic space)의 언어는 구성 그래프의 도달 가능성으로 판정된다. 인접 행렬 $A$ 에 단위행렬을 더한 불 행렬을 $\lceil\log_2 N\rceil$ 번 제곱하면 $N$ 걸음 이내의 도달 관계가 나오고, 불 행렬의 곱 한 번은 논리곱 다음 논리합의 깊이 $2$ 회로다.
 - $\mathrm{NC}\subseteq\mathrm P$. 균일성으로 $C_n$ 을 다항시간에 써 내고 게이트 값을 위상순으로 계산한다.
 
-$\mathrm{AC}^0\ne\mathrm{NC}^1$ 이다. 홀짝 함수는 깊이 $O(\log n)$ 의 XOR(exclusive or) 게이트의 나무로 $\mathrm{NC}^1$ 에 들지만, [불 회로](boolean-circuits.md)의 Håstad 하한으로 $\mathrm{AC}^0$ 에 들지 않는다.
+$\mathrm{AC}^0\ne\mathrm{NC}^1$ 이다. 홀짝 함수는 깊이 $O(\log n)$ 의 XOR(exclusive or) 게이트의 나무로 $\mathrm{NC}^1$ 에 들지만, [Håstad 스위칭 보조정리](switching-lemma.md)로 증명되는 홀짝 하한에 따라 $\mathrm{AC}^0$ 에 들지 않는다.
 
 ## NC 에 드는 계산
 

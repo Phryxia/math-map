@@ -41,7 +41,7 @@
 
 ## 상수 깊이 회로의 하한
 
-깊이가 상수이고 AND 와 OR 게이트의 들어오는 변 수에 제한이 없는 다항 크기 회로의 부류를 $\mathrm{AC}^0$ 이라 한다. 입력의 $1$ 의 개수의 홀짝을 계산하는 함수는 $\mathrm{AC}^0$ 에 들지 않는다. 깊이 $d$ 회로로 계산하려면 크기가 $2^{\Omega(n^{1/(d-1)})}$ 이어야 한다는 것을 J. Håstad 가 무작위 제한(random restriction)으로 증명했다[^3].
+깊이가 상수이고 AND 와 OR 게이트의 들어오는 변 수에 제한이 없는 다항 크기 회로의 부류를 $\mathrm{AC}^0$ 이라 한다. 입력의 $1$ 의 개수의 홀짝을 계산하는 함수는 $\mathrm{AC}^0$ 에 들지 않는다. 깊이 $d$ 회로로 계산하려면 크기가 $2^{\Omega(n^{1/(d-1)})}$ 이어야 한다는 것을 J. Håstad 가 무작위 제한(random restriction)과 [Håstad 스위칭 보조정리](switching-lemma.md)로 증명했다[^3].
 
 # 활용
 
@@ -63,6 +63,7 @@
 ## 더 알아보기
 
 - [NC 계층](nc-hierarchy.md)
+- [Håstad 스위칭 보조정리](switching-lemma.md)
 - [통신 복잡도](communication-complexity.md)
 - [Nisan–Wigderson 생성기](nisan-wigderson-generator.md)
 - [자연 증명](natural-proofs.md)

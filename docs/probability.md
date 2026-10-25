@@ -125,6 +125,7 @@ $$
 - [부울 함수의 Fourier 해석](boolean-fourier.md)
 - [스펙트럼 희소화](spectral-sparsification.md)
 - [Schwartz–Zippel 보조정리](schwartz-zippel-lemma.md)
+- [Håstad 스위칭 보조정리](switching-lemma.md)
 - [범용 해시족](universal-hashing.md)
 - [스킵 리스트](skip-lists.md)
 - [비교 정렬](comparison-sorting.md)
