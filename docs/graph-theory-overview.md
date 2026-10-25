@@ -65,6 +65,7 @@ graph TD
 
 - [그래프 색칠](graph-coloring.md): 채색수, 탐욕 상한, 4색 정리
   - [Tutte 다항식](tutte-polynomial.md): 채색 다항식과 신장트리 개수를 함께 거두는 두 변수 불변량
+  - [목록 색칠](list-coloring.md): 정점마다 허용된 색의 목록 안에서 칠하는 색칠과 선택수, Alon–Tarsi 정리와 평면 그래프의 Thomassen 5 선택 가능성, 이분그래프 간선의 Galvin 정리
 - [de Bruijn–Erdős 정리](de-bruijn-erdos-theorem.md): 모든 유한 부분그래프가 k 색으로 칠해지면 무한 그래프 전체가 k 색으로 칠해진다는 정리, Tychonoff 정리와 콤팩트성 증명, 선택 원리의 역할
   - [평면의 채색수](chromatic-number-of-the-plane.md): 거리 1 인 두 점이 다른 색을 받는 평면 색칠의 최소 색 수, Moser 방추의 하한 4 와 육각형 무늬의 상한 7, de Grey 의 하한 5
 - [매칭](matchings.md): 이분그래프의 완전매칭 조건

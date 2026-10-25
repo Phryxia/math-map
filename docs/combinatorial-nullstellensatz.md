@@ -96,7 +96,7 @@ $$
 
 ## 그래프의 목록 색칠
 
-[그래프 색칠](graph-coloring.md)에서 정점마다 허용된 색의 목록을 주고 그 안에서 인접한 정점이 다른 색을 받게 칠하는 것을 목록 색칠(list coloring)이라 한다. 정점 $v$ 에 변수 $x_v$ 를 두고 그래프 다항식 $\prod_{uv\in E,\thinspace u\lt v}(x_u-x_v)$ 에 둘째 판본을 쓰면, 이 다항식의 단항식 $\prod_v x_v^{d_v}$ 의 지수 합이 간선 수와 같고 그 계수가 $0$ 이 아닐 때 목록 크기가 $d_v+1$ 이상인 모든 목록에서 색칠이 존재한다. N. Alon 과 M. Tarsi 는 이 계수가, 정점 $v$ 에서 나가는 간선이 $d_v$ 개인 방향 짓기 하나를 고정할 때 모든 정점에서 들어오는 간선 수와 나가는 간선 수가 같은 부분그래프 가운데 간선이 짝수 개인 것과 홀수 개인 것의 개수 차에 부호를 붙인 값이라는 것을 증명했다(Alon–Tarsi 정리, Alon–Tarsi theorem)[^5].
+[그래프 색칠](graph-coloring.md)에서 정점마다 허용된 색의 목록을 주고 그 안에서 인접한 정점이 다른 색을 받게 칠하는 것을 [목록 색칠](list-coloring.md)이라 한다. 정점 $v$ 에 변수 $x_v$ 를 두고 그래프 다항식 $\prod_{uv\in E,\thinspace u\lt v}(x_u-x_v)$ 에 둘째 판본을 쓰면, 이 다항식의 단항식 $\prod_v x_v^{d_v}$ 의 지수 합이 간선 수와 같고 그 계수가 $0$ 이 아닐 때 목록 크기가 $d_v+1$ 이상인 모든 목록에서 색칠이 존재한다. N. Alon 과 M. Tarsi 는 이 계수가, 정점 $v$ 에서 나가는 간선이 $d_v$ 개인 방향 짓기 하나를 고정할 때 모든 정점에서 들어오는 간선 수와 나가는 간선 수가 같은 부분그래프 가운데 간선이 짝수 개인 것과 홀수 개인 것의 개수 차에 부호를 붙인 값이라는 것을 증명했다(Alon–Tarsi 정리, Alon–Tarsi theorem)[^5].
 
 [^1]: N. Alon, "Combinatorial Nullstellensatz", Combinatorics, Probability and Computing 8 (1999), 7–29.
 [^2]: H. Davenport, "On the addition of residue classes", Journal of the London Mathematical Society 10 (1935), 30–32.
@@ -114,5 +114,6 @@ $$
 ## 더 알아보기
 
 - [유한체 Kakeya 집합](finite-field-kakeya-sets.md)
+- [목록 색칠](list-coloring.md)
 
 #combinatorics #algebra #number_theory #graph_theory
