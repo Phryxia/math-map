@@ -68,7 +68,7 @@ Schur 정리는 Hindman 정리의 따름정리다. $B$ 의 두 원소 $b_1,b_2$ 
 
 # 활용
 
-- **분할 정칙성.** 유한합 집합이 분할 정칙 집합족의 기본 예다. [Ramsey 이론](ramsey-theory.md)의 Schur 정리와 Rado 정리가 선형 방정식계에 대해 묻는 것을 Hindman 정리는 무한 생성집합에 대해 답한다.
+- **분할 정칙성.** 유한합 집합이 분할 정칙 집합족의 기본 예다. [Ramsey 이론](ramsey-theory.md)의 Schur 정리와 [Rado 정리](rado-theorem.md)가 선형 방정식계에 대해 묻는 것을 Hindman 정리는 무한 생성집합에 대해 답한다.
 - **IP 집합.** 어떤 무한집합의 유한합 집합을 담는 집합을 IP 집합(infinite-dimensional parallelepiped)이라 하고, 이 집합족에서의 되돌이가 [van der Waerden 정리](van-der-waerden-theorem.md)의 동역학 증명에 쓰인다.
 - **초필터 대수.** $\beta\mathbb N$ 의 멱등원과 극소 왼쪽 아이디얼의 구조를 조합론에 쓰는 방법이 이 증명에서 나왔다. 멱등원의 극소성을 더 요구하면 중심 집합에 대한 정리들이 따라온다.
 

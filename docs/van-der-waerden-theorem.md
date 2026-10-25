@@ -73,5 +73,6 @@ Szemerédi 정리는 양의 정수의 부분집합 $A$ 가 $\limsup_{N\to\infty}
 
 - [Hales–Jewett 정리](hales-jewett-theorem.md)
 - [Szemerédi 정리](szemeredi-theorem.md)
+- [Rado 정리](rado-theorem.md)
 
 #combinatorics #number_theory
