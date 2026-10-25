@@ -162,7 +162,8 @@ graph TD
   - [Strassen 알고리즘](strassen-algorithm.md): 블록 곱 일곱 번으로 $\Theta(n^{\log_2 7})$ 시간에 행렬을 곱한다. 행렬 곱셈 지수 $\omega$ 와 텐서 계수
 - [Karatsuba 곱셈](karatsuba-multiplication.md): 절반 자리 곱 세 번으로 $\Theta(n^{\log_2 3})$ 시간에 정수를 곱한다. 다항식 보간으로 본 꼴과 Toom–Cook 곱셈
 - [최단경로](shortest-paths.md): Bellman–Ford, Dijkstra, 고정점으로서의 최단거리
-  - [세분 복잡도](fine-grained-complexity.md): 3SUM, 모든 쌍 최단경로, 직교 벡터의 세 가설과 지수를 보존하는 환원, 세 점 공선과 음수 삼각형과 편집 거리의 하한
+- [세분 복잡도](fine-grained-complexity.md): 3SUM, 모든 쌍 최단경로, 직교 벡터의 세 가설과 지수를 보존하는 환원, 세 점 공선과 음수 삼각형과 편집 거리의 하한
+  - [3SUM 문제](3sum.md): 합이 0 인 세 정수의 판정, 두 포인터의 O(n²) 와 3SUM 가설, 결정 나무의 깊이, 세 점 공선과 삼각형 나열로 가는 환원
 - [고속 Fourier 변환](fft.md): 분할정복으로 길이 $n$ 수열의 Fourier 계수를 $O(n\log n)$ 에 계산한다
   - [Schönhage–Strassen 알고리즘](schonhage-strassen.md): 조각의 합성곱을 $\mathbb Z/(2^K+1)\mathbb Z$ 위의 고속 Fourier 변환으로 계산해 $N$ 비트 정수를 $O(N\log N\log\log N)$ 에 곱한다
   - [Gauss 구적](gaussian-quadrature.md): 노드와 가중치를 함께 풀어 함수 호출 $n$ 번으로 차수 $2n-1$ 까지 정확한 적분
