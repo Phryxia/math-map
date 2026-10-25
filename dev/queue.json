@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-24T21:05:05.082Z",
-  "nextSeq": 2456,
+  "savedAt": "2026-10-25T01:03:34.705Z",
+  "nextSeq": 2459,
   "items": [
     {
       "id": "9bab7237",
@@ -3442,6 +3442,14 @@
       "note": "#complexity #combinatorics #algorithms. 리프: traveling-salesman-problem, isolation-lemma, lyndon-words, de-bruijn-sequences, linear-feedback-shift-registers, randomized-complexity-classes, toda-theorem, kasteleyn-theorem, boolean-circuits. 후보: Held-Karp 1-트리 하한과 부분순회 제거 LP(부모 linear-programming, traveling-salesman-problem), 2-opt 와 Lin-Kernighan 국소 탐색; Tutte 행렬과 Pfaffian 을 별도 문서로(부모 matchings, kasteleyn-theorem); 자유 Lie 대수와 Witt 공식(부모 lie-algebras, lyndon-words); #P 와 해의 수 세기 복잡도를 별도 문서로(지금은 permanent 와 toda-theorem 이 정의 절에 적는다, 부모 np-completeness); 이합체 모형(부모 kasteleyn-theorem, ising-model); 중국인 우편배달부 문제(eulerian-circuits 활용 절에 한 항목); 상수 깊이 회로와 Håstad 전환 보조정리(부모 boolean-circuits); 대수적 복잡도 VP 와 VNP(부모 permanent, boolean-circuits).",
       "createdAt": "2026-10-24T17:07:22.513Z",
       "seq": 2448
+    },
+    {
+      "id": "c673bf10",
+      "title": "Karchmer–Wigderson 정리를 별도 문서로 둘지 판정",
+      "priority": 10,
+      "note": "communication-complexity 의 절과 monotone-circuits 의 절이 같은 정리를 다룬다. 연결성의 단조 깊이 하한까지 담으면 별도 문서 후보. 부모 후보 communication-complexity, monotone-circuits.",
+      "createdAt": "2026-10-25T00:57:41.019Z",
+      "seq": 2458
     },
     {
       "id": "dfb3e493",
