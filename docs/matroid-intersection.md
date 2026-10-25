@@ -66,5 +66,6 @@ matroid 셋의 공통 독립집합의 최대 크기를 구하는 문제는 NP(no
 ## 더 알아보기
 
 - [유향 신장트리](arborescences.md)
+- [다모듈 다면체](polymatroids.md)
 
 #combinatorics #optimization #graph_theory

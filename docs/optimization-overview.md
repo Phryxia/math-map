@@ -94,6 +94,7 @@ graph TD
 - [Sherali–Adams 계층](sherali-adams-hierarchy.md): 제약에 변수의 곱을 곱해 선형화하는 완화의 열, 단계 n 에서 정수 껍질, Lovász–Schrijver 연산과 국소 분포
 - [Lasserre 계층](lasserre-hierarchy.md): 모멘트 행렬의 반정부호 조건을 더한 완화의 열, 세타 몸체와 제곱합 증명서, 단계의 하한
 - [부분모듈 함수](submodular-functions.md): 한계 이득이 줄어드는 집합 함수, 볼록인 Lovász 확장과 다항시간 최소화, 단조 함수의 탐욕적 최대화가 주는 1 − 1/e
+  - [다모듈 다면체](polymatroids.md): 단조 부분모듈 함수가 정하는 다면체, 탐욕법이 주는 꼭짓점과 matroid 다면체, 교집합의 정수성과 최소최대 공식
 
 ## 게임과 균형
 

@@ -75,7 +75,7 @@ U. Feige 는 덮기 함수의 최대화에서 $1-1/e$ 보다 큰 비율을 다�
 
 # 활용
 
-- [Matroid 교집합 정리](matroid-intersection.md)의 최소최대 공식 $\min_A\bigl(r_1(A)+r_2(E\setminus A)\bigr)$ 는 부분모듈 함수 $r_1(A)+r_2(E\setminus A)$ 의 최소화이고, 이 관점에서 Edmonds 의 다모듈 다면체(polymatroid) 교집합 정리로 일반화된다.
+- [Matroid 교집합 정리](matroid-intersection.md)의 최소최대 공식 $\min_A\bigl(r_1(A)+r_2(E\setminus A)\bigr)$ 는 부분모듈 함수 $r_1(A)+r_2(E\setminus A)$ 의 최소화이고, 이 관점에서 Edmonds 의 [다모듈 다면체](polymatroids.md) 교집합 정리로 일반화된다.
 - 요약과 자료 선택. 문서에서 문장을 고르거나 학습 자료의 부분집합을 고를 때, 덮는 내용의 양을 덮기 함수로 두고 탐욕법을 쓴다.
 - 영향력 최대화. 사회망의 확산 모형에서 처음 고른 사람 집합이 퍼뜨리는 사람 수의 기댓값이 단조 부분모듈 함수이므로 탐욕법이 $1-1/e$ 를 보장한다.
 - 정보이론. 엔트로피의 단조성과 부분모듈성에서 유도되는 부등식을 Shannon 부등식이라 한다. Z. Zhang 과 R. W. Yeung 은 엔트로피 함수가 만족하지만 Shannon 부등식에서 유도되지 않는 부등식을 찾았다.
@@ -93,6 +93,6 @@ U. Feige 는 덮기 함수의 최대화에서 $1-1/e$ 보다 큰 비율을 다�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [다모듈 다면체](polymatroids.md)
 
 #optimization #combinatorics #machine_learning
