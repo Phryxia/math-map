@@ -75,7 +75,7 @@ M.-C. Chang 은 차원을 $K$ 의 상수배로, 크기 상수를 $\exp(CK^2\log^
 
 # 활용
 
-- Gowers 의 Szemerédi 정리 상한. [Gowers 균등 노름](gowers-norms.md)이 큰 함수에서 밀도 증가를 얻는 단계가 Balog–Szemerédi–Gowers 정리(Balog–Szemerédi–Gowers theorem)와 이 정리를 쓴다.
+- Gowers 의 Szemerédi 정리 상한. [Gowers 균등 노름](gowers-norms.md)이 큰 함수에서 밀도 증가를 얻는 단계가 [Balog–Szemerédi–Gowers 정리](balog-szemeredi-gowers.md)와 이 정리를 쓴다.
 - $U^3$ 역정리. Green 과 Tao 의 $U^3$ 역정리는 큰 Fourier 계수의 위치가 이루는 집합에 이 정리를 적용해 이차 위상을 만든다.
 - 일반 아벨 군. Green 과 Ruzsa 는 임의의 아벨 군에서 같은 결론을 일반화 등차수열과 유한 부분군의 합으로 증명했다[^7].
 
@@ -95,6 +95,6 @@ M.-C. Chang 은 차원을 $K$ 의 상수배로, 크기 상수를 $\exp(CK^2\log^
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Balog–Szemerédi–Gowers 정리](balog-szemeredi-gowers.md)
 
 #combinatorics #number_theory #analysis

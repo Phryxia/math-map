@@ -88,7 +88,7 @@ $U^3$ 의 경우. 직관 절의 이차 위상은 $U^3$ 노름이 $1$ 이다. B. 
 
 정리(Gowers). $k\ge 4$ 에 대해 $r_k(N)\le N(\log\log N)^{-c_k}$ 이고 $c_k=2^{-2^{k+9}}$ 로 잡을 수 있다[^2].
 
-증명의 요지. 등차수열이 없는 집합의 균형 함수는 일반화 von Neumann 정리에서 $U^{k-1}$ 노름이 크다. Gowers 는 이것에서 $A$ 의 밀도가 $\alpha+c(\alpha)$ 이상인 긴 등차수열을 찾는 밀도 증가를 증명했다. 그 단계에 쓰는 것은 완전한 역정리가 아니라 국소 다항 위상과의 상관이고, [Freiman 정리](freiman-theorem.md)와 Balog–Szemerédi–Gowers 정리(Balog–Szemerédi–Gowers theorem)가 들어간다.
+증명의 요지. 등차수열이 없는 집합의 균형 함수는 일반화 von Neumann 정리에서 $U^{k-1}$ 노름이 크다. Gowers 는 이것에서 $A$ 의 밀도가 $\alpha+c(\alpha)$ 이상인 긴 등차수열을 찾는 밀도 증가를 증명했다. 그 단계에 쓰는 것은 완전한 역정리가 아니라 국소 다항 위상과의 상관이고, [Freiman 정리](freiman-theorem.md)와 [Balog–Szemerédi–Gowers 정리](balog-szemeredi-gowers.md)가 들어간다.
 
 # 활용
 
