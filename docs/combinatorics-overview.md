@@ -122,6 +122,7 @@ graph TD
 
 - [확률적 방법](probabilistic-method.md): 무작위로 뽑은 대상이 조건을 만족할 확률이 양수임을 보여 존재를 증명한다
   - [Moser–Tardos 알고리즘](moser-tardos-algorithm.md): 일어난 나쁜 사건의 변수만 다시 뽑아 국소 보조정리가 존재를 보인 값을 찾는 알고리즘, 증거 나무와 기대 반복 횟수 상한
+  - [Erdős–Selfridge 정리](erdos-selfridge-theorem.md): 승리 집합의 크기로 정한 합이 1/2 보다 작으면 나중에 두는 사람이 모든 승리 집합을 막는다는 정리, 조건부 기댓값으로 만든 위험 함수 전략
 - [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md): 간선을 독립으로 넣은 그래프의 문턱 현상, 연결성과 거대 성분
   - [Potts 모형](potts-model.md): 그래프의 정점에 색을 배정하는 분포, 무작위 클러스터 표현과 분배함수의 전개
   - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위 함수의 Fourier 전개, 영향력과 잡음 민감도
