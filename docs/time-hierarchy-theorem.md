@@ -92,6 +92,7 @@ $$
 ## 더 알아보기
 
 - [Ladner 정리](ladner-theorem.md)
+- [쉬운 증거 보조정리](easy-witness-lemma.md)
 - [Williams 정리](williams-theorem.md)
 
 #complexity #computation #logic #theorem

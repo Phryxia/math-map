@@ -74,6 +74,6 @@ R. Impagliazzo 와 A. Wigderson 은 평균 경우의 어려움을 최악 경우�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [쉬운 증거 보조정리](easy-witness-lemma.md)
 
 #complexity #computation #cryptography

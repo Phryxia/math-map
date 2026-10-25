@@ -102,7 +102,6 @@ graph TD
   - [양자 회로](quantum-circuits.md): 큐비트의 텐서곱 공간 위 유니터리 게이트와 측정, 보편 게이트 집합과 BQP(bounded-error quantum polynomial time)
   - [Shor 알고리즘](shor-algorithm.md): 위수 찾기와 양자 Fourier 변환으로 소인수분해와 이산로그를 다항 시간에 푸는 양자 알고리즘
   - [시간 계층 정리](time-hierarchy-theorem.md): 시간을 더 주면 판정되는 언어가 늘어난다는 대각선 논법, P ≠ EXPTIME, 게으른 대각선 논법과 간격 정리, 상대화와 Baker–Gill–Solovay 정리
-  - [Williams 정리](williams-theorem.md): NEXP 가 ACC⁰ 에 들지 않는다는 하한, 전수 조사보다 빠른 회로 충족 가능성 판정과 비결정적 시간 계층의 모순, 대칭 함수와 AND 의 꼴로 바꾸는 ACC⁰ 구조 정리
   - [Pratt 증명서](pratt-certificate.md): 곱셈군의 생성원과 p − 1 의 인수분해를 재귀적으로 모은 소수의 짧은 증명서, 소수 판정이 NP ∩ coNP 에 든다는 것
 - [NP-완전성과 Cook–Levin 정리](np-completeness.md): 환원과 완전성, SAT(satisfiability) 의 보편성
   - [다항 계층](polynomial-hierarchy.md): 다항 길이 한정사를 번갈아 쓴 술어의 층 Σₖ 와 Πₖ, 한정 불 논리식의 완전성, 붕괴 정리와 Karp–Lipton 정리
@@ -194,6 +193,8 @@ graph TD
   - [전자서명](digital-signatures.md): 선택 메시지 공격에 대한 위조 불가능성, Lamport 서명과 Schnorr 서명
   - [의미론적 안전성](semantic-security.md): 구별 불가능성 게임, 결정적 암호화의 불가능성, ElGamal 암호
   - [Nisan–Wigderson 생성기](nisan-wigderson-generator.md): 어려운 함수와 조합적 설계로 만든 생성기, 회로 하한에서 BPP = P 로 가는 탈무작위화
+  - [쉬운 증거 보조정리](easy-witness-lemma.md): NEXP 가 다항 크기 회로를 가지면 NEXP 검증기의 증거가 작은 회로의 진리표로 쓰인다는 정리, 어려운 증거로 하는 MA 의 탈무작위화와 NEXP = MA 동치
+  - [Williams 정리](williams-theorem.md): NEXP 가 ACC⁰ 에 들지 않는다는 하한, 전수 조사보다 빠른 회로 충족 가능성 판정과 비결정적 시간 계층의 모순, 대칭 함수와 AND 의 꼴로 바꾸는 ACC⁰ 구조 정리
   - [자연 증명](natural-proofs.md): 구성적이고 넓은 성질로 하는 회로 하한 논증, 유사난수 함수가 있으면 다항 크기 회로 하한을 줄 수 없다는 Razborov–Rudich 정리
 - [격자 기반 후양자 암호](post-quantum-cryptography.md): LWE(learning with errors)와 SIS(short integer solution), 양자 알고리즘에 견디는 가정
   - [완전동형암호](homomorphic-encryption.md): 암호문 위에서 덧셈과 곱셈, 잡음 관리와 부트스트래핑

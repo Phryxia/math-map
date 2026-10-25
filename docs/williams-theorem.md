@@ -24,7 +24,7 @@
 
 정리(Williams). 입력 $n$ 개, 크기가 $n$ 의 다항식인 $\mathcal C$ 회로의 충족 가능성을 시간 $2^n/n^{\omega(1)}$ 에 판정하는 알고리즘이 있고 $\mathcal C$ 가 AND 와 OR 로 합성해도 닫혀 있으면 $\mathrm{NEXP}\not\subseteq\mathcal C$ 다[^1][^2].
 
-증명의 요지. $\mathrm{NEXP}\subseteq\mathcal C$ 라 두면 R. Impagliazzo, V. Kabanets, A. Wigderson 의 쉬운 증거 보조정리(easy witness lemma)로 NEXP 의 증거가 작은 회로의 진리표로 쓰인다[^3]. 시간 $2^n$ 의 비결정적 계산을 정해진 길이의 논리식 충족 문제로 바꾸는 간결한 환원도 $\mathcal C$ 회로로 쓰인다. 증거 회로를 추측한 뒤, 환원의 회로와 증거 회로를 이어 붙인 회로가 "어느 절이 거짓인가" 를 묻는 $\mathcal C$ 회로가 되고, 가정한 알고리즘이 이것을 $2^n/n^{\omega(1)}$ 시간에 판정한다. 비결정적 시간 계층 정리와 모순이다.
+증명의 요지. $\mathrm{NEXP}\subseteq\mathcal C$ 라 두면 R. Impagliazzo, V. Kabanets, A. Wigderson 의 [쉬운 증거 보조정리](easy-witness-lemma.md)로 NEXP 의 증거가 작은 회로의 진리표로 쓰인다[^3]. 시간 $2^n$ 의 비결정적 계산을 정해진 길이의 논리식 충족 문제로 바꾸는 간결한 환원도 $\mathcal C$ 회로로 쓰인다. 증거 회로를 추측한 뒤, 환원의 회로와 증거 회로를 이어 붙인 회로가 "어느 절이 거짓인가" 를 묻는 $\mathcal C$ 회로가 되고, 가정한 알고리즘이 이것을 $2^n/n^{\omega(1)}$ 시간에 판정한다. 비결정적 시간 계층 정리와 모순이다.
 
 ## ACC0 충족 가능성 알고리즘
 
@@ -59,6 +59,7 @@ C. Murray 와 R. Williams 는 같은 꼴의 논증으로 비결정적 준다항 
 
 - [Razborov–Smolensky 정리](razborov-smolensky.md)
 - [시간 계층 정리](time-hierarchy-theorem.md)
+- [쉬운 증거 보조정리](easy-witness-lemma.md)
 
 ## 더 알아보기
 
