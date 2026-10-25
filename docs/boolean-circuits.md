@@ -68,6 +68,7 @@
 - [Razborov–Smolensky 정리](razborov-smolensky.md)
 - [단조 회로](monotone-circuits.md)
 - [자연 증명](natural-proofs.md)
+- [Impagliazzo 하드코어 보조정리](hardcore-lemma.md)
 
 ### 병렬 계산과 탈무작위화
 
