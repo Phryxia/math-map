@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-25T01:03:34.705Z",
-  "nextSeq": 2459,
+  "savedAt": "2026-10-25T05:06:06.619Z",
+  "nextSeq": 2471,
   "items": [
     {
       "id": "9bab7237",
@@ -1332,6 +1332,14 @@
       "seq": 1742
     },
     {
+      "id": "04dad73d",
+      "title": "길이 3 등차수열의 Roth 정리 문서",
+      "priority": 12,
+      "note": "#combinatorics #number_theory. 저장소의 roth-theorem 은 Diophantine 근사의 Roth 정리다. 등차수열의 Roth 정리(밀도 양수인 정수 집합은 길이 3 등차수열을 포함한다, Fourier 밀도 증가 논법, Behrend 구성, Kelley–Meka 상한)는 szemeredi-regularity-lemma 의 '## Roth 정리' 절에만 있다. id 후보 roth-theorem-arithmetic-progressions, 부모 후보 szemeredi-regularity-lemma 와 fourier-series 쪽. 2026-10-25 에 두 문서의 잘못된 링크를 풀었다. 9절 미링크 검사가 szemeredi-regularity-lemma 의 'Roth 정리' 를 roth-theorem 미링크로 보고하는 것은 동명이의 오탐이다.",
+      "createdAt": "2026-10-25T04:54:08.631Z",
+      "seq": 2465
+    },
+    {
       "id": "c36c5e73",
       "title": "Siegel 모듈라이 다양체의 남은 후속 간선",
       "priority": 11,
@@ -2468,36 +2476,28 @@
       "seq": 2418
     },
     {
-      "id": "1cc21a5d",
-      "title": "time-hierarchy-theorem 의 후속 간선",
+      "id": "3625c02e",
+      "title": "communication-complexity 의 남은 후속 간선",
       "priority": 11,
-      "note": "time-hierarchy-theorem(시간 계층 정리)은 리프다. 후보: Ladner 정리(P 와 NP-완전 사이의 NP-중간 문제, 지연 대각선 논법, 부모 time-hierarchy-theorem 과 np-completeness), 자연 증명 장벽(Razborov-Rudich), 대수화 장벽(Aaronson-Wigderson).",
-      "createdAt": "2026-10-24T20:43:19.982Z",
-      "seq": 2450
+      "note": "로그 계수 추측은 log-rank-conjecture 로 닫았다. 남은 후보: 정보 복잡도(information complexity, 부모 communication-complexity 와 entropy), 다자간 통신과 수 위의 이마(number-on-forehead), Karchmer–Wigderson 정리 분리 판정(c673bf10). log-rank-conjecture 는 리프다. 후보: XOR 함수의 로그 계수 추측(Tsang–Wong–Xie–Zhang), 근사 계수와 하한(부모 log-rank-conjecture).",
+      "createdAt": "2026-10-25T04:40:07.676Z",
+      "seq": 2459
     },
     {
-      "id": "0f2f5897",
-      "title": "communication-complexity 의 후속 간선",
+      "id": "2dfcc816",
+      "title": "복잡도 리프 문서들의 남은 후속 간선 (2026-10-25)",
       "priority": 11,
-      "note": "communication-complexity(통신 복잡도)는 리프다. 후보: 로그 계수 추측(log-rank conjecture), 정보 복잡도(information complexity, 부모에 entropy), 다자간 통신과 수 위의 이마(number-on-forehead). 부모는 communication-complexity.",
-      "createdAt": "2026-10-24T20:51:15.250Z",
-      "seq": 2451
+      "note": "8f44727c 와 1cc21a5d 를 합쳐 옮겼다. 대수화는 algebrization(부모 time-hierarchy-theorem, interactive-proofs), 로그 계수 추측은 log-rank-conjecture 로 닫았고 Ladner 정리와 자연 증명은 이미 문서다. 남은 후보: 질의 복잡도와 증명서 복잡도(부모 sensitivity-theorem), Impagliazzo-Wigderson 의 최악-평균 환원(부모 nisan-wigderson-generator 와 error-correcting-codes), 게임의 PSPACE-완전성(부모 alternating-turing-machines). algebrization 은 리프다. 후보: Impagliazzo-Kabanets-Kolokolova 의 공리적 대수화, 대수적 질의 복잡도. computation-overview 의 지도 mermaid 에는 이 문서들을 넣지 않았다.",
+      "createdAt": "2026-10-25T04:43:27.711Z",
+      "seq": 2460
     },
     {
-      "id": "2ba7041a",
-      "title": "space-complexity 의 후속 간선",
+      "id": "270ef9c9",
+      "title": "space-complexity 의 남은 후속 간선",
       "priority": 11,
-      "note": "space-complexity(공간 복잡도)의 자식은 interactive-proofs, alternating-turing-machines, nc-hierarchy, reingold-theorem 이다. 남은 후보: 게임의 PSPACE-완전성(generalized geography, 일반화 바둑), Immerman-Szelepcsenyi 정리의 별도 문서 여부(지금은 space-complexity 의 절). nc-hierarchy 의 남은 후보: P-완전 문제(선형계획법 실행 가능성, 단조 회로 값). barrington-theorem 과 reingold-theorem 은 리프다.",
-      "createdAt": "2026-10-24T20:55:53.061Z",
-      "seq": 2453
-    },
-    {
-      "id": "8f44727c",
-      "title": "복잡도 신규 문서 아홉의 후속 간선 (2026-10-24)",
-      "priority": 11,
-      "note": "이 회차에 쓴 리프: ladner-theorem, alternating-turing-machines, barrington-theorem, communication-complexity, reingold-theorem, counting-complexity 외 자식 없음 문서들(sensitivity-theorem, nisan-wigderson-generator, natural-proofs). 후보: 대수화 장벽(Aaronson-Wigderson, 부모 time-hierarchy-theorem 과 interactive-proofs), 로그 계수 추측(부모 communication-complexity), 질의 복잡도와 증명서 복잡도(부모 sensitivity-theorem), Impagliazzo-Wigderson 의 최악-평균 환원(부모 nisan-wigderson-generator 와 error-correcting-codes), 게임의 PSPACE-완전성(부모 alternating-turing-machines). computation-overview 의 지도 mermaid 에는 이 회차 문서를 넣지 않았다.",
-      "createdAt": "2026-10-24T21:05:04.068Z",
-      "seq": 2454
+      "note": "게임의 PSPACE-완전성은 generalized-geography(부모 alternating-turing-machines)로 닫았다. 남은 후보: Immerman-Szelepcsenyi 정리의 별도 문서 여부(지금은 space-complexity 의 절). nc-hierarchy 의 남은 후보: P-완전 문제(선형계획법 실행 가능성, 단조 회로 값). barrington-theorem 과 reingold-theorem 은 리프다.",
+      "createdAt": "2026-10-25T04:49:01.354Z",
+      "seq": 2463
     },
     {
       "id": "09c81cac",
@@ -3252,22 +3252,6 @@
       "seq": 2353
     },
     {
-      "id": "52f83870",
-      "title": "erdos-ko-rado 의 남은 후속 간선",
-      "priority": 10,
-      "note": "kneser-graphs 로 리프는 닫혔다. 남은 후보: Ahlswede-Khachatrian 완전 교차 정리, Frankl-Wilson 모듈로 제한 교차 정리와 Borsuk 추측 반례, Hilton-Milner 를 독립 문서로 뗄지. kneser-graphs 의 후속 후보: Schrijver 그래프(현재 성질 절), 위상적 하한의 일반화(근방 복합체, Hom 복합체)",
-      "createdAt": "2026-10-22T08:56:37.907Z",
-      "seq": 2359
-    },
-    {
-      "id": "442846a0",
-      "title": "hamiltonian-cycles 의 남은 후속 간선",
-      "priority": 10,
-      "note": "chvatal-erdos-theorem 으로 리프는 닫혔다. 남은 후보: 그래프 강인성(toughness)과 Chvátal 강인성 추측(chvatal-erdos-theorem 활용 절이 정의만 적었다), 외판원 문제(Christofides 근사, approximation-algorithms 아래), 연결도와 Menger 정리를 network-flow 의 절에서 별도 문서로 뗄지",
-      "createdAt": "2026-10-22T08:58:46.720Z",
-      "seq": 2360
-    },
-    {
       "id": "226771e6",
       "title": "ising-model 의 후속 간선",
       "priority": 10,
@@ -3450,6 +3434,54 @@
       "note": "communication-complexity 의 절과 monotone-circuits 의 절이 같은 정리를 다룬다. 연결성의 단조 깊이 하한까지 담으면 별도 문서 후보. 부모 후보 communication-complexity, monotone-circuits.",
       "createdAt": "2026-10-25T00:57:41.019Z",
       "seq": 2458
+    },
+    {
+      "id": "8e835f8f",
+      "title": "hamiltonian-cycles 의 남은 후속 간선",
+      "priority": 10,
+      "note": "강인성은 graph-toughness(부모 hamiltonian-cycles, 그래프 개관 기본 구조 갈래 Hamilton 순환 곁가지)로, 외판원 문제는 traveling-salesman-problem 으로 닫았다. 남은 후보: 연결도와 Menger 정리를 network-flow 의 절에서 별도 문서로 뗄지. graph-toughness 는 리프다. 후보: 현선 그래프(chordal graph)를 별도 문서로, Tutte 정리와 Tutte–Berge 공식을 matchings 의 절에서 뗄지.",
+      "createdAt": "2026-10-25T04:49:01.185Z",
+      "seq": 2462
+    },
+    {
+      "id": "e5cb0c49",
+      "title": "erdos-ko-rado 의 남은 후속 간선",
+      "priority": 10,
+      "note": "Frankl–Wilson 정리는 frankl-wilson-theorem(부모 erdos-ko-rado, vector-spaces, 조합론 개관 극단 조합론 갈래 EKR 곁가지, EKR 을 주 경로로 올림)으로 닫았다. 남은 후보: Ahlswede-Khachatrian 완전 교차 정리, Hilton-Milner 를 독립 문서로 뗄지. frankl-wilson-theorem 은 리프다. 후보: 단위 거리 그래프의 채색수(Hadwiger–Nelson 문제, de Grey 의 하한 5), Borsuk 문제를 별도 문서로(Kahn–Kalai, Bondarenko, Jenrich–Brouwer 64 차원), 다항식 방법과 cap set(Ellenberg–Gijswijt). kneser-graphs 의 후속 후보: Schrijver 그래프(현재 성질 절), 위상적 하한의 일반화(근방 복합체, Hom 복합체).",
+      "createdAt": "2026-10-25T04:52:43.127Z",
+      "seq": 2464
+    },
+    {
+      "id": "42147c79",
+      "title": "cap-sets 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics. cap-sets(부모 finite-fields, 조합론 개관 극단 조합론 갈래 끝)는 리프다. 후보: 조각 계수(slice rank)를 별도 문서로, 길이 3 등차수열의 Roth 정리(큐의 별도 항목), 다항식 방법(Combinatorial Nullstellensatz, Alon), 행렬 곱셈 지수와 군론적 방법(Cohn–Umans). 극단 조합론 갈래 첫 줄의 '먼저 읽을 것' 에 vector-spaces 를 적으면 갈래 순서 검사가 앞 갈래의 문서 여덟과 역전을 보고하므로 적지 않았다.",
+      "createdAt": "2026-10-25T04:57:56.080Z",
+      "seq": 2466
+    },
+    {
+      "id": "3be067e5",
+      "title": "chromatic-number-of-the-plane 과 de-bruijn-erdos-theorem 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics. 둘 다 리프 쪽이다(de-bruijn-erdos-theorem 의 자식은 chromatic-number-of-the-plane 하나). 후보: 가측 채색수와 Falconer 정리를 별도 문서로, 높은 차원의 Larman–Rogers 상한, 초필터 보조정리와 Boolean 소 아이디얼 정리(weak-choice-principles 와 겹치는지 먼저 확인). frankl-wilson-theorem 의 '단위 거리 그래프의 채색수' 절에서 chromatic-number-of-the-plane 으로 본문 링크를 걸지 판단.",
+      "createdAt": "2026-10-25T05:01:36.347Z",
+      "seq": 2468
+    },
+    {
+      "id": "2e258c80",
+      "title": "generalized-geography 와 hex-game 의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #combinatorics. Hex 는 hex-game(부모 brouwer-fixed-point, generalized-geography, 조합론 개관 위상적 조합론 갈래 Sperner 곁가지)으로 닫았다. 남은 후보: 간선 지리 게임의 PSPACE-완전성, 평면 지리 게임과 바둑의 환원, 조합 게임 이론의 Sprague–Grundy 정리, Shannon 전환 게임(Lehman 의 매트로이드 풀이). hex-game 은 리프다.",
+      "createdAt": "2026-10-25T05:03:58.317Z",
+      "seq": 2469
+    },
+    {
+      "id": "95905465",
+      "title": "sprague-grundy-theorem 의 후속 간선",
+      "priority": 10,
+      "note": "#computation #combinatorics. sprague-grundy-theorem(부모 generalized-geography, 계산 개관 복잡도 갈래 교대 Turing 기계 아래 곁가지)은 리프다. 후보: 조합 게임 이론의 Conway 수와 편파 게임(surreal numbers 문서가 있는지 먼저 확인), 팔각 게임의 주기성(Guy–Smith), 오비 게임(misère Nim). 조합론 개관이 아니라 계산 개관에 두었다(첫 태그 computation).",
+      "createdAt": "2026-10-25T05:05:55.121Z",
+      "seq": 2470
     },
     {
       "id": "dfb3e493",
