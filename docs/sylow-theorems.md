@@ -148,6 +148,7 @@ Sylow 정리는 유한군을 소수별 조각으로 나누어 보는 첫 단계�
 
 - [유한 단순군 분류](finite-simple-groups.md)
 - [실폐체](real-closed-fields.md)
+- [Oliver 고정점 정리](oliver-fixed-point-theorem.md)
 - [Aanderaa–Karp–Rosenberg 추측](evasiveness-conjecture.md)
 
 #group_theory #algebra #number_theory #theorem

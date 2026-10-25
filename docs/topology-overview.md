@@ -83,6 +83,7 @@ graph TD
   - [Kakutani 고정점 정리](kakutani-fixed-point.md): 집합값 사상으로의 확장, 균형의 존재 증명에 쓰인다
   - [Borsuk–Ulam 정리](borsuk-ulam.md): 구면의 연속사상이 대척점 쌍에서 같은 값을 갖는다는 정리
   - [Lefschetz 고정점 정리](lefschetz-fixed-point.md): 유도 준동형의 대각합으로 고정점의 존재를 판정하는 정리
+  - [Oliver 고정점 정리](oliver-fixed-point-theorem.md): p-군 정규부분군과 순환 몫을 가진 군이 Z/p-비순환 복합체에 작용하면 고정 부분복합체의 Euler 지표가 1 이라는 정리, Smith 정리와 Hopf 대각합 공식
   - [Brouwer 차수](brouwer-degree.md): 경계에서 값을 피하는 사상에 붙는 정수, 해를 부호와 함께 센다
 
 ## 다양체와 de Rham 이론
