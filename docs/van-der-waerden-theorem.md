@@ -30,7 +30,7 @@ $\lbrace 1,\dots,325\rbrace$ 의 두 색칠에는 길이 $3$ 인 단색 등차�
 
 ## 상한과 하한
 
-S. Shelah 는 $W(r,k)$ 가 원시재귀 함수로 위에서 눌린다는 것을 증명했다[^2]. W. T. Gowers 는 Szemerédi 정리의 새 증명에서
+S. Shelah 는 $W(r,k)$ 가 원시재귀 함수로 위에서 눌린다는 것을 증명했다[^2]. W. T. Gowers 는 [Szemerédi 정리](szemeredi-theorem.md)의 새 증명에서
 
 $$
 W(r,k)\le 2^{2^{r^{2^{2^{k+9}}}}}
@@ -42,7 +42,7 @@ $$
 
 ## 밀도판
 
-**Szemerédi 정리(Szemerédi's theorem)** 는 양의 정수의 부분집합 $A$ 가 $\limsup_{N\to\infty}\lvert A\cap\lbrace 1,\dots,N\rbrace\rvert/N\gt 0$ 을 만족하면 $A$ 가 모든 길이의 등차수열을 포함한다는 정리다[^6]. $r$ 색칠에서 가장 자주 쓰인 색의 집합은 이 조건을 만족하므로 van der Waerden 정리가 따름정리로 나온다. 길이 $3$ 의 경우는 K. F. Roth 가 먼저 증명했다.
+Szemerédi 정리는 양의 정수의 부분집합 $A$ 가 $\limsup_{N\to\infty}\lvert A\cap\lbrace 1,\dots,N\rbrace\rvert/N\gt 0$ 을 만족하면 $A$ 가 모든 길이의 등차수열을 포함한다는 정리다[^6]. $r$ 색칠에서 가장 자주 쓰인 색의 집합은 이 조건을 만족하므로 van der Waerden 정리가 따름정리로 나온다. 길이 $3$ 의 경우는 K. F. Roth 가 먼저 증명했다.
 
 ## Hales–Jewett 정리
 
@@ -72,5 +72,6 @@ $$
 ## 더 알아보기
 
 - [Hales–Jewett 정리](hales-jewett-theorem.md)
+- [Szemerédi 정리](szemeredi-theorem.md)
 
 #combinatorics #number_theory

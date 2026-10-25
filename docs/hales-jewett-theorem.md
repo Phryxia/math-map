@@ -33,7 +33,7 @@ S. Shelah 는 다른 귀납으로 $\mathrm{HJ}(k,r)$ 이 원시재귀 함수로 
 
 ## 밀도판
 
-H. Furstenberg 와 Y. Katznelson 은 모든 $\delta\gt 0$ 과 $k$ 에 대해 $n$ 이 충분히 크면 $\lbrack k\rbrack^n$ 의 원소 $\delta k^n$ 개 이상인 부분집합이 조합적 직선을 포함한다는 밀도 Hales–Jewett 정리(density Hales–Jewett theorem)를 에르고딕 이론으로 증명했다[^3]. 여러 사람이 공개적으로 함께 쓴 Polymath 계획이 이 정리의 조합적 증명을 주었다[^4]. 이 판본은 Szemerédi 정리를 따름정리로 준다.
+H. Furstenberg 와 Y. Katznelson 은 모든 $\delta\gt 0$ 과 $k$ 에 대해 $n$ 이 충분히 크면 $\lbrack k\rbrack^n$ 의 원소 $\delta k^n$ 개 이상인 부분집합이 조합적 직선을 포함한다는 밀도 Hales–Jewett 정리(density Hales–Jewett theorem)를 에르고딕 이론으로 증명했다[^3]. 여러 사람이 공개적으로 함께 쓴 Polymath 계획이 이 정리의 조합적 증명을 주었다[^4]. 이 판본은 [Szemerédi 정리](szemeredi-theorem.md)를 따름정리로 준다.
 
 # 활용
 

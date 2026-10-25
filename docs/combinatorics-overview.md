@@ -84,6 +84,7 @@ graph TD
 - [Turán 정리](turan-theorem.md): $K_{r+1}$ 을 포함하지 않는 그래프의 최대 간선 수와 그 값을 주는 Turán 그래프
 - [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md): 조각 쌍마다 간선 밀도가 고른 분할의 존재, 삼각형 제거 보조정리와 길이 3 등차수열의 Roth 정리
   - [Erdős–Stone 정리](erdos-stone-theorem.md): 금지 부분그래프의 극단 간선 수가 그 그래프의 채색수로 정해진다
+  - [Szemerédi 정리](szemeredi-theorem.md): 양의 상밀도를 갖는 정수 집합이 모든 길이의 등차수열을 포함한다는 정리, 조합적·에르고딕·Fourier·초그래프 제거의 네 증명과 길이 3 의 Behrend 하한과 Kelley–Meka 상한
 - [그래폰](graphons.md): 조밀 그래프 열의 극한인 대칭 가측함수, cut 거리와 그래폰 공간의 콤팩트성
 - [Sidorenko 추측](sidorenko-conjecture.md): 이분그래프의 준동형 밀도를 무작위 그래프가 최소화한다는 추측, 나무와 짝수 사이클에서의 증명
   - [공통 그래프](common-graphs.md): 단색 사본의 밀도 합을 무작위 색칠이 최소화하는 그래프, Goodman 정리와 $K_4$ 의 반례
