@@ -98,6 +98,7 @@ graph TD
   - [불 회로](boolean-circuits.md): 게이트의 방향 비순환 그래프로 계산하는 모형, 크기와 깊이, P/poly 와 Shannon 의 세기 하한, 상수 깊이 회로의 홀짝 하한
   - [Håstad 스위칭 보조정리](switching-lemma.md): 무작위 제한 뒤 폭이 작은 DNF 가 얕은 결정 나무가 될 확률의 상한, 층 바꾸기로 증명하는 홀짝 함수의 상수 깊이 지수 하한과 Linial–Mansour–Nisan 의 Fourier 집중
   - [Razborov–Smolensky 정리](razborov-smolensky.md): 법 p 게이트를 더한 상수 깊이 회로가 법 q 함수를 계산하지 못한다는 하한, 회로의 낮은 차수 다항식 근사와 홀짝 함수의 근사 불가능
+  - [단조 회로](monotone-circuits.md): AND 와 OR 만으로 된 회로, 해바라기로 근사자를 줄이는 Razborov 의 클리크 하한, 완전 매칭으로 본 단조 크기와 일반 크기의 간격, Karchmer–Wigderson 정리
   - [양자 회로](quantum-circuits.md): 큐비트의 텐서곱 공간 위 유니터리 게이트와 측정, 보편 게이트 집합과 BQP(bounded-error quantum polynomial time)
   - [Shor 알고리즘](shor-algorithm.md): 위수 찾기와 양자 Fourier 변환으로 소인수분해와 이산로그를 다항 시간에 푸는 양자 알고리즘
   - [시간 계층 정리](time-hierarchy-theorem.md): 시간을 더 주면 판정되는 언어가 늘어난다는 대각선 논법, P ≠ EXPTIME, 게으른 대각선 논법과 간격 정리, 상대화와 Baker–Gill–Solovay 정리

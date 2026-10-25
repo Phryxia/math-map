@@ -61,7 +61,7 @@ $A\subseteq X$, $B\subseteq Y$ 에 대해 $A\times B$ 꼴의 집합을 **조합�
 # 활용
 
 - 스트리밍 알고리즘의 메모리 하한. 스트림을 둘로 잘라 앞부분을 Alice, 뒷부분을 Bob 에게 주면, 메모리 $m$ 비트로 도는 알고리즘은 메모리 내용을 보내는 비용 $m$ 의 단방향 규칙이 된다. 가장 큰 빈도를 정확히 계산하는 알고리즘은 DISJ 로의 환원으로 선형 메모리가 필요하고, [Count-Min 스케치](count-min-sketch.md) 같은 요약은 근사를 허락해 메모리를 줄인다.
-- [불 회로](boolean-circuits.md)의 깊이 하한. Karchmer–Wigderson 정리로 단조 회로의 깊이 하한이 KW 관계의 통신 하한으로 바뀐다. 완전 매칭의 존재를 계산하는 단조 회로는 깊이 $\Omega(n)$ 이 필요하다는 것이 이렇게 증명되었다[^7].
+- [불 회로](boolean-circuits.md)의 깊이 하한. Karchmer–Wigderson 정리로 [단조 회로](monotone-circuits.md)의 깊이 하한이 KW 관계의 통신 하한으로 바뀐다. 완전 매칭의 존재를 계산하는 단조 회로는 깊이 $\Omega(n)$ 이 필요하다는 것이 이렇게 증명되었다[^7].
 
 [^1]: A. C.-C. Yao, "Some complexity questions related to distributive computing", Proceedings of the 11th ACM Symposium on Theory of Computing (1979), 209–213.
 [^2]: K. Mehlhorn, E. M. Schmidt, "Las Vegas is better than determinism in VLSI and distributed computing", Proceedings of the 14th ACM Symposium on Theory of Computing (1982), 330–337.

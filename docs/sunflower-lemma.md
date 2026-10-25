@@ -38,7 +38,7 @@ R. Alweiss, S. Lovett, K. Wu, J. Zhang 은 2019 년에 상한을 $(Cp^3\log k\lo
 
 # 활용
 
-- 단조 회로의 하한. A. A. Razborov 는 그래프에 서로 모두 이웃한 꼭짓점 $k$ 개가 있는지 판정하는 단조 회로, 곧 NOT 게이트가 없는 [불 회로](boolean-circuits.md)의 크기가 초다항이어야 함을 증명했다. 게이트가 계산하는 함수를 작은 집합족의 합집합으로 근사하고, 족이 커지면 해바라기를 찾아 꽃잎을 버리고 핵으로 바꾸어 족의 크기를 묶는다[^3].
+- [단조 회로](monotone-circuits.md)의 하한. A. A. Razborov 는 그래프에 서로 모두 이웃한 꼭짓점 $k$ 개가 있는지 판정하는 단조 회로, 곧 NOT 게이트가 없는 [불 회로](boolean-circuits.md)의 크기가 초다항이어야 함을 증명했다. 게이트가 계산하는 함수를 작은 집합족의 합집합으로 근사하고, 족이 커지면 해바라기를 찾아 꽃잎을 버리고 핵으로 바꾸어 족의 크기를 묶는다[^3].
 - 집합론. 비가산 개의 유한집합으로 된 족은 비가산 크기의 Δ-계를 포함한다는 Δ-계 보조정리(Δ-system lemma)가 [강제법](forcing.md)에서 가산 사슬 조건(countable chain condition)을 증명하는 데 쓰인다.
 
 [^1]: P. Erdős, R. Rado, "Intersection theorems for systems of sets", Journal of the London Mathematical Society 35 (1960), 85–90.
@@ -53,6 +53,6 @@ R. Alweiss, S. Lovett, K. Wu, J. Zhang 은 2019 년에 상한을 $(Cp^3\log k\lo
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [단조 회로](monotone-circuits.md)
 
 #combinatorics #complexity #set_theory
