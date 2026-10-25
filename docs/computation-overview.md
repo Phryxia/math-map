@@ -123,6 +123,7 @@ graph TD
 - [Reingold 정리](reingold-theorem.md): 무방향 연결성이 결정적 로그 공간에 든다는 정리, 거듭제곱과 지그재그 곱으로 성분을 expander 로 바꾸는 변환, SL = L
 - [교대 Turing 기계](alternating-turing-machines.md): 존재 상태와 전칭 상태를 번갈아 쓰는 기계, AL = P 와 AP = PSPACE 와 APSPACE = EXPTIME, 교대 횟수로 본 다항 계층
   - [일반화 지리 게임](generalized-geography.md): 유향 그래프 위에서 지나지 않은 정점으로 말을 옮기는 게임의 승패 판정이 PSPACE-완전이라는 Schaefer 정리, 무향 판본의 매칭 판정, 바둑과 체스의 난해성
+  - [Sprague–Grundy 정리](sprague-grundy-theorem.md): 공평 게임의 국면이 Nim 더미 하나와 동등하다는 정리, mex 로 정의한 Grundy 값과 합 게임의 배타적 논리합, Bouton 의 Nim 풀이
 - [통신 복잡도](communication-complexity.md): 입력을 나눠 가진 두 사람이 주고받는 비트 수, 단색 직사각형과 계수 하한, 동등 판정의 무작위 규칙과 서로소 판정의 선형 하한, Karchmer–Wigderson 정리
   - [로그 계수 추측](log-rank-conjecture.md): 결정적 통신 비용이 통신 행렬 계수의 로그의 다항식 이하라는 추측, 큰 단색 직사각형과의 동치, 제곱근 계수 상한과 지수 log₃6 의 하한
 - [NC 계층](nc-hierarchy.md): 다항 크기 polylog 깊이 균일 회로로 본 병렬 계산, NC¹ ⊆ L ⊆ NL ⊆ AC¹ 의 포함, 회로 값 문제의 P-완전성
