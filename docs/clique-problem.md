@@ -40,7 +40,7 @@ J. Håstad 는 [PCP 정리](pcp-theorem.md)(probabilistically checkable proof)�
 
 [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md) $G(n,1/2)$ 에서 $\omega(G)=(2-o(1))\log_2n$ 이 거의 확실하고, 직관 절의 탐욕 방법은 $(1-o(1))\log_2n$ 을 찾는다. R. M. Karp 는 $(1+\varepsilon)\log_2n$ 크기의 클릭을 다항시간에 찾는 알고리즘을 묻는 문제를 내놓았다[^7].
 
-$G(n,1/2)$ 에 크기 $k$ 의 클릭을 심은 그래프에서 그 클릭을 찾는 문제를 **숨긴 클릭 문제(planted clique problem)** 라 한다. $k\ge c\sqrt n$ 이면 인접 행렬의 둘째 고유벡터로 클릭을 찾는다(Alon–Krivelevich–Sudakov)[^8].
+$G(n,1/2)$ 에 크기 $k$ 의 클릭을 심은 그래프에서 그 클릭을 찾는 문제를 [숨긴 클릭 문제](planted-clique.md)(planted clique problem)라 한다. $k\ge c\sqrt n$ 이면 인접 행렬의 둘째 고유벡터로 클릭을 찾는다(Alon–Krivelevich–Sudakov)[^8].
 
 ## 완벽 그래프
 
@@ -70,6 +70,6 @@ $G(n,1/2)$ 에 크기 $k$ 의 클릭을 심은 그래프에서 그 클릭을 찾
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [숨긴 클릭 문제](planted-clique.md)
 
 #complexity #graph_theory #algorithms

@@ -105,7 +105,8 @@ graph TD
   - [Pratt 증명서](pratt-certificate.md): 곱셈군의 생성원과 p − 1 의 인수분해를 재귀적으로 모은 소수의 짧은 증명서, 소수 판정이 NP ∩ coNP 에 든다는 것
 - [NP-완전성과 Cook–Levin 정리](np-completeness.md): 환원과 완전성, SAT(satisfiability) 의 보편성
   - [다항 계층](polynomial-hierarchy.md): 다항 길이 한정사를 번갈아 쓴 술어의 층 Σₖ 와 Πₖ, 한정 불 논리식의 완전성, 붕괴 정리와 Karp–Lipton 정리
-  - [클릭 문제](clique-problem.md): 서로 모두 이웃한 정점 집합의 최대 크기, 극대 클릭의 3^{n/3} 상한, n^{1−ε} 근사 하한과 W[1]-완전성, 숨긴 클릭
+- [클릭 문제](clique-problem.md): 서로 모두 이웃한 정점 집합의 최대 크기, 극대 클릭의 3^{n/3} 상한, n^{1−ε} 근사 하한과 W[1]-완전성, 숨긴 클릭
+  - [숨긴 클릭 문제](planted-clique.md): 무작위 그래프에 심은 크기 k 의 클릭 찾기, 정보 이론적 문턱 2log₂n 과 다항시간의 √n, 차수와 스펙트럼 방법, 희소 주성분 분석으로 가는 환원
 - [매개변수 복잡도](parameterized-complexity.md): 실행 시간을 f(k)·n^c 로 막는 고정 매개변수 다루기 쉬움, 커널과의 동치, 정점 덮개의 분기와 커널, W 계층과 지수 시간 가설
   - [지수 시간 가설](exponential-time-hypothesis.md): 3-SAT 의 2^{o(n)} 알고리즘이 없다는 ETH 와 k-SAT 의 밑이 2 로 가는 SETH, 희소화 보조정리, 직교 벡터와 편집 거리의 세분된 하한
 - [Ladner 정리](ladner-theorem.md): P ≠ NP 이면 P 에도 NP-완전에도 들지 않는 NP 언어가 있다는 정리, 느리게 자라는 덧붙이기와 중간 차수의 조밀성
