@@ -92,7 +92,7 @@ $N$ 번 뒤 타원체의 부피는 $e^{-N/(2(n+1))}R^n$ 에 단위 공의 부피
 
 - **[매칭 다면체](matching-polytope.md).** 홀수 집합 부등식은 지수적으로 많지만 최소 홀수 절단으로 분리되므로 최대 가중 매칭을 다항 시간에 푼다.
 - **[완벽그래프](perfect-graphs.md)의 안정집합.** [Lovász 세타 함수](lovasz-theta.md)는 [반정부호 계획법](semidefinite-programming.md)의 값이고, 반정부호 제약의 분리 오라클은 고윳값 하나를 계산하는 것이다. 타원체법으로 세타 함수를 다항 시간에 계산하고, 완벽그래프에서 최대 안정집합의 크기를 얻는다.
-- **부분모듈 함수의 최소화.** Lovász 확장의 최소화를 분리 문제로 바꾸어 다항 시간 알고리즘을 처음 얻었다.[^3]
+- **[부분모듈 함수](submodular-functions.md)의 최소화.** Lovász 확장의 최소화를 분리 문제로 바꾸어 다항 시간 알고리즘을 처음 얻었다.[^3]
 - **실용 계산.** 반복 횟수가 $n^2L$ 규모이고 각 단계가 $O(L)$ 비트의 수치 정밀도를 요구한다. 선형계획 문제를 실제로 풀 때는 [단체법](simplex-method.md)이나 [내점법](interior-point-method.md)을 쓴다.
 
 [^1]: L. G. Khachiyan, "A polynomial algorithm in linear programming", *Soviet Mathematics Doklady* **20** (1979), 191–194.

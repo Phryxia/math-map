@@ -76,7 +76,7 @@ graph TD
 
 ## 선형·반정부호 계획법
 
-먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [행렬식](determinants.md)(선형대수 개관), [그래프 색칠](graph-coloring.md), [매칭](matchings.md)(그래프 이론 개관). 시작 문서: [선형계획법](linear-programming.md).
+먼저 읽을 갈래: 볼록성과 쌍대성. 먼저 읽을 것: [행렬식](determinants.md)(선형대수 개관), [그래프 색칠](graph-coloring.md), [매칭](matchings.md)(그래프 이론 개관), [Matroid](matroids.md)(조합론 개관). 시작 문서: [선형계획법](linear-programming.md).
 
 - [선형계획법](linear-programming.md): 다면체 위의 선형 목적함수, 꼭짓점 최적성과 쌍대성
   - [단체법](simplex-method.md): 기저 허용해를 따라 이웃 꼭짓점으로 옮기는 피벗, 축소 비용과 비율 검사, Bland 규칙과 Klee–Minty 예
@@ -93,6 +93,7 @@ graph TD
 - [매칭 다면체](matching-polytope.md): 매칭 지시벡터의 볼록 껍질, 홀수 집합 부등식과 Edmonds 의 정리, 분리 문제와 지수적 확장 복잡도
 - [Sherali–Adams 계층](sherali-adams-hierarchy.md): 제약에 변수의 곱을 곱해 선형화하는 완화의 열, 단계 n 에서 정수 껍질, Lovász–Schrijver 연산과 국소 분포
 - [Lasserre 계층](lasserre-hierarchy.md): 모멘트 행렬의 반정부호 조건을 더한 완화의 열, 세타 몸체와 제곱합 증명서, 단계의 하한
+- [부분모듈 함수](submodular-functions.md): 한계 이득이 줄어드는 집합 함수, 볼록인 Lovász 확장과 다항시간 최소화, 단조 함수의 탐욕적 최대화가 주는 1 − 1/e
 
 ## 게임과 균형
 

@@ -64,7 +64,7 @@ $$
 r(S\cup T)+r(S\cap T)\le r(S)+r(T)
 $$
 
-마지막 줄이 열등모듈성이다. 원소를 하나 더할 때의 이득이 이미 가진 것이 많을수록 작다는 수확체감 성질이며, 이 성질을 가진 함수의 최적화는 일반적으로 다항시간에 풀린다. matroid 가 다루기 쉬운 이유가 여기 있고 열등모듈 최적화로 이어진다.
+마지막 줄이 [열등모듈성](submodular-functions.md)이다. 원소를 하나 더할 때의 이득이 이미 가진 것이 많을수록 작다는 수확체감 성질이며, 이 성질을 가진 함수의 최적화는 일반적으로 다항시간에 풀린다. matroid 가 다루기 쉬운 이유가 여기 있고 열등모듈 최적화로 이어진다.
 
 ## 탐욕 정리
 
@@ -87,7 +87,7 @@ $$
 # 활용
 
 - **탐욕법의 판정.** 제약이 matroid 를 이루면 탐욕법의 최적성이 따라오고, 아니면 반례를 찾아 다른 기법으로 옮긴다. Kruskal 알고리즘, 마감시간을 지키는 작업 집합 선택, 자원 배분의 여러 변형이 matroid 로 설명된다.
-- **정리의 이식.** 선형대수의 계수, 그래프의 순환 구조, 조합론의 횡단 조건이 한 언어로 통합된다. Rado 의 정리는 Hall 의 결혼 정리를 matroid 로 일반화한 것이고, matroid 교차 정리는 König 의 정리와 최대유량 최소절단 정리를 함께 포함한다.
+- **정리의 이식.** 선형대수의 계수, 그래프의 순환 구조, 조합론의 횡단 조건이 한 언어로 통합된다. Rado 의 정리는 Hall 의 결혼 정리를 matroid 로 일반화한 것이고, [Matroid 교집합 정리](matroid-intersection.md)는 König 의 정리와 최대유량 최소절단 정리를 함께 포함한다.
 - **열등모듈 최적화.** 계수 함수의 열등모듈성에서 출발해 센서 배치, 요약문 선택, 영향력 최대화가 근사비 보장을 얻는다. matroid 제약 아래 열등모듈 함수를 최대화하면 $1 - 1/e$ 근사가 가능하다.[^1]
 
 [^1]: Michel X. Goemans, *Lecture notes on matroid optimization*. 독립성 공리, 그래프와 선형 matroid 예시, 탐욕 정리. https://math.mit.edu/~goemans/18433S09/matroid-notes.pdf
@@ -105,5 +105,6 @@ $$
 - [Tutte 다항식](tutte-polynomial.md)
 - [최소 신장트리](minimum-spanning-tree.md)
 - [Matroid 합 정리](matroid-union.md)
+- [부분모듈 함수](submodular-functions.md)
 
 #combinatorics #graph_theory #linear_algebra
