@@ -59,7 +59,7 @@ $$
 # 활용
 
 - 물류와 망 설계. 창고, 기지국, 캐시 서버의 위치를 정하는 문제가 이 꼴이다.
-- 군집. $k$-중앙값과 $k$-평균은 고객을 자료점, 시설을 군집 중심으로 둔 판본이다.
+- 군집. $k$-중앙값과 [k 평균 군집화](k-means.md)는 고객을 자료점, 시설을 군집 중심으로 둔 판본이다.
 - [Lagrange 쌍대성](lagrange-duality.md)과의 결합. 개설 비용에 공통 값 $\lambda$ 를 두고 시설 배치를 풀어 $\lambda$ 를 조정하면 $k$-중앙값의 상수 근사가 나온다[^2].
 
 [^1]: D. B. Shmoys, É. Tardos, K. Aardal, "Approximation algorithms for facility location problems", Proceedings of the 29th ACM Symposium on Theory of Computing (1997), 265–274.

@@ -41,11 +41,11 @@
 
 크기 $k$ 의 클릭과 크기 $k$ 의 독립집합은 $\mathrm W\lbrack 1\rbrack$-완전이고, 크기 $k$ 의 지배 집합은 $\mathrm W\lbrack 2\rbrack$-완전이다[^1]. $\mathrm{FPT}\ne\mathrm W\lbrack 1\rbrack$ 를 가정하면 클릭은 FPT 가 아니다.
 
-**지수 시간 가설(exponential time hypothesis, ETH)** 은 변수 $n$ 개의 3-SAT(satisfiability) 를 $2^{o(n)}$ 시간에 푸는 알고리즘이 없다는 가설이다[^4]. ETH 를 가정하면 크기 $k$ 의 클릭을 $f(k)n^{o(k)}$ 시간에 푸는 알고리즘이 없다[^5]. 이 하한으로 $n^k$ 꼴의 전수 탐색이 지수의 차수까지 최적임이 정해진다.
+[지수 시간 가설](exponential-time-hypothesis.md)(exponential time hypothesis, ETH)은 변수 $n$ 개의 3-SAT(satisfiability) 를 $2^{o(n)}$ 시간에 푸는 알고리즘이 없다는 가설이다[^4]. ETH 를 가정하면 크기 $k$ 의 클릭을 $f(k)n^{o(k)}$ 시간에 푸는 알고리즘이 없다[^5]. 이 하한으로 $n^k$ 꼴의 전수 탐색이 지수의 차수까지 최적임이 정해진다.
 
 ## 색 입히기
 
-**색 입히기(color coding)** 는 정점마다 $k$ 가지 색을 무작위로 칠하고 색이 모두 다른 구조만 동적 계획법으로 찾는 방법이다[^6]. 길이 $k$ 의 단순 경로가 있으면 그 $k$ 개 정점이 모두 다른 색을 받을 확률이 $k!/k^k\ge e^{-k}$ 이다. 색이 다른 경로는 쓴 색의 집합만 기억하면 되므로 $2^kn^{O(1)}$ 시간에 찾고, $e^k$ 번 되풀이하면 경로 문제가 $2^{O(k)}n^{O(1)}$ 시간에 풀린다.
+**색 입히기(color coding)** 는 정점마다 $k$ 가지 색을 무작위로 칠하고 색이 모두 다른 구조만 [동적 계획법](dynamic-programming.md)으로 찾는 방법이다[^6]. 길이 $k$ 의 단순 경로가 있으면 그 $k$ 개 정점이 모두 다른 색을 받을 확률이 $k!/k^k\ge e^{-k}$ 이다. 색이 다른 경로는 쓴 색의 집합만 기억하면 되므로 $2^kn^{O(1)}$ 시간에 찾고, $e^k$ 번 되풀이하면 경로 문제가 $2^{O(k)}n^{O(1)}$ 시간에 풀린다.
 
 ## 구조 매개변수
 
@@ -72,6 +72,6 @@
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [지수 시간 가설](exponential-time-hypothesis.md)
 
 #complexity #algorithms #graph_theory

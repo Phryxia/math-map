@@ -56,7 +56,7 @@ function editDistance(s: string, t: string): number {
 
 정리. $d$ 는 문자열 집합 위의 거리 함수다.
 
-증명의 요지. $d(s,t)=0$ 은 $s=t$ 와 동치다. 삽입과 삭제는 서로를 되돌리고 교체는 교체로 되돌리므로 $d(s,t)=d(t,s)$ 다. $s$ 를 $u$ 로 바꾸는 최소 순서 뒤에 $u$ 를 $t$ 로 바꾸는 최소 순서를 이으면 $s$ 를 $t$ 로 바꾸므로 $d(s,t)\le d(s,u)+d(u,t)$ 다.
+증명의 요지. $d(s,t)=0$ 은 $s=t$ 와 동치다. 삽입과 삭제는 서로의 역연산이고 교체의 역연산은 교체이므로 $d(s,t)=d(t,s)$ 다. $s$ 를 $u$ 로 바꾸는 최소 순서 뒤에 $u$ 를 $t$ 로 바꾸는 최소 순서를 이으면 $s$ 를 $t$ 로 바꾸므로 $d(s,t)\le d(s,u)+d(u,t)$ 다.
 
 ## 최장 공통 부분수열
 
@@ -68,7 +68,7 @@ function editDistance(s: string, t: string): number {
 
 ## 이차 시간의 하한
 
-강한 지수 시간 가설(strong exponential time hypothesis)이 참이면, 어떤 $\varepsilon\gt 0$ 에 대해서도 길이 $n$ 인 두 문자열의 편집 거리를 $O(n^{2-\varepsilon})$ 시간에 계산하는 알고리즘은 없다. Backurs 와 Indyk 가 2015 년에 증명했다[^4].
+강한 [지수 시간 가설](exponential-time-hypothesis.md)(strong exponential time hypothesis)이 참이면, 어떤 $\varepsilon\gt 0$ 에 대해서도 길이 $n$ 인 두 문자열의 편집 거리를 $O(n^{2-\varepsilon})$ 시간에 계산하는 알고리즘은 없다. Backurs 와 Indyk 가 2015 년에 증명했다[^4].
 
 # 활용
 
