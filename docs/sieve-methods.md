@@ -139,5 +139,6 @@ $$
 ## 더 알아보기
 
 - [큰 체](large-sieve.md)
+- [Green–Tao 정리](green-tao-theorem.md)
 
 #number_theory #combinatorics

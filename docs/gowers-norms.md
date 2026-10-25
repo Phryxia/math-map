@@ -93,7 +93,7 @@ $U^3$ 의 경우. 직관 절의 이차 위상은 $U^3$ 노름이 $1$ 이다. B. 
 # 활용
 
 - Szemerédi 정리의 해석적 증명. 위 정량적 상한이 그 내용이다.
-- 소수 안의 등차수열. Green 과 Tao 는 소수를 감싸는 의사무작위 가중을 만들고, 그 가중에 대한 상대적 Szemerédi 정리를 $U^{k-1}$ 노름으로 증명했다[^5]. 소수 위의 선형 방정식계의 해를 세는 Green–Tao 의 후속 결과는 $U^{s+1}$ 역정리를 쓴다[^6].
+- 소수 안의 등차수열([Green–Tao 정리](green-tao-theorem.md)). Green 과 Tao 는 소수를 감싸는 의사무작위 가중을 만들고, 그 가중에 대한 상대적 Szemerédi 정리를 $U^{k-1}$ 노름으로 증명했다[^5]. 소수 위의 선형 방정식계의 해를 세는 Green–Tao 의 후속 결과는 $U^{s+1}$ 역정리를 쓴다[^6].
 - 유한체 위의 다항식 검사. $\mathbb F\_2^n$ 에서 $\Vert(-1)^P\Vert\_{U^{d+1}}=1$ 인 것은 $P$ 가 차수 $d$ 이하의 다항식인 것과 동치다. 차수 $d$ 이하 다항식인지를 점 $2^{d+1}$ 개의 평행체 하나로 검사하는 방법이 이 동치에서 나오고, [부울 함수의 Fourier 해석](boolean-fourier.md)의 선형성 검사(Blum–Luby–Rubinfeld test)는 $d=1$ 에서 꼭짓점 하나를 원점에 고정한 꼴이다.
 
 [^1]: W. T. Gowers, "A new proof of Szemerédi's theorem for arithmetic progressions of length four", Geometric and Functional Analysis 8 (1998), 529–551.
@@ -111,6 +111,6 @@ $U^3$ 의 경우. 직관 절의 이차 위상은 $U^3$ 노름이 $1$ 이다. B. 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Green–Tao 정리](green-tao-theorem.md)
 
 #combinatorics #analysis #number_theory

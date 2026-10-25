@@ -122,5 +122,6 @@ $n$ 자리 난수가 소수일 확률이 대략 $1/(n\ln 10)$ 이므로 [RSA 암
 - [Dirichlet L 함수](dirichlet-l-functions.md)
 - [원법](circle-method.md)
 - [Vaughan 항등식](vaughan-identity.md)
+- [Green–Tao 정리](green-tao-theorem.md)
 
 #number_theory #complex_analysis #theorem

@@ -51,7 +51,7 @@ Szemerédi 정리는 양의 정수의 부분집합 $A$ 가 $\limsup_{N\to\infty}
 # 활용
 
 - 동역학적 증명. H. Furstenberg 는 측도 보존 변환의 [다중 되돌이 정리](furstenberg-multiple-recurrence.md)로 Szemerédi 정리를 증명했고, 같은 방법이 van der Waerden 정리와 그 다항식 판본을 준다[^8].
-- 소수 안의 등차수열. B. Green 과 T. Tao 는 소수 집합이 모든 길이의 등차수열을 포함한다는 것을 Szemerédi 정리의 상대판으로 증명했다[^9].
+- 소수 안의 등차수열([Green–Tao 정리](green-tao-theorem.md)). B. Green 과 T. Tao 는 소수 집합이 모든 길이의 등차수열을 포함한다는 것을 Szemerédi 정리의 상대판으로 증명했다[^9].
 
 [^1]: B. L. van der Waerden, "Beweis einer Baudetschen Vermutung", Nieuw Archief voor Wiskunde 15 (1927), 212–216.
 [^2]: S. Shelah, "Primitive recursive bounds for van der Waerden numbers", Journal of the American Mathematical Society 1 (1988), 683–697.

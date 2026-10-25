@@ -147,6 +147,7 @@ graph TD
   - [Heath-Brown 항등식](heath-brown-identity.md): von Mangoldt 함수를 Möbius 함수와 1, log 의 합성곱 교대합으로 쓰는 항등식, 변수 길이를 고르는 분류
   - [Chen 정리](chen-theorem.md): 짝수가 소수와 거의 소수의 합이라는 결론, 가중 체와 전환 원리
   - [소수 간격](prime-gaps.md): 연속한 소수의 차의 하한과 상한, 허용집합과 유계 간격
+  - [Green–Tao 정리](green-tao-theorem.md): 소수 안의 임의 길이 등차수열, 의사무작위 측도에 대한 상대적 Szemerédi 정리와 전이 원리, 절단 약수합으로 만든 막는 측도
   - [Cramér 추측](cramer-conjecture.md): 소수를 독립 시행으로 바꾼 모형이 주는 최대 간격 $(\log p)^2$ 와 Maier 정리가 드러낸 모형의 어긋남
 - [Riemann 가설](riemann-hypothesis.md): 영점의 실수부와 소수 계량 함수의 오차, GRH(generalized Riemann hypothesis) 의 응용
   - [쌍 상관 추측](pair-correlation-conjecture.md): 임계선 위 영점의 간격 분포와 무작위 행렬 고윳값 통계의 일치
