@@ -106,5 +106,6 @@ $$
 ## 더 알아보기
 
 - [침투](percolation.md)
+- [편향 Maker–Breaker 게임](biased-maker-breaker-games.md)
 
 #combinatorics #probability #graph_theory

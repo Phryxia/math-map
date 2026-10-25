@@ -102,6 +102,6 @@ function breakerMove(family, maker, breaker, free) {
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [편향 Maker–Breaker 게임](biased-maker-breaker-games.md)
 
 #combinatorics #probability #computation
