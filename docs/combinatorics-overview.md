@@ -91,6 +91,7 @@ graph TD
 - [Erdős–Ko–Rado 정리](erdos-ko-rado.md): 서로 만나는 $k$ 집합족의 최대 크기, Katona 의 순환 배열 세기
   - [Frankl–Wilson 정리](frankl-wilson-theorem.md): 교집합 크기가 법 p 로 s 가지 값만 갖는 k 균등족이 C(n, s) 개 이하라는 정리, 다항식의 일차독립성 증명, 단위 거리 그래프의 채색수와 Borsuk 추측의 반례와 명시적 Ramsey 그래프
 - [해바라기 보조정리](sunflower-lemma.md): 원소가 k 개 이하인 집합이 k!(p − 1)ᵏ 개보다 많으면 교집합이 모두 같은 집합 p 개가 있다는 Erdős–Rado 상한, 귀납과 비둘기집 원리의 증명과 해바라기 추측
+- [캡 집합](cap-sets.md): 한 직선 위의 세 점이 없는 F₃ⁿ 의 부분집합, 조각 계수와 다항식 차수 세기로 얻는 Ellenberg–Gijswijt 의 2.756ⁿ 상한
 
 ## 설계와 접촉 구조
 
