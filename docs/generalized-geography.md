@@ -77,7 +77,7 @@ $$
 
 ## 더 알아보기
 
-- [Hex 게임](hex-game.md)
+- [전략 훔치기 논법](strategy-stealing.md)
 - [Sprague–Grundy 정리](sprague-grundy-theorem.md)
 
 #complexity #computation #graph_theory #combinatorics

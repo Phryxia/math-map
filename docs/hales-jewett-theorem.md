@@ -37,7 +37,7 @@ H. Furstenberg 와 Y. Katznelson 은 모든 $\delta\gt 0$ 과 $k$ 에 대해 $n$
 
 # 활용
 
-- 다차원 틱택토. 판 $\lbrack k\rbrack^n$ 에서 두 사람이 번갈아 칸을 차지하고 조합적 직선을 먼저 채우는 사람이 이기는 게임은, $n\ge\mathrm{HJ}(k,2)$ 이면 판이 다 차도 무승부가 될 수 없다. 전략 훔치기 논법으로 먼저 두는 사람에게 이기는 전략이 존재한다[^1]. 반대로 줄이 길고 개수가 적으면 나중에 두는 사람이 모든 줄을 막는다는 것이 [Erdős–Selfridge 정리](erdos-selfridge-theorem.md)다.
+- 다차원 틱택토. 판 $\lbrack k\rbrack^n$ 에서 두 사람이 번갈아 칸을 차지하고 조합적 직선을 먼저 채우는 사람이 이기는 게임은, $n\ge\mathrm{HJ}(k,2)$ 이면 판이 다 차도 무승부가 될 수 없다. [전략 훔치기 논법](strategy-stealing.md)으로 먼저 두는 사람에게 이기는 전략이 존재한다[^1]. 반대로 줄이 길고 개수가 적으면 나중에 두는 사람이 모든 줄을 막는다는 것이 [Erdős–Selfridge 정리](erdos-selfridge-theorem.md)다.
 - Ramsey 형 정리의 공통 증명. van der Waerden 정리, Gallai 정리, 유한 벡터공간의 부분공간에 대한 Graham–Rothschild 형 결과가 단어에서 대상으로 가는 사상을 바꾸어 이 정리에서 나온다.
 
 [^1]: A. W. Hales, R. I. Jewett, "Regularity and positional games", Transactions of the American Mathematical Society 106 (1963), 222–229.

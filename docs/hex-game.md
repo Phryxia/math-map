@@ -4,7 +4,7 @@
 
 **Hex 게임(Hex)** 은 정육각형 칸으로 된 마름모꼴 판에 두 사람이 번갈아 자기 돌을 놓아, 자기에게 정해진 마주 보는 두 변을 돌의 사슬로 먼저 잇는 사람이 이기는 게임이다. P. Hein 과 J. Nash 가 1940 년대에 따로 고안했다. 판이 가득 차면 정확히 한 사람이 이겨 있고, 이 사실은 2 차원 [Brouwer 고정점 정리](brouwer-fixed-point.md)와 동치다[^1]. 일반 판에서 승패 판정은 PSPACE(polynomial space)-완전이다[^2].
 
-[일반화 지리 게임](generalized-geography.md)처럼 걸음 수가 판의 크기로 묶이는 두 사람 게임이다. 먼저 두는 사람이 이기는 전략이 존재한다는 것은 전략 훔치기 논법(strategy-stealing argument)으로 증명되지만, 그 전략이 무엇인지는 이 논법이 알려 주지 않는다.
+[일반화 지리 게임](generalized-geography.md)처럼 걸음 수가 판의 크기로 묶이는 두 사람 게임이다. 먼저 두는 사람이 이기는 전략이 존재한다는 것은 [전략 훔치기 논법](strategy-stealing.md)으로 증명되지만, 그 전략이 무엇인지는 이 논법이 알려 주지 않는다.
 
 # 직관
 
@@ -53,7 +53,7 @@ S. Reisch 는 $n\times n$ 판의 주어진 국면에서 승패 판정이 PSPACE-
 ## 선수지식
 
 - [Brouwer 고정점 정리](brouwer-fixed-point.md)
-- [일반화 지리 게임](generalized-geography.md)
+- [전략 훔치기 논법](strategy-stealing.md)
 
 ## 더 알아보기
 
