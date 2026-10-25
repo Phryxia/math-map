@@ -196,6 +196,7 @@ $k \ge 3$ 고정에 대해 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 
 - [Tutte 다항식](tutte-polynomial.md)
 - [Lovász 세타 함수](lovasz-theta.md)
+- [de Bruijn–Erdős 정리](de-bruijn-erdos-theorem.md)
 - [평면의 채색수](chromatic-number-of-the-plane.md)
 
 #graph_theory #combinatorics #algorithms

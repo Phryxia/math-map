@@ -4,7 +4,7 @@
 
 **평면의 채색수(chromatic number of the plane)** 는 평면의 모든 점에 색을 칠하되 거리가 정확히 $1$ 인 두 점이 다른 색을 받게 할 때 필요한 색의 최소 개수 $\chi(\mathbb R^2)$ 다. 이 값을 정하는 문제를 Hadwiger–Nelson 문제(Hadwiger–Nelson problem)라 한다. 알려진 범위는 $5\le\chi(\mathbb R^2)\le 7$ 이고, 하한 $5$ 는 A. D. N. J. de Grey 가 2018 년에 증명했다[^1].
 
-평면의 점을 정점으로, 거리가 $1$ 인 두 점을 간선으로 둔 무한 그래프의 [그래프 색칠](graph-coloring.md)이다. de Bruijn–Erdős 정리(de Bruijn–Erdős theorem)와 선택 공리로 이 값은 유한 부분그래프의 채색수의 최댓값과 같다.
+평면의 점을 정점으로, 거리가 $1$ 인 두 점을 간선으로 둔 무한 그래프의 [그래프 색칠](graph-coloring.md)이다. [de Bruijn–Erdős 정리](de-bruijn-erdos-theorem.md)와 선택 공리로 이 값은 유한 부분그래프의 채색수의 최댓값과 같다.
 
 # 직관
 
@@ -58,6 +58,7 @@ $$
 ## 선수지식
 
 - [그래프 색칠](graph-coloring.md)
+- [de Bruijn–Erdős 정리](de-bruijn-erdos-theorem.md)
 
 ## 더 알아보기
 
