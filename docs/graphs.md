@@ -122,5 +122,6 @@ $$
 - [그래프 Laplacian](graph-laplacian.md)
 - [Euler 지표](euler-characteristic.md)
 - [평면 그래프](planar-graphs.md)
+- [Aanderaa–Karp–Rosenberg 추측](evasiveness-conjecture.md)
 
 #graph_theory #combinatorics #linear_algebra #complexity
