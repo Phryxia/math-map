@@ -130,5 +130,6 @@ DFT 는 순환군 $\mathbb{Z}/N\mathbb{Z}$ 위의 [Fourier 변환](fourier-trans
 - [고속 Fourier 변환](fft.md)
 - [부울 함수의 Fourier 해석](boolean-fourier.md)
 - [Shor 알고리즘](shor-algorithm.md)
+- [등차수열의 Roth 정리](roth-theorem-arithmetic-progressions.md)
 
 #analysis #algorithms

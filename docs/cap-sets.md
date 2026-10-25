@@ -4,7 +4,7 @@
 
 **캡 집합(cap set)** 은 $\mathbb F\_3^n$ 의 부분집합 가운데 한 직선 위에 있는 서로 다른 세 점을 포함하지 않는 것이다. J. S. Ellenberg 와 D. Gijswijt 는 캡 집합의 크기가 $2.756^n$ 이하임을 2017 년에 증명했다[^1].
 
-$\mathbb F\_3^n$ 에서 서로 다른 세 점 $x,y,z$ 가 한 직선 위에 있는 것은 $x+y+z=0$ 인 것, 곧 $x,y,z$ 가 등차수열을 이루는 것과 동치다. 그래서 캡 집합 문제는 [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md)의 절에서 다루는 길이 3 등차수열의 Roth 정리를 [유한체](finite-fields.md) 위의 벡터 공간으로 옮긴 것이다.
+$\mathbb F\_3^n$ 에서 서로 다른 세 점 $x,y,z$ 가 한 직선 위에 있는 것은 $x+y+z=0$ 인 것, 곧 $x,y,z$ 가 등차수열을 이루는 것과 동치다. 그래서 캡 집합 문제는 [등차수열의 Roth 정리](roth-theorem-arithmetic-progressions.md)를 [유한체](finite-fields.md) 위의 벡터 공간으로 옮긴 것이다.
 
 # 직관
 
@@ -50,7 +50,7 @@ $$
 
 # 활용
 
-- 길이 3 등차수열의 Roth 정리. 정수에서는 등차수열이 없는 집합이 지수적으로 작지 않다(Behrend 구성, Behrend's construction). 유한체 위에서는 이 절의 다항식 논법으로 지수적으로 작아진다.
+- 등차수열의 Roth 정리. 정수에서는 등차수열이 없는 집합이 지수적으로 작지 않다(Behrend 구성, Behrend's construction). 유한체 위에서는 이 절의 다항식 논법으로 지수적으로 작아진다.
 - 행렬 곱셈의 지수. H. Cohn 과 C. Umans 의 군론적 행렬 곱셈 방법에서, 지수가 유계인 Abel 군만으로는 행렬 곱셈의 지수 $2$ 에 닿을 수 없음이 조각 계수 논법으로 증명되었다[^6].
 - [해바라기 보조정리](sunflower-lemma.md). E. Naslund 와 W. Sawin 이 조각 계수 논법으로 Erdős–Szemerédi 해바라기 추측(Erdős–Szemerédi sunflower conjecture)을 증명했다[^5].
 
@@ -66,6 +66,7 @@ $$
 ## 선수지식
 
 - [유한체](finite-fields.md)
+- [등차수열의 Roth 정리](roth-theorem-arithmetic-progressions.md)
 
 ## 더 알아보기
 
