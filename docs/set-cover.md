@@ -110,6 +110,6 @@ Dinur 와 Steurer 는 같은 하한을 $\mathrm P\ne\mathrm{NP}$ 가정만으로
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [원시-쌍대 방법](primal-dual-method.md)
 
 #algorithms #complexity #combinatorics #optimization
