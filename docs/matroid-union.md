@@ -61,7 +61,7 @@ $$
 
 - [Shannon 전환 게임](shannon-switching-game.md). 나중에 두는 Short 가 이기는 조건이 간선을 공유하지 않는 신장트리 두 개의 존재이고, 그 판정과 나무는 이 정리의 알고리즘으로 얻는다.
 - 그래프의 강한 연결도. 간선 연결도가 $2k$ 이상이면 분할의 덩어리마다 밖으로 나가는 간선이 $2k$ 개 이상이므로 덩어리 사이의 간선이 $k\lvert\mathcal P\rvert$ 개 이상이다. Nash-Williams–Tutte 정리에서 간선을 공유하지 않는 신장트리가 $k$ 개 있다.
-- matroid 교집합. 합의 계수 공식과 두 matroid 의 공통 독립집합의 최대 크기를 주는 Edmonds 의 matroid 교집합 정리(matroid intersection theorem)는 서로 유도된다.
+- matroid 교집합. 합의 계수 공식과 두 matroid 의 공통 독립집합의 최대 크기를 주는 Edmonds 의 [Matroid 교집합 정리](matroid-intersection.md)는 서로 유도된다.
 
 [^1]: C. St. J. A. Nash-Williams, "Edge-disjoint spanning trees of finite graphs", Journal of the London Mathematical Society 36 (1961), 445–450.
 [^2]: J. Edmonds, "Minimum partition of a matroid into independent subsets", Journal of Research of the National Bureau of Standards 69B (1965), 67–72.
@@ -77,5 +77,6 @@ $$
 ## 더 알아보기
 
 - [Shannon 전환 게임](shannon-switching-game.md)
+- [Matroid 교집합 정리](matroid-intersection.md)
 
 #combinatorics #graph_theory #optimization

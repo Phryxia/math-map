@@ -156,8 +156,14 @@ $$
 
 ## 더 알아보기
 
+### 최소최대 정리와 일반화
+
 - [Dilworth 정리](dilworth-theorem.md)
 - [안정 매칭](stable-matching.md)
+- [Matroid 교집합 정리](matroid-intersection.md)
+
+### 다면체와 계산
+
 - [매칭 다면체](matching-polytope.md)
 - [고립 보조정리](isolation-lemma.md)
 - [영구식](permanent.md)

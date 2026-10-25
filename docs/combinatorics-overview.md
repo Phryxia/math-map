@@ -74,6 +74,7 @@ graph TD
   - [완벽그래프와 강한 완벽그래프 정리](perfect-graphs.md): 모든 유도 부분그래프에서 채색수와 클릭수가 같은 그래프의 분류
 - [Matroid 합 정리](matroid-union.md): 여러 matroid 의 독립집합을 합친 집합들의 계수 공식, 겹치지 않는 기저 k 개와 독립집합 k 개로 덮기의 판정, Nash-Williams–Tutte 정리와 수목도
   - [Shannon 전환 게임](shannon-switching-game.md): 간선을 차지하는 사람과 지우는 사람이 두 단자의 연결을 다투는 게임, 간선을 공유하지 않는 신장트리 두 개로 판정하는 Lehman 정리와 Bridg-It
+  - [Matroid 교집합 정리](matroid-intersection.md): 두 matroid 의 공통 독립집합의 최대 크기를 주는 최소최대 공식, 쌍대와의 합으로 하는 증명과 증가 경로 알고리즘, König 정리와 무지개 신장트리
 
 ## 극단 조합론
 
