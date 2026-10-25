@@ -107,5 +107,6 @@ $$
 ## 더 알아보기
 
 - [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md)
+- [Furstenberg 다중 되돌이 정리](furstenberg-multiple-recurrence.md)
 
 #measure_theory #probability #analysis

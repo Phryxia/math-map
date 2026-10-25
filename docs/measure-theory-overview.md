@@ -110,6 +110,7 @@ graph TD
 
 - [에르고딕 정리](ergodic-theorem.md): 측도보존변환의 시간평균과 공간평균의 일치, Birkhoff 정리와 von Neumann 정리
 - [혼합성](mixing.md): 집합이 퍼지는 속도로 재는 강혼합과 약혼합, 에르고딕성과의 위계, 스펙트럼 판정
+  - [Furstenberg 다중 되돌이 정리](furstenberg-multiple-recurrence.md): 간격이 같은 k+1 개의 이동이 함께 겹치는 되돌이, 대응 원리로 얻는 Szemerédi 정리, 약혼합과 콤팩트 확대의 구조 정리
 - [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md): 걸음마다 만들어지는 정보량, 생성분할 정리와 Ornstein 정리
 - [Kingman 부분가법 에르고딕 정리](kingman-subadditive-ergodic.md): 부분가법 과정을 n 으로 나눈 값의 거의 모든 점 수렴, 무작위 행렬 곱의 Lyapunov 지수와 최초 통과 침투
   - [Oseledets 곱셈 에르고딕 정리](oseledets-theorem.md): 행렬 코사이클의 Lyapunov 지수 전체와 부분공간 사슬, Oseledets 분해와 지수의 합
