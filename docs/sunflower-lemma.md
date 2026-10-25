@@ -14,7 +14,7 @@
 
 # 정의
 
-집합 $S_1,\dots,S_p$ 가 **해바라기(sunflower)** 라는 것은 집합 $Y$ 가 있어서 $i\ne j$ 이면 $S_i\cap S_j=Y$ 인 것이다. $Y$ 를 **핵(core)**, $S_i\setminus Y$ 를 **꽃잎(petal)** 이라 한다. 꽃잎들은 서로 겹치지 않는다. 핵이 공집합인 해바라기는 서로 겹치지 않는 집합들이다. 이 용어는 Δ-계(Δ-system)라고도 한다.
+집합 $S_1,\dots,S_p$ 가 **해바라기(sunflower)** 라는 것은 집합 $Y$ 가 있어서 $i\ne j$ 이면 $S_i\cap S_j=Y$ 인 것이다. $Y$ 를 **핵(core)**, $S_i\setminus Y$ 를 **꽃잎(petal)** 이라 한다. 꽃잎들은 서로 겹치지 않는다. 핵이 공집합인 해바라기는 서로 겹치지 않는 집합들이다. 집합론에서는 무한 족에 대해 같은 개념을 Δ 체계(Δ-system)라 한다.
 
 # 성질
 
@@ -39,7 +39,7 @@ R. Alweiss, S. Lovett, K. Wu, J. Zhang 은 2019 년에 상한을 $(Cp^3\log k\lo
 # 활용
 
 - [단조 회로](monotone-circuits.md)의 하한. A. A. Razborov 는 그래프에 서로 모두 이웃한 꼭짓점 $k$ 개가 있는지 판정하는 단조 회로, 곧 NOT 게이트가 없는 [불 회로](boolean-circuits.md)의 크기가 초다항이어야 함을 증명했다. 게이트가 계산하는 함수를 작은 집합족의 합집합으로 근사하고, 족이 커지면 해바라기를 찾아 꽃잎을 버리고 핵으로 바꾸어 족의 크기를 묶는다[^3].
-- 집합론. 비가산 개의 유한집합으로 된 족은 비가산 크기의 Δ-계를 포함한다는 Δ-계 보조정리(Δ-system lemma)가 [강제법](forcing.md)에서 가산 사슬 조건(countable chain condition)을 증명하는 데 쓰인다.
+- 집합론. 비가산 개의 유한집합으로 된 족은 비가산 크기의 Δ 체계를 포함한다는 [Δ 체계 보조정리](delta-system-lemma.md)가 [강제법](forcing.md)에서 가산 사슬 조건(countable chain condition)을 증명하는 데 쓰인다.
 
 [^1]: P. Erdős, R. Rado, "Intersection theorems for systems of sets", Journal of the London Mathematical Society 35 (1960), 85–90.
 [^2]: R. Alweiss, S. Lovett, K. Wu, J. Zhang, "Improved bounds for the sunflower lemma", Annals of Mathematics 194(3) (2021), 795–815. 학회 판은 STOC 2020.
@@ -54,5 +54,6 @@ R. Alweiss, S. Lovett, K. Wu, J. Zhang 은 2019 년에 상한을 $(Cp^3\log k\lo
 ## 더 알아보기
 
 - [단조 회로](monotone-circuits.md)
+- [Δ 체계 보조정리](delta-system-lemma.md)
 
 #combinatorics #complexity #set_theory

@@ -108,5 +108,6 @@ $|A| \le |B|$ 이고 $|B| \le |A|$ 이면 $|A| = |B|$ 다. 양방향 단사에�
 - [계산 가능성](computability.md)
 - [Löwenheim–Skolem 정리](lowenheim-skolem.md)
 - [연속체 가설](continuum-hypothesis.md)
+- [Δ 체계 보조정리](delta-system-lemma.md)
 
 #set_theory #measure_theory #logic #computation

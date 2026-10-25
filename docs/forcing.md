@@ -97,7 +97,7 @@ $$
 
 서로 다른 $\eta$ 를 강제하는 조건들은 양립하지 않으므로 반사슬을 이루고, ccc 조건에서 $\vert A_\xi \vert \le \aleph_0$ 이다. $M$ 안에서 $f$ 의 치역이 가산 집합 $\alpha$ 개의 합집합에 들어가므로 $\beta$ 가 $\alpha$ 로 붕괴할 수 없다.
 
-$\mathrm{Add}(\omega, \kappa)$ 는 조건이 유한이므로 ccc 를 만족한다. 따라서 $\kappa$ 개의 새 실수를 더해도 기수는 그대로이고, $\kappa$ 를 $\aleph_2$ 로 잡으면 확대 모형에서 $2^{\aleph_0} \ge \aleph_2$ 가 되어 연속체 가설이 깨진다.
+$\mathrm{Add}(\omega, \kappa)$ 는 조건이 유한이므로 [Δ 체계 보조정리](delta-system-lemma.md)로 ccc 를 만족한다. 따라서 $\kappa$ 개의 새 실수를 더해도 기수는 그대로이고, $\kappa$ 를 $\aleph_2$ 로 잡으면 확대 모형에서 $2^{\aleph_0} \ge \aleph_2$ 가 되어 연속체 가설이 깨진다.
 
 붕괴를 목적으로 하는 순서도 있다. Levy 붕괴 $\mathrm{Coll}(\omega, \kappa)$ 는 $\omega$ 에서 $\kappa$ 로 가는 유한 부분함수들의 순서이고, 확대 모형에서 $\kappa$ 를 가산으로 만든다.
 

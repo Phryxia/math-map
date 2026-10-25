@@ -136,6 +136,7 @@ graph TD
 
 - [연속체 가설](continuum-hypothesis.md): 가산 무한 다음 기수가 연속체인가, ZFC 공리계에서의 독립성
 - [강제법](forcing.md): 일반 필터로 모형을 확장해 독립성을 증명하는 방법
+  - [Δ 체계 보조정리](delta-system-lemma.md): 유한집합의 비가산 족이 비가산 Δ 체계를 포함한다는 정리, Cohen 강제와 유한지지 반복의 가산 반사슬 조건
 - [반복 강제법](iterated-forcing.md): 두 단계 반복과 지지 조건, 유한지지 반복의 ccc 와 가산지지 반복의 properness
   - [Proper 강제법](proper-forcing.md): 가산 기본 부분모형에 대한 일반 조건, 가산지지 반복에서의 보존
 - [Laver 강제법](laver-forcing.md): 나무 조건으로 지배 실수를 더하는 강제법, 순수 결정과 Laver 성질
