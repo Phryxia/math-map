@@ -72,6 +72,7 @@ graph TD
   - [Kasteleyn 정리](kasteleyn-theorem.md): 평면 그래프의 Kasteleyn 방향과 Pfaffian 으로 완전 매칭 수를 다항시간에 센다. 도미노 덮기의 곱 공식
 - [Matroid](matroids.md): 벡터의 일차독립과 그래프의 순환 없음을 한 공리계로 묶고 탐욕 알고리즘이 통하는 범위를 정한다
   - [완벽그래프와 강한 완벽그래프 정리](perfect-graphs.md): 모든 유도 부분그래프에서 채색수와 클릭수가 같은 그래프의 분류
+  - [Shannon 전환 게임](shannon-switching-game.md): 간선을 차지하는 사람과 지우는 사람이 두 단자의 연결을 다투는 게임, 간선을 공유하지 않는 신장트리 두 개로 판정하는 Lehman 정리와 Bridg-It
 
 ## 극단 조합론
 

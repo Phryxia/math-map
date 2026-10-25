@@ -58,7 +58,7 @@ $m\times n$ 의 직사각형 판에서 두 사람이 번갈아 남은 칸 $(i,j)
 
 - [Hex 게임](hex-game.md). 판이 가득 차면 정확히 한 사람이 이겨 있다는 Hex 정리로 무승부가 없고, 이 논법으로 먼저 두는 사람에게 이기는 전략이 존재한다.
 - 틱택토형 강한 게임. 판 $\lbrack k\rbrack^n$ 에서 줄을 먼저 채우는 사람이 이기는 게임에서 먼저 두는 사람은 지지 않는다. 차원이 [Hales–Jewett 정리](hales-jewett-theorem.md)의 $\mathrm{HJ}(k,2)$ 이상이면 무승부가 없으므로 먼저 두는 사람이 이긴다.
-- Chomp 와 Bridg-It 처럼 첫 수를 하나 버려도 손해가 없는 게임에서 1 번의 승리가 같은 방법으로 증명된다.
+- Chomp 와 [Shannon 전환 게임](shannon-switching-game.md)의 Bridg-It 처럼 첫 수를 하나 버려도 손해가 없는 게임에서 1 번의 승리가 같은 방법으로 증명된다.
 
 [^1]: D. Gale, "The game of Hex and the Brouwer fixed-point theorem", American Mathematical Monthly 86 (1979), 818–827.
 
@@ -71,5 +71,6 @@ $m\times n$ 의 직사각형 판에서 두 사람이 번갈아 남은 칸 $(i,j)
 ## 더 알아보기
 
 - [Hex 게임](hex-game.md)
+- [Shannon 전환 게임](shannon-switching-game.md)
 
 #computation #combinatorics #complexity
