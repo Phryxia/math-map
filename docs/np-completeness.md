@@ -180,5 +180,6 @@ $G$ 의 정점 집합 $S$ 가 클릭인 것과, 여그래프 $G'$ (같은 정점
 - [Valiant–Vazirani 정리](valiant-vazirani.md)
 - [근사 알고리즘](approximation-algorithms.md)
 - [매개변수 복잡도](parameterized-complexity.md)
+- [클릭 문제](clique-problem.md)
 
 #complexity #computation

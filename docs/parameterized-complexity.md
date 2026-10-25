@@ -2,7 +2,7 @@
 
 # 개요
 
-**매개변수 복잡도(parameterized complexity)** 는 입력의 크기 $n$ 과 함께 매개변수 $k$ 를 보고, 실행 시간을 $f(k)\cdot n^{O(1)}$ 꼴로 막을 수 있는지에 따라 문제를 가르는 복잡도 이론이다. $f$ 는 아무 계산 가능한 함수여도 되므로 $k$ 가 작으면 [NP-완전성](np-completeness.md)(nondeterministic polynomial time)이 증명된 문제도 빠르게 풀린다. 크기 $k$ 의 정점 덮개는 $O(2^kn)$ 시간에 찾지만, 크기 $k$ 의 클릭은 $n^{o(k)}$ 시간 알고리즘이 없으리라 여겨진다. 이 차이를 가르는 것이 고정 매개변수 다루기 쉬움과 W 계층이다.
+**매개변수 복잡도(parameterized complexity)** 는 입력의 크기 $n$ 과 함께 매개변수 $k$ 를 보고, 실행 시간을 $f(k)\cdot n^{O(1)}$ 꼴로 막을 수 있는지에 따라 문제를 가르는 복잡도 이론이다. $f$ 는 아무 계산 가능한 함수여도 되므로 $k$ 가 작으면 [NP-완전성](np-completeness.md)(nondeterministic polynomial time)이 증명된 문제도 빠르게 풀린다. 크기 $k$ 의 정점 덮개는 $O(2^kn)$ 시간에 찾지만, 크기 $k$ 의 [클릭](clique-problem.md)은 $n^{o(k)}$ 시간 알고리즘이 없으리라 여겨진다. 이 차이를 가르는 것이 고정 매개변수 다루기 쉬움과 W 계층이다.
 
 # 직관
 

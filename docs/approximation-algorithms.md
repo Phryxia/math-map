@@ -40,7 +40,7 @@ $\mathrm{NP}$ 난해 문제 앞에서 포기할 수 있는 것은 셋이다. 세
 | **PTAS**(polynomial-time approximation scheme) | 임의의 $\varepsilon$ 에 대해 $1+\varepsilon$ 근사, 시간은 $\varepsilon$ 에 지수적이어도 됨 | 유클리드 [외판원 문제](traveling-salesman-problem.md)(traveling salesman problem, TSP) |
 | **APX**(approximable) | 어떤 상수 $\rho$ 로 근사 가능 | 정점 덮개, 최대 절단 |
 | 로그 근사 | $\Theta(\log n)$ 이 최선 | [집합 덮개](set-cover.md) |
-| 근사 불가 | 어떤 상수배로도 근사 불가($\mathrm{P} \ne \mathrm{NP}$ 가정) | 일반 TSP, 최대 클릭 |
+| 근사 불가 | 어떤 상수배로도 근사 불가($\mathrm{P} \ne \mathrm{NP}$ 가정) | 일반 TSP, [최대 클릭](clique-problem.md) |
 
 조건을 바꾸면 등급이 달라진다. 삼각부등식을 만족하는 TSP 는 상수 근사가 가능하지만 일반 TSP 는 상수 근사가 불가능하다. 상수 근사가 있으면 그것으로 Hamilton 회로의 존재를 판정할 수 있다.
 

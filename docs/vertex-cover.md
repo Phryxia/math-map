@@ -65,7 +65,7 @@ $$
 
 - 망 감시. 모든 연결을 감시하려면 각 연결의 한쪽 끝에 감시 장치를 두어야 하므로 감시 장치의 최소 수가 정점 덮개 문제다.
 - 생물정보학의 충돌 제거. 서로 충돌하는 자료 쌍을 간선으로 두면 가장 적은 자료를 지워 충돌을 없애는 문제가 정점 덮개 문제다.
-- 독립집합과 클릭. 여집합과 보그래프로 옮기면 최대 독립집합과 최대 클릭의 정확한 알고리즘이 정점 덮개의 알고리즘과 같아지지만, 근사비는 옮겨지지 않는다.
+- 독립집합과 클릭. 여집합과 보그래프로 옮기면 최대 독립집합과 [최대 클릭](clique-problem.md)의 정확한 알고리즘이 정점 덮개의 알고리즘과 같아지지만, 근사비는 옮겨지지 않는다.
 
 [^1]: G. L. Nemhauser, L. E. Trotter, "Vertex packings: structural properties and algorithms", Mathematical Programming 8 (1975), 232–248.
 [^2]: I. Dinur, S. Safra, "On the hardness of approximating minimum vertex cover", Annals of Mathematics 162 (2005), 439–485.

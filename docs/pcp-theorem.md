@@ -90,7 +90,7 @@ PCP 정리 이후 NP-어려운 최적화 문제들이 근사 가능성에 따라
 | APX(approximable) | 어떤 상수 비율은 되지만 PTAS 는 없음 | MAX-3SAT, 정점 덮개 |
 | 상수 불가 | 상수 비율 근사조차 NP-어려움 | 일반 TSP, 최대 클릭 |
 
-경계는 PCP 정리로 그어진다. 최대 클릭은 $n^{1-\varepsilon}$ 보다 좋은 근사가 NP-어렵고, [집합 덮개](set-cover.md)는 $(1-\varepsilon)\ln n$ 이 하한이며 탐욕 알고리즘의 $\ln n$ 이 정확히 최적이다.
+경계는 PCP 정리로 그어진다. [최대 클릭](clique-problem.md)은 $n^{1-\varepsilon}$ 보다 좋은 근사가 NP-어렵고, [집합 덮개](set-cover.md)는 $(1-\varepsilon)\ln n$ 이 하한이며 탐욕 알고리즘의 $\ln n$ 이 정확히 최적이다.
 
 ## 하한 증명의 도구
 
