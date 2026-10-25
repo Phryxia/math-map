@@ -86,6 +86,7 @@ graph TD
   - [Erdős–Stone 정리](erdos-stone-theorem.md): 금지 부분그래프의 극단 간선 수가 그 그래프의 채색수로 정해진다
 - [Szemerédi 정리](szemeredi-theorem.md): 양의 상밀도를 갖는 정수 집합이 모든 길이의 등차수열을 포함한다는 정리, 조합적·에르고딕·Fourier·초그래프 제거의 네 증명과 길이 3 의 Behrend 하한과 Kelley–Meka 상한
 - [등차수열의 Roth 정리](roth-theorem-arithmetic-progressions.md): 밀도 양수인 집합이 길이 3 의 등차수열을 포함한다는 정리, Fourier 계수로 세는 공식과 밀도 증가 논법, F₃ⁿ 판본의 Meshulam 상한, Behrend 구성과 상한의 변천
+  - [Gowers 균등 노름](gowers-norms.md): 평행체 꼭짓점에서의 곱을 평균한 노름, 길이 k 등차수열 개수를 제어하는 일반화 von Neumann 정리와 역정리, Gowers 의 Szemerédi 정리 상한
 - [그래폰](graphons.md): 조밀 그래프 열의 극한인 대칭 가측함수, cut 거리와 그래폰 공간의 콤팩트성
 - [Sidorenko 추측](sidorenko-conjecture.md): 이분그래프의 준동형 밀도를 무작위 그래프가 최소화한다는 추측, 나무와 짝수 사이클에서의 증명
   - [공통 그래프](common-graphs.md): 단색 사본의 밀도 합을 무작위 색칠이 최소화하는 그래프, Goodman 정리와 $K_4$ 의 반례

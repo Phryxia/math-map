@@ -109,7 +109,7 @@ $\mathbb F\_3^n$ 에서 $x+y+z=0$ 은 $x,y,z$ 가 등차수열을 이루는 것�
 
 # 활용
 
-- [Szemerédi 정리](szemeredi-theorem.md)의 Gowers 증명은 이 문서의 Fourier 이분법을 길이 $k$ 로 넓힌다. 길이 $4$ 이상에서는 Fourier 계수가 작아도 등차수열 개수가 무작위와 다를 수 있어 Gowers 균등 노름(Gowers uniformity norm)이 Fourier 계수의 자리에 들어간다.
+- [Szemerédi 정리](szemeredi-theorem.md)의 Gowers 증명은 이 문서의 Fourier 이분법을 길이 $k$ 로 넓힌다. 길이 $4$ 이상에서는 Fourier 계수가 작아도 등차수열 개수가 무작위와 다를 수 있어 [Gowers 균등 노름](gowers-norms.md)이 Fourier 계수의 자리에 들어간다.
 - [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md)의 삼각형 제거 보조정리는 이 정리의 다른 증명을 준다. 거꾸로 Behrend 구성은 간선마다 삼각형 하나에만 들어가는 그래프(Ruzsa–Szemerédi 그래프)를 만들어, 제거 보조정리의 상수가 $\varepsilon$ 의 다항식이 될 수 없음을 보인다.
 - 소수 안의 등차수열. B. Green 은 소수 집합의 밀도 양수 부분집합이 길이 $3$ 의 등차수열을 포함한다는 것을 이 문서의 밀도 증가 논법을 소수 위의 가중으로 옮겨 증명했다[^11].
 - [캡 집합](cap-sets.md)은 이 정리의 $\mathbb F\_3^n$ 판본이고, Meshulam 의 $C3^n/n$ 이 다항식 방법 이전의 가장 좋은 상한이었다.
@@ -136,5 +136,6 @@ $\mathbb F\_3^n$ 에서 $x+y+z=0$ 은 $x,y,z$ 가 등차수열을 이루는 것�
 ## 더 알아보기
 
 - [캡 집합](cap-sets.md)
+- [Gowers 균등 노름](gowers-norms.md)
 
 #combinatorics #number_theory #analysis

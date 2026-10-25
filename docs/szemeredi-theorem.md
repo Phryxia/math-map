@@ -34,7 +34,7 @@ $$
 
 - Szemerédi 의 조합적 증명. van der Waerden 정리와 [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md)의 원형을 써서 밀도가 늘어나는 부분 구조로 옮겨 간다[^1].
 - Furstenberg 의 에르고딕 증명. 측도 보존 변환 $T$ 와 측도가 양수인 집합 $E$ 에 대해 $\mu(E\cap T^{-n}E\cap\cdots\cap T^{-(k-1)n}E)\gt 0$ 인 $n\ge 1$ 이 존재한다는 다중 되돌이 정리(multiple recurrence theorem)로 바꾸어 증명한다[^3].
-- Gowers 의 해석적 증명. Roth 의 Fourier 해석을 Gowers 균등 노름(Gowers uniformity norm)으로 넓혀 처음으로 $r_k(N)$ 에 대한 정량적 상한을 얻었다[^4].
+- Gowers 의 해석적 증명. Roth 의 Fourier 해석을 [Gowers 균등 노름](gowers-norms.md)으로 넓혀 처음으로 $r_k(N)$ 에 대한 정량적 상한을 얻었다[^4].
 - 초그래프 제거 보조정리(hypergraph removal lemma)에 의한 증명. 삼각형 제거 보조정리로 Roth 정리를 증명하는 방법을 $k$ 균등 초그래프로 넓힌다[^5].
 
 ## 길이 3 의 상한과 하한
