@@ -34,7 +34,7 @@ Cut 이 먼저 둘 때 Short 가 이기는 것은, $u$ 와 $v$ 를 포함하는 
 
 ## 판정의 계산
 
-간선을 공유하지 않는 신장트리 두 개는 matroid 합(matroid union)의 증가 경로로 다항시간에 찾는다. 그래서 Shannon 전환 게임의 승패는 다항시간에 판정되고, 위의 응수가 그대로 Short 의 전략이다.
+간선을 공유하지 않는 신장트리 두 개는 [Matroid 합 정리](matroid-union.md)의 증가 경로로 다항시간에 찾는다. 그래서 Shannon 전환 게임의 승패는 다항시간에 판정되고, 위의 응수가 그대로 Short 의 전략이다.
 
 간선 대신 정점을 차지하고 지우는 판본은 PSPACE(polynomial space)-완전이다. S. Even 과 R. E. Tarjan 이 증명했다[^2]. [Hex 게임](hex-game.md)은 이 정점 판본의 특수한 경우다.
 
@@ -52,6 +52,7 @@ Cut 이 먼저 둘 때 Short 가 이기는 것은, $u$ 와 $v$ 를 포함하는 
 
 - [최소 신장트리](minimum-spanning-tree.md)
 - [전략 훔치기 논법](strategy-stealing.md)
+- [Matroid 합 정리](matroid-union.md)
 
 ## 더 알아보기
 
