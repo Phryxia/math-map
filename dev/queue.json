@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-25T05:06:06.619Z",
-  "nextSeq": 2471,
+  "savedAt": "2026-10-25T09:02:09.764Z",
+  "nextSeq": 2481,
   "items": [
     {
       "id": "9bab7237",
@@ -3476,12 +3476,84 @@
       "seq": 2469
     },
     {
-      "id": "95905465",
-      "title": "sprague-grundy-theorem 의 후속 간선",
+      "id": "ef10b46b",
+      "title": "combinatorial-nullstellensatz 의 후속 간선",
       "priority": 10,
-      "note": "#computation #combinatorics. sprague-grundy-theorem(부모 generalized-geography, 계산 개관 복잡도 갈래 교대 Turing 기계 아래 곁가지)은 리프다. 후보: 조합 게임 이론의 Conway 수와 편파 게임(surreal numbers 문서가 있는지 먼저 확인), 팔각 게임의 주기성(Guy–Smith), 오비 게임(misère Nim). 조합론 개관이 아니라 계산 개관에 두었다(첫 태그 computation).",
-      "createdAt": "2026-10-25T05:05:55.121Z",
-      "seq": 2470
+      "note": "#combinatorics. 부모 polynomial-rings, finite-fields. 조합론 개관 극단 조합론 갈래 끝. 리프다. 후보: Alon-Tarsi 정리와 목록 색칠수(활용 절이 진술만 한다), Erdos-Ginzburg-Ziv 정리의 일반 n 과 Davenport 상수, Dyson e-변환 쪽 Kneser 합집합 정리, 다항식 방법의 Kakeya 집합(Dvir). Cauchy-Davenport 와 Chevalley-Warning 은 이 문서의 절로 둔다.",
+      "createdAt": "2026-10-25T08:39:37.007Z",
+      "seq": 2471
+    },
+    {
+      "id": "06129152",
+      "title": "finite-field-kakeya-sets 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics. 부모 combinatorial-nullstellensatz. 조합론 개관 극단 조합론 갈래. 리프다. 후보: 중복도 방법(DKSS)과 다항식의 중복도, Guth-Katz 의 joints 문제와 다항식 분할, 실수 공간 Kakeya 추측과 Besicovitch 집합(hausdorff-dimension 아래). randomness-extractors 의 병합기 절이 생기면 본문 링크를 건다.",
+      "createdAt": "2026-10-25T08:42:09.401Z",
+      "seq": 2472
+    },
+    {
+      "id": "ae128f10",
+      "title": "misere-nim 과 sprague-grundy-theorem 의 후속 간선",
+      "priority": 10,
+      "note": "#computation #combinatorics. misere-nim(부모 sprague-grundy-theorem, 계산 개관 복잡도 갈래 교대 Turing 기계 아래 곁가지)은 리프다. 후보: Conway 의 종과 misère 몫(Plambeck)을 별도 문서로, 팔진 게임과 Kayles 의 Grundy 값 주기성(Guy-Smith), 편파 게임과 Conway 수(surreal numbers 문서 없음).",
+      "createdAt": "2026-10-25T08:44:29.805Z",
+      "seq": 2473
+    },
+    {
+      "id": "6b56dd5d",
+      "title": "surreal-numbers 의 후속 간선",
+      "priority": 10,
+      "note": "#set_theory #algebra #combinatorics. 부모 ordinals, 기초론 개관 집합론의 공리계 갈래 서수 아래 곁가지. 리프다. 후보: 편파 게임과 조합 게임 이론(Conway 의 게임 합, 온도 이론), 부호 전개(Gonshor), 초현실수 위의 해석(지수함수 exp 와 omega 거듭제곱의 Conway 정규형), Hahn 급수체. misere-nim 과 sprague-grundy-theorem 의 본문에서 편파 게임을 언급하면 링크한다.",
+      "createdAt": "2026-10-25T08:46:56.514Z",
+      "seq": 2474
+    },
+    {
+      "id": "120cdfd7",
+      "title": "list-coloring 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory. 부모 graph-coloring, combinatorial-nullstellensatz. 그래프 개관 색칠과 매칭 갈래 그래프 색칠 아래 곁가지. 리프다. 후보: 간선 목록 색칠 추측(list coloring conjecture)과 Kahn 의 점근 결과, 안정 결혼 문제(Gale-Shapley) 문서(matchings 에 절이 있는지 먼저 확인), 퇴화도와 선택수, 평면 그래프의 4 선택 불가능 예(Voigt).",
+      "createdAt": "2026-10-25T08:49:05.513Z",
+      "seq": 2475
+    },
+    {
+      "id": "4cd8cb07",
+      "title": "stable-matching 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #algorithms. 부모 matchings, 그래프 개관 색칠과 매칭 갈래 매칭 아래 곁가지. 리프다. 후보: 병원-수련의 문제와 시골 병원 정리(rural hospitals theorem), 안정 매칭 다면체(Vande Vate, Rothblum), 룸메이트 문제의 Irving 알고리즘, 분배 격자와 Birkhoff 표현 정리(order-theory 쪽 문서가 있는지 확인).",
+      "createdAt": "2026-10-25T08:51:22.527Z",
+      "seq": 2476
+    },
+    {
+      "id": "3b4d673e",
+      "title": "moser-tardos-algorithm 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #algorithms. 부모 probabilistic-method, 조합론 개관 확률적 방법 갈래 곁가지. 리프다. 후보: 엔트로피 압축을 별도 문서로(비반복 색칠, Thue 수열), 국소 보조정리의 Shearer 경계, 결정적 판본(Chandrasekaran-Goyal-Haeupler). probabilistic-method 의 Lovász local lemma 절 끝에 이 문서로 가는 본문 링크를 걸지 판단.",
+      "createdAt": "2026-10-25T08:53:59.303Z",
+      "seq": 2477
+    },
+    {
+      "id": "393bcc12",
+      "title": "van-der-waerden-theorem 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #number_theory. 부모 ramsey-theory, 조합론 개관 극단 조합론 갈래 Ramsey 이론 아래 곁가지. 리프다. 후보: Szemeredi 정리(문서 없음, 이 문서 성질 절에 진술만), Hales-Jewett 정리(문서 없음), Furstenberg 다중 되돌이 정리(ergodic-theorem 아래), Green-Tao 정리, 큐 04dad73d 의 길이 3 Roth 정리. 영구식 문서의 van der Waerden 부등식은 다른 개념이다.",
+      "createdAt": "2026-10-25T08:56:48.842Z",
+      "seq": 2478
+    },
+    {
+      "id": "39f9e86a",
+      "title": "hales-jewett-theorem 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics. 부모 van-der-waerden-theorem, 조합론 개관 극단 조합론 갈래 van der Waerden 정리 아래 곁가지. 리프다. 후보: 밀도 Hales-Jewett 정리와 Polymath 증명, Graham-Rothschild 정리(부분공간 Ramsey), 위치 게임(positional games)과 Erdos-Selfridge 판정, Gallai 정리를 별도 문서로 둘지.",
+      "createdAt": "2026-10-25T08:58:53.241Z",
+      "seq": 2479
+    },
+    {
+      "id": "0204f95f",
+      "title": "szemeredi-theorem 의 후속 간선",
+      "priority": 10,
+      "note": "#combinatorics #number_theory. 부모 van-der-waerden-theorem, szemeredi-regularity-lemma. 조합론 개관 극단 조합론 갈래 정규성 보조정리 아래 곁가지. 리프다. 후보: Furstenberg 다중 되돌이 정리(ergodic-theorem 아래), Gowers 균등 노름, Green-Tao 정리, 초그래프 제거 보조정리, Behrend 구성, 큐 04dad73d 의 길이 3 Roth 정리(roth-theorem 은 Diophantine 근사의 동명이의어이므로 미링크 보고는 오탐).",
+      "createdAt": "2026-10-25T09:01:16.316Z",
+      "seq": 2480
     },
     {
       "id": "dfb3e493",
