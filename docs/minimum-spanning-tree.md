@@ -89,5 +89,6 @@ Kruskal 은 간선 정렬이 $O(|E|\log|E|)$ 이고 나머지 서로소 집합 �
 
 - [유향 신장트리](arborescences.md)
 - [Shannon 전환 게임](shannon-switching-game.md)
+- [Steiner 나무 문제](steiner-tree-problem.md)
 
 #graph_theory #algorithms

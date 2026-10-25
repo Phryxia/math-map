@@ -85,10 +85,16 @@ $$
 
 ## 더 알아보기
 
+### 설계 기법과 하한
+
 - [LP 반올림](lp-rounding.md)
 - [PCP 정리](pcp-theorem.md)
+
+### 대표 문제
+
+- [집합 덮개 문제](set-cover.md)
 - [배낭 문제](knapsack-problem.md)
 - [외판원 문제](traveling-salesman-problem.md)
-- [집합 덮개 문제](set-cover.md)
+- [Steiner 나무 문제](steiner-tree-problem.md)
 
 #complexity #algorithms
