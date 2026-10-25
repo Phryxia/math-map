@@ -46,7 +46,7 @@ $$
 
 ## Bogolyubov 보조정리
 
-정리(Bogolyubov 보조정리, Bogolyubov's lemma). $A\subseteq\mathbb Z/N$ 이 $\lvert A\rvert=\alpha N$ 이면 $2A-2A$ 는 다음 Bohr 집합(Bohr set)을 포함한다.
+정리(Bogolyubov 보조정리, Bogolyubov's lemma). $A\subseteq\mathbb Z/N$ 이 $\lvert A\rvert=\alpha N$ 이면 $2A-2A$ 는 다음 [Bohr 집합](bohr-sets.md)을 포함한다.
 
 $$
 B(R,1/4)=\lbrace x\in\mathbb Z/N : \lVert rx/N\rVert\le 1/4\quad(r\in R)\rbrace,\qquad\lvert R\rvert\le\alpha^{-2}

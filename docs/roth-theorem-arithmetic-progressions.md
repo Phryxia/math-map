@@ -105,7 +105,7 @@ $\mathbb F\_3^n$ 에서 $x+y+z=0$ 은 $x,y,z$ 가 등차수열을 이루는 것�
 | 2020 | $N/(\log N)^{1+c}$ | Bloom, Sisask[^8] |
 | 2023 | $N\exp\big(-c(\log N)^{1/12}\big)$ | Kelley, Meka[^9] |
 
-상수 $C$ 는 생략했다. Kelley–Meka 상한은 Behrend 하한과 같은 $N\exp(-c(\log N)^{\beta})$ 꼴이고, Bloom 과 Sisask 가 지수 $\beta$ 를 $1/9$ 로 올렸다[^10]. Bourgain 부터의 개선은 등차수열 대신 Bohr 집합(Bohr set) 위에서 밀도를 올린다.
+상수 $C$ 는 생략했다. Kelley–Meka 상한은 Behrend 하한과 같은 $N\exp(-c(\log N)^{\beta})$ 꼴이고, Bloom 과 Sisask 가 지수 $\beta$ 를 $1/9$ 로 올렸다[^10]. Bourgain 부터의 개선은 등차수열 대신 [Bohr 집합](bohr-sets.md) 위에서 밀도를 올린다.
 
 # 활용
 
@@ -138,5 +138,6 @@ $\mathbb F\_3^n$ 에서 $x+y+z=0$ 은 $x,y,z$ 가 등차수열을 이루는 것�
 - [캡 집합](cap-sets.md)
 - [Gowers 균등 노름](gowers-norms.md)
 - [Ruzsa–Szemerédi 문제](ruzsa-szemeredi-problem.md)
+- [Bohr 집합](bohr-sets.md)
 
 #combinatorics #number_theory #analysis
