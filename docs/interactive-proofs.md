@@ -90,5 +90,6 @@ $$
 - [영지식 증명](zero-knowledge-proofs.md)
 - [Goldwasser–Kalai–Rothblum 프로토콜](gkr-protocol.md)
 - [MIP = NEXP 정리](mip-nexp.md)
+- [대수화](algebrization.md)
 
 #complexity #computation #algorithms
