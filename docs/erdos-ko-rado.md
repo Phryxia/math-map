@@ -83,5 +83,6 @@ $$
 ## 더 알아보기
 
 - [Kneser 그래프](kneser-graphs.md)
+- [Frankl–Wilson 정리](frankl-wilson-theorem.md)
 
 #combinatorics #graph_theory #order_theory
