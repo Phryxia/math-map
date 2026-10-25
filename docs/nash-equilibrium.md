@@ -114,5 +114,6 @@ $\varepsilon$ 오차를 허용한 근사 균형도 상수 $\varepsilon$ 에서 P
 
 - [상관균형](correlated-equilibrium.md)
 - [가격 무정부](price-of-anarchy.md)
+- [Yao 최소최대 원리](yao-minimax-principle.md)
 
 #optimization #probability #complexity
