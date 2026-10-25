@@ -46,7 +46,7 @@ $$
 
 ## Hales–Jewett 정리
 
-**Hales–Jewett 정리(Hales–Jewett theorem)** 는 $n$ 이 충분히 크면 $\lbrace 1,\dots,k\rbrace^n$ 의 모든 $r$ 색칠에 단색인 조합적 직선이 있다는 정리다[^7]. 조합적 직선은 몇몇 좌표가 같은 변수 $x$ 이고 나머지 좌표가 고정된 단어에 $x=1,\dots,k$ 를 넣은 $k$ 개의 점이다. 단어 $(a_1,\dots,a_n)$ 을 정수 $a_1+\cdots+a_n$ 으로 보내면 조합적 직선이 길이 $k$ 인 등차수열로 가므로 van der Waerden 정리가 나온다.
+[Hales–Jewett 정리](hales-jewett-theorem.md)는 $n$ 이 충분히 크면 $\lbrace 1,\dots,k\rbrace^n$ 의 모든 $r$ 색칠에 단색인 조합적 직선이 있다는 정리다[^7]. 조합적 직선은 몇몇 좌표가 같은 변수 $x$ 이고 나머지 좌표가 고정된 단어에 $x=1,\dots,k$ 를 넣은 $k$ 개의 점이다. 단어 $(a_1,\dots,a_n)$ 을 정수 $a_1+\cdots+a_n$ 으로 보내면 조합적 직선이 길이 $k$ 인 등차수열로 가므로 van der Waerden 정리가 나온다.
 
 # 활용
 
@@ -71,6 +71,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Hales–Jewett 정리](hales-jewett-theorem.md)
 
 #combinatorics #number_theory

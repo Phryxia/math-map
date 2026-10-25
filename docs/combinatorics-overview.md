@@ -78,8 +78,9 @@ graph TD
 먼저 읽을 갈래: 매칭과 매트로이드. 시작 문서: [Ramsey 이론](ramsey-theory.md).
 
 - [Ramsey 이론](ramsey-theory.md): 충분히 큰 구조를 색칠하면 단색 부분구조가 강제된다
-  - [van der Waerden 정리](van-der-waerden-theorem.md): 정수를 유한 색으로 칠하면 임의 길이의 단색 등차수열이 생긴다는 정리, 블록 무늬로 하는 길이 3 의 증명과 Gowers 상한, Szemerédi 정리와 Hales–Jewett 정리
   - [Hindman 정리](hindman-theorem.md): 유한합이 단색인 무한집합의 존재, 멱등 초필터로 넘는 증명
+- [van der Waerden 정리](van-der-waerden-theorem.md): 정수를 유한 색으로 칠하면 임의 길이의 단색 등차수열이 생긴다는 정리, 블록 무늬로 하는 길이 3 의 증명과 Gowers 상한, Szemerédi 정리와 Hales–Jewett 정리
+  - [Hales–Jewett 정리](hales-jewett-theorem.md): 단어의 자리만으로 정의한 조합적 직선이 충분히 큰 차원의 모든 유한 색칠에서 단색으로 나온다는 정리, van der Waerden 정리와 Gallai 정리를 따름정리로 주고 밀도판은 Furstenberg–Katznelson
 - [Turán 정리](turan-theorem.md): $K_{r+1}$ 을 포함하지 않는 그래프의 최대 간선 수와 그 값을 주는 Turán 그래프
 - [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md): 조각 쌍마다 간선 밀도가 고른 분할의 존재, 삼각형 제거 보조정리와 길이 3 등차수열의 Roth 정리
   - [Erdős–Stone 정리](erdos-stone-theorem.md): 금지 부분그래프의 극단 간선 수가 그 그래프의 채색수로 정해진다
