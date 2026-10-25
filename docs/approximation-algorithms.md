@@ -97,5 +97,6 @@ $$
 - [배낭 문제](knapsack-problem.md)
 - [외판원 문제](traveling-salesman-problem.md)
 - [Steiner 나무 문제](steiner-tree-problem.md)
+- [k-중심 문제](k-center.md)
 
 #complexity #algorithms

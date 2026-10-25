@@ -115,6 +115,7 @@ graph TD
 - [근사 알고리즘](approximation-algorithms.md): 최적해 대신 보장된 비율의 해
   - [외판원 문제](traveling-salesman-problem.md): 최소 가중치 Hamilton 순환, 일반 판본의 근사 불가능성과 Held–Karp 점화식, 최소 신장트리의 2-근사와 Christofides 의 3/2-근사
   - [정점 덮개 문제](vertex-cover.md): 모든 간선의 끝점을 담는 최소 정점 집합, 이분 그래프의 König 정리, 극대 매칭의 2-근사와 Nemhauser–Trotter 반정수성, 근사 하한과 매개변수 알고리즘
+  - [k-중심 문제](k-center.md): 가장 먼 점까지의 거리를 최소화하는 중심 선택, 가장 먼 점 선택의 2-근사와 지배 집합으로 얻는 2−ε 하한
 - [집합 덮개 문제](set-cover.md): 남은 원소를 가장 많이 덮는 탐욕 선택의 조화수 근사비, 선형 완화의 로그 간극, (1−ε)ln n 근사 하한
 - [LP 반올림](lp-rounding.md): LP(linear programming) 완화로 정수 제약을 푼 뒤 정수해로 반올림하는 근사 설계
 - [원시-쌍대 방법](primal-dual-method.md): 쌍대 가능해를 키워 빠듯해진 변수만 고르는 근사 설계, 완화된 상보 여유와 빈도 근사, Steiner 숲의 동시 증가와 역삭제
