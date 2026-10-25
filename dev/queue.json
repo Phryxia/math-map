@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-25T09:02:09.764Z",
-  "nextSeq": 2481,
+  "savedAt": "2026-10-25T12:59:54.625Z",
+  "nextSeq": 2484,
   "items": [
     {
       "id": "9bab7237",
@@ -684,14 +684,6 @@
       "seq": 1751
     },
     {
-      "id": "e5a7706c",
-      "title": "Roth 정리를 별도 문서로 분리하지 않은 판정",
-      "priority": 20,
-      "note": "35차 판정. 큐 항목 87a658aa 가 Roth 정리 문서를 요청하는데, 같은 회차에 쓴 szemeredi-regularity-lemma 의 '## Roth 정리' 절이 진술과 삼각형 제거 보조정리를 쓰는 증명 전체를 담았다. 별도 문서로 쓰려면 Fourier 해석 증명(Bohr 집합, 밀도 증가 논법)과 Bloom-Sisask 의 상한이 내용이 되어야 하고 그것이 분리의 조건이다. 그 내용을 쓸 준비가 될 때까지 87a658aa 는 남겨 두고, 지금 중복으로 제거하지는 않았다",
-      "createdAt": "2026-10-06T00:52:57.290Z",
-      "seq": 1753
-    },
-    {
       "id": "b5cdc152",
       "title": "Wasserstein 거리를 별도 문서로 분리하지 않은 판정",
       "priority": 20,
@@ -1330,14 +1322,6 @@
       "note": "34차 회차(2026-10-05)에 philosophy_of_math 4개, foundations 4개(개관 포함), data_structures 2개를 모두 끝냈다. 32차 메모가 가리킨 묶음을 한 회차에 닫았다. 커밋 여섯이다. f2ac68dd(철학 4개), c6d011d4(higher-inductive-types homotopy-type-theory), e23f000f(structural-set-theory), efff1f73(union-find), 274881e1(foundations-overview), aa3cd780(link-cut-trees). 10개 문서 1105줄에서 고친 곳은 70 여 줄이다.\n\n고친 유형별 집계. 등위로 이어 붙인 문장 25곳, 피동 12곳, 문서 자신이나 앞 문장을 가리키는 메타 서술 7곳('마지막 두 줄은', '반대 방향의 관찰도 있다', '증명은 두 부분으로 나뉜다', '핵심 아이디어는 두 단계다', '아래 그림에서 왼쪽이', '세 입장은 같은 실천을 다르게 해석한다', '~기 때문이다'), 금지 표현 6곳('라는 사실' 2, '여기서 나온다', '즉', '갈림길', '바닥난다'), 평가와 범위 과장 6곳('대가가 컸다', '기술적 유산은 크다', '제2정리는 더 직접적이다', '결정적 차이다', '모든 조건 분기를 설명한다', '대부분 가속할 수 있다'), 번역체 헤딩 2곳('## 형식주의 자체에 대한 반론', '## 등식 증명의 유일성과의 충돌'), 영문 용어 4곳(metamathematics, nominalism, inverse Ackermann, amortized), 각주가 마침표 뒤에 붙은 것 3곳, 각주 없는 열린 문제 언급 2곳, 되풀이 마무리 문단 3곳이다.\n\n따로 적을 둘. (1) mathematical-structuralism 의 직관 절은 야구팀 유격수 비유가 두 문단의 골자였다. 4절은 직관 절에서 비유를 한 문장으로만 허용하므로, 자연수 자리를 먼저 쓰고 비유를 한 문장으로 줄였다. 비유가 문단 구조를 잡고 있는 문서는 문장만 고쳐서는 규칙을 맞출 수 없고 문단 순서를 바꿔야 한다. (2) union-find:89 의 정렬 비용이 $O(m log m)$ 으로 적혀 있었다. 수식 안의 log 가 명령이 아니어서 MathJax 가 변수 셋의 곱으로 기울여 그린다. 검사 여섯이 이것을 잡지 못한다. 수식 안 글자 연산자를 훑는 grep(\\$[^$]*[^a-zA-Z\\\\](log|sin|cos|tan|exp|max|min|lim|det|dim|ker)[^a-zA-Z])이 다음 회차의 전수 검사 후보다. dev/ 를 고치지 않으므로(0절) 스크래치패드에서 돌린다.\n\n다음 분야. 32차까지 닫은 것과 이 회차의 셋을 빼고, node dev/graph.mjs tags 로 주 분야별 문서 수를 세어 많은 쪽부터 고른다. 한 회차에 1000줄 남짓이 적정 분량이다. 이 회차는 1105줄 10개 문서에 40분 타이머를 거의 다 썼다.\n\n통독 절차. (1) 대상 문서를 주 분야 태그(태그 줄 첫 태그)로 뽑는다. (2) 구조 검사(문장형 헤딩, 비유, 열린 문제 절, 금지 매크로, 구형 '## 정의' 구조, 코드블록 언어)를 묶음 전체에 한 번 돌린다. (3) 번역체와 금지 표현 grep 을 돌려 후보를 모은다. '~에 대한' 은 철학 문서에서 대부분 정상 한국어이므로 헤딩에 있는 것만 고친다. (4) 긴 줄 훑기로 읽을 순서를 정한다. (5) 문서를 cat -n 으로 통독하며 판정한다. sed -n 으로 읽으면 줄 번호를 잃어 교체가 밀린다(큐의 줄 번호 사고 메모). (6) 교체 후 헤딩 줄 번호가 원본과 같은지 보고, 수식 검수 여섯과 키릴 검사, 두문자어 첫 등장, 같은 금지 표현 grep 을 다시 돌린다.",
       "createdAt": "2026-10-05T21:06:02.551Z",
       "seq": 1742
-    },
-    {
-      "id": "04dad73d",
-      "title": "길이 3 등차수열의 Roth 정리 문서",
-      "priority": 12,
-      "note": "#combinatorics #number_theory. 저장소의 roth-theorem 은 Diophantine 근사의 Roth 정리다. 등차수열의 Roth 정리(밀도 양수인 정수 집합은 길이 3 등차수열을 포함한다, Fourier 밀도 증가 논법, Behrend 구성, Kelley–Meka 상한)는 szemeredi-regularity-lemma 의 '## Roth 정리' 절에만 있다. id 후보 roth-theorem-arithmetic-progressions, 부모 후보 szemeredi-regularity-lemma 와 fourier-series 쪽. 2026-10-25 에 두 문서의 잘못된 링크를 풀었다. 9절 미링크 검사가 szemeredi-regularity-lemma 의 'Roth 정리' 를 roth-theorem 미링크로 보고하는 것은 동명이의 오탐이다.",
-      "createdAt": "2026-10-25T04:54:08.631Z",
-      "seq": 2465
     },
     {
       "id": "c36c5e73",
