@@ -2,13 +2,17 @@
 
 # 개요
 
-**Littlewood–Richardson 규칙(Littlewood–Richardson rule)** 은 두 [Schur 다항식](schur-polynomials.md)의 곱을 Schur 다항식으로 전개한 계수를 조건을 만족하는 반표준 Young 표의 개수로 세는 규칙이다. Schur 다항식에서 곱의 전개 계수
+**Littlewood–Richardson 규칙(Littlewood–Richardson rule)** 은 두 [Schur 다항식](schur-polynomials.md)의 곱을 Schur 다항식들의 합으로 풀 때 각 항의 계수를 칸 채우기의 개수로 세는 규칙이다. 칸이 $2,1$ 개인 두 줄짜리 Young 도형의 $s_{(2,1)}$ 에 칸 하나의 $s_{(1)}$ 을 곱하면, 도형에 칸 하나를 붙이는 세 방법에 따라 $s_{(2,1)}s_{(1)}=s_{(3,1)}+s_{(2,2)}+s_{(2,1,1)}$ 이다. 붙이는 도형이 칸 여러 개이면 같은 결과 도형이 여러 번 나올 수 있어, 몇 번 나오는지가 문제다. 규칙은 붙인 칸에 수를 채우는 방법 가운데 정해진 순서 조건을 만족하는 것만 세어 그 횟수를 준다.
+
+# 직관
+
+Schur 다항식에서 곱의 전개 계수
 
 $$
 s_\lambda s_\mu=\sum_\nu c^\nu_{\lambda\mu}\thinspace s_\nu
 $$
 
-가 격자 낱말을 세는 규칙으로 주어진다. 이것이 **Littlewood–Richardson 규칙(Littlewood–Richardson rule)** 이다. 규칙은 계수의 값을 주지만 구조는 드러내지 않는다. 대칭성이 그런 예다. 표현론에서 $V_\lambda\otimes V_\mu\cong V_\mu\otimes V_\lambda$ 이므로
+가 반표준 Young 표의 격자 낱말을 세는 규칙으로 주어진다. 이것이 Littlewood–Richardson 규칙이다. 규칙은 계수의 값을 주지만 구조는 드러내지 않는다. 대칭성이 그런 예다. 표현론에서 $V_\lambda\otimes V_\mu\cong V_\mu\otimes V_\lambda$ 이므로
 
 $$
 c^\nu_{\lambda\mu}=c^\nu_{\mu\lambda}
@@ -21,8 +25,6 @@ Knutson 과 Tao 는 계수를 볼록 다면체의 정수점 개수로 다시 쓰
 > **포화 정리(saturation theorem).** $c^{N\nu}\_{N\lambda,N\mu}\ne0$ 인 $N\ge1$ 이 있으면 $c^\nu_{\lambda\mu}\ne0$ 이다.
 
 이 한 줄이 Horn 추측을 해결한다. 두 에르미트 행렬의 합의 고윳값이 어떤 값을 가질 수 있는가라는 선형대수 문제가, LR(Littlewood–Richardson) 수가 $0$ 이 아닌 조건과 정확히 같은 것이었기 때문이다.
-
-# 직관
 
 한 변에 격자점이 $n+1$ 개 놓인 삼각형의 꼭짓점마다 정수를 놓는다. 작은 삼각형 둘을 붙인 모든 마름모에서 짧은 대각선 양 끝의 합이 긴 대각선 양 끝의 합보다 크거나 같게 한다.
 
