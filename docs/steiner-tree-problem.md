@@ -36,7 +36,7 @@ Dreyfus 와 Wagner 의 [동적 계획법](dynamic-programming.md)은 단말의 �
 
 ## Euclid 판본
 
-Steiner 점에서는 세 선분이 120° 로 만난다. 세 점 문제의 Steiner 점은 세 각이 모두 120° 보다 작을 때 Fermat 점이고, 한 각이 120° 이상이면 그 꼭짓점이 답이다. 단말이 $k$ 개이면 Steiner 점은 $k-2$ 개 이하다. 이 판본은 NP-난해이고(Garey–Graham–Johnson)[^4], S. Arora 는 임의의 $\varepsilon\gt 0$ 에 대해 $1+\varepsilon$ 근사를 다항시간에 주는 방법을 만들었다[^5].
+Steiner 점에서는 세 선분이 120° 로 만난다. 세 점 문제의 Steiner 점은 세 각이 모두 120° 보다 작을 때 [Fermat 점](geometric-median.md)이고, 한 각이 120° 이상이면 그 꼭짓점이 답이다. 단말이 $k$ 개이면 Steiner 점은 $k-2$ 개 이하다. 이 판본은 NP-난해이고(Garey–Graham–Johnson)[^4], S. Arora 는 임의의 $\varepsilon\gt 0$ 에 대해 $1+\varepsilon$ 근사를 다항시간에 주는 방법을 만들었다[^5].
 
 # 활용
 
@@ -59,6 +59,6 @@ Steiner 점에서는 세 선분이 120° 로 만난다. 세 점 문제의 Steine
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Steiner 비](steiner-ratio.md)
 
 #graph_theory #algorithms #complexity #optimization
