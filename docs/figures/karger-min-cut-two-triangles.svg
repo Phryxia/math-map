@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 180" width="480" height="180">
+  <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333333"/></marker></defs>
+  <rect x="0" y="0" width="480" height="180" fill="#ffffff"/>
+  <line x1="40" y1="40" x2="40" y2="140" stroke="#333333" stroke-width="2"/>
+  <line x1="40" y1="140" x2="110" y2="90" stroke="#333333" stroke-width="2"/>
+  <line x1="110" y1="90" x2="40" y2="40" stroke="#333333" stroke-width="2"/>
+  <line x1="190" y1="90" x2="260" y2="40" stroke="#333333" stroke-width="2"/>
+  <line x1="260" y1="40" x2="260" y2="140" stroke="#333333" stroke-width="2"/>
+  <line x1="260" y1="140" x2="190" y2="90" stroke="#333333" stroke-width="2"/>
+  <line x1="110" y1="90" x2="190" y2="90" stroke="#d62728" stroke-width="4"/>
+  <circle cx="40" cy="40" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="40" cy="140" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="110" cy="90" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="190" cy="90" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="260" cy="40" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="260" cy="140" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <line x1="295" y1="90" x2="335" y2="90" stroke="#333333" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="370" y1="90" x2="450" y2="90" stroke="#d62728" stroke-width="4"/>
+  <circle cx="370" cy="90" r="20" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="450" cy="90" r="20" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+</svg>
