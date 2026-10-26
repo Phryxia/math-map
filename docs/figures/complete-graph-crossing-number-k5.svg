@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 230" width="400" height="230">
+  <rect x="0" y="0" width="400" height="230" fill="#ffffff"/>
+  <line x1="80" y1="170" x2="240" y2="170" stroke="#333333" stroke-width="2"/>
+  <line x1="240" y1="170" x2="160" y2="40" stroke="#333333" stroke-width="2"/>
+  <line x1="160" y1="40" x2="80" y2="170" stroke="#333333" stroke-width="2"/>
+  <line x1="160" y1="125" x2="80" y2="170" stroke="#333333" stroke-width="2"/>
+  <line x1="160" y1="125" x2="240" y2="170" stroke="#333333" stroke-width="2"/>
+  <line x1="160" y1="125" x2="160" y2="40" stroke="#333333" stroke-width="2"/>
+  <line x1="330" y1="95" x2="240" y2="170" stroke="#333333" stroke-width="2"/>
+  <line x1="330" y1="95" x2="160" y2="40" stroke="#333333" stroke-width="2"/>
+  <line x1="330" y1="95" x2="160" y2="125" stroke="#333333" stroke-width="2"/>
+  <path d="M330,95 Q330,250 80,170" fill="none" stroke="#333333" stroke-width="2"/>
+  <circle cx="207.2" cy="116.7" r="6" fill="#d93f0b" stroke="none"/>
+  <circle cx="80" cy="170" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="80" y="170" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">a</text>
+  <circle cx="240" cy="170" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="240" y="170" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">b</text>
+  <circle cx="160" cy="40" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="160" y="40" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">c</text>
+  <circle cx="160" cy="125" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="160" y="125" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">d</text>
+  <circle cx="330" cy="95" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="330" y="95" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">e</text>
+</svg>
