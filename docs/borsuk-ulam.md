@@ -2,7 +2,7 @@
 
 # 개요
 
-**Borsuk–Ulam 정리(Borsuk–Ulam theorem)** 는 구면 $S^n$ 에서 $\mathbb R^n$ 으로 가는 연속사상이 대척점 쌍에서 같은 값을 갖는다는 정리다. 정의역의 차원이 공역보다 하나 크다는 것만으로 결론이 나온다. 증명은 그런 쌍이 없다고 가정해 $S^n$ 에서 $S^{n-1}$ 로 가는 대척점 보존 사상을 만들고, 그런 사상이 없음을 [실사영공간](real-projective-space.md)의 $\mathbb Z/2$ 계수 [코호몰로지](cohomology.md)로 보이는 것이다.
+**Borsuk–Ulam 정리(Borsuk–Ulam theorem)** 는 구면 $S^n$ 에서 $\mathbb R^n$ 으로 가는 연속사상이 어떤 대척점 쌍에서 같은 값을 갖는다는 정리다. 지구 표면의 기온과 기압이 연속적으로 변할 때, 지구 정반대편의 두 지점 가운데 기온도 기압도 같은 쌍이 있는지 묻는 문제가 $n=2$ 인 경우다. 이 정리는 그런 쌍이 없다고 가정해 대척점을 대척점으로 보내는 사상을 만들고 그런 사상이 존재할 수 없음을 보여, 대척점 쌍의 존재를 증명한다.
 
 # 직관
 
@@ -42,9 +42,9 @@ $$
 
 > **정리.** $n\ge 1$ 에서 홀사상 $h\colon S^n\to S^{n-1}$ 은 없다.
 
-증명의 요지. $h$ 가 대척사상과 교환하므로 두 몫을 지나 실사영공간 사이의 연속사상 $\bar h\colon\mathbb{RP}^n\to\mathbb{RP}^{n-1}$ 을 유도한다. $S^n\to\mathbb{RP}^n$ 과 $S^{n-1}\to\mathbb{RP}^{n-1}$ 은 이중 [덮개공간](covering-spaces.md)이고 $h$ 가 그 둘을 잇는다. 이중 덮개를 분류하는 원소가 $H^1(\cdot;\mathbb Z/2)$ 에 있으므로 $\bar h^\ast$ 는 $H^1(\mathbb{RP}^{n-1};\mathbb Z/2)$ 의 생성원 $w$ 를 $H^1(\mathbb{RP}^n;\mathbb Z/2)$ 의 생성원 $w'$ 로 보낸다.
+증명의 요지. $h$ 가 대척사상과 교환하므로 두 몫을 지나 [실사영공간](real-projective-space.md) 사이의 연속사상 $\bar h\colon\mathbb{RP}^n\to\mathbb{RP}^{n-1}$ 을 유도한다. $S^n\to\mathbb{RP}^n$ 과 $S^{n-1}\to\mathbb{RP}^{n-1}$ 은 이중 [덮개공간](covering-spaces.md)이고 $h$ 가 그 둘을 잇는다. 이중 덮개를 분류하는 원소가 $H^1(\cdot;\mathbb Z/2)$ 에 있으므로 $\bar h^\ast$ 는 $H^1(\mathbb{RP}^{n-1};\mathbb Z/2)$ 의 생성원 $w$ 를 $H^1(\mathbb{RP}^n;\mathbb Z/2)$ 의 생성원 $w'$ 로 보낸다.
 
-$\mathbb Z/2$ 계수 코호몰로지환은
+$\mathbb Z/2$ 계수 [코호몰로지](cohomology.md)환은
 
 $$
 H^\ast(\mathbb{RP}^m;\mathbb Z/2)\cong(\mathbb Z/2)\lbrack t\rbrack/(t^{m+1}),\qquad \deg t=1
