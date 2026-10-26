@@ -2,15 +2,17 @@
 
 # 개요
 
-**Witten 점근 추측(Witten's asymptotic expansion conjecture)** 은 [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md) $\tau_k(M)$ 이 $k\to\infty$ 에서 평탄 $\mathrm{SU}(2)$ 접속마다 붙는 항들의 합으로 전개된다는 추측이다. Reshetikhin–Turaev 불변량 $\tau_k(M)$ 의 정의는 대수적이다. [모듈러 텐서범주](modular-tensor-categories.md)의 $S$ 행렬과 비틀림을 수술 링크 위에서 유한합으로 묶으면 수 하나가 나오지만, 그 수가 $M$ 의 어떤 기하를 담는지는 정의에 나타나지 않는다.
+**Witten 점근 추측(Witten's asymptotic expansion conjecture)** 은 3 차원 다양체의 [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)이 매개변수 $k$ 를 키울 때 어떤 꼴로 변하는지를 정한 추측이다. Witten 의 규격화에서 구면 $S^3$ 의 불변량은 $\sqrt{2/(k+2)}\thinspace\sin\big(\pi/(k+2)\big)$ 이고, $k$ 가 크면 $\sqrt2\thinspace\pi\thinspace(k+2)^{-3/2}$ 에 가깝다. 지수 $-3/2$ 와 계수 $\sqrt2\thinspace\pi$ 가 구면의 무엇에서 오는지는 불변량을 정의하는 유한합에 나타나지 않는다. Witten 은 $k\to\infty$ 에서 불변량이 다양체 위의 평탄 $\mathrm{SU}(2)$ 접속마다 하나씩 붙는 항들의 합이 되고, 각 항의 진동과 크기가 그 접속의 Chern–Simons 작용값과 Reidemeister 비틀림으로 정해진다고 추측했다.
+
+# 직관
+
+Reshetikhin–Turaev 불변량 $\tau_k(M)$ 의 정의는 대수적이다. [모듈러 텐서범주](modular-tensor-categories.md)의 $S$ 행렬과 비틀림을 수술 링크 위에서 유한합으로 묶으면 수 하나가 나오지만, 그 수가 $M$ 의 어떤 기하를 담는지는 정의에 나타나지 않는다.
 
 Witten 의 답은 $k\to\infty$ 에 있다. 그 극한에서 $\tau_k(M)$ 은 $M$ 위의 평탄 $\mathrm{SU}(2)$ 접속마다 붙는 항들의 합으로 분해되고, 각 항의 위상은 그 접속의 Chern–Simons 작용값, 진폭은 Reidemeister 비틀림이다.
 
-증명 대상은 RT(Reshetikhin–Turaev) 불변량이고, 답을 적는 언어는 [Chern–Simons 이론](chern-simons.md)의 평탄 접속과 작용값이며, 답의 모양을 예언하는 어림은 [정상위상법](stationary-phase.md)이다.
+증명 대상은 RT(Reshetikhin–Turaev) 불변량이고, 답을 적는 데 쓰는 것은 [Chern–Simons 이론](chern-simons.md)의 평탄 접속과 작용값이며, 답의 모양을 예언하는 어림은 [정상위상법](stationary-phase.md)이다.
 
 증명이 되는 경우에 실제로 쓰이는 도구는 [이차 Gauss 합](gauss-sums.md)의 상호법칙이다. 상호법칙은 $O(k)$ 개 항의 합을 $O(p)$ 개 항의 합으로 바꾸며, 왼쪽은 정의이고 오른쪽은 평탄 접속들이다. 렌즈 공간에서 점근 추측이 참인 근거가 [이차 상호법칙](quadratic-reciprocity.md) 배후의 항등식이다.
-
-# 직관
 
 Witten 의 출발점은 형식적 경로적분 $Z_k(M)=\int\mathcal DA\thickspace e^{2\pi ik\thinspace\mathrm{CS}(A)}$ 이다. [측도](measure.md)가 정의되지 않아 증명의 재료는 아니지만 큰 $k$ 에서의 형태를 지정한다. 진동적분의 큰 $k$ 거동은 위상의 임계점이 지배하고, Chern–Simons 범함수의 변분이 $\int\mathrm{tr}(\delta A\wedge F_A)$ 에 비례하므로 임계점은 $F_A=0$ 인 평탄 접속이다.
 
