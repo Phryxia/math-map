@@ -2,7 +2,13 @@
 
 # 개요
 
-Deligne 의 Weil 추측 증명(Deligne's proof of the Weil conjectures)은 Weil 추측의 마지막 항목인 Riemann 가설을 1974 년에 증명한 것이다. Weil 추측의 세 항목 가운데 둘은 1960 년대에 닫혔다. [Dwork](dwork-rationality.md)가 $p$ 진 해석학으로 유리성을 증명했고, Grothendieck 의 [에탈 코호몰로지](etale-cohomology.md)가 유리성과 함수방정식을 다시 증명했다. 남은 하나가 **Riemann 가설**이다.
+**Deligne 의 Weil 추측 증명(Deligne's proof of the Weil conjectures)** 은 유한체에서 다항식 방정식의 해를 셀 때 그 개수가 예상값에서 얼마나 벗어나는지를 정한 정리다. $5$ 로 나눈 나머지에서 $y^2=x^3+x+1$ 을 풀면 $x=0,2,3,4$ 마다 해가 둘씩 있고 $x=1$ 에서는 없어서, 무한원점까지 해가 $9$ 개다. 예상값 $5+1=6$ 과의 차이 $3$ 은 $2\sqrt5$ 보다 작고, $5$ 를 다른 소수 $p$ 로 바꾸어도 차이는 $2\sqrt p$ 를 넘지 않는다.
+
+Deligne 은 1974 년에 임의 차원의 다양체에서 같은 꼴의 한계, 곧 해의 개수를 정하는 Frobenius 고윳값의 절댓값이 $q^{i/2}$ 임을 증명했다. 방법은 다양체를 곡선의 다발로 잘라, 고윳값의 짝수 제곱의 합이 음이 아니라는 사실로 상계를 조이는 것이다.
+
+# 직관
+
+Weil 추측(Weil conjectures)의 세 항목 가운데 둘은 1960 년대에 증명되었다. [Dwork](dwork-rationality.md)가 $p$ 진 해석학으로 유리성을 증명했고, Grothendieck 의 [에탈 코호몰로지](etale-cohomology.md)가 유리성과 함수방정식을 다시 증명했다. 남은 하나가 **Riemann 가설**이다.
 
 $$
 Z(X/\mathbb F_q,T)=\prod_{i=0}^{2d}P_i(T)^{(-1)^{i+1}},
@@ -17,10 +23,6 @@ $$
 유리성과 함수방정식은 코호몰로지 이론이 존재하면 형식적으로 따라 나온다. 유리성은 대각합의 [생성함수](generating-functions.md)가 유리함수라는 선형대수이고 함수방정식은 [Poincaré 쌍대성](poincare-duality.md)이다. 절댓값은 아르키메데스 크기에 관한 진술이라 $\ell$ 진 계수의 코호몰로지에 들어 있을 이유가 없다. 대수적 구성에서 해석적 부등식을 뽑아내야 한다.
 
 Grothendieck 의 계획은 표준 추측[^1]을 세워 [Hodge 이론](hodge-theory.md)의 양성을 [유한체](finite-fields.md)로 옮기는 것이었고, 그 추측은 아직 증명되지 않았다[^2]. Deligne 은 1974 년에 다른 길을 갔다[^3]. 곡선의 다발로 다양체를 자르고, 단행성군의 크기를 재고, $L$ 함수의 계수가 실수이고 음이 아니라는 사실을 $2k$ 제곱으로 증폭해 부등식을 조였다. 해석적 정수론의 Rankin 의 수법이 산술기하의 정리를 증명했다.
-
-따름정리로 Ramanujan 이 1916 년에 추측한 $|\tau(p)|\le2p^{11/2}$ 가 나온다.
-
-# 직관
 
 Deligne 의 증명은 $\vert\alpha\vert=q^{i/2}$ 를 직접 다루지 않는다. 먼저 느슨한 상계
 
