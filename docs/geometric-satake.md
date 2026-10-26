@@ -82,7 +82,7 @@ $$
 > $$
 > \mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\thickspace\simeq\thickspace\mathrm{Rep}(\widehat G)
 > $$
-> 가 텐서 범주의 동치로 성립한다. $\mathcal{IC}\_\lambda$ 가 최고무게 $\lambda$ 의 기약표현 $V_\lambda$ 에 대응한다.[^1]
+> 가 텐서 범주의 동치로 성립한다. $\mathcal{IC}\_\lambda$ 가 최고무게 $\lambda$ 의 기약표현 $V_\lambda$ ([최고무게 가군](highest-weight-modules.md))에 대응한다.[^1]
 
 Mirković–Vilonen 은 임의의 가환환 계수에서 이를 증명했고, 그 결과 $\widehat G$ 가 $\mathbb Z$ 위의 군 스킴으로 나온다.
 

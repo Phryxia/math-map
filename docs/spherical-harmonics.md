@@ -95,7 +95,7 @@ $$
 
 ## SU(2) 와 반정수
 
-$\mathrm{SU}(2)\to\mathrm{SO}(3)$ 는 핵이 $\lbrace\pm I\rbrace$ 인 이중덮개다. $\mathrm{SU}(2)$ 의 기약표현은 각 차원마다 하나씩, 곧 최고무게 $j\in\frac12\mathbb Z$ 마다 $2j+1$ 차원짜리가 있다.
+$\mathrm{SU}(2)\to\mathrm{SO}(3)$ 는 핵이 $\lbrace\pm I\rbrace$ 인 이중덮개다. $\mathrm{SU}(2)$ 의 기약표현은 각 차원마다 하나씩, 곧 최고무게 $j\in\frac12\mathbb Z$ 마다 $2j+1$ 차원짜리 [최고무게 가군](highest-weight-modules.md)이 있다.
 
 이 가운데 $-I$ 가 자명하게 작용하는 것, 곧 $j$ 가 정수인 것만 $\mathrm{SO}(3)$ 의 표현으로 내려온다. 그것이 $\mathcal H_\ell$ 들이다. $j$ 가 반정수인 표현은 $\mathrm{SO}(3)$ 의 표현이 아니라 사영표현이고, 물리에서 스핀 $\frac12$ 입자가 여기에 해당한다. 구면조화함수에 반정수 차수가 없는 것과 전자가 스피너인 것은 모두 $\pi_1(\mathrm{SO}(3))=\mathbb Z/2$ 에서 나온다.
 

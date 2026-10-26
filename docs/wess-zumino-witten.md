@@ -81,7 +81,7 @@ $h^\vee$ 는 쌍대 Coxeter 수다. 분모의 $k+h^\vee$ 가 Chern–Simons 의 
 
 ## 적분가능 표현과 융합
 
-레벨 $k$ 에서 $\langle\lambda,\theta^\vee\rangle\le k$ 인 지배적 무게 $\lambda$ 를 **적분가능**이라 하고, 그 최고무게 표현들이 이 이론의 1 차 장 목록이다. 두 표현의 곱은 이 목록 안에서 닫히지 않으므로 잘라야 하고, 잘린 곱이 **융합 규칙**이다.
+레벨 $k$ 에서 $\langle\lambda,\theta^\vee\rangle\le k$ 인 지배적 무게 $\lambda$ 를 **적분가능**이라 하고, 그 [최고무게 가군](highest-weight-modules.md)들이 이 이론의 1 차 장 목록이다. 두 표현의 곱은 이 목록 안에서 닫히지 않으므로 잘라야 하고, 잘린 곱이 **융합 규칙**이다.
 
 $$
 \phi_i\times\phi_j=\sum_l N_{ij}^{\thickspace l}\thinspace\phi_l

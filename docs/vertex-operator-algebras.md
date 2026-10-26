@@ -10,7 +10,7 @@ $$
 
 이 전개를 공리로 삼은 대수 구조가 **정점작용소대수**(vertex operator algebra, VOA)다. 결합대수에서 곱셈 하나가 하는 일을 무한히 많은 쌍선형 연산 $a_{(n)}$ 이 나눠 맡고, 결합법칙 자리에 "두 장이 충분히 떨어져 있으면 순서를 바꿔도 된다" 는 국소성 공리가 들어간다.
 
-VOA 는 [Virasoro 대수](virasoro-algebra.md)와 affine Kac–Moody 대수의 표현을 담는 틀이다. 무한차원 [Lie 대수](lie-algebras.md)의 최고무게 가군에 곱셈 구조를 더한 것이며, 정의 안에 Virasoro 원소 $\omega$ 가 명시적으로 들어간다.
+VOA 는 [Virasoro 대수](virasoro-algebra.md)와 affine Kac–Moody 대수의 표현을 담는 틀이다. 무한차원 [Lie 대수](lie-algebras.md)의 [최고무게 가군](highest-weight-modules.md)에 곱셈 구조를 더한 것이며, 정의 안에 Virasoro 원소 $\omega$ 가 명시적으로 들어간다.
 
 좋은 조건을 만족하는 VOA 의 기약가군 지표들은 $\mathrm{SL}\_2(\mathbb Z)$ 의 유한차원 표현을 이룬다(Zhu 정리). 대수 구조 하나가 [모듈러 형식](modular-forms.md) 한 묶음을 낳으며, [괴물 달빛](monstrous-moonshine.md)에서 $j$ 가 나온 것이 그 사례다.
 
