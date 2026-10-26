@@ -45,6 +45,7 @@ graph TD
 
 - [볼록성](convexity.md): 볼록집합과 볼록함수, 국소 최적해가 전역 최적해가 되는 조건
   - [준볼록 함수](quasiconvex-functions.md): 수준집합만 볼록인 함수, 이분 탐색으로 푸는 최소화
+  - [기하 중앙값](geometric-median.md): 점까지의 거리 합을 최소화하는 점, 단위벡터 합이 0 인 최적성 조건과 Fermat 점, Weiszfeld 반복의 단조 감소, 붕괴점 1/2
 - [Helly 정리](helly-theorem.md): 볼록집합 모임의 공통점을 $d+1$ 개씩의 교집합으로 판정하는 정리, Radon 분할과 Carathéodory 정리
 - [다색 Carathéodory 정리](colorful-caratheodory.md): 색마다 원점을 둘러싸는 점 집합에서 하나씩 골라 원점을 둘러싸는 단체, 첫째 선택 보조정리
 - [Tverberg 정리](tverberg-theorem.md): 점 $(r-1)(d+1)+1$ 개를 볼록 껍질이 공통점을 갖는 $r$ 부분으로 나누는 분할, 위상적 판본

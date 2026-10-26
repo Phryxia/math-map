@@ -30,7 +30,7 @@ $$
 \min\ \sum_{i,j}d(i,j)\thinspace x_{ij}\quad\text{s.t.}\quad\sum_ix_{ij}=1,\quad x_{ij}\le y_i,\quad\sum_iy_i\le k,\quad x_{ij},y_i\in\lbrace 0,1\rbrace
 $$
 
-$k=1$ 이고 시설을 공간의 아무 점에나 둘 수 있으면 점까지의 거리 합을 최소화하는 한 점을 찾는 문제가 되고, 이 점을 **기하 중앙값(geometric median)** 이라 한다.
+$k=1$ 이고 시설을 공간의 아무 점에나 둘 수 있으면 점까지의 거리 합을 최소화하는 한 점을 찾는 문제가 되고, 이 점을 [기하 중앙값](geometric-median.md)(geometric median)이라 한다.
 
 # 성질
 
