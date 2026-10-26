@@ -2,9 +2,7 @@
 
 # 개요
 
-**Hamilton 순환(Hamiltonian cycle)** 은 그래프의 모든 정점을 정확히 한 번씩 지나 출발점으로 돌아오는 순환이다. 그런 순환을 갖는 그래프를 가려내는 문제는 NP(nondeterministic polynomial time)-완전이므로, 쓰이는 결과는 차수가 충분히 클 때 순환이 있다고 보장하는 충분조건이다.
-
-Dirac 정리와 Ore 정리가 그 표준이고, 둘 다 전체를 지나는 경로를 잡아 양 끝을 중간에서 돌려 붙이는 계산에서 나온다. Bondy–Chvátal 의 닫힘은 두 정리를 같은 조작의 특수한 경우로 묶는다.
+**Hamilton 순환(Hamiltonian cycle)** 은 그래프의 모든 정점을 정확히 한 번씩 지나 출발점으로 돌아오는 순환이다. 택배 차량이 도시 여러 곳을 한 번씩만 들르고 차고로 돌아오는 순서를 정할 때, 도시를 정점으로, 바로 갈 수 있는 길을 간선으로 놓으면 그런 순서가 Hamilton 순환이다. 가능한 순서를 모두 훑는 방법은 도시가 조금만 늘어도 쓸 수 없으므로, 각 정점에 이어진 간선이 충분히 많으면 순환이 반드시 있다는 조건으로 판정한다.
 
 # 직관
 
@@ -15,6 +13,10 @@ Dirac 정리와 Ore 정리가 그 표준이고, 둘 다 전체를 지나는 경�
 $$
 v_1,v_2,\dots,v_i,\thinspace v_n,v_{n-1},\dots,v_{i+1},\thinspace v_1
 $$
+
+아래 그림은 $n=6$, $i=3$ 인 경우다. 굵은 선을 따라가면 $v_1,v_2,v_3,v_6,v_5,v_4,v_1$ 이 순환이고, 점선 $v_3v_4$ 는 쓰지 않는다.
+
+![정점 여섯 개를 지나는 경로에서 양 끝의 간선 두 개로 순환을 만드는 그림](figures/hamiltonian-cycles-rotation.svg)
 
 # 정의
 
@@ -66,7 +68,7 @@ $\mathrm{cl}(G)$ 가 완전그래프이면 $G$ 는 Hamilton 그래프다. Ore �
 
 ## 판정 문제의 복잡도
 
-그래프가 Hamilton 순환을 갖는지 판정하는 문제는 NP-완전이다.[^5] 3-SAT(satisfiability)에서의 환원이 표준이고, 유향 판본과 Hamilton 경로 판본도 같다. 따라서 위의 충분조건들처럼 차수나 다른 구조를 가정하지 않으면 다항 시간 판정 절차를 기대할 수 없다. 환원의 틀은 [NP-완전성](np-completeness.md)에 있다.
+그래프가 Hamilton 순환을 갖는지 판정하는 문제는 [NP-완전](np-completeness.md)(nondeterministic polynomial time)이다.[^5] 3-SAT(satisfiability)에서의 환원이 표준이고, 유향 판본과 Hamilton 경로 판본도 같다. 따라서 위의 충분조건들처럼 차수나 다른 구조를 가정하지 않으면 다항 시간 판정 절차를 기대할 수 없다. 환원의 틀은 [NP-완전성](np-completeness.md)에 있다.
 
 # 활용
 
