@@ -2,7 +2,11 @@
 
 # 개요
 
-**Satake 동형(Satake isomorphism)** 은 비분기 연결 환원군(reductive group)의 비분기 Hecke 대수를 쌍대군(dual group)의 표현환(representation ring)과 동일시하는 대수 동형이다. [Hecke 작용소](hecke-operators.md) $T_p$ 는 이중 잉여류 $\mathrm{SL}\_2(\mathbb Z)\begin{pmatrix}1&0\cr 0&p\end{pmatrix}\mathrm{SL}\_2(\mathbb Z)$ 로 정의된다. 이 정의에서는 작용소들이 서로 가환인 이유도, 고윳값이 $L$ 함수의 Euler 인자가 되는 이유도 보이지 않는다.
+**Satake 동형(Satake isomorphism)** 은 격자를 부분격자로 바꾸는 연산들이 이루는 대수를 대칭다항식의 환과 같다고 보는 동형이다. 평면 격자 $\mathbb Z^2$ 안에서 지수가 $2$ 인 부분격자는 $\langle(2,0),(0,1)\rangle$, $\langle(1,0),(0,2)\rangle$, $\langle(1,1),(0,2)\rangle$ 의 세 개이고, 격자 위의 함수를 이 세 부분격자에서의 값의 합으로 바꾸는 것이 [Hecke 작용소](hecke-operators.md) $T_2$ 다. $T_2$ 를 두 번 쓰면 지수 $4$ 인 부분격자가 여러 번씩 세어져, $T_2^2$ 을 지수 $4$ 인 작용소들로 어떻게 쓰는지가 정의에서 바로 보이지 않는다. Satake 는 1963 년에 이 대수가 대칭 Laurent 다항식의 환 $\mathbb C\lbrack x_1^{\pm1},x_2^{\pm1}\rbrack^{S_2}$ 와 같음을 보여, 작용소의 계산을 다항식의 계산으로 바꾸었다.
+
+# 직관
+
+일반적으로 Satake 동형은 비분기 연결 환원군(reductive group)의 비분기 Hecke 대수를 쌍대군(dual group)의 표현환(representation ring)과 동일시한다. Hecke 작용소 $T_p$ 는 이중 잉여류 $\mathrm{SL}\_2(\mathbb Z)\begin{pmatrix}1&0\cr 0&p\end{pmatrix}\mathrm{SL}\_2(\mathbb Z)$ 로 정의된다. 이 정의에서는 작용소들이 서로 가환인 이유도, 고윳값이 $L$ 함수의 Euler 인자가 되는 이유도 보이지 않는다.
 
 [아델](adeles.md) 위로 올리면 두 사실이 함께 나온다. 자리 $p$ 를 고정하고 $G=\mathrm{GL}\_n(\mathbb Q_p)$ , $K=\mathrm{GL}\_n(\mathbb Z_p)$ 라 하자. 콤팩트 받침을 갖는 양쪽 $K$ 불변 함수들이 [합성곱](convolution.md)으로 이루는 대수
 
@@ -29,8 +33,6 @@ L(s,\pi_p)=\det\bigl(1-q^{-s}A_{\pi_p}\bigr)^{-1}
 $$
 
 [Godement–Jacquet 적분](godement-jacquet.md)의 비분기 자리 계산이 이 꼴이고, [Langlands 강령](langlands-program.md)이 거의 모든 자리에서 Satake 매개변수가 Frobenius 켤레류와 일치한다는 형태로 서술된다. 강령의 진술이 이 동형 위에서 쓰인다.
-
-# 직관
 
 $\mathcal H(G,K)$ 의 원소는 유한개의 이중 잉여류 $KgK$ 의 특성함수의 선형결합이고 곱은 합성곱이다. $\mathrm{vol}(K)=1$ 로 정규화하면 받침이 유한개의 왼쪽 잉여류 $gK$ 로 쪼개져 적분이 유한합이 된다. $gK\mapsto L_g=g\mathbb Z_p^n$ 이 $G/K$ 와 $\mathbb Q_p^n$ 의 격자 전체를 대응시키므로 두 특성함수의 합성곱값은 중간 격자의 개수이고, 초등인자마다 경우를 나누어 세면 곱이 나온다. 세기를 끝까지 해도 $T_mT_n=T_nT_m$ 인 이유는 나오지 않는다.
 
