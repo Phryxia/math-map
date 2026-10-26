@@ -2,7 +2,7 @@
 
 # 개요
 
-**Bolzano–Weierstrass 정리(Bolzano–Weierstrass theorem)** 는 유계인 실수 수열이 수렴하는 부분수열(subsequence)을 갖는다는 정리다. [수열의 극한](limits.md)이 없는 수열에서도 항의 일부를 골라 극한을 만든다. 실수의 [완비성](completeness.md)과 동치이고 유리수 안에서는 거짓이다. $\mathbb R^d$ 에서도 성립하지만 무한차원 노름공간에서는 성립하지 않는다.
+**Bolzano–Weierstrass 정리(Bolzano–Weierstrass theorem)** 는 유계인 실수 수열이 수렴하는 부분수열(subsequence)을 갖는다는 정리다. $\sin 1,\sin 2,\sin 3,\dots$ 은 모든 항이 $-1$ 과 $1$ 사이에 있지만 [수열의 극한](limits.md)이 없고, 어느 항을 골라야 수렴하는지 식으로 정할 수도 없다. 이 정리는 구간을 반씩 자르며 항이 무한히 많이 든 쪽을 계속 고르는 방법으로, 이런 수열에서도 수렴하는 부분수열을 골라낸다.
 
 # 직관
 
@@ -34,7 +34,7 @@ $(a_n)$ 이 $\lbrack A,B\rbrack$ 에 있다고 한다. $I_0=\lbrack A,B\rbrack$ 
 
 ## 완비성과의 동치
 
-실수의 상한 공리(least upper bound axiom)에서 이 정리가 증명되고 거꾸로도 증명된다[^2]. 유계집합 $S$ 에 대해 $S$ 의 점 $x_k$ 와 $S$ 의 상계 $y_k$ 를 중점 판정으로 번갈아 좁히면 $\lvert x_k-y_k\rvert\to 0$ 이다. $(x_k)$ 의 수렴하는 부분수열의 극한이 $S$ 의 최소상계다.
+실수의 [완비성](completeness.md)을 정하는 상한 공리(least upper bound axiom)에서 이 정리가 증명되고 거꾸로도 증명된다[^2]. 유계집합 $S$ 에 대해 $S$ 의 점 $x_k$ 와 $S$ 의 상계 $y_k$ 를 중점 판정으로 번갈아 좁히면 $\lvert x_k-y_k\rvert\to 0$ 이다. $(x_k)$ 의 수렴하는 부분수열의 극한이 $S$ 의 최소상계다.
 
 유리수체에서는 거짓이다. $\sqrt2$ 의 소수 전개를 자른 유리수 수열은 유계이고 단조이지만 어느 부분수열도 유리수 안에서 수렴하지 않는다.
 
