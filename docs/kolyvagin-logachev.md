@@ -2,13 +2,7 @@
 
 # 개요
 
-Kolyvagin–Logachev 정리(Kolyvagin–Logachev theorem)는 $\mathbb Q$ 위 [타원곡선](elliptic-curves.md)의 해석 순위가 $0$ 이나 $1$ 이면 Mordell–Weil 군의 계수가 해석 순위와 같고 Tate–Shafarevich 군이 유한하다는 정리다. [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)에서 $L$ 함수의 $s=1$ 에서의 소멸 차수는 Mordell–Weil 군의 계수와 같다. 이 추측에서 실제로 증명된 것은 해석 순위가 0 이나 1 인 경우의 한쪽 방향뿐이고, 그 증명이 Kolyvagin 의 정리다.
-
-> **정리(Kolyvagin).** $E/\mathbb Q$ 가 타원곡선이고 $L(E,1)\ne0$ 이면 $E(\mathbb Q)$ 가 유한하고 $\text{Ш}(E/\mathbb Q)$ 도 유한하다. $L(E,1)=0$ 이고 $L'(E,1)\ne0$ 이면 $\mathrm{rank}E(\mathbb Q)=1$ 이고 Heegner 점이 유한 지표의 부분군을 생성한다.
-
-Kolyvagin–Logachev 는 이것을 [모듈러 형식](modular-forms.md)에서 만들어지는 아벨 다양체 $A_f$ 로 확장해, 차원이 1 보다 커도 $L(f,1)\ne0$ 이면 $A_f(\mathbb Q)$ 가 유한함을 보인다. 이것이 **Kolyvagin–Logachev 정리(Kolyvagin–Logachev theorem)** 다. 이 일반화로 [모듈러 곡선](modular-curves.md)의 Jacobian 에서 유리점이 유한한 몫을 만들 수 있다.
-
-그 몫이 **겨냥 몫**이다. $J_0(N)$ 에서 $L(f,1)\ne0$ 인 성분만 남긴 것이므로 Mordell–Weil 군이 유한하고, 모듈러 곡선 위의 점의 개수를 제한한다. [Merel 의 일양 유계성 정리](merel-theorem.md)가 이 제한을 쓴 예다. 해석적 비소멸이 기하적 유한성이 되고, 그 유한성이 산술적 유계를 낳는다.
+**Kolyvagin–Logachev 정리(Kolyvagin–Logachev theorem)** 는 [모듈러 형식](modular-forms.md)에서 오는 아벨 다양체의 $L$ 함수가 $s=1$ 에서 $0$ 이 아니면 그 다양체의 유리점이 유한 개라는 정리다. [타원곡선](elliptic-curves.md) $y^2=x^3-x$ 처럼 유리수 계수 방정식의 유리수 해가 유한 개인지 무한 개인지는 해를 찾아 나열해서는 판정되지 않는다. 이 정리는 해의 개수 문제를 $L$ 함수의 값 하나가 $0$ 인지 계산하는 문제로 바꿔 판정한다.
 
 # 직관
 
@@ -30,7 +24,11 @@ $$
 
 ## Kolyvagin–Logachev 정리
 
-$f$ 가 준위 $N$ 의 새형식이고 $A_f$ 가 대응하는 모듈러 아벨 다양체일 때
+Kolyvagin 의 정리는 타원곡선에 대해 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)의 계수 부분을 해석 순위가 $0$ 이나 $1$ 인 경우에 증명한다.
+
+> **정리(Kolyvagin).** $E/\mathbb Q$ 가 타원곡선이고 $L(E,1)\ne0$ 이면 $E(\mathbb Q)$ 가 유한하고 $\text{Ш}(E/\mathbb Q)$ 도 유한하다. $L(E,1)=0$ 이고 $L'(E,1)\ne0$ 이면 $\mathrm{rank}E(\mathbb Q)=1$ 이고 Heegner 점이 유한 지표의 부분군을 생성한다.
+
+Kolyvagin 과 Logachev 는 해석 순위 $0$ 의 경우를 아벨 다양체 $A_f$ 로 확장했다. $f$ 가 준위 $N$ 의 새형식이고 $A_f$ 가 대응하는 모듈러 아벨 다양체일 때
 
 $$
 L(f,1)\ne0\ \Longrightarrow\ A_f(\mathbb Q)\ \text{유한},\quad \text{Ш}(A_f/\mathbb Q)\ \text{유한}
@@ -71,11 +69,11 @@ $L(E,1)$ 은 수치적으로 계산하고 0 인지 판정할 수 있으므로 Ko
 
 ## 모듈러 곡선의 유리점
 
-겨냥 몫의 유리점이 유한하다는 사실이 모듈러 곡선 위의 점을 가둔다. 곡선이나 그 대칭곱에서 $J_e$ 로 보낸 뒤 상이 유한집합에 들어감을 보이고 그 유한집합을 조사하면 점의 목록이 나온다. Mazur 이후의 유리점 연구가 이 방법을 쓴다.
+겨냥 몫의 유리점이 유한하다는 사실이 [모듈러 곡선](modular-curves.md) 위의 점을 가둔다. 곡선이나 그 대칭곱에서 $J_e$ 로 보낸 뒤 상이 유한집합에 들어감을 보이고 그 유한집합을 조사하면 점의 목록이 나온다. Mazur 이후의 유리점 연구가 이 방법을 쓴다.
 
 ## 일양 유계성
 
-Merel 의 증명은 위 사실을 차수 $d$ 점에 적용한다. 대칭곱 $X_1(p)^{(d)}$ 에서 겨냥 몫으로 보내고 [Hecke 작용소](hecke-operators.md)로 단사성을 판정한 뒤 유리점의 유한성에서 모순을 끌어낸다. 겨냥 몫이 $\mathbb Q$ 위에 있으므로 체를 바꾸지 않고 모든 차수 $d$ 체를 한꺼번에 다룬다.
+[Merel 의 일양 유계성 정리](merel-theorem.md)의 증명은 위 사실을 차수 $d$ 점에 적용한다. 대칭곱 $X_1(p)^{(d)}$ 에서 겨냥 몫으로 보내고 [Hecke 작용소](hecke-operators.md)로 단사성을 판정한 뒤 유리점의 유한성에서 모순을 끌어낸다. 겨냥 몫이 $\mathbb Q$ 위에 있으므로 체를 바꾸지 않고 모든 차수 $d$ 체를 한꺼번에 다룬다.
 
 ## Iwasawa 이론과의 대조
 
