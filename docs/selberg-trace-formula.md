@@ -2,17 +2,7 @@
 
 # 개요
 
-**Selberg 대각합 공식(Selberg trace formula)** 은 쌍곡면(hyperbolic surface)의 Laplace 고윳값 전체에 걸친 합을 곡면의 닫힌 측지선(geodesic)의 길이에 걸친 합으로 표현하는 공식이다.
-
-$L^2(\Gamma\backslash\mathbb H)$ 의 이산 스펙트럼을 이루는 [Maass 형식](maass-forms.md)의 고윳값 $\lambda_j=\tfrac14+r_j^2$ 에는 닫힌 형태의 표현이 없다. $\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 의 첫 고윳값 $r_1\approx9.533$ 도 수치 계산의 결과이므로 공식은 개별 고윳값 대신 그 합을 다룬다.
-
-$$
-\underbrace{\sum_j h(r_j)}\_{\text{스펙트럼}}\thickspace+\thickspace\text{(연속 기여)}\thickspace=\thickspace\underbrace{\frac{\mathrm{vol}}{4\pi}\int_{-\infty}^\infty h(r)\thinspace r\tanh(\pi r)\thinspace dr+\sum_{\lbrace\gamma\rbrace}\sum_{k\ge1}\frac{\ell_\gamma\thinspace g(k\ell_\gamma)}{2\sinh(k\ell_\gamma/2)}}\_{\text{기하}}
-$$
-
-왼쪽은 해석, 오른쪽은 [Riemann 계량](riemannian-metrics.md)이 정하는 측지선의 길이다. 이 등식에서 [Weyl 법칙](weyl-law.md), 소측지선 정리, Maass 형식의 존재가 따라 나온다.
-
-공식의 구조는 [소수 정리](prime-number-theorem.md)의 명시공식과 같다. 거기서 $\zeta$ 의 영점과 소수의 거듭제곱이 짝을 이루듯, 여기서는 Laplace 고윳값과 닫힌 측지선이 짝을 이룬다. Selberg 는 이 유비를 따라 [Riemann 가설](riemann-hypothesis.md)이 성립하는 zeta 함수를 만들었다.
+**Selberg 대각합 공식(Selberg trace formula)** 은 쌍곡면(hyperbolic surface)의 진동수 목록과 닫힌 측지선(geodesic)의 길이 목록을 잇는 등식이다. 쌍곡면 모양의 북을 두드려 나는 소리의 진동수는 Laplace 작용소의 고윳값으로 정해지는데, $\mathrm{SL}\_2(\mathbb Z)$ 에서 오는 곡면의 첫 고윳값 $r_1\approx9.533$ 조차 수치 계산으로만 알려져 있어 고윳값을 하나씩 식으로 쓸 수 없다. 이 공식은 고윳값을 하나씩 구하는 대신 고윳값 전체에 걸친 합을 곡면 위 닫힌 측지선의 길이에 걸친 합으로 바꿔 계산한다.
 
 # 직관
 
@@ -29,7 +19,7 @@ $$
 
 ## 쌍곡 곡면과 Laplace 작용소
 
-$\Gamma\subset\mathrm{PSL}\_2(\mathbb R)$ 는 유한 공부피 이산군, $X=\Gamma\backslash\mathbb H$ 는 쌍곡 곡면, $\Delta=-y^2(\partial_x^2+\partial_y^2)$ 는 Laplace 작용소다. 이산 스펙트럼을 $\lambda_j=\tfrac14+r_j^2$ 로 쓴다.
+$\Gamma\subset\mathrm{PSL}\_2(\mathbb R)$ 는 유한 공부피 이산군, $X=\Gamma\backslash\mathbb H$ 는 상반평면의 쌍곡 [Riemann 계량](riemannian-metrics.md)을 물려받은 쌍곡 곡면, $\Delta=-y^2(\partial_x^2+\partial_y^2)$ 는 Laplace 작용소다. 이산 스펙트럼의 고유함수가 [Maass 형식](maass-forms.md)이고, 그 고윳값을 $\lambda_j=\tfrac14+r_j^2$ 로 쓴다.
 
 검사함수 $h(r)$ 는 $|\mathrm{Im}\thinspace r|\le\tfrac12+\delta$ 에서 정칙이고 $h(r)=O((1+|r|)^{-2-\delta})$ 인 짝함수이며, 그 [Fourier 변환](fourier-transform.md)은 $g(u)=\frac1{2\pi}\int h(r)e^{-iru}dr$ 다.
 
@@ -89,7 +79,7 @@ $$
 
 ## Weyl 법칙
 
-$h$ 를 $[0,T]$ 의 특성함수에 가깝게 잡으면 콤팩트 곡면에서 고윳값 계수함수
+[Weyl 법칙](weyl-law.md)이 이 공식에서 나온다. $h$ 를 $[0,T]$ 의 특성함수에 가깝게 잡으면 콤팩트 곡면에서 고윳값 계수함수
 
 $$
 \char35{}\lbrace j:\ r_j\le T\rbrace=\frac{\mathrm{vol}(X)}{4\pi}T^2+O(T\log T)
@@ -107,7 +97,7 @@ $$
 \char35{}\lbrace\text{원시 닫힌 측지선}:\ \ell_\gamma\le L\rbrace\ \sim\ \frac{e^L}{L}
 $$
 
-를 얻는다. 소수 정리 $\pi(x)\sim x/\log x$ 에 $x=e^L$ 을 넣은 꼴이며 증명 구조도 같다. $Z(s)$ 의 $s=1$ 에서의 단순 영점이 소수 정리의 $\zeta(s)$ 극점에 대응한다.
+를 얻는다. [소수 정리](prime-number-theorem.md) $\pi(x)\sim x/\log x$ 에 $x=e^L$ 을 넣은 꼴이며 증명 구조도 같다. $Z(s)$ 의 $s=1$ 에서의 단순 영점이 소수 정리의 $\zeta(s)$ 극점에 대응한다.
 
 ## Selberg zeta 의 영점
 
@@ -117,7 +107,7 @@ $$
 \lambda_j\ge\tfrac14\ \Longrightarrow\ Z(s)\ \text{의 영점이 }\mathrm{Re}(s)=\tfrac12\ \text{위에 있다}
 $$
 
-콤팩트 곡면에서는 $\lambda_1\gt 0$ 만으로 예외 영점이 $[0,1]$ 의 실축 위 유한 개뿐임이 나온다. 영점이 [자기수반 작용소](unbounded-operators.md)의 스펙트럼에서 오므로, Hilbert–Pólya 가 $\zeta$ 에 대해 바라던 구조가 $Z$ 에서는 성립한다.
+이 함의가 [Riemann 가설](riemann-hypothesis.md)의 Selberg zeta 판본이다. 콤팩트 곡면에서는 $\lambda_1\gt 0$ 만으로 예외 영점이 $[0,1]$ 의 실축 위 유한 개뿐임이 나온다. 영점이 [자기수반 작용소](unbounded-operators.md)의 스펙트럼에서 오므로, Hilbert–Pólya 가 $\zeta$ 에 대해 바라던 구조가 $Z$ 에서는 성립한다.
 
 산술 곡면에서 $\lambda_1\ge\tfrac14$ 인지가 **Selberg 1/4 추측**이고, 증명되지 않았다[^2]. 현재 최선은 $\lambda_1\ge\tfrac{975}{4096}\approx0.238$ 다[^3]. 이 추측은 Ramanujan 추측의 아르키메데스 자리 판본이다.
 
