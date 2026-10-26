@@ -167,8 +167,8 @@ $A_3$ 부터는 이 표를 Bruhat 순서만으로 채울 수 없다. 어떤 자�
 
 ## 선수지식
 
+- [최고무게 가군](highest-weight-modules.md)
 - [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)
-- [Lie 대수](lie-algebras.md)
 
 ## 더 알아보기
 

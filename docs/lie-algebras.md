@@ -180,7 +180,6 @@ $$
 
 - [Lie 군](lie-groups.md)
 - [근계](root-systems.md)
-- [범주 O](category-o.md)
 - [양자군](quantum-groups.md)
 
 ### 무한차원 대수

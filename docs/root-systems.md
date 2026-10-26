@@ -192,7 +192,7 @@ Weyl 군은 결정학적 반사군이므로 격자를 보존하는 대칭에 대
 ## 더 알아보기
 
 - [Coxeter 군](coxeter-groups.md)
-- [Weyl 지표 공식](weyl-character-formula.md)
+- [최고무게 가군](highest-weight-modules.md)
 - [아핀 Lie 대수](affine-lie-algebras.md)
 - [클러스터 대수](cluster-algebras.md)
 
