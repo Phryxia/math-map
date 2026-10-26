@@ -2,22 +2,20 @@
 
 # 개요
 
-**균등적분가능성(uniform integrability)** 은 함수족 $\lbrace f_i\rbrace$ 가 $\lim_{M\to\infty}\sup_i\int_{\vert f_i\vert\gt M}\vert f_i\vert=0$ 을 만족하는 성질이다. [Lebesgue 적분](lebesgue-integral.md)에서 극한과 적분을 바꾸는 정리들은 질량이 새지 않는다는 조건을 요구한다. [단조 수렴 정리](monotone-convergence.md)는 단조성으로, [지배 수렴 정리](dominated-convergence.md)는 적분가능한 지배함수 하나로 그 조건을 만든다. **균등적분가능성(uniform integrability, UI)** 은 같은 조건을 함수족 전체에 대한 최소한의 형태로 뽑아낸 것이다.
-
-[가측함수](measurable-functions.md)열이 [측도](measure.md) 수렴하고 균등적분가능한 것이 $L^1$ 수렴과 동치다. 이것이 Vitali 수렴 정리이고 지배 수렴 정리가 그 특수한 경우다. 확률론에서는 [martingale](martingales.md)의 수렴, [조건부 기댓값](conditional-expectation.md)족의 성질, 극한에서 기댓값이 보존되는지 여부가 모두 UI 로 판정된다.
+**균등적분가능성(uniform integrability, UI)** 은 함수들의 모임에서 함숫값이 큰 곳이 차지하는 적분이 모든 함수에 대해 한꺼번에 작아지는 성질이다. $[0,1]$ 위에서 폭이 $1/n$ 이고 높이가 $n$ 인 직사각형 모양의 함수는 점마다 $0$ 으로 가지만 적분은 늘 $1$ 이어서, 극한의 적분과 적분의 극한이 어긋난다. 함수열의 극한과 적분을 바꿔도 되는지는 함수열이 이 성질을 만족하는지로 판정한다.
 
 # 직관
 
-점별 극한이 0 인데 적분값이 남는 방식은 둘이다.
+점별 극한이 0 인데 [Lebesgue 적분](lebesgue-integral.md)값이 남는 방식은 둘이다.
 
 - **높이 방향.** 함숫값이 큰 영역에 질량이 몰린다. $[0,1]$ 위에서 $f_n=n$ 을 $[0,1/n]$ 에 올린 함수열은 각 적분이 1 이고 점별로는 0 으로 간다.
 - **넓이 방향.** 무한 측도 공간에서 질량이 멀리 밀려난다. 실직선 위의 $f_n=1/n$ 을 $[0,n]$ 에 올린 함수열이 그렇다.
 
-균등적분가능성은 첫째를 막는 조건으로, 함숫값이 큰 곳의 적분 기여가 족 전체에 대해 균등하게 작다는 뜻이다. 유한 측도 공간에서는 둘째 방향이 없으므로 UI 로 충분하고, 무한 측도 공간에서는 꼬리를 통제하는 tightness 가 더 필요하다.
+[단조 수렴 정리](monotone-convergence.md)는 단조성으로, [지배 수렴 정리](dominated-convergence.md)는 적분가능한 지배함수 하나로 첫째 방향을 막는다. 균등적분가능성은 첫째를 막는 조건으로, 함숫값이 큰 곳의 적분 기여가 족 전체에 대해 균등하게 작다는 뜻이다. 유한 측도 공간에서는 둘째 방향이 없으므로 UI 로 충분하고, 무한 측도 공간에서는 꼬리를 통제하는 tightness 가 더 필요하다.
 
 # 정의
 
-이하 $(X,\mathcal F,\mu)$ 는 측도공간, 함수는 모두 실수값 가측함수다. 함수족을 $H$ 로 쓴다.
+이하 $(X,\mathcal F,\mu)$ 는 [측도](measure.md)공간, 함수는 모두 실수값 [가측함수](measurable-functions.md)다. 함수족을 $H$ 로 쓴다.
 
 ## 균등적분가능성
 
@@ -90,7 +88,7 @@ $$
 
 이고, Markov 부등식이 $\mu(|f|\gt M)\le C/M$ 을 주므로 $M$ 을 키우면 균등하게 0 으로 간다. 단, $p=1$ 유계만으로는 UI 가 아니다(위의 높이 도피 예가 $L^1$ 유계이면서 UI 가 아니다).
 
-- **조건부 기댓값족**: 적분가능한 $Z$ 에 대해 부분 $\sigma$ 대수 전체를 훑는 족
+- **[조건부 기댓값](conditional-expectation.md)족**: 적분가능한 $Z$ 에 대해 부분 $\sigma$ 대수 전체를 훑는 족
 
 $$
 \lbrace \mathbb{E}[Z \mid \mathcal{G}] : \mathcal{G} \subseteq \mathcal{F}\thinspace\text{ 인 부분 }\sigma\text{ 대수} \rbrace
@@ -143,7 +141,7 @@ $L^1$ 유계성과 UI 의 차이를 보이는 세 예다.
 
 ## martingale 수렴
 
-martingale $M_n$ 이 $L^1$ 유계이면 거의 확실히 어떤 $M_\infty$ 로 수렴한다(Doob). $L^1$ 수렴과 $\mathbb E[M_n]=\mathbb E[M_\infty]$ 는 따라오지 않고, 그 필요충분조건이 $\lbrace M_n\rbrace$ 의 균등적분가능성이다. 이때 martingale 은 닫힌 형태
+[martingale](martingales.md) $M_n$ 이 $L^1$ 유계이면 거의 확실히 어떤 $M_\infty$ 로 수렴한다(Doob). $L^1$ 수렴과 $\mathbb E[M_n]=\mathbb E[M_\infty]$ 는 따라오지 않고, 그 필요충분조건이 $\lbrace M_n\rbrace$ 의 균등적분가능성이다. 이때 martingale 은 닫힌 형태
 
 $$
 M_n = \mathbb{E}[M_\infty \mid \mathcal{F}\_n]
