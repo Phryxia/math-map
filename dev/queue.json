@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-26T01:04:26.068Z",
-  "nextSeq": 2526,
+  "savedAt": "2026-10-26T05:04:52.930Z",
+  "nextSeq": 2537,
   "items": [
     {
       "id": "9bab7237",
@@ -3834,6 +3834,94 @@
       "note": "#statistics #probability #information_theory. 부모 kl-divergence, convexity. 통계 개관 회귀와 모형 선택 갈래 끝 주 경로. 리프다. 후보: Bregman 발산을 별도 문서로(mirror descent 와 지수족의 쌍대), 보정(calibration)과 Brier 점수의 Murphy 분해, 점수 규칙의 Diebold–Mariano 검정.",
       "createdAt": "2026-10-26T01:02:05.635Z",
       "seq": 2525
+    },
+    {
+      "id": "5400fd8e",
+      "title": "independent-set 의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #graph_theory #algorithms #combinatorics. 부모 clique-problem, vertex-cover. 계산 개관 복잡도 갈래 정점 덮개 문제 아래 곁가지. 리프다. 후보: 발톱 없는 그래프와 Minty 알고리즘을 별도 문서로, Luby 알고리즘과 분산 계산의 국소 모형(LOCAL), 구간 그래프와 현 그래프, Shearer 의 삼각형 없는 그래프 독립수 하한, 경질 핵 모형(hard-core model)과 독립집합 세기.",
+      "createdAt": "2026-10-26T04:41:13.701Z",
+      "seq": 2526
+    },
+    {
+      "id": "0139d561",
+      "title": "menger-theorem 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #algorithms. 부모 network-flow. 자식 chvatal-erdos-theorem. 그래프 개관 알고리즘과 최적화 갈래 주 경로. 후보: 귀 분해와 2 연결 그래프(Whitney, Robbins 의 강한 방향), Mader 의 연결도 정리, Gomory–Hu 나무, Stoer–Wagner 최소 절단을 별도 문서로, Erdős–Pósa 정리.",
+      "createdAt": "2026-10-26T04:43:54.798Z",
+      "seq": 2527
+    },
+    {
+      "id": "bf38b7af",
+      "title": "chomp 의 후속 간선",
+      "priority": 10,
+      "note": "#computation #combinatorics #order_theory. 부모 strategy-stealing, partial-orders. 계산 개관 복잡도 갈래 전략 훔치기 논법 아래 곁가지. 리프다. 후보: 부분순서 게임 일반론과 Grier 의 PSPACE-완전성 증명을 별도 문서로, 무한 Chomp 와 서수 값, Zeilberger 의 3 줄 Chomp 계산.",
+      "createdAt": "2026-10-26T04:47:14.518Z",
+      "seq": 2528
+    },
+    {
+      "id": "940021c4",
+      "title": "coherent-risk-measures 의 후속 간선",
+      "priority": 10,
+      "note": "#statistics #probability #optimization. 부모 expected-shortfall, convex-conjugate. 통계 개관 회귀와 모형 선택 갈래 기대 결손 아래 곁가지. 리프다. 후보: 분포 강건 최적화(Wasserstein 공과 KL 공)를 별도 문서로, 스펙트럼 위험 측도와 왜곡 위험 측도, 동적 위험 측도의 시간 일관성, 엔트로피 위험 측도와 Donsker–Varadhan 변분 공식.",
+      "createdAt": "2026-10-26T04:49:52.179Z",
+      "seq": 2529
+    },
+    {
+      "id": "edfad21c",
+      "title": "breakdown-point 의 후속 간선",
+      "priority": 10,
+      "note": "#statistics #optimization. 부모 m-estimators, linear-regression. 통계 개관 회귀와 모형 선택 갈래 선형회귀 아래 곁가지. 리프다. 후보: S-추정량과 MM-추정량을 별도 문서로(Yohai), 다변량 위치와 산포의 최소 공분산 행렬식(MCD), 무작위 표본 합의(RANSAC), 영향 함수와 민감도 곡선.",
+      "createdAt": "2026-10-26T04:51:56.568Z",
+      "seq": 2530
+    },
+    {
+      "id": "fc2e28fd",
+      "title": "gomory-hu-tree 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #algorithms #optimization. 부모 menger-theorem. 그래프 개관 알고리즘과 최적화 갈래 Menger 정리 아래 곁가지. 리프다. 후보: 전역 최소 절단의 Karger 축약 알고리즘과 Stoer–Wagner 를 별도 문서로, 최소 k-절단, T-결합과 홀수 절단(Padberg–Rao).",
+      "createdAt": "2026-10-26T04:54:07.024Z",
+      "seq": 2531
+    },
+    {
+      "id": "dca9cdfa",
+      "title": "karger-min-cut 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #algorithms #probability. 부모 menger-theorem, probability. 그래프 개관 알고리즘과 최적화 갈래 Menger 정리 아래 곁가지. 리프다. 후보: 절단 희소화(Benczúr–Karger)와 spectral-sparsification 의 관계, 망 불신뢰도의 무작위 근사(Karger 1999), Stoer–Wagner 알고리즘을 별도 문서로.",
+      "createdAt": "2026-10-26T04:57:44.210Z",
+      "seq": 2532
+    },
+    {
+      "id": "3698fed5",
+      "title": "stoer-wagner-algorithm 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #algorithms #optimization. 부모 menger-theorem. 그래프 개관 알고리즘과 최적화 갈래 Menger 정리 아래 곁가지. 리프다. 후보: Nagamochi–Ibaraki 의 희소 증명서(k 연결 성분을 보존하는 숲 분해), 부분모듈 함수의 대칭 최소화(Queyranne), 정점 연결도의 계산.",
+      "createdAt": "2026-10-26T04:59:40.588Z",
+      "seq": 2533
+    },
+    {
+      "id": "e3a652ef",
+      "title": "ear-decomposition 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #algorithms #combinatorics. 부모 menger-theorem. 그래프 개관 알고리즘과 최적화 갈래 Menger 정리 아래 곁가지. 리프다. 후보: 인수 임계 그래프(factor-critical)와 Lovász 의 홀수 귀 분해, 블록-절단점 나무와 이중 연결 성분, Nash-Williams 의 강한 방향 정리(간선 2k 연결과 k 호 연결 방향).",
+      "createdAt": "2026-10-26T05:01:13.644Z",
+      "seq": 2534
+    },
+    {
+      "id": "913aafe5",
+      "title": "gallai-edmonds-decomposition 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #combinatorics #algorithms. 부모 matchings, ear-decomposition. 그래프 개관 알고리즘과 최적화 갈래 귀 분해 아래 곁가지. 리프다. 후보: Edmonds 의 blossom 알고리즘을 matchings 의 절에서 별도 문서로, Edmonds–Pulleyblank 의 매칭 다면체 면 판정, Dulmage–Mendelsohn 분해(이분 그래프 판본).",
+      "createdAt": "2026-10-26T05:03:04.503Z",
+      "seq": 2535
+    },
+    {
+      "id": "dd226ee9",
+      "title": "block-cut-tree 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #algorithms #combinatorics. 부모 ear-decomposition. 그래프 개관 알고리즘과 최적화 갈래 귀 분해 아래 곁가지. 리프다. 후보: SPQR 나무와 3 연결 성분(Hopcroft–Tarjan), 강한 연결 성분의 Tarjan 알고리즘, 블록 그래프의 특징.",
+      "createdAt": "2026-10-26T05:04:41.137Z",
+      "seq": 2536
     },
     {
       "id": "dfb3e493",
