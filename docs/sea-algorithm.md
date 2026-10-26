@@ -2,11 +2,15 @@
 
 # 개요
 
-**Schoof–Elkies–Atkin 알고리즘(Schoof–Elkies–Atkin algorithm, SEA)** 은 유한체 $\mathbb F_p$ 위 [타원곡선](elliptic-curves.md)의 점 개수 $\char35{}E(\mathbb F_p)$ 를 $\log p$ 의 다항식 시간에 세는 알고리즘이다. 타원곡선 암호는 $\char35{}E(\mathbb F_p)$ 를 알아야 한다. 위수가 작은 소인수로 쪼개지면 Pohlig–Hellman 으로 [이산로그](discrete-logarithm.md)가 무너지므로 곡선을 고른 뒤 위수를 센다. 암호에 쓰는 $p$ 는 $2^{256}$ 규모여서 점을 하나씩 세는 $O(p)$ 도, Shanks 의 $O(p^{1/4})$ 도 쓸 수 없다.
+**Schoof–Elkies–Atkin 알고리즘(Schoof–Elkies–Atkin algorithm, SEA)** 은 유한체 $\mathbb F_p$ 위 [타원곡선](elliptic-curves.md)의 점을 하나씩 대입하지 않고 그 개수를 세는 알고리즘이다. $p=5$ 에서 $y^2=x^3+x+1$ 은 $x$ 에 다섯 값을 넣어 보면 무한원점까지 점이 $9$ 개임을 알 수 있지만, 암호에 쓰는 $p$ 는 $2^{256}$ 규모라 이렇게 셀 수 없다. 점의 개수는 $p+1-a_p$ 이고 $a_p$ 는 $-2\sqrt p$ 와 $2\sqrt p$ 사이의 정수다. 알고리즘은 작은 소수 $\ell=2,3,5,\dots$ 마다 $a_p$ 를 $\ell$ 로 나눈 나머지를 곡선의 $\ell$ 등분점에서 계산하고, 그 소수들의 곱이 $4\sqrt p$ 를 넘으면 [중국인의 나머지 정리](chinese-remainder-theorem.md)로 $a_p$ 를 확정한다.
+
+# 직관
+
+SEA 는 점 개수 $\char35{}E(\mathbb F_p)$ 를 $\log p$ 의 다항식 시간에 센다. 타원곡선 암호는 $\char35{}E(\mathbb F_p)$ 를 알아야 한다. 위수가 작은 소인수로 쪼개지면 Pohlig–Hellman 으로 [이산로그](discrete-logarithm.md)가 무너지므로 곡선을 고른 뒤 위수를 센다. 암호에 쓰는 $p$ 는 $2^{256}$ 규모여서 점을 하나씩 세는 $O(p)$ 도, Shanks 의 $O(p^{1/4})$ 도 쓸 수 없다.
 
 Schoof 가 1985 년에 $\log p$ 의 다항식 시간으로 도는 알고리즘을 주었다[^1].
 
-> $a_p$ 는 크기가 $2\sqrt p$ 이하인 **정수**다. 작은 소수 $\ell$ 마다 $a_p\bmod\ell$ 을 계산하고, $\prod\ell\gt 4\sqrt p$ 가 되면 중국인 나머지 정리로 $a_p$ 가 확정된다.
+> $a_p$ 는 크기가 $2\sqrt p$ 이하인 **정수**다. 작은 소수 $\ell$ 마다 $a_p\bmod\ell$ 을 계산하고, $\prod\ell\gt 4\sqrt p$ 가 되면 중국인의 나머지 정리로 $a_p$ 가 확정된다.
 
 $a_p\bmod\ell$ 을 어떻게 계산하는가. Frobenius $\varphi(x,y)=(x^p,y^p)$ 는 $E$ 의 자기준동형이고 특성방정식
 
@@ -21,8 +25,6 @@ $E[\ell]$ 은 **나눗셈 다항식** $\psi_\ell(x)$ 로 다룬다. 차수가 $(
 Elkies 와 Atkin 의 개선은 $\psi_\ell$ 의 차수를 $(\ell^2-1)/2$ 에서 $(\ell-1)/2$ 로 줄인다. $\varphi$ 의 특성다항식이 $\bmod\ell$ 에서 근을 가지면(**Elkies 소수**) $E[\ell]$ 안에 $\varphi$ 가 보존하는 1 차원 부분군이 있고 그 부분군만 다루면 된다. 부분군을 찾는 도구가 [모듈러 곡선](modular-curves.md) $X_0(\ell)$ 의 모듈러 다항식이다. $X_0(\ell)$ 이 $\ell$ 등분 구조를 분류하므로 모듈러 곡선이 알고리즘의 부품이 된다. Schoof 의 방법에 이 개선을 더한 것이 SEA 다.
 
 [Kedlaya 알고리즘](kedlaya-algorithm.md)은 $p$ 에 선형이라 작은 표수를 맡고 SEA 는 $\log p$ 의 다항식이라 큰 $p$ 를 맡는다. 둘 다 정수의 크기를 미리 알고 잉여를 모아 확정하는 논법을 쓰며, Kedlaya 는 $p$ 진 정밀도를 쌓고 SEA 는 여러 $\ell$ 의 잉여를 쌓는다.
-
-# 직관
 
 $a_p\bmod\ell$ 은 $E[\ell]$ 위에서 $\varphi^2+p=t\varphi$ 를 $t=0,1,\dots,\ell-1$ 에 대해 시험해 얻는다. 시험하려면 $\ell$ 등분점의 좌표가 있어야 하는데, 그 점이 정의되는 확대체의 차수는 $\ell^2-1$ 규모까지 커진다. 점 하나를 구하는 비용이 점을 전부 세는 비용과 다를 바 없어진다.
 
