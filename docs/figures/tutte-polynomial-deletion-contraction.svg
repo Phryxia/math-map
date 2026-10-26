@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 190" width="500" height="190">
+  <rect x="0" y="0" width="500" height="190" fill="#ffffff"/>
+  <line x1="30" y1="140" x2="80" y2="50" stroke="#333333" stroke-width="2"/>
+  <line x1="130" y1="140" x2="80" y2="50" stroke="#333333" stroke-width="2"/>
+  <line x1="30" y1="140" x2="130" y2="140" stroke="#d93f0b" stroke-width="3"/>
+  <text x="80" y="158" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#d93f0b">e</text>
+  <circle cx="30" cy="140" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="30" y="140" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">u</text>
+  <circle cx="130" cy="140" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="130" y="140" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">v</text>
+  <circle cx="80" cy="50" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="80" y="50" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">w</text>
+  <text x="80" y="180" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">K₃</text>
+  <line x1="200" y1="140" x2="250" y2="50" stroke="#333333" stroke-width="2"/>
+  <line x1="300" y1="140" x2="250" y2="50" stroke="#333333" stroke-width="2"/>
+  <line x1="200" y1="140" x2="300" y2="140" stroke="#bbbbbb" stroke-width="1.5" stroke-dasharray="5,4"/>
+  <circle cx="200" cy="140" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="200" y="140" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">u</text>
+  <circle cx="300" cy="140" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="300" y="140" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">v</text>
+  <circle cx="250" cy="50" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="250" y="50" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">w</text>
+  <text x="250" y="180" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">K₃ − e</text>
+  <path d="M420,50 Q385,95 420,140" fill="none" stroke="#333333" stroke-width="2"/>
+  <path d="M420,50 Q455,95 420,140" fill="none" stroke="#333333" stroke-width="2"/>
+  <ellipse cx="420" cy="140" rx="22" ry="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="420" y="140" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">uv</text>
+  <circle cx="420" cy="50" r="14" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="420" y="50" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">w</text>
+  <text x="420" y="180" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">K₃ / e</text>
+</svg>
