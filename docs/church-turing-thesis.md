@@ -2,7 +2,7 @@
 
 # 개요
 
-**Church–Turing 논제(Church–Turing thesis)** 는 알고리즘으로 계산할 수 있는 자연수 함수가 정확히 Turing 기계로 계산되는 함수라는 주장이다. "알고리즘으로 계산할 수 있다" 는 형식적으로 정의된 개념이 아니므로 이 주장은 증명되는 정리가 아니다. 근거는 [재귀함수](recursive-functions.md), [Lambda calculus](lambda-calculus.md), Turing 기계라는 서로 다른 세 정의가 같은 함수족을 준다는 정리와, Turing 이 계산하는 사람의 동작을 분석한 논증이다.
+**Church–Turing 논제(Church–Turing thesis)** 는 알고리즘으로 계산할 수 있는 자연수 함수가 정확히 Turing 기계로 계산되는 함수라는 주장이다. 어떤 문제에 알고리즘이 없음을 증명하려면 알고리즘이 무엇인지 먼저 정해야 하는데, 손으로 따라 하는 절차라는 일상의 뜻은 수학적 정의가 아니다. 이 논제는 그 일상의 뜻을 Turing 기계라는 수학적 정의로 바꿔 쓰자는 주장이고, [재귀함수](recursive-functions.md), [Lambda calculus](lambda-calculus.md), Turing 기계라는 서로 다른 세 정의가 같은 함수족을 준다는 정리가 근거다.
 
 # 직관
 
