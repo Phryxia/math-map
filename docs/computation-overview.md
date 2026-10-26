@@ -137,6 +137,7 @@ graph TD
 - [교대 Turing 기계](alternating-turing-machines.md): 존재 상태와 전칭 상태를 번갈아 쓰는 기계, AL = P 와 AP = PSPACE 와 APSPACE = EXPTIME, 교대 횟수로 본 다항 계층
   - [일반화 지리 게임](generalized-geography.md): 유향 그래프 위에서 지나지 않은 정점으로 말을 옮기는 게임의 승패 판정이 PSPACE-완전이라는 Schaefer 정리, 무향 판본의 매칭 판정, 바둑과 체스의 난해성
   - [전략 훔치기 논법](strategy-stealing.md): 대칭인 유한 게임에서 나중에 두는 사람의 이기는 전략을 먼저 두는 사람이 빌려 써서 그런 전략이 없음을 보이는 증명, 역방향 귀납의 결정성과 Chomp
+  - [Chomp](chomp.md): 칸과 그 오른쪽 위를 지우고 왼쪽 아래 칸을 지우는 사람이 지는 게임, 가장 큰 원소가 있는 부분순서 게임의 선수 승리, 정사각형 판과 두 줄 판의 이기는 수, 약수 게임, 부분순서 게임의 PSPACE-완전성
   - [Sprague–Grundy 정리](sprague-grundy-theorem.md): 공평 게임의 국면이 Nim 더미 하나와 동등하다는 정리, mex 로 정의한 Grundy 값과 합 게임의 배타적 논리합, Bouton 의 Nim 풀이
   - [Misère Nim](misere-nim.md): 마지막 돌을 가져가는 사람이 지는 Nim, 큰 더미가 없는 국면에서만 갈리는 Bouton 의 판정, 합에서 Grundy 값이 쓰이지 않는 예와 misère 몫
 - [통신 복잡도](communication-complexity.md): 입력을 나눠 가진 두 사람이 주고받는 비트 수, 단색 직사각형과 계수 하한, 동등 판정의 무작위 규칙과 서로소 판정의 선형 하한, Karchmer–Wigderson 정리

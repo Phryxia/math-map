@@ -43,7 +43,7 @@ S. Reisch 는 $n\times n$ 판의 주어진 국면에서 승패 판정이 PSPACE-
 # 활용
 
 - 위상수학의 조합적 증명. Hex 정리는 Brouwer 고정점 정리의 이산 판본이고, [Sperner 보조정리](sperner-lemma.md)처럼 고정점 정리를 유한한 칠하기 논증으로 바꾼다.
-- 조합 게임의 존재 증명. 전략 훔치기 논법으로 Chomp 같은 게임에서도 먼저 두는 사람에게 이기는 전략이 있음이 증명된다.
+- 조합 게임의 존재 증명. 전략 훔치기 논법으로 [Chomp](chomp.md) 같은 게임에서도 먼저 두는 사람에게 이기는 전략이 있음이 증명된다.
 
 [^1]: D. Gale, "The game of Hex and the Brouwer fixed-point theorem", American Mathematical Monthly 86 (1979), 818–827.
 [^2]: S. Reisch, "Hex ist PSPACE-vollständig", Acta Informatica 15 (1981), 167–191.
