@@ -2,7 +2,11 @@
 
 # 개요
 
-**Selmer 군(Selmer group)** 은 수체 위 [타원곡선](elliptic-curves.md)의 $m$ 비틀림 부분의 [Galois 코호몰로지](galois-cohomology.md) 가운데 모든 자리에서 국소적으로 점에서 오는 류들의 유한군이고, **Tate–Shafarevich 군(Tate–Shafarevich group)** 은 그 곡선의 Galois 코호몰로지 가운데 모든 자리에서 국소적으로 자명한 류들의 군이다. 수체 $K$ 위의 타원곡선 $E$ 에 대해 [Mordell–Weil 정리](canonical-height.md)는
+**Selmer 군(Selmer group)** 과 **Tate–Shafarevich 군(Tate–Shafarevich group)** 은 [타원곡선](elliptic-curves.md)의 유리점을 셀 때, 각 소수와 실수에서는 해가 있는데 유리수에서는 해가 없는 곡선들을 다루는 군이다. Selmer 는 1951 년에 $3x^3+4y^3+5z^3=0$ 이 실수에서도 모든 [p 진수](p-adic-numbers.md) 체에서도 $0$ 아닌 해를 갖지만 유리수 해는 갖지 않음을 보였다. 타원곡선의 유리점이 몇 개의 생성원으로 만들어지는지 셀 때, 국소 조건만 보는 계산은 이런 곡선 때문에 실제보다 큰 답을 낸다. 국소 조건으로 걸러낸 계산 가능한 유한군이 Selmer 군이고, 그 답이 실제보다 큰 정도를 재는 군이 Tate–Shafarevich 군이다.
+
+# 직관
+
+Selmer 군은 수체 위 타원곡선의 $m$ 비틀림 부분의 [Galois 코호몰로지](galois-cohomology.md) 가운데 모든 자리에서 국소적으로 점에서 오는 류들의 유한군이고, Tate–Shafarevich 군은 그 곡선의 Galois 코호몰로지 가운데 모든 자리에서 국소적으로 자명한 류들의 군이다. 수체 $K$ 위의 타원곡선 $E$ 에 대해 [Mordell–Weil 정리](canonical-height.md)는
 
 $$
 E(K)\thickspace\cong\thickspace\mathbb Z^r\oplus E(K)\_{\mathrm{tors}}
@@ -25,8 +29,6 @@ $$
 $$
 
 이 셋의 관계를 요약한다. $\text{Ш}$ 의 원소는 모든 자리에서 국소점을 가지면서 유리점이 없는 곡선, 곧 [Brauer 군](brauer-groups.md)에서 다룬 [Hasse 원리](hasse-principle.md)의 반례다. 순위 계산이 막히는 지점과 Hasse 원리가 깨지는 지점이 같은 대상이다.
-
-# 직관
 
 $P\in E(K)$ 에 대해 $2Q=P$ 인 $Q$ 가 $K$ 위에 있는지 묻는다. $\bar K$ 위에서 해는 정확히 네 개이고, 하나를 $Q_0$ 라 하면 나머지는 $T\in E[2]$ 에 대한 $Q_0+T$ 다. 해집합은 $E[2]$ 가 단순추이적으로 작용하는 $E[2]$ 동차공간이고, $K$ 위의 해가 있는지는 이 집합에 $G_K$ 고정점이 있는지와 같다.
 
