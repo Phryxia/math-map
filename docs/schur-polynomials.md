@@ -2,7 +2,11 @@
 
 # 개요
 
-**Schur 다항식(Schur polynomial)** $s_\lambda$ 는 분할(partition) $\lambda$ 마다 하나씩 정해지는 대칭다항식(symmetric polynomial)이고, $\mathrm{GL}\_n(\mathbb C)$ 의 기약 다항식 표현(polynomial representation)의 지표다. [Weyl 지표 공식](weyl-character-formula.md)을 $\mathfrak{gl}\_n$ 에 적용하면 분모가 Vandermonde 행렬식이 되고, 지표가 두 [행렬식](determinants.md)의 비로 떨어진다.
+**Schur 다항식(Schur polynomial)** $s_\lambda$ 는 변수의 자리를 바꾸어도 그대로인 다항식 가운데, 행렬군의 기약표현마다 하나씩 대응하는 것이다. 세 변수에서 $s_{(2)}=x^2+y^2+z^2+xy+yz+zx$ 이고 $s_{(1,1)}=xy+yz+zx$ 이며, $(x+y+z)^2=s_{(2)}+s_{(1,1)}$ 이다. 이 등식은 $3$ 차원 공간을 자기 자신과 [텐서곱](tensor-products.md)한 $9$ 차원 표현이 $6$ 차원과 $3$ 차원 기약표현으로 갈라진다는 진술과 같다. 더 큰 표현의 곱이 어느 기약표현으로 갈라지는지는 Schur 다항식의 곱을 Schur 다항식으로 전개해 구하고, 그 계수는 칸에 수를 채운 표를 세어 얻는다.
+
+# 직관
+
+분할(partition) $\lambda$ 마다 하나씩 정해지는 대칭다항식(symmetric polynomial) $s_\lambda$ 가 $\mathrm{GL}\_n(\mathbb C)$ 의 기약 다항식 표현(polynomial representation)의 지표다. [Weyl 지표 공식](weyl-character-formula.md)을 $\mathfrak{gl}\_n$ 에 적용하면 분모가 Vandermonde 행렬식이 되고, 지표가 두 [행렬식](determinants.md)의 비로 떨어진다.
 
 $$
 s_\lambda(x_1,\dots,x_n)=\frac{\det\negthinspace\big(x_i^{\lambda_j+n-j}\big)\_{1\le i,j\le n}}{\det\negthinspace\big(x_i^{n-j}\big)\_{1\le i,j\le n}}
@@ -18,11 +22,9 @@ $$
 | 조합론 | 모양 $\lambda$ 인 반표준 Young 대각표들의 무게 합 |
 | 대수 | 완전 동차 대칭다항식의 행렬식 (Jacobi–Trudi) |
 
-행렬식 두 개의 비가 왜 다항식인지조차 자명하지 않은데, 그것이 음이 아닌 계수를 갖는다는 것(조합론적 정의)과 다른 행렬식으로도 쓰인다는 것(Jacobi–Trudi)이 따라온다. 세 관점이 각각 다른 질문에 답하기 좋아서, 한 문제를 세 언어 사이에서 옮기는 것이 이 분야의 기본 기술이 된다.
+행렬식 두 개의 비가 왜 다항식인지조차 자명하지 않은데, 그것이 음이 아닌 계수를 갖는다는 것(조합론적 정의)과 다른 행렬식으로도 쓰인다는 것(Jacobi–Trudi)이 따라온다. 세 관점이 각각 다른 질문에 답하기 좋아서, 한 문제를 세 정의 사이에서 옮기는 것이 이 분야의 기본 기술이 된다.
 
-특히 [텐서곱](tensor-products.md) 분해의 계수인 **Littlewood–Richardson 수**는 표현론에서는 정의하기 쉽지만 계산하기 어렵고, 조합론 쪽으로 옮기면 격자 낱말을 세는 유한 규칙이 된다. 이 번역이 없으면 계산이 불가능하다.
-
-# 직관
+특히 텐서곱 분해의 계수인 **Littlewood–Richardson 수**는 표현론에서는 정의하기 쉽지만 계산하기 어렵고, 조합론 쪽으로 옮기면 격자 낱말을 세는 유한 규칙이 된다. 이 번역이 없으면 계산이 불가능하다.
 
 $\mathrm{GL}\_n$ 의 기약표현 $V_\lambda$ 에서 무게 $\mu$ 의 중복도가 $\dim(V_\lambda)\_\mu$ 이고, 지표는 그것을 $x^\mu$ 에 실어 모은 것이다.
 
