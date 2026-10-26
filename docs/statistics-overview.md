@@ -37,7 +37,7 @@ graph TD
 먼저 읽을 것: [확률변수](random-variables.md)(확률 개관), [미분](derivative.md)(해석 개관), [Bayes 정리](bayes.md)(확률 개관), [KL divergence](kl-divergence.md)(정보이론 개관). 곁가지인 정보기하는 [내적 공간](inner-product-spaces.md)(선형대수 개관)과 [Riemann 계량](riemannian-metrics.md)(미분기하 개관)을 더 쓴다. 시작 문서: [최대가능도 추정](maximum-likelihood.md).
 
 - [최대가능도 추정](maximum-likelihood.md): 가능도함수를 최대로 하는 모수, 점근 정규성과 Cramér–Rao 하한
-  - [M-추정량](m-estimators.md): 표본 손실의 합을 최소화하는 추정량, 샌드위치 분산의 점근 정규성, 영향 함수와 Huber 손실의 최소최대 성질
+- [M-추정량](m-estimators.md): 표본 손실의 합을 최소화하는 추정량, 샌드위치 분산의 점근 정규성, 영향 함수와 Huber 손실의 최소최대 성질
 - [지수족](exponential-families.md): 자연모수와 로그분배함수로 적은 분포족, 충분통계량과 켤레 사전분포
 - [Fisher 정보](fisher-information.md): 점수함수의 [공분산](covariance.md), 정보 등식과 Cramér–Rao 하한의 유도
   - [정보기하](information-geometry.md): 분포족을 다양체로 보는 Fisher–Rao 계량, 쌍대 접속과 자연 경사법
@@ -73,6 +73,7 @@ graph TD
 먼저 읽을 갈래: 추정. 먼저 읽을 것: 내적 공간(선형대수 개관). 시작 문서: [선형회귀](linear-regression.md).
 
 - [선형회귀](linear-regression.md): 정규방정식과 사영으로 적은 최소제곱 추정, Gauss–Markov 정리
+  - [분위수 회귀](quantile-regression.md): 조건부 분위수를 일차식으로 추정하는 회귀, 확인 함수와 선형계획, 관측값 p 개를 지나는 해, 점근 정규성과 분위수 교차
   - [일반화선형모형](generalized-linear-models.md): 반응분포를 지수족으로 둔 회귀, 정준연결함수와 반복 가중최소제곱
 - [편향-분산 분해](bias-variance-decomposition.md): 평균제곱오차를 편향의 제곱과 분산으로 가르는 항등식
   - [James–Stein 추정량](james-stein-estimator.md): 세 개 이상의 정규 평균을 함께 줄여 추정하면 모든 모수에서 관측 자체보다 제곱오차가 작다

@@ -100,6 +100,6 @@ $\rho$ 가 볼록이면 목적함수가 볼록이므로 국소 최소가 전역 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [분위수 회귀](quantile-regression.md)
 
 #statistics #optimization #probability
