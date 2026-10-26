@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 200" width="460" height="200">
+  <rect x="0" y="0" width="460" height="200" fill="#ffffff"/>
+  <line x1="50" y1="50" x2="150" y2="50" stroke="#333333" stroke-width="2"/>
+  <line x1="150" y1="50" x2="150" y2="150" stroke="#333333" stroke-width="2"/>
+  <line x1="150" y1="150" x2="50" y2="150" stroke="#333333" stroke-width="2"/>
+  <line x1="50" y1="150" x2="50" y2="50" stroke="#333333" stroke-width="2"/>
+  <circle cx="50" cy="50" r="17" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="50" y="50" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">v1</text>
+  <circle cx="150" cy="50" r="17" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="150" y="50" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">v2</text>
+  <circle cx="150" cy="150" r="17" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="150" y="150" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">v3</text>
+  <circle cx="50" cy="150" r="17" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="50" y="150" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">v4</text>
+  <line x1="355" y1="70" x2="355" y2="130" stroke="#333333" stroke-width="2"/>
+  <ellipse cx="355" cy="45" rx="75" ry="26" fill="#fff6d6" stroke="#333333" stroke-width="2"/>
+  <text x="355" y="45" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central" fill="#000000">v1, v2, v3</text>
+  <ellipse cx="355" cy="155" rx="75" ry="26" fill="#fff6d6" stroke="#333333" stroke-width="2"/>
+  <text x="355" y="155" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central" fill="#000000">v1, v3, v4</text>
+</svg>
