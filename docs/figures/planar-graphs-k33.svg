@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 260" width="360" height="260">
+  <rect x="0" y="0" width="360" height="260" fill="#ffffff"/>
+  <g stroke="#333333" stroke-width="2" fill="none">
+    <polygon points="180,60 249.3,100 249.3,180 180,220 110.7,180 110.7,100"/>
+    <line x1="180" y1="60" x2="180" y2="220"/>
+    <line x1="110.7" y1="180" x2="249.3" y2="100"/>
+    <path d="M249.3,180 C350,200 330,-5 180,18 C95,25 60,80 110.7,100"/>
+  </g>
+  <circle cx="180" cy="140" r="7" fill="none" stroke="#d62728" stroke-width="2"/>
+  <g stroke="#333333" stroke-width="2">
+    <circle cx="180" cy="60" r="16" fill="#f4b6b6"/>
+    <circle cx="249.3" cy="180" r="16" fill="#f4b6b6"/>
+    <circle cx="110.7" cy="180" r="16" fill="#f4b6b6"/>
+    <circle cx="249.3" cy="100" r="16" fill="#b6cdf4"/>
+    <circle cx="180" cy="220" r="16" fill="#b6cdf4"/>
+    <circle cx="110.7" cy="100" r="16" fill="#b6cdf4"/>
+  </g>
+  <g font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">
+    <text x="180" y="60">a1</text>
+    <text x="249.3" y="180">a2</text>
+    <text x="110.7" y="180">a3</text>
+    <text x="249.3" y="100">b1</text>
+    <text x="180" y="220">b2</text>
+    <text x="110.7" y="100">b3</text>
+  </g>
+</svg>
