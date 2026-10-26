@@ -2,13 +2,17 @@
 
 # 개요
 
-**근계(root system)** 는 유클리드 공간에서 각 원소에 대한 반사로 닫혀 있고 정수성 조건을 만족하는 유한 벡터 집합이다. 복소 반단순 [Lie 대수](lie-algebras.md)는 Cartan 부분대수 $\mathfrak h$ 의 동시 고유공간으로 분해된다[^1].
+**근계(root system)** 는 공간에 놓인 유한 개의 벡터로, 각 벡터에 수직인 거울로 전체를 비추어도 제자리로 오고 벡터 사이의 각도가 정해진 몇 가지뿐인 배치다. 평면에서 정육각형의 꼭짓점을 가리키는 벡터 여섯 개는 어느 벡터에 수직인 직선으로 뒤집어도 서로 자리를 바꿀 뿐이고, 이웃한 두 벡터의 각도는 $60^\circ$ 다. 반사와 각도 조건만으로 이런 배치가 몇 가지로 제한되는지가 문제다. 조건에서 두 벡터 사이의 각도가 $90^\circ,60^\circ,45^\circ,30^\circ$ 와 그 보각으로 제한되고, 이것으로 배치 전체가 네 무한 계열과 다섯 예외로 분류된다.
+
+# 직관
+
+근계는 유클리드 공간에서 각 원소에 대한 반사로 닫혀 있고 정수성 조건을 만족하는 유한 벡터 집합이다. 복소 반단순 [Lie 대수](lie-algebras.md)는 Cartan 부분대수 $\mathfrak h$ 의 동시 고유공간으로 분해된다[^1].
 
 $$
 \mathfrak g=\mathfrak h\oplus\bigoplus_{\alpha\in\Phi}\mathfrak g_\alpha
 $$
 
-여기 나오는 유한집합 $\Phi\subset\mathfrak h^\ast$ 가 **근계**다. 각 $\dim\mathfrak g_\alpha=1$ 이므로 대수의 정보가 유클리드 공간 안의 유한개 벡터로 압축된다.
+여기 나오는 유한집합 $\Phi\subset\mathfrak h^\ast$ 가 근계다. 각 $\dim\mathfrak g_\alpha=1$ 이므로 대수의 정보가 유클리드 공간 안의 유한개 벡터로 압축된다.
 
 이 벡터들은 **정수성** 조건을 만족한다. 두 근 $\alpha,\beta$ 에 대해
 
@@ -25,8 +29,6 @@ A_n,\ B_n,\ C_n,\ D_n,\ G_2,\ F_4,\ E_6,\ E_7,\ E_8
 $$
 
 이 목록이 복소 단순 Lie 대수, 단순 대수군, [유한 단순군](finite-simple-groups.md)의 Lie 형 계열, 단순 특이점을 동시에 분류한다.
-
-# 직관
 
 각 근 $\alpha$ 마다 $\mathfrak{sl}\_2$ 부분대수 $\lbrace E_\alpha,F_\alpha,H_\alpha\rbrace$ 가 있다. $\mathfrak g$ 를 이 $\mathfrak{sl}\_2$ 의 표현으로 보면 올림·내림 논법으로 무게가 $2$ 씩 오르내리는 정수 사슬이 나오고 정수성 조건이 따라오며, 무게열의 양 끝을 맞바꾸는 것이 초평면 $\alpha^\perp$ 에 대한 반사 $s_\alpha(\beta)=\beta-\langle\beta,\alpha\rangle\thinspace\alpha$ 다. 이 반사가 $\Phi$ 를 $\Phi$ 로 보내므로 근계는 자기 자신의 반사들에 닫혀 있고, 그 반사들이 생성하는 유한군이 Weyl 군이다. 2 차원에서 두 벡터를 놓고 반사를 반복하면 각도가 $60^\circ$ 일 때 근 6 개의 $A_2$ , $45^\circ$ 일 때 8 개의 $B_2$ , $30^\circ$ 일 때 12 개의 $G_2$ 가 나오고, 다른 각도에서는 벡터가 무한히 생겨 유한성이 깨진다.
 
