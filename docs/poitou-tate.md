@@ -2,7 +2,11 @@
 
 # 개요
 
-**Poitou–Tate 완전열(Poitou–Tate exact sequence)**[^1] 은 수체 위 유한 Galois 가군의 대역 코호몰로지와 국소 코호몰로지를 잇는 9 항 완전열이다. [Selmer 군](selmer-tate-shafarevich.md)은 대역 [Galois 코호몰로지](galois-cohomology.md) $H^1(K,M)$ 을 모든 자리의 국소 코호몰로지 $H^1(K_v,M)$ 로 보내고 국소 조건으로 걸러 정의한다. Poitou–Tate 완전열은 이 국소화 사상의 핵과 상을 결정한다.
+**Poitou–Tate 완전열(Poitou–Tate exact sequence)**[^1] 은 유리수 위에서 정의된 대상을 소수마다, 그리고 실수 위에서 따로 볼 때 그 국소 모습들이 서로 어떻게 묶여 있는지를 적은 9 항 완전열이다. 방정식 $x^2+y^2=-z^2$ 은 실수에서도, $p=2$ 인 [p 진수](p-adic-numbers.md)에서도 $0$ 아닌 해가 없지만, 홀수 소수 $p$ 의 $p$ 진수에서는 해가 있다. 유리수 $a,b$ 를 어떻게 잡아도 $ax^2+by^2=z^2$ 이 해를 갖지 않는 자리의 개수는 이처럼 항상 짝수다. 완전열은 이런 대역 제약을 유한 Galois 가군을 계수로 하는 코호몰로지 전체에 대해 한 줄로 적고, 국소 자료만으로 [Selmer 군](selmer-tate-shafarevich.md)의 크기를 계산하게 한다.
+
+# 직관
+
+수체 $K$ 위 유한 Galois 가군 $M$ 의 대역 코호몰로지와 국소 코호몰로지를 잇는 것이 이 완전열이다. Selmer 군은 대역 [Galois 코호몰로지](galois-cohomology.md) $H^1(K,M)$ 을 모든 자리의 국소 코호몰로지 $H^1(K_v,M)$ 로 보내고 국소 조건으로 걸러 정의한다. Poitou–Tate 완전열은 이 국소화 사상의 핵과 상을 결정한다.
 
 $$
 \begin{aligned}
@@ -18,8 +22,6 @@ $$
 - **크기 공식.** 국소 조건으로 잘라낸 Selmer 군과 소멸자 조건으로 잘라낸 쌍대 Selmer 군의 크기 비가 국소 데이터만으로 계산된다. 이것이 Greenberg–Wiles 공식이다.
 
 두 진술은 같은 뿌리를 갖는다. [국소 유체론](local-class-field-theory.md)이 각 자리에서 완전 짝을 주고, [Brauer 군](brauer-groups.md)의 $\sum_v\mathrm{inv}\_v=0$ 이 그 짝들을 대역적으로 묶는다. Poitou–Tate 는 이 두 사실을 계수 $M$ 으로 확장한다.
-
-# 직관
 
 Selmer 군은 대역 코호몰로지 $H^1(K,M)$ 의 부분군이므로 크기를 세려면 $H^1(K,M)$ 을 알아야 한다. 국소 $H^1(K_v,M)$ 은 자리마다 국소 Euler 표수 공식으로 센다. 국소 크기를 전부 알고도 대역 부분군의 크기는 나오지 않는다. 국소화 사상 $H^1(K,M)\to\prod_vH^1(K_v,M)$ 의 상이 무엇인지 모르면 어느 국소 조건 조합이 대역류에서 오는지 가릴 수 없다.
 
