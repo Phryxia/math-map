@@ -54,7 +54,7 @@ $$
 
 ## Bregman divergence 와 Pythagoras 정리
 
-KL divergence 는 지수족에서 로그분배함수를 생성함수로 하는 Bregman divergence 다.
+KL divergence 는 지수족에서 로그분배함수를 생성함수로 하는 [Bregman divergence](bregman-divergence.md)다.
 
 $$
 D\_{\mathrm{KL}}(p\_{\theta\_1}\thinspace\Vert\thinspace p\_{\theta\_2})=\psi(\theta\_2)-\psi(\theta\_1)-\langle\theta\_2-\theta\_1,\thinspace\nabla\psi(\theta\_1)\rangle

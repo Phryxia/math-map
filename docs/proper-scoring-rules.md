@@ -2,7 +2,7 @@
 
 # 개요
 
-**적정 점수 규칙(proper scoring rule)** 은 확률 예측 $P$ 와 실제 결과 $y$ 에 손실 $S(P,y)$ 를 매기는 규칙 가운데, 결과의 참 분포가 $Q$ 일 때 기대 손실을 가장 작게 하는 예측이 $Q$ 자신인 것이다. 예측하는 사람이 자기가 믿는 확률을 그대로 내놓게 만드는 규칙이다. 로그 점수의 기대 초과 손실은 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)이고, 적정 점수 규칙은 모두 [볼록](convexity.md) 함수 하나에서 만들어지며 기대 초과 손실은 그 함수의 Bregman 발산(Bregman divergence)이다[^1].
+**적정 점수 규칙(proper scoring rule)** 은 확률 예측 $P$ 와 실제 결과 $y$ 에 손실 $S(P,y)$ 를 매기는 규칙 가운데, 결과의 참 분포가 $Q$ 일 때 기대 손실을 가장 작게 하는 예측이 $Q$ 자신인 것이다. 예측하는 사람이 자기가 믿는 확률을 그대로 내놓게 만드는 규칙이다. 로그 점수의 기대 초과 손실은 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)이고, 적정 점수 규칙은 모두 [볼록](convexity.md) 함수 하나에서 만들어지며 기대 초과 손실은 그 함수의 [Bregman divergence](bregman-divergence.md)다[^1].
 
 # 직관
 
@@ -42,7 +42,7 @@ $G$ 가 순볼록이면 $S$ 는 엄격히 적정이다.
 
 증명의 요지. 위의 꼴이면 $S(P,Q)-S(Q,Q)=G(Q)-G(P)-\langle G'(P),Q-P\rangle$ 이고, 볼록 함수는 접선 위에 있으므로 이 값이 $0$ 이상이다. 거꾸로 $S$ 가 적정이면 $-S(Q,Q)$ 는 $Q$ 의 일차함수 $-S(P,\cdot)$ 들의 상한이므로 볼록이고, 이것을 $G$ 로 잡는다.
 
-$G(p)=\sum_kp_k\log p_k$ 이면 로그 점수가 나오고, $G(p)=\sum_kp_k^2$ 이면 Brier 점수에서 상수 $1$ 을 뺀 것이 나온다. 기대 초과 손실 $G(Q)-G(P)-\langle G'(P),Q-P\rangle$ 이 $G$ 의 Bregman 발산이고, 로그 점수에서는 KL divergence 다.
+$G(p)=\sum_kp_k\log p_k$ 이면 로그 점수가 나오고, $G(p)=\sum_kp_k^2$ 이면 Brier 점수에서 상수 $1$ 을 뺀 것이 나온다. 기대 초과 손실 $G(Q)-G(P)-\langle G'(P),Q-P\rangle$ 이 $G$ 의 Bregman divergence이고, 로그 점수에서는 KL divergence 다.
 
 ## 국소성
 
@@ -56,7 +56,7 @@ $G(p)=\sum_kp_k\log p_k$ 이면 로그 점수가 나오고, $G(p)=\sum_kp_k^2$ �
 
 ## 함수값의 유도
 
-분포 전체 대신 평균이나 분위수 같은 값 하나를 예측할 때도 같은 질문을 한다. 평균은 제곱 오차로, $\tau$-분위수는 [분위수 회귀](quantile-regression.md)의 확인 함수로 유도되고, [기대 결손](expected-shortfall.md)은 홀로 유도되지 않는다. 평균을 유도하는 손실은 Bregman 발산 꼴뿐이다[^4].
+분포 전체 대신 평균이나 분위수 같은 값 하나를 예측할 때도 같은 질문을 한다. 평균은 제곱 오차로, $\tau$-분위수는 [분위수 회귀](quantile-regression.md)의 확인 함수로 유도되고, [기대 결손](expected-shortfall.md)은 홀로 유도되지 않는다. 평균을 유도하는 손실은 Bregman divergence 꼴뿐이다[^4].
 
 # 활용
 
@@ -75,7 +75,7 @@ $G(p)=\sum_kp_k\log p_k$ 이면 로그 점수가 나오고, $G(p)=\sum_kp_k^2$ �
 ## 선수지식
 
 - [KL divergence](kl-divergence.md)
-- [볼록성](convexity.md)
+- [Bregman divergence](bregman-divergence.md)
 
 ## 더 알아보기
 

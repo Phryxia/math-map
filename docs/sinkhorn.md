@@ -110,7 +110,7 @@ $$
 \mathcal C_1=\lbrace P:P\mathbf 1=a\rbrace,\qquad \mathcal C_2=\lbrace P:P^\top\mathbf 1=b\rbrace
 $$
 
-반복의 한 단계는 $\mathcal C_1$ 로의 KL 사영이고 다음 단계는 $\mathcal C_2$ 로의 KL 사영이다. 아핀집합으로의 Bregman 교대 사영이 교집합으로 수렴한다는 정리가 이 반복을 거둔다.
+반복의 한 단계는 $\mathcal C_1$ 로의 KL 사영이고 다음 단계는 $\mathcal C_2$ 로의 KL 사영이다. 아핀집합으로의 [Bregman divergence](bregman-divergence.md) 교대 사영이 교집합으로 수렴한다는 정리가 이 반복을 거둔다.
 
 ## 편향의 크기
 

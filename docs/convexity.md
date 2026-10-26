@@ -143,7 +143,7 @@ $$
 - [경사하강법](gradient-descent.md)
 - [선형계획법](linear-programming.md)
 - [기하 중앙값](geometric-median.md)
-- [적정 점수 규칙](proper-scoring-rules.md)
+- [Bregman divergence](bregman-divergence.md)
 - [압축 센싱](compressed-sensing.md)
 - [곱셈 가중치 절차](multiplicative-weights.md)
 

@@ -107,7 +107,7 @@ $$
 \Vert P - Q\Vert_{TV} \le \sqrt{\tfrac{1}{2} D(P\thinspace\Vert\thinspace Q)} .
 $$
 
-- KL divergence 는 음의 엔트로피를 생성함수로 하는 Bregman divergence 이며, 가까운 두 분포에 대해서는 이차 근사가 [Fisher 정보](fisher-information.md) 행렬로 주어진다.
+- KL divergence 는 음의 엔트로피를 생성함수로 하는 [Bregman divergence](bregman-divergence.md)이며, 가까운 두 분포에 대해서는 이차 근사가 [Fisher 정보](fisher-information.md) 행렬로 주어진다.
 
 $$
 D(P_{\theta}\thinspace\Vert\thinspace P_{\theta+\delta}) = \tfrac{1}{2}\thinspace\delta^{\top} I(\theta)\thinspace \delta + o(\Vert\delta\Vert^2).
