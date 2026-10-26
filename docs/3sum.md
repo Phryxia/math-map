@@ -62,6 +62,6 @@ M. Pătraşcu 는 3SUM 을 합성곱 판본으로 바꾸고 해시로 수를 작
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [k-SUM 문제](k-sum.md)
 
 #complexity #algorithms

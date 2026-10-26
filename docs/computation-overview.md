@@ -168,7 +168,8 @@ graph TD
 - [최단경로](shortest-paths.md): Bellman–Ford, Dijkstra, 고정점으로서의 최단거리
 - [세분 복잡도](fine-grained-complexity.md): 3SUM, 모든 쌍 최단경로, 직교 벡터의 세 가설과 지수를 보존하는 환원, 세 점 공선과 음수 삼각형과 편집 거리의 하한
   - [OMv 가설](omv-hypothesis.md): 미리 받은 부울 행렬에 하나씩 오는 벡터를 곱하는 문제의 n^{3−ε} 하한 가설, OuMv 로의 환원, 동적 그래프 자료구조의 갱신과 질의 시간 하한
-  - [3SUM 문제](3sum.md): 합이 0 인 세 정수의 판정, 두 포인터의 O(n²) 와 3SUM 가설, 결정 나무의 깊이, 세 점 공선과 삼각형 나열로 가는 환원
+- [3SUM 문제](3sum.md): 합이 0 인 세 정수의 판정, 두 포인터의 O(n²) 와 3SUM 가설, 결정 나무의 깊이, 세 점 공선과 삼각형 나열로 가는 환원
+  - [k-SUM 문제](k-sum.md): 합이 0 인 k 개의 판정, 중간에서 만나기의 n^{⌈k/2⌉} 알고리즘, 모든 k 에서의 n^{o(k)} 알고리즘이 지수 시간 가설을 깨는 환원, 선형 결정 나무의 깊이
 - [고속 Fourier 변환](fft.md): 분할정복으로 길이 $n$ 수열의 Fourier 계수를 $O(n\log n)$ 에 계산한다
   - [Schönhage–Strassen 알고리즘](schonhage-strassen.md): 조각의 합성곱을 $\mathbb Z/(2^K+1)\mathbb Z$ 위의 고속 Fourier 변환으로 계산해 $N$ 비트 정수를 $O(N\log N\log\log N)$ 에 곱한다
   - [Gauss 구적](gaussian-quadrature.md): 노드와 가중치를 함께 풀어 함수 호출 $n$ 번으로 차수 $2n-1$ 까지 정확한 적분
