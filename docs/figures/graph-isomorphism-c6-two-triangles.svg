@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 200" width="420" height="200">
+  <rect x="0" y="0" width="420" height="200" fill="#ffffff"/>
+  <line x1="100.0" y1="30.0" x2="160.6" y2="65.0" stroke="#333333" stroke-width="2"/>
+  <line x1="160.6" y1="65.0" x2="160.6" y2="135.0" stroke="#333333" stroke-width="2"/>
+  <line x1="160.6" y1="135.0" x2="100.0" y2="170.0" stroke="#333333" stroke-width="2"/>
+  <line x1="100.0" y1="170.0" x2="39.4" y2="135.0" stroke="#333333" stroke-width="2"/>
+  <line x1="39.4" y1="135.0" x2="39.4" y2="65.0" stroke="#333333" stroke-width="2"/>
+  <line x1="39.4" y1="65.0" x2="100.0" y2="30.0" stroke="#333333" stroke-width="2"/>
+  <line x1="250.0" y1="40.0" x2="210.0" y2="100.0" stroke="#333333" stroke-width="2"/>
+  <line x1="210.0" y1="100.0" x2="290.0" y2="100.0" stroke="#333333" stroke-width="2"/>
+  <line x1="290.0" y1="100.0" x2="250.0" y2="40.0" stroke="#333333" stroke-width="2"/>
+  <line x1="360.0" y1="100.0" x2="320.0" y2="160.0" stroke="#333333" stroke-width="2"/>
+  <line x1="320.0" y1="160.0" x2="400.0" y2="160.0" stroke="#333333" stroke-width="2"/>
+  <line x1="400.0" y1="160.0" x2="360.0" y2="100.0" stroke="#333333" stroke-width="2"/>
+  <circle cx="100.0" cy="30.0" r="12" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="160.6" cy="65.0" r="12" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="160.6" cy="135.0" r="12" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="100.0" cy="170.0" r="12" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="39.4" cy="135.0" r="12" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="39.4" cy="65.0" r="12" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="250.0" cy="40.0" r="12" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="210.0" cy="100.0" r="12" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="290.0" cy="100.0" r="12" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="360.0" cy="100.0" r="12" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="320.0" cy="160.0" r="12" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="400.0" cy="160.0" r="12" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+</svg>
