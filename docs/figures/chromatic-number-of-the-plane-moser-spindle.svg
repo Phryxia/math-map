@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 280" width="340" height="280">
+  <rect x="0" y="0" width="340" height="280" fill="#ffffff"/>
+  <line x1="45" y1="140" x2="147.7" y2="30.7" stroke="#333333" stroke-width="2"/>
+  <line x1="45" y1="140" x2="191" y2="174.3" stroke="#333333" stroke-width="2"/>
+  <line x1="147.7" y1="30.7" x2="191" y2="174.3" stroke="#333333" stroke-width="2"/>
+  <line x1="147.7" y1="30.7" x2="293.7" y2="65" stroke="#333333" stroke-width="2"/>
+  <line x1="191" y1="174.3" x2="293.7" y2="65" stroke="#333333" stroke-width="2"/>
+  <line x1="45" y1="140" x2="191" y2="105.7" stroke="#333333" stroke-width="2"/>
+  <line x1="45" y1="140" x2="147.7" y2="249.3" stroke="#333333" stroke-width="2"/>
+  <line x1="191" y1="105.7" x2="147.7" y2="249.3" stroke="#333333" stroke-width="2"/>
+  <line x1="191" y1="105.7" x2="293.7" y2="215" stroke="#333333" stroke-width="2"/>
+  <line x1="147.7" y1="249.3" x2="293.7" y2="215" stroke="#333333" stroke-width="2"/>
+  <line x1="293.7" y1="65" x2="293.7" y2="215" stroke="#d93f0b" stroke-width="3"/>
+  <circle cx="45" cy="140" r="14" fill="#1f4e9e" stroke="#333333" stroke-width="2"/>
+  <text x="45" y="140" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#ffffff">A</text>
+  <circle cx="293.7" cy="65" r="14" fill="#1f4e9e" stroke="#333333" stroke-width="2"/>
+  <text x="293.7" y="65" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#ffffff">B</text>
+  <circle cx="293.7" cy="215" r="14" fill="#1f4e9e" stroke="#333333" stroke-width="2"/>
+  <text x="293.7" y="215" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#ffffff">C</text>
+  <circle cx="147.7" cy="30.7" r="14" fill="#f2a541" stroke="#333333" stroke-width="2"/>
+  <text x="147.7" y="30.7" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">2</text>
+  <circle cx="191" cy="174.3" r="14" fill="#7fbf7f" stroke="#333333" stroke-width="2"/>
+  <text x="191" y="174.3" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">3</text>
+  <circle cx="191" cy="105.7" r="14" fill="#f2a541" stroke="#333333" stroke-width="2"/>
+  <text x="191" y="105.7" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">2</text>
+  <circle cx="147.7" cy="249.3" r="14" fill="#7fbf7f" stroke="#333333" stroke-width="2"/>
+  <text x="147.7" y="249.3" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#000000">3</text>
+</svg>
