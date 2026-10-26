@@ -2,7 +2,11 @@
 
 # 개요
 
-**Schur–Weyl 쌍대성(Schur–Weyl duality)** 은 $\mathbb C^n$ 의 $k$ 중 [텐서곱](tensor-products.md) 위에서 일반선형군(general linear group)의 작용과 대칭군(symmetric group)의 작용이 서로의 가환자(commutant)라는 정리다. $V=\mathbb C^n$ 을 잡고 그 $k$ 중 텐서곱 $V^{\otimes k}$ 를 본다. 이 공간에는 두 군이 작용한다.
+**Schur–Weyl 쌍대성(Schur–Weyl duality)** 은 벡터 공간을 여러 번 [텐서곱](tensor-products.md)한 공간에서, 모든 자리에 같은 행렬을 곱하는 작용과 자리를 바꾸는 작용이 공간을 같은 조각들로 쪼갠다는 정리다. $\mathbb C^2$ 를 두 번 텐서곱한 $4$ 차원 공간에서 두 자리를 바꾸어도 그대로인 텐서는 $e_1\otimes e_1$, $e_2\otimes e_2$, $e_1\otimes e_2+e_2\otimes e_1$ 이 만드는 $3$ 차원이고, 부호만 바뀌는 텐서는 $e_1\otimes e_2-e_2\otimes e_1$ 이 만드는 $1$ 차원이다. 두 조각은 각각 $2\times2$ 가역행렬의 기약표현이기도 하다. 자리가 $k$ 개일 때에도 자리 바꾸기로 쪼갠 조각이 그대로 행렬군의 기약표현이므로, 한쪽 군의 표현에서 다른 쪽 군의 표현이 정해진다.
+
+# 직관
+
+$V=\mathbb C^n$ 을 잡고 그 $k$ 중 텐서곱 $V^{\otimes k}$ 를 본다. 이 공간에는 일반선형군(general linear group)과 대칭군(symmetric group)이 작용한다.
 
 - $\mathrm{GL}\_n(\mathbb C)$ 가 각 자리에 똑같이 작용한다. $g\cdot(v_1\otimes\cdots\otimes v_k)=gv_1\otimes\cdots\otimes gv_k$ 이다.
 - 대칭군 $S_k$ 가 자리를 바꾼다. $\sigma\cdot(v_1\otimes\cdots\otimes v_k)=v_{\sigma^{-1}(1)}\otimes\cdots\otimes v_{\sigma^{-1}(k)}$ 이다.
@@ -11,7 +15,7 @@
 
 Schur–Weyl 쌍대성에서 이 관계는 가능한 한 팽팽하다.
 
-> 각 군이 생성하는 작용소대수는 정확히 다른 쪽의 중심화대수다. $\mathrm{GL}\_n$ 과 교환하는 작용소는 전부 $S_k$ 의 선형결합이고, 그 역도 성립한다.
+> 각 군이 생성하는 작용소대수는 정확히 다른 쪽의 중심화대수(commutant, 가환자)다. $\mathrm{GL}\_n$ 과 교환하는 작용소는 전부 $S_k$ 의 선형결합이고, 그 역도 성립한다.
 
 여기서 분해가 따라온다.
 
@@ -22,8 +26,6 @@ $$
 같은 색인 $\lambda$ — $k$ 의 분할 — 가 대칭군 기약표현 $S^\lambda$ 와 $\mathrm{GL}\_n$ 기약표현 $V_\lambda$ 를 **동시에** 붙잡는다. 중복도가 다른 쪽의 기약표현이라는 말이다.
 
 분할이 두 표현론을 동시에 색인하므로 [Schur 다항식](schur-polynomials.md)은 대칭함수의 기저이면서 $\mathrm{GL}\_n$ 지표다. [군의 표현](group-representations.md)의 지표 이론이 두 해석을 잇는다.
-
-# 직관
 
 $k=2$ 에서 $V\otimes V$ 는 대칭 부분과 반대칭 부분으로 갈린다.
 
