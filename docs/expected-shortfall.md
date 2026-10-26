@@ -2,7 +2,7 @@
 
 # 개요
 
-**기대 결손(expected shortfall)** 은 손실 $L$ 의 분포에서 위쪽 $1-\alpha$ 꼬리에 든 손실의 평균이다. 손실의 $\alpha$-분위수인 **위험가치(value at risk, VaR)** 보다 크거나 같고, 위험가치와 달리 두 포지션을 합친 기대 결손이 각 기대 결손의 합을 넘지 않는다. 그래서 Artzner, Delbaen, Eber, Heath 가 정한 정합 위험 측도(coherent risk measure)의 네 공리를 모두 만족한다[^1]. 조건부 위험가치(conditional value at risk, CVaR)라고도 한다.
+**기대 결손(expected shortfall)** 은 손실 $L$ 의 분포에서 위쪽 $1-\alpha$ 꼬리에 든 손실의 평균이다. 손실의 $\alpha$-분위수인 **위험가치(value at risk, VaR)** 보다 크거나 같고, 위험가치와 달리 두 포지션을 합친 기대 결손이 각 기대 결손의 합을 넘지 않는다. 그래서 Artzner, Delbaen, Eber, Heath 가 정한 [정합 위험 측도](coherent-risk-measures.md)(coherent risk measure)의 네 공리를 모두 만족한다[^1]. 조건부 위험가치(conditional value at risk, CVaR)라고도 한다.
 
 # 직관
 
@@ -100,6 +100,6 @@ $\alpha=0.975$ 에서 기대 결손은 $\mu+2.338\sigma$ 이고, $\alpha=0.99$ �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [정합 위험 측도](coherent-risk-measures.md)
 
 #statistics #probability #optimization

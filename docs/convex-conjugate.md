@@ -103,5 +103,6 @@ $f$ 가 $\mu$ 강볼록이면 $\nabla f^\ast$ 가 $1/\mu$ Lipschitz 이고, $\na
 ## 더 알아보기
 
 - [대편차 원리](large-deviations.md)
+- [정합 위험 측도](coherent-risk-measures.md)
 
 #optimization #analysis #probability #information_theory
