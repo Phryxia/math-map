@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" width="480" height="200">
+  <rect x="0" y="0" width="480" height="200" fill="#ffffff"/>
+  <line x1="40" y1="40" x2="170" y2="40" stroke="#333333" stroke-width="2"/>
+  <text x="105" y="26" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#1f4e9e">3</text>
+  <line x1="170" y1="40" x2="170" y2="160" stroke="#333333" stroke-width="2"/>
+  <text x="186" y="100" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#1f4e9e">1</text>
+  <line x1="170" y1="160" x2="40" y2="160" stroke="#333333" stroke-width="2"/>
+  <text x="105" y="176" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#1f4e9e">4</text>
+  <line x1="40" y1="160" x2="40" y2="40" stroke="#333333" stroke-width="2"/>
+  <text x="24" y="100" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#1f4e9e">2</text>
+  <line x1="290" y1="40" x2="440" y2="40" stroke="#333333" stroke-width="2"/>
+  <text x="365" y="26" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#1f4e9e">3</text>
+  <line x1="440" y1="40" x2="365" y2="160" stroke="#333333" stroke-width="2"/>
+  <text x="416.5" y="96" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#1f4e9e">1</text>
+  <line x1="290" y1="40" x2="365" y2="160" stroke="#333333" stroke-width="2"/>
+  <text x="313.5" y="96" font-family="sans-serif" font-size="14" text-anchor="middle" dominant-baseline="central" fill="#1f4e9e">2</text>
+  <line x1="210" y1="100" x2="250" y2="100" stroke="#333333" stroke-width="2"/>
+  <polyline points="242,94 250,100 242,106" fill="none" stroke="#333333" stroke-width="2"/>
+  <circle cx="40" cy="40" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="40" y="40" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central" fill="#000000">a</text>
+  <circle cx="170" cy="40" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="170" y="40" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central" fill="#000000">b</text>
+  <circle cx="170" cy="160" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="170" y="160" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central" fill="#000000">c</text>
+  <circle cx="40" cy="160" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="40" y="160" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central" fill="#000000">d</text>
+  <circle cx="290" cy="40" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="290" y="40" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central" fill="#000000">a</text>
+  <circle cx="440" cy="40" r="15" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="440" y="40" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central" fill="#000000">b</text>
+  <circle cx="365" cy="160" r="18" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="365" y="160" font-family="sans-serif" font-size="15" text-anchor="middle" dominant-baseline="central" fill="#000000">cd</text>
+</svg>
