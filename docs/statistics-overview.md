@@ -73,8 +73,9 @@ graph TD
 먼저 읽을 갈래: 추정. 먼저 읽을 것: 내적 공간(선형대수 개관). 시작 문서: [선형회귀](linear-regression.md).
 
 - [선형회귀](linear-regression.md): 정규방정식과 사영으로 적은 최소제곱 추정, Gauss–Markov 정리
-  - [분위수 회귀](quantile-regression.md): 조건부 분위수를 일차식으로 추정하는 회귀, 확인 함수와 선형계획, 관측값 p 개를 지나는 해, 점근 정규성과 분위수 교차
   - [일반화선형모형](generalized-linear-models.md): 반응분포를 지수족으로 둔 회귀, 정준연결함수와 반복 가중최소제곱
+- [분위수 회귀](quantile-regression.md): 조건부 분위수를 일차식으로 추정하는 회귀, 확인 함수와 선형계획, 관측값 p 개를 지나는 해, 점근 정규성과 분위수 교차
+  - [기대 결손](expected-shortfall.md): 손실 분포의 위쪽 꼬리 평균, 위험가치의 부분가법성 실패와 정합 위험 측도, Rockafellar–Uryasev 공식, 유도 가능성
 - [편향-분산 분해](bias-variance-decomposition.md): 평균제곱오차를 편향의 제곱과 분산으로 가르는 항등식
   - [James–Stein 추정량](james-stein-estimator.md): 세 개 이상의 정규 평균을 함께 줄여 추정하면 모든 모수에서 관측 자체보다 제곱오차가 작다
     - [Ledoit–Wolf 축소 추정](ledoit-wolf-shrinkage.md): 표본공분산을 단위행렬의 배수 쪽으로 줄이는 볼록결합, 자료에서 계산한 최적 비율과 신탁 추정량에 대한 일치성

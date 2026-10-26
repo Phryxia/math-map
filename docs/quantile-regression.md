@@ -71,7 +71,7 @@ $\tau$ 마다 따로 추정한 직선 $x^{\mathsf T}\hat\beta(\tau)$ 는 표본�
 
 - 이분산의 기술. 오차의 분산이 $x$ 에 따라 달라지면 $\tau=0.1$ 과 $\tau=0.9$ 의 직선의 기울기가 다르다. 소득과 식비의 관계에서 소득이 클수록 식비의 퍼짐이 커지는 것이 이런 예다.
 - 강건한 회귀. 중앙값 회귀는 반응의 큰 오차에 영향을 받지 않는 회귀이고, 오차 분포의 꼬리가 두꺼울 때 최소제곱보다 분산이 작다.
-- 위험 측정. 금융에서 손실 분포의 $\tau$-분위수인 위험가치(value at risk)를 설명변수의 함수로 추정한다.
+- 위험 측정. 금융에서 손실 분포의 $\tau$-분위수인 위험가치(value at risk)를 설명변수의 함수로 추정하고, 그 위쪽 꼬리의 평균으로 [기대 결손](expected-shortfall.md)을 추정한다.
 - 성장 곡선. 나이에 따른 키와 몸무게의 백분위 곡선을 조건부 분위수로 그린다.
 
 [^1]: R. Koenker, G. Bassett, "Regression quantiles", Econometrica 46 (1978), 33–50.
@@ -85,6 +85,6 @@ $\tau$ 마다 따로 추정한 직선 $x^{\mathsf T}\hat\beta(\tau)$ 는 표본�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [기대 결손](expected-shortfall.md)
 
 #statistics #optimization
