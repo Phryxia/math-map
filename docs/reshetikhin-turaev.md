@@ -2,7 +2,11 @@
 
 # 개요
 
-**Reshetikhin–Turaev 구성**은 [모듈러 텐서범주](modular-tensor-categories.md) 하나를 입력으로 받아 3 차원 위상 불변량을 내놓는다. 출력은 둘이다. 닫힌 유향 3 차원 [다양체](manifolds.md) $M$ 에 붙는 수 $\tau(M)\in\mathbb C$ 와, $M$ 안에 놓인 라벨 붙은 링크에 붙는 수다. MTC(modular tensor category)와 3 차원 [TQFT](topological-quantum-field-theory.md)(topological quantum field theory)의 대응 가운데 대수에서 위상으로 가는 방향이 이 구성이다.
+**Reshetikhin–Turaev 구성(Reshetikhin–Turaev construction)** 은 3 차원 공간 안의 고리 그림에서 출발해 닫힌 3 차원 [다양체](manifolds.md)마다 수 하나를 붙이는 방법이다. 매듭 없는 고리 하나에 정수 $p$ 를 적은 그림은 [렌즈 공간](lens-spaces.md) $L(p,1)$ 을 나타내고, 같은 다양체를 나타내는 그림은 고리를 더하거나 미끄러뜨리는 이동으로 얼마든지 바뀐다. 그림에서 계산한 수가 다양체의 불변량이 되려면 이 이동에 따라 값이 바뀌지 않아야 한다. 구성은 [모듈러 텐서범주](modular-tensor-categories.md)의 단순대상들을 양자차원만큼의 무게로 섞어 고리마다 칠하고, 그 값이 이동에 불변임을 범주의 모듈러 조건으로 보인다.
+
+# 직관
+
+Reshetikhin–Turaev 구성은 모듈러 텐서범주 하나를 입력으로 받아 3 차원 위상 불변량을 내놓는다. 출력은 둘이다. 닫힌 유향 3 차원 다양체 $M$ 에 붙는 수 $\tau(M)\in\mathbb C$ 와, $M$ 안에 놓인 라벨 붙은 링크에 붙는 수다. MTC(modular tensor category)와 3 차원 [TQFT](topological-quantum-field-theory.md)(topological quantum field theory)의 대응 가운데 대수에서 위상으로 가는 방향이 이 구성이다.
 
 구성의 요지는 [매듭 불변량](knot-invariants.md)에서 Jones 다항식을 Kauffman 괄호로 만드는 절차와 같고, 차원이 하나 높다.
 
@@ -22,8 +26,6 @@ $$
 $$
 
 으로 수술 링크를 색칠하면 그 값이 [Kirby 계산법](kirby-calculus.md)의 Kirby 이동에 불변이 된다. 이 불변성은 $S$ 행렬의 가역성, 곧 모듈러 조건과 동치다.
-
-# 직관
 
 3 차원 다양체를 평면에 그릴 수 있는 자료로 바꿔야 한다. Lickorish–Wallace 정리가 모든 닫힌 유향 3 차원 다양체를 $S^3$ 안의 프레임 링크를 따라 수술해서 얻는다고 말한다. 수술은 링크의 각 성분을 둘러싼 고체원환을 도려내고 프레이밍이 지정한 방식으로 다시 붙이는 조작이고, 프레이밍은 각 성분에 붙는 정수 하나다. 3 차원 다양체가 정수가 적힌 링크 도식 하나로 바뀐다.
 
