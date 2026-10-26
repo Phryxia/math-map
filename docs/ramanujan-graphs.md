@@ -2,25 +2,11 @@
 
 # 개요
 
-**Ramanujan 그래프(Ramanujan graph)** 는 자명하지 않은 고윳값의 절댓값이 모두 $2\sqrt{d-1}$ 이하인 $d$ 정규 그래프다. [Expander 그래프](expander-graphs.md)는 스펙트럼 간극이 클수록 잘 섞인다. Alon–Boppana 정리가 그 한계를 정한다. $d$ 정규 그래프의 두 번째 절댓값 고윳값 $\lambda$ 는 정점 수가 커질 때
-
-$$
-\lambda\ \ge\ 2\sqrt{d-1}-o(1)
-$$
-
-을 넘을 수 없이 작아진다. 이 하한을 실제로 달성하는 그래프, 곧
-
-$$
-\lambda(G)\ \le\ 2\sqrt{d-1}
-$$
-
-를 만족하는 $d$ 정규 그래프가 **Ramanujan 그래프**[^1]이고, 스펙트럼 간극이 최적인 expander 다.
-
-Lubotzky, Phillips, Sarnak 과 독립적으로 Margulis 가 1988 년에 명시적 구성을 주었다. 그 증명은 Deligne 의 Ramanujan 추측 증명에 의존한다. 그래프의 고윳값 경계가 자기동형 형식 계수의 경계에서 나오고, 그래프의 이름도 거기서 왔다.
+**Ramanujan 그래프(Ramanujan graph)** 는 정점마다 이웃 수가 같은 그래프 가운데 고윳값으로 잰 섞임이 가능한 한 가장 좋은 그래프다. 정점마다 연결선이 $d$ 개인 통신망을 크게 만들수록, 망 위를 무작위로 걷는 신호가 고르게 퍼지는 빠르기에는 넘을 수 없는 한계가 있다. 그 한계에 닿는 망을 정점 수를 얼마든지 키우며 만드는 것이 문제이고, 행렬군의 Cayley 그래프로 만들어 그 고윳값을 정수론의 부등식으로 누른다.
 
 # 직관
 
-$d$ 정규 무한 나무 $T_d$ 의 인접작용소는 스펙트럼 반지름이 $2\sqrt{d-1}$ 이다. 유한 $d$ 정규 그래프는 국소적으로 나무처럼 보이므로 정점 수가 커지면 나무의 스펙트럼을 따라가고, 그만큼 $\lambda$ 가 $2\sqrt{d-1}$ 쪽으로 밀려 올라간다. 나무의 스펙트럼 반지름보다 작은 $\lambda$ 가 불가능하다는 것이 Alon–Boppana 의 내용이다. 작고 대칭성이 높은 그래프는 대개 Ramanujan 이고, 어려운 것은 정점 수를 무한히 키우면서 조건을 유지하는 무한 족이다.
+$d$ 정규 무한 나무 $T_d$ 의 인접작용소는 스펙트럼 반지름이 $2\sqrt{d-1}$ 이다. 유한 $d$ 정규 그래프는 국소적으로 나무처럼 보이므로 정점 수가 커지면 나무의 스펙트럼을 따라가고, 그만큼 $\lambda$ 가 $2\sqrt{d-1}$ 쪽으로 밀려 올라간다. 나무의 스펙트럼 반지름보다 작은 $\lambda$ 가 불가능하다는 것이 Alon–Boppana 정리(Alon–Boppana bound)의 내용이다. 작고 대칭성이 높은 그래프는 대개 Ramanujan 이고, 어려운 것은 정점 수를 무한히 키우면서 조건을 유지하는 무한 족이다.
 
 LPS(Lubotzky–Phillips–Sarnak) 구성은 그래프를 $\mathrm{PGL}\_2(\mathbb F_q)$ 나 $\mathrm{PSL}\_2(\mathbb F_q)$ 의 Cayley 그래프로 만들고 생성원을 [사원수 대수](quaternion-algebras.md)에서 가져온다. 소수 $p$ 를 [네 제곱수의 합](four-squares-theorem.md)으로 쓰는 방법의 개수가 $8(p+1)$ 이라는 Jacobi 의 정리가 $p+1$ 개의 생성원을 준다. 이 Cayley 그래프의 고윳값은 [군의 표현](group-representations.md)론으로 계산되고 그 값이 사원수 대수 위 자기동형 형식의 Hecke 고윳값이다. [Jacquet–Langlands 대응](jacquet-langlands.md)으로 이를 무게 2 첨점형식의 계수로 옮기면 Deligne 의 경계가 적용되고, 차수가 $d=p+1$ 이므로 그래프 쪽 부등식이 나온다.
 
@@ -40,11 +26,27 @@ $$
 
 라 하자. $\lambda(G)\le2\sqrt{d-1}$ 이면 $G$ 가 **Ramanujan 그래프**다. 이분 그래프에서는 $\mu_n=-d$ 가 자동이므로 제외한다.
 
+![정점 열 개, 간선 열다섯 개로 된 Petersen 그래프. 바깥 오각형과 안쪽 오각별이 다섯 간선으로 이어져 있다](figures/ramanujan-graphs-petersen.svg)
+
+그림의 Petersen 그래프는 $3$ 정규이고 고윳값이 $3,1,-2$ 다. $\lambda=2\le 2\sqrt2$ 이므로 Ramanujan 그래프다.
+
 ## LPS 구성
 
 $p,q$ 를 $4$ 로 나눈 나머지가 1 인 서로 다른 소수라 하자. $p$ 가 $\mathbb F_q$ 에서 제곱잉여인지에 따라 $\mathrm{PSL}\_2(\mathbb F_q)$ 또는 $\mathrm{PGL}\_2(\mathbb F_q)$ 를 택하고, $x_0^2+x_1^2+x_2^2+x_3^2=p$ 의 해에서 만든 $p+1$ 개의 원소를 생성집합으로 하는 Cayley 그래프가 $X^{p,q}$ 다. 이 그래프는 $(p+1)$ 정규이고 Ramanujan 이다.
 
+Lubotzky, Phillips, Sarnak 과 독립적으로 Margulis 가 1988 년에 명시적 구성을 주었다. 그 증명은 Deligne 의 Ramanujan 추측 증명에 의존한다. 그래프의 고윳값 경계가 자기동형 형식 계수의 경계에서 나오고, 그래프의 이름도 거기서 왔다.
+
 # 성질
+
+## Alon–Boppana 정리
+
+정리(Alon–Boppana). $d$ 를 고정하고 정점 수가 커지면 $d$ 정규 그래프의 $\lambda$ 는 다음을 만족한다[^1].
+
+$$
+\lambda\ \ge\ 2\sqrt{d-1}-o(1)
+$$
+
+그래서 Ramanujan 그래프는 정점 수가 큰 [Expander 그래프](expander-graphs.md) 가운데 스펙트럼 간극이 최적인 것이다.
 
 ## 차수의 제약
 
