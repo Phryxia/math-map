@@ -2,7 +2,11 @@
 
 # 개요
 
-**Rankin–Selberg 적분(Rankin–Selberg integral)** 은 두 자기동형 형식의 곱을 [Eisenstein 급수](eisenstein-series.md)와 함께 적분해 두 표현의 곱 $L$ 함수를 얻는 적분 표현이다. [Godement–Jacquet](godement-jacquet.md)은 $\mathrm{GL}\_n$ 을 담는 벡터공간 $M_n$ 위에서 표준 $L$ 함수를 다룬다. 두 자기동형 표현의 곱
+**Rankin–Selberg 적분(Rankin–Selberg integral)** 은 두 모듈러 형식의 곱을 [Eisenstein 급수](eisenstein-series.md)와 함께 적분해, 두 형식의 계수를 곱한 급수의 성질을 얻는 방법이다. $\Delta=q-24q^2+252q^3-\cdots$ 의 계수 $\tau(n)$ 은 부호가 불규칙하게 바뀌므로, $\tau(n)^2$ 을 $n\le x$ 까지 더한 값이 $x$ 에 따라 어떻게 커지는지가 계수만 봐서는 보이지 않는다. Rankin 과 Selberg 는 1939–40 년에 $\vert\Delta\vert^2$ 에 Eisenstein 급수를 곱해 적분하면 급수 $\sum\tau(n)^2n^{-s}$ 가 나옴을 보였고, Eisenstein 급수의 극점에서 그 합이 $x^{12}$ 에 비례해 커진다는 것이 유도된다.
+
+# 직관
+
+[Godement–Jacquet](godement-jacquet.md)은 $\mathrm{GL}\_n$ 을 담는 벡터공간 $M_n$ 위에서 표준 $L$ 함수를 다룬다. 두 자기동형 표현의 곱
 
 $$
 L(s,\pi\times\pi'),\qquad \pi \text{ 는 } \mathrm{GL}\_n,\quad \pi' \text{ 는 } \mathrm{GL}\_m
@@ -33,8 +37,6 @@ L(s,\pi_v\times\pi'\_v)=\det\bigl(1-q^{-s}A_{\pi_v}\otimes A_{\pi'\_v}\bigr)^{-1
 $$
 
 가 나온다. 쌍대군의 [텐서곱](tensor-products.md) 표현에 붙은 $L$ 함수가 적분 하나에서 나온다.
-
-# 직관
 
 $E(z,s)$ 는 $\Gamma_\infty\backslash\Gamma$ 위의 합이고 나머지 피적분함수 $f\bar gy^k$ 는 $\Gamma$ 불변이므로, 합의 각 항을 기본영역에서 옮기면 적분 영역이 넓어지고 합이 사라진다.
 
