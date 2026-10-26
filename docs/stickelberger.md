@@ -2,7 +2,11 @@
 
 # 개요
 
-**Stickelberger 원소(Stickelberger element)** 는 원분체 $\mathbb Q(\mu_m)$ 의 Galois 군 $G$ 의 군환 $\mathbb Q\lbrack G\rbrack$ 에 놓인 원소 $\theta_m=\sum_a\lbrace a/m\rbrace\thinspace\sigma_a^{-1}$ 이다. [Gauss 합](gauss-sums.md)의 절댓값은 $\sqrt p$ 로 정해져 있지만, 그 수가 순환체 안의 어디에 놓이는지는 절댓값이 말해 주지 않는다. $g(\chi)$ 가 생성하는 아이디얼의 소인수분해를 지표 $\chi$ 에 따라 결정하는 것이 Stickelberger 의 정리다.
+**Stickelberger 원소(Stickelberger element)** 는 원분체의 Galois 군의 원소들을 분수 계수로 더한 것으로, [Gauss 합](gauss-sums.md)이 소인수분해되는 모양을 적는다. $p=5$ 의 이차 Gauss 합은 $\sqrt5$ 이고, $\zeta=e^{2\pi i/5}$ 로 만든 수들 사이에서 $5$ 는 $(1-\zeta)^4$ 에 단수를 곱한 것이므로 $\sqrt5$ 는 $1-\zeta$ 로 정확히 두 번 나뉜다. 일반 지표의 Gauss 합이 $1-\zeta$ 로 몇 번 나뉘는지, 그 정보를 모든 Galois 켤레에 걸쳐 어떻게 모으는지가 문제다. Stickelberger 는 그 횟수가 지표의 지수와 같음을 보이고 켤레들의 정보를 원소 하나로 묶었으며, 이 원소에 알맞은 군환 원소를 곱해 계수를 정수로 만든 것은 원분체의 이데알류군을 소멸시킨다.
+
+# 직관
+
+Stickelberger 원소는 원분체 $\mathbb Q(\mu_m)$ 의 Galois 군 $G$ 의 군환 $\mathbb Q\lbrack G\rbrack$ 에 놓인 원소 $\theta_m=\sum_a\lbrace a/m\rbrace\thinspace\sigma_a^{-1}$ 이다. Gauss 합의 절댓값은 $\sqrt p$ 로 정해져 있지만, 그 수가 순환체 안의 어디에 놓이는지는 절댓값이 말해 주지 않는다. $g(\chi)$ 가 생성하는 아이디얼의 소인수분해를 지표 $\chi$ 에 따라 결정하는 것이 Stickelberger 의 정리다.
 
 $\pi=1-\zeta_p$ 로 두고 $\omega$ 를 Teichmüller 지표라 하면
 
@@ -19,8 +23,6 @@ $$
 이것이 Stickelberger 원소다. 계수는 유리수지만 $(c-\sigma_c)\theta_m$ 꼴은 정수계수이고, 그렇게 얻은 정수계수 원소들이 $\mathbb Q(\mu_m)$ 의 이데알류군을 소멸시킨다.
 
 $\theta_m$ 의 지표 성분이 $L(0,\chi)$ 이므로, 이 정리는 $L$ 함수의 값을 계수로 삼은 군환 원소가 이데알류군을 죽인다는 진술이다. [Iwasawa 주추측](iwasawa-main-conjecture.md)에서 Herbrand 방향이 쉬운 것이 이 정리 때문이고, 반대 방향이 어려운 것은 소멸자가 크기를 말해 주지 않기 때문이다.
-
-# 직관
 
 $g(\chi)=\sum_{a}\chi(a)\zeta_p^{a}$ 는 $\mathbb Q(\mu_{p-1},\mu_p)$ 의 원소이고 $|g(\chi)|=\sqrt p$ 다. 여기에 $g(\chi)\overline{g(\chi)}=\pm p$ 를 더하면 $(g(\chi))$ 가 $p$ 위의 [소 아이디얼](prime-ideals.md)들로만 이루어진다는 것까지 나오지만, 각 소 아이디얼의 지수는 나오지 않는다. $p$ 는 $\mathbb Q(\mu_p)$ 에서 완전히 분기해 $(p)=(\pi)^{p-1}$ 이므로 물음은 $g(\chi)$ 가 $\pi$ 로 몇 번 나뉘는가가 된다.
 
