@@ -2,9 +2,11 @@
 
 # 개요
 
-**Vandiver 추측(Vandiver's conjecture)** 은 순환체 $\mathbb Q(\mu_p)$ 의 류군의 $p$ 부분에서 짝수 지표 성분이 모두 $0$ 이라는 주장이다.
+**Vandiver 추측(Vandiver's conjecture)** 은 $1$ 의 $p$ 제곱근으로 만든 수의 체에서 소인수분해가 깨지는 정도를 재는 류수 가운데, 실수로 된 부분체의 류수가 $p$ 로 나뉘지 않는다는 추측이다. $\zeta_{23}=e^{2\pi i/23}$ 의 정수 계수 다항식으로 쓰이는 수들 사이에서는 소인수분해가 유일하지 않고, 그 깨진 정도를 재는 류수가 $3$ 이다. Kummer 는 류수가 $p$ 로 나뉘지 않으면 $x^p+y^p=z^p$ 에 자연수 해가 없음을 보였으므로, 류수의 $p$ 부분이 언제 $0$ 인지가 문제다. 류수의 $p$ 부분은 홀수 지표 쪽과 짝수 지표 쪽으로 갈리고, 홀수 쪽은 [Bernoulli 수](bernoulli-numbers.md)로 판정된다. Vandiver 는 짝수 쪽인 실부분체 $\mathbb Q(\zeta_p+\zeta_p^{-1})$ 의 류수가 언제나 $p$ 로 나뉘지 않는다고 추측했다.
 
-순환체 $\mathbb Q(\mu_p)$ 의 류군의 $p$ 부분 $A$ 는 지표 성분으로 완전히 쪼개진다.
+# 직관
+
+Vandiver 추측은 순환체 $\mathbb Q(\mu_p)$ 의 류군의 $p$ 부분에서 짝수 지표 성분이 모두 $0$ 이라는 주장이다. 순환체 $\mathbb Q(\mu_p)$ 의 류군의 $p$ 부분 $A$ 는 지표 성분으로 완전히 쪼개진다.
 
 $$
 A=A^{-}\oplus A^{+},\qquad
@@ -12,15 +14,13 @@ A^{-}=\bigoplus_{i\ \text{홀}}A^{(\omega^{i})},\quad
 A^{+}=\bigoplus_{i\ \text{짝}}A^{(\omega^{i})}
 $$
 
-홀수 쪽 $A^{-}$ 는 완전히 이해되어 있다. [Herbrand–Ribet](herbrand-ribet.md) 이 각 성분이 0 인지를 [Bernoulli 수](bernoulli-numbers.md)로 판정하고, [Iwasawa 주추측](iwasawa-main-conjecture.md)이 크기와 $\Lambda$ [가군](modules.md) 구조까지 $p$ 진 $L$ 함수로 기술한다.
+홀수 쪽 $A^{-}$ 는 완전히 이해되어 있다. [Herbrand–Ribet](herbrand-ribet.md) 이 각 성분이 0 인지를 Bernoulli 수로 판정하고, [Iwasawa 주추측](iwasawa-main-conjecture.md)이 크기와 $\Lambda$ [가군](modules.md) 구조까지 $p$ 진 $L$ 함수로 기술한다.
 
 짝수 쪽에 대한 예측은 하나뿐이고, 1920 년대에 제기된 뒤 아직 증명되지 않았다[^1].
 
 > **Vandiver 추측.** $p\nmid h^{+}$ 이고 곧 $A^{+}=0$ 이다.
 
 여기서 $h^{+}$ 는 실부분체 $\mathbb Q(\mu_p)^{+}=\mathbb Q(\zeta_p+\zeta_p^{-1})$ 의 류수다. 주추측은 짝수 지표 쪽에서 류군과 단수군 대 순환체 단수군의 비가 같다는 것만 기술하고 그 비가 자명한지는 말하지 않으므로, 이 문제에 닿지 않는다.
-
-# 직관
 
 $\mathbb Q(\mu_p)$ 는 총허수체이고 복소켤레 $J$ 가 Galois 군의 중심에 있는 위수 2 원소다. $p$ 가 홀수이므로 $\mathbb Z_p[J]$ 에서 $\frac{1\pm J}2$ 가 멱등원이 되어 모든 $\mathbb Z_p[\Delta]$ 가군이 $\pm$ 로 쪼개진다. 단수는 실부분체에 거의 다 들어 있어 단수가 주는 제약이 $+$ 쪽에만 걸리고, [Gauss 합](gauss-sums.md)과 [Stickelberger](stickelberger.md) 원소는 $-$ 쪽만 본다.
 
