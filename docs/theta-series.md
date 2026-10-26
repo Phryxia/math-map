@@ -2,13 +2,17 @@
 
 # 개요
 
-**theta 급수(theta series)** 는 [격자](lattices.md) $L\subset\mathbb R^n$ 의 벡터를 길이별로 세어 [생성함수](generating-functions.md)로 묶은 것이다.
+**theta 급수(theta series)** 는 [격자](lattices.md)의 점을 원점에서의 거리별로 세어 [생성함수](generating-functions.md)로 묶은 것이다. 정사각형 격자 $\mathbb Z^2$ 에서 길이의 제곱이 $0,1,2,4,5$ 인 점은 $1,4,4,4,8$ 개이므로, $q$ 의 지수를 길이의 제곱으로 두면 theta 급수는 $1+4q+4q^2+4q^4+8q^5+\cdots$ 이다. 길이의 제곱이 $n$ 인 점의 개수를 모든 $n$ 에 대해 한 번에 아는 방법이 문제다. 이 급수는 [모듈러 형식](modular-forms.md)이 되고 모듈러 형식의 공간은 유한차원이므로, 처음 몇 계수를 맞추어 급수 전체를 알려진 형식으로 적고 모든 개수를 구한다.
+
+# 직관
+
+격자 $L\subset\mathbb R^n$ 의 theta 급수는 다음과 같다.
 
 $$
 \Theta_L(\tau)=\sum_{x\in L}q^{|x|^2/2},\qquad q=e^{2\pi i\tau}
 $$
 
-이 급수가 격자에 대한 조건이 맞으면 [모듈러 형식](modular-forms.md)이 된다. Poisson 합공식이 $\tau\mapsto-1/\tau$ 변환을 주고, 격자가 짝수이면 $\tau\mapsto\tau+1$ 변환이 자동으로 따라온다.
+이 급수가 격자에 대한 조건이 맞으면 모듈러 형식이 된다. Poisson 합공식이 $\tau\mapsto-1/\tau$ 변환을 주고, 격자가 짝수이면 $\tau\mapsto\tau+1$ 변환이 자동으로 따라온다.
 
 모듈러 형식의 공간은 유한차원이다. 차원이 $1$ 인 공간에 두 대상이 들어가면 상수배 차이뿐이므로, 첫 계수를 맞추면 모든 계수가 같아진다. $E_8$ 격자에서 이 논법이 한 줄로 끝난다.
 
@@ -19,8 +23,6 @@ $$
 8 차원 격자의 벡터를 세는 조합 문제가 약수의 세제곱합이라는 정수론적 답을 갖는다.
 
 **Dedekind eta 함수**는 무한곱으로 정의되는 무게 $1/2$ 의 반정수 무게 형식이고 24 제곱이 판별식 첨점형식 $\Delta$ 다. 격자를 세는 theta 와 분할을 세는 eta 가 같은 변환군 아래에서 만난다.
-
-# 직관
 
 격자 $L$ 에서 길이가 주어진 벡터의 개수 $N_L(m)$ 을 세려고 한다. 생성함수 $\Theta_L(\tau)=\sum_{x\in L}e^{\pi i\tau|x|^2}$ 를 만들면 Gauss 함수의 [Fourier 변환](fourier-transform.md)이 다시 Gauss 함수이므로 Poisson 합공식이 $\tau$ 와 $-1/\tau$ 를 맞바꾼다. $L$ 이 자기쌍대이면 맞바꾼 결과가 다시 $\Theta_L$ 이라 무게 $n/2$ 의 모듈러 변환식이 나온다.
 
