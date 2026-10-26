@@ -2,21 +2,21 @@
 
 # 개요
 
-**Bernoulli 수(Bernoulli number)** $B_j$ 는 거듭제곱의 합을 닫힌 꼴로 쓸 때 나타나는 유리수열이다[^1].
+**Bernoulli 수(Bernoulli number)** $B_j$ 는 거듭제곱의 합을 $n$ 의 다항식으로 쓸 때 계수로 나타나는 유리수열이다[^1]. $0^2+1^2+\cdots+(n-1)^2=\tfrac13n^3-\tfrac12n^2+\tfrac16n$ 이고, 지수 $k$ 를 바꿀 때마다 이런 공식을 새로 유도하지 않고 한 번에 쓰는 방법이 문제다. 계수에 나오는 $1,-\tfrac12,\tfrac16$ 이 $B_0,B_1,B_2$ 이고, 이 수열 하나로 모든 $k$ 의 공식이 다음과 같이 적힌다.
 
 $$
 \sum_{a=0}^{n-1}a^{k}=\frac1{k+1}\sum_{j=0}^{k}\binom{k+1}{j}B_j\thinspace n^{\thinspace k+1-j}
 $$
 
-정의는 초등적이지만 이 수열이 나타나는 자리는 그렇지 않다.
+# 직관
+
+Bernoulli 수는 거듭제곱의 합 밖에서도 나타난다.
 
 - $\zeta(2)=\pi^2/6$ 부터 모든 짝수 zeta 값이 $B_{2k}$ 로 쓰인다.
 - $\zeta(1-k)=-B_k/k$ 이므로 음의 정수에서의 zeta 값이 Bernoulli 수다.
 - $p$ 가 $B_2,\dots,B_{p-3}$ 중 하나를 나누는지가 순환체의 류수가 $p$ 로 나뉘는지를 결정한다(Kummer 의 기준).
 
 [Stickelberger](stickelberger.md) 원소의 계수, [Kubota–Leopoldt p 진 L 함수](kubota-leopoldt-zeta.md)의 보간값, [Iwasawa 주추측](iwasawa-main-conjecture.md)의 해석적 변이 모두 $B_{n,\chi}$ 로 쓰인다. 그 바닥에 두 고전 정리가 있다. 분모를 완전히 결정하는 **von Staudt–Clausen** 정리가 $B_n$ 의 $p$ 진 극점을 통제하고, 분자를 $p$ 진적으로 잇는 **Kummer 합동**이 $p$ 진 보간을 가능하게 한다.
-
-# 직관
 
 처음 몇 값은 다음과 같다.
 
