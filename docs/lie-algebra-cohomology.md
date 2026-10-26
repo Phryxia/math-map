@@ -100,5 +100,6 @@ $G$ 위의 미분형식을 왼쪽 이동과 오른쪽 이동으로 평균내면 
 ## 더 알아보기
 
 - [Levi 분해](levi-decomposition.md)
+- [Virasoro 대수](virasoro-algebra.md)
 
 #algebra #group_theory #algebraic_topology
