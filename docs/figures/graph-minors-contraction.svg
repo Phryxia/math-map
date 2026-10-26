@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 200" width="440" height="200">
+  <rect x="0" y="0" width="440" height="200" fill="#ffffff"/>
+  <line x1="100.0" y1="35.0" x2="166.6" y2="83.4" stroke="#333333" stroke-width="2"/>
+  <line x1="166.6" y1="83.4" x2="141.1" y2="161.6" stroke="#333333" stroke-width="2"/>
+  <line x1="141.1" y1="161.6" x2="58.9" y2="161.6" stroke="#d62728" stroke-width="4"/>
+  <line x1="58.9" y1="161.6" x2="33.4" y2="83.4" stroke="#333333" stroke-width="2"/>
+  <line x1="33.4" y1="83.4" x2="100.0" y2="35.0" stroke="#333333" stroke-width="2"/>
+  <circle cx="100.0" cy="35.0" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="166.6" cy="83.4" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="141.1" cy="161.6" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="58.9" cy="161.6" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="33.4" cy="83.4" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="220" y="105" font-family="sans-serif" font-size="22" text-anchor="middle" dominant-baseline="central" fill="#333333">→</text>
+  <line x1="340" y1="40" x2="405" y2="105" stroke="#333333" stroke-width="2"/>
+  <line x1="405" y1="105" x2="340" y2="170" stroke="#333333" stroke-width="2"/>
+  <line x1="340" y1="170" x2="275" y2="105" stroke="#333333" stroke-width="2"/>
+  <line x1="275" y1="105" x2="340" y2="40" stroke="#333333" stroke-width="2"/>
+  <circle cx="340" cy="40" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="405" cy="105" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <circle cx="340" cy="170" r="13" fill="#f4b6b6" stroke="#333333" stroke-width="2"/>
+  <circle cx="275" cy="105" r="13" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+</svg>
