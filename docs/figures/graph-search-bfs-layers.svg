@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 240" width="360" height="240">
+  <rect x="0" y="0" width="360" height="240" fill="#ffffff"/>
+  <text x="40" y="225" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#1f4e9e">0</text>
+  <text x="130" y="225" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#1f4e9e">1</text>
+  <text x="220" y="225" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#1f4e9e">2</text>
+  <text x="310" y="225" font-family="sans-serif" font-size="13" text-anchor="middle" dominant-baseline="central" fill="#1f4e9e">3</text>
+  <line x1="130" y1="180" x2="220" y2="60" stroke="#999999" stroke-width="2" stroke-dasharray="6,5"/>
+  <line x1="220" y1="180" x2="310" y2="120" stroke="#999999" stroke-width="2" stroke-dasharray="6,5"/>
+  <line x1="130" y1="60" x2="220" y2="60" stroke="#000000" stroke-width="4"/>
+  <line x1="130" y1="180" x2="220" y2="180" stroke="#000000" stroke-width="4"/>
+  <line x1="220" y1="60" x2="310" y2="120" stroke="#000000" stroke-width="4"/>
+  <line x1="40" y1="120" x2="130" y2="60" stroke="#000000" stroke-width="4"/>
+  <line x1="40" y1="120" x2="130" y2="180" stroke="#000000" stroke-width="4"/>
+  <circle cx="40" cy="120" r="17" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="40" y="120" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">s</text>
+  <circle cx="130" cy="60" r="17" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="130" y="60" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">a</text>
+  <circle cx="130" cy="180" r="17" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="130" y="180" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">b</text>
+  <circle cx="220" cy="60" r="17" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="220" y="60" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">c</text>
+  <circle cx="220" cy="180" r="17" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="220" y="180" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">d</text>
+  <circle cx="310" cy="120" r="17" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+  <text x="310" y="120" font-family="sans-serif" font-size="16" text-anchor="middle" dominant-baseline="central" fill="#000000">e</text>
+</svg>
