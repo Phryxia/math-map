@@ -14,7 +14,7 @@
 
 그래프 $G=(V,E)$ 에서 $K\subseteq V$ 의 어느 두 정점 $u\ne v$ 에 대해 $uv\in E$ 이면 $K$ 를 클릭이라 한다. 더 큰 클릭에 포함되지 않는 클릭을 **극대 클릭(maximal clique)** 이라 한다.
 
-- $G$ 의 보그래프 $\overline G$ 에서 클릭은 $G$ 의 독립집합이므로 $\omega(\overline G)=\alpha(G)$ 다.
+- $G$ 의 보그래프 $\overline G$ 에서 클릭은 $G$ 의 [독립집합](independent-set.md)이므로 $\omega(\overline G)=\alpha(G)$ 다.
 - 독립집합의 여집합은 [정점 덮개](vertex-cover.md)이므로 $\alpha(G)=\lvert V\rvert-\tau(G)$ 다. 세 문제의 판정 판본은 다항시간 환원으로 서로 옮겨진다.
 - 매개변수 판본은 $(G,k)$ 에서 크기 $k$ 의 클릭이 있는지 판정하는 문제다.
 
@@ -71,6 +71,7 @@ $G(n,1/2)$ 에 크기 $k$ 의 클릭을 심은 그래프에서 그 클릭을 찾
 ## 더 알아보기
 
 - [Bron–Kerbosch 알고리즘](bron-kerbosch-algorithm.md)
+- [독립집합 문제](independent-set.md)
 - [숨긴 클릭 문제](planted-clique.md)
 
 #complexity #graph_theory #algorithms

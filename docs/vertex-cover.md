@@ -15,7 +15,7 @@
 그래프 $G=(V,E)$ 에서 $C\subseteq V$ 가 모든 $uv\in E$ 에 대해 $u\in C$ 또는 $v\in C$ 를 만족하면 정점 덮개다. 정점마다 가중치 $w_v\ge 0$ 이 있으면 가중치의 합을 최소화하는 가중 판본이 된다.
 
 - [매칭](matchings.md)의 크기의 최댓값을 $\nu(G)$ 로 쓰면 직관 절의 하한은 $\nu(G)\le\tau(G)$ 다.
-- $C$ 가 정점 덮개인 것은 $V\setminus C$ 의 어느 두 정점도 이웃하지 않는 것, 곧 $V\setminus C$ 가 독립집합인 것과 동치다. 그래서 독립수 $\alpha(G)$ 에 대해 $\alpha(G)+\tau(G)=\lvert V\rvert$ 이다.
+- $C$ 가 정점 덮개인 것은 $V\setminus C$ 의 어느 두 정점도 이웃하지 않는 것, 곧 $V\setminus C$ 가 [독립집합](independent-set.md)인 것과 동치다. 그래서 독립수 $\alpha(G)$ 에 대해 $\alpha(G)+\tau(G)=\lvert V\rvert$ 이다.
 - 판정 판본 "크기 $k$ 이하의 정점 덮개가 있는가" 는 Karp 의 21 개 NP-완전 문제 가운데 하나다.
 
 [집합 덮개 문제](set-cover.md)에서 원소를 간선으로, 집합을 정점에 붙은 간선들로 두면 각 원소가 집합 두 개에 들어가는 특수한 경우가 정점 덮개 문제다.
@@ -82,6 +82,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [독립집합 문제](independent-set.md)
 
 #algorithms #graph_theory #complexity
