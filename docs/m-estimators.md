@@ -101,5 +101,6 @@ $\rho$ 가 볼록이면 목적함수가 볼록이므로 국소 최소가 전역 
 ## 더 알아보기
 
 - [분위수 회귀](quantile-regression.md)
+- [붕괴점](breakdown-point.md)
 
 #statistics #optimization #probability

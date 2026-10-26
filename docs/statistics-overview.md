@@ -74,6 +74,7 @@ graph TD
 
 - [선형회귀](linear-regression.md): 정규방정식과 사영으로 적은 최소제곱 추정, Gauss–Markov 정리
   - [일반화선형모형](generalized-linear-models.md): 반응분포를 지수족으로 둔 회귀, 정준연결함수와 반복 가중최소제곱
+  - [붕괴점](breakdown-point.md): 추정량을 한없이 보내려면 바꿔야 하는 표본의 비율, 평균의 1/n 과 중앙값의 1/2, 이동 동변 추정량의 상한, 회귀 M-추정량의 1/n 과 LMS 와 LTS 의 1/2
 - [분위수 회귀](quantile-regression.md): 조건부 분위수를 일차식으로 추정하는 회귀, 확인 함수와 선형계획, 관측값 p 개를 지나는 해, 점근 정규성과 분위수 교차
 - [기대 결손](expected-shortfall.md): 손실 분포의 위쪽 꼬리 평균, 위험가치의 부분가법성 실패와 정합 위험 측도, Rockafellar–Uryasev 공식, 유도 가능성
   - [정합 위험 측도](coherent-risk-measures.md): 단조성, 현금 불변성, 양의 동차성, 부분가법성을 만족하는 위험의 기준, 확률측도 집합 위의 최악 기댓값으로 쓰는 표현 정리, 볼록 위험 측도와 볼록 공액, 엔트로피 위험 측도, Kusuoka 표현

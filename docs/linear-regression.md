@@ -197,6 +197,7 @@ $$
 - [핵 능형회귀](kernel-ridge-regression.md)
 - [압축 센싱](compressed-sensing.md)
 - [분위수 회귀](quantile-regression.md)
+- [붕괴점](breakdown-point.md)
 
 ### 예측오차의 평가
 
