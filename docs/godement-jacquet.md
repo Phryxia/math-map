@@ -2,7 +2,11 @@
 
 # 개요
 
-**Godement–Jacquet 적분(Godement–Jacquet integral)** 은 $\mathrm{GL}\_n$ 의 자기동형 표현의 행렬계수와 $n\times n$ 행렬 공간 위의 Schwartz 함수의 곱에 $\vert\det g\vert^s$ 를 붙여 적분한 것으로, 표준 $L$ 함수를 준다. Hecke 의 $L$ 함수를 아델 위의 적분 하나로 다시 쓴 것이 [Tate 의 zeta 적분](tate-zeta-integral.md)이다. 해석적 접속과 함수방정식이 Fourier 해석과 Poisson 합공식에서 나오고, 자리마다의 국소 인자와 근 수가 국소 적분에서 읽힌다.
+**Godement–Jacquet 적분(Godement–Jacquet integral)** 은 행렬 위의 적분 하나로 $L$ 함수를 적어, 급수가 수렴하지 않는 곳까지 $L$ 함수를 늘이고 그 대칭을 보이는 방법이다. $\zeta(s)=1+2^{-s}+3^{-s}+\cdots$ 은 $s\gt 1$ 에서만 수렴하지만, $e^{-\pi n^2x}$ 를 $n\ge1$ 에 대해 더한 함수에 $x^{s/2-1}$ 을 곱해 $x$ 로 적분하면 $\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 가 나오고, 그 함수가 $x\mapsto1/x$ 에서 갖는 대칭에서 $s\mapsto1-s$ 대칭이 나온다. 수 $x$ 대신 $n\times n$ 가역행렬을 변수로 놓고 같은 적분을 하면 $\mathrm{GL}\_n$ 의 자기동형 표현에 붙는 표준 $L$ 함수에서 같은 결과가 나오며, Godement 와 Jacquet 이 1972 년에 이것을 보였다.
+
+# 직관
+
+Godement–Jacquet 적분은 $\mathrm{GL}\_n$ 의 자기동형 표현의 행렬계수와 $n\times n$ 행렬 공간 위의 Schwartz 함수의 곱에 $\vert\det g\vert^s$ 를 붙여 적분한 것으로, 표준 $L$ 함수를 준다. Hecke 의 $L$ 함수를 아델 위의 적분 하나로 다시 쓴 것이 [Tate 의 zeta 적분](tate-zeta-integral.md)이다. 해석적 접속과 함수방정식이 Fourier 해석과 Poisson 합공식에서 나오고, 자리마다의 국소 인자와 근 수가 국소 적분에서 읽힌다.
 
 그 논문은 $\mathrm{GL}\_1$ 을 다루고, Godement 와 Jacquet 이 1972 년에 같은 일을 $\mathrm{GL}\_n$ 에서 했다[^1].
 
@@ -24,8 +28,6 @@ $$
 $M_n$ 은 $n^2$ 차원 벡터공간이고 $\mathrm{GL}\_n$ 은 그 안에서 $\det\ne0$ 인 열린 부분집합이다. 곱셈 지표 $\chi$ 의 자리에 표현의 행렬 계수가, $\lvert x\rvert^s$ 의 자리에 $\lvert\det g\rvert^s$ 가 들어가고 나머지는 Tate 의 구성과 같다.
 
 [Langlands 강령](langlands-program.md)은 자기동형 표현의 $L$ 함수가 Galois 쪽 $L$ 함수와 같기를 요구하며, 그러려면 자기동형 쪽 $L$ 함수가 먼저 잘 정의되고 해석적으로 좋아야 한다. Godement–Jacquet 이 $\mathrm{GL}\_n$ 의 표준 $L$ 함수에 대해 이를 무조건적으로 보장한다.
-
-# 직관
 
 Tate 의 적분 $\int_{\mathbb A^\times}f(x)\thinspace\chi(x)\thinspace\lvert x\rvert^s\thinspace d^\times x$ 는 세 부품으로 이루어진다. 벡터공간 $\mathbb A$ 위의 Schwartz 함수 $f$ , 군 $\mathbb A^\times$ 의 지표 $\chi$ , 매개변수족 $\lvert x\rvert^s$ 다. $n\ge2$ 에서 $\pi$ 는 1 차원이 아니므로 지표 자리에 행렬 계수 $\langle\pi(g)v,\tilde v\rangle$ 를 넣는다. $n=1$ 이면 이 함수가 $\chi$ 로 돌아온다. $\lvert x\rvert^s$ 자리에는 $\det\colon\mathrm{GL}\_n\to\mathbb G_m$ 을 써서 $\lvert\det g\rvert^s$ 를 넣는다.
 
