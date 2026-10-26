@@ -2,7 +2,11 @@
 
 # 개요
 
-**기하학적 Langlands 강령(geometric Langlands program)** 은 Langlands 대응을 층의 [범주](category.md) 사이 동치로 올리는 강령이다. [기하학적 Satake 대응](geometric-satake.md)이 Hecke 대수의 등식에 같은 일을 한다.
+**기하학적 Langlands 강령(geometric Langlands program)** 은 복소 곡선 위에서, 곡선의 고리마다 행렬을 붙이는 자료와 곡선 위 벡터 다발들이 이루는 공간 위의 층을 짝짓는 강령이다. 곡선이 도넛 면이고 행렬이 $1\times1$ 이면, 한쪽은 두 고리 $a,b$ 에 $0$ 아닌 복소수 $\lambda,\mu$ 를 하나씩 붙이는 자료이고 다른 쪽은 도넛 면 위의 선다발들이 이루는 공간이다. 이 경우에는 수의 쌍 $(\lambda,\mu)$ 마다 선다발 공간 위의 층 하나가 정해져 두 쪽이 일대일로 맞는다. 강령은 $1\times1$ 행렬을 일반 환원군으로 바꾸어도 두 쪽의 층 [범주](category.md)가 동치라고 주장하고, Gaitsgory, Raskin 과 공저자들이 2024 년에 그 증명을 발표했다.
+
+# 직관
+
+기하학적 Langlands 강령은 [Langlands 대응](langlands-program.md)을 층의 범주 사이 동치로 올리는 강령이다. [기하학적 Satake 대응](geometric-satake.md)이 Hecke 대수의 등식에 같은 일을 한다.
 
 출발점은 세 열의 유비다. 수체와 함수체가 나란하고, 함수체 $\mathbb F_q(X)$ 가 곡선 $X/\mathbb F_q$ 의 함수체이므로 곡선 자체를 다룰 수 있다.
 
@@ -19,8 +23,6 @@ $$
 $$
 
 왼쪽은 $G$ 다발의 모듈라이 위의 $D$ [가군](modules.md), 오른쪽은 쌍대군 $\hat G$ 의 국소계가 이루는 스택 위의 준연접층이다. 2024년에 Gaitsgory, Raskin 과 공저자들이 이 진술(비분기, 표수 0)의 증명을 아홉 편의 논문으로 발표했다[^1].
-
-# 직관
 
 고전 Langlands 대응에서 자기동형 형식은 [Hecke 작용소](hecke-operators.md)의 고유함수이고, 고윳값의 모임이 [Galois 표현](galois-representations.md)을 결정한다. 함수체 $\mathbb F_q(X)$ 에서는 그 함수가 어디에 놓이는지가 보인다. Weil 의 관찰로 이중잉여 $G(F)\backslash G(\mathbb A_F)/G(\mathcal O)$ 가 곡선 $X$ 위 $G$ 다발의 동형류 $\mathrm{Bun}\_G(\mathbb F_q)$ 와 같으므로, 자기동형 형식은 모듈라이 공간 위의 함수다.
 
