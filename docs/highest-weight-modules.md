@@ -38,7 +38,7 @@ $0$ 이 아닌 $v\in V_\lambda$ 가 $\mathfrak n^{+}v=0$ 을 만족하면 $v$ �
 
 ## 보편포락대수
 
-**보편포락대수(universal enveloping algebra)** $U(\mathfrak g)$ 는 $\mathfrak g$ 의 원소들로 생성되고 관계 $XY-YX=[X,Y]$ 만을 갖는 결합대수다. $\mathfrak g$ 가군과 $U(\mathfrak g)$ 가군은 같은 것이다. $U(\mathfrak n^{-})$, $U(\mathfrak b)$ 도 같은 방식으로 정의되고 $U(\mathfrak g)$ 의 부분대수다.
+[보편포락대수](universal-enveloping-algebra.md) $U(\mathfrak g)$ 는 $\mathfrak g$ 의 원소들로 생성되고 관계 $XY-YX=[X,Y]$ 만을 갖는 결합대수다. $\mathfrak g$ 가군과 $U(\mathfrak g)$ 가군은 같은 것이다. $U(\mathfrak n^{-})$, $U(\mathfrak b)$ 도 같은 방식으로 정의되고 $U(\mathfrak g)$ 의 부분대수다.
 
 ## 최고무게 가군
 
@@ -122,6 +122,7 @@ $$
 ## 선수지식
 
 - [근계](root-systems.md)
+- [보편포락대수](universal-enveloping-algebra.md)
 
 ## 더 알아보기
 

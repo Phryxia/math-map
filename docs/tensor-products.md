@@ -212,6 +212,7 @@ $$
 ## 더 알아보기
 
 - [외대수](exterior-algebra.md)
+- [보편포락대수](universal-enveloping-algebra.md)
 - [유도 함자](derived-functors.md)
 - [모듈러 텐서범주](modular-tensor-categories.md)
 - [양자 회로](quantum-circuits.md)

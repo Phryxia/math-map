@@ -2,7 +2,7 @@
 
 # 개요
 
-**양자군(quantum group)** 은 [Lie 대수](lie-algebras.md)의 보편포락대수를 매개변수 $q$ 로 변형한 Hopf 대수다. 변형해도 표현의 텐서곱은 정의되지만, 두 성분을 바꾸는 사상이 성분 교환이 아니라 $q$ 에 의존하는 행렬 $R$ 이 된다.
+**양자군(quantum group)** 은 [Lie 대수](lie-algebras.md)의 [보편포락대수](universal-enveloping-algebra.md)를 매개변수 $q$ 로 변형한 Hopf 대수다. 변형해도 표현의 텐서곱은 정의되지만, 두 성분을 바꾸는 사상이 성분 교환이 아니라 $q$ 에 의존하는 행렬 $R$ 이 된다.
 
 $R$ 은 Yang–Baxter 방정식을 만족하고 제곱이 항등이 아니다. 그래서 표현 범주는 [모노이드 범주](monoidal-categories.md)로서 꼬임을 갖지만 대칭이 아니고, 그 꼬임이 [땋임군](braid-groups.md)의 표현을 준다.
 
@@ -91,7 +91,7 @@ $q\to0$ 극한에서 $U_q(\mathfrak g)$ 의 적분형 표현은 기저를 하나
 
 ## 선수지식
 
-- [Lie 대수](lie-algebras.md)
+- [보편포락대수](universal-enveloping-algebra.md)
 - [모노이드 범주](monoidal-categories.md)
 
 ## 더 알아보기
