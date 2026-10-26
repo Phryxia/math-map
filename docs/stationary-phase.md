@@ -2,7 +2,11 @@
 
 # 개요
 
-**정상위상법(method of stationary phase)** 은 진동 적분 $\int g\thinspace e^{i\lambda\varphi}$ 의 $\lambda\to\infty$ 점근을 위상 $\varphi$ 의 정상점, 곧 $\varphi'=0$ 인 점의 기여로 구하는 방법이다. [Laplace 방법](laplace-method.md)은 지수가 실수인 적분 $\int g\thinspace e^{\lambda\varphi}$ 에서 감쇠가 크기를 정한다. 최대점을 벗어나면 피적분함수의 절댓값이 지수적으로 작아지므로 적분은 최대점만 본다.
+**정상위상법(method of stationary phase)** 은 빠르게 진동하는 함수의 적분이 진동이 멈추는 점 근처에서만 값을 얻는다는 사실로 그 적분의 크기를 구하는 방법이다. $\cos(\lambda x^2)$ 의 그래프는 $x=0$ 근처에서 천천히 출렁이고 멀어질수록 촘촘히 출렁여, 양수 부분과 음수 부분이 서로 지운다. $\lambda$ 를 키울 때 $\int\cos(\lambda x^2)\thinspace dx$ 가 어떻게 작아지는지가 문제다. 위상 $\lambda x^2$ 의 도함수가 $0$ 인 점 $x=0$ 주위만 남겨 계산하면 $\int e^{i\lambda x^2}dx=\sqrt{\pi/\lambda}\thinspace e^{i\pi/4}$ 가 나오고, 같은 방법이 일반 위상 $\varphi$ 의 적분 $\int g\thinspace e^{i\lambda\varphi}$ 에 쓰인다.
+
+# 직관
+
+[Laplace 방법](laplace-method.md)은 지수가 실수인 적분 $\int g\thinspace e^{\lambda\varphi}$ 에서 감쇠가 크기를 정한다. 최대점을 벗어나면 피적분함수의 절댓값이 지수적으로 작아지므로 적분은 최대점만 본다.
 
 지수가 순허수이면 사정이 다르다.
 
@@ -19,8 +23,6 @@ Laplace 방법과 형태는 같되 셋이 다르다.
 - 정상점이 여럿이면 전부 같은 크기로 기여해 서로 간섭한다.
 
 세 번째가 파동의 간섭, WKB(Wentzel–Kramers–Brillouin) 근사에서 여러 고전 궤도가 더해지는 현상, [Witten 점근 추측](witten-asymptotics.md)에서 여러 평탄 접속이 답에 나타나는 현상의 공통 원인이다.
-
-# 직관
 
 $I(\lambda)=\int g\thinspace e^{i\lambda\varphi}dx$ 에서 피적분함수의 크기는 $\lambda$ 가 커져도 $|g|$ 그대로다. 적분이 줄어드는 것은 위상이 빨리 돌면서 인접한 기여가 서로 지워지기 때문이다. $\varphi'\ne0$ 인 곳에서는 $e^{i\lambda\varphi}=\frac1{i\lambda\varphi'}\frac{d}{dx}e^{i\lambda\varphi}$ 로 쓰고 부분적분할 때마다 $1/\lambda$ 이 떨어지므로 그 구간의 기여가 모든 차수보다 빨리 작아진다.
 
