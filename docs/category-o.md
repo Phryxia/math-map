@@ -2,7 +2,11 @@
 
 # 개요
 
-**범주 $\mathcal O$(category $\mathcal O$)** 는 반단순 [Lie 대수](lie-algebras.md)의 [가군](modules.md) 가운데 무게 분해가 되고 무게 공간이 유한차원이며 Borel 부분대수의 작용이 국소적으로 유한한 것들의 범주다. Bernstein–Gelfand–Gelfand 가 1976 년에 정의했다.[^1]
+**범주 $\mathcal O$(category $\mathcal O$)** 는 반단순 [Lie 대수](lie-algebras.md)의 무한차원 [가군](modules.md) 가운데 유한차원 표현처럼 무게로 분해되고 최고무게를 갖는 것들을 모은 범주다. $\mathfrak{sl}\_2$ 에서 무게 $0,-2,-4,\dots$ 를 하나씩 갖는 Verma 가군은 무게 $-2,-4,\dots$ 로 된 부분가군을 포함하고, 그것으로 나눈 몫이 $1$ 차원 자명표현이다. 무한차원 가군이 몇 개의 단순 조각으로 이루어지는지, 어느 조각이 몇 번 들어가는지가 문제다. 범주 $\mathcal O$ 는 조각의 수가 유한하도록 가군에 조건을 걸고, 그 중복도를 [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)으로 계산한다.
+
+# 직관
+
+범주 $\mathcal O$ 는 반단순 Lie 대수의 가군 가운데 무게 분해가 되고 무게 공간이 유한차원이며 Borel 부분대수의 작용이 국소적으로 유한한 것들의 범주다. Bernstein–Gelfand–Gelfand 가 1976 년에 정의했다.[^1]
 
 유한차원 표현은 완전가약이라 분류가 최고무게 하나로 끝나지만 제한 없는 $\mathfrak g$ 가군의 범주는 너무 커서 분류되지 않는다. 위 세 조건이 그 중간 지대를 잘라낸다.
 
@@ -18,9 +22,7 @@ $$
 
 이것이 **BGG 상반성**(Bernstein–Gelfand–Gelfand)이다. 좌변은 사영분해 쪽 자료이고 우변은 조성열 쪽 자료인데 두 계산이 같은 수를 주고, 그 결과 Cartan 행렬이 대칭이 된다.
 
-우변의 계산은 [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)이 답한다. $\bigl[M(y\cdot\lambda):L(w\cdot\lambda)\bigr]=P_{w_0y,\thinspace w_0w}(1)$ 이라는 KL 추측을 Beilinson–Bernstein 과 Brylinski–Kashiwara 가 증명했고, 범주 $\mathcal O$ 에서 KL 다항식이 표현론적 의미를 얻는다.
-
-# 직관
+우변의 계산은 Kazhdan–Lusztig 다항식이 답한다. $\bigl[M(y\cdot\lambda):L(w\cdot\lambda)\bigr]=P_{w_0y,\thinspace w_0w}(1)$ 이라는 KL 추측을 Beilinson–Bernstein 과 Brylinski–Kashiwara 가 증명했고, 범주 $\mathcal O$ 에서 KL 다항식이 표현론적 의미를 얻는다.
 
 최고무게 $\lambda$ 를 가진 가군 중 가장 큰 것을 Borel $\mathfrak b$ 의 1 차원 표현 $\mathbb C_\lambda$ 에서 유도한다.
 
