@@ -2,7 +2,13 @@
 
 # 개요
 
-**Sato–Tate 분포(Sato–Tate distribution)** 는 [타원곡선](elliptic-curves.md)의 좋은 환원(good reduction) 소수마다 정해지는 Frobenius 고윳값의 각이 소수 전체에 걸쳐 따르는 분포 $\tfrac2\pi\sin^2\theta\thinspace d\theta$ 다. [Deligne 의 정리](deligne-weil-conjectures.md)는 Frobenius 고윳값의 절댓값을 확정한다. 타원곡선 $E/\mathbb Q$ 와 좋은 환원의 소수 $p$ 에서
+**Sato–Tate 분포(Sato–Tate distribution)** 는 [타원곡선](elliptic-curves.md)의 해를 소수마다 셀 때, 해의 개수가 예상값에서 벗어난 정도가 소수 전체에 걸쳐 따르는 분포다. $y^2=x^3+x+1$ 의 해를 무한원점까지 $p$ 로 나눈 나머지에서 세면 $p+1$ 근처의 수가 나오고, 차이 $a_p$ 는 $-2\sqrt p$ 와 $2\sqrt p$ 사이에 있다. $p=5$ 에서는 해가 $9$ 개이고 $a_5=-3$ 이다. 소수를 늘려 가며 $a_p/(2\sqrt p)$ 를 구간 $[-1,1]$ 에 점으로 찍으면 점들은 고르게 퍼지지 않고 가운데가 높은 반원 모양으로 쌓인다.
+
+Sato 와 Tate 는 이 반원이 회전군 $\mathrm{SU}(2)$ 를 고르게 뽑을 때 대각합의 절반이 따르는 분포라고 예측했고, Taylor 와 공저자들이 2006–2011 년에 대칭곱 $L$ 함수의 성질을 증명해 이를 확립했다.
+
+# 직관
+
+[Deligne 의 정리](deligne-weil-conjectures.md)는 Frobenius 고윳값의 절댓값을 확정한다. 타원곡선 $E/\mathbb Q$ 와 좋은 환원의 소수 $p$ 에서
 
 $$
 a_p=p+1-\char35{}E(\mathbb F_p),
@@ -28,9 +34,7 @@ $$
 
 복소곱셈이 있으면 대칭군이 $\mathrm{SU}(2)$ 안의 정규화 토러스로 줄어든다. 절반의 소수에서 $a_p=0$ 이고 그 소수에서 곡선이 초특이하며, 나머지 각은 균등분포를 따른다.
 
-대칭곱 $L$ 함수 $L(\mathrm{Sym}^n E,s)$ 가 전부 해석적으로 접속되고 $\mathrm{Re}(s)=1$ 위에서 영점이 없으면 Wiener–Ikehara 형 Tauber 정리가 분포를 준다. 이 조건은 2006–2011 년에 Taylor 와 공저자들이 잠재적 모듈러성으로 확립했다.
-
-# 직관
+대칭곱 $L$ 함수 $L(\mathrm{Sym}^n E,s)$ 가 전부 해석적으로 접속되고 $\mathrm{Re}(s)=1$ 위에서 영점이 없으면 Wiener–Ikehara 형 [Tauber 정리](tauberian-theorems.md)가 분포를 준다. 이 조건은 2006–2011 년에 Taylor 와 공저자들이 잠재적 모듈러성으로 확립했다.
 
 $\mathrm{SU}(2)$ 의 원소는 켤레를 무시하면 [고윳값](eigenvalues.md) $e^{\pm i\theta}$ 로 결정된다. 곧 켤레류의 공간이 $[0,\pi]$ 다. $\mathrm{SU}(2)$ 의 Haar 측도를 이 공간으로 밀어내면 Weyl 적분공식이
 
