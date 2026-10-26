@@ -98,7 +98,7 @@ $$
 
 충분조건의 요지는 셋이다. $n_i=\langle\lambda,\alpha_i^\vee\rangle$ 이면 직관 절의 계산으로 $E_iF_i^{n_i+1}v=0$ 이다. $j\neq i$ 이면 $\alpha_j-\alpha_i$ 가 근이 아니므로 $[E_j,F_i]=0$ 이고 $E_jF_i^{n_i+1}v=0$ 이다. 그래서 $F_i^{n_i+1}v$ 는 최고무게 벡터가 되어 진부분가군을 생성하고 $L(\lambda)$ 에서 $0$ 이다. 이로부터 $E_i,F_i$ 가 $L(\lambda)$ 위에서 멱영으로 작용하고, 무게의 집합이 단순 반사들, 따라서 Weyl 군 $W$ 에 대해 불변이다. $\lambda$ 이하의 지배적 무게는 유한 개이고 모든 $W$ 궤도가 지배적 무게를 하나 포함하므로 무게가 유한 개이고, 무게공간이 유한차원이므로 $L(\lambda)$ 가 유한차원이다.
 
-이 정리와 유한차원 표현의 완전가약성(Weyl 의 정리, Weyl's theorem on complete reducibility)을 합하면 유한차원 기약표현이 지배적 정수 무게와 일대일 대응한다는 [Weyl 지표 공식](weyl-character-formula.md)의 분류 정리가 된다.
+이 정리와 유한차원 표현이 기약표현의 직합이라는 [Weyl 완전가약성 정리](weyl-complete-reducibility.md)를 합하면 유한차원 기약표현이 지배적 정수 무게와 일대일 대응한다는 [Weyl 지표 공식](weyl-character-formula.md)의 분류 정리가 된다.
 
 ## sl₂ 의 Verma 가군
 

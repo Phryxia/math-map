@@ -92,6 +92,7 @@ $z\in Z(\mathfrak g)$ 는 최고무게 $\lambda$ 의 Verma 가군 위에서 상�
 
 ## 더 알아보기
 
+- [Weyl 완전가약성 정리](weyl-complete-reducibility.md)
 - [최고무게 가군](highest-weight-modules.md)
 - [양자군](quantum-groups.md)
 
