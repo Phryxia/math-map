@@ -28,7 +28,7 @@ $$
 \min\ \sum_if_iy_i+\sum_{i,j}c_{ij}x_{ij}\quad\text{s.t.}\quad\sum_ix_{ij}=1,\quad x_{ij}\le y_i,\quad x_{ij},y_i\in\lbrace 0,1\rbrace
 $$
 
-여는 시설 수를 $k$ 이하로 제한하고 개설 비용을 없앤 판본이 **$k$-중앙값 문제($k$-median problem)** 다.
+여는 시설 수를 $k$ 이하로 제한하고 개설 비용을 없앤 판본이 [k-중앙값 문제](k-median.md)(k-median problem)다.
 
 # 성질
 
@@ -76,6 +76,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [k-중앙값 문제](k-median.md)
 
 #algorithms #optimization #complexity

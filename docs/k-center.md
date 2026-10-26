@@ -2,7 +2,7 @@
 
 # 개요
 
-**k-중심 문제(k-center problem)** 는 [거리 공간](metric-spaces.md)의 점 $n$ 개에서 중심 $k$ 개를 골라, 각 점에서 가장 가까운 중심까지의 거리 가운데 최댓값을 최소화하는 문제다. NP-난해(nondeterministic polynomial time)이고, 가장 먼 점을 차례로 중심으로 고르는 방법이 2-근사를 준다. $2-\varepsilon$ 근사는 $\mathrm P=\mathrm{NP}$ 를 함의하므로 이 2 는 최선이다. [시설 배치 문제](facility-location.md)의 $k$-중앙값이 거리의 합을 최소화하는 데 비해, 이 문제는 가장 나쁜 점의 거리를 최소화한다.
+**k-중심 문제(k-center problem)** 는 [거리 공간](metric-spaces.md)의 점 $n$ 개에서 중심 $k$ 개를 골라, 각 점에서 가장 가까운 중심까지의 거리 가운데 최댓값을 최소화하는 문제다. NP-난해(nondeterministic polynomial time)이고, 가장 먼 점을 차례로 중심으로 고르는 방법이 2-근사를 준다. $2-\varepsilon$ 근사는 $\mathrm P=\mathrm{NP}$ 를 함의하므로 이 2 는 최선이다. [시설 배치 문제](facility-location.md)의 [k-중앙값 문제](k-median.md)가 거리의 합을 최소화하는 데 비해, 이 문제는 가장 나쁜 점의 거리를 최소화한다.
 
 # 직관
 

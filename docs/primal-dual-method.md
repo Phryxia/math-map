@@ -69,7 +69,7 @@ $y$ 가 쌍대 가능해일 때 $j$ 번째 쌍대 제약이 등식 $(A^{\mathsf 
 
 - [집합 덮개 문제](set-cover.md)와 정점 덮개의 가중 근사. 빈도 근사가 선형계획을 풀지 않는 선형 시간 알고리즘이 된다.
 - 네트워크 설계. Steiner 숲, [Steiner 나무](steiner-tree-problem.md), 일반화 Steiner 망, 최소 비용 연결 문제의 2-근사와 그 변형이 동시 증가와 역삭제로 증명된다.
-- [Lagrange 쌍대성](lagrange-duality.md)과의 결합. Jain–Vazirani 는 시설 배치의 원시-쌍대 알고리즘을 Lagrange 완화 안에서 써서 $k$-중앙값 문제의 상수 근사를 얻었다[^4].
+- [Lagrange 쌍대성](lagrange-duality.md)과의 결합. Jain–Vazirani 는 시설 배치의 원시-쌍대 알고리즘을 Lagrange 완화 안에서 써서 [k-중앙값 문제](k-median.md)의 상수 근사를 얻었다[^4].
 
 [^1]: R. Bar-Yehuda, S. Even, "A linear-time approximation algorithm for the weighted vertex cover problem", Journal of Algorithms 2 (1981), 198–203.
 [^2]: A. Agrawal, P. Klein, R. Ravi, "When trees collide: an approximation algorithm for the generalized Steiner problem on networks", SIAM Journal on Computing 24 (1995), 440–456.

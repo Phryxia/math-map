@@ -121,7 +121,8 @@ graph TD
   - [지배 집합 문제](dominating-set.md): 모든 정점을 자신이나 이웃으로 덮는 최소 정점 집합, 집합 덮개와의 동치와 ln n 근사, W[2]-완전성, 평면 그래프의 2^{O(√k)} 알고리즘
 - [LP 반올림](lp-rounding.md): LP(linear programming) 완화로 정수 제약을 푼 뒤 정수해로 반올림하는 근사 설계
 - [원시-쌍대 방법](primal-dual-method.md): 쌍대 가능해를 키워 빠듯해진 변수만 고르는 근사 설계, 완화된 상보 여유와 빈도 근사, Steiner 숲의 동시 증가와 역삭제
-  - [시설 배치 문제](facility-location.md): 개설 비용과 연결 비용의 합을 최소화하는 시설 선택, 삼각부등식을 쓰는 LP 반올림과 원시-쌍대 상수 근사, k-중앙값의 국소 탐색
+- [시설 배치 문제](facility-location.md): 개설 비용과 연결 비용의 합을 최소화하는 시설 선택, 삼각부등식을 쓰는 LP 반올림과 원시-쌍대 상수 근사, k-중앙값의 국소 탐색
+  - [k-중앙값 문제](k-median.md): 고객에서 가장 가까운 시설까지의 거리 합을 최소화하는 k 개 시설 선택, 바꾸기 국소 탐색의 3+2/p 근사, Lagrange 완화의 6-근사, 1+2/e 근사 하한
 - [PCP 정리](pcp-theorem.md): PCP(probabilistically checkable proof), 곧 상수 개의 비트만 읽는 검증과 근사 하한
 - [부울 함수의 Fourier 해석](boolean-fourier.md): 초입방체 위의 Fourier 전개, 영향력과 잡음 안정성
   - [민감도 정리](sensitivity-theorem.md): 차수가 민감도의 제곱 이하라는 Huang 의 정리, 초입방체의 부호 붙은 인접 행렬과 Cauchy 끼움 정리, 블록 민감도와 결정 나무 깊이
