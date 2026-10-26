@@ -43,11 +43,11 @@ $c_\varphi$ 는 모든 $\varphi(X)$ 와 교환하고 $\mathrm{tr}\thinspace c_\v
 2. 몫이 $1$ 차원 자명표현이고 $W$ 가 기약이 아닌 경우는 $\dim W$ 에 대한 귀납으로 1 로 줄인다.
 3. 일반의 경우. $W\subset V$ 에 대해 $\mathrm{Hom}(V,W)$ 의 부분공간 $\mathcal V=\lbrace f:f\vert_W\text{ 가 상수배}\rbrace$ 와 $\mathcal W=\lbrace f:f\vert_W=0\rbrace$ 을 잡는다. 둘 다 $\mathfrak g$ 의 작용 $(X\cdot f)(v)=Xf(v)-f(Xv)$ 로 보존되고 $\mathcal V/\mathcal W$ 는 $1$ 차원 자명표현이다. 2 로 $\mathcal W$ 의 보존 보충공간이 생기고, 그 생성원 $f$ 를 $f\vert_W=\mathrm{id}$ 로 정규화하면 $f$ 는 $\mathfrak g$ 의 작용과 교환하는 사영이다. $\ker f$ 가 $W$ 의 보존 보충공간이다.
 
-## Lie 대수 코호몰로지로 쓴 꼴
+## Whitehead 첫째 보조정리
 
 **Whitehead 첫째 보조정리(Whitehead's first lemma).** 반단순 $\mathfrak g$ 의 유한차원 표현 $V$ 에 대해 $\mathfrak g$ 에서 $V$ 로 가는 선형사상 $\delta$ 가 $\delta([X,Y])=X\delta(Y)-Y\delta(X)$ 를 만족하면 $\delta(X)=Xv$ 인 $v\in V$ 가 있다.
 
-표현의 짧은 완전열 $0\to W\to V\to U\to0$ 에서 선형 보충공간 둘의 차이는 $\mathrm{Hom}(U,W)$ 에 값을 갖는 이런 $\delta$ 를 준다. 보조정리를 $\mathrm{Hom}(U,W)$ 에 쓰면 보존되는 보충공간이 나오므로, 이 보조정리는 완전가약성과 동치다.
+표현의 짧은 완전열 $0\to W\to V\to U\to0$ 에서 선형 보충공간 둘의 차이는 $\mathrm{Hom}(U,W)$ 에 값을 갖는 이런 $\delta$ 를 준다. 보조정리를 $\mathrm{Hom}(U,W)$ 에 쓰면 보존되는 보충공간이 나오므로, 이 보조정리는 완전가약성과 동치다. [Lie 대수 코호몰로지](lie-algebra-cohomology.md)로 쓰면 보조정리는 $H^1(\mathfrak g,V)=0$ 이다.
 
 ## 성립하지 않는 경우
 
@@ -63,7 +63,7 @@ $\mathfrak g$ 의 콤팩트 실형식을 Lie 대수로 갖는 단일연결 콤�
 
 - [Weyl 지표 공식](weyl-character-formula.md)의 분류 정리는 유한차원 기약표현을 지배적 정수 무게로 색인한다. 이 정리로 모든 유한차원 표현이 그 기약표현들의 직합이 되어, 지표가 표현을 동형 차이까지 정한다.
 - [최고무게 가군](highest-weight-modules.md)의 유한차원 판정 정리와 합해 유한차원 표현의 분류가 끝난다. [범주 O](category-o.md)처럼 무한차원 가군을 다루는 범주에서는 이 정리가 성립하지 않아 조성 중복도가 문제가 된다.
-- 둘째 Whitehead 보조정리(Whitehead's second lemma)의 증명에도 같은 Casimir 작용소를 쓰고, 그 보조정리에서 Lie 대수의 Levi 분해(Levi decomposition)가 유도된다.
+- 둘째 Whitehead 보조정리(Whitehead's second lemma)의 증명에도 같은 Casimir 작용소를 쓰고, 그 보조정리에서 Lie 대수의 [Levi 분해](levi-decomposition.md)가 유도된다.
 
 [^1]: J. Humphreys, *Introduction to Lie Algebras and Representation Theory* (1972), 6 절(Casimir 작용소, Weyl 정리, Whitehead 보조정리).
 

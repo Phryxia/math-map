@@ -101,7 +101,7 @@ $$
 \mathfrak g=\mathfrak g_1\oplus\cdots\oplus\mathfrak g_r
 $$
 
-일반 Lie 대수는 Levi 분해 $\mathfrak g=\mathrm{rad}\mathfrak g\rtimes\mathfrak s$ 로 가해 부분과 반단순 부분으로 나뉜다. 분류는 반단순 쪽에서 근계로 완결되고, 가해 쪽은 낮은 차원에서만 목록이 있다.
+일반 Lie 대수는 [Levi 분해](levi-decomposition.md) $\mathfrak g=\mathrm{rad}\mathfrak g\rtimes\mathfrak s$ 로 가해 부분과 반단순 부분으로 나뉜다. 분류는 반단순 쪽에서 근계로 완결되고, 가해 쪽은 낮은 차원에서만 목록이 있다.
 
 ## sl₂ 의 표현
 

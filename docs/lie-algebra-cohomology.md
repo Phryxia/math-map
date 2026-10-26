@@ -58,7 +58,7 @@ Chevalley–Eilenberg 복합체는 $U(\mathfrak g)\otimes\Lambda^n\mathfrak g$ �
 
 $V$ 가 자명하지 않은 기약표현이면 Casimir 작용소가 $V$ 위에서 $0$ 이 아닌 상수로 작용하면서 코호몰로지 위에서는 $0$ 으로 작용하므로 모든 차수의 코호몰로지가 $0$ 이다. 남은 $V=k$ 의 경우, 차수 $1$ 은 $[\mathfrak g,\mathfrak g]=\mathfrak g$ 에서, 차수 $2$ 는 Killing 형식의 비퇴화성과 차수 $1$ 의 결과로 증명된다.
 
-$H^1=0$ 은 [Weyl 완전가약성 정리](weyl-complete-reducibility.md)와 동치다. $H^1(\mathfrak g,\mathfrak g)=0$ 은 반단순 Lie 대수의 미분이 모두 내부미분이라는 것이다. $H^2=0$ 에서 **Levi 분해(Levi decomposition)** 가 유도된다. 유한차원 Lie 대수 $\mathfrak e$ 의 극대 가해 아이디얼을 $\mathfrak r$ 이라 하면 반단순 부분대수 $\mathfrak s$ 가 있어 $\mathfrak e=\mathfrak s\oplus\mathfrak r$ (벡터공간 직합) 이다.
+$H^1=0$ 은 [Weyl 완전가약성 정리](weyl-complete-reducibility.md)와 동치다. $H^1(\mathfrak g,\mathfrak g)=0$ 은 반단순 Lie 대수의 미분이 모두 내부미분이라는 것이다. $H^2=0$ 에서 [Levi 분해](levi-decomposition.md)가 유도된다. 유한차원 Lie 대수 $\mathfrak e$ 의 극대 가해 아이디얼을 $\mathfrak r$ 이라 하면 반단순 부분대수 $\mathfrak s$ 가 있어 $\mathfrak e=\mathfrak s\oplus\mathfrak r$ (벡터공간 직합) 이다.
 
 ## 차수 3
 
@@ -99,6 +99,6 @@ $G$ 위의 미분형식을 왼쪽 이동과 오른쪽 이동으로 평균내면 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Levi 분해](levi-decomposition.md)
 
 #algebra #group_theory #algebraic_topology
