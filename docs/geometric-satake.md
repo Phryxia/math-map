@@ -2,7 +2,11 @@
 
 # 개요
 
-**기하학적 Satake 대응(geometric Satake equivalence)** 은 아핀 Grassmann 다양체 위의 $G(\mathcal O)$ 동변 퍼버스 층(perverse sheaf)의 범주가 쌍대군의 표현 범주와 텐서 범주로서 동치라는 정리다. [Satake 동형](satake-isomorphism.md)에서 비분기 Hecke 대수는 쌍대군의 표현환과 같다.
+**기하학적 Satake 대응(geometric Satake equivalence)** 은 군 $G$ 에서 만든 공간 위의 층들을 $G$ 의 쌍대군의 표현으로 읽는 동치다. $G=\mathrm{PGL}\_2$ 에서 그 공간의 가장 작은 조각은 사영직선 $\mathbb P^1$ 이고, 그 코호몰로지는 $0$ 차와 $2$ 차에 $1$ 차원씩 있어 합이 $2$ 차원이다. 이 두 차원은 쌍대군 $\mathrm{SL}\_2(\mathbb C)$ 의 $2$ 차원 표현의 두 무게에 대응하고, 더 큰 조각에서도 코호몰로지의 차수가 무게로, 전체 차원이 표현의 차원으로 맞는다. 정리는 이 대응이 층의 합성곱과 표현의 [텐서곱](tensor-products.md)까지 보존하는 범주 동치임을 보이고, 그 결과 쌍대군이 $G$ 의 기하에서 만들어진다.
+
+# 직관
+
+기하학적 Satake 대응은 아핀 Grassmann 다양체 위의 $G(\mathcal O)$ 동변 퍼버스 층(perverse sheaf)의 범주가 쌍대군의 표현 범주와 텐서 범주로서 동치라는 정리다. [Satake 동형](satake-isomorphism.md)에서 비분기 Hecke 대수는 쌍대군의 표현환과 같다.
 
 $$
 \mathcal H(G,K)\thickspace\cong\thickspace R(\widehat G)\otimes\mathbb C
@@ -18,7 +22,7 @@ $$
 \mathrm{Rep}(\widehat G)
 $$
 
-왼쪽은 **아핀 Grassmann 다양체** $\mathrm{Gr}\_G=G(F)/G(\mathcal O)$ 위의 $G(\mathcal O)$ 동변 퍼버스 층들의 범주이고 오른쪽은 쌍대군의 유한차원 표현 범주다. 동치는 텐서 범주의 동치이며 층의 합성곱이 표현의 [텐서곱](tensor-products.md)에 대응한다.
+왼쪽은 **아핀 Grassmann 다양체** $\mathrm{Gr}\_G=G(F)/G(\mathcal O)$ 위의 $G(\mathcal O)$ 동변 퍼버스 층들의 범주이고 오른쪽은 쌍대군의 유한차원 표현 범주다. 동치는 텐서 범주의 동치이며 층의 합성곱이 표현의 텐서곱에 대응한다.
 
 왼쪽은 $G$ 만으로 정의되고 $\widehat G$ 를 쓰지 않는다. 오른쪽을 Tannaka 형식주의로 복원하면 쌍대군이 근계를 뒤집은 구성이 아니라 $G$ 의 고리 공간의 기하에서 나오는 대상이 된다.
 
@@ -27,8 +31,6 @@ $$
 $$
 
 이 정리가 [Langlands 강령](langlands-program.md)에서 쌍대군이 등장하는 근거이고, [기하학적 Langlands 강령](geometric-langlands.md)이 이를 바탕으로 세워진다.
-
-# 직관
 
 Satake 동형의 좌변 $\mathcal H(G,K)$ 는 이중 잉여류의 지시함수 $1_{Kt^\lambda K}$ 들이 기저이고, 우변 $R(\widehat G)\otimes\mathbb C$ 는 기약지표 $\chi_\lambda$ 들이 기저다. 두 기저가 서로 대응하는지 보려면 지시함수 하나의 상을 계산하면 된다. $1_{Kt^\lambda K}$ 의 상은 $\chi_\lambda$ 가 아니고, 다른 지표들이 $q^{-1}$ 의 거듭제곱을 계수로 섞여 든다. 동형은 있지만 기저끼리는 어긋난다.
 
