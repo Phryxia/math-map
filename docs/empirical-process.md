@@ -116,7 +116,7 @@ $$F(x\wedge y) - F(x)F(y)$$
 
 ## M-추정량의 점근 성질
 
-모수 $\theta$ 를 $\theta\mapsto P_n m\_\theta$ 의 최대점으로 정하는 추정량에서, 일치성의 증명은 $\lbrace m\_\theta\rbrace$ 가 Glivenko–Cantelli 족임을 쓰고 점근 정규성의 증명은 미분한 족이 Donsker 족임을 쓴다. [최대가능도 추정](maximum-likelihood.md)이 $m\_\theta = \log p\_\theta$ 인 경우다.
+[M-추정량](m-estimators.md), 곧 모수 $\theta$ 를 $\theta\mapsto P_n m\_\theta$ 의 최대점으로 정하는 추정량에서, 일치성의 증명은 $\lbrace m\_\theta\rbrace$ 가 Glivenko–Cantelli 족임을 쓰고 점근 정규성의 증명은 미분한 족이 Donsker 족임을 쓴다. [최대가능도 추정](maximum-likelihood.md)이 $m\_\theta = \log p\_\theta$ 인 경우다.
 
 ## 통계학습의 일반화 경계
 

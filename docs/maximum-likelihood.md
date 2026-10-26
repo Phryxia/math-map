@@ -165,6 +165,7 @@ $$
 
 - [Fisher 정보](fisher-information.md)
 - [지수족](exponential-families.md)
+- [M-추정량](m-estimators.md)
 
 ### 알고리즘과 모형
 
