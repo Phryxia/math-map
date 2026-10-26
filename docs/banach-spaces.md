@@ -2,17 +2,13 @@
 
 # 개요
 
-**Banach 공간(Banach space)** 은 노름이 주어지고 그 노름에 대해 [완비](completeness.md)한 [벡터 공간](vector-spaces.md)이다. 완비성이 Cauchy 수열의 수렴과 절대수렴 급수의 수렴을 보장하므로, 근사열의 극한으로 만든 대상이 공간 안에 존재한다.
-
-유한차원에서 참이던 여러 명제가 여기서 깨진다. [선형사상](linear-maps.md)이 연속이 아닐 수 있다. 부분공간이 닫히지 않을 수 있다. 닫힌 유계집합이 콤팩트하지 않다.
-
-[Hahn–Banach 정리](hahn-banach-theorem.md), [열린 사상 정리](open-mapping-theorem.md), [균등유계성 원리](uniform-boundedness.md)가 이 공간의 기본 도구다. 뒤의 둘은 완비성에서 [Baire 범주 정리](baire-category.md)를 거쳐 나오고, 앞의 하나는 [선택공리](axiom-of-choice.md)에서 나온다.
+**Banach 공간(Banach space)** 은 원소의 크기를 재는 방법이 있고, 서로 점점 가까워지는 원소들의 열이 언제나 공간 안의 한 점으로 다가가는 [벡터 공간](vector-spaces.md)이다. 미분방정식의 해를 식으로 쓸 수 없을 때는 근사해를 차례로 만들어 그 극한을 해로 삼는데, 함수들을 모은 공간에 그 극한이 없으면 이 방법으로 해가 나오지 않는다. 함수의 크기를 재는 노름을 정하고 그 노름에 대해 이런 극한이 늘 공간 안에 있음을 확인하면, 근사열의 극한으로 해가 존재함을 보일 수 있다.
 
 # 직관
 
 해를 직접 쓸 수 없을 때 근사열의 극한으로 해를 얻으려면 극한이 공간 안에 있어야 한다. 같은 함수 집합도 노름에 따라 완비성이 달라져서, [연속함수](continuity.md)열이 [균등수렴](uniform-convergence.md)하면 극한이 연속이므로 $C\lbrack 0,1\rbrack$ 은 상한 노름에서 완비다. 같은 집합을 적분 노름으로 재면 극한이 연속이 아닐 수 있어 완비가 아니다.
 
-무한차원에는 좌표가 없을 수 있어 0 이 아닌 연속 선형범함수의 존재가 자명하지 않은데, Hahn–Banach 정리는 부분공간에서 정의된 범함수를 노름을 키우지 않고 전체로 확장한다. 쌍대공간이 아래 식만큼 크면 볼록집합의 분리와 약한 위상의 이론이 가능하다.
+무한차원에는 좌표가 없을 수 있어 0 이 아닌 연속 선형범함수의 존재가 자명하지 않은데, [Hahn–Banach 정리](hahn-banach-theorem.md)는 부분공간에서 정의된 범함수를 노름을 키우지 않고 전체로 확장한다. 쌍대공간이 아래 식만큼 크면 볼록집합의 분리와 약한 위상의 이론이 가능하다.
 
 $$
 x\ne0\thinspace\Longrightarrow\thinspace\exists f\in X^\ast:\thinspace\lVert f\rVert=1,\thinspace f(x)=\lVert x\rVert
@@ -30,7 +26,7 @@ $$
 \lVert x+y\rVert\le\lVert x\rVert+\lVert y\rVert
 $$
 
-$d(x,y)=\lVert x-y\rVert$ 가 거리를 주고, 이 거리에 대해 완비이면 **Banach 공간**이다.
+$d(x,y)=\lVert x-y\rVert$ 가 거리를 주고, 이 거리에 대해 [완비](completeness.md)이면 **Banach 공간**이다.
 
 | 공간 | 노름 | 완비인가 |
 |---|---|---|
@@ -71,7 +67,7 @@ $X$ 가 Banach, $\lbrace T_\alpha\rbrace\subset\mathcal B(X,Y)$ 가 모든 $x$ �
 
 $T\in\mathcal B(X,Y)$ 가 전사이면 $T$ 는 열린 사상이고, 특히 전단사이면 $T^{-1}$ 도 유계다.
 
-*증명.* $Y=\bigcup_n T(nB_X)$ 에 Baire 를 적용해 $\overline{T(B_X)}$ 가 내부를 가짐을 얻고, 완비성으로 폐포를 벗겨 낸다. 둘째 단계가 절대수렴 급수의 수렴을 쓰므로 $X$ 의 완비성이 필요하다.
+*증명.* $Y=\bigcup_n T(nB_X)$ 에 [Baire 범주 정리](baire-category.md)를 적용해 $\overline{T(B_X)}$ 가 내부를 가짐을 얻고, 완비성으로 폐포를 벗겨 낸다. 둘째 단계가 절대수렴 급수의 수렴을 쓰므로 $X$ 의 완비성이 필요하다. 자세한 증명은 [열린 사상 정리](open-mapping-theorem.md)에 있다.
 
 따름정리가 둘이다. 역사상 정리로 전단사 유계작용소의 역은 유계다. 닫힌 그래프 정리로 $T:X\to Y$ 가 선형이고 그래프가 닫혀 있으면 $T$ 가 유계다. 뒤의 것은 유계성을 직접 보이는 대신 $x_n\to x$ 이고 $Tx_n\to y$ 일 때 $y=Tx$ 임만 확인하게 해 준다.
 
@@ -79,7 +75,7 @@ $T\in\mathcal B(X,Y)$ 가 전사이면 $T$ 는 열린 사상이고, 특히 전�
 
 - 모든 노름이 동치인 것은 유한차원에서만 참이다.
 - 닫힌 유계집합이 콤팩트한 것도 유한차원에서만 참이며, Riesz 보조정리가 단위구의 콤팩트성과 유한차원성의 동치를 준다.
-- 모든 선형사상이 연속인 것도 거짓이다. 미분 작용소가 반례다.
+- 모든 [선형사상](linear-maps.md)이 연속인 것도 거짓이다. 미분 작용소가 반례다.
 - 모든 부분공간이 닫혀 있지 않다. 다항식들은 $C[0,1]$ 에서 조밀하지만 닫히지 않았다.
 - 무한차원 Banach 공간의 Hamel 기저는 비가산이며, 그 사실이 Baire 범주 정리로 증명된다.
 
@@ -89,7 +85,7 @@ $T\in\mathcal B(X,Y)$ 가 전사이면 $T$ 는 열린 사상이고, 특히 전�
 
 노름 위상에서 단위구는 콤팩트하지 않지만, 반사적이면 약한 위상에서 콤팩트하다. 최소화 문제에서 유계인 수열이 약수렴하는 부분열을 가지므로 변분법의 직접법이 작동한다.
 
-[Banach–Alaoglu 정리](banach-alaoglu.md)로 $X^\ast$ 의 단위구는 약 $\ast$ 위상에서 항상 콤팩트하다. 증명이 [콤팩트성](compactness.md)의 [Tychonoff 정리](tychonoff-theorem.md)를 거치므로 이 정리도 선택공리에 의존한다.
+[Banach–Alaoglu 정리](banach-alaoglu.md)로 $X^\ast$ 의 단위구는 약 $\ast$ 위상에서 항상 콤팩트하다. 증명이 [콤팩트성](compactness.md)의 [Tychonoff 정리](tychonoff-theorem.md)를 거치므로 이 정리도 [선택공리](axiom-of-choice.md)에 의존한다.
 
 # 활용
 
