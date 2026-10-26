@@ -2,7 +2,11 @@
 
 # 개요
 
-**Serre 추측(Serre's modularity conjecture)** 은 절대 Galois 군의 기약이고 홀인 2 차원 mod $p$ 표현이 모두 고유형식에서 온다는 진술이고, Khare–Wintenberger 정리(Khare–Wintenberger theorem)는 이 추측을 증명한 정리다. [모듈러 형식](modular-forms.md)의 고유형식 $f$ 는 각 소수 $\lambda\mid p$ 마다 [Galois 표현](galois-representations.md) $\rho_{f,\lambda}$ 를 낳고, 그것을 잉여체로 환원하면 2 차원 mod $p$ 표현
+**Serre 추측(Serre's modularity conjecture)** 은 소수마다 하나씩 정해지는 정수의 열을 어떤 소수 $\ell$ 로 나눈 나머지가, 대칭 조건 둘을 만족하면 모듈러 형식의 계수와 같다는 진술이다. $y^2+y=x^3-x^2$ 의 해를 무한원점까지 $p$ 로 나눈 나머지에서 세어 $a_p=p+1-(\text{해의 수})$ 로 두면 $a_2=-2$, $a_3=-1$ 이고, 이 값은 $q\prod_{n\ge1}(1-q^n)^2(1-q^{11n})^2$ 을 전개한 $q^2$, $q^3$ 의 계수와 같다. 방정식에서 나온 수와 멱급수의 계수가 언제 이렇게 일치하는지가 문제다. Serre 는 1987 년에 열이 기약이고 홀수인 2 차원 Galois 표현에서 오면 $\ell$ 로 나눈 나머지에서 항상 일치하고 맞는 형식의 무게와 레벨도 표현에서 계산된다고 추측했으며, Khare 와 Wintenberger 가 2008 년에 이를 증명했다.
+
+# 직관
+
+[모듈러 형식](modular-forms.md)의 고유형식 $f$ 는 각 소수 $\lambda\mid p$ 마다 [Galois 표현](galois-representations.md) $\rho_{f,\lambda}$ 를 낳고, 그것을 잉여체로 환원하면 2 차원 mod $p$ 표현
 
 $$
 \bar\rho_f\colon G_{\mathbb Q}\longrightarrow \mathrm{GL}\_2(\overline{\mathbb F}\_p)
@@ -10,18 +14,16 @@ $$
 
 가 나온다. Serre 는 1987 년에 그 역을 물었다.[^1] 연속이고 기약이고 홀수인 mod $p$ 표현은 모두 이렇게 나오는가? 여기서 홀수란 복소켤레 $c$ 에 대해 $\det\bar\rho(c)=-1$ 이라는 뜻이다.
 
-추측은 여기서 멈추지 않는다. Serre 는 그런 $f$ 의 무게와 레벨을 $\bar\rho$ 자체에서 읽는 공식을 함께 제시했다.
+Serre 는 그런 $f$ 의 무게와 레벨을 $\bar\rho$ 자체에서 읽는 공식을 함께 제시했다.
 
 $$
 k(\bar\rho)\ \text{는}\ \bar\rho|\_{I_p}\ \text{로부터},\qquad
 N(\bar\rho)\ \text{는}\ p\ \text{밖의 분기로부터}
 $$
 
-레벨은 $p$ 를 뺀 Artin 도체이고, 무게는 $p$ 자리의 온순 분기 지표의 지수로 정해진다. 표현 하나를 받아 유한한 자료 $(k,N)$ 을 계산하면, 찾아야 할 고유형식이 유한 차원 공간 $S_{k}(\Gamma_1(N))$ 안에 있다고 장소까지 지목한다는 것이다. 추측이 곧 알고리즘인 드문 형태다.
+레벨은 $p$ 를 뺀 Artin 도체이고, 무게는 $p$ 자리의 온순 분기 지표의 지수로 정해진다. 표현 하나를 받아 유한한 자료 $(k,N)$ 을 계산하면, 찾아야 할 고유형식이 유한 차원 공간 $S_{k}(\Gamma_1(N))$ 안에 있다고 장소까지 지목한다는 것이다.
 
 Khare 와 Wintenberger 가 2008 년에 이것을 증명했다.[^2] 이 정리가 **Khare–Wintenberger 정리(Khare–Wintenberger theorem)** 다. 증명의 요지는 [변형환](deformation-rings.md)이다. $\bar\rho$ 를 조건에 맞는 특성 $0$ 표현으로 **올리고**, 모듈러성 올림 정리($R=T$ 정리)로 그 올림이 모듈러임을 보이고, 다시 환원해 $\bar\rho$ 가 모듈러라고 결론짓는다. 올림은 언제나 가능하지 않으므로 소수와 무게를 옮겨 가며 귀납을 돌린다.
-
-# 직관
 
 무게 $12$ 레벨 $1$ 의 유일한 첨점형식은 $\Delta=\sum\tau(n)q^n$ 이고, 거의 모든 $p$ 에서 $\bar\rho_{\Delta,p}$ 의 상은 가능한 한 크다. 유한개의 **예외적 소수** $2,3,5,7,23,691$ 에서는 상이 작아지고, 그때마다 $\tau$ 에 합동이 생긴다. $p=691$ 에서는 표현이 아예 가약이 되어 $1\oplus\chi^{11}$ 로 갈라지고, 그 결과가 Ramanujan 의 합동이다.
 
