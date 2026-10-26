@@ -154,7 +154,8 @@ graph TD
 - [Harish-Chandra 동형](harish-chandra-isomorphism.md): 보편포락대수의 중심과 Weyl 군 불변 다항식환의 동형, 중심 지표가 같을 조건
 - [Weyl 완전가약성 정리](weyl-complete-reducibility.md): 반단순 Lie 대수의 유한차원 표현이 기약표현의 직합이라는 정리와 Casimir 작용소를 쓴 증명
 - [Lie 대수 코호몰로지](lie-algebra-cohomology.md): Chevalley–Eilenberg 복합체, 확장의 분류와 반단순 Lie 대수의 Whitehead 보조정리
-  - [Levi 분해](levi-decomposition.md): 유한차원 Lie 대수를 근기와 반단순 부분대수의 반직곱으로 쪼개는 정리와 Malcev 의 켤레 정리
+- [Levi 분해](levi-decomposition.md): 유한차원 Lie 대수를 근기와 반단순 부분대수의 반직곱으로 쪼개는 정리와 Malcev 의 켤레 정리
+  - [Ado 정리](ado-theorem.md): 유한차원 Lie 대수가 충실한 유한차원 표현, 곧 행렬 Lie 대수로 실현된다는 정리
 - [Coxeter 군](coxeter-groups.md): 반사로 생성된 군의 표시와 길이 함수, Bruhat 순서
 - [Weyl 지표 공식](weyl-character-formula.md): 최고 가중치 표현의 지표를 교대합의 비로 적는 공식
   - [구면조화함수](spherical-harmonics.md): 구면 위 Laplace 작용소의 고유함수와 회전군의 기약분해

@@ -56,7 +56,7 @@ $\mathfrak g$ 의 부분대수 $\mathfrak s$ 가 벡터공간 직합 $\mathfrak 
 
 - [Lie 대수](lie-algebras.md)의 분류는 Levi 분해로 반단순 Lie 대수의 분류, 가해 Lie 대수의 분류, 반단순 Lie 대수가 가해 Lie 대수에 작용하는 방법으로 나뉜다. 반단순 쪽은 [근계](root-systems.md)로 분류되고 가해 쪽은 차원이 작은 경우에만 목록이 있다.
 - [Lie 군](lie-groups.md)에서도 같은 분해가 성립한다. 단일연결 Lie 군은 단일연결 가해 정규부분군과 반단순 부분군의 반직곱이다. 넓이를 보존하는 평면의 아핀 변환군은 $\mathrm{SL}\_2(\mathbb R)\ltimes\mathbb R^2$ 이다.
-- 모든 유한차원 실 Lie 대수가 어떤 Lie 군의 Lie 대수라는 Lie 의 셋째 정리(Lie's third theorem)는 Levi 분해로 가해인 경우와 반단순인 경우로 나눠 증명할 수 있다.
+- 모든 유한차원 실 Lie 대수가 어떤 Lie 군의 Lie 대수라는 Lie 의 셋째 정리(Lie's third theorem)는 Levi 분해로 가해인 경우와 반단순인 경우로 나눠 증명할 수 있다. Levi 분해를 쓰는 [Ado 정리](ado-theorem.md)로도 증명된다.
 
 [^1]: N. Jacobson, *Lie Algebras* (1962), 3 장 9 절(Levi 정리와 Malcev 정리). C. Weibel, *An Introduction to Homological Algebra* (1994), 7 장(Whitehead 보조정리를 쓴 증명).
 
@@ -68,6 +68,6 @@ $\mathfrak g$ 의 부분대수 $\mathfrak s$ 가 벡터공간 직합 $\mathfrak 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Ado 정리](ado-theorem.md)
 
 #algebra #group_theory
