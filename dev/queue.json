@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-26T05:04:52.930Z",
-  "nextSeq": 2537,
+  "savedAt": "2026-10-26T09:06:01.557Z",
+  "nextSeq": 2541,
   "items": [
     {
       "id": "9bab7237",
@@ -162,6 +162,22 @@
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 76차(2026-10-20)에 3절의 큐 병합 스크립트가 이미 처리한 항목을 되살렸다. 회차 중간에 queue.mjs push 로 넣은 항목 4574cad3(C 스타 대수)을 같은 회차에 문서로 처리하고 remove 했는데, 병합 결과에 그것이 다시 들어와 항목 수가 524 에서 525 로 늘었다. 원인은 gone 판정이 base 를 기준으로 한다는 것이다. gone 은 회차 시작 판(base)에 있고 내 판이나 원격 판에서 사라진 id 만 모은다. 회차 중간에 생긴 항목은 base 에 없으므로 gone 후보가 되지 못하고, 그 사이 큐 커밋을 한 번 해서 원격 판이 그 항목을 담고 있으면 합집합에서 되살아난다. 이 조건은 한 회차에 큐 커밋을 두 번 할 때(타이머가 남아 2절 루프를 더 돌 때) 생긴다. 처리. 병합 뒤 dev/queue.json 을 node 로 직접 열어 그 id 를 빼고, nextSeq 를 하나 올려 이 메모를 더했다. 규칙. (1) 한 회차에 큐 커밋을 두 번 이상 하면 두 번째 병합 뒤 반드시 이 회차에 remove 한 id 전부가 결과에 없는지 확인한다. 확인은 node -e 로 JSON 을 읽어 id 를 세는 것으로 한다. (2) 회차 중간에 push 한 항목을 같은 회차에 처리할 것 같으면 push 를 회차 끝까지 미룬다. 이 회차에는 C 스타 대수 항목을 push 한 뒤 바로 꺼내 썼으므로 애초에 push 하지 않아도 되었다. (3) 병합 스크립트는 dev/ 가 아니라 /tmp 의 사본이므로 고쳐도 되지만 CLAUDE.md 3절이 그 내용을 정하고 있어 세션이 임의로 바꾸면 다음 회차와 어긋난다. 고치려면 CLAUDE.md 쪽 변경이 필요하고 그것은 1.5절의 규칙 변경 절차를 거쳐야 한다.",
       "seq": 2296,
       "createdAt": "2026-10-20T13:00:36.604Z"
+    },
+    {
+      "id": "5466f7f0",
+      "title": "규칙 #5 적용: 개요는 개념이 무엇인지, 그것이 필요한 문제 하나, 그 문제를 다루는 방법만 쓰고 정리와 하위 개념을 나열하지 않는다, 검사에 걸린 곳 480 곳",
+      "priority": 100,
+      "note": "4절 문체의 개요 규칙(이슈 #5). 후보는 그 항목의 awk 검사(개요의 링크와 이름 붙은 정리가 넷 이상)로 찾지만, 검사에 걸리지 않아도 정리 나열이나 뒤 절의 요약인 개요는 고친다. 2026-10-26 회차에 linear-algebra-overview 와 그래프 이론 문서 약 30 개(graphs, graph-theory-overview, matchings, graph-coloring, eulerian-circuits, planar-graphs, hamiltonian-cycles, minimum-spanning-tree, menger-theorem, network-flow, graph-search, topological-sort, graph-isomorphism, karger-min-cut, perfect-graphs, treewidth, graph-laplacian, stable-matching, ear-decomposition, block-cut-tree, graph-degeneracy, list-coloring, arborescences, effective-resistance, graph-toughness, de-bruijn-sequences, steiner-tree-problem, gomory-hu-tree, color-refinement, stoer-wagner-algorithm, graph-minors, pathwidth, chvatal-erdos-theorem)를 고쳤다. 개요에서 지운 링크, 원어, 두문자어 풀이, 굵은 정의는 본문의 다음 첫 등장으로 옮긴다. 개요의 역사 문장과 각주는 해당 정리가 있는 성질 절로 옮긴다. 한 회차에 여러 문서를 고쳐도 된다.",
+      "createdAt": "2026-10-26T09:05:41.243Z",
+      "seq": 2539
+    },
+    {
+      "id": "2e888689",
+      "title": "규칙 #6 적용: 그래프 이론 문서의 구체적 그래프 예를 docs/figures 의 SVG 그림으로 보인다, 남은 14 곳",
+      "priority": 100,
+      "note": "4절 다이어그램의 SVG 규칙(이슈 #6). 남은 문서: branchwidth chromatic-number-of-the-plane complete-graph-crossing-number crossing-number-inequality de-bruijn-erdos-theorem expander-graphs gallai-edmonds-decomposition gnn-expressivity ramanujan-graphs spectral-sparsification steiner-ratio stoer-wagner-algorithm sylvester-four-point tutte-polynomial. graph-theory-overview 는 mermaid 지도가 있어 대상이 아니다. 그릴 예가 본문에 없는 문서는 직관 절의 예를 하나 정해 그 예를 그린다. SVG 는 python 이 아니라 손이나 임시 스크립트로 /tmp 에서 만들고, playwright 로 PNG 를 떠서 눈으로 확인한다. 2026-10-26 회차의 그림들(docs/figures)이 양식의 예다. 다른 분야 문서(조합론, 위상수학 등)에도 그림이 필요한 예가 보이면 같은 규칙을 적용할 후보로 큐에 넣는다.",
+      "createdAt": "2026-10-26T09:05:41.376Z",
+      "seq": 2540
     },
     {
       "id": "c4f40bdb",
