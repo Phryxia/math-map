@@ -2,13 +2,17 @@
 
 # 개요
 
-**Wess–Zumino–Witten 모형(Wess–Zumino–Witten model)** 은 곡면에서 콤팩트 [Lie 군](lie-groups.md)으로 가는 사상을 장으로 두고, 운동 항에 Wess–Zumino 항을 더한 작용을 갖는 2 차원 등각장론이다. [Chern–Simons 이론](chern-simons.md)의 작용은 게이지 불변이 아니다. 닫힌 3 다양체에서는 게이지 변환에 따른 변화가 $2\pi\mathbb Z$ 라서 $e^{iS}$ 가 불변이고, 레벨 $k$ 의 정수성이 거기서 나왔다. 3 다양체에 경계가 있으면 변화량에 경계 적분 항이 남고 그 항은 사라지지 않는다.
+**Wess–Zumino–Witten 모형(Wess–Zumino–Witten model)** 은 곡면의 각 점에 콤팩트 [Lie 군](lie-groups.md)의 원소를 붙인 장을 다루는 2 차원 장론으로, 정수 $k$ 를 정하면 군의 표현 가운데 유한 개만 남긴다. $\mathrm{SU}(2)$ 의 기약표현은 스핀 $0,\tfrac12,1,\tfrac32,\dots$ 로 끝없이 있지만, $k=1$ 인 모형에서는 스핀 $0$ 과 $\tfrac12$ 만 남고 보통은 $\tfrac12\otimes\tfrac12=0\oplus1$ 인 곱이 $0$ 하나로 잘린다. 표현이 유한 개라서 곡면 위의 상태 공간이 유한 차원이 되고, 그 차원과 곱 규칙을 계산할 수 있다. 모형은 [Chern–Simons 이론](chern-simons.md)의 작용이 경계 곡면에 남기는 항에서 나오며, 이 대응으로 3 차원 다양체의 불변량을 곡면 위의 계산으로 구한다.
+
+# 직관
+
+Wess–Zumino–Witten 모형은 곡면에서 콤팩트 Lie 군으로 가는 사상을 장으로 두고, 운동 항에 Wess–Zumino 항을 더한 작용을 갖는 2 차원 등각장론이다. Chern–Simons 이론의 작용은 게이지 불변이 아니다. 닫힌 3 다양체에서는 게이지 변환에 따른 변화가 $2\pi\mathbb Z$ 라서 $e^{iS}$ 가 불변이고, 레벨 $k$ 의 정수성이 거기서 나왔다. 3 다양체에 경계가 있으면 변화량에 경계 적분 항이 남고 그 항은 사라지지 않는다.
 
 $$
 M=\text{3 다양체},\quad \partial M=\Sigma \ \Longrightarrow\ \delta_{\text{gauge}}S_{\mathrm{CS}}\big|\_{\Sigma}\ne0
 $$
 
-남은 항이 경계 곡면 $\Sigma$ 위에 사는 2 차원 장론의 작용이고, 그 이론이 **Wess–Zumino–Witten 모형**이다. 벌크의 게이지 자유도가 경계에서 물리적 자유도가 되는 현상이 **벌크–경계 대응**이고, 3 차원 위상장론과 2 차원 등각장론은 같은 자료의 두 표현이다.
+남은 항이 경계 곡면 $\Sigma$ 위에 사는 2 차원 장론의 작용이고, 그 이론이 Wess–Zumino–Witten 모형이다. 벌크의 게이지 자유도가 경계에서 물리적 자유도가 되는 현상이 **벌크–경계 대응**이고, 3 차원 위상장론과 2 차원 등각장론은 같은 자료의 두 표현이다.
 
 | 3 차원 Chern–Simons | ↔ | 2 차원 WZW(Wess–Zumino–Witten) |
 |---|---|---|
@@ -18,8 +22,6 @@ $$
 | 선을 합치는 규칙 | ↔ | 융합 규칙 |
 
 [Lie 대수](lie-algebras.md) $\mathfrak g$ 의 기약표현은 무한히 많지만 레벨을 $k$ 로 고정하면 유한개만 남는다. 그 유한성 덕분에 [모듈러 텐서범주](modular-tensor-categories.md)가 되고 3 [다양체](manifolds.md) 불변량이 유한합으로 계산된다.
-
-# 직관
 
 게이지 변환 가운데 경계에서 항등원으로 가는 것만이 물리적 상태를 바꾸지 않는다. 경계에서 자유롭게 움직이는 변환은 상태를 바꾼다.
 
