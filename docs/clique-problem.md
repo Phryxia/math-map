@@ -22,7 +22,7 @@
 
 ## 정확한 알고리즘
 
-J. W. Moon 과 L. Moser 는 정점 $n$ 개 그래프의 극대 클릭이 $3^{n/3}$ 개 이하이고 이 수가 달성됨을 증명했다[^2]. 극대 클릭을 모두 나열하는 Bron–Kerbosch 알고리즘에 축 정점(pivot)을 고르는 규칙을 붙이면 최악 시간이 $O(3^{n/3})$ 이 된다(Tomita–Tanaka–Takahashi)[^3].
+J. W. Moon 과 L. Moser 는 정점 $n$ 개 그래프의 극대 클릭이 $3^{n/3}$ 개 이하이고 이 수가 달성됨을 증명했다[^2]. 극대 클릭을 모두 나열하는 [Bron–Kerbosch 알고리즘](bron-kerbosch-algorithm.md)에 축 정점(pivot)을 고르는 규칙을 붙이면 최악 시간이 $O(3^{n/3})$ 이 된다(Tomita–Tanaka–Takahashi)[^3].
 
 크기 $k$ 의 클릭은 행렬곱으로 찾을 수 있다. 크기 $k/3$ 의 클릭을 정점으로 하는 그래프를 만들면 그 그래프의 삼각형이 크기 $k$ 의 클릭이고, 삼각형 판정은 인접 행렬의 곱으로 한다. 시간은 $O(n^{\omega k/3})$ 이다(Nešetřil–Poljak)[^4]. 여기서 $\omega$ 는 행렬곱 지수다.
 
@@ -70,6 +70,7 @@ $G(n,1/2)$ 에 크기 $k$ 의 클릭을 심은 그래프에서 그 클릭을 찾
 
 ## 더 알아보기
 
+- [Bron–Kerbosch 알고리즘](bron-kerbosch-algorithm.md)
 - [숨긴 클릭 문제](planted-clique.md)
 
 #complexity #graph_theory #algorithms
