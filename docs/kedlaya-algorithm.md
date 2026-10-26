@@ -2,9 +2,13 @@
 
 # 개요
 
-Kedlaya 알고리즘(Kedlaya's algorithm)은 유한체 위 [초타원곡선](hyperelliptic-curves.md)의 zeta 함수를 $p$ 진 코호몰로지로 계산하는 알고리즘이다. [Dwork](dwork-rationality.md)는 [유한체](finite-fields.md) 위 다양체의 zeta 함수가 유리함수임을 $p$ 진 해석학으로 증명했다. 남는 문제는 그 유리함수를 실제로 계산하는 것이다.
+**Kedlaya 알고리즘(Kedlaya's algorithm)** 은 [유한체](finite-fields.md) 위 [초타원곡선](hyperelliptic-curves.md) $y^2=f(x)$ 의 해의 개수를 원소를 하나씩 대입하지 않고 계산하는 알고리즘이다. 원소가 $3^{100}$ 개인 체에서 해를 세려면 $x$ 에 $3^{100}$ 개의 값을 넣어야 하므로 직접 셀 수 없다. 해의 개수는 정수 계수 다항식 하나로 정해지고, 그 계수의 크기에는 상계가 있다. 알고리즘은 $3$ 진 수의 근사 계산으로 이 계수를 상계의 두 배보다 정밀하게 구해, 정수인 계수를 정확히 확정한다.
 
-Dwork 의 증명은 구성적이다. 완전연속 작용소의 [Fredholm 행렬식](fredholm-determinant.md)을 유한 정밀도로 잘라 내면 Frobenius 의 특성다항식이 나온다. 다만 Dwork 의 급수는 수렴이 느리고 정밀도 관리가 복잡해 실제 계산에 쓰기 어려웠다. Monsky–Washnitzer 코호몰로지가 그 간극을 메웠고, 그것으로 초타원곡선의 zeta 함수를 계산한 것이 **Kedlaya 알고리즘(Kedlaya's algorithm, 2001)** 이다.
+# 직관
+
+[Dwork](dwork-rationality.md)는 유한체 위 다양체의 zeta 함수가 유리함수임을 $p$ 진 해석학으로 증명했다. 남는 문제는 그 유리함수를 실제로 계산하는 것이다.
+
+Dwork 의 증명은 구성적이다. 완전연속 작용소의 [Fredholm 행렬식](fredholm-determinant.md)을 유한 정밀도로 잘라 내면 Frobenius 의 특성다항식이 나온다. 다만 Dwork 의 급수는 수렴이 느리고 정밀도 관리가 복잡해 실제 계산에 쓰기 어려웠다. Monsky–Washnitzer 코호몰로지가 그 간극을 메웠고, 그것으로 초타원곡선의 zeta 함수를 계산한 것이 Kedlaya 알고리즘(2001)이다.
 
 핵심 구조는 두 절댓값을 조합하는 것이다.
 
@@ -19,8 +23,6 @@ $$
 특성다항식의 계수는 정수이고 Weil 한계가 그 크기의 상계를 준다. $p^N$ 이 상계의 두 배를 넘을 만큼 $p$ 진 정밀도를 확보하면 정수가 유일하게 복원되므로, 근사계산이 정확한 답을 준다.
 
 Kedlaya 알고리즘[^1]의 비용은 $\mathbb F_{p^n}$ 위 종수 $g$ 곡선에 대해 $p$ 에 대략 선형이고 $n$ 과 $g$ 에 다항식이므로, $p$ 가 작고 확대차수가 큰 영역을 맡는다. Schoof–Elkies–Atkin 은 $\log p$ 의 다항식이라 $p$ 가 클 때 빠르다. 두 알고리즘은 영역을 나눈다.
-
-# 직관
 
 종수 $1$ 에서는 $E:y^2=f(x)$ 에 대해 [이차 지표](gauss-sums.md)로 점 개수를 센다.
 
