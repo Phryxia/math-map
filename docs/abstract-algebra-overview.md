@@ -151,6 +151,7 @@ graph TD
 - [근계](root-systems.md): 반단순 Lie 대수의 가중치가 이루는 유한 벡터계와 Dynkin 도형의 분류
   - [아핀 Lie 대수](affine-lie-algebras.md): 일반화 Cartan 행렬의 아핀형에 대응하는 무한차원 Lie 대수
 - [최고무게 가군](highest-weight-modules.md): 최고무게 벡터 하나로 생성되는 가군, Verma 가군과 그 단순 몫, 유한차원이 되는 무게의 판정
+- [Harish-Chandra 동형](harish-chandra-isomorphism.md): 보편포락대수의 중심과 Weyl 군 불변 다항식환의 동형, 중심 지표가 같을 조건
 - [Weyl 완전가약성 정리](weyl-complete-reducibility.md): 반단순 Lie 대수의 유한차원 표현이 기약표현의 직합이라는 정리와 Casimir 작용소를 쓴 증명
 - [Lie 대수 코호몰로지](lie-algebra-cohomology.md): Chevalley–Eilenberg 복합체, 확장의 분류와 반단순 Lie 대수의 Whitehead 보조정리
   - [Levi 분해](levi-decomposition.md): 유한차원 Lie 대수를 근기와 반단순 부분대수의 반직곱으로 쪼개는 정리와 Malcev 의 켤레 정리

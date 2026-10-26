@@ -59,7 +59,7 @@ $\lbrace L(\lambda)\rbrace_{\lambda\in\mathfrak h^\ast}$ 가 $\mathcal O$ 의 �
 
 Weyl 군의 **점작용**은 $w\cdot\lambda=w(\lambda+\rho)-\rho$ 이고, 같은 궤도의 무게들만 서로 얽힌다.
 
-Harish-Chandra 동형 $Z(\mathfrak g)\cong S(\mathfrak h)^{W\cdot}$ 로 중심지표 $\chi_\lambda$ 가 정해지고 $\chi_\lambda=\chi_\mu$ 는 $\mu\in W\cdot\lambda$ 와 동치다. 따라서
+[Harish-Chandra 동형](harish-chandra-isomorphism.md) $Z(\mathfrak g)\cong S(\mathfrak h)^{W\cdot}$ 로 중심지표 $\chi_\lambda$ 가 정해지고 $\chi_\lambda=\chi_\mu$ 는 $\mu\in W\cdot\lambda$ 와 동치다. 따라서
 
 $$
 \mathcal O=\bigoplus_{\chi}\mathcal O_\chi
@@ -168,6 +168,7 @@ $A_3$ 부터는 이 표를 Bruhat 순서만으로 채울 수 없다. 어떤 자�
 ## 선수지식
 
 - [최고무게 가군](highest-weight-modules.md)
+- [Harish-Chandra 동형](harish-chandra-isomorphism.md)
 - [Kazhdan–Lusztig 다항식](kazhdan-lusztig.md)
 
 ## 더 알아보기

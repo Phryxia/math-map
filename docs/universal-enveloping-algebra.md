@@ -70,7 +70,7 @@ $\Delta(X)=X\otimes1+1\otimes X$, $\varepsilon(X)=0$, $S(X)=-X$ ($X\in\mathfrak 
 
 ## 중심
 
-**Harish-Chandra 동형(Harish-Chandra isomorphism).** 복소 반단순 $\mathfrak g$ 의 Cartan 부분대수를 $\mathfrak h$, Weyl 군을 $W$ 라 하면 중심 $Z(\mathfrak g)$ 는 $\mathfrak h^\ast$ 위의 다항식 가운데 $W$ 의 이동 작용 $w\cdot\lambda=w(\lambda+\rho)-\rho$ 에 대해 불변인 것들의 환과 동형이다.[^1]
+**정리.** 복소 반단순 $\mathfrak g$ 의 Cartan 부분대수를 $\mathfrak h$, Weyl 군을 $W$ 라 하면 중심 $Z(\mathfrak g)$ 는 $\mathfrak h^\ast$ 위의 다항식 가운데 $W$ 의 이동 작용 $w\cdot\lambda=w(\lambda+\rho)-\rho$ 에 대해 불변인 것들의 환과 동형이다.[^1] 이 동형이 [Harish-Chandra 동형](harish-chandra-isomorphism.md)이다.
 
 $z\in Z(\mathfrak g)$ 는 최고무게 $\lambda$ 의 Verma 가군 위에서 상수 $\chi_\lambda(z)$ 로 작용하고, $\lambda\mapsto\chi_\lambda(z)$ 가 그 다항식이다. $\mathfrak{sl}\_2$ 에서 $\rho=1$ 이고 직관 절의 값 $\frac12n(n+2)=\frac12\big((n+1)^2-1\big)$ 는 $n\mapsto-n-2$ 에 대해 불변이다. 일반적으로 $\chi_\lambda=\chi_\mu$ 일 필요충분조건은 $\mu\in W\cdot\lambda$ 다.
 

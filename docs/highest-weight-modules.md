@@ -126,6 +126,7 @@ $$
 
 ## 더 알아보기
 
+- [Harish-Chandra 동형](harish-chandra-isomorphism.md)
 - [Weyl 지표 공식](weyl-character-formula.md)
 - [범주 O](category-o.md)
 
