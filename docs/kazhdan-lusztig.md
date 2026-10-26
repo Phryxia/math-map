@@ -2,7 +2,11 @@
 
 # 개요
 
-Kazhdan–Lusztig 다항식(Kazhdan–Lusztig polynomial)은 Weyl 군의 원소 쌍마다 Iwahori–Hecke 대수에서 정의되는 정수 계수 다항식이다. [Borel–Weil–Bott 정리](borel-weil-bott.md)는 표수 $0$ 에서 기약표현의 지표를 결정한다. [깃발다양체](flag-varieties.md) 위 직선다발의 [코호몰로지](cohomology.md)가 한 자리에만 살고 그 자리에서 [Weyl 지표 공식](weyl-character-formula.md)이 나온다. 표수 $p$ 에서는 코호몰로지가 여러 차수에 흩어지고 기약가군의 지표가 닫힌 공식으로 주어지지 않는다.
+**Kazhdan–Lusztig 다항식(Kazhdan–Lusztig polynomial)** 은 Weyl 군의 원소 쌍마다 정해지는 정수 계수 다항식으로, 기약표현을 끝없이 이어지는 표준 표현(Verma 가군)들의 부호 붙은 합으로 쓸 때의 계수를 준다. $\mathfrak{sl}\_2$ 에서 무게를 수직선에 찍으면, $n,n-2,n-4,\dots$ 로 이어지는 표준 표현에서 $-n-2,-n-4,\dots$ 로 이어지는 표준 표현을 빼어 $n$ 부터 $-n$ 까지의 점 $n+1$ 개, 곧 $n+1$ 차원 기약표현이 남는다. Weyl 군이 크면 이 빼기에 어느 표준 표현이 몇 번 들어가는지가 위치마다 달라 손으로 정할 수 없다. Kazhdan 과 Lusztig 은 1979 년에 Weyl 군의 Hecke 대수에서 다항식을 정의하고 그 계수가 $q=1$ 에서의 값으로 나온다고 추측했으며, 이 추측은 1981 년에 증명되었다.
+
+# 직관
+
+[Borel–Weil–Bott 정리](borel-weil-bott.md)는 표수 $0$ 에서 기약표현의 지표를 결정한다. [깃발다양체](flag-varieties.md) 위 직선다발의 [코호몰로지](cohomology.md)가 한 자리에만 살고 그 자리에서 [Weyl 지표 공식](weyl-character-formula.md)이 나온다. 표수 $p$ 에서는 코호몰로지가 여러 차수에 흩어지고 기약가군의 지표가 닫힌 공식으로 주어지지 않는다.
 
 Kazhdan 과 Lusztig 은 1979 년에 이 빈자리를 메울 조합적 대상을 정의했다.[^1] Weyl 군(더 일반적으로 [Coxeter 군](coxeter-groups.md)) $W$ 의 군환을 매개변수 $q$ 로 변형한 **Iwahori–Hecke 대수** $\mathcal H$ 를 잡고, 거기에 자연스러운 대합에 대해 자기쌍대인 기저 $\lbrace C'\_w\rbrace$ 가 유일하게 존재함을 보인다. 표준기저로 전개할 때 나오는 계수가
 
@@ -12,9 +16,7 @@ $$
 
 **Kazhdan–Lusztig 다항식**이다. 정의는 조합적이어서 Coxeter 군의 Bruhat 순서와 길이 함수만 쓴다.
 
-같은 다항식이 다른 두 곳에서도 나타난다. 기하에서는 Schubert 다양체 $X_w$ 의 교차 코호몰로지 [층](sheaves.md)의 줄기 차원이고, 표현론에서는 [범주 O](category-o.md) 의 기약가군을 Verma 가군으로 전개한 계수다. 세 세계의 일치가 Kazhdan–Lusztig 추측이었고 지금은 정리다.
-
-# 직관
+같은 다항식이 다른 두 곳에서도 나타난다. 기하에서는 Schubert 다양체 $X_w$ 의 교차 코호몰로지 [층](sheaves.md)의 줄기 차원이고, 표현론에서는 [범주 O](category-o.md) 의 기약가군을 Verma 가군으로 전개한 계수다. 세 정의의 일치가 Kazhdan–Lusztig 추측이었고 지금은 정리다.
 
 Weyl 군 $W$ 의 군환에서 단순반사 $s$ 는 $s^2=1$ 을 만족한다. 이 관계를 한 매개변수 풀어 준다.
 
