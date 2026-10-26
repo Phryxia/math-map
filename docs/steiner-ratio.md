@@ -2,11 +2,15 @@
 
 # 개요
 
-**Steiner 비(Steiner ratio)** 는 점 집합을 잇는 가장 짧은 Steiner 나무의 길이와 [최소 신장트리](minimum-spanning-tree.md)의 길이의 비를 모든 점 집합에 걸쳐 가장 작게 만든 값이다. 평면의 Euclid 거리에서 정삼각형의 비가 $\sqrt3/2$ 이고, 이 값이 Steiner 비라는 것이 Gilbert–Pollak 추측(Gilbert–Pollak conjecture)이다. 증명된 하한은 $0.824$ 이다. Steiner 비의 역수는 최소 신장트리로 [Steiner 나무 문제](steiner-tree-problem.md)를 근사할 때의 근사비다.
+**Steiner 비(Steiner ratio)** 는 점들을 잇는 선에 중간 점을 더해 길이를 줄일 수 있는 비율의 한계다. 정삼각형 꼭짓점에 놓인 세 마을을 도로로 이을 때 마을끼리만 이으면 두 변의 길이가 들고, 삼각형 가운데에 교차로를 하나 두면 더 짧아진다. Steiner 비는 교차로를 더해 얻는 가장 짧은 길이가 마을끼리만 이은 [최소 신장트리](minimum-spanning-tree.md)의 길이의 몇 배까지 내려가는지를 모든 점 배치에 걸쳐 재고, 그 역수가 최소 신장트리로 [Steiner 나무 문제](steiner-tree-problem.md)의 답을 대신할 때 길이가 늘어나는 배수의 상한이다.
 
 # 직관
 
 한 변의 길이가 $1$ 인 정삼각형의 세 꼭짓점을 잇는다. 꼭짓점끼리만 이으면 변 둘을 써서 길이가 $2$ 다. 삼각형의 중심에 점 하나를 더해 세 꼭짓점을 그 점에 이으면, 중심에서 꼭짓점까지의 거리가 $1/\sqrt3$ 이므로 길이가 $3/\sqrt3=\sqrt3\approx 1.732$ 다. 점을 더해서 길이가 $2$ 에서 $\sqrt3$ 으로 줄었고, 비는 $\sqrt3/2\approx 0.866$ 이다.
+
+![한 변이 1 인 정삼각형에서 두 변으로 이은 최소 신장트리와, 중심의 점 s 에 세 꼭짓점을 이은 Steiner 나무](figures/steiner-ratio-triangle.svg)
+
+왼쪽은 꼭짓점끼리만 이은 길이 $2$ 의 나무이고, 오른쪽은 중심 $s$ 를 더한 길이 $\sqrt3$ 의 나무다. 오른쪽에서 $s$ 에 모인 세 선분은 서로 $120^\circ$ 를 이룬다. 점선은 쓰지 않은 변이다.
 
 점을 더하는 방법을 아무리 잘 골라도 길이가 꼭짓점끼리만 이은 길이의 몇 배 아래로는 내려가지 않는지 묻는다. 정삼각형에서는 중심이 가장 좋은 점이므로 이 배수가 $\sqrt3/2$ 이다. 점이 많아지면 더할 점의 선택이 많아지지만, 정삼각형보다 비가 작은 점 집합은 알려져 있지 않다[^5].
 
@@ -42,7 +46,7 @@ Euclid 평면에서 최소 Steiner 나무의 Steiner 점은 차수가 $3$ 이고
 
 정리(Chung–Graham). Euclid 평면에서 $\rho\ge 0.824$ 이다[^3].
 
-E. N. Gilbert 와 H. O. Pollak 은 Euclid 평면의 Steiner 비가 정삼각형의 값 $\sqrt3/2$ 라고 추측했다[^2]. D.-Z. Du 와 F. K. Hwang 이 1990 년에 증명을 발표했으나[^4], A. O. Ivanov 와 A. A. Tuzhilin 은 그 증명에 빈틈이 있어 추측이 열려 있다고 지적했다[^5].
+E. N. Gilbert 와 H. O. Pollak 은 Euclid 평면의 Steiner 비가 정삼각형의 값 $\sqrt3/2$ 라고 추측했다. 이것이 Gilbert–Pollak 추측(Gilbert–Pollak conjecture)이다[^2]. D.-Z. Du 와 F. K. Hwang 이 1990 년에 증명을 발표했으나[^4], A. O. Ivanov 와 A. A. Tuzhilin 은 그 증명에 빈틈이 있어 추측이 열려 있다고 지적했다[^5].
 
 ## 고차원
 
