@@ -2,7 +2,11 @@
 
 # 개요
 
-Dwork 의 유리성 정리(Dwork's rationality theorem)는 유한체 위 다양체의 zeta 함수가 유리함수라는 정리이고, Dwork 가 1960 년에 $p$ 진 해석학으로 증명했다. [Galois 표현](galois-representations.md)의 그림에서 Weil 추측의 유리성과 함수방정식은 [코호몰로지](cohomology.md) 이론이 있으면 형식적으로 따라 나오고 [Riemann 가설](riemann-hypothesis.md)만 어렵다.
+**Dwork 의 유리성 정리(Dwork's rationality theorem)** 는 [유한체](finite-fields.md)에서 방정식의 해를 셀 때, 체를 키워 가며 얻는 개수의 열이 몇 개의 수의 거듭제곱으로 정해진다는 정리다. $x^2+y^2=1$ 의 해를 원소가 $3,9,27,\dots$ 개인 체에서 세면 $4,8,28,\dots$ 개이고, $n$ 번째 개수는 $3^n-(-1)^n$ 이다. 이 개수들을 zeta 함수라는 생성함수로 묶으면 유리함수 $(1+T)/(1-3T)$ 가 나온다. Dwork 는 1960 년에 해의 개수를 $p$ 진 공간 위 작용소의 대각합으로 바꾸어, 모든 방정식에서 zeta 함수가 유리함수임을 증명했다.
+
+# 직관
+
+[Galois 표현](galois-representations.md)의 그림에서 Weil 추측의 유리성과 함수방정식은 [코호몰로지](cohomology.md) 이론이 있으면 형식적으로 따라 나오고 [Riemann 가설](riemann-hypothesis.md)만 어렵다.
 
 역사는 반대 순서였다. Weil 이 추측을 낸 1949 년부터 11 년 동안 그 코호몰로지가 만들어지지 않았고, 1960 년에 Dwork 가 코호몰로지 없이 유리성을 증명했다. 도구는 $\ell\ne p$ 인 $\ell$ 진 계수가 아니라 표수와 같은 $p$ 의 $p$ 진 해석학이었다.
 
@@ -18,9 +22,7 @@ Weil 추측의 진술과 Frobenius 고윳값 언어는 Galois 표현에서, 지�
 
 이 방법은 $Z$ 의 유리성과 Frobenius 고윳값의 $p$ 진 부치를 주지만 복소 절댓값 $|\alpha|=q^{i/2}$ 는 주지 않는다. 그것이 Riemann 가설이고 Deligne 의 몫으로 남았다.
 
-# 직관
-
-[유한체](finite-fields.md)에서 방정식의 해를 세는 표준 기법은 덧셈 지표다. $\psi:\mathbb F_p\to\mu_p$ 를 비자명한 덧셈 지표라 하면 직교성이 지시함수를 준다.
+유한체에서 방정식의 해를 세는 표준 기법은 덧셈 지표다. $\psi:\mathbb F_p\to\mu_p$ 를 비자명한 덧셈 지표라 하면 직교성이 지시함수를 준다.
 
 $$
 \frac1p\sum_{t\in\mathbb F_p}\psi(tu)=
