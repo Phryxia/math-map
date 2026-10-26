@@ -2,7 +2,7 @@
 
 # 개요
 
-**Harish-Chandra 동형(Harish-Chandra isomorphism)** 은 반단순 Lie 대수의 [보편포락대수](universal-enveloping-algebra.md)에서 모든 원소와 교환하는 원소들이 Cartan 부분대수 위의 다항식 가운데 Weyl 군에 대해 불변인 것들과 같다는 정리다. $\mathfrak{sl}\_2$ 의 Casimir 원소는 최고무게 $\lambda$ 의 Verma 가군 위에서 $\frac12\lambda(\lambda+2)$ 배로 작용하고, 이 값은 $\lambda$ 와 $-\lambda-2$ 에서 같다. 중심 원소들의 값으로 어느 가군들을 구별할 수 있고 어느 것은 구별할 수 없는지가 문제다. 이 정리는 그 값이 같아지는 무게가 정확히 Weyl 군의 이동 작용의 한 궤도임을 보인다.
+**Harish-Chandra 동형(Harish-Chandra isomorphism)** 은 반단순 [Lie 대수](lie-algebras.md)의 [보편포락대수](universal-enveloping-algebra.md)에서 모든 원소와 교환하는 원소들이 Cartan 부분대수 위의 다항식 가운데 Weyl 군에 대해 불변인 것들과 같다는 정리다. $\mathfrak{sl}\_2$ 의 Casimir 원소는 최고무게 $\lambda$ 의 Verma 가군 위에서 $\frac12\lambda(\lambda+2)$ 배로 작용하고, 이 값은 $\lambda$ 와 $-\lambda-2$ 에서 같다. 중심 원소들의 값으로 어느 가군들을 구별할 수 있고 어느 것은 구별할 수 없는지가 문제다. 이 정리는 그 값이 같아지는 무게가 정확히 Weyl 군의 이동 작용의 한 궤도임을 보인다.
 
 # 직관
 
@@ -57,7 +57,7 @@ Chevalley 의 정리로 $S(\mathfrak h)^W$ 는 대수적으로 독립인 동차 
 - [범주 O](category-o.md)의 블록 분해에서 가군은 중심 지표로 갈리고, 따름정리로 한 블록에 드는 단순가군 $L(\mu)$ 의 무게 $\mu$ 는 한 점작용 궤도 $W\cdot\lambda$ 에 들어간다.
 - [보편포락대수](universal-enveloping-algebra.md)의 Casimir 원소의 값 $\frac12\big((\lambda+\rho,\lambda+\rho)-(\rho,\rho)\big)$ (Killing 형식의 규격화에 따라 상수배가 붙는다) 가 이 동형의 차수 $2$ 성분이다.
 - [Beilinson–Bernstein 국소화](beilinson-bernstein.md)는 중심 지표를 하나 고정한 $U(\mathfrak g)$ 가군들을 깃발다양체 위의 D 가군으로 옮긴다.
-- 실 반단순 Lie 군의 무한차원 표현에서 중심 지표는 무한소 지표(infinitesimal character)라 불리고, 기약표현을 분류하는 첫 불변량이다.
+- 실 반단순 [Lie 군](lie-groups.md)의 무한차원 표현에서 중심 지표는 무한소 지표(infinitesimal character)라 불리고, 기약표현을 분류하는 첫 불변량이다.
 
 [^1]: J. Humphreys, *Introduction to Lie Algebras and Representation Theory* (1972), 23 절(Harish-Chandra 정리와 그 증명). Chevalley 제한 정리와 불변 다항식환의 구조도 같은 절.
 
