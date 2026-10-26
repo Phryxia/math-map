@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-25T21:06:11.197Z",
-  "nextSeq": 2510,
+  "savedAt": "2026-10-26T01:04:26.068Z",
+  "nextSeq": 2526,
   "items": [
     {
       "id": "9bab7237",
@@ -3660,22 +3660,6 @@
       "seq": 2498
     },
     {
-      "id": "9506ec36",
-      "title": "steiner-tree-problem 의 후속 간선",
-      "priority": 10,
-      "note": "#graph_theory #algorithms #complexity #optimization. 부모 minimum-spanning-tree, approximation-algorithms. 그래프 개관 알고리즘과 최적화 갈래 최소 신장트리 아래 곁가지. 리프다. 후보: Steiner 숲과 일반화 Steiner 망(primal-dual-method 의 절에서 뗄지), 방향 Steiner 나무, Euclid Steiner 비 문제(Gilbert–Pollak), 직선 거리 Steiner 나무와 Hanan 격자.",
-      "createdAt": "2026-10-25T20:49:30.498Z",
-      "seq": 2499
-    },
-    {
-      "id": "2d356ce8",
-      "title": "facility-location 의 후속 간선",
-      "priority": 10,
-      "note": "#algorithms #optimization #complexity. 부모 primal-dual-method. 계산 개관 복잡도 갈래 원시-쌍대 방법 아래 곁가지. 리프다. 후보: k-중앙값과 k-중심 문제를 별도 문서로, 용량 제한 시설 배치, 국소 탐색 근사의 일반론.",
-      "createdAt": "2026-10-25T20:50:43.673Z",
-      "seq": 2500
-    },
-    {
       "id": "5f2dc098",
       "title": "parameterized-complexity 의 후속 간선",
       "priority": 10,
@@ -3700,36 +3684,12 @@
       "seq": 2503
     },
     {
-      "id": "527a5828",
-      "title": "fine-grained-complexity 의 후속 간선",
-      "priority": 10,
-      "note": "#complexity #algorithms. 부모 exponential-time-hypothesis, shortest-paths. 계산 개관 알고리즘 설계 갈래 최단경로 아래 곁가지. 리프다. 후보: 3SUM 문제를 별도 문서로(Grønlund–Pettie 의 결정 나무), 최장 공통 부분 수열, 동적 그래프 문제의 조건부 하한(OMv 가설).",
-      "createdAt": "2026-10-25T20:58:58.440Z",
-      "seq": 2504
-    },
-    {
-      "id": "be0929d8",
-      "title": "clique-problem 의 후속 간선",
-      "priority": 10,
-      "note": "#complexity #graph_theory #algorithms. 부모 np-completeness, turan-theorem. 계산 개관 복잡도 갈래 NP-완전성 아래 곁가지. 리프다. 후보: Bron–Kerbosch 알고리즘과 Moon–Moser 경계, 독립집합 문제, 클릭수와 채색수의 근사 하한(FGLSS 그래프).",
-      "createdAt": "2026-10-25T21:00:48.426Z",
-      "seq": 2505
-    },
-    {
       "id": "cb1a4f19",
       "title": "planted-clique 의 후속 간선",
       "priority": 10,
       "note": "#complexity #probability #graph_theory #statistics. 부모 clique-problem, erdos-renyi-graphs. 계산 개관 복잡도 갈래 클릭 문제 아래 곁가지. 리프다. 후보: 제곱합 계층(sum-of-squares)을 별도 문서로(lasserre-hierarchy 와의 관계 확인), 저차 다항식 방법, 통계적 질의 모형, 희소 주성분 분석의 계산 문턱.",
       "createdAt": "2026-10-25T21:02:19.251Z",
       "seq": 2506
-    },
-    {
-      "id": "998e015b",
-      "title": "3sum 의 후속 간선",
-      "priority": 10,
-      "note": "#complexity #algorithms. 부모 fine-grained-complexity. 계산 개관 알고리즘 설계 갈래 세분 복잡도 아래 곁가지. 리프다. 후보: k-SUM 과 부분합의 관계, 선형 결정 나무와 Kane–Lovett–Moran 의 추론 차원, 계산 기하의 3SUM 어려운 문제 목록.",
-      "createdAt": "2026-10-25T21:03:25.680Z",
-      "seq": 2507
     },
     {
       "id": "85164b7f",
@@ -3746,6 +3706,134 @@
       "note": "#algorithms #graph_theory #complexity. 부모 set-cover, parameterized-complexity. 계산 개관 복잡도 갈래 집합 덮개 문제 아래 곁가지. 리프다. 후보: 연결 지배 집합과 무선망, 이분차원성(bidimensionality)과 평면 그래프의 부분지수 알고리즘, Vizing 추측(지배수의 곱 그래프).",
       "createdAt": "2026-10-25T21:05:58.887Z",
       "seq": 2509
+    },
+    {
+      "id": "fd4dabf0",
+      "title": "clique-problem 의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #graph_theory #algorithms. 부모 np-completeness, turan-theorem. 자식 bron-kerbosch-algorithm, planted-clique. 남은 후보: 독립집합 문제를 별도 문서로(보그래프 환원, 평면 그래프의 Baker 근사), 클릭수와 채색수의 근사 하한(FGLSS 그래프).",
+      "createdAt": "2026-10-26T00:39:03.064Z",
+      "seq": 2510
+    },
+    {
+      "id": "435c9838",
+      "title": "bron-kerbosch-algorithm 의 후속 간선",
+      "priority": 10,
+      "note": "#algorithms #graph_theory #complexity. 부모 clique-problem. 계산 개관 복잡도 갈래 클릭 문제 아래 곁가지. 리프다. 후보: 다항 지연 나열(Tsukiyama 등 1977 극대 독립집합 O(nm) 지연, Johnson–Yannakakis–Papadimitriou), 그래프 퇴화도를 별도 문서로(k-핵 분해, 평면 그래프의 5-퇴화).",
+      "createdAt": "2026-10-26T00:39:03.172Z",
+      "seq": 2511
+    },
+    {
+      "id": "8547616d",
+      "title": "facility-location 의 후속 간선",
+      "priority": 10,
+      "note": "#algorithms #optimization #complexity. 부모 primal-dual-method. 자식 k-median. 계산 개관 복잡도 갈래 주 경로. 남은 후보: 용량 제한 시설 배치, 국소 탐색 근사의 일반론.",
+      "createdAt": "2026-10-26T00:45:06.094Z",
+      "seq": 2512
+    },
+    {
+      "id": "33eb5488",
+      "title": "k-median 의 후속 간선",
+      "priority": 10,
+      "note": "#algorithms #optimization #complexity. 부모 facility-location. 계산 개관 복잡도 갈래 시설 배치 문제 아래 곁가지. 리프다. 후보: 기하 중앙값(Fermat–Weber 문제와 Weiszfeld 반복)을 별도 문서로, 군집 문제의 핵심 집합(coreset), k-medoids 의 PAM 알고리즘.",
+      "createdAt": "2026-10-26T00:45:06.245Z",
+      "seq": 2513
+    },
+    {
+      "id": "1dca36d8",
+      "title": "graph-degeneracy 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #algorithms #combinatorics. 부모 graph-coloring. 그래프 개관 색칠과 매칭 갈래 그래프 색칠 아래 곁가지. 리프다. 후보: 수목도와 Nash-Williams 정리를 별도 문서로(숲 분해의 matroid 합 증명), 부분그래프 나열의 Chiba–Nishizeki 알고리즘.",
+      "createdAt": "2026-10-26T00:45:06.367Z",
+      "seq": 2514
+    },
+    {
+      "id": "814bb609",
+      "title": "geometric-median 의 후속 간선",
+      "priority": 10,
+      "note": "#optimization #statistics #algorithms. 부모 convexity. 최적화 개관 볼록성과 쌍대성 갈래 볼록성 아래 곁가지. 리프다. 후보: 반복 재가중 최소제곱(IRLS)을 별도 문서로, 다변량 중앙값의 다른 정의(Tukey 깊이 중앙값, 좌표별 중앙값), 거의 선형 시간 근사(Cohen–Lee–Miller–Pachocki–Sidford 2016).",
+      "createdAt": "2026-10-26T00:47:26.489Z",
+      "seq": 2515
+    },
+    {
+      "id": "b2d29836",
+      "title": "fine-grained-complexity 의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #algorithms. 부모 exponential-time-hypothesis, shortest-paths. 자식 3sum, omv-hypothesis. 남은 후보: 최장 공통 부분 수열의 SETH 하한(Abboud–Backurs–Vassilevska Williams, Bringmann–Künnemann; edit-distance 의 절과 겹치는지 먼저 본다), 음수 삼각형 문제.",
+      "createdAt": "2026-10-26T00:49:32.159Z",
+      "seq": 2516
+    },
+    {
+      "id": "398cc40c",
+      "title": "omv-hypothesis 의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #algorithms #data_structures. 부모 fine-grained-complexity. 계산 개관 알고리즘 설계 갈래 세분 복잡도 아래 곁가지. 리프다. 후보: 동적 그래프 문제의 조건부 하한 목록(부분그래프 연결성, 동적 매칭), dynamic-connectivity 에 OMv 하한 문장을 더할지 판단.",
+      "createdAt": "2026-10-26T00:49:32.281Z",
+      "seq": 2517
+    },
+    {
+      "id": "cc81503b",
+      "title": "steiner-tree-problem 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #algorithms #complexity #optimization. 부모 minimum-spanning-tree, approximation-algorithms. 자식 steiner-ratio. 그래프 개관 알고리즘과 최적화 갈래 주 경로. 남은 후보: Steiner 숲과 일반화 Steiner 망, 방향 Steiner 나무, 직선 거리 Steiner 나무와 Hanan 격자.",
+      "createdAt": "2026-10-26T00:51:24.340Z",
+      "seq": 2518
+    },
+    {
+      "id": "3664f200",
+      "title": "steiner-ratio 의 후속 간선",
+      "priority": 10,
+      "note": "#graph_theory #optimization #combinatorics. 부모 steiner-tree-problem. 그래프 개관 알고리즘과 최적화 갈래 Steiner 나무 문제 아래 곁가지. 리프다. 후보: Melzak 의 작도와 Euclid Steiner 나무의 정확한 알고리즘(GeoSteiner), 완전 Steiner 나무의 구조.",
+      "createdAt": "2026-10-26T00:51:24.482Z",
+      "seq": 2519
+    },
+    {
+      "id": "e02c68bb",
+      "title": "3sum 의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #algorithms. 부모 fine-grained-complexity. 자식 k-sum. 남은 후보: 계산 기하의 3SUM 어려운 문제 목록(세 점 공선, 점의 덮개 판정)을 별도 문서로, 음수 삼각형과 APSP 동치.",
+      "createdAt": "2026-10-26T00:53:10.668Z",
+      "seq": 2520
+    },
+    {
+      "id": "b821239f",
+      "title": "k-sum 의 후속 간선",
+      "priority": 10,
+      "note": "#complexity #algorithms. 부모 3sum. 계산 개관 알고리즘 설계 갈래 3SUM 문제 아래 곁가지. 리프다. 후보: 선형 결정 나무와 추론 차원을 별도 문서로(Kane–Lovett–Moran), k-SUM 의 매개변수 복잡도(W[1]-어려움).",
+      "createdAt": "2026-10-26T00:53:10.785Z",
+      "seq": 2521
+    },
+    {
+      "id": "f0e86b7c",
+      "title": "m-estimators 의 후속 간선",
+      "priority": 10,
+      "note": "#statistics #optimization #probability. 부모 maximum-likelihood. 통계 개관 추정 갈래 최대가능도 추정 아래 곁가지. 리프다. 후보: 붕괴점과 고붕괴 회귀(LMS, LTS, S-추정량), 분위수 회귀(Koenker–Bassett), 샌드위치 분산 추정과 GEE.",
+      "createdAt": "2026-10-26T00:55:31.258Z",
+      "seq": 2522
+    },
+    {
+      "id": "2cdf8806",
+      "title": "quantile-regression 의 후속 간선",
+      "priority": 10,
+      "note": "#statistics #optimization. 부모 m-estimators, linear-regression. 통계 개관 회귀와 모형 선택 갈래 선형회귀 아래 곁가지. 리프다. 후보: 조건부 위험가치와 기대 결손(expected shortfall)의 추정, 분위수 회귀의 순위 점수 검정, 비교차 분위수 추정.",
+      "createdAt": "2026-10-26T00:57:37.430Z",
+      "seq": 2523
+    },
+    {
+      "id": "a987cd3e",
+      "title": "expected-shortfall 의 후속 간선",
+      "priority": 10,
+      "note": "#statistics #probability #optimization. 부모 quantile-regression. 통계 개관 회귀와 모형 선택 갈래 분위수 회귀 아래 곁가지. 리프다. 후보: 볼록 위험 측도와 쌍대 표현(Föllmer–Schied), 분포 강건 최적화, 유도 가능성과 적정 점수 규칙을 별도 문서로.",
+      "createdAt": "2026-10-26T00:59:43.476Z",
+      "seq": 2524
+    },
+    {
+      "id": "2eabbf22",
+      "title": "proper-scoring-rules 의 후속 간선",
+      "priority": 10,
+      "note": "#statistics #probability #information_theory. 부모 kl-divergence, convexity. 통계 개관 회귀와 모형 선택 갈래 끝 주 경로. 리프다. 후보: Bregman 발산을 별도 문서로(mirror descent 와 지수족의 쌍대), 보정(calibration)과 Brier 점수의 Murphy 분해, 점수 규칙의 Diebold–Mariano 검정.",
+      "createdAt": "2026-10-26T01:02:05.635Z",
+      "seq": 2525
     },
     {
       "id": "dfb3e493",
