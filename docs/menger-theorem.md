@@ -48,7 +48,7 @@ G. A. Dirac 은 이 보조정리로 $k\ge 2$ 인 $k$ 연결 그래프에서 어�
 
 ## 연결도의 계산
 
-최소 간선 절단은 정점 $s$ 를 어떤 정점 $t$ 와 가르므로, $s$ 하나를 고정하고 나머지 정점 $t$ 마다 구한 $s$–$t$ 최대 흐름의 최솟값이 $\lambda(G)$ 다. M. Stoer 와 F. Wagner 는 흐름을 쓰지 않고 정점을 차례로 합치는 방법으로 무향 그래프의 최소 절단을 $O(\lvert V\rvert\lvert E\rvert+\lvert V\rvert^2\log\lvert V\rvert)$ 시간에 구했다[^4]. $\kappa(G)$ 는 정점을 나눈 그래프에서 정점 쌍마다 최대 흐름을 구해 얻는다.
+최소 간선 절단은 정점 $s$ 를 어떤 정점 $t$ 와 가르므로, $s$ 하나를 고정하고 나머지 정점 $t$ 마다 구한 $s$–$t$ 최대 흐름의 최솟값이 $\lambda(G)$ 다. M. Stoer 와 F. Wagner 는 흐름을 쓰지 않고 정점을 차례로 합치는 [Stoer–Wagner 알고리즘](stoer-wagner-algorithm.md)으로 무향 그래프의 최소 절단을 $O(\lvert V\rvert\lvert E\rvert+\lvert V\rvert^2\log\lvert V\rvert)$ 시간에 구했다[^4]. $\kappa(G)$ 는 정점을 나눈 그래프에서 정점 쌍마다 최대 흐름을 구해 얻는다.
 
 # 활용
 
@@ -72,5 +72,6 @@ G. A. Dirac 은 이 보조정리로 $k\ge 2$ 인 $k$ 연결 그래프에서 어�
 - [Chvátal–Erdős 정리](chvatal-erdos-theorem.md)
 - [Gomory–Hu 나무](gomory-hu-tree.md)
 - [Karger 축약 알고리즘](karger-min-cut.md)
+- [Stoer–Wagner 알고리즘](stoer-wagner-algorithm.md)
 
 #graph_theory #combinatorics #algorithms
