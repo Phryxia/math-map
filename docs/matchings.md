@@ -161,6 +161,7 @@ $$
 - [Dilworth 정리](dilworth-theorem.md)
 - [안정 매칭](stable-matching.md)
 - [Matroid 교집합 정리](matroid-intersection.md)
+- [Gallai–Edmonds 분해](gallai-edmonds-decomposition.md)
 
 ### 다면체와 계산
 

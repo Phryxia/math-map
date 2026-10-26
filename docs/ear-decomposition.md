@@ -47,7 +47,7 @@ $G$ 의 귀 분해는 순환 $P_0$ 과 경로 $P_1,\dots,P_k$ 의 열로, 각 $P
 # 활용
 
 - 일방통행 설계. 도로망을 일방통행으로 바꾸어도 모든 지점이 서로 닿게 할 수 있는지는 Robbins 정리로 다리의 유무와 같다.
-- [매칭](matchings.md). 어느 정점을 지워도 완전 매칭이 남는 그래프는 귀가 모두 홀수 길이인 귀 분해를 갖는 그래프와 같다(Lovász)[^4].
+- [매칭](matchings.md). 어느 정점을 지워도 완전 매칭이 남는 그래프는 귀가 모두 홀수 길이인 귀 분해를 갖는 그래프와 같다(Lovász)[^4]. [Gallai–Edmonds 분해](gallai-edmonds-decomposition.md)에서 최대 매칭이 덮지 않을 수 있는 정점들의 성분이 이런 그래프다.
 - 연결도의 증명. Menger 정리의 부채 보조정리를 쓰지 않고 $2$ 연결 그래프의 두 정점이 한 순환 위에 있다는 것을 귀에 대한 귀납법으로 보인다.
 
 [^1]: H. Whitney, "Non-separable and planar graphs", Transactions of the American Mathematical Society 34 (1932), 339–362.
@@ -63,6 +63,6 @@ $G$ 의 귀 분해는 순환 $P_0$ 과 경로 $P_1,\dots,P_k$ 의 열로, 각 $P
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Gallai–Edmonds 분해](gallai-edmonds-decomposition.md)
 
 #graph_theory #algorithms #combinatorics
