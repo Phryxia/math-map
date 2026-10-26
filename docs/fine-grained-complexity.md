@@ -75,5 +75,6 @@ M. Pătraşcu 는 3SUM 에서 그래프의 삼각형 나열로 가는 환원을 
 ## 더 알아보기
 
 - [3SUM 문제](3sum.md)
+- [OMv 가설](omv-hypothesis.md)
 
 #complexity #algorithms
