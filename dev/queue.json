@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-26T17:05:55.611Z",
-  "nextSeq": 2543,
+  "savedAt": "2026-10-26T21:01:23.854Z",
+  "nextSeq": 2547,
   "items": [
     {
       "id": "9bab7237",
@@ -1300,14 +1300,6 @@
       "seq": 1554
     },
     {
-      "id": "ba342826",
-      "title": "정의 없이 쓴 용어 훑기 (전체 훑기 32차)",
-      "priority": 12,
-      "note": "31차(29차 회차)에 30차 메모가 가리킨 '최고무게' 갈래를 판정했다. 결론은 이 갈래가 링크 삽입으로 닫히지 않는다는 것이다. 최고무게를 쓰는 문서는 14 개이고(borel-weil-bott casselman-shalika category-o gan-gross-prasad geometric-satake kazhdan-lusztig lie-algebras schur-weyl-duality spherical-harmonics temperley-lieb-algebras vertex-operator-algebras wess-zumino-witten weyl-character-formula zhu-algebra) 정의하는 자리는 weyl-character-formula:48 의 굵은 '**최고무게**' 하나다. 나머지 13 개 가운데 weyl-character-formula 링크를 가진 것은 셋(borel-weil-bott casselman-shalika gan-gross-prasad)뿐이고, 조상 관계로 선수지식이 보장되는 것이 넷 더다(category-o kazhdan-lusztig schur-weyl-duality temperley-lieb-algebras). 링크도 조상도 없는 실제 공백은 다섯이다: geometric-satake:83, spherical-harmonics:98, vertex-operator-algebras:13, wess-zumino-witten:82, zhu-algebra:88. lie-algebras:126 은 sl_2 계산 중에 'E 가 고윳값을 올리다가 멈추므로 최고무게 벡터가 있고' 로 용법을 자체 설명하므로 대상이 아니다. 다섯 자리에 링크를 넣지 않은 이유는 표시 제목 관례다. 저장소의 weyl-character-formula 링크 14 개가 전부 '[Weyl 지표 공식](weyl-character-formula.md)' 로 문서 제목을 그대로 쓰므로 '[최고무게](weyl-character-formula.md)' 는 관례에 어긋나고, 다섯 자리의 문장에 'Weyl 지표 공식' 링크를 넣는 것은 문맥상 어색하다. 구조적 원인은 최고무게가 Lie 표현론의 기본 개념인데 Weyl 지표 공식 문서에 종속되어 있는 것이다. 따라서 32차의 작업은 '최고무게 가군' 문서를 신설하는 것이고, 그때 정할 것 셋이다. (1) 부모를 lie-algebras 로 할지 root-systems 로 할지. 개관 갈래가 lie-algebras -> root-systems -> weyl-character-formula 이므로 root-systems 가 자연스럽다. (2) weyl-character-formula:48 의 최고무게 정의와 60줄의 최고무게 분류 정리를 새 문서로 옮길지 양쪽에 둘지. 옮기면 그 문서의 성질 절이 얇아진다. (3) Verma 가군을 새 문서에 담을지 category-o 에 두고 링크만 할지. category-o 가 이미 Verma 구성을 직관 절에 담고 있어 중복 위험이 있다. 이 셋이 정해지기 전에는 다섯 자리를 그대로 둔다. 앞선 차수가 닫은 것: 기약 다항식(29차), 기약표현(28차), 단순가군·기약가군(30차, modules 에 정의 문단 추가). 29차 회차에 함께 한 것: temperley-lieb-algebras:81 의 '최고 무게' 띄어쓰기를 저장소 관례인 '최고무게' 로 맞췄다(커밋 7be5721).",
-      "createdAt": "2026-10-04T00:52:51.110Z",
-      "seq": 1613
-    },
-    {
       "id": "137e5874",
       "title": "환론·대수 축의 후속 간선 (19차)",
       "priority": 12,
@@ -2490,6 +2482,14 @@
       "note": "게임의 PSPACE-완전성은 generalized-geography(부모 alternating-turing-machines)로 닫았다. 남은 후보: Immerman-Szelepcsenyi 정리의 별도 문서 여부(지금은 space-complexity 의 절). nc-hierarchy 의 남은 후보: P-완전 문제(선형계획법 실행 가능성, 단조 회로 값). barrington-theorem 과 reingold-theorem 은 리프다.",
       "createdAt": "2026-10-25T04:49:01.354Z",
       "seq": 2463
+    },
+    {
+      "id": "e4349da8",
+      "title": "Lie 이론 축의 후속 간선 (2026-10-26 회차)",
+      "priority": 11,
+      "note": "이번 회차에 highest-weight-modules, universal-enveloping-algebra, weyl-complete-reducibility, lie-algebra-cohomology, levi-decomposition, harish-chandra-isomorphism, ado-theorem 일곱을 만들었다. 간선 재배치: weyl-character-formula 의 부모 root-systems -> highest-weight-modules + weyl-complete-reducibility, category-o 의 부모 lie-algebras -> highest-weight-modules + harish-chandra-isomorphism, quantum-groups 의 부모 lie-algebras -> universal-enveloping-algebra, virasoro-algebra 에 lie-algebra-cohomology 를 부모로 더했다. 리프로 남은 것과 자식 후보: ado-theorem(Lie 셋째 정리 문서), lie-algebra-cohomology 활용 절이 affine-lie-algebras 를 고리 대수의 중심확장으로 링크만 했다(affine 문서는 코사이클을 쓰지 않아 간선을 긋지 않았다). 이름만 쓴 개념: Chevalley 제한 정리, Kostant 분할 함수(highest-weight-modules 에 굵게 정의, weyl-character-formula 에도 굵게 정의가 있어 중복), Schur 보조정리(group-representations 의 절), Whitehead 보조정리(lie-algebra-cohomology 에 절), Lie 셋째 정리, Malcev 정리.",
+      "createdAt": "2026-10-26T21:01:22.993Z",
+      "seq": 2546
     },
     {
       "id": "09c81cac",
