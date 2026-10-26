@@ -2,7 +2,7 @@
 
 # 개요
 
-**Courant 마디 영역 정리(Courant nodal domain theorem)** 는 유계 영역에서 Dirichlet 경계조건의 [Laplace 연산자](laplace-operator.md)의 $k$ 번째 고유함수가 $0$ 이 아닌 곳이 많아야 $k$ 개의 연결 성분으로 나뉜다는 정리다. R. Courant 가 1923 년에 증명했다[^1]. Å. Pleijel 은 [Weyl 법칙](weyl-law.md)과 [Faber–Krahn 부등식](faber-krahn.md)을 써서, 평면 영역에서는 $k$ 가 클 때 성분의 개수가 $k$ 의 $0.692$ 배를 넘지 않음을 보였다[^2].
+**Courant 마디 영역 정리(Courant nodal domain theorem)** 는 유계 영역에서 Dirichlet 경계조건의 [Laplace 연산자](laplace-operator.md)의 $k$ 번째 고유함수가 $0$ 이 아닌 곳이 많아야 $k$ 개의 연결 성분으로 나뉜다는 정리다. 가장자리를 고정한 북을 울리면 북면이 움직이지 않는 선들로 나뉘고, 높은 진동일수록 그 선이 많아진다. 이 정리는 $k$ 번째로 낮은 진동에서 북면이 많아야 $k$ 조각으로 나뉜다는 상한을, 조각마다 고유함수를 잘라 붙인 시험함수로 증명한다.
 
 # 직관
 
@@ -32,7 +32,7 @@ $D$ 를 $\varphi$ 의 마디 영역이라 하면 $\varphi$ 를 $D$ 로 제한한
 
 ## Courant 정리의 증명
 
-$\varphi$ 의 마디 영역이 $D_1,\dots,D_{k+1}$ 이상 있다고 하자. $u_i=\varphi\mathbf 1_{D_i}$ 는 $H^1_0(\Omega)$ 에 속하고 Rayleigh 몫이 모두 $\lambda_k$ 다. $u_1,\dots,u_k$ 는 서로 겹치지 않는 곳에서 $0$ 이 아니므로, 그 선형결합 $v$ 의 Rayleigh 몫도 $\lambda_k$ 다. $v\ne 0$ 을 $\varphi_1,\dots,\varphi_{k-1}$ 과 직교하게 고를 수 있고, [스펙트럼 정리](spectral-theorem.md)의 min–max 정리에서 이런 $v$ 는 $\lambda_k$ 의 고유함수다. 그런데 $v$ 는 열린집합 $D_{k+1}$ 에서 $0$ 이다. Aronszajn 의 [유일 연속 정리](unique-continuation.md)는 열린집합에서 $0$ 인 고유함수가 연결 영역 전체에서 $0$ 이라고 하므로[^3] 모순이다.
+R. Courant 가 1923 년에 증명했다[^1]. $\varphi$ 의 마디 영역이 $D_1,\dots,D_{k+1}$ 이상 있다고 하자. $u_i=\varphi\mathbf 1_{D_i}$ 는 $H^1_0(\Omega)$ 에 속하고 Rayleigh 몫이 모두 $\lambda_k$ 다. $u_1,\dots,u_k$ 는 서로 겹치지 않는 곳에서 $0$ 이 아니므로, 그 선형결합 $v$ 의 Rayleigh 몫도 $\lambda_k$ 다. $v\ne 0$ 을 $\varphi_1,\dots,\varphi_{k-1}$ 과 직교하게 고를 수 있고, [스펙트럼 정리](spectral-theorem.md)의 min–max 정리에서 이런 $v$ 는 $\lambda_k$ 의 고유함수다. 그런데 $v$ 는 열린집합 $D_{k+1}$ 에서 $0$ 이다. Aronszajn 의 [유일 연속 정리](unique-continuation.md)는 열린집합에서 $0$ 인 고유함수가 연결 영역 전체에서 $0$ 이라고 하므로[^3] 모순이다.
 
 ## 일차원의 등호
 
@@ -40,7 +40,7 @@ $n=1$ 에서는 모든 고윳값이 Courant 날카롭다. [Sturm–Liouville 이
 
 ## Pleijel 정리
 
-$n=2$ 이면
+Å. Pleijel 은 [Weyl 법칙](weyl-law.md)과 [Faber–Krahn 부등식](faber-krahn.md)을 써서 다음을 보였다. $n=2$ 이면
 
 $$
 \limsup_{k\to\infty}\frac{\nu(\varphi_k)}{k}\le\frac{4}{j_{0,1}^2}\approx 0.692
