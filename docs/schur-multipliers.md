@@ -2,7 +2,11 @@
 
 # 개요
 
-**Schur 곱셈자(Schur multiplier)** 는 군 $G$ 의 둘째 코호몰로지군(second cohomology group) $M(G)=H^2(G,\mathbb C^\times)$ 다. $G$ 를 $\mathbb C^\times$ 의 부분군으로 [중심확대](group-extensions.md)하는 방법은 여러 가지이고, Schur 는 1904 년에 그중 가장 큰 것이 존재함을 보였다.
+**Schur 곱셈자(Schur multiplier)** 는 군의 원소를 행렬로 보낼 때 곱셈이 상수배만큼 어긋나는 것을 허용하면, 그 어긋남을 상수 조정으로 없앨 수 있는지를 재는 군이다. 원소끼리 교환하는 군 $\mathbb Z/2\times\mathbb Z/2$ 의 두 생성원을 $X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 과 $Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}$ 로 보내면 $XZ=-ZX$ 여서 곱셈이 부호만큼 어긋난다. $X$ 와 $Z$ 에 어떤 상수를 곱해도 이 부호는 없어지지 않는다. Schur 는 1904 년에 이런 어긋남을 모은 군 $M(G)$ 를 정의하고, 군을 $M(G)$ 만큼 키운 확대에서는 어긋남이 사라짐을 보였다.
+
+# 직관
+
+Schur 곱셈자는 군 $G$ 의 둘째 코호몰로지군(second cohomology group) $M(G)=H^2(G,\mathbb C^\times)$ 다. $G$ 를 $\mathbb C^\times$ 의 부분군으로 [중심확대](group-extensions.md)하는 방법은 여러 가지이고, Schur 는 1904 년에 그중 가장 큰 것이 존재함을 보였다.
 
 $G\to\mathrm{PGL}(V)$ 가 **사영표현**이다. 양자역학에서 상태가 위상인자까지만 정해지므로 대칭이 사영표현으로 나타난다. 사영표현을 보통 표현처럼 다루려면 $\mathrm{GL}(V)$ 로 들어올려야 하고, 그 걸림돌을 2-코사이클이 잰다.
 
@@ -16,7 +20,7 @@ $$
 M(G)=H^2(G,\mathbb C^\times)\cong H_2(G,\mathbb Z)
 $$
 
-이고 이것이 **Schur 곱셈자**다. 왼쪽은 사영표현의 걸림돌이고 오른쪽은 군의 호몰로지다.
+이고 이것이 Schur 곱셈자다. 왼쪽은 사영표현의 걸림돌이고 오른쪽은 군의 호몰로지다.
 
 $G$ 가 완전군, 곧 $G=[G,G]$ 이면 **보편 중심확대** $\tilde G$ 가 존재한다.
 
@@ -27,8 +31,6 @@ $$
 $\tilde G$ 는 $G$ 의 모든 중심확대를 덮는다. 어떤 중심확대에도 $\tilde G$ 에서 가는 사상이 유일하게 있다. $G$ 의 사영표현 전체가 $\tilde G$ 의 보통 표현 전체와 같아지므로 사영표현론이 표현론으로 환원된다.
 
 $\mathrm{SO}(3)$ 와 $\mathrm{SU}(2)$ 가 그 예다. 스핀 $1/2$ 은 $\mathrm{SO}(3)$ 의 사영표현이고 이중덮개 $\mathrm{SU}(2)$ 에서 보통 표현이 된다. 전자가 $360^\circ$ 회전에서 부호를 바꾸는 것이 $M(\mathrm{SO}(3))=\mathbb Z/2$ 에 대응한다.
-
-# 직관
 
 사영표현 $\bar\rho:G\to\mathrm{PGL}(V)$ 를 들어올리려면 각 $g$ 마다 대표원 $\rho(g)\in\mathrm{GL}(V)$ 를 고른다. 대표원의 곱은 스칼라만큼 어긋난다.
 
