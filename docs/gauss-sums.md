@@ -2,7 +2,11 @@
 
 # 개요
 
-**Gauss 합(Gauss sum)** 은 유한체 위의 곱셈 지표 $\chi$ 와 덧셈 지표 $\psi$ 의 곱을 모든 원소에 걸쳐 더한 값 $g(\chi)=\sum_x\chi(x)\psi(x)$ 다. [Tate 의 zeta 적분](tate-zeta-integral.md)은 자리마다 국소 함수방정식을 준다. 두 국소 zeta 적분의 비가 시험함수에 의존하지 않는 인자 하나로 정리된다.
+**Gauss 합(Gauss sum)** 은 [유한체](finite-fields.md)의 원소마다 곱셈을 보존하는 값과 덧셈을 보존하는 값을 곱해 모두 더한 수다. $p=5$ 에서 $n=1,2,3,4$ 가 제곱수인지에 따라 부호 $+,-,-,+$ 를 정하고 $1$ 의 $5$ 제곱근 $\zeta=e^{2\pi i/5}$ 의 거듭제곱 $\zeta^n$ 에 곱해 더하면 $\zeta-\zeta^2-\zeta^3+\zeta^4=\sqrt5$ 다. 단위원 위의 점 넷을 더한 결과가 실수축의 $\sqrt5$ 에 정확히 놓인다. 곱셈과 덧셈을 한 합에 섞으면 합의 절댓값의 제곱이 원소의 개수로 계산되므로 원소가 $p$ 개인 체에서 절댓값은 항상 $\sqrt p$ 이고, 이 값이 $L$ 함수의 함수방정식에 나오는 상수를 정한다.
+
+# 직관
+
+유한체 위의 곱셈 지표 $\chi$ 와 덧셈 지표 $\psi$ 에 대해 Gauss 합은 $g(\chi)=\sum_x\chi(x)\psi(x)$ 다. [Tate 의 zeta 적분](tate-zeta-integral.md)은 자리마다 국소 함수방정식을 준다. 두 국소 zeta 적분의 비가 시험함수에 의존하지 않는 인자 하나로 정리된다.
 
 $$
 Z_v(\hat f_v,\chi_v^{-1},1-s)=\gamma_v(\chi_v,s)\thinspace Z_v(f_v,\chi_v,s),
@@ -10,7 +14,7 @@ Z_v(\hat f_v,\chi_v^{-1},1-s)=\gamma_v(\chi_v,s)\thinspace Z_v(f_v,\chi_v,s),
 \gamma_v=\varepsilon_v(\chi_v,s)\thinspace\frac{L(1-s,\chi_v^{-1})}{L(s,\chi_v)}
 $$
 
-$L$ 인자는 국소 계산에서 읽히는 유리함수다. 남은 $\varepsilon_v$ 가 **국소 근 수**이고, 비분기 자리에서 $1$ 이며 분기 자리에서 **Gauss 합**이 된다.
+$L$ 인자는 국소 계산에서 읽히는 유리함수다. 남은 $\varepsilon_v$ 가 **국소 근 수**이고, 비분기 자리에서 $1$ 이며 분기 자리에서 Gauss 합이 된다.
 
 $$
 \varepsilon\big(\chi,\psi,\tfrac12\big)=\frac{g(\chi)}{\sqrt q},
@@ -18,11 +22,9 @@ $$
 g(\chi)=\sum_{n}\chi(n)\thinspace\psi(n)
 $$
 
-Gauss 합은 곱셈 지표와 덧셈 지표를 한 식에 섞어 [유한체](finite-fields.md)의 두 군 구조를 잇고, 절댓값이 언제나 $\sqrt q$ 다. 이 값이 근 수의 절댓값을 $1$ 로 만들고 [Dirichlet L 함수](dirichlet-l-functions.md)의 함수방정식에 나오는 부호를 단위원 위에 놓는다.
+Gauss 합은 곱셈 지표와 덧셈 지표를 한 식에 섞어 유한체의 두 군 구조를 잇고, 절댓값이 언제나 $\sqrt q$ 다. 이 값이 근 수의 절댓값을 $1$ 로 만들고 [Dirichlet L 함수](dirichlet-l-functions.md)의 함수방정식에 나오는 부호를 단위원 위에 놓는다.
 
 절댓값과 달리 부호는 어렵다. 이차 지표의 Gauss 합에서 어느 제곱근을 택하는지를 Gauss 가 정하는 데 4 년이 걸렸고, 그 답이 [이차 상호법칙](quadratic-reciprocity.md)의 또 다른 증명을 준다.
-
-# 직관
 
 $\mathbb Z/p$ 위의 함수 공간에서 덧셈 [Fourier 변환](fourier-transform.md)의 기저는 덧셈 지표 $\psi(n)=e^{2\pi in/p}$ 이고, 곱셈군 $(\mathbb Z/p)^\times$ 에는 곱셈 지표 $\chi$ 가 있다. $\chi$ 를 덧셈 Fourier 변환으로 보내면 상수배만 붙어 $\chi$ 가 되돌아온다.
 
