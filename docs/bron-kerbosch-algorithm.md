@@ -82,7 +82,7 @@ function bronKerbosch(adj: boolean[][], report: (clique: number[]) => void): voi
 
 ## 퇴화도 순서
 
-그래프의 **퇴화도(degeneracy)** $d$ 는 모든 부분그래프가 차수 $d$ 이하의 정점을 갖는 가장 작은 $d$ 다. 차수가 가장 작은 정점을 차례로 지우면 정점의 순서 $v_1,\dots,v_n$ 이 나오고, 각 $v_i$ 의 이웃 가운데 뒤에 오는 것은 $d$ 개 이하다.
+그래프의 [퇴화도](graph-degeneracy.md)(degeneracy) $d$ 는 모든 부분그래프가 차수 $d$ 이하의 정점을 갖는 가장 작은 $d$ 다. 차수가 가장 작은 정점을 차례로 지우면 정점의 순서 $v_1,\dots,v_n$ 이 나오고, 각 $v_i$ 의 이웃 가운데 뒤에 오는 것은 $d$ 개 이하다.
 
 정리(Eppstein–Löffler–Strash). 바깥 고리를 이 순서로 돌며 $v_i$ 마다 $P$ 를 뒤에 오는 이웃, $X$ 를 앞에 오는 이웃으로 두고 축 정점을 쓴 재귀를 부르면, 극대 클릭을 모두 $O(dn3^{d/3})$ 시간에 나열한다[^4].
 

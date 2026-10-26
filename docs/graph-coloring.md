@@ -46,7 +46,7 @@ $$
 - **클리크 수** $\omega(G)$ 는 $G$ 가 포함하는 최대 완전부분그래프의 크기다.
 - **독립수** $\alpha(G)$ 는 최대 독립집합의 크기다.
 - **최대차수** $\Delta(G)$ 는 정점 차수의 최댓값이다.
-- **퇴화도**(degeneracy) $d(G)$ 는 모든 부분그래프가 차수 $d$ 이하인 정점을 하나 이상 가지게 되는 최소의 $d$ 다.
+- **[퇴화도](graph-degeneracy.md)**(degeneracy) $d(G)$ 는 모든 부분그래프가 차수 $d$ 이하인 정점을 하나 이상 가지게 되는 최소의 $d$ 다.
 
 ## 간선 색칠
 
@@ -194,10 +194,16 @@ $k \ge 3$ 고정에 대해 $k$ 색칠 가능성 판정은 NP-완전이다(Karp �
 
 ## 더 알아보기
 
+### 상한과 불변량
+
+- [그래프 퇴화도](graph-degeneracy.md)
 - [Tutte 다항식](tutte-polynomial.md)
 - [Lovász 세타 함수](lovasz-theta.md)
+
+### 색칠의 변형
+
+- [목록 색칠](list-coloring.md)
 - [de Bruijn–Erdős 정리](de-bruijn-erdos-theorem.md)
 - [평면의 채색수](chromatic-number-of-the-plane.md)
-- [목록 색칠](list-coloring.md)
 
 #graph_theory #combinatorics #algorithms
