@@ -2,19 +2,13 @@
 
 # 개요
 
-**대수적 수체(algebraic number field)** 는 $\mathbb Q$ 의 유한 확대체이고, 그 정수환 $\mathcal O_K$ 는 $\mathbb Z$ 의 자리를 대신하는 [Dedekind 정역](dedekind-domains.md)이다. 정수론의 문제는 정수 밖으로 나가게 만든다. $x^2+y^2=p$ 는 $(x+iy)(x-iy)$ 로 쪼개려면 $\mathbb Z[i]$ 를, $x^n+y^n=z^n$ 은 $\mathbb Z[\zeta_n]$ 을 요구한다.
-
-넓힌 환에서는 유일분해가 깨진다. $\mathbb Z[\sqrt{-5}]$ 에서 $6=2\cdot3=(1+\sqrt{-5})(1-\sqrt{-5})$ 이고 네 인수가 모두 더 쪼개지지 않는다. 19 세기에 제출된 [Fermat 마지막 정리](fermats-last-theorem.md)의 증명들이 이 지점에서 무너졌다.
-
-Dedekind 의 해결책은 원소 대신 [아이디얼](ideals-quotient-rings.md)을 분해하는 것이다. 원소의 분해는 깨져도 아이디얼의 [소 아이디얼](prime-ideals.md) 분해는 언제나 유일하다. 깨진 정도를 재는 유한군이 류군이고, 그 크기인 류수가 수체의 기본 불변량이다.
-
-수체가 [Galois 확대](galois-theory.md)면 Galois 군이 소 아이디얼들에 작용하고, 각 소수의 분해가 군론으로 서술된다. 이 대응이 [유체론](class-field-theory.md)의 출발점이며 [이차 상호법칙](quadratic-reciprocity.md)이 그 최소 사례다.
+**대수적 수체(algebraic number field)** 는 유리수에 다항식의 근 몇 개를 더해 만든 수의 체계로, 유리수체 $\mathbb Q$ 의 유한 확대체다. 소수 $p$ 가 언제 $x^2+y^2$ 으로 쓰이는지 물으면 $x^2+y^2$ 을 $(x+iy)(x-iy)$ 로 쪼개야 하므로, 정수에 $i$ 를 더한 수들 속에서 계산하게 된다. 이렇게 넓힌 수들에서는 $6=2\cdot3=(1+\sqrt{-5})(1-\sqrt{-5})$ 처럼 소인수분해가 하나로 정해지지 않을 수 있다. 수 대신 수의 배수들을 모은 아이디얼을 분해하면 분해가 다시 하나로 정해지고, 이 분해로 넓힌 수 체계에서 정수의 문제를 푼다.
 
 # 직관
 
 $\mathbb Z[\sqrt{-5}]$ 에서 노름 $N(x+y\sqrt{-5})=x^2+5y^2$ 는 곱셈적이다. $N(2)=4$ , $N(3)=9$ , $N(1\pm\sqrt{-5})=6$ 이고 노름이 2 나 3 인 원소가 없으므로 넷 다 기약원이다. 그런데 $2\cdot3=(1+\sqrt{-5})(1-\sqrt{-5})=6$ 이어서 $6$ 의 기약원 분해가 둘이다. $2$ 는 곱 $(1+\sqrt{-5})(1-\sqrt{-5})$ 를 나누면서 어느 인수도 나누지 않으므로 기약이지만 소원이 아니다.
 
-두 분해를 공통의 인수로 쪼개려면 $2=\mathfrak p^2$ 이고 $1+\sqrt{-5}=\mathfrak p\mathfrak q$ 인 $\mathfrak p,\mathfrak q$ 가 있어야 한다. 그런 것은 원소로는 없고 아이디얼로는 있다. $(2)=(2,1+\sqrt{-5})^2$ 와 $(3)=(3,1+\sqrt{-5})(3,1-\sqrt{-5})$ 로 쪼개고 $(1+\sqrt{-5})=(2,1+\sqrt{-5})(3,1+\sqrt{-5})$ 를 쓰면 두 분해가 같은 소 아이디얼 넷의 곱이 된다. 아이디얼 수준에서는 분해가 하나다.
+두 분해를 공통의 인수로 쪼개려면 $2=\mathfrak p^2$ 이고 $1+\sqrt{-5}=\mathfrak p\mathfrak q$ 인 $\mathfrak p,\mathfrak q$ 가 있어야 한다. 그런 것은 원소로는 없고 [아이디얼](ideals-quotient-rings.md)로는 있다. $(2)=(2,1+\sqrt{-5})^2$ 와 $(3)=(3,1+\sqrt{-5})(3,1-\sqrt{-5})$ 로 쪼개고 $(1+\sqrt{-5})=(2,1+\sqrt{-5})(3,1+\sqrt{-5})$ 를 쓰면 두 분해가 같은 [소 아이디얼](prime-ideals.md) 넷의 곱이 된다. 아이디얼 수준에서는 분해가 하나다.
 
 # 정의
 
@@ -46,7 +40,7 @@ $$
 
 ## Dedekind 정역과 아이디얼 분해
 
-$\mathcal O_K$ 는 Dedekind 정역이다. 곧 Noether 정역이고, 정수적으로 닫혀 있고, 0 이 아닌 모든 소 아이디얼이 극대다.
+$\mathcal O_K$ 는 [Dedekind 정역](dedekind-domains.md)이다. 곧 Noether 정역이고, 정수적으로 닫혀 있고, 0 이 아닌 모든 소 아이디얼이 극대다.
 
 0 이 아닌 모든 아이디얼 $\mathfrak a$ 가
 
@@ -106,7 +100,7 @@ $\mathbb Q(\sqrt2)$ 의 기본단원 $1+\sqrt2$ 의 거듭제곱이 [Pell 방정
 
 ## Galois 확대에서의 분해
 
-$K/\mathbb Q$ 가 Galois 면 $\mathrm{Gal}(K/\mathbb Q)$ 가 $p$ 위의 소 아이디얼들에 추이적으로 작용한다. 모든 $e_i$ 가 같고 모든 $f_i$ 가 같아
+$K/\mathbb Q$ 가 [Galois 확대](galois-theory.md)면 $\mathrm{Gal}(K/\mathbb Q)$ 가 $p$ 위의 소 아이디얼들에 추이적으로 작용한다. 모든 $e_i$ 가 같고 모든 $f_i$ 가 같아
 
 $$
 efg=n
@@ -114,9 +108,9 @@ $$
 
 이 된다. 여기서 $g$ 는 소 아이디얼의 개수다. 분기하지 않는 $p$ 에 대해 각 $\mathfrak p$ 의 분해군이 잉여체 확대의 Galois 군과 동형이고, 그 생성원이 Frobenius 원소 $\mathrm{Frob}\_{\mathfrak p}$ 다.
 
-아벨 확대에서는 Frobenius 가 $\mathfrak p$ 의 선택에 무관해 $p$ 만의 함수가 된다. 이것이 Artin 사상이고, 유체론에서 이 사상은 류군의 일반화를 Galois 군에 동형으로 대응시킨다.
+아벨 확대에서는 Frobenius 가 $\mathfrak p$ 의 선택에 무관해 $p$ 만의 함수가 된다. 이것이 Artin 사상이고, [유체론](class-field-theory.md)에서 이 사상은 류군의 일반화를 Galois 군에 동형으로 대응시킨다.
 
-$K=\mathbb Q(\zeta_m)$ 에서 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathrm{Frob}\_p=p \bmod m$ 이다. $p$ 가 완전분해할 조건이 $p\equiv1\pmod m$ 이고, 이차 부분체로 내려가면 이차 상호법칙이 된다.
+$K=\mathbb Q(\zeta_m)$ 에서 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathrm{Frob}\_p=p \bmod m$ 이다. $p$ 가 완전분해할 조건이 $p\equiv1\pmod m$ 이고, 이차 부분체로 내려가면 이차 상호법칙이 된다. $p$ 가 홀수 소수이면 이차체 $\mathbb Q(\sqrt{p^\ast})$, $p^\ast=(-1)^{(p-1)/2}p$ 가 $\mathbb Q(\zeta_p)$ 안에 있고, 이 분해를 그 이차체에 적용하면 [이차 상호법칙](quadratic-reciprocity.md)이 나온다.
 
 ## 류수 공식
 
@@ -148,7 +142,7 @@ $D=-163$ 에서 $h=1$ 인 것이 $e^{\pi\sqrt{163}}$ 이 정수에 극도로 가
 
 ## Fermat 마지막 정리의 첫 진전
 
-$x^p+y^p=z^p$ 를 $\mathbb Z[\zeta_p]$ 에서 $\prod(x+\zeta_p^iy)=z^p$ 로 쪼개는 것이 Lamé 의 착상이었다. 유일분해가 성립한다면 각 인수가 $p$ 제곱이어야 하고 거기서 모순이 나온다. Kummer 가 $p=23$ 에서 유일분해가 깨짐을 지적해 이 논증을 무너뜨렸다.
+[Fermat 마지막 정리](fermats-last-theorem.md)의 식 $x^p+y^p=z^p$ 를 $\mathbb Z[\zeta_p]$ 에서 $\prod(x+\zeta_p^iy)=z^p$ 로 쪼개는 것이 Lamé 의 착상이었다. 유일분해가 성립한다면 각 인수가 $p$ 제곱이어야 하고 거기서 모순이 나온다. Kummer 가 $p=23$ 에서 유일분해가 깨짐을 지적해 이 논증을 무너뜨렸다.
 
 Kummer 는 $p$ 가 류수를 나누지 않는 정규소수면 논증이 복구됨을 보였다. 이것이 100 이하의 거의 모든 지수에서 정리를 증명했고, 아이디얼 이론이 여기서 태어났다.
 
