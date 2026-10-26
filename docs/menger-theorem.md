@@ -69,6 +69,7 @@ G. A. Dirac 은 이 보조정리로 $k\ge 2$ 인 $k$ 연결 그래프에서 어�
 
 ## 더 알아보기
 
+- [귀 분해](ear-decomposition.md)
 - [Chvátal–Erdős 정리](chvatal-erdos-theorem.md)
 - [Gomory–Hu 나무](gomory-hu-tree.md)
 - [Karger 축약 알고리즘](karger-min-cut.md)
