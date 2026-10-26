@@ -2,7 +2,7 @@
 
 # 개요
 
-**Stoer–Wagner 알고리즘(Stoer–Wagner algorithm)** 은 음이 아닌 간선 무게가 있는 무향 그래프의 전역 최소 절단을 최대 흐름 없이 구하는 결정적 알고리즘이다. 정점을 가장 강하게 이어진 순서로 늘어놓으면 마지막 두 정점 $s,t$ 의 최소 $s$–$t$ 절단이 $t$ 하나를 떼는 절단이 된다는 보조정리를 쓰고, $s$ 와 $t$ 를 합쳐 같은 일을 $n-1$ 번 되풀이한다. M. Stoer 와 F. Wagner 가 1997 년에 발표했고, 정점 순서는 H. Nagamochi 와 T. Ibaraki 의 것이다[^1][^2]. 실행 시간은 $O(\lvert V\rvert\lvert E\rvert+\lvert V\rvert^2\log\lvert V\rvert)$ 다.
+**Stoer–Wagner 알고리즘(Stoer–Wagner algorithm)** 은 음이 아닌 간선 무게가 있는 무향 그래프의 전역 최소 절단을 최대 흐름 없이 구하는 결정적 알고리즘이다. 전선망을 둘로 끊는 데 잘라야 하는 전선 무게의 최솟값을 구할 때, 정점 쌍마다 최대 흐름을 구하면 흐름 계산이 정점 수만큼 필요하다. 이 알고리즘은 정점을 가장 강하게 이어진 순서로 늘어놓아 마지막 두 정점을 가르는 가장 작은 절단을 바로 읽고, 그 두 정점을 합치는 일을 되풀이해 답을 얻는다.
 
 # 직관
 
@@ -61,7 +61,7 @@ $$
 
 정리. 알고리즘이 내놓는 값은 전역 최소 절단의 무게다.
 
-전역 최소 절단이 어느 단계의 $s$ 와 $t$ 를 처음으로 가르면 그 단계의 절단이 그 무게 이하이고, 그 전 단계들의 합치기는 최소 절단을 바꾸지 않는다. 한 단계는 [Fibonacci 힙](fibonacci-heaps.md)으로 키를 늘리면 $O(\lvert E\rvert+\lvert V\rvert\log\lvert V\rvert)$ 시간이고, 단계가 $\lvert V\rvert-1$ 번이다.
+전역 최소 절단이 어느 단계의 $s$ 와 $t$ 를 처음으로 가르면 그 단계의 절단이 그 무게 이하이고, 그 전 단계들의 합치기는 최소 절단을 바꾸지 않는다. 한 단계는 [Fibonacci 힙](fibonacci-heaps.md)으로 키를 늘리면 $O(\lvert E\rvert+\lvert V\rvert\log\lvert V\rvert)$ 시간이고, 단계가 $\lvert V\rvert-1$ 번이다. 전체 시간은 $O(\lvert V\rvert\lvert E\rvert+\lvert V\rvert^2\log\lvert V\rvert)$ 다. M. Stoer 와 F. Wagner 가 1997 년에 발표했고, 정점 순서는 H. Nagamochi 와 T. Ibaraki 의 것이다[^1][^2].
 
 ## 다른 방법과의 비교
 
