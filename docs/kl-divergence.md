@@ -184,6 +184,7 @@ $$
 - [Fisher 정보](fisher-information.md)
 - [상호정보량 추정](mutual-information-estimation.md)
 - [정보 기준](information-criteria.md)
+- [적정 점수 규칙](proper-scoring-rules.md)
 
 ### 알고리즘
 
