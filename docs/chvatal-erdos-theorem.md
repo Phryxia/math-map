@@ -2,7 +2,7 @@
 
 # 개요
 
-**Chvátal–Erdős 정리(Chvátal–Erdős theorem)** 는 정점이 $3$ 개 이상인 그래프에서 연결도가 독립수 이상이면 [Hamilton 순환](hamiltonian-cycles.md)이 있다는 정리다. Dirac 정리와 Ore 정리가 차수로 조건을 주는 것과 달리, 정점을 몇 개 지워야 그래프가 끊기는지와 서로 인접하지 않은 정점을 몇 개까지 고를 수 있는지를 견준다. 증명은 가장 긴 순환과 [네트워크 흐름](network-flow.md)의 Menger 정리(Menger's theorem)를 쓴다.
+**Chvátal–Erdős 정리(Chvátal–Erdős theorem)** 는 정점이 $3$ 개 이상인 그래프에서 연결도가 독립수 이상이면 [Hamilton 순환](hamiltonian-cycles.md)이 있다는 정리다. Dirac 정리와 Ore 정리가 차수로 조건을 주는 것과 달리, 정점을 몇 개 지워야 그래프가 끊기는지와 서로 인접하지 않은 정점을 몇 개까지 고를 수 있는지를 견준다. 증명은 가장 긴 순환과 [Menger 정리](menger-theorem.md)를 쓴다.
 
 # 직관
 
@@ -63,7 +63,7 @@ $\kappa(G)\ge\alpha(G)-1$ 이면 $G$ 에 Hamilton 경로가 있다. 모든 정�
 ## 선수지식
 
 - [Hamilton 순환](hamiltonian-cycles.md)
-- [네트워크 흐름](network-flow.md)
+- [Menger 정리](menger-theorem.md)
 
 ## 더 알아보기
 
