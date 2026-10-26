@@ -131,6 +131,7 @@ $\mathrm{Ext}\_R^1(C, A)$ 의 원소는 $0 \to A \to B \to C \to 0$ 꼴 확대�
 ## 더 알아보기
 
 - [군 코호몰로지](group-cohomology.md)
+- [Lie 대수 코호몰로지](lie-algebra-cohomology.md)
 - [층 코호몰로지](sheaf-cohomology.md)
 - [국소 코호몰로지](local-cohomology.md)
 
