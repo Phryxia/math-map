@@ -2,7 +2,11 @@
 
 # 개요
 
-**괴물 달빛 추측(monstrous moonshine conjecture)** 은 가장 큰 산재군의 표현과 모듈러 함수 $j$ 의 Fourier 계수를 짝짓는 Conway–Norton 추측이고, Borcherds 가 1992 년에 증명했다. [유한 단순군 분류](finite-simple-groups.md)의 끝에 26 개의 **산재군**(sporadic group)이 남는다. 어떤 무한 계열에도 속하지 않는 예외들이고, 그 중 가장 큰 것이 **괴물군**(Monster) $\mathbb M$ 이다. 위수가
+**괴물 달빛 추측(monstrous moonshine conjecture)** 은 가장 큰 산재 단순군의 표현 차원과 모듈러 함수 $j$ 의 계수가 맞아떨어지는 현상을 설명하는 추측이다. 유한군의 대칭을 세는 수 $196883$ 과 복소함수 $j$ 의 전개 계수 $196884$ 가 $1$ 차이로 나란히 나타나는데, 두 수는 서로 다른 분야에서 따로 계산된 것이라 이 일치가 우연인지 알 수 없었다. 두 쪽을 모두 담는 무한차원 표현 하나를 만들어 계수 전체가 그 표현의 차원과 지표로 나옴을 보이는 방법으로, Borcherds 가 1992 년에 증명했다.
+
+# 직관
+
+[유한 단순군 분류](finite-simple-groups.md)의 끝에 26 개의 **산재군**(sporadic group)이 남는다. 어떤 무한 계열에도 속하지 않는 예외들이고, 그 중 가장 큰 것이 **괴물군**(Monster) $\mathbb M$ 이다. 위수가
 
 $$
 \vert\mathbb M\vert=2^{46}3^{20}5^97^611^213^3\cdot17\cdot19\cdot23\cdot29\cdot31\cdot41\cdot47\cdot59\cdot71\approx8\times10^{53}
@@ -22,11 +26,9 @@ $$
 21493760=1+196883+21296876
 $$
 
-**괴물 달빛 추측(monstrous moonshine conjecture)** 은 이 대응이 $\mathbb M$ 의 원소 전체로 확장된다는 주장이다. Conway 와 Norton 이 1979 년에 제기하고 Borcherds 가 1992 년에 증명했다. 양쪽을 잇는 대상은 Leech [격자](lattices.md)에서 만든 [정점작용소대수](vertex-operator-algebras.md) $V^\natural$ 다. 이 무한차원 등급 벡터공간은 $\mathbb M$ 의 표현이면서 등급 차원의 [생성함수](generating-functions.md)가 $j-744$ 다. 증명의 도구는 $V^\natural$ 에서 만든 무한차원 [Lie 대수](lie-algebras.md)이고, 그 분모 공식이 $j$ 의 계수들을 서로 묶는다.
+괴물 달빛 추측은 이 대응이 $\mathbb M$ 의 원소 전체로 확장된다는 주장이다. Conway 와 Norton 이 1979 년에 제기하고 Borcherds 가 1992 년에 증명했다. 양쪽을 잇는 대상은 Leech [격자](lattices.md)에서 만든 [정점작용소대수](vertex-operator-algebras.md) $V^\natural$ 다. 이 무한차원 등급 벡터공간은 $\mathbb M$ 의 표현이면서 등급 차원의 [생성함수](generating-functions.md)가 $j-744$ 다. 증명의 도구는 $V^\natural$ 에서 만든 무한차원 [Lie 대수](lie-algebras.md)이고, 그 분모 공식이 $j$ 의 계수들을 서로 묶는다.
 
 moonshine 은 Conway 가 고른 단어다. 밀주라는 뜻과 달빛이라는 뜻이 겹쳐 있고, 실체가 의심스러운 관찰이라는 당시의 평가를 담았다.
-
-# 직관
 
 수열 $\lbrace c(n)\rbrace$ 의 각 항이 군 $G$ 의 기약표현 차원들의 음이 아닌 정수 조합으로 쓰인다는 것은 **등급 표현** $V=\bigoplus_{n\ge-1}V_n$ 이 $\dim V_n=c(n)$ 으로 존재한다는 말과 같다. 차원만 맞추는 표현은 언제나 만들 수 있으므로 이 진술 자체에는 내용이 없다. 내용은 항등원이 아닌 원소에서 생긴다. 표현 $V$ 가 실재하면 모든 $g\in\mathbb M$ 에 대해 지표
 
