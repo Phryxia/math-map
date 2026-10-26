@@ -2,7 +2,11 @@
 
 # 개요
 
-**Iwasawa 주추측(Iwasawa main conjecture)** 은 원분 탑 $\mathbb Q(\mu_{p^\infty})$ 의 류군 사영극한이 Iwasawa 대수 위의 가군으로서 갖는 특성 아이디얼이 $p$ 진 $L$ 함수가 생성하는 아이디얼과 같다는 진술이다. 순환체 $\mathbb Q(\mu_{p^n})$ 의 류수 $h_n$ 을 층마다 계산하면 규칙이 보이지 않는다. Iwasawa 는 한 층 대신 탑 전체를 보았다. 층을 무한히 쌓은 $\mathbb Q(\mu_{p^\infty})$ 에서 각 층의 류군을 사영극한으로 모으면 그 극한이 $\Lambda=\mathbb Z_p[[T]]$ 위의 유한생성 가군이 되고, $\Lambda$ 에 구조정리가 있으므로 극한 가군은 유사동형을 무시하면 [멱급수](power-series.md) 하나로 요약된다. 이것이 **특성 멱급수**다.
+**Iwasawa 주추측(Iwasawa main conjecture)** 은 $1$ 의 $p^n$ 제곱근으로 만든 체들을 $n=1,2,3,\dots$ 로 쌓았을 때, 각 체의 류수가 $p$ 로 몇 번 나뉘는지가 하나의 $p$ 진 $L$ 함수로 정해진다는 진술이다. $p=37$ 에서는 [Bernoulli 수](bernoulli-numbers.md) $B_{32}$ 의 분자가 $37$ 로 나뉘고, 그에 맞추어 $\mathbb Q(\mu_{37})$ 의 류수도 $37$ 로 나뉜다. 층 하나씩 류수를 계산하면 $n$ 에 따른 규칙이 보이지 않는다. Iwasawa 는 탑 전체의 류군을 [멱급수](power-series.md) 환 위의 가군 하나로 모아, 류수가 $p$ 로 나뉘는 횟수가 충분히 큰 $n$ 에서 $\mu p^n+\lambda n+\nu$ 꼴임을 보였다. 주추측은 그 가군을 정하는 멱급수가 $p$ 진 $L$ 함수와 같다는 주장이고, Mazur 와 Wiles 가 증명했다.
+
+# 직관
+
+Iwasawa 주추측은 원분 탑 $\mathbb Q(\mu_{p^\infty})$ 의 류군 사영극한이 Iwasawa 대수 위의 가군으로서 갖는 특성 아이디얼이 $p$ 진 $L$ 함수가 생성하는 아이디얼과 같다는 진술이다. 순환체 $\mathbb Q(\mu_{p^n})$ 의 류수 $h_n$ 을 층마다 계산하면 규칙이 보이지 않는다. Iwasawa 는 한 층 대신 탑 전체를 보았다. 층을 무한히 쌓은 $\mathbb Q(\mu_{p^\infty})$ 에서 각 층의 류군을 사영극한으로 모으면 그 극한이 $\Lambda=\mathbb Z_p[[T]]$ 위의 유한생성 가군이 되고, $\Lambda$ 에 구조정리가 있으므로 극한 가군은 유사동형을 무시하면 멱급수 하나로 요약된다. 이것이 **특성 멱급수**다.
 
 그러면 $h_n$ 의 증가가 규칙적으로 보인다. 충분히 큰 $n$ 에서
 
@@ -12,13 +16,11 @@ $$
 
 가 성립한다. 세 상수는 특성 멱급수에서 읽는다.
 
-[Dirichlet L 함수](dirichlet-l-functions.md)의 특수값을 $p$ 진적으로 보간해 얻는 Kubota–Leopoldt [p 진 L 함수](p-adic-l-function.md) $L_p(s,\chi)$ 도 같은 $\Lambda$ 안의 원소로 실현된다. 한쪽은 이데알류군의 극한이고 다른 쪽은 [Bernoulli 수](bernoulli-numbers.md)의 보간이다.
+[Dirichlet L 함수](dirichlet-l-functions.md)의 특수값을 $p$ 진적으로 보간해 얻는 Kubota–Leopoldt [p 진 L 함수](p-adic-l-function.md) $L_p(s,\chi)$ 도 같은 $\Lambda$ 안의 원소로 실현된다. 한쪽은 이데알류군의 극한이고 다른 쪽은 Bernoulli 수의 보간이다.
 
 > **Iwasawa 주추측.** 두 원소가 생성하는 $\Lambda$ 의 아이디얼은 같다.
 
 류수 공식이 "류수 $\times$ 조절자 $=L$ 함수의 값" 이라는 한 층의 등식이라면 주추측은 그 탑 판본이다. Mazur 와 Wiles 가 [모듈러 곡선](modular-curves.md)의 [Eisenstein 합동](herbrand-ribet.md)으로 먼저 증명했고, Rubin 이 [Euler 계](euler-systems.md)로 더 짧은 두 번째 증명을 주었다.
-
-# 직관
 
 $\mathbb Q(\mu_{p^{n+1}})$ 의 류수는 앞 층의 류수로 나뉘지만 몫이 어떻게 커지는지는 한 층만 봐서 알 수 없다. 층의 류군을 모은 극한 가군은 탑의 Galois 군 $\Gamma\cong\mathbb Z_p$ 의 작용을 갖고, 위상생성원 $\gamma$ 에 대해 $T=\gamma-1$ 로 두면 그 작용이 $\Lambda=\mathbb Z_p[[T]]$ 위의 가군 구조가 된다. 이 극한에서 $n$ 번째 층은 $\omega_n=(1+T)^{p^{n}}-1$ 로 나눈 몫으로 되돌아온다. $X=\Lambda/(f)$ 인 경우에 그 크기를 세면
 
