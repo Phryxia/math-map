@@ -2,25 +2,25 @@
 
 # 개요
 
-**Peter–Weyl 정리(Peter–Weyl theorem)** 는 콤팩트 Lie 군의 표현론을 유한군과 같은 꼴로 세우는 정리다. 유한군의 표현론은 세 가지 사실 위에 서 있다. 모든 표현이 기약표현의 직합으로 쪼개지고, 기약표현은 유한개이며, 정칙표현이 모든 기약표현을 차원만큼씩 담는다.
+**Peter–Weyl 정리(Peter–Weyl theorem)** 는 원이나 회전군처럼 콤팩트한 연속 대칭군 위의 함수를 그 군의 기본 대칭 패턴들로 분해하는 정리다. 원 위의 주기함수는 [Fourier 급수](fourier-series.md)로 $e^{in\theta}$ 의 합이 되고 구면 위의 함수는 [구면조화함수](spherical-harmonics.md)의 합이 되는데, 두 전개가 왜 같은 꼴인지는 각 경우의 계산만으로 드러나지 않는다. 이 정리는 콤팩트 [Lie 군](lie-groups.md) 위의 제곱적분 함수 공간이 기약표현의 행렬계수들로 직교분해됨을 보여, 두 전개를 한 정리의 특수한 경우로 얻는다.
+
+# 직관
+
+유한군에서 임의의 내적 $\langle\cdot,\cdot\rangle_0$ 을 군 평균 $\frac1{\lvert G\rvert}\sum_{g\in G}\langle gu,gv\rangle_0$ 으로 대칭화하면 불변 내적이 나온다. 그러면 표현이 유니터리가 되고 부분표현의 직교보공간이 다시 부분표현이므로 완전가약성이 따라온다. 콤팩트 군에서는 이 합을 Haar 적분 $\int_G\langle gu,gv\rangle_0\thinspace dg$ 로 바꾸며, [콤팩트성](compactness.md)은 측도의 전체 질량이 유한해야 평균이 정의되는 자리에 쓰인다. $G=\mathbb R$ 에서는 전체 질량이 무한이어서 이 논법이 무너지고, 유니터리 표현이 직합이 아니라 직적분으로 분해되어 [연속 스펙트럼](bounded-operators.md)이 나온다.
+
+유한군에서 이 평균으로 얻는 결론이 정칙표현의 분해다.
 
 $$
 \mathbb C[G]\cong\bigoplus_i V_i^{\oplus\dim V_i}
 $$
 
-증명의 핵심 도구는 군 위의 평균 $\frac1{|G|}\sum_{g\in G}$ 이다. 콤팩트 [Lie 군](lie-groups.md) $G$ 에는 전체 부피가 1 인 불변 [측도](measure.md)([Haar 측도](haar-measure.md))가 있어 이 합을 적분으로 바꿀 수 있고, **Peter–Weyl 정리**가 위 동형을 [Hilbert 공간](hilbert-spaces.md)의 직교분해로 옮긴다.
+콤팩트 Lie 군에는 전체 부피가 $1$ 인 불변 [측도](measure.md)인 [Haar 측도](haar-measure.md)가 있어 평균의 합을 적분으로 바꿀 수 있고, 같은 분해가 [Hilbert 공간](hilbert-spaces.md)의 직교분해로 옮겨진다.
 
 $$
 L^2(G)\cong\widehat{\bigoplus_{i}}\ V_i\otimes V_i^\ast
 $$
 
 오른쪽 합은 가산개이고 각 항은 유한차원이다.
-
-$G=S^1$ 이면 이 분해가 [Fourier 급수](fourier-series.md)이고 $G=\mathrm{SO}(3)$ 이면 [구면조화함수](spherical-harmonics.md) 전개다. 둘 다 군 위의 함수를 기약표현으로 분해한 것이다.
-
-# 직관
-
-유한군에서 임의의 내적 $\langle\cdot,\cdot\rangle_0$ 을 군 평균 $\frac1{\lvert G\rvert}\sum_{g\in G}\langle gu,gv\rangle_0$ 으로 대칭화하면 불변 내적이 나온다. 그러면 표현이 유니터리가 되고 부분표현의 직교보공간이 다시 부분표현이므로 완전가약성이 따라온다. 콤팩트 군에서는 이 합을 Haar 적분 $\int_G\langle gu,gv\rangle_0\thinspace dg$ 로 바꾸며, [콤팩트성](compactness.md)은 측도의 전체 질량이 유한해야 평균이 정의되는 자리에 쓰인다. $G=\mathbb R$ 에서는 전체 질량이 무한이어서 이 논법이 무너지고, 유니터리 표현이 직합이 아니라 직적분으로 분해되어 [연속 스펙트럼](bounded-operators.md)이 나온다.
 
 표현 $\rho:G\to\mathrm{GL}(V)$ 와 기저를 고정하면 함수 $\rho_{ij}(g)$ 가 나오고 이것이 행렬계수다. $G=S^1$ 이고 $\rho_n(\theta)=e^{in\theta}$ 이면 행렬계수가 $e^{in\theta}$ 자신이므로, Fourier 급수는 모든 $L^2$ 함수가 행렬계수의 급수라는 진술이다. Peter–Weyl 정리는 이것을 일반화해 모든 기약표현의 행렬계수를 모으면 $L^2(G)$ 에서 조밀하고 정규화하면 정규직교기저가 된다고 말한다. $\dim V_i$ 차원 표현이 $(\dim V_i)^2$ 개의 함수를 기여하므로 유한군의 $\lvert G\rvert=\sum(\dim V_i)^2$ 가 무한 차원으로 옮겨진다.
 
