@@ -2,7 +2,9 @@
 
 # 개요
 
-**Hartshorne–Lichtenbaum 소멸 정리(Hartshorne–Lichtenbaum vanishing theorem)** 는 [국소 코호몰로지](local-cohomology.md) $H^i\_I(R)$ 의 최고차 $i=\dim R$ 이 언제 $0$ 인지를 $R/I$ 의 차원으로 판정한다.
+**Hartshorne–Lichtenbaum 소멸 정리(Hartshorne–Lichtenbaum vanishing theorem)** 는 [국소 코호몰로지](local-cohomology.md) $H^i\_I(R)$ 의 최고차 $i=\dim R$ 이 언제 $0$ 인지를 $R/I$ 의 차원으로 판정한다. 국소 코호몰로지는 정의만 보아서는 어느 차수에서 사라지는지 알 수 없다. 2 차원 멱급수환 $R=k\lbrack\lbrack x,y\rbrack\rbrack$ 와 $I=(x)$ 에서 $R/I$ 는 1 차원이고, 정리에 따라 $H^2_I(R)=0$ 이다. 정리는 완비 국소 정역에서 $V(I)$ 가 닫힌점 하나가 아니면 최고차가 늘 $0$ 임을 보인다.
+
+# 직관
 
 **정리.** $(R,\mathfrak m)$ 이 $d$ 차원 완비 국소 정역이면
 
@@ -13,8 +15,6 @@ $$
 이다.[^1]
 
 Grothendieck 의 비소멸 정리는 $I=\mathfrak m$ 에서 $H^d\_{\mathfrak m}(R)\neq0$ 을 준다. 이 정리는 그 반대편을 채운다. $V(I)$ 가 닫힌점 하나로 줄어드는 경우를 빼면 최고차가 항상 소멸한다.
-
-# 직관
 
 $R=k\lbrack\lbrack x,y\rbrack\rbrack$ 은 $2$ 차원 완비 국소 정역이다. $I=\mathfrak m=(x,y)$ 는 생성원이 둘이라 Čech 복합체가 차수 $2$ 까지 간다.
 

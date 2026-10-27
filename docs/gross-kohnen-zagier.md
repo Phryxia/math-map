@@ -2,7 +2,9 @@
 
 # 개요
 
-**Gross–Kohnen–Zagier 정리(Gross–Kohnen–Zagier theorem)** 는 판별식마다 하나씩 만든 [Heegner 점](heegner-points.md)들을 계수로 삼은 $q$ 급수가 무게 $3/2$ 의 [모듈러 형식](modular-forms.md)이라는 진술이다.
+**Gross–Kohnen–Zagier 정리(Gross–Kohnen–Zagier theorem)** 는 판별식마다 하나씩 만든 [Heegner 점](heegner-points.md)들을 계수로 삼은 $q$ 급수가 무게 $3/2$ 의 [모듈러 형식](modular-forms.md)이라는 진술이다. 타원곡선 위에서 판별식 $-3,-4,-7,\dots$ 마다 Heegner 점을 하나씩 만들면 점이 무한히 많이 나오는데, 이 점들 사이의 관계는 점을 하나씩 계산해서는 보이지 않는다. 정리는 이 점들이 모두 한 점의 유리수배이고, 그 배율이 무게 $3/2$ 형식의 Fourier 계수임을 보인다.
+
+# 직관
 
 $$
 \sum_{m\gt 0}y_m\thinspace q^m\ \in\ S^+\_{3/2}(\Gamma_0(4N))\otimes J
@@ -13,8 +15,6 @@ $y_m$ 은 판별식 $-m$ 의 Heegner 점들을 자취로 모은 인자류이고 
 무게 $2$ 의 신형식 $f$ 로 성분을 자르면 모든 $y_m$ 이 한 점의 유리수배가 되고, 그 배율이 [Shimura 대응](shimura-correspondence.md)으로 $f$ 에 짝지어진 무게 $3/2$ 형식의 Fourier 계수다. 판별식을 바꾸어 얻은 점들이 한 직선 위에 놓인다.
 
 증명은 둘이다. 원래 증명은 Heegner 점들의 높이 짝을 Rankin 적분으로 계산한다.[^1] Borcherds 는 [Borcherds 곱](borcherds-products.md)이 만드는 인자가 무엇인지로 다시 증명했다.[^2]
-
-# 직관
 
 $X_0(N)$ 위에는 허수이차체마다 Heegner 점이 있고 허수이차 판별식은 무한히 많다. 이 점들을 $J_0(N)$ 안의 인자류로 옮기면 $y_1,y_2,y_3,\dots$ 가 나온다. [Mordell–Weil 정리](canonical-height.md)로 $J_0(N)(\mathbb Q)$ 는 유한생성이므로 유리수 계수의 선형관계 $\sum_{m\gt 0}c_m\thinspace y_m=0$ 이 무한히 많다. 어느 $(c_m)$ 이 관계인지 하나씩 찾는 길은 끝나지 않는다.
 
