@@ -2,7 +2,11 @@
 
 # 개요
 
-**Sturm–Liouville 이론(Sturm–Liouville theory)** 은 구간 $\lbrack a,b\rbrack$ 위의 2계 선형 미분방정식
+**Sturm–Liouville 이론(Sturm–Liouville theory)** 은 경계조건이 붙은 2계 선형 미분방정식이 어떤 상수값에서 $0$ 아닌 해를 갖는지, 그 해들로 함수를 전개할 수 있는지를 다루는 이론이다. 예로 양 끝을 고정한 길이 $\pi$ 인 줄의 정상파는 $u''=-\lambda u$, $u(0)=u(\pi)=0$ 의 해이고, $0$ 아닌 해는 $\lambda=n^2$ 일 때의 $\sin nx$ 뿐이다. 이 이론은 계수가 위치에 따라 바뀌는 방정식에서도 이런 값이 실수의 이산 열을 이루고 그 해들이 함수를 전개하는 기저가 됨을 보인다.
+
+# 직관
+
+Sturm–Liouville 이론은 구간 $\lbrack a,b\rbrack$ 위의 2계 선형 미분방정식
 
 $$
 -\bigl(p(x)u'\bigr)'+q(x)u=\lambda\thinspace w(x)\thinspace u
@@ -11,8 +15,6 @@ $$
 와 양 끝에서의 경계조건이 이루는 [고윳값](eigenvalues.md) 문제를 다룬다. 고윳값은 실수이고 아래로 유계인 이산 열을 이루며 무한대로 발산한다. 서로 다른 고윳값의 고유함수는 가중 $w$ 에 대해 직교하고, 전체가 $L^2$ 에서 완전계를 이룬다.
 
 직교성은 부분적분 두 번에서 나오고, 완전성은 문제를 [Green 함수](greens-function.md)로 적분방정식으로 바꾼 뒤 콤팩트 자기수반 작용소의 [스펙트럼 정리](spectral-theorem.md)를 적용해 얻는다.
-
-# 직관
 
 길이 $\pi$ 인 줄의 진동을 다루려 한다. [파동방정식](wave-equation.md)을 시간과 공간으로 분리하면 공간 쪽에 다음이 남는다.
 

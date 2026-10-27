@@ -2,7 +2,11 @@
 
 # 개요
 
-**Wasserstein 기울기 흐름(Wasserstein gradient flow)** 은 확률측도의 공간에 [최적 수송](optimal-transport.md)의 $W_2$ 거리를 주고 그 거리에 대해 범함수를 가장 빨리 줄이는 방향으로 움직이는 흐름이다. 확률측도 전체가 이루는 공간에 최적 수송의 $W_2$ 거리를 주면 그 공간이 형식적인 Riemann 다양체가 된다. 이 기하에서 [열방정식](heat-equation.md) $\partial_t\rho=\Delta\rho$ 가 엔트로피의 경사하강이다.
+**Wasserstein 기울기 흐름(Wasserstein gradient flow)** 은 확률분포를 조금씩 옮겨 주어진 양을 가장 빨리 줄이는 방향으로 움직이는 흐름이고, 분포 사이의 거리는 [최적 수송](optimal-transport.md)의 $W_2$ 거리로 잰다. 예로 잉크 한 방울이 물에 퍼질 때 각 점의 농도는 [열방정식](heat-equation.md)을 따르지만, 이 운동이 무엇을 줄이고 얼마나 빨리 평형에 가는지는 식만 보아서는 드러나지 않는다. 이 흐름은 그 퍼짐을 엔트로피의 경사하강으로 적고, 경사하강의 수렴 속도 계산으로 평형에 가는 속도를 얻는다.
+
+# 직관
+
+확률측도 전체가 이루는 공간에 최적 수송의 $W_2$ 거리를 주면 그 공간이 형식적인 Riemann 다양체가 된다. 이 기하에서 열방정식 $\partial_t\rho=\Delta\rho$ 가 엔트로피의 경사하강이다.
 
 $$
 \partial_t\rho=\nabla\negthinspace\cdot\negthinspace\Big(\rho\thinspace\nabla\frac{\delta\mathcal F}{\delta\rho}\Big),
@@ -13,8 +17,6 @@ $$
 $\mathcal F$ 는 자유에너지이고, 이 방정식은 [확률미분방정식](stochastic-differential-equations.md)의 해의 밀도가 만족하는 [Fokker–Planck 방정식](fokker-planck.md)이다. 확산 과정 하나가 분포 공간 위의 경사하강 하나에 대응한다.
 
 경사하강의 암시적 오일러 이산화를 옮기면 **JKO**(Jordan–Kinderlehrer–Otto) **스킴**이 나오고, 그 수렴 증명이 Fokker–Planck 해의 존재 증명이 된다.[^1] 또 $W_2$ 를 따라 잰 [볼록성](convexity.md)이 확산의 수렴 속도를 준다. 함수부등식의 증명과 생성모형 설계가 이 속도에 기댄다.
-
-# 직관
 
 유클리드 공간의 경사하강은 한 걸음마다 $x^{k+1}=\arg\min_x\lbrack f(x)+|x-x^k|^2/(2\tau)\rbrack$ 을 푸는 것과 같고 $\tau\to0$ 에서 $\dot x=-\nabla f(x)$ 가 나온다. 여기서 $|x-x^k|^2$ 는 공간에 준 거리이므로, 거리를 바꾸면 같은 $f$ 에서 다른 흐름이 나온다.
 
