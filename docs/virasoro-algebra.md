@@ -2,13 +2,17 @@
 
 # 개요
 
-**Virasoro 대수(Virasoro algebra)** 는 원 위의 다항식 벡터장이 이루는 Witt 대수의 유일한 비자명 중심확대다. 원 위의 벡터장은 교환자로 무한차원 [Lie 대수](lie-algebras.md)를 이룬다. 복소 기저로 쓰면 $L_n=-t^{n+1}\partial_t$ 이고 괄호가 다음이다.
+**Virasoro 대수(Virasoro algebra)** 는 원 위의 다항식 벡터장이 이루는 Witt 대수의 유일한 비자명 중심확대다. 원 위의 벡터장 $L_n=-t^{n+1}\partial_t$ 들은 교환자 $\lbrack L_m,L_n\rbrack=(m-n)L_{m+n}$ 으로 무한차원 [Lie 대수](lie-algebras.md)를 이루지만, 2 차원 등각장론에서 이 대칭이 상태공간에 작용하면 교환자에 상수항이 하나 더 붙는다. Virasoro 대수는 그 상수항을 중심원소의 값 $c$ 로 기록한 대수이고, $c$ 는 그 대칭을 갖는 이론을 가르는 첫 자료다.
+
+# 직관
+
+원 위의 벡터장은 교환자로 무한차원 Lie 대수를 이룬다. 복소 기저로 쓰면 $L_n=-t^{n+1}\partial_t$ 이고 괄호가 다음이다.
 
 $$
 \lbrack L_m,L_n\rbrack=(m-n)L_{m+n}
 $$
 
-이것이 **Witt 대수**다. **Virasoro 대수**는 Witt 대수의 1 차원 중심확대다.
+이것이 **Witt 대수(Witt algebra)** 다. Virasoro 대수는 Witt 대수의 1 차원 중심확대다.
 
 $$
 \lbrack L_m,L_n\rbrack=(m-n)L_{m+n}+\frac{c}{12}(m^3-m)\thinspace\delta_{m+n,0}
@@ -17,8 +21,6 @@ $$
 중심원소의 고윳값 $c$ 가 **중심전하**다. Witt 대수의 2 차 [Lie 대수 코호몰로지](lie-algebra-cohomology.md)가 1 차원이므로 이 확대가 스칼라배를 빼고 유일하다.
 
 $c$ 와 최고무게 $h$ 를 고정하면 최고무게 가군이 하나 정해진다. 그 가군이 언제 기약이고 언제 유니터리인지가 $(c,h)$ 평면의 부등식과 이산집합으로 답이 나오며, 이산집합에 놓이는 것이 **최소모형**이다.
-
-# 직관
 
 원 위의 좌표변환 $t\mapsto f(t)$ 가 만드는 대칭을 Lie 대수 수준에서 적는다. 벡터장 $v=\phi(t)\partial_t$ 에 $\phi(t)=-t^{n+1}$ 을 넣은 것이 $L_n$ 이고, 벡터장의 교환자를 계산하면 $(m-n)L_{m+n}$ 이 나온다. 여기까지는 중심항이 없다.
 

@@ -2,7 +2,11 @@
 
 # 개요
 
-**Vogan L 꾸러미(Vogan L-packet)** 는 하나의 L 매개변수에 대응하는 기약 표현들을 순수 내부 형식(pure inner form) 전체에 걸쳐 모은 집합이다. [Langlands 강령](langlands-program.md)의 국소 판본은 국소체 $F$ 위의 환원군 $G$ 의 기약 표현에 **L 매개변수**로 이름표를 붙인다.
+**Vogan L 꾸러미(Vogan L-packet)** 는 하나의 L 매개변수에 대응하는 기약 표현들을 순수 내부 형식(pure inner form) 전체에 걸쳐 모은 집합이다. 국소 [Langlands 강령](langlands-program.md)은 표현마다 L 매개변수라는 이름표를 붙이는데, $\mathrm{GL}\_n$ 이 아닌 군에서는 여러 표현이 같은 이름표를 공유하고, 그 표현들을 구별할 지표 가운데 일부에는 대응하는 표현이 없다. 모자란 표현은 군의 내부 형식 위에 있다. Vogan L 꾸러미는 군과 그 순수 내부 형식들의 표현을 한데 모아, 같은 이름표를 가진 표현과 지표가 일대일로 대응하게 한다.
+
+# 직관
+
+Langlands 강령의 국소 판본은 국소체 $F$ 위의 환원군 $G$ 의 기약 표현에 **L 매개변수**로 이름표를 붙인다.
 
 $$
 \varphi:W_F\times\mathrm{SL}\_2(\mathbb C)\longrightarrow{}^LG
@@ -14,15 +18,13 @@ $$
 \Pi_\varphi\ \longleftrightarrow\ \mathrm{Irr}(\mathcal S_\varphi)
 $$
 
-군 $G$ 하나만 보면 이 대응은 전사가 아니다. 지표는 있는데 대응하는 표현이 없는 경우가 생기고, 모자란 표현은 $G$ 의 **내부형식** 위에 있다. $G$ 와 그 순수 내부형식들의 표현을 모두 모은 큰 꾸러미가 **Vogan L 꾸러미(Vogan L-packet)** 다.
+군 $G$ 하나만 보면 이 대응은 전사가 아니다. 지표는 있는데 대응하는 표현이 없는 경우가 생기고, 모자란 표현은 $G$ 의 **내부형식** 위에 있다. $G$ 와 그 순수 내부형식들의 표현을 모두 모은 큰 꾸러미가 Vogan L 꾸러미다.
 
 $$
 \Pi_\varphi^{\mathrm{Vogan}}=\bigsqcup_{b\in H^1(F,G)}\Pi_\varphi\bigl(G_b\bigr)
 $$
 
 [Gan–Gross–Prasad 추측](gan-gross-prasad.md)의 지표 공식에서 "중복도의 합이 1" 이라고 할 때의 합이 Vogan L 꾸러미 위의 합이다.
-
-# 직관
 
 $\mathrm{GL}\_2(F)$ 의 기약 표현을 $\mathrm{SL}\_2(F)$ 로 제한하면 쪼개질 수 있고, 쪼개진 조각들은 $\mathrm{GL}\_2(F)$ 의 켤레작용으로 서로 옮겨 다니며 같은 매개변수를 갖는다. $\mathrm{GL}\_n$ 에서는 중심화군이 연결되어 성분군이 자명하고 꾸러미가 하나지만, 쌍대군 $\mathrm{PGL}\_2(\mathbb C)$ 안에서는 중심화군이 연결되지 않을 수 있다. 그 성분군의 지표가 조각마다 붙는 이름표다.
 
