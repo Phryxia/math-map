@@ -2,11 +2,13 @@
 
 # 개요
 
-**Arzelà–Ascoli 정리(Arzelà–Ascoli theorem)** 는 [연속함수](continuity.md)의 공간에서 어떤 부분집합이 상대콤팩트인지 판정한다. [콤팩트](compactness.md) [거리 공간](metric-spaces.md) 위에서는 점별유계와 동등연속 두 조건이 필요충분이다.
-
-유한차원에서 [Heine–Borel 정리](heine-borel.md)가 유계 닫힌집합을 콤팩트라고 판정하는 자리를 무한차원 함수공간에서 대신한다. 함수열에서 [균등수렴](uniform-convergence.md)하는 부분열을 뽑는 논증이 이 정리를 거친다.
+**Arzelà–Ascoli 정리(Arzelà–Ascoli theorem)** 는 함수들의 모임에서 고르게 수렴하는 부분열을 언제나 뽑을 수 있는지 판정하는 정리다. $[0,1]$ 위의 함수열 $f_n(x)=x^n$ 은 값이 모두 $0$ 과 $1$ 사이에 있지만, 어떤 부분열도 고르게 수렴하지 않는다. Arzelà–Ascoli 정리는 값이 한 범위에 묶여 있다는 조건에 함수들이 한꺼번에 같은 정도로 연속이라는 조건을 더하면 그런 부분열이 반드시 있음을 보인다.
 
 # 직관
+
+Arzelà–Ascoli 정리는 [연속함수](continuity.md)의 공간에서 어떤 부분집합이 상대콤팩트인지 판정한다. [콤팩트](compactness.md) [거리 공간](metric-spaces.md) 위에서는 점별유계와 동등연속 두 조건이 필요충분이다.
+
+유한차원에서 [Heine–Borel 정리](heine-borel.md)가 유계 닫힌집합을 콤팩트라고 판정하는 자리를 무한차원 함수공간에서 대신한다. 함수열에서 [균등수렴](uniform-convergence.md)하는 부분열을 뽑는 논증이 이 정리를 거친다.
 
 $\lbrack 0,2\pi\rbrack$ 위의 $f_n(x)=\sin(nx)$ 는 상한 노름으로 유계지만 균등수렴하는 부분열이 없다. 진동이 빨라져 고정된 $\delta$ 안에서 함숫값이 계속 크게 변한다. [균등연속](uniform-continuity.md)의 $\delta$ 는 함수 하나마다 고르는 것이라 이 현상을 막지 못한다. 족 전체에 대해 하나의 $\delta$ 를 요구하면 막힌다.
 
