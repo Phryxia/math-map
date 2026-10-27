@@ -2,11 +2,13 @@
 
 # 개요
 
-**편향 Maker–Breaker 게임(biased Maker–Breaker game)** 은 Maker 가 한 번에 원소 $1$ 개를, Breaker 가 한 번에 원소 $b$ 개를 차지하는 Maker–Breaker 게임이다. 성질마다 Maker 가 이기는 $b$ 와 Breaker 가 이기는 $b$ 를 가르는 문턱 편향(threshold bias)이 있고, V. Chvátal 과 P. Erdős 가 1978 년에 완전 그래프의 간선 위에서 이 문턱을 처음 연구했다[^1].
-
-[Erdős–Selfridge 정리](erdos-selfridge-theorem.md)의 위험 함수는 $b$ 가 커져도 같은 방식으로 Breaker 의 전략을 준다. 연결성과 [Hamilton 순환](hamiltonian-cycles.md)의 게임에서는 문턱 편향이 [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md)의 문턱에서 계산한 값과 일치한다.
+**편향 Maker–Breaker 게임(biased Maker–Breaker game)** 은 두 사람이 번갈아 판의 원소를 차지하되 한쪽이 한 번에 더 많이 가져가는 게임이다. 완전 그래프의 간선을 Maker 는 한 번에 하나, Breaker 는 한 번에 $b$ 개씩 차지할 때, Maker 가 모든 정점을 잇는 연결 그래프를 차지할 수 있는지는 $b$ 의 크기에 달려 있다. 이 게임은 Maker 가 이기는 $b$ 와 Breaker 가 이기는 $b$ 를 가르는 문턱을 계산하고, 그 값을 무작위 그래프의 문턱과 비교한다.
 
 # 직관
+
+편향 Maker–Breaker 게임은 Maker 가 한 번에 원소 $1$ 개를, Breaker 가 한 번에 원소 $b$ 개를 차지하는 Maker–Breaker 게임이다. 성질마다 Maker 가 이기는 $b$ 와 Breaker 가 이기는 $b$ 를 가르는 문턱 편향(threshold bias)이 있고, V. Chvátal 과 P. Erdős 가 1978 년에 완전 그래프의 간선 위에서 이 문턱을 처음 연구했다[^1].
+
+[Erdős–Selfridge 정리](erdos-selfridge-theorem.md)의 위험 함수는 $b$ 가 커져도 같은 방식으로 Breaker 의 전략을 준다. 연결성과 [Hamilton 순환](hamiltonian-cycles.md)의 게임에서는 문턱 편향이 [Erdős–Rényi 랜덤 그래프](erdos-renyi-graphs.md)의 문턱에서 계산한 값과 일치한다.
 
 완전 그래프 $K_n$ 의 간선을 두고 Maker 는 연결된 신장 부분그래프를 만들려 한다. 한 번에 $1$ 개씩 번갈아 차지하면 Maker 가 쉽게 이긴다. Breaker 가 한 번에 $b$ 개를 차지하게 하면 $b$ 가 클수록 Breaker 에게 유리하다. Maker 가 지기 시작하는 $b$ 가 얼마인지 묻는다.
 

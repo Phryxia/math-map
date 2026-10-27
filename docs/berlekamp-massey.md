@@ -2,11 +2,13 @@
 
 # 개요
 
-**Berlekamp–Massey 알고리즘(Berlekamp–Massey algorithm)** 은 [체](fields.md) $F$ 위의 유한 수열 $s_0,\dots,s_{N-1}$ 을 만족하는 상수 계수 선형 점화식 가운데 길이가 가장 짧은 것을 $O(N^2)$ 번의 체 연산으로 찾는 알고리즘이다. 점화식을 한 항씩 늘려 가며 확인하고, 틀린 항이 나오면 앞서 틀렸던 점화식의 배수를 더해 고친다.
-
-E. Berlekamp 가 [BCH 부호](bch-codes.md)(Bose–Chaudhuri–Hocquenghem code)의 복호를 위해 만들었고, J. Massey 가 [선형 되먹임 자리이동 레지스터](linear-feedback-shift-registers.md)(linear feedback shift register, LFSR)의 합성 문제로 다시 읽어 최소 길이의 증명을 붙였다.[^1]
+**Berlekamp–Massey 알고리즘(Berlekamp–Massey algorithm)** 은 주어진 수열을 만들어 내는 가장 짧은 점화식을 찾는 알고리즘이다. 수열 $1,1,2,3,5,8,13$ 에서는 길이 $2$ 의 점화식 $s_n=s_{n-1}+s_{n-2}$ 를 짐작할 수 있지만, 항이 수백 개이고 점화식의 길이와 계수를 모를 때는 짐작으로 찾을 수 없다. Berlekamp–Massey 알고리즘은 점화식을 한 항씩 늘려 가며 확인하고, 틀린 항이 나오면 앞서 틀렸던 점화식의 배수를 더해 고쳐서 가장 짧은 점화식을 찾는다.
 
 # 직관
+
+Berlekamp–Massey 알고리즘은 [체](fields.md) $F$ 위의 유한 수열 $s_0,\dots,s_{N-1}$ 을 만족하는 상수 계수 선형 점화식 가운데 길이가 가장 짧은 것을 $O(N^2)$ 번의 체 연산으로 찾는 알고리즘이다. 점화식을 한 항씩 늘려 가며 확인하고, 틀린 항이 나오면 앞서 틀렸던 점화식의 배수를 더해 고친다.
+
+E. Berlekamp 가 [BCH 부호](bch-codes.md)(Bose–Chaudhuri–Hocquenghem code)의 복호를 위해 만들었고, J. Massey 가 [선형 되먹임 자리이동 레지스터](linear-feedback-shift-registers.md)(linear feedback shift register, LFSR)의 합성 문제로 다시 읽어 최소 길이의 증명을 붙였다.[^1]
 
 수열 $1,1,2,3,5$ 를 만족하는 가장 짧은 점화식을 찾는다. 길이 $1$ 인 점화식 $s_j=cs_{j-1}$ 은 $s_1=cs_0$ 에서 $c=1$ 이고, $s_j-s_{j-1}=0$ 은 $s_1$ 까지 맞는다. $j=2$ 에서 $s_2-s_1=1$ 이 $0$ 이 아니므로 틀린다. 이 차이 $1$ 을 **불일치(discrepancy)** 라 부른다.
 

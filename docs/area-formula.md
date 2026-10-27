@@ -2,11 +2,13 @@
 
 # 개요
 
-**면적공식(area formula)** 은 [Lipschitz 사상](lipschitz-maps.md)이 집합을 보낸 상의 크기를 Jacobi 행렬식의 적분으로 재는 등식이다. 정의역의 차원이 공역의 차원보다 작아 상이 Lebesgue 영집합일 때도 성립하고, 상의 크기를 [Hausdorff 차원](hausdorff-dimension.md) 쪽 $n$ 차원 Hausdorff 측도로 잰다.
-
-사상의 미분가능성은 가정하지 않는다. 거의 모든 점에서 미분가능하다는 [Rademacher 정리](rademacher-theorem.md)가 Jacobi 행렬식을 거의 어디서나 정의해 준다.
+**면적공식(area formula)** 은 사상이 집합을 옮긴 상의 넓이를 사상의 미분으로 계산하는 등식이다. 평면의 원판을 공간 속 곡면으로 보내는 사상처럼 차원이 낮은 곳에서 높은 곳으로 가는 사상은, 상의 3차원 부피가 $0$ 이라 부피로는 상의 넓이를 잴 수 없다. 면적공식은 상의 크기를 Hausdorff 측도로 재고, 그 값이 Jacobi 행렬식의 적분과 같음을 매끄럽지 않은 [Lipschitz 사상](lipschitz-maps.md)까지 보인다.
 
 # 직관
+
+면적공식은 Lipschitz 사상이 집합을 보낸 상의 크기를 Jacobi 행렬식의 적분으로 재는 등식이다. 정의역의 차원이 공역의 차원보다 작아 상이 Lebesgue 영집합일 때도 성립하고, 상의 크기를 [Hausdorff 차원](hausdorff-dimension.md) 쪽 $n$ 차원 Hausdorff 측도로 잰다.
+
+사상의 미분가능성은 가정하지 않는다. 거의 모든 점에서 미분가능하다는 [Rademacher 정리](rademacher-theorem.md)가 Jacobi 행렬식을 거의 어디서나 정의해 준다.
 
 치환적분 $\int\_a^b g(\varphi(x))\varphi'(x)\thinspace dx=\int\_{\varphi(a)}^{\varphi(b)}g(y)\thinspace dy$ 에서 $g=1$ 로 두면 왼쪽이 상의 길이가 된다. $\varphi(x)=x^2$ 를 $A=\lbrack -1,1\rbrack$ 에서 보고 왼쪽을 계산한다. 도함수의 절댓값을 적분하면
 

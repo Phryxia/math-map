@@ -2,11 +2,13 @@
 
 # 개요
 
-**Brown 표현 정리(Brown representability theorem)** 는 밑점을 가진 연결 [CW 복합체](cw-complexes.md)(CW complex)의 호모토피 범주에서 집합으로 가는 반변 함자가 두 공리, 곧 쐐기합 공리와 Mayer–Vietoris 공리를 만족하면 [표현 가능 함자](representable-functors.md)라는 정리다. 표현하는 공간은 호모토피 동치를 빼고 하나다.
-
-[Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)이 코호몰로지를 표현하고 분류공간이 다발의 동형류를 표현하는 것이 이 정리의 경우다. 함자가 두 공리를 만족하는지만 확인하면 표현하는 공간을 따로 만들지 않아도 존재가 보장된다.
+**Brown 표현 정리(Brown representability theorem)** 는 공간마다 집합을 주는 함자가 어떤 공간 하나로 가는 사상들로 표현되는지 판정하는 정리다. 공간 $X$ 의 1 차 정수 코호몰로지는 $X$ 에서 원 $S^1$ 으로 가는 사상을 호모토피로 묶은 집합과 같다. Brown 표현 정리는 함자가 쐐기합 공리와 Mayer–Vietoris 공리를 만족하기만 하면 이런 공간이 있음을 보여, 코호몰로지와 다발의 분류를 한 공간으로 가는 사상으로 바꾼다.
 
 # 직관
+
+Brown 표현 정리는 밑점을 가진 연결 [CW 복합체](cw-complexes.md)(CW complex)의 호모토피 범주에서 집합으로 가는 반변 함자가 두 공리, 곧 쐐기합 공리와 Mayer–Vietoris 공리를 만족하면 [표현 가능 함자](representable-functors.md)라는 정리다. 표현하는 공간은 호모토피 동치를 빼고 하나다.
+
+[Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)이 코호몰로지를 표현하고 분류공간이 다발의 동형류를 표현하는 것이 이 정리의 경우다. 함자가 두 공리를 만족하는지만 확인하면 표현하는 공간을 따로 만들지 않아도 존재가 보장된다.
 
 [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md) 문서는 $X$ 에서 $K(G,n)$ 으로 가는 사상의 호모토피류가 $H^n(X;G)$ 와 같다는 것을 보였다. 코호몰로지가 공간 하나로 가는 사상의 집합으로 적힌 것이다. 그러면 어떤 함자가 이렇게 공간 하나로 가는 사상의 집합으로 적히는지가 질문이 된다.
 

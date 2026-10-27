@@ -2,11 +2,13 @@
 
 # 개요
 
-**Bohr 집합(Bohr set)** 은 유한 Abel 군 $\mathbb Z/N$ 에서 주어진 주파수 몇 개의 파동이 모두 $1$ 에 가까운 원소의 집합이다. 주파수 집합 $R$ 과 반지름 $\rho$ 로 정하고, 크기와 덧셈 구조가 $\lvert R\rvert$ 차원의 상자처럼 행동한다.
-
-[이산 Fourier 변환](fourier.md)에서 큰 계수를 갖는 주파수들을 모으면 Bohr 집합이 나온다. [등차수열의 Roth 정리](roth-theorem-arithmetic-progressions.md)의 Bourgain 이후 상한과 [Freiman 정리](freiman-theorem.md)의 Bogolyubov 보조정리에서 등차수열 대신 쓰인다.
+**Bohr 집합(Bohr set)** 은 정해 둔 몇 개의 주파수에서 파동의 값이 모두 $1$ 에 가까운 원소들의 집합이다. $\mathbb Z/100$ 에서 $3x$ 를 $100$ 으로 나눈 나머지가 $0$ 에 가까운 $x$ 만 모으면 $0,33,34,66,67$ 과 그 근처의 원소들이 나오고, 두 원소의 합도 대개 다시 이 모양 안에 들어간다. Bohr 집합은 이렇게 등차수열처럼 덧셈에 닫혀 있는 성질을 써서, 등차수열로는 부족한 논증에서 등차수열 대신 쓰인다.
 
 # 직관
+
+Bohr 집합은 유한 Abel 군 $\mathbb Z/N$ 에서 주어진 주파수 몇 개의 파동이 모두 $1$ 에 가까운 원소의 집합이다. 주파수 집합 $R$ 과 반지름 $\rho$ 로 정하고, 크기와 덧셈 구조가 $\lvert R\rvert$ 차원의 상자처럼 행동한다.
+
+[이산 Fourier 변환](fourier.md)에서 큰 계수를 갖는 주파수들을 모으면 Bohr 집합이 나온다. [등차수열의 Roth 정리](roth-theorem-arithmetic-progressions.md)의 Bourgain 이후 상한과 [Freiman 정리](freiman-theorem.md)의 Bogolyubov 보조정리에서 등차수열 대신 쓰인다.
 
 Roth 의 밀도 증가 논법은 큰 Fourier 계수의 주파수 $r$ 하나를 보고, $e^{2\pi irx/N}$ 이 거의 변하지 않는 짧은 등차수열로 전체를 자른다. 그 등차수열의 길이가 $\sqrt N$ 정도로 줄어서 되풀이할수록 길이가 급히 작아진다.
 
