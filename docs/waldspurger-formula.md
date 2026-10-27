@@ -2,9 +2,13 @@
 
 # 개요
 
-**Waldspurger 정리(Waldspurger's theorem)** 는 $\mathrm{PGL}\_2$ 의 첨점형식의 토릭 주기의 제곱을 중심 $L$ 값과 국소 인자의 곱으로 나타내는 공식이다. [Gan–Gross–Prasad 추측](gan-gross-prasad.md)의 계수를 끝까지 내리면 쌍 $\mathrm{SO}(3)\times\mathrm{SO}(2)$ 가 남는다. $\mathrm{SO}(3)$ 는 $\mathrm{PGL}\_2$ 이고 $\mathrm{SO}(2)$ 는 토러스다. 이 경우의 GGP 는 1985 년에 증명된 Waldspurger 정리다.
+**Waldspurger 정리(Waldspurger's theorem)** 는 $\mathrm{PGL}\_2$ 의 첨점형식을 토러스 위에서 적분한 값의 제곱이 $L$ 함수의 중심값과 상수배로 같다는 공식이다. 판별식 $D$ 마다 뒤틀린 $L$ 함수 $L(1/2,f\otimes\chi_D)$ 가 $0$ 인지 알고 싶다고 하자. 반정수 무게 [모듈러 형식](modular-forms.md) $g=\sum c(n)q^n$ 의 계수 $c(\vert D\vert)$ 의 제곱이 이 값과 상수배로 같으므로, $q$ 전개에서 계수 하나를 읽으면 판정된다. 정리는 이 계수를 토릭 주기라는 적분으로 바꾸어 일반 수체의 첨점형식에서 같은 등식을 준다.
 
-$\mathrm{PGL}\_2$ 위의 첨점형식 $\pi$ 와 허수이차체 $K$ 의 지표 $\chi$ 에 대해 **토릭 주기**를 정의한다.
+# 직관
+
+[Gan–Gross–Prasad 추측](gan-gross-prasad.md)의 계수를 끝까지 내리면 쌍 $\mathrm{SO}(3)\times\mathrm{SO}(2)$ 가 남는다. $\mathrm{SO}(3)$ 는 $\mathrm{PGL}\_2$ 이고 $\mathrm{SO}(2)$ 는 토러스다. 이 경우의 GGP(Gan–Gross–Prasad) 추측은 1985 년에 증명된 Waldspurger 정리다.
+
+$\mathrm{PGL}\_2$ 위의 첨점형식 $\pi$ 와 허수이차체 $K$ 의 지표 $\chi$ 에 대해 **토릭 주기(toric period)** 를 정의한다.
 
 $$
 \mathcal P_\chi(\varphi)=\int_{\mathbb A_F^\times K^\times\backslash\thinspace\mathbb A_K^\times}\varphi(t)\thinspace\chi^{-1}(t)\thinspace dt
@@ -17,11 +21,9 @@ $$
 =\frac{1}{2}\cdot\frac{L\negthinspace\left(\tfrac12,\pi_K\times\chi\right)}{L(1,\pi,\mathrm{Ad})}\cdot\prod_v\alpha_v
 $$
 
-고전적 판본은 반정수 무게 [모듈러 형식](modular-forms.md)의 Fourier 계수 제곱이 중심 $L$ 값과 같다는 Kohnen–Zagier 공식이다. 두 판본을 잇는 것이 [Shimura 대응](shimura-correspondence.md), 곧 theta 올림이다.
+고전적 판본은 반정수 무게 모듈러 형식의 Fourier 계수 제곱이 중심 $L$ 값과 같다는 Kohnen–Zagier 공식이다. 두 판본을 잇는 것이 [Shimura 대응](shimura-correspondence.md), 곧 theta 올림이다.
 
 $L(1/2)$ 가 함수방정식의 부호 때문에 0 이 되는 경우에는 주기도 0 이 되고, 도함수와 [Heegner 점](heegner-points.md)으로 넘어간다. Waldspurger 와 Gross–Zagier 는 $\varepsilon=+1$ 과 $\varepsilon=-1$ 로 갈라진 분업 관계다.
-
-# 직관
 
 무게 $2k$ 의 새형식 $f$ 에 Shimura 대응으로 무게 $k+1/2$ 의 형식 $g=\sum c(n)q^n$ 을 붙인다. 기본판별식 $D$ 마다 $q$ 전개에서 읽어 낼 수 있는 계수 $c(|D|)$ 의 제곱이 뒤틀린 $L$ 함수의 중심값과 상수배로 같아서, $D$ 를 바꿔 가며 계수를 읽으면 중심값이 $0$ 인 $D$ 가 계수의 소멸로 판정된다.
 

@@ -2,7 +2,11 @@
 
 # 개요
 
-**Fontaine–Mazur 추측(Fontaine–Mazur conjecture)** 은 $\mathbb Q$ 의 절대 Galois 군의 $p$ 진 표현이 대수다양체에서 오는지가 소수 $p$ 자리의 국소 조건으로 정해진다는 1995 년의 추측이다.[^1] 국소 조건은 [p 진 Hodge 이론](p-adic-hodge-theory.md)이 국소 Galois 군 $G_{\mathbb Q_p}$ 의 표현에 매기는 de Rham, 반안정, 결정적이라는 등급이다.
+**Fontaine–Mazur 추측(Fontaine–Mazur conjecture)** 은 유리수체의 Galois 군의 $p$ 진 표현이 대수다양체에서 오는지를 소수 $p$ 한 자리에서 확인하는 조건으로 판정할 수 있다는 1995 년의 추측이다.[^1] 순환지표의 $p$ 진 거듭제곱 $\chi^s$ 는 $s$ 가 $p$ 진 정수를 훑는 동안 셀 수 없이 많은 표현을 주지만, 다항식으로 정의된 다양체의 코호몰로지에서 나오는 표현은 셀 수 있게 많다. 어느 $\chi^s$ 가 다양체에서 오는지 가르려면 다양체를 찾지 않고 판정하는 조건이 있어야 한다. 추측은 그 조건으로 [p 진 Hodge 이론](p-adic-hodge-theory.md)의 de Rham 조건과 유한 개 소수 밖의 비분기 조건을 내놓는다.
+
+# 직관
+
+추측이 말하는 국소 조건은 p 진 Hodge 이론이 국소 Galois 군 $G_{\mathbb Q_p}$ 의 표현에 매기는 de Rham, 반안정, 결정적이라는 등급이다.
 
 전역 표현
 
@@ -20,8 +24,6 @@ $$
 역방향은 정리다. 기하에서 온 표현은 좋은 환원을 가진 소수에서 비분기이고([Galois 표현](galois-representations.md)의 매끄러운 고유 기저변환), $p$ 자리에서는 Faltings–Tsuji 의 $C_{\mathrm{dR}}$ 비교동형이 de Rham 성을 준다. 어려운 방향은 조건에서 기하로 가는 쪽이다. 추측은 대수다양체에서 온다는 조건을 검사 가능한 두 조건으로 대체한다.
 
 $n=2$ 홀수 경우는 Kisin 과 Emerton 이 $p$ 진 국소 Langlands 와 모듈러성 올림 정리로 대체로 해결했다. 결론은 [모듈러 곡선](modular-curves.md)에서 나오는 Eichler–Shimura 표현으로 진술되고, 기하적이라는 조건이 모듈러라는 조건이 된다.
-
-# 직관
 
 $\mathbb Q$ 위의 매끄러운 사영 다양체는 유한한 자료로 주어지므로 동형을 무시하면 셀 수 있게 많고, 각각의 코호몰로지도 유한 차원이다. 기하에서 오는 표현은 전부 모아도 셀 수 있다. 연속 표현은 그렇지 않다. 순환지표 $\chi\colon G_{\mathbb Q}\to\mathbb Z_p^\times$ 의 $p$ 진 거듭제곱
 

@@ -2,15 +2,15 @@
 
 # 개요
 
-**Whittaker 모형(Whittaker model)** 은 $\mathrm{GL}\_n$ 의 표현을 상삼각 멱단군 위에서 비퇴화 지표로 변환하는 함수들의 공간으로 실현한 것이다. [Rankin–Selberg 적분](rankin-selberg.md)이 Euler 곱으로 쪼개지려면 전역 적분의 피적분함수가 자리마다의 곱으로 분해되어야 하고, 그 분해를 보장하는 것이 Whittaker 모형의 유일성이다.
+**Whittaker 모형(Whittaker model)** 은 $\mathrm{GL}\_n$ 의 표현을, 상삼각 멱단 행렬을 곱하면 정해진 지표만큼 값이 바뀌는 함수들의 공간으로 실현한 것이다. $\mathrm{GL}\_2$ 의 첨점형식은 Fourier 전개 $\sum a_nq^n$ 의 계수 수열로 적히지만, $\mathrm{GL}\_3$ 에서는 상삼각 멱단군이 가환이 아니어서 같은 전개가 수열로 끝나지 않는다. 그 자리의 계수를 수 대신 함수로 놓은 것이 Whittaker 함수다. 이 함수의 공간이 표현마다 많아야 하나이므로 [Rankin–Selberg 적분](rankin-selberg.md)이 자리마다의 곱으로 쪼개진다.
+
+# 직관
 
 $\mathrm{GL}\_n$ 의 상삼각 멱단군 $N$ 과 그 위의 비퇴화 지표 $\psi_N$ 에 대해, 표현 $\pi$ 의 Whittaker 모형은 $\pi$ 를 다음 성질을 갖는 함수공간으로 실현한 것이다.
 
 $$
 W\negthinspace\left(\begin{pmatrix}1&\ast\cr&\ddots\cr&&1\end{pmatrix}g\right)=\psi_N(n)\thinspace W(g)
 $$
-
-이 실현은 Fourier 계수를 대신한다. $\mathrm{GL}\_2$ 에서 첨점형식의 Fourier 전개 $\sum a_nq^n$ 은 $N\cong\mathbb G_a$ 가 아벨군이라 수열로 적힌다. $n\ge3$ 에서는 $N$ 이 아벨군이 아니어서 계수 자리에 수 대신 함수가 오고, 그 함수가 Whittaker 함수다.
 
 이 실현은 많아야 하나다.
 
@@ -25,8 +25,6 @@ W_\varphi(g)=\prod_vW_v(g_v)
 $$
 
 $\mathrm{GL}\_n$ 의 자기동형 $L$ 함수 이론은 이 유일성 위에 서 있고, 유일성이 없는 군에서는 같은 이론을 세우기 어렵다.
-
-# 직관
 
 $\mathrm{GL}\_2$ 의 첨점형식을 아델 위의 함수 $\varphi$ 로 보면 $N\cong\mathbb G_a$ 이므로 $N(\mathbb Q)\backslash N(\mathbb A)$ 가 콤팩트 아벨군이고 지표로 전개할 수 있다. 전개의 $\psi$ 성분이 $W_\varphi$ 다. 첨점 조건이 $\alpha=0$ 항을 없애고, 나머지 항은 $\mathrm{GL}\_1(\mathbb Q)$ 의 작용으로 한 항에서 나온다. 첨점형식이 Whittaker 함수 하나로 복원된다.
 
