@@ -2,7 +2,11 @@
 
 # 개요
 
-**Heegaard Floer 호몰로지**는 닫힌 방향 가능 3 다양체에 붙는 아벨군이다. [순간자 Floer 호몰로지](instanton-floer-homology.md)가 게이지 이론의 해 공간을 쓰는 자리에, Heegaard 도식과 곡면의 대칭곱 안의 정칙 원판을 쓴다.
+**Heegaard Floer 호몰로지(Heegaard Floer homology)** 는 닫힌 방향 가능 3 다양체에 붙는 아벨군이다. 3 구면에서 매듭 하나의 근방을 잘라 내고 비틀어 다시 붙인 공간이 또 3 구면인지 묻는 문제처럼, 3 다양체를 구별하려면 손으로 계산할 수 있는 불변량이 있어야 한다. Heegaard Floer 호몰로지는 3 다양체를 곡면 위의 곡선 두 묶음으로 그린 그림에서 정칙 원판을 세어 이 불변량을 만들고, 그 값으로 이런 수술의 결과를 판정한다.
+
+# 직관
+
+[순간자 Floer 호몰로지](instanton-floer-homology.md)가 게이지 이론의 해 공간을 쓰는 자리에, Heegaard 도식과 곡면의 대칭곱 안의 정칙 원판을 쓴다.
 
 $Y$ 의 Heegaard 도식 $(\Sigma,\boldsymbol\alpha,\boldsymbol\beta)$ 에서 $g$ 차 대칭곱 $\mathrm{Sym}^g(\Sigma)$ 와 두 Lagrange 원환면 $\mathbb T\_\alpha,\mathbb T\_\beta$ 를 만들고, 그 둘의 Lagrange Floer 호몰로지를 센다. 결과는 $\mathrm{spin}^c$ 구조마다 갈라진 네 가지 군이다.
 
@@ -12,9 +16,7 @@ $$
 
 순간자 판본과 달리 정의가 조합적으로 계산 가능하고, [Dehn 수술](dehn-surgery.md)에 대한 완전열이 명시적이다. 유리 호몰로지 구면에서 $\mathrm{HF}^+$ 의 꼬리에서 읽는 정수 $d(Y)$ 가 **$d$ 불변량**이고, 수술로 얻는 다양체에 부등식을 준다.
 
-# 직관
-
-3 다양체 $Y$ 의 불변량을 [Morse 이론](morse-theory.md)으로 만들려 한다. [순간자 Floer 호몰로지](instanton-floer-homology.md)는 접속 공간 위의 Chern–Simons 범함수를 Morse 함수로 보고 임계점과 순간자를 센다. 해 공간이 무한차원이라 횡단성과 compactification 을 손으로 다뤄야 한다.
+3 다양체 $Y$ 의 불변량을 [Morse 이론](morse-theory.md)으로 만들려 한다. 순간자 Floer 호몰로지는 접속 공간 위의 Chern–Simons 범함수를 Morse 함수로 보고 임계점과 순간자를 센다. 해 공간이 무한차원이라 횡단성과 compactification 을 손으로 다뤄야 한다.
 
 유한차원에서 같은 일을 하려면 $Y$ 를 유한한 자료로 적어야 한다. Heegaard 분해가 그 자료다. $Y$ 를 두 손잡이체로 자르면 경계가 종수 $g$ 의 곡면 $\Sigma$ 이고, 각 손잡이체는 $\Sigma$ 위의 곡선 $g$ 개가 어디서 원판을 경계로 하는지로 정해진다. 그 두 벌의 곡선이 $\boldsymbol\alpha=\lbrace\alpha_1,\dots,\alpha_g\rbrace$ 와 $\boldsymbol\beta=\lbrace\beta_1,\dots,\beta_g\rbrace$ 다.
 
@@ -91,7 +93,7 @@ $$
 
 증명의 요지는 세 도식을 한 곡면 위에 겹쳐 놓는 것이다. 세 번째 곡선 벌 $\boldsymbol\gamma$ 를 더하면 사슬사상이 삼각형의 정칙 사각형을 세어 정의되고, 삼각형이 네 번째 곡선 벌과 맺는 관계가 완전성을 준다.
 
-[순간자 Floer 호몰로지](instanton-floer-homology.md)의 수술 완전 삼각형과 같은 모양이고, 여기서는 사상이 조합적으로 적힌다. 이 완전열로 [Dehn 수술](dehn-surgery.md) 도형에서 불변량을 귀납으로 계산한다.
+순간자 Floer 호몰로지의 수술 완전 삼각형과 같은 모양이고, 여기서는 사상이 조합적으로 적힌다. 이 완전열로 [Dehn 수술](dehn-surgery.md) 도형에서 불변량을 귀납으로 계산한다.
 
 ## d 불변량의 수술 부등식
 
@@ -127,7 +129,7 @@ $\mathrm{spin}^c$ 분해와 $d$ 불변량, 수술 완전 삼각형이 양쪽에�
 
 - **수술 분류.** 위 $d$ 불변량 부등식으로 렌즈 공간을 주는 수술의 목록을 좁힌다. $S^3_p(K)$ 가 렌즈 공간이 되는 $(K,p)$ 가 원환면 매듭과 Berge 목록에 들어간다는 결과의 증명에 쓰인다.
 
-- **매듭의 종수.** 매듭 Floer 호몰로지의 필터 길이가 매듭의 Seifert 종수와 같다. 종수를 아래에서 재는 고전적 방법(Alexander 다항식의 차수)보다 강하고, [매듭 불변량](knot-invariants.md)의 slice 종수에도 하한을 준다.
+- **매듭의 종수.** 매듭 Floer 호몰로지의 필터 길이가 매듭의 Seifert 종수와 같다. 종수를 아래에서 재는 고전적 방법([Alexander 다항식](alexander-polynomial.md)의 차수)보다 강하고, [매듭 불변량](knot-invariants.md)의 slice 종수에도 하한을 준다.
 
 - **접촉 구조.** 접촉 3 다양체마다 $\widehat{\mathrm{HF}}$ 의 원소 하나가 정해지고, 그것이 $0$ 이 아닌 것이 접촉 구조가 채울 수 있음의 필요조건이다. 접촉 구조의 분류에 이 원소를 쓴다.
 

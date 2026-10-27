@@ -10,9 +10,11 @@ $$
 
 이다. $x\in\mathbb R^n$ 은 위치, $t\ge 0$ 은 시간, $\kappa\gt 0$ 은 확산 계수이고 $\Delta=\sum_i\partial_{x_i}^2$ 는 [Laplace 연산자](laplace-operator.md)다. $u$ 는 온도나 물질의 농도이고, 방정식은 각 점의 값이 주변 평균과의 차이에 비례하는 속도로 그 평균 쪽으로 움직인다는 것을 말한다.
 
-$\mathbb R^n$ 에서의 해는 초기값에 Gauss 함수 모양의 열핵을 [합성곱](convolution.md)한 것이다. 열핵은 분산이 $2\kappa t$ 인 [정규분포](normal-distribution.md)의 밀도이고, 이 사실이 열방정식과 [Brown 운동](brownian-motion.md)을 잇는다.
+쇠막대의 한 점을 불에 대었다 떼면 뜨거운 부분이 시간이 지나며 양옆으로 퍼지고 막대 전체의 온도가 고르게 된다. 열방정식은 이 퍼짐을 적어, 처음 온도 분포에서 이후의 온도를 계산하게 한다.
 
 # 직관
+
+$\mathbb R^n$ 에서의 해는 초기값에 Gauss 함수 모양의 열핵을 [합성곱](convolution.md)한 것이다. 열핵은 분산이 $2\kappa t$ 인 [정규분포](normal-distribution.md)의 밀도이고, 이 사실이 열방정식과 [Brown 운동](brownian-motion.md)을 잇는다.
 
 막대를 간격 $h$ 인 점 $x_i=ih$ 로 나누고 각 점의 온도를 $u_i$ 라 한다. 짧은 시간 $\tau$ 동안 각 점은 양옆과 열을 주고받고, 받는 양은 이웃과의 온도 차에 비례한다. 그러면
 
