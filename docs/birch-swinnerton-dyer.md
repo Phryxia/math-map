@@ -2,7 +2,11 @@
 
 # 개요
 
-**Birch–Swinnerton-Dyer 추측(Birch–Swinnerton-Dyer conjecture, BSD)** 은 [타원곡선](elliptic-curves.md) $E/\mathbb Q$ 의 $L$ 함수가 $s=1$ 에서 소멸하는 차수가 Mordell–Weil 군의 계수와 같다고 주장한다.
+**Birch–Swinnerton-Dyer 추측(Birch–Swinnerton-Dyer conjecture, BSD)** 은 [타원곡선](elliptic-curves.md) 위 유리점이 얼마나 많은지를 소수마다 센 점의 개수로 알 수 있다고 주장하는 추측이다. 예로 곡선 $y^2=x^3-2$ 에는 유리점 $(3,5)$ 에서 할선과 접선을 거듭 그어 얻는 유리점이 무한히 많고, $y^2=x^3-x$ 의 유리점은 $y=0$ 인 세 점과 무한원점뿐이다. 이 추측은 소수 $p$ 마다 나머지 계산으로 곡선 위의 점을 세어 함수 하나로 모으고, 그 함수가 $s=1$ 에서 $0$ 이 되는 차수가 유리점 전체를 만드는 데 필요한 독립인 점의 개수라고 예측한다.
+
+# 직관
+
+약한 형태의 식은 다음과 같다. 좌변은 $L(E,s)$ 의 $s=1$ 에서의 소멸 차수이고 우변은 Mordell–Weil 군 $E(\mathbb Q)$ 의 계수다.
 
 $$
 \mathrm{ord}\_{s=1}L(E,s)\thickspace=\thickspace\mathrm{rank}\thinspace E(\mathbb Q)
@@ -17,8 +21,6 @@ $$
 를 관측했다. 좌변은 [유한체](finite-fields.md) 위의 점 세기이고 우변의 $r$ 은 $E(\mathbb Q)$ 의 계수다. 이 곱을 정돈한 것이 [Dirichlet L 함수](dirichlet-l-functions.md)와 같은 꼴의 $L(E,s)$ 이고, $\log X$ 의 거듭제곱이 $s=1$ 에서의 소멸 차수로 번역된다.
 
 위 등식이 약한 BSD 이며 밀레니엄 문제의 하나다. 강한 형태는 선행계수까지 명시해 $\char35{}\text{Ш}$ 를 포함한 공식으로 쓴다.
-
-# 직관
 
 $P\in E(\mathbb Q)$ 가 무한위수 점이면 $P,2P,3P,\dots$ 가 모두 다르고, $\bmod\ p$ 환원이 $E(\mathbb F_p)$ 안에 많은 점을 만든다. $E(\mathbb F_p)$ 가 유한군이라 언젠가 겹치지만 겹치는 시점이 늦어질수록 $N_p=\char35{}E(\mathbb F_p)$ 가 커지고, 순위가 클수록 그 압력이 세다. 이 발견법이 BSD 추측의 원래 동기였고, 그것을 정리로 바꾸는 논증은 나와 있지 않다[^1].
 

@@ -2,7 +2,11 @@
 
 # 개요
 
-**Arthur 매개변수(Arthur parameter)** 는 L 매개변수에 $\mathrm{SL}\_2$ 를 하나 더 붙여 비템퍼드 표현까지 분류하는 매개변수다.
+**Arthur 매개변수(Arthur parameter)** 는 L 매개변수에 $\mathrm{SL}\_2$ 를 하나 더 붙여 비템퍼드 표현까지 분류하는 매개변수다. 예로 $\mathrm{GL}\_2$ 의 자명 표현은 자기동형 스펙트럼에 나타나지만 Satake 매개변수의 절댓값이 $1$ 이 아니어서 L 매개변수로 적히지 않는다. Arthur 매개변수는 둘째 $\mathrm{SL}\_2$ 의 표현으로 그 어긋남을 적어 이런 표현에도 매개변수를 주고, 각 표현이 이산 스펙트럼에 몇 번 나타나는지를 계산한다.
+
+# 직관
+
+Arthur 매개변수는 다음 꼴의 준동형이다.
 
 $$
 \psi:\ W_F\times\mathrm{SL}\_2(\mathbb C)\times\mathrm{SL}\_2(\mathbb C)\longrightarrow{}^LG
@@ -17,8 +21,6 @@ m(\pi)=\bigl|\lbrace\text{국소 지표의 곱이 }\psi\text{ 의 지표와 맞�
 $$
 
 [Langlands 강령](langlands-program.md)이 어떤 표현이 존재하는지를 예측한다면 Arthur 의 분류는 몇 개 있는지까지 답한다.
-
-# 직관
 
 Ramanujan 추측은 $\mathrm{GL}\_n$ 의 첨점 표현이 템퍼드라고, 곧 Satake 매개변수의 절댓값이 1 이라고 예측한다. 자기동형 스펙트럼 전체에는 템퍼드가 아닌 것이 있다. $\mathrm{GL}\_2$ 의 자명 표현은 잔여 스펙트럼에 살고 Satake 매개변수가 $\lbrace q^{1/2},q^{-1/2}\rbrace$ 라 절댓값이 1 이 아니다.
 

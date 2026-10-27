@@ -2,6 +2,12 @@
 
 # 개요
 
+**부울 함수의 Fourier 해석(Fourier analysis of Boolean functions)** 은 $\pm 1$ 값을 받는 변수 $n$ 개의 함수를 변수들의 곱의 합으로 전개해, 함수의 성질을 전개 계수로 계산하는 이론이다. 예로 투표자 $n$ 명의 찬반으로 결과를 정하는 다수결에서, 표 몇 개가 무작위로 뒤집힐 때 결과가 바뀔 확률을 묻는다. 이 확률은 전개 계수의 제곱에 항의 차수별 가중치를 곱해 더한 식으로 적히므로, 계수가 어느 차수에 몰렸는지로 계산된다.
+
+# 직관
+
+$f\colon\lbrace-1,1\rbrace^n\to\lbrace-1,1\rbrace$ 를 군 $(\mathbb Z/2)^n$ 의 지표로 전개한다. 이 군의 지표는 부분집합 $S\subseteq[n]$ 마다 하나씩 있다.
+
 **부울 함수의 Fourier 해석(Fourier analysis of Boolean functions)** 은 $f\colon\lbrace-1,1\rbrace^n\to\lbrace-1,1\rbrace$ 를 군 $(\mathbb Z/2)^n$ 의 지표로 전개해 조합적 성질을 계수로 읽는 이론이다. 이 군의 지표는 부분집합 $S\subseteq[n]$ 마다 하나씩 있다.
 
 $$
@@ -13,8 +19,6 @@ $$
 [유한 확률 공간](probability.md)이 필요하다. 정의역에 균등분포를 주면 $\lbrace\chi_S\rbrace$ 가 정규직교기저가 되고 Parseval 항등식이 $\sum_S\hat f(S)^2=1$ 이 된다. $\hat f(S)^2$ 가 확률분포가 되어 무게가 어느 준위에 실려 있는지를 물을 수 있다.
 
 [PCP 정리](pcp-theorem.md)(probabilistically checkable proof)의 검증자를 설계할 때 필요한 **독재자 검사**, 곧 함수가 한 좌표에만 의존하는지를 상수 개의 질의로 판정하는 절차의 완전성과 건전성이 잡음 안정성의 부등식으로 계산된다. [유일게임 추측](unique-games.md) 아래에서 최대 절단의 최적 근사비를 정하는 **Majority is Stablest** 정리가 이 계통의 정점이다.
-
-# 직관
 
 $x_i\in\lbrace-1,1\rbrace$ 이므로 $x_i^2=1$ 이고, 어떤 다변수 다항식도 각 변수의 차수를 $1$ 이하로 줄일 수 있다. 그런 다항식의 자유도가 $2^n$ 이고 함수도 $2^n$ 개 점에서의 값으로 결정되므로 모든 부울 함수가 중복차수 $1$ 의 다항식으로 유일하게 표현된다. 독재자는 준위 $1$ 에 무게를 전부 싣고 XOR 은 준위 $n$ 에 전부 실어, 무게가 낮은 준위에 몰리면 함수가 매끄럽고 높은 준위에 몰리면 요동친다.
 

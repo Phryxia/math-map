@@ -2,7 +2,9 @@
 
 # 개요
 
-**Borel–Weil–Bott 정리(Borel–Weil–Bott theorem)** 는 [깃발다양체](flag-varieties.md) $G/B$ 위 직선다발의 [코호몰로지](cohomology.md)를 기약표현으로 계산한다.
+**Borel–Weil–Bott 정리(Borel–Weil–Bott theorem)** 는 [깃발다양체](flag-varieties.md) $G/B$ 위 직선다발의 [코호몰로지](cohomology.md)를 기약표현으로 계산하는 정리다. 예로 $\mathrm{SL}\_2(\mathbb C)$ 의 기약표현은 두 변수의 $n$ 차 동차다항식 전체가 이루는 공간이고, 이 공간은 사영직선 $\mathbb P^1$ 위 $n$ 차 직선다발의 대역 단면 전체와 같다. 이 정리는 반단순군의 기약표현을 하나의 다양체 위 직선다발로 만들고, 표현의 차원과 지표를 그 다발의 코호몰로지로 계산한다.
+
+# 직관
 
 [Weyl 지표 공식](weyl-character-formula.md)은 콤팩트 [Lie 군](lie-groups.md)의 기약표현을 최고무게로 분류하고 지표를 닫힌 식으로 주지만, 그 벡터공간을 만드는 방법은 주지 않는다. Borel–Weil 정리의 답은 기하적이다. $G$ 를 복소 반단순군, $B$ 를 Borel 부분군이라 하자. 지배적 무게 $\lambda$ 는 $B$ 의 일차원 표현을 주고, 그것으로 $G/B$ 위에 직선다발 $\mathcal L_\lambda$ 를 꼬아 만들면
 
@@ -13,8 +15,6 @@ $$
 가 $G$ 가군으로 성립한다. 차원 계산은 [Riemann–Roch](riemann-roch.md) 유형의 코호몰로지 계산이 된다.
 
 Bott 가 1957 년에 $\lambda$ 가 지배적이지 않은 경우를 답했다[^1]. 코호몰로지가 전부 사라지거나, 정확히 한 차수에서만 살아남되 그 차수와 나타나는 표현이 $\lambda$ 를 $\rho$ 이동한 Weyl 군 작용으로 결정된다. 지표 공식의 $\rho$ 이동은 계산 편의가 아니라 코호몰로지 차수를 세는 기하적 양이다.
-
-# 직관
 
 $G$ 의 기약표현 $V_\lambda$ 안에서 최고무게 벡터 $v_\lambda$ 는 상수배를 빼면 유일하다. $\mathbb P(V_\lambda)$ 에서 점 $\lbrack v_\lambda\rbrack$ 의 $G$ 궤도를 보면 안정자가 Borel 부분군 $B$ 이고 궤도가 $G/B$ 다. 표현마다 다른 다양체가 나오는 것이 아니라 $\lambda$ 에 무관한 하나의 다양체가 나오고, 표현의 정보는 그 위의 직선다발로 옮겨간다.
 
