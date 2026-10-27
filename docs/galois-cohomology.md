@@ -2,11 +2,13 @@
 
 # 개요
 
-**Galois 코호몰로지(Galois cohomology)** 는 체 $K$ 의 절대 Galois 군 $G_K=\mathrm{Gal}(K^{\mathrm{sep}}/K)$ 와 그 군이 작용하는 가환군 $A$ 에 대한 [군 코호몰로지](group-cohomology.md) $H^n(K,A)=H^n(G_K,A)$ 다. 코사슬을 연속 함수로 제한해 정의한다.
-
-$A=\mu_n$ 에서 차수 $1$ 이 [Kummer 이론](kummer-theory.md)의 군 $K^{\times}/(K^{\times})^{n}$ 이 되고, 차수 $2$ 가 [Brauer 군](brauer-groups.md)의 $n$ 비틀림이 된다. 비가환 계수의 차수 $1$ 은 $K$ 위의 대수적 대상의 형식(form)을 분류한다.
+**Galois 코호몰로지(Galois cohomology)** 는 체의 대칭이 이루는 군이 다른 대상에 작용하는 방식을 코호몰로지로 계산해, 그 체 위에서 방정식이 풀리는지를 정하는 도구다. 유리수 위에서 $x^2=2$ 는 해가 없지만 실수 위에서는 해가 있고, 유리수 가운데 어느 수에 제곱근이 있는지는 $\mathbb Q^\times$ 를 제곱수로 나눈 군이 기록한다. Galois 코호몰로지는 이 군을 1 차 코호몰로지로 얻고, 같은 방법으로 2 차에서 나눗셈 대수를, 비가환 계수에서 형식의 분류를 계산한다.
 
 # 직관
+
+Galois 코호몰로지는 체 $K$ 의 절대 Galois 군 $G_K=\mathrm{Gal}(K^{\mathrm{sep}}/K)$ 와 그 군이 작용하는 가환군 $A$ 에 대한 [군 코호몰로지](group-cohomology.md) $H^n(K,A)=H^n(G_K,A)$ 다. 코사슬을 연속 함수로 제한해 정의한다.
+
+$A=\mu_n$ 에서 차수 $1$ 이 [Kummer 이론](kummer-theory.md)의 군 $K^{\times}/(K^{\times})^{n}$ 이 되고, 차수 $2$ 가 [Brauer 군](brauer-groups.md)의 $n$ 비틀림이 된다. 비가환 계수의 차수 $1$ 은 $K$ 위의 대수적 대상의 형식(form)을 분류한다.
 
 Kummer 이론은 $1$ 의 원시 $n$ 제곱근을 포함하는 체 $K$ 에서 지수 $n$ 아벨 확대를 $K^{\times}/(K^{\times})^{n}$ 의 부분군으로 분류한다. $K=\mathbb Q(i)$, $n=2$ 에서 제곱류 $a$ 마다 확대 $K(\sqrt a)$ 가 하나씩 있고, 확대 $L$ 하나마다 Galois 군 $\mathrm{Gal}(L/K)$ 가 따로 있다. 모든 $a$ 를 한 군으로 다루려면 $\sqrt a$ 를 전부 포함하는 체가 있어야 하고, 그런 체는 $K$ 의 유한 확대가 아니다.
 

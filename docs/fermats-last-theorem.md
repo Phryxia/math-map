@@ -2,11 +2,13 @@
 
 # 개요
 
-**Fermat 마지막 정리(Fermat's Last Theorem)** 는 $n\ge3$ 이면 $x^n+y^n=z^n$ 을 만족하는 양의 정수 $x,y,z$ 가 없다는 정리다. Fermat 이 1637 년 무렵 Diophantus 의 *Arithmetica* 여백에 증명 없이 적었고, Wiles 가 1995 년에 Taylor 와 함께 증명을 완성했다.[^1][^2]
-
-증명은 두 방법으로 나뉜다. 19 세기의 Kummer 는 좌변을 [원분체](cyclotomic-fields.md)에서 인수분해해 지수가 정칙 소수인 경우를 증명했다. 20 세기의 증명은 반례 하나에서 [타원곡선](elliptic-curves.md)을 만들고, 그 곡선의 mod $p$ [Galois 표현](galois-representations.md)이 레벨 $2$ 무게 $2$ 의 고유형식에서 와야 하는데 그런 형식이 없다는 모순을 이끈다.
+**Fermat 마지막 정리(Fermat's Last Theorem)** 는 $n\ge3$ 이면 $x^n+y^n=z^n$ 을 만족하는 양의 정수 $x,y,z$ 가 없다는 정리다. $n=2$ 이면 $3^2+4^2=5^2$ 처럼 해가 끝없이 많지만, $n=3$ 이면 두 세제곱수의 합이 다시 세제곱수가 되는 일이 없다. 증명은 반례가 있다고 가정해 그 반례로 [타원곡선](elliptic-curves.md)을 만들고, 그런 곡선이 있을 수 없음을 모듈러 형식으로 보여 모순을 이끈다.
 
 # 직관
+
+Fermat 마지막 정리는 $n\ge3$ 이면 $x^n+y^n=z^n$ 을 만족하는 양의 정수 $x,y,z$ 가 없다는 정리다. Fermat 이 1637 년 무렵 Diophantus 의 *Arithmetica* 여백에 증명 없이 적었고, Wiles 가 1995 년에 Taylor 와 함께 증명을 완성했다.[^1][^2]
+
+증명은 두 방법으로 나뉜다. 19 세기의 Kummer 는 좌변을 [원분체](cyclotomic-fields.md)에서 인수분해해 지수가 정칙 소수인 경우를 증명했다. 20 세기의 증명은 반례 하나에서 타원곡선을 만들고, 그 곡선의 mod $p$ [Galois 표현](galois-representations.md)이 레벨 $2$ 무게 $2$ 의 고유형식에서 와야 하는데 그런 형식이 없다는 모순을 이끈다.
 
 $n=2$ 이면 해가 무한히 많다. $3^2+4^2=5^2$, $5^2+12^2=13^2$ 이고, 서로소인 해는 모두 $(m^2-k^2,\thinspace 2mk,\thinspace m^2+k^2)$ 꼴이다. $n=3$ 에서 같은 일을 하려면 $x^3+y^3=z^3$ 의 좌변을 인수분해해야 한다. 정수 안에서는 $x^3+y^3=(x+y)(x^2-xy+y^2)$ 에서 멈추고, 둘째 인수는 더 쪼개지지 않는다.
 
