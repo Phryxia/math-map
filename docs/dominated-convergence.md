@@ -2,11 +2,13 @@
 
 # 개요
 
-**지배 수렴 정리(dominated convergence theorem)** 는 [가측함수](measurable-functions.md)열 $f_n$ 이 점마다 $f$ 로 가고 적분 가능한 $g$ 하나가 모든 $n$ 에서 $\lvert f_n\rvert\le g$ 를 만족하면 $\int f_n\to\int f$ 라는 정리다. [단조 수렴 정리](monotone-convergence.md)와 달리 부호가 섞이고 오르내리는 열에 쓴다.
-
-[Riemann 적분](riemann-integral.md)에서 같은 결론을 얻으려면 [균등수렴](uniform-convergence.md)이 필요했다. 여기서는 점별 수렴과 지배함수 $g$ 로 충분하다.
+**지배 수렴 정리(dominated convergence theorem)** 는 함수열의 극한과 적분의 순서를 바꿔도 되는 조건을 주는 정리다. $[0,1]$ 위에서 구간 $(0,1/n\rbrack$ 에서만 값이 $n$ 이고 나머지에서 $0$ 인 함수 $f_n$ 은 점마다 $0$ 으로 가지만 적분은 늘 $1$ 이어서, 극한의 적분 $0$ 과 적분의 극한 $1$ 이 다르다. 지배 수렴 정리는 모든 $f_n$ 의 절댓값이 적분 가능한 함수 하나 아래에 있으면 두 값이 같음을 보인다.
 
 # 직관
+
+지배 수렴 정리는 [가측함수](measurable-functions.md)열 $f_n$ 이 점마다 $f$ 로 가고 적분 가능한 $g$ 하나가 모든 $n$ 에서 $\lvert f_n\rvert\le g$ 를 만족하면 $\int f_n\to\int f$ 라는 정리다. [단조 수렴 정리](monotone-convergence.md)와 달리 부호가 섞이고 오르내리는 열에 쓴다.
+
+[Riemann 적분](riemann-integral.md)에서 같은 결론을 얻으려면 [균등수렴](uniform-convergence.md)이 필요했다. 여기서는 점별 수렴과 지배함수 $g$ 로 충분하다.
 
 $(0,1]$ 에서 $f_n=n\thinspace\mathbf 1_{(0,1/n)}$ 을 보자. 각 점 $x$ 에서 $n$ 이 $1/x$ 를 넘으면 $f_n(x)=0$ 이므로 점마다 $0$ 으로 간다. 그런데 적분은 모든 $n$ 에서 $n\cdot(1/n)=1$ 이라 극한 함수의 적분 $0$ 과 다르다.
 

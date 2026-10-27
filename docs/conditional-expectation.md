@@ -2,11 +2,13 @@
 
 # 개요
 
-**조건부 기댓값(conditional expectation)** $E[X\mid\mathcal G]$ 는 부분 $\sigma$ 대수 $\mathcal G$ 에 담긴 정보만으로 $X$ 를 예측한 확률변수다. 정의는 두 조건이다. $\mathcal G$ 가측이고, $\mathcal G$ 의 모든 사건 위에서 $X$ 와 적분값이 같다. 존재와 거의 확실한 유일성은 [Radon–Nikodym 정리](radon-nikodym.md)에서 나온다.
-
-사건 $B$ 에 대한 초등 조건부 기댓값 $E[X\mid B]=E[X\mathbf 1_B]/P(B)$ 는 $P(B)=0$ 이면 정의되지 않는다. $\sigma$ 대수로 조건을 거는 정의는 이 경우를 포함한다. [Martingale](martingales.md)과 일반 상태공간의 [Markov 연쇄](markov-chains.md), [상측도](pushforward-measure.md) 위의 조건부 분포를 이 정의로 세운다.
+**조건부 기댓값(conditional expectation)** 은 일부 정보만 알 때 확률변수의 값을 가장 잘 예측한 값이다. 주사위 하나를 던져 나온 눈을 $X$ 라 하고 눈이 짝수인지만 알려 준다면, 짝수일 때의 예측은 $(2+4+6)/3=4$ 이고 홀수일 때는 $(1+3+5)/3=3$ 이다. 조건부 기댓값은 알려 준 정보마다 정해지는 예측을 하나의 확률변수로 묶고, 조건으로 건 사건의 확률이 $0$ 일 때까지 같은 방식으로 정의한다.
 
 # 직관
+
+조건부 기댓값 $E[X\mid\mathcal G]$ 는 부분 $\sigma$ 대수 $\mathcal G$ 에 담긴 정보만으로 $X$ 를 예측한 확률변수다. 정의는 두 조건이다. $\mathcal G$ 가측이고, $\mathcal G$ 의 모든 사건 위에서 $X$ 와 적분값이 같다. 존재와 거의 확실한 유일성은 [Radon–Nikodym 정리](radon-nikodym.md)에서 나온다.
+
+사건 $B$ 에 대한 초등 조건부 기댓값 $E[X\mid B]=E[X\mathbf 1_B]/P(B)$ 는 $P(B)=0$ 이면 정의되지 않는다. $\sigma$ 대수로 조건을 거는 정의는 이 경우를 포함한다. [Martingale](martingales.md)과 일반 상태공간의 [Markov 연쇄](markov-chains.md), [상측도](pushforward-measure.md) 위의 조건부 분포를 이 정의로 세운다.
 
 주사위 두 개를 던져 합 $S$ 를 본다. 첫 눈 $i$ 만 알려 주었을 때 $S$ 의 예측값은, 첫 눈이 $i$ 인 순서쌍 여섯 개 위에서 $S$ 를 평균한 $i+3.5$ 다. 사건 $\lbrace i=1\rbrace,\dots,\lbrace i=6\rbrace$ 이 표본공간을 여섯 조각으로 나누고, 예측값은 조각마다 상수이며 그 상수는 조각 위의 평균이다.
 

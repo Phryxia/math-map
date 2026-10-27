@@ -2,11 +2,13 @@
 
 # 개요
 
-**일방향 함수(one-way function)** 는 다항시간에 계산되지만, 무작위로 고른 입력의 함숫값이 주어졌을 때 그 값을 내는 입력을 다항시간에 찾을 확률이 무시할 만한 함수다. 대칭키 암호, [전자서명](digital-signatures.md), [약속](commitment-schemes.md), [영지식 증명](zero-knowledge-proofs.md)의 구성이 전부 이 함수의 존재를 가정한다.
-
-[이산로그](discrete-logarithm.md)의 $x\mapsto g^x \bmod p$ 가 대표적인 후보다. 일방향 함수가 존재하면 $\mathrm P\ne\mathrm{NP}$ 이므로, 존재를 증명하면 [P 대 NP 문제](p-np.md)도 풀린다.
+**일방향 함수(one-way function)** 는 계산하기는 쉽지만 결과에서 입력을 거꾸로 찾기는 어려운 함수다. 큰 소수 $p$ 와 수 $g$ 를 정해 두면 $x$ 에서 $g^x \bmod p$ 를 구하는 데는 곱셈 수백 번이면 되지만, 값만 보고 $x$ 를 하나씩 대입해 찾으려면 $p$ 번 가까이 계산해야 한다. 일방향 함수는 이런 비대칭을 확률과 계산 시간으로 정의해, 상대가 입력을 되찾지 못해야 하는 암호 방식의 안전성 근거로 쓴다.
 
 # 직관
+
+일방향 함수는 다항시간에 계산되지만, 무작위로 고른 입력의 함숫값이 주어졌을 때 그 값을 내는 입력을 다항시간에 찾을 확률이 무시할 만한 함수다. 대칭키 암호, [전자서명](digital-signatures.md), [약속](commitment-schemes.md), [영지식 증명](zero-knowledge-proofs.md)의 구성이 전부 이 함수의 존재를 가정한다.
+
+[이산로그](discrete-logarithm.md)의 $x\mapsto g^x \bmod p$ 가 대표적인 후보다. 일방향 함수가 존재하면 $\mathrm P\ne\mathrm{NP}$ 이므로, 존재를 증명하면 [P 대 NP 문제](p-np.md)도 풀린다.
 
 소수 $p$ 와 생성원 $g$ 를 정해 두고 $f(x)=g^x \bmod p$ 를 계산한다. 반복 제곱으로 $\log x$ 번 정도의 곱셈이면 끝난다. 거꾸로 $h$ 가 주어졌을 때 $g^x\equiv h$ 인 $x$ 를 찾는 알려진 방법은 $p$ 의 비트 길이에 대해 지수 시간이나 준지수 시간이 걸린다.
 
