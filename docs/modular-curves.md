@@ -2,9 +2,13 @@
 
 # 개요
 
-모듈러 곡선(modular curve)은 상반평면 $\mathbb H$ 를 합동부분군 $\Gamma$ 로 나눈 몫에 첨점을 채운 곡선이다. [모듈러 형식](modular-forms.md)은 상반평면 $\mathbb H$ 위의 함수이지만 변환 규칙 때문에 몫공간 $\Gamma\backslash\mathbb H$ 위의 대상이다. 이 몫이 **모듈러 곡선**이고 첨점을 채워 콤팩트화하면 $X_0(N)$ 이다.
+**모듈러 곡선(modular curve)** 은 상반평면 $\mathbb H$ 를 합동부분군 $\Gamma$ 로 나눈 몫에 첨점을 채운 곡선이다. 유리수 위의 [타원곡선](elliptic-curves.md) 가운데 위수 $11$ 인 유리점을 갖는 것이 있는지 묻는 문제는, 그런 곡선과 점의 쌍을 모두 모은 공간에 유리점이 있는지 묻는 문제가 된다. 모듈러 곡선이 그 공간이고, 곡선 하나하나의 문제를 이 곡선 위 유리점의 문제로 바꾼다.
 
-이 곡선은 해석적으로 [Riemann 곡면](riemann-surfaces.md)이고 대수적으로 $\mathbb Q$ 위에서 정의된 대수곡선이며, 모듈라이 해석을 갖는다. $X_0(N)$ 의 점이 [타원곡선](elliptic-curves.md)과 그 위의 위수 $N$ 순환 부분군의 쌍을 분류한다.
+# 직관
+
+[모듈러 형식](modular-forms.md)은 상반평면 $\mathbb H$ 위의 함수이지만 변환 규칙 때문에 몫공간 $\Gamma\backslash\mathbb H$ 위의 대상이다. 이 몫이 모듈러 곡선이고 첨점을 채워 콤팩트화하면 $X_0(N)$ 이다.
+
+이 곡선은 해석적으로 [Riemann 곡면](riemann-surfaces.md)이고 대수적으로 $\mathbb Q$ 위에서 정의된 대수곡선이며, 모듈라이 해석을 갖는다. $X_0(N)$ 의 점이 타원곡선과 그 위의 위수 $N$ 순환 부분군의 쌍을 분류한다.
 
 $$
 Y_0(N)=\Gamma_0(N)\backslash\mathbb H\ \longleftrightarrow\ \lbrace(E,C):C\subset E\ \text{순환},\ |C|=N\rbrace/\negthinspace\cong
@@ -17,8 +21,6 @@ g\big(X_0(N)\big)=1+\frac\mu{12}-\frac{\nu_2}4-\frac{\nu_3}3-\frac{\nu_\infty}2
 $$
 
 $\mathbb Q$ 위에서 정의된다는 사실이 Galois 작용을 가능하게 하고, 모듈러성 정리가 그 위에서 서술된다.
-
-# 직관
 
 $f\in S_2(\Gamma_0(N))$ 은 $\mathbb H$ 위의 함수이지만 $f(\gamma\tau)=(c\tau+d)^2f(\tau)$ 를 만족하므로 몫 위의 함수로 내려오지 않는다. 함수 대신 $\omega=f(\tau)\thinspace d\tau$ 를 본다. $\gamma=\begin{pmatrix}a&b\cr c&d\end{pmatrix}$ 에 대해 $d(\gamma\tau)=(c\tau+d)^{-2}d\tau$ 이므로 두 인자가 상쇄된다.
 

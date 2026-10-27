@@ -2,7 +2,11 @@
 
 # 개요
 
-**모듈러 형식(modular form)** 은 상반평면 $\mathbb H=\lbrace z:\mathrm{Im}\thinspace z\gt 0\rbrace$ 위의 [정칙함수](holomorphic-functions.md) 가운데 무한군 $\mathrm{SL}\_2(\mathbb Z)$ 의 [작용](group-actions.md)에 대해 다음 규칙으로 변하는 것이다.
+**모듈러 형식(modular form)** 은 상반평면 위의 [정칙함수](holomorphic-functions.md) 가운데 $z\mapsto(az+b)/(cz+d)$ 꼴의 변환에 대해 정해진 규칙으로 변하는 것이다. 자연수 $n$ 을 네 제곱수의 합으로 쓰는 방법의 수 $r_4(n)$ 을 모든 $n$ 에 대해 구하려면 $n$ 마다 따로 세어야 할 것 같다. 이 수들을 계수로 하는 급수가 모듈러 형식이고, 같은 무게의 모듈러 형식이 이루는 공간은 유한차원이다. 그래서 계수 몇 개만 맞추어 보면 그 급수가 다른 방식으로 만든 형식과 같다는 것이 나오고, Jacobi 의 공식 $r_4(n)=8\sum_{d\mid n,\thinspace 4\nmid d}d$ 가 모든 $n$ 에서 따라 나온다.
+
+# 직관
+
+무게 $k$ 의 모듈러 형식은 상반평면 $\mathbb H=\lbrace z:\mathrm{Im}\thinspace z\gt 0\rbrace$ 위의 정칙함수 가운데 무한군 $\mathrm{SL}\_2(\mathbb Z)$ 의 [작용](group-actions.md)에 대해 다음 규칙으로 변하는 것이다.
 
 $$
 f\Big(\frac{az+b}{cz+d}\Big)=(cz+d)^kf(z)\qquad
@@ -14,8 +18,6 @@ $$
 유한차원성이 도구가 된다. 다른 방식으로 만든 두 모듈러 형식이 같은 작은 공간에 있으면 몇 개의 계수만 맞춰 보아도 둘이 같고, 나머지 무한히 많은 계수의 항등식이 따라온다. 약수 함수의 [합성곱](convolution.md) 항등식, 분할수의 점근식, 격자의 [theta 급수](theta-series.md), [타원곡선](elliptic-curves.md)의 점 개수가 이 방식으로 연결된다.
 
 이 대칭이 $\mathrm{GL}\_2$ 자기동형 표현을 고전적으로 쓴 것이며, [Langlands 강령](langlands-program.md)에서 [Galois 표현](galois-representations.md)과 짝지어지는 쪽이다.
-
-# 직관
 
 $\mathbb C$ 의 격자 $\Lambda=\mathbb Z\omega_1+\mathbb Z\omega_2$ 에 수를 대응시키는 함수 $F(\Lambda)$ 에 크기 조정에 대한 동차성을 요구한다.
 

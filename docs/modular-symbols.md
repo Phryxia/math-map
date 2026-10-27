@@ -2,7 +2,11 @@
 
 # 개요
 
-**모듈러 기호(modular symbol)** $\lbrace\alpha,\beta\rbrace$ 는 상반평면에서 두 첨점 $\alpha,\beta$ 를 잇는 측지선이 정하는 상대 호몰로지류다. [모듈러 형식](modular-forms.md)과 [Hecke 작용소](hecke-operators.md)의 계산에서 $S_k(\Gamma_0(N))$ 의 원소는 무한급수라 손으로 다룰 수 없다. 차원을 알아도 기저를 얻는 방법, 새형식을 나열하는 방법, $L$ 값을 구하는 방법이 따로 필요하다.
+**모듈러 기호(modular symbol)** $\lbrace\alpha,\beta\rbrace$ 는 상반평면에서 두 첨점 $\alpha,\beta$ 를 잇는 측지선이 정하는 상대 호몰로지류다. 레벨 $11$ 의 무게 $2$ 첨점형식 $q\prod_n(1-q^n)^2(1-q^{11n})^2$ 의 계수는 무한곱을 전개해 하나씩 구해야 하고, 레벨이 커지면 첨점형식 공간의 기저조차 손으로 얻을 수 없다. 모듈러 기호는 첨점형식 대신 그것을 적분할 경로를 다뤄, [Hecke 작용소](hecke-operators.md)를 유한 크기의 정수 행렬로 계산하게 한다.
+
+# 직관
+
+[모듈러 형식](modular-forms.md)과 Hecke 작용소의 계산에서 $S_k(\Gamma_0(N))$ 의 원소는 무한급수라 손으로 다룰 수 없다. 차원을 알아도 기저를 얻는 방법, 새형식을 나열하는 방법, $L$ 값을 구하는 방법이 따로 필요하다.
 
 모듈러 기호는 이 질문들을 유한 차원 정수 선형대수로 바꾼다. 출발점은 [모듈러 곡선](modular-curves.md) $X_0(N)$ 의 위상이다. 무게 $2$ 의 첨점형식은 $X_0(N)$ 위의 정칙 1형식이므로 형식 대신 그것을 적분할 경로를 다룬다. 첨점을 양 끝으로 허용한 경로의 [호몰로지](homology.md)류
 
@@ -13,8 +17,6 @@ $$
 가 $S_2(\Gamma_0(N))$ 의 쌍대이고 Hecke 작용소가 이 격자 위에 정수 행렬로 작용한다.
 
 Manin 은 이 군의 완전한 유한 표현을 주었다. 생성원은 $\mathbb P^1(\mathbb Z/N)$ 의 원소로 매개되고 개수가 $[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]$ 이며 관계식은 두 줄이다. 컴퓨터가 $N$ 을 받아 $S_2(\Gamma_0(N))$ 의 Hecke 고유형식을 뽑아낼 수 있고, Cremona 의 타원곡선 표와 LMFDB(L-functions and modular forms database) 의 모듈러 형식 자료가 이 알고리즘에서 나왔다.
-
-# 직관
 
 $f\in S_2(\Gamma_0(N))$ 에 대해 $\omega_f=2\pi i\thinspace f(z)\thinspace dz$ 는 $\Gamma_0(N)$ 불변이므로 $X_0(N)$ 위의 정칙 1형식이다. 첨점 $\alpha,\beta\in\mathbb P^1(\mathbb Q)$ 를 잇는 경로를 따라 적분한
 
