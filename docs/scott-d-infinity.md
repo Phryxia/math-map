@@ -2,11 +2,13 @@
 
 # 개요
 
-**Scott 의 D∞ 모형(Scott's D-infinity model)** 은 자기 자신에서 자기 자신으로 가는 연속 사상의 공간과 동형인 비자명한 cpo(complete partial order) $D_\infty\cong\lbrack D_\infty\to D_\infty\rbrack$ 이다. Scott 이 1969 년에 역극한으로 구성했고, [Lambda calculus](lambda-calculus.md)의 첫 수학적 모형이다[^1].
-
-구성에는 [영역 이론](domain-theory.md)의 두 도구를 쓴다. 집합의 모든 함수 대신 Scott 연속 사상만 세고, 유한 단계의 근사 $D_0,D_1,D_2,\dots$ 를 매장과 사영으로 이어 극한을 잡는다.
+**Scott 의 D∞ 모형(Scott's D-infinity model)** 은 원소 하나하나가 그 자체로 자기 자신 위의 함수가 되는 수학적 공간이다. [Lambda calculus](lambda-calculus.md)의 항 $\lambda x.\thinspace xx$ 는 인자를 자기 자신에 적용하므로, 이 항에 뜻을 주려면 집합 $D$ 와 $D$ 에서 $D$ 로 가는 함수 전체가 일대일로 대응해야 하는데 원소가 둘 이상인 집합에서는 대각선 논법으로 그런 대응이 없다. Scott 은 모든 함수 대신 연속 사상만 세고 유한 단계의 근사를 이어 극한을 잡아, $D_\infty\cong\lbrack D_\infty\to D_\infty\rbrack$ 인 공간을 만들었다.
 
 # 직관
+
+Scott 의 D∞ 모형은 자기 자신에서 자기 자신으로 가는 연속 사상의 공간과 동형인 비자명한 cpo(complete partial order) $D_\infty\cong\lbrack D_\infty\to D_\infty\rbrack$ 이다. Scott 이 1969 년에 역극한으로 구성했고, Lambda calculus의 첫 수학적 모형이다[^1].
+
+구성에는 [영역 이론](domain-theory.md)의 두 도구를 쓴다. 집합의 모든 함수 대신 Scott 연속 사상만 세고, 유한 단계의 근사 $D_0,D_1,D_2,\dots$ 를 매장과 사영으로 이어 극한을 잡는다.
 
 Lambda calculus 의 항 $\lambda x.\thinspace xx$ 는 인자 $x$ 를 $x$ 자신에 적용한다. 이 항에 집합론의 뜻을 주려면 집합 $D$ 의 원소가 각자 $D$ 에서 $D$ 로 가는 함수여야 하고, $D$ 와 함수 전체의 집합 $D^D$ 사이에 일대일 대응이 있어야 한다. 원소가 둘 이상이면 $D^D$ 는 $D$ 의 부분집합 전체만큼 크므로 $D$ 보다 크고, 그런 대응은 없다.
 

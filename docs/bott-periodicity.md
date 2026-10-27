@@ -2,15 +2,17 @@
 
 # 개요
 
-**Bott 주기성(Bott periodicity)** 은 안정 유니터리군 $U$ 의 호모토피군이 주기 $2$ 로, 안정 직교군 $O$ 의 호모토피군이 주기 $8$ 로 되풀이된다는 정리다.
+**Bott 주기성(Bott periodicity)** 은 유니터리군과 직교군의 호모토피군이 행렬의 크기가 클 때 유니터리군에서는 주기 $2$, 직교군에서는 주기 $8$ 로 되풀이된다는 정리다. $U(n)$ 에서 단위벡터 하나를 고정하는 부분군이 $U(n-1)$ 이어서 $\pi_k(U(n))$ 은 $n$ 이 커지면 일정해지지만, 그 안정된 값이 $k$ 에 따라 어떻게 변하는지는 이것만으로 알 수 없다. Bott 는 [Morse 이론](morse-theory.md)으로 군 위의 측지선을 세어 $\pi_k(U)\cong\pi_{k+2}(U)$ 와 $\pi_k(O)\cong\pi_{k+8}(O)$ 를 증명했고, 그 결과 안정 유니터리군의 호모토피군은 $k$ 가 홀수일 때 $\mathbb Z$, 짝수일 때 $0$ 이다.
+
+# 직관
+
+Bott 주기성은 안정 유니터리군 $U$ 의 호모토피군이 주기 $2$ 로, 안정 직교군 $O$ 의 호모토피군이 주기 $8$ 로 되풀이된다는 정리다.
 
 $$
 \pi\_k(U)\cong\pi\_{k+2}(U),\qquad \pi\_k(O)\cong\pi\_{k+8}(O)
 $$
 
-[분류공간](classifying-spaces.md)으로 옮기면 $\Omega^2BU\simeq\mathbb Z\times BU$ 와 $\Omega^8BO\simeq\mathbb Z\times BO$ 이고, 위상 K 이론이 주기 $2$ 와 $8$ 의 일반화 코호몰로지 이론이 된다. Bott 가 1959 년에 [Morse 이론](morse-theory.md)으로 증명했다.
-
-# 직관
+[분류공간](classifying-spaces.md)으로 옮기면 $\Omega^2BU\simeq\mathbb Z\times BU$ 와 $\Omega^8BO\simeq\mathbb Z\times BO$ 이고, 위상 K 이론이 주기 $2$ 와 $8$ 의 일반화 코호몰로지 이론이 된다. Bott 가 1959 년에 Morse 이론으로 증명했다.
 
 [Lie 군](lie-groups.md) $U(n)$ 은 $\mathbb C^n$ 의 단위벡터 하나를 고정하는 부분군이 $U(n-1)$ 이고, 단위벡터 전체가 구면 $S^{2n-1}$ 이므로 올화 $U(n-1)\to U(n)\to S^{2n-1}$ 이 있다. 구면의 낮은 차수 호모토피군이 $0$ 이어서 $\pi\_k(U(n))$ 은 $n$ 이 $k$ 에 비해 크면 $n$ 에 의존하지 않는다. 그 값을 $\pi\_k(U)$ 라 쓴다.
 
