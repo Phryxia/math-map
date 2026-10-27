@@ -2,11 +2,13 @@
 
 # 개요
 
-**Schönhage–Strassen 알고리즘(Schönhage–Strassen algorithm)** 은 $N$ 비트 정수 두 개의 곱을 $O(N\log N\log\log N)$ 번의 비트 연산으로 구하는 알고리즘이다. 수를 조각으로 나눠 다항식의 계수로 보고, 그 합성곱을 환 $\mathbb Z/(2^K+1)\mathbb Z$ 위의 [고속 Fourier 변환](fft.md)으로 계산하며, 조각끼리의 곱은 같은 알고리즘을 재귀로 쓴다. A. Schönhage 와 V. Strassen 이 1971 년에 발표했다[^1].
-
-[Karatsuba 곱셈](karatsuba-multiplication.md)은 곱을 세 값으로 정하고 보간해 지수를 $\log_2 3$ 으로 낮췄다. 이 알고리즘은 값의 수를 조각 수에 비례하게 늘리고, 값을 구하는 계산과 보간을 고속 Fourier 변환으로 해서 지수를 $1$ 로 낮춘다.
+**Schönhage–Strassen 알고리즘(Schönhage–Strassen algorithm)** 은 아주 큰 정수 두 개를 빠르게 곱하는 알고리즘이다. $N$ 자리 수 둘을 손으로 하듯 곱하면 한 자리끼리의 곱이 $N^2$ 번 들고, 백만 자리 수라면 $10^{12}$ 번이다. 이 알고리즘은 수를 조각으로 나눠 다항식의 계수로 보고 계수의 합성곱을 [고속 Fourier 변환](fft.md)으로 계산해, 비트 연산 $O(N\log N\log\log N)$ 번으로 곱을 구한다.
 
 # 직관
+
+Schönhage–Strassen 알고리즘은 $N$ 비트 정수 두 개의 곱을 $O(N\log N\log\log N)$ 번의 비트 연산으로 구하는 알고리즘이다. 수를 조각으로 나눠 다항식의 계수로 보고, 그 합성곱을 환 $\mathbb Z/(2^K+1)\mathbb Z$ 위의 고속 Fourier 변환으로 계산하며, 조각끼리의 곱은 같은 알고리즘을 재귀로 쓴다. A. Schönhage 와 V. Strassen 이 1971 년에 발표했다[^1].
+
+[Karatsuba 곱셈](karatsuba-multiplication.md)은 곱을 세 값으로 정하고 보간해 지수를 $\log_2 3$ 으로 낮췄다. 이 알고리즘은 값의 수를 조각 수에 비례하게 늘리고, 값을 구하는 계산과 보간을 고속 Fourier 변환으로 해서 지수를 $1$ 로 낮춘다.
 
 $N$ 비트 정수 $x$ 를 $M$ 비트 조각 $D$ 개로 나누면 $x=\sum_i a_i2^{Mi}$ 이고, 다항식 $A(t)=\sum_i a_it^i$ 에 대해 $x=A(2^M)$ 이다. $y$ 도 같이 $B(t)$ 로 쓰면 $xy=C(2^M)$ 이고 $C=AB$ 다. $C$ 의 계수는 합성곱 $c_j=\sum_{i}a_ib_{j-i}$ 이므로 고속 Fourier 변환으로 $O(D\log D)$ 번의 연산에 구한다. 마지막에 $C(2^M)$ 을 계산하는 것은 자리 올림을 하며 더하는 일이다.
 

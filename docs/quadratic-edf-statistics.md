@@ -2,11 +2,13 @@
 
 # 개요
 
-**이차 경험분포함수 통계량(quadratic EDF statistic)** 은 경험 분포함수와 가설의 분포함수의 차이를 제곱하고 가중을 주어 적분한 적합도 검정통계량이다. 가중이 $1$ 이면 **Cramér–von Mises 통계량(Cramér–von Mises statistic)** $W^2$, 분산의 역수이면 **Anderson–Darling 통계량(Anderson–Darling statistic)** $A^2$ 이다. EDF 는 경험 분포함수(empirical distribution function)다.
-
-[Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)은 차이의 최댓값만 보고, 이 통계량들은 차이 전체를 적분한다. 귀무가설 아래의 극한분포는 [Brown 다리](brownian-bridge.md)의 제곱 적분이고, Karhunen–Loève 전개로 독립 정규 제곱의 가중합으로 쓰인다.
+**이차 경험분포함수 통계량(quadratic EDF statistic)** 은 표본에서 만든 누적 비율의 그래프와 가설의 분포함수 그래프의 차이를 구간 전체에서 제곱해 더한 검정통계량이다. 표본 $100$ 개가 $\lbrack 0,1\rbrack$ 의 균등분포에서 왔는지 검정할 때 두 그래프가 한 점에서 크게 벌어지지 않고 넓은 범위에서 조금씩 벌어지면, 차이의 최댓값만 보는 검정은 이 어긋남을 잘 잡지 못한다. 이 통계량은 차이의 제곱을 가중과 함께 적분해 넓은 범위의 어긋남을 모으고, 가중을 양 끝에서 크게 주면 꼬리의 어긋남을 더 민감하게 잡는다.
 
 # 직관
+
+이차 경험분포함수 통계량은 경험 분포함수와 가설의 분포함수의 차이를 제곱하고 가중을 주어 적분한 적합도 검정통계량이다. 가중이 $1$ 이면 **Cramér–von Mises 통계량(Cramér–von Mises statistic)** $W^2$, 분산의 역수이면 **Anderson–Darling 통계량(Anderson–Darling statistic)** $A^2$ 이다. EDF 는 경험 분포함수(empirical distribution function)다.
+
+[Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)은 차이의 최댓값만 보고, 이 통계량들은 차이 전체를 적분한다. 귀무가설 아래의 극한분포는 [Brown 다리](brownian-bridge.md)의 제곱 적분이고, Karhunen–Loève 전개로 독립 정규 제곱의 가중합으로 쓰인다.
 
 표본 $100$ 개가 $\lbrack 0,1\rbrack$ 의 균등분포에서 왔는지 검정한다. 귀무가설 아래에서 $F_n(x)$ 는 $x$ 근처에 있고 그 표준편차는 $\sqrt{x(1-x)/100}$ 이다. $x=0.5$ 에서는 $0.05$ 이고 $x=0.02$ 에서는 $0.014$ 다.
 

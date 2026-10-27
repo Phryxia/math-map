@@ -2,15 +2,17 @@
 
 # 개요
 
-**제타 정규화 행렬식(zeta-regularized determinant)** 은 고윳값이 무한히 커지는 작용소에 대해, 고윳값으로 만든 zeta 함수의 원점에서의 도함수로 정의한 행렬식이다.
+**제타 정규화 행렬식(zeta-regularized determinant)** 은 고윳값이 무한히 많고 끝없이 커지는 작용소에 행렬식을 주는 방법이다. 행렬의 행렬식은 고윳값의 곱이지만, 구간 $\lbrack 0,\pi\rbrack$ 에서 양 끝 값이 $0$ 인 함수에 $-d^2/dx^2$ 를 작용시키는 연산자의 고윳값은 $1,4,9,16,\dots$ 이어서 그 곱이 발산한다. 제타 정규화는 $\zeta_A(s)=\sum_k\lambda_k^{-s}$ 를 [해석적 연속](analytic-continuation.md)으로 $s=0$ 까지 늘려 $\exp(-\zeta_A^\prime(0))$ 을 행렬식으로 삼고, 위 예에서는 Riemann 제타 함수의 값으로부터 행렬식이 $2\pi$ 로 나온다.
+
+# 직관
+
+제타 정규화 행렬식은 고윳값이 무한히 커지는 작용소에 대해, 고윳값으로 만든 zeta 함수의 원점에서의 도함수로 정의한 행렬식이다.
 
 $$
 \zeta_A(s)=\sum_k\lambda_k^{-s},\qquad {\det}\_\zeta A=\exp\bigl(-\zeta_A^\prime(0)\bigr)
 $$
 
-고윳값의 곱 $\prod_k\lambda_k$ 는 발산하지만, $\zeta_A$ 를 $s=0$ 까지 [해석적 연속](analytic-continuation.md)으로 늘리면 유한한 값이 나온다. 콤팩트 다양체의 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)에서는 이 연속이 늘 존재하고, 미분형식의 Laplace 작용소들의 행렬식을 묶은 것이 Ray–Singer 의 해석적 비틀림(analytic torsion)이다.
-
-# 직관
+고윳값의 곱 $\prod_k\lambda_k$ 는 발산하지만, $\zeta_A$ 를 $s=0$ 까지 해석적 연속으로 늘리면 유한한 값이 나온다. 콤팩트 다양체의 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)에서는 이 연속이 늘 존재하고, 미분형식의 Laplace 작용소들의 행렬식을 묶은 것이 Ray–Singer 의 해석적 비틀림(analytic torsion)이다.
 
 $n\times n$ 양의 정부호 행렬 $A$ 의 고윳값이 $\lambda_1,\dots,\lambda_n$ 이면 행렬식은 고윳값의 곱이고, 로그를 취하면 합이다.
 
