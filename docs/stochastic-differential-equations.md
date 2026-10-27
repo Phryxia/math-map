@@ -2,7 +2,11 @@
 
 # 개요
 
-**확률미분방정식(stochastic differential equation, SDE)** 은 미지의 확률과정 $X$ 에 대한 적분 등식
+**확률미분방정식(stochastic differential equation, SDE)** 은 매 순간 무작위로 흔들리는 힘을 받는 양이 시간에 따라 어떻게 변하는지 적는 방정식이다. 예로 주가가 평균적으로 일정한 비율로 오르면서 매 순간 무작위로 흔들리면 경로가 어디서도 미분가능하지 않아, 주가를 [상미분방정식](ordinary-differential-equations.md)으로 적을 수 없다. 확률미분방정식은 흔들림을 [Brown 운동](brownian-motion.md)에 대한 적분으로 적어 이 운동을 적분 등식으로 다룬다.
+
+# 직관
+
+확률미분방정식은 미지의 확률과정 $X$ 에 대한 적분 등식
 
 $$
 X_t=X_0+\int_0^ta(s,X_s)\thinspace ds+\int_0^tb(s,X_s)\thinspace dB_s
@@ -10,13 +14,11 @@ $$
 
 이다. 둘째 적분이 [Itô 적분](ito-calculus.md)이므로 피적분함수가 미지의 과정이어도 뜻을 갖는다.
 
-[상미분방정식](ordinary-differential-equations.md)의 존재·유일성 증명이 그대로 옮겨 가서, 계수 $a$ 와 $b$ 가 Lipschitz 조건을 만족하면 해가 유일하게 존재한다. 해는 Markov 과정이고, 그 밀도는 결정론적 편미분방정식을 만족한다.
-
-# 직관
+상미분방정식의 존재·유일성 증명이 그대로 옮겨 가서, 계수 $a$ 와 $b$ 가 Lipschitz 조건을 만족하면 해가 유일하게 존재한다. 해는 Markov 과정이고, 그 밀도는 결정론적 편미분방정식을 만족한다.
 
 $x'(t)=\mu x(t)$ 의 해는 $x_0e^{\mu t}$ 다. 성장률 $\mu$ 가 시각마다 흔들리는 값이면 해는 무엇인가.
 
-성장률을 $\mu+\xi(t)$ 로 놓고 변수분리로 풀면 $\log x(t)=\log x_0+\mu t+\int_0^t\xi(s)\thinspace ds$ 다. 흔들림을 시각마다 독립이고 평균 $0$ 인 것으로 잡으면, 이 적분은 독립증분을 갖는 연속 과정이므로 [Brown 운동](brownian-motion.md) $B_t$ 다. 그러면 $\xi$ 는 $B$ 의 도함수인데 $B$ 의 경로는 어느 점에서도 미분가능하지 않다. $\xi(t)$ 라는 함수가 없으니 $(\mu+\xi)x$ 라는 식도 없다.
+성장률을 $\mu+\xi(t)$ 로 놓고 변수분리로 풀면 $\log x(t)=\log x_0+\mu t+\int_0^t\xi(s)\thinspace ds$ 다. 흔들림을 시각마다 독립이고 평균 $0$ 인 것으로 잡으면, 이 적분은 독립증분을 갖는 연속 과정이므로 Brown 운동 $B_t$ 다. 그러면 $\xi$ 는 $B$ 의 도함수인데 $B$ 의 경로는 어느 점에서도 미분가능하지 않다. $\xi(t)$ 라는 함수가 없으니 $(\mu+\xi)x$ 라는 식도 없다.
 
 $\xi$ 가 미분으로는 존재하지 않고 적분으로만 존재했으니, 방정식도 미분 대신 적분으로 쓴다. $x'=\mu x$ 를 $x(t)=x_0+\int_0^t\mu x(s)\thinspace ds$ 로 고치고 흔들림 항을 $\int_0^t\sigma x(s)\thinspace dB_s$ 로 적는다. $x$ 가 $B$ 에 adapted 이면 이 적분은 Itô 적분으로 정해진다.
 

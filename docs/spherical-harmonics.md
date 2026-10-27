@@ -2,7 +2,11 @@
 
 # 개요
 
-**구면조화함수(spherical harmonics)** 는 $\mathbb R^3$ 의 조화 동차다항식을 구면 $S^2$ 에 제한한 함수, 곧 구면 위 Laplace 작용소의 고유함수다. 구면 위의 함수를 전개하는 기저는 회전군이 정한다. $L^2(S^2)$ 에 $\mathrm{SO}(3)$ 가 작용하고, 이 [Hilbert 공간](hilbert-spaces.md)이 [기약표현](group-representations.md)들의 직교합으로 쪼개진다.
+**구면조화함수(spherical harmonics)** 는 구면 위의 함수를 원 위의 [Fourier 급수](fourier-series.md)처럼 전개하는 기저 함수들이다. 예로 지구 표면의 기온 분포를 위도와 경도의 함수로 적고, 그것을 몇 가지 기본 모양의 합으로 나타내려 한다. 구면조화함수는 회전하면 같은 차수의 것끼리만 섞이는 함수들을 차수 $\ell$ 마다 $2\ell+1$ 개씩 모아 이 전개를 준다.
+
+# 직관
+
+구면조화함수는 $\mathbb R^3$ 의 조화 동차다항식을 구면 $S^2$ 에 제한한 함수, 곧 구면 위 Laplace 작용소의 고유함수다. 구면 위의 함수를 전개하는 기저는 회전군이 정한다. $L^2(S^2)$ 에 $\mathrm{SO}(3)$ 가 작용하고, 이 [Hilbert 공간](hilbert-spaces.md)이 [기약표현](group-representations.md)들의 직교합으로 쪼개진다.
 
 $$
 L^2(S^2)=\widehat{\bigoplus_{\ell\ge0}}\ \mathcal H_\ell,\qquad \dim\mathcal H_\ell=2\ell+1
@@ -11,8 +15,6 @@ $$
 $\mathcal H_\ell$ 의 원소가 차수 $\ell$ 의 **구면조화함수**다. 각 $\mathcal H_\ell$ 은 $\mathrm{SO}(3)$ 의 기약표현이고 $\ell$ 마다 하나씩 나오므로, 이 분해가 곧 회전군의 표현론이다.
 
 구면 Laplace 작용소는 회전과 교환하므로 그 고유공간이 표현의 불변 부분공간이 되고, Schur 보조정리가 기약 조각으로의 분해를 강제한다. 원에서 $\mathrm{SO}(2)$ 의 기약표현이 1 차원 문자 $e^{in\theta}$ 인 것과 같은 논리이고, 군이 비아벨이 되면서 조각의 차원이 $2\ell+1$ 로 커진다.
-
-# 직관
 
 $\mathbb R^3$ 의 $\ell$ 차 동차다항식 가운데 $\Delta p=0$ 인 것을 조화다항식이라 하고, 이것을 단위구면에 제한한 함수가 구면조화함수다. $\ell$ 차 동차다항식의 공간은 $\binom{\ell+2}2$ 차원이고, $\Delta$ 가 이를 $\ell-2$ 차 동차다항식의 공간으로 보낸다. 이 사상이 전사이므로
 
@@ -66,7 +68,7 @@ $\Delta_{S^2}$ 의 $-\ell(\ell+1)$ 고유공간이 $\mathcal H_\ell$ 이고, 고
 | 대칭군 | 아벨군 $\mathrm{SO}(2)$ | 비아벨군 $\mathrm{SO}(3)$ |
 | 기약표현 | 1 차원인 $e^{in\theta}$ | $2\ell+1$ 차원인 $\mathcal H_\ell$ |
 | Laplace 고윳값 | $-n^2$ | $-\ell(\ell+1)$ |
-| 전개 | [Fourier 급수](fourier-series.md) | 구면조화 전개 |
+| 전개 | Fourier 급수 | 구면조화 전개 |
 
 아벨군에서는 기약표현이 모두 1 차원이라 주파수마다 함수가 하나씩이다. 비아벨군에서는 같은 고윳값을 공유하는 함수가 여럿 묶이고 그 묶음이 표현의 단위다.
 
