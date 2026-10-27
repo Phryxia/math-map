@@ -2,11 +2,13 @@
 
 # 개요
 
-**Chabauty–Kim 방법(Chabauty–Kim method)** 은 [Chabauty 방법](chabauty-method.md)에서 Jacobi 다양체 대신 곡선의 단일값 기본군을 써서 곡선의 유리점을 유한집합에 가두는 방법이다. Chabauty 방법은 [Jacobi 다양체](jacobian-variety.md)의 계수 $r$ 이 종수 $g$ 보다 작을 때 곡선의 유리점을 $p$ 진 적분의 영점으로 가둔다. $r\ge g$ 이면 쓸 수 있는 적분이 없어진다.
-
-기본군의 하강 중심열을 따라 몫을 깊이 $n$ 까지 취하면 자리마다 조건이 늘어나고, 깊이 $2$ 에서는 $r\lt g+s-1$ 에서 유리점이 유한집합에 갇힌다. $s$ 는 Jacobi 다양체의 Néron–Severi 군의 계수다.
+**Chabauty–Kim 방법(Chabauty–Kim method)** 은 곡선 위의 유리점을 $p$ 진 함수의 영점 안에 가둬 유리점이 유한 개임을 보이고 그 점들을 찾는 방법이다. 종수 $3$ 인 곡선 $X\_s(13)$ 은 [Jacobi 다양체](jacobian-variety.md)의 계수가 $3$ 이어서, 계수가 종수보다 작아야 쓸 수 있는 [Chabauty 방법](chabauty-method.md)으로는 유리점을 가둘 수 없다. Chabauty–Kim 방법은 Jacobi 다양체 대신 곡선의 단일값 기본군을 깊이 $2$ 까지 써서 계수가 종수 이상인 곡선까지 다루고, 이 곡선의 유리점을 모두 결정한다.
 
 # 직관
+
+Chabauty–Kim 방법은 Chabauty 방법에서 Jacobi 다양체 대신 곡선의 단일값 기본군을 써서 곡선의 유리점을 유한집합에 가두는 방법이다. Chabauty 방법은 Jacobi 다양체의 계수 $r$ 이 종수 $g$ 보다 작을 때 곡선의 유리점을 $p$ 진 적분의 영점으로 가둔다. $r\ge g$ 이면 쓸 수 있는 적분이 없어진다.
+
+기본군의 하강 중심열을 따라 몫을 깊이 $n$ 까지 취하면 자리마다 조건이 늘어나고, 깊이 $2$ 에서는 $r\lt g+s-1$ 에서 유리점이 유한집합에 갇힌다. $s$ 는 Jacobi 다양체의 Néron–Severi 군의 계수다.
 
 종수 $3$ 인 곡선 $X\_s(13)$ 의 계수는 $3$ 이라 Chabauty 방법의 조건 $r\lt g$ 가 깨진다. 그 방법은 $J(\mathbb Q)$ 의 $p$ 진 폐포가 $J(\mathbb Q_p)$ 안에서 차원 $r$ 이라는 것만 쓰고, 차원 $g$ 인 공간 안의 차원 $r$ 부분군에 소멸하는 정칙 $1$ 형식은 $r\lt g$ 일 때만 있다. Jacobi 다양체는 곡선의 기본군에서 아벨 몫만 남긴 것이므로, 아벨 몫에서 나오는 정보를 다 쓰면 거기서 멈춘다.
 
