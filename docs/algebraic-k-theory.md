@@ -2,7 +2,11 @@
 
 # 개요
 
-**대수적 K 이론(algebraic K-theory)** 은 환 $R$ 에 아벨군의 열 $K_0(R),K_1(R),K_2(R),\dots$ 을 붙이는 이론이다. 낮은 차수의 뜻은 고전적이다.
+**대수적 K 이론(algebraic K-theory)** 은 환 위의 가군과 가역행렬에서 아벨군을 뽑아 그 환의 불변량으로 삼는 이론이다. 정수 성분의 가역행렬을 행 연산으로 단순하게 만들면, 다른 것은 모두 지워지고 행렬식의 부호 $\pm1$ 만 끝까지 남는다. 대수적 K 이론은 이렇게 남는 것을 군 $K_1$ 로 모으고, 같은 방식으로 만든 군 $K_0,K_2,K_3,\dots$ 를 계산해 환의 산술 정보를 얻는다.
+
+# 직관
+
+대수적 K 이론은 환 $R$ 에 아벨군의 열 $K_0(R),K_1(R),K_2(R),\dots$ 을 붙이는 이론이다. 낮은 차수의 뜻은 고전적이다.
 
 $$
 K_0(R)=\text{사영가군의 Grothendieck 군},\quad
@@ -13,8 +17,6 @@ $$
 $R=\mathbb Z$ 면 $K_0=\mathbb Z$ , $K_1=\mathbb Z/2$ , $K_2=\mathbb Z/2$ 로 모두 산술적인 양이다. 차수를 올리면 $K_3(\mathbb Z)=\mathbb Z/48$ 이고, 이 48 은 구면의 안정 [호모토피군](homotopy-groups.md)에 나타나는 수와 같다.
 
 Quillen 이 $K_n$ 을 분류공간의 호모토피군으로 정의하면서 [호몰로지](homology.md)의 기법이 들어왔고, Quillen–Lichtenbaum 정리가 $K_n(\mathbb Z)$ 를 [에탈 코호몰로지](etale-cohomology.md)로 계산 가능하게 만들면서 [Galois 표현](galois-representations.md)과 순환체의 산술이 들어왔다. 그 결과 $K_{4k}(\mathbb Z)$ 의 소멸이 [Vandiver 추측](vandiver-conjecture.md)과 동치가 된다.
-
-# 직관
 
 $K_0$ 은 사영 [가군](modules.md)이 직합에서 만드는 관계를 담고, $K_1$ 은 가군의 자기동형을 담는다. $K_2$ 는 한 단계 더 올라가, 자기동형을 기본행렬의 곱으로 적는 방식들 사이의 관계를 Steinberg 군의 핵으로 담는다. 같은 식으로 관계의 관계를 생성원과 관계로 적어 $K_3$ 을 만들려 하면 목록이 길어져 적을 수 없다.
 

@@ -2,7 +2,11 @@
 
 # 개요
 
-**Beilinson–Bernstein 국소화(Beilinson–Bernstein localization)** 는 [깃발다양체](flag-varieties.md) $X=G/B$ 위의 $\mathcal D$ [가군](modules.md) [범주](category.md)와 자명한 중심 지표를 갖는 $U(\mathfrak g)$ 가군 범주 사이의 동치다.
+**Beilinson–Bernstein 국소화(Beilinson–Bernstein localization)** 는 [Lie 대수](lie-algebras.md)의 표현을 한 기하 공간 위의 미분방정식 계로 바꾸는 대응이다. 2차 정사각행렬의 Lie 대수 $\mathfrak{sl}\_2$ 에서 그 공간은 사영직선이고, 무한차원 표현 하나가 사영직선 위의 미분방정식 계 하나가 된다. 한 표현이 어느 표현을 부분으로 포함하는지 대수 계산만으로 알기 어려울 때, 옮긴 미분방정식 계의 해가 어디서 특이해지는지를 보고 그 구조를 계산한다.
+
+# 직관
+
+Beilinson–Bernstein 국소화는 [깃발다양체](flag-varieties.md) $X=G/B$ 위의 $\mathcal D$ [가군](modules.md) [범주](category.md)와 자명한 중심 지표를 갖는 $U(\mathfrak g)$ 가군 범주 사이의 동치다.
 
 $$
 \Gamma:\ \mathrm{Mod}(\mathcal D_X)\ \rightleftarrows\ \mathrm{Mod}\bigl(U(\mathfrak g)\_{\chi_0}\bigr)\ :\mathrm{Loc}
@@ -10,9 +14,7 @@ $$
 
 전역단면 [함자](functors.md)가 동치이고 역함자는 국소화 $\mathrm{Loc}(M)=\mathcal D_X\otimes_{U(\mathfrak g)}M$ 이다.
 
-[Borel–Weil–Bott 정리](borel-weil-bott.md)는 $X$ 위 선다발 $\mathcal L_\lambda$ 의 [코호몰로지](cohomology.md)를 계산하고, 그것이 기약 표현이거나 0 이며 어느 차수에 나타나는지를 Weyl 군의 점 작용이 결정한다. 국소화 정리는 선다발 대신 모든 $\mathcal D_X$ 가군으로 이 계산을 확장한다. [Lie 대수](lie-algebras.md)의 표현론이 깃발다양체 위의 기하 문제로 번역되어 표현의 구조를 층의 지지집합과 특이점으로 읽을 수 있고, 이 번역이 Kazhdan–Lusztig 추측의 증명을 낳았다.
-
-# 직관
+[Borel–Weil–Bott 정리](borel-weil-bott.md)는 $X$ 위 선다발 $\mathcal L_\lambda$ 의 [코호몰로지](cohomology.md)를 계산하고, 그것이 기약 표현이거나 0 이며 어느 차수에 나타나는지를 Weyl 군의 점 작용이 결정한다. 국소화 정리는 선다발 대신 모든 $\mathcal D_X$ 가군으로 이 계산을 확장한다. Lie 대수의 표현론이 깃발다양체 위의 기하 문제로 번역되어 표현의 구조를 층의 지지집합과 특이점으로 읽을 수 있고, Kazhdan–Lusztig 추측이 이 방법으로 증명되었다.
 
 $G$ 가 $X=G/B$ 에 작용하므로 $\mathfrak g$ 의 원소가 $X$ 위의 벡터장을 준다. 벡터장은 1 차 미분작용소이므로 사상
 

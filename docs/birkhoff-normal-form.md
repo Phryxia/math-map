@@ -2,17 +2,19 @@
 
 # 개요
 
-**Birkhoff 정규형(Birkhoff normal form)** 은 [적분가능계](integrable-systems.md)에 작은 교란을 더한 Hamilton 함수
+**Birkhoff 정규형(Birkhoff normal form)** 은 거의 풀리는 역학계의 운동방정식을 좌표를 바꿔 풀리는 부분과 남는 작은 부분으로 가른 꼴이다. 태양 둘레를 도는 행성에 다른 행성의 인력이 조금 더해지면, 궤도의 크기가 아주 긴 시간 동안 얼마나 변하는지가 문제가 된다. Birkhoff 정규형은 좌표를 바꿔 궤도 위의 위치에 따라 흔들리는 항을 교란의 높은 차수로 밀어내고, 남은 항만으로 그 변화를 계산한다.
+
+# 직관
+
+[적분가능계](integrable-systems.md)에 작은 교란을 더한 Hamilton 함수
 
 $$
 H(I,\theta)=H\_0(I)+\varepsilon H\_1(I,\theta)
 $$
 
-를 정준변환으로 바꿔, 각 변수에 의존하는 항을 $\varepsilon$ 의 높은 차수로 밀어낸 꼴이다. $I$ 는 작용 변수, $\theta$ 는 각 변수이고 $\varepsilon$ 은 작은 양수다.
+를 본다. $I$ 는 작용 변수, $\theta$ 는 각 변수이고 $\varepsilon$ 은 작은 양수다. 정준변환으로 각 변수에 의존하는 항을 $\varepsilon$ 의 높은 차수로 밀어낸 꼴이 Birkhoff 정규형이다.
 
-각 변수 의존 항을 모두 없애지는 못한다. 공명 조건 $k\cdot\omega(I)=0$ 을 만족하는 Fourier 모드가 걸림돌이고, 남는 것이 무엇인지가 작용 변수의 장시간 거동을 정한다.
-
-# 직관
+각 변수 의존 항을 모두 없애지는 못한다. 공명 조건 $k\cdot\omega(I)=0$ 을 만족하는 Fourier 모드는 없앨 수 없고, 남는 항이 작용 변수의 장시간 거동을 정한다.
 
 적분가능계에서는 작용 변수가 상수다. 교란 $\varepsilon H\_1$ 을 더하면 $\dot I$ 가 얼마나 커지는가.
 
