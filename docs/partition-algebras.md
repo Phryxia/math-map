@@ -2,7 +2,11 @@
 
 # 개요
 
-**분할 대수(partition algebra)** $P_k(n)$ 은 대칭군 $S_n$ 이 $V^{\otimes k}$ 에 작용할 때의 중심화대수다. $V=\mathbb C^n$ 이고 $S_n$ 은 기저 $e_1,\dots,e_n$ 을 치환한다.
+**분할 대수(partition algebra)** $P_k(n)$ 은 대칭군 $S_n$ 이 $V^{\otimes k}$ 에 작용할 때의 중심화대수다. $n\times n$ 행렬 가운데 행과 열의 번호를 같은 치환으로 바꿔도 그대로인 것을 모두 찾으면 항등행렬과 모든 성분이 $1$ 인 행렬의 일차결합만 남는데, 이것이 $k=1$ 인 경우다. 분할 대수는 이런 불변 사상 하나하나를 $2k$ 개 점을 묶는 그림 하나로 적고, 사상의 곱을 그림을 이어 붙이는 계산으로 바꾼다.
+
+# 직관
+
+$V=\mathbb C^n$ 이고 $S_n$ 은 기저 $e_1,\dots,e_n$ 을 치환한다.
 
 $$
 \mathrm{End}\_{S_n}\bigl(V^{\otimes k}\bigr)=P_k(n)\qquad (n\ge 2k)
@@ -11,8 +15,6 @@ $$
 기저는 $2k$ 개 점의 집합 분할이고 차원은 [Bell 수](bell-numbers.md) $B(2k)$ 다. [Brauer 대수](brauer-algebras.md)는 $\mathrm{GL}(V)$ 를 직교군으로 줄였을 때의 중심화대수이고, 분할 대수는 직교군을 다시 치환행렬만 남기고 줄였을 때의 중심화대수다.
 
 차원이 $n$ 에 의존하지 않는다. $n\ge 2k$ 인 동안 $\mathrm{End}\_{S_n}(V^{\otimes k})$ 의 차원은 언제나 $B(2k)$ 다.
-
-# 직관
 
 $S_n$ 불변인 $M\colon V\otimes V\to V\otimes V$ 를 전부 찾는다. $M$ 을 성분으로 적으면 $M^{i_1i_2}\_{j_1j_2}$ 이고, $S_n$ 이 기저를 치환하므로 불변 조건은 모든 $\sigma\in S_n$ 에 대한 다음 등식이다.
 
