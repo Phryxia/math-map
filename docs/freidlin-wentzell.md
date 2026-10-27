@@ -2,13 +2,13 @@
 
 # 개요
 
-**Freidlin–Wentzell 이론(Freidlin–Wentzell theory)** 은 잡음의 세기가 $0$ 으로 가는 [확률미분방정식](stochastic-differential-equations.md)의 해가 결정론적 궤도에서 벗어날 확률을 작용범함수로 재는 이론이다.
+**Freidlin–Wentzell 이론(Freidlin–Wentzell theory)** 은 잡음의 세기가 $0$ 으로 가는 [확률미분방정식](stochastic-differential-equations.md)의 해가 결정론적 궤도에서 벗어날 확률을 작용범함수로 재는 이론이다. 골짜기 바닥에 놓인 공을 작은 진동이 계속 흔들면, 공은 대부분 바닥 근처에 머물지만 아주 오래 기다리면 언젠가 능선을 넘는다. Freidlin–Wentzell 이론은 공이 지날 수 있는 경로마다 비용을 매기고, 가장 싼 경로의 비용으로 능선을 넘기까지 걸리는 시간과 넘는 길을 구한다.
+
+# 직관
 
 잡음의 세기가 $0$ 으로 가는 확률미분방정식의 해는 결정론적 궤도로 수렴한다. 안정 평형에서 출발한 해도 언젠가는 평형의 끌림 영역을 벗어난다.
 
 Freidlin–Wentzell 이론은 그 벗어남의 확률과 경로를 정하는 [대편차 원리](large-deviations.md)다. 경로마다 작용범함수의 값을 매기고, 벗어나는 경로 전체에서 그 값을 최소화한 것이 지수 감쇠율이 된다.
-
-# 직관
 
 $\mathbb R^d$ 에서 잡음의 세기를 $\sqrt\varepsilon$ 으로 둔 방정식을 본다.
 
