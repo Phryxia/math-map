@@ -2,7 +2,11 @@
 
 # 개요
 
-Galois 표현의 변형환(deformation ring)은 유한체 위의 Galois 표현 $\bar\rho$ 를 들어 올린 표현들을 매개하는 완비 국소환이다. [Fontaine–Mazur 추측](fontaine-mazur.md)은 어떤 $p$ 진 [Galois 표현](galois-representations.md)이 기하에서 오는지를 국소 조건으로 판정한다. 그 진술을 정리로 바꾸는 기계가 $R=T$ 이고, 그 $R$ 쪽이 변형환이다.
+**Galois 표현의 변형환(deformation ring)** 은 유한체 위의 Galois 표현 $\bar\rho$ 를 들어 올린 표현들을 매개하는 완비 국소환이다. 행렬 성분이 $\mathbb F_p$ 인 표현 $\bar\rho$ 하나를 놓고 성분을 $\mathbb Z/p^2$, $\mathbb Z/p^3$ 으로 한 자리씩 올려 같은 성질의 표현을 만드는 방법은 여러 가지이고, 하나씩 찾으면 끝이 없다. 변형환은 그 모든 올림을 환 하나에서 나가는 준동형으로 매개해, 표현을 찾는 문제를 가환대수의 계산으로 바꾼다.
+
+# 직관
+
+[Fontaine–Mazur 추측](fontaine-mazur.md)은 어떤 $p$ 진 [Galois 표현](galois-representations.md)이 기하에서 오는지를 국소 조건으로 판정한다. 그 진술을 정리로 바꾸는 기계가 $R=T$ 이고, 그 $R$ 쪽이 변형환이다.
 
 Mazur 의 착상은[^1] [유한체](finite-fields.md) 위의 표현
 
@@ -19,8 +23,6 @@ $$
 가 $A$ 에 대해 함자적으로 성립한다. $\bar\rho$ 의 모든 올림이 $R_{\bar\rho}$ 위의 **보편 변형** 하나의 특수화이고, 표현론의 질문이 가환대수의 질문이 된다.
 
 환의 모양은 [코호몰로지](cohomology.md)가 정한다. 접공간은 $H^1(G,\mathrm{ad}\thinspace\bar\rho)$ 이고 관계식의 장애는 $H^2(G,\mathrm{ad}\thinspace\bar\rho)$ 에 산다. [군 확대](group-extensions.md)를 $H^2$ 로 분류하고 $H^1$ 로 자기동형을 재던 기계가, 여기서는 계수환을 $\mathbb Z/p^m$ 으로 한 층씩 올리는 데 쓰인다.
-
-# 직관
 
 $\bar\rho$ 를 $\mathbb Z/p^2$ 계수로 올려 행렬 성분을 $p$ 배의 보정으로 쓴다.
 

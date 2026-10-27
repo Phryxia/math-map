@@ -2,7 +2,11 @@
 
 # 개요
 
-**Weil 표현(Weil representation)** 은 심플렉틱 군의 이중덮개인 메타플렉틱 군의 유니터리 표현으로, Heisenberg 군의 기약 유니터리 표현이 유일하다는 데서 얻어진다. [theta 급수](theta-series.md)의 모듈러성은 Poisson 합 공식으로 $\theta(-1/\tau)=\sqrt{-i\tau}\thinspace\theta(\tau)$ 를 계산해 얻을 수도 있고, 이 변환을 일으키는 [군의 표현](group-representations.md)에서 얻을 수도 있다. 그 표현이 Weil 표현이다.
+**Weil 표현(Weil representation)** 은 심플렉틱 군의 이중덮개인 메타플렉틱 군의 유니터리 표현으로, Heisenberg 군의 기약 유니터리 표현이 유일하다는 데서 얻어진다. [theta 급수](theta-series.md) $\theta(\tau)=\sum_n e^{\pi in^2\tau}$ 는 $\theta(-1/\tau)=\sqrt{-i\tau}\thinspace\theta(\tau)$ 를 만족한다. 이 식에 제곱근이 들어 있어서, 변환을 군의 작용으로 보려면 제곱근의 부호까지 기억하는 2 겹 덮개 군이 있어야 한다. Weil 표현은 그 덮개 군의 표현이고, theta 급수의 모듈러성을 군론의 결과로 얻게 한다.
+
+# 직관
+
+theta 급수의 모듈러성은 Poisson 합 공식으로 $\theta(-1/\tau)=\sqrt{-i\tau}\thinspace\theta(\tau)$ 를 계산해 얻을 수도 있고, 이 변환을 일으키는 [군의 표현](group-representations.md)에서 얻을 수도 있다. 그 표현이 Weil 표현이다.
 
 심플렉틱 공간 $W$ 에서 Heisenberg 군 $H(W)$ 를 만들고 중심 지표 $\psi$ 를 고정하면, Stone–von Neumann 정리에 따라 그런 기약 유니터리 표현이 하나뿐이다. $\mathrm{Sp}(W)$ 가 $H(W)$ 에 중심을 고정하며 작용하므로 유일성으로 $\mathrm{Sp}(W)$ 의 모든 원소가 그 표현을 자기 자신으로 옮기고 사영표현이 생긴다.
 
@@ -13,8 +17,6 @@ $$
 이 사영표현은 2 겹 덮개 $\mathrm{Mp}(W)$ 로 올라가야 진짜 표현이 되며, 그것이 Weil 표현 $\omega_\psi$ 다. 2 겹이 필요하다는 데서 **반정수 무게 모듈러 형식**이 나온다. theta 급수는 $\omega_\psi$ 안의 불변 범함수가 주는 자기동형 형식이고, 모듈러성은 군론의 결과가 된다.
 
 $\mathrm{Sp}$ 안의 두 부분군이 서로의 중심화군일 때(쌍대쌍) $\omega_\psi$ 를 그 곱으로 제한하면 두 군의 표현 사이의 사전이 생기고, 이것이 **theta 대응**이다. [Shimura 대응](shimura-correspondence.md)과 [Jacquet–Langlands 대응](jacquet-langlands.md)의 여러 사례가 이 사전의 특수한 경우다.
-
-# 직관
 
 Heisenberg 군 $H(W)$ 의 기약 유니터리 표현 $\rho_\psi$ 는 중심 지표를 고정하면 유일하다. $\mathrm{Sp}(W)$ 가 $H(W)$ 에 중심을 고정하며 작용하므로 $g\in\mathrm{Sp}(W)$ 마다 $\rho_\psi\circ g$ 도 같은 중심 지표의 기약 표현이고, 유일성으로 $\rho_\psi$ 와 동형이다. 그 동형을 주는 연산자 $\omega(g)$ 를 고르면 $\rho_\psi(g\cdot h)=\omega(g)\thinspace\rho_\psi(h)\thinspace\omega(g)^{-1}$ 이 성립한다.
 

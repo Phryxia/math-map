@@ -2,7 +2,11 @@
 
 # 개요
 
-**복소 곱셈(complex multiplication)** 은 [타원곡선](elliptic-curves.md)의 자기준동형환이 $\mathbb Z$ 보다 큰 성질이고, 복소 곱셈 이론은 그런 곡선의 특수값으로 허수이차체의 아벨확대를 생성한다. [유체론](class-field-theory.md)은 수체 $K$ 의 아벨확대를 아이디얼류 자료로 분류하지만 그 확대를 생성하는 원소를 주지는 않는다. $K=\mathbb Q$ 에서는 Kronecker–Weber 정리가 모든 아벨확대를 $\zeta_n=e^{2\pi i/n}$ 로 생성한다.
+**복소 곱셈(complex multiplication)** 은 [타원곡선](elliptic-curves.md)의 자기준동형환이 $\mathbb Z$ 보다 큰 성질이고, 복소 곱셈 이론은 그런 곡선의 특수값으로 허수이차체의 아벨확대를 생성한다. 유리수체의 아벨확대는 모두 $e^{2\pi i/n}$ 같은 1 의 거듭제곱근을 붙여 얻지만, $\mathbb Q(\sqrt{-5})$ 의 아벨확대를 생성하는 데는 지수함수의 값만으로 모자란다. 복소 곱셈 이론은 그 자리에 복소 곱셈을 가진 타원곡선의 $j$ 값과 비틀림점의 좌표를 놓는다.
+
+# 직관
+
+[유체론](class-field-theory.md)은 수체 $K$ 의 아벨확대를 아이디얼류 자료로 분류하지만 그 확대를 생성하는 원소를 주지는 않는다. $K=\mathbb Q$ 에서는 Kronecker–Weber 정리가 모든 아벨확대를 $\zeta_n=e^{2\pi i/n}$ 로 생성한다.
 
 $K$ 가 허수이차체일 때 지수함수의 자리를 타원곡선의 특수값이 대신한다. 타원곡선 $\mathbb C/\Lambda$ 가운데 자기준동형환이 $\mathbb Z$ 보다 큰 것을 복소 곱셈을 가진다고 하고, 이때
 
@@ -15,8 +19,6 @@ $$
 > $j(\mathcal O_K)$ 는 $K$ 의 힐베르트 유체 $H$ 를 생성하고, $\mathrm{Gal}(H/K)\cong\mathrm{Cl}(K)$ 의 작용은 아이디얼류의 곱셈으로 주어진다. 비틀림점의 좌표까지 붙이면 $K$ 의 모든 아벨확대가 나온다.
 
 $\zeta_n$ 이 하던 일을 $j$ 와 비틀림점이 한다. Kronecker 가 "청춘의 꿈"(Jugendtraum)이라 부른 그림이고, Hilbert 의 열두 번째 문제는 이를 일반 수체로 확장하라는 요구다. 허수이차체 바깥에서는 아벨확대를 생성하는 함수가 알려져 있지 않다[^2].
-
-# 직관
 
 격자 $\Lambda=\mathbb Z+\mathbb Z\tau\subset\mathbb C$ 를 자기 안으로 보내는 복소수를 찾는다. $\alpha\Lambda\subseteq\Lambda$ 이면 $\alpha$ 가 $\mathbb C/\Lambda$ 의 자기준동형이다. $\alpha\cdot1=a+b\tau$ 와 $\alpha\cdot\tau=c+d\tau$ 를 정수로 쓰면 $\alpha$ 는 정수 행렬 $\begin{pmatrix}a&c\cr b&d\end{pmatrix}$ 의 고윳값이므로 이차 대수적 정수다.
 
