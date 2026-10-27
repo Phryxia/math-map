@@ -2,11 +2,13 @@
 
 # 개요
 
-**Matroid 교집합 정리(matroid intersection theorem)** 는 같은 집합 $E$ 위의 두 matroid $M_1,M_2$ 에서 양쪽 모두에 독립인 집합의 최대 크기가 $\min_{A\subseteq E}\bigl(r_1(A)+r_2(E\setminus A)\bigr)$ 라는 정리다. J. Edmonds 가 1970 년에 증명했다[^1].
-
-이분 그래프의 [매칭](matchings.md)은 "한쪽 정점마다 간선 하나 이하" 와 "다른 쪽 정점마다 간선 하나 이하" 라는 두 matroid 의 공통 독립집합이고, 이 정리를 거기에 쓰면 König 정리가 나온다. 증명은 [Matroid 합 정리](matroid-union.md)의 계수 공식에 쌍대 matroid 를 넣어 얻는다.
+**Matroid 교집합 정리(matroid intersection theorem)** 는 같은 집합 위의 두 [matroid](matroids.md) 에서 양쪽 모두에 독립인 집합의 최대 크기를 주는 공식이다. 일꾼 $a,b$ 와 일 $1,2$ 가 있고 $a$ 는 두 일 모두, $b$ 는 일 $1$ 만 할 수 있을 때, 가장 큰 짝짓기는 "일꾼마다 간선 하나 이하" 와 "일마다 간선 하나 이하" 라는 두 조건을 함께 만족하는 간선 집합 가운데 가장 큰 것이다. 이 정리는 그 최대 크기가 $\min_{A\subseteq E}\bigl(r_1(A)+r_2(E\setminus A)\bigr)$ 와 같음을 보여, 이분 그래프의 [매칭](matchings.md) 같은 문제를 한 공식으로 푼다.
 
 # 직관
+
+Matroid 교집합 정리는 같은 집합 $E$ 위의 두 matroid $M_1,M_2$ 에서 양쪽 모두에 독립인 집합의 최대 크기가 $\min_{A\subseteq E}\bigl(r_1(A)+r_2(E\setminus A)\bigr)$ 라는 정리다. J. Edmonds 가 1970 년에 증명했다[^1].
+
+이분 그래프의 매칭은 "한쪽 정점마다 간선 하나 이하" 와 "다른 쪽 정점마다 간선 하나 이하" 라는 두 matroid 의 공통 독립집합이고, 이 정리를 거기에 쓰면 König 정리가 나온다. 증명은 [Matroid 합 정리](matroid-union.md)의 계수 공식에 쌍대 matroid 를 넣어 얻는다.
 
 일꾼 $a,b$ 와 일 $1,2$ 가 있고, $a$ 는 $1$ 과 $2$ 를, $b$ 는 $1$ 만 할 수 있다. 간선은 $a1,a2,b1$ 이다. 일꾼마다 일 하나, 일마다 일꾼 하나로 짝을 짓는 매칭을 가장 크게 잡으려 한다.
 
@@ -16,7 +18,7 @@ $a2,b1$ 은 두 조건을 다 지키므로 크기 $2$ 의 매칭이다. 더 클 
 
 # 정의
 
-$M_1=(E,\mathcal I_1)$ 과 $M_2=(E,\mathcal I_2)$ 는 같은 유한 집합 위의 [matroid](matroids.md)이고 계수 함수가 $r_1,r_2$ 다. $\mathcal I_1\cap\mathcal I_2$ 의 원소를 공통 독립집합(common independent set)이라 한다. 공통 독립집합은 일반적으로 matroid 를 이루지 않는다.
+$M_1=(E,\mathcal I_1)$ 과 $M_2=(E,\mathcal I_2)$ 는 같은 유한 집합 위의 matroid이고 계수 함수가 $r_1,r_2$ 다. $\mathcal I_1\cap\mathcal I_2$ 의 원소를 공통 독립집합(common independent set)이라 한다. 공통 독립집합은 일반적으로 matroid 를 이루지 않는다.
 
 $E$ 가 서로 만나지 않는 묶음 $E_1,\dots,E_m$ 으로 나뉘어 있을 때, 묶음마다 원소를 하나 이하 고른 집합들은 matroid 를 이룬다. 이것을 분할 matroid(partition matroid)라 한다. 직관의 두 조건이 둘 다 분할 matroid 다.
 

@@ -2,11 +2,13 @@
 
 # 개요
 
-**다항식의 불변 원리(invariance principle for low-degree polynomials)** 는 모든 좌표의 영향력이 작은 저차 다중선형 다항식에 $\pm 1$ 무작위 입력을 넣은 값과 독립 표준정규 입력을 넣은 값의 분포가 가깝다는 정리다. E. Mossel, R. O'Donnell, K. Oleszkiewicz 가 2010 년에 증명했다[^1].
-
-[부울 함수의 Fourier 해석](boolean-fourier.md)의 Majority is Stablest 정리는 이 정리로 문제를 Gauss 공간으로 옮기고, Gauss 공간에서 Borell 의 등주정리를 써서 증명된다. 증명은 [중심극한정리](central-limit-theorem.md)의 Lindeberg 치환을 다항식에 적용한 것이다.
+**다항식의 불변 원리(invariance principle for low-degree polynomials)** 는 차수가 낮고 어느 한 변수에도 크게 좌우되지 않는 다항식이면, 변수에 $\pm 1$ 동전을 넣든 정규분포를 넣든 값의 분포가 거의 같다는 정리다. $Q(x)=(x_1+\cdots+x_n)/\sqrt n$ 에 $\pm 1$ 을 넣으면 [중심극한정리](central-limit-theorem.md)로 분포가 표준정규분포에 가까워지고, 표준정규를 넣으면 정확히 표준정규분포다. 이 정리는 변수를 하나씩 동전에서 정규분포로 바꾸며 한 번 바꿀 때 생기는 차이를 그 변수의 영향력으로 묶어, 같은 결론을 차수가 낮은 다항식 전체로 넓힌다.
 
 # 직관
+
+다항식의 불변 원리는 모든 좌표의 영향력이 작은 저차 다중선형 다항식에 $\pm 1$ 무작위 입력을 넣은 값과 독립 표준정규 입력을 넣은 값의 분포가 가깝다는 정리다. E. Mossel, R. O'Donnell, K. Oleszkiewicz 가 2010 년에 증명했다[^1].
+
+[부울 함수의 Fourier 해석](boolean-fourier.md)의 Majority is Stablest 정리는 이 정리로 문제를 Gauss 공간으로 옮기고, Gauss 공간에서 Borell 의 등주정리를 써서 증명된다. 증명은 중심극한정리의 Lindeberg 치환을 다항식에 적용한 것이다.
 
 $x_1,\dots,x_n$ 이 독립이고 확률 $\tfrac12$ 씩 $\pm 1$ 이라 하자. $Q(x)=(x_1+\cdots+x_n)/\sqrt n$ 의 분포가 $Q(g)$ 와 가까운지 묻는다. $g_1,\dots,g_n$ 은 독립 표준정규이고 $Q(g)$ 는 표준정규분포를 따른다.
 

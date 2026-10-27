@@ -2,11 +2,13 @@
 
 # 개요
 
-**Feynman–Kac 공식(Feynman–Kac formula)** 은 포물형 편미분방정식의 해를 확산 과정에 대한 기댓값으로 쓴다. 방정식을 풀지 않고 경로를 뽑아 평균하면 해의 값이 나오고, 반대로 기댓값을 방정식을 풀어 얻을 수도 있다. 열이 퍼지는 모습과 입자가 무작위로 돌아다니는 모습의 대응이 이 공식이다.
-
-증명은 [Itô 공식](ito-calculus.md)을 해에 적용하는 것이다. 방정식 때문에 $dt$ 항이 0 이 되고, 남은 확률적분이 martingale 이라 기댓값이 시간에 대해 변하지 않는다. [Girsanov 정리](girsanov.md)는 측도를 바꿔 표류를 지우고 여기서는 방정식이 표류를 지운다. Black–Scholes 방정식과 위험중립 기댓값이 같은 답을 주는 것도 이 공식에서 나온다.
+**Feynman–Kac 공식(Feynman–Kac formula)** 은 열이 퍼지는 꼴의 편미분방정식의 해를 무작위로 움직이는 입자에 대한 평균으로 쓰는 공식이다. 막대의 한 점에서 시간 $t$ 뒤의 온도를 알려면 [열방정식](heat-equation.md)을 풀어야 하지만, 그 점에서 출발해 시간 $t$ 동안 무작위로 돌아다닌 입자가 닿은 곳의 처음 온도를 평균해도 같은 값이 나온다. Feynman–Kac 공식은 해에 [Itô 공식](ito-calculus.md)을 적용해 이 대응을 증명하고, 방정식을 푸는 대신 경로를 뽑아 평균해 해의 값을 얻거나 반대로 기댓값을 방정식으로 계산하게 한다.
 
 # 직관
+
+Feynman–Kac 공식은 포물형 편미분방정식의 해를 확산 과정에 대한 기댓값으로 쓴다. 방정식을 풀지 않고 경로를 뽑아 평균하면 해의 값이 나오고, 반대로 기댓값을 방정식을 풀어 얻을 수도 있다. 열이 퍼지는 모습과 입자가 무작위로 돌아다니는 모습의 대응이 이 공식이다.
+
+증명은 Itô 공식을 해에 적용하는 것이다. 방정식 때문에 $dt$ 항이 0 이 되고, 남은 확률적분이 martingale 이라 기댓값이 시간에 대해 변하지 않는다. [Girsanov 정리](girsanov.md)는 측도를 바꿔 표류를 지우고 여기서는 방정식이 표류를 지운다. Black–Scholes 방정식과 위험중립 기댓값이 같은 답을 주는 것도 이 공식에서 나온다.
 
 방정식의 해를 $u(t,x)$ 라 하고 확산 과정 $X$ 를 따라 $u(t,X_t)$ 를 본다. Itô 공식이 이 값의 변화를 두 부분으로 나눈다.
 
@@ -37,7 +39,7 @@ $$
 \mathcal L_t f(x)=\sum_ib_i(t,x)\thinspace\partial_if(x)+\frac12\sum_{i,j}\big(\sigma\sigma^{\mathsf T}\big)\_{ij}(t,x)\thinspace\partial_i\partial_jf(x)
 $$
 
-$X$ 가 표준 [Brown 운동](brownian-motion.md)이면 $\mathcal L = \tfrac12\Delta$ 이고, [열방정식](heat-equation.md)과 Brown 운동이 이 등식으로 대응한다.
+$X$ 가 표준 [Brown 운동](brownian-motion.md)이면 $\mathcal L = \tfrac12\Delta$ 이고, 열방정식과 Brown 운동이 이 등식으로 대응한다.
 
 ## 정리
 

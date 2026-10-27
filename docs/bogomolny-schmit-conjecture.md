@@ -2,11 +2,13 @@
 
 # 개요
 
-**Bogomolny–Schmit 추측(Bogomolny–Schmit conjecture)** 은 혼돈적인 평면 영역의 고유함수가 갖는 마디 영역의 개수가 임계 결합 침투의 클러스터 개수로 정해진다는 추측이다. E. Bogomolny 와 C. Schmit 이 2002 년에 제시했고, $k$ 번째 고유함수의 마디 영역 개수 $\nu_k$ 에 대해 $\nu_k/k\to(3\sqrt 3-5)/\pi\approx 0.0624$ 를 예측한다[^1].
-
-[Courant 마디 영역 정리](courant-nodal-domain-theorem.md)와 Pleijel 정리는 $\nu_k/k$ 의 상한만 준다. 이 추측은 측지선 흐름이 혼돈적인 경우에 [양자 혼돈](quantum-chaos.md)의 무작위 파동 모형에서 그 비의 값을 정한다.
+**Bogomolny–Schmit 추측(Bogomolny–Schmit conjecture)** 은 혼돈적인 모양의 북이 떨릴 때 움직이지 않는 선이 나누는 조각의 수를 예측하는 추측이다. 정사각형 북의 진동 $\sin(mx)\sin(ly)$ 는 움직이지 않는 선이 가로세로 격자를 이뤄 조각이 $ml$ 개로 규칙적이지만, 경기장 모양처럼 벽에 반사되는 공의 경로가 혼돈적인 영역에서는 이 선이 불규칙하게 얽힌다. 이 추측은 그런 영역의 진동을 무작위 파동으로 보고 조각을 격자 위 무작위 연결 모형의 덩어리로 세어, $k$ 번째 진동의 조각 수 $\nu_k$ 가 $\nu_k/k\to(3\sqrt 3-5)/\pi\approx 0.0624$ 를 따른다고 예측한다.
 
 # 직관
+
+Bogomolny–Schmit 추측은 혼돈적인 평면 영역의 고유함수가 갖는 마디 영역의 개수가 임계 결합 침투의 클러스터 개수로 정해진다는 추측이다. E. Bogomolny 와 C. Schmit 이 2002 년에 제시했고, $k$ 번째 고유함수의 마디 영역 개수 $\nu_k$ 에 대해 $\nu_k/k\to(3\sqrt 3-5)/\pi\approx 0.0624$ 를 예측한다[^1].
+
+[Courant 마디 영역 정리](courant-nodal-domain-theorem.md)와 Pleijel 정리는 $\nu_k/k$ 의 상한만 준다. 이 추측은 측지선 흐름이 혼돈적인 경우에 [양자 혼돈](quantum-chaos.md)의 무작위 파동 모형에서 그 비의 값을 정한다.
 
 Pleijel 정리로 평면에서 $\nu_k/k$ 는 $k$ 가 클 때 $0.692$ 이하이고, 정사각형의 고유함수 $\sin(mx)\sin(ly)$ 는 이 비가 $2/\pi$ 근처까지 간다. 정사각형의 마디선은 가로선과 세로선이 교차하는 격자이고, 직사각형 조각마다 부호가 바둑판처럼 번갈아 나온다.
 
