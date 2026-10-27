@@ -2,11 +2,13 @@
 
 # 개요
 
-**Clenshaw–Curtis 구적(Clenshaw–Curtis quadrature)** 은 $\lbrack-1,1\rbrack$ 의 점 $x_k=\cos(k\pi/n)$ $(k=0,\dots,n)$ 에서 피적분함수를 [다항식 보간](polynomial-interpolation.md)하고 그 다항식을 적분해 $\int\_{-1}^1f$ 의 근삿값을 얻는 수치적분 공식이다. 점 $x_k$ 는 [Chebyshev 다항식](chebyshev-polynomials.md) $T_n$ 의 극값점이다.
-
-[Newton–Cotes 공식](newton-cotes.md)과 같은 보간형 공식이고 점의 배치만 다르다. 가중치가 모든 $n$ 에서 양수이므로 점을 늘려도 함숫값의 오차가 커지지 않고, 연속함수이면 $n\to\infty$ 에서 근삿값이 적분값으로 수렴한다.
+**Clenshaw–Curtis 구적(Clenshaw–Curtis quadrature)** 은 구간 $\lbrack-1,1\rbrack$ 위의 정적분을 몇 점에서의 함숫값으로 어림하는 공식이다. 같은 간격의 점에서 다항식을 맞춰 적분하면, $f(x)=1/(1+25x^2)$ 같은 함수에서는 점을 늘릴수록 양 끝에서 다항식이 크게 흔들려 어림이 나빠진다. Clenshaw–Curtis 구적은 점을 $\cos(k\pi/n)$ 에 두어 양 끝에 점을 몰고, 이 점들에서 맞춘 다항식을 적분해 점을 늘릴수록 적분값에 수렴하는 어림을 얻는다.
 
 # 직관
+
+Clenshaw–Curtis 구적은 $\lbrack-1,1\rbrack$ 의 점 $x_k=\cos(k\pi/n)$ $(k=0,\dots,n)$ 에서 피적분함수를 [다항식 보간](polynomial-interpolation.md)하고 그 다항식을 적분해 $\int\_{-1}^1f$ 의 근삿값을 얻는 수치적분 공식이다. 점 $x_k$ 는 [Chebyshev 다항식](chebyshev-polynomials.md) $T_n$ 의 극값점이다.
+
+[Newton–Cotes 공식](newton-cotes.md)과 같은 보간형 공식이고 점의 배치만 다르다. 가중치가 모든 $n$ 에서 양수이므로 점을 늘려도 함숫값의 오차가 커지지 않고, 연속함수이면 $n\to\infty$ 에서 근삿값이 적분값으로 수렴한다.
 
 $\lbrack-1,1\rbrack$ 에서 등간격 점 $9$ 개를 쓰는 Newton–Cotes 공식의 가중치는 $\frac{1}{14175}(989,5888,-928,10496,-4540,10496,-928,5888,989)$ 이다. 합은 $2$ 이지만 절댓값의 합은 $41142/14175\approx 2.90$ 이므로, 함숫값마다 $\delta$ 의 오차가 있으면 근삿값의 오차가 $2.90\delta$ 까지 커진다. 점을 더 늘리면 절댓값의 합이 끝없이 커진다.
 
