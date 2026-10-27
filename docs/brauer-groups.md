@@ -2,7 +2,9 @@
 
 # 개요
 
-**Brauer 군(Brauer group)** $\mathrm{Br}(K)$ 는 체 $K$ 위의 중심단순대수를 Brauer 동치로 분류하는 군이며, [유체론](class-field-theory.md)이 이 군을 완전히 계산한다.
+**Brauer 군(Brauer group)** $\mathrm{Br}(K)$ 는 체 $K$ 위의 중심단순대수를 Brauer 동치로 분류하는 군이며, [유체론](class-field-theory.md)이 이 군을 완전히 계산한다. 유리수 위에서 $i^2=a$, $j^2=b$, $ij=-ji$ 로 정한 사원수 대수가 $2\times 2$ 행렬대수와 같은지는, 실수와 각 소수 $p$ 에서 따로 확인한 결과를 모으면 정해진다. Brauer 군은 이런 대수를 각 자리에서의 불변량으로 적고, 그 불변량들의 합이 $0$ 이라는 완전열로 국소 정보와 전역 정보의 관계를 계산한다.
+
+# 직관
 
 $$
 0\longrightarrow\mathrm{Br}(K)\longrightarrow\bigoplus_v\mathrm{Br}(K_v)\xrightarrow{\ \sum\mathrm{inv}\_v\ }\mathbb Q/\mathbb Z\longrightarrow0
@@ -11,8 +13,6 @@ $$
 가운데 사상이 [아델](adeles.md)적이다. 각 자리의 불변량을 모두 더하면 $0$ 이라는 이 완전열이 유체론의 압축된 형태이고, [Hasse 원리](hasse-principle.md)가 언제 성립하고 언제 깨지는지를 재는 자다.
 
 Hasse 원리는 국소적으로 다 풀리면 유리수해가 있다는 진술이다. 이차형식에서는 정리이지만 차수가 올라가면 깨진다. Selmer 의 $3x^3+4y^3+5z^3=0$ 은 모든 자리에서 풀리지만 유리수해가 없다.
-
-# 직관
 
 $ax^2+by^2=z^2$ 이 모든 $K_v$ 에서 자명하지 않은 해를 가질 때 $K$ 에서도 갖는지 묻는다. 이 이차형식은 [사원수 대수](quaternion-algebras.md) $(a,b)\_K$ 의 노름형식이고, 해가 있는 것과 대수가 $M_2(K)$ 와 동형인 것이 동치다. 이차형식의 해를 묻는 일이 대수 하나의 분해 여부를 묻는 일로 바뀐다.
 

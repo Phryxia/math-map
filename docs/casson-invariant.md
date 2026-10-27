@@ -2,7 +2,9 @@
 
 # 개요
 
-**Casson 불변량(Casson invariant)**[^1] $\lambda(M)$ 은 정수 [호몰로지](homology.md) 3 구면 $M$ 의 불가약 $\mathrm{SU}(2)$ 표현을 부호를 붙여 센 수다.
+**Casson 불변량(Casson invariant)**[^1] $\lambda(M)$ 은 정수 [호몰로지](homology.md) 3 구면 $M$ 의 불가약 $\mathrm{SU}(2)$ 표현을 부호를 붙여 센 수다. Poincaré 의 호몰로지 구면처럼, 구멍을 세는 호몰로지로는 3 구면과 구별되지 않는 3 다양체가 있다. Casson 불변량은 기본군을 $\mathrm{SU}(2)$ 로 보내는 표현을 부호를 붙여 세어, 이런 다양체를 3 구면과 가르는 정수를 준다.
+
+# 직관
 
 $$
 \lambda(M)=\tfrac12\cdot\char35{}^{\text{대수적}}\big\lbrace\rho:\pi_1(M)\to\mathrm{SU}(2)\ \text{불가약}\big\rbrace
@@ -10,9 +12,7 @@ $$
 
 [Chern–Simons 이론](chern-simons.md)에서 평탄 $\mathrm{SU}(2)$ 접속의 게이지류는 $\pi_1(M)\to\mathrm{SU}(2)$ 표현의 켤레류와 같다. $M$ 이 정수 호몰로지 3 구면이면 $H_1(M)=0$ 이라 아벨 표현은 자명한 것뿐이고 불가약 표현만 남는다. 그 개수를 그냥 세면 $M$ 을 변형할 때 표현이 쌍으로 생겼다 사라져 불변량이 되지 않는다. 부호를 붙여 세면 쌍이 상쇄된다.
 
-기하적으로는 Heegaard 분해에서 두 손잡이체의 표현다양체가 만나는 교차수로 정의된다. 이 수는 4 차원 위상수학의 Rokhlin 불변량을 정수로 들어 올리고, 매듭의 Alexander 다항식으로 계산되며, Ohtsuki 급수의 첫 계수로 다시 나타난다.
-
-# 직관
+기하적으로는 Heegaard 분해에서 두 손잡이체의 표현다양체가 만나는 교차수로 정의된다. 이 수는 4 차원 위상수학의 Rokhlin 불변량을 정수로 들어 올리고, 매듭의 [Alexander 다항식](alexander-polynomial.md)으로 계산되며, Ohtsuki 급수의 첫 계수로 다시 나타난다.
 
 정수 호몰로지 3 구면은 호몰로지가 $S^3$ 과 같아 호몰로지로는 $S^3$ 과 갈라지지 않는다. [기본군](fundamental-group.md)의 $\mathrm{SU}(2)$ 표현을 세면 갈라지지만, 표현의 개수는 Heegaard 분해 $M=H_1\cup_\Sigma H_2$ 를 바꾸면 달라진다. 표현공간 $R(\Sigma)$ 안에서 $R(H_1)$ 과 $R(H_2)$ 의 교집합이 $R(M)$ 이고, 두 부분다양체를 조금 움직이면 교점이 생기거나 사라지기 때문이다.
 
