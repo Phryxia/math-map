@@ -2,7 +2,9 @@
 
 # 개요
 
-**Casselman–Shalika 공식(Casselman–Shalika formula)**[^1] 은 비분기 자리에서 구면 Whittaker 함수의 값을 쌍대군의 기약지표로 준다.
+**Casselman–Shalika 공식(Casselman–Shalika formula)** 은 비분기 자리의 구면 Whittaker 함수의 값을 [Schur 다항식](schur-polynomials.md)으로 주는 공식이다.[^1] $\mathrm{GL}\_n$ 의 [Whittaker 모형](whittaker-models.md)으로 $L$ 함수의 국소 인자를 계산하려면 대각행렬 $\varpi^\lambda$ 마다 Whittaker 함수의 값을 알아야 하고, 이 값은 $p$ 진군 위의 적분으로 정의된다. 공식은 그 값이 Satake 매개변수에서 계산한 Schur 다항식 $s_\lambda$ 에 간단한 인자를 곱한 것임을 보여, 적분을 대각표 세기로 바꾼다.
+
+# 직관
 
 $$
 W^\circ(\varpi^\lambda)=\delta_B^{1/2}(\varpi^\lambda)\thickspace s_\lambda(\alpha_1,\dots,\alpha_n)
@@ -10,14 +12,12 @@ $$
 
 $\alpha_i$ 는 $\pi_v$ 의 Satake 매개변수, $\lambda$ 는 지배적 여무게이고, $\lambda$ 가 지배적이 아니면 값이 0 이다.
 
-[Whittaker 모형](whittaker-models.md)은 $\mathrm{GL}\_n$ 첨점형식의 Fourier 계수를 대신하는 함수 $W(g)$ 를 주고, 유일성 덕분에 $W$ 가 자리마다의 곱으로 쪼개져 $L$ 함수가 Euler 곱이 된다. 각 자리의 $W$ 값을 [Schur 다항식](schur-polynomials.md)이 답한다. $p$ 진군 위의 조화해석이 낳은 값이 복소 [Lie 군](lie-groups.md)의 기약지표다.
+Whittaker 모형은 $\mathrm{GL}\_n$ 첨점형식의 Fourier 계수를 대신하는 함수 $W(g)$ 를 주고, 유일성 덕분에 $W$ 가 자리마다의 곱으로 쪼개져 $L$ 함수가 Euler 곱이 된다. 각 자리의 $W$ 값을 Schur 다항식이 답한다. $p$ 진군 위의 조화해석이 낳은 값이 복소 [Lie 군](lie-groups.md)의 기약지표다.
 
 이 등식이 두 가지를 설명한다.
 
 - **$L$ 인자의 정체.** 두 Whittaker 함수를 곱해 적분하면 $\sum_\lambda s_\lambda(\alpha)s_\lambda(\beta)t^{|\lambda|}$ 가 나오고, Cauchy 항등식이 그것을 $\prod_{i,j}(1-\alpha_i\beta_jt)^{-1}$ 로 바꾼다. 오른쪽이 Rankin–Selberg $L$ 인자다.
 - **계산 가능성.** Whittaker 함수의 값을 대각표 세기로 계산할 수 있다.
-
-# 직관
 
 비분기 자리에서 $W^\circ$ 는 오른쪽으로 $K=\mathrm{GL}\_n(\mathcal O)$ 불변이고 왼쪽으로 $N$ 에 대해 $\psi_N$ 변환하므로, Iwasawa 분해 $G=NAK$ 를 쓰면 $A$ 위의 값으로 결정된다. $A\cap K$ 불변이므로 값이 놓이는 자리는 $\varpi^\lambda=\mathrm{diag}(\varpi^{\lambda_1},\dots,\varpi^{\lambda_n})$ 뿐이고, $W^\circ$ 는 $\lambda\in\mathbb Z^n$ 위의 함수 하나다. $\psi_N$ 의 비퇴화성이 $\lambda_1\ge\dots\ge\lambda_n$ 이 아닌 자리의 값을 0 으로 만들어 지배적 여무게만 남는다.
 

@@ -2,16 +2,18 @@
 
 # 개요
 
-**Link-cut tree** 는 뿌리 있는 숲(forest)을 동적으로 유지하면서 간선 추가(link), 간선 삭제(cut), 뿌리 찾기(findroot), 경로 질의(path aggregate)를 모두 [분할상환](amortized-analysis.md) $O(\log n)$ 에 처리하는 자료구조다. Sleator 와 Tarjan 이 최대유량 알고리즘의 병목을 없애기 위해 고안했다[^1].
+**Link-cut tree** 는 간선이 붙고 떨어지는 숲(forest)에서 두 정점이 같은 트리에 있는지, 그 사이 경로의 값이 무엇인지를 빠르게 답하는 자료구조다. 정점 $n$ 개의 숲에서 간선을 하나 끊거나 붙일 때마다 트리를 처음부터 다시 훑으면 질의 하나에 $O(n)$ 이 든다. Link-cut tree 는 각 트리를 경로들로 쪼개 [splay 트리](splay-trees.md)에 담고, 간선 추가, 간선 삭제, 뿌리 찾기, 경로 질의를 모두 [분할상환](amortized-analysis.md) $O(\log n)$ 에 처리한다.
+
+# 직관
+
+간선 추가(link), 간선 삭제(cut), 뿌리 찾기(findroot), 경로 질의(path aggregate)의 네 연산을 지원한다. Sleator 와 Tarjan 이 최대유량 알고리즘의 병목을 없애기 위해 고안했다[^1].
 
 구성은 두 단계다.
 
 - 숲의 각 트리를 서로소인 **preferred path**들로 쪼갠다. 경로 하나는 정점의 나열이므로 [균형 이진 탐색 트리](balanced-binary-search-trees.md)에 담을 수 있다.
-- 각 경로를 [splay 트리](splay-trees.md)로 저장하고, 경로들 사이는 **path parent** 포인터로 잇는다. 질의는 `access` 라는 단일 연산으로 환원된다. splay 트리의 자기조정 성질[^2]로 그 비용이 분할상환 $O(\log n)$ 이 된다.
+- 각 경로를 splay 트리로 저장하고, 경로들 사이는 **path parent** 포인터로 잇는다. 질의는 `access` 라는 단일 연산으로 환원된다. splay 트리의 자기조정 성질[^2]로 그 비용이 분할상환 $O(\log n)$ 이 된다.
 
 [서로소 집합 자료구조](union-find.md)가 간선 추가만 있는 연결성을 거의 상수 시간에 처리한다면, link-cut tree 는 삭제까지 허용하는 대신 로그 시간을 치른다. 다만 숲(사이클 없음)이라는 제약이 있다. 일반 그래프의 [동적 연결성](dynamic-connectivity.md)은 이 구조를 부품으로 쓰거나 다른 분해를 쓴다.
-
-# 직관
 
 트리에서 경로 질의를 빠르게 하는 정적 기법은 heavy-light 분해다. 각 정점에서 부분트리 크기가 가장 큰 자식으로 가는 간선을 heavy 로 정한다. 크기가 작은 쪽으로 내려갈 때마다 부분트리 크기가 절반 이하로 줄므로, 뿌리에서 임의의 정점까지 가는 길에 light 간선은 $O(\log n)$ 개뿐이다. 따라서 경로를 $O(\log n)$ 개의 연속 구간으로 자를 수 있다.
 

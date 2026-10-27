@@ -2,7 +2,11 @@
 
 # 개요
 
-**Gan–Gross–Prasad 추측(Gan–Gross–Prasad conjecture)** 은 한 [군의 표현](group-representations.md)이 아니라 군의 쌍을 본다. 크기가 하나 차이나는 고전군의 쌍 $G_{n+1}\supset G_n$ 에서 $G_{n+1}$ 의 표현을 $G_n$ 으로 제한했을 때 $G_n$ 의 주어진 표현이 나타나는 횟수, 곧 **분지 중복도**가 대상이다.
+**Gan–Gross–Prasad 추측(Gan–Gross–Prasad conjecture)** 은 [군의 표현](group-representations.md)을 그 군보다 한 단계 작은 부분군으로 제한했을 때 어느 표현이 나타나는지를 $L$ 함수의 값으로 판정하는 추측이다. 3 차원 회전군의 $2l+1$ 차원 기약표현을 한 축을 고정하는 평면 회전군으로 제한하면, 무게 $-l,\dots,l$ 의 지표가 하나씩 나타난다. 크기가 하나 차이나는 고전군의 쌍 $G_{n+1}\supset G_n$ 에서도 $G_n$ 의 주어진 표현이 몇 번 나타나는지를 묻는다. 추측에 따르면 이 횟수는 쌍의 변형들을 모두 합쳐 정확히 $1$ 이고, 그 $1$ 이 나오는 자리를 $\varepsilon$ 인자와 Rankin–Selberg $L$ 함수의 중심값이 정한다.
+
+# 직관
+
+크기가 하나 차이나는 고전군의 쌍 $G_{n+1}\supset G_n$ 에서 $G_{n+1}$ 의 표현을 $G_n$ 으로 제한했을 때 $G_n$ 의 주어진 표현이 나타나는 횟수, 곧 **분지 중복도(branching multiplicity)** 가 대상이다.
 
 [Whittaker 모형의 유일성](whittaker-models.md)은 $\mathrm{GL}\_n$ 에서 성립한다. 직교군, 유니터리군, 심플렉틱군에서는 Whittaker 모형이 없는 표현이 흔하고 있어도 유일하지 않으므로, 중복도 1 을 얻으려면 모형을 바꾼다.
 
@@ -18,8 +22,6 @@ L\negthinspace\left(\tfrac12,\pi_{n+1}\times\pi_n\right)\ne0
 $$
 
 왼쪽은 표현론의 양이고 오른쪽은 해석적 정수론의 양이다. 콤팩트군에서 조합적 사실이던 분지 법칙이 아델 위에서 $L$ 함수의 산술과 이어진다. $n=1$ 인 경우가 [Waldspurger 정리](waldspurger-formula.md)이고 [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)과 [Heegner 점](heegner-points.md)으로 이어진다.
-
-# 직관
 
 콤팩트 유니터리군 $U(4)$ 의 최고무게 $\lambda=(4,2,1,0)$ 인 기약표현은 Weyl 차원 공식으로 차원이 $140$ 이다. 이것을 $U(3)$ 으로 제한하면 어느 표현이 몇 번 나오는가. 제한은 최고무게가 $\lambda$ 와 엇갈리는 $\mu$ 들의 직합이다.
 
