@@ -2,7 +2,11 @@
 
 # 개요
 
-**Sen 이론(Sen theory)** 은 $p$ 진 [Galois 표현](galois-representations.md)에 Galois 군 작용을 무한소로 미분한 선형작용소를 붙여, 표현이 Hodge–Tate 인지와 그 무게를 이 작용소의 고윳값으로 판정하는 이론이다. [p 진 Hodge 이론](p-adic-hodge-theory.md)의 가장 아래 칸인 $B_{\mathrm{HT}}$ 에서 Hodge–Tate 표현이 정의되고 **Hodge–Tate 무게**가 붙는다. 그 정의는 $\mathbb C_p\otimes V$ 가 $\mathbb C_p(h_i)$ 들의 직합으로 쪼개진다는 형태라서, 주어진 표현이 조건을 만족하는지 확인할 방법을 주지 않는다.
+**Sen 이론(Sen theory)** 은 $p$ 진 [Galois 표현](galois-representations.md)에 Galois 군 작용을 무한소로 미분한 선형작용소를 붙여, 표현이 Hodge–Tate 인지와 그 무게를 이 작용소의 고윳값으로 판정하는 이론이다. 순환지표의 $p$ 진 거듭제곱 $\chi^{1/3}$ 이 Hodge–Tate 인지 알고 싶어도, Hodge–Tate 의 정의는 표현을 큰 체 $\mathbb C_p$ 위에서 쪼개는 꼴이라 직접 확인할 방법을 주지 않는다. Sen 이론은 이 확인을 행렬 하나의 고윳값 계산으로 바꾼다. $\chi^{1/3}$ 에서는 그 고윳값이 정수가 아니므로 Hodge–Tate 가 아니다.
+
+# 직관
+
+[p 진 Hodge 이론](p-adic-hodge-theory.md)의 가장 아래 칸인 $B_{\mathrm{HT}}$ 에서 Hodge–Tate 표현이 정의되고 **Hodge–Tate 무게**가 붙는다. 그 정의는 $\mathbb C_p\otimes V$ 가 $\mathbb C_p(h_i)$ 들의 직합으로 쪼개진다는 형태라서, 주어진 표현이 조건을 만족하는지 확인할 방법을 주지 않는다.
 
 Sen 이론은 그 확인을 행렬 계산 하나로 바꾼다. 순환분체 확장 $K_\infty/K$ 의 Galois 군 $\Gamma\cong\mathbb Z_p^\times$ 의 작용을 무한소로 미분해 얻는 선형작용소가
 
@@ -13,8 +17,6 @@ $$
 곧 **Sen 작용소**다. $V$ 가 Hodge–Tate 인 것과 $\Theta$ 가 대각화 가능하고 고윳값이 정수인 것이 동치이며, 그때 고윳값이 정확히 Hodge–Tate 무게다. $\Gamma$ 가 $p$ 진 [Lie 군](lie-groups.md)이므로 [군 작용](group-actions.md)을 [Lie 대수](lie-algebras.md) 작용으로 미분하는 구도가 그대로 쓰인다.
 
 판정이 선형대수가 되어 계산 가능해지고, Hodge–Tate 가 아닌 표현에도 $\Theta$ 가 존재하므로 **일반화된 Hodge–Tate 무게**라는 개념이 생긴다. $p$ 진 자기동형 형식의 족에서 무게가 정수 아닌 $p$ 진수로 변할 때도 Sen 작용소는 정의된다.
-
-# 직관
 
 $V=\mathbb C_p(k)$ 에서 $\gamma\in\Gamma$ 는 스칼라 $\chi(\gamma)^k$ 로 작용한다. 로그를 취해 $\log\chi(\gamma)$ 로 나누면 $\log\chi(\gamma)^k/\log\chi(\gamma)=k$ 가 되어 지수에 있던 무게가 수로 내려온다. 일반의 $V$ 에서 $\gamma$ 는 스칼라가 아니라 행렬이지만 행렬 로그로 같은 계산을 할 수 있고, 그 결과가 선형작용소 $\Theta$ 다.
 

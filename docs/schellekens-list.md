@@ -2,7 +2,11 @@
 
 # 개요
 
-**Schellekens 목록(Schellekens list)** 은 중심전하(central charge) 24 인 홀로모픽 VOA(vertex operator algebra) 의 무게 1 부분이 가질 수 있는 Lie 대수 구조 71 가지의 목록이다. [Zhu 대수](zhu-algebra.md)에 따라 $C_2$ 여유한 유리 VOA 의 지표는 [모듈러 형식](modular-forms.md)처럼 변환한다. 이 정리가 분류 도구가 된다.
+**Schellekens 목록(Schellekens list)** 은 중심전하(central charge) 24 인 홀로모픽 VOA(vertex operator algebra) 의 무게 1 부분이 가질 수 있는 Lie 대수 구조 71 가지의 목록이다. 기약 가군이 자기 자신뿐인 VOA 의 지표는 $q^{-1}+N+196884\thinspace q+\cdots$ 꼴로 정해지고, 남는 자유도는 무게 1 부분의 차원 $N$ 하나다. 이런 VOA 를 분류하려면 무게 1 부분에 올 수 있는 Lie 대수를 가려야 한다. Schellekens 는 지표의 모듈러 변환에서 나오는 조합적 제약으로 그 후보를 71 가지로 줄였다.
+
+# 직관
+
+[Zhu 대수](zhu-algebra.md)에 따라 $C_2$ 여유한 유리 VOA 의 지표는 [모듈러 형식](modular-forms.md)처럼 변환한다. 이 정리가 분류 도구가 된다.
 
 기약가군이 자기 자신뿐인 VOA 가 **홀로모픽**(자기쌍대) VOA 다. 지표가 하나뿐이므로 모듈러 불변성이 지표를 $\mathrm{SL}\_2(\mathbb Z)$ 불변 함수로 만든다. 이 제약이 중심전하를 $c\in24\mathbb Z$ 로 강제하고 $c=24$ 에서는 지표를 완전히 결정한다.
 
@@ -13,8 +17,6 @@ $$
 정수 $N$ 하나를 빼면 자유도가 없다. Schellekens 는 1993 년에 무게 $1$ 부분 $V_1$ 의 [Lie 대수](lie-algebras.md) 구조를 조합적으로 제한해 71 가지 타입만 가능함을 보였다.[^1] 이후 30 년에 걸쳐 각 항목의 존재와 유일성이 증명되었고, $V_1=0$ 인 괴물 달빛 가군의 유일성만 증명되지 않은 채 남아 있다[^2].
 
 24 차원 짝수 자기쌍대 격자가 정확히 24 개라는 [Niemeier 분류](niemeier-lattices.md)가 이 목록과 나란히 놓인다. 격자 쪽 24 개는 VOA 쪽 71 개 안에 격자 VOA 로 들어가고, 두 분류 모두 지표가 대상을 거의 결정한다는 논법을 쓴다.
-
-# 직관
 
 홀로모픽 VOA 의 지표는 하나뿐이므로 $\mathrm{SL}\_2(\mathbb Z)$ 작용 아래 자기 자신으로 간다. 지표는 $q^{-c/24}$ 로 시작하고 $T\colon\tau\mapsto\tau+1$ 은 그 앞자리에 $e^{-2\pi ic/24}$ 를 낳는다. 이것이 $1$ 이어야 하므로 $c/24\in\mathbb Z$ 다. $c=8,16,24$ 에서의 개수는 다음과 같다.
 

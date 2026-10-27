@@ -2,7 +2,11 @@
 
 # 개요
 
-**Shimura 대응(Shimura correspondence)** 은 반정수 무게 $k+1/2$ 의 [모듈러 형식](modular-forms.md)을 정수 무게 $2k$ 의 모듈러 형식으로 보내고 Hecke 고윳값을 보존하는 사상이다. 모듈러 형식의 무게는 보통 정수이지만, [theta 급수](theta-series.md) $\theta(\tau)=\sum_{n\in\mathbb Z}q^{n^2}$ 의 무게는 변환식에 붙는 제곱근 때문에 $1/2$ 이다.
+**Shimura 대응(Shimura correspondence)** 은 반정수 무게 $k+1/2$ 의 [모듈러 형식](modular-forms.md)을 정수 무게 $2k$ 의 모듈러 형식으로 보내고 Hecke 고윳값을 보존하는 사상이다. 정수 $n$ 을 제곱수 세 개의 합으로 쓰는 방법의 수는 $\theta(\tau)^3$ 의 $q^n$ 계수이고, $\theta^3$ 은 무게 $3/2$ 의 형식이다. 반정수 무게에서는 Hecke 작용소가 소수 $p$ 가 아니라 $p^2$ 마다 정의되어, 정수 무게의 이론을 그대로 쓸 수 없다. Shimura 대응은 이런 형식을 Hecke 고윳값이 같은 정수 무게 형식으로 옮겨, 정수 무게의 이론으로 그 계수를 다룬다.
+
+# 직관
+
+모듈러 형식의 무게는 보통 정수이지만, [theta 급수](theta-series.md) $\theta(\tau)=\sum_{n\in\mathbb Z}q^{n^2}$ 의 무게는 변환식에 붙는 제곱근 때문에 $1/2$ 이다.
 
 $$
 \theta\negthinspace\left(\frac{-1}{4\tau}\right)=\sqrt{-2i\tau}\thinspace\theta(\tau)
@@ -19,8 +23,6 @@ T(p)\thinspace f=\lambda_p\thinspace f
 $$
 
 Kohnen 은 **플러스 공간**이라는 부분공간 위에서 이 대응을 동형으로 다듬었고, 그 위에서 [Waldspurger 정리](waldspurger-formula.md)가 $g$ 의 Fourier 계수와 $f$ 의 중심 $L$ 값을 잇는다. 세 정리를 합치면 반정수 무게 형식의 계수 계산으로 정수 무게 형식의 $L$ 값을 얻는다.
-
-# 직관
 
 정수 무게에서 $T(p)$ 는 계수 $a_n$ 을 $a_{np}$ 와 $a_{n/p}$ 로 옮기지만, 반정수 무게 형식의 계수 $c(n)$ 은 $n$ 의 판별식 부분에 민감해 같은 조작이 통하지 않는다. $n=D\thinspace m^2$ 으로 쪼개면($D$ 는 제곱인수가 없는 부분) $n\mapsto np$ 는 $D$ 를 바꾸어 서로 다른 판별식 세계를 뒤섞고, $n\mapsto np^2$ 는 $D$ 를 고정한 채 $m$ 만 움직인다. $D$ 방향은 뒤틀림을 고르고 $m$ 방향은 Hecke 구조를 담으므로, Shimura 대응은 $D$ 를 고정하고 $m$ 방향의 [Dirichlet 급수](dirichlet-series.md)를 본다.
 
