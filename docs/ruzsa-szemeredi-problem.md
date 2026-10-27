@@ -2,11 +2,13 @@
 
 # 개요
 
-**Ruzsa–Szemerédi 문제(Ruzsa–Szemerédi problem)** 는 모든 간선이 정확히 하나의 삼각형에 들어가는 $n$ 정점 그래프가 간선을 얼마나 많이 가질 수 있는지 묻는 문제다. I. Z. Ruzsa 와 E. Szemerédi 는 1978 년에 간선 수가 $o(n^2)$ 이고 $n^{2-\varepsilon}$ 보다는 많을 수 있음을 증명했다[^1].
-
-상한은 [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md)의 삼각형 제거 보조정리에서 나오고, 하한은 [등차수열의 Roth 정리](roth-theorem-arithmetic-progressions.md)의 Behrend 구성에서 나온다. 상한에서 Roth 정리가 따름정리로 나오므로, 이 문제는 그래프의 삼각형과 정수의 등차수열을 서로 옮기는 자리다.
+**Ruzsa–Szemerédi 문제(Ruzsa–Szemerédi problem)** 는 모든 간선이 정확히 하나의 삼각형에 들어가는 그래프가 간선을 얼마나 많이 가질 수 있는지 묻는 문제다. 삼각형 $k$ 개를 정점이 겹치지 않게 놓으면 정점 $3k$ 개에 간선 $3k$ 개이고, 간선을 정점 수의 제곱에 가깝게 늘리려면 한 정점이 많은 삼각형에 들어가면서도 다른 삼각형이 생기지 않아야 한다. Ruzsa 와 Szemerédi 는 간선 수가 $n^2$ 보다 느리게 자란다는 것을 삼각형 제거 보조정리로, $n^{2-\varepsilon}$ 보다는 많을 수 있다는 것을 등차수열이 없는 큰 정수 집합으로 보였다.
 
 # 직관
+
+Ruzsa–Szemerédi 문제는 모든 간선이 정확히 하나의 삼각형에 들어가는 $n$ 정점 그래프가 간선을 얼마나 많이 가질 수 있는지 묻는 문제다. I. Z. Ruzsa 와 E. Szemerédi 는 1978 년에 간선 수가 $o(n^2)$ 이고 $n^{2-\varepsilon}$ 보다는 많을 수 있음을 증명했다[^1].
+
+상한은 [Szemerédi 정규성 보조정리](szemeredi-regularity-lemma.md)의 삼각형 제거 보조정리에서 나오고, 하한은 [등차수열의 Roth 정리](roth-theorem-arithmetic-progressions.md)의 Behrend 구성에서 나온다. 상한에서 Roth 정리가 따름정리로 나오므로, 이 문제는 그래프의 삼각형과 정수의 등차수열을 서로 옮기는 자리다.
 
 간선마다 삼각형이 하나뿐인 그래프를 만들려 한다. 삼각형 $k$ 개를 정점이 겹치지 않게 놓으면 정점 $3k$ 개에 간선 $3k$ 개라서 간선이 정점 수에 비례한다. 간선을 $n^2$ 에 가깝게 늘리려면 한 정점이 많은 삼각형에 들어가야 하고, 그러면 서로 다른 삼각형의 간선이 새 삼각형을 만들기 쉽다.
 

@@ -2,11 +2,13 @@
 
 # 개요
 
-**조합적 영점 정리(Combinatorial Nullstellensatz)** 는 체 위의 다변수 다항식이 유한집합들의 곱 $S_1\times\cdots\times S_n$ 의 모든 점에서 $0$ 이 될 수 없는 조건을 최고차 단항식의 계수로 주는 정리다. N. Alon 이 1999 년에 정리해 발표했다[^1]. 이름은 대수기하의 Hilbert 영점 정리(Hilbert's Nullstellensatz)에서 왔다.
-
-일변수 [다항식환](polynomial-rings.md)에서 차수 $d$ 의 다항식은 근이 많아야 $d$ 개다. 이 정리는 그 근의 개수 제한을 격자 모양의 유한집합 위에서 여러 변수로 옮긴 것이고, 조합론의 존재 문제를 "어떤 다항식이 어느 점에서 $0$ 이 아니다" 로 바꾸어 푸는 데 쓰인다. 주된 적용 대상이 [유한체](finite-fields.md)다.
+**조합적 영점 정리(Combinatorial Nullstellensatz)** 는 여러 변수의 다항식이 격자 모양의 유한집합 위에서 어디서나 $0$ 이 될 수는 없는 조건을 주는 정리다. $7$ 로 나눈 나머지에서 $A=\lbrace 0,1\rbrace$, $B=\lbrace 0,1,2\rbrace$ 이면 합의 집합 $A+B=\lbrace 0,1,2,3\rbrace$ 은 원소가 $2+3-1=4$ 개인데, 어떤 $A$, $B$ 를 골라도 합의 집합이 이보다 작아지지 않는지가 문제다. 이 정리는 그런 물음을 어떤 다항식이 $A\times B$ 의 어느 점에서 $0$ 이 아니라는 진술로 바꾸고, 최고차 단항식의 계수가 $0$ 이 아님을 확인해 답한다.
 
 # 직관
+
+조합적 영점 정리는 체 위의 다변수 다항식이 유한집합들의 곱 $S_1\times\cdots\times S_n$ 의 모든 점에서 $0$ 이 될 수 없는 조건을 최고차 단항식의 계수로 주는 정리다. N. Alon 이 1999 년에 정리해 발표했다[^1]. 이름은 대수기하의 Hilbert 영점 정리(Hilbert's Nullstellensatz)에서 왔다.
+
+일변수 [다항식환](polynomial-rings.md)에서 차수 $d$ 의 다항식은 근이 많아야 $d$ 개다. 이 정리는 그 근의 개수 제한을 격자 모양의 유한집합 위에서 여러 변수로 옮긴 것이고, 조합론의 존재 문제를 "어떤 다항식이 어느 점에서 $0$ 이 아니다" 로 바꾸어 푸는 데 쓰인다. 주된 적용 대상이 [유한체](finite-fields.md)다.
 
 $7$ 로 나눈 나머지 $\mathbb Z/7\mathbb Z$ 에서 $A=\lbrace 0,1\rbrace$, $B=\lbrace 0,1,2\rbrace$ 로 두고 두 원소의 합을 모은 집합을 $A+B=\lbrace a+b : a\in A,\thinspace b\in B\rbrace$ 는 $\lbrace 0,1,2,3\rbrace$ 이고 원소가 $4=2+3-1$ 개다. $A$ 와 $B$ 를 어떻게 골라도 $A+B$ 의 원소가 $\lvert A\rvert+\lvert B\rvert-1$ 개보다 적어지지 않는지(원소가 $7$ 개를 넘을 수는 없으므로 그 범위 안에서) 묻는다.
 

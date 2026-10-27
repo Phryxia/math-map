@@ -2,11 +2,13 @@
 
 # 개요
 
-**Reingold 정리(Reingold's theorem)** 는 무방향 그래프에서 두 정점이 연결되어 있는지 판정하는 문제가 결정적 로그 공간 L 에 든다는 정리다. O. Reingold 가 2005 년에 발표했다[^1]. 그래프를 [Expander 그래프](expander-graphs.md)로 바꾸는 변환을 로그 공간에서 계산하는 것이 증명의 요지다.
-
-[공간 복잡도](space-complexity.md)에서 방향 그래프의 도달 가능성은 NL(nondeterministic logarithmic space)-완전이다. 무방향 그래프의 연결성은 H. R. Lewis 와 C. H. Papadimitriou 가 정의한 대칭 로그 공간 SL(symmetric logarithmic space)의 완전 문제이고[^2], 이 정리로 $\mathrm{SL}=\mathrm L$ 이다.
+**Reingold 정리(Reingold's theorem)** 는 무방향 그래프에서 두 정점이 이어져 있는지를, 정점 수 $n$ 의 로그에 비례하는 기억만 써서 동전 없이 판정할 수 있다는 정리다. 지금 있는 정점과 걸음 수만 기억하며 무작위로 걸으면 기억은 $O(\log n)$ 비트로 충분하지만, 동전 없이 같은 기억만으로 갈 수 있는 곳을 빠짐없이 훑는 방법은 따로 있어야 한다. Reingold 는 그래프를 어느 정점에서나 짧은 걸음으로 퍼져 나가는 [Expander 그래프](expander-graphs.md)로 바꾸는 변환을 로그 공간에서 계산하고, 바뀐 그래프에서 길이 $O(\log n)$ 인 경로를 모두 차례로 시험해 판정을 끝낸다.
 
 # 직관
+
+Reingold 정리는 무방향 그래프에서 두 정점이 연결되어 있는지 판정하는 문제가 결정적 로그 공간 L 에 든다는 정리다. O. Reingold 가 2005 년에 발표했다[^1]. 그래프를 Expander 그래프로 바꾸는 변환을 로그 공간에서 계산하는 것이 증명의 요지다.
+
+[공간 복잡도](space-complexity.md)에서 방향 그래프의 도달 가능성은 NL(nondeterministic logarithmic space)-완전이다. 무방향 그래프의 연결성은 H. R. Lewis 와 C. H. Papadimitriou 가 정의한 대칭 로그 공간 SL(symmetric logarithmic space)의 완전 문제이고[^2], 이 정리로 $\mathrm{SL}=\mathrm L$ 이다.
 
 정점이 $n$ 개인 무방향 [그래프](graphs.md)에서 $s$ 와 $t$ 가 연결되어 있는지 판정한다. 지금 있는 정점과 걸음 수만 기억하면 메모리가 $O(\log n)$ 비트다. 다음 정점을 무작위로 고르는 [무작위 걷기](random-walks.md)는 $s$ 가 속한 성분의 모든 정점을 $O(n^3)$ 걸음 안에 높은 확률로 방문하므로, 무작위 비트를 쓰면 로그 공간에 판정된다[^3]. 무작위 비트 없이 같은 메모리로 해 보려면 이웃을 고르는 순서를 미리 정해야 하고, 길이 $n^3$ 의 걸음을 모두 시험하는 것은 경로를 기억할 수 없어 되지 않는다.
 
@@ -60,7 +62,7 @@ $G$ 의 각 정점을 $H$ 의 사본으로 바꾸고 사본 안의 걸음 사이
 
 - [공간 복잡도](space-complexity.md)의 로그 공간 부류. 방향 그래프의 도달 가능성은 NL-완전이고, 무방향 그래프의 연결성은 이 정리로 L 에 든다. 방향 그래프의 도달 가능성이 L 에 들면 $\mathrm L=\mathrm{NL}$ 이다.
 - 무작위 로그 공간 RL(randomized logarithmic space)의 탈무작위화. 직관 절의 무작위 걷기 알고리즘이 이 정리로 결정적 알고리즘으로 바뀌었다.
-- [Expander 그래프](expander-graphs.md)의 지그재그 곱은 명시적인 상수 차수 expander 의 구성으로 도입되었고, 이 정리에서 그래프의 성분을 expander 로 바꾸는 데 쓰인다.
+- Expander 그래프의 지그재그 곱은 명시적인 상수 차수 expander 의 구성으로 도입되었고, 이 정리에서 그래프의 성분을 expander 로 바꾸는 데 쓰인다.
 
 [^1]: O. Reingold, "Undirected connectivity in log-space", Journal of the ACM 55 (2008), Article 17. 학회 판은 Proceedings of the 37th ACM Symposium on Theory of Computing (2005), 376–385.
 [^2]: H. R. Lewis, C. H. Papadimitriou, "Symmetric space-bounded computation", Theoretical Computer Science 19 (1982), 161–187.

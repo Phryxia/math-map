@@ -2,11 +2,13 @@
 
 # 개요
 
-**Fibonacci 힙(Fibonacci heap)** 은 힙 조건을 만족하는 나무들의 모임으로 우선순위 큐를 구현하되, 정리 작업을 최솟값 삭제 때까지 미뤄 삽입과 키 감소를 [분할상환](amortized-analysis.md) 상수 시간에 하는 자료구조다. Fredman 과 Tarjan 이 1987 년에 제안했다[^1].
-
-[이진 힙](binary-heaps.md)은 키 감소가 $O(\log n)$ 이어서, 키 감소가 간선 수만큼 일어나는 Dijkstra 알고리즘이 $O(\lvert E\rvert\log\lvert V\rvert)$ 이다. Fibonacci 힙으로는 $O(\lvert E\rvert+\lvert V\rvert\log\lvert V\rvert)$ 다. 이름은 마디의 차수와 부분트리 크기 사이의 관계에 Fibonacci 수가 나타나는 데서 왔다.
+**Fibonacci 힙(Fibonacci heap)** 은 가장 작은 키를 빨리 꺼내는 우선순위 큐를, 정리 작업을 최솟값을 꺼낼 때까지 미뤄 구현한 자료구조다. [최단경로](shortest-paths.md)를 구하는 Dijkstra 알고리즘은 간선마다 키를 줄이는데, [이진 힙](binary-heaps.md)에서는 키를 줄일 때마다 $O(\log n)$ 이 들어 전체가 $O(\lvert E\rvert\log\lvert V\rvert)$ 다. Fibonacci 힙은 키가 줄어든 마디를 잘라 따로 한 그루로 두어 키 감소를 [분할상환](amortized-analysis.md) 상수 시간에 하고, Dijkstra 알고리즘을 $O(\lvert E\rvert+\lvert V\rvert\log\lvert V\rvert)$ 로 만든다.
 
 # 직관
+
+Fibonacci 힙은 힙 조건을 만족하는 나무들의 모임으로 우선순위 큐를 구현하되, 정리 작업을 최솟값 삭제 때까지 미뤄 삽입과 키 감소를 분할상환 상수 시간에 하는 자료구조다. Fredman 과 Tarjan 이 1987 년에 제안했다[^1].
+
+이진 힙은 키 감소가 $O(\log n)$ 이어서, 키 감소가 간선 수만큼 일어나는 Dijkstra 알고리즘이 $O(\lvert E\rvert\log\lvert V\rvert)$ 이다. Fibonacci 힙으로는 $O(\lvert E\rvert+\lvert V\rvert\log\lvert V\rvert)$ 다. 이름은 마디의 차수와 부분트리 크기 사이의 관계에 Fibonacci 수가 나타나는 데서 왔다.
 
 이진 힙에서 키를 줄이면 그 키를 뿌리 쪽으로 올리느라 높이만큼 자리를 바꾼다. 키가 줄어 부모보다 작아진 마디는 부모에게서 잘라 내 따로 한 그루의 나무로 두면 자리 바꾸기가 필요 없다. 삽입도 새 마디 하나를 나무 한 그루로 두면 끝난다. 그러면 나무가 많아지고 최솟값을 찾으려면 모든 뿌리를 보아야 한다.
 
@@ -47,7 +49,7 @@ Fibonacci 힙은 뿌리 있는 나무들의 모임이고, 각 나무는 부모�
 
 # 활용
 
-- [최단경로](shortest-paths.md)의 Dijkstra 알고리즘. 최솟값 삭제가 $\lvert V\rvert$ 번, 키 감소가 $\lvert E\rvert$ 번이므로 $O(\lvert E\rvert+\lvert V\rvert\log\lvert V\rvert)$ 다[^1].
+- 최단경로의 Dijkstra 알고리즘. 최솟값 삭제가 $\lvert V\rvert$ 번, 키 감소가 $\lvert E\rvert$ 번이므로 $O(\lvert E\rvert+\lvert V\rvert\log\lvert V\rvert)$ 다[^1].
 - [최소 신장트리](minimum-spanning-tree.md)의 Prim 알고리즘. 같은 이유로 $O(\lvert E\rvert+\lvert V\rvert\log\lvert V\rvert)$ 다.
 
 [^1]: M. L. Fredman, R. E. Tarjan, "Fibonacci heaps and their uses in improved network optimization algorithms", Journal of the ACM 34 (1987), 596–615.
