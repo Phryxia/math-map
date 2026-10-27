@@ -2,7 +2,9 @@
 
 # 개요
 
-**Poisson 합 공식(Poisson summation formula)** 은 정수점 위에서 함수를 다 더한 값과 그 [Fourier 변환](fourier-transform.md)을 정수점 위에서 다 더한 값이 같다는 항등식이다.
+**Poisson 합 공식(Poisson summation formula)** 은 정수점 위에서 함수를 다 더한 값과 그 [Fourier 변환](fourier-transform.md)을 정수점 위에서 다 더한 값이 같다는 항등식이다. 합 $\sum_n e^{-\pi n^2 t}$ 는 $t$ 가 작으면 항이 천천히 줄어 많은 항을 더해야 값이 나온다. Poisson 합 공식은 이 합을 Fourier 변환 쪽의 합 $t^{-1/2}\sum_k e^{-\pi k^2/t}$ 로 바꾸고, 그쪽은 $t$ 가 작을 때 첫 항만으로 값이 거의 정해진다.
+
+# 직관
 
 $$
 \sum_{n\in\mathbb Z}f(n)=\sum_{k\in\mathbb Z}\hat f(k),
@@ -15,8 +17,6 @@ $$
 [Euler–Maclaurin](euler-maclaurin.md)은 합과 적분의 차이를 발산하는 도함수 급수로 전개하고 최적 절단에서 $e^{-2\pi N}$ 규모의 오차를 남긴다. Poisson 합은 그 차이를 $\sum_{k\ne0}\hat f(k)$ 로 정확히 준다. 하나는 점근 전개이고 하나는 항등식이다.
 
 증명은 [Fourier 급수](fourier-series.md)의 수렴 정리를 한 점에서 읽는 것이다. 결과는 theta 함수의 변환식, $\zeta$ 의 함수방정식, [표본화 정리](sampling-theorem.md), 구 채우기의 상한에 닿는다.
-
-# 직관
 
 $f$ 를 정수만큼 평행이동해 전부 더한다.
 
