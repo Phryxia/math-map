@@ -2,15 +2,17 @@
 
 # 개요
 
-**De Morgan 법칙(De Morgan's laws)** 은 여집합이 합집합과 교집합을 서로 바꾼다는 두 등식이다.
+**De Morgan 법칙(De Morgan's laws)** 은 "아니다" 를 "그리고" 나 "또는" 으로 묶인 말에 걸면 "그리고" 와 "또는" 이 서로 바뀐다는 법칙이다. "비가 오고 바람이 분다" 가 거짓이면 "비가 오지 않거나 바람이 불지 않는다" 가 참이다. De Morgan 법칙은 부정과 여집합을 이렇게 안으로 넣는 두 등식으로, [집합](sets.md)과 명제의 식을 정리한다.
+
+# 직관
+
+De Morgan 법칙은 여집합이 합집합과 교집합을 서로 바꾼다는 두 등식이다.
 
 $$
 (A\cup B)^c=A^c\cap B^c,\qquad (A\cap B)^c=A^c\cup B^c
 $$
 
-[집합](sets.md)의 연산에서도 명제의 결합에서도 같은 꼴이고, 두 등식을 공리로 가진 구조가 [Boole 대수](boolean-algebras.md)다. 부정이 약한 [Heyting 대수](heyting-algebras.md)에서는 첫째 등식만 성립한다.
-
-# 직관
+집합의 연산에서도 명제의 결합에서도 같은 꼴이고, 두 등식을 공리로 가진 구조가 [Boole 대수](boolean-algebras.md)다. 부정이 약한 [Heyting 대수](heyting-algebras.md)에서는 첫째 등식만 성립한다.
 
 전체집합을 $1$ 부터 $10$ 까지의 정수로 두고 $A$ 를 2의 배수, $B$ 를 3의 배수라 한다. $A=\lbrace 2,4,6,8,10\rbrace$ 이고 $B=\lbrace 3,6,9\rbrace$ 이므로 $A\cup B=\lbrace 2,3,4,6,8,9,10\rbrace$ 이고 그 여집합은 $\lbrace 1,5,7\rbrace$ 이다.
 
