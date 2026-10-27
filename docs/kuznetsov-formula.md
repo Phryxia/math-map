@@ -2,11 +2,13 @@
 
 # 개요
 
-**Kuznetsov 공식(Kuznetsov formula)** 은 [Kloosterman 합](kloosterman-sums.md)의 가중 합을 [Maass 형식](maass-forms.md)과 [Eisenstein 급수](eisenstein-series.md)의 Fourier 계수로 이루어진 스펙트럼 합과 같다고 하는 등식이다. 양변의 어느 쪽을 추정의 대상으로 두는지에 따라 Kloosterman 합 사이의 상쇄와 자기동형 형식 계수의 평균을 서로 준다.
-
-Kuznetsov 가 1980 년에 증명했고[^1], 무게가 양인 정칙 형식 쪽의 짝은 [Petersson 공식](petersson-formula.md)이다.
+**Kuznetsov 공식(Kuznetsov formula)** 은 [Kloosterman 합](kloosterman-sums.md)들의 가중 합을 [모듈러 형식](modular-forms.md)의 Fourier 계수들의 합으로 바꿔 쓰는 등식이다. 소수 $c$ 에 대한 Kloosterman 합 $S(m,n;c)$ 는 크기가 $1$ 인 복소수 $c-1$ 개를 더한 것이지만, 그 크기는 $2\sqrt c$ 를 넘지 않는다. 여러 $c$ 에 걸친 합에서 이보다 큰 상쇄를 보이려면 합을 하나씩 추정해서는 부족하므로, Kuznetsov 공식은 그 합을 스펙트럼 쪽의 합으로 옮겨 다른 쪽의 추정으로 바꾼다.
 
 # 직관
+
+Kuznetsov 공식은 Kloosterman 합의 가중 합을 [Maass 형식](maass-forms.md)과 [Eisenstein 급수](eisenstein-series.md)의 Fourier 계수로 이루어진 스펙트럼 합과 같다고 하는 등식이다. 양변의 어느 쪽을 추정의 대상으로 두는지에 따라 Kloosterman 합 사이의 상쇄와 자기동형 형식 계수의 평균을 서로 준다.
+
+Kuznetsov 가 1980 년에 증명했고[^1], 무게가 양인 정칙 형식 쪽의 짝은 [Petersson 공식](petersson-formula.md)이다.
 
 $\sum_{c\le C}c^{-1}K(m,n;c)$ 의 크기를 재려 한다. Weil 상계가 항마다 $\sqrt c$ 쯤의 크기를 주므로 각 항이 $c^{-1/2}$ 크기이고 합이 $C^{1/2}$ 로 끝난다. $K(m,n;c)$ 의 부호는 $c$ 에 따라 바뀌므로 합은 그보다 훨씬 작아야 하는데, 항마다의 상계를 더하는 방법에는 그 상쇄가 들어오지 않는다.
 
@@ -69,7 +71,7 @@ Linnik 추측은 $\sum_{c\le C}c^{-1}K(m,n;c)$ 가 모든 $\varepsilon\gt 0$ 에
 # 활용
 
 - **이동 합성곱 합.** $\sum_{n\le N}a(n)\thinspace\overline{a(n+h)}$ 꼴의 합에서 $a$ 가 첨점 형식의 계수이면 합이 Kloosterman 합의 합으로 바뀌고 Kuznetsov 공식이 상계를 준다.
-- **첨점 형식 계수의 평균.** [모듈러 형식](modular-forms.md)의 Ramanujan 추측이 주는 개별 상계를 쓰지 않고 $\rho_j(n)$ 의 제곱 평균만으로 결과를 얻는 자리에 쓴다. 준위나 고윳값을 움직이는 아족 평균이 그렇다.
+- **첨점 형식 계수의 평균.** 모듈러 형식의 Ramanujan 추측이 주는 개별 상계를 쓰지 않고 $\rho_j(n)$ 의 제곱 평균만으로 결과를 얻는 자리에 쓴다. 준위나 고윳값을 움직이는 아족 평균이 그렇다.
 - **산술 함수의 합.** 약수 함수와 Fourier 계수를 곱해 더하는 합에서 오차항을 스펙트럼 쪽으로 넘긴다.
 - **[Weyl 법칙](weyl-law.md)의 정량화.** 고윳값의 개수 세기에 Fourier 계수의 분포를 함께 쓰는 결과가 이 공식에서 나온다.
 

@@ -2,11 +2,13 @@
 
 # 개요
 
-**$p$ 진 높이($p$-adic height)** 는 타원곡선의 유리점에 $p$ 진수를 붙이는 이차형식으로, [Néron–Tate 높이](canonical-height.md)의 실숫값 대신 $p$ 진 값을 갖는다. Néron–Tate 높이는 타원곡선의 유리점에 실수를 붙이고, 생성원들의 높이쌍 행렬식이 [BSD 추측](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer)의 선행계수에 들어가는 조절자다.
-
-**p 진 높이(p-adic height)** 는 같은 점에 $\mathbb Q_p$ 의 원소를 붙이는 쌍선형 형식이다. [p 진 L 함수](p-adic-l-function.md)의 값이 $\mathbb Q_p$ 에 있으므로 그 선행계수와 견줄 조절자도 $\mathbb Q_p$ 값이어야 한다. 정준 높이의 국소 분해에서 실수 로그를 $p$ 진 로그로 바꾸고, $p$ 자리의 항은 [Coleman 적분](coleman-integration.md)으로 정한다.
+**p 진 높이(p-adic height)** 는 타원곡선의 유리점이 얼마나 복잡한지를 $p$ 진수로 재는 값이다. 타원곡선 $y^2=x^3-2$ 위의 점 $(3,5)$ 를 $n$ 번 더한 점은 좌표의 분자와 분모의 자릿수가 $n^2$ 에 비례해 늘어나고, 이 증가율을 실수 로그로 잰 것이 보통의 높이다. p 진 높이는 같은 증가를 $p$ 진 로그로 재어, 값이 $p$ 진수인 L 함수의 선행계수와 견줄 수 있는 양을 준다.
 
 # 직관
+
+$p$ 진 높이는 타원곡선의 유리점에 $p$ 진수를 붙이는 이차형식으로, [Néron–Tate 높이](canonical-height.md)의 실숫값 대신 $p$ 진 값을 갖는다. Néron–Tate 높이는 타원곡선의 유리점에 실수를 붙이고, 생성원들의 높이쌍 행렬식이 [BSD 추측](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer)의 선행계수에 들어가는 조절자다.
+
+p 진 높이는 같은 점에 $\mathbb Q_p$ 의 원소를 붙이는 쌍선형 형식이다. [p 진 L 함수](p-adic-l-function.md)의 값이 $\mathbb Q_p$ 에 있으므로 그 선행계수와 견줄 조절자도 $\mathbb Q_p$ 값이어야 한다. 정준 높이의 국소 분해에서 실수 로그를 $p$ 진 로그로 바꾸고, $p$ 자리의 항은 [Coleman 적분](coleman-integration.md)으로 정한다.
 
 BSD 추측의 선행계수 등식은 좌변에 $L$ 함수의 $r$ 계 도함수를, 우변에 조절자 $\mathrm{Reg}\_E=\det(\langle P_i,P_j\rangle)$ 를 놓는다. $p$ 진 $L$ 함수 $L_p(E,s)$ 로 같은 등식을 쓰려고 하면 좌변은 $\mathbb Q_p$ 의 원소이고 우변은 실수라 두 값을 같다고 놓을 자리가 없다. $x$ 좌표를 기약분수 $a/b$ 로 쓴 $h(P)=\log\max(\vert a\vert,\vert b\vert)$ 의 로그는 실수이고 $\mathbb Q_p$ 의 원소가 아니다. 로그를 떼고 $\max(\vert a\vert,\vert b\vert)$ 를 $\mathbb Q_p$ 의 원소로 보아도 $4^{-n}h(2^nP)$ 에서 $4^{-n}$ 은 $p\ne 2$ 일 때 $p$ 진 절댓값이 $1$ 이라 항이 작아지지 않아 Tate 의 극한이 수렴하지 않는다.
 

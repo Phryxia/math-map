@@ -2,15 +2,17 @@
 
 # 개요
 
-**Poincaré–Hopf 정리(Poincaré–Hopf theorem)** 는 콤팩트 [다양체](manifolds.md) 위 접벡터장의 특이점에 붙는 정수(지표)의 합이 벡터장과 무관하다는 진술이다.
+**Poincaré–Hopf 정리(Poincaré–Hopf theorem)** 는 곡면 위의 각 점에 바람의 방향을 그리면 바람이 멈추는 점들이 생기고, 그 점들에 붙인 정수의 합이 곡면의 모양만으로 정해진다는 정리다. 구면 위에서 북극에서 남극으로 부는 바람은 두 극에서 멈추고, 두 극에 붙는 정수가 각각 $+1$ 이어서 합이 $2$ 다. Poincaré–Hopf 정리는 바람을 어떻게 그려도 이 합이 [Euler 지표](euler-characteristic.md)와 같음을 보여, 멈추는 점이 있어야 하는지를 위상으로 판정한다.
+
+# 직관
+
+Poincaré–Hopf 정리는 콤팩트 [다양체](manifolds.md) 위 접벡터장의 특이점에 붙는 정수(지표)의 합이 벡터장과 무관하다는 진술이다.
 
 $$
 \sum_{p:\thinspace V(p)=0}\mathrm{ind}\_p(V)=\chi(M)
 $$
 
-벡터장에 따라 특이점의 개수와 위치가 달라져도 지표의 합은 [Euler 지표](euler-characteristic.md)로 고정된다. [Gauss–Bonnet 정리](gauss-bonnet.md)에서 [곡률](curvature.md)의 적분이 위상으로 고정되는 것과 같은 형태이고, 두 정리는 서로를 유도한다.
-
-# 직관
+벡터장에 따라 특이점의 개수와 위치가 달라져도 지표의 합은 Euler 지표로 고정된다. [Gauss–Bonnet 정리](gauss-bonnet.md)에서 [곡률](curvature.md)의 적분이 위상으로 고정되는 것과 같은 형태이고, 두 정리는 서로를 유도한다.
 
 ## 구면 위의 벡터장
 

@@ -2,11 +2,13 @@
 
 # 개요
 
-**다모듈 다면체(polymatroid)** 는 $f(\varnothing)=0$ 인 단조 [부분모듈 함수](submodular-functions.md) $f$ 에 대해 $P_f=\lbrace x\in\mathbb R^E_{\ge 0} : \sum_{e\in S}x_e\le f(S)\ \text{for all}\ S\subseteq E\rbrace$ 로 정의되는 다면체다. J. Edmonds 가 1970 년에 도입했다[^1]. $f$ 가 [matroid](matroids.md) 의 계수 함수이면 $P_f$ 는 독립집합의 지시벡터들의 볼록 껍질이다.
-
-[Matroid 교집합 정리](matroid-intersection.md)와 탐욕법의 최적성은 이 다면체 위의 [선형계획법](linear-programming.md)으로 다시 증명된다. 탐욕법이 다면체의 꼭짓점을 주고, 두 다모듈 다면체의 교집합에서도 정수 꼭짓점이 유지된다.
+**다모듈 다면체(polymatroid)** 는 원소들의 모임마다 상한을 정해 두고, 각 원소에 음이 아닌 양을 상한을 넘지 않게 나눠 주는 방법 전체가 이루는 다면체다. 세 사람에게 예산을 나눌 때 한 사람의 몫은 $1$ 이하, 두 사람의 몫의 합은 $1.5$ 이하, 세 사람의 합은 $2$ 이하라는 제약이 그런 상한이다. 다모듈 다면체는 상한이 부분모듈 조건을 만족하면 몫의 가중합을 최대로 하는 분배를 탐욕법으로 찾을 수 있음을 보이고, 이 다면체 위의 [선형계획법](linear-programming.md)으로 matroid 의 최적화 정리를 증명한다.
 
 # 직관
+
+다모듈 다면체는 $f(\varnothing)=0$ 인 단조 [부분모듈 함수](submodular-functions.md) $f$ 에 대해 $P_f=\lbrace x\in\mathbb R^E_{\ge 0} : \sum_{e\in S}x_e\le f(S)\ \text{for all}\ S\subseteq E\rbrace$ 로 정의되는 다면체다. J. Edmonds 가 1970 년에 도입했다[^1]. $f$ 가 [matroid](matroids.md) 의 계수 함수이면 $P_f$ 는 독립집합의 지시벡터들의 볼록 껍질이다.
+
+[Matroid 교집합 정리](matroid-intersection.md)와 탐욕법의 최적성은 이 다면체 위의 선형계획법으로 다시 증명된다. 탐욕법이 다면체의 꼭짓점을 주고, 두 다모듈 다면체의 교집합에서도 정수 꼭짓점이 유지된다.
 
 $E=\lbrace a,b,c\rbrace$ 에서 크기 $2$ 이하인 부분집합을 독립으로 하는 matroid 의 계수는 $r(S)=\min(2,\lvert S\rvert)$ 다. 무게 $w_a=3$, $w_b=2$, $w_c=1$ 에서 무게 합이 가장 큰 독립집합은 탐욕법으로 $\lbrace a,b\rbrace$ 이고 값은 $5$ 다.
 

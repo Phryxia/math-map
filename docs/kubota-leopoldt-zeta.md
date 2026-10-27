@@ -2,11 +2,13 @@
 
 # 개요
 
-**Kubota–Leopoldt p 진 zeta 함수(Kubota–Leopoldt p-adic zeta function)** 는 Riemann zeta 의 음의 정수 값 $\zeta(1-n)=-B_n/n$ 을 $p$ 진 위치에서 이어 만든 $\mathbb Z_p$ 상의 해석함수다. [Dirichlet 지표](dirichlet-l-functions.md) $\chi$ 를 붙인 꼴 $L_p(s,\chi)$ 가 표준 대상이고, 음의 정수에서의 값이 [일반화 Bernoulli 수](bernoulli-numbers.md)로 주어진다.
-
-이 함수를 [Iwasawa 대수](iwasawa-algebra.md) $\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 의 원소로 다시 쓴 것이 [Iwasawa 주추측](iwasawa-main-conjecture.md)의 해석적 변이다.
+**Kubota–Leopoldt p 진 zeta 함수(Kubota–Leopoldt p-adic zeta function)** 는 [Riemann zeta 함수](riemann-zeta.md)의 음의 정수 값들을 $p$ 진수 위의 연속함수 하나로 이은 것이다. $p=5$ 일 때 $n=2$ 와 $n=6$ 에서 $(1-5^{n-1})\zeta(1-n)$ 을 계산하면 $(1-5)\cdot(-1/12)=1/3$ 과 $(1-5^5)\cdot(-1/252)=781/63$ 이고, 두 값은 $5$ 를 법으로 합동이다. 이 함수는 이런 합동을 $p$ 진 연속성으로 보고 음의 정수 값을 이은 해석함수를 만들어, [Bernoulli 수](bernoulli-numbers.md)와 류수의 $p$ 진 성질을 계산한다.
 
 # 직관
+
+Kubota–Leopoldt p 진 zeta 함수는 Riemann zeta 의 음의 정수 값 $\zeta(1-n)=-B_n/n$ 을 $p$ 진 위치에서 이어 만든 $\mathbb Z_p$ 상의 해석함수다. [Dirichlet 지표](dirichlet-l-functions.md) $\chi$ 를 붙인 꼴 $L_p(s,\chi)$ 가 표준 대상이고, 음의 정수에서의 값이 일반화 Bernoulli 수로 주어진다.
+
+이 함수를 [Iwasawa 대수](iwasawa-algebra.md) $\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 의 원소로 다시 쓴 것이 [Iwasawa 주추측](iwasawa-main-conjecture.md)의 해석적 변이다.
 
 $\zeta(1-n)=-B_n/n$ 은 유리수이므로 $p$ 진수로 읽을 수 있다. $n$ 을 $p$ 진으로 움직이며 이 값을 잇고 싶다. 바로는 막힌다. von Staudt–Clausen 정리로 $(p-1)\mid n$ 이면 $B_n$ 의 분모가 $p$ 를 담아 $\zeta(1-n)$ 이 $p$ 진 정수가 아니다. 남은 $n$ 에서 값이 어떻게 움직이는지를 $p=5$ 에서 본다. $n=2$ 에서 $-B_2/2=-1/12$ 이고 $n=6$ 에서 $-B_6/6=-1/252$ 인데, 두 수를 $5$ 진으로 견주면 $-1/12\equiv 2$ , $-1/252\equiv 2 \pmod 5$ 다.
 
