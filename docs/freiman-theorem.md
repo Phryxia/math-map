@@ -2,11 +2,13 @@
 
 # 개요
 
-**Freiman 정리(Freiman's theorem)** 는 정수의 유한집합 $A$ 가 $\lvert A+A\rvert\le K\lvert A\rvert$ 를 만족하면, $A$ 가 차원이 $K$ 에만 의존하고 크기가 $\lvert A\rvert$ 의 $K$ 에만 의존하는 상수배 이하인 일반화 등차수열에 포함된다는 정리다. G. A. Freiman 이 1973 년에 증명했고[^1], I. Z. Ruzsa 가 [이산 Fourier 변환](fourier.md)과 [격자](lattices.md)의 Minkowski 정리를 쓰는 짧은 증명을 주었다[^2].
-
-합집합의 크기가 작다는 덧셈 쪽의 정보에서 집합의 모양을 정하는 역정리(inverse theorem)이고, Gowers 의 [Szemerédi 정리](szemeredi-theorem.md) 증명과 [Gowers 균등 노름](gowers-norms.md)의 역정리에 쓰인다.
+**Freiman 정리(Freiman's theorem)** 는 원소끼리 더한 값이 적게 나오는 정수 집합은 등차수열에 가까운 모양이라는 정리다. $\lbrace 1,2,\dots,100\rbrace$ 에서 두 원소를 더하면 $2$ 부터 $200$ 까지 $199$ 가지 값만 나오지만, $\lbrace 2,4,8,\dots,2^{100}\rbrace$ 에서는 $5050$ 가지 값이 모두 다르게 나온다. Freiman 정리는 합의 가짓수가 원소 수의 상수배 이하라는 조건에서 그 집합을 포함하는 등차수열 꼴의 집합을 찾아, 덧셈의 정보로 집합의 모양을 정한다.
 
 # 직관
+
+Freiman 정리는 정수의 유한집합 $A$ 가 $\lvert A+A\rvert\le K\lvert A\rvert$ 를 만족하면, $A$ 가 차원이 $K$ 에만 의존하고 크기가 $\lvert A\rvert$ 의 $K$ 에만 의존하는 상수배 이하인 일반화 등차수열에 포함된다는 정리다. G. A. Freiman 이 1973 년에 증명했고[^1], I. Z. Ruzsa 가 [이산 Fourier 변환](fourier.md)과 [격자](lattices.md)의 Minkowski 정리를 쓰는 짧은 증명을 주었다[^2].
+
+합집합의 크기가 작다는 덧셈 쪽의 정보에서 집합의 모양을 정하는 역정리(inverse theorem)이고, Gowers 의 [Szemerédi 정리](szemeredi-theorem.md) 증명과 [Gowers 균등 노름](gowers-norms.md)의 역정리에 쓰인다.
 
 $\lbrace 1,\dots,n\rbrace$ 에서 두 수를 더하면 $2$ 부터 $2n$ 까지 $2n-1$ 가지 합이 나온다. $n$ 개의 수를 아무렇게나 고르면 두 수의 합은 대개 서로 달라 $n(n+1)/2$ 가지에 가깝다. 합이 적게 나오는 집합은 원소들이 일정한 간격으로 늘어선 집합이다.
 
