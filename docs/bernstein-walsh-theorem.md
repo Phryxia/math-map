@@ -2,11 +2,13 @@
 
 # 개요
 
-**Bernstein–Walsh 정리(Bernstein–Walsh theorem)** 는 콤팩트 집합 $K$ 위의 함수를 차수 $n$ 의 다항식으로 근사하는 최선 오차가 $R^{-n}$ 규모로 줄어드는 것과, 그 함수가 $K$ 의 [Green 함수](greens-function.md)의 등위선 $g_K=\log R$ 안쪽까지 정칙함수로 연장되는 것이 동치라는 정리다. S. N. Bernstein 이 구간에 대해 1912 년에 증명했고, J. L. Walsh 가 일반 콤팩트 집합으로 넓혔다[^1].
-
-등위선은 [로그 용량](logarithmic-capacity.md) 문서의 Green 함수 $g_K$ 로 정해지고, 증명의 한쪽은 그 문서의 Bernstein–Walsh 부등식이다.
+**Bernstein–Walsh 정리(Bernstein–Walsh theorem)** 는 함수를 다항식으로 근사할 때 오차가 줄어드는 빠르기가 그 함수를 복소평면으로 얼마나 멀리 연장할 수 있는지로 정해진다는 정리다. $f(x)=1/(1+25x^2)$ 은 $\lbrack -1,1\rbrack$ 에서 매끄럽지만 복소평면의 $x=\pm i/5$ 에서 발산하고, 이 때문에 차수 $n$ 의 다항식으로 근사한 오차가 대략 $1.22^{-n}$ 보다 빨리 줄지 않는다. 정리는 근사 오차가 $R^{-n}$ 규모로 줄어드는 것과 함수가 [Green 함수](greens-function.md)의 등위선 $g_K=\log R$ 안쪽까지 정칙으로 연장되는 것이 동치임을 보여, 근사의 빠르기를 특이점의 위치로 계산하게 한다.
 
 # 직관
+
+Bernstein–Walsh 정리는 콤팩트 집합 $K$ 위의 함수를 차수 $n$ 의 다항식으로 근사하는 최선 오차가 $R^{-n}$ 규모로 줄어드는 것과, 그 함수가 $K$ 의 Green 함수의 등위선 $g_K=\log R$ 안쪽까지 정칙함수로 연장되는 것이 동치라는 정리다. S. N. Bernstein 이 구간에 대해 1912 년에 증명했고, J. L. Walsh 가 일반 콤팩트 집합으로 넓혔다[^1].
+
+등위선은 [로그 용량](logarithmic-capacity.md) 문서의 Green 함수 $g_K$ 로 정해지고, 증명의 한쪽은 그 문서의 Bernstein–Walsh 부등식이다.
 
 $f(x)=1/(1+25x^2)$ 을 $\lbrack-1,1\rbrack$ 에서 다항식으로 근사한다. $0$ 에서의 [멱급수](power-series.md)는 $\sum_k(-25x^2)^k$ 이고 $\vert x\vert\lt 1/5$ 에서만 수렴하므로, 부분합으로는 $\lbrack-1,1\rbrack$ 전체를 근사하지 못한다. 수렴 반지름을 정한 것은 복소평면의 극 $\pm i/5$ 다.
 

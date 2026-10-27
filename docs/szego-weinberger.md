@@ -2,15 +2,17 @@
 
 # 개요
 
-**Szegő–Weinberger 부등식(Szegő–Weinberger inequality)** 은 부피가 같은 매끄러운 유계 영역 가운데 Neumann 경계조건의 [Laplace 연산자](laplace-operator.md)의 $0$ 이 아닌 첫 고윳값이 가장 큰 것이 공이라는 부등식이다. $\Omega^\ast$ 를 $\Omega$ 와 부피가 같은 공이라 하면
+**Szegő–Weinberger 부등식(Szegő–Weinberger inequality)** 은 넓이가 같은 막 가운데 가장자리가 자유로운 막의 가장 낮은 진동수가 가장 높은 것이 원이라는 부등식이다. 가장자리를 고정하지 않은 막은 통째로 오르내리는 진동수 $0$ 의 운동을 갖고, 그다음 진동수 $\mu_1$ 은 막의 모양에 따라 달라진다. 이 부등식은 부피가 같은 공 $\Omega^\ast$ 에 대해 $\mu_1(\Omega)\le\mu_1(\Omega^\ast)$ 임을 보이며, 공의 첫 고유함수를 본뜬 시험함수를 Rayleigh 몫에 넣어 증명한다.
+
+# 직관
+
+Szegő–Weinberger 부등식은 부피가 같은 매끄러운 유계 영역 가운데 Neumann 경계조건의 [Laplace 연산자](laplace-operator.md)의 $0$ 이 아닌 첫 고윳값이 가장 큰 것이 공이라는 부등식이다. $\Omega^\ast$ 를 $\Omega$ 와 부피가 같은 공이라 하면
 
 $$
 \mu_1(\Omega)\le\mu_1(\Omega^\ast)
 $$
 
 이다. Dirichlet 첫 고윳값을 공이 최소로 하는 [Faber–Krahn 부등식](faber-krahn.md)과 방향이 반대다. G. Szegő 가 평면의 단순연결 영역에서[^1], H. Weinberger 가 모든 차원에서 증명했다[^2].
-
-# 직관
 
 Neumann 경계조건의 막은 가장자리가 자유롭게 움직인다. 첫 고윳값 $0$ 은 막 전체가 같이 오르내리는 상수 함수의 것이고, $\mu_1$ 은 평균이 $0$ 인 함수에 걸친 Rayleigh 몫 $\int\Vert\nabla u\Vert^2/\int u^2$ 의 최솟값이다.
 

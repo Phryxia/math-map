@@ -2,11 +2,13 @@
 
 # 개요
 
-**Schauder 추정(Schauder estimates)** 은 2계 타원형 방정식 $Lu=f$ 에서 계수와 $f$ 가 지수 $\alpha$ 의 Hölder 조건을 만족하면 해의 2계 도함수까지 같은 지수의 Hölder 조건을 만족한다는 부등식이다. 자료와 해를 모두 [Hölder 공간](holder-spaces.md)에서 재고, 미분 횟수만 둘 올린다.
-
-[타원형 정칙성](elliptic-regularity.md)의 $H^k$ 판은 자료가 $H^k$ 에 들면 해가 $H^{k+2}$ 에 든다는 것을 주고, 그 결론에서 각 점의 2계 도함수를 읽으려면 Sobolev 매입을 한 번 더 거쳐야 한다. Schauder 추정은 그 매입 없이 $C^{2,\alpha}$ 를 바로 준다.
+**Schauder 추정(Schauder estimates)** 은 2계 타원형 방정식의 우변과 계수가 조금 매끄러우면 해는 그보다 미분 두 번만큼 더 매끄럽다는 부등식이다. 공 $B_1$ 에서 $-\Delta u=f$ 를 풀 때 $f$ 가 연속이기만 하면 $u$ 의 2계 도함수가 유계가 아닐 수 있지만, $f$ 가 지수 $\alpha$ 의 Hölder 조건을 만족하면 2계 도함수도 같은 조건을 만족한다. Schauder 추정은 자료와 해를 모두 [Hölder 공간](holder-spaces.md)에서 재어 $\Vert u\Vert\_{C^{2,\alpha}}$ 를 $\Vert f\Vert\_{C^{\alpha}}$ 와 $u$ 의 크기로 누르고, 이 부등식으로 비선형 방정식의 해의 존재와 매끄러움을 증명한다.
 
 # 직관
+
+Schauder 추정은 2계 타원형 방정식 $Lu=f$ 에서 계수와 $f$ 가 지수 $\alpha$ 의 Hölder 조건을 만족하면 해의 2계 도함수까지 같은 지수의 Hölder 조건을 만족한다는 부등식이다. 자료와 해를 모두 Hölder 공간에서 재고, 미분 횟수만 둘 올린다.
+
+[타원형 정칙성](elliptic-regularity.md)의 $H^k$ 판은 자료가 $H^k$ 에 들면 해가 $H^{k+2}$ 에 든다는 것을 주고, 그 결론에서 각 점의 2계 도함수를 읽으려면 Sobolev 매입을 한 번 더 거쳐야 한다. Schauder 추정은 그 매입 없이 $C^{2,\alpha}$ 를 바로 준다.
 
 $B_1\subset\mathbb R^n$ 에서 $-\Delta u=f$ 를 풀고 $u$ 의 2계 도함수가 유계인지 본다. 기본해 $\Gamma$ 로 쓴 Newton 퍼텐셜
 

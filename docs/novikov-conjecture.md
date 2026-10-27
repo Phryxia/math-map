@@ -2,15 +2,17 @@
 
 # 개요
 
-**Novikov 추측(Novikov conjecture)** 은 닫힌 방향 다양체 $M$ 과 연속사상 $f\colon M\to BG$ 에 대해, 고차 부호수
+**Novikov 추측(Novikov conjecture)** 은 다양체의 부호수를 넓힌 어떤 수들이, 다양체를 연속 변형으로 같은 모양인 다른 다양체로 바꿔도 변하지 않는다는 추측이다. 닫힌 $4$ 차원 다양체의 부호수는 교차형식만으로 정해지므로 호모토피 동치에서 바뀌지 않는데, [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md)는 이 수를 Pontryagin 류의 식으로 적고 Pontryagin 류 하나하나는 호모토피 동치에서 바뀐다. Novikov 추측은 다양체의 기본군에서 오는 코호몰로지류를 L 류에 곱해 얻은 고차 부호수도 부호수처럼 호모토피 동치에서 변하지 않는다고 주장한다.
+
+# 직관
+
+Novikov 추측은 닫힌 방향 다양체 $M$ 과 연속사상 $f\colon M\to BG$ 에 대해, 고차 부호수
 
 $$
 \mathrm{sign}\_x(M,f)=\langle L(M)\cup f^\ast x,\lbrack M\rbrack\rangle\qquad(x\in H^\ast(BG;\mathbb Q))
 $$
 
-가 방향을 보존하는 호모토피 동치에서 바뀌지 않는다는 추측이다. $L(M)$ 은 [Hirzebruch 부호수 정리](hirzebruch-signature-theorem.md)의 $L$ 류이고, $BG$ 는 이산군 $G$ 의 [분류공간](classifying-spaces.md)이다. Novikov 가 1970 년에 제시했다[^1].
-
-# 직관
+가 방향을 보존하는 호모토피 동치에서 바뀌지 않는다는 추측이다. $L(M)$ 은 Hirzebruch 부호수 정리의 $L$ 류이고, $BG$ 는 이산군 $G$ 의 [분류공간](classifying-spaces.md)이다. Novikov 가 1970 년에 제시했다[^1].
 
 Hirzebruch 부호수 정리는 $\mathrm{sign}(M)=\langle L(M),\lbrack M\rbrack\rangle$ 이다. 좌변은 코호몰로지의 컵곱만으로 정해지므로 호모토피 동치에서 바뀌지 않는다. 우변의 [Pontryagin 류](pontryagin-classes.md)는 하나하나가 호모토피 불변이 아니지만 $L$ 류를 기본류에 짝지은 이 수 하나는 불변이다. $L(M)$ 에 다른 코호몰로지류를 곱해 짝지은 수도 불변인지 묻는다.
 
