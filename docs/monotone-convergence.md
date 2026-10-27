@@ -2,11 +2,13 @@
 
 # 개요
 
-**단조 수렴 정리(monotone convergence theorem)** 는 음이 아닌 [가측함수](measurable-functions.md)열 $f_n$ 이 점마다 증가해 $f$ 로 가면 $\int f_n\to\int f$ 라는 정리다. [균등수렴](uniform-convergence.md)도 지배함수도 요구하지 않는다.
-
-[Lebesgue 적분](lebesgue-integral.md)은 아래에 놓인 단순함수들의 상한으로 정의해서 선형성조차 정의에서 바로 나오지 않는다. 선형성, 급수와 적분의 교환, Fatou 보조정리, [지배수렴 정리](dominated-convergence.md)를 이 정리로 증명한다.
+**단조 수렴 정리(monotone convergence theorem)** 는 점마다 커지는 음이 아닌 함수열에서는 극한과 적분의 순서를 바꿔도 된다는 정리다. $[0,1]$ 위에서 $f_n(x)=\min(n,1/\sqrt x)$ 는 점마다 커지며 $1/\sqrt x$ 로 가고, 각 $f_n$ 의 적분 $2-1/n$ 이 $1/\sqrt x$ 의 적분 $2$ 로 간다. 단조 수렴 정리는 함수열이 아래에서 올라가기만 하면 다른 조건 없이 적분의 극한이 극한의 적분과 같음을 보이고, 이것으로 [Lebesgue 적분](lebesgue-integral.md)의 기본 성질을 증명한다.
 
 # 직관
+
+단조 수렴 정리는 음이 아닌 [가측함수](measurable-functions.md)열 $f_n$ 이 점마다 증가해 $f$ 로 가면 $\int f_n\to\int f$ 라는 정리다. [균등수렴](uniform-convergence.md)도 지배함수도 요구하지 않는다.
+
+Lebesgue 적분은 아래에 놓인 단순함수들의 상한으로 정의해서 선형성조차 정의에서 바로 나오지 않는다. 선형성, 급수와 적분의 교환, Fatou 보조정리, [지배수렴 정리](dominated-convergence.md)를 이 정리로 증명한다.
 
 $f_n=\min(f,n)$ 은 $f$ 를 높이 $n$ 에서 잘라 낸 함수다. 점마다 증가해 $f$ 로 가고, 각 $\int f_n$ 은 $\int f$ 이하다. 정리에 따르면 $\int f_n$ 은 $\int f$ 까지 올라간다. $f$ 아래의 단순함수 $s$ 는 유한한 값만 가지므로 어느 $n$ 부터는 $f_n$ 아래에 있고, 그래서 $\int f_n$ 의 극한은 어떤 $\int s$ 보다도 작지 않다.
 

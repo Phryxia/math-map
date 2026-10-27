@@ -2,11 +2,13 @@
 
 # 개요
 
-**Monad** 는 한 [범주](category.md) $\mathcal C$ 위에서 무언가를 형식적으로 덧붙였다가 두 겹으로 쌓인 것을 한 겹으로 평탄화하는 구조다. 데이터는 자기 [함자](functors.md) $T : \mathcal C \to \mathcal C$ 와 두 [자연변환](natural-transformations.md) $\eta : \mathrm{id} \Rightarrow T$ , $\mu : T^2 \Rightarrow T$ 이고 조건은 결합법칙과 단위법칙이다.
-
-[수반](adjunctions.md)과의 관계가 이 구조의 위치를 정한다. 모든 수반 $F \dashv G$ 는 $T = GF$ 로 monad 를 남기고, 모든 monad 는 그것을 낳는 수반으로 분해된다. monad 는 수반을 한쪽 범주에서만 본 것이고, 거기서 원래 수반을 복원하는 방법이 Kleisli 와 Eilenberg–Moore 둘이다.
+**Monad** 는 어떤 구성을 덧붙이는 규칙과, 두 번 덧붙인 것을 한 번으로 합치는 규칙을 함께 가진 구조다. 원소 $x$ 를 목록 $\lbrack x\rbrack$ 로 감쌀 수 있고, 목록의 목록 $\lbrack\lbrack 1,2\rbrack,\lbrack 3\rbrack\rbrack$ 을 펼쳐 $\lbrack 1,2,3\rbrack$ 으로 합칠 수 있다. Monad 는 감싸기와 펼치기가 지킬 결합법칙과 단위법칙을 정해, 목록, 확률분포, 예외 처리 같은 구성을 한 [범주](category.md) 위의 같은 틀로 다룬다.
 
 # 직관
+
+Monad 는 한 범주 $\mathcal C$ 위에서 무언가를 형식적으로 덧붙였다가 두 겹으로 쌓인 것을 한 겹으로 평탄화하는 구조다. 데이터는 자기 [함자](functors.md) $T : \mathcal C \to \mathcal C$ 와 두 [자연변환](natural-transformations.md) $\eta : \mathrm{id} \Rightarrow T$ , $\mu : T^2 \Rightarrow T$ 이고 조건은 결합법칙과 단위법칙이다.
+
+[수반](adjunctions.md)과의 관계가 이 구조의 위치를 정한다. 모든 수반 $F \dashv G$ 는 $T = GF$ 로 monad 를 남기고, 모든 monad 는 그것을 낳는 수반으로 분해된다. monad 는 수반을 한쪽 범주에서만 본 것이고, 거기서 원래 수반을 복원하는 방법이 Kleisli 와 Eilenberg–Moore 둘이다.
 
 ## 리스트 monad 의 평탄화
 

@@ -2,11 +2,13 @@
 
 # 개요
 
-**Nakayama 보조정리(Nakayama's lemma)** 는 유한생성 [가군](modules.md) $M$ 과 Jacobson 근기에 들어가는 [아이디얼](ideals-quotient-rings.md) $I$ 에 대해 $IM=M$ 이면 $M=0$ 이라는 진술이다. 국소환에서는 $I$ 를 극대 아이디얼 $\mathfrak m$ 으로 잡아 쓴다.
-
-이 보조정리가 국소환 위의 가군을 잉여체 위의 [벡터 공간](vector-spaces.md)으로 내려 읽게 한다. $M/\mathfrak mM$ 은 체 $k=R/\mathfrak m$ 위의 벡터 공간이고, 그 기저를 들어 올린 것이 $M$ 의 최소 생성계가 된다. 선형대수에서만 성립하던 차원 논증이 [국소환](localization-rings.md) 위에서 되살아난다.
+**Nakayama 보조정리(Nakayama's lemma)** 는 유한생성 [가군](modules.md)의 생성원을 몫 하나에서 셀 수 있게 하는 보조정리다. 분모가 $p$ 로 나누어지지 않는 분수 전체의 환 위의 유한생성 가군 $M$ 에서, $M/pM$ 은 원소가 $p$ 개인 체 위의 [벡터 공간](vector-spaces.md)이라 생성원 개수가 차원으로 바로 나온다. Nakayama 보조정리는 $M/pM$ 의 기저를 $M$ 으로 들어 올리면 그대로 $M$ 의 생성원이 됨을 보여, 국소환 위 가군의 생성원 문제를 선형대수로 푼다.
 
 # 직관
+
+Nakayama 보조정리는 유한생성 가군 $M$ 과 Jacobson 근기에 들어가는 [아이디얼](ideals-quotient-rings.md) $I$ 에 대해 $IM=M$ 이면 $M=0$ 이라는 진술이다. 국소환에서는 $I$ 를 극대 아이디얼 $\mathfrak m$ 으로 잡아 쓴다.
+
+이 보조정리가 국소환 위의 가군을 잉여체 위의 벡터 공간으로 내려 읽게 한다. $M/\mathfrak mM$ 은 체 $k=R/\mathfrak m$ 위의 벡터 공간이고, 그 기저를 들어 올린 것이 $M$ 의 최소 생성계가 된다. 선형대수에서만 성립하던 차원 논증이 [국소환](localization-rings.md) 위에서 되살아난다.
 
 유한생성 조건이 없으면 진술은 거짓이다. $R=\mathbb Z\_{(p)}$ 와 $M=\mathbb Q$ 를 잡으면 $pM=M$ 이지만 $M\ne 0$ 이다. $\mathbb Q$ 가 유한생성이 아니어서 "가장 나중 생성원" 을 고를 수 없다.
 
