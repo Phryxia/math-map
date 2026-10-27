@@ -2,11 +2,13 @@
 
 # 개요
 
-**쉬운 증거 보조정리(easy witness lemma)** 는 NEXP(nondeterministic exponential time)의 모든 언어가 다항 크기 회로로 계산되면, NEXP 의 모든 검증기에서 받아들여지는 입력마다 작은 회로의 진리표로 쓰이는 증거가 있다는 정리다. R. Impagliazzo, V. Kabanets, A. Wigderson 이 2002 년에 증명했다[^1].
-
-길이가 지수인 증거를 다항 크기 회로 하나로 줄여 쓸 수 있으므로, 증거를 추측하는 비용이 지수에서 다항으로 줄어든다. [Williams 정리](williams-theorem.md)의 증명에서 이 축소가 [시간 계층 정리](time-hierarchy-theorem.md)와 모순을 만드는 단계다.
+**쉬운 증거 보조정리(easy witness lemma)** 는 긴 증거로 확인하는 문제들이 모두 작은 회로로 풀리면, 그 증거도 작은 회로로 짧게 적을 수 있다는 정리다. 비결정적 지수 시간(nondeterministic exponential time, NEXP)의 언어는 길이 $2^{\lvert x\rvert^c}$ 인 증거로 확인되는데, 이 증거를 추측하려면 지수 길이의 비트열을 다 적어야 한다. 이 보조정리는 길이 $2^m$ 인 증거를 $m$ 비트 입력 함수의 진리표로 보고 그 함수가 작은 회로로 계산됨을 보여, 증거를 추측하는 비용을 회로 하나를 추측하는 비용으로 줄인다.
 
 # 직관
+
+쉬운 증거 보조정리는 NEXP 의 모든 언어가 다항 크기 회로로 계산되면, NEXP 의 모든 검증기에서 받아들여지는 입력마다 작은 회로의 진리표로 쓰이는 증거가 있다는 정리다. R. Impagliazzo, V. Kabanets, A. Wigderson 이 2002 년에 증명했다[^1].
+
+길이가 지수인 증거를 다항 크기 회로 하나로 줄여 쓸 수 있으므로, 증거를 추측하는 비용이 지수에서 다항으로 줄어든다. [Williams 정리](williams-theorem.md)의 증명에서 이 축소가 [시간 계층 정리](time-hierarchy-theorem.md)와 모순을 만드는 단계다.
 
 NEXP 의 언어 $L$ 은 검증기 $V$ 로 정해진다. $x\in L$ 이면 길이 $2^{\lvert x\rvert^c}$ 의 증거 $y$ 가 있어서 $V(x,y)$ 가 받아들이고, $x\notin L$ 이면 어떤 $y$ 도 받아들여지지 않는다. 길이가 $2^m$ 인 비트열 $y$ 는 $m$ 비트 입력의 함수의 진리표이므로, $y$ 를 계산하는 [불 회로](boolean-circuits.md)가 작으면 증거를 그 회로로 적을 수 있다.
 

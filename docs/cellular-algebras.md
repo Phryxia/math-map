@@ -2,11 +2,13 @@
 
 # 개요
 
-**세포대수(cellular algebra)** 는 반단순이 아니어도 기약 가군을 분류할 수 있게 하는 기저를 가진 결합대수다. 기저가 $C^\lambda\_{ST}$ 꼴로 매개되고 곱셈이 $\lambda$ 에 대한 순서를 따라 삼각형이다. 대합 하나가 $S$ 와 $T$ 를 맞바꾼다.
-
-각 $\lambda$ 마다 세포 가군 $W(\lambda)$ 와 그 위의 쌍선형형식 $\Phi\_\lambda$ 가 딸려 나오고, $\Phi\_\lambda\ne 0$ 인 $\lambda$ 가 기약 가군을 하나씩 준다. [Brauer 대수](brauer-algebras.md), [Temperley–Lieb 대수](temperley-lieb-algebras.md), Hecke 대수가 모두 이 구조를 갖는다.
+**세포대수(cellular algebra)** 는 곱셈이 일정한 순서를 따라 삼각형을 이루는 기저를 가져, 반단순이 아니어도 기약 가군을 분류할 수 있는 결합대수다. [Temperley–Lieb 대수](temperley-lieb-algebras.md) $TL_2(\delta)$ 는 기저가 $1$ 과 $e_1$ 이고 $e_1^2=\delta e_1$ 인데, $\delta\ne 0$ 이면 두 조각으로 쪼개져 기약 가군이 둘이지만 $\delta=0$ 이면 쪼개지지 않아 기약 가군을 따로 세야 한다. 세포대수는 기저에서 세포 가군과 그 위의 쌍선형형식을 만들고 형식이 $0$ 이 아닌 세포마다 기약 가군을 하나씩 얻어, $\delta$ 같은 매개변수가 어떤 값이든 같은 방법으로 기약 가군을 센다.
 
 # 직관
+
+세포대수는 반단순이 아니어도 기약 가군을 분류할 수 있게 하는 기저를 가진 결합대수다. 기저가 $C^\lambda\_{ST}$ 꼴로 매개되고 곱셈이 $\lambda$ 에 대한 순서를 따라 삼각형이다. 대합 하나가 $S$ 와 $T$ 를 맞바꾼다.
+
+각 $\lambda$ 마다 세포 가군 $W(\lambda)$ 와 그 위의 쌍선형형식 $\Phi\_\lambda$ 가 딸려 나오고, $\Phi\_\lambda\ne 0$ 인 $\lambda$ 가 기약 가군을 하나씩 준다. [Brauer 대수](brauer-algebras.md), Temperley–Lieb 대수, Hecke 대수가 모두 이 구조를 갖는다.
 
 $TL_2(\delta)$ 의 기약 가군을 센다. 기저는 수직선 두 개인 도형 $1$ 과 양쪽을 묶은 도형 $e_1$ 둘이고 관계는 $e_1^2=\delta e_1$ 하나다. $\delta\ne 0$ 이면 $\delta^{-1}e_1$ 이 멱등원이라 대수가 $\mathbb C\oplus\mathbb C$ 로 쪼개지고 기약 가군이 둘이다.
 

@@ -2,11 +2,13 @@
 
 # 개요
 
-**Siegel 선형화 정리(Siegel linearization theorem)** 는 고정점의 승수가 $\lambda=e^{2\pi i\theta}$ 이고 $\theta$ 가 Diophantine 수인 정칙함수가 그 고정점 근처에서 회전 $w\mapsto\lambda w$ 와 등각 공액이라는 정리다. Siegel 이 1942 년에 증명했다.[^1]
-
-[Fatou 성분의 분류](fatou-components.md)에 나오는 Siegel 원판이 실제로 존재한다는 것이 이 정리에서 나온다. 공액 사상의 멱급수에 $\lambda^n-1$ 꼴의 분모가 나오고, 그 분모가 얼마나 작아지는지를 [Diophantine 근사](diophantine-approximation.md)의 근사 지수가 정한다.
+**Siegel 선형화 정리(Siegel linearization theorem)** 는 고정점 근처에서 회전처럼 보이는 정칙함수가, 회전각이 유리수로 잘 근사되지 않으면 좌표를 바꿔 정확히 회전으로 만들 수 있다는 정리다. $f(z)=\lambda z+z^2$ 에서 $\lvert\lambda\rvert=1$ 이면 $0$ 바로 근처에서 $f$ 는 회전과 거의 같지만, 항 $z^2$ 때문에 궤도가 $0$ 근처의 닫힌 곡선에 계속 머무는지는 바로 알 수 없다. 좌표 변환을 멱급수로 풀면 계수에 $\lambda^n-1$ 꼴의 분모가 나오는데, Siegel 은 $\lambda=e^{2\pi i\theta}$ 의 $\theta$ 가 [Diophantine 근사](diophantine-approximation.md)에서 근사 지수가 유한한 수이면 이 분모가 너무 작아지지 않아 멱급수가 수렴함을 보였다.
 
 # 직관
+
+Siegel 선형화 정리는 고정점의 승수가 $\lambda=e^{2\pi i\theta}$ 이고 $\theta$ 가 Diophantine 수인 정칙함수가 그 고정점 근처에서 회전 $w\mapsto\lambda w$ 와 등각 공액이라는 정리다. Siegel 이 1942 년에 증명했다.[^1]
+
+[Fatou 성분의 분류](fatou-components.md)에 나오는 Siegel 원판이 실제로 존재한다는 것이 이 정리에서 나온다. 공액 사상의 멱급수에 $\lambda^n-1$ 꼴의 분모가 나오고, 그 분모가 얼마나 작아지는지를 Diophantine 근사의 근사 지수가 정한다.
 
 $f(z)=\lambda z+z^2$ 이고 $\vert\lambda\vert=1$ 이라 한다. $0$ 은 고정점이고 $f'(0)=\lambda$ 이므로, $0$ 바로 근처에서 $f$ 는 원점을 중심으로 한 회전과 거의 같다. 궤도가 $0$ 근처의 닫힌 곡선에 계속 머무는지 알고 싶다. 좌표를 바꿔 $f$ 가 정확히 회전이 되게 할 수 있으면 궤도는 그 좌표의 원 위를 돈다.
 
