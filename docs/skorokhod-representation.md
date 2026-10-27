@@ -2,11 +2,13 @@
 
 # 개요
 
-**Skorokhod 표현정리(Skorokhod representation theorem)** 는 분포 수렴하는 확률측도열을 하나의 확률공간 위에서 거의 확실히 수렴하는 확률변수열로 실현한다. [약수렴](weak-convergence.md)은 분포만 다루므로 표본점마다의 값에 대해서는 아무것도 말하지 않는데, 이 정리가 같은 분포를 갖는 다른 열을 잡아 점마다의 수렴을 준다.
-
-거의 확실한 수렴을 가정하는 정리를 분포 수렴 상황에 쓰는 데 이 표현을 쓴다. Fatou 보조정리, [지배 수렴 정리](dominated-convergence.md), 연속사상 정리가 그런 예다.
+**Skorokhod 표현정리(Skorokhod representation theorem)** 는 분포가 점점 가까워지는 확률변수들을, 분포를 바꾸지 않고 값 자체가 수렴하는 확률변수들로 바꿔 놓을 수 있다는 정리다. $0,1/n,2/n,\dots,1$ 가운데 하나를 고르게 뽑은 값 $X_n$ 의 분포는 $n$ 이 커질수록 $\lbrack 0,1\rbrack$ 의 균등분포에 다가간다. $X_n$ 들은 각자 따로 뽑은 값이어서 그 값이 어떤 수로 다가간다고 말할 수 없고, 값의 수렴을 가정하는 정리를 쓸 수 없다. Skorokhod 표현정리는 $\lbrack 0,1\rbrack$ 에서 뽑은 수 하나 $U$ 로 $X_n$ 과 분포가 같은 $Y_n$ 을 모두 만들어 $Y_n$ 의 값이 실제로 수렴하게 한다.
 
 # 직관
+
+[약수렴](weak-convergence.md)은 분포만 다루므로 표본점마다의 값에 대해서는 아무것도 말하지 않는데, 이 정리가 같은 분포를 갖는 다른 열을 잡아 점마다의 수렴을 준다.
+
+거의 확실한 수렴을 가정하는 정리를 분포 수렴 상황에 쓰는 데 이 표현을 쓴다. Fatou 보조정리, [지배 수렴 정리](dominated-convergence.md), 연속사상 정리가 그런 예다.
 
 $X_n$ 이 $X$ 로 분포 수렴할 때 $\mathbb E\lbrack X_n^2\rbrack$ 의 극한을 알아내려고 한다. 분포 수렴의 정의는 유계 연속함수 $f$ 에 대한 $\mathbb E\lbrack f(X_n)\rbrack\to\mathbb E\lbrack f(X)\rbrack$ 이고 $f(x)=x^2$ 는 유계가 아니므로 정의에서 나오는 것이 없다. $X_n(\omega)\to X(\omega)$ 가 거의 모든 $\omega$ 에서 성립하면 Fatou 보조정리가 곧바로 $\mathbb E\lbrack X^2\rbrack\le\liminf_n\mathbb E\lbrack X_n^2\rbrack$ 를 주는데, 분포 수렴은 표본점마다의 값을 비교하지 않으므로 이 경로가 막힌다.
 
