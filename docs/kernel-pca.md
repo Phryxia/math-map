@@ -2,13 +2,15 @@
 
 # 개요
 
-커널 PCA(kernel principal component analysis, kernel PCA)는 데이터를 사상 $\phi$ 로 고차원 공간에 보낸 뒤 그 공간에서 주성분 분석을 하는 방법이다. [주성분 분석](principal-component-analysis.md)은 데이터가 저차원 평면 근처에 있을 때 그 평면을 찾는다. 데이터가 원이나 나선 위에 있으면 어떤 평면도 구조를 담지 못하고, 동심원 두 개는 분산이 모든 방향에서 같아 **PCA**(principal component analysis)가 정보를 주지 않는다.
+**커널 PCA(kernel principal component analysis, kernel PCA)** 는 데이터를 사상 $\phi$ 로 고차원 공간에 보낸 뒤 그 공간에서 주성분 분석을 하는 방법이다. 평면에서 크기가 다른 동심원 두 개 위에 점이 흩어져 있으면 점들이 모든 방향으로 고르게 퍼져 있어, 어느 직선 방향을 골라도 두 원이 갈리지 않는다. 커널 PCA 는 점마다 원점까지 거리의 제곱 같은 새 좌표를 더해 두 원을 다른 높이로 떼어 놓고, 그 공간의 주성분을 점들 사이의 내적만으로 계산한다.
+
+# 직관
+
+[주성분 분석](principal-component-analysis.md)은 데이터가 저차원 평면 근처에 있을 때 그 평면을 찾는다. 데이터가 원이나 나선 위에 있으면 어떤 평면도 구조를 담지 못하고, 동심원 두 개는 분산이 모든 방향에서 같아 **PCA**(principal component analysis)가 정보를 주지 않는다.
 
 데이터를 적당한 사상 $\phi$ 로 고차원에 보내면 휘어 있던 구조가 펴져 선형이 된다. 원 위의 점들을 반지름 제곱 좌표로 보내면 두 원이 서로 다른 높이의 평면이 된다. 옮긴 공간에서 보통의 PCA 를 하면 원래 공간에서 비선형인 성분을 얻는다.
 
 $\phi$ 는 보통 아주 고차원이거나 무한차원이다. PCA 가 필요로 하는 것은 좌표가 아니라 내적뿐이므로, $\langle\phi(x),\phi(y)\rangle$ 를 계산하는 함수 하나만 있으면 $\phi$ 를 명시하지 않고 전 과정을 수행할 수 있다.
-
-# 직관
 
 $n$ 개의 점을 $d$ 차원에서 다룰 때 PCA 는 $d\times d$ [공분산](covariance.md)행렬 $X^{\mathsf T}X$ 의 고유벡터를 구한다. $X^{\mathsf T}Xv=\lambda v$ 의 양변에 $X$ 를 곱하면 $XX^{\mathsf T}(Xv)=\lambda(Xv)$ 이므로, $n\times n$ 그람행렬 $XX^{\mathsf T}$ 는 $0$ 이 아닌 고윳값이 같고 고유벡터가 $v\mapsto Xv$ 로 옮겨진다. 그람행렬의 성분은 점들 사이의 내적뿐이므로 좌표를 몰라도 내적만 알면 같은 계산이 끝나고, $d$ 가 $n$ 보다 훨씬 크면 이쪽이 계산량도 적다.
 

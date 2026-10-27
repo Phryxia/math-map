@@ -2,13 +2,15 @@
 
 # 개요
 
-**Kleisli 범주(Kleisli category)** 와 **Eilenberg–Moore 범주(Eilenberg–Moore category)** 는 [monad](monads.md) $T$ 를 낳는 수반들의 범주에서 각각 시작대상과 종단대상이 되는 분해다. Monad 는 수반에서 나온다. $F \dashv G$ 가 있으면 $T = GF$ 가 monad 다. 반대로 monad $T$ 가 주어졌을 때 $T = GF$ 가 되는 수반은 여럿이고, 이들 전체가 하나의 범주를 이룬다.
+**Kleisli 범주(Kleisli category)** 와 **Eilenberg–Moore 범주(Eilenberg–Moore category)** 는 [monad](monads.md) $T$ 를 낳는 수반들의 범주에서 각각 시작대상과 종단대상이 되는 분해다. 수 하나를 받아 가능한 답들의 리스트를 돌려주는 함수 두 개는, 첫 함수의 결과가 리스트여서 둘째 함수에 그대로 넣을 수 없다. Kleisli 범주는 이런 함수들을 리스트를 펼쳐 합성하는 사상으로 모으고, Eilenberg–Moore 범주는 리스트를 원소 하나로 합치는 연산을 가진 대상들을 모은다.
+
+# 직관
+
+Monad 는 수반에서 나온다. $F \dashv G$ 가 있으면 $T = GF$ 가 monad 다. 반대로 monad $T$ 가 주어졌을 때 $T = GF$ 가 되는 수반은 여럿이고, 이들 전체가 하나의 범주를 이룬다.
 
 그 범주에는 양 끝이 있다. Kleisli 범주가 시작대상이고 Eilenberg–Moore 범주가 종단대상이므로, $T$ 를 낳는 가장 작은 분해와 가장 큰 분해가 존재하고 다른 모든 분해가 그 사이에 낀다.
 
 두 끝의 성격은 다르다. Kleisli 는 부수효과를 가진 함수들의 범주로 프로그래밍의 `bind` 와 do 표기가 사는 곳이고, Eilenberg–Moore 는 $T$ 가 서술하는 대수 구조의 범주로 monoid, 군, 볼록집합이 사는 곳이다. 같은 monad 를 계산으로 읽는가 대수로 읽는가가 두 구성으로 갈린다.
-
-# 직관
 
 리스트 monad $T$ 에서 $f : X \to T(Y)$ 와 $g : Y \to T(Z)$ 를 이어 붙이려 한다. $f$ 의 결과는 $Y$ 의 원소를 늘어놓은 리스트이고 $g$ 는 $Y$ 의 원소 하나를 받으므로 둘이 그대로 합성되지 않는다. 리스트의 각 항에 $g$ 를 적용하면 리스트의 리스트가 나오고, 이것을 평탄화하면 $T(Z)$ 의 원소다. monad 의 $\mu$ 가 그 평탄화이고, $\mathcal C$ 의 대상에 $X \to T(Y)$ 꼴 사상과 이 합성을 준 것이 Kleisli 범주다.
 

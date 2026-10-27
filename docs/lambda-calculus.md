@@ -2,13 +2,15 @@
 
 # 개요
 
-**Lambda calculus** 는 Alonzo Church 가 1930년대에 도입한 계산 모형(model of computation)이다. 기본 대상은 [함수](functions.md)뿐이고, 연산은 함수를 만드는 추상(abstraction)과 함수를 인자에 적용하는 적용(application) 둘뿐이다. 숫자, 진리값, 자료구조, 재귀는 모두 함수로 부호화된다.
+**Lambda calculus** 는 Alonzo Church 가 1930년대에 도입한 계산 모형(model of computation)이다. $f(x)=x+1$ 을 $3$ 에 적용하면 $x$ 자리에 $3$ 을 넣어 $3+1$ 을 얻는데, 이 "자리에 넣기" 규칙 하나만으로 덧셈, 조건 분기, 반복까지 적을 수 있는지 묻는 문제가 있다. Lambda calculus 는 수와 참거짓까지 함수로 부호화해, 이 규칙 하나로 계산할 수 있는 모든 함수를 적는다.
+
+# 직관
+
+기본 대상은 [함수](functions.md)뿐이고, 연산은 함수를 만드는 추상(abstraction)과 함수를 인자에 적용하는 적용(application) 둘뿐이다. 숫자, 진리값, 자료구조, 재귀는 모두 함수로 부호화된다.
 
 lambda calculus 로 정의할 수 있는 함수는 Turing 기계(Turing machine)가 계산하는 함수와 같고, Kleene 의 [일반 재귀함수](recursive-functions.md)와도 같다. 세 정의가 같은 함수족을 내놓는다는 것이 [Church–Turing 논제](church-turing-thesis.md)의 근거다. 따라서 [계산 가능성](computability.md)의 결정 불가능성 결과가 lambda calculus 에서도 성립한다.
 
 lambda calculus 는 프로그래밍 언어의 의미론과 증명론에서도 쓰인다. 함수형 언어의 클로저, 고차함수, 지연 평가는 lambda calculus 에 자료형을 더한 체계로 정의된다. 항에 단순 타입을 붙이면 항이 증명에, 타입이 명제에 대응하는 [Curry–Howard 대응](curry-howard.md)이 나타난다. 이때 모든 계산이 유한 단계에서 끝나고 계산할 수 있는 함수는 줄어든다.
-
-# 직관
 
 Turing 기계는 테이프와 상태표로 계산을 적으므로, $x$ 에 $1$ 을 더하는 함수 하나도 칸을 옮기고 기호를 고치는 규칙 여러 줄이 된다. 수학에서는 같은 함수를 $f(x) = x + 1$ 로 적고, $f(3)$ 은 $x$ 자리에 $3$ 을 넣어 $3 + 1$ 로 계산한다. 이름 $f$ 를 빼고 이 함수를 $\lambda x.\thinspace x + 1$ 로, $3$ 에 적용한 것을 $(\lambda x.\thinspace x + 1)\thinspace 3$ 으로 쓴다. lambda calculus 는 계산을 이 "자리에 넣기" 규칙 하나로만 적는다.
 
