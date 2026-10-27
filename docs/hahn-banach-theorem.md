@@ -2,11 +2,13 @@
 
 # 개요
 
-**Hahn–Banach 정리(Hahn–Banach theorem)** 는 부분공간 위의 선형범함수를 크기를 키우지 않고 전체 공간으로 확장한다. [Banach 공간](banach-spaces.md) $X$ 의 부분공간 $M$ 과 연속 선형범함수 $f\in M^\ast$ 가 있으면, $M$ 에서 $f$ 와 일치하고 $\Vert F\Vert=\Vert f\Vert$ 를 만족하는 $F\in X^\ast$ 가 있다.
-
-확장을 만드는 데 Zorn 보조정리를 쓰므로 이 정리는 [선택공리](axiom-of-choice.md)에 의존한다. 따름정리로 [쌍대 공간](dual-space.md)이 점을 분리하고, 겹치지 않는 볼록집합을 초평면으로 가를 수 있다.
+**Hahn–Banach 정리(Hahn–Banach theorem)** 는 일부에서만 정해진 선형범함수를 크기를 키우지 않고 공간 전체로 넓힐 수 있다는 정리다. 평면의 $x$ 축 위에서만 정해진 함수 $f(t,0)=t$ 는 $F(x,y)=x$ 로 넓히면 크기가 그대로이지만, 무한차원 공간에서는 넓힌 함수를 식으로 적을 수 없는 경우가 있다. Hahn–Banach 정리는 이런 확장이 늘 있음을 보여, [쌍대 공간](dual-space.md)이 점들을 구별하고 겹치지 않는 볼록집합을 초평면으로 가를 수 있게 한다.
 
 # 직관
+
+Hahn–Banach 정리는 부분공간 위의 선형범함수를 크기를 키우지 않고 전체 공간으로 확장한다. [Banach 공간](banach-spaces.md) $X$ 의 부분공간 $M$ 과 연속 선형범함수 $f\in M^\ast$ 가 있으면, $M$ 에서 $f$ 와 일치하고 $\Vert F\Vert=\Vert f\Vert$ 를 만족하는 $F\in X^\ast$ 가 있다.
+
+확장을 만드는 데 Zorn 보조정리를 쓰므로 이 정리는 [선택공리](axiom-of-choice.md)에 의존한다. 따름정리로 쌍대 공간이 점을 분리하고, 겹치지 않는 볼록집합을 초평면으로 가를 수 있다.
 
 수렴하는 수열 전체의 공간 $c$ 에서 극한 $L(x)=\lim x\_n$ 은 선형이고 $\vert L(x)\vert\le\Vert x\Vert\_\infty$ 를 만족한다. 유계 수열 전체 $\ell^\infty$ 에서도 같은 부등식을 지키는 선형범함수를 쓰려고 한다. 유한차원에서 하던 대로 기저를 잡아 좌표마다 값을 정하려면 $\ell^\infty$ 의 기저를 적어야 하는데, 그런 기저를 적을 수 없다.
 

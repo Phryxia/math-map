@@ -2,11 +2,13 @@
 
 # 개요
 
-**Gorenstein 환(Gorenstein ring)** 은 [Cohen–Macaulay 환](cohen-macaulay-rings.md) 가운데 자기 쌍대성을 갖는 것이다. Cohen–Macaulay 조건은 깊이와 차원이 같다는 것뿐이고, Gorenstein 조건은 그 위에 최고차 [국소 코호몰로지](local-cohomology.md)를 나타내는 [가군](modules.md)이 환 자신과 동형이라는 것을 더한다.
-
-정칙 국소환은 Gorenstein 이고 Gorenstein 환은 Cohen–Macaulay 이며, 두 포함은 모두 진짜다. 이 자리 덕분에 특이점을 가진 대상에도 쌍대성을 쓸 수 있고, 대수기하의 쌍대 층이 가역층이 되는 조건이 이것이다.
+**Gorenstein 환(Gorenstein ring)** 은 특이점이 있어도 매끄러운 경우와 같은 쌍대성이 성립하는 환이다. 평면곡선 $y^2=x^3$ 은 원점에서 뾰족하지만 방정식 하나로 정의되므로, 매끄러운 곡선에서 쓰던 쌍대성 정리가 그대로 성립한다. Gorenstein 환은 이런 환을 [국소 코호몰로지](local-cohomology.md)를 나타내는 [가군](modules.md)이 환 자신과 같다는 조건으로 정의해, 특이점을 가진 대상에서 쌍대성을 계산한다.
 
 # 직관
+
+Gorenstein 환은 [Cohen–Macaulay 환](cohen-macaulay-rings.md) 가운데 자기 쌍대성을 갖는 것이다. Cohen–Macaulay 조건은 깊이와 차원이 같다는 것뿐이고, Gorenstein 조건은 그 위에 최고차 국소 코호몰로지를 나타내는 가군이 환 자신과 동형이라는 것을 더한다.
+
+정칙 국소환은 Gorenstein 이고 Gorenstein 환은 Cohen–Macaulay 이며, 두 포함은 모두 진짜다. 이 자리 덕분에 특이점을 가진 대상에도 쌍대성을 쓸 수 있고, 대수기하의 쌍대 층이 가역층이 되는 조건이 이것이다.
 
 $R=k\lbrack x,y\rbrack/(x^2,y^2)$ 와 $S=k\lbrack x,y\rbrack/(x^2,xy,y^2)$ 를 본다. 둘 다 $k$ 위 유한차원이고 극대 아이디얼이 $\mathfrak m=(x,y)$ 이며 차원과 깊이가 $0$ 이라 Cohen–Macaulay 이고, $R$ 의 $k$ 기저는 $1,x,y,xy$ , $S$ 의 기저는 $1,x,y$ 다. $\mathfrak m$ 으로 곱해 $0$ 이 되는 원소를 모으면 $R$ 에서는 $xy$ 의 스칼라배뿐이라 $1$ 차원이고 $S$ 에서는 $x$ 와 $y$ 가 모두 그러해 $2$ 차원이다. 이 부분공간을 **소클**(socle)이라 한다.
 

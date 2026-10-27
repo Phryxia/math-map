@@ -2,11 +2,13 @@
 
 # 개요
 
-**Gauss 정수환(Gaussian integers)** $\mathbb Z[i]$ 는 $a+bi\ (a,b\in\mathbb Z)$ 꼴의 복소수가 이루는 환이다. 노름 $N(a+bi)=a^2+b^2$ 을 Euclid 함수로 삼으면 나눗셈 정리가 성립하므로 이 환은 [유클리드 정역](euclidean-domains.md)이고 [유일분해정역](unique-factorization-domains.md)이다.
-
-유일분해가 성립한다는 사실 하나로 정수에 대한 두 물음이 풀린다. 어떤 소수가 두 제곱수의 합인가, 그리고 $x^2+y^2=n$ 의 정수해가 몇 개인가다. 답은 $\mathbb Z$ 의 소수가 $\mathbb Z[i]$ 에서 어떻게 쪼개지는지로 환원되고, 그 판정 기준을 주는 것이 [이차 상호법칙](quadratic-reciprocity.md)의 보충 법칙이다.
+**Gauss 정수환(Gaussian integers)** 은 $a+bi$ 꼴의 복소수 가운데 $a,b$ 가 정수인 것 전체가 이루는 환이다. $5=1^2+2^2$ 과 $13=2^2+3^2$ 은 두 제곱수의 합이지만 $7$ 과 $11$ 은 그렇지 않은데, 정수만으로는 어느 소수가 두 제곱수의 합인지 가리기 어렵다. Gauss 정수환에서는 $5=(1+2i)(1-2i)$ 처럼 두 제곱수의 합이 곱으로 쪼개지므로, 소인수분해가 유일하다는 성질로 이 물음을 소수가 이 환에서 쪼개지는지의 문제로 바꿔 푼다.
 
 # 직관
+
+Gauss 정수환 $\mathbb Z[i]$ 는 $a+bi\ (a,b\in\mathbb Z)$ 꼴의 복소수가 이루는 환이다. 노름 $N(a+bi)=a^2+b^2$ 을 Euclid 함수로 삼으면 나눗셈 정리가 성립하므로 이 환은 [유클리드 정역](euclidean-domains.md)이고 [유일분해정역](unique-factorization-domains.md)이다.
+
+유일분해가 성립한다는 사실 하나로 정수에 대한 두 물음이 풀린다. 어떤 소수가 두 제곱수의 합인가, 그리고 $x^2+y^2=n$ 의 정수해가 몇 개인가다. 답은 $\mathbb Z$ 의 소수가 $\mathbb Z[i]$ 에서 어떻게 쪼개지는지로 환원되고, 그 판정 기준을 주는 것이 [이차 상호법칙](quadratic-reciprocity.md)의 보충 법칙이다.
 
 $\mathbb Z[i]$ 는 복소평면의 정사각 [격자](lattices.md)다. 임의의 복소수는 가장 가까운 격자점에서 거리 $\tfrac{\sqrt2}{2}\lt 1$ 안에 있으므로, 나눗셈의 나머지를 노름이 작아지도록 항상 고를 수 있다. 이 기하가 나눗셈 정리를 준다.
 

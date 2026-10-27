@@ -2,11 +2,13 @@
 
 # 개요
 
-**Hamilton 역학(Hamiltonian mechanics)** 은 운동을 [여접다발](cotangent-bundle.md) 위의 1차 미분방정식계로 적는다. [변분법](calculus-of-variations.md)의 Euler–Lagrange 방정식은 위치에 대한 2차 방정식이고, 속도를 운동량으로 바꾸면 같은 운동이 위치와 운동량에 대한 1차 방정식 두 개가 된다.
-
-이 바꾸기가 [볼록 공액](convex-conjugate.md)이고, 바꾼 뒤의 방정식은 심플렉틱 형식 하나로 좌표 없이 적힌다.
+**Hamilton 역학(Hamiltonian mechanics)** 은 물체의 운동을 위치와 운동량에 대한 1차 미분방정식으로 적는 역학이다. 용수철에 매단 추는 Newton 의 운동 법칙에 따라 2차 방정식 $m\ddot x=-kx$ 를 만족하는데, 운동량 $p=m\dot x$ 를 따로 두면 $\dot x=p/m$ 과 $\dot p=-kx$ 두 개의 1차 방정식이 된다. Hamilton 역학은 에너지 함수 하나에서 이 두 방정식을 얻어, 운동을 위치와 운동량의 평면 위의 흐름으로 다룬다.
 
 # 직관
+
+Hamilton 역학은 운동을 [여접다발](cotangent-bundle.md) 위의 1차 미분방정식계로 적는다. [변분법](calculus-of-variations.md)의 Euler–Lagrange 방정식은 위치에 대한 2차 방정식이고, 속도를 운동량으로 바꾸면 같은 운동이 위치와 운동량에 대한 1차 방정식 두 개가 된다.
+
+이 바꾸기가 [볼록 공액](convex-conjugate.md)이고, 바꾼 뒤의 방정식은 심플렉틱 형식 하나로 좌표 없이 적힌다.
 
 질량 $m$ 인 입자가 퍼텐셜 $V$ 안에서 움직이는 계의 Lagrange 함수는 $L(q,\dot q)=\frac12m\dot q^2-V(q)$ 이고, 작용의 정류 조건은
 
