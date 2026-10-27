@@ -2,7 +2,9 @@
 
 # 개요
 
-Chern–Simons 작용[^1]은 3 차원 [다양체](manifolds.md) 위에서 계량 없이 정의되는 접속의 범함수다.
+**Chern–Simons 작용(Chern–Simons action)** 은 3 차원 [다양체](manifolds.md) 위에서 계량 없이 정의되는 접속의 범함수다[^1]. 3 차원 공간 안의 매듭에 수를 붙이되 공간을 늘이거나 휘어도 그 수가 바뀌지 않게 하려면, 길이나 각도를 재는 계량을 쓰지 않는 식이 있어야 한다. Chern–Simons 작용은 접속과 그 미분의 곱으로 3 형식을 짜서 적분해 이런 식을 만들고, 이 작용으로 세운 양자장론에서 매듭과 3 다양체의 불변량을 얻는다.
+
+# 직관
 
 $$
 \mathrm{CS}(A)=\frac1{8\pi^2}\int_M\mathrm{tr}\Big(A\wedge dA+\tfrac23A\wedge A\wedge A\Big)
@@ -11,8 +13,6 @@ $$
 $A$ 는 $G$ 주다발 위의 접속, 곧 [Lie 대수](lie-algebras.md) 값을 갖는 1 형식이다. [미분형식](differential-forms.md)의 3 형식을 3 차원 다양체 위에서 적분하는 것뿐이라 계량이 들어갈 자리가 없다. 이 작용으로 세운 3 차원 위상적 장론이 **Chern–Simons 이론(Chern–Simons theory)** 이다.
 
 이 식은 4 차원 특성류 $\mathrm{tr}(F\wedge F)$ 를 한 차원 내려 적은 것이다. $\mathrm{CS}(A)$ 는 게이지 변환에서 정수만큼 변하므로 $e^{2\pi ik\thinspace\mathrm{CS}(A)}$ 가 $k\in\mathbb Z$ 일 때만 잘 정의된다. 임계점은 평탄 접속이고 거기서 $\mathrm{CS}$ 는 $\mathbb R/\mathbb Z$ 값의 위상 불변량이 되며, 이 수들이 [Witten 점근 추측](witten-asymptotics.md)에서 양자 불변량의 점근 위상으로 나타난다.
-
-# 직관
 
 3 차원 다양체 $M$ 에서 계량을 쓰지 않고 접속의 불변량을 만들려고 한다. 계량 없이 적분되는 것은 미분형식이고 $M$ 에서 적분되는 것은 3 형식이다. 접속 $A$ 와 곡률 $F=dA+A\wedge A$ 로 짜는 게이지 불변식 가운데 차수가 가장 낮은 것은 4 형식 $\mathrm{tr}(F\wedge F)$ 이고, 이것은 $M$ 에서 적분되지 않는다.
 

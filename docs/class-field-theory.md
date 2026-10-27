@@ -2,7 +2,11 @@
 
 # 개요
 
-**유체론(class field theory)** 은 [수체](algebraic-number-fields.md) $K$ 의 아벨 확대를 $K$ 안의 산술 자료만으로 분류한다. 분류하는 자료가 류군을 넓힌 **광선류군**이고, 분류를 실현하는 사상이 **Artin 상호법칙**이다.
+**유체론(class field theory)** 은 [수체](algebraic-number-fields.md) $K$ 의 아벨 확대를 $K$ 안의 산술 자료만으로 분류하는 이론이다. $x^2+1$ 이 홀수인 소수 $p$ 를 법으로 두 일차식으로 쪼개지는지는 $p$ 를 $4$ 로 나눈 나머지만으로 정해진다. 유체론은 이런 규칙을 모든 아벨 확대로 넓혀, 소수가 확대에서 어떻게 쪼개지는지를 $K$ 안의 합동조건으로 적는다.
+
+# 직관
+
+분류하는 자료가 류군을 넓힌 **광선류군**이고, 분류를 실현하는 사상이 **Artin 상호법칙**이다.
 
 $$
 \mathrm{Cl}\_{\mathfrak m}(K)/H \thickspace\xrightarrow{\ \sim\ }\thickspace \mathrm{Gal}(L/K)
@@ -11,8 +15,6 @@ $$
 $K$ 의 아벨 확대 $L$ 마다 광선류군의 부분군 하나가 대응하고 그 몫이 $\mathrm{Gal}(L/K)$ 와 동형이다. 확대체를 만들어 보지 않고 $K$ 의 [아이디얼](ideals-quotient-rings.md) 산술만으로 아벨 확대의 목록을 읽어낼 수 있다.
 
 [이차 상호법칙](quadratic-reciprocity.md)은 $p$ 가 법 $q$ 에서 제곱수인지와 $q$ 가 법 $p$ 에서 제곱수인지를 잇는다. 유체론에서는 소수 $p$ 가 아벨 확대 $L/K$ 에서 분해하는 방식이 $p$ 의 합동조건으로 결정된다는 진술이며, Gauss 의 정리는 $K=\mathbb Q$ 이고 $L$ 이 이차체인 경우다.
-
-# 직관
 
 $K=\mathbb Q$ 이고 $L=\mathbb Q(\zeta_m)$ 일 때
 

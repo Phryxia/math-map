@@ -2,7 +2,9 @@
 
 # 개요
 
-**Chebotarev 밀도 정리(Chebotarev density theorem)** 는 Galois 확대 $L/K$ 에서 Frobenius 켤레류가 균등하게 분포한다는 정리다.
+**Chebotarev 밀도 정리(Chebotarev density theorem)** 는 Galois 확대 $L/K$ 에서 Frobenius 켤레류가 균등하게 분포한다는 정리다. $x^2+1$ 을 소수 $p$ 를 법으로 인수분해하면 $p=5$ 에서는 두 일차식으로 쪼개지고 $p=7$ 에서는 쪼개지지 않는데, 소수 전체에서 쪼개지는 것의 비율을 묻는 문제가 있다. Chebotarev 밀도 정리는 이런 비율이 Galois 군에서 해당 원소들이 차지하는 비율과 같다는 것을 보여, 여기서는 $1/2$ 이라고 답한다.
+
+# 직관
 
 $$
 \delta\Big(\Big\lbrace\mathfrak p:\Big[\tfrac{L/K}{\mathfrak p}\Big]=C\Big\rbrace\Big)=\frac{|C|}{[L:K]}
@@ -11,8 +13,6 @@ $$
 분기하지 않는 소 [아이디얼](ideals-quotient-rings.md) $\mathfrak p$ 마다 Frobenius 켤레류 $\left[\frac{L/K}{\mathfrak p}\right]\subseteq\mathrm{Gal}(L/K)$ 가 정해져 소수를 Galois 군의 원소로 번역한다. 위 등식은 Galois 군에서 원소를 무작위로 뽑는 것과 소수를 무작위로 뽑아 Frobenius 를 보는 것이 구별되지 않는다는 뜻이다. [유체론](class-field-theory.md)이 아벨 확대에서 Frobenius 가 무엇인지를 정한다면 이 정리는 그 분포를 정한다.
 
 $L=\mathbb Q(\zeta_m)$ 이면 $\mathrm{Gal}\cong(\mathbb Z/m\mathbb Z)^\times$ 이고 $\mathrm{Frob}\_p=p\bmod m$ 이므로 정리가 [Dirichlet 의 등차수열 정리](dirichlet-l-functions.md)가 된다. Chebotarev 는 이것을 비아벨 확대로 넓혔고 증명도 일반 경우를 [원분체](cyclotomic-fields.md) 경우로 환원한다.
-
-# 직관
 
 $x^2+1$ 을 법 $p$ 로 인수분해해 본다. $p=5$ 에서는 $x^2+1\equiv(x-2)(x+2)$ 이고 $p=7$ 에서는 기약이다. 갈림의 기준은 $-1$ 이 법 $p$ 의 제곱인지이고, 그 조건은 $p\equiv1\pmod 4$ 다. 소수가 법 $4$ 의 두 기약잉여류에 절반씩 들어가므로 두 양상의 비율은 각각 $1/2$ 이다.
 
