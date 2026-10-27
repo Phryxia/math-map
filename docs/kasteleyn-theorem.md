@@ -2,11 +2,13 @@
 
 # 개요
 
-**Kasteleyn 정리(Kasteleyn's theorem)** 는 모든 [평면 그래프](planar-graphs.md)에 변의 방향을 잘 주면, 그 방향으로 만든 반대칭 행렬의 Pfaffian 의 절댓값이 완전 매칭의 수와 같다는 정리다. Pfaffian 의 제곱은 행렬식이므로 평면 그래프의 완전 매칭 수가 다항시간에 계산된다. P. W. Kasteleyn 이 1961 년과 1967 년에 증명했고, H. N. V. Temperley 와 M. E. Fisher 가 1961 년에 격자의 경우를 독립적으로 계산했다[^1][^2].
-
-일반 그래프의 완전 매칭 수는 [영구식](permanent.md)처럼 #P(sharp P)-완전이라서, 평면성이 세기를 쉽게 만드는 경우다. 이 방법을 Fisher–Kasteleyn–Temperley 알고리즘(FKT algorithm)이라 한다.
+**Kasteleyn 정리(Kasteleyn's theorem)** 는 평면에 그릴 수 있는 그래프의 완전 매칭 수를 행렬식으로 빠르게 셀 수 있다는 정리다. $2\times n$ 판을 $1\times 2$ 도미노로 빈틈없이 덮는 방법의 수는 이웃한 칸을 이은 격자 그래프의 완전 매칭 수이고, 일반 그래프에서 이 수를 세는 일은 [영구식](permanent.md)을 계산하는 것만큼 어렵다. Kasteleyn 정리는 [평면 그래프](planar-graphs.md)의 변에 방향을 잘 주어 만든 반대칭 행렬의 Pfaffian 의 절댓값이 완전 매칭 수와 같음을 보이고, Pfaffian 의 제곱은 행렬식이므로 이 수가 다항시간에 계산된다.
 
 # 직관
+
+Kasteleyn 정리는 모든 평면 그래프에 변의 방향을 잘 주면, 그 방향으로 만든 반대칭 행렬의 Pfaffian 의 절댓값이 완전 매칭의 수와 같다는 정리다. Pfaffian 의 제곱은 행렬식이므로 평면 그래프의 완전 매칭 수가 다항시간에 계산된다. P. W. Kasteleyn 이 1961 년과 1967 년에 증명했고, H. N. V. Temperley 와 M. E. Fisher 가 1961 년에 격자의 경우를 독립적으로 계산했다[^1][^2].
+
+일반 그래프의 완전 매칭 수는 영구식처럼 #P(sharp P)-완전이라서, 평면성이 세기를 쉽게 만드는 경우다. 이 방법을 Fisher–Kasteleyn–Temperley 알고리즘(FKT algorithm)이라 한다.
 
 $2\times n$ 판을 $1\times 2$ 도미노로 빈틈없이 덮는 방법의 수는 판의 칸을 꼭짓점으로, 이웃한 두 칸을 변으로 둔 격자 그래프의 완전 매칭 수다. 이분 그래프이므로 이 수는 인접 행렬의 영구식이고, 영구식은 행렬식에서 부호를 지운 것이다. 행렬식은 빨리 계산되지만 부호가 붙어서 항들이 서로 지워진다.
 

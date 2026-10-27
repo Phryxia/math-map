@@ -2,11 +2,13 @@
 
 # 개요
 
-**대수화(algebrization)** 는 신탁 $A$ 를 쓰는 기계 쪽에 $A$ 의 낮은 차수 다항식 확장 $\tilde A$ 를 주어도 그대로 성립하는 복잡도 증명의 성질이다. S. Aaronson 과 A. Wigderson 이 2008 년에 정의했다[^1].
-
-[시간 계층 정리](time-hierarchy-theorem.md)의 대각선 논법처럼 상대화되는 증명은 Baker–Gill–Solovay 정리에 막혀 $\mathrm P$ 와 $\mathrm{NP}$ 를 가르지 못한다. [대화형 증명](interactive-proofs.md)의 $\mathrm{IP}=\mathrm{PSPACE}$ 는 상대화되지 않지만 대수화된다. Aaronson 과 Wigderson 은 대수화되는 증명도 $\mathrm P$ 와 $\mathrm{NP}$ 를 어느 쪽으로도 결정하지 못함을 보였다.
+**대수화(algebrization)** 는 계산 모형에 신탁을 붙이고 그 신탁의 다항식 확장까지 주어도 그대로 성립하는 복잡도 증명의 성질이다. $\mathrm P$ 와 $\mathrm{NP}$ 가 다른지 증명하려는 시도 가운데 대각선 논법은 아무 신탁을 붙여도 성립하는 증명이라 $\mathrm P$ 와 $\mathrm{NP}$ 를 가르지 못하는데, [대화형 증명](interactive-proofs.md)의 정리 $\mathrm{IP}=\mathrm{PSPACE}$ 는 이런 증명이 아니어서 그 한계를 넘는다. 대수화는 $\mathrm{IP}=\mathrm{PSPACE}$ 처럼 문제를 다항식으로 바꾸는 증명까지 포함하는 성질을 정의하고, 이 성질을 가진 증명도 $\mathrm P$ 와 $\mathrm{NP}$ 를 가르지 못함을 보인다.
 
 # 직관
+
+대수화는 신탁 $A$ 를 쓰는 기계 쪽에 $A$ 의 낮은 차수 다항식 확장 $\tilde A$ 를 주어도 그대로 성립하는 복잡도 증명의 성질이다. S. Aaronson 과 A. Wigderson 이 2008 년에 정의했다[^1].
+
+[시간 계층 정리](time-hierarchy-theorem.md)의 대각선 논법처럼 상대화되는 증명은 Baker–Gill–Solovay 정리에 막혀 $\mathrm P$ 와 $\mathrm{NP}$ 를 가르지 못한다. 대화형 증명의 $\mathrm{IP}=\mathrm{PSPACE}$ 는 상대화되지 않지만 대수화된다. Aaronson 과 Wigderson 은 대수화되는 증명도 $\mathrm P$ 와 $\mathrm{NP}$ 를 어느 쪽으로도 결정하지 못함을 보였다.
 
 $\mathrm{IP}=\mathrm{PSPACE}$ 의 증명은 한정 불 논리식을 유한체 $\mathbb F$ 위의 다항식으로 바꾸고 합 검사 프로토콜을 돌린다. 프로토콜의 마지막 단계에서 검증자는 무작위 점 $r\in\mathbb F^n$ 에서 다항식의 값을 직접 계산한다. $r$ 의 좌표는 대개 $0$ 도 $1$ 도 아니다.
 
