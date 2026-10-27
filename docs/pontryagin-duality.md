@@ -2,11 +2,13 @@
 
 # 개요
 
-**Pontryagin 쌍대성(Pontryagin duality)** 은 국소콤팩트 [아벨 위상군](topological-groups.md) $G$ 와 그 지표들이 이루는 군 $\hat G$ 사이의 대응이다. $\hat G$ 를 다시 쌍대로 보내면 $G$ 로 돌아오고, 이 대응이 Fourier 변환을 군 위에서 정의하는 틀이 된다.
-
-[Fourier 급수](fourier-series.md)는 $S^1$ 과 $\mathbb Z$ 의 쌍, [Fourier 변환](fourier-transform.md)은 $\mathbb R$ 과 $\mathbb R$ 의 쌍, 유한 Fourier 변환은 $\mathbb Z/n$ 과 자기 자신의 쌍이다. 세 변환이 한 정리의 사례이고, 어느 쌍에서나 Plancherel 등식과 역변환 공식이 같은 형태로 성립한다.
+**Pontryagin 쌍대성(Pontryagin duality)** 은 더하기가 있는 군과, 그 군 위에서 일정하게 진동하는 함수들의 모임 사이의 대응이다. 주기 $1$ 인 함수는 $e^{2\pi inx}$ 들의 합으로 쓰이고, 실직선의 함수는 $e^{2\pi i\xi x}$ 들의 적분으로 쓰인다. 앞에서는 $n$ 이 정수 전체를, 뒤에서는 $\xi$ 가 실수 전체를 달린다. Pontryagin 쌍대성은 쓸 수 있는 진동의 모임을 원래 군에서 구하고, 그 모임 위에서 함수를 진동으로 분해하는 변환과 그 역변환을 한 꼴로 정의한다.
 
 # 직관
+
+Pontryagin 쌍대성은 국소콤팩트 [아벨 위상군](topological-groups.md) $G$ 와 그 지표들이 이루는 군 $\hat G$ 사이의 대응이다. $\hat G$ 를 다시 쌍대로 보내면 $G$ 로 돌아오고, 이 대응이 Fourier 변환을 군 위에서 정의하는 틀이 된다.
+
+[Fourier 급수](fourier-series.md)는 $S^1$ 과 $\mathbb Z$ 의 쌍, [Fourier 변환](fourier-transform.md)은 $\mathbb R$ 과 $\mathbb R$ 의 쌍, 유한 Fourier 변환은 $\mathbb Z/n$ 과 자기 자신의 쌍이다. 세 변환이 한 정리의 사례이고, 어느 쌍에서나 Plancherel 등식과 역변환 공식이 같은 형태로 성립한다.
 
 주기 $1$ 인 함수를 $e^{2\pi inx}$ 들의 합으로 쓰는 것이 Fourier 급수다. 쓸 수 있는 지수는 정수 $n$ 전체이고, 각 $n$ 은 원 $S^1$ 에서 절댓값 $1$ 인 복소수로 가는 연속 준동형 $x\mapsto e^{2\pi inx}$ 를 준다. 거꾸로 $S^1$ 의 연속 준동형은 모두 이 꼴이므로, 쓸 수 있는 지수의 집합이 $\mathbb Z$ 와 같다. 실직선에서 같은 일을 하면 지수가 $e^{2\pi i\xi x}$ 이고 $\xi$ 가 실수 전체를 달린다.
 
