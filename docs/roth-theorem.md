@@ -2,15 +2,17 @@
 
 # 개요
 
-**Roth 정리(Roth's theorem)** 는 대수적 무리수의 [근사 지수](diophantine-approximation.md)가 $2$ 라는 정리다. $\alpha$ 가 대수적 무리수이고 $\varepsilon\gt 0$ 이면 다음 부등식을 만족하는 기약분수 $p/q$ 는 유한 개다[^1].
+**Roth 정리(Roth's theorem)** 는 $\sqrt[3]{2}$ 같은 대수적 무리수를 분수로 아주 가깝게 근사하는 일이 드물다는 정리다. $\sqrt[3]{2}$ 를 분수 $p/q$ 로 근사하면 오차가 $1/q^2$ 보다 작은 분수는 연분수로 무한히 많이 얻지만, 최소다항식 $x^3-2$ 만 쓰면 오차가 $1/q^3$ 보다 작은 분수가 유한 개라는 것까지만 알 수 있다. Roth 정리는 대수적 무리수마다 오차가 $1/q^{2+\varepsilon}$ 보다 작은 분수가 유한 개임을, 좋은 근사 여러 개를 한꺼번에 쓰는 보조 다항식으로 모순을 끌어내 증명한다.
+
+# 직관
+
+Roth 정리는 대수적 무리수의 [근사 지수](diophantine-approximation.md)가 $2$ 라는 정리다. $\alpha$ 가 대수적 무리수이고 $\varepsilon\gt 0$ 이면 다음 부등식을 만족하는 기약분수 $p/q$ 는 유한 개다[^1].
 
 $$\left\lvert \alpha-\frac{p}{q}\right\rvert\lt \frac{1}{q^{2+\varepsilon}}$$
 
 모든 무리수가 연분수 수렴분으로 지수 $2$ 를 얻으므로 이 상한은 개선되지 않는다. Liouville 부등식의 지수 $d$ 를 Thue 가 $d/2+1$ 로, Siegel 과 Dyson 이 더 낮추었고 Roth 가 $2$ 에 이르렀다.
 
 증명은 여러 변수의 보조 다항식과 그 소멸 차수의 상한으로 모순을 만든다. 예외 분수의 개수는 묶지만 분모의 크기에는 상한을 주지 않으므로, 이 정리로는 [Thue 방정식](thue-equation.md)의 해를 다 찾았는지 확인할 수 없다.
-
-# 직관
 
 차수 $d\ge 2$ 인 대수적 무리수 $\alpha$ 의 근사 지수가 $d$ 를 넘지 못하는 것은 최소다항식 하나로 나온다. 정수계수 최소다항식을 $f$ 라 하면 $q^d f(p/q)$ 가 $0$ 이 아닌 정수이므로 $\lvert f(p/q)\rvert\ge q^{-d}$ 이고, 평균값 정리로 $\lvert f(p/q)\rvert\le M\lvert\alpha-p/q\rvert$ 다. 두 부등식을 합치면 $\lvert\alpha-p/q\rvert\ge q^{-d}/M$ 이다.
 

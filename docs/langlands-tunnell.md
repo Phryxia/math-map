@@ -2,11 +2,13 @@
 
 # 개요
 
-**Langlands–Tunnell 정리(Langlands–Tunnell theorem)** 는 상이 [가해군](solvable-groups.md)인 2 차원 홀수 기약 복소 [Galois 표현](galois-representations.md) $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\mathbb C)$ 가 무게 $1$ 의 새형식에서 온다는 정리다. Langlands 가 1980 년에 사면체 경우를, Tunnell 이 1981 년에 팔면체 경우를 증명했다.[^1][^2]
-
-그 결과로 이런 $\rho$ 의 [Artin L 함수](artin-l-functions.md)는 무게 $1$ 형식의 $L$ 함수와 같고 정함수다. Wiles 는 이 정리를 mod $3$ 표현의 모듈러성을 얻는 출발점으로 썼다.
+**Langlands–Tunnell 정리(Langlands–Tunnell theorem)** 는 정수 계수 다항식의 근이 뒤섞이는 방식에서 나오는 2 차원 표현 가운데, 근의 대칭이 정사면체나 정팔면체의 회전군인 것이 무게 $1$ 의 [모듈러 형식](modular-forms.md)에서 온다는 정리다. 다항식 $x^3-x-1$ 을 소수 $p$ 로 나눈 나머지에서 풀면 $p$ 에 따라 근이 $0$ 개, $1$ 개, $3$ 개로 바뀌는데, 그 개수는 무한곱 $q\prod_{n\ge 1}(1-q^n)(1-q^{23n})$ 을 전개한 $q^p$ 의 계수에 $1$ 을 더한 값이다. 이 다항식의 근의 대칭은 정삼각형의 대칭군이고, Langlands–Tunnell 정리는 근의 대칭이 정사면체나 정팔면체의 회전군인 다항식에도 같은 꼴의 공식이 있음을 그에 맞는 무게 $1$ 의 형식을 만들어 보인다.
 
 # 직관
+
+Langlands–Tunnell 정리는 상이 [가해군](solvable-groups.md)인 2 차원 홀수 기약 복소 [Galois 표현](galois-representations.md) $\rho\colon G_{\mathbb Q}\to\mathrm{GL}\_2(\mathbb C)$ 가 무게 $1$ 의 새형식에서 온다는 정리다. Langlands 가 1980 년에 사면체 경우를, Tunnell 이 1981 년에 팔면체 경우를 증명했다.[^1][^2]
+
+그 결과로 이런 $\rho$ 의 [Artin L 함수](artin-l-functions.md)는 무게 $1$ 형식의 $L$ 함수와 같고 정함수다. Wiles 는 이 정리를 mod $3$ 표현의 모듈러성을 얻는 출발점으로 썼다.
 
 $\rho$ 의 상은 유한군이다. 스칼라 행렬로 나누어 $\mathrm{PGL}\_2(\mathbb C)$ 로 보내면 상은 $\mathrm{PGL}\_2(\mathbb C)$ 의 유한 부분군이고, 그런 군은 순환군, 이면체군, 정사면체군 $A_4$, 정팔면체군 $S_4$, 정이십면체군 $A_5$ 다섯 가지뿐이다.
 

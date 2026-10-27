@@ -2,11 +2,13 @@
 
 # 개요
 
-**J 준동형(J-homomorphism)** 은 회전군의 호모토피군에서 구면의 호모토피군으로 가는 준동형 $J:\pi\_k(SO(n))\to\pi\_{n+k}(S^n)$ 이다. 회전의 족 하나에서 구면 사이의 사상 하나를 만드는 Hopf 구성으로 정의된다.
-
-$n$ 을 키우면 $J$ 는 [Bott 주기성](bott-periodicity.md)으로 아는 안정 직교군의 호모토피군에서 [Freudenthal 매달기 정리](freudenthal-suspension.md)의 안정 호모토피군으로 가는 사상이 된다. 그 상은 Adams 가 결정했고, 차수 $4s-1$ 에서 위수가 [Bernoulli 수](bernoulli-numbers.md) $B\_{2s}/4s$ 의 분모인 순환군이다.
+**J 준동형(J-homomorphism)** 은 회전이 연속으로 이어진 족을 구면에서 구면으로 가는 사상으로 바꾸는 대응이다. 평면을 각도 $\theta$ 만큼 돌리는 회전에서 $\theta$ 를 $0$ 부터 $2\pi$ 까지 움직이면 회전의 고리가 하나 생기고, 이 고리에서 3 차원 구면 $S^3$ 을 2 차원 구면 $S^2$ 로 보내는 Hopf 사상이 만들어진다. 구면 사이의 사상을 연속 변형으로 분류하는 [호모토피군](homotopy-groups.md)은 계산이 어렵지만 회전군의 호모토피군은 계산되어 있으므로, J 준동형은 회전군 쪽의 원소를 옮겨 구면의 호모토피군 안에 알려진 원소를 만든다.
 
 # 직관
+
+J 준동형은 회전군의 호모토피군에서 구면의 호모토피군으로 가는 준동형 $J:\pi\_k(SO(n))\to\pi\_{n+k}(S^n)$ 이다. 회전의 족 하나에서 구면 사이의 사상 하나를 만드는 Hopf 구성으로 정의된다.
+
+$n$ 을 키우면 $J$ 는 [Bott 주기성](bott-periodicity.md)으로 아는 안정 직교군의 호모토피군에서 [Freudenthal 매달기 정리](freudenthal-suspension.md)의 안정 호모토피군으로 가는 사상이 된다. 그 상은 Adams 가 결정했고, 차수 $4s-1$ 에서 위수가 [Bernoulli 수](bernoulli-numbers.md) $B\_{2s}/4s$ 의 분모인 순환군이다.
 
 원 위의 회전 $S^1\to SO(2)$ 를 하나 고른다. 각 $\theta$ 마다 평면의 회전 $A(\theta)$ 가 있으므로, $(\theta,v)\mapsto A(\theta)v$ 는 $S^1\times S^1$ 에서 $S^1$ 로 가는 사상이다. 두 변수 사상 $S^1\times S^1\to S^1$ 에서 $S^3\to S^2$ 를 만드는 Hopf 구성을 쓰면, 한 바퀴 도는 회전에서 Hopf 사상이 나온다.
 

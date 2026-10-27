@@ -2,15 +2,17 @@
 
 # 개요
 
-**신뢰영역 정책 최적화(trust region policy optimization, TRPO)** 는 정책의 갱신 보폭을 파라미터 거리가 아니라 정책 분포 사이의 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 재는 제약 최적화다.
+**신뢰영역 정책 최적화(trust region policy optimization, TRPO)** 는 정책을 한 번에 얼마나 바꿀지를 정책이 내는 확률이 얼마나 바뀌는지로 제한하는 방법이다. 행동이 둘인 정책에서 파라미터를 똑같이 $0.1$ 움직여도 행동 확률이 $0.5$ 근처면 $0.025$ 바뀌고 $0.98$ 근처면 $0.0017$ 바뀌므로, 파라미터의 보폭 하나로는 갱신의 크기를 맞출 수 없다. TRPO 는 옛 정책과 새 정책의 확률분포 차이를 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 재어 정한 상한 안에 두는 제약을 걸고, 그 안에서 목적함수를 최대화한다.
+
+# 직관
+
+신뢰영역 정책 최적화는 정책의 갱신 보폭을 파라미터 거리가 아니라 정책 분포 사이의 KL divergence 로 재는 제약 최적화다.
 
 $$\max_{\theta'}\thinspace L_\theta(\theta')\quad \text{subject to}\quad \bar D_{\mathrm{KL}}(\theta,\theta')\le\delta$$
 
 $L_\theta$ 는 옛 정책의 표본으로 적은 대리 목적함수이고 $\delta$ 는 신뢰영역의 반지름이다. 제약 안에서는 대리 목적의 개선량이 실제 성능의 개선량을 하한으로 보장한다.
 
 제약 문제를 그대로 풀려면 [Fisher 정보](fisher-information.md)행렬의 역행렬이 필요하다. 근접 정책 최적화(proximal policy optimization, PPO)는 그 제약을 중요도비의 잘라내기로 바꿔 제약 없는 1차 최적화로 만든 것이다.
-
-# 직관
 
 [정책 경사](policy-gradient.md)법은 기울기 추정량 $g$ 로 $\theta\leftarrow\theta+\eta\thinspace g$ 를 반복하고 보폭 $\eta$ 를 골라야 한다. 행동이 둘뿐인 정책 $\pi_\theta(a=1)=\sigma(\theta)$ 에서 같은 $\eta$ 가 정책을 얼마나 바꾸는지 본다.
 
@@ -81,7 +83,7 @@ $\min$ 을 취하지 않고 잘라내기만 쓰면 구간 밖에서 되돌아오
 - **연속 행동 제어.** 관절 토크를 출력하는 Gauss 정책에서 [정책 경사](policy-gradient.md)의 보폭 문제가 직접 드러나므로, 보행과 조작 과제의 표준 알고리즘으로 쓰인다.
 - **언어모형의 정렬.** 사람 선호로 학습한 보상 모형 아래에서 생성 정책을 올릴 때 PPO 를 쓰고, 참조 정책과의 KL divergence 를 보상에 벌점으로 더해 보폭을 한 번 더 묶는다.
 - **행위자–비평자 구현.** [행위자–비평자](actor-critic.md)의 이점 추정에 잘라낸 목적을 결합해 한 묶음의 표본으로 여러 번 갱신한다. 중요도비가 표본을 재사용할 수 있게 하는 부분이다.
-- **자연 경사법.** $F^{-1}g$ 는 분포족 위의 [KL divergence](kl-divergence.md)가 주는 2차 근사에서 나오므로, 같은 계산이 변분 추론과 최대가능도 추정의 Fisher scoring 에도 쓰인다.
+- **자연 경사법.** $F^{-1}g$ 는 분포족 위의 KL divergence 가 주는 2차 근사에서 나오므로, 같은 계산이 변분 추론과 최대가능도 추정의 Fisher scoring 에도 쓰인다.
 
 [^1]: J. Schulman, S. Levine, P. Abbeel, M. Jordan, P. Moritz, "Trust Region Policy Optimization", Proceedings of the 32nd International Conference on Machine Learning (2015), 1889–1897. 하한과 $C$ 의 값, 평균 KL 로의 완화를 준다.
 
