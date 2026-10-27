@@ -2,19 +2,13 @@
 
 # 개요
 
-**Tate 곡선(Tate curve)** 은 $p$ 진체 $K$ 와 $|q|\lt 1$ 인 $q\in K^{\times}$ 에 대해
+**Tate 곡선(Tate curve)** 은 $p$ 진체 $K$ 와 $\vert q\vert\lt 1$ 인 $q\in K^{\times}$ 에 대해 $E_q(K)\cong K^{\times}/q^{\mathbb Z}$ 를 만족하는 [타원곡선](elliptic-curves.md)이다. 복소수 위의 타원곡선은 평면을 격자로 나눈 몫 $\mathbb C/\Lambda$ 로 그려지지만, $p$ 진체에서는 같은 그림이 서지 않는다. 복소수에서 지수함수로 옮기면 그 몫이 $\mathbb C^\times/q^{\mathbb Z}$ 가 되는데, Tate 곡선은 이 꼴만 $p$ 진에서 살려 곱셈적 환원을 갖는 타원곡선을 곱셈군의 몫으로 다룬다.
 
-$$
-E_q(K)\cong K^{\times}/q^{\mathbb Z}
-$$
-
-를 만족하는 [타원곡선](elliptic-curves.md)이다. 복소수 위의 격자 몫 $\mathbb C/\Lambda$ 가 $p$ 진에서는 서지 않고, 지수함수로 옮긴 모형만 남는다.
+# 직관
 
 분해 곱셈적 환원을 갖는 $E/K$ 는 어떤 $q$ 에 대한 Tate 곡선이고, 그 $q$ 를 **Tate 주기**라 한다. $j$ 불변량이 $j=q^{-1}+744+196884\thinspace q+\cdots$ 이므로 $|j|\gt1$ 에서 $q$ 가 유일하게 정해진다.
 
 $p$ 진 $L$ 함수의 예외적 영점에 나타나는 $\mathcal L$ 불변량 $\mathcal L=\log_p(q)/\mathrm{ord}\_p(q)$ 가 이 주기에서 나온다.
-
-# 직관
 
 복소 타원곡선은 격자 몫 $\mathbb C/\Lambda$ 이고 $\Lambda=\mathbb Z+\mathbb Z\tau$ 인데, 같은 것을 [p 진수](p-adic-numbers.md) 위에서 하려고 $K$ 안에 $\mathbb Z+\mathbb Z\tau$ 를 놓는다. $K$ 의 절댓값은 비아르키메데스이므로 정수 $p^k$ 에서 $\vert p^k\vert=p^{-k}\to0$ 이다. 부분군 $\mathbb Z$ 자체가 $0$ 에 쌓이므로 이산이 아니고 몫을 곡선으로 볼 수 없어, 격자 모형은 여기서 막힌다. 복소수에서는 $z\mapsto e^{2\pi iz}$ 가 $\mathbb C/\mathbb Z\cong\mathbb C^{\times}$ 를 주고 남은 생성원 $\tau$ 는 $q=e^{2\pi i\tau}$ 를 곱하는 사상이 되므로, 같은 곡선을 다음과 같이 쓴다.
 

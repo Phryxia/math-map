@@ -2,7 +2,11 @@
 
 # 개요
 
-**Speh 표현(Speh representation)** 은 $\mathrm{GL}\_n$ 의 자기동형 형식 공간에서 잔여 스펙트럼(residual spectrum)을 채우는 표현 $\mathrm{Speh}(\sigma,d)$ 이다. 여기서 $n=dm$, $d\gt 1$ 이고 $\sigma$ 는 $\mathrm{GL}\_m$ 의 첨점 표현(cuspidal representation)이다. 자기동형 형식의 공간 $L^2\bigl(\mathrm{GL}\_n(F)\backslash\mathrm{GL}\_n(\mathbb A)^1\bigr)$ 는 세 조각으로 나뉜다.
+**Speh 표현(Speh representation)** 은 $\mathrm{GL}\_n$ 의 자기동형 형식 공간에서 잔여 스펙트럼(residual spectrum)을 채우는 표현 $\mathrm{Speh}(\sigma,d)$ 이다. 여기서 $n=dm$, $d\gt 1$ 이고 $\sigma$ 는 $\mathrm{GL}\_m$ 의 첨점 표현(cuspidal representation)이다. $\mathrm{GL}\_2$ 에서 상수함수는 첨점형식이 아니지만 제곱적분 가능한 자기동형 형식이므로, 자기동형 형식의 공간에는 첨점형식으로도 연속 스펙트럼으로도 설명되지 않는 부분이 있다. Speh 표현은 이 부분을 첨점 표현 $\sigma$ 와 정수 $d$ 의 쌍으로 빠짐없이 분류한다.
+
+# 직관
+
+자기동형 형식의 공간 $L^2\bigl(\mathrm{GL}\_n(F)\backslash\mathrm{GL}\_n(\mathbb A)^1\bigr)$ 는 세 조각으로 나뉜다.
 
 $$
 L^2=\underbrace{L^2_{\mathrm{cusp}}}\_{\text{첨점}}\ \oplus\ \underbrace{L^2_{\mathrm{res}}}\_{\text{잔여}}\ \oplus\ \underbrace{L^2_{\mathrm{cont}}}\_{\text{연속}}
@@ -17,8 +21,6 @@ $$
 각 항이 정확히 한 번씩 나온다. $d=1$ 이 첨점 표현 자신이고 $d\gt 1$ 인 것들이 잔여 스펙트럼을 채우는 Speh 표현이다.
 
 [Arthur 매개변수](arthur-parameters.md) 쪽에서 이 분류는 $\psi=\sigma\boxtimes[d]$ 한 줄이며, 둘째 $\mathrm{SL}\_2(\mathbb C)$ 의 $d$ 차원 표현이 Speh 표현의 $d$ 다. $\mathrm{GL}\_n$ 은 Arthur 의 분류가 완전히 증명된 유일한 경우이고 고전군 쪽 그림의 원본이다.
-
-# 직관
 
 [Eisenstein 급수](eisenstein-series.md) $E(z,s)$ 는 첨점에서 $y^s$ 처럼 자라 제곱적분가능하지 않다. $s$ 가 **극**일 때 유수를 취하면 성장이 한 등급 줄어 $L^2$ 안으로 들어온다. $\mathrm{GL}\_2$ 에서 $E(z,s)$ 는 $s=1$ 에 단순극을 갖고 유수는 상수함수 $3/\pi$ 다. 상수함수가 생성하는 표현이 **자명 표현**이므로, 자명 표현은 첨점이 아니라 잔여 스펙트럼에 산다.
 

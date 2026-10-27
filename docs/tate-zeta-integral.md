@@ -2,19 +2,21 @@
 
 # 개요
 
-**Tate 의 zeta 적분(Tate's zeta integral)** 은 [수체](algebraic-number-fields.md)의 이델군 위에서 Schwartz–Bruhat 함수와 지표의 곱에 $\vert x\vert^s$ 를 붙여 적분한 것이다. Riemann 은 $\zeta(s)$ 의 함수방정식을 theta 함수 $\theta(t)=\sum_ne^{-\pi n^2t}$ 의 변환식 $\theta(1/t)=\sqrt t\thinspace\theta(t)$ 에서 끌어냈다. Hecke 는 같은 방법을 수체 $K$ 위로 옮겨 $\zeta_K(s)$ 와 Hecke $L$ 함수까지 처리했지만, 그 계산은 수체마다 격자와 단원군을 손으로 다루는 작업이었고 감마 인자의 모양과 판별식 $\sqrt{|d_K|}$ 의 출처는 계산이 끝난 뒤에야 드러났다.
+**Tate 의 zeta 적분(Tate's zeta integral)** 은 [수체](algebraic-number-fields.md)의 이델군 위에서 Schwartz–Bruhat 함수와 지표의 곱에 $\vert x\vert^s$ 를 붙여 적분한 것이다. Riemann 은 $\zeta(s)$ 의 함수방정식을 theta 함수 $\theta(t)=\sum_ne^{-\pi n^2t}$ 의 변환식 $\theta(1/t)=\sqrt t\thinspace\theta(t)$ 에서 끌어냈지만, 같은 계산을 수체 $K$ 의 $\zeta_K(s)$ 에 하려면 수체마다 격자와 단원군을 손으로 다뤄야 한다. Tate 의 zeta 적분은 $\zeta_K(s)$ 를 [아델](adeles.md) 위의 적분 하나로 쓰고, 함수방정식을 Poisson 합공식 하나로 증명한다.
 
-Tate 의 학위논문[^1]은 계산을 [아델](adeles.md) 위로 옮긴다. theta 변환식이 Poisson 합공식의 특수한 경우가 되고 $\zeta_K(s)$ 가 이델군 위의 적분 하나가 된다.
+# 직관
+
+Hecke 는 같은 방법을 수체 $K$ 위로 옮겨 $\zeta_K(s)$ 와 Hecke $L$ 함수까지 처리했지만, 그 계산은 수체마다 격자와 단원군을 손으로 다루는 작업이었고 감마 인자의 모양과 판별식 $\sqrt{|d_K|}$ 의 출처는 계산이 끝난 뒤에야 드러났다.
+
+Tate 의 학위논문[^1]은 계산을 아델 위로 옮긴다. theta 변환식이 Poisson 합공식의 특수한 경우가 되고 $\zeta_K(s)$ 가 이델군 위의 적분 하나가 된다.
 
 $$
 Z(f,\chi,s)=\int_{\mathbb A_K^\times}f(x)\thinspace\chi(x)\thinspace|x|\_{\mathbb A}^{s}\thickspace d^\times x
 $$
 
-이 적분이 **Tate 의 zeta 적분(Tate's zeta integral)** 이다. 적분이 자리마다 쪼개지면서 Euler 인자와 감마 인자가 같은 종류의 국소 적분으로 통일되고, 함수방정식은 아델군의 자기쌍대성에서 자동으로 나온다. 판별식은 자기쌍대 측도를 정규화할 때 생기는 부피 인자다.
+이 적분이 Tate 의 zeta 적분이다. 적분이 자리마다 쪼개지면서 Euler 인자와 감마 인자가 같은 종류의 국소 적분으로 통일되고, 함수방정식은 아델군의 자기쌍대성에서 자동으로 나온다. 판별식은 자기쌍대 측도를 정규화할 때 생기는 부피 인자다.
 
 수론의 해석적 정리를 국소콤팩트군 위의 조화해석으로 번역하는 방식이 여기서 시작했고, [Langlands 강령](langlands-program.md)의 $\mathrm{GL}\_1$ 사례가 이 적분이다.
-
-# 직관
 
 고전적 서술에서 $\zeta(s)$ 의 Euler 곱은 소수에서 오고 완비화에 붙는 $\pi^{-s/2}\Gamma(s/2)$ 는 해석에서 온다. 아델로 올라가면 둘이 같은 식의 값이다. 각 자리 $v$ 에서 국소 zeta 적분을 같은 모양으로 정의하고 자리마다 시험함수를 하나씩 고른다. 유한 자리에서는 정수환의 정의함수 $\mathbf 1_{\mathbb Z_p}$ 이고 무한 자리에서는 Gauss 함수 $e^{-\pi x^2}$ 로, 둘 다 그 자리의 덧셈 [Fourier 변환](fourier-transform.md)에 대해 자기쌍대인 함수다.
 

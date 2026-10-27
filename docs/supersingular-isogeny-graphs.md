@@ -2,7 +2,11 @@
 
 # 개요
 
-**초특이 동종사상 그래프(supersingular isogeny graph)** 는 표수 $p$ 의 초특이 곡선의 $j$ 불변량을 정점으로, 차수 $\ell$ 의 동종사상(isogeny)을 간선으로 둔 그래프다. [Lang–Trotter 추측](lang-trotter.md)이 고정된 곡선 $E/\mathbb Q$ 를 여러 $p$ 로 환원하며 초특이가 되는 때를 묻는다. 여기서는 $p$ 를 고정하고 표수 $p$ 의 초특이 곡선 전체를 모아 그 사이의 관계를 본다.
+**초특이 동종사상 그래프(supersingular isogeny graph)** 는 표수 $p$ 의 초특이 곡선의 $j$ 불변량을 정점으로, 차수 $\ell$ 의 동종사상(isogeny)을 간선으로 둔 그래프다. $p=11$ 이면 초특이 $j$ 불변량은 $0$ 과 $1728$ 두 개뿐이고, $p$ 가 커지면 정점이 대략 $p/12$ 개로 늘어난다. 이 그래프는 정점마다 간선이 $\ell+1$ 개씩 나가면서도 [무작위 걷기](random-walks.md)가 가장 빠르게 섞이는 그래프이고, 두 정점 사이의 경로를 찾는 어려움이 암호의 가정으로 쓰인다.
+
+# 직관
+
+[Lang–Trotter 추측](lang-trotter.md)이 고정된 곡선 $E/\mathbb Q$ 를 여러 $p$ 로 환원하며 초특이가 되는 때를 묻는다. 여기서는 $p$ 를 고정하고 표수 $p$ 의 초특이 곡선 전체를 모아 그 사이의 관계를 본다.
 
 $\overline{\mathbb F_p}$ 위의 초특이 $j$ 불변량은 모두 $\mathbb F_{p^2}$ 에 있고 개수가
 
@@ -11,11 +15,9 @@ $$
 \varepsilon_p=\begin{cases}0&p\equiv1\cr 1&p\equiv5,7\cr 2&p\equiv11\end{cases}\pmod{12}
 $$
 
-로 유한하다. 이 유한집합을 정점으로 두고 $\ell$ 차 동종사상을 간선으로 두면 $(\ell+1)$ 정규 [그래프](graphs.md)가 되고, 그것이 [Ramanujan 그래프](ramanujan-graphs.md)다. [스펙트럼 간극](expander-graphs.md)이 이론적 최댓값에 도달해 [무작위 걷기](random-walks.md)가 가장 빠르게 섞인다.
+로 유한하다. 이 유한집합을 정점으로 두고 $\ell$ 차 동종사상을 간선으로 두면 $(\ell+1)$ 정규 [그래프](graphs.md)가 되고, 그것이 [Ramanujan 그래프](ramanujan-graphs.md)다. [스펙트럼 간극](expander-graphs.md)이 이론적 최댓값에 도달해 무작위 걷기가 가장 빠르게 섞인다.
 
 빠르게 섞이는 그래프에서 두 정점 사이의 경로를 찾는 일은 어렵다. 이 어려움을 가정으로 **CGL**(Charles–Goren–Lauter) 해시함수와 **SIDH**(supersingular isogeny Diffie–Hellman) 키교환이 설계되었고, 후자는 NIST(National Institute of Standards and Technology) 후양자 표준화의 최종 후보 SIKE(supersingular isogeny key encapsulation)까지 올라갔다가 2022 년에 깨졌다.
-
-# 직관
 
 표수 $p$ 의 [타원곡선](elliptic-curves.md)에서 $p$ 비틀림을 세어 본다. 표수 $0$ 에서 $E[p]\cong(\mathbb Z/p)^2$ 이던 것이 표수 $p$ 에서는 두 가지만 가능하다.
 
