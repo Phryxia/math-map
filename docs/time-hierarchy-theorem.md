@@ -2,11 +2,13 @@
 
 # 개요
 
-**시간 계층 정리(time hierarchy theorem)** 는 Turing 기계에 시간을 충분히 더 주면 판정할 수 있는 언어가 실제로 늘어난다는 정리다. J. Hartmanis 와 R. E. Stearns 가 1965 년에 증명했다[^1]. [P 대 NP 문제](p-np.md)에 나오는 부류 사이의 진포함 $\mathrm P\subsetneq\mathrm{EXPTIME}$ 이 이 정리에서 나온다.
-
-증명은 [정지 문제](halting-problem.md)의 대각선 논법을 시간 제한 안에서 다시 하는 것이다. 다른 기계를 흉내 내고 답을 뒤집기만 하므로 신탁(oracle)을 붙여도 그대로 성립한다. 그래서 대각선 논법만으로는 $\mathrm P$ 와 $\mathrm{NP}$ 를 가를 수 없다(Baker–Gill–Solovay 정리).
+**시간 계층 정리(time hierarchy theorem)** 는 계산 시간을 충분히 더 주면 풀 수 있는 문제가 실제로 늘어난다는 정리다. 시간 $n^3$ 이면 풀리지만 시간 $n^2$ 으로는 풀리지 않는 문제가 있음을 보이려면, 시간 $n^2$ 안에 끝나는 모든 기계가 틀리는 문제를 하나 만들어야 한다. 이 정리는 입력으로 받은 기계를 정해진 시간 동안 흉내 내고 그 답을 뒤집는 대각선 논법으로 그런 문제를 만든다.
 
 # 직관
+
+시간 계층 정리는 Turing 기계에 시간을 충분히 더 주면 판정할 수 있는 언어가 실제로 늘어난다는 정리다. J. Hartmanis 와 R. E. Stearns 가 1965 년에 증명했다[^1]. [P 대 NP 문제](p-np.md)에 나오는 부류 사이의 진포함 $\mathrm P\subsetneq\mathrm{EXPTIME}$ 이 이 정리에서 나온다.
+
+증명은 [정지 문제](halting-problem.md)의 대각선 논법을 시간 제한 안에서 다시 하는 것이다. 다른 기계를 흉내 내고 답을 뒤집기만 하므로 신탁(oracle)을 붙여도 그대로 성립한다. 그래서 대각선 논법만으로는 $\mathrm P$ 와 $\mathrm{NP}$ 를 가를 수 없다(Baker–Gill–Solovay 정리).
 
 $\mathrm P\subseteq\mathrm{NP}\subseteq\mathrm{PSPACE}\subseteq\mathrm{EXPTIME}$ 의 포함이 진포함인지 보이려면, 한쪽 부류의 기계로는 판정되지 않는 언어를 하나 만들어야 한다. 시간 $n^2$ 안에 판정되지 않고 시간 $n^3$ 안에는 판정되는 언어를 만들어 본다.
 

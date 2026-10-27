@@ -2,11 +2,13 @@
 
 # 개요
 
-**외판원 문제(traveling salesman problem, TSP)** 는 도시 $n$ 개와 도시 사이의 거리가 주어졌을 때, 모든 도시를 한 번씩 방문하고 출발한 도시로 돌아오는 경로 가운데 길이가 가장 짧은 것을 찾는 문제다. 그래프로는 변에 음이 아닌 가중치가 붙은 완전그래프에서 가중치 합이 최소인 [Hamilton 순환](hamiltonian-cycles.md)을 찾는 문제다.
-
-판정형은 NP(nondeterministic polynomial time)-완전이고, 거리에 아무 조건이 없으면 어떤 상수배로도 [근사 알고리즘](approximation-algorithms.md)이 존재하지 않는다($\mathrm P\ne\mathrm{NP}$ 가정). 거리가 삼각부등식을 만족하면 최적의 $3/2$ 배 안에 드는 순회를 다항시간에 찾는다.
+**외판원 문제(traveling salesman problem, TSP)** 는 모든 도시를 한 번씩 들르고 출발한 도시로 돌아오는 가장 짧은 경로를 찾는 문제다. 도시가 $n$ 개이면 가능한 순회가 $(n-1)!/2$ 가지이고 $n=20$ 이면 약 $6\times 10^{16}$ 가지라, 전부 길이를 재어 비교할 수 없다. 이 문제는 판정형이 NP(nondeterministic polynomial time)-완전이므로, 거리가 삼각부등식을 만족할 때 최적의 $3/2$ 배 안에 드는 순회를 다항시간에 찾는 것 같은 [근사 알고리즘](approximation-algorithms.md)으로 다룬다.
 
 # 직관
+
+외판원 문제는 도시 $n$ 개와 도시 사이의 거리가 주어졌을 때, 모든 도시를 한 번씩 방문하고 출발한 도시로 돌아오는 경로 가운데 길이가 가장 짧은 것을 찾는 문제다. 그래프로는 변에 음이 아닌 가중치가 붙은 완전그래프에서 가중치 합이 최소인 [Hamilton 순환](hamiltonian-cycles.md)을 찾는 문제다.
+
+판정형은 NP-완전이고, 거리에 아무 조건이 없으면 어떤 상수배로도 근사 알고리즘이 존재하지 않는다($\mathrm P\ne\mathrm{NP}$ 가정). 거리가 삼각부등식을 만족하면 최적의 $3/2$ 배 안에 드는 순회를 다항시간에 찾는다.
 
 도시가 $n$ 개이면 출발 도시를 고정하고 나머지를 늘어놓는 순서가 $(n-1)!$ 가지이고, 방향을 뒤집은 것을 같은 순회로 보면 $(n-1)!/2$ 가지다. $n=20$ 이면 약 $6\times 10^{16}$ 가지라 전부 길이를 재어 비교할 수 없다.
 
@@ -100,7 +102,7 @@ S. Arora 는 고정 차원의, J. S. B. Mitchell 은 평면의 유클리드 외�
 # 활용
 
 - [정수계획법](integer-programming.md)의 절단평면. 변마다 $0$ 또는 $1$ 변수를 두고 꼭짓점의 차수를 $2$ 로 묶은 모형에 부분순회를 끊는 부등식을 더해 가며 푼다. 대규모 실례의 정확한 해는 이 방법과 분기한정으로 구한다.
-- [근사 알고리즘](approximation-algorithms.md)의 등급 구분. 일반 외판원 문제는 상수 근사가 없고, 거리 외판원 문제는 상수 근사가 있으며, 유클리드 외판원 문제는 다항시간 근사 방식이 있다. 같은 문제가 거리의 조건에 따라 세 등급으로 갈린다.
+- 근사 알고리즘의 등급 구분. 일반 외판원 문제는 상수 근사가 없고, 거리 외판원 문제는 상수 근사가 있으며, 유클리드 외판원 문제는 다항시간 근사 방식이 있다. 같은 문제가 거리의 조건에 따라 세 등급으로 갈린다.
 - 차량 경로, 회로 기판의 구멍 뚫는 순서, 망원경의 관측 순서처럼 점을 한 번씩 방문하는 순서를 정하는 문제가 외판원 문제나 그 변형으로 모형화된다.
 
 [^1]: M. Held, R. M. Karp, "A dynamic programming approach to sequencing problems", Journal of the Society for Industrial and Applied Mathematics 10(1) (1962), 196–210. R. Bellman, "Dynamic programming treatment of the travelling salesman problem", Journal of the ACM 9(1) (1962), 61–63.

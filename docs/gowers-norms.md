@@ -2,11 +2,13 @@
 
 # 개요
 
-**Gowers 균등 노름(Gowers uniformity norm)** 은 유한 Abel 군 위의 복소함수에 대해, 함수의 값을 $k$ 차원 평행체의 꼭짓점 $2^k$ 개에서 곱해 평균한 양으로 정의한 노름 $\Vert f\Vert\_{U^k}$ 다. W. T. Gowers 가 길이 $4$ 이상의 등차수열에 대한 [Szemerédi 정리](szemeredi-theorem.md)의 정량적 증명에 도입했다[^1][^2].
-
-[등차수열의 Roth 정리](roth-theorem-arithmetic-progressions.md)의 증명은 길이 $3$ 의 등차수열 개수를 Fourier 계수로 제어한다. 길이 $k$ 의 등차수열 개수를 같은 방식으로 제어하는 양이 $U^{k-1}$ 노름이고, $U^2$ 노름은 Fourier 계수의 $4$ 제곱합의 네제곱근이다.
+**Gowers 균등 노름(Gowers uniformity norm)** 은 함수가 등차수열 위에서 무작위처럼 움직이는 정도를 재는 노름이다. 길이 $3$ 의 등차수열은 Fourier 계수로 셀 수 있지만, $f(x)=e^{2\pi ix^2/N}$ 은 Fourier 계수가 모두 작은데도 모든 $x,d$ 에서 $f(x)\overline{f(x+d)}^3f(x+2d)^3\overline{f(x+3d)}=1$ 이라 길이 $4$ 의 등차수열과 강하게 얽혀 있다. Gowers 노름 $\Vert f\Vert\_{U^k}$ 는 함수의 값을 $k$ 차원 평행체의 꼭짓점 $2^k$ 개에서 곱해 평균한 양으로, 이런 이차 구조까지 감지해 길이 $k+1$ 의 등차수열 개수를 제어한다.
 
 # 직관
+
+Gowers 균등 노름은 유한 Abel 군 위의 복소함수에 대해, 함수의 값을 $k$ 차원 평행체의 꼭짓점 $2^k$ 개에서 곱해 평균한 양으로 정의한 노름 $\Vert f\Vert\_{U^k}$ 다. W. T. Gowers 가 길이 $4$ 이상의 등차수열에 대한 [Szemerédi 정리](szemeredi-theorem.md)의 정량적 증명에 도입했다[^1][^2].
+
+[등차수열의 Roth 정리](roth-theorem-arithmetic-progressions.md)의 증명은 길이 $3$ 의 등차수열 개수를 Fourier 계수로 제어한다. 길이 $k$ 의 등차수열 개수를 같은 방식으로 제어하는 양이 $U^{k-1}$ 노름이고, $U^2$ 노름은 Fourier 계수의 $4$ 제곱합의 네제곱근이다.
 
 길이 $4$ 에서 Roth 의 논법을 그대로 쓰려 한다. $N$ 이 소수일 때 $f(x)=e^{2\pi ix^2/N}$ 의 Fourier 계수는 [Gauss 합](gauss-sums.md)이어서 $r$ 마다 절댓값이 $N^{1/2}$ 이고, 크기 $N$ 에 비해 작다. 그런데 모든 $x,d$ 에서
 
