@@ -2,13 +2,15 @@
 
 # 개요
 
-Dirichlet L 함수(Dirichlet L-function)는 Dirichlet 지표 $\chi$ 를 계수로 단 급수 $L(s,\chi)=\sum\_{n\ge 1}\chi(n)n^{-s}$ 다. [소수 정리](prime-number-theorem.md)는 소수 전체의 밀도를 준다. 소수를 잉여류로 나누면 $4$ 로 나눈 나머지가 $1$ 인 소수와 $3$ 인 소수가 각각 얼마나 있는지를 묻는다.
+**Dirichlet L 함수(Dirichlet L-function)** 는 Dirichlet 지표 $\chi$ 를 계수로 단 급수 $L(s,\chi)=\sum\_{n\ge 1}\chi(n)n^{-s}$ 다. $5, 13, 17, 29,\dots$ 처럼 $4$ 로 나눈 나머지가 $1$ 인 소수와 $3, 7, 11, 19,\dots$ 처럼 나머지가 $3$ 인 소수가 각각 무한히 많은지 물으면, 소수 전체를 똑같이 다루는 zeta 함수로는 두 부류가 구별되지 않는다. Dirichlet L 함수는 나머지에 따라 부호를 바꾼 계수를 붙여 한 부류만 골라내고, $s=1$ 근처의 값으로 각 부류에 소수가 무한히 많음을 증명한다.
+
+# 직관
+
+[소수 정리](prime-number-theorem.md)는 소수 전체의 밀도를 준다. 소수를 잉여류로 나누면 $4$ 로 나눈 나머지가 $1$ 인 소수와 $3$ 인 소수가 각각 얼마나 있는지를 묻는다.
 
 Dirichlet 은 1837 년에 $\gcd(a,q)=1$ 이면 $a \bmod q$ 인 소수가 무한히 많음을 증명했다. 전략은 zeta 함수와 같이 소수의 정보를 담은 해석적 함수를 만들고 $s=1$ 근처의 행동을 읽는 것이다. $\zeta$ 는 모든 소수를 똑같이 취급하므로 잉여류를 구별하지 못한다.
 
 잉여류를 골라내는 필터가 Dirichlet 지표이고, 지표를 붙여 만든 급수가 $L$ 함수다. 지표는 $(\mathbb Z/q\mathbb Z)^\times$ 라는 유한 아벨군의 [기약 표현의 지표](group-representations.md)이며, 유한군의 표현론이 소수의 분포를 결정하는 첫 사례다. 같은 구도가 Artin $L$ 함수와 [Langlands 강령](langlands-program.md)으로 이어진다.
-
-# 직관
 
 Euler 는 $\zeta$ 의 $s=1$ 극에서 $\sum_p 1/p$ 의 발산을 얻었다. $p\equiv a\pmod q$ 인 소수만 모아 같은 합을 보려면 잉여류 하나만 남기는 장치가 있어야 한다. $(\mathbb Z/q\mathbb Z)^\times$ 가 아벨군이라 기약 표현이 전부 1 차원이고, 지표들의 직교관계가 $n\equiv a\pmod q$ 에서 $1$ 이고 그 밖에서 $0$ 인 합을 준다.
 
