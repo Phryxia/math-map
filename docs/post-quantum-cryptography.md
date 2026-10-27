@@ -2,15 +2,17 @@
 
 # 개요
 
-**격자 기반 후양자 암호(lattice-based post-quantum cryptography)** 는 [격자](lattices.md) 문제의 어려움에 안전성을 두어 양자 컴퓨터로도 깨지지 않도록 설계한 공개키 암호다. 현재 쓰이는 공개키 암호는 소인수분해의 어려움([RSA](rsa-cryptosystem.md))과 [이산로그](discrete-logarithm.md)의 어려움(Diffie–Hellman, [타원곡선](elliptic-curves.md) 암호) 위에 선다. 두 문제는 모두 유한 아벨군의 숨은 부분군 문제이고, 양자 [Fourier 변환](fourier-transform.md)이 그 구조를 겨냥하므로 [Shor 알고리즘](shor-algorithm.md)이 둘을 함께 다항시간에 푼다.
-
-대체 가정은 아벨 숨은 부분군으로 환원되지 않아야 한다. 격자의 근사 최단벡터 문제가 가장 유력한 후보다. 최선의 알고리즘이 고전이든 양자든 $2^{\Theta(n)}$ 시간을 쓰고 양자가 주는 이득은 상수배다. 이 문제의 어려움 위에 세운 공개키 암호가 **격자 기반 후양자 암호(lattice-based post-quantum cryptography)** 다.
-
-격자 문제에는 무작위로 뽑은 사례가 최악의 사례만큼 어렵다는 정리도 있다. NIST(National Institute of Standards and Technology)가 2024 년에 표준화한 후양자 알고리즘의 주류가 격자 기반이다.
+**격자 기반 후양자 암호(lattice-based post-quantum cryptography)** 는 [격자](lattices.md) 문제의 어려움에 안전성을 두어 양자 컴퓨터로도 깨지지 않도록 설계한 공개키 암호다. 지금 인터넷에서 쓰는 공개키 암호는 큰 수를 소인수분해하기 어렵다는 데 기대는데, 양자 컴퓨터가 만들어지면 이 분해가 빠르게 끝나 암호가 깨진다. 격자 기반 후양자 암호는 일차연립방정식에 작은 잡음을 더해 풀기 어렵게 만든 문제로 그 가정을 바꾼다.
 
 # 직관
 
-$As=b$ 는 Gauss 소거법으로 다항시간에 풀린다. 오른쪽에 작은 잡음을 더해 $b=As+e$ 로 바꾸면 소거 과정에서 계수가 커지며 잡음이 증폭되고, 몇 단계 지나면 잡음이 법 $q$ 전체를 덮어 정보가 남지 않는다. 이것이 **LWE**(learning with errors) 문제이고, 격자 언어로는 $A$ 가 정하는 격자에서 $b$ 에 가장 가까운 점을 찾는 **CVP**(closest vector problem)다. 비밀키는 짧은 비밀벡터, 짧은 오차, 짧은 기저 같은 짧은 대상이어서 알고 있으면 복호 계산이 바로 끝나고, 공개 정보만으로는 찾을 수 없다.
+현재 쓰이는 공개키 암호는 소인수분해의 어려움([RSA](rsa-cryptosystem.md))과 [이산로그](discrete-logarithm.md)의 어려움(Diffie–Hellman, [타원곡선](elliptic-curves.md) 암호) 위에 선다. 두 문제는 모두 유한 아벨군의 숨은 부분군 문제이고, 양자 [Fourier 변환](fourier-transform.md)이 그 구조를 겨냥하므로 [Shor 알고리즘](shor-algorithm.md)이 둘을 함께 다항시간에 푼다.
+
+대체 가정은 아벨 숨은 부분군으로 환원되지 않아야 한다. 격자의 근사 최단벡터 문제가 가장 유력한 후보다. 최선의 알고리즘이 고전이든 양자든 $2^{\Theta(n)}$ 시간을 쓰고 양자가 주는 이득은 상수배다.
+
+격자 문제에는 무작위로 뽑은 사례가 최악의 사례만큼 어렵다는 정리도 있다. NIST(National Institute of Standards and Technology)가 2024 년에 표준화한 후양자 알고리즘의 주류가 격자 기반이다.
+
+$As=b$ 는 Gauss 소거법으로 다항시간에 풀린다. 오른쪽에 작은 잡음을 더해 $b=As+e$ 로 바꾸면 소거 과정에서 계수가 커지며 잡음이 증폭되고, 몇 단계 지나면 잡음이 법 $q$ 전체를 덮어 정보가 남지 않는다. 이것이 **LWE**(learning with errors) 문제이고, 격자로 쓰면 $A$ 가 정하는 격자에서 $b$ 에 가장 가까운 점을 찾는 **CVP**(closest vector problem)다. 비밀키는 짧은 비밀벡터, 짧은 오차, 짧은 기저 같은 짧은 대상이어서 알고 있으면 복호 계산이 바로 끝나고, 공개 정보만으로는 찾을 수 없다.
 
 Shor 알고리즘은 $f(x)=g^x \bmod p$ 처럼 아벨군 위에서 정의된 함수의 주기를 양자 Fourier 변환으로 읽고, 소인수분해와 이산로그가 모두 이 꼴로 번역된다. 격자의 근사 **SVP**(shortest vector problem)도 숨은 부분군 문제로 번역되지만 나오는 군이 아벨이 아닌 이면체군이다. 이면체군의 숨은 부분군 문제에는 다항시간 양자 알고리즘이 알려져 있지 않고, 준지수 시간의 Kuperberg 알고리즘이 알려진 최선이며 격자 파라미터에 직접 적용되지 않는다[^1].
 

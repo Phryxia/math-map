@@ -2,13 +2,15 @@
 
 # 개요
 
-**Resurgence 이론(resurgence theory)** 은 발산하는 점근급수를 Borel 변환(Borel transform)과 그 특이점으로 다뤄 지수적으로 작은 항까지 복원하는 Écalle 의 이론이다. [Stokes 현상](stokes-phenomenon.md)에서 점근급수 하나는 함수를 결정하지 못하고 빠진 정보가 지수적으로 작은 항에 들어 있다. 급수의 계수가 $n!$ 규모로 발산한다는 사실이 빠진 항의 크기를 준다. Resurgence 이론은 이 관찰을 연산으로 만든다.
+**Resurgence 이론(resurgence theory)** 은 발산하는 점근급수에서 그 급수가 놓친 지수적으로 작은 항까지 되찾는 Écalle 의 이론이다. [Airy 함수](airy-functions.md)를 변수가 큰 쪽에서 전개하면 계수가 $n!$ 규모로 커지는 급수가 나오고, 이 급수를 아무리 길게 적어도 지수적으로 작은 항은 보이지 않는다. Resurgence 이론은 급수를 Borel 변환(Borel transform)으로 옮겨 그 특이점에서 빠진 항을 읽는다.
+
+# 직관
+
+[Stokes 현상](stokes-phenomenon.md)에서 점근급수 하나는 함수를 결정하지 못하고 빠진 정보가 지수적으로 작은 항에 들어 있다. 급수의 계수가 $n!$ 규모로 발산한다는 사실이 빠진 항의 크기를 준다. Resurgence 이론은 이 관찰을 연산으로 만든다.
 
 Borel 평면의 특이점 $\omega$ 마다 정의되는 **alien 미분** $\Delta_\omega$ 는 곱셈에 대해 Leibniz 법칙을 만족하고 보통의 미분 $\partial_x$ 와 교환한다. 지수적으로 작은 항이 켜지는 현상이 자동사상 $\exp\bigl(\sum_\omega \dot\Delta_\omega\bigr)$ 로 쓰이고, 미분방정식이 주는 제약이 **bridge equation** 한 줄로 압축된다. 여기서 점근급수 계수의 큰 $n$ 점근이 따라 나온다.
 
-resurgence 는 되살아남이다. 급수 하나의 계수를 멀리까지 따라가면 그 안에서 다른 급수 전체가 다시 나타난다. [Airy 함수](airy-functions.md)가 표준 예다.
-
-# 직관
+resurgence 는 되살아남이다. 급수 하나의 계수를 멀리까지 따라가면 그 안에서 다른 급수 전체가 다시 나타난다. Airy 함수가 표준 예다.
 
 발산급수 $\tilde f$ 를 Borel 변환하면 수렴 반경이 유한한 함수 $\hat f(\zeta)$ 가 되고, 이 함수는 $\zeta$ 평면에 특이점들을 가진다. 두 번째 안장점이 $\zeta = A$ 에, 세 번째가 $\zeta = 2A$ 에 있는 식이다. 함수의 정보가 이 특이점 목록과 각 특이점 주변의 국소 거동에 담기므로, $\zeta=\omega$ 에서의 특이성을 $x$ 공간의 급수로 옮겨 적는 연산 $\Delta_\omega$ 를 본다. Borel 평면에서 곱은 [합성곱](convolution.md)이다.
 
