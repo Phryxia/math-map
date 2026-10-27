@@ -2,11 +2,13 @@
 
 # 개요
 
-**Wiedemann 알고리즘(Wiedemann's algorithm)** 은 체 위의 희소행렬 $A$ 로 주어진 선형계 $Ax=b$ 를 행렬-벡터 곱과 [Berlekamp–Massey 알고리즘](berlekamp-massey.md)만으로 푸는 알고리즘이다. 스칼라 수열 $u^{\mathsf T}A^ib$ 의 가장 짧은 점화식에서 $A$ 의 [최소다항식](minimal-polynomial.md)의 인수를 얻고, 그 다항식으로 $A^{-1}b$ 를 $b,Ab,A^2b,\dots$ 의 일차결합으로 쓴다.
-
-$A$ 가 $n\times n$ 이고 $0$ 이 아닌 성분이 $w$ 개이면 비용은 $O(nw+n^2)$ 번의 체 연산이다. 행렬을 바꾸지 않으므로 Gauss 소거에서 생기는 채움(fill-in)이 없고, [이차 체](quadratic-sieve.md)와 [수체 체](number-field-sieve.md)의 $\mathbb F_2$ 위 선형대수 단계가 이 방법의 블록판을 쓴다.
+**Wiedemann 알고리즘(Wiedemann's algorithm)** 은 성분 대부분이 $0$ 인 큰 행렬의 연립일차방정식을 행렬을 고치지 않고 푸는 알고리즘이다. 성분이 $0$ 과 $1$ 인 백만 행 백만 열 행렬에 Gauss 소거를 쓰면 소거 도중 $0$ 이던 자리가 차올라 저장할 성분이 크게 늘어난다. Wiedemann 알고리즘은 행렬과 벡터의 곱만 되풀이해 얻은 수열의 점화식에서 해를 만들어, 행렬을 저장된 그대로 둔 채 방정식을 푼다.
 
 # 직관
+
+Wiedemann 알고리즘은 체 위의 희소행렬 $A$ 로 주어진 선형계 $Ax=b$ 를 행렬-벡터 곱과 [Berlekamp–Massey 알고리즘](berlekamp-massey.md)만으로 푸는 알고리즘이다. 스칼라 수열 $u^{\mathsf T}A^ib$ 의 가장 짧은 점화식에서 $A$ 의 [최소다항식](minimal-polynomial.md)의 인수를 얻고, 그 다항식으로 $A^{-1}b$ 를 $b,Ab,A^2b,\dots$ 의 일차결합으로 쓴다.
+
+$A$ 가 $n\times n$ 이고 $0$ 이 아닌 성분이 $w$ 개이면 비용은 $O(nw+n^2)$ 번의 체 연산이다. 행렬을 바꾸지 않으므로 Gauss 소거에서 생기는 채움(fill-in)이 없고, [이차 체](quadratic-sieve.md)와 [수체 체](number-field-sieve.md)의 $\mathbb F_2$ 위 선형대수 단계가 이 방법의 블록판을 쓴다.
 
 $A=\begin{pmatrix}2&1\cr 0&2\end{pmatrix}$ 에서 $Ax=b$, $b=(0,1)$ 을 푼다. 최소다항식이 $x^2-4x+4$ 이므로 $A^2-4A+4I=0$ 이고, 양변에 $A^{-1}$ 을 곱하면 $A^{-1}=(4I-A)/4$ 다. 그러면
 
