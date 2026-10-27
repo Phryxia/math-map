@@ -2,15 +2,17 @@
 
 # 개요
 
-**Hessian 행렬(Hessian matrix)** 은 다변수 실함수의 이계 편미분을 모은 정사각행렬이다. $f:\mathbb R^n\to\mathbb R$ 이 두 번 미분가능하면 점 $a$ 에서
+**Hessian 행렬(Hessian matrix)** 은 다변수 함수의 이계 편미분을 모은 정사각행렬이다. 함수 $f(x,y)=x^2-y^2$ 은 원점에서 기울기가 $0$ 이지만, $x$ 방향으로는 위로 굽고 $y$ 방향으로는 아래로 굽어 극소도 극대도 아니다. Hessian 행렬은 방향마다 굽는 정도를 한 행렬에 모아, 그 고윳값의 부호로 기울기가 $0$ 인 점이 극소인지 극대인지 안장점인지를 판정한다.
+
+# 직관
+
+Hessian 행렬은 다변수 실함수의 이계 편미분을 모은 정사각행렬이다. $f:\mathbb R^n\to\mathbb R$ 이 두 번 미분가능하면 점 $a$ 에서
 
 $$
 H_f(a)=\Bigl(\frac{\partial^2 f}{\partial x_i\partial x_j}(a)\Bigr)\_{i,j=1}^n
 $$
 
 이다. 일계 [미분](derivative.md)이 $f$ 를 일차함수로 근사하듯 Hessian 은 그 다음 항, 곧 이차 근사를 준다. Hessian 의 대각합이 [Laplace 연산자](laplace-operator.md)다. 임계점이 극소인지 극대인지 안장점인지를 Hessian 의 고윳값 부호로 판정하고, 그 근거가 [스펙트럼 정리](spectral-theorem.md)다.
-
-# 직관
 
 $f(x,y)=x^2-y^2$ 의 원점에서 두 편미분 $2x$ 와 $-2y$ 가 모두 $0$ 이다. 원점은 임계점이지만 $x$ 축을 따라가면 $f=x^2$ 이 원점에서 가장 작고, $y$ 축을 따라가면 $f=-y^2$ 이 원점에서 가장 크다. 일계 미분만으로는 이 차이가 보이지 않는다.
 
