@@ -2,11 +2,13 @@
 
 # 개요
 
-**Riesz–Markov–Kakutani 표현 정리(Riesz–Markov–Kakutani representation theorem)** 는 콤팩트 Hausdorff 공간 $K$ 위의 [연속함수](continuity.md)에 실수를 주는 양의 선형범함수가 하나의 측도에 대한 적분이라는 정리다. 범함수 $\Lambda$ 가 주어지면 $\Lambda f=\int_K f\thinspace d\mu$ 인 정칙 Borel 측도 $\mu$ 가 유일하게 존재한다.
-
-[부호 측도](signed-measures.md)로 넓히면 연속함수 공간 $C(K)$ 의 [쌍대 공간](dual-space.md)이 $K$ 위의 유한 부호 정칙 Borel 측도의 공간과 같고, 쌍대 노름이 전변동 노름과 같다. 측도를 집합함수로 세우지 않고 연속함수에 대한 평균으로 세울 수 있다는 것이 이 정리의 내용이다.
+**Riesz–Markov–Kakutani 표현 정리(Riesz–Markov–Kakutani representation theorem)** 는 연속함수에 수를 주는 규칙이 더하기와 상수배를 지키고 양의 함수에 양수를 주면, 그 규칙이 어떤 [측도](measure.md)로 적분한 값이라는 정리다. $[0,1]$ 위의 연속함수 $f$ 에 $f(\tfrac12)$ 를 주는 규칙은 이 조건을 만족하는데, 이것이 적분이라면 어느 집합에 얼마의 크기를 주는 측도로 적분한 것인지가 문제다. 이 정리는 열린 집합의 측도를 그 집합 밖에서 $0$ 이고 값이 $1$ 이하인 연속함수들에 규칙이 주는 값의 상한으로 정해 측도를 만들고, 그 측도로 적분한 값이 규칙의 값과 같음을 보인다.
 
 # 직관
+
+Riesz–Markov–Kakutani 표현 정리는 콤팩트 Hausdorff 공간 $K$ 위의 [연속함수](continuity.md)에 실수를 주는 양의 선형범함수가 하나의 측도에 대한 적분이라는 정리다. 범함수 $\Lambda$ 가 주어지면 $\Lambda f=\int_K f\thinspace d\mu$ 인 정칙 Borel 측도 $\mu$ 가 유일하게 존재한다.
+
+[부호 측도](signed-measures.md)로 넓히면 연속함수 공간 $C(K)$ 의 [쌍대 공간](dual-space.md)이 $K$ 위의 유한 부호 정칙 Borel 측도의 공간과 같고, 쌍대 노름이 전변동 노름과 같다. 측도를 집합함수로 세우지 않고 연속함수에 대한 평균으로 세울 수 있다는 것이 이 정리의 내용이다.
 
 $[0,1]$ 위의 연속함수 $f$ 에 $\Lambda f=f(\tfrac12)$ 를 주는 규칙이 있다. $\Lambda$ 는 더하기와 상수배를 보존하고, $f\ge 0$ 이면 $\Lambda f\ge 0$ 이다. 이 규칙이 어떤 측도로 적분한 값인지 알려면 집합 $E$ 의 측도를 $\Lambda$ 에서 읽어 내야 한다. $E$ 에서 $1$, 밖에서 $0$ 인 함수 $\mathbf 1\_E$ 를 넣으면 되겠지만 이 함수는 연속이 아니어서 $\Lambda$ 에 넣을 수 없다.
 

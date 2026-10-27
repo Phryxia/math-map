@@ -2,11 +2,13 @@
 
 # 개요
 
-**Nisan–Wigderson 생성기(Nisan–Wigderson generator)** 는 회로로 계산하기 어려운 함수 하나와 조합적 설계로부터, 짧은 씨를 길게 늘려 크기가 제한된 회로가 균등 난수와 구별하지 못하는 비트열을 만드는 구성이다. N. Nisan 과 A. Wigderson 이 1994 년에 발표했다[^1].
-
-[유사난수 생성기](pseudorandom-generators.md)는 일방향 함수를 가정하고 다항시간 구별자를 속인다. 이 생성기는 구별자의 회로 크기를 미리 정하고, 생성기 자신이 구별자보다 오래 도는 것을 허락한다. 그래서 가정이 일방향 함수에서 [불 회로](boolean-circuits.md)의 하한으로 약해지고, 씨의 길이를 $O(\log n)$ 으로 줄일 수 있다. 씨를 모두 돌려 보면 [무작위 복잡도 부류](randomized-complexity-classes.md)의 BPP(bounded-error probabilistic polynomial time) 알고리즘이 결정적 알고리즘으로 바뀐다.
+**Nisan–Wigderson 생성기(Nisan–Wigderson generator)** 는 짧은 무작위 비트열을 길게 늘려, 크기가 정해진 회로가 진짜 무작위 비트열과 구별하지 못하는 비트열을 만드는 구성이다. 동전 $100$ 개를 던져 답을 내는 알고리즘을 동전 없이 돌리려면 $2^{100}$ 가지 비트열을 모두 넣어 보고 다수결을 내야 하고, 이 수는 너무 크다. 이 생성기는 회로로 계산하기 어려운 함수 하나를 서로 조금씩만 겹치는 비트 묶음들에 적용해 짧은 씨에서 긴 비트열을 만든다. 씨의 길이가 입력 길이의 로그 정도이므로 씨를 전부 넣어 보는 비용이 다항식이 된다.
 
 # 직관
+
+Nisan–Wigderson 생성기는 회로로 계산하기 어려운 함수 하나와 조합적 설계로부터, 짧은 씨를 길게 늘려 크기가 제한된 회로가 균등 난수와 구별하지 못하는 비트열을 만드는 구성이다. N. Nisan 과 A. Wigderson 이 1994 년에 발표했다[^1].
+
+[유사난수 생성기](pseudorandom-generators.md)는 일방향 함수를 가정하고 다항시간 구별자를 속인다. 이 생성기는 구별자의 회로 크기를 미리 정하고, 생성기 자신이 구별자보다 오래 도는 것을 허락한다. 그래서 가정이 일방향 함수에서 [불 회로](boolean-circuits.md)의 하한으로 약해지고, 씨의 길이를 $O(\log n)$ 으로 줄일 수 있다. 씨를 모두 돌려 보면 [무작위 복잡도 부류](randomized-complexity-classes.md)의 BPP(bounded-error probabilistic polynomial time) 알고리즘이 결정적 알고리즘으로 바뀐다.
 
 BPP 알고리즘은 입력 길이 $n$ 에서 무작위 비트 $m=n^c$ 개를 쓴다. 이 알고리즘을 결정적으로 돌리려면 $2^m$ 개의 비트열을 모두 시험해 다수결을 내야 한다. 비트열을 모두 시험하지 않으려면, 길이 $\ell=O(\log n)$ 의 씨 $z$ 에서 만든 $m$ 비트 $G(z)$ 가 이 알고리즘에게 균등 난수와 같은 답을 주어야 한다. 그러면 씨 $2^\ell=n^{O(1)}$ 개를 모두 시험하는 것으로 충분하다.
 
@@ -16,7 +18,7 @@ $G(z)$ 의 비트를 어려운 함수 $f$ 의 값으로 만든다. $f$ 가 $n$ �
 
 ## 조합적 설계
 
-$\lbrack\ell\rbrack=\lbrace 1,\dots,\ell\rbrace$ 의 부분집합 $S_1,\dots,S_m$ 이 모두 크기 $n$ 이고 서로 다른 둘의 교집합이 $a$ 이하이면 $(\ell,n,a)$-**설계(design)** 라 한다. 상수 $\delta\gt 0$ 에 대해 $\ell=O(n)$, $a=\log m$, $m=2^{\delta n}$ 인 설계가 있고, 탐욕적으로 시간 $2^{O(\ell)}$ 에 만들어진다[^1].
+$\lbrack\ell\rbrack=\lbrace 1,\dots,\ell\rbrace$ 의 부분집합 $S_1,\dots,S_m$ 이 모두 크기 $n$ 이고 서로 다른 둘의 교집합이 $a$ 이하이면 **$(\ell,n,a)$-설계(design)** 라 한다. 상수 $\delta\gt 0$ 에 대해 $\ell=O(n)$, $a=\log m$, $m=2^{\delta n}$ 인 설계가 있고, 탐욕적으로 시간 $2^{O(\ell)}$ 에 만들어진다[^1].
 
 ## 생성기
 
@@ -30,7 +32,7 @@ $$
 
 ## 평균 경우의 어려움
 
-$f$ 가 크기 $s$ 에 대해 $\varepsilon$-**어렵다**는 것은 크기 $s$ 이하의 모든 회로 $C$ 가 $\Pr_x\lbrack C(x)=f(x)\rbrack\le 1/2+\varepsilon$ 을 만족한다는 것이다. $x$ 는 $\lbrace 0,1\rbrace^n$ 에서 균등하게 고른다.
+$f$ 가 크기 $s$ 에 대해 **$\varepsilon$-어렵다** 는 것은 크기 $s$ 이하의 모든 회로 $C$ 가 $\Pr_x\lbrack C(x)=f(x)\rbrack\le 1/2+\varepsilon$ 을 만족한다는 것이다. $x$ 는 $\lbrace 0,1\rbrace^n$ 에서 균등하게 고른다.
 
 # 성질
 

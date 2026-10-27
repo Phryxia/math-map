@@ -2,11 +2,11 @@
 
 # 개요
 
-**메시지 인증 코드(message authentication code, MAC)** 는 두 사람이 공유한 비밀키로 메시지에 붙이는 짧은 값으로서, 키를 모르는 사람은 새 메시지에 맞는 값을 만들 수 없는 것이다. 받는 사람은 같은 키로 값을 다시 계산해 메시지가 도중에 바뀌지 않았고 키를 가진 상대가 보냈음을 확인한다.
-
-[전자서명](digital-signatures.md)과 같은 위조 불가능성을 요구하지만 확인하는 데에도 비밀키가 필요하다. [유사난수 생성기](pseudorandom-generators.md) 문서의 유사난수 함수가 그대로 MAC 이 되고, 실제로 널리 쓰는 HMAC(hash-based message authentication code)은 [암호 해시 함수](cryptographic-hash-functions.md)로 만든다.
+**메시지 인증 코드(message authentication code, MAC)** 는 두 사람이 공유한 비밀키로 메시지에 붙이는 짧은 값으로서, 키를 모르는 사람은 새 메시지에 맞는 값을 만들 수 없는 것이다. 앨리스가 밥에게 "철수에게 100 원을 보내라" 를 보낼 때 중간에 있는 사람이 금액을 바꿔 넘길 수 있고, 메시지를 암호화해도 암호문의 비트를 뒤집으면 복호한 메시지가 바뀐다. 메시지에 MAC 을 붙이면 밥은 같은 키로 값을 다시 계산해 받은 값과 맞는지 보고, 맞지 않는 메시지를 버린다.
 
 # 직관
+
+MAC 은 [전자서명](digital-signatures.md)과 같은 위조 불가능성을 요구하지만 확인하는 데에도 비밀키가 필요하다. [유사난수 생성기](pseudorandom-generators.md) 문서의 유사난수 함수가 그대로 MAC 이 되고, 실제로 널리 쓰는 HMAC(hash-based message authentication code)은 [암호 해시 함수](cryptographic-hash-functions.md)로 만든다.
 
 앨리스가 밥에게 "철수에게 100 원을 보내라" 는 메시지 $m$ 을 보내고, 중간에 있는 사람이 메시지를 바꿀 수 있다. 두 사람이 비밀 비트열 $r$ 을 공유해 $c=m\oplus r$ 을 보내면 중간의 사람은 $m$ 을 읽지 못한다. 그러나 그 사람이 $c$ 에 아무 $\Delta$ 를 배타적 논리합해 넘기면 밥은 $m\oplus\Delta$ 로 복호한다. 금액이 적힌 비트 자리를 알면 $\Delta$ 를 골라 100 을 900 으로 바꿀 수 있고, 밥은 바뀐 것을 알지 못한다.
 

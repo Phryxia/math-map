@@ -2,11 +2,13 @@
 
 # 개요
 
-**Noether 환(Noetherian ring)** 은 아이디얼의 오름사슬이 반드시 멈추는 환이다. 동치로 모든 아이디얼이 유한생성이다. 이 조건은 무한한 생성 과정이 끝난다는 보장이므로, 귀납으로 진행하는 증명과 유한한 자료로 대상을 기술하는 논증이 모두 이 조건 위에서 돌아간다.
-
-Hilbert 기저정리가 이 부류를 넓게 만든다. $R$ 가 Noether 이면 $R[x]$ 도 Noether 이므로, $\mathbb Z$ 와 체에서 출발해 [다항식환](polynomial-rings.md)을 유한 번 쌓아 얻는 환이 전부 Noether 다. [대수적 수체](algebraic-number-fields.md)의 정수환과 [Dedekind 정역](dedekind-domains.md)도 정의에 이 조건을 포함한다.
+**Noether 환(Noetherian ring)** 은 [아이디얼](ideals-quotient-rings.md)을 키워 가는 과정이 반드시 유한 번에 멈추는 환이다. 정수에서 $(12)\subset(6)\subset(3)$ 처럼 더 큰 아이디얼로 옮겨 가면 $12$ 의 약수가 유한 개이므로 사슬이 끝나지만, 변수가 무한히 많은 다항식환에서는 $(x_1)\subset(x_1,x_2)\subset(x_1,x_2,x_3)\subset\cdots$ 가 끝나지 않는다. 사슬이 멈추는 환에서는 모든 아이디얼이 유한 개의 원소로 생성되므로, 다항식으로 정의된 도형을 유한 개의 방정식으로 적을 수 있고 아이디얼에 대한 귀납으로 증명을 끝낼 수 있다.
 
 # 직관
+
+Noether 환은 아이디얼의 오름사슬이 반드시 멈추는 환이다. 동치로 모든 아이디얼이 유한생성이다. 이 조건은 무한한 생성 과정이 끝난다는 보장이므로, 귀납으로 진행하는 증명과 유한한 자료로 대상을 기술하는 논증이 모두 이 조건 위에서 돌아간다.
+
+Hilbert 기저정리가 이 부류를 넓게 만든다. $R$ 가 Noether 이면 $R[x]$ 도 Noether 이므로, $\mathbb Z$ 와 체에서 출발해 [다항식환](polynomial-rings.md)을 유한 번 쌓아 얻는 환이 전부 Noether 다. [대수적 수체](algebraic-number-fields.md)의 정수환과 [Dedekind 정역](dedekind-domains.md)도 정의에 이 조건을 포함한다.
 
 원소를 하나씩 더해 아이디얼을 키우는 절차를 생각한다. Noether 조건은 이 절차가 유한 번에 끝난다는 뜻이다. [유일분해정역](unique-factorization-domains.md)에서 분해가 유한 번에 끝나는 근거가 이것이고, 다항식으로 정의되는 도형이 유한 개의 방정식으로 잘린다는 사실의 근거도 이것이다.
 
@@ -20,7 +22,7 @@ $$
 
 가환환 $R$ 가 **Noether 환**이라는 것은 다음 세 조건 가운데 하나를 만족한다는 뜻이며, 셋은 서로 동치다.
 
-- **오름사슬 조건.** [아이디얼](ideals-quotient-rings.md)의 증가열 $I_1\subset I_2\subset\cdots$ 은 어떤 $n$ 부터 $I_n=I_{n+1}=\cdots$ 이다.
+- **오름사슬 조건.** 아이디얼의 증가열 $I_1\subset I_2\subset\cdots$ 은 어떤 $n$ 부터 $I_n=I_{n+1}=\cdots$ 이다.
 - **유한생성.** $R$ 의 모든 아이디얼이 유한 개의 원소로 생성된다.
 - **극대원 조건.** 공집합이 아닌 아이디얼족은 포함관계에 대한 극대원을 갖는다.
 
