@@ -2,15 +2,17 @@
 
 # 개요
 
-**Riemann–Hurwitz 공식(Riemann–Hurwitz formula)** 은 콤팩트 [Riemann 곡면](riemann-surfaces.md) 사이의 상수가 아닌 정칙사상 $f:X\to Y$ 의 차수 $n$ 과 분기지수 $e_p$ 로 두 곡면의 종수를 잇는 등식이다.
+**Riemann–Hurwitz 공식(Riemann–Hurwitz formula)** 은 한 곡면을 다른 곡면 위로 여러 겹 겹쳐 보내는 사상이 있을 때 두 곡면의 종수를 잇는 등식이다. 방정식 $w^2=(z-a_1)(z-a_2)(z-a_3)(z-a_4)$ 의 해가 이루는 곡면은 $z$ 하나에 $w$ 가 두 개씩 대응하므로 구면을 두 겹으로 덮지만, $z=a_i$ 인 네 점에서는 두 겹이 한 점으로 만난다. 공식은 [Euler 지표](euler-characteristic.md)에 겹수를 곱하고 두 겹이 만나는 점마다 보정을 더해, 이 곡면의 종수가 $1$ 임을 계산한다.
+
+# 직관
+
+Riemann–Hurwitz 공식은 콤팩트 [Riemann 곡면](riemann-surfaces.md) 사이의 상수가 아닌 정칙사상 $f:X\to Y$ 의 차수 $n$ 과 분기지수 $e_p$ 로 두 곡면의 종수를 잇는 등식이다.
 
 $$
 2g_X-2=n(2g_Y-2)+\sum_{p\in X}(e_p-1)
 $$
 
-분기가 없으면 [덮개공간](covering-spaces.md)에서 [Euler 지표](euler-characteristic.md)가 겹수만큼 곱해진다는 사실이고, 우변의 합이 분기점에서 생기는 차이를 보정한다. 방정식으로 주어진 곡선의 종수 계산, 곡선 사이 사상의 존재 판정, 자기동형군의 크기 제한에 쓴다.
-
-# 직관
+분기가 없으면 [덮개공간](covering-spaces.md)에서 Euler 지표가 겹수만큼 곱해진다는 사실이고, 우변의 합이 분기점에서 생기는 차이를 보정한다. 방정식으로 주어진 곡선의 종수 계산, 곡선 사이 사상의 존재 판정, 자기동형군의 크기 제한에 쓴다.
 
 방정식 $w^2=(z-a_1)(z-a_2)(z-a_3)(z-a_4)$ 의 해가 이루는 곡면 $X$ 가 어떤 곡면인지 알고 싶다. [곡면의 분류](classification-of-surfaces.md)에 따르면 콤팩트 곡면은 Euler 지표 $2-2g$ 로 정해지므로 Euler 지표를 세면 된다. $(z,w)\mapsto z$ 는 $X$ 를 구 $\widehat{\mathbb C}$ 로 보내고, $z$ 가 네 점 $a_i$ 가 아니면 $w$ 가 둘이므로 $z$ 마다 점이 둘이다. 구를 네 점 $a_i$ 를 꼭짓점으로 포함하게 삼각형으로 나누면, 각 삼각형과 각 변 위에는 $X$ 의 삼각형과 변이 두 개씩 놓인다.
 

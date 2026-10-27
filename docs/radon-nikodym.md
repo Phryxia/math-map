@@ -2,13 +2,15 @@
 
 # 개요
 
-**Radon–Nikodym 정리(Radon–Nikodym theorem)** 는 [측도](measure.md) $\nu$ 를 다른 측도 $\mu$ 로 적분해 쓸 수 있는 조건을 준다. $\nu(B)=\int_B f\thinspace d\mu$ 가 모든 가측집합 $B$ 에서 성립하는 함수 $f$ 가 $\nu$ 의 $\mu$ 에 대한 밀도다. 확률밀도함수는 분포를 Lebesgue 측도로 적분해 쓴 밀도다.
-
-조건은 하나다. $\mu(B)=0$ 이면 $\nu(B)=0$ 이다. 확률밀도함수, [조건부 기댓값](conditional-expectation.md), [우도비](change-of-measure.md), martingale 의 밀도과정이 모두 이 정리로 얻는 밀도다.
+**Radon–Nikodym 정리(Radon–Nikodym theorem)** 는 한 [측도](measure.md)를 다른 측도에 대한 밀도 함수의 적분으로 쓸 수 있는 조건을 주는 정리다. $[0,1]$ 에서 $P(X\in B)=\int_B 2x\thinspace dx$ 인 [확률변수](random-variables.md) $X$ 는 밀도 $2x$ 를 갖지만, 항상 $0$ 인 확률변수는 길이가 $0$ 인 집합 $\lbrace 0\rbrace$ 에 확률 $1$ 을 주므로 길이에 대한 밀도가 없다. 이 정리는 길이가 $0$ 인 집합에 확률 $0$ 을 주는 분포에는 언제나 밀도가 존재함을 보여, 밀도가 있는 경우와 없는 경우를 가른다.
 
 # 직관
 
-$[0,1]$ 에서 $P(X\in B)=\int_B 2x\thinspace dx$ 인 [확률변수](random-variables.md) $X$ 는 밀도 $2x$ 를 갖고, 어느 집합의 확률이든 그 집합 위에서 $2x$ 를 적분하면 나온다. 항상 $0$ 인 확률변수의 분포는 $\lbrace 0\rbrace$ 에 확률 $1$ 을 준다. 길이가 $0$ 인 집합 위의 적분은 함수가 무엇이든 $0$ 이므로 $\int_{\lbrace 0\rbrace} f\thinspace dx=1$ 인 $f$ 는 없다. 이 분포에는 Lebesgue 측도에 대한 밀도가 없다.
+Radon–Nikodym 정리는 측도 $\nu$ 를 다른 측도 $\mu$ 로 적분해 쓸 수 있는 조건을 준다. $\nu(B)=\int_B f\thinspace d\mu$ 가 모든 가측집합 $B$ 에서 성립하는 함수 $f$ 가 $\nu$ 의 $\mu$ 에 대한 밀도다. 확률밀도함수는 분포를 Lebesgue 측도로 적분해 쓴 밀도다.
+
+조건은 하나다. $\mu(B)=0$ 이면 $\nu(B)=0$ 이다. 확률밀도함수, [조건부 기댓값](conditional-expectation.md), [우도비](change-of-measure.md), martingale 의 밀도과정이 모두 이 정리로 얻는 밀도다.
+
+$[0,1]$ 에서 $P(X\in B)=\int_B 2x\thinspace dx$ 인 확률변수 $X$ 는 밀도 $2x$ 를 갖고, 어느 집합의 확률이든 그 집합 위에서 $2x$ 를 적분하면 나온다. 항상 $0$ 인 확률변수의 분포는 $\lbrace 0\rbrace$ 에 확률 $1$ 을 준다. 길이가 $0$ 인 집합 위의 적분은 함수가 무엇이든 $0$ 이므로 $\int_{\lbrace 0\rbrace} f\thinspace dx=1$ 인 $f$ 는 없다. 이 분포에는 Lebesgue 측도에 대한 밀도가 없다.
 
 밀도가 있으면 $\mu(B)=0$ 인 모든 $B$ 에서 $\nu(B)=\int_B f\thinspace d\mu=0$ 이고, 앞의 예에서는 $\lbrace 0\rbrace$ 이 이 조건을 깼다. 정리에 따르면 거꾸로 이 조건만 지키면 밀도가 있다. 점에 확률을 모으지 않아도 밀도가 없을 수 있고, 길이 $0$ 인 [Cantor 집합](cantor-set.md) 위에 실린 측도가 그 예다. 임의의 측도를 밀도가 있는 부분과 없는 부분으로 나누는 것이 Lebesgue 분해 정리다.
 
