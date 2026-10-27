@@ -2,7 +2,11 @@
 
 # 개요
 
-**Herbrand–Ribet 정리(Herbrand–Ribet theorem)** 는 짝수 $2\le k\le p-3$ 에 대해 $p\mid B_k$ 와 원분체 $\mathbb Q(\mu_p)$ 의 류군의 $\omega^{1-k}$ 성분이 0 이 아닌 것이 동치라는 정리다. [Stickelberger](stickelberger.md) 소멸 정리는 한 방향만 준다. $p$ 가 Bernoulli 수 $B_k$ 를 나누지 않으면 순환체 류군의 $\omega^{1-k}$ 성분이 0 이다. 이것이 Herbrand 의 정리이고, 소멸자가 단원이라는 말이므로 증명은 한 줄이다.
+**Herbrand–Ribet 정리(Herbrand–Ribet theorem)** 는 짝수 $2\le k\le p-3$ 에 대해 소수 $p$ 가 [Bernoulli 수](bernoulli-numbers.md) $B_k$ 를 나누는 것과 원분체 $\mathbb Q(\mu_p)$ 의 류군의 $\omega^{1-k}$ 성분이 $0$ 이 아닌 것이 동치라는 정리다. $p=37$ 은 $B_{32}$ 의 분자를 나누고, $\mathbb Q(\mu_{37})$ 의 정수환에서는 소인수분해가 유일하지 않다. 류군이 $0$ 인지는 정수환의 이데알을 직접 다뤄야 알 수 있지만, 정리를 쓰면 류군의 각 성분이 $0$ 인지를 Bernoulli 수 하나의 나눗셈으로 판정한다.
+
+# 직관
+
+[Stickelberger](stickelberger.md) 소멸 정리는 한 방향만 준다. $p$ 가 Bernoulli 수 $B_k$ 를 나누지 않으면 순환체 류군의 $\omega^{1-k}$ 성분이 0 이다. 이것이 Herbrand 의 정리이고, 소멸자가 단원이라는 말이므로 증명은 한 줄이다.
 
 반대 방향은
 
@@ -21,8 +25,6 @@ $$
 꼴의 가약이지만 불분해인 표현이 되고, $\ast\ne0$ 이 정의하는 확대가 류군의 비자명한 원소다. 해석적 조건 $p\mid B_k$ 가 모듈러 형식을 거쳐 이데알류로 번역된다.
 
 Mazur–Wiles 의 [Iwasawa 주추측](iwasawa-main-conjecture.md) 증명이 이 논법을 탑 전체로 밀어 올린 것이고, Skinner–Urban 의 [타원곡선](elliptic-curves.md) 주추측도 같은 구조를 쓴다.
-
-# 직관
 
 $\theta$ 가 류군을 죽인다는 것은 류군이 $\theta$ 의 핵 안에 있다는 상한이다. $\theta$ 의 성분이 $0$ 이 되면 상한이 무의미해질 뿐이고 군이 커졌다는 증거는 아니다. 군이 크다는 것은 원소를 손에 쥐어야 보이며, 류군의 원소는 불분기 아벨 확대에 대응하므로 $\mathbb Q(\mu_p)$ 위의 불분기 확대를 하나 만들어야 한다.
 

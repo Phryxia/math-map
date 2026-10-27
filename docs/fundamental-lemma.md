@@ -2,7 +2,11 @@
 
 # 개요
 
-**기본 보조정리(fundamental lemma)** 는 환원군 $G$ 의 $\kappa$ 궤도적분과 내시군(endoscopic group) $H$ 의 안정 궤도적분이 전이 인자를 곱하면 같다는 진술이다. [Selberg 대각합 공식](selberg-trace-formula.md)은 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 의 Laplace 스펙트럼을 닫힌 측지선으로 바꿔 놓았다. 왼쪽이 해석(스펙트럼), 오른쪽이 기하였다. Arthur 가 이것을 임의의 환원군 $G$ 와 아델 상 $G(\mathbb Q)\backslash G(\mathbb A)$ 로 올린 것이 **Arthur–Selberg 대각합 공식**이고, 그 모양은 여전히 같다.
+**기본 보조정리(fundamental lemma)** 는 환원군 $G$ 의 $\kappa$ 궤도적분과 내시군(endoscopic group) $H$ 의 안정 궤도적분이 전이 인자를 곱하면 같다는 진술이다. 두 군의 자기동형 표현을 비교하려고 [Selberg 대각합 공식](selberg-trace-formula.md)을 두 군에 나란히 쓰면, 스펙트럼 쪽은 직접 비교할 수 없어 기하 쪽의 궤도적분을 하나씩 맞춰야 한다. $\mathrm{SL}\_2(\mathbb Q_p)$ 에서는 복소수 위에서 켤레인 두 원소가 $\mathbb Q_p$ 위에서는 켤레가 아니어서, 궤도적분이 여러 조각으로 갈라진다. 기본 보조정리는 그 조각들에 부호를 달아 더한 값이 더 작은 군 $H$ 의 궤도적분과 같음을 보여 두 공식의 비교를 완결한다.
+
+# 직관
+
+Selberg 대각합 공식은 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 의 Laplace 스펙트럼을 닫힌 측지선으로 바꿔 놓았다. 왼쪽이 해석(스펙트럼), 오른쪽이 기하였다. Arthur 가 이것을 임의의 환원군 $G$ 와 아델 상 $G(\mathbb Q)\backslash G(\mathbb A)$ 로 올린 것이 **Arthur–Selberg 대각합 공식**이고, 그 모양은 여전히 같다.
 
 $$
 \underbrace{\sum_\pi m(\pi)\thinspace\mathrm{tr}\thinspace\pi(f)}\_{\text{스펙트럼}}\thickspace=\thickspace\underbrace{\sum_{\lbrace\gamma\rbrace}\mathrm{vol}(\cdot)\thinspace\mathrm{O}\_\gamma(f)}\_{\text{기하}}
@@ -12,21 +16,19 @@ $$
 
 이 공식이 쓰이는 방식은 두 군에 대해 나란히 써 놓고 비교하는 것이다. 군 $H$ 의 자기동형 표현이 $G$ 의 것으로 올라간다는 함수성 명제를 증명하고 싶다면, 스펙트럼 쪽은 직접 비교할 방법이 없으므로 기하 쪽을 비교한다. $H$ 의 궤도적분과 $G$ 의 궤도적분이 짝이 맞으면 스펙트럼 쪽 등식이 따라 나온다.
 
-그런데 여기서 걸린다. $G$ 의 켤레류는 대수적 폐포 위에서 보는 것과 바닥체 위에서 보는 것이 다르다. 폐포에서 하나였던 켤레류가 바닥체 위에서는 여러 조각으로 갈라진다. 갈라진 조각들을 그냥 더한 것(안정 궤도적분)은 잘 다뤄지지만, 조각마다 부호를 달아 더한 것($\kappa$ 궤도적분)은 $G$ 안에서 해석되지 않는다. Langlands 는 그 $\kappa$ 궤도적분이 더 작은 군, 곧 내시군(endoscopic group) $H$ 의 안정 궤도적분과 같아 보인다는 것을 발견했다.
+$G$ 의 켤레류는 대수적 폐포 위에서 보는 것과 바닥체 위에서 보는 것이 다르다. 폐포에서 하나였던 켤레류가 바닥체 위에서는 여러 조각으로 갈라진다. 갈라진 조각들을 그냥 더한 것(안정 궤도적분)은 잘 다뤄지지만, 조각마다 부호를 달아 더한 것($\kappa$ 궤도적분)은 $G$ 안에서 해석되지 않는다. Langlands 는 그 $\kappa$ 궤도적분이 더 작은 군, 곧 내시군 $H$ 의 안정 궤도적분과 같아 보인다는 것을 발견했다.
 
 $$
 \mathrm{O}^\kappa_\gamma(f)\thickspace\stackrel?=\thickspace\Delta(\gamma_H,\gamma)\thickspace\mathrm{SO}\_{\gamma_H}(f^H)
 $$
 
-가장 기본이 되는 경우, 곧 $f$ 가 극대 콤팩트 부분군의 특성함수이고 $f^H$ 가 [Satake 동형](satake-isomorphism.md)으로 정의된 기본 사상 $b$ 의 상일 때 이 등식이 성립한다는 것이 **기본 보조정리**다. $f\mapsto f^H$ 라는 대응은 Satake 동형으로만 정의된다. 쌍대군 준동형 $\widehat H\to\widehat G$ 를 표현환 사이의 사상으로 읽고, 양쪽에서 Satake 동형으로 Hecke 대수로 끌어내린다.
+가장 기본이 되는 경우, 곧 $f$ 가 극대 콤팩트 부분군의 특성함수이고 $f^H$ 가 [Satake 동형](satake-isomorphism.md)으로 정의된 기본 사상 $b$ 의 상일 때 이 등식이 성립한다는 것이 기본 보조정리다. $f\mapsto f^H$ 라는 대응은 Satake 동형으로만 정의된다. 쌍대군 준동형 $\widehat H\to\widehat G$ 를 표현환 사이의 사상으로 읽고, 양쪽에서 Satake 동형으로 Hecke 대수로 끌어내린다.
 
 $$
 \mathcal H(G,K)\thickspace\xrightarrow{\ \mathcal S\ }\thickspace R(\widehat G)\thickspace\longrightarrow\thickspace R(\widehat H)\thickspace\xrightarrow{\ \mathcal S^{-1}\ }\thickspace\mathcal H(H,K_H)
 $$
 
 Langlands 는 이것을 남은 기술적 단계로 보고 "보조정리" 라 불렀다. 완전한 증명까지 30 년이 걸렸고, Ngô Bảo Châu 가 2008 년에 Hitchin 올뭉치의 기하로 증명해 2010 년 Fields 메달을 받았다. 이름만 보조정리로 남았다.
-
-# 직관
 
 $p\equiv3\pmod 4$ 라 하고 $\mathrm{SL}\_2(\mathbb Q_p)$ 의 두 원소를 본다.
 
