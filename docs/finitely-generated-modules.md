@@ -2,11 +2,13 @@
 
 # 개요
 
-주아이디얼정역(principal ideal domain, PID) 위의 유한생성 [가군](modules.md)은 순환가군의 직합으로 유일하게 분해된다. 이 구조정리 하나가 두 고전 정리를 특수한 경우로 포함한다. $R=\mathbb Z$ 이면 유한생성 아벨군의 구조정리이고, $R=k[x]$ 이면 [선형사상](linear-maps.md)의 [Jordan 표준형](jordan-canonical-form.md)과 유리 표준형이다.
-
-정리가 성립하는 근거는 [유일분해정역](unique-factorization-domains.md) 사슬의 PID 칸이다. 모든 아이디얼이 한 원소로 생성되므로 관계 행렬을 대각화할 수 있고, 그 대각 성분이 분해의 불변량이 된다.
+**PID 위의 유한생성 가군(finitely generated module over a PID)** 은 주아이디얼정역(principal ideal domain, PID) 위에서 원소 몇 개로 생성되는 [가군](modules.md)이다. 원소 $a,b$ 로 생성되고 관계 $2a=0$, $3b=0$ 만 성립하는 아벨군은 $\mathbb Z/2\oplus\mathbb Z/3$ 이고, 이것은 원소 하나로 생성되는 $\mathbb Z/6$ 과 같은 군이다. 이런 가군은 생성원 사이의 관계를 행렬로 적고 그 행렬을 대각화해, 순환가군의 직합이라는 한 가지 꼴로 분류한다.
 
 # 직관
+
+PID 위의 유한생성 가군은 순환가군의 직합으로 유일하게 분해된다. 이 구조정리 하나가 두 고전 정리를 특수한 경우로 포함한다. $R=\mathbb Z$ 이면 유한생성 아벨군의 구조정리이고, $R=k[x]$ 이면 [선형사상](linear-maps.md)의 [Jordan 표준형](jordan-canonical-form.md)과 유리 표준형이다.
+
+정리가 성립하는 근거는 [유일분해정역](unique-factorization-domains.md) 사슬의 PID 칸이다. 모든 아이디얼이 한 원소로 생성되므로 관계 행렬을 대각화할 수 있고, 그 대각 성분이 분해의 불변량이 된다.
 
 유한생성 가군은 생성원 $m$ 개와 그들 사이의 관계로 기술된다. 관계를 행렬 $A$ 로 적으면 가군은 $R^m/\mathrm{im}\thinspace A$ 다. 생성원과 관계를 각각 기저변환하는 것이 $A$ 에 가역행렬을 좌우에서 곱하는 것이고, PID 에서는 이 연산으로 $A$ 를 대각형으로 만들 수 있다. 대각 성분이 남는 자료의 전부다.
 

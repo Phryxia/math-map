@@ -2,11 +2,11 @@
 
 # 개요
 
-**유도 함자(derived functor)** 는 완전열을 보존하지 못하는 [함자](functors.md)가 잃는 정보를 계산하는 함자의 열이다. 완전열 $0\to\mathbb Z\xrightarrow{\times 2}\mathbb Z\to\mathbb Z/2\to0$ 의 각 항에 $\mathbb Z/2$ 를 텐서곱하면 첫 사상이 $0$ 사상이 되어 단사가 아니게 된다. 유도 함자는 이렇게 생긴 핵을 $\mathrm{Tor}$ 같은 새 가군으로 계산하고, 열이 어디서 완전성을 잃는지 긴 완전열로 추적한다.
+**유도 함자(derived functor)** 는 [완전열](exact-sequences.md)을 보존하지 못하는 [함자](functors.md)가 잃는 정보를 계산하는 함자의 열이다. 완전열 $0\to\mathbb Z\xrightarrow{\times 2}\mathbb Z\to\mathbb Z/2\to0$ 의 각 항에 $\mathbb Z/2$ 를 [텐서곱](tensor-products.md)하면 첫 사상이 $0$ 사상이 되어 단사가 아니게 된다. 유도 함자는 이렇게 생긴 핵을 $\mathrm{Tor}$ 같은 새 [가군](modules.md)으로 계산하고, 열이 어디서 완전성을 잃는지 긴 완전열로 추적한다.
 
 # 직관
 
-유도 함자는 완전열을 보존하지 못하는 함자의 실패를 측정하는 함자의 열이다. [가군](modules.md) [범주](category.md)에서 [텐서곱](tensor-products.md) $M \otimes_R -$ 은 우완전이고 $\mathrm{Hom}\_R(M, -)$ 은 좌완전이며, 둘 다 반대쪽 완전성을 잃는다. 잃어버린 정보는 사라지지 않고 $\mathrm{Tor}$ 과 $\mathrm{Ext}$ 라는 새 가군에 남는다.
+유도 함자는 완전열을 보존하지 못하는 함자의 실패를 측정하는 함자의 열이다. 가군 [범주](category.md)에서 텐서곱 $M \otimes_R -$ 은 우완전이고 $\mathrm{Hom}\_R(M, -)$ 은 좌완전이며, 둘 다 반대쪽 완전성을 잃는다. 잃어버린 정보는 사라지지 않고 $\mathrm{Tor}$ 과 $\mathrm{Ext}$ 라는 새 가군에 남는다.
 
 구성은 세 단계다. 가군을 [사영가군](projective-modules.md)이나 [단사가군](injective-modules.md)의 분해로 바꾸고, 그 분해에 함자를 적용하고, 얻은 복합체의 호몰로지를 취한다. 결과가 분해의 선택에 무관하다는 것이 이 구성의 핵심 정리이고, 짧은 완전열 하나가 유도 함자의 긴 완전열로 늘어나는 것이 주된 계산 수단이다.
 

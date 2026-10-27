@@ -2,11 +2,13 @@
 
 # 개요
 
-**자유확률(free probability)** 은 곱이 교환하지 않는 변수에 독립 대신 자유독립이라는 조건을 둔 확률론이다. 자유독립은 [비교차 분할](noncrossing-partitions.md)로 적률을 전개할 때 나오는 조건이고, 이 조건을 만족하는 변수들의 합은 보통의 [합성곱](convolution.md)이 아닌 다른 법칙을 따른다.
-
-[중심극한정리](central-limit-theorem.md)의 자리에 [Wigner 반원법칙](wigner-semicircle.md)이 오고, 큰 무작위 행렬의 고윳값 분포가 이 이론의 계산으로 나온다.
+**자유확률(free probability)** 은 곱의 순서를 바꾸면 값이 달라지는 확률변수를 다루는 확률론이다. 큰 무작위 행렬 $A,B$ 의 고윳값 분포를 각각 알 때 $A+B$ 의 고윳값 분포를 구하려 하면, 행렬의 곱이 교환하지 않아 보통의 독립 변수처럼 분포를 [합성곱](convolution.md)할 수 없다. 자유확률은 이런 행렬 쌍이 크기가 커질 때 만족하는 자유독립이라는 조건을 세우고, 그 조건에서 합의 분포를 계산하는 규칙을 준다.
 
 # 직관
+
+자유확률은 곱이 교환하지 않는 변수에 독립 대신 자유독립이라는 조건을 둔 확률론이다. 자유독립은 [비교차 분할](noncrossing-partitions.md)로 적률을 전개할 때 나오는 조건이고, 이 조건을 만족하는 변수들의 합은 보통의 합성곱이 아닌 다른 법칙을 따른다.
+
+[중심극한정리](central-limit-theorem.md)의 자리에 [Wigner 반원법칙](wigner-semicircle.md)이 오고, 큰 무작위 행렬의 고윳값 분포가 이 이론의 계산으로 나온다.
 
 독립인 확률변수 $X,Y$ 의 합의 분포는 합성곱이고, 적률은 $E\lbrack(X+Y)^n\rbrack$ 을 전개해 혼합항 $E\lbrack X^aY^b\rbrack=E\lbrack X^a\rbrack E\lbrack Y^b\rbrack$ 으로 쪼개면 나온다.
 
