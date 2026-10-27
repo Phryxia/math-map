@@ -2,7 +2,11 @@
 
 # 개요
 
-**Deuring 대응(Deuring correspondence)** 은 표수 $p$ 초특이 타원곡선과 사원수대수 $B_{p,\infty}$ 의 극대차수를 일대일로 잇는 대응이다[^1]. [초특이 동종사상 그래프](supersingular-isogeny-graphs.md)에서 곡선의 자기준동형환은 비가환이고, 이 대응으로 그 환이 [사원수 대수](quaternion-algebras.md) 안에서 결정된다.
+**Deuring 대응(Deuring correspondence)** 은 표수 $p$ 초특이 타원곡선과 사원수대수 $B_{p,\infty}$ 의 극대차수를 일대일로 잇는 대응이다[^1]. 초특이 타원곡선 두 개가 주어질 때 하나에서 다른 하나로 가는 동종사상을 곡선의 식만 보고 찾으려면, 곡선을 하나씩 바꿔 가며 따라가야 한다. Deuring 대응은 곡선을 사원수 대수 안의 극대차수로 옮겨, 이 물음을 [격자](lattices.md) 계산으로 바꾼다.
+
+# 직관
+
+[초특이 동종사상 그래프](supersingular-isogeny-graphs.md)에서 곡선의 자기준동형환은 비가환이고, 이 대응으로 그 환이 [사원수 대수](quaternion-algebras.md) 안에서 결정된다.
 
 $$
 \lbrace\text{표수 }p\ \text{초특이 타원곡선}\rbrace\ \longleftrightarrow\ \lbrace\text{사원수대수 }B_{p,\infty}\ \text{의 극대차수}\rbrace
@@ -10,9 +14,7 @@ $$
 
 $p$ 와 $\infty$ 에서만 분기하는 [사원수대수](brauer-groups.md) $B_{p,\infty}$ 는 동형을 무시하면 하나뿐이다. 그 안의 극대차수들과 초특이 곡선들이 일대일로 대응하고, 동종사상이 좌이념으로, 합성이 이념의 곱으로, 차수가 노름으로 번역된다.
 
-양쪽의 계산 난이도는 정반대다. 곡선 쪽에서 두 정점 사이의 동종사상 경로를 찾는 일은 지수 시간이고 그 어려움 위에 암호가 설계되었다. 사원수 쪽에서 같은 일은 [격자](lattices.md) 문제이고 KLPT(Kohel–Lauter–Petit–Tignol) 알고리즘이 다항 시간에 푼다. 사전을 어느 방향으로 건널 수 있느냐가 암호의 안전성이고, 건널 수 있는 쪽을 골라 쓰는 것이 SQIsign 서명이다.
-
-# 직관
+양쪽의 계산 난이도는 정반대다. 곡선 쪽에서 두 정점 사이의 동종사상 경로를 찾는 일은 지수 시간이고 그 어려움 위에 암호가 설계되었다. 사원수 쪽에서 같은 일은 격자 문제이고 KLPT(Kohel–Lauter–Petit–Tignol) 알고리즘이 다항 시간에 푼다. 사전을 어느 방향으로 건널 수 있느냐가 암호의 안전성이고, 건널 수 있는 쪽을 골라 쓰는 것이 SQIsign 서명이다.
 
 초특이 곡선 $E$ 에서 $E'$ 로 가는 동종사상을 찾는 일은 곡선만 보고는 어렵다. $\mathcal O=\mathrm{End}(E)$ 쪽으로 옮기면 사정이 다르다. 동종사상 $\varphi:E\to E'$ 마다 $\mathrm{Hom}(E',E)\cdot\varphi$ 가 $\mathcal O$ 의 좌이념이고, 거꾸로 좌이념 $I$ 에서 $\ker I=\bigcap_{\alpha\in I}\ker\alpha$ 를 커널로 갖는 동종사상이 나오므로 두 구성이 서로 역이다.
 

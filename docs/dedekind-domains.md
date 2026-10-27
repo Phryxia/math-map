@@ -2,13 +2,15 @@
 
 # 개요
 
-Dedekind 정역(Dedekind domain)은 Noether 이고 정수적으로 닫혀 있으며 0 이 아닌 [소 아이디얼](prime-ideals.md)이 모두 극대인 정역이다. $\mathbb Z$ 에서 성립하는 소인수분해의 유일성은 정수를 조금만 넓혀도 깨진다. $\mathbb Z[\sqrt{-5}]$ 가 [유일분해정역](unique-factorization-domains.md)이 아니라는 것이 그 예다.
-
-Dedekind 의 복구 방법은 분해의 대상을 원소에서 [아이디얼](ideals-quotient-rings.md)로 바꾸는 것이다. Dedekind 정역에서는 0 이 아닌 아이디얼이 소 아이디얼의 곱으로 유일하게 분해된다.
-
-세 조건의 의미는 [국소화](localization-rings.md)에서 드러난다. 각 소 아이디얼에서 국소화하면 [이산부값환](discrete-valuation-rings.md)(discrete valuation ring, DVR)이 나오고 거기서는 모든 아이디얼이 한 원소의 거듭제곱으로 생성된다. 전역적 유일분해는 국소적으로 자명한 사실들을 붙인 결과이며, 대수적 정수론과 대수기하가 공유하는 구조다.
+**Dedekind 정역(Dedekind domain)** 은 Noether 이고 정수적으로 닫혀 있으며 0 이 아닌 [소 아이디얼](prime-ideals.md)이 모두 극대인 정역이다. $a+b\sqrt{-5}$ 꼴의 수에서는 $6=2\cdot 3=(1+\sqrt{-5})(1-\sqrt{-5})$ 처럼 소인수분해가 두 가지로 갈린다. Dedekind 정역에서는 분해의 대상을 수에서 [아이디얼](ideals-quotient-rings.md)로 바꾸면 분해가 다시 하나로 정해진다.
 
 # 직관
+
+$\mathbb Z$ 에서 성립하는 소인수분해의 유일성은 정수를 조금만 넓혀도 깨진다. $\mathbb Z[\sqrt{-5}]$ 가 [유일분해정역](unique-factorization-domains.md)이 아니라는 것이 그 예다.
+
+Dedekind 의 복구 방법은 분해의 대상을 원소에서 아이디얼로 바꾸는 것이다. Dedekind 정역에서는 0 이 아닌 아이디얼이 소 아이디얼의 곱으로 유일하게 분해된다.
+
+세 조건의 의미는 [국소화](localization-rings.md)에서 드러난다. 각 소 아이디얼에서 국소화하면 [이산부값환](discrete-valuation-rings.md)(discrete valuation ring, DVR)이 나오고 거기서는 모든 아이디얼이 한 원소의 거듭제곱으로 생성된다. 전역적 유일분해는 국소적으로 자명한 사실들을 붙인 결과이며, 대수적 정수론과 대수기하가 공유하는 구조다.
 
 유일분해가 깨지는 자리는 기약원이 소원이 아닌 자리다. $\mathbb Z[\sqrt{-5}]$ 에서 $6=2\cdot3=(1+\sqrt{-5})(1-\sqrt{-5})$ 로 두 가지 분해가 나오고, $2$ 는 기약이면서 $(1+\sqrt{-5})(1-\sqrt{-5})$ 를 나누되 두 인수 어느 쪽도 나누지 않는다. $2$ 의 절반에 해당하는 원소가 환 안에 없다.
 
