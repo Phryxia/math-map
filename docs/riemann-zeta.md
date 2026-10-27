@@ -2,11 +2,13 @@
 
 # 개요
 
-**Riemann zeta 함수(Riemann zeta function)** 는 $\mathrm{Re}\thinspace s\gt 1$ 에서 급수 $\zeta(s)=\sum_{n=1}^\infty n^{-s}$ 로 정의되는 복소함수다. 이 급수는 그 범위 밖에서 발산하지만 함수 자신은 $s=1$ 의 극 하나를 제외한 복소평면 전체로 [해석적 연속](analytic-continuation.md)된다.
-
-[소수](primes.md)의 유일분해가 이 함수를 소수에 대한 곱으로 다시 쓰게 한다. 그래서 $\zeta$ 의 극과 영점의 위치에서 소수의 분포를 읽는다.
+**Riemann zeta 함수(Riemann zeta function)** 는 $1/n^s$ 을 모든 자연수 $n$ 에 대해 더한 함수다. $1$ 부터 $N$ 까지 $1/n$ 을 더한 값은 $N$ 을 키우면 한없이 커진다. 소인수분해로 펼치면 이 합은 $N$ 이하의 [소수](primes.md) $p$ 마다 $1/(1-1/p)$ 를 곱한 값을 넘지 않으므로, 그 곱도 한없이 커지고 소수는 무한히 많아야 한다. Riemann zeta 함수는 지수 $1$ 을 복소수 $s$ 로 바꾼 같은 합과 곱이고, 이 함수가 $0$ 이 되는 점들의 위치로 소수가 얼마나 촘촘한지를 계산한다.
 
 # 직관
+
+Riemann zeta 함수는 $\mathrm{Re}\thinspace s\gt 1$ 에서 급수 $\zeta(s)=\sum_{n=1}^\infty n^{-s}$ 로 정의되는 복소함수다. 이 급수는 그 범위 밖에서 발산하지만 함수 자신은 $s=1$ 의 극 하나를 제외한 복소평면 전체로 [해석적 연속](analytic-continuation.md)된다.
+
+소수의 유일분해가 이 함수를 소수에 대한 곱으로 다시 쓰게 한다. 그래서 $\zeta$ 의 극과 영점의 위치에서 소수의 분포를 읽는다.
 
 $1$ 부터 $N$ 까지 $1/n$ 을 더한 값은 $N$ 을 키우면 얼마든지 커진다. 이 합을 소수 쪽에서 다시 센다. $N$ 이하의 수 $n$ 은 저마다 $2^a3^b5^c\cdots$ 꼴로 한 가지로만 쓰이므로, 소수가 $2,3,5$ 뿐이라면 $1/n$ 값을 모두 더한 것이 등비급수 셋의 곱 $2\cdot\frac32\cdot\frac54=\frac{15}4$ 로 유한하다. 왼쪽 합은 무한히 커지므로 소수는 무한히 많다.
 
@@ -108,7 +110,7 @@ $-\zeta'/\zeta$ 를 Perron 공식에 넣고 [유수 정리](residue-theorem.md)�
 
 ## L 함수
 
-[Dirichlet 지표](dirichlet-l-functions.md) $\chi$ 를 계수에 붙인 $L(s,\chi)=\sum_{n\ge1}\chi(n)n^{-s}$ 도 Euler 곱과 함수방정식을 가지며, 자명한 지표가 $\zeta$ 를 준다. 수체 $K$ 의 아이디얼로 같은 곱을 만든 것이 [Dedekind zeta 함수](algebraic-number-fields.md) $\zeta_K(s)=\sum_{\mathfrak a}(N\mathfrak a)^{-s}$ 이고, 그 $s=1$ 유수가 류수 공식에서 류수와 조절자를 묶는다. 이 함수방정식을 아델 위의 Fourier 해석으로 다시 증명하는 것이 [Tate 의 zeta 적분](tate-zeta-integral.md)이다.
+[Dirichlet 지표](dirichlet-l-functions.md) $\chi$ 를 계수에 붙인 $L(s,\chi)=\sum_{n\ge1}\chi(n)n^{-s}$ 도 Euler 곱과 함수방정식을 가지며, 자명한 지표가 $\zeta$ 를 준다. 수체 $K$ 의 아이디얼로 같은 곱을 만든 것이 [Dedekind zeta 함수](dedekind-zeta.md) $\zeta_K(s)=\sum_{\mathfrak a}(N\mathfrak a)^{-s}$ 이고, 그 $s=1$ 유수가 류수 공식에서 류수와 조절자를 묶는다. 이 함수방정식을 아델 위의 Fourier 해석으로 다시 증명하는 것이 [Tate 의 zeta 적분](tate-zeta-integral.md)이다.
 
 ## 모듈러 형식의 계수
 
