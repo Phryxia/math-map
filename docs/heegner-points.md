@@ -2,7 +2,11 @@
 
 # 개요
 
-**Heegner 점(Heegner point)** 은 [모듈러 곡선](modular-curves.md) $X_0(N)$ 위에서 허수이차 곱셈을 갖는 점을 모듈러 매개화로 [타원곡선](elliptic-curves.md)에 옮기고 자취를 취해 얻은 허수이차체 위의 점이다. [Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)에서 해석적 순위 $\le1$ 인 경우의 해결은 점 하나에 걸려 있다. 타원곡선 $E/\mathbb Q$ 의 도체가 $N$ 일 때 모듈러 곡선 $X_0(N)$ 위에는 허수이차 곱셈을 가진 특수한 점들이 있고, 모듈러 파라미터화
+**Heegner 점(Heegner point)** 은 [모듈러 곡선](modular-curves.md) $X_0(N)$ 위에서 허수이차 곱셈을 갖는 점을 [타원곡선](elliptic-curves.md)으로 옮기고 자취를 취해 얻은, 허수이차체 위의 점이다. 타원곡선 위의 유리점이 무한히 많은지 알려면 위수가 무한인 점을 하나 찾아야 하는데, 계수가 큰 곡선에서는 그런 점의 좌표가 수십 자리여서 탐색으로 찾기 어렵다. Heegner 점은 그런 점을 탐색 없이 모듈러 곡선의 특수한 점에서 구성하고, 그 점이 무한위수인지를 $L$ 함수의 미분값으로 판정하게 한다.
+
+# 직관
+
+[Birch–Swinnerton-Dyer 추측](birch-swinnerton-dyer.md)에서 해석적 순위 $\le1$ 인 경우의 해결은 점 하나에 걸려 있다. 타원곡선 $E/\mathbb Q$ 의 도체가 $N$ 일 때 모듈러 곡선 $X_0(N)$ 위에는 허수이차 곱셈을 가진 특수한 점들이 있고, 모듈러 파라미터화
 
 $$
 \varphi\colon X_0(N)\longrightarrow E
@@ -19,8 +23,6 @@ $$
 좌변은 해석, 우변은 기하다. $L'(E/K,1)\ne0$ 이면 $\hat h(y_K)\ne0$ 이므로 $y_K$ 가 무한위수이고 $\mathrm{rank}\thinspace E(K)\ge1$ 이다.
 
 Kolyvagin 은 반대 부등식을 얻었다. $y_K$ 가 무한위수이면 그것에서 [Euler 계](euler-systems.md)를 만들어 [Selmer 군](selmer-tate-shafarevich.md)을 누를 수 있고, 순위가 정확히 $1$ 이며 $\text{Ш}$ 가 유한하다. 두 정리를 합친 것이 해석적 순위 $\le1$ 인 경우의 BSD(Birch–Swinnerton-Dyer) 추측이다.
-
-# 직관
 
 $X_0(N)$ 의 점은 순환 $N$ 등원사상 $E_1\to E_2$ 다. 이 자료를 허수이차체에서 만들어 본다. $K=\mathbb Q(\sqrt D)$ ($D\lt 0$ 기본판별식)의 정수환 $\mathcal O_K$ 는 $\mathbb C$ 안의 [격자](lattices.md)이므로 타원곡선 $\mathbb C/\mathcal O_K$ 를 주고, 지표 $N$ 의 [아이디얼](ideals-quotient-rings.md) $\mathfrak n\subset\mathcal O_K$ 로
 

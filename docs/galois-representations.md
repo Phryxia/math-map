@@ -2,9 +2,13 @@
 
 # 개요
 
-Galois 표현(Galois representation)은 Galois 군에서 행렬군으로 가는 연속 준동형 $\rho\colon G_K\to\mathrm{GL}\_n(E)$ 다. [Langlands 강령](langlands-program.md)이 다루는 Galois 표현은 기하에서 온다.
+**Galois 표현(Galois representation)** 은 Galois 군에서 행렬군으로 가는 연속 준동형 $\rho\colon G_K\to\mathrm{GL}\_n(E)$ 다. 방정식 $y^2=x^3-x$ 의 해를 법 $p$ 로 세면 소수 $p$ 마다 다른 개수가 나오고, 이 개수들 사이의 관계는 소수를 하나씩 보아서는 드러나지 않는다. 다양체의 [에탈 코호몰로지](etale-cohomology.md)에는 Galois 군이 작용하고 Frobenius 원소의 대각합이 그 개수를 주므로, 모든 $p$ 의 개수가 표현 하나로 묶인다.
 
-계수를 $\mathbb C$ 로 잡으면 상이 유한군이라 유한 Galois 확대의 표현만 나온다. 공급원은 $\ell$ 진 계수다. 대수다양체 $X$ 에 위상적 [코호몰로지](cohomology.md) 대신 $\mathbb Q_\ell$ 계수의 [에탈 코호몰로지](etale-cohomology.md)를 붙이면
+# 직관
+
+[Langlands 강령](langlands-program.md)이 다루는 Galois 표현은 기하에서 온다.
+
+계수를 $\mathbb C$ 로 잡으면 상이 유한군이라 유한 Galois 확대의 표현만 나온다. 공급원은 $\ell$ 진 계수다. 대수다양체 $X$ 에 위상적 [코호몰로지](cohomology.md) 대신 $\mathbb Q_\ell$ 계수의 에탈 코호몰로지를 붙이면
 
 $$
 H^i_{\mathrm{et}}(X_{\bar K},\mathbb Q_\ell)
@@ -19,8 +23,6 @@ $$
 $$
 
 산술의 양이 Frobenius 의 대각합이 되고, 표현의 구조가 그 대각합을 통제한다.
-
-# 직관
 
 복소다양체에서는 고전적 위상으로 특이 코호몰로지를 만들고 Lefschetz 공식으로 사상의 고정점을 센다. 유한체 위의 다양체에는 그런 위상이 없다. Zariski 위상에서는 기약 다양체 위의 상수[층](sheaves.md)이 뭉툭해 $i\gt 0$ 마다 $H^i=0$ 이고 셀 것이 남지 않는다. 막힌 것은 덮개의 개념이어서, 열린 포함사상 대신 국소적으로 동형에 가까운 에탈 사상을 덮개로 놓고 그 [범주](category.md) 위에서 층과 코호몰로지를 정의한다.
 

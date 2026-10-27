@@ -2,7 +2,9 @@
 
 # 개요
 
-**Greenberg 추측(Greenberg's conjecture)** 은 총실수체 위의 $\mathbb Z_p$ 확대 탑에서 류수의 $p$ 부분이 유계에 머문다는 주장이다.
+**Greenberg 추측(Greenberg's conjecture)** 은 총실수체 위의 $\mathbb Z_p$ 확대 탑에서 류수의 $p$ 부분이 유계에 머문다는 주장이다. 수체를 한 층씩 차수 $p$ 로 넓혀 탑을 쌓으면 층마다 류수가 있고, Iwasawa 는 그 $p$ 부분의 지수가 층 번호 $n$ 에 대해 $\lambda n+\mu p^n+\nu$ 꼴로 자란다는 것을 증명했다. 추측의 내용은 바닥이 총실수체이면 $\lambda=\mu=0$ 이어서 이 지수가 일정한 값에 머문다는 것이다.
+
+# 직관
 
 수체 $F$ 위에 순환 $\mathbb Z_p$ 확대의 탑 $F=F_0\subset F_1\subset\cdots$ 을 쌓고 각 층의 류수의 $p$ 지수를 $p^{e_n}$ 이라 하면, 충분히 큰 $n$ 에서
 
@@ -10,13 +12,11 @@ $$
 e_n=\lambda n+\mu p^{n}+\nu
 $$
 
-가 성립한다(Iwasawa). 세 정수 $\lambda,\mu,\nu$ 가 탑 전체의 산술을 요약한다. **Greenberg 추측**은 $F$ 가 총실수체이면 $\lambda=\mu=0$ 이라는 것, 곧 탑을 올라가도 류수의 $p$ 부분이 유계에 머문다는 주장이다.
+가 성립한다(Iwasawa). 세 정수 $\lambda,\mu,\nu$ 가 탑 전체의 산술을 요약한다. Greenberg 추측은 $F$ 가 총실수체이면 $\lambda=\mu=0$ 이라는 것, 곧 탑을 올라가도 류수의 $p$ 부분이 유계에 머문다는 주장이다.
 
 [Iwasawa 주추측](iwasawa-main-conjecture.md)은 $\lambda^{-}$ 를 $p$ 진 $L$ 함수의 영점 개수로 계산하고 그 값이 자주 양수다. 실수 쪽에는 $\lambda^{+}$ 를 재는 해석적 대응물이 없고 예측은 소멸이다. 한쪽에 공식이 있고 다른 쪽에 소멸 예측만 있는 이 비대칭이 [Vandiver 추측](vandiver-conjecture.md)에도 나타난다. Vandiver 추측은 Greenberg 추측의 특수한 경우를 함의하고, Greenberg 쪽이 더 약하고 일반적이다.
 
 $\mu=0$ 은 아벨체에 대해 증명되어 있고(Ferrero–Washington), $\lambda=0$ 은 증명되지 않았다[^1].
-
-# 직관
 
 탑의 각 층 류군을 하나로 모은 $X_\infty=\varprojlim A_n$ 은 [Iwasawa 대수](iwasawa-algebra.md) $\Lambda=\mathbb Z_p[[T]]$ 위의 유한생성 비틀림 가군이고, 구조 정리로 $\bigoplus_i\Lambda/(p^{m_i})$ 와 $\bigoplus_j\Lambda/(f_j(T))$ 의 직합에 유사동형이다. $\mu=\sum m_i$ 는 $p$ 로 나뉘는 부분의 크기이고 $\lambda=\sum\deg f_j$ 는 비틀림 [멱급수](power-series.md) 부분의 차수다. 따라서 $\lambda=\mu=0$ 은 $X_\infty$ 가 유한하다는 것이고, 어느 층부터 탑의 류군이 자라지 않는다는 것이다.
 
