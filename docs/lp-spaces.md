@@ -2,7 +2,11 @@
 
 # 개요
 
-**Lᵖ 공간(Lᵖ space, Lebesgue space)** 은 [측도](measure.md)공간 $(X,\mathcal M,\mu)$ 위에서 $\vert f\vert^p$ 가 적분가능한 [가측함수](measurable-functions.md)들을 모아 만든 노름공간이다. $1\le p\le\infty$ 에서 노름은
+**Lᵖ 공간(Lᵖ space, Lebesgue space)** 은 [측도](measure.md)공간 $(X,\mathcal M,\mu)$ 위에서 $\vert f\vert^p$ 가 적분가능한 [가측함수](measurable-functions.md)들을 모아 만든 노름공간이다. $\lbrack 0,1\rbrack$ 위의 두 함수가 얼마나 다른지 수 하나로 재려 할 때, 차의 최댓값은 한 점에서만 크게 다른 두 함수와 구간 전체에서 다른 두 함수를 구별하지 못한다. Lᵖ 공간은 차의 $p$ 제곱을 적분한 값으로 거리를 재고, 이 거리로 함수열의 극한을 다시 그 공간 안에서 얻는다.
+
+# 직관
+
+$1\le p\le\infty$ 에서 노름은
 
 $$
 \Vert f\Vert\_p=\Bigl(\int_X\vert f\vert^p\thinspace d\mu\Bigr)^{1/p}
@@ -11,8 +15,6 @@ $$
 이고, 이 노름에 대해 $L^p$ 는 완비다. 삼각부등식이 Minkowski 부등식이고, 두 함수의 곱을 재는 [Hölder 부등식](holder-inequality.md)이 그 증명과 쌍대성을 함께 준다.
 
 $p=2$ 에서만 노름이 내적에서 나오며, 그 경우가 [Hilbert 공간](hilbert-spaces.md)이다.
-
-# 직관
 
 함수의 크기를 수 하나로 재려 한다. $\lbrack 0,1\rbrack$ 위의 함수에서 최댓값을 쓰면 한 점에서만 큰 함수와 전 구간에서 큰 함수가 같은 값을 받는다. 적분을 쓰면 그 둘이 갈린다.
 
