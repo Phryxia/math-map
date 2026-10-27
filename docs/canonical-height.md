@@ -2,7 +2,11 @@
 
 # 개요
 
-**Mordell–Weil 정리**는 [타원곡선](elliptic-curves.md)의 유리점 전체 $E(\mathbb Q)$ 는 유한생성 아벨군이다.
+**Néron–Tate 높이(Néron–Tate height)** 는 [타원곡선](elliptic-curves.md)의 유리점마다 붙이는 음이 아닌 실수로, 점을 $m$ 배 하면 정확히 $m^2$ 배가 되는 높이다. 유리점의 좌표를 기약분수로 적으면, 점을 두 배 할 때마다 분자와 분모의 자릿수가 대략 네 배로 늘어난다. Néron–Tate 높이는 이 근사 관계를 정확한 등식으로 고친 것이다. 이 등식으로 무한강하법이 작동해, 유리점 전체가 유한 개의 점에서 생성된다는 Mordell–Weil 정리가 증명된다.
+
+# 직관
+
+**Mordell–Weil 정리(Mordell–Weil theorem)** 에 따르면 타원곡선의 유리점 전체 $E(\mathbb Q)$ 는 유한생성 아벨군이다.
 
 $$
 E(\mathbb Q)\ \cong\ \mathbb Z^r\ \oplus\ E(\mathbb Q)\_{\mathrm{tors}}
@@ -13,8 +17,6 @@ $$
 그 장치가 **높이**다. 유리점에 적는 데 드는 비용을 재는 실수를 붙이고 점을 두 배 하면 비용이 네 배가 됨을 보이면 무한강하법이 작동한다. 순진하게 정의한 높이는 이 관계를 오차 범위 안에서만 만족하고, Tate 의 극한 조작이 오차를 지운다. 그 결과가 정확한 이차형식인 **Néron–Tate 높이** $\hat h$ 다.
 
 생성원들의 높이 쌍 [행렬식](determinants.md)이 조절자 $\mathrm{Reg}\_E$ 이고 [BSD 추측](birch-swinnerton-dyer.md)(Birch–Swinnerton-Dyer)의 선행계수에 들어간다. Gross–Zagier 공식이 $L'(E,1)$ 과 같다고 말하는 대상도 [Heegner 점](heegner-points.md)의 정준 높이다.
-
-# 직관
 
 하강이 주는 것은 $E(\mathbb Q)/2E(\mathbb Q)$ 가 유한하다는 것뿐이다. 여기서 유한생성을 얻으려면 $Q=2Q_1+(\text{대표원})$ 으로 쓰고 $Q_1$ 에 같은 조작을 반복할 때 이 과정이 멈춤을 보여야 한다. 점마다 실수를 붙여 $Q_1$ 에 붙은 값이 $Q$ 에 붙은 값보다 확실히 작고, 값이 주어진 경계 이하인 점은 유한 개뿐이게 하면 된다.
 

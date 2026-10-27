@@ -2,7 +2,11 @@
 
 # 개요
 
-Eisenstein 급수(Eisenstein series)는 $(m,n)\ne(0,0)$ 에 대해 $(mz+n)^{-k}$ 를 더해 얻는 [모듈러 형식](modular-forms.md)이다. 모듈러 형식의 공간은 두 조각으로 나뉜다.
+**Eisenstein 급수(Eisenstein series)** 는 $(m,n)\ne(0,0)$ 에 대해 $(mz+n)^{-k}$ 를 더해 얻는 [모듈러 형식](modular-forms.md)이다. 무게 $4$ 의 Eisenstein 급수를 정규화하면 $q$ 전개가 $1+240\sum_n\sigma_3(n)q^n$ 이고, 계수가 약수의 세제곱합이라 손으로 계산된다. 일반 모듈러 형식은 계수를 이렇게 적을 수 없다. Eisenstein 급수는 이런 명시적인 형식들을 곱하고 더해 다른 모듈러 형식을 만들게 하고, $E_4^3-E_6^2=1728\Delta$ 처럼 첨점형식까지 그 조합으로 얻는다.
+
+# 직관
+
+모듈러 형식의 공간은 두 조각으로 나뉜다.
 
 $$
 M_k(\mathrm{SL}\_2(\mathbb Z))=S_k\thickspace\oplus\thickspace\mathbb C\thinspace E_k
@@ -16,9 +20,7 @@ $$
 E^\ast(z,s)=\xi(2s)E(z,s)\qquad\Longrightarrow\qquad E^\ast(z,s)=E^\ast(z,1-s)
 $$
 
-$\zeta$ 의 함수방정식이 상반평면 위 함수의 대칭으로 옮겨 앉는다. [Rankin–Selberg 적분](rankin-selberg.md)이 $L$ 함수의 해석적 성질을 얻는 것도 $E(z,s)$ 가 그 성질을 이미 갖고 있기 때문이다.
-
-# 직관
+$\zeta$ 의 함수방정식이 상반평면 위 함수의 대칭으로 나타난다. [Rankin–Selberg 적분](rankin-selberg.md)이 $L$ 함수의 해석적 성질을 얻는 것도 $E(z,s)$ 가 그 성질을 이미 갖고 있기 때문이다.
 
 $\Gamma$ 불변 함수를 만드는 소박한 방법은 평균 $\sum_{\gamma\in\Gamma}f(\gamma z)$ 이지만 대개 발산한다. $f$ 를 부분군 $\Gamma_\infty$ 에 대해 이미 불변이도록 고르고 잉여류에 대해서만 합하면 수렴한다. $\mathrm{Im}(z)^s$ 는 $z\mapsto z+1$ 에 불변이므로
 
