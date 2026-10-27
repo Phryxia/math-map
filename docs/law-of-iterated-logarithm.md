@@ -8,11 +8,13 @@ $$
 \limsup\_{n\to\infty}\frac{S_n}{\sqrt{2\sigma^2n\log\log n}}=1\qquad\text{거의 확실하게}
 $$
 
-가 성립한다는 정리다. [큰 수의 법칙](law-of-large-numbers.md)은 $S_n/n\to 0$ 을, [중심극한정리](central-limit-theorem.md)는 $S_n/\sqrt n$ 의 분포를 준다. 반복로그 법칙은 한 표본 경로에서 $S_n$ 이 $\sqrt n$ 보다 얼마나 크게 흔들리는지를 준다.
-
-[Brown 운동](brownian-motion.md)에서는 $\limsup\_{t\to\infty}B_t/\sqrt{2t\log\log t}=1$ 이고, 부분합의 판본은 Brown 운동의 판본에서 유도된다.
+가 성립한다는 정리다. 동전을 던져 앞면이면 $+1$, 뒷면이면 $-1$ 을 더해 가면 합 $S_n$ 은 $0$ 근처를 오르내리는데, 끝없이 이어지는 한 번의 던지기에서 이 합이 위로 얼마나 높이 올라가는지 묻는 문제가 있다. 반복로그 법칙은 그 높이의 상한이 $\sqrt{2n\log\log n}$ 을 따라 자란다고 답한다.
 
 # 직관
+
+[큰 수의 법칙](law-of-large-numbers.md)은 $S_n/n\to 0$ 을, [중심극한정리](central-limit-theorem.md)는 $S_n/\sqrt n$ 의 분포를 준다. 반복로그 법칙은 한 표본 경로에서 $S_n$ 이 $\sqrt n$ 보다 얼마나 크게 흔들리는지를 준다.
+
+[Brown 운동](brownian-motion.md)에서는 $\limsup\_{t\to\infty}B_t/\sqrt{2t\log\log t}=1$ 이고, 부분합의 판본은 Brown 운동의 판본에서 유도된다.
 
 동전을 던져 앞면이면 $+1$, 뒷면이면 $-1$ 을 더한 합을 $S_n$ 이라 한다. 중심극한정리로 $\Pr\lbrack S_n\gt a\sqrt n\rbrack$ 은 $n$ 이 크면 $e^{-a^2/2}$ 규모다. $a=3$ 이면 [정규분포](normal-distribution.md)에서 이 확률이 약 0.13% 이지만, $n$ 은 끝없이 계속되므로 $S_n\gt 3\sqrt n$ 인 $n$ 이 무한히 많이 나올 수 있다.
 

@@ -2,17 +2,19 @@
 
 # 개요
 
-**Langlands 강령(Langlands program)** 은 환원군의 자기동형 표현과 Galois 군의 표현 사이의 대응을 세워 [유체론](class-field-theory.md)을 비아벨 확대로 넓히려는 추측들의 체계다. 유체론은 수체 $K$ 의 아벨 확대를 $K$ 안의 산술로 완전히 분류했다. 이 분류는 Galois 군이 아벨일 때 Frobenius 원소가 소 [아이디얼](ideals-quotient-rings.md) 하나마다 잘 정의된다는 점에 기댄다. 비아벨 확대에서는 $\mathrm{Frob}\_{\mathfrak p}$ 가 원소가 아니라 켤레류이므로 이 사상이 무너진다.
+**Langlands 강령(Langlands program)** 은 환원군의 자기동형 표현과 Galois 군의 표현 사이의 대응을 세워 [유체론](class-field-theory.md)을 비아벨 확대로 넓히려는 추측들의 체계다. $x^2-2$ 가 소수 $p$ 로 나눈 나머지에서 근을 갖는지는 $p$ 를 $8$ 로 나눈 나머지만으로 정해지지만, $x^3-2$ 에는 이런 나머지 규칙이 없다. Langlands 강령은 이런 다항식의 소수별 정보를 [모듈러 형식](modular-forms.md) 같은 자기동형 표현의 계수로 적을 수 있다고 예측한다.
 
-**Langlands 강령(Langlands program)** 은 켤레류를 다룰 수 있는 대상으로 바꾼다. 켤레류에서 수를 뽑는 표준적인 방법은 [표현의 지표](group-representations.md)를 취하는 것이므로, Galois 군의 표현 $\rho\colon\mathrm{Gal}(\bar K/K)\to\mathrm{GL}\_n$ 을 대상으로 삼는다. 그리고 각 $\rho$ 에 전혀 다른 종류의 대상, 곧 $\mathrm{GL}\_n(\mathbb A_K)$ 위의 자기동형 표현 $\pi$ 가 대응한다고 예측한다.
+# 직관
+
+유체론은 수체 $K$ 의 아벨 확대를 $K$ 안의 산술로 완전히 분류했다. 이 분류는 Galois 군이 아벨일 때 Frobenius 원소가 소 [아이디얼](ideals-quotient-rings.md) 하나마다 잘 정의된다는 점에 기댄다. 비아벨 확대에서는 $\mathrm{Frob}\_{\mathfrak p}$ 가 원소가 아니라 켤레류이므로 이 사상이 무너진다.
+
+Langlands 강령은 켤레류를 다룰 수 있는 대상으로 바꾼다. 켤레류에서 수를 뽑는 표준적인 방법은 [표현의 지표](group-representations.md)를 취하는 것이므로, Galois 군의 표현 $\rho\colon\mathrm{Gal}(\bar K/K)\to\mathrm{GL}\_n$ 을 대상으로 삼는다. 그리고 각 $\rho$ 에 전혀 다른 종류의 대상, 곧 $\mathrm{GL}\_n(\mathbb A_K)$ 위의 자기동형 표현 $\pi$ 가 대응한다고 예측한다.
 
 $$
 \rho \thickspace\longleftrightarrow\thickspace \pi,\qquad L(s,\rho)=L(s,\pi)
 $$
 
-$n=1$ 이 유체론이다. $n=2$ 이고 $K=\mathbb Q$ 인 경우의 자기동형 쪽 대상은 [모듈러 형식](modular-forms.md)이고, 그 안의 한 조각이 모듈러성 정리다. 유리수체 위의 모든 [타원곡선](elliptic-curves.md)이 모듈러 형식에서 온다는 그 정리가 [Fermat 마지막 정리](fermats-last-theorem.md)의 증명을 완성했다. 일반 수체의 $n\ge2$ 는 증명되지 않았다[^1].
-
-# 직관
+$n=1$ 이 유체론이다. $n=2$ 이고 $K=\mathbb Q$ 인 경우의 자기동형 쪽 대상은 모듈러 형식이고, 그 안의 한 조각이 모듈러성 정리다. 유리수체 위의 모든 [타원곡선](elliptic-curves.md)이 모듈러 형식에서 온다는 그 정리가 [Fermat 마지막 정리](fermats-last-theorem.md)의 증명을 완성했다. 일반 수체의 $n\ge2$ 는 증명되지 않았다[^1].
 
 분기하지 않는 $\mathfrak p$ 에 대해 $\mathrm{Frob}\_{\mathfrak p}$ 는 켤레류이므로 $\rho(\mathrm{Frob}\_{\mathfrak p})$ 는 켤레를 빼고 정해지고 그 특성다항식은 완전히 정해진다. 소수마다 그 다항식을 모아 Euler 곱으로 묶은 것이 [Artin L 함수](artin-l-functions.md)이고, 곱은 $\mathrm{Re}(s)\gt 1$ 에서만 수렴한다. 각 인자가 소수 하나의 정보이므로 이 꼴에서 복소평면 전체로의 해석적 접속을 끌어낼 길이 없다.
 
