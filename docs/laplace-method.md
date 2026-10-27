@@ -2,7 +2,9 @@
 
 # 개요
 
-**Laplace 방법(Laplace's method)** 은 지수에 큰 매개변수가 든 적분의 점근을 피적분함수의 최대점 하나에서 얻는 방법이다.
+**Laplace 방법(Laplace's method)** 은 지수에 큰 매개변수가 든 적분의 점근을 피적분함수의 최대점 하나에서 얻는 방법이다. $100!=\int_0^\infty x^{100}e^{-x}\thinspace dx$ 를 어림하려 할 때, 피적분함수 $x^{100}e^{-x}$ 는 $x=100$ 근처의 좁은 구간 밖에서 거의 $0$ 이다. Laplace 방법은 그 최대점 근처에서 지수를 2 차식으로 근사해 Gauss 적분으로 바꾸고, Stirling 근사 $n!\sim\sqrt{2\pi n}\thinspace(n/e)^n$ 같은 주도항을 얻는다.
+
+# 직관
 
 큰 매개변수가 들어간 적분
 
@@ -10,17 +12,15 @@ $$
 I(\lambda)=\int_a^{b}g(x)\thinspace e^{\lambda\varphi(x)}\thinspace dx\qquad(\lambda\to\infty)
 $$
 
-의 크기는 한 점이 결정한다. $e^{\lambda\varphi}$ 가 $\varphi$ 의 최대점에서 다른 모든 곳을 압도하므로 적분 전체가 그 점 주위의 좁은 구간에서 나온다. 그 구간에서 $\varphi$ 를 2 차까지 전개해 Gauss 적분으로 바꾸면 주도항이 나오고, 더 전개하면 [점근급수](asymptotic-series.md)가 나온다. 이것이 **Laplace 방법**이다.
+의 크기는 한 점이 결정한다. $e^{\lambda\varphi}$ 가 $\varphi$ 의 최대점에서 다른 모든 곳을 압도하므로 적분 전체가 그 점 주위의 좁은 구간에서 나온다. 그 구간에서 $\varphi$ 를 2 차까지 전개해 Gauss 적분으로 바꾸면 주도항이 나오고, 더 전개하면 [점근급수](asymptotic-series.md)가 나온다.
 
 $$
 I(\lambda)\sim g(x_0)e^{\lambda\varphi(x_0)}\sqrt{\frac{2\pi}{\lambda|\varphi''(x_0)|}}
 $$
 
-정칙함수의 절댓값은 내부에서 최대를 갖지 못하므로 피적분함수가 복소수면 최대점이 없다. 대신 $\varphi'(z_0)=0$ 인 **안장점**이 있고, 그 점을 지나는 경로 중 $\mathrm{Im}\varphi$ 가 일정한 것을 골라 [윤곽을 변형](residue-theorem.md)하면 진동이 사라져 실수 Laplace 방법이 적용된다. 이것이 **최대급강하법**이다.
+정칙함수의 절댓값은 내부에서 최대를 갖지 못하므로 피적분함수가 복소수면 최대점이 없다. 대신 $\varphi'(z_0)=0$ 인 **안장점**이 있고, 그 점을 지나는 경로 중 $\mathrm{Im}\varphi$ 가 일정한 것을 골라 [윤곽을 변형](residue-theorem.md)하면 진동이 사라져 실수 Laplace 방법이 적용된다. 이 방법을 **최대급강하법(method of steepest descent)** 이라 한다.
 
 [Euler–Maclaurin](euler-maclaurin.md)이 합과 적분의 차이를 다루고 Laplace 방법이 적분 자체의 크기를 다룬다. 둘을 합치면 [생성함수](generating-functions.md)의 계수, [감마 함수](gamma-function.md)의 Stirling 근사, 확률의 대편차가 같은 도구로 처리된다.
-
-# 직관
 
 $\varphi$ 의 최댓값이 $x_0$ 에서 $\varphi(x_0)$ 라 하자. 다른 점 $x$ 의 기여는 $e^{\lambda(\varphi(x)-\varphi(x_0))}$ 배로 줄어들고, 지수가 음수이므로 $\lambda$ 가 커지면 기하급수적으로 사라진다. 남는 폭은 $\lambda(\varphi(x)-\varphi(x_0))\approx-1$ 인 범위, 곧
 

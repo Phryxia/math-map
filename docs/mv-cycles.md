@@ -2,7 +2,11 @@
 
 # 개요
 
-**MV 순환(Mirković–Vilonen cycle)** 은 아핀 Grassmann 다양체에서 반무한 궤도와 $G(\mathcal O)$ 궤도의 교집합의 기약 성분이고, 쌍대군 표현의 무게 공간의 기저를 준다. [기하학적 Satake 대응](geometric-satake.md)에서 아핀 Grassmann 다양체 위의 퍼버스 층의 [범주](category.md)는 쌍대군의 표현 범주와 같다.
+**MV 순환(Mirković–Vilonen cycle)** 은 아핀 Grassmann 다양체에서 반무한 궤도와 $G(\mathcal O)$ 궤도의 교집합의 기약 성분이고, 쌍대군 표현의 무게 공간의 기저를 준다. [Weyl 지표 공식](weyl-character-formula.md)은 표현의 무게 중복도를 부호가 엇갈리는 합으로 주므로, 그 값이 음이 아니라는 것도 공식에서 보이지 않는다. MV 순환은 무게 $\mu$ 의 중복도를 무게 $\mu$ 인 순환의 개수로 바꾸어, 교대합 대신 집합의 크기로 센다.
+
+# 직관
+
+[기하학적 Satake 대응](geometric-satake.md)에서 아핀 Grassmann 다양체 위의 퍼버스 층의 [범주](category.md)는 쌍대군의 표현 범주와 같다.
 
 $$
 \mathrm{Perv}\_{G(\mathcal O)}(\mathrm{Gr}\_G)\ \simeq\ \mathrm{Rep}(\widehat G)
@@ -16,11 +20,9 @@ $$
 \dim V_\lambda(\mu)=\char35{}\lbrace\text{무게 }\mu\text{ 의 MV 순환}\rbrace
 $$
 
-[Weyl 지표 공식](weyl-character-formula.md)은 무게 중복도를 교대합으로 준다. Kostant 중복도 공식이 그 한 형태이고, 부호가 엇갈리는 합이라 값이 왜 음이 아닌지가 공식만 보아서는 보이지 않는다. MV(Mirkovic–Vilonen) 순환은 그 수를 **세는 대상**으로 바꾼다. 교대합 대신 집합이 놓이므로 음이 아님이 자명해진다.
+Weyl 지표 공식은 무게 중복도를 교대합으로 준다. Kostant 중복도 공식이 그 한 형태이고, 부호가 엇갈리는 합이라 값이 왜 음이 아닌지가 공식만 보아서는 보이지 않는다. MV 순환은 그 수를 **세는 대상**으로 바꾼다. 교대합 대신 집합이 놓이므로 음이 아님이 자명해진다.
 
 같은 일을 하는 조합론적 장치가 여럿 있다. 대각표, Gelfand–Tsetlin 패턴, Littelmann 경로, Lusztig–Kashiwara 의 결정 기저. MV 순환은 그것들의 **기하적 실현**이고, 다른 장치들이 왜 같은 수를 세는지에 대한 통일된 이유를 준다.
-
-# 직관
 
 무게 중복도 $\dim V_\lambda(\mu)$ 를 Kostant 중복도 공식으로 센다.
 
