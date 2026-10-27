@@ -2,7 +2,11 @@
 
 # 개요
 
-**sine-Gordon 방정식(sine-Gordon equation)** 은
+**sine-Gordon 방정식(sine-Gordon equation)** 은 줄을 따라 늘어선 진자들이 이웃끼리 용수철로 이어진 체계의 운동을 나타내는 비선형 [파동방정식](wave-equation.md)이다. 예로 이 줄에서 진자들이 한쪽부터 차례로 한 바퀴씩 넘어가는 비틀림은 모양을 유지한 채 일정한 속도로 줄을 따라 이동한다. 이 방정식은 그런 비틀림을 정확한 해로 적고, 두 비틀림이 부딪친 뒤에도 모양을 유지함을 보인다.
+
+# 직관
+
+sine-Gordon 방정식은
 
 $$
 u\_{tt}-u\_{xx}+\sin u=0
@@ -11,8 +15,6 @@ $$
 이다. 이름은 Klein-Gordon 방정식 $u\_{tt}-u\_{xx}+u=0$ 의 선형 항을 $\sin u$ 로 바꾼 것에서 왔다.
 
 빛원뿔 좌표 $\xi=(x-t)/2$, $\eta=(x+t)/2$ 로 바꾸면 $u\_{\xi\eta}=\sin u$ 가 되고, 이 꼴이 곡률 $-1$ 인 곡면의 Gauss 방정식과 같다. 방정식은 [Lax 쌍](lax-pairs.md)을 가져 [역산란 변환](inverse-scattering-transform.md)으로 풀리며, [솔리톤](solitons.md) 가운데 양쪽 경계에서 다른 상수해에 붙는 것이 나온다.
-
-# 직관
 
 Korteweg-de Vries 방정식의 솔리톤은 진폭이 정해지면 속도가 따라 정해진다. sine-Gordon 에서 같은 꼴의 진행파를 찾으면 무엇이 나오는가.
 
