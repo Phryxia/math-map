@@ -2,11 +2,13 @@
 
 # 개요
 
-**Kolmogorov 세 급수 정리(Kolmogorov's three-series theorem)** 는 독립 [확률변수](random-variables.md)의 급수 $\sum_n X_n$ 이 거의 확실히 수렴하는 조건을 세 개의 수치 급수의 수렴으로 주는 정리다. 수렴하는 사건은 꼬리사건이어서 [Kolmogorov 0-1 법칙](kolmogorov-zero-one-law.md)에 따라 확률이 $0$ 이나 $1$ 이고, 이 정리가 어느 쪽인지를 판정한다.
-
-증명의 중심은 Kolmogorov 최대 부등식(Kolmogorov's maximal inequality)이다. 부분합의 최댓값이 커질 확률을 마지막 부분합의 분산으로 누른다.
+**Kolmogorov 세 급수 정리(Kolmogorov's three-series theorem)** 는 무작위인 항들을 더한 급수가 수렴하는지를, 무작위성이 없는 보통의 급수 세 개로 판정하는 정리다. 동전을 던져 앞면이면 $1/n$ 을 더하고 뒷면이면 $1/n$ 을 빼는 급수는 부호를 떼면 발산하는 조화급수이지만, 부호가 무작위로 섞이면 수렴하는지 바로 알 수 없다. 이 정리는 항을 일정한 크기에서 자른 뒤 큰 항이 나올 확률의 합, 자른 항의 평균의 합, 자른 항의 분산의 합이 모두 수렴하는지를 보아 급수가 확률 $1$ 로 수렴하는지 판정한다.
 
 # 직관
+
+Kolmogorov 세 급수 정리는 독립 [확률변수](random-variables.md)의 급수 $\sum_n X_n$ 이 거의 확실히 수렴하는 조건을 세 개의 수치 급수의 수렴으로 준다. 수렴하는 사건은 꼬리사건이어서 [Kolmogorov 0-1 법칙](kolmogorov-zero-one-law.md)에 따라 확률이 $0$ 이나 $1$ 이고, 이 정리가 어느 쪽인지를 판정한다.
+
+증명의 중심은 Kolmogorov 최대 부등식(Kolmogorov's maximal inequality)이다. 부분합의 최댓값이 커질 확률을 마지막 부분합의 분산으로 누른다.
 
 동전을 던져 앞면이면 $+1$, 뒷면이면 $-1$ 인 독립 부호 $\varepsilon_n$ 을 만들고 급수 $\sum_n\varepsilon_n/n$ 을 본다. 조화급수 $\sum_n 1/n$ 은 발산하지만 부호가 무작위로 바뀌면 항들이 서로 지워진다. 이 급수가 수렴하는지 묻는다.
 

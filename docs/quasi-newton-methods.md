@@ -2,11 +2,13 @@
 
 # 개요
 
-**준Newton 법(quasi-Newton method)** 은 [Hessian](hessian.md) 을 계산하지 않고 그 근사 행렬을 걸음마다 계급 1 이나 계급 2 로 갱신하는 [Newton 법](newton-method.md)의 변형이다. 갱신은 직전 두 점의 기울기 차에서 읽히는 secant 조건 $B\_{k+1}s\_k=y\_k$ 를 만족하도록 정한다.
-
-Hessian 을 만들고 분해하는 비용이 사라지는 대신 수렴 차수가 이차에서 초선형으로 떨어진다. BFGS(Broyden–Fletcher–Goldfarb–Shanno) 갱신과 그 제한 기억 판 L-BFGS 가 미분 가능한 비제약 최소화의 기본 방법이다.
+**준Newton 법(quasi-Newton method)** 은 함수의 최솟값을 찾는 [Newton 법](newton-method.md)에서 이차 도함수의 계산을 빼고, 걸음마다 지나온 기울기의 변화로 그 값을 어림해 쓰는 방법이다. 변수가 천 개인 함수를 Newton 법으로 최소화하면 걸음마다 이차 편도함수 오십만 개를 계산하고 미지수 천 개의 연립방정식을 풀어야 한다. 한 걸음 움직이면 두 점의 기울기 차가 그 방향의 이차 도함수 정보를 준다. 준Newton 법은 이 정보로 이차 도함수 행렬의 어림값을 걸음마다 조금씩 고쳐, 계산량을 줄이면서 Newton 법에 가까운 속도로 수렴한다.
 
 # 직관
+
+준Newton 법은 [Hessian](hessian.md) 을 계산하지 않고 그 근사 행렬을 걸음마다 계급 1 이나 계급 2 로 갱신하는 Newton 법의 변형이다. 갱신은 직전 두 점의 기울기 차에서 읽히는 secant 조건 $B\_{k+1}s\_k=y\_k$ 를 만족하도록 정한다.
+
+Hessian 을 만들고 분해하는 비용이 사라지는 대신 수렴 차수가 이차에서 초선형으로 떨어진다. BFGS(Broyden–Fletcher–Goldfarb–Shanno) 갱신과 그 제한 기억 판 L-BFGS 가 미분 가능한 비제약 최소화의 기본 방법이다.
 
 $n$ 변수 함수를 Newton 법으로 최소화하려면 걸음마다 Hessian 을 만들고 선형계를 풀어야 한다. 서로 다른 이차 편도함수가 $n(n+1)/2$ 개이고 분해가 $O(n^3)$ 번 연산이므로, $n=10^4$ 이면 원소가 약 $5\times10^7$ 개이고 분해가 약 $10^{12}$ 번이다. 걸음마다 이것을 하는 계산은 끝나지 않는다.
 
@@ -107,7 +109,7 @@ $f$ 가 양정부호 이차함수이고 선탐색이 정확하면 BFGS 는 $n$ �
 
 # 활용
 
-- 미분 가능한 비제약 최소화에서 Hessian 을 쓸 수 없을 때의 기본 선택이다. [Newton 법](newton-method.md)의 이차 수렴을 초선형으로 내리고 걸음마다의 비용을 $O(n^3)$ 에서 $O(n^2)$ 또는 $O(mn)$ 으로 줄인다.
+- 미분 가능한 비제약 최소화에서 Hessian 을 쓸 수 없을 때의 기본 선택이다. Newton 법의 이차 수렴을 초선형으로 내리고 걸음마다의 비용을 $O(n^3)$ 에서 $O(n^2)$ 또는 $O(mn)$ 으로 줄인다.
 - 최대우도 추정에서 로그우도의 Hessian 을 해석적으로 구하기 어려울 때 L-BFGS 로 푼다. 로지스틱 회귀와 조건부 무작위장의 학습이 그 자리다.
 - [비선형 최소제곱](nonlinear-least-squares.md)에서 Gauss–Newton 과 Levenberg–Marquardt 가 곡선 맞춤과 카메라 보정의 표준 해법이다.
 - [Lagrange 쌍대성](lagrange-duality.md)의 KKT(Karush–Kuhn–Tucker) 조건에 Newton 법을 적용하는 내부점 방법에서 KKT 계수행렬의 근사 갱신으로도 쓰인다.
