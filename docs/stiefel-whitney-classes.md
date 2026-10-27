@@ -2,11 +2,13 @@
 
 # 개요
 
-**Stiefel–Whitney 류(Stiefel–Whitney class)** 는 실 [벡터다발](vector-bundles.md)에 붙는 $\mathbb Z/2$ 계수 코호몰로지류다. 밑공간 $X$ 위의 다발 $E$ 마다 $w_i(E)\in H^i(X;\mathbb Z/2)$ 가 있고 자명한 다발에서는 $i\ge 1$ 인 것이 모두 소멸한다.
-
-[특성류](characteristic-classes.md) 가운데 Chern 류와 [Pontryagin 류](pontryagin-classes.md)가 복소 구조나 실수 계수를 요구하는 자리에서, 이 류는 아무 실 다발에나 있다. 접다발에 적용하면 $w_1$ 이 방향가능성을, $w_2$ 가 스핀 구조의 존재를, 전체 류의 역이 몰입에 필요한 차원의 하한을 판정한다.
+**Stiefel–Whitney 류(Stiefel–Whitney class)** 는 공간의 각 점에 실수 벡터 공간을 하나씩 붙인 [벡터다발](vector-bundles.md)이 얼마나 꼬였는지를 $0$ 과 $1$ 의 값으로 재는 불변량이다. 원 위의 점마다 선분을 하나씩 붙이면 평범한 띠와 한 번 꼬인 Möbius 띠가 나오는데, 둘은 어느 점 근처를 보아도 같은 모양이라 국소적으로는 구별되지 않는다. 원을 두 호로 덮고 두 호가 겹치는 조각마다 섬유를 뒤집어 붙였는지를 $\mathbb Z/2$ 의 값으로 적으면, 첫 Stiefel–Whitney 류가 띠에서 $0$, Möbius 띠에서 $1$ 이 되어 둘을 구별한다.
 
 # 직관
+
+Stiefel–Whitney 류는 실 벡터다발에 붙는 $\mathbb Z/2$ 계수 코호몰로지류다. 밑공간 $X$ 위의 다발 $E$ 마다 $w_i(E)\in H^i(X;\mathbb Z/2)$ 가 있고 자명한 다발에서는 $i\ge 1$ 인 것이 모두 소멸한다.
+
+[특성류](characteristic-classes.md) 가운데 Chern 류와 [Pontryagin 류](pontryagin-classes.md)가 복소 구조나 실수 계수를 요구하는 자리에서, 이 류는 아무 실 다발에나 있다. 접다발에 적용하면 $w_1$ 이 방향가능성을, $w_2$ 가 스핀 구조의 존재를, 전체 류의 역이 몰입에 필요한 차원의 하한을 판정한다.
 
 원 위의 실 선다발에는 띠와 Möbius 띠 두 가지가 있다. 둘을 구별하는 수를 만들어 본다. 원을 두 호 $U, V$ 로 덮으면 각 호 위에서 다발이 자명하므로 섬유를 $\mathbb R$ 과 동일시할 수 있고, 겹침은 두 조각 $U\cap V=A\sqcup B$ 다. 두 동일시가 $A$ 와 $B$ 에서 각각 $\pm 1$ 배로 어긋나므로 부호 두 개 $\varepsilon_A,\varepsilon_B$ 가 나온다.
 

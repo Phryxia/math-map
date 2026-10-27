@@ -2,11 +2,13 @@
 
 # 개요
 
-**Teichmüller 정리(Teichmüller's theorem)** 는 종수 $g\ge 2$ 인 두 표시된 [Riemann 곡면](riemann-surfaces.md) 사이에서 표시를 지키는 [준등각 사상](quasiconformal-maps.md) 가운데 팽창률이 가장 작은 것이 하나 존재하고, 그 Beltrami 계수가 정칙 이차미분으로 주어진다는 정리다. Teichmüller 가 1939 년에 진술했고 Ahlfors 와 Bers 가 증명을 완성했다.[^1]
-
-[Teichmüller 공간](teichmuller-space.md)의 Teichmüller 거리는 팽창률의 하한으로 정의된다. 이 정리로 하한이 달성되고, 그 결과 Teichmüller 공간이 정칙 이차미분 공간의 열린 단위공과 위상동형이다.
+**Teichmüller 정리(Teichmüller's theorem)** 는 두 곡면 사이의 변형 가운데 모양을 가장 적게 일그러뜨리는 것이 하나 존재한다는 정리다. 정사각형을 가로가 두 배인 직사각형으로 꼭짓점끼리 보낼 때 가로만 두 배로 늘리는 사상은 작은 원을 가로세로 비가 $2$ 인 타원으로 바꾸고, 어떤 사상을 써도 이 비를 $2$ 보다 작게 할 수 없다. Teichmüller 정리는 종수 $2$ 이상인 곡면 사이에서도 이처럼 정해진 방향으로 일정하게 늘리는 사상이 일그러짐을 가장 작게 하고, 그 방향이 곡면 위의 정칙 이차미분 하나로 정해짐을 보인다.
 
 # 직관
+
+Teichmüller 정리는 종수 $g\ge 2$ 인 두 표시된 [Riemann 곡면](riemann-surfaces.md) 사이에서 표시를 지키는 [준등각 사상](quasiconformal-maps.md) 가운데 팽창률이 가장 작은 것이 하나 존재하고, 그 Beltrami 계수가 정칙 이차미분으로 주어진다는 정리다. Teichmüller 가 1939 년에 진술했고 Ahlfors 와 Bers 가 증명을 완성했다.[^1]
+
+[Teichmüller 공간](teichmuller-space.md)의 Teichmüller 거리는 팽창률의 하한으로 정의된다. 이 정리로 하한이 달성되고, 그 결과 Teichmüller 공간이 정칙 이차미분 공간의 열린 단위공과 위상동형이다.
 
 정사각형 $\lbrack 0,1\rbrack^2$ 을 직사각형 $\lbrack 0,2\rbrack\times\lbrack 0,1\rbrack$ 로 꼭짓점을 꼭짓점으로 보내는 준등각 사상 가운데 팽창률이 가장 작은 것을 찾는다. $f(x+iy)=2x+iy$ 는 팽창률이 $2$ 다. 가로 선분 하나는 길이가 $1$ 이고, 그 상은 직사각형의 왼쪽 변과 오른쪽 변을 잇는 곡선이라 길이가 $2$ 이상이다. 모든 가로 선분에서 이것을 더하고 넓이와 비교하면 팽창률이 $2$ 보다 작은 사상이 없고, $2$ 를 실현하는 것은 가로로 두 배 늘이는 사상뿐이다.
 
