@@ -2,11 +2,13 @@
 
 # 개요
 
-**Aho–Corasick 알고리즘(Aho–Corasick algorithm)** 은 패턴 $k$ 개 $P_1,\dots,P_k$ 가 본문 $T$ 에 나타나는 자리를 모두, 본문을 한 번 읽어 찾는 문자열 검색 알고리즘이다. 패턴 길이의 합을 $L$, 본문 길이를 $n$, 나타난 횟수를 $z$ 라 하면 고정된 알파벳에서 $O(L+n+z)$ 시간이 든다. Aho 와 Corasick 이 1975 년에 발표했다[^1].
-
-패턴들의 [트라이](tries.md)를 만들고, 마디마다 [Knuth–Morris–Pratt 알고리즘](knuth-morris-pratt.md)의 실패 함수를 여러 패턴으로 넓힌 실패 링크를 둔다.
+**Aho–Corasick 알고리즘(Aho–Corasick algorithm)** 은 여러 패턴이 글에 나오는 자리를 글을 한 번만 읽어 모두 찾는 문자열 검색 알고리즘이다. 금지어 천 개가 게시글에 들어 있는지 검사할 때 금지어마다 글을 처음부터 읽으면 글을 천 번 읽는다. 금지어들을 앞 글자가 같은 것끼리 묶은 나무 하나로 만들면, 글을 읽으며 나무를 따라 내려가 모든 금지어를 함께 비교할 수 있다. Aho–Corasick 알고리즘은 따라가던 길이 막힐 때 이미 읽은 글자의 끝부분과 맞는 다른 마디로 건너가는 연결을 나무에 미리 달아, 글을 다시 읽지 않는다.
 
 # 직관
+
+Aho–Corasick 알고리즘은 패턴 $k$ 개 $P_1,\dots,P_k$ 가 본문 $T$ 에 나타나는 자리를 모두 본문을 한 번 읽어 찾는다. 패턴 길이의 합을 $L$, 본문 길이를 $n$, 나타난 횟수를 $z$ 라 하면 고정된 알파벳에서 $O(L+n+z)$ 시간이 든다. Aho 와 Corasick 이 1975 년에 발표했다[^1].
+
+패턴들의 [트라이](tries.md)를 만들고, 마디마다 [Knuth–Morris–Pratt 알고리즘](knuth-morris-pratt.md)의 실패 함수를 여러 패턴으로 넓힌 실패 링크를 둔다.
 
 패턴 $\mathtt{he}, \mathtt{she}, \mathtt{his}, \mathtt{hers}$ 를 본문 $\mathtt{ushers}$ 에서 찾는다. 패턴마다 Knuth–Morris–Pratt 알고리즘을 따로 돌리면 본문을 네 번 읽는다. 패턴이 많으면 읽는 횟수가 패턴 수만큼 늘어난다.
 
