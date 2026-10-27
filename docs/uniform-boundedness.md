@@ -2,13 +2,15 @@
 
 # 개요
 
-**균등유계성 원리(uniform boundedness principle)** 는 [Banach 공간](banach-spaces.md) 위의 유계 선형작용소들이 각 점에서 유계이면 작용소 노름도 한꺼번에 유계라는 정리다. Banach–Steinhaus 정리(Banach–Steinhaus theorem)라고도 부른다.
-
-증명은 [Baire 범주 정리](baire-category.md)를 한 번 쓰고, 정의역의 완비성이 없으면 결론이 성립하지 않는다. 대우를 쓰면 작용소 노름이 발산하는 모임에 대해 값이 발산하는 점의 존재가 나온다.
+**균등유계성 원리(uniform boundedness principle)** 는 선형 변환들의 모임이 각 입력에서 출력의 크기가 묶여 있으면, 모든 입력에 대해 한꺼번에 묶인다는 정리다. 연속인 주기함수의 [Fourier 급수](fourier-series.md)가 $x=0$ 에서 언제나 수렴하는지 묻는다. $x=0$ 에서의 부분합을 주는 변환들의 크기는 항 수가 늘수록 한없이 커지지만, 이것만으로 수렴하지 않는 함수가 있는지는 바로 알 수 없다. 균등유계성 원리의 대우를 쓰면 변환들의 크기가 한없이 커지는 것만으로 부분합이 발산하는 연속함수가 존재한다.
 
 # 직관
 
-연속인 주기함수 $f$ 의 [Fourier 급수](fourier-series.md)가 $x=0$ 에서 수렴하는지 묻는다. 부분합은 Dirichlet 핵 $D_N$ 과의 적분 $S_Nf(0)=\frac1{2\pi}\int_{-\pi}^{\pi}f(t)D_N(t)\thinspace dt$ 이다. $\vert f\vert\le 1$ 인 연속함수로 $D_N$ 의 부호를 근사하면 이 적분은 $\frac1{2\pi}\int\vert D_N\vert$ 에 얼마든지 가까워지고, 그보다 커지지는 않는다. 이 값은 $N$ 이 커지면 $\log N$ 의 속도로 커진다.
+균등유계성 원리는 [Banach 공간](banach-spaces.md) 위의 유계 선형작용소들이 각 점에서 유계이면 작용소 노름도 한꺼번에 유계라는 정리다. Banach–Steinhaus 정리(Banach–Steinhaus theorem)라고도 부른다.
+
+증명은 [Baire 범주 정리](baire-category.md)를 한 번 쓰고, 정의역의 완비성이 없으면 결론이 성립하지 않는다. 대우를 쓰면 작용소 노름이 발산하는 모임에 대해 값이 발산하는 점의 존재가 나온다.
+
+연속인 주기함수 $f$ 의 Fourier 급수가 $x=0$ 에서 수렴하는지 묻는다. 부분합은 Dirichlet 핵 $D_N$ 과의 적분 $S_Nf(0)=\frac1{2\pi}\int_{-\pi}^{\pi}f(t)D_N(t)\thinspace dt$ 이다. $\vert f\vert\le 1$ 인 연속함수로 $D_N$ 의 부호를 근사하면 이 적분은 $\frac1{2\pi}\int\vert D_N\vert$ 에 얼마든지 가까워지고, 그보다 커지지는 않는다. 이 값은 $N$ 이 커지면 $\log N$ 의 속도로 커진다.
 
 그래서 $N$ 마다 $\vert f\vert\le1$ 이면서 $S_Nf(0)$ 이 큰 연속함수가 있다. 그런데 그 함수는 $N$ 마다 다르다. 함수 하나를 고정했을 때 모든 $N$ 에서 값이 커지는지는 이 계산으로 나오지 않는다.
 
