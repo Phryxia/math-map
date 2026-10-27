@@ -2,11 +2,13 @@
 
 # 개요
 
-**Pólya 추측(Pólya's conjecture)** 은 $\mathbb R^n$ 의 유계 영역 $\Omega$ 에서 Dirichlet 고윳값의 개수 $N_\Omega(\lambda)$ 가 모든 $\lambda$ 에서 [Weyl 법칙](weyl-law.md)의 주항 이하이고, Neumann 고윳값의 개수는 주항 이상이라는 추측이다. Pólya 가 1961 년에 평면을 합동 조각으로 덮는 영역에서 증명하고 일반 영역에 대한 추측으로 제기했다.[^1]
-
-$C_n=\omega_n/(2\pi)^n$ 으로 두면 Dirichlet 쪽 진술은 $N_\Omega(\lambda)\le C_n\vert\Omega\vert\lambda^{n/2}$ 이고, $k$ 번째 고윳값으로는 $\lambda_k(\Omega)\ge 4\pi^2\bigl(k/(\omega_n\vert\Omega\vert)\bigr)^{2/n}$ 이다. $k=1$ 인 경우는 [Faber–Krahn 부등식](faber-krahn.md)에서 나온다.
+**Pólya 추측(Pólya's conjecture)** 은 북 모양의 영역이 내는 진동수 가운데 일정한 값 이하인 것의 개수가 영역의 넓이만으로 정한 근사값을 넘지 않는다는 추측이다. 한 변이 $\pi$ 인 정사각형에서 진동수의 제곱은 $m^2+l^2$ $(m,l\ge 1)$ 이므로 $\lambda$ 이하인 것의 개수는 반지름 $\sqrt\lambda$ 인 원의 사분면 안 격자점의 개수이고, 격자점마다 왼쪽 아래에 단위 정사각형을 붙이면 모두 사분면 안에 들어가므로 이 개수는 사분면의 넓이 $\pi\lambda/4$ 를 넘지 않는다. Pólya 추측은 모든 유계 영역에서 같은 부등식, 곧 Dirichlet 고윳값의 개수가 [Weyl 법칙](weyl-law.md)의 주항 이하라는 것을 주장하고, Pólya 는 평면을 합동 조각으로 빈틈없이 덮는 영역에서 이를 증명했다.
 
 # 직관
+
+Pólya 추측은 $\mathbb R^n$ 의 유계 영역 $\Omega$ 에서 Dirichlet 고윳값의 개수 $N_\Omega(\lambda)$ 가 모든 $\lambda$ 에서 Weyl 법칙의 주항 이하이고, Neumann 고윳값의 개수는 주항 이상이라는 추측이다. Pólya 가 1961 년에 평면을 합동 조각으로 덮는 영역에서 증명하고 일반 영역에 대한 추측으로 제기했다.[^1]
+
+$C_n=\omega_n/(2\pi)^n$ 으로 두면 Dirichlet 쪽 진술은 $N_\Omega(\lambda)\le C_n\vert\Omega\vert\lambda^{n/2}$ 이고, $k$ 번째 고윳값으로는 $\lambda_k(\Omega)\ge 4\pi^2\bigl(k/(\omega_n\vert\Omega\vert)\bigr)^{2/n}$ 이다. $k=1$ 인 경우는 [Faber–Krahn 부등식](faber-krahn.md)에서 나온다.
 
 한 변이 $\pi$ 인 정사각형에서 Dirichlet 고윳값은 $m^2+l^2$ $(m,l\ge 1)$ 이므로, $N(\lambda)$ 는 반지름 $\sqrt\lambda$ 인 원의 사분면 안에 있는 양의 정수 격자점의 개수다. 각 격자점 $(m,l)$ 에 그 점을 오른쪽 위 꼭짓점으로 하는 단위 정사각형을 붙이면, 정사각형들은 겹치지 않고 모두 사분원 안에 든다. 그래서 $N(\lambda)\le\pi\lambda/4$ 이고, 이 값이 $C_2\vert\Omega\vert\lambda=\frac{1}{4\pi}\cdot\pi^2\cdot\lambda$ 다.
 

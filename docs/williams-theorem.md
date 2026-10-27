@@ -2,11 +2,13 @@
 
 # 개요
 
-**Williams 정리(Williams' theorem)** 는 비결정적 지수 시간(nondeterministic exponential time, NEXP)에 판정되는 언어 가운데, 법 $m$ 게이트를 쓰는 상수 깊이 다항 크기 회로(alternating circuit with counters, ACC)로 계산되지 않는 것이 있다는 정리다. 곧 $\mathrm{NEXP}\not\subseteq\mathrm{ACC}^0$ 이다. R. Williams 가 2011 년에 증명했다[^1].
-
-[Razborov–Smolensky 정리](razborov-smolensky.md)는 법이 소수 하나일 때의 하한이고, 법이 $6$ 처럼 합성수이면 그 다항식 근사가 통하지 않는다. Williams 정리는 회로의 하한을 회로 충족 가능성 판정 알고리즘에서 얻는다. 판정을 전수 조사보다 조금이라도 빨리 하면, [시간 계층 정리](time-hierarchy-theorem.md)의 비결정적 판본과 모순이 생긴다.
+**Williams 정리(Williams' theorem)** 는 어떤 수로 나눈 나머지를 세는 게이트를 갖춘 얕은 다항 크기 회로로 계산되지 않는 문제가, 비결정적 지수 시간에 판정되는 문제 가운데 있다는 정리다. 나머지를 세는 법이 소수 하나일 때는 [Razborov–Smolensky 정리](razborov-smolensky.md)가 그런 회로로 계산되지 않는 함수를 주지만, 법이 $6$ 처럼 합성수이면 그 증명이 통하지 않는다. Williams 정리는 이런 회로가 $1$ 을 내는 입력이 있는지를 $2^n$ 개의 입력을 모두 넣어 보는 것보다 조금 빨리 판정하는 알고리즘을 만들고, 그 알고리즘이 [시간 계층 정리](time-hierarchy-theorem.md)와 모순됨을 써서 하한을 얻는다.
 
 # 직관
+
+Williams 정리는 비결정적 지수 시간(nondeterministic exponential time, NEXP)에 판정되는 언어 가운데, 법 $m$ 게이트를 쓰는 상수 깊이 다항 크기 회로(alternating circuit with counters, ACC)로 계산되지 않는 것이 있다는 정리다. 곧 $\mathrm{NEXP}\not\subseteq\mathrm{ACC}^0$ 이다. R. Williams 가 2011 년에 증명했다[^1].
+
+Razborov–Smolensky 정리는 법이 소수 하나일 때의 하한이고, 법이 $6$ 처럼 합성수이면 그 다항식 근사가 통하지 않는다. Williams 정리는 회로의 하한을 회로 충족 가능성 판정 알고리즘에서 얻는다. 판정을 전수 조사보다 조금이라도 빨리 하면, 시간 계층 정리의 비결정적 판본과 모순이 생긴다.
 
 입력이 $n$ 개인 회로 $C$ 가 $1$ 을 내는 입력이 있는지 확인하려면 $2^n$ 개의 입력에 모두 넣어 보면 된다. 어떤 회로 부류 $\mathcal C$ 에 대해 이 일을 $2^n/n^{10}$ 시간에 하는 알고리즘이 있다고 둔다. 동시에 NEXP 의 모든 언어가 $\mathcal C$ 의 작은 회로로 계산된다고 둔다.
 
