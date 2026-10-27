@@ -2,7 +2,9 @@
 
 # 개요
 
-**Euler–Maclaurin 공식(Euler–Maclaurin formula)** 은 유한합과 적분의 차이를 도함수의 급수로 전개한다.
+**Euler–Maclaurin 공식(Euler–Maclaurin formula)** 은 유한합과 적분의 차이를 도함수의 급수로 전개한다. $1+\frac12+\frac13+\cdots+\frac1{1000}$ 을 계산하려면 천 개의 항을 더해야 하지만, 적분 $\int_1^{1000}dx/x=\ln 1000$ 은 한 번에 나온다. Euler–Maclaurin 공식은 합과 적분의 차이를 양 끝에서의 도함수 값 몇 개로 적어, 합을 적분과 보정항으로 계산하게 한다.
+
+# 직관
 
 $$
 \sum_{a=M}^{N}f(a)
@@ -13,8 +15,6 @@ $$
 계수는 [Bernoulli 수](bernoulli-numbers.md)다. 공식은 두 방향으로 쓰인다. 합에서 적분으로 읽으면 유한합이나 급수의 꼬리가 적분과 몇 개의 보정항이 되고, $\zeta(s)$ 와 $\log\Gamma(x)$ 의 고정밀 계산과 Stirling 급수가 그 사례다. 적분에서 합으로 읽으면 사다리꼴 규칙의 오차가 차수별로 분해되고, 주기함수에서 사다리꼴이 지수적으로 정확한 까닭이 드러난다.
 
 $K\to\infty$ 에서 우변의 급수는 대개 발산한다. 유한한 $K$ 에서 끊으면 오차는 $K$ 가 늘수록 줄다가 최소를 찍고 다시 늘어난다. 최솟값 $e^{-2\pi N}$ 규모가 이 공식이 주는 정확도의 한계이며, 이런 급수가 점근급수다.
-
-# 직관
 
 합 $\sum_{a=M}^N f(a)$ 를 적분 $\int_M^N f$ 로 바꿔 쓰면 사다리꼴 규칙의 오차가 남는다. 한 칸 $\lbrack 0,1\rbrack$ 에서 $B_1(x)=x-\tfrac12$ 로 부분적분하면 그 오차가 $\int_0^1 B_1(x)f'(x)\thinspace dx$ 로 정확히 적힌다.
 
@@ -158,7 +158,7 @@ $\gamma$ 는 공식이 만들어 내는 적분상수이고, 이 식이 $\gamma$ 
 
 ## 격자합과 이산화 오차
 
-격자 위의 합을 적분으로 바꿀 때 생기는 보정이 이 공식이다. 격자 간격 $h$ 로 쓰면 보정항이 $h^{2k}$ 의 급수가 되고, 낮은 차수 항을 소거하는 것이 Richardson 외삽과 Romberg 적분이다. 경계에서 도함수가 일치하는 경우, 곧 주기 경계, 급감쇠 함수, 변수변환으로 끝을 누른 tanh–sinh 구적법에서는 보정항이 사라져 지수적 정확도가 나온다. 공식은 이산화 오차를 경계항으로 국소화한다.[^1]
+격자 위의 합을 적분으로 바꿀 때 생기는 보정이 이 공식이다. 격자 간격 $h$ 로 쓰면 보정항이 $h^{2k}$ 의 급수가 되고, 낮은 차수 항을 소거하는 것이 [Richardson 외삽](richardson-extrapolation.md)과 Romberg 적분이다. 경계에서 도함수가 일치하는 경우, 곧 주기 경계, 급감쇠 함수, 변수변환으로 끝을 누른 tanh–sinh 구적법에서는 보정항이 사라져 지수적 정확도가 나온다. 공식은 이산화 오차를 경계항으로 국소화한다.[^1]
 
 [^1]: 표준 참고는 N. G. de Bruijn, *Asymptotic Methods in Analysis* 3 장과 R. L. Graham, D. E. Knuth, O. Patashnik, *Concrete Mathematics* 9.5 절. $\zeta$ 의 Euler–Maclaurin 계산은 H. Cohen, *Number Theory II: Analytic and Modern Tools* 10.3 절에 정리되어 있다.
 

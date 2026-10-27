@@ -2,13 +2,15 @@
 
 # 개요
 
-**정확한 WKB(exact WKB)** 는 [WKB 근사](wkb-approximation.md)(Wentzel–Kramers–Brillouin)의 발산하는 급수를 자르는 대신 [Borel 재합산](borel-pade.md)해서 각 영역에서 정의된 정확한 해를 얻는 방법이다. WKB 근사는 급수를 잘라 쓰고 회전점에서 Airy 함수로 이어 붙이며, 연결 공식을 규칙으로 외워 쓴다.
+**정확한 WKB(exact WKB)** 는 [WKB 근사](wkb-approximation.md)(Wentzel–Kramers–Brillouin)의 발산하는 급수를 자르는 대신 [Borel 재합산](borel-pade.md)해서 각 영역에서 정의된 정확한 해를 얻는 방법이다. 입자가 퍼텐셜 장벽에 부딪칠 때 장벽 양쪽의 파동함수를 이으려면, WKB 근사는 회전점에서 연결 공식을 규칙으로 외워 쓴다. 정확한 WKB 는 회전점을 감싸는 주기 적분을 Borel 합해 좌표로 잡고, 연결 공식을 그 좌표 사이의 변환식으로 계산한다.
+
+# 직관
+
+WKB 근사는 급수를 잘라 쓰고 회전점에서 Airy 함수로 이어 붙이며, 연결 공식을 규칙으로 외워 쓴다.
 
 정확한 WKB 에서는 연결 공식이 외우는 규칙이 아니라 계산되는 대상이다. Voros 가 시작하고 Écalle 의 [resurgence](resurgence.md) 이론을 바탕으로 Delabaere–Dillinger–Pham 이 정리했다.
 
 회전점을 감싸는 주기 적분을 Borel 합한 **Voros 기호**를 좌표로 잡으면 Stokes 선을 건너는 일이 좌표 사이의 변환식 한 줄이 된다. WKB 의 $\pi/4$ 위상은 그 변환식의 특수한 경우다.
-
-# 직관
 
 WKB 급수 $\sum_n\epsilon^nS_n(x)$ 의 계수는 $n!$ 규모로 커져 수렴하지 않는다. 최적 절단에서 멈추면 오차가 $e^{-A/\epsilon}$ 규모로 남고, 이 크기는 반대쪽 지수해의 크기와 같다. 큰 해가 지배하는 영역에서 작은 해의 계수는 절단 오차에 묻혀 정해지지 않는다.
 
