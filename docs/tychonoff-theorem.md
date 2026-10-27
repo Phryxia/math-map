@@ -2,11 +2,13 @@
 
 # 개요
 
-**Tychonoff 정리(Tychonoff's theorem)** 는 [콤팩트](compactness.md) 공간들의 임의의 곱이 곱위상에서 콤팩트하다는 정리다. 좌표의 개수에 제한이 없어 비가산 개의 좌표를 가진 함수공간에도 적용된다.
-
-ZF(선택공리를 뺀 Zermelo–Fraenkel) 안에서 이 정리는 [선택공리](axiom-of-choice.md)와 동치다. 콤팩트 Hausdorff 공간의 곱으로 제한한 판본은 그보다 약한 초필터 보조정리와 동치다.
+**Tychonoff 정리(Tychonoff's theorem)** 는 [콤팩트](compactness.md) 공간을 몇 개든 곱한 공간이 다시 콤팩트하다는 정리다. 구간 $\lbrack 0,1\rbrack$ 의 수열은 언제나 수렴하는 부분수열을 갖는다. $\lbrack 0,1\rbrack$ 에 값을 갖는 수열들의 열에서 자리마다 수렴하는 부분열을 고르려면 첫째 자리, 둘째 자리 순으로 부분열을 거듭 골라 대각선으로 뽑는데, 자리가 셀 수 없이 많으면 이 방법이 통하지 않는다. Tychonoff 정리는 열린 덮개로 정의한 콤팩트성으로 자리의 개수와 상관없이 곱 공간의 콤팩트성을 증명한다.
 
 # 직관
+
+Tychonoff 정리는 콤팩트 공간들의 임의의 곱이 곱위상에서 콤팩트하다는 정리다. 좌표의 개수에 제한이 없어 비가산 개의 좌표를 가진 함수공간에도 적용된다.
+
+ZF(선택공리를 뺀 Zermelo–Fraenkel) 안에서 이 정리는 [선택공리](axiom-of-choice.md)와 동치다. 콤팩트 Hausdorff 공간의 곱으로 제한한 판본은 그보다 약한 초필터 보조정리와 동치다.
 
 $\lbrack 0,1\rbrack^{\mathbb N}$ 의 점은 $\lbrack 0,1\rbrack$ 의 수열이다. 이 공간의 점열 $x^{(1)},x^{(2)},\dots$ 에서 수렴하는 부분열을 뽑는다. 첫 좌표만 모으면 $\lbrack 0,1\rbrack$ 의 유계 수열이므로 [Bolzano–Weierstrass 정리](bolzano-weierstrass.md)로 수렴하는 부분열이 있다([수열의 극한](limits.md)). 그 부분열에서 둘째 좌표를 모아 다시 부분열을 뽑고, 그 안에서 셋째 좌표를 뽑는다. $k$ 번째 부분열의 $k$ 번째 항을 모으면 모든 좌표에서 수렴하는 부분열이 된다. 좌표를 $1,2,3,\dots$ 으로 줄 세울 수 있어서 이 뽑기가 끝났다.
 

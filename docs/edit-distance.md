@@ -2,11 +2,13 @@
 
 # 개요
 
-**편집 거리(edit distance)** 는 문자열 $s$ 를 문자열 $t$ 로 바꾸는 데 필요한 글자 하나의 삽입, 삭제, 교체의 최소 횟수다. Levenshtein 이 1965 년에 정의해 Levenshtein 거리(Levenshtein distance)라고도 한다[^1]. 길이 $m$ 과 $n$ 인 두 문자열의 편집 거리는 [동적 계획법](dynamic-programming.md)으로 $O(mn)$ 시간에 계산된다.
-
-편집 거리는 문자열 집합 위의 [거리 공간](metric-spaces.md)의 거리 함수다.
+**편집 거리(edit distance)** 는 한 문자열을 다른 문자열로 바꾸는 데 필요한 글자 하나의 넣기, 지우기, 바꾸기의 최소 횟수다. 맞춤법 검사기가 잘못 친 $\mathtt{recieve}$ 에 사전의 $\mathtt{receive}$ 를 제안하려면, 두 낱말이 얼마나 가까운지를 수로 정해 후보를 골라야 한다. $\mathtt{kitten}$ 을 $\mathtt{sitting}$ 으로 바꾸는 데는 바꾸기 둘과 넣기 하나, 모두 세 번이 든다. 편집 거리는 두 문자열의 앞부분끼리의 거리를 표에 차례로 채워 이 최소 횟수를 계산한다.
 
 # 직관
+
+편집 거리는 문자열 $s$ 를 문자열 $t$ 로 바꾸는 데 필요한 글자 하나의 삽입, 삭제, 교체의 최소 횟수다. Levenshtein 이 1965 년에 정의해 Levenshtein 거리(Levenshtein distance)라고도 한다[^1]. 길이 $m$ 과 $n$ 인 두 문자열의 편집 거리는 [동적 계획법](dynamic-programming.md)으로 $O(mn)$ 시간에 계산된다.
+
+편집 거리는 문자열 집합 위의 [거리 공간](metric-spaces.md)의 거리 함수다.
 
 $\mathtt{kitten}$ 을 $\mathtt{sitting}$ 으로 바꾼다. 첫 글자 $\mathtt k$ 를 $\mathtt s$ 로, 다섯째 글자 $\mathtt e$ 를 $\mathtt i$ 로 바꾸고 끝에 $\mathtt g$ 를 넣으면 세 번이다. 두 번으로는 안 된다는 것을 보이려면 모든 편집 순서를 따져야 하는데, 그 수는 길이에 대해 지수적으로 많다.
 

@@ -2,11 +2,13 @@
 
 # 개요
 
-**Noether 정리(Noether's theorem)** 는 작용의 연속 대칭 하나마다 보존량 하나를 준다. [변분법](calculus-of-variations.md)의 Euler–Lagrange 방정식을 풀지 않고도 그 해를 따라 상수인 함수를 Lagrange 함수의 불변성에서 바로 읽는다.
-
-[Hamilton 역학](hamiltonian-mechanics.md) 쪽에서는 같은 대응이 Poisson 괄호의 반대칭으로 적히고, 대칭에서 보존량으로 가는 길과 그 역이 한 식이 된다.
+**Noether 정리(Noether's theorem)** 는 물리계가 어떤 연속적인 변환에 대해 바뀌지 않으면, 시간이 지나도 값이 바뀌지 않는 양이 하나 있다는 정리다. 자유롭게 움직이는 입자의 법칙은 위치를 옮겨도 그대로이고, 이때 운동량이 보존된다. 시간을 옮겨도 그대로인 계에서는 에너지가, 회전해도 그대로인 계에서는 각운동량이 보존된다. Noether 정리는 운동방정식을 풀지 않고, 계를 정하는 함수가 변환에 대해 바뀌지 않는다는 조건만으로 보존되는 양의 식을 계산한다.
 
 # 직관
+
+Noether 정리는 작용의 연속 대칭 하나마다 보존량 하나를 준다. [변분법](calculus-of-variations.md)의 Euler–Lagrange 방정식을 풀지 않고도 그 해를 따라 상수인 함수를 Lagrange 함수의 불변성에서 바로 읽는다.
+
+[Hamilton 역학](hamiltonian-mechanics.md) 쪽에서는 같은 대응이 Poisson 괄호의 반대칭으로 적히고, 대칭에서 보존량으로 가는 길과 그 역이 한 식이 된다.
 
 자유 입자의 Lagrange 함수 $L(q,\dot q)=\frac12m\dot q^2$ 는 위치를 옮겨도 그대로다. Euler–Lagrange 방정식은 $m\ddot q=0$ 이므로 $m\dot q$ 가 상수다. 두 사실이 같은 계산에서 나온다. $L$ 에 $q$ 가 들어 있지 않으면 $\partial L/\partial q=0$ 이고, Euler–Lagrange 방정식
 
