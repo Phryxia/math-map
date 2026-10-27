@@ -2,7 +2,11 @@
 
 # 개요
 
-**Tunnell–Saito 국소 부호 공식(Tunnell–Saito local root number formula)** 은 국소체 위 $\mathrm{GL}\_2$ 의 기약 표현과 그 내부 형식(inner form)의 표현 가운데 어느 쪽이 이차 확대의 토러스 위에서 주어진 지표로 변환하는 범함수를 갖는지를 국소 $\varepsilon$ 인자로 판정하는 공식이다. [Waldspurger 정리](waldspurger-formula.md)에서 토릭 주기가 소멸하지 않는 [사원수 대수](quaternion-algebras.md)가 어느 것인지는 $\varepsilon$ 인자가 결정한다. Tunnell–Saito 공식은 그 결정 규칙의 국소 성분이다.
+**Tunnell–Saito 국소 부호 공식(Tunnell–Saito local root number formula)** 은 국소체 위 $\mathrm{GL}\_2$ 의 표현과 [사원수 대수](quaternion-algebras.md) 쪽의 대응 표현 가운데 어느 쪽이 토러스 위의 주어진 지표로 변환하는 범함수를 갖는지를 $\varepsilon$ 인자의 부호로 판정하는 공식이다. 정수 $n$ 이 세 변이 유리수인 직각삼각형의 넓이인지 묻는 합동수 문제에서, Tunnell 은 이 공식을 써서 답을 삼항 이차형식의 표현수 세기로 바꾸었다. 범함수가 어느 쪽에 존재하는지는 표현을 직접 분해해야 보이지만, 공식을 쓰면 국소 $\varepsilon$ 인자 하나를 계산해 답한다.
+
+# 직관
+
+[Waldspurger 정리](waldspurger-formula.md)에서 토릭 주기가 소멸하지 않는 사원수 대수가 어느 것인지는 $\varepsilon$ 인자가 결정한다. Tunnell–Saito 공식은 그 결정 규칙의 국소 성분이다.
 
 국소체 $F$ 와 이차 확대 $K/F$ 와 $\mathrm{GL}\_2(F)$ 의 기약 표현 $\pi$ 를 놓자. 토러스 $K^\times$ 위에서 지표 $\chi$ 로 변환하는 범함수가 존재하는지 묻는다.
 
@@ -19,10 +23,6 @@ $$
 $$
 
 범함수의 존재라는 표현론적 질문이 $\varepsilon$ 인자의 부호라는 해석적 불변량으로 번역된다. [GGP 지표 공식](gan-gross-prasad.md)(Gan–Gross–Prasad)의 가장 낮은 경우이고, 역사적으로는 GGP 보다 먼저 발견되어 그 추측의 모양을 잡아 주었다.
-
-Tunnell 은 이 공식으로 합동수 문제의 판정 알고리즘을 얻었다. 어떤 정수가 직각삼각형의 넓이가 될 수 있는지를 삼항 이차형식의 표현수를 세어 판정한다.
-
-# 직관
 
 $K^\times$ 는 $\mathrm{GL}\_2(F)$ 안에서도 $D^\times$ 안에서도 극대 토러스로 실현되고, 두 군은 같은 $L$ 군을 갖는 내부형식이라 매개변수 수준에서는 구별되지 않는다. $D^\times$ 는 중심을 나누면 콤팩트하므로 기약 표현이 유한차원이고 콤팩트 부분군 $K^\times/F^\times$ 위로 제한해 지표를 분해하는 일이 유한 계산인 반면, $\mathrm{GL}\_2(F)$ 쪽에서는 무한차원 표현을 다룬다. 두 계산의 답이 합쳐서 1 이라는 것은 두 [군의 표현](group-representations.md)이 하나의 [Vogan L 꾸러미](vogan-packets.md)를 이루고 그 꾸러미 위에서 중복도 1 이 성립한다는 뜻이다. $\varepsilon$ 인자는 꾸러미 안에서 주소를 지정해, $+1$ 이면 분열형이고 $-1$ 이면 비분열형이다.
 

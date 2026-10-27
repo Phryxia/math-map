@@ -2,9 +2,13 @@
 
 # 개요
 
-**PCP 정리(PCP theorem)** 는 NP(nondeterministic polynomial time)의 모든 언어가 증명의 상수 개 비트만 무작위로 읽는 검증자로 확인되는 확률적 검사 가능 증명(probabilistically checkable proof, PCP)을 갖는다는 정리다. [근사 알고리즘](approximation-algorithms.md)은 NP-어려운 문제에 대해 보장된 비율의 답을 낸다. 어떤 문제는 임의로 좋은 근사가 가능하고(FPTAS, fully polynomial-time approximation scheme) 어떤 문제는 어느 비율에서 멈춘다. 알고리즘 설계만으로는 그 경계를 알 수 없다.
+**PCP 정리(PCP theorem)** 는 NP(nondeterministic polynomial time)의 모든 문제의 증명을, 증명의 상수 개 비트만 무작위로 읽고 확인하는 검증자가 있는 꼴로 다시 쓸 수 있다는 정리다. 이 꼴의 증명을 확률적 검사 가능 증명(probabilistically checkable proof, PCP)이라 한다. 변수 세 개로 된 논리합 절 여러 개 가운데 동시에 참으로 만들 수 있는 것의 최대 개수를 구하는 MAX-3SAT(maximum 3-satisfiability)에서, 무작위 할당은 평균 $7/8$ 을 만족시킨다. 이보다 나은 비율을 보장하는 다항시간 알고리즘이 있는지는 알고리즘을 설계해 보는 것만으로 알 수 없다. PCP 정리는 검증자를 간극이 있는 제약충족 문제로 바꾸어, $\mathrm{P}\ne\mathrm{NP}$ 이면 그런 근사가 존재하지 않음을 증명하는 데 쓰인다.
 
-1992 년에 완성된 **PCP 정리**(probabilistically checkable proof)가 경계를 준다.
+# 직관
+
+[근사 알고리즘](approximation-algorithms.md)은 NP-어려운 문제에 대해 보장된 비율의 답을 낸다. 어떤 문제는 임의로 좋은 근사가 가능하고(FPTAS, fully polynomial-time approximation scheme) 어떤 문제는 어느 비율에서 멈춘다. 알고리즘 설계만으로는 그 경계를 알 수 없다.
+
+1992 년에 완성된 PCP 정리가 경계를 준다.
 
 $$
 \mathrm{NP}=\mathrm{PCP}(\log n,\ O(1))
@@ -19,8 +23,6 @@ $$
 $$
 
 사슬의 끝에서 MAX-3SAT 의 $7/8$ 이 최적임이 나온다. 상한은 무작위 할당에서, 하한은 PCP 정리의 가장 정교한 판본에서 나온다.
-
-# 직관
 
 보통의 NP 증명은 한 글자만 틀려도 무효이고, 그 한 글자를 찾으려면 전체를 읽어야 한다. 증명을 오류정정부호로 다시 쓰면 달라진다. 두 부호어는 대부분의 자리에서 다르므로 증명이 조금이라도 틀리면 부호화된 증명은 아주 많은 자리에서 틀리고, 무작위로 몇 자리만 찍어도 드러난다.
 

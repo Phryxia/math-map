@@ -2,7 +2,11 @@
 
 # 개요
 
-**$p$ 진 Hodge 이론($p$-adic Hodge theory)** 은 $p$ 진 국소체의 절대 Galois 군의 $p$ 진 표현을 주기환으로 분류하는 이론이다. [Galois 표현](galois-representations.md)에서 [에탈 코호몰로지](etale-cohomology.md)가 $\ell$ 진 표현을 공급한다. 그 표현들을 국소체 $K/\mathbb Q_p$ 의 절대 Galois 군 $G_K=\mathrm{Gal}(\bar K/K)$ 위에서 분류할 때 $\ell\ne p$ 와 $\ell=p$ 가 갈린다.
+**p 진 Hodge 이론(p-adic Hodge theory)** 은 $p$ 진 국소체의 절대 Galois 군의 $p$ 진 표현을, 주기환이라는 큰 환을 계수로 써서 분류하는 이론이다. 복소다양체에서는 [de Rham 코호몰로지](de-rham-cohomology.md)와 특이 코호몰로지가 계수를 $\mathbb C$ 로 올리면 같아지고, 그 동형의 행렬 성분이 $2\pi i$ 같은 주기다. $\mathbb Q_p$ 위에서는 $p$ 진 표현이 연속성만으로 거의 제약을 받지 않아, 어느 표현이 다양체에서 오는지 가를 방법이 따로 있어야 한다. p 진 Hodge 이론은 $\mathbb C$ 자리에 $B_{\mathrm{dR}}$ 같은 주기환을 놓고 표현과 텐서해 불변량을 취해, 표현을 선형대수 자료로 바꾸어 분류한다.
+
+# 직관
+
+[Galois 표현](galois-representations.md)에서 [에탈 코호몰로지](etale-cohomology.md)가 $\ell$ 진 표현을 공급한다. 그 표현들을 국소체 $K/\mathbb Q_p$ 의 절대 Galois 군 $G_K=\mathrm{Gal}(\bar K/K)$ 위에서 분류할 때 $\ell\ne p$ 와 $\ell=p$ 가 갈린다.
 
 $\ell\ne p$ 쪽에서는 Grothendieck 의 준안정 정리가 $\ell$ 진 표현의 관성 작용을 유한 자료로 압축한다. $\ell=p$ 쪽에서는 $G_K$ 의 $p$ 진 표현이 연속성만으로 거의 제약을 받지 않아 무한히 많은 모양으로 존재하고, 그중 기하에서 오는 것을 가려낼 방법이 없다.
 
@@ -12,11 +16,9 @@ $$
 D_B(V)=(B\otimes_{\mathbb Q_p}V)^{G_K}
 $$
 
-$B$ 를 잘 고르면 불변식을 취하는 과정에서 $G_K$ 작용이 상쇄되고 $D_B(V)$ 에는 Frobenius 나 여과 같은 선형대수 자료만 남는다. 이런 $B$ 가 주기환(period ring)이고, $\mathbb Q_p\subset B_{\mathrm{HT}},B_{\mathrm{dR}},B_{\mathrm{st}},B_{\mathrm{cris}}$ 의 사슬이 표현의 네 등급을 정의한다. 주기환으로 $p$ 진 표현을 분류하는 이 이론이 **p 진 Hodge 이론(p-adic Hodge theory)** 이다.
+$B$ 를 잘 고르면 불변식을 취하는 과정에서 $G_K$ 작용이 상쇄되고 $D_B(V)$ 에는 Frobenius 나 여과 같은 선형대수 자료만 남는다. 이런 $B$ 가 주기환(period ring)이고, $\mathbb Q_p\subset B_{\mathrm{HT}},B_{\mathrm{dR}},B_{\mathrm{st}},B_{\mathrm{cris}}$ 의 사슬이 표현의 네 등급을 정의한다. 주기환으로 $p$ 진 표현을 분류하는 이 이론이 p 진 Hodge 이론이다.
 
-복소다양체에서 [de Rham 코호몰로지](de-rham-cohomology.md)와 특이 코호몰로지를 잇는 비교동형은 $\mathbb C$ 로 계수를 올려야 성립하고 그 동형의 행렬 성분이 주기다. $p$ 진 세계에서 $\mathbb C$ 자리에 $B_{\mathrm{dR}}$ 이, $2\pi i$ 자리에 $g(t)=\chi(g)\thinspace t$ 를 만족하는 원소 $t$ 가 놓인다.
-
-# 직관
+복소다양체에서 de Rham 코호몰로지와 특이 코호몰로지를 잇는 비교동형은 $\mathbb C$ 로 계수를 올려야 성립하고 그 동형의 행렬 성분이 주기다. $p$ 진 세계에서 $\mathbb C$ 자리에 $B_{\mathrm{dR}}$ 이, $2\pi i$ 자리에 $g(t)=\chi(g)\thinspace t$ 를 만족하는 원소 $t$ 가 놓인다.
 
 $\ell\ne p$ 인 표현 $\rho\colon G_K\to\mathrm{GL}\_n(\mathbb Q_\ell)$ 에서 [관성군](ramification-groups.md)의 야생 부분 $P_K$ 는 프로-$p$ 군이므로 프로-$\ell$ 군 안의 상 $\rho(P_K)$ 가 유한하고, 표현 하나가 유한 자료로 끝난다. $\ell=p$ 에서는 그 상이 프로-$p$ 군 안의 프로-$p$ 군이라 무한히 클 수 있다. 1차원 표현을 세어 보면 연속 지표는 $G_K^{\mathrm{ab}}\cong\widehat{K^\times}\to\mathbb Z_p^\times$ 이고, 국소 [유체론](class-field-theory.md)이 주는 $K^\times\cong\pi^{\mathbb Z}\times\mathcal O_K^\times$ 에서 $\mathcal O_K^\times$ 가 $\mathbb Z_p^{[K:\mathbb Q_p]}$ 를 포함한다. 지표가 양의 차원의 족을 이루므로 표현을 유한 자료로 압축하는 길이 막힌다.
 
