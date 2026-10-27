@@ -2,17 +2,17 @@
 
 # 개요
 
-**역산란 변환(inverse scattering transform)** 은 비선형 편미분방정식의 초기값 문제를 산란 자료의 선형 흐름으로 바꾸는 방법이다. Korteweg–de Vries 방정식(KdV)
+**역산란 변환(inverse scattering transform)** 은 비선형 편미분방정식의 초기값 문제를 산란 자료의 선형 흐름으로 바꾸는 방법이다. 얕은 수로에서 일어난 물결 덩어리가 모양을 잃지 않고 멀리까지 가는 현상을 적는 Korteweg–de Vries 방정식(KdV)은 비선형이어서 Fourier 변환으로 풀리지 않는다. 역산란 변환은 해를 Schrödinger 연산자의 포텐셜로 보고, 시간에 따라 단순하게 움직이는 그 산란 자료를 따라간 뒤 포텐셜을 복원해 해를 얻는다.
+
+# 직관
 
 $$
 u\_t=6uu\_x-u\_{xxx}
 $$
 
-의 해 $u(\cdot,t)$ 를 Schrödinger 연산자 $L=-\partial\_x^2+u$ 의 포텐셜로 보면, [Lax 쌍](lax-pairs.md)이 $L$ 의 스펙트럼을 시간에 변하지 않게 한다. 포텐셜 대신 그 스펙트럼 자료를 좌표로 쓰면 자료마다 [상미분방정식](ordinary-differential-equations.md) 하나가 나오고, 그 해를 포텐셜로 되돌리는 것이 역산란이다.
+이 식의 해 $u(\cdot,t)$ 를 Schrödinger 연산자 $L=-\partial\_x^2+u$ 의 포텐셜로 보면, [Lax 쌍](lax-pairs.md)이 $L$ 의 스펙트럼을 시간에 변하지 않게 한다. 포텐셜 대신 그 스펙트럼 자료를 좌표로 쓰면 자료마다 [상미분방정식](ordinary-differential-equations.md) 하나가 나오고, 그 해에서 포텐셜을 복원하는 것이 역산란이다.
 
 초기값에서 산란 자료를 읽고, 자료를 시간 $t$ 로 보내고, 자료에서 포텐셜을 복원하는 세 단계로 KdV 를 푼다.
-
-# 직관
 
 선형 편미분방정식은 Fourier 변환으로 푼다. [열방정식](heat-equation.md) $u\_t=u\_{xx}$ 의 양변을 $x$ 에 대해 변환하면 $\hat u\_t=-k^2\hat u$ 이고, 각 $k$ 에서 상미분방정식 하나가 따로 풀려 $\hat u(k,t)=\hat u(k,0)e^{-k^2t}$ 다. 변환하고, $k$ 마다 지수를 곱하고, 되돌리면 끝난다.
 
