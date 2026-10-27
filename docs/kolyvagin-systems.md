@@ -2,9 +2,13 @@
 
 # 개요
 
-**Kolyvagin 계(Kolyvagin system)** 는 제곱인수 없는 정수로 첨자화된 [Galois 코호몰로지](galois-cohomology.md) 류들이 소수마다 유한 특이 사상으로 이어지는 모임이고, [Selmer 군](selmer-tate-shafarevich.md)의 크기를 상계와 하계 양쪽에서 정한다. [Euler 계](euler-systems.md)의 논법에는 두 가지 한계가 있다. 결론이 상계뿐이라 Selmer 군이 이보다 작다는 것은 얻어도 정확한 크기는 얻지 못하고, 자취 정합성을 만족하는 대수적 원소의 탑을 만드는 존재성 문제가 사례마다 따로 풀려야 한다.
+**Kolyvagin 계(Kolyvagin system)** 는 제곱인수 없는 정수로 첨자화된 [Galois 코호몰로지](galois-cohomology.md) 류들이 소수마다 유한 특이 사상으로 이어지는 모임이고, [Selmer 군](selmer-tate-shafarevich.md)의 크기를 상계와 하계 양쪽에서 정한다. [Euler 계](euler-systems.md)는 Selmer 군이 어떤 크기 이하라는 상계만 주므로, 타원곡선의 Selmer 군이 정확히 몇 개의 원소를 갖는지는 Euler 계만으로 나오지 않는다. Kolyvagin 계는 Euler 계에서 만든 류들의 족을 공리로 삼고, 그런 족의 생성원 하나가 Selmer 군의 크기를 정확히 계산하는 조건을 국소 자료로 판정한다.
 
-Mazur 와 Rubin 은 Euler 계 자체를 버리고 거기서 나온 유도류의 족만 남겨 공리화했다. 이것이 **Kolyvagin 계**이고, 물음이 그런 족의 존재에서 그런 족 전체가 이루는 가군의 구조로 바뀐다.
+# 직관
+
+Euler 계의 논법에는 두 가지 한계가 있다. 결론이 상계뿐이라 Selmer 군이 이보다 작다는 것은 얻어도 정확한 크기는 얻지 못하고, 자취 정합성을 만족하는 대수적 원소의 탑을 만드는 존재성 문제가 사례마다 따로 풀려야 한다.
+
+Mazur 와 Rubin 은 Euler 계 자체를 버리고 거기서 나온 유도류의 족만 남겨 공리화했다. 이것이 Kolyvagin 계이고, 물음이 그런 족의 존재에서 그런 족 전체가 이루는 가군의 구조로 바뀐다.
 
 Selmer 구조 $\mathcal F$ 에 **핵심계수** $\chi(\mathcal F)\in\mathbb Z$ 라는 정수 하나가 붙고 이 수가 가군을 결정한다[^1].
 
@@ -15,8 +19,6 @@ Selmer 구조 $\mathcal F$ 에 **핵심계수** $\chi(\mathcal F)\in\mathbb Z$ �
 | $\ge2$ | 지나치게 크고 경직성이 없다 |
 
 핵심계수는 국소 데이터만으로 계산된다. 각 자리에서 국소 조건의 차원과 $H^0$ 의 차원을 빼서 더하면 되므로, Kolyvagin 계 논법이 통하는지가 유한한 선형대수로 판정된다. 상계가 등식으로 바뀌는 지점이 여기다.
-
-# 직관
 
 Euler 계 $\mathbf{c}=\lbrace c_F\rbrace$ 는 수체의 탑 위에 얹힌 거대한 대상이고, Kolyvagin 유도 연산자가 거기서 유도류 $\kappa_n\in H^1(K,T)$ 를 뽑아낸다. 실제 증명에서 쓰이는 것은 $\kappa_n$ 뿐이고 $c_F$ 는 $\kappa_n$ 을 만든 뒤 다시 등장하지 않는다. 그러므로 $\kappa$ 가 만족하는 성질을 정의로 삼는다.
 

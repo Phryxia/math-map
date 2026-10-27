@@ -2,7 +2,11 @@
 
 # 개요
 
-**순간자 Floer 호몰로지(instanton Floer homology)** 는 [호몰로지](homology.md) 3 구 위의 기약 $\mathrm{SU}(2)$ 평탄 접속을 생성원으로 두고 그 사이의 순간자를 세어 경계 사상을 정한 사슬 복합체의 호몰로지다. [Casson 불변량](casson-invariant.md)은 호몰로지 3 구 $\Sigma$ 위의 기약 $\mathrm{SU}(2)$ 평탄 접속을 부호와 함께 센 정수다.
+**순간자 Floer 호몰로지(instanton Floer homology)** 는 [호몰로지](homology.md) 3 구 위의 기약 $\mathrm{SU}(2)$ 평탄 접속을 생성원으로 두고 그 사이의 순간자를 세어 경계 사상을 정한 사슬 복합체의 호몰로지다. [Casson 불변량](casson-invariant.md)은 이런 평탄 접속을 부호와 함께 센 정수 하나라서, 두 3 다양체에서 값이 같으면 그 이상 가를 수 없다. 순간자 Floer 호몰로지는 그 정수를 Euler 지표로 갖는 아벨군들의 열을 만들어 정수 대신 군을 비교하게 하고, 4 차원 코보디즘을 군 사이의 준동형으로 바꾼다.
+
+# 직관
+
+Casson 불변량은 호몰로지 3 구 $\Sigma$ 위의 기약 $\mathrm{SU}(2)$ 평탄 접속을 부호와 함께 센 정수다.
 
 $$
 \lambda(\Sigma)=\sum_{\alpha\in R^\ast(\Sigma)}\pm1
@@ -17,8 +21,6 @@ $$
 수 하나가 등급이 붙은 아벨군들의 열로 올라가는 이런 승격을 **범주화**라 한다. 얻는 것은 둘이다. Euler 지표가 같아도 호몰로지가 다를 수 있어 정보가 늘고, 4 차원 코보디즘이 군 사이의 준동형을 유도해 3 차원 불변량과 4 차원 Donaldson 이론이 한 틀에서 만난다.
 
 등급은 $\mathbb Z$ 가 아니라 $\mathbb Z/8$ 이다. 이 유한 등급은 [Chern–Simons](chern-simons.md) 범함수가 원 위의 값을 갖는다는 사실에서 나온다.
-
-# 직관
 
 유한차원 Morse 호몰로지는 함수 $f$ 의 임계점을 생성원으로 놓고, 지표 차이가 1 인 두 임계점을 잇는 기울기 흐름선을 세어 미분을 정의한다. Floer 는 이 절차를 $\Sigma$ 위 $\mathrm{SU}(2)$ 접속들의 공간을 게이지군으로 나눈 것에 적용하고, 함수로 Chern–Simons 범함수를 쓴다. $\delta\mathrm{CS}=0$ 이 $F_A=0$ 과 같으므로 임계점이 평탄 접속, 곧 Casson 불변량이 세던 대상이다. $\mathbb R\times\Sigma$ 위에서 기울기 흐름 방정식을 풀어 쓰면 4 차원의 반자기쌍대 방정식 $F^+=0$ 이 되므로 흐름선이 순간자다.
 

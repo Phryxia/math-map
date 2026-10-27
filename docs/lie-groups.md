@@ -2,7 +2,11 @@
 
 # 개요
 
-Lie 군(Lie group)은 매끄러운 [다양체](manifolds.md)이면서 곱셈과 역원이 매끄러운 군이다. [Lie 대수](lie-algebras.md)는 연속 대칭군을 항등원 근처에서 선형화한 것이다. 반대 방향으로 대수에서 군을 복원하는 사상이 **지수사상**이다.
+**Lie 군(Lie group)** 은 매끄러운 [다양체](manifolds.md)이면서 곱셈과 역원이 매끄러운 군이다. 평면의 회전 전체는 각도 하나로 매개되어 원을 이루고, 공간의 회전 전체는 3 차원 다양체를 이룬다. 이런 군의 곱셈은 행렬 곱이라 직접 다루기 어렵지만, 항등원 근처의 아주 작은 회전만 보면 덧셈과 교환자로 계산되는 [Lie 대수](lie-algebras.md)가 나온다. Lie 군의 이론은 군을 그 Lie 대수와 지수사상으로 연구한다.
+
+# 직관
+
+Lie 대수는 연속 대칭군을 항등원 근처에서 선형화한 것이다. 반대 방향으로 대수에서 군을 복원하는 사상이 **지수사상**이다.
 
 $$
 \exp:\mathfrak g\to G,\qquad \exp(X)=\sum_{k\ge0}\frac{X^k}{k!}
@@ -17,8 +21,6 @@ $$
 $$
 
 단순연결을 요구하면 이 대응이 [범주](category.md) 동치다.
-
-# 직관
 
 $\mathfrak g=T_eG$ 는 $G$ 를 항등원에서 선형화한 것이고 $\exp$ 가 대수에서 군으로 돌아가므로, 대수가 군을 전부 결정하는지 물을 수 있다. $\mathrm{SU}(2)$ 와 $\mathrm{SO}(3)$ 에서 확인해 보면 둘 다 3 차원이고 $\mathfrak{su}(2)\cong\mathfrak{so}(3)$ 인데, $\mathrm{SU}(2)$ 는 $S^3$ 이고 $\mathrm{SO}(3)$ 은 $\mathbb{RP}^3$ 이라 군으로는 다르다.
 
@@ -63,7 +65,7 @@ $$
 - **함자성.** Lie 군 준동형 $\varphi:G\to H$ 는 Lie 대수 준동형 $d\varphi:\mathfrak g\to\mathfrak h$ 를 유도하고 $\varphi(\exp X)=\exp(d\varphi\thinspace X)$ 가 성립한다.
 - **단순연결에서의 역방향.** $G$ 가 단순연결이면 임의의 Lie 대수 준동형 $\psi:\mathfrak g\to\mathfrak h$ 에 대해 $d\varphi=\psi$ 인 군 준동형 $\varphi:G\to H$ 가 유일하게 존재한다.
 - **부분대수 대응.** 부분대수 $\mathfrak h\subset\mathfrak g$ 마다 $\mathrm{Lie}(H)=\mathfrak h$ 인 연결 부분군 $H\subset G$ 가 유일하게 대응한다. $H$ 가 닫힌 부분군일 필요는 없고, 비합리 기울기의 원환면 감기가 반례다.
-- **Lie 세 번째 정리.** 모든 유한차원 실 Lie 대수는 어떤 Lie 군의 Lie 대수다. Ado 정리로 행렬대수에 넣은 뒤 부분대수 대응을 쓴다.
+- **Lie 세 번째 정리.** 모든 유한차원 실 Lie 대수는 어떤 Lie 군의 Lie 대수다. [Ado 정리](ado-theorem.md)로 행렬대수에 넣은 뒤 부분대수 대응을 쓴다.
 - **Cartan 닫힌 부분군 정리.** 위상적으로 닫힌 부분군은 자동으로 매끄러운 부분다양체, 곧 Lie 부분군이다.
 
 둘째 항목에서 단순연결 Lie 군의 범주와 유한차원 실 Lie 대수의 범주가 $\mathrm{Lie}$ 함자로 동치임이 따른다.
