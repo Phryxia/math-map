@@ -2,7 +2,11 @@
 
 # 개요
 
-**Fredholm 행렬식(Fredholm determinant)** $\det(I+K)$ 는 대각합류 작용소 $K$ 의 고윳값 $\lambda_i$ 로 $\prod_i(1+\lambda_i)$ 라 정의되는 무한차원의 [행렬식](determinants.md)이다. 행렬식은 유한차원의 개념이다. $n \times n$ 행렬의 행렬식은 $n!$ 개 항의 합이고, $n \to \infty$ 에서 이 정의는 아무 의미가 없다. 그런데 적분방정식
+**Fredholm 행렬식(Fredholm determinant)** $\det(I+K)$ 는 대각합류 작용소 $K$ 의 고윳값 $\lambda_i$ 로 $\prod_i(1+\lambda_i)$ 라 정의되는 무한차원의 [행렬식](determinants.md)이다. 적분방정식 $\phi(x)-\int_a^bK(x,y)\thinspace\phi(y)\thinspace dy=f(x)$ 가 모든 $f$ 에 대해 풀리는지 알려면 $I-K$ 가 가역인지 판정해야 하는데, $n\times n$ 행렬식을 정의하는 $n!$ 개 항의 합은 $n\to\infty$ 에서 정의가 서지 않는다. Fredholm 행렬식은 행렬식의 급수 전개를 무한차원으로 옮겨, 그 값이 $0$ 이 아닌지로 가역성을 판정한다.
+
+# 직관
+
+행렬식은 유한차원의 개념이다. $n \times n$ 행렬의 행렬식은 $n!$ 개 항의 합이고, $n \to \infty$ 에서 이 정의는 아무 의미가 없다. 그런데 적분방정식
 
 $$
 \phi(x) - \int_a^b K(x,y)\thinspace\phi(y)\thinspace dy = f(x)
@@ -13,8 +17,6 @@ $$
 Fredholm 은 1900 년에 유한차원 행렬식이 만족하는 급수 전개를 무한차원으로 옮겼다. 그 급수는 커널이 충분히 좋으면 수렴하고, 값 $\det(I-K)$ 는 유한차원 행렬식처럼 행동한다. 0 이 아니면 $I-K$ 가 가역이고, 곱에 대해 곱셈적이며, $K$ 에 대해 해석적이다.
 
 [결정점과정](determinantal-point-process.md)의 간격 확률, [Tracy–Widom 분포](tracy-widom.md), 산란 이론의 위상 이동, zeta 함수의 정규화가 $\det(I-K)$ 로 표현된다. 가역성 판정의 근거는 [Fredholm 작용소](fredholm-operators.md)에서 $I - K$ 가 콤팩트 섭동이라 지표가 0 이라는 것이다. 지표가 0 이면 단사와 전사가 동치이므로 판정할 조건이 하나다.
-
-# 직관
 
 [대각화](eigenvalues.md) 가능한 유한차원 행렬에서 $\det(I-K)=\prod_i(1-\lambda_i)$ 다. 이 곱을 무한차원으로 그대로 옮겨 본다. $K$ 가 [콤팩트](compactness.md)이면 $\lambda_i\to0$ 이므로 각 인자는 $1$ 에 가까워진다. 고윳값을 $\lambda_i=1/(i+1)$ 로 놓고 부분곱을 계산한다.
 

@@ -2,7 +2,9 @@
 
 # 개요
 
-**에탈 코호몰로지(étale cohomology)** 는 대수다양체에 [층 코호몰로지](sheaf-cohomology.md)를 주되 Zariski 위상 대신 에탈 사상들이 이루는 위치 위에서 계산한 것이다. 유한체 위의 다양체에 위상적 코호몰로지와 같은 모양의 불변량을 준다.
+**에탈 코호몰로지(étale cohomology)** 는 대수다양체에 [층 코호몰로지](sheaf-cohomology.md)를 주되 Zariski 위상 대신 에탈 사상들이 이루는 위치 위에서 계산한 것이다. 유한체 $\mathbb F_q$ 위의 방정식 하나의 해를 $\mathbb F_q,\mathbb F_{q^2},\mathbb F_{q^3},\dots$ 에서 세면 수열이 나오고, Weil 은 이 수열이 복소 다양체에서 고정점을 세는 Lefschetz 공식처럼 행동하리라 보았다. 유한체 위의 다양체에서는 Zariski 위상이 너무 성겨 그런 공식을 줄 코호몰로지가 서지 않는다. 에탈 코호몰로지는 그 코호몰로지를 만들어, 해의 개수를 Frobenius 작용의 대각합으로 쓴다.
+
+# 직관
 
 계수는 $\mathbb Z/\ell^n$ 을 쓰고 $\ell$ 은 표수와 서로소로 잡는다. $\ell$ 진 코호몰로지는 역극한
 
@@ -13,12 +15,10 @@ $$
 로 정의한다. 유한체 위에서는 Frobenius 가 이 공간에 작용하고, 고정점의 개수가 그 작용의 자취로 나온다.
 
 $$
-\char35 X(\mathbb F_{q^m})=\sum_{i=0}^{2d}(-1)^i\thinspace\mathrm{tr}\bigl(F^m\mid H^i\_c(X_{\bar k},\mathbb Q_\ell)\bigr)
+\char35{}X(\mathbb F_{q^m})=\sum_{i=0}^{2d}(-1)^i\thinspace\mathrm{tr}\bigl(F^m\mid H^i\_c(X_{\bar k},\mathbb Q_\ell)\bigr)
 $$
 
 이 자취 공식이 [Weil 추측](deligne-weil-conjectures.md)의 자리 세는 부분을 담당한다.
-
-# 직관
 
 $X$ 를 대수적으로 닫힌 체 위의 곡선이라 하고 Zariski 위상에서 상수층 $\mathbb Z/n$ 의 코호몰로지를 계산한다. Zariski 열린집합은 유한 개의 점을 뺀 것이어서 비어 있지 않은 두 열린집합이 반드시 만나고, $X$ 는 기약이다. 기약공간 위의 상수층은 무르므로 $i\ge1$ 에서 $H^i=0$ 이다. $H^0$ 만 남아 곡선의 종수가 나오지 않는다.
 

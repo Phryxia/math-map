@@ -7,6 +7,8 @@
 1. $Ax=b$, $x\ge 0$ 인 $x\in\mathbb R^n$ 이 존재한다.
 2. $A^{\mathsf T}y\ge 0$, $b^{\mathsf T}y\lt 0$ 인 $y\in\mathbb R^m$ 이 존재한다.
 
+연립식 $x_1+x_2=-1$, $x_1,x_2\ge0$ 은 해가 없고, $y=1$ 이 $A^{\mathsf T}y=(1,1)\ge0$, $b^{\mathsf T}y=-1\lt 0$ 으로 그 사실을 확인해 준다.
+
 선형 부등식계에 해가 없으면 그 사실을 확인해 주는 벡터 $y$ 가 있다는 정리이고, [선형계획법](linear-programming.md)의 강쌍대성이 이 정리에서 증명된다. 두 조건 가운데 정확히 하나가 성립한다는 꼴의 정리를 대안 정리(theorem of the alternative)라 한다.
 
 # 직관
