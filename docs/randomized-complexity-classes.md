@@ -2,11 +2,13 @@
 
 # 개요
 
-**무작위 복잡도 부류(randomized complexity classes)** 는 무작위 비트를 읽는 다항시간 알고리즘이 정해진 오류 확률 아래에서 판정하는 언어들의 부류다. 한쪽 답에서만 틀릴 수 있는 RP(randomized polynomial time)와 coRP, 틀리지 않고 기대 시간만 다항인 ZPP(zero-error probabilistic polynomial time), 양쪽 답에서 $1/3$ 이하의 확률로 틀릴 수 있는 BPP(bounded-error probabilistic polynomial time)가 기본이다.
-
-포함 관계는 $\mathrm P\subseteq\mathrm{ZPP}=\mathrm{RP}\cap\mathrm{coRP}$, $\mathrm{RP}\subseteq\mathrm{NP}\cap\mathrm{BPP}$ 다. [P 대 NP 문제](p-np.md)의 결정적 부류에 무작위성을 더한 것이고, 오류 확률을 반복으로 줄이는 데 [집중부등식](concentration-inequalities.md)을 쓴다.
+**무작위 복잡도 부류(randomized complexity classes)** 는 동전을 던져 가며 다항시간에 답을 내는 알고리즘이 작은 확률로 틀리는 것을 허용할 때 풀리는 문제들의 부류다. $n\times n$ 행렬 $A,B,C$ 에서 $AB=C$ 인지 확인하려면 곱 $AB$ 를 계산하는 데 곱셈이 $n^3$ 번 들지만, 성분이 $0$ 또는 $1$ 인 벡터 $x$ 를 무작위로 골라 $A(Bx)$ 와 $Cx$ 를 비교하면 곱셈 $3n^2$ 번으로 끝나고 틀릴 확률은 절반 이하다. 이 부류들은 어느 쪽 답에서 틀릴 수 있는지와 틀릴 확률의 한도로 문제를 나누고, 같은 검사를 여러 번 되풀이해 틀릴 확률을 원하는 만큼 줄인다.
 
 # 직관
+
+무작위 복잡도 부류는 무작위 비트를 읽는 다항시간 알고리즘이 정해진 오류 확률 아래에서 판정하는 언어들의 부류다. 한쪽 답에서만 틀릴 수 있는 RP(randomized polynomial time)와 coRP, 틀리지 않고 기대 시간만 다항인 ZPP(zero-error probabilistic polynomial time), 양쪽 답에서 $1/3$ 이하의 확률로 틀릴 수 있는 BPP(bounded-error probabilistic polynomial time)가 기본이다.
+
+포함 관계는 $\mathrm P\subseteq\mathrm{ZPP}=\mathrm{RP}\cap\mathrm{coRP}$, $\mathrm{RP}\subseteq\mathrm{NP}\cap\mathrm{BPP}$ 다. [P 대 NP 문제](p-np.md)의 결정적 부류에 무작위성을 더한 것이고, 오류 확률을 반복으로 줄이는 데 [집중부등식](concentration-inequalities.md)을 쓴다.
 
 $n\times n$ 정수 행렬 $A,B,C$ 가 주어졌을 때 $AB=C$ 인지 확인하려 한다. $AB$ 를 계산하면 곱셈이 $n^3$ 번 든다. 대신 성분이 $0$ 또는 $1$ 인 벡터 $x$ 를 무작위로 골라 $A(Bx)$ 와 $Cx$ 를 비교하면, 행렬과 벡터의 곱 세 번이라 곱셈이 $3n^2$ 번이다.
 

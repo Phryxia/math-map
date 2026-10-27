@@ -2,11 +2,13 @@
 
 # 개요
 
-**다항 계층(polynomial hierarchy, PH)** 은 다항 길이의 증거에 대한 존재 한정사와 전칭 한정사를 정해진 횟수만큼 번갈아 쓴 다항시간 술어로 정의되는 언어 부류들의 층이다. 첫 층의 $\Sigma_1^{\mathrm p}$ 는 NP(nondeterministic polynomial time), $\Pi_1^{\mathrm p}$ 는 coNP 이고, 층을 모두 합친 것이 PH 다. A. R. Meyer 와 L. J. Stockmeyer 가 1972 년에 도입했다[^1].
-
-[NP-완전성과 Cook–Levin 정리](np-completeness.md)의 충족가능성 문제(satisfiability, SAT)가 한정사 하나짜리 문제라면, 한정사를 $k$ 번 번갈아 쓴 논리식의 참 판정이 $k$ 번째 층의 완전 문제다. 계산 가능성 이론의 [산술적 계층](arithmetical-hierarchy.md)에서 결정 가능한 술어를 다항시간 술어로, 무한한 한정사를 다항 길이의 한정사로 바꾼 꼴이다.
+**다항 계층(polynomial hierarchy, PH)** 은 "어떤 증거가 있는가" 와 "모든 반론에 대해 그러한가" 를 정해진 횟수만큼 번갈아 묻는 문제들을 그 횟수에 따라 층으로 나눈 것이다. 논리식 $\varphi$ 와 같은 값을 주는 길이 $s$ 이하의 논리식이 있는지 묻는 문제는 "그런 $\psi$ 가 있고, 모든 할당에서 $\psi$ 와 $\varphi$ 의 값이 같은가" 의 꼴이라, 증거 하나로 확인되는 NP(nondeterministic polynomial time) 문제보다 한 단계 위에 있다. 다항 계층은 "있다" 와 "모든" 이 몇 번 번갈아 나오는지로 문제의 어려움을 재고, 각 층에 그 층을 대표하는 완전 문제를 둔다.
 
 # 직관
+
+다항 계층은 다항 길이의 증거에 대한 존재 한정사와 전칭 한정사를 정해진 횟수만큼 번갈아 쓴 다항시간 술어로 정의되는 언어 부류들의 층이다. 첫 층의 $\Sigma_1^{\mathrm p}$ 는 NP, $\Pi_1^{\mathrm p}$ 는 coNP 이고, 층을 모두 합친 것이 PH 다. A. R. Meyer 와 L. J. Stockmeyer 가 1972 년에 도입했다[^1].
+
+[NP-완전성과 Cook–Levin 정리](np-completeness.md)의 충족가능성 문제(satisfiability, SAT)가 한정사 하나짜리 문제라면, 한정사를 $k$ 번 번갈아 쓴 논리식의 참 판정이 $k$ 번째 층의 완전 문제다. 계산 가능성 이론의 [산술적 계층](arithmetical-hierarchy.md)에서 결정 가능한 술어를 다항시간 술어로, 무한한 한정사를 다항 길이의 한정사로 바꾼 꼴이다.
 
 논리식 $\varphi$ 와 수 $s$ 가 주어졌을 때, $\varphi$ 와 모든 할당에서 값이 같고 길이가 $s$ 이하인 논리식 $\psi$ 가 있는지 묻는다. $\psi$ 를 받아도 검증자는 $\psi$ 와 $\varphi$ 가 모든 할당에서 같은지 확인해야 하고, 할당이 $2^n$ 개라 하나씩 확인할 수 없다. 이 확인은 "같지 않은 할당이 있다" 의 부정이므로 coNP 의 일이다.
 
