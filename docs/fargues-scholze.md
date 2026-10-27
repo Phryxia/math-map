@@ -2,7 +2,11 @@
 
 # 개요
 
-**Fargues–Scholze 기하화(Fargues–Scholze geometrization)** 는 $p$ 진체 위 환원군의 국소 Langlands 대응을 Fargues–Fontaine 곡선 위의 $G$ 다발 모듈라이 $\mathrm{Bun}\_G$ 의 기하로 구성하는 이론이다. [기하학적 Langlands 강령](geometric-langlands.md)은 곡선 $X$ 위의 다발 모듈라이 $\mathrm{Bun}\_G$ 위에서 전개된다. 함수체 쪽에는 곡선이 실제로 있다. $\mathbb Q_p$ 같은 $p$ 진체에는 곡선이 없다. 국소체 하나는 점 하나처럼 보이고, 그 위에 다발을 정의할 공간이 없다.
+**Fargues–Scholze 기하화(Fargues–Scholze geometrization)** 는 $p$ 진체 위 환원군의 국소 Langlands 대응을 Fargues–Fontaine 곡선 위의 $G$ 다발 모듈라이 $\mathrm{Bun}\_G$ 의 기하로 구성하는 이론이다. 유한체 위 곡선의 함수체에서는 [기하학적 Langlands 강령](geometric-langlands.md)이 곡선 위의 다발로 표현을 다루지만, $\mathbb Q_p$ 같은 $p$ 진체 하나는 점 하나처럼 보여서 다발을 놓을 곡선이 없다. Fargues–Scholze 기하화는 $p$ 진 주기환에서 곡선을 먼저 만들고, 그 위의 다발과 층으로 모든 환원군의 표현에 $L$ 매개변수를 붙인다.
+
+# 직관
+
+기하학적 Langlands 강령은 곡선 $X$ 위의 다발 모듈라이 $\mathrm{Bun}\_G$ 위에서 전개된다. 함수체 쪽에는 곡선이 실제로 있다. $\mathbb Q_p$ 같은 $p$ 진체에는 곡선이 없다. 국소체 하나는 점 하나처럼 보이고, 그 위에 다발을 정의할 공간이 없다.
 
 Fargues 와 Scholze 는 곡선을 먼저 만들었다[^1]. Fargues–Fontaine 곡선
 
@@ -10,7 +14,7 @@ $$
 X_{\mathrm{FF}}=\mathrm{Proj}\Bigl(\bigoplus_{d\ge0}B^{\varphi=p^d}\Bigr)
 $$
 
-는 $p$ 진 주기환에서 대수기하의 곡선처럼 행동하는 대상을 뽑아낸 것이다. 이 곡선 위에서 $G$ 다발의 모듈라이 $\mathrm{Bun}\_G$ 를 만들고, 그 위의 에탈[층](sheaves.md) [범주](category.md)를 보면 $G(\mathbb Q_p)$ 의 스무스 표현론이 통째로 들어 있다. 국소 Langlands 대응을 기하학적 Langlands 의 $p$ 진 판본으로 다시 쓴 것이 **Fargues–Scholze 기하화(Fargues–Scholze geometrization)** 다.
+는 $p$ 진 주기환에서 대수기하의 곡선처럼 행동하는 대상을 뽑아낸 것이다. 이 곡선 위에서 $G$ 다발의 모듈라이 $\mathrm{Bun}\_G$ 를 만들고, 그 위의 에탈[층](sheaves.md) [범주](category.md)를 보면 $G(\mathbb Q_p)$ 의 스무스 표현론이 통째로 들어 있다. 국소 Langlands 대응을 기하학적 Langlands 의 $p$ 진 판본으로 다시 쓴 것이 Fargues–Scholze 기하화다.
 
 $$
 D\bigl(\mathrm{Bun}\_G,\Lambda\bigr)\ \supset\ \text{기본 층화}\ \longleftrightarrow\ \mathrm{Rep}\bigl(G(\mathbb Q_p)\bigr)
@@ -19,8 +23,6 @@ $$
 임의의 축소군 $G$ 와 임의의 기약 스무스 표현 $\pi$ 에 대해, 반단순 $L$ 매개변수 $\varphi_\pi$ 가 **무조건적으로** 구성된다. 그전까지 국소 Langlands 는 $\mathrm{GL}\_n$ 과 일부 고전군에서만 알려져 있었다.
 
 [p 진 Hodge 이론](p-adic-hodge-theory.md)의 재료가 여기에 그대로 쓰인다. $B_{\mathrm{cris}}$ 와 $A_{\mathrm{inf}}$ 와 틸팅과 perfectoid 가 전부 곡선의 부품으로 쓰인다. 그 이론에서 손으로 다루던 주기환들이 여기서는 한 곡선의 국소 구조로 정리된다.
-
-# 직관
 
 $p$ 진 Hodge 이론의 isocrystal 을 하나 본다. $K_0=W(\overline{\mathbb F}\_p)\lbrack 1/p\rbrack$ 위의 2차원 벡터공간 $V=K_0e_1\oplus K_0e_2$ 에 Frobenius 준선형 사상 $\varphi$ 를 $\varphi(e_1)=e_2$, $\varphi(e_2)=pe_1$ 로 준다. 행렬식의 $p$ 진 부치가 $1$ 이고 계수가 $2$ 이므로 기울기는 $1/2$ 이다. 기울기가 정수가 아니어서 $\varphi$ 가 보존하는 1차원 부분공간이 없고, Dieudonné–Manin 분류는 모든 isocrystal 을 기울기 $\lambda\in\mathbb Q$ 의 이런 단순 조각의 직합으로 적는다.
 
@@ -124,7 +126,7 @@ $$
 
 ## 기술적 기반
 
-증명은 다이아몬드와 v 스택 위의 에탈 코호몰로지 전체를 새로 세우는 작업 위에 있다. 기본 보조정리들, 곧 매끄러운 기저 변경, 유한성, 쌍대성이 이 범주에서 성립함을 보여야 했고, 그 작업이 논문 분량의 절반 이상을 차지한다. $p$ 진 기하에서 대수기하의 표준적인 보조정리들을 쓸 수 있게 된 것이 이 작업의 부수적 결과다.
+증명은 다이아몬드와 v 스택 위의 에탈 코호몰로지 전체를 새로 세우는 작업 위에 있다. [기본 보조정리](fundamental-lemma.md)들, 곧 매끄러운 기저 변경, 유한성, 쌍대성이 이 범주에서 성립함을 보여야 했고, 그 작업이 논문 분량의 절반 이상을 차지한다. $p$ 진 기하에서 대수기하의 표준적인 보조정리들을 쓸 수 있게 된 것이 이 작업의 부수적 결과다.
 
 # 활용
 

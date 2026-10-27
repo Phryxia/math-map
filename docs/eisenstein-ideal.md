@@ -2,7 +2,11 @@
 
 # 개요
 
-**Eisenstein 아이디얼(Eisenstein ideal)** 은 무게 2, 레벨 $N$ 의 Hecke 대수에서 $N$ 을 나누지 않는 소수 $\ell$ 마다 $T_\ell-1-\ell$ 을 모아 생성한 아이디얼이다. $\mathbb Q$ 위 [타원곡선](elliptic-curves.md)의 비틀림 부분군으로 무엇이 가능한지는 1977 년 Mazur 의 정리 전까지 유한성조차 증명되지 않았다[^1].
+**Eisenstein 아이디얼(Eisenstein ideal)** 은 무게 2, 레벨 $N$ 의 Hecke 대수에서 $N$ 을 나누지 않는 소수 $\ell$ 마다 $T_\ell-1-\ell$ 을 모아 생성한 아이디얼이다. 유리수 계수 [타원곡선](elliptic-curves.md) 위에 위수 $11$ 인 유리점이 있을 수 있는지 묻는 문제는 곡선 하나를 보아서는 답할 수 없고, 그런 곡선 전체를 매개하는 모듈러 곡선의 유리점 문제가 된다. Mazur 는 Eisenstein 아이디얼로 모듈러 곡선의 Jacobian 의 산술을 계산해 그런 유리점이 없음을 보이고, 가능한 비틀림군이 15 개뿐임을 증명했다.
+
+# 직관
+
+$\mathbb Q$ 위 타원곡선의 비틀림 부분군으로 무엇이 가능한지는 1977 년 Mazur 의 정리 전까지 유한성조차 증명되지 않았다[^1].
 
 **Mazur 의 비틀림점 정리(Mazur's torsion theorem).** $E/\mathbb Q$ 의 비틀림군은 다음 15 개 중 하나다.
 
@@ -20,8 +24,6 @@ I=\big(T_\ell-1-\ell\ :\ \ell\nmid N\big)\subset\mathbb T
 $$
 
 가 [Eisenstein 급수](eisenstein-series.md)의 고윳값을 자른다. $J_0(N)$ 의 $I$ 소멸 부분 $J_0(N)[I]$ 는 첨점의 차이가 생성하는 유한 순환군과 밀접하고, 그 구조를 계산하면 유리점의 존재가 모순으로 이어진다. [Herbrand–Ribet](herbrand-ribet.md) 의 Eisenstein 합동이 표현을 가약으로 만드는 원리가 여기서는 Jacobian 의 산술을 통제한다.
-
-# 직관
 
 $(E,P)$ 를 타원곡선과 위수 $N$ 인 점의 쌍이라 하면 그 동형류가 $Y_1(N)$ 의 점이므로
 
