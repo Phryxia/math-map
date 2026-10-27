@@ -2,9 +2,11 @@
 
 # 개요
 
-**Jacquet–Langlands 대응(Jacquet–Langlands correspondence)** 은 [사원수 대수](quaternion-algebras.md)의 곱셈군의 자기동형 표현을 $\mathrm{GL}\_2$ 의 첨점 표현으로 보내는 대응이다.
+**Jacquet–Langlands 대응(Jacquet–Langlands correspondence)** 은 [사원수 대수](quaternion-algebras.md)의 곱셈군의 자기동형 표현을 $\mathrm{GL}\_2$ 의 첨점 표현으로 보내는 대응이다. $\mathrm{GL}\_2$ 의 첨점형식은 콤팩트하지 않은 공간 위의 함수여서, Hecke 고윳값을 구하려면 연속 스펙트럼과 [Eisenstein 급수](eisenstein-series.md)를 함께 다뤄야 한다. 정부호 사원수 대수 쪽에서는 같은 정보가 유한 집합 위의 함수로 나타나고, 고윳값 계산이 유한 행렬의 계산이 된다. Jacquet–Langlands 대응은 두 쪽의 표현이 Hecke 고윳값을 보존하며 짝지어짐을 보여, $\mathrm{GL}\_2$ 의 문제를 그 유한 계산으로 옮긴다.
 
-사원수 대수 $B/F$ 의 곱셈군은 $\mathrm{GL}\_2$ 의 **내부형식**이다. 대수적으로 닫힌 체 위에서는 $B\cong M_2$ 이므로 두 군이 같고 $F$ 위에서만 달라진다. 두 군의 자기동형 표현은 사실상 같고, 이것이 **Jacquet–Langlands 대응**이다.
+# 직관
+
+사원수 대수 $B/F$ 의 곱셈군은 $\mathrm{GL}\_2$ 의 **내부형식**이다. 대수적으로 닫힌 체 위에서는 $B\cong M_2$ 이므로 두 군이 같고 $F$ 위에서만 달라진다. 두 군의 자기동형 표현은 Jacquet–Langlands 대응으로 짝지어진다.
 
 $$
 \mathrm{JL}:\ \lbrace\text{$B^\times(\mathbb A)$ 의 자기동형 표현}\rbrace
@@ -16,9 +18,7 @@ $$
 
 양쪽 대상의 생김새는 다르다. $v\in\Sigma$ 에서 $B_v^\times$ 는 중심을 나누면 콤팩트하므로 기약 표현이 유한차원인데, 반대편 $\mathrm{GL}\_2(F_v)$ 에서 같은 자리의 표현은 무한차원 이산계열이다. 1 차원 자명 표현과 무한차원 Steinberg 표현이 같은 이름표를 단다.
 
-실용적 가치는 방향에 있다. $\Sigma\ne\varnothing$ 이면 $B^\times$ 쪽 몫공간이 콤팩트해서 첨점도 [Eisenstein 급수](eisenstein-series.md)도 연속 스펙트럼도 없고, 모든 것이 이산이며 유한차원 선형대수로 계산된다. JL(Jacquet–Langlands) 대응은 어려운 해석이 사는 세계의 문제를 유한 행렬의 문제로 옮긴다. [Waldspurger 정리](waldspurger-formula.md)가 사원수 대수 위에서 주기를 재는 것도 같은 이유다.
-
-# 직관
+실용적 가치는 방향에 있다. $\Sigma\ne\varnothing$ 이면 $B^\times$ 쪽 몫공간이 콤팩트해서 첨점도 Eisenstein 급수도 연속 스펙트럼도 없고, 모든 것이 이산이며 유한차원 선형대수로 계산된다. JL(Jacquet–Langlands) 대응은 어려운 해석이 필요한 문제를 유한 행렬의 문제로 옮긴다. [Waldspurger 정리](waldspurger-formula.md)가 사원수 대수 위에서 주기를 재는 것도 같은 이유다.
 
 $\mathrm{GL}\_2$ 의 자기동형 형식은 [모듈러 곡선](modular-curves.md) 위에 산다. 모듈러 곡선은 비콤팩트하고 첨점이 있어 $L^2$ 스펙트럼에 연속 부분이 생기고 Eisenstein 급수를 따로 다뤄야 한다. 사원수 대수 $B$ 가 어딘가에서 분지되면 $B^\times(F)\backslash B^\times(\mathbb A)$ 를 중심으로 나눈 몫이 콤팩트해진다. $B$ 에 영인자가 없으므로 멱단원소도 없고, 멱단원소가 없으면 첨점을 만들 포물부분군이 없다.
 
