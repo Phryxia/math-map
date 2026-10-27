@@ -2,11 +2,13 @@
 
 # 개요
 
-**초산술적 계층(hyperarithmetical hierarchy)** 은 공집합의 [Turing 도약](turing-degrees.md)을 계산가능한 [서수](ordinals.md) 단계까지 반복해 얻는 집합의 계층이다. [산술적 계층](arithmetical-hierarchy.md)은 도약을 유한 번 반복해 얻는 집합을 층으로 나눈다.
-
-초산술적 계층의 집합 전체가 [해석적 계층](analytical-hierarchy.md)의 $\Delta^1_1$ 과 같다.
+**초산술적 계층(hyperarithmetical hierarchy)** 은 [정지 문제](halting-problem.md)를 푸는 기계에 다시 그 기계의 정지 문제를 묻는 일을 무한 번 넘게 되풀이해 얻는 집합의 계층이다. 자연수에 대한 산술 문장의 참거짓을 모두 담은 집합은 이 되풀이를 유한 번 해서는 얻지 못하고, $\omega$ 번째 단계에서 얻는다. 초산술적 계층은 되풀이의 단계를 계산가능한 [서수](ordinals.md)로 매겨, 각 단계에서 계산되는 집합으로 집합의 복잡도를 잰다.
 
 # 직관
+
+초산술적 계층은 공집합의 [Turing 도약](turing-degrees.md)을 계산가능한 서수 단계까지 반복해 얻는 집합의 계층이다. [산술적 계층](arithmetical-hierarchy.md)은 도약을 유한 번 반복해 얻는 집합을 층으로 나눈다.
+
+초산술적 계층의 집합 전체가 [해석적 계층](analytical-hierarchy.md)의 $\Delta^1_1$ 과 같다.
 
 [정지 문제](halting-problem.md) $\varnothing'$ 을 신탁으로 주고 다시 정지 문제를 물으면 $\varnothing''$ 이 나온다. 이것을 $n$ 번 되풀이한 $\varnothing^{(n)}$ 은 Post 정리에 따라 $\Sigma^0\_n$ 완전이고, 산술적 계층의 $n$ 번째 층이 이 집합으로 설명된다. $n$ 을 다 쓰면 층이 떨어진다. 그래도 다음 집합을 적을 수는 있다.
 

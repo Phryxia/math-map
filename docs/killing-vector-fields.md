@@ -2,11 +2,13 @@
 
 # 개요
 
-**Killing 벡터장(Killing vector field)** 은 흐름이 [Riemann 계량](riemannian-metrics.md)을 보존하는 벡터장이다. 계량의 대칭을 좌표 없이 적은 것이고, 하나가 있으면 [측지선](geodesics.md)을 따라 상수인 함수가 하나 나온다.
-
-[등거리변환군](isometry-groups.md)의 [Lie 대수](lie-algebras.md)가 Killing 벡터장 전체이므로, 이 벡터장을 세는 일이 다양체가 가진 대칭을 세는 일이다.
+**Killing 벡터장(Killing vector field)** 은 그 방향으로 공간을 조금씩 밀어도 거리가 변하지 않는 벡터장이다. 구면을 한 축을 중심으로 돌리면 모든 점 사이의 거리가 그대로이고, 각 점에서 돌아가는 방향을 가리키는 화살표가 Killing 벡터장 하나를 이룬다. Killing 벡터장은 공간의 연속 대칭을 벡터장으로 적어, 대칭의 수를 세고 [측지선](geodesics.md)을 따라 보존되는 양을 얻는 데 쓴다.
 
 # 직관
+
+Killing 벡터장은 흐름이 [Riemann 계량](riemannian-metrics.md)을 보존하는 벡터장이다. 계량의 대칭을 좌표 없이 적은 것이고, 하나가 있으면 측지선을 따라 상수인 함수가 하나 나온다.
+
+[등거리변환군](isometry-groups.md)의 [Lie 대수](lie-algebras.md)가 Killing 벡터장 전체이므로, 이 벡터장을 세는 일이 다양체가 가진 대칭을 세는 일이다.
 
 평면의 극좌표 계량 $ds^2=dr^2+r^2d\theta^2$ 에는 $\theta$ 가 미분으로만 들어가고 계수에는 나오지 않는다. 측지선의 Lagrange 함수 $\frac12(\dot r^2+r^2\dot\theta^2)$ 도 그러므로 $\partial L/\partial\theta=0$ 이고, Euler–Lagrange 방정식에서 $r^2\dot\theta$ 가 측지선을 따라 상수다. 이 보존량은 $\theta$ 방향으로 옮기는 변환이 계량을 그대로 둔다는 사실에서 나왔다.
 

@@ -2,15 +2,17 @@
 
 # 개요
 
-**Jacobi 장(Jacobi field)** 은 측지선 $\gamma$ 를 따라 정의된 [벡터장](vector-fields.md) 가운데 Jacobi 방정식
+**Jacobi 장(Jacobi field)** 은 가까이 붙어 출발한 [측지선](geodesics.md)들이 얼마나 벌어지는지를 적는 [벡터장](vector-fields.md)이다. 구면의 북극에서 서로 다른 방향으로 출발한 두 경선은 처음에는 벌어지다가 적도를 지나면 가까워져 남극에서 만난다. Jacobi 장은 이 벌어짐을 [곡률](curvature.md)이 들어간 이계 미분방정식의 해로 계산해, 측지선이 언제 다시 만나는지와 곡률이 측지선에 주는 영향을 다룬다.
+
+# 직관
+
+Jacobi 장은 측지선 $\gamma$ 를 따라 정의된 벡터장 가운데 Jacobi 방정식
 
 $$
 D_t^2J+R(J,\dot\gamma)\dot\gamma=0
 $$
 
-을 만족하는 것이다. $D_t$ 는 $\gamma$ 를 따르는 공변미분이고 $R$ 은 Riemann 곡률 텐서다. Jacobi 장은 [측지선](geodesics.md)들의 한 매개변수 족을 [미분](derivative.md)한 것과 같고, 이웃한 측지선이 얼마나 벌어지는지를 [곡률](curvature.md)로 적는다.
-
-# 직관
+을 만족하는 것이다. $D_t$ 는 $\gamma$ 를 따르는 공변미분이고 $R$ 은 Riemann 곡률 텐서다. Jacobi 장은 측지선들의 한 매개변수 족을 [미분](derivative.md)한 것과 같고, 이웃한 측지선이 얼마나 벌어지는지를 곡률로 적는다.
 
 구면 $S^2$ 의 북극에서 출발하는 경도선들은 모두 측지선이다. 출발 방향의 각이 $s$ 만큼 다른 두 경도선은 거리 $t$ 만큼 간 뒤 $\sin t\cdot s$ 쯤 떨어져 있다. 두 경도선은 처음에 벌어지다가 $t=\pi/2$ 인 적도에서 가장 멀어지고, $t=\pi$ 인 남극에서 다시 만난다.
 

@@ -2,13 +2,15 @@
 
 # 개요
 
-**Hida 이론(Hida theory)** 은 무게를 변수로 두어 보통 모듈러 형식을 하나의 $p$ 진 족으로 묶는다. 무게 $k$ 마다 따로 놓여 있던 [모듈러 형식](modular-forms.md)의 공간을 $U_p$ 의 고윳값이 $p$ 진 단위원인 부분으로 자르면, 그 조각들이 [Iwasawa 대수](iwasawa-algebra.md) $\Lambda=\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 위의 유한 평탄 가군 하나의 특수화로 나온다.
-
-그 가군이 **Hida 대수** $\mathbf h$ 이고, $\mathbf h$ 의 준동형 하나가 무게를 움직여도 따라 움직이는 고유형식 한 줄을 준다. 각 형식의 [Hecke 작용소](hecke-operators.md) 고윳값은 무게의 $p$ 진 해석함수가 되고, [Galois 표현](galois-representations.md)도 족 전체에 걸쳐 하나로 붙는다.
+**Hida 이론(Hida theory)** 은 무게가 서로 다른 [모듈러 형식](modular-forms.md)들을 무게를 변수로 하는 하나의 족으로 묶는 이론이다. 무게 $k$ 의 [Eisenstein 급수](eisenstein-series.md)의 $n$ 번째 계수는 $n$ 의 약수들의 $k-1$ 제곱의 합인데, $n=2$ 이면 무게 $4$ 에서 $1+2^3=9$, 무게 $8$ 에서 $1+2^7=129$ 이고 두 값의 차 $120$ 이 $5$ 의 배수다. Hida 이론은 이런 합동을 무게의 $p$ 진 연속 변화로 보고, $U_p$ 고윳값이 $p$ 진 단위원인 형식들의 계수를 무게의 $p$ 진 해석함수로 만들어 한 족의 특수화로 계산한다.
 
 # 직관
 
-무게 $k$ 의 모듈러 형식과 무게 $k'$ 의 모듈러 형식은 서로 다른 공간에 있다. 두 공간 사이에는 선형사상이 없으므로 형식끼리 비교할 길이 없다. 그런데 Hecke 고윳값은 수이므로 비교할 수 있다. 무게를 바꾸면 고윳값이 어떻게 바뀌는지 [Eisenstein 급수](eisenstein-series.md)로 계산한다. 소수 $\ell$ 에 대해 다음이다.
+Hida 이론은 무게를 변수로 두어 보통 모듈러 형식을 하나의 $p$ 진 족으로 묶는다. 무게 $k$ 마다 따로 놓여 있던 모듈러 형식의 공간을 $U_p$ 의 고윳값이 $p$ 진 단위원인 부분으로 자르면, 그 조각들이 [Iwasawa 대수](iwasawa-algebra.md) $\Lambda=\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 위의 유한 평탄 가군 하나의 특수화로 나온다.
+
+그 가군이 **Hida 대수** $\mathbf h$ 이고, $\mathbf h$ 의 준동형 하나가 무게를 움직여도 따라 움직이는 고유형식 한 줄을 준다. 각 형식의 [Hecke 작용소](hecke-operators.md) 고윳값은 무게의 $p$ 진 해석함수가 되고, [Galois 표현](galois-representations.md)도 족 전체에 걸쳐 하나로 붙는다.
+
+무게 $k$ 의 모듈러 형식과 무게 $k'$ 의 모듈러 형식은 서로 다른 공간에 있다. 두 공간 사이에는 선형사상이 없으므로 형식끼리 비교할 길이 없다. 그런데 Hecke 고윳값은 수이므로 비교할 수 있다. 무게를 바꾸면 고윳값이 어떻게 바뀌는지 Eisenstein 급수로 계산한다. 소수 $\ell$ 에 대해 다음이다.
 
 $$
 T_\ell E_k=(1+\ell^{k-1})E_k

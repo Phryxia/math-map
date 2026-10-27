@@ -2,15 +2,17 @@
 
 # 개요
 
-**Hirzebruch 부호수 정리(Hirzebruch signature theorem)** 는 $4k$ 차원 닫힌 방향 다양체의 [교차형식](intersection-form.md) 부호수를 [Pontryagin 류](pontryagin-classes.md)의 다항식으로 적는다.
+**Hirzebruch 부호수 정리(Hirzebruch signature theorem)** 는 다양체 안의 부분다양체들이 만나는 방식에서 얻은 정수를 그 다양체의 접공간에서 계산하는 공식이다. 복소 사영평면 $\mathbb{CP}^2$ 에서 두 복소 직선은 한 점에서 만나고, 이 교차 수에서 부호수 $1$ 이 나온다. 정리는 이 값이 접공간에서 계산한 Pontryagin 수 $3$ 의 $1/3$ 과 같음을 보이고, 이 관계를 $4k$ 차원 다양체로 넓혀 위상에서 정한 부호수를 접다발의 [특성류](characteristic-classes.md)로 계산한다.
+
+# 직관
+
+Hirzebruch 부호수 정리는 $4k$ 차원 닫힌 방향 다양체의 [교차형식](intersection-form.md) 부호수를 [Pontryagin 류](pontryagin-classes.md)의 다항식으로 적는다.
 
 $$
 \mathrm{sign}(M)=\langle L_k(p_1,\dots,p_k),\lbrack M\rbrack\rangle
 $$
 
-좌변은 중간 차수 코호몰로지의 컵곱 형식에서 양의 고유값 개수와 음의 고유값 개수의 차이이고, 우변은 접다발의 [특성류](characteristic-classes.md)를 기본류에 짝지은 수다. 증명은 양변이 [코보디즘](cobordism.md) 불변량임을 쓴다.
-
-# 직관
+좌변은 중간 차수 코호몰로지의 컵곱 형식에서 양의 고유값 개수와 음의 고유값 개수의 차이이고, 우변은 접다발의 특성류를 기본류에 짝지은 수다. 증명은 양변이 [코보디즘](cobordism.md) 불변량임을 쓴다.
 
 $4$ 차원에서 부호수를 계산하려면 $H^2(M;\mathbb R)$ 의 기저를 잡고 컵곱 행렬을 대각화해야 한다. 특성류로 같은 값을 얻을 수 있는지 보기 위해 $\mathbb{CP}^2$ 에서 두 수를 모두 계산한다.
 
