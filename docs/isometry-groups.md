@@ -2,11 +2,13 @@
 
 # 개요
 
-**등거리변환군(isometry group)** 은 Riemann 다양체 $(M,g)$ 에서 자기 자신으로 가는 등거리변환 전체가 합성으로 이루는 군 $\mathrm{Isom}(M,g)$ 이다. Myers–Steenrod 정리(Myers–Steenrod theorem)에 따르면 이 군은 [Lie 군](lie-groups.md)이고 $M$ 에 매끄럽게 작용한다.
-
-등거리변환은 한 점에서의 값과 미분으로 전체가 정해지므로 군의 차원은 $n(n+1)/2$ 를 넘지 않는다. 군의 [Lie 대수](lie-algebras.md)는 [Killing 벡터장](killing-vector-fields.md)으로 이루어진다.
+**등거리변환군(isometry group)** 은 공간의 거리를 바꾸지 않는 변환 전체가 이루는 군이다. 구면의 등거리변환은 중심을 지나는 축에 대한 회전과 반사이고, 이들은 각 세 개로 정해지는 $3$ 차원의 군을 이룬다. 등거리변환군은 이런 변환이 한 점에서의 값과 미분으로 정해진다는 사실로 군의 차원을 제한하고, 그 군을 [Lie 군](lie-groups.md)으로 다뤄 공간의 대칭을 분류한다.
 
 # 직관
+
+등거리변환군은 Riemann 다양체 $(M,g)$ 에서 자기 자신으로 가는 등거리변환 전체가 합성으로 이루는 군 $\mathrm{Isom}(M,g)$ 이다. Myers–Steenrod 정리(Myers–Steenrod theorem)에 따르면 이 군은 Lie 군이고 $M$ 에 매끄럽게 작용한다.
+
+등거리변환은 한 점에서의 값과 미분으로 전체가 정해지므로 군의 차원은 $n(n+1)/2$ 를 넘지 않는다. 군의 [Lie 대수](lie-algebras.md)는 [Killing 벡터장](killing-vector-fields.md)으로 이루어진다.
 
 단위구면 $S^2$ 의 등거리변환은 원점을 고정하는 $\mathbb R^3$ 의 직교변환이다. 회전축의 방향 $2$ 개와 회전각 $1$ 개를 고르므로 회전만 모아도 $3$ 차원의 군이 된다.
 
