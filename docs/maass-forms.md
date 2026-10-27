@@ -2,7 +2,11 @@
 
 # 개요
 
-**Maass 형식(Maass form)** 은 상반평면 위의 $\mathrm{SL}\_2(\mathbb Z)$ 불변 제곱적분가능 함수 가운데 쌍곡 Laplace 작용소의 고유함수인 첨점형식이다. [Eisenstein 급수](eisenstein-series.md)는 $L^2(\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H)$ 를 두 조각으로 가른다. 연속 스펙트럼은 실해석적 Eisenstein 급수 $E(z,\tfrac12+ir)$ 가 전부 만들어 내고, $\zeta$ 함수로 완전히 기술된다. 남는 것이 **이산 스펙트럼**이고, 그것을 이루는 함수가 Maass 형식이다.
+**Maass 형식(Maass form)** 은 상반평면 위의 $\mathrm{SL}\_2(\mathbb Z)$ 불변 제곱적분가능 함수 가운데 쌍곡 Laplace 작용소의 고유함수인 첨점형식이다. 곡면 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 위의 함수를 Laplace 작용소의 고유함수로 전개하면, [Eisenstein 급수](eisenstein-series.md)가 주는 연속 부분 말고 고윳값이 띄엄띄엄 놓인 부분이 남는다. 그 부분의 고유함수가 Maass 형식이고, 첫 고윳값 $\tfrac14+r_1^2$ 의 $r_1=9.533695\dots$ 는 수치 계산으로 구한다. Maass 형식은 정칙 모듈러 형식과 함께 $\mathrm{GL}\_2$ 의 자기동형 형식을 이루어 같은 $L$ 함수 이론으로 다뤄진다.
+
+# 직관
+
+Eisenstein 급수는 $L^2(\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H)$ 를 두 조각으로 가른다. 연속 스펙트럼은 실해석적 Eisenstein 급수 $E(z,\tfrac12+ir)$ 가 전부 만들어 내고, $\zeta$ 함수로 완전히 기술된다. 남는 것이 **이산 스펙트럼**이고, 그것을 이루는 함수가 Maass 형식이다.
 
 $$
 L^2(\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H)=\mathbb C\oplus\underbrace{\bigoplus_j\mathbb C\thinspace u_j}\_{\text{Maass 첨점형식}}\oplus\underbrace{\int_{(1/2)}E(z,s)\thinspace ds}\_{\text{Eisenstein}}
@@ -18,8 +22,6 @@ $$
 정칙 첨점형식은 명시적으로 구성되지만 Maass 첨점형식에는 그런 구성이 없다. $\Delta$ 와 무게 $12$ 를 알면 $\Delta(z)=q\prod(1-q^n)^{24}$ 를 쓸 수 있지만, $\mathrm{SL}\_2(\mathbb Z)$ 의 첫 Maass 고윳값 $r_1=9.533695\dots$ 는 수치 계산으로 높은 정밀도까지 구해졌고, 그 값이 만족하는 대수적 관계는 알려진 것이 없다[^5].
 
 [Selberg 대각합 공식](selberg-trace-formula.md)은 개별 고윳값을 하나도 주지 않으면서 그 개수를 센다. $L$ 함수와 [Langlands 강령](langlands-program.md)에서는 정칙 형식과 같은 자격으로 등장한다.
-
-# 직관
 
 자기동형 형식은 $L^2(\Gamma\backslash\mathrm{SL}\_2(\mathbb R))$ 를 $\mathrm{SL}\_2(\mathbb R)$ 의 기약 표현으로 분해할 때 나오는 조각들이고, $\mathrm{SL}\_2(\mathbb R)$ 의 유니터리 쌍대에는 서로 다른 계열이 있다.
 

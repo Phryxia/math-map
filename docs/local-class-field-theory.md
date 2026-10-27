@@ -2,9 +2,13 @@
 
 # 개요
 
-**국소 유체론(local class field theory)** 은 국소체 $K$ 의 아벨 확대를 $K^\times$ 의 유한지수 열린 부분군과 대응시키는 이론이다. [유체론](class-field-theory.md)은 수체 $K$ 의 아벨 확대를 $K$ 안의 산술로 분류한다. 존재정리로 모든 광선유체가 존재하지만 그 체를 만드는 다항식은 나오지 않는다. $K=\mathbb Q$ 에서 [원분체](cyclotomic-fields.md)라는 답은 Kronecker–Weber 정리가 주고, $K=\mathbb Q$ 와 허수 이차체를 뺀 수체에서는 그런 명시적 구성이 알려져 있지 않다[^2].
+**국소 유체론(local class field theory)** 은 국소체 $K$ 의 아벨 확대를 $K^\times$ 의 유한지수 열린 부분군과 대응시키는 이론이다. $\mathbb Q_p$ 에 $1$ 의 $p^n$ 제곱근을 붙이면 Galois 군이 $(\mathbb Z/p^n)^\times$ 인 확대가 나오는데, $\mathbb Q_p$ 의 아벨 확대가 이런 것과 비분기 확대로 전부 얻어지는지는 확대를 하나씩 보아서는 알 수 없다. 국소 유체론은 아벨 확대 전체를 $K^\times$ 의 부분군으로 분류하고, Lubin–Tate 형식군으로 그 확대를 명시적으로 만든다.
 
-한 자리에서는 사정이 다르다. [p 진수](p-adic-numbers.md)를 완비화해 얻는 국소체 $K$ 에 대해서는 아벨 확대 전체를 손으로 만들 수 있다. 이 분류가 **국소 유체론(local class field theory)** 이다.
+# 직관
+
+[유체론](class-field-theory.md)은 수체 $K$ 의 아벨 확대를 $K$ 안의 산술로 분류한다. 존재정리로 모든 광선유체가 존재하지만 그 체를 만드는 다항식은 나오지 않는다. $K=\mathbb Q$ 에서 [원분체](cyclotomic-fields.md)라는 답은 Kronecker–Weber 정리가 주고, $K=\mathbb Q$ 와 허수 이차체를 뺀 수체에서는 그런 명시적 구성이 알려져 있지 않다[^2].
+
+한 자리에서는 사정이 다르다. [p 진수](p-adic-numbers.md)를 완비화해 얻는 국소체 $K$ 에 대해서는 아벨 확대 전체를 손으로 만들 수 있다. 이 분류가 국소 유체론이다.
 
 $$
 \mathrm{Art}\_K\colon K^\times\longrightarrow\mathrm{Gal}(K^{\mathrm{ab}}/K),\qquad
@@ -14,8 +18,6 @@ $$
 왼쪽이 국소 상호법칙, 오른쪽이 Lubin–Tate 의 명시적 구성이다. 비분기 부분 $K^{\mathrm{ur}}$ 은 잔여체의 확대에서 오고, 나머지 분기 부분 $K_\pi$ 는 **형식군의 분할점**으로 만든다. $K=\mathbb Q_p$ 에서 이 구성은 $1$ 의 $p^n$ 제곱근을 붙이는 일이 된다.
 
 대역 상호사상은 국소 상호사상들의 곱으로 정의되고, 대역 상호법칙은 그 곱이 $K^\times$ 에서 자명하다는 정합성 조건이다.
-
-# 직관
 
 국소체 $K$ 의 확대 $L/K$ 에서는 잔여체가 커지거나(비분기) 소원이 잘게 쪼개지거나(분기) 둘뿐이고, 같은 이분법이 곱군의 분해 $K^\times\cong\pi^{\mathbb Z}\times\mathcal O^\times$ 에 나타난다. 이 분해가 Galois 쪽의 분해와 맞물려 소원 $\pi$ 는 Frobenius 로, 단원군 $\mathcal O^\times$ 는 [관성군](ramification-groups.md)으로 간다.
 

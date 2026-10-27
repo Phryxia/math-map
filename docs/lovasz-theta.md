@@ -2,7 +2,11 @@
 
 # 개요
 
-Lovász 세타 함수(Lovász theta function)는 [그래프](graphs.md) $G$ 마다 반정부호 계획으로 다항시간에 계산되는 수 $\vartheta(G)$ 이고, $\alpha(G)\le\vartheta(G)\le\chi(\bar G)$ 를 만족한다. 그래프의 최대 독립집합 크기 $\alpha(G)$ 와 채색수 $\chi(G)$ 는 둘 다 계산이 NP(nondeterministic polynomial time)-난해다. [그래프 색칠](graph-coloring.md)의 부등식 $\omega(G)\le\chi(G)$ 는 두 값 사이의 간격이 얼마든지 커질 수 있어 $\chi(G)$ 를 좁히지 못한다.
+**Lovász 세타 함수(Lovász theta function)** 는 [그래프](graphs.md) $G$ 마다 반정부호 계획으로 다항시간에 계산되는 수 $\vartheta(G)$ 이고, $\alpha(G)\le\vartheta(G)\le\chi(\bar G)$ 를 만족한다. 정점 다섯 개짜리 순환 $C_5$ 에서 서로 이웃하지 않는 정점은 많아야 둘이지만, $C_5$ 를 자기 자신과 곱한 그래프에서는 다섯 개를 고를 수 있어 한 자리마다 평균 $\sqrt5$ 개라는 값이 나온다. 이 값이 곱을 더 반복해도 커지지 않는지는 독립집합을 전부 찾아서는 확인할 수 없다. Lovász 세타 함수는 그 위의 상계를 볼록 최적화 하나로 주어, $C_5$ 에서 값이 정확히 $\sqrt5$ 임을 보인다.
+
+# 직관
+
+그래프의 최대 독립집합 크기 $\alpha(G)$ 와 채색수 $\chi(G)$ 는 둘 다 계산이 NP(nondeterministic polynomial time)-난해다. [그래프 색칠](graph-coloring.md)의 부등식 $\omega(G)\le\chi(G)$ 는 두 값 사이의 간격이 얼마든지 커질 수 있어 $\chi(G)$ 를 좁히지 못한다.
 
 Lovász 는 1979 년에 이 둘 사이에 끼면서 다항시간에 계산되는 양을 찾았다.
 
@@ -13,8 +17,6 @@ $$
 양 끝은 NP-난해이고 가운데는 [반정부호 계획법](semidefinite-programming.md)으로 임의의 정밀도까지 계산된다. 이 결과를 샌드위치 정리라 한다. 조합 최적화에서 반정부호 완화를 쓴 첫 사례이고 최대 절단의 0.878 근사보다 15 년 앞선다.
 
 $\vartheta$ 의 출처는 정보이론이다. Shannon 이 1956 년에 무오류 용량을 정의하면서 $C_5$ 의 값을 결정하지 못했고[^1], Lovász 가 $\vartheta$ 를 도구로 그 값이 $\sqrt5$ 임을 증명했다[^2].
-
-# 직관
 
 각 정점 $i$ 에 단위벡터 $u_i$ 를 배정해 인접하지 않은 두 정점의 벡터가 서로 직교하게 하고, 단위벡터 $c$ 를 하나 고정한다. 독립집합 $S$ 의 정점들은 서로 인접하지 않으므로 그 벡터들이 직교하고, 직교하는 단위벡터 $k$ 개에 대해 $\sum\langle c,u_i\rangle^2\le1$ 이다. 각 $\langle c,u_i\rangle^2$ 가 $1/t$ 이상이면 $k\le t$ 이므로 그 $t$ 의 최솟값이 $\alpha(G)$ 의 상계이고, 이 최솟값이 $\vartheta(G)$ 다. 정점을 고르거나 말거나 하는 0–1 결정이 정점에 벡터를 놓는 문제가 되어 실행가능 영역이 볼록해지고 최적화가 다항시간에 끝난다.
 
