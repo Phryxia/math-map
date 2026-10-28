@@ -2,11 +2,13 @@
 
 # 개요
 
-**Helly 정리(Helly's theorem)** 는 $\mathbb R^d$ 의 볼록집합 유한개 가운데 어느 $d+1$ 개를 골라도 공통점이 있으면 전체에 공통점이 있다는 정리다. Helly 가 1913 년에 증명했고 1923 년에 발표했다.[^1]
-
-같은 수 $d+1$ 이 [볼록성](convexity.md)의 Radon 정리(Radon's theorem)와 Carathéodory 정리(Carathéodory's theorem)에도 나타나고, 세 정리는 모두 $\mathbb R^d$ 의 점 $d+2$ 개가 아핀 종속이므로 증명된다.
+**Helly 정리(Helly's theorem)** 는 볼록집합 여러 개가 다 함께 겹치는지를 몇 개씩만 확인해서 알 수 있다는 정리다. 수직선 위에 구간 열 개가 있고 어느 두 구간을 골라도 겹친다고 하자. 왼쪽 끝점 가운데 가장 큰 것은 오른쪽 끝점 가운데 가장 작은 것보다 크지 않으므로, 그 점을 열 구간이 모두 지난다. Helly 정리는 $d$ 차원의 볼록집합에서 확인할 개수가 $d+1$ 임을 보인다.
 
 # 직관
+
+Helly 정리는 $\mathbb R^d$ 의 볼록집합 유한개 가운데 어느 $d+1$ 개를 골라도 공통점이 있으면 전체에 공통점이 있다는 정리다. Helly 가 1913 년에 증명했고 1923 년에 발표했다.[^1]
+
+같은 수 $d+1$ 이 [볼록성](convexity.md)의 Radon 정리(Radon's theorem)와 Carathéodory 정리(Carathéodory's theorem)에도 나타나고, 세 정리는 모두 $\mathbb R^d$ 의 점 $d+2$ 개가 아핀 종속이므로 증명된다.
 
 수직선 위의 닫힌 구간 $\lbrack a_1,b_1\rbrack,\dots,\lbrack a_n,b_n\rbrack$ 에서 어느 두 개도 겹친다고 한다. $a_i$ 가운데 가장 큰 것을 $a_k$, $b_j$ 가운데 가장 작은 것을 $b_l$ 이라 하면 $\lbrack a_k,b_k\rbrack$ 와 $\lbrack a_l,b_l\rbrack$ 이 겹치므로 $a_k\le b_l$ 이다. 그러면 점 $a_k$ 가 모든 구간에 들어 있다. $d=1$ 에서는 두 개씩 겹치는 것으로 충분하다.
 

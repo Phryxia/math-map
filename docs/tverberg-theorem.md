@@ -2,11 +2,13 @@
 
 # 개요
 
-**Tverberg 정리(Tverberg's theorem)** 는 $\mathbb R^d$ 의 점 $(r-1)(d+1)+1$ 개를 $r$ 개의 부분으로 나누어 그 볼록 껍질들이 공통점을 갖게 할 수 있다는 정리다. Tverberg 가 1966 년에 증명했다.[^1]
-
-$r=2$ 이면 점 $d+2$ 개를 둘로 나누는 Radon 정리(Radon's theorem)이고, Radon 정리는 [Helly 정리](helly-theorem.md)의 증명에 쓰인다. 점의 개수 $(r-1)(d+1)+1$ 은 더 줄일 수 없다.
+**Tverberg 정리(Tverberg's theorem)** 는 점이 충분히 많으면 그 점들을 여러 무리로 나누어 무리들의 볼록 껍질이 한 점에서 모두 겹치게 할 수 있다는 정리다. 평면의 점 $7$ 개는 세 무리로 나누어, 무리마다 만드는 다각형이나 선분이나 점이 모두 같은 점을 포함하게 할 수 있다. 점이 $6$ 개면 그렇게 나눌 수 없는 배치가 있다. 이 정리는 $d$ 차원에서 $r$ 무리로 나누는 데 필요한 점의 수가 $(r-1)(d+1)+1$ 임을 보인다.
 
 # 직관
+
+Tverberg 정리는 $\mathbb R^d$ 의 점 $(r-1)(d+1)+1$ 개를 $r$ 개의 부분으로 나누어 그 볼록 껍질들이 공통점을 갖게 할 수 있다는 정리다. Tverberg 가 1966 년에 증명했다.[^1]
+
+$r=2$ 이면 점 $d+2$ 개를 둘로 나누는 Radon 정리(Radon's theorem)이고, Radon 정리는 [Helly 정리](helly-theorem.md)의 증명에 쓰인다. 점의 개수 $(r-1)(d+1)+1$ 은 더 줄일 수 없다.
 
 수직선 위의 점 $1,2,\dots,2r-1$ 을 $r$ 개의 부분으로 나눈다. 가운데 점 $r$ 을 혼자 한 부분으로 두고, 나머지는 $\lbrace 1,2r-1\rbrace,\lbrace 2,2r-2\rbrace,\dots,\lbrace r-1,r+1\rbrace$ 로 짝짓는다. 짝마다 볼록 껍질은 구간이고 모든 구간이 점 $r$ 을 포함한다. 점 $2r-1$ 개로 $r$ 부분이 된다.
 
@@ -64,9 +66,9 @@ $N=(r-1)(d+1)$ 차원 단체 $\Delta^N$ 에서 $\mathbb R^d$ 로 가는 연속�
 
 # 활용
 
-- [중심점 정리](centerpoint-theorem.md)의 두 번째 증명이 Tverberg 점에서 나온다.
-- [Helly 정리](helly-theorem.md)의 증명에 $r=2$ 인 경우, 곧 Radon 정리를 쓴다.
-- 위상적 Tverberg 정리는 [Borsuk–Ulam 정리](borsuk-ulam.md)의 등변 위상수학(equivariant topology) 방법이 조합기하에 쓰이는 예다.
+- 중심점 정리의 두 번째 증명이 Tverberg 점에서 나온다.
+- Helly 정리의 증명에 $r=2$ 인 경우, 곧 Radon 정리를 쓴다.
+- 위상적 Tverberg 정리는 Borsuk–Ulam 정리의 등변 위상수학(equivariant topology) 방법이 조합기하에 쓰이는 예다.
 
 [^1]: H. Tverberg, *A generalization of Radon's theorem*, J. London Math. Soc. **41** (1966), 123–128.
 [^2]: I. Bárány, *A generalization of Carathéodory's theorem*, Discrete Math. **40** (1982), 141–152.

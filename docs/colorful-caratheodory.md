@@ -2,11 +2,13 @@
 
 # 개요
 
-**다색 Carathéodory 정리(colorful Carathéodory theorem)** 는 $\mathbb R^d$ 의 유한집합 $C_1,\dots,C_{d+1}$ 이 모두 원점을 볼록 껍질에 포함하면, 집합마다 점을 하나씩 골라 그 $d+1$ 개의 볼록 껍질이 원점을 포함하게 할 수 있다는 정리다. Bárány 가 1982 년에 증명했다.[^1]
-
-$C_1=\cdots=C_{d+1}$ 인 경우가 Carathéodory 정리(Carathéodory's theorem)이고, [Helly 정리](helly-theorem.md)에도 같은 꼴의 다색 판본이 있다.
+**다색 Carathéodory 정리(colorful Carathéodory theorem)** 는 색이 다른 점 무리가 저마다 원점을 둘러싸면, 색마다 점을 하나씩 골라 원점을 둘러싸는 도형을 만들 수 있다는 정리다. 평면에 빨강, 파랑, 초록 점 무리가 있고 각 무리의 볼록 껍질이 원점을 포함한다고 하자. 색마다 한 점씩 고른 삼각형 가운데 원점을 포함하는 것이 있는가가 문제다. 이 정리는 그런 삼각형이 반드시 있음을 보이고, 원점을 포함하지 않는 삼각형의 꼭짓점을 같은 색의 다른 점으로 바꾸어 원점까지의 거리를 줄이는 방법으로 그 삼각형을 찾는다.
 
 # 직관
+
+다색 Carathéodory 정리는 $\mathbb R^d$ 의 유한집합 $C_1,\dots,C_{d+1}$ 이 모두 원점을 볼록 껍질에 포함하면, 집합마다 점을 하나씩 골라 그 $d+1$ 개의 볼록 껍질이 원점을 포함하게 할 수 있다는 정리다. Bárány 가 1982 년에 증명했다.[^1]
+
+$C_1=\cdots=C_{d+1}$ 인 경우가 Carathéodory 정리(Carathéodory's theorem)이고, [Helly 정리](helly-theorem.md)에도 같은 꼴의 다색 판본이 있다.
 
 평면에서 빨간 점, 파란 점, 초록 점을 각각 몇 개씩 찍되, 색마다 그 색의 점들이 이루는 다각형이 원점을 둘러싸게 한다. 색마다 하나씩 골라 삼각형을 만들고 그 삼각형이 원점을 둘러싸게 하려 한다.
 
@@ -54,7 +56,7 @@ $\mathcal F_1=\cdots=\mathcal F_{d+1}$ 이면 Helly 정리다. Bárány 의 논�
 
 # 활용
 
-- [Tverberg 정리](tverberg-theorem.md)의 Sarkaria 증명은 $(d+1)(r-1)$ 차원에서 이 정리를 쓴다.
+- Tverberg 정리의 Sarkaria 증명은 $(d+1)(r-1)$ 차원에서 이 정리를 쓴다.
 - 첫째 선택 보조정리는 약한 $\varepsilon$ 그물(weak $\varepsilon$-net)의 구성에 쓰인다.[^2]
 
 [^1]: I. Bárány, *A generalization of Carathéodory's theorem*, Discrete Math. **40** (1982), 141–152.

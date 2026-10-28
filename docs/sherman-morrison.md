@@ -2,11 +2,13 @@
 
 # 개요
 
-**Sherman–Morrison 공식(Sherman–Morrison formula)** 은 역행렬을 이미 아는 행렬에 랭크 $1$ 행렬을 더했을 때 새 역행렬을 옛 역행렬과 벡터 두 개로 적는 공식이다. 행렬을 다시 뒤집지 않고 $n^2$ 번의 곱셈으로 역행렬을 갱신한다.
-
-[Schur 보수](schur-complement.md)를 블록 $\begin{pmatrix}A&u\cr v^{\mathsf T}&-1\end{pmatrix}$ 에 쓰면 이 공식이 나온다. 랭크가 $k$ 인 갱신으로 넓힌 것이 Woodbury 항등식이다.
+**Sherman–Morrison 공식(Sherman–Morrison formula)** 은 행렬을 조금 바꾸었을 때 새 역행렬을 옛 역행렬로부터 바로 적는 공식이다. $1000\times 1000$ 행렬의 역행렬을 구해 두었는데 성분 하나만 바뀌었다고 하자. 역행렬을 처음부터 다시 구하면 곱셈이 약 $10^9$ 번 든다. 성분 하나의 변화는 랭크 $1$ 행렬을 더하는 것이고, 이 공식은 옛 역행렬과 벡터 두 개만으로 약 $10^6$ 번의 곱셈에 새 역행렬을 구한다.
 
 # 직관
+
+Sherman–Morrison 공식은 역행렬을 이미 아는 행렬에 랭크 $1$ 행렬을 더했을 때 새 역행렬을 옛 역행렬과 벡터 두 개로 적는 공식이다. 행렬을 다시 뒤집지 않고 $n^2$ 번의 곱셈으로 역행렬을 갱신한다.
+
+[Schur 보수](schur-complement.md)를 블록 $\begin{pmatrix}A&u\cr v^{\mathsf T}&-1\end{pmatrix}$ 에 쓰면 이 공식이 나온다. 랭크가 $k$ 인 갱신으로 넓힌 것이 Woodbury 항등식이다.
 
 $n\times n$ 행렬 $A$ 의 [LU 분해](matrix-factorizations.md)를 이미 구해 두었고, 그것으로 $Ay=b$ 를 풀어 $y$ 를 손에 쥐고 있다. 이제 $A$ 의 $(1,1)$ 성분만 $\alpha$ 만큼 키운 행렬 $A+\alpha e_1e_1^{\mathsf T}$ 로 같은 우변을 풀어야 하는데, 분해를 처음부터 다시 하면 곱셈이 $n^3/3$ 번이다. 바뀐 것은 성분 하나이니 새 해 $x$ 를 $y$ 에서 얼마나 움직였는지로 적는다.
 
