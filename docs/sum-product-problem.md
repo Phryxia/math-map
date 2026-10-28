@@ -2,11 +2,13 @@
 
 # 개요
 
-**합-곱 문제(sum-product problem)** 는 실수의 유한집합 $A$ 에 대해 합집합 $A+A$ 와 곱집합 $A\cdot A$ 가 동시에 작을 수 없다는 것을 정량적으로 묻는 문제다. P. Erdős 와 E. Szemerédi 는 $\max(\lvert A+A\rvert,\lvert A\cdot A\rvert)\ge\lvert A\rvert^{1+c}$ 를 증명하고, 지수를 $2-\varepsilon$ 까지 올릴 수 있다고 추측했다[^1].
-
-G. Elekes 는 이 문제를 점과 직선의 접촉 문제로 옮겨 [Szemerédi–Trotter 정리](szemeredi-trotter.md)로 지수 $5/4$ 를 얻었다[^2]. 그 뒤의 개선도 평면의 기하를 쓴다.
+**합-곱 문제(sum-product problem)** 는 수의 유한집합에서 두 수의 합과 두 수의 곱을 모두 모았을 때, 두 모임이 함께 작을 수 없다는 것을 수량으로 묻는 문제다. $\lbrace 1,\dots,n\rbrace$ 에서는 합이 $2n-1$ 가지뿐이지만 곱은 거의 $n^2$ 가지이고, $\lbrace 2,4,\dots,2^n\rbrace$ 에서는 곱이 $2n-1$ 가지뿐이지만 합은 $n(n+1)/2$ 가지다. 이 문제에서는 합과 곱의 개수 가운데 큰 쪽이 $\lvert A\rvert^{1+c}$ 이상임을 보이고, 그 지수를 점과 직선의 만남을 세는 [Szemerédi–Trotter 정리](szemeredi-trotter.md)로 키운다.
 
 # 직관
+
+합-곱 문제는 실수의 유한집합 $A$ 에 대해 합집합 $A+A$ 와 곱집합 $A\cdot A$ 가 동시에 작을 수 없다는 것을 정량적으로 묻는 문제다. P. Erdős 와 E. Szemerédi 는 $\max(\lvert A+A\rvert,\lvert A\cdot A\rvert)\ge\lvert A\rvert^{1+c}$ 를 증명하고, 지수를 $2-\varepsilon$ 까지 올릴 수 있다고 추측했다[^1].
+
+G. Elekes 는 이 문제를 점과 직선의 접촉 문제로 옮겨 Szemerédi–Trotter 정리로 지수 $5/4$ 를 얻었다[^2]. 그 뒤의 개선도 평면의 기하를 쓴다.
 
 $A=\lbrace 1,\dots,n\rbrace$ 이면 두 수의 합은 $2$ 부터 $2n$ 까지 $2n-1$ 가지뿐이다. 두 수의 곱은 곱셈표에 나오는 수의 개수이고 $n^{2-o(1)}$ 가지다. $A=\lbrace 2,4,\dots,2^n\rbrace$ 이면 반대로 곱은 $2^2$ 부터 $2^{2n}$ 까지 $2n-1$ 가지뿐이고, 두 수의 합은 이진법 자리 두 개로 정해져 $n(n+1)/2$ 가지다.
 

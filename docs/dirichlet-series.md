@@ -2,11 +2,13 @@
 
 # 개요
 
-**Dirichlet 급수(Dirichlet series)** 는 수열 $(a_n)$ 에 대해 $D(s)=\sum\_{n\ge1}a_n n^{-s}$ 로 정의되는 급수다. 변수 $s$ 를 복소수로 보면 이 급수는 어떤 가로선의 오른쪽에서 수렴하고 그 영역에서 정칙이다.
-
-계수의 Dirichlet 합성곱이 급수의 곱에 대응하므로 산술함수 사이의 항등식이 함수 사이의 항등식으로 바뀐다. 거꾸로 $D(s)$ 의 극의 위치와 차수가 부분합 $\sum\_{n\le x}a_n$ 의 크기를 정하고, 이 대응이 [소수 정리](prime-number-theorem.md)의 해석적 증명이다.
+**Dirichlet 급수(Dirichlet series)** 는 수열 $(a_n)$ 의 항에 $n^{-s}$ 를 곱해 더한 급수 $\sum\_{n\ge 1}a_n n^{-s}$ 다. 약수의 개수 $d(n)$ 은 $1,2,2,3,\dots$ 처럼 들쭉날쭉해서, $n\le x$ 까지 더한 값의 크기를 항을 차례로 더해서는 알 수 없다. $d(n)$ 의 Dirichlet 급수는 $\zeta(s)^2$ 이고, 이 함수가 $s=1$ 에서 갖는 이중 극에서 부분합이 $x\log x$ 규모임을 읽는다.
 
 # 직관
+
+Dirichlet 급수는 수열 $(a_n)$ 에 대해 $D(s)=\sum\_{n\ge1}a_n n^{-s}$ 로 정의되는 급수다. 변수 $s$ 를 복소수로 보면 이 급수는 어떤 가로선의 오른쪽에서 수렴하고 그 영역에서 정칙이다.
+
+계수의 Dirichlet 합성곱이 급수의 곱에 대응하므로 산술함수 사이의 항등식이 함수 사이의 항등식으로 바뀐다. 거꾸로 $D(s)$ 의 극의 위치와 차수가 부분합 $\sum\_{n\le x}a_n$ 의 크기를 정하고, 이 대응이 [소수 정리](prime-number-theorem.md)의 해석적 증명이다.
 
 약수의 개수 $d(n)$ 을 $n=1$ 부터 $x$ 까지 더한 값을 구하려 한다. $d(1)=1$, $d(2)=2$, $d(3)=2$, $d(4)=3$ 처럼 값이 들쭉날쭉해서 항을 차례로 더하는 길로는 크기를 알 수 없다.
 
@@ -104,7 +106,7 @@ $$
 
 증명의 요지. $y\gt 0$ 에 대해 적분 $\frac{1}{2\pi i}\int\_{c-iT}^{c+iT}\frac{y^{s}}{s}\thinspace ds$ 를 $y\gt 1$ 이면 $1$ 로, $y\lt 1$ 이면 $0$ 으로 근사하고 오차를 잰다. 반원 호를 따라 선을 닫으면 피적분함수의 크기가 $y^{c}/T$ 이고 호의 길이가 $\vert\log y\vert^{-1}$ 규모이므로 오차가 $y^{c}/(T\vert\log y\vert)$ 다. $y$ 가 $1$ 에 가까우면 $\vert\log y\vert$ 가 작아 이 추정이 커지므로, 그 항은 $\vert a_n\vert$ 로 그대로 둔다. $y=x/n$ 을 넣고 $n$ 에 대해 더하면 위 꼴이 나온다.
 
-von Mangoldt 함수 $a_n=\Lambda(n)$ 과 $D(s)=-\zeta'/\zeta(s)$ , $c=1+1/\log x$ 를 넣으면 오차항이 $O(x(\log x)^2/T)$ 로 정리된다. [소수 정리](prime-number-theorem.md)의 명시 공식을 높이 $T$ 에서 자른 판본이 이것이고, $T$ 를 $x$ 의 거듭제곱으로 잡아 영점 합의 꼬리와 균형을 맞춘다.
+von Mangoldt 함수 $a_n=\Lambda(n)$ 과 $D(s)=-\zeta'/\zeta(s)$ , $c=1+1/\log x$ 를 넣으면 오차항이 $O(x(\log x)^2/T)$ 로 정리된다. 소수 정리의 명시 공식을 높이 $T$ 에서 자른 판본이 이것이고, $T$ 를 $x$ 의 거듭제곱으로 잡아 영점 합의 꼬리와 균형을 맞춘다.
 
 ## Wiener–Ikehara 정리
 
@@ -128,7 +130,7 @@ $\mu\ast 1=\delta$ 와 $1\ast 1=d$ 와 $\Lambda\ast 1=\log$ 가 각각 첫 두 �
 
 # 활용
 
-- **소수 정리.** $-\zeta'(s)/\zeta(s)$ 가 $s=1$ 에서 단순극을 갖고 $\sigma=1$ 에서 $\zeta$ 의 영점이 없다는 것이 Wiener–Ikehara 정리의 조건을 채운다([소수 정리](prime-number-theorem.md)).
+- **소수 정리.** $-\zeta'(s)/\zeta(s)$ 가 $s=1$ 에서 단순극을 갖고 $\sigma=1$ 에서 $\zeta$ 의 영점이 없다는 것이 Wiener–Ikehara 정리의 조건을 채운다.
 - **산술진수의 소수.** 지표 $\chi$ 의 Dirichlet 급수가 [Dirichlet L 함수](dirichlet-l-functions.md)이고, $L(1,\chi)\ne0$ 이 법 $q$ 의 각 잉여류에 소수가 무한히 많다는 것을 준다.
 - **약수 문제.** $\zeta(s)^2$ 의 $s=1$ 에서의 Laurent 전개가 $\sum\_{n\le x}d(n)=x\log x+(2\gamma-1)x+O(x^{\theta})$ 를 주고, 오차항의 지수 $\theta$ 를 얼마까지 줄일 수 있는지 묻는 것이 Dirichlet 약수 문제다.
 - **모듈러 형식의 L 함수.** 모듈러 형식의 Fourier 계수를 Dirichlet 급수의 계수로 삼으면 함수방정식과 Euler 곱을 갖는 함수가 되고, 계수의 곱셈성이 [Hecke 작용소](hecke-operators.md)의 고유성에서 나온다([모듈러 형식](modular-forms.md)).
