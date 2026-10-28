@@ -2,9 +2,11 @@
 
 # 개요
 
-**Kneser 그래프(Kneser graph)** $K(n,k)$ 는 $\lbrace 1,\dots,n\rbrace$ 의 $k$ 원소 부분집합을 정점으로 하고, 서로 만나지 않는 두 부분집합을 간선으로 잇는 그래프다. 독립집합은 [Erdős–Ko–Rado 정리](erdos-ko-rado.md)의 교차족이고, 채색수가 $n-2k+2$ 라는 Lovász 정리(Lovász's theorem)는 [Borsuk–Ulam 정리](borsuk-ulam.md)로 증명된다.
+**Kneser 그래프(Kneser graph)** $K(n,k)$ 는 $\lbrace 1,\dots,n\rbrace$ 의 $k$ 원소 부분집합을 정점으로 하고, 서로 만나지 않는 두 부분집합을 간선으로 잇는 그래프다. $k$ 원소 부분집합들을 묶음으로 나눠 같은 묶음 안의 두 집합이 언제나 만나게 하려면 묶음이 몇 개 필요한지 묻는 것은 이 그래프의 채색수를 묻는 것이다. $n\ge 2k$ 일 때 그 수는 $n-2k+2$ 이고, 이 값은 구면 위의 연속함수에 대한 [Borsuk–Ulam 정리](borsuk-ulam.md)로 증명된다.
 
 # 직관
+
+Kneser 그래프의 독립집합은 [Erdős–Ko–Rado 정리](erdos-ko-rado.md)의 교차족이고, 채색수가 $n-2k+2$ 라는 정리를 Lovász 정리(Lovász's theorem)라 한다.
 
 $\lbrace 1,\dots,n\rbrace$ 의 $k$ 원소 부분집합을 몇 개의 묶음으로 나눠, 같은 묶음 안의 두 집합은 언제나 만나게 하려 한다. 묶음이 몇 개 필요한지 알고 싶다. 각 묶음은 교차족이고 Erdős–Ko–Rado 정리에 따라 $n\ge 2k$ 이면 원소가 많아야 $\binom{n-1}{k-1}$ 개이므로, 묶음은
 

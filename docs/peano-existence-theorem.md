@@ -2,9 +2,11 @@
 
 # 개요
 
-**Peano 존재정리(Peano existence theorem)** 는 초깃값 문제 $x'=f(t,x)$ , $x(t_0)=x_0$ 에서 $f$ 의 연속성만으로 해가 하나 이상 존재함을 보장한다. Picard–Lindelöf 정리가 요구하는 Lipschitz 조건이 빠지고, 그 대가로 유일성이 빠진다. 증명은 [축약사상 고정점 정리](banach-fixed-point.md) 대신 [Arzelà–Ascoli 정리](arzela-ascoli.md)로 근사해의 극한을 꺼낸다.
+**Peano 존재정리(Peano existence theorem)** 는 초깃값 문제 $x'=f(t,x)$ , $x(t_0)=x_0$ 에서 $f$ 가 연속이기만 하면 해가 하나 이상 존재한다는 정리다. $x'=3x^{2/3}$ , $x(0)=0$ 에는 $x\equiv 0$ 과 $x=t^3$ 두 해가 있고, 반복으로 해를 찾는 방법은 $0$ 에 멈춰 $t^3$ 을 찾지 못한다. 이 정리는 반복 대신 Euler 꺾은선 근사해들을 그리고, 그 가운데 수렴하는 부분열의 극한으로 해를 얻는다.
 
 # 직관
+
+Peano 존재정리에는 Picard–Lindelöf 정리가 요구하는 Lipschitz 조건이 없고, 그 대신 유일성이 빠진다. 증명은 [축약사상 고정점 정리](banach-fixed-point.md) 대신 [Arzelà–Ascoli 정리](arzela-ascoli.md)로 근사해의 극한을 얻는다.
 
 [상미분방정식](ordinary-differential-equations.md)의 초깃값 문제 $x'=3x^{2/3}$ , $x(0)=0$ 을 Picard 반복으로 풀어 본다. 반복은 $x_0(t)\equiv 0$ 에서 시작해 $x_{k+1}(t)=\int_0^t 3x_k(s)^{2/3}\thinspace ds$ 를 계산하는데, $x_0\equiv 0$ 을 넣으면 $x_1\equiv 0$ 이 나와 반복이 $0$ 에 멈춘다. 그런데 $x(t)=t^3$ 도 이 문제의 해다. $t\mapsto 3t^{2/3}$ 의 기울기가 원점에서 무한대여서 적분 연산자가 축약사상이 아니고, 그래서 반복이 찾지 못한 해가 있다. Lipschitz 상수 $K$ 가 없으면 구간을 $1/K$ 보다 짧게 잡는 수를 쓸 수 없다.
 
