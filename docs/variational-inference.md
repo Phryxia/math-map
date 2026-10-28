@@ -2,9 +2,11 @@
 
 # 개요
 
-**변분 추론(variational inference)** 은 사후분포를 계산할 수 있는 분포족 안에서 근사하는 방법이다. 근사의 품질을 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 재면 사후분포의 정규화상수를 모르고도 최소화 문제를 세울 수 있고, 그 문제는 ELBO(evidence lower bound)의 최대화로 적힌다. 분포족을 좌표별 곱으로 잡으면 좌표마다 차례로 푸는 갱신식이 나오고, 완전 조건부가 [지수족](exponential-families.md)이면 그 갱신이 자연모수의 기댓값으로 닫힌 형태가 된다.
+**변분 추론(variational inference)** 은 정확히 계산할 수 없는 사후분포를 다루기 쉬운 분포로 근사하는 방법이다. 숨은 변수 $100$ 개가 각각 $0$ 이나 $1$ 이면 사후분포의 분모가 $2^{100}$ 개 항의 합이라 계산할 수 없다. 변분 추론은 계산할 수 있는 분포들의 모임을 정해 두고, 그 가운데 사후분포와의 차이가 가장 작은 것을 최적화로 찾는다.
 
 # 직관
+
+변분 추론은 사후분포를 계산할 수 있는 분포족 안에서 근사하는 방법이다. 근사의 품질을 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 재면 사후분포의 정규화상수를 모르고도 최소화 문제를 세울 수 있고, 그 문제는 ELBO(evidence lower bound)의 최대화로 적힌다. 분포족을 좌표별 곱으로 잡으면 좌표마다 차례로 푸는 갱신식이 나오고, 완전 조건부가 [지수족](exponential-families.md)이면 그 갱신이 자연모수의 기댓값으로 닫힌 형태가 된다.
 
 숨은 변수 $z_1,\dots,z_n$ 이 각각 $0$ 과 $1$ 을 갖고, 관측 $x$ 와의 결합분포 $p(x,z)$ 를 식으로 안다. 관측을 보고 숨은 변수의 분포를 알려면 $p(z\mid x)=p(x,z)/p(x)$ 가 필요하고, 분모는 $p(x)=\sum_z p(x,z)$ 다. 이 합은 $z$ 가 갖는 값마다 항이 하나씩 붙어 $2^n$ 개다. $n=100$ 이면 항이 $2^{100}$ 개다.
 
@@ -143,7 +145,7 @@ $\mathrm{KL}\bigl(q\thinspace\Vert\thinspace p\bigr)$ 의 피적분함수는 $p(
 - [Bayes 추론](bayesian-inference.md)에서 사후분포의 정규화상수가 닫힌 형태로 없을 때 [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)(Markov chain Monte Carlo, MCMC)와 함께 쓰는 두 표준 도구의 하나다. MCMC 가 표본으로 참 분포에 접근하는 대신, 변분 추론은 최적화 문제를 풀어 분포족 안의 한 점을 준다.
 - [기댓값 최대화 알고리즘](em-algorithm.md)(expectation–maximization, EM)의 E 단계는 변분족에 제약이 없어 $q=p(z\mid x,\theta)$ 를 그대로 쓸 수 있는 경우다. 그 분포를 계산할 수 없을 때 $q$ 를 평균장 족으로 제한한 것이 변분 EM 이다.
 - [확률 그래프 모형](graphical-models.md)의 순환 그래프에서 믿음 전파가 주변분포를 주지 않을 때 평균장 갱신을 쓴다. 이웃의 기댓값만 받으므로 좌표 사이의 상관은 버린다.
-- [지수족](exponential-families.md)의 자연모수와 충분통계량이 갱신식의 형태를 정한다. 완전 조건부가 지수족인 모형에서만 CAVI 가 닫힌 형태로 적힌다.
+- 지수족의 자연모수와 충분통계량이 갱신식의 형태를 정한다. 완전 조건부가 지수족인 모형에서만 CAVI 가 닫힌 형태로 적힌다.
 
 [^1]: Michael I. Jordan, Zoubin Ghahramani, Tommi S. Jaakkola, Lawrence K. Saul, "An Introduction to Variational Methods for Graphical Models", Machine Learning 37 (1999), 183–233.
 

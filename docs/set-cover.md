@@ -2,9 +2,11 @@
 
 # 개요
 
-**집합 덮개 문제(set cover problem)** 는 전체집합 $U$ 와 그 부분집합들의 모임 $\mathcal S$ 가 주어질 때, 합집합이 $U$ 가 되는 $\mathcal S$ 의 부분모임 가운데 집합 수가 가장 적은 것을 찾는 문제다. [NP-완전성](np-completeness.md)(nondeterministic polynomial time)이 증명된 문제이고, 남은 원소를 가장 많이 덮는 집합을 되풀이해 고르는 탐욕 알고리즘이 $\ln n$ 배 이내의 해를 준다. [근사 알고리즘](approximation-algorithms.md)에서 이 $\ln n$ 은 다항시간으로 개선되지 않는 근사비의 표준 예다.
+**집합 덮개 문제(set cover problem)** 는 주어진 집합들 가운데 가장 적은 수를 골라 모든 원소를 덮는 문제다. 기지국 후보마다 신호가 닿는 동네가 정해져 있을 때 모든 동네에 신호가 닿게 하는 가장 적은 기지국을 고르는 문제가 이 꼴이다. 아직 덮이지 않은 원소를 가장 많이 덮는 집합을 차례로 고르는 탐욕 알고리즘으로 최적의 $\ln n$ 배 이내인 해를 얻는다.
 
 # 직관
+
+집합 덮개 문제는 전체집합 $U$ 와 그 부분집합들의 모임 $\mathcal S$ 가 주어질 때, 합집합이 $U$ 가 되는 $\mathcal S$ 의 부분모임 가운데 집합 수가 가장 적은 것을 찾는 문제다. [NP-완전성](np-completeness.md)(nondeterministic polynomial time)이 증명된 문제이고, 남은 원소를 가장 많이 덮는 집합을 되풀이해 고르는 탐욕 알고리즘이 $\ln n$ 배 이내의 해를 준다. [근사 알고리즘](approximation-algorithms.md)에서 이 $\ln n$ 은 다항시간으로 개선되지 않는 근사비의 표준 예다.
 
 원소가 $1$ 부터 $6$ 까지 여섯 개이고 집합이 셋 있다.
 
@@ -90,7 +92,7 @@ Dinur 와 Steurer 는 같은 하한을 $\mathrm P\ne\mathrm{NP}$ 가정만으로
 
 # 활용
 
-- 정점 덮개. $f=2$ 인 집합 덮개이므로 빈도 근사가 [LP 반올림](lp-rounding.md)의 2-근사가 된다.
+- 정점 덮개. $f=2$ 인 집합 덮개이므로 빈도 근사가 LP 반올림의 2-근사가 된다.
 - [정수계획법](integer-programming.md)의 모형화. 집합 덮개는 0-1 변수와 덮임 제약 하나로 쓰이는 정수계획의 기본 꼴이고, 승무원 배정과 시설 배치가 이 꼴로 모형화된다.
 - 기하적 집합 덮개. 집합들이 [VC 차원](vc-dimension.md)(Vapnik–Chervonenkis dimension)이 유한한 범위 공간을 이루면 $\varepsilon$-그물을 써서 $O(\log\mathrm{OPT})$ 근사가 나온다(Brönnimann–Goodrich).
 - 부분모듈 덮개. 덮이는 원소 수를 일반 단조 부분모듈 함수로 바꾼 문제에서도 탐욕 알고리즘이 조화수 꼴의 근사비를 준다(Wolsey).

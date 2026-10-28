@@ -2,9 +2,11 @@
 
 # 개요
 
-**대수군의 Tamagawa 수(Tamagawa number of an algebraic group)** 는 수체 $k$ 위의 연결 [대수군](algebraic-groups.md) $G$ 에 대해, [아델](adeles.md) 위의 점들의 군 $G(\mathbb A)$ 를 유리점들의 군 $G(k)$ 로 나눈 몫의 부피를 표준 측도로 잰 값 $\tau(G)$ 다. 표준 측도는 $k$ 위에서 정의된 불변 미분형식 하나로 모든 자리의 Haar 측도를 한꺼번에 정해 얻는다. 단순연결 반단순군에서 $\tau(G)=1$ 이라는 Weil 추측(Weil's conjecture)은 증명되었고, 이차형식의 질량 공식은 $\tau(\mathrm{SO}\_n)=2$ 와 같은 진술이다.
+**대수군의 Tamagawa 수(Tamagawa number of an algebraic group)** 는 행렬군의 부피를 실수와 모든 소수에서 같은 기준으로 재어 얻는 수다. $\mathrm{SL}\_2(\mathbb Z)$ 의 기본 영역이 $\mathrm{SL}\_2(\mathbb R)$ 안에서 차지하는 부피는 Haar 측도의 상수배를 어떻게 정하느냐에 따라 바뀌므로 그 값만으로는 정해지지 않는다. 유리수 계수의 불변 미분형식 하나로 실수와 모든 소수 $p$ 에서 측도를 함께 정하면 상수배의 선택이 서로 상쇄되고, 그렇게 잰 부피가 Tamagawa 수다.
 
 # 직관
+
+대수군의 Tamagawa 수는 수체 $k$ 위의 연결 [대수군](algebraic-groups.md) $G$ 에 대해, [아델](adeles.md) 위의 점들의 군 $G(\mathbb A)$ 를 유리점들의 군 $G(k)$ 로 나눈 몫의 부피를 표준 측도로 잰 값 $\tau(G)$ 다. 표준 측도는 $k$ 위에서 정의된 불변 미분형식 하나로 모든 자리의 Haar 측도를 한꺼번에 정해 얻는다. 단순연결 반단순군에서 $\tau(G)=1$ 이라는 Weil 추측(Weil's conjecture)은 증명되었고, 이차형식의 질량 공식은 $\tau(\mathrm{SO}\_n)=2$ 와 같은 진술이다.
 
 $\mathrm{SL}\_2(\mathbb Z)$ 의 기본 영역이 $\mathrm{SL}\_2(\mathbb R)$ 안에서 차지하는 부피를 알고 싶다. 부피는 Haar 측도의 상수배를 어떻게 정하느냐에 따라 바뀌므로, 상수를 정할 기준이 있어야 한다. $\mathrm{SL}\_2$ 위에는 유리수 계수로 쓰이는 불변 3-형식 $\omega$ 가 상수배를 빼고 하나 있다. $\omega$ 로 실수 위의 측도를 정하면 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathrm{SL}\_2(\mathbb R)$ 의 부피는 $\zeta(2)=\pi^2/6$ 이다.
 
