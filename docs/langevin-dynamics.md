@@ -2,7 +2,7 @@
 
 # 개요
 
-**Langevin 동역학(Langevin dynamics)** 은 퍼텐셜의 기울기를 따라 내려가는 흐름에 열잡음을 더한 [확률미분방정식](stochastic-differential-equations.md)이다. 정상분포가 Gibbs 측도 $e^{-\beta V}$ 이므로, 이 방정식을 이산화해 돌리면 정규화상수를 계산하지 않고 그 분포의 표본을 얻는다.
+**Langevin 동역학(Langevin dynamics)** 은 퍼텐셜의 기울기를 따라 내려가는 흐름에 열잡음을 더한 [확률미분방정식](stochastic-differential-equations.md)이다. 밀도가 $e^{-V(x)}$ 에 비례하는 $100$ 차원 분포에서 표본을 뽑으려 하면, $V$ 와 그 기울기는 계산되지만 정규화상수 $\int e^{-V(x)}dx$ 는 계산할 수 없다. 이 방정식은 정상분포가 $e^{-V}$ 에 비례하므로, 기울기만 써서 이산화해 돌리면 정규화상수 없이 그 분포의 표본을 얻는다.
 
 # 직관
 
@@ -13,6 +13,8 @@
 값 대신 기울기만 쓰는 수를 찾는다. [경사하강법](gradient-descent.md) $x\leftarrow x-h\nabla V(x)$ 은 $V$ 의 최솟점 하나로 모이므로 분포가 아니라 점을 준다. 한 걸음마다 Gauss 잡음을 더해 퍼지게 하면 하강이 가운데로 당기고 잡음이 밖으로 밀어 두 힘이 균형을 이룬 분포가 남는다.
 
 그 분포가 무엇인지는 [Fokker–Planck 방정식](fokker-planck.md)의 정상해가 답한다. 표류가 $-\nabla V$ 이고 확산계수가 상수 $2\beta^{-1}$ 이면 정상밀도는 $e^{-\beta V}$ 다. 즉 원하던 분포가 그대로 나온다. $\nabla V$ 에는 $Z$ 가 들어 있지 않으므로 계산할 수 없던 양이 식에서 사라진다.
+
+역온도 $\beta$ 를 두면 정상분포는 Gibbs 측도 $e^{-\beta V}$ 다.
 
 # 정의
 

@@ -2,13 +2,15 @@
 
 # 개요
 
-**Markov 연쇄 Monte Carlo(Markov chain Monte Carlo, MCMC)** 는 목표분포 $\pi$ 를 불변분포로 갖는 [Markov 연쇄](markov-chains.md)를 만들어 그 궤적을 $\pi$ 의 표본으로 쓰는 방법이다. 연쇄를 짓는 데 쓰는 것은 두 점의 밀도 비 $\pi(y)/\pi(x)$ 뿐이므로 정규화상수를 모르는 분포에서도 표본이 나온다. Metropolis–Hastings 알고리즘이 제안과 수락으로 그 연쇄를 구성하고, Gibbs 표본추출이 좌표별 조건부분포로 같은 일을 한다.
+**Markov 연쇄 Monte Carlo(Markov chain Monte Carlo, MCMC)** 는 목표분포 $\pi$ 를 불변분포로 갖는 [Markov 연쇄](markov-chains.md)를 만들어 그 궤적을 $\pi$ 의 표본으로 쓰는 방법이다. 모수가 $100$ 개인 모형의 사후평균을 구하려면 $100$ 차원 적분이 필요한데, 축마다 점 $10$ 개만 잡아도 격자점이 $10^{100}$ 개이고 정규화상수도 모른다. MCMC 는 두 점의 밀도 비만으로 옮겨 갈지 정하는 걸음을 되풀이해, 밀도가 큰 곳에 오래 머무는 궤적의 평균으로 적분을 근사한다.
 
 # 직관
 
 모수 $\theta\in\mathbb R^{100}$ 의 사후밀도가 $\pi(\theta)=p(\theta)L(\theta)/Z$ 이고 $Z=\int p(\theta)L(\theta)\thinspace d\theta$ 다. 사후평균 $\int\theta\thinspace\pi(\theta)\thinspace d\theta$ 를 구하려면 분자와 분모 두 적분이 모두 필요하다. 적분을 격자로 근사하면 축마다 점 10 개씩만 잡아도 격자점이 $10^{100}$ 개이고, 한 점에서 $p$ 와 $L$ 을 한 번 계산하는 데 드는 시간이 아무리 짧아도 합이 끝나지 않는다.
 
 $Z$ 를 몰라도 두 점의 비 $\pi(y)/\pi(x)=p(y)L(y)/\big(p(x)L(x)\big)$ 는 계산된다. 지금 있는 점 $x$ 에서 가까운 점 $y$ 를 하나 뽑아, 비가 $1$ 이상이면 $y$ 로 옮기고 $1$ 보다 작으면 그 비의 확률로 옮긴다. 이 걸음은 밀도가 큰 곳에 오래 머물고 작은 곳을 드물게 지나며, 오래 돌린 뒤 각 영역에 머문 시간의 비율이 그 영역의 $\pi$ 확률과 같아진다. 사후평균은 궤적 $\theta\_1,\dots,\theta\_n$ 의 표본평균으로 나온다.
+
+Metropolis–Hastings 알고리즘이 제안과 수락으로 그 연쇄를 구성하고, Gibbs 표본추출이 좌표별 조건부분포로 같은 일을 한다.
 
 # 정의
 
