@@ -2,7 +2,11 @@
 
 # 개요
 
-**Pontryagin 류(Pontryagin class)** 는 실 벡터다발의 정수 계수 특성류다. 다발을 복소화해 Chern 류를 취하고 짝수 번째만 부호를 맞춰 남긴다.
+**Pontryagin 류(Pontryagin class)** 는 실 벡터다발의 정수 계수 특성류다. 실 벡터다발에는 계수가 $\mathbb Z/2$ 인 [Stiefel–Whitney 류](stiefel-whitney-classes.md)가 있지만 다양체에 짝지으면 $0$ 과 $1$ 만 나오고, 정수 값을 주는 Chern 류는 복소 다발에만 있다. Pontryagin 류는 다발을 복소화해 Chern 류를 취하고 짝수 번째만 부호를 맞춰 남겨, 실 다발에 정수 불변량을 준다.
+
+# 직관
+
+식으로는 다음과 같다.
 
 $$
 p_i(E) \thinspace=\thinspace (-1)^i c_{2i}(E\otimes\mathbb C)
@@ -10,9 +14,7 @@ $$
 
 접다발에 적용하면 방향 다양체의 정수 불변량이 나온다. Hirzebruch 부호수 정리의 $L$-류와 지표 정리의 $\hat A$-류가 이 류의 다항식이다.
 
-# 직관
-
-실 벡터다발에 정수 계수 특성류를 두려고 한다. [Stiefel–Whitney 류](stiefel-whitney-classes.md)는 계수가 $\mathbb Z/2$ 라 기본류에 짝지어도 $0$ 과 $1$ 만 나오고, Chern 류는 복소 다발에만 있다. 실 다발에서 Chern 류를 쓰려면 복소 다발을 하나 만들어야 한다.
+실 벡터다발에 정수 계수 특성류를 두려고 한다. Stiefel–Whitney 류는 계수가 $\mathbb Z/2$ 라 기본류에 짝지어도 $0$ 과 $1$ 만 나오고, Chern 류는 복소 다발에만 있다. 실 다발에서 Chern 류를 쓰려면 복소 다발을 하나 만들어야 한다.
 
 올마다 $E_x$ 에 $\mathbb C$ 를 텐서하면 복소 벡터공간이 되고, 이것들이 모여 계수가 같은 복소 벡터다발 $E\otimes\mathbb C$ 가 된다. 여기에는 Chern 류 $c_1, c_2, \dots$ 가 있다.
 
