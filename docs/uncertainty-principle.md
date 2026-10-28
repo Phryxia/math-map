@@ -2,7 +2,7 @@
 
 # 개요
 
-**불확정성 원리(uncertainty principle)** 는 함수와 그 [Fourier 변환](fourier-transform.md)이 동시에 한 점 주위로 모일 수 없다는 부등식이다. 두 함수의 퍼짐을 분산으로 재면 그 곱이 아래로 유계이고, 하한은 Gauss 함수에서만 등호가 된다.
+**불확정성 원리(uncertainty principle)** 는 함수와 그 [Fourier 변환](fourier-transform.md)이 동시에 한 점 주위로 모일 수 없다는 부등식이다. 폭 $\delta$ 의 사각 펄스의 Fourier 변환은 폭이 $1/\delta$ 쯤인 봉우리여서, 펄스를 좁힐수록 변환이 넓어진다. 불확정성 원리는 두 함수의 퍼짐을 분산으로 재어 그 곱에 하한이 있음을 보이고, 하한은 Gauss 함수에서만 등호가 된다.
 
 # 직관
 
