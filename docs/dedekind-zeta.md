@@ -2,11 +2,13 @@
 
 # 개요
 
-**Dedekind zeta 함수(Dedekind zeta function)** 는 수체 $K$ 의 정수환의 $0$ 아닌 아이디얼 $\mathfrak a$ 전체에 대한 급수 $\zeta_K(s)=\sum_{\mathfrak a}N(\mathfrak a)^{-s}$ 다. $K=\mathbb Q$ 이면 [Riemann zeta 함수](riemann-zeta.md)다.
-
-$\zeta_K$ 는 소 아이디얼에 대한 Euler 곱을 갖고, 복소평면 전체로 유리형 연속되며 $s\mapsto1-s$ 의 함수방정식을 만족한다. $s=1$ 의 유일한 극에서의 유수가 류수, 조절자, 판별식으로 적히는 것이 해석적 류수 공식(analytic class number formula)이다.
+**Dedekind zeta 함수(Dedekind zeta function)** 는 수체의 정수환에서 아이디얼을 크기별로 세어 만든 함수로, 정수 대신 아이디얼을 쓴 [Riemann zeta 함수](riemann-zeta.md)다. $\mathbb Z\lbrack i\rbrack$ 에서 노름이 $x$ 이하인 아이디얼의 개수는 반지름 $\sqrt x$ 인 원 안의 격자점 수를 단원 $4$ 개로 나눈 값이므로 $\pi x/4$ 쯤이다. Dedekind zeta 함수 $\zeta_K(s)=\sum_{\mathfrak a}N(\mathfrak a)^{-s}$ 는 이런 개수를 급수로 모으고, $s=1$ 의 극에서 유수를 읽어 류수와 판별식 같은 수체의 불변량을 구한다.
 
 # 직관
+
+Dedekind zeta 함수는 수체 $K$ 의 정수환의 $0$ 아닌 아이디얼 $\mathfrak a$ 전체에 대한 급수 $\zeta_K(s)=\sum_{\mathfrak a}N(\mathfrak a)^{-s}$ 다. $K=\mathbb Q$ 이면 Riemann zeta 함수다.
+
+$\zeta_K$ 는 소 아이디얼에 대한 Euler 곱을 갖고, 복소평면 전체로 유리형 연속되며 $s\mapsto1-s$ 의 함수방정식을 만족한다. $s=1$ 의 유일한 극에서의 유수가 류수, 조절자, 판별식으로 적히는 것이 해석적 류수 공식(analytic class number formula)이다.
 
 $\mathbb Z\lbrack i\rbrack$ 에서 노름이 $x$ 이하인 아이디얼의 개수를 센다. $\mathbb Z\lbrack i\rbrack$ 의 아이디얼은 모두 주 아이디얼 $(\alpha)$ 이고, $\alpha$ 는 단원 $\pm1,\pm i$ 네 개의 곱을 법으로 정해진다. $N(a+bi)=a^2+b^2$ 이므로 노름이 $x$ 이하인 $\alpha\ne0$ 는 반지름 $\sqrt x$ 인 원 안의 격자점이다.
 
@@ -74,10 +76,10 @@ $$
 
 # 활용
 
-- [대수적 수체](algebraic-number-fields.md): 류수 공식으로 류수를 $\zeta_K$ 의 유수나 $L$ 값으로 계산한다.
+- 대수적 수체: 류수 공식으로 류수를 $\zeta_K$ 의 유수나 $L$ 값으로 계산한다.
 - [Dirichlet 단수 정리](dirichlet-unit-theorem.md): 조절자가 류수 공식의 유수에 들어가므로 단원군의 크기와 류군의 크기가 하나의 해석적 양으로 묶인다.
 - [Chebotarev 밀도 정리](chebotarev.md): 확대체와 중간체의 Dedekind zeta 함수의 비가 [Artin L 함수](artin-l-functions.md)의 곱이고, 그 $s=1$ 근방의 거동으로 Frobenius 의 밀도를 구한다.
-- [류수 1 문제](class-number-one.md): 허이차체의 류수 공식 $h=w\sqrt{\vert d\vert}\thinspace L(1,\chi_d)/(2\pi)$ 가 문제를 $L(1,\chi_d)$ 의 하한 문제로 바꾼다.
+- 류수 1 문제: 허이차체의 류수 공식 $h=w\sqrt{\vert d\vert}\thinspace L(1,\chi_d)/(2\pi)$ 가 문제를 $L(1,\chi_d)$ 의 하한 문제로 바꾼다.
 
 [^1]: J. Neukirch, *Algebraic Number Theory*, Grundlehren 322, Springer, 1999, 7장 5절.
 [^2]: S. Lang, *Algebraic Number Theory*, 2nd ed., Graduate Texts in Mathematics 110, Springer, 1994, 16장.

@@ -2,11 +2,13 @@
 
 # 개요
 
-**로그 계수 추측(log-rank conjecture)** 은 두 사람이 함수 $f(x,y)$ 를 계산하는 결정적 통신 복잡도 $D(f)$ 가 통신 행렬 $M_f$ 의 계수의 로그의 다항식 이하라는 추측이다. L. Lovász 와 M. Saks 가 1988 년에 내놓았다[^1].
-
-[통신 복잡도](communication-complexity.md)의 계수 하한 $D(f)\ge\log_2\mathrm{rank}\thinspace M_f$ 가 반대 방향으로도 다항식 범위 안에서 성립하는지 묻는다. 성립하면 결정적 통신 복잡도가 행렬의 계수 하나로 다항식 범위 안에서 정해진다.
+**로그 계수 추측(log-rank conjecture)** 은 두 사람이 나눠 가진 입력으로 함숫값을 계산할 때 주고받아야 하는 비트 수가, 함숫값을 적은 행렬의 계수만으로 다항식 범위 안에서 정해진다는 추측이다. Alice 가 $x$, Bob 이 $y$ 를 갖고 $f(x,y)\in\lbrace 0,1\rbrace$ 를 행 $x$, 열 $y$ 에 적은 행렬을 $M_f$ 라 하면, 주고받는 비트 수 $D(f)$ 는 $\log_2\mathrm{rank}\thinspace M_f$ 이상이다. 추측의 진술은 반대로 $D(f)$ 가 $(\log\mathrm{rank}\thinspace M_f)^{c}$ 이하라는 것이고, 성립하면 [통신 복잡도](communication-complexity.md)가 행렬의 계수 하나로 정해진다.
 
 # 직관
+
+로그 계수 추측은 두 사람이 함수 $f(x,y)$ 를 계산하는 결정적 통신 복잡도 $D(f)$ 가 통신 행렬 $M_f$ 의 계수의 로그의 다항식 이하라는 추측이다. L. Lovász 와 M. Saks 가 1988 년에 내놓았다[^1].
+
+통신 복잡도의 계수 하한 $D(f)\ge\log_2\mathrm{rank}\thinspace M_f$ 가 반대 방향으로도 다항식 범위 안에서 성립하는지 묻는다. 성립하면 결정적 통신 복잡도가 행렬의 계수 하나로 다항식 범위 안에서 정해진다.
 
 Alice 가 $x$ 를, Bob 이 $y$ 를 갖고, $M_f$ 는 행 $x$, 열 $y$ 에 $f(x,y)\in\lbrace 0,1\rbrace$ 를 적은 행렬이다. 계수 하한으로 $D(f)$ 는 $\log_2\mathrm{rank}\thinspace M_f$ 이상이다. 위로는 얼마인지 계수만 보고 규칙을 짜 본다.
 
