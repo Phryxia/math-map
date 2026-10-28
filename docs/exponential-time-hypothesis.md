@@ -2,11 +2,13 @@
 
 # 개요
 
-**지수 시간 가설(exponential time hypothesis, ETH)** 은 변수 $n$ 개의 3-SAT(satisfiability) 를 $2^{o(n)}$ 시간에 푸는 알고리즘이 없다는 가설이다. **강한 지수 시간 가설(strong exponential time hypothesis, SETH)** 은 절의 길이 $k$ 를 키우면 $k$-SAT 의 최선 시간이 전수 탐색의 $2^n$ 에 한없이 가까워진다는 가설이다. R. Impagliazzo 와 R. Paturi 가 2001 년에 내놓았다[^1].
-
-$\mathrm P\ne\mathrm{NP}$ 는 다항시간 알고리즘이 없다는 것만 말한다. 이 두 가설은 지수의 크기까지 정해, [매개변수 복잡도](parameterized-complexity.md)의 하한과 다항시간 문제의 세분된 하한을 증명하는 가정으로 쓰인다.
+**지수 시간 가설(exponential time hypothesis, ETH)** 은 어떤 어려운 문제는 변수 수에 대해 지수 시간보다 빨리 풀 수 없다는 가설이다. 변수 $n$ 개에 참이나 거짓을 정해 세 변수짜리 조건들을 모두 만족시키는 문제는 $2^n$ 가지를 다 시도하면 풀리고, 알려진 가장 빠른 알고리즘도 대략 $1.3^n$ 의 시간이 걸린다. 지수 시간 가설은 이 시간을 $2^{o(n)}$ 으로 줄일 수 없다고 가정하고, 이 가정에서 다른 문제들의 시간 하한을 유도한다.
 
 # 직관
+
+지수 시간 가설은 변수 $n$ 개의 3-SAT(satisfiability) 를 $2^{o(n)}$ 시간에 푸는 알고리즘이 없다는 가설이다. **강한 지수 시간 가설(strong exponential time hypothesis, SETH)** 은 절의 길이 $k$ 를 키우면 $k$-SAT 의 최선 시간이 전수 탐색의 $2^n$ 에 한없이 가까워진다는 가설이다. R. Impagliazzo 와 R. Paturi 가 2001 년에 내놓았다[^1].
+
+$\mathrm P\ne\mathrm{NP}$ 는 다항시간 알고리즘이 없다는 것만 말한다. 이 두 가설은 지수의 크기까지 정해, [매개변수 복잡도](parameterized-complexity.md)의 하한과 다항시간 문제의 세분된 하한을 증명하는 가정으로 쓰인다.
 
 변수 $n$ 개의 3-SAT 를 전수 탐색으로 풀면 할당 $2^n$ 개를 모두 본다. 무작위 할당에서 시작해 만족되지 않은 절의 변수 하나를 뒤집는 일을 되풀이하면 $(4/3)^n$ 꼴의 시간에 풀린다(Schöning)[^2]. 밑은 $2$ 에서 $4/3$ 으로 내려갔지만 여전히 지수다. ETH 는 밑을 $1$ 로 끝없이 내릴 수는 없다는 가설이다.
 
@@ -61,7 +63,7 @@ Paturi, Pudlák, Saks, Zane 의 알고리즘은 변수를 무작위 순서로 �
 # 활용
 
 - 조건부 최적성. [동적 계획법](dynamic-programming.md)으로 $O(n^2)$ 에 푸는 문자열 문제들이 더 빨라지지 않는다는 근거가 SETH 다. 알고리즘 설계에서는 이 하한이 근사나 특수 입력으로 방향을 바꾸는 근거가 된다.
-- [매개변수 복잡도](parameterized-complexity.md)의 하한. 나무폭 $w$ 에 대한 $2^{O(w)}$ 동적 계획법의 밑이 SETH 아래에서 최적임을 보이는 결과들이 있다.
+- 매개변수 복잡도의 하한. 나무폭 $w$ 에 대한 $2^{O(w)}$ 동적 계획법의 밑이 SETH 아래에서 최적임을 보이는 결과들이 있다.
 - 회로 하한. R. Williams 는 SAT 알고리즘이 전수 탐색보다 조금만 빨라도 회로 하한이 나온다는 연결을 써서 $\mathrm{NEXP}\not\subseteq\mathrm{ACC}^0$ 을 증명했다.
 
 [^1]: R. Impagliazzo, R. Paturi, "On the complexity of k-SAT", Journal of Computer and System Sciences 62 (2001), 367–375.

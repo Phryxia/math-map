@@ -2,11 +2,13 @@
 
 # 개요
 
-**Goldwasser–Kalai–Rothblum 프로토콜(Goldwasser–Kalai–Rothblum protocol, GKR protocol)** 은 층으로 나뉜 산술회로의 출력이 맞는지를, 회로를 다시 계산하지 않고 회로의 층마다 [대화형 증명](interactive-proofs.md)의 합 검사 프로토콜을 한 번씩 돌려 확인하는 대화형 증명이다. S. Goldwasser, Y. T. Kalai, G. N. Rothblum 이 2008 년에 발표했다[^1].
-
-크기 $S$, 깊이 $d$ 인 회로에 대해 검증자의 시간은 입력 길이 $n$ 과 $d\log S$ 의 다항식이고, 증명자의 시간은 $S$ 의 다항식이다. 약한 기기가 강한 서버에 계산을 맡기고 결과를 확인하는 계산 위임(delegation of computation)이 이 프로토콜의 쓰임이다.
+**Goldwasser–Kalai–Rothblum 프로토콜(Goldwasser–Kalai–Rothblum protocol, GKR protocol)** 은 약한 기기가 강한 서버에 맡긴 계산의 결과를, 계산을 다시 하지 않고 몇 번의 질문으로 확인하는 절차다. 휴대전화가 곱셈이 수십억 번 드는 회로의 출력을 서버에 맡기면, 서버는 답과 함께 층마다 다항식 몇 개를 보내고 휴대전화는 무작위 점 몇 곳에서 그 다항식들이 서로 맞는지만 확인한다. GKR 프로토콜은 회로의 층마다 합 검사를 한 번씩 돌려 출력에 대한 주장을 바로 아래 층에 대한 주장으로 바꾸고, 입력층에 닿으면 검증자가 그 주장을 직접 확인한다.
 
 # 직관
+
+Goldwasser–Kalai–Rothblum 프로토콜은 층으로 나뉜 산술회로의 출력이 맞는지를, 회로를 다시 계산하지 않고 회로의 층마다 [대화형 증명](interactive-proofs.md)의 합 검사 프로토콜을 한 번씩 돌려 확인하는 대화형 증명이다. S. Goldwasser, Y. T. Kalai, G. N. Rothblum 이 2008 년에 발표했다[^1].
+
+크기 $S$, 깊이 $d$ 인 회로에 대해 검증자의 시간은 입력 길이 $n$ 과 $d\log S$ 의 다항식이고, 증명자의 시간은 $S$ 의 다항식이다. 약한 기기가 강한 서버에 계산을 맡기고 결과를 확인하는 계산 위임(delegation of computation)이 이 프로토콜의 쓰임이다.
 
 서버가 크기 $S$ 인 회로를 계산해 출력을 보냈다. 검증자가 출력이 맞는지 보려면 회로를 다시 계산해야 하고, 그러면 맡긴 의미가 없다. 서버에게 모든 게이트의 값을 보내게 해도 검증자는 게이트 $S$ 개를 하나씩 확인해야 한다.
 
