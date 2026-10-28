@@ -2,9 +2,11 @@
 
 # 개요
 
-**Newton–Cotes 공식(Newton–Cotes formula)** 은 구간 $\lbrack a,b\rbrack$ 의 등간격 점에서 피적분함수를 [다항식 보간](polynomial-interpolation.md)한 뒤 그 다항식을 적분해 $\int_a^bf$ 의 근삿값을 얻는 수치적분 공식이다. 점이 $n+1$ 개이면 근삿값은 함숫값의 가중합 $\sum_iw_if(x_i)$ 이고, 차수 $n$ 이하의 다항식에서는 정확하다. 점 두 개가 사다리꼴 규칙, 세 개가 Simpson 규칙이다.
+**Newton–Cotes 공식(Newton–Cotes formula)** 은 등간격 점의 함숫값 몇 개로 적분의 근삿값을 얻는 수치적분 공식이다. $\int_0^1x^2\thinspace dx=1/3$ 을 양 끝 값 $0$ 과 $1$ 만으로 어림하면 두 점을 잇는 직선 아래 넓이 $1/2$ 가 나와 $1/6$ 만큼 틀린다. Newton–Cotes 공식은 점을 늘려 [다항식 보간](polynomial-interpolation.md)으로 그 점들을 지나는 다항식을 만들고, 그 다항식을 적분해 오차를 줄인다.
 
 # 직관
+
+구간 $\lbrack a,b\rbrack$ 의 등간격 점이 $n+1$ 개이면 근삿값은 함숫값의 가중합 $\sum_iw_if(x_i)$ 이고, 차수 $n$ 이하의 다항식에서는 정확하다. 점 두 개가 사다리꼴 규칙, 세 개가 Simpson 규칙이다.
 
 $\int_0^1x^2\thinspace dx=1/3$ 을 함숫값 몇 개로 어림한다. 양 끝 값 $f(0)=0$, $f(1)=1$ 을 지나는 직선 아래 넓이는 $1/2$ 이다. 직선이 포물선 위에 있으므로 $1/6$ 만큼 크다.
 

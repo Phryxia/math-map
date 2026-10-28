@@ -2,9 +2,11 @@
 
 # 개요
 
-**사영가군(projective module)** 은 전사 준동형을 따라 사상을 들어 올릴 수 있는 [가군](modules.md)이다. 자유가군은 사영가군이고 역은 성립하지 않는다. 사영성은 $\mathrm{Hom}\_R(P,-)$ 가 완전함자라는 것과 동치이므로, 완전성이 깨지는 자리를 재는 [유도 함자](derived-functors.md)가 사영가군의 분해 위에서 정의된다.
+**사영가군(projective module)** 은 전사 준동형을 따라 사상을 들어 올릴 수 있는 [가군](modules.md)이다. 몫사상 $\mathbb Z\to\mathbb Z/2\mathbb Z$ 를 따라 $\mathbb Z/2\mathbb Z$ 의 항등사상을 들어 올리려 하면, $\mathbb Z/2\mathbb Z$ 의 $1+1=0$ 때문에 $\mathbb Z$ 에서 $2n=0$ 이 되어 들어 올린 사상이 존재하지 않는다. 사영가군은 이런 들어 올림이 언제나 되는 가군이고, 들어 올림이 막히는 정도를 재는 [유도 함자](derived-functors.md)를 계산하는 데 쓰인다.
 
 # 직관
+
+자유가군은 사영가군이고 역은 성립하지 않는다. 사영성은 $\mathrm{Hom}\_R(P,-)$ 가 완전함자라는 것과 동치이므로, 유도 함자가 사영가군의 분해 위에서 정의된다.
 
 $\pi\colon\mathbb Z\to\mathbb Z/2\mathbb Z$ 를 몫사상이라 하자. $f\colon\mathbb Z/2\mathbb Z\to\mathbb Z/2\mathbb Z$ 를 항등사상으로 두고 $\pi\circ g=f$ 인 $\mathbb Z$ 가군 준동형 $g\colon\mathbb Z/2\mathbb Z\to\mathbb Z$ 를 찾는다. $g(1)=n$ 이라 하면 $\mathbb Z/2\mathbb Z$ 에서 $1+1=0$ 이므로 $2n=g(0)=0$ 이고 $\mathbb Z$ 에서 $n=0$ 이다. 그러면 $\pi(g(1))=0$ 인데 $f(1)=1$ 이므로 그런 $g$ 는 없다.
 
