@@ -2,11 +2,13 @@
 
 # 개요
 
-**Balog–Szemerédi–Gowers 정리(Balog–Szemerédi–Gowers theorem)** 는 덧셈 에너지가 큰 집합이 합집합이 작은 큰 부분집합을 포함한다는 정리다. A. Balog 와 E. Szemerédi 가 1994 년에 증명했고[^1], W. T. Gowers 가 상수를 다항식으로 줄였다[^2].
-
-[Freiman 정리](freiman-theorem.md)는 합집합이 작은 집합에만 적용된다. 이 정리는 그보다 약한 정보인 "같은 합을 갖는 쌍이 많다" 에서 Freiman 정리를 쓸 수 있는 부분집합을 꺼낸다.
+**Balog–Szemerédi–Gowers 정리(Balog–Szemerédi–Gowers theorem)** 는 같은 합을 내는 쌍이 많은 집합이, 두 수의 합이 적게 나오는 큰 부분집합을 포함한다는 정리다. $\lbrace 1,\dots,n\rbrace$ 에 아주 큰 범위의 무작위 정수 $n$ 개를 더한 집합은 두 수의 합이 $n^2$ 가지쯤 나오지만, 그 절반인 $\lbrace 1,\dots,n\rbrace$ 은 합이 $2n-1$ 가지뿐이다. 이 정리는 같은 합을 내는 쌍의 개수에서 그런 부분집합을 찾아내, 합이 적은 집합에만 적용되는 [Freiman 정리](freiman-theorem.md)를 쓸 수 있게 한다.
 
 # 직관
+
+Balog–Szemerédi–Gowers 정리는 덧셈 에너지가 큰 집합이 합집합이 작은 큰 부분집합을 포함한다는 정리다. A. Balog 와 E. Szemerédi 가 1994 년에 증명했고[^1], W. T. Gowers 가 상수를 다항식으로 줄였다[^2].
+
+Freiman 정리는 합집합이 작은 집합에만 적용된다. 이 정리는 그보다 약한 정보인 "같은 합을 갖는 쌍이 많다" 에서 Freiman 정리를 쓸 수 있는 부분집합을 꺼낸다.
 
 $A$ 를 $\lbrace 1,\dots,n\rbrace$ 과, 그보다 훨씬 큰 범위에서 고른 무작위 정수 $n$ 개의 합집합이라 하자. 무작위 부분의 두 수의 합은 대개 서로 달라 $\lvert A+A\rvert$ 가 $n^2$ 에 비례하고, Freiman 정리는 아무것도 말하지 않는다.
 

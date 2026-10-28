@@ -2,11 +2,13 @@
 
 # 개요
 
-**Chebyshev 다항식(Chebyshev polynomials)** 은 $T_n(\cos\theta)=\cos n\theta$ 를 만족하는 차수 $n$ 의 다항식이다. 구간 $\lbrack-1,1\rbrack$ 에서 최고차 계수가 $1$ 인 차수 $n$ 다항식 가운데 균등노름이 가장 작은 것이 $2^{1-n}T_n$ 이다.
-
-[Stone–Weierstrass 정리](stone-weierstrass.md)는 다항식으로 연속함수를 균등근사할 수 있다는 것을 주고 차수마다의 오차는 말하지 않는다. Chebyshev 다항식은 차수를 고정했을 때의 최선을 준다.
+**Chebyshev 다항식(Chebyshev polynomials)** 은 $T_n(\cos\theta)=\cos n\theta$ 를 만족하는 차수 $n$ 의 다항식이다. $\lbrack -1,1\rbrack$ 에서 $x^n$ 을 차수가 낮은 다항식으로 근사하면 오차는 최고차 계수가 $1$ 인 $n$ 차 다항식이고, 그런 다항식의 최대 절댓값을 얼마나 작게 할 수 있는지가 이런 문제다. 답은 $2^{1-n}T_n$ 이고, 이 다항식이 $\cos n\theta$ 처럼 $n+1$ 개 점에서 최댓값과 최솟값을 번갈아 갖는 것으로 최선임이 증명된다.
 
 # 직관
+
+구간 $\lbrack-1,1\rbrack$ 에서 최고차 계수가 $1$ 인 차수 $n$ 다항식 가운데 균등노름이 가장 작은 것이 $2^{1-n}T_n$ 이다.
+
+[Stone–Weierstrass 정리](stone-weierstrass.md)는 다항식으로 연속함수를 균등근사할 수 있다는 것을 주고 차수마다의 오차는 말하지 않는다. Chebyshev 다항식은 차수를 고정했을 때의 최선을 준다.
 
 $\lbrack-1,1\rbrack$ 에서 $x^n$ 을 차수 $n-1$ 이하 다항식으로 근사한다. 오차 $x^n-q(x)$ 는 최고차 계수가 $1$ 인 차수 $n$ 다항식이므로, 문제는 그런 다항식 $p$ 의 $\max\_{\lbrack-1,1\rbrack}\vert p\vert$ 를 가장 작게 만드는 것이다.
 

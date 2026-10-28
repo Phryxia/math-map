@@ -2,11 +2,13 @@
 
 # 개요
 
-**Lipschitz 사상(Lipschitz map)** 은 두 점의 거리가 사상을 지나며 일정 비율 이상으로 늘어나지 않는 사상이다. [균등연속](uniform-continuity.md)이 $\varepsilon$ 마다 $\delta$ 를 요구하는 데 비해 Lipschitz 조건은 $\delta$ 를 $\varepsilon$ 의 상수배로 고정한다.
-
-비율의 상한인 Lipschitz 상수가 $1$ 보다 작으면 사상이 거리를 줄이고 반복이 한 점으로 모인다. 이 성질이 미분방정식 해의 유일성과 수치 반복법의 수렴을 준다.
+**Lipschitz 사상(Lipschitz map)** 은 두 점의 거리가 사상을 지나며 일정 비율 이상으로 늘어나지 않는 사상이다. $\sqrt x$ 는 $\lbrack 0,1\rbrack$ 에서 연속이지만 $0$ 근처에서 기울기가 끝없이 커져, $\sqrt x-\sqrt 0$ 이 $x$ 의 몇 배 이하라고 묶을 수 없다. Lipschitz 조건은 $\vert f(x)-f(y)\vert\le L\vert x-y\vert$ 로 기울기의 상한 $L$ 을 요구하고, $L\lt 1$ 이면 반복이 한 점으로 모여 미분방정식 해의 유일성과 반복법의 수렴이 증명된다.
 
 # 직관
+
+[균등연속](uniform-continuity.md)이 $\varepsilon$ 마다 $\delta$ 를 요구하는 데 비해 Lipschitz 조건은 $\delta$ 를 $\varepsilon$ 의 상수배로 고정한다.
+
+비율의 상한인 Lipschitz 상수가 $1$ 보다 작으면 사상이 거리를 줄이고 반복이 한 점으로 모인다. 이 성질이 미분방정식 해의 유일성과 수치 반복법의 수렴을 준다.
 
 ## 기울기의 상한
 
