@@ -2,9 +2,11 @@
 
 # 개요
 
-**Leray–Schauder 차수(Leray–Schauder degree)** 는 [Banach 공간](banach-spaces.md)에서 항등사상의 콤팩트 섭동 $I-T$ 에 붙이는 정수값 불변량이다. 유한차원의 [Brouwer 차수](brouwer-degree.md)를 유한차원 근사의 극한으로 옮긴 것이고, [Schauder 고정점 정리](schauder-fixed-point.md)가 주는 고정점의 존재보다 많은 것, 곧 해의 개수와 매개변수에 따른 해의 분기를 센다.
+**Leray–Schauder 차수(Leray–Schauder degree)** 는 무한차원 공간의 방정식 $x-T(x)=0$ 의 해를 부호를 붙여 세는 정수다. $\mathbb R^n$ 에서는 방정식 $f(x)=0$ 의 해마다 Jacobi 행렬식의 부호를 붙여 더한 값이 연속변형으로 바뀌지 않아, 계산하기 쉬운 사상으로 변형해 값을 구하고 값이 $0$ 이 아니면 해가 있다고 결론한다. Leray–Schauder 차수는 $T$ 가 콤팩트일 때 이 셈을 유한차원 근사의 극한으로 [Banach 공간](banach-spaces.md)에 옮긴다.
 
 # 직관
+
+Leray–Schauder 차수는 Banach 공간에서 항등사상의 콤팩트 섭동 $I-T$ 에 붙이는 정수값 불변량이다. 유한차원의 [Brouwer 차수](brouwer-degree.md)를 유한차원 근사의 극한으로 옮긴 것이고, [Schauder 고정점 정리](schauder-fixed-point.md)가 주는 고정점의 존재보다 많은 것, 곧 해의 개수와 매개변수에 따른 해의 분기를 센다.
 
 $\mathbb R^n$ 의 유계 열린집합 $\Omega$ 에서 $f(x)=0$ 의 해를 센다. $f$ 가 $\partial\Omega$ 에서 $0$ 을 피하고 매끄러우면 해마다 Jacobi 행렬식의 부호를 붙여 더한 값이 차수이고, 이 값은 경계에서 $0$ 을 피하는 연속변형으로 바뀌지 않는다. 그래서 계산하기 쉬운 사상으로 변형해 값을 얻고, 값이 $0$ 이 아니면 해가 있다고 결론한다.
 

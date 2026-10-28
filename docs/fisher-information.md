@@ -2,9 +2,11 @@
 
 # 개요
 
-**Fisher 정보(Fisher information)** 는 관측 하나가 모수에 대해 담은 정보의 양을 재는 행렬이다. 로그가능도의 모수에 대한 도함수인 점수함수의 [공분산](covariance.md)으로 정의하고, 정칙 조건 아래에서 로그가능도의 [Hessian](hessian.md) 의 기댓값의 음수와 같다. 불편추정량의 분산 하한, 최대가능도 추정량의 점근분산, 분포족 위의 [Riemann 계량](riemannian-metrics.md)이 모두 이 행렬로 적힌다.
+**Fisher 정보(Fisher information)** 는 관측값이 모르는 모수를 얼마나 정확히 짚을 수 있는지를 재는 양이다. 동전을 $100$ 번 던져 앞면 확률 $p$ 를 추정하면 표본비율의 분산이 $p=0.5$ 에서 $0.0025$ , $p=0.99$ 에서 $0.0001$ 이어서 같은 횟수로도 정확도가 $25$ 배 차이가 난다. Fisher 정보는 로그가능도가 모수에 따라 얼마나 가파르게 변하는지를 재어 이 차이를 설명하고, 불편추정량의 분산이 그 역수 이상이라는 하한을 준다.
 
 # 직관
+
+Fisher 정보는 관측 하나가 모수에 대해 담은 정보의 양을 재는 행렬이다. 로그가능도의 모수에 대한 도함수인 점수함수의 [공분산](covariance.md)으로 정의하고, 정칙 조건 아래에서 로그가능도의 [Hessian](hessian.md) 의 기댓값의 음수와 같다. 불편추정량의 분산 하한, 최대가능도 추정량의 점근분산, 분포족 위의 [Riemann 계량](riemannian-metrics.md)이 모두 이 행렬로 적힌다.
 
 동전의 앞면 확률 $p$ 를 $n=100$ 번 던져 추정한다. 표본비율 $\hat p=k/n$ 의 분산은 $p(1-p)/n$ 이므로 $p=0.5$ 에서 $0.0025$ , $p=0.99$ 에서 $0.0001$ 이다. 같은 횟수를 던졌는데 참값에 따라 정확도가 $25$ 배 차이가 난다. 차이가 어디서 오는지 로그가능도를 보면 나온다. 앞면이 $k$ 번 나왔을 때 로그가능도와 그 도함수는 다음이다.
 
@@ -94,7 +96,7 @@ $$
 
 - **[최대가능도 추정](maximum-likelihood.md)의 점근분산.** 정칙 조건 아래 $\sqrt n(\hat\theta-\theta)$ 가 평균 $0$ 이고 공분산 $I(\theta)^{-1}$ 인 [정규분포](normal-distribution.md)로 수렴한다. 하한과 일치하므로 최대가능도 추정량이 점근적으로 효율적이다.
 - **[신뢰구간](confidence-intervals.md).** 위의 점근분포에서 $\hat\theta\pm z\_{\alpha/2}\sqrt{(nI(\hat\theta))^{-1}}$ 꼴의 Wald 구간이 나온다. 분모에 관측 Fisher 정보를 넣는 변형도 쓴다.
-- **Fisher scoring.** [Newton 방법](newton-method.md)에서 Hessian 을 $I(\theta)$ 로 바꾼 반복이고, 일반화선형모형의 표준 적합 절차 IRLS(iteratively reweighted least squares)가 그 구체형이다. [지수족](exponential-families.md)의 자연매개화에서는 Hessian 이 이미 공분산이라 두 방법이 일치한다.
+- **Fisher scoring.** [Newton 방법](newton-method.md)에서 Hessian 을 $I(\theta)$ 로 바꾼 반복이고, 일반화선형모형의 표준 적합 절차 IRLS(iteratively reweighted least squares)가 그 구체형이다. 지수족의 자연매개화에서는 Hessian 이 이미 공분산이라 두 방법이 일치한다.
 - **자연 경사법.** 확률분포족 위의 최적화에서 걸음을 $I(\theta)^{-1}\nabla$ 로 잡는다. 유클리드 거리 대신 Fisher–Rao 계량으로 보폭을 재는 것이고, [신뢰영역 정책 최적화](trust-region-policy-optimization.md)의 KL 제약이 이 형태로 풀린다.
 - **실험계획.** 설계 $\xi$ 가 주는 정보행렬 $I(\theta;\xi)$ 의 행렬식을 최대화하는 것이 D 최적 설계이고, 특정 방향의 분산을 줄이려면 $a^{\mathsf T}I^{-1}a$ 를 최소화한다.
 

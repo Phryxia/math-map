@@ -2,9 +2,11 @@
 
 # 개요
 
-**Mordell–Lang 추측(Mordell–Lang conjecture)** 은 [아벨 다양체](abelian-varieties.md)의 부분다양체 $X$ 와 유한생성 부분군 $\Gamma$ 의 교집합을 결정한다. 답은 $X$ 안에 통째로 들어가는 아벨 부분다양체의 잉여류 유한 개다. 종수 $2$ 이상 곡선의 유리점이 유한하다는 [Mordell 추측](faltings-theorem.md)이 이 진술의 한 경우이고, 함수체 경우의 증명은 [Zilber 삼분법](zilber-trichotomy.md)을 쓴다.
+**Mordell–Lang 추측(Mordell–Lang conjecture)** 은 [아벨 다양체](abelian-varieties.md) 안의 부분다양체에 유한생성 부분군의 점이 얼마나 많이 놓일 수 있는지를 정하는 진술이다. 종수 $2$ 이상의 곡선 위 유리점을 세는 문제는 곡선을 그 Jacobian $J$ 에 넣으면 곡선과 유한생성 군 $J(\mathbb Q)$ 가 몇 점에서 만나는가로 바뀐다. 이 진술은 그 교집합이 부분다양체 안에 통째로 들어가는 아벨 부분다양체의 평행이동 유한 개로 덮인다고 답하고, 종수 $2$ 이상의 곡선에 들어가는 아벨 부분다양체는 점뿐이므로 유리점이 유한 개다.
 
 # 직관
+
+Mordell–Lang 추측은 아벨 다양체의 부분다양체 $X$ 와 유한생성 부분군 $\Gamma$ 의 교집합을 결정한다. 답은 $X$ 안에 통째로 들어가는 아벨 부분다양체의 잉여류 유한 개다. 종수 $2$ 이상 곡선의 유리점이 유한하다는 [Mordell 추측](faltings-theorem.md)이 이 진술의 한 경우이고, 함수체 경우의 증명은 [Zilber 삼분법](zilber-trichotomy.md)을 쓴다.
 
 종수 $2$ 이상의 곡선 $C$ 위에 유리점이 몇 개나 있는지 묻는다. $C$ 를 그 Jacobian $J$ 에 넣으면 $C$ 의 유리점은 $C$ 와 $J(\mathbb Q)$ 의 교집합이고, [Mordell–Weil 정리](canonical-height.md)가 $J(\mathbb Q)$ 를 유한생성 군으로 준다. 물음이 "유한생성 부분군과 부분다양체가 몇 점에서 만나는가" 로 바뀐다. 타원곡선 $E$ 에서는 $C=E=J$ 이고 교집합이 $E(\mathbb Q)$ 전체라서 계수가 양수면 무한히 많으므로, 무한을 막는 것은 유한생성 자체가 아니다.
 
