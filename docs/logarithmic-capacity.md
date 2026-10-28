@@ -2,11 +2,13 @@
 
 # 개요
 
-**로그 용량(logarithmic capacity)** 은 복소평면의 콤팩트 집합 $K$ 위 확률측도의 로그 에너지의 최솟값 $V(K)$ 로 $\mathrm{cap}(K)=e^{-V(K)}$ 라 정의하는 양이다. 평면에서 [퍼텐셜 이론](potential-theory.md)의 용량을 로그 핵으로 잰 것이다.
-
-같은 양이 두 가지 다른 최적화 문제에서도 나온다. $K$ 의 점 $n$ 개 사이 거리의 곱을 최대로 한 값의 극한인 초월 지름(transfinite diameter)과, $K$ 에서 최고차 계수 $1$ 인 다항식의 최대 절댓값을 최소로 한 값의 극한인 Chebyshev 상수(Chebyshev constant)가 모두 $\mathrm{cap}(K)$ 와 같다.
+**로그 용량(logarithmic capacity)** 은 평면의 닫힌 유계 집합에 크기를 하나의 길이로 주는 양으로, 그 집합에서 최고차 계수가 $1$ 인 다항식을 얼마나 작게 만들 수 있는지를 잰다. 구간 $\lbrack -1,1\rbrack$ 에서 최고차 계수가 $1$ 인 $n$ 차 다항식의 최대 절댓값을 가장 작게 하면 그 값은 $2^{1-n}$ 이고, 그 $n$ 제곱근은 $n\to\infty$ 에서 $\tfrac12$ 로 간다. 로그 용량은 이 극한값을 집합마다 정하는 양이고, 집합 위 확률측도의 로그 에너지를 최소로 하는 문제로 계산된다.
 
 # 직관
+
+로그 용량은 복소평면의 콤팩트 집합 $K$ 위 확률측도의 로그 에너지의 최솟값 $V(K)$ 로 $\mathrm{cap}(K)=e^{-V(K)}$ 라 정의하는 양이다. 평면에서 [퍼텐셜 이론](potential-theory.md)의 용량을 로그 핵으로 잰 것이다.
+
+같은 양이 두 가지 다른 최적화 문제에서도 나온다. $K$ 의 점 $n$ 개 사이 거리의 곱을 최대로 한 값의 극한인 초월 지름(transfinite diameter)과, $K$ 에서 최고차 계수 $1$ 인 다항식의 최대 절댓값을 최소로 한 값의 극한인 Chebyshev 상수(Chebyshev constant)가 모두 $\mathrm{cap}(K)$ 와 같다.
 
 $K=\lbrack-1,1\rbrack$ 에서 최고차 계수가 $1$ 인 차수 $n$ 다항식 $p$ 의 $\max_K\vert p\vert$ 를 가장 작게 하는 문제는 [Chebyshev 다항식](chebyshev-polynomials.md)이 푼다. 최솟값이 $2^{1-n}$ 이므로 $n$ 제곱근은 $n\to\infty$ 에서 $\tfrac12$ 로 간다.
 

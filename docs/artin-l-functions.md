@@ -2,11 +2,13 @@
 
 # 개요
 
-**Artin L 함수(Artin L-function)** 는 수체의 Galois 확대 $L/K$ 와 Galois 군의 복소 표현 $\rho$ 에 대해, 소 아이디얼마다 Frobenius 원소의 특성다항식으로 Euler 인자를 정해 곱한 함수 $L(s,\rho)$ 다. 자명한 표현에서는 $K$ 의 [Dedekind zeta 함수](dedekind-zeta.md)이고, 1 차원 표현에서는 유체론을 거쳐 Hecke L 함수(Hecke L-function)가 된다.
-
-정칙 표현의 Artin L 함수가 $\zeta_L$ 이므로 $\zeta_L$ 은 기약 표현의 Artin L 함수의 곱으로 분해된다. 자명하지 않은 기약 표현의 $L(s,\rho)$ 가 정함수라는 것이 Artin 추측(Artin conjecture)이다.
+**Artin L 함수(Artin L-function)** 는 수체의 Galois 확대에서 소수가 어떻게 갈라지는지를 Galois 군의 표현마다 모아 적은 함수다. $x^3-2$ 를 $p$ 를 법으로 인수분해하면 $p=31$ 에서는 일차식 셋, $p=5$ 에서는 일차식 하나와 기약 이차식, $p=7$ 에서는 기약 삼차식이 된다. Artin L 함수는 이 갈라지는 모양에 해당하는 Frobenius 원소에서 표현의 특성다항식으로 소수마다 인자를 정하고, 그 인자들을 곱해 갈라짐의 분포를 해석함수로 다룬다.
 
 # 직관
+
+Artin L 함수는 수체의 Galois 확대 $L/K$ 와 Galois 군의 복소 표현 $\rho$ 에 대해, 소 아이디얼마다 Frobenius 원소의 특성다항식으로 Euler 인자를 정해 곱한 함수 $L(s,\rho)$ 다. 자명한 표현에서는 $K$ 의 [Dedekind zeta 함수](dedekind-zeta.md)이고, 1 차원 표현에서는 유체론을 거쳐 Hecke L 함수(Hecke L-function)가 된다.
+
+정칙 표현의 Artin L 함수가 $\zeta_L$ 이므로 $\zeta_L$ 은 기약 표현의 Artin L 함수의 곱으로 분해된다. 자명하지 않은 기약 표현의 $L(s,\rho)$ 가 정함수라는 것이 Artin 추측(Artin conjecture)이다.
 
 $K=\mathbb Q(\sqrt[3]2)$ 의 Dedekind zeta 함수의 Euler 인자는 $x^3-2$ 를 $p$ 를 법으로 인수분해한 모양으로 정해진다. $T=p^{-s}$ 로 쓴다. $p=31$ 에서는 $4^3\equiv2$ 이고 $\mathbb F_{31}$ 이 $1$ 의 원시 세제곱근을 포함하므로 일차식 셋으로 갈라져 인자가 $(1-T)^{-3}$ 이다. $p=5$ 에서는 $3^3\equiv2$ 인 근 하나와 기약 이차식으로 갈라져 $(1-T)^{-1}(1-T^2)^{-1}$ 이고, $p=7$ 에서는 근이 없어 $(1-T^3)^{-1}$ 이다.
 
@@ -55,7 +57,7 @@ $\rho$ 가 1 차원이면 $\rho$ 는 $G$ 의 아벨화를 거치고, [유체론]
 
 ## 함수방정식과 도체
 
-무한 자리의 감마 인자와 [분기군](ramification-groups.md)으로 정한 Artin 도체 $\mathfrak f(\rho)$ 를 붙인 완비 $L$ 함수 $\Lambda(s,\rho)$ 는
+무한 자리의 감마 인자와 분기군으로 정한 Artin 도체 $\mathfrak f(\rho)$ 를 붙인 완비 $L$ 함수 $\Lambda(s,\rho)$ 는
 
 $$
 \Lambda(s,\rho)=W(\rho)\thinspace\Lambda(1-s,\bar\rho),\qquad\vert W(\rho)\vert=1
@@ -70,7 +72,7 @@ Artin 추측은 자명하지 않은 기약 표현 $\rho$ 의 $L(s,\rho)$ 가 정
 # 활용
 
 - [Chebotarev 밀도 정리](chebotarev.md): $\sum_{\mathrm{Frob}\_p\in C}p^{-s}$ 를 지표의 직교성으로 $\log L(s,\rho)$ 들의 일차결합으로 쓰고, $s=1$ 에서 $\zeta_K$ 만 극을 갖고 나머지는 $0$ 이 아니라는 것에서 밀도 $\char35{}C/\char35{}G$ 가 나온다.
-- [Dedekind zeta 함수](dedekind-zeta.md): $\zeta_L/\zeta_K$ 가 자명하지 않은 기약 표현의 $L$ 함수의 곱이므로, Artin 추측은 $\zeta_L/\zeta_K$ 가 정함수라는 Dedekind 추측을 포함한다.
+- Dedekind zeta 함수: $\zeta_L/\zeta_K$ 가 자명하지 않은 기약 표현의 $L$ 함수의 곱이므로, Artin 추측은 $\zeta_L/\zeta_K$ 가 정함수라는 Dedekind 추측을 포함한다.
 - [Langlands 강령](langlands-program.md): $n$ 차원 Artin 표현마다 $\mathrm{GL}\_n$ 의 자기동형 표현이 대응하여 $L$ 함수가 같다는 진술이 강한 Artin 추측이다.
 
 [^1]: J. Neukirch, *Algebraic Number Theory*, Grundlehren 322, Springer, 1999, 7장 10절과 11절.
