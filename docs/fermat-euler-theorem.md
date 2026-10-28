@@ -2,9 +2,11 @@
 
 # 개요
 
-**Euler 정리(Euler's theorem)** 는 법 $n$ 과 서로 소인 정수 $a$ 에 대해 $a^{\varphi(n)}\equiv 1 \pmod n$ 이라는 정리이고, **Fermat 소정리(Fermat's little theorem)** 는 $n$ 이 소수인 경우다. 두 정리는 모듈러 거듭제곱이 지수에 관해 주기적임을 말하며, 근거는 [군](groups.md)의 Lagrange 정리다. 이 주기성을 모듈러 역원 계산, 큰 지수의 축약, **RSA**(Rivest–Shamir–Adleman)의 정확성, 확률적 소수판정이 쓴다.
+**Euler 정리(Euler's theorem)** 는 거듭제곱을 법 $n$ 으로 나눈 나머지가 주기적으로 되풀이된다는 정리이고, **Fermat 소정리(Fermat's little theorem)** 는 $n$ 이 소수인 경우다. $3^{1000}$ 을 $7$ 로 나눈 나머지를 구하려면 곱셈을 천 번 해야 할 것 같지만, $3$ 의 거듭제곱을 $7$ 로 나눈 나머지는 $3,2,6,4,5,1$ 로 여섯 번마다 되풀이된다. 이 정리는 법 $n$ 과 서로소인 $a$ 에 대해 $a^{\varphi(n)}\equiv 1 \pmod n$ 임을 보여, 지수를 $\varphi(n)$ 으로 나눈 나머지로 줄여 계산하게 한다.
 
 # 직관
+
+두 정리의 근거는 [군](groups.md)의 Lagrange 정리다. 이 주기성을 모듈러 역원 계산, 큰 지수의 축약, **RSA**(Rivest–Shamir–Adleman)의 정확성, 확률적 소수판정이 사용한다.
 
 법 7에서 3의 거듭제곱을 나열한다.
 
