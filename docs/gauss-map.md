@@ -2,15 +2,17 @@
 
 # 개요
 
-**Gauss 사상(Gauss map)** 은 [연분수](continued-fractions.md) 전개의 한 걸음을 주는 변환이다.
+**Gauss 사상(Gauss map)** 은 [연분수](continued-fractions.md) 전개의 한 걸음을 주는 변환이다. 연분수 전개의 부분몫 $a_1,a_2,\dots$ 는 수마다 달라서, 보통의 실수에서 부분몫 $1$ 이 얼마나 자주 나오는지는 수를 하나씩 전개해서는 알 수 없다. Gauss 사상은 $x$ 에서 첫 부분몫을 떼어 낸 나머지를 주므로, 부분몫의 통계가 이 사상을 되풀이한 궤도의 통계가 되어 [에르고딕 정리](ergodic-theorem.md)로 계산된다.
+
+# 직관
+
+Gauss 사상은 다음과 같다.
 
 $$
 T:\lbrack 0,1)\to\lbrack 0,1),\qquad Tx=\frac1x-\Big\lfloor\frac1x\Big\rfloor\quad(x\ne0),\qquad T0=0
 $$
 
-$x$ 의 부분몫은 $a_n=\lfloor 1/T^{n-1}x\rfloor$ 이므로 연분수 전개의 통계는 $T$ 의 궤도의 통계다. $T$ 는 Gauss 측도를 보존하고 그에 대해 에르고딕이어서, [에르고딕 정리](ergodic-theorem.md)가 거의 모든 실수의 부분몫 분포를 준다.
-
-# 직관
+$x$ 의 부분몫은 $a_n=\lfloor 1/T^{n-1}x\rfloor$ 이다. $T$ 는 Gauss 측도를 보존하고 그에 대해 에르고딕이다.
 
 연분수 전개의 부분몫 $a_1,a_2,\dots$ 는 수마다 다르다. 특정한 수를 고르지 않고 보통의 실수에서 $a_n$ 이 어떤 값을 얼마나 자주 갖는지 물으려면 값마다 그 값을 주는 $x$ 들의 크기를 재야 한다.
 
