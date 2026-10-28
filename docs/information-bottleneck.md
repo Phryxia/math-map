@@ -2,15 +2,17 @@
 
 # 개요
 
-**정보 병목(information bottleneck)** 은 입력 $X$ 를 압축한 $T$ 가운데 목표 $Y$ 에 대한 정보를 가장 많이 남기는 것을 찾는 문제다.
+**정보 병목(information bottleneck)** 은 입력을 짧게 요약하되 맞히려는 목표에 대한 정보는 최대한 남기는 요약을 찾는 문제다. 손글씨 숫자 사진에서 어느 숫자인지 맞히려면 획의 굵기나 기울기는 버려도 되지만 획의 모양은 남겨야 한다. 정보 병목은 요약이 입력에 대해 갖는 정보량과 목표에 대해 갖는 정보량을 상호정보량으로 재고, 앞의 것을 줄이고 뒤의 것을 늘리는 요약을 최적화로 찾는다.
+
+# 직관
+
+정보 병목은 입력 $X$ 를 압축한 $T$ 가운데 목표 $Y$ 에 대한 정보를 가장 많이 남기는 것을 찾는 문제다.
 
 $$
 \min_{p(t\mid x)}\thinspace I(X;T)-\beta\thinspace I(T;Y)
 $$
 
 $I$ 는 상호정보량이고 $\beta\gt 0$ 이 압축과 예측의 교환비다. [율왜곡 이론](rate-distortion-theory.md)과 형태가 같지만 왜곡 측도가 미리 주어지지 않고 목표 변수 $Y$ 에 대한 예측 손실로 정해진다.
-
-# 직관
 
 손글씨 이미지로 숫자를 맞힌다. 이미지는 픽셀 $784$ 개이고 표본은 수천 장이라 픽셀을 그대로 쓰면 변수가 표본보다 많다. 픽셀 수를 줄여야 한다.
 
@@ -50,7 +52,7 @@ $$
 p(t)=\sum_x p(x)\thinspace p(t\mid x),\qquad p(y\mid t)=\frac{1}{p(t)}\sum_x p(x,y)\thinspace p(t\mid x)
 $$
 
-$Z(x,\beta)$ 는 정규화 상수다. 세 식을 번갈아 대입하는 반복이 [율왜곡 이론](rate-distortion-theory.md)의 Blahut–Arimoto 반복과 같은 꼴이고, 왜곡이 $d(x,t)=\mathrm{KL}(p(y\mid x)\Vert p(y\mid t))$ 로 읽힌다. 율왜곡 쪽과 달리 이 왜곡은 $p(y\mid t)$ 를 통해 해에 의존하므로 반복마다 바뀐다.
+$Z(x,\beta)$ 는 정규화 상수다. 세 식을 번갈아 대입하는 반복이 율왜곡 이론의 Blahut–Arimoto 반복과 같은 꼴이고, 왜곡이 $d(x,t)=\mathrm{KL}(p(y\mid x)\Vert p(y\mid t))$ 로 읽힌다. 율왜곡 쪽과 달리 이 왜곡은 $p(y\mid t)$ 를 통해 해에 의존하므로 반복마다 바뀐다.
 
 ```javascript
 function informationBottleneck(pxy, beta, cards, iters) {

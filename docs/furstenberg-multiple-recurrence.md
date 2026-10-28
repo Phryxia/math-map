@@ -2,15 +2,17 @@
 
 # 개요
 
-**Furstenberg 다중 되돌이 정리(Furstenberg multiple recurrence theorem)** 는 확률공간의 측도보존변환 $T$ 와 측도가 양수인 집합 $E$, 정수 $k\ge 1$ 에 대해
+**Furstenberg 다중 되돌이 정리(Furstenberg multiple recurrence theorem)** 는 넓이를 지키며 점들을 옮기는 변환을 되풀이할 때, 넓이가 양수인 집합에서 출발해 같은 간격으로 여러 번 그 집합에 다시 들어오는 점이 있다는 정리다. 원을 각 $\alpha$ 만큼 돌리는 변환에서 호 $E$ 를 잡으면, 어떤 $n\ge 1$ 에 대해 $x$, $x+n\alpha$, $x+2n\alpha$ 가 모두 $E$ 에 드는 점 $x$ 가 있다. 이 정리를 정수 집합으로 옮기면, 밀도가 양수인 정수 집합이 임의로 긴 등차수열을 포함한다는 [Szemerédi 정리](szemeredi-theorem.md)가 증명된다.
+
+# 직관
+
+Furstenberg 다중 되돌이 정리는 확률공간의 측도보존변환 $T$ 와 측도가 양수인 집합 $E$, 정수 $k\ge 1$ 에 대해
 
 $$
 \mu\big(E\cap T^{-n}E\cap T^{-2n}E\cap\cdots\cap T^{-kn}E\big)\gt 0
 $$
 
-인 $n\ge 1$ 이 존재한다는 정리다. H. Furstenberg 가 1977 년에 증명했고, 정수 집합을 측도보존계로 옮기는 대응 원리와 합쳐 [Szemerédi 정리](szemeredi-theorem.md)의 두 번째 증명이 되었다[^1].
-
-# 직관
+인 $n\ge 1$ 이 존재한다는 정리다. H. Furstenberg 가 1977 년에 증명했고, 정수 집합을 측도보존계로 옮기는 대응 원리와 합쳐 Szemerédi 정리의 두 번째 증명이 되었다[^1].
 
 양의 정수의 집합 $A$ 가 세 수짜리 등차수열 $a,a+n,a+2n$ 을 포함한다는 것은 $a$ 가 $A$, $A-n$, $A-2n$ 에 동시에 속한다는 것이다. 수 전체를 $1$ 씩 미는 이동을 $T$ 라 하면 $A-n$ 은 $A$ 를 $n$ 번 민 집합이다. 그러면 질문은 "집합을 $n$ 번, $2n$ 번 민 것이 원래 집합과 함께 겹치는 $n$ 이 있는가" 가 된다.
 
@@ -80,7 +82,7 @@ $$
 
 # 활용
 
-- [Szemerédi 정리](szemeredi-theorem.md). 대응 원리와 이 정리로 증명된다.
+- Szemerédi 정리. 대응 원리와 이 정리로 증명된다.
 - [van der Waerden 정리](van-der-waerden-theorem.md)의 다항식 판본. Bergelson–Leibman 의 다항식 다중 되돌이에 대응 원리를 적용하면 유한 색칠의 한 색에 $a,a+p_1(n),\dots,a+p_k(n)$ 꼴이 나온다.
 - [Hales–Jewett 정리](hales-jewett-theorem.md)의 밀도판. Furstenberg 와 Katznelson 은 같은 방법을 확장해 밀도 Hales–Jewett 정리를 증명했다[^7].
 
