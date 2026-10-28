@@ -2,11 +2,13 @@
 
 # 개요
 
-**강 측도 영집합(strong measure zero set)** 은 구간의 길이를 미리 정해 주어도 그 길이대로 덮을 수 있는 실수 집합이다. Lebesgue [측도](measure.md)가 $0$ 인 집합은 길이의 합만 작으면 되므로 조건이 더 약하다.
-
-가산 집합은 강 측도 영집합이고, [Cantor 집합](cantor-set.md)은 측도가 $0$ 이지만 강 측도 영집합이 아니다.
+**강 측도 영집합(strong measure zero set)** 은 구간의 길이를 미리 하나씩 정해 주어도 그 길이대로 덮을 수 있는 실수의 집합이다. 셀 수 있는 집합 $\lbrace x_1,x_2,\dots\rbrace$ 는 길이 $\varepsilon_1,\varepsilon_2,\dots$ 가 주어지면 $x_n$ 을 길이 $\varepsilon_n$ 인 구간으로 덮어 끝나지만, [Cantor 집합](cantor-set.md)은 길이의 합을 얼마든지 작게 덮을 수 있는데도 아주 빨리 줄어드는 길이의 열을 정해 주면 덮을 수 없다. 강 측도 영집합은 길이가 $0$ 인 집합 가운데 더 작은 부류를 가르고, 이 부류가 셀 수 있는 집합뿐이라는 [Borel 추측](borel-conjecture.md)은 집합론의 공리로 증명도 반증도 되지 않는다.
 
 # 직관
+
+강 측도 영집합은 구간의 길이를 미리 정해 주어도 그 길이대로 덮을 수 있는 실수 집합이다. Lebesgue [측도](measure.md)가 $0$ 인 집합은 길이의 합만 작으면 되므로 조건이 더 약하다.
+
+가산 집합은 강 측도 영집합이고, Cantor 집합은 측도가 $0$ 이지만 강 측도 영집합이 아니다.
 
 $\lbrack 0,1\rbrack$ 안의 유리수를 덮을 때 $n$ 번째 유리수에 길이 $\varepsilon/2^n$ 인 구간을 주면 길이의 합이 $\varepsilon$ 이고, 이 덮개는 구간의 길이를 덮는 쪽에서 골라 만들었다. 길이가 미리 주어진 경우로 조건을 바꾼다. 양수열 $\varepsilon\_1,\varepsilon\_2,\dots$ 이 먼저 주어져도, 유리수를 $q\_1,q\_2,\dots$ 로 줄 세우고 $q\_n$ 에 길이 $\varepsilon\_n$ 인 구간을 주면 모든 유리수가 덮인다. 유리수 하나에 구간 하나씩 돌아가므로 길이가 무엇이든 덮는 데 문제가 없다.
 
@@ -44,7 +46,7 @@ $\varepsilon\_n=\varepsilon/2^n$ 을 주면 얻는 덮개의 길이 합이 $\var
 
 ## Borel 추측
 
-모든 강 측도 영집합이 가산이라는 명제가 [Borel 추측](borel-conjecture.md)이다. [Luzin 집합](luzin-sierpinski-sets.md)이 비가산이면서 강 측도 영집합이므로 연속체 가설 아래에서는 거짓이다. Laver 는 가산지지 반복 강제법으로 Borel 추측이 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)와 무모순임을 보였다.[^3]
+모든 강 측도 영집합이 가산이라는 명제가 Borel 추측이다. [Luzin 집합](luzin-sierpinski-sets.md)이 비가산이면서 강 측도 영집합이므로 연속체 가설 아래에서는 거짓이다. Laver 는 가산지지 반복 강제법으로 Borel 추측이 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)와 무모순임을 보였다.[^3]
 
 # 활용
 

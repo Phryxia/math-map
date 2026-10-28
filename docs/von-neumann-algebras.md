@@ -2,11 +2,13 @@
 
 # 개요
 
-**von Neumann 대수(von Neumann algebra)** 는 [Hilbert 공간](hilbert-spaces.md) $H$ 의 [유계 작용소](bounded-operators.md) 대수 $B(H)$ 의 부분대수 가운데 항등원을 포함하고 수반작용소에 닫히고 약작용소 위상(weak operator topology)에서 닫힌 것이다.
-
-이 조건은 자기 교환자를 두 번 취해 제자리로 돌아온다는 대수적 조건과 같다. 이중교환자 정리가 그 동치를 준다.
+**von Neumann 대수(von Neumann algebra)** 는 무한차원 공간 위의 작용소들의 대수 가운데, 극한을 취해도 그 밖으로 나가지 않는 것이다. 구간 $\lbrack 0,1\rbrack$ 위의 함수에 $x$ 를 곱하는 작용소를 다항식으로 결합하면 다항식을 곱하는 작용소만 얻지만, 극한을 허용하면 $\lbrack 0,1/2\rbrack$ 에서 $1$ 이고 나머지에서 $0$ 인 함수를 곱하는 작용소, 곧 함수를 반 구간으로 잘라내는 사영도 들어온다. von Neumann 대수는 이런 극한에 닫혀 있어 사영을 충분히 많이 포함하고, 그 사영들의 크기를 비교해 대수를 분류한다.
 
 # 직관
+
+von Neumann 대수는 [Hilbert 공간](hilbert-spaces.md) $H$ 의 [유계 작용소](bounded-operators.md) 대수 $B(H)$ 의 부분대수 가운데 항등원을 포함하고 수반작용소에 닫히고 약작용소 위상(weak operator topology)에서 닫힌 것이다.
+
+이 조건은 자기 교환자를 두 번 취해 제자리로 돌아온다는 대수적 조건과 같다. 이중교환자 정리가 그 동치를 준다.
 
 자기수반 작용소 하나는 [스펙트럼 정리](spectral-theorem.md)로 다룬다. 사영측도 $E$ 가 있어 $A=\int\lambda\thinspace dE(\lambda)$ 이고, $A$ 의 함수는 사영 $E(S)$ 들의 적분으로 적힌다. 작용소 하나를 아는 것은 사영 한 묶음을 아는 것이다.
 
