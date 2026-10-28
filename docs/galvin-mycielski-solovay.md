@@ -2,11 +2,13 @@
 
 # 개요
 
-**Galvin–Mycielski–Solovay 정리(Galvin–Mycielski–Solovay theorem)** 는 [강 측도 영집합](strong-measure-zero.md)을 덧셈과 [Baire 범주](baire-category.md)로 특징짓는다. $X\subseteq\mathbb R$ 이 강 측도 영집합인 것은 모든 제1범주 집합 $M$ 에 대해 $X+M$ 이 직선 전체가 되지 않는 것과 같다.
-
-강 측도 영집합의 정의는 구간의 길이를 쓰고 이 특징은 쓰지 않는다. 그래서 거리가 없는 위상군에서도 오른쪽 조건은 그대로 뜻을 가진다.
+**Galvin–Mycielski–Solovay 정리(Galvin–Mycielski–Solovay theorem)** 는 실수의 집합이 아주 작다는 한 기준을 길이 대신 평행이동으로 판정하는 정리다. 셀 수 있는 집합 $X$ 는 미리 정한 어떤 양수 길이들의 열에 대해서도 그 길이의 구간들로 덮이고, 이 성질을 가진 집합을 [강 측도 영집합](strong-measure-zero.md)이라 한다. 이 정리는 $X$ 가 강 측도 영집합인 것과, 어디에도 빽빽하지 않은 집합을 셀 수 있게 모은 집합 $M$ 을 $X$ 의 원소마다 평행이동해 합쳐도 직선 전체를 덮지 못하는 것이 동치임을 보이고, 이것으로 길이가 없는 위상군에서도 같은 개념을 쓴다.
 
 # 직관
+
+Galvin–Mycielski–Solovay 정리는 강 측도 영집합을 덧셈과 [Baire 범주](baire-category.md)로 특징짓는다. $X\subseteq\mathbb R$ 이 강 측도 영집합인 것은 모든 제1범주 집합 $M$ 에 대해 $X+M$ 이 직선 전체가 되지 않는 것과 같다.
+
+강 측도 영집합의 정의는 구간의 길이를 쓰고 이 특징은 쓰지 않는다. 그래서 거리가 없는 위상군에서도 오른쪽 조건은 그대로 뜻을 가진다.
 
 강 측도 영집합인지 보려면 양수열마다 그 길이에 맞는 덮개를 만들어야 한다. 가산 집합 $X=\lbrace x\_1,x\_2,\dots\rbrace$ 는 점마다 구간 하나를 주면 되고, 같은 결론이 길이를 쓰지 않고도 나온다. 제1범주 집합 $M$ 을 아무거나 잡으면
 
@@ -14,7 +16,7 @@ $$
 X+M=\bigcup\_{n\ge1}(x\_n+M)
 $$
 
-이고 평행이동이 제1범주를 보존하므로 오른쪽은 제1범주 집합의 가산 합집합이다. [Baire 범주 정리](baire-category.md)로 $\mathbb R$ 는 제1범주가 아니므로 $X+M\neq\mathbb R$ 이다.
+이고 평행이동이 제1범주를 보존하므로 오른쪽은 제1범주 집합의 가산 합집합이다. Baire 범주 정리로 $\mathbb R$ 는 제1범주가 아니므로 $X+M\neq\mathbb R$ 이다.
 
 [Cantor 집합](cantor-set.md) $C$ 에서는 같은 덧셈이 직선을 채운다. $M=C+\mathbb Z$ 는 조밀하지 않은 닫힌 집합을 가산 개 합친 것이라 제1범주다. $x\in\lbrack 0,2\rbrack$ 에 대해 $x/2$ 의 삼진 전개에서 자리값 $0,1,2$ 를 각각 $(0,0),(0,2),(2,2)$ 로 가르면 $u,v\in C$ 와 $u+v=x$ 를 얻으므로 $C+C=\lbrack 0,2\rbrack$ 이고, 따라서 $C+M=\lbrack 0,2\rbrack+\mathbb Z=\mathbb R$ 이다. Cantor 집합이 강 측도 영집합이 아니라는 것이 길이 대신 덧셈으로 판정된다.
 

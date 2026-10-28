@@ -2,11 +2,13 @@
 
 # 개요
 
-**p 진 다중 zeta 값(p-adic multiple zeta value)** 은 사영직선에서 $0,1,\infty$ 를 뺀 공간 위의 반복 [Coleman 적분](coleman-integration.md)으로 정의되는 $\mathbb Q_p$ 의 수다. [다중 zeta 값](multiple-zeta-values.md)의 반복 적분 표현에서 복소 적분을 $p$ 진 적분으로 바꾼 것이다.
-
-급수 표현이 $p$ 진수체에서 수렴하지 않으므로 급수에서 나오는 관계는 그대로 옮겨지지 않는다. 반복 적분에서 나오는 셔플 관계는 그대로 성립한다.
+**p 진 다중 zeta 값(p-adic multiple zeta value)** 은 $\zeta(2)=1+1/4+1/9+\cdots$ 같은 수와 그 여러 겹 판본을 $p$ 진수로 옮긴 수다. $\zeta(3,1)=\sum_{m\gt n\ge 1}1/(m^3n)$ 같은 이중 합은 실수에서 수렴하지만, $p$ 진 절댓값으로는 $m$ 이 $p$ 의 배수인 항이 커서 같은 합이 수렴하지 않는다. p 진 다중 zeta 값은 이 수를 합 대신 반복 적분으로 적은 뒤 그 적분을 $p$ 진 적분으로 바꿔 정의하고, 그러면 반복 적분에서 나오는 관계식이 $p$ 진 판본에서도 성립한다.
 
 # 직관
+
+p 진 다중 zeta 값은 사영직선에서 $0,1,\infty$ 를 뺀 공간 위의 반복 [Coleman 적분](coleman-integration.md)으로 정의되는 $\mathbb Q_p$ 의 수다. [다중 zeta 값](multiple-zeta-values.md)의 반복 적분 표현에서 복소 적분을 $p$ 진 적분으로 바꾼 것이다.
+
+급수 표현이 $p$ 진수체에서 수렴하지 않으므로 급수에서 나오는 관계는 그대로 옮겨지지 않는다. 반복 적분에서 나오는 셔플 관계는 그대로 성립한다.
 
 [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md)는 $\zeta(1-k)$ 의 값들을 $p$ 진수체에서 보간한다. 깊이 $2$ 이상의 다중 zeta 값에 같은 일을 하려면 먼저 그 값을 $p$ 진수로 적어야 한다. 급수
 
@@ -104,9 +106,9 @@ $$
 
 # 활용
 
-- [Coleman 적분](coleman-integration.md): 반복 Coleman 적분이 쓰이는 자리 가운데 끝점이 특이점인 경우다. 접기저점 정규화가 그 특이점을 처리한다.
-- [다중 zeta 값](multiple-zeta-values.md): 복소수 쪽 값과 $p$ 진 쪽 값이 같은 단어로 매개되므로, 단어 사이의 등식 가운데 어느 것이 적분의 형식적 성질에서 오고 어느 것이 급수에서 오는지가 두 쪽의 비교로 갈린다.
-- [Kubota–Leopoldt p 진 zeta 함수](kubota-leopoldt-zeta.md): 깊이 $1$ 의 값이 이 함수의 값이다.
+- Coleman 적분: 반복 Coleman 적분이 쓰이는 자리 가운데 끝점이 특이점인 경우다. 접기저점 정규화가 그 특이점을 처리한다.
+- 다중 zeta 값: 복소수 쪽 값과 $p$ 진 쪽 값이 같은 단어로 매개되므로, 단어 사이의 등식 가운데 어느 것이 적분의 형식적 성질에서 오고 어느 것이 급수에서 오는지가 두 쪽의 비교로 갈린다.
+- Kubota–Leopoldt p 진 zeta 함수: 깊이 $1$ 의 값이 이 함수의 값이다.
 - [Chabauty–Kim 방법](chabauty-kim.md): $X$ 의 $p$ 진 단일값 군을 쓰는 구성이고, 그 군의 좌표 함수가 $p$ 진 다중 로그와 $p$ 진 다중 zeta 값으로 적힌다.
 
 [^1]: Hidekazu Furusho, "p-adic multiple zeta values I — p-adic multiple polylogarithms and the p-adic KZ equation", *Inventiones Mathematicae* **155** (2004), 253–286.
