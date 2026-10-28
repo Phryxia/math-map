@@ -2,11 +2,13 @@
 
 # 개요
 
-**Knuth–Morris–Pratt 알고리즘(Knuth–Morris–Pratt algorithm)** 은 길이 $m$ 인 패턴 $P$ 가 길이 $n$ 인 본문 $T$ 에 나타나는 자리를 모두 $O(n+m)$ 시간에 찾는 문자열 검색 알고리즘이다. 패턴에서 실패 함수(failure function)를 미리 계산해 두어, 글자가 어긋나도 본문의 읽은 자리로 되돌아가지 않는다. Knuth, Morris, Pratt 가 1977 년에 발표했다[^1].
-
-실패 함수는 언어 $\Sigma^\ast P$ 를 받는 [유한 오토마타](finite-automata.md)의 전이를 상태 $m+1$ 개와 함숫값 $m$ 개로 나타낸 것이다.
+**Knuth–Morris–Pratt 알고리즘(Knuth–Morris–Pratt algorithm)** 은 긴 본문에서 짧은 패턴이 나타나는 자리를, 본문에서 이미 읽은 글자로 돌아가지 않고 모두 찾는 알고리즘이다. 패턴 $\mathtt{ababc}$ 를 본문 $\mathtt{abababc}$ 에서 찾으면 첫 자리에서 $\mathtt{abab}$ 까지 맞다가 어긋나는데, 패턴을 한 칸 밀어 처음부터 다시 비교하면 읽은 글자를 또 읽어 비교가 최악 $nm$ 번에 이른다. 이 알고리즘은 맞은 부분 $\mathtt{abab}$ 의 끝이 패턴의 앞부분 $\mathtt{ab}$ 와 같다는 정보를 패턴에서 미리 계산해 두고, 어긋나면 본문은 그대로 둔 채 패턴만 그만큼 옮겨 비교를 $O(n+m)$ 번으로 줄인다.
 
 # 직관
+
+Knuth–Morris–Pratt 알고리즘은 길이 $m$ 인 패턴 $P$ 가 길이 $n$ 인 본문 $T$ 에 나타나는 자리를 모두 $O(n+m)$ 시간에 찾는 문자열 검색 알고리즘이다. 패턴에서 실패 함수(failure function)를 미리 계산해 두어, 글자가 어긋나도 본문의 읽은 자리로 되돌아가지 않는다. Knuth, Morris, Pratt 가 1977 년에 발표했다[^1].
+
+실패 함수는 언어 $\Sigma^\ast P$ 를 받는 [유한 오토마타](finite-automata.md)의 전이를 상태 $m+1$ 개와 함숫값 $m$ 개로 나타낸 것이다.
 
 패턴 $P=\mathtt{ababc}$ 를 본문 $T=\mathtt{abababc}$ 에서 찾는다. 첫 자리에 맞대면 $\mathtt{abab}$ 까지 맞고 다섯째 글자에서 $T$ 의 $\mathtt a$ 와 $P$ 의 $\mathtt c$ 가 어긋난다. 패턴을 한 칸씩 밀며 처음부터 다시 비교하면, 이미 읽은 본문 글자를 다시 읽어서 최악의 경우 비교가 $nm$ 번 가까이 든다.
 
@@ -84,7 +86,7 @@ $$
 \delta(q,a)=\begin{cases}q+1 & q\lt m,\ a=p_{q+1}\cr \delta(\pi(q),a) & q\ge 1,\ \text{그 밖}\cr 0 & q=0,\ a\ne p_1\end{cases}
 $$
 
-상태 $q$ 는 지금까지 읽은 문자열의 접미사 가운데 $P$ 의 접두사인 가장 긴 것의 길이이고, 이 오토마타는 상태가 가장 적다. $q\lt q'$ 이면 길이 $m-q'$ 인 문자열 $p_{q'+1}\cdots p_m$ 이 $q'$ 에서는 받아들여지고 $q$ 에서는 길이가 모자라 받아들여지지 않으므로, [유한 오토마타](finite-automata.md)의 Myhill–Nerode 정리로 상태를 합칠 수 없다. 표 전체는 $(m+1)\lvert\Sigma\rvert$ 칸이고, 실패 함수는 같은 전이를 $m$ 개의 값으로 적는다.
+상태 $q$ 는 지금까지 읽은 문자열의 접미사 가운데 $P$ 의 접두사인 가장 긴 것의 길이이고, 이 오토마타는 상태가 가장 적다. $q\lt q'$ 이면 길이 $m-q'$ 인 문자열 $p_{q'+1}\cdots p_m$ 이 $q'$ 에서는 받아들여지고 $q$ 에서는 길이가 모자라 받아들여지지 않으므로, 유한 오토마타의 Myhill–Nerode 정리로 상태를 합칠 수 없다. 표 전체는 $(m+1)\lvert\Sigma\rvert$ 칸이고, 실패 함수는 같은 전이를 $m$ 개의 값으로 적는다.
 
 # 활용
 
