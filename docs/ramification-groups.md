@@ -2,11 +2,13 @@
 
 # 개요
 
-**분기군(ramification groups)** 은 수체나 국소체의 Galois 확대에서 한 소 아이디얼을 고정하는 Galois 원소들을 그 원소가 정수를 얼마나 적게 움직이는지에 따라 거른 부분군의 열이다. 첫 두 항이 분해군과 관성군이고, 그 아래 항들이 야생 분기의 깊이를 잰다.
-
-분해군을 관성군으로 나눈 몫은 잉여체 확대의 Galois 군이고 Frobenius 원소가 생성한다. 분기군의 크기를 더하면 판별식과 도체가 계산된다.
+**분기군(ramification groups)** 은 수 체계를 넓혔을 때 소수가 겹쳐 갈라지는 정도를 대칭군의 부분군 열로 잰 것이다. 가우스 정수에서 $2=-i(1+i)^2$ 이므로 소수 $2$ 는 같은 소인수 $1+i$ 의 제곱으로 갈라진다. 켤레 $a+bi\mapsto a-bi$ 는 $1+i$ 를 $1-i=-i(1+i)$ 로 보내 이 소인수를 고정하고, 나머지를 $1+i$ 로 나눈 값도 바꾸지 않는다. 분기군은 대칭이 나머지를 얼마나 깊은 자리까지 바꾸지 않는지로 부분군을 거르고, 그 크기로 판별식과 도체를 계산한다.
 
 # 직관
+
+분기군은 수체나 국소체의 Galois 확대에서 한 소 아이디얼을 고정하는 Galois 원소들을 그 원소가 정수를 얼마나 적게 움직이는지에 따라 거른 부분군의 열이다. 첫 두 항이 분해군과 관성군이고, 그 아래 항들이 야생 분기의 깊이를 잰다.
+
+분해군을 관성군으로 나눈 몫은 잉여체 확대의 Galois 군이고 Frobenius 원소가 생성한다. 분기군의 크기를 더하면 판별식과 도체가 계산된다.
 
 $\mathbb Q(i)/\mathbb Q$ 의 Galois 군은 켤레 $\sigma$ 와 항등사상의 $\lbrace1,\sigma\rbrace$ 이고, [대수적 수체](algebraic-number-fields.md)의 분해에서 소수는 세 가지로 갈린다. $5=(2+i)(2-i)$ 는 분해되고, $3$ 은 소수로 남고, $2=-i(1+i)^2$ 는 분기한다.
 
@@ -93,7 +95,7 @@ $$
 - [원분체](cyclotomic-fields.md): $\mathbb Q(\zeta_n)$ 에서 $p\nmid n$ 의 Frobenius 가 $\sigma_p$ 이고, $p\mid n$ 의 관성군이 $(\mathbb Z/p^k\mathbb Z)^{\times}$ 다.
 - [Galois 표현](galois-representations.md): 관성군이 자명하게 작용하는 자리가 불분기 자리이고, 그 자리에서 $\rho(\mathrm{Frob})$ 의 특성다항식이 $L$ 함수의 Euler 인자를 정한다.
 - [Serre 추측](serre-conjecture.md): 표현의 준위는 $p$ 밖 자리의 Artin 도체로, 무게는 $p$ 자리 관성군의 작용으로 정한다.
-- [국소 유체론](local-class-field-theory.md): 상호사상이 단원군의 여과를 상첨자 분기군으로 보낸다.
+- 국소 유체론: 상호사상이 단원군의 여과를 상첨자 분기군으로 보낸다.
 
 [^1]: J.-P. Serre, *Local Fields*, Graduate Texts in Mathematics 67, Springer, 1979, 1장 7절, 4장, 6장.
 

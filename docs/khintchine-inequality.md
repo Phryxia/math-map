@@ -2,11 +2,13 @@
 
 # 개요
 
-**Khintchine 부등식(Khintchine inequality)** 은 무작위 부호를 붙인 합 $\sum_j\varepsilon_ja_j$ 의 $L^p$ 노름이 계수의 $\ell^2$ 노름과 상수배로 동등하다는 것이다. 상수는 $p$ 에만 의존하고 항의 개수와 계수에 의존하지 않는다.
-
-$p=2$ 에서는 직교성으로 등식이 성립한다. 이 부등식은 그 등식이 모든 $p$ 에서 상수배까지 유지됨을 말한다.
+**Khintchine 부등식(Khintchine inequality)** 은 수들에 동전으로 정한 부호를 붙여 더한 합의 크기가, 수들의 제곱합의 제곱근과 상수배 안에서 같다는 부등식이다. 수 $a_1,\dots,a_n$ 에 $+$ 와 $-$ 를 무작위로 붙여 더하면 그 합의 제곱의 평균은 정확히 $a_1^2+\cdots+a_n^2$ 이다. 제곱 대신 절댓값의 네제곱이나 그냥 절댓값의 평균을 물으면 이런 등식이 없다. 이 부등식은 어느 지수 $p$ 에서든 그 평균이 제곱합과 $p$ 에만 의존하는 상수배 안에서 같음을 보인다.
 
 # 직관
+
+Khintchine 부등식은 무작위 부호를 붙인 합 $\sum_j\varepsilon_ja_j$ 의 $L^p$ 노름이 계수의 $\ell^2$ 노름과 상수배로 동등하다는 것이다. 상수는 $p$ 에만 의존하고 항의 개수와 계수에 의존하지 않는다.
+
+$p=2$ 에서는 직교성으로 등식이 성립한다. 이 부등식은 그 등식이 모든 $p$ 에서 상수배까지 유지됨을 말한다.
 
 독립 부호 $\varepsilon_j$ 에 대해 $S=\sum_{j=1}^n\varepsilon_ja_j$ 의 크기를 잰다. 제곱의 기댓값을 전개하면 $E\lbrack S^2\rbrack=\sum_{i,j}a_ia_jE\lbrack\varepsilon_i\varepsilon_j\rbrack$ 이고, 독립이고 평균이 $0$ 이므로 $i\ne j$ 항이 모두 사라져 $E\lbrack S^2\rbrack=\sum_ja_j^2$ 이다.
 
