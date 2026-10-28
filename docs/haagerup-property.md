@@ -2,9 +2,11 @@
 
 # 개요
 
-**Haagerup 성질(Haagerup property)** 은 이산군 $G$ 가 무한원에서 $0$ 으로 가는 양의 정부호 함수들로 상수함수 $1$ 을 점별 근사할 수 있다는 성질이다. [Hilbert 공간](hilbert-spaces.md) 위의 고유한 아핀 등거리 작용을 갖는 것과 동치이고, Gromov 는 이 성질을 a-T-순종성(a-T-amenability)이라 불렀다. [순종군](amenable-groups.md)과 자유군이 이 성질을 갖고, Kazhdan 성질 (T)(Kazhdan's property (T)) 를 갖는 무한군은 갖지 않는다[^1].
+**Haagerup 성질(Haagerup property)** 은 군의 원소들을 [Hilbert 공간](hilbert-spaces.md)의 거리를 보존하는 변환으로 나타낼 때, 군에서 멀리 떨어진 원소일수록 점을 멀리 옮기게 할 수 있는 성질이다. 정수 $n$ 을 직선의 평행이동 $x\mapsto x+n$ 으로 보내면 $\vert n\vert$ 이 클수록 원점이 멀리 옮겨지고, 이에 맞춰 함수 $e^{-t\vert n\vert}$ 는 $n$ 이 멀어지면 $0$ 으로 가고 $t\to 0$ 이면 모든 $n$ 에서 $1$ 로 간다. Haagerup 성질은 이런 양의 정부호 함수들로 상수함수 $1$ 을 근사할 수 있는지로 군을 가른다.
 
 # 직관
+
+Haagerup 성질은 이산군 $G$ 가 무한원에서 $0$ 으로 가는 양의 정부호 함수들로 상수함수 $1$ 을 점별 근사할 수 있다는 성질이다. Hilbert 공간 위의 고유한 아핀 등거리 작용을 갖는 것과 동치이고, Gromov 는 이 성질을 a-T-순종성(a-T-amenability)이라 불렀다. [순종군](amenable-groups.md)과 자유군이 이 성질을 갖고, Kazhdan 성질 (T)(Kazhdan's property (T)) 를 갖는 무한군은 갖지 않는다[^1].
 
 $\mathbb Z$ 위의 함수 $\varphi\_t(n)=e^{-t\vert n\vert}$ $(t\gt 0)$ 를 본다. $\vert n\vert\to\infty$ 에서 $\varphi\_t(n)\to 0$ 이고, $t\to 0$ 이면 모든 $n$ 에서 $\varphi\_t(n)\to 1$ 이다. 이 함수를 계수로 하는 [Fourier 급수](fourier-series.md)를 계산하면
 
