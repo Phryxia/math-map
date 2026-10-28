@@ -2,11 +2,13 @@
 
 # 개요
 
-**Lévy 연속률(Lévy's modulus of continuity)** 은 [Brown 운동](brownian-motion.md)의 경로에서 길이 $h$ 인 시간 구간의 증분 가운데 가장 큰 것이 $\sqrt{2h\log(1/h)}$ 규모라는 정리다. 구간 $\lbrack 0,1\rbrack$ 의 모든 점에서 동시에 성립하는 진동 폭이다.
-
-한 점을 고정했을 때의 진동 폭은 [반복로그 법칙](law-of-iterated-logarithm.md)이 주는 $\sqrt{2h\log\log(1/h)}$ 이다. 모든 점을 함께 보면 로그가 한 겹 줄어 폭이 더 커진다.
+**Lévy 연속률(Lévy's modulus of continuity)** 은 [Brown 운동](brownian-motion.md)의 경로가 짧은 시간 동안 얼마나 크게 움직일 수 있는지를 경로 전체에서 한꺼번에 잰 정리다. 구간 $\lbrack 0,1\rbrack$ 을 길이 $h$ 인 칸 $1/h$ 개로 나누면 한 칸 동안의 이동은 보통 $\sqrt h$ 정도이지만, 칸이 많을수록 그 가운데 가장 큰 이동은 더 커진다. Lévy 연속률은 그 가장 큰 이동이 $h\to 0$ 에서 $\sqrt{2h\log(1/h)}$ 와 같은 크기임을 보여, 경로가 얼마나 거친지를 함수 하나로 정한다.
 
 # 직관
+
+Lévy 연속률은 Brown 운동의 경로에서 길이 $h$ 인 시간 구간의 증분 가운데 가장 큰 것이 $\sqrt{2h\log(1/h)}$ 규모라는 정리다. 구간 $\lbrack 0,1\rbrack$ 의 모든 점에서 동시에 성립하는 진동 폭이다.
+
+한 점을 고정했을 때의 진동 폭은 [반복로그 법칙](law-of-iterated-logarithm.md)이 주는 $\sqrt{2h\log\log(1/h)}$ 이다. 모든 점을 함께 보면 로그가 한 겹 줄어 폭이 더 커진다.
 
 구간 $\lbrack 0,1\rbrack$ 을 길이 $h=1/n$ 인 조각 $n$ 개로 자른다. 조각마다 Brown 운동의 증분은 평균 $0$, 분산 $h$ 인 정규분포를 따르고 서로 독립이다. 그래서 증분을 $\sqrt h$ 로 나누면 독립인 표준정규 확률변수 $n$ 개가 나온다. 경로의 가장 큰 증분은 $\sqrt h$ 에 이 $n$ 개의 최댓값을 곱한 것이다.
 

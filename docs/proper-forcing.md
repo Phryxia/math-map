@@ -2,11 +2,13 @@
 
 # 개요
 
-**Proper 강제법(proper forcing)** 은 바탕 모형의 가산 기본 부분모형마다 그 모형에 대해 일반적인 조건을 찾을 수 있는 [강제 순서](forcing.md)다.
-
-가산 반사슬 조건(countable chain condition, ccc)과 가산 닫힘이 모두 proper 를 함의하고, proper 순서는 $\aleph\_1$ 을 보존한다. 가산지지 [반복](iterated-forcing.md)이 이 성질을 보존하므로 ccc 가 아닌 순서를 $\omega\_2$ 번 반복하는 무모순성 증명이 가능하다.
+**Proper 강제법(proper forcing)** 은 집합론의 모형에 새 집합을 더하는 [강제법](forcing.md) 가운데, 셀 수 없는 가장 작은 무한 기수 $\aleph_1$ 을 셀 수 있게 만들지 않는 넓은 부류다. 새 실수를 하나 더하는 강제법은 한 번 쓸 때 이 조건을 지키지만, 같은 일을 $\omega_2$ 번 되풀이하면 되풀이하는 방법에 따라 $\aleph_1$ 이 셀 수 있게 무너질 수 있다. Proper 강제법은 셀 수 있는 부분모형마다 그 모형에 대해 일반적인 조건이 있다는 성질로 정의되고, 이 성질이 가산지지 반복에서 보존되므로 반복을 끝까지 해도 $\aleph_1$ 이 그대로 남는다.
 
 # 직관
+
+Proper 강제법은 바탕 모형의 가산 기본 부분모형마다 그 모형에 대해 일반적인 조건을 찾을 수 있는 강제 순서다.
+
+가산 반사슬 조건(countable chain condition, ccc)과 가산 닫힘이 모두 proper 를 함의하고, proper 순서는 $\aleph\_1$ 을 보존한다. 가산지지 [반복](iterated-forcing.md)이 이 성질을 보존하므로 ccc 가 아닌 순서를 $\omega\_2$ 번 반복하는 무모순성 증명이 가능하다.
 
 [Borel 추측](borel-conjecture.md)의 무모순성 증명은 [Laver 강제법](laver-forcing.md) $\mathbb L$ 을 가산지지로 $\omega\_2$ 번 반복한다. 반복이 $\omega\_1$ 을 가산으로 붕괴시키면 "모든 강 측도 영집합이 가산" 이라는 결론이 뜻을 잃는다. 반복 전체가 $\aleph\_1$ 을 보존하는지 확인해야 한다.
 
@@ -84,9 +86,9 @@ Levy 붕괴 $\mathrm{Coll}(\omega,\omega\_1)$ 은 $\omega\_1$ 을 가산으로 �
 
 # 활용
 
-- [반복 강제법](iterated-forcing.md): 가산지지 반복의 proper 보존 정리가 ccc 가 아닌 순서를 $\omega\_2$ 번 반복하는 구성을 가능하게 한다. 유한지지 반복에서 ccc 가 하던 역할을 가산지지 반복에서 proper 가 한다.
-- [Laver 강제법](laver-forcing.md): 순수 결정으로 가지를 융합해 일반 조건을 얻으므로 proper 다. Mathias 순서도 같은 융합으로 proper 이고, 두 순서 모두 ccc 가 아니다.
-- [Borel 추측](borel-conjecture.md): Laver 강제법의 가산지지 $\omega\_2$ 반복이 $\aleph\_1$ 을 보존한다는 것이 무모순성 증명의 한 단계다.
+- 반복 강제법: 가산지지 반복의 proper 보존 정리가 ccc 가 아닌 순서를 $\omega\_2$ 번 반복하는 구성을 가능하게 한다. 유한지지 반복에서 ccc 가 하던 역할을 가산지지 반복에서 proper 가 한다.
+- Laver 강제법: 순수 결정으로 가지를 융합해 일반 조건을 얻으므로 proper 다. Mathias 순서도 같은 융합으로 proper 이고, 두 순서 모두 ccc 가 아니다.
+- Borel 추측: Laver 강제법의 가산지지 $\omega\_2$ 반복이 $\aleph\_1$ 을 보존한다는 것이 무모순성 증명의 한 단계다.
 - [Martin 의 공리](martins-axiom.md): proper 순서에 대한 $\mathrm{MA}(\aleph\_1)$ 이 **PFA**(proper forcing axiom)이고, 초콤팩트 기수에서 무모순성이 나온다.
 - [기수 불변량](cardinal-characteristics.md): 연속체의 불변량을 분리하는 모형은 ccc 가 아닌 순서의 가산지지 반복으로 얻는 경우가 많고, 그 반복의 $\aleph\_1$ 보존이 proper 에서 나온다.
 

@@ -2,11 +2,13 @@
 
 # 개요
 
-종수 $g$ 인 콤팩트 [Riemann 곡면](riemann-surfaces.md) $X$ 의 **Jacobi 다양체(Jacobian variety)** 는 정칙 $1$ 형식의 쌍대공간을 주기 격자로 나눈 $g$ 차원 복소 토러스다. Abel–Jacobi 사상이 차수 $0$ 인 divisor 를 이 토러스의 점으로 보낸다.
-
-Abel 정리로 그 점이 $0$ 인 것과 divisor 가 주 divisor 인 것이 동치다. 따라서 Jacobi 다양체는 [Picard 군](picard-group.md)의 항등원 성분 $\mathrm{Pic}^0(X)$ 와 같다.
+**Jacobi 다양체(Jacobian variety)** 는 곡면 위의 점들을 더하고 뺄 수 있게 만든 공간이다. 복소평면을 격자로 접은 도넛 모양 곡면에서는 점을 복소수로 적어 더하면 다시 곡면 위의 점이 나오지만, 구멍이 둘 이상인 곡면에는 그런 덧셈이 없다. Jacobi 다양체는 곡면의 점을 적분 값으로 보내 구멍 수만큼의 복소 차원을 가진 토러스에 넣고, 그 토러스의 덧셈으로 점들의 형식적 합을 다룬다.
 
 # 직관
+
+종수 $g$ 인 콤팩트 [Riemann 곡면](riemann-surfaces.md) $X$ 의 Jacobi 다양체는 정칙 $1$ 형식의 쌍대공간을 주기 격자로 나눈 $g$ 차원 복소 토러스다. Abel–Jacobi 사상이 차수 $0$ 인 divisor 를 이 토러스의 점으로 보낸다.
+
+Abel 정리로 그 점이 $0$ 인 것과 divisor 가 주 divisor 인 것이 동치다. 따라서 Jacobi 다양체는 [Picard 군](picard-group.md)의 항등원 성분 $\mathrm{Pic}^0(X)$ 와 같다.
 
 원환면 $\mathbb C/\Lambda$ 에서 점 $p$ 에만 1차 영점을 갖고 점 $q$ 에만 1차 극점을 갖는 유리형 함수는 없다. 어떤 영점과 극점의 배치가 함수에서 오는지 판정하는 조건을 찾는다. 유리형 함수 $f$ 를 잡고 기본 평행사변형의 경계 $\partial P$ 에서 $z\thinspace df/f$ 를 적분하면 [유수 정리](residue-theorem.md)로 다음이 나온다.
 
