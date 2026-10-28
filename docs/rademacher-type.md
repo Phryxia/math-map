@@ -2,9 +2,11 @@
 
 # 개요
 
-**Rademacher type(Rademacher type)** 은 [Banach 공간](banach-spaces.md)에서 무작위 부호를 붙인 벡터 합의 노름이 각 벡터 노름의 $\ell^p$ 합으로 위에서 묶이는 성질이다. 아래에서 묶이는 쌍대 성질이 **cotype** 이다. 실수 계수에서는 [Khintchine 부등식](khintchine-inequality.md)이 무작위 부호 합을 계수의 $\ell^2$ 노름과 동등하게 묶지만, 벡터 계수에서는 공간의 기하에 따라 증가 속도가 달라진다. type 과 cotype 은 그 속도로 Banach 공간을 분류하고, 둘 다 $2$ 인 공간은 [Hilbert 공간](hilbert-spaces.md)과 동형인 공간뿐이다.
+**Rademacher type(Rademacher type)** 은 벡터에 무작위로 부호를 붙여 더했을 때 합이 얼마나 빨리 자라는지로 [Banach 공간](banach-spaces.md)을 나누는 성질이다. 표준 단위벡터 $n$ 개에 동전을 던져 $\pm$ 부호를 붙여 더하면, 보통의 Euclid 길이로 잰 합은 평균적으로 $\sqrt n$ 정도이지만 좌표 절댓값의 합으로 재면 부호와 상관없이 $n$ 이다. type 은 이 합의 크기를 $n^{1/p}$ 로 위에서 묶을 수 있는 지수 $p$ 로 공간을 분류한다.
 
 # 직관
+
+Rademacher type 은 Banach 공간에서 무작위 부호를 붙인 벡터 합의 노름이 각 벡터 노름의 $\ell^p$ 합으로 위에서 묶이는 성질이다. 아래에서 묶이는 쌍대 성질이 **cotype** 이다. 실수 계수에서는 [Khintchine 부등식](khintchine-inequality.md)이 무작위 부호 합을 계수의 $\ell^2$ 노름과 동등하게 묶지만, 벡터 계수에서는 공간의 기하에 따라 증가 속도가 달라진다. type 과 cotype 은 그 속도로 Banach 공간을 분류하고, 둘 다 $2$ 인 공간은 [Hilbert 공간](hilbert-spaces.md)과 동형인 공간뿐이다.
 
 Hilbert 공간에서는 평행사변형 법칙으로 $E\Vert\sum_j\varepsilon_jx_j\Vert^2=\sum_j\Vert x_j\Vert^2$ 이다. 부호가 독립이고 평균이 $0$ 이므로 전개하면 교차항이 사라지고, 무작위 부호 합의 크기는 단위벡터 $n$ 개에서 $\sqrt n$ 이다.
 

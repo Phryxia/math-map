@@ -2,9 +2,11 @@
 
 # 개요
 
-**Pohlig–Hellman 방법(Pohlig–Hellman algorithm)** 은 위수가 $N=\prod_j q_j^{e_j}$ 인 순환군 $\langle g\rangle$ 에서 [이산로그](discrete-logarithm.md) $g^x=h$ 를, 소수 $q_j$ 위수 부분군의 이산로그 $\sum_j e_j$ 개로 나눠 풀고 [중국인의 나머지 정리](chinese-remainder-theorem.md)로 합치는 방법이다. 비용은 $N$ 이 아니라 가장 큰 소인수 $q$ 로 정해지고, 부분 문제를 [Baby-step giant-step 알고리즘](baby-step-giant-step.md)으로 풀면 군 연산 $O(\sum_j e_j(\log N+\sqrt{q_j}))$ 번이다. S. Pohlig 와 M. Hellman 이 1978 년에 발표했다[^1].
+**Pohlig–Hellman 방법(Pohlig–Hellman algorithm)** 은 거듭제곱의 지수를 찾는 [이산로그](discrete-logarithm.md) 문제를 작은 문제 여러 개로 나누어 푸는 방법이다. 법 $101$ 에서 $2^x\equiv 3$ 을 풀 때 $x$ 의 후보 $100$ 개를 다 시험하지 않고, $100=4\cdot 25$ 이므로 $x$ 를 $4$ 로 나눈 나머지와 $25$ 로 나눈 나머지를 따로 구한다. 각 나머지는 양변을 거듭제곱해 위수가 작은 군으로 옮긴 뒤 몇 개의 지수만 시험해 얻고, 두 나머지를 [중국인의 나머지 정리](chinese-remainder-theorem.md)로 합친다.
 
 # 직관
+
+Pohlig–Hellman 방법은 위수가 $N=\prod_j q_j^{e_j}$ 인 순환군 $\langle g\rangle$ 에서 이산로그 $g^x=h$ 를, 소수 $q_j$ 위수 부분군의 이산로그 $\sum_j e_j$ 개로 나눠 풀고 중국인의 나머지 정리로 합치는 방법이다. 비용은 $N$ 이 아니라 가장 큰 소인수 $q$ 로 정해지고, 부분 문제를 [Baby-step giant-step 알고리즘](baby-step-giant-step.md)으로 풀면 군 연산 $O(\sum_j e_j(\log N+\sqrt{q_j}))$ 번이다. S. Pohlig 와 M. Hellman 이 1978 년에 발표했다[^1].
 
 법 $101$ 에서 $2^x\equiv 3$ 을 푼다. $2$ 의 위수는 $100=4\cdot 25$ 이므로 $x\bmod 4$ 와 $x\bmod 25$ 를 따로 구하면 $x\bmod 100$ 이 정해진다.
 
