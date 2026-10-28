@@ -2,7 +2,7 @@
 
 # 개요
 
-**Fourier 국소 해석(local Fourier analysis)** 은 격자 위 반복법이 각 Fourier 모드를 얼마나 줄이는지 계산해 [다중격자](multigrid.md)의 수렴률을 예측하는 방법이다. 격자 연산자를 지수함수 모드에 적용하면 스칼라 배가 되므로, 반복 한 번의 효과가 모드마다 하나의 수 곧 기호로 정리된다. 고주파 모드에 대한 기호의 최댓값이 평활률이고, 이 값이 평활자와 그 매개변수를 고르는 기준이다.
+**Fourier 국소 해석(local Fourier analysis)** 은 격자 위 반복법이 각 Fourier 모드를 얼마나 줄이는지 계산해 [다중격자](multigrid.md)의 수렴률을 예측하는 방법이다. 간격 $h$ 로 이산화한 $-u''=f$ 에 감쇠 Jacobi 반복을 돌리면 오차 가운데 촘촘하게 진동하는 성분은 몇 번 만에 줄지만 완만한 성분은 거의 줄지 않는데, 행렬만 보고는 어느 성분이 얼마나 줄지 알기 어렵다. Fourier 국소 해석은 오차를 모드 $e^{\mathrm i\theta j}$ 로 나누어 반복 한 번을 모드마다 수 하나를 곱하는 것으로 바꾸고, 그 수로 평활자와 매개변수를 고른다.
 
 # 직관
 
@@ -13,6 +13,8 @@ g(\theta)=1-\omega\thinspace\frac{h^2}{2}\cdot\frac{4}{h^2}\sin^2(\theta/2)=1-\o
 $$
 
 $h$ 가 사라지고 $\theta$ 와 $\omega$ 만 남는다. $\omega=1$ 을 넣으면 $g(\pi)=-1$ 이라 가장 빠르게 진동하는 모드가 부호만 바뀌고 크기가 그대로여서, 성긴 격자가 맡지 못하는 고주파를 평활자가 줄여 주기를 기대하는 다중격자의 전제가 깨진다. $\omega=2/3$ 을 넣으면 $g(\pi/2)=1/3$ 이고 $g(\pi)=-1/3$ 이라 고주파 쪽 $\pi/2\le\vert\theta\vert\le\pi$ 에서 크기가 $1/3$ 을 넘지 않는다. 반복 한 번에 고주파가 $1/3$ 로 줄어든다는 이 수가 다중격자 한 사이클의 수렴률을 예측한다.
+
+모드마다 곱해지는 수를 기호라 하고, 고주파 모드에 대한 기호의 최댓값이 평활률이다. 이 값이 평활자와 그 매개변수를 고르는 기준이다.
 
 # 정의
 
@@ -42,7 +44,7 @@ $$\mu=\sup\lbrace\vert\tilde S_h(\theta)\vert:\theta\in\Theta\ \text{고주파}\
 
 ## 감쇠 Jacobi 의 최적 감쇠
 
-1 차원 Laplace 연산자에서 $\tilde S_h(\theta)=1-\omega(1-\cos\theta)$ 이고 평활률은 $\mu(\omega)=\max\lbrace\vert 1-\omega\vert,\vert 1-2\omega\vert\rbrace$ 다. 두 값이 같아지는 $\omega=2/3$ 에서 $\mu=1/3$ 으로 최소다. $\omega=1$ 이면 $\mu=1$ 이라 평활이 일어나지 않는다.
+1 차원 [Laplace 연산자](laplace-operator.md)에서 $\tilde S_h(\theta)=1-\omega(1-\cos\theta)$ 이고 평활률은 $\mu(\omega)=\max\lbrace\vert 1-\omega\vert,\vert 1-2\omega\vert\rbrace$ 다. 두 값이 같아지는 $\omega=2/3$ 에서 $\mu=1/3$ 으로 최소다. $\omega=1$ 이면 $\mu=1$ 이라 평활이 일어나지 않는다.
 
 2 차원 5 점 Laplace 연산자에서는 같은 계산이 $\omega=4/5$ 와 $\mu=3/5$ 를 준다[^1].
 

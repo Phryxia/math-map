@@ -2,7 +2,7 @@
 
 # 개요
 
-**Koszul 복합체(Koszul complex)** 는 환의 원소열 하나에서 [외대수](exterior-algebra.md)로 만드는 사슬 복합체다. 그 호몰로지가 소멸하는 것과 원소열이 정칙열인 것이 동치이고, 정칙열일 때 이 복합체가 몫환의 자유 분해가 된다.
+**Koszul 복합체(Koszul complex)** 는 환의 원소열 하나에서 [외대수](exterior-algebra.md)로 만드는 사슬 복합체다. 원소 $x$ 하나가 영인자가 아니면 $0\to R\xrightarrow{x}R\to R/(x)\to 0$ 이 $R/(x)$ 의 자유 분해이지만, 원소가 $x,y$ 둘이면 $R/(x,y)$ 의 자유 분해를 어떻게 만들지가 문제다. Koszul 복합체는 $x$ 와 $y$ 의 곱셈을 외대수의 꼴로 엮은 복합체를 내놓고, 원소열이 정칙열이면 이것이 자유 분해다.
 
 # 직관
 
@@ -17,6 +17,8 @@ $$
 $$
 0\longrightarrow R\xrightarrow{\thinspace (-y,\thinspace x)\thinspace }R^2\xrightarrow{\thinspace (x,\thinspace y)\thinspace }R\longrightarrow R/(x,y)\longrightarrow 0
 $$
+
+Koszul 복합체의 호몰로지가 소멸하는 것과 원소열이 정칙열인 것이 동치다.
 
 # 정의
 
