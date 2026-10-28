@@ -2,13 +2,15 @@
 
 # 개요
 
-**핵 능형회귀(kernel ridge regression)** 는 [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)에서 제곱오차와 노름 벌점의 합을 최소화하는 회귀다. 표현자 정리가 해를 자료점의 핵 함수들의 선형결합으로 묶으므로, 무한차원 공간에서의 최소화가 $n$ 차 선형계 하나로 끝난다.
-
-해는 핵 행렬 $K$ 와 벌점 상수 $\lambda$ 로 $\alpha=(K+\lambda I)^{-1}y$ 다. 특징 좌표를 만들지 않고 핵의 값만으로 예측값을 계산한다.
+**핵 능형회귀(kernel ridge regression)** 는 좌표를 아주 많이 늘린 비선형 회귀를, 자료점 사이의 핵 값만으로 계산하는 능형회귀다. [선형회귀](linear-regression.md)의 능형 판본은 해 $w=(X^\top X+\lambda I)^{-1}X^\top y$ 에서 좌표의 개수 $d$ 크기의 행렬을 뒤집으므로, 좌표를 늘려 비선형 모형을 만들면 계산도 함께 커진다. 핵 능형회귀는 [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)에서 해가 자료점의 핵 함수들의 결합임을 써서, 자료점 $n$ 개의 핵 행렬 $K$ 로 $\alpha=(K+\lambda I)^{-1}y$ 만 푼다.
 
 # 직관
 
-[선형회귀](linear-regression.md)의 능형 판본은 $\Vert y-Xw\Vert^2+\lambda\Vert w\Vert^2$ 을 최소화하고 해가 $w=(X^\top X+\lambda I)^{-1}X^\top y$ 다. 역행렬을 취하는 행렬의 크기는 좌표의 개수 $d$ 다. 좌표를 늘려 비선형 모형을 만들면 이 크기가 함께 커진다.
+핵 능형회귀는 재생핵 Hilbert 공간에서 제곱오차와 노름 벌점의 합을 최소화하는 회귀다. 표현자 정리가 해를 자료점의 핵 함수들의 선형결합으로 묶으므로, 무한차원 공간에서의 최소화가 $n$ 차 선형계 하나로 끝난다.
+
+해는 핵 행렬 $K$ 와 벌점 상수 $\lambda$ 로 $\alpha=(K+\lambda I)^{-1}y$ 다. 특징 좌표를 만들지 않고 핵의 값만으로 예측값을 계산한다.
+
+선형회귀의 능형 판본은 $\Vert y-Xw\Vert^2+\lambda\Vert w\Vert^2$ 을 최소화하고 해가 $w=(X^\top X+\lambda I)^{-1}X^\top y$ 다. 역행렬을 취하는 행렬의 크기는 좌표의 개수 $d$ 다. 좌표를 늘려 비선형 모형을 만들면 이 크기가 함께 커진다.
 
 자료 $n$ 개가 $d$ 보다 훨씬 적을 때도 $d\times d$ 행렬을 다루어야 하는가. 정규방정식을 다시 보면
 

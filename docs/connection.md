@@ -2,11 +2,13 @@
 
 # 개요
 
-**접속(connection)** 은 [벡터다발](vector-bundles.md)의 단면을 방향마다 미분하는 규칙이다. 다발의 서로 다른 섬유는 각자 다른 벡터 공간이므로 단면의 값을 빼는 일이 정의되지 않고, 좌표 미분만으로는 미분이 좌표에 의존한다. 접속은 그 비교를 자료로 지정한다.
-
-같은 자료가 두 모습으로 나타난다. 방향 미분으로 적은 공변미분과, 곡선을 따라 섬유를 옮기는 평행이동이다. 둘은 서로를 결정한다.
+**접속(connection)** 은 [벡터다발](vector-bundles.md)의 단면을 방향마다 미분하는 규칙이다. 평면의 벡터장 $\partial_x$ 는 어디서나 같은 벡터이므로 미분이 $0$ 이어야 하지만, 극좌표 성분 $V^\theta=-\sin\theta/r$ 을 $r$ 로 미분하면 $0$ 이 아닌 $\sin\theta/r^2$ 이 나온다. 접속은 성분의 미분에 좌표가 바뀌며 생기는 보정항을 더해 이 어긋남을 없애고, 이웃한 섬유의 벡터를 비교하는 방법을 정한다.
 
 # 직관
+
+다발의 서로 다른 섬유는 각자 다른 벡터 공간이므로 단면의 값을 빼는 일이 정의되지 않고, 좌표 미분만으로는 미분이 좌표에 의존한다. 접속은 그 비교를 자료로 지정한다.
+
+같은 자료가 두 모습으로 나타난다. 방향 미분으로 적은 공변미분과, 곡선을 따라 섬유를 옮기는 평행이동이다. 둘은 서로를 결정한다.
 
 평면에서 $\partial_x$ 는 모든 점에서 같은 벡터를 주는 벡터장이므로 어느 방향으로 미분해도 $0$ 이어야 한다. 극좌표로 적으면 $\partial_x=\cos\theta\thinspace\partial_r-(\sin\theta/r)\thinspace\partial_\theta$ 이고, 성분은 $V^r=\cos\theta$ 와 $V^\theta=-\sin\theta/r$ 다. 이 성분을 $r$ 로 미분하면 $\partial_r V^r=0$ 이지만 $\partial_r V^\theta=\sin\theta/r^2$ 이다. 성분을 미분하는 것은 답이 아니다.
 
@@ -117,7 +119,7 @@ $p$ 에서 출발해 $p$ 로 돌아오는 고리 $\gamma$ 의 평행이동 $P_\g
 # 활용
 
 - [측지선](geodesics.md)은 속도장이 자기 자신을 따라 평행인 곡선, 곧 $\nabla_{\dot\gamma}\dot\gamma=0$ 인 곡선으로 정의된다. 좌표에서 접속계수가 들어간 2계 상미분방정식이 되고, 그 해의 유일성이 지수사상을 준다.
-- [곡률](curvature.md)의 Riemann 곡률 텐서는 접다발 위 Levi-Civita 접속의 곡률이다. 계량이 접속을 하나 정하고 그 접속이 곡률을 정한다.
+- 곡률의 Riemann 곡률 텐서는 접다발 위 Levi-Civita 접속의 곡률이다. 계량이 접속을 하나 정하고 그 접속이 곡률을 정한다.
 - [특성류](characteristic-classes.md)를 Chern–Weil 이론이 곡률 2형식의 불변 다항식으로 적는다. 접속을 바꾸면 그 형식이 완전형식만큼 달라지므로 [de Rham 코호몰로지](de-rham-cohomology.md)류는 접속의 선택에 의존하지 않는다.
 - [Chern–Simons 이론](chern-simons.md)의 작용은 접속형식 $A$ 의 다항식 $\mathrm{tr}(A\wedge dA+\tfrac{2}{3}A\wedge A\wedge A)$ 를 적분한 것이다. 틀을 바꾸면 적분값이 정수만큼 변하므로 계수를 정수로 잡는다.
 - [Hodge 이론](hodge-theory.md)과 [지표 정리](index-theorem.md)가 다발 위 타원 작용소를 접속으로 만든다. 공변미분을 외미분 자리에 넣어 꼬인 de Rham 복합체와 [Dirac 작용소](dirac-operator.md)를 세운다.
