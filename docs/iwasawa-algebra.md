@@ -2,11 +2,13 @@
 
 # 개요
 
-**Iwasawa 대수(Iwasawa algebra)** 는 $\mathbb Z_p$ 계수 한 변수 형식 멱급수환 $\Lambda=\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 이다. $\Gamma\cong\mathbb Z_p$ 인 위수 무한 군의 완비 군환과 같은 환이고, 유한생성 $\Lambda$ 모듈이 유한 오차를 허용한 직합으로 분류된다.
-
-이 분류가 주는 두 정수 $\lambda$ 와 $\mu$ 가 $\mathbb Z_p$ 확대의 층마다 자라는 류수를 하나의 공식으로 쓴다.
+**Iwasawa 대수(Iwasawa algebra)** 는 $p$ 진 정수를 계수로 하는 한 변수 멱급수의 환이다. 원분체를 $\mathbb Q(\zeta_p)\subset\mathbb Q(\zeta_{p^2})\subset\cdots$ 로 쌓아 올리면 층마다 류수의 $p$ 부분이 따로 계산되고, 그 수들이 어떤 규칙으로 자라는지가 문제다. 층들을 한꺼번에 묶으면 그 위에 이 멱급수환이 작용하는 하나의 모듈이 생긴다. 이 환 위의 모듈을 분류하면 정수 몇 개가 나오고, 그 정수들로 모든 층의 류수 크기가 한 공식에 적힌다.
 
 # 직관
+
+Iwasawa 대수는 $\mathbb Z_p$ 계수 한 변수 형식 멱급수환 $\Lambda=\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 이다. $\Gamma\cong\mathbb Z_p$ 인 위수 무한 군의 완비 군환과 같은 환이고, 유한생성 $\Lambda$ 모듈이 유한 오차를 허용한 직합으로 분류된다.
+
+이 분류가 주는 두 정수 $\lambda$ 와 $\mu$ 가 $\mathbb Z_p$ 확대의 층마다 자라는 류수를 하나의 공식으로 쓴다.
 
 $\mathbb Z_p$ 확대는 체의 탑 $K=K_0\subset K_1\subset\cdots$ 으로 주어지고 $\mathrm{Gal}(K_n/K)$ 가 $\mathbb Z/p^n$ 이다. 각 층의 아이디얼 류군 $A_n$ 에는 군환 $\mathbb Z_p\lbrack\mathbb Z/p^n\rbrack=\mathbb Z_p\lbrack t\rbrack/(t^{p^n}-1)$ 이 작용한다. 층마다 다른 환이 작용하므로 $A_0,A_1,A_2,\dots$ 의 크기를 함께 다룰 환이 없다.
 
