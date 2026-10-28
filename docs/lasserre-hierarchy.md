@@ -2,9 +2,11 @@
 
 # 개요
 
-**Lasserre 계층(Lasserre hierarchy)** 은 $0$-$1$ 정수계획의 완화를 단계적으로 좁히는 [반정부호 계획법](semidefinite-programming.md)의 열이다. Sum-of-Squares 계층(Sum-of-Squares hierarchy)이라고도 한다. [Sherali–Adams 계층](sherali-adams-hierarchy.md)처럼 단항식마다 새 변수 $y_S$ 를 두고, 그 변수들로 만든 모멘트 행렬(moment matrix)이 반정부호라는 조건을 더한다. 같은 단계에서 Sherali–Adams 완화보다 좁고, 단계 $t$ 의 완화는 $n^{O(t)}$ 시간에 풀린다.
+**Lasserre 계층(Lasserre hierarchy)** 은 변수가 $0$ 과 $1$ 만 갖는 최적화 문제를, 단계를 올릴수록 정확해지는 연속 최적화 문제의 열로 근사하는 방법이다. 완전그래프에서 서로 이웃하지 않는 정점을 고르면 정점 하나밖에 고를 수 없어 $\sum_ix_i\le 1$ 이지만, 쌍마다 $x_i+x_j\le 1$ 만 둔 완화는 모든 $x_i=1/2$ 를 허용해 답을 $n/2$ 로 크게 잡는다. 정수점에서 $(\sum_ix_i-a)^2\ge 0$ 같은 제곱식이 음수가 아니라는 조건을 [반정부호 계획법](semidefinite-programming.md)의 제약으로 더해 완화를 좁히고, 이 예에서는 $\sum_ix_i\le 1$ 을 얻는다.
 
 # 직관
+
+Lasserre 계층은 $0$-$1$ 정수계획의 완화를 단계적으로 좁히는 반정부호 계획법의 열이다. Sum-of-Squares 계층(Sum-of-Squares hierarchy)이라고도 한다. [Sherali–Adams 계층](sherali-adams-hierarchy.md)처럼 단항식마다 새 변수 $y_S$ 를 두고, 그 변수들로 만든 모멘트 행렬(moment matrix)이 반정부호라는 조건을 더한다. 같은 단계에서 Sherali–Adams 완화보다 좁고, 단계 $t$ 의 완화는 $n^{O(t)}$ 시간에 풀린다.
 
 정점이 $n$ 개인 완전그래프의 안정집합을 고르는 정수계획에서 변 완화는 $x\ge 0$ 과 모든 쌍의 $x_i+x_j\le 1$ 이다. 정수 껍질은 $\sum_ix_i\le 1$ 로 기술되는데, Sherali–Adams 계층의 성질 절에 따르면 Lovász–Schrijver 연산은 이 부등식을 얻는 데 $n-2$ 단계가 걸린다. 곱셈을 하나씩 늘려서는 느리다.
 

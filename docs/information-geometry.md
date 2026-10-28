@@ -2,11 +2,13 @@
 
 # 개요
 
-**정보기하(information geometry)** 는 확률분포족을 다양체로 보고 [Fisher 정보](fisher-information.md)행렬을 [Riemann 계량](riemannian-metrics.md)으로 삼아 분포 사이의 거리와 사영을 재는 기하다. 이 계량은 모수를 어떻게 잡아도 같은 기하를 주며, 충분통계량에 대한 불변성만으로 상수배까지 결정된다. 지수접속과 혼합접속이라는 두 아핀접속이 계량에 대해 쌍대이고, 지수족이 두 접속 가운데 하나에 대해 평평한 다양체가 된다.
+**정보기하(information geometry)** 는 확률분포들의 모임을 곡면처럼 보고 분포 사이의 거리를 재는 기하다. [정규분포](normal-distribution.md)의 분산을 $1$ 에서 $1.21$ 로 옮길 때 모수를 분산으로 잡으면 차이가 $0.21$ 이고 표준편차로 잡으면 $0.1$ 이어서, 모수 좌표의 거리는 두 분포가 얼마나 다른지를 재지 못한다. 정보기하는 두 분포의 차이를 이차식으로 근사한 [Fisher 정보](fisher-information.md) 행렬을 계량으로 써서, 모수를 어떻게 잡아도 같은 거리를 얻는다.
 
 # 직관
 
-두 분포가 얼마나 다른지를 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 잰다. [정규분포](normal-distribution.md)족에서 평균을 고정하고 분산을 $\sigma^2=1$ 에서 $\sigma^2=1.21$ 로 옮긴 경우를 생각한다. 모수를 분산 $\sigma^2$ 로 잡으면 두 점의 유클리드 거리가 $0.21$ 이고, 표준편차 $\sigma$ 로 잡으면 $0.1$ 이다. 같은 두 분포인데 모수를 바꿔 적었다는 이유로 거리가 달라지므로, 모수 공간의 유클리드 거리는 분포 사이의 거리가 아니다.
+정보기하는 확률분포족을 다양체로 보고 Fisher 정보행렬을 [Riemann 계량](riemannian-metrics.md)으로 삼아 분포 사이의 거리와 사영을 재는 기하다. 이 계량은 모수를 어떻게 잡아도 같은 기하를 주며, 충분통계량에 대한 불변성만으로 상수배까지 결정된다. 지수접속과 혼합접속이라는 두 아핀접속이 계량에 대해 쌍대이고, 지수족이 두 접속 가운데 하나에 대해 평평한 다양체가 된다.
+
+두 분포가 얼마나 다른지를 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 잰다. 정규분포족에서 평균을 고정하고 분산을 $\sigma^2=1$ 에서 $\sigma^2=1.21$ 로 옮긴 경우를 생각한다. 모수를 분산 $\sigma^2$ 로 잡으면 두 점의 유클리드 거리가 $0.21$ 이고, 표준편차 $\sigma$ 로 잡으면 $0.1$ 이다. 같은 두 분포인데 모수를 바꿔 적었다는 이유로 거리가 달라지므로, 모수 공간의 유클리드 거리는 분포 사이의 거리가 아니다.
 
 $\theta$ 에서 $\theta+\delta$ 로 옮길 때 KL divergence 는 $\tfrac12\delta^{\mathsf T}I(\theta)\delta$ 에 3차 오차를 더한 값이다. 모수를 $\theta\mapsto\eta$ 로 바꿔 적으면 $\delta$ 는 Jacobian 행렬 $J$ 를 곱한 만큼 바뀌고 $I$ 는 $J^{-\mathsf T}IJ^{-1}$ 로 바뀌므로 이차형식의 값이 그대로다. 각 점에 이 이차형식을 놓으면 모수 선택과 무관한 Riemann 계량이 되고, 곡선의 길이와 측지선, 직교 사영을 분포족 자체의 성질로 말할 수 있다.
 
@@ -77,7 +79,7 @@ $$
 - [최대가능도 추정](maximum-likelihood.md). 경험분포에서 모형 부분다양체로 내리는 $m$ 사영이 최대가능도 추정량이고, 지수족에서는 기댓값모수를 표본적률과 맞추는 적률방정식이 그 사영이다.
 - [신뢰영역 정책 최적화](trust-region-policy-optimization.md). 정책족 위의 KL 제약을 Fisher–Rao 계량의 이차형식으로 바꿔 풀면 자연 경사 방향이 나온다.
 - [변분 추론](variational-inference.md)의 사후분포 근사. 사후분포를 다루기 쉬운 분포족으로 내리는 사영을 divergence 최소화로 적고, 갱신을 기댓값모수에서 수행한다.
-- [지수족](exponential-families.md)의 로그분배함수. 그 [Hessian](hessian.md) 이 계량이고 기울기가 좌표변환이므로, 평평한 좌표계 두 개가 같은 함수에서 나온다.
+- 지수족의 로그분배함수. 그 [Hessian](hessian.md) 이 계량이고 기울기가 좌표변환이므로, 평평한 좌표계 두 개가 같은 함수에서 나온다.
 
 [^1]: N. N. Chentsov, *Statistical Decision Rules and Optimal Inference*, American Mathematical Society, 1982. 유한 표본공간에서 Markov 사상 불변 계량이 Fisher 정보의 상수배인 것.
 [^2]: Shun-ichi Amari and Hiroshi Nagaoka, *Methods of Information Geometry*, American Mathematical Society, 2000, 2–3장. 쌍대 접속, 평평한 좌표계, 일반화 Pythagoras 정리.

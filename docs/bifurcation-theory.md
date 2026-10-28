@@ -2,9 +2,11 @@
 
 # 개요
 
-**분기 이론(bifurcation theory)** 은 매개변수 $\lambda$ 를 가진 방정식 $F(\lambda,x)=0$ 의 해가 어느 매개변수 값에서 갈라져 나오는지를 다루는 이론이다. [역함수 정리](inverse-function-theorem.md)의 음함수 정리가 성립하는 자리에서는 해가 갈라지지 않으므로 분기는 그 정리가 실패하는 자리에서만 일어난다. 실패하는 자리 가운데 실제로 해가 갈라지는 곳은 [Leray–Schauder 차수](leray-schauder-degree.md)의 변화로 판정한다.
+**분기 이론(bifurcation theory)** 은 방정식의 매개변수를 바꿀 때 해가 어느 값에서 갈라져 나오는지 다루는 이론이다. 방정식 $x^3-\lambda x=0$ 은 $\lambda\le 0$ 이면 해가 $x=0$ 하나이고 $\lambda\gt 0$ 이면 $0,\pm\sqrt\lambda$ 세 개라서, $\lambda=0$ 에서 해 둘이 새로 갈라져 나온다. 해를 $\lambda$ 의 함수로 이어 주는 음함수 정리가 실패하는 자리를 먼저 찾고, 그 가운데 실제로 해가 갈라지는 곳을 판정한다.
 
 # 직관
+
+분기 이론은 매개변수 $\lambda$ 를 가진 방정식 $F(\lambda,x)=0$ 의 해가 어느 매개변수 값에서 갈라져 나오는지를 다루는 이론이다. [역함수 정리](inverse-function-theorem.md)의 음함수 정리가 성립하는 자리에서는 해가 갈라지지 않으므로 분기는 그 정리가 실패하는 자리에서만 일어난다. 실패하는 자리 가운데 실제로 해가 갈라지는 곳은 [Leray–Schauder 차수](leray-schauder-degree.md)의 변화로 판정한다.
 
 실수 방정식 $x^3-\lambda x=0$ 을 본다. $\lambda\le 0$ 이면 해는 $x=0$ 하나이고, $\lambda\gt 0$ 이면 $x=0,\pm\sqrt\lambda$ 세 개다. $\lambda$ 가 $0$ 을 지나는 순간 해 $x=0$ 에서 두 해가 새로 갈라져 나온다.
 
