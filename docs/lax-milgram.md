@@ -2,11 +2,13 @@
 
 # 개요
 
-**Lax–Milgram 정리(Lax–Milgram theorem)** 는 Hilbert 공간 위의 쌍선형형식 $B$ 가 유계이고 강제이면 $B(u,v)=f(v)$ 꼴 방정식이 유일한 해를 갖는다는 정리다. $B$ 가 대칭일 필요가 없다.
-
-미분방정식을 적분 항등식으로 바꿔 쓴 약한 꼴이 이 형태다. [Sobolev 공간](sobolev-spaces.md)에서 해의 존재와 유일성을 얻는 자리가 이 정리이고, 유한요소법의 오차 추정도 같은 두 상수 $\alpha,\beta$ 로 쓴다.
+**Lax–Milgram 정리(Lax–Milgram theorem)** 는 경계값 문제의 해가 존재하고 하나뿐임을 보이는 정리다. $-\Delta u=f$ 의 약한 꼴은 왼쪽이 [Hilbert 공간](hilbert-spaces.md)의 내적이라 Riesz 표현 정리로 풀리지만, 항 $b\cdot\nabla u$ 를 더하면 왼쪽이 $u$ 와 $v$ 에 대해 대칭이 아니어서 내적이 되지 않는다. 이 정리는 왼쪽의 형식이 유계이고 $u=v$ 에서 $\Vert u\Vert^2$ 의 상수배 이상이기만 하면 해가 존재하고 유일함을 보인다.
 
 # 직관
+
+Lax–Milgram 정리는 Hilbert 공간 위의 쌍선형형식 $B$ 가 유계이고 강제이면 $B(u,v)=f(v)$ 꼴 방정식이 유일한 해를 갖는다는 정리다. $B$ 가 대칭일 필요가 없다.
+
+미분방정식을 적분 항등식으로 바꿔 쓴 약한 꼴이 이 형태다. [Sobolev 공간](sobolev-spaces.md)에서 해의 존재와 유일성을 얻는 자리가 이 정리이고, 유한요소법의 오차 추정도 같은 두 상수 $\alpha,\beta$ 로 쓴다.
 
 $U\subset\mathbb R^n$ 에서 $-\Delta u=f$ 와 경계값 $0$ 을 푼다. 양변에 $v\in H_0^1(U)$ 를 곱하고 부분적분하면
 
@@ -14,7 +16,7 @@ $$
 \int\_U\nabla u\cdot\nabla v\thinspace dx=\int\_U fv\thinspace dx
 $$
 
-가 된다. 왼쪽은 $H_0^1(U)$ 의 내적이고 오른쪽은 $v$ 에 대한 유계 선형범함수이므로, [Hilbert 공간](hilbert-spaces.md)의 Riesz 표현 정리가 이 식을 만족하는 $u$ 를 하나 준다.
+가 된다. 왼쪽은 $H_0^1(U)$ 의 내적이고 오른쪽은 $v$ 에 대한 유계 선형범함수이므로, Hilbert 공간의 Riesz 표현 정리가 이 식을 만족하는 $u$ 를 하나 준다.
 
 같은 방법으로 $-\Delta u+b\cdot\nabla u=f$ 를 풀면 왼쪽이
 
