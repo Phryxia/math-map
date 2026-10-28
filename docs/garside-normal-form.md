@@ -2,7 +2,7 @@
 
 # 개요
 
-**Garside 정규형(Garside normal form)** 은 [땋임군](braid-groups.md) $B_n$ 의 원소를 기본 땋임 $\Delta$ 의 거듭제곱과 단순 땋임들의 곱으로 유일하게 적는 표준형이다. 두 땋임 낱말이 같은 원소인지는 정규형을 비교해 판정하므로 이 표준형으로 $B_n$ 의 낱말 문제(word problem)가 다항시간에 풀린다. 같은 구조를 가진 군을 Garside 군이라 하고 유한형 Artin 군이 그 예다.
+**Garside 정규형(Garside normal form)** 은 [땋임군](braid-groups.md) $B_n$ 의 원소를 기본 땋임 $\Delta$ 의 거듭제곱과 단순 땋임들의 곱으로 유일하게 적는 표준형이다. $B_3$ 의 두 낱말 $\sigma_1\sigma_2\sigma_1^{-1}$ 과 $\sigma_2^{-1}\sigma_1\sigma_2$ 가 같은 땋임인지 물을 때, 역원이 섞인 낱말에는 관계를 어디에 쓸지 정해진 순서가 없다. Garside 정규형은 역원을 $\Delta$ 의 음의 거듭제곱 하나로 모아 맨 앞으로 보내고 나머지를 정해진 규칙으로 적어, 두 낱말이 같은지를 정규형의 비교로 판정한다.
 
 # 직관
 
@@ -13,6 +13,8 @@ $B_3$ 의 두 낱말 $\sigma_1\sigma_2\sigma_1^{-1}$ 과 $\sigma_2^{-1}\sigma_1\
 첫 낱말은 $\sigma_1\sigma_2\sigma_2\sigma_1\Delta^{-1}=\Delta^{-1}\sigma_2\sigma_1\sigma_1\sigma_2$ 가 된다. 둘째 낱말은 $\sigma_1\sigma_2\Delta^{-1}\sigma_1\sigma_2=\sigma_1\sigma_2\sigma_2\sigma_1\Delta^{-1}=\Delta^{-1}\sigma_2\sigma_1\sigma_1\sigma_2$ 가 된다. 두 결과가 글자 그대로 같으므로 두 낱말은 같은 땋임이다.
 
 이 계산에서 남는 것은 $\Delta$ 의 거듭제곱과 역원 없는 양의 낱말이다. 양의 낱말끼리 같은지는 아직 관계를 써 봐야 알 수 있으므로, 양의 부분을 정해진 방식으로 다시 자르는 규칙이 Garside 정규형이다.
+
+이 표준형으로 $B_n$ 의 낱말 문제(word problem)가 다항시간에 풀린다. 같은 구조를 가진 군을 Garside 군이라 하고 유한형 Artin 군이 그 예다.
 
 # 정의
 
