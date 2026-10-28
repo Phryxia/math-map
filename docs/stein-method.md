@@ -2,11 +2,13 @@
 
 # 개요
 
-**Stein 방법(Stein's method)** 은 확률변수 $W$ 의 분포와 표준정규분포 사이의 거리를, 정규분포만이 만족하는 항등식 $\mathbb E\lbrack f^\prime(Z)-Zf(Z)\rbrack=0$ 을 $W$ 가 얼마나 어기는지로 위에서 누르는 방법이다. Stein 이 1972 년에 도입했다[^1].
-
-[중심극한정리](central-limit-theorem.md)의 수렴 속도를 특성함수 없이 얻고, 독립이 아닌 합에도 같은 절차가 쓰인다. 같은 틀로 Poisson 분포 근사를 하는 것이 Chen–Stein 방법(Chen–Stein method)이다.
+**Stein 방법(Stein's method)** 은 확률변수의 분포가 정규분포에 얼마나 가까운지를 수치로 위에서 누르는 방법이다. 동전 $100$ 개의 앞뒤에 $\pm 1$ 을 주고 더해 $10$ 으로 나눈 $W$ 는 [중심극한정리](central-limit-theorem.md)에 따라 정규분포에 가깝지만, 그 정리는 얼마나 가까운지를 주지 않는다. Stein 방법은 표준정규분포를 따르는 $Z$ 만이 모든 $f$ 에 대해 $\mathbb E\lbrack f'(Z)-Zf(Z)\rbrack=0$ 을 만족한다는 것을 쓰고, $W$ 가 이 항등식을 얼마나 어기는지 계산해 거리의 상한을 얻는다.
 
 # 직관
+
+Stein 방법은 확률변수 $W$ 의 분포와 표준정규분포 사이의 거리를, 정규분포만이 만족하는 항등식 $\mathbb E\lbrack f^\prime(Z)-Zf(Z)\rbrack=0$ 을 $W$ 가 얼마나 어기는지로 위에서 누르는 방법이다. Stein 이 1972 년에 도입했다[^1].
+
+중심극한정리의 수렴 속도를 특성함수 없이 얻고, 독립이 아닌 합에도 같은 절차가 쓰인다. 같은 틀로 Poisson 분포 근사를 하는 것이 Chen–Stein 방법(Chen–Stein method)이다.
 
 동전 $n$ 개를 던져 앞면에 $+1$, 뒷면에 $-1$ 을 주고 $W=(\xi_1+\cdots+\xi_n)/\sqrt n$ 이라 한다. 중심극한정리는 $W$ 가 $Z\sim N(0,1)$ 로 분포수렴한다고 하지만, $n=100$ 에서 얼마나 가까운지는 말하지 않는다. 특성함수를 쓰면 가까움이 [Fourier 변환](fourier-transform.md) 쪽에서 나오고, 분포 쪽으로 옮기는 데 다시 계산이 필요하다.
 
