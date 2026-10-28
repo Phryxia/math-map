@@ -2,11 +2,13 @@
 
 # 개요
 
-**Noether 정규화(Noether normalization)** 는 체 $k$ 위의 유한생성 대수 $A$ 에 대해, 대수적으로 독립인 원소 $y_1,\dots,y_d\in A$ 가 있어 $A$ 가 다항식환 $k\lbrack y_1,\dots,y_d\rbrack$ 위의 유한생성 가군이 된다는 정리다.
-
-$A$ 가 정역이면 $d$ 는 분수체의 [초월차수](transcendence-degree.md)이고 $A$ 의 Krull 차원이다. 기하로는 $d$ 차원 대수다양체에서 $d$ 차원 아핀공간으로 가는 유한 전사 사상이 있다는 진술이다.
+**Noether 정규화(Noether normalization)** 는 체 위의 유한생성 대수가, 변수 몇 개의 다항식환 위에서 유한 개의 원소로 생성되는 가군이 된다는 정리다. 쌍곡선 $xy=1$ 을 $x$ 축에 사영하면 $x=0$ 위에 점이 없고, 그래서 좌표환이 $k\lbrack x\rbrack$ 위에서 유한하게 생성되지 않는다. 좌표를 $x+y$ 로 바꿔 사영하면 모든 점 위에 점이 유한 개 놓이고, 이 정리는 이렇게 좌표를 바꾸어 $d$ 차원 대수다양체에서 $d$ 차원 아핀공간으로 가는 유한 전사 사상을 만든다.
 
 # 직관
+
+Noether 정규화는 체 $k$ 위의 유한생성 대수 $A$ 에 대해, 대수적으로 독립인 원소 $y_1,\dots,y_d\in A$ 가 있어 $A$ 가 다항식환 $k\lbrack y_1,\dots,y_d\rbrack$ 위의 유한생성 가군이 된다는 정리다.
+
+$A$ 가 정역이면 $d$ 는 분수체의 [초월차수](transcendence-degree.md)이고 $A$ 의 Krull 차원이다. 기하로는 $d$ 차원 대수다양체에서 $d$ 차원 아핀공간으로 가는 유한 전사 사상이 있다는 진술이다.
 
 $A=k\lbrack x,y\rbrack/(xy-1)$ 은 쌍곡선 $xy=1$ 의 좌표환이다. 분수체가 $k(x)$ 이므로 초월차수는 $1$ 이고, 변수 하나 위에서 $A$ 를 유한하게 만들고 싶다. $k\lbrack x\rbrack$ 위에서는 되지 않는다. $y=1/x$ 는 $k\lbrack x\rbrack$ 계수의 일계수 다항식의 근이 아니어서 $A$ 가 $k\lbrack x\rbrack$ 위의 유한생성 가군이 아니다. 쌍곡선을 $x$ 축에 사영하면 $x=0$ 위에 점이 없다.
 
@@ -34,7 +36,7 @@ $A$ 가 체이면 $d=0$ 이어야 한다. $d\ge1$ 이면 $A$ 가 $k\lbrack y_1,\
 
 # 활용
 
-- [Krull 차원](krull-dimension.md): 유한생성 대수의 Krull 차원을 다항식환의 차원으로 옮겨 계산한다.
+- Krull 차원: 유한생성 대수의 Krull 차원을 다항식환의 차원으로 옮겨 계산한다.
 - [Cohen–Macaulay 환](cohen-macaulay-rings.md): 정규화 $k\lbrack y_1,\dots,y_d\rbrack\subseteq A$ 에서 $A$ 가 자유 가군인 것이 Cohen–Macaulay 성질과 동치다.
 - [대수다양체](algebraic-varieties.md): $d$ 차원 아핀 다양체에서 아핀공간 $\mathbb A^d$ 로 가는 유한 전사 사상을 주어, 다양체의 차원과 함수체의 초월차수를 맞춘다.
 

@@ -2,11 +2,13 @@
 
 # 개요
 
-**유한 Morley 위수 군(group of finite Morley rank)** 은 바탕집합의 Morley 위수가 유한한 자연수인 정의 가능 군이다. 대수군의 차원이 하던 일을 위수 하나가 대신하고, Zariski 위상 없이 부분군의 사슬과 생성 부분군을 다룰 수 있다.
-
-대수적으로 닫힌 체 위의 대수군은 전부 이 부류에 든다. [Cherlin–Zilber 추측](cherlin-zilber-conjecture.md)은 역도 성립하는지, 곧 단순 무한인 것이 모두 대수군인지를 묻는다.
+**유한 Morley 위수 군(group of finite Morley rank)** 은 차원에 해당하는 크기인 Morley 위수가 유한한, 논리식으로 정의되는 군이다. 유한군에서는 부분군의 내림 사슬이 원소 개수가 줄어 멈추지만, 무한군에서는 개수가 줄지 않아 사슬이 멈추는지를 개수로 판정할 수 없다. 유한 Morley 위수 군에서는 개수 대신 위수와 Morley 정도로 크기를 재어 정의 가능 부분군의 내림 사슬이 멈추게 하고, 대수군의 차원 논증을 Zariski 위상 없이 쓴다.
 
 # 직관
+
+유한 Morley 위수 군은 바탕집합의 Morley 위수가 유한한 자연수인 정의 가능 군이다. 대수군의 차원이 하던 일을 위수 하나가 대신하고, Zariski 위상 없이 부분군의 사슬과 생성 부분군을 다룰 수 있다.
+
+대수적으로 닫힌 체 위의 대수군은 전부 이 부류에 든다. [Cherlin–Zilber 추측](cherlin-zilber-conjecture.md)은 역도 성립하는지, 곧 단순 무한인 것이 모두 대수군인지를 묻는다.
 
 유한군에서 부분군의 내림 사슬은 원소 개수가 줄어들어 멈추지만, 무한군에서는 개수가 줄지 않는다. 정의 가능한 부분군 $H$ 의 잉여류 $gH$ 는 $x\mapsto gx$ 로 $H$ 와 일대일 대응하고 이 대응이 정의 가능하므로 $\mathrm{rk}\thinspace gH=\mathrm{rk}\thinspace H$ 이며, 잉여류들은 서로 겹치지 않는다. 잉여류가 무한히 많으면 위수 $\mathrm{rk}\thinspace H$ 인 집합이 $G$ 안에 겹치지 않게 무한히 많고, 위수는 그런 집합이 무한히 많을 때 한 단계 올라가도록 정의하므로 $\mathrm{rk}\thinspace G\ge\mathrm{rk}\thinspace H+1$ 이다. 잉여류가 유한개면 $G$ 가 위수 $\mathrm{rk}\thinspace H$ 인 조각 유한개의 합집합이어서 $\mathrm{rk}\thinspace G=\mathrm{rk}\thinspace H$ 이고, 대신 위수가 최대인 조각의 개수가 $\lbrack G:H\rbrack$ 배로 줄어든다. 이 개수가 Morley 정도다.
 
