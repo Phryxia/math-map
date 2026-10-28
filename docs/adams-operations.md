@@ -2,11 +2,13 @@
 
 # 개요
 
-**Adams 연산(Adams operations)** 은 위상 K 이론 위의 환 준동형 $\psi^k:K(X)\to K(X)$ 의 족으로, 선다발 $L$ 을 $k$ 번 텐서곱한 $L^{\otimes k}$ 로 보내는 것을 덧셈과 곱을 보존하도록 연장한 것이다. 외곱 연산 $\lambda^i$ 의 조합으로 정의된다.
-
-[Bott 주기성](bott-periodicity.md)으로 정한 짝수 차원 구면의 K 군 위에서 $\psi^k$ 는 $k^n$ 배로 작용한다. 이 단순한 작용을 써서 Adams 와 Atiyah 는 Hopf 불변량이 $1$ 인 사상이 차원 $2,4,8$ 에서만 존재함을 보였다.
+**Adams 연산(Adams operations)** 은 벡터다발을 거듭제곱하는 연산을, 다발의 직합과 텐서곱을 모두 보존하게 고친 K 이론 위의 연산이다. 선다발 $L$ 은 $L^{\otimes k}$ 로 보내면 되지만, 외곱은 $\Lambda^2(E\oplus F)=\Lambda^2E\oplus(E\otimes F)\oplus\Lambda^2F$ 여서 직합을 보존하지 않는다. Adams 연산 $\psi^k$ 는 외곱 연산의 조합으로 정의되어 덧셈과 곱을 모두 보존하고, 구면의 K 군 위에서 $k^n$ 배로 작용하는 이 성질로 Hopf 불변량이 $1$ 인 사상이 차원 $2,4,8$ 에서만 존재함이 증명된다.
 
 # 직관
+
+Adams 연산은 위상 K 이론 위의 환 준동형 $\psi^k:K(X)\to K(X)$ 의 족으로, 선다발 $L$ 을 $k$ 번 텐서곱한 $L^{\otimes k}$ 로 보내는 것을 덧셈과 곱을 보존하도록 연장한 것이다. 외곱 연산 $\lambda^i$ 의 조합으로 정의된다.
+
+[Bott 주기성](bott-periodicity.md)으로 정한 짝수 차원 구면의 K 군 위에서 $\psi^k$ 는 $k^n$ 배로 작용한다. 이 단순한 작용을 써서 Adams 와 Atiyah 는 Hopf 불변량이 $1$ 인 사상이 차원 $2,4,8$ 에서만 존재함을 보였다.
 
 K 이론에서 벡터다발 $E$ 의 외곱 $\Lambda^iE$ 는 정의되지만 $E\mapsto\Lambda^iE$ 는 덧셈을 보존하지 않는다. $\Lambda^2(E\oplus F)=\Lambda^2E\oplus(E\otimes F)\oplus\Lambda^2F$ 이기 때문이다. 덧셈과 곱을 모두 보존하는 연산을 원한다.
 
