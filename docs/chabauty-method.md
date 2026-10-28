@@ -2,13 +2,11 @@
 
 # 개요
 
-**Chabauty 방법(Chabauty's method)** 은 종수 $2$ 이상인 곡선의 유리점을 $p$ 진 해석함수의 영점으로 바꾸어 세는 방법이다.
-
-종수 $2$ 이상인 곡선의 유리점이 유한 개라는 것은 [Faltings 정리](faltings-theorem.md)로 나오지만, 그 증명은 유리점의 목록을 내놓지 않는다.
-
-이 방법은 [Jacobi 다양체](jacobian-variety.md)의 유리점 계수가 종수보다 작을 때 쓴다. Coleman 이 이 영점을 세는 방법을 주어 유리점 개수의 상한이 나온다.
+**Chabauty 방법(Chabauty's method)** 은 종수 $2$ 이상인 곡선의 유리점을 $p$ 진 해석함수의 영점으로 바꾸어 세는 방법이다. 곡선 $y^2=x^5+1$ 처럼 종수가 $2$ 인 곡선의 유리점이 유한 개라는 것은 [Faltings 정리](faltings-theorem.md)로 나오지만, 그 증명은 유리점이 몇 개이고 어디 있는지 알려 주지 않는다. Chabauty 방법은 유리점들이 어떤 $p$ 진 해석함수의 영점에 놓이게 하고 그 영점을 세어 유리점 개수의 상한을 계산한다.
 
 # 직관
+
+이 방법은 [Jacobi 다양체](jacobian-variety.md)의 유리점 계수가 종수보다 작을 때 쓴다. Coleman 이 그 영점을 세는 방법을 주었다.
 
 수체 $\mathbb Q$ 위의 종수 $g\ge2$ 곡선 $C$ 의 유리점을 전부 구하려고 한다. 점 하나를 기준으로 삼아 $C$ 를 Jacobi 다양체 $J$ 에 넣으면 $C(\mathbb Q)\subseteq J(\mathbb Q)$ 이고, [Mordell–Weil 정리](canonical-height.md)로 $J(\mathbb Q)$ 는 유한생성이다. 계수 $r$ 이 $1$ 이상이면 $J(\mathbb Q)$ 는 무한집합이고, 그 안에서 $C$ 위에 놓인 점이 어느 것인지 가릴 조건이 없다. 두 집합 모두 대수적으로 주어져서 크기를 견줄 자가 없다.
 

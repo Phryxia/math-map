@@ -2,17 +2,17 @@
 
 # 개요
 
-**Hamilton–Jacobi 방정식(Hamilton–Jacobi equation)** 은 Hamilton 계의 운동을 함수 하나가 만족하는 1차 편미분방정식으로 적는다. [Hamilton 역학](hamiltonian-mechanics.md)의 정준방정식은 $2n$ 개의 연립 [상미분방정식](ordinary-differential-equations.md)이지만, 생성함수 $S(q,t)$ 를
+**Hamilton–Jacobi 방정식(Hamilton–Jacobi equation)** 은 역학계의 운동을 함수 하나가 만족하는 1차 편미분방정식으로 적는 방정식이다. 행성의 운동을 [Hamilton 역학](hamiltonian-mechanics.md)으로 쓰면 위치와 운동량 $2n$ 개가 연립 [상미분방정식](ordinary-differential-equations.md)으로 얽혀 있어 식 하나씩 따로 풀 수 없다. 이 방정식의 해 $S(q,t)$ 를 하나 구하면 그 편미분이 운동량을 주어 운동 전체가 나온다.
+
+# 직관
+
+방정식은
 
 $$
 \frac{\partial S}{\partial t}+H\left(q,\frac{\partial S}{\partial q}\right)=0
 $$
 
-의 해로 구하면 그 편미분으로 운동 전체가 나온다.
-
-해의 그래프는 [Lagrangian 부분다양체](lagrangian-submanifolds.md)이고, 그 위에서 Hamilton 흐름이 특성곡선이 된다.
-
-# 직관
+이다. 해의 그래프는 [Lagrangian 부분다양체](lagrangian-submanifolds.md)이고, 그 위에서 Hamilton 흐름이 특성곡선이 된다.
 
 좌표를 잘 바꾸면 새 Hamilton 함수가 새 좌표에 의존하지 않고, 그러면 새 운동량이 모두 보존량이 되어 운동이 등속으로 적힌다. Lagrangian 부분다양체 문서의 생성함수가 좌표 바꾸기를 하나씩 주므로, 바꾼 뒤의 Hamilton 함수를 가장 단순하게 만드는 생성함수를 찾으면 된다.
 
