@@ -2,9 +2,11 @@
 
 # 개요
 
-**Laplace–Beltrami 연산자(Laplace–Beltrami operator)** 는 [Riemann 계량](riemannian-metrics.md) $g$ 를 가진 다양체 위에서 함수 $f$ 에 기울기의 발산 $\Delta\_gf=\mathrm{div}\_g\nabla\_gf$ 를 대응시키는 연산자다. 유클리드 공간에서는 [Laplace 연산자](laplace-operator.md)와 같고, 좌표를 쓰지 않고 계량만으로 정의된다. 콤팩트 다양체 위에서 그 고윳값의 열이 다양체의 부피, 곡률, 잘록한 정도에 대한 정보를 준다.
+**Laplace–Beltrami 연산자(Laplace–Beltrami operator)** 는 구면 같은 휜 공간 위에서 정의한 [Laplace 연산자](laplace-operator.md)다. 구면 위의 온도가 시간에 따라 어떻게 퍼지는지 계산하려면 이차 도함수의 합 $\sum_i\partial_i^2$ 가 있어야 하는데, 구면에는 전체를 덮는 직교좌표가 없어 이 식을 그대로 쓸 수 없다. 이 연산자는 좌표 대신 [Riemann 계량](riemannian-metrics.md)으로 기울기와 발산을 정의하고, 그 합성 $\mathrm{div}\_g\nabla\_g$ 로 어느 좌표에서나 같은 값을 준다.
 
 # 직관
+
+Laplace–Beltrami 연산자는 Riemann 계량 $g$ 를 가진 다양체 위에서 함수 $f$ 에 기울기의 발산 $\Delta\_gf=\mathrm{div}\_g\nabla\_gf$ 를 대응시키는 연산자다. 유클리드 공간에서는 Laplace 연산자와 같고, 좌표를 쓰지 않고 계량만으로 정의된다. 콤팩트 다양체 위에서 그 고윳값의 열이 다양체의 부피, 곡률, 잘록한 정도에 대한 정보를 준다.
 
 구면 위의 온도 분포를 다루려면 구면 위의 Laplace 연산자가 있어야 한다. 구면에는 전체를 덮는 직교좌표가 없으므로 $\sum\_i\partial\_i^2$ 를 그대로 쓸 수 없다. $\mathbb R^3$ 의 극좌표에서 Laplace 연산자는
 

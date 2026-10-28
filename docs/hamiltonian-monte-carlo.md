@@ -2,9 +2,11 @@
 
 # 개요
 
-**Hamiltonian Monte Carlo(HMC)** 는 목표분포에 보조 운동량 변수를 더하고 [Hamilton 역학](hamiltonian-mechanics.md)의 흐름을 따라 움직이는 제안을 쓰는 [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)(Markov chain Monte Carlo, MCMC)다. 제안을 흐름으로 만들면 한 걸음이 궤적의 길이만큼 멀리 가고, 에너지가 보존되어 수락확률이 1 에 가깝다. 흐름의 수치 적분에는 가역이고 부피를 보존하는 leapfrog 적분기를 쓴다.
+**Hamiltonian Monte Carlo(HMC)** 는 확률분포에서 표본을 뽑을 때 점을 역학 법칙에 따라 움직여 멀리 있는 다음 표본을 제안하는 [Markov 연쇄 Monte Carlo](markov-chain-monte-carlo.md)(Markov chain Monte Carlo, MCMC)다. 밀도가 좁고 긴 영역에 몰려 있으면 무작위 걷기 제안은 보폭을 좁은 폭에 맞춰야 하고, 방향이 매번 바뀌어 긴 쪽으로 거의 나아가지 못한다. HMC 는 $-\log\pi(x)$ 를 위치에너지로 보고 운동량을 하나 뽑아 에너지가 보존되는 운동을 시켜, 한 걸음 안에서 방향을 유지한 채 멀리 간 점을 제안한다.
 
 # 직관
+
+Hamiltonian Monte Carlo 는 목표분포에 보조 운동량 변수를 더하고 [Hamilton 역학](hamiltonian-mechanics.md)의 흐름을 따라 움직이는 제안을 쓰는 Markov 연쇄 Monte Carlo다. 제안을 흐름으로 만들면 한 걸음이 궤적의 길이만큼 멀리 가고, 에너지가 보존되어 수락확률이 1 에 가깝다. 흐름의 수치 적분에는 가역이고 부피를 보존하는 leapfrog 적분기를 쓴다.
 
 목표분포가 $d$ 차원이고 성분들이 강하게 상관되어 좁고 긴 영역에 밀도가 몰려 있다. 무작위 걷기 제안으로 이 영역을 지나려면 보폭을 영역의 좁은 폭에 맞춰야 하고, 그보다 크게 잡으면 제안점이 영역을 벗어나 밀도가 작아져 거부된다. 보폭 $h$ 의 걸음은 방향이 매번 독립이므로 $t$ 걸음 뒤 출발점에서 떨어진 거리가 $h\sqrt t$ 에 비례한다. 긴 쪽의 길이 $L$ 을 지나는 데 걸음 수가 $(L/h)^2$ 만큼 든다.
 
@@ -89,7 +91,7 @@ $L$ 을 키우면 궤적이 멀리 가지만, Hamilton 흐름은 밀도가 큰 �
 
 - [Bayes 추론](bayesian-inference.md)의 계층모형. 모수와 초모수가 강하게 상관된 사후분포에서 좌표별 Gibbs 표본추출이나 무작위 걷기 제안보다 유효표본수가 크다.
 - [Langevin 동역학](langevin-dynamics.md). $L=1$ 인 HMC 가 Langevin 제안에 수락 판정을 붙인 것이고, 운동량을 매번 버리는 대신 일부만 갱신하면 과감쇠 극한에서 Langevin 동역학이 된다.
-- [Hamilton 역학](hamiltonian-mechanics.md)의 수치 적분. symplectic 적분기의 부피 보존이 수락확률에서 제안밀도의 비를 없애는 데 쓰인다.
+- Hamilton 역학의 수치 적분. symplectic 적분기의 부피 보존이 수락확률에서 제안밀도의 비를 없애는 데 쓰인다.
 - 격자 게이지 이론의 장 배치 표본추출. 이 분야에서 알고리즘이 처음 쓰였고 당시 이름은 혼성 Monte Carlo 였다.[^3]
 
 [^1]: A. Beskos, N. Pillai, G. Roberts, J.-M. Sanz-Serna, A. Stuart, "Optimal tuning of the hybrid Monte Carlo algorithm", Bernoulli 19 (2013), 1501–1534. 확산 극한에서 최적 수락률 0.651 과 보폭 지수 $d^{-1/4}$.
