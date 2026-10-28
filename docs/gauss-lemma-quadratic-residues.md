@@ -2,9 +2,11 @@
 
 # 개요
 
-**제곱잉여의 Gauss 보조정리(Gauss's lemma on quadratic residues)** 는 홀소수 $p$ 와 $p$ 의 배수가 아닌 정수 $a$ 에 대해, $a,2a,\dots,\frac{p-1}2a$ 를 $p$ 로 나눈 나머지 가운데 $p/2$ 보다 큰 것의 개수 $\mu$ 로 Legendre 기호가 $\left(\frac ap\right)=(-1)^\mu$ 로 정해진다는 정리다. [이차 상호법칙](quadratic-reciprocity.md)의 Euler 판정법을 거듭제곱 계산 없이 나머지의 개수로 바꾸고, 제2 보충 법칙(second supplementary law)과 이차 상호법칙의 Eisenstein 증명이 이 정리에서 나온다. 다항식의 원시성에 대한 Gauss 보조정리와는 다른 정리다.
+**제곱잉여의 Gauss 보조정리(Gauss's lemma on quadratic residues)** 는 정수가 법 $p$ 의 제곱잉여인지를 나머지 몇 개의 개수로 판정하는 정리다. $2$ 가 법 $7$ 의 제곱잉여인지 보려면 $2^3$ 을 $7$ 로 나눈 나머지를 계산하는데, 이 거듭제곱 계산은 소수마다 따로 해야 한다. 이 정리는 그 계산을 $2,4,6$ 가운데 $7/2$ 보다 큰 것의 개수를 세는 일로 바꾼다.
 
 # 직관
+
+정리의 진술은 홀소수 $p$ 와 $p$ 의 배수가 아닌 정수 $a$ 에 대해, $a,2a,\dots,\frac{p-1}2a$ 를 $p$ 로 나눈 나머지 가운데 $p/2$ 보다 큰 것의 개수 $\mu$ 로 Legendre 기호가 $\left(\frac ap\right)=(-1)^\mu$ 로 정해진다는 것이다. [이차 상호법칙](quadratic-reciprocity.md)의 Euler 판정법을 거듭제곱 계산 없이 나머지의 개수로 바꾸고, 제2 보충 법칙(second supplementary law)과 이차 상호법칙의 Eisenstein 증명이 이 정리에서 나온다. 다항식의 원시성에 대한 Gauss 보조정리와는 다른 정리다.
 
 $2$ 가 법 $p$ 의 제곱잉여인지를 모든 홀소수 $p$ 에 대해 한 번에 알고 싶다. Euler 판정법은 $2^{(p-1)/2}$ 를 $p$ 로 나눈 나머지가 $1$ 인지 $-1$ 인지 보라고 하는데, 이 계산은 $p$ 마다 따로 해야 한다.
 
