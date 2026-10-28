@@ -2,15 +2,17 @@
 
 # 개요
 
-**Faber–Krahn 부등식(Faber–Krahn inequality)** 은 부피가 같은 유계 영역 가운데 Dirichlet 경계조건의 [Laplace 연산자](laplace-operator.md) 첫 고윳값이 가장 작은 것이 공이라는 부등식이다. $\Omega^\ast$ 를 $\Omega$ 와 부피가 같은 공이라 하면
+**Faber–Krahn 부등식(Faber–Krahn inequality)** 은 넓이가 같고 가장자리가 고정된 막 가운데 원형 막의 기본음이 가장 낮다는 부등식이다. 넓이가 $\pi$ 인 원판과 정사각형을 비교하면, 진동수의 제곱에 비례하는 첫 고윳값이 원판은 약 $5.78$, 정사각형은 $2\pi\approx 6.28$ 이다. Faber–Krahn 부등식은 이 비교를 모든 차원과 모든 유계 영역으로 넓혀, 영역의 부피만으로 첫 고윳값의 하한을 준다.
+
+# 직관
+
+Faber–Krahn 부등식은 부피가 같은 유계 영역 가운데 Dirichlet 경계조건의 [Laplace 연산자](laplace-operator.md) 첫 고윳값이 가장 작은 것이 공이라는 부등식이다. $\Omega^\ast$ 를 $\Omega$ 와 부피가 같은 공이라 하면
 
 $$
 \lambda_1(\Omega)\ge\lambda_1(\Omega^\ast)
 $$
 
 이다. 경계를 고정한 막 가운데 넓이가 같으면 원형 막의 기본음이 가장 낮다는 주장을 Rayleigh 가 1877 년에 내놓았고[^1], G. Faber 와 E. Krahn 이 1923 년과 1925 년에 따로 증명했다[^2][^3].
-
-# 직관
 
 한 변이 $\pi$ 인 정사각형 막의 가장 낮은 고윳값은 고유함수 $\sin x\sin y$ 의 고윳값 $2$ 다. 넓이가 같은 $\pi^2$ 인 원판은 반지름이 $\sqrt\pi$ 이고, 첫 고유함수는 $J_0(j_{0,1}r/\sqrt\pi)$ 다. $J_0$ 은 0 차 [Bessel 함수](bessel-functions.md)이고 $j_{0,1}\approx 2.405$ 는 그 첫 영점이다. 고윳값은 $j_{0,1}^2/\pi\approx 1.84$ 로 정사각형의 $2$ 보다 작다.
 
@@ -92,7 +94,7 @@ $$
 
 ## Pólya 추측의 처음 두 경우
 
-[Weyl 법칙](weyl-law.md)의 [Pólya 추측](polya-conjecture.md)은 $\lambda_k(\Omega)\ge 4\pi^2\bigl(k/(\omega_n\vert\Omega\vert)\bigr)^{2/n}$ 다. 모든 $n$ 에서 $j_{n/2-1,1}^2\omega_n^{4/n}\ge 4\pi^2$ 이므로 $k=1$ 인 경우는 Faber–Krahn 부등식에서 나온다. $n=2$ 에서는 $j_{0,1}^2\approx 5.78$ 이고 $4\pi^2/\omega_2^2=4$ 다. $k=2$ 인 경우는 Krahn–Szegő 정리에서 같은 방법으로 나온다.
+Weyl 법칙의 [Pólya 추측](polya-conjecture.md)은 $\lambda_k(\Omega)\ge 4\pi^2\bigl(k/(\omega_n\vert\Omega\vert)\bigr)^{2/n}$ 다. 모든 $n$ 에서 $j_{n/2-1,1}^2\omega_n^{4/n}\ge 4\pi^2$ 이므로 $k=1$ 인 경우는 Faber–Krahn 부등식에서 나온다. $n=2$ 에서는 $j_{0,1}^2\approx 5.78$ 이고 $4\pi^2/\omega_2^2=4$ 다. $k=2$ 인 경우는 Krahn–Szegő 정리에서 같은 방법으로 나온다.
 
 # 활용
 
