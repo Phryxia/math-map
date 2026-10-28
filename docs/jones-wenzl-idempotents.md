@@ -2,15 +2,17 @@
 
 # 개요
 
-**Jones–Wenzl 멱등원(Jones–Wenzl idempotent)** $f_n$ 은 [Temperley–Lieb 대수](temperley-lieb-algebras.md) $TL_n(\delta)$ 안에서 모든 생성원을 죽이는 유일한 멱등원이다.
+**Jones–Wenzl 멱등원(Jones–Wenzl idempotent)** $f_n$ 은 [Temperley–Lieb 대수](temperley-lieb-algebras.md) $TL_n(\delta)$ 안에서 모든 생성원을 죽이는 유일한 멱등원이다. $TL_2(\delta)$ 에서 $e_1$ 을 죽이는 멱등원은 $f_2=1-\delta^{-1}e_1$ 인데, $\delta=0$ 이면 분모가 $0$ 이 되어 그런 원소가 없다. Jones–Wenzl 멱등원은 $n$ 마다 점화식으로 만들어지고, 그 분모가 $0$ 이 되는 매개변수가 대수의 구조가 깨지는 값을 알려 준다.
+
+# 직관
+
+정의하는 조건은 다음과 같다.
 
 $$
 f_n^2=f_n,\qquad e_if_n=f_ne_i=0\quad (1\le i\le n-1)
 $$
 
 $\delta=q+q^{-1}$ 로 두면 $f_n$ 은 양자 정수 $\lbrack m\rbrack\_q$ 를 계수로 하는 점화식으로 만들어지고, $\lbrack n+1\rbrack\_q=0$ 인 매개변수에서 정의가 끊긴다.
-
-# 직관
 
 $TL_2(\delta)$ 에서 모든 $e_i$ 를 죽이는 멱등원을 직접 찾는다. 기저는 $1$ 과 $e_1$ 이므로 원소를 $a+be_1$ 로 적고 $e_1(a+be_1)=0$ 을 푼다. $e_1^2=\delta e_1$ 이므로 좌변이 $(a+b\delta)e_1$ 이고 조건은 $a+b\delta=0$ 이다.
 

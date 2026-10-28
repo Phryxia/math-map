@@ -2,15 +2,17 @@
 
 # 개요
 
-**Temperley–Lieb 대수(Temperley–Lieb algebra)** $TL_k(\delta)$ 는 교차하지 않는 짝짓기 도형이 만드는 대수다. 생성원 $e_1,\dots,e_{k-1}$ 과 관계
+**Temperley–Lieb 대수(Temperley–Lieb algebra)** $TL_k(\delta)$ 는 교차하지 않는 짝짓기 도형이 만드는 대수다. $\mathrm{SL}\_2$ 가 $\mathbb C^2\otimes\mathbb C^2$ 에 작용할 때 그 작용과 교환하는 선형사상은 네 점을 둘씩 짝짓는 도형으로 적히는데, 도형은 $3$ 개이고 그런 사상의 공간은 $2$ 차원이라 도형 하나가 남는다. 선이 교차하는 도형을 버리면 남는 도형이 정확히 기저가 되고, 그 도형들의 곱셈 규칙이 Temperley–Lieb 대수다.
+
+# 직관
+
+Temperley–Lieb 대수는 생성원 $e_1,\dots,e_{k-1}$ 과 관계
 
 $$
 e_i^2=\delta e_i,\qquad e_ie\_{i\pm 1}e_i=e_i,\qquad e_ie_j=e_je_i\ (\vert i-j\vert\ge 2)
 $$
 
 로 주어지고 차원은 [Catalan 수](catalan-numbers.md) $C_k$ 다. [Brauer 대수](brauer-algebras.md)의 도형에서 선이 교차하는 것을 버린 부분대수다. $\delta=2\cos(\pi/\ell)$ 인 값에서 반단순성이 깨진다.
-
-# 직관
 
 $\mathrm{SL}\_2$ 가 $V=\mathbb C^2$ 에 작용할 때 $\mathrm{End}\_{\mathrm{SL}\_2}(V^{\otimes k})$ 를 도형으로 적는다. $V$ 에는 반대칭 형식 $\omega$ 가 있어 $V\cong V^\ast$ 이므로 위쪽 첨자와 아래쪽 첨자를 구별하지 않고 $2k$ 개 점의 짝짓기로 불변 사상을 적을 수 있다. 짝짓기 도형은 $(2k-1)!!$ 개다.
 
