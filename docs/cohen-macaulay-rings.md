@@ -2,9 +2,11 @@
 
 # 개요
 
-**Cohen–Macaulay 환(Cohen–Macaulay ring)** 은 깊이와 [Krull 차원](krull-dimension.md)이 같은 Noether 국소환이다. [정칙 국소환](regular-local-rings.md)의 조건을 약화한 것이고, 극대 아이디얼의 원소로 차례차례 나누어 차원을 하나씩 떨어뜨리는 계산이 차원 횟수만큼 이어진다는 뜻이다.
+**Cohen–Macaulay 환(Cohen–Macaulay ring)** 은 깊이와 [Krull 차원](krull-dimension.md)이 같은 Noether 국소환이다. 환 $k[[x,y]]/(xy)$ 에서는 $x$ 와 $y$ 가 영인자라 나눌 수 없고 $x+y$ 로 나누어야 차원이 떨어지므로, 극대 아이디얼의 원소로 나누어 차원을 하나씩 떨어뜨리는 계산이 차원 횟수만큼 이어지는지는 환마다 따져야 한다. Cohen–Macaulay 환은 그 계산이 차원 횟수만큼 이어지는 환이다.
 
 # 직관
+
+Cohen–Macaulay 환의 조건은 [정칙 국소환](regular-local-rings.md)의 조건을 약화한 것이다.
 
 정칙 국소환 $R$ 에서는 극대 아이디얼 $\mathfrak m$ 이 $d=\dim R$ 개의 원소로 생성되고, 그 원소로 하나씩 나누면 차원이 매번 $1$ 씩 떨어져 $d$ 번 만에 $0$ 이 된다. 일반 Noether 국소환에서 같은 계산을 해 보면 $R=k[[x,y]]/(xy)$ 는 차원이 $1$ 인데 $xy=0$ 이고 $y\ne 0$ 이라 $x$ 가 영인자여서 나눌 수 없고, $y$ 도 같다. $x+y$ 는 영인자가 아니고, 이것으로 나누면 $k[[x]]/(x^2)$ 이라 차원이 $0$ 이다. 한 번 나누어 차원 $1$ 을 다 썼다.
 
