@@ -2,9 +2,11 @@
 
 # 개요
 
-**Bihari 부등식(Bihari's inequality)** 은 함수가 상수와 자기 자신의 비선형 함수의 적분의 합으로 위에서 눌리면, 대응하는 미분방정식의 해로 위에서 눌린다는 부등식이다. [Grönwall 부등식](gronwall-inequality.md)에서 피적분함수의 $u$ 를 비감소 함수 $w(u)$ 로 바꾼 것이고, $w(u)=u$ 이면 Grönwall 부등식이 된다. 우변이 Lipschitz 조건을 만족하지 않는 미분방정식에서 해의 유일성을 보이는 Osgood 판정법이 이 부등식으로 증명된다.
+**Bihari 부등식(Bihari's inequality)** 은 함수가 상수와 자기 자신의 비선형 함수의 적분의 합으로 위에서 눌리면, 대응하는 미분방정식의 해로 위에서 눌린다는 부등식이다. 같은 초깃값에서 출발한 두 해의 차이 $u$ 가 $u(t)\le\int_0^t u(s)\log(1/u(s))\thinspace ds$ 만 만족할 때는 차이가 $0$ 인지 [Grönwall 부등식](gronwall-inequality.md)으로 판정할 수 없다. 이 부등식은 피적분함수의 $u$ 를 비감소 함수 $w(u)$ 로 바꾼 상한을 주어, 그런 경우에도 두 해가 같음을 보인다.
 
 # 직관
+
+Bihari 부등식에서 $w(u)=u$ 로 두면 Grönwall 부등식이 된다. 우변이 Lipschitz 조건을 만족하지 않는 미분방정식에서 해의 유일성을 보이는 Osgood 판정법이 이 부등식으로 증명된다.
 
 방정식 $x'=f(x)$ 에서 $f$ 가 작은 $r\gt 0$ 에 대해 $\vert f(x)-f(y)\vert\le w(\vert x-y\vert)$, $w(r)=r\log(1/r)$ 을 만족한다고 하자. $w(r)/r=\log(1/r)$ 은 $r\to 0$ 에서 한없이 커지므로 이 $f$ 는 Lipschitz 조건을 만족하지 않을 수 있다. 같은 초깃값에서 출발한 두 해가 같은지 알고 싶다.
 

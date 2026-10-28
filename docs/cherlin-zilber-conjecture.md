@@ -2,13 +2,13 @@
 
 # 개요
 
-**Cherlin–Zilber 추측(Cherlin–Zilber conjecture)** 은 단순 무한 유한 Morley 위수 군이 대수적으로 닫힌 체 위의 단순 [대수군](algebraic-groups.md)이라는 추측이다. 대수성 추측이라고도 한다.
-
-[유한 Morley 위수 군](groups-of-finite-morley-rank.md)에서 위수는 대수군의 Zariski 차원이 하던 일을 한다. 대수적으로 닫힌 체 위의 대수군은 전부 유한 Morley 위수 군이고, 추측은 단순 무한인 경우에 역이 성립하는지를 묻는다.
-
-연구는 Sylow $2$ 부분군의 구조로 경우를 가른다. 짝수형은 Altınel–Borovik–Cherlin 이 해결했고, 퇴화형에는 [나쁜 군](bad-groups.md)이 남아 있다.
+**Cherlin–Zilber 추측(Cherlin–Zilber conjecture)** 은 모형론에서 차원을 잴 수 있는 무한 단순군은 모두 행렬군이라는 추측이다. 행렬군 $\mathrm{PSL}\_2(K)$ 는 곱셈 규칙만 주어져도 그 안에서 체 $K$ 를 다시 찾아낼 수 있다. 이 추측은 단순 무한 [유한 Morley 위수 군](groups-of-finite-morley-rank.md)에서 언제나 이렇게 체가 찾아지고, 군이 대수적으로 닫힌 체 위의 단순 [대수군](algebraic-groups.md)이 된다고 주장한다.
 
 # 직관
+
+이 추측은 대수성 추측이라고도 한다. 유한 Morley 위수 군에서 위수는 대수군의 Zariski 차원이 하던 일을 한다. 대수적으로 닫힌 체 위의 대수군은 전부 유한 Morley 위수 군이고, 추측은 단순 무한인 경우에 역이 성립하는지를 묻는다.
+
+연구는 Sylow $2$ 부분군의 구조로 경우를 가른다. 짝수형은 Altınel–Borovik–Cherlin 이 해결했고, 퇴화형에는 [나쁜 군](bad-groups.md)이 남아 있다.
 
 $\mathrm{PSL}\_2(K)$ 의 군 구조만으로 체 $K$ 가 나온다. 상삼각행렬의 상 $B$ 안에서 대각성분이 $1$ 인 것들과 대각행렬의 상을 각각 $U$ 와 $T$ 로 잡는다.
 

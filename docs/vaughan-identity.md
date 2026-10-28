@@ -2,9 +2,11 @@
 
 # 개요
 
-**Vaughan 항등식(Vaughan's identity)** 은 von Mangoldt 함수를 두 수열의 곱에 걸친 쌍선형합 몇 개로 가르는 항등식이다. 소수에 걸친 합을 직접 다루는 대신 약수 구조가 드러난 합으로 바꾸면 각 조각에 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)과 지수합 추정을 쓸 수 있다. Bombieri–Vinogradov 정리와 Vinogradov 의 세 소수 정리가 이 분해를 출발 자료로 쓴다.
+**Vaughan 항등식(Vaughan's identity)** 은 von Mangoldt 함수를 두 수열의 곱에 걸친 합 몇 개로 가르는 항등식이다. 소수에 걸친 지수합 $\sum\_{n\le x}\Lambda(n)e(n\alpha)$ 는 소수의 위치를 모르면 각 항의 크기를 더한 $x$ 보다 나은 상한을 얻기 어렵다. 이 항등식으로 합을 두 변수에 걸친 합으로 바꾸면 한 변수를 고정하고 다른 변수의 합에서 상쇄를 얻을 수 있다.
 
 # 직관
+
+약수 구조가 드러난 합의 각 조각에는 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)과 지수합 추정을 쓸 수 있다. Bombieri–Vinogradov 정리와 Vinogradov 의 세 소수 정리가 이 분해를 사용한다.
 
 $\sum\_{n\le x}\Lambda(n)e(n\alpha)$ 의 크기를 재려고 한다. $\Lambda$ 는 소수의 거듭제곱에서만 $0$ 이 아니므로 이 합은 거의 소수에 걸친 합이고, 소수의 위치를 모르는 상태에서는 각 항의 크기 $1$ 을 더하는 것 말고 할 수 있는 것이 없어 $x$ 보다 나은 상한이 나오지 않는다.
 

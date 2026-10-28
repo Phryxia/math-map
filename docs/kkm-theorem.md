@@ -2,9 +2,11 @@
 
 # 개요
 
-**KKM 정리(KKM theorem, Knaster–Kuratowski–Mazurkiewicz)** 는 단체를 닫힌집합으로 덮을 때 그 덮개가 면의 구조를 따르면 모든 집합이 한 점을 공유한다는 정리다. [Sperner 보조정리](sperner-lemma.md)의 연속 판본이고 [Brouwer 고정점 정리](brouwer-fixed-point.md)와 서로를 함의한다.
+**KKM 정리(KKM theorem, Knaster–Kuratowski–Mazurkiewicz)** 는 단체를 닫힌집합으로 덮을 때 그 덮개가 면의 구조를 따르면 모든 집합이 한 점을 공유한다는 정리다. 삼각형을 닫힌집합 세 개로 덮고 각 꼭짓점과 각 변이 정해진 집합에 들게 할 때, 세 집합이 모두 만나는 점이 있는지는 연결성만으로 알 수 없다. 이 정리는 삼각형을 잘게 쪼개 꼭지마다 집합의 번호를 붙이고, 세 번호가 모두 다른 작은 삼각형들의 극한으로 공통점을 얻는다.
 
 # 직관
+
+KKM 정리는 [Sperner 보조정리](sperner-lemma.md)의 연속 판본이고 [Brouwer 고정점 정리](brouwer-fixed-point.md)와 서로를 함의한다.
 
 구간 $\lbrack 0,1\rbrack$ 을 닫힌집합 $A_0,A_1$ 로 덮고 $0\in A_0$ 과 $1\in A_1$ 을 요구한다. 두 집합이 만나지 않는다고 하자. 닫힌집합의 여집합은 열려 있으므로 $A_0$ 과 $A_1$ 은 구간을 두 열린집합으로 가르는 것이 되고, 구간이 연결이라는 것에 어긋난다. 따라서 $A_0\cap A_1$ 에 점이 있다.
 
