@@ -2,11 +2,13 @@
 
 # 개요
 
-**Gärtner–Ellis 정리(Gärtner–Ellis theorem)** 는 독립 가정 없이 [대편차 원리](large-deviations.md)를 주는 정리다. 확률벡터열 $Z_n$ 의 스케일된 로그 적률생성함수가 극한 $\Lambda$ 를 갖고 $\Lambda$ 가 미분가능하면, $Z_n/n$ 이 rate function $\Lambda^\ast$ 로 대편차 원리를 만족한다.
-
-Cramér 정리가 독립이고 같은 분포를 따르는 열에만 적용되는 것을 상관이 있는 열로 넓힌다. [Markov 연쇄](markov-chains.md)의 시간평균이 주된 적용 대상이다.
+**Gärtner–Ellis 정리(Gärtner–Ellis theorem)** 는 서로 영향을 주고받는 확률변수들의 평균이 기댓값에서 크게 벗어날 확률이 얼마나 빨리 작아지는지 주는 정리다. 맑은 날 다음 날도 맑을 확률과 비 온 날 다음 날도 비 올 확률이 모두 $0.9$ 인 마을에서, $n$ 일 가운데 맑은 날의 비율은 길게 보면 $1/2$ 이고 이것이 $0.8$ 이 될 확률은 $n$ 에 대해 지수적으로 작아진다. 날씨가 날마다 독립이 아니므로 동전 던지기의 계산을 그대로 쓸 수 없고, 이 정리는 $\log\mathbb E\lbrack e^{\lambda S_n}\rbrack$ 를 $n$ 으로 나눈 극한 하나를 계산하면 그 극한에서 감소 속도가 나온다는 것을 보인다.
 
 # 직관
+
+Gärtner–Ellis 정리는 독립 가정 없이 [대편차 원리](large-deviations.md)를 주는 정리다. 확률벡터열 $Z_n$ 의 스케일된 로그 적률생성함수가 극한 $\Lambda$ 를 갖고 $\Lambda$ 가 미분가능하면, $Z_n/n$ 이 rate function $\Lambda^\ast$ 로 대편차 원리를 만족한다.
+
+Cramér 정리가 독립이고 같은 분포를 따르는 열에만 적용되는 것을 상관이 있는 열로 넓힌다. [Markov 연쇄](markov-chains.md)의 시간평균이 주된 적용 대상이다.
 
 Cramér 정리의 상계는 Markov 부등식에서 나온다. $\Lambda_n(\lambda)=\log\mathbb E\lbrack e^{\lambda S_n}\rbrack$ 으로 쓰면 임의의 $\lambda\gt 0$ 에서
 

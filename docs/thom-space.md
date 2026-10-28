@@ -2,11 +2,13 @@
 
 # 개요
 
-**Thom 공간(Thom space)** 은 [벡터다발](vector-bundles.md)의 섬유마다 무한원점을 붙여 얻는 공간이다. 랭크 $r$ 인 다발 $E\to X$ 에서 이 공간을 $\mathrm{Th}(E)$ 라 쓴다.
-
-$\mathrm{Th}(E)$ 의 [코호몰로지](cohomology.md)는 $X$ 의 코호몰로지를 차수 $r$ 만큼 올린 것과 같고(Thom 동형 정리), 이 동형을 주는 차수 $r$ 인 류가 Thom 류다. Euler 류와 Stiefel–Whitney 류를 Thom 류에서 끌어내고, 코보디즘군을 Thom 공간의 호모토피군으로 번역한다.
+**Thom 공간(Thom space)** 은 [벡터다발](vector-bundles.md)의 섬유마다 무한히 먼 점을 하나씩 붙이고 그 점들을 모두 한 점으로 모은 공간이다. 원 위의 띠를 예로 들면, 꼬이지 않은 띠에서는 구면에 원 하나가 한 점에서 붙은 공간이 나오고 한 번 꼬인 Möbius 띠에서는 사영평면이 나온다. Thom 공간의 코호몰로지는 밑공간의 코호몰로지를 섬유 차원만큼 올린 것이어서, 다발이 어떻게 꼬였는지를 코호몰로지 류로 잴 수 있다.
 
 # 직관
+
+랭크 $r$ 인 다발 $E\to X$ 의 Thom 공간을 $\mathrm{Th}(E)$ 라 쓴다.
+
+$\mathrm{Th}(E)$ 의 [코호몰로지](cohomology.md)는 $X$ 의 코호몰로지를 차수 $r$ 만큼 올린 것과 같고(Thom 동형 정리), 이 동형을 주는 차수 $r$ 인 류가 Thom 류다. Euler 류와 Stiefel–Whitney 류를 Thom 류에서 끌어내고, 코보디즘군을 Thom 공간의 호모토피군으로 번역한다.
 
 벡터다발 $E\to X$ 를 코호몰로지로 재려 한다. 영단면이 $X$ 를 $E$ 안에 박고 섬유 방향으로 수축하면 $E$ 가 $X$ 로 줄어들므로 $H^\ast(E)\cong H^\ast(X)$ 다. 다발에 대한 정보가 하나도 남지 않는다. 섬유 방향을 살리려면 영단면 밖을 따로 보아야 하므로 쌍 $(E,E\setminus X)$ 의 상대 코호몰로지를 계산한다. 밑공간이 한 점인 경우가 섬유 하나이고
 
@@ -94,8 +96,8 @@ $$
 
 # 활용
 
-- [Stiefel–Whitney 류](stiefel-whitney-classes.md)의 구성. 공리로 정의한 류가 Thom 류와 Steenrod 제곱으로 다시 나오고, 공리의 검증이 Steenrod 제곱의 성질로 바뀐다.
-- Euler 류와 지표. 영이 되지 않는 단면의 존재를 $H^r(X;R)$ 의 한 원소로 판정하고, 접다발에서 [Poincaré–Hopf 정리](poincare-hopf.md)를 준다.
+- Stiefel–Whitney 류의 구성. 공리로 정의한 류가 Thom 류와 Steenrod 제곱으로 다시 나오고, 공리의 검증이 Steenrod 제곱의 성질로 바뀐다.
+- Euler 류와 지표. 영이 되지 않는 단면의 존재를 $H^r(X;R)$ 의 한 원소로 판정하고, 접다발에서 Poincaré–Hopf 정리를 준다.
 - 구면다발의 코호몰로지. Gysin 열이 복소사영공간과 [Grassmann 다양체](grassmannian.md)의 코호몰로지 환 계산에 쓰인다.
 - 코보디즘의 번역. 닫힌 다양체를 법다발의 Thom 공간으로 보내는 Pontryagin–Thom 구성이 코보디즘군을 $\mathrm{MO}(k)$ 의 호모토피군으로 바꾼다.
 - [Poincaré 쌍대성](poincare-duality.md)과의 관계. Thom 동형은 다발의 전체공간을 밑공간에 쌍대로 놓은 것이고, 매장된 부분다양체의 법다발에 적용하면 쌍대류를 준다.

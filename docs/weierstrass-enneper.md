@@ -2,13 +2,15 @@
 
 # 개요
 
-**Weierstrass–Enneper 표현(Weierstrass–Enneper representation)** 은 등온 좌표로 쓴 [극소곡면](minimal-surfaces.md)을 [정칙함수](holomorphic-functions.md) $f$ 와 유리형함수 $g$ 의 쌍으로 적는 공식이다. 거꾸로 조건을 만족하는 쌍마다 극소곡면이 하나 나온다.
-
-$g$ 는 곡면의 단위법벡터를 구면에서 복소평면으로 입체사영한 것이고, 곡률과 넓이가 $f$ 와 $g$ 로 계산된다. 극소곡면에 대한 기하의 질문이 복소함수에 대한 질문으로 바뀐다.
+**Weierstrass–Enneper 표현(Weierstrass–Enneper representation)** 은 비누막처럼 넓이가 국소적으로 가장 작은 곡면인 [극소곡면](minimal-surfaces.md)을 복소함수 두 개로 적는 공식이다. 두 원형 고리 사이에 걸린 비누막은 현수면이고, 그 점마다 좌표 셋을 직접 구하는 대신 지수함수로 된 쌍 $(f,g)$ 하나를 공식에 넣으면 현수면 전체가 나온다. 같은 $g$ 에 $f$ 만 $i$ 배 하면 나선 계단 모양의 나선면이 나오듯, 곡면에 대한 기하의 질문이 정칙함수와 유리형함수를 고르는 질문으로 바뀐다.
 
 # 직관
 
-[극소곡면](minimal-surfaces.md) 문서에 따르면 등온 좌표 $(u,v)$ 로 쓴 극소곡면은 세 좌표함수 $x\_1,x\_2,x\_3$ 이 모두 [조화함수](harmonic-functions.md)다. $z=u+iv$ 로 놓고 각 좌표함수에서
+Weierstrass–Enneper 표현은 등온 좌표로 쓴 극소곡면을 [정칙함수](holomorphic-functions.md) $f$ 와 유리형함수 $g$ 의 쌍으로 적는 공식이다. 거꾸로 조건을 만족하는 쌍마다 극소곡면이 하나 나온다.
+
+$g$ 는 곡면의 단위법벡터를 구면에서 복소평면으로 입체사영한 것이고, 곡률과 넓이가 $f$ 와 $g$ 로 계산된다. 극소곡면에 대한 기하의 질문이 복소함수에 대한 질문으로 바뀐다.
+
+극소곡면 문서에 따르면 등온 좌표 $(u,v)$ 로 쓴 극소곡면은 세 좌표함수 $x\_1,x\_2,x\_3$ 이 모두 [조화함수](harmonic-functions.md)다. $z=u+iv$ 로 놓고 각 좌표함수에서
 
 $$
 \varphi\_k=\frac{\partial x\_k}{\partial u}-i\frac{\partial x\_k}{\partial v}
@@ -52,7 +54,7 @@ $$
 ds^2=\Bigl(\tfrac12\vert f\vert(1+\vert g\vert^2)\Bigr)^2\vert dz\vert^2,\qquad K=-\left(\frac{4\vert g'\vert}{\vert f\vert(1+\vert g\vert^2)^2}\right)^2
 $$
 
-$K$ 는 $g'=0$ 인 점에서만 $0$ 이고 나머지에서 음수다. [극소곡면](minimal-surfaces.md)의 $K\le 0$ 이 이 식으로 다시 나온다.
+$K$ 는 $g'=0$ 인 점에서만 $0$ 이고 나머지에서 음수다. 극소곡면의 $K\le 0$ 이 이 식으로 다시 나온다.
 
 ## 예
 
@@ -74,7 +76,7 @@ $\vert K\vert\thinspace dA$ 는 단위법벡터 사상으로 당긴 구면의 �
 
 **정리(Fujimoto).** 평면이 아닌 완비 극소곡면의 단위법벡터 사상은 구면의 점을 많아야 $4$ 개 피한다[^3].
 
-평면 전체 위의 그래프로 된 극소곡면은 법벡터가 위쪽 반구에 있어 열린 집합을 피하므로 평면이다. [극소곡면](minimal-surfaces.md)의 Bernstein 정리가 이 정리에서 따라 나온다. [Scherk 곡면](scherk-surface.md)은 정확히 $4$ 점을 피하므로 상한 $4$ 는 줄일 수 없다.
+평면 전체 위의 그래프로 된 극소곡면은 법벡터가 위쪽 반구에 있어 열린 집합을 피하므로 평면이다. 극소곡면의 Bernstein 정리가 이 정리에서 따라 나온다. [Scherk 곡면](scherk-surface.md)은 정확히 $4$ 점을 피하므로 상한 $4$ 는 줄일 수 없다.
 
 # 활용
 
