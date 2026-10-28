@@ -2,7 +2,7 @@
 
 # 개요
 
-**변분법의 직접법(direct method)** 은 범함수의 최소점이 있다는 것을 Euler–Lagrange 방정식을 풀지 않고 보이는 방법이다. 최소화열에서 약수렴하는 부분열을 뽑고, 범함수가 약하반연속이면 그 극한이 최소점이다. 강제성이 부분열을 주고 볼록성이 하반연속성을 준다.
+**변분법의 직접법(direct method)** 은 범함수의 최소점이 있다는 것을 Euler–Lagrange 방정식을 풀지 않고 보이는 방법이다. 경계값이 정해진 함수 가운데 Dirichlet 에너지 $\int_\Omega\lvert\nabla u\rvert^2dx$ 가 가장 작은 것을 찾을 때, 에너지를 줄여 가는 함수열은 만들 수 있지만 그 열이 어떤 함수로 수렴해 최솟값을 내는지는 따로 보여야 한다. 직접법은 그 열에서 약하게 수렴하는 부분열을 뽑고, 범함수가 그 극한에서 값이 뛰어오르지 않음을 보여 극한이 최소점임을 얻는다.
 
 # 직관
 
@@ -21,6 +21,8 @@ $$
 노름 수렴이 안 되니 더 약한 수렴을 쓴다. [Sobolev 공간](sobolev-spaces.md) $H^1(\Omega)$ 은 [Hilbert 공간](hilbert-spaces.md)이므로 유계열은 약수렴하는 부분열 $u_k\rightharpoonup u$ 를 가진다([Banach–Alaoglu 정리](banach-alaoglu.md)). 약수렴에서는 $\nabla u_k$ 가 $\nabla u$ 로 노름수렴하지 않으므로 $J\lbrack u_k\rbrack\to J\lbrack u\rbrack$ 은 기대할 수 없다. 필요한 것은 부등식 한 방향뿐이고, 노름이 약수렴에 대해 하반연속이라는 사실이 그것을 준다.
 
 $J\lbrack u\rbrack\le\liminf J\lbrack u_k\rbrack=m$ 이고 경계조건이 약수렴에서 보존되므로 $u$ 도 경쟁 함수다. 따라서 $J\lbrack u\rbrack=m$ 이고 최소점이 있다. 방정식을 풀지 않았고 쓴 것은 아래 유계성, 유계열에서 약수렴 부분열, 노름의 약하반연속성 셋이다.
+
+강제성이 부분열을 주고 볼록성이 하반연속성을 준다.
 
 # 정의
 
