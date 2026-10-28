@@ -2,11 +2,13 @@
 
 # 개요
 
-**Korovkin 정리(Korovkin's theorem)** 는 양선형작용소 열이 연속함수 전체에서 균등수렴하는지를 세 함수에서의 수렴만으로 판정한다. $C\lbrack 0,1\rbrack$ 에서 그 세 함수는 $1$ , $t$ , $t^2$ 이다.
-
-[Stone–Weierstrass 정리](stone-weierstrass.md)는 근사하는 함수족이 어떤 대수적 조건을 만족할 때 조밀한지를 말하고, Korovkin 정리는 주어진 근사 작용소 열이 수렴하는지를 말한다. Bernstein 다항식의 균등수렴이 이 정리의 특수한 경우다.
+**Korovkin 정리(Korovkin's theorem)** 는 함수를 근사하는 작용소의 열이 모든 연속함수에서 균등수렴하는지를 함수 세 개만 보고 판정하는 정리다. $\lbrack 0,1\rbrack$ 의 연속함수 $f$ 에 Bernstein 다항식 $B_nf$ 를 대응시키면, $f$ 가 $1$ , $t$ , $t^2$ 일 때는 $B_nf$ 를 닫힌 꼴로 계산해 수렴을 확인할 수 있지만 일반 $f$ 에서는 합이 닫힌 꼴로 쓰이지 않는다. 작용소가 양의 함수를 양의 함수로 보내면 세 함수에서의 수렴으로부터 모든 $f$ 에서의 수렴이 증명된다.
 
 # 직관
+
+Korovkin 정리는 양선형작용소 열이 연속함수 전체에서 균등수렴하는지를 세 함수에서의 수렴만으로 판정한다. $C\lbrack 0,1\rbrack$ 에서 그 세 함수는 $1$ , $t$ , $t^2$ 이다.
+
+[Stone–Weierstrass 정리](stone-weierstrass.md)는 근사하는 함수족이 어떤 대수적 조건을 만족할 때 조밀한지를 판정하고, Korovkin 정리는 주어진 근사 작용소 열이 수렴하는지를 판정한다. Bernstein 다항식의 균등수렴이 이 정리의 특수한 경우다.
 
 $f\in C\lbrack 0,1\rbrack$ 에 대해 Bernstein 다항식
 
