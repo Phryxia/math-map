@@ -2,7 +2,7 @@
 
 # 개요
 
-**Hilbert 의 10번 문제(Hilbert's tenth problem)** 는 정수계수 다항방정식이 정수해를 갖는지 판정하는 알고리즘을 찾으라는 문제다. Hilbert 가 1900년에 낸 23 문제의 열 번째이고, Matiyasevich 가 1970년에 Davis, Putnam, Robinson 의 결과를 완성해 그런 알고리즘이 없음을 증명했다[^1]. 증명의 내용은 MRDP 정리(Matiyasevich–Robinson–Davis–Putnam theorem)다. 계산 가능하게 열거 가능한 집합이 전부 다항방정식의 해 존재로 정의되므로, 판정 알고리즘이 있으면 [정지 문제](halting-problem.md)가 풀린다.
+**Hilbert 의 10번 문제(Hilbert's tenth problem)** 는 정수계수 다항방정식이 정수해를 갖는지 판정하는 알고리즘을 찾으라는 문제다. $x^2-2y^2=1$ 은 $(3,2)$ 를 대입하면 해가 있음이 확인되지만, 해가 없는 방정식은 정수 쌍을 아무리 많이 대입해도 "해가 없다" 는 답이 나오지 않는다. 이 문제는 그런 알고리즘이 없다는 것으로 풀렸고, 증명은 프로그램이 멈추는지를 다항방정식의 해 존재로 적어 [정지 문제](halting-problem.md)로 옮긴다.
 
 # 직관
 
@@ -28,12 +28,14 @@ $$
 
 ## MRDP 정리
 
+Hilbert 가 1900년에 낸 23 문제의 열 번째가 이 문제이고, Matiyasevich 가 1970년에 Davis, Putnam, Robinson 의 결과를 완성해 판정 알고리즘이 없음을 증명했다[^1]. 그 증명의 내용이 MRDP 정리(Matiyasevich–Robinson–Davis–Putnam theorem)다.
+
 **정리 (Matiyasevich, Robinson, Davis, Putnam).** 집합 $A\subseteq\mathbb N^n$ 이 Diophantine 인 것과 계산 가능하게 열거 가능한 것은 동치다.
 
 Diophantine 집합이 계산 가능하게 열거 가능한 것은 직관 절의 대입 절차로 나온다. 반대 방향은 두 단계로 증명된다.
 
 1. Davis, Putnam, Robinson(1961). 계산 가능하게 열거 가능한 집합은 지수 Diophantine 이다. 계산의 각 단계를 유계 한정사(bounded quantifier)로 적고, 유계 한정사를 이항계수와 계승으로 없앤 뒤 그 둘을 지수로 표현한다.
-2. Matiyasevich(1970). 관계 $c=a^b$ 는 Diophantine 이다. Pell 방정식 $x^2-(a^2-1)y^2=1$ 의 $n$ 번째 해 $(x_n,y_n)$ 에서 $y_n\equiv n\pmod{a-1}$ 같은 합동 성질과 $(2a-1)^n\le y_{n+1}\le(2a)^n$ 같은 증가 범위를 다항방정식으로 적는다. Matiyasevich 의 원래 증명은 Fibonacci 수를 썼고, Pell 방정식을 쓰는 판본은 Davis(1973)가 정리했다.
+2. Matiyasevich(1970). 관계 $c=a^b$ 는 Diophantine 이다. Pell 방정식 $x^2-(a^2-1)y^2=1$ 의 $n$ 번째 해 $(x_n,y_n)$ 에서 $y_n\equiv n\pmod{a-1}$ 같은 합동 성질과 $(2a-1)^n\le y_{n+1}\le(2a)^n$ 같은 증가 범위를 다항방정식으로 적는다. Matiyasevich 의 원래 증명은 [Fibonacci 수](fibonacci-numbers.md)를 썼고, Pell 방정식을 쓰는 판본은 Davis(1973)가 정리했다.
 
 2단계에서 필요한 것은 지수적으로 자라는 Diophantine 관계 하나가 존재한다는 것이었고, 이것을 Robinson 가설(Julia Robinson hypothesis)이라 한다. Robinson 이 1952년에 이 가설로 지수가 Diophantine 임이 따름을 보였고, Matiyasevich 가 그런 관계를 구성했다.
 

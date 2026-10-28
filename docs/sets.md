@@ -2,13 +2,15 @@
 
 # 개요
 
-**집합(set)** 은 원소만으로 결정되는 대상이다. 순서와 중복은 구별하지 않는다. 함수, 관계, 수 체계, 확률 공간, 그래프, 위상 공간은 모두 집합 위에 구조를 더해 정의한다. 어떤 모임이 집합인지는 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)가 정한다.
+**집합(set)** 은 원소만으로 결정되는 대상이다. 장바구니 하나에 사과, 배, 사과를 담고 다른 장바구니에 배, 사과를 담으면 담은 개수와 순서는 다르지만, 어떤 과일이 들어 있는지만 물으면 두 답이 같다. 집합은 순서와 중복을 버리고 무엇이 들어 있는지만으로 대상을 정하며, 함수, 관계, 수 체계는 이 위에 구조를 더해 정의한다.
 
 # 직관
 
 집합은 순서 없는 명단이다. $\lbrace 1,3\rbrace$ , $\lbrace 3,1\rbrace$ , $\lbrace 1,3,3\rbrace$ 은 같은 집합이다. 순서가 필요하면 순서쌍을, 횟수가 필요하면 다중집합을 따로 둔다.
 
 원소 관계 $\in$ 와 포함 관계 $\subseteq$ 는 다르다. $1\in\lbrace 1,2\rbrace$ 이지만 $1\subseteq\lbrace 1,2\rbrace$ 는 아니고, $\lbrace 1\rbrace\subseteq\lbrace 1,2\rbrace$ 이지만 $\lbrace 1\rbrace\in\lbrace 1,2\rbrace$ 는 아니다. 집합은 다른 집합의 원소가 될 수 있다. $\varnothing\ne\lbrace\varnothing\rbrace$ 이다.
+
+어떤 모임이 집합인지는 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)가 정한다. 확률 공간, 그래프, 위상 공간도 집합 위에 구조를 더해 정의한다.
 
 # 정의
 
