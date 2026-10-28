@@ -2,13 +2,15 @@
 
 # 개요
 
-**Milnor K 이론(Milnor K-theory)** 은 체 $F$ 에 차수가 붙은 환 $K^M_\ast(F)=\bigoplus_{n\ge0}K^M_n(F)$ 을 대응시키는 이론이다. $K^M_n(F)$ 는 곱셈군 $F^{\times}$ 의 $n$ 겹 텐서곱을 $a\otimes(1-a)$ 꼴의 원소로 나눈 군이다.
-
-[Galois 코호몰로지](galois-cohomology.md)의 컵곱이 이 관계를 만족하므로 $K^M_n(F)/m$ 에서 $H^n(F,\mu_m^{\otimes n})$ 으로 가는 사상이 정의되고, 그 사상이 동형이라는 것이 노름 잉여 동형 정리(norm residue isomorphism theorem)다.
+**Milnor K 이론(Milnor K-theory)** 은 체의 원소 여러 개로 만든 기호 $\lbrace a_1,\dots,a_n\rbrace$ 를 모으되 $\lbrace a,1-a\rbrace=0$ 이라는 관계를 두어 만든 군들의 이론이다. 유리수 $a,b$ 로 정한 [사원수 대수](quaternion-algebras.md) $(a,b)$ 가 행렬 대수인지는 $x^2-ay^2-bz^2=0$ 이 $0$ 아닌 해를 갖는지로 정해지고, $a+b=1$ 이면 $(1,1,1)$ 이 해이므로 언제나 행렬 대수다. Milnor K 이론은 이 관계를 만족하는 기호들로 $K^M_n(F)$ 를 정의하고, $K^M_n(F)/m$ 이 [Galois 코호몰로지](galois-cohomology.md) $H^n(F,\mu_m^{\otimes n})$ 과 같다는 노름 잉여 동형 정리(norm residue isomorphism theorem)로 코호몰로지를 기호로 계산한다.
 
 # 직관
 
-Galois 코호몰로지의 Kummer 열은 $a\in F^{\times}$ 에 류 $(a)\in H^1(F,\mu_2)$ 를 주고 $H^1(F,\mu_2)\cong F^{\times}/(F^{\times})^{2}$ 이다. 표수가 $2$ 가 아니면 두 류의 컵곱 $(a)\cup(b)$ 는 $H^2(F,\mu_2)\cong\mathrm{Br}(F)\lbrack2\rbrack$ 에 들어가고, 그 원소는 $i^2=a$, $j^2=b$, $ij=-ji$ 로 정한 [사원수 대수](quaternion-algebras.md) $(a,b)$ 의 류다. 사원수 대수가 행렬 대수와 동형인 것은 $x^2-ay^2-bz^2=0$ 이 $0$ 아닌 해를 갖는 것과 동치다.
+Milnor K 이론은 체 $F$ 에 차수가 붙은 환 $K^M_\ast(F)=\bigoplus_{n\ge0}K^M_n(F)$ 을 대응시키는 이론이다. $K^M_n(F)$ 는 곱셈군 $F^{\times}$ 의 $n$ 겹 텐서곱을 $a\otimes(1-a)$ 꼴의 원소로 나눈 군이다.
+
+Galois 코호몰로지의 컵곱이 이 관계를 만족하므로 $K^M_n(F)/m$ 에서 $H^n(F,\mu_m^{\otimes n})$ 으로 가는 사상이 정의되고, 그 사상이 동형이라는 것이 노름 잉여 동형 정리다.
+
+Galois 코호몰로지의 Kummer 열은 $a\in F^{\times}$ 에 류 $(a)\in H^1(F,\mu_2)$ 를 주고 $H^1(F,\mu_2)\cong F^{\times}/(F^{\times})^{2}$ 이다. 표수가 $2$ 가 아니면 두 류의 컵곱 $(a)\cup(b)$ 는 $H^2(F,\mu_2)\cong\mathrm{Br}(F)\lbrack2\rbrack$ 에 들어가고, 그 원소는 $i^2=a$, $j^2=b$, $ij=-ji$ 로 정한 사원수 대수 $(a,b)$ 의 류다. 사원수 대수가 행렬 대수와 동형인 것은 $x^2-ay^2-bz^2=0$ 이 $0$ 아닌 해를 갖는 것과 동치다.
 
 $b=1-a$ 로 두면 $x=y=z=1$ 에서 $1-a-(1-a)=0$ 이므로 해가 있다. 그래서 모든 $a\ne0,1$ 에서 $(a)\cup(1-a)=0$ 이다. 컵곱은 양쪽 변수에 대해 준동형이므로 $(a,b)\mapsto(a)\cup(b)$ 는 $F^{\times}\otimes F^{\times}$ 에서 정의된 사상이고, $a\otimes(1-a)$ 를 전부 $0$ 으로 보낸다.
 
@@ -81,9 +83,9 @@ $$
 
 # 활용
 
-- [Witt 환](witt-ring.md): Pfister 형식 $\langle\langle a_1,\dots,a_n\rangle\rangle$ 을 대응시키는 사상이 $K^M_n(F)/2\cong I^n/I^{n+1}$ 을 주고, 노름 잉여 사상과 합치면 이차형식의 여과가 $H^n(F,\mathbb Z/2)$ 로 계산된다.
+- Witt 환: Pfister 형식 $\langle\langle a_1,\dots,a_n\rangle\rangle$ 을 대응시키는 사상이 $K^M_n(F)/2\cong I^n/I^{n+1}$ 을 주고, 노름 잉여 사상과 합치면 이차형식의 여과가 $H^n(F,\mathbb Z/2)$ 로 계산된다.
 - [Brauer 군](brauer-groups.md): Merkurjev–Suslin 정리로 $\mathrm{Br}(F)\lbrack m\rbrack$ 의 원소가 순환 대수의 곱으로 표현된다.
-- [대수적 K 이론](algebraic-k-theory.md): Quillen–Lichtenbaum 추측의 증명이 노름 잉여 동형 정리를 사용한다. 체의 $K_\ast(F)$ 에서 Milnor K 이론의 상은 기호로 생성되는 부분이다.
+- 대수적 K 이론: Quillen–Lichtenbaum 추측의 증명이 노름 잉여 동형 정리를 사용한다. 체의 $K_\ast(F)$ 에서 Milnor K 이론의 상은 기호로 생성되는 부분이다.
 - [Bloch 군](bloch-group.md): $K_3^{\mathrm{ind}}(F)=K_3(F)/K^M_3(F)$ 를 생성원과 관계로 제시한다.
 
 [^1]: J. Milnor, "Algebraic K-theory and quadratic forms", *Inventiones Mathematicae* 9 (1970), 318–344.

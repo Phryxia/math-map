@@ -2,11 +2,13 @@
 
 # 개요
 
-**Schatten 아이디얼(Schatten ideal)** $\mathcal S_p$ 는 특이값 수열이 $\ell^p$ 에 드는 [콤팩트 작용소](compact-operators.md)의 모임이다. $p=1$ 인 것을 추적류(trace class), $p=2$ 인 것을 Hilbert–Schmidt 류(Hilbert–Schmidt class)라 한다.
-
-작용소 노름은 가장 큰 특이값만 재므로 대각합이나 행렬식이 수렴하는지 말해 주지 않는다. Schatten 노름은 특이값 전체를 수열로 보고 그 수열의 $\ell^p$ 크기를 재며, $p$ 가 작을수록 좁은 모임이 된다.
+**Schatten 아이디얼(Schatten ideal)** 은 무한차원 공간의 작용소 가운데 특이값을 모은 수열이 일정한 속도로 작아지는 것들의 모임이다. 무한 행렬의 대각합을 대각 원소의 합 $\sum_n\langle Ae_n,e_n\rangle$ 으로 정하려 하면 이 합이 수렴하지 않거나 기저에 따라 값이 달라질 수 있다. Schatten 아이디얼 $\mathcal S_p$ 는 특이값 수열이 $\ell^p$ 에 드는 [콤팩트 작용소](compact-operators.md)의 모임이고, $p=1$ 인 것에서는 대각합이 기저와 무관하게 정해진다.
 
 # 직관
+
+Schatten 아이디얼 $\mathcal S_p$ 는 특이값 수열이 $\ell^p$ 에 드는 콤팩트 작용소의 모임이다. $p=1$ 인 것을 추적류(trace class), $p=2$ 인 것을 Hilbert–Schmidt 류(Hilbert–Schmidt class)라 한다.
+
+작용소 노름은 가장 큰 특이값만 재므로 대각합이나 행렬식이 수렴하는지 말해 주지 않는다. Schatten 노름은 특이값 전체를 수열로 보고 그 수열의 $\ell^p$ 크기를 재며, $p$ 가 작을수록 좁은 모임이 된다.
 
 유한 행렬에서 대각합은 대각 원소의 합이고 고윳값의 합과 같다. 무한차원 [Hilbert 공간](hilbert-spaces.md)의 [유계 작용소](bounded-operators.md) $A$ 에 같은 정의를 쓰려면 정규직교기저 $e_1,e_2,\dots$ 를 잡아 $\sum_n\langle Ae_n,e_n\rangle$ 을 계산한다.
 
