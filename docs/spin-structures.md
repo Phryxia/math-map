@@ -2,11 +2,13 @@
 
 # 개요
 
-**스핀 구조(spin structure)** 는 방향 지어진 [Riemann 다양체](riemannian-metrics.md)의 정규직교 틀다발을 회전군의 이중덮개로 들어 올린 [주다발](principal-bundles.md)이다. 들어 올림이 있는 것은 둘째 Stiefel–Whitney 류가 $0$ 인 것과 같다.
-
-들어 올림이 있으면 회전군의 표현으로는 만들 수 없는 스피너 다발이 생기고, 그 위에서 Dirac 작용소를 세울 수 있다.
+**스핀 구조(spin structure)** 는 다양체의 모든 점에서 회전을 그 두 겹 덮개의 원소로 일관되게 바꿔 쓰는 선택이다. 3 차원에서 $0^\circ$ 부터 $360^\circ$ 까지 같은 축으로 돌리는 회전의 고리는 항등 회전 하나로 연속적으로 줄어들지 않지만, $720^\circ$ 까지 돌리는 고리는 줄어든다. 이 차이를 반영한 회전군의 이중덮개를 다양체 전체에서 고를 수 있으면 스핀 구조가 있고, 그 선택이 있어야 [Dirac 작용소](dirac-operator.md)가 작용하는 스피너를 정의한다.
 
 # 직관
+
+스핀 구조는 방향 지어진 [Riemann 다양체](riemannian-metrics.md)의 정규직교 틀다발을 회전군의 이중덮개로 들어 올린 [주다발](principal-bundles.md)이다. 들어 올림이 있는 것은 둘째 Stiefel–Whitney 류가 $0$ 인 것과 같다.
+
+들어 올림이 있으면 회전군의 표현으로는 만들 수 없는 스피너 다발이 생기고, 그 위에서 Dirac 작용소를 세울 수 있다.
 
 방향 지어진 다양체의 정규직교 틀다발은 전이함수 $g_{\alpha\beta}\colon U_\alpha\cap U_\beta\to\mathrm{SO}(n)$ 로 결정된다. $\mathrm{Spin}(n)\to\mathrm{SO}(n)$ 이 이중덮개이므로 각 $g_{\alpha\beta}$ 를 $\tilde g_{\alpha\beta}$ 로 들어 올릴 수 있고, 들어 올림은 겹침마다 부호 두 가지다. 올린 것들이 다시 다발의 전이함수가 되려면 삼중 겹침에서 $\tilde g_{\alpha\beta}\tilde g_{\beta\gamma}\tilde g_{\gamma\alpha}=1$ 이어야 한다.
 
@@ -67,7 +69,7 @@ $$
 
 ## 스피너 다발의 접속
 
-Levi-Civita [접속](connection.md)은 덮개를 통해 $P\_{\mathrm{Spin}}$ 으로 올라가고 스피너 다발 $S$ 위의 접속을 준다. 이 공변미분에 [Clifford 대수](clifford-algebras.md)의 곱을 합성한 1 계 작용소가 [Dirac 작용소](dirac-operator.md)이고, 그 제곱이 접속 Laplace 작용소에 스칼라 곡률의 $1/4$ 을 더한 것이다.
+Levi-Civita [접속](connection.md)은 덮개를 통해 $P\_{\mathrm{Spin}}$ 으로 올라가고 스피너 다발 $S$ 위의 접속을 준다. 이 공변미분에 [Clifford 대수](clifford-algebras.md)의 곱을 합성한 1 계 작용소가 Dirac 작용소이고, 그 제곱이 접속 Laplace 작용소에 스칼라 곡률의 $1/4$ 을 더한 것이다.
 
 스칼라 곡률이 양이면 이 등식의 우변이 양의 정부호이므로 Dirac 작용소의 핵이 $0$ 이다.
 
