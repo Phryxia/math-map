@@ -2,9 +2,11 @@
 
 # 개요
 
-**클릭(clique)** 은 그래프에서 어느 두 정점도 서로 이웃하는 정점 집합이다. 가장 큰 클릭의 크기를 **클릭수(clique number)** $\omega(G)$ 라 하고, $\omega(G)$ 를 구하거나 크기 $k$ 의 클릭이 있는지 판정하는 문제를 **클릭 문제(clique problem)** 라 한다. 판정 판본은 Karp 의 21 개 [NP-완전](np-completeness.md)(nondeterministic polynomial time) 문제 가운데 하나다[^1]. 근사도 어려워서 $n^{1-\varepsilon}$ 배 이내의 근사가 $\mathrm P=\mathrm{NP}$ 를 함의하고, 매개변수 $k$ 에 대해서도 고정 매개변수 다루기 쉽지 않다고 여겨진다.
+**클릭(clique)** 은 그래프에서 어느 두 정점도 서로 이웃하는 정점 집합이다. 모임에서 서로 모두 아는 사이인 사람을 가장 많이 고르는 문제가 이 꼴인데, 사람이 $50$ 명이고 $10$ 명짜리 묶음을 찾으면 시도할 묶음이 $\binom{50}{10}$, 곧 100억 가지를 넘는다. **클릭 문제(clique problem)** 는 가장 큰 클릭의 크기나 크기 $k$ 의 클릭이 있는지를 묻는 문제이고, [NP-완전](np-completeness.md)(nondeterministic polynomial time) 문제로 분류되어 다항시간 알고리즘이 있으면 모든 NP 문제가 다항시간에 풀린다.
 
 # 직관
+
+가장 큰 클릭의 크기를 **클릭수(clique number)** $\omega(G)$ 라 한다. 판정 판본은 Karp 의 21 개 NP-완전 문제 가운데 하나다[^1]. 근사도 어려워서 $n^{1-\varepsilon}$ 배 이내의 근사가 $\mathrm P=\mathrm{NP}$ 를 함의하고, 매개변수 $k$ 에 대해서도 고정 매개변수 다루기 쉽지 않다고 여겨진다.
 
 정점 $n$ 개 그래프에서 크기 $k$ 의 클릭을 찾을 때 정점 $k$ 개를 모두 시도하면 $\binom nk$ 가지다. 그래프의 간선이 많으면 큰 클릭이 생긴다. [Turán 정리](turan-theorem.md)는 간선이 $(1-1/r)n^2/2$ 개보다 많으면 크기 $r+1$ 의 클릭이 있다고 정한다.
 
