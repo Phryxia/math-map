@@ -2,9 +2,11 @@
 
 # 개요
 
-**Riemann 가설(Riemann hypothesis)** 은 [Riemann zeta 함수](riemann-zeta.md)의 비자명한 영점이 전부 직선 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 추측이다.[^1] 영점의 실수부가 [소수 정리](prime-number-theorem.md)의 오차 크기를 정하므로, 이 추측은 소수 계량 함수의 오차가 $\sqrt x$ 규모라는 진술과 동치다. 여러 $L$ 함수로 일반화한 판본이 있고, [유한체](finite-fields.md) 위 곡선에 대한 판본은 증명되었다.
+**Riemann 가설(Riemann hypothesis)** 은 소수의 개수가 예측값에서 얼마나 벗어날 수 있는지를 정하는 추측이다. $10^8$ 이하의 소수는 $5761455$ 개이고 예측값 $\mathrm{Li}(10^8)$ 과 $754$ 차이가 나는데, [소수 정리](prime-number-theorem.md)만으로는 이 차이가 $x$ 에 비해 작다는 것만 나온다. 이 추측은 [Riemann zeta 함수](riemann-zeta.md)의 비자명한 영점이 전부 직선 $\mathrm{Re}\thinspace s=1/2$ 위에 있다고 주장하고, 그러면 차이가 $\sqrt x\log x$ 의 상수배 이하가 된다.
 
 # 직관
+
+Riemann 가설은 Riemann zeta 함수의 비자명한 영점이 전부 직선 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 추측이다.[^1] 영점의 실수부가 소수 정리의 오차 크기를 정하므로, 이 추측은 소수 계량 함수의 오차가 $\sqrt x$ 규모라는 진술과 동치다. 여러 $L$ 함수로 일반화한 판본이 있고, [유한체](finite-fields.md) 위 곡선에 대한 판본은 증명되었다.
 
 $x=10^4$ 에서 소수의 개수는 $\pi(x)=1229$ 이고 $\mathrm{Li}(x)=1246.1\ldots$ 라 차이가 $17$ 남짓이며, $x=10^8$ 에서는 $\pi(x)=5761455$ , $\mathrm{Li}(x)=5762209.4\ldots$ 로 차이가 $754$ 다. 소수 정리로는 이 차이가 $x$ 에 비해 작다는 것만 나오고, 차이 자체가 얼마나 커질 수 있는지는 나오지 않는다. 명시 공식이 그 차이를 영점으로 적는다. Chebyshev 함수 $\psi(x)=\sum_{p^k\le x}\ln p$ 에 대해 다음이 성립한다.
 
@@ -38,7 +40,7 @@ Riemann 가설은 $N_0(T)=N(T)$ 와 같은 말이다.
 
 ## 일반화된 Riemann 가설
 
-**GRH**(generalized Riemann hypothesis)는 같은 진술을 [Dirichlet L 함수](dirichlet-l-functions.md)로 넓힌 것이다. 모든 Dirichlet 지표 $\chi$ 에 대해 $L(s,\chi)$ 의 비자명한 영점이 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 주장이며, 주지표의 경우가 원래 Riemann 가설이다. 수체의 Dedekind zeta 함수로 넓힌 판본을 확장된 Riemann 가설이라 부른다.
+**GRH**(generalized Riemann hypothesis)는 같은 진술을 [Dirichlet L 함수](dirichlet-l-functions.md)로 넓힌 것이다. 모든 Dirichlet 지표 $\chi$ 에 대해 $L(s,\chi)$ 의 비자명한 영점이 $\mathrm{Re}\thinspace s=1/2$ 위에 있다는 주장이며, 주지표의 경우가 원래 Riemann 가설이다. 수체의 [Dedekind zeta 함수](dedekind-zeta.md)로 넓힌 판본을 확장된 Riemann 가설이라 부른다.
 
 # 성질
 

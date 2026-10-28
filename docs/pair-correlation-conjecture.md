@@ -2,9 +2,11 @@
 
 # 개요
 
-**쌍 상관 추측(pair correlation conjecture)** 은 [Riemann zeta 함수](riemann-zeta.md)의 임계선 위 영점 쌍의 간격 분포가 큰 에르미트 무작위 행렬의 고윳값 쌍의 간격 분포와 같다는 추측이다.[^1] 평균 간격이 $1$ 이 되게 영점 높이를 정규화하면, 간격이 $\lbrack a,b\rbrack$ 에 드는 쌍의 비율이 밀도 $1-(\sin\pi u/\pi u)^2$ 의 적분으로 간다. Montgomery 는 이 밀도의 [Fourier 변환](fourier-transform.md)을 변수의 한 범위에서 [Riemann 가설](riemann-hypothesis.md) 아래 증명했다.
+**쌍 상관 추측(pair correlation conjecture)** 은 [Riemann zeta 함수](riemann-zeta.md)의 영점 두 개 사이의 간격이 어떻게 분포하는지에 대한 추측이다. 임계선 위 영점의 높이를 평균 간격이 $1$ 이 되게 늘려도, 영점들이 일정한 간격으로 놓이는지 무작위로 흩어지는지는 평균만으로 알 수 없다. 이 추측은 간격이 $u$ 근처인 쌍의 밀도가 $1-(\sin\pi u/\pi u)^2$ 이라고 주장하고, 이 밀도는 큰 무작위 에르미트 행렬의 고윳값 간격의 밀도와 같다.
 
 # 직관
+
+쌍 상관 추측은 Riemann zeta 함수의 임계선 위 영점 쌍의 간격 분포가 큰 에르미트 무작위 행렬의 고윳값 쌍의 간격 분포와 같다는 추측이다.[^1] 평균 간격이 $1$ 이 되게 영점 높이를 정규화하면, 간격이 $\lbrack a,b\rbrack$ 에 드는 쌍의 비율이 밀도 $1-(\sin\pi u/\pi u)^2$ 의 적분으로 간다. Montgomery 는 이 밀도의 [Fourier 변환](fourier-transform.md)을 변수의 한 범위에서 [Riemann 가설](riemann-hypothesis.md) 아래 증명했다.
 
 높이 $T$ 까지 비자명한 영점의 개수는 Riemann–von Mangoldt 공식이 준다.
 

@@ -2,9 +2,11 @@
 
 # 개요
 
-**Arakelov 기하(Arakelov geometry)** 는 [대수적 수체](algebraic-number-fields.md) $K$ 의 정수환 위의 스킴에 복소수 자리마다 Hermite 계량을 더해, 유한 자리와 무한 자리를 같은 방식으로 다루는 교차이론을 세우는 이론이다. Arakelov 가 산술 곡면에서 시작했고[^1], Faltings 가 [Riemann–Roch 정리](riemann-roch.md)를 증명했으며[^2], Gillet–Soulé 가 고차원으로 확장했다[^3]. [Néron–Tate 높이와 Mordell–Weil 정리](canonical-height.md) 문서의 높이는 이 교차이론의 교차수로 다시 정의된다.
+**Arakelov 기하(Arakelov geometry)** 는 정수 위의 기하에 무한 자리를 더해, 곡면 위에서 하듯 차수와 교차수를 세는 이론이다. 콤팩트 곡면 위의 선다발은 단면 하나의 영점 개수로 차수가 정해지지만, 정수 위에서 같은 셈을 하면 단면 $s$ 를 $2s$ 로 바꿀 때 영점의 무게 합이 $\log 2$ 만큼 커져 차수가 단면에 따라 달라진다. Arakelov 기하는 복소수 자리마다 길이를 재는 계량을 더해 무한 자리에서 $\log 2$ 를 빼고, 차수가 단면과 무관하게 한다.
 
 # 직관
+
+Arakelov 기하는 [대수적 수체](algebraic-number-fields.md) $K$ 의 정수환 위의 스킴에 복소수 자리마다 Hermite 계량을 더해, 유한 자리와 무한 자리를 같은 방식으로 다루는 교차이론을 세우는 이론이다. Arakelov 가 산술 곡면에서 시작했고[^1], Faltings 가 [Riemann–Roch 정리](riemann-roch.md)를 증명했으며[^2], Gillet–Soulé 가 고차원으로 확장했다[^3]. [Néron–Tate 높이](canonical-height.md)는 이 교차이론의 교차수로 다시 정의된다.
 
 콤팩트 [Riemann 곡면](riemann-surfaces.md) 위의 선다발은 유리형 단면 하나를 잡아 영점에서 극점을 뺀 개수로 차수를 센다. 다른 단면을 잡아도 그 비가 유리형 함수이고 유리형 함수의 영점과 극점의 개수가 같으므로 차수는 단면과 무관하다. 같은 셈을 정수 위에서 하려 한다.
 
