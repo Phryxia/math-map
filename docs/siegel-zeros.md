@@ -2,11 +2,13 @@
 
 # 개요
 
-**Siegel 영점(Siegel zero)** 은 법 $q$ 의 실수 지표 $\chi$ 에 대한 $L(s,\chi)$ 의 실영점 $\beta$ 가운데 $1-c/\log q$ 보다 $1$ 에 가까운 것이다. **예외 영점(exceptional zero)** 이라고도 한다. 이런 영점은 법마다 많아야 하나이고, 법들을 함께 보아도 많아야 하나라는 것이 Landau–Page 정리(Landau–Page theorem)다.
-
-[Siegel–Walfisz 정리](siegel-walfisz.md)의 점근식에서 예외 영점 $\beta_1$ 은 항 $x^{\beta_1}/\varphi(q)$ 로 나타나고, 그 크기를 막는 데 쓰는 Siegel 정리(Siegel's theorem)의 상수가 계산되지 않는다.
+**Siegel 영점(Siegel zero)** 은 Dirichlet $L$ 함수가 $s=1$ 바로 왼쪽의 실수에서 갖는, 예외적으로 $1$ 에 가까운 영점이다. 법 $q$ 의 실수 지표 $\chi$ 에서 $L(s,\chi)$ 가 $1-c/\log q$ 와 $1$ 사이에 영점 $\beta_1$ 을 가지면, 산술수열의 소수 개수 공식에 항 $x^{\beta_1}/\varphi(q)$ 가 끼어들어 주항과 크기가 비슷해진다. 이런 영점은 법들을 통틀어 많아야 하나이므로, 남는 하나의 영향을 따로 떼어 다룬다.
 
 # 직관
+
+Siegel 영점은 법 $q$ 의 실수 지표 $\chi$ 에 대한 $L(s,\chi)$ 의 실영점 $\beta$ 가운데 $1-c/\log q$ 보다 $1$ 에 가까운 것이다. **예외 영점(exceptional zero)** 이라고도 한다. 이런 영점은 법마다 많아야 하나이고, 법들을 함께 보아도 많아야 하나라는 것이 Landau–Page 정리(Landau–Page theorem)다.
+
+[Siegel–Walfisz 정리](siegel-walfisz.md)의 점근식에서 예외 영점 $\beta_1$ 은 항 $x^{\beta_1}/\varphi(q)$ 로 나타나고, 그 크기를 막는 데 쓰는 Siegel 정리(Siegel's theorem)의 상수가 계산되지 않는다.
 
 지표 $\chi_1$ 과 $\chi_2$ 가 서로 다른 실수 지표라 한다. $F(s)=\zeta(s)L(s,\chi_1)L(s,\chi_2)L(s,\chi_1\chi_2)$ 의 로그를 [Dirichlet 급수](dirichlet-series.md)로 쓰면 계수가 모두 $0$ 이상이다. 그래서 실수 $\sigma\gt 1$ 에서 $-F'(\sigma)/F(\sigma)\ge 0$ 이다.
 

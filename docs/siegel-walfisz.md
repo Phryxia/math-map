@@ -2,11 +2,13 @@
 
 # 개요
 
-**Siegel–Walfisz 정리(Siegel–Walfisz theorem)** 는 법 $q$ 가 $(\log x)^A$ 이하인 범위에서, $x$ 이하의 소수가 $q$ 와 서로소인 잉여류에 고르게 나뉘고 그 오차가 $x\exp(-C\sqrt{\log x})$ 꼴로 $q$ 에 무관하게 잡힌다는 정리다. Walfisz 가 1936 년에 Siegel 의 정리(Siegel's theorem)에서 유도했다.[^1][^2]
-
-[Dirichlet L 함수](dirichlet-l-functions.md)로 증명되는 산술수열의 소수 정리는 $q$ 를 고정한 점근식이다. 이 정리는 $q$ 가 $x$ 와 함께 커지는 범위로 그 점근식을 넓히고, 대가로 상수 $C$ 를 계산할 수 없다.
+**Siegel–Walfisz 정리(Siegel–Walfisz theorem)** 는 소수를 법 $q$ 의 나머지로 나누었을 때, $q$ 가 $x$ 와 함께 조금씩 커져도 $x$ 이하의 소수가 나머지마다 고르게 나뉜다는 정리다. 법을 $q=4$ 로 고정하면 $x$ 이하의 홀수 소수 가운데 $4$ 로 나눈 나머지가 $1$ 인 것과 $3$ 인 것이 거의 반씩이지만, $q$ 를 $\log x$ 쯤으로 키우면 법을 고정한 점근식은 그대로 쓸 수 없다. 이 정리는 $q\le(\log x)^A$ 인 범위 전체에서 오차를 $x\exp(-C\sqrt{\log x})$ 로 $q$ 와 무관하게 잡아 균등성을 보이고, 대신 상수 $C$ 는 계산할 수 없다.
 
 # 직관
+
+Siegel–Walfisz 정리는 법 $q$ 가 $(\log x)^A$ 이하인 범위에서, $x$ 이하의 소수가 $q$ 와 서로소인 잉여류에 고르게 나뉘고 그 오차가 $x\exp(-C\sqrt{\log x})$ 꼴로 $q$ 에 무관하게 잡힌다는 정리다. Walfisz 가 1936 년에 Siegel 의 정리(Siegel's theorem)에서 유도했다.[^1][^2]
+
+[Dirichlet L 함수](dirichlet-l-functions.md)로 증명되는 산술수열의 소수 정리는 $q$ 를 고정한 점근식이다. 이 정리는 $q$ 가 $x$ 와 함께 커지는 범위로 그 점근식을 넓히고, 대가로 상수 $C$ 를 계산할 수 없다.
 
 $q$ 를 고정하면 $x$ 이하의 소수 가운데 $p\equiv a\pmod q$ 인 것은 전체의 $1/\varphi(q)$ 에 가깝다. 이제 $q$ 를 $x$ 와 함께 키우면서, 예컨대 $q\approx\log x$ 로 두고도 같은 비율이 나오는지 묻는다. [원법](circle-method.md)으로 소수의 합을 다룰 때 이런 $q$ 가 필요하다.
 
@@ -34,7 +36,7 @@ $$
 \sigma\ge 1-\frac{c}{\log\big(q(\vert t\vert+2)\big)}
 $$
 
-에서 영점을 갖지 않는다. 단 하나의 실수 지표 $\chi_1$ 의 $L(s,\chi_1)$ 이 이 영역 안에 단순 실영점 $\beta_1$ 을 하나 가질 수 있다. 이 $\beta_1$ 을 **예외 영점(exceptional zero)** 또는 **Siegel 영점(Siegel zero)** 이라 한다.[^3]
+에서 영점을 갖지 않는다. 단 하나의 실수 지표 $\chi_1$ 의 $L(s,\chi_1)$ 이 이 영역 안에 단순 실영점 $\beta_1$ 을 하나 가질 수 있다. 이 $\beta_1$ 을 **예외 영점(exceptional zero)** 또는 [Siegel 영점](siegel-zeros.md)(Siegel zero)이라 한다.[^3]
 
 # 성질
 

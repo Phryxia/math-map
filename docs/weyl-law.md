@@ -2,15 +2,17 @@
 
 # 개요
 
-**Weyl 법칙(Weyl's law)** 은 유계 영역이나 닫힌 Riemann 다양체에서 [Laplace 연산자](laplace-operator.md)의 고윳값 가운데 $\lambda$ 이하인 것의 개수가 $\lambda\to\infty$ 에서 부피와 $\lambda^{n/2}$ 의 곱에 비례한다는 정리다. $n$ 차원 영역 $\Omega$ 에서 그 개수를 $N(\lambda)$ 라 하면
+**Weyl 법칙(Weyl's law)** 은 줄이나 북처럼 떨리는 물체의 고윳값 가운데 일정 값 이하인 것이 몇 개인지를 물체의 크기만으로 근사하는 정리다. 길이 $L$ 인 줄의 고윳값은 $(\pi m/L)^2$ 이므로 $\lambda$ 이하인 고윳값은 $L\sqrt\lambda/\pi$ 개쯤이고, 개수가 길이에 비례한다. Weyl 법칙은 $n$ 차원 영역에서 [Laplace 연산자](laplace-operator.md)의 고윳값 개수가 $\lambda\to\infty$ 에서 부피와 $\lambda^{n/2}$ 의 곱에 비례함을 보이고, 비례상수는 차원만으로 정해진다.
+
+# 직관
+
+Weyl 법칙은 유계 영역이나 닫힌 Riemann 다양체에서 Laplace 연산자의 고윳값 가운데 $\lambda$ 이하인 것의 개수가 $\lambda\to\infty$ 에서 부피와 $\lambda^{n/2}$ 의 곱에 비례한다는 정리다. $n$ 차원 영역 $\Omega$ 에서 그 개수를 $N(\lambda)$ 라 하면
 
 $$
 N(\lambda)\sim\frac{\omega_n\thinspace\mathrm{vol}(\Omega)}{(2\pi)^n}\lambda^{n/2}
 $$
 
 이고 $\omega_n$ 은 $n$ 차원 단위공의 부피다. 주항은 부피와 차원만으로 정해지고 영역의 모양에 의존하지 않는다. H. Weyl 이 1912 년에 증명했다[^1].
-
-# 직관
 
 양 끝이 고정된 길이 $\pi$ 의 줄은 $-u''=\lambda u$, $u(0)=u(\pi)=0$ 의 해로 떨린다. 해는 $\sin(mx)$ 이고 고윳값은 $m^2$ $(m=1,2,\dots)$ 다. $\lambda$ 이하인 고윳값은 $m\le\sqrt\lambda$ 인 것이므로 그 개수는 $\sqrt\lambda$ 에 가깝다. 줄의 길이가 $L$ 이면 고윳값이 $(\pi m/L)^2$ 이 되어 개수는 $L\sqrt\lambda/\pi$ 근처이고, 개수가 길이에 비례한다.
 
