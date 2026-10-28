@@ -2,9 +2,11 @@
 
 # 개요
 
-**Shimura 다양체(Shimura variety)** 는 $\mathbb Q$ 위의 환원 대수군과 그 실점이 작용하는 복소 대칭영역의 쌍에서 얻는 대수다양체다. [모듈러 곡선](modular-curves.md)과 [Siegel 모듈라이 다양체](siegel-modular-variety.md)는 군을 $\mathrm{GL}\_2$ 와 $\mathrm{Sp}\_{2g}$ 로 잡은 두 경우다. 이 다양체는 수체 위에 모형을 갖고, 그 코호몰로지에 Hecke 작용과 Galois 작용이 함께 놓인다.
+**Shimura 다양체(Shimura variety)** 는 [모듈러 곡선](modular-curves.md)을 만드는 구성을 다른 행렬군에 적용해 얻는 대수다양체다. 모듈러 곡선은 $\mathrm{SL}\_2(\mathbb R)$ 를 회전군 $\mathrm{SO}(2)$ 로 나눈 상반평면을 다시 $\mathrm{SL}\_2(\mathbb Z)$ 로 나누어 얻는데, 다른 군에서 같은 나눗셈을 하면 결과에 복소구조가 있는지가 정해지지 않는다. Shimura 다양체는 실점이 복소 대칭영역에 작용하는 대수군을 재료로 잡아 복소구조를 보장하고, 그 몫으로 대수다양체를 얻는다.
 
 # 직관
+
+Shimura 다양체는 $\mathbb Q$ 위의 환원 대수군과 그 실점이 작용하는 복소 대칭영역의 쌍에서 얻는 대수다양체다. 모듈러 곡선과 [Siegel 모듈라이 다양체](siegel-modular-variety.md)는 군을 $\mathrm{GL}\_2$ 와 $\mathrm{Sp}\_{2g}$ 로 잡은 두 경우다. 이 다양체는 수체 위에 모형을 갖고, 그 코호몰로지에 Hecke 작용과 Galois 작용이 함께 놓인다.
 
 모듈러 곡선은 $\mathrm{SL}\_2(\mathbb Z)$ 를 상반평면 $\mathbb H$ 에 작용시켜 얻고, Siegel 모듈라이 다양체는 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 를 Siegel 상반공간 $\mathbb H_g$ 에 작용시켜 얻는다. 두 공간이 어디서 오는지 보면 같은 자리다. $\mathrm{SL}\_2(\mathbb R)$ 는 $\mathbb H$ 에 추이적으로 작용하고 점 $i$ 의 고정화군이 $\mathrm{SO}(2)$ 이므로 $\mathbb H=\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 다. $\mathrm{Sp}\_{2g}(\mathbb R)$ 도 $\mathbb H_g$ 에 추이적으로 작용하고 $iI_g$ 의 고정화군이 $U(g)$ 이므로 $\mathbb H_g=\mathrm{Sp}\_{2g}(\mathbb R)/U(g)$ 다. 분모는 둘 다 최대콤팩트 부분군이다.
 

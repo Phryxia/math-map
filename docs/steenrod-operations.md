@@ -2,9 +2,11 @@
 
 # 개요
 
-**Steenrod 제곱(Steenrod square)** 은 $\mathbb Z/2$ 계수 [코호몰로지](cohomology.md)의 차수를 올리는 자연변환 $\mathrm{Sq}^i:H^n(X;\mathbb Z/2)\to H^{n+i}(X;\mathbb Z/2)$ 이다. 컵곱은 현수를 지나면 사라지지만 Steenrod 제곱은 남으므로, 코호몰로지 환이 같은 두 공간을 구별한다. 안정 연산 전체가 이루는 대수가 Steenrod 대수이고 [스펙트럼 수열](spectral-sequences.md)의 계산이 그 구조를 준다.
+**Steenrod 제곱(Steenrod square)** 은 $\mathbb Z/2$ 계수 [코호몰로지](cohomology.md)의 원소를 더 높은 차수의 원소로 보내는 연산이다. 복소 사영평면 $\mathbb{CP}^2$ 와 쐐기합 $S^2\vee S^4$ 는 컵곱으로 구별되지만, 두 공간을 한 번씩 현수하면 컵곱이 모두 $0$ 이 되어 코호몰로지 환으로는 구별되지 않는다. Steenrod 제곱은 차수를 올리면서 현수와 교환하므로, 현수한 두 공간에서도 값이 달라 둘을 구별한다.
 
 # 직관
+
+Steenrod 제곱은 $\mathbb Z/2$ 계수 코호몰로지의 차수를 올리는 자연변환 $\mathrm{Sq}^i:H^n(X;\mathbb Z/2)\to H^{n+i}(X;\mathbb Z/2)$ 이다. 컵곱은 현수를 지나면 사라지지만 Steenrod 제곱은 남으므로, 코호몰로지 환이 같은 두 공간을 구별한다. 안정 연산 전체가 이루는 대수가 Steenrod 대수이고 [스펙트럼 수열](spectral-sequences.md)의 계산이 그 구조를 준다.
 
 복소 사영평면 $\mathbb{CP}^2$ 와 쐐기합 $S^2\vee S^4$ 는 코호몰로지가 차수 $0,2,4$ 에 하나씩으로 같고, 컵곱이 둘을 가른다. $\mathbb{CP}^2$ 에서는 차수 $2$ 의 생성원 $\alpha$ 에 대해 $\alpha\cup\alpha$ 가 차수 $4$ 의 생성원이고, 쐐기합에서는 두 생성원이 서로 다른 조각에 있어 $\alpha\cup\alpha=0$ 이다. 두 공간을 각각 현수한 $\Sigma\mathbb{CP}^2$ 와 $S^3\vee S^5$ 에서는 양의 차수 원소의 컵곱이 모두 $0$ 이라 이 방법이 통하지 않는다. 코호몰로지도 차수 $0,3,5$ 에 하나씩으로 같다.
 
