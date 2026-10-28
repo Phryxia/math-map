@@ -2,11 +2,13 @@
 
 # 개요
 
-**MIP = NEXP 정리(MIP = NEXP theorem)** 는 서로 통신하지 못하는 두 증명자와 다항시간 무작위 검증자로 된 대화형 증명 체계가 판정하는 언어의 부류 MIP(multi-prover interactive proofs)가 비결정적 지수 시간 NEXP(nondeterministic exponential time)와 같다는 정리다. L. Babai, L. Fortnow, C. Lund 가 1991 년에 증명했다[^1].
-
-증명자가 하나인 [대화형 증명](interactive-proofs.md)은 PSPACE(polynomial space)와 같다. 증명자를 둘로 늘리고 서로 말을 맞추지 못하게 하면, 검증자는 한 증명자의 답을 다른 증명자에게 다시 물어 확인할 수 있고, 판정 가능한 부류가 지수 시간 쪽으로 커진다.
+**MIP = NEXP 정리(MIP = NEXP theorem)** 는 서로 연락하지 못하는 증명자 둘에게 질문하는 다항시간 무작위 검증자가 판정하는 언어의 부류 MIP(multi-prover interactive proofs)가 비결정적 지수 시간 NEXP(nondeterministic exponential time)와 같다는 정리다. 그래프의 정점을 세 색으로 칠하는 방법이 있다는 주장을 확인할 때, 검증자는 한 증명자에게 간선 하나의 두 끝 색을 묻고 다른 증명자에게 그 가운데 한 정점의 색을 따로 묻는다. 두 증명자가 서로 연락하지 못하므로 답이 계속 맞으려면 미리 정한 색칠 하나를 따라야 하고, 이 맞대어 보기 검사를 지수 크기의 증명에 적용해 NEXP 의 언어가 판정된다.
 
 # 직관
+
+MIP = NEXP 정리는 L. Babai, L. Fortnow, C. Lund 가 1991 년에 증명했다[^1].
+
+증명자가 하나인 [대화형 증명](interactive-proofs.md)은 PSPACE(polynomial space)와 같다. 증명자를 둘로 늘리고 서로 말을 맞추지 못하게 하면, 검증자는 한 증명자의 답을 다른 증명자에게 다시 물어 확인할 수 있고, 판정 가능한 부류가 지수 시간 쪽으로 커진다.
 
 증명자가 하나이면 증명자는 앞서 받은 질문을 보고 답을 바꿀 수 있다. 증명자가 둘이고 서로 통신하지 못하면, 검증자는 첫 증명자에게 여러 질문을 하고 그 가운데 하나를 둘째 증명자에게 따로 묻는다. 둘째 증명자는 다른 질문이 무엇이었는지 모르므로, 두 답이 일치하려면 증명자들이 질문마다 미리 정해 둔 답, 곧 고정된 함수 하나를 따라야 한다.
 
@@ -40,7 +42,7 @@
 # 활용
 
 - 근사 불가능성. MIP 의 검증을 NP 규모로 줄이는 연구가 PCP 정리로 이어졌고, PCP 정리로부터 최대 절 충족 같은 최적화 문제의 근사 하한이 유도된다.
-- [쉬운 증거 보조정리](easy-witness-lemma.md)와 [Williams 정리](williams-theorem.md). 위 따름정리가 NEXP 의 회로 하한을 MA 의 탈무작위화와 잇는다.
+- 쉬운 증거 보조정리와 [Williams 정리](williams-theorem.md). 위 따름정리가 NEXP 의 회로 하한을 MA 의 탈무작위화와 잇는다.
 
 [^1]: L. Babai, L. Fortnow, C. Lund, "Non-deterministic exponential time has two-prover interactive protocols", Computational Complexity 1 (1991), 3–40.
 [^2]: L. Fortnow, J. Rompel, M. Sipser, "On the power of multi-prover interactive protocols", Theoretical Computer Science 134 (1994), 545–557. 학회 판은 Structure in Complexity Theory 1988.

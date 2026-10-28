@@ -2,11 +2,11 @@
 
 # 개요
 
-Mordell–Weil 시브(Mordell–Weil sieve)는 곡선의 유리점 후보를 여러 소수에서의 환원과 Mordell–Weil 군의 상으로 걸러 실제 유리점만 남기는 방법이다. [Chabauty 방법](chabauty-method.md)은 종수 $2$ 이상 곡선의 유리점을 포함하는 $p$ 진 유한집합을 내놓지만, 그 집합의 어느 점이 유리점인지는 가리지 않는다.
-
-**Mordell–Weil 시브**는 유리점이 Jacobi 다양체의 유리점군에서 갖는 잉여류를 소수마다 걸러 좁히는 절차다. 남은 잉여류가 이미 찾은 점들로 모두 설명되면 유리점의 목록이 완결되고, 남은 잉여류가 없으면 유리점이 없다.
+**Mordell–Weil 시브(Mordell–Weil sieve)** 는 곡선의 유리점 후보를 여러 소수에서의 나머지로 걸러 실제 유리점만 남기는 방법이다. 곡선의 유리점마다 정수 $n$ 이 하나씩 번호로 붙는데 $n$ 에 상한이 없으면, $n$ 을 하나씩 대입해 유리점을 모두 찾을 수는 없다. 이 방법은 소수마다 $n$ 이 가질 수 있는 나머지를 모아 후보를 좁히고, 남은 후보가 이미 찾은 점들뿐이면 유리점의 목록이 완결된다.
 
 # 직관
+
+[Chabauty 방법](chabauty-method.md)은 종수 $2$ 이상 곡선의 유리점을 포함하는 $p$ 진 유한집합을 내놓지만, 그 집합의 어느 점이 유리점인지는 가리지 않는다. Mordell–Weil 시브는 유리점이 Jacobi 다양체의 유리점군에서 갖는 잉여류를 소수마다 걸러 좁히는 절차다. 남은 잉여류가 이미 찾은 점들로 모두 설명되면 유리점의 목록이 완결되고, 남은 잉여류가 없으면 유리점이 없다.
 
 곡선 $X$ 의 유리점 $P_0$ 를 기준으로 잡고 $P\mapsto\lbrack P-P_0\rbrack$ 으로 [Jacobi 다양체](jacobian-variety.md) $J$ 에 넣으면 $X(\mathbb Q)\subseteq J(\mathbb Q)$ 다. $J(\mathbb Q)$ 의 계수가 $1$ 이고 생성원이 $D$ 이면 유리점 $P$ 마다 $P-P_0=nD$ 인 정수 $n$ 이 하나 정해지고, 어느 $n$ 이 $X$ 위의 점을 주는지 묻는 문제가 된다. $n$ 에 상한이 없으니 하나씩 대입할 수 없다.
 
@@ -77,7 +77,7 @@ $N$ 을 키우는 것을 시브의 **깊이**를 늘린다고 한다. 계수가 
 - **종수 $2$ 곡선의 유리점 부재.** 계수가 종수와 같거나 큰 곡선은 Chabauty 조건이 깨져 $p$ 진 적분을 쓸 수 없다. 이때 시브만으로 $A(N,S)=\varnothing$ 을 보여 유리점이 없음을 증명한다.[^1]
 - **일반화 Fermat 방정식.** $x^2+y^3=z^7$ 의 원시해는 $X(7)$ 의 뒤틀림 곡선 열 개의 유리점에 대응하고, 각 곡선에서 Chabauty 방법과 시브를 함께 써서 해를 전부 결정했다.[^3]
 - **Chabauty–Kim 방법의 마지막 단계.** [Chabauty–Kim 방법](chabauty-kim.md)은 깊이 $2$ 의 절단에서 $X(\mathbb Q_p)\_2$ 를 계산하고, 그 가운데 유리점이 아닌 점을 시브로 걸러낸다. 준수 $13$ 의 분해 Cartan [모듈러 곡선](modular-curves.md)의 유리점 결정이 이 조합으로 끝났다.[^4]
-- **생성원 계산의 전제.** $\beta_p$ 를 계산하려면 $J(\mathbb Q)$ 의 생성원이 명시적으로 있어야 하므로, 하강으로 [Selmer 군](selmer-tate-shafarevich.md)을 구해 계수와 생성원을 확정하는 단계가 먼저 온다.
+- **생성원 계산의 전제.** $\beta_p$ 를 계산하려면 $J(\mathbb Q)$ 의 생성원이 명시적으로 있어야 하므로, 하강으로 Selmer 군을 구해 계수와 생성원을 확정하는 단계가 먼저 온다.
 
 [^1]: N. Bruin, M. Stoll, "The Mordell–Weil sieve: proving non-existence of rational points on curves", *LMS J. Comput. Math.* **13** (2010).
 [^2]: M. Stoll, "Finite descent obstructions and rational points on curves", *Algebra & Number Theory* **1** (2007).
