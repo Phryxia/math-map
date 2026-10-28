@@ -2,15 +2,17 @@
 
 # 개요
 
-**Baum–Connes 추측(Baum–Connes conjecture)** 은 이산군 $G$ 의 축소 군 [C 스타 대수](c-star-algebras.md) $C^\ast_r(G)$ 의 K 군이 $G$ 가 작용하는 공간의 위상으로 계산된다는 추측이다. 조립 사상(assembly map)이라 부르는 군 준동형
+**Baum–Connes 추측(Baum–Connes conjecture)** 은 군으로 만든 작용소 대수의 불변량을, 그 군이 평행이동으로 작용하는 공간의 모양으로 계산할 수 있다는 추측이다. 정수군 $\mathbb Z$ 에서는 정수 칸 위의 수열을 한 칸씩 미는 작용소가 만드는 대수가 원 위의 연속함수 대수와 같고, 실직선을 정수만큼의 평행이동으로 접어도 같은 원이 나와 두 쪽에서 계산한 불변량이 같다. Baum–Connes 추측은 모든 이산군에서 공간 쪽 불변량을 대수 쪽 불변량으로 보내는 사상이 동형사상이라고 진술하고, 이것이 성립하는 군에서는 대수 쪽 불변량을 공간의 위상으로 계산한다.
+
+# 직관
+
+Baum–Connes 추측은 이산군 $G$ 의 축소 군 [C 스타 대수](c-star-algebras.md) $C^\ast_r(G)$ 의 K 군이 $G$ 가 작용하는 공간의 위상으로 계산된다는 추측이다. 조립 사상(assembly map)이라 부르는 군 준동형
 
 $$
 \mu\colon K^G_\ast(\underline EG)\longrightarrow K_\ast(C^\ast_r(G))
 $$
 
 이 동형사상이라고 진술한다. 좌변은 고유 작용의 보편 공간 $\underline EG$ 의 동변 K 호몰로지이고 우변은 [작용소 K 이론](operator-k-theory.md)의 K 군이다[^1].
-
-# 직관
 
 [교차곱](crossed-products.md) 문서의 축소 군 C 스타 대수 $C^\ast_r(G)$ 는 $\ell^2(G)$ 위에서 군 원소의 평행이동 작용소들이 생성하는 대수다. $G=\mathbb Z$ 이면 평행이동 하나 $U$ 가 생성하고, [Fourier 급수](fourier-series.md)로 $\ell^2(\mathbb Z)$ 를 $L^2(S^1)$ 로 옮기면 $U$ 가 함수 $z$ 의 곱셈작용소가 되어 $C^\ast_r(\mathbb Z)\cong C(S^1)$ 이다. 작용소 K 이론의 표에서 $K_0(C(S^1))=\mathbb Z$, $K_1(C(S^1))=\mathbb Z$ 다.
 

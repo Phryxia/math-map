@@ -2,11 +2,13 @@
 
 # 개요
 
-**Lagrangian 부분다양체(Lagrangian submanifold)** 는 심플렉틱 형식이 소멸하는 최대 차원의 부분다양체다. [심플렉틱 다양체](symplectic-manifolds.md) $(M,\omega)$ 의 차원이 $2n$ 이면 그런 부분다양체의 차원은 $n$ 이다.
-
-심플렉틱 다양체 사이의 사상, 보존량의 공통 준위집합, 정준변환을 만드는 생성함수가 모두 Lagrangian 부분다양체 하나로 적힌다. Weinstein 근방 정리는 Lagrangian 의 근방을 [여접다발](cotangent-bundle.md)의 영단면 근방으로 고정한다.
+**Lagrangian 부분다양체(Lagrangian submanifold)** 는 위치와 운동량을 함께 좌표로 하는 공간 안에서, 보존량이 모두 일정한 점들이 이루는 곡면을 본뜬 부분다양체다. 공의 위치 $q$ 와 운동량 $p$ 를 좌표로 하는 평면에서 용수철에 매단 공의 에너지가 일정한 점들은 원 $q^2+p^2=1$ 을 이루고, 공의 운동은 이 원을 따라 돈다. 자유도가 둘이면 공간은 4 차원이고, 보존량 두 개가 모두 일정한 점들은 2 차원 곡면을 이루며 그 위에서 넓이를 재는 형식 $dq_1\wedge dp_1+dq_2\wedge dp_2$ 가 $0$ 이다. Lagrangian 부분다양체는 이 형식이 $0$ 인 가장 큰 차원의 부분다양체로 정의되고, 보존량의 준위집합과 좌표 변환을 같은 대상으로 다룬다.
 
 # 직관
+
+Lagrangian 부분다양체는 심플렉틱 형식이 소멸하는 최대 차원의 부분다양체다. [심플렉틱 다양체](symplectic-manifolds.md) $(M,\omega)$ 의 차원이 $2n$ 이면 그런 부분다양체의 차원은 $n$ 이다.
+
+심플렉틱 다양체 사이의 사상, 보존량의 공통 준위집합, 정준변환을 만드는 생성함수가 모두 Lagrangian 부분다양체 하나로 적힌다. Weinstein 근방 정리는 Lagrangian 의 근방을 [여접다발](cotangent-bundle.md)의 영단면 근방으로 고정한다.
 
 평면의 좌표 $(q,p)$ 를 다른 좌표 $(Q,P)$ 로 바꾸면서 $dQ\wedge dP=dq\wedge dp$ 를 지키려 한다. $Q=Q(q,p)$ 와 $P=P(q,p)$ 를 미지함수로 두면 조건은 Jacobi 행렬식이 $1$ 이라는 식 하나지만, 두 함수가 그 식에 함께 들어가므로 하나를 정해도 다른 하나가 편미분방정식으로 남는다.
 
@@ -70,8 +72,8 @@ $\varphi$ 가 미분동형이 아닌 Lagrangian 부분다양체도 같은 자리
 
 # 활용
 
-- [심플렉틱 다양체](symplectic-manifolds.md)의 Darboux 정리가 국소 표준형을 주는 자리에서, Lagrangian 은 그 표준형의 $\lbrace p=0\rbrace$ 으로 놓인다. Weinstein 근방 정리가 이 관찰을 콤팩트 Lagrangian 전체로 넓힌 것이다.
-- [여접다발](cotangent-bundle.md)의 성질 절이 드는 정준변환을 생성함수로 만드는 방법이 심플렉틱 사상의 그래프 판정이다. 생성함수 $S$ 의 그래프가 Lagrangian 이고, 그 Lagrangian 이 사상의 그래프로 읽히면 정준변환이 된다.
+- 심플렉틱 다양체의 Darboux 정리가 국소 표준형을 주는 자리에서, Lagrangian 은 그 표준형의 $\lbrace p=0\rbrace$ 으로 놓인다. Weinstein 근방 정리가 이 관찰을 콤팩트 Lagrangian 전체로 넓힌 것이다.
+- 여접다발의 성질 절이 드는 정준변환을 생성함수로 만드는 방법이 심플렉틱 사상의 그래프 판정이다. 생성함수 $S$ 의 그래프가 Lagrangian 이고, 그 Lagrangian 이 사상의 그래프로 읽히면 정준변환이 된다.
 - [적분가능계](integrable-systems.md)의 보존량 사상 $F$ 의 올이 Lagrangian 이다. Arnold–Liouville 정리의 작용 변수는 그 올 위의 사이클에서 표준 1형식을 적분한 값이고, 적분이 사이클의 호모토피류에만 의존하는 것이 올의 Lagrangian 성질에서 나온다.
 - [모멘트 사상](moment-map.md)의 정의에서 환군 작용의 올이 Lagrangian 이다. 모멘트 사상의 상이 볼록 다면체가 되는 구조에서 다면체의 내부 점의 올이 그 예다.
 - [Hamilton 역학](hamiltonian-mechanics.md)의 정준방정식을 좌표 바꾸기로 단순화할 때, 바꾸기를 직접 찾는 대신 생성함수 하나를 찾는다. [Hamilton–Jacobi 방정식](hamilton-jacobi-equation.md)이 그 생성함수를 정하는 방정식이다.
