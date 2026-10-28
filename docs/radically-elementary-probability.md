@@ -2,9 +2,11 @@
 
 # 개요
 
-**Radically elementary 확률론(radically elementary probability theory)** 은 Nelson 이 세운 확률론으로, 표본공간을 [유한 확률 공간](probability.md)으로만 두되 원소 개수가 초유한인 것을 허용한다. 기댓값이 언제나 유한합이므로 $\sigma$ 대수, [측도](measure.md)의 가산가법성, Kolmogorov 확장 정리를 쓰지 않고 [Brown 운동](brownian-motion.md)과 확률적분을 세운다. 초유한 자연수는 [내부집합론](internal-set-theory.md)의 이상화 공리가 준다.
+**Radically elementary 확률론(radically elementary probability theory)** 은 무한히 많은 동전 던지기를 매우 큰 유한 번의 동전 던지기로 다루는 확률론이다. 동전 $n$ 번 던지기의 기댓값은 $2^n$ 개 항의 합이라 셈만으로 계산되지만, 그 걷기의 극한인 [Brown 운동](brownian-motion.md)을 말하려면 경로 전체의 공간 위에 측도를 지어야 한다. 이 이론은 $n$ 을 무한대로 보내는 대신 모든 표준 자연수보다 큰 자연수 $\nu$ 를 하나 골라 $\nu$ 번 던지기를 쓰고, 기댓값을 계속 유한합으로 계산한다.
 
 # 직관
+
+Radically elementary 확률론은 Nelson 이 세운 확률론으로, 표본공간을 [유한 확률 공간](probability.md)으로만 두되 원소 개수가 초유한인 것을 허용한다. 기댓값이 언제나 유한합이므로 $\sigma$ 대수, [측도](measure.md)의 가산가법성, Kolmogorov 확장 정리를 쓰지 않고 Brown 운동과 확률적분을 세운다. 초유한 자연수는 [내부집합론](internal-set-theory.md)의 이상화 공리가 준다.
 
 동전 $n$ 번 던지기는 표본공간이 $\lbrace -1,1\rbrace^n$, 각 점의 확률이 $2^{-n}$ 이고 기댓값이 $2^n$ 개 항의 합이라 셈으로 다 된다. 시간 $\lbrack 0,1\rbrack$ 을 $n$ 등분하고 각 구간에서 $\pm 1/\sqrt n$ 만큼 움직이는 걷기 $w$ 를 만들면, $w$ 의 각 시점 값도 이 유한합으로 계산된다. Brown 운동을 얻으려면 $n$ 을 무한대로 보내야 하고, 극한이 무엇인지 말하려면 경로 전체의 공간 위에 측도가 있어야 한다. 그 측도를 지으려면 유한차원 분포들이 하나의 측도로 모인다는 정리가 필요하다.
 

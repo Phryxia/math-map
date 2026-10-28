@@ -2,9 +2,11 @@
 
 # 개요
 
-**정점 덮개(vertex cover)** 는 그래프의 모든 간선에 대해 그 간선의 끝점을 하나 이상 포함하는 정점 집합이다. 크기가 가장 작은 정점 덮개를 찾는 문제가 **정점 덮개 문제(vertex cover problem)** 이고, 최소 크기를 $\tau(G)$ 로 쓴다. 일반 그래프에서는 NP-난해(nondeterministic polynomial time)이지만 이분 그래프에서는 최대 매칭과 크기가 같아 다항시간에 풀린다. [근사 알고리즘](approximation-algorithms.md)의 2-근사, [LP 반올림](lp-rounding.md)(linear programming)의 반정수성, [매개변수 복잡도](parameterized-complexity.md)의 분기와 커널이 모두 이 문제를 첫 예로 쓴다.
+**정점 덮개(vertex cover)** 는 그래프의 모든 간선에 대해 그 간선의 끝점 가운데 적어도 하나를 포함하는 정점 집합이다. 복도마다 양 끝 교차로 가운데 한 곳에 경비를 세워 모든 복도를 지키려 할 때, 경비를 가장 적게 쓰는 배치가 가장 작은 정점 덮개다. 끝점을 공유하지 않는 간선이 $m$ 개 있으면 경비가 $m$ 명 이상 필요하다는 하한에서 시작해, 정확한 최솟값이나 최솟값의 두 배 이내인 배치를 찾는다.
 
 # 직관
+
+정점 덮개는 그래프의 모든 간선에 대해 그 간선의 끝점을 하나 이상 포함하는 정점 집합이다. 크기가 가장 작은 정점 덮개를 찾는 문제가 **정점 덮개 문제(vertex cover problem)** 이고, 최소 크기를 $\tau(G)$ 로 쓴다. 일반 그래프에서는 NP-난해(nondeterministic polynomial time)이지만 이분 그래프에서는 최대 매칭과 크기가 같아 다항시간에 풀린다. [근사 알고리즘](approximation-algorithms.md)의 2-근사, [LP 반올림](lp-rounding.md)(linear programming)의 반정수성, [매개변수 복잡도](parameterized-complexity.md)의 분기와 커널이 모두 이 문제를 첫 예로 쓴다.
 
 별 모양 그래프는 가운데 정점 하나가 모든 간선을 덮으므로 $\tau=1$ 이다. 삼각형은 정점 하나가 간선 둘만 덮어 $\tau=2$ 다. 정점 $n$ 개의 경로는 둘째, 넷째, 여섯째 정점을 고르면 되어 $\tau=\lfloor n/2\rfloor$ 다.
 
