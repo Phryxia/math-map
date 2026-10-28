@@ -2,11 +2,13 @@
 
 # 개요
 
-**Linnik 정리(Linnik's theorem)** 는 등차수열의 가장 작은 소수가 법의 거듭제곱 이하라는 정리다. 절대상수 $C$, $L$ 이 있어, $\gcd(a,q)=1$ 이면 $p\equiv a\pmod q$ 인 소수 $p$ 가 $Cq^L$ 이하에 존재한다. Linnik 이 1944 년에 증명했다[^1].
-
-[Siegel–Walfisz 정리](siegel-walfisz.md)는 법이 $\log x$ 의 거듭제곱 이하일 때만 소수의 개수를 준다. Linnik 정리는 $x$ 가 $q$ 의 거듭제곱인 범위에서 개수의 하한을 주고, 그러려면 [Siegel 영점](siegel-zeros.md)을 따로 처리해야 한다.
+**Linnik 정리(Linnik's theorem)** 는 $q$ 로 나눈 나머지가 $a$ 인 소수 가운데 가장 작은 것이 $q$ 의 일정한 거듭제곱보다 크지 않다는 정리다. $q=10$ 이면 나머지가 $1,3,7,9$ 인 가장 작은 소수는 $11,3,7,19$ 이고, $q=100$, $a=1$ 이면 $101$ 이다. $q$ 가 커질 때 이 소수가 얼마나 늦게 나올 수 있는지가 문제이고, Linnik 정리는 L 함수의 영점이 $1$ 근처에 많지 않다는 추정으로 그런 소수의 개수에 하한을 주어 상한 $Cq^L$ 을 증명한다.
 
 # 직관
+
+Linnik 정리는 등차수열의 가장 작은 소수가 법의 거듭제곱 이하라는 정리다. 절대상수 $C$, $L$ 이 있어, $\gcd(a,q)=1$ 이면 $p\equiv a\pmod q$ 인 소수 $p$ 가 $Cq^L$ 이하에 존재한다. Linnik 이 1944 년에 증명했다[^1].
+
+[Siegel–Walfisz 정리](siegel-walfisz.md)는 법이 $\log x$ 의 거듭제곱 이하일 때만 소수의 개수를 준다. Linnik 정리는 $x$ 가 $q$ 의 거듭제곱인 범위에서 개수의 하한을 주고, 그러려면 [Siegel 영점](siegel-zeros.md)을 따로 처리해야 한다.
 
 $q$ 와 서로소인 $a$ 를 고르고, $p\equiv a\pmod q$ 인 소수를 찾을 때까지 $x$ 를 얼마나 키워야 하는지 묻는다. Siegel–Walfisz 정리를 쓰면 $q\le(\log x)^A$ 일 때 $\psi(x;q,a)\sim x/\varphi(q)$ 이므로 $x\approx\exp(q^{1/A})$ 이면 소수가 있다. 이 상한은 $q$ 에 대해 지수적으로 크다.
 
