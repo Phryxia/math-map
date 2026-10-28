@@ -2,9 +2,11 @@
 
 # 개요
 
-**양자 회로(quantum circuit)** 는 큐비트 $n$ 개의 상태 벡터에 몇 개의 큐비트에만 작용하는 유니터리 행렬을 차례로 곱하고 마지막에 측정하는 계산 모형이다. 상태 공간은 $\mathbb C^2$ 의 $n$ 겹 [텐서곱](tensor-products.md)이고, 측정 결과는 진폭의 절댓값 제곱을 확률로 갖는다. 다항 크기의 회로로 오류 확률 $1/3$ 이하로 판정되는 문제의 부류가 BQP(bounded-error quantum polynomial time)이고, 고전 계산의 [P 대 NP 문제](p-np.md)(nondeterministic polynomial time)와 같은 꼴의 질문이 이 부류에 대해 생긴다.
+**양자 회로(quantum circuit)** 는 확률 대신 부호가 있는 진폭을 행렬로 차례로 바꾸고 마지막에 측정하는 계산 모형이다. 공정한 동전 던지기를 두 번 하면 앞뒤가 반반이지만, 진폭 $(1,0)$ 에 행렬 $H=\tfrac1{\sqrt 2}\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}$ 을 두 번 곱하면 둘째 진폭이 $\tfrac12-\tfrac12=0$ 으로 지워져 처음 상태로 돌아온다. 양자 회로는 이런 상쇄를 써서 틀린 답의 진폭을 지우고 맞는 답의 진폭을 키우도록 짠다.
 
 # 직관
+
+양자 회로는 큐비트 $n$ 개의 상태 벡터에 몇 개의 큐비트에만 작용하는 유니터리 행렬을 차례로 곱하고 마지막에 측정하는 계산 모형이다. 상태 공간은 $\mathbb C^2$ 의 $n$ 겹 [텐서곱](tensor-products.md)이고, 측정 결과는 진폭의 절댓값 제곱을 확률로 갖는다. 다항 크기의 회로로 오류 확률 $1/3$ 이하로 판정되는 문제의 부류가 BQP(bounded-error quantum polynomial time)이고, 고전 계산의 [P 대 NP 문제](p-np.md)(nondeterministic polynomial time)와 같은 꼴의 질문이 이 부류에 대해 생긴다.
 
 동전을 공정하게 던지는 연산을 두 번 하면 앞면과 뒷면이 각각 확률 $1/2$ 이다. 확률 벡터 $(1,0)$ 에 행렬 $\tfrac12\begin{pmatrix}1&1\cr 1&1\end{pmatrix}$ 을 두 번 곱한 결과가 $(1/2,1/2)$ 이다.
 
