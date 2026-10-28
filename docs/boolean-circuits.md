@@ -2,11 +2,13 @@
 
 # 개요
 
-**불 회로(Boolean circuit)** 는 입력 변수 $x_1,\dots,x_n$ 과 AND, OR, NOT 게이트를 정점으로 하는 방향 비순환 그래프로, 각 게이트가 들어오는 변의 값에 논리 연산을 적용해 출력 정점에서 함수 $\lbrace 0,1\rbrace^n\to\lbrace 0,1\rbrace$ 를 계산하는 계산 모형이다. 게이트 수를 크기, 입력에서 출력까지 가장 긴 경로의 길이를 깊이라 한다.
-
-입력 길이마다 회로 하나를 두는 회로 족은 [P 대 NP 문제](p-np.md)의 Turing 기계와 다른 계산 모형이다. 다항 크기 회로 족으로 판정되는 언어의 부류를 P/poly 라 하고, $\mathrm P\subseteq\mathrm{P/poly}$ 이므로 NP(nondeterministic polynomial time) 의 어떤 언어가 P/poly 밖에 있음을 보이면 $\mathrm P\ne\mathrm{NP}$ 가 나온다.
+**불 회로(Boolean circuit)** 는 $0$ 과 $1$ 을 주고받는 AND, OR, NOT 게이트를 선으로 이어 함수를 계산하는 장치다. 두 비트 $x,y$ 가 같은지 판정하는 함수는 $(x\wedge y)\vee(\neg x\wedge\neg y)$ 이고, NOT 두 개, AND 두 개, OR 하나로 게이트 다섯 개짜리 회로가 된다. 불 회로는 입력 길이마다 회로 하나를 두고 필요한 게이트 수를 세어 계산이 얼마나 어려운지를 재고, 이 수의 하한을 증명하는 것이 계산 복잡도의 하한을 얻는 한 방법이다.
 
 # 직관
+
+불 회로는 입력 변수 $x_1,\dots,x_n$ 과 AND, OR, NOT 게이트를 정점으로 하는 방향 비순환 그래프로, 각 게이트가 들어오는 변의 값에 논리 연산을 적용해 출력 정점에서 함수 $\lbrace 0,1\rbrace^n\to\lbrace 0,1\rbrace$ 를 계산하는 계산 모형이다. 게이트 수를 크기, 입력에서 출력까지 가장 긴 경로의 길이를 깊이라 한다.
+
+입력 길이마다 회로 하나를 두는 회로 족은 [P 대 NP 문제](p-np.md)의 Turing 기계와 다른 계산 모형이다. 다항 크기 회로 족으로 판정되는 언어의 부류를 P/poly 라 하고, $\mathrm P\subseteq\mathrm{P/poly}$ 이므로 NP(nondeterministic polynomial time) 의 어떤 언어가 P/poly 밖에 있음을 보이면 $\mathrm P\ne\mathrm{NP}$ 가 나온다.
 
 변수 $n$ 개의 불 함수는 입력 $2^n$ 개마다 $0$ 이나 $1$ 을 정하므로 $2^{2^n}$ 개다. 모든 함수는 참이 되는 입력마다 AND 하나를 두고 그것들을 OR 로 묶어 크기 $O(n2^n)$ 의 회로로 계산된다.
 
