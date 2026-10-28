@@ -2,7 +2,7 @@
 
 # 개요
 
-**Fokker–Planck 방정식(Fokker–Planck equation)** 은 [확률미분방정식](stochastic-differential-equations.md)의 해가 갖는 확률밀도가 만족하는 편미분방정식이다. 표류와 확산 계수로 만든 2계 연산자의 수반작용소가 밀도의 시간 변화를 준다. 경로 하나하나를 따라가는 대신 밀도의 방정식을 풀어 정상분포와 그 수렴 속도를 얻는다.
+**Fokker–Planck 방정식(Fokker–Planck equation)** 은 [확률미분방정식](stochastic-differential-equations.md)의 해가 갖는 확률밀도가 만족하는 편미분방정식이다. $dX_t=-X_t\thinspace dt+\sqrt2\thinspace dB_t$ 를 따르는 입자가 오래 지난 뒤 어떤 분포에 있는지 알려 할 때, 무작위 경로를 하나하나 따라가는 것으로는 분포 전체가 나오지 않는다. Fokker–Planck 방정식은 밀도의 시간 변화를 표류와 확산 계수로 적어, 그 방정식을 풀어 정상분포와 수렴 속도를 얻는다.
 
 # 직관
 
@@ -15,6 +15,8 @@
 $f$ 마다 다른 식이 나와서 막혔으니, 모든 $f$ 를 한꺼번에 다룬다. 밀도 $p(t,x)$ 로 $\mathbb E\lbrack f(X_t)\rbrack=\int f(x)p(t,x)\thinspace dx$ 라 쓰고 $\int(Lf)p\thinspace dx$ 를 부분적분해 미분을 $p$ 쪽으로 넘기면 $\int f\thinspace(L^\ast p)\thinspace dx$ 가 된다. 두 식이 모든 $f$ 에 대해 같으므로 $\partial_tp=L^\ast p$ 다.
 
 처음의 SDE 에서 $L^\ast p=\partial_x(xp)+\partial_x^2p$ 이므로 정상해는 $xp+\partial_xp=0$ 을 풀어 $p(x)\propto e^{-x^2/2}$ 다. 적률을 차례로 구하지 않고 밀도를 바로 얻는다.
+
+표류와 확산 계수로 만든 2계 연산자의 수반작용소가 밀도의 시간 변화를 준다.
 
 # 정의
 
