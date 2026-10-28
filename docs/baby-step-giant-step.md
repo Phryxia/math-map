@@ -2,11 +2,13 @@
 
 # 개요
 
-**Baby-step giant-step 알고리즘(baby-step giant-step algorithm)** 은 위수가 $N$ 이하인 순환군 $\langle g\rangle$ 에서 $g^x=h$ 인 $x$ 를 $m=\lceil\sqrt N\rceil$ 에 대해 $x=im+j$ $(0\le i,j\lt m)$ 로 나눠, $g^j$ 를 모두 저장한 표에서 $hg^{-im}$ 을 찾아 구하는 알고리즘이다. 군 연산 $O(\sqrt N)$ 번과 원소 $O(\sqrt N)$ 개의 저장 공간을 쓴다. D. Shanks 가 1971 년에 류수 계산을 위해 제안했다[^1].
-
-[이산로그](discrete-logarithm.md)를 완전 탐색하면 $g^0,g^1,\dots$ 를 $N$ 개까지 시험한다. 이 알고리즘은 시험할 지수를 $\sqrt N$ 개씩 두 묶음으로 나눠 저장 공간으로 시간을 줄인다.
+**Baby-step giant-step 알고리즘(baby-step giant-step algorithm)** 은 $g^x=h$ 인 지수 $x$ 를 하나씩 시험하는 대신 두 묶음으로 나눠 찾는 알고리즘이다. 법 $101$ 에서 $2^x\equiv 3$ 인 $x$ 를 찾을 때 $x=10i+j$ 로 쓰면, $2^0,\dots,2^9$ 을 표에 적어 두고 $3\cdot 2^{-10i}$ 를 $i=0,1,\dots$ 에 대해 계산해 표에서 찾으므로 시험 횟수가 $100$ 번에서 $20$ 번 정도로 준다. 위수가 $N$ 인 군에서 이 알고리즘은 군 연산과 저장 공간을 각각 $\sqrt N$ 정도로 써서 [이산로그](discrete-logarithm.md)를 구한다.
 
 # 직관
+
+Baby-step giant-step 알고리즘은 위수가 $N$ 이하인 순환군 $\langle g\rangle$ 에서 $g^x=h$ 인 $x$ 를 $m=\lceil\sqrt N\rceil$ 에 대해 $x=im+j$ $(0\le i,j\lt m)$ 로 나눠, $g^j$ 를 모두 저장한 표에서 $hg^{-im}$ 을 찾아 구하는 알고리즘이다. 군 연산 $O(\sqrt N)$ 번과 원소 $O(\sqrt N)$ 개의 저장 공간을 쓴다. D. Shanks 가 1971 년에 류수 계산을 위해 제안했다[^1].
+
+이산로그를 완전 탐색하면 $g^0,g^1,\dots$ 를 $N$ 개까지 시험한다. 이 알고리즘은 시험할 지수를 $\sqrt N$ 개씩 두 묶음으로 나눠 저장 공간으로 시간을 줄인다.
 
 법 $101$ 에서 $2^x\equiv 3$ 인 $x$ 를 찾는다. $2$ 의 위수는 $100$ 이므로 $0\le x\lt 100$ 이고, $x=10i+j$ $(0\le i,j\le 9)$ 로 쓸 수 있다. $2^{10i+j}\equiv 3$ 은 $2^j\equiv 3\cdot(2^{-10})^i$ 와 같다.
 
