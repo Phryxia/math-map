@@ -2,15 +2,17 @@
 
 # 개요
 
-**Erdős–Szekeres 볼록 다각형 문제(Erdős–Szekeres convex polygon problem)** 는 평면에서 세 점이 한 직선 위에 있지 않은 점을 몇 개 찍어야 그 가운데 $n$ 개가 반드시 볼록 $n$ 각형의 꼭짓점이 되는지를 묻는 문제다. 그 최소 개수를 $\mathrm{ES}(n)$ 으로 쓴다. P. Erdős 와 G. Szekeres 는 1935 년에 $\mathrm{ES}(n)$ 이 유한함을 증명했고[^1], 행복한 결말 문제(happy ending problem)라고도 부른다.
+**Erdős–Szekeres 볼록 다각형 문제(Erdős–Szekeres convex polygon problem)** 는 평면에 점을 몇 개 찍어야 그 가운데 $n$ 개가 반드시 볼록 $n$ 각형을 이루는지 묻는 문제다. 세 점이 한 직선 위에 없게 점 다섯 개를 찍으면 어떻게 찍어도 그 가운데 네 개가 볼록 사각형을 이루지만, 점 네 개로는 삼각형 안에 점 하나를 둔 배치에서 볼록 사각형이 생기지 않는다. 이 문제는 그런 최소 개수가 유한함을 증명하고 그 크기를 $n$ 에 대해 위아래로 추정하며, 하한 $2^{n-2}+1$ 이 정확한 값이라는 Erdős–Szekeres 추측이 있다.
+
+# 직관
+
+Erdős–Szekeres 볼록 다각형 문제는 평면에서 세 점이 한 직선 위에 있지 않은 점을 몇 개 찍어야 그 가운데 $n$ 개가 반드시 볼록 $n$ 각형의 꼭짓점이 되는지를 묻는 문제다. 그 최소 개수를 $\mathrm{ES}(n)$ 으로 쓴다. P. Erdős 와 G. Szekeres 는 1935 년에 $\mathrm{ES}(n)$ 이 유한함을 증명했고[^1], 행복한 결말 문제(happy ending problem)라고도 부른다.
 
 알려진 범위는 다음이다.
 
 $$
 2^{n-2}+1\le\mathrm{ES}(n)\le 2^{n+O(n^{2/3}\log n)}
 $$
-
-# 직관
 
 점 넷이면 볼록 사각형이 나오지 않을 수 있다. 삼각형의 꼭짓점 셋과 그 안의 점 하나가 그런 예다. 점 다섯이면 볼록 사각형이 반드시 나온다.
 
@@ -62,7 +64,7 @@ $N$ 개 점의 네 점 부분집합마다 볼록 위치이면 빨강, 아니면 
 
 - 계산 기하. 점 집합에서 가장 큰 볼록 부분집합을 찾는 문제와 볼록 껍질의 층 구조가 컵과 캡의 분해를 쓴다.
 - 순서 유형(order type)의 세기. 일반 위치 점 집합의 조합적 성질은 세 점의 방향(시계 방향인지 반시계 방향인지)만으로 정해지고, $\mathrm{ES}(6)=17$ 의 컴퓨터 증명은 이 방향 정보만으로 경우를 나누어 탐색한 것이다.
-- [Ramsey 이론](ramsey-theory.md)의 기하적 사례. 초그래프 Ramsey 정리가 유한 기하에서 쓰이는 첫 예로 인용된다.
+- Ramsey 이론의 기하적 사례. 초그래프 Ramsey 정리가 유한 기하에서 쓰이는 첫 예로 인용된다.
 
 [^1]: P. Erdős, G. Szekeres, "A combinatorial problem in geometry", Compositio Mathematica 2 (1935), 463–470.
 [^2]: P. Erdős, G. Szekeres, "On some extremum problems in elementary geometry", Annales Universitatis Scientiarum Budapestinensis de Rolando Eötvös Nominatae, Sectio Mathematica 3–4 (1960–1961), 53–62.

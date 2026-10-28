@@ -2,15 +2,17 @@
 
 # 개요
 
-**Cauchy–Schwarz 부등식(Cauchy–Schwarz inequality)** 은 [내적 공간](inner-product-spaces.md)의 두 벡터 $u,v$ 에 대해 내적의 절댓값이 노름의 곱을 넘지 않는다는 정리다.
+**Cauchy–Schwarz 부등식(Cauchy–Schwarz inequality)** 은 두 벡터의 내적이 두 길이의 곱보다 클 수 없다는 부등식이다. $(1,2)$ 와 $(3,4)$ 의 내적은 $1\cdot 3+2\cdot 4=11$ 이고 길이의 곱은 $\sqrt 5\cdot 5\approx 11.18$ 이어서, 거의 같은 방향인 두 벡터의 내적은 이 상한에 가깝다. 이 부등식은 내적을 길이의 곱으로 나눈 값이 $-1$ 과 $1$ 사이에 있게 해 두 벡터 사이의 각을 정의하고, 합과 적분의 크기를 위에서 잴 때 쓴다.
+
+# 직관
+
+Cauchy–Schwarz 부등식은 [내적 공간](inner-product-spaces.md)의 두 벡터 $u,v$ 에 대해 내적의 절댓값이 노름의 곱을 넘지 않는다는 정리다.
 
 $$
 \lvert\langle u,v\rangle\rvert\le\lVert u\rVert\thinspace\lVert v\rVert
 $$
 
 등호는 $u$ 와 $v$ 가 선형종속일 때만 성립한다.
-
-# 직관
 
 평면에서 두 벡터의 점곱은 $\lVert u\rVert\lVert v\rVert\cos\theta$ 이므로 점곱을 노름의 곱으로 나누면 $-1$ 과 $1$ 사이의 값이 나온다. 내적 공간에는 각도가 따로 정의되어 있지 않으므로, 각도를 이 비로 정의하려면 비가 그 범위에 들어간다는 것을 내적의 공리만으로 확인해야 한다.
 
@@ -64,7 +66,7 @@ $$
 
 # 활용
 
-- [내적 공간](inner-product-spaces.md)에서 두 벡터가 이루는 각을 $\cos\theta=\langle u,v\rangle/(\lVert u\rVert\lVert v\rVert)$ 로 정의하는 근거다. 우변이 $-1$ 과 $1$ 사이에 있다는 것이 이 부등식이다.
+- 내적 공간에서 두 벡터가 이루는 각을 $\cos\theta=\langle u,v\rangle/(\lVert u\rVert\lVert v\rVert)$ 로 정의하는 근거다. 우변이 $-1$ 과 $1$ 사이에 있다는 것이 이 부등식이다.
 - [Hilbert 공간](hilbert-spaces.md)에서 내적이 두 변수에 대해 연속임을 보이는 데 쓴다. 한 변수를 고정한 내적이 유계 선형범함수라는 사실이 Riesz 표현정리(Riesz representation theorem)의 출발점이다.
 - 확률변수의 [공분산](covariance.md)을 내적으로 보면 상관계수가 $-1$ 과 $1$ 사이에 있다는 것이 이 부등식이다. 분산이 유한한 두 [확률변수](random-variables.md)의 곱의 기댓값이 유한하다는 것도 같은 식에서 나온다.
 - [행렬 분해](matrix-factorizations.md)가 주는 조건수를 비롯해, 수치해석의 오차 상한에서 잔차와 오차를 잇는 데 쓴다.

@@ -2,15 +2,17 @@
 
 # 개요
 
-**한정사 표준형(prenex normal form)** 은 모든 한정사(quantifier)가 논리식의 맨 앞에 모여 있는 꼴이다.
+**한정사 표준형(prenex normal form)** 은 '모든' 과 '어떤' 을 뜻하는 한정사(quantifier)가 논리식의 맨 앞에 모두 모여 있는 꼴이다. $\forall x\thinspace P(x)\to\exists y\thinspace Q(y)$ 는 한정사가 가운데에 섞여 있지만 $\exists x\thinspace\exists y\thinspace(P(x)\to Q(y))$ 와 같은 뜻이고, 이것은 한정사가 모두 앞에 있다. 모든 논리식을 이 꼴로 바꿀 수 있으므로, 앞에 놓인 한정사가 몇 번 번갈아 나오는지 세어 논리식의 복잡도를 잰다.
+
+# 직관
+
+한정사 표준형은 모든 한정사가 논리식의 맨 앞에 모여 있는 꼴이다.
 
 $$
 Q_1x_1\thinspace Q_2x_2\cdots Q_nx_n\thinspace\psi
 $$
 
 $Q_i$ 는 $\forall$ 이나 $\exists$ 이고 $\psi$ 에는 한정사가 없다. [1차 논리](first-order-logic.md)의 모든 논리식은 이 꼴의 논리식과 동치이고, 변환 절차는 부정을 안쪽으로 밀고 한정사를 바깥으로 끌어내는 것이다.
-
-# 직관
 
 논리식의 어려움은 한정사의 교대 횟수로 잰다. $\forall x\thinspace\exists y\thinspace R(x,y)$ 와 $\exists y\thinspace\forall x\thinspace R(x,y)$ 는 뜻이 다르고, 뒤의 것이 더 강한 주장이다. 그런데 $\lnot(\forall x\thinspace P(x)\to\exists y\thinspace Q(y))$ 처럼 한정사가 연결사 안쪽에 박혀 있으면 교대 횟수를 셀 수 없다.
 

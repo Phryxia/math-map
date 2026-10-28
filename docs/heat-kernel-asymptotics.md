@@ -2,15 +2,17 @@
 
 # 개요
 
-**열핵 전개(heat kernel asymptotic expansion)** 는 닫힌 Riemann 다양체의 열핵을 짧은 시간 $t\to 0^+$ 에서 $t$ 의 거듭제곱으로 전개한 식이다. 대각선에서
+**열핵 전개(heat kernel asymptotic expansion)** 는 곡면 위의 한 점에 열을 주었을 때 아주 짧은 시간 동안 그 점에 남는 열의 밀도를 시간의 거듭제곱으로 전개한 식이다. 평면에서는 시간 $t$ 뒤 처음 점의 열 밀도가 정확히 $1/(4\pi t)$ 이지만, 휘어진 곡면에서는 이 값에 $1+Rt/6+\cdots$ 가 곱해지고 $R$ 은 그 점의 곡률에서 정해지는 수다. 열핵 전개의 계수가 곡률로 정해지므로, 곡면의 고윳값 목록만으로 넓이와 곡률의 적분을 계산한다.
+
+# 직관
+
+열핵 전개는 닫힌 Riemann 다양체의 열핵을 짧은 시간 $t\to 0^+$ 에서 $t$ 의 거듭제곱으로 전개한 식이다. 대각선에서
 
 $$
 p_t(x,x)\sim(4\pi t)^{-n/2}\bigl(a_0(x)+a_1(x)t+a_2(x)t^2+\cdots\bigr)
 $$
 
 이고 계수 $a_j$ 는 그 점의 곡률과 그 미분으로 정해진다. $a_0=1$, $a_1=R/6$ 이고 $R$ 은 스칼라 곡률이다. 대각선에서 적분한 열 대각합의 계수는 고윳값으로 정해지므로, 고윳값의 목록이 부피와 곡률 적분을 정한다. S. Minakshisundaram 과 Å. Pleijel 이 전개를 만들었다[^1].
-
-# 직관
 
 길이 $2\pi$ 인 원 $\mathbb R/2\pi\mathbb Z$ 에서 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)의 고윳값은 $m^2$ $(m\in\mathbb Z)$ 이고 고유함수는 $e^{imx}/\sqrt{2\pi}$ 다. 열 대각합은 $\theta(t)=\sum_me^{-tm^2}$ 이고, [Poisson 합 공식](poisson-summation.md)으로 바꾸면
 
@@ -106,7 +108,7 @@ $$
 
 # 활용
 
-- [Weyl 법칙](weyl-law.md). $\theta(t)\sim A_0(4\pi t)^{-n/2}$ 에 Tauber 정리를 쓰면 고윳값 세기 함수의 주항이 나온다.
+- [Weyl 법칙](weyl-law.md). $\theta(t)\sim A_0(4\pi t)^{-n/2}$ 에 [Tauber 정리](tauberian-theorems.md)를 쓰면 고윳값 세기 함수의 주항이 나온다.
 - [제타 정규화 행렬식](zeta-regularized-determinant.md). 스펙트럼 zeta 함수를 $\theta(t)$ 의 [Mellin 변환](mellin-transform.md)으로 쓰면, 전개의 각 항이 $\Gamma(s)\zeta(s)$ 에 $s=n/2-j$ 의 극을 준다. $s=0$ 의 극은 $\Gamma(s)$ 의 극이 상쇄하므로 $\zeta$ 는 $s=0$ 에서 정칙이고 $\zeta^\prime(0)$ 이 정의된다.
 - [지표 정리](index-theorem.md)의 열핵 증명. 짝수 차와 홀수 차 형식 위의 열 대각합의 차는 $t$ 에 무관하고, $t\to 0$ 의 전개에서 특성류의 적분이 나온다.
 
