@@ -2,13 +2,15 @@
 
 # 개요
 
-**Bregman divergence** 는 미분가능한 순볼록 함수 $\varphi$ 에 대해, 점 $x$ 에서의 $\varphi$ 의 값이 점 $y$ 에서 그은 접평면보다 얼마나 위에 있는지로 $x$ 와 $y$ 의 차이를 재는 양 $D_\varphi(x,y)$ 다. $\varphi(x)=\Vert x\Vert^2$ 이면 제곱 Euclid 거리이고, 음의 엔트로피이면 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)다. L. M. Bregman 이 1967 년에 볼록집합의 공통점을 찾는 반복에서 도입했다[^1]. 대칭이 아니고 삼각부등식을 만족하지 않지만, 제곱 거리의 Pythagoras 정리와 평균의 최소성을 그대로 갖는다.
+**Bregman divergence** 는 미분가능한 순볼록 함수 $\varphi$ 에 대해, 점 $x$ 에서의 $\varphi$ 의 값이 점 $y$ 에서 그은 접평면보다 얼마나 위에 있는지로 $x$ 와 $y$ 의 차이를 재는 양 $D_\varphi(x,y)$ 다. 확률을 비교할 때 제곱 차이 $(p-q)^2$ 는 $0.01$ 과 $0.02$ 의 차이를 $0.50$ 과 $0.51$ 의 차이와 같게 재지만, 앞쪽은 확률이 두 배로 바뀐 것이라 더 크게 재야 할 때가 있다. Bregman divergence 는 $\varphi$ 를 바꿔 이런 차이를 정하고, $\varphi$ 를 음의 엔트로피로 두면 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)가 나와 제곱 거리에서 쓰던 Pythagoras 정리와 평균의 최소성을 그대로 쓸 수 있다.
 
 # 직관
 
 $\varphi(t)=t^2$ 의 그래프에서 $t=1$ 의 접선은 $1+2(t-1)$ 이다. $t=3$ 에서 함숫값은 $9$, 접선의 값은 $5$ 이고, 차이 $4$ 는 $(3-1)^2$ 이다. 이 함수에서는 접선과의 차이가 두 점의 거리의 제곱과 같다.
 
 $\varphi(t)=t\log t$ 로 같은 계산을 한다. $t=1$ 의 접선은 $t-1$ 이고, $t=3$ 에서 함숫값 $3\log 3\approx 3.296$ 과 접선의 값 $2$ 의 차이는 약 $1.296$ 이다. 거꾸로 $t=3$ 에서 접선을 긋고 $t=1$ 에서 재면 약 $0.901$ 이다. 그래프가 휘는 정도가 곳마다 다르므로 어느 점에서 접선을 긋는지에 따라 값이 달라진다.
+
+$\varphi(x)=\Vert x\Vert^2$ 이면 제곱 Euclid 거리다. L. M. Bregman 이 1967 년에 볼록집합의 공통점을 찾는 반복에서 이 양을 도입했다[^1]. 대칭이 아니고 삼각부등식을 만족하지 않는다.
 
 # 정의
 

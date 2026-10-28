@@ -2,9 +2,11 @@
 
 # 개요
 
-**기대 결손(expected shortfall)** 은 손실 $L$ 의 분포에서 위쪽 $1-\alpha$ 꼬리에 든 손실의 평균이다. 손실의 $\alpha$-분위수인 **위험가치(value at risk, VaR)** 보다 크거나 같고, 위험가치와 달리 두 포지션을 합친 기대 결손이 각 기대 결손의 합을 넘지 않는다. 그래서 Artzner, Delbaen, Eber, Heath 가 정한 [정합 위험 측도](coherent-risk-measures.md)(coherent risk measure)의 네 공리를 모두 만족한다[^1]. 조건부 위험가치(conditional value at risk, CVaR)라고도 한다.
+**기대 결손(expected shortfall)** 은 손실 $L$ 의 분포에서 위쪽 $1-\alpha$ 꼬리에 든 손실의 평균이다. 확률 $0.04$ 로 $100$ 을 잃는 채권 하나의 손실 기준을 확률 $0.95$ 로 넘지 않는 손실로 정하면 $0$ 인데, 독립인 두 회사의 채권을 하나씩 사서 위험을 나누면 같은 기준이 $100$ 으로 커진다. 기대 결손은 기준점 하나 대신 그 위 꼬리의 평균을 써서, 두 포지션을 합친 값이 각 값의 합을 넘지 않게 한다.
 
 # 직관
+
+기대 결손은 손실의 $\alpha$-분위수인 **위험가치(value at risk, VaR)** 보다 크거나 같다. 기대 결손은 Artzner, Delbaen, Eber, Heath 가 정한 [정합 위험 측도](coherent-risk-measures.md)(coherent risk measure)의 네 공리를 모두 만족한다[^1]. 조건부 위험가치(conditional value at risk, CVaR)라고도 한다.
 
 채권 하나가 확률 $0.04$ 로 부도가 나서 $100$ 을 잃고, 그 밖에는 잃지 않는다. 손실이 $\ell$ 이하일 확률이 $0.95$ 이상이 되는 가장 작은 $\ell$ 을 손실의 기준으로 삼는다. 손실이 $0$ 일 확률이 $0.96$ 이므로 기준은 $0$ 이다. 이것이 수준 $0.95$ 의 위험가치다.
 

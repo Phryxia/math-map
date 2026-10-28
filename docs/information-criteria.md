@@ -2,7 +2,7 @@
 
 # 개요
 
-**정보 기준(information criterion)** 은 최대 로그가능도에서 모수 개수에 따른 벌점을 뺀 값으로 모형을 비교하는 양이다. Akaike 정보 기준(Akaike information criterion, AIC)은 참 분포와 추정한 분포 사이의 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)를 추정하고, Bayes 정보 기준(Bayesian information criterion, BIC)은 주변가능도의 로그를 근사한다. 두 기준은 벌점의 크기가 다르고, 그래서 표본이 커질 때 고르는 모형이 갈린다.
+**정보 기준(information criterion)** 은 최대 로그가능도에서 모수 개수에 따른 벌점을 뺀 값으로 모형을 비교하는 양이다. 점 $10$ 개에 다항식을 맞출 때 가능도만 최대화하면 차수를 올릴수록 값이 커져, 점을 모두 지나는 $9$ 차 다항식이 늘 뽑힌다. 정보 기준은 계수 하나를 더할 때마다 벌점을 매겨, 가능도가 벌점보다 많이 오를 때만 차수를 올린다.
 
 # 직관
 
@@ -15,6 +15,8 @@ $k=9$ 로 두면 $10$ 개의 계수가 $10$ 개의 점을 모두 지나는 다�
 그러면 로그가능도 $\hat\ell$ 에서 $p$ 를 빼면 새 자료에서의 값을 치우침 없이 추정한다. 다항회귀에서 $p=k+2$ 이므로 차수를 올릴 때 $\hat\ell$ 과 벌점이 함께 오르고, $\hat\ell-p$ 가 최대가 되는 차수가 하나 정해진다.
 
 $-2(\hat\ell-p)$ 를 AIC 라 하고, 벌점을 $p\log n$ 으로 바꾼 $-2\hat\ell+p\log n$ 을 BIC 라 한다.
+
+Akaike 정보 기준(Akaike information criterion, AIC)은 참 분포와 추정한 분포 사이의 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)를 추정하고, Bayes 정보 기준(Bayesian information criterion, BIC)은 주변가능도의 로그를 근사한다. 두 기준은 벌점의 크기가 다르고, 그래서 표본이 커질 때 고르는 모형이 갈린다.
 
 # 정의
 

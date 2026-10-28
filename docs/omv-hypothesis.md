@@ -2,7 +2,7 @@
 
 # 개요
 
-**OMv 가설(online matrix-vector multiplication hypothesis, OMv conjecture)** 은 $n\times n$ 부울 행렬(Boolean matrix) $M$ 을 미리 받고, 벡터 $v_1,\dots,v_n$ 이 하나씩 도착할 때마다 다음 벡터를 보기 전에 $Mv_i$ 를 내놓는 문제를 전체 $n^{3-\varepsilon}$ 시간에 푸는 알고리즘이 없다는 가설이다. M. Henzinger, S. Krinninger, D. Nanongkai, T. Saranurak 가 2015 년에 내놓았다[^1]. [세분 복잡도](fine-grained-complexity.md)의 다른 가설과 달리 질의가 하나씩 들어오는 상황을 겨냥하며, 동적 그래프 자료구조의 갱신 시간과 질의 시간에 조건부 하한을 준다.
+**OMv 가설(online matrix-vector multiplication hypothesis, OMv conjecture)** 은 $n\times n$ 부울 행렬(Boolean matrix) $M$ 을 미리 받고, 벡터 $v_1,\dots,v_n$ 이 하나씩 도착할 때마다 다음 벡터를 보기 전에 $Mv_i$ 를 내놓는 문제를 전체 $n^{3-\varepsilon}$ 시간에 푸는 알고리즘이 없다는 가설이다. 간선을 넣고 빼면서 두 정점의 거리를 묻는 자료구조는 질의마다 탐색하면 질의가 느리고, 갱신마다 거리를 다시 계산해 두면 갱신이 느리다. 이 가설을 받아들이면 그런 자료구조가 갱신과 질의를 함께 빠르게 할 수 없다는 조건부 하한이 나온다.
 
 # 직관
 
@@ -11,6 +11,8 @@
 행렬 $M$ 의 $1$ 인 성분 $(i,j)$ 마다 왼쪽 정점 $i$ 와 오른쪽 정점 $j$ 를 잇는 그래프를 만든다. 벡터 $u$ 와 $v$ 가 오면 $u_i=1$ 인 왼쪽 정점을 $s$ 에, $v_j=1$ 인 오른쪽 정점을 $t$ 에 잇는다. 그러면 $s$ 와 $t$ 의 거리가 $3$ 인 것은 $u_i=M_{ij}=v_j=1$ 인 $i,j$ 가 있는 것, 곧 $u^{\mathsf T}Mv=1$ 인 것과 같다. 답을 얻으면 넣은 간선을 다시 뺀다.
 
 벡터 쌍 하나에 갱신이 $O(n)$ 번, 질의가 한 번이다. 쌍이 $n$ 개이면 갱신이 $O(n^2)$ 번, 질의가 $n$ 번이다. 갱신 시간이 $n^{1-\varepsilon}$, 질의 시간이 $n^{2-\varepsilon}$ 이면 전체가 $n^{3-\varepsilon}$ 이 되어, 쌍이 하나씩 들어오는 $u^{\mathsf T}Mv$ 계산을 $n^3$ 보다 빨리 하게 된다. OMv 가설은 이것이 불가능하다고 가정한다.
+
+이 가설은 M. Henzinger, S. Krinninger, D. Nanongkai, T. Saranurak 가 2015 년에 내놓았다[^1]. [세분 복잡도](fine-grained-complexity.md)의 다른 가설과 달리 질의가 하나씩 들어오는 상황을 겨냥한다.
 
 # 정의
 
