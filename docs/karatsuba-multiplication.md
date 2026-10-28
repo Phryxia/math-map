@@ -2,11 +2,11 @@
 
 # 개요
 
-**Karatsuba 곱셈(Karatsuba multiplication)** 은 $n$ 자리 정수 두 개를 반으로 나눠 $n/2$ 자리 곱 세 번과 덧셈, 뺄셈으로 곱을 구하는 분할 정복(divide and conquer) 알고리즘이다. 실행 시간은 $\Theta(n^{\log_2 3})$ 이고 $\log_2 3\approx 1.585$ 다. A. Karatsuba 가 1960 년에 찾아 1962 년에 Ofman 과 함께 발표했고, 곱셈에 $n^2$ 에 비례하는 연산이 필요하다는 Kolmogorov 의 추측을 반박했다[^1][^2].
-
-실행 시간은 [마스터 정리](master-theorem.md)의 첫째 경우로 나온다.
+**Karatsuba 곱셈(Karatsuba multiplication)** 은 두 정수를 반으로 나눠 작은 곱 세 번과 덧셈, 뺄셈으로 곱을 구하는 분할 정복(divide and conquer) 알고리즘이다. $12\times 34$ 를 십의 자리와 일의 자리로 나눠 계산하면 $1\cdot 3$, $1\cdot 4$, $2\cdot 3$, $2\cdot 4$ 의 곱 네 번이 필요하고, 자릿수가 두 배가 될 때마다 곱의 횟수가 네 배가 된다. Karatsuba 곱셈은 가운데 두 곱의 합을 $(1+2)(3+4)$ 에서 나머지 두 곱을 빼서 얻어, 곱 세 번으로 계산 시간을 $n^{\log_2 3}$ 규모로 줄인다.
 
 # 직관
+
+$n$ 자리 정수 두 개의 곱에 걸리는 실행 시간은 $\Theta(n^{\log_2 3})$ 이고 $\log_2 3\approx 1.585$ 다. A. Karatsuba 가 1960 년에 찾아 1962 년에 Ofman 과 함께 발표했고, 곱셈에 $n^2$ 에 비례하는 연산이 필요하다는 Kolmogorov 의 추측을 반박했다[^1][^2]. 실행 시간은 [마스터 정리](master-theorem.md)의 첫째 경우로 나온다.
 
 $12\times 34$ 를 손으로 곱하면 한 자리 곱 $1\cdot 3$, $1\cdot 4$, $2\cdot 3$, $2\cdot 4$ 네 번을 한다. $n$ 자리 수를 앞 절반과 뒤 절반으로 나눠도 같아서, 절반 자리 곱 네 번과 자리 맞춰 더하기가 든다. 실행 시간은 $T(n)=4T(n/2)+\Theta(n)$ 이고 $\Theta(n^2)$ 이다. 나누기만으로는 빨라지지 않는다.
 

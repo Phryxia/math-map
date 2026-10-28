@@ -2,11 +2,11 @@
 
 # 개요
 
-**Ledoit–Wolf 축소 추정(Ledoit–Wolf shrinkage estimator)** 은 표본공분산행렬 $S$ 와 단위행렬의 배수 $mI$ 의 볼록결합으로 공분산행렬을 추정하고, 결합 비율을 자료에서 계산하는 추정량이다. O. Ledoit 와 M. Wolf 가 2004 년에 제시했다[^1].
-
-[James–Stein 추정량](james-stein-estimator.md)이 평균 벡터를 한 점 쪽으로 줄이듯 이 추정량은 공분산행렬을 단위행렬 쪽으로 줄인다. 차원 $p$ 가 표본수 $n$ 과 같은 규모일 때 [Marchenko–Pastur 법칙](marchenko-pastur.md)이 보이는 고윳값의 퍼짐이 줄어든다.
+**Ledoit–Wolf 축소 추정(Ledoit–Wolf shrinkage estimator)** 은 표본공분산행렬 $S$ 와 단위행렬의 배수 $mI$ 의 볼록결합으로 공분산행렬을 추정하고, 결합 비율을 자료에서 계산하는 추정량이다. 변수가 $100$ 개인데 관측이 $100$ 번뿐이면 표본공분산행렬은 가역이 아니고, 고윳값이 실제보다 크게 퍼진다. 이 추정량은 표본공분산행렬을 단위행렬 쪽으로 당겨 고윳값의 퍼짐을 줄이고, 당기는 비율을 기대 오차가 가장 작게 정한다.
 
 # 직관
+
+O. Ledoit 와 M. Wolf 가 2004 년에 이 추정량을 제시했다[^1]. [James–Stein 추정량](james-stein-estimator.md)이 평균 벡터를 한 점 쪽으로 줄이듯 이 추정량은 공분산행렬을 단위행렬 쪽으로 줄인다. 차원 $p$ 가 표본수 $n$ 과 같은 규모일 때 고윳값이 퍼지는 모양은 [Marchenko–Pastur 법칙](marchenko-pastur.md)이 준다.
 
 참 공분산이 $\Sigma=I$ 이고 $p=100$, $n=200$ 이라 하자. Marchenko–Pastur 법칙으로 $S$ 의 고윳값은 $0.086$ 부터 $2.91$ 까지 퍼지므로, $S$ 의 가장 큰 고윳값과 가장 작은 고윳값의 비가 $30$ 이 넘는다. 참값의 고윳값은 모두 $1$ 이고 그 비는 $1$ 이다.
 
