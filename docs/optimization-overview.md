@@ -54,6 +54,7 @@ graph TD
 - [볼록 공액](convex-conjugate.md): 함수를 받침 아핀 함수의 모임으로 바꾸는 변환, Fenchel–Moreau 정리
 - [Farkas 보조정리](farkas-lemma.md): 원뿔에 들지 않는 벡터를 가르는 증거 벡터, 대안 정리와 선형계획 강쌍대성의 증명
 - [Gordan 보조정리](gordan-lemma.md): 유리 다면 원뿔의 정수점이 유한 개의 Hilbert 기저로 생성된다는 정리, 기약 원소의 최소 기저
+- [Lagrange 승수법](lagrange-multipliers.md): 등식 제약 아래 극값점에서 목적함수의 기울기가 제약 기울기의 일차결합이라는 조건, 정칙점과 이계 조건
 - [Lagrange 쌍대성](lagrange-duality.md): 제약을 쌍대변수로 옮기는 변환과 최적성 조건
   - [압축 센싱](compressed-sensing.md): 미지수보다 적은 측정에서 희소해를 복원하는 $\ell\_1$ 최소화, 제한 등거리 성질
 

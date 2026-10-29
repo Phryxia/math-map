@@ -120,7 +120,6 @@ $$
 
 - [Newton 법](newton-method.md)
 - [경사하강법](gradient-descent.md)
-- [Lagrange 쌍대성](lagrange-duality.md)
 - [최대가능도 추정](maximum-likelihood.md)
 - [Hessian 행렬](hessian.md)
 

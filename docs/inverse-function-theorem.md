@@ -78,7 +78,7 @@ $Df(a)$ 의 계수가 $a$ 의 근방에서 일정하면, 정의역과 공역의 
 
 ## 제약 최적화
 
-[Lagrange 쌍대성](lagrange-duality.md)에서 제약 $g(x)=0$ 을 국소적으로 매개화해 자유 변수로 바꾸는 단계가 음함수 정리다. 제약의 Jacobi 행렬이 최대 계수라는 정칙성 조건이 정리의 가설이다.
+[Lagrange 승수법](lagrange-multipliers.md)에서 제약 $g(x)=0$ 을 국소적으로 매개화해 자유 변수로 바꾸는 단계가 음함수 정리다. 제약의 Jacobi 행렬이 최대 계수라는 정칙성 조건이 정리의 가설이다.
 
 ## 수치해와 계속법
 
@@ -93,6 +93,7 @@ $Df(a)$ 의 계수가 $a$ 의 근방에서 일정하면, 정의역과 공역의 
 ## 더 알아보기
 
 - [Brouwer 차수](brouwer-degree.md)
+- [Lagrange 승수법](lagrange-multipliers.md)
 - [분기 이론](bifurcation-theory.md)
 
 #analysis #differential_geometry #optimization

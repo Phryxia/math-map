@@ -125,7 +125,7 @@ $\lambda\ge 0$ 에서 최대화하면 최적 승수는 $2$ , $d=2$ 다. 승수�
 ## 선수지식
 
 - [볼록성](convexity.md)
-- [미분](derivative.md)
+- [Lagrange 승수법](lagrange-multipliers.md)
 
 ## 더 알아보기
 
