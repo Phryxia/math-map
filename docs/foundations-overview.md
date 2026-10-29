@@ -2,9 +2,9 @@
 
 # 개요
 
-수학기초론(foundations of mathematics)은 수학 자체를 대상으로 삼는다. 수학적 대상이 무엇인지(수리철학), 무엇을 말할 수 있는지(논리), 무엇 위에 세우는지(집합론), 무엇을 기계적으로 할 수 있는지(계산 가능성)를 묻는다. 네 물음은 20 세기 초 역설을 계기로 함께 나왔다. Gödel 의 불완전성 정리가 넷을 한 자리에 묶는다.
+수학기초론(foundations of mathematics)은 수학 자체를 대상으로 삼아 증명이 무엇이고 무엇 위에 서는지를 묻는 분야다. "자기 자신을 원소로 갖지 않는 집합 전체의 집합" 은 자신을 원소로 가지면 갖지 않아야 하고 갖지 않으면 가져야 해서, 아무 조건으로나 집합을 만들면 모순이 생긴다. 증명에 쓸 수 있는 규칙과 공리를 목록으로 정하고, 그 목록에서 무엇이 증명되고 무엇이 증명되지 않는지를 수학적으로 따진다.
 
-[집합](sets.md)이 대상을 주고 [증명](proofs.md)이 그 대상을 논하는 언어를 준다. 거기서 [1차 논리](first-order-logic.md)로 가면 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel 집합론에 선택공리를 더한 것)와 [Gödel 불완전성 정리](godel-incompleteness.md)가 나오고, [기수](cardinality.md)로 가면 [계산 가능성](computability.md)이 나온다. 수리철학의 다섯 입장, 곧 [플라톤주의](mathematical-platonism.md), [논리주의](logicism.md), [형식주의](formalism-hilbert-program.md), [직관주의](intuitionism.md), [구조주의](mathematical-structuralism.md)는 이 기술적 결과에 대한 서로 다른 해석이다.
+처음 읽는 사람은 [집합](sets.md)에서 시작한다.
 
 # 지도
 

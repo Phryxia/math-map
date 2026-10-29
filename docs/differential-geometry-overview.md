@@ -2,11 +2,9 @@
 
 # 개요
 
-미분기하(differential geometry)는 미적분이 되는 공간 위에서 휘어짐을 재고, 그 국소량의 적분이 위상 불변량이 되는 현상을 다룬다. 물음은 "국소적으로 잰 곡률이 공간 전체에 대해 무엇을 결정하는가" 이고, 답의 원형은 Gauss–Bonnet 정리다. 곡면의 곡률을 적분하면 [Euler 지표](euler-characteristic.md)가 나온다.
+미분기하(differential geometry)는 미적분이 되는 공간 위에서 휘어진 정도를 재는 분야다. 지구 위에 세 도시를 꼭짓점으로 하는 큰 삼각형을 그리면 세 각의 합이 $180^\circ$ 보다 크고, 넘친 양은 삼각형이 덮는 넓이에 비례한다. 각 점에서 휘어진 정도를 수로 정의하고 그것을 넓이에 걸쳐 더하면, 이런 넘침과 곡면의 구멍 수 같은 전체의 모양이 그 합으로 계산된다.
 
-미분기하의 갈래는 여섯 줄기다. 미분이 정의되는 공간인 다양체와 그 위의 미분형식, Lie 군과 다발 위의 접속, 닫힌 비퇴화 2 형식이 주는 심플렉틱 기하와 역학, 계량과 곡률, Hodge 이론에서 지표 정리로 가는 해석적 갈래, 그리고 주다발 위의 게이지 이론이다. 위상 불변량 쪽은 [위상수학 개관](topology-overview.md)에, 대수 쪽 기반은 [Lie 대수](lie-algebras.md)에 있다.
-
-시작은 [다양체](manifolds.md)와 [곡률](curvature.md)이다. 둘이 [Riemann 계량](riemannian-metrics.md)에서 만나 거리를 가진 다양체가 되고, 거기서 [Gauss–Bonnet 정리](gauss-bonnet.md)와 [Hodge 이론](hodge-theory.md)으로 갈라진 뒤 [지표 정리](index-theorem.md)에서 다시 만난다.
+처음 읽는 사람은 [다양체](manifolds.md)에서 시작한다. 위상 불변량 쪽은 [위상수학 개관](topology-overview.md)에 있다.
 
 # 지도
 
