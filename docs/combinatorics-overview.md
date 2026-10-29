@@ -24,7 +24,7 @@ graph TD
   PH --> RM["Ramsey 이론"] --> PM["확률적 방법"] --> ER["Erdős–Rényi 랜덤 그래프"]
   BD --> LS["Latin 방진"] --> FP["유한 사영평면"] --> ZK["Zarankiewicz 문제"]
   TU --> ZK
-  RS["근계"] --> WC["Weyl 지표 공식"] --> SP
+  RS["근계"] --> HW["최고무게 가군"] --> WC["Weyl 지표 공식"] --> SP
   SP --> LR["Littlewood–Richardson 규칙"]
   SPK["구 채우기"] --> NM["Niemeier 격자"]
   TS["theta 급수"] --> NM

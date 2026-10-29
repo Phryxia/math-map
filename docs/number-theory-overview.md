@@ -14,7 +14,7 @@
 graph TD
   MA["정수의 합동"] --> EA["유클리드 알고리즘"] --> PR["소수"]
   MA --> FE["Fermat–Euler 정리"] --> QR["이차 상호법칙"]
-  MA --> PA["p 진수"] --> LCFT["국소 유체론"]
+  MA --> PA["p 진수"] --> RG["분기군"] --> LCFT["국소 유체론"]
   PR --> RZ["Riemann zeta"] --> PNT["소수 정리"] --> DL["Dirichlet L 함수"]
   PR --> SV["체 방법"] --> LSV["큰 체"] --> PG["소수 간격"]
   DL --> LSV
