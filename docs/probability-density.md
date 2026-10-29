@@ -128,6 +128,7 @@ $X$ 가 $\mathbb R^n$ 의 $\lambda$ 측도 $0$ 인 집합에 값을 가지면 $\
 ## 더 알아보기
 
 - [균등분포](uniform-distribution.md)
+- [Cauchy 분포](cauchy-distribution.md)
 - [지수분포](exponential-distribution.md)
 - [정규분포](normal-distribution.md)
 

@@ -139,7 +139,7 @@ $$
 f(t)=t^{-2}\ (t\ge 1),\qquad \mathbb E[X]=\int_1^\infty t\cdot t^{-2}\thinspace dt=\infty
 $$
 
-Cauchy 분포는 양의 부분과 음의 부분의 적분이 모두 무한해서 기댓값이 아예 정의되지 않는다. 극한정리의 가정에서 적분 가능성을 요구하는 이유다.
+[Cauchy 분포](cauchy-distribution.md)는 양의 부분과 음의 부분의 적분이 모두 무한해서 기댓값이 아예 정의되지 않는다. 극한정리의 가정에서 적분 가능성을 요구하는 이유다.
 
 # 활용
 

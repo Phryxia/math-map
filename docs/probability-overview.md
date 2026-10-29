@@ -65,6 +65,7 @@ graph TD
 - [Poisson 분포](poisson-distribution.md): 희귀 사건의 개수 분포, 이항분포의 극한과 Le Cam 오차 한계
 - [확률밀도](probability-density.md): 분포를 기준측도로 적분해 쓴 함수와 밀도가 없는 분포
   - [균등분포](uniform-distribution.md): 범위 안의 값이 똑같이 나오기 쉬운 분포, 역변환 표본추출과 확률 적분 변환, 순서통계량
+  - [Cauchy 분포](cauchy-distribution.md): 평균이 없는 두꺼운 꼬리의 분포, 표본평균이 같은 분포를 따르는 성질과 정규분포의 비
 - [지수분포](exponential-distribution.md): 지난 시간이 앞으로의 확률을 바꾸지 않는 대기시간, 최솟값과 합의 분포
   - [감마분포](gamma-distribution.md): 지수 대기시간 여러 개의 합, 합의 가법성과 비의 베타분포
 - [공분산](covariance.md): 두 확률변수가 함께 벗어나는 정도, 상관계수와 Cauchy–Schwarz, 공분산행렬, 최적 선형 예측

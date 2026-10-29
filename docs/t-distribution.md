@@ -26,7 +26,7 @@ $$
 f_\nu(t)=\frac{\Gamma\negthinspace\left(\frac{\nu+1}2\right)}{\sqrt{\nu\pi}\thinspace\Gamma\negthinspace\left(\frac\nu2\right)}\left(1+\frac{t^2}\nu\right)^{-(\nu+1)/2}
 $$
 
-$\nu=1$ 이면 밀도가 $\frac1{\pi(1+t^2)}$ 이고, 이것이 직관 절에서 나온 Cauchy 분포(Cauchy distribution)다.
+$\nu=1$ 이면 밀도가 $\frac1{\pi(1+t^2)}$ 이고, 이것이 직관 절에서 나온 [Cauchy 분포](cauchy-distribution.md)다.
 
 # 성질
 
