@@ -2,11 +2,9 @@
 
 # 개요
 
-확률론(probability theory)은 불확실한 양을 측도로 재고, 많이 모았을 때 나타나는 규칙을 다룬다. 물음은 "무작위한 양의 합이나 극한이 무엇으로 수렴하고 그 요동은 얼마나 큰가" 이고, 답은 세 층위로 나온다. 평균으로 가는 큰 수의 법칙, 요동의 정규분포 근사인 중심극한정리, 그리고 유한 표본에서 벗어날 확률을 재는 집중부등식이다.
+확률론(probability theory)은 우연에 맡긴 결과가 따르는 규칙을 다루는 분야다. 동전을 $10$ 번 던지면 앞면이 $3$ 번 나올 수도 $8$ 번 나올 수도 있지만, $10000$ 번 던지면 앞면의 비율은 약 95% 의 확률로 $0.49$ 와 $0.51$ 사이에 있다. 각 결과에 확률을 주는 모형을 세우고, 많은 시행을 모았을 때 합과 평균이 어디로 모이고 얼마나 흩어지는지를 그 모형에서 계산한다.
 
-확률론의 갈래는 유한 확률 공간에서 시작하는 기초와 극한정리, 평균을 벗어날 확률의 지수를 재는 편차와 Gauss 구조, 조건부 기댓값 위에 세운 이산시간 확률과정, Brown 운동과 확률적분의 연속시간 이론, 고윳값의 극한 법칙을 다루는 무작위 행렬이다. 측도론적 기반은 [측도](measure.md)와 [Lebesgue 적분](lebesgue-integral.md)에, 추론 쪽은 [Bayes 추론](bayesian-inference.md)과 [가설검정](hypothesis-testing.md)에 있다.
-
-시작은 [유한 확률 공간](probability.md)이다. 거기서 [확률변수](random-variables.md)로 넘어가면 [큰 수의 법칙](law-of-large-numbers.md)과 [중심극한정리](central-limit-theorem.md)의 두 극한정리가 나오고, [조건부 기댓값](conditional-expectation.md)에서 [Martingale](martingales.md)을 거쳐 확률과정으로 갈라진다.
+처음 읽는 사람은 [유한 확률 공간](probability.md)에서 시작한다. 측도론적 기반은 [측도론 개관](measure-theory-overview.md)에, 추론 쪽은 [통계 개관](statistics-overview.md)에 있다.
 
 # 지도
 
