@@ -42,7 +42,7 @@ $\Gamma(\alpha)=\int_0^\infty x^{\alpha-1}e^{-x}\thinspace dx$ 는 [감마 함�
 
 **정리.** 위의 $X$, $Y$ 에 대해 $X/(X+Y)$ 와 $X+Y$ 는 독립이고, $X/(X+Y)$ 의 밀도는 $u^{\alpha-1}(1-u)^{\beta-1}/\mathrm B(\alpha,\beta)$ $(0\lt u\lt 1)$ 이다.[^1]
 
-증명의 요지. $(x,y)\mapsto(u,w)=(x/(x+y),\thinspace x+y)$ 로 바꾸면 야코비 행렬식(Jacobian determinant)이 $w$ 이고, 결합밀도가 $u$ 만의 함수와 $w$ 만의 함수의 곱으로 갈라진다. 이 분포를 베타분포(beta distribution)라 한다.
+증명의 요지. $(x,y)\mapsto(u,w)=(x/(x+y),\thinspace x+y)$ 로 바꾸면 야코비 행렬식(Jacobian determinant)이 $w$ 이고, 결합밀도가 $u$ 만의 함수와 $w$ 만의 함수의 곱으로 갈라진다. 이 분포가 [베타분포](beta-distribution.md)다.
 
 # 활용
 
@@ -60,6 +60,6 @@ $\Gamma(\alpha)=\int_0^\infty x^{\alpha-1}e^{-x}\thinspace dx$ 는 [감마 함�
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [베타분포](beta-distribution.md)
 
 #probability #statistics
