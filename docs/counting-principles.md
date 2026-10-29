@@ -150,6 +150,7 @@ $$
 - [생성함수](generating-functions.md)
 - [포함배제 원리](inclusion-exclusion.md)
 - [Stirling 수](stirling-numbers.md)
+- [Lucas 정리](lucas-theorem.md)
 
 ### 존재와 구조
 

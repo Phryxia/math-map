@@ -118,6 +118,7 @@ $$
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md)
 - [이산로그](discrete-logarithm.md)
 - [범용 해시족](universal-hashing.md)
+- [Lucas 정리](lucas-theorem.md)
 
 ### 대수 구조 확장
 

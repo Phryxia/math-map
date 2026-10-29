@@ -43,6 +43,7 @@ graph TD
   - [Möbius 반전 공식](mobius-inversion.md): 약수 합성곱이 주는 산술함수의 환과 그 환에서의 역원
   - [abc 추측](abc-conjecture.md): 서로소 $a+b=c$ 에서 $c$ 가 $\mathrm{rad}(abc)^{1+\varepsilon}$ 을 넘는 경우가 유한개라는 추측, 다항식의 Mason–Stothers 정리
   - [완전수](perfect-numbers.md): 약수의 합이 자기 자신의 두 배인 수, 짝수 완전수와 Mersenne 소수의 Euclid–Euler 대응
+- [Lucas 정리](lucas-theorem.md): 이항계수를 소수로 나눈 나머지를 자릿수로 계산하는 정리, Legendre 공식과 Kummer 정리
 - [Pythagoras 세 쌍](pythagorean-triples.md): a² + b² = c² 의 정수해, Euclid 의 공식과 원 위의 유리점
 - [중국인의 나머지 정리](chinese-remainder-theorem.md): 서로소 법의 합동식 결합
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
