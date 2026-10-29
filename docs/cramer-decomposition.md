@@ -34,7 +34,7 @@ $\varphi_X(z)\varphi_Y(z)=e^{-z^2/2}$ 가 실수에서 성립하므로 항등정
 
 ## Poisson 분포의 판
 
-같은 꼴의 정리가 Poisson 분포에서도 성립한다. 독립인 $X,Y$ 의 합이 Poisson 분포를 따르면 $X$ 와 $Y$ 는 각각 평행이동한 Poisson 분포를 따른다. 이것이 Raikov 정리(Raikov's theorem)이고, 특성함수 $e^{\lambda(e^{it}-1)}$ 에 같은 논증을 적용한다.
+같은 꼴의 정리가 [Poisson 분포](poisson-distribution.md)에서도 성립한다. 독립인 $X,Y$ 의 합이 Poisson 분포를 따르면 $X$ 와 $Y$ 는 각각 평행이동한 Poisson 분포를 따른다. 이것이 Raikov 정리(Raikov's theorem)이고, 특성함수 $e^{\lambda(e^{it}-1)}$ 에 같은 논증을 적용한다.
 
 ## 무한분해가능성과의 대비
 

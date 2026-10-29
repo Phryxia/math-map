@@ -73,7 +73,7 @@ $$
 \frac{\ell(\sigma_n)-2\sqrt n}{n^{1/6}}\thickspace\longrightarrow\thickspace\mathrm{TW}\_2
 $$
 
-$\mathrm{TW}\_2$ 는 Gauss 유니터리 앙상블(Gaussian unitary ensemble)의 최대 고윳값의 극한 분포다. 증명은 $n$ 을 Poisson 분포로 무작위화한 뒤 $\Pr(\ell\le k)$ 를 Toeplitz 행렬식으로 적고 그 점근을 Riemann–Hilbert 방법(Riemann–Hilbert method)으로 계산한다.
+$\mathrm{TW}\_2$ 는 Gauss 유니터리 앙상블(Gaussian unitary ensemble)의 최대 고윳값의 극한 분포다. 증명은 $n$ 을 [Poisson 분포](poisson-distribution.md)로 무작위화한 뒤 $\Pr(\ell\le k)$ 를 Toeplitz 행렬식으로 적고 그 점근을 Riemann–Hilbert 방법(Riemann–Hilbert method)으로 계산한다.
 
 # 활용
 

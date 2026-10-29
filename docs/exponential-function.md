@@ -76,5 +76,6 @@ $x\gt 0$ 에서 급수의 항이 모두 양수이므로 $e^x\gt x^{k+1}/(k+1)!$ 
 ## 더 알아보기
 
 - [쌍곡함수](hyperbolic-functions.md)
+- [Poisson 분포](poisson-distribution.md)
 
 #analysis #complex_analysis #number_theory
