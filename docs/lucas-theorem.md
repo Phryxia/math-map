@@ -83,7 +83,7 @@ function binomModP(m, n, p, small) {
 
 - [Catalan 수](catalan-numbers.md) $C_n=\frac1{n+1}\binom{2n}{n}$ 이 홀수인 것은 $n+1$ 이 $2$ 의 거듭제곱일 때뿐이다. Kummer 정리로 $\binom{2n}{n}$ 의 $2$ 진 지수가 $n$ 의 이진 자릿수 가운데 $1$ 의 개수임을 쓰면 나온다.
 - 제곱 인수 없는 법 $N=p_1\cdots p_r$ 에 대한 $\binom mn\bmod N$ 은 소수마다 Lucas 정리로 구한 뒤 [중국인의 나머지 정리](chinese-remainder-theorem.md)로 합친다.
-- [p 진수](p-adic-numbers.md)에서 $v_p(n!)$ 은 지수함수 급수 $\sum x^n/n!$ 의 수렴 반경을 정한다. Legendre 공식에서 $v_p(n!)\lt n/(p-1)$ 이므로 급수는 $v_p(x)\gt 1/(p-1)$ 에서 수렴한다.
+- [p 진수](p-adic-numbers.md)에서 $v_p(n!)$ 은 [지수함수](exponential-function.md) 급수 $\sum x^n/n!$ 의 수렴 반경을 정한다. Legendre 공식에서 $v_p(n!)\lt n/(p-1)$ 이므로 급수는 $v_p(x)\gt 1/(p-1)$ 에서 수렴한다.
 
 [^1]: É. Lucas, "Théorie des fonctions numériques simplement périodiques", *American Journal of Mathematics* **1** (1878), 184–240, 289–321. Legendre 공식과 Kummer 정리를 함께 정리한 개관은 A. Granville, "Arithmetic properties of binomial coefficients I: binomial coefficients modulo prime powers", *Canadian Mathematical Society Conference Proceedings* **20** (1997), 253–275.
 

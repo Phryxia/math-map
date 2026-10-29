@@ -67,7 +67,7 @@ $n = 0$ 을 넣으면 $B_p \equiv 2 \pmod p$ 다. 이 합동이 $B_n$ 을 법 $p
 
 ## 성장
 
-$B_n$ 은 계승보다 느리고 지수함수보다 빠르게 큰다. Dobinski 공식의 급수를 최대항으로 어림하면 다음을 얻는다.[^3]
+$B_n$ 은 계승보다 느리고 [지수함수](exponential-function.md)보다 빠르게 큰다. Dobinski 공식의 급수를 최대항으로 어림하면 다음을 얻는다.[^3]
 
 $$
 \frac{\ln B_n}{n} \thinspace=\thinspace \ln n - \ln\ln n - 1 + o(1)

@@ -86,7 +86,7 @@ $$
 D_n=\sum_{j=0}^{n}(-1)^{j}\binom{n}{j}(n-j)!=n!\sum_{j=0}^{n}\frac{(-1)^{j}}{j!}
 $$
 
-임의의 순열이 완전순열일 확률은 지수함수의 교대급수로 수렴한다.
+임의의 순열이 완전순열일 확률은 [지수함수](exponential-function.md)의 교대급수로 수렴한다.
 
 $$
 \frac{D_n}{n!}\longrightarrow e^{-1}\approx 0.367879
