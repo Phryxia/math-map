@@ -62,7 +62,7 @@ $$
 
 ## 확률적 지배
 
-> **정리 (Strassen).** 실수 위의 분포 $\mu,\nu$ 에서 모든 $t$ 에 대해 $\mu(\lbrack t,\infty))\le\nu(\lbrack t,\infty))$ 인 것과, $X\le Y$ 를 항상 만족하는 결합이 존재하는 것이 동치다.
+> **정리 (Strassen).** [실수](real-numbers.md) 위의 분포 $\mu,\nu$ 에서 모든 $t$ 에 대해 $\mu(\lbrack t,\infty))\le\nu(\lbrack t,\infty))$ 인 것과, $X\le Y$ 를 항상 만족하는 결합이 존재하는 것이 동치다.
 
 필요조건은 $X\le Y$ 에서 바로 나온다. 충분조건은 분위수 결합으로 보인다. $U$ 를 균등분포라 하고 $X=F_\mu^{-1}(U)$, $Y=F_\nu^{-1}(U)$ 로 두면 꼬리 조건이 $F_\mu^{-1}\le F_\nu^{-1}$ 을 주므로 $X\le Y$ 다.
 

@@ -36,7 +36,7 @@ $$
 \lim_{N\to\infty}\frac1N\thinspace\char35{}\lbrace n\le N:\ x_n\in\lbrack a,b)\rbrace=b-a
 $$
 
-를 만족하면 $(x_n)$ 이 **등분포**라 한다. 실수열 $(y_n)$ 에 대해서는 소수부 $x_n=\lbrace y_n\rbrace$ 이 등분포일 때 $(y_n)$ 이 **법 $1$ 에서 등분포**라 한다.
+를 만족하면 $(x_n)$ 이 **등분포**라 한다. [실수](real-numbers.md)열 $(y_n)$ 에 대해서는 소수부 $x_n=\lbrace y_n\rbrace$ 이 등분포일 때 $(y_n)$ 이 **법 $1$ 에서 등분포**라 한다.
 
 ## 불일치도
 

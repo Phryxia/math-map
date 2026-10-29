@@ -2,7 +2,7 @@
 
 # 개요
 
-**Fourier 변환(Fourier transform)** 은 실직선 위의 함수를 주파수의 함수로 바꾼다. 구간 $\lbrack -1,1\rbrack$ 에서만 $1$ 이고 나머지에서 $0$ 인 사각 펄스는 주기가 없어서, 주기함수를 사인과 코사인의 합으로 쓰는 [Fourier 급수](fourier-series.md)를 그대로 쓸 수 없다. Fourier 변환은 정수 번째 계수 대신 모든 실수 주파수에 값을 주고, 계수의 합 대신 적분으로 함수를 복원한다.
+**Fourier 변환(Fourier transform)** 은 실직선 위의 함수를 주파수의 함수로 바꾼다. 구간 $\lbrack -1,1\rbrack$ 에서만 $1$ 이고 나머지에서 $0$ 인 사각 펄스는 주기가 없어서, 주기함수를 사인과 코사인의 합으로 쓰는 [Fourier 급수](fourier-series.md)를 그대로 쓸 수 없다. Fourier 변환은 정수 번째 계수 대신 모든 [실수](real-numbers.md) 주파수에 값을 주고, 계수의 합 대신 적분으로 함수를 복원한다.
 
 # 직관
 

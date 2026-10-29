@@ -6,7 +6,7 @@
 
 # 직관
 
-유한체 Kakeya 집합은 위수 $q$ 의 유한체 $\mathbb F\_q$ 위의 공간 $\mathbb F\_q^{\thinspace n}$ 의 부분집합으로, 모든 방향의 직선을 적어도 하나씩 포함하는 집합이다. T. Wolff 가 실수 공간의 Kakeya 문제를 본떠 이 집합이 얼마나 작을 수 있는지 물었고[^1], Z. Dvir 가 원소가 적어도 $q^n/n!$ 개라는 것을 증명했다[^2]. 이 하한을 Dvir 정리(Dvir's theorem)라 부른다.
+유한체 Kakeya 집합은 위수 $q$ 의 유한체 $\mathbb F\_q$ 위의 공간 $\mathbb F\_q^{\thinspace n}$ 의 부분집합으로, 모든 방향의 직선을 적어도 하나씩 포함하는 집합이다. T. Wolff 가 [실수](real-numbers.md) 공간의 Kakeya 문제를 본떠 이 집합이 얼마나 작을 수 있는지 물었고[^1], Z. Dvir 가 원소가 적어도 $q^n/n!$ 개라는 것을 증명했다[^2]. 이 하한을 Dvir 정리(Dvir's theorem)라 부른다.
 
 증명은 Kakeya 집합에서 $0$ 이 되는 차수 낮은 다항식을 만들고 그 다항식이 영다항식이어야 한다는 것을 보이는 다항식 방법(polynomial method)이다. 마지막 단계에서 [조합적 영점 정리](combinatorial-nullstellensatz.md)의 격자 위의 영다항식 정리를 쓴다.
 

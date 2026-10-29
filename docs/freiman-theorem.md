@@ -54,7 +54,7 @@ $$
 B(R,1/4)=\lbrace x\in\mathbb Z/N : \lVert rx/N\rVert\le 1/4\quad(r\in R)\rbrace,\qquad\lvert R\rvert\le\alpha^{-2}
 $$
 
-$\lVert t\rVert$ 는 실수 $t$ 와 가장 가까운 정수 사이의 거리다.
+$\lVert t\rVert$ 는 [실수](real-numbers.md) $t$ 와 가장 가까운 정수 사이의 거리다.
 
 증명의 요지. $2A-2A$ 에서 $x$ 를 표현하는 방법의 수는 $N^{-1}\sum_r\lvert\widehat{1_A}(r)\rvert^4e^{2\pi irx/N}$ 이다. $R$ 을 $\lvert\widehat{1_A}(r)\rvert\ge\alpha^{3/2}N$ 인 $r$ 전체로 잡으면 Parseval 등식에서 $\lvert R\rvert\le\alpha^{-2}$ 이다. $x\in B(R,1/4)$ 이면 $R$ 의 항은 실수부가 음이 아니고 나머지 항의 합은 $r=0$ 의 항보다 작으므로 표현의 수가 양수다.
 

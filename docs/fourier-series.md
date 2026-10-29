@@ -32,7 +32,7 @@ $$
 \langle e_n, e_m\rangle = \frac{1}{2\pi}\int_{-\pi}^{\pi} e^{i(n-m)x}\thinspace dx = \begin{cases} 1 & n = m,\cr 0 & n \ne m.\end{cases}
 $$
 
-실수형으로는 $1$ , $\cos(nx)$ , $\sin(nx)$ 들이 서로 직교하며, 이는 곱을 합으로 바꾸는 삼각 항등식에서 바로 나온다.
+[실수](real-numbers.md)형으로는 $1$ , $\cos(nx)$ , $\sin(nx)$ 들이 서로 직교하며, 이는 곱을 합으로 바꾸는 삼각 항등식에서 바로 나온다.
 
 ## Fourier 계수와 부분합
 

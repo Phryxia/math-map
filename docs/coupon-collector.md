@@ -60,7 +60,7 @@ $$
 
 ## Erdős–Rényi 극한
 
-모든 실수 $c$ 에 대해 다음이 성립한다.[^1]
+모든 [실수](real-numbers.md) $c$ 에 대해 다음이 성립한다.[^1]
 
 $$
 \lim_{n\to\infty}\Pr\lbrack T_n\le n\ln n+cn\rbrack=e^{-e^{-c}}

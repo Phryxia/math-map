@@ -22,7 +22,7 @@ $$
 
 ## 누적함수
 
-실수 $a\lt b$ 를 고정하고 $f$ 를 $[a,b]$ 에서 Riemann 적분 가능한 함수라 하자.
+[실수](real-numbers.md) $a\lt b$ 를 고정하고 $f$ 를 $[a,b]$ 에서 Riemann 적분 가능한 함수라 하자.
 
 $$
 F(x)=\int_a^x f(t)\thinspace dt,\qquad x\in[a,b]

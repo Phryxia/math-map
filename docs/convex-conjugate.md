@@ -92,7 +92,7 @@ $f$ 가 $\mu$ 강볼록이면 $\nabla f^\ast$ 가 $1/\mu$ Lipschitz 이고, $\na
 - [Lagrange 쌍대성](lagrange-duality.md)의 쌍대함수. 제약을 쌍대변수로 옮긴 뒤 내부 최소화를 수행한 결과가 목적함수의 공액으로 적힌다. 분리 가능한 목적함수 $f(x)+g(x)$ 에서는 쌍대문제가 $\sup_y\thinspace(-f^\ast(y)-g^\ast(-y))$ 꼴이 되고, 강쌍대성이 성립하면 이 값이 $\inf_x\thinspace(f(x)+g(x))$ 와 같다.
 - [근접 경사법](proximal-gradient-method.md)의 근접 연산자. 미분 불가능한 항의 근접 연산자는 그 항의 공액으로 적히고, Moreau 포락을 공액으로 보내면 제곱 노름을 더한 꼴이 된다. 연성 문턱이 $\ell^1$ 노름의 공액이 단위공 지시함수라는 데서 나온다.
 - [집중부등식](concentration-inequalities.md)의 Chernoff 한계. 누율생성함수 $\psi(\lambda)=\log E\lbrack e^{\lambda X}\rbrack$ 의 상한을 $\lambda$ 에 대해 최적화한 결과가 $\psi^\ast$ 이고, 독립합에서 $\psi$ 가 항별로 더해지므로 공액의 계산이 항 단위로 분해된다.
-- [대편차 원리](large-deviations.md)의 rate function. Cramér 정리는 실수값 표본평균의 rate function 이 로그 적률생성함수의 공액임을 말한다. 이 함수가 볼록이고 하반연속인 것은 위의 공액의 볼록성에서 바로 나온다.
+- [대편차 원리](large-deviations.md)의 rate function. Cramér 정리는 [실수](real-numbers.md)값 표본평균의 rate function 이 로그 적률생성함수의 공액임을 말한다. 이 함수가 볼록이고 하반연속인 것은 위의 공액의 볼록성에서 바로 나온다.
 - [최적 수송](optimal-transport.md)의 Kantorovich 쌍대성. 비용함수에 대한 $c$ 변환이 내적을 비용으로 바꾼 공액이고, 비용이 제곱거리이면 Brenier 정리의 수송 사상이 볼록 함수의 기울기로 나타난다.
 - 지수족의 로그 분할함수와 엔트로피. 두 함수가 공액 쌍이고, 평균 매개변수와 자연 매개변수를 잇는 사상이 위의 기울기 역대응이다. [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)의 Donsker–Varadhan 변분 표현도 같은 쌍에서 나온다.
 

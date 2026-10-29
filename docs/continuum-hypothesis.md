@@ -2,7 +2,7 @@
 
 # 개요
 
-**연속체 가설(continuum hypothesis, CH)** 은 자연수 집합보다 크고 실수 집합보다 작은 집합이 없다는 주장이다. 구간 $\lbrack 0,1\rbrack$ 안의 유리수 전체는 자연수와 일대일로 짝지어지고 [Cantor 집합](cantor-set.md)은 실수 전체와 일대일로 짝지어지는데, 실수의 무한 부분집합 가운데 둘 다 안 되는 것이 있는지 묻는 문제다. 연속체 가설은 그런 집합이 없다고 답하고, 이 답은 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)로 증명도 반증도 되지 않는다.
+**연속체 가설(continuum hypothesis, CH)** 은 자연수 집합보다 크고 [실수](real-numbers.md) 집합보다 작은 집합이 없다는 주장이다. 구간 $\lbrack 0,1\rbrack$ 안의 유리수 전체는 자연수와 일대일로 짝지어지고 [Cantor 집합](cantor-set.md)은 실수 전체와 일대일로 짝지어지는데, 실수의 무한 부분집합 가운데 둘 다 안 되는 것이 있는지 묻는 문제다. 연속체 가설은 그런 집합이 없다고 답하고, 이 답은 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)로 증명도 반증도 되지 않는다.
 
 # 직관
 

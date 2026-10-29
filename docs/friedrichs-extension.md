@@ -26,7 +26,7 @@ $\int_0^1\lvert u'\rvert^2dx$ 라는 값은 콤팩트 지지 함수에서 이미
 
 ## 아래로 유계인 대칭 작용소
 
-[Hilbert 공간](hilbert-spaces.md) $\mathcal H$ 의 조밀한 정의역 $D(T)$ 에서 정의된 대칭 작용소 $T$ 가 어떤 실수 $c$ 에 대해
+[Hilbert 공간](hilbert-spaces.md) $\mathcal H$ 의 조밀한 정의역 $D(T)$ 에서 정의된 대칭 작용소 $T$ 가 어떤 [실수](real-numbers.md) $c$ 에 대해
 
 $$
 \langle Tu,u\rangle\ge c\thinspace\Vert u\Vert^2\qquad(u\in D(T))

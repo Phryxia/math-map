@@ -38,7 +38,7 @@ $$
 
 ## 정합 위험 측도
 
-확률변수 $L$ 에 실수를 주는 함수 $\varrho$ 가 다음 넷을 만족하면 **정합 위험 측도(coherent risk measure)** 라 한다. $L$ 은 손실이므로 클수록 나쁘다.
+확률변수 $L$ 에 [실수](real-numbers.md)를 주는 함수 $\varrho$ 가 다음 넷을 만족하면 **정합 위험 측도(coherent risk measure)** 라 한다. $L$ 은 손실이므로 클수록 나쁘다.
 
 - 단조성. $L\le L'$ 이면 $\varrho(L)\le\varrho(L')$ 이다.
 - 현금 불변성. 상수 $c$ 에 대해 $\varrho(L+c)=\varrho(L)+c$ 이다.
