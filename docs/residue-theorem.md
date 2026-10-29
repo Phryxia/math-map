@@ -108,7 +108,7 @@ $$
 
 ## 변환의 역공식
 
-Laplace 변환과 z-변환의 역변환은 유수의 합이다. 선형 시불변 시스템의 전달함수에서 극의 위치가 시간 영역의 지수 성분을 주고 유수가 그 계수를 준다. [이산 Fourier 변환](fourier.md)은 단위원 위의 표본화다.
+[Laplace 변환](laplace-transform.md)과 z-변환의 역변환은 유수의 합이다. 선형 시불변 시스템의 전달함수에서 극의 위치가 시간 영역의 지수 성분을 주고 유수가 그 계수를 준다. [이산 Fourier 변환](fourier.md)은 단위원 위의 표본화다.
 
 ## 영점의 위치 판정
 
@@ -128,5 +128,6 @@ Laplace 변환과 z-변환의 역변환은 유수의 합이다. 선형 시불변
 - [타원함수](elliptic-functions.md)
 - [Picard 정리](picard-theorems.md)
 - [감마 함수](gamma-function.md)
+- [Laplace 변환](laplace-transform.md)
 
 #complex_analysis #analysis #theorem

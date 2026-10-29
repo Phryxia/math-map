@@ -159,6 +159,10 @@ $f$ 가 Lipschitz 이고 해가 두 번 미분가능한 구간에서 전역 오�
 - [Airy 함수](airy-functions.md)
 - [WKB 근사](wkb-approximation.md)
 
+### 풀이 방법
+
+- [Laplace 변환](laplace-transform.md)
+
 ### 방정식의 확장
 
 - [변분법](calculus-of-variations.md)
