@@ -55,7 +55,7 @@ $d_2\to\infty$ 이면 [큰 수의 법칙](law-of-large-numbers.md)으로 $V/d_2\
 # 활용
 
 - [선형회귀](linear-regression.md)에서 설명변수 $p$ 개인 모형의 계수 가운데 $q$ 개가 모두 $0$ 인지 검정할 때, 두 모형의 잔차제곱합(residual sum of squares, RSS) $\mathrm{RSS}\_0$, $\mathrm{RSS}\_1$ 로 만든 $\dfrac{(\mathrm{RSS}\_0-\mathrm{RSS}\_1)/q}{\mathrm{RSS}\_1/(n-p)}$ 가 정규오차 아래 $F(q,n-p)$ 를 따른다.
-- 분산분석(analysis of variance)은 집단 $k$ 개의 평균이 모두 같은지를, 집단 사이 제곱합과 집단 안 제곱합을 각각 자유도로 나눈 비로 검정하고, 이 비가 $F(k-1,n-k)$ 를 따른다.
+- [분산분석](analysis-of-variance.md)은 집단 $k$ 개의 평균이 모두 같은지를, 집단 사이 제곱합과 집단 안 제곱합을 각각 자유도로 나눈 비로 검정하고, 이 비가 $F(k-1,n-k)$ 를 따른다.
 - 직관 절처럼 두 정규 모집단의 분산이 같은지를 표본분산의 비로 검정한다. 이 검정은 정규성이 깨지면 1 종 오류율이 크게 어긋나므로 자료가 정규분포에 가까울 때 쓴다.
 
 [^1]: G. Casella, R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury (2002), §5.3. F 분포의 정의, 밀도, 베타분포와 t 분포와의 관계.
@@ -68,6 +68,6 @@ $d_2\to\infty$ 이면 [큰 수의 법칙](law-of-large-numbers.md)으로 $V/d_2\
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [분산분석](analysis-of-variance.md)
 
 #statistics #probability
