@@ -2,7 +2,7 @@
 
 # 개요
 
-**Eichler–Shimura 관계(Eichler–Shimura relation)** 는 모듈러 곡선의 Jacobi 다양체 위에서 Hecke 작용소 $T_p$ 가 Frobenius 사상과 그 쌍대의 합으로 적힌다는 등식이다. 이 등식에서 무게 $2$ 고유형식의 Hecke 고유값과 Galois 표현의 Frobenius 특성다항식이 맞물린다.
+**Eichler–Shimura 관계(Eichler–Shimura relation)** 는 모듈러 곡선의 Jacobi 다양체 위에서 Hecke 작용소 $T_p$ 가 Frobenius 사상과 그 쌍대의 합으로 적힌다는 등식이다. 곡선 $y^2+y=x^3-x^2$ 의 해를 법 $p$ 로 세어 $p$ 에서 뺀 수와, 무한곱 $q\prod_{n\ge 1}(1-q^n)^2(1-q^{11n})^2$ 을 전개한 급수의 $q^p$ 계수는 서로 다른 곳에서 나온 수인데, $11$ 이 아닌 소수마다 같은 값이다. 두 수를 같은 곡선 위의 자기준동형으로 적고 그 사이의 등식을 세우면 이 일치가 증명된다.
 
 # 직관
 
@@ -11,6 +11,8 @@
 그 대상이 [모듈러 곡선](modular-curves.md)의 [Jacobi 다양체](jacobian-variety.md)다. [Hecke 작용소](hecke-operators.md)는 곡선 위의 대응에서 오므로 Jacobi 다양체의 자기준동형을 주고, 점 개수는 $\mathbb F_p$ 로 환원한 Jacobi 다양체의 Frobenius 사상이 주는 자기준동형에서 나온다. 두 자기준동형이 한 환에 놓이면 등식을 쓸 수 있다.
 
 쓴 등식에서 $T_p$ 는 Frobenius 하나와 같지 않다. $p$ 차 Hecke 대응은 격자의 지표 $p$ 부분격자 $p+1$ 개를 보고, 환원하면 그 $p+1$ 개가 두 묶음으로 갈린다. 한 묶음이 Frobenius 로 가는 것이고 다른 묶음이 그 쌍대로 가는 것이다. 그래서 등식의 오른쪽에 항이 둘 있다.
+
+이 등식으로부터 무게 $2$ 고유형식의 Hecke 고유값이 [Galois 표현](galois-representations.md)의 Frobenius 특성다항식의 계수와 같다는 것이 유도된다.
 
 # 정의
 
@@ -49,7 +51,7 @@ $S_k$ 는 첨점형식, $\mathcal E_k$ 는 Eisenstein 부분이다. $k=2$ 에서
 # 활용
 
 - **모듈러성.** 타원곡선 $E$ 가 $J_0(N)$ 의 몫으로 나오면 $E$ 의 $\ell$ 진 표현이 고유형식의 표현과 같고, 각 $p$ 에서 $\char35{}E(\mathbb F_p)=p+1-a_p$ 가 성립한다. 모든 $\mathbb Q$ 위 타원곡선이 그런 몫이라는 것이 모듈러성 정리다.
-- **Galois 표현의 구성.** 무게 $2$ 고유형식에서 [Galois 표현](galois-representations.md)을 만들 때 이 관계를 쓴다. 무게가 큰 경우는 Jacobi 다양체 대신 모듈러 곡선 위 층의 코호몰로지를 쓴다.
+- **Galois 표현의 구성.** 무게 $2$ 고유형식에서 Galois 표현을 만들 때 이 관계를 쓴다. 무게가 큰 경우는 Jacobi 다양체 대신 모듈러 곡선 위 층의 코호몰로지를 쓴다.
 - **Hecke 고유값의 합동.** 두 고유형식의 $a_p$ 가 법 $\ell$ 로 모두 같으면 두 Galois 표현의 환원이 같다. 이 판정이 [Serre 추측](serre-conjecture.md)과 레벨 내리기 논법에서 쓰인다.
 
 [^1]: G. Shimura, *Introduction to the Arithmetic Theory of Automorphic Functions*, Princeton University Press (1971), Ch. 8. 합동 관계는 M. Eichler, "Quaternäre quadratische Formen und die Riemannsche Vermutung für die Kongruenzzetafunktion", Archiv der Mathematik **5** (1954), 355–366.

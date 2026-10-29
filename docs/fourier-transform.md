@@ -2,7 +2,7 @@
 
 # 개요
 
-**Fourier 변환(Fourier transform)** 은 실직선 위의 함수를 주파수의 함수로 바꾼다. 적분가능한 $f$ 에 $\hat f(\xi)=\int_{\mathbb R}f(x)e^{-2\pi i\xi x}\thinspace dx$ 를 대응시키고, 반전 공식이 $\hat f$ 에서 $f$ 를 되돌린다. [Fourier 급수](fourier-series.md)는 주기함수의 계수를 정수로 센 수열로 주는데, 사각 펄스처럼 주기가 없는 함수에는 그 수열이 없다. Fourier 변환은 수열 자리에 실수 변수의 함수를 놓고, 계수를 더하던 합 자리에 적분을 놓는다.
+**Fourier 변환(Fourier transform)** 은 실직선 위의 함수를 주파수의 함수로 바꾼다. 구간 $\lbrack -1,1\rbrack$ 에서만 $1$ 이고 나머지에서 $0$ 인 사각 펄스는 주기가 없어서, 주기함수를 사인과 코사인의 합으로 쓰는 [Fourier 급수](fourier-series.md)를 그대로 쓸 수 없다. Fourier 변환은 정수 번째 계수 대신 모든 실수 주파수에 값을 주고, 계수의 합 대신 적분으로 함수를 복원한다.
 
 # 직관
 
@@ -19,6 +19,8 @@ $$2Lc_n(L)=\frac{2\sin(\pi n/L)}{\pi n/L}=\frac{\sin(2\pi\xi_n)}{\pi\xi_n}$$
 $L$ 에 무관한 함수 $g(\xi)=\sin(2\pi\xi)/(\pi\xi)$ 의 $\xi_n$ 에서의 값이다. 복원식 $f_L(x)=\sum_{n\in\mathbb Z}c_n(L)e^{2\pi i\xi_n x}$ 에 $c_n(L)=g(\xi_n)\Delta\xi$ 와 $\Delta\xi=1/(2L)$ 을 넣으면 $f_L(x)=\sum_{n\in\mathbb Z}g(\xi_n)e^{2\pi i\xi_n x}\thinspace\Delta\xi$ 다.
 
 이 합은 간격 $\Delta\xi$ 의 Riemann 합이고, $L\to\infty$ 에서 $\int_{\mathbb R}g(\xi)e^{2\pi i\xi x}\thinspace d\xi$ 로 간다. $g$ 는 $f$ 에서 바로 나오는데, $\int_{-1}^{1}e^{-2\pi i\xi x}\thinspace dx=\sin(2\pi\xi)/(\pi\xi)$ 가 $g(\xi)$ 이기 때문이다. 계수를 구하던 적분이 $\xi$ 를 실수로 받는 함수를 주고, 계수를 더하던 합이 적분이 된다.
+
+적분가능한 $f$ 에 $\hat f(\xi)=\int_{\mathbb R}f(x)e^{-2\pi i\xi x}\thinspace dx$ 를 대응시키는 것이 Fourier 변환이고, 반전 공식으로 $\hat f$ 에서 $f$ 가 복원된다.
 
 # 정의
 
