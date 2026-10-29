@@ -58,7 +58,7 @@ $$
 
 - **주제 모형.** 잠재 Dirichlet 할당(latent Dirichlet allocation, LDA)은 문서마다 주제 비율을, 주제마다 단어 비율을 Dirichlet 분포에서 뽑는 생성 모형이다. $\alpha_j\lt 1$ 이면 밀도가 단체의 꼭짓점 쪽에 몰려 문서마다 주제가 몇 개로 좁혀진다.
 - **보편 포트폴리오.** [보편 포트폴리오](universal-portfolio.md)는 고정 비율 포트폴리오들을 단체 위의 분포로 평균한다. [균등분포](uniform-distribution.md) 대신 모든 $\alpha_j=1/2$ 인 Dirichlet 분포로 평균하면 후회가 줄어든다.
-- **Dirichlet 과정.** 범주 수를 정하지 않는 비모수 Bayes 추론에서는 Dirichlet 과정(Dirichlet process)을 쓴다. 공간의 어떤 유한 분할에 대해서도 각 칸의 확률 벡터가 Dirichlet 분포를 따르는 무작위 측도다.[^1]
+- **Dirichlet 과정.** 범주 수를 정하지 않는 비모수 Bayes 추론에서는 [Dirichlet 과정](dirichlet-process.md)을 쓴다. 공간의 어떤 유한 분할에 대해서도 각 칸의 확률 벡터가 Dirichlet 분포를 따르는 무작위 측도다.[^1]
 
 [^1]: Thomas S. Ferguson, "A Bayesian analysis of some nonparametric problems", *Annals of Statistics* 1 (1973), 209–230.
 
@@ -72,6 +72,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dirichlet 과정](dirichlet-process.md)
 
 #statistics #probability #machine_learning

@@ -42,6 +42,7 @@ graph TD
   - [정보기하](information-geometry.md): 분포족을 다양체로 보는 Fisher–Rao 계량, 쌍대 접속과 자연 경사법
 - [Bayes 추론](bayesian-inference.md): 사전분포에서 사후분포로 가는 갱신, 사후예측분포와 최대사후추정
   - [Dirichlet 분포](dirichlet-distribution.md): 확률 벡터 위의 분포. 다항 관측의 켤레사전분포이고 감마 확률변수의 정규화로 표현된다
+    - [Dirichlet 과정](dirichlet-process.md): 모든 유한 분할에서 Dirichlet 분포를 주는 무작위 확률측도, 켤레 갱신과 예측 규칙, 막대 꺾기 표현과 무리 수의 로그 증가
   - [Laplace 계승 규칙](rule-of-succession.md): 균등 사전분포 아래 다음 시행의 성공 확률 (s+1)/(n+2). 가산 평활, Krichevsky–Trofimov 추정량, 부호 길이의 후회
 
 ## 검정과 구간

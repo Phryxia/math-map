@@ -64,7 +64,7 @@ $n$ 번 가운데 빨강이 $k$ 번 나왔을 때 다음이 빨강일 확률은 
 
 # 활용
 
-- 비모수 Bayes 추론에서 Dirichlet 과정(Dirichlet process)의 표본은 새 색을 계속 더할 수 있는 Pólya 항아리로 뽑는다. 이 추출 규칙을 Blackwell–MacQueen 항아리(Blackwell–MacQueen urn)라 한다.[^2]
+- 비모수 Bayes 추론에서 [Dirichlet 과정](dirichlet-process.md)의 표본은 새 색을 계속 더할 수 있는 Pólya 항아리로 뽑는다. 이 추출 규칙을 Blackwell–MacQueen 항아리(Blackwell–MacQueen urn)라 한다.[^2]
 - 연결이 많은 정점에 새 간선이 더 잘 붙는 연결망 성장 모형, 먼저 앞선 제품이 더 많이 팔리는 시장 점유 모형처럼 많이 나온 것이 더 많이 나오는 과정을 이 항아리로 모형화한다. 극한 점유율이 처음 몇 번의 결과에 따라 무작위한 값으로 정해진다.
 
 [^1]: R. Durrett, *Probability: Theory and Examples*, 5th ed., Cambridge University Press (2019), §4.3. Pólya 항아리의 비율 martingale 과 베타 극한.
@@ -79,6 +79,6 @@ $n$ 번 가운데 빨강이 $k$ 번 나왔을 때 다음이 빨강일 확률은 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Dirichlet 과정](dirichlet-process.md)
 
 #probability #statistics

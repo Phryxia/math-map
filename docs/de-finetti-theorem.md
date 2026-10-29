@@ -65,7 +65,7 @@ $$
 - [Bayes 추론](bayesian-inference.md)의 사전분포. 관측열이 교환가능하다는 판단만 받아들이면 모수와 그 위의 사전분포가 정리에서 따라 나오므로, 사전분포를 주관적 선택이 아니라 모형 가정의 결과로 적을 수 있다.
 - [Kolmogorov 확장정리](kolmogorov-extension.md). 교환가능 무한열이 사는 확률공간이 그 정리로 세워지고, de Finetti 정리는 유한열이 아니라 무한열에만 성립하므로 이 공간이 필요하다.
 - 혼합 모형과 계층모형. 집단마다 모수가 다르고 집단 안에서는 관측이 교환가능한 모형이 조건부 독립 구조를 그대로 쓴다.
-- 중국집 과정과 Dirichlet 과정의 표현. 분할이 교환가능한 무작위 분할의 분포가 혼합으로 적히는 것이 Kingman 의 표현정리다.
+- 중국집 과정과 [Dirichlet 과정](dirichlet-process.md)의 표현. 분할이 교환가능한 무작위 분할의 분포가 혼합으로 적히는 것이 Kingman 의 표현정리다.
 
 [^1]: David Aldous, "Exchangeability and related topics", École d'Été de Probabilités de Saint-Flour XIII, Lecture Notes in Mathematics 1117, Springer, 1985, 1장.
 [^2]: P. Diaconis, D. Freedman, "Finite exchangeable sequences", Annals of Probability 8 (1980), 745–764. 유한열과 혼합 사이의 전변동거리 상한.
