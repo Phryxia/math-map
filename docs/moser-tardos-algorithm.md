@@ -38,7 +38,7 @@ function moserTardos(vars: Variable[], events: Event[]): Assignment {
 
 ## 기대 반복 횟수
 
-실수 $y_1,\dots,y_m\in(0,1)$ 이 모든 $i$ 에서
+[실수](real-numbers.md) $y_1,\dots,y_m\in(0,1)$ 이 모든 $i$ 에서
 
 $$
 \Pr\lbrack A_i\rbrack\le y_i\prod_{A_j\in\Gamma(A_i)}(1-y_j)

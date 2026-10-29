@@ -40,7 +40,7 @@ $$
 
 ## Oseledets 정리
 
-> **정리 (Oseledets 1968).** $\log^+\Vert A\Vert$ 와 $\log^+\Vert A^{-1}\Vert$ 가 적분가능하다고 한다. 실수 $\lambda_1\gt\lambda_2\gt\cdots\gt\lambda_k$ 와 거의 모든 $x$ 에서 부분공간의 사슬
+> **정리 (Oseledets 1968).** $\log^+\Vert A\Vert$ 와 $\log^+\Vert A^{-1}\Vert$ 가 적분가능하다고 한다. [실수](real-numbers.md) $\lambda_1\gt\lambda_2\gt\cdots\gt\lambda_k$ 와 거의 모든 $x$ 에서 부분공간의 사슬
 > $$
 > \mathbb R^d=V_1(x)\supsetneq V_2(x)\supsetneq\cdots\supsetneq V_k(x)\supsetneq V_{k+1}(x)=0
 > $$

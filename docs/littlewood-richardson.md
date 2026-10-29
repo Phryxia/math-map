@@ -76,7 +76,7 @@ $$
 
 ## Horn 문제의 답
 
-$\alpha,\beta,\gamma$ 가 $n$ 개씩의 내림차순 실수열이라 하자. $A+B=C$ 이고 고윳값이 각각 $\alpha,\beta,\gamma$ 인 에르미트 행렬이 존재할 필요충분조건은
+$\alpha,\beta,\gamma$ 가 $n$ 개씩의 내림차순 [실수](real-numbers.md)열이라 하자. $A+B=C$ 이고 고윳값이 각각 $\alpha,\beta,\gamma$ 인 에르미트 행렬이 존재할 필요충분조건은
 
 $$
 \sum\gamma_k=\sum\alpha_i+\sum\beta_j\quad\text{이고}\quad

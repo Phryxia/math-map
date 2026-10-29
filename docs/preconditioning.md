@@ -66,7 +66,7 @@ $$
 
 이면 $\kappa(M^{-1}A) \le c\_2/c\_1$ 이다.
 
-$M^{-1}A$ 는 $M$-내적에서 대칭이므로 고윳값이 실수이고 Rayleigh 몫 $x^{\top}Ax / x^{\top}Mx$ 의 범위 안에 있다. 그 범위가 $\lbrack c\_1, c\_2\rbrack$ 이다. ∎
+$M^{-1}A$ 는 $M$-내적에서 대칭이므로 고윳값이 [실수](real-numbers.md)이고 Rayleigh 몫 $x^{\top}Ax / x^{\top}Mx$ 의 범위 안에 있다. 그 범위가 $\lbrack c\_1, c\_2\rbrack$ 이다. ∎
 
 반복 횟수는 $\sqrt{c\_2/c\_1}$ 에 비례하므로, 격자 간격에 무관한 $c\_1, c\_2$ 를 주는 $M$ 을 찾는 것이 전처리 설계의 목표다.
 

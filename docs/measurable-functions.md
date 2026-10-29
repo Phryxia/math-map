@@ -24,7 +24,7 @@ $$
 B\in\mathcal T\quad\Longrightarrow\quad f^{-1}(B)\in\Sigma
 $$
 
-실수값 함수에서는 $Y$ 의 $\sigma$ -대수로 열린집합들이 생성하는 Borel $\sigma$ -대수를 쓰고 $\Sigma$ 가측 또는 Borel 가측이라 한다. 음이 아닌 확장실수값 함수도 $\lbrace+\infty\rbrace$ 를 Borel 집합에 포함시켜 같게 정의한다.
+[실수](real-numbers.md)값 함수에서는 $Y$ 의 $\sigma$ -대수로 열린집합들이 생성하는 Borel $\sigma$ -대수를 쓰고 $\Sigma$ 가측 또는 Borel 가측이라 한다. 음이 아닌 확장실수값 함수도 $\lbrace+\infty\rbrace$ 를 Borel 집합에 포함시켜 같게 정의한다.
 
 $X=\mathbb R$ 이고 $\Sigma$ 가 Lebesgue 가측집합이면 Lebesgue 가측함수, $\Sigma$ 가 Borel 집합이면 Borel 가측함수다. 전자가 더 넓고, 두 개념을 섞으면 Lebesgue 가측함수의 합성이 Lebesgue 가측이 아닐 수 있다.
 

@@ -60,7 +60,7 @@ $$
 
 ## Akra–Bazzi 정리
 
-부분 문제의 크기가 서로 다른 점화식은 **Akra–Bazzi 정리(Akra–Bazzi theorem)** 가 다룬다[^3]. $T(n)=\sum_{i=1}^{k}a_iT(b_in)+g(n)$ 이고 $a_i\gt 0$, $0\lt b_i\lt 1$ 이며 $g$ 가 다항식 정도로 자라면, $\sum_{i=1}^{k}a_ib_i^{\thinspace q}=1$ 인 실수 $q$ 에 대해 다음이 성립한다.
+부분 문제의 크기가 서로 다른 점화식은 **Akra–Bazzi 정리(Akra–Bazzi theorem)** 가 다룬다[^3]. $T(n)=\sum_{i=1}^{k}a_iT(b_in)+g(n)$ 이고 $a_i\gt 0$, $0\lt b_i\lt 1$ 이며 $g$ 가 다항식 정도로 자라면, $\sum_{i=1}^{k}a_ib_i^{\thinspace q}=1$ 인 [실수](real-numbers.md) $q$ 에 대해 다음이 성립한다.
 
 $$
 T(n)=\Theta\left(n^q\left(1+\int_1^n\frac{g(u)}{u^{q+1}}\thinspace du\right)\right)

@@ -51,7 +51,7 @@ function lisLength(a: number[]): number {
 
 ## Erdős–Szekeres 정리
 
-서로 다른 실수 $(r-1)(s-1)+1$ 개의 수열은 길이 $r$ 의 증가 부분수열이나 길이 $s$ 의 감소 부분수열을 가진다. 증명은 [비둘기집 원리](pigeonhole-principle.md) 문서에 있고, 항마다 붙이는 쌍 $(L(i),L^-(i))$ 가 직관 절의 $L$ 과 그 감소 판이다. 따라서 $\ell(a)\thinspace\ell^-(a)\ge n$ 이다.
+서로 다른 [실수](real-numbers.md) $(r-1)(s-1)+1$ 개의 수열은 길이 $r$ 의 증가 부분수열이나 길이 $s$ 의 감소 부분수열을 가진다. 증명은 [비둘기집 원리](pigeonhole-principle.md) 문서에 있고, 항마다 붙이는 쌍 $(L(i),L^-(i))$ 가 직관 절의 $L$ 과 그 감소 판이다. 따라서 $\ell(a)\thinspace\ell^-(a)\ge n$ 이다.
 
 ## Schensted 정리
 

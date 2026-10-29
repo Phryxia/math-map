@@ -2,7 +2,7 @@
 
 # 개요
 
-**정규분포(normal distribution, Gaussian distribution)** 는 실수 위에서 밀도가
+**정규분포(normal distribution, Gaussian distribution)** 는 [실수](real-numbers.md) 위에서 밀도가
 
 $$
 f(x)=\frac{1}{\sqrt{2\pi\sigma^2}}\exp\negthinspace\left(-\frac{(x-m)^2}{2\sigma^2}\right)

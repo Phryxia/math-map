@@ -26,7 +26,7 @@ $T$ 로 미분하면 높이 $T$ 근처에서 단위 길이당 영점이 $\ln(T/2
 
 ## 정규화한 영점
 
-Riemann 가설 아래 비자명한 영점을 $\rho=\tfrac12+i\gamma$ 로 쓰면 $\gamma$ 가 실수다. 정규화한 영점은 다음이다.
+Riemann 가설 아래 비자명한 영점을 $\rho=\tfrac12+i\gamma$ 로 쓰면 $\gamma$ 가 [실수](real-numbers.md)다. 정규화한 영점은 다음이다.
 
 $$
 \tilde\gamma=\frac{\gamma}{2\pi}\ln\frac{\gamma}{2\pi}

@@ -46,7 +46,7 @@ $\Gamma\subset\mathrm{SL}\_2(\mathbb Z)$ 를 유한 지표 부분군이라 하�
 
 첨점에서 상수항까지 사라지면 **첨점형식**이라 하고, 이때 $u\in L^2(\Gamma\backslash\mathbb H)$ 다. $\Delta$ 가 쌍곡 계량에 대한 Laplace–Beltrami 작용소이고 $\mathrm{SL}\_2(\mathbb R)$ 작용과 가환이므로 1 과 2 가 양립한다.
 
-고윳값을 $\lambda=s(1-s)$ 로 쓰면 $s=\tfrac12+ir$ 이고 $\lambda=\tfrac14+r^2$ 이다. $\lambda\ge\tfrac14$ 이면 $r$ 이 실수이고 대응하는 표현이 주계열이며 **온도적**이라 한다. $\lambda\lt\tfrac14$ 이면 $r$ 이 순허수이고 표현이 여계열이며 **예외적**이라 한다. $\tfrac14$ 는 쌍곡평면 $\mathbb H$ 자체의 Laplace 스펙트럼의 바닥이다.
+고윳값을 $\lambda=s(1-s)$ 로 쓰면 $s=\tfrac12+ir$ 이고 $\lambda=\tfrac14+r^2$ 이다. $\lambda\ge\tfrac14$ 이면 $r$ 이 [실수](real-numbers.md)이고 대응하는 표현이 주계열이며 **온도적**이라 한다. $\lambda\lt\tfrac14$ 이면 $r$ 이 순허수이고 표현이 여계열이며 **예외적**이라 한다. $\tfrac14$ 는 쌍곡평면 $\mathbb H$ 자체의 Laplace 스펙트럼의 바닥이다.
 
 ## Fourier 전개
 

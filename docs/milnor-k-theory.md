@@ -68,7 +68,7 @@ $$
 K_2(\mathbb Q)\cong\mathbb Z/2\oplus\bigoplus_{p\ne2}\mathbb F_p^{\times}
 $$
 
-이 나온다. $\mathbb Z/2$ 성분은 $\lbrace-1,-1\rbrace$ 이 생성하고, 실수 자리에서 $\lbrace a,b\rbrace$ 가 $a,b$ 가 둘 다 음수일 때만 자명하지 않은 것으로 검출된다.
+이 나온다. $\mathbb Z/2$ 성분은 $\lbrace-1,-1\rbrace$ 이 생성하고, [실수](real-numbers.md) 자리에서 $\lbrace a,b\rbrace$ 가 $a,b$ 가 둘 다 음수일 때만 자명하지 않은 것으로 검출된다.
 
 ## 노름 잉여 동형 정리
 
