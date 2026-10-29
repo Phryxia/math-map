@@ -22,7 +22,7 @@ $$
 F(s)=\mathcal L\lbrace f\rbrace(s)=\int_0^\infty e^{-st}f(t)\thinspace dt
 $$
 
-적분은 복소수 $s$ 가 $\mathrm{Re}\thinspace s\gt c$ 일 때 절대수렴하고, $F$ 는 이 반평면에서 [정칙함수](holomorphic-functions.md)다. 적분이 수렴하는 $\mathrm{Re}\thinspace s$ 의 하한을 수렴 가로좌표(abscissa of convergence)라 한다.
+적분은 [복소수](complex-numbers.md) $s$ 가 $\mathrm{Re}\thinspace s\gt c$ 일 때 절대수렴하고, $F$ 는 이 반평면에서 [정칙함수](holomorphic-functions.md)다. 적분이 수렴하는 $\mathrm{Re}\thinspace s$ 의 하한을 수렴 가로좌표(abscissa of convergence)라 한다.
 
 자주 쓰는 값은 다음과 같다. [감마 함수](gamma-function.md)로는 $\mathcal L\lbrace t^{\alpha}\rbrace=\Gamma(\alpha+1)/s^{\alpha+1}$ 이다.
 

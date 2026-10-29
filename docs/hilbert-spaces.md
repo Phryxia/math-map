@@ -20,7 +20,7 @@
 
 ## 내적 공간과 노름
 
-복소수체 위의 벡터 공간 $H$ 에 대해, 사상 $(x,y)\mapsto\langle x,y\rangle$ 가 첫 변수에 대해 선형이고, 켤레대칭이며, 양의 정부호일 때 내적이라 한다. 유도 노름은 다음과 같다.
+[복소수](complex-numbers.md)체 위의 벡터 공간 $H$ 에 대해, 사상 $(x,y)\mapsto\langle x,y\rangle$ 가 첫 변수에 대해 선형이고, 켤레대칭이며, 양의 정부호일 때 내적이라 한다. 유도 노름은 다음과 같다.
 
 $$
 \Vert x\Vert = \sqrt{\langle x, x\rangle}.

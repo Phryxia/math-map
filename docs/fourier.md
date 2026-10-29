@@ -18,7 +18,7 @@
 
 ## 변환
 
-$N$ 을 배열 길이, $x$ 를 길이 $N$ 의 복소수 배열이라 하자. $i$ 는 허수 단위이고 실수 $\theta$ 에 대해
+$N$ 을 배열 길이, $x$ 를 길이 $N$ 의 [복소수](complex-numbers.md) 배열이라 하자. $i$ 는 허수 단위이고 실수 $\theta$ 에 대해
 
 $$
 e^{i\theta}=\cos\theta+i\sin\theta
