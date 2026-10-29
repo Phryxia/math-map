@@ -112,7 +112,7 @@ graph TD
 - [셈 복잡도](counting-complexity.md): 해의 수를 세는 함수의 부류 #P, 해 보존 환원과 #SAT 의 완전성, 판정이 쉬운 문제의 세기와 근사 세기
 - [공간 복잡도](space-complexity.md): 작업 테이프 칸 수로 잰 비용, L 과 NL 과 PSPACE, Savitch 정리와 Immerman–Szelepcsényi 정리, 한정 불 논리식의 PSPACE-완전성
 - [근사 알고리즘](approximation-algorithms.md): 최적해 대신 보장된 비율의 해
-  - [외판원 문제](traveling-salesman-problem.md): 최소 가중치 Hamilton 순환, 일반 판본의 근사 불가능성과 Held–Karp 점화식, 최소 신장트리의 2-근사와 Christofides 의 3/2-근사
+  - [외판원 문제](traveling-salesman-problem.md): 모든 정점을 한 번씩 지나는 최소 가중치 순환, 일반 판본의 근사 불가능성과 Held–Karp 점화식, 최소 신장트리의 2-근사와 Christofides 의 3/2-근사
 - [정점 덮개 문제](vertex-cover.md): 모든 간선의 끝점을 담는 최소 정점 집합, 이분 그래프의 König 정리, 극대 매칭의 2-근사와 Nemhauser–Trotter 반정수성, 근사 하한과 매개변수 알고리즘
   - [독립집합 문제](independent-set.md): 서로 이웃하지 않는 정점 집합의 최대 크기, 무작위 순서로 얻는 Caro–Wei 하한, 클릭에서 옮겨지는 n^{1−ε} 근사 하한, 나무폭 동적 계획법과 평면 그래프의 Baker 층 나누기, Luby 의 병렬 극대 독립집합
   - [k-중심 문제](k-center.md): 가장 먼 점까지의 거리를 최소화하는 중심 선택, 가장 먼 점 선택의 2-근사와 지배 집합으로 얻는 2−ε 하한
