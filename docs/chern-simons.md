@@ -84,7 +84,7 @@ $$
 
 마지막 항은 $A$ 를 포함하지 않고 사상 $g:M\to G$ 만 본다. $G=\mathrm{SU}(2)\cong S^3$ 이면 그 적분이 $g$ 의 권선수 $\lbrack g\rbrack\in\pi_3(\mathrm{SU}(2))=\mathbb Z$ 와 같다.
 
-$\mathrm{CS}(A)$ 는 실수로서는 게이지 불변이 아니고 $\mathbb R/\mathbb Z$ 값으로만 정해진다. 물리에서 쓰는 것은 $e^{2\pi ik\thinspace\mathrm{CS}(A)}$ 이고 $k$ 가 정수이면 이것이 게이지 불변이다. 레벨이 정수여야 하는 이유가 $\pi_3(G)=\mathbb Z$ 이며, 양자화를 Lie 군의 위상이 강제한다.
+$\mathrm{CS}(A)$ 는 [실수](real-numbers.md)로서는 게이지 불변이 아니고 $\mathbb R/\mathbb Z$ 값으로만 정해진다. 물리에서 쓰는 것은 $e^{2\pi ik\thinspace\mathrm{CS}(A)}$ 이고 $k$ 가 정수이면 이것이 게이지 불변이다. 레벨이 정수여야 하는 이유가 $\pi_3(G)=\mathbb Z$ 이며, 양자화를 Lie 군의 위상이 강제한다.
 
 $\partial W=M$ 인 4 차원 다양체 $W$ 를 채우면 Stokes 정리가 $\mathrm{CS}(A)=\frac1{8\pi^2}\int_W\mathrm{tr}(F\wedge F)$ 를 준다. $W$ 를 고르는 방법이 여럿이고 두 선택의 차이는 닫힌 4 차원 다양체 위의 $\mathrm{tr}(F\wedge F)$ 적분, 곧 2 차 Chern 수이므로 정수다. 같은 정수 애매함이 이 표현에서도 나온다.
 

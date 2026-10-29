@@ -20,7 +20,7 @@
 
 ## 닫힌 반공간
 
-$\mathbb R^d$ 의 **닫힌 반공간(closed halfspace)** 은 $a\ne 0$ 인 벡터 $a\in\mathbb R^d$ 와 실수 $b$ 로 정하는 집합
+$\mathbb R^d$ 의 **닫힌 반공간(closed halfspace)** 은 $a\ne 0$ 인 벡터 $a\in\mathbb R^d$ 와 [실수](real-numbers.md) $b$ 로 정하는 집합
 
 $$
 H=\lbrace y\in\mathbb R^d : \langle a,y\rangle\ge b\rbrace

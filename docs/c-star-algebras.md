@@ -30,7 +30,7 @@ $a=a^\ast$ 인 원소를 자기수반이라 하고, $a=b^\ast b$ 꼴인 원소�
 
 ## 상태
 
-$\varphi:\mathcal A\to\mathbb C$ 가 선형이고 양의 원소를 음이 아닌 실수로 보내고 $\Vert\varphi\Vert=1$ 이면 $\varphi$ 를 **상태(state)** 라 한다. 상태 전체는 약 스타 위상에서 콤팩트 볼록집합이고, 그 극점을 순수 상태라 한다.
+$\varphi:\mathcal A\to\mathbb C$ 가 선형이고 양의 원소를 음이 아닌 [실수](real-numbers.md)로 보내고 $\Vert\varphi\Vert=1$ 이면 $\varphi$ 를 **상태(state)** 라 한다. 상태 전체는 약 스타 위상에서 콤팩트 볼록집합이고, 그 극점을 순수 상태라 한다.
 
 ## 표현
 

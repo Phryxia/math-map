@@ -2,7 +2,7 @@
 
 # 개요
 
-**Bolzano–Weierstrass 정리(Bolzano–Weierstrass theorem)** 는 유계인 실수 수열이 수렴하는 부분수열(subsequence)을 갖는다는 정리다. $\sin 1,\sin 2,\sin 3,\dots$ 은 모든 항이 $-1$ 과 $1$ 사이에 있지만 [수열의 극한](limits.md)이 없고, 어느 항을 골라야 수렴하는지 식으로 정할 수도 없다. 이 정리는 구간을 반씩 자르며 항이 무한히 많이 든 쪽을 계속 고르는 방법으로, 이런 수열에서도 수렴하는 부분수열을 골라낸다.
+**Bolzano–Weierstrass 정리(Bolzano–Weierstrass theorem)** 는 유계인 [실수](real-numbers.md) 수열이 수렴하는 부분수열(subsequence)을 갖는다는 정리다. $\sin 1,\sin 2,\sin 3,\dots$ 은 모든 항이 $-1$ 과 $1$ 사이에 있지만 [수열의 극한](limits.md)이 없고, 어느 항을 골라야 수렴하는지 식으로 정할 수도 없다. 이 정리는 구간을 반씩 자르며 항이 무한히 많이 든 쪽을 계속 고르는 방법으로, 이런 수열에서도 수렴하는 부분수열을 골라낸다.
 
 # 직관
 

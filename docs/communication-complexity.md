@@ -42,7 +42,7 @@ $A\subseteq X$, $B\subseteq Y$ 에 대해 $A\times B$ 꼴의 집합을 **조합�
 
 ## 계수 하한
 
-정리(Mehlhorn–Schmidt). 실수 위의 행렬 계수로 $D(f)\ge\log_2\mathrm{rank}\thinspace M_f$ 다[^2].
+정리(Mehlhorn–Schmidt). [실수](real-numbers.md) 위의 행렬 계수로 $D(f)\ge\log_2\mathrm{rank}\thinspace M_f$ 다[^2].
 
 증명의 요지. $1$ 의 값을 갖는 단색 직사각형은 계수가 $1$ 인 행렬이고, $M_f$ 는 이런 행렬 $2^{D(f)}$ 개 이하의 합이다. EQ 의 통신 행렬은 단위행렬이어서 계수가 $2^n$ 이다. $D(f)$ 가 $\log_2\mathrm{rank}\thinspace M_f$ 의 다항식으로 위에서 묶이는지 묻는 것이 L. Lovász 와 M. Saks 의 [로그 계수 추측](log-rank-conjecture.md)(log-rank conjecture)이다[^3].
 

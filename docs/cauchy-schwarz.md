@@ -16,7 +16,7 @@ $$
 
 평면에서 두 벡터의 점곱은 $\lVert u\rVert\lVert v\rVert\cos\theta$ 이므로 점곱을 노름의 곱으로 나누면 $-1$ 과 $1$ 사이의 값이 나온다. 내적 공간에는 각도가 따로 정의되어 있지 않으므로, 각도를 이 비로 정의하려면 비가 그 범위에 들어간다는 것을 내적의 공리만으로 확인해야 한다.
 
-확인에 쓰는 것은 양의 정부호성 하나다. 실수 $t$ 마다 $\lVert u-tv\rVert^2\ge 0$ 이고, 좌변을 내적의 선형성으로 펼치면 $t$ 의 이차식 $\lVert v\rVert^2t^2-2\langle u,v\rangle t+\lVert u\rVert^2$ 이 된다. 이차식이 모든 실수에서 음이 아니므로 판별식이 $0$ 이하이고, 그것을 정리하면 $\langle u,v\rangle^2\le\lVert u\rVert^2\lVert v\rVert^2$ 이다. $t$ 는 $v$ 방향으로 $u$ 를 얼마나 덜어낼지를 정하는 값이고, 가장 많이 덜어낸 자리에서 남는 길이가 부등식의 여유다.
+확인에 쓰는 것은 양의 정부호성 하나다. [실수](real-numbers.md) $t$ 마다 $\lVert u-tv\rVert^2\ge 0$ 이고, 좌변을 내적의 선형성으로 펼치면 $t$ 의 이차식 $\lVert v\rVert^2t^2-2\langle u,v\rangle t+\lVert u\rVert^2$ 이 된다. 이차식이 모든 실수에서 음이 아니므로 판별식이 $0$ 이하이고, 그것을 정리하면 $\langle u,v\rangle^2\le\lVert u\rVert^2\lVert v\rVert^2$ 이다. $t$ 는 $v$ 방향으로 $u$ 를 얼마나 덜어낼지를 정하는 값이고, 가장 많이 덜어낸 자리에서 남는 길이가 부등식의 여유다.
 
 # 정의
 

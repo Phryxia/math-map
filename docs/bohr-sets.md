@@ -22,7 +22,7 @@ $$
 B(R,\rho)=\lbrace x\in\mathbb Z/N : \lVert rx/N\rVert\le\rho\quad(r\in R)\rbrace
 $$
 
-를 **계수(rank)** $d=\lvert R\rvert$, 반지름 $\rho$ 의 Bohr 집합이라 한다. $\lVert t\rVert$ 는 실수 $t$ 와 가장 가까운 정수 사이의 거리다. $B(R,\rho)$ 는 $0$ 을 포함하고 $-B(R,\rho)=B(R,\rho)$ 이며, $B(R,\rho)+B(R,\rho')\subseteq B(R,\rho+\rho')$ 이다.
+를 **계수(rank)** $d=\lvert R\rvert$, 반지름 $\rho$ 의 Bohr 집합이라 한다. $\lVert t\rVert$ 는 [실수](real-numbers.md) $t$ 와 가장 가까운 정수 사이의 거리다. $B(R,\rho)$ 는 $0$ 을 포함하고 $-B(R,\rho)=B(R,\rho)$ 이며, $B(R,\rho)+B(R,\rho')\subseteq B(R,\rho+\rho')$ 이다.
 
 # 성질
 

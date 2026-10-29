@@ -54,7 +54,7 @@ $$f(z)=\sum_{n\ge0}z^{2^n}$$
 
 ## Schwarz 반사 원리
 
-상반평면의 영역 $D^+$ 에서 정칙이고 실축의 구간 $I$ 까지 연속으로 확장되어 $I$ 위에서 실수값을 갖는 $f$ 는
+상반평면의 영역 $D^+$ 에서 정칙이고 실축의 구간 $I$ 까지 연속으로 확장되어 $I$ 위에서 [실수](real-numbers.md)값을 갖는 $f$ 는
 
 $$F(z)=\begin{cases}f(z)&z\in D^+\cup I\cr \overline{f(\bar z)}&\bar z\in D^+\end{cases}$$
 

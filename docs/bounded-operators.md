@@ -96,7 +96,7 @@ $xf(x)=\lambda f(x)$ 는 $x\ne\lambda$ 인 거의 모든 곳에서 $f=0$ 을 강
 
 ## 콤팩트 자기수반 작용소의 스펙트럼 정리
 
-$T$ 가 콤팩트이고 자기수반이면 정규직교기저 $\lbrace e_n\rbrace$ 과 실수 $\lambda_n\to0$ 이 존재해
+$T$ 가 콤팩트이고 자기수반이면 정규직교기저 $\lbrace e_n\rbrace$ 과 [실수](real-numbers.md) $\lambda_n\to0$ 이 존재해
 
 $$
 Tx=\sum_n\lambda_n\langle x,e_n\rangle e_n

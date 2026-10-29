@@ -41,7 +41,7 @@ $$
 
 ## 적분 표현
 
-실수 $x$ 에 대해
+[실수](real-numbers.md) $x$ 에 대해
 
 $$
 \mathrm{Ai}(x) = \frac{1}{\pi}\int_0^{\infty}\cos\negthinspace\left(\frac{t^3}{3} + xt\right)dt

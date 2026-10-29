@@ -8,7 +8,7 @@
 
 분기 이론은 매개변수 $\lambda$ 를 가진 방정식 $F(\lambda,x)=0$ 의 해가 어느 매개변수 값에서 갈라져 나오는지를 다루는 이론이다. [역함수 정리](inverse-function-theorem.md)의 음함수 정리가 성립하는 자리에서는 해가 갈라지지 않으므로 분기는 그 정리가 실패하는 자리에서만 일어난다. 실패하는 자리 가운데 실제로 해가 갈라지는 곳은 [Leray–Schauder 차수](leray-schauder-degree.md)의 변화로 판정한다.
 
-실수 방정식 $x^3-\lambda x=0$ 을 본다. $\lambda\le 0$ 이면 해는 $x=0$ 하나이고, $\lambda\gt 0$ 이면 $x=0,\pm\sqrt\lambda$ 세 개다. $\lambda$ 가 $0$ 을 지나는 순간 해 $x=0$ 에서 두 해가 새로 갈라져 나온다.
+[실수](real-numbers.md) 방정식 $x^3-\lambda x=0$ 을 본다. $\lambda\le 0$ 이면 해는 $x=0$ 하나이고, $\lambda\gt 0$ 이면 $x=0,\pm\sqrt\lambda$ 세 개다. $\lambda$ 가 $0$ 을 지나는 순간 해 $x=0$ 에서 두 해가 새로 갈라져 나온다.
 
 $x$ 에 대한 도함수는 $3x^2-\lambda$ 이고 $(\lambda,x)=(0,0)$ 에서 $0$ 이다. 도함수가 $0$ 이 아닌 곳에서는 음함수 정리로 해가 $\lambda$ 의 함수 하나로만 이어지므로, 갈라짐이 일어날 수 있는 곳은 도함수가 $0$ 인 곳뿐이다.
 

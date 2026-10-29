@@ -114,7 +114,7 @@ $$
 \sigma_p(n)=\lim_{h\to\infty}\frac{\char35{}\lbrace x\in(\mathbb Z/p^h\mathbb Z)^s:x_1^k+\cdots+x_s^k\equiv n\rbrace}{p^{h(s-1)}}
 $$
 
-$\sigma_p(n)$ 은 합동식 $x_1^k+\cdots+x_s^k\equiv n$ 의 $p$ 진 해의 밀도다. 모든 소수에서 해가 있고 $s$ 가 $k$ 에 비해 크면 $\mathfrak S(n)\gg1$ 이다. 실수 해의 존재는 특이적분이 맡으므로, 주항 $\mathfrak S(n)J(n)$ 이 양수라는 것은 국소 해가 전부 있다는 것과 같다.
+$\sigma_p(n)$ 은 합동식 $x_1^k+\cdots+x_s^k\equiv n$ 의 $p$ 진 해의 밀도다. 모든 소수에서 해가 있고 $s$ 가 $k$ 에 비해 크면 $\mathfrak S(n)\gg1$ 이다. [실수](real-numbers.md) 해의 존재는 특이적분이 맡으므로, 주항 $\mathfrak S(n)J(n)$ 이 양수라는 것은 국소 해가 전부 있다는 것과 같다.
 
 ## Weyl 의 부등식
 

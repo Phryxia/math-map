@@ -2,7 +2,7 @@
 
 # 개요
 
-**Borel 추측(Borel conjecture)** 은 아무리 빨리 줄어드는 길이의 구간들로도 덮이는 실수 집합이 셀 수 있는 집합뿐이라는 명제다. 셀 수 있는 집합은 점마다 구간 하나를 배정하면 어떤 길이의 열로도 덮이지만, 길이가 $0$ 인 집합 가운데에도 빨리 줄어드는 열로는 덮이지 않는 것이 있다. 셀 수 없으면서 모든 열로 덮이는 집합이 있는지는 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)에서 정해지지 않고, [연속체 가설](continuum-hypothesis.md)을 더하면 있고 Laver 가 만든 모형에서는 없다.
+**Borel 추측(Borel conjecture)** 은 아무리 빨리 줄어드는 길이의 구간들로도 덮이는 [실수](real-numbers.md) 집합이 셀 수 있는 집합뿐이라는 명제다. 셀 수 있는 집합은 점마다 구간 하나를 배정하면 어떤 길이의 열로도 덮이지만, 길이가 $0$ 인 집합 가운데에도 빨리 줄어드는 열로는 덮이지 않는 것이 있다. 셀 수 없으면서 모든 열로 덮이는 집합이 있는지는 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)에서 정해지지 않고, [연속체 가설](continuum-hypothesis.md)을 더하면 있고 Laver 가 만든 모형에서는 없다.
 
 # 직관
 

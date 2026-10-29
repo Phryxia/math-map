@@ -57,7 +57,7 @@ $$
 
 ## Hoeffding 보조정리와 부등식
 
-**Hoeffding 보조정리.** 확률변수 $Y$ 가 $E[Y] = 0$ 이고 $a \le Y \le b$ 이면 모든 실수 $\lambda$ 에 대해
+**Hoeffding 보조정리.** 확률변수 $Y$ 가 $E[Y] = 0$ 이고 $a \le Y \le b$ 이면 모든 [실수](real-numbers.md) $\lambda$ 에 대해
 
 $$
 E\big[e^{\lambda Y}\big] \thickspace\le\thickspace \exp\negthinspace\Big(\frac{\lambda^2 (b-a)^2}{8}\Big).
