@@ -2,9 +2,11 @@
 
 # 개요
 
-**Heath-Brown 항등식(Heath-Brown's identity)** 은 von Mangoldt 함수 $\Lambda$ 를 Möbius 함수와 $1$, $\log$ 의 합성곱 $2K$ 겹 이하의 교대합으로 쓰는 항등식이다. Möbius 함수가 붙는 변수는 모두 $x^{1/K}$ 이하로 짧다. [Vaughan 항등식](vaughan-identity.md)과 같이 소수에 걸친 합을 Type I 합과 Type II 합으로 가르는 데 쓰고, 정수 $K$ 를 고르면 각 조각의 변수 길이를 원하는 범위로 묶을 수 있다.
+**Heath-Brown 항등식(Heath-Brown's identity)** 은 von Mangoldt 함수 $\Lambda$ 를 Möbius 함수와 $1$, $\log$ 의 합성곱 $2K$ 겹 이하의 교대합으로 쓰는 항등식이다. 소수에 걸친 합을 추정하려면 소수를 곱 $mn$ 꼴의 항으로 풀어 써야 하는데, $m$ 과 $n$ 의 크기가 추정이 통하는 범위에 들지 않으면 그 조각을 다룰 수 없다. 이 항등식은 소수에 붙는 가중치를 짧은 변수 여럿의 곱의 합으로 쓰므로, 변수 몇 개를 묶어 원하는 크기의 조각을 만들 수 있다.
 
 # 직관
+
+Möbius 함수가 붙는 변수는 모두 $x^{1/K}$ 이하로 짧다. [Vaughan 항등식](vaughan-identity.md)과 같이 소수에 걸친 합을 Type I 합과 Type II 합으로 가르는 데 쓰고, 정수 $K$ 를 고르면 각 조각의 변수 길이를 원하는 범위로 묶을 수 있다.
 
 Vaughan 항등식의 셋째 항은 $\sum\_{k\gt V}\Lambda(k)\sum\_{mr=l,\thinspace m\le U}\mu(m)$ 꼴이다. 바깥 변수 $k$ 와 안쪽 변수 $l$ 의 길이는 $U,V$ 로만 조절되고, 두 길이가 쓰려는 추정의 범위에 들지 않으면 그 조각을 다룰 방법이 없다. 변수가 더 잘게 나뉘어 있으면 변수 몇 개를 묶어 원하는 길이를 만들 수 있다.
 
