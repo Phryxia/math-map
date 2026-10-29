@@ -14,7 +14,7 @@ $$
 
 Bernoulli, Poisson, 정규, 감마, 베타, [다항분포](multinomial-distribution.md) 등 표준적인 분포 대부분이 지수족에 들어간다.
 
-이 형태에서 여러 성질이 따라 나온다. 추론에 필요한 요약은 $T$ 의 합뿐이고(충분통계량), 로그분배함수 $A$ 의 미분이 $T$ 의 모멘트를 생성하며, $A$ 의 볼록성이 로그가능도의 오목성을 주어 [최대가능도 추정](maximum-likelihood.md)이 유일한 모멘트 매칭 문제가 된다. 켤레사전분포, 일반화선형모형, 최대엔트로피 분포도 같은 구조에서 나온다.
+이 형태에서 여러 성질이 따라 나온다. 추론에 필요한 요약은 $T$ 의 합뿐이고([충분통계량](sufficient-statistics.md)), 로그분배함수 $A$ 의 미분이 $T$ 의 모멘트를 생성하며, $A$ 의 볼록성이 로그가능도의 오목성을 주어 [최대가능도 추정](maximum-likelihood.md)이 유일한 모멘트 매칭 문제가 된다. 켤레사전분포, 일반화선형모형, 최대엔트로피 분포도 같은 구조에서 나온다.
 
 Poisson 모형에서 관측이 백만 개여도 모수 추정에 필요한 것은 관측값의 합 하나다. 표본 크기가 커져도 요약의 차원이 고정되는 성질이 지수족의 특징이다.
 
@@ -201,6 +201,7 @@ $$
 ## 더 알아보기
 
 - [일반화선형모형](generalized-linear-models.md)
+- [충분통계량](sufficient-statistics.md)
 - [조건부 무작위장](conditional-random-fields.md)
 
 #statistics #probability #information_theory

@@ -191,5 +191,6 @@ $$
 - [Gauss 과정](gaussian-processes.md)
 - [Kalman 필터](kalman-filter.md)
 - [에르고딕 정리](ergodic-theorem.md)
+- [충분통계량](sufficient-statistics.md)
 
 #probability #measure_theory

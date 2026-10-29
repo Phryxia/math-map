@@ -37,6 +37,7 @@ graph TD
 - [최대가능도 추정](maximum-likelihood.md): 가능도함수를 최대로 하는 모수, 점근 정규성과 Cramér–Rao 하한
 - [M-추정량](m-estimators.md): 표본 손실의 합을 최소화하는 추정량, 샌드위치 분산의 점근 정규성, 영향 함수와 Huber 손실의 최소최대 성질
 - [지수족](exponential-families.md): 자연모수와 로그분배함수로 적은 분포족, 충분통계량과 켤레 사전분포
+  - [충분통계량](sufficient-statistics.md): 모수에 대한 정보를 잃지 않는 요약, 인수분해 정리, Rao–Blackwell 과 Lehmann–Scheffé 의 최소분산 불편추정, Basu 정리
 - [Fisher 정보](fisher-information.md): 점수함수의 [공분산](covariance.md), 정보 등식과 Cramér–Rao 하한의 유도
   - [정보기하](information-geometry.md): 분포족을 다양체로 보는 Fisher–Rao 계량, 쌍대 접속과 자연 경사법
 - [Bayes 추론](bayesian-inference.md): 사전분포에서 사후분포로 가는 갱신, 사후예측분포와 최대사후추정
