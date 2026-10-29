@@ -165,6 +165,7 @@ $$
 - [가능도비 검정](likelihood-ratio-test.md)
 - [Pearson 카이제곱 검정](pearson-chi-squared-test.md)
 - [Fisher 정확 검정](fisher-exact-test.md)
+- [Wilcoxon 순위합 검정](wilcoxon-rank-sum-test.md)
 - [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)
 - [순차확률비 검정](sequential-probability-ratio-test.md)
 

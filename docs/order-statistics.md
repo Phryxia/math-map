@@ -100,5 +100,6 @@ $$
 ## 더 알아보기
 
 - [극값 분포](extreme-value-distributions.md)
+- [Wilcoxon 순위합 검정](wilcoxon-rank-sum-test.md)
 
 #probability #statistics

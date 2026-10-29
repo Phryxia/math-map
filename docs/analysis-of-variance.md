@@ -58,7 +58,7 @@ $k=2$ 이면 $F$ 는 두 표본 t 통계량의 제곱이고, $F(1,n-2)$ 는 자�
 
 - 실험계획법에서 요인이 둘이면 이원 분산분석(two-way ANOVA)으로 제곱합을 두 요인의 주효과, 교호작용, 오차로 나누고 각 효과를 F 비로 검정한다.
 - 귀무가설을 기각한 뒤 어느 집단끼리 다른지 알려면 집단 쌍마다 검정을 하므로 [거짓 발견률](false-discovery-rate.md)이나 검정 횟수로 나눈 유의수준으로 여러 번 검정한 오류를 조절한다.
-- 정규성이 의심되면 순위로 바꾼 자료에 같은 분해를 하는 Kruskal–Wallis 검정(Kruskal–Wallis test)을 쓴다.
+- 정규성이 의심되면 순위로 바꾼 자료에 같은 분해를 하는 Kruskal–Wallis 검정을 쓴다. 이 검정은 [Wilcoxon 순위합 검정](wilcoxon-rank-sum-test.md)을 집단 $k$ 개로 늘린 것이다.
 
 [^1]: G. Casella, R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury (2002), §11.2. 일원 분산분석, 제곱합의 분해와 F 검정.
 
