@@ -156,10 +156,19 @@ $$
 
 ## 더 알아보기
 
+### 구간 추정
+
 - [신뢰구간](confidence-intervals.md)
+
+### 검정 방법
+
 - [가능도비 검정](likelihood-ratio-test.md)
-- [순차확률비 검정](sequential-probability-ratio-test.md)
-- [거짓 발견률](false-discovery-rate.md)
+- [Pearson 카이제곱 검정](pearson-chi-squared-test.md)
 - [Kolmogorov–Smirnov 검정](kolmogorov-smirnov-test.md)
+- [순차확률비 검정](sequential-probability-ratio-test.md)
+
+### 다중 검정
+
+- [거짓 발견률](false-discovery-rate.md)
 
 #statistics #probability

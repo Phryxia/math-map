@@ -55,7 +55,7 @@ $$
 - [가능도비 검정](likelihood-ratio-test.md)의 Wilks 정리는 귀무가설 아래 $-2\log\Lambda$ 가 자유도가 모수 개수의 차이인 카이제곱 분포로 수렴한다고 진술한다.
 - [신뢰구간](confidence-intervals.md)에서 정규 표본의 분산 $\sigma^2$ 에 대한 구간은 표본분산 정리의 $(n-1)s^2/\sigma^2$ 를 피벗량으로 쓴다.
 - [James–Stein 추정량](james-stein-estimator.md)의 위험 계산은 $p\ge 3$ 에서 $\mathbb E\lbrack 1/Q\rbrack=1/(p-2)$, $Q\sim\chi^2_p$ 를 쓴다.
-- 범주 $m$ 개의 관측 빈도 $O_j$ 와 기대 빈도 $E_j$ 로 만든 Pearson 카이제곱 통계량(Pearson's chi-squared statistic) $\sum_j(O_j-E_j)^2/E_j$ 는 표본이 클 때 $\chi^2_{m-1}$ 에 가까운 분포를 따르고, 적합도 검정에 쓴다.
+- [Pearson 카이제곱 검정](pearson-chi-squared-test.md)은 범주 $m$ 개의 관측 빈도 $O_j$ 와 기대 빈도 $E_j$ 로 만든 통계량 $\sum_j(O_j-E_j)^2/E_j$ 가 표본이 클 때 $\chi^2_{m-1}$ 에 가까운 분포를 따르는 것을 써서 적합도를 판정한다.
 
 [^1]: G. Casella, R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury (2002), §5.3. 정규 표본의 표본평균과 표본분산, 카이제곱 분포의 밀도와 성질.
 
@@ -69,5 +69,6 @@ $$
 
 - [t 분포](t-distribution.md)
 - [가능도비 검정](likelihood-ratio-test.md)
+- [Pearson 카이제곱 검정](pearson-chi-squared-test.md)
 
 #statistics #probability

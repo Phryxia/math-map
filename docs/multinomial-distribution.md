@@ -76,7 +76,7 @@ $$
 
 증명의 요지. $X$ 는 독립인 범주형 지시벡터 $n$ 개의 합이므로 다변량 [중심극한정리](central-limit-theorem.md)에 의해 $(X-np)/\sqrt n$ 의 분포가 평균 $0$, 공분산 $\mathrm{diag}(p)-pp^{\top}$ 인 다변량 [정규분포](normal-distribution.md)로 수렴한다. 좌표 $j$ 를 $\sqrt{p_j}$ 로 나누면 공분산이 $I-uu^{\top}$ 가 된다. 여기서 $u=(\sqrt{p_1},\dots,\sqrt{p_m})$ 은 길이가 $1$ 이다. $I-uu^{\top}$ 는 $u$ 에 수직인 $m-1$ 차원 부분공간으로의 정사영이므로, 극한 벡터의 길이의 제곱은 독립인 표준정규 확률변수 $m-1$ 개의 제곱합이다.
 
-$Q_n$ 은 관측한 횟수 $X_j$ 와 기대한 횟수 $np_j$ 의 차이를 칸마다 재어 더한 값이다. 이 극한으로 관측 횟수가 주어진 확률 $p$ 와 맞는지 검정하는 것이 Pearson 카이제곱 검정(Pearson's chi-squared test)이다.
+$Q_n$ 은 관측한 횟수 $X_j$ 와 기대한 횟수 $np_j$ 의 차이를 칸마다 재어 더한 값이다. 이 극한으로 관측 횟수가 주어진 확률 $p$ 와 맞는지 검정하는 것이 [Pearson 카이제곱 검정](pearson-chi-squared-test.md)이다.
 
 # 활용
 
@@ -97,5 +97,6 @@ $Q_n$ 은 관측한 횟수 $X_j$ 와 기대한 횟수 $np_j$ 의 차이를 칸�
 ## 더 알아보기
 
 - [Dirichlet 분포](dirichlet-distribution.md)
+- [Pearson 카이제곱 검정](pearson-chi-squared-test.md)
 
 #probability #statistics #combinatorics
