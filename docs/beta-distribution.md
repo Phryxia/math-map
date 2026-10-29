@@ -46,7 +46,7 @@ $X\sim\Gamma(a,\lambda)$ 와 $Y\sim\Gamma(b,\lambda)$ 가 독립이면 $X/(X+Y)\
 
 ## 균등분포의 순서통계량
 
-$U_1,\dots,U_n$ 이 독립이고 모두 $\lbrack 0,1\rbrack$ 의 균등분포를 따르면 $k$ 번째로 작은 값은 $\mathrm{Beta}(k,\thinspace n-k+1)$ 을 따른다. 균등분포의 순서통계량 밀도가 이 꼴이다.
+$U_1,\dots,U_n$ 이 독립이고 모두 $\lbrack 0,1\rbrack$ 의 균등분포를 따르면 $k$ 번째로 작은 값은 $\mathrm{Beta}(k,\thinspace n-k+1)$ 을 따른다. 균등분포의 [순서통계량](order-statistics.md) 밀도가 이 꼴이다.
 
 # 활용
 
@@ -64,6 +64,6 @@ $U_1,\dots,U_n$ 이 독립이고 모두 $\lbrack 0,1\rbrack$ 의 균등분포를
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [순서통계량](order-statistics.md)
 
 #probability #statistics

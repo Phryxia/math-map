@@ -34,7 +34,7 @@ $$
 
 ## 계산
 
-$F_n$ 은 표본점에서만 뛰고 $F_0$ 은 증가하므로 상한은 표본점의 양쪽에서 얻어진다. 순서통계량 $X\_{(1)}\le\dots\le X\_{(n)}$ 과 $V_i=F_0(X\_{(i)})$ 로
+$F_n$ 은 표본점에서만 뛰고 $F_0$ 은 증가하므로 상한은 표본점의 양쪽에서 얻어진다. [순서통계량](order-statistics.md) $X\_{(1)}\le\dots\le X\_{(n)}$ 과 $V_i=F_0(X\_{(i)})$ 로
 
 $$
 D_n=\max\_{1\le i\le n}\max\Bigl(\frac in-V_i,\ V_i-\frac{i-1}n\Bigr)
