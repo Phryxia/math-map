@@ -37,6 +37,7 @@ graph TD
 - [선형사상](linear-maps.md): 두 연산을 보존하는 함수와 그 행렬 표현
   - [쌍대 공간](dual-space.md): 벡터에 스칼라를 대응시키는 범함수 전체와 전치
   - [텐서곱](tensor-products.md): 다중선형 사상을 선형사상으로 바꾸는 공간
+- [Gauss 소거법](gaussian-elimination.md): 식의 상수배를 빼서 미지수를 없애는 절차, 행 사다리꼴과 계수, 해집합의 구조
 - [외대수](exterior-algebra.md): 반대칭 곱, 좌표를 쓰지 않는 행렬식의 정의
 
 ## 고윳값과 스펙트럼

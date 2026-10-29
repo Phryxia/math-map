@@ -99,7 +99,7 @@ $$
 
 ### 행렬 계산
 
-- [행렬 분해](matrix-factorizations.md)
+- [Gauss 소거법](gaussian-elimination.md)
 - [Strassen 알고리즘](strassen-algorithm.md)
 
 ### 선형성이 나타나는 곳
