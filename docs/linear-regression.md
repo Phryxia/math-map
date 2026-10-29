@@ -150,7 +150,7 @@ $$
 \frac{\hat\beta_j - \beta_j}{\hat\sigma \sqrt{v_j}} \sim t_{n-p}
 $$
 
-가 피벗량이 되어 계수의 [신뢰구간](confidence-intervals.md)과 t 검정이 나온다. 여러 계수를 동시에 검정하려면 F 통계량을 쓴다. 모형 비교의 F 검정은 두 사영의 잔차제곱합 차이를 자유도로 정규화한 것이다.
+가 피벗량이 되어 계수의 [신뢰구간](confidence-intervals.md)과 t 검정이 나온다. 여러 계수를 동시에 검정하려면 [F 분포](f-distribution.md)를 따르는 F 통계량을 쓴다. 모형 비교의 F 검정은 두 사영의 잔차제곱합 차이를 자유도로 정규화한 것이다.
 
 ## 분해와 결정계수
 

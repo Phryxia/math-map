@@ -51,6 +51,7 @@ graph TD
 
 - [카이제곱 분포](chi-squared-distribution.md): 독립 표준정규의 제곱합의 분포, 정규 표본의 표본분산과 Wilks 극한
   - [t 분포](t-distribution.md): 표준정규를 카이제곱의 제곱근으로 나눈 분포, 분산을 모르는 정규 표본의 평균과 두꺼운 꼬리
+  - [F 분포](f-distribution.md): 자유도로 나눈 두 카이제곱의 비, 표본분산의 비와 회귀의 F 검정, 베타분포와 t 분포와의 관계
 - [가설검정](hypothesis-testing.md): 귀무가설과 검정통계량, 제1종·제2종 오류, Neyman–Pearson 보조정리
   - [가능도비 검정](likelihood-ratio-test.md): 두 모수 집합 위의 최대 가능도의 비로 세우는 검정, Wilks 정리의 카이제곱 극한
   - [Pearson 카이제곱 검정](pearson-chi-squared-test.md): 범주별 횟수와 기대 횟수의 차이로 세우는 적합도 검정과 독립성 검정, 자유도 계산과 가능도비 통계량과의 점근 동치
