@@ -36,7 +36,7 @@ $$
 
 해가 있을 때 $a$ 를 법 $p$ 의 제곱잉여라 한다.
 
-법 $p$ 의 제곱잉여는 정확히 절반이다. 제곱 사상 $x\mapsto x^2$ 의 핵이 $\lbrace\pm1\rbrace$ 이므로 상의 크기가 $(p-1)/2$ 이고, 제곱잉여 전체가 $(\mathbb Z/p\mathbb Z)^\times$ 의 지표 2 인 부분군이다. Legendre 기호는 그 몫 $\lbrace\pm1\rbrace$ 으로 가는 준동형이며, 법 $p$ 의 유일한 비자명 실수 [Dirichlet 지표](dirichlet-l-functions.md)다.
+법 $p$ 의 제곱잉여는 정확히 절반이다. 제곱 사상 $x\mapsto x^2$ 의 핵이 $\lbrace\pm1\rbrace$ 이므로 상의 크기가 $(p-1)/2$ 이고, 제곱잉여 전체가 $(\mathbb Z/p\mathbb Z)^\times$ 의 지표 2 인 부분군이다. Legendre 기호는 그 몫 $\lbrace\pm1\rbrace$ 으로 가는 준동형이며, 법 $p$ 의 유일한 비자명 [실수](real-numbers.md) [Dirichlet 지표](dirichlet-l-functions.md)다.
 
 ## Jacobi 기호
 

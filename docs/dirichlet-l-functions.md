@@ -97,7 +97,7 @@ $$
 
 가 $\Lambda(s,\chi)=\frac{\tau(\chi)}{i^\epsilon\sqrt q}\thinspace\Lambda(1-s,\bar\chi)$ 를 만족한다. $\epsilon$ 은 $\chi$ 의 짝홀을 나타내고 $\tau(\chi)=\sum_{n \bmod q}\chi(n)e^{2\pi in/q}$ 는 [Gauss 합](gauss-sums.md)이다. 원시 지표에서 $|\tau(\chi)|=\sqrt q$ 이므로 함수방정식의 상수가 절댓값 1 이다.
 
-$\zeta$ 와 달리 $s\mapsto1-s$ 가 $\chi$ 를 $\bar\chi$ 로 바꾸고, 실수 지표에서만 자기 자신으로 돌아온다.
+$\zeta$ 와 달리 $s\mapsto1-s$ 가 $\chi$ 를 $\bar\chi$ 로 바꾸고, [실수](real-numbers.md) 지표에서만 자기 자신으로 돌아온다.
 
 ## L(1,χ)≠0
 
