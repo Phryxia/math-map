@@ -118,7 +118,7 @@ $\sigma$ 를 $s$ 로 바꿔도 되는 근거는 $s$ 가 $\sigma$ 로 확률수�
 
 ## 이항분포의 정규근사
 
-$n$ 번 시행에서 성공 확률 $p$ 인 이항분포는 평균 $np$ , 분산 $np(1-p)$ 이므로 다음 근사를 쓴다(de Moivre–Laplace).
+$n$ 번 시행에서 성공 확률 $p$ 인 [이항분포](binomial-distribution.md)는 평균 $np$ , 분산 $np(1-p)$ 이므로 다음 근사를 쓴다(de Moivre–Laplace).
 
 $$
 P(S_n\le k)\approx\Phi\negthinspace\left(\frac{k+\tfrac12-np}{\sqrt{np(1-p)}}\right)
