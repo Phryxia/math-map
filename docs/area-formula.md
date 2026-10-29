@@ -84,7 +84,7 @@ $$
 \int\_A J^\ast f(x)\thinspace dx=\int\_{\mathbb{R}^m}\mathcal{H}^{n-m}\bigl(A\cap f^{-1}(y)\bigr)\thinspace dy
 $$
 
-여기서 $J^\ast f(x)=\sqrt{\det\bigl(Df(x)Df(x)^{\mathsf{T}}\bigr)}$ 다. 차원이 내려가는 사상이라 원상이 점이 아니라 $n-m$ 차원 집합이고, 개수를 세는 자리에 그 집합의 Hausdorff 측도가 들어간다. $f$ 가 좌표사영이면 $J^\ast f=1$ 이고 이 식이 Fubini 정리다.
+여기서 $J^\ast f(x)=\sqrt{\det\bigl(Df(x)Df(x)^{\mathsf{T}}\bigr)}$ 다. 차원이 내려가는 사상이라 원상이 점이 아니라 $n-m$ 차원 집합이고, 개수를 세는 자리에 그 집합의 Hausdorff 측도가 들어간다. $f$ 가 좌표사영이면 $J^\ast f=1$ 이고 이 식이 [Fubini 정리](fubini-tonelli.md)다.
 
 # 활용
 

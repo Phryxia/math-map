@@ -121,7 +121,7 @@ $$
 
 분포 극한을 증명하는 논증은 대개 두 단계다.
 
-1. **Tightness.** 족이 tight 함을 보여 수렴 부분열의 존재를 확보한다. 보통 $\sup_n\mathbb E[|X_n|^p]\lt\infty$ 같은 적률 유계에 Markov 부등식을 써서 얻는다.
+1. **Tightness.** 족이 tight 함을 보여 수렴 부분열의 존재를 확보한다. 보통 $\sup_n\mathbb E[|X_n|^p]\lt\infty$ 같은 적률 유계에 [Markov 부등식](concentration-inequalities.md)을 써서 얻는다.
 2. **극한의 유일성.** 모든 수렴 부분열이 같은 극한을 가짐을 보인다. 특성함수나 적률로 극한을 식별한다.
 
 두 단계가 맞물리면 수열 전체가 수렴한다. 중심극한정리는 2 단계를 Lévy 연속성 정리로 처리해 1 단계를 생략할 수 있는 경우다. [Brown 운동](brownian-motion.md)의 구성에서 나오는 [Donsker 불변원리](donsker-invariance-principle.md)는 같은 구조를 함수공간 $C[0,1]$ 위에서 돌린 것으로, 거기서는 tightness 확인이 논증의 대부분을 차지한다.

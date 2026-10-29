@@ -36,7 +36,7 @@ $$
 d_g(\lambda)=\vert\lbrace x:\vert g(x)\vert\gt \lambda\rbrace\vert\qquad(\lambda\gt 0)
 $$
 
-$0\lt p\lt\infty$ 에서 $\Vert g\Vert\_{L^p}^p=p\int_0^\infty\lambda^{p-1}d_g(\lambda)\thinspace d\lambda$ 가 성립한다. Fubini 정리를 $\vert g(x)\vert^p=p\int_0^{\vert g(x)\vert}\lambda^{p-1}d\lambda$ 에 적용해 적분 순서를 바꾸면 나온다.
+$0\lt p\lt\infty$ 에서 $\Vert g\Vert\_{L^p}^p=p\int_0^\infty\lambda^{p-1}d_g(\lambda)\thinspace d\lambda$ 가 성립한다. [Fubini 정리](fubini-tonelli.md)를 $\vert g(x)\vert^p=p\int_0^{\vert g(x)\vert}\lambda^{p-1}d\lambda$ 에 적용해 적분 순서를 바꾸면 나온다.
 
 ## 약한 유형
 

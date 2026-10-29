@@ -115,7 +115,7 @@ $$
 
 ## Markov 와 Chebyshev 부등식
 
-음이 아닌 확률변수 $Z$ 와 $a\gt 0$ 에 대해, 지시함수 부등식 $a\cdot\mathbf 1\lbrace Z\ge a\rbrace\le Z$ 의 양변에 기댓값을 취하면 Markov 부등식을 얻는다. $Z$ 를 $(X-\mathbb E X)^2$ 으로 잡으면 Chebyshev 부등식이 나온다.
+음이 아닌 확률변수 $Z$ 와 $a\gt 0$ 에 대해, 지시함수 부등식 $a\cdot\mathbf 1\lbrace Z\ge a\rbrace\le Z$ 의 양변에 기댓값을 취하면 [Markov 부등식](concentration-inequalities.md)을 얻는다. $Z$ 를 $(X-\mathbb E X)^2$ 으로 잡으면 Chebyshev 부등식이 나온다.
 
 $$
 P(Z\ge a)\le \frac{\mathbb E[Z]}{a},

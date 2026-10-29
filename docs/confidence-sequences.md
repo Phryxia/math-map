@@ -42,7 +42,7 @@ $$
 
 증명의 요지. $\tau=\inf\lbrace n:M_n\ge 1/\alpha\rbrace$ 로 둔다. 정지된 과정도 supermartingale 이므로 $E\lbrack M_{\tau\wedge N}\rbrack\le 1$ 이고, $M\ge 0$ 이므로 $E\lbrack M_{\tau\wedge N}\rbrack\ge P(\tau\le N)/\alpha$ 다. $N\to\infty$ 로 보낸다. $\square$
 
-고정된 $n$ 하나에서의 Markov 부등식 $P(M_n\ge 1/\alpha)\le\alpha$ 가 모든 $n$ 에서 동시에 성립한다는 진술이다.
+고정된 $n$ 하나에서의 [Markov 부등식](concentration-inequalities.md) $P(M_n\ge 1/\alpha)\le\alpha$ 가 모든 $n$ 에서 동시에 성립한다는 진술이다.
 
 ## 혼합법
 

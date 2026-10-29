@@ -61,7 +61,7 @@ $$
 \Pr\bigl\lbrack\hat f(a)\gt f(a)+\varepsilon N\bigr\rbrack\le\delta
 $$
 
-증명의 요지. 행 $j$ 의 값은 $C\lbrack j,h\_j(a)\rbrack=f(a)+Y\_j$ 이고, $Y\_j$ 는 $h\_j(b)=h\_j(a)$ 인 $b\ne a$ 의 빈도의 합이므로 $0$ 이상이다. 범용성으로 $\mathbb E\lbrack Y\_j\rbrack\le N/w\le\varepsilon N/e$ 이고, [확률변수](random-variables.md)의 Markov 부등식(Markov's inequality)으로 $\Pr\lbrack Y\_j\gt\varepsilon N\rbrack\le 1/e$ 다. 행들의 함수가 독립이므로 모든 행에서 $Y\_j\gt\varepsilon N$ 일 확률은 $e^{-d}\le\delta$ 다.
+증명의 요지. 행 $j$ 의 값은 $C\lbrack j,h\_j(a)\rbrack=f(a)+Y\_j$ 이고, $Y\_j$ 는 $h\_j(b)=h\_j(a)$ 인 $b\ne a$ 의 빈도의 합이므로 $0$ 이상이다. 범용성으로 $\mathbb E\lbrack Y\_j\rbrack\le N/w\le\varepsilon N/e$ 이고, [확률변수](random-variables.md)의 [Markov 부등식](concentration-inequalities.md)(Markov's inequality)으로 $\Pr\lbrack Y\_j\gt\varepsilon N\rbrack\le 1/e$ 다. 행들의 함수가 독립이므로 모든 행에서 $Y\_j\gt\varepsilon N$ 일 확률은 $e^{-d}\le\delta$ 다.
 
 ## 공간과 시간
 

@@ -52,7 +52,7 @@ $\mu(Ag)=\mu(A)$ 를 만족하는 것은 **우 Haar 측도**다. 좌불변이면
 
 존재의 요지는 콤팩트 집합을 작은 열린집합의 평행이동으로 덮는 개수를 재는 것이다. 콤팩트 $K$ 와 공집합이 아닌 열린 $U$ 에 대해 $K$ 를 덮는 데 필요한 $U$ 의 좌평행이동의 최소 개수를 $(K:U)$ 라 하면, 기준 콤팩트 집합 $K\_0$ 을 하나 고정한 비 $(K:U)/(K\_0:U)$ 가 $U$ 를 항등원 쪽으로 줄일 때 갖는 극한값이 $\mu(K)$ 다. 각 $U$ 마다 이 비는 $(K:U)/(K\_0:U)\le(K:K\_0)$ 로 유계이고 좌평행이동에 불변이므로, 유계 구간의 곱공간에서 [Tychonoff 정리](tychonoff-theorem.md)로 극한을 하나 잡는다.
 
-유일성의 요지는 좌 Haar 측도 $\mu$ , $\nu$ 에 대해 Fubini 정리로 $\int f\thinspace d\mu\cdot\int g\thinspace d\nu$ 를 두 순서로 계산하는 것이다. 두 값이 같다는 데서 비 $\int f\thinspace d\mu/\int f\thinspace d\nu$ 가 $f$ 에 의존하지 않는 상수임이 나온다.
+유일성의 요지는 좌 Haar 측도 $\mu$ , $\nu$ 에 대해 [Fubini 정리](fubini-tonelli.md)로 $\int f\thinspace d\mu\cdot\int g\thinspace d\nu$ 를 두 순서로 계산하는 것이다. 두 값이 같다는 데서 비 $\int f\thinspace d\mu/\int f\thinspace d\nu$ 가 $f$ 에 의존하지 않는 상수임이 나온다.
 
 ## 모듈러 함수
 

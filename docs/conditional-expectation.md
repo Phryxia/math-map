@@ -173,7 +173,7 @@ $$
 E[X \mid Z = z] \thickspace=\thickspace \frac{\int x \thinspace f(x, z) \thinspace dx}{\int f(x, z) \thinspace dx}
 $$
 
-로 계산한다. 이 표현이 정당한 이유는 우변이 $Z$ 의 Borel 함수이고 Fubini 정리로 부분적분 등식을 만족하기 때문이며, 분모가 0 인 $z$ 들의 집합은 $Z$ 의 분포에 대해 영집합이다. 조건이 영확률 사건이라는 사실과 무관하게 정의가 작동한다는 점이 측도론적 정의의 실질적인 이득이다.
+로 계산한다. 이 표현이 정당한 이유는 우변이 $Z$ 의 Borel 함수이고 [Fubini 정리](fubini-tonelli.md)로 부분적분 등식을 만족하기 때문이며, 분모가 0 인 $z$ 들의 집합은 $Z$ 의 분포에 대해 영집합이다. 조건이 영확률 사건이라는 사실과 무관하게 정의가 작동한다는 점이 측도론적 정의의 실질적인 이득이다.
 
 [^1]: Rick Durrett, Probability: Theory and Examples (5th ed.), Chapter 4, https://sites.math.duke.edu/~rtd/PTE/PTE5_011119.pdf
 [^2]: Russell Lyons and Yuval Peres, Probability on Trees and Networks, https://rdlyons.pages.iu.edu/prbtree/book.pdf

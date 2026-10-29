@@ -70,7 +70,7 @@ $$
 | --- | --- | --- |
 | 거의 확실한 수렴 | 확률수렴 | [Egorov 정리](egorov-theorem.md)나 아래 증명 |
 | $L^q$ 수렴 | $L^p$ 수렴 | [Jensen 부등식](jensen-inequality.md) |
-| $L^p$ 수렴 | 확률수렴 | Markov 부등식 |
+| $L^p$ 수렴 | 확률수렴 | [Markov 부등식](concentration-inequalities.md) |
 | 확률수렴 | 분포수렴 | 아래 증명 |
 | 상수 $c$ 로의 분포수렴 | $c$ 로의 확률수렴 | 아래 증명 |
 

@@ -6,7 +6,7 @@
 
 # 직관
 
-e-값은 귀무가설 아래에서 기댓값이 $1$ 이하인 음이 아닌 통계량의 값이다. Markov 부등식으로 $E\ge 1/\alpha$ 일 때 귀무가설을 기각하는 검정의 1 종 오류율이 $\alpha$ 이하다.
+e-값은 귀무가설 아래에서 기댓값이 $1$ 이하인 음이 아닌 통계량의 값이다. [Markov 부등식](concentration-inequalities.md)으로 $E\ge 1/\alpha$ 일 때 귀무가설을 기각하는 검정의 1 종 오류율이 $\alpha$ 이하다.
 
 [가설검정](hypothesis-testing.md)의 p-값과 달리 e-값은 곱하고 평균해도 e-값이다. 독립인 실험의 결과를 곱해 합치고, 자료를 보면서 실험을 이어 가도 오류율이 유지된다. e-값을 시간에 따라 곱해 만든 과정이 [신뢰열](confidence-sequences.md)의 Ville 부등식이 다루는 음이 아닌 supermartingale 이다.
 

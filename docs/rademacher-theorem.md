@@ -38,7 +38,7 @@ $U\subset\mathbb R^n$ 을 열린집합, $f:U\to\mathbb R^m$ 을 Lipschitz 사상
 
 ## 증명의 요지
 
-방향 $v\in\mathbb R^n$ 을 $\lVert v\rVert=1$ 로 고정한다. 각 직선 위에서 $t\mapsto f(x+tv)$ 가 한 변수 Lipschitz 함수이므로 직관 절의 계산으로 거의 모든 $t$ 에서 미분가능하다. Fubini 정리를 직선의 다발에 적용하면 방향미분
+방향 $v\in\mathbb R^n$ 을 $\lVert v\rVert=1$ 로 고정한다. 각 직선 위에서 $t\mapsto f(x+tv)$ 가 한 변수 Lipschitz 함수이므로 직관 절의 계산으로 거의 모든 $t$ 에서 미분가능하다. [Fubini 정리](fubini-tonelli.md)를 직선의 다발에 적용하면 방향미분
 
 $$
 D_vf(x)=\lim_{t\to0}\frac{f(x+tv)-f(x)}{t}

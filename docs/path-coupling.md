@@ -50,7 +50,7 @@ $$
 > $$
 > 이다.
 
-정리의 결합을 매 걸음 다시 쓰면 $\mathbb E\lbrack\rho(X_t,Y_t)\rbrack\le(1-\alpha)^t\rho(x,y)$ 이다. $x\ne y$ 이면 $\rho\ge 1$ 이므로 Markov 부등식(Markov's inequality)으로 $\Pr\lbrack X_t\ne Y_t\rbrack\le\mathbb E\lbrack\rho(X_t,Y_t)\rbrack$ 이고, 혼합시간 문서의 결합 상한에 넣는다. $(1-\alpha)^t\le e^{-\alpha t}$ 에서 둘째 식이 나온다.
+정리의 결합을 매 걸음 다시 쓰면 $\mathbb E\lbrack\rho(X_t,Y_t)\rbrack\le(1-\alpha)^t\rho(x,y)$ 이다. $x\ne y$ 이면 $\rho\ge 1$ 이므로 [Markov 부등식](concentration-inequalities.md)(Markov's inequality)으로 $\Pr\lbrack X_t\ne Y_t\rbrack\le\mathbb E\lbrack\rho(X_t,Y_t)\rbrack$ 이고, 혼합시간 문서의 결합 상한에 넣는다. $(1-\alpha)^t\le e^{-\alpha t}$ 에서 둘째 식이 나온다.
 
 색칠의 예에서 $\mathrm{diam}=n$, $\alpha=(q-2\Delta)/(qn)$ 이므로 $q\gt 2\Delta$ 이면
 
