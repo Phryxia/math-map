@@ -18,7 +18,7 @@ Burnside 는 지표표로 비가환 단순군에는 $\lbrace 1\rbrace$ 이 아�
 
 $G$ 를 유한군, $\chi_1,\dots,\chi_r$ 을 기약지표, $\chi_1$ 을 자명지표라 한다. $g\in G$ 의 **중심화군(centralizer)** 은 $C_G(g)=\lbrace x\in G: xg=gx\rbrace$ 이고, $g$ 의 켤레류 $K$ 의 크기는 $\vert K\vert=\lbrack G:C_G(g)\rbrack$ 다.
 
-복소수 $\alpha$ 가 최고차항 계수가 $1$ 인 정수계수 다항식의 근이면 **대수적 정수(algebraic integer)** 라 한다. 대수적 정수 전체는 환을 이루고, 대수적 정수인 유리수는 정수뿐이다.
+[복소수](complex-numbers.md) $\alpha$ 가 최고차항 계수가 $1$ 인 정수계수 다항식의 근이면 **대수적 정수(algebraic integer)** 라 한다. 대수적 정수 전체는 환을 이루고, 대수적 정수인 유리수는 정수뿐이다.
 
 정리의 진술은 다음과 같다[^1].
 

@@ -20,7 +20,7 @@ $$
 
 $\zeta_n$ 이 하던 일을 $j$ 와 비틀림점이 한다. Kronecker 가 "청춘의 꿈"(Jugendtraum)이라 부른 그림이고, Hilbert 의 열두 번째 문제는 이를 일반 수체로 확장하라는 요구다. 허수이차체 바깥에서는 아벨확대를 생성하는 함수가 알려져 있지 않다[^2].
 
-격자 $\Lambda=\mathbb Z+\mathbb Z\tau\subset\mathbb C$ 를 자기 안으로 보내는 복소수를 찾는다. $\alpha\Lambda\subseteq\Lambda$ 이면 $\alpha$ 가 $\mathbb C/\Lambda$ 의 자기준동형이다. $\alpha\cdot1=a+b\tau$ 와 $\alpha\cdot\tau=c+d\tau$ 를 정수로 쓰면 $\alpha$ 는 정수 행렬 $\begin{pmatrix}a&c\cr b&d\end{pmatrix}$ 의 고윳값이므로 이차 대수적 정수다.
+격자 $\Lambda=\mathbb Z+\mathbb Z\tau\subset\mathbb C$ 를 자기 안으로 보내는 [복소수](complex-numbers.md)를 찾는다. $\alpha\Lambda\subseteq\Lambda$ 이면 $\alpha$ 가 $\mathbb C/\Lambda$ 의 자기준동형이다. $\alpha\cdot1=a+b\tau$ 와 $\alpha\cdot\tau=c+d\tau$ 를 정수로 쓰면 $\alpha$ 는 정수 행렬 $\begin{pmatrix}a&c\cr b&d\end{pmatrix}$ 의 고윳값이므로 이차 대수적 정수다.
 
 $\alpha\notin\mathbb Z$ 인 것이 하나라도 있으려면 $\tau$ 가 이차무리수여야 한다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-**Ax–Grothendieck 정리(Ax–Grothendieck theorem)** 는 복소 아핀 공간에서 자기 자신으로 가는 단사인 다항식 사상이 전사라는 정리다. $\mathbb C^n$ 은 무한집합이라, 유한집합에서 단사이면 전사라는 비둘기집 논증이 직접 쓰이지 않는다. 증명은 같은 진술을 유한체에서 확인한 뒤 [모형론](model-theory.md)의 이전 원리로 복소수까지 옮긴다.
+**Ax–Grothendieck 정리(Ax–Grothendieck theorem)** 는 복소 아핀 공간에서 자기 자신으로 가는 단사인 다항식 사상이 전사라는 정리다. $\mathbb C^n$ 은 무한집합이라, 유한집합에서 단사이면 전사라는 비둘기집 논증이 직접 쓰이지 않는다. 증명은 같은 진술을 유한체에서 확인한 뒤 [모형론](model-theory.md)의 이전 원리로 [복소수](complex-numbers.md)까지 옮긴다.
 
 # 직관
 

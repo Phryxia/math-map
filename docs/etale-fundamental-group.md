@@ -10,7 +10,7 @@
 
 수체 위의 다양체에서는 기하적 기본군과 Galois 군이 하나의 완전열로 묶이고, 유리점이 그 열의 절을 준다. 유리점을 군론의 대상으로 바꾸는 이 대응이 [Chabauty–Kim 방법](chabauty-kim.md)과 절 추측의 출발이다.
 
-유한체 위의 곡선에 기본군을 주려고 한다. 위상 기본군은 공간 안에 원을 그려 놓고 한 점으로 줄일 수 있는지 묻는 것인데, Zariski 위상에서 열린집합은 유한 개의 점을 뺀 것이고 비어 있지 않은 두 열린집합이 반드시 만나므로 원을 그려 넣을 자리가 없다. 루프를 쓰지 않고 같은 군이 나오는지 복소수 쪽에서 확인한다. $\mathbb C^{\times}$ 의 연결 [덮개공간](covering-spaces.md)은 $z\mapsto z^n$ 뿐이고 $n$ 번째 덮개의 자기동형군은 $\mu_n\cong\mathbb Z/n$ 이며, $n\mid m$ 일 때 $\mathbb Z/m\to\mathbb Z/n$ 이 따라온다. 이 역계의 극한이 $\hat{\mathbb Z}=\varprojlim\mathbb Z/n$ 이고, 위상 기본군 $\mathbb Z$ 의 유한위상 완비화가 덮개의 자기동형군만 세어 나왔다.
+유한체 위의 곡선에 기본군을 주려고 한다. 위상 기본군은 공간 안에 원을 그려 놓고 한 점으로 줄일 수 있는지 묻는 것인데, Zariski 위상에서 열린집합은 유한 개의 점을 뺀 것이고 비어 있지 않은 두 열린집합이 반드시 만나므로 원을 그려 넣을 자리가 없다. 루프를 쓰지 않고 같은 군이 나오는지 [복소수](complex-numbers.md) 쪽에서 확인한다. $\mathbb C^{\times}$ 의 연결 [덮개공간](covering-spaces.md)은 $z\mapsto z^n$ 뿐이고 $n$ 번째 덮개의 자기동형군은 $\mu_n\cong\mathbb Z/n$ 이며, $n\mid m$ 일 때 $\mathbb Z/m\to\mathbb Z/n$ 이 따라온다. 이 역계의 극한이 $\hat{\mathbb Z}=\varprojlim\mathbb Z/n$ 이고, 위상 기본군 $\mathbb Z$ 의 유한위상 완비화가 덮개의 자기동형군만 세어 나왔다.
 
 덮개 $z\mapsto z^n$ 은 환 사상 $k\lbrack t,t^{-1}\rbrack\to k\lbrack u,u^{-1}\rbrack$ , $t\mapsto u^n$ 이다. 위상을 쓰지 않고 이 사상만으로 덮개임을 판정하려면 각 점 위의 섬유가 $n$ 개로 갈라져야 하고, 그 조건이 미분 $nu^{n-1}$ 의 가역성이다. 표수가 $0$ 이면 모든 $n$ 에서 성립해 위의 계산이 그대로 재현되고, 표수 $p$ 에서는 $p\mid n$ 일 때 $nu^{n-1}=0$ 이라 조건이 깨진다. 대신 미분이 $py^{p-1}-1=-1$ 인 $y^p-y=t$ 처럼 표수 $p$ 에서만 조건을 통과하는 덮개가 새로 생긴다.
 

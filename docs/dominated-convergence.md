@@ -30,7 +30,7 @@ $$
 \lim_{n\to\infty}\int_X f_n\thinspace d\mu=\int_X f\thinspace d\mu
 $$
 
-가 성립한다. 복소수값 함수에는 실수부와 허수부에 나누어 적용한다.
+가 성립한다. [복소수](complex-numbers.md)값 함수에는 실수부와 허수부에 나누어 적용한다.
 
 # 성질
 

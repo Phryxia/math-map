@@ -60,7 +60,7 @@ $g\ge 2$ 에서 종수 $g$ 곡선의 모듈라이 스택 $\mathcal M\_g$ 는 매
 
 - [곡선의 모듈라이 공간](moduli-of-curves.md)의 Deligne–Mumford 콤팩트화는 스택 $\overline{\mathcal M}\_g$ 의 조대 모듈라이 공간이다. Deligne 과 Mumford 는 $\overline{\mathcal M}\_g$ 위에서 $\mathcal M\_g$ 가 기약임을 증명했다[^2].
 - [Gromov–Witten 불변량](gromov-witten-invariants.md)은 안정 사상의 모듈라이 스택 위에서 적분해 정의한다. 자기동형이 있는 점에서 적분값이 유리수가 된다.
-- [모듈러 곡선](modular-curves.md)은 복소수 위에서 몫 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 이고, 스택으로는 $\mathcal M\_{1,1}$ 의 해석적 판 $\lbrack\mathbb H/\mathrm{SL}\_2(\mathbb Z)\rbrack$ 이다.
+- [모듈러 곡선](modular-curves.md)은 [복소수](complex-numbers.md) 위에서 몫 $\mathrm{SL}\_2(\mathbb Z)\backslash\mathbb H$ 이고, 스택으로는 $\mathcal M\_{1,1}$ 의 해석적 판 $\lbrack\mathbb H/\mathrm{SL}\_2(\mathbb Z)\rbrack$ 이다.
 
 [^1]: M. Artin, Versal deformations and algebraic stacks, *Invent. Math.* 27 (1974), 165–189.
 [^2]: P. Deligne, D. Mumford, The irreducibility of the space of curves of given genus, *Publ. Math. IHÉS* 36 (1969), 75–109.

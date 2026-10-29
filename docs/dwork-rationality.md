@@ -37,7 +37,7 @@ $$
 
 가 되고, 기하 문제가 $\sum_x\psi(\mathrm{Tr}\thinspace f(x))$ 꼴의 지수합 하나로 바뀐다. Gauss 합은 $f(x)=ax$ 에 곱셈 지표를 곁들인 사례이고 [Kloosterman 합](kloosterman-sums.md)은 $f(x)=ax+b/x$ 다.
 
-여기서 막히는 것은 $\psi$ 가 유한군 위의 함수라 미분도 급수전개도 없다는 점이다. 복소수 쪽에서 $\psi$ 의 값 $e^{2\pi ik/p}$ 는 단위원 위에 흩어진 점일 뿐이다. $p$ 진 쪽에서는 $\pi^{p-1}=-p$ 인 $\pi$ 를 잡아 $\exp(\pi x)$ 로 $\psi$ 를 실현할 수 있을 것 같지만, $p$ 진 지수함수가 $\mathrm{ord}\_p(x)\gt\frac1{p-1}$ 에서만 수렴해 절댓값이 정확히 $1$ 인 Teichmüller 대표원을 넣을 수 없다. 이 벽을 넘는 급수가 Dwork 의 분해함수다.
+여기서 막히는 것은 $\psi$ 가 유한군 위의 함수라 미분도 급수전개도 없다는 점이다. [복소수](complex-numbers.md) 쪽에서 $\psi$ 의 값 $e^{2\pi ik/p}$ 는 단위원 위에 흩어진 점일 뿐이다. $p$ 진 쪽에서는 $\pi^{p-1}=-p$ 인 $\pi$ 를 잡아 $\exp(\pi x)$ 로 $\psi$ 를 실현할 수 있을 것 같지만, $p$ 진 지수함수가 $\mathrm{ord}\_p(x)\gt\frac1{p-1}$ 에서만 수렴해 절댓값이 정확히 $1$ 인 Teichmüller 대표원을 넣을 수 없다. 이 벽을 넘는 급수가 Dwork 의 분해함수다.
 
 # 정의
 
