@@ -97,7 +97,7 @@ $$
 
 ## 확률과 동역학
 
-[Markov 연쇄](markov-chains.md)의 전이행렬은 고윳값 1 과 그에 대응하는 정상분포를 갖는다. 두 번째로 큰 고윳값의 절댓값이 수렴 속도를 지배한다. 연속시간에서는 [상미분방정식](ordinary-differential-equations.md) 선형계의 해가 고윳값의 지수함수로 분해되고, 실부의 부호가 안정성을 결정한다.
+[Markov 연쇄](markov-chains.md)의 전이행렬은 고윳값 1 과 그에 대응하는 정상분포를 갖는다. 두 번째로 큰 고윳값의 절댓값이 수렴 속도를 지배한다. 연속시간에서는 [상미분방정식](ordinary-differential-equations.md) 선형계의 해가 고윳값의 [지수함수](exponential-function.md)로 분해되고, 실부의 부호가 안정성을 결정한다.
 
 $$
 x'=Ax\ \Longrightarrow\ x(t)=\sum_i c_i e^{\lambda_i t}v_i
