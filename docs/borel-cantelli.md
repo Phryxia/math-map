@@ -66,7 +66,7 @@ $$
 
 # 활용
 
-- **강대수법칙.** [대수법칙](law-of-large-numbers.md)의 거의 확실한 수렴을 증명할 때 Chebyshev 부등식으로 각 사건의 확률을 재고 첫째 보조정리로 예외 사건을 지운다.
+- **강대수법칙.** [대수법칙](law-of-large-numbers.md)의 거의 확실한 수렴을 증명할 때 [Chebyshev 부등식](concentration-inequalities.md)으로 각 사건의 확률을 재고 첫째 보조정리로 예외 사건을 지운다.
 - **무작위 모형의 극값.** [Cramér 추측](cramer-conjecture.md)의 모형에서 간격의 상극한이 $(\log n)^2$ 임을 두 보조정리로 양쪽에서 조인다.
 - **연분수 계수의 크기.** 거의 모든 [실수](real-numbers.md)에서 연분수 계수가 어떤 속도보다 크게 되는 일이 유한 번인지 무한 번인지를 첫째 보조정리와 Gauss 측도로 가른다.
 - **무작위 그래프의 성질.** [Erdős–Rényi 그래프](erdos-renyi-graphs.md)에서 부분구조가 나타나는 사건의 확률을 더해 문턱을 넘으면 거의 확실하게 나타남을 얻는다.

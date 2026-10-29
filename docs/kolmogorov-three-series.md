@@ -26,7 +26,7 @@ $$
 P\Bigl(\max_{1\le k\le n}\lvert S_k\rvert\ge\lambda\Bigr)\le\frac{\mathrm{Var}(S_n)}{\lambda^2}
 $$
 
-이다. 우변은 Chebyshev 부등식이 $\lvert S_n\rvert$ 하나에 주는 상한과 같다.
+이다. 우변은 [Chebyshev 부등식](concentration-inequalities.md)이 $\lvert S_n\rvert$ 하나에 주는 상한과 같다.
 
 ## 세 급수 정리
 

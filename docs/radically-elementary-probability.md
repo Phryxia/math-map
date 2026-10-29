@@ -43,7 +43,7 @@ $$
 
 $x_1,\dots,x_\nu$ 가 독립이고 기댓값이 $0$ 이며 분산의 평균이 제한적이면, 평균 $\bar x$ 는 거의 모든 $\omega$ 에서 무한소다.
 
-증명의 요지. $E\thinspace\bar x^2=\nu^{-2}\sum\mathrm{Var}(x_i)$ 가 무한소이므로 Chebyshev 부등식이 $\mathrm{Pr}(\vert\bar x\vert\ge\varepsilon)$ 를 무한소로 만든다. 표준 실수 $\varepsilon$ 마다 이것이 성립하므로 무한소 사건 밖에서 $\bar x\simeq 0$ 이다.
+증명의 요지. $E\thinspace\bar x^2=\nu^{-2}\sum\mathrm{Var}(x_i)$ 가 무한소이므로 [Chebyshev 부등식](concentration-inequalities.md)이 $\mathrm{Pr}(\vert\bar x\vert\ge\varepsilon)$ 를 무한소로 만든다. 표준 실수 $\varepsilon$ 마다 이것이 성립하므로 무한소 사건 밖에서 $\bar x\simeq 0$ 이다.
 
 ## Brown 운동의 존재
 
