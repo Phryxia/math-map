@@ -20,7 +20,7 @@ $$
 
 ## 첨가행렬과 기본 행 연산
 
-$m$ 개 식과 $n$ 개 미지수의 연립일차방정식 $Ax=b$ 에서 $A$ 의 오른쪽에 열 $b$ 를 붙인 $m\times(n+1)$ 행렬 $(A\mid b)$ 를 **첨가행렬(augmented matrix)** 이라 한다. 다음 세 연산을 **기본 행 연산(elementary row operation)** 이라 한다.
+$m$ 개 식과 $n$ 개 미지수의 연립일차방정식 $Ax=b$ 에서 $A$ 의 오른쪽에 열 $b$ 를 붙인 $m\times(n+1)$ [행렬](matrices.md) $(A\mid b)$ 를 **첨가행렬(augmented matrix)** 이라 한다. 다음 세 연산을 **기본 행 연산(elementary row operation)** 이라 한다.
 
 - 두 행을 바꾼다.
 - 한 행에 $0$ 이 아닌 수를 곱한다.
@@ -103,7 +103,7 @@ $n\times n$ 계에서 $k$ 번째 피벗 아래를 지우는 데 곱셈이 약 $(
 
 ## 선수지식
 
-- [선형사상](linear-maps.md)
+- [행렬](matrices.md)
 
 ## 더 알아보기
 
