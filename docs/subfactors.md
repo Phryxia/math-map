@@ -2,7 +2,7 @@
 
 # 개요
 
-**부분인자(subfactor)** 는 $\mathrm{II}\_1$ 형 인자 $M$ 과 그 부분대수이면서 자신도 인자인 $N$ 의 쌍 $N\subseteq M$ 이다. 이 쌍에 $M$ 이 $N$ 보다 몇 배 큰지를 재는 실수 $\lbrack M:N\rbrack$ 이 정의되고 이를 Jones 지표(Jones index)라 한다. Jones 지표 정리는 이 값이 $\lbrace 4\cos^2(\pi/n)\mid n\ge 3\rbrace\cup\lbrack 4,\infty\rbrack$ 에만 있다고 진술한다.
+**부분인자(subfactor)** 는 $\mathrm{II}\_1$ 형 인자 $M$ 과 그 부분대수이면서 자신도 인자인 $N$ 의 쌍 $N\subseteq M$ 이다. 행렬 대수 $M_k(\mathbb C)$ 는 스칼라 행렬 전체의 $k^2$ 배 크기라고 차원의 비로 말할 수 있지만, 무한차원 대수끼리는 차원의 비가 $\infty/\infty$ 여서 이렇게 잴 수 없다. 큰 대수를 작은 대수 위의 공간으로 보고 추적으로 그 크기를 재면 비가 실수 하나로 나오고, 그 값은 $4$ 보다 작은 쪽에서 띄엄띄엄한 수만 될 수 있다.
 
 # 직관
 
@@ -13,6 +13,8 @@
 $M$ 에 내적 $\langle x,y\rangle=\tau(y^\ast x)$ 를 주고 완비화하면 [Hilbert 공간](hilbert-spaces.md) $L^2(M)$ 이 나온다. $N$ 은 이 공간에 왼쪽 곱으로 작용한다. 행렬의 예에서 $M_k(\mathbb C)$ 를 $\mathbb C$ 위의 공간으로 보면 차원이 $k^2$ 이었듯, $L^2(M)$ 을 $N$ 위의 공간으로 보고 $N$ 의 추적으로 그 "차원" 을 재면 비가 하나의 수로 나온다.
 
 $N$ 을 $M=M_k(N)$ 에 대각으로 넣으면 $L^2(M)$ 은 $L^2(N)$ 을 $k^2$ 개 붙인 것이고 그 수는 $k^2$ 이다. 이 수가 Jones 지표이고, 정수가 아닌 값도 나온다.
+
+이 실수 $\lbrack M:N\rbrack$ 을 Jones 지표(Jones index)라 한다. Jones 지표 정리는 이 값이 $\lbrace 4\cos^2(\pi/n)\mid n\ge 3\rbrace\cup\lbrack 4,\infty\rbrack$ 에만 있다고 진술한다.
 
 # 정의
 
