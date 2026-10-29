@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-29T05:01:22.231Z",
-  "nextSeq": 2558,
+  "savedAt": "2026-10-29T09:05:46.869Z",
+  "nextSeq": 2565,
   "items": [
     {
       "id": "9bab7237",
@@ -498,6 +498,30 @@
       "note": "446c09e0 의 후속. 2026-10-29 회차에 남은 후보 33 개(bloch-group 부터 virtual-species 까지), farkas-lemma, cheeger-inequality, szemeredi-regularity-lemma, differential-forms 와 개관 19 개(graph-theory-overview, linear-algebra-overview 를 뺀 전부)의 개요를 고쳐 446c09e0 을 닫았다. 전수 훑기 기준은 두 가지였다. 개요의 링크와 이름 붙은 정리가 넷 이상(제목 정리 이름이 세어져 대부분 오탐), 개요의 \"다.\" 문장이 둘 이하(예와 방법 문장이 없는 문서). 두 기준에 걸린 것은 모두 처리했다. 이 두 기준으로 잡히지 않는 위반(문장은 셋인데 예가 손으로 그릴 수 없는 것, 정리 이름을 문장 속에 늘어놓은 것)은 남아 있을 수 있으므로 문서를 보강할 때 개요를 같이 본다. 개관의 다른 개관이나 비회원 문서를 가리키는 문장은 갈래 첫 문단에 두면 9절 갈래 순서 검사가 그 문서의 조상을 뒤에서 잡을 수 있다. 개관을 가리키는 문장은 갈래 첫 문단에 두어도 통과했고(조상이 sets 뿐), 일반 문서를 가리키는 문장은 개요 둘째 문단이나 갈래 절 끝으로 옮겨 검사를 통과시켰다.",
       "createdAt": "2026-10-29T01:04:48.041Z",
       "seq": 2553
+    },
+    {
+      "id": "1d1995a1",
+      "title": "복소수 문서로 가는 역방향 본문 링크",
+      "priority": 50,
+      "note": "complex-numbers 를 2026-10-29 회차에 만들고 holomorphic-functions, fields, complex-analysis-overview 와 conformal-mapping, division-algebras, eigenvalues, elliptic-functions, fourier, gamma-function, gaussian-integers, group-representations, hilbert-spaces, inner-product-spaces, laplace-transform, residue-theorem, characteristic-functions, clifford-algebras, conjugacy-classes, dirichlet-series, euclidean-domains, hyperbolic-functions, ideals-quotient-rings, lie-algebras, mandelbrot-set, modules 의 첫 등장을 링크했다. 남은 문서는 grep -l '복소수' docs/*.md | xargs grep -L '(complex-numbers.md)' 로 찾는다(60 개 남짓). 제목이 한국어뿐이라 9절 미링크 검사가 잡지 못한다. 첫 등장이 수식, 헤딩, 표, 굵게 안이면 그 다음 본문 자리를 링크한다. 회차마다 10 개 안팎씩 처리한다.",
+      "createdAt": "2026-10-29T08:51:38.890Z",
+      "seq": 2561
+    },
+    {
+      "id": "d93072ea",
+      "title": "지수함수 문서로 가는 역방향 본문 링크",
+      "priority": 50,
+      "note": "exponential-function 을 2026-10-29 회차에 만들고 hyperbolic-functions, gronwall-inequality, transcendental-numbers, eigenvalues, inner-product-spaces, fourier, differential-galois-theory, o-minimality, bessel-functions, equidistribution 의 첫 등장을 링크했다. 남은 것은 grep -l '지수함수' docs/*.md | xargs grep -L '(exponential-function.md)' 로 찾는다(20 개 남짓). lie-groups 처럼 '행렬 지수함수' 만 나오는 문서는 지수사상이라는 다른 대상이라 판단이 필요하다.",
+      "createdAt": "2026-10-29T08:58:08.404Z",
+      "seq": 2563
+    },
+    {
+      "id": "10faad30",
+      "title": "개관 지도 mermaid 의 실제 간선 아닌 화살표 두 개",
+      "priority": 50,
+      "note": "2026-10-29 회차에 개관 지도의 화살표를 라벨->제목->id 로 바꿔 실제 간선과 대조했다. combinatorics-overview 의 root-systems -> weyl-character-formula 와 number-theory-overview 의 p-adic-numbers -> local-class-field-theory 가 그래프에 없는 간선이다. 4.5절은 지도가 실제 간선의 부분그래프여야 한다고 정한다. 화살표를 지우거나 실제 경로의 중간 문서를 넣어 고친다. 라벨이 문서 제목과 달라 대조되지 않은 것(Stokes 현상, Resurgence, Fermat–Euler 정리, Riemann zeta, Selmer 군, BSD 추측)은 짧게 줄인 라벨이라 따로 봐야 한다.",
+      "createdAt": "2026-10-29T09:05:09.877Z",
+      "seq": 2564
     },
     {
       "id": "08e59419",
@@ -3938,6 +3962,14 @@
       "note": "#graph_theory #algorithms #combinatorics. 부모 ear-decomposition. 그래프 개관 알고리즘과 최적화 갈래 귀 분해 아래 곁가지. 리프다. 후보: SPQR 나무와 3 연결 성분(Hopcroft–Tarjan), 강한 연결 성분의 Tarjan 알고리즘, 블록 그래프의 특징.",
       "createdAt": "2026-10-26T05:04:41.137Z",
       "seq": 2536
+    },
+    {
+      "id": "302565f0",
+      "title": "Euler–Mascheroni 상수",
+      "priority": 10,
+      "note": "abel-summation 의 '조화합의 점근식' 절과 euler-maclaurin 의 'Euler 상수' 절이 각자 정의한다. 문서로 세우면 abel-summation 의 자식 후보. 무리수성 미해결은 출처 각주가 필요하다. 먼저 두 절의 중복이 문서 하나로 설 만큼인지 판단한다.",
+      "createdAt": "2026-10-29T08:39:42.030Z",
+      "seq": 2558
     },
     {
       "id": "dfb3e493",
