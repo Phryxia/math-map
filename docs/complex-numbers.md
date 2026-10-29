@@ -50,7 +50,7 @@ $z\ne0$ 은 $r=\vert z\vert$ 와 양의 실수축에서 잰 각 $\theta$ 로 $z=
 
 **정리.** $z=r(\cos\theta+i\sin\theta)$, $w=s(\cos\varphi+i\sin\varphi)$ 이면 $zw=rs(\cos(\theta+\varphi)+i\sin(\theta+\varphi))$ 다.
 
-증명의 요지. 곱을 전개하면 실수부가 $\cos\theta\cos\varphi-\sin\theta\sin\varphi$, 허수부가 $\sin\theta\cos\varphi+\cos\theta\sin\varphi$ 이고, 삼각함수의 덧셈정리로 각각 $\cos(\theta+\varphi)$, $\sin(\theta+\varphi)$ 다.
+증명의 요지. 곱을 전개하면 실수부가 $\cos\theta\cos\varphi-\sin\theta\sin\varphi$, 허수부가 $\sin\theta\cos\varphi+\cos\theta\sin\varphi$ 이고, [삼각함수](trigonometric-functions.md)의 덧셈정리로 각각 $\cos(\theta+\varphi)$, $\sin(\theta+\varphi)$ 다.
 
 곱하면 절댓값은 곱해지고 편각은 더해진다. $i$ 를 곱하는 것은 원점을 중심으로 $90^\circ$ 돌리는 것이다.
 

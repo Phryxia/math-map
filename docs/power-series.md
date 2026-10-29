@@ -179,6 +179,7 @@ $$
 ### 급수로 정의되는 함수
 
 - [지수함수](exponential-function.md)
+- [삼각함수](trigonometric-functions.md)
 - [Bessel 함수](bessel-functions.md)
 - [Bernoulli 수](bernoulli-numbers.md)
 - [점근급수](asymptotic-series.md)

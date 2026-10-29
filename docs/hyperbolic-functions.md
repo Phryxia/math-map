@@ -2,7 +2,7 @@
 
 # 개요
 
-**쌍곡함수(hyperbolic function)** 는 [지수함수](exponential-function.md) $e^t$ 와 $e^{-t}$ 를 더하거나 빼서 반으로 나눈 함수 $\cosh t$, $\sinh t$ 와 그 비다. 두 기둥 사이에 매단 쇠사슬이 처지는 모양은 $\cosh$ 의 그래프이고, 포물선과 비슷해 보이지만 양 끝에서 더 가파르다. 점 $(\cosh t,\sinh t)$ 는 쌍곡선 $x^2-y^2=1$ 위를 움직여, 단위원 위를 도는 $(\cos t,\sin t)$ 와 같은 역할을 한다. 쌍곡함수는 이 대응으로 삼각함수의 항등식을 부호 하나만 바꾸어 그대로 쓴다.
+**쌍곡함수(hyperbolic function)** 는 [지수함수](exponential-function.md) $e^t$ 와 $e^{-t}$ 를 더하거나 빼서 반으로 나눈 함수 $\cosh t$, $\sinh t$ 와 그 비다. 두 기둥 사이에 매단 쇠사슬이 처지는 모양은 $\cosh$ 의 그래프이고, 포물선과 비슷해 보이지만 양 끝에서 더 가파르다. 점 $(\cosh t,\sinh t)$ 는 쌍곡선 $x^2-y^2=1$ 위를 움직여, 단위원 위를 도는 $(\cos t,\sin t)$ 와 같은 역할을 한다. 쌍곡함수는 이 대응으로 [삼각함수](trigonometric-functions.md)의 항등식을 부호 하나만 바꾸어 그대로 쓴다.
 
 # 직관
 
