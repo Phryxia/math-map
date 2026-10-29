@@ -4,13 +4,14 @@
 
 복소해석(complex analysis)은 복소수를 받아 복소수를 내는 함수 가운데 미분가능한 것을 다루는 분야다. 실수 적분 $\int_{-\infty}^{\infty}\frac{dx}{1+x^4}$ 를 원시함수로 구하면 로그와 역탄젠트가 섞인 긴 식을 거쳐야 한다. 적분 경로를 복소평면의 닫힌 곡선으로 바꾸면 적분값이 함숫값이 무한대로 가는 몇 개의 점에서 정해지는 수만으로 계산되어, 이런 적분이 대수 계산으로 풀린다.
 
-처음 읽는 사람은 [정칙함수](holomorphic-functions.md)에서 시작한다.
+처음 읽는 사람은 [복소수](complex-numbers.md)에서 시작한다.
 
 # 지도
 
 ```mermaid
 graph TD
-  DV["미분"] --> HF["정칙함수"]
+  CN["복소수"] --> HF["정칙함수"]
+  DV["미분"] --> HF
   FC["미적분학의 기본 정리"] --> HF
   PS["멱급수"] --> RT["유수 정리"]
   HF --> RT
@@ -42,8 +43,9 @@ graph TD
 
 ## 정칙함수와 조화함수
 
-먼저 읽을 것: [미분](derivative.md)(해석 개관). 시작 문서: [정칙함수](holomorphic-functions.md).
+먼저 읽을 것: [미분](derivative.md)(해석 개관). 시작 문서: [복소수](complex-numbers.md).
 
+- [복소수](complex-numbers.md): $i^2=-1$ 로 정한 실수 쌍의 체, 극형식과 Euler 공식, 거듭제곱근
 - [정칙함수](holomorphic-functions.md): Cauchy–Riemann 방정식, Goursat 논법, 적분 공식, Liouville 정리, 대수학의 기본정리
 - [조화함수](harmonic-functions.md): Laplace 방정식과 조화 켤레, 평균값 성질, 최대 원리, Poisson 적분 공식, Harnack 부등식
   - [Dirichlet 문제](dirichlet-problem.md): 경계값을 갖는 조화함수의 존재, Perron 구성과 장벽
@@ -110,6 +112,6 @@ graph TD
 
 ## 더 알아보기
 
-- [정칙함수](holomorphic-functions.md)
+- [복소수](complex-numbers.md)
 
 #complex_analysis #analysis #number_theory #overview
