@@ -26,7 +26,7 @@ $$
 
 는 $f$ 가 첨점에서 빠르게 죽으므로 수렴하고, 값은 경로의 호몰로지류에만 의존한다. 무한급수인 $f$ 를 다루는 대신 적분할 경로를 다루면 문제가 위상적 대상이 된다.
 
-경로는 유한 개로 쪼개진다. $\alpha$ 에서 $\beta$ 로 가는 경로를 연분수 수렴분을 따라 자르면 각 조각이 어떤 $g\in\mathrm{SL}\_2(\mathbb Z)$ 에 대해 $\lbrace g\cdot0,\thinspace g\cdot\infty\rbrace$ 꼴이고, $\Gamma_0(N)$ 작용으로 나누면 $g$ 는 잉여류로만 기억된다. 잉여류의 개수가 지표 $[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]$ 이므로 생성원이 유한하고, 관계식도 유한하다. 모듈러 기호 공간이 유한 연립일차방정식의 해공간이 되어 계산이 Gauss 소거가 된다.
+경로는 유한 개로 쪼개진다. $\alpha$ 에서 $\beta$ 로 가는 경로를 연분수 수렴분을 따라 자르면 각 조각이 어떤 $g\in\mathrm{SL}\_2(\mathbb Z)$ 에 대해 $\lbrace g\cdot0,\thinspace g\cdot\infty\rbrace$ 꼴이고, $\Gamma_0(N)$ 작용으로 나누면 $g$ 는 잉여류로만 기억된다. 잉여류의 개수가 지표 $[\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)]$ 이므로 생성원이 유한하고, 관계식도 유한하다. 모듈러 기호 공간이 유한 연립일차방정식의 해공간이 되어 계산이 [Gauss 소거](gaussian-elimination.md)가 된다.
 
 # 정의
 
