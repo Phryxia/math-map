@@ -16,7 +16,7 @@ $n$ 명이 각자 $\pm 1$ 을 내고 그 결과로 공정한 동전 하나를 �
 
 # 정의
 
-$f\colon\lbrace -1,1\rbrace^n\to\lbrace -1,1\rbrace$ 를 균등분포 위의 부울 함수라 하고 Fourier 전개를 $f=\sum_S\hat f(S)x_S$ 라 하자. $x^{\oplus i}$ 는 $x$ 의 $i$ 번째 좌표를 뒤집은 것이다.
+$f\colon\lbrace -1,1\rbrace^n\to\lbrace -1,1\rbrace$ 를 [균등분포](uniform-distribution.md) 위의 부울 함수라 하고 Fourier 전개를 $f=\sum_S\hat f(S)x_S$ 라 하자. $x^{\oplus i}$ 는 $x$ 의 $i$ 번째 좌표를 뒤집은 것이다.
 
 좌표 $i$ 의 **영향력(influence)** 과 **총 영향력(total influence)** 은 다음이다.
 

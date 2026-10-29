@@ -6,7 +6,7 @@
 
 # 직관
 
-$d$ 정규 그래프 위에서 이웃을 무작위로 골라 걷는다. 걸음마다 분포에 전이행렬 $M=A/d$ 를 곱하고, 최대 [고윳값](eigenvalues.md) $1$ 의 고유벡터가 균등분포다. 나머지 고윳값의 절댓값 최대를 $\lambda$ 라 하면 $t$ 걸음 뒤의 편차가 $\lambda^t$ 로 줄어든다.
+$d$ 정규 그래프 위에서 이웃을 무작위로 골라 걷는다. 걸음마다 분포에 전이행렬 $M=A/d$ 를 곱하고, 최대 [고윳값](eigenvalues.md) $1$ 의 고유벡터가 [균등분포](uniform-distribution.md)다. 나머지 고윳값의 절댓값 최대를 $\lambda$ 라 하면 $t$ 걸음 뒤의 편차가 $\lambda^t$ 로 줄어든다.
 
 $$
 \Vert M^t x-\pi\Vert\le\lambda^{t}\Vert x-\pi\Vert

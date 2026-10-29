@@ -34,7 +34,7 @@ $$
 \hat b_{k+1}=\frac{\int_{\Delta_m}b\thinspace S_k(b)\thinspace db}{\int_{\Delta_m}S_k(b)\thinspace db}
 $$
 
-을 쓰는 전략이다. 적분은 $\Delta_m$ 위의 균등분포에 대한 것이고, $\hat b_1$ 은 균등 비율이다.
+을 쓰는 전략이다. 적분은 $\Delta_m$ 위의 [균등분포](uniform-distribution.md)에 대한 것이고, $\hat b_1$ 은 균등 비율이다.
 
 # 성질
 

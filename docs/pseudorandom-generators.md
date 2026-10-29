@@ -18,7 +18,7 @@
 
 ## 계산적 구별 불가능성
 
-$U\_\ell$ 을 $\lbrace 0,1\rbrace^\ell$ 위의 균등분포라 하자. 비트열의 분포족 $\lbrace X\_n\rbrace$, $\lbrace Y\_n\rbrace$ 이 **계산적으로 구별되지 않는다(computationally indistinguishable)** 는 것은 모든 확률적 다항시간 알고리즘 $D$ 에 대해 다음이 $n$ 에 대해 무시할 만하다는 뜻이다.
+$U\_\ell$ 을 $\lbrace 0,1\rbrace^\ell$ 위의 [균등분포](uniform-distribution.md)라 하자. 비트열의 분포족 $\lbrace X\_n\rbrace$, $\lbrace Y\_n\rbrace$ 이 **계산적으로 구별되지 않는다(computationally indistinguishable)** 는 것은 모든 확률적 다항시간 알고리즘 $D$ 에 대해 다음이 $n$ 에 대해 무시할 만하다는 뜻이다.
 
 $$
 \left\lvert\Pr\lbrack D(X\_n)=1\rbrack-\Pr\lbrack D(Y\_n)=1\rbrack\right\rvert

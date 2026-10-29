@@ -26,7 +26,7 @@ $$
 \Pr\big\lbrack f(r_1,\dots,r_n)=0\big\rbrack\le\frac{d}{\lvert S\rvert}
 $$
 
-이다. 확률은 [유한 확률 공간](probability.md) $S^n$ 위의 균등분포로 잰다. 세는 꼴로 쓰면 $S^n$ 안의 $f$ 의 근은 많아야 $d\lvert S\rvert^{n-1}$ 개다.
+이다. 확률은 [유한 확률 공간](probability.md) $S^n$ 위의 [균등분포](uniform-distribution.md)로 잰다. 세는 꼴로 쓰면 $S^n$ 안의 $f$ 의 근은 많아야 $d\lvert S\rvert^{n-1}$ 개다.
 
 ## 다항식 항등 판정
 

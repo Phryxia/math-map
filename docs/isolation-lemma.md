@@ -24,7 +24,7 @@ $$
 \Pr\Big\lbrack\ \text{무게가 }\min_{S\in\mathcal F}w(S)\text{ 인 }S\in\mathcal F\text{ 가 하나뿐이다}\ \Big\rbrack\ge 1-\frac{m}{N}
 $$
 
-이다. 확률은 [유한 확률 공간](probability.md) $\lbrace 1,\dots,N\rbrace^U$ 위의 균등분포로 잰다.
+이다. 확률은 [유한 확률 공간](probability.md) $\lbrace 1,\dots,N\rbrace^U$ 위의 [균등분포](uniform-distribution.md)로 잰다.
 
 # 성질
 

@@ -17,7 +17,7 @@ Impagliazzo 하드코어 보조정리는 작은 회로가 입력의 $\delta$ 비
 # 정의
 
 - 함수 $f:\lbrace 0,1\rbrace^n\to\lbrace 0,1\rbrace$ 가 크기 $s$ 에 대해 **$\delta$-어렵다($\delta$-hard)** 는 것은 크기 $s$ 이하의 모든 회로 $C$ 가 $\Pr_x\lbrack C(x)\ne f(x)\rbrack\ge\delta$ 를 만족하는 것이다. $x$ 는 고르게 뽑는다.
-- $\lbrace 0,1\rbrace^n$ 위의 확률분포 $\mu$ 가 **$\delta$-조밀($\delta$-dense)** 하다는 것은 모든 $x$ 에서 $\mu(x)\le 1/(\delta 2^n)$ 인 것이다. 크기 $\delta 2^n$ 이상인 집합 위의 균등분포가 그 예다.
+- $\lbrace 0,1\rbrace^n$ 위의 확률분포 $\mu$ 가 **$\delta$-조밀($\delta$-dense)** 하다는 것은 모든 $x$ 에서 $\mu(x)\le 1/(\delta 2^n)$ 인 것이다. 크기 $\delta 2^n$ 이상인 집합 위의 [균등분포](uniform-distribution.md)가 그 예다.
 
 # 성질
 

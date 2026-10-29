@@ -16,7 +16,7 @@
 
 # 정의
 
-$R\subset\mathbb R^2$ 를 넓이가 유한하고 양인 열린집합이라 하고, $R$ 에서 균등분포를 따르는 독립 [확률변수](random-variables.md) $X\_1,\dots,X\_4$ 를 뽑는다. 네 점이 볼록 위치(convex position)에 있을 확률
+$R\subset\mathbb R^2$ 를 넓이가 유한하고 양인 열린집합이라 하고, $R$ 에서 [균등분포](uniform-distribution.md)를 따르는 독립 [확률변수](random-variables.md) $X\_1,\dots,X\_4$ 를 뽑는다. 네 점이 볼록 위치(convex position)에 있을 확률
 
 $$
 q(R)=\mathbb P\bigl(X\_1,\dots,X\_4\text{ 가 볼록 사각형의 꼭짓점}\bigr)

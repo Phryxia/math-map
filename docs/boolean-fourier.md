@@ -16,7 +16,7 @@ $$
 
 모든 $f$ 는 $2^n$ 개의 단항식의 실계수 결합으로 유일하게 쓰인다. 계수 $\hat f(S)$ 의 분포가 함수의 조합적 성질을 지고 있다. 어떤 좌표가 얼마나 중요한지(영향력), 입력에 잡음을 섞으면 값이 얼마나 유지되는지(잡음 안정성), 함수가 몇 개의 좌표로 근사되는지가 모두 계수의 이차식이다.
 
-[유한 확률 공간](probability.md)이 필요하다. 정의역에 균등분포를 주면 $\lbrace\chi_S\rbrace$ 가 정규직교기저가 되고 Parseval 항등식이 $\sum_S\hat f(S)^2=1$ 이 된다. $\hat f(S)^2$ 가 확률분포가 되어 무게가 어느 준위에 실려 있는지를 물을 수 있다.
+[유한 확률 공간](probability.md)이 필요하다. 정의역에 [균등분포](uniform-distribution.md)를 주면 $\lbrace\chi_S\rbrace$ 가 정규직교기저가 되고 Parseval 항등식이 $\sum_S\hat f(S)^2=1$ 이 된다. $\hat f(S)^2$ 가 확률분포가 되어 무게가 어느 준위에 실려 있는지를 물을 수 있다.
 
 [PCP 정리](pcp-theorem.md)(probabilistically checkable proof)의 검증자를 설계할 때 필요한 **독재자 검사**, 곧 함수가 한 좌표에만 의존하는지를 상수 개의 질의로 판정하는 절차의 완전성과 건전성이 잡음 안정성의 부등식으로 계산된다. [유일게임 추측](unique-games.md) 아래에서 최대 절단의 최적 근사비를 정하는 **Majority is Stablest** 정리가 이 계통의 정점이다.
 

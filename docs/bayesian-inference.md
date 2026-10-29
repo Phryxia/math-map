@@ -153,7 +153,7 @@ $$
 
 ## 무정보 사전분포
 
-"아무것도 모른다"를 표현하려는 시도는 매개변수화에 의존한다는 문제에 부딪힌다. $p$ 에 균등분포를 주면 $\log(p/(1-p))$ 에는 균등이 아니다. Jeffreys 사전분포
+"아무것도 모른다"를 표현하려는 시도는 매개변수화에 의존한다는 문제에 부딪힌다. $p$ 에 [균등분포](uniform-distribution.md)를 주면 $\log(p/(1-p))$ 에는 균등이 아니다. Jeffreys 사전분포
 
 $$
 \pi_J(\theta) \thickspace\propto\thickspace \sqrt{\det I(\theta)}

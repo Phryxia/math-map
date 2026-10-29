@@ -40,7 +40,7 @@ $$F_n(x) = \frac1n\sum_{i=1}^n 1\lbrack X_i\le x\rbrack$$
 
 $$D_n = \sup\_{x\in\mathbb R}\vert F_n(x)-F(x)\vert$$
 
-을 **Kolmogorov–Smirnov 거리**라 한다. $F$ 가 연속이면 $D_n$ 의 분포는 $F$ 에 의존하지 않는다. $U_i=F(X_i)$ 가 $\lbrack 0,1\rbrack$ 의 균등분포를 따르고 $D_n$ 이 그 균등 표본의 같은 양과 같기 때문이다.
+을 **Kolmogorov–Smirnov 거리**라 한다. $F$ 가 연속이면 $D_n$ 의 분포는 $F$ 에 의존하지 않는다. $U_i=F(X_i)$ 가 $\lbrack 0,1\rbrack$ 의 [균등분포](uniform-distribution.md)를 따르고 $D_n$ 이 그 균등 표본의 같은 양과 같기 때문이다.
 
 # 성질
 

@@ -34,7 +34,7 @@ $I(\theta)$ 는 $d\times d$ 대칭 준양정부호 행렬이다. $\mathbb E\_\th
 
 ## 정칙 조건
 
-정의와 아래의 성질은 다음을 가정한다. 지지집합 $\lbrace x:f(x;\theta)\gt 0\rbrace$ 이 $\theta$ 에 의존하지 않고, $\theta$ 가 $\Theta$ 의 내부점이며, $\log f$ 가 $\theta$ 에 대해 두 번 미분가능하고 $\theta$ 에 대한 미분과 $x$ 에 대한 적분을 바꿀 수 있다. 균등분포 $\mathrm{Unif}(0,\theta)$ 처럼 지지집합이 모수에 의존하는 모형은 이 조건을 어기고 아래의 하한이 성립하지 않는다.
+정의와 아래의 성질은 다음을 가정한다. 지지집합 $\lbrace x:f(x;\theta)\gt 0\rbrace$ 이 $\theta$ 에 의존하지 않고, $\theta$ 가 $\Theta$ 의 내부점이며, $\log f$ 가 $\theta$ 에 대해 두 번 미분가능하고 $\theta$ 에 대한 미분과 $x$ 에 대한 적분을 바꿀 수 있다. [균등분포](uniform-distribution.md) $\mathrm{Unif}(0,\theta)$ 처럼 지지집합이 모수에 의존하는 모형은 이 조건을 어기고 아래의 하한이 성립하지 않는다.
 
 ## 관측 정보와의 구별
 
