@@ -68,7 +68,7 @@ $$
 
 **Lindemann–Weierstrass 정리(Lindemann–Weierstrass theorem).** 대수적 수 $\alpha_1,\dots,\alpha_n$ 이 $\mathbb Q$ 위에서 일차독립이면 $e^{\alpha_1},\dots,e^{\alpha_n}$ 은 $\mathbb Q$ 위에서 대수적으로 독립이다.[^2]
 
-$n=1$, $\alpha_1=1$ 에서 $e$ 가 초월수이고, $\alpha_1=\pi i$ 로 두면 $e^{\pi i}=-1$ 이 대수적이므로 $\pi i$ 가, 따라서 $\pi$ 가 초월수다. 복소수 $z_1,\dots,z_n$ 이 $\mathbb Q$ 위에서 일차독립이면 $\mathrm{trdeg}\_{\mathbb Q}\mathbb Q(z_1,\dots,z_n,e^{z_1},\dots,e^{z_n})\ge n$ 이라는 진술이 Schanuel 추측(Schanuel's conjecture)이다.
+$n=1$, $\alpha_1=1$ 에서 $e$ 가 초월수이고, $\alpha_1=\pi i$ 로 두면 $e^{\pi i}=-1$ 이 대수적이므로 $\pi i$ 가, 따라서 $\pi$ 가 초월수다. [복소수](complex-numbers.md) $z_1,\dots,z_n$ 이 $\mathbb Q$ 위에서 일차독립이면 $\mathrm{trdeg}\_{\mathbb Q}\mathbb Q(z_1,\dots,z_n,e^{z_1},\dots,e^{z_n})\ge n$ 이라는 진술이 Schanuel 추측(Schanuel's conjecture)이다.
 
 # 활용
 

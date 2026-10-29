@@ -10,7 +10,7 @@ Pontryagin 쌍대성은 국소콤팩트 [아벨 위상군](topological-groups.md
 
 [Fourier 급수](fourier-series.md)는 $S^1$ 과 $\mathbb Z$ 의 쌍, [Fourier 변환](fourier-transform.md)은 $\mathbb R$ 과 $\mathbb R$ 의 쌍, 유한 Fourier 변환은 $\mathbb Z/n$ 과 자기 자신의 쌍이다. 세 변환이 한 정리의 사례이고, 어느 쌍에서나 Plancherel 등식과 역변환 공식이 같은 형태로 성립한다.
 
-주기 $1$ 인 함수를 $e^{2\pi inx}$ 들의 합으로 쓰는 것이 Fourier 급수다. 쓸 수 있는 지수는 정수 $n$ 전체이고, 각 $n$ 은 원 $S^1$ 에서 절댓값 $1$ 인 복소수로 가는 연속 준동형 $x\mapsto e^{2\pi inx}$ 를 준다. 거꾸로 $S^1$ 의 연속 준동형은 모두 이 꼴이므로, 쓸 수 있는 지수의 집합이 $\mathbb Z$ 와 같다. 실직선에서 같은 일을 하면 지수가 $e^{2\pi i\xi x}$ 이고 $\xi$ 가 실수 전체를 달린다.
+주기 $1$ 인 함수를 $e^{2\pi inx}$ 들의 합으로 쓰는 것이 Fourier 급수다. 쓸 수 있는 지수는 정수 $n$ 전체이고, 각 $n$ 은 원 $S^1$ 에서 절댓값 $1$ 인 [복소수](complex-numbers.md)로 가는 연속 준동형 $x\mapsto e^{2\pi inx}$ 를 준다. 거꾸로 $S^1$ 의 연속 준동형은 모두 이 꼴이므로, 쓸 수 있는 지수의 집합이 $\mathbb Z$ 와 같다. 실직선에서 같은 일을 하면 지수가 $e^{2\pi i\xi x}$ 이고 $\xi$ 가 실수 전체를 달린다.
 
 $$
 \hat{S^1}\cong\mathbb Z,\qquad \hat{\mathbb Z}\cong S^1,\qquad \hat{\mathbb R}\cong\mathbb R

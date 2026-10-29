@@ -18,7 +18,7 @@ $$
 I(\lambda)\sim g(x_0)e^{\lambda\varphi(x_0)}\sqrt{\frac{2\pi}{\lambda|\varphi''(x_0)|}}
 $$
 
-정칙함수의 절댓값은 내부에서 최대를 갖지 못하므로 피적분함수가 복소수면 최대점이 없다. 대신 $\varphi'(z_0)=0$ 인 **안장점**이 있고, 그 점을 지나는 경로 중 $\mathrm{Im}\varphi$ 가 일정한 것을 골라 [윤곽을 변형](residue-theorem.md)하면 진동이 사라져 실수 Laplace 방법이 적용된다. 이 방법을 **최대급강하법(method of steepest descent)** 이라 한다.
+정칙함수의 절댓값은 내부에서 최대를 갖지 못하므로 피적분함수가 [복소수](complex-numbers.md)면 최대점이 없다. 대신 $\varphi'(z_0)=0$ 인 **안장점**이 있고, 그 점을 지나는 경로 중 $\mathrm{Im}\varphi$ 가 일정한 것을 골라 [윤곽을 변형](residue-theorem.md)하면 진동이 사라져 실수 Laplace 방법이 적용된다. 이 방법을 **최대급강하법(method of steepest descent)** 이라 한다.
 
 [Euler–Maclaurin](euler-maclaurin.md)이 합과 적분의 차이를 다루고 Laplace 방법이 적분 자체의 크기를 다룬다. 둘을 합치면 [생성함수](generating-functions.md)의 계수, [감마 함수](gamma-function.md)의 Stirling 근사, 확률의 대편차가 같은 도구로 처리된다.
 

@@ -14,7 +14,7 @@ $n$ 이하의 자연수 가운데 $n$ 과 서로소인 것의 개수를 $\varphi
 
 ## 산술함수의 환
 
-자연수에서 복소수로 가는 함수를 **산술함수**라 한다. 산술함수 $f,g$ 의 **Dirichlet 합성곱**은
+자연수에서 [복소수](complex-numbers.md)로 가는 함수를 **산술함수**라 한다. 산술함수 $f,g$ 의 **Dirichlet 합성곱**은
 
 $$
 (f\ast g)(n)=\sum\_{d\mid n}f(d)\thinspace g(n/d)

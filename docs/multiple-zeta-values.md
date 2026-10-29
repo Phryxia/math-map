@@ -103,7 +103,7 @@ $$
 # 활용
 
 - Riemann zeta 함수: 깊이 $1$ 의 값이 zeta 함수의 정수점 값이고, 스터플 관계가 그 값들의 곱을 깊이 $2$ 의 값으로 푼다.
-- [Coleman 적분](coleman-integration.md): 사영직선에서 $0,1,\infty$ 를 뺀 공간의 $p$ 진 반복 적분이 [p 진 다중 zeta 값](p-adic-multiple-zeta-values.md)을 준다. 복소수 쪽 반복 적분 표현과 같은 꼴이다.
+- [Coleman 적분](coleman-integration.md): 사영직선에서 $0,1,\infty$ 를 뺀 공간의 $p$ 진 반복 적분이 [p 진 다중 zeta 값](p-adic-multiple-zeta-values.md)을 준다. [복소수](complex-numbers.md) 쪽 반복 적분 표현과 같은 꼴이다.
 - [초월수](transcendental-numbers.md): $\zeta(2n)$ 이 $\pi^{2n}$ 의 유리수배이므로 초월수다. 홀수 무게의 값에는 같은 판정이 없다.
 
 # 연관 문서

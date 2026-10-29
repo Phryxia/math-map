@@ -34,7 +34,7 @@ $$\rho=\limsup_{r\to\infty}\frac{\log\log M(r)}{\log r}$$
 
 ## Weierstrass 인수분해 정리
 
-$0$ 이 아닌 복소수열 $\lbrace a_n\rbrace$ 이 $\vert a_n\vert\to\infty$ 를 만족하면, 정확히 그 점들을 영점으로 갖는 전해석함수가 존재한다. 정수열 $p_n$ 을 $\sum_n(r/\vert a_n\vert)^{p_n+1}$ 이 모든 $r$ 에서 수렴하도록 고르면 $\prod_n E_{p_n}(z/a_n)$ 이 그 함수다. $p_n=n-1$ 은 언제나 통한다.
+$0$ 이 아닌 [복소수](complex-numbers.md)열 $\lbrace a_n\rbrace$ 이 $\vert a_n\vert\to\infty$ 를 만족하면, 정확히 그 점들을 영점으로 갖는 전해석함수가 존재한다. 정수열 $p_n$ 을 $\sum_n(r/\vert a_n\vert)^{p_n+1}$ 이 모든 $r$ 에서 수렴하도록 고르면 $\prod_n E_{p_n}(z/a_n)$ 이 그 함수다. $p_n=n-1$ 은 언제나 통한다.
 
 따라서 모든 전해석함수 $f$ 는
 

@@ -54,7 +54,7 @@ Pontryagin–Thom 구성으로 $\pi\_k^s$ 는 법다발에 틀을 준 $k$ 차원
 
 - **이색 구면의 개수.** Kervaire–Milnor 는 $n$ 차원 호모토피 구면의 군 $\Theta\_n$ 을 $\pi\_n^s/\mathrm{im}\thinspace J$ 와 평행화 가능한 다양체의 경계에서 오는 부분군으로 나누어 계산했다. $\Theta\_7$ 의 위수 $28$ 이 이 계산에서 나오고, [이색 구면](exotic-spheres.md)이 그 원소다[^3].
 - **안정 호모토피군의 구조.** $\pi\_\ast^s$ 는 J 의 상과 그 밖의 부분으로 나누어 연구한다. J 의 상은 K 이론의 Adams 연산으로 검출되는 부분이다.
-- **[Hopf 불변량](hopf-invariant.md).** $k=1,3,7$ 에서 J 의 상의 생성원은 복소수, 사원수, 팔원수의 곱셈에서 오는 Hopf 사상의 안정류다.
+- **[Hopf 불변량](hopf-invariant.md).** $k=1,3,7$ 에서 J 의 상의 생성원은 [복소수](complex-numbers.md), 사원수, 팔원수의 곱셈에서 오는 Hopf 사상의 안정류다.
 
 [^1]: J. F. Adams, "On the groups J(X) IV", *Topology* 5 (1966), 21–71.
 [^2]: D. Quillen, "The Adams conjecture", *Topology* 10 (1971), 67–80.

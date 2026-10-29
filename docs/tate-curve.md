@@ -2,7 +2,7 @@
 
 # 개요
 
-**Tate 곡선(Tate curve)** 은 $p$ 진체 $K$ 와 $\vert q\vert\lt 1$ 인 $q\in K^{\times}$ 에 대해 $E_q(K)\cong K^{\times}/q^{\mathbb Z}$ 를 만족하는 [타원곡선](elliptic-curves.md)이다. 복소수 위의 타원곡선은 평면을 격자로 나눈 몫 $\mathbb C/\Lambda$ 로 그려지지만, $p$ 진체에서는 같은 그림이 서지 않는다. 복소수에서 [지수함수](exponential-function.md)로 옮기면 그 몫이 $\mathbb C^\times/q^{\mathbb Z}$ 가 되는데, Tate 곡선은 이 꼴만 $p$ 진에서 살려 곱셈적 환원을 갖는 타원곡선을 곱셈군의 몫으로 다룬다.
+**Tate 곡선(Tate curve)** 은 $p$ 진체 $K$ 와 $\vert q\vert\lt 1$ 인 $q\in K^{\times}$ 에 대해 $E_q(K)\cong K^{\times}/q^{\mathbb Z}$ 를 만족하는 [타원곡선](elliptic-curves.md)이다. [복소수](complex-numbers.md) 위의 타원곡선은 평면을 격자로 나눈 몫 $\mathbb C/\Lambda$ 로 그려지지만, $p$ 진체에서는 같은 그림이 서지 않는다. 복소수에서 [지수함수](exponential-function.md)로 옮기면 그 몫이 $\mathbb C^\times/q^{\mathbb Z}$ 가 되는데, Tate 곡선은 이 꼴만 $p$ 진에서 살려 곱셈적 환원을 갖는 타원곡선을 곱셈군의 몫으로 다룬다.
 
 # 직관
 

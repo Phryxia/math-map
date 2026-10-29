@@ -2,7 +2,7 @@
 
 # 개요
 
-**Kuznetsov 공식(Kuznetsov formula)** 은 [Kloosterman 합](kloosterman-sums.md)들의 가중 합을 [모듈러 형식](modular-forms.md)의 Fourier 계수들의 합으로 바꿔 쓰는 등식이다. 소수 $c$ 에 대한 Kloosterman 합 $S(m,n;c)$ 는 크기가 $1$ 인 복소수 $c-1$ 개를 더한 것이지만, 그 크기는 $2\sqrt c$ 를 넘지 않는다. 여러 $c$ 에 걸친 합에서 이보다 큰 상쇄를 보이려면 합을 하나씩 추정해서는 부족하므로, Kuznetsov 공식은 그 합을 스펙트럼 쪽의 합으로 옮겨 다른 쪽의 추정으로 바꾼다.
+**Kuznetsov 공식(Kuznetsov formula)** 은 [Kloosterman 합](kloosterman-sums.md)들의 가중 합을 [모듈러 형식](modular-forms.md)의 Fourier 계수들의 합으로 바꿔 쓰는 등식이다. 소수 $c$ 에 대한 Kloosterman 합 $S(m,n;c)$ 는 크기가 $1$ 인 [복소수](complex-numbers.md) $c-1$ 개를 더한 것이지만, 그 크기는 $2\sqrt c$ 를 넘지 않는다. 여러 $c$ 에 걸친 합에서 이보다 큰 상쇄를 보이려면 합을 하나씩 추정해서는 부족하므로, Kuznetsov 공식은 그 합을 스펙트럼 쪽의 합으로 옮겨 다른 쪽의 추정으로 바꾼다.
 
 # 직관
 

@@ -28,7 +28,7 @@ $$
 
 ## 지수합과 간격
 
-$e(\alpha)=e^{2\pi i\alpha}$ 로 쓰고, 복소수열 $a\_1,\dots,a\_N$ 에 대해
+$e(\alpha)=e^{2\pi i\alpha}$ 로 쓰고, [복소수](complex-numbers.md)열 $a\_1,\dots,a\_N$ 에 대해
 
 $$
 S(\alpha)=\sum\_{n\le N}a\_n e(n\alpha)
