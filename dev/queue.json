@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-29T01:05:42.378Z",
-  "nextSeq": 2554,
+  "savedAt": "2026-10-29T05:01:22.231Z",
+  "nextSeq": 2558,
   "items": [
     {
       "id": "9bab7237",
@@ -2482,6 +2482,22 @@
       "note": "이번 회차에 highest-weight-modules, universal-enveloping-algebra, weyl-complete-reducibility, lie-algebra-cohomology, levi-decomposition, harish-chandra-isomorphism, ado-theorem 일곱을 만들었다. 간선 재배치: weyl-character-formula 의 부모 root-systems -> highest-weight-modules + weyl-complete-reducibility, category-o 의 부모 lie-algebras -> highest-weight-modules + harish-chandra-isomorphism, quantum-groups 의 부모 lie-algebras -> universal-enveloping-algebra, virasoro-algebra 에 lie-algebra-cohomology 를 부모로 더했다. 리프로 남은 것과 자식 후보: ado-theorem(Lie 셋째 정리 문서), lie-algebra-cohomology 활용 절이 affine-lie-algebras 를 고리 대수의 중심확장으로 링크만 했다(affine 문서는 코사이클을 쓰지 않아 간선을 긋지 않았다). 이름만 쓴 개념: Chevalley 제한 정리, Kostant 분할 함수(highest-weight-modules 에 굵게 정의, weyl-character-formula 에도 굵게 정의가 있어 중복), Schur 보조정리(group-representations 의 절), Whitehead 보조정리(lie-algebra-cohomology 에 절), Lie 셋째 정리, Malcev 정리.",
       "createdAt": "2026-10-26T21:01:22.993Z",
       "seq": 2546
+    },
+    {
+      "id": "09c8d29b",
+      "title": "생일 문제를 충돌 계산 문서들의 부모로 둘지 판정",
+      "priority": 11,
+      "note": "2026-10-29 회차에 birthday-problem 을 probability 아래 리프로 만들었다. cryptographic-hash-functions, pollard-rho, block-cipher-modes 가 각자 '## 생일 한계' 절에서 같은 계산을 되풀이한다. 세 문서의 선수지식에 birthday-problem 을 더하고 각 절을 한 문장과 링크로 줄일지 판정한다. 부모 수 4 이하 확인",
+      "createdAt": "2026-10-29T05:01:21.475Z",
+      "seq": 2556
+    },
+    {
+      "id": "a3295ee0",
+      "title": "2026-10-29 회차 새 문서 열넷의 후속 간선",
+      "priority": 11,
+      "note": "primitive-roots carmichael-function artin-primitive-root-conjecture zsigmondy-theorem wilson-theorem farey-sequences perfect-numbers pythagorean-triples lucas-theorem frobenius-coin-problem laplace-transform cayley-formula coupon-collector ballot-theorem birthday-problem. 대부분 리프다. 후보: farey-sequences -> circle-method(Farey 분할), laplace-transform -> 전달함수나 갱신 이론 문서, cayley-formula -> 무작위 나무 문서, frobenius-coin-problem -> 수치 반군 문서(없음). Stern-Brocot 나무, Ford 원, 합동수 문제, Weierstrass 틈 정리는 문서가 없고 해당 문서 본문에 이름만 있다",
+      "createdAt": "2026-10-29T05:01:21.568Z",
+      "seq": 2557
     },
     {
       "id": "09c81cac",
