@@ -100,6 +100,7 @@ graph TD
   - [Clenshaw–Curtis 구적](clenshaw-curtis-quadrature.md): Chebyshev 극값점의 보간 다항식을 적분한 수치적분, 양수 가중치와 연속함수에서의 수렴, 두 배로 늘려도 유지되는 노드
     - [Smolyak 희소격자 구적](smolyak-quadrature.md): 1 차원 구적의 차분을 텐서곱해 단계의 합이 작은 것만 더한 고차원 적분 공식, 점의 개수와 혼합 매끄러움에서의 오차
 - [미적분학의 기본 정리](fundamental-calculus.md): 미분과 적분의 역관계
+  - [곡선의 길이](arc-length.md): 꺾은선 길이의 상한, 속력의 적분 공식과 호길이 매개화, 길이가 무한인 연속 곡선
   - [Green 정리](greens-theorem.md): 평면 영역의 이중적분을 경계의 선적분으로 바꾸는 정리, 넓이 공식과 신발끈 공식
 - [상미분방정식](ordinary-differential-equations.md): Picard–Lindelöf 존재 정리와 선형 이론
   - [Peano 존재정리](peano-existence-theorem.md): 연속성만으로 얻는 해의 존재, 유일성의 실패와 Osgood 조건

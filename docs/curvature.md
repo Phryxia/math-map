@@ -22,7 +22,7 @@
 
 ## 평면곡선과 공간곡선
 
-$\mathbb R^3$ 의 곡선을 호길이로 매개화하여 속도의 크기가 항상 $1$ 이 되게 하자. 단위접벡터 $T$ , 주법선 $N$ , 종법선 $B$ 를 쓰면 곡률과 비틀림은 다음으로 정의된다.
+$\mathbb R^3$ 의 곡선을 [호길이로 매개화](arc-length.md)하여 속도의 크기가 항상 $1$ 이 되게 하자. 단위접벡터 $T$ , 주법선 $N$ , 종법선 $B$ 를 쓰면 곡률과 비틀림은 다음으로 정의된다.
 
 $$
 T=\gamma',\qquad \kappa=\lVert T'\rVert,\qquad N=\frac{T'}{\kappa},\qquad B=T\times N
@@ -114,7 +114,7 @@ $$
 
 ## 선수지식
 
-- [미분](derivative.md)
+- [곡선의 길이](arc-length.md)
 - [내적 공간](inner-product-spaces.md)
 - [미분기하 개관](differential-geometry-overview.md)
 

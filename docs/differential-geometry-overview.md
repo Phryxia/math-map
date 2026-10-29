@@ -12,7 +12,7 @@
 graph TD
   DV["미분"] --> MF["다양체"]
   TP["위상 공간"] --> MF
-  DV --> CV["곡률"]
+  AL["곡선의 길이"] --> CV["곡률"]
   IP["내적 공간"] --> CV
   MF --> DF["미분형식"]
   MF --> VB["벡터다발"]
@@ -97,7 +97,7 @@ graph TD
 
 ## 계량과 곡률
 
-먼저 읽을 갈래: Lie 군과 다발. 먼저 읽을 것: [내적 공간](inner-product-spaces.md)(선형대수 개관). 시작 문서: [곡률](curvature.md).
+먼저 읽을 갈래: Lie 군과 다발. 먼저 읽을 것: [내적 공간](inner-product-spaces.md)(선형대수 개관), [곡선의 길이](arc-length.md)(해석 개관). 시작 문서: [곡률](curvature.md).
 
 - [곡률](curvature.md): 곡선과 곡면의 휘어짐, Gauss 곡률과 평균 곡률
 - [극소곡면](minimal-surfaces.md): 평균곡률이 0 인 곡면, 넓이의 일차 변분과 현수면, Bernstein 정리와 Plateau 문제

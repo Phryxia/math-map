@@ -126,6 +126,5 @@ $$
 ### 기하
 
 - [다양체](manifolds.md)
-- [곡률](curvature.md)
 
 #analysis #linear_algebra

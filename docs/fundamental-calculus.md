@@ -124,5 +124,6 @@ $\int_0^3 2t\thinspace dt = 9$ 이고, 원시함수에 더한 상수는 양 끝�
 - [정칙함수](holomorphic-functions.md)
 - [상미분방정식](ordinary-differential-equations.md)
 - [Green 정리](greens-theorem.md)
+- [곡선의 길이](arc-length.md)
 
 #analysis #complex_analysis #theorem
