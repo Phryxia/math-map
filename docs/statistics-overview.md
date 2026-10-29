@@ -52,6 +52,7 @@ graph TD
 - [가설검정](hypothesis-testing.md): 귀무가설과 검정통계량, 제1종·제2종 오류, Neyman–Pearson 보조정리
   - [가능도비 검정](likelihood-ratio-test.md): 두 모수 집합 위의 최대 가능도의 비로 세우는 검정, Wilks 정리의 카이제곱 극한
   - [Pearson 카이제곱 검정](pearson-chi-squared-test.md): 범주별 횟수와 기대 횟수의 차이로 세우는 적합도 검정과 독립성 검정, 자유도 계산과 가능도비 통계량과의 점근 동치
+  - [Fisher 정확 검정](fisher-exact-test.md): 행과 열의 합을 고정한 2×2 표의 초기하 확률로 계산하는 p-값, 공통 비율의 소거와 보수성
   - [거짓 발견률](false-discovery-rate.md): 여러 가설을 함께 검정할 때 기각한 것 가운데 잘못 기각한 것의 비율의 기댓값. Benjamini–Hochberg 절차와 의존하는 p-값
 - [신뢰구간](confidence-intervals.md): 피벗량으로 세우는 구간, 피복확률과 검정과의 쌍대성
 - [순차확률비 검정](sequential-probability-ratio-test.md): 누적 우도비와 두 문턱, Wald 의 오류율 경계와 기대 표본 수

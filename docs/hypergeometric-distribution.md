@@ -59,7 +59,7 @@ $$
 # 활용
 
 - 포획-재포획법(capture-recapture method)은 연못의 물고기 $K$ 마리를 잡아 표시해 풀어 주고, 나중에 $n$ 마리를 잡아 표시된 것이 $k$ 마리이면 전체 수 $N$ 을 $Kn/k$ 로 추정한다. 표시된 수는 $\mathrm{Hyp}(N,K,n)$ 을 따르고, 이 추정값은 $P(X=k)$ 를 가장 크게 하는 $N$ 의 근방이다.
-- Fisher 정확 검정(Fisher's exact test)은 $2\times 2$ 표에서 행의 합과 열의 합을 고정하면 한 칸의 횟수가 초기하분포를 따르는 것을 써서 p-값을 정확히 계산한다. 기대 횟수가 작아 [Pearson 카이제곱 검정](pearson-chi-squared-test.md)의 근사를 쓸 수 없을 때 쓴다.
+- [Fisher 정확 검정](fisher-exact-test.md)은 $2\times 2$ 표에서 행의 합과 열의 합을 고정하면 한 칸의 횟수가 초기하분포를 따르는 것을 써서 p-값을 정확히 계산한다. 기대 횟수가 작아 [Pearson 카이제곱 검정](pearson-chi-squared-test.md)의 근사를 쓸 수 없을 때 쓴다.
 - 제품 $N$ 개 가운데 $n$ 개를 검사해 불량품 수로 묶음 전체를 받아들일지 정하는 표본 검사에서, 불량품 수는 초기하분포를 따른다.
 
 [^1]: W. Feller, *An Introduction to Probability Theory and Its Applications*, Vol. I, 3rd ed., Wiley (1968), §II.6. 초기하분포의 정의와 이항분포 근사, 포획-재포획 추정.
@@ -73,6 +73,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Fisher 정확 검정](fisher-exact-test.md)
 
 #probability #statistics #combinatorics
