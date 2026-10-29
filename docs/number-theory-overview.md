@@ -52,6 +52,7 @@ graph TD
   - [Wilson 정리](wilson-theorem.md): 1 부터 p − 1 까지의 곱이 법 p 로 −1 이라는 합동, 그 역과 법 n 으로의 Gauss 일반화
 - [원시근](primitive-roots.md): 거듭제곱으로 가역 나머지를 전부 만드는 수, 원시근이 있는 법의 분류와 지표
   - [Carmichael 함수](carmichael-function.md): 모든 가역 나머지를 1 로 보내는 가장 작은 지수, 최소공배수 공식과 Carmichael 수의 판정
+  - [Zsigmondy 정리](zsigmondy-theorem.md): aⁿ − bⁿ 이 앞선 지수에 없던 소인수를 갖는다는 정리와 두 예외
 - [유한체](finite-fields.md): 소수 위수의 체와 그 확대
 - [Pocklington 판정](pocklington-criterion.md): n − 1 의 √n 보다 큰 약수만 인수분해해서 n 의 소수성을 증명하는 판정, Proth 정리와 Pépin 판정
 - [이차 상호법칙](quadratic-reciprocity.md): 제곱잉여의 대칭성

@@ -109,6 +109,7 @@ $$
 
 - [Carmichael 함수](carmichael-function.md)
 - [Artin 원시근 추측](artin-primitive-root-conjecture.md)
+- [Zsigmondy 정리](zsigmondy-theorem.md)
 - [Pratt 증명서](pratt-certificate.md)
 
 #number_theory #group_theory #cryptography #theorem
