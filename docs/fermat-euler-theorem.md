@@ -150,6 +150,7 @@ Fermat 판정은 무작위 $a$ 에 대해 $a^{n-1}$ 을 계산하고 $1$ 이 아
 - [RSA 암호](rsa-cryptosystem.md)
 - [이차 상호법칙](quadratic-reciprocity.md)
 - [원시근](primitive-roots.md)
+- [Wilson 정리](wilson-theorem.md)
 - [AKS 소수 판정법](aks-primality-test.md)
 - [Miller–Rabin 판정](miller-rabin-test.md)
 

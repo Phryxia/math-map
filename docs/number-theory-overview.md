@@ -45,6 +45,7 @@ graph TD
 - [중국인의 나머지 정리](chinese-remainder-theorem.md): 서로소 법의 합동식 결합
 - [Fermat 소정리와 Euler 정리](fermat-euler-theorem.md): 단위군의 위수가 주는 합동
   - [Miller–Rabin 판정](miller-rabin-test.md): $1$ 의 제곱근이 $\pm 1$ 뿐인 것을 써서 합성수를 밑의 $3/4$ 이상으로 잡는 확률적 소수 판정, 일반화된 Riemann 가설 아래의 결정론적 판정
+  - [Wilson 정리](wilson-theorem.md): 1 부터 p − 1 까지의 곱이 법 p 로 −1 이라는 합동, 그 역과 법 n 으로의 Gauss 일반화
 - [원시근](primitive-roots.md): 거듭제곱으로 가역 나머지를 전부 만드는 수, 원시근이 있는 법의 분류와 지표
 - [유한체](finite-fields.md): 소수 위수의 체와 그 확대
 - [Pocklington 판정](pocklington-criterion.md): n − 1 의 √n 보다 큰 약수만 인수분해해서 n 의 소수성을 증명하는 판정, Proth 정리와 Pépin 판정
