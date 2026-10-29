@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-29T13:16:02.619Z",
-  "nextSeq": 2569,
+  "savedAt": "2026-10-29T17:09:32.617Z",
+  "nextSeq": 2576,
   "items": [
     {
       "id": "9bab7237",
@@ -500,6 +500,14 @@
       "seq": 2553
     },
     {
+      "id": "58b07d94",
+      "title": "미링크 손 검사가 '... 분포' 꼴 제목을 다른 분포 이름의 끝에서 잡는다",
+      "priority": 50,
+      "note": "2026-10-29 회차에 t-distribution(제목 't 분포')을 만든 뒤 gamma-distribution 에서 'Dirichlet 분포' 의 끝 't 분포' 가 grep -F 로 걸려 미링크로 보고됐다. 제목 앞이 로마자나 한글이면 오탐이다. 검사에서 제목 앞 글자가 단어 경계인지 보는 조건이 필요하다",
+      "createdAt": "2026-10-29T17:05:29.154Z",
+      "seq": 2575
+    },
+    {
       "id": "08e59419",
       "title": "CLAUDE.md 4절의 '직관 두 문단' 규칙과 모범 예의 어긋남",
       "priority": 40,
@@ -554,14 +562,6 @@
       "note": "이슈 #3(규칙 추가 요청: 용어 정의 시 굵게 처리)의 적용 범위. 규칙은 CLAUDE.md 4절 마크다운 소절에 있다. 55차에 깨지는 꼴 4 곳과 문서 9 개, 56차에 문서 13 개, 57차에 문서 33 개, 58차에 문서 206 개, 59차에 문서 205 개, 60차(2026-10-18)에 문서 118 개를 처리했다.\n\n60차가 한 일. /tmp/nobold.txt 의 알파벳 순서로 spectral-sequences 부터 zilber-indecomposability 까지 훑어 개요 첫 문단이 정의인 문서를 모두 처리하고, 이어서 목록 전체에서 처리 가능한 꼴 둘을 더 찾아 처리했다. (1) 제목이 개요 첫 문단의 머리에 오는 문서(banach-tarski, bayesian-inference, chebotarev 등 24 개). (2) 제목이 첫 문단 중간의 정의 자리에 오는 문서(borel-hierarchy 의 \"매긴 것이 Borel 계층이고\", dual-space 의 \"이 공간이 V 의 쌍대 공간이다\", schur-complement 의 \"그 계의 행렬이 Schur 보수다\" 등 18 개). 이 둘은 다음 두 셸 한 줄로 찾는다.\n  for id in $(cat /tmp/nobold.txt); do t=$(head -1 docs/$id.md | sed \"s/^# //\"); first=$(awk \"/^# 개요/{f=1;next} f&&NF{print;exit}\" docs/$id.md); case \"$first\" in \"$t\"*) echo \"머리 $id\";; *\"$t\"*) echo \"중간 $id\";; esac; done\n\n남은 187 개의 성격. 거의 전부 개요 첫 문단이 정의가 아니라 배경, 동기, 정리 진술로 시작하는 문서다. 굵게만 넣을 자리가 없으므로 개요를 다시 쓰는 별도 보강 작업이고, 이 항목으로 묶어 한 묶음씩 처리할 일이 아니다. 그 밖에 59차가 적은 두 꼴도 그대로 남아 있다. (1) 용어가 수식으로 시작하거나 수식을 품은 문서(lp-spaces, p-adic-l-function, p-adic-multiple-zeta-values, sigma11-boundedness, kubota-leopoldt-zeta, incomplete-lu 의 \"불완전 $LU$ 분해\", k-means 의 \"$k$ 평균 군집화\", algebraic-k-theory 의 \"대수적 $K$ 이론\", bell-numbers 꼴과 달리 수식이 용어 안에 든 경우다). 굵게 안에 수식을 넣지 않는 규칙 때문에 제목을 평문으로 다시 쓰는 작업과 함께 해야 한다. (2) 약어 풀이가 용어 중간에 든 문서는 60차에 처리법을 정했다. vc-dimension 의 \"**VC(Vapnik–Chervonenkis) 차원** 은\", np-completeness 의 \"**NP(nondeterministic polynomial time)-완전성** 은\" 처럼 괄호까지 굵게에 넣고 닫는 ** 뒤에 공백과 조사를 둔다. markdown-it 으로 확인했고 4절 굵게 grep 도 통과한다.\n\n60차가 새로 쓴 처리법. 각주가 용어 뒤에 붙은 문서는 각주를 굵게 밖에 두고 그 뒤에 공백과 조사를 둔다. casselman-shalika 의 \"**Casselman–Shalika 공식(Casselman–Shalika formula)**[^1] 은\", casson-invariant 의 \"**Casson 불변량(Casson invariant)**[^1] $\\lambda(M)$ 은\". 둘 다 markdown-it renderInline 으로 strong 이 나오는 것을 확인했다.\n\n남은 집계: for f in docs/*.md; do case $f in *-overview.md) continue;; esac; awk \"/^# 개요/{f=1;next} f&&NF{print;exit}\" \"$f\" | grep -q \"[*][*]\" || echo $f; done 가 187 개를 내놓는다. 개관은 4.5절의 다른 구조를 따르므로 제외한다. 커밋 메시지에는 이 항목 id 를 달지 않는다(미완 항목이라 다른 세션이 완료로 오해한다).\n\n61차(2026-10-18, 55번째 탐사 회차)에 문서 8 개를 처리해 187 에서 179 로 줄였다. 59차가 \"굵게 안에 수식을 넣지 않는 규칙 때문에 제목을 평문으로 다시 쓰는 작업과 함께 해야 한다\" 며 미뤄 둔 꼴 (1), 곧 용어가 수식으로 시작하거나 수식을 품은 문서다. 그 꼴의 문서는 제목이 이미 4절 제목 규칙대로 평문이므로 제목을 다시 쓸 일이 없었고, 개요 첫 문장의 용어를 제목과 같은 평문으로 바꾸어 굵게에 넣으면 끝이었다.\n\n처리한 여덟과 바꾼 꼴. sigma11-boundedness(\"$\\Sigma^1_1$ 경계 정리(Σ¹₁ bounding theorem)는\" -> \"**Σ¹₁ 경계 정리(Σ¹₁ bounding theorem)** 는\"), lp-spaces(\"$L^p$ 공간\" -> \"Lᵖ 공간\"), p-adic-l-function(\"$p$ 진 $L$ 함수\" -> \"p 진 L 함수\"), incomplete-lu(\"불완전 $LU$ 분해\" -> \"불완전 LU 분해\"), k-means(\"$k$ 평균 군집화\" -> \"k 평균 군집화\"), p-adic-multiple-zeta-values, kubota-leopoldt-zeta, algebraic-k-theory. 커밋 4950e3c 와 c279bf5 다.\n\n뒤의 셋은 개요 첫 문장에 원어가 아예 없어 병기도 함께 했다. \"p 진 다중 zeta 값(p-adic multiple zeta value)\", \"Kubota–Leopoldt p 진 zeta 함수(Kubota–Leopoldt p-adic zeta function)\", \"대수적 K 이론(algebraic K-theory)\" 이다.\n\n정한 처리법. 용어가 수식을 품으면 굵게 안에 수식을 넣지 말고 제목의 평문 표기를 그대로 쓴다. 기호는 로마자와 그리스 문자 그대로, 첨자는 유니코드 첨자 글자로 쓰는 4절 제목 규칙의 표기가 그대로 쓸 거리다. 같은 문장 뒷부분이나 정의 절에 그 기호가 수식으로 다시 나오므로 제목 규칙의 \"본문 첫 등장은 수식으로 다시 쓴다\" 도 지켜진다. markdown-it 으로 \"**$\\Sigma^1_1$ 경계 정리(...)** 는\" 이 strong 을 제대로 닫는 것은 확인했지만, GitHub 의 MathJax 가 strong 안의 수식을 어떻게 넘기는지는 이 세션이 확인할 수 없어 평문 쪽을 골랐다. 굵게 안 수식을 쓸 수 있는지는 독자가 판단할 자리다.\n\n남은 179 개는 59차와 60차가 적은 대로 개요 첫 문단이 정의가 아니라 배경, 동기, 정리 진술로 시작하는 문서다. 굵게만 넣을 자리가 없으므로 개요를 다시 쓰는 별도 보강 작업이고, 이 항목으로 묶어 한 묶음씩 처리할 일이 아니다. 집계는 for f in docs/*.md 로 개관을 뺀 뒤 개요 첫 문단에 ** 가 있는지 보는 한 줄로 낸다.\n66차(2026-10-19)에 이 항목은 완료로 판정되었다. 제목의 '179 곳' 은 5a5743af 가 적은 대로 기준이 다른 수이고, 규칙 #3 의 실제 기준('개요나 정의 절에서 제목 용어를 굵게')으로 센 잔량은 0 이다. 근거와 상시 검사 한 줄은 p40 항목 '규칙 #3 상시 검사: 집계 37 이 기준선, 실제 잔량 0' 의 note 에 있다. 이 항목은 55~61차의 처리 기록으로만 남긴다. pop 으로 꺼내지 말고 priority 를 올리지 말라.\n",
       "createdAt": "2026-10-19T04:56:38.460Z",
       "seq": 2230
-    },
-    {
-      "id": "97ae9a83",
-      "title": "무리수와 지수함수의 e 무리성 증명 중복",
-      "priority": 30,
-      "note": "2026-10-29 회차에 irrational-numbers 를 쓰며 e 의 무리성 증명(Fourier 의 q! 곱 논법)을 성질 절에 넣었는데 exponential-function 의 성질 절에도 '정리. e 는 무리수다' 가 있다. 한쪽을 본문 링크로 바꿀지 판단한다. 무리수 쪽은 sqrt 2, e, pi 를 한 절씩 두는 구성이라 남기는 쪽이 자연스럽다.",
-      "createdAt": "2026-10-29T13:14:31.197Z",
-      "seq": 2568
     },
     {
       "id": "8df79c51",
@@ -2500,20 +2500,12 @@
       "seq": 2546
     },
     {
-      "id": "09c8d29b",
-      "title": "생일 문제를 충돌 계산 문서들의 부모로 둘지 판정",
+      "id": "135db55b",
+      "title": "2026-10-29 회차 새 문서 열넷의 후속 간선 (남은 것)",
       "priority": 11,
-      "note": "2026-10-29 회차에 birthday-problem 을 probability 아래 리프로 만들었다. cryptographic-hash-functions, pollard-rho, block-cipher-modes 가 각자 '## 생일 한계' 절에서 같은 계산을 되풀이한다. 세 문서의 선수지식에 birthday-problem 을 더하고 각 절을 한 문장과 링크로 줄일지 판정한다. 부모 수 4 이하 확인",
-      "createdAt": "2026-10-29T05:01:21.475Z",
-      "seq": 2556
-    },
-    {
-      "id": "a3295ee0",
-      "title": "2026-10-29 회차 새 문서 열넷의 후속 간선",
-      "priority": 11,
-      "note": "primitive-roots carmichael-function artin-primitive-root-conjecture zsigmondy-theorem wilson-theorem farey-sequences perfect-numbers pythagorean-triples lucas-theorem frobenius-coin-problem laplace-transform cayley-formula coupon-collector ballot-theorem birthday-problem. 대부분 리프다. 후보: farey-sequences -> circle-method(Farey 분할), laplace-transform -> 전달함수나 갱신 이론 문서, cayley-formula -> 무작위 나무 문서, frobenius-coin-problem -> 수치 반군 문서(없음). Stern-Brocot 나무, Ford 원, 합동수 문제, Weierstrass 틈 정리는 문서가 없고 해당 문서 본문에 이름만 있다",
-      "createdAt": "2026-10-29T05:01:21.568Z",
-      "seq": 2557
+      "note": "primitive-roots carmichael-function artin-primitive-root-conjecture zsigmondy-theorem wilson-theorem perfect-numbers pythagorean-triples lucas-theorem frobenius-coin-problem laplace-transform cayley-formula coupon-collector ballot-theorem. 대부분 리프다. farey-sequences -> circle-method 는 e250542b 에서 그었다. birthday-problem 은 09c8d29b 로 처리했다. 남은 후보: laplace-transform -> 전달함수나 갱신 이론 문서, cayley-formula -> 무작위 나무 문서, frobenius-coin-problem -> 수치 반군 문서(없음). Stern-Brocot 나무, Ford 원, 합동수 문제, Weierstrass 틈 정리는 문서가 없고 해당 문서 본문에 이름만 있다",
+      "createdAt": "2026-10-29T16:46:38.233Z",
+      "seq": 2570
     },
     {
       "id": "09c81cac",
@@ -3956,12 +3948,20 @@
       "seq": 2536
     },
     {
-      "id": "302565f0",
-      "title": "Euler–Mascheroni 상수",
+      "id": "e53e5b29",
+      "title": "Dirichlet 약수 문제",
       "priority": 10,
-      "note": "abel-summation 의 '조화합의 점근식' 절과 euler-maclaurin 의 'Euler 상수' 절이 각자 정의한다. 문서로 세우면 abel-summation 의 자식 후보. 무리수성 미해결은 출처 각주가 필요하다. 먼저 두 절의 중복이 문서 하나로 설 만큼인지 판단한다.",
-      "createdAt": "2026-10-29T08:39:42.030Z",
-      "seq": 2558
+      "note": "#number_theory #analysis. 부모 후보 dirichlet-series, abel-summation(쌍곡선 방법). sum d(n)=x log x+(2γ-1)x+O(sqrt x) 와 오차 지수. dirichlet-series 활용 절과 euler-mascheroni-constant 활용 절이 이름만 적는다. 정수론 개관 해석적 갈래에 넣는다",
+      "createdAt": "2026-10-29T16:43:57.458Z",
+      "seq": 2569
+    },
+    {
+      "id": "9dc760a4",
+      "title": "Pearson 카이제곱 적합도 검정",
+      "priority": 10,
+      "note": "#statistics. 부모 chi-squared-distribution, hypothesis-testing. 통계량 sum (O-E)^2/E 의 chi^2_{m-1} 극한(다항분포의 정규근사). chi-squared-distribution 활용 절이 이름만 적는다. 통계 개관 검정과 구간 갈래",
+      "createdAt": "2026-10-29T17:05:28.714Z",
+      "seq": 2572
     },
     {
       "id": "dfb3e493",
