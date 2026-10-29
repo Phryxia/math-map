@@ -58,7 +58,7 @@ $$
 f_{S_n}(t)=\frac{\lambda^nt^{n-1}}{(n-1)!}e^{-\lambda t}\qquad(t\ge 0)
 $$
 
-증명의 요지. $n$ 에 대한 귀납법으로 $f_{S_{n-1}}$ 과 $f$ 의 합성곱을 계산한다. $\int_0^t\frac{\lambda^{n-1}s^{n-2}}{(n-2)!}e^{-\lambda s}\lambda e^{-\lambda(t-s)}\thinspace ds$ 에서 지수 인수가 $e^{-\lambda t}$ 로 모이고 남는 적분이 $t^{n-1}/(n-1)$ 이다. 이 분포를 감마분포(gamma distribution) $\Gamma(n,\lambda)$ 라 하고, $n$ 을 양의 실수로 넓힐 때 $(n-1)!$ 자리에 [감마 함수](gamma-function.md) $\Gamma(n)$ 이 들어간다.
+증명의 요지. $n$ 에 대한 귀납법으로 $f_{S_{n-1}}$ 과 $f$ 의 합성곱을 계산한다. $\int_0^t\frac{\lambda^{n-1}s^{n-2}}{(n-2)!}e^{-\lambda s}\lambda e^{-\lambda(t-s)}\thinspace ds$ 에서 지수 인수가 $e^{-\lambda t}$ 로 모이고 남는 적분이 $t^{n-1}/(n-1)$ 이다. 이 분포를 [감마분포](gamma-distribution.md) $\Gamma(n,\lambda)$ 라 하고, $n$ 을 양의 실수로 넓힐 때 $(n-1)!$ 자리에 [감마 함수](gamma-function.md) $\Gamma(n)$ 이 들어간다.
 
 # 활용
 
@@ -81,5 +81,6 @@ $$
 ## 더 알아보기
 
 - [Poisson 과정](poisson-process.md)
+- [감마분포](gamma-distribution.md)
 
 #probability #statistics #analysis

@@ -28,7 +28,7 @@ $$
 
 ## 감마 표현
 
-**명제.** $Y_1,\dots,Y_m$ 이 독립이고 $Y_j$ 가 형태 모수 $\alpha_j$, 척도 $1$ 인 감마분포(gamma distribution)를 따르면 $X=(Y_1,\dots,Y_m)/\sum_jY_j$ 는 $\mathrm{Dir}(\alpha)$ 를 따르고 $\sum_jY_j$ 와 독립이다.
+**명제.** $Y_1,\dots,Y_m$ 이 독립이고 $Y_j$ 가 형태 모수 $\alpha_j$, 척도 $1$ 인 [감마분포](gamma-distribution.md)(gamma distribution)를 따르면 $X=(Y_1,\dots,Y_m)/\sum_jY_j$ 는 $\mathrm{Dir}(\alpha)$ 를 따르고 $\sum_jY_j$ 와 독립이다.
 
 $(Y_1,\dots,Y_m)$ 의 결합밀도 $\prod_jy_j^{\alpha_j-1}e^{-y_j}/\Gamma(\alpha_j)$ 에서 $t=\sum_jy_j$, $x_j=y_j/t$ 로 변수를 바꾸면 야코비안(Jacobian)이 $t^{m-1}$ 이고, 밀도가 $t^{\alpha_0-1}e^{-t}$ 와 $\prod_jx_j^{\alpha_j-1}$ 의 곱으로 갈라진다. $\square$
 

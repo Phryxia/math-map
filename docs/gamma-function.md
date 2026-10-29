@@ -142,7 +142,7 @@ $\Gamma$ 자체는 금방 넘치지만 로그는 넘치지 않으므로 $\log\Ga
 
 ## 부피와 확률분포
 
-$n$ 차원 단위공의 부피와 감마분포의 정규화 상수가 같은 뿌리에서 나온다.
+$n$ 차원 단위공의 부피와 [감마분포](gamma-distribution.md)의 정규화 상수가 같은 뿌리에서 나온다.
 
 $$
 \mathrm{vol}(B^{n})=\frac{\pi^{n/2}}{\Gamma\negthinspace\left(\frac n2+1\right)},

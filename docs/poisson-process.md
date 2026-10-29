@@ -32,7 +32,7 @@ $$
 \Pr[T\gt t+s\mid T\gt s]=\Pr[T\gt t]=e^{-\lambda t}
 $$
 
-$S_n$ 은 감마분포 $\Gamma(n,\lambda)$ 를 따르고, $\lbrace N_t\ge n\rbrace=\lbrace S_n\le t\rbrace$ 라는 관계가 두 표현을 잇는다.
+$S_n$ 은 [감마분포](gamma-distribution.md) $\Gamma(n,\lambda)$ 를 따르고, $\lbrace N_t\ge n\rbrace=\lbrace S_n\le t\rbrace$ 라는 관계가 두 표현을 잇는다.
 
 # 성질
 
