@@ -148,6 +148,7 @@ graph TD
 - [Itô 적분](ito-calculus.md): 유계변동이 없는 경로 위의 적분과 Itô 공식
 - [확률미분방정식](stochastic-differential-equations.md): 잡음 항이 들어간 미분방정식의 해와 그 밀도
   - [Ornstein–Uhlenbeck 과정](ornstein-uhlenbeck-process.md): 한 값 쪽으로 끌려 돌아오는 Gauss–Markov 과정, 해의 표현과 정상분포, 지수 감소 공분산
+  - [기하 Brown 운동](geometric-brownian-motion.md): 변화가 현재 값에 비례하는 과정, 로그정규 해와 성장률의 σ²/2 감소, 지수 martingale
   - [Fokker–Planck 방정식](fokker-planck.md): 해의 밀도가 만족하는 편미분방정식, 확률흐름과 정상분포, 세부균형
   - [Langevin 동역학](langevin-dynamics.md): 기울기 흐름에 열잡음을 더한 과정, Gibbs 측도 표본추출과 이산화 편향
   - [Freidlin–Wentzell 이론](freidlin-wentzell.md): 작은 잡음 확률미분방정식의 대편차, 작용범함수와 탈출 시간

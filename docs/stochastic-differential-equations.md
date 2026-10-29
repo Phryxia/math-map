@@ -130,7 +130,7 @@ $$
 
 ## 금융
 
-[Itô 적분](ito-calculus.md)의 활용 절이 다루는 Black–Scholes 편미분방정식은 기하 Brown 운동 SDE 에 Itô 공식을 적용한 결과다. 위험중립측도로 옮기는 과정이 [Girsanov 정리](girsanov.md)의 표류항 변경이고, 옮긴 뒤의 가격이 Feynman–Kac 공식의 기댓값 표현이다. 미국형 옵션은 종료 시각을 고르는 문제이므로 [최적 정지](optimal-stopping.md)의 자유경계 문제가 된다.
+[Itô 적분](ito-calculus.md)의 활용 절이 다루는 Black–Scholes 편미분방정식은 [기하 Brown 운동](geometric-brownian-motion.md) SDE 에 Itô 공식을 적용한 결과다. 위험중립측도로 옮기는 과정이 [Girsanov 정리](girsanov.md)의 표류항 변경이고, 옮긴 뒤의 가격이 Feynman–Kac 공식의 기댓값 표현이다. 미국형 옵션은 종료 시각을 고르는 문제이므로 [최적 정지](optimal-stopping.md)의 자유경계 문제가 된다.
 
 ## 통계물리
 
@@ -156,10 +156,19 @@ $$
 
 ## 더 알아보기
 
+### 해의 분포와 편미분방정식
+
 - [Feynman–Kac 공식](feynman-kac.md)
 - [Fokker–Planck 방정식](fokker-planck.md)
+
+### 닫힌 꼴로 풀리는 과정
+
+- [Ornstein–Uhlenbeck 과정](ornstein-uhlenbeck-process.md)
+- [기하 Brown 운동](geometric-brownian-motion.md)
+
+### 응용과 점근
+
 - [확산모형](diffusion-models.md)
 - [Freidlin–Wentzell 이론](freidlin-wentzell.md)
-- [Ornstein–Uhlenbeck 과정](ornstein-uhlenbeck-process.md)
 
 #probability #analysis #machine_learning

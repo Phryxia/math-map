@@ -60,7 +60,7 @@ $$
 
 # 활용
 
-- [Black–Scholes 방정식](black-scholes-equation.md)은 주가를 기하 [Brown 운동](brownian-motion.md)(geometric Brownian motion) $S_t=S_0\exp\bigl((r-\sigma^2/2)t+\sigma W_t\bigr)$ 으로 둔다. $W_t\sim N(0,t)$ 이므로 $S_t$ 는 로그정규분포를 따르고, 유럽형 옵션(European option)의 가격은 이 분포에 대한 적분으로 나온다. 이 밀도는 [Fokker–Planck 방정식](fokker-planck.md)의 해이기도 하다.
+- [Black–Scholes 방정식](black-scholes-equation.md)은 주가를 [기하 Brown 운동](geometric-brownian-motion.md) $S_t=S_0\exp\bigl((r-\sigma^2/2)t+\sigma W_t\bigr)$ 으로 둔다. $W_t\sim N(0,t)$ 이므로 $S_t$ 는 로그정규분포를 따르고, 유럽형 옵션(European option)의 가격은 이 분포에 대한 적분으로 나온다. 이 밀도는 [Fokker–Planck 방정식](fokker-planck.md)의 해이기도 하다.
 - [특성함수](characteristic-functions.md)는 적률열이나 적률생성함수가 분포를 정하지 못하는 경우에도 분포를 정한다. 로그정규분포가 적률열이 실패하는 예다.
 - 독립인 작은 배율이 곱으로 쌓이는 양, 곧 입자의 크기, 소득, 생물의 몸 크기를 로그정규분포로 두는 근거가 곱의 극한 정리다. 이 모형을 Gibrat 법칙(Gibrat's law)이라 한다.[^2]
 
@@ -75,6 +75,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [기하 Brown 운동](geometric-brownian-motion.md)
 
 #probability #statistics #analysis
