@@ -63,6 +63,7 @@ graph TD
   - [기하분포](geometric-distribution.md): 첫 성공까지의 시행 횟수, 무기억성과 지수분포로의 극한, 음이항분포
     - [쿠폰 수집가 문제](coupon-collector.md): n 종류를 모두 모으는 데 걸리는 평균 n Hₙ 번의 뽑기, 꼬리 확률과 Gumbel 극한
   - [다항분포](multinomial-distribution.md): 결과가 여러 가지인 독립 시행의 결과별 횟수, 음의 공분산과 Poisson 표현, Pearson 카이제곱 통계량의 극한
+  - [초기하분포](hypergeometric-distribution.md): 되돌려 넣지 않고 뽑을 때 표시된 것의 개수, 유한 모집단 수정과 이항분포 근사
 - [Poisson 분포](poisson-distribution.md): 희귀 사건의 개수 분포, 이항분포의 극한과 Le Cam 오차 한계
 - [확률밀도](probability-density.md): 분포를 기준측도로 적분해 쓴 함수와 밀도가 없는 분포
   - [균등분포](uniform-distribution.md): 범위 안의 값이 똑같이 나오기 쉬운 분포, 역변환 표본추출과 확률 적분 변환, 순서통계량

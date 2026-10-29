@@ -85,5 +85,6 @@ $n$ 이 커질 때 이항분포는 $p$ 를 어떻게 두느냐에 따라 두 분
 - [기하분포](geometric-distribution.md)
 - [Poisson 분포](poisson-distribution.md)
 - [다항분포](multinomial-distribution.md)
+- [초기하분포](hypergeometric-distribution.md)
 
 #probability #statistics #combinatorics
