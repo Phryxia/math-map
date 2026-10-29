@@ -150,7 +150,7 @@ $$
 p(x)=\frac{\lambda^{\alpha}}{\Gamma(\alpha)}x^{\alpha-1}e^{-\lambda x}
 $$
 
-앞의 식에서 $\Gamma$ 가 분모에 있으므로 $n$ 이 커지면 부피가 0 으로 급격히 줄어든다. [구 채우기](sphere-packing.md)의 밀도 평가가 이 값을 쓴다. 뒤의 감마분포는 [지수분포](exponential-distribution.md)의 합이며 $\alpha=n/2$ 와 $\lambda=1/2$ 이면 자유도 $n$ 의 카이제곱분포가 되어 [가설검정](hypothesis-testing.md)의 기본 분포가 된다. [지수족](exponential-families.md)의 로그분배함수가 $\log\Gamma$ 로 쓰이는 것도 같은 사정이다.
+앞의 식에서 $\Gamma$ 가 분모에 있으므로 $n$ 이 커지면 부피가 0 으로 급격히 줄어든다. [구 채우기](sphere-packing.md)의 밀도 평가가 이 값을 쓴다. 뒤의 감마분포는 [지수분포](exponential-distribution.md)의 합이며 $\alpha=n/2$ 와 $\lambda=1/2$ 이면 자유도 $n$ 의 [카이제곱 분포](chi-squared-distribution.md)가 되어 [가설검정](hypothesis-testing.md)의 기본 분포가 된다. [지수족](exponential-families.md)의 로그분배함수가 $\log\Gamma$ 로 쓰이는 것도 같은 사정이다.
 
 ## 조합론적 근사
 

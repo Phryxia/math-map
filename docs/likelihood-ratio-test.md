@@ -2,7 +2,7 @@
 
 # 개요
 
-**가능도비 검정(likelihood ratio test)** 은 가설 아래에서 자료가 나올 가능성과 가설 없이 자료에 가장 잘 맞춘 경우의 가능성을 견주어, 그 비가 작으면 가설을 버리는 검정이다. 동전을 $100$ 번 던져 앞면이 $60$ 번 나왔을 때 앞면 확률이 $1/2$ 이라는 가설 아래의 가능도와 가장 잘 맞는 $p=0.6$ 의 가능도를 견주면, 그 비가 얼마나 작아야 가설을 버릴지 정할 기준이 있어야 한다. 가능도비 검정은 비의 로그에 $-2$ 를 곱한 통계량이 표본이 클 때 카이제곱 분포를 따른다는 Wilks 정리(Wilks' theorem)로 그 기준을 정한다.
+**가능도비 검정(likelihood ratio test)** 은 가설 아래에서 자료가 나올 가능성과 가설 없이 자료에 가장 잘 맞춘 경우의 가능성을 견주어, 그 비가 작으면 가설을 버리는 검정이다. 동전을 $100$ 번 던져 앞면이 $60$ 번 나왔을 때 앞면 확률이 $1/2$ 이라는 가설 아래의 가능도와 가장 잘 맞는 $p=0.6$ 의 가능도를 견주면, 그 비가 얼마나 작아야 가설을 버릴지 정할 기준이 있어야 한다. 가능도비 검정은 비의 로그에 $-2$ 를 곱한 통계량이 표본이 클 때 [카이제곱 분포](chi-squared-distribution.md)를 따른다는 Wilks 정리(Wilks' theorem)로 그 기준을 정한다.
 
 # 직관
 
@@ -34,10 +34,6 @@ $$
 
 가능도비 검정은 $\Lambda(x)\le c$ 일 때 기각하는 검정이고, 같은 것을 $\lambda_n=-2\log\Lambda=2\big(\ell(\hat\theta)-\ell(\hat\theta_0)\big)$ 가 문턱 이상일 때 기각한다고 쓴다.
 
-## 카이제곱 분포
-
-독립인 표준정규 확률변수 $Z_1,\dots,Z_k$ 의 제곱합 $Z_1^2+\cdots+Z_k^2$ 의 분포를 자유도 $k$ 인 **카이제곱 분포(chi-squared distribution)** $\chi^2_k$ 라 한다. [정규분포](normal-distribution.md)에서 바로 정의되고 평균은 $k$ 다.
-
 ## 단순가설의 경우
 
 $\Theta=\lbrace\theta_0,\theta_1\rbrace$ 이고 $\Theta_0=\lbrace\theta_0\rbrace$ 이면 $\Lambda=\min\big(1,\thinspace L(\theta_0)/L(\theta_1)\big)$ 이다. $c\lt 1$ 에서 $\Lambda\le c$ 는 $L(\theta_1)/L(\theta_0)\ge 1/c$ 와 같으므로, 가능도비 검정이 Neyman–Pearson 보조정리의 최강력 검정과 일치한다.
@@ -49,7 +45,7 @@ $\Theta=\lbrace\theta_0,\theta_1\rbrace$ 이고 $\Theta_0=\lbrace\theta_0\rbrace
 **정리(Wilks, 1938).** $\Theta$ 가 $\mathbb R^p$ 의 열린 집합이고 $\Theta_0$ 이 그 안의 $p-k$ 차원 매끄러운 부분다양체이며 참값 $\theta^\ast$ 가 $\Theta_0$ 에 속한다고 하자. 최대가능도 추정의 정칙 조건 아래
 
 $$
--2\log\Lambda\ \xrightarrow{d}\ \chi^2_k\qquad(n\to\infty)
+-2\log\Lambda\thinspace\xrightarrow{d}\thinspace\chi^2_k\qquad(n\to\infty)
 $$
 
 이다.[^1]
@@ -97,6 +93,7 @@ $$
 
 - [가설검정](hypothesis-testing.md)
 - [Fisher 정보](fisher-information.md)
+- [카이제곱 분포](chi-squared-distribution.md)
 
 ## 더 알아보기
 

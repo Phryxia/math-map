@@ -47,6 +47,7 @@ graph TD
 
 먼저 읽을 갈래: 추정. 먼저 읽을 것: [중심극한정리](central-limit-theorem.md), [반복로그 법칙](law-of-iterated-logarithm.md)(확률 개관). 시작 문서: [가설검정](hypothesis-testing.md).
 
+- [카이제곱 분포](chi-squared-distribution.md): 독립 표준정규의 제곱합의 분포, 정규 표본의 표본분산과 Wilks 극한
 - [가설검정](hypothesis-testing.md): 귀무가설과 검정통계량, 제1종·제2종 오류, Neyman–Pearson 보조정리
   - [가능도비 검정](likelihood-ratio-test.md): 두 모수 집합 위의 최대 가능도의 비로 세우는 검정, Wilks 정리의 카이제곱 극한
   - [거짓 발견률](false-discovery-rate.md): 여러 가설을 함께 검정할 때 기각한 것 가운데 잘못 기각한 것의 비율의 기댓값. Benjamini–Hochberg 절차와 의존하는 p-값
