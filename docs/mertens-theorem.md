@@ -22,7 +22,7 @@ $$
 
 전개가 소인수분해를 느슨하게 쓴 탓이니, 소인수분해를 등식으로 쓸 수 있는 양을 센다. $\log n=\sum\_{p^k\mid n}\log p$ 이므로 $\sum\_{n\le x}\log n$ 을 두 가지로 계산한다. 왼쪽은 Stirling 으로 $x\log x-x+O(\log x)$ 다. 오른쪽은 $p^k\le x$ 인 각 소수 거듭제곱마다 그 배수의 개수 $\lfloor x/p^k\rfloor$ 를 세어 $\log p$ 를 더한 것이고, $k\ge 2$ 인 항의 합은 $O(x)$ 다. 두 계산을 맞추면 $\sum\_{p\le x}(\log p)/p=\log x+O(1)$ 이고, 이 등식에는 상한과 하한이 함께 들어 있다.
 
-가중 $\log p$ 를 Abel 합으로 떼면 $\sum\_{p\le x}1/p$ 의 값이 $\log\log x$ 에 상수를 더한 것으로 정해지고, 다시 지수로 올리면 Euler 곱의 크기가 정해진다.
+가중 $\log p$ 를 [Abel 합산 공식](abel-summation.md)으로 떼면 $\sum\_{p\le x}1/p$ 의 값이 $\log\log x$ 에 상수를 더한 것으로 정해지고, 다시 지수로 올리면 Euler 곱의 크기가 정해진다.
 
 # 정의
 

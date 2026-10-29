@@ -65,6 +65,7 @@ graph TD
 - [균등연속](uniform-continuity.md): $\delta$ 를 점에 의존하지 않게 고른 조건, Heine–Cantor 정리
 - [균등수렴](uniform-convergence.md): 연속성과 적분을 극한과 바꿔 쓸 수 있게 하는 조건
 - [급수의 수렴판정](series-convergence.md): 비교, 비율, 근, 적분, 교대급수 판정과 재배열
+  - [Abel 합산 공식](abel-summation.md): 곱의 합을 부분합과 이웃한 항의 차로 바꿔 쓰는 등식, Dirichlet 판정법과 조화합의 점근식
 
 ## 함수공간의 근사정리
 

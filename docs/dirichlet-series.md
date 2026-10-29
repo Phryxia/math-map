@@ -80,7 +80,7 @@ $$
 D(s)=s\int_{1}^{\infty}\frac{A(x)}{x^{s+1}}\thinspace dx
 $$
 
-증명의 요지는 Abel 합산이다. $a_n=A(n)-A(n-1)$ 을 대입해 합을 재배열하면 $\sum_n A(n)(n^{-s}-(n+1)^{-s})$ 가 되고, $n^{-s}-(n+1)^{-s}=s\int_n^{n+1}x^{-s-1}\thinspace dx$ 를 쓰면 적분이 된다.
+증명의 요지는 [Abel 합산 공식](abel-summation.md)이다. $a_n=A(n)-A(n-1)$ 을 대입해 합을 재배열하면 $\sum_n A(n)(n^{-s}-(n+1)^{-s})$ 가 되고, $n^{-s}-(n+1)^{-s}=s\int_n^{n+1}x^{-s-1}\thinspace dx$ 를 쓰면 적분이 된다.
 
 **따름정리.** $A(x)=O(x^{\theta})$ 이면 $\sigma_c\le\theta$ 다. 거꾸로 적분 표현의 극의 위치가 $A(x)$ 의 크기를 제약한다.
 
