@@ -50,7 +50,7 @@ $$
 
 이다. 둘째 항은 [이항분포](binomial-distribution.md)의 한 확률의 로그이므로 $0$ 이하다.
 
-사전분포를 매개변수 $(1/2,1/2)$ 인 Beta 분포로 바꾸어 $(S_n+1/2)/(n+1)$ 로 예측하면 이 차가 $\frac12\log n+O(1)$ 로 줄어든다. 이 예측을 **Krichevsky–Trofimov 추정량(Krichevsky–Trofimov estimator)** 이라 한다.[^1]
+사전분포를 매개변수 $(1/2,1/2)$ 인 [Beta 분포](beta-distribution.md)로 바꾸어 $(S_n+1/2)/(n+1)$ 로 예측하면 이 차가 $\frac12\log n+O(1)$ 로 줄어든다. 이 예측을 **Krichevsky–Trofimov 추정량(Krichevsky–Trofimov estimator)** 이라 한다.[^1]
 
 # 활용
 
