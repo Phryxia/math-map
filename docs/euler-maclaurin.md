@@ -154,7 +154,7 @@ $$
 \sum_{a=1}^{n}\frac1a=\log n+\gamma+\frac1{2n}-\sum_{k=1}^{K}\frac{B_{2k}}{2k\thinspace n^{2k}}+R_K
 $$
 
-$\gamma$ 는 공식이 만들어 내는 적분상수이고, 이 식이 $\gamma$ 를 고정밀로 얻는 표준 방법이다. $n=10$ , $K=6$ 에서 오차가 $10^{-15}$ 이다. 전개는 조화수와 $\log n$ 의 차이를 모든 차수로 준다.
+[Euler–Mascheroni 상수](euler-mascheroni-constant.md) $\gamma$ 는 공식이 만들어 내는 적분상수이고, 이 식이 $\gamma$ 를 고정밀로 얻는 표준 방법이다. $n=10$ , $K=6$ 에서 오차가 $10^{-15}$ 이다. 전개는 조화수와 $\log n$ 의 차이를 모든 차수로 준다.
 
 ## 격자합과 이산화 오차
 

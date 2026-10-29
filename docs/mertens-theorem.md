@@ -26,7 +26,7 @@ $$
 
 # 정의
 
-$p$ 는 소수를 지나고 $\gamma$ 는 Euler–Mascheroni 상수다. 세 추정을 차례로 **제1, 제2, 제3 Mertens 정리**라 한다.[^1]
+$p$ 는 소수를 지나고 $\gamma$ 는 [Euler–Mascheroni 상수](euler-mascheroni-constant.md)다. 세 추정을 차례로 **제1, 제2, 제3 Mertens 정리**라 한다.[^1]
 
 $$
 \sum\_{p\le x}\frac{\log p}{p}=\log x+O(1)

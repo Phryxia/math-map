@@ -64,7 +64,7 @@ $$
 \sum_{n\le x}\frac1n=\frac{\lfloor x\rfloor}{x}+\int_1^x\frac{\lfloor t\rfloor}{t^2}\thinspace dt=\log x+1-\int_1^{\infty}\frac{\lbrace t\rbrace}{t^2}\thinspace dt+O\left(\frac1x\right)
 $$
 
-$0\le\lbrace t\rbrace\lt 1$ 이므로 마지막 적분은 수렴하고 꼬리는 $1/x$ 를 넘지 않는다. 상수 $\gamma=1-\int_1^{\infty}\lbrace t\rbrace t^{-2}\thinspace dt$ 를 **Euler–Mascheroni 상수(Euler–Mascheroni constant)** 라 한다. 이 점근식의 $O(1/x)$ 부분을 더 높은 차수까지 전개하는 것이 [Euler–Maclaurin 공식](euler-maclaurin.md)이다.
+$0\le\lbrace t\rbrace\lt 1$ 이므로 마지막 적분은 수렴하고 꼬리는 $1/x$ 를 넘지 않는다. 상수 $\gamma=1-\int_1^{\infty}\lbrace t\rbrace t^{-2}\thinspace dt$ 가 [Euler–Mascheroni 상수](euler-mascheroni-constant.md)다. 이 점근식의 $O(1/x)$ 부분을 더 높은 차수까지 전개하는 것이 [Euler–Maclaurin 공식](euler-maclaurin.md)이다.
 
 # 활용
 
@@ -83,6 +83,6 @@ $0\le\lbrace t\rbrace\lt 1$ 이므로 마지막 적분은 수렴하고 꼬리는
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Euler–Mascheroni 상수](euler-mascheroni-constant.md)
 
 #analysis #number_theory

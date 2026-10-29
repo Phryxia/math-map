@@ -36,7 +36,7 @@ $$
 \mathbb E\lbrack T_n\rbrack=\sum_{i=1}^{n}\frac{n}{n-i+1}=nH_n=n\ln n+\gamma n+\frac12+O\Big(\frac1n\Big)
 $$
 
-$\gamma\approx 0.5772$ 는 Euler–Mascheroni 상수(Euler–Mascheroni constant)다. 기하분포의 평균 $1/p_i$ 를 더하고 [유한 확률 공간](probability.md)의 기댓값의 선형성을 쓴 것이다.
+$\gamma\approx 0.5772$ 는 [Euler–Mascheroni 상수](euler-mascheroni-constant.md)다. 기하분포의 평균 $1/p_i$ 를 더하고 [유한 확률 공간](probability.md)의 기댓값의 선형성을 쓴 것이다.
 
 ## 분산
 

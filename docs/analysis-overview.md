@@ -169,6 +169,7 @@ graph TD
   - [Tauber 정리](tauberian-theorems.md): 평균의 수렴에 항의 조건을 더해 급수의 수렴과 점근을 얻는 정리, Tauber 와 Hardy–Littlewood 의 정리와 Karamata 의 다항식 근사 증명
   - [지수함수](exponential-function.md): 도함수가 자신과 같은 급수, 덧셈 법칙과 자연로그, 다항식보다 빠른 증가, e 의 무리수성
     - [쌍곡함수](hyperbolic-functions.md): 지수함수를 짝과 홀로 가른 두 함수, 삼각 항등식과 부호만 다른 항등식
+    - [Euler–Mascheroni 상수](euler-mascheroni-constant.md): 조화수와 로그의 차이의 극한, 감마 함수의 도함수와 zeta 함수의 상수항
   - [삼각함수](trigonometric-functions.md): 급수로 정의한 사인과 코사인, 덧셈정리와 원주율, 단위원의 매개화와 Leibniz 급수
 - [점근급수](asymptotic-series.md): 수렴을 요구하지 않는 전개와 나머지항 조건, 최적 절단, Watson 보조정리
 - [Euler–Maclaurin 공식](euler-maclaurin.md): 합과 적분의 차이를 도함수 값의 급수로 전개

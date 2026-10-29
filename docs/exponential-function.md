@@ -75,5 +75,6 @@ $e$ 는 [무리수](irrational-numbers.md)다. 증명은 $e=p/q$ 로 두고 $q!$
 
 - [쌍곡함수](hyperbolic-functions.md)
 - [Poisson 분포](poisson-distribution.md)
+- [Euler–Mascheroni 상수](euler-mascheroni-constant.md)
 
 #analysis #complex_analysis #number_theory
