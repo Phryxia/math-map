@@ -8,7 +8,7 @@
 
 Poisson 과정은 시간 축 위에 사건이 무작위로 흩어지는 가장 단순한 계수과정이다. 세 조건, 곧 독립증분, 정상증분, 짧은 구간에서 사건이 둘 이상 일어나지 않음이 과정을 하나로 결정한다.
 
-대기시간이 지수분포이고 구간별 사건 수가 Poisson 분포를 따른다는 두 서술이 같은 과정을 가리킨다. 전화 호출, 방사성 붕괴, 대기행렬의 도착이 표준 모형이다.
+대기시간이 [지수분포](exponential-distribution.md)이고 구간별 사건 수가 Poisson 분포를 따른다는 두 서술이 같은 과정을 가리킨다. 전화 호출, 방사성 붕괴, 대기행렬의 도착이 표준 모형이다.
 
 $[0,t]$ 를 $n$ 등분하고 각 칸에서 확률 $\lambda t/n$ 로 독립하게 사건이 일어난다고 하자. 사건 수는 [이항분포](binomial-distribution.md) $\mathrm{B}(n,\lambda t/n)$ 을 따르고, $n\to\infty$ 에서 평균 $\lambda t$ 를 유지한 채 Poisson 분포로 수렴한다. 무한히 잘게 쪼갠 동전 던지기의 극한이 이 과정이다.
 
@@ -72,6 +72,7 @@ $(N_t)$ 는 상태공간 $\lbrace 0,1,2,\dots\rbrace$ 위의 연속시간 [Marko
 
 - [Markov 연쇄](markov-chains.md)
 - [Poisson 분포](poisson-distribution.md)
+- [지수분포](exponential-distribution.md)
 
 ## 더 알아보기
 
