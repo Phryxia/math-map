@@ -133,6 +133,7 @@ Diophantus 방정식의 해 존재, 제곱수 판정, 약수 함수의 계산이
 ### 약수와 Diophantine 문제
 
 - [완전수](perfect-numbers.md)
+- [Pythagoras 세 쌍](pythagorean-triples.md)
 - [abc 추측](abc-conjecture.md)
 
 #number_theory #algorithms #algebra

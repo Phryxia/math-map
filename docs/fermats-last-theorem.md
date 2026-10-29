@@ -56,7 +56,7 @@ $$
 
 **정리(Fermat).** $x^4+y^4=z^2$ 은 $xyz\ne0$ 인 정수해가 없다. $z^4=(z^2)^2$ 이므로 $n=4$ 의 경우가 따라온다.
 
-증명은 무한 강하법(infinite descent)이다. $z$ 가 가장 작은 양의 해를 잡으면 $(x^2,y^2,z)$ 가 서로소인 Pythagoras 세 쌍(Pythagorean triple)이므로 위 매개화를 두 번 적용할 수 있고, 그 결과로 $z$ 보다 작은 새 해가 나온다. 가장 작은 해라는 가정과 모순이다.
+증명은 무한 강하법(infinite descent)이다. $z$ 가 가장 작은 양의 해를 잡으면 $(x^2,y^2,z)$ 가 서로소인 [Pythagoras 세 쌍](pythagorean-triples.md)이므로 그 매개화를 두 번 적용할 수 있고, 그 결과로 $z$ 보다 작은 새 해가 나온다. 가장 작은 해라는 가정과 모순이다.
 
 ## Kummer 정리
 
@@ -103,6 +103,7 @@ Frey 곡선에서 홀수 소수 $\ell\mid abc$ 의 최소 판별식 지수는 $2
 
 - [원분체](cyclotomic-fields.md)
 - [Serre 추측과 Khare–Wintenberger 정리](serre-conjecture.md)
+- [Pythagoras 세 쌍](pythagorean-triples.md)
 
 ## 더 알아보기
 
