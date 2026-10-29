@@ -34,7 +34,7 @@ $$
 \mathbb E\lbrack X\rbrack=e^{\mu+\sigma^2/2},\qquad\mathrm{Var}(X)=\bigl(e^{\sigma^2}-1\bigr)e^{2\mu+\sigma^2}
 $$
 
-증명의 요지. $\mathbb E\lbrack X^k\rbrack=\mathbb E\lbrack e^{kY}\rbrack$ 는 정규분포의 적률생성함수 $e^{k\mu+k^2\sigma^2/2}$ 다.
+증명의 요지. $\mathbb E\lbrack X^k\rbrack=\mathbb E\lbrack e^{kY}\rbrack$ 는 정규분포의 [적률생성함수](moment-generating-function.md) $e^{k\mu+k^2\sigma^2/2}$ 다.
 
 중앙값은 $e^{\mu}$ 이고 최빈값은 $e^{\mu-\sigma^2}$ 이다. 그러므로 최빈값, 중앙값, 평균이 이 순서로 커지고, $\sigma^2$ 이 클수록 셋이 멀어진다. 직관 절의 예에서 $\mu=\log 1000-0.50$, $\sigma^2=1.0$ 이므로 평균은 $1000e^{-0.50+0.50}=1000$ 이다.
 

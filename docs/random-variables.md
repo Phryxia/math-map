@@ -186,6 +186,7 @@ $n$ 명에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 �
 - [확률밀도](probability-density.md)
 - [공분산](covariance.md)
 - [이항분포](binomial-distribution.md)
+- [적률생성함수](moment-generating-function.md)
 
 ### 극한 정리와 부등식
 
