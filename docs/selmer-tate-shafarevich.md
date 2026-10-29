@@ -2,7 +2,7 @@
 
 # 개요
 
-**Selmer 군(Selmer group)** 과 **Tate–Shafarevich 군(Tate–Shafarevich group)** 은 [타원곡선](elliptic-curves.md)의 유리점을 셀 때, 각 소수와 실수에서는 해가 있는데 유리수에서는 해가 없는 곡선들을 다루는 군이다. Selmer 는 1951 년에 $3x^3+4y^3+5z^3=0$ 이 실수에서도 모든 [p 진수](p-adic-numbers.md) 체에서도 $0$ 아닌 해를 갖지만 유리수 해는 갖지 않음을 보였다. 타원곡선의 유리점이 몇 개의 생성원으로 만들어지는지 셀 때, 국소 조건만 보는 계산은 이런 곡선 때문에 실제보다 큰 답을 낸다. 국소 조건으로 걸러낸 계산 가능한 유한군이 Selmer 군이고, 그 답이 실제보다 큰 정도를 재는 군이 Tate–Shafarevich 군이다.
+**Selmer 군(Selmer group)** 과 **Tate–Shafarevich 군(Tate–Shafarevich group)** 은 [타원곡선](elliptic-curves.md)의 유리점을 셀 때, 각 소수와 [실수](real-numbers.md)에서는 해가 있는데 유리수에서는 해가 없는 곡선들을 다루는 군이다. Selmer 는 1951 년에 $3x^3+4y^3+5z^3=0$ 이 실수에서도 모든 [p 진수](p-adic-numbers.md) 체에서도 $0$ 아닌 해를 갖지만 유리수 해는 갖지 않음을 보였다. 타원곡선의 유리점이 몇 개의 생성원으로 만들어지는지 셀 때, 국소 조건만 보는 계산은 이런 곡선 때문에 실제보다 큰 답을 낸다. 국소 조건으로 걸러낸 계산 가능한 유한군이 Selmer 군이고, 그 답이 실제보다 큰 정도를 재는 군이 Tate–Shafarevich 군이다.
 
 # 직관
 

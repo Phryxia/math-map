@@ -88,7 +88,7 @@ $X$ 가 콤팩트 Hausdorff 이면 $\beta X$ 는 $X$ 와 위상동형이다. $e(
 
 - **함수 대수.** 유계 연속함수의 대수 $C_b(X)$ 가 콤팩트 공간 위의 함수 대수 $C(\beta X)$ 와 등거리 동형이다. 가환 $C^\ast$ 대수의 Gelfand 스펙트럼을 공간으로 되돌리는 대응에서 $C_b(X)$ 가 주는 공간이 $X$ 가 아니라 $\beta X$ 이고, [Banach 공간](banach-spaces.md)의 쌍대를 다루는 논법이 이 동형으로 유계 함수를 콤팩트 공간 위로 옮긴다.
 - **[Hindman 정리](hindman-theorem.md).** $\beta\mathbb N$ 에 $\mathbb N$ 의 덧셈을 확장하면 결합적이고 한쪽 변수에서 연속인 연산이 된다. 콤팩트 오른쪽 위상 반군에 멱등원이 있다는 정리를 쓰면 멱등 초필터가 나오고, 거기 드는 집합에서 유한합이 모두 그 집합에 드는 무한 부분집합을 뽑는다. 이 논법이 [Ramsey 이론](ramsey-theory.md)의 분할 정리를 초필터로 증명하는 방법의 하나다.
-- **비표준 해석학.** $\beta\mathbb N\setminus\mathbb N$ 의 점이 자유 초필터이고, 그 초필터로 실수열을 거르면 [초곱](ultraproducts.md)의 구성이 된다.
+- **비표준 해석학.** $\beta\mathbb N\setminus\mathbb N$ 의 점이 자유 초필터이고, 그 초필터로 [실수](real-numbers.md)열을 거르면 [초곱](ultraproducts.md)의 구성이 된다.
 - **점열 논법의 반례.** 거리공간에서 쓰는 점열 수렴 논법이 일반 콤팩트 공간에서 깨지는 표준 예가 $\beta\mathbb N$ 이다. 수렴하지 않는 점열을 담은 콤팩트 공간이므로 점열 콤팩트성과 콤팩트성의 차이를 보인다.
 
 # 연관 문서

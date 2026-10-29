@@ -28,7 +28,7 @@ $$
 
 ## 분위수 함수
 
-실수 위 분포함수 $F$ 의 **분위수 함수**는 다음이다.
+[실수](real-numbers.md) 위 분포함수 $F$ 의 **분위수 함수**는 다음이다.
 
 $$
 F^{-1}(u)=\inf\lbrace x\in\mathbb R: F(x)\ge u\rbrace,\qquad u\in(0,1)

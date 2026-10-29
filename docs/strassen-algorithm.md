@@ -50,7 +50,7 @@ $C\_{11}$ 을 전개하면 $M_1$ 의 $A\_{11}B\_{22}$, $A\_{22}B\_{11}$, $A\_{22
 
 ## 행렬 곱셈 지수
 
-**행렬 곱셈 지수(exponent of matrix multiplication)** $\omega$ 는 체 위의 $n\times n$ 행렬 두 개를 $O(n^\tau)$ 번의 산술 연산으로 곱할 수 있는 실수 $\tau$ 의 하한이다. 곱의 성분 $n^2$ 개를 모두 써야 하므로 $\omega\ge 2$ 이고, Strassen 알고리즘에서 $\omega\le\log_2 7$ 이다.
+**행렬 곱셈 지수(exponent of matrix multiplication)** $\omega$ 는 체 위의 $n\times n$ 행렬 두 개를 $O(n^\tau)$ 번의 산술 연산으로 곱할 수 있는 [실수](real-numbers.md) $\tau$ 의 하한이다. 곱의 성분 $n^2$ 개를 모두 써야 하므로 $\omega\ge 2$ 이고, Strassen 알고리즘에서 $\omega\le\log_2 7$ 이다.
 
 # 성질
 

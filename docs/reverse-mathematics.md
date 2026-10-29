@@ -2,7 +2,7 @@
 
 # 개요
 
-**역수학(reverse mathematics)** 은 수학의 정리를 증명하는 데 어떤 공리가 필요한지 정하는 연구다. 실수의 유계 수열이 수렴하는 부분열을 갖는다는 정리를 증명하려면, 구간을 반씩 자르며 수열의 항이 무한히 많은 쪽을 고를 때마다 무한에 대한 물음에 답해야 한다. 역수학은 [2차 산술](second-order-arithmetic.md)의 약한 체계 위에서 정리로부터 공리가 증명되는지를 보아, 이 정리가 산술적 내포 공리(arithmetical comprehension axiom)와 동치임을 보인다.
+**역수학(reverse mathematics)** 은 수학의 정리를 증명하는 데 어떤 공리가 필요한지 정하는 연구다. [실수](real-numbers.md)의 유계 수열이 수렴하는 부분열을 갖는다는 정리를 증명하려면, 구간을 반씩 자르며 수열의 항이 무한히 많은 쪽을 고를 때마다 무한에 대한 물음에 답해야 한다. 역수학은 [2차 산술](second-order-arithmetic.md)의 약한 체계 위에서 정리로부터 공리가 증명되는지를 보아, 이 정리가 산술적 내포 공리(arithmetical comprehension axiom)와 동치임을 보인다.
 
 # 직관
 

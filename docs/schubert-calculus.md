@@ -97,7 +97,7 @@ Hermite 행렬 세 개의 고윳값이 언제 $A+B=C$ 를 만족할 수 있는�
 
 ## 실수체 위의 해
 
-$\mathbb C$ 위에서 답이 $N$ 이어도 $\mathbb R$ 위의 실해가 $N$ 개라는 보장은 없다. Grassmann 다양체의 Schubert 문제에서는 적절히 배치하면 모든 해가 실수인 경우가 존재한다. Sottile 의 실수성 추측을 Mukhin–Tarasov–Varchenko 가 Gaudin 모형의 스펙트럼 이론으로 증명했다.
+$\mathbb C$ 위에서 답이 $N$ 이어도 $\mathbb R$ 위의 실해가 $N$ 개라는 보장은 없다. Grassmann 다양체의 Schubert 문제에서는 적절히 배치하면 모든 해가 [실수](real-numbers.md)인 경우가 존재한다. Sottile 의 실수성 추측을 Mukhin–Tarasov–Varchenko 가 Gaudin 모형의 스펙트럼 이론으로 증명했다.
 
 ## 양자 코호몰로지 변형
 

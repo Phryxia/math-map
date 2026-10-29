@@ -2,7 +2,7 @@
 
 # 개요
 
-**강 측도 영집합(strong measure zero set)** 은 구간의 길이를 미리 하나씩 정해 주어도 그 길이대로 덮을 수 있는 실수의 집합이다. 셀 수 있는 집합 $\lbrace x_1,x_2,\dots\rbrace$ 는 길이 $\varepsilon_1,\varepsilon_2,\dots$ 가 주어지면 $x_n$ 을 길이 $\varepsilon_n$ 인 구간으로 덮어 끝나지만, [Cantor 집합](cantor-set.md)은 길이의 합을 얼마든지 작게 덮을 수 있는데도 아주 빨리 줄어드는 길이의 열을 정해 주면 덮을 수 없다. 강 측도 영집합은 길이가 $0$ 인 집합 가운데 더 작은 부류를 가르고, 이 부류가 셀 수 있는 집합뿐이라는 [Borel 추측](borel-conjecture.md)은 집합론의 공리로 증명도 반증도 되지 않는다.
+**강 측도 영집합(strong measure zero set)** 은 구간의 길이를 미리 하나씩 정해 주어도 그 길이대로 덮을 수 있는 [실수](real-numbers.md)의 집합이다. 셀 수 있는 집합 $\lbrace x_1,x_2,\dots\rbrace$ 는 길이 $\varepsilon_1,\varepsilon_2,\dots$ 가 주어지면 $x_n$ 을 길이 $\varepsilon_n$ 인 구간으로 덮어 끝나지만, [Cantor 집합](cantor-set.md)은 길이의 합을 얼마든지 작게 덮을 수 있는데도 아주 빨리 줄어드는 길이의 열을 정해 주면 덮을 수 없다. 강 측도 영집합은 길이가 $0$ 인 집합 가운데 더 작은 부류를 가르고, 이 부류가 셀 수 있는 집합뿐이라는 [Borel 추측](borel-conjecture.md)은 집합론의 공리로 증명도 반증도 되지 않는다.
 
 # 직관
 

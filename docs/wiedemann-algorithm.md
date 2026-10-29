@@ -80,7 +80,7 @@ Coppersmith 의 **블록 Wiedemann 알고리즘(block Wiedemann algorithm)** 은
 
 - **인수분해와 이산로그.** [수체 체](number-field-sieve.md)로 RSA(Rivest–Shamir–Adleman) 도전 수 RSA-768 을 인수분해할 때 1.9 억 행 정도의 $\mathbb F_2$ 행렬의 영공간을 블록 Wiedemann 알고리즘으로 구했다. [지표 계산법](index-calculus.md)의 선형대수는 $\mathbb Z/(p-1)$ 위에서 같은 방법을 쓴다.
 - **최소다항식과 행렬식의 계산.** 무작위 대각 행렬을 곱해 $m\_A$ 가 특성다항식과 같아지게 만든 뒤 이 알고리즘을 돌리면 $\det A$ 가 나온다. 희소행렬의 행렬식과 계수를 $O(nw+n^2)$ 에 구하는 방법이다.[^1]
-- **Krylov 부분공간 방법과의 관계.** $b,Ab,\dots$ 가 생성하는 공간에서 해를 찾는다는 점에서 [Krylov 부분공간 방법](krylov-subspace-methods.md)과 같은 공간을 쓴다. 실수 위의 Krylov 방법은 내적과 직교성으로 근사해를 고치고, 이 알고리즘은 유한체 위에서 정확한 점화식으로 해를 얻는다.
+- **Krylov 부분공간 방법과의 관계.** $b,Ab,\dots$ 가 생성하는 공간에서 해를 찾는다는 점에서 [Krylov 부분공간 방법](krylov-subspace-methods.md)과 같은 공간을 쓴다. [실수](real-numbers.md) 위의 Krylov 방법은 내적과 직교성으로 근사해를 고치고, 이 알고리즘은 유한체 위에서 정확한 점화식으로 해를 얻는다.
 
 [^1]: D. H. Wiedemann, "Solving sparse linear equations over finite fields", *IEEE Transactions on Information Theory* 32 (1986), 54–62.
 [^2]: D. Coppersmith, "Solving homogeneous linear equations over GF(2) via block Wiedemann algorithm", *Mathematics of Computation* 62 (1994), 333–350.

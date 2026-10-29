@@ -151,7 +151,7 @@ $$
 \mathrm{Hom}\_S(S \otimes_R M, N) \cong \mathrm{Hom}\_R(M, N)
 $$
 
-구체적인 예가 실수 벡터 공간의 복소화 $\mathbb C \otimes_{\mathbb R} V$ 다. 실수 $n$ 차원 공간은 복소 $n$ 차원 공간이 되고, 실행렬은 같은 성분의 복소행렬이 된다. 실수 위에서는 [고윳값](eigenvalues.md)이 없던 회전행렬이 복소화 후 대각화되는 일이 여기서 일어난다. 국소화 $S^{-1}R \otimes_R M$ 도 같은 형태이며 [국소화](localization-rings.md)에서 다룬다.
+구체적인 예가 [실수](real-numbers.md) 벡터 공간의 복소화 $\mathbb C \otimes_{\mathbb R} V$ 다. 실수 $n$ 차원 공간은 복소 $n$ 차원 공간이 되고, 실행렬은 같은 성분의 복소행렬이 된다. 실수 위에서는 [고윳값](eigenvalues.md)이 없던 회전행렬이 복소화 후 대각화되는 일이 여기서 일어난다. 국소화 $S^{-1}R \otimes_R M$ 도 같은 형태이며 [국소화](localization-rings.md)에서 다룬다.
 
 ## 체 위에서의 단순화
 

@@ -109,7 +109,7 @@ $\gamma_\psi=e^{-\pi i/4}$ 가 8 차 근이고, $w^2=-I$ 를 만족시키려면 
 
 ## 무게 1/2 의 변환식
 
-$\tau=it$ 로 놓으면 변환식 $\theta(-1/\tau)=\sqrt{-i\tau}\thinspace\theta(\tau)$ 는 $\theta_3(1/t)=\sqrt t\thinspace\theta_3(it)$ 로 실수만 남는다.
+$\tau=it$ 로 놓으면 변환식 $\theta(-1/\tau)=\sqrt{-i\tau}\thinspace\theta(\tau)$ 는 $\theta_3(1/t)=\sqrt t\thinspace\theta_3(it)$ 로 [실수](real-numbers.md)만 남는다.
 
 인자 $\sqrt t$ 가 무게 $1/2$ 를 나타내고, 제곱근이 2 겹 덮개의 흔적이다. $t$ 를 순허수 축 바깥으로 움직이면 제곱근의 가지를 고르는 일이 $\mathrm{Mp}$ 의 원소를 고르는 일이 된다.
 

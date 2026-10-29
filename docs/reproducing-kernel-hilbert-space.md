@@ -26,7 +26,7 @@ $$\langle\varphi(x),\varphi(z)\rangle = x_1^2z_1^2+2x_1x_2z_1z_2+x_2^2z_2^2 = (x
 
 ## 양의 준정부호 핵
 
-집합 $\mathcal X$ 에서 $K\colon\mathcal X\times\mathcal X\to\mathbb R$ 가 대칭이고, 임의의 점 $x_1,\dots,x_n$ 과 실수 $c_1,\dots,c_n$ 에 대해
+집합 $\mathcal X$ 에서 $K\colon\mathcal X\times\mathcal X\to\mathbb R$ 가 대칭이고, 임의의 점 $x_1,\dots,x_n$ 과 [실수](real-numbers.md) $c_1,\dots,c_n$ 에 대해
 
 $$\sum_{i=1}^n\sum_{j=1}^n c_ic_jK(x_i,x_j)\ge 0$$
 

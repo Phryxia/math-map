@@ -16,7 +16,7 @@ $$
 -u''=\lambda u,\qquad u(0)=0,\qquad 0\le x\lt \infty
 $$
 
-$\lambda=k^2\gt 0$ 이면 이 조건을 만족하는 해가 $\sin kx$ 이고 $\int_0^\infty\sin^2kx\thinspace dx$ 가 발산한다. $\lambda\le 0$ 이면 $u(0)=0$ 인 해가 $\sinh$ 꼴이거나 $0$ 이다. 어느 실수 $\lambda$ 에서도 제곱적분가능한 해가 없으므로 고윳값이 하나도 없고, 전개할 기저가 나오지 않는다.
+$\lambda=k^2\gt 0$ 이면 이 조건을 만족하는 해가 $\sin kx$ 이고 $\int_0^\infty\sin^2kx\thinspace dx$ 가 발산한다. $\lambda\le 0$ 이면 $u(0)=0$ 인 해가 $\sinh$ 꼴이거나 $0$ 이다. 어느 [실수](real-numbers.md) $\lambda$ 에서도 제곱적분가능한 해가 없으므로 고윳값이 하나도 없고, 전개할 기저가 나오지 않는다.
 
 $\lambda$ 를 실축 밖으로 옮긴다. $z$ 의 허수부가 양수일 때 $\sqrt z$ 를 허수부가 양수인 쪽으로 잡으면 $e^{i\sqrt z\thinspace x}$ 가 지수적으로 감쇠해 제곱적분가능하고 $e^{-i\sqrt z\thinspace x}$ 는 발산한다. 무한원점이 [극한점](limit-point-limit-circle.md)이므로 제곱적분가능한 해가 상수배까지 하나다. 그 해를 $\psi(0)=1$ 로 정규화하면 $\psi'(0)=i\sqrt z$ 라는 수 하나가 남는다.
 

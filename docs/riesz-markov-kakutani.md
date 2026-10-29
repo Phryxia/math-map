@@ -6,7 +6,7 @@
 
 # 직관
 
-Riesz–Markov–Kakutani 표현 정리는 콤팩트 Hausdorff 공간 $K$ 위의 [연속함수](continuity.md)에 실수를 주는 양의 선형범함수가 하나의 측도에 대한 적분이라는 정리다. 범함수 $\Lambda$ 가 주어지면 $\Lambda f=\int_K f\thinspace d\mu$ 인 정칙 Borel 측도 $\mu$ 가 유일하게 존재한다.
+Riesz–Markov–Kakutani 표현 정리는 콤팩트 Hausdorff 공간 $K$ 위의 [연속함수](continuity.md)에 [실수](real-numbers.md)를 주는 양의 선형범함수가 하나의 측도에 대한 적분이라는 정리다. 범함수 $\Lambda$ 가 주어지면 $\Lambda f=\int_K f\thinspace d\mu$ 인 정칙 Borel 측도 $\mu$ 가 유일하게 존재한다.
 
 [부호 측도](signed-measures.md)로 넓히면 연속함수 공간 $C(K)$ 의 [쌍대 공간](dual-space.md)이 $K$ 위의 유한 부호 정칙 Borel 측도의 공간과 같고, 쌍대 노름이 전변동 노름과 같다. 측도를 집합함수로 세우지 않고 연속함수에 대한 평균으로 세울 수 있다는 것이 이 정리의 내용이다.
 

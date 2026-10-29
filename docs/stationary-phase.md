@@ -6,7 +6,7 @@
 
 # 직관
 
-[Laplace 방법](laplace-method.md)은 지수가 실수인 적분 $\int g\thinspace e^{\lambda\varphi}$ 에서 감쇠가 크기를 정한다. 최대점을 벗어나면 피적분함수의 절댓값이 지수적으로 작아지므로 적분은 최대점만 본다.
+[Laplace 방법](laplace-method.md)은 지수가 [실수](real-numbers.md)인 적분 $\int g\thinspace e^{\lambda\varphi}$ 에서 감쇠가 크기를 정한다. 최대점을 벗어나면 피적분함수의 절댓값이 지수적으로 작아지므로 적분은 최대점만 본다.
 
 지수가 순허수이면 사정이 다르다.
 

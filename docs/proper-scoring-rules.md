@@ -28,7 +28,7 @@
 
 기대 초과 손실은 $S(p,q)-S(q,q)$ 이다.
 
-실수 값 결과의 예측 분포함수 $F$ 에는 **연속 순위 확률 점수(continuous ranked probability score, CRPS)** $\int_{\mathbb R}(F(x)-\mathbf 1\lbrace y\le x\rbrace)^2\thinspace dx$ 를 쓴다.
+[실수](real-numbers.md) 값 결과의 예측 분포함수 $F$ 에는 **연속 순위 확률 점수(continuous ranked probability score, CRPS)** $\int_{\mathbb R}(F(x)-\mathbf 1\lbrace y\le x\rbrace)^2\thinspace dx$ 를 쓴다.
 
 # 성질
 

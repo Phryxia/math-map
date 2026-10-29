@@ -20,7 +20,7 @@ Foster 정리는 연결 그래프에서 $\sum_{e\in E}w_eR_e=n-1$ 이라고 한�
 
 $G$ 를 정점 $n$ 개의 연결 가중 무향 그래프, $L_G$ 를 그 [그래프 Laplacian](graph-laplacian.md)이라 한다. $H$ 는 같은 정점 집합 위에서 $G$ 의 간선 일부에 새 가중치를 준 그래프이고, 오차 허용량은 $0 \lt\epsilon \lt 1$ 이다.
 
-$H$ 가 $G$ 의 **spectral sparsifier** 라는 것은 모든 실수 벡터 $x$ 에 대해
+$H$ 가 $G$ 의 **spectral sparsifier** 라는 것은 모든 [실수](real-numbers.md) 벡터 $x$ 에 대해
 
 $$
 (1-\varepsilon)\thinspace x^{\mathsf T}L_Gx\ \le\ x^{\mathsf T}L_Hx\ \le\ (1+\varepsilon)\thinspace x^{\mathsf T}L_Gx

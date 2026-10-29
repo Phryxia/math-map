@@ -86,7 +86,7 @@ $$
 
 ## Selberg 체
 
-절단 대신 가중을 쓴다. $\lambda\_1=1$ 이고 $d\gt D$ 에서 $\lambda\_d=0$ 인 실수열 $\lambda\_d$ 를 잡으면, $\gcd(a,P(z))=1$ 인 $a$ 에서 안쪽 합이 $1$ 이므로
+절단 대신 가중을 쓴다. $\lambda\_1=1$ 이고 $d\gt D$ 에서 $\lambda\_d=0$ 인 [실수](real-numbers.md)열 $\lambda\_d$ 를 잡으면, $\gcd(a,P(z))=1$ 인 $a$ 에서 안쪽 합이 $1$ 이므로
 
 $$
 S(A,\mathcal P,z)\le\sum\_{a\in A}\Bigl(\sum\_{d\mid\gcd(a,P(z))}\lambda\_d\Bigr)^2

@@ -101,7 +101,7 @@ VC 차원 $d_1, d_2$ 인 두 족의 합집합과 교집합은 VC 차원이 $O(d_
 
 ## 경험 분포의 수렴
 
-실수 위의 분포함수를 재는 족은 문턱족이므로 VC 차원이 $1$ 이다. VC 부등식을 그 족에 적용하면 경험 분포함수가 참 분포함수로 균등하게 수렴하고, 이 수렴이 [Glivenko–Cantelli 정리](glivenko-cantelli.md)다. [큰 수의 법칙](law-of-large-numbers.md)이 점마다 주는 수렴을 모든 점에서 동시에 성립시킨다.
+[실수](real-numbers.md) 위의 분포함수를 재는 족은 문턱족이므로 VC 차원이 $1$ 이다. VC 부등식을 그 족에 적용하면 경험 분포함수가 참 분포함수로 균등하게 수렴하고, 이 수렴이 [Glivenko–Cantelli 정리](glivenko-cantelli.md)다. [큰 수의 법칙](law-of-large-numbers.md)이 점마다 주는 수렴을 모든 점에서 동시에 성립시킨다.
 
 ## 범위 공간과 ε-근사
 

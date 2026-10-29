@@ -6,7 +6,7 @@
 
 # 직관
 
-합-곱 문제는 실수의 유한집합 $A$ 에 대해 합집합 $A+A$ 와 곱집합 $A\cdot A$ 가 동시에 작을 수 없다는 것을 정량적으로 묻는 문제다. P. Erdős 와 E. Szemerédi 는 $\max(\lvert A+A\rvert,\lvert A\cdot A\rvert)\ge\lvert A\rvert^{1+c}$ 를 증명하고, 지수를 $2-\varepsilon$ 까지 올릴 수 있다고 추측했다[^1].
+합-곱 문제는 [실수](real-numbers.md)의 유한집합 $A$ 에 대해 합집합 $A+A$ 와 곱집합 $A\cdot A$ 가 동시에 작을 수 없다는 것을 정량적으로 묻는 문제다. P. Erdős 와 E. Szemerédi 는 $\max(\lvert A+A\rvert,\lvert A\cdot A\rvert)\ge\lvert A\rvert^{1+c}$ 를 증명하고, 지수를 $2-\varepsilon$ 까지 올릴 수 있다고 추측했다[^1].
 
 G. Elekes 는 이 문제를 점과 직선의 접촉 문제로 옮겨 Szemerédi–Trotter 정리로 지수 $5/4$ 를 얻었다[^2]. 그 뒤의 개선도 평면의 기하를 쓴다.
 

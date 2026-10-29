@@ -2,7 +2,7 @@
 
 # 개요
 
-**대수군의 Tamagawa 수(Tamagawa number of an algebraic group)** 는 행렬군의 부피를 실수와 모든 소수에서 같은 기준으로 재어 얻는 수다. $\mathrm{SL}\_2(\mathbb Z)$ 의 기본 영역이 $\mathrm{SL}\_2(\mathbb R)$ 안에서 차지하는 부피는 Haar 측도의 상수배를 어떻게 정하느냐에 따라 바뀌므로 그 값만으로는 정해지지 않는다. 유리수 계수의 불변 미분형식 하나로 실수와 모든 소수 $p$ 에서 측도를 함께 정하면 상수배의 선택이 서로 상쇄되고, 그렇게 잰 부피가 Tamagawa 수다.
+**대수군의 Tamagawa 수(Tamagawa number of an algebraic group)** 는 행렬군의 부피를 [실수](real-numbers.md)와 모든 소수에서 같은 기준으로 재어 얻는 수다. $\mathrm{SL}\_2(\mathbb Z)$ 의 기본 영역이 $\mathrm{SL}\_2(\mathbb R)$ 안에서 차지하는 부피는 Haar 측도의 상수배를 어떻게 정하느냐에 따라 바뀌므로 그 값만으로는 정해지지 않는다. 유리수 계수의 불변 미분형식 하나로 실수와 모든 소수 $p$ 에서 측도를 함께 정하면 상수배의 선택이 서로 상쇄되고, 그렇게 잰 부피가 Tamagawa 수다.
 
 # 직관
 

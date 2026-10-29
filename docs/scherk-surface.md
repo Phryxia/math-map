@@ -42,7 +42,7 @@ $e^z\cos x=\cos y$ 는 $x$ 와 $y$ 를 각각 $2\pi$ 만큼 옮겨도 변하지 
 
 ## 단위법벡터 사상
 
-그래프의 위쪽 단위법벡터는 $(-u\_x,-u\_y,1)/\sqrt{1+\vert\nabla u\vert^2}$ 이고, $u\_x=\tan x$, $u\_y=-\tan y$ 는 정사각형 안에서 모든 실수값을 독립적으로 취한다. 그래서 위쪽 반구의 모든 점이 상에 들어가고, 이웃 조각에서 아래쪽 반구가 덮인다. 적도 위에서는 수직선 위의 법벡터만 나오므로, 상이 피하는 점은 적도의 네 점 $(\pm1,0,0)$, $(0,\pm1,0)$ 이다[^1]. [Weierstrass–Enneper 표현](weierstrass-enneper.md)의 Fujimoto 정리가 상한을 $4$ 로 두는데, Scherk 곡면이 그 값에 닿는다.
+그래프의 위쪽 단위법벡터는 $(-u\_x,-u\_y,1)/\sqrt{1+\vert\nabla u\vert^2}$ 이고, $u\_x=\tan x$, $u\_y=-\tan y$ 는 정사각형 안에서 모든 [실수](real-numbers.md)값을 독립적으로 취한다. 그래서 위쪽 반구의 모든 점이 상에 들어가고, 이웃 조각에서 아래쪽 반구가 덮인다. 적도 위에서는 수직선 위의 법벡터만 나오므로, 상이 피하는 점은 적도의 네 점 $(\pm1,0,0)$, $(0,\pm1,0)$ 이다[^1]. [Weierstrass–Enneper 표현](weierstrass-enneper.md)의 Fujimoto 정리가 상한을 $4$ 로 두는데, Scherk 곡면이 그 값에 닿는다.
 
 # 활용
 

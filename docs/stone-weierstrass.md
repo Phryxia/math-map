@@ -24,7 +24,7 @@ $$
 
 콤팩트 Hausdorff 공간 $X$ 위의 실숫값 연속함수 전체를 $C(X)$ 라 하고 노름을 $\Vert f\Vert=\sup\_{x\in X}\vert f(x)\vert$ 로 둔다. $C(X)$ 는 이 노름에 대해 [Banach 공간](banach-spaces.md)이고 곱셈에 대해 닫혀 있다.
 
-$\mathcal A\subseteq C(X)$ 가 **부분대수**라는 것은 덧셈, 실수배, 곱셈에 대해 닫혀 있다는 뜻이다. $\mathcal A$ 의 **점 분리**는 서로 다른 $x,y\in X$ 마다 $g(x)\ne g(y)$ 인 $g\in\mathcal A$ 가 있다는 뜻이다.
+$\mathcal A\subseteq C(X)$ 가 **부분대수**라는 것은 덧셈, [실수](real-numbers.md)배, 곱셈에 대해 닫혀 있다는 뜻이다. $\mathcal A$ 의 **점 분리**는 서로 다른 $x,y\in X$ 마다 $g(x)\ne g(y)$ 인 $g\in\mathcal A$ 가 있다는 뜻이다.
 
 # 성질
 

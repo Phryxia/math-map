@@ -14,7 +14,7 @@
 
 ## 사인과 코사인
 
-모든 실수 $x$ 에서 다음 두 급수로 정한 함수를 **사인(sine)** 과 **코사인(cosine)** 이라 한다.
+모든 [실수](real-numbers.md) $x$ 에서 다음 두 급수로 정한 함수를 **사인(sine)** 과 **코사인(cosine)** 이라 한다.
 
 $$
 \sin x=\sum_{n=0}^{\infty}\frac{(-1)^nx^{2n+1}}{(2n+1)!},\qquad \cos x=\sum_{n=0}^{\infty}\frac{(-1)^nx^{2n}}{(2n)!}

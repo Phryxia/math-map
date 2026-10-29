@@ -96,7 +96,7 @@ $$
 
 ## 실수성과 중앙 합
 
-측면 합 $\mathcal S_{\theta^\pm}$ 는 실수 문제에서도 허수부를 가진다. 두 값의 평균에 해당하는 **중앙 합**(median summation)
+측면 합 $\mathcal S_{\theta^\pm}$ 는 [실수](real-numbers.md) 문제에서도 허수부를 가진다. 두 값의 평균에 해당하는 **중앙 합**(median summation)
 
 $$
 \mathcal S_{\mathrm{med}} = \mathcal S_{\theta^-}\circ\thinspace\mathfrak S_\theta^{1/2}

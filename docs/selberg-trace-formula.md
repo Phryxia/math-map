@@ -101,7 +101,7 @@ $$
 
 ## Selberg zeta 의 영점
 
-$Z(s)$ 의 자명하지 않은 영점은 $s=\tfrac12\pm ir_j$ 에 있다. $\lambda_j\ge0$ 이므로 $r_j$ 는 실수이거나 $|{\rm Im}\thinspace r_j|\le\tfrac12$ 인 순허수이고, 따라서
+$Z(s)$ 의 자명하지 않은 영점은 $s=\tfrac12\pm ir_j$ 에 있다. $\lambda_j\ge0$ 이므로 $r_j$ 는 [실수](real-numbers.md)이거나 $|{\rm Im}\thinspace r_j|\le\tfrac12$ 인 순허수이고, 따라서
 
 $$
 \lambda_j\ge\tfrac14\ \Longrightarrow\ Z(s)\ \text{의 영점이 }\mathrm{Re}(s)=\tfrac12\ \text{위에 있다}

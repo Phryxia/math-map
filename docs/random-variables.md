@@ -83,7 +83,7 @@ $$
 
 ## 기댓값의 선형성
 
-적분 가능한 $X$ , $Y$ 와 실수 $a$ , $b$ 에 대해 다음이 성립한다.
+적분 가능한 $X$ , $Y$ 와 [실수](real-numbers.md) $a$ , $b$ 에 대해 다음이 성립한다.
 
 $$
 \mathbb E[aX+bY]=a\thinspace\mathbb E[X]+b\thinspace\mathbb E[Y]

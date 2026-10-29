@@ -15,7 +15,7 @@
 
 # 정의
 
-이하 $(X,\mathcal F,\mu)$ 는 [측도](measure.md)공간, 함수는 모두 실수값 [가측함수](measurable-functions.md)다. 함수족을 $H$ 로 쓴다.
+이하 $(X,\mathcal F,\mu)$ 는 [측도](measure.md)공간, 함수는 모두 [실수](real-numbers.md)값 [가측함수](measurable-functions.md)다. 함수족을 $H$ 로 쓴다.
 
 ## 균등적분가능성
 
