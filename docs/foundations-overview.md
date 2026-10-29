@@ -34,6 +34,7 @@ graph TD
 - [집합](sets.md): 원소와 포함, 멱집합과 De Morgan 법칙, Russell 의 역설
   - [De Morgan 법칙](de-morgan-laws.md): 여집합이 합집합과 교집합을 바꾸는 두 등식, 명제와 한정사에서의 같은 꼴
 - [증명](proofs.md): 명제와 한정사, 직접 증명과 귀류법, 수학적 귀납법
+  - [수학적 귀납법](mathematical-induction.md): 기저와 귀납 단계로 모든 자연수를 처리하는 원리, 강한 귀납법과 정렬성의 동치, 귀납 가설의 강화
 - [함수](functions.md): 단사와 전사, 합성과 역함수
 - [동치관계](equivalence-relations.md): 반사, 대칭, 추이 조건과 몫집합
 - [기수](cardinality.md): 대각선 논법으로 가른 무한의 크기
