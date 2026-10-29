@@ -67,6 +67,7 @@ $$
 
 ## 더 알아보기
 
+- [t 분포](t-distribution.md)
 - [가능도비 검정](likelihood-ratio-test.md)
 
 #statistics #probability

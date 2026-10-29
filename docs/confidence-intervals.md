@@ -64,7 +64,7 @@ $$
 T = \frac{\bar{X} - \mu}{s/\sqrt{n}} \sim t_{n-1}
 $$
 
-이 자유도 $n-1$ 의 t 분포를 따르므로 구간은
+이 자유도 $n-1$ 의 [t 분포](t-distribution.md)를 따르므로 구간은
 
 $$
 \bar{X} \pm t_{n-1,\thinspace\alpha/2}\thinspace\frac{s}{\sqrt{n}}
