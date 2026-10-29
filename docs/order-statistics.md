@@ -78,7 +78,7 @@ $$
 P\bigl(X_{(n)}-\log n\le x\bigr)=\left(1-\frac{e^{-x}}n\right)^n\to\exp\bigl(-e^{-x}\bigr)
 $$
 
-극한의 분포함수 $\exp(-e^{-x})$ 를 **Gumbel 분포(Gumbel distribution)** 라 한다. 최댓값을 적절히 옮기고 늘린 것이 퇴화하지 않는 분포로 수렴하면 그 극한은 Gumbel, Fréchet, Weibull 세 꼴 가운데 하나다. 이것이 Fisher–Tippett–Gnedenko 정리(Fisher–Tippett–Gnedenko theorem)다.[^3]
+극한의 분포함수 $\exp(-e^{-x})$ 를 **Gumbel 분포(Gumbel distribution)** 라 한다. 최댓값을 적절히 옮기고 늘린 것이 퇴화하지 않는 분포로 수렴하면 그 극한은 Gumbel, Fréchet, Weibull 세 꼴 가운데 하나다. 이것이 [극값 분포](extreme-value-distributions.md)의 Fisher–Tippett–Gnedenko 정리(Fisher–Tippett–Gnedenko theorem)다.[^3]
 
 # 활용
 
@@ -99,6 +99,6 @@ $$
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [극값 분포](extreme-value-distributions.md)
 
 #probability #statistics

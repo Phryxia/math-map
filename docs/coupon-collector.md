@@ -66,7 +66,7 @@ $$
 \lim_{n\to\infty}\Pr\lbrack T_n\le n\ln n+cn\rbrack=e^{-e^{-c}}
 $$
 
-증명의 요지. $m=n\ln n+cn$ 번 뽑은 뒤 빠진 종류의 개수는 평균이 $n(1-1/n)^m\to e^{-c}$ 이고, 포함배제로 그 분포가 평균 $e^{-c}$ 의 [Poisson 분포](poisson-distribution.md)(Poisson distribution)로 수렴함을 보인다. 빠진 종류가 $0$ 개일 확률이 $e^{-e^{-c}}$ 다. 이 극한분포를 Gumbel 분포(Gumbel distribution)라 한다.
+증명의 요지. $m=n\ln n+cn$ 번 뽑은 뒤 빠진 종류의 개수는 평균이 $n(1-1/n)^m\to e^{-c}$ 이고, 포함배제로 그 분포가 평균 $e^{-c}$ 의 [Poisson 분포](poisson-distribution.md)(Poisson distribution)로 수렴함을 보인다. 빠진 종류가 $0$ 개일 확률이 $e^{-e^{-c}}$ 다. 이 극한분포를 [Gumbel 분포](extreme-value-distributions.md)(Gumbel distribution)라 한다.
 
 # 활용
 
