@@ -151,7 +151,7 @@ $$
 \mathbb E[X]=p,\qquad \mathrm{Var}(X)=p(1-p)
 $$
 
-독립인 Bernoulli 확률변수 $n$ 개의 합인 이항분포는 선형성과 분산의 가법성으로 계산된다.
+독립인 Bernoulli 확률변수 $n$ 개의 합인 [이항분포](binomial-distribution.md)는 선형성과 분산의 가법성으로 계산된다.
 
 $$
 \mathbb E\negthinspace\left[\sum_{i=1}^n X_i\right]=np,\qquad
@@ -185,7 +185,7 @@ $n$ 명에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 �
 
 - [확률밀도](probability-density.md)
 - [공분산](covariance.md)
-- [Poisson 분포](poisson-distribution.md)
+- [이항분포](binomial-distribution.md)
 
 ### 극한 정리와 부등식
 

@@ -158,4 +158,8 @@ $$
 - [매칭](matchings.md)
 - [조합적 설계](block-designs.md)
 
+### 확률에서의 쓰임
+
+- [이항분포](binomial-distribution.md)
+
 #combinatorics #probability #group_theory

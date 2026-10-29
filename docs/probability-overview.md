@@ -60,6 +60,7 @@ graph TD
   - [Radically elementary 확률론](radically-elementary-probability.md): 초유한 크기의 유한 확률공간 위에서 측도 없이 세운 Brown 운동과 확률적분
 - [확률변수](random-variables.md): 가측함수로서의 확률변수와 적분으로서의 기댓값
   - [Jensen 부등식](jensen-inequality.md): 평균을 먼저 낼 때와 나중에 낼 때의 대소, 지지선 증명과 등호 조건
+- [이항분포](binomial-distribution.md): 독립 시행의 성공 횟수, 최빈값과 Chernoff 꼬리, Poisson 과 정규분포로의 두 극한
 - [Poisson 분포](poisson-distribution.md): 희귀 사건의 개수 분포, 이항분포의 극한과 Le Cam 오차 한계
 - [확률밀도](probability-density.md): 분포를 기준측도로 적분해 쓴 함수와 밀도가 없는 분포
 - [공분산](covariance.md): 두 확률변수가 함께 벗어나는 정도, 상관계수와 Cauchy–Schwarz, 공분산행렬, 최적 선형 예측
