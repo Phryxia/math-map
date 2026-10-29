@@ -185,7 +185,7 @@ $\mathrm{GL}\_n$ 의 첨점 자기동형 표현이 모든 자리에서 온도적
 
 ## 국소 L 인자와 Euler 인자
 
-Satake 매개변수가 $L$ 인자를 주고, 그 기하급수 전개가 Hecke 고윳값 수열을 준다.
+Satake 매개변수가 $L$ 인자를 주고, 그 [기하급수](geometric-series.md) 전개가 Hecke 고윳값 수열을 준다.
 
 $$
 \det(1-A_\pi t)^{-1}=\frac1{(1-\alpha t)(1-\beta t)}=\sum_{m\ge0}h_m(\alpha,\beta)\thinspace t^m

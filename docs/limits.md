@@ -97,6 +97,7 @@ $$
 
 ### 급수와 응용
 
+- [기하급수](geometric-series.md)
 - [급수의 수렴판정](series-convergence.md)
 - [생성함수](generating-functions.md)
 - [큰 수의 법칙](law-of-large-numbers.md)
