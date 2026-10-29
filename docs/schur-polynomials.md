@@ -89,7 +89,7 @@ $$
 \langle s_\lambda,s_\mu\rangle=\delta_{\lambda\mu}
 $$
 
-이고, 이 내적이 대칭군 표현의 지표 내적과 일치한다. 대칭함수 공간이 모든 대칭군의 표현환을 합친 것과 동형이라는 **Frobenius 대응**이 여기서 나오고, $s_\lambda$ 가 대칭군 기약표현 $S^\lambda$ 에 대응한다.
+이고, 이 내적이 [대칭군](symmetric-groups.md) 표현의 지표 내적과 일치한다. 대칭함수 공간이 모든 대칭군의 표현환을 합친 것과 동형이라는 **Frobenius 대응**이 여기서 나오고, $s_\lambda$ 가 대칭군 기약표현 $S^\lambda$ 에 대응한다.
 
 $$
 \mathrm{ch}:\bigoplus_n R(S_n)\ \xrightarrow{\ \sim\ }\ \Lambda,\qquad [S^\lambda]\mapsto s_\lambda

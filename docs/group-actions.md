@@ -24,7 +24,7 @@ $$
 
 군에서 먼저 곱한 뒤 작용하는 것과 차례로 작용하는 것이 같다. 고정한 $g$ 의 작용 $x \mapsto g \cdot x$ 는 전단사이고 역이 $g^{-1}$ 의 작용이다.
 
-$X$ 위의 전단사 전체가 이루는 대칭군을 $\mathrm{Sym}(X)$ 라 하면 작용은 군 준동형
+$X$ 위의 전단사 전체가 이루는 [대칭군](symmetric-groups.md)을 $\mathrm{Sym}(X)$ 라 하면 작용은 군 준동형
 
 $$
 \rho: G\to\mathrm{Sym}(X)

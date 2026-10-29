@@ -58,7 +58,7 @@ $$
 \lvert X/G\rvert=\frac1{\lvert G\rvert}\sum_{i}\lvert C_i\rvert\cdot\lvert\mathrm{Fix}(g_i)\rvert
 $$
 
-여기서 $C_i$ 는 켤레류이고 $g_i$ 는 그 대표다. 순환군이나 대칭군처럼 켤레류 수가 원소 수보다 훨씬 적은 군에서 계산이 짧아진다.
+여기서 $C_i$ 는 켤레류이고 $g_i$ 는 그 대표다. 순환군이나 [대칭군](symmetric-groups.md)처럼 켤레류 수가 원소 수보다 훨씬 적은 군에서 계산이 짧아진다.
 
 ## 가중치를 붙인 형태
 

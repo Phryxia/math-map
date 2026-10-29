@@ -26,7 +26,7 @@ a_i=a_j\ (i\neq j)\ \Longrightarrow\ \det A=0,
 \qquad \det I_n=1
 $$
 
-이 세 조건을 만족하는 함수는 존재하며 유일하고[^1], 명시적으로 Leibniz 공식으로 주어진다. $S_n$ 은 $n$ 차 대칭군, $\mathrm{sgn}$ 은 순열의 부호(짝순열이면 $1$ , 홀순열이면 $-1$ )다.
+이 세 조건을 만족하는 함수는 존재하며 유일하고[^1], 명시적으로 Leibniz 공식으로 주어진다. $S_n$ 은 $n$ 차 [대칭군](symmetric-groups.md), $\mathrm{sgn}$ 은 순열의 부호(짝순열이면 $1$ , 홀순열이면 $-1$ )다.
 
 $$
 \det A=\sum_{\sigma\in S_n}\mathrm{sgn}(\sigma)\prod_{i=1}^{n}a_{i\thinspace\sigma(i)}
@@ -121,6 +121,7 @@ Kirchhoff 의 matrix-tree 정리로 연결 [그래프](graphs.md)의 신장트�
 ## 선수지식
 
 - [행렬](matrices.md)
+- [대칭군](symmetric-groups.md)
 
 ## 더 알아보기
 

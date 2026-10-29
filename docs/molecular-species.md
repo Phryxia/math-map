@@ -43,7 +43,7 @@ $H \le S\_n$ 에 대해 **몫 종** $X^n/H$ 는 다음 종이다. $\vert U\vert 
 
 **정리.** 모든 종 $F$ 는 분자종의 합 $F = \sum\_M F\_M$ 으로 유일하게 분해된다.
 
-크기 $n$ 마다 대칭군 $S\_n$ 이 $F\lbrack n\rbrack$ 에 [작용](group-actions.md)하고 그 작용은 궤도로 분해된다. 궤도 $O$ 에 대해 $F\_O\lbrack U\rbrack$ 을 $F\lbrack U\rbrack$ 의 원소 가운데 어떤 전단사 $U \to \lbrack n\rbrack$ 으로 옮기면 $O$ 에 드는 것 전체로 둔다. 함자성이 이 조건을 전단사의 선택과 무관하게 만들고 $F\_O$ 는 분자종이다. $F = \sum\_O F\_O$ 이며 유일성은 궤도 분해의 유일성이다. ∎
+크기 $n$ 마다 [대칭군](symmetric-groups.md) $S\_n$ 이 $F\lbrack n\rbrack$ 에 [작용](group-actions.md)하고 그 작용은 궤도로 분해된다. 궤도 $O$ 에 대해 $F\_O\lbrack U\rbrack$ 을 $F\lbrack U\rbrack$ 의 원소 가운데 어떤 전단사 $U \to \lbrack n\rbrack$ 으로 옮기면 $O$ 에 드는 것 전체로 둔다. 함자성이 이 조건을 전단사의 선택과 무관하게 만들고 $F\_O$ 는 분자종이다. $F = \sum\_O F\_O$ 이며 유일성은 궤도 분해의 유일성이다. ∎
 
 ## 분자종의 분류
 

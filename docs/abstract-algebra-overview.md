@@ -32,6 +32,7 @@ graph TD
 먼저 읽을 것: [함수](functions.md)(기초), [벡터 공간](vector-spaces.md), [선형 사상](linear-maps.md)(선형대수 개관). 시작 문서: [군](groups.md).
 
 - [군](groups.md): 결합법칙, 항등원, 역원 세 공리와 부분군, 준동형, 몫군
+- [대칭군](symmetric-groups.md): 순열의 군, 서로소 순환 분해, 호환에 의한 생성과 부호, Cayley 정리
 - [가해군](solvable-groups.md): 가환인 몫을 쌓아 얻는 군, 유도열과 Feit–Thompson 판정
 - [군 작용](group-actions.md): 군이 집합에 작용하는 방식과 궤도–안정자 정리
   - [켤레류](conjugacy-classes.md): 켤레 관계의 동치류와 류 방정식
