@@ -18,7 +18,7 @@ Helly 정리는 $\mathbb R^d$ 의 볼록집합 유한개 가운데 어느 $d+1$ 
 
 ## 아핀 종속
 
-$\mathbb R^d$ 의 점 $x_1,\dots,x_m$ 이 **아핀 종속(affinely dependent)** 이라는 것은 모두 $0$ 은 아닌 실수 $\lambda_1,\dots,\lambda_m$ 이 있어
+$\mathbb R^d$ 의 점 $x_1,\dots,x_m$ 이 **아핀 종속(affinely dependent)** 이라는 것은 모두 $0$ 은 아닌 [실수](real-numbers.md) $\lambda_1,\dots,\lambda_m$ 이 있어
 
 $$
 \sum_{i=1}^m\lambda_ix_i=0,\qquad\sum_{i=1}^m\lambda_i=0

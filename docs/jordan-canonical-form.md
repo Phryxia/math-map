@@ -72,7 +72,7 @@ $k[x]$ [가군](modules.md) 구조를 $x\cdot v=Tv$ 로 주면 $V$ 는 [PID 위�
 
 ## 실 Jordan 형
 
-$k=\mathbb R$ 에서는 특성다항식이 일차식으로 쪼개지지 않을 수 있다. 켤레쌍 $\lambda=a\pm bi$ 에 대응하는 블록을 실수 성분만으로 쓰면 대각 자리에 $2\times2$ 블록
+$k=\mathbb R$ 에서는 특성다항식이 일차식으로 쪼개지지 않을 수 있다. 켤레쌍 $\lambda=a\pm bi$ 에 대응하는 블록을 [실수](real-numbers.md) 성분만으로 쓰면 대각 자리에 $2\times2$ 블록
 
 $$
 C=\begin{pmatrix}a&-b\cr b&a\end{pmatrix}

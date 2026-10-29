@@ -12,7 +12,7 @@ Hahn–Banach 정리는 부분공간 위의 선형범함수를 크기를 키우�
 
 수렴하는 수열 전체의 공간 $c$ 에서 극한 $L(x)=\lim x\_n$ 은 선형이고 $\vert L(x)\vert\le\Vert x\Vert\_\infty$ 를 만족한다. 유계 수열 전체 $\ell^\infty$ 에서도 같은 부등식을 지키는 선형범함수를 쓰려고 한다. 유한차원에서 하던 대로 기저를 잡아 좌표마다 값을 정하려면 $\ell^\infty$ 의 기저를 적어야 하는데, 그런 기저를 적을 수 없다.
 
-수열 하나만 먼저 넣는다. $x=(1,0,1,0,\dots)$ 는 $c$ 에 없다. $c$ 와 $x$ 가 생성하는 공간의 원소는 $y+tx\thinspace(y\in c,\thinspace t\in\mathbb R)$ 로 한 가지 꼴로 적히므로, $L\_1(y+tx)=L(y)+t\alpha$ 로 두면 실수 $\alpha$ 하나만 정하면 된다. 부등식 $L(y)+t\alpha\le\Vert y+tx\Vert$ 를 $t\gt 0$ 으로 나누면 $\alpha\le\Vert w+x\Vert-L(w)$ 이고, $t\lt 0$ 으로 나누면 $\alpha\ge L(z)-\Vert z-x\Vert$ 다. 두 부등식이 $\alpha$ 를 가두는 구간은 다음이다.
+수열 하나만 먼저 넣는다. $x=(1,0,1,0,\dots)$ 는 $c$ 에 없다. $c$ 와 $x$ 가 생성하는 공간의 원소는 $y+tx\thinspace(y\in c,\thinspace t\in\mathbb R)$ 로 한 가지 꼴로 적히므로, $L\_1(y+tx)=L(y)+t\alpha$ 로 두면 [실수](real-numbers.md) $\alpha$ 하나만 정하면 된다. 부등식 $L(y)+t\alpha\le\Vert y+tx\Vert$ 를 $t\gt 0$ 으로 나누면 $\alpha\le\Vert w+x\Vert-L(w)$ 이고, $t\lt 0$ 으로 나누면 $\alpha\ge L(z)-\Vert z-x\Vert$ 다. 두 부등식이 $\alpha$ 를 가두는 구간은 다음이다.
 
 $$
 \sup\_{z\in c}\lbrace L(z)-\Vert z-x\Vert\rbrace\thinspace\le\thinspace\alpha\thinspace\le\thinspace\inf\_{w\in c}\lbrace\Vert w+x\Vert-L(w)\rbrace

@@ -40,7 +40,7 @@ $$
 \Vert f\Vert\_{U^k}^{2^k}=\mathbb E\_{x,h_1,\dots,h_k}\prod_{\omega\in\lbrace 0,1\rbrace^k}\mathcal C^{\lvert\omega\rvert}f(x+\omega_1h_1+\dots+\omega_kh_k)
 $$
 
-이다. $\mathcal C$ 는 복소켤레이고 $\lvert\omega\rvert=\omega_1+\dots+\omega_k$ 다. 오른쪽은 음이 아닌 실수다.
+이다. $\mathcal C$ 는 복소켤레이고 $\lvert\omega\rvert=\omega_1+\dots+\omega_k$ 다. 오른쪽은 음이 아닌 [실수](real-numbers.md)다.
 
 $U^1$ 의 경우는 $\Vert f\Vert\_{U^1}=\lvert\mathbb E\_xf(x)\rvert$ 이다. $G=\mathbb Z/N$ 에서 Fourier 계수를 $\widehat f(r)=\mathbb E\_xf(x)\thinspace e^{-2\pi irx/N}$ 으로 두면
 

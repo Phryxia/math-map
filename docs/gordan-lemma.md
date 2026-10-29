@@ -44,7 +44,7 @@ $C$ 가 직선을 포함하지 않을 때, $C\cap\mathbb Z^n$ 의 $0$ 이 아닌
 
 ## 정수 Carathéodory 수
 
-실수 계수의 원뿔 결합은 Carathéodory 정리(Carathéodory's theorem)로 생성 벡터 $n$ 개면 충분하다. 직선을 포함하지 않는 원뿔의 정수점을 Hilbert 기저의 정수 결합으로 쓸 때는 기저 원소 $2n-1$ 개면 충분하다(Sebő).[^2] $n$ 개로는 부족한 원뿔이 $n=6$ 에서 있다.[^3]
+[실수](real-numbers.md) 계수의 원뿔 결합은 Carathéodory 정리(Carathéodory's theorem)로 생성 벡터 $n$ 개면 충분하다. 직선을 포함하지 않는 원뿔의 정수점을 Hilbert 기저의 정수 결합으로 쓸 때는 기저 원소 $2n-1$ 개면 충분하다(Sebő).[^2] $n$ 개로는 부족한 원뿔이 $n=6$ 에서 있다.[^3]
 
 # 활용
 

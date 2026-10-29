@@ -62,7 +62,7 @@ $$
 \pi_1(S^1)\cong\mathbb{Z}
 $$
 
-증명 개요. 실수 직선에서 원으로 가는 지수사상을 피복사상으로 쓴다.
+증명 개요. [실수](real-numbers.md) 직선에서 원으로 가는 지수사상을 피복사상으로 쓴다.
 
 $$
 p:\mathbb{R}\to S^1,\qquad p(t)=(\cos 2\pi t,\ \sin 2\pi t),\qquad p^{-1}(1)=\mathbb{Z}

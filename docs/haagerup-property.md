@@ -28,7 +28,7 @@ $$
 \sum\_{i,j}c\_i\overline{c\_j}\thinspace\varphi(g\_j^{-1}g\_i)\ge 0
 $$
 
-을 만족하면 **양의 정부호(positive definite)** 라 한다. 함수 $\psi\colon G\to\mathbb R$ 가 $\psi(e)=0$, $\psi(g^{-1})=\psi(g)$ 이고 $\sum c\_i=0$ 인 모든 실수 $c\_i$ 에 대해 $\sum\_{i,j}c\_ic\_j\psi(g\_j^{-1}g\_i)\le 0$ 이면 **조건부 음의 정부호(conditionally negative definite)** 라 한다.
+을 만족하면 **양의 정부호(positive definite)** 라 한다. 함수 $\psi\colon G\to\mathbb R$ 가 $\psi(e)=0$, $\psi(g^{-1})=\psi(g)$ 이고 $\sum c\_i=0$ 인 모든 [실수](real-numbers.md) $c\_i$ 에 대해 $\sum\_{i,j}c\_ic\_j\psi(g\_j^{-1}g\_i)\le 0$ 이면 **조건부 음의 정부호(conditionally negative definite)** 라 한다.
 
 ## Haagerup 성질
 

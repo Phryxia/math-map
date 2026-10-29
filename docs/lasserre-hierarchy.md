@@ -10,7 +10,7 @@ Lasserre 계층은 $0$-$1$ 정수계획의 완화를 단계적으로 좁히는 �
 
 정점이 $n$ 개인 완전그래프의 안정집합을 고르는 정수계획에서 변 완화는 $x\ge 0$ 과 모든 쌍의 $x_i+x_j\le 1$ 이다. 정수 껍질은 $\sum_ix_i\le 1$ 로 기술되는데, Sherali–Adams 계층의 성질 절에 따르면 Lovász–Schrijver 연산은 이 부등식을 얻는 데 $n-2$ 단계가 걸린다. 곱셈을 하나씩 늘려서는 느리다.
 
-정수점에서 성립하는 다른 성질을 쓴다. 정수점 $x$ 에서는 어떤 실수 $a$ 에 대해서도 $(\sum_ix_i-a)^2\ge 0$ 이다. 전개하면 $(\sum_ix_i)^2-2a\sum_ix_i+a^2\ge 0$ 이고, $x_i^2=x_i$ 와 $x_ix_j=0$ ($i\ne j$) 을 쓰면 $(\sum_ix_i)^2=\sum_ix_i$ 다. Sherali–Adams 계층의 직관 절처럼 곱 $x_ix_j$ 를 새 변수 $y_{ij}$ 로 두면 변 부등식에 곱셈을 한 번 해서 $y_{ij}=0$ 을 얻으므로, 선형화한 부등식은 $s=\sum_ix_i$ 로
+정수점에서 성립하는 다른 성질을 쓴다. 정수점 $x$ 에서는 어떤 [실수](real-numbers.md) $a$ 에 대해서도 $(\sum_ix_i-a)^2\ge 0$ 이다. 전개하면 $(\sum_ix_i)^2-2a\sum_ix_i+a^2\ge 0$ 이고, $x_i^2=x_i$ 와 $x_ix_j=0$ ($i\ne j$) 을 쓰면 $(\sum_ix_i)^2=\sum_ix_i$ 다. Sherali–Adams 계층의 직관 절처럼 곱 $x_ix_j$ 를 새 변수 $y_{ij}$ 로 두면 변 부등식에 곱셈을 한 번 해서 $y_{ij}=0$ 을 얻으므로, 선형화한 부등식은 $s=\sum_ix_i$ 로
 
 $$
 s-2as+a^2\ge 0

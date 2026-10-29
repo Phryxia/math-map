@@ -70,7 +70,7 @@ $\sum X_n$ 이 거의 확실히 수렴하면 $X_n\to 0$ 이므로 $\lvert X_n\rv
 
 ## 무작위 부호 급수
 
-$\varepsilon_n$ 이 독립 부호이고 $a_n$ 이 실수열이면 $\sum_n\varepsilon_na_n$ 이 거의 확실히 수렴하는 것은 $\sum_n a_n^2\lt\infty$ 와 동치다. $a_n\to 0$ 이 아니면 첫째 급수가 발산하고, $a_n\to 0$ 이면 $A=1$ 로 잡을 때 유한 개를 빼고 $Y_n=\varepsilon_na_n$ 이어서 둘째 급수는 $0$, 셋째 급수는 $\sum a_n^2$ 이다. 그래서 $\sum_n\varepsilon_n/n$ 은 수렴하고 $\sum_n\varepsilon_n/\sqrt n$ 은 발산한다.
+$\varepsilon_n$ 이 독립 부호이고 $a_n$ 이 [실수](real-numbers.md)열이면 $\sum_n\varepsilon_na_n$ 이 거의 확실히 수렴하는 것은 $\sum_n a_n^2\lt\infty$ 와 동치다. $a_n\to 0$ 이 아니면 첫째 급수가 발산하고, $a_n\to 0$ 이면 $A=1$ 로 잡을 때 유한 개를 빼고 $Y_n=\varepsilon_na_n$ 이어서 둘째 급수는 $0$, 셋째 급수는 $\sum a_n^2$ 이다. 그래서 $\sum_n\varepsilon_n/n$ 은 수렴하고 $\sum_n\varepsilon_n/\sqrt n$ 은 발산한다.
 
 # 활용
 

@@ -16,7 +16,7 @@ $$F_n(x) = \frac1n\sum_{i=1}^n 1\lbrack X_i\le x\rbrack$$
 
 은 $x$ 를 고정하면 성공확률 $F(x)$ 인 시행 $n$ 번의 성공 비율이고, 큰 수의 법칙이 $F_n(x)\to F(x)$ 를 준다. 모든 $x$ 에서 동시에 수렴하는가.
 
-점을 유한 개 고르면 답이 나온다. $x_1,\dots,x_k$ 각각에서 차이가 $\varepsilon$ 을 넘을 확률이 Hoeffding 부등식으로 $2e^{-2n\varepsilon^2}$ 이하이고, 합집합 경계로 $k$ 개 전부에서 $2k\thinspace e^{-2n\varepsilon^2}$ 이하다. $x$ 가 실수 전체면 $k$ 가 무한이라 이 계산이 멈춘다.
+점을 유한 개 고르면 답이 나온다. $x_1,\dots,x_k$ 각각에서 차이가 $\varepsilon$ 을 넘을 확률이 Hoeffding 부등식으로 $2e^{-2n\varepsilon^2}$ 이하이고, 합집합 경계로 $k$ 개 전부에서 $2k\thinspace e^{-2n\varepsilon^2}$ 이하다. $x$ 가 [실수](real-numbers.md) 전체면 $k$ 가 무한이라 이 계산이 멈춘다.
 
 점을 세는 대신 단조성을 쓴다. $F$ 의 값이 $1/k$ 씩 올라가는 점 $t_1,\dots,t_{k-1}$ 을 잡으면 이웃한 두 점 사이에서 $F$ 의 증가량이 $1/k$ 다. $x$ 가 $t_j$ 와 $t_{j+1}$ 사이에 있으면 $F_n$ 과 $F$ 가 둘 다 단조이므로
 

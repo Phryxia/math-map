@@ -34,7 +34,7 @@ $$
 S(\alpha)=\sum\_{n\le N}a\_n e(n\alpha)
 $$
 
-로 둔다. 실수 $\alpha\_1,\dots,\alpha\_R$ 가 $\delta$ **떨어져 있다**는 것은 $r\ne s$ 에서 $\alpha\_r-\alpha\_s$ 가 정수와의 거리로 $\delta$ 이상 떨어져 있다는 뜻이다.
+로 둔다. [실수](real-numbers.md) $\alpha\_1,\dots,\alpha\_R$ 가 $\delta$ **떨어져 있다**는 것은 $r\ne s$ 에서 $\alpha\_r-\alpha\_s$ 가 정수와의 거리로 $\delta$ 이상 떨어져 있다는 뜻이다.
 
 ## 거르는 조건
 

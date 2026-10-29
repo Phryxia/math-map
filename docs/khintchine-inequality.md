@@ -28,7 +28,7 @@ $\varepsilon_1,\varepsilon_2,\dots$ 가 독립이고 각각 $+1$ 과 $-1$ 을 �
 
 ## Rademacher 합
 
-실수 $a_1,\dots,a_n$ 에 대해 $S=\sum_{j=1}^n\varepsilon_ja_j$ 를 **Rademacher 합**이라 하고, $\sigma^2=\sum_{j=1}^na_j^2$ 로 둔다.
+[실수](real-numbers.md) $a_1,\dots,a_n$ 에 대해 $S=\sum_{j=1}^n\varepsilon_ja_j$ 를 **Rademacher 합**이라 하고, $\sigma^2=\sum_{j=1}^na_j^2$ 로 둔다.
 
 # 성질
 

@@ -86,7 +86,7 @@ $$
 
 > **정리.** $\mathrm{SL}\_2(\mathbb R)$ 에서 $\exp$ 는 전사가 아니다. 콤팩트 연결 Lie 군에서는 전사다.
 
-$X\in\mathfrak{sl}\_2(\mathbb R)$ 는 대각합이 0 이므로 고윳값이 $\pm\lambda$ 다. $\lambda$ 가 실수면 $\exp X$ 의 대각합이 $2\cosh\lambda\ge2$ 이고, $\lambda=i\mu$ 가 순허수면 $2\cos\mu\in\lbrack-2,2\rbrack$ 이며, $X$ 가 멱영이면 $2$ 다. 어느 경우든 $\mathrm{tr}(\exp X)\ge-2$ 이므로 대각합이 $-\tfrac52$ 인 $\mathrm{diag}(-2,-\tfrac12)$ 는 상 밖에 있다.
+$X\in\mathfrak{sl}\_2(\mathbb R)$ 는 대각합이 0 이므로 고윳값이 $\pm\lambda$ 다. $\lambda$ 가 [실수](real-numbers.md)면 $\exp X$ 의 대각합이 $2\cosh\lambda\ge2$ 이고, $\lambda=i\mu$ 가 순허수면 $2\cos\mu\in\lbrack-2,2\rbrack$ 이며, $X$ 가 멱영이면 $2$ 다. 어느 경우든 $\mathrm{tr}(\exp X)\ge-2$ 이므로 대각합이 $-\tfrac52$ 인 $\mathrm{diag}(-2,-\tfrac12)$ 는 상 밖에 있다.
 
 콤팩트 연결 Lie 군에는 양불변 [Riemann 계량](riemannian-metrics.md)이 존재하고 지수사상이 측지선의 지수사상과 일치하므로, Hopf–Rinow 정리로 $\exp$ 가 전사다. 전사가 아닌 군에서도 $\exp$ 의 상이 항등원의 근방을 포함하므로 연결군이면 유한 번 곱해 모든 원소에 닿는다.
 

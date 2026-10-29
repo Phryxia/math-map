@@ -50,7 +50,7 @@ $$
 
 ## 대칭과 정규화
 
-$x\mapsto-x$ 가 $\bar x\mapsto-\bar x$ 를 주므로 $K(a,b;c)$ 의 켤레가 자신과 같고 값이 실수다. $x\mapsto\bar x$ 는 $K(a,b;c)=K(b,a;c)$ 를 준다. $\gcd(a,c)=1$ 이면 $x\mapsto\bar ax$ 가
+$x\mapsto-x$ 가 $\bar x\mapsto-\bar x$ 를 주므로 $K(a,b;c)$ 의 켤레가 자신과 같고 값이 [실수](real-numbers.md)다. $x\mapsto\bar x$ 는 $K(a,b;c)=K(b,a;c)$ 를 준다. $\gcd(a,c)=1$ 이면 $x\mapsto\bar ax$ 가
 
 $$
 K(a,b;c)=K(1,ab;c)

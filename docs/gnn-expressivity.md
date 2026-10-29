@@ -6,7 +6,7 @@
 
 # 직관
 
-특징이 실수 하나인 경우, 중복집합(multiset) $\lbrace\lbrace 1, 3\rbrace\rbrace$ 과 $\lbrace\lbrace 2, 2\rbrace\rbrace$ 는 합이 둘 다 4 이고 평균이 둘 다 2 다. 1-WL(Weisfeiler–Leman) 은 이 두 이웃을 다른 색으로 나누지만, 원시 특징에 그대로 합이나 평균을 취하는 집계는 두 정점에 같은 값을 준다. 집계가 뭉갠 만큼 신경망이 나누는 그래프가 줄어들므로 그래프 신경망은 1-WL 보다 강해질 수 없고, 집계가 단사일 때 상한에 닿는다.
+특징이 [실수](real-numbers.md) 하나인 경우, 중복집합(multiset) $\lbrace\lbrace 1, 3\rbrace\rbrace$ 과 $\lbrace\lbrace 2, 2\rbrace\rbrace$ 는 합이 둘 다 4 이고 평균이 둘 다 2 다. 1-WL(Weisfeiler–Leman) 은 이 두 이웃을 다른 색으로 나누지만, 원시 특징에 그대로 합이나 평균을 취하는 집계는 두 정점에 같은 값을 준다. 집계가 뭉갠 만큼 신경망이 나누는 그래프가 줄어들므로 그래프 신경망은 1-WL 보다 강해질 수 없고, 집계가 단사일 때 상한에 닿는다.
 
 합은 특징을 먼저 변환해 $\sum_{u} f(h_u)$ 꼴로 쓰면 $f$ 의 선택으로 단사가 되고, 그 $f$ 를 신경망으로 근사한다. 평균과 최댓값에는 이런 변환이 없다. 평균은 중복도를 지워 $\lbrace\lbrace 1,1,2\rbrace\rbrace$ 와 $\lbrace\lbrace 1,2\rbrace\rbrace$ 를 구별하지 못하고, 최댓값은 중복집합을 그 지지집합으로 축소한다.
 
