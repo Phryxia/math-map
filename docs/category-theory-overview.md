@@ -2,11 +2,9 @@
 
 # 개요
 
-범주론(category theory)은 대상의 내부가 아니라 대상 사이의 사상으로 구조를 기술한다. 물음은 "이 구성이 어떤 보편성질로 결정되는가" 이고, 답은 대개 표현 가능 함자나 수반으로 온다. 같은 구성을 여러 분야에서 따로 발견하는 일이 보편성질 하나로 설명된다.
+범주론(category theory)은 대상의 내부를 보지 않고 대상 사이의 사상만으로 구조를 기술하는 분야다. 집합의 곱, 군의 직접곱, 위상공간의 곱공간은 각각 따로 정의되지만, 세 경우 모두 곱으로 가는 사상이 두 성분으로 가는 사상의 쌍과 일대일로 대응한다는 같은 성질을 만족한다. 이런 성질을 사상만으로 한 번 적으면 여러 분야의 구성이 한 정의로 다뤄지고, 그 성질을 만족하는 대상이 동형을 제외하고 하나뿐이라는 것도 한 번에 증명된다.
 
-범주론의 갈래는 네 줄기다. 범주와 함자의 기본 언어, Yoneda lemma 에서 수반으로 가는 보편성질, monad 와 그 대수, 그리고 텐서범주에서 위상적 양자계산으로 이어지는 응용이다. 호몰로지 대수 쪽 응용은 [de Rham 코호몰로지](de-rham-cohomology.md)와 [대수적 K 이론](algebraic-k-theory.md)에, 프로그래밍 언어와의 대응은 [Curry–Howard 대응](curry-howard.md)에 있다.
-
-시작은 [범주](category.md)다. 거기서 [함자](functors.md)와 [자연변환](natural-transformations.md)이 언어를 세우고, [Yoneda lemma](yoneda-lemma.md)가 대상을 사상으로 바꿔 읽는 원리를 준다.
+처음 읽는 사람은 [범주](category.md)에서 시작한다.
 
 # 지도
 
@@ -77,6 +75,8 @@ graph TD
 먼저 읽을 갈래: 기본 언어. 먼저 읽을 것: [호모토피군](homotopy-groups.md)과 [단순 집합](simplicial-sets.md)(위상 개관). 시작 문서: [무한 범주](infinity-categories.md).
 
 - [무한 범주](infinity-categories.md): 사상 사이의 사상을 모든 차수에서 갖는 범주, 안쪽 Kan 조건
+
+호몰로지 대수 쪽 응용은 [de Rham 코호몰로지](de-rham-cohomology.md)와 [대수적 K 이론](algebraic-k-theory.md)에, 프로그래밍 언어와의 대응은 [Curry–Howard 대응](curry-howard.md)에 있다.
 
 # 연관 문서
 

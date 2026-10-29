@@ -2,9 +2,9 @@
 
 # 개요
 
-조합론(combinatorics)은 유한한 대상을 세고, 배열하고, 극단적인 구성이 존재하는지 묻는 분야다. 기본 물음은 "몇 개인가" 이지만 답하는 방식이 갈래를 만든다. 직접 세는 대신 생성함수의 계수로 세고, 구성을 보이는 대신 확률로 존재를 보이고, 개별 대상 대신 대칭군의 표현으로 센다.
+조합론(combinatorics)은 유한한 대상을 세고, 배열하고, 조건을 만족하는 배열이 존재하는지 묻는 분야다. 계단 $n$ 칸을 한 번에 한 칸이나 두 칸씩 오르는 방법의 수, 여섯 사람 가운데 서로 아는 세 사람이나 서로 모르는 세 사람이 반드시 있는지가 이 꼴의 물음이다. 작은 경우를 손으로 세어 규칙을 찾고, 그 규칙을 점화식이나 경우를 나눠 담는 논법으로 모든 $n$ 에 대해 증명한다.
 
-처음 읽는 사람은 [셈의 기본 원리](counting-principles.md)에서 시작한다. 거기서 [생성함수](generating-functions.md)로 가면 [분할수](partitions.md)와 조합적 종이 이어지고, [비둘기집 원리](pigeonhole-principle.md)로 가면 [Ramsey 이론](ramsey-theory.md)과 [확률적 방법](probabilistic-method.md)이 이어진다. [대칭함수](symmetric-functions.md)와 [Schur 다항식](schur-polynomials.md)의 대수적 조합론은 분할수를 읽은 뒤에 온다.
+처음 읽는 사람은 [셈의 기본 원리](counting-principles.md)에서 시작한다.
 
 # 지도
 
