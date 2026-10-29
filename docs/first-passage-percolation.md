@@ -64,7 +64,7 @@ $B_\mu$ 를 **극한 모양(limit shape)** 이라 한다. $B_\mu$ 는 볼록하�
 
 # 활용
 
-- **확률적 성장 모형.** $\tau_e$ 가 지수분포이면 지수분포의 무기억성으로 도달 집합이 연속시간 Markov 과정이 되고, 감염되지 않은 점이 감염된 이웃의 수에 비례하는 비율로 감염되는 Richardson 성장 모형과 같다. 모양 정리가 이 모형의 극한 모양을 준다.
+- **확률적 성장 모형.** $\tau_e$ 가 [지수분포](exponential-distribution.md)이면 지수분포의 무기억성으로 도달 집합이 연속시간 Markov 과정이 되고, 감염되지 않은 점이 감염된 이웃의 수에 비례하는 비율로 감염되는 Richardson 성장 모형과 같다. 모양 정리가 이 모형의 극한 모양을 준다.
 - **부분가법 과정.** Hammersley 와 Welsh 가 이 모형의 시간 상수를 다루려고 부분가법 과정을 정의했고, Kingman 정리는 그 문제의 답으로 증명되었다.
 
 [^1]: J. M. Hammersley, D. J. A. Welsh, "First-passage percolation, subadditive processes, stochastic networks, and generalized renewal theory", *Bernoulli–Bayes–Laplace Anniversary Volume*, Springer (1965), 61–110. 개관은 A. Auffinger, M. Damron, J. Hanson, *50 Years of First-Passage Percolation*, AMS University Lecture Series 68 (2017).

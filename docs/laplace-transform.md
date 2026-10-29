@@ -91,7 +91,7 @@ $$
 # 활용
 
 - 상수계수 선형 상미분방정식과 그 연립계를 직관 절처럼 대수방정식으로 바꿔 푼다. 입력 $x(t)$ 와 출력 $y(t)$ 가 초기값 $0$ 인 선형 방정식으로 이어지면 $Y(s)=W(s)X(s)$ 이고, $W(s)$ 를 전달함수(transfer function)라 한다. 제어이론은 $W$ 의 극이 왼쪽 반평면에 있는지로 안정성을 판정한다.
-- 확률에서 음이 아닌 확률변수 $X$ 의 밀도 $p$ 에 대해 $\mathbb E\lbrack e^{-sX}\rbrack=\mathcal L\lbrace p\rbrace(s)$ 다. 독립인 두 변수의 합의 밀도는 합성곱이므로 변환이 곱이 되고, [Poisson 과정](poisson-process.md)의 도착 시각처럼 지수분포를 더한 변수의 분포를 이 곱으로 계산한다.
+- 확률에서 음이 아닌 확률변수 $X$ 의 밀도 $p$ 에 대해 $\mathbb E\lbrack e^{-sX}\rbrack=\mathcal L\lbrace p\rbrace(s)$ 다. 독립인 두 변수의 합의 밀도는 합성곱이므로 변환이 곱이 되고, [Poisson 과정](poisson-process.md)의 도착 시각처럼 [지수분포](exponential-distribution.md)를 더한 변수의 분포를 이 곱으로 계산한다.
 - 갱신 방정식(renewal equation) $u(t)=g(t)+\int_0^t u(t-\tau)k(\tau)\thinspace d\tau$ 처럼 합성곱이 든 적분방정식을 합성곱 정리로 $U=G+UK$, 곧 $U=G/(1-K)$ 로 바꿔 푼다.
 - [Mellin 변환](mellin-transform.md) $\int_0^\infty x^{z-1}f(x)\thinspace dx$ 에 $x=e^{-t}$ 를 넣으면 $\int_{-\infty}^{\infty}e^{-zt}f(e^{-t})\thinspace dt$ 가 되어, 적분 범위를 실직선 전체로 넓힌 양쪽 Laplace 변환(two-sided Laplace transform)과 같은 꼴이다.
 - Bernstein 정리(Bernstein's theorem on monotone functions)는 $(0,\infty)$ 위의 함수가 완전단조(completely monotone), 곧 $(-1)^nF^{(n)}\ge 0$ 이 모든 $n$ 에서 성립하는 것과 음이 아닌 측도의 Laplace 변환인 것이 동치라는 정리다.[^1]
