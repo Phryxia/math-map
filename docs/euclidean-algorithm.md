@@ -112,5 +112,6 @@ $\gcd(p,a)=1$ 인 소수 $p$ 가 $ab$ 를 나누면 $sp+ta=1$ 의 양변에 $b$ 
 
 - [소수](primes.md)
 - [연분수](continued-fractions.md)
+- [Farey 수열](farey-sequences.md)
 
 #number_theory #algorithms

@@ -79,6 +79,7 @@ graph TD
 - [연분수](continued-fractions.md): 실수를 정수 몫의 열로 펼쳐 최적 유리수 근사를 얻는다
   - [Gauss 사상](gauss-map.md): 연분수 한 걸음의 변환, Gauss 측도와 Gauss–Kuzmin 분포, Lévy 정리
   - [Pell 방정식](pell-equation.md): $x^2-dy^2=1$ 의 해가 기본해의 거듭제곱으로 전부 나온다
+  - [Farey 수열](farey-sequences.md): 분모가 n 이하인 기약분수의 열, 이웃의 행렬식이 1 이라는 정리와 중간수, Ford 원
 - [Diophantine 근사](diophantine-approximation.md): 근사 지수가 대수적 수와 초월수를 가른다
 - [초월수](transcendental-numbers.md): $e$ 와 $\pi$ 의 초월성, 로그의 일차형식
 - [Roth 정리](roth-theorem.md): 대수적 무리수의 근사 지수가 $2$ 라는 정리, 보조 다항식과 지표, 비유효성
