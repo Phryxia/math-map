@@ -72,6 +72,7 @@ graph TD
     - [베타분포](beta-distribution.md): 모르는 확률에 대한 분포, 이항 관측의 켤레 사전분포와 균등분포의 순서통계량
 - [공분산](covariance.md): 두 확률변수가 함께 벗어나는 정도, 상관계수와 Cauchy–Schwarz, 공분산행렬, 최적 선형 예측
   - [정규분포](normal-distribution.md): 평균과 분산으로 정해지는 종 모양 분포, 다변량 정규분포의 선형변환과 조건부분포, 꼬리와 최대 엔트로피
+    - [로그정규분포](lognormal-distribution.md): 로그가 정규분포를 따르는 양수의 분포, 곱의 극한과 적률로 정해지지 않는 예
 - [조건부 기댓값](conditional-expectation.md): 부분 $\sigma$ 대수 위로의 사영
 - [Kolmogorov 확장정리](kolmogorov-extension.md): 정합적 유한차원 분포족에서 확률과정을 세우는 정리
 

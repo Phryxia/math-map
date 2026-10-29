@@ -131,9 +131,18 @@ $$
 
 ## 더 알아보기
 
-- [Gauss 과정](gaussian-processes.md)
-- [Cramér 분해 정리](cramer-decomposition.md)
+### 정규분포에서 유도되는 분포
+
 - [카이제곱 분포](chi-squared-distribution.md)
+- [로그정규분포](lognormal-distribution.md)
+
+### 구조와 확장
+
+- [Cramér 분해 정리](cramer-decomposition.md)
+- [Gauss 과정](gaussian-processes.md)
+
+### 추정과 근사
+
 - [James–Stein 추정량](james-stein-estimator.md)
 - [Stein 방법](stein-method.md)
 
