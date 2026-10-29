@@ -110,6 +110,6 @@ $\left(\frac{-23}p\right)=-1$ 인 소수에서는 Frobenius 가 호환이어야 
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [Artin 원시근 추측](artin-primitive-root-conjecture.md)
 
 #number_theory #theorem #field_theory

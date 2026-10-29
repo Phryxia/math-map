@@ -94,7 +94,7 @@ $$
 - [Pratt 증명서](pratt-certificate.md)는 법 $p$ 의 원시근과 $p-1$ 의 소인수분해를 증거로 적어 $p$ 가 소수임을 짧게 증명한다. 원시근 판정 조건이 곧 검증 절차다.
 - [Pohlig–Hellman 방법](pohlig-hellman.md)은 지표를 $p-1$ 의 소인수마다 따로 구한 뒤 중국인의 나머지 정리로 합친다.
 - 위 거듭제곱 잉여의 판정으로 $x^k\equiv a$ 의 가해성을 정하고, $k=2$ 의 경우가 Legendre 기호(Legendre symbol)의 계산에 쓰인다.
-- Artin 원시근 추측(Artin's conjecture on primitive roots)은 제곱수가 아니고 $-1$ 이 아닌 정수 $a$ 가 무한히 많은 소수 $p$ 에 대해 법 $p$ 의 원시근이라는 진술이다.
+- [Artin 원시근 추측](artin-primitive-root-conjecture.md)은 제곱수가 아니고 $-1$ 이 아닌 정수 $a$ 가 무한히 많은 소수 $p$ 에 대해 법 $p$ 의 원시근이라는 진술이다.
 
 [^1]: K. Ireland, M. Rosen, *A Classical Introduction to Modern Number Theory*, 2nd ed., Springer, Graduate Texts in Mathematics 84 (1990), Ch. 4 "The Structure of U(Z/nZ)". 원시근의 존재, 법 $p^k$ 로의 올림, 원시근이 있는 법의 분류, 거듭제곱 잉여의 판정.
 
@@ -108,6 +108,7 @@ $$
 ## 더 알아보기
 
 - [Carmichael 함수](carmichael-function.md)
+- [Artin 원시근 추측](artin-primitive-root-conjecture.md)
 - [Pratt 증명서](pratt-certificate.md)
 
 #number_theory #group_theory #cryptography #theorem
