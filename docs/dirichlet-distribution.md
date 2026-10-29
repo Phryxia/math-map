@@ -8,7 +8,7 @@
 
 매개변수 $\alpha=(\alpha_1,\dots,\alpha_m)$ 에 대해 밀도가 $\prod_jx_j^{\alpha_j-1}$ 에 비례한다. $m=2$ 이면 [Beta 분포](beta-distribution.md)다.
 
-범주 $m$ 개의 확률을 모를 때 Bayes 추론에서 그 확률 벡터의 사전분포로 쓴다. 다항분포 가능도에 대한 켤레사전분포여서 관측한 횟수를 매개변수에 더하는 것으로 사후분포가 나온다.
+범주 $m$ 개의 확률을 모를 때 Bayes 추론에서 그 확률 벡터의 사전분포로 쓴다. [다항분포](multinomial-distribution.md) 가능도에 대한 켤레사전분포여서 관측한 횟수를 매개변수에 더하는 것으로 사후분포가 나온다.
 
 주사위의 여섯 면이 나올 확률 $p=(p_1,\dots,p_6)$ 을 모른다. $p$ 가 가능한 확률 벡터 전체에서 고르게 퍼져 있다고 두고, 주사위를 던져 면 $j$ 가 $n_j$ 번 나왔다. 관측의 확률은 $\prod_jp_j^{n_j}$ 이므로 사후분포의 밀도는 이것에 비례한다.
 
@@ -68,6 +68,7 @@ $$
 
 - [Bayes 추론](bayesian-inference.md)
 - [감마 함수](gamma-function.md)
+- [다항분포](multinomial-distribution.md)
 
 ## 더 알아보기
 
