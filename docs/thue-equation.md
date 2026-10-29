@@ -16,7 +16,7 @@ $$
 x^3-2y^3=(x-\alpha y)(x-\omega\alpha y)(x-\omega^2\alpha y),\qquad \alpha=2^{1/3}
 $$
 
-$x-\alpha y$ 가 작다는 것은 유리수 $x/y$ 가 무리수 $\alpha$ 에 가깝다는 뜻이고, 나누어 쓰면 근사의 정밀도가 $\vert y\vert^{-3}$ 규모다. 대수적 무리수를 이만큼 잘 근사하는 유리수는 유한 개뿐이라는 것이 근사 정리이고, 해의 유한성이 거기서 나온다.
+$x-\alpha y$ 가 작다는 것은 유리수 $x/y$ 가 [무리수](irrational-numbers.md) $\alpha$ 에 가깝다는 뜻이고, 나누어 쓰면 근사의 정밀도가 $\vert y\vert^{-3}$ 규모다. 대수적 무리수를 이만큼 잘 근사하는 유리수는 유한 개뿐이라는 것이 근사 정리이고, 해의 유한성이 거기서 나온다.
 
 $$
 \left\vert\frac{x}{y}-\alpha\right\vert\approx\frac{1}{\vert y\vert^3}

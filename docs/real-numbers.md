@@ -101,5 +101,6 @@ $\mathbb R$ 는 셀 수 없다. 실수 $x_1,x_2,\dots$ 의 목록이 주어지�
 
 - [수열의 극한](limits.md)
 - [복소수](complex-numbers.md)
+- [무리수](irrational-numbers.md)
 
 #analysis #foundations #order_theory

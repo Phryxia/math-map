@@ -54,7 +54,7 @@ $x\gt 0$ 에서 급수의 항이 모두 양수이므로 $e^x\gt x^{k+1}/(k+1)!$ 
 
 ## e 의 무리수성
 
-**정리.** $e$ 는 무리수다.
+**정리.** $e$ 는 [무리수](irrational-numbers.md)다.
 
 증명의 요지. $e=p/q$ 라 하자. $N=q!\thinspace(e-\sum_{n=0}^{q}1/n!)$ 은 정수다. 한편 $N=\sum_{n\gt q}q!/n!$ 이고 이 합은 $0$ 보다 크고 $1/(q+1)+1/(q+1)^2+\cdots=1/q\le1$ 보다 작아 모순이다. $e$ 가 정수계수 다항식의 근도 아니라는 것은 Hermite 가 증명했다([초월수](transcendental-numbers.md)).
 

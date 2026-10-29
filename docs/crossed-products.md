@@ -10,7 +10,7 @@
 
 $L^2(S^1)$ 위에서 함수 $f$ 는 곱셈작용소 $M_f$ 로, 회전은 유니터리 $(Ug)(x)=g(R^{-1}x)$ 로 작용한다. 둘 사이에는 $UM_fU^\ast=M_{\alpha(f)}$ 가 성립한다. 함수와 $U$ 의 거듭제곱으로 만든 유한합 $\sum_nM_{f_n}U^n$ 전체를 노름으로 닫으면 함수와 회전을 함께 담은 대수가 나온다.
 
-곱은 $M_fU^n\cdot M_gU^m=M_{f\cdot\alpha^n(g)}U^{n+m}$ 으로 계산되므로 이 대수는 작용소를 쓰지 않고 계수 $f_n$ 들만으로 정의할 수 있다. 그렇게 정의한 것이 교차곱 $C(S^1)\rtimes_\alpha\mathbb Z$ 이고, $\theta$ 가 무리수이면 이를 무리수 회전 대수라 한다.
+곱은 $M_fU^n\cdot M_gU^m=M_{f\cdot\alpha^n(g)}U^{n+m}$ 으로 계산되므로 이 대수는 작용소를 쓰지 않고 계수 $f_n$ 들만으로 정의할 수 있다. 그렇게 정의한 것이 교차곱 $C(S^1)\rtimes_\alpha\mathbb Z$ 이고, $\theta$ 가 [무리수](irrational-numbers.md)이면 이를 무리수 회전 대수라 한다.
 
 $A=\mathbb C$ 이면 교차곱은 군 C 스타 대수이고, $A=C(X)$ 이면 공간 $X$ 위의 동역학계가 대수 하나로 바뀐다.
 

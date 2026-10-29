@@ -74,7 +74,7 @@ $$
 
 - **Waring 문제의 상계.** [Waring 문제](waring-problem.md)의 부 호 추정에 Weyl 의 부등식 대신 이 정리를 넣으면 $G(k)\ll k\log k$ 가 나온다.
 - **Riemann zeta 함수의 영점 없는 영역.** $\zeta(\sigma+it)$ 를 길이가 다른 조각의 지수합으로 가를 때 각 조각에 위 Weyl 합 추정이 들어간다. [Riemann zeta 함수](riemann-zeta.md)의 고전적 영점 없는 영역을 $\sigma\gt1-c/(\log t)^{2/3}(\log\log t)^{1/3}$ 까지 넓히는 Vinogradov–Korobov 영역이 그 결과다.
-- **등분포의 속도.** 다항식 $P(x)$ 의 계수 가운데 하나가 무리수이면 수열 $P(1),P(2),\dots$ 의 소수부가 [등분포](equidistribution.md)한다. Erdős–Turán 부등식이 불일치도를 지수합으로 묶으므로, 이 정리의 지수합 추정이 그대로 수렴 속도를 준다.
+- **등분포의 속도.** 다항식 $P(x)$ 의 계수 가운데 하나가 [무리수](irrational-numbers.md)이면 수열 $P(1),P(2),\dots$ 의 소수부가 [등분포](equidistribution.md)한다. Erdős–Turán 부등식이 불일치도를 지수합으로 묶으므로, 이 정리의 지수합 추정이 그대로 수렴 속도를 준다.
 
 [^1]: T. D. Wooley, "The cubic case of the main conjecture in Vinogradov's mean value theorem", Adv. Math. 294 (2016), 532–561.
 [^2]: J. Bourgain, C. Demeter, L. Guth, "Proof of the main conjecture in Vinogradov's mean value theorem for degrees higher than three", Ann. of Math. 184 (2016), 633–682.

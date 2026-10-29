@@ -95,6 +95,7 @@ $\sqrt 2 = \lbrack 1; \overline{2}\rbrack$ 과 황금비 $\varphi = \lbrack 1; \
 ## 선수지식
 
 - [유클리드 알고리즘](euclidean-algorithm.md)
+- [무리수](irrational-numbers.md)
 
 ## 더 알아보기
 

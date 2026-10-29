@@ -58,7 +58,7 @@ $\dim\mathrm{Sh}\_K(G,X)=\dim_{\mathbb C}X$ 다. $\mathrm{GL}\_2$ 에서 $1$ 이
 
 ## 특수점
 
-$h$ 의 상이 $\mathbb Q$ 위에 정의된 극대 토러스에 들어가는 $X$ 의 점을 **특수점**이라 한다. $\mathrm{GL}\_2$ 에서 특수점은 $\mathbb H$ 의 이차 무리수이고, 그 점에 대응하는 타원곡선은 [복소 곱셈](complex-multiplication.md)(complex multiplication, CM)을 갖는다.
+$h$ 의 상이 $\mathbb Q$ 위에 정의된 극대 토러스에 들어가는 $X$ 의 점을 **특수점**이라 한다. $\mathrm{GL}\_2$ 에서 특수점은 $\mathbb H$ 의 이차 [무리수](irrational-numbers.md)이고, 그 점에 대응하는 타원곡선은 [복소 곱셈](complex-multiplication.md)(complex multiplication, CM)을 갖는다.
 
 ## 표준모형
 

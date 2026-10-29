@@ -58,7 +58,7 @@ $$
 
 $k$ 를 고정하면 $\vert k\cdot\nu\vert\lt\gamma\vert k\vert^{-\tau}$ 인 $\nu$ 는 두께가 $\gamma\vert k\vert^{-\tau-1}$ 의 상수배인 평판이므로, $B$ 안에서 그 측도가 $\gamma\vert k\vert^{-\tau-1}$ 의 상수배다. $k$ 에 대해 더하면 $\vert k\vert=m$ 인 정수벡터가 $m^{n-1}$ 의 상수배 개이므로 합이 $\gamma\sum\_m m^{n-1-\tau-1}$ 의 상수배이고, $\tau\gt n-1$ 에서 이 급수가 수렴한다. ∎
 
-$n=1$ 에서는 $\tau\gt 0$ 이고, 조건은 무리수의 연분수 전개가 유계 몫을 갖는다는 성질과 이어진다.
+$n=1$ 에서는 $\tau\gt 0$ 이고, 조건은 [무리수](irrational-numbers.md)의 연분수 전개가 유계 몫을 갖는다는 성질과 이어진다.
 
 ## 자유도 2 의 작용 변수 유계성
 

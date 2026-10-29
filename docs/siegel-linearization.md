@@ -14,7 +14,7 @@ $f(z)=\lambda z+z^2$ 이고 $\vert\lambda\vert=1$ 이라 한다. $0$ 은 고정�
 
 $h(w)=w+b_2w^2+b_3w^3+\cdots$ 로 놓고 $f(h(w))=h(\lambda w)$ 가 되도록 계수를 정한다. $w^2$ 의 계수를 비교하면 왼쪽은 $\lambda b_2+1$, 오른쪽은 $\lambda^2b_2$ 이므로 $b_2=1/(\lambda^2-\lambda)$ 다. $w^n$ 의 계수를 비교하면 $b_n(\lambda^n-\lambda)$ 가 앞서 정한 $b_2,\dots,b_{n-1}$ 로 이루어진 식과 같아지고, $b_n$ 을 구하려면 $\lambda^n-\lambda=\lambda(\lambda^{n-1}-1)$ 로 나눈다.
 
-$\theta=p/q$ 가 유리수이면 $\lambda^q=1$ 이어서 $n=q+1$ 에서 분모가 $0$ 이 되고 계산이 멈춘다. $\theta$ 가 무리수이면 분모는 $0$ 이 아니지만, $(n-1)\theta$ 가 정수에 가까울 때마다 $\vert\lambda^{n-1}-1\vert$ 가 작아지고 $b_n$ 이 커진다. 급수가 수렴하는지는 $\theta$ 가 유리수로 얼마나 잘 근사되는지에 달려 있다.
+$\theta=p/q$ 가 유리수이면 $\lambda^q=1$ 이어서 $n=q+1$ 에서 분모가 $0$ 이 되고 계산이 멈춘다. $\theta$ 가 [무리수](irrational-numbers.md)이면 분모는 $0$ 이 아니지만, $(n-1)\theta$ 가 정수에 가까울 때마다 $\vert\lambda^{n-1}-1\vert$ 가 작아지고 $b_n$ 이 커진다. 급수가 수렴하는지는 $\theta$ 가 유리수로 얼마나 잘 근사되는지에 달려 있다.
 
 # 정의
 

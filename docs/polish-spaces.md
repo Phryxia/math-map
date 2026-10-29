@@ -6,7 +6,7 @@
 
 # 직관
 
-Polish 공간은 완비 거리로 위상을 줄 수 있는 가분 위상공간이다. $\mathbb R^n$, $\lbrack 0,1\rbrack$, [Cantor 집합](cantor-set.md), 무리수 전체가 그 예다. Sierpiński, Kuratowski, Tarski 등 폴란드 학파가 체계적으로 연구해 이 이름이 붙었다.
+Polish 공간은 완비 거리로 위상을 줄 수 있는 가분 위상공간이다. $\mathbb R^n$, $\lbrack 0,1\rbrack$, [Cantor 집합](cantor-set.md), [무리수](irrational-numbers.md) 전체가 그 예다. Sierpiński, Kuratowski, Tarski 등 폴란드 학파가 체계적으로 연구해 이 이름이 붙었다.
 
 완비성은 거리에 달린 성질이고 위상만으로는 정해지지 않는다. Polish 공간은 완비 거리가 하나 존재한다는 조건으로 정의되므로 위상동형으로 보존된다. 완비 거리가 있으므로 Baire 범주 정리가 성립하고, 가분이므로 위상이 가산 개의 열린 공으로 생성된다.
 
