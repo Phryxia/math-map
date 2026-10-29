@@ -146,6 +146,7 @@ $$
 
 ## 더 알아보기
 
+- [원시근](primitive-roots.md)
 - [RSA 암호](rsa-cryptosystem.md)
 - [Miller–Rabin 판정](miller-rabin-test.md)
 - [Pohlig–Hellman 방법](pohlig-hellman.md)

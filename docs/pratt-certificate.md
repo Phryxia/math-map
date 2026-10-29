@@ -72,7 +72,7 @@ $$
 
 | 결과 | 부류 | 방법 |
 | --- | --- | --- |
-| Pratt (1975) | $\mathrm{NP}\cap\mathrm{coNP}$ | 원시근과 $p-1$ 의 인수분해 |
+| Pratt (1975) | $\mathrm{NP}\cap\mathrm{coNP}$ | [원시근](primitive-roots.md)과 $p-1$ 의 인수분해 |
 | Solovay–Strassen, Rabin (1977–1980) | $\mathrm{coRP}$ | 무작위 밑의 판정 |
 | Adleman–Huang (1992) | $\mathrm{ZPP}$ | 초타원곡선 위의 소수 증명 |
 | Agrawal–Kayal–Saxena (2002) | $\mathrm{P}$ | 다항식 합동 |
@@ -97,6 +97,7 @@ $$
 
 - [유한체](finite-fields.md)
 - [P 대 NP 문제](p-np.md)
+- [원시근](primitive-roots.md)
 
 ## 더 알아보기
 
