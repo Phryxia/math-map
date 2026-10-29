@@ -178,7 +178,7 @@ $$
 
 ### 급수로 정의되는 함수
 
-- [쌍곡함수](hyperbolic-functions.md)
+- [지수함수](exponential-function.md)
 - [Bessel 함수](bessel-functions.md)
 - [Bernoulli 수](bernoulli-numbers.md)
 - [점근급수](asymptotic-series.md)
