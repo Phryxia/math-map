@@ -185,6 +185,7 @@ $n$ 명에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 �
 
 - [확률밀도](probability-density.md)
 - [공분산](covariance.md)
+- [Poisson 분포](poisson-distribution.md)
 
 ### 극한 정리와 부등식
 
@@ -210,6 +211,5 @@ $n$ 명에게 모자를 무작위로 되돌려 줄 때 자기 모자를 받는 �
 - [Bayes 추론](bayesian-inference.md)
 - [가설검정](hypothesis-testing.md)
 - [주성분 분석](principal-component-analysis.md)
-- [Poisson 분포](poisson-distribution.md)
 
 #probability #measure_theory #information_theory
