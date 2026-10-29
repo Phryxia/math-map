@@ -49,7 +49,7 @@ $p$ 가 합성수 $ab$ 이면 $2^a-1$ 이 $2^p-1$ 을 나누므로 $M\_p$ 는 �
 # 활용
 
 - **가장 큰 알려진 소수.** 알려진 가장 큰 소수들은 대부분 Mersenne 소수이고 이 판정으로 증명되었다. 판정 하나가 $p$ 에 대한 제곱의 반복이어서 일반 수에 쓰는 [타원곡선 소수 증명](elliptic-curve-primality-proving.md)보다 훨씬 큰 수에 닿는다.
-- **완전수.** Euclid–Euler 정리(Euclid–Euler theorem)로 짝수 완전수는 $M\_p$ 가 소수일 때의 $2^{p-1}M\_p$ 뿐이므로, 이 판정이 짝수 완전수를 찾는 방법이다.
+- **완전수.** [완전수](perfect-numbers.md)의 Euclid–Euler 정리(Euclid–Euler theorem)로 짝수 완전수는 $M\_p$ 가 소수일 때의 $2^{p-1}M\_p$ 뿐이므로, 이 판정이 짝수 완전수를 찾는 방법이다.
 
 [^1]: D. H. Lehmer, "An extended theory of Lucas' functions", *Annals of Mathematics* 31 (1930), 419–448. 이 꼴의 증명은 Richard Crandall, Carl Pomerance, *Prime Numbers: A Computational Perspective*, 2nd ed., Springer, 2005, 4.2 절.
 

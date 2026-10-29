@@ -130,8 +130,9 @@ Diophantus 방정식의 해 존재, 제곱수 판정, 약수 함수의 계산이
 - [Riemann zeta 함수](riemann-zeta.md)
 - [소수 정리](prime-number-theorem.md)
 
-### Diophantine 문제
+### 약수와 Diophantine 문제
 
+- [완전수](perfect-numbers.md)
 - [abc 추측](abc-conjecture.md)
 
 #number_theory #algorithms #algebra
