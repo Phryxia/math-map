@@ -2,19 +2,19 @@
 
 # 개요
 
-**Cheeger 부등식(Cheeger's inequality)** 은 닫힌 Riemann 다양체에서 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)의 $0$ 이 아닌 첫 고윳값 $\lambda_1$ 이 Cheeger 상수 $h$ 의 제곱의 $1/4$ 이상이라는 부등식이다.
-
-$$
-\lambda_1\ge\frac{h^2}{4}
-$$
-
-$h$ 는 다양체를 두 조각으로 자르는 데 드는 넓이를 작은 조각의 부피로 나눈 값의 하한이다. J. Cheeger 가 1970 년에 증명했다[^1].
+**Cheeger 부등식(Cheeger's inequality)** 은 닫힌 Riemann 다양체에서 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)의 $0$ 이 아닌 첫 고윳값 $\lambda_1$ 이 Cheeger 상수 $h$ 의 제곱의 $1/4$ 이상이라는 부등식이다. 구면 두 개를 가는 관으로 이은 아령 모양 곡면에서는 한쪽 구면에서 $1$, 다른 쪽에서 $-1$ 인 함수가 관 위에서만 변하므로 첫 고윳값이 작은데, 고윳값은 미분방정식을 풀어야 나오는 수라 이런 일이 언제 생기는지 바로 알기 어렵다. Cheeger 부등식에 따르면 곡면을 두 조각으로 자르는 데 드는 넓이의 비율만 재서, 그 비율이 작지 않으면 첫 고윳값도 작지 않다.
 
 # 직관
 
 반지름 $1$ 인 구면 두 개를 길이 $1$, 굵기 $\varepsilon$ 인 관으로 이은 아령 모양 곡면을 생각한다. 한쪽 구면에서 $1$, 다른 쪽에서 $-1$ 이고 관을 따라 $1$ 에서 $-1$ 로 고르게 바뀌는 함수 $f$ 를 잡는다. 기울기는 관 위에서만 $0$ 이 아니고 그 크기는 $2$ 정도이며 관의 넓이는 $\varepsilon$ 에 비례하므로, $\int\Vert\nabla f\Vert^2$ 은 $\varepsilon$ 규모다. $\int f^2$ 은 두 구면의 넓이로 $8\pi$ 근처이고, $f$ 의 평균은 $0$ 이다.
 
 $\lambda_1$ 은 평균이 $0$ 인 함수의 $\int\Vert\nabla f\Vert^2/\int f^2$ 의 최솟값이므로 $\varepsilon$ 규모 이하다. 관이 가늘수록 $\lambda_1$ 이 $0$ 에 가깝다. 관의 가운데를 자르면 자른 곳의 길이가 $\varepsilon$ 규모이고 양쪽 넓이가 $4\pi$ 근처이므로 $h$ 도 $\varepsilon$ 규모로 작다. Cheeger 부등식은 반대 방향을 말한다. $h$ 가 작지 않으면, 곧 다양체에 가는 목이 없으면 $\lambda_1$ 도 작을 수 없다.
+
+$$
+\lambda_1\ge\frac{h^2}{4}
+$$
+
+$h$ 는 다양체를 두 조각으로 자르는 데 드는 넓이를 작은 조각의 부피로 나눈 값의 하한이다. J. Cheeger 가 1970 년에 증명했다[^1].
 
 # 정의
 
