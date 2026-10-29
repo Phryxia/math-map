@@ -73,6 +73,7 @@ $\Pr\lbrack C\gt k\rbrack=1-p(k,N)$ 를 $k=0,1,\dots$ 에 대해 더한 것이 �
 
 ## 더 알아보기
 
-아직 연결한 문서가 없다.
+- [암호 해시 함수](cryptographic-hash-functions.md)
+- [Pollard rho 알고리즘](pollard-rho.md)
 
 #probability #combinatorics #cryptography

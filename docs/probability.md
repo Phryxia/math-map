@@ -133,6 +133,5 @@ $$
 - [스킵 리스트](skip-lists.md)
 - [비교 정렬](comparison-sorting.md)
 - [Karger 축약 알고리즘](karger-min-cut.md)
-- [Pollard rho 알고리즘](pollard-rho.md)
 
 #probability #measure_theory #statistics #algorithms
