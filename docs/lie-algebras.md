@@ -18,7 +18,7 @@ $$
 \lbrace\text{단순연결 Lie 군}\rbrace\ \simeq\ \lbrace\text{유한차원 실 Lie 대수}\rbrace
 $$
 
-복소수 위의 단순 Lie 대수는 완전히 분류되어 있고, 목록은 네 개의 무한 계열 $A_n,B_n,C_n,D_n$ 과 다섯 개의 예외 $E_6,E_7,E_8,F_4,G_2$ 다. 이 목록은 [군의 표현](group-representations.md)에서 유한군의 지표표가 하는 역할을 연속군 쪽에서 맡는다.
+[복소수](complex-numbers.md) 위의 단순 Lie 대수는 완전히 분류되어 있고, 목록은 네 개의 무한 계열 $A_n,B_n,C_n,D_n$ 과 다섯 개의 예외 $E_6,E_7,E_8,F_4,G_2$ 다. 이 목록은 [군의 표현](group-representations.md)에서 유한군의 지표표가 하는 역할을 연속군 쪽에서 맡는다.
 
 $X$ 방향으로 시간 $t$ , $Y$ 방향으로 $t$ , 다시 $X$ 로 $-t$ , $Y$ 로 $-t$ 만큼 흐르면 가환인 경우에만 제자리로 돌아온다. 남는 오차의 최저차항이 교환자다.
 
