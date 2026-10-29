@@ -70,7 +70,7 @@ $$
 
 첫 항의 기댓값은 $p$ 다. 둘째 항에 Stein 항등식을 쓰면 $\nabla\cdot(x/\Vert x\Vert^2)=(p-2)/\Vert x\Vert^2$ 에서 기댓값이 $-2(p-2)^2\mathbb E\lbrack 1/\Vert X\Vert^2\rbrack$ 이다. 셋째 항은 $(p-2)^2/\Vert X\Vert^2$ 이다. 세 항을 더하면 위 식이 나온다. $p\ge 3$ 에서 $\mathbb E\lbrack 1/\Vert X\Vert^2\rbrack$ 이 유한하고 양수이므로 위험이 $p$ 보다 엄격히 작다.
 
-$\theta=0$ 에서는 $\Vert X\Vert^2$ 이 자유도 $p$ 의 카이제곱분포를 따르고 $\mathbb E\lbrack 1/\Vert X\Vert^2\rbrack=1/(p-2)$ 이므로 위험이 $2$ 다. $p=10$ 이면 위험이 $10$ 에서 $2$ 로 준다. $\Vert\theta\Vert\to\infty$ 이면 위험은 $p$ 로 다가간다.
+$\theta=0$ 에서는 $\Vert X\Vert^2$ 이 자유도 $p$ 의 [카이제곱분포](chi-squared-distribution.md)를 따르고 $\mathbb E\lbrack 1/\Vert X\Vert^2\rbrack=1/(p-2)$ 이므로 위험이 $2$ 다. $p=10$ 이면 위험이 $10$ 에서 $2$ 로 준다. $\Vert\theta\Vert\to\infty$ 이면 위험은 $p$ 로 다가간다.
 
 ## 차원과 허용성
 
