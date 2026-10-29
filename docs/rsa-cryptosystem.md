@@ -27,7 +27,7 @@ $$
 \varphi(n) = (p-1)(q-1)
 $$
 
-를 계산한다. 실무에서는 Carmichael 함수
+를 계산한다. 실무에서는 [Carmichael 함수](carmichael-function.md)
 
 $$
 \lambda(n) = \mathrm{lcm}(p-1,\ q-1)

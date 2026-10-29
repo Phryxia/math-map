@@ -57,7 +57,7 @@ $$
 a^{\varphi(n)}=\big(a^{d}\big)^{m}\equiv 1^{m}=1 \pmod{n}
 $$
 
-Fermat 소정리는 $n=p$ 인 경우다. $\varphi(n)$ 이 최소 주기는 아니다. 최소 지수는 Carmichael 함수 $\lambda(n)$ 이고 $\varphi(n)$ 을 나눈다. $n=8$ 에서 $\varphi(8)=4$ 이지만 모든 가역원의 제곱이 1 이므로 $\lambda(8)=2$ 다.
+Fermat 소정리는 $n=p$ 인 경우다. $\varphi(n)$ 이 최소 주기는 아니다. 최소 지수는 [Carmichael 함수](carmichael-function.md) $\lambda(n)$ 이고 $\varphi(n)$ 을 나눈다. $n=8$ 에서 $\varphi(8)=4$ 이지만 모든 가역원의 제곱이 1 이므로 $\lambda(8)=2$ 다.
 
 ## 초등적 증명 (재배열)
 

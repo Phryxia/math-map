@@ -76,7 +76,7 @@ $$
 - $n=ab$, $\gcd(a,b)=1$, $a,b\ge 3$ 이면 $\varphi(a)$ 와 $\varphi(b)$ 가 모두 짝수다. 중국인의 나머지 정리로 모든 가역 $x$ 가 $x^L\equiv 1$ 을 만족하고, $L=\mathrm{lcm}(\varphi(a),\varphi(b))\le\varphi(a)\varphi(b)/2\lt\varphi(n)$ 이다.
 - $n=2^k$, $k\ge 3$ 이면 모든 홀수 $x$ 가 $x^{2^{k-2}}\equiv 1\pmod{2^k}$ 을 만족한다. $k=3$ 이 직관 절의 계산이고, $x^{2^{k-2}}=1+2^k s$ 를 제곱하면 다음 $k$ 로 넘어간다. $\varphi(2^k)=2^{k-1}$ 이므로 원시근이 없다.
 
-원시근이 없는 법에서도 모든 가역 $x$ 에 대해 $x^m\equiv 1$ 인 가장 작은 공통 지수 $\lambda(n)$ 을 정의할 수 있고, 이를 Carmichael 함수(Carmichael function)라 한다. 원시근이 있는 것은 $\lambda(n)=\varphi(n)$ 과 동치다.
+원시근이 없는 법에서도 모든 가역 $x$ 에 대해 $x^m\equiv 1$ 인 가장 작은 공통 지수 $\lambda(n)$ 을 정의할 수 있고, 이를 [Carmichael 함수](carmichael-function.md)라 한다. 원시근이 있는 것은 $\lambda(n)=\varphi(n)$ 과 동치다.
 
 ## 거듭제곱 잉여
 
@@ -107,6 +107,7 @@ $$
 
 ## 더 알아보기
 
+- [Carmichael 함수](carmichael-function.md)
 - [Pratt 증명서](pratt-certificate.md)
 
 #number_theory #group_theory #cryptography #theorem
