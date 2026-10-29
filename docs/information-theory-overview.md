@@ -2,13 +2,9 @@
 
 # 개요
 
-정보이론(information theory)은 확률분포의 불확실성을 수 하나로 재고, 그 수를 압축과 통신의 한계로 삼는다. 압축률, 통신 속도, 추정의 정확도가 모두 같은 양에 대한 부등식이 된다.
+정보이론(information theory)은 확률분포의 불확실성을 수 하나로 재고, 그 수로 압축과 통신의 한계를 정하는 분야다. 맑음, 흐림, 비, 눈 가운데 하나인 날씨 기록을 매일 보내면 하루 $2$ 비트씩 들지만, 맑은 날이 절반이고 나머지가 각각 $1/6$ 이면 자주 오는 값에 짧은 부호를 주어 평균 비트 수를 줄일 수 있다. 각 값의 확률에서 평균 부호 길이의 하한을 계산하고, 그 하한에 다가가는 부호를 만든다.
 
-[Shannon 엔트로피](entropy.md)에서 시작한다. 엔트로피로 두 분포의 차이를 재는 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)와 두 확률변수가 공유하는 정보를 재는 상호정보량을 정의한다. 이 세 양이 Shannon 의 부호화 정리의 양변을 이룬다. [무손실 부호화 정리](source-coding.md)에서 압축의 하한이 엔트로피이고, [채널 부호화 정리](channel-coding.md)에서 잡음 있는 통신로의 상한이 상호정보량의 최댓값이다. 왜곡을 허용하는 압축의 하한은 [율왜곡 이론](rate-distortion-theory.md)에서 상호정보량의 최솟값으로 나온다.
-
-두 정리는 부호의 존재만 주장한다. 실제 부호는 [오류정정부호](error-correcting-codes.md)가 [유한체](finite-fields.md) 위의 선형대수로 구성하고, 그 조합 구조가 [Golay 부호](golay-codes.md)를 거쳐 [Mathieu 군](mathieu-groups.md)과 [구 채우기](sphere-packing.md)로 이어진다.
-
-KL divergence 는 통신 밖에서도 쓰인다. [대편차 원리](large-deviations.md)의 속도함수, [지수족](exponential-families.md)의 쌍대 좌표, [Sinkhorn 알고리즘](sinkhorn.md)의 정규화항, [변분 오토인코더](variational-autoencoder.md)의 손실 항이 모두 KL divergence 다.
+처음 읽는 사람은 [Shannon 엔트로피](entropy.md)에서 시작한다.
 
 # 지도
 
