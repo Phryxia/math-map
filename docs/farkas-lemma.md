@@ -2,14 +2,7 @@
 
 # 개요
 
-**Farkas 보조정리(Farkas' lemma)** 는 실행렬 $A\in\mathbb R^{m\times n}$ 과 $b\in\mathbb R^m$ 에 대해 다음 둘 가운데 정확히 하나가 성립한다는 정리다.
-
-1. $Ax=b$, $x\ge 0$ 인 $x\in\mathbb R^n$ 이 존재한다.
-2. $A^{\mathsf T}y\ge 0$, $b^{\mathsf T}y\lt 0$ 인 $y\in\mathbb R^m$ 이 존재한다.
-
-연립식 $x_1+x_2=-1$, $x_1,x_2\ge0$ 은 해가 없고, $y=1$ 이 $A^{\mathsf T}y=(1,1)\ge0$, $b^{\mathsf T}y=-1\lt 0$ 으로 그 사실을 확인해 준다.
-
-선형 부등식계에 해가 없으면 그 사실을 확인해 주는 벡터 $y$ 가 있다는 정리이고, [선형계획법](linear-programming.md)의 강쌍대성이 이 정리에서 증명된다. 두 조건 가운데 정확히 하나가 성립한다는 꼴의 정리를 대안 정리(theorem of the alternative)라 한다.
+**Farkas 보조정리(Farkas' lemma)** 는 선형 부등식계에 해가 없으면 그 사실을 계산 하나로 확인해 주는 벡터가 있다는 정리다. 연립식 $x_1+x_2=-1$, $x_1,x_2\ge 0$ 에 해가 없다는 것을 보이려고 모든 $(x_1,x_2)$ 를 따질 필요는 없다. 식의 양변에 $1$ 을 곱하면 왼쪽은 음이 아니고 오른쪽은 $-1$ 이어서 모순이 나오듯, 해가 없는 계에는 언제나 이렇게 곱할 수들의 벡터가 있다.
 
 # 직관
 
@@ -18,6 +11,13 @@
 $b$ 가 영역 밖에 있다는 것을 계산 하나로 확인할 수 있다. $y=(1,-\tfrac12)$ 로 두면 $y^{\mathsf T}a_1=1$, $y^{\mathsf T}a_2=\tfrac12$ 로 둘 다 $0$ 이상이고 $y^{\mathsf T}b=-\tfrac12$ 다. 음이 아닌 결합 $x_1a_1+x_2a_2$ 와 $y$ 의 내적은 항상 $0$ 이상이므로 $b$ 는 그런 결합이 아니다. 직선 $y^{\mathsf T}z=0$ 이 영역과 $b$ 를 가른다.
 
 # 정의
+
+Farkas 보조정리는 실행렬 $A\in\mathbb R^{m\times n}$ 과 $b\in\mathbb R^m$ 에 대해 다음 둘 가운데 정확히 하나가 성립한다는 정리다.
+
+1. $Ax=b$, $x\ge 0$ 인 $x\in\mathbb R^n$ 이 존재한다.
+2. $A^{\mathsf T}y\ge 0$, $b^{\mathsf T}y\lt 0$ 인 $y\in\mathbb R^m$ 이 존재한다.
+
+개요의 연립식에서는 $y=1$ 이 $A^{\mathsf T}y=(1,1)\ge 0$, $b^{\mathsf T}y=-1\lt 0$ 으로 조건 2 를 만족한다. 두 조건 가운데 정확히 하나가 성립한다는 꼴의 정리를 대안 정리(theorem of the alternative)라 한다. [선형계획법](linear-programming.md)의 강쌍대성이 이 정리에서 증명된다.
 
 행렬 $A$ 의 열 $a_1,\dots,a_n$ 의 음이 아닌 결합 전체
 
