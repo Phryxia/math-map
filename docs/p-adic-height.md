@@ -70,7 +70,7 @@ $\mathbb R\_{\gt 0}$ 은 연결이고 나눌 수 있는 군이며 $\mathbb Q_p$ 
 
 ## 계산
 
-$v=p$ 항은 [Kedlaya 알고리즘](kedlaya-algorithm.md)으로 구한 Frobenius 행렬에서 Coleman 적분을 얻어 계산하고, 나머지 자리의 항은 각 나쁜 자리의 모델에서 교차수를 읽어 구한다. 좋은 순서 환원을 갖는 타원곡선에서는 $p$ 진 $\sigma$ 함수의 멱급수로도 같은 값이 나온다.
+$v=p$ 항은 [Kedlaya 알고리즘](kedlaya-algorithm.md)으로 구한 Frobenius [행렬](matrices.md)에서 Coleman 적분을 얻어 계산하고, 나머지 자리의 항은 각 나쁜 자리의 모델에서 교차수를 읽어 구한다. 좋은 순서 환원을 갖는 타원곡선에서는 $p$ 진 $\sigma$ 함수의 멱급수로도 같은 값이 나온다.
 
 # 활용
 

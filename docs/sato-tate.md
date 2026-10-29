@@ -42,7 +42,7 @@ $$
 \frac2\pi\sin^2\theta\thinspace d\theta
 $$
 
-를 준다. $\sin^2$ 는 Weyl 분모 $|e^{i\theta}-e^{-i\theta}|^2$ 에서 오고, 서로 다른 고윳값이 밀어내는 효과다. 랜덤 행렬 이론의 고윳값 반발과 같다.
+를 준다. $\sin^2$ 는 Weyl 분모 $|e^{i\theta}-e^{-i\theta}|^2$ 에서 오고, 서로 다른 고윳값이 밀어내는 효과다. 랜덤 [행렬](matrices.md) 이론의 고윳값 반발과 같다.
 
 밀도가 $\sin^2$ 이므로 $a_p$ 가 Hasse 한계에 닿는 $\theta=0$ 이나 $\theta=\pi$ 근처가 드물고 $a_p\approx0$ 근처가 가장 흔하다.
 

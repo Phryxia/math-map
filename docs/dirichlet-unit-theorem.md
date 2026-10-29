@@ -60,7 +60,7 @@ $$
 
 ## 조절자
 
-격자 $\lambda(\mathcal O_K^\times)$ 의 기본영역 부피를 **조절자** $R_K$ 라 한다. 기본단수들의 로그 좌표로 만든 $r\times r$ 행렬의 [행렬식](determinants.md) 절댓값이다.
+격자 $\lambda(\mathcal O_K^\times)$ 의 기본영역 부피를 **조절자** $R_K$ 라 한다. 기본단수들의 로그 좌표로 만든 $r\times r$ [행렬](matrices.md)의 [행렬식](determinants.md) 절댓값이다.
 
 조절자는 단수가 얼마나 드문드문 있는지를 재는 수이고, 기본단수가 클수록 크다.
 

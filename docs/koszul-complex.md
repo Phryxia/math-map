@@ -62,7 +62,7 @@ $$
 \mathrm{Tor}\_p^R\bigl(R/(x),M\bigr)\cong H_p(x;M)
 $$
 
-가 되고 오른쪽은 유한 번의 행렬 계산이다.
+가 되고 오른쪽은 유한 번의 [행렬](matrices.md) 계산이다.
 
 ## 깊이
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-**Dirac 작용소(Dirac operator)** 는 제곱하면 Laplace 작용소가 되는 1계 미분작용소다. 직선에서는 $-i\thinspace d/dx$ 를 제곱하면 $-d^2/dx^2$ 이지만, 평면에서 $-\partial_x^2-\partial_y^2$ 의 제곱근을 $a\partial_x+b\partial_y$ 꼴로 찾으면 $a^2=b^2=-1$ 이고 $ab=-ba$ 여야 하므로 $a,b$ 를 수가 아닌 $2\times 2$ 행렬로 잡아야 한다. Dirac 작용소는 이런 행렬 곱을 다양체 위로 옮겨 정의하고, 그 해 공간의 차원으로 다양체의 위상 불변량을 계산한다.
+**Dirac 작용소(Dirac operator)** 는 제곱하면 Laplace 작용소가 되는 1계 미분작용소다. 직선에서는 $-i\thinspace d/dx$ 를 제곱하면 $-d^2/dx^2$ 이지만, 평면에서 $-\partial_x^2-\partial_y^2$ 의 제곱근을 $a\partial_x+b\partial_y$ 꼴로 찾으면 $a^2=b^2=-1$ 이고 $ab=-ba$ 여야 하므로 $a,b$ 를 수가 아닌 $2\times 2$ [행렬](matrices.md)로 잡아야 한다. Dirac 작용소는 이런 행렬 곱을 다양체 위로 옮겨 정의하고, 그 해 공간의 차원으로 다양체의 위상 불변량을 계산한다.
 
 # 직관
 

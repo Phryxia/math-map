@@ -74,7 +74,7 @@ $$
 
 # 활용
 
-- [Peter–Weyl 정리](peter-weyl.md)는 콤팩트군 $G$ 의 정규화된 Haar 측도로 $L^2(G)$ 를 만들고, 그 공간이 기약표현의 행렬성분으로 분해된다는 진술이다. 유한군 표현론의 평균 논법을 콤팩트군으로 옮기는 자리가 이 측도다.
+- [Peter–Weyl 정리](peter-weyl.md)는 콤팩트군 $G$ 의 정규화된 Haar 측도로 $L^2(G)$ 를 만들고, 그 공간이 기약표현의 [행렬](matrices.md)성분으로 분해된다는 진술이다. 유한군 표현론의 평균 논법을 콤팩트군으로 옮기는 자리가 이 측도다.
 - [Weyl 지표 공식](weyl-character-formula.md)의 해석적 증명은 콤팩트 연결 Lie 군의 Haar 측도를 극대원환면으로 밀어낸다. 그 [상측도](pushforward-measure.md)가 Weyl 적분 공식의 야코비안 $\frac1{\vert W\vert}\vert\Delta\vert^2$ 를 준다.
 - [Sato–Tate 분포](sato-tate.md)는 정규화된 Frobenius 각이 $\mathrm{SU}(2)$ 의 켤레류에서 Haar 측도로 등분포한다는 진술이다. 그 측도를 각으로 읽은 것이 반원 분포다.
 - [아델](adeles.md)의 제한직적은 국소콤팩트라서 Haar 측도를 갖는다. [질량 공식](mass-formula.md)은 이중잉여류의 부피를 이 측도로 재어 격자류의 개수 대신 부피를 센다.

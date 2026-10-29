@@ -2,7 +2,7 @@
 
 # 개요
 
-**Schur 곱셈자(Schur multiplier)** 는 군의 원소를 행렬로 보낼 때 곱셈이 상수배만큼 어긋나는 것을 허용하면, 그 어긋남을 상수 조정으로 없앨 수 있는지를 재는 군이다. 원소끼리 교환하는 군 $\mathbb Z/2\times\mathbb Z/2$ 의 두 생성원을 $X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 과 $Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}$ 로 보내면 $XZ=-ZX$ 여서 곱셈이 부호만큼 어긋난다. $X$ 와 $Z$ 에 어떤 상수를 곱해도 이 부호는 없어지지 않는다. Schur 는 1904 년에 이런 어긋남을 모은 군 $M(G)$ 를 정의하고, 군을 $M(G)$ 만큼 키운 확대에서는 어긋남이 사라짐을 보였다.
+**Schur 곱셈자(Schur multiplier)** 는 군의 원소를 [행렬](matrices.md)로 보낼 때 곱셈이 상수배만큼 어긋나는 것을 허용하면, 그 어긋남을 상수 조정으로 없앨 수 있는지를 재는 군이다. 원소끼리 교환하는 군 $\mathbb Z/2\times\mathbb Z/2$ 의 두 생성원을 $X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 과 $Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}$ 로 보내면 $XZ=-ZX$ 여서 곱셈이 부호만큼 어긋난다. $X$ 와 $Z$ 에 어떤 상수를 곱해도 이 부호는 없어지지 않는다. Schur 는 1904 년에 이런 어긋남을 모은 군 $M(G)$ 를 정의하고, 군을 $M(G)$ 만큼 키운 확대에서는 어긋남이 사라짐을 보였다.
 
 # 직관
 

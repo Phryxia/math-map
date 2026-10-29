@@ -121,7 +121,7 @@ $$
 
 이고, 종수 $g$ 곡면의 블록 차원은 $\dim\mathcal V_g=\sum_m(S_{0m})^{2-2g}$ 이다.
 
-$S$ 는 지표의 모듈러 변환 $\tau\mapsto-1/\tau$ 를 나타내는 행렬이다. $\mathfrak{su}(2)\_k$ 에서 라벨 $a=2j$ 에 대해 다음이다.
+$S$ 는 지표의 모듈러 변환 $\tau\mapsto-1/\tau$ 를 나타내는 [행렬](matrices.md)이다. $\mathfrak{su}(2)\_k$ 에서 라벨 $a=2j$ 에 대해 다음이다.
 
 $$
 S_{ab}=\sqrt{\frac{2}{k+2}}\thinspace\sin\frac{\pi(a+1)(b+1)}{k+2}

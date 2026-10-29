@@ -70,7 +70,7 @@ $\varphi$ 의 [볼록 공액](convex-conjugate.md) $\varphi^\ast$ 와 $x^\ast=\n
 
 - 거울 하강법(mirror descent). 경사하강의 제곱 거리 벌점을 Bregman divergence 로 바꾼 반복이다. 확률 단체 위에서 음의 엔트로피를 쓰면 [곱셈 가중치 절차](multiplicative-weights.md)의 갱신이 된다[^3].
 - 군집. 평균의 최소성으로 [k 평균 군집화](k-means.md)의 Lloyd 반복이 모든 Bregman divergence 에서 그대로 성립한다[^4].
-- 행렬 맞추기. [Sinkhorn 알고리즘](sinkhorn.md)의 각 단계는 아핀집합으로의 KL 사영이고, 등호가 성립하는 Pythagoras 정리로 수렴을 증명한다.
+- [행렬](matrices.md) 맞추기. [Sinkhorn 알고리즘](sinkhorn.md)의 각 단계는 아핀집합으로의 KL 사영이고, 등호가 성립하는 Pythagoras 정리로 수렴을 증명한다.
 - 확률 예측의 평가. [적정 점수 규칙](proper-scoring-rules.md)의 기대 초과 손실이 볼록 함수의 Bregman divergence 다.
 - [정보기하](information-geometry.md). 쌍대 평탄 다양체의 표준 divergence 가 Bregman divergence 이다.
 

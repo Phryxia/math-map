@@ -2,7 +2,7 @@
 
 # 개요
 
-**제타 정규화 행렬식(zeta-regularized determinant)** 은 고윳값이 무한히 많고 끝없이 커지는 작용소에 행렬식을 주는 방법이다. 행렬의 행렬식은 고윳값의 곱이지만, 구간 $\lbrack 0,\pi\rbrack$ 에서 양 끝 값이 $0$ 인 함수에 $-d^2/dx^2$ 를 작용시키는 연산자의 고윳값은 $1,4,9,16,\dots$ 이어서 그 곱이 발산한다. 제타 정규화는 $\zeta_A(s)=\sum_k\lambda_k^{-s}$ 를 [해석적 연속](analytic-continuation.md)으로 $s=0$ 까지 늘려 $\exp(-\zeta_A^\prime(0))$ 을 행렬식으로 삼고, 위 예에서는 Riemann 제타 함수의 값으로부터 행렬식이 $2\pi$ 로 나온다.
+**제타 정규화 행렬식(zeta-regularized determinant)** 은 고윳값이 무한히 많고 끝없이 커지는 작용소에 행렬식을 주는 방법이다. [행렬](matrices.md)의 행렬식은 고윳값의 곱이지만, 구간 $\lbrack 0,\pi\rbrack$ 에서 양 끝 값이 $0$ 인 함수에 $-d^2/dx^2$ 를 작용시키는 연산자의 고윳값은 $1,4,9,16,\dots$ 이어서 그 곱이 발산한다. 제타 정규화는 $\zeta_A(s)=\sum_k\lambda_k^{-s}$ 를 [해석적 연속](analytic-continuation.md)으로 $s=0$ 까지 늘려 $\exp(-\zeta_A^\prime(0))$ 을 행렬식으로 삼고, 위 예에서는 Riemann 제타 함수의 값으로부터 행렬식이 $2\pi$ 로 나온다.
 
 # 직관
 

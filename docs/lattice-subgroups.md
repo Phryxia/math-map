@@ -8,7 +8,7 @@
 
 평면의 정수점 전체 $\mathbb Z^2$ 로 $\mathbb R^2$ 를 접으면 단위 정사각형 하나가 남고 그 면적은 $1$ 이다. 접힌 결과는 환면이어서 콤팩트하고, 면적도 유한하다.
 
-같은 일을 $2\times 2$ 실행렬의 군에서 해 본다. $G=\mathrm{SL}\_2(\mathbb R)$ 는 상반평면 $\mathbb H=\lbrace z:\mathrm{Im}\thinspace z\gt 0\rbrace$ 에 $z\mapsto(az+b)/(cz+d)$ 로 작용하고, $i$ 를 고정하는 부분군은 회전행렬 전체 $\mathrm{SO}(2)$ 다. 정수 성분 행렬 $\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 는 항등원 근방에 자기 원소를 하나만 담으므로 이산이고, 상반평면에서 $\Gamma$ 로 접은 결과는 다음 영역을 접은 것과 같다.
+같은 일을 $2\times 2$ 실행렬의 군에서 해 본다. $G=\mathrm{SL}\_2(\mathbb R)$ 는 상반평면 $\mathbb H=\lbrace z:\mathrm{Im}\thinspace z\gt 0\rbrace$ 에 $z\mapsto(az+b)/(cz+d)$ 로 작용하고, $i$ 를 고정하는 부분군은 회전행렬 전체 $\mathrm{SO}(2)$ 다. 정수 성분 [행렬](matrices.md) $\Gamma=\mathrm{SL}\_2(\mathbb Z)$ 는 항등원 근방에 자기 원소를 하나만 담으므로 이산이고, 상반평면에서 $\Gamma$ 로 접은 결과는 다음 영역을 접은 것과 같다.
 
 $$
 F=\lbrace x+iy:\vert x\vert\lt 1/2,\thinspace x^2+y^2\gt 1\rbrace

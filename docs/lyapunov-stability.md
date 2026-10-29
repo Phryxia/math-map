@@ -64,7 +64,7 @@ $$
 
 ## Lyapunov 방정식
 
-**정리.** 행렬 $A$ 의 모든 고윳값의 실수부가 음수인 것과, 어떤 양의 정부호(positive definite) 행렬 $Q$ 에 대해 **Lyapunov 방정식(Lyapunov equation)**
+**정리.** [행렬](matrices.md) $A$ 의 모든 고윳값의 실수부가 음수인 것과, 어떤 양의 정부호(positive definite) 행렬 $Q$ 에 대해 **Lyapunov 방정식(Lyapunov equation)**
 
 $$
 A^{\mathsf T}P+PA=-Q

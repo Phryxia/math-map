@@ -166,7 +166,7 @@ $\mathbb F_q(T)$ 같은 함수체에서도 아델과 이델이 그대로 정의�
 
 ## 이후의 발전
 
-Godement 와 Jacquet 이 이 논문을 $\mathrm{GL}\_n$ 으로 올렸다. 시험함수를 행렬 공간 $M_n(\mathbb A)$ 위에서 잡고 자기동형 표현 $\pi$ 의 행렬 계수를 곱해 적분하면
+Godement 와 Jacquet 이 이 논문을 $\mathrm{GL}\_n$ 으로 올렸다. 시험함수를 [행렬](matrices.md) 공간 $M_n(\mathbb A)$ 위에서 잡고 자기동형 표현 $\pi$ 의 행렬 계수를 곱해 적분하면
 
 $$
 Z(f,\pi,s)=\int_{\mathrm{GL}\_n(\mathbb A)}f(g)\thinspace\langle\pi(g)v,\tilde v\rangle\thinspace|\det g|^{s+\frac{n-1}2}\thinspace dg

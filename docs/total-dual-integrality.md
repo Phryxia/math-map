@@ -16,7 +16,7 @@
 
 # 정의
 
-유리 행렬 $A\in\mathbb Q^{m\times n}$ 과 $b\in\mathbb Q^m$ 에 대해, 부등식계 $Ax\le b$ 가 **TDI** 라는 것은 다음을 뜻한다. 모든 정수 벡터 $c\in\mathbb Z^n$ 에 대해 쌍대 문제
+유리 [행렬](matrices.md) $A\in\mathbb Q^{m\times n}$ 과 $b\in\mathbb Q^m$ 에 대해, 부등식계 $Ax\le b$ 가 **TDI** 라는 것은 다음을 뜻한다. 모든 정수 벡터 $c\in\mathbb Z^n$ 에 대해 쌍대 문제
 
 $$
 \min\lbrace y^{\mathsf T}b:\ y^{\mathsf T}A=c^{\mathsf T},\ y\ge 0\rbrace

@@ -18,7 +18,7 @@ $S$ 의 고윳값의 평균 $m=\mathrm{tr}(S)/p$ 는 $1$ 에 가깝다. $S$ 를 
 
 ## 노름
 
-$p\times p$ 행렬에 대해 $\langle A,B\rangle=\mathrm{tr}(AB^{\mathsf T})/p$, $\Vert A\Vert^2=\langle A,A\rangle$ 로 둔다. $\Vert I\Vert=1$ 이다.
+$p\times p$ [행렬](matrices.md)에 대해 $\langle A,B\rangle=\mathrm{tr}(AB^{\mathsf T})/p$, $\Vert A\Vert^2=\langle A,A\rangle$ 로 둔다. $\Vert I\Vert=1$ 이다.
 
 ## 신탁 추정량
 

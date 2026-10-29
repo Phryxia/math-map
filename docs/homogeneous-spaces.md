@@ -65,7 +65,7 @@ $\mathfrak g/\mathfrak h$ 위의 내적 하나를 잡고 $H$ 의 [Haar 측도](h
 # 활용
 
 - [Grassmann 다양체](grassmannian.md)가 $\mathrm{O}(n)/(\mathrm{O}(k)\times\mathrm{O}(n-k))$ 다. 안정자가 콤팩트하므로 불변 계량이 있고, 그 계량으로 Grassmann 다양체가 콤팩트 대칭공간이 된다.
-- [Peter–Weyl 정리](peter-weyl.md)가 콤팩트군 위의 함수를 행렬계수로 분해한다. $G/H$ 에서는 $H$ 불변 벡터를 갖는 표현만 남고, 구면에서 이 분해가 [구면조화함수](spherical-harmonics.md)다.
+- [Peter–Weyl 정리](peter-weyl.md)가 콤팩트군 위의 함수를 [행렬](matrices.md)계수로 분해한다. $G/H$ 에서는 $H$ 불변 벡터를 갖는 표현만 남고, 구면에서 이 분해가 [구면조화함수](spherical-harmonics.md)다.
 - Haar 측도의 등질공간 판본이 $G/H$ 위의 불변 측도다. $H$ 가 콤팩트하면 불변 측도가 상수배를 빼고 하나이고, 이것으로 등질공간 위의 적분을 군 위의 적분으로 바꾼다.
 - 모듈러 곡선이 $\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)$ 를 이산 부분군으로 나눈 몫이다. 상반평면이 등질공간이고 그 위의 불변 계량이 쌍곡 계량이다.
 - 대칭공간의 분류가 반단순 Lie 대수와 그 대합의 분류로 환원된다. 등방표현의 꼴이 곡률의 부호를 정한다.

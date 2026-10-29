@@ -2,7 +2,7 @@
 
 # 개요
 
-**핵 능형회귀(kernel ridge regression)** 는 좌표를 아주 많이 늘린 비선형 회귀를, 자료점 사이의 핵 값만으로 계산하는 능형회귀다. [선형회귀](linear-regression.md)의 능형 판본은 해 $w=(X^\top X+\lambda I)^{-1}X^\top y$ 에서 좌표의 개수 $d$ 크기의 행렬을 뒤집으므로, 좌표를 늘려 비선형 모형을 만들면 계산도 함께 커진다. 핵 능형회귀는 [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)에서 해가 자료점의 핵 함수들의 결합임을 써서, 자료점 $n$ 개의 핵 행렬 $K$ 로 $\alpha=(K+\lambda I)^{-1}y$ 만 푼다.
+**핵 능형회귀(kernel ridge regression)** 는 좌표를 아주 많이 늘린 비선형 회귀를, 자료점 사이의 핵 값만으로 계산하는 능형회귀다. [선형회귀](linear-regression.md)의 능형 판본은 해 $w=(X^\top X+\lambda I)^{-1}X^\top y$ 에서 좌표의 개수 $d$ 크기의 [행렬](matrices.md)을 뒤집으므로, 좌표를 늘려 비선형 모형을 만들면 계산도 함께 커진다. 핵 능형회귀는 [재생핵 Hilbert 공간](reproducing-kernel-hilbert-space.md)에서 해가 자료점의 핵 함수들의 결합임을 써서, 자료점 $n$ 개의 핵 행렬 $K$ 로 $\alpha=(K+\lambda I)^{-1}y$ 만 푼다.
 
 # 직관
 

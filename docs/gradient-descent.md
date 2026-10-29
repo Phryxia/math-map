@@ -147,7 +147,7 @@ $$
 
 ## 학습과 대규모 볼록 최적화
 
-선형회귀와 로지스틱회귀의 학습, 신경망의 역전파 학습, [선형계획법](linear-programming.md)으로 다루기 어려운 대규모 볼록 문제의 1 차 해법, 행렬 분해와 임베딩 학습에 쓰인다. 목적함수가 [볼록](convexity.md)이면 찾은 점이 전역 최소이고, 그렇지 않으면 초깃값, 학습률 일정, 정규화가 결과를 좌우한다. [최대가능도 추정](maximum-likelihood.md)처럼 확률모형의 목적함수를 최적화하는 문제에서도 기본 해법이다.
+선형회귀와 로지스틱회귀의 학습, 신경망의 역전파 학습, [선형계획법](linear-programming.md)으로 다루기 어려운 대규모 볼록 문제의 1 차 해법, [행렬](matrices.md) 분해와 임베딩 학습에 쓰인다. 목적함수가 [볼록](convexity.md)이면 찾은 점이 전역 최소이고, 그렇지 않으면 초깃값, 학습률 일정, 정규화가 결과를 좌우한다. [최대가능도 추정](maximum-likelihood.md)처럼 확률모형의 목적함수를 최적화하는 문제에서도 기본 해법이다.
 
 [^1]: R. Tibshirani, Gradient Descent (Convex Optimization 10-725 강의노트), Carnegie Mellon University. https://www.stat.cmu.edu/~ryantibs/convexopt/lectures/grad-descent.pdf
 [^2]: M. Schmidt, Rates of Convergence: Linear Convergence of Gradient Descent (CPSC 540 강의노트), UBC. https://www.cs.ubc.ca/~schmidtm/Courses/540-W19/L5.pdf

@@ -71,7 +71,7 @@ $\exp(x)$ 의 계수 $1/n!$ 이 분모에 $p$ 를 끌고 오는데 $x^p/p+x^{p^2
 
 ## 완전연속 작용소와 Fredholm 행렬식
 
-$p$ 진 Banach 공간 $B$ 위의 연속선형작용소 $\alpha$ 가 **완전연속**(completely continuous, Serre 의 용어)이라 함은 유한계수 작용소의 노름극한이라는 뜻이다. 이때 $\alpha$ 의 행렬 $(a_{ij})$ 에 대해
+$p$ 진 Banach 공간 $B$ 위의 연속선형작용소 $\alpha$ 가 **완전연속**(completely continuous, Serre 의 용어)이라 함은 유한계수 작용소의 노름극한이라는 뜻이다. 이때 $\alpha$ 의 [행렬](matrices.md) $(a_{ij})$ 에 대해
 
 $$
 \det(1-T\alpha)=\sum_{k\ge0}(-1)^kc_kT^k,

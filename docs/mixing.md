@@ -88,7 +88,7 @@ $$
 
 - **Bernoulli 이동.** 독립 동일분포 열의 공간에서 좌표를 한 칸 미는 변환은 강혼합이다. $A$ 와 $T^{-n}B$ 가 충분히 큰 $n$ 에서 서로 다른 좌표만 보므로 독립이다.
 - **두 배 사상.** $Tx=2x \bmod 1$ 은 이진 전개에서 자리를 한 칸 미는 것이라 공정한 동전열의 Bernoulli 이동과 같고, 따라서 강혼합이다.
-- **Arnold 고양이 사상.** $\mathbb T^2$ 에서 $T(x,y)=(2x+y,\thinspace x+y)$ 는 Lebesgue 측도를 보존하고 강혼합이다. $f$ 의 [Fourier 계수](fourier-series.md)가 $n$ 걸음 뒤 $(A^{\mathsf T})^n$ 으로 밀려 나가고 행렬의 고유값 절댓값이 $1$ 이 아니므로, $0$ 이 아닌 격자점의 상이 무한히 멀어져 상관이 사라진다.
+- **Arnold 고양이 사상.** $\mathbb T^2$ 에서 $T(x,y)=(2x+y,\thinspace x+y)$ 는 Lebesgue 측도를 보존하고 강혼합이다. $f$ 의 [Fourier 계수](fourier-series.md)가 $n$ 걸음 뒤 $(A^{\mathsf T})^n$ 으로 밀려 나가고 [행렬](matrices.md)의 고유값 절댓값이 $1$ 이 아니므로, $0$ 이 아닌 격자점의 상이 무한히 멀어져 상관이 사라진다.
 
 [^1]: R. V. Chacón, "Weakly mixing transformations which are not strongly mixing", Proc. Amer. Math. Soc. 22 (1969), 559–562.
 

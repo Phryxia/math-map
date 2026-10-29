@@ -42,7 +42,7 @@ $$
 \vartheta(G)=\max\ \lbrace\thinspace\mathrm{tr}(JX)\ :\ X\succeq0,\ \mathrm{tr}(X)=1,\ X_{ij}=0\ \ \forall ij\in E\thinspace\rbrace
 $$
 
-$J$ 는 모든 성분이 1 인 행렬이다. $X$ 를 랭크 1 인 $xx^{\mathsf T}$ 로 제한하면 독립집합 문제 자체가 되고, 랭크 제약을 푼 것이 이 완화다.
+$J$ 는 모든 성분이 1 인 [행렬](matrices.md)이다. $X$ 를 랭크 1 인 $xx^{\mathsf T}$ 로 제한하면 독립집합 문제 자체가 되고, 랭크 제약을 푼 것이 이 완화다.
 
 쌍대는 [고윳값](eigenvalues.md) 문제다.
 

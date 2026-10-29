@@ -56,7 +56,7 @@ $C^{\lambda}\_{ST}C^{\lambda}\_{UV}\equiv\Phi\_\lambda(T,U)\thinspace C^{\lambda
 
 ## 분해행렬의 삼각성
 
-중복도 $d\_{\lambda\mu}=\lbrack W(\lambda):L(\mu)\rbrack$ 를 모은 행렬은 $d\_{\lambda\lambda}=1$ 이고 $\mu\not\le\lambda$ 이면 $d\_{\lambda\mu}=0$ 이라 단일 삼각이다[^1]. 따라서 가역이고, 세포 가군의 지표에서 기약 지표를 되찾는 계산이 역행렬 하나로 끝난다.
+중복도 $d\_{\lambda\mu}=\lbrack W(\lambda):L(\mu)\rbrack$ 를 모은 [행렬](matrices.md)은 $d\_{\lambda\lambda}=1$ 이고 $\mu\not\le\lambda$ 이면 $d\_{\lambda\mu}=0$ 이라 단일 삼각이다[^1]. 따라서 가역이고, 세포 가군의 지표에서 기약 지표를 되찾는 계산이 역행렬 하나로 끝난다.
 
 ## 반단순성의 판정
 

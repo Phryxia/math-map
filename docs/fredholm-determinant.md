@@ -6,7 +6,7 @@
 
 # 직관
 
-행렬식은 유한차원의 개념이다. $n \times n$ 행렬의 행렬식은 $n!$ 개 항의 합이고, $n \to \infty$ 에서 이 정의는 아무 의미가 없다. 그런데 적분방정식
+행렬식은 유한차원의 개념이다. $n \times n$ [행렬](matrices.md)의 행렬식은 $n!$ 개 항의 합이고, $n \to \infty$ 에서 이 정의는 아무 의미가 없다. 그런데 적분방정식
 
 $$
 \phi(x) - \int_a^b K(x,y)\thinspace\phi(y)\thinspace dy = f(x)

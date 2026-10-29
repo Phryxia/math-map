@@ -146,7 +146,7 @@ $$
 
 - **이차형식의 표현수.** $\theta^k$ 의 계수가 $k$ 개의 제곱수 합으로 $n$ 을 적는 방법의 수다. Weil 표현이 보장하는 모듈러성 덕분에 이 급수가 유한차원 공간에 놓이고 Eisenstein 부분과 첨점 부분으로 쪼개지며, 앞쪽이 주항을 뒤쪽이 오차항을 준다. $k=4$ 에서는 첨점 부분이 없어 Jacobi 의 네 제곱수 정리 $r_4(n)=8\sum_{4\nmid d\mid n}d$ 가 정확한 공식이 된다.
 - **반정수 무게 형식의 공급원.** 반정수 무게는 메타플렉틱군의 표현이고 그 군의 기본 표현이 $\omega_\psi$ 이므로, 반정수 무게 형식을 만드는 체계적 방법이 theta 급수다. Zagier 의 Eisenstein 급수, Cohen 의 형식, [Jacobi 형식](jacobi-forms.md)이 이 틀에서 나온다.
-- **정준교환관계의 유일성.** Stone–von Neumann 정리는 물리에서 양자화의 유일성 정리다. 위치와 운동량의 교환관계를 만족하는 연산자 쌍은 구현 방식에 관계없이 유니터리 동치이고, Schrödinger 표현과 Heisenberg 행렬역학이 같은 이론인 근거가 된다. 메타플렉틱 표현은 선형 정준변환의 양자화이며, 광학의 ABCD 행렬의 양자 판본이 $\omega_\psi$ 다. 유일성은 유한 자유도에서만 성립하고, 장론에서는 동치가 아닌 표현이 연속적으로 많이 생겨 상전이와 자발적 대칭깨짐이 표현론적 의미를 갖는다.
+- **정준교환관계의 유일성.** Stone–von Neumann 정리는 물리에서 양자화의 유일성 정리다. 위치와 운동량의 교환관계를 만족하는 연산자 쌍은 구현 방식에 관계없이 유니터리 동치이고, Schrödinger 표현과 Heisenberg [행렬](matrices.md)역학이 같은 이론인 근거가 된다. 메타플렉틱 표현은 선형 정준변환의 양자화이며, 광학의 ABCD 행렬의 양자 판본이 $\omega_\psi$ 다. 유일성은 유한 자유도에서만 성립하고, 장론에서는 동치가 아닌 표현이 연속적으로 많이 생겨 상전이와 자발적 대칭깨짐이 표현론적 의미를 갖는다.
 
 [^1]: R. Howe, *Transcending classical invariant theory*, J. Amer. Math. Soc. **2** (1989). Weil 표현의 원 논문은 A. Weil, *Sur certains groupes d'opérateurs unitaires*, Acta Math. **111** (1964).
 

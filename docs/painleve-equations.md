@@ -10,7 +10,7 @@
 
 $y'' = F(x, y, y')$ 꼴에서 움직이는 특이점이 극점뿐이라는 조건($\mathbf{P}$ 성질)을 만족하는 방정식을 분류하면, 알려진 함수로 풀리는 것을 제외하고 여섯 개가 남는다. 이것이 Painlevé 방정식 $\mathrm{P}\_{\mathrm{I}}$ 부터 $\mathrm{P}\_{\mathrm{VI}}$ 이고, 그 해가 Painlevé 초월함수다.
 
-무작위 행렬의 [Tracy–Widom 분포](tracy-widom.md), 2차원 [Ising 모형](ising-model.md)의 상관함수, [최장 증가 부분수열](longest-increasing-subsequence.md)의 길이 분포가 모두 이 여섯 개 가운데 하나로 쓰인다. [Airy 함수](airy-functions.md)가 선형 방정식의 표준형이라면 Painlevé 방정식은 비선형의 표준형이다.
+무작위 [행렬](matrices.md)의 [Tracy–Widom 분포](tracy-widom.md), 2차원 [Ising 모형](ising-model.md)의 상관함수, [최장 증가 부분수열](longest-increasing-subsequence.md)의 길이 분포가 모두 이 여섯 개 가운데 하나로 쓰인다. [Airy 함수](airy-functions.md)가 선형 방정식의 표준형이라면 Painlevé 방정식은 비선형의 표준형이다.
 
 선형 방정식 $y'' + p(x)y' + q(x)y = 0$ 의 해는 $p, q$ 가 정칙인 곳에서 정칙이므로 특이점의 위치가 계수로 고정된다. 비선형에서는 $y' = y^2$ 의 해 $y = 1/(c-x)$ 가 $x = c$ 에서 터지고 그 위치를 초깃값이 정한다. 움직이는 특이점이 극점이면 해가 유리형함수이지만, $y' = y^3$ 의 해 $y = (2(c-x))^{-1/2}$ 는 $x = c$ 를 돌면 부호가 바뀌어 일가함수가 아니다. $\mathbf{P}$ 성질은 움직이는 특이점이 극점뿐이라고 요구해 복소평면 위에서 대역적으로 정의되는 해만 남긴다.
 

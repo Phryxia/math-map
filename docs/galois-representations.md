@@ -2,7 +2,7 @@
 
 # 개요
 
-**Galois 표현(Galois representation)** 은 Galois 군에서 행렬군으로 가는 연속 준동형 $\rho\colon G_K\to\mathrm{GL}\_n(E)$ 다. 방정식 $y^2=x^3-x$ 의 해를 법 $p$ 로 세면 소수 $p$ 마다 다른 개수가 나오고, 이 개수들 사이의 관계는 소수를 하나씩 보아서는 드러나지 않는다. 다양체의 [에탈 코호몰로지](etale-cohomology.md)에는 Galois 군이 작용하고 Frobenius 원소의 대각합이 그 개수를 주므로, 모든 $p$ 의 개수가 표현 하나로 묶인다.
+**Galois 표현(Galois representation)** 은 Galois 군에서 [행렬](matrices.md)군으로 가는 연속 준동형 $\rho\colon G_K\to\mathrm{GL}\_n(E)$ 다. 방정식 $y^2=x^3-x$ 의 해를 법 $p$ 로 세면 소수 $p$ 마다 다른 개수가 나오고, 이 개수들 사이의 관계는 소수를 하나씩 보아서는 드러나지 않는다. 다양체의 [에탈 코호몰로지](etale-cohomology.md)에는 Galois 군이 작용하고 Frobenius 원소의 대각합이 그 개수를 주므로, 모든 $p$ 의 개수가 표현 하나로 묶인다.
 
 # 직관
 

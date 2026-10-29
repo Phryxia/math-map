@@ -30,7 +30,7 @@ $K$ 가 경계가 되는 $B^4$ 안의 매끄러운 곡면의 최소 종수를 **
 
 ## Seifert 행렬과 부호수
 
-$K$ 가 경계인 $S^3$ 안의 방향을 준 곡면 $F$ 를 Seifert 곡면(Seifert surface)이라 한다. $H_1(F)$ 의 기저 $a_1,\dots,a_{2g}$ 와 $a_j$ 를 $F$ 의 양의 법선 방향으로 조금 민 $a_j^+$ 에 대해 $V_{ij}=\mathrm{lk}(a_i,a_j^+)$ 로 둔 정수 행렬 $V$ 를 Seifert 행렬(Seifert matrix)이라 한다. 여기서 $\mathrm{lk}$ 는 두 닫힌 곡선의 꼬임수다.
+$K$ 가 경계인 $S^3$ 안의 방향을 준 곡면 $F$ 를 Seifert 곡면(Seifert surface)이라 한다. $H_1(F)$ 의 기저 $a_1,\dots,a_{2g}$ 와 $a_j$ 를 $F$ 의 양의 법선 방향으로 조금 민 $a_j^+$ 에 대해 $V_{ij}=\mathrm{lk}(a_i,a_j^+)$ 로 둔 정수 [행렬](matrices.md) $V$ 를 Seifert 행렬(Seifert matrix)이라 한다. 여기서 $\mathrm{lk}$ 는 두 닫힌 곡선의 꼬임수다.
 
 $$
 \sigma(K)=\mathrm{sign}(V+V^{T}),\qquad\Delta_K(t)=\det(V-tV^{T})

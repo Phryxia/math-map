@@ -106,7 +106,7 @@ $f$ 와 서로소인 $g$ 에 대해 $gu+fv=1$ 을 확장 유클리드 알고리�
 
 ## 가군의 구조 정리
 
-유클리드 정역 위의 행렬은 행과 열에 나눗셈을 적용하는 연산으로 대각행렬로 바뀌고, 대각성분이 차례로 다음을 나누게 정돈된다. 이 표준형이 [PID 위의 유한생성 가군](finitely-generated-modules.md)의 분해를 계산으로 주며, 정수환에서는 유한생성 아벨군의 분류, [체](fields.md) 위의 다항식환에서는 [Jordan 표준형](jordan-canonical-form.md)이 된다.
+유클리드 정역 위의 [행렬](matrices.md)은 행과 열에 나눗셈을 적용하는 연산으로 대각행렬로 바뀌고, 대각성분이 차례로 다음을 나누게 정돈된다. 이 표준형이 [PID 위의 유한생성 가군](finitely-generated-modules.md)의 분해를 계산으로 주며, 정수환에서는 유한생성 아벨군의 분류, [체](fields.md) 위의 다항식환에서는 [Jordan 표준형](jordan-canonical-form.md)이 된다.
 
 ## Gauss 정수환의 산술
 

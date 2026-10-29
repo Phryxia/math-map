@@ -122,7 +122,7 @@ $-\zeta'/\zeta$ 를 Perron 공식에 넣고 [유수 정리](residue-theorem.md)�
 
 ## 영점의 간격
 
-Montgomery 와 Dyson 은 임계선 위 영점의 간격 분포가 Gauss 유니터리 앙상블의 고윳값 간격 분포와 같은 꼴임을 관찰했다. 무작위 행렬의 고윳값 통계를 $L$ 함수의 평균값 예측에 쓰는 것이 이 대응에 기댄다. 고윳값의 대역 분포는 [Wigner 반원법칙](wigner-semicircle.md)이 준다.
+Montgomery 와 Dyson 은 임계선 위 영점의 간격 분포가 Gauss 유니터리 앙상블의 고윳값 간격 분포와 같은 꼴임을 관찰했다. 무작위 [행렬](matrices.md)의 고윳값 통계를 $L$ 함수의 평균값 예측에 쓰는 것이 이 대응에 기댄다. 고윳값의 대역 분포는 [Wigner 반원법칙](wigner-semicircle.md)이 준다.
 
 # 연관 문서
 

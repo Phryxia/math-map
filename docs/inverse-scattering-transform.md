@@ -122,7 +122,7 @@ $$
 
 # 활용
 
-- [Lax 쌍](lax-pairs.md)의 미분연산자 판본이 쓰이는 자리다. 유한 행렬에서는 $\mathrm{tr}(L^k)$ 가 보존량을 주지만 $L$ 이 미분연산자이면 대각합이 없고, 대신 산란 자료가 보존량과 선형으로 움직이는 좌표를 함께 준다.
+- [Lax 쌍](lax-pairs.md)의 미분연산자 판본이 쓰이는 자리다. 유한 [행렬](matrices.md)에서는 $\mathrm{tr}(L^k)$ 가 보존량을 주지만 $L$ 이 미분연산자이면 대각합이 없고, 대신 산란 자료가 보존량과 선형으로 움직이는 좌표를 함께 준다.
 - [Sturm–Liouville 이론](sturm-liouville.md)의 스펙트럼 문제를 거꾸로 쓴다. 포텐셜에서 스펙트럼을 구하는 것이 순방향이고, 산란 자료에서 포텐셜을 정하는 Gelfand–Levitan–Marchenko 방정식이 역방향이다.
 - [적분가능계](integrable-systems.md)의 작용-각 좌표에 대응한다. 유한 자유도에서 작용 변수가 상수이고 각 변수가 선형으로 흐르는 것처럼, $\vert a(k)\vert$ 와 $\kappa\_n$ 이 상수이고 $r(k)$ 의 위상과 $\log c\_n$ 이 선형으로 흐른다.
 - [Fourier 변환](fourier-transform.md)의 비선형 대응으로 쓰인다. $u$ 가 작으면 Gelfand–Levitan–Marchenko 방정식의 일차 항만 남아 $r(k)$ 가 $\hat u$ 에 비례하고, 자료의 시간 인자 $e^{8ik^3t}$ 는 선형화한 KdV $u\_t=-u\_{xxx}$ 의 분산 인자와 같다.

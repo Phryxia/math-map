@@ -14,7 +14,7 @@ $$
 E_4(\tau)=\sum_{(m,n)\neq(0,0)}\frac{1}{(m\tau+n)^4}
 $$
 
-$\tau$ 를 $(a\tau+b)/(c\tau+d)$ 로 바꾸면 각 항의 분모가 $(c\tau+d)^{-4}$ 배가 되고 합을 $\mathbb Z^2$ 의 다른 기저로 다시 세는 것이 되어 $E_4((a\tau+b)/(c\tau+d))=(c\tau+d)^4E_4(\tau)$ 가 나오므로 불변이 아니다. 인수 $(c\tau+d)^4$ 는 함수가 아니라 변환에 딸린 것이므로 같은 인수가 붙는 함수 둘의 비에서 약분되고, $\Delta$ 에는 $(c\tau+d)^{12}$ 가 붙으니 $j=E_4^3/\Delta$ 에서 인수가 사라진다. 차원 $g$ 에서 $\tau$ 는 $g\times g$ 대칭행렬이고 격자 기저를 바꾸는 군은 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 이며, 작용이 $(A\tau+B)(C\tau+D)^{-1}$ 이므로 $(c\tau+d)$ 의 자리에 $g\times g$ 행렬 $C\tau+D$ 가 온다. 이것을 수로 만들려면 [행렬식](determinants.md)을 취하고, 붙는 인수 $\det(C\tau+D)^k$ 를 달고 변하는 정칙함수를 모은 것이 가중치 $k$ 의 공간이다.
+$\tau$ 를 $(a\tau+b)/(c\tau+d)$ 로 바꾸면 각 항의 분모가 $(c\tau+d)^{-4}$ 배가 되고 합을 $\mathbb Z^2$ 의 다른 기저로 다시 세는 것이 되어 $E_4((a\tau+b)/(c\tau+d))=(c\tau+d)^4E_4(\tau)$ 가 나오므로 불변이 아니다. 인수 $(c\tau+d)^4$ 는 함수가 아니라 변환에 딸린 것이므로 같은 인수가 붙는 함수 둘의 비에서 약분되고, $\Delta$ 에는 $(c\tau+d)^{12}$ 가 붙으니 $j=E_4^3/\Delta$ 에서 인수가 사라진다. 차원 $g$ 에서 $\tau$ 는 $g\times g$ 대칭행렬이고 격자 기저를 바꾸는 군은 $\mathrm{Sp}\_{2g}(\mathbb Z)$ 이며, 작용이 $(A\tau+B)(C\tau+D)^{-1}$ 이므로 $(c\tau+d)$ 의 자리에 $g\times g$ [행렬](matrices.md) $C\tau+D$ 가 온다. 이것을 수로 만들려면 [행렬식](determinants.md)을 취하고, 붙는 인수 $\det(C\tau+D)^k$ 를 달고 변하는 정칙함수를 모은 것이 가중치 $k$ 의 공간이다.
 
 # 정의
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-**Schatten 아이디얼(Schatten ideal)** 은 무한차원 공간의 작용소 가운데 특이값을 모은 수열이 일정한 속도로 작아지는 것들의 모임이다. 무한 행렬의 대각합을 대각 원소의 합 $\sum_n\langle Ae_n,e_n\rangle$ 으로 정하려 하면 이 합이 수렴하지 않거나 기저에 따라 값이 달라질 수 있다. Schatten 아이디얼 $\mathcal S_p$ 는 특이값 수열이 $\ell^p$ 에 드는 [콤팩트 작용소](compact-operators.md)의 모임이고, $p=1$ 인 것에서는 대각합이 기저와 무관하게 정해진다.
+**Schatten 아이디얼(Schatten ideal)** 은 무한차원 공간의 작용소 가운데 특이값을 모은 수열이 일정한 속도로 작아지는 것들의 모임이다. 무한 [행렬](matrices.md)의 대각합을 대각 원소의 합 $\sum_n\langle Ae_n,e_n\rangle$ 으로 정하려 하면 이 합이 수렴하지 않거나 기저에 따라 값이 달라질 수 있다. Schatten 아이디얼 $\mathcal S_p$ 는 특이값 수열이 $\ell^p$ 에 드는 [콤팩트 작용소](compact-operators.md)의 모임이고, $p=1$ 인 것에서는 대각합이 기저와 무관하게 정해진다.
 
 # 직관
 

@@ -95,7 +95,7 @@ $$
 \Gamma^{k}\_{ij} = \frac{1}{2} \sum_{l} g^{kl} \left( \partial_i g_{jl} + \partial_j g_{il} - \partial_l g_{ij} \right),
 $$
 
-여기서 $g^{kl}$ 은 계량 행렬의 역행렬 성분이다. Christoffel 기호는 텐서가 아니다. 좌표변환에서 추가 항이 붙으며, 임의의 한 점에서는 좌표를 잘 잡아 모두 0으로 만들 수 있다(normal coordinates). 그래서 곡률은 기호 자체가 아니라 그 미분의 조합으로 정의되어야 한다.
+여기서 $g^{kl}$ 은 계량 [행렬](matrices.md)의 역행렬 성분이다. Christoffel 기호는 텐서가 아니다. 좌표변환에서 추가 항이 붙으며, 임의의 한 점에서는 좌표를 잘 잡아 모두 0으로 만들 수 있다(normal coordinates). 그래서 곡률은 기호 자체가 아니라 그 미분의 조합으로 정의되어야 한다.
 
 ## 측지선
 

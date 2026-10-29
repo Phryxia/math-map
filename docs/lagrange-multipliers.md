@@ -16,7 +16,7 @@
 
 ## 정칙점
 
-열린집합 $U\subseteq\mathbb R^n$ 위의 연속미분가능한 함수 $g_1,\dots,g_k$ 로 제약집합 $M=\lbrace x\in U\mid g_1(x)=\cdots=g_k(x)=0\rbrace$ 을 둔다. $a\in M$ 에서 기울기 $\nabla g_1(a),\dots,\nabla g_k(a)$ 가 일차독립이면 $a$ 를 $M$ 의 **정칙점(regular point)** 이라 한다. Jacobi 행렬 $Dg(a)$ 의 계수가 $k$ 라는 조건과 같다.
+열린집합 $U\subseteq\mathbb R^n$ 위의 연속미분가능한 함수 $g_1,\dots,g_k$ 로 제약집합 $M=\lbrace x\in U\mid g_1(x)=\cdots=g_k(x)=0\rbrace$ 을 둔다. $a\in M$ 에서 기울기 $\nabla g_1(a),\dots,\nabla g_k(a)$ 가 일차독립이면 $a$ 를 $M$ 의 **정칙점(regular point)** 이라 한다. Jacobi [행렬](matrices.md) $Dg(a)$ 의 계수가 $k$ 라는 조건과 같다.
 
 ## Lagrangian
 

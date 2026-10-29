@@ -45,7 +45,7 @@ $m$ 이 충분히 크면 [비둘기집 원리](pigeonhole-principle.md)로 해�
 
 ## 구조화된 변형
 
-평문 LWE 의 공개키는 $n\times m$ 행렬이라 크기가 $n^2$ 급이다. 구조를 넣어 이를 줄인다.
+평문 LWE 의 공개키는 $n\times m$ [행렬](matrices.md)이라 크기가 $n^2$ 급이다. 구조를 넣어 이를 줄인다.
 
 - Ring-LWE: $\mathbb Z_q^n$ 대신 $R_q=\mathbb Z_q[x]/(x^n+1)$ 을 쓴다. 행렬 곱이 다항식 곱이 되어 키가 $n$ 개 계수로 줄고, 수론 변환([FFT](fft.md), fast Fourier transform 의 [유한체](finite-fields.md)판)으로 곱셈이 $O(n\log n)$ 에 끝난다.
 - Module-LWE: 위 환 위의 작은 차원 [가군](modules.md)을 쓴다. 둘 사이의 절충이며, 환의 차수를 고정한 채 가군 차수만 바꿔 보안 수준을 조절할 수 있다.

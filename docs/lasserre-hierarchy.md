@@ -6,7 +6,7 @@
 
 # 직관
 
-Lasserre 계층은 $0$-$1$ 정수계획의 완화를 단계적으로 좁히는 반정부호 계획법의 열이다. Sum-of-Squares 계층(Sum-of-Squares hierarchy)이라고도 한다. [Sherali–Adams 계층](sherali-adams-hierarchy.md)처럼 단항식마다 새 변수 $y_S$ 를 두고, 그 변수들로 만든 모멘트 행렬(moment matrix)이 반정부호라는 조건을 더한다. 같은 단계에서 Sherali–Adams 완화보다 좁고, 단계 $t$ 의 완화는 $n^{O(t)}$ 시간에 풀린다.
+Lasserre 계층은 $0$-$1$ 정수계획의 완화를 단계적으로 좁히는 반정부호 계획법의 열이다. Sum-of-Squares 계층(Sum-of-Squares hierarchy)이라고도 한다. [Sherali–Adams 계층](sherali-adams-hierarchy.md)처럼 단항식마다 새 변수 $y_S$ 를 두고, 그 변수들로 만든 모멘트 [행렬](matrices.md)(moment matrix)이 반정부호라는 조건을 더한다. 같은 단계에서 Sherali–Adams 완화보다 좁고, 단계 $t$ 의 완화는 $n^{O(t)}$ 시간에 풀린다.
 
 정점이 $n$ 개인 완전그래프의 안정집합을 고르는 정수계획에서 변 완화는 $x\ge 0$ 과 모든 쌍의 $x_i+x_j\le 1$ 이다. 정수 껍질은 $\sum_ix_i\le 1$ 로 기술되는데, Sherali–Adams 계층의 성질 절에 따르면 Lovász–Schrijver 연산은 이 부등식을 얻는 데 $n-2$ 단계가 걸린다. 곱셈을 하나씩 늘려서는 느리다.
 

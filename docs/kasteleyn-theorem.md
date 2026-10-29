@@ -2,7 +2,7 @@
 
 # 개요
 
-**Kasteleyn 정리(Kasteleyn's theorem)** 는 평면에 그릴 수 있는 그래프의 완전 매칭 수를 행렬식으로 빠르게 셀 수 있다는 정리다. $2\times n$ 판을 $1\times 2$ 도미노로 빈틈없이 덮는 방법의 수는 이웃한 칸을 이은 격자 그래프의 완전 매칭 수이고, 일반 그래프에서 이 수를 세는 일은 [영구식](permanent.md)을 계산하는 것만큼 어렵다. Kasteleyn 정리는 [평면 그래프](planar-graphs.md)의 변에 방향을 잘 주어 만든 반대칭 행렬의 Pfaffian 의 절댓값이 완전 매칭 수와 같음을 보이고, Pfaffian 의 제곱은 행렬식이므로 이 수가 다항시간에 계산된다.
+**Kasteleyn 정리(Kasteleyn's theorem)** 는 평면에 그릴 수 있는 그래프의 완전 매칭 수를 행렬식으로 빠르게 셀 수 있다는 정리다. $2\times n$ 판을 $1\times 2$ 도미노로 빈틈없이 덮는 방법의 수는 이웃한 칸을 이은 격자 그래프의 완전 매칭 수이고, 일반 그래프에서 이 수를 세는 일은 [영구식](permanent.md)을 계산하는 것만큼 어렵다. Kasteleyn 정리는 [평면 그래프](planar-graphs.md)의 변에 방향을 잘 주어 만든 반대칭 [행렬](matrices.md)의 Pfaffian 의 절댓값이 완전 매칭 수와 같음을 보이고, Pfaffian 의 제곱은 행렬식이므로 이 수가 다항시간에 계산된다.
 
 # 직관
 

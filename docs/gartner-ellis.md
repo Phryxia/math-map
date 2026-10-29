@@ -80,7 +80,7 @@ $$
 
 ## Markov 연쇄의 덧셈 함수
 
-유한 상태공간에서 기약이고 비주기적인 전이행렬 $P$ 와 함수 $f$ 를 놓고 $S_n=\sum_{i=1}^nf(X_i)$ 라 하자. 기울인 행렬을 $P_\lambda(x,y)=P(x,y)e^{\lambda f(y)}$ 로 두면
+유한 상태공간에서 기약이고 비주기적인 전이행렬 $P$ 와 함수 $f$ 를 놓고 $S_n=\sum_{i=1}^nf(X_i)$ 라 하자. 기울인 [행렬](matrices.md)을 $P_\lambda(x,y)=P(x,y)e^{\lambda f(y)}$ 로 두면
 
 $$
 \Lambda(\lambda)=\log\rho(P_\lambda)

@@ -2,7 +2,7 @@
 
 # 개요
 
-**Milnor K 이론(Milnor K-theory)** 은 체의 원소 여러 개로 만든 기호 $\lbrace a_1,\dots,a_n\rbrace$ 를 모으되 $\lbrace a,1-a\rbrace=0$ 이라는 관계를 두어 만든 군들의 이론이다. 유리수 $a,b$ 로 정한 [사원수 대수](quaternion-algebras.md) $(a,b)$ 가 행렬 대수인지는 $x^2-ay^2-bz^2=0$ 이 $0$ 아닌 해를 갖는지로 정해지고, $a+b=1$ 이면 $(1,1,1)$ 이 해이므로 언제나 행렬 대수다. Milnor K 이론은 이 관계를 만족하는 기호들로 $K^M_n(F)$ 를 정의하고, $K^M_n(F)/m$ 이 [Galois 코호몰로지](galois-cohomology.md) $H^n(F,\mu_m^{\otimes n})$ 과 같다는 노름 잉여 동형 정리(norm residue isomorphism theorem)로 코호몰로지를 기호로 계산한다.
+**Milnor K 이론(Milnor K-theory)** 은 체의 원소 여러 개로 만든 기호 $\lbrace a_1,\dots,a_n\rbrace$ 를 모으되 $\lbrace a,1-a\rbrace=0$ 이라는 관계를 두어 만든 군들의 이론이다. 유리수 $a,b$ 로 정한 [사원수 대수](quaternion-algebras.md) $(a,b)$ 가 [행렬](matrices.md) 대수인지는 $x^2-ay^2-bz^2=0$ 이 $0$ 아닌 해를 갖는지로 정해지고, $a+b=1$ 이면 $(1,1,1)$ 이 해이므로 언제나 행렬 대수다. Milnor K 이론은 이 관계를 만족하는 기호들로 $K^M_n(F)$ 를 정의하고, $K^M_n(F)/m$ 이 [Galois 코호몰로지](galois-cohomology.md) $H^n(F,\mu_m^{\otimes n})$ 과 같다는 노름 잉여 동형 정리(norm residue isomorphism theorem)로 코호몰로지를 기호로 계산한다.
 
 # 직관
 

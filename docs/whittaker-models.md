@@ -2,7 +2,7 @@
 
 # 개요
 
-**Whittaker 모형(Whittaker model)** 은 $\mathrm{GL}\_n$ 의 표현을, 상삼각 멱단 행렬을 곱하면 정해진 지표만큼 값이 바뀌는 함수들의 공간으로 실현한 것이다. $\mathrm{GL}\_2$ 의 첨점형식은 Fourier 전개 $\sum a_nq^n$ 의 계수 수열로 적히지만, $\mathrm{GL}\_3$ 에서는 상삼각 멱단군이 가환이 아니어서 같은 전개가 수열로 끝나지 않는다. 그 자리의 계수를 수 대신 함수로 놓은 것이 Whittaker 함수다. 이 함수의 공간이 표현마다 많아야 하나이므로 [Rankin–Selberg 적분](rankin-selberg.md)이 자리마다의 곱으로 쪼개진다.
+**Whittaker 모형(Whittaker model)** 은 $\mathrm{GL}\_n$ 의 표현을, 상삼각 멱단 [행렬](matrices.md)을 곱하면 정해진 지표만큼 값이 바뀌는 함수들의 공간으로 실현한 것이다. $\mathrm{GL}\_2$ 의 첨점형식은 Fourier 전개 $\sum a_nq^n$ 의 계수 수열로 적히지만, $\mathrm{GL}\_3$ 에서는 상삼각 멱단군이 가환이 아니어서 같은 전개가 수열로 끝나지 않는다. 그 자리의 계수를 수 대신 함수로 놓은 것이 Whittaker 함수다. 이 함수의 공간이 표현마다 많아야 하나이므로 [Rankin–Selberg 적분](rankin-selberg.md)이 자리마다의 곱으로 쪼개진다.
 
 # 직관
 

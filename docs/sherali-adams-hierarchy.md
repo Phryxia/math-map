@@ -78,7 +78,7 @@ $\lbrack 0,1\rbrack^n$ 안의 다면체에서 Sherali–Adams 계층은 언제�
 # 활용
 
 - **정수 간격의 하한.** [근사 알고리즘](approximation-algorithms.md)의 한계를 보이는 방법으로, 어떤 문제의 Sherali–Adams 완화가 많은 단계에서도 정수 최적값과 멀리 떨어진 값을 갖는다는 것을 국소 분포를 구성해 증명한다. 꼭짓점 덮개(vertex cover)는 상수 $\delta\gt 0$ 에 대해 $n^\delta$ 단계에서도 정수 간격이 $2-\varepsilon$ 이다.[^4]
-- **반정부호 계층의 비교 기준.** [반정부호 계획법](semidefinite-programming.md)의 [Lasserre 계층](lasserre-hierarchy.md)은 Sherali–Adams 의 곱셈에 모멘트 행렬이 반정부호라는 조건을 더한 것이고, 같은 단계에서 Sherali–Adams 완화보다 좁다. Lovász–Schrijver 연산에 반정부호 조건을 더한 판을 변 완화에 한 번 적용한 집합은 [Lovász 세타 함수](lovasz-theta.md)의 세타 몸체에 포함된다.[^2]
+- **반정부호 계층의 비교 기준.** [반정부호 계획법](semidefinite-programming.md)의 [Lasserre 계층](lasserre-hierarchy.md)은 Sherali–Adams 의 곱셈에 모멘트 [행렬](matrices.md)이 반정부호라는 조건을 더한 것이고, 같은 단계에서 Sherali–Adams 완화보다 좁다. Lovász–Schrijver 연산에 반정부호 조건을 더한 판을 변 완화에 한 번 적용한 집합은 [Lovász 세타 함수](lovasz-theta.md)의 세타 몸체에 포함된다.[^2]
 - **분기 절단법의 절단 생성.** 단계 $1$ 의 곱셈을 변수 하나에만 적용해 얻는 lift-and-project 절단을 정수계획 풀이의 절단평면으로 쓴다.
 
 [^1]: H. D. Sherali and W. P. Adams, *A hierarchy of relaxations between the continuous and convex hull representations for zero-one programming problems*, SIAM Journal on Discrete Mathematics **3** (1990), 411–430. M. Laurent, *A comparison of the Sherali–Adams, Lovász–Schrijver, and Lasserre relaxations for 0–1 programming*, Mathematics of Operations Research **28** (2003), 470–496.

@@ -36,7 +36,7 @@ $M\_j$ 의 근은 [유한체](finite-fields.md)의 Frobenius 사상이 만드는
 
 **정리.** 설계 거리 $\delta$ 의 BCH 부호의 최소거리는 $\delta$ 이상이다.
 
-증명의 요지. 무게 $w\le\delta-1$ 인 부호어 $c$ 가 자리 $i\_1,\dots,i\_w$ 에서만 $0$ 이 아니라고 하자. $c(\beta^j)=0$ 을 $j=b,\dots,b+w-1$ 에서 쓰면 미지수 $c\_{i\_1},\dots,c\_{i\_w}$ 에 대한 $w$ 개의 식이 나오고, 계수 행렬은 $\beta^{bi\_\ell}$ 로 열을 나누면 서로 다른 $\beta^{i\_\ell}$ 의 Vandermonde 행렬이다. 행렬식이 $0$ 이 아니므로 $c=0$ 이다.
+증명의 요지. 무게 $w\le\delta-1$ 인 부호어 $c$ 가 자리 $i\_1,\dots,i\_w$ 에서만 $0$ 이 아니라고 하자. $c(\beta^j)=0$ 을 $j=b,\dots,b+w-1$ 에서 쓰면 미지수 $c\_{i\_1},\dots,c\_{i\_w}$ 에 대한 $w$ 개의 식이 나오고, 계수 [행렬](matrices.md)은 $\beta^{bi\_\ell}$ 로 열을 나누면 서로 다른 $\beta^{i\_\ell}$ 의 Vandermonde 행렬이다. 행렬식이 $0$ 이 아니므로 $c=0$ 이다.
 
 ## 차원
 

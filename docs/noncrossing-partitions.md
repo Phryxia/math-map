@@ -2,7 +2,7 @@
 
 # 개요
 
-**비교차 분할(noncrossing partition)** 은 원 위의 점들을 블록마다 현으로 이을 때 현이 교차하지 않는 집합의 분할이다. 원 위에 $1,2,3,4$ 를 차례로 놓으면 분할 $\lbrace 1,3\rbrace,\lbrace 2,4\rbrace$ 의 두 현은 교차하고 $\lbrace 1,2\rbrace,\lbrace 3,4\rbrace$ 의 두 현은 교차하지 않는다. 교차하는 분할을 빼고 세면 그 개수가 [Catalan 수](catalan-numbers.md)의 점화식을 따르고, 자유확률의 적률 공식과 무작위 행렬의 고윳값 분포 계산에 이 개수가 쓰인다.
+**비교차 분할(noncrossing partition)** 은 원 위의 점들을 블록마다 현으로 이을 때 현이 교차하지 않는 집합의 분할이다. 원 위에 $1,2,3,4$ 를 차례로 놓으면 분할 $\lbrace 1,3\rbrace,\lbrace 2,4\rbrace$ 의 두 현은 교차하고 $\lbrace 1,2\rbrace,\lbrace 3,4\rbrace$ 의 두 현은 교차하지 않는다. 교차하는 분할을 빼고 세면 그 개수가 [Catalan 수](catalan-numbers.md)의 점화식을 따르고, 자유확률의 적률 공식과 무작위 [행렬](matrices.md)의 고윳값 분포 계산에 이 개수가 쓰인다.
 
 # 직관
 

@@ -8,7 +8,7 @@
 
 수학에서 표준 모형은 닫힌 Riemann 다양체의 [Laplace–Beltrami 연산자](laplace-beltrami-operator.md)이고, 고전 역학계는 그 다양체의 측지선 흐름이다.
 
-고윳값 쪽의 물음은 간격의 분포다. 측지선 흐름이 적분가능하면 간격이 Poisson 통계를, 혼돈적이면 [Wigner 반원법칙](wigner-semicircle.md) 문서의 무작위 행렬 앙상블과 같은 통계를 따를 것으로 추측된다. 고유함수 쪽의 물음은 고유함수의 질량이 다양체 위에 고르게 퍼지는지다.
+고윳값 쪽의 물음은 간격의 분포다. 측지선 흐름이 적분가능하면 간격이 Poisson 통계를, 혼돈적이면 [Wigner 반원법칙](wigner-semicircle.md) 문서의 무작위 [행렬](matrices.md) 앙상블과 같은 통계를 따를 것으로 추측된다. 고유함수 쪽의 물음은 고유함수의 질량이 다양체 위에 고르게 퍼지는지다.
 
 평면 영역에서 경계값 $0$ 인 Laplace 고윳값 $\lambda_1\le\lambda_2\le\cdots$ 를 구한다. [Weyl 법칙](weyl-law.md)은 $\lambda$ 이하인 고윳값의 개수가 넓이에 비례해 $\vert\Omega\vert\lambda/4\pi$ 근처라고 정하지만, 이웃한 두 고윳값이 얼마나 떨어져 있는지는 정하지 않는다. 평균 간격이 $1$ 이 되도록 척도를 맞추고 이웃 간격의 분포를 본다.
 

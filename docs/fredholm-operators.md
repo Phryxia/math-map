@@ -58,7 +58,7 @@ $$
 T_a\colon H^2\to H^2,\qquad T_af=P(af)
 $$
 
-를 **Toeplitz 작용소**라 한다. Fourier 기저에서 행렬이 $(T_a)\_{jk}=\hat a(j-k)$ 이므로 대각선을 따라 상수인 무한 행렬이다. $a(z)=z$ 이면 오른쪽 이동 작용소다.
+를 **Toeplitz 작용소**라 한다. Fourier 기저에서 [행렬](matrices.md)이 $(T_a)\_{jk}=\hat a(j-k)$ 이므로 대각선을 따라 상수인 무한 행렬이다. $a(z)=z$ 이면 오른쪽 이동 작용소다.
 
 # 성질
 

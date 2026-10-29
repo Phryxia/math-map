@@ -36,7 +36,7 @@ $$
 \Delta f=\sum_{i=1}^n\partial_i^2f=\mathrm{tr}\thinspace H_f
 $$
 
-를 대응시키는 $\Delta$ 를 **Laplace 연산자** 라 한다. $H_f$ 는 $f$ 의 Hessian 행렬이다. $\nabla^2$ 로도 쓴다.
+를 대응시키는 $\Delta$ 를 **Laplace 연산자** 라 한다. $H_f$ 는 $f$ 의 Hessian [행렬](matrices.md)이다. $\nabla^2$ 로도 쓴다.
 
 ## 발산 꼴
 

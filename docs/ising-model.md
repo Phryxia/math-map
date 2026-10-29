@@ -94,7 +94,7 @@ $$
 m^\ast(\beta)=\bigl(1-\sinh^{-4}(2\beta)\bigr)^{1/8}
 $$
 
-분배함수는 전달 행렬(transfer matrix)의 대각합으로 적힌다. 한 줄의 스핀 배정 $2^n$ 개를 행과 열로 하는 행렬 $T$ 에 대해 $Z=\mathrm{tr}\thinspace T^m$ 이다. Onsager 는 $T$ 의 고윳값을 모두 구했고, 자유에너지의 극한이 $\beta_c$ 에서 해석적이지 않음을 보였다. 임계점에서 $m^\ast$ 는 지수 $1/8$ 로 $0$ 이 된다.
+분배함수는 전달 [행렬](matrices.md)(transfer matrix)의 대각합으로 적힌다. 한 줄의 스핀 배정 $2^n$ 개를 행과 열로 하는 행렬 $T$ 에 대해 $Z=\mathrm{tr}\thinspace T^m$ 이다. Onsager 는 $T$ 의 고윳값을 모두 구했고, 자유에너지의 극한이 $\beta_c$ 에서 해석적이지 않음을 보였다. 임계점에서 $m^\ast$ 는 지수 $1/8$ 로 $0$ 이 된다.
 
 ## Lee–Yang 정리
 

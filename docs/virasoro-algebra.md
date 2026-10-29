@@ -30,7 +30,7 @@ $$
 \langle L_{-1}v_h,L_{-1}v_h\rangle=\langle v_h,L_1L_{-1}v_h\rangle=\langle v_h,2L_0v_h\rangle=2h
 $$
 
-등급 2 로 가면 $L_{-2}v_h$ 와 $L_{-1}^2v_h$ 둘이고, Gram 행렬을 적으려면 $L_2L_{-2}v_h$ 를 계산해야 한다. Witt 대수의 괄호로는 $L_2L_{-2}v_h=\lbrack L_2,L_{-2}\rbrack v_h=4L_0v_h=4hv_h$ 다. 그러면 Gram 행렬이 $h$ 만으로 정해지고 모든 등급에서 자유도가 $h$ 하나다.
+등급 2 로 가면 $L_{-2}v_h$ 와 $L_{-1}^2v_h$ 둘이고, Gram [행렬](matrices.md)을 적으려면 $L_2L_{-2}v_h$ 를 계산해야 한다. Witt 대수의 괄호로는 $L_2L_{-2}v_h=\lbrack L_2,L_{-2}\rbrack v_h=4L_0v_h=4hv_h$ 다. 그러면 Gram 행렬이 $h$ 만으로 정해지고 모든 등급에서 자유도가 $h$ 하나다.
 
 중심항을 넣으면 $\lbrack L_2,L_{-2}\rbrack=4L_0+\frac{c}{2}$ 가 되어 $L_2L_{-2}v_h=(4h+\frac c2)v_h$ 다. Gram 행렬이 $h$ 와 $c$ 둘로 정해지고, 두 매개변수가 독립이므로 표현론이 $(c,h)$ 평면의 문제가 된다.
 

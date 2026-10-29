@@ -51,7 +51,7 @@ $$
 
 - $\mathrm{AC}^i\subseteq\mathrm{NC}^{i+1}$. 입력이 다항식 개인 게이트 하나를 입력 둘인 게이트의 이진 나무로 바꾸면 깊이가 $O(\log n)$ 배 는다.
 - $\mathrm{NC}^1\subseteq\mathrm L$. 출력에서 입력 쪽으로 깊이 우선으로 값을 계산하면서, 지금 게이트까지의 경로를 왼쪽과 오른쪽의 비트열로 기억한다. 깊이가 $O(\log n)$ 이므로 경로는 $O(\log n)$ 비트다[^3].
-- $\mathrm{NL}\subseteq\mathrm{AC}^1$. NL(nondeterministic logarithmic space)의 언어는 구성 그래프의 도달 가능성으로 판정된다. 인접 행렬 $A$ 에 단위행렬을 더한 불 행렬을 $\lceil\log_2 N\rceil$ 번 제곱하면 $N$ 걸음 이내의 도달 관계가 나오고, 불 행렬의 곱 한 번은 논리곱 다음 논리합의 깊이 $2$ 회로다.
+- $\mathrm{NL}\subseteq\mathrm{AC}^1$. NL(nondeterministic logarithmic space)의 언어는 구성 그래프의 도달 가능성으로 판정된다. 인접 [행렬](matrices.md) $A$ 에 단위행렬을 더한 불 행렬을 $\lceil\log_2 N\rceil$ 번 제곱하면 $N$ 걸음 이내의 도달 관계가 나오고, 불 행렬의 곱 한 번은 논리곱 다음 논리합의 깊이 $2$ 회로다.
 - $\mathrm{NC}\subseteq\mathrm P$. 균일성으로 $C_n$ 을 다항시간에 써 내고 게이트 값을 위상순으로 계산한다.
 
 $\mathrm{AC}^0\ne\mathrm{NC}^1$ 이다. 홀짝 함수는 깊이 $O(\log n)$ 의 XOR(exclusive or) 게이트의 나무로 $\mathrm{NC}^1$ 에 들지만, [Håstad 스위칭 보조정리](switching-lemma.md)로 증명되는 홀짝 하한에 따라 $\mathrm{AC}^0$ 에 들지 않는다.

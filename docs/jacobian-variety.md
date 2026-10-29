@@ -28,7 +28,7 @@ $$
 H\_1(X,\mathbb Z) \to V, \qquad \gamma \mapsto \left(\omega \mapsto \oint\_\gamma \omega\right)
 $$
 
-가 단사이고 상 $\Lambda$ 는 계수 $2g$ 인 격자다. 이 격자의 생성원을 형식의 기저로 적은 $g \times 2g$ 행렬을 **주기 행렬**이라 한다.
+가 단사이고 상 $\Lambda$ 는 계수 $2g$ 인 격자다. 이 격자의 생성원을 형식의 기저로 적은 $g \times 2g$ [행렬](matrices.md)을 **주기 행렬**이라 한다.
 
 ## Jacobi 다양체
 

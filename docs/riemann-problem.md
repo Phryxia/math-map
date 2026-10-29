@@ -70,7 +70,7 @@ $i$ 번째 장이 참된 비선형이면 두 곡선이 $u\_l$ 에서 2차까지 
 
 **정리.** 계가 엄격 쌍곡이고 각 특성장이 참된 비선형이거나 선형 축퇴이면, $\lvert u\_r-u\_l\rvert$ 이 충분히 작을 때 Riemann 문제의 해가 하나 있다. 그 해는 속도 순으로 놓인 $m$ 개 파와 $m+1$ 개 상수 상태로 이루어진다.[^1]
 
-증명의 요지. 중간 상태 $u\_l=w\_0,w\_1,\dots,w\_m=u\_r$ 을 미지수로 두고 $w\_i$ 가 $w\_{i-1}$ 의 $i$ 번째 Lax 곡선 위에 있을 것을 요구한다. 파 세기 $\sigma\_1,\dots,\sigma\_m$ 으로 매개하면 $w\_m$ 이 $\sigma$ 의 $C^2$ 함수이고, $\sigma=0$ 에서 그 Jacobi 행렬이 고유벡터를 열로 갖는 행렬 $\lbrack r\_1\thinspace\cdots\thinspace r\_m\rbrack$ 이다. 고윳값이 서로 달라 고유벡터가 독립이므로 행렬이 가역이고, [역함수 정리](inverse-function-theorem.md)가 $u\_r$ 근방에서 $\sigma$ 를 유일하게 준다.
+증명의 요지. 중간 상태 $u\_l=w\_0,w\_1,\dots,w\_m=u\_r$ 을 미지수로 두고 $w\_i$ 가 $w\_{i-1}$ 의 $i$ 번째 Lax 곡선 위에 있을 것을 요구한다. 파 세기 $\sigma\_1,\dots,\sigma\_m$ 으로 매개하면 $w\_m$ 이 $\sigma$ 의 $C^2$ 함수이고, $\sigma=0$ 에서 그 Jacobi [행렬](matrices.md)이 고유벡터를 열로 갖는 행렬 $\lbrack r\_1\thinspace\cdots\thinspace r\_m\rbrack$ 이다. 고윳값이 서로 달라 고유벡터가 독립이므로 행렬이 가역이고, [역함수 정리](inverse-function-theorem.md)가 $u\_r$ 근방에서 $\sigma$ 를 유일하게 준다.
 
 $\lvert u\_r-u\_l\rvert$ 이 크면 Lax 곡선이 상태공간을 벗어나거나 여러 번 만날 수 있어 이 논법이 닿지 않는다.
 

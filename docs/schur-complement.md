@@ -2,7 +2,7 @@
 
 # 개요
 
-**Schur 보수(Schur complement)** 는 블록 행렬 $\begin{pmatrix}A&B\cr C&D\end{pmatrix}$ 에서 $A$ 가 가역일 때의 행렬 $D-CA^{-1}B$ 다. 연립방정식 $Ax+By=f$, $Cx+Dy=g$ 에서 첫 식으로 $x=A^{-1}(f-By)$ 를 구해 둘째 식에 넣으면 $y$ 만의 식 $(D-CA^{-1}B)y=g-CA^{-1}f$ 가 남는다. Schur 보수는 이 소거로 남은 작은 계의 행렬이고, 큰 행렬의 성질을 작은 블록 둘로 나눠 계산하게 한다.
+**Schur 보수(Schur complement)** 는 블록 [행렬](matrices.md) $\begin{pmatrix}A&B\cr C&D\end{pmatrix}$ 에서 $A$ 가 가역일 때의 행렬 $D-CA^{-1}B$ 다. 연립방정식 $Ax+By=f$, $Cx+Dy=g$ 에서 첫 식으로 $x=A^{-1}(f-By)$ 를 구해 둘째 식에 넣으면 $y$ 만의 식 $(D-CA^{-1}B)y=g-CA^{-1}f$ 가 남는다. Schur 보수는 이 소거로 남은 작은 계의 행렬이고, 큰 행렬의 성질을 작은 블록 둘로 나눠 계산하게 한다.
 
 # 직관
 

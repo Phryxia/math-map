@@ -24,7 +24,7 @@ Alice 와 Bob 이 각자 가진 $n$ 비트 파일이 같은지 확인한다. 이
 
 ## 직사각형
 
-$A\subseteq X$, $B\subseteq Y$ 에 대해 $A\times B$ 꼴의 집합을 **조합적 직사각형(combinatorial rectangle)** 이라 한다. $f$ 가 그 위에서 상수이면 단색이라 한다. $f$ 의 **통신 행렬** $M_f$ 는 행이 $x$, 열이 $y$ 이고 성분이 $f(x,y)$ 인 $2^n\times 2^n$ 행렬이다.
+$A\subseteq X$, $B\subseteq Y$ 에 대해 $A\times B$ 꼴의 집합을 **조합적 직사각형(combinatorial rectangle)** 이라 한다. $f$ 가 그 위에서 상수이면 단색이라 한다. $f$ 의 **통신 행렬** $M_f$ 는 행이 $x$, 열이 $y$ 이고 성분이 $f(x,y)$ 인 $2^n\times 2^n$ [행렬](matrices.md)이다.
 
 ## 무작위 규칙
 

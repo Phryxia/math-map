@@ -40,7 +40,7 @@ $$
 \sum_{j=0}^{M} q_j\thinspace c_{L+k-j} = 0, \qquad k = 1,\dots,M \quad (q_0 = 1)
 $$
 
-이라는 Toeplitz 선형계로 결정되고, 분자는 $p_k = \sum_{j\le\min(k,M)}q_j c_{k-j}$ 다. 선형계의 행렬이 특이하면 그 자리의 Padé 표가 **비정규**이며, 낮은 차수의 근사가 이미 정확한 경우에 일어난다.
+이라는 Toeplitz 선형계로 결정되고, 분자는 $p_k = \sum_{j\le\min(k,M)}q_j c_{k-j}$ 다. 선형계의 [행렬](matrices.md)이 특이하면 그 자리의 Padé 표가 **비정규**이며, 낮은 차수의 근사가 이미 정확한 경우에 일어난다.
 
 ## Borel–Padé 절차
 

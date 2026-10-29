@@ -2,7 +2,7 @@
 
 # 개요
 
-**Sen 이론(Sen theory)** 은 $p$ 진 [Galois 표현](galois-representations.md)에 Galois 군 작용을 무한소로 미분한 선형작용소를 붙여, 표현이 Hodge–Tate 인지와 그 무게를 이 작용소의 고윳값으로 판정하는 이론이다. 순환지표의 $p$ 진 거듭제곱 $\chi^{1/3}$ 이 Hodge–Tate 인지 알고 싶어도, Hodge–Tate 의 정의는 표현을 큰 체 $\mathbb C_p$ 위에서 쪼개는 꼴이라 직접 확인할 방법을 주지 않는다. Sen 이론은 이 확인을 행렬 하나의 고윳값 계산으로 바꾼다. $\chi^{1/3}$ 에서는 그 고윳값이 정수가 아니므로 Hodge–Tate 가 아니다.
+**Sen 이론(Sen theory)** 은 $p$ 진 [Galois 표현](galois-representations.md)에 Galois 군 작용을 무한소로 미분한 선형작용소를 붙여, 표현이 Hodge–Tate 인지와 그 무게를 이 작용소의 고윳값으로 판정하는 이론이다. 순환지표의 $p$ 진 거듭제곱 $\chi^{1/3}$ 이 Hodge–Tate 인지 알고 싶어도, Hodge–Tate 의 정의는 표현을 큰 체 $\mathbb C_p$ 위에서 쪼개는 꼴이라 직접 확인할 방법을 주지 않는다. Sen 이론은 이 확인을 [행렬](matrices.md) 하나의 고윳값 계산으로 바꾼다. $\chi^{1/3}$ 에서는 그 고윳값이 정수가 아니므로 Hodge–Tate 가 아니다.
 
 # 직관
 

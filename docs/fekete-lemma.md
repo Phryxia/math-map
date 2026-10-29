@@ -47,7 +47,7 @@ $$
 - **회전수.** [Poincaré 회전수](poincare-rotation-number.md)의 존재 증명에서 올림의 반복 $F^n(0)$ 이 두 쪽 부등식을 $C=1$ 로 만족한다.
 - **엔트로피.** [Kolmogorov–Sinai 엔트로피](kolmogorov-sinai-entropy.md)의 분할 엔트로피 $H(\mathcal P\vee\cdots\vee T^{-(n-1)}\mathcal P)$ 와 [유한형 이동](shifts-of-finite-type.md)의 위상 엔트로피 $\log\vert B\_n\vert$ 가 부분가법이어서, $n$ 으로 나눈 극한이 정의된다.
 - **Shannon 용량.** [Lovász 세타 함수](lovasz-theta.md)가 상한을 주는 그래프의 Shannon 용량 $\Theta(G)=\lim\alpha(G^{\boxtimes n})^{1/n}$ 은 독립수가 초곱셈적이어서 존재한다.
-- **스펙트럼 반지름.** 행렬 노름 $\Vert A^n\Vert$ 는 부분곱셈적이므로 $\lim\Vert A^n\Vert^{1/n}$ 이 존재한다. 그 값이 고윳값의 절댓값의 최댓값이라는 것이 Gelfand 공식(Gelfand's formula)이다.
+- **스펙트럼 반지름.** [행렬](matrices.md) 노름 $\Vert A^n\Vert$ 는 부분곱셈적이므로 $\lim\Vert A^n\Vert^{1/n}$ 이 존재한다. 그 값이 고윳값의 절댓값의 최댓값이라는 것이 Gelfand 공식(Gelfand's formula)이다.
 - **자기회피 보행.** 정수 격자 위에서 같은 점을 두 번 지나지 않는 길이 $n$ 인 경로의 개수 $c_n$ 은 $c_{m+n}\le c_mc_n$ 이므로 연결 상수(connective constant) $\lim c_n^{1/n}$ 이 존재한다.
 
 부분가법 확률과정으로 넓힌 것이 [Kingman 부분가법 에르고딕 정리](kingman-subadditive-ergodic.md)이고, 가법인 경우가 [에르고딕 정리](ergodic-theorem.md)다.

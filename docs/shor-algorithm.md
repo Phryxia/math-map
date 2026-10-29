@@ -32,7 +32,7 @@ $$
 \vert x\rangle\mapsto\frac1{\sqrt Q}\sum_{y=0}^{Q-1}e^{2\pi ixy/Q}\vert y\rangle
 $$
 
-로 정의되는 유니터리 사상이다. 진폭 벡터에 이산 Fourier 변환 행렬을 곱하는 것이고, Hadamard 게이트 $q$ 개와 제어 위상 게이트 $q(q-1)/2$ 개로 이루어진 회로로 구현된다.
+로 정의되는 유니터리 사상이다. 진폭 벡터에 이산 Fourier 변환 [행렬](matrices.md)을 곱하는 것이고, Hadamard 게이트 $q$ 개와 제어 위상 게이트 $q(q-1)/2$ 개로 이루어진 회로로 구현된다.
 
 ## 위수 찾기 회로
 

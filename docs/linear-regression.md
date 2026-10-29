@@ -24,7 +24,7 @@ $$
 y_i \thickspace=\thickspace \beta_0 + \beta_1 x_{i1} + \cdots + \beta_{p-1} x_{i,p-1} + \varepsilon_i
 $$
 
-를 가정한다. 행렬로 쓰면
+를 가정한다. [행렬](matrices.md)로 쓰면
 
 $$
 y = X\beta + \varepsilon, \qquad y \in \mathbb{R}^{n},\thickspace X \in \mathbb{R}^{n \times p},\thickspace \beta \in \mathbb{R}^{p}.

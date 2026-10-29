@@ -45,7 +45,7 @@ $V=\lbrace 1,2,3,4,5\rbrace$ 이고 $E=\lbrace \lbrace 1,2\rbrace,\lbrace 1,3\rb
 | 인접행렬 | $O(n^2)$ | $O(1)$ | $O(n)$ |
 | 인접리스트 | $O(n+m)$ | $O(\deg)$ | $O(\deg)$ |
 
-간선이 적은 희소 그래프에서는 인접리스트가, 조밀하거나 행렬 연산을 쓸 때는 인접행렬이 유리하다. 인접행렬은 [그래프 Laplacian](graph-laplacian.md)처럼 선형대수로 넘어가는 자리이기도 하다.
+간선이 적은 희소 그래프에서는 인접리스트가, 조밀하거나 [행렬](matrices.md) 연산을 쓸 때는 인접행렬이 유리하다. 인접행렬은 [그래프 Laplacian](graph-laplacian.md)처럼 선형대수로 넘어가는 자리이기도 하다.
 
 # 성질
 

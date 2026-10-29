@@ -26,7 +26,7 @@ $A\subseteq\mathbb F\_3^n$ 이 **캡 집합** 이라는 것은 $x,y,z\in A$ 이�
 
 보조정리. $c_a\ne 0$ 이고 $T(x,y,z)=\sum_{a\in A}c_a\delta_a(x)\delta_a(y)\delta_a(z)$ 이면 $T$ 의 조각 계수는 $\lvert A\rvert$ 다. $\delta_a$ 는 $a$ 에서 $1$, 나머지에서 $0$ 인 함수다.
 
-증명의 요지. $T$ 가 조각 계수 $1$ 인 함수 $r\lt\lvert A\rvert$ 개의 합이고, 그 가운데 $f_i(x)g_i(y,z)$ 꼴이 $m$ 개라 하자. $\sum_x h(x)f_i(x)=0$ ($i\le m$) 을 만족하는 함수 $h$ 가운데 받침이 $\lvert A\rvert-m$ 개 이상인 것이 존재한다. 양변에 $h(x)$ 를 곱해 $x$ 에 대해 더하면, 왼쪽은 $(y,z)$ 의 대각행렬 $c_yh(y)\delta_y(z)$ 여서 계수가 $\lvert A\rvert-m$ 이상이다. 오른쪽에서 $x$ 꼴 조각은 사라지고, 나머지 $r-m$ 개는 계수가 $1$ 이하인 행렬이 되어 계수가 $r-m$ 이하다. $\lvert A\rvert-m\gt r-m$ 이므로 모순이다.
+증명의 요지. $T$ 가 조각 계수 $1$ 인 함수 $r\lt\lvert A\rvert$ 개의 합이고, 그 가운데 $f_i(x)g_i(y,z)$ 꼴이 $m$ 개라 하자. $\sum_x h(x)f_i(x)=0$ ($i\le m$) 을 만족하는 함수 $h$ 가운데 받침이 $\lvert A\rvert-m$ 개 이상인 것이 존재한다. 양변에 $h(x)$ 를 곱해 $x$ 에 대해 더하면, 왼쪽은 $(y,z)$ 의 대각행렬 $c_yh(y)\delta_y(z)$ 여서 계수가 $\lvert A\rvert-m$ 이상이다. 오른쪽에서 $x$ 꼴 조각은 사라지고, 나머지 $r-m$ 개는 계수가 $1$ 이하인 [행렬](matrices.md)이 되어 계수가 $r-m$ 이하다. $\lvert A\rvert-m\gt r-m$ 이므로 모순이다.
 
 ## Ellenberg–Gijswijt 상한
 

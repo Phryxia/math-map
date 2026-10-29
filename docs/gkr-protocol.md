@@ -87,7 +87,7 @@ function verifyGKR(circuit: Circuit, input: Field[], prover: Prover): boolean {
 
 - 계산 위임. Shamir 정리(Shamir's theorem)의 프로토콜에서는 정직한 증명자도 지수 시간이 들지만, 이 프로토콜의 정직한 증명자는 $S$ 의 다항식 시간에 끝난다. 그래서 서버가 실제로 증명자 역할을 할 수 있다.
 - 검증자의 무작위 질문을 해시 함수의 출력으로 바꾸는 [Fiat–Shamir 변환](fiat-shamir.md)을 적용하면 비대화형 논증이 된다. 다항식 약속과 결합한 영지식 논증들이 이 프로토콜을 층별 검사에 쓴다[^3].
-- 행렬곱, 원소 개수 세기처럼 회로가 규칙적인 문제에서는 배선 술어의 다중선형 확장이 닫힌 식을 가져 검증자와 증명자 모두 빨라진다[^2].
+- [행렬](matrices.md)곱, 원소 개수 세기처럼 회로가 규칙적인 문제에서는 배선 술어의 다중선형 확장이 닫힌 식을 가져 검증자와 증명자 모두 빨라진다[^2].
 
 [^1]: S. Goldwasser, Y. T. Kalai, G. N. Rothblum, "Delegating computation: interactive proofs for muggles", Journal of the ACM 62 (2015), Article 27. 학회판은 STOC 2008.
 [^2]: G. Cormode, M. Mitzenmacher, J. Thaler, "Practical verified computation with streaming interactive proofs", ITCS 2012, 90–112.

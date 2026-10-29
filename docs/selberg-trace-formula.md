@@ -46,7 +46,7 @@ $$
 
 ## 첨점이 있는 경우
 
-$\Gamma=\Gamma_0(N)$ 처럼 첨점이 있으면 왼쪽에서 연속 스펙트럼의 기여를 빼고 오른쪽에 포물 원소와 산란 행렬의 항을 더한다.
+$\Gamma=\Gamma_0(N)$ 처럼 첨점이 있으면 왼쪽에서 연속 스펙트럼의 기여를 빼고 오른쪽에 포물 원소와 산란 [행렬](matrices.md)의 항을 더한다.
 
 $$
 \sum_jh(r_j)-\frac1{4\pi}\int h(r)\frac{\varphi'}{\varphi}\Big(\tfrac12+ir\Big)dr

@@ -77,7 +77,7 @@ function rabinKarp(t: number[], pat: number[], p: number): number[] {
 - 길이가 같은 여러 패턴. 패턴들의 해시값을 [해시 테이블](hash-tables.md)에 넣어 두면, 본문의 창마다 해시값 하나를 조회해 모든 패턴을 한 번에 찾는다.
 - 부분 문자열의 동치 판정. 앞에서부터의 해시값 $H(t_0\cdots t_{j-1})$ 을 모두 저장해 두면 임의의 두 부분 문자열이 같은지를 상수 시간에 높은 확률로 판정한다. 두 문자열의 가장 긴 공통 부분 문자열의 길이를 이분 탐색할 때 각 길이의 판정에 쓴다.
 - 통신의 동치 검사. 두 사람이 각자 가진 $n$ 비트 문자열이 같은지를, 한 사람이 $x$ 와 $H(s)$ 만 보내 $O(\log n)$ 비트의 통신으로 높은 확률로 판정한다.
-- 2 차원 검색. 행마다 해시를 구한 뒤 그 해시값들의 열에 다시 굴리는 해시를 쓰면 행렬 안에서 작은 행렬을 찾는다.
+- 2 차원 검색. 행마다 해시를 구한 뒤 그 해시값들의 열에 다시 굴리는 해시를 쓰면 [행렬](matrices.md) 안에서 작은 행렬을 찾는다.
 
 [^1]: R. M. Karp, M. O. Rabin, "Efficient randomized pattern-matching algorithms", IBM Journal of Research and Development 31 (1987), 249–260.
 

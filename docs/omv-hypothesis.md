@@ -2,7 +2,7 @@
 
 # 개요
 
-**OMv 가설(online matrix-vector multiplication hypothesis, OMv conjecture)** 은 $n\times n$ 부울 행렬(Boolean matrix) $M$ 을 미리 받고, 벡터 $v_1,\dots,v_n$ 이 하나씩 도착할 때마다 다음 벡터를 보기 전에 $Mv_i$ 를 내놓는 문제를 전체 $n^{3-\varepsilon}$ 시간에 푸는 알고리즘이 없다는 가설이다. 간선을 넣고 빼면서 두 정점의 거리를 묻는 자료구조는 질의마다 탐색하면 질의가 느리고, 갱신마다 거리를 다시 계산해 두면 갱신이 느리다. 이 가설을 받아들이면 그런 자료구조가 갱신과 질의를 함께 빠르게 할 수 없다는 조건부 하한이 나온다.
+**OMv 가설(online matrix-vector multiplication hypothesis, OMv conjecture)** 은 $n\times n$ 부울 [행렬](matrices.md)(Boolean matrix) $M$ 을 미리 받고, 벡터 $v_1,\dots,v_n$ 이 하나씩 도착할 때마다 다음 벡터를 보기 전에 $Mv_i$ 를 내놓는 문제를 전체 $n^{3-\varepsilon}$ 시간에 푸는 알고리즘이 없다는 가설이다. 간선을 넣고 빼면서 두 정점의 거리를 묻는 자료구조는 질의마다 탐색하면 질의가 느리고, 갱신마다 거리를 다시 계산해 두면 갱신이 느리다. 이 가설을 받아들이면 그런 자료구조가 갱신과 질의를 함께 빠르게 할 수 없다는 조건부 하한이 나온다.
 
 # 직관
 

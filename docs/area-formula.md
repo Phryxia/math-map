@@ -32,7 +32,7 @@ $$
 
 ## Jacobi 행렬식
 
-$f:\mathbb{R}^n\to\mathbb{R}^m$ 이 $x$ 에서 미분가능하고 $n\le m$ 일 때, $Df(x)$ 는 $m\times n$ 행렬이다. $f$ 의 **Jacobi 행렬식**은
+$f:\mathbb{R}^n\to\mathbb{R}^m$ 이 $x$ 에서 미분가능하고 $n\le m$ 일 때, $Df(x)$ 는 $m\times n$ [행렬](matrices.md)이다. $f$ 의 **Jacobi 행렬식**은
 
 $$
 Jf(x)=\sqrt{\det\bigl(Df(x)^{\mathsf{T}}Df(x)\bigr)}

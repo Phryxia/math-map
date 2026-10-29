@@ -2,7 +2,7 @@
 
 # 개요
 
-**로그 계수 추측(log-rank conjecture)** 은 두 사람이 나눠 가진 입력으로 함숫값을 계산할 때 주고받아야 하는 비트 수가, 함숫값을 적은 행렬의 계수만으로 다항식 범위 안에서 정해진다는 추측이다. Alice 가 $x$, Bob 이 $y$ 를 갖고 $f(x,y)\in\lbrace 0,1\rbrace$ 를 행 $x$, 열 $y$ 에 적은 행렬을 $M_f$ 라 하면, 주고받는 비트 수 $D(f)$ 는 $\log_2\mathrm{rank}\thinspace M_f$ 이상이다. 추측의 진술은 반대로 $D(f)$ 가 $(\log\mathrm{rank}\thinspace M_f)^{c}$ 이하라는 것이고, 성립하면 [통신 복잡도](communication-complexity.md)가 행렬의 계수 하나로 정해진다.
+**로그 계수 추측(log-rank conjecture)** 은 두 사람이 나눠 가진 입력으로 함숫값을 계산할 때 주고받아야 하는 비트 수가, 함숫값을 적은 [행렬](matrices.md)의 계수만으로 다항식 범위 안에서 정해진다는 추측이다. Alice 가 $x$, Bob 이 $y$ 를 갖고 $f(x,y)\in\lbrace 0,1\rbrace$ 를 행 $x$, 열 $y$ 에 적은 행렬을 $M_f$ 라 하면, 주고받는 비트 수 $D(f)$ 는 $\log_2\mathrm{rank}\thinspace M_f$ 이상이다. 추측의 진술은 반대로 $D(f)$ 가 $(\log\mathrm{rank}\thinspace M_f)^{c}$ 이하라는 것이고, 성립하면 [통신 복잡도](communication-complexity.md)가 행렬의 계수 하나로 정해진다.
 
 # 직관
 

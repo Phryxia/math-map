@@ -41,7 +41,7 @@ M. Pătraşcu 는 3SUM 에서 그래프의 삼각형 나열로 가는 환원을 
 정리(Vassilevska Williams–Williams). 다음 문제들은 서로 세분 환원으로 이어져, 하나가 $n^{3-\varepsilon}$ 시간에 풀리면 모두 $n^{3-\delta}$ 시간에 풀린다[^5].
 
 - 모든 쌍 최단경로.
-- 최소-합 행렬곱 $(A\star B)\_{ij}=\min_k(A_{ik}+B_{kj})$.
+- 최소-합 [행렬](matrices.md)곱 $(A\star B)\_{ij}=\min_k(A_{ik}+B_{kj})$.
 - 가중치 합이 음수인 삼각형의 존재 판정.
 - 두 정점 사이의 두 번째 최단 단순 경로, 거리 행렬이 삼각부등식을 만족하는지의 판정.
 

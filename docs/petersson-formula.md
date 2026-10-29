@@ -68,7 +68,7 @@ $\mathcal B_k$ 를 Hecke 고유형식의 기저로 잡고 계수를 $a_f(1)=1$ �
 
 - **$L$ 함수의 적률.** 첨점 형식 아족에서 $L(f,\frac12)$ 의 거듭제곱 평균을 계산할 때 계수의 곱의 합이 나오고 Petersson 공식이 그것을 대각 항과 오차로 가른다. 대각 항이 주항을 준다.
 - **비소멸.** 적률의 하한과 상한을 견주면 아족의 양의 비율에서 $L(f,\frac12)\ne0$ 이라는 결론이 나온다.
-- **저윗수 영점의 통계.** 아족의 $L$ 함수 영점 분포를 무작위 행렬의 고윳값 통계와 견주는 계산에서 명시 공식의 합이 Petersson 가중으로 평균된다.
+- **저윗수 영점의 통계.** 아족의 $L$ 함수 영점 분포를 무작위 [행렬](matrices.md)의 고윳값 통계와 견주는 계산에서 명시 공식의 합이 Petersson 가중으로 평균된다.
 - **Kloosterman 합의 합.** 공식을 오른변에서 읽어 Kloosterman 합의 가중 합을 추정한다.
 
 [^1]: H. Petersson, "Über eine Metrisierung der ganzen Modulformen", Jahresbericht der Deutschen Mathematiker-Vereinigung 49 (1939), 49–75.

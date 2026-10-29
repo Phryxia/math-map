@@ -69,7 +69,7 @@ $$
 
 ## 계산
 
-$\phi^\ast$ 의 de Rham 코호몰로지 위의 행렬을 구하면 적분상수가 위 선형방정식으로 나온다. [초타원곡선](hyperelliptic-curves.md)에서 이 행렬을 Monsky–Washnitzer 코호몰로지의 기저로 계산하는 절차가 [Kedlaya 알고리즘](kedlaya-algorithm.md)이다. 기저 원소의 적분을 얻은 뒤 국소 멱급수를 항별로 더해 임의의 두 점 사이의 값을 낸다.
+$\phi^\ast$ 의 de Rham 코호몰로지 위의 [행렬](matrices.md)을 구하면 적분상수가 위 선형방정식으로 나온다. [초타원곡선](hyperelliptic-curves.md)에서 이 행렬을 Monsky–Washnitzer 코호몰로지의 기저로 계산하는 절차가 [Kedlaya 알고리즘](kedlaya-algorithm.md)이다. 기저 원소의 적분을 얻은 뒤 국소 멱급수를 항별로 더해 임의의 두 점 사이의 값을 낸다.
 
 # 활용
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-**Peter–Weyl 정리(Peter–Weyl theorem)** 는 원이나 회전군처럼 콤팩트한 연속 대칭군 위의 함수를 그 군의 기본 대칭 패턴들로 분해하는 정리다. 원 위의 주기함수는 [Fourier 급수](fourier-series.md)로 $e^{in\theta}$ 의 합이 되고 구면 위의 함수는 [구면조화함수](spherical-harmonics.md)의 합이 되는데, 두 전개가 왜 같은 꼴인지는 각 경우의 계산만으로 드러나지 않는다. 이 정리는 콤팩트 [Lie 군](lie-groups.md) 위의 제곱적분 함수 공간이 기약표현의 행렬계수들로 직교분해됨을 보여, 두 전개를 한 정리의 특수한 경우로 얻는다.
+**Peter–Weyl 정리(Peter–Weyl theorem)** 는 원이나 회전군처럼 콤팩트한 연속 대칭군 위의 함수를 그 군의 기본 대칭 패턴들로 분해하는 정리다. 원 위의 주기함수는 [Fourier 급수](fourier-series.md)로 $e^{in\theta}$ 의 합이 되고 구면 위의 함수는 [구면조화함수](spherical-harmonics.md)의 합이 되는데, 두 전개가 왜 같은 꼴인지는 각 경우의 계산만으로 드러나지 않는다. 이 정리는 콤팩트 [Lie 군](lie-groups.md) 위의 제곱적분 함수 공간이 기약표현의 [행렬](matrices.md)계수들로 직교분해됨을 보여, 두 전개를 한 정리의 특수한 경우로 얻는다.
 
 # 직관
 

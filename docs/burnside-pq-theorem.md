@@ -34,7 +34,7 @@ $\chi$ 가 기약지표이고 $K$ 가 $g$ 의 켤레류이면 $\vert K\vert\chi(
 
 ## Burnside 의 지표값 보조정리
 
-**Burnside 의 지표값 보조정리(Burnside's lemma on character values)**. $\chi$ 가 표현 $\rho$ 의 기약지표이고 $\gcd(\vert K\vert,\chi(1))=1$ 이면 $\chi(g)=0$ 이거나 $\rho(g)$ 가 스칼라 행렬이다.
+**Burnside 의 지표값 보조정리(Burnside's lemma on character values)**. $\chi$ 가 표현 $\rho$ 의 기약지표이고 $\gcd(\vert K\vert,\chi(1))=1$ 이면 $\chi(g)=0$ 이거나 $\rho(g)$ 가 스칼라 [행렬](matrices.md)이다.
 
 정수 $u,v$ 로 $u\vert K\vert+v\chi(1)=1$ 을 잡으면
 

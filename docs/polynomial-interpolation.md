@@ -71,7 +71,7 @@ $$
 
 ## 존재와 유일성
 
-Lagrange 꼴이 존재를 준다. 두 보간 다항식의 차는 차수 $n$ 이하이고 근이 $n+1$ 개이므로 [다항식환](polynomial-rings.md)에서 $0$ 이다. 계수로 쓰면 연립방정식의 계수 행렬이 Vandermonde 행렬(Vandermonde matrix)이고, 그 [행렬식](determinants.md) $\prod_{i\lt j}(x_j-x_i)$ 이 $0$ 이 아니다.
+Lagrange 꼴이 존재를 준다. 두 보간 다항식의 차는 차수 $n$ 이하이고 근이 $n+1$ 개이므로 [다항식환](polynomial-rings.md)에서 $0$ 이다. 계수로 쓰면 연립방정식의 계수 [행렬](matrices.md)이 Vandermonde 행렬(Vandermonde matrix)이고, 그 [행렬식](determinants.md) $\prod_{i\lt j}(x_j-x_i)$ 이 $0$ 이 아니다.
 
 ## 오차 공식
 

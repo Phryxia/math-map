@@ -12,7 +12,7 @@
 
 $U\subset\mathbb R^n$ 에서 $Lu=-\sum\_{i,j}a^{ij}(x)D\_{ij}u$ 를 놓고 $u$ 가 내부 점 $x_0$ 에서 최대값을 갖는다고 하자. 최대점에서 $\nabla u(x_0)=0$ 이고 Hessian $H=D^2u(x_0)$ 가 음의 반정부호다. 남은 것은 $\sum\_{i,j}a^{ij}(x_0)H\_{ij}$ 의 부호다.
 
-$A=(a^{ij}(x_0))$ 는 대칭 양의 정부호이므로 대칭 양의 정부호 행렬 $B$ 로 $A=B^2$ 라 쓸 수 있다. 그러면
+$A=(a^{ij}(x_0))$ 는 대칭 양의 정부호이므로 대칭 양의 정부호 [행렬](matrices.md) $B$ 로 $A=B^2$ 라 쓸 수 있다. 그러면
 
 $$
 \sum\_{i,j}a^{ij}(x_0)H\_{ij}=\mathrm{tr}(AH)=\mathrm{tr}(BHB)

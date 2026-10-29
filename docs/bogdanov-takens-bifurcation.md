@@ -16,7 +16,7 @@ $$
 
 의 평형점과 그 근처의 해가 $\beta$ 에 따라 어떻게 바뀌는지 알고 싶다. 평형점은 $y=0$, $x^2=-\beta_1$ 이다. $\beta_1\gt 0$ 이면 평형점이 없고, $\beta_1\lt 0$ 이면 $x_\pm=\pm\sqrt{-\beta_1}$ 둘이 있으며, $\beta_1=0$ 에서 둘이 합쳐진다.
 
-$(x,0)$ 에서 일차 근사의 행렬은 $\begin{pmatrix}0&1\cr 2x&\beta_2-x\end{pmatrix}$ 이다. $x_+$ 에서는 행렬식이 $-2x_+\lt 0$ 이라 안장점이다. $x_-$ 에서는 행렬식이 $2\sqrt{-\beta_1}\gt 0$ 이고 대각합이 $\beta_2+\sqrt{-\beta_1}$ 이므로, 곡선 $\beta_2=-\sqrt{-\beta_1}$ 위에서 고윳값이 허수축 위의 켤레 [복소수](complex-numbers.md)가 되어 Hopf 분기가 일어난다. $\beta=0$ 에서는 두 곡선이 만나고 행렬이 $\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 이 되어 고윳값이 $0$ 두 개다.
+$(x,0)$ 에서 일차 근사의 [행렬](matrices.md)은 $\begin{pmatrix}0&1\cr 2x&\beta_2-x\end{pmatrix}$ 이다. $x_+$ 에서는 행렬식이 $-2x_+\lt 0$ 이라 안장점이다. $x_-$ 에서는 행렬식이 $2\sqrt{-\beta_1}\gt 0$ 이고 대각합이 $\beta_2+\sqrt{-\beta_1}$ 이므로, 곡선 $\beta_2=-\sqrt{-\beta_1}$ 위에서 고윳값이 허수축 위의 켤레 [복소수](complex-numbers.md)가 되어 Hopf 분기가 일어난다. $\beta=0$ 에서는 두 곡선이 만나고 행렬이 $\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 이 되어 고윳값이 $0$ 두 개다.
 
 $\beta$ 가 원점 둘레를 한 바퀴 돌면 Hopf 곡선에서 극한 순환이 생긴다. 평면의 닫힌 궤도는 안쪽에 평형점을 두어야 하므로 평형점이 없는 $\beta_1\gt 0$ 에 닿기 전에 극한 순환이 사라져야 한다. 그래서 원점에서 나오는 셋째 곡선이 있고, 그 곡선 위에서 극한 순환은 안장점 $x_+$ 에서 나가 다시 $x_+$ 로 들어오는 궤도가 된다.
 

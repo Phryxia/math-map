@@ -104,7 +104,7 @@ $\gamma^2=\prod_S(a-b\alpha)$ 는 수백만 개의 인수의 곱이라 계수가
 
 # 활용
 
-- **인수분해 기록.** 232 자리의 RSA(Rivest–Shamir–Adleman) 도전 수 RSA-768 은 2009 년 일반 수체 체로 인수분해되었다. 다항식 선택에 반년, 체에 2 년 가까이 들었고, 행렬은 1.9 억 행 정도였고 그 영공간은 블록 [Wiedemann 알고리즘](wiedemann-algorithm.md)으로 구했다.[^4] [RSA 암호](rsa-cryptosystem.md)의 권장 키 길이는 이 알고리즘의 $L_n\lbrack 1/3,\cdot\rbrack$ 시간에서 정해진다.
+- **인수분해 기록.** 232 자리의 RSA(Rivest–Shamir–Adleman) 도전 수 RSA-768 은 2009 년 일반 수체 체로 인수분해되었다. 다항식 선택에 반년, 체에 2 년 가까이 들었고, [행렬](matrices.md)은 1.9 억 행 정도였고 그 영공간은 블록 [Wiedemann 알고리즘](wiedemann-algorithm.md)으로 구했다.[^4] [RSA 암호](rsa-cryptosystem.md)의 권장 키 길이는 이 알고리즘의 $L_n\lbrack 1/3,\cdot\rbrack$ 시간에서 정해진다.
 - **Fermat 수.** 아홉째 Fermat 수 $F_9=2^{512}+1$ 은 1990 년 특수 수체 체로 인수분해되었다. $f(x)=x^5+8$, $m=2^{103}$ 으로 $8F_9=m^5+8$ 이 된다.[^5]
 - **이산로그.** 같은 구조로 $\mathbb Z$ 와 $\mathbb Z\lbrack\alpha\rbrack$ 에서 관계를 모으면 $(\mathbb Z/p\mathbb Z)^\times$ 의 이산로그를 $L_p\lbrack 1/3,(64/9)^{1/3}\rbrack$ 에 구한다. 선형대수가 $\mathbb F_2$ 대신 $\mathbb Z/(p-1)$ 위에서 이루어진다.
 - **관계 수집 안의 분해.** 체를 통과한 값에서 작은 소수를 나눈 뒤 남는 몫은 수십 비트이고, 이 몫을 [타원곡선 인수분해](elliptic-curve-factorization.md)로 쪼개 관계를 늘린다.

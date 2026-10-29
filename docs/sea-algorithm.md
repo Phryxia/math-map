@@ -18,7 +18,7 @@ $$
 \varphi^2-a_p\varphi+p=0
 $$
 
-를 만족한다. 이 식을 $\ell$ 등분점의 군 $E[\ell]\cong(\mathbb Z/\ell)^2$ 에 제한하면 $\varphi$ 가 $2\times2$ 행렬이 되고 $a_p\bmod\ell$ 이 그 대각합이다.
+를 만족한다. 이 식을 $\ell$ 등분점의 군 $E[\ell]\cong(\mathbb Z/\ell)^2$ 에 제한하면 $\varphi$ 가 $2\times2$ [행렬](matrices.md)이 되고 $a_p\bmod\ell$ 이 그 대각합이다.
 
 $E[\ell]$ 은 **나눗셈 다항식** $\psi_\ell(x)$ 로 다룬다. 차수가 $(\ell^2-1)/2$ 이고 근이 $\ell$ 등분점의 $x$ 좌표다. $\mathbb F_p[x]/(\psi_\ell(x))$ 안에서 특성방정식을 $t=0,1,\dots,\ell-1$ 에 대해 시험해 맞는 $t$ 를 찾는다. $\ell$ 이 $O(\log p)$ 까지만 필요하므로 전체가 다항시간이다.
 

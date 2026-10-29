@@ -191,7 +191,7 @@ Airy 는 1838년 무지개의 **과잉 아치**(supernumerary arc)를 설명하�
 
 ## 무작위 행렬의 가장자리
 
-큰 무작위 행렬의 고윳값 분포는 가장자리에서 반원법칙의 제곱근으로 끊기는데, 그 근방을 $N^{2/3}$ 배로 확대하면 Airy 핵 $\bigl(\mathrm{Ai}(x)\mathrm{Ai}'(y) - \mathrm{Ai}'(x)\mathrm{Ai}(y)\bigr)/(x-y)$ 가 나타나고 최대 고윳값의 극한분포가 [Tracy–Widom 분포](tracy-widom.md)가 된다. 분포의 밀도가 Painlevé II 방정식으로 기술되고 그 해의 경계조건이 $\mathrm{Ai}$ 라는 점에서, 회전점 근방의 보편성이 확률론까지 이어진다.
+큰 무작위 [행렬](matrices.md)의 고윳값 분포는 가장자리에서 반원법칙의 제곱근으로 끊기는데, 그 근방을 $N^{2/3}$ 배로 확대하면 Airy 핵 $\bigl(\mathrm{Ai}(x)\mathrm{Ai}'(y) - \mathrm{Ai}'(x)\mathrm{Ai}(y)\bigr)/(x-y)$ 가 나타나고 최대 고윳값의 극한분포가 [Tracy–Widom 분포](tracy-widom.md)가 된다. 분포의 밀도가 Painlevé II 방정식으로 기술되고 그 해의 경계조건이 $\mathrm{Ai}$ 라는 점에서, 회전점 근방의 보편성이 확률론까지 이어진다.
 
 [^1]: M. V. Berry, C. Upstill, *Catastrophe optics: morphologies of caustics and their diffraction patterns*, Progress in Optics XVIII (1980). 초곡선의 분류와 각 유형에 대응하는 회절 적분. 접힘(fold) 초곡선의 표준 적분이 Airy 함수다.
 

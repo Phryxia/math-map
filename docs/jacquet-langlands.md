@@ -2,7 +2,7 @@
 
 # 개요
 
-**Jacquet–Langlands 대응(Jacquet–Langlands correspondence)** 은 [사원수 대수](quaternion-algebras.md)의 곱셈군의 자기동형 표현을 $\mathrm{GL}\_2$ 의 첨점 표현으로 보내는 대응이다. $\mathrm{GL}\_2$ 의 첨점형식은 콤팩트하지 않은 공간 위의 함수여서, Hecke 고윳값을 구하려면 연속 스펙트럼과 [Eisenstein 급수](eisenstein-series.md)를 함께 다뤄야 한다. 정부호 사원수 대수 쪽에서는 같은 정보가 유한 집합 위의 함수로 나타나고, 고윳값 계산이 유한 행렬의 계산이 된다. Jacquet–Langlands 대응은 두 쪽의 표현이 Hecke 고윳값을 보존하며 짝지어짐을 보여, $\mathrm{GL}\_2$ 의 문제를 그 유한 계산으로 옮긴다.
+**Jacquet–Langlands 대응(Jacquet–Langlands correspondence)** 은 [사원수 대수](quaternion-algebras.md)의 곱셈군의 자기동형 표현을 $\mathrm{GL}\_2$ 의 첨점 표현으로 보내는 대응이다. $\mathrm{GL}\_2$ 의 첨점형식은 콤팩트하지 않은 공간 위의 함수여서, Hecke 고윳값을 구하려면 연속 스펙트럼과 [Eisenstein 급수](eisenstein-series.md)를 함께 다뤄야 한다. 정부호 사원수 대수 쪽에서는 같은 정보가 유한 집합 위의 함수로 나타나고, 고윳값 계산이 유한 [행렬](matrices.md)의 계산이 된다. Jacquet–Langlands 대응은 두 쪽의 표현이 Hecke 고윳값을 보존하며 짝지어짐을 보여, $\mathrm{GL}\_2$ 의 문제를 그 유한 계산으로 옮긴다.
 
 # 직관
 

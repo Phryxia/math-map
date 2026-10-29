@@ -58,7 +58,7 @@ $\mathrm{ht}\thinspace I\lt i$ 이면서 $H^i\_I(R)\neq0$ 인 $i$ 를 찾으면 
 
 ## 행렬식 다양체
 
-**정리**(Bruns–Schwänzl). $m\times n$ 행렬의 $t$ 차 소행렬식이 정의하는 행렬식 다양체의 산술 랭크는 $mn-t^2+1$ 이다.[^3]
+**정리**(Bruns–Schwänzl). $m\times n$ [행렬](matrices.md)의 $t$ 차 소행렬식이 정의하는 행렬식 다양체의 산술 랭크는 $mn-t^2+1$ 이다.[^3]
 
 $m=2$, $n=3$, $t=2$ 인 경우가 Segre 매장 $\mathbb P^1\times\mathbb P^2\subseteq\mathbb P^5$ 다. 높이는 $(m-t+1)(n-t+1)=2$ 이고 산술 랭크는 $3$ 이므로 집합론적 완전교차가 아니다. 하한의 증명은 에탈 코호몰로지의 비소멸을 쓴다.
 

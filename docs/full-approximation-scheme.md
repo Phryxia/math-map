@@ -16,7 +16,7 @@ $$
 
 이고, 마지막 두 항의 차 $\tau=A_{2h}(R\thinspace u_h)-R\thinspace A_h(u_h)$ 가 두 격자의 이산화 차이를 보정한다. $A$ 가 선형이면 이 식이 잔차 방정식 $A_{2h}e_{2h}=R\thinspace r_h$ 로 돌아간다.
 
-[Newton 법](newton-method.md)을 바깥에 두고 각 선형계를 다중격자로 푸는 방법과 달리, 이 방법은 비선형성을 안쪽에 두고 Jacobi 행렬을 만들지 않는다.
+[Newton 법](newton-method.md)을 바깥에 두고 각 선형계를 다중격자로 푸는 방법과 달리, 이 방법은 비선형성을 안쪽에 두고 Jacobi [행렬](matrices.md)을 만들지 않는다.
 
 선형 다중격자는 근사해 $u_h$ 의 잔차 $r_h=f_h-A_hu_h$ 를 성긴 격자로 보내 $A_{2h}e_{2h}=R\thinspace r_h$ 를 풀고, 얻은 $e_{2h}$ 를 보간해 더한다. 이 절차는 오차 $e$ 가 만족하는 방정식 $A_he_h=r_h$ 를 쓰는데, $A$ 가 비선형이면 오차가 만족하는 식이 달라진다.
 

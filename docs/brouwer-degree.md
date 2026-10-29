@@ -26,7 +26,7 @@ $f$ 가 $\Omega$ 에서 매끄럽고 $y$ 가 $f$ 의 정칙값이면
 
 $$\deg(f,\Omega,y)=\sum\_{x\in f^{-1}(y)}\mathrm{sign}\thinspace\det Df(x).$$
 
-$Df(x)$ 는 $x$ 에서의 Jacobi 행렬이다. $y$ 가 정칙값이므로 $f^{-1}(y)$ 의 점마다 $\det Df(x)\neq 0$ 이고, [역함수 정리](inverse-function-theorem.md)로 그 점들은 고립되어 있다. $f^{-1}(y)$ 는 $\overline\Omega$ 의 닫힌부분집합이면서 경계와 만나지 않으므로 콤팩트이고, 고립점으로 된 콤팩트 집합이라 유한집합이다. 따라서 합이 유한하다.
+$Df(x)$ 는 $x$ 에서의 Jacobi [행렬](matrices.md)이다. $y$ 가 정칙값이므로 $f^{-1}(y)$ 의 점마다 $\det Df(x)\neq 0$ 이고, [역함수 정리](inverse-function-theorem.md)로 그 점들은 고립되어 있다. $f^{-1}(y)$ 는 $\overline\Omega$ 의 닫힌부분집합이면서 경계와 만나지 않으므로 콤팩트이고, 고립점으로 된 콤팩트 집합이라 유한집합이다. 따라서 합이 유한하다.
 
 ## 연속사상으로의 확장
 

@@ -92,7 +92,7 @@ $\Phi$ 의 최솟값은 $k$ 가 커질 때 감소하고 $k=n$ 에서 $0$ 이다.
 - 벡터 양자화의 코드북을 표본에서 학습한다. 코드워드가 중심이고 부호화가 가까운 중심 찾기다.
 - 이미지의 색을 줄일 때 화소의 색 벡터를 묶고 묶음 중심을 팔레트로 쓴다.
 - 특징 전처리에서 중심까지의 거리를 새 특징으로 쓰거나, 묶음 번호를 범주형 특징으로 쓴다.
-- [주성분 분석](principal-component-analysis.md)으로 차원을 줄인 뒤 적용하면 거리 계산이 싸진다. 둘을 함께 쓰면 비용 함수가 묶음 지시 행렬의 완화와 연결된다.
+- [주성분 분석](principal-component-analysis.md)으로 차원을 줄인 뒤 적용하면 거리 계산이 싸진다. 둘을 함께 쓰면 비용 함수가 묶음 지시 [행렬](matrices.md)의 완화와 연결된다.
 
 [^1]: D. Aloise, A. Deshpande, P. Hansen, P. Popat, "NP-hardness of Euclidean sum-of-squares clustering", *Machine Learning* 75 (2009), 245–248 쪽.
 [^2]: D. Arthur, S. Vassilvitskii, "k-means++: the advantages of careful seeding", *Proc. 18th ACM–SIAM Symposium on Discrete Algorithms*, 2007, 1027–1035 쪽.

@@ -80,7 +80,7 @@ $$
 \prod_v\alpha_v(\varphi_v)
 $$
 
-$\alpha_v$ 는 $K_v^\times$ 위의 행렬계수 적분으로 거의 모든 자리에서 1 이다. 이 형태가 GGP 의 Ichino–Ikeda 정련의 원형이다.
+$\alpha_v$ 는 $K_v^\times$ 위의 [행렬](matrices.md)계수 적분으로 거의 모든 자리에서 1 이다. 이 형태가 GGP 의 Ichino–Ikeda 정련의 원형이다.
 
 # 성질
 

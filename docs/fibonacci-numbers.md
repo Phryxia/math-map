@@ -38,7 +38,7 @@ $$
 
 ## 행렬 꼴
 
-점화식은 행렬 곱 $\begin{pmatrix}F_{n+1}\cr F_n\end{pmatrix}=\begin{pmatrix}1&1\cr 1&0\end{pmatrix}\begin{pmatrix}F_n\cr F_{n-1}\end{pmatrix}$ 이다. 거듭 쓰면 다음이 나온다.
+점화식은 [행렬](matrices.md) 곱 $\begin{pmatrix}F_{n+1}\cr F_n\end{pmatrix}=\begin{pmatrix}1&1\cr 1&0\end{pmatrix}\begin{pmatrix}F_n\cr F_{n-1}\end{pmatrix}$ 이다. 거듭 쓰면 다음이 나온다.
 
 $$
 \begin{pmatrix}1&1\cr 1&0\end{pmatrix}^n=\begin{pmatrix}F_{n+1}&F_n\cr F_n&F_{n-1}\end{pmatrix}\qquad(n\ge 1)

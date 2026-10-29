@@ -22,7 +22,7 @@ Sternberg 정리의 호몰로지 방정식에 따르면 $i$ 번째 성분의 단
 
 # 정의
 
-$A$ 가 [Jordan 표준형](jordan-canonical-form.md)인 $n\times n$ 행렬이고 대각 성분이 $\lambda_1,\dots,\lambda_n$ 이다. 음이 아닌 정수 순서쌍 $m$ 과 $i$ 에 대해 $\lambda_i=m\cdot\lambda$, $\lvert m\rvert\ge 2$ 이면 벡터장 $x^me_i=x_1^{m_1}\cdots x_n^{m_n}e_i$ 를 **공명 단항식(resonant monomial)** 이라 한다.
+$A$ 가 [Jordan 표준형](jordan-canonical-form.md)인 $n\times n$ [행렬](matrices.md)이고 대각 성분이 $\lambda_1,\dots,\lambda_n$ 이다. 음이 아닌 정수 순서쌍 $m$ 과 $i$ 에 대해 $\lambda_i=m\cdot\lambda$, $\lvert m\rvert\ge 2$ 이면 벡터장 $x^me_i=x_1^{m_1}\cdots x_n^{m_n}e_i$ 를 **공명 단항식(resonant monomial)** 이라 한다.
 
 $x'=Ax+w(x)$ 에서 $w$ 의 Taylor 급수가 공명 단항식만으로 이루어지면 이 방정식이 **Poincaré–Dulac 정규형** 이라 한다.
 

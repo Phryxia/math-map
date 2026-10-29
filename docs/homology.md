@@ -71,7 +71,7 @@ $$
 
 ## 경계 행렬과 Smith normal form
 
-경계 연산자를 기저에 대해 행렬로 쓰면 성분이 -1, 0, 1 인 정수행렬이다. 정수행렬의 Smith normal form 이 rank 와 꼬임 계수를 모두 주고, Betti 수는 다음으로 나온다[^2].
+경계 연산자를 기저에 대해 [행렬](matrices.md)로 쓰면 성분이 -1, 0, 1 인 정수행렬이다. 정수행렬의 Smith normal form 이 rank 와 꼬임 계수를 모두 주고, Betti 수는 다음으로 나온다[^2].
 
 $$
 \beta_n=\mathrm{rank}Z_n-\mathrm{rank}B_n=\bigl(m_n-\mathrm{rank}\partial_n\bigr)-\mathrm{rank}\partial_{n+1}

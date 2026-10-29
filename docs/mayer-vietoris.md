@@ -96,7 +96,7 @@ $A$ 와 $B$ 가 각각 어떤 열린 근방의 변형 수축핵이면 그 근방
 
 # 활용
 
-- **[단체 호몰로지](homology.md)의 표준 계산.** 구면, 원환면, [실사영공간](real-projective-space.md)의 호몰로지를 사슬군의 경계 행렬을 직접 다루지 않고 조각의 값에서 얻는다. 원환면은 두 열린 원기둥으로 덮고, 교집합이 원 두 개와 호모토피 동치인 점을 쓴다.
+- **[단체 호몰로지](homology.md)의 표준 계산.** 구면, 원환면, [실사영공간](real-projective-space.md)의 호몰로지를 사슬군의 경계 [행렬](matrices.md)을 직접 다루지 않고 조각의 값에서 얻는다. 원환면은 두 열린 원기둥으로 덮고, 교집합이 원 두 개와 호모토피 동치인 점을 쓴다.
 - **[Euler 지표](euler-characteristic.md)의 합 규칙.** $\chi(X\cup Y)=\chi(X)+\chi(Y)-\chi(X\cap Y)$ 는 Mayer–Vietoris 열에 완전열의 덧셈 공식을 적용한 것이다. 유한 길이 완전열에서 차수의 교대합이 $0$ 이라는 사실이 그 공식이다.
 - **de Rham 정리.** [de Rham 코호몰로지](de-rham-cohomology.md)와 특이 코호몰로지가 같다는 정리의 증명은 좋은 덮개를 잡아 두 이론의 Mayer–Vietoris 열을 나란히 놓고 다섯 보조정리로 귀납하는 것이다.
 - **[Hartshorne–Lichtenbaum 소멸 정리](hartshorne-lichtenbaum.md).** 증명은 아이디얼이 한 원소로 생성된 경우를 먼저 처리하고, 생성원 개수에 대한 귀납과 [국소 코호몰로지](local-cohomology.md)의 Mayer–Vietoris 열로 일반의 경우를 그 경우에 붙인다. 열의 꼴이 같고 덮개 대신 아이디얼의 쪼갬이 들어간다.

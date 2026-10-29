@@ -12,7 +12,7 @@
 
 $\phi$ 는 보통 아주 고차원이거나 무한차원이다. PCA 가 필요로 하는 것은 좌표가 아니라 내적뿐이므로, $\langle\phi(x),\phi(y)\rangle$ 를 계산하는 함수 하나만 있으면 $\phi$ 를 명시하지 않고 전 과정을 수행할 수 있다.
 
-$n$ 개의 점을 $d$ 차원에서 다룰 때 PCA 는 $d\times d$ [공분산](covariance.md)행렬 $X^{\mathsf T}X$ 의 고유벡터를 구한다. $X^{\mathsf T}Xv=\lambda v$ 의 양변에 $X$ 를 곱하면 $XX^{\mathsf T}(Xv)=\lambda(Xv)$ 이므로, $n\times n$ 그람행렬 $XX^{\mathsf T}$ 는 $0$ 이 아닌 고윳값이 같고 고유벡터가 $v\mapsto Xv$ 로 옮겨진다. 그람행렬의 성분은 점들 사이의 내적뿐이므로 좌표를 몰라도 내적만 알면 같은 계산이 끝나고, $d$ 가 $n$ 보다 훨씬 크면 이쪽이 계산량도 적다.
+$n$ 개의 점을 $d$ 차원에서 다룰 때 PCA 는 $d\times d$ [공분산](covariance.md)[행렬](matrices.md) $X^{\mathsf T}X$ 의 고유벡터를 구한다. $X^{\mathsf T}Xv=\lambda v$ 의 양변에 $X$ 를 곱하면 $XX^{\mathsf T}(Xv)=\lambda(Xv)$ 이므로, $n\times n$ 그람행렬 $XX^{\mathsf T}$ 는 $0$ 이 아닌 고윳값이 같고 고유벡터가 $v\mapsto Xv$ 로 옮겨진다. 그람행렬의 성분은 점들 사이의 내적뿐이므로 좌표를 몰라도 내적만 알면 같은 계산이 끝나고, $d$ 가 $n$ 보다 훨씬 크면 이쪽이 계산량도 적다.
 
 $\langle\phi(x),\phi(y)\rangle$ 를 원래 좌표의 식으로 계산하는 함수가 있으면 $\phi$ 를 적지 않아도 된다. $k(x,y)=(x^{\mathsf T}y+1)^2$ 는 2 차원 입력에 대해 6 차원 특징공간의 내적이고, $k(x,y)=\exp(-\lVert x-y\rVert^2/2\sigma^2)$ 는 무한차원에 대응한다. 어느 쪽이든 한 쌍의 값을 얻는 데는 원래 좌표에서 몇 번의 곱셈으로 끝난다.
 

@@ -34,7 +34,7 @@ $\varepsilon$ 은 $i$ 에 무관한 상수다. 연결된 그래프 하나는 언
 
 ## 스펙트럼 간극
 
-인접행렬 $A$ 의 고윳값을 $d=\mu_1\ge\mu_2\ge\cdots\ge\mu_n$ 라 하고 정규화해 $\lambda_i=\mu_i/d$ 로 둔다. $\lambda_1=1$ 이고 고유벡터는 전체 $1$ 벡터다. **스펙트럼 간극(spectral gap)** 은 $1-\lambda_2$ 다. 간극은 [그래프 Laplacian](graph-laplacian.md)을 $d$ 로 나눈 행렬의 두 번째로 작은 고윳값이기도 하다.
+인접행렬 $A$ 의 고윳값을 $d=\mu_1\ge\mu_2\ge\cdots\ge\mu_n$ 라 하고 정규화해 $\lambda_i=\mu_i/d$ 로 둔다. $\lambda_1=1$ 이고 고유벡터는 전체 $1$ 벡터다. **스펙트럼 간극(spectral gap)** 은 $1-\lambda_2$ 다. 간극은 [그래프 Laplacian](graph-laplacian.md)을 $d$ 로 나눈 [행렬](matrices.md)의 두 번째로 작은 고윳값이기도 하다.
 
 $\lambda_n=-1$ 일 필요충분조건은 그래프가 이분인 것이다. 무작위 걷기의 수렴에는 $\max(|\lambda_2|,|\lambda_n|)$ 이, 전도도와의 관계에는 $\lambda_2$ 가 쓰인다.
 

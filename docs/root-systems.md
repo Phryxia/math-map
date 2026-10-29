@@ -81,7 +81,7 @@ $$
 A_{ij}=\langle\alpha_j,\alpha_i\rangle=\frac{2(\alpha_j,\alpha_i)}{(\alpha_i,\alpha_i)}
 $$
 
-대각성분이 $2$ 이고 비대각성분이 $0,-1,-2,-3$ 인 정수행렬이다. 이 행렬이 근계를 결정하고, 따라서 반단순 Lie 대수를 동형을 빼고 결정한다.
+대각성분이 $2$ 이고 비대각성분이 $0,-1,-2,-3$ 인 정수행렬이다. 이 [행렬](matrices.md)이 근계를 결정하고, 따라서 반단순 Lie 대수를 동형을 빼고 결정한다.
 
 **Weyl 군**은 $W=\langle s_\alpha:\alpha\in\Phi\rangle$ 이고, 사실 단순반사만으로 생성된다.
 

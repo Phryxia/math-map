@@ -2,7 +2,7 @@
 
 # 개요
 
-**PID 위의 유한생성 가군(finitely generated module over a PID)** 은 주아이디얼정역(principal ideal domain, PID) 위에서 원소 몇 개로 생성되는 [가군](modules.md)이다. 원소 $a,b$ 로 생성되고 관계 $2a=0$, $3b=0$ 만 성립하는 아벨군은 $\mathbb Z/2\oplus\mathbb Z/3$ 이고, 이것은 원소 하나로 생성되는 $\mathbb Z/6$ 과 같은 군이다. 이런 가군은 생성원 사이의 관계를 행렬로 적고 그 행렬을 대각화해, 순환가군의 직합이라는 한 가지 꼴로 분류한다.
+**PID 위의 유한생성 가군(finitely generated module over a PID)** 은 주아이디얼정역(principal ideal domain, PID) 위에서 원소 몇 개로 생성되는 [가군](modules.md)이다. 원소 $a,b$ 로 생성되고 관계 $2a=0$, $3b=0$ 만 성립하는 아벨군은 $\mathbb Z/2\oplus\mathbb Z/3$ 이고, 이것은 원소 하나로 생성되는 $\mathbb Z/6$ 과 같은 군이다. 이런 가군은 생성원 사이의 관계를 [행렬](matrices.md)로 적고 그 행렬을 대각화해, 순환가군의 직합이라는 한 가지 꼴로 분류한다.
 
 # 직관
 

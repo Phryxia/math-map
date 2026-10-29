@@ -40,7 +40,7 @@ $$
 
 ## 공분산행렬
 
-$\mathbb R^d$ 값 확률벡터 $X=(X_1,\dots,X_d)$ 의 성분마다 2차 적률이 유한할 때 $(i,j)$ 성분이 $\mathrm{Cov}(X_i,X_j)$ 인 $d\times d$ 행렬
+$\mathbb R^d$ 값 확률벡터 $X=(X_1,\dots,X_d)$ 의 성분마다 2차 적률이 유한할 때 $(i,j)$ 성분이 $\mathrm{Cov}(X_i,X_j)$ 인 $d\times d$ [행렬](matrices.md)
 
 $$
 \Sigma=\mathbb E\bigl\lbrack(X-\mathbb E X)(X-\mathbb E X)^\top\bigr\rbrack

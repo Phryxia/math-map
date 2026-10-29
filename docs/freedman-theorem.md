@@ -2,7 +2,7 @@
 
 # 개요
 
-**Freedman 정리(Freedman's theorem)** 는 모든 고리를 한 점으로 줄일 수 있는 닫힌 4 차원 공간을, 그 안의 곡면들이 서로 몇 번 만나는지 적은 대칭 행렬 하나와 $0$ 또는 $1$ 인 값 하나로 분류한다는 정리다. $S^2\times S^2$ 안의 두 구면 $S^2\times\lbrace p\rbrace$ 와 $\lbrace p\rbrace\times S^2$ 는 한 번 만나고 각자는 자기 자신과 $0$ 번 만나므로 행렬이 $\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이고, $\mathbb{CP}^2\mathbin{\char35}\overline{\mathbb{CP}^2}$ 의 행렬은 $\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}$ 이어서 두 공간은 위상동형이 아니다. Freedman 정리는 거꾸로 행렬과 그 값이 같으면 두 공간이 위상동형임을 보이고, 증명은 차원 $5$ 이상에서 쓰는 교차점 제거를 4 차원에서 무한히 되풀이하는 구성으로 한다.
+**Freedman 정리(Freedman's theorem)** 는 모든 고리를 한 점으로 줄일 수 있는 닫힌 4 차원 공간을, 그 안의 곡면들이 서로 몇 번 만나는지 적은 대칭 [행렬](matrices.md) 하나와 $0$ 또는 $1$ 인 값 하나로 분류한다는 정리다. $S^2\times S^2$ 안의 두 구면 $S^2\times\lbrace p\rbrace$ 와 $\lbrace p\rbrace\times S^2$ 는 한 번 만나고 각자는 자기 자신과 $0$ 번 만나므로 행렬이 $\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이고, $\mathbb{CP}^2\mathbin{\char35}\overline{\mathbb{CP}^2}$ 의 행렬은 $\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}$ 이어서 두 공간은 위상동형이 아니다. Freedman 정리는 거꾸로 행렬과 그 값이 같으면 두 공간이 위상동형임을 보이고, 증명은 차원 $5$ 이상에서 쓰는 교차점 제거를 4 차원에서 무한히 되풀이하는 구성으로 한다.
 
 # 직관
 

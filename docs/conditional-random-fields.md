@@ -42,7 +42,7 @@ $\phi$ 가 관측열 전체와 시점을 받으므로 한 시점의 특성이 �
 
 ## 전이 행렬
 
-관측열과 시점을 고정하고 행렬 $M_t\in\mathbb R^{N\times N}$ 을
+관측열과 시점을 고정하고 [행렬](matrices.md) $M_t\in\mathbb R^{N\times N}$ 을
 
 $$
 \lbrack M_t\rbrack\_{ij}=\exp\bigl(\theta^{\top}\phi(i,j,o\_{1:T},t)\bigr)

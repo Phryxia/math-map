@@ -36,7 +36,7 @@ $$
 
 가 비퇴화 2-형식이 되며 이것이 **Kähler 형식**이다. $g,J,\omega$ 중 둘이 나머지를 결정한다.
 
-국소좌표에서는 $\omega=\frac i2\sum h_{j\bar k}\thinspace dz_j\wedge d\bar z_k$ 꼴이고, $(h_{j\bar k})$ 가 양의 정부호 Hermite 행렬이다.
+국소좌표에서는 $\omega=\frac i2\sum h_{j\bar k}\thinspace dz_j\wedge d\bar z_k$ 꼴이고, $(h_{j\bar k})$ 가 양의 정부호 Hermite [행렬](matrices.md)이다.
 
 ## Kähler 다양체
 

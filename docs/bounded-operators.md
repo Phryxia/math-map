@@ -2,7 +2,7 @@
 
 # 개요
 
-**유계 작용소(bounded operator)** 는 Hilbert 공간 사이의 연속 [선형사상](linear-maps.md)이고, 그 스펙트럼은 $T-\lambda I$ 가 가역이 아닌 $\lambda$ 들의 집합이다. $\lbrack 0,1\rbrack$ 위의 함수 $f(x)$ 를 $xf(x)$ 로 보내는 사상은 행렬처럼 선형인데도 $xf=\lambda f$ 를 만족하는 $0$ 이 아닌 함수가 없어, 고윳값으로는 분석할 수 없다. 유계 작용소의 이론은 고윳값 대신 스펙트럼을 써서, 이런 사상도 대각화에 해당하는 분해로 다룬다.
+**유계 작용소(bounded operator)** 는 Hilbert 공간 사이의 연속 [선형사상](linear-maps.md)이고, 그 스펙트럼은 $T-\lambda I$ 가 가역이 아닌 $\lambda$ 들의 집합이다. $\lbrack 0,1\rbrack$ 위의 함수 $f(x)$ 를 $xf(x)$ 로 보내는 사상은 [행렬](matrices.md)처럼 선형인데도 $xf=\lambda f$ 를 만족하는 $0$ 이 아닌 함수가 없어, 고윳값으로는 분석할 수 없다. 유계 작용소의 이론은 고윳값 대신 스펙트럼을 써서, 이런 사상도 대각화에 해당하는 분해로 다룬다.
 
 # 직관
 

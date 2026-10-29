@@ -38,7 +38,7 @@ $$
 
 ## 다변수 Newton 법
 
-$F$ 가 $n$ 차원 벡터값 함수일 때 접선 근사는 Jacobian 행렬로 주어진다.
+$F$ 가 $n$ 차원 벡터값 함수일 때 접선 근사는 Jacobian [행렬](matrices.md)로 주어진다.
 
 $$
 J(x)\_{ij} = \frac{\partial F_i}{\partial x_j}(x),\qquad J(x_k)\thinspace\Delta_k = -F(x_k),\qquad x_{k+1} = x_k + \Delta_k .

@@ -61,7 +61,7 @@ $$
 \varphi^n+c_1\varphi^{n-1}+\cdots+c_n=0,\qquad c_j\in I^j
 $$
 
-생성원에 대한 행렬 표현에 Cayley–Hamilton 을 적용해 얻는다. $\varphi=\mathrm{id}$ 를 넣으면 $1+c_1+\cdots+c_n$ 이 $M$ 을 소멸시키므로, $IM=M$ 일 때 $M$ 을 소멸시키는 $1+a\ (a\in I)$ 꼴의 원소가 존재한다는 형태가 나온다. 이 진술은 $I\subseteq\mathrm{rad}(R)$ 가정 없이도 성립한다.
+생성원에 대한 [행렬](matrices.md) 표현에 Cayley–Hamilton 을 적용해 얻는다. $\varphi=\mathrm{id}$ 를 넣으면 $1+c_1+\cdots+c_n$ 이 $M$ 을 소멸시키므로, $IM=M$ 일 때 $M$ 을 소멸시키는 $1+a\ (a\in I)$ 꼴의 원소가 존재한다는 형태가 나온다. 이 진술은 $I\subseteq\mathrm{rad}(R)$ 가정 없이도 성립한다.
 
 # 활용
 

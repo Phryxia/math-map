@@ -74,7 +74,7 @@ $f$ 가 $x$ 에 대해 전역 Lipschitz(특히 선형)이면 해는 모든 시�
 
 ## 선형 방정식
 
-상수계수 선형 연립방정식의 해는 행렬 지수로 주어진다.
+상수계수 선형 연립방정식의 해는 [행렬](matrices.md) 지수로 주어진다.
 
 $$
 x'=Ax,\quad x(0)=x_0\ \Longrightarrow\ x(t)=e^{tA}x_0,\qquad e^{tA}=\sum_{k=0}^{\infty}\frac{t^k A^k}{k!}

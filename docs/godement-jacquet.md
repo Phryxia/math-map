@@ -2,7 +2,7 @@
 
 # 개요
 
-**Godement–Jacquet 적분(Godement–Jacquet integral)** 은 행렬 위의 적분 하나로 $L$ 함수를 적어, 급수가 수렴하지 않는 곳까지 $L$ 함수를 늘이고 그 대칭을 보이는 방법이다. $\zeta(s)=1+2^{-s}+3^{-s}+\cdots$ 은 $s\gt 1$ 에서만 수렴하지만, $e^{-\pi n^2x}$ 를 $n\ge1$ 에 대해 더한 함수에 $x^{s/2-1}$ 을 곱해 $x$ 로 적분하면 $\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 가 나오고, 그 함수가 $x\mapsto1/x$ 에서 갖는 대칭에서 $s\mapsto1-s$ 대칭이 나온다. 수 $x$ 대신 $n\times n$ 가역행렬을 변수로 놓고 같은 적분을 하면 $\mathrm{GL}\_n$ 의 자기동형 표현에 붙는 표준 $L$ 함수에서 같은 결과가 나오며, Godement 와 Jacquet 이 1972 년에 이것을 보였다.
+**Godement–Jacquet 적분(Godement–Jacquet integral)** 은 [행렬](matrices.md) 위의 적분 하나로 $L$ 함수를 적어, 급수가 수렴하지 않는 곳까지 $L$ 함수를 늘이고 그 대칭을 보이는 방법이다. $\zeta(s)=1+2^{-s}+3^{-s}+\cdots$ 은 $s\gt 1$ 에서만 수렴하지만, $e^{-\pi n^2x}$ 를 $n\ge1$ 에 대해 더한 함수에 $x^{s/2-1}$ 을 곱해 $x$ 로 적분하면 $\pi^{-s/2}\Gamma(s/2)\zeta(s)$ 가 나오고, 그 함수가 $x\mapsto1/x$ 에서 갖는 대칭에서 $s\mapsto1-s$ 대칭이 나온다. 수 $x$ 대신 $n\times n$ 가역행렬을 변수로 놓고 같은 적분을 하면 $\mathrm{GL}\_n$ 의 자기동형 표현에 붙는 표준 $L$ 함수에서 같은 결과가 나오며, Godement 와 Jacquet 이 1972 년에 이것을 보였다.
 
 # 직관
 

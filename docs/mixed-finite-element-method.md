@@ -60,7 +60,7 @@ $$
 \begin{pmatrix}A&B^{\mathsf T}\cr B&0\end{pmatrix}\begin{pmatrix}\boldsymbol\sigma\cr\boldsymbol u\end{pmatrix}=\begin{pmatrix}\boldsymbol f\cr\boldsymbol g\end{pmatrix}
 $$
 
-$A$ 는 $a$ 의 강성행렬이고 $B$ 는 $b$ 의 행렬이다. 오른쪽 아래 블록이 $0$ 인 것이 강제성이 깨지는 자리다. 이산 핵은 $K_h=\lbrace \tau_h\in V_h:b(\tau_h,v_h)=0\thinspace(\forall v_h\in Q_h)\rbrace$ 다.
+$A$ 는 $a$ 의 강성행렬이고 $B$ 는 $b$ 의 [행렬](matrices.md)이다. 오른쪽 아래 블록이 $0$ 인 것이 강제성이 깨지는 자리다. 이산 핵은 $K_h=\lbrace \tau_h\in V_h:b(\tau_h,v_h)=0\thinspace(\forall v_h\in Q_h)\rbrace$ 다.
 
 # 성질
 

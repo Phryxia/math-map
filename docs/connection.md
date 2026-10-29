@@ -40,7 +40,7 @@ $$
 \nabla_{\partial_i}s=\sum_b\Bigl(\partial_i s^b+\sum_a \Gamma^b\_{ia}\thinspace s^a\Bigr)e_b
 $$
 
-접속계수를 행렬값 1형식 $A=(A^b\_a)$, $A^b\_a=\sum_i \Gamma^b\_{ia}\thinspace dx^i$ 로 묶으면 접속은 $\nabla=d+A$ 꼴이고, 이 $A$ 를 **접속형식**이라 한다.
+접속계수를 [행렬](matrices.md)값 1형식 $A=(A^b\_a)$, $A^b\_a=\sum_i \Gamma^b\_{ia}\thinspace dx^i$ 로 묶으면 접속은 $\nabla=d+A$ 꼴이고, 이 $A$ 를 **접속형식**이라 한다.
 
 ## 접속형식의 변환
 

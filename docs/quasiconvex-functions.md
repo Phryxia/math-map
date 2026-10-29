@@ -76,7 +76,7 @@ function quasiconvexMinimize(isFeasible, l, u, eps) {
 # 활용
 
 - **선형 분수 계획법.** $e^{T}x+g\gt 0$ 인 영역에서 $f(x)=(c^{T}x+d)/(e^{T}x+g)$ 는 준볼록이고, 수준집합 $S_t$ 가 부등식 $c^{T}x+d\le t(e^{T}x+g)$ 로 쓰이므로 각 판정이 [선형계획법](linear-programming.md)의 실행가능성 문제다.
-- **조건수 최소화.** 행렬의 최대 고윳값과 최소 고윳값의 비를 설계 변수로 줄이는 문제가 준볼록이고, 수준집합이 반정부호 조건으로 쓰인다.
+- **조건수 최소화.** [행렬](matrices.md)의 최대 고윳값과 최소 고윳값의 비를 설계 변수로 줄이는 문제가 준볼록이고, 수준집합이 반정부호 조건으로 쓰인다.
 - **효용 이론.** 경제학의 선호 관계가 볼록일 때 그것을 나타내는 효용함수는 준오목이고, 준오목성이 무차별 곡선 위쪽 집합의 볼록성과 같은 조건이다.
 
 [^1]: S. Boyd, L. Vandenberghe, *Convex Optimization*, Cambridge University Press, 2004, 3.4 절과 4.2.5 절.

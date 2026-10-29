@@ -56,7 +56,7 @@ $$
 B(u_h,v)=f(v)
 $$
 
-인 $u_h\in V_h$ 를 찾는 문제를 **Galerkin 문제**라 한다. $V_h$ 의 기저 $\phi_1,\dots,\phi_n$ 을 잡고 $u_h=\sum\_j c_j\phi_j$ 로 쓰면 이 조건은 행렬 방정식
+인 $u_h\in V_h$ 를 찾는 문제를 **Galerkin 문제**라 한다. $V_h$ 의 기저 $\phi_1,\dots,\phi_n$ 을 잡고 $u_h=\sum\_j c_j\phi_j$ 로 쓰면 이 조건은 [행렬](matrices.md) 방정식
 
 $$
 Sc=F,\qquad S\_{ij}=B(\phi_j,\phi_i),\qquad F_i=f(\phi_i)

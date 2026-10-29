@@ -65,7 +65,7 @@ $x\gt 0$ 에서 급수의 항이 모두 양수이므로 $e^x\gt x^{k+1}/(k+1)!$ 
 - [복소수](complex-numbers.md)에서 같은 급수로 $e^z$ 를 정하면 $e^{i\theta}=\cos\theta+i\sin\theta$ 이고, 극형식과 [Fourier 급수](fourier-series.md)가 이 식을 쓴다.
 - [정규분포](normal-distribution.md)의 밀도는 $e^{-x^2/2}/\sqrt{2\pi}$ 이고, 다항식보다 빠른 감소 때문에 모든 적률이 유한하다.
 - [감마 함수](gamma-function.md)는 $\int_0^{\infty}t^{s-1}e^{-t}\thinspace dt$ 로 정의되고, $e^{-t}$ 의 빠른 감소가 적분의 수렴을 준다.
-- [Lie 군](lie-groups.md)의 지수사상은 같은 급수를 행렬에 넣은 $e^{A}=\sum A^n/n!$ 이고, 덧셈 법칙은 $AB=BA$ 인 행렬에서는 성립하고 일반적으로는 성립하지 않는다.
+- [Lie 군](lie-groups.md)의 지수사상은 같은 급수를 [행렬](matrices.md)에 넣은 $e^{A}=\sum A^n/n!$ 이고, 덧셈 법칙은 $AB=BA$ 인 행렬에서는 성립하고 일반적으로는 성립하지 않는다.
 
 # 연관 문서
 

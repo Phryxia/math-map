@@ -42,7 +42,7 @@ $\underline EG$ 위의 동변 K 호몰로지 원소, 예를 들어 고유 $G$ �
 
 ## 유한군
 
-$G$ 가 유한이면 $\underline EG$ 는 한 점이고 $K^G_0(\mathrm{pt})$ 는 $G$ 의 표현환 $R(G)$, 곧 유한차원 표현의 동형류로 만든 Grothendieck 군이다. 한편 $C^\ast_r(G)$ 는 기약 표현마다 행렬 대수 하나를 둔 직합 $\bigoplus_\pi M_{\dim\pi}(\mathbb C)$ 이므로 $K_0$ 이 기약 표현의 개수만큼의 $\mathbb Z$ 이고 $R(G)$ 와 같다. $\mu$ 가 동형이다. $BG$ 의 K 호몰로지는 이 값과 다르므로, 꼬임원이 있는 군에서는 $EG$ 대신 $\underline EG$ 를 써야 한다.
+$G$ 가 유한이면 $\underline EG$ 는 한 점이고 $K^G_0(\mathrm{pt})$ 는 $G$ 의 표현환 $R(G)$, 곧 유한차원 표현의 동형류로 만든 Grothendieck 군이다. 한편 $C^\ast_r(G)$ 는 기약 표현마다 [행렬](matrices.md) 대수 하나를 둔 직합 $\bigoplus_\pi M_{\dim\pi}(\mathbb C)$ 이므로 $K_0$ 이 기약 표현의 개수만큼의 $\mathbb Z$ 이고 $R(G)$ 와 같다. $\mu$ 가 동형이다. $BG$ 의 K 호몰로지는 이 값과 다르므로, 꼬임원이 있는 군에서는 $EG$ 대신 $\underline EG$ 를 써야 한다.
 
 ## 증명된 경우
 

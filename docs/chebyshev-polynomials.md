@@ -99,7 +99,7 @@ $n+1$ 개의 극값점에서 연속함수를 [다항식 보간](polynomial-inter
 # 활용
 
 - **공액기울기법의 수렴률.** [Krylov 부분공간 방법](krylov-subspace-methods.md)의 수렴 정리는 $p(0)=1$ 인 차수 $k$ 다항식 가운데 스펙트럼이 든 구간 $\lbrack\lambda\_{\min},\lambda\_{\max}\rbrack$ 에서 균등노름이 가장 작은 것을 찾는 문제로 환원된다. 그 구간으로 옮긴 $T_k$ 가 답을 주고, 구간 밖의 성장 공식이 조건수 $\kappa$ 에 대한 비 $(\sqrt\kappa-1)/(\sqrt\kappa+1)$ 를 준다.
-- **다항식 전처리.** [전처리](preconditioning.md)에서 행렬의 다항식을 전처리 행렬로 쓸 때, 스펙트럼 구간에서 $1-\lambda p(\lambda)$ 를 작게 만드는 $p$ 를 Chebyshev 다항식으로 고른다.
+- **다항식 전처리.** [전처리](preconditioning.md)에서 [행렬](matrices.md)의 다항식을 전처리 행렬로 쓸 때, 스펙트럼 구간에서 $1-\lambda p(\lambda)$ 를 작게 만드는 $p$ 를 Chebyshev 다항식으로 고른다.
 - **수치적분과 보간.** 절점 보간의 Lebesgue 상수 추정이 Chebyshev 절점을 쓰는 적분 공식의 안정성 근거다.
 - **최적 근사의 판정.** 등진동 성질은 차수를 고정한 균등근사에서 최적해의 특징이고, 최적 근사 다항식을 찾는 반복법이 이 특징을 종료 조건으로 쓴다.
 

@@ -2,7 +2,7 @@
 
 # 개요
 
-**Sinkhorn 알고리즘(Sinkhorn algorithm)** 은 엔트로피 항을 더한 [최적 수송](optimal-transport.md) 문제의 해를, 행렬의 행과 열의 척도를 번갈아 맞추는 반복으로 구하는 알고리즘이다. 창고 $n$ 곳의 물건을 상점 $n$ 곳으로 옮기는 가장 싼 계획은 선형계획으로 구할 수 있지만, 계산에 $\tilde O(n^3)$ 이 들고 비용을 조금 바꾸면 해가 다른 꼭짓점으로 건너뛴다. Sinkhorn 알고리즘은 엔트로피 항으로 해를 $\mathrm{diag}(u)\thinspace K\thinspace\mathrm{diag}(v)$ 꼴로 고정하고, 행의 합과 열의 합을 번갈아 맞추는 행렬-벡터 곱만으로 $u,v$ 를 찾는다.
+**Sinkhorn 알고리즘(Sinkhorn algorithm)** 은 엔트로피 항을 더한 [최적 수송](optimal-transport.md) 문제의 해를, [행렬](matrices.md)의 행과 열의 척도를 번갈아 맞추는 반복으로 구하는 알고리즘이다. 창고 $n$ 곳의 물건을 상점 $n$ 곳으로 옮기는 가장 싼 계획은 선형계획으로 구할 수 있지만, 계산에 $\tilde O(n^3)$ 이 들고 비용을 조금 바꾸면 해가 다른 꼭짓점으로 건너뛴다. Sinkhorn 알고리즘은 엔트로피 항으로 해를 $\mathrm{diag}(u)\thinspace K\thinspace\mathrm{diag}(v)$ 꼴로 고정하고, 행의 합과 열의 합을 번갈아 맞추는 행렬-벡터 곱만으로 $u,v$ 를 찾는다.
 
 # 직관
 

@@ -33,7 +33,7 @@ $x_5$ 는 $x_5=(x_4+1)/x_3$ 에서 분자가 $(a+1)(b+1)/(ab)$ 로 인수분해�
 $\mathcal F=\mathbb Q(u_1,\dots,u_n)$ 을 유리함수체라 한다. **시드(seed)** 는 쌍 $(\mathbf x,B)$ 다.
 
 - $\mathbf x=(x_1,\dots,x_n)$ 은 $\mathcal F$ 를 $\mathbb Q$ 위에서 생성하는 대수적으로 독립인 원소들이고, 이것을 **클러스터(cluster)** 라 한다.
-- $B=(b_{ij})$ 는 정수 $n\times n$ 행렬이고, 양의 대각행렬 $D$ 가 있어 $DB$ 가 교대행렬이다. 이것을 **교환 행렬(exchange matrix)** 이라 한다.
+- $B=(b_{ij})$ 는 정수 $n\times n$ [행렬](matrices.md)이고, 양의 대각행렬 $D$ 가 있어 $DB$ 가 교대행렬이다. 이것을 **교환 행렬(exchange matrix)** 이라 한다.
 
 $k\in\lbrace 1,\dots,n\rbrace$ 방향의 **변이** $\mu_k$ 는 시드 $(\mathbf x,B)$ 를 $(\mathbf x^\prime,B^\prime)$ 으로 보낸다. $x_k$ 만 바뀌고 다른 $x_i$ 는 그대로다.
 

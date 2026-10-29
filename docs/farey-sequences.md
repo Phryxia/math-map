@@ -90,7 +90,7 @@ $$
 - [Diophantine 근사](diophantine-approximation.md)의 Dirichlet 근사 정리를 위 유리수 근사의 성질로 증명한다.
 - [원법](circle-method.md)은 적분 구간 $\lbrack 0,1\rbrack$ 을 분모가 작은 유리수 근방으로 나눌 때 Farey 수열의 중간수를 경계로 쓴다. Hardy 와 Littlewood 의 원래 분할이 이 꼴이다.
 - Franel–Landau 정리(Franel–Landau theorem)는 [Riemann 가설](riemann-hypothesis.md)이 Farey 수열의 항 $f_j$ 와 등간격 점 $j/\vert F_n\vert$ 의 차이의 합이 $O(n^{1/2+\varepsilon})$ 인 것과 동치라는 정리다.[^1]
-- 모듈러 군 $\mathrm{SL}\_2(\mathbb Z)$ 의 원소는 이웃 조건 $bc-ad=1$ 을 만족하는 두 분수의 분자와 분모를 늘어놓은 행렬로 나타난다. Farey 테셀레이션(Farey tessellation)은 이 대응으로 상반평면을 삼각형으로 나눈다.
+- 모듈러 군 $\mathrm{SL}\_2(\mathbb Z)$ 의 원소는 이웃 조건 $bc-ad=1$ 을 만족하는 두 분수의 분자와 분모를 늘어놓은 [행렬](matrices.md)로 나타난다. Farey 테셀레이션(Farey tessellation)은 이 대응으로 상반평면을 삼각형으로 나눈다.
 
 [^1]: G. H. Hardy, E. M. Wright, *An Introduction to the Theory of Numbers*, 6th ed., Oxford University Press (2008), Ch. III. Farey 수열의 정의, 이웃 정리, 중간수, Ford 원. Franel–Landau 정리는 J. Franel, "Les suites de Farey et le problème des nombres premiers", *Göttinger Nachrichten* (1924), 198–201 과 E. Landau 의 같은 호 논문.
 

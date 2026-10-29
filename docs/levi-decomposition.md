@@ -44,7 +44,7 @@ $\mathfrak g$ 의 부분대수 $\mathfrak s$ 가 벡터공간 직합 $\mathfrak 
 
 ## 예
 
-- $\mathfrak{gl}\_n$ 의 근기는 스칼라 행렬들이고 $\mathfrak{sl}\_n$ 이 Levi 부분대수다. 둘이 서로 교환하므로 $\mathfrak{gl}\_n=\mathfrak{sl}\_n\oplus\mathbb C$ 는 Lie 대수의 직합이다.
+- $\mathfrak{gl}\_n$ 의 근기는 스칼라 [행렬](matrices.md)들이고 $\mathfrak{sl}\_n$ 이 Levi 부분대수다. 둘이 서로 교환하므로 $\mathfrak{gl}\_n=\mathfrak{sl}\_n\oplus\mathbb C$ 는 Lie 대수의 직합이다.
 - 상삼각 행렬들의 Lie 대수는 가해이므로 근기가 전체이고 Levi 부분대수는 $0$ 이다.
 - 반단순 Lie 대수는 근기가 $0$ 이고 자기 자신이 Levi 부분대수다.
 

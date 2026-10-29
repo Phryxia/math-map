@@ -2,7 +2,7 @@
 
 # 개요
 
-**Siegel 모듈라이 다양체(Siegel modular variety)** 는 $g$ 차원 주편극 [아벨 다양체](abelian-varieties.md)의 동형류를 점으로 갖는 공간이다. 차원 $1$ 의 복소 토러스는 격자 $\mathbb Z+\mathbb Z\tau$ 의 [복소수](complex-numbers.md) $\tau$ 하나로 정해지는데, 차원이 $g$ 이면 수 하나 대신 $g\times g$ 행렬 하나가 남는다. 사영공간에 들어가는 토러스만 남기면 그 행렬이 대칭이고 허수부가 양정부호여야 하므로, 이런 행렬의 공간을 격자 기저를 바꾸는 정수 심플렉틱 군으로 나눈 것이 목록이다.
+**Siegel 모듈라이 다양체(Siegel modular variety)** 는 $g$ 차원 주편극 [아벨 다양체](abelian-varieties.md)의 동형류를 점으로 갖는 공간이다. 차원 $1$ 의 복소 토러스는 격자 $\mathbb Z+\mathbb Z\tau$ 의 [복소수](complex-numbers.md) $\tau$ 하나로 정해지는데, 차원이 $g$ 이면 수 하나 대신 $g\times g$ [행렬](matrices.md) 하나가 남는다. 사영공간에 들어가는 토러스만 남기면 그 행렬이 대칭이고 허수부가 양정부호여야 하므로, 이런 행렬의 공간을 격자 기저를 바꾸는 정수 심플렉틱 군으로 나눈 것이 목록이다.
 
 # 직관
 

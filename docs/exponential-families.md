@@ -104,7 +104,7 @@ $$
 
 ## 볼록성
 
-$\nabla^2 A = \mathrm{Cov}(T)$ 는 [공분산](covariance.md)행렬이므로 양반정부호다. 따라서 $A$ 는 $\mathcal N$ 위에서 볼록하고([볼록성](convexity.md)), 최소 표현이면 $\mathrm{Cov}(T)$ 가 양정부호라 엄격볼록이다. $\mathcal N$ 자체도 [Hölder 부등식](holder-inequality.md)으로 볼록집합임을 보인다.
+$\nabla^2 A = \mathrm{Cov}(T)$ 는 [공분산](covariance.md)[행렬](matrices.md)이므로 양반정부호다. 따라서 $A$ 는 $\mathcal N$ 위에서 볼록하고([볼록성](convexity.md)), 최소 표현이면 $\mathrm{Cov}(T)$ 가 양정부호라 엄격볼록이다. $\mathcal N$ 자체도 [Hölder 부등식](holder-inequality.md)으로 볼록집합임을 보인다.
 
 ## 최대가능도 추정과 모멘트 매칭
 
