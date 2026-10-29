@@ -22,7 +22,7 @@
 
 ## 수렴
 
-실수 수열은 자연수를 정의역으로 하는 [함수](functions.md)이고 $n$ 번째 값을 $a_n$ 으로 쓴다. 실수 $L$ 에 대해 다음이 성립하면 수열이 $L$ 로 수렴한다.
+[실수](real-numbers.md) 수열은 자연수를 정의역으로 하는 [함수](functions.md)이고 $n$ 번째 값을 $a_n$ 으로 쓴다. 실수 $L$ 에 대해 다음이 성립하면 수열이 $L$ 로 수렴한다.
 
 $$
 \forall\varepsilon\gt 0\thickspace\exists N\in\mathbb N\thickspace\forall n\ge N:\ \lvert a_n-L\rvert\lt\varepsilon
@@ -83,6 +83,7 @@ $$
 ## 선수지식
 
 - [함수](functions.md)
+- [실수](real-numbers.md)
 - [해석학 개관](analysis-overview.md)
 
 ## 더 알아보기

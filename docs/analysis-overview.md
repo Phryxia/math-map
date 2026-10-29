@@ -4,13 +4,14 @@
 
 해석학(analysis)은 극한으로 정의되는 대상을 다루는 분야다. 원의 넓이는 원 안에 정다각형을 그리고 변의 수를 늘려 가며 구한 넓이가 다가가는 수로 정하는데, 그런 수가 언제 있는지, 있다면 다각형들의 성질을 물려받는지는 따로 따져야 한다. 수열이 한 수에 다가간다는 것을 오차의 크기로 정의하고, 그 정의로 극한의 존재와 성질의 보존을 증명한다.
 
-처음 읽는 사람은 [수열의 극한](limits.md)에서 시작한다.
+처음 읽는 사람은 [실수](real-numbers.md)에서 시작한다.
 
 # 지도
 
 ```mermaid
 graph TD
   FN["함수"] --> LM["수열의 극한"]
+  RN["실수"] --> LM
   MS["거리 공간"] --> CT["연속함수"]
   MS --> CM["완비성"]
   LM --> UC["균등수렴"]
@@ -54,8 +55,9 @@ graph TD
 
 ## 극한과 연속
 
-먼저 읽을 것: [함수](functions.md)(기초 개관). 시작 문서: [수열의 극한](limits.md).
+먼저 읽을 것: [함수](functions.md)(기초 개관). 시작 문서: [실수](real-numbers.md).
 
+- [실수](real-numbers.md): 상한 공리를 만족하는 순서체, Dedekind 절단 구성과 Archimedes 성질
 - [수열의 극한](limits.md): 수렴의 정의와 극한의 사칙연산
   - [Fekete 보조정리](fekete-lemma.md): 부분가법 수열을 n 으로 나눈 극한의 존재와 그 값이 하한이라는 것, 엔트로피와 증가율
 - [연속함수](continuity.md): $\varepsilon\text{-}\delta$ 정의와 열린집합 정의의 동치
@@ -236,6 +238,7 @@ graph TD
 
 ## 더 알아보기
 
+- [실수](real-numbers.md)
 - [수열의 극한](limits.md)
 - [완비성](completeness.md)
 - [연속함수](continuity.md)

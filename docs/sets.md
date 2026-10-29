@@ -110,6 +110,7 @@ $R=\lbrace x:x\notin x\rbrace$ 를 집합으로 인정하면 $R\in R\iff R\notin
 - [함수](functions.md)
 - [동치관계](equivalence-relations.md)
 - [그래프](graphs.md)
+- [실수](real-numbers.md)
 
 ### 세기와 논리
 
