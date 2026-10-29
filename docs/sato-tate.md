@@ -32,7 +32,7 @@ $$
 
 를 따른다. $\cos\theta$ 로 옮기면 반원 분포 $\frac2\pi\sqrt{1-x^2}\thinspace dx$ 다. 이 측도는 콤팩트군 $\mathrm{SU}(2)$ 의 켤레류 위 [Haar 측도](haar-measure.md)이고, Frobenius 가 $\mathrm{SU}(2)$ 안에 균등하게 흩어진다는 뜻이다.
 
-복소곱셈이 있으면 대칭군이 $\mathrm{SU}(2)$ 안의 정규화 토러스로 줄어든다. 절반의 소수에서 $a_p=0$ 이고 그 소수에서 곡선이 초특이하며, 나머지 각은 균등분포를 따른다.
+복소곱셈이 있으면 대칭군이 $\mathrm{SU}(2)$ 안의 정규화 토러스로 줄어든다. 절반의 소수에서 $a_p=0$ 이고 그 소수에서 곡선이 초특이하며, 나머지 각은 균등 측도에 대해 [등분포](equidistribution.md)한다.
 
 대칭곱 $L$ 함수 $L(\mathrm{Sym}^n E,s)$ 가 전부 해석적으로 접속되고 $\mathrm{Re}(s)=1$ 위에서 영점이 없으면 Wiener–Ikehara 형 [Tauber 정리](tauberian-theorems.md)가 분포를 준다. 이 조건은 2006–2011 년에 Taylor 와 공저자들이 잠재적 모듈러성으로 확립했다.
 

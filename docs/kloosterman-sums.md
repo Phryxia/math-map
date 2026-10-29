@@ -88,7 +88,7 @@ $$
 
 ## Kloosterman 각의 분포
 
-$p$ 를 고정하고 $a$ 를 $1$ 부터 $p-1$ 까지 움직여 얻은 각 $\theta_a$ 들을 본다. Katz 는 $p\to\infty$ 에서 이 각들이 측도 $\frac{2}{\pi}\sin^2\theta\thinspace d\theta$ 로 균등분포함을 증명했다[^4]. 증명은 Artin–Schreier 덮개가 만드는 층의 모노드로미군이 $\mathrm{SL}\_2$ 전체임을 보이고 Deligne 의 [Weil 추측 증명](deligne-weil-conjectures.md)을 적용하는 것이다. 한 소수에서 $a$ 를 움직인다는 점이 한 곡선에서 소수를 움직이는 [Sato–Tate 분포](sato-tate.md)와 다르다.
+$p$ 를 고정하고 $a$ 를 $1$ 부터 $p-1$ 까지 움직여 얻은 각 $\theta_a$ 들을 본다. Katz 는 $p\to\infty$ 에서 이 각들이 측도 $\frac{2}{\pi}\sin^2\theta\thinspace d\theta$ 로 [등분포](equidistribution.md)함을 증명했다[^4]. 증명은 Artin–Schreier 덮개가 만드는 층의 모노드로미군이 $\mathrm{SL}\_2$ 전체임을 보이고 Deligne 의 [Weil 추측 증명](deligne-weil-conjectures.md)을 적용하는 것이다. 한 소수에서 $a$ 를 움직인다는 점이 한 곡선에서 소수를 움직이는 [Sato–Tate 분포](sato-tate.md)와 다르다.
 
 ## Kloosterman 합의 합
 
