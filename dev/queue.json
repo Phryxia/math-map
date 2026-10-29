@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-29T09:05:46.869Z",
-  "nextSeq": 2565,
+  "savedAt": "2026-10-29T13:16:02.619Z",
+  "nextSeq": 2569,
   "items": [
     {
       "id": "9bab7237",
@@ -500,30 +500,6 @@
       "seq": 2553
     },
     {
-      "id": "1d1995a1",
-      "title": "복소수 문서로 가는 역방향 본문 링크",
-      "priority": 50,
-      "note": "complex-numbers 를 2026-10-29 회차에 만들고 holomorphic-functions, fields, complex-analysis-overview 와 conformal-mapping, division-algebras, eigenvalues, elliptic-functions, fourier, gamma-function, gaussian-integers, group-representations, hilbert-spaces, inner-product-spaces, laplace-transform, residue-theorem, characteristic-functions, clifford-algebras, conjugacy-classes, dirichlet-series, euclidean-domains, hyperbolic-functions, ideals-quotient-rings, lie-algebras, mandelbrot-set, modules 의 첫 등장을 링크했다. 남은 문서는 grep -l '복소수' docs/*.md | xargs grep -L '(complex-numbers.md)' 로 찾는다(60 개 남짓). 제목이 한국어뿐이라 9절 미링크 검사가 잡지 못한다. 첫 등장이 수식, 헤딩, 표, 굵게 안이면 그 다음 본문 자리를 링크한다. 회차마다 10 개 안팎씩 처리한다.",
-      "createdAt": "2026-10-29T08:51:38.890Z",
-      "seq": 2561
-    },
-    {
-      "id": "d93072ea",
-      "title": "지수함수 문서로 가는 역방향 본문 링크",
-      "priority": 50,
-      "note": "exponential-function 을 2026-10-29 회차에 만들고 hyperbolic-functions, gronwall-inequality, transcendental-numbers, eigenvalues, inner-product-spaces, fourier, differential-galois-theory, o-minimality, bessel-functions, equidistribution 의 첫 등장을 링크했다. 남은 것은 grep -l '지수함수' docs/*.md | xargs grep -L '(exponential-function.md)' 로 찾는다(20 개 남짓). lie-groups 처럼 '행렬 지수함수' 만 나오는 문서는 지수사상이라는 다른 대상이라 판단이 필요하다.",
-      "createdAt": "2026-10-29T08:58:08.404Z",
-      "seq": 2563
-    },
-    {
-      "id": "10faad30",
-      "title": "개관 지도 mermaid 의 실제 간선 아닌 화살표 두 개",
-      "priority": 50,
-      "note": "2026-10-29 회차에 개관 지도의 화살표를 라벨->제목->id 로 바꿔 실제 간선과 대조했다. combinatorics-overview 의 root-systems -> weyl-character-formula 와 number-theory-overview 의 p-adic-numbers -> local-class-field-theory 가 그래프에 없는 간선이다. 4.5절은 지도가 실제 간선의 부분그래프여야 한다고 정한다. 화살표를 지우거나 실제 경로의 중간 문서를 넣어 고친다. 라벨이 문서 제목과 달라 대조되지 않은 것(Stokes 현상, Resurgence, Fermat–Euler 정리, Riemann zeta, Selmer 군, BSD 추측)은 짧게 줄인 라벨이라 따로 봐야 한다.",
-      "createdAt": "2026-10-29T09:05:09.877Z",
-      "seq": 2564
-    },
-    {
       "id": "08e59419",
       "title": "CLAUDE.md 4절의 '직관 두 문단' 규칙과 모범 예의 어긋남",
       "priority": 40,
@@ -578,6 +554,14 @@
       "note": "이슈 #3(규칙 추가 요청: 용어 정의 시 굵게 처리)의 적용 범위. 규칙은 CLAUDE.md 4절 마크다운 소절에 있다. 55차에 깨지는 꼴 4 곳과 문서 9 개, 56차에 문서 13 개, 57차에 문서 33 개, 58차에 문서 206 개, 59차에 문서 205 개, 60차(2026-10-18)에 문서 118 개를 처리했다.\n\n60차가 한 일. /tmp/nobold.txt 의 알파벳 순서로 spectral-sequences 부터 zilber-indecomposability 까지 훑어 개요 첫 문단이 정의인 문서를 모두 처리하고, 이어서 목록 전체에서 처리 가능한 꼴 둘을 더 찾아 처리했다. (1) 제목이 개요 첫 문단의 머리에 오는 문서(banach-tarski, bayesian-inference, chebotarev 등 24 개). (2) 제목이 첫 문단 중간의 정의 자리에 오는 문서(borel-hierarchy 의 \"매긴 것이 Borel 계층이고\", dual-space 의 \"이 공간이 V 의 쌍대 공간이다\", schur-complement 의 \"그 계의 행렬이 Schur 보수다\" 등 18 개). 이 둘은 다음 두 셸 한 줄로 찾는다.\n  for id in $(cat /tmp/nobold.txt); do t=$(head -1 docs/$id.md | sed \"s/^# //\"); first=$(awk \"/^# 개요/{f=1;next} f&&NF{print;exit}\" docs/$id.md); case \"$first\" in \"$t\"*) echo \"머리 $id\";; *\"$t\"*) echo \"중간 $id\";; esac; done\n\n남은 187 개의 성격. 거의 전부 개요 첫 문단이 정의가 아니라 배경, 동기, 정리 진술로 시작하는 문서다. 굵게만 넣을 자리가 없으므로 개요를 다시 쓰는 별도 보강 작업이고, 이 항목으로 묶어 한 묶음씩 처리할 일이 아니다. 그 밖에 59차가 적은 두 꼴도 그대로 남아 있다. (1) 용어가 수식으로 시작하거나 수식을 품은 문서(lp-spaces, p-adic-l-function, p-adic-multiple-zeta-values, sigma11-boundedness, kubota-leopoldt-zeta, incomplete-lu 의 \"불완전 $LU$ 분해\", k-means 의 \"$k$ 평균 군집화\", algebraic-k-theory 의 \"대수적 $K$ 이론\", bell-numbers 꼴과 달리 수식이 용어 안에 든 경우다). 굵게 안에 수식을 넣지 않는 규칙 때문에 제목을 평문으로 다시 쓰는 작업과 함께 해야 한다. (2) 약어 풀이가 용어 중간에 든 문서는 60차에 처리법을 정했다. vc-dimension 의 \"**VC(Vapnik–Chervonenkis) 차원** 은\", np-completeness 의 \"**NP(nondeterministic polynomial time)-완전성** 은\" 처럼 괄호까지 굵게에 넣고 닫는 ** 뒤에 공백과 조사를 둔다. markdown-it 으로 확인했고 4절 굵게 grep 도 통과한다.\n\n60차가 새로 쓴 처리법. 각주가 용어 뒤에 붙은 문서는 각주를 굵게 밖에 두고 그 뒤에 공백과 조사를 둔다. casselman-shalika 의 \"**Casselman–Shalika 공식(Casselman–Shalika formula)**[^1] 은\", casson-invariant 의 \"**Casson 불변량(Casson invariant)**[^1] $\\lambda(M)$ 은\". 둘 다 markdown-it renderInline 으로 strong 이 나오는 것을 확인했다.\n\n남은 집계: for f in docs/*.md; do case $f in *-overview.md) continue;; esac; awk \"/^# 개요/{f=1;next} f&&NF{print;exit}\" \"$f\" | grep -q \"[*][*]\" || echo $f; done 가 187 개를 내놓는다. 개관은 4.5절의 다른 구조를 따르므로 제외한다. 커밋 메시지에는 이 항목 id 를 달지 않는다(미완 항목이라 다른 세션이 완료로 오해한다).\n\n61차(2026-10-18, 55번째 탐사 회차)에 문서 8 개를 처리해 187 에서 179 로 줄였다. 59차가 \"굵게 안에 수식을 넣지 않는 규칙 때문에 제목을 평문으로 다시 쓰는 작업과 함께 해야 한다\" 며 미뤄 둔 꼴 (1), 곧 용어가 수식으로 시작하거나 수식을 품은 문서다. 그 꼴의 문서는 제목이 이미 4절 제목 규칙대로 평문이므로 제목을 다시 쓸 일이 없었고, 개요 첫 문장의 용어를 제목과 같은 평문으로 바꾸어 굵게에 넣으면 끝이었다.\n\n처리한 여덟과 바꾼 꼴. sigma11-boundedness(\"$\\Sigma^1_1$ 경계 정리(Σ¹₁ bounding theorem)는\" -> \"**Σ¹₁ 경계 정리(Σ¹₁ bounding theorem)** 는\"), lp-spaces(\"$L^p$ 공간\" -> \"Lᵖ 공간\"), p-adic-l-function(\"$p$ 진 $L$ 함수\" -> \"p 진 L 함수\"), incomplete-lu(\"불완전 $LU$ 분해\" -> \"불완전 LU 분해\"), k-means(\"$k$ 평균 군집화\" -> \"k 평균 군집화\"), p-adic-multiple-zeta-values, kubota-leopoldt-zeta, algebraic-k-theory. 커밋 4950e3c 와 c279bf5 다.\n\n뒤의 셋은 개요 첫 문장에 원어가 아예 없어 병기도 함께 했다. \"p 진 다중 zeta 값(p-adic multiple zeta value)\", \"Kubota–Leopoldt p 진 zeta 함수(Kubota–Leopoldt p-adic zeta function)\", \"대수적 K 이론(algebraic K-theory)\" 이다.\n\n정한 처리법. 용어가 수식을 품으면 굵게 안에 수식을 넣지 말고 제목의 평문 표기를 그대로 쓴다. 기호는 로마자와 그리스 문자 그대로, 첨자는 유니코드 첨자 글자로 쓰는 4절 제목 규칙의 표기가 그대로 쓸 거리다. 같은 문장 뒷부분이나 정의 절에 그 기호가 수식으로 다시 나오므로 제목 규칙의 \"본문 첫 등장은 수식으로 다시 쓴다\" 도 지켜진다. markdown-it 으로 \"**$\\Sigma^1_1$ 경계 정리(...)** 는\" 이 strong 을 제대로 닫는 것은 확인했지만, GitHub 의 MathJax 가 strong 안의 수식을 어떻게 넘기는지는 이 세션이 확인할 수 없어 평문 쪽을 골랐다. 굵게 안 수식을 쓸 수 있는지는 독자가 판단할 자리다.\n\n남은 179 개는 59차와 60차가 적은 대로 개요 첫 문단이 정의가 아니라 배경, 동기, 정리 진술로 시작하는 문서다. 굵게만 넣을 자리가 없으므로 개요를 다시 쓰는 별도 보강 작업이고, 이 항목으로 묶어 한 묶음씩 처리할 일이 아니다. 집계는 for f in docs/*.md 로 개관을 뺀 뒤 개요 첫 문단에 ** 가 있는지 보는 한 줄로 낸다.\n66차(2026-10-19)에 이 항목은 완료로 판정되었다. 제목의 '179 곳' 은 5a5743af 가 적은 대로 기준이 다른 수이고, 규칙 #3 의 실제 기준('개요나 정의 절에서 제목 용어를 굵게')으로 센 잔량은 0 이다. 근거와 상시 검사 한 줄은 p40 항목 '규칙 #3 상시 검사: 집계 37 이 기준선, 실제 잔량 0' 의 note 에 있다. 이 항목은 55~61차의 처리 기록으로만 남긴다. pop 으로 꺼내지 말고 priority 를 올리지 말라.\n",
       "createdAt": "2026-10-19T04:56:38.460Z",
       "seq": 2230
+    },
+    {
+      "id": "97ae9a83",
+      "title": "무리수와 지수함수의 e 무리성 증명 중복",
+      "priority": 30,
+      "note": "2026-10-29 회차에 irrational-numbers 를 쓰며 e 의 무리성 증명(Fourier 의 q! 곱 논법)을 성질 절에 넣었는데 exponential-function 의 성질 절에도 '정리. e 는 무리수다' 가 있다. 한쪽을 본문 링크로 바꿀지 판단한다. 무리수 쪽은 sqrt 2, e, pi 를 한 절씩 두는 구성이라 남기는 쪽이 자연스럽다.",
+      "createdAt": "2026-10-29T13:14:31.197Z",
+      "seq": 2568
     },
     {
       "id": "8df79c51",
@@ -1306,6 +1290,14 @@
       "note": "옛 큐 ebb32287 의 판정. geometric-satake 의 정의 절 '## 아핀 Grassmann 다양체'(함자 정의, ind-사영 ind-스킴, GL_n 격자 묘사)와 '## 궤도와 IC 층'(Cartan 분해, 궤도 차원, 폐포 순서), mv-cycles 의 정의 절과 '## 아핀 Grassmann 다양체의 특이점' 이 이 대상을 이미 다룬다. 별도 문서를 만들면 geometric-satake 의 두 절과 통째로 겹친다. 다룰 내용이 늘어 geometric-satake 가 커지면 그때 8절 분할로 뗀다.",
       "createdAt": "2026-10-22T04:58:57.776Z",
       "seq": 2354
+    },
+    {
+      "id": "b6c278f3",
+      "title": "행렬 문서로 가는 남은 역방향 본문 링크",
+      "priority": 20,
+      "note": "matrices 를 2026-10-29 회차에 만들고 행렬을 언급하는 문서 310 개의 첫 등장을 스크립트로 링크했다. 남은 100 개 남짓은 본문의 모든 등장이 행렬식, 정사각행렬 같은 합성어이거나 행렬-트리 정리 같은 이름, 굵게나 헤딩이나 표 안이어서 건너뛴 것이고, 개관 21 개는 갈래 순서 검사와 함께 보아야 해서 건너뛰었다. 남은 것은 grep -l '행렬' docs/*.md | xargs grep -L '(matrices.md)' 로 찾고 손으로 판단한다.",
+      "createdAt": "2026-10-29T13:02:14.362Z",
+      "seq": 2567
     },
     {
       "id": "410fd79d",
