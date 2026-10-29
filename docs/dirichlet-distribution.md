@@ -52,7 +52,7 @@ $$
 \frac{n_j+\alpha_j}{n+\alpha_0}
 $$
 
-이다. 모든 $\alpha_j=1$ 이면 [Laplace 계승 규칙](rule-of-succession.md)이다. 처음에 색 $j$ 의 공을 $\alpha_j$ 개 넣고, 공을 하나 뽑을 때마다 같은 색 공을 하나 더 넣는 Pólya 항아리(Pólya urn)에서 다음 공의 색의 확률이 이것과 같다.
+이다. 모든 $\alpha_j=1$ 이면 [Laplace 계승 규칙](rule-of-succession.md)이다. 처음에 색 $j$ 의 공을 $\alpha_j$ 개 넣고, 공을 하나 뽑을 때마다 같은 색 공을 하나 더 넣는 [Pólya 항아리](polya-urn.md)에서 다음 공의 색의 확률이 이것과 같다.
 
 # 활용
 

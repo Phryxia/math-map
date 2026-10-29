@@ -116,6 +116,7 @@ graph TD
 - [Martingale](martingales.md): 공정한 도박의 형식화, 선택적 정지와 수렴정리
   - [Doob 분해](doob-decomposition.md): martingale 과 예측 가능 과정의 합으로의 유일한 분해, 예측 가능 2차 변동
   - [확률근사](stochastic-approximation.md): 잡음 섞인 관측으로 $f(\theta)=0$ 을 푸는 반복법, Robbins–Monro 보폭 조건
+  - [Pólya 항아리](polya-urn.md): 꺼낸 색의 공을 더해 넣는 추출, 교환가능성과 베타 혼합 표현, 비율 martingale 의 베타 극한
 - [Markov 연쇄](markov-chains.md): 전이행렬, 정상분포, 수렴정리
   - [무작위 걷기](random-walks.md): 재귀성을 유효저항으로 읽는 대응
   - [Poisson 과정](poisson-process.md): 독립·정상 증분을 가진 계수과정, 지수 대기시간
