@@ -24,7 +24,7 @@ $$
 T_n=\min\lbrace t : \lbrace X_1,\dots,X_t\rbrace=\lbrace 1,\dots,n\rbrace\rbrace
 $$
 
-$i-1$ 종류를 모은 뒤 $i$ 번째 새 종류가 나오기까지의 횟수를 $G_i$ 라 하면 $T_n=G_1+\cdots+G_n$ 이다. $G_i$ 는 성공 확률이 $p_i=(n-i+1)/n$ 인 기하분포(geometric distribution)를 따르고, $G_1,\dots,G_n$ 은 서로 독립이다.
+$i-1$ 종류를 모은 뒤 $i$ 번째 새 종류가 나오기까지의 횟수를 $G_i$ 라 하면 $T_n=G_1+\cdots+G_n$ 이다. $G_i$ 는 성공 확률이 $p_i=(n-i+1)/n$ 인 [기하분포](geometric-distribution.md)를 따르고, $G_1,\dots,G_n$ 은 서로 독립이다.
 
 # 성질
 
@@ -80,7 +80,7 @@ $$
 
 ## 선수지식
 
-- [유한 확률 공간](probability.md)
+- [기하분포](geometric-distribution.md)
 
 ## 더 알아보기
 

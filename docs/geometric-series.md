@@ -62,5 +62,6 @@ $r$ 자리에 [유계 작용소](bounded-operators.md) $T$ 를 놓아도 같은 
 ## 더 알아보기
 
 - [급수의 수렴판정](series-convergence.md)
+- [기하분포](geometric-distribution.md)
 
 #analysis #combinatorics

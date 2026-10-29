@@ -115,7 +115,6 @@ $$
 
 - [Bayes 정리](bayes.md)
 - [생일 문제](birthday-problem.md)
-- [쿠폰 수집가 문제](coupon-collector.md)
 - [투표 정리](ballot-theorem.md)
 - [측도](measure.md)
 - [확률변수](random-variables.md)

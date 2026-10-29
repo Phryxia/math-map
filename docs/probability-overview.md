@@ -55,12 +55,13 @@ graph TD
 - [유한 확률 공간](probability.md): 표본공간, 사건, 확률측도
   - [Bayes 정리](bayes.md): 조건부확률의 역전
   - [생일 문제](birthday-problem.md): 무작위로 뽑은 값이 처음 겹치는 시점, 약 √N 번에서 충돌 확률이 절반을 넘는 계산과 해시 충돌
-  - [쿠폰 수집가 문제](coupon-collector.md): n 종류를 모두 모으는 데 걸리는 평균 n Hₙ 번의 뽑기, 꼬리 확률과 Gumbel 극한
   - [투표 정리](ballot-theorem.md): 개표 내내 앞설 확률 (a − b)/(a + b), 반사 원리와 무작위 걷기의 도달 시간 정리
   - [Radically elementary 확률론](radically-elementary-probability.md): 초유한 크기의 유한 확률공간 위에서 측도 없이 세운 Brown 운동과 확률적분
 - [확률변수](random-variables.md): 가측함수로서의 확률변수와 적분으로서의 기댓값
   - [Jensen 부등식](jensen-inequality.md): 평균을 먼저 낼 때와 나중에 낼 때의 대소, 지지선 증명과 등호 조건
 - [이항분포](binomial-distribution.md): 독립 시행의 성공 횟수, 최빈값과 Chernoff 꼬리, Poisson 과 정규분포로의 두 극한
+  - [기하분포](geometric-distribution.md): 첫 성공까지의 시행 횟수, 무기억성과 지수분포로의 극한, 음이항분포
+    - [쿠폰 수집가 문제](coupon-collector.md): n 종류를 모두 모으는 데 걸리는 평균 n Hₙ 번의 뽑기, 꼬리 확률과 Gumbel 극한
 - [Poisson 분포](poisson-distribution.md): 희귀 사건의 개수 분포, 이항분포의 극한과 Le Cam 오차 한계
 - [확률밀도](probability-density.md): 분포를 기준측도로 적분해 쓴 함수와 밀도가 없는 분포
   - [균등분포](uniform-distribution.md): 범위 안의 값이 똑같이 나오기 쉬운 분포, 역변환 표본추출과 확률 적분 변환, 순서통계량

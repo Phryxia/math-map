@@ -82,6 +82,7 @@ $n$ 이 커질 때 이항분포는 $p$ 를 어떻게 두느냐에 따라 두 분
 
 ## 더 알아보기
 
+- [기하분포](geometric-distribution.md)
 - [Poisson 분포](poisson-distribution.md)
 
 #probability #statistics #combinatorics

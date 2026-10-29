@@ -43,7 +43,7 @@ $$
 G(0,0) \thickspace=\thickspace \sum_{n=0}^{\infty} P(S_n = 0 \mid S_0 = 0) \thickspace=\thickspace \frac{1}{1 - P(T \lt\infty)} .
 $$
 
-좌변이 발산하면 재귀적, 수렴하면 일시적이다. 재귀 사건의 횟수가 기하분포를 따른다는 사실에서 나온다.
+좌변이 발산하면 재귀적, 수렴하면 일시적이다. 재귀 사건의 횟수가 [기하분포](geometric-distribution.md)를 따른다는 사실에서 나온다.
 
 ## 조화함수와 경계값 문제
 

@@ -42,7 +42,7 @@ $$
 
 증명의 요지. 앞 방향은 $e^{-\lambda(s+t)}/e^{-\lambda s}=e^{-\lambda t}$ 다. 뒤 방향은 $G(t)=P(T\gt t)$ 가 $G(s+t)=G(s)G(t)$ 를 만족하고 감소하므로, 직관 절의 계산대로 유리수에서 값을 정한 뒤 단조성으로 넓혀 $G(t)=G(1)^t$ 를 얻는다. $\lambda=-\log G(1)$ 로 두면 된다.
 
-이 성질을 **무기억성(memoryless property)** 이라 한다. 정수값 확률변수 가운데서는 기하분포(geometric distribution)가 같은 성질을 만족한다.
+이 성질을 **무기억성(memoryless property)** 이라 한다. 정수값 확률변수 가운데서는 [기하분포](geometric-distribution.md)가 같은 성질을 만족한다.
 
 ## 최솟값
 
