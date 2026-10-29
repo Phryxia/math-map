@@ -35,7 +35,7 @@ $k$ 는 대칭이다. 임의의 유한 시점과 계수에 대해 $\sum_{i,j}c_i
 | Brown 운동 | $k(s,t)=\min(s,t)$ | 연속, 미분 불가능 |
 | RBF(radial basis function, 제곱지수) | $k(s,t)=\exp\bigl({-}\Vert s-t\Vert^2/2\ell^2\bigr)$ | 무한히 미분 가능 |
 | Matérn $\nu$ | [Bessel 함수](bessel-functions.md)로 주어지는 족 | $\lceil\nu\rceil-1$ 번 미분 가능 |
-| Ornstein–Uhlenbeck | $k(s,t)=e^{-\vert s-t\vert/\ell}$ | 연속, 미분 불가능 |
+| [Ornstein–Uhlenbeck](ornstein-uhlenbeck-process.md) | $k(s,t)=e^{-\vert s-t\vert/\ell}$ | 연속, 미분 불가능 |
 
 # 성질
 
@@ -82,5 +82,6 @@ Brown 운동은 $m=0,\ k(s,t)=\min(s,t)$ 인 Gauss 과정이다. [Brown 다리](
 ## 더 알아보기
 
 - [Brown 운동](brownian-motion.md)
+- [Ornstein–Uhlenbeck 과정](ornstein-uhlenbeck-process.md)
 
 #probability #statistics #machine_learning

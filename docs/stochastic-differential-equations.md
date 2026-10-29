@@ -96,7 +96,7 @@ $$
 |---|---|
 | $dX=\mu\thinspace dt+\sigma\thinspace dB$ | $X_0+\mu t+\sigma B_t$ |
 | $dS=\mu S\thinspace dt+\sigma S\thinspace dB$ | $S_0\exp((\mu-\sigma^2/2)t+\sigma B_t)$ |
-| $dX=-\theta X\thinspace dt+\sigma\thinspace dB$ | Ornstein–Uhlenbeck 과정, 정상분포 $N(0,\sigma^2/2\theta)$ |
+| $dX=-\theta X\thinspace dt+\sigma\thinspace dB$ | [Ornstein–Uhlenbeck 과정](ornstein-uhlenbeck-process.md), 정상분포 $N(0,\sigma^2/2\theta)$ |
 | $dX=-V'(X)\thinspace dt+\sqrt{2\varepsilon}\thinspace dB$ | 정상분포 $\propto e^{-V/\varepsilon}$ |
 
 넷째 줄이 Langevin 방정식이다. $\varepsilon\to 0$ 에서 정상분포가 $V$ 의 최솟값에 집중한다.
@@ -160,5 +160,6 @@ $$
 - [Fokker–Planck 방정식](fokker-planck.md)
 - [확산모형](diffusion-models.md)
 - [Freidlin–Wentzell 이론](freidlin-wentzell.md)
+- [Ornstein–Uhlenbeck 과정](ornstein-uhlenbeck-process.md)
 
 #probability #analysis #machine_learning
