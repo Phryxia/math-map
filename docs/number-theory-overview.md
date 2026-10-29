@@ -39,6 +39,7 @@ graph TD
 
 - [정수의 합동](modular-arithmetic.md): 정수를 나머지로 분류하는 첫 도구
 - [유클리드 알고리즘](euclidean-algorithm.md): 최대공약수와 Bézout 항등식
+  - [Frobenius 동전 문제](frobenius-coin-problem.md): 두 액면으로 낼 수 없는 가장 큰 금액 ab − a − b, 틈의 대칭성과 수치 반군
 - [소수](primes.md): 산술의 기본 정리
   - [Möbius 반전 공식](mobius-inversion.md): 약수 합성곱이 주는 산술함수의 환과 그 환에서의 역원
   - [abc 추측](abc-conjecture.md): 서로소 $a+b=c$ 에서 $c$ 가 $\mathrm{rad}(abc)^{1+\varepsilon}$ 을 넘는 경우가 유한개라는 추측, 다항식의 Mason–Stothers 정리
