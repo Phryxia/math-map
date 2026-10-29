@@ -52,7 +52,7 @@ $$
 \delta=(-1)^{n(k+1)+1}\star d\thinspace\star
 $$
 
-이고, 콤팩트이고 경계가 없으면 Stokes 정리에서 $\langle\negthinspace\langle d\alpha,\beta\rangle\negthinspace\rangle=\langle\negthinspace\langle\alpha,\delta\beta\rangle\negthinspace\rangle$ 가 나온다. $d\circ d=0$ 의 딸림이 $\delta\circ\delta=0$ 이다.
+이고, 콤팩트이고 경계가 없으면 [Stokes 정리](differential-forms.md)에서 $\langle\negthinspace\langle d\alpha,\beta\rangle\negthinspace\rangle=\langle\negthinspace\langle\alpha,\delta\beta\rangle\negthinspace\rangle$ 가 나온다. $d\circ d=0$ 의 딸림이 $\delta\circ\delta=0$ 이다.
 
 ## Laplace–de Rham 작용소와 조화형식
 

@@ -87,7 +87,7 @@ $d\omega=0$ 이면 $\lbrace f,\lbrace g,h\rbrace\rbrace+\lbrace g,\lbrace h,f\rb
 
 ## 코호몰로지 장애
 
-콤팩트 심플렉틱 다양체 $M^{2n}$ 에서 $\lbrack\omega\rbrack^n\ne 0$ 이다. $\omega^n$ 이 부피형식이므로 $\int_M\omega^n\ne 0$ 이고, Stokes 정리가 완전형식의 적분을 $0$ 으로 만들기 때문이다. 따라서 $n\ge 1$ 이면 [de Rham 코호몰로지](de-rham-cohomology.md) $H^2(M;\mathbb R)$ 가 $0$ 이 아니다.
+콤팩트 심플렉틱 다양체 $M^{2n}$ 에서 $\lbrack\omega\rbrack^n\ne 0$ 이다. $\omega^n$ 이 부피형식이므로 $\int_M\omega^n\ne 0$ 이고, [Stokes 정리](differential-forms.md)가 완전형식의 적분을 $0$ 으로 만들기 때문이다. 따라서 $n\ge 1$ 이면 [de Rham 코호몰로지](de-rham-cohomology.md) $H^2(M;\mathbb R)$ 가 $0$ 이 아니다.
 
 $S^4$ 는 $H^2(S^4;\mathbb R)=0$ 이므로 심플렉틱 형식을 갖지 않는다. 짝수 차원이고 방향을 갖는 콤팩트 다양체라도 심플렉틱 구조를 갖지 못한다.
 

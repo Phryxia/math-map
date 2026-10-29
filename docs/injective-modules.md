@@ -44,7 +44,7 @@ $$
 
 *정리.* $Q$ 가 단사인 것과, 모든 좌 아이디얼 $I\subseteq R$ 과 모든 $R$ 준동형 $f\colon I\to Q$ 가 $R$ 전체로 확장되는 것이 동치다[^1].
 
-*증명의 요지.* 필요조건은 $I\subseteq R$ 에 정의를 적용한 것이다. 충분조건은 Zorn 보조정리를 쓴다. $A\subseteq B$ 와 $f\colon A\to Q$ 가 주어졌을 때 $A$ 를 포함하고 $B$ 에 담긴 부분가군 가운데 $f$ 의 확장을 갖는 것들을 모으면 포함관계로 사슬마다 상계가 있으므로 극대원 $A'$ 과 확장 $f'$ 이 있다. $A'\neq B$ 라 하고 $b\in B\setminus A'$ 를 잡으면 다음이 좌 아이디얼이다.
+*증명의 요지.* 필요조건은 $I\subseteq R$ 에 정의를 적용한 것이다. 충분조건은 [Zorn 보조정리](axiom-of-choice.md)를 쓴다. $A\subseteq B$ 와 $f\colon A\to Q$ 가 주어졌을 때 $A$ 를 포함하고 $B$ 에 담긴 부분가군 가운데 $f$ 의 확장을 갖는 것들을 모으면 포함관계로 사슬마다 상계가 있으므로 극대원 $A'$ 과 확장 $f'$ 이 있다. $A'\neq B$ 라 하고 $b\in B\setminus A'$ 를 잡으면 다음이 좌 아이디얼이다.
 
 $$
 I=\lbrace r\in R:rb\in A'\rbrace
