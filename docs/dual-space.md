@@ -6,55 +6,59 @@
 
 # 직관
 
-쌍대 공간은 체 $F$ 위의 벡터 공간 $V$ 에서 $F$ 로 가는 선형사상 전체가 이루는 $F$ 위의 벡터 공간이다.
+개요의 가격표 $\varphi(a,b)=3a+5b$ 는 두 바구니를 합친 값이 각 값의 합이고, 바구니를 두 배로 하면 값도 두 배다. 사과값을 $4$ 로 올린 가격표 $\psi(a,b)=4a+5b$ 와 더한 $(\varphi+\psi)(a,b)=7a+10b$ 도 같은 성질을 갖는 가격표다.
 
-유한차원에서 쌍대 공간의 차원은 $V$ 의 차원과 같다. 그러나 두 공간 사이의 동형은 기저를 하나 고른 뒤에 정해지고, 기저를 바꾸면 달라진다. 기저와 무관하게 정해지는 동형은 $V$ 와 쌍대의 쌍대 사이에 있다.
+사과 개수만 읽는 가격표 $(a,b)\mapsto a$ 와 배 개수만 읽는 가격표 $(a,b)\mapsto b$ 를 두면, 모든 가격표는 이 둘의 결합이다. $\varphi$ 는 첫째의 $3$ 배와 둘째의 $5$ 배를 더한 것이다. 그래서 가격표도 수 두 개로 적힌다.
 
-쌍대 공간의 원소는 벡터에 수를 대응시키는 선형함수다. 기저 $e_1,\dots,e_n$ 을 고정하면 벡터의 $i$ 번째 좌표를 읽는 함수가 쌍대 공간의 기저를 이룬다.
-
-$f\colon V\to W$ 가 있을 때 $W$ 의 선형함수에 $f$ 를 앞에 붙이면 $V$ 의 선형함수가 된다. 그래서 선형사상을 쌍대로 옮기면 화살표의 방향이 뒤집힌다.
+사과 $2$ 개와 배 $1$ 개를 묶은 선물 세트를 $x$ 개 사면 바구니는 $f(x)=(2x,x)$ 다. 바구니 가격표 $\varphi$ 로 세트 $x$ 개의 값을 매기면 $\varphi(f(x))=6x+5x=11x$ 이므로, 바구니의 가격표가 세트의 가격표가 된다. $f$ 는 세트에서 바구니로 가는데, 가격표는 바구니 쪽에서 세트 쪽으로 옮겨진다.
 
 # 정의
 
 ## 쌍대 공간
 
-$V$ 의 **쌍대 공간** $V^\ast$ 는 $V$ 에서 $F$ 로 가는 [선형사상](linear-maps.md) 전체의 공간이다.
+체 $F$ 위의 벡터 공간 $V$ 의 **쌍대 공간(dual space)** $V^\ast$ 는 $V$ 에서 $F$ 로 가는 [선형사상](linear-maps.md) 전체의 공간이다.
 
 $$V^\ast = \mathrm{Hom}\_F(V, F)$$
 
-덧셈과 스칼라곱은 점별로 정의한다. $(\varphi+\psi)(v)=\varphi(v)+\psi(v)$ , $(c\varphi)(v)=c\thinspace\varphi(v)$ . $V^\ast$ 의 원소를 **선형 범함수**라 한다.
+덧셈과 스칼라곱은 점별로 정의한다. $(\varphi+\psi)(v)=\varphi(v)+\psi(v)$ , $(c\varphi)(v)=c\thinspace\varphi(v)$ . $V^\ast$ 의 원소를 **선형 범함수(linear functional)** 라 한다. 직관 절의 $\varphi$, $\psi$, $\varphi+\psi$ 가 $(\mathbb R^2)^\ast$ 의 원소다. $(a,b)\mapsto ab$ 는 바구니를 두 배로 하면 값이 네 배가 되므로 선형 범함수가 아니다.
 
 ## 쌍대 기저
 
-$V$ 의 기저 $e_1,\dots,e_n$ 에 대해 $e^i\in V^\ast$ 를 다음으로 정한다.
+$V$ 의 기저 $e_1,\dots,e_n$ 의 **쌍대 기저(dual basis)** 는 다음으로 정한 $e^1,\dots,e^n\in V^\ast$ 다.
 
 $$e^i(e_j)=\delta^i_j$$
 
-$\delta^i_j$ 는 $i=j$ 일 때 1, 그 밖에서 0 이다. $e^1,\dots,e^n$ 을 $e_1,\dots,e_n$ 의 **쌍대 기저**라 한다.
+$\delta^i_j$ 는 $i=j$ 일 때 1, 그 밖에서 0 이다. $\mathbb R^2$ 의 표준기저 $(1,0)$, $(0,1)$ 의 쌍대 기저는 직관 절의 $e^1(a,b)=a$, $e^2(a,b)=b$ 이고, $\varphi=3e^1+5e^2$ 다.
 
 ## 전치사상
 
-선형사상 $f\colon V\to W$ 의 **전치사상** $f^\ast\colon W^\ast\to V^\ast$ 는 합성으로 정의한다.
+선형사상 $f\colon V\to W$ 의 **전치사상(transpose)** $f^\ast\colon W^\ast\to V^\ast$ 는 합성으로 정의한다.
 
 $$f^\ast(\varphi)=\varphi\circ f$$
 
+직관 절의 $f(x)=(2x,x)$ 에서 $f^\ast(\varphi)$ 는 $x\mapsto 11x$ 다.
+
 ## 이중쌍대와 표준 사상
 
-$V^{\ast\ast}=(V^\ast)^\ast$ 를 **이중쌍대**라 한다. 표준 사상 $\mathrm{ev}\colon V\to V^{\ast\ast}$ 는 벡터를 그 벡터에서의 값매김으로 보낸다.
+$V^{\ast\ast}=(V^\ast)^\ast$ 를 **이중쌍대(double dual)** 라 한다. 표준 사상 $\mathrm{ev}\colon V\to V^{\ast\ast}$ 는 벡터를 그 벡터에서의 값매김으로 보낸다.
 
 $$\mathrm{ev}(v)(\varphi)=\varphi(v)$$
 
-이 정의에는 기저가 들어가지 않는다.
+이 정의에는 기저가 들어가지 않는다. 바구니 $v=(1,2)$ 에 대해 $\mathrm{ev}(v)$ 는 가격표를 받아 그 바구니의 값을 내는 함수이고, $\mathrm{ev}(v)(\varphi)=3+10=13$ 이다.
 
 ## 소멸자
 
-부분집합 $S\subseteq V$ 의 **소멸자** $S^\circ$ 는 $S$ 의 모든 원소를 0 으로 보내는 범함수의 집합이다.
+부분집합 $S\subseteq V$ 의 **소멸자(annihilator)** $S^\circ$ 는 $S$ 의 모든 원소를 0 으로 보내는 범함수의 집합이다.
 
 $$S^\circ=\lbrace \varphi\in V^\ast : \varphi(s)=0 \thinspace (\forall s\in S)\rbrace$$
 
-$S^\circ$ 는 $V^\ast$ 의 부분공간이고, $S$ 가 생성하는 부분공간의 소멸자와 같다.
+$\mathbb R^2$ 에서 $S=\lbrace(1,0)\rbrace$ 이면 $S^\circ$ 는 사과값이 $0$ 인 가격표 $(a,b)\mapsto cb$ 전체다.
 
 # 성질
+
+## 소멸자의 구조
+
+$S^\circ$ 는 $V^\ast$ 의 부분공간이고, $S$ 가 생성하는 부분공간의 소멸자와 같다.
 
 ## 차원 등식
 
