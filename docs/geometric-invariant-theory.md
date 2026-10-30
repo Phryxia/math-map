@@ -12,25 +12,27 @@ $xy$ 의 값으로 궤도를 가른다. 값이 $c\neq 0$ 이면 쌍곡선 $xy=c$
 
 불변 다항식으로 가를 수 없는 궤도를 한 점으로 붙이면 몫이 직선 하나가 된다. 궤도와 점을 일대일로 만들려면 붙여진 궤도 가운데 하나만 남겨야 하고, 남기는 것은 닫힌 궤도인 원점이다. 궤도가 닫히지 않은 점을 미리 빼는 조건이 안정성이다.
 
-기하 불변량 이론은 불변 다항식환의 스펙트럼을 몫으로 정의하고, 궤도가 점과 일대일로 대응하지 않는 자리를 안정성 조건으로 걸러 낸다. 모듈라이 공간을 만드는 데 쓰는 주된 방법이다.
-
 # 정의
 
-군 $G$ 가 **환원적**이라는 것은 유니포텐트 근기가 자명하다는 것이다. $\mathrm{GL}\_n$, $\mathrm{SL}\_n$, 토러스, 유한군이 환원적이고, 상삼각행렬의 군은 아니다.
+군 $G$ 가 **환원적(reductive)** 이라는 것은 유니포텐트 근기(unipotent radical)가 자명하다는 것이다. $\mathrm{GL}\_n$, $\mathrm{SL}\_n$, 토러스, 유한군이 환원적이고, 상삼각행렬의 군은 아니다.
 
-환원적 $G$ 가 아핀 다양체 $X$ 에 작용할 때 **아핀 몫**은
+환원적 $G$ 가 아핀 다양체 $X$ 에 작용할 때 **아핀 몫(affine quotient)** 은
 
 $$X/\negthinspace\negthinspace/G=\mathrm{Spec}\thinspace \mathbb C\lbrack X\rbrack^G$$
 
 이다. $\mathbb C\lbrack X\rbrack^G$ 는 작용에 변하지 않는 다항식의 환이다. 포함 $\mathbb C\lbrack X\rbrack^G\subset\mathbb C\lbrack X\rbrack$ 가 사상 $\pi\colon X\to X/\negthinspace\negthinspace/G$ 를 준다.
 
-사영 다양체에서는 작용을 직선다발까지 올려야 몫이 정해진다. $X\subset\mathbb P^n$ 에 $G$ 가 작용하고 그 작용이 $\mathcal O(1)$ 의 당김으로 올라가 있다고 한다. 이 올림을 **선형화**라 하고, 올림이 정해지면 $X$ 의 좌표환에 $G$ 작용이 생긴다.
+직관 절의 작용에서 $\mathbb C\lbrack x,y\rbrack^{\mathbb C^\ast}=\mathbb C\lbrack xy\rbrack$ 이므로 $X/\negthinspace\negthinspace/G$ 는 직선 $\mathrm{Spec}\thinspace\mathbb C\lbrack u\rbrack$ 이고 $\pi(x,y)=xy$ 다. 두 좌표축과 원점은 모두 $\pi$ 로 $0$ 에 간다.
 
-점 $x\in X$ 가 **반안정**이라는 것은 $x$ 를 대표하는 아핀 원뿔의 점에서 $0$ 이 아닌 값을 갖는 불변 동차다항식이 있다는 것이다. 반안정점 가운데 궤도가 닫히고 안정화군이 유한한 것을 **안정**이라 한다. 반안정점의 집합을 $X^{ss}$, 안정점의 집합을 $X^{s}$ 로 적는다.
+사영 다양체에서는 작용을 직선다발까지 올려야 몫이 정해진다. $X\subset\mathbb P^n$ 에 $G$ 가 작용하고 그 작용이 $\mathcal O(1)$ 의 당김으로 올라가 있다고 한다. 이 올림을 **선형화(linearization)** 라 하고, 올림이 정해지면 $X$ 의 좌표환에 $G$ 작용이 생긴다.
 
-**사영 몫**은 불변 동차다항식이 만드는 분지환의 사영 스펙트럼이고, 집합으로는 $X^{ss}$ 를 궤도의 닫힘이 만나는 관계로 나눈 몫이다.
+점 $x\in X$ 가 **반안정(semistable)** 이라는 것은 $x$ 를 대표하는 아핀 원뿔의 점에서 $0$ 이 아닌 값을 갖는 불변 동차다항식이 있다는 것이다. 반안정점 가운데 궤도가 닫히고 안정화군이 유한한 것을 **안정(stable)** 이라 한다. 반안정점의 집합을 $X^{ss}$, 안정점의 집합을 $X^{s}$ 로 적는다.
+
+**사영 몫(projective quotient)** 은 불변 동차다항식이 만드는 분지환의 사영 스펙트럼이다.
 
 $$X/\negthinspace\negthinspace/G=\mathrm{Proj}\thinspace \bigoplus\_{m\ge 0} H^0(X,\mathcal O(m))^G$$
+
+$\mathbb C^\ast$ 가 $\mathbb P^1$ 에 $t\cdot\lbrack x:y\rbrack=\lbrack tx:t^{-1}y\rbrack$ 로 작용하고 이 식을 $\mathcal O(1)$ 의 선형화로 잡는다. 불변 동차다항식은 $(xy)^k$ 뿐이므로 반안정점은 $xy\ne 0$ 인 점이다. 이 점들은 한 궤도를 이루고 그 궤도는 반안정점 안에서 닫혀 있으며 안정화군이 $\lbrace\pm1\rbrace$ 이므로 모두 안정이다. 두 점 $\lbrack 1:0\rbrack$, $\lbrack 0:1\rbrack$ 은 불안정이고, 사영 몫은 $\mathrm{Proj}\thinspace\mathbb C\lbrack xy\rbrack$, 곧 한 점이다.
 
 # 성질
 
@@ -46,7 +48,7 @@ $\pi\colon X\to X/\negthinspace\negthinspace/G$ 의 섬유마다 닫힌 궤도�
 
 증명의 요지. 궤도의 닫힘은 $G$ 불변 닫힌 집합이고 그 안의 극소 궤도가 닫혀 있다. 불변 다항식은 닫힘에서 같은 값을 가지므로 같은 섬유의 두 닫힌 궤도는 서로의 닫힘에 들어가지 않고, 환원적 군에 대해 불변 다항식이 서로소인 두 불변 닫힌 집합을 가르므로 두 닫힌 궤도가 같은 섬유에 있을 수 없다.
 
-$X^s$ 위에서는 모든 궤도가 닫혀 있고 안정화군이 유한하다. 그러므로 $X^s/G$ 는 궤도의 집합 그대로이고 $X/\negthinspace\negthinspace/G$ 의 열린 부분이다.
+$X^s$ 위에서는 모든 궤도가 닫혀 있고 안정화군이 유한하다. 그러므로 $X^s/G$ 는 궤도의 집합 그대로이고 $X/\negthinspace\negthinspace/G$ 의 열린 부분이다. 사영 몫의 점은 $X^{ss}$ 를 궤도의 닫힘이 만나는 관계로 나눈 몫과 일대일로 대응한다.
 
 ## Hilbert–Mumford 판정
 
