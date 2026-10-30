@@ -6,10 +6,6 @@
 
 # 직관
 
-텐서곱은 두 가군 $M$ 과 $N$ 에서 새 가군 $M \otimes_R N$ 을 만드는 구성이며, 쌍선형 사상을 선형 사상으로 바꾸는 가장 경제적인 장치로 정의된다. 두 변수에 각각 선형인 사상이 텐서곱을 거치면 한 변수 선형사상이 되어 선형대수의 도구가 그대로 적용된다.
-
-정의는 보편성질로 하고 존재는 자유가군을 관계로 나누어 얻는다. 유한차원 벡터 공간에서는 [기저](vector-spaces.md)의 곱으로 계산되어 차원이 곱해지고, [행렬](matrices.md) 수준에서는 Kronecker product 가 된다. 일반 환 위에서 텐서곱은 우완전이지만 좌완전은 아니며, 이 실패가 torsion 을 감지하고 Tor 함자를 낳는다.
-
 행렬식, 내적, 다항식의 곱은 모두 두 변수에 각각 선형인 사상이다. 이런 사상 $\beta:M\times N\to P$ 는 곱집합 $M\times N$ 위에서 정의되지만, $M\times N$ 은 가군으로서 직합 $M\oplus N$ 이고 $\beta$ 는 그 위의 선형사상이 아니다. $\beta(2m,2n)=4\beta(m,n)$ 이므로 스칼라가 두 번 곱해진다. 모든 쌍선형 사상이 한 번 거쳐 가는 가군을 새로 만들어 쌍선형성을 선형성으로 바꾸는 것이 텐서곱이다.
 
 $M\otimes_R N$ 의 원소는 단순텐서 $m\otimes n$ 들의 유한 합이고 계산 규칙은 쌍선형성이 강제하는 것뿐이다. 표현이 유일하지 않아 $\mathbb Z\otimes_{\mathbb Z}\mathbb Z$ 에서 $2\otimes3$ 과 $6\otimes1$ 이 같은 원소다. $\mathbb Z/2\mathbb Z\otimes_{\mathbb Z}\mathbb Z/3\mathbb Z$ 을 계산하면, $\mathbb Z/2\mathbb Z$ 에서 $3x=x$ 이므로 $x\otimes y=3x\otimes y=x\otimes 3y$ 이고 $\mathbb Z/3\mathbb Z$ 에서 $3y=0$ 이라 값이 $0$ 이다. 두 가군이 모두 $0$ 이 아닌데 텐서곱이 $0$ 이며, 벡터 공간에서는 일어나지 않는다.
@@ -18,9 +14,9 @@ $M\otimes_R N$ 의 원소는 단순텐서 $m\otimes n$ 들의 유한 합이고 �
 
 ## 보편성질
 
-$R$ 을 가환환이라 하고 $M$ 과 $N$ 과 $P$ 를 $R$ 가군이라 하자. 사상 $\beta : M \times N \to P$ 가 각 변수에서 선형이면 쌍선형이라 한다.
+$R$ 을 가환환이라 하고 $M$ 과 $N$ 과 $P$ 를 $R$ 가군이라 하자. 사상 $\beta : M \times N \to P$ 가 각 변수에서 선형이면 **쌍선형(bilinear)** 이라 한다. 정수의 곱 $(m,n)\mapsto mn$ 은 쌍선형 사상 $\mathbb Z\times\mathbb Z\to\mathbb Z$ 다.
 
-**정의.** $R$ 가군 $M \otimes_R N$ 과 쌍선형 사상 $\otimes : M \times N \to M \otimes_R N$ 의 쌍이 텐서곱이라는 것은, 임의의 쌍선형 $\beta : M \times N \to P$ 에 대해
+**정의.** $R$ 가군 $M \otimes_R N$ 과 쌍선형 사상 $\otimes : M \times N \to M \otimes_R N$ 의 쌍이 **텐서곱(tensor product)** 이라는 것은, 임의의 쌍선형 $\beta : M \times N \to P$ 에 대해
 
 $$
 \beta = \tilde{\beta} \circ \otimes
@@ -35,7 +31,7 @@ graph LR
   T -. "유일한 선형사상 beta~" .-> P
 ```
 
-보편성질로 정의된 대상이 늘 그렇듯 텐서곱은 유일하다. 두 텐서곱이 있으면 서로를 통해 유일한 사상이 오가고 그 합성이 항등사상이 되므로 표준 동형이 하나 정해진다. 이 논법은 [수반](adjunctions.md)의 unit 이 갖는 보편성질과 같은 형태다.
+직관 절의 $\mathbb Z/2\mathbb Z\otimes\_{\mathbb Z}\mathbb Z/3\mathbb Z$ 에서는 모든 쌍선형 사상 $\beta$ 가 $\beta(x,y)=\beta(3x,y)=\beta(x,3y)=0$ 이므로, 영가군과 영사상의 쌍이 보편성질을 만족해 텐서곱이 $0$ 이다.
 
 ## 존재 구성
 
@@ -55,11 +51,21 @@ $$
 M \otimes_R N := F / K, \qquad m \otimes n := e_{(m,n)} + K
 $$
 
-로 정의한다. 구성상 $\otimes$ 는 쌍선형이고, $F$ 의 보편성질(기저 위의 값이 사상을 결정한다)에 $K$ 가 핵에 들어간다는 조건을 더하면 보편성질이 그대로 나온다.
+로 정의한다. $m\otimes n$ 꼴의 원소를 **단순텐서(simple tensor)** 라 한다. 구성상 $\otimes$ 는 쌍선형이고, $F$ 의 보편성질(기저 위의 값이 사상을 결정한다)에 $K$ 가 핵에 들어간다는 조건을 더하면 보편성질이 그대로 나온다.
+
+## 사상의 텐서곱
+
+$f : M \to M'$ 과 $g : N \to N'$ 이 선형이면 $f \otimes g : M \otimes N \to M' \otimes N'$ 이 $(f \otimes g)(m \otimes n) = f(m) \otimes g(n)$ 으로 정의된다. $f=g$ 가 $\mathbb Z$ 위의 $2$ 배 사상이면 $(f\otimes g)(1\otimes1)=2\otimes2=4(1\otimes1)$ 이다. 이로써 $- \otimes N$ 은 가군 [범주](category.md) 위의 함자가 된다.
+
+# 성질
+
+## 유일성
+
+보편성질로 정의된 대상이 늘 그렇듯 텐서곱은 유일하다. 두 텐서곱이 있으면 서로를 통해 유일한 사상이 오가고 그 합성이 항등사상이 되므로 표준 동형이 하나 정해진다. 이 논법은 [수반](adjunctions.md)의 단위(unit) 이 갖는 보편성질과 같은 형태다.
 
 ## 기저를 쓴 계산
 
-$V$ 와 $W$ 가 체 $k$ 위 벡터 공간이고 기저가 각각 $\lbrace v_1, \dots, v_m\rbrace$ 과 $\lbrace w_1, \dots, w_n\rbrace$ 이면, 원소들
+$V$ 와 $W$ 가 체 $k$ 위 [벡터 공간](vector-spaces.md)이고 기저가 각각 $\lbrace v_1, \dots, v_m\rbrace$ 과 $\lbrace w_1, \dots, w_n\rbrace$ 이면, 원소들
 
 $$
 \lbrace v_i \otimes w_j : 1 \le i \le m,\ 1 \le j \le n \rbrace
@@ -72,10 +78,6 @@ $$
 $$
 
 가 성립한다. 직합의 차원이 더해지는 것과 대비된다. 자유가군에 대해서도 같은 진술이 성립하여 $R^m \otimes_R R^n \cong R^{mn}$ 이다.
-
-## 사상의 텐서곱
-
-$f : M \to M'$ 과 $g : N \to N'$ 이 선형이면 $f \otimes g : M \otimes N \to M' \otimes N'$ 이 $(f \otimes g)(m \otimes n) = f(m) \otimes g(n)$ 으로 잘 정의된다. 이로써 $- \otimes N$ 은 가군 [범주](category.md) 위의 함자가 된다.
 
 ## 기본 동형
 
@@ -90,8 +92,6 @@ R \otimes_R M \cong M, \qquad \Big(\bigoplus_{i} M_i\Big) \otimes_R N \cong \big
 $$
 
 직합과의 교환은 텐서곱이 왼쪽 수반이라는 데서 나온다.
-
-# 성질
 
 ## 텐서–Hom 수반
 
@@ -135,7 +135,7 @@ $$
 \mathbb{Z} \xrightarrow{\ \times 2\ } \mathbb{Z} \quad \Longrightarrow \quad \mathbb{Z}/2\mathbb{Z} \xrightarrow{\ 0\ } \mathbb{Z}/2\mathbb{Z}
 $$
 
-왼쪽은 단사지만 오른쪽은 영사상이다. 이 실패의 정도를 재는 것이 Tor 함자이고, 예컨대 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) = \mathbb Z/2\mathbb Z$ 다. $- \otimes N$ 이 항상 단사성을 보존하는 가군 $N$ 을 평탄(flat) 가군이라 한다. 자유가군은 평탄하고, **PID**(principal ideal domain) 위에서는 torsion-free 와 평탄이 같다.
+왼쪽은 단사지만 오른쪽은 영사상이다. 이 실패의 정도를 재는 것이 Tor 함자이고, 예컨대 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) = \mathbb Z/2\mathbb Z$ 다. $- \otimes N$ 이 항상 단사성을 보존하는 가군 $N$ 을 평탄 가군(flat module)이라 한다. 자유가군은 평탄하고, 주 아이디얼 정역(principal ideal domain, PID) 위에서는 torsion-free 와 평탄이 같다.
 
 ## 스칼라 확장
 
@@ -159,9 +159,9 @@ $$
 
 # 활용
 
-## Kronecker product
+## Kronecker 곱
 
-기저를 고정하면 텐서곱은 행렬 연산이 된다. $A$ 가 $m \times n$ 이고 $B$ 가 $p \times q$ 일 때 $A \otimes B$ 는 $mp \times nq$ 블록 행렬
+기저를 고정하면 텐서곱은 [행렬](matrices.md) 연산이 된다. 이 행렬을 Kronecker 곱(Kronecker product)이라 한다. $A$ 가 $m \times n$ 이고 $B$ 가 $p \times q$ 일 때 $A \otimes B$ 는 $mp \times nq$ 블록 행렬
 
 $$
 A \otimes B = \begin{pmatrix} a_{11}B & \cdots & a_{1n}B \cr \vdots & & \vdots \cr a_{m1}B & \cdots & a_{mn}B \end{pmatrix}
@@ -199,7 +199,7 @@ $$
 
 - 두 $R$ 대수 $A$ 와 $B$ 의 텐서곱 $A \otimes_R B$ 는 다시 대수이고, 기하적으로는 두 스킴의 올곱에 해당한다. [체의 확대](field-extensions.md)에서 $K \otimes_k L$ 을 계산하면 두 확대가 얼마나 독립적인지가 드러난다.
 - 다항식환끼리의 관계 $k[x] \otimes_k k[y] \cong k[x, y]$ 에서 [다항식환](polynomial-rings.md)의 변수 추가는 텐서곱이다.
-- 기계학습과 수치계산에서 고차원 배열의 분해(CP 분해, Tucker 분해)는 텐서곱 공간의 낮은 랭크 근사이며, 행렬에서의 [특이값 분해](singular-value-decomposition.md)를 다중선형으로 밀어 올린 것이다.[^2]
+- 기계학습과 수치계산에서 고차원 배열의 분해(CP 분해(canonical polyadic decomposition), Tucker 분해)는 텐서곱 공간의 낮은 랭크 근사이며, 행렬에서의 [특이값 분해](singular-value-decomposition.md)를 다중선형으로 밀어 올린 것이다.[^2]
 
 [^1]: Wikipedia, Kronecker product, https://en.wikipedia.org/wiki/Kronecker_product
 [^2]: Wikipedia, Tensor rank decomposition, https://en.wikipedia.org/wiki/Tensor_rank_decomposition
