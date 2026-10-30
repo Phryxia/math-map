@@ -8,10 +8,6 @@
 
 [아이디얼로 나눈](ideals-quotient-rings.md) 몫환의 모양은 아이디얼이 결정한다. $\mathbb{Z}/6\mathbb{Z}$ 에는 영인자가 있고 $\mathbb{Z}/7\mathbb{Z}$ 는 체다.
 
-소 아이디얼로 나누면 정역이 나오고 극대 아이디얼로 나누면 체가 나온다. 정수에서는 두 조건이 모두 소수에 해당하지만 일반 환에서는 갈라지고, 그 간극이 환의 기하적 크기를 잰다.
-
-소 아이디얼의 정의는 Euclid 보조정리 $p\mid ab\implies p\mid a\ \text{또는}\ p\mid b$ 를 아이디얼로 옮긴 것이다. 유일분해가 깨지는 환에서도 이 층위에서는 분해가 유일하다.
-
 정수에서 소수는 더 쪼갤 수 없다는 것(기약)과 곱을 나누면 인수를 나눈다는 것(소) 두 가지로 특징지어지고, 소 아이디얼은 후자를 옮긴 것이다. 전자를 옮기면 극대 아이디얼이 되어, 더 큰 진아이디얼이 없다는 조건이 더 쪼갤 수 없다는 조건에 대응한다. 정수에서는 두 조건이 같고 일반적으로는 극대가 소보다 강하다. [다항식환](polynomial-rings.md)에서 아이디얼은 도형에 대응하고, 두 조건이 기하적 의미를 갖는다.
 
 | 아이디얼 | 몫환 | 기하 |
@@ -34,13 +30,19 @@ $$
 
 를 만족하면 **소 아이디얼(prime ideal)** 이다.
 
+$\mathbb Z$ 에서 $(7)$ 은 소 아이디얼이다. $7\mid ab$ 이면 Euclid 보조정리(Euclid's lemma)로 $7\mid a$ 또는 $7\mid b$ 다. $(6)$ 은 $2\cdot3\in(6)$ 이지만 $2,3\notin(6)$ 이라 소 아이디얼이 아니다. $\mathbb Z$ 가 정역이므로 $(0)$ 도 소 아이디얼이다.
+
 진아이디얼 $M$ 을 진부분집합으로 포함하는 진아이디얼이 없으면, 곧 $M \subseteq J \subseteq R$ 인 아이디얼 $J$ 가 $M$ 또는 $R$ 뿐이면 $M$ 을 **극대 아이디얼(maximal ideal)** 이라 한다.
+
+$\mathbb Z$ 에서 $(7)\subseteq(m)$ 이면 $m\mid7$ 이라 $(m)$ 은 $(7)$ 또는 $\mathbb Z$ 이므로 $(7)$ 은 극대 아이디얼이다. $(0)\subsetneq(7)$ 이므로 $(0)$ 은 극대가 아니다. 직관 절의 $k[x,y]$ 에서는 $(x)\subsetneq(x,y)$ 이므로 $(x)$ 가 극대가 아니다.
 
 두 정의 모두 $R$ 자신이 아닐 것을 요구한다. $R$ 을 허용하면 영환이 정역이나 체가 된다.
 
 ## 스펙트럼
 
-$R$ 의 소 아이디얼 전체가 $\mathrm{Spec}R$ 이고 극대 아이디얼 전체가 $\mathrm{mSpec}\thinspace R$ 이다. $\mathrm{Spec}R$ 에 Zariski 위상을 주면 위상공간이 되고, 대수기하는 환을 이 공간으로 본다.
+$R$ 의 소 아이디얼 전체 $\mathrm{Spec}R$ 을 $R$ 의 **스펙트럼(spectrum)** 이라 하고, 극대 아이디얼 전체를 $\mathrm{mSpec}\thinspace R$ 로 쓴다. $\mathrm{Spec}R$ 에 Zariski 위상(Zariski topology)을 주면 위상공간이 되고, 대수기하는 환을 이 공간으로 본다.
+
+$\mathrm{Spec}\thinspace\mathbb Z$ 는 $(0)$ 과 소수 $p$ 마다의 $(p)$ 로 이루어지고, $\mathrm{mSpec}\thinspace\mathbb Z$ 는 $(0)$ 을 뺀 $(p)$ 들이다.
 
 # 성질
 
