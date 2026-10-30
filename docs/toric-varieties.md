@@ -6,10 +6,6 @@
 
 # 직관
 
-토릭 다양체는 대수적 토러스 $(k^\times)^n$ 을 조밀한 열린 부분집합으로 포함하고, 토러스의 곱셈 작용이 전체로 연장되는 대수다양체다. 좌표환이 단항식만으로 생성되고, 쓰이는 단항식의 지수가 격자 안의 볼록 뿔을 이룬다.
-
-그래서 토릭 다양체는 뿔과 그 뿔을 모은 부채라는 볼록 기하의 자료로 정해진다. 매끄러운지, 콤팩트인지, Euler 지표가 얼마인지 같은 다양체의 질문이 뿔과 다면체에 대한 셈으로 바뀐다.
-
 $k^3$ 안의 원뿔 $xy=z^2$ 을 본다. $x=s^2$, $y=t^2$, $z=st$ 로 놓으면 방정식이 성립하고, 좌표환 $k\lbrack x,y,z\rbrack/(xy-z^2)$ 은 $k\lbrack s^2,st,t^2\rbrack$ 과 같다. 이 환의 원소는 $s,t$ 의 다항식 가운데 모든 항 $s^at^b$ 에서 $a+b$ 가 짝수인 것이다.
 
 그러면 환은 지수의 집합 $S=\lbrace(a,b):a,b\ge 0,\thinspace a+b\text{ 는 짝수}\rbrace$ 하나로 정해진다. $S$ 는 $(2,0)$, $(1,1)$, $(0,2)$ 를 더해서 전부 만들어지고, 세 생성원 사이의 관계 $(2,0)+(0,2)=(1,1)+(1,1)$ 이 곧 방정식 $xy=z^2$ 이다. 다양체의 방정식이 지수 사이의 덧셈 관계로 나온다.
@@ -32,7 +28,7 @@ $$
 
 이고, $S\_\sigma=\sigma^\vee\cap M$ 은 덧셈에 닫힌 집합이다. [Gordan 보조정리](gordan-lemma.md)로 $S\_\sigma$ 는 유한 개의 원소로 생성된다[^1].
 
-$k\lbrack S\_\sigma\rbrack$ 를 $u\in S\_\sigma$ 마다 기저 원소 $\chi^u$ 를 두고 곱을 $\chi^u\chi^{u'}=\chi^{u+u'}$ 로 정한 환이라 한다. 좌표환이 $k\lbrack S\_\sigma\rbrack$ 인 아핀 대수다양체 $U\_\sigma$ 를 **아핀 토릭 다양체** 라 한다. 생성원 $\chi^{u_1},\dots,\chi^{u_m}$ 이 $U\_\sigma$ 를 $k^m$ 안에 넣고, $u_i$ 사이의 덧셈 관계가 방정식이 된다.
+$k\lbrack S\_\sigma\rbrack$ 를 $u\in S\_\sigma$ 마다 기저 원소 $\chi^u$ 를 두고 곱을 $\chi^u\chi^{u'}=\chi^{u+u'}$ 로 정한 환이라 한다. 좌표환이 $k\lbrack S\_\sigma\rbrack$ 인 아핀 대수다양체 $U\_\sigma$ 를 **아핀 토릭 다양체(affine toric variety)** 라 한다. 생성원 $\chi^{u_1},\dots,\chi^{u_m}$ 이 $U\_\sigma$ 를 $k^m$ 안에 넣고, $u_i$ 사이의 덧셈 관계가 방정식이 된다.
 
 직관 절의 원뿔은 $N=\mathbb Z^2$ 에서 $\sigma=\mathrm{cone}((0,1),(2,-1))$ 로 얻는다. $\sigma^\vee=\lbrace(a,b):0\le b\le 2a\rbrace$ 이고 $S\_\sigma$ 의 생성원은 $(1,0)$, $(1,1)$, $(1,2)$ 이며, 관계 $(1,0)+(1,2)=2(1,1)$ 이 $xy=z^2$ 이다.
 
