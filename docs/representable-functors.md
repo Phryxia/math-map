@@ -20,13 +20,15 @@ $$
 
 ## 표현 가능 함자
 
-$\mathcal C$ 를 locally small [범주](category.md)라 하자. 반변 함자 $F:\mathcal C^{\mathrm{op}}\to\mathbf{Set}$ 가 **표현 가능**하다는 것은 대상 $A$ 와 자연동형
+$\mathcal C$ 를 국소적으로 작은(locally small) [범주](category.md)라 하자. 반변 함자 $F:\mathcal C^{\mathrm{op}}\to\mathbf{Set}$ 가 **표현 가능(representable)** 하다는 것은 대상 $A$ 와 자연동형
 
 $$
-\eta:\mathrm{Hom}\_{\mathcal C}(-,A)\ \xrightarrow{\ \cong\ }\ F
+\eta:\mathrm{Hom}\_{\mathcal C}(-,A)\thinspace\xrightarrow{\cong}\thinspace F
 $$
 
-가 있다는 뜻이다. 쌍 $(A,\eta)$ 를 $F$ 의 **표현**이라 한다. 공변 함자 $\mathcal C\to\mathbf{Set}$ 에 대해서는 $\mathrm{Hom}\_{\mathcal C}(A,-)$ 를 쓴다.
+가 있다는 뜻이다. 쌍 $(A,\eta)$ 를 $F$ 의 **표현(representation)** 이라 한다. 공변 함자 $\mathcal C\to\mathbf{Set}$ 에 대해서는 $\mathrm{Hom}\_{\mathcal C}(A,-)$ 를 쓴다.
+
+직관 절의 $F(X)=\mathrm{Hom}(X,A)\times\mathrm{Hom}(X,B)$ 는 집합의 범주에서 $A\times B$ 가 표현한다. 집합 $X$ 에 부분집합 전체 $\mathcal P(X)$ 를, 함수에 역상을 대응시키는 반변 함자는 $\lbrace 0,1\rbrace$ 이 표현한다. 부분집합 $S\subseteq X$ 는 $S$ 에서 $1$, 밖에서 $0$ 인 함수 $X\to\lbrace 0,1\rbrace$ 와 대응한다.
 
 ## 보편원소
 
@@ -36,27 +38,31 @@ $$
 u=\eta_A(\mathrm{id}\_A)\in F(A)
 $$
 
-를 **보편원소**라 한다. $u$ 가 보편원소인 것은 다음과 같다. 모든 대상 $X$ 와 모든 $x\in F(X)$ 에 대해 $F(f)(u)=x$ 인 사상 $f:X\to A$ 가 유일하게 있다.
+를 **보편원소(universal element)** 라 한다. 직관 절의 곱에서 보편원소는 사영의 쌍 $(p,q)$ 이고, 부분집합 함자에서는 $\lbrace 0,1\rbrace$ 의 부분집합 $\lbrace 1\rbrace$ 이다. $X\to\lbrace 0,1\rbrace$ 의 역상으로 $\lbrace 1\rbrace$ 을 당기면 그 함수가 대응하는 부분집합이 나온다.
 
 # 성질
+
+## 보편원소의 성질
+
+$u$ 가 보편원소인 것은 다음과 같다. 모든 대상 $X$ 와 모든 $x\in F(X)$ 에 대해 $F(f)(u)=x$ 인 사상 $f:X\to A$ 가 유일하게 있다.
 
 ## 보편원소와 표현의 대응
 
 Yoneda lemma 는 자연변환 전체를 원소 하나로 바꾼다.
 
 $$
-\mathrm{Nat}(\mathrm{Hom}\_{\mathcal C}(-,A),F)\ \cong\ F(A),\qquad \eta\mapsto\eta_A(\mathrm{id}\_A)
+\mathrm{Nat}(\mathrm{Hom}\_{\mathcal C}(-,A),F)\thinspace\cong\thinspace F(A),\qquad \eta\mapsto\eta_A(\mathrm{id}\_A)
 $$
 
 이 대응에서 자연동형에 해당하는 쪽이 보편원소다. 표현을 찾는 일과 보편원소를 찾는 일이 같다.
 
 ## 표현의 유일성
 
-$(A,\eta)$ 와 $(B,\theta)$ 가 같은 $F$ 의 표현이면 $\theta^{-1}\circ\eta$ 가 $\mathrm{Hom}\_{\mathcal C}(-,A)$ 와 $\mathrm{Hom}\_{\mathcal C}(-,B)$ 사이의 자연동형이다. Yoneda 매장이 충실충만하므로 이 자연동형은 동형 $A\cong B$ 에서 오고, 그 동형은 보편원소를 보편원소로 보내는 유일한 사상이다.
+$(A,\eta)$ 와 $(B,\theta)$ 가 같은 $F$ 의 표현이면 $\theta^{-1}\circ\eta$ 가 $\mathrm{Hom}\_{\mathcal C}(-,A)$ 와 $\mathrm{Hom}\_{\mathcal C}(-,B)$ 사이의 자연동형이다. Yoneda 매장(Yoneda embedding)이 충실충만(fully faithful)하므로 이 자연동형은 동형 $A\cong B$ 에서 오고, 그 동형은 보편원소를 보편원소로 보내는 유일한 사상이다.
 
 ## 극한 보존과 표현 불가능성
 
-$\mathrm{Hom}\_{\mathcal C}(-,A)$ 는 쌍대제한을 제한으로 바꾸고 $\mathrm{Hom}\_{\mathcal C}(A,-)$ 는 제한을 제한으로 보낸다. 그러므로 이 보존을 어기는 함자는 표현 가능하지 않다.
+$\mathrm{Hom}\_{\mathcal C}(-,A)$ 는 쌍대극한을 극한으로 바꾸고 $\mathrm{Hom}\_{\mathcal C}(A,-)$ 는 극한을 극한으로 보낸다. 그러므로 이 보존을 어기는 함자는 표현 가능하지 않다.
 
 공변 멱집합 함자 $\mathcal P:\mathbf{Set}\to\mathbf{Set}$ 가 그런 예다. $\mathcal P$ 를 $A$ 가 표현한다면 $\mathrm{Hom}(A,\varnothing)\cong\mathcal P(\varnothing)$ 인데 오른쪽은 원소가 하나이므로 $A=\varnothing$ 이다. 그런데 $\mathrm{Hom}(\varnothing,X)$ 는 모든 $X$ 에서 원소가 하나이고 $\mathcal P(X)$ 는 $2^{\lvert X\rvert}$ 개이므로 모순이다.
 
@@ -65,18 +71,18 @@ $\mathrm{Hom}\_{\mathcal C}(-,A)$ 는 쌍대제한을 제한으로 바꾸고 $\m
 함자 $G:\mathcal D\to\mathcal C$ 가 왼쪽 [수반](adjunctions.md)을 갖는 것과, $\mathcal C$ 의 각 대상 $C$ 마다 공변 함자 $\mathrm{Hom}\_{\mathcal C}(C,G-)$ 가 표현 가능한 것이 동치다. 표현하는 대상을 $F(C)$ 라 놓으면 $F$ 가 함자가 되고
 
 $$
-\mathrm{Hom}\_{\mathcal D}(F(C),D)\ \cong\ \mathrm{Hom}\_{\mathcal C}(C,GD)
+\mathrm{Hom}\_{\mathcal D}(F(C),D)\thinspace\cong\thinspace \mathrm{Hom}\_{\mathcal C}(C,GD)
 $$
 
 가 자연동형이 된다[^1].
 
 # 활용
 
-- **자유 대상.** 망각 함자 $U:\mathbf{Grp}\to\mathbf{Set}$ 에 대해 $\mathrm{Hom}\_{\mathbf{Set}}(S,U-)$ 를 표현하는 군이 $S$ 위의 자유군이고, 보편원소는 생성원을 넣는 함수 $S\to UF(S)$ 다.
-- **텐서곱.** [가군](modules.md) $A,B$ 를 고정하고 $C$ 에 쌍선형 사상의 집합을 주는 함자를 표현하는 대상이 [텐서곱](tensor-products.md) $A\otimes B$ 이고, 보편원소는 $(a,b)\mapsto a\otimes b$ 다.
-- **극한.** [극한과 쌍대극한](limits-colimits.md)의 정의도 표현이다. 원뿔 전체를 주는 함자를 표현하는 대상이 제한이다.
-- **코호몰로지.** $H^n(X;G)\cong\lbrack X,K(G,n)\rbrack$ 는 [코호몰로지](cohomology.md) 함자를 [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)이 표현한다는 뜻이다.
-- **모듈라이.** [모듈라이 공간](moduli-space.md)의 섬세 모듈라이 공간은 모듈라이 함자를 표현하는 스킴이다. 자기동형 때문에 표현이 없으면 집합 대신 군준에 값을 두는 [대수적 스택](algebraic-stacks.md)을 쓴다.
+- 자유 대상. 망각 함자 $U:\mathbf{Grp}\to\mathbf{Set}$ 에 대해 $\mathrm{Hom}\_{\mathbf{Set}}(S,U-)$ 를 표현하는 군이 $S$ 위의 자유군이고, 보편원소는 생성원을 넣는 함수 $S\to UF(S)$ 다.
+- 텐서곱. [가군](modules.md) $A,B$ 를 고정하고 $C$ 에 쌍선형 사상의 집합을 주는 함자를 표현하는 대상이 [텐서곱](tensor-products.md) $A\otimes B$ 이고, 보편원소는 $(a,b)\mapsto a\otimes b$ 다.
+- [극한과 쌍대극한](limits-colimits.md)의 정의도 표현이다. 원뿔(cone) 전체를 주는 함자를 표현하는 대상이 극한이다.
+- $H^n(X;G)\cong\lbrack X,K(G,n)\rbrack$ 는 [코호몰로지](cohomology.md) 함자를 [Eilenberg–MacLane 공간](eilenberg-maclane-spaces.md)이 표현한다는 뜻이다. 이런 표현의 존재 조건을 [Brown 표현 정리](brown-representability.md)가 준다.
+- [모듈라이 공간](moduli-space.md)의 섬세 모듈라이 공간(fine moduli space)은 모듈라이 함자를 표현하는 스킴이다. 자기동형 때문에 표현이 없으면 집합 대신 군준(groupoid)에 값을 두는 [대수적 스택](algebraic-stacks.md)을 쓴다.
 
 [^1]: Emily Riehl, *Category Theory in Context*, §2.4 와 §4.2. 표현 가능성, 보편원소, 수반의 판정. https://emilyriehl.github.io/files/context.pdf
 
