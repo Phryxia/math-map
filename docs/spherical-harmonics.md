@@ -6,15 +6,7 @@
 
 # 직관
 
-구면조화함수는 $\mathbb R^3$ 의 조화 동차다항식을 구면 $S^2$ 에 제한한 함수, 곧 구면 위 Laplace 작용소의 고유함수다. 구면 위의 함수를 전개하는 기저는 회전군이 정한다. $L^2(S^2)$ 에 $\mathrm{SO}(3)$ 가 작용하고, 이 [Hilbert 공간](hilbert-spaces.md)이 [기약표현](group-representations.md)들의 직교합으로 쪼개진다.
-
-$$
-L^2(S^2)=\widehat{\bigoplus_{\ell\ge0}}\ \mathcal H_\ell,\qquad \dim\mathcal H_\ell=2\ell+1
-$$
-
-$\mathcal H_\ell$ 의 원소가 차수 $\ell$ 의 **구면조화함수**다. 각 $\mathcal H_\ell$ 은 $\mathrm{SO}(3)$ 의 기약표현이고 $\ell$ 마다 하나씩 나오므로, 이 분해가 곧 회전군의 표현론이다.
-
-구면 Laplace 작용소는 회전과 교환하므로 그 고유공간이 표현의 불변 부분공간이 되고, Schur 보조정리가 기약 조각으로의 분해를 강제한다. 원에서 $\mathrm{SO}(2)$ 의 기약표현이 1 차원 문자 $e^{in\theta}$ 인 것과 같은 논리이고, 군이 비아벨이 되면서 조각의 차원이 $2\ell+1$ 로 커진다.
+원 위의 함수는 $e^{in\theta}$ 로 전개된다. $e^{in\theta}$ 는 평면의 다항식 $(x+iy)^n$ 을 단위원에 제한한 함수이고, $(x+iy)^n$ 은 $\partial_x^2+\partial_y^2$ 를 걸면 $n(n-1)(x+iy)^{n-2}(1+i^2)=0$ 이 되는 $n$ 차 동차다항식이다. 구면에서도 같은 조건을 만족하는 다항식을 구면에 제한한 함수를 기저로 쓴다.
 
 $\mathbb R^3$ 의 $\ell$ 차 동차다항식 가운데 $\Delta p=0$ 인 것을 조화다항식이라 하고, 이것을 단위구면에 제한한 함수가 구면조화함수다. $\ell$ 차 동차다항식의 공간은 $\binom{\ell+2}2$ 차원이고, $\Delta$ 가 이를 $\ell-2$ 차 동차다항식의 공간으로 보낸다. 이 사상이 전사이므로
 
@@ -28,16 +20,30 @@ $$
 
 # 정의
 
-## 구면조화함수
+## 조화다항식과 구면조화함수
 
-$\mathcal H_\ell$ 의 정규직교기저를 구면좌표로 쓰면
+**조화다항식(harmonic polynomial)** 은 [Laplace 연산자](laplace-operator.md) $\Delta=\partial_x^2+\partial_y^2+\partial_z^2$ 를 걸면 $0$ 이 되는 다항식이다. 차수 $\ell$ 의 **구면조화함수** 는 $\mathbb R^3$ 의 $\ell$ 차 동차 조화다항식을 단위구면 $S^2$ 에 제한한 함수이고, 그 공간을 $\mathcal H_\ell$ 이라 한다.
+
+$\ell=0$ 이면 상수함수이고 $\ell=1$ 이면 $x,y,z$ 의 일차결합이다. $\ell=2$ 에서는 $xy$, $yz$, $zx$, $x^2-y^2$, $x^2+y^2-2z^2$ 의 일차결합이 $\mathcal H_2$ 를 이루고, $\Delta(x^2)=2$ 이므로 $x^2$ 은 조화다항식이 아니다. 세 경우의 차원은 $1,3,5$ 로 직관 절의 $2\ell+1$ 과 맞는다.
+
+## 구면좌표의 기저
+
+구면좌표 $(\theta,\varphi)$ 에서 $Y_{\ell m}$ 은 다음 함수다.
 
 $$
 Y_{\ell m}(\theta,\varphi)=\sqrt{\frac{2\ell+1}{4\pi}\frac{(\ell-m)!}{(\ell+m)!}}\thickspace P_\ell^m(\cos\theta)\thinspace e^{im\varphi},
 \qquad -\ell\le m\le\ell
 $$
 
-이다. $P_\ell^m$ 은 버금 Legendre 함수다. 지수 $m$ 은 $z$ 축 둘레 회전에 대한 $\mathrm{SO}(2)$ 의 문자를 고른 것이고, $2\ell+1$ 개의 $m$ 값이 $\mathcal H_\ell$ 의 차원을 채운다.
+$P_\ell^m$ 은 버금 Legendre 함수(associated Legendre function)다. 지수 $m$ 은 $z$ 축 둘레 회전에 대한 $\mathrm{SO}(2)$ 의 문자를 고른 것이다.
+
+$\ell=0$ 이면 $Y_{00}=1/\sqrt{4\pi}$ 이다. $\ell=1$, $m=0$ 이면 $P_1^0(t)=t$ 이므로 $Y_{10}=\sqrt{3/(4\pi)}\thinspace\cos\theta$ 이고, 구면에서 $\cos\theta=z$ 이므로 정의 절 첫머리의 $z$ 의 상수배다.
+
+# 성질
+
+## 기저와 차원
+
+$Y_{\ell m}$ $(-\ell\le m\le\ell)$ 은 $\mathcal H_\ell$ 의 정규직교기저이고, $2\ell+1$ 개의 $m$ 값이 $\mathcal H_\ell$ 의 차원을 채운다.
 
 ## 고윳값 방정식
 
@@ -49,19 +55,21 @@ $\mathbb R^3$ 에서 $\Delta=\partial_r^2+\frac2r\partial_r+\frac1{r^2}\Delta_{S
 
 ## 덧셈정리
 
+덧셈정리(addition theorem)는 다음 등식이다.
+
 $$
 \sum_{m=-\ell}^\ell Y_{\ell m}(\hat x)\overline{Y_{\ell m}(\hat y)}=\frac{2\ell+1}{4\pi}P_\ell(\hat x\cdot\hat y)
 $$
 
 좌변은 $\mathcal H_\ell$ 로의 사영을 주는 핵이고 우변은 두 방향의 내적에만 의존한다. 사영이 회전불변 작용소이므로 그 핵은 불변량 $\hat x\cdot\hat y$ 의 함수이고, 그 함수가 $\ell$ 번째 Legendre 다항식이다.
 
-# 성질
-
 ## 기약성
 
 회전은 $\Delta$ 와 교환하고 차수를 보존하므로 $\mathrm{SO}(3)$ 가 $\mathcal H_\ell$ 에 작용하고, 이 표현은 기약이다.
 
 $\Delta_{S^2}$ 의 $-\ell(\ell+1)$ 고유공간이 $\mathcal H_\ell$ 이고, 고윳값이 서로 다르므로 고유공간끼리 직교한다.
+
+구면 Laplace 작용소는 회전과 교환하므로 그 고유공간이 표현의 불변 부분공간이 되고, Schur 보조정리(Schur's lemma)가 기약 조각으로의 분해를 강제한다. 원에서 $\mathrm{SO}(2)$ 의 기약표현이 1 차원 문자 $e^{in\theta}$ 인 것과 같은 논리이고, 군이 비아벨이 되면서 조각의 차원이 $2\ell+1$ 로 커진다.
 
 | | 원 S¹ | 구면 S² |
 |---|---|---|
@@ -74,7 +82,13 @@ $\Delta_{S^2}$ 의 $-\ell(\ell+1)$ 고유공간이 $\mathcal H_\ell$ 이고, 고
 
 ## 완비성과 근사
 
-$\lbrace Y_{\ell m}\rbrace$ 이 $L^2(S^2)$ 의 정규직교기저다. 다항식이 구면 위에서 조밀하다는 Stone–Weierstrass 논증과 위의 분해를 합치면 나온다. 따라서
+$L^2(S^2)$ 에 $\mathrm{SO}(3)$ 가 작용하고, 이 [Hilbert 공간](hilbert-spaces.md)이 [기약표현](group-representations.md) $\mathcal H_\ell$ 들의 직교합으로 쪼개진다.
+
+$$
+L^2(S^2)=\widehat{\bigoplus_{\ell\ge0}}\thinspace\mathcal H_\ell,\qquad \dim\mathcal H_\ell=2\ell+1
+$$
+
+$\lbrace Y_{\ell m}\rbrace$ 이 $L^2(S^2)$ 의 정규직교기저다. 다항식이 구면 위에서 조밀하다는 [Stone–Weierstrass 정리](stone-weierstrass.md)의 논증과 위의 분해를 합치면 나온다. 따라서
 
 $$
 f=\sum_{\ell\ge0}\sum_{m=-\ell}^\ell a_{\ell m}Y_{\ell m},\qquad
