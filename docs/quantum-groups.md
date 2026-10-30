@@ -6,21 +6,17 @@
 
 # 직관
 
-양자군은 Lie 대수의 [보편포락대수](universal-enveloping-algebra.md)를 매개변수 $q$ 로 변형한 Hopf 대수다. 변형해도 표현의 텐서곱은 정의되지만, 두 성분을 바꾸는 사상이 성분 교환이 아니라 $q$ 에 의존하는 행렬 $R$ 이 된다.
-
-$R$ 은 Yang–Baxter 방정식을 만족하고 제곱이 항등이 아니다. 그래서 표현 범주는 [모노이드 범주](monoidal-categories.md)로서 꼬임을 갖지만 대칭이 아니고, 그 꼬임이 [땋임군](braid-groups.md)의 표현을 준다.
-
-땋임군의 표현을 선형대수로 만들려 한다. 가닥 $n$ 개의 땋임군은 생성원 $\sigma_1,\dots,\sigma_{n-1}$ 과 관계 $\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ 로 주어지므로, 벡터공간 $V$ 의 텐서거듭제곱 $V^{\otimes n}$ 에서 이 관계를 만족하는 가역사상을 찾으면 된다.
+땋임군의 표현을 선형대수로 만들려 한다. 가닥 $n$ 개의 [땋임군](braid-groups.md)은 생성원 $\sigma_1,\dots,\sigma_{n-1}$ 과 관계 $\sigma_i\sigma_{i+1}\sigma_i=\sigma_{i+1}\sigma_i\sigma_{i+1}$ 로 주어지므로, 벡터공간 $V$ 의 텐서거듭제곱 $V^{\otimes n}$ 에서 이 관계를 만족하는 가역사상을 찾으면 된다.
 
 $\mathfrak{sl}\_2$ 의 표현 $V$ 를 잡고 $\sigma(v\otimes w)=w\otimes v$ 를 쓴다. 이 사상은 $\mathfrak{sl}\_2$ 의 작용과 교환하고 위 관계도 만족하므로 표현이 하나 나온다. 그런데 $\sigma^2=\mathrm{id}$ 이므로 꼬는 것과 반대로 꼬는 것이 같아지고, 표현이 땋임군을 거쳐 [대칭군](symmetric-groups.md)의 표현으로 떨어진다. 땋임의 방향과 횟수는 상에서 사라진다.
 
-$\sigma^2\neq\mathrm{id}$ 인 사상을 얻으려면 교환 사상 자리에 다른 것을 놓아야 하고, 그것이 표현의 작용과 교환하려면 작용하는 대수를 바꿔야 한다. 보편포락대수 $U(\mathfrak{sl}\_2)$ 의 교환관계에 $q$ 를 넣어 변형하면 작용과 교환하는 사상이 성분 교환이 아니라 $R$ 행렬이 되고, $V$ 가 2차원일 때 $R$ 의 고윳값은 $q^{1/2}$ 와 $-q^{-3/2}$ 로 서로 다르다. $q=1$ 에서는 두 고윳값이 $1$ 과 $-1$ 로 돌아가고 $R^2=\mathrm{id}$ 가 된다.
+$\sigma^2\neq\mathrm{id}$ 인 사상을 얻으려면 교환 사상 자리에 다른 것을 놓아야 하고, 그것이 표현의 작용과 교환하려면 작용하는 대수를 바꿔야 한다. [보편포락대수](universal-enveloping-algebra.md) $U(\mathfrak{sl}\_2)$ 의 교환관계에 $q$ 를 넣어 변형하면 작용과 교환하는 사상이 성분 교환이 아니라 $R$ 행렬이 되고, $V$ 가 2차원일 때 $R$ 의 고윳값은 $q^{1/2}$ 와 $-q^{-3/2}$ 로 서로 다르다. $q=1$ 에서는 두 고윳값이 $1$ 과 $-1$ 로 돌아가고 $R^2=\mathrm{id}$ 가 된다.
 
 # 정의
 
 ## Hopf 대수
 
-체 $k$ 위의 **Hopf 대수**는 결합대수 $A$ 에 대수준동형 $\Delta:A\to A\otimes A$ 와 $\varepsilon:A\to k$ , 선형사상 $S:A\to A$ 가 주어지고 다음을 만족하는 것이다.
+체 $k$ 위의 **Hopf 대수(Hopf algebra)** 는 결합대수 $A$ 에 대수준동형 $\Delta:A\to A\otimes A$ 와 $\varepsilon:A\to k$ , 선형사상 $S:A\to A$ 가 주어지고 다음을 만족하는 것이다.
 
 - 쌍대결합법칙 $(\Delta\otimes\mathrm{id})\Delta=(\mathrm{id}\otimes\Delta)\Delta$ 와 쌍대단위법칙.
 - 반대합 $S$ 에 대해 $m(S\otimes\mathrm{id})\Delta=\eta\varepsilon=m(\mathrm{id}\otimes S)\Delta$ , 여기서 $m$ 은 곱이고 $\eta$ 는 단위다.
@@ -41,9 +37,17 @@ $$\Delta(E)=E\otimes 1+K\otimes E,\qquad \Delta(F)=F\otimes K^{-1}+1\otimes F,\q
 
 $K=q^H$ 로 보고 $q\to1$ 로 보내면 셋째 관계의 우변이 $H$ 로 가고 $\mathfrak{sl}\_2$ 의 관계 $\lbrack E,F\rbrack=H$ 가 나온다. $\Delta(E)$ 도 $E\otimes1+1\otimes E$ 로 간다.
 
+$k^2$ 위에서
+
+$$
+E=\begin{pmatrix}0&1\cr 0&0\end{pmatrix},\qquad F=\begin{pmatrix}0&0\cr 1&0\end{pmatrix},\qquad K=\begin{pmatrix}q&0\cr 0&q^{-1}\end{pmatrix}
+$$
+
+로 두면 $KEK^{-1}=q^2E$ 이고, $EF-FE$ 와 $(K-K^{-1})/(q-q^{-1})$ 이 모두 $\mathrm{diag}(1,-1)$ 이다. 이것이 직관 절의 2차원 표현 $V$ 다.
+
 ## Drinfeld–Jimbo 제시
 
-대칭화 가능 Cartan 행렬 $(a_{ij})$ 가 주어지면 $U_q(\mathfrak g)$ 는 생성원 $E_i,F_i,K_i^{\pm1}$ 과 위와 같은 꼴의 관계, 그리고 $q$ 로 변형한 Serre 관계로 정의된다[^1]. $\Delta$ 는 지표마다 같은 식이다.
+대칭화 가능 Cartan 행렬 $(a_{ij})$ 가 주어지면 $U_q(\mathfrak g)$ 는 생성원 $E_i,F_i,K_i^{\pm1}$ 과 위와 같은 꼴의 관계, 그리고 $q$ 로 변형한 Serre 관계로 정의된다[^1]. $\Delta$ 는 지표마다 같은 식이다. $\mathfrak{sl}\_2$ 의 Cartan 행렬 $(2)$ 를 넣으면 위의 $U_q(\mathfrak{sl}\_2)$ 가 나온다.
 
 # 성질
 
@@ -65,7 +69,7 @@ $U_q(\mathfrak g)$ 는 준삼각이다. $R$ 은 유한차원 표현마다 행렬
 
 ## 표현 범주의 꼬임
 
-$R$ 에 성분 교환을 합성한 $c=\sigma\circ R$ 는 표현 $V,W$ 에 대해 $V\otimes W\to W\otimes V$ 인 사상이고 $U_q(\mathfrak g)$ 의 작용과 교환한다. 준삼각성의 두 육각 항등식이 모노이드 범주의 꼬임 공리가 되므로 유한차원 표현의 범주는 꼬임 모노이드 범주다.
+$R$ 에 성분 교환을 합성한 $c=\sigma\circ R$ 는 표현 $V,W$ 에 대해 $V\otimes W\to W\otimes V$ 인 사상이고 $U_q(\mathfrak g)$ 의 작용과 교환한다. 준삼각성의 두 육각 항등식이 [모노이드 범주](monoidal-categories.md)의 꼬임 공리가 되므로 유한차원 표현의 범주는 꼬임 모노이드 범주다.
 
 $c\_{W,V}c\_{V,W}\neq\mathrm{id}$ 이므로 이 꼬임은 대칭이 아니다. $V^{\otimes n}$ 에서 $i$ 번째와 $i+1$ 번째 성분에 $c$ 를 넣은 사상들이 Yang–Baxter 방정식 때문에 땋임군의 관계를 만족하고, 그래서 땋임군의 표현이 하나 나온다.
 
