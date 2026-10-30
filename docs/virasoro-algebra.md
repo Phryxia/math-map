@@ -12,17 +12,7 @@ $$
 \lbrack L_m,L_n\rbrack=(m-n)L_{m+n}
 $$
 
-이것이 **Witt 대수(Witt algebra)** 다. Virasoro 대수는 Witt 대수의 1 차원 중심확대다.
-
-$$
-\lbrack L_m,L_n\rbrack=(m-n)L_{m+n}+\frac{c}{12}(m^3-m)\thinspace\delta_{m+n,0}
-$$
-
-중심원소의 고윳값 $c$ 가 **중심전하**다. Witt 대수의 2 차 [Lie 대수 코호몰로지](lie-algebra-cohomology.md)가 1 차원이므로 이 확대가 스칼라배를 빼고 유일하다.
-
-$c$ 와 최고무게 $h$ 를 고정하면 최고무게 가군이 하나 정해진다. 그 가군이 언제 기약이고 언제 유니터리인지가 $(c,h)$ 평면의 부등식과 이산집합으로 답이 나오며, 이산집합에 놓이는 것이 **최소모형**이다.
-
-원 위의 좌표변환 $t\mapsto f(t)$ 가 만드는 대칭을 Lie 대수 수준에서 적는다. 벡터장 $v=\phi(t)\partial_t$ 에 $\phi(t)=-t^{n+1}$ 을 넣은 것이 $L_n$ 이고, 벡터장의 교환자를 계산하면 $(m-n)L_{m+n}$ 이 나온다. 여기까지는 중심항이 없다.
+이것이 **Witt 대수(Witt algebra)** 다.
 
 이 대수의 최고무게 표현을 찾는다. $L_0$ 의 고윳값으로 등급을 매기고 $L_{-1},L_{-2},\dots$ 를 올림, $L_1,L_2,\dots$ 를 내림으로 쓴다. 최고무게 벡터 $v_h$ 는 $L_0v_h=hv_h$ 이고 $L_nv_h=0$ ($n\gt 0$)이다. 등급 1 의 공간은 $L_{-1}v_h$ 하나가 펼치고, 노름을 재면 다음이다.
 
@@ -52,49 +42,59 @@ $$
 \lbrack L_m,L_n\rbrack=(m-n)L_{m+n}+\frac{1}{12}(m^3-m)\thinspace\delta_{m+n,0}\thinspace C,\qquad \lbrack C,\mathrm{Vir}\rbrack=0
 $$
 
-$\mathbb CC$ 로 나눈 몫이 Witt 대수 $\mathcal W=\mathrm{Der}\thinspace\mathbb C\lbrack t,t^{-1}\rbrack$ 다. 표현에서 $C$ 가 스칼라 $c$ 로 작용할 때 그 $c$ 가 **중심전하**다.
+$\mathbb CC$ 로 나눈 몫이 Witt 대수 $\mathcal W=\mathrm{Der}\thinspace\mathbb C\lbrack t,t^{-1}\rbrack$ 다. 표현에서 $C$ 가 스칼라 $c$ 로 작용할 때 그 $c$ 가 **중심전하(central charge)** 다.
 
 삼각분해는 $\mathrm{Vir}=\mathrm{Vir}\_{-}\oplus(\mathbb CL_0\oplus\mathbb CC)\oplus\mathrm{Vir}\_{+}$ 이고 $\mathrm{Vir}\_{\pm}$ 는 $L_n$ ($\pm n\gt 0$)이 펼친다.
 
 ## 최고무게 가군
 
-$(c,h)\in\mathbb C^2$ 에 대해 **Verma 가군** $M(c,h)$ 는 $v_h$ 를 생성원으로 하고 다음을 만족하는 가군이다.
+$(c,h)\in\mathbb C^2$ 에 대해 **Verma 가군(Verma module)** $M(c,h)$ 는 $v_h$ 를 생성원으로 하고 다음을 만족하는 가군이다.
 
 $$
-Cv_h=cv_h,\qquad L_0v_h=hv_h,\qquad L_nv_h=0\ (n\gt 0)
+Cv_h=cv_h,\qquad L_0v_h=hv_h,\qquad L_nv_h=0\quad(n\gt 0)
 $$
 
-기저는 $L_{-n_1}\cdots L_{-n_k}v_h$ ($n_1\ge\cdots\ge n_k\ge 1$)이고, $L_0$ 의 고윳값이 $h+N$ 인 부분공간 $M(c,h)\_N$ 의 차원은 $N$ 의 분할수 $p(N)$ 이다.
+$L_0$ 의 고윳값이 $h+N$ 인 부분공간을 $M(c,h)\_N$ 으로 적는다. 직관 절에서 $M(c,h)\_1$ 은 $L_{-1}v_h$ 가, $M(c,h)\_2$ 는 $L_{-2}v_h$ 와 $L_{-1}^2v_h$ 가 펼친다.
 
-$M(c,h)$ 의 최대 진부분가군으로 나눈 몫이 기약 가군 $L(c,h)$ 다. 진부분가군의 0 이 아닌 원소를 **널 벡터**라 한다.
+$M(c,h)$ 의 최대 진부분가군으로 나눈 몫이 기약 가군 $L(c,h)$ 다. 진부분가군의 0 이 아닌 원소를 **널 벡터(null vector)** 라 한다.
+
+$h=0$ 이면 $L_1L_{-1}v_0=2L_0v_0=0$ 이고 $L_2L_{-1}v_0=3L_1v_0=0$ 이므로, $L_{-1}v_0$ 은 모든 $L_n$ ($n\gt 0$)이 죽이는 벡터다. 그래서 $L_{-1}v_0$ 이 생성하는 부분가군은 진부분가군이고 $L_{-1}v_0$ 은 널 벡터다.
 
 ## Shapovalov 형식
 
-$M(c,h)$ 에는 $\langle v_h,v_h\rangle=1$ 과 $L_n^\dagger=L_{-n}$ 으로 정해지는 쌍선형형식이 하나 있다. 등급이 다른 부분공간끼리 직교하므로 각 등급에서 유한크기 Gram 행렬이 나오고, 그 행렬이 **Shapovalov 형식**이다.
+$M(c,h)$ 에는 $\langle v_h,v_h\rangle=1$ 과 $L_n^\dagger=L_{-n}$ 으로 정해지는 쌍선형형식이 하나 있다. 등급이 다른 부분공간끼리 직교하므로 각 등급에서 유한크기 Gram 행렬이 나오고, 그 행렬이 **Shapovalov 형식(Shapovalov form)** 이다.
 
-널 벡터는 이 형식의 근기(radical)에 놓인다. 그래서 $M(c,h)$ 가 기약인 것과 모든 등급의 Gram 행렬식이 $0$ 이 아닌 것이 같다.
+등급 1 의 Gram 행렬은 $1\times1$ 행렬 $(2h)$ 이고, 등급 2 의 행렬식은 직관 절의 $32h\lbrack h^2+\tfrac18(c-5)h+\tfrac12c\rbrack$ 다.
 
 ## 최소모형
 
-양의 정수 $m\ge 2$ 에 대해 다음 값을 **최소모형 중심전하**라 한다.
+양의 정수 $m\ge 2$ 에 대해 다음 값을 **최소모형 중심전하(minimal model central charge)** 라 한다.
 
 $$
 c_m=1-\frac{6}{m(m+1)}
 $$
 
-$1\le s\lt r\lt m+1$ 인 정수쌍 $(r,s)$ 에 대응하는 무게가 다음이다.
+$1\le s\le r\le m-1$ 인 정수쌍 $(r,s)$ 에 대응하는 무게가 다음이다.
 
 $$
 h_{r,s}=\frac{\bigl((m+1)r-ms\bigr)^2-1}{4m(m+1)}
 $$
 
-$c=c_m$ 에서 유니터리 기약 표현은 이 $h_{r,s}$ 를 무게로 하는 것뿐이고 개수가 $m(m-1)/2$ 다.
+$m=3$ 이면 $c_3=1/2$ 이고, $(r,s)=(1,1),(2,1),(2,2)$ 에서 $h_{r,s}=0,\thinspace 1/2,\thinspace 1/16$ 이다.
 
 # 성질
 
+## Verma 가군의 기저와 근기
+
+$M(c,h)$ 의 기저는 $L_{-n_1}\cdots L_{-n_k}v_h$ ($n_1\ge\cdots\ge n_k\ge 1$)이므로 $M(c,h)\_N$ 의 차원은 $N$ 의 분할수 $p(N)$ 이다. 널 벡터는 Shapovalov 형식의 근기(radical)에 놓인다. 그래서 $M(c,h)$ 가 기약인 것과 모든 등급의 Gram 행렬식이 $0$ 이 아닌 것이 같다.
+
+## 최소모형의 표현
+
+$c=c_m$ 에서 유니터리 기약 표현은 $h_{r,s}$ 를 무게로 하는 것뿐이고 개수가 $m(m-1)/2$ 다.
+
 ## 중심확대의 유일성
 
-> **정리.** $H^2(\mathcal W,\mathbb C)$ 가 1 차원이므로 Witt 대수의 1 차원 중심확대는 스칼라배를 빼고 유일하다.
+> **정리.** [Lie 대수 코호몰로지](lie-algebra-cohomology.md) $H^2(\mathcal W,\mathbb C)$ 가 1 차원이므로 Witt 대수의 1 차원 중심확대는 스칼라배를 빼고 유일하다.
 
 증명의 요지는 2 차 코사이클 $\psi$ 를 등급으로 제한하는 것이다. $L_0$ 의 작용으로 $\psi(L_m,L_n)$ 이 $m+n=0$ 일 때만 0 이 아니고, 코사이클 조건을 $(L_m,L_n,L_{-m-n})$ 에 적용하면 $\psi(L_m,L_{-m})$ 에 대한 점화식이 나온다. 그 해가 $m^3-m$ 의 상수배이고, $m$ 의 1 차항은 코경계라 없앨 수 있다.
 
