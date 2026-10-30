@@ -28,13 +28,33 @@ $$
 \Gamma(X,\mathcal D_X)\ \cong\ U(\mathfrak g)/\bigl(\ker\chi_0\bigr)=U(\mathfrak g)\_{\chi_0}
 $$
 
-$X$ 는 사영다양체인데도 $\mathcal D_X$ 가 많은 단면을 갖는다. 이 성질을 **$\mathcal D$ 아핀**이라 하고, 정리의 증명이 이것을 쓴다. 아핀 다양체 위에서 연접층과 가군이 같아지는 Serre 의 사실이, 깃발다양체에서는 $\mathcal D$ 가군에 대해 성립한다.
+$X$ 는 사영다양체인데도 $\mathcal D_X$ 가 많은 단면을 갖는다. 이 성질을 $\mathcal D$ 아핀이라 하고, 정리의 증명이 이것을 쓴다. 아핀 다양체 위에서 연접층과 가군이 같아지는 Serre 의 사실이, 깃발다양체에서는 $\mathcal D$ 가군에 대해 성립한다.
 
 # 정의
 
+## 미분작용소의 층
+
+매끄러운 대수다양체 $X$ 위의 **미분작용소의 층(sheaf of differential operators)** $\mathcal D_X$ 는 함수를 곱하는 작용소와 벡터장이 $\mathrm{End}\_k(\mathcal O_X)$ 안에서 생성하는 부분층이다. $\mathcal D_X$ 위의 가군의 [층](sheaves.md)을 $\mathcal D_X$ 가군이라 한다.
+
+아핀 직선 $X=\mathbb A^1$ 에서 $\Gamma(X,\mathcal D_X)$ 는 $x$ 와 $\partial=d/dx$ 가 생성하고 $\partial x-x\partial=1$ 을 만족하는 대수다. 다항식 $k\lbrack x\rbrack$ 는 $\partial$ 를 미분으로 작용시켜 $\mathcal D_X$ 가군이 된다.
+
+## 자명한 중심 지표
+
+**자명한 중심 지표(trivial central character)** $\chi_0$ 은 $U(\mathfrak g)$ 의 중심 $Z(\mathfrak g)$ 의 각 원소에 그 원소가 자명표현에 작용하는 수를 대응시키는 대수 준동형이다. $U(\mathfrak g)\_{\chi_0}$ 는 $U(\mathfrak g)$ 를 $\ker\chi_0$ 가 생성하는 양쪽 아이디얼로 나눈 몫이다.
+
+$\mathfrak{sl}\_2$ 에서 $Z(\mathfrak g)$ 는 Casimir 원소 $C=EF+FE+\frac12H^2$ 가 생성하고, 자명표현에서 $E,F,H$ 가 모두 $0$ 이므로 $\chi_0(C)=0$ 이다. 그래서 $U(\mathfrak{sl}\_2)\_{\chi_0}=U(\mathfrak{sl}\_2)/(C)$ 다.
+
+## 𝒟 아핀
+
+$X$ 가 **$\mathcal D$ 아핀(D-affine)** 이라는 것은 준연접 $\mathcal D_X$ 가군에서 전역단면 함자 $\Gamma(X,-)$ 가 완전이고, 모든 준연접 $\mathcal D_X$ 가군이 전역단면으로 생성된다는 것이다.
+
+아핀 다양체, 예를 들어 $\mathbb A^1$ 은 $\mathcal D$ 아핀이다. 아핀 다양체에서는 준연접층에 대해 같은 두 조건이 성립한다는 Serre 의 정리를 $\mathcal D_X$ 가군에 쓴다.
+
+# 성질
+
 ## 국소화 정리
 
-$X=G/B$ 로 두고 $\chi_0$ 를 자명한 중심 지표라 한다.
+$X=G/B$ 로 둔다.
 
 > **정리 (Beilinson–Bernstein, 1981).** $\Gamma(X,-)$ 는 준연접 $\mathcal D_X$ 가군의 범주에서 $U(\mathfrak g)\_{\chi_0}$ 가군의 범주로 가는 범주 동치이고, 역함자는 $\mathrm{Loc}(M)=\mathcal D_X\otimes_{U(\mathfrak g)}M$ 이다.
 
@@ -42,9 +62,7 @@ $X=G/B$ 로 두고 $\chi_0$ 를 자명한 중심 지표라 한다.
 
 ## 비틀린 판본
 
-일반 중심 지표 $\chi_\lambda$ 에 대해서는 비틀린 미분작용소의 [층](sheaves.md) $\mathcal D_X^\lambda$ 를 쓴다. $\lambda$ 가 우세 정칙이면 같은 결론이 성립하고, 벽 위에 있으면 동치가 깨져 더 약한 진술만 남는다. 이 조건이 Weyl 군 점 작용의 벽과 같은 자리다.
-
-# 성질
+일반 중심 지표 $\chi_\lambda$ 에 대해서는 비틀린 미분작용소의 층 $\mathcal D_X^\lambda$ 를 쓴다. $\lambda$ 가 우세 정칙이면 같은 결론이 성립하고, 벽 위에 있으면 동치가 깨져 더 약한 진술만 남는다. 이 조건이 Weyl 군 점 작용의 벽과 같은 자리다.
 
 ## Borel–Weil–Bott 와의 비교
 
@@ -99,7 +117,7 @@ Soergel 은 편향층의 초코호몰로지가 불변식환 위의 쌍가군이 
 
 ## 기하적 Langlands
 
-아핀 판본의 국소화가 임계 준위 $\widehat{\mathfrak g}$ 가군과 오퍼(oper) 사이의 대응을 준다. 이 대응이 [기하학적 Langlands 강령](geometric-langlands.md)의 자기동형 쪽을 기술하는 언어가 된다.[^1]
+아핀 판본의 국소화가 임계 준위 $\widehat{\mathfrak g}$ 가군과 오퍼(oper) 사이의 대응을 준다. 이 대응이 [기하학적 [Langlands 강령](langlands-program.md)](geometric-langlands.md)의 자기동형 쪽을 기술하는 언어가 된다.[^1]
 
 [^1]: A. Beĭlinson, J. Bernstein, *Localisation de g-modules* (C. R. Acad. Sci. Paris **292**, 1981), 15–18. 독립적 증명은 J.-L. Brylinski, M. Kashiwara, *Kazhdan–Lusztig conjecture and holonomic systems*, Invent. Math. **64** (1981). 교과서 서술은 R. Hotta, K. Takeuchi, T. Tanisaki, *D-Modules, Perverse Sheaves, and Representation Theory* (2008) 11–12장. 표수 $p$ 판본은 R. Bezrukavnikov, I. Mirković, D. Rumynin, *Localization of modules for a semisimple Lie algebra in prime characteristic*, Ann. of Math. **167** (2008).
 
