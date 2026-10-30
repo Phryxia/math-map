@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-30T13:04:00.828Z",
-  "nextSeq": 2590,
+  "savedAt": "2026-10-30T17:06:36.346Z",
+  "nextSeq": 2591,
   "items": [
     {
       "id": "9bab7237",
@@ -172,12 +172,12 @@
       "seq": 2587
     },
     {
-      "id": "f3b2f510",
+      "id": "fcbfd65f",
       "title": "규칙 #7 적용: 정의 절에 성질(준동형 동치, 전단사 등)을 늘어놓거나 예 없이 식만 둔 문서 점검",
       "priority": 100,
-      "note": "이슈 #7 로 4절 설명의 순서에 더한 규칙. grep 으로 셀 수 없다. #group_theory, #algebra, #ring_theory 주 분야 문서는 모두 처리함(#ring_theory 는 2026-10-30 두 회차에 끝남). #field_theory 가운데 처리함(2026-10-30): artin-schreier-theory, differential-galois-theory, division-algebras, error-correcting-codes, etale-fundamental-group, hilbert-theorem-90. 남은 #field_theory 주 분야 문서: field-extensions, fields, finite-fields, galois-cohomology, galois-theory, kummer-theory, milnor-k-theory, real-closed-fields, transcendence-degree, witt-vectors. 그다음은 tags 로 남은 대수 계열 태그를 고른다. 정의 절을 읽어 성질은 성질 절로 옮기고 정의마다 직관 절의 예로 확인하는 예를 붙이고, 직관 첫머리의 성질 미리보기 문단은 뺀다. 미리보기 문단을 지울 때 그 문단에만 있던 본문 링크와 각주 참조를 본문 다른 자리로 옮기고, 지운 뒤 직관이 정의되지 않은 대상을 가리키며 시작하지 않는지 본다(nakayama-lemma, noetherian-rings 는 직관을 예 하나로 다시 썼다). 예를 붙일 때 계산을 다시 해 본다. 2026-10-30 회차에 virasoro-algebra 의 최소모형 무게 범위가 1<=s<r<m+1 로 잘못 적힌 것을 1<=s<=r<=m-1 로 고쳤다(m=3 에서 0, 1/2, 1/16). krull-dimension 개요의 '다항식환에는 기저가 없고' 도 같은 방식으로 찾아 고쳤다. 앞 회차들에서 chain-complexes, root-systems, hyperbolic-groups 의 오류도 같은 방식으로 찾았다. 전역 문자열 치환으로 용어를 바꿀 때 방금 넣은 원어 괄호까지 바뀌는 사고가 polynomial-rings 에서 났다('최고차 계수(최고차 계수)'). 치환 뒤 그 줄을 눈으로 본다.",
-      "createdAt": "2026-10-30T13:03:52.773Z",
-      "seq": 2589
+      "note": "이슈 #7 로 4절 설명의 순서에 더한 규칙. grep 으로 셀 수 없다. #group_theory, #algebra, #ring_theory, #field_theory 주 분야 문서는 모두 처리함(#field_theory 는 2026-10-30 회차들에 끝남). #linear_algebra 가운데 처리함(2026-10-30): vector-spaces, linear-maps, matrices, determinants, eigenvalues, inner-product-spaces, dual-space, minimal-polynomial, jordan-canonical-form, rational-canonical-form, exterior-algebra, cauchy-schwarz, spectral-theorem, singular-value-decomposition, gaussian-elimination, perron-frobenius, grassmannian, schur-complement, sherman-morrison. 남은 #linear_algebra 주 분야 문서: matrix-factorizations, tridiagonal-systems, krylov-subspace-methods, preconditioning, incomplete-lu, principal-component-analysis, kernel-pca, multigrid, full-multigrid, full-approximation-scheme, algebraic-multigrid, smoothed-aggregation, semicoarsening, line-relaxation, local-fourier-analysis, domain-decomposition, finite-element-method, mixed-finite-element-method, a-posteriori-error-estimator. 그다음은 tags 로 남은 대수 계열 태그(#category_theory 등)를 고른다. 정의 절을 읽어 성질은 성질 절로 옮기고 정의마다 직관 절의 예로 확인하는 예를 붙이고, 직관 첫머리의 성질 미리보기 문단은 뺀다. 미리보기 문단을 지울 때 그 문단에만 있던 본문 링크와 각주 참조를 본문 다른 자리로 옮기고, 지운 뒤 직관이 정의되지 않은 대상을 가리키며 시작하지 않는지 본다. 예를 붙일 때 계산을 다시 해 본다. Node 스크립트로 문단을 옮길 때 String.replace 의 치환 문자열에 $$ 가 있으면 $ 로 줄어든다(witt-vectors 에서 재발, 큐 b699c20d). 치환은 split/join 이나 함수 인자로 하고, 커밋 전에 grep -c '\\$\\$' 로 원본과 수를 견준다. 전역 문자열 치환으로 용어를 바꿀 때 방금 넣은 원어 괄호까지 바뀌는 사고가 polynomial-rings 에서 났다. 치환 뒤 그 줄을 눈으로 본다.",
+      "createdAt": "2026-10-30T17:06:24.751Z",
+      "seq": 2590
     },
     {
       "id": "c4f40bdb",
