@@ -6,10 +6,6 @@
 
 # 직관
 
-완전열은 준동형으로 이어진 가군의 사슬에서 각 자리의 상이 다음 자리의 핵과 같은 것이다. 짧은 완전열 하나가 부분가군과 몫가군의 관계를 적고, 그 관계에서 크기와 차원의 덧셈 공식이 나온다.
-
-사슬이 완전하지 않으면 각 자리에 $\ker/\mathrm{im}$ 이 남고, 그 몫이 호몰로지다. 함자를 통과시킨 뒤에도 완전성이 유지되는지를 묻는 것이 유도 함자의 출발이고, 완전성이 깨진 만큼이 Ext 와 Tor 로 측정된다.
-
 선형사상 $f:V\to W$ 에서 $\dim V=\dim\ker f+\dim\mathrm{im}\thinspace f$ 다. 사상 하나에서는 이 등식으로 차원을 센다. 사상이 둘 이상 이어질 때도 같은 셈을 하려 한다.
 
 사상 $f:U\to V$ 와 $g:V\to W$ 를 이어 $g\circ f=0$ 을 요구하면 $\mathrm{im}\thinspace f\subset\ker g$ 다. $U=\mathbb R$, $V=\mathbb R^2$, $W=\mathbb R$ 에 $f(t)=(t,0)$ 과 $g(x,y)=y$ 를 두면 $\mathrm{im}\thinspace f=\lbrace(t,0):t\in\mathbb R\rbrace$ 이고 $\ker g$ 도 같은 집합이다. $f$ 가 단사이고 $g$ 가 전사이므로 $\dim V=\dim U+\dim W$ 로 $2=1+1$ 이 성립한다.
@@ -24,21 +20,31 @@
 
 $$\cdots\to M\_{n+1}\xrightarrow{d\_{n+1}}M_n\xrightarrow{d_n}M\_{n-1}\to\cdots$$
 
-이 자리 $n$ 에서 **완전**하다는 것은 $\mathrm{im}\thinspace d\_{n+1}=\ker d_n$ 이라는 뜻이다. 모든 자리에서 완전하면 사슬을 **완전열**이라 한다.
+이 자리 $n$ 에서 **완전(exact)** 하다는 것은 $\mathrm{im}\thinspace d\_{n+1}=\ker d_n$ 이라는 뜻이다. **완전열** 은 모든 자리에서 완전한 사슬이다.
+
+개요의 $\mathbb Z\xrightarrow{3}\mathbb Z\to\mathbb Z/3$ 은 가운데 자리에서 완전하다. 앞 사상의 상은 $3$ 의 배수 전체이고 뒤 사상의 핵도 $3$ 의 배수 전체다. 직관 절의 $f(t)=(t,0)$, $g(x,y)=0$ 은 $\mathrm{im}\thinspace f\ne\ker g$ 이므로 $V$ 자리에서 완전하지 않다.
 
 ## 짧은 완전열
 
+**짧은 완전열(short exact sequence)** 은 다음 꼴의 완전열이다.
+
 $$0\to A\xrightarrow{f}B\xrightarrow{g}C\to 0$$
 
-이 완전한 것은 $f$ 가 단사, $g$ 가 전사, $\mathrm{im}\thinspace f=\ker g$ 인 것과 같다. 그러면 $f$ 가 $A$ 를 $B$ 의 부분가군과 동형으로 맺고 $g$ 가 $C$ 를 몫 $B/f(A)$ 와 동형으로 맺는다.
+양 끝의 $0$ 이 단사성과 전사성을 적는다. 왼쪽 $0\to A$ 다음 자리의 완전성이 $\ker f=0$ 이고, 오른쪽 $C\to 0$ 앞 자리의 완전성이 $\mathrm{im}\thinspace g=C$ 다. 그래서 이 열이 완전한 것은 $f$ 가 단사, $g$ 가 전사, $\mathrm{im}\thinspace f=\ker g$ 인 것과 같다.
 
-양 끝의 $0$ 이 단사성과 전사성을 적는 장치다. 왼쪽 $0\to A$ 의 완전성이 $\ker f=0$ 이고, 오른쪽 $C\to 0$ 의 완전성이 $\mathrm{im}\thinspace g=C$ 다.
+$0\to\mathbb Z\xrightarrow{3}\mathbb Z\to\mathbb Z/3\to 0$ 이 짧은 완전열이다. 직관 절의 $f(t)=(t,0)$, $g(x,y)=y$ 로 만든 $0\to\mathbb R\to\mathbb R^2\to\mathbb R\to 0$ 도 그렇다.
 
 ## 분할
 
-짧은 완전열에 $s:C\to B$ 가 있어 $g\circ s=\mathrm{id}\_C$ 이면 그 열이 **분할된다**고 한다.
+짧은 완전열에 $g\circ s=\mathrm{id}\_C$ 인 준동형 $s:C\to B$ 가 있으면 그 열을 **분할 완전열(split exact sequence)** 이라 한다.
+
+$0\to\mathbb R\to\mathbb R^2\to\mathbb R\to 0$ 은 $s(y)=(0,y)$ 로 분할된다. $0\to\mathbb Z\xrightarrow{3}\mathbb Z\to\mathbb Z/3\to 0$ 은 분할되지 않는다. $s:\mathbb Z/3\to\mathbb Z$ 가 $1$ 을 $x$ 로 보내면 $3x=s(3)=s(0)=0$ 이므로 $x=0$ 이고, $g\circ s=0$ 이 항등사상이 될 수 없다.
 
 # 성질
+
+## 부분가군과 몫가군
+
+짧은 완전열 $0\to A\xrightarrow{f}B\xrightarrow{g}C\to 0$ 에서 $f$ 는 $A$ 를 $B$ 의 부분가군 $f(A)$ 와 동형으로 보내고, $g$ 는 $C$ 를 몫 $B/f(A)$ 와 동형으로 만든다. 첫째는 $f$ 가 단사인 것에서, 둘째는 $g$ 가 전사이고 $\ker g=f(A)$ 인 것에 동형 정리를 쓴 것에서 나온다.
 
 ## 덧셈 공식
 
@@ -78,7 +84,7 @@ $\mathrm{Hom}(X,-)$ 는 왼쪽 완전이고 $-\otimes N$ 은 오른쪽 완전이
 
 # 활용
 
-- **위상불변량.** 공간의 쌍이나 덮개가 사슬 복합체의 짧은 완전열을 주고, 뱀 보조정리가 그것을 호몰로지의 긴 완전열로 옮긴다. [Mayer–Vietoris 완전열](mayer-vietoris.md)이 두 열린집합의 호몰로지에서 합집합의 호몰로지를 계산하는 꼴이다.
+- **위상불변량.** 공간의 쌍이나 덮개가 사슬 복합체의 짧은 완전열을 주고, 뱀 보조정리(snake lemma)가 그것을 호몰로지의 긴 완전열로 옮긴다. [Mayer–Vietoris 완전열](mayer-vietoris.md)이 두 열린집합의 호몰로지에서 합집합의 호몰로지를 계산하는 꼴이다.
 - **군의 확대.** 군의 짧은 완전열 $1\to N\to G\to Q\to 1$ 이 $G$ 를 $N$ 과 $Q$ 의 확대로 적는다. 분할되는 경우가 반직적이고, 분할되지 않는 확대의 분류가 [군 코호몰로지](group-cohomology.md)의 2 차 코호몰로지다.
 - **타원곡선의 계수.** 하강법은 유리점의 군을 완전열에 넣어 [Selmer 군](selmer-tate-shafarevich.md)과 Shafarevich–Tate 군 사이의 관계로 적는다. 완전열의 한 자리가 계산 가능하면 다른 자리의 크기가 제한된다.
 - **가군의 분해.** 사영가군으로 짜인 완전열로 가군을 덮는 것이 사영분해이고, 유도 함자의 계산이 그 분해 위에서 이뤄진다.
