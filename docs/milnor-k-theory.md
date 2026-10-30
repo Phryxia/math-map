@@ -6,10 +6,6 @@
 
 # 직관
 
-Milnor K 이론은 체 $F$ 에 차수가 붙은 환 $K^M_\ast(F)=\bigoplus_{n\ge0}K^M_n(F)$ 을 대응시키는 이론이다. $K^M_n(F)$ 는 곱셈군 $F^{\times}$ 의 $n$ 겹 텐서곱을 $a\otimes(1-a)$ 꼴의 원소로 나눈 군이다.
-
-Galois 코호몰로지의 컵곱이 이 관계를 만족하므로 $K^M_n(F)/m$ 에서 $H^n(F,\mu_m^{\otimes n})$ 으로 가는 사상이 정의되고, 그 사상이 동형이라는 것이 노름 잉여 동형 정리다.
-
 Galois 코호몰로지의 Kummer 열은 $a\in F^{\times}$ 에 류 $(a)\in H^1(F,\mu_2)$ 를 주고 $H^1(F,\mu_2)\cong F^{\times}/(F^{\times})^{2}$ 이다. 표수가 $2$ 가 아니면 두 류의 컵곱 $(a)\cup(b)$ 는 $H^2(F,\mu_2)\cong\mathrm{Br}(F)\lbrack2\rbrack$ 에 들어가고, 그 원소는 $i^2=a$, $j^2=b$, $ij=-ji$ 로 정한 사원수 대수 $(a,b)$ 의 류다. 사원수 대수가 행렬 대수와 동형인 것은 $x^2-ay^2-bz^2=0$ 이 $0$ 아닌 해를 갖는 것과 동치다.
 
 $b=1-a$ 로 두면 $x=y=z=1$ 에서 $1-a-(1-a)=0$ 이므로 해가 있다. 그래서 모든 $a\ne0,1$ 에서 $(a)\cup(1-a)=0$ 이다. 컵곱은 양쪽 변수에 대해 준동형이므로 $(a,b)\mapsto(a)\cup(b)$ 는 $F^{\times}\otimes F^{\times}$ 에서 정의된 사상이고, $a\otimes(1-a)$ 를 전부 $0$ 으로 보낸다.
@@ -18,13 +14,13 @@ $F^{\times}\otimes F^{\times}$ 를 $a\otimes(1-a)$ 들로 나눈 군이 $K^M_2(F
 
 # 정의
 
-$F$ 를 체라 한다. $n\ge2$ 에서
+$F$ 를 체라 한다. **Milnor K 군(Milnor K-group)** $K^M_n(F)$ 는 $n\ge2$ 에서 다음 군이다.
 
 $$
 K^M_n(F)=\big(F^{\times}\big)^{\otimes n}\Big/\big\langle a_1\otimes\cdots\otimes a_n : \text{어떤 } i\ne j \text{ 에서 } a_i+a_j=1\big\rangle
 $$
 
-이고 $K^M_0(F)=\mathbb Z$, $K^M_1(F)=F^{\times}$ 다. 텐서곱은 $\mathbb Z$ 위에서 취한다. $a_1\otimes\cdots\otimes a_n$ 의 류를 **기호(symbol)** $\lbrace a_1,\dots,a_n\rbrace$ 로 쓰고, 군 연산은 덧셈으로 적는다. $\lbrace ab\rbrace=\lbrace a\rbrace+\lbrace b\rbrace$ 이다.
+이고 $K^M_0(F)=\mathbb Z$, $K^M_1(F)=F^{\times}$ 다. 텐서곱은 $\mathbb Z$ 위에서 취한다. $a_1\otimes\cdots\otimes a_n$ 의 류를 **기호(symbol)** $\lbrace a_1,\dots,a_n\rbrace$ 로 쓰고, 군 연산은 덧셈으로 적는다. $\lbrace ab\rbrace=\lbrace a\rbrace+\lbrace b\rbrace$ 이다. $F=\mathbb Q$ 에서 $3+(-2)=1$ 이므로 $\lbrace 3,-2\rbrace=0$ 이고, $2+(-1)=1$ 이므로 $\lbrace 2,-1\rbrace=0$ 이다. $\lbrace -1,-1\rbrace$ 은 관계 하나로 바로 $0$ 이 되지 않고, 성질 절에서 $K^M_2(\mathbb Q)$ 의 $0$ 이 아닌 원소임이 나온다.
 
 이어 붙이는 곱 $\lbrace a_1,\dots,a_n\rbrace\cdot\lbrace b_1,\dots,b_k\rbrace=\lbrace a_1,\dots,a_n,b_1,\dots,b_k\rbrace$ 로 $K^M_\ast(F)$ 는 차수가 붙은 환이다.[^1]
 
@@ -36,7 +32,7 @@ $$
 h_{n,m}:K^M_n(F)/m\longrightarrow H^n(F,\mu_m^{\otimes n}),\qquad \lbrace a_1,\dots,a_n\rbrace\longmapsto(a_1)\cup\cdots\cup(a_n)
 $$
 
-이 정의된다. 이것이 **노름 잉여 사상(norm residue map)** 이다. 직관 절의 계산은 $m=2$ 이고, 일반의 $m$ 에서는 $x^m-a$ 의 근을 붙인 확대의 노름 사상으로 $(a)\cup(1-a)=0$ 을 보인다.
+이 정의된다. 이것이 **노름 잉여 사상(norm residue map)** 이다. 직관 절의 계산은 $m=2$ 의 경우다. $F=\mathbb Q$, $m=n=2$ 에서 $h_{2,2}$ 는 $\lbrace -1,-1\rbrace$ 을 사원수 대수 $(-1,-1)$ 의 류로 보낸다. $x^2+y^2+z^2=0$ 은 $0$ 아닌 유리수 해가 없으므로 이 류는 $0$ 이 아니다.
 
 # 성질
 
@@ -71,6 +67,8 @@ $$
 이 나온다. $\mathbb Z/2$ 성분은 $\lbrace-1,-1\rbrace$ 이 생성하고, [실수](real-numbers.md) 자리에서 $\lbrace a,b\rbrace$ 가 $a,b$ 가 둘 다 음수일 때만 자명하지 않은 것으로 검출된다.
 
 ## 노름 잉여 동형 정리
+
+$m\gt2$ 에서 노름 잉여 사상이 잘 정의되는 것은 $x^m-a$ 의 근을 붙인 확대의 노름 사상으로 $(a)\cup(1-a)=0$ 을 보여 얻는다.
 
 **노름 잉여 동형 정리.** $m$ 이 $F$ 의 표수와 서로소이면 모든 $n$ 에서 $h_{n,m}$ 이 동형이다.
 
