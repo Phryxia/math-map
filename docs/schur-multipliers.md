@@ -6,85 +6,75 @@
 
 # 직관
 
-Schur 곱셈자는 군 $G$ 의 둘째 코호몰로지군(second cohomology group) $M(G)=H^2(G,\mathbb C^\times)$ 다. $G$ 를 $\mathbb C^\times$ 의 부분군으로 [중심확대](group-extensions.md)하는 방법은 여러 가지이고, Schur 는 1904 년에 그중 가장 큰 것이 존재함을 보였다.
-
-$G\to\mathrm{PGL}(V)$ 가 **사영표현**이다. 양자역학에서 상태가 위상인자까지만 정해지므로 대칭이 사영표현으로 나타난다. 사영표현을 보통 표현처럼 다루려면 $\mathrm{GL}(V)$ 로 들어올려야 하고, 그 걸림돌을 2-코사이클이 잰다.
+$\mathbb Z/2\times\mathbb Z/2$ 의 원소를 $e,a,b,ab$ 라 하자. $a$ 에 $X$, $b$ 에 $Z$, $ab$ 에 $XZ$ 를 대응시킨다.
 
 $$
-\rho(a)\rho(b)=c(a,b)\thinspace\rho(ab),\qquad c(a,b)\in\mathbb C^\times
+X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix},\qquad Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix}
 $$
 
-$c$ 를 스칼라 재조정으로 없앨 수 있으면 보통 표현이고 없앨 수 없으면 진짜 사영표현이다. 없앨 수 있는지를 재는 군이
+$X^2=Z^2=I$ 이지만 $XZ=-ZX$ 다. 군에서는 $ba=ab$ 인데 행렬에서는 $ZX=-XZ$ 여서, $b$ 와 $a$ 에 대응한 행렬의 곱이 $ba$ 에 대응한 행렬과 부호만큼 어긋난다.
 
-$$
-M(G)=H^2(G,\mathbb C^\times)\cong H_2(G,\mathbb Z)
-$$
-
-이고 이것이 Schur 곱셈자다. 왼쪽은 사영표현의 걸림돌이고 오른쪽은 군의 호몰로지다.
-
-$G$ 가 완전군, 곧 $G=[G,G]$ 이면 **보편 중심확대** $\tilde G$ 가 존재한다.
-
-$$
-1\to M(G)\to\tilde G\to G\to1
-$$
-
-$\tilde G$ 는 $G$ 의 모든 중심확대를 덮는다. 어떤 중심확대에도 $\tilde G$ 에서 가는 사상이 유일하게 있다. $G$ 의 사영표현 전체가 $\tilde G$ 의 보통 표현 전체와 같아지므로 사영표현론이 표현론으로 환원된다.
-
-$\mathrm{SO}(3)$ 와 $\mathrm{SU}(2)$ 가 그 예다. 스핀 $1/2$ 은 $\mathrm{SO}(3)$ 의 사영표현이고 이중덮개 $\mathrm{SU}(2)$ 에서 보통 표현이 된다. 전자가 $360^\circ$ 회전에서 부호를 바꾸는 것이 $M(\mathrm{SO}(3))=\mathbb Z/2$ 에 대응한다.
-
-사영표현 $\bar\rho:G\to\mathrm{PGL}(V)$ 를 들어올리려면 각 $g$ 마다 대표원 $\rho(g)\in\mathrm{GL}(V)$ 를 고른다. 대표원의 곱은 스칼라만큼 어긋난다.
-
-$$
-\rho(a)\rho(b)=c(a,b)\rho(ab)
-$$
-
-결합법칙을 두 방식으로 전개하면 $c$ 가 만족해야 할 2-코사이클 조건이 나온다.
-
-$$
-c(a,b)c(ab,d)=c(b,d)c(a,bd)
-$$
-
-대표원을 $\rho'(g)=\lambda(g)\rho(g)$ 로 다시 고르면 $c$ 는 $c(a,b)\lambda(a)\lambda(b)/\lambda(ab)$ 로 바뀐다. 선택의 자유가 코바운더리만큼이므로, 코사이클을 코바운더리로 나눈 $H^2(G,\mathbb C^\times)$ 이 남는다. 그 원소가 0 이면 재조정으로 $c\equiv1$ 을 만들어 보통 표현이 된다.
+각 행렬에 $0$ 이 아닌 상수를 곱해 어긋남을 없앨 수 있는지 묻는다. $\lambda X$ 와 $\mu Z$ 로 바꿔도 $(\lambda X)(\mu Z)=-(\mu Z)(\lambda X)$ 이므로 두 행렬은 끝내 교환하지 않는다. 이 어긋남은 상수 조정으로 없앨 수 없다. 군을 키우면 없어진다. $X$ 와 $Z$ 가 곱으로 생성하는 행렬 $\pm I,\pm X,\pm Z,\pm XZ$ 여덟 개는 그 자체로 군이고, 그 안에서는 행렬의 곱이 군의 곱이다. 이렇게 원래 군을 몫으로 갖도록 키운 군이 [중심확대](group-extensions.md)이고, 상수 조정으로 없앨 수 없는 어긋남을 모은 군이 Schur 곱셈자다.
 
 # 정의
 
-## 사영표현과 곱셈자
+## 사영표현
 
-$\bar\rho:G\to\mathrm{PGL}(V)$ 가 **사영표현**이다. $\bar\rho$ 마다 류 $[c]\in H^2(G,\mathbb C^\times)$ 가 정해지고, $[c]=0$ 인 것과 $\bar\rho$ 가 보통 표현으로 들어올려지는 것이 동치다.
+[벡터 공간](vector-spaces.md) $V$ 의 가역 선형사상의 군 $\mathrm{GL}(V)$ 에서 $0$ 이 아닌 상수배 차이를 같게 본 몫군을 $\mathrm{PGL}(V)$ 라 한다. 군 준동형 $\bar\rho:G\to\mathrm{PGL}(V)$ 를 **사영표현(projective representation)** 이라 한다. 각 $g$ 마다 대표원 $\rho(g)\in\mathrm{GL}(V)$ 를 고르면 다음 식으로 함수 $c:G\times G\to\mathbb C^\times$ 가 정해진다.
+
+$$
+\rho(a)\rho(b)=c(a,b)\thinspace\rho(ab)
+$$
+
+직관 절의 $X$, $Z$, $XZ$ 는 $\mathbb Z/2\times\mathbb Z/2$ 의 사영표현이고, $c(b,a)=-1$ 이다.
+
+## Schur 곱셈자
+
+유한군 $G$ 에 대해 군
 
 $$
 M(G)=H^2(G,\mathbb C^\times)
 $$
 
-를 $G$ 의 **Schur 곱셈자**라 한다. 유한군에 대해 유한 아벨군이고 지수가 $|G|$ 를 나눈다.
+를 $G$ 의 **Schur 곱셈자(Schur multiplier)** 라 한다. $M(\mathbb Z/2\times\mathbb Z/2)=\mathbb Z/2$ 이고, 그 영이 아닌 원소가 직관 절의 부호 어긋남이다.
 
 ## 보편 중심확대
 
-$1\to A\to E\xrightarrow{\pi}G\to1$ 이 $A\subseteq Z(E)$ 인 **중심확대**라 하자.
+$1\to A\to E\xrightarrow{\pi}G\to1$ 에서 $A$ 가 $E$ 의 중심에 들어 있으면 **중심확대(central extension)** 라 한다. $G=[G,G]$ 인 군을 **완전군(perfect group)** 이라 한다. 완전군 $G$ 의 중심확대 $\tilde G\to G$ 가, $G$ 의 모든 중심확대 $E\to G$ 에 대해 $G$ 위에서 맞는 준동형 $\tilde G\to E$ 를 하나씩만 가지면 **보편 중심확대(universal central extension)** 라 한다.
 
-중심확대 하나마다 $H^2(G,A)$ 의 원소가 하나 대응하고, 반대로 $H^2(G,A)$ 의 원소마다 중심확대가 하나 나온다.
-
-> **정리 (Schur).** $G$ 가 완전군이면 $E$ 도 완전이고 위 조건을 만족하는 확대 중 보편적인 것 $\tilde G$ 가 동형을 빼고 유일하게 존재한다. 그 핵이 $M(G)$ 다. 이때 $G$ 의 모든 기약 사영표현이 $\tilde G$ 의 기약 보통 표현에서 정확히 한 번씩 나온다.
-
-사영표현이 언제나 $\tilde G$ 의 보통 표현에서 내려오므로 $\tilde G$ 의 지표표 한 장이 $G$ 의 사영표현 전체를 담는다.
-
-$G$ 가 완전하지 않으면 보편 확대가 없다. 아벨 몫이 있으면 그 몫을 통해 서로 다른 사상이 여러 개 만들어지기 때문이다. 곱셈자를 실현하는 **표현군**(Schur 덮개)은 존재하지만 유일하지 않다.
+교대군 $A_5$ 는 완전군이고, 위수 $120$ 인 $\mathrm{SL}\_2(\mathbb F_5)$ 에서 중심 $\lbrace\pm I\rbrace$ 로 나누는 사상이 $A_5$ 의 보편 중심확대다.
 
 # 성질
 
-## 가장 작은 비자명 예
+## 2-코사이클 조건
 
-$G=\mathbb Z/2\times\mathbb Z/2$ 는 아벨군이지만 $M(G)=\mathbb Z/2$ 로 비자명하고, 비자명 사영표현이 Pauli 행렬로 실현된다.
+결합법칙을 두 방식으로 전개하면 사영표현의 $c$ 가 다음을 만족한다.
 
 $$
-X=\begin{pmatrix}0&1\cr 1&0\end{pmatrix},\qquad Z=\begin{pmatrix}1&0\cr 0&-1\end{pmatrix},\qquad XZ=-ZX
+c(a,b)c(ab,d)=c(b,d)c(a,bd)
 $$
 
-두 행렬은 가환이 아니지만 $\mathrm{PGL}\_2$ 로 내려가면 가환이다. 부호 하나 차이가 걸림돌이다.
+대표원을 $\rho'(g)=\lambda(g)\rho(g)$ 로 다시 고르면 $c$ 는 $c(a,b)\lambda(a)\lambda(b)/\lambda(ab)$ 로 바뀐다. 그래서 사영표현마다 $M(G)=H^2(G,\mathbb C^\times)$ 의 원소 $\lbrack c\rbrack$ 가 정해지고, $\lbrack c\rbrack=0$ 인 것과 대표원을 다시 골라 $c\equiv1$ 로 만들 수 있는 것, 곧 $\bar\rho$ 가 $\mathrm{GL}(V)$ 로 가는 보통 표현에서 오는 것이 동치다.
 
-이 코사이클은 $\pm1$ 만 취하고 어떤 재조정으로도 $1$ 이 되지 않는다. 들어올린 군의 위수가 $4$ 가 아니라 $8$ 이고, 늘어난 인자 $2$ 가 $M(G)=\mathbb Z/2$ 다.
+## 곱셈자의 유한성
 
-위수 8 군 $\lbrace\pm I,\pm X,\pm Z,\pm XZ\rbrace$ 는 $X^2=Z^2=I$ , $(XZ)^2=-I$ 이므로 이면체군 $D_4$ 다. 이 확대로 $(\mathbb Z/2)^2$ 이 2 차원 기약 사영표현을 갖는다. 아벨군의 보통 기약표현은 전부 1 차원이므로 사영표현에서만 가능한 현상이다. 양자정보의 Pauli 군이 이것이고 안정자 부호의 대수적 바탕이다.
+유한군 $G$ 의 $M(G)$ 는 유한 아벨군이고 지수가 $|G|$ 를 나누며, $M(G)\cong H_2(G,\mathbb Z)$ 다. 중심확대 $1\to A\to E\to G\to1$ 하나마다 $H^2(G,A)$ 의 원소가 하나 대응하고, 반대로 $H^2(G,A)$ 의 원소마다 중심확대가 하나 나온다.
+
+## Schur 정리
+
+> **정리 (Schur).** 완전군 $G$ 에는 보편 중심확대 $\tilde G$ 가 동형을 빼고 하나 존재하고, 그 핵이 $M(G)$ 이며 $\tilde G$ 도 완전군이다. 이때 $G$ 의 모든 기약 사영표현이 $\tilde G$ 의 기약 보통 표현에서 정확히 한 번씩 나온다.
+
+사영표현이 언제나 $\tilde G$ 의 보통 표현에서 내려오므로 $\tilde G$ 의 [지표표](character-table.md) 한 장이 $G$ 의 사영표현 전체를 담는다.
+
+$G$ 가 완전하지 않으면 보편 확대가 없다. 아벨 몫이 있으면 그 몫을 통해 서로 다른 사상이 여러 개 만들어지기 때문이다. 곱셈자를 실현하는 표현군(representation group, Schur 덮개)은 존재하지만 유일하지 않다.
+
+## Pauli 행렬의 확대
+
+직관 절의 위수 8 군 $\lbrace\pm I,\pm X,\pm Z,\pm XZ\rbrace$ 는 $X^2=Z^2=I$, $(XZ)^2=-I$ 이므로 이면체군 $D_4$ 다. 이 확대로 $(\mathbb Z/2)^2$ 이 2 차원 기약 사영표현을 갖는다. 아벨군의 보통 기약표현은 전부 1 차원이므로 사영표현에서만 생기는 일이다. 양자정보의 Pauli 군이 이것이다.
+
+## 회전군
+
+스핀 $1/2$ 은 $\mathrm{SO}(3)$ 의 사영표현이고 이중덮개 $\mathrm{SU}(2)$ 에서 보통 표현이 된다. 전자가 $360^\circ$ 회전에서 부호를 바꾸는 것이 $\mathrm{SO}(3)$ 의 사영표현의 부호 어긋남이다.
 
 ## Hopf 공식
 
