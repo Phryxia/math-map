@@ -6,17 +6,13 @@
 
 # 직관
 
-유한요소법은 약한 꼴 방정식을 조각마다 다항식인 유한차원 부분공간에서 푸는 방법이다. 영역을 작은 요소로 나누고 요소마다 다항식 하나를 두어 미지수를 유한 개로 줄인다.
-
-[Lax–Milgram 정리](lax-milgram.md)는 약한 꼴 방정식의 해가 하나 있다는 것까지 말하고 그 해의 값은 주지 않는다. 유한요소법은 같은 쌍선형형식을 부분공간에 제한해 연립방정식 하나를 얻고, 그 해가 원래 해에서 얼마나 떨어지는지를 Céa 보조정리로 잰다.
-
 $(0,1)$ 에서 $-u''=f$ 와 $u(0)=u(1)=0$ 을 푼다. 양변에 $v$ 를 곱하고 부분적분하면 약한 꼴
 
 $$
 \int\_0^1 u'v'\thinspace dx=\int\_0^1 fv\thinspace dx
 $$
 
-가 모든 $v\in H_0^1(0,1)$ 에서 성립한다. 이 식을 만족하는 $u$ 가 하나 있지만, $u$ 를 수로 적으려면 미지수가 필요하고 $H_0^1(0,1)$ 의 함수 하나를 적는 데는 수가 무한히 많이 든다.
+가 모든 $v\in H_0^1(0,1)$ 에서 성립한다. 이것을 약한 꼴(weak formulation)이라 한다. [Lax–Milgram 정리](lax-milgram.md)에 따라 이 식을 만족하는 $u$ 가 하나 있지만, 정리는 그 값을 주지 않는다. $u$ 를 수로 적으려면 미지수가 필요하고 $H_0^1(0,1)$ 의 함수 하나를 적는 데는 수가 무한히 많이 든다.
 
 미지수를 유한 개로 만들려면 쓸 수 있는 함수를 좁혀야 한다. $0=x_0\lt x_1\lt \dots\lt x_N=1$ 로 구간을 자르고, 자른 조각마다 일차함수이며 전체가 연속이고 양 끝에서 $0$ 인 함수만 쓴다. 그런 함수는 $x_1,\dots,x\_{N-1}$ 에서의 값으로 완전히 정해지므로 미지수가 $N-1$ 개다. $x_i$ 에서 $1$ 이고 다른 자른 점에서 $0$ 인 함수를 $\phi_i$ 라 하면, 쓸 수 있는 함수는 모두 $u_h=\sum\_j c_j\phi_j$ 꼴이다.
 
@@ -34,19 +30,21 @@ $$
 
 가 되고, 이것은 미지수 $N-1$ 개의 삼중대각 연립방정식이다.
 
+$N=4$, $f=1$ 이면 $h=1/4$ 이고 우변은 모두 $\int\_0^1\phi_i\thinspace dx=h=1/4$ 다. 양변에 $h$ 를 곱한 식 $-c\_{i-1}+2c_i-c\_{i+1}=1/16$ 을 풀면 $(c_1,c_2,c_3)=(3/32,\thinspace 1/8,\thinspace 3/32)$ 이다. 참해 $u=x(1-x)/2$ 의 $x=1/4,\thinspace 1/2,\thinspace 3/4$ 에서의 값과 같다.
+
 # 정의
 
 ## 삼각분할과 유한요소공간
 
-$\Omega\subset\mathbb R^d$ 를 다면체 영역이라 하자. $\Omega$ 의 **삼각분할** $\mathcal T_h$ 는 닫힌 단체 $K$ 의 유한 모임으로, 합집합이 $\overline\Omega$ 이고 서로 다른 두 단체의 교집합이 공통인 면이나 공집합이다. $h=\max\_{K\in\mathcal T_h}\mathrm{diam}\thinspace K$ 를 **격자 간격**이라 한다.
+$\Omega\subset\mathbb R^d$ 를 다면체 영역이라 하자. $\Omega$ 의 **삼각분할(triangulation)** $\mathcal T_h$ 는 닫힌 단체(simplex) $K$ 의 유한 모임으로, 합집합이 $\overline\Omega$ 이고 서로 다른 두 단체의 교집합이 공통인 면이나 공집합이다. $h=\max\_{K\in\mathcal T_h}\mathrm{diam}\thinspace K$ 를 **격자 간격(mesh size)** 이라 한다. 직관 절의 $(0,1)$ 을 네 구간 $\lbrack 0,1/4\rbrack,\dots,\lbrack 3/4,1\rbrack$ 으로 나눈 것은 $d=1$ 의 삼각분할이고 $h=1/4$ 다.
 
-차수 $k$ 의 **유한요소공간**은
+차수 $k$ 의 **유한요소공간(finite element space)** 은
 
 $$
 V_h=\lbrace v\in C^0(\overline\Omega):v\vert_K\in P_k(K)\thinspace\text{for all }K\in\mathcal T_h,\thinspace v\vert\_{\partial\Omega}=0\rbrace
 $$
 
-이고 $P_k(K)$ 는 $K$ 에서 차수 $k$ 이하인 다항식의 공간이다. $V_h\subset H_0^1(\Omega)$ 인 것은 조각마다 다항식이고 전체가 연속인 함수의 약도함수가 $L^2(\Omega)$ 에 들기 때문이다. $V_h$ 는 유한차원이고 차원은 자유도의 개수다.
+이고 $P_k(K)$ 는 $K$ 에서 차수 $k$ 이하인 다항식의 공간이다. 직관 절의 삼각분할에서 $k=1$ 인 $V_h$ 는 조각마다 일차이고 연속이며 양 끝에서 $0$ 인 함수의 공간이고, $\phi_1,\phi_2,\phi_3$ 이 기저다.
 
 ## 이산 문제와 강성행렬
 
@@ -56,19 +54,23 @@ $$
 B(u_h,v)=f(v)
 $$
 
-인 $u_h\in V_h$ 를 찾는 문제를 **Galerkin 문제**라 한다. $V_h$ 의 기저 $\phi_1,\dots,\phi_n$ 을 잡고 $u_h=\sum\_j c_j\phi_j$ 로 쓰면 이 조건은 [행렬](matrices.md) 방정식
+인 $u_h\in V_h$ 를 찾는 문제를 **Galerkin 문제(Galerkin problem)** 라 한다. $V_h$ 의 기저 $\phi_1,\dots,\phi_n$ 을 잡고 $u_h=\sum\_j c_j\phi_j$ 로 쓰면 이 조건은 [행렬](matrices.md) 방정식
 
 $$
 Sc=F,\qquad S\_{ij}=B(\phi_j,\phi_i),\qquad F_i=f(\phi_i)
 $$
 
-과 같다. $S$ 를 **강성행렬**이라 한다. 기저로는 자유도 하나에서 $1$ 이고 다른 자유도에서 $0$ 인 함수를 쓰고, 그 받침은 그 자유도를 포함하는 요소들의 합집합이다.
+과 같다. $S$ 를 **강성행렬(stiffness matrix)** 이라 한다. 기저로는 자유도(degree of freedom) 하나에서 $1$ 이고 다른 자유도에서 $0$ 인 함수를 쓴다. 직관 절의 예에서 $B(u,v)=\int\_0^1u'v'\thinspace dx$ 이고 $S$ 는 대각 $8$, 위아래 대각 $-4$ 인 $3\times 3$ 행렬, $F=(1/4,1/4,1/4)$ 이다.
 
 # 성질
 
+## 유한요소공간의 성질
+
+조각마다 다항식이고 전체가 연속인 함수는 약도함수(weak derivative)가 $L^2(\Omega)$ 에 들어 있으므로 $V_h\subset H_0^1(\Omega)$ 이다. $V_h$ 는 유한차원이고 차원은 자유도의 개수다. 기저 함수 하나의 받침(support)은 그 자유도를 포함하는 요소들의 합집합이다.
+
 ## 이산 문제의 가해성
 
-$B$ 가 $H_0^1(\Omega)$ 에서 상수 $\beta$ 로 유계이고 상수 $\alpha$ 로 강제이면 부분공간 $V_h$ 에서도 같은 두 상수로 유계이고 강제다. Lax–Milgram 정리를 $V_h$ 에 적용하면 $u_h$ 가 유일하게 존재하고 강성행렬이 가역이다. 격자를 바꿔도 $\alpha,\beta$ 는 그대로이므로 가역성은 $h$ 에 의존하지 않는다.
+$B$ 가 $H_0^1(\Omega)$ 에서 상수 $\beta$ 로 유계이고 상수 $\alpha$ 로 강제(coercive)이면 부분공간 $V_h$ 에서도 같은 두 상수로 유계이고 강제다. Lax–Milgram 정리를 $V_h$ 에 적용하면 $u_h$ 가 유일하게 존재하고 강성행렬이 가역이다. 격자를 바꿔도 $\alpha,\beta$ 는 그대로이므로 가역성은 $h$ 에 의존하지 않는다.
 
 ## Galerkin 직교성
 
@@ -80,7 +82,7 @@ $B$ 가 대칭이면 $B$ 가 내적이고 이 식은 오차 $u-u_h$ 가 $V_h$ �
 
 ## Céa 보조정리
 
-**정리.** $B$ 가 유계이고 강제이면
+**정리 (Céa 보조정리, Céa's lemma).** $B$ 가 유계이고 강제이면
 
 $$
 \Vert u-u\_h\Vert\le\frac{\beta}{\alpha}\inf\_{v\in V\_h}\Vert u-v\Vert
@@ -100,7 +102,7 @@ $$
 
 ## 수렴률
 
-**정리.** $\mathcal T_h$ 의 요소가 형상 정칙이고 $u\in H^{k+1}(\Omega)\cap H_0^1(\Omega)$ 이면 $h$ 에 의존하지 않는 상수 $C$ 가 있어
+**정리.** $\mathcal T_h$ 의 요소가 형상 정칙(shape regular)이고 $u\in H^{k+1}(\Omega)\cap H_0^1(\Omega)$ 이면 $h$ 에 의존하지 않는 상수 $C$ 가 있어
 
 $$
 \Vert u-u\_h\Vert\_{H^1}\le Ch^k\Vert u\Vert\_{H^{k+1}}
@@ -108,9 +110,9 @@ $$
 
 이다.[^2]
 
-증명의 요지. Céa 보조정리의 하한을 $u$ 의 보간함수 $I_hu\in V_h$ 로 위에서 잡는다. 요소마다 Taylor 전개의 나머지를 재면 $\Vert u-I_hu\Vert\_{H^1(K)}\le C_K h_K^k\Vert u\Vert\_{H^{k+1}(K)}$ 이고, 상수 $C_K$ 는 $K$ 를 기준 단체로 보내는 아핀 사상의 특잇값비로 통제된다. 형상 정칙 조건은 그 비를 요소마다 일정하게 묶는 가정이다. 요소마다의 추정을 더해 전체 추정을 얻는다. $\square$
+증명의 요지. Céa 보조정리의 하한을 $u$ 의 보간함수(interpolant) $I_hu\in V_h$ 로 위에서 잡는다. 요소마다 Taylor 전개의 나머지를 재면 $\Vert u-I_hu\Vert\_{H^1(K)}\le C_K h_K^k\Vert u\Vert\_{H^{k+1}(K)}$ 이고, 상수 $C_K$ 는 $K$ 를 기준 단체로 보내는 아핀 사상(affine map)의 특잇값비로 통제된다. 형상 정칙 조건은 그 비를 요소마다 일정하게 묶는 가정이다. 요소마다의 추정을 더해 전체 추정을 얻는다. $\square$
 
-가정 $u\in H^{k+1}(\Omega)$ 는 자료 $f$ 에 대한 조건으로 바꿀 수 있다. [타원형 정칙성](elliptic-regularity.md)이 $f\in H^{k-1}(\Omega)$ 와 매끄러운 경계에서 $u\in H^{k+1}(\Omega)$ 를 주기 때문이다. 영역에 들어간 각이 있으면 이 정칙성이 깨지고 수렴률이 $h^k$ 보다 낮아진다.
+[타원형 정칙성](elliptic-regularity.md)에 따라 $f\in H^{k-1}(\Omega)$ 이고 경계가 매끄러우면 $u\in H^{k+1}(\Omega)$ 다. 그래서 가정 $u\in H^{k+1}(\Omega)$ 를 자료 $f$ 에 대한 조건으로 바꿀 수 있다. 영역에 들어간 각이 있으면 이 정칙성이 깨지고 수렴률이 $h^k$ 보다 낮아진다.
 
 ## L² 노름의 수렴률
 
@@ -128,7 +130,7 @@ $$
 \Vert e\Vert\_{L^2}=\sup\_{g\in L^2(\Omega),\thinspace g\ne 0}\frac{(e,g)}{\Vert g\Vert\_{L^2}}
 $$
 
-각 $g$ 에 **쌍대 문제**를 세운다. 모든 $v\in H\_0^1(\Omega)$ 에서 $B(w,v)=(g,v)$ 인 $w\in H\_0^1(\Omega)$ 를 잡는 것이고, Lax–Milgram 정리가 그 해를 준다. 타원형 정칙성이 가정한 영역에서 $w\in H^2(\Omega)$ 와 $\Vert w\Vert\_{H^2}\le C\Vert g\Vert\_{L^2}$ 를 준다.
+각 $g$ 에 **쌍대 문제(dual problem)** 를 세운다. 모든 $v\in H\_0^1(\Omega)$ 에서 $B(w,v)=(g,v)$ 인 $w\in H\_0^1(\Omega)$ 를 잡는 것이고, Lax–Milgram 정리가 그 해를 준다. 타원형 정칙성이 가정한 영역에서 $w\in H^2(\Omega)$ 와 $\Vert w\Vert\_{H^2}\le C\Vert g\Vert\_{L^2}$ 를 준다.
 
 $v=e$ 를 넣고 $B$ 의 대칭성을 쓰면 $(e,g)=B(w,e)=B(e,w)$ 다. Galerkin 직교성이 $B(e,v\_h)=0$ 을 주므로 $v\_h=I\_hw$ 를 빼도 값이 같다.
 
@@ -138,7 +140,7 @@ $$
 
 보간 추정을 $k=1$ 로 쓰면 $\Vert w-I\_hw\Vert\_{H^1}\le Ch\Vert w\Vert\_{H^2}$ 이고, 쌍대 문제의 정칙성으로 이것이 $Ch\Vert g\Vert\_{L^2}$ 이하다. $g$ 에 대한 상한을 취하면 $\Vert e\Vert\_{L^2}\le Ch\Vert e\Vert\_{H^1}$ 이고, $H^1$ 추정을 넣으면 $h^{k+1}$ 이 나온다. $\square$
 
-이 논법을 **Aubin–Nitsche 논법**이라 한다. 추가로 얻는 한 차수는 쌍대 해의 보간 오차에서 나오므로 $w$ 의 $H^2$ 정칙성이 필요하고, 들어간 각이 있는 영역에서는 그 정칙성이 깨져 차수가 떨어진다. $B$ 가 대칭이 아니면 쌍대 문제를 수반형식 $B(v,w)$ 로 세우고 같은 계산을 한다.
+이 논법을 **Aubin–Nitsche 논법(Aubin–Nitsche argument)** 이라 한다. 추가로 얻는 한 차수는 쌍대 해의 보간 오차에서 나오므로 $w$ 의 $H^2$ 정칙성이 필요하고, 들어간 각이 있는 영역에서는 그 정칙성이 깨져 차수가 떨어진다. $B$ 가 대칭이 아니면 쌍대 문제를 수반형식 $B(v,w)$ 로 세우고 같은 계산을 한다.
 
 ## 강성행렬의 희소성과 조건수
 
@@ -148,12 +150,12 @@ $B$ 가 대칭이면 $S$ 는 대칭 양의 정부호이고, $d$ 차원 등간격
 
 # 활용
 
-- **삼중대각계.** 일차원 조각일차 요소의 강성행렬은 삼중대각이다. [삼중대각계](tridiagonal-systems.md) 문서의 Thomas 알고리즘이 미지수 개수에 비례하는 연산으로 이 계를 푼다.
-- **다중격자.** [다중격자](multigrid.md)가 쓰는 격자 계층은 삼각분할을 성기게 한 단계들이고, 각 단계에서 푸는 계가 그 격자의 강성행렬이다. 다중격자의 수렴률이 격자 간격과 무관하다는 성질이 위의 조건수 증가를 상쇄한다.
-- **영역 분할법.** [영역 분할법](domain-decomposition.md)은 삼각분할을 부분영역으로 나누고 부분영역마다 작은 강성행렬을 푼다.
-- **전처리.** [전처리](preconditioning.md) 문서의 불완전 분해와 응집 전처리는 강성행렬의 희소 무늬를 입력으로 받는다.
-- **유속을 미지수로 두는 이산화.** [혼합 유한요소법](mixed-finite-element-method.md)은 $\sigma=-\nabla u$ 를 독립 미지수로 두어 $u$ 와 같은 차수로 근사한다. 위 삼각분할과 강성행렬을 그대로 쓰지만 공간을 둘 고르므로 가해성이 Lax–Milgram 정리가 아니라 Babuška–Brezzi 조건에서 나온다.
-- **이류-확산 방정식.** Lax–Milgram 정리 문서의 이류-확산 쌍선형형식에서 $\Vert b\Vert\_{L^\infty}$ 가 커지면 $\beta/\alpha$ 가 커지고 Céa 보조정리의 상한이 느슨해진다. 이 경우 격자를 가늘게 하기 전에는 수렴률이 보이지 않는다.
+- 일차원 조각일차 요소의 강성행렬은 삼중대각이다. [삼중대각계](tridiagonal-systems.md)를 푸는 Thomas 알고리즘(Thomas algorithm)이 미지수 개수에 비례하는 연산으로 이 계를 푼다.
+- [다중격자](multigrid.md)가 쓰는 격자 계층은 삼각분할을 성기게 한 단계들이고, 각 단계에서 푸는 계가 그 격자의 강성행렬이다. 다중격자의 수렴률이 격자 간격과 무관하다는 성질이 위의 조건수 증가를 상쇄한다.
+- [영역 분할법](domain-decomposition.md)은 삼각분할을 부분영역으로 나누고 부분영역마다 작은 강성행렬을 푼다.
+- [전처리](preconditioning.md)의 불완전 분해와 응집 전처리는 강성행렬의 희소 무늬를 입력으로 받는다.
+- 유속을 미지수로 두는 이산화. [혼합 유한요소법](mixed-finite-element-method.md)은 $\sigma=-\nabla u$ 를 독립 미지수로 두어 $u$ 와 같은 차수로 근사한다. 위 삼각분할과 강성행렬을 그대로 쓰지만 공간을 둘 고르므로 가해성이 Lax–Milgram 정리가 아니라 Babuška–Brezzi 조건에서 나온다.
+- 이류-확산 방정식(advection–diffusion equation)의 쌍선형형식에서 $\Vert b\Vert\_{L^\infty}$ 가 커지면 $\beta/\alpha$ 가 커지고 Céa 보조정리의 상한이 느슨해진다. 이 경우 격자를 가늘게 하기 전에는 수렴률이 보이지 않는다.
 
 [^1]: Susanne C. Brenner, L. Ridgway Scott, *The Mathematical Theory of Finite Element Methods*, 3판, Springer, 2008, 2.8 절.
 [^2]: Philippe G. Ciarlet, *The Finite Element Method for Elliptic Problems*, North-Holland, 1978, 3.2 절. 형상 정칙 조건과 아핀 사상의 특잇값비는 같은 책 3.1 절이다.
