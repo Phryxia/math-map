@@ -6,11 +6,7 @@
 
 # 직관
 
-유일분해정역은 $0$ 이 아닌 비단위 원소가 기약원의 곱으로 쓰이고 그 분해가 순서와 단위원 배수를 무시하면 유일한 정역이다. [소수](primes.md)에서 정수에 대해 성립한 산술의 기본정리를 환 일반으로 옮긴 조건이다.
-
-정역 가운데 이 성질을 갖는 것을 가려내는 기준이 [유클리드 정역](euclidean-domains.md)과 주아이디얼정역이다. 셋은 포함 사슬을 이루고, [다항식환](polynomial-rings.md)은 계수환이 무엇이냐에 따라 사슬의 어느 칸에 놓일지가 갈린다. [대수적 수체](algebraic-number-fields.md)의 정수환은 이 사슬에서 떨어져 나가며, 분해의 대상을 원소에서 아이디얼로 바꾸어 유일성을 복구한 것이 [Dedekind 정역](dedekind-domains.md)이다.
-
-정수에서 $6=2\cdot 3$ 이 순서와 단원을 무시하면 유일한 분해라는 것은 나눗셈 정리에서 따라온다. 나눗셈 정리가 있으면 유클리드 알고리즘이 돌고, 최대공약수가 두 원소의 결합으로 쓰이며, 기약원이 소원이 되어 유일성이 나온다.
+[소수](primes.md)로 쓴 정수의 분해 $6=2\cdot 3$ 이 순서와 단원을 무시하면 유일한 분해라는 것은 나눗셈 정리에서 따라온다. 나눗셈 정리가 있으면 유클리드 알고리즘이 돌고, 최대공약수가 두 원소의 결합으로 쓰이며, 기약원이 소원이 되어 유일성이 나온다.
 
 유일성이 깨지는 최초의 예가 $\mathbb Z[\sqrt{-5}]$ 다. 여기서 $6$ 은 두 가지로 분해된다.
 
@@ -24,16 +20,22 @@ $$
 
 $R$ 를 정역, $R^{\times}$ 를 그 단위원군이라 하자. $0$ 이 아닌 비단위 $p$ 에 대해 두 개념을 구분한다.
 
-- $p$ 가 **기약원**(irreducible)이라는 것은 $p=ab$ 이면 $a\in R^{\times}$ 또는 $b\in R^{\times}$ 라는 뜻이다.
-- $p$ 가 **소원**(prime)이라는 것은 $p \mid ab$ 이면 $p \mid a$ 또는 $p \mid b$ 라는 뜻이다. 동치로 $(p)$ 가 [소 아이디얼](prime-ideals.md)이다.
+- $p$ 가 **기약원(irreducible element)** 이라는 것은 $p=ab$ 이면 $a\in R^{\times}$ 또는 $b\in R^{\times}$ 라는 뜻이다.
+- $p$ 가 **소원(prime element)** 이라는 것은 $p \mid ab$ 이면 $p \mid a$ 또는 $p \mid b$ 라는 뜻이다.
 
-정역 $R$ 가 **유일분해정역**이라는 것은 $0$ 이 아닌 모든 비단위 $a$ 가 다음 꼴로 쓰이고, 그 표현이 인수의 순서와 단위원 배수를 무시하면 유일하다는 뜻이다.
+$\mathbb Z$ 에서 $2$ 는 기약원이자 소원이다. 직관 절의 $\mathbb Z[\sqrt{-5}]$ 에서 $2$ 는 노름이 $4$ 이고 노름 $2$ 인 원소가 없어 기약원이지만, $2\mid(1+\sqrt{-5})(1-\sqrt{-5})=6$ 이면서 어느 인수도 나누지 않아 소원이 아니다.
+
+정역 $R$ 가 **유일분해정역(unique factorization domain, UFD)** 이라는 것은 $0$ 이 아닌 모든 비단위 $a$ 가 다음 꼴로 쓰이고, 그 표현이 인수의 순서와 단위원 배수를 무시하면 유일하다는 뜻이다.
 
 $$
 a = u\thinspace p_1\cdots p_m,\qquad u\in R^{\times},\ p_i \text{ 기약}
 $$
 
-**주아이디얼정역**(principal ideal domain, PID)은 모든 [아이디얼](ideals-quotient-rings.md)이 한 원소로 생성되는 정역이다. **유클리드 정역**(Euclidean domain, ED)은 함수 $N\colon R\setminus\lbrace 0\rbrace \to \mathbb Z\_{\ge 0}$ 가 있어 $b \ne 0$ 인 임의의 $a,b$ 에 대해 $a=qb+r$ 이고 $r=0$ 이거나 $N(r)\lt N(b)$ 인 $q,r$ 가 존재하는 정역이다.
+$\mathbb Z$ 는 유일분해정역이고, $6$ 의 두 분해를 가진 $\mathbb Z[\sqrt{-5}]$ 는 유일분해정역이 아니다.
+
+**주아이디얼정역(principal ideal domain, PID)** 은 모든 [아이디얼](ideals-quotient-rings.md)이 한 원소로 생성되는 정역이다. $\mathbb Z$ 의 아이디얼은 $n\mathbb Z$ 꼴이라 $\mathbb Z$ 는 PID 다.
+
+[유클리드 정역](euclidean-domains.md)(Euclidean domain, ED)은 함수 $N\colon R\setminus\lbrace 0\rbrace \to \mathbb Z\_{\ge 0}$ 가 있어 $b \ne 0$ 인 임의의 $a,b$ 에 대해 $a=qb+r$ 이고 $r=0$ 이거나 $N(r)\lt N(b)$ 인 $q,r$ 가 존재하는 정역이다. $\mathbb Z$ 는 $N(a)=\vert a\vert$ 로, 체 위의 다항식환은 $N(f)=\deg f$ 로 유클리드 정역이다.
 
 # 성질
 
@@ -64,7 +66,7 @@ $I \ne 0$ 을 아이디얼이라 하고 $N$ 값이 최소인 $b \in I\setminus\l
 
 ## 기약원과 소원
 
-임의의 정역에서 소원은 기약이다. $p=ab$ 이면 $p\mid ab$ 이므로 $p\mid a$ 라 하고 $a=pc$ 로 쓰면 $p=pcb$ 에서 $cb=1$ 이 되어 $b$ 가 단위원이다.
+$p$ 가 소원인 것과 $(p)$ 가 [소 아이디얼](prime-ideals.md)인 것은 동치다. 임의의 정역에서 소원은 기약이다. $p=ab$ 이면 $p\mid ab$ 이므로 $p\mid a$ 라 하고 $a=pc$ 로 쓰면 $p=pcb$ 에서 $cb=1$ 이 되어 $b$ 가 단위원이다.
 
 역은 UFD 에서만 성립한다. 두 성질이 갈라지는 자리가 $\mathbb Z[\sqrt{-5}]$ 이고, $2$ 는 기약이지만 $2 \mid (1+\sqrt{-5})(1-\sqrt{-5})$ 이면서 두 인수 어느 쪽도 나누지 않으므로 소원이 아니다.
 
@@ -78,11 +80,11 @@ PID 는 이 성질을 갖지 않는다. $\mathbb Z$ 는 PID 이지만 $\mathbb Z
 
 ## 대수적 정수론
 
-대수적 수체의 정수환은 일반적으로 UFD 가 아니다. 유수(class number)가 그 실패를 재는 유한 불변량이고, 유수가 $1$ 인 것과 정수환이 PID 인 것이 동치이며 이때 UFD 이기도 하다. 원소의 분해 대신 아이디얼의 소 아이디얼 분해를 쓰면 유일성이 회복되고, 그 조건을 공리로 뽑은 것이 Dedekind 정역이다.
+[대수적 수체](algebraic-number-fields.md)의 정수환은 일반적으로 UFD 가 아니다. 유수(class number)가 그 실패를 재는 유한 불변량이고, 유수가 $1$ 인 것과 정수환이 PID 인 것이 동치이며 이때 UFD 이기도 하다. 원소의 분해 대신 아이디얼의 소 아이디얼 분해를 쓰면 유일성이 회복되고, 그 조건을 공리로 뽑은 것이 [Dedekind 정역](dedekind-domains.md)이다.
 
 ## 다항식과 인수분해
 
-다항식환 $k[x]$ 는 차수를 Euclid 함수로 삼는 ED 이므로 기약다항식 분해가 유일하다. 이 유일성이 기약다항식으로 나눈 몫이 체가 된다는 사실과 맞물려 [체의 확대](field-extensions.md)와 [유한체](finite-fields.md)의 구성을 떠받친다. 여러 변수의 경우 $k[x_1,\dots,x_n]$ 은 PID 가 아니지만 Gauss 정리로 UFD 이므로 기약 분해는 여전히 유일하다.
+[다항식환](polynomial-rings.md) $k[x]$ 는 차수를 Euclid 함수로 삼는 ED 이므로 기약다항식 분해가 유일하다. 이 유일성이 기약다항식으로 나눈 몫이 체가 된다는 사실과 맞물려 [체의 확대](field-extensions.md)와 [유한체](finite-fields.md)의 구성을 떠받친다. 여러 변수의 경우 $k[x_1,\dots,x_n]$ 은 PID 가 아니지만 Gauss 정리로 UFD 이므로 기약 분해는 여전히 유일하다.
 
 ## 최대공약수
 
