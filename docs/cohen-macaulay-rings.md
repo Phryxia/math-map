@@ -6,9 +6,7 @@
 
 # 직관
 
-Cohen–Macaulay 환의 조건은 [정칙 국소환](regular-local-rings.md)의 조건을 약화한 것이다.
-
-정칙 국소환 $R$ 에서는 극대 아이디얼 $\mathfrak m$ 이 $d=\dim R$ 개의 원소로 생성되고, 그 원소로 하나씩 나누면 차원이 매번 $1$ 씩 떨어져 $d$ 번 만에 $0$ 이 된다. 일반 Noether 국소환에서 같은 계산을 해 보면 $R=k[[x,y]]/(xy)$ 는 차원이 $1$ 인데 $xy=0$ 이고 $y\ne 0$ 이라 $x$ 가 영인자여서 나눌 수 없고, $y$ 도 같다. $x+y$ 는 영인자가 아니고, 이것으로 나누면 $k[[x]]/(x^2)$ 이라 차원이 $0$ 이다. 한 번 나누어 차원 $1$ 을 다 썼다.
+[정칙 국소환](regular-local-rings.md) $R$ 에서는 극대 아이디얼 $\mathfrak m$ 이 $d=\dim R$ 개의 원소로 생성되고, 그 원소로 하나씩 나누면 차원이 매번 $1$ 씩 떨어져 $d$ 번 만에 $0$ 이 된다. 일반 Noether 국소환에서 같은 계산을 해 보면 $R=k[[x,y]]/(xy)$ 는 차원이 $1$ 인데 $xy=0$ 이고 $y\ne 0$ 이라 $x$ 가 영인자여서 나눌 수 없고, $y$ 도 같다. $x+y$ 는 영인자가 아니고, 이것으로 나누면 $k[[x]]/(x^2)$ 이라 차원이 $0$ 이다. 한 번 나누어 차원 $1$ 을 다 썼다.
 
 $R=k[[x,y]]/(x^2,xy)$ 도 차원이 $1$ 이다. 그런데 $x\cdot x=0$ 이고 $x\cdot y=0$ 이므로 $\mathfrak m=(x,y)$ 의 모든 원소가 $x$ 를 죽이고, 영인자가 아닌 원소가 하나도 없다. 나눌 수 있는 원소가 없으니 차원 $1$ 을 한 번도 쓰지 못한다. 나눌 수 있는 원소를 이어 놓은 열의 최대 길이를 깊이라 하면, 앞의 환은 깊이가 $1$ 로 차원과 같고 뒤의 환은 깊이가 $0$ 으로 차원보다 작다.
 
@@ -18,19 +16,29 @@ $(R,\mathfrak m)$ 을 Noether 국소환, $M\ne 0$ 을 유한생성 $R$ 가군이
 
 ## 정칙열
 
-$x_1,\dots,x_n\in\mathfrak m$ 이 **$M$ 정칙열**이라는 것은 각 $i$ 에서 $x_i$ 가 $M/(x_1,\dots,x_{i-1})M$ 의 영인자가 아니고 $M/(x_1,\dots,x_n)M\ne 0$ 인 것이다.
+$x_1,\dots,x_n\in\mathfrak m$ 이 **$M$ 정칙열($M$-regular sequence)** 이라는 것은 각 $i$ 에서 $x_i$ 가 $M/(x_1,\dots,x_{i-1})M$ 의 영인자가 아니고 $M/(x_1,\dots,x_n)M\ne 0$ 인 것이다.
+
+직관 절의 $R=k\lbrack\lbrack x,y\rbrack\rbrack/(xy)$ 에서 $x+y$ 는 길이 $1$ 인 $R$ 정칙열이고, $x$ 와 $y$ 는 영인자이므로 정칙열이 아니다.
 
 ## 깊이
 
-**깊이** $\mathrm{depth}\thinspace M$ 은 $\mathfrak m$ 안의 $M$ 정칙열의 최대 길이다. 모든 극대 정칙열의 길이가 같으므로 이 값이 잘 정의된다.
+**깊이(depth)** $\mathrm{depth}\thinspace M$ 은 $\mathfrak m$ 안의 $M$ 정칙열의 최대 길이다.
+
+직관 절의 두 환에서 $k\lbrack\lbrack x,y\rbrack\rbrack/(xy)$ 는 깊이가 $1$ 이고, $k\lbrack\lbrack x,y\rbrack\rbrack/(x^2,xy)$ 는 $\mathfrak m$ 의 모든 원소가 영인자이므로 깊이가 $0$ 이다.
 
 ## Cohen–Macaulay 환
 
 **Cohen–Macaulay 환**은 $\mathrm{depth}\thinspace R=\dim R$ 인 Noether 국소환이다. 국소가 아닌 [Noether 환](noetherian-rings.md)은 모든 극대 아이디얼에서의 국소화가 이 조건을 만족할 때 Cohen–Macaulay 라 한다.
 
-$M$ 에 대해서도 $\mathrm{depth}\thinspace M=\dim M$ 이면 **Cohen–Macaulay 가군**이라 한다.
+$M$ 에 대해서도 $\mathrm{depth}\thinspace M=\dim M$ 이면 **Cohen–Macaulay 가군(Cohen–Macaulay module)** 이라 한다.
+
+$k\lbrack\lbrack x,y\rbrack\rbrack/(xy)$ 는 깊이와 차원이 모두 $1$ 이므로 Cohen–Macaulay 환이고, $k\lbrack\lbrack x,y\rbrack\rbrack/(x^2,xy)$ 는 깊이 $0$ 이 차원 $1$ 보다 작으므로 Cohen–Macaulay 환이 아니다.
 
 # 성질
+
+## 깊이의 정의 가능성
+
+$\mathfrak m$ 안의 극대 $M$ 정칙열은 길이가 모두 같으므로 깊이가 잘 정의된다.
 
 ## 깊이와 차원의 부등식
 
