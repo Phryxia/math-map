@@ -10,27 +10,27 @@ $\mathbb Q$ 위에서 $A=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 를 대각화�
 
 고윳값을 쓰지 않고 기저를 잡아 본다. $v=(1,0)$ 으로 두면 $Av=(0,1)$ 이고 두 벡터가 $\mathbb Q^2$ 의 기저다. $A(Av)=A^2v=-v$ 이므로 이 기저에서 $A$ 의 행렬은 둘째 열이 $(-1,0)$ 인 $\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 이다. 둘째 열의 성분 $-1,0$ 은 $A^2v+v=0$ 이라는 관계, 곧 $x^2+1$ 의 계수에서 그대로 나왔다.
 
-$v,Av,A^2v,\dots$ 를 처음 일차종속이 생길 때까지 늘어놓으면 그 종속 관계가 $v$ 를 없애는 가장 낮은 차수의 모닉 다항식을 주고, 그 계수를 마지막 열에 적은 행렬이 블록 하나가 된다. 계수는 $k$ 안에 있으므로 근을 찾을 필요가 없다. 공간을 이런 블록들로 쪼갠 꼴이 유리 표준형이다.
-
-유리 표준형의 블록은 고윳값 대신 다항식의 계수를 성분으로 쓰므로 어떤 체에서도 만들 수 있고, 블록을 정하는 다항식들이 체 확대로 바뀌지 않는다.
+$v,Av,A^2v,\dots$ 를 처음 일차종속이 생길 때까지 늘어놓으면 그 종속 관계가 $v$ 를 없애는 가장 낮은 차수의 다항식(최고차 계수 $1$)을 주고, 그 계수를 마지막 열에 적은 행렬이 블록 하나가 된다. 계수는 $k$ 안에 있으므로 근을 찾을 필요가 없다. 공간을 이런 블록들로 쪼갠 꼴이 유리 표준형이다.
 
 # 정의
 
-모닉 다항식 $f(x)=x^n+c\_{n-1}x^{n-1}+\cdots+c\_1x+c\_0$ 의 **동반행렬**은 다음 $n\times n$ 행렬이다.
+최고차 계수가 $1$ 인 다항식 $f(x)=x^n+c\_{n-1}x^{n-1}+\cdots+c\_1x+c\_0$ 의 **동반행렬(companion matrix)** 은 다음 $n\times n$ 행렬이다.
 
 $$
 C(f)=\begin{pmatrix}0&0&\cdots&0&-c\_0\cr 1&0&\cdots&0&-c\_1\cr 0&1&\cdots&0&-c\_2\cr \vdots&\vdots&\ddots&\vdots&\vdots\cr 0&0&\cdots&1&-c\_{n-1}\end{pmatrix}
 $$
 
-대각 바로 아래가 모두 1 이고 마지막 열이 $f$ 의 계수를 부호 바꾸어 놓은 것이며 나머지는 0 이다.
+대각 바로 아래가 모두 1 이고 마지막 열이 $f$ 의 계수를 부호 바꾸어 놓은 것이며 나머지는 0 이다. 직관 절의 $A$ 는 $C(x^2+1)$ 이고, $C(x-2)$ 는 $1\times1$ 행렬 $(2)$ 다. $(x-1)^2=x^2-2x+1$ 이므로 $C((x-1)^2)=\begin{pmatrix}0&-1\cr 1&2\end{pmatrix}$ 이다.
 
-$V$ 를 $k$ 위의 유한차원 [벡터 공간](vector-spaces.md), $T\colon V\to V$ 를 [선형사상](linear-maps.md)이라 하자. $T$ 의 **유리 표준형**은 $T$ 의 행렬이
+$V$ 를 $k$ 위의 유한차원 [벡터 공간](vector-spaces.md), $T\colon V\to V$ 를 [선형사상](linear-maps.md)이라 하자. $T$ 의 **유리 표준형(rational canonical form)** 은 $T$ 의 행렬이
 
 $$
 C(d\_1)\oplus C(d\_2)\oplus\cdots\oplus C(d\_k)
 $$
 
-가 되는 기저에서의 블록대각 행렬이다. 여기서 $d\_1,\dots,d\_k$ 는 $\deg d\_i\ge 1$ 이고 $d\_1\mid d\_2\mid\cdots\mid d\_k$ 인 모닉 다항식이다. 이 $d\_i$ 를 $T$ 의 **불변인자**라 한다. Frobenius 표준형이라고도 한다.
+가 되는 기저에서의 블록대각 행렬이다. 여기서 $d\_1,\dots,d\_k$ 는 $\deg d\_i\ge 1$ 이고 $d\_1\mid d\_2\mid\cdots\mid d\_k$ 인 다항식이고 최고차 계수가 $1$ 이다. 이 $d\_i$ 를 $T$ 의 **불변인자(invariant factors)** 라 한다. 유리 표준형을 Frobenius 표준형(Frobenius normal form)이라고도 한다.
+
+직관 절의 $A$ 는 불변인자가 $x^2+1$ 하나이고 유리 표준형이 $C(x^2+1)$ 이다. $\mathbb Q^2$ 에서 $2I$ 는 $d\_1=d\_2=x-2$ 이고 유리 표준형이 $C(x-2)\oplus C(x-2)=2I$ 다.
 
 # 성질
 
@@ -38,7 +38,7 @@ $$
 
 *정리.* $k$ 가 체이고 $V$ 가 $k$ 위의 유한차원 벡터 공간이면, 각 선형사상 $T\colon V\to V$ 에 대해 유리 표준형을 주는 기저가 존재하고 불변인자의 열 $d\_1\mid\cdots\mid d\_k$ 는 유일하다[^1].
 
-*증명의 요지.* $x\cdot v=Tv$ 로 $V$ 에 $k\lbrack x\rbrack$ [가군](modules.md) 구조를 준다. $\dim V$ 가 유한하므로 $V$ 는 유한생성 비틀림 가군이고, [PID 위의 유한생성 가군](finitely-generated-modules.md)(principal ideal domain)의 불변인자 분해가
+*증명의 요지.* $x\cdot v=Tv$ 로 $V$ 에 $k\lbrack x\rbrack$ [가군](modules.md) 구조를 준다. $\dim V$ 가 유한하므로 $V$ 는 유한생성 비틀림 가군이고, [PID 위의 유한생성 가군](finitely-generated-modules.md)(principal ideal domain, PID)(principal ideal domain)의 불변인자 분해가
 
 $$
 V\cong k\lbrack x\rbrack/(d\_1)\oplus\cdots\oplus k\lbrack x\rbrack/(d\_k)
