@@ -12,13 +12,7 @@ $$
 [X,Y]=XY-YX
 $$
 
-이 괄호를 갖춘 벡터공간이 Lie 대수다. 결합법칙 대신 Jacobi 항등식을 만족하는 비결합 대수이며, [Lie 군](lie-groups.md)의 문제를 선형사상의 문제로 옮긴다. 군의 부분군은 부분대수에, 정규부분군은 아이디얼에, 준동형은 준동형에 대응하고, 단순연결 Lie 군에 대해서는 이 대응이 [범주](category.md) 동치다.
-
-$$
-\lbrace\text{단순연결 Lie 군}\rbrace\ \simeq\ \lbrace\text{유한차원 실 Lie 대수}\rbrace
-$$
-
-[복소수](complex-numbers.md) 위의 단순 Lie 대수는 완전히 분류되어 있고, 목록은 네 개의 무한 계열 $A_n,B_n,C_n,D_n$ 과 다섯 개의 예외 $E_6,E_7,E_8,F_4,G_2$ 다. 이 목록은 [군의 표현](group-representations.md)에서 유한군의 지표표가 하는 역할을 연속군 쪽에서 맡는다.
+이 괄호를 갖춘 벡터공간이 Lie 대수다. 결합법칙 대신 Jacobi 항등식을 만족하는 비결합 대수이며, [Lie 군](lie-groups.md)의 문제를 선형사상의 문제로 옮긴다.
 
 $X$ 방향으로 시간 $t$ , $Y$ 방향으로 $t$ , 다시 $X$ 로 $-t$ , $Y$ 로 $-t$ 만큼 흐르면 가환인 경우에만 제자리로 돌아온다. 남는 오차의 최저차항이 교환자다.
 
@@ -38,34 +32,26 @@ $$
 
 ## Lie 대수
 
-체 $k$ 위의 벡터공간 $\mathfrak g$ 와 쌍선형 사상 $[\cdot,\cdot]:\mathfrak g\times\mathfrak g\to\mathfrak g$ 가 다음을 만족하면 **Lie 대수**다.
+**Lie 대수** 는 체 $k$ 위의 벡터공간 $\mathfrak g$ 와 쌍선형 사상 $[\cdot,\cdot]:\mathfrak g\times\mathfrak g\to\mathfrak g$ 의 쌍 가운데 다음을 만족하는 것이다.
 
-- 교대성: 모든 $X$ 에 대해 $[X,X]=0$ 이다. 따라서 $[X,Y]=-[Y,X]$ 다.
-- Jacobi 항등식: $[X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0$ 이다.
+- 교대성(alternating property): 모든 $X$ 에 대해 $[X,X]=0$ 이다. 따라서 $[X,Y]=-[Y,X]$ 다.
+- Jacobi 항등식(Jacobi identity): $[X,[Y,Z]]+[Y,[Z,X]]+[Z,[X,Y]]=0$ 이다.
 
-괄호는 결합적이지 않고 $[[X,Y],Z]\ne[X,[Y,Z]]$ 다. Jacobi 항등식이 그 자리를 대신하며, $\mathrm{ad}\_X(Y)=[X,Y]$ 로 두면 같은 식이
+결합대수 $A$ 는 $[a,b]=ab-ba$ 로 Lie 대수가 된다. $\mathfrak{gl}\_n=M_n(k)$ 가 그런 예다. $\mathbb R^3$ 에 벡터곱을 괄호로 준 것도 Lie 대수이고, 직관 절의 $\mathfrak{so}(3)$ 가 이것이다. $[e_1,e_1]=0$ 이고, $X=e_1$, $Y=e_2$, $Z=e_3$ 에서 Jacobi 항등식의 세 항은 $[e_1,e_1]+[e_2,e_2]+[e_3,e_3]=0$ 이다.
 
-$$
-\mathrm{ad}\_X([Y,Z])=[\mathrm{ad}\_XY,Z]+[Y,\mathrm{ad}\_XZ]
-$$
+**부분대수(subalgebra)** 는 괄호에 닫힌 부분공간이고, **아이디얼(ideal)** $\mathfrak a$ 는 $[\mathfrak g,\mathfrak a]\subset\mathfrak a$ 인 부분공간이다. 아이디얼로 몫 $\mathfrak g/\mathfrak a$ 를 만든다.
 
-가 된다. $\mathrm{ad}\_X$ 가 괄호에 대한 도함수라는 뜻이고, 대칭의 무한소 작용이 미분이라는 관점에서 Jacobi 항등식은 Leibniz 규칙이다.
-
-결합대수 $A$ 는 $[a,b]=ab-ba$ 로 Lie 대수가 된다. $\mathfrak{gl}\_n=M_n(k)$ 가 그런 예이고, [Ado 정리](ado-theorem.md)로 모든 유한차원 Lie 대수는 어떤 $\mathfrak{gl}\_n$ 의 부분대수다.
-
-**부분대수**는 괄호에 닫힌 부분공간, **아이디얼** $\mathfrak a$ 는 $[\mathfrak g,\mathfrak a]\subset\mathfrak a$ 인 부분공간이다. 아이디얼로 몫 $\mathfrak g/\mathfrak a$ 를 만들며, 군의 정규부분군에 대응한다.
+$\mathfrak{gl}\_n$ 에서 대각합이 $0$ 인 행렬 전체 $\mathfrak{sl}\_n$ 은 $\mathrm{tr}(XY-YX)=0$ 이므로 아이디얼이다. 상삼각행렬 전체는 곱에 닫혀 있으므로 부분대수이지만 아이디얼이 아니다.
 
 ## 딸림표현과 Killing 형식
 
-$\mathrm{ad}:\mathfrak g\to\mathfrak{gl}(\mathfrak g)$ , $\mathrm{ad}\_X(Y)=[X,Y]$ 가 **딸림표현**이다. Jacobi 항등식이 이것이 Lie 대수 준동형임을 보장하며, 핵은 중심 $Z(\mathfrak g)$ 다.
-
-딸림표현에서 만든 대칭 쌍선형형식이 **Killing 형식**이다.
+**딸림표현(adjoint representation)** 은 $\mathrm{ad}:\mathfrak g\to\mathfrak{gl}(\mathfrak g)$ , $\mathrm{ad}\_X(Y)=[X,Y]$ 다. **Killing 형식(Killing form)** 은 딸림표현에서 만든 다음 대칭 쌍선형형식이다.
 
 $$
 \kappa(X,Y)=\mathrm{tr}\left(\mathrm{ad}\_X\circ\mathrm{ad}\_Y\right)
 $$
 
-구조상수만으로 계산되고 불변성 $\kappa([X,Y],Z)=\kappa(X,[Y,Z])$ 을 만족한다.
+$\mathfrak{so}(3)$ 에서 $\mathrm{ad}\_{e_1}$ 은 $e_1\mapsto 0$, $e_2\mapsto e_3$, $e_3\mapsto -e_2$ 이다. $\mathrm{ad}\_{e_1}^2$ 은 $e_2,e_3$ 을 각각 $-e_2,-e_3$ 으로 보내므로 $\kappa(e_1,e_1)=-2$ 이고, 같은 계산으로 $\kappa(e_i,e_j)=-2\delta\_{ij}$ 다.
 
 ## 가해, 멱영, 반단순
 
@@ -79,11 +65,25 @@ $$
 \mathfrak g^{1}=\mathfrak g,\quad \mathfrak g^{k+1}=[\mathfrak g,\mathfrak g^{k}]
 $$
 
-어떤 $k$ 에서 $\mathfrak g^{(k)}=0$ 이면 **가해**, $\mathfrak g^{k}=0$ 이면 **멱영**이다. 멱영이면 가해다. 상삼각행렬이 가해의 표준 예이고, 대각성분이 0 인 엄격 상삼각행렬이 멱영의 예다.
+어떤 $k$ 에서 $\mathfrak g^{(k)}=0$ 이면 **가해(solvable)** 이고, $\mathfrak g^{k}=0$ 이면 **멱영(nilpotent)** 이다. 상삼각행렬이 가해의 표준 예이고, 대각성분이 0 인 엄격 상삼각행렬이 멱영의 예다. $2\times 2$ 상삼각행렬에서 $\mathfrak g^{(1)}$ 은 엄격 상삼각행렬 $\lbrace\begin{pmatrix}0&b\cr 0&0\end{pmatrix}\rbrace$ 이고 $\mathfrak g^{(2)}=0$ 이다.
 
-가해 아이디얼 중 최대인 것이 **근기** $\mathrm{rad}\mathfrak g$ 다. $\mathrm{rad}\mathfrak g=0$ 이면 **반단순**이고, 진아이디얼이 $0$ 뿐이며 가환이 아니면 **단순**이다.
+가해 아이디얼 중 최대인 것이 **근기(radical)** $\mathrm{rad}\mathfrak g$ 다. $\mathrm{rad}\mathfrak g=0$ 이면 **반단순(semisimple)** 이고, 진아이디얼이 $0$ 뿐이며 가환이 아니면 **단순(simple)** 이다. $\mathfrak{so}(3)$ 은 단순이다. 영이 아닌 아이디얼이 원소 $X\ne 0$ 을 가지면 $X$ 에 수직인 $Y$ 와의 벡터곱 $[X,Y]$ 와 $[X,[X,Y]]$ 가 $X$ 와 함께 $\mathbb R^3$ 을 채운다.
 
 # 성질
+
+## 딸림표현의 성질
+
+괄호는 결합적이지 않고 $[[X,Y],Z]\ne[X,[Y,Z]]$ 다. Jacobi 항등식이 그 자리를 대신하며, $\mathrm{ad}\_X(Y)=[X,Y]$ 로 두면 같은 식이
+
+$$
+\mathrm{ad}\_X([Y,Z])=[\mathrm{ad}\_XY,Z]+[Y,\mathrm{ad}\_XZ]
+$$
+
+가 된다. $\mathrm{ad}\_X$ 가 괄호에 대한 도함수라는 뜻이고, 대칭의 무한소 작용이 미분이라는 관점에서 Jacobi 항등식은 Leibniz 규칙이다.
+
+Jacobi 항등식은 $\mathrm{ad}$ 가 Lie 대수 준동형임을 뜻하고, $\mathrm{ad}$ 의 핵은 중심 $Z(\mathfrak g)$ 다. Killing 형식은 구조상수만으로 계산되고 불변성 $\kappa([X,Y],Z)=\kappa(X,[Y,Z])$ 을 만족한다. 귀납법으로 $\mathfrak g^{(k)}\subset\mathfrak g^{k+1}$ 이므로 멱영이면 가해다.
+
+[Ado 정리](ado-theorem.md)로 모든 유한차원 Lie 대수는 어떤 $\mathfrak{gl}\_n$ 의 부분대수다.
 
 ## Cartan 판정법
 
