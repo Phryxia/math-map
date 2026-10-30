@@ -6,8 +6,6 @@
 
 # 직관
 
-자유가군은 사영가군이고 역은 성립하지 않는다. 사영성은 $\mathrm{Hom}\_R(P,-)$ 가 완전함자라는 것과 동치이므로, 유도 함자가 사영가군의 분해 위에서 정의된다.
-
 $\pi\colon\mathbb Z\to\mathbb Z/2\mathbb Z$ 를 몫사상이라 하자. $f\colon\mathbb Z/2\mathbb Z\to\mathbb Z/2\mathbb Z$ 를 항등사상으로 두고 $\pi\circ g=f$ 인 $\mathbb Z$ 가군 준동형 $g\colon\mathbb Z/2\mathbb Z\to\mathbb Z$ 를 찾는다. $g(1)=n$ 이라 하면 $\mathbb Z/2\mathbb Z$ 에서 $1+1=0$ 이므로 $2n=g(0)=0$ 이고 $\mathbb Z$ 에서 $n=0$ 이다. 그러면 $\pi(g(1))=0$ 인데 $f(1)=1$ 이므로 그런 $g$ 는 없다.
 
 막힌 것은 정의역 $\mathbb Z/2\mathbb Z$ 의 생성원에 관계 $2x=0$ 이 걸려 있어서다. 정의역을 $\mathbb Z$ 로 바꾸면 생성원 $1$ 에 아무 관계가 없으므로, $f(1)$ 의 원상 가운데 하나를 골라 $g(1)$ 로 두는 것으로 준동형이 정해진다. 자유가군이면 기저의 원소마다 원상을 하나씩 고르면 끝난다.
@@ -16,7 +14,7 @@ $\pi\colon\mathbb Z\to\mathbb Z/2\mathbb Z$ 를 몫사상이라 하자. $f\colon
 
 # 정의
 
-$R$ 를 환, $P$ 를 $R$ 가군이라 하자. $P$ 가 **사영**이라는 것은 모든 전사 $R$ 준동형 $\pi\colon M\to N$ 과 모든 $R$ 준동형 $f\colon P\to N$ 에 대해
+$R$ 를 환, $P$ 를 $R$ 가군이라 하자. $P$ 가 **사영(projective)** 이라는 것은 모든 전사 $R$ 준동형 $\pi\colon M\to N$ 과 모든 $R$ 준동형 $f\colon P\to N$ 에 대해
 
 $$
 \pi\circ g=f
@@ -24,7 +22,9 @@ $$
 
 인 $R$ 준동형 $g\colon P\to M$ 이 존재하는 것이다.
 
-가군 $M$ 의 **사영 분해**는 각 $P\_n$ 이 사영가군인 완전열 $\cdots\to P\_1\to P\_0\to M\to 0$ 이다.
+$\mathbb Z$ 는 사영 $\mathbb Z$ 가군이다. $f(1)$ 의 원상 $m$ 을 하나 골라 $g(1)=m$ 으로 두면 $\pi\circ g=f$ 다. 직관 절의 계산에서 $\pi\colon\mathbb Z\to\mathbb Z/2\mathbb Z$ 와 항등사상 $f$ 에 대해 $g$ 가 없으므로 $\mathbb Z/2\mathbb Z$ 는 사영 $\mathbb Z$ 가군이 아니다.
+
+가군 $M$ 의 **사영 분해(projective resolution)** 는 각 $P\_n$ 이 사영가군인 완전열 $\cdots\to P\_1\to P\_0\to M\to 0$ 이다. $0\to\mathbb Z\xrightarrow{2}\mathbb Z\to\mathbb Z/2\mathbb Z\to0$ 은 $\mathbb Z/2\mathbb Z$ 의 사영 분해다.
 
 # 성질
 
