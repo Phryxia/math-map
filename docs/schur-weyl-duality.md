@@ -11,21 +11,7 @@ $V=\mathbb C^n$ 을 잡고 그 $k$ 중 텐서곱 $V^{\otimes k}$ 를 본다. 이
 - $\mathrm{GL}\_n(\mathbb C)$ 가 각 자리에 똑같이 작용한다. $g\cdot(v_1\otimes\cdots\otimes v_k)=gv_1\otimes\cdots\otimes gv_k$ 이다.
 - 대칭군 $S_k$ 가 자리를 바꾼다. $\sigma\cdot(v_1\otimes\cdots\otimes v_k)=v_{\sigma^{-1}(1)}\otimes\cdots\otimes v_{\sigma^{-1}(k)}$ 이다.
 
-두 작용은 서로 교환한다. 자리를 바꾸고 같은 행렬을 곱하나, 곱하고 자리를 바꾸나 결과가 같기 때문이다. 여기까지는 확인만 하면 되는 사실이다.
-
-Schur–Weyl 쌍대성에서 이 관계는 가능한 한 팽팽하다.
-
-> 각 군이 생성하는 작용소대수는 정확히 다른 쪽의 중심화대수(commutant, 가환자)다. $\mathrm{GL}\_n$ 과 교환하는 작용소는 전부 $S_k$ 의 선형결합이고, 그 역도 성립한다.
-
-여기서 분해가 따라온다.
-
-$$
-V^{\otimes k}\cong\bigoplus_{\lambda\vdash k,\ \ell(\lambda)\le n} S^{\lambda}\otimes V_{\lambda}
-$$
-
-같은 색인 $\lambda$ — $k$ 의 분할 — 가 대칭군 기약표현 $S^\lambda$ 와 $\mathrm{GL}\_n$ 기약표현 $V_\lambda$ 를 **동시에** 붙잡는다. 중복도가 다른 쪽의 기약표현이라는 말이다.
-
-분할이 두 표현론을 동시에 색인하므로 [Schur 다항식](schur-polynomials.md)은 대칭함수의 기저이면서 $\mathrm{GL}\_n$ 지표다. [군의 표현](group-representations.md)의 지표 이론이 두 해석을 잇는다.
+자리를 바꾼 뒤 같은 행렬을 곱한 결과와 행렬을 곱한 뒤 자리를 바꾼 결과가 같으므로 두 작용은 서로 교환한다.
 
 $k=2$ 에서 $V\otimes V$ 는 대칭 부분과 반대칭 부분으로 갈린다.
 
@@ -39,23 +25,41 @@ $k=3$ 부터는 자명표현과 부호표현 말고 2 차원 기약표현이 하
 
 # 정의
 
-## 두 작용과 이중 중심화
+## 두 작용
 
-$\rho:\mathbb C[S_k]\to\mathrm{End}(V^{\otimes k})$ 와 $\pi:\mathbb C[\mathrm{GL}\_n]\to\mathrm{End}(V^{\otimes k})$ 를 위 작용으로 두고 상을 각각 $\mathcal S$ 와 $\mathcal G$ 라 하자.
+$\rho:\mathbb C\lbrack S_k\rbrack\to\mathrm{End}(V^{\otimes k})$ 와 $\pi:\mathbb C\lbrack\mathrm{GL}\_n\rbrack\to\mathrm{End}(V^{\otimes k})$ 를 직관 절의 두 작용으로 두고 상을 각각 $\mathcal S$ 와 $\mathcal G$ 라 하자.
 
-**Schur–Weyl 쌍대성(Schur–Weyl duality, Schur 1901, Weyl 1939)**
+$k=2$ 이면 $\mathcal S$ 는 항등과 맞바꿈 $\tau(v\otimes w)=w\otimes v$ 로 펼쳐지는 $2$ 차원 대수이고, $\mathcal G$ 는 $g\otimes g$ 꼴 작용소들이 펼치는 대수다.
+
+## 중심화대수
+
+작용소 집합 $\mathcal A\subseteq\mathrm{End}(W)$ 의 **중심화대수(commutant, 가환자)** 는 $\mathcal A$ 의 모든 원소와 교환하는 작용소 전체 $\mathrm{End}\_{\mathcal A}(W)=\lbrace T:Ta=aT\quad\forall a\in\mathcal A\rbrace$ 다.
+
+$k=2$ 에서 $\tau$ 는 모든 $g\otimes g$ 와 교환하므로 $\mathcal S\subseteq\mathrm{End}\_{\mathcal G}(V\otimes V)$ 다. 대칭 부분 $\mathrm{Sym}^2V$ 위의 항등은 $(1+\tau)/2$ 로 $\mathcal S$ 에 들어 있다.
+
+## 두 쪽의 기약표현
+
+$k$ 의 분할 $\lambda\vdash k$ 마다 $S^\lambda$ 는 $\lambda$ 에 대응하는 Specht [가군](modules.md)(Specht module), 곧 $S_k$ 의 기약표현이다. $V_\lambda$ 는 최고무게 $\lambda$ 의 $\mathrm{GL}\_n$ 기약 다항식표현이다. $\ell(\lambda)$ 는 $\lambda$ 의 행의 수다.
+
+$\lambda=(2)$ 이면 $S^{(2)}$ 는 자명표현, $V_{(2)}=\mathrm{Sym}^2V$ 이고, $\lambda=(1,1)$ 이면 $S^{(1,1)}$ 은 부호표현, $V_{(1,1)}=\Lambda^2V$ 다.
+
+# 성질
+
+## Schur–Weyl 쌍대성
+
+> **정리 (Schur 1901, Weyl 1939).** 두 상은 서로의 중심화대수다.
 
 $$
 \mathrm{End}\_{\mathcal G}(V^{\otimes k})=\mathcal S,\qquad \mathrm{End}\_{\mathcal S}(V^{\otimes k})=\mathcal G
 $$
 
-따라서 $(\mathcal G,\mathcal S)$ 이중가군으로서
+$\mathrm{GL}\_n$ 과 교환하는 작용소는 전부 자리바꿈의 선형결합이고, 그 역도 성립한다. 따라서 $(\mathcal G,\mathcal S)$ 이중가군으로서
 
 $$
 V^{\otimes k}\cong\bigoplus_{\substack{\lambda\vdash k\cr \ell(\lambda)\le n}} V_{\lambda}\otimes S^{\lambda}
 $$
 
-$S^\lambda$ 는 $\lambda$ 에 대응하는 Specht [가군](modules.md), $V_\lambda$ 는 최고무게 $\lambda$ 의 $\mathrm{GL}\_n$ 기약 다항식표현이다.
+이다. 같은 분할 $\lambda$ 가 $S_k$ 쪽 기약표현과 $\mathrm{GL}\_n$ 쪽 기약표현을 함께 색인하고, 한쪽의 중복도 공간이 다른 쪽의 기약표현이다. $k=2$ 에서는 직관 절의 $V\otimes V=\mathrm{Sym}^2V\oplus\Lambda^2V$ 가 이 분해다.
 
 ## 차원 공식
 
@@ -76,7 +80,7 @@ $$
 분해의 차원을 세면 다음 항등식이 된다.
 
 $$
-n^{k}=\sum_{\lambda\vdash k,\ \ell(\lambda)\le n} f^{\lambda}\cdot\dim V_{\lambda}
+n^{k}=\sum_{\lambda\vdash k,\thinspace\ell(\lambda)\le n} f^{\lambda}\cdot\dim V_{\lambda}
 $$
 
 ## 지표 판본
@@ -87,9 +91,7 @@ $$
 \mathrm{tr}\left((g\otimes\sigma)\big|\_{V^{\otimes k}}\right)=p_{\mu}(x)=\sum_{\lambda\vdash k}\chi^{\lambda}(\mu)\thinspace s_{\lambda}(x)
 $$
 
-가 된다. 왼쪽은 직접 계산되고(각 순환이 대각합 하나를 주어 거듭제곱합 $p_\mu$ 가 나온다) 오른쪽은 분해에서 나온다. 이것이 거듭제곱합을 Schur 함수로 전개하는 고전적 공식이고, 계수가 대칭군 지표표다. 두 표현론을 잇는 사전의 본문이 이 한 줄이다.
-
-# 성질
+가 된다. 왼쪽은 직접 계산되고(각 순환이 대각합 하나를 주어 거듭제곱합 $p_\mu$ 가 나온다) 오른쪽은 분해에서 나온다. 이것이 거듭제곱합을 [Schur 다항식](schur-polynomials.md)으로 전개하는 고전적 공식이고, 계수가 [군의 표현](group-representations.md) 이론의 대칭군 지표표다.
 
 ## 이중 중심화 정리
 
