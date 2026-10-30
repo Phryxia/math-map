@@ -16,31 +16,35 @@ $$A\xrightarrow{t-1}A\xrightarrow{N}A\xrightarrow{t-1}A\to\cdots$$
 
 $A=\mathbb Z$ 이고 작용이 자명하면 $t-1$ 은 $0$ 이고 $N$ 은 $m$ 배다. 그러면 차수 $0$ 에서 $\mathbb Z$, 홀수 차수에서 $\ker(m)=0$, $2$ 이상의 짝수 차수에서 $\mathbb Z/m$ 이 나온다. 만 개의 미지수 없이 차수 $2$ 의 답이 $\mathbb Z/m$ 으로 나왔고, 이것이 확대의 동치류의 개수다.
 
-$H^n(G,A)$ 는 $A$ 를 계수로 하는 $G$ 의 불변량을 차수별로 재고, 정의는 $\mathbb Z G$ 위의 분해를 통한 유도 함자다.
-
 # 정의
 
-$G$ 를 군, $\mathbb Z G$ 를 그 군환, $A$ 를 [가군](modules.md)으로 본 $G$ 가군이라 하자. $\mathbb Z$ 에 자명한 작용을 주면 **군 코호몰로지**는 다음이다.
+$G$ 를 군, $\mathbb Z G$ 를 그 군환, $A$ 를 [가군](modules.md)으로 본 $G$ 가군이라 하자. $\mathbb Z$ 에 자명한 작용을 줄 때 **군 코호몰로지** 는 다음 가환군이다.
 
 $$H^n(G,A)=\mathrm{Ext}^n\_{\mathbb Z G}(\mathbb Z,A)$$
 
-곧 $\mathbb Z$ 의 사영 분해 $P\_\bullet\to\mathbb Z$ 를 하나 잡고 복합체 $\mathrm{Hom}\_{\mathbb Z G}(P\_\bullet,A)$ 의 $n$ 번째 코호몰로지를 취한 것이다[^1]. [유도 함자](derived-functors.md)의 일반론이 이 값이 분해의 선택에 무관함을 준다.
+곧 $\mathbb Z$ 의 사영 분해 $P\_\bullet\to\mathbb Z$ 를 하나 잡고 복합체 $\mathrm{Hom}\_{\mathbb Z G}(P\_\bullet,A)$ 의 $n$ 번째 코호몰로지를 취한 것이다[^1].
+
+직관 절의 줄이 위수 $m$ 인 순환군 $Q$ 에 대한 $\mathbb Z$ 의 사영 분해다. $A=\mathbb Z$ 에 자명한 작용을 주면 Hom 을 취한 복합체가 $\mathbb Z\xrightarrow{0}\mathbb Z\xrightarrow{m}\mathbb Z\xrightarrow{0}\mathbb Z\to\cdots$ 이므로 $H^0(Q,\mathbb Z)=\mathbb Z$ 이고, 홀수 차수에서 $0$, $2$ 이상의 짝수 차수에서 $\mathbb Z/m$ 이다.
 
 ## 막대 분해
 
-$P_n$ 을 $G^n$ 을 기저로 하는 자유 $\mathbb Z G$ 가군으로 두면 **막대 분해**(bar resolution)가 나오고, 이때 복합체가 $C^n(G,A)=\lbrace f:G^n\to A\rbrace$ 와 군 확대에서 쓰는 코경계 공식이 된다. 표준 분해가 하나 있으므로 모든 군에서 정의가 작동하고, 특정 군에서는 더 짧은 분해로 계산한다.
+**막대 분해(bar resolution)** 는 $P\_n$ 을 $G^n$ 을 기저로 하는 자유 $\mathbb Z G$ 가군으로 둔 $\mathbb Z$ 의 사영 분해다. 이 분해에서 복합체는 $C^n(G,A)=\lbrace f:G^n\to A\rbrace$ 와 군 확대에서 쓰는 코경계 공식이다.
 
-## 함자성
+$n=1$ 에서 코경계는 $(\delta f)(g,h)=g\cdot f(h)-f(gh)+f(g)$ 이다. 작용이 자명하면 $\delta f=0$ 은 $f(gh)=f(g)+f(h)$ 이고, $0$ 차 코사슬 $a\in A$ 의 코경계는 $g\cdot a-a=0$ 이므로 $H^1(G,A)=\mathrm{Hom}(G,A)$ 다. $G=Q$, $A=\mathbb Z$ 이면 유한 위수 원소를 $\mathbb Z$ 로 보내는 준동형은 $0$ 뿐이므로 $H^1(Q,\mathbb Z)=0$ 이고, 직관 절의 분해로 구한 값과 같다.
+
+# 성질
+
+## 분해의 선택과 함자성
+
+[유도 함자](derived-functors.md)의 일반론으로 $H^n(G,A)$ 는 사영 분해의 선택에 무관하다. 막대 분해가 모든 군에 있으므로 모든 군에서 정의되고, 특정 군에서는 더 짧은 분해로 계산한다.
 
 $H^n(G,-)$ 은 $G$ 가군에서 가환군으로 가는 함자이고, 짧은 완전열 $0\to A\to B\to C\to 0$ 은 긴 완전열을 준다.
 
 $$\cdots\to H^n(G,A)\to H^n(G,B)\to H^n(G,C)\to H^{n+1}(G,A)\to\cdots$$
 
-# 성질
-
 ## 낮은 차수
 
-$H^0(G,A)=A^G$ 는 불변원소의 군이고, $H^1(G,A)$ 는 꼬인 준동형을 주 꼬인 준동형으로 나눈 것이며, $H^2(G,A)$ 는 $A$ 를 핵으로 하는 $G$ 의 확대의 동치류와 전단사다. 각 차수의 해석은 군 확대에 있다.
+$H^0(G,A)=A^G$ 는 불변원소의 군이고, $H^1(G,A)$ 는 꼬인 준동형(crossed homomorphism)을 주 꼬인 준동형(principal crossed homomorphism)으로 나눈 것이며, $H^2(G,A)$ 는 $A$ 를 핵으로 하는 $G$ 의 확대의 동치류와 전단사다. 각 차수의 해석은 군 확대에 있다.
 
 ## Shapiro 보조정리
 
@@ -54,7 +58,7 @@ $$H^n(G,\mathrm{Hom}\_{\mathbb Z H}(\mathbb Z G,B))\cong H^n(H,B)$$
 
 $G$ 가 위수 $m$ 인 유한군이면 $n\ge 1$ 에서 $m\cdot H^n(G,A)=0$ 이다.
 
-증명의 요지. 부분군 $H\le G$ 의 지표가 유한하면 제한 $\mathrm{res}:H^n(G,A)\to H^n(H,A)$ 와 코르스트릭션 $\mathrm{cor}$ 이 있고 $\mathrm{cor}\circ\mathrm{res}$ 가 $\lbrack G:H\rbrack$ 배다. $H$ 를 자명군으로 두면 $n\ge 1$ 에서 $H^n(1,A)=0$ 이므로 $\mathrm{res}$ 가 $0$ 이고, 따라서 $m$ 배가 $0$ 이다.
+증명의 요지. 부분군 $H\le G$ 의 지표가 유한하면 제한 $\mathrm{res}:H^n(G,A)\to H^n(H,A)$ 와 코르스트릭션(corestriction) $\mathrm{cor}$ 이 있고 $\mathrm{cor}\circ\mathrm{res}$ 가 $\lbrack G:H\rbrack$ 배다. $H$ 를 자명군으로 두면 $n\ge 1$ 에서 $H^n(1,A)=0$ 이므로 $\mathrm{res}$ 가 $0$ 이고, 따라서 $m$ 배가 $0$ 이다.
 
 따라서 $A$ 가 유한생성이면 $n\ge 1$ 의 $H^n(G,A)$ 는 위수가 $\lvert G\rvert$ 를 나누는 유한군이다. $\lvert G\rvert$ 가 $A$ 에서 가역이면 $n\ge 1$ 의 코호몰로지가 모두 $0$ 이고, 이것이 표수가 군의 위수를 나누지 않을 때 표현이 완전가약인 이유다.
 
