@@ -6,10 +6,6 @@
 
 # 직관
 
-Witt 환 $W(K)$ 는 체 $K$ 위의 비퇴화 이차형식을 쌍곡형식을 법으로 모아 직교합을 덧셈, 텐서곱을 곱셈으로 둔 환이다.
-
-차원이 다른 형식을 한 대상 안에서 비교할 수 있게 되므로, 체마다 분류 목록을 적는 대신 환 하나의 구조를 보는 것으로 이차형식의 분류가 바뀐다. 차원을 $2$ 로 나눈 나머지가 정하는 아이디얼의 거듭제곱이 여과를 만들고, 그 여과의 층이 [Galois 코호몰로지](galois-cohomology.md)와 일치한다.
-
 $\mathbb R$ 위의 비퇴화 이차형식은 대각화한 뒤의 양수 개수 $r$ 과 음수 개수 $s$ 로 분류된다. 두 형식을 변수를 따로 두고 더하면 $(r,s)$ 가 더해지므로 분류에 덧셈이 있다. 차원이 다른 두 형식은 이 덧셈으로 묶이지 않는다.
 
 $x^2-y^2$ 을 더해 본다. 부호수는 $(r+1,s+1)$ 이 되어 양쪽이 함께 늘고 차 $r-s$ 는 그대로다. 이 형식을 몇 번 더하든 $r-s$ 가 바뀌지 않으니, $r-s$ 만 보면 차원이 다른 형식도 한 수로 비교된다.
@@ -22,25 +18,17 @@ $x^2-y^2$ 을 더해 본다. 부호수는 $(r+1,s+1)$ 이 되어 양쪽이 함�
 
 $\mathrm{char}\thinspace K\ne2$ 라 한다. 대각형식 $a_1x_1^2+\cdots+a_nx_n^2$ 을 $\langle a_1,\dots,a_n\rangle$ 으로 적고, 직교합을 $\perp$ 로 적는다.
 
-## 쌍곡평면과 Witt 분해
+## 쌍곡평면과 비등방 형식
 
-$\mathbb H=\langle 1,-1\rangle$ 을 **쌍곡평면**이라 한다. $q(x)=0$ 인 $x\ne0$ 이 없는 형식을 **비등방**이라 한다.
+$\mathbb H=\langle 1,-1\rangle$ 을 **쌍곡평면(hyperbolic plane)** 이라 한다. $q(x)=0$ 인 $x\ne0$ 이 없는 형식을 **비등방(anisotropic)** 이라 한다.
 
-**정리(Witt 분해).** 모든 비퇴화 형식 $q$ 는
-
-$$
-q\cong q_{\mathrm{an}}\perp m\mathbb H
-$$
-
-로 쓰이고, 비등방 형식 $q_{\mathrm{an}}$ 과 정수 $m\ge0$ 이 유일하게 정해진다.
-
-**정리(Witt 소거).** $q_1\perp q\cong q_2\perp q$ 이면 $q_1\cong q_2$ 다.
+$\mathbb H$ 는 $x^2-y^2=0$ 인 $x=y=1$ 이 있으므로 비등방이 아니다. $\mathbb R$ 위의 $\langle 1,1\rangle$ 은 $x^2+y^2=0$ 의 해가 $0$ 뿐이므로 비등방이다. $\mathbb C$ 위에서는 $x=1$, $y=i$ 가 $x^2+y^2=0$ 의 해이므로 $\langle 1,1\rangle$ 이 비등방이 아니다.
 
 ## Witt 환
 
-비퇴화 형식의 동형류에서 $q\sim q'$ 를 $q_{\mathrm{an}}\cong q'\_{\mathrm{an}}$ 으로 정의한다. 이 동치류의 집합에 $\perp$ 를 덧셈, $\otimes$ 를 곱셈으로 주면 가환환이 되고, 이것이 $W(K)$ 다.
+성질 절의 Witt 분해가 주는 비등방 부분 $q_{\mathrm{an}}$ 으로, 비퇴화 형식의 동형류에서 $q\sim q'$ 를 $q_{\mathrm{an}}\cong q'\_{\mathrm{an}}$ 으로 정의한다. 이 동치류의 집합에 $\perp$ 를 덧셈, $\otimes$ 를 곱셈으로 주면 가환환이 되고, 이것이 $W(K)$ 다.
 
-항등원은 $\langle 1\rangle$ 이고 영원소는 쌍곡형식 $m\mathbb H$ 의 류다. $\langle a\rangle\otimes\langle b\rangle=\langle ab\rangle$ 이고 $-\langle a\rangle=\langle -a\rangle$ 이다. $\langle a\rangle$ 은 $a$ 의 제곱류에만 의존하므로 $W(K)$ 는 $K^{\times}/(K^{\times})^{2}$ 의 원소들로 생성된다.
+$\mathbb R$ 위에서 $\langle 1,-1\rangle=\mathbb H$ 의 비등방 부분은 $0$ 이므로 그 류는 영원소이고, $\langle 1\rangle\perp\langle -1\rangle\sim 0$ 이다.
 
 ## Pfister 형식
 
@@ -50,9 +38,27 @@ $$
 \langle\langle a_1,\dots,a_n\rangle\rangle=\bigotimes_{i=1}^{n}\big(\langle 1\rangle\perp\langle -a_i\rangle\big)
 $$
 
-를 $n$ 겹 **Pfister 형식**이라 한다. 차원은 $2^{n}$ 이다.
+를 $n$ 겹 **Pfister 형식(Pfister form)** 이라 한다.
+
+$\langle\langle a\rangle\rangle=\langle 1,-a\rangle$ 이다. $\mathbb R$ 위의 $\langle\langle -1,-1\rangle\rangle=\langle 1,1\rangle\otimes\langle 1,1\rangle=\langle 1,1,1,1\rangle$ 은 네 제곱의 합이다.
 
 # 성질
+
+## Witt 분해와 소거
+
+**정리(Witt 분해, Witt decomposition).** 모든 비퇴화 형식 $q$ 는
+
+$$
+q\cong q_{\mathrm{an}}\perp m\mathbb H
+$$
+
+로 쓰이고, 비등방 형식 $q_{\mathrm{an}}$ 과 정수 $m\ge0$ 이 유일하게 정해진다.
+
+**정리(Witt 소거, Witt cancellation).** $q_1\perp q\cong q_2\perp q$ 이면 $q_1\cong q_2$ 다.
+
+## Witt 환의 연산
+
+항등원은 $\langle 1\rangle$ 이고 영원소는 쌍곡형식 $m\mathbb H$ 의 류다. $\langle a\rangle\otimes\langle b\rangle=\langle ab\rangle$ 이고 $-\langle a\rangle=\langle -a\rangle$ 이다. $\langle a\rangle$ 은 $a$ 의 제곱류에만 의존하므로 $W(K)$ 는 $K^{\times}/(K^{\times})^{2}$ 의 원소들로 생성된다. $n$ 겹 Pfister 형식의 차원은 $2^{n}$ 이다.
 
 ## 기본 아이디얼과 여과
 
@@ -68,7 +74,7 @@ $$
 
 ## Milnor 추측
 
-여과의 모든 층이 Galois 코호몰로지와 같다는 것이 Milnor 의 추측이고, Voevodsky 가 증명했다.[^2]
+여과의 모든 층이 [Galois 코호몰로지](galois-cohomology.md)와 같다는 것이 Milnor 의 추측이고, Voevodsky 가 증명했다.[^2]
 
 $$
 I^{n}/I^{n+1}\cong H^{n}\big(K,\mathbb Z/2\big)
