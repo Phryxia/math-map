@@ -6,24 +6,6 @@
 
 # 직관
 
-범주 $\mathcal O$ 는 반단순 Lie 대수의 가군 가운데 무게 분해가 되고 무게 공간이 유한차원이며 Borel 부분대수의 작용이 국소적으로 유한한 것들의 범주다. Bernstein–Gelfand–Gelfand 가 1976 년에 정의했다.[^1]
-
-유한차원 표현은 완전가약이라 분류가 최고무게 하나로 끝나지만 제한 없는 $\mathfrak g$ 가군의 범주는 너무 커서 분류되지 않는다. 위 세 조건이 그 중간 지대를 잘라낸다.
-
-- 대상의 길이가 유한하므로 Jordan–Hölder 중복도를 말할 수 있다.
-- 단순 대상 $L(\lambda)$ 가 최고무게 $\lambda$ 로 남김없이 분류된다.
-- 사영 대상이 충분히 많고, 모든 사영 대상이 Verma 가군의 여과를 갖는다.
-
-사영가군의 Verma 여과 중복도와 Verma 가군의 조성 중복도가 같다.
-
-$$
-\bigl(P(\lambda):M(\mu)\bigr)=\bigl[M(\mu):L(\lambda)\bigr]
-$$
-
-이것이 **BGG 상반성**(Bernstein–Gelfand–Gelfand)이다. 좌변은 사영분해 쪽 자료이고 우변은 조성열 쪽 자료인데 두 계산이 같은 수를 주고, 그 결과 Cartan [행렬](matrices.md)이 대칭이 된다.
-
-우변의 계산은 Kazhdan–Lusztig 다항식이 답한다. $\bigl[M(y\cdot\lambda):L(w\cdot\lambda)\bigr]=P_{w_0y,\thinspace w_0w}(1)$ 이라는 KL 추측을 Beilinson–Bernstein 과 Brylinski–Kashiwara 가 증명했고, 범주 $\mathcal O$ 에서 KL 다항식이 표현론적 의미를 얻는다.
-
 최고무게 $\lambda$ 를 가진 가군 중 가장 큰 것을 Borel $\mathfrak b$ 의 1 차원 표현 $\mathbb C_\lambda$ 에서 유도한다.
 
 $$
@@ -44,7 +26,7 @@ $\mathfrak g$ 를 복소 반단순 Lie 대수, $\mathfrak h\subset\mathfrak b\su
 2. $M=\bigoplus_{\mu\in\mathfrak h^\ast}M_\mu$ 로 $\mathfrak h$ 무게 분해가 되고 각 $M_\mu$ 는 유한차원이다.
 3. 모든 $v\in M$ 에 대해 $U(\mathfrak n^+)v$ 가 유한차원이다.
 
-$\mathcal O$ 는 아벨 범주이고 부분가군과 몫가군과 유한 직합에 닫혀 있으며 모든 대상이 유한 길이다.
+유한차원 가군은 세 조건을 모두 만족한다. $\mathfrak g=\mathfrak{sl}\_2$ 이고 $\mathfrak n^+=\mathbb Ce$ 일 때, 기저 $v,fv,f^2v,\dots$ 의 무게가 $\lambda,\lambda-2,\lambda-4,\dots$ 이고 $e f^kv=k(\lambda-k+1)f^{k-1}v$ 인 가군은 조건 2 와 3 을 만족한다. 이 가군이 아래의 $M(\lambda)$ 다.
 
 ## Verma 와 단순가군
 
@@ -53,11 +35,25 @@ M(\lambda)=U(\mathfrak g)\otimes_{U(\mathfrak b)}\mathbb C_\lambda,\qquad
 L(\lambda)=M(\lambda)/\mathrm{rad}\thinspace M(\lambda)
 $$
 
+$M(\lambda)$ 를 **Verma 가군(Verma module)** 이라 하고, $\mathrm{rad}\thinspace M(\lambda)$ 는 $M(\lambda)$ 의 유일한 극대 부분가군이다. 그 몫 $L(\lambda)$ 가 최고무게 $\lambda$ 의 **단순가군(simple module)** 이다.
+
+$\mathfrak{sl}\_2$ 에서 $\lambda=0$ 이면 $e\cdot fv=hv+fev=0$ 이므로 $fv$ 가 최고무게 $-2$ 의 부분가군을 생성하고, 이것이 $M(-2)$ 와 동형인 극대 부분가군이다. $L(0)$ 은 $v$ 하나로 펼쳐지는 $1$ 차원 자명표현이다.
+
+## 블록
+
+Weyl 군의 **점작용(dot action)** 은 $w\cdot\lambda=w(\lambda+\rho)-\rho$ 이다. $U(\mathfrak g)$ 의 중심 $Z(\mathfrak g)$ 는 $M(\lambda)$ 위에 스칼라로 작용하고, 그 스칼라를 주는 준동형 $\chi_\lambda:Z(\mathfrak g)\to\mathbb C$ 를 **중심지표(central character)** 라 한다. $Z(\mathfrak g)$ 가 일반화 고윳값 $\chi$ 로 작용하는 대상들의 부분범주를 $\mathcal O_\chi$ 로 적는다.
+
+$\mathfrak{sl}\_2$ 에서 $\rho=1$ 이고 $s\cdot\lambda=-\lambda-2$ 이므로 $s\cdot 0=-2$ 다. Casimir 원소 $h^2+2h+4fe$ 는 $M(0)$ 의 최고무게 벡터에 $0$, $M(-2)$ 의 최고무게 벡터에 $(-2)^2+2(-2)=0$ 으로 작용하므로 $\chi_0=\chi_{-2}$ 다.
+
+# 성질
+
+## 유한 길이와 단순 대상
+
+$\mathcal O$ 는 아벨 범주이고 부분가군과 몫가군과 유한 직합에 닫혀 있으며 모든 대상이 유한 길이다. 그래서 Jordan–Hölder 중복도 $\lbrack M:L(\lambda)\rbrack$ 를 말할 수 있다.
+
 $\lbrace L(\lambda)\rbrace_{\lambda\in\mathfrak h^\ast}$ 가 $\mathcal O$ 의 단순 대상 전부이고 서로 동형이 아니다. $L(\lambda)$ 가 유한차원일 필요충분조건은 $\lambda$ 가 지배적 정수무게인 것이다.
 
 ## 블록 분해
-
-Weyl 군의 **점작용**은 $w\cdot\lambda=w(\lambda+\rho)-\rho$ 이고, 같은 궤도의 무게들만 서로 얽힌다.
 
 [Harish-Chandra 동형](harish-chandra-isomorphism.md) $Z(\mathfrak g)\cong S(\mathfrak h)^{W\cdot}$ 로 중심지표 $\chi_\lambda$ 가 정해지고 $\chi_\lambda=\chi_\mu$ 는 $\mu\in W\cdot\lambda$ 와 동치다. 따라서
 
@@ -71,7 +67,7 @@ $$
 
 $\mathcal O$ 는 사영 대상을 충분히 갖는다. $L(\lambda)$ 의 사영 덮개를 $P(\lambda)$ 라 쓴다.
 
-**정리(BGG).** 모든 $P(\lambda)$ 는 Verma 가군에 의한 여과를 갖고, 그 중복도는 무게 순서에 의존하지 않으며
+**정리(BGG(Bernstein–Gelfand–Gelfand) 상반성).** 모든 $P(\lambda)$ 는 Verma 가군에 의한 여과를 갖고, 그 중복도는 무게 순서에 의존하지 않으며
 
 $$
 \bigl(P(\lambda):M(\mu)\bigr)=\bigl[M(\mu):L(\lambda)\bigr]
@@ -79,7 +75,7 @@ $$
 
 가 성립한다. 여과의 맨 아래 항은 $M(\lambda)$ 이고 중복도 $1$ 이다.
 
-결정 행렬 $D_{\mu\lambda}=[M(\mu):L(\lambda)]$ 와 Verma 여과 행렬 $V_{\lambda\mu}=(P(\lambda):M(\mu))$ 에 대해 $V=D^{\mathsf T}$ 이고, Cartan 행렬은
+결정 행렬 $D_{\mu\lambda}=[M(\mu):L(\lambda)]$ 와 Verma 여과 행렬 $V_{\lambda\mu}=(P(\lambda):M(\mu))$ 에 대해 $V=D^{\mathsf T}$ 이고, Cartan [행렬](matrices.md)은
 
 $$
 C_{\lambda\nu}=\bigl[P(\lambda):L(\nu)\bigr]=\bigl(D^{\mathsf T}D\bigr)\_{\lambda\nu}
@@ -89,7 +85,7 @@ $$
 
 ## KL 추측
 
-정수 정칙 블록에서 $\lambda$ 를 반지배적으로 잡고 $w_0$ 를 최장원이라 하자.
+KL(Kazhdan–Lusztig) 추측은 다음 등식이다. 정수 정칙 블록에서 $\lambda$ 를 반지배적으로 잡고 $w_0$ 를 최장원이라 하자.
 
 $$
 \bigl[M(y\cdot\lambda):L(w\cdot\lambda)\bigr]=P_{w_0y,\thinspace w_0w}(1),
@@ -99,7 +95,6 @@ $$
 
 Beilinson–Bernstein 과 Brylinski–Kashiwara 가 [깃발다양체](flag-varieties.md) 위의 $D$ 가군으로 증명했다[^3]. 중복도가 교차 코호몰로지 [층](sheaves.md)의 줄기 차원으로 계산되므로 양수성이 따라온다.
 
-# 성질
 
 ## sl₂ 의 블록
 
