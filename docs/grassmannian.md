@@ -14,21 +14,31 @@ $\mathbb R^3$ 에서 원점을 지나는 직선 하나를 점 하나로 보면 �
 
 ## 부분공간의 모임
 
-체 $K$ 위의 $n$ 차원 벡터공간 $V$ 에 대해 **Grassmann 다양체** $\mathrm{Gr}(k,V)$ 는 $V$ 의 $k$ 차원 부분공간 전체의 집합이다. $V=K^n$ 일 때 $\mathrm{Gr}(k,n)$ 으로 쓴다. $\mathrm{Gr}(1,n)$ 은 사영공간 $\mathbb P^{n-1}$ 이고 $\mathrm{Gr}(k,n)$ 과 $\mathrm{Gr}(n-k,n)$ 은 직교여공간을 주고받아 동형이다.
-
-$\mathrm{GL}\_n(K)$ 가 부분공간을 옮겨 추이적으로 작용하고, 표준 부분공간의 안정자는 블록 상삼각 부분군 $P$ 다. 그러므로 $\mathrm{Gr}(k,n)$ 은 등질공간 $\mathrm{GL}\_n(K)/P$ 다. $K=\mathbb R$ 에서는 $\mathrm{O}(n)$ 의 작용으로 $\mathrm{O}(n)/\bigl(\mathrm{O}(k)\times\mathrm{O}(n-k)\bigr)$ 가 되고, 이것이 콤팩트성을 준다.
+체 $K$ 위의 $n$ 차원 벡터공간 $V$ 에 대해 **Grassmann 다양체(Grassmannian)** $\mathrm{Gr}(k,V)$ 는 $V$ 의 $k$ 차원 부분공간 전체의 집합이다. $V=K^n$ 일 때 $\mathrm{Gr}(k,n)$ 으로 쓴다. $\mathrm{Gr}(1,3)$ 은 직관 절의 원점을 지나는 직선 전체, 곧 사영평면이다. 직관 절에서 행 $(1,0,a,b)$, $(0,1,c,d)$ 가 생성하는 평면들은 $\mathrm{Gr}(2,4)$ 의 가장 큰 조각을 이룬다.
 
 ## Plücker 매장
 
-$W\in\mathrm{Gr}(k,V)$ 의 기저 $w_1,\dots,w_k$ 에 대해 외적 $w_1\wedge\cdots\wedge w_k$ 를 잡는다. 기저를 바꾸면 이 값이 기저변환 행렬의 [행렬식](determinants.md) 배로만 달라지므로 사영공간의 점 하나가 정해진다.
+$W\in\mathrm{Gr}(k,V)$ 의 기저 $w_1,\dots,w_k$ 에 대해 외적 $w_1\wedge\cdots\wedge w_k$ 를 잡는다. 기저를 바꾸면 이 값이 기저변환 행렬의 [행렬식](determinants.md) 배로만 달라지므로 사영공간의 점 하나가 정해진다. 이 사상을 **Plücker 매장(Plücker embedding)** 이라 한다.
 
 $$\mathrm{Gr}(k,V)\hookrightarrow\mathbb P\bigl(\Lambda^k V\bigr),\qquad W\mapsto\lbrack w_1\wedge\cdots\wedge w_k\rbrack$$
+
+$w_1\wedge\cdots\wedge w_k$ 를 $\Lambda^kV$ 의 기저로 전개한 계수를 **Plücker 좌표(Plücker coordinates)** 라 한다. $k\times n$ 행렬의 열 $i_1\lt\cdots\lt i_k$ 로 만든 소행렬식이 $p\_{i_1\cdots i_k}$ 다. 행 $(1,0,0,1)$, $(0,1,1,0)$ 이 생성하는 $\mathbb R^4$ 의 평면은 $p\_{12}=1$, $p\_{13}=1$, $p\_{14}=0$, $p\_{23}=0$, $p\_{24}=-1$, $p\_{34}=-1$ 이다.
+
+# 성질
+
+## 등질공간
+
+$\mathrm{Gr}(1,n)$ 은 사영공간 $\mathbb P^{n-1}$ 이고 $\mathrm{Gr}(k,n)$ 과 $\mathrm{Gr}(n-k,n)$ 은 직교여공간을 주고받아 동형이다.
+
+$\mathrm{GL}\_n(K)$ 가 부분공간을 옮겨 추이적으로 작용하고, 표준 부분공간의 안정자는 블록 상삼각 부분군 $P$ 다. 그러므로 $\mathrm{Gr}(k,n)$ 은 등질공간 $\mathrm{GL}\_n(K)/P$ 다. $K=\mathbb R$ 에서는 $\mathrm{O}(n)$ 의 작용으로 $\mathrm{O}(n)/\bigl(\mathrm{O}(k)\times\mathrm{O}(n-k)\bigr)$ 가 되고, 이것이 콤팩트성을 준다.
+
+## Plücker 매장의 상
 
 이 사상은 단사다. $w_1\wedge\cdots\wedge w_k$ 가 $v\wedge(w_1\wedge\cdots\wedge w_k)=0$ 인 $v$ 들로 $W$ 를 복원하기 때문이다. 상은 Plücker 좌표의 이차식으로 정의되는 닫힌 부분다양체다. $\mathrm{Gr}(2,4)$ 에서는 관계식이 하나다.
 
 $$p\_{12}p\_{34}-p\_{13}p\_{24}+p\_{14}p\_{23}=0$$
 
-# 성질
+정의 절의 평면에서 $p\_{12}p\_{34}-p\_{13}p\_{24}+p\_{14}p\_{23}=-1+1+0=0$ 이다.
 
 ## 차원과 세포 분할
 
