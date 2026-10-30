@@ -6,27 +6,6 @@
 
 # 직관
 
-[근계](root-systems.md)는 반단순 Lie 대수를 유한한 조합 자료로 압축한다. 같은 자료가 그 대수의 유한차원 기약표현을 분류하고, 각 표현의 차원과 무게별 중복도까지 근계 위의 유한 계산으로 준다.
-
-복소 반단순 Lie 대수 $\mathfrak g$ 의 유한차원 기약표현은 **지배적 정수 무게**와 일대일 대응한다.
-
-$$
-\lbrace\text{유한차원 기약표현}\rbrace/\cong\ \ \longleftrightarrow\ \ P^+=\Big\lbrace\lambda\in P:\langle\lambda,\alpha_i^\vee\rangle\in\mathbb Z_{\ge0}\Big\rbrace
-$$
-
-오른쪽은 무게[격자](lattices.md)의 한 모서리에 있는 격자점들, 곧 음이 아닌 정수 $n$ 개다. [Weyl 완전가약성 정리](weyl-complete-reducibility.md)로 모든 유한차원 표현이 기약표현의 직합이므로, 이 목록이 유한차원 표현 전체를 정한다.
-
-표현 $V_\lambda$ 를 무게공간으로 쪼갠 정보를 담은 형식합이 지표이고, Weyl 지표 공식이 그것을 닫힌 꼴로 준다.
-
-$$
-\mathrm{ch}V_\lambda=\sum_{\mu}\dim(V_\lambda)\_\mu\ e^\mu
-=\frac{\displaystyle\sum_{w\in W}(-1)^{\ell(w)}e^{w(\lambda+\rho)}}{\displaystyle\sum_{w\in W}(-1)^{\ell(w)}e^{w(\rho)}}
-$$
-
-오른쪽은 유한군 $W$ 위의 교대합 두 개의 비이고, 하나의 공식이 모든 $\lambda$ 를 처리한다.
-
-[Peter–Weyl 정리](peter-weyl.md)는 콤팩트군 $G$ 의 $L^2(G)$ 를 기약표현들로 분해하지만 그 기약표현이 무엇인지는 정하지 않는다. 지표 공식이 그것을 정한다. $G$ 가 콤팩트 연결 [Lie 군](lie-groups.md)이면 기약표현이 $P^+$ 로 색인되고 지표가 위 공식으로 주어지므로 $L^2(G)$ 의 정규직교기저가 근계의 조합 자료로 기술된다. $G=S^1$ 에서 이 진술은 [Fourier 급수](fourier-series.md)이고, $G=\mathrm{SU}(2)$ 에서는 [구면조화함수](spherical-harmonics.md)의 차원 $2\ell+1$ 이다.
-
 $\mathfrak{sl}\_2$ 의 기약표현은 각 차원마다 하나씩 있고, $n+1$ 차원 표현 $V_n$ 의 무게는 $n,n-2,\dots,-n$ 이 하나씩이다. 형식지표를 $e^1=x$ 로 쓰면 유한 등비급수가 닫힌 꼴로 접힌다.
 
 $$
@@ -42,14 +21,16 @@ $$
 Cartan 부분대수 $\mathfrak h$ 의 표현 $V$ 에 대한 동시 고유공간 분해가 무게공간 분해다.
 
 $$
-V=\bigoplus_{\mu\in\mathfrak h^\ast}V_\mu,\qquad V_\mu=\lbrace v\in V:h\cdot v=\mu(h)v\ \ \forall h\in\mathfrak h\rbrace
+V=\bigoplus_{\mu\in\mathfrak h^\ast}V_\mu,\qquad V_\mu=\lbrace v\in V:h\cdot v=\mu(h)v\quad\forall h\in\mathfrak h\rbrace
 $$
 
-$V_\mu\neq0$ 인 $\mu$ 가 **무게**이고 $\dim V_\mu$ 가 그 **중복도**다. 유한차원 표현의 무게는 모두 무게격자 $P$ 에 들어간다.
+$V_\mu\neq0$ 인 $\mu$ 가 **무게(weight)** 이고 $\dim V_\mu$ 가 그 **중복도(multiplicity)** 다.
 
-양근 $\Phi^+$ 를 고정하면 무게에 [부분순서](partial-orders.md)가 생긴다. $\mu\le\lambda$ 는 $\lambda-\mu$ 가 단순근의 음이 아닌 정수결합이라는 뜻이다. 유한차원 기약표현에는 이 순서에 대한 **최고무게** $\lambda$ 가 유일하게 있고, $V_\lambda$ 는 1 차원이며 $\alpha\gt 0$ 에 대해 $\mathfrak g_\alpha\cdot V_\lambda=0$ 이다. 그 한 벡터가 표현 전체를 생성하므로 유한차원 기약표현은 [최고무게 가군](highest-weight-modules.md)이다.
+[근계](root-systems.md)의 양근 $\Phi^+$ 를 고정하면 무게에 [부분순서](partial-orders.md)가 생긴다. $\mu\le\lambda$ 는 $\lambda-\mu$ 가 단순근의 음이 아닌 정수결합이라는 뜻이다. $V$ 의 무게 가운데 이 순서로 자기보다 큰 무게가 없는 것을 **최고무게(highest weight)** 라 한다.
 
-## 지배적 정수 무게와 분류 정리
+$\mathfrak{sl}\_2$ 의 $V_n$ 은 무게가 $n,n-2,\dots,-n$ 이고 중복도가 모두 $1$ 이다. 단순근이 $2$ 이므로 $-n\le\cdots\le n-2\le n$ 이고 최고무게는 $n$ 이다.
+
+## 지배적 정수 무게
 
 무게 $\lambda$ 가 모든 단순근에 대해
 
@@ -57,11 +38,9 @@ $$
 \langle\lambda,\alpha_i^\vee\rangle=\frac{2(\lambda,\alpha_i)}{(\alpha_i,\alpha_i)}\in\mathbb Z_{\ge0}
 $$
 
-를 만족하면 **지배적 정수 무게**라 하고 그 집합을 $P^+$ 로 쓴다. 기본무게 $\omega_1,\dots,\omega_n$ 을 $\langle\omega_i,\alpha_j^\vee\rangle=\delta_{ij}$ 로 정의하면 $P^+=\mathbb Z_{\ge0}\omega_1\oplus\cdots\oplus\mathbb Z_{\ge0}\omega_n$ 이고, 표현이 음이 아닌 정수 $n$ 개(**Dynkin 라벨**)로 색인된다.
+를 만족하면 **지배적 정수 무게(dominant integral weight)** 라 하고 그 집합을 $P^+$ 로 쓴다. 기본무게 $\omega_1,\dots,\omega_n$ 을 $\langle\omega_i,\alpha_j^\vee\rangle=\delta_{ij}$ 로 정의하면 $P^+=\mathbb Z_{\ge0}\omega_1\oplus\cdots\oplus\mathbb Z_{\ge0}\omega_n$ 이고, $P^+$ 의 원소는 음이 아닌 정수 $n$ 개, 곧 **Dynkin 라벨(Dynkin label)** 로 적힌다.
 
-**최고무게 분류 정리.** $\lambda\mapsto V_\lambda$ 는 $P^+$ 에서 유한차원 기약표현의 동형류 전체로 가는 전단사다.
-
-각 단순근의 $\mathfrak{sl}\_2$ 부분대수로 제한하면 정수성이 나오고, 음이 아니어야 한다는 조건은 최고무게 벡터가 무게열의 위쪽 끝이라는 뜻이다.
+$\mathfrak{sl}\_2$ 에서는 $\langle\lambda,\alpha^\vee\rangle=\lambda(h)$ 이므로 $P^+=\mathbb Z\_{\ge0}\omega_1$ 이고, $V_n$ 의 최고무게 $n\omega_1$ 의 Dynkin 라벨이 $n$ 이다.
 
 ## 지표
 
@@ -71,13 +50,25 @@ $$
 \mathrm{ch}V=\sum_{\mu\in P}\dim(V_\mu)\thinspace e^\mu
 $$
 
-를 **형식지표**라 한다. 콤팩트군 쪽에서는 $e^\mu$ 를 극대원환면 위의 함수 $t\mapsto\mu(t)$ 로 읽고, 그때 $\mathrm{ch}V$ 가 표현의 대각합 $\chi_V(t)=\mathrm{tr}\rho(t)$ 와 같다. 형식지표는 직합과 텐서곱을 합과 곱으로 바꾼다.
+를 **형식지표(formal character)** 라 한다. $\mathfrak{sl}\_2$ 에서 $e^{\omega_1}=x$ 로 쓰면 $\mathrm{ch}V_1=x+x^{-1}$ 이다.
+
+# 성질
+
+## 무게격자와 최고무게 분류
+
+유한차원 표현의 무게는 모두 무게[격자](lattices.md) $P$ 에 들어간다. 유한차원 기약표현에는 최고무게 $\lambda$ 가 유일하게 있고, $V_\lambda$ 는 1 차원이며 $\alpha\gt 0$ 에 대해 $\mathfrak g_\alpha\cdot V_\lambda=0$ 이다. 그 한 벡터가 표현 전체를 생성하므로 유한차원 기약표현은 [최고무게 가군](highest-weight-modules.md)이다.
+
+**최고무게 분류 정리.** $\lambda\mapsto V_\lambda$ 는 $P^+$ 에서 유한차원 기약표현의 동형류 전체로 가는 전단사다.
+
+각 단순근의 $\mathfrak{sl}\_2$ 부분대수로 제한하면 정수성이 나오고, 음이 아니어야 한다는 조건은 최고무게 벡터가 무게열의 위쪽 끝이라는 뜻이다. [Weyl 완전가약성 정리](weyl-complete-reducibility.md)로 모든 유한차원 표현이 기약표현의 직합이므로, 이 목록이 유한차원 표현 전체를 정한다.
+
+## 지표의 성질
+
+콤팩트군 쪽에서는 $e^\mu$ 를 극대원환면 위의 함수 $t\mapsto\mu(t)$ 로 읽고, 그때 $\mathrm{ch}V$ 가 표현의 대각합 $\chi_V(t)=\mathrm{tr}\rho(t)$ 와 같다. 형식지표는 직합과 텐서곱을 합과 곱으로 바꾼다.
 
 $$
 \mathrm{ch}(V\oplus W)=\mathrm{ch}V+\mathrm{ch}W,\qquad \mathrm{ch}(V\otimes W)=\mathrm{ch}V\cdot\mathrm{ch}W
 $$
-
-# 성질
 
 ## 세 공식
 
@@ -110,7 +101,7 @@ $$
 **Kostant 중복도 공식.** 무게별 중복도는 Verma 지표의 분모를 급수로 펼쳐 얻는다. $\mathcal P(\nu)$ 를 $\nu$ 를 양근들의 음이 아닌 정수결합으로 쓰는 방법의 수(**Kostant 분할 함수**)라 하면 다음과 같다.
 
 $$
-\dim(V_\lambda)\_\mu=\sum_{w\in W}(-1)^{\ell(w)}\ \mathcal P\big(w(\lambda+\rho)-(\mu+\rho)\big)
+\dim(V_\lambda)\_\mu=\sum_{w\in W}(-1)^{\ell(w)}\thinspace\mathcal P\big(w(\lambda+\rho)-(\mu+\rho)\big)
 $$
 
 $|W|$ 개의 항이 크게 상쇄되어 손계산에는 불리하다. 실제 계산에는 재귀식인 Freudenthal 공식을 쓴다.
@@ -177,6 +168,7 @@ $$
 
 # 활용
 
+- **콤팩트 Lie 군의 L² 분해.** [Peter–Weyl 정리](peter-weyl.md)는 콤팩트군 $G$ 의 $L^2(G)$ 를 기약표현들로 분해하지만 그 기약표현이 무엇인지는 정하지 않는다. 지표 공식이 그것을 정한다. $G$ 가 콤팩트 연결 [Lie 군](lie-groups.md)이면 기약표현이 $P^+$ 로 색인되고 지표가 위 공식으로 주어지므로 $L^2(G)$ 의 정규직교기저가 근계의 조합 자료로 기술된다. $G=S^1$ 에서 이 진술은 [Fourier 급수](fourier-series.md)이고, $G=\mathrm{SU}(2)$ 에서는 [구면조화함수](spherical-harmonics.md)의 차원 $2\ell+1$ 이다.
 - **물리의 다중항.** $\mathrm{SU}(3)$ 맛깔 대칭에서 쿼크 세 종류는 $(1,0)$ 의 3 차원 표현이고, 중간자는 $3\otimes\bar3=8\oplus1$ , 바리온 10 중항은 $(3,0)$ 이다. Gell-Mann 과 Ne'eman 이 알려진 입자를 무게 다이어그램에 배치했을 때 10 중항의 빈자리를 차원 공식이 지목했고, 그 자리의 $\Omega^-$ 가 1964 년에 발견되었다.
 - **텐서곱과 융합 규칙.** 텐서곱의 기약 분해는 지표를 곱해 다시 지표 기저로 펼치는 계산이고, 이를 조합적으로 수행하는 것이 [Littlewood–Richardson 규칙](littlewood-richardson.md)($A$ 형)과 Littelmann 경로 모형(일반)이다. 레벨 $k$ 를 고정한 [아핀 Lie 대수](affine-lie-algebras.md)나 양자군에서는 같은 계산이 유한 집합 안에서 닫히고 구조상수를 Verlinde 공식이 준다. [정점작용소대수](vertex-operator-algebras.md)와 등각장론에서 지표가 [모듈러 형식](modular-forms.md)이 되는 현상의 근거가 Weyl–Kac 공식이다.
 - **조화해석.** $L^2(G)$ 분해에서 각 조각의 크기가 $(\dim V_\lambda)^2$ 이므로 차원 공식이 $G$ 위 조화해석의 스펙트럼 밀도를 준다. $G=\mathrm{SU}(2)$ 에서 $\dim V_n=n+1$ 이라 $S^3$ 위 Laplace 작용소의 고윳값 중복도가 나오고, $S^2=\mathrm{SU}(2)/T$ 로 내리면 구면조화함수의 $2\ell+1$ 이 된다. 열핵 전개, 격자 게이지 이론의 분배함수, 랜덤 행렬의 적률 계산이 같은 형태의 합으로 표현된다.
