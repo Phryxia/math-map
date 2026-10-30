@@ -6,7 +6,7 @@
 
 # 직관
 
-[Lie 대수](lie-algebras.md)의 $\mathfrak{sl}\_2$ 절은 기저 $H,E,F$ 와 괄호 $[H,E]=2E$, $[H,F]=-2F$, $[E,F]=H$ 를 쓴다. $n+1$ 차원 기약표현 $V$ 에서 $H,E,F$ 가 작용하는 행렬로 다음 행렬을 만든다.
+$\mathfrak{sl}\_2$ 는 기저 $H,E,F$ 와 괄호 $[H,E]=2E$, $[H,F]=-2F$, $[E,F]=H$ 를 쓴다. $n+1$ 차원 기약표현 $V$ 에서 $H,E,F$ 가 작용하는 행렬로 다음 행렬을 만든다.
 
 $$
 C=EF+FE+\tfrac12H^2
@@ -20,37 +20,45 @@ $$
 Cv=\Big(n+\tfrac12n^2\Big)v=\tfrac12n(n+2)\thinspace v
 $$
 
-$C$ 가 모든 작용과 교환하고 $V$ 가 기약이므로 Schur 보조정리(Schur's lemma)로 $C$ 는 $V$ 위에서 상수 $\frac12n(n+2)$ 배다. 이 값은 $n$ 마다 다르므로 $C$ 의 값만으로 기약표현이 구별된다. $C$ 의 정의식과 교환 계산은 $V$ 를 고르기 전에 이미 정해져 있고 괄호 관계만 썼다. $H,E,F$ 를 곱할 수 있고 곱이 $XY-YX=[X,Y]$ 만을 만족하는 대수가 있으면 $C$ 는 그 대수의 원소 하나가 되고, 그 대수가 $U(\mathfrak{sl}\_2)$ 다. $C$ 를 **Casimir 원소(Casimir element)** 라 한다.
+$C$ 가 모든 작용과 교환하고 $V$ 가 기약이므로 Schur 보조정리(Schur's lemma)로 $C$ 는 $V$ 위에서 상수 $\frac12n(n+2)$ 배다. 이 값은 $n$ 마다 다르므로 $C$ 의 값만으로 기약표현이 구별된다. $C$ 의 정의식과 교환 계산은 $V$ 를 고르기 전에 이미 정해져 있고 괄호 관계만 썼다. $H,E,F$ 를 곱할 수 있고 곱이 $XY-YX=[X,Y]$ 만을 만족하는 대수가 있으면 $C$ 는 그 대수의 원소 하나가 되고, 그 대수가 $U(\mathfrak{sl}\_2)$ 다. $C$ 를 Casimir 원소(Casimir element)라 한다.
 
 # 정의
 
 ## 보편포락대수
 
-$\mathfrak g$ 를 체 $k$ 위의 Lie 대수, $T(\mathfrak g)=\bigoplus_{m\ge0}\mathfrak g^{\otimes m}$ 을 [텐서곱](tensor-products.md)으로 만든 텐서대수라 하자. $I$ 를 $X\otimes Y-Y\otimes X-[X,Y]$ ($X,Y\in\mathfrak g$) 꼴의 원소들이 생성하는 양쪽 아이디얼이라 하면 보편포락대수는 다음 몫이다.
+$\mathfrak g$ 를 체 $k$ 위의 Lie 대수, $T(\mathfrak g)=\bigoplus_{m\ge0}\mathfrak g^{\otimes m}$ 을 [텐서곱](tensor-products.md)으로 만든 텐서대수라 하자. $I$ 를 $X\otimes Y-Y\otimes X-[X,Y]$ ($X,Y\in\mathfrak g$) 꼴의 원소들이 생성하는 양쪽 아이디얼이라 하면 **보편포락대수** 는 다음 몫이다.
 
 $$
 U(\mathfrak g)=T(\mathfrak g)/I
 $$
 
-$\iota:\mathfrak g\to U(\mathfrak g)$ 를 $\mathfrak g=\mathfrak g^{\otimes1}$ 에서 몫으로 가는 사상이라 한다. 결합대수 $A$ 는 교환자 $[a,b]=ab-ba$ 로 Lie 대수가 되고, $\iota$ 는 이 괄호에 대한 Lie 대수 준동형이다.
+$\iota:\mathfrak g\to U(\mathfrak g)$ 를 $\mathfrak g=\mathfrak g^{\otimes1}$ 에서 몫으로 가는 사상이라 한다.
 
-## 보편성질
-
-$A$ 가 단위원을 갖는 결합대수이고 $\varphi:\mathfrak g\to A$ 가 $\varphi([X,Y])=\varphi(X)\varphi(Y)-\varphi(Y)\varphi(X)$ 를 만족하는 선형사상이면, $\varphi=\tilde\varphi\circ\iota$ 인 대수 준동형 $\tilde\varphi:U(\mathfrak g)\to A$ 가 유일하게 존재한다.
-
-$A=\mathrm{End}(V)$ 로 두면 $\mathfrak g$ 의 표현 $\mathfrak g\to\mathrm{End}(V)$ 와 $U(\mathfrak g)$ 의 [가군](modules.md) 구조가 일대일로 대응한다.
+괄호가 모두 $0$ 인 $\mathfrak g$ 에서는 관계가 $X\otimes Y=Y\otimes X$ 뿐이므로, 기저 $X_1,\dots,X_d$ 에 대해 $U(\mathfrak g)$ 는 다항식환 $k\lbrack X_1,\dots,X_d\rbrack$ 이다. $\mathfrak{sl}\_2$ 에서는 $U(\mathfrak{sl}\_2)$ 안에서 $EF=FE+H$ 이고, 직관 절의 $C=EF+FE+\frac12H^2$ 가 원소 하나로 적힌다.
 
 ## Casimir 원소
 
-$\mathfrak g$ 가 복소 반단순이면 Killing 형식 $B$ 가 비퇴화다. 기저 $X_1,\dots,X_d$ 와 $B(X_i,X^j)=\delta_{ij}$ 인 쌍대기저 $X^1,\dots,X^d$ 를 잡아 다음을 Casimir 원소라 한다.
+$\mathfrak g$ 가 복소 반단순이면 Killing 형식 $B$ 가 비퇴화다. 기저 $X_1,\dots,X_d$ 와 $B(X_i,X^j)=\delta_{ij}$ 인 쌍대기저 $X^1,\dots,X^d$ 를 잡아 만든 다음 원소가 **Casimir 원소** 다.
 
 $$
 C=\sum_{i=1}^dX_iX^i\in U(\mathfrak g)
 $$
 
-$C$ 는 기저의 선택에 의존하지 않고 $U(\mathfrak g)$ 의 중심 $Z(\mathfrak g)$ 에 속한다. $\mathfrak{sl}\_2$ 에서 $B$ 대신 대각합 형식 $\mathrm{tr}(XY)$ 를 쓰면 쌍대기저가 $H/2,F,E$ 이고 직관 절의 $C$ 가 나온다.
+$\mathfrak{sl}\_2$ 에서 $B$ 대신 대각합 형식 $\mathrm{tr}(XY)$ 를 쓰면 기저 $H,E,F$ 의 쌍대기저가 $H/2,F,E$ 이고 직관 절의 $C$ 가 나온다.
 
 # 성질
+
+## 보편성질
+
+결합대수 $A$ 는 교환자 $[a,b]=ab-ba$ 로 Lie 대수가 되고, $\iota$ 는 이 괄호에 대한 Lie 대수 준동형이다. $\iota$ 는 다음 보편성질(universal property)로 특징지어진다.
+
+$A$ 가 단위원을 갖는 결합대수이고 $\varphi:\mathfrak g\to A$ 가 $\varphi([X,Y])=\varphi(X)\varphi(Y)-\varphi(Y)\varphi(X)$ 를 만족하는 선형사상이면, $\varphi=\tilde\varphi\circ\iota$ 인 대수 준동형 $\tilde\varphi:U(\mathfrak g)\to A$ 가 유일하게 존재한다.
+
+$A=\mathrm{End}(V)$ 로 두면 $\mathfrak g$ 의 표현 $\mathfrak g\to\mathrm{End}(V)$ 와 $U(\mathfrak g)$ 의 [가군](modules.md) 구조가 일대일로 대응한다.
+
+## Casimir 원소의 중심성
+
+$C$ 는 기저의 선택에 의존하지 않고 $U(\mathfrak g)$ 의 중심 $Z(\mathfrak g)$ 에 속한다. $\mathfrak{sl}\_2$ 에서는 직관 절의 교환 계산이 그 확인이다.
 
 ## Poincaré–Birkhoff–Witt 정리
 
