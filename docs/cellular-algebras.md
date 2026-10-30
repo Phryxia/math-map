@@ -6,10 +6,6 @@
 
 # 직관
 
-세포대수는 반단순이 아니어도 기약 가군을 분류할 수 있게 하는 기저를 가진 결합대수다. 기저가 $C^\lambda\_{ST}$ 꼴로 매개되고 곱셈이 $\lambda$ 에 대한 순서를 따라 삼각형이다. 대합 하나가 $S$ 와 $T$ 를 맞바꾼다.
-
-각 $\lambda$ 마다 세포 가군 $W(\lambda)$ 와 그 위의 쌍선형형식 $\Phi\_\lambda$ 가 딸려 나오고, $\Phi\_\lambda\ne 0$ 인 $\lambda$ 가 기약 가군을 하나씩 준다. [Brauer 대수](brauer-algebras.md), Temperley–Lieb 대수, Hecke 대수가 모두 이 구조를 갖는다.
-
 $TL_2(\delta)$ 의 기약 가군을 센다. 기저는 수직선 두 개인 도형 $1$ 과 양쪽을 묶은 도형 $e_1$ 둘이고 관계는 $e_1^2=\delta e_1$ 하나다. $\delta\ne 0$ 이면 $\delta^{-1}e_1$ 이 멱등원이라 대수가 $\mathbb C\oplus\mathbb C$ 로 쪼개지고 기약 가군이 둘이다.
 
 $\delta=0$ 에서는 $e_1^2=0$ 이다. 거듭제곱이 $0$ 이 되는 원소가 있으면 대수가 반단순이 아니므로 Wedderburn 분해로 기약 가군을 셀 수 없다. 직접 세면 $\mathbb C\lbrack e\rbrack/(e^2)$ 의 기약 가군은 $e$ 를 $0$ 으로 보내는 $1$ 차원 하나뿐이고, 차원 제곱의 합이 $1$ 이라 대수의 차원 $2$ 와 맞지 않는다.
@@ -28,7 +24,7 @@ $$
 C^{\lambda}\_{ST}\qquad (\lambda\in\Lambda,\ S,T\in M(\lambda))
 $$
 
-들이 $A$ 의 $R$ 자유기저이며 다음 셋이 성립하면 이 기저를 **세포 기저**라 하고 $A$ 를 **세포대수(cellular algebra)** 라 한다[^1].
+들이 $A$ 의 $R$ 자유기저이며 다음 셋이 성립하면 이 기저를 **세포 기저(cellular basis)** 라 하고 $A$ 를 **세포대수(cellular algebra)** 라 한다[^1].
 
 $R$ 선형 대합 $i\colon A\to A$ 가 있어 $i(C^{\lambda}\_{ST})=C^{\lambda}\_{TS}$ 다. 그리고 모든 $a\in A$ 에 대해
 
@@ -36,17 +32,25 @@ $$
 aC^{\lambda}\_{ST}\equiv\sum\_{S'\in M(\lambda)}r_a(S',S)\thinspace C^{\lambda}\_{S'T}\pmod{A^{\lt \lambda}}
 $$
 
-이고 계수 $r_a(S',S)\in R$ 가 $T$ 에 의존하지 않는다. $A^{\lt \lambda}$ 는 $\mu\lt \lambda$ 인 기저원소들이 생성하는 $R$ 부분가군이고, 위 식에서 양쪽 이념임이 따라 나온다.
+이고 계수 $r_a(S',S)\in R$ 가 $T$ 에 의존하지 않는다. $A^{\lt \lambda}$ 는 $\mu\lt \lambda$ 인 기저원소들이 생성하는 $R$ 부분가군이다.
+
+행렬대수 $M_n(R)$ 에서 $\Lambda$ 를 원소 하나로, $M=\lbrace 1,\dots,n\rbrace$ 으로, $C\_{ST}$ 를 행렬 단위 $E\_{ST}$ 로, $i$ 를 전치로 두면 세포 기저다. $aE\_{ST}=\sum\_{S'}a\_{S'S}E\_{S'T}$ 이고 계수 $a\_{S'S}$ 가 $T$ 와 무관하다. 직관 절의 $TL_2(\delta)$ 에서는 $\Lambda=\lbrace 0\lt 2\rbrace$ 이고 $C^2=1$, $C^0=e_1$ 이며 $M(0)$, $M(2)$ 가 한 원소씩이다.
 
 ## 세포 가군
 
-$\lambda$ 에 대해 $W(\lambda)$ 를 기저 $\lbrace C_S:S\in M(\lambda)\rbrace$ 의 자유 $R$ 가군으로 두고 작용을 $a\thinspace C_S=\sum\_{S'}r_a(S',S)C\_{S'}$ 로 정의한다. 이것이 **세포 가군**이다. 정의가 잘 되는 것은 계수가 $T$ 에 의존하지 않기 때문이고, $T$ 를 하나 고정하면 $W(\lambda)$ 가 $A^{\le\lambda}/A^{\lt \lambda}$ 의 직합인자로 실현된다.
+$\lambda$ 에 대해 $W(\lambda)$ 를 기저 $\lbrace C_S:S\in M(\lambda)\rbrace$ 의 자유 $R$ 가군으로 두고 작용을 $a\thinspace C_S=\sum\_{S'}r_a(S',S)C\_{S'}$ 로 정의한다. 이것이 **세포 가군(cell module)** 이다. 정의가 잘 되는 것은 계수가 $T$ 에 의존하지 않기 때문이고, $T$ 를 하나 고정하면 $W(\lambda)$ 가 $A^{\le\lambda}/A^{\lt \lambda}$ 의 직합인자로 실현된다.
 
 ## 쌍선형형식
 
-$C^{\lambda}\_{ST}C^{\lambda}\_{UV}\equiv\Phi\_\lambda(T,U)\thinspace C^{\lambda}\_{SV}\pmod{A^{\lt \lambda}}$ 로 결정되는 $\Phi\_\lambda\colon M(\lambda)\times M(\lambda)\to R$ 를 $W(\lambda)$ 의 쌍선형형식이라 한다. 대합 $i$ 에서 $\Phi\_\lambda$ 가 대칭이다.
+$C^{\lambda}\_{ST}C^{\lambda}\_{UV}\equiv\Phi\_\lambda(T,U)\thinspace C^{\lambda}\_{SV}\pmod{A^{\lt \lambda}}$ 로 결정되는 $\Phi\_\lambda\colon M(\lambda)\times M(\lambda)\to R$ 를 $W(\lambda)$ 의 쌍선형형식이라 한다.
+
+$M_n(R)$ 에서는 $E\_{ST}E\_{UV}=\delta\_{TU}E\_{SV}$ 이므로 $\Phi(T,U)=\delta\_{TU}$ 이고, 세포 가군은 열벡터의 공간 $R^n$ 이다. $TL_2(\delta)$ 에서는 $e_1e_1=\delta e_1$ 이므로 $\Phi\_0=\delta$ 이고 $\Phi\_2=1$ 이다.
 
 # 성질
+
+## 이념과 대칭성
+
+정의의 합동식에서 $A^{\lt \lambda}$ 가 양쪽 이념임이 따라 나온다. 대합 $i$ 를 쓰면 $\Phi\_\lambda$ 가 대칭이다.
 
 ## 기약 가군의 분류
 
@@ -70,7 +74,7 @@ $i$ 가 있으므로 $A$ 와 반대대수가 동형이고 왼쪽 가군의 분�
 
 ## 도형 대수
 
-Brauer 대수와 Temperley–Lieb 대수에서 $\Lambda$ 는 아래로 내려가지 않는 선의 개수로 걸러진 지표이고 $M(\lambda)$ 는 반쪽 도형이다. 두 반쪽을 맞붙일 때 생기는 고리의 개수가 $\Phi\_\lambda$ 를 $\delta$ 의 거듭제곱으로 준다. 매개변수가 특수한 값일 때 반단순성이 깨지는 현상이 $\Phi\_\lambda=0$ 으로 읽힌다.
+[Brauer 대수](brauer-algebras.md)와 Temperley–Lieb 대수에서 $\Lambda$ 는 아래로 내려가지 않는 선의 개수로 걸러진 지표이고 $M(\lambda)$ 는 반쪽 도형이다. 두 반쪽을 맞붙일 때 생기는 고리의 개수가 $\Phi\_\lambda$ 를 $\delta$ 의 거듭제곱으로 준다. 매개변수가 특수한 값일 때 반단순성이 깨지는 현상이 $\Phi\_\lambda=0$ 으로 읽힌다.
 
 ## 대칭군의 Specht 가군
 
