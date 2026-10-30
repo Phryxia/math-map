@@ -6,11 +6,7 @@
 
 # 직관
 
-Sherman–Morrison 공식은 역행렬을 이미 아는 행렬에 랭크 $1$ 행렬을 더했을 때 새 역행렬을 옛 역행렬과 벡터 두 개로 적는 공식이다. 행렬을 다시 뒤집지 않고 $n^2$ 번의 곱셈으로 역행렬을 갱신한다.
-
-[Schur 보수](schur-complement.md)를 블록 $\begin{pmatrix}A&u\cr v^{\mathsf T}&-1\end{pmatrix}$ 에 쓰면 이 공식이 나온다. 랭크가 $k$ 인 갱신으로 넓힌 것이 Woodbury 항등식이다.
-
-$n\times n$ 행렬 $A$ 의 [LU 분해](matrix-factorizations.md)를 이미 구해 두었고, 그것으로 $Ay=b$ 를 풀어 $y$ 를 손에 쥐고 있다. 이제 $A$ 의 $(1,1)$ 성분만 $\alpha$ 만큼 키운 행렬 $A+\alpha e_1e_1^{\mathsf T}$ 로 같은 우변을 풀어야 하는데, 분해를 처음부터 다시 하면 곱셈이 $n^3/3$ 번이다. 바뀐 것은 성분 하나이니 새 해 $x$ 를 $y$ 에서 얼마나 움직였는지로 적는다.
+$n\times n$ 행렬 $A$ 의 [LU 분해](matrix-factorizations.md)(lower–upper decomposition)를 이미 구해 두었고, 그것으로 $Ay=b$ 를 풀어 $y$ 를 손에 쥐고 있다. 이제 $A$ 의 $(1,1)$ 성분만 $\alpha$ 만큼 키운 행렬 $A+\alpha e_1e_1^{\mathsf T}$ 로 같은 우변을 풀어야 하는데, 분해를 처음부터 다시 하면 곱셈이 $n^3/3$ 번이다. 바뀐 것은 성분 하나이니 새 해 $x$ 를 $y$ 에서 얼마나 움직였는지로 적는다.
 
 $$
 Ax=b-\alpha(e_1^{\mathsf T}x)\thinspace e_1
@@ -30,9 +26,9 @@ $$
 (A+uv^{\mathsf T})^{-1}=A^{-1}-\frac{A^{-1}u\thinspace v^{\mathsf T}A^{-1}}{1+v^{\mathsf T}A^{-1}u}
 $$
 
-가 성립한다. 이 등식이 **Sherman–Morrison 공식**이다. 직관 절은 $u=\alpha e_1$ , $v=e_1$ 인 경우다.
+가 성립한다. 이 등식이 **Sherman–Morrison 공식(Sherman–Morrison formula)** 이다. 직관 절은 $u=\alpha e_1$ , $v=e_1$ 인 경우다. $A=I\_2$, $u=v=e_1$ 이면 $A+uv^{\mathsf T}=\mathrm{diag}(2,1)$ 이고, 공식의 우변은 $I\_2-\tfrac12 e_1e_1^{\mathsf T}=\mathrm{diag}(\tfrac12,1)$ 로 실제 역행렬과 같다.
 
-$U,V$ 가 $n\times k$ 행렬이고 $C$ 가 $k\times k$ 가역행렬일 때 같은 등식을 랭크 $k$ 갱신으로 넓힌 것이 **Woodbury 항등식**이다.
+$U,V$ 가 $n\times k$ 행렬이고 $C$ 가 $k\times k$ 가역행렬일 때 같은 등식을 랭크 $k$ 갱신으로 넓힌 것이 **Woodbury 항등식(Woodbury identity)** 이다.
 
 $$
 (A+UCV^{\mathsf T})^{-1}=A^{-1}-A^{-1}U(C^{-1}+V^{\mathsf T}A^{-1}U)^{-1}V^{\mathsf T}A^{-1}
@@ -44,7 +40,7 @@ $$
 
 ## Schur 보수에서 얻는 유도
 
-$2\times2$ 블록 행렬을 잡는다.
+[Schur 보수](schur-complement.md)를 쓴다. $2\times2$ 블록 행렬을 잡는다.
 
 $$
 M=\begin{pmatrix}A&-U\cr V^{\mathsf T}&C^{-1}\end{pmatrix}
