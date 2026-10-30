@@ -6,10 +6,6 @@
 
 # 직관
 
-Tate 코호몰로지는 유한군 $G$ 와 $G$ 가군 $A$ 에 대해 모든 정수 차수에서 정의되는 가환군 $\hat H^n(G,A)$ 다. 양의 차수에서는 군 코호몰로지와 같고, $n\le -2$ 에서는 군 호몰로지를 차수를 뒤집어 쓰고, $n=0$ 과 $n=-1$ 에서는 노름 사상의 여핵과 핵을 쓴다.
-
-짧은 완전열이 끊기지 않는 양방향 긴 완전열을 주고, 유도 가군에서 모든 차수가 소멸하므로 차수 이동으로 계산이 옮겨진다. 유한 순환군에서는 주기가 $2$ 이고, 그때 $\hat H^0$ 과 $\hat H^1$ 의 위수 비가 **Herbrand 몫**이다. [유체론](class-field-theory.md)의 노름 지표 계산이 이 몫의 곱셈성을 쓴다.
-
 유한군 $G$ 와 짧은 완전열 $0\to A\to B\to C\to 0$ 에서 코호몰로지의 긴 완전열은 $H^0(G,A)=A^G$ 에서 왼쪽으로 끊긴다. 호몰로지의 긴 완전열은 $H_0(G,A)=A/I_GA$ 에서 오른쪽으로 끊긴다. 두 열을 하나로 이으려면 $A/I_GA$ 에서 $A^G$ 로 가는 사상이 있어야 한다.
 
 $G$ 가 유한하므로 $N=\sum_{g\in G}g$ 를 가군에 작용시킬 수 있다. $h\in G$ 에 대해 $hN=N$ 이므로 $Na$ 는 $G$ 불변이고, $N(g-1)a=0$ 이므로 $N$ 은 $I_GA$ 를 죽인다. 따라서 $N$ 은 몫에서 사상 $N^\ast:A/I_GA\to A^G$ 를 유도한다.
@@ -22,17 +18,25 @@ $N^\ast$ 는 동형이 아니고 핵과 여핵이 남는다. 그 둘을 $-1$ 차
 
 ## 노름 사상과 Tate 코호몰로지
 
-유한군 $G$ 와 $G$ 가군 $A$ 에 대해 $N=\sum_{g\in G}g\in\mathbb Z G$ 라 하고, $I_G$ 를 $\lbrace g-1:g\in G\rbrace$ 가 생성하는 $\mathbb Z G$ 의 양쪽 이데알이라 한다. **노름 사상**은 $N^\ast:A/I_GA\to A^G$, $a+I_GA\mapsto Na$ 다. **Tate 코호몰로지**는 다음이다.
+유한군 $G$ 와 $G$ 가군 $A$ 에 대해 $N=\sum_{g\in G}g\in\mathbb Z G$ 라 하고, $I_G$ 를 $\lbrace g-1:g\in G\rbrace$ 가 생성하는 $\mathbb Z G$ 의 양쪽 이데알, 곧 증강 이데알(augmentation ideal)이라 한다. **노름 사상(norm map)** 은 $N^\ast:A/I_GA\to A^G$, $a+I_GA\mapsto Na$ 다. **Tate 코호몰로지** 는 다음 가환군이다.
 
 $$\hat H^n(G,A)=\begin{cases}H^n(G,A) & n\ge 1\cr \mathrm{coker}\thinspace N^\ast & n=0\cr \ker N^\ast & n=-1\cr H_{-n-1}(G,A) & n\le -2\end{cases}$$
 
 $n\ge 1$ 과 $n\le -2$ 의 값은 원래의 코호몰로지와 호몰로지이고, 두 중간 차수만 새로 정의된다.
 
+직관 절의 위수 $m$ 인 순환군과 자명한 작용의 $\mathbb Z$ 에서는 $N^\ast$ 가 $m$ 배 사상이므로 $\hat H^0=\mathbb Z/m\mathbb Z$, $\hat H^{-1}=0$ 이다. $A=\mathbb Z G$ 이면 $A^G=\mathbb Z N$ 이고 $A/I_GA\cong\mathbb Z$ 이며 $N^\ast$ 가 $1$ 을 $N$ 으로 보내는 동형이므로 $\hat H^0=\hat H^{-1}=0$ 이다.
+
 ## 완전 분해
 
-$\mathbb Z G$ 자유 가군의 완전열 $\cdots\to P_1\to P_0\to P_{-1}\to P_{-2}\to\cdots$ 가 $P_0\to P_{-1}$ 에서 $\mathbb Z$ 를 거쳐 끊기면, 곧 $\mathbb Z$ 의 사영 분해와 그 쌍대를 이어 붙인 것이면 **완전 분해**라 한다. $\mathrm{Hom}\_{\mathbb Z G}(P\_\bullet,A)$ 의 $n$ 번째 코호몰로지가 모든 $n\in\mathbb Z$ 에서 $\hat H^n(G,A)$ 다[^1]. 위의 경우 나눔이 하나의 복합체로 합쳐진다.
+**완전 분해(complete resolution)** 는 $\mathbb Z G$ 자유 가군의 완전열 $\cdots\to P_1\to P_0\to P_{-1}\to P_{-2}\to\cdots$ 가운데 $P_0\to P_{-1}$ 이 $\mathbb Z$ 를 거쳐 끊기는 것, 곧 $\mathbb Z$ 의 사영 분해와 그 쌍대를 이어 붙인 것이다.
+
+위수 $m$ 인 순환군에서 모든 $P_n$ 을 $\mathbb Z G$ 로 두고 사상을 $t-1$ 과 $N$ 으로 번갈아 놓은 양쪽으로 끝없는 열이 완전 분해다. $P_0\to P_{-1}$ 은 $N$ 을 곱하는 사상이고, $\mathbb Z G\to\mathbb Z\to\mathbb Z G$ 로 증강 사상 뒤에 $1\mapsto N$ 을 합성한 것과 같다.
 
 # 성질
+
+## 완전 분해로 계산한 값
+
+완전 분해 $P\_\bullet$ 에 대해 $\mathrm{Hom}\_{\mathbb Z G}(P\_\bullet,A)$ 의 $n$ 번째 코호몰로지가 모든 $n\in\mathbb Z$ 에서 $\hat H^n(G,A)$ 다[^1]. 정의의 네 경우가 복합체 하나의 코호몰로지로 합쳐진다.
 
 ## 양방향 긴 완전열
 
@@ -58,7 +62,7 @@ $$\hat H^{2k}(G,A)=A^G/NA,\qquad \hat H^{2k+1}(G,A)=\ker N/(t-1)A$$
 
 ## Herbrand 몫
 
-$\hat H^0(G,A)$ 와 $\hat H^1(G,A)$ 가 모두 유한하면 **Herbrand 몫**을 다음으로 정의한다.
+$\hat H^0(G,A)$ 와 $\hat H^1(G,A)$ 가 모두 유한하면 **Herbrand 몫(Herbrand quotient)** 을 다음으로 정의한다.
 
 $$h(A)=\frac{\lvert\hat H^0(G,A)\rvert}{\lvert\hat H^1(G,A)\rvert}$$
 
