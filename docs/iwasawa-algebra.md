@@ -6,10 +6,6 @@
 
 # 직관
 
-Iwasawa 대수는 $\mathbb Z_p$ 계수 한 변수 형식 멱급수환 $\Lambda=\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 이다. $\Gamma\cong\mathbb Z_p$ 인 위수 무한 군의 완비 군환과 같은 환이고, 유한생성 $\Lambda$ 모듈이 유한 오차를 허용한 직합으로 분류된다.
-
-이 분류가 주는 두 정수 $\lambda$ 와 $\mu$ 가 $\mathbb Z_p$ 확대의 층마다 자라는 류수를 하나의 공식으로 쓴다.
-
 $\mathbb Z_p$ 확대는 체의 탑 $K=K_0\subset K_1\subset\cdots$ 으로 주어지고 $\mathrm{Gal}(K_n/K)$ 가 $\mathbb Z/p^n$ 이다. 각 층의 아이디얼 류군 $A_n$ 에는 군환 $\mathbb Z_p\lbrack\mathbb Z/p^n\rbrack=\mathbb Z_p\lbrack t\rbrack/(t^{p^n}-1)$ 이 작용한다. 층마다 다른 환이 작용하므로 $A_0,A_1,A_2,\dots$ 의 크기를 함께 다룰 환이 없다.
 
 $t=1+T$ 로 바꾸면 $n$ 번째 군환이 $\mathbb Z_p\lbrack T\rbrack/((1+T)^{p^n}-1)$ 이고, 이 환들이 $n$ 에 대해 사영계를 이룬다. 역극한을 취하면 $\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 이 나오고, 모든 층의 류군이 이 한 환 위의 모듈 $X=\varprojlim A_n$ 하나로 묶인다. $X$ 를 분해하면 층마다 세던 크기가 분해에 쓰인 멱급수의 차수와 $p$ 지수로 읽힌다.
@@ -18,21 +14,33 @@ $t=1+T$ 로 바꾸면 $n$ 번째 군환이 $\mathbb Z_p\lbrack T\rbrack/((1+T)^{
 
 ## 완비 군환
 
-$\Gamma$ 가 위수 무한 순환 pro-$p$ 군이고 $\Gamma_n=\Gamma^{p^n}$ 이면 **완비 군환**은 $\mathbb Z_p\lbrack\lbrack\Gamma\rbrack\rbrack=\varprojlim_n\mathbb Z_p\lbrack\Gamma/\Gamma_n\rbrack$ 이다. 생성원 $\gamma$ 를 $1+T$ 로 보내는 사상이 $\mathbb Z_p\lbrack\lbrack\Gamma\rbrack\rbrack\cong\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 을 준다. 이 환을 $\Lambda$ 로 쓴다.
+$\Gamma$ 가 위수 무한 순환 pro-$p$ 군이고 $\Gamma_n=\Gamma^{p^n}$ 이면 **완비 군환(completed group ring)** 은 $\mathbb Z_p\lbrack\lbrack\Gamma\rbrack\rbrack=\varprojlim_n\mathbb Z_p\lbrack\Gamma/\Gamma_n\rbrack$ 이다. 이 환을 $\Lambda$ 로 쓴다.
+
+$\Gamma/\Gamma_n\cong\mathbb Z/p^n$ 이고 그 생성원을 $1+T$ 로 적으면 $\mathbb Z_p\lbrack\Gamma/\Gamma_n\rbrack=\mathbb Z_p\lbrack T\rbrack/((1+T)^{p^n}-1)$ 이다. 직관 절에서 층마다 류군 $A_n$ 에 작용하던 환이 이것이고, $\Lambda$ 는 이 환들의 역극한이다.
 
 ## 특이 다항식
 
-$P(T)=T^d+a_{d-1}T^{d-1}+\cdots+a_0\in\mathbb Z_p\lbrack T\rbrack$ 의 선두계수가 $1$ 이고 나머지 계수가 모두 $p$ 로 나뉘면 $P$ 를 **특이 다항식**이라 한다.
+$P(T)=T^d+a_{d-1}T^{d-1}+\cdots+a_0\in\mathbb Z_p\lbrack T\rbrack$ 의 선두계수가 $1$ 이고 나머지 계수가 모두 $p$ 로 나뉘면 $P$ 를 **특이 다항식(distinguished polynomial)** 이라 한다.
+
+$T-p$ 와 $T^2+pT+p$ 는 특이 다항식이고 $T+1$ 은 아니다. $(1+T)^p-1=T^p+\binom p1T^{p-1}+\cdots+\binom p{p-1}T$ 는 중간 이항계수가 모두 $p$ 로 나뉘므로 특이 다항식이다.
 
 ## 유사동형
 
-유한생성 $\Lambda$ 모듈 $M,N$ 에 대해 핵과 여핵이 모두 유한인 $\Lambda$ 준동형 $M\to N$ 이 있으면 $M$ 과 $N$ 이 **유사동형**이라 한다.
+유한생성 $\Lambda$ 모듈 $M,N$ 에 대해 핵과 여핵이 모두 유한인 $\Lambda$ 준동형 $M\to N$ 이 있으면 $M$ 과 $N$ 이 **유사동형(pseudo-isomorphic)** 이라 한다.
+
+아이디얼 $(p,T)$ 를 $\Lambda$ 에 넣는 포함사상은 핵이 $0$ 이고 여핵이 $\Lambda/(p,T)\cong\mathbb F_p$ 이므로, $(p,T)$ 와 $\Lambda$ 는 유사동형이다.
 
 ## 특성 아이디얼
 
-비틀림 유한생성 $\Lambda$ 모듈 $M$ 이 $\bigoplus_i\Lambda/(g_i)$ 와 유사동형일 때 $\mathrm{char}(M)=(\prod_i g_i)$ 를 $M$ 의 **특성 아이디얼**이라 한다. 구조 정리가 이 아이디얼이 분해의 선택과 무관함을 준다.
+비틀림 유한생성 $\Lambda$ 모듈 $M$ 이 $\bigoplus_i\Lambda/(g_i)$ 와 유사동형일 때 $\mathrm{char}(M)=(\prod_i g_i)$ 를 $M$ 의 **특성 아이디얼(characteristic ideal)** 이라 한다.
+
+$M=\Lambda/(T)\oplus\Lambda/(p^2)$ 이면 $\mathrm{char}(M)=(p^2T)$ 다.
 
 # 성질
+
+## 멱급수환과의 동형
+
+생성원 $\gamma$ 를 $1+T$ 로 보내는 사상이 $\mathbb Z_p\lbrack\lbrack\Gamma\rbrack\rbrack\cong\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack$ 을 준다. 각 층의 다항식환 몫 $\mathbb Z_p\lbrack T\rbrack/((1+T)^{p^n}-1)$ 이 $\mathbb Z_p\lbrack\lbrack T\rbrack\rbrack/((1+T)^{p^n}-1)$ 과 같고, $(1+T)^{p^n}-1$ 이 특이 다항식이므로 그 역극한이 형식 멱급수환이다.
 
 ## Weierstrass 준비 정리
 
@@ -48,7 +56,7 @@ $$
 \Lambda^{r}\oplus\bigoplus_{i=1}^{s}\Lambda/(p^{m_i})\oplus\bigoplus_{j=1}^{t}\Lambda/(P_j^{n_j})
 $$
 
-$P_j$ 는 서로 다른 기약 특이 다항식이고 $r,s,t,m_i,n_j$ 는 $M$ 으로 정해진다. $\Lambda$ 가 2차원 정칙 국소환이므로 높이 1 소아이디얼마다 국소화하면 이산 부치환이 되고, 거기서 얻은 불변량을 모은 것이 이 분해다. ∎
+$P_j$ 는 서로 다른 기약 특이 다항식이고 $r,s,t,m_i,n_j$ 는 $M$ 으로 정해진다. 그래서 특성 아이디얼은 분해의 선택과 무관하다. $\Lambda$ 가 2차원 정칙 국소환이므로 높이 1 소아이디얼마다 국소화하면 이산 부치환이 되고, 거기서 얻은 불변량을 모은 것이 이 분해다. ∎
 
 ## 국소환으로서의 구조
 
