@@ -6,10 +6,6 @@
 
 # 직관
 
-유클리드 정역은 원소마다 음이 아닌 정수 크기를 붙여, 나머지가 제수보다 작아지는 나눗셈을 언제나 할 수 있는 정역이다. 정수환과 [체](fields.md) 위의 [다항식환](polynomial-rings.md)이 이 조건을 만족하고, 두 환에서 최대공약수와 유일분해를 얻는 근거가 모두 이 나눗셈이다.
-
-나눗셈이 있으면 [유클리드 알고리즘](euclidean-algorithm.md)이 유한 번에 멈추고, 최대공약수가 두 원소의 결합으로 쓰이며, 모든 아이디얼이 한 원소로 생성된다. 그래서 유클리드 정역은 주아이디얼정역(principal ideal domain, PID)이고 [유일분해정역](unique-factorization-domains.md)이다. 두 포함은 진부분이므로 역은 성립하지 않는다.
-
 정수에서 유일분해를 얻는 근거는 나눗셈이다. $12$ 를 $5$ 로 나누면 몫 $2$ 와 나머지 $2$ 가 나오고, 나머지가 제수보다 작으므로 같은 과정을 되풀이하면 언젠가 나머지가 $0$ 이 된다. 이 반복이 최대공약수를 주고, 거기서 더 쪼갤 수 없는 수가 곱을 나누면 인수 하나를 나눈다는 성질이 따라온다. 다른 환에서도 나눗셈이 되면 같은 결론이 나온다.
 
 [Gauss 정수환](gaussian-integers.md) $\mathbb Z[i]$ 에서 해 본다. $3+4i$ 를 $1+2i$ 로 나누려면 분모를 유리화한다.
@@ -29,16 +25,20 @@ $$
 $R$ 를 정역이라 하자. $R$ 가 유클리드 정역이라는 것은 다음을 만족하는 함수 $N\colon R\setminus\lbrace 0\rbrace\to\mathbb Z\_{\ge 0}$ 가 존재한다는 뜻이다.
 
 $$
-a\in R,\ b\in R\setminus\lbrace 0\rbrace \implies a=qb+r \ \text{인} \ q,r\in R \ \text{가 있고} \ r=0 \ \text{또는} \ N(r)\lt N(b)
+a\in R,\thinspace b\in R\setminus\lbrace 0\rbrace \implies a=qb+r \thinspace\text{인}\thinspace q,r\in R \thinspace\text{가 있고}\thinspace r=0 \thinspace\text{또는}\thinspace N(r)\lt N(b)
 $$
 
 이 $N$ 을 **유클리드 함수(Euclidean function)** 라 한다. $q$ 와 $r$ 의 유일성은 요구하지 않는다.
+
+정수환은 $N(n)=\vert n\vert$ 로, [체](fields.md) $k$ 위의 [다항식환](polynomial-rings.md) $k\lbrack x\rbrack$ 는 $N(f)=\deg f$ 로, Gauss 정수환은 직관 절의 $N(a+bi)=a^2+b^2$ 으로 유클리드 정역이다. $12=2\cdot5+2$ 와 $12=3\cdot5-3$ 은 모두 $N(r)\lt 5$ 를 만족하므로 정수에서도 $q,r$ 이 하나로 정해지지 않는다.
 
 조건에 곱셈과의 관계가 없는 점이 노름과 다르다. $N(ab)\ge N(a)$ 나 $N(ab)=N(a)N(b)$ 를 덧붙인 정의도 쓰이지만, 두 조건 없이도 아래 성질이 모두 나온다.
 
 # 성질
 
 ## 주아이디얼정역
+
+유클리드 정역은 주아이디얼정역(principal ideal domain, PID)이고, 따라서 [유일분해정역](unique-factorization-domains.md)이다. 두 포함은 진부분이다.
 
 $I$ 를 $0$ 이 아닌 [아이디얼](ideals-quotient-rings.md)이라 하고 $N$ 값이 최소인 $b\in I\setminus\lbrace 0\rbrace$ 를 잡는다. 임의의 $a\in I$ 를 $a=qb+r$ 로 쓰면 $r=a-qb\in I$ 이므로 $N(r)\lt N(b)$ 는 최소성에 어긋나고, 따라서 $r=0$ 이며 $I=(b)$ 다. 유일분해정역임은 여기서 따라온다.
 
@@ -47,14 +47,14 @@ $I$ 를 $0$ 이 아닌 [아이디얼](ideals-quotient-rings.md)이라 하고 $N$
 $a,b$ 가 둘 다 $0$ 이 아니면 아이디얼 $(a,b)$ 는 한 원소 $d$ 로 생성되고, 이 $d$ 가 최대공약수다.
 
 $$
-d=ax+by \ \text{인} \ x,y\in R \ \text{가 존재한다}
+d=ax+by \thinspace\text{인}\thinspace x,y\in R \thinspace\text{가 존재한다}
 $$
 
 $d\in(a,b)$ 가 그 꼴을 주고, $a,b\in(d)$ 가 $d$ 를 공약수로 만든다. 공약수 $e$ 는 $ax+by$ 를 나누므로 $d$ 를 나눈다.
 
 ## 확장 유클리드 알고리즘
 
-Bézout 계수는 나눗셈을 되풀이하며 계수를 함께 갱신하면 나온다. $N(r)$ 이 매 단계 줄어드는 음이 아닌 정수이므로 반복은 유한 번에 멈춘다.
+[유클리드 알고리즘](euclidean-algorithm.md)에서 Bézout 계수는 나눗셈을 되풀이하며 계수를 함께 갱신하면 나온다. $N(r)$ 이 매 단계 줄어드는 음이 아닌 정수이므로 반복은 유한 번에 멈춘다.
 
 ```javascript
 // R 은 유클리드 정역. R.divmod(a, b) 는 a = q*b + r 를 주는 나눗셈이다.
@@ -79,13 +79,13 @@ function extendedEuclid(R, a, b) {
 제곱인수가 없는 $d$ 에 대해 $K=\mathbb Q(\sqrt d)$ 의 정수환에 절대노름 $\vert N(\alpha)\vert$ 을 붙인 것이 유클리드 함수가 되는 $d$ 는 유한하다[^1]. $d$ 가 음이면 다섯 개다.
 
 $$
-d\lt 0:\quad -1,\ -2,\ -3,\ -7,\ -11
+d\lt 0:\quad -1,\thinspace -2,\thinspace -3,\thinspace -7,\thinspace -11
 $$
 
 $d$ 가 양이면 열여섯 개다.
 
 $$
-d\gt 0:\quad 2,\ 3,\ 5,\ 6,\ 7,\ 11,\ 13,\ 17,\ 19,\ 21,\ 29,\ 33,\ 37,\ 41,\ 57,\ 73
+d\gt 0:\quad 2,\thinspace 3,\thinspace 5,\thinspace 6,\thinspace 7,\thinspace 11,\thinspace 13,\thinspace 17,\thinspace 19,\thinspace 21,\thinspace 29,\thinspace 33,\thinspace 37,\thinspace 41,\thinspace 57,\thinspace 73
 $$
 
 $d=-1$ 이 Gauss 정수환이고, $d=-3$ 은 $\omega=(1+\sqrt{-3})/2$ 로 생성되는 Eisenstein 정수환이다. 이 목록 밖의 [대수적 수체](algebraic-number-fields.md)에서는 원소의 분해가 유일하지 않을 수 있고, 분해의 대상을 아이디얼로 바꾸어 유일성을 복구한 것이 [Dedekind 정역](dedekind-domains.md)이다.
