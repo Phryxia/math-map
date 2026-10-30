@@ -6,27 +6,25 @@
 
 # 직관
 
-Kummer 이론은 $1$ 의 원시 $n$ 제곱근을 포함하는 체의 지수 $n$ 아벨 확대를 $n$ 제곱근으로 분류하는 이론이다. 체 $K$ 가 $1$ 의 원시 $n$ 제곱근을 포함하고 표수가 $n$ 을 나누지 않으면, $K$ 의 지수 $n$ 아벨 확대가 군 $K^{\times}/(K^{\times})^{n}$ 의 부분군과 일대일로 대응한다. 확대는 모두 $n$ 제곱근을 붙여 얻는다. 이 대응이 Kummer 이론이다.
-
-대응은 Galois 군과 그 부분군 사이의 완전쌍으로 적히고, 쌍의 비퇴화가 [Hilbert 정리 90](hilbert-theorem-90.md)에서 나온다.
-
 $\mathbb Q$ 의 이차확대를 전부 적으려 한다. 제곱인자 없는 정수 $d\ne1$ 마다 $\mathbb Q(\sqrt d)$ 가 하나씩이고 서로 다르다. 곧 이차확대가 $\mathbb Q^{\times}/(\mathbb Q^{\times})^{2}$ 의 자명하지 않은 원소와 하나씩 짝지어진다.
 
-같은 것을 삼차에서 해 본다. $\mathbb Q(2^{1/3})$ 은 $x^3-2$ 의 세 근 가운데 실근 하나만 품으므로 Galois 확대가 아니다. 나머지 두 근은 실근에 $1$ 의 원시 세제곱근 $\zeta$ 를 곱한 것이고, $\zeta$ 가 $\mathbb Q$ 에 없어서 생긴 일이다.
+같은 것을 삼차에서 해 본다. $\mathbb Q(2^{1/3})$ 은 $x^3-2$ 의 세 근 가운데 실근 하나만 포함하므로 Galois 확대가 아니다. 나머지 두 근은 실근에 $1$ 의 원시 세제곱근 $\zeta=e^{2\pi i/3}$ 을 곱한 것이고, $\zeta$ 가 $\mathbb Q$ 에 없어서 $\mathbb Q(2^{1/3})$ 밖에 있다.
 
-$\zeta$ 를 바닥 체에 넣으면 $x^n-a$ 의 근 $\zeta^{i}a^{1/n}$ 이 전부 $K(a^{1/n})$ 에 들어가 확대가 Galois 가 된다. $\sigma$ 가 $a^{1/n}$ 을 어느 근으로 보내는지가 $\zeta$ 의 거듭제곱 하나를 정하므로 Galois 군이 $\mu_n$ 의 부분군으로 들어가고, 이차의 그림이 그대로 올라간다.
+바닥 체를 $K=\mathbb Q(\zeta)$ 로 바꾸면 세 근 $2^{1/3}$, $\zeta 2^{1/3}$, $\zeta^2 2^{1/3}$ 이 모두 $L=K(2^{1/3})$ 에 들어간다. $K$ 를 고정하는 자기동형 $\sigma$ 는 $2^{1/3}$ 을 세 근 가운데 하나로 보내고, 그 근은 $2^{1/3}$ 에 $1$, $\zeta$, $\zeta^2$ 가운데 하나를 곱한 것이다. $\sigma$ 마다 그 곱한 수를 대응시키면 $\mathrm{Gal}(L/K)$ 가 $\lbrace 1,\zeta,\zeta^2\rbrace$ 와 같아진다.
+
+$2$ 대신 $16=2\cdot 2^3$ 의 세제곱근을 넣으면 $16^{1/3}=2\cdot 2^{1/3}$ 이므로 같은 $L$ 이 나온다. 이차에서 $\sqrt2$ 와 $\sqrt8$ 이 같은 확대를 준 것처럼, 비가 세제곱수인 두 수는 같은 확대를 준다.
 
 # 정의
 
-$K$ 를 표수가 $n$ 을 나누지 않는 체, $\mu_n\subseteq K$ 를 $1$ 의 $n$ 제곱근 전체라 한다. $\mu_n$ 은 위수 $n$ 의 순환군이다.
+$K$ 를 표수가 $n$ 을 나누지 않는 체라 하고, $\mu_n$ 을 $1$ 의 $n$ 제곱근 전체라 한다. 이 절에서는 $\mu_n\subseteq K$ 를 가정한다. $\mu_2=\lbrace 1,-1\rbrace$ 은 $\mathbb Q$ 에 포함되고, $\mu_3=\lbrace 1,\zeta,\zeta^2\rbrace$ 는 직관 절의 $K=\mathbb Q(\zeta)$ 에 포함된다.
 
 ## Kummer 확대
 
-$L/K$ 가 아벨 확대이고 $\mathrm{Gal}(L/K)$ 의 모든 원소의 위수가 $n$ 을 나누면 $L/K$ 를 **지수 $n$ 의 Kummer 확대**라 한다.
+**Kummer 확대(Kummer extension)** 는 Galois 군이 아벨 군이고 그 모든 원소의 위수가 $n$ 을 나누는 Galois 확대 $L/K$ 다. 이때 $L/K$ 를 지수(exponent) $n$ 의 Kummer 확대라 한다. $\mathbb Q(\sqrt2,\sqrt3)/\mathbb Q$ 는 Galois 군이 $\mathbb Z/2\times\mathbb Z/2$ 이므로 지수 $2$ 의 Kummer 확대이고, 직관 절의 $L/K$ 는 Galois 군이 위수 $3$ 의 순환군이므로 지수 $3$ 의 Kummer 확대다. $\mathbb Q(2^{1/3})/\mathbb Q$ 는 Galois 확대가 아니므로 Kummer 확대가 아니다.
 
 ## Kummer 쌍
 
-$\Delta$ 를 $(K^{\times})^{n}\subseteq\Delta\subseteq K^{\times}$ 인 부분군이라 하고 $L=K(\Delta^{1/n})$ 을 $\Delta$ 의 원소들의 $n$ 제곱근을 모두 붙인 체라 한다. 다음이 **Kummer 쌍**이다.
+$\Delta$ 를 $(K^{\times})^{n}\subseteq\Delta\subseteq K^{\times}$ 인 부분군이라 하고 $L=K(\Delta^{1/n})$ 을 $\Delta$ 의 원소들의 $n$ 제곱근을 모두 붙인 체라 한다. 다음 사상이 **Kummer 쌍(Kummer pairing)** 이다.
 
 $$
 \mathrm{Gal}(L/K)\times\Delta/(K^{\times})^{n}\longrightarrow\mu_n,
@@ -34,7 +32,7 @@ $$
 (\sigma,a)\longmapsto\frac{\sigma(a^{1/n})}{a^{1/n}}
 $$
 
-값은 $a^{1/n}$ 의 선택에 의존하지 않고 양쪽 변수에 대해 준동형이다.
+$K=\mathbb Q$, $n=2$ 이고 $\Delta$ 가 $2$, $3$ 과 유리수의 제곱들로 생성되면 $L=\mathbb Q(\sqrt2,\sqrt3)$ 이다. $\sqrt2$ 의 부호만 바꾸는 $\sigma$ 에 대해 $(\sigma,2)\mapsto -1$, $(\sigma,3)\mapsto 1$, $(\sigma,6)\mapsto -1$ 이다. 직관 절에서 $\sigma$ 에 대응시킨 수가 $(\sigma,2)$ 의 값이다.
 
 # 성질
 
@@ -46,15 +44,17 @@ $$
 
 ## 쌍의 비퇴화
 
-Kummer 쌍은 양쪽에서 비퇴화이고, 유한한 경우 $\mathrm{Gal}(L/K)$ 와 $\Delta/(K^{\times})^{n}$ 이 서로의 지표군이다.
+Kummer 쌍의 값은 $a^{1/n}$ 의 선택에 의존하지 않는다. 다른 선택 $\zeta^{j}a^{1/n}$ 에서 $\zeta^{j}\in K$ 는 $\sigma$ 로 고정되기 때문이다. 쌍은 양쪽 변수에 대해 준동형이다.
 
-$\sigma$ 쪽의 비퇴화는 Galois 대응에서 나온다. $a$ 쪽, 곧 모든 $\sigma$ 에서 값이 $1$ 인 $a$ 가 $(K^{\times})^{n}$ 에 든다는 것은 $a^{1/n}$ 이 $K$ 에 남는다는 뜻이다.
+Kummer 쌍은 양쪽에서 비퇴화(nondegenerate)이고, 유한한 경우 $\mathrm{Gal}(L/K)$ 와 $\Delta/(K^{\times})^{n}$ 이 서로의 지표군(character group)이다.
+
+$\sigma$ 쪽의 비퇴화는 [Galois 대응](galois-theory.md)에서 나온다. $a$ 쪽, 곧 모든 $\sigma$ 에서 값이 $1$ 인 $a$ 가 $(K^{\times})^{n}$ 에 든다는 것은 $a^{1/n}$ 이 $K$ 에 남는다는 뜻이다.
 
 ## 순환 확대의 생성
 
-**따름정리.** $L/K$ 가 차수 $n$ 의 순환 확대면 $L=K(a^{1/n})$ 인 $a\in K^{\times}$ 가 있다.
+**따름정리.** $L/K$ 가 차수 $n$ 의 순환 확대(cyclic extension)면 $L=K(a^{1/n})$ 인 $a\in K^{\times}$ 가 있다.
 
-증명은 Hilbert 정리 90 이다. 생성원 $\sigma$ 에 대해 $N_{L/K}(\zeta^{-1})=\zeta^{-n}=1$ 이므로 $\zeta^{-1}=\sigma(b)/b$ 인 $b\in L^{\times}$ 가 있고, 이 $b$ 는 $\sigma(b)=\zeta b$ 를 만족한다. $\sigma(b^{n})=b^{n}$ 이므로 $a=b^{n}$ 이 $K$ 에 들고, $b$ 의 켤레 $\zeta^{i}b$ 가 서로 다르므로 $b$ 가 차수 $n$ 의 원소라 $L=K(b)$ 다.
+증명에 [Hilbert 정리 90](hilbert-theorem-90.md)을 쓴다. 생성원 $\sigma$ 에 대해 $N_{L/K}(\zeta^{-1})=\zeta^{-n}=1$ 이므로 $\zeta^{-1}=\sigma(b)/b$ 인 $b\in L^{\times}$ 가 있고, 이 $b$ 는 $\sigma(b)=\zeta b$ 를 만족한다. $\sigma(b^{n})=b^{n}$ 이므로 $a=b^{n}$ 이 $K$ 에 들고, $b$ 의 켤레 $\zeta^{i}b$ 가 서로 다르므로 $b$ 가 차수 $n$ 의 원소라 $L=K(b)$ 다.
 
 ## 표수 p 의 경우
 
@@ -62,10 +62,10 @@ $\sigma$ 쪽의 비퇴화는 Galois 대응에서 나온다. $a$ 쪽, 곧 모든 
 
 # 활용
 
-- **유체론.** 유체론의 고전적 증명은 바닥 체에 $1$ 의 거듭제곱근을 붙여 Kummer 확대로 만든 뒤 상호법칙을 그 안에서 세우고 내려오는 순서를 따른다.
-- **타원곡선의 하강.** 곱셈 $\lbrack n\rbrack$ 이 주는 짧은 완전열에서 나오는 연결 준동형이 Kummer 쌍과 같은 모양이고, 그 상이 [Selmer 군](selmer-tate-shafarevich.md)을 거쳐 Mordell–Weil 군의 계수를 재는 데 쓰인다.
+- **유체론.** [유체론](class-field-theory.md)의 고전적 증명은 바닥 체에 $1$ 의 거듭제곱근을 붙여 Kummer 확대로 만든 뒤 상호법칙을 그 안에서 세우고 내려오는 순서를 따른다.
+- **타원곡선의 하강.** 곱셈 $\lbrack n\rbrack$ 이 주는 짧은 완전열에서 나오는 연결 준동형(connecting homomorphism)이 Kummer 쌍과 같은 모양이고, 그 상이 [Selmer 군](selmer-tate-shafarevich.md)을 거쳐 Mordell–Weil 군의 계수를 재는 데 쓰인다.
 - **이차체의 분류.** $n=2$ 에서 대응이 제곱인자 없는 정수와 이차체의 짝짓기가 된다. [이차 상호법칙](quadratic-reciprocity.md)이 그 확대에서 소수가 어떻게 분해되는지를 정한다.
-- **분기의 계산.** $K(a^{1/n})/K$ 에서 어느 소수가 분기하는지가 $a$ 의 소인수 지수가 $n$ 으로 나누어지는지로 읽히므로, 확대의 도체를 $a$ 에서 바로 계산한다.
+- **분기의 계산.** $K(a^{1/n})/K$ 에서 어느 소수가 분기(ramification)하는지가 $a$ 의 소인수 지수가 $n$ 으로 나누어지는지로 읽히므로, 확대의 도체(conductor)를 $a$ 에서 바로 계산한다.
 
 [^1]: S. Lang, *Algebra*, 개정 3판, Graduate Texts in Mathematics 211, Springer, 2002, 6 장 8 절. Artin–Schreier 이론은 같은 장 6 절에 있다.
 
