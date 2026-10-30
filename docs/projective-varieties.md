@@ -18,13 +18,15 @@
 
 ## 사영공간
 
-체 $k$ 위의 $n$ 차원 **사영공간**은
+체 $k$ 위의 $n$ 차원 **사영공간(projective space)** 은
 
 $$
 \mathbb P^n=\big(k^{n+1}\setminus\lbrace 0\rbrace\big)/\sim,\qquad (a_0,\dots,a_n)\sim(\lambda a_0,\dots,\lambda a_n)\thinspace(\lambda\ne0)
 $$
 
-이다. 동치류를 $(a_0:\dots:a_n)$ 으로 쓰고 **동차좌표**라 한다. 점 하나가 $k^{n+1}$ 의 원점을 지나는 직선 하나에 대응한다.
+이다. 동치류를 $(a_0:\dots:a_n)$ 으로 쓰고 **동차좌표(homogeneous coordinates)** 라 한다. 점 하나가 $k^{n+1}$ 의 원점을 지나는 직선 하나에 대응한다.
+
+$\mathbb P^1$ 의 점은 $a_1\ne 0$ 이면 $a_1$ 로 나누어 $(a:1)$ 꼴 하나로 적히고, $a_1=0$ 이면 $(1:0)$ 하나다. 그래서 $\mathbb P^1$ 은 직선 $k$ 에 점 $(1:0)$ 하나를 더한 것이다.
 
 ## 동차 다항식의 영점
 
@@ -36,7 +38,9 @@ $$
 V_+(S)=\lbrace p\in\mathbb P^n:f(p)=0\thinspace\text{ 모든 } f\in S \text{ 에 대해}\rbrace
 $$
 
-를 **사영 대수적 집합**이라 한다. 기약인 것을 **사영다양체**라 한다.
+를 **사영 대수적 집합(projective algebraic set)** 이라 한다. 기약인 것을 **사영다양체** 라 한다.
+
+$\mathbb P^2$ 의 동차좌표를 $(X:Y:Z)$ 로 쓰면 직관 절의 두 직선 $y=0$ 과 $y=1$ 은 $V_+(Y)$ 와 $V_+(Y-Z)$ 다. 두 식을 함께 풀면 $Y=Z=0$ 이므로 교집합은 한 점 $(1:0:0)$ 이다. $V_+(XY)$ 는 두 직선 $V_+(X)\cup V_+(Y)$ 이므로 사영다양체가 아니다.
 
 ## 아핀 덮개
 
