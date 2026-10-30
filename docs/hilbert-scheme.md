@@ -12,27 +12,33 @@
 
 $y$ 와 $x^2$ 가 생성하는 아이디얼에 대응하는 대상은 점이 아니라 길이 $2$ 의 부분스킴이다. 좌표환 $\mathbb C\lbrack x,y\rbrack/(y,x^2)$ 가 $\mathbb C$ 위에서 차원 $2$ 이고, 서로 다른 두 점의 좌표환도 차원 $2$ 다. 이 차원을 보존하는 부분스킴을 전부 모으면 극한이 안에 들어오고 모든 점이 같은 차원을 갖는다. 차원 대신 비틀린 층의 Euler 표수를 쓰면 같은 셈을 사영공간의 임의의 부분스킴으로 넓힐 수 있다.
 
-Hilbert 스킴은 부분스킴을 점으로 갖는 사영 스킴이고 섬세하다. 부분스킴이 극한에서 퇴화하는 자리를 비축소 구조로 받아 두므로 콤팩트하다.
-
 # 정의
 
-$Z\subset\mathbb P^n$ 을 닫힌 부분스킴이라 한다. $Z$ 의 **Hilbert 다항식**은
+$Z\subset\mathbb P^n$ 을 닫힌 부분스킴이라 한다. $Z$ 의 **Hilbert 다항식(Hilbert polynomial)** 은
 
 $$P_Z(m)=\chi(\mathcal O_Z(m))=\sum_i (-1)^i \dim H^i(Z,\mathcal O_Z(m))$$
 
-로 정해지는 $m$ 의 다항식이다. 큰 $m$ 에서 $P_Z(m)=\dim H^0(Z,\mathcal O_Z(m))$ 이다. 차수 $d$ 의 곡면은 $P_Z$ 의 차수가 $\dim Z$ 이고 최고차 계수가 $d/(\dim Z)!$ 다.
+로 정해지는 $m$ 의 다항식이다.
 
-**Hilbert 함자**는 스킴 $S$ 에 집합
+한 점은 $P_Z=1$ 이고, 직관 절의 두 점과 $\mathrm{Spec}\thinspace\mathbb C\lbrack x,y\rbrack/(y,x^2)$ 는 모두 $P_Z=2$ 다. $\mathbb P^2$ 의 직선은 $\mathcal O_Z(m)$ 의 단면이 두 변수의 $m$ 차 동차다항식이므로 $P_Z(m)=m+1$ 이고, 원뿔곡선은 $P_Z(m)=2m+1$ 이다.
 
-$$\mathrm{Hilb}^P(S)=\lbrace Z\subset\mathbb P^n\times S \text{ 닫힌 부분스킴},\ Z\to S \text{ 평탄},\ P\_{Z_s}=P \rbrace$$
+**Hilbert 함자(Hilbert functor)** 는 스킴 $S$ 에 집합
 
-를 대응시키는 반변 함자다. 평탄성이 섬유의 Hilbert 다항식을 일정하게 유지하는 조건이다.
+$$\mathrm{Hilb}^P(S)=\lbrace Z\subset\mathbb P^n\times S \text{ 닫힌 부분스킴},\thinspace Z\to S \text{ 평탄},\thinspace P\_{Z_s}=P \rbrace$$
+
+를 대응시키는 반변 함자다.
 
 **Hilbert 스킴** $\mathrm{Hilb}^P(\mathbb P^n)$ 은 이 함자를 표현하는 스킴이다. 보편족은 $\mathrm{Hilb}^P(\mathbb P^n)$ 위의 평탄족 $\mathcal Z$ 이고, 임의의 평탄족은 유일한 사상에 따른 $\mathcal Z$ 의 당김이다.
 
-$P$ 가 상수 $n$ 인 경우를 $\mathrm{Hilb}^n(X)$ 로 적고 **점들의 Hilbert 스킴**이라 한다. 그 점은 $X$ 위의 길이 $n$ 인 영차원 부분스킴이다.
+$P$ 가 상수 $n$ 인 경우를 $\mathrm{Hilb}^n(X)$ 로 적고 **점들의 Hilbert 스킴(Hilbert scheme of points)** 이라 한다. 그 점은 $X$ 위의 길이 $n$ 인 영차원 부분스킴이다.
+
+$\mathrm{Hilb}^1(X)=X$ 다. $\mathrm{Hilb}^2(\mathbb A^2)$ 의 점은 서로 다른 두 점의 집합이거나, 한 점 $p$ 와 $p$ 를 지나는 방향 하나로 정해지는 부분스킴이다. 원점과 $x$ 축 방향이 정하는 것이 아이디얼 $(y,x^2)$ 이다.
 
 # 성질
+
+## Hilbert 다항식의 계산
+
+큰 $m$ 에서 $P_Z(m)=\dim H^0(Z,\mathcal O_Z(m))$ 이다. 차수 $d$ 인 $Z$ 는 $P_Z$ 의 차수가 $\dim Z$ 이고 최고차 계수가 $d/(\dim Z)!$ 다. $S$ 위의 평탄족에서는 섬유 $Z_s$ 의 Hilbert 다항식이 $s$ 에 무관하다.
 
 ## 표현가능성과 사영성
 
