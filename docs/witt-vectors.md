@@ -2,13 +2,9 @@
 
 # 개요
 
-**Witt 벡터(Witt vector)** 는 표수 $p$ 인 환의 원소들을 자릿수로 늘어놓아 표수 $0$ 인 환을 만드는 구성이다. $7$ 진법에서 정수의 자릿수는 $0$ 부터 $6$ 까지, 곧 $7$ 로 나눈 나머지들이지만 덧셈을 하면 자리올림이 생긴다. 나머지들의 세계 $\mathbb F\_7$ 만 보면 $3+5=1$ 이고 자리올림의 정보는 사라진다. Witt 벡터는 자리올림을 자릿수들의 다항식으로 적어, 나머지들만으로 $7$ 진 정수 전체를 다시 만든다.
+**Witt 벡터(Witt vector)** 는 표수 $p$ 인 환의 원소들을 자릿수로 늘어놓아 표수 $0$ 인 환을 만드는 구성이다. $7$ 진법에서 정수의 자릿수는 $0$ 부터 $6$ 까지, 곧 $7$ 로 나눈 나머지들이지만 덧셈을 하면 자리올림이 생긴다. 나머지들의 체 $\mathbb F\_7$ 에서만 계산하면 $3+5=1$ 이고 자리올림의 정보는 사라진다. Witt 벡터는 자리올림을 자릿수들의 다항식으로 적어, 나머지들만으로 $7$ 진 정수 전체를 다시 만든다.
 
 # 직관
-
-Witt 벡터는 환의 원소열 $(a_0,a_1,a_2,\dots)$ 에 다항식으로 정의한 덧셈과 곱셈을 주어 만든 환이다. 성분은 표수 $p$ 의 환에서 가져오고, 만들어진 환은 표수 $0$ 이 된다.
-
-$\mathbb F\_p$ 의 Witt 벡터 환은 $p$ 진 정수환 $\mathbb Z\_p$ 다. 길이 $m$ 으로 끊은 Witt 벡터에 Artin–Schreier 사상을 성분별로 확장하면 표수 $p$ 체의 차수 $p^m$ 순환확대가 분류된다.
 
 표수 $p$ 체 $K$ 에서 [Artin–Schreier 이론](artin-schreier-theory.md)은 차수 $p$ 순환확대를 $\wp(y)=y^p-y$ 의 상으로 나눈 몫 $K/\wp(K)$ 로 분류한다. 차수 $p^2$ 순환확대를 같은 방식으로 분류하려고 쌍 $(a_0,a_1)$ 을 성분별로 더해 보면, 그 덧셈이 $\mathbb Z/p\times\mathbb Z/p$ 의 덧셈이므로 $\mathbb Z/p^2$ 가 나오지 않는다.
 
@@ -30,43 +26,49 @@ $$c(a_0,b_0) = \frac{a_0^p+b_0^p-(a_0+b_0)^p}{p}$$
 
 ## 고스트 성분
 
-가환환 $A$ 와 열 $a=(a_0,a_1,\dots)\in A^{\mathbb N}$ 에 대해
+가환환 $A$ 와 열 $a=(a_0,a_1,\dots)\in A^{\mathbb N}$ 에 대해 $a$ 의 $n$ 번째 **고스트 성분(ghost component)** 은 다음 값이다.
 
 $$w_n(a) = \sum\_{i=0}^{n} p^i a_i^{p^{n-i}}$$
 
-을 $a$ 의 $n$ 번째 **고스트 성분**이라 한다. $w_0(a)=a_0$ 이고 $w_1(a)=a_0^p+pa_1$ 이다.
+$w_0(a)=a_0$ 이고 $w_1(a)=a_0^p+pa_1$ 이다. $p=2$, $a=(1,1,0,\dots)$ 이면 $w_0(a)=1$, $w_1(a)=1+2=3$ 이다.
 
 ## Witt 벡터 환
 
-**정리.** 모든 $n$ 에서 $w_n(S_n)$ 과 $w_n(P_n)$ 이 고스트 성분의 합과 곱이 되도록 하는 정수계수 다항식족 $S_n, P_n \in\mathbb Z\lbrack a_0,\dots,a_n,b_0,\dots,b_n\rbrack$ 이 유일하게 있다[^1]. 곧
+$S_n, P_n \in\mathbb Z\lbrack a_0,\dots,a_n,b_0,\dots,b_n\rbrack$ 을 모든 $n$ 에서 다음을 만족하는 정수계수 다항식이라 한다. 이런 다항식족이 존재하고 유일하다는 것은 성질 절의 정리다.
 
 $$w_n(S(a,b)) = w_n(a)+w_n(b), \qquad w_n(P(a,b)) = w_n(a)\thinspace w_n(b)$$
 
-이다.
+**Witt 벡터 환(ring of Witt vectors)** $W(A)$ 는 $A^{\mathbb N}$ 에 $a+b = S(a,b)$ 와 $a\thinspace b = P(a,b)$ 를 준 환이다. 영원소는 $(0,0,\dots)$ 이고 단위원은 $(1,0,0,\dots)$ 다. $S_0=a_0+b_0$ 이고 $S_1 = a_1+b_1+c(a_0,b_0)$ 로 직관 절의 자리올림 덧셈과 같다.
 
-증명의 요지. $p$ 가 가역인 환에서는 고스트 사상 $a\mapsto(w_0(a),w_1(a),\dots)$ 가 전단사다. $w_n(a)$ 가 $p^n a_n$ 에 앞 성분만으로 된 식을 더한 꼴이므로 $a_n$ 을 $w_0,\dots,w_n$ 으로 풀 수 있다. 그러므로 $\mathbb Z\lbrack 1/p\rbrack$ 계수에서 $S_n$ 과 $P_n$ 이 유일하게 정해진다. 그 계수가 정수라는 것은 $x\equiv y \bmod p^k$ 에서 $x^p\equiv y^p \bmod p^{k+1}$ 이 따라오는 합동을 써서 $n$ 에 대한 귀납으로 확인한다.
-
-$A^{\mathbb N}$ 에 $a+b = S(a,b)$ 와 $a\thinspace b = P(a,b)$ 를 주어 얻은 환을 $A$ 의 **Witt 벡터** 환 $W(A)$ 라 한다. 영원소는 $(0,0,\dots)$ 이고 단위원은 $(1,0,0,\dots)$ 다. $S_0=a_0+b_0$ 이고 $S_1 = a_1+b_1+c(a_0,b_0)$ 다.
-
-$A$ 가 표수 $p$ 여도 $W(A)$ 는 표수 $p$ 가 아니다. $\mathbb F\_p$ 에서 $p\cdot(1,0,0,\dots)$ 를 계산하면 $(0,1,0,\dots)$ 이 나오고 영이 아니다.
+$A=\mathbb F\_2$ 에서 $(1,0,\dots)+(1,0,\dots)$ 을 계산한다. $c(1,1)=(1+1-2^2)/2=-1$ 이 $\mathbb F\_2$ 에서 $1$ 이므로 합은 $(0,1,\dots)$ 이다. 정수에서 $1+1=2=0+1\cdot 2$ 인 것과 같은 자리올림이다. $A$ 가 표수 $p$ 여도 $W(A)$ 는 표수 $p$ 가 아니다. $\mathbb F\_p$ 에서 $p\cdot(1,0,0,\dots)$ 를 계산하면 $(0,1,0,\dots)$ 이 나오고 영이 아니다.
 
 ## 절단 Witt 벡터
 
-성분을 $a_0,\dots,a\_{m-1}$ 로 끊으면 다항식 $S_n,P_n$ 이 그 안에서 닫히므로 환이 된다. 이것을 길이 $m$ 의 **절단 Witt 벡터** 환 $W_m(A)$ 라 한다. $W_1(A)=A$ 이고 $W(A)$ 는 사영극한 $\varprojlim_m W_m(A)$ 다.
+**절단 Witt 벡터(truncated Witt vectors)** 환 $W_m(A)$ 는 성분을 $a_0,\dots,a\_{m-1}$ 로 끊고 같은 다항식 $S_n,P_n$ ($n\lt m$) 으로 연산을 준 환이다. $S_n,P_n$ 은 $a_0,\dots,a_n,b_0,\dots,b_n$ 만 쓰므로 이 연산이 정의된다. $W_1(A)=A$ 다. $W_2(\mathbb F\_2)$ 는 원소가 넷이고, $(1,0)$ 을 거듭 더하면 $(0,1)$, $(1,1)$, $(0,0)$ 이 차례로 나오므로 $\mathbb Z/4$ 와 같다.
 
 ## Frobenius 와 Verschiebung
 
-$A$ 가 표수 $p$ 일 때 성분별 $p$ 제곱
+$A$ 가 표수 $p$ 일 때 **Frobenius 사상(Frobenius map)** $F$ 는 성분별 $p$ 제곱이다.
 
 $$F(a_0,a_1,\dots) = (a_0^p,a_1^p,\dots)$$
 
-을 **Frobenius**, 성분을 한 칸 미는 사상
+**Verschiebung 사상(Verschiebung map)** $V$ 는 성분을 한 칸 미는 사상이다.
 
 $$V(a_0,a_1,\dots) = (0,a_0,a_1,\dots)$$
 
-을 **Verschiebung** 이라 한다. $F$ 는 환 준동형이고 $V$ 는 덧셈군 준동형이다. 둘은 $FV=VF=p$ 와 $V(F(a)\thinspace b) = a\thinspace V(b)$ 를 만족한다.
+$A=\mathbb F\_p$ 에서는 $a^p=a$ 이므로 $F$ 가 항등사상이고, $V(1,0,0,\dots)=(0,1,0,\dots)$ 은 위에서 계산한 $p\cdot(1,0,0,\dots)$ 과 같다.
 
 # 성질
+
+## 덧셈과 곱셈 다항식
+
+**정리.** 모든 $n$ 에서 $w_n(S_n)$ 과 $w_n(P_n)$ 이 고스트 성분의 합과 곱이 되도록 하는 정수계수 다항식족 $S_n, P_n \in\mathbb Z\lbrack a_0,\dots,a_n,b_0,\dots,b_n\rbrack$ 이 유일하게 있다[^1]. 곧 정의 절의 두 식을 만족하는 다항식족이 하나뿐이다.
+
+*증명의 요지.* $p$ 가 가역인 환에서는 고스트 사상 $a\mapsto(w_0(a),w_1(a),\dots)$ 가 전단사다. $w_n(a)$ 가 $p^n a_n$ 에 앞 성분만으로 된 식을 더한 꼴이므로 $a_n$ 을 $w_0,\dots,w_n$ 으로 풀 수 있다. 그러므로 $\mathbb Z\lbrack 1/p\rbrack$ 계수에서 $S_n$ 과 $P_n$ 이 유일하게 정해진다. 그 계수가 정수라는 것은 $x\equiv y \bmod p^k$ 에서 $x^p\equiv y^p \bmod p^{k+1}$ 이 따라오는 합동을 써서 $n$ 에 대한 귀납으로 확인한다.
+
+## 극한과 Frobenius 관계
+
+$W(A)$ 는 사영극한 $\varprojlim_m W_m(A)$ 다. 표수 $p$ 에서 $F$ 는 환 준동형이고 $V$ 는 덧셈군 준동형이다. 둘은 $FV=VF=p$ 와 $V(F(a)\thinspace b) = a\thinspace V(b)$ 를 만족한다.
 
 ## 유한체의 Witt 벡터
 
