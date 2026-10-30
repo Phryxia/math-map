@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-30T00:57:00.433Z",
-  "nextSeq": 2584,
+  "savedAt": "2026-10-30T05:07:59.826Z",
+  "nextSeq": 2585,
   "items": [
     {
       "id": "9bab7237",
@@ -164,12 +164,12 @@
       "createdAt": "2026-10-20T13:00:36.604Z"
     },
     {
-      "id": "7360531c",
+      "id": "8aee8137",
       "title": "규칙 #7 적용: 정의 절에 성질(준동형 동치, 전단사 등)을 늘어놓거나 예 없이 식만 둔 문서 점검",
       "priority": 100,
-      "note": "이슈 #7 로 4절 설명의 순서에 더한 규칙. grep 으로 셀 수 없다. 처리함: group-actions, conjugacy-classes, normalizer, sylow-theorems, groups, burnside-lemma, group-representations, solvable-groups, character-table, group-presentations, group-extensions, coxeter-groups, finite-simple-groups, mathieu-groups, burnside-pq-theorem, schur-multipliers. 남은 #group_theory 문서(amenable-groups, garside-normal-form, group-cohomology, haagerup-property, hyperbolic-groups, solovay-kitaev, tate-cohomology, spherical-harmonics)부터 정의 절을 읽어 성질은 성질 절로 옮기고 정의마다 예를 붙인다. 그다음 #algebra 태그 문서.",
-      "createdAt": "2026-10-30T00:56:59.592Z",
-      "seq": 2583
+      "note": "이슈 #7 로 4절 설명의 순서에 더한 규칙. grep 으로 셀 수 없다. #group_theory 주 분야 문서는 모두 처리함(group-actions 부터 spherical-harmonics 까지). #algebra 주 분야 가운데 처리함: exact-sequences, chain-complexes, derived-functors, lie-algebras, universal-enveloping-algebra, root-systems, clifford-algebras, weyl-complete-reducibility, levi-decomposition, ado-theorem, highest-weight-modules, algebraic-varieties, beilinson-bernstein, harish-chandra-isomorphism, flag-varieties, lie-algebra-cohomology, cellular-algebras, toric-varieties, projective-varieties, witt-ring. 남은 #algebra 문서: abelian-varieties, affine-lie-algebras, algebraic-groups, algebraic-k-theory, algebraic-stacks, bloch-group, borel-weil-bott, brauer-algebras, category-o, geometric-invariant-theory, gromov-witten-invariants, hilbert-scheme, intersection-theory, iwasawa-algebra, jones-wenzl-idempotents, kazhdan-lusztig, moduli-of-vector-bundles, moduli-space, partition-algebras, quantum-cohomology, quantum-groups, schellekens-list, schubert-calculus, schur-weyl-duality, temperley-lieb-algebras, vertex-operator-algebras, virasoro-algebra, weyl-character-formula, zhu-algebra. 그다음 #ring_theory, #field_theory 태그 문서. 정의 절을 읽어 성질은 성질 절로 옮기고 정의마다 직관 절의 예로 확인하는 예를 붙이고, 직관 첫머리의 성질 미리보기 문단은 뺀다. 그 과정에서 chain-complexes 직관의 호몰로지 자리 오류, root-systems 의 축약 조건 이름 오류, hyperbolic-groups 의 삼각군 예 오류를 고쳤다. 다른 문서에도 이런 오류가 있을 수 있으니 예를 붙일 때 계산을 다시 해 본다.",
+      "createdAt": "2026-10-30T05:07:36.580Z",
+      "seq": 2584
     },
     {
       "id": "c4f40bdb",
