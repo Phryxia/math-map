@@ -6,10 +6,6 @@
 
 # 직관
 
-아벨 다양체는 군 구조를 갖춘 완비 [사영다양체](projective-varieties.md)다. 타원곡선은 곡선 위의 점들이 그대로 군을 이루지만, 종수가 $2$ 이상인 곡선에는 이 덧셈이 없다.
-
-종수 $g$ 곡선에서 점 대신 점의 형식적 합을 다루면 $g$ 차원 아벨 다양체가 나오고, 타원곡선에서 쓰던 계산이 그 위에서 돌아간다.
-
 타원곡선 $y^2=x^3+ax+b$ 에서 두 점 $P,Q$ 의 합은 두 점을 지나는 직선이 만나는 세 번째 점을 $x$ 축에 대해 반사한 것이다. 같은 계산을 $y^2=f(x)$ 에서 $f$ 의 차수가 $5$ 인 곡선으로 해 본다. $P,Q$ 를 지나는 직선 $y=\alpha x+\beta$ 를 곡선에 넣으면 $(\alpha x+\beta)^2=f(x)$ 이고, 좌변이 $2$ 차 우변이 $5$ 차이므로 근이 다섯 개다. 그 가운데 둘이 $P$ 와 $Q$ 의 $x$ 좌표이고 세 개가 남아, 삼차 곡선처럼 남는 점 하나를 합으로 삼을 근거가 없다.
 
 점 하나로 답하는 것을 그만두고 점의 형식적 합을 쓴다. 곡선의 점에 정수 계수를 붙여 더한 것이 divisor 이고, 무한원점을 $\infty$ 로 적어 점 $P$ 를 $P-\infty$ 로 바꾼다. 위 직선은 곡선 위의 유리함수이고 그 영점과 극을 모으면 $P+Q+R_1+R_2+R_3-5\infty$ 이므로, 유리함수에서 온 divisor 를 $0$ 으로 놓으면 두 점의 합이 divisor 들 안에서 정해진다.
@@ -22,7 +18,7 @@ $$
 
 ## 군다양체
 
-아벨 다양체는 체 $k$ 위의 연결 완비 군다양체다. 곧 연결 완비 다양체 $A$ 와 사상
+**아벨 다양체** 는 체 $k$ 위의 연결 완비 군다양체(group variety)다. 곧 연결 완비 다양체 $A$ 와 사상
 
 $$
 m:A\times A\to A,\qquad i:A\to A
@@ -30,37 +26,41 @@ $$
 
 와 점 $e\in A(k)$ 가 있어 $m$ 이 결합법칙을, $e$ 가 항등원을, $i$ 가 역원을 주고 $m$ 과 $i$ 가 다양체의 사상인 것이다. 차원을 $g$ 로 적는다.
 
-완비는 임의의 다양체 $T$ 에 대해 사영 $A\times T\to T$ 가 닫힌 집합을 닫힌 집합으로 보낸다는 조건이다. 아벨 다양체는 모두 사영다양체다.
+**완비(complete)** 는 임의의 다양체 $T$ 에 대해 사영 $A\times T\to T$ 가 닫힌 집합을 닫힌 집합으로 보낸다는 조건이다.
 
-종수 $2$ 곡선에서는 계수의 합이 $0$ 인 divisor 를 유리함수의 divisor 로 나눈 몫이 이 조건을 만족하고, 그 원소가 전부 $P_1+P_2-2\infty$ 꼴이어서 차원이 $2$ 다.
+타원곡선 $y^2=x^3-x$ 에서 $e$ 는 무한원점, $m$ 은 개요의 직선 덧셈, $i$ 는 $(x,y)\mapsto(x,-y)$ 다. 두 사상 모두 좌표의 유리식으로 적히므로 다양체의 사상이고, 이 곡선은 $g=1$ 인 아벨 다양체다.
 
-## 복소 토러스
+종수 $2$ 곡선에서는 계수의 합이 $0$ 인 divisor 를 유리함수의 divisor 로 나눈 몫이 아벨 다양체다. 직관 절의 식이 $m$ 이고, 그 원소가 전부 $P_1+P_2-2\infty$ 꼴이어서 차원이 $2$ 다.
 
-$k=\mathbb C$ 이면 $A$ 의 복소점은 $\mathbb C^g/\Lambda$ 다. $\Lambda$ 는 $\mathbb C^g$ 안의 계수 $2g$ 격자다.
+## Riemann 관계
 
-거꾸로 복소 토러스 $\mathbb C^g/\Lambda$ 가 아벨 다양체가 되는 조건은 교대형식 $E:\Lambda\times\Lambda\to\mathbb Z$ 가 있어
+$\Lambda$ 가 $\mathbb C^g$ 안의 계수 $2g$ 격자일 때 복소 토러스(complex torus) $\mathbb C^g/\Lambda$ 위의 **Riemann 관계(Riemann relations)** 는 교대형식 $E:\Lambda\times\Lambda\to\mathbb Z$ 가
 
 $$
 E(ix,iy)=E(x,y),\qquad E(x,ix)\gt 0\thickspace(x\ne0)
 $$
 
-를 만족하는 것이다. 이것이 **Riemann 관계**이고, $g=1$ 이면 어떤 격자든 관계를 만족하지만 $g\ge2$ 부터는 만족하지 않는 격자가 대부분이다.
+를 만족한다는 조건이다. 여기서 $E$ 는 $\Lambda\otimes\mathbb R=\mathbb C^g$ 로 실선형으로 늘려 본다.
+
+$g=1$ 이고 $\Lambda=\mathbb Z+\mathbb Z\tau$, $\mathrm{Im}\thinspace\tau\gt 0$ 이면 $E(x,y)=\mathrm{Im}(\bar xy)/\mathrm{Im}\thinspace\tau$ 로 둔다. $E(a+b\tau,c+d\tau)=ad-bc$ 이므로 정수값이고, $E(x,ix)=\vert x\vert^2/\mathrm{Im}\thinspace\tau\gt 0$ 이다.
 
 ## 동종사상
 
-전사이고 핵이 유한군인 사상 $f:A\to B$ 를 **동종사상**이라 한다. 동종사상이 있으면 두 아벨 다양체의 차원이 같고, 핵의 크기가 그 차수다.
+전사이고 핵이 유한군인 사상 $f:A\to B$ 를 **동종사상(isogeny)** 이라 하고, 핵의 원소 수를 그 **차수(degree)** 라 한다.
 
-정수 $n$ 배 사상 $\lbrack n\rbrack:A\to A$ 는 동종사상이고 차수가 $n^{2g}$ 다. $n$ 이 $\mathrm{char}\thinspace k$ 와 서로소이면 핵은
+$y^2=x^3-x$ 에서 $2$ 배 사상 $\lbrack 2\rbrack$ 의 핵은 무한원점과 $y=0$ 인 세 점 $(0,0),(1,0),(-1,0)$ 이다. $\lbrack 2\rbrack$ 는 차수 $4$ 인 동종사상이다.
+
+소수 $\ell\ne\mathrm{char}\thinspace k$ 에 대해 $A\lbrack n\rbrack$ 을 $\lbrack n\rbrack$ 의 핵이라 할 때
 
 $$
-A\lbrack n\rbrack(\bar k)\cong(\mathbb Z/n\mathbb Z)^{2g}
+T_\ell A=\varprojlim_n A\lbrack \ell^n\rbrack(\bar k)
 $$
 
-이다. 소수 $\ell\ne\mathrm{char}\thinspace k$ 에 대해 $T_\ell A=\varprojlim_n A\lbrack \ell^n\rbrack(\bar k)$ 를 **Tate 가군**이라 하고, $\mathbb Z_\ell$ 위의 계수 $2g$ 자유가군이다. $k$ 의 절대 [Galois 군](galois-theory.md) $G_k$ 가 이 가군에 작용해 $2g$ 차원 [Galois 표현](galois-representations.md)을 준다.
+를 **Tate 가군(Tate module)** 이라 한다. 원소는 $\ell P_{n+1}=P_n$ 을 만족하는 점열 $(P_1,P_2,\dots)$, $P_n\in A\lbrack \ell^n\rbrack$ 이다. 위 곡선에서 $\ell=2$ 이면 $P_1$ 은 $A\lbrack 2\rbrack$ 의 네 점 가운데 하나이고, $P_2$ 는 $2P_2=P_1$ 인 점이다.
 
 ## 쌍대와 편극
 
-$A$ 위에서 대수적으로 자명한 선다발들이 이루는 군 $\mathrm{Pic}^0(A)$ 는 다시 $g$ 차원 아벨 다양체이고, 이것이 **쌍대 아벨 다양체** $\hat A$ 다.
+$A$ 위에서 대수적으로 자명한 선다발들이 이루는 군 $\mathrm{Pic}^0(A)$ 는 $g$ 차원 아벨 다양체의 점들로 주어지고, 그 아벨 다양체를 **쌍대 아벨 다양체(dual abelian variety)** $\hat A$ 라 한다.
 
 선다발 $L$ 은 사상
 
@@ -68,9 +68,29 @@ $$
 \varphi_L:A\to\hat A,\qquad x\mapsto t_x^\ast L\otimes L^{-1}
 $$
 
-를 준다. $t_x$ 는 $x$ 만큼의 평행이동이다. $L$ 이 충분하면 $\varphi_L$ 이 동종사상이고, 이때 $\varphi_L$ 을 **편극**이라 한다. 동형이면 **주편극**이다.
+를 준다. $t_x$ 는 $x$ 만큼의 평행이동이다. $L$ 이 충분(ample)하면 $\varphi_L$ 이 동종사상이고, 이때 $\varphi_L$ 을 **편극(polarization)** 이라 한다. $\varphi_L$ 이 동형이면 **주편극(principal polarization)** 이다.
+
+타원곡선 $E$ 와 $L=\mathcal O(\infty)$ 이면 $t_x^\ast L\otimes L^{-1}$ 은 divisor $(-x)-\infty$ 의 선다발이다. 점 $P$ 를 $P-\infty$ 의 류로 보내는 대응이 $E$ 와 $\mathrm{Pic}^0(E)$ 사이의 전단사이므로 $\varphi_L$ 은 동형이고, $L$ 은 주편극을 준다.
 
 # 성질
+
+## 사영성
+
+아벨 다양체는 모두 [사영다양체](projective-varieties.md)다. 충분한 선다발이 존재하므로 사영공간에 묻힌다.
+
+## 복소 토러스
+
+$k=\mathbb C$ 이면 $A$ 의 복소점은 $\mathbb C^g/\Lambda$ 이고, $\Lambda$ 는 계수 $2g$ 격자다. 거꾸로 복소 토러스 $\mathbb C^g/\Lambda$ 는 Riemann 관계를 만족하는 $E$ 가 존재할 때만 아벨 다양체다. $g=1$ 이면 정의 절의 $E$ 가 모든 격자에서 관계를 만족하지만, $g\ge2$ 이면 관계를 만족하지 않는 격자가 존재한다.
+
+## n 배 사상
+
+동종사상 $A\to B$ 가 존재하면 $\dim A=\dim B$ 다. 정수 $n$ 배 사상 $\lbrack n\rbrack:A\to A$ 는 차수 $n^{2g}$ 인 동종사상이다. $n$ 이 $\mathrm{char}\thinspace k$ 와 서로소이면
+
+$$
+A\lbrack n\rbrack(\bar k)\cong(\mathbb Z/n\mathbb Z)^{2g}
+$$
+
+이다. 그러므로 $T_\ell A$ 는 $\mathbb Z_\ell$ 위의 계수 $2g$ 자유가군이다. $k$ 의 절대 [Galois 군](galois-theory.md) $G_k$ 가 이 가군에 작용해 $2g$ 차원 [Galois 표현](galois-representations.md)을 준다.
 
 ## 강체성 보조정리
 
