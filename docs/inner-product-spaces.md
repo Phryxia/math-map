@@ -6,17 +6,15 @@
 
 # 직관
 
-벡터 공간만으로는 길이와 각도가 정해지지 않는다. 내적은 두 벡터에 스칼라를 대응시키는 양의 정부호 쌍선형([복소수](complex-numbers.md)에서는 켤레쌍선형) 형식이다. 노름과 거리, 직교성, 정사영이 내적 하나로 정의된다.[^1]
+개요의 문제를 계산한다. 직선 $y=x$ 위의 점은 $t(1,1)$ 꼴이고, $(3,1)$ 에서 $t(1,1)$ 로 가는 벡터는 $(t-3,\thinspace t-1)$ 이다. 이 벡터가 직선과 수직이 되는 $t$ 를 찾으려면 수직을 수로 판정하는 방법이 있어야 한다.
 
-[Cauchy–Schwarz 부등식](cauchy-schwarz.md)이 각도의 코사인을 1 이하로 묶고, Gram–Schmidt 과정이 임의의 기저를 정규직교기저로 바꾼다. 정사영은 부분공간에서 가장 가까운 점을 주므로 최소제곱 근사의 기하가 된다.
+평면의 두 벡터 $(a,b)$, $(c,d)$ 에 $ac+bd$ 를 대응시킨다. 이 값은 피타고라스 정리에서 나온다. 두 벡터와 그 차가 만드는 삼각형에서 $(a-c)^2+(b-d)^2=(a^2+b^2)+(c^2+d^2)-2(ac+bd)$ 이므로, 끼인각이 직각인 것과 $ac+bd=0$ 인 것이 같다.
 
-평면에서 두 벡터의 점곱은 한 벡터를 다른 벡터 방향으로 사영한 길이에 상대 길이를 곱한 값이다. 사영이 0 이면 수직이고 최대이면 같은 방향이다. Cauchy–Schwarz 는 사영의 길이가 원래 길이를 넘지 못한다는 진술이다.
-
-노름이 정해지면 거리가 정해져 [거리 공간](metric-spaces.md)이 되고 수렴, 연속, 완비성을 쓸 수 있다. 모든 노름이 내적에서 오지는 않는다. 좌표 절댓값의 최댓값으로 정의한 노름은 평행사변형 법칙을 깨므로 어떤 내적에서도 유도되지 않는다.
+$(t-3,\thinspace t-1)$ 과 $(1,1)$ 에 이 값을 계산하면 $(t-3)+(t-1)=2t-4$ 이고, $t=2$ 에서 $0$ 이다. 그래서 수선의 발은 $(2,2)$ 이고 거리는 $(1,-1)$ 의 길이 $\sqrt{1+1}=\sqrt2$ 다. $(a,b)$ 의 길이 $\sqrt{a^2+b^2}$ 도 $(a,b)$ 와 자기 자신에 대한 이 값의 제곱근이다.
 
 # 정의
 
-$V$ 를 [실수](real-numbers.md)체 또는 복소수체 위의 벡터 공간이라 하자. **내적**은 $V$ 의 두 벡터에 스칼라를 주는 함수로 첫 인수에 대한 선형성, 켤레대칭성, 양의 정부호성을 만족한다.[^1] 윗줄은 복소켤레이고 실수 위에서는 켤레가 항등이라 대칭성이 된다.
+$V$ 를 [실수](real-numbers.md)체 또는 [복소수](complex-numbers.md)체 위의 벡터 공간이라 하자. **내적(inner product)** 은 $V$ 의 두 벡터에 스칼라 $\langle u,v\rangle$ 를 주는 함수로 첫 인수에 대한 선형성, 켤레대칭성, 양의 정부호성을 만족하는 것이다.[^1] 윗줄은 복소켤레이고 실수 위에서는 켤레가 항등이라 대칭성이 된다.
 
 $$
 \langle \alpha u+\beta w,\ v\rangle=\alpha\langle u,v\rangle+\beta\langle w,v\rangle
@@ -27,29 +25,33 @@ $$
 \langle v,v\rangle\ge 0,\quad \langle v,v\rangle=0\iff v=0
 $$
 
-내적이 주어진 공간이 **내적 공간**이고, 노름과 거리를 다음으로 정의한다.
+직관 절의 $\langle(a,b),(c,d)\rangle=ac+bd$ 가 내적이고, $\langle(3,1),(1,1)\rangle=4$ 다. 내적이 주어진 벡터 공간이 내적 공간이다. **노름(norm)** 과 거리는 다음으로 정의한다.
 
 $$
 \lVert v\rVert=\sqrt{\langle v,v\rangle},\qquad d(u,v)=\lVert u-v\rVert
 $$
 
-두 벡터의 내적이 0이면 직교라 한다. 노름이 1인 서로 직교하는 벡터들의 모임을 정규직교집합, 그것이 기저이면 정규직교기저라 한다.
+$\lVert(3,1)\rVert=\sqrt{10}$ 이고, $(3,1)$ 과 $(2,2)$ 의 거리는 $\sqrt2$ 다.
+
+두 벡터의 내적이 $0$ 이면 **직교(orthogonal)** 한다고 한다. $(1,1)$ 과 $(1,-1)$ 은 직교한다. **정규직교집합(orthonormal set)** 은 노름이 $1$ 이고 서로 직교하는 벡터들의 모임이고, 그것이 기저이면 **정규직교기저(orthonormal basis)** 라 한다.
 
 $$
 \langle e_i,e_j\rangle=\delta_{ij}
 $$
 
-표준 예는 실수 $n$ 짝의 점곱, 복소 $n$ 짝의 켤레 점곱, 구간에서 제곱적분 가능한 함수들의 적분 내적이다.
+$\tfrac{1}{\sqrt2}(1,1)$, $\tfrac{1}{\sqrt2}(1,-1)$ 은 평면의 정규직교기저다. 복소 $n$ 짝에서는 켤레 점곱 $\sum_i u_i\overline{v_i}$ 가 내적이고, 구간에서 제곱적분 가능한 함수들에는 적분 내적이 있다.
 
 $$
 \langle f,g\rangle=\int_a^b f(x)\overline{g(x)}\thinspace dx
 $$
 
+구간 $\lbrack -1,1\rbrack$ 에서 $\langle 1,x\rangle=\int_{-1}^{1}x\thinspace dx=0$ 이므로 상수함수 $1$ 과 $x$ 는 직교한다.
+
 # 성질
 
 ## Cauchy–Schwarz 부등식
 
-임의의 $u,v$ 에 대해 다음이 성립하고 등호는 $u$ 와 $v$ 가 선형종속일 때만 성립한다.[^1]
+임의의 $u,v$ 에 대해 다음 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)이 성립하고 등호는 $u$ 와 $v$ 가 선형종속일 때만 성립한다.[^1]
 
 $$
 |\langle u,v\rangle|\le \lVert u\rVert\thinspace\lVert v\rVert
@@ -66,7 +68,7 @@ $$
 
 ## 노름의 성질
 
-삼각부등식은 양변을 제곱하고 Cauchy–Schwarz 를 적용하면 나오므로 내적 공간은 항상 거리 공간이다. 직교하면 Pythagoras 등식이, 일반적으로는 평행사변형 법칙이 성립한다.
+삼각부등식은 양변을 제곱하고 Cauchy–Schwarz 를 적용하면 나오므로 내적 공간은 항상 [거리 공간](metric-spaces.md)이다. 직교하면 Pythagoras 등식이, 일반적으로는 평행사변형 법칙이 성립한다.
 
 $$
 \lVert u+v\rVert\le\lVert u\rVert+\lVert v\rVert,
@@ -77,7 +79,7 @@ $$
 \lVert u+v\rVert^2+\lVert u-v\rVert^2=2\lVert u\rVert^2+2\lVert v\rVert^2
 $$
 
-역으로 평행사변형 법칙을 만족하는 노름은 내적에서 유도된다(Jordan–von Neumann 정리). 거리에 대해 [완비](completeness.md)인 내적 공간을 [Hilbert 공간](hilbert-spaces.md)이라 한다.
+모든 노름이 내적에서 오지는 않는다. 좌표 절댓값의 최댓값으로 정의한 노름은 평행사변형 법칙을 만족하지 않으므로 어떤 내적에서도 유도되지 않는다. 역으로 평행사변형 법칙을 만족하는 노름은 내적에서 유도된다(Jordan–von Neumann 정리). 거리에 대해 [완비](completeness.md)인 내적 공간을 [Hilbert 공간](hilbert-spaces.md)이라 한다.
 
 ## Gram–Schmidt 과정
 
@@ -88,7 +90,7 @@ w_k=v_k-\sum_{j=1}^{k-1}\langle v_k,e_j\rangle e_j,
 \qquad e_k=\frac{w_k}{\lVert w_k\rVert}
 $$
 
-$w_k=0$ 은 $v_k$ 가 앞 벡터들이 생성하는 공간에 있다는 뜻이므로 선형독립 가정 아래 일어나지 않는다. [행렬](matrices.md) 언어로는 열이 독립인 행렬의 QR 분해다. 정규직교기저에서는 좌표가 내적으로 읽히고 노름이 좌표 제곱합이 된다(Parseval 등식).
+$w_k=0$ 은 $v_k$ 가 앞 벡터들이 생성하는 공간에 있다는 뜻이므로 선형독립 가정 아래 일어나지 않는다. [행렬](matrices.md) 언어로는 열이 독립인 행렬의 QR 분해(orthogonal–triangular decomposition)다. 정규직교기저에서는 좌표가 내적으로 읽히고 노름이 좌표 제곱합이 된다(Parseval 등식).
 
 $$
 v=\sum_{i=1}^{n}\langle v,e_i\rangle e_i,
