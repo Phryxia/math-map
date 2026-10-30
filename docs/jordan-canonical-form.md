@@ -6,33 +6,39 @@
 
 # 직관
 
-$\lambda$ 의 고유공간 $\ker(A-\lambda I)$ 의 차원이 $\lambda$ 의 대수적 중복도보다 작으면 고유벡터만으로는 기저가 모자란다. 모자란 자리는 $(A-\lambda I)v\_2=v\_1$ 을 만족하는 $v\_2$ 로 채운다. $v\_1$ 이 고유벡터일 때 $v\_2$ 는 한 번 더 곱해야 0 이 되는 벡터이고, 이렇게 이어진 사슬 $v\_1,\dots,v\_k$ 위에서 $A$ 는 크기 $k$ 의 블록으로 작용한다.
+개요의 $A=\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 에서 $A-I=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 은 $(x,y)$ 를 $(y,0)$ 으로 보낸다. 고유벡터 $v\_1=(1,0)$ 하나로는 기저가 모자라므로 $(A-I)v\_2=v\_1$ 인 $v\_2$ 를 찾으면 $v\_2=(0,1)$ 이다. $v\_2$ 는 $A-I$ 를 한 번 곱하면 $v\_1$ 이 되고 두 번 곱하면 $0$ 이 된다.
 
-사슬의 길이 분포가 곧 블록의 크기 분포다. $(A-\lambda I)$ 를 거듭 곱할 때 핵이 얼마나 빨리 커지는지가 그 분포를 결정한다.
+기저 $v\_1,v\_2$ 에서 $Av\_1=v\_1$ 이고 $Av\_2=v\_2+v\_1$ 이므로, $A$ 는 대각선에 $1$, 그 바로 위에 $1$ 이 있는 꼴로 적힌다. 고유벡터에서 시작해 $A-I$ 를 거슬러 올라가는 사슬이 대각행렬의 축을 대신한다.
 
-대각행렬은 모든 블록의 크기가 1 인 경우다. 블록의 크기와 개수는 행렬마다 유일하게 정해지므로 이 자료가 유사변환에 대한 완전 불변량이다. 같은 [특성다항식](eigenvalues.md)을 가진 두 행렬도 유사하지 않을 수 있고, Jordan 형은 그런 두 행렬을 블록의 크기로 가른다.
+$3\times3$ 에서 $B=\begin{pmatrix}1&1&0\cr 0&1&0\cr 0&0&1\end{pmatrix}$ 와 $C=\begin{pmatrix}1&1&0\cr 0&1&1\cr 0&0&1\end{pmatrix}$ 는 같은 [특성다항식](eigenvalues.md) $(x-1)^3$ 을 갖는다. $B-I$ 의 핵은 $(1,0,0)$, $(0,0,1)$ 이 생성하는 평면이고 $C-I$ 의 핵은 $(1,0,0)$ 이 생성하는 직선이다. $B$ 의 사슬은 길이 $2$ 와 $1$ 이고 $C$ 의 사슬은 길이 $3$ 하나다.
 
 # 정의
 
-크기 $k$ 의 **Jordan 블록**은 다음 $k\times k$ 행렬이다.
+크기 $k$ 의 **Jordan 블록(Jordan block)** 은 다음 $k\times k$ 행렬이다.
 
 $$
 J_k(\lambda)=\begin{pmatrix}\lambda&1&&\cr&\lambda&\ddots&\cr&&\ddots&1\cr&&&\lambda\end{pmatrix}
 $$
 
-대각 성분이 모두 $\lambda$ 이고 대각 바로 위가 모두 1 이며 나머지는 0 이다. $J_k(\lambda)=\lambda I+N$ 으로 쓰면 $N$ 은 $N^k=0$ 인 nilpotent 행렬이다.
+대각 성분이 모두 $\lambda$ 이고 대각 바로 위가 모두 1 이며 나머지는 0 이다. 개요의 $A$ 는 $J_2(1)$ 이고, $1\times1$ 블록 $J_1(\lambda)$ 는 $(\lambda)$ 다.
 
-**Jordan 행렬**은 Jordan 블록들의 블록대각 직합 $J\_{k\_1}(\lambda\_1)\oplus\cdots\oplus J\_{k\_r}(\lambda\_r)$ 이다. 고윳값 $\lambda\_i$ 는 서로 같아도 된다.
+**Jordan 행렬(Jordan matrix)** 은 Jordan 블록들의 블록대각 직합 $J\_{k\_1}(\lambda\_1)\oplus\cdots\oplus J\_{k\_r}(\lambda\_r)$ 이다. 고윳값 $\lambda\_i$ 는 서로 같아도 된다. 직관 절의 $B$ 는 $J_2(1)\oplus J_1(1)$, $C$ 는 $J_3(1)$ 이고, 대각행렬 $\mathrm{diag}(3,1)$ 은 $J_1(3)\oplus J_1(1)$ 이다.
 
-행렬 $A$ 의 **Jordan 표준형**은 $P^{-1}AP=J$ 를 만족하는 Jordan 행렬 $J$ 다.
+행렬 $A$ 의 **Jordan 표준형(Jordan canonical form)** 은 $P^{-1}AP=J$ 를 만족하는 Jordan 행렬 $J$ 다. $\begin{pmatrix}2&1\cr 1&2\end{pmatrix}$ 는 고유벡터 $(1,1)$, $(1,-1)$ 을 열로 하는 $P$ 로 $\mathrm{diag}(3,1)$ 이 되므로, Jordan 표준형이 $J_1(3)\oplus J_1(1)$ 이다.
 
-$T$ 를 $V$ 위의 [선형사상](linear-maps.md)이라 할 때 $\lambda$ 의 **일반화 고유공간**은 다음이다.
+$T$ 를 $V$ 위의 [선형사상](linear-maps.md)이라 할 때 $\lambda$ 의 **일반화 고유공간(generalized eigenspace)** 은 다음이다.
 
 $$
 V\_\lambda=\ker(T-\lambda\thinspace\mathrm{id})^{\dim V}
 $$
 
+개요의 $A$ 에서 $(A-I)^2=0$ 이므로 $V\_1$ 은 평면 전체이고, 고유공간 $\ker(A-I)$ 는 직선이다.
+
 # 성질
+
+## 멱영 부분
+
+$J_k(\lambda)=\lambda I+N$ 으로 쓰면 $N$ 은 $N^k=0$ 인 멱영(nilpotent) 행렬이다.
 
 ## 존재와 유일성
 
@@ -68,7 +74,7 @@ $$
 
 ## 가군 구조정리와의 관계
 
-$k[x]$ [가군](modules.md) 구조를 $x\cdot v=Tv$ 로 주면 $V$ 는 [PID 위의 유한생성 가군](finitely-generated-modules.md)(principal ideal domain)이 된다. 초등인자 분해 $V\cong\bigoplus\_i k[x]/(x-\lambda\_i)^{k\_i}$ 의 각 인자가 Jordan 블록 $J\_{k\_i}(\lambda\_i)$ 이고, 구조정리의 유일성이 Jordan 형의 유일성이다. 불변인자 분해를 쓰면 대수적으로 닫히지 않은 체에서도 쓸 수 있는 유리 표준형이 나온다.
+$k[x]$ [가군](modules.md) 구조를 $x\cdot v=Tv$ 로 주면 $V$ 는 [PID 위의 유한생성 가군](finitely-generated-modules.md)(principal ideal domain, PID)(principal ideal domain)이 된다. 초등인자 분해 $V\cong\bigoplus\_i k[x]/(x-\lambda\_i)^{k\_i}$ 의 각 인자가 Jordan 블록 $J\_{k\_i}(\lambda\_i)$ 이고, 구조정리의 유일성이 Jordan 형의 유일성이다. 불변인자 분해를 쓰면 대수적으로 닫히지 않은 체에서도 쓸 수 있는 유리 표준형이 나온다.
 
 ## 실 Jordan 형
 
