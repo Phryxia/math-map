@@ -6,10 +6,6 @@
 
 # 직관
 
-Clifford 대수는 [이차형식](quadratic-forms.md)을 가진 벡터 공간에서 벡터의 제곱이 그 이차형식의 값이 되도록 강제해 얻는 결합대수다. [외대수](exterior-algebra.md)가 벡터의 제곱을 $0$ 으로 놓은 것이고, 그 자리에 이차형식을 놓은 것이 Clifford 대수다.
-
-차원은 외대수와 같은 $2^n$ 이지만 곱이 다르고, 가역원이 많아 직교군의 이중덮개를 이 대수 안에서 만들 수 있다.
-
 $\mathbb R^n$ 에서 Laplace 작용소 $\sum_i\partial_i^2$ 를 1계 작용소의 제곱으로 적으려 한다. 계수를 $e_i$ 로 두고 $D=\sum_i e_i\partial_i$ 를 제곱하면 다음이 나온다.
 
 $$
@@ -22,27 +18,35 @@ $D^2=-\sum_i\partial_i^2$ 가 되려면 $e_i^2=-1$ 과 $e_ie_j=-e_je_i$ 가 필�
 
 ## Clifford 대수
 
-체 $K$ 위의 벡터 공간 $V$ 와 이차형식 $q$ 에 대해 **Clifford 대수**는 텐서대수를 다음 아이디얼로 나눈 몫이다.[^1]
+체 $K$ 위의 벡터 공간 $V$ 와 [이차형식](quadratic-forms.md) $q$ 에 대해 **Clifford 대수** 는 텐서대수를 다음 아이디얼로 나눈 몫이다.[^1]
 
 $$
 \mathrm{Cl}(V,q)=T(V)/\langle v\otimes v-q(v)\thinspace 1:v\in V\rangle
 $$
 
-$V$ 의 직교기저 $e_1,\dots,e_n$ 을 잡으면 관계식은 $e_i^2=q(e_i)$ 와 $e_ie_j=-e_je_i$ $(i\ne j)$ 다. 곱 $e\_{i_1}\cdots e\_{i_k}$ 들이 $i_1\lt \dots\lt i_k$ 인 범위에서 기저를 이루므로 $\dim\mathrm{Cl}(V,q)=2^n$ 이다.
+$q$ 가 부호수 $(p,r)$ 인 실 이차형식일 때 $\mathrm{Cl}\_{p,r}$ 로 적는다.
 
-$q$ 가 부호수 $(p,r)$ 인 실 이차형식일 때 $\mathrm{Cl}\_{p,r}$ 로 적는다. $\mathrm{Cl}\_{0,1}=\mathbb C$ 이고 $\mathrm{Cl}\_{0,2}=\mathbb H$ 다.
+$V=\mathbb R^2$, $q(x,y)=x^2+y^2$ 이면 $e_1^2=e_2^2=1$ 이다. $(e_1+e_2)^2=q(e_1+e_2)=2$ 를 전개하면 $e_1e_2+e_2e_1=0$ 이므로 개요의 관계 $e_1e_2=-e_2e_1$ 이 나오고, $(e_1e_2)^2=-e_1e_1e_2e_2=-1$ 이다. $q(x)=-x^2$ 인 $\mathbb R$ 에서는 $e_1^2=-1$ 이므로 $\mathrm{Cl}\_{0,1}=\mathbb C$ 이고, 직관 절의 $n=2$ 계산에서 $\mathrm{Cl}\_{0,2}=\mathbb H$ 다.
 
 ## 등급과 대합
 
-$T(V)$ 의 $\mathbb Z$ 등급은 아이디얼이 짝수 차수 원소로 생성되므로 $\mathbb Z/2$ 등급으로만 내려온다. 짝수 부분을 $\mathrm{Cl}^0$ 이라 하고, 이것은 부분대수이며 차원이 $2^{n-1}$ 이다.
+**짝수 부분(even part)** $\mathrm{Cl}^0$ 은 짝수 개 벡터의 곱이 생성하는 부분공간이다. $v\mapsto -v$ 가 유도하는 자기동형을 $\alpha$ 라 하고, $v_1\cdots v_k\mapsto v_k\cdots v_1$ 을 주는 반자기동형을 **전치(transpose)** 라 한다. 둘을 합성한 것이 **공액(conjugation)** 이다.
 
-$v\mapsto -v$ 가 유도하는 자기동형을 $\alpha$, $v_1\cdots v_k\mapsto v_k\cdots v_1$ 을 주는 반자기동형을 전치라 한다. 둘을 합성한 것이 **공액**이고, Spin 군을 정의하는 데 쓴다.
+$\mathbb R^2$ 의 예에서 $\mathrm{Cl}^0$ 은 $1$ 과 $e_1e_2$ 가 생성하고, $(e_1e_2)^2=-1$ 이므로 $\mathbb C$ 와 같다. $\alpha(e_1e_2)=(-e_1)(-e_2)=e_1e_2$ 이고 전치는 $e_1e_2$ 를 $e_2e_1=-e_1e_2$ 로 보내므로, $e_1e_2$ 의 공액은 $-e_1e_2$ 다.
 
 ## Pin 군과 Spin 군
 
-$q$ 가 양의 정부호일 때, $\mathrm{Cl}\_{n,0}$ 의 가역원 $u$ 가 $u V u^{-1}=V$ 를 만족하는 것들의 군을 생각한다. $V$ 의 단위벡터들의 곱으로 이루어진 부분군이 $\mathrm{Pin}(n)$ 이고, 그 가운데 짝수 개의 곱이 $\mathrm{Spin}(n)$ 이다.
+$q$ 가 양의 정부호일 때 $\mathrm{Cl}\_{n,0}$ 안에서 $V$ 의 단위벡터들의 곱으로 이루어진 군이 **Pin 군** $\mathrm{Pin}(n)$ 이고, 그 가운데 짝수 개의 곱으로 이루어진 부분군이 **Spin 군** $\mathrm{Spin}(n)$ 이다.
+
+$n=2$ 에서 단위벡터 $u=\cos a\thinspace e_1+\sin a\thinspace e_2$ 와 $e_1$ 의 곱은 $e_1u=\cos a+\sin a\thinspace e_1e_2$ 다. 두 단위벡터의 곱을 전개해도 같은 꼴이 나오므로 $\mathrm{Spin}(2)$ 는 $\cos a+\sin a\thinspace e_1e_2$ 꼴 원소 전체, 곧 $\mathrm{Cl}^0\cong\mathbb C$ 안의 단위원이다.
 
 # 성질
+
+## 기저와 차원
+
+$V$ 의 직교기저 $e_1,\dots,e_n$ 을 잡으면 관계식은 $e_i^2=q(e_i)$ 와 $e_ie_j=-e_je_i$ $(i\ne j)$ 다. 곱 $e\_{i_1}\cdots e\_{i_k}$ 들이 $i_1\lt \dots\lt i_k$ 인 범위에서 기저를 이루므로 $\dim\mathrm{Cl}(V,q)=2^n$ 이다. 차원은 [외대수](exterior-algebra.md)와 같지만 곱이 다르다.
+
+$T(V)$ 의 $\mathbb Z$ 등급은 아이디얼이 짝수 차수 원소로 생성되므로 $\mathbb Z/2$ 등급으로만 내려온다. 그래서 $\mathrm{Cl}^0$ 은 부분대수이고 차원이 $2^{n-1}$ 이다.
 
 ## 보편성
 
