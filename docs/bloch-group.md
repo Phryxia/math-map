@@ -18,22 +18,22 @@ $$
 
 을 만족한다. 모양값의 목록을 형식적 합 $\sum_i\lbrack z_i\rbrack$ 으로 보고 이 등식으로 나눈 군을 만들면, 분할을 바꾸어도 그 군의 원소는 변하지 않는다. 그 군이 Bloch 군이고 $D$ 는 그 군 위의 준동형이 된다.
 
-쌍곡 3 다양체의 부피와 [대수적 K 이론](algebraic-k-theory.md)의 $K_3$ 은 이 군을 거쳐 같은 양으로 계산된다.
-
 # 정의
 
 ## Bloch–Wigner 이중로그
+
+**Bloch–Wigner 이중로그(Bloch–Wigner dilogarithm)** $D$ 는 이중로그(dilogarithm) $\mathrm{Li}\_2$ 로 다음과 같이 정의되는 함수다.
 
 $$
 D(z)=\mathrm{Im}\thinspace\mathrm{Li}\_2(z)+\arg(1-z)\log\vert z\vert,
 \qquad \mathrm{Li}\_2(z)=\sum_{n\ge1}\frac{z^n}{n^2}
 $$
 
-$\mathrm{Li}\_2$ 는 $z=1$ 에서 분기하므로 $\vert z\vert\lt 1$ 밖에서 한 값으로 정해지지 않는다. $D$ 는 분기의 차이가 $\arg(1-z)\log\vert z\vert$ 항에서 상쇄되어 $\mathbb C\setminus\lbrace 0,1\rbrace$ 에서 실해석적이고, $0$ 과 $1$ 에서 값 $0$ 으로 연속 확장된다. 이상 사면체의 모양값이 $z$ 이면 그 부피가 $D(z)$ 다.
+$z=e^{i\pi/3}$ 이면 $\log\vert z\vert=0$ 이므로 $D(z)=\mathrm{Im}\thinspace\mathrm{Li}\_2(e^{i\pi/3})=\sum_{n\ge1}\sin(n\pi/3)/n^2=1.0149416\ldots$ 이고, 직관 절의 정이상사면체 하나의 부피다. $z$ 가 $1$ 보다 작은 실수이면 $\mathrm{Li}\_2(z)$ 가 실수이고 $\arg(1-z)=0$ 이므로 $D(z)=0$ 이다.
 
 ## 전 Bloch 군
 
-$F$ 를 체, $F^\flat=F\setminus\lbrace 0,1\rbrace$ 이라 한다. $\mathbb Z\lbrack F^\flat\rbrack$ 는 $x\in F^\flat$ 마다 생성원 $\lbrack x\rbrack$ 를 하나 둔 자유 아벨군이다. **전 Bloch 군** $\mathcal P(F)$ 는 $\mathbb Z\lbrack F^\flat\rbrack$ 를 **다섯 항 관계**
+$F$ 를 체, $F^\flat=F\setminus\lbrace 0,1\rbrace$ 이라 한다. $\mathbb Z\lbrack F^\flat\rbrack$ 는 $x\in F^\flat$ 마다 생성원 $\lbrack x\rbrack$ 를 하나 둔 자유 아벨군이다. **전 Bloch 군(pre-Bloch group)** $\mathcal P(F)$ 는 $\mathbb Z\lbrack F^\flat\rbrack$ 를 **다섯 항 관계(five-term relation)**
 
 $$
 \lbrack x\rbrack-\lbrack y\rbrack+\Big\lbrack\frac yx\Big\rbrack-\Big\lbrack\frac{1-x^{-1}}{1-y^{-1}}\Big\rbrack+\Big\lbrack\frac{1-x}{1-y}\Big\rbrack=0
@@ -43,6 +43,8 @@ $$
 이 생성하는 부분군으로 나눈 몫군이다.
 
 다섯 항은 사영직선 위의 다섯 점이 만드는 복비의 다섯 가지 조합이다. 네 점의 복비가 $x$ 이고 한 점을 더하면 네 점을 고르는 방법이 다섯이고, 각 선택의 복비가 위 다섯 인자다.
+
+$F=\mathbb Q$, $x=2$, $y=-1$ 이면 다섯 인자가 $2,\thinspace -1,\thinspace -1/2,\thinspace 1/4,\thinspace -1/2$ 이므로 $\mathcal P(\mathbb Q)$ 에서 $\lbrack 2\rbrack-\lbrack -1\rbrack+2\lbrack -1/2\rbrack-\lbrack 1/4\rbrack=0$ 이다.
 
 ## Bloch 군
 
@@ -54,7 +56,13 @@ $$
 
 는 다섯 항 관계를 $0$ 으로 보내므로 잘 정의된다. **Bloch 군** $B(F)$ 는 $\lambda$ 의 핵이다.
 
+$x\in F^\flat$ 이면 $\lambda(\lbrack x\rbrack+\lbrack 1-x\rbrack)=x\wedge(1-x)+(1-x)\wedge x=0$ 이므로 $\lbrack x\rbrack+\lbrack 1-x\rbrack$ 는 $B(F)$ 의 원소다.
+
 # 성질
+
+## 이중로그의 연속성
+
+$\mathrm{Li}\_2$ 는 $z=1$ 에서 분기하므로 $\vert z\vert\lt 1$ 밖에서 한 값으로 정해지지 않는다. $D$ 는 분기의 차이가 $\arg(1-z)\log\vert z\vert$ 항에서 상쇄되어 $\mathbb C\setminus\lbrace 0,1\rbrace$ 에서 실해석적이고, $0$ 과 $1$ 에서 값 $0$ 으로 연속 확장된다. 이상 사면체의 모양값이 $z$ 이면 그 부피가 $D(z)$ 다.
 
 ## 다섯 항 관계와 이중로그
 
@@ -70,7 +78,7 @@ $$
 > $$0\to\mathbb Q/\mathbb Z\to K_3^{\mathrm{ind}}(F)\to B(F)\to 0$$
 > 이 있다.[^1]
 
-$K_3^{\mathrm{ind}}(F)=K_3(F)/K_3^{M}(F)$ 는 $K_3$ 에서 [Milnor K 이론](milnor-k-theory.md)의 상을 뺀 몫이다. 완전열의 꼬임 부분이 $\mathbb Q/\mathbb Z$ 뿐이므로, $B(F)$ 는 $K_3^{\mathrm{ind}}(F)$ 를 꼬임을 빼고 본 군이다. 대수적 K 이론의 정의는 분류공간의 호모토피군이고 Bloch 군의 정의는 생성원과 관계이므로, 이 정리가 $K_3$ 을 체의 원소로 적는 표현을 준다.
+$K_3^{\mathrm{ind}}(F)=K_3(F)/K_3^{M}(F)$ 는 $K_3$ 에서 [Milnor K 이론](milnor-k-theory.md)의 상을 뺀 몫이다. 완전열의 꼬임 부분이 $\mathbb Q/\mathbb Z$ 뿐이므로, $B(F)$ 는 $K_3^{\mathrm{ind}}(F)$ 를 꼬임을 빼고 본 군이다. [대수적 K 이론](algebraic-k-theory.md)의 정의는 분류공간의 호모토피군이고 Bloch 군의 정의는 생성원과 관계이므로, 이 정리가 $K_3$ 을 체의 원소로 적는 표현을 준다.
 
 ## Borel 조절자
 
