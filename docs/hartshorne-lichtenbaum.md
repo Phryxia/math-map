@@ -6,17 +6,7 @@
 
 # 직관
 
-**정리.** $(R,\mathfrak m)$ 이 $d$ 차원 완비 국소 정역이면
-
-$$
-H^d\_I(R)=0\iff\dim R/I\gt0
-$$
-
-이다.[^1]
-
-Grothendieck 의 비소멸 정리는 $I=\mathfrak m$ 에서 $H^d\_{\mathfrak m}(R)\neq0$ 을 준다. 이 정리는 그 반대편을 채운다. $V(I)$ 가 닫힌점 하나로 줄어드는 경우를 빼면 최고차가 항상 소멸한다.
-
-$R=k\lbrack\lbrack x,y\rbrack\rbrack$ 은 $2$ 차원 완비 국소 정역이다. $I=\mathfrak m=(x,y)$ 는 생성원이 둘이라 Čech 복합체가 차수 $2$ 까지 간다.
+$R=k\lbrack\lbrack x,y\rbrack\rbrack$ 은 $2$ 차원 완비 국소 정역이다. $I=\mathfrak m=(x,y)$ 는 생성원이 둘이라 Čech 복합체(Čech complex)가 차수 $2$ 까지 간다.
 
 $$
 0\to R\to R_x\oplus R_y\to R_{xy}\to0
@@ -28,23 +18,29 @@ $$
 
 ## 산술 랭크
 
+아이디얼 $I\subseteq R$ 의 **산술 랭크(arithmetic rank)** 는 근기가 $I$ 의 근기와 같아지게 하는 원소의 최소 개수다.
+
 $$
 \mathrm{ara}(I)=\min\lbrace r:\sqrt{(a_1,\dots,a_r)}=\sqrt I\ \text{인}\ a_1,\dots,a_r\in R\ \text{가 있다}\rbrace
 $$
 
-국소 코호몰로지는 근기만 보고 Čech 복합체는 생성원 개수만큼 길므로 $i\gt\mathrm{ara}(I)$ 에서 $H^i\_I(M)=0$ 이다.
+직관 절의 $R=k\lbrack\lbrack x,y\rbrack\rbrack$ 에서 $I=(x^2,xy)$ 는 생성원이 둘이지만 $\sqrt I=(x)=\sqrt{(x)}$ 이므로 $\mathrm{ara}(I)=1$ 이다. $\mathfrak m$ 은 높이가 $2$ 이고, 원소 하나가 생성하는 아이디얼을 포함하는 극소 소 아이디얼은 높이가 $1$ 이하라는 Krull 높이 정리(Krull's height theorem)로 원소 하나로는 안 되므로 $\mathrm{ara}(\mathfrak m)=2$ 다.
 
 ## 코호몰로지 차원
+
+아이디얼 $I$ 의 **코호몰로지 차원(cohomological dimension)** 은 어떤 가군에서 국소 코호몰로지가 살아남는 가장 높은 차수다.
 
 $$
 \mathrm{cd}(I)=\max\lbrace i:H^i\_I(M)\neq0\ \text{인 가군}\ M\ \text{가 있다}\rbrace
 $$
 
-위 문단에서 $\mathrm{cd}(I)\le\mathrm{ara}(I)$ 이고 Grothendieck 소멸에서 $\mathrm{cd}(I)\le\dim R$ 이다.
+직관 절의 계산에서 $H^2\_{\mathfrak m}(R)\neq0$ 이므로 $\mathrm{cd}(\mathfrak m)=2$ 다. $H^1\_{(x)}(R)=R_x/R\neq0$ 이고 성질 절의 상한에서 $\mathrm{cd}((x))\le\mathrm{ara}((x))=1$ 이므로 $\mathrm{cd}((x))=1$ 이다.
 
-## 정리
+# 성질
 
-$(R,\mathfrak m)$ 을 $d$ 차원 국소환, $I\subseteq R$ 를 아이디얼이라 하자. 완비화 $\hat R$ 의 최소 소 아이디얼 가운데 $\dim\hat R/\mathfrak p=d$ 인 것 전부에 대해 $\dim\hat R/(I\hat R+\mathfrak p)\gt0$ 이면, 그리고 그때만
+## Hartshorne–Lichtenbaum 소멸 정리
+
+**정리.** $(R,\mathfrak m)$ 을 $d$ 차원 국소환, $I\subseteq R$ 를 아이디얼이라 하자. 완비화 $\hat R$ 의 최소 소 아이디얼 가운데 $\dim\hat R/\mathfrak p=d$ 인 것 전부에 대해 $\dim\hat R/(I\hat R+\mathfrak p)\gt0$ 이면, 그리고 그때만
 
 $$
 H^d\_I(R)=0
@@ -52,7 +48,13 @@ $$
 
 이다.[^1] $R$ 이 완비 국소 정역이면 최소 소 아이디얼이 $0$ 하나뿐이므로 조건이 $\dim R/I\gt0$ 으로 줄어든다.
 
-# 성질
+$I=\mathfrak m$ 에서 $H^d\_{\mathfrak m}(R)\neq0$ 이라는 것은 Grothendieck 비소멸 정리(Grothendieck nonvanishing theorem)이고, 이 정리는 나머지 아이디얼에서 최고차가 소멸하는 조건을 준다.
+
+## 두 차원의 상한
+
+**정리.** $\mathrm{cd}(I)\le\mathrm{ara}(I)$ 이고 $\mathrm{cd}(I)\le\dim R$ 이다.
+
+국소 코호몰로지는 근기만 보므로 $\sqrt I=\sqrt{(a_1,\dots,a_r)}$ 인 원소로 Čech 복합체를 만들 수 있고, 그 복합체는 차수 $r$ 에서 끝나 $i\gt\mathrm{ara}(I)$ 에서 $H^i\_I(M)=0$ 이다. 두 번째 부등식은 Grothendieck 소멸 정리(Grothendieck vanishing theorem)다.
 
 ## 완비화로 옮긴 판정
 
@@ -60,7 +62,7 @@ $$
 
 ## 증명의 요지
 
-$I$ 가 한 원소로 생성된 경우로 먼저 줄인다. 일반의 $I$ 는 생성원 개수에 대한 귀납과 Mayer–Vietoris 열로 그 경우에 붙는다. 완비 국소 정역에서 $H^d\_{(a)}(R)$ 의 Matlis 쌍대를 잡으면 정규화 위의 역계 극한이 되고, $\dim R/(a)\gt0$ 이면 그 극한의 사상들이 모두 $0$ 을 거쳐 극한이 소멸한다.[^1]
+$I$ 가 한 원소로 생성된 경우로 먼저 줄인다. 일반의 $I$ 는 생성원 개수에 대한 귀납과 [Mayer–Vietoris 완전열](mayer-vietoris.md)로 그 경우에 붙는다. 완비 국소 정역에서 $H^d\_{(a)}(R)$ 의 Matlis 쌍대(Matlis dual)를 잡으면 정규화 위의 역계 극한이 되고, $\dim R/(a)\gt0$ 이면 그 극한의 사상들이 모두 $0$ 을 거쳐 극한이 소멸한다.[^1]
 
 ## 최고차 하나만의 정리
 
@@ -70,11 +72,11 @@ $I$ 가 한 원소로 생성된 경우로 먼저 줄인다. 일반의 $I$ 는 �
 
 ## 산술 랭크의 결정
 
-$\dim R/I=0$ 이면 정리가 $H^d\_I(R)\neq0$ 을 주고, 따라서 $\mathrm{ara}(I)\ge d$ 다. 위에서 $\mathrm{ara}(I)\le d$ 는 $I$ 가 $\mathfrak m$ 근원일 때 매개변수계가 주므로 $\mathrm{ara}(I)=d$ 다. 아이디얼을 근기까지만 맞춘다고 해도 생성원을 $d$ 개 아래로 줄일 수 없다.
+$\dim R/I=0$ 이면 정리가 $H^d\_I(R)\neq0$ 을 주고, 따라서 $\mathrm{ara}(I)\ge d$ 다. 위에서 $\mathrm{ara}(I)\le d$ 는 $I$ 가 $\mathfrak m$ 근원일 때 매개변수계(system of parameters)가 주므로 $\mathrm{ara}(I)=d$ 다. 아이디얼을 근기까지만 맞춘다고 해도 생성원을 $d$ 개 아래로 줄일 수 없다.
 
 ## 집합론적 완전교차의 판정
 
-아이디얼 $I$ 가 $\mathrm{ara}(I)=\mathrm{ht}\thinspace I$ 를 만족하면 $V(I)$ 를 그 여차원만큼의 방정식으로 자를 수 있다. 국소 코호몰로지의 비소멸이 $\mathrm{ara}$ 의 하한을 주므로, $H^i\_I(R)\neq0$ 인 $i$ 가 높이보다 크면 집합론적 완전교차가 아니다.
+아이디얼 $I$ 가 $\mathrm{ara}(I)=\mathrm{ht}\thinspace I$ 를 만족하면 $V(I)$ 를 그 여차원만큼의 방정식으로 자를 수 있다. 국소 코호몰로지의 비소멸이 $\mathrm{ara}$ 의 하한을 주므로, $H^i\_I(R)\neq0$ 인 $i$ 가 높이보다 크면 [집합론적 완전교차](set-theoretic-complete-intersection.md)가 아니다.
 
 ## 사영 다양체의 연결성
 
