@@ -6,10 +6,6 @@
 
 # 직관
 
-PID 위의 유한생성 가군은 순환가군의 직합으로 유일하게 분해된다. 이 구조정리 하나가 두 고전 정리를 특수한 경우로 포함한다. $R=\mathbb Z$ 이면 유한생성 아벨군의 구조정리이고, $R=k[x]$ 이면 [선형사상](linear-maps.md)의 [Jordan 표준형](jordan-canonical-form.md)과 유리 표준형이다.
-
-정리가 성립하는 근거는 [유일분해정역](unique-factorization-domains.md) 사슬의 PID 칸이다. 모든 아이디얼이 한 원소로 생성되므로 관계 행렬을 대각화할 수 있고, 그 대각 성분이 분해의 불변량이 된다.
-
 유한생성 가군은 생성원 $m$ 개와 그들 사이의 관계로 기술된다. 관계를 행렬 $A$ 로 적으면 가군은 $R^m/\mathrm{im}\thinspace A$ 다. 생성원과 관계를 각각 기저변환하는 것이 $A$ 에 가역행렬을 좌우에서 곱하는 것이고, PID 에서는 이 연산으로 $A$ 를 대각형으로 만들 수 있다. 대각 성분이 남는 자료의 전부다.
 
 $\mathbb Z$ 에서 이 절차는 정수행렬의 기약 대각화다. 아래 관계가 정의하는 아벨군은 $\mathbb Z/2 \oplus \mathbb Z/6$ 이다.
@@ -20,15 +16,17 @@ $$
 
 # 정의
 
-$R$ 를 PID 라 하자. $R$ 가군 $M$ 이 **유한생성**이라는 것은 유한 개의 원소 $m_1,\dots,m_n$ 이 있어 모든 원소가 $\sum r_i m_i$ 꼴로 쓰인다는 뜻이다.
+$R$ 를 PID 라 하자. $R$ 가군 $M$ 이 **유한생성(finitely generated)** 이라는 것은 유한 개의 원소 $m_1,\dots,m_n$ 이 있어 모든 원소가 $\sum r_i m_i$ 꼴로 쓰인다는 뜻이다. 직관 절의 $\mathbb Z/2\oplus\mathbb Z/6$ 은 두 원소로 생성되고, 유리수의 덧셈군 $\mathbb Q$ 는 유한생성 $\mathbb Z$ 가군이 아니다.
 
-$M$ 의 **비틀림 부분가군**은 어떤 $0$ 이 아닌 $r$ 에 대해 $rm=0$ 인 원소 전체다.
+$M$ 의 **비틀림 부분가군(torsion submodule)** 은 어떤 $0$ 이 아닌 $r$ 에 대해 $rm=0$ 인 원소 전체다.
 
 $$
-M_{\mathrm{tors}}=\lbrace m\in M\ :\ \exists\thinspace r\in R\setminus\lbrace 0\rbrace,\ rm=0\rbrace
+M_{\mathrm{tors}}=\lbrace m\in M\thinspace:\thinspace\exists\thinspace r\in R\setminus\lbrace 0\rbrace,\thinspace rm=0\rbrace
 $$
 
-$M_{\mathrm{tors}}=0$ 인 가군을 **비틀림 없는**(torsion-free) 가군이라 한다.
+$M_{\mathrm{tors}}=0$ 인 가군을 **비틀림 없는(torsion-free)** 가군이라 한다.
+
+$\mathbb Z\oplus\mathbb Z/2$ 의 비틀림 부분가군은 $0\oplus\mathbb Z/2$ 이고, $\mathbb Z^2$ 은 비틀림 없는 가군이다.
 
 # 성질
 
@@ -62,6 +60,8 @@ $M$ 이 $n$ 개로 생성되면 전사사상 $R^n \to M$ 이 있고, 그 핵 $K$
 
 ## PID 조건의 필요성
 
+PID 에서는 모든 아이디얼이 한 원소로 생성되므로 관계 행렬을 대각화할 수 있다. PID 는 [유일분해정역](unique-factorization-domains.md)이다.
+
 정리는 PID 밖에서 깨진다. $\mathbb Z[\sqrt{-5}]$ 에서 [아이디얼](ideals-quotient-rings.md) $(2,1+\sqrt{-5})$ 는 유한생성 비틀림 없는 가군이지만 자유가 아니다. 주아이디얼이 아니어서 생성원 하나로 줄지 않는다.
 
 # 활용
@@ -72,7 +72,7 @@ $R=\mathbb Z$ 에서 정리는 유한생성 아벨군이 $\mathbb Z^{r}\oplus\ma
 
 ## 표준형
 
-$R=k[x]$ 에서 [벡터 공간](vector-spaces.md) $V$ 와 선형사상 $T$ 의 쌍은 $k[x]$ 가군이 된다. $x$ 의 작용을 $T$ 로 주면 되고, $V$ 가 유한차원이면 이 가군은 유한생성 비틀림 가군이다. 불변인자 분해가 유리 표준형을, $k$ 가 대수적으로 닫혀 있을 때 초등인자 분해가 Jordan 표준형을 준다. 초등인자 $(x-\lambda)^{e}$ 가 [고윳값](eigenvalues.md) $\lambda$ 의 크기 $e$ 인 Jordan 블록이다.
+$R=k[x]$ 에서 [벡터 공간](vector-spaces.md) $V$ 와 [선형사상](linear-maps.md) $T$ 의 쌍은 $k[x]$ 가군이 된다. $x$ 의 작용을 $T$ 로 주면 되고, $V$ 가 유한차원이면 이 가군은 유한생성 비틀림 가군이다. 불변인자 분해가 유리 표준형을, $k$ 가 대수적으로 닫혀 있을 때 초등인자 분해가 [Jordan 표준형](jordan-canonical-form.md)을 준다. 초등인자 $(x-\lambda)^{e}$ 가 [고윳값](eigenvalues.md) $\lambda$ 의 크기 $e$ 인 Jordan 블록이다.
 
 ## 위상수학의 호몰로지
 
