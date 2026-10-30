@@ -6,10 +6,6 @@
 
 # 직관
 
-혼합 유한요소법은 2계 편미분방정식을 1계 방정식 두 개로 바꾸고, 두 미지 함수를 서로 다른 유한요소공간에서 동시에 근사하는 방법이다. 유한요소법은 해 하나만 근사하고 그 도함수는 근사해를 미분해 얻지만, 혼합 유한요소법은 도함수를 독립 미지수로 두고 같은 차수로 근사한다.
-
-이 꼴의 쌍선형형식은 한 변수 방향에서 $0$ 이므로 강제가 아니고 [Lax–Milgram 정리](lax-milgram.md)가 적용되지 않는다. 가해성과 안정성은 조건 두 개를 따로 요구하는 Babuška–Brezzi 조건(Babuška–Brezzi condition)이 준다. 두 공간을 따로 고르므로 각각이 근사 성질을 가져도 짝이 이 조건을 만족하지 않을 수 있고, 그때는 격자를 가늘게 해도 오차가 줄지 않는다.
-
 $(0,1)$ 에서 $-u''=f$ 와 $u(0)=u(1)=0$ 을 유한요소법으로 풀면 조각마다 일차인 연속함수 $u_h$ 가 나온다. 지하수의 유속이나 막대의 응력처럼 알아야 할 양이 $u$ 가 아니라 $\sigma=-u'$ 인 문제에서는 $u_h$ 를 미분해 $\sigma_h=-u_h'$ 로 쓴다.
 
 이렇게 얻은 $\sigma_h$ 는 조각마다 상수이고 자른 점에서 값이 뛴다. $u-u_h$ 의 $H^1$ 오차가 $O(h^k)$ 이므로 $\sigma-\sigma_h$ 의 $L^2$ 오차도 $O(h^k)$ 이고, $u$ 쪽 $L^2$ 오차 $O(h^{k+1})$ 보다 한 차수 낮다. 원래 방정식을 1계 꼴로 적은 $\sigma'=f$ 도 조각 안에서 $\sigma_h'=0$ 이므로 성립하지 않는다.
@@ -34,7 +30,7 @@ $$
 B((\sigma,u),(\tau,v))=\int\_0^1\sigma\tau\thinspace dx-\int\_0^1 u\tau'\thinspace dx+\int\_0^1\sigma'v\thinspace dx
 $$
 
-이다. $\tau=0$ 과 $v=u$ 를 넣으면 세 항이 모두 $0$ 이므로 $u\ne 0$ 에서도 $B((0,u),(0,u))=0$ 이다. 강제성 $B(w,w)\ge\alpha\Vert w\Vert^2$ 이 성립하지 않으니 Lax–Milgram 정리로는 해의 존재도 안정성도 나오지 않는다.
+이다. $\tau=0$ 과 $v=u$ 를 넣으면 세 항이 모두 $0$ 이므로 $u\ne 0$ 에서도 $B((0,u),(0,u))=0$ 이다. 강제성(coercivity) $B(w,w)\ge\alpha\Vert w\Vert^2$ 이 성립하지 않으니 [Lax–Milgram 정리](lax-milgram.md)로는 해의 존재도 안정성도 나오지 않는다.
 
 $u$ 방향에서 형식이 $0$ 인 것이 막힌 이유다. 그래서 강제성을 조건 두 개로 나눈다. $\int\_0^1\sigma\tau\thinspace dx$ 는 $\tau'=0$ 인 $\tau$ 들만 보면 강제이고, $u$ 를 정하는 일은 $\int\_0^1 u\tau'\thinspace dx$ 가 $0$ 이 아닌 $u$ 를 $0$ 으로 보내지 않는다는 조건이 맡는다.
 
@@ -48,7 +44,7 @@ $$
 a(\sigma,\tau)+b(\tau,u)=f(\tau)\quad(\forall\tau\in V),\qquad b(\sigma,v)=g(v)\quad(\forall v\in Q)
 $$
 
-$b$ 가 정하는 유계 작용소 $B\colon V\to Q'$ 를 $(B\tau)(v)=b(\tau,v)$ 로 두고 그 핵을 $K=\ker B$ 라 쓴다. $K$ 는 $V$ 의 닫힌 부분공간이다.
+$b$ 가 정하는 유계 작용소 $B\colon V\to Q'$ 를 $(B\tau)(v)=b(\tau,v)$ 로 두고 그 핵을 $K=\ker B$ 라 쓴다.
 
 위 직관의 1차원 문제는 $V=H^1(0,1)$ , $Q=L^2(0,1)$ , $a(\sigma,\tau)=\int\_0^1\sigma\tau\thinspace dx$ , $b(\tau,v)=-\int\_0^1 v\tau'\thinspace dx$ , $f=0$ , $g(v)=-\int\_0^1 fv\thinspace dx$ 인 경우다. 이때 $K=\lbrace \tau\in H^1(0,1):\tau'=0\rbrace$ 는 상수함수 전체다.
 
@@ -60,16 +56,20 @@ $$
 \begin{pmatrix}A&B^{\mathsf T}\cr B&0\end{pmatrix}\begin{pmatrix}\boldsymbol\sigma\cr\boldsymbol u\end{pmatrix}=\begin{pmatrix}\boldsymbol f\cr\boldsymbol g\end{pmatrix}
 $$
 
-$A$ 는 $a$ 의 강성행렬이고 $B$ 는 $b$ 의 [행렬](matrices.md)이다. 오른쪽 아래 블록이 $0$ 인 것이 강제성이 깨지는 자리다. 이산 핵은 $K_h=\lbrace \tau_h\in V_h:b(\tau_h,v_h)=0\thinspace(\forall v_h\in Q_h)\rbrace$ 다.
+$A$ 는 $a$ 의 강성행렬이고 $B$ 는 $b$ 의 [행렬](matrices.md)이다. 오른쪽 아래 블록이 $0$ 인 것이 강제성이 깨지는 자리다. **이산 핵(discrete kernel)** 은 $K_h=\lbrace \tau_h\in V_h:b(\tau_h,v_h)=0\thinspace(\forall v_h\in Q_h)\rbrace$ 다.
+
+직관 절의 문제를 $x=0,\thinspace 1/2,\thinspace 1$ 에서 두 조각으로 자르고 $V_h$ 를 조각마다 일차인 연속함수, $Q_h$ 를 조각마다 상수인 함수로 잡는다. $V_h$ 는 세 절점의 값으로 정해져 $3$ 차원이고 $Q_h$ 는 $2$ 차원이므로, $A$ 는 $3\times 3$, $B$ 는 $2\times 3$ 이다. $b(\tau_h,v_h)=0$ 이 모든 조각별 상수 $v_h$ 에서 성립하려면 조각마다 $\tau_h'$ 의 적분이 $0$ 이어야 하므로, $K_h$ 는 상수함수 전체이고 $K$ 와 같다.
 
 # 성질
 
 ## Babuška–Brezzi 정리
 
-**정리.** 다음 두 조건이 성립하면 안장점 문제의 해가 유일하게 존재하고 $\Vert\sigma\Vert_V+\Vert u\Vert_Q\le C(\Vert f\Vert\_{V'}+\Vert g\Vert\_{Q'})$ 이다.[^1]
+$b$ 가 유계이므로 $B$ 가 연속이고, 그 핵 $K$ 는 $V$ 의 닫힌 부분공간이다.
 
-- **핵 강제성.** 어떤 $\alpha\gt 0$ 에서 모든 $\tau\in K$ 가 $a(\tau,\tau)\ge\alpha\Vert\tau\Vert_V^2$ 를 만족한다.
-- **inf-sup 조건.** 어떤 $\beta\gt 0$ 에서 모든 $v\in Q$ 가 $\sup\_{\tau\in V,\thinspace\tau\ne 0}b(\tau,v)/\Vert\tau\Vert_V\ge\beta\Vert v\Vert_Q$ 를 만족한다.
+**정리 (Babuška–Brezzi).** 다음 두 조건이 성립하면 안장점 문제의 해가 유일하게 존재하고 $\Vert\sigma\Vert_V+\Vert u\Vert_Q\le C(\Vert f\Vert\_{V'}+\Vert g\Vert\_{Q'})$ 이다.[^1]
+
+- 핵 강제성(kernel coercivity). 어떤 $\alpha\gt 0$ 에서 모든 $\tau\in K$ 가 $a(\tau,\tau)\ge\alpha\Vert\tau\Vert_V^2$ 를 만족한다.
+- inf-sup 조건(inf-sup condition). 어떤 $\beta\gt 0$ 에서 모든 $v\in Q$ 가 $\sup\_{\tau\in V,\thinspace\tau\ne 0}b(\tau,v)/\Vert\tau\Vert_V\ge\beta\Vert v\Vert_Q$ 를 만족한다.
 
 상수 $C$ 는 $\alpha^{-1}$ , $\beta^{-1}$ , $a$ 의 유계상수로만 정해진다.
 
@@ -79,7 +79,7 @@ $$
 a(\sigma_0,\tau)=f(\tau)-a(\sigma_g,\tau)\quad(\forall\tau\in K)
 $$
 
-가 된다. $K$ 는 닫힌 부분공간이고 거기서 $a$ 가 강제이므로 Lax–Milgram 정리가 $\sigma_0$ 를 유일하게 준다. 남은 $u$ 는 범함수 $\tau\mapsto f(\tau)-a(\sigma,\tau)$ 가 $K$ 에서 $0$ 이라는 데서 나온다. $K$ 의 소멸자가 $B'$ 의 치역이므로 그 범함수가 $B'u$ 로 적히고, $B'$ 가 단사여서 $u$ 가 유일하다. 두 부등식을 모으면 안정성 추정이 나온다. $\square$
+가 된다. $K$ 는 닫힌 부분공간이고 거기서 $a$ 가 강제이므로 Lax–Milgram 정리가 $\sigma_0$ 를 유일하게 준다. 남은 $u$ 는 범함수 $\tau\mapsto f(\tau)-a(\sigma,\tau)$ 가 $K$ 에서 $0$ 이라는 데서 나온다. $K$ 의 소멸자(annihilator)가 $B'$ 의 치역이므로 그 범함수가 $B'u$ 로 적히고, $B'$ 가 단사여서 $u$ 가 유일하다. 두 부등식을 모으면 안정성 추정이 나온다. $\square$
 
 ## 이산 안정성
 
@@ -105,7 +105,7 @@ $\beta_h\gt 0$ 은 $B_h\colon V_h\to Q_h'$ 가 전사라는 것이므로 $\dim V
 
 차원 조건은 충분하지 않다. 위 1차원 문제를 $0=x_0\lt x_1\lt\dots\lt x_N=1$ 에서 이산화하면서 $V_h$ 를 조각마다 일차인 연속함수 전체, $Q_h$ 도 같은 공간으로 잡으면 두 차원이 모두 $N+1$ 이다. 그런데 $\tau_h\in V_h$ 의 도함수는 조각마다 상수이고 그런 함수의 공간은 $N$ 차원이므로 $B_h$ 의 계수가 $N$ 이하다. 따라서 $v_h\ne 0$ 이 $Q_h$ 에 있어 모든 $\tau_h$ 에서 $\int\_0^1 v_h\tau_h'\thinspace dx=0$ 이다. 조각 $\lbrack x_i,x\_{i+1}\rbrack$ 의 지시함수가 $\tau_h'$ 로 나오므로 이 조건은 조각마다 $v_h$ 의 적분이 $0$ 이라는 것이고, $v_h$ 가 조각마다 일차이므로 $(v_h(x_i)+v_h(x\_{i+1}))/2=0$ 이다. 곧 $v_h$ 의 절점값이 $c,-c,c,\dots$ 로 번갈아 나타난다. 이 $v_h$ 를 **체커보드 모드(checkerboard mode)** 라 하고, 이 짝에서 $u_h$ 는 체커보드 모드를 더한 만큼 정해지지 않는다.
 
-같은 현상이 2차원 Stokes 방정식의 사각형 격자에서 속도를 겹일차 연속함수, 압력을 요소마다 상수로 잡을 때도 나타난다. 차원 조건은 성립하지만 요소를 체스판처럼 $+1$ 과 $-1$ 로 칠한 압력이 모든 이산 속도에 대해 $b(\tau_h,v_h)=0$ 을 만족한다.[^2]
+같은 현상이 2차원 Stokes 방정식(Stokes equations)의 사각형 격자에서 속도를 겹일차(bilinear) 연속함수, 압력을 요소마다 상수로 잡을 때도 나타난다. 차원 조건은 성립하지만 요소를 체스판처럼 $+1$ 과 $-1$ 로 칠한 압력이 모든 이산 속도에 대해 $b(\tau_h,v_h)=0$ 을 만족한다.[^2]
 
 ## Raviart–Thomas 요소
 
@@ -121,10 +121,10 @@ $\mathrm{div}\thinspace V_h=Q_h$ 가 성립하고, 이 등식과 보간 작용�
 
 # 활용
 
-- **Darcy 흐름의 유속.** 다공질 매체의 압력 $u$ 와 유속 $\sigma$ 가 $\sigma=-\kappa\nabla u$ 와 $\mathrm{div}\thinspace\sigma=f$ 를 만족한다. 유속이 구하려는 양이므로 그것을 미지수로 두는 것이 맞고, 둘째 식에 요소 $T$ 의 지시함수를 넣으면 $\int_T\mathrm{div}\thinspace\sigma_h=\int_T f$ 가 등식으로 성립해 요소마다 질량 보존이 정확하다.
-- **Stokes 방정식.** 속도와 압력을 함께 미지수로 두면 압력이 비압축 조건의 Lagrange 승수가 되고 문제가 안장점 꼴이 된다([Lagrange 쌍대성](lagrange-duality.md)의 안장점과 같은 구조다). 속도를 조각마다 이차, 압력을 조각마다 일차인 연속함수로 잡은 Taylor–Hood 요소(Taylor–Hood element)가 이산 안정성을 만족한다.[^2]
-- **탄성의 응력 변수화.** Hellinger–Reissner 원리(Hellinger–Reissner principle)로 응력을 미지수로 두면 변위만 쓰는 공식에서 Poisson 비가 $1/2$ 에 가까울 때 수렴이 느려지는 현상을 피한다.
-- **연립방정식의 해법.** 블록 행렬이 대칭이지만 양의 정부호가 아니므로 공액기울기법을 그대로 쓸 수 없다. 블록 대각 근사나 Schur 보원 근사를 [전처리](preconditioning.md)로 쓰고 극소잔차 계열의 반복법을 적용한다.
+- Darcy 흐름(Darcy flow)의 유속. 다공질 매체(porous medium)의 압력 $u$ 와 유속 $\sigma$ 가 $\sigma=-\kappa\nabla u$ 와 $\mathrm{div}\thinspace\sigma=f$ 를 만족한다. 유속이 구하려는 양이므로 그것을 미지수로 두는 것이 맞고, 둘째 식에 요소 $T$ 의 지시함수를 넣으면 $\int_T\mathrm{div}\thinspace\sigma_h=\int_T f$ 가 등식으로 성립해 요소마다 질량 보존(mass conservation)이 정확하다.
+- Stokes 방정식. 속도와 압력을 함께 미지수로 두면 압력이 비압축 조건(incompressibility condition)의 Lagrange 승수(Lagrange multiplier)가 되고 문제가 안장점 꼴이 된다([Lagrange 쌍대성](lagrange-duality.md)의 안장점과 같은 구조다). 속도를 조각마다 이차, 압력을 조각마다 일차인 연속함수로 잡은 Taylor–Hood 요소(Taylor–Hood element)가 이산 안정성을 만족한다.[^2]
+- 탄성의 응력 변수화. Hellinger–Reissner 원리(Hellinger–Reissner principle)로 응력을 미지수로 두면 변위만 쓰는 공식에서 Poisson 비(Poisson's ratio)가 $1/2$ 에 가까울 때 수렴이 느려지는 현상을 피한다.
+- 연립방정식의 해법. 블록 행렬이 대칭이지만 양의 정부호가 아니므로 공액기울기법(conjugate gradient method)을 그대로 쓸 수 없다. 블록 대각 근사나 [Schur 보수](schur-complement.md) 근사를 [전처리](preconditioning.md)로 쓰고, 최소잔차(minimal residual) 계열의 [Krylov 부분공간 방법](krylov-subspace-methods.md)을 적용한다.
 
 [^1]: Daniele Boffi, Franco Brezzi, Michel Fortin, *Mixed Finite Element Methods and Applications*, Springer (2013), 4.2 절과 5.2 절. 원 논문은 I. Babuška, *Error-bounds for finite element method*, Numerische Mathematik **16** (1971), 322–333 과 F. Brezzi, *On the existence, uniqueness and approximation of saddle-point problems arising from Lagrangian multipliers*, RAIRO Analyse Numérique **8** (1974), 129–151.
 
