@@ -6,11 +6,7 @@
 
 # 직관
 
-교차 이론은 대수다양체 안의 부분다양체들이 만나는 자리를 중복도를 붙여 세는 이론이다. 부분다양체의 형식적 합을 연속 변형에 해당하는 동치로 나눈 Chow 군을 만들고, 다양체가 매끄러우면 교차가 그 위의 곱이 되어 Chow 환(Chow ring)을 이룬다.
-
-[사영다양체](projective-varieties.md)의 Bézout 정리는 사영공간의 Chow 환에서 한 번 곱하는 계산이다. 복소수 위에서는 Chow 환이 [코호몰로지](cohomology.md) 환으로 가고 교차가 컵곱으로 가므로, [횡단성](transversality.md)으로 정의한 위상적 교차수와 같은 값을 준다.
-
-사영평면에서 직선 $y=0$ 과 원뿔곡선 $yz=x^2-cz^2$ 의 교점을 센다. $y=0$ 을 넣으면 $x^2=cz^2$ 이므로 $c\ne 0$ 이면 교점이 $(\pm\sqrt c:0:1)$ 둘이고, $c=0$ 이면 $(0:0:1)$ 하나뿐이다. Bézout 정리가 말하는 $1\cdot 2=2$ 를 $c=0$ 에서도 맞추려면 $c=0$ 의 교점을 두 번 세야 한다.
+[사영다양체](projective-varieties.md)인 사영평면에서 직선 $y=0$ 과 원뿔곡선 $yz=x^2-cz^2$ 의 교점을 센다. $y=0$ 을 넣으면 $x^2=cz^2$ 이므로 $c\ne 0$ 이면 교점이 $(\pm\sqrt c:0:1)$ 둘이고, $c=0$ 이면 $(0:0:1)$ 하나뿐이다. Bézout 정리가 말하는 $1\cdot 2=2$ 를 $c=0$ 에서도 맞추려면 $c=0$ 의 교점을 두 번 세야 한다.
 
 두 번 세는 근거는 교점에서의 국소적인 셈에서 나온다. 아핀 조각 $z=1$ 에서 원점 근처의 다항식 함수를 두 방정식 $y$ 와 $y-x^2$ 으로 나누면 $k\lbrack x\rbrack/(x^2)$ 이 남고, 이것은 $k$ 위에서 $1$ 과 $x$ 를 기저로 하는 $2$ 차원 공간이다. $c\ne 0$ 이면 각 교점에서 같은 계산이 $1$ 차원 공간을 준다. 이 차원을 교점의 중복도로 삼으면 $c$ 가 어떤 값이든 합이 $2$ 다.
 
@@ -44,7 +40,9 @@ $$
 i(Z;V\cdot W)=\sum_{j\ge 0}(-1)^j\thinspace\mathrm{length}\_{\mathcal O}\thinspace\mathrm{Tor}^{\mathcal O}\_j(\mathcal O/I\_V,\thinspace\mathcal O/I\_W)
 $$
 
-다(Serre 의 Tor 공식, Serre's Tor formula)[^1]. $\mathrm{Tor}$ 는 [유도 함자](derived-functors.md)이고, $\mathrm{length}$ 는 합성열의 길이다. $\mathcal O/I\_V$ 와 $\mathcal O/I\_W$ 가 [Cohen–Macaulay 환](cohen-macaulay-rings.md)이면 $j\ge 1$ 의 항이 모두 $0$ 이어서 $i(Z;V\cdot W)=\mathrm{length}\thinspace\mathcal O/(I\_V+I\_W)$ 이고, 직관 절의 계산이 이것이다.
+다(Serre 의 Tor 공식, Serre's Tor formula)[^1]. $\mathrm{Tor}$ 는 [유도 함자](derived-functors.md)이고, $\mathrm{length}$ 는 합성열의 길이다.
+
+직관 절에서 $c=0$ 이면 $V=\lbrace y=0\rbrace$, $W=\lbrace y=x^2\rbrace$, $Z$ 는 원점이다. $j=0$ 항은 $\mathcal O/(y,\thinspace y-x^2)\cong k\lbrack x\rbrack/(x^2)$ 의 길이 $2$ 다. $\mathcal O/(y-x^2)$ 는 길이 $1$ 의 자유 분해 $0\to\mathcal O\xrightarrow{y-x^2}\mathcal O$ 를 갖고, $y-x^2$ 이 $\mathcal O/(y)$ 의 영인자가 아니므로 $j\ge1$ 항은 $0$ 이고, $i(Z;V\cdot W)=2$ 다.
 
 ## Chow 환
 
@@ -54,9 +52,17 @@ $$
 \lbrack V\rbrack\cdot\lbrack W\rbrack=\sum_Z i(Z;V\cdot W)\thinspace\lbrack Z\rbrack
 $$
 
-로 곱을 정한다. 그렇게 만나지 않는 쌍은 한쪽을 유리 동치인 사이클로 옮긴 뒤 곱한다. 결과의 류가 옮기는 방법과 무관하다는 것이 이동 보조정리(moving lemma)다[^2]. 이 곱으로 $A^\ast(X)=\bigoplus\_r A^r(X)$ 는 가환 등급환이 되고, 이것을 **Chow 환** 이라 한다.
+로 곱을 정한다. 그렇게 만나지 않는 쌍은 한쪽을 유리 동치인 사이클로 옮긴 뒤 곱한다. 이 곱을 준 $A^\ast(X)=\bigoplus\_r A^r(X)$ 를 **Chow 환(Chow ring)** 이라 한다.
+
+$\mathbb P^2$ 에서 서로 다른 두 직선은 한 점에서 횡단으로 만나므로 직선의 류 $H$ 에 대해 $H\cdot H$ 는 한 점의 류다.
 
 # 성질
+
+## 이동 보조정리
+
+$X$ 가 매끄러운 준사영 다양체이면 위 곱의 류는 사이클을 옮기는 방법과 무관하고, $A^\ast(X)$ 는 가환 등급환이다. 이것이 이동 보조정리(moving lemma)다[^2].
+
+$\mathcal O/I\_V$ 와 $\mathcal O/I\_W$ 가 [Cohen–Macaulay 환](cohen-macaulay-rings.md)이면 Tor 공식의 $j\ge 1$ 항이 모두 $0$ 이어서 $i(Z;V\cdot W)=\mathrm{length}\thinspace\mathcal O/(I\_V+I\_W)$ 이다.
 
 ## 사영공간과 Bézout 정리
 
@@ -84,7 +90,7 @@ $$
 \mathrm{cl}:A^r(X)\to H^{2r}(X;\mathbb Z)
 $$
 
-은 환 준동형이다[^2]. 차원의 합이 $\dim X$ 인 두 부분다양체의 교차수는 위상적 교차수와 같다. 복소 부분다양체의 횡단 교점에서는 방향이 항상 맞으므로 모든 교점이 $+1$ 을 더한다.
+은 [코호몰로지](cohomology.md) 환으로 가는 환 준동형이고, 교차가 컵곱으로 간다[^2]. 차원의 합이 $\dim X$ 인 두 부분다양체의 교차수는 [횡단성](transversality.md)으로 정의한 위상적 교차수와 같다. 복소 부분다양체의 횡단 교점에서는 방향이 항상 맞으므로 모든 교점이 $+1$ 을 더한다.
 
 $\mathrm{cl}$ 은 동형이 아닐 수 있다. 종수 $1$ 이상의 곡선에서 $A^1$ 의 차수 $0$ 부분은 [Jacobi 다양체](jacobian-variety.md)의 점들이고 무한군이지만 그것이 가는 $H^2$ 의 원소는 $0$ 이다.
 
