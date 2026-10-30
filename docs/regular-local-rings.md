@@ -6,6 +6,10 @@
 
 # 직관
 
+평면 곡선 $y^2=x^3$ 은 원점에서 뾰족하고 $y=x^2$ 은 그렇지 않은데, 편미분으로 이 차이를 판정하면 결과가 곡선을 평면에 넣은 방정식에 달려 있다. 정칙 국소환은 곡선 위의 함수만으로 원점의 극대 아이디얼의 최소 생성원 개수를 세어, 그 수가 [Krull 차원](krull-dimension.md)과 같은지로 판정한다.
+
+# 직관
+
 정칙 국소환은 극대 아이디얼의 최소 생성원 개수가 Krull 차원과 같은 Noether 국소환이다. Krull 차원은 Noether 국소환 $(R,\mathfrak m)$ 에서 $\dim R\le\dim_\kappa\mathfrak m/\mathfrak m^2$ 을 준다. 오른쪽은 $\mathfrak m$ 의 최소 생성원 개수이고, 기하에서는 접공간의 차원이다.
 
 대수다양체의 매끄러운 점에서 국소환이 이 조건을 만족한다. 정칙성은 잉여체의 자유분해 길이로도 읽히고, 그 형태에서 유일분해정역이라는 결론이 나온다.
@@ -24,19 +28,23 @@ $$
 \dim R=\dim_\kappa\mathfrak m/\mathfrak m^2
 $$
 
-이면 $R$ 을 **정칙 국소환**이라 한다.
+이면 $R$ 을 **정칙 국소환(regular local ring)** 이라 한다.
 
-[Nakayama 보조정리](nakayama-lemma.md)로 $\dim_\kappa\mathfrak m/\mathfrak m^2$ 은 $\mathfrak m$ 의 최소 생성원 개수와 같고, 차원 정리로 이 개수가 $\dim R$ 이상이다. 그러므로 정칙성은 $\mathfrak m$ 이 $\dim R$ 개의 원소로 생성된다는 조건이다.
+직관 절의 포물선 $B$ 를 원점의 극대 아이디얼에서 국소화한 환은 차원이 $1$ 이고 $\dim_k\mathfrak m/\mathfrak m^2=1$ 이라 정칙 국소환이다. 뾰족한 곡선 $A$ 를 같은 자리에서 국소화한 환은 차원이 $1$ 이지만 $\dim_k\mathfrak m/\mathfrak m^2=2$ 라 정칙 국소환이 아니다.
 
 ## 정칙 매개변수계
 
-$d=\dim R$ 일 때 $\mathfrak m=(x_1,\dots,x_d)$ 를 만족하는 열 $x_1,\dots,x_d$ 를 **정칙 매개변수계**라 한다. 정칙 국소환에서만 존재한다.
+$d=\dim R$ 일 때 $\mathfrak m=(x_1,\dots,x_d)$ 를 만족하는 열 $x_1,\dots,x_d$ 를 **정칙 매개변수계(regular system of parameters)** 라 한다. 포물선의 국소환에서는 $y=x^2\in(x)$ 이므로 $\mathfrak m=(x)$ 이고 $x$ 하나가 정칙 매개변수계다.
 
 ## 정칙환
 
-[Noether 환](noetherian-rings.md) $R$ 의 모든 소 아이디얼 $\mathfrak p$ 에서 국소화 $R_\mathfrak p$ 가 정칙 국소환이면 $R$ 을 **정칙환**이라 한다. 체 위의 다항식환과 $\mathbb Z$ 가 정칙환이다.
+[Noether 환](noetherian-rings.md) $R$ 의 모든 소 아이디얼 $\mathfrak p$ 에서 국소화 $R_\mathfrak p$ 가 정칙 국소환이면 $R$ 을 **정칙환(regular ring)** 이라 한다. 체 위의 다항식환과 $\mathbb Z$ 가 정칙환이다.
 
 # 성질
+
+## 극대 아이디얼의 생성원
+
+[Nakayama 보조정리](nakayama-lemma.md)로 $\dim_\kappa\mathfrak m/\mathfrak m^2$ 은 $\mathfrak m$ 의 최소 생성원 개수와 같고, Krull 차원의 차원 정리(dimension theorem)로 이 개수가 $\dim R$ 이상이다. 그러므로 정칙성은 $\mathfrak m$ 이 $\dim R$ 개의 원소로 생성된다는 조건이고, 정칙 매개변수계는 정칙 국소환에서만 존재한다.
 
 ## 정역
 
