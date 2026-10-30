@@ -6,14 +6,10 @@
 
 # 직관
 
-완전교차환은 완비화가 정칙 국소환을 정칙열로 나눈 몫인 Noether 국소환이다. 정칙 국소환보다 넓고 Gorenstein 환보다 좁은 부류이며, 자유분해가 Koszul 복합체로 주어지므로 호몰로지 불변량이 생성원의 개수만으로 계산된다.
-
-Betti 수의 증가 속도가 이 부류를 특징짓는다. 정칙환에서는 Betti 수가 유한 단계에서 끊기고, 완전교차환에서는 다항식 규모로 자라며, 그렇지 않은 환에서는 지수 규모로 자라는 가군이 있다.
-
-정칙 국소환 $A$ 에서 원소 하나로 나눈 몫 $A/(f)$ 의 자유분해를 구한다. $f$ 가 영인자가 아니므로 다음이 완전열이다.
+[정칙 국소환](regular-local-rings.md) $A$ 에서 원소 하나로 나눈 몫 $A/(f)$ 의 자유분해를 구한다. $f$ 가 영인자가 아니므로 다음이 완전열이다.
 
 $$
-0\to A\xrightarrow{\ f\ }A\to A/(f)\to 0
+0\to A\xrightarrow{f}A\to A/(f)\to 0
 $$
 
 분해의 길이가 $1$ 이고 각 항의 순위가 $1$ 이다. 원소 둘로 나눈 $A/(f_1,f_2)$ 에서는 관계를 하나 더 찾아야 한다. $f_1\cdot f_2-f_2\cdot f_1=0$ 이라는 관계가 있고, $f_1,f_2$ 가 정칙열이면 관계는 이것뿐이다. 그래서 분해가 순위 $1,2,1$ 로 끝난다.
@@ -22,21 +18,25 @@ $$
 
 # 정의
 
-$(R,\mathfrak m)$ 를 Noether 국소환, $\widehat R$ 를 $\mathfrak m$ 진 완비화라 한다. $R$ 가 **완전교차환**(complete intersection ring)이라 함은 정칙 국소환 $A$ 와 $A$ 정칙열 $f_1,\dots,f_c$ 가 있어 다음이 성립하는 것이다.
+$(R,\mathfrak m)$ 를 Noether 국소환, $\widehat R$ 를 $\mathfrak m$ 진 완비화라 한다. $R$ 가 **완전교차환(complete intersection ring)** 이라 함은 정칙 국소환 $A$ 와 $A$ 정칙열 $f_1,\dots,f_c$ 가 있어 다음이 성립하는 것이다.
 
 $$
 \widehat R\cong A/(f_1,\dots,f_c)
 $$
 
-$c$ 는 $A$ 의 선택에 의존하지 않고 $\dim A-\dim R$ 와 같으며, 이 값을 $R$ 의 **여차원**이라 한다.
+$\dim A-\dim R$ 를 $R$ 의 **여차원(codimension)** 이라 한다.
 
-완비화를 거치는 이유는 Cohen 구조정리다. 완비 Noether 국소환은 정칙 국소환의 몫으로 쓸 수 있지만 완비화하지 않은 국소환은 그렇지 않을 수 있다.
+$R=k\lbrack\lbrack x,y\rbrack\rbrack/(xy)$ 는 이미 완비이고, $A=k\lbrack\lbrack x,y\rbrack\rbrack$ 에서 $xy$ 가 영인자가 아니므로 여차원 $1$ 인 완전교차환이다. $k\lbrack\lbrack x,y\rbrack\rbrack/(x^2,xy)$ 는 $\mathfrak m$ 의 모든 원소가 영인자여서 깊이가 $0$ 이고, 성질 절의 포함 관계에 따라 완전교차환이 아니다.
 
 ## 등급 완전교차
 
-등급환 $S=k\lbrack x_0,\dots,x_n\rbrack$ 와 동차 정칙열 $f_1,\dots,f_c$ 에 대해 $S/(f_1,\dots,f_c)$ 를 등급 완전교차라 한다. 사영공간에서 여차원 $c$ 인 부분다양체가 동차식 $c$ 개의 공통 영점집합인 경우가 이것이고, [집합론적 완전교차](set-theoretic-complete-intersection.md)는 아이디얼이 아니라 영점집합만 일치하면 되는 약한 조건이다.
+등급환 $S=k\lbrack x_0,\dots,x_n\rbrack$ 와 동차 정칙열 $f_1,\dots,f_c$ 에 대해 $S/(f_1,\dots,f_c)$ 를 **등급 완전교차(graded complete intersection)** 라 한다. $\mathbb P^2$ 의 원뿔곡선 $xz=y^2$ 의 좌표환 $k\lbrack x,y,z\rbrack/(xz-y^2)$ 가 $c=1$ 인 예다. 사영공간에서 여차원 $c$ 인 부분다양체가 동차식 $c$ 개의 공통 영점집합인 경우가 이것이고, [집합론적 완전교차](set-theoretic-complete-intersection.md)는 아이디얼이 아니라 영점집합만 일치하면 되는 약한 조건이다.
 
 # 성질
+
+## 여차원과 완비화
+
+$c$ 는 $A$ 의 선택에 의존하지 않고 $\dim A-\dim R$ 와 같다. 정의가 완비화를 거치는 것은 Cohen 구조정리(Cohen structure theorem) 때문이다. 완비 Noether 국소환은 정칙 국소환의 몫으로 쓸 수 있지만 완비화하지 않은 국소환은 그렇지 않을 수 있다.
 
 ## 부류의 포함 관계
 
