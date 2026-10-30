@@ -6,54 +6,36 @@
 
 # 직관
 
-[유한 단순군 분류](finite-simple-groups.md)와 **확대 문제**가 유한군론의 두 축이다.
+위수 $4$ 인 군 $\mathbb Z/4$ 와 $\mathbb Z/2\times\mathbb Z/2$ 는 둘 다 원소가 둘인 정규부분군 $A$ 를 갖고, $A$ 로 나눈 몫도 원소가 둘이다. 원소가 둘인 군 위에 원소가 둘인 군을 쌓았다는 점은 같지만 두 군은 동형이 아니다. $\mathbb Z/4$ 에는 위수가 $4$ 인 원소 $1$ 이 있고 $\mathbb Z/2\times\mathbb Z/2$ 에는 없다.
 
-Jordan–Hölder 정리는 유한군 $G$ 의 합성인자가 유일하게 정해진다고 진술한다. 역은 성립하지 않고, 합성인자가 $\mathbb Z/2,\mathbb Z/2$ 인 군은 둘이다.
+차이를 계산으로 본다. $\mathbb Z/4$ 에서 $A=\lbrace 0,2\rbrace$ 로 두고, 몫의 두 원소 $0,1$ 마다 대표원 $s(0)=0$, $s(1)=1$ 을 고른다. $s(1)+s(1)=2$ 인데 $s(1+1)=s(0)=0$ 이므로 두 값이 $2\in A$ 만큼 어긋난다. 대표원을 $s(1)=3$ 으로 바꿔도 $3+3=2$ 여서 어긋남이 남는다. $\mathbb Z/2\times\mathbb Z/2$ 에서 $A=\lbrace(0,0),(1,0)\rbrace$ 로 두고 $s(1)=(0,1)$ 을 고르면 $s(1)+s(1)=(0,0)$ 이어서 어긋남이 없다.
 
-$$
-\mathbb Z/4\qquad\text{와}\qquad \mathbb Z/2\times\mathbb Z/2
-$$
-
-조각은 같고 붙이는 방식이 다르므로, 어떤 조각이 있는가와 조각을 어떻게 붙이는가가 별개의 문제다.
-
-두 번째 문제를 다루는 것이 군 확대다. 정규부분군 $N$ 과 몫 $Q$ 에 대해 짧은 완전열
-
-$$
-1\to N\to G\to Q\to1
-$$
-
-을 만드는 $G$ 를 모두 찾는다. $N$ 이 가환이면 확대의 동치류가 코호몰로지군 $H^2(Q,N)$ 의 원소와 일대일 대응하고, 군을 짓는 조합 문제가 호몰로지 대수의 계산이 된다.
-
-$\mathbb Z/4$ 와 $\mathbb Z/2\times\mathbb Z/2$ 는 합성인자가 같으므로 조각만으로는 군이 정해지지 않고, 붙이는 방식을 재는 양이 따로 있어야 한다. $\mathbb Z/4$ 에서 $A=\lbrace 0,2\rbrace$ 와 몫 $\mathbb Z/2$ 를 잡고 대표원으로 $s(0)=0$ , $s(1)=1$ 을 고르면 $s(1)+s(1)=2$ 인데 $s(1+1)=s(0)=0$ 이라 두 값이 $2\in A$ 만큼 어긋난다. 어떤 대표원을 골라도 이 차이를 $0$ 으로 만들 수 없고, $\mathbb Z/2\times\mathbb Z/2$ 에서는 차이가 $0$ 인 대표원이 있다.
-
-확대 $1\to A\to G\to Q\to1$ 에서 대표원 $s(q)$ 를 고르면 $s(q_1)s(q_2)$ 와 $s(q_1q_2)$ 의 차이가 $A$ 의 원소 $f(q_1,q_2)$ 이고, 이것이 $s$ 가 준동형이 되지 못한 정도를 잰다. $G$ 의 결합법칙이 $f$ 에 조건을 주고 대표원을 바꾸면 $f$ 가 정해진 만큼만 바뀌므로 $f$ 의 동치류가 확대를 분류한다. 그 동치류의 집합이 $H^2(Q,A)$ 다.
+아래의 군 $A$ 와 위의 몫이 같아도, 대표원끼리 더할 때 $A$ 에 남는 어긋남이 두 군을 가른다. [유한 단순군 분류](finite-simple-groups.md)가 조각이 될 수 있는 단순군을 모두 적으므로, 유한군을 아는 데 남는 일은 조각을 붙이는 방식을 아는 것이다. 정규부분군과 몫으로 전체 군을 짓는 것을 확대, 대표원의 어긋남을 적은 함수를 인자집합이라 한다.
 
 # 정의
 
-## 합성열과 확대
+## 확대
 
-부분정규열 $1=G_0\triangleleft G_1\triangleleft\cdots\triangleleft G_k=G$ 에서 모든 몫 $G_{i+1}/G_i$ 가 단순이면 **합성열**이고, 그 몫들을 **합성인자**라 한다.
+군 $N,Q$ 에 대한 **확대(extension)** 는 짧은 완전열 $1\to N\xrightarrow{\iota}G\xrightarrow{\pi}Q\to1$ 이다. 곧 $\iota$ 는 단사, $\pi$ 는 전사이고 $\iota(N)=\ker\pi$ 다. 두 확대 $G$, $G'$ 가 **동치(equivalent)** 라는 것은 $N$ 과 $Q$ 위에서 항등인 동형 $G\to G'$ 가 있다는 뜻이다.
 
-군 $N,Q$ 에 대한 **확대**는 짧은 완전열 $1\to N\xrightarrow{\iota}G\xrightarrow{\pi}Q\to1$ 이다. 두 확대가 **동치**라는 것은 $N$ 과 $Q$ 위에서 항등인 동형 $G\to G'$ 가 있다는 뜻이다.
+- $\pi\circ s$ 가 항등인 준동형 $s:Q\to G$ 가 있으면 **분할 확대(split extension)** 라 한다.
+- $\iota(N)$ 이 $G$ 의 중심에 들어 있으면 **중심확대(central extension)** 라 한다.
 
-- $\pi$ 에 대한 준동형 절단 $s:Q\to G$ 가 있으면 **분할 확대**이고 $G\cong N\rtimes Q$ 다.
-- $\iota(N)\subset Z(G)$ 이면 **중심확대**다. 이때 $N$ 은 자동으로 가환이고 $Q$ 의 작용이 자명하다.
+직관 절의 두 군은 $N=Q=\mathbb Z/2$ 인 확대다. $\mathbb Z/2\times\mathbb Z/2$ 는 $s(1)=(0,1)$ 이 준동형이어서 분할 확대이고, $\mathbb Z/4$ 는 어느 대표원도 준동형이 아니어서 분할 확대가 아니다. 두 군 모두 가환이므로 중심확대다.
+
+## 합성열
+
+부분정규열 $1=G_0\triangleleft G_1\triangleleft\cdots\triangleleft G_k=G$ 에서 모든 몫 $G_{i+1}/G_i$ 가 단순군이면 **합성열(composition series)** 이고, 그 몫들을 **합성인자(composition factor)** 라 한다. $1\triangleleft\lbrace 0,2\rbrace\triangleleft\mathbb Z/4$ 는 합성열이고 합성인자는 $\mathbb Z/2$, $\mathbb Z/2$ 다. $\mathbb Z/2\times\mathbb Z/2$ 의 합성인자도 $\mathbb Z/2$, $\mathbb Z/2$ 다.
 
 ## 인자집합
 
-확대 $1\to A\to G\to Q\to1$ 에서 $A$ 가 가환이라 하자. 각 $q\in Q$ 마다 대표원 $s(q)\in G$ 를 고르면 $s$ 는 일반적으로 준동형이 아니다.
+확대 $1\to A\to G\to Q\to1$ 에서 $A$ 가 가환이라 하자. 각 $q\in Q$ 마다 대표원 $s(q)\in G$ 를 고르면 다음 식으로 함수 $f:Q\times Q\to A$ 가 정해진다.
 
 $$
 s(q_1)s(q_2)=f(q_1,q_2)\thinspace s(q_1q_2),\qquad f(q_1,q_2)\in A
 $$
 
-이 $f$ 를 **인자집합** 또는 2-코사이클이라 한다. $G$ 의 결합법칙을 세 원소에 적용하면 $f$ 가 다음을 만족한다.
-
-$$
-f(q_1,q_2)+f(q_1q_2,q_3)=q_1\negthinspace\cdot\negthinspace f(q_2,q_3)+f(q_1,q_2q_3)
-$$
-
-대표원을 다르게 고르면 $f$ 가 2-코바운더리만큼 바뀌므로 $f$ 가 정하는 것은 $H^2(Q,A)$ 의 원소다. 영원소가 분할 확대, 곧 반직접곱 $G=A\rtimes Q$ 다.
+이 $f$ 를 **인자집합(factor set)** 또는 2-코사이클(2-cocycle)이라 한다. 직관 절의 $\mathbb Z/4$ 에서 $f(1,1)=2$ 이고 나머지 값은 $0$ 이다.
 
 ## 군 코호몰로지의 낮은 차수
 
@@ -64,7 +46,25 @@ C^n(Q,A)=\lbrace f:Q^n\to A\rbrace,\qquad
 (\delta f)(q_1,\dots,q_{n+1})=q_1\negthinspace\cdot\negthinspace f(q_2,\dots)+\sum(-1)^if(\dots)+(-1)^{n+1}f(\dots)
 $$
 
-로 사슬복합체를 만들고 $H^n(Q,A)=\ker\delta^n/\mathrm{im}\delta^{n-1}$ 로 둔다. [호몰로지](homology.md)의 사슬복합체와 같은 꼴이다. 낮은 차수의 뜻이 구체적이다.
+로 사슬복합체를 만들고 $H^n(Q,A)=\ker\delta^n/\mathrm{im}\delta^{n-1}$ 을 [군 코호몰로지](group-cohomology.md)라 한다. [호몰로지](homology.md)의 사슬복합체와 같은 꼴이다.
+
+# 성질
+
+## 분할 확대와 중심확대
+
+분할 확대에서는 $Q$ 가 $s$ 를 통해 $N$ 에 켤레로 작용하고 $G\cong N\rtimes Q$ 다. 중심확대에서는 $N$ 이 중심에 들어 있으므로 가환이고, $Q$ 의 $N$ 위 작용이 자명하다.
+
+## 코사이클 조건
+
+$G$ 의 결합법칙을 세 원소에 적용하면 인자집합 $f$ 가 다음을 만족한다.
+
+$$
+f(q_1,q_2)+f(q_1q_2,q_3)=q_1\negthinspace\cdot\negthinspace f(q_2,q_3)+f(q_1,q_2q_3)
+$$
+
+대표원을 다르게 고르면 $f$ 가 2-코바운더리만큼 바뀌므로 $f$ 가 정하는 것은 $H^2(Q,A)$ 의 원소다. 영원소가 분할 확대, 곧 반직접곱 $G=A\rtimes Q$ 다.
+
+## 낮은 차수의 뜻
 
 | 차수 | 뜻 |
 |---|---|
@@ -73,13 +73,11 @@ $$
 | $H^2(Q,A)$ | $A$ 에 의한 $Q$ 의 확대의 동치류 |
 | $H^3(Q,A)$ | 비가환 핵을 갖는 확대의 장애 |
 
-# 성질
-
 ## Jordan–Hölder 정리
 
 > **정리.** 유한군의 두 합성열은 동형이고, 합성인자는 순서를 빼면 유일하게 정해진다.
 
-증명은 Zassenhaus 의 **나비 보조정리**에서 시작한다. 두 부분군 쌍 $(A\triangleleft A^\ast)$ 와 $(B\triangleleft B^\ast)$ 에 대해 다음이 성립한다.
+증명은 Zassenhaus 의 **나비 보조정리(butterfly lemma)** 에서 시작한다. 두 부분군 쌍 $(A\triangleleft A^\ast)$ 와 $(B\triangleleft B^\ast)$ 에 대해 다음이 성립한다.
 
 $$
 \frac{A(A^\ast\cap B^\ast)}{A(A^\ast\cap B)}\ \cong\ \frac{B(A^\ast\cap B^\ast)}{B(A\cap B^\ast)}
