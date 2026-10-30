@@ -6,8 +6,6 @@
 
 # 직관
 
-소거는 [행렬 분해](matrix-factorizations.md)의 한 단계이고, [행렬식](determinants.md), 가역성, 양의 정부호성이 원래 행렬과 Schur 보수 사이에서 곱이나 합으로 갈라진다.
-
 미지수를 두 덩이로 나눈 선형계를 푼다.
 
 $$
@@ -30,9 +28,15 @@ $$
 M=\begin{pmatrix}A&B\cr C&D\end{pmatrix}
 $$
 
-$A$ 가 가역일 때 $M/A=D-CA^{-1}B$ 를 $A$ 에 대한 $M$ 의 **Schur 보수**라 한다. $D$ 가 가역이면 $M/D=A-BD^{-1}C$ 로 같은 정의를 반대쪽에 쓴다.
+$A$ 가 가역일 때 $M/A=D-CA^{-1}B$ 를 $A$ 에 대한 $M$ 의 **Schur 보수(Schur complement)** 라 한다. $D$ 가 가역이면 $M/D=A-BD^{-1}C$ 로 같은 정의를 반대쪽에 쓴다.
 
-직관 절의 소거를 행렬로 적으면 블록 분해가 된다.
+$M=\begin{pmatrix}2&1\cr 1&3\end{pmatrix}$ 에서 $A=2$ 이면 $M/A=3-1\cdot\tfrac12\cdot1=\tfrac52$ 다. $Mx=(f,g)$ 에서 $x\_1$ 을 소거하면 $\tfrac52 x\_2=g-\tfrac12 f$ 가 남는다.
+
+# 성질
+
+## 블록 분해
+
+직관 절의 소거를 행렬로 적으면 다음 블록 분해가 된다. 이 분해는 [행렬 분해](matrix-factorizations.md)의 한 단계다.
 
 $$
 M=\begin{pmatrix}I&0\cr CA^{-1}&I\end{pmatrix}\begin{pmatrix}A&0\cr 0&M/A\end{pmatrix}\begin{pmatrix}I&A^{-1}B\cr 0&I\end{pmatrix}
@@ -40,11 +44,9 @@ $$
 
 양 끝의 두 행렬은 대각 성분이 모두 $1$ 인 삼각행렬이다.
 
-# 성질
-
 ## 행렬식
 
-블록 분해에서 양 끝의 행렬식이 $1$ 이므로
+블록 분해에서 양 끝의 [행렬식](determinants.md)이 $1$ 이므로
 
 $$
 \det M=\det A\cdot\det(M/A)
