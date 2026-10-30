@@ -6,10 +6,6 @@
 
 # 직관
 
-Burnside 보조정리는 [군 작용](group-actions.md)의 궤도 개수를 각 군 원소가 고정하는 점의 개수의 평균으로 준다. 대칭으로 같다고 보는 배치가 몇 가지인지를 배치를 직접 분류하지 않고 세는 방법이다.
-
-Cauchy 와 Frobenius 가 먼저 썼고 Burnside 의 교과서를 통해 퍼져서 Cauchy–Frobenius 보조정리라고도 한다.
-
 구슬 $4$ 개를 원형으로 꿴 목걸이를 검정과 흰색 두 가지로 칠한다. 회전해서 같아지는 것을 같은 목걸이로 볼 때, 칠하는 방법 $2^4=16$ 가지를 회전 $0^\circ,90^\circ,180^\circ,270^\circ$ 네 가지로 나누어 $4$ 가지라고 답하기 쉽다. 직접 세어 보면 $6$ 가지로, 검정 $0$ 개가 한 가지, $1$ 개가 한 가지, $2$ 개가 두 가지(이웃한 것과 마주 본 것), $3$ 개가 한 가지, $4$ 개가 한 가지다. 검정과 흰색이 번갈아 놓인 배치는 $180^\circ$ 회전으로 자기 자신이 되어 회전 네 개가 서로 다른 배치를 두 개만 주므로, 배치마다 옮겨지는 개수가 달라 나눗셈이 틀린다.
 
 자기 자신으로 가는 경우를 빼지 말고 아예 함께 센다. 회전마다 그 회전으로 변하지 않는 배치의 수를 세면 $0^\circ$ 는 $16$ 개 전부, $90^\circ$ 와 $270^\circ$ 는 네 구슬이 모두 같은 색인 $2$ 개, $180^\circ$ 는 마주 본 구슬끼리 같은 색인 $4$ 개다. 자기 자신으로 가는 횟수가 많은 배치일수록 나눗셈에서 덜 세어졌으므로, 고정되는 횟수를 더해 주면 그 차이가 정확히 메워진다. 네 수의 평균이 직접 센 값과 같다.
@@ -28,7 +24,9 @@ $$
 \mathrm{Fix}(g)=\lbrace x\in X: g\cdot x=x\rbrace
 $$
 
-를 $g$ 의 **고정점 집합**이라 한다. $x\in X$ 의 **안정자**는 $\mathrm{Stab}(x)=\lbrace g\in G: g\cdot x=x\rbrace$ 이고, **궤도**는 $Gx=\lbrace g\cdot x: g\in G\rbrace$ 다. 궤도들의 집합을 $X/G$ 로 쓴다.
+를 $g$ 의 **고정점 집합(fixed-point set)** 이라 한다. 직관 절의 목걸이에서 $\mathrm{Fix}(180^\circ)$ 는 마주 본 구슬끼리 같은 색인 칠하기 넷이고, $\mathrm{Fix}(90^\circ)$ 는 네 구슬이 모두 같은 색인 칠하기 둘이다.
+
+$x$ 의 안정자 $\mathrm{Stab}(x)$, 궤도 $Gx=\mathrm{Orb}(x)$, 궤도 전체의 집합 $X/G$ 는 [군 작용](group-actions.md)에서 정의한 것이다. 목걸이에서 $X/G$ 의 원소는 서로 다른 목걸이 여섯이다.
 
 # 성질
 
@@ -39,6 +37,8 @@ $$
 $$
 \lvert X/G\rvert=\frac1{\lvert G\rvert}\sum_{g\in G}\lvert\mathrm{Fix}(g)\rvert
 $$
+
+Cauchy 와 Frobenius 가 먼저 썼고 Burnside 의 교과서로 널리 알려져 Cauchy–Frobenius 보조정리(Cauchy–Frobenius lemma)라고도 한다.
 
 **증명.** 집합 $S=\lbrace(g,x)\in G\times X: g\cdot x=x\rbrace$ 를 두 방향으로 센다. $g$ 를 먼저 고정하면 $\lvert S\rvert=\sum_{g}\lvert\mathrm{Fix}(g)\rvert$ 이고, $x$ 를 먼저 고정하면 $\lvert S\rvert=\sum_{x}\lvert\mathrm{Stab}(x)\rvert$ 다.
 
