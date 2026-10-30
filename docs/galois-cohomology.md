@@ -6,47 +6,57 @@
 
 # 직관
 
-Galois 코호몰로지는 체 $K$ 의 절대 Galois 군 $G_K=\mathrm{Gal}(K^{\mathrm{sep}}/K)$ 와 그 군이 작용하는 가환군 $A$ 에 대한 [군 코호몰로지](group-cohomology.md) $H^n(K,A)=H^n(G_K,A)$ 다. 코사슬을 연속 함수로 제한해 정의한다.
+[Kummer 이론](kummer-theory.md)은 $1$ 의 원시 $n$ 제곱근을 포함하는 체 $K$ 에서 지수 $n$ 아벨 확대를 $K^{\times}/(K^{\times})^{n}$ 의 부분군으로 분류한다. $K=\mathbb Q(i)$, $n=2$ 에서 제곱류 $a$ 마다 확대 $K(\sqrt a)$ 가 하나씩 있고, 확대 $L$ 하나마다 Galois 군 $\mathrm{Gal}(L/K)$ 가 따로 있다. 모든 $a$ 를 한 군으로 다루려면 $\sqrt a$ 를 전부 포함하는 체가 있어야 하고, 그런 체는 $K$ 의 유한 확대가 아니다.
 
-$A=\mu_n$ 에서 차수 $1$ 이 [Kummer 이론](kummer-theory.md)의 군 $K^{\times}/(K^{\times})^{n}$ 이 되고, 차수 $2$ 가 [Brauer 군](brauer-groups.md)의 $n$ 비틀림이 된다. 비가환 계수의 차수 $1$ 은 $K$ 위의 대수적 대상의 형식(form)을 분류한다.
+$K$ 의 분리 대수적 원소를 전부 모은 체 $K^{\mathrm{sep}}$ 에서 $K$ 를 고정하는 자기동형 전체를 $G_K$ 라 하면 $\sigma\in G_K$ 마다 $\chi_a(\sigma)=\sigma(\sqrt a)/\sqrt a\in\lbrace\pm1\rbrace$ 가 정해지고, $a\mapsto\chi_a$ 가 $K^{\times}/(K^{\times})^{2}$ 에서 준동형 $G_K\to\lbrace\pm1\rbrace$ 의 군으로 가는 단사다. $\chi_a(\sigma)$ 는 $\sigma$ 가 유한 확대 $K(\sqrt a)$ 에서 하는 작용만으로 정해진다. $G_K$ 는 무한군이어서 이 조건이 없는 준동형도 있고, 그런 준동형은 어느 확대에서도 오지 않는다.
 
-Kummer 이론은 $1$ 의 원시 $n$ 제곱근을 포함하는 체 $K$ 에서 지수 $n$ 아벨 확대를 $K^{\times}/(K^{\times})^{n}$ 의 부분군으로 분류한다. $K=\mathbb Q(i)$, $n=2$ 에서 제곱류 $a$ 마다 확대 $K(\sqrt a)$ 가 하나씩 있고, 확대 $L$ 하나마다 Galois 군 $\mathrm{Gal}(L/K)$ 가 따로 있다. 모든 $a$ 를 한 군으로 다루려면 $\sqrt a$ 를 전부 포함하는 체가 있어야 하고, 그런 체는 $K$ 의 유한 확대가 아니다.
-
-$K$ 의 분리 대수적 원소를 전부 모은 $K^{\mathrm{sep}}$ 를 쓰면 $\sigma\in G_K$ 마다 $\chi_a(\sigma)=\sigma(\sqrt a)/\sqrt a\in\lbrace\pm1\rbrace$ 가 정해지고, $a\mapsto\chi_a$ 가 $K^{\times}/(K^{\times})^{2}$ 에서 준동형 $G_K\to\lbrace\pm1\rbrace$ 의 군으로 가는 단사다. $\chi_a(\sigma)$ 는 $\sigma$ 가 유한 확대 $K(\sqrt a)$ 에서 하는 작용만으로 정해진다. $G_K$ 는 무한군이어서 이 조건이 없는 준동형도 있고, 그런 준동형은 어느 확대에서도 오지 않는다.
-
-그래서 값이 어떤 유한 확대 위의 작용만으로 정해지는 함수만 쓴다. 이 함수가 아래 위상에서 연속인 함수이고, 그렇게 고르면 Kummer 의 대응이 $\mathrm{Hom}\_{\mathrm{cont}}(G_K,\mu_n)\cong K^{\times}/(K^{\times})^{n}$ 으로 적힌다. 같은 함수로 군 코호몰로지의 코사슬을 만들면 작용이 자명한 $\mu_n$ 에서 $H^1$ 이 연속 준동형의 군이므로, 위 식이 $H^1(K,\mu_n)\cong K^{\times}/(K^{\times})^{n}$ 이다.
+그래서 값이 어떤 유한 확대 위의 작용만으로 정해지는 함수만 쓴다. 이 함수가 아래 위상에서 연속인 함수이고, 그렇게 고르면 Kummer 의 대응이 $\mathrm{Hom}\_{\mathrm{cont}}(G_K,\mu_n)\cong K^{\times}/(K^{\times})^{n}$ 으로 적힌다. 같은 함수로 [군 코호몰로지](group-cohomology.md)의 코사슬을 만들면 작용이 자명한 $\mu_n$ 에서 $H^1$ 이 연속 준동형의 군이므로, 위 식이 $H^1(K,\mu_n)\cong K^{\times}/(K^{\times})^{n}$ 이다.
 
 # 정의
 
+## 절대 Galois 군
+
+**분리 폐포(separable closure)** $K^{\mathrm{sep}}$ 는 $K$ 의 대수적 폐포 안에서 $K$ 위 분리가능한 원소를 전부 모은 체다. **절대 Galois 군(absolute Galois group)** 은 $G_K=\mathrm{Gal}(K^{\mathrm{sep}}/K)$, 곧 $K$ 를 고정하는 $K^{\mathrm{sep}}$ 의 자기동형 전체다. $K=\mathbb R$ 이면 $K^{\mathrm{sep}}=\mathbb C$ 이고 $G_{\mathbb R}$ 는 항등사상과 복소켤레 두 원소다. 표수 $0$ 에서는 모든 대수적 원소가 분리가능하므로 $\mathbb Q^{\mathrm{sep}}=\bar{\mathbb Q}$ 다.
+
 ## Krull 위상
 
-$L$ 이 $K$ 의 유한 Galois 확대를 지날 때 $\mathrm{Gal}(K^{\mathrm{sep}}/L)$ 들을 단위원의 근방 기저로 하는 $G_K$ 의 위상이 **Krull 위상(Krull topology)** 이다. 이 위상으로
+**Krull 위상(Krull topology)** 은 $L$ 이 $K$ 의 유한 Galois 확대를 지날 때 $\mathrm{Gal}(K^{\mathrm{sep}}/L)$ 들을 단위원의 근방 기저로 하는 $G_K$ 의 위상이다. $K=\mathbb Q$ 에서 $\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q(\sqrt2))$ 는 $\sqrt2$ 를 고정하는 원소 전체이고 단위원의 열린 근방이다. $G_{\mathbb R}$ 는 유한군이고 $L=\mathbb C$ 에서 $\lbrace 1\rbrace$ 이 열린 집합이므로 Krull 위상은 이산위상이다.
 
-$$
-G_K\cong\varprojlim_L\mathrm{Gal}(L/K)
-$$
-
-이고, $G_K$ 는 콤팩트이며 완전 비연결인 위상군, 곧 **프로유한군(profinite group)** 이다. [Galois 이론](galois-theory.md)의 대응은 $G_K$ 의 닫힌 부분군과 $K^{\mathrm{sep}}/K$ 의 중간체 사이의 전단사로 확장되고, 열린 부분군이 유한 확대에 대응한다.
+**프로유한군(profinite group)** 은 콤팩트이고 완전 비연결인 위상군이다. 유한군에 이산위상을 준 것과 $p$ 진 정수의 덧셈군 $\mathbb Z\_p$ 가 프로유한군이다.
 
 ## 이산 가군
 
-$G_K$ 가 작용하는 가환군 $A$ 가 모든 원소의 안정자가 열린 부분군이면 **이산 $G_K$ 가군(discrete module)** 이라 한다. 동치 조건은 $A=\bigcup_L A^{\mathrm{Gal}(K^{\mathrm{sep}}/L)}$ 이다. $K^{\mathrm{sep}}$, $(K^{\mathrm{sep}})^{\times}$, $\mu_n$, 타원곡선 $E$ 의 $E(K^{\mathrm{sep}})$ 와 $E\lbrack m\rbrack$ 가 예다.
+**이산 $G_K$ 가군(discrete module)** 은 $G_K$ 가 작용하는 가환군 $A$ 가운데 모든 원소의 안정자가 열린 부분군인 것이다. $K^{\mathrm{sep}}$, $(K^{\mathrm{sep}})^{\times}$, $\mu_n$, 타원곡선 $E$ 의 $E(K^{\mathrm{sep}})$ 와 $E\lbrack m\rbrack$ 가 예다. $K=\mathbb Q$ 이고 $A=\bar{\mathbb Q}$ 이면 $\sqrt2$ 의 안정자가 위의 열린 부분군 $\mathrm{Gal}(\bar{\mathbb Q}/\mathbb Q(\sqrt2))$ 다.
 
 ## 연속 코사슬
 
-$C^n(G_K,A)$ 를 연속 함수 $G_K^n\to A$ 의 군으로 두고 막대 분해의 코경계 공식을 그대로 쓴다. 그 코호몰로지가
+$C^n(G_K,A)$ 를 연속 함수 $G_K^n\to A$ 의 군으로 두고 막대 분해의 코경계 공식을 그대로 쓴다. **Galois 코호몰로지** 는 그 코호몰로지다.
 
 $$
 H^n(K,A)=H^n(G_K,A)
 $$
 
-다. 연속 함수 $G_K^n\to A$ 는 어떤 유한 Galois 확대 $L$ 에서 $\mathrm{Gal}(L/K)^n$ 을 거쳐 $A^{\mathrm{Gal}(K^{\mathrm{sep}}/L)}$ 으로 가므로, 유한군의 코호몰로지를 팽창 사상으로 이은 극한과 같다.[^1]
+직관 절의 계산에서 $H^1(K,\mu_2)\cong K^{\times}/(K^{\times})^{2}$ 이다. $K=\mathbb R$ 이면 양수는 모두 제곱이므로 $H^1(\mathbb R,\mu_2)\cong\mathbb R^{\times}/(\mathbb R^{\times})^{2}=\lbrace\pm1\rbrace$ 이다.
+
+# 성질
+
+## 프로유한 구조
+
+Krull 위상으로
+
+$$
+G_K\cong\varprojlim_L\mathrm{Gal}(L/K)
+$$
+
+이고, $G_K$ 는 프로유한군이다. [Galois 이론](galois-theory.md)의 대응은 $G_K$ 의 닫힌 부분군과 $K^{\mathrm{sep}}/K$ 의 중간체 사이의 전단사로 확장되고, 열린 부분군이 유한 확대에 대응한다. 가환군 $A$ 가 이산 가군인 것은 $A=\bigcup_L A^{\mathrm{Gal}(K^{\mathrm{sep}}/L)}$ 인 것과 동치다.
+
+## 유한군 코호몰로지의 극한
+
+연속 함수 $G_K^n\to A$ 는 어떤 유한 Galois 확대 $L$ 에서 $\mathrm{Gal}(L/K)^n$ 을 거쳐 $A^{\mathrm{Gal}(K^{\mathrm{sep}}/L)}$ 으로 가므로, $H^n(K,A)$ 는 유한군의 코호몰로지를 팽창 사상으로 이은 극한과 같다.[^1]
 
 $$
 H^n(K,A)\cong\varinjlim_L H^n\big(\mathrm{Gal}(L/K),A^{\mathrm{Gal}(K^{\mathrm{sep}}/L)}\big)
 $$
-
-# 성질
 
 ## 팽창–제한 완전열
 
