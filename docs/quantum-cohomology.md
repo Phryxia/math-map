@@ -10,25 +10,31 @@ $\mathbb P^2$ 의 코호몰로지는 $1$, 직선류 $H$, 점류 $H^2$ 로 생성
 
 같은 세 사이클을 직선으로 잇는 대신 차수 $d$ 의 유리곡선으로 잇는 수를 센다. 점 둘을 지나는 직선은 하나이므로 두 점류와 한 직선류에 대한 차수 $1$ 의 수가 $1$ 이다. 차수마다 이런 수가 있고, 차수를 기록하는 변수 $q$ 를 달아 전부 더한다.
 
-더한 것을 곱으로 적으면 $H$ 를 세 번 곱한 값이 $0$ 이 아니라 $q$ 가 된다. 이 곱이 결합적인지는 자명하지 않고, 결합성은 네 점 불변량을 두 가지 방식으로 쪼갠 결과가 같다는 데서 나온다.
-
-컵곱이 사이클의 교차만 세는 데 비해 양자곱은 사이클들을 잇는 유리곡선까지 센다. 변형 매개변수를 $0$ 으로 보내면 컵곱이 나온다.
+더한 것을 곱으로 적으면 $H$ 를 세 번 곱한 값이 $0$ 이 아니라 $q$ 가 된다.
 
 # 정의
 
 $X$ 를 매끄러운 사영다양체라 하고 $\lbrace T_i\rbrace$ 를 $H^\ast(X,\mathbb Q)$ 의 기저, $\lbrace T^i\rbrace$ 를 Poincaré 쌍대 기저라 한다.
 
-**Novikov 환**은 $\beta\in H_2(X,\mathbb Z)$ 로 지수를 갖는 형식 급수의 환 $\Lambda$ 로, 생성원 $q^\beta$ 가 $q^\beta q^{\beta'}=q^{\beta+\beta'}$ 를 만족하는 것이다. 유효류 $\beta$ 만 쓴다.
+**Novikov 환(Novikov ring)** 은 $\beta\in H_2(X,\mathbb Z)$ 로 지수를 갖는 형식 급수의 환 $\Lambda$ 로, 생성원 $q^\beta$ 가 $q^\beta q^{\beta'}=q^{\beta+\beta'}$ 를 만족하는 것이다. 유효류 $\beta$ 만 쓴다.
 
-**양자곱**은 $H^\ast(X,\mathbb Q)\otimes\Lambda$ 위의 곱
+$X=\mathbb P^2$ 이면 $H_2$ 가 직선의 류 $\ell$ 로 생성되고 유효류는 $d\ell$ ($d\ge0$) 이다. $q=q^\ell$ 로 적으면 $\Lambda=\mathbb Q\lbrack\lbrack q\rbrack\rbrack$ 다.
+
+**양자곱(quantum product)** 은 $H^\ast(X,\mathbb Q)\otimes\Lambda$ 위의 곱
 
 $$\gamma_1\ast\gamma_2=\sum\_\beta\sum_i\langle\gamma_1,\gamma_2,T_i\rangle\_{0,\beta}\thinspace T^i\thinspace q^\beta$$
 
-이고, $\langle\cdot\rangle\_{0,\beta}$ 는 종수 $0$ 의 Gromov–Witten 불변량이다. $\beta=0$ 항이 컵곱이므로 $q=0$ 에서 양자곱은 컵곱이다.
+이고, $\langle\cdot\rangle\_{0,\beta}$ 는 종수 $0$ 의 Gromov–Witten 불변량이다.
 
-**양자 코호몰로지 환**은 이 곱을 준 $QH^\ast(X)=H^\ast(X,\mathbb Q)\otimes\Lambda$ 다.
+$\mathbb P^2$ 에서 $H\ast H^2$ 를 계산한다. 차원을 맞추면 $\beta=\ell$, $T_i=H^2$, $T^i=1$ 항만 남고, $\langle H,H^2,H^2\rangle\_{0,\ell}$ 은 두 점을 지나는 직선이 주어진 직선과 만나는 수 $1$ 이다. $\beta=0$ 항은 컵곱 $H\cdot H^2=H^3=0$ 이므로 $H\ast H^2=q$ 다.
+
+**양자 코호몰로지 환(quantum cohomology ring)** 은 이 곱을 준 $QH^\ast(X)=H^\ast(X,\mathbb Q)\otimes\Lambda$ 다.
 
 # 성질
+
+## 고전 극한
+
+$\beta=0$ 항이 컵곱이므로 $q=0$ 에서 양자곱은 컵곱이다.
 
 ## 결합성
 
