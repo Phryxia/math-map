@@ -6,25 +6,25 @@
 
 # 직관
 
-Nakayama 보조정리는 유한생성 가군 $M$ 과 Jacobson 근기에 들어가는 [아이디얼](ideals-quotient-rings.md) $I$ 에 대해 $IM=M$ 이면 $M=0$ 이라는 진술이다. 국소환에서는 $I$ 를 극대 아이디얼 $\mathfrak m$ 으로 잡아 쓴다.
+분모가 $p$ 로 나누어지지 않는 분수 전체의 환 $R=\mathbb Z\_{(p)}$ 는 [국소환](localization-rings.md)이고, 가역이 아닌 원소는 $p$ 의 배수뿐이다. $M=R^2$ 에서 $u=(1,p)$ 와 $v=(p,1)$ 이 $M$ 을 생성하는지 본다. 직접 풀면 $u-pv=(1-p^2,0)$ 이고 $1-p^2$ 는 $p$ 로 나누어지지 않아 $R$ 에서 가역이므로 $(1,0)$ 이 $u,v$ 로 쓰이고, 같은 계산으로 $(0,1)$ 도 쓰인다.
 
-이 보조정리가 국소환 위의 가군을 잉여체 위의 벡터 공간으로 내려 읽게 한다. $M/\mathfrak mM$ 은 체 $k=R/\mathfrak m$ 위의 벡터 공간이고, 그 기저를 들어 올린 것이 $M$ 의 최소 생성계가 된다. 선형대수에서만 성립하던 차원 논증이 [국소환](localization-rings.md) 위에서 되살아난다.
-
-유한생성 조건이 없으면 진술은 거짓이다. $R=\mathbb Z\_{(p)}$ 와 $M=\mathbb Q$ 를 잡으면 $pM=M$ 이지만 $M\ne 0$ 이다. $\mathbb Q$ 가 유한생성이 아니어서 "가장 나중 생성원" 을 고를 수 없다.
-
-증명의 핵심은 생성원의 개수에 대한 귀납이다. $M$ 이 $n$ 개로 생성되고 $IM=M$ 이면 마지막 생성원을 앞의 것들로 쓸 수 있고, 그 과정에서 나오는 계수 $1-a$ 가 $a\in I$ 이므로 가역이다. 생성원이 하나 줄고 귀납이 돈다.
+계산에서 쓴 것은 $1-p^2$ 가 가역이라는 것뿐이다. $p$ 로 나눈 나머지만 보면 $u,v$ 는 $(1,0),(0,1)$ 이 되어 $M/pM$ 의 기저이고, 나머지에서 생성하면 $M$ 에서도 생성한다는 것이 Nakayama 보조정리다. 이때 유한생성 조건이 있어야 한다. $M=\mathbb Q$ 를 잡으면 $pM=M$ 이어서 $M/pM=0$ 은 빈 집합이 생성하지만 $M\ne 0$ 이다.
 
 # 정의
 
-$R$ 를 가환환이라 하자. $R$ 의 **Jacobson 근기** $\mathrm{rad}(R)$ 는 모든 극대 아이디얼의 교집합이다.
+$R$ 를 가환환이라 하자. $R$ 의 **Jacobson 근기(Jacobson radical)** $\mathrm{rad}(R)$ 는 모든 극대 [아이디얼](ideals-quotient-rings.md)의 교집합이다.
 
 $$
 \mathrm{rad}(R)=\bigcap_{\mathfrak m \text{ 극대}} \mathfrak m
 $$
 
-$a\in\mathrm{rad}(R)$ 인 것과 모든 $x\in R$ 에 대해 $1-ax$ 가 가역인 것이 동치다. 국소환에서는 극대 아이디얼이 하나이므로 $\mathrm{rad}(R)=\mathfrak m$ 이다.
+$\mathbb Z$ 의 극대 아이디얼은 소수 $q$ 의 $q\mathbb Z$ 이고 모든 소수로 나누어지는 정수는 $0$ 뿐이므로 $\mathrm{rad}(\mathbb Z)=0$ 이다. 국소환에서는 극대 아이디얼이 하나이므로 $\mathrm{rad}(R)=\mathfrak m$ 이고, 직관 절의 $\mathbb Z\_{(p)}$ 에서는 $p\mathbb Z\_{(p)}$ 다.
 
 # 성질
+
+## Jacobson 근기의 판정
+
+$a\in\mathrm{rad}(R)$ 인 것과 모든 $x\in R$ 에 대해 $1-ax$ 가 가역인 것이 동치다. $1-ax$ 가 가역이 아니면 어떤 극대 아이디얼 $\mathfrak m$ 에 들어가고, $a\in\mathfrak m$ 이면 $1\in\mathfrak m$ 이 되어 모순이다. 역으로 $a\notin\mathfrak m$ 이면 $\mathfrak m+(a)=R$ 에서 $1=y+ax$ 꼴이 나와 $1-ax\in\mathfrak m$ 이 가역이 아니다.
 
 ## 유한생성 가군의 소멸
 
@@ -91,4 +91,4 @@ $R\subseteq S$ 가 환의 확대이고 $S$ 가 $R$ 가군으로 유한생성이�
 - [정칙 국소환](regular-local-rings.md)
 - [사영가군](projective-modules.md)
 
-#ring_theory #algebra
+#ring_theory #algebra #linear_algebra
