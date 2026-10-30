@@ -6,19 +6,9 @@
 
 # 직관
 
-Schubert 는 19 세기 말에 이런 문제를 대량으로 풀었다. 그의 보존 원리는 직선들을 특수한 위치로 옮겨도 답이 변하지 않는다고 가정하고 퇴화한 배치에서 세는 방법이었다. 답은 대부분 맞았지만 근거가 엄밀하지 않았고, Hilbert 가 그 정당화를 15 번 문제로 걸었다.
-
-현대적 답은 문제를 [코호몰로지](cohomology.md) 계산으로 바꾼다. $\mathbb C^n$ 의 $k$ 차원 부분공간이 이루는 Grassmann 다양체 $\mathrm{Gr}(k,n)$ 에서 주어진 직선과 만난다는 조건이 부분다양체를 정의하고, 조건 여러 개를 동시에 만족하는 개수가 코호몰로지류의 곱이 된다.
-
-$$
-\text{기하 조건의 교차}\ \longleftrightarrow\ \text{코호몰로지류의 곱}
-$$
-
-[Borel–Weil–Bott](borel-weil-bott.md)의 Bruhat 분해가 계산의 기반이다. $\mathrm{Gr}(k,n)$ 이 세포로 분해되고 세포가 전부 짝수 차원이므로 코호몰로지가 세포 하나에 기저 하나씩으로 읽힌다. 그 기저가 **Schubert 류**이고 곱셈 구조가 [Schur 다항식](schur-polynomials.md)의 곱셈 구조와 같다. 열거기하의 수가 대칭함수의 계수로 계산된다.
-
 $\mathbb P^3$ 의 직선은 $\mathbb C^4$ 의 2 차원 부분공간이므로 $\mathrm{Gr}(2,4)$ 의 점이고 이 공간은 4 차원이다. 주어진 직선 $L$ 에 대해 $L$ 과 만나는 직선들의 집합은 $\mathrm{Gr}(2,4)$ 안에서 여차원 $1$ 의 부분다양체다. 조건 하나가 자유도 하나를 줄이므로 조건 네 개를 걸면 $4-4=0$ 차원, 곧 유한 개의 점이 남는다.
 
-각 조건의 코호몰로지류를 곱해 그 개수를 센다. 네 조건이 모두 같은 류 $\sigma_1$ 을 주므로 계산은 다음이다.
+각 조건의 [코호몰로지](cohomology.md)류를 곱해 그 개수를 센다. 네 조건이 모두 같은 류 $\sigma_1$ 을 주므로 계산은 다음이다.
 
 $$
 \sigma_1^4\in H^8(\mathrm{Gr}(2,4))
@@ -30,13 +20,21 @@ $$
 
 ## Grassmann 다양체와 Schubert 세포
 
-$\mathrm{Gr}(k,n)=\lbrace V\le\mathbb C^n:\dim V=k\rbrace$ 는 차원 $k(n-k)$ 의 매끄러운 사영다양체다. 기준 깃발 $F_\bullet$ 을 고정하고 $\lambda=(\lambda_1\ge\cdots\ge\lambda_k)$ 와 $\lambda_1\le n-k$ 에 대해
+$\mathrm{Gr}(k,n)=\lbrace V\le\mathbb C^n:\dim V=k\rbrace$ 는 $\mathbb C^n$ 의 $k$ 차원 부분공간 전체다. 기준 깃발 $F_\bullet$ 을 고정하고 $\lambda=(\lambda_1\ge\cdots\ge\lambda_k)$ 와 $\lambda_1\le n-k$ 에 대해
 
 $$
-\Omega_\lambda=\lbrace V:\dim(V\cap F_{n-k+i-\lambda_i})\ge i\ \ (1\le i\le k)\rbrace
+\Omega_\lambda=\lbrace V:\dim(V\cap F_{n-k+i-\lambda_i})\ge i\quad(1\le i\le k)\rbrace
 $$
 
-를 **Schubert 다양체**라 한다. 열린 부분이 세포 $\cong\mathbb C^{k(n-k)-|\lambda|}$ 이고 여차원이 $|\lambda|$ 다. 기본류를 $\sigma_\lambda\in H^{2|\lambda|}(\mathrm{Gr}(k,n))$ 로 쓴다.
+를 **Schubert 다양체(Schubert variety)** 라 한다. 그 기본류 $\sigma_\lambda\in H^{2|\lambda|}(\mathrm{Gr}(k,n))$ 를 **Schubert 류(Schubert class)** 라 한다.
+
+$\mathrm{Gr}(2,4)$ 에서 $\lambda=(1)$ 이면 조건은 $i=1$ 일 때 $\dim(V\cap F_2)\ge1$ 이고 $i=2$ 일 때는 자명하다. $F_2$ 가 $\mathbb P^3$ 의 직선 $L$ 이므로 $\Omega_{(1)}$ 은 $L$ 과 만나는 직선 전체이고, 직관 절의 류가 $\sigma_1=\sigma_{(1)}$ 이다.
+
+# 성질
+
+## 세포 분해와 코호몰로지 기저
+
+$\mathrm{Gr}(k,n)$ 은 차원 $k(n-k)$ 의 매끄러운 사영다양체다. $\Omega_\lambda$ 의 열린 부분이 세포 $\cong\mathbb C^{k(n-k)-|\lambda|}$ 이고 여차원이 $|\lambda|$ 다. 이 분해는 [Borel–Weil–Bott 정리](borel-weil-bott.md)의 Bruhat 분해를 Grassmann 다양체로 내린 것이다.
 
 세포가 전부 짝수 실차원이라 경계사상이 $0$ 이고 코호몰로지가 세포로 자유생성된다.
 
@@ -59,7 +57,7 @@ $c^\nu_{\lambda\mu}$ 는 Littlewood–Richardson 계수이고[^1] $|\nu|=|\lambd
 
 두 규칙에서 환 $H^\ast(\mathrm{Gr}(k,n))$ 이 $\sigma_1,\dots,\sigma_{n-k}$ 로 생성됨이 나온다.
 
-$\sigma_\lambda$ 를 $\lambda$ 의 Schur 다항식으로 보내는 사상이 환 준동형이고, 상자를 벗어나는 항을 $0$ 으로 보내면 두 곱셈이 일치한다.
+$\sigma_\lambda$ 를 $\lambda$ 의 [Schur 다항식](schur-polynomials.md)으로 보내는 사상이 환 준동형이고, 상자를 벗어나는 항을 $0$ 으로 보내면 두 곱셈이 일치한다.
 
 ## Poincaré 다항식
 
@@ -81,7 +79,6 @@ $$
 
 Schubert 기저는 교차 쌍에 대해 자기 쌍대 기저를 갖는다. 열거 문제의 답이 비음 정수로 나오는 것이 이 구조에서 온다.
 
-# 성질
 
 ## σ₁ 의 거듭제곱
 
