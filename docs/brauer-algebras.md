@@ -6,20 +6,10 @@
 
 # 직관
 
-$$
-\mathrm{End}\_{\mathrm O(n)}\bigl(V^{\otimes k}\bigr)=B_k(n),
-\qquad
-\mathrm{End}\_{\mathrm{Sp}(2m)}\bigl(V^{\otimes k}\bigr)=B_k(-2m)
-$$
-
-[Schur–Weyl 쌍대성](schur-weyl-duality.md)은 $\mathrm{End}\_{\mathrm{GL}(V)}(V^{\otimes k})=\mathbb C[S_k]$ 를 준다. $\mathrm{GL}(V)$ 를 직교군으로 줄이면 불변량이 늘어나고 중심화대수도 커지며, 늘어난 만큼을 Brauer 대수가 기술한다. 두 군이 각각 대칭 쌍선형형식과 교대 쌍선형형식을 보존한다는 차이가 매개변수 $\delta$ 의 부호로 압축된다.
-
-Brauer 대수는 군의 군대수가 아니다. 원소가 치환이 아니라 도형이고 곱셈이 도형을 쌓는 것이다.
-
-$V=\mathbb C^n$ 에서 $V\otimes V\to V\otimes V$ 인 $\mathrm{GL}(V)$ 불변 사상은 항등과 두 자리를 맞바꾸는 것 둘뿐이다. $\mathrm O(n)$ 으로 줄이면 이 군이 불변 이차형식 $\langle\thinspace\cdot\thinspace,\thinspace\cdot\thinspace\rangle$ 을 보존하므로 사상 하나가 더 불변이 된다.
+[Schur–Weyl 쌍대성](schur-weyl-duality.md)에 따라 $V=\mathbb C^n$ 에서 $V\otimes V\to V\otimes V$ 인 $\mathrm{GL}(V)$ 불변 사상은 항등과 두 자리를 맞바꾸는 것 둘뿐이다. $\mathrm O(n)$ 으로 줄이면 이 군이 불변 이차형식 $\langle\thinspace\cdot\thinspace,\thinspace\cdot\thinspace\rangle$ 을 보존하므로 사상 하나가 더 불변이 된다.
 
 $$
-v\otimes w\ \mapsto\ \langle v,w\rangle\sum_i e_i\otimes e_i
+v\otimes w\thinspace\mapsto\thinspace\langle v,w\rangle\sum_i e_i\otimes e_i
 $$
 
 이 사상은 두 자리를 내적으로 지워 스칼라를 만들고 그 스칼라로 두 자리를 다시 만든다. 자리를 섞은 것이 아니라서 치환으로는 얻을 수 없고, 불변 사상이 $2$ 개에서 $3$ 개로 늘어난다. 위에 점 $k$ 개와 아래에 점 $k$ 개를 놓고 $2k$ 개를 완전히 짝지은 도형이 이 세 가지를 모두 적는다. 위아래를 잇는 선은 자리를 옮기는 것, 위끼리 잇는 선은 지우는 것, 아래끼리 잇는 선은 만드는 것이고 도형은 $(2k-1)!!$ 개다.
@@ -39,29 +29,37 @@ $$
 d_1\cdot d_2=\delta^{\thinspace c}\thinspace d
 $$
 
-차원은 $(2k-1)!!$ 이고 $\mathbb C[S_k]$ 를 부분대수로 포함한다.
+$k=2$ 이면 도형은 셋이다. 위아래를 곧게 잇는 항등 $1$, 엇갈려 잇는 맞바꿈 $s$, 위의 두 점끼리와 아래의 두 점끼리 잇는 $e$ 다. $e$ 아래에 $e$ 를 붙이면 가운데에 닫힌 고리가 하나 생기므로 $e\cdot e=\delta\thinspace e$ 이고, $s\cdot s=1$, $s\cdot e=e\cdot s=e$ 다.
+
+## 텐서 표현
+
+$V=\mathbb C^n$ 에 표준 이차형식을 주고, 도형마다 $V^{\otimes k}$ 위의 사상을 다음으로 대응시킨 것을 $B_k(n)\to\mathrm{End}(V^{\otimes k})$ 라 한다. 위아래를 잇는 선은 텐서 자리를 옮기고, 위끼리 잇는 선과 아래끼리 잇는 선은 각각 계약(contraction)과 여계약(coevaluation)으로 간다.
+
+$$
+\text{계약}:\thinspace v\otimes w\thinspace\mapsto\thinspace\langle v,w\rangle,
+\qquad
+\text{여계약}:\thinspace 1\thinspace\mapsto\thinspace\sum_i e_i\otimes e_i
+$$
+
+$k=2$ 에서 $e$ 는 직관 절의 사상 $v\otimes w\mapsto\langle v,w\rangle\sum_i e_i\otimes e_i$ 로 간다. 이 사상을 두 번 합성하면 $\sum_i\langle e_i,e_i\rangle=n$ 이 곱해지므로, $e^2=\delta e$ 가 $\delta=n$ 에서 맞는다.
+
+# 성질
+
+## 차원과 대칭군
+
+$B_k(\delta)$ 의 차원은 완전 짝짓기의 수 $(2k-1)!!$ 이다. 위아래를 잇는 선만 쓴 도형은 치환이고 그 곱에서 고리가 생기지 않으므로, $B_k(\delta)$ 는 $\mathbb C\lbrack S_k\rbrack$ 를 부분대수로 포함한다.
 
 ## 쌍대성
 
-$V=\mathbb C^n$ 에 표준 이차형식을 주면 $B_k(n)\to\mathrm{End}(V^{\otimes k})$ 가 정의된다. 위아래를 잇는 선은 텐서 자리를 옮기고, 위끼리 잇는 선과 아래끼리 잇는 선은 각각 계약과 여계약으로 간다.
-
 $$
-\text{계약}:\ v\otimes w\ \mapsto\ \langle v,w\rangle,
+\mathrm{End}\_{\mathrm O(n)}\bigl(V^{\otimes k}\bigr)=B_k(n),
 \qquad
-\text{여계약}:\ 1\ \mapsto\ \sum_i e_i\otimes e_i
+\mathrm{End}\_{\mathrm{Sp}(2m)}\bigl(V^{\otimes k}\bigr)=B_k(-2m)
 $$
 
-이 사상의 상이 $\mathrm{End}\_{\mathrm O(n)}(V^{\otimes k})$ 다. 닫힌 고리 하나는 여계약 뒤에 계약을 합성한 것이어서 $\sum_i\langle e_i,e_i\rangle=n$ 이고, 그래서 $\delta=n$ 이다. 심플렉틱 쪽은 $\delta=-2m$ 으로 같은 진술이 성립한다. $k\le n$ 이면 사상이 단사이고 $k\gt n$ 이면 핵이 생긴다.
+텐서 표현의 상이 $\mathrm{End}\_{\mathrm O(n)}(V^{\otimes k})$ 다. 심플렉틱 쪽은 교대형식으로 같은 사상을 만들고 $\delta=-2m$ 이다. $k\le n$ 이면 사상이 단사이고 $k\gt n$ 이면 핵이 생긴다.
 
-## 제 1 기본정리
-
-$$
-\mathrm{End}\_{\mathrm O(n)}\bigl(V^{\otimes k}\bigr)\ \text{는 계약과 치환으로 생성된다}
-$$
-
-고전 불변론에서는 $\mathrm O(n)$ 의 벡터 불변량이 내적 $\langle v_i,v_j\rangle$ 들의 다항식이라는 진술이며, 도형으로는 모든 도형이 기저라는 진술이다.
-
-# 성질
+이 등식은 제 1 기본정리(first fundamental theorem)에서 나온다. $\mathrm{End}\_{\mathrm O(n)}(V^{\otimes k})$ 는 계약과 치환으로 생성된다. 고전 불변론에서는 $\mathrm O(n)$ 의 벡터 불변량이 내적 $\langle v_i,v_j\rangle$ 들의 다항식이라는 진술이며, 도형으로는 모든 도형이 기저라는 진술이다.
 
 ## 반단순성의 조건
 
