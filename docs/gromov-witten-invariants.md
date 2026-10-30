@@ -12,33 +12,39 @@
 
 곡선을 평면의 부분집합으로 보는 대신 곡선에서 평면으로 가는 사상으로 보면 퇴화를 정의역 쪽으로 옮길 수 있다. 정의역이 쪼개지고 노드가 생기는 것을 허용해 사상 전체를 콤팩트한 모듈라이 공간으로 만들고, 점을 지난다는 조건을 그 공간 위의 사이클로 적어 교차수를 센다. 교차수는 사이클을 일반 위치로 움직여도 변하지 않으므로 처음 두 문단의 수가 특별한 자리에서도 유지된다.
 
-Gromov–Witten 불변량은 안정 사상의 모듈라이 공간 위에서 평가 사상으로 당긴 류들의 교차수로 정의되고, 조건을 움직이거나 복소구조를 변형해도 값이 변하지 않는다.
-
 # 정의
 
 $X$ 를 매끄러운 사영다양체라 하고 $\beta\in H_2(X,\mathbb Z)$ 를 호몰로지류라 한다.
 
-**안정 사상**은 $n$ 개의 점이 표시된 종수 $g$ 의 안정곡선 $C$ 에서 $X$ 로 가는 사상 $f$ 로, $f\_\ast\lbrack C\rbrack=\beta$ 이고 $f$ 가 상수인 성분마다 그 성분이 안정곡선의 조건을 만족하는 것이다. 마지막 조건이 자기동형군을 유한하게 만든다.
+**안정 사상(stable map)** 은 $n$ 개의 점이 표시된 종수 $g$ 의 안정곡선 $C$ 에서 $X$ 로 가는 사상 $f$ 로, $f\_\ast\lbrack C\rbrack=\beta$ 이고 $f$ 가 상수인 성분마다 그 성분이 안정곡선의 조건을 만족하는 것이다.
 
-$\overline{\mathcal M}\_{g,n}(X,\beta)$ 는 안정 사상의 동형류의 모듈라이 공간이다. 표시점 $i$ 의 상을 취하면 **평가 사상**
+$X=\mathbb P^2$, $g=0$, $n=2$, $\beta$ 가 직선의 류이면 안정 사상은 $\mathbb P^1$ 을 평면의 한 직선으로 보내는 차수 $1$ 사상과 그 위의 표시점 두 개다. 직관 절의 쪼개진 이차곡선은 $\beta$ 가 직선의 류의 두 배일 때, 두 $\mathbb P^1$ 이 노드에서 만난 곡선을 두 직선으로 보내는 안정 사상이다.
+
+$\overline{\mathcal M}\_{g,n}(X,\beta)$ 는 안정 사상의 동형류의 모듈라이 공간이다. 표시점 $i$ 의 상을 취하면 **평가 사상(evaluation map)**
 
 $$\mathrm{ev}\_i\colon \overline{\mathcal M}\_{g,n}(X,\beta)\to X$$
 
 이 나온다.
 
-**Gromov–Witten 불변량**은 코호몰로지류 $\gamma_1,\dots,\gamma_n\in H^\ast(X)$ 에 대해
+**Gromov–Witten 불변량** 은 코호몰로지류 $\gamma_1,\dots,\gamma_n\in H^\ast(X)$ 에 대해
 
 $$\langle\gamma_1,\dots,\gamma_n\rangle\_{g,\beta}=\int\_{\lbrack\overline{\mathcal M}\_{g,n}(X,\beta)\rbrack^{\mathrm{vir}}}\mathrm{ev}\_1^\ast\gamma_1\cup\dots\cup\mathrm{ev}\_n^\ast\gamma_n$$
 
-로 정의되는 유리수다. $\lbrack\cdot\rbrack^{\mathrm{vir}}$ 은 가상 기본류다. 모듈라이 공간이 기대 차원보다 큰 성분을 가져도 이 류의 차원은 기대 차원이므로 적분이 정해진다.
+로 정의되는 유리수다. $\lbrack\cdot\rbrack^{\mathrm{vir}}$ 은 가상 기본류(virtual fundamental class)다.
 
-기대 차원은
+모듈라이 공간의 **기대 차원(expected dimension)** 은
 
 $$\dim\_{\mathbb C}=\int\_\beta c_1(T_X)+(\dim X-3)(1-g)+n$$
 
-이고, 적분이 $0$ 이 아니려면 $\gamma_i$ 의 차수의 합이 이 차원의 두 배여야 한다.
+이다.
+
+$X=\mathbb P^2$ 이고 직선의 류를 $\ell$ 이라 하면 $\int\_\ell c_1(T_X)=3$ 이므로 $g=0$, $n=2$, $\beta=\ell$ 의 기대 차원은 $3-1+2=4$ 다. 점의 류 $\mathrm{pt}$ 는 실차수 $4$ 이고, $\langle\mathrm{pt},\mathrm{pt}\rangle\_{0,\ell}=1$ 은 두 점을 지나는 직선이 하나라는 셈이다. $\beta=2\ell$, $n=5$ 이면 기대 차원이 $6-1+5=10$ 이고, $\langle\mathrm{pt},\dots,\mathrm{pt}\rangle\_{0,2\ell}=1$ 은 다섯 점을 지나는 원뿔곡선이 하나라는 셈이다.
 
 # 성질
+
+## 모듈라이 공간과 차원
+
+안정 사상의 정의에서 상수 성분에 건 조건 때문에 안정 사상의 자기동형군이 유한하다. 모듈라이 공간이 기대 차원보다 큰 성분을 가져도 가상 기본류의 차원은 기대 차원이므로 적분이 정해진다. 그래서 적분이 $0$ 이 아니려면 $\gamma_i$ 의 실차수의 합이 기대 차원의 두 배여야 한다.
 
 ## 변형 불변성
 
