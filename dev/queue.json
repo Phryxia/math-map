@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-30T09:06:50.215Z",
-  "nextSeq": 2588,
+  "savedAt": "2026-10-30T13:04:00.828Z",
+  "nextSeq": 2590,
   "items": [
     {
       "id": "9bab7237",
@@ -164,20 +164,20 @@
       "createdAt": "2026-10-20T13:00:36.604Z"
     },
     {
-      "id": "d425cdf5",
-      "title": "규칙 #7 적용: 정의 절에 성질(준동형 동치, 전단사 등)을 늘어놓거나 예 없이 식만 둔 문서 점검",
-      "priority": 100,
-      "note": "이슈 #7 로 4절 설명의 순서에 더한 규칙. grep 으로 셀 수 없다. #group_theory 와 #algebra 주 분야 문서는 모두 처리함. #ring_theory 가운데 처리함(2026-10-30): cohen-macaulay-rings, complete-intersection-rings, dedekind-domains, discrete-valuation-rings, euclidean-domains, finitely-generated-modules. 남은 #ring_theory 주 분야 문서: gorenstein-rings, hartshorne-lichtenbaum, ideals-quotient-rings, injective-modules, koszul-complex, krull-dimension, local-cohomology, localization-rings, modules, nakayama-lemma, noether-normalization, noetherian-rings, polynomial-rings, prime-ideals, projective-modules, regular-local-rings, rings, set-theoretic-complete-intersection, tensor-products, unique-factorization-domains. 그다음 #field_theory 주 분야 문서 artin-schreier-theory, differential-galois-theory, division-algebras, error-correcting-codes, etale-fundamental-group, field-extensions, fields, finite-fields, galois-cohomology, galois-theory, hilbert-theorem-90, kummer-theory, milnor-k-theory, real-closed-fields, transcendence-degree, witt-vectors. 정의 절을 읽어 성질은 성질 절로 옮기고 정의마다 직관 절의 예로 확인하는 예를 붙이고, 직관 첫머리의 성질 미리보기 문단은 뺀다. 미리보기 문단을 지울 때 그 문단에만 있던 본문 링크와 각주 참조를 본문 다른 자리로 옮긴다. 예를 붙일 때 계산을 다시 해 본다. 2026-10-30 회차에 virasoro-algebra 의 최소모형 무게 범위가 1<=s<r<m+1 로 잘못 적힌 것을 1<=s<=r<=m-1 로 고쳤다(m=3 에서 0, 1/2, 1/16). 앞 회차들에서 chain-complexes, root-systems, hyperbolic-groups 의 오류도 같은 방식으로 찾았다.",
-      "createdAt": "2026-10-30T09:06:40.969Z",
-      "seq": 2586
-    },
-    {
       "id": "107a4992",
       "title": "문단 잘라내기 스크립트의 시작 문자열이 개요에서 먼저 잡히는 사고",
       "priority": 100,
       "note": "상시 재발 방지 메모. pop 으로 꺼낼 작업이 아니다. 2026-10-30 회차에 직관 절의 미리보기 문단을 지우는 Python 스크립트를 s[:s.index(A)]+s[s.index(B):] 로 썼다. discrete-valuation-rings 에서 A('이산부값환은 극대 아이디얼이')가 개요 문단 안에도 들어 있어 개요 쪽 위치가 잡혔고, 개요 뒤부터 B 앞까지, 곧 '# 직관' 헤딩과 직관 첫 문단이 함께 사라졌다. validate, render-check, 4절 검사 여섯은 이것을 잡지 못한다. 잡아낸 것은 고친 뒤 grep -n '^#' 으로 헤딩을 본 것이다. 규칙 둘. (1) 잘라낼 문단의 위치는 k=s.index('# 직관\\n') 뒤에서 s.index(A,k) 로 찾고 assert k<i0<i1 을 건다. (2) 스크립트로 여러 문서를 고친 회차에는 커밋 전에 고친 문서마다 '# 개요|# 직관|# 정의|# 성질|# 활용' 다섯 H1 이 순서대로 있는지, 개요 절이 회차 시작 커밋과 같은지 비교한다.",
       "createdAt": "2026-10-30T09:06:41.110Z",
       "seq": 2587
+    },
+    {
+      "id": "f3b2f510",
+      "title": "규칙 #7 적용: 정의 절에 성질(준동형 동치, 전단사 등)을 늘어놓거나 예 없이 식만 둔 문서 점검",
+      "priority": 100,
+      "note": "이슈 #7 로 4절 설명의 순서에 더한 규칙. grep 으로 셀 수 없다. #group_theory, #algebra, #ring_theory 주 분야 문서는 모두 처리함(#ring_theory 는 2026-10-30 두 회차에 끝남). #field_theory 가운데 처리함(2026-10-30): artin-schreier-theory, differential-galois-theory, division-algebras, error-correcting-codes, etale-fundamental-group, hilbert-theorem-90. 남은 #field_theory 주 분야 문서: field-extensions, fields, finite-fields, galois-cohomology, galois-theory, kummer-theory, milnor-k-theory, real-closed-fields, transcendence-degree, witt-vectors. 그다음은 tags 로 남은 대수 계열 태그를 고른다. 정의 절을 읽어 성질은 성질 절로 옮기고 정의마다 직관 절의 예로 확인하는 예를 붙이고, 직관 첫머리의 성질 미리보기 문단은 뺀다. 미리보기 문단을 지울 때 그 문단에만 있던 본문 링크와 각주 참조를 본문 다른 자리로 옮기고, 지운 뒤 직관이 정의되지 않은 대상을 가리키며 시작하지 않는지 본다(nakayama-lemma, noetherian-rings 는 직관을 예 하나로 다시 썼다). 예를 붙일 때 계산을 다시 해 본다. 2026-10-30 회차에 virasoro-algebra 의 최소모형 무게 범위가 1<=s<r<m+1 로 잘못 적힌 것을 1<=s<=r<=m-1 로 고쳤다(m=3 에서 0, 1/2, 1/16). krull-dimension 개요의 '다항식환에는 기저가 없고' 도 같은 방식으로 찾아 고쳤다. 앞 회차들에서 chain-complexes, root-systems, hyperbolic-groups 의 오류도 같은 방식으로 찾았다. 전역 문자열 치환으로 용어를 바꿀 때 방금 넣은 원어 괄호까지 바뀌는 사고가 polynomial-rings 에서 났다('최고차 계수(최고차 계수)'). 치환 뒤 그 줄을 눈으로 본다.",
+      "createdAt": "2026-10-30T13:03:52.773Z",
+      "seq": 2589
     },
     {
       "id": "c4f40bdb",
