@@ -8,16 +8,6 @@
 
 [Borel–Weil–Bott 정리](borel-weil-bott.md)는 표수 $0$ 에서 기약표현의 지표를 결정한다. [깃발다양체](flag-varieties.md) 위 직선다발의 [코호몰로지](cohomology.md)가 한 자리에만 살고 그 자리에서 [Weyl 지표 공식](weyl-character-formula.md)이 나온다. 표수 $p$ 에서는 코호몰로지가 여러 차수에 흩어지고 기약가군의 지표가 닫힌 공식으로 주어지지 않는다.
 
-Kazhdan 과 Lusztig 은 1979 년에 이 빈자리를 메울 조합적 대상을 정의했다.[^1] Weyl 군(더 일반적으로 [Coxeter 군](coxeter-groups.md)) $W$ 의 군환을 매개변수 $q$ 로 변형한 **Iwahori–Hecke 대수** $\mathcal H$ 를 잡고, 거기에 자연스러운 대합에 대해 자기쌍대인 기저 $\lbrace C'\_w\rbrace$ 가 유일하게 존재함을 보인다. 표준기저로 전개할 때 나오는 계수가
-
-$$
-C'\_w=q^{-\ell(w)/2}\sum_{x\le w}P_{x,w}(q)\thinspace T_x,\qquad P_{x,w}\in\mathbb Z[q]
-$$
-
-**Kazhdan–Lusztig 다항식**이다. 정의는 조합적이어서 Coxeter 군의 Bruhat 순서와 길이 함수만 쓴다.
-
-같은 다항식이 다른 두 곳에서도 나타난다. 기하에서는 Schubert 다양체 $X_w$ 의 교차 코호몰로지 [층](sheaves.md)의 줄기 차원이고, 표현론에서는 [범주 O](category-o.md) 의 기약가군을 Verma 가군으로 전개한 계수다. 세 정의의 일치가 Kazhdan–Lusztig 추측이었고 지금은 정리다.
-
 Weyl 군 $W$ 의 군환에서 단순반사 $s$ 는 $s^2=1$ 을 만족한다. 이 관계를 한 매개변수 풀어 준다.
 
 $$
@@ -32,17 +22,21 @@ $q=1$ 을 넣으면 $T_s^2=1$ 이라 군환으로 돌아오고, $q$ 를 소수 �
 
 ## Iwahori–Hecke 대수
 
-$(W,S)$ 를 Coxeter 계, $\ell$ 을 길이 함수라 하자. $\mathcal H$ 는 $\mathbb Z[q^{1/2},q^{-1/2}]$ 위 자유가군으로 기저 $\lbrace T_w\rbrace_{w\in W}$ 를 갖고 곱셈이
+$(W,S)$ 를 [Coxeter 군](coxeter-groups.md)의 Coxeter 계, $\ell$ 을 길이 함수라 하자. **Iwahori–Hecke 대수(Iwahori–Hecke algebra)** $\mathcal H$ 는 $\mathbb Z[q^{1/2},q^{-1/2}]$ 위 자유가군으로 기저 $\lbrace T_w\rbrace_{w\in W}$ 를 갖고 곱셈이
 
 $$
 T_sT_w=\begin{cases}T_{sw} & \ell(sw)\gt\ell(w)\cr qT_{sw}+(q-1)T_w & \ell(sw)\lt\ell(w)\end{cases}
 $$
 
-로 정해진다. 결합법칙은 Coxeter 관계에서 따라오고 $T_w$ 는 가역이다.
+로 정해진다.
+
+$W=S_2=\lbrace e,s\rbrace$ 이면 기저가 $T_e=1$ 과 $T_s$ 이고, $\ell(ss)=0\lt\ell(s)$ 이므로 $T_sT_s=qT_e+(q-1)T_s$ 다. 직관 절의 이차 관계가 이것이다.
 
 ## Bruhat 순서
 
-$x\le w$ 는 $w$ 의 어떤 축소 표현에서 문자 몇 개를 지워 $x$ 의 축소 표현을 얻을 수 있다는 관계다. 깃발다양체에서는 Schubert 세포의 닫힘 관계 $X_x\subseteq X_w$ 와 같다. $S_n$ 에서는 순열의 rank [행렬](matrices.md) 비교로 판정된다.
+**Bruhat 순서(Bruhat order)** $x\le w$ 는 $w$ 의 어떤 축소 표현에서 문자 몇 개를 지워 $x$ 의 축소 표현을 얻을 수 있다는 관계다.
+
+$S_3$ 에서 $w=s_1s_2$ 의 문자를 지우면 $s_1$, $s_2$, $e$ 가 나오므로 이 셋이 $w$ 보다 작다. $s_1s_2s_1$ 은 $S_3$ 의 모든 원소보다 크거나 같다.
 
 ## KL 기저와 다항식
 
@@ -52,27 +46,39 @@ $$
 \iota(C'\_w)=C'\_w,\qquad C'\_w=q^{-\ell(w)/2}\sum_{x\le w}P_{x,w}(q)T_x
 $$
 
-이고 $P_{w,w}=1$ 이며 $x\lt w$ 이면 $\deg P_{x,w}\le\frac{\ell(w)-\ell(x)-1}{2}$ 인 원소 $C'\_w$ 가 유일하게 존재한다. 차수 상계를 하나만 느슨하게 해도 자유도가 생기므로 이 상계가 유일성을 준다.
+이고 $P_{w,w}=1$ 이며 $x\lt w$ 이면 $\deg P_{x,w}\le\frac{\ell(w)-\ell(x)-1}{2}$ 인 원소 $C'\_w$ 를 **KL 기저(Kazhdan–Lusztig basis)** 원소라 하고, 계수 $P_{x,w}$ 를 **Kazhdan–Lusztig 다항식** 이라 한다.
+
+$W=S_2$ 이면 $C'\_s=q^{-1/2}(T_s+T_e)$ 이다. $T_s^{-1}=q^{-1}T_s+(q^{-1}-1)$ 이므로 $\iota(C'\_s)=q^{1/2}(q^{-1}T_s+q^{-1})=C'\_s$ 이고, $P_{e,s}=P_{s,s}=1$ 이다.
+
+## μ 계수
+
+$\ell(w)-\ell(x)$ 가 홀수일 때의 최고차 계수 $\mu(x,w)$ 가 KL 그래프의 간선 가중치가 되고, 그 그래프의 연결성분이 **셀(cell)** 을 정의한다.
+
+$W=S_2$ 에서 $\ell(s)-\ell(e)=1$ 이고 $P_{e,s}=1$ 의 $q^0$ 계수가 최고차 계수이므로 $\mu(e,s)=1$ 이다.
+
+# 성질
+
+## 존재와 유일성
+
+각 $w\in W$ 에 대해 KL 기저 원소 $C'\_w$ 가 유일하게 존재한다[^1]. 차수 상계를 하나만 느슨하게 해도 자유도가 생기므로 이 상계가 유일성을 준다. $\mathcal H$ 의 결합법칙은 Coxeter 관계에서 따라오고 $T_w$ 는 가역이다. 깃발다양체에서 Bruhat 순서는 Schubert 세포의 닫힘 관계 $X_x\subseteq X_w$ 와 같고, $S_n$ 에서는 순열의 rank [행렬](matrices.md) 비교로 판정된다.
 
 ## 재귀 계산
 
 유일성의 증명이 알고리즘을 준다. $\ell(sw)\lt\ell(w)$ 인 단순반사 $s$ 를 잡고 $v=sw$ 라 하면
 
 $$
-P_{x,w}=q^{1-c}P_{sx,v}+q^{c}P_{x,v}-\sum_{x\le z\lt v,\ sz\lt z}\mu(z,v)\thinspace q^{(\ell(w)-\ell(z))/2}P_{x,z}
+P_{x,w}=q^{1-c}P_{sx,v}+q^{c}P_{x,v}-\sum_{x\le z\lt v,\thinspace sz\lt z}\mu(z,v)\thinspace q^{(\ell(w)-\ell(z))/2}P_{x,z}
 $$
 
 $c=1$ 이면 $sx\lt x$ 이고 $c=0$ 이면 $sx\gt x$ 이며 $\mu(z,v)$ 는 $P_{z,v}$ 의 최고차 계수다. 길이에 대한 귀납으로 계산되지만 항의 수가 Bruhat 구간의 크기만큼 늘어난다. $E_8$ 의 전체 KL(Kazhdan–Lusztig) 다항식 표를 얻은 Atlas 프로젝트(2007)는 대규모 분산 계산이었다.
 
-## μ 계수
+## 셀 표현
 
-$\ell(w)-\ell(x)$ 가 홀수일 때의 최고차 계수 $\mu(x,w)$ 가 KL 그래프의 간선 가중치가 되고, 그 그래프의 연결성분이 **셀**을 정의한다. 셀은 $\mathcal H$ 의 가군을 쪼개며, Lusztig 은 이를 통해 유한군의 기약표현을 유니포턴트 궤도와 짝지었다.
-
-# 성질
+셀은 $\mathcal H$ 의 가군을 쪼개며, Lusztig 은 이를 통해 유한군의 기약표현을 유니포턴트 궤도와 짝지었다.
 
 ## Kazhdan–Lusztig 추측
 
-원래 추측은 범주 $\mathcal O$ 의 기약 최고무게 [가군](modules.md) $L_w$ 의 지표에 관한 것이다.
+원래 추측은 [범주 O](category-o.md)의 기약 최고무게 [가군](modules.md) $L_w$ 의 지표에 관한 것이다.
 
 $$
 \mathrm{ch}\thinspace L_w=\sum_{x\le w}(-1)^{\ell(w)-\ell(x)}P_{x,w}(1)\thinspace\mathrm{ch}\thinspace M_x
@@ -82,7 +88,7 @@ $M_x$ 는 Verma 가군이다. Beilinson–Bernstein 과 Brylinski–Kashiwara �
 
 ## 교차 코호몰로지 줄기
 
-$P_{x,w}(q)$ 는 Schubert 다양체 $X_w=\overline{BwB/B}$ 의 점 $x$ 근방에서 교차 코호몰로지 층의 줄기를 기술한다.
+$P_{x,w}(q)$ 는 Schubert 다양체 $X_w=\overline{BwB/B}$ 의 점 $x$ 근방에서 교차 코호몰로지 [층](sheaves.md)의 줄기를 기술한다.
 
 $$
 P_{x,w}(q)=\sum_i \dim\mathcal H^{2i}\bigl(\mathrm{IC}(X_w)\bigr)\_x\thickspace q^{i}
