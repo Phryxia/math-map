@@ -8,11 +8,9 @@
 
 [군](groups.md)은 연산이 하나인 구조다. 정수, 다항식, [행렬](matrices.md), [합동류](modular-arithmetic.md)는 덧셈과 곱셈 두 연산을 갖고 두 연산이 분배법칙으로 묶인다.
 
-환은 이 상황의 공리다. 덧셈에 대해서는 교환군을 요구하고, 곱셈에 대해서는 결합법칙과 단위원만 요구하며 교환성과 역원은 요구하지 않는다. 곱셈 역원을 요구하지 않으므로 정수와 다항식이 환이 되고, 나눗셈이 안 되는 곳에서 나눗셈을 대신하는 방법이 문제가 된다.
-
 ## 나눗셈의 부재
 
-체는 사칙연산이 전부 되지만 예가 적고, 환은 조건을 낮춰 정수와 다항식을 포함하는 대신 나눗셈을 잃는다. 나눗셈이 없으면 곱이 $0$ 인데 두 인수가 모두 $0$ 이 아닌 영인자가 생기고, 나머지가 남는 나눗셈만 가능하다. 영인자가 없는 가환환이 정역, 소인수분해가 유일한 정역이 UFD(unique factorization domain), 모든 아이디얼이 주 아이디얼인 정역이 PID(principal ideal domain), 나머지 있는 나눗셈이 되는 정역이 [유클리드 정역](euclidean-domains.md)이고, 포함 관계는 체 $\subset$ 유클리드 정역 $\subset$ PID $\subset$ UFD $\subset$ 정역 $\subset$ 가환환이다. 정수는 체를 뺀 넷 모두이고, 행렬환은 가환환도 아니고 영인자도 가진다.
+[체](fields.md)는 사칙연산이 전부 되지만 예가 적고, 환은 조건을 낮춰 정수와 다항식을 포함하는 대신 나눗셈을 잃는다. 나눗셈이 없으면 곱이 $0$ 인데 두 인수가 모두 $0$ 이 아닌 영인자가 생기고, 나머지가 남는 나눗셈만 가능하다. 영인자가 없는 가환환이 정역, 소인수분해가 유일한 정역이 UFD(unique factorization domain), 모든 아이디얼이 주 아이디얼인 정역이 PID(principal ideal domain), 나머지 있는 나눗셈이 되는 정역이 [유클리드 정역](euclidean-domains.md)이고, 포함 관계는 체 $\subset$ 유클리드 정역 $\subset$ PID $\subset$ UFD $\subset$ 정역 $\subset$ 가환환이다. 정수는 체를 뺀 넷 모두이고, 행렬환은 가환환도 아니고 영인자도 가진다.
 
 ## 아이디얼과 몫환
 
@@ -32,26 +30,33 @@ $$
 a(b+c)=ab+ac,\qquad(a+b)c=ac+bc
 $$
 
-곱셈의 교환법칙과 $0$ 아닌 원소의 곱셈 역원은 요구하지 않는다. 곱셈이 교환적이면 가환환이다. 문헌에 따라 단위원을 요구하지 않는 관례도 있다.
+곱셈의 교환법칙과 $0$ 아닌 원소의 곱셈 역원은 요구하지 않는다. 곱셈이 교환적이면 **가환환(commutative ring)** 이다. 문헌에 따라 단위원을 요구하지 않는 관례도 있다.
+
+$\mathbb Z$ 는 가환환이다. 실수 성분 $2\times2$ 행렬 전체는 행렬의 덧셈과 곱셈으로 환이지만 가환환이 아니다.
+
+$$
+\begin{pmatrix}0&1\cr 0&0\end{pmatrix}\begin{pmatrix}0&0\cr 1&0\end{pmatrix}=\begin{pmatrix}1&0\cr 0&0\end{pmatrix},\qquad
+\begin{pmatrix}0&0\cr 1&0\end{pmatrix}\begin{pmatrix}0&1\cr 0&0\end{pmatrix}=\begin{pmatrix}0&0\cr 0&1\end{pmatrix}
+$$
 
 ## 부분 구조와 사상
 
-$R$ 의 부분집합이 두 연산에 닫혀 있고 $1$ 을 포함하며 덧셈 역원을 가지면 부분환이다. 환 준동형 $f : R \to S$ 는 $f(a+b)=f(a)+f(b)$ , $f(ab)=f(a)f(b)$ , $f(1)=1$ 을 만족하는 함수다.
+$R$ 의 부분집합이 두 연산에 닫혀 있고 $1$ 을 포함하며 덧셈 역원을 가지면 **부분환(subring)** 이다. **환 준동형(ring homomorphism)** $f : R \to S$ 는 $f(a+b)=f(a)+f(b)$ , $f(ab)=f(a)f(b)$ , $f(1)=1$ 을 만족하는 함수다. $\mathbb Z$ 는 $\mathbb Q$ 의 부분환이고, $a$ 를 $6$ 으로 나눈 나머지류로 보내는 $\mathbb Z\to\mathbb Z/6\mathbb Z$ 는 환 준동형이다.
 
 ## 영인자, 정역, 가역원
 
 | 이름 | 조건 |
 |---|---|
-| 영인자 | $a \ne 0$ 이고 $ab = 0$ 인 $b \ne 0$ 이 존재 |
-| 정역 | 가환환이고 $1 \ne 0$ 이며 영인자가 없음 |
-| 가역원 | $ab=ba=1$ 인 $b$ 가 존재 |
+| 영인자(zero divisor) | $a \ne 0$ 이고 $ab = 0$ 인 $b \ne 0$ 이 존재 |
+| 정역(integral domain) | 가환환이고 $1 \ne 0$ 이며 영인자가 없음 |
+| 가역원(unit) | $ab=ba=1$ 인 $b$ 가 존재 |
 | 체 | 가환환이고 $0$ 아닌 모든 원소가 가역 |
 
-가역원 전체는 곱셈에 대해 군을 이루고 $R^\times$ 로 쓴다. $\mathbb{Z}^\times = \lbrace 1, -1\rbrace$ 이고 $(\mathbb{Z}/m\mathbb{Z})^\times$ 는 $m$ 과 서로소인 잉여류들의 군이다.
+$\mathbb Z/6\mathbb Z$ 에서 $2\cdot3=0$ 이므로 $2$ 와 $3$ 은 영인자이고, $\mathbb Z$ 는 정역이며 $\mathbb Q$ 는 체다. 가역원 전체를 $R^\times$ 로 쓴다. $\mathbb{Z}^\times = \lbrace 1, -1\rbrace$ 이고 $(\mathbb{Z}/m\mathbb{Z})^\times$ 는 $m$ 과 서로소인 잉여류들의 군이다.
 
 ## 아이디얼
 
-$I \subseteq R$ 이 덧셈 부분군이고 임의의 $r \in R$ , $a \in I$ 에 대해 $ra \in I$ , $ar \in I$ 이면 양쪽 아이디얼이다. $1$ 을 포함하는 아이디얼은 $R$ 전체이므로 아이디얼은 부분환과 다르다. 몫환 $R/I$ 의 구성은 아이디얼과 몫환에서 다룬다.
+$I \subseteq R$ 이 덧셈 부분군이고 임의의 $r \in R$ , $a \in I$ 에 대해 $ra \in I$ , $ar \in I$ 이면 **양쪽 아이디얼(two-sided ideal)** 이다. $\mathbb Z$ 에서 $6$ 의 배수 전체 $6\mathbb Z$ 는 아이디얼이다.
 
 # 성질
 
@@ -64,6 +69,8 @@ a0=a(0+0)=a0+a0
 $$
 
 이고 덧셈군에서 $a0$ 를 소거한다. 곱셈에 역원이 없어도 덧셈군의 소거는 가능하다. 같은 방식으로 $(-a)b=-(ab)$ 와 $(-a)(-b)=ab$ 가 나온다. 음수끼리의 곱이 양수인 것은 분배법칙의 따름정리다.
+
+가역원 전체 $R^\times$ 는 곱셈에 대해 군을 이룬다. $1$ 을 포함하는 아이디얼은 $r=r\cdot1$ 로 $R$ 전체이므로, $R$ 이 아닌 아이디얼은 부분환이 아니다.
 
 ## 소거의 실패
 
