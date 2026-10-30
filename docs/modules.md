@@ -6,10 +6,6 @@
 
 # 직관
 
-가군은 벡터 공간의 스칼라를 [체](fields.md) 대신 [환](rings.md)으로 바꾼 구조다. 정의에 등장하는 공리는 벡터 공간과 글자 그대로 같지만, 스칼라를 나눌 수 없게 되는 순간 이론의 성격이 크게 달라진다. 기저가 없는 가군이 흔해지고, 부분가군이 직합 인자로 떨어져 나오지 않으며, 스칼라가 원소를 소멸시킬 수 있다.
-
-아벨군은 정수환 위의 가군이고, 아이디얼과 몫환은 환 자신을 가군으로 본 부분가군과 몫가군이며, [군](groups.md)의 표현은 군환 위의 가군이다. 서로 다른 분야에서 따로 배운 분류 정리들이 "PID(principal ideal domain) 위 유한생성 가군 구조 정리" 하나로 합쳐진다.
-
 $\mathbb{Z}$ 를 스칼라로 쓰면 아벨군이 가군이다. $\mathbb{Z}/2\mathbb{Z}$ 는 원소 $1$ 하나로 생성되지만 $2 \cdot 1 = 0$ 이라 그 하나가 일차독립이 아니고, 어떤 부분집합도 기저가 되지 않는다. $2\mathbb{Z} \subset \mathbb{Z}$ 는 부분가군인데 $\mathbb{Z} = 2\mathbb{Z} \oplus M$ 을 만족하는 $M$ 은 없다. $M$ 에 $0$ 이 아닌 $m$ 이 있으면 $2m$ 이 $2\mathbb{Z}$ 와 $M$ 에 동시에 들어 교집합이 자명하지 않기 때문이다.
 
 두 경우 모두 $0$ 이 아닌 스칼라로 나눌 수 없다는 데서 온다. 체에서는 $2$ 로 나눌 수 있어서 $2 \cdot 1 = 0$ 이 $1 = 0$ 을 주고, 생성집합을 일차독립인 것으로 줄이는 조작도 나눗셈을 쓴다. 나눗셈을 뺀 결과로 불변량이 차원 하나에서 계수와 torsion 구조로 늘어난다.
@@ -18,13 +14,13 @@ $\mathbb{Z}$ 를 스칼라로 쓰면 아벨군이 가군이다. $\mathbb{Z}/2\ma
 
 ## 좌가군
 
-환 $R$ 이 단위원 $1$ 을 가진다고 하자. 아벨군 $(M,+)$ 과 사상
+[환](rings.md) $R$ 이 단위원 $1$ 을 가진다고 하자. 아벨군 $(M,+)$ 과 사상
 
 $$
 R \times M \to M, \qquad (r, m) \mapsto rm
 $$
 
-이 다음 네 조건을 만족하면 $M$ 을 좌 $R$ 가군이라 한다.
+이 다음 네 조건을 만족하면 $M$ 을 **좌 $R$ 가군(left R-module)** 이라 한다.
 
 $$
 r(m + n) = rm + rn, \qquad (r + s)m = rm + sm
@@ -34,35 +30,57 @@ $$
 (rs)m = r(sm), \qquad 1 \cdot m = m
 $$
 
-우가군은 스칼라를 오른쪽에서 곱하고 $(rs)$ 의 순서가 $m(rs)=(mr)s$ 가 되도록 한 구조다. $R$ 이 가환이면 좌우 구별은 형식적이다. 아래에서 환은 별말이 없으면 가환이고 가군은 좌가군이다.
+**우가군(right module)** 은 스칼라를 오른쪽에서 곱하고 $(rs)$ 의 순서가 $m(rs)=(mr)s$ 가 되도록 한 구조다. $R$ 이 가환이면 좌우 구별은 형식적이다. 아래에서 환은 별말이 없으면 가환이고 가군은 좌가군이다.
 
-동치인 서술 하나가 유용하다. $M$ 이 $R$ 가군이라는 것은 환 준동형
+## 기본 예
+
+- 임의의 아벨군 $A$ 는 유일한 $\mathbb{Z}$ -가군이다. $n \cdot a$ 를 $a$ 의 $n$ 번 덧셈으로 정의하는 것 외에 선택지가 없기 때문이다. $\mathbb Z/6\mathbb Z$ 에서 $4\cdot\bar5=\bar{20}=\bar2$ 다.
+- [체](fields.md) $k$ 위의 $k$ 가군은 $k$ 벡터 공간이다.
+- 환 $R$ 자신. 곱셈을 스칼라 곱으로 쓰면 부분가군이 정확히 [아이디얼](ideals-quotient-rings.md)이고, 몫 $R/I$ 도 $R$ 가군이다.
+- [다항식환](polynomial-rings.md) $k[x]$ 가군은 "벡터 공간 $V$ 와 선형변환 $T$ 의 쌍" 과 같다. $x$ 의 작용을 $T$ 로 정하면 된다.
+- [군](groups.md) $G$ 의 군환 $k[G]$ 위의 가군은 $G$ 의 $k$ 위 선형표현이다.
+
+## 부분가군, 몫, 준동형
+
+부분집합 $N \subseteq M$ 이 덧셈에 대해 부분군이고 $rN \subseteq N$ 이면 **부분가군(submodule)** 이다. 이때 몫 아벨군 $M/N$ 에 $r(m + N) = rm + N$ 로 스칼라 곱을 주면 **몫가군(quotient module)** 이 된다. 직관 절의 $2\mathbb Z$ 는 $\mathbb Z$ 의 부분가군이고 몫가군은 $\mathbb Z/2\mathbb Z$ 다.
+
+$M \neq 0$ 이고 부분가군이 $0$ 과 $M$ 뿐이면 $M$ 을 **단순가군(simple module)** 이라 한다. 표현론에서는 같은 조건을 **기약(irreducible)** 이라 부르고 단순가군을 기약가군이라 쓴다. 소수 $p$ 에 대해 $\mathbb Z/p\mathbb Z$ 는 부분군이 $0$ 과 자신뿐이라 단순 $\mathbb Z$ 가군이고, $\mathbb Z$ 는 부분가군 $2\mathbb Z$ 를 가져 단순가군이 아니다.
+
+사상 $f:M\to N$ 이 $f(m+m')=f(m)+f(m')$ , $f(rm)=rf(m)$ 을 만족하면 **$R$ 준동형(R-homomorphism)** 이라 하고, 그 전체를 $\mathrm{Hom}\_R(M,N)$ 으로 쓴다. 체 위에서는 이것이 [선형사상](linear-maps.md)이다. $m\mapsto 2m$ 은 $\mathbb Z\to\mathbb Z$ 준동형이고 상이 $2\mathbb Z$ 다.
+
+## 생성, 자유가군, 계수
+
+부분집합 $S \subseteq M$ 이 생성하는 부분가군은 유한 합 $\sum r_i s_i$ 전체다. 어떤 유한집합이 $M$ 을 생성하면 $M$ 을 **유한생성(finitely generated)** 이라 한다.
+
+$S$ 가 생성집합이면서 일차독립, 즉 $\sum r_i s_i = 0$ 이 모든 $r_i = 0$ 을 강제하면 $S$ 는 **기저(basis)** 이고 $M$ 은 **자유가군(free module)** 이다. 자유가군 $M$ 의 기저의 원소 개수를 **계수(rank)** 라 한다. $\mathbb Z^2$ 는 기저 $(1,0),(0,1)$ 을 가져 계수 $2$ 인 자유가군이고, 직관 절의 $\mathbb Z/2\mathbb Z$ 는 기저가 없어 자유가군이 아니다.
+
+## 소멸자와 torsion
+
+원소 $m \in M$ 의 **소멸자(annihilator)** 는
+
+$$
+\mathrm{Ann}(m) = \lbrace r \in R : rm = 0 \rbrace
+$$
+
+다. $R$ 이 정역일 때 $\mathrm{Ann}(m) \ne 0$ 인 원소를 **torsion 원소(torsion element)** 라 하고, 그 전체를 $T(M)$ 으로 쓴다. $T(M) = 0$ 이면 **torsion-free**, $T(M) = M$ 이면 **torsion 가군(torsion module)** 이다.
+
+$\mathbb Z/6\mathbb Z$ 에서 $\mathrm{Ann}(\bar2)=3\mathbb Z$ 이고 $\mathbb Z/6\mathbb Z$ 는 torsion 가군이다. $\mathbb Z\oplus\mathbb Z/2\mathbb Z$ 에서는 $T=0\oplus\mathbb Z/2\mathbb Z$ 이고, $\mathbb Z$ 는 torsion-free 다.
+
+# 성질
+
+## 자기준동형환으로 가는 준동형
+
+$M$ 이 $R$ 가군이라는 것은 환 준동형
 
 $$
 \rho : R \to \mathrm{End}\_{\mathbb{Z}}(M)
 $$
 
-가 주어진 것과 같다. 즉 가군은 "아벨군의 자기준동형환으로 가는 환 준동형" 이고, 이는 군 작용을 "[대칭군](symmetric-groups.md)으로 가는 준동형" 으로 보는 [군 작용](group-actions.md)의 관점과 정확히 평행하다.
+가 주어진 것과 같다. $\rho(r)$ 를 $m\mapsto rm$ 으로 두면 정의의 네 조건이 $\rho$ 가 환 준동형이라는 조건과 같다. [군 작용](group-actions.md)을 [대칭군](symmetric-groups.md)으로 가는 준동형으로 쓰는 것과 같은 꼴이다.
 
-## 기본 예
+## 준동형의 모임과 동형정리
 
-- 임의의 아벨군 $A$ 는 유일한 $\mathbb{Z}$ -가군이다. $n \cdot a$ 를 $a$ 의 $n$ 번 덧셈으로 정의하는 것 외에 선택지가 없기 때문이다.
-- 체 $k$ 위의 $k$ 가군은 $k$ 벡터 공간이다.
-- 환 $R$ 자신. 곱셈을 스칼라 곱으로 쓰면 부분가군이 정확히 [아이디얼](ideals-quotient-rings.md)이고, 몫 $R/I$ 도 $R$ 가군이다.
-- [다항식환](polynomial-rings.md) $k[x]$ 가군은 "벡터 공간 $V$ 와 선형변환 $T$ 의 쌍" 과 같다. $x$ 의 작용을 $T$ 로 정하면 된다.
-- 군환 $k[G]$ 가군은 $G$ 의 $k$ 위 선형표현이다. 군의 표현에서 다룬다.
-
-## 부분가군, 몫, 준동형
-
-부분집합 $N \subseteq M$ 이 덧셈에 대해 부분군이고 $rN \subseteq N$ 이면 부분가군이다. 이때 몫 아벨군 $M/N$ 에 $r(m + N) = rm + N$ 로 스칼라 곱을 주면 몫가군이 된다.
-
-$M \neq 0$ 이고 부분가군이 $0$ 과 $M$ 뿐이면 $M$ 을 **단순가군**이라 한다. 표현론에서는 같은 조건을 **기약**이라 부르고 단순가군을 기약가군이라 쓴다.
-
-사상 $f:M\to N$ 이 $f(m+m')=f(m)+f(m')$ , $f(rm)=rf(m)$ 을 만족하면 $R$ 준동형이라 하고, 그 전체를 $\mathrm{Hom}\_R(M,N)$ 으로 쓴다. $R$ 이 가환이면 $\mathrm{Hom}\_R(M,N)$ 자체가 다시 $R$ 가군이다. 체 위에서는 이것이 [선형사상](linear-maps.md)의 공간이다.
-
-## 동형정리
-
-군이나 환에서와 같은 형태가 그대로 성립한다. $f:M\to N$ 이 준동형이면
+$R$ 이 가환이면 $\mathrm{Hom}\_R(M,N)$ 이 $(rf)(m)=rf(m)$ 으로 다시 $R$ 가군이다. 군이나 환에서와 같은 동형정리가 성립한다. $f:M\to N$ 이 준동형이면
 
 $$
 M / \ker f \thickspace\cong\thickspace \mathrm{im} f
@@ -74,13 +92,11 @@ $$
 (A + B)/B \cong A/(A \cap B), \qquad (M/N)\big/(L/N) \cong M/L
 $$
 
-가 성립한다. 증명은 아벨군에서의 증명에 스칼라 곱이 잘 정의됨을 확인하는 한 줄을 더한 것뿐이다.
+가 성립한다. 증명은 아벨군에서의 증명에 스칼라 곱이 대표원에 무관함을 확인하는 단계를 더한 것이다. $m\mapsto 2m$ 에 첫째 동형을 쓰면 $\mathbb Z\cong 2\mathbb Z$ 다.
 
-## 생성, 자유가군, 계수
+## 자유가군의 보편성질과 계수
 
-부분집합 $S \subseteq M$ 이 생성하는 부분가군은 유한 합 $\sum r_i s_i$ 전체다. 어떤 유한집합이 $M$ 을 생성하면 $M$ 을 유한생성이라 한다.
-
-$S$ 가 생성집합이면서 일차독립, 즉 $\sum r_i s_i = 0$ 이 모든 $r_i = 0$ 을 강제하면 $S$ 는 기저이고 $M$ 은 자유가군이다. 자유가군은 직합
+기저 $S$ 를 갖는 자유가군은 직합
 
 $$
 M \cong R^{(S)} = \bigoplus_{s \in S} R
@@ -88,19 +104,11 @@ $$
 
 과 동형이고, 다음 보편성질이 이를 정한다. 집합 사상 $S\to N$ 은 $R$ 준동형 $R^{(S)}\to N$ 으로 유일하게 확장된다. 이것이 자유가군 [함자](functors.md)와 망각 함자의 [수반](adjunctions.md)이다.
 
-가환환 위에서는 자유가군의 계수(rank)가 잘 정의된다. $R^m \cong R^n$ 이면 극대 아이디얼 $\mathfrak{m}$ 하나를 잡아 $R/\mathfrak{m}$ 를 텐서하면 체 위 벡터 공간의 차원 비교가 되어 $m = n$ 이다.
+가환환 위에서는 자유가군의 계수가 잘 정의된다. $R^m \cong R^n$ 이면 극대 아이디얼 $\mathfrak{m}$ 하나를 잡아 $R/\mathfrak{m}$ 를 텐서하면 체 위 벡터 공간의 차원 비교가 되어 $m = n$ 이다.
 
-## 소멸자와 torsion
+## 소멸자와 torsion 부분가군
 
-원소 $m \in M$ 의 소멸자는
-
-$$
-\mathrm{Ann}(m) = \lbrace r \in R : rm = 0 \rbrace
-$$
-
-이고, 이는 $R$ 의 아이디얼이다. $R$ 이 정역일 때 $\mathrm{Ann}(m) \ne 0$ 인 원소를 torsion 원소라 하고, 그 전체 $T(M)$ 은 부분가군이 된다. $T(M) = 0$ 이면 torsion-free, $T(M) = M$ 이면 torsion 가군이다. 벡터 공간에서는 항상 $T(M) = 0$ 이므로 이 개념 자체가 비어 있다.
-
-# 성질
+$\mathrm{Ann}(m)$ 은 $R$ 의 아이디얼이다. $R$ 이 정역이면 $T(M)$ 은 부분가군이다. $rm=0$ , $sn=0$ 이고 $r,s\neq0$ 이면 $rs\neq0$ 이 $m+n$ 을 소멸시킨다. 벡터 공간에서는 $0$ 이 아닌 스칼라가 가역이라 항상 $T(M) = 0$ 이다.
 
 ## 벡터 공간과의 차이
 
@@ -112,7 +120,7 @@ $$
 | 유한생성 부분구조 | 항상 유한생성 | 비[Noether 환](noetherian-rings.md)에서는 실패 |
 | 불변량 | 차원 하나 | 계수 + torsion 구조 |
 
-세 번째 줄은 실제로 자주 발목을 잡는다. $\mathbb Z$ 위에서 $\mathbb Q$ 는 어떤 유한집합으로도 생성되지 않으면서 torsion-free 다.
+$\mathbb Z$ 위에서 $\mathbb Q$ 는 어떤 유한집합으로도 생성되지 않으면서 torsion-free 다.
 
 ## 짧은 정확열과 분해
 
@@ -130,7 +138,7 @@ $$
 
 ## PID 위 유한생성 가군 구조 정리
 
-$R$ 이 주 아이디얼 정역(PID)이면 사정이 매우 좋아진다.
+$R$ 이 주 아이디얼 정역(principal ideal domain, PID)이면 유한생성 가군이 순환가군의 직합으로 분해된다.
 
 **정리.** $R$ 이 PID 이고 $M$ 이 유한생성 $R$ -가군이면, 유일하게 정해지는 계수 $n \ge 0$ 과 비단원 원소 $d_1 \mid d_2 \mid \cdots \mid d_k$ 가 존재하여
 
