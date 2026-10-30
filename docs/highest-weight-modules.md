@@ -6,7 +6,7 @@
 
 # 직관
 
-[Lie 대수](lie-algebras.md)의 $\mathfrak{sl}\_2$ 절은 기저 $H,E,F$ 와 괄호 $[H,E]=2E$, $[H,F]=-2F$, $[E,F]=H$ 를 쓴다. 표현 하나에서 $Hv=\lambda v$ 이고 $Ev=0$ 인 벡터 $v$ 를 잡고 $v_k=F^kv$ 로 둔다. $F$ 는 고윳값을 $2$ 내리므로 $Hv_k=(\lambda-2k)v_k$ 다. $E$ 를 작용시키면 $[E,F]=H$ 로 $F$ 를 하나씩 왼쪽으로 넘기며 계산하고, $k$ 에 대한 귀납으로 다음이 나온다.
+$\mathfrak{sl}\_2$ 는 기저 $H,E,F$ 와 괄호 $[H,E]=2E$, $[H,F]=-2F$, $[E,F]=H$ 를 쓴다. 표현 하나에서 $Hv=\lambda v$ 이고 $Ev=0$ 인 벡터 $v$ 를 잡고 $v_k=F^kv$ 로 둔다. $F$ 는 고윳값을 $2$ 내리므로 $Hv_k=(\lambda-2k)v_k$ 다. $E$ 를 작용시키면 $[E,F]=H$ 로 $F$ 를 하나씩 왼쪽으로 넘기며 계산하고, $k$ 에 대한 귀납으로 다음이 나온다.
 
 $$
 Ev_k=k(\lambda-k+1)\thinspace v_{k-1}
@@ -30,11 +30,13 @@ $$
 \mathfrak g=\mathfrak n^{-}\oplus\mathfrak h\oplus\mathfrak n^{+}
 $$
 
-$\mathfrak b=\mathfrak h\oplus\mathfrak n^{+}$ 을 **Borel 부분대수(Borel subalgebra)** 라 한다. $\mathfrak g$ [가군](modules.md) $V$ 와 $\mu\in\mathfrak h^\ast$ 에 대해 $V_\mu=\lbrace v\in V:hv=\mu(h)v\ \ \forall h\in\mathfrak h\rbrace$ 가 **무게공간(weight space)** 이고, $V_\mu\neq0$ 이면 $\mu$ 가 **무게(weight)** 다. $\mathfrak g_\alpha V_\mu\subset V_{\mu+\alpha}$ 이다.
+$\mathfrak b=\mathfrak h\oplus\mathfrak n^{+}$ 을 **Borel 부분대수(Borel subalgebra)** 라 한다. $\mathfrak g$ [가군](modules.md) $V$ 와 $\mu\in\mathfrak h^\ast$ 에 대해 $V_\mu=\lbrace v\in V:hv=\mu(h)v\ \ \forall h\in\mathfrak h\rbrace$ 가 **무게공간(weight space)** 이고, $V_\mu\neq0$ 이면 $\mu$ 가 **무게(weight)** 다.
 
 무게에는 다음 [부분순서](partial-orders.md)를 준다. $\mu\le\lambda$ 는 $\lambda-\mu$ 가 단순근의 음이 아닌 정수결합이라는 뜻이다.
 
 $0$ 이 아닌 $v\in V_\lambda$ 가 $\mathfrak n^{+}v=0$ 을 만족하면 $v$ 를 무게 $\lambda$ 의 **최고무게 벡터(highest-weight vector)** 라 한다.
+
+$\mathfrak{sl}\_2$ 에서는 $\mathfrak h=\mathbb CH$, $\mathfrak n^{+}=\mathbb CE$, $\mathfrak n^{-}=\mathbb CF$ 이고, $\mathfrak b$ 는 대각합이 $0$ 인 상삼각행렬 전체다. 무게 $\mu$ 를 수 $\mu(H)$ 로 적는다. 표준 표현 $\mathbb C^2$ 에서 $He_1=e_1$, $He_2=-e_2$ 이므로 무게는 $1$ 과 $-1$ 이고, $Ee_1=0$ 이므로 $e_1$ 이 무게 $1$ 의 최고무게 벡터다. $Ee_2=e_1\ne 0$ 이므로 $e_2$ 는 최고무게 벡터가 아니다.
 
 ## 보편포락대수
 
@@ -43,6 +45,8 @@ $0$ 이 아닌 $v\in V_\lambda$ 가 $\mathfrak n^{+}v=0$ 을 만족하면 $v$ �
 ## 최고무게 가군
 
 $\mathfrak g$ 가군 $V$ 가 무게 $\lambda$ 의 최고무게 벡터 $v$ 하나로 생성되면, 곧 $V=U(\mathfrak g)v$ 이면 $V$ 를 최고무게 $\lambda$ 의 **최고무게 가군** 이라 한다.
+
+$\mathfrak{sl}\_2$ 의 $\mathbb C^2$ 는 $Fe_1=e_2$ 이므로 $e_1$ 하나로 생성되고, 최고무게 $1$ 의 최고무게 가군이다. 직관 절에서 $\lambda=n$ 일 때 얻은 $n+1$ 차원 몫도 $v_0$ 이 생성하는 최고무게 $n$ 의 최고무게 가군이다.
 
 ## Verma 가군
 
@@ -58,6 +62,8 @@ $1\otimes1$ 이 무게 $\lambda$ 의 최고무게 벡터이고 $M(\lambda)$ 를 
 
 ## 무게 구조
 
+$X\in\mathfrak g_\alpha$, $v\in V_\mu$ 이면 $h(Xv)=X(hv)+\lbrack h,X\rbrack v=(\mu+\alpha)(h)Xv$ 이므로 $\mathfrak g_\alpha V_\mu\subset V_{\mu+\alpha}$ 이다.
+
 **Poincaré–Birkhoff–Witt 정리(Poincaré–Birkhoff–Witt theorem).** $\mathfrak g$ 의 순서 있는 기저 $X_1,\dots,X_d$ 에 대해 단항식 $X_1^{a_1}\cdots X_d^{a_d}$ 들이 $U(\mathfrak g)$ 의 기저다.
 
 음근마다 근벡터 $F_\beta\in\mathfrak g_{-\beta}$ 를 하나씩 잡는다. 기저를 $\mathfrak n^{-}$, $\mathfrak h$, $\mathfrak n^{+}$ 순으로 놓으면 $U(\mathfrak g)=U(\mathfrak n^{-})U(\mathfrak b)$ 이고, 최고무게 벡터 $v$ 에 대해 $U(\mathfrak b)v=\mathbb Cv$ 다. 그러므로 최고무게 가군 $V$ 는 $F_{\beta_1}\cdots F_{\beta_k}v$ 꼴의 벡터들로 생성되고, 이 벡터의 무게는 $\lambda-\beta_1-\cdots-\beta_k$ 다. 다음이 따라 나온다.
@@ -68,7 +74,7 @@ $1\otimes1$ 이 무게 $\lambda$ 의 최고무게 벡터이고 $M(\lambda)$ 를 
 
 ## Verma 가군의 보편성
 
-Poincaré–Birkhoff–Witt 정리로 $M(\lambda)$ 는 $U(\mathfrak n^{-})$ 위의 계수 $1$ 인 자유가군이다. $\mathcal P(\nu)$ 를 $\nu$ 를 양근들의 음이 아닌 정수결합으로 쓰는 방법의 수(**Kostant 분할 함수(Kostant partition function)**)라 하면 무게공간의 차원이 다음과 같다.
+Poincaré–Birkhoff–Witt 정리로 $M(\lambda)$ 는 $U(\mathfrak n^{-})$ 위의 계수 $1$ 인 자유가군이다. $\nu$ 를 양근들의 음이 아닌 정수결합으로 쓰는 방법의 수를 $\mathcal P(\nu)$ 라 한다. $\mathcal P$ 가 **Kostant 분할 함수(Kostant partition function)** 이고, 무게공간의 차원은 다음과 같다.
 
 $$
 \dim M(\lambda)\_{\lambda-\nu}=\mathcal P(\nu)
