@@ -6,31 +6,27 @@
 
 # 직관
 
-유도 함자는 완전열을 보존하지 못하는 함자의 실패를 측정하는 함자의 열이다. 가군 [범주](category.md)에서 텐서곱 $M \otimes_R -$ 은 우완전이고 $\mathrm{Hom}\_R(M, -)$ 은 좌완전이며, 둘 다 반대쪽 완전성을 잃는다. 잃어버린 정보는 사라지지 않고 $\mathrm{Tor}$ 과 $\mathrm{Ext}$ 라는 새 가군에 남는다.
-
-구성은 세 단계다. 가군을 [사영가군](projective-modules.md)이나 [단사가군](injective-modules.md)의 분해로 바꾸고, 그 분해에 함자를 적용하고, 얻은 복합체의 호몰로지를 취한다. 결과가 분해의 선택에 무관하다는 것이 이 구성의 핵심 정리이고, 짧은 완전열 하나가 유도 함자의 긴 완전열로 늘어나는 것이 주된 계산 수단이다.
-
 짧은 완전열 $0 \to A \to B \to C \to 0$ 에 함자 $F$ 를 적용하면 완전성이 한쪽 끝에서 깨진다. $F = - \otimes_{\mathbb Z} \mathbb Z/2\mathbb Z$ 와 곱하기 $2$ 로 주어지는 열 $0 \to \mathbb Z \to \mathbb Z \to \mathbb Z/2\mathbb Z \to 0$ 이 그 예다. 적용 결과는 $\mathbb Z/2\mathbb Z \to \mathbb Z/2\mathbb Z \to \mathbb Z/2\mathbb Z \to 0$ 이고 첫 사상이 영사상이므로 왼쪽 끝의 단사성이 깨진다.
 
-깨진 자리에 무엇을 놓으면 완전열이 이어지는지가 유도 함자가 답하는 물음이다. 위 예에서 그 자리에 놓이는 가군이 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) \cong \mathbb Z/2\mathbb Z$ 다. 사영가군 위에서는 $\mathrm{Hom}$ 이 완전하고 자유가군 위에서는 텐서곱이 완전하므로, 함자를 가군에 직접 적용하는 대신 그런 가군들의 완전열로 덮어 덮개에 적용한 뒤 호몰로지를 취한다.
+깨진 자리에 무엇을 놓으면 완전열이 이어지는지가 유도 함자가 답하는 물음이다. 위 예에서 그 자리에 놓이는 가군이 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z, \mathbb Z/2\mathbb Z) \cong \mathbb Z/2\mathbb Z$ 다. [사영가군](projective-modules.md) 위에서는 $\mathrm{Hom}$ 이 완전하고 자유가군 위에서는 텐서곱이 완전하므로, 함자를 가군에 직접 적용하는 대신 그런 가군들의 완전열로 덮어 덮개에 적용한 뒤 호몰로지를 취한다.
 
 # 정의
 
 ## 사영 분해
 
-가군 $M$ 의 **사영 분해**는 각 $P_n$ 이 사영가군인 완전열이다.
+가군 $M$ 의 **사영 분해(projective resolution)** 는 각 $P_n$ 이 사영가군인 완전열이다.
 
 $$
 \cdots \to P_2 \xrightarrow{d_2} P_1 \xrightarrow{d_1} P_0 \xrightarrow{\varepsilon} M \to 0
 $$
 
-모든 가군은 사영 분해를 가진다. 자유가군에서 $M$ 위로 가는 전사 $P_0 \to M$ 을 잡고 그 핵에 같은 구성을 되풀이하면 된다. 절단된 복합체 $P_\bullet$ 은 $M$ 을 뗀 $\cdots \to P_1 \to P_0 \to 0$ 을 가리킨다.
+절단된 복합체 $P_\bullet$ 은 $M$ 을 뗀 $\cdots \to P_1 \to P_0 \to 0$ 을 가리킨다. 직관 절의 열 $0\to\mathbb Z\xrightarrow{\times 2}\mathbb Z\to\mathbb Z/2\mathbb Z\to 0$ 이 $\mathbb Z$ 가군 $\mathbb Z/2\mathbb Z$ 의 사영 분해이고, $P_1=P_0=\mathbb Z$, $d_1=\times 2$ 다.
 
-**단사 분해**는 쌍대로 정의한다. 각 $I^n$ 이 단사가군인 완전열 $0 \to M \to I^0 \to I^1 \to \cdots$ 이다. 가군 범주에서는 모든 가군이 단사가군에 매장된다.
+가군 $M$ 의 **단사 분해(injective resolution)** 는 각 $I^n$ 이 [단사가군](injective-modules.md)인 완전열 $0 \to M \to I^0 \to I^1 \to \cdots$ 이다. 나눗셈이 늘 되는 가환군은 단사 $\mathbb Z$ 가군이므로 $0\to\mathbb Z\to\mathbb Q\to\mathbb Q/\mathbb Z\to 0$ 이 $\mathbb Z$ 의 단사 분해다.
 
 ## 왼쪽 유도 함자
 
-$F$ 가 가법 우완전 함자일 때 $M$ 의 $n$ 번째 **왼쪽 유도 함자**는 사영 분해 $P_\bullet$ 을 써서 정의한다.
+$F$ 가 가법 오른쪽 완전(right exact) 함자일 때 $M$ 의 $n$ 번째 **왼쪽 유도 함자(left derived functor)** 는 사영 분해 $P_\bullet$ 으로 정의한 다음 가군이다.
 
 $$
 L_nF(M) = H_n\bigl(F(P_\bullet)\bigr)
@@ -38,47 +34,55 @@ $$
 
 $F(P_\bullet)$ 은 사슬 복합체 $\cdots \to F(P_1) \to F(P_0) \to 0$ 이고 $H_n$ 은 그 $n$ 번째 [호몰로지](homology.md)다.
 
+$F=-\otimes_{\mathbb Z}\mathbb Z/2\mathbb Z$, $M=\mathbb Z/2\mathbb Z$ 이면 $F(P_\bullet)$ 은 $0\to\mathbb Z/2\mathbb Z\xrightarrow{0}\mathbb Z/2\mathbb Z\to 0$ 이다. 그래서 $L_0F(M)=\mathbb Z/2\mathbb Z$, $L_1F(M)=\mathbb Z/2\mathbb Z$ 이고 $n\ge 2$ 에서 $0$ 이다.
+
 ## 오른쪽 유도 함자
 
-$G$ 가 가법 좌완전 함자일 때 $M$ 의 $n$ 번째 **오른쪽 유도 함자**는 단사 분해 $I^\bullet$ 을 써서 정의한다.
+$G$ 가 가법 왼쪽 완전(left exact) 함자일 때 $M$ 의 $n$ 번째 **오른쪽 유도 함자(right derived functor)** 는 단사 분해 $I^\bullet$ 으로 정의한 다음 가군이다.
 
 $$
 R^nG(M) = H^n\bigl(G(I^\bullet)\bigr)
 $$
 
+$G=\mathrm{Hom}\_{\mathbb Z}(\mathbb Z/2\mathbb Z,-)$, $M=\mathbb Z$ 이면 위의 단사 분해에서 $G(\mathbb Q)=0$ 이고 $G(\mathbb Q/\mathbb Z)\cong\mathbb Z/2\mathbb Z$ 다. 후자는 $1$ 을 $1/2$ 로 보내는 사상이 생성한다. 그래서 $R^0G(\mathbb Z)=0$, $R^1G(\mathbb Z)\cong\mathbb Z/2\mathbb Z$ 다.
+
 ## Tor 와 Ext
 
-환 $R$ 위의 두 가군 $M, N$ 에 대해 두 유도 함자를 다음으로 정의한다.
+환 $R$ 위의 두 가군 $M, N$ 에 대해 **Tor** 와 **Ext** 는 다음 유도 함자다.
 
 $$
 \mathrm{Tor}\_n^R(M, N) = L_n(- \otimes_R N)(M), \qquad \mathrm{Ext}\_R^n(M, N) = R^n \mathrm{Hom}\_R(M, -)(N)
 $$
 
-$\mathrm{Ext}$ 는 둘째 변수의 단사 분해 대신 첫째 변수의 사영 분해로도 계산되며 두 결과가 자연동형이다.
+위의 두 계산이 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2\mathbb Z,\mathbb Z/2\mathbb Z)\cong\mathbb Z/2\mathbb Z$ 와 $\mathrm{Ext}^1\_{\mathbb Z}(\mathbb Z/2\mathbb Z,\mathbb Z)\cong\mathbb Z/2\mathbb Z$ 다.
 
 # 성질
 
+## 분해의 존재
+
+모든 가군은 사영 분해를 가진다. 자유가군에서 $M$ 위로 가는 전사 $P_0 \to M$ 을 잡고 그 핵에 같은 구성을 되풀이하면 된다. 가군 범주에서는 모든 가군이 단사가군에 단사 준동형으로 들어가므로 단사 분해도 늘 있다.
+
 ## 분해의 독립성
 
-두 사영 분해 사이에는 항등사상을 덮는 사슬 사상이 존재하고, 그런 사슬 사상은 사슬 호모토피를 무시하면 유일하다. 가법 함자는 사슬 호모토피를 보존하므로 호몰로지가 같다. 따라서 $L_nF(M)$ 은 분해의 선택에 무관하다.
+두 사영 분해 사이에는 항등사상을 덮는 사슬 사상이 존재하고, 그런 사슬 사상은 사슬 호모토피를 무시하면 유일하다. 가법 함자는 사슬 호모토피를 보존하므로 호몰로지가 같다. 따라서 $L_nF(M)$ 은 분해의 선택에 무관하다. $\mathrm{Ext}$ 는 둘째 변수의 단사 분해 대신 첫째 변수의 사영 분해로도 계산되며 두 결과가 자연동형이다.
 
 증명의 요지는 사영성의 올림 성질이다. $P_n$ 이 사영이므로 전사 위로 가는 사상은 항상 올라가고, 두 올림의 차는 다음 단계에서 호모토피를 준다.
 
 ## 0 차 항
 
-$F$ 가 우완전이면 $L_0F \cong F$ 이고, $G$ 가 좌완전이면 $R^0G \cong G$ 다. 완전열 $P_1 \to P_0 \to M \to 0$ 에 우완전 $F$ 를 적용하면 $F(P_1) \to F(P_0) \to F(M) \to 0$ 이 완전이므로 $H_0(F(P_\bullet)) = F(M)$ 이다.
+$F$ 가 오른쪽 완전이면 $L_0F \cong F$ 이고, $G$ 가 왼쪽 완전이면 $R^0G \cong G$ 다. 완전열 $P_1 \to P_0 \to M \to 0$ 에 오른쪽 완전 $F$ 를 적용하면 $F(P_1) \to F(P_0) \to F(M) \to 0$ 이 완전이므로 $H_0(F(P_\bullet)) = F(M)$ 이다.
 
 $F$ 가 완전 함자이면 모든 $n \ge 1$ 에서 $L_nF = 0$ 이다. 유도 함자가 사라지는 것과 함자가 완전인 것이 대응한다.
 
 ## 긴 완전열
 
-짧은 완전열 $0 \to A \to B \to C \to 0$ 과 우완전 함자 $F$ 에 대해 다음 긴 완전열이 존재한다.
+짧은 완전열 $0 \to A \to B \to C \to 0$ 과 오른쪽 완전 함자 $F$ 에 대해 다음 긴 완전열이 존재한다.
 
 $$
 \cdots \to L_1F(C) \to F(A) \to F(B) \to F(C) \to 0
 $$
 
-좌완전 $G$ 에 대해서는 방향이 반대인 열을 얻는다.
+왼쪽 완전 $G$ 에 대해서는 방향이 반대인 열을 얻는다.
 
 $$
 0 \to G(A) \to G(B) \to G(C) \to R^1G(A) \to \cdots
