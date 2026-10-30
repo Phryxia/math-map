@@ -16,59 +16,65 @@ $\mathbb Z\otimes_{\mathbb Z}\mathbb Z/2\cong\mathbb Z/2$ 이고 $2$ 배 사상�
 
 $$0\to\mathbb Z/2\xrightarrow{\thinspace 0\thinspace}\mathbb Z/2\xrightarrow{\thinspace\mathrm{id}\thinspace}\mathbb Z/2\to 0$$
 
-이다. 가운데 $\mathbb Z/2$ 에서 핵은 $\mathbb Z/2$ 전체인데 왼쪽에서 들어오는 상은 $0$ 이다. 핵과 상이 다르므로 이 열은 완전하지 않다. 합성은 여전히 모든 자리에서 $0$ 이다.
+이다. 왼쪽 $\mathbb Z/2$ 에서 나가는 $0$ 사상의 핵은 $\mathbb Z/2$ 전체인데 들어오는 상은 $0$ 이다. 핵과 상이 다르므로 이 열은 완전하지 않다. 합성은 여전히 모든 자리에서 $0$ 이다.
 
 핵이 상보다 큰 자리가 생겼으니 완전성을 요구하지 않고 합성이 $0$ 인 것만 요구한다. 그리고 각 자리에서 핵을 상으로 나눈 몫가군을 그 열에 딸린 값으로 삼는다.
 
-위 열의 가운데 자리에서 핵은 $\mathbb Z/2$ 이고 상은 $0$ 이므로 몫은 $\mathbb Z/2$ 다. 오른쪽 자리에서는 핵이 $0$ 이고 상도 $0$ 이므로 몫이 $0$ 이고, 왼쪽 자리도 $0$ 이다. 그래서 완전성이 깨진 자리와 깨진 양이 가군 하나로 적힌다.
+위 열의 왼쪽 자리에서 핵은 $\mathbb Z/2$ 이고 상은 $0$ 이므로 몫은 $\mathbb Z/2$ 다. 가운데 자리에서는 핵이 $0$ 이고 상도 $0$ 이므로 몫이 $0$ 이고, 오른쪽 자리에서는 핵과 상이 모두 $\mathbb Z/2$ 이므로 몫이 $0$ 이다. 그래서 완전성이 깨진 자리와 깨진 양이 가군 하나로 적힌다.
 
 합성이 $0$ 인 가군의 열을 사슬 복합체라 하고, 각 자리의 몫가군을 호몰로지라 한다. 위에서 남은 $\mathbb Z/2$ 는 $\mathrm{Tor}\_1^{\mathbb Z}(\mathbb Z/2,\mathbb Z/2)$ 다.
 
-호몰로지가 모든 자리에서 $0$ 인 것과 그 열이 완전열인 것이 같다.
-
 # 정의
+
+이 절의 예는 직관 절의 열을 $C_2=C_1=C_0=\mathbb Z/2$, $d_2=0$, $d_1=\mathrm{id}$ 로 번호 붙인 복합체 $C\_\bullet$ 다. 나머지 $C_n$ 은 $0$ 이다.
 
 ## 사슬 복합체
 
-사슬 복합체는 가군의 모음 $(C_n)\_{n\in\mathbb Z}$ 와 사상 $d_n:C_n\to C_{n-1}$ 의 쌍 $(C\_\bullet,d)$ 로, 모든 $n$ 에서
+**사슬 복합체** 는 가군의 모음 $(C_n)\_{n\in\mathbb Z}$ 와 사상 $d_n:C_n\to C_{n-1}$ 의 쌍 $(C\_\bullet,d)$ 가운데 모든 $n$ 에서 다음을 만족하는 것이다.
 
 $$d_{n-1}\circ d_n=0$$
 
-인 것이다. $d_n$ 을 경계 사상이라 한다. 유한 개의 자리에서만 $C_n\ne 0$ 인 것을 유계 복합체라 한다.
+$d_n$ 을 **경계 사상(boundary map)** 이라 한다. 유한 개의 자리에서만 $C_n\ne 0$ 인 것을 **유계 복합체(bounded complex)** 라 한다.
+
+위의 $C\_\bullet$ 는 $d_1\circ d_2=\mathrm{id}\circ 0=0$ 이므로 유계 사슬 복합체다. $\mathbb Z\xrightarrow{1}\mathbb Z\xrightarrow{1}\mathbb Z$ 는 합성이 $1$ 배 사상이므로 사슬 복합체가 아니다.
 
 ## 순환과 경계
 
+$n$ 차 **순환(cycle)** 과 $n$ 차 **경계(boundary)** 는 다음 부분가군의 원소다.
+
 $$Z_n=\ker d_n,\qquad B_n=\mathrm{Im}\thinspace d_{n+1}$$
 
-을 각각 $n$ 차 순환과 $n$ 차 경계라 한다. $d_n\circ d_{n+1}=0$ 에서 $B_n\subset Z_n$ 이다.
+$d_n\circ d_{n+1}=0$ 이므로 $B_n\subset Z_n$ 이다. 위의 $C\_\bullet$ 에서 $Z_2=\mathbb Z/2$, $B_2=0$ 이고, $Z_1=B_1=0$ 이고, $Z_0=B_0=\mathbb Z/2$ 다.
 
 ## 호몰로지
 
-$n$ 차 호몰로지는 몫가군
+$n$ 차 **호몰로지(homology)** 는 다음 몫가군이다.
 
 $$H_n(C\_\bullet)=Z_n/B_n$$
 
-이다. 순환 $z$ 가 정하는 류를 $\lbrack z\rbrack$ 로 적는다.
+순환 $z$ 가 정하는 류를 $\lbrack z\rbrack$ 로 적는다. 위의 $C\_\bullet$ 에서는 $H_2=\mathbb Z/2$ 이고 $H_1=H_0=0$ 이다. 직관 절에서 완전성이 깨진 왼쪽 자리가 $H_2$ 다.
 
 ## 공사슬 복합체
 
-사상의 차수가 올라가는 열, 곧 $d^n:C^n\to C^{n+1}$ 에 $d^{n+1}\circ d^n=0$ 인 것을 공사슬 복합체라 한다. 그 몫가군 $H^n=\ker d^n/\mathrm{Im}\thinspace d^{n-1}$ 을 코호몰로지라 한다.
+**공사슬 복합체(cochain complex)** 는 사상의 차수가 올라가는 열, 곧 $d^n:C^n\to C^{n+1}$ 에 $d^{n+1}\circ d^n=0$ 인 것이다. 그 몫가군 $H^n=\ker d^n/\mathrm{Im}\thinspace d^{n-1}$ 을 [코호몰로지](cohomology.md)라 한다.
+
+$C^0=C^1=\mathbb Z$, $d^0=2$ 이고 나머지가 $0$ 인 공사슬 복합체에서 $H^0=\ker 2=0$, $H^1=\mathbb Z/2\mathbb Z$ 다.
 
 ## 사슬 사상
 
-사슬 사상 $f:C\_\bullet\to D\_\bullet$ 는 사상들의 모음 $f_n:C_n\to D_n$ 으로 모든 $n$ 에서
+**사슬 사상(chain map)** $f:C\_\bullet\to D\_\bullet$ 는 사상들의 모음 $f_n:C_n\to D_n$ 가운데 모든 $n$ 에서 다음을 만족하는 것이다.
 
 $$d_n^D\circ f_n=f_{n-1}\circ d_n^C$$
 
-인 것이다.
+$C_1=C_0=\mathbb Z$, $d_1=2$ 인 복합체에서 $D_1=D_0=\mathbb Z/2$, $d_1=0$ 인 복합체로 각 자리에서 $2$ 로 나눈 나머지를 주는 사상이 사슬 사상이다. $x\in C_1$ 에서 양변이 $0$ 과 $2x$ 의 나머지 $0$ 으로 같다.
 
 ## 사슬 호모토피
 
-두 사슬 사상 $f,g:C\_\bullet\to D\_\bullet$ 에 대해 사상 $s_n:C_n\to D_{n+1}$ 이 있어
+두 사슬 사상 $f,g:C\_\bullet\to D\_\bullet$ 가 **사슬 호모토픽(chain homotopic)** 하다는 것은 모든 $n$ 에서 다음을 만족하는 사상 $s_n:C_n\to D_{n+1}$ 이 있는 것이다.
 
 $$f_n-g_n=d_{n+1}^D\circ s_n+s_{n-1}\circ d_n^C$$
 
-이면 $f$ 와 $g$ 가 사슬 호모토픽하다고 한다.
+$C_1=C_0=\mathbb Z$, $d_1=\mathrm{id}$ 인 복합체에서 항등사상과 $0$ 사상은 $s_0=\mathrm{id}:C_0\to C_1$ 으로 사슬 호모토픽하다. $n=0$ 에서 우변이 $d_1s_0=\mathrm{id}$ 이고, $n=1$ 에서 우변이 $s_0d_1=\mathrm{id}$ 다.
 
 # 성질
 
