@@ -6,43 +6,35 @@
 
 # 직관
 
-유한체는 원소 개수가 유한한 체다. 유한체는 완전히 분류된다. 위수는 반드시 소수의 거듭제곱 $p^n$ 이고, 각 $p^n$ 마다 체가 동형을 무시하면 정확히 하나 존재한다. 이 체를 $\mathbb{F}\_q$ ( $q=p^n$ ) 또는 $\mathrm{GF}(q)$ 로 쓴다.
-
-유한체가 $\mathbb{F}\_p$ 위의 [확대](field-extensions.md)이면서 한 다항식의 분해체라는 점에서 이 분류가 나온다. 구조도 단순하다. 덧셈군은 $\mathbb{F}\_p$ 위 $n$ 차원 [벡터 공간](vector-spaces.md), 곱셈군은 위수 $q-1$ 의 순환군, 자기동형군은 Frobenius 가 생성하는 위수 $n$ 의 순환군이다. 이 완결성 덕분에 유한체는 오류정정 부호, 암호, 조합 설계에서 표준 계산 대상으로 쓰인다.
-
 $p$ 가 [소수](primes.md)일 때 [나머지 연산](modular-arithmetic.md) $\mathbb{Z}/p\mathbb{Z}$ 는 체다. $0$ 이 아닌 모든 나머지가 $p$ 와 서로소라 역원을 갖는다. 반면 $\mathbb{Z}/6\mathbb{Z}$ 는 $2\cdot 3=0$ 이어서 체가 아니다. 그래서 "원소 6개인 체"를 나머지 연산으로는 만들 수 없다.
 
-원소 4개인 체는 $\mathbb{Z}/4\mathbb{Z}$ 가 아니라 $\mathbb{F}\_2$ 위의 2차 확대로 만든다. $x^2+x+1$ 은 $\mathbb{F}\_2$ 에서 근이 없으므로 기약이고, 몫환이 체가 된다.
+원소 4개인 체도 나머지 연산으로는 만들 수 없다. $\mathbb{Z}/4\mathbb{Z}$ 에서는 $2\cdot2=0$ 이므로 $2$ 의 역원이 없다. 대신 원소가 $0,1$ 둘인 $\mathbb{F}\_2$ 에 새 원소 $\alpha$ 를 넣고 $\alpha^2=\alpha+1$ 로 정한다. $x^2+x+1$ 은 $\mathbb{F}\_2$ 의 $0$ 과 $1$ 을 넣으면 둘 다 $1$ 이 되어 근이 없으므로, $\alpha$ 는 $\mathbb{F}\_2$ 밖의 원소다.
 
 $$
 \mathbb{F}\_4=\mathbb{F}\_2[x]/(x^2+x+1)=\lbrace 0,\thinspace 1,\thinspace\alpha,\thinspace\alpha+1\rbrace,\qquad \alpha^2=\alpha+1
 $$
 
-여기서 $\alpha$ 의 거듭제곱이 $\alpha$ , $\alpha+1$ , $1$ 로 순환하며 $0$ 이 아닌 원소 세 개를 모두 훑는다. 곱셈군이 순환군이므로 유한체의 곱셈을 지수 하나로 적는다.
+$\mathbb{F}\_2$ 에서 $1+1=0$ 이므로 $\alpha(\alpha+1)=\alpha^2+\alpha=2\alpha+1=1$ 이다. 그래서 $\alpha$ 와 $\alpha+1$ 은 서로의 역원이고, $0$ 이 아닌 세 원소가 모두 역원을 가진다. $\alpha$ 를 거듭제곱하면 $\alpha$, $\alpha+1$, $1$ 이 차례로 나와 $0$ 이 아닌 원소 세 개를 모두 지난다. 그래서 $\mathbb{F}\_4$ 의 곱셈은 $\alpha$ 의 지수끼리 더하는 계산으로 적힌다.
 
 # 정의
 
-유한체는 원소 개수가 유한한 체이고, 그 원소 개수를 위수라 한다. 위수 $q$ 의 유한체를 $\mathbb{F}\_q$ 로 쓴다.
+**유한체(finite field)** 는 원소 개수가 유한한 체이고, 그 원소 개수를 **위수(order)** 라 한다. $\mathbb{Z}/7\mathbb{Z}$ 는 위수 $7$, 직관 절의 $\mathbb{F}\_4$ 는 위수 $4$ 의 유한체다. 위수가 같은 유한체는 모두 동형이므로(성질 절) 위수 $q$ 의 유한체를 $\mathbb{F}\_q$ 또는 $\mathrm{GF}(q)$ 로 쓴다. $\mathrm{GF}$ 는 Galois field 의 머리글자다.
 
-$q=p^n$ 인 유한체는 $\mathbb{F}\_p$ 위의 $n$ 차 확대로 실현된다. 즉 [다항식환](polynomial-rings.md) $\mathbb{F}\_p[x]$ 의 $n$ 차 기약다항식 $f$ 를 잡으면 다음이 성립한다.
+**원시근(primitive element)** 은 $\mathbb{F}\_q$ 의 곱셈군을 생성하는 원소, 곧 거듭제곱이 $0$ 이 아닌 원소를 모두 지나는 원소다. $\mathbb{F}\_4$ 에서는 $\alpha$ 가 원시근이다. $\mathbb{F}\_7$ 에서 $3$ 의 거듭제곱은 $3,2,6,4,5,1$ 이므로 $3$ 은 원시근이고, $2$ 의 거듭제곱은 $2,4,1$ 에서 되풀이되므로 $2$ 는 원시근이 아니다.
 
-$$
-\mathbb{F}\_{p^n}\cong \mathbb{F}\_p[x]/(f),\qquad [\mathbb{F}\_{p^n}:\mathbb{F}\_p]=n
-$$
-
-$\mathbb{F}\_q$ 의 곱셈군을 생성하는 원소를 원시근(primitive element) 또는 generator 라 한다.
-
-Frobenius 사상은 $p$ 제곱 사상이다.
+$\mathbb{F}\_q$ 의 표수가 $p$ 일 때 **Frobenius 사상(Frobenius map)** 은 $p$ 제곱 사상이다.
 
 $$
 \varphi:\mathbb{F}\_q\to\mathbb{F}\_q,\qquad \varphi(a)=a^{p}
 $$
 
+$\mathbb{F}\_4$ 에서는 $p=2$ 이고 $\varphi(\alpha)=\alpha^2=\alpha+1$, $\varphi(\alpha+1)=\alpha^2+1=\alpha$ 이므로 $\varphi$ 는 $\alpha$ 와 $\alpha+1$ 을 맞바꾸고 $0,1$ 을 고정한다. $\mathbb{F}\_7$ 에서는 Fermat 소정리로 $a^7=a$ 이므로 $\varphi$ 가 항등사상이다.
+
 # 성질
 
 ## 위수
 
-유한체 $F$ 의 표수는 $0$ 일 수 없으므로 소수 $p$ 이고, 소체는 $\mathbb{F}\_p$ 와 동형이다. $F$ 는 $\mathbb{F}\_p$ 위 유한차원 벡터 공간이므로 차원을 $n$ 이라 하면 원소 개수는 $p^n$ 이다[^1].
+유한체 $F$ 의 표수는 $0$ 일 수 없으므로 소수 $p$ 이고, 소체는 $\mathbb{F}\_p$ 와 동형이다. $F$ 는 $\mathbb{F}\_p$ 위 유한차원 [벡터 공간](vector-spaces.md)이므로 차원을 $n$ 이라 하면 원소 개수는 $p^n$ 이다[^1].
 
 ## 곱셈군의 순환성
 
@@ -72,7 +64,17 @@ $$
 \mathbb{F}\_{p^n}=\lbrace a : a^{p^n}=a\rbrace\subseteq \overline{\mathbb{F}\_p}
 $$
 
-이 결과가 "원소 6개인 체는 없다"와 "원소 4개인 체는 동형을 무시하면 하나"를 동시에 준다. 기약다항식을 다르게 골라도 얻어지는 체는 동형이다.
+이 결과가 "원소 6개인 체는 없다"와 "원소 4개인 체는 동형을 무시하면 하나"를 동시에 준다.
+
+## 다항식 몫으로의 표현
+
+[다항식환](polynomial-rings.md) $\mathbb{F}\_p[x]$ 의 $n$ 차 기약다항식 $f$ 를 잡으면 $\mathbb{F}\_p[x]/(f)$ 는 위수 $p^n$ 의 체이고, $\mathbb{F}\_p$ 의 $n$ 차 [확대](field-extensions.md)다.
+
+$
+\mathbb{F}\_{p^n}\cong \mathbb{F}\_p[x]/(f),\qquad [\mathbb{F}\_{p^n}:\mathbb{F}\_p]=n
+$
+
+몫환의 원소는 차수가 $n$ 미만인 $\mathbb{F}\_p$ 계수 다항식으로 하나씩 대표되므로 $p^n$ 개다. 유일성에 따라 기약다항식을 다르게 골라도 얻어지는 체는 동형이다.
 
 ## 부분체와 Frobenius
 
