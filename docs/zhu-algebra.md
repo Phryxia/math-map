@@ -14,19 +14,9 @@ $$
 
 정의상 이것은 등급 차원의 [생성함수](generating-functions.md)이고 $q$ 의 형식급수다. 그런데 알려진 예마다 모듈러 성질을 갖는다. 격자 VOA(vertex operator algebra) 에서 [theta 급수](theta-series.md)를 $\eta$ 로 나눈 꼴이 나오고, Virasoro 최소모형에서 Rocha-Caridi 공식이 나오고, [괴물 달빛](monstrous-moonshine.md)에서는 $j-744$ 가 나온다. Zhu 는 1996 년에 이것이 정리임을 증명했다.
 
-> $V$ 가 $C_2$ 여유한이고 유리적이면 기약가군은 유한개이고 지표들이 상반평면에서 수렴하며, 그 유한차원 span 위에서 $\mathrm{SL}\_2(\mathbb Z)$ 가 작용한다.
-
-$$
-\mathrm{ch}\_{M_i}\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_j\rho(\gamma)\_{ij}\mathrm{ch}\_{M_j}(\tau)
-$$
-
-대수적 대상에서 나온 급수가 [모듈러 형식](modular-forms.md)이 되는 조건을 대수 쪽에서 준 정리이며, 달빛 현상의 기반이다.
-
-증명의 도구가 Zhu 대수 $A(V)$ 다. 무한차원인 $V$ 에서 결합 대수 하나를 뽑아내는 구성이고, 그 대수의 기약가군이 $V$ 의 기약가군과 일대일 대응한다. 무한차원 정점대수의 표현론이 유한차원 결합대수의 표현론으로 내려오며, 가군의 분류와 지표의 모듈러성이 모두 이 구성에서 나온다.
-
 물리 쪽 그림에서 $\mathrm{ch}\_M(\tau)$ 는 복소 원환면 $\mathbb C/(\mathbb Z+\mathbb Z\tau)$ 위의 분배함수다. 원환면은 $\tau$ 와 $-1/\tau$ 를 같은 모양으로 보므로 분배함수도 그 두 값에서 같아야 한다. 그런데 대각합을 계산할 때는 한 방향을 시간, 다른 방향을 공간으로 고르고, 두 방향을 맞바꾼 계산이 같은 값을 준다는 논증은 급수가 수렴하고 대각합이 잘 정의될 때만 성립한다. $\mathfrak{sl}\_2$ 아핀 VOA 를 음의 정수가 아닌 레벨에서 보거나 $C_2$ 여유한이 아닌 VOA 를 보면 지표가 수렴하지 않거나, 수렴해도 모듈러 궤도가 무한차원이 된다.
 
-$C_2$ 여유한 조건은 $C_2(V)=\mathrm{span}\lbrace a_{-2}b:a,b\in V\rbrace$ 에 대해 $\dim V/C_2(V)\lt\infty$ 를 요구한다. $V/C_2(V)$ 가 유한차원이면 그 위의 연산이 유한 단계에서 선형종속을 만들고, 그것이 모듈러 형식을 계수로 갖는 선형 [상미분방정식](ordinary-differential-equations.md)으로 번역된다.
+$C_2$ 여유한 조건은 $C_2(V)=\mathrm{span}\lbrace a_{-2}b:a,b\in V\rbrace$ 에 대해 $\dim V/C_2(V)\lt\infty$ 를 요구한다. $V/C_2(V)$ 가 유한차원이면 그 위의 연산이 유한 단계에서 선형종속을 만들고, 그것이 [모듈러 형식](modular-forms.md)을 계수로 갖는 선형 [상미분방정식](ordinary-differential-equations.md)으로 번역된다.
 
 $$
 \left(\partial_q^{(n)}+g_2(\tau)\partial_q^{(n-2)}+\cdots+g_n(\tau)\right)f=0,\qquad g_k\in M_{2k}(\mathrm{SL}\_2(\mathbb Z))
@@ -51,32 +41,43 @@ $$
 A(V)=V/O(V)
 $$
 
-를 **Zhu 대수**라 한다. $\ast$ 가 $O(V)$ 를 내리고 몫에서 결합적이 되며, $[\mathbf1]$ 이 단위원이고 $[\omega]$ 가 중심에 들어간다. 두 식은 $z$ 의 거듭제곱 하나만 다른데, 하나는 곱을 정의하고 하나는 몫으로 날릴 부분공간을 정의한다.
+를 **Zhu 대수(Zhu algebra)** 라 한다. 두 식은 $z$ 의 거듭제곱 하나만 다르고, $\ast$ 는 곱을, $\circ$ 는 몫으로 날릴 부분공간을 정의한다.
+
+$a=\mathbf1$ 이면 $\mathrm{wt}\thinspace\mathbf1=0$ 이고 $Y(\mathbf1,z)=\mathrm{id}$ 이므로 $\mathbf1\ast b=\mathop{\mathrm{Res}}\_z(b/z)=b$, $\mathbf1\circ b=\mathop{\mathrm{Res}}\_z(b/z^2)=0$ 이다.
 
 ## 허용가군과 최저층
 
-허용가군은 아래로 유계인 등급 공간이다.
+**허용가군(admissible module)** 은 아래로 유계인 등급을 가진 $V$ 가군이다.
 
 $$
 M=\bigoplus_{n\ge0}M(n),\qquad L_0\vert_{M(n)}=h+n
 $$
 
-$M$ 이 기약이면 최저층 $M(0)$ 이 전체를 생성한다. $a\in V$ 의 성분 가운데 등급을 보존하는 $o(a)=a_{\mathrm{wt}\thinspace a-1}$ 만 $M(0)$ 을 $M(0)$ 으로 보내고, 이 작용소들이 만드는 대수가 $A(V)$ 다.
+$M(0)$ 을 **최저층(top level)** 이라 하고, $a\in V$ 의 성분 가운데 등급을 보존하는 것을 $o(a)=a_{\mathrm{wt}\thinspace a-1}$ 로 적는다.
+
+$V$ 자신은 $h=0$ 인 허용가군이고 최저층은 $V_0=\mathbb C\mathbf1$ 이다. $o(\omega)=L_0$ 은 최저층 위에서 $h$ 로 작용한다.
 
 ## 유한성 조건
 
-- **$C_2$ 여유한**: $C_2(V)=\mathrm{span}\lbrace a_{-2}b\rbrace$ 에 대해 $\dim V/C_2(V)\lt\infty$ 인 것.
-- **유리적**: 모든 허용가군이 완전가약.
+- **$C_2$ 여유한($C_2$-cofinite)**: $C_2(V)=\mathrm{span}\lbrace a_{-2}b\rbrace$ 에 대해 $\dim V/C_2(V)\lt\infty$ 인 것.
+- **유리적(rational)**: 모든 허용가군이 완전가약.
 
-두 조건은 논리적으로 독립이지만 알려진 예에서는 대개 함께 성립하고, 둘 다 만족하는 VOA 를 **강유리적**이라 부른다. $C_2$ 여유한이면 $A(V)$ 가 유한차원이고 기약가군이 유한개다.
+둘 다 만족하고 $V_0=\mathbb C\mathbf1$ 인 VOA 를 **강유리적(strongly rational)** 이라 부른다. 양의 정부호 짝수 격자의 격자 VOA 가 그 예다.
+
+# 성질
 
 ## 두 정리
 
+$\ast$ 가 $O(V)$ 를 내리고 몫에서 결합적이 되며, $\lbrack\mathbf1\rbrack$ 이 단위원이고 $\lbrack\omega\rbrack$ 가 중심에 들어간다. $M$ 이 기약이면 최저층 $M(0)$ 이 전체를 생성하고, $o(a)$ 만 $M(0)$ 을 $M(0)$ 으로 보내며 이 작용소들이 만드는 대수가 $A(V)$ 다. $C_2$ 여유한과 유리적은 논리적으로 독립이지만 알려진 예에서는 대개 함께 성립한다. $C_2$ 여유한이면 $A(V)$ 가 유한차원이고 기약가군이 유한개다.
+
 > **분류 정리 (Zhu).** $M\mapsto M(0)$ 이 $V$ 의 기약 허용가군의 동형류와 $A(V)$ 의 기약가군의 동형류 사이의 전단사를 준다.
 
-> **모듈러 불변성 정리 (Zhu).** $V$ 가 $C_2$ 여유한, 유리적이고 $V_0=\mathbb C\mathbf1$ 이면 기약가군 $M_1,\dots,M_k$ 의 지표가 $\mathbb H$ 에서 수렴하고, 그 span 위에 $\mathrm{SL}\_2(\mathbb Z)$ 의 $k$ 차원 표현 $\rho$ 가 있어 위 변환식이 성립한다.
+> **모듈러 불변성 정리 (Zhu).** $V$ 가 $C_2$ 여유한, 유리적이고 $V_0=\mathbb C\mathbf1$ 이면 기약가군 $M_1,\dots,M_k$ 의 지표가 $\mathbb H$ 에서 수렴하고, 그 span 위에 $\mathrm{SL}\_2(\mathbb Z)$ 의 $k$ 차원 표현 $\rho$ 가 있어 다음 변환식이 성립한다.
 
-# 성질
+$$
+\mathrm{ch}\_{M_i}\negthinspace\left(\frac{a\tau+b}{c\tau+d}\right)=\sum_j\rho(\gamma)\_{ij}\mathrm{ch}\_{M_j}(\tau)
+$$
+
 
 ## Virasoro 대수와 격자 VOA 의 Zhu 대수
 
