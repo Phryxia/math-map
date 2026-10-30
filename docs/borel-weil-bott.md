@@ -14,8 +14,6 @@ $$
 
 가 $G$ 가군으로 성립한다. 차원 계산은 [Riemann–Roch](riemann-roch.md) 유형의 코호몰로지 계산이 된다.
 
-Bott 가 1957 년에 $\lambda$ 가 지배적이지 않은 경우를 답했다[^1]. 코호몰로지가 전부 사라지거나, 정확히 한 차수에서만 살아남되 그 차수와 나타나는 표현이 $\lambda$ 를 $\rho$ 이동한 Weyl 군 작용으로 결정된다. 지표 공식의 $\rho$ 이동은 계산 편의가 아니라 코호몰로지 차수를 세는 기하적 양이다.
-
 $G$ 의 기약표현 $V_\lambda$ 안에서 최고무게 벡터 $v_\lambda$ 는 상수배를 빼면 유일하다. $\mathbb P(V_\lambda)$ 에서 점 $\lbrack v_\lambda\rbrack$ 의 $G$ 궤도를 보면 안정자가 Borel 부분군 $B$ 이고 궤도가 $G/B$ 다. 표현마다 다른 다양체가 나오는 것이 아니라 $\lambda$ 에 무관한 하나의 다양체가 나오고, 표현의 정보는 그 위의 직선다발로 옮겨간다.
 
 거꾸로 $G/B\hookrightarrow\mathbb P(V_\lambda)$ 에서 $\mathcal O(1)$ 을 당긴 직선다발 $\mathcal L_\lambda$ 의 대역 단면을 세면 $V_\lambda$ 의 쌍대가 나온다. $\lambda$ 가 지배적이 아니면 단면이 없지만 높은 차수 코호몰로지는 남고, 어느 차수에 남는지는 $\lambda+\rho$ 를 지배적 방으로 옮기는 데 넘어야 하는 벽의 개수가 정한다.
@@ -24,11 +22,7 @@ $G$ 의 기약표현 $V_\lambda$ 안에서 최고무게 벡터 $v_\lambda$ 는 �
 
 ## 깃발다양체
 
-$G$ 를 복소 반단순 대수군, $B\le G$ 를 Borel 부분군(극대 연결 가해 부분군), $T\le B$ 를 극대 원환면이라 하자. 몫 $X=G/B$ 는 매끄러운 사영 대수다양체이고 **깃발다양체**라 한다. 차원은 양근의 개수다.
-
-$$
-\dim_{\mathbb C}G/B=|\Phi^+|=\frac{\dim G-\mathrm{rank}G}{2}
-$$
+$G$ 를 복소 반단순 대수군, $B\le G$ 를 Borel 부분군(극대 연결 가해 부분군), $T\le B$ 를 극대 원환면이라 하자. 몫 $X=G/B$ 를 **깃발다양체(flag variety)** 라 한다.
 
 $G=\mathrm{SL}\_2$ 면 $G/B=\mathbb P^1$ 이고, $G=\mathrm{SL}\_3$ 면 $G/B$ 는 $\mathbb P^2$ 안의 깃발들이 이루는 3 차원 다양체다.
 
@@ -44,11 +38,11 @@ $$
 
 가 $G/B$ 위의 $G$ 등변 직선다발이다. 부호 규약은 $\lambda$ 가 지배적일 때 $\mathcal L_\lambda$ 가 매우 풍부(very ample)해지도록 잡았다.
 
-$\lambda$ 가 지배적이면 $\lbrack v_\lambda\rbrack$ 의 궤도가 닫힌 매장 $G/B\hookrightarrow\mathbb P(V_\lambda)$ 를 주고, $\mathcal L_\lambda$ 는 그 매장에서 $\mathcal O(1)$ 을 당긴 것이다.
+$G=\mathrm{SL}\_2$ 이면 $T$ 의 무게는 정수 $n$ 으로 적히고, $G/B=\mathbb P^1$ 위에서 $\mathcal L_n=\mathcal O(n)$ 이다. 그 대역 단면은 두 변수의 $n$ 차 동차다항식이고, 개요의 공간이 이것이다.
 
 ## 점 작용
 
-$\rho$ 를 양근 합의 절반이라 하고 Weyl 군의 **점 작용**을 다음으로 둔다.
+$\rho$ 를 양근 합의 절반이라 하고 Weyl 군의 **점 작용(dot action)** 을 다음으로 둔다.
 
 $$
 w\cdot\lambda=w(\lambda+\rho)-\rho
@@ -56,19 +50,37 @@ $$
 
 무게 $\lambda$ 자체의 Weyl 대칭은 벽 위의 무게를 고정점으로 갖지만, $\lambda+\rho$ 로 옮기면 정칙인 것과 벽 위에 놓이는 것이 갈린다.
 
+$G=\mathrm{SL}\_2$ 이면 $\rho=1$, $W=\lbrace e,s\rbrace$, $s(\lambda)=-\lambda$ 이므로 $s\cdot n=-n-2$ 다. $s\cdot 0=-2$ 이고, 점 작용의 고정점은 $n=-1$ 하나다.
+
 ## Schubert 세포와 Bruhat 순서
 
-$B$ 가 $G/B$ 에 왼쪽에서 작용하고 궤도는 Weyl 군으로 색인된다. 이것이 **Bruhat 분해**다.
+$B$ 가 $G/B$ 에 왼쪽에서 작용하고 궤도는 Weyl 군으로 색인된다. 이 분해가 **Bruhat 분해(Bruhat decomposition)** 다.
 
 $$
 G=\bigsqcup_{w\in W}BwB,\qquad G/B=\bigsqcup_{w\in W}C_w,\quad C_w=BwB/B\cong\mathbb C^{\ell(w)}
 $$
 
-$C_w$ 가 Schubert 세포, 그 닫힘 $X_w=\overline{C_w}$ 가 Schubert 다양체이고, 닫힘 관계가 **Bruhat 순서**를 정의한다.
+$C_w$ 가 **Schubert 세포(Schubert cell)**, 그 닫힘 $X_w=\overline{C_w}$ 가 **Schubert 다양체(Schubert variety)** 이고, 닫힘 관계가 **Bruhat 순서(Bruhat order)** 를 정의한다.
 
 $$
 X_w=\bigsqcup_{v\le w}C_v
 $$
+
+$G=\mathrm{SL}\_2$ 이면 $W=\lbrace e,s\rbrace$ 이고 $C_e$ 는 점 $B/B$, $C_s$ 는 $\mathbb C$ 다. $\mathbb P^1$ 이 한 점과 복소직선으로 갈리고 Bruhat 순서는 $e\lt s$ 다.
+
+# 성질
+
+## 깃발다양체의 기하
+
+$G/B$ 는 매끄러운 사영 대수다양체이고, 차원은 양근의 개수다.
+
+$$
+\dim_{\mathbb C}G/B=|\Phi^+|=\frac{\dim G-\mathrm{rank}G}{2}
+$$
+
+$\lambda$ 가 지배적이면 $\lbrack v_\lambda\rbrack$ 의 궤도가 닫힌 매장 $G/B\hookrightarrow\mathbb P(V_\lambda)$ 를 주고, $\mathcal L_\lambda$ 는 그 매장에서 $\mathcal O(1)$ 을 당긴 것이다.
+
+## 깃발다양체의 코호몰로지
 
 세포가 전부 짝수 실차원이므로 세포 [호몰로지](homology.md)의 경계사상이 모두 $0$ 이다.
 
@@ -83,8 +95,6 @@ $$
 $$
 
 $d_i$ 는 $W$ 의 기본 불변식 차수다. $\mathrm{SL}\_n$ 에서 $W=S_n$ 이고 우변은 $q$ 계승 $[n]\_q!$ 이다.
-
-# 성질
 
 ## 정리 (Borel–Weil–Bott)
 
