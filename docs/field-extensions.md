@@ -6,17 +6,21 @@
 
 # 직관
 
-체의 확대는 작은 체 $k$ 가 큰 체 $K$ 의 부분체일 때 이 쌍을 하나의 대상으로 보는 관점이다. 핵심 착상은 $K$ 를 $k$ 위의 벡터 공간으로 읽는 것이다. 그러면 확대의 크기를 차원, 즉 확대 차수라는 정수 불변량으로 측정할 수 있고, 대수 문제가 선형대수 문제로 번역된다.
+유리수만으로는 $x^2=2$ 를 풀 수 없다. 유리수에 $\sqrt2$ 를 넣고 더하기, 빼기, 곱하기, 나누기를 해서 나오는 수를 모은다. 두 수 $a+b\sqrt2$ 와 $c+d\sqrt2$ 를 곱하면 $\sqrt2\cdot\sqrt2=2$ 가 다시 유리수이므로 $(ac+2bd)+(ad+bc)\sqrt2$ 가 나온다.
 
-두 번째 착상은 [다항식환](polynomial-rings.md)과의 사전(dictionary)이다. 기약다항식으로 몫을 취하면 그 근을 포함하는 확대를 얻고, 반대로 확대체의 원소는 자기를 소멸시키는 최소다항식을 가진다. 이 사전 덕분에 "이 방정식의 해가 어떤 체에 있는가"라는 질문이 "어떤 차수의 확대를 쌓아야 하는가"로 바뀐다. 컴퍼스와 직선자 작도의 불가능성 증명과 [Galois 이론](galois-theory.md)이 그 직접적 귀결이다.
+나눗셈도 같은 꼴에 머문다. $a,b$ 가 동시에 $0$ 은 아니면 $a^2-2b^2\ne 0$ 이고, 분모와 분자에 $a-b\sqrt2$ 를 곱하면 다음이 나온다.
 
-$\mathbb{Q}$ 에 $2$ 의 제곱근을 넣으면 $a+b\sqrt2$ 꼴의 수 전체가 있어야 한다. 곱셈에서 $2$ 가 다시 유리수로 돌아오므로 이보다 큰 집합은 필요하지 않다. 즉 $\mathbb{Q}(\sqrt2)$ 는 $\mathbb{Q}$ 위에서 $1$ 과 $\sqrt2$ 를 기저로 갖는 2차원 벡터 공간이다.
+$$
+\frac{1}{a+b\sqrt2}=\frac{a}{a^2-2b^2}-\frac{b}{a^2-2b^2}\sqrt2
+$$
+
+그래서 $a+b\sqrt2$ 꼴의 수 전체는 사칙연산에 닫혀 있고 $x^2=2$ 의 해를 포함한다. 이 수들은 유리수 두 개 $a,b$ 로 적히므로, 유리수를 계수로 하는 $1$ 과 $\sqrt2$ 의 일차결합이다. 큰 쪽은 작은 쪽 위의 2차원 벡터 공간이다.
 
 $$
 \mathbb{Q}(\sqrt2)=\lbrace a+b\sqrt2: a,b\in\mathbb{Q}\rbrace,\qquad [\mathbb{Q}(\sqrt2):\mathbb{Q}]=2
 $$
 
-여러 원소를 차례로 넣으면 확대의 탑이 쌓이고, 차수는 층마다 곱해진다.
+$x^3=2$ 의 해 $\sqrt[3]{2}$ 를 넣으면 $\sqrt[3]{2}$ 를 제곱한 $\sqrt[3]{4}$ 도 들어오고, 세제곱은 $2$ 로 돌아온다. 이번에는 $1,\sqrt[3]{2},\sqrt[3]{4}$ 세 수의 일차결합이 필요하므로 차원이 3 이다. 넣는 수가 만족하는 방정식의 차수가 차원으로 나타난다. 여러 수를 차례로 넣으면 확대의 탑이 쌓이고, 층마다 기저를 곱해 전체 기저를 만든다.
 
 ```mermaid
 graph BT
@@ -26,25 +30,31 @@ graph BT
   Q -.->|"전체 차수 2·2·3 = 12"| C
 ```
 
-작도 불가능성 증명은 차수의 곱셈성에서 나온다. 작도로 얻을 수 있는 수는 2차 확대를 유한 번 쌓아서만 도달하므로 차수가 $2$ 의 거듭제곱이어야 하고, 세제곱근 $2$ 는 차수가 3이므로 도달할 수 없다.
-
 # 정의
 
-$k$ 가 $K$ 의 부분체일 때 $K$ 를 $k$ 의 확대체라 하고 $K/k$ 로 표기한다. $K$ 는 $k$ -벡터 공간 구조를 가지며, 그 차원을 확대 차수라 한다.
+**확대체(extension field)** 는 체 $k$ 를 부분체로 포함하는 체 $K$ 다. 이 쌍을 **체의 확대(field extension)** 라 하고 $K/k$ 로 쓴다. $\mathbb{Q}(\sqrt2)$ 는 $\mathbb{Q}$ 의 확대체이고, $\mathbb{R}$ 과 $\mathbb{C}$ 도 $\mathbb{Q}$ 의 확대체다.
+
+**확대 차수(degree)** 는 $K$ 를 $k$ 위의 벡터 공간으로 볼 때의 차원이다.
 
 $$
 [K:k]=\dim_k K
 $$
 
-차수가 유한하면 유한 확대라 한다. $K$ 의 원소 $\alpha$ 가 $k$ 위 대수적(algebraic)이라는 것은 $\alpha$ 를 근으로 갖는 $0$ 이 아닌 다항식이 $k[x]$ 에 존재한다는 뜻이고, 그렇지 않으면 초월적(transcendental)이라 한다.
+차수가 유한하면 **유한 확대(finite extension)** 라 한다. 직관 절에서 $[\mathbb{Q}(\sqrt2):\mathbb{Q}]=2$ 이고, $[\mathbb{C}:\mathbb{R}]=2$ 다. $\mathbb{R}/\mathbb{Q}$ 는 유한 확대가 아니다.
 
-$\alpha$ 가 $k$ 위 대수적일 때, $\alpha$ 를 소멸시키는 $k[x]$ 의 monic 다항식 중 차수가 최소인 것을 최소다항식이라 하고 $m$ 으로 쓴다. $S$ 를 $K$ 의 부분집합이라 할 때 $k(S)$ 는 $k$ 와 $S$ 를 포함하는 $K$ 의 최소 부분체다. 원소 하나로 생성된 $k(\alpha)$ 를 단순 확대라 한다.
+$K$ 의 원소 $\alpha$ 가 $k$ 위 **대수적(algebraic)** 이라는 것은 $\alpha$ 를 근으로 갖는 $0$ 이 아닌 다항식이 [다항식환](polynomial-rings.md) $k[x]$ 에 존재한다는 뜻이다. 그런 다항식이 없으면 **초월적(transcendental)** 이라 한다. $\sqrt2$ 는 $x^2-2$ 의 근이므로 $\mathbb{Q}$ 위 대수적이고, 원주율 $\pi$ 는 $\mathbb{Q}$ 위 초월적이다.
 
-$f$ 를 $k[x]$ 의 상수가 아닌 다항식이라 할 때, $K$ 가 $k$ 위 $f$ 의 분해체(splitting field)라는 것은 $f$ 가 $K[x]$ 에서 1차식들의 곱으로 분해되고, $K$ 가 $k$ 와 $f$ 의 근들로 생성된다는 뜻이다.
+**최소다항식(minimal polynomial)** 은 $k$ 위 대수적인 $\alpha$ 를 근으로 갖는 $k[x]$ 의 다항식 가운데 최고차 계수가 $1$ 이고 차수가 가장 작은 것이다. $\sqrt2$ 는 $x^4-4$ 의 근이기도 하지만 $\mathbb{Q}$ 위 최소다항식은 $x^2-2$ 다. $\mathbb{Q}$ 계수 일차식 가운데 $\sqrt2$ 를 근으로 갖는 것이 없기 때문이다. 같은 $\sqrt2$ 의 $\mathbb{R}$ 위 최소다항식은 $x-\sqrt2$ 다.
+
+$S$ 가 $K$ 의 부분집합일 때 $k(S)$ 는 $k$ 와 $S$ 를 포함하는 $K$ 의 부분체 가운데 가장 작은 것이다. **단순 확대(simple extension)** 는 원소 하나로 생성된 확대 $k(\alpha)/k$ 다. 직관 절의 $\mathbb{Q}(\sqrt2)$ 와 $\mathbb{Q}(\sqrt[3]{2})$ 가 단순 확대다.
+
+$f$ 가 $k[x]$ 의 상수가 아닌 다항식일 때, $K$ 가 $k$ 위 $f$ 의 **분해체(splitting field)** 라는 것은 $f$ 가 $K[x]$ 에서 1차식들의 곱으로 분해되고 $K$ 가 $k$ 와 $f$ 의 근들로 생성된다는 뜻이다.
 
 $$
 f(x)=c\prod_{i=1}^{n}(x-\alpha_i)\ \text{in } K[x],\qquad K=k(\alpha_1,\dots,\alpha_n)
 $$
+
+$x^2-2=(x-\sqrt2)(x+\sqrt2)$ 이므로 $\mathbb{Q}$ 위 $x^2-2$ 의 분해체는 $\mathbb{Q}(\sqrt2)$ 다. $x^3-2$ 의 근은 $\sqrt[3]{2}$ 와 $\sqrt[3]{2}\thinspace\omega$, $\sqrt[3]{2}\thinspace\omega^2$ 이고 $\omega=e^{2\pi i/3}$ 이다. $\mathbb{Q}(\sqrt[3]{2})$ 는 실수만 포함하므로 분해체가 아니고, 분해체는 $\mathbb{Q}(\sqrt[3]{2},\omega)$ 다.
 
 # 성질
 
@@ -112,7 +122,7 @@ $\mathbb{Q}$ 의 유한 확대를 수체(number field)라 하고 정수론의 �
 
 ## 자기동형군
 
-확대의 자기동형(automorphism)을 모으면 군이 된다. 중간체와 그 부분군이 서로 대응하고, 이 대응을 Galois 이론이 다룬다. 분해체와 [군 작용](group-actions.md)이 그 진술에 들어간다. 표수 $p$ 에서 유한체는 $\mathbb{F}\_p$ 의 유한 확대뿐이고, 확대의 차수가 위수를 정한다.
+확대의 자기동형(automorphism)을 모으면 군이 된다. 중간체와 그 부분군이 서로 대응하고, 이 대응을 [Galois 이론](galois-theory.md)이 다룬다. 분해체와 [군 작용](group-actions.md)이 그 진술에 들어간다. 표수 $p$ 에서 유한체는 $\mathbb{F}\_p$ 의 유한 확대뿐이고, 확대의 차수가 위수를 정한다.
 
 [^1]: ProofWiki, "Degree of Field Extensions is Multiplicative" — 탑 법칙의 진술과 기저 곱 논증. https://proofwiki.org/wiki/Degree_of_Field_Extensions_is_Multiplicative
 [^2]: A. W. Knapp, Basic Algebra, Chapter IX (Fields and Galois Theory) — 대수적 원소, 최소다항식, 분해체의 존재와 유일성. https://www.math.stonybrook.edu/~aknapp/books/basic-alg/b-alg-Ch9-sample.pdf
