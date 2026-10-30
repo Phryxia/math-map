@@ -20,15 +20,19 @@ $$
 [(A,-Aw),(B,-Bw)]=([A,B],\thinspace -ABw+BAw)=([A,B],\thinspace -[A,B]w)
 $$
 
-그래서 이 변환들도 $\mathfrak{sl}\_2$ 와 같은 부분대수를 이루고, $\mathfrak e=\mathfrak s_w\oplus\mathfrak r$ 이다. 점 $w$ 마다 하나씩, 몫 $\mathfrak e/\mathfrak r$ 을 다시 $\mathfrak e$ 안에 넣는 방법이 여럿 있고, 평행이동이 하나를 다른 것으로 옮긴다. Levi 분해는 모든 유한차원 Lie 대수에서 이 두 가지, 곧 몫의 반단순 부분이 부분대수로 들어간다는 것과 그 부분대수가 서로 옮겨진다는 것이 성립함을 말한다.
+그래서 이 변환들도 $\mathfrak{sl}\_2$ 와 같은 부분대수를 이루고, $\mathfrak e=\mathfrak s_w\oplus\mathfrak r$ 이다. 점 $w$ 마다 하나씩, 몫 $\mathfrak e/\mathfrak r$ 을 다시 $\mathfrak e$ 안에 넣는 방법이 여럿 있고, 평행이동이 하나를 다른 것으로 옮긴다. Levi 분해는 모든 유한차원 Lie 대수에서 이 두 가지, 곧 몫의 반단순 부분이 부분대수로 들어간다는 것과 그 부분대수가 서로 옮겨진다는 것이 성립한다는 정리다.
 
 # 정의
 
-[Lie 대수](lie-algebras.md) 문서대로 유한차원 Lie 대수 $\mathfrak g$ 의 극대 가해 아이디얼을 근기 $\mathrm{rad}\thinspace\mathfrak g$ 라 한다. $\mathfrak g/\mathrm{rad}\thinspace\mathfrak g$ 는 반단순이다.
+유한차원 Lie 대수 $\mathfrak g$ 의 극대 가해 아이디얼을 근기(radical) $\mathrm{rad}\thinspace\mathfrak g$ 라 한다. $\mathfrak g$ 의 부분대수 $\mathfrak s$ 가 벡터공간 직합 $\mathfrak g=\mathfrak s\oplus\mathrm{rad}\thinspace\mathfrak g$ 를 만족하면 $\mathfrak s$ 를 **Levi 부분대수(Levi subalgebra)** 라 한다.
 
-$\mathfrak g$ 의 부분대수 $\mathfrak s$ 가 벡터공간 직합 $\mathfrak g=\mathfrak s\oplus\mathrm{rad}\thinspace\mathfrak g$ 를 만족하면 $\mathfrak s$ 를 **Levi 부분대수(Levi subalgebra)** 라 한다. 이때 $\mathfrak s\cong\mathfrak g/\mathrm{rad}\thinspace\mathfrak g$ 는 반단순이고, $\mathfrak s$ 가 딸림작용으로 $\mathrm{rad}\thinspace\mathfrak g$ 에 작용해 $\mathfrak g$ 는 반직곱 $\mathfrak s\ltimes\mathrm{rad}\thinspace\mathfrak g$ 다.
+직관 절의 $\mathfrak e$ 에서 평행이동 $\mathfrak r$ 은 괄호가 $0$ 이라 가해 아이디얼이고, $\mathfrak e/\mathfrak r\cong\mathfrak{sl}\_2$ 에는 영이 아닌 가해 아이디얼이 없으므로 $\mathrm{rad}\thinspace\mathfrak e=\mathfrak r$ 이다. 점 $w$ 를 고정하는 변환들의 $\mathfrak s_w$ 가 모두 Levi 부분대수다. $\mathfrak{gl}\_2$ 에서는 근기가 스칼라 행렬 전체이고 $\mathfrak{sl}\_2$ 가 Levi 부분대수다.
 
 # 성질
+
+## 근기로 나눈 몫
+
+$\mathfrak g/\mathrm{rad}\thinspace\mathfrak g$ 는 반단순이다. Levi 부분대수 $\mathfrak s$ 가 있으면 $\mathfrak s\cong\mathfrak g/\mathrm{rad}\thinspace\mathfrak g$ 는 반단순이고, $\mathfrak s$ 가 딸림작용으로 $\mathrm{rad}\thinspace\mathfrak g$ 에 작용해 $\mathfrak g$ 는 반직곱 $\mathfrak s\ltimes\mathrm{rad}\thinspace\mathfrak g$ 다.
 
 ## Levi 정리
 
