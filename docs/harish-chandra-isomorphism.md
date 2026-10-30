@@ -26,6 +26,8 @@ $\mathfrak g$ 를 복소 반단순 Lie 대수, $\mathfrak h$ 를 Cartan 부분�
 
 $z\in Z(\mathfrak g)$ 는 Verma 가군 $M(\lambda)$ 위에서 상수 $\chi_\lambda(z)$ 배로 작용한다. 대수 준동형 $\chi_\lambda:Z(\mathfrak g)\to\mathbb C$ 를 무게 $\lambda$ 의 **중심 지표(central character)** 라 한다.
 
+$\mathfrak{sl}\_2$ 에서 무게 $\lambda$ 를 수 $\lambda(H)$ 로 적는다. Casimir 원소 $C=EF+FE+\frac12H^2$ 를 최고무게 벡터 $v$ 에 작용시키면 $Ev=0$, $EFv=Hv=\lambda v$ 이므로 $\chi_\lambda(C)=\lambda+\frac12\lambda^2$ 이다.
+
 ## Harish-Chandra 준동형
 
 Poincaré–Birkhoff–Witt 정리로 다음 직합 분해가 있다.
@@ -34,9 +36,15 @@ $$
 U(\mathfrak g)=U(\mathfrak h)\oplus\big(\mathfrak n^{-}U(\mathfrak g)+U(\mathfrak g)\mathfrak n^{+}\big)
 $$
 
-첫째 성분으로의 사영을 $Z(\mathfrak g)$ 에 제한한 것을 $p$ 라 한다. $U(\mathfrak h)$ 는 $\mathfrak h$ 가 가환이므로 $\mathfrak h^\ast$ 위의 다항식환 $S(\mathfrak h)$ 와 같고, $\chi_\lambda(z)=p(z)(\lambda)$ 다. $\rho$ 를 양근의 합의 절반이라 하고 $\gamma(z)(\lambda)=p(z)(\lambda-\rho)$ 로 둔 $\gamma:Z(\mathfrak g)\to S(\mathfrak h)$ 를 **Harish-Chandra 준동형(Harish-Chandra homomorphism)** 이라 한다.
+첫째 성분으로의 사영을 $Z(\mathfrak g)$ 에 제한한 것을 $p$ 라 한다. $U(\mathfrak h)$ 는 $\mathfrak h$ 가 가환이므로 $\mathfrak h^\ast$ 위의 다항식환 $S(\mathfrak h)$ 와 같다. $\rho$ 를 양근의 합의 절반이라 하고 $\gamma(z)(\lambda)=p(z)(\lambda-\rho)$ 로 둔 $\gamma:Z(\mathfrak g)\to S(\mathfrak h)$ 를 **Harish-Chandra 준동형(Harish-Chandra homomorphism)** 이라 한다.
+
+$\mathfrak{sl}\_2$ 에서 $EF=FE+H$ 이므로 $C=2FE+H+\frac12H^2$ 이고, $FE$ 는 $\mathfrak n^{-}U(\mathfrak g)$ 에 속하므로 $p(C)(\lambda)=\lambda+\frac12\lambda^2$ 이다. $\rho(H)=1$ 이므로 $\gamma(C)(\lambda)=(\lambda-1)+\frac12(\lambda-1)^2=\frac12(\lambda^2-1)$ 이다.
 
 # 성질
+
+## 사영과 중심 지표
+
+$z\in Z(\mathfrak g)$ 를 최고무게 벡터에 작용시키면 $\mathfrak n^{+}$ 이 먼저 작용하는 항과 $\mathfrak n^{-}$ 이 마지막에 작용해 무게를 바꾸는 항이 사라지므로 $\chi_\lambda(z)=p(z)(\lambda)$ 다. $\mathfrak{sl}\_2$ 의 계산에서 $\chi_\lambda(C)$ 와 $p(C)(\lambda)$ 가 같은 것이 그 예다.
 
 ## Harish-Chandra 정리
 
