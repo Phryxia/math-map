@@ -6,13 +6,9 @@
 
 # 직관
 
-Galois 이론은 [체의 확대](field-extensions.md)를 군으로 번역한다. 확대 $K/k$ 의 대칭, 즉 $k$ 를 고정하는 $K$ 의 자기동형들을 모으면 유한군 $G$ 가 되고, 적절한 조건(Galois 확대) 아래 $K$ 와 $k$ 사이의 중간체들과 $G$ 의 부분군들이 서로 일대일로 대응한다. 이 대응은 포함관계를 뒤집으며 차수와 지수를 맞바꾼다.
-
-체의 [격자](order-lattices.md)는 다루기 어렵지만 유한군의 부분군 격자는 계산할 수 있다. 대표적인 결론이 방정식의 가해성이다. 다항식이 거듭제곱근으로 풀린다는 것은 그 Galois 군이 [가해군](solvable-groups.md)(solvable group)이라는 것과 동치이고, 5차 이상의 일반 방정식은 [대칭군](symmetric-groups.md)이 가해가 아니므로 근의 공식이 없다.
-
 $\mathbb Q(\sqrt2)$ 의 원소 $a+b\sqrt2$ 에서 $\sqrt2$ 를 $-\sqrt2$ 로 바꾸는 사상은 덧셈과 곱셈을 보존한다. $x^2-2$ 의 두 근을 맞바꾸는 이 조작이 확대의 유일한 비자명 대칭이고, 따라서 Galois 군은 위수 2 다. 이 확대에는 중간체가 없고 Galois 군의 부분군도 두 개뿐이다.
 
-$\mathbb Q(\sqrt2,\sqrt3)$ 에서는 $\sqrt2$ 와 $\sqrt3$ 의 부호를 독립적으로 뒤집을 수 있어 대칭이 네 개다. 부분군 격자와 중간체 격자는 위아래가 뒤집힌 같은 그림이다.
+$\mathbb Q(\sqrt2,\sqrt3)$ 에서는 $\sqrt2$ 와 $\sqrt3$ 의 부호를 독립적으로 뒤집을 수 있어 대칭이 네 개다. 부분군 [격자](order-lattices.md)와 중간체 격자는 위아래가 뒤집힌 같은 그림이다.
 
 ```mermaid
 graph TD
@@ -38,27 +34,39 @@ $\sigma$ 는 $\sqrt2$ 의 부호만 뒤집는 사상이다. $\sigma$ 가 고정�
 
 # 정의
 
-$K/k$ 를 유한 확대라 하자. $k$ 의 모든 원소를 고정하는 $K$ 의 체 자기동형 전체는 합성에 대해 군을 이루며, 이를 $\mathrm{Aut}(K/k)$ 로 쓴다. 부분군 $H$ 의 고정체(fixed field)는 $H$ 가 움직이지 않는 원소들의 모임이다.
+$K/k$ 를 유한한 [체의 확대](field-extensions.md)라 한다. **자기동형군(automorphism group)** $\mathrm{Aut}(K/k)$ 는 $k$ 의 모든 원소를 고정하는 $K$ 의 체 자기동형 전체이고, 합성으로 군이 된다. $\mathrm{Aut}(\mathbb Q(\sqrt2)/\mathbb Q)$ 는 항등사상과 직관 절의 $a+b\sqrt2\mapsto a-b\sqrt2$ 두 원소다. $\mathbb Q(\sqrt[3]{2})$ 의 자기동형은 $\sqrt[3]{2}$ 를 $x^3-2$ 의 근으로 보내야 하는데 $\mathbb Q(\sqrt[3]{2})$ 에 들어 있는 근은 실근 하나뿐이므로, $\mathrm{Aut}(\mathbb Q(\sqrt[3]{2})/\mathbb Q)$ 는 항등사상 하나다.
+
+부분군 $H$ 의 **고정체(fixed field)** 는 $H$ 의 모든 원소가 움직이지 않는 원소들의 모임이다.
 
 $$
 K^{H}=\lbrace a\in K:\ \sigma(a)=a\ \ \text{for all } \sigma\in H\rbrace
 $$
 
-$K/k$ 가 Galois 확대라는 것은 전체 자기동형군의 고정체가 정확히 $k$ 라는 뜻이며, 이때 $\mathrm{Aut}(K/k)$ 를 Galois 군이라 하고 $\mathrm{Gal}(K/k)$ 로 쓴다.
+직관 절에서 $\langle\sigma\rangle$ 의 고정체는 $\mathbb Q(\sqrt3)$ 이다. $\mathbb Q(\sqrt[3]{2})$ 에서 자명한 군의 고정체는 $\mathbb Q(\sqrt[3]{2})$ 전체다.
 
-$$
-K/k \text{ Galois} \iff K^{\mathrm{Aut}(K/k)}=k \iff \lvert\mathrm{Aut}(K/k)\rvert=[K:k]
-$$
+**Galois 확대(Galois extension)** 는 전체 자기동형군의 고정체가 정확히 $k$ 인 확대다. 이때 $\mathrm{Aut}(K/k)$ 를 **Galois 군(Galois group)** 이라 하고 $\mathrm{Gal}(K/k)$ 로 쓴다. $\mathbb Q(\sqrt2)/\mathbb Q$ 와 $\mathbb Q(\sqrt2,\sqrt3)/\mathbb Q$ 는 Galois 확대이고 Galois 군의 위수가 $2$ 와 $4$ 다. $\mathbb Q(\sqrt[3]{2})/\mathbb Q$ 는 고정체가 $\mathbb Q$ 보다 크므로 Galois 확대가 아니다.
 
-동치인 조건은 $K$ 가 $k$ 위 어떤 분리가능(separable) 다항식의 분해체라는 것이다. 다항식이 분리가능하다는 것은 각 기약인수가 중근을 갖지 않는다는 뜻이고, 표수 0이거나 [유한체](finite-fields.md)에서는 기약다항식이 항상 분리가능하므로 분해체는 곧 Galois 확대다. 표수 $p$ 에서 $\mathbb{F}\_p(t)$ 위의 $x^p-t$ 같은 예는 분리가능하지 않다.
+다항식이 **분리가능(separable)** 하다는 것은 각 기약인수가 중근을 갖지 않는다는 뜻이다. $x^2-2$ 의 근 $\pm\sqrt2$ 는 서로 다르므로 분리가능하다. 표수 $p$ 의 체 $\mathbb{F}\_p(t)$ 위의 $x^p-t$ 는 $t$ 의 $p$ 제곱근 $u$ 에 대해 $(x-u)^p$ 로 인수분해되어 중근만 가지므로 분리가능하지 않다.
 
-거듭제곱근 확대(radical extension)는 각 층이 어떤 원소의 $n$ 제곱근을 추가해 얻어지는 확대의 탑이다.
+**거듭제곱근 확대(radical extension)** 는 각 층이 어떤 원소의 $n$ 제곱근을 추가해 얻어지는 확대의 탑이다.
 
 $$
 k=K_0\subseteq K_1\subseteq\cdots\subseteq K_r,\qquad K_{i+1}=K_i(\alpha_i),\ \ \alpha_i^{\thinspace n_i}\in K_i
 $$
 
+$\zeta=e^{2\pi i/3}$ 은 $\zeta^3=1$ 이고 $(\sqrt[3]{2})^3=2$ 이므로 $\mathbb Q\subseteq\mathbb Q(\zeta)\subseteq\mathbb Q(\zeta,\sqrt[3]{2})$ 는 거듭제곱근 확대다.
+
 # 성질
+
+## Galois 확대의 동치 조건
+
+유한 확대 $K/k$ 에 대해 다음은 동치다.
+
+$$
+K/k \text{ Galois} \iff K^{\mathrm{Aut}(K/k)}=k \iff \lvert\mathrm{Aut}(K/k)\rvert=[K:k]
+$$
+
+또 하나의 동치 조건은 $K$ 가 $k$ 위 어떤 분리가능 다항식의 분해체라는 것이다. 표수 0이거나 [유한체](finite-fields.md)에서는 기약다항식이 항상 분리가능하므로 분해체는 곧 Galois 확대다. $\mathbb Q(\sqrt[3]{2})/\mathbb Q$ 에서는 $\lvert\mathrm{Aut}\rvert=1\lt 3$ 이다.
 
 ## Galois 군의 작용
 
@@ -110,7 +118,7 @@ $$
 
 ## 가해성
 
-표수 $0$ 의 체 $k$ 위 다항식 $f$ 가 거듭제곱근으로 풀린다는 것은 $f$ 의 분해체의 Galois 군이 가해군이라는 것과 동치다[^2]. 가해군이란 각 몫이 abelian인 정규열을 갖는 군이다.
+표수 $0$ 의 체 $k$ 위 다항식 $f$ 가 거듭제곱근으로 풀린다는 것은 $f$ 의 분해체의 Galois 군이 [가해군](solvable-groups.md)(solvable group)이라는 것과 동치다[^2]. 가해군이란 각 몫이 abelian인 정규열을 갖는 군이다.
 
 $$
 1=G_0\trianglelefteq G_1\trianglelefteq\cdots\trianglelefteq G_r=G,\qquad G_{i+1}/G_i \text{ abelian}
@@ -120,7 +128,7 @@ $$
 
 ## Abel–Ruffini
 
-$A_n$ 이 $n\ge 5$ 에서 비가환 단순군이므로 $S_n$ 도 가해가 아니다. Galois 군이 $S_5$ 인 5차 다항식이 존재하므로(예: $x^5-6x+3$ ) 5차 일반 방정식에는 근의 공식이 없다[^2]. 반면 $S_4$ 는 가해이므로 4차 이하의 모든 다항식은 근호로 풀린다. 이것이 2·3·4차 근의 공식은 있고 5차부터 없는 이유다.
+$A_n$ 이 $n\ge 5$ 에서 비가환 단순군이므로 [대칭군](symmetric-groups.md) $S_n$ 도 가해가 아니다. Galois 군이 $S_5$ 인 5차 다항식이 존재하므로(예: $x^5-6x+3$ ) 5차 일반 방정식에는 근의 공식이 없다[^2]. 반면 $S_4$ 는 가해이므로 4차 이하의 모든 다항식은 근호로 풀린다. 이것이 2·3·4차 근의 공식은 있고 5차부터 없는 이유다.
 
 이 정리는 "5차 방정식은 풀 수 없다"가 아니라 "계수의 사칙연산과 거듭제곱근만으로 쓴 일반 공식이 없다"라는 진술이다. 개별 5차 방정식은 Galois 군이 가해이면 근호로 풀리고, 수치해는 언제나 존재한다.
 
