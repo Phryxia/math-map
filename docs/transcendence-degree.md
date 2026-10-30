@@ -6,10 +6,6 @@
 
 # 직관
 
-초월차수는 체의 확대 $L/K$ 에서 $K$ 위에 대수적으로 독립인 원소를 최대로 모은 집합의 크기다. 그런 집합을 **초월기저(transcendence basis)** 라 하고, 어느 초월기저를 고르든 크기가 같다.
-
-[체의 확대](field-extensions.md)의 차수가 대수 확대의 크기를 벡터 공간의 차원으로 재는 것처럼, 초월차수는 확대에 들어 있는 독립 변수의 개수를 잰다. 대수다양체의 차원은 그 함수체의 초월차수다.
-
 $K=\mathbb Q(t,s)$, $s^2=t^3+1$ 인 체를 본다. $1,t,t^2,\dots$ 이 모두 일차독립이므로 $\mathbb Q$ 위의 차수는 무한이다. 그래서 차수로는 이 체와 두 변수 유리함수체 $\mathbb Q(x,y)$ 를 가를 수 없다.
 
 $t$ 는 어떤 유리계수 다항식의 근도 아니다. $s$ 는 $\mathbb Q(t)$ 위의 다항식 $X^2-(t^3+1)$ 의 근이므로 $\mathbb Q(t)\subseteq K$ 는 차수 $2$ 의 유한 확대다. 그러면 $K$ 의 원소는 모두 $t$ 하나로 적은 대수 방정식을 만족하고, $K$ 에 들어 있는 자유로운 변수는 $t$ 하나다.
@@ -18,17 +14,23 @@ $t$ 대신 $s$ 를 고를 수도 있다. $t^3=s^2-1$ 이므로 $K$ 는 $\mathbb 
 
 # 정의
 
-$L/K$ 를 체의 확대라 한다.
+$L/K$ 를 [체의 확대](field-extensions.md)라 한다.
 
 ## 대수적 독립
 
-$S\subseteq L$ 의 서로 다른 유한 개의 원소 $s_1,\dots,s_n$ 에 대해 $f(s_1,\dots,s_n)=0$ 인 $0$ 아닌 $f\in K\lbrack X_1,\dots,X_n\rbrack$ 이 없으면 $S$ 를 $K$ 위에서 **대수적으로 독립(algebraically independent)** 이라 한다. 이때 $K(S)$ 는 $S$ 를 변수로 하는 유리함수체와 동형이다.
+**대수적으로 독립(algebraically independent)** 인 집합은 서로 다른 유한 개의 원소 $s_1,\dots,s_n$ 을 어떻게 골라도 $f(s_1,\dots,s_n)=0$ 인 $0$ 아닌 $f\in K\lbrack X_1,\dots,X_n\rbrack$ 이 없는 $S\subseteq L$ 이다. 직관 절의 $K=\mathbb Q(t,s)$ 에서 $\lbrace t\rbrace$ 는 $\mathbb Q$ 위에서 대수적으로 독립이고, $\lbrace t,s\rbrace$ 는 $f=X_2^2-X_1^3-1$ 이 $f(t,s)=0$ 을 만족하므로 독립이 아니다. $\mathbb Q(x,y)$ 에서 $\lbrace x,y\rbrace$ 는 독립이다.
 
 ## 초월기저와 초월차수
 
-$K$ 위에서 대수적으로 독립이고 $L$ 이 $K(S)$ 위에서 대수적인 $S\subseteq L$ 이 초월기저다. 그 크기를 $\mathrm{trdeg}\_K L$ 로 쓴다. $\mathrm{trdeg}\_K L=0$ 인 것은 $L/K$ 가 대수 확대인 것과 같고, $L=K(S)$ 인 초월기저가 있으면 $L/K$ 를 **순초월 확대(purely transcendental extension)** 라 한다.
+**초월기저(transcendence basis)** 는 $K$ 위에서 대수적으로 독립이고 $L$ 이 $K(S)$ 위에서 대수적이 되는 $S\subseteq L$ 이다. **초월차수(transcendence degree)** 는 초월기저의 크기이고 $\mathrm{trdeg}\_K L$ 로 쓴다. 직관 절에서 $\lbrace t\rbrace$ 와 $\lbrace s\rbrace$ 가 둘 다 $\mathbb Q(t,s)/\mathbb Q$ 의 초월기저이므로 초월차수는 $1$ 이다. $\mathbb Q(x,y)/\mathbb Q$ 의 초월기저는 $\lbrace x,y\rbrace$ 이고 초월차수는 $2$ 다. $\mathbb Q(\sqrt2)/\mathbb Q$ 의 초월기저는 공집합이고 초월차수는 $0$ 이다.
+
+**순초월 확대(purely transcendental extension)** 는 $L=K(S)$ 인 초월기저 $S$ 가 있는 확대다. $\mathbb Q(x,y)/\mathbb Q$ 는 순초월 확대이고, $\mathbb Q(t,s)/\mathbb Q(t)$ 는 초월차수가 $0$ 인 차수 $2$ 확대이므로 순초월 확대가 아니다.
 
 # 성질
+
+## 독립 집합이 생성하는 체
+
+$S$ 가 $K$ 위에서 대수적으로 독립이면 $K(S)$ 는 $S$ 를 변수로 하는 유리함수체와 동형이다. $\mathrm{trdeg}\_K L=0$ 인 것은 $L/K$ 가 대수 확대인 것과 동치다.
 
 ## 교환 정리
 
