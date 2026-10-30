@@ -6,7 +6,7 @@
 
 # 직관
 
-특이값 분해에는 정사각·대칭이라는 조건이 필요 없고, 모든 실(또는 복소)행렬에 대해 존재한다. [스펙트럼 정리](spectral-theorem.md)를 $A^{\mathsf T}A$ 에 적용하면 증명되며, 특이값은 $A^{\mathsf T}A$ 의 고윳값의 제곱근이다[^1]. 절단된 SVD 가 모든 unitary 불변 노름에서 최적의 저계수 근사라는 Eckart–Young–Mirsky 정리가 압축·잡음 제거·주성분 분석에 쓰인다[^2].
+개요의 행렬 $A=\begin{pmatrix}0&2\cr 0&0\end{pmatrix}$ 는 $(x,y)$ 를 $(2y,0)$ 으로 보낸다. 단위원 위의 점 $(\cos t,\sin t)$ 는 $(2\sin t,0)$ 으로 가므로, 단위원은 $x$ 축 위의 선분 $\lbrack -2,2\rbrack$ 로 옮겨진다. 이 도형은 $x$ 축 방향 반지름이 $2$, $y$ 축 방향 반지름이 $0$ 인 납작한 타원이다. 길이 $2$ 의 축으로 가는 원래 방향은 $(0,1)$ 이고, $(1,0)$ 은 $0$ 으로 간다.
 
 [선형사상](linear-maps.md)은 단위구를 타원체로 보낸다. 타원체의 주축 방향이 왼쪽 특이벡터, 축의 길이가 특이값, 그 축으로 가는 원래 방향이 오른쪽 특이벡터다. 계수가 $r$ 이면 축 $r$ 개만 살아 있고 나머지 방향은 눌려 $0$ 이 된다.
 
@@ -21,11 +21,27 @@ A=U\Sigma V^{\mathsf T},\qquad
 \sigma_1\ge\sigma_2\ge\dots\ge\sigma_r\gt 0=\sigma_{r+1}=\dots
 $$
 
-열 단위로 쓰면 rank 1 행렬들의 합이며, 이 형태를 compact SVD 라 한다.
+$\sigma_i$ 를 **특이값(singular value)**, $U$ 의 열 $u_i$ 와 $V$ 의 열 $v_i$ 를 각각 왼쪽, 오른쪽 **특이벡터(singular vector)** 라 한다. 직관 절의 $A$ 는 $U=I$, $\Sigma=\mathrm{diag}(2,0)$, $V=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 로 분해되고, $\Sigma V^{\mathsf T}=\begin{pmatrix}0&2\cr 0&0\end{pmatrix}$ 이다.
+
+열 단위로 쓰면 계수 $1$ 행렬들의 합이며, 이 형태를 **compact SVD** 라 한다. 직관 절의 $A$ 는 $2\thinspace u_1v_1^{\mathsf T}$ 이고 $u_1=(1,0)$, $v_1=(0,1)$ 이다.
 
 $$
 A=\sum_{i=1}^{r}\sigma_i u_i v_i^{\mathsf T}
 $$
+
+계수 $k$ 이하로 자른 **절단 SVD(truncated SVD)** 와 **Moore–Penrose 의사역행렬(Moore–Penrose pseudoinverse)** 은 다음과 같다. $\Sigma^{+}$ 는 $0$ 이 아닌 특이값을 역수로 바꾸고 $0$ 은 그대로 두어 전치한 행렬이다[^3].
+
+$$
+A_k=\sum_{i=1}^{k}\sigma_i u_i v_i^{\mathsf T},
+\qquad
+A^{+}=V\Sigma^{+}U^{\mathsf T}
+$$
+
+직관 절의 $A$ 는 $A_1=A$ 이고 $A^{+}=V\thinspace\mathrm{diag}(1/2,0)\thinspace I=\begin{pmatrix}0&0\cr 1/2&0\end{pmatrix}$ 이다.
+
+# 성질
+
+## 특이값과 고윳값
 
 특이값은 $A^{\mathsf T}A$ (또는 $AA^{\mathsf T}$ )의 고윳값의 음이 아닌 제곱근이고, $u_i$ 와 $v_i$ 는 각각 $AA^{\mathsf T}$ 와 $A^{\mathsf T}A$ 의 고유벡터다[^1].
 
@@ -35,19 +51,9 @@ A A^{\mathsf T}u_i=\sigma_i^2 u_i,\qquad
 Av_i=\sigma_i u_i
 $$
 
-계수 $k$ 이하로 자른 절단 SVD 와 Moore–Penrose 의사역행렬은 다음과 같다. $\Sigma^{+}$ 는 $0$ 이 아닌 특이값을 역수로 바꾸고 $0$ 은 그대로 두어 전치한 행렬이다[^3].
-
-$$
-A_k=\sum_{i=1}^{k}\sigma_i u_i v_i^{\mathsf T},
-\qquad
-A^{+}=V\Sigma^{+}U^{\mathsf T}
-$$
-
-# 성질
-
 ## 존재 정리
 
-$A^{\mathsf T}A$ 는 대칭이고 모든 $x$ 에서 이차형식이 $Ax$ 의 노름 제곱이라 양의 준정부호다. 스펙트럼 정리로 정규직교 고유기저 $v_1,\dots,v_n$ 과 내림차순 [고윳값](eigenvalues.md) $\lambda_1\ge\dots\ge\lambda_n\ge 0$ 을 얻는다. $\lambda_i$ 의 제곱근을 $\sigma_i$ 라 하고, $\sigma_i$ 가 $0$ 이 아닌 $i$ 에 대해 $u_i$ 를 정의한다.
+$A^{\mathsf T}A$ 는 대칭이고 모든 $x$ 에서 이차형식이 $Ax$ 의 노름 제곱이라 양의 준정부호다. [스펙트럼 정리](spectral-theorem.md)로 정규직교 고유기저 $v_1,\dots,v_n$ 과 내림차순 [고윳값](eigenvalues.md) $\lambda_1\ge\dots\ge\lambda_n\ge 0$ 을 얻는다. $\lambda_i$ 의 제곱근을 $\sigma_i$ 라 하고, $\sigma_i$ 가 $0$ 이 아닌 $i$ 에 대해 $u_i$ 를 정의한다.
 
 $$
 u_i=\frac{1}{\sigma_i}Av_i
