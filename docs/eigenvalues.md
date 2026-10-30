@@ -8,36 +8,48 @@
 
 행렬이 벡터를 늘이고 돌리는 가운데, 돌지 않고 늘어나기만 하는 방향이 고유벡터다. $A=\begin{pmatrix}2&1\cr 1&2\end{pmatrix}$ 이면 $(1,1)$ 방향은 $3$ 배로, $(1,-1)$ 방향은 $1$ 배로 간다. 이 두 방향을 축으로 삼으면 $A$ 는 대각행렬 $\mathrm{diag}(3,1)$ 이고, $A$ 를 $k$ 번 적용한 결과는 각 축에서 $3^k$ 배와 $1$ 배다.
 
-$N=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 은 고윳값 $0$ 만 갖고 고유벡터가 한 방향뿐이라 대각화되지 않는다. 대각화 판정은 두 단계로 갈린다. 특성다항식이 체 안에서 일차식 $n$ 개로 분해되지 않으면 대각화가 불가능하고, 체를 확장하면 가능해질 수 있다. 분해되더라도 어느 고윳값에서 기하적 중복도가 대수적 중복도보다 작으면 대각화가 불가능하고, 그때는 [Jordan 표준형](jordan-canonical-form.md)까지만 간다.
+$N=\begin{pmatrix}0&1\cr 0&0\end{pmatrix}$ 은 $(x,y)$ 를 $(y,0)$ 으로 보낸다. $(y,0)=\lambda(x,y)$ 이려면 $\lambda y=0$ 이고 $y=\lambda x$ 이므로, $0$ 이 아닌 해는 $\lambda=0$, $y=0$ 인 $(x,0)$ 뿐이다. 늘어나기만 하는 방향이 하나뿐이어서 그 방향 두 개로 축을 세울 수 없다.
 
 # 정의
 
-$V$ 를 체 $F$ 위의 유한차원 [벡터 공간](vector-spaces.md), $T$ 를 $V$ 에서 $V$ 로 가는 선형사상이라 하자. $0$ 이 아닌 벡터 $v$ 와 스칼라 $\lambda$ 가 다음을 만족하면 $\lambda$ 를 고윳값, $v$ 를 그에 대한 고유벡터라 한다.
+$V$ 를 체 $F$ 위의 유한차원 [벡터 공간](vector-spaces.md), $T$ 를 $V$ 에서 $V$ 로 가는 선형사상이라 하자. **고윳값(eigenvalue)** 은 $0$ 이 아닌 벡터 $v$ 에 대해 다음을 만족하는 스칼라 $\lambda$ 이고, 그 $v$ 를 $\lambda$ 에 대한 **고유벡터(eigenvector)** 라 한다.
 
 $$
 Tv=\lambda v,\qquad v\neq 0
 $$
 
-고윳값 $\lambda$ 의 고유공간은 $\lambda I-T$ 의 핵이고, 그 차원이 기하적 중복도다.
+직관 절의 $A$ 에서 $A(1,1)=(3,3)$ 이므로 $3$ 은 고윳값이고 $(1,1)$ 은 고유벡터다. $N$ 의 고윳값은 $0$ 하나다.
+
+고윳값 $\lambda$ 의 **고유공간(eigenspace)** 은 $\lambda I-T$ 의 핵이고, 그 차원이 **기하적 중복도(geometric multiplicity)** 다.
 
 $$
 E_\lambda=\ker(\lambda I-T),\qquad
 m_{\mathrm{geo}}(\lambda)=\dim E_\lambda
 $$
 
-$n$ 차 정사각행렬 $A$ 의 특성다항식은 [행렬식](determinants.md)으로 정의되는 $n$ 차 monic 다항식이며, 그 근이 정확히 고윳값이다. $\lambda$ 가 근으로 등장하는 중복도가 대수적 중복도다.
+$A$ 의 $E_3$ 은 $(1,1)$ 이 생성하는 직선이고 $N$ 의 $E_0$ 은 $(1,0)$ 이 생성하는 직선이므로, 두 기하적 중복도가 모두 $1$ 이다.
+
+$n$ 차 정사각행렬 $A$ 의 **특성다항식(characteristic polynomial)** 은 [행렬식](determinants.md)으로 정의되는 최고차 계수 $1$ 의 $n$ 차 다항식이다. $\lambda$ 가 그 근으로 나타나는 중복도가 **대수적 중복도(algebraic multiplicity)** 다.
 
 $$
 \chi_A(\lambda)=\det(\lambda I-A)
 $$
 
-가역행렬 $P$ 가 존재하여 $P^{-1}AP$ 가 대각행렬이면 $A$ 가 대각화 가능하다고 한다. 이때 $P$ 의 열이 고유벡터, 대각 성분이 대응하는 고윳값이다.
+직관 절의 $A$ 는 $\chi_A(\lambda)=(\lambda-2)^2-1=(\lambda-1)(\lambda-3)$ 이다. $N$ 은 $\chi_N(\lambda)=\lambda^2$ 이므로 고윳값 $0$ 의 대수적 중복도가 $2$ 이고 기하적 중복도 $1$ 보다 크다.
+
+가역행렬 $P$ 가 존재하여 $P^{-1}AP$ 가 대각행렬이면 $A$ 가 **대각화 가능(diagonalizable)** 하다고 한다.
 
 $$
 A=P\thinspace\mathrm{diag}(\lambda_1,\dots,\lambda_n)\thinspace P^{-1}
 $$
 
+직관 절의 $A$ 는 고유벡터 $(1,1)$, $(1,-1)$ 을 열로 하는 $P=\begin{pmatrix}1&1\cr 1&-1\end{pmatrix}$ 로 $P^{-1}AP=\mathrm{diag}(3,1)$ 이 되어 대각화 가능하다.
+
 # 성질
+
+## 특성다항식의 근
+
+$\lambda$ 가 고윳값인 것과 $\chi_A(\lambda)=0$ 인 것은 동치다. $\lambda I-A$ 의 핵이 $0$ 이 아닌 벡터를 포함하는 것과 $\lambda I-A$ 가 가역이 아닌 것이 동치이기 때문이다. $A=P\thinspace\mathrm{diag}(\lambda_1,\dots,\lambda_n)\thinspace P^{-1}$ 이면 $P$ 의 열이 고유벡터이고 대각 성분이 대응하는 고윳값이다.
 
 ## 고유벡터의 선형독립
 
@@ -76,7 +88,7 @@ $$
 
 ## 유사불변량
 
-$P^{-1}AP$ 는 $A$ 와 같은 특성다항식, 같은 고윳값, 같은 중복도를 갖는다. 반대로 같은 특성다항식을 가져도 유사하지 않을 수 있다. 위의 $N$ 과 영행렬은 특성다항식이 모두 $\lambda^2$ 이지만 계수가 다르다. 완전한 분류는 Jordan 표준형이나 불변인자가 한다.
+$P^{-1}AP$ 는 $A$ 와 같은 특성다항식, 같은 고윳값, 같은 중복도를 갖는다. 반대로 같은 특성다항식을 가져도 유사하지 않을 수 있다. 위의 $N$ 과 영행렬은 특성다항식이 모두 $\lambda^2$ 이지만 계수가 다르다. 완전한 분류는 [Jordan 표준형](jordan-canonical-form.md)이나 불변인자가 한다.
 
 # 활용
 
