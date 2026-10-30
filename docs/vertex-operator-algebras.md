@@ -6,16 +6,6 @@
 
 # 직관
 
-$$
-a(z)\thinspace b(w)\ \sim\ \sum_{n}\frac{\big(a_{(n)}b\big)(w)}{(z-w)^{n+1}}
-$$
-
-이 전개를 공리로 삼은 대수 구조가 정점작용소대수(vertex operator algebra, VOA)다. 결합대수에서 곱셈 하나가 하는 일을 무한히 많은 쌍선형 연산 $a_{(n)}$ 이 나눠 맡고, 결합법칙 자리에 "두 장이 충분히 떨어져 있으면 순서를 바꿔도 된다" 는 국소성 공리가 들어간다.
-
-VOA 는 [Virasoro 대수](virasoro-algebra.md)와 affine Kac–Moody 대수의 표현을 담는 틀이다. 무한차원 [Lie 대수](lie-algebras.md)의 [최고무게 가군](highest-weight-modules.md)에 곱셈 구조를 더한 것이며, 정의 안에 Virasoro 원소 $\omega$ 가 명시적으로 들어간다.
-
-좋은 조건을 만족하는 VOA 의 기약가군 지표들은 $\mathrm{SL}\_2(\mathbb Z)$ 의 유한차원 표현을 이룬다(Zhu 정리). 대수 구조 하나가 [모듈러 형식](modular-forms.md) 한 묶음을 낳으며, [괴물 달빛](monstrous-moonshine.md)에서 $j$ 가 나온 것이 그 사례다.
-
 결합대수에서 원소 $a$ 는 왼쪽 곱셈 연산자 $L_a$ 하나를 준다. 정점작용소대수에서 원소 $a$ 는 **형식 급수**를 준다.
 
 $$
@@ -28,12 +18,12 @@ $z$ 는 수렴을 신경 쓰지 않는 형식변수다. 대응 $a\mapsto Y(a,z)$
 
 ## 공리
 
-**정점작용소대수**는 네 쌍 $(V,Y,\mathbf 1,\omega)$ 이다.
+**정점작용소대수(vertex operator algebra, VOA)** 는 네 쌍 $(V,Y,\mathbf 1,\omega)$ 이다.
 
 - $V=\bigoplus_{n\in\mathbb Z}V_n$ 은 각 $V_n$ 이 유한차원이고 아래로 유한한 등급 벡터공간.
 - $Y:V\to\mathrm{End}(V)[[z,z^{-1}]]$ 곧 $Y(a,z)=\sum_n a_{(n)}z^{-n-1}$ 은 절단 조건을 만족한다.
 - $\mathbf 1\in V_0$ 은 **진공**으로 $Y(\mathbf 1,z)=\mathrm{id}$ 이고 $Y(a,z)\mathbf 1\big|\_{z=0}=a$ 다.
-- $\omega\in V_2$ 는 **Virasoro 원소**로 $Y(\omega,z)=\sum_n L_nz^{-n-2}$ 의 모드가 중심전하 $c$ 의 Virasoro 대수를 이룬다.
+- $\omega\in V_2$ 는 **Virasoro 원소**로 $Y(\omega,z)=\sum_n L_nz^{-n-2}$ 의 모드가 중심전하 $c$ 의 [Virasoro 대수](virasoro-algebra.md)를 이룬다.
 
 $$
 [L_m,L_n]=(m-n)L_{m+n}+\frac{c}{12}m(m^2-1)\delta_{m+n,0}
@@ -42,21 +32,19 @@ $$
 - $L_0$ 은 $L_0|\_{V_n}=n$ 으로 등급을 주고, $L_{-1}$ 은 $Y(L_{-1}a,z)=\partial_zY(a,z)$ 로 평행이동을 준다.
 - 국소성: 모든 $a,b$ 에 대해 어떤 $N$ 이 있어 $(z-w)^N[Y(a,z),Y(b,w)]=0$ 이다.
 
-국소성은 $Y(a,z)Y(b,w)$ 와 $Y(b,w)Y(a,z)$ 가 서로 다른 영역에서 수렴하는 같은 유리형 함수의 전개라는 조건이다. 물리에서는 공간꼴로 떨어진 두 관측량이 교환한다는 요구에 해당한다.
-
-$\omega$ 를 빼면 **정점대수**다. Virasoro 원소가 등급과 모듈러성을 담당하므로 모듈러 형식 쪽 응용에서는 필요하다.
+$\omega$ 를 뺀 구조를 **정점대수(vertex algebra)** 라 한다.
 
 ## 가군과 지표
 
-$V$ [가군](modules.md) $M$ 은 상태-장 대응 $Y_M:V\to\mathrm{End}(M)[[z,z^{-1}]]$ 를 갖고 같은 항등식을 만족하는 공간이다. $L_0$ 의 고윳값은 일반적으로 $h+\mathbb Z_{\ge0}$ 꼴이고 $h$ 가 **등각무게**다.
+$V$ [가군](modules.md) $M$ 은 상태-장 대응 $Y_M:V\to\mathrm{End}(M)[[z,z^{-1}]]$ 를 갖고 같은 항등식을 만족하는 공간이다. $L_0$ 의 고윳값은 일반적으로 $h+\mathbb Z_{\ge0}$ 꼴이고 $h$ 가 **등각무게(conformal weight)** 다.
 
 $$
 \mathrm{ch}M(\tau)=\mathrm{tr}\_Mq^{L_0-c/24}=q^{h-c/24}\sum_{n\ge0}(\dim M_{h+n})q^n
 $$
 
-지표는 등급별 차원의 [생성함수](generating-functions.md)다. 보정 $-c/24$ 는 원기둥 위의 Casimir 에너지에서 나오며, 이 보정이 있어야 지표가 모듈러 성질을 갖는다. [Dedekind eta](theta-series.md)의 $q^{1/24}$ 와 같은 자리다. $c$ 가 24 의 배수이면 $q^{-c/24}$ 가 정수 거듭제곱이 되어 지표가 $q$ 의 Laurent 급수가 된다.
+지표는 등급별 차원의 [생성함수](generating-functions.md)에 $q^{h-c/24}$ 를 곱한 것이다.
 
-기약가군이 $V$ 자신 하나뿐이면 **홀로모픽**이라 한다.
+기약가군이 $V$ 자신 하나뿐이면 **홀로모픽(holomorphic)** 이라 한다. 아래 격자 VOA $V_{E_8}$ 이 그 예다.
 
 ## 격자 VOA
 
@@ -66,7 +54,7 @@ $$
 V_L=S\big(\mathfrak h^-\big)\otimes\mathbb C[L],\qquad \mathfrak h=L\otimes_{\mathbb Z}\mathbb C
 $$
 
-앞쪽은 Heisenberg 대수의 Fock 공간(자유 보손), 뒤쪽은 격자의 군환이다. 격자벡터 $\alpha$ 에 대응하는 장이 정점작용소이고 구조 전체의 이름이 여기서 나왔다.
+앞쪽은 Heisenberg 대수의 Fock 공간(자유 보손)으로 진공 $\mathbf 1$ 이 생성하는 [최고무게 가군](highest-weight-modules.md)이고, 뒤쪽은 격자의 군환이다. 격자벡터 $\alpha$ 에 대응하는 장이 정점작용소이고 구조 전체의 이름이 여기서 나왔다.
 
 $$
 Y(e^\alpha,z)=e^{\alpha}z^{\alpha_{(0)}}\exp\negthinspace\left(\sum_{k\gt 0}\frac{\alpha_{(-k)}}{k}z^k\right)\exp\negthinspace\left(-\sum_{k\gt 0}\frac{\alpha_{(k)}}{k}z^{-k}\right)
@@ -78,9 +66,17 @@ $$
 \mathrm{ch}V_L(\tau)=\frac{\Theta_L(\tau)}{\eta(\tau)^{n}}
 $$
 
-$L$ 이 짝수 유니모듈러면 $V_L$ 이 홀로모픽이고 지표가 모듈러 함수다.
+$L=E_8$ 이면 $n=8$ 이고 $V_{E_8}$ 의 무게 $1$ 부분은 Cartan 부분 $8$ 차원과 근벡터 $240$ 개가 펼치는 $248$ 차원 공간이다.
 
 # 성질
+
+## 국소성의 뜻
+
+국소성은 $Y(a,z)Y(b,w)$ 와 $Y(b,w)Y(a,z)$ 가 서로 다른 영역에서 수렴하는 같은 유리형 함수의 전개라는 조건과 동치다. 물리에서는 공간꼴로 떨어진 두 관측량이 교환한다는 요구에 해당한다.
+
+## 지표의 정규화
+
+보정 $-c/24$ 는 원기둥 위의 Casimir 에너지에서 나오며, 이 보정이 있어야 지표가 [모듈러 형식](modular-forms.md)처럼 변환한다. [Dedekind eta](theta-series.md)의 $q^{1/24}$ 와 같은 자리다. $c$ 가 24 의 배수이면 $q^{-c/24}$ 가 정수 거듭제곱이 되어 지표가 $q$ 의 Laurent 급수가 된다. $L$ 이 짝수 유니모듈러면 $V_L$ 이 홀로모픽이고 지표가 모듈러 함수다.
 
 ## 교환자 공식
 
@@ -90,7 +86,7 @@ $$
 \big[a_{(m)},b_{(n)}\big]=\sum_{k\ge0}\binom{m}{k}\big(a_{(k)}b\big)\_{(m+n-k)}
 $$
 
-$k=0$ 항만 남는 경우가 Lie 대수의 괄호이고 나머지가 고차 보정이다.
+$k=0$ 항만 남는 경우가 [Lie 대수](lie-algebras.md)의 괄호이고 나머지가 고차 보정이다.
 
 ## 무게 1 자리의 Lie 대수
 
@@ -123,7 +119,7 @@ Schellekens 는 $c=24$ 인 홀로모픽 VOA 의 무게 1 Lie 대수가 71 개의
 
 # 활용
 
-- **괴물 달빛.** $V^\natural$ 은 Leech 격자 VOA 의 $\mathbb Z/2$ 궤도체이고 $\mathrm{Aut}(V^\natural)=\mathbb M$ 이다. 지표가 $j-744$ 이므로 $\mathbb M$ 의 등급 표현이 된다. Borcherds 의 증명은 $V^\natural$ 에 쌍곡격자 VOA 를 텐서해 무한차원 Lie 대수를 만드는 데서 출발한다.
+- **괴물 달빛.** [괴물 달빛 추측](monstrous-moonshine.md)의 $V^\natural$ 은 Leech 격자 VOA 의 $\mathbb Z/2$ 궤도체이고 $\mathrm{Aut}(V^\natural)=\mathbb M$ 이다. 지표가 $j-744$ 이므로 $\mathbb M$ 의 등급 표현이 된다. Borcherds 의 증명은 $V^\natural$ 에 쌍곡격자 VOA 를 텐서해 무한차원 Lie 대수를 만드는 데서 출발한다.
 - **등각장론과 위상적 장론.** VOA 는 2 차원 등각장론의 손지기(chiral) 부분을 정의한다. 유리 VOA 의 가군 [범주](category.md)는 [모듈러 텐서범주](modular-tensor-categories.md)이고, 그것이 3 차원 [Chern–Simons 이론](chern-simons.md)과 [매듭 불변량](knot-invariants.md)을 준다.
 - **W-대수.** Virasoro 대수를 고차 스핀 장으로 확장한 VOA 들이다. Drinfeld–Sokolov 축소로 affine VOA 에서 만들어지고 기하학적 Langlands 의 국소 이론에 쓰인다.
 - **손지기 대수와 인수분해 대수.** Beilinson–Drinfeld 가 VOA 를 대수곡선 위의 층으로 재정식화했다. 좌표에 의존하지 않는 정의라 기하학적 Langlands 로 이어진다.
