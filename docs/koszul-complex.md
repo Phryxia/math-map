@@ -6,7 +6,7 @@
 
 # 직관
 
-$R$ 을 환, $x,y\in R$ 이라 하고 $R/(x,y)$ 의 자유 분해를 구하려 한다. 원소가 하나이고 $x$ 가 영인자가 아니면 다음이 완전열이다.
+$R$ 을 환, $x,y\in R$ 이라 하고 $R/(x,y)$ 의 자유 분해를 구하려 한다. 원소가 하나이고 $x$ 가 영인자(zero divisor)가 아니면 다음이 완전열이다.
 
 $$
 0\longrightarrow R\xrightarrow{\thinspace x\thinspace }R\longrightarrow R/(x)\longrightarrow 0
@@ -18,8 +18,6 @@ $$
 0\longrightarrow R\xrightarrow{\thinspace (-y,\thinspace x)\thinspace }R^2\xrightarrow{\thinspace (x,\thinspace y)\thinspace }R\longrightarrow R/(x,y)\longrightarrow 0
 $$
 
-Koszul 복합체의 호몰로지가 소멸하는 것과 원소열이 정칙열인 것이 동치다.
-
 # 정의
 
 ## 복합체
@@ -30,23 +28,33 @@ $$
 d(e_{i_1}\wedge\dots\wedge e_{i_p})=\sum_{j=1}^p(-1)^{j-1}x_{i_j}\thinspace e_{i_1}\wedge\dots\wedge\widehat{e_{i_j}}\wedge\dots\wedge e_{i_p}
 $$
 
-$\widehat{e_{i_j}}$ 는 그 인자를 뺀다는 표시다. $K_0=R$, $K_n\cong R$ 이고 $p\gt n$ 이면 $K_p=0$ 이다. 부호가 두 번 지울 때마다 짝을 이뤄 상쇄되므로 $d\circ d=0$ 이다.
+$\widehat{e_{i_j}}$ 는 그 인자를 뺀다는 표시다. $K_0=R$, $K_n\cong R$ 이고 $p\gt n$ 이면 $K_p=0$ 이다.
+
+$n=2$ 이고 $x=(x,y)$ 이면 $K_2=Re_1\wedge e_2$ , $K_1=Re_1\oplus Re_2$ , $K_0=R$ 이다. 미분은 $d(e_1)=x$ , $d(e_2)=y$ , $d(e_1\wedge e_2)=xe_2-ye_1$ 이고, 이것이 직관 절의 복합체 $R\to R^2\to R$ 이다.
 
 ## 가군 계수
 
-$R$ 가군 $M$ 에 대해 $K\_\bullet(x;M)=K\_\bullet(x)\otimes_RM$ 이라 쓰고 그 호몰로지를 $H_p(x;M)$ 이라 한다. 정의에서 $H_0(x;M)=M/(x_1,\dots,x_n)M$ 이다.
+$R$ 가군 $M$ 에 대해 $K\_\bullet(x;M)=K\_\bullet(x)\otimes_RM$ 이라 쓰고 그 호몰로지를 $H_p(x;M)$ 이라 한다.
+
+$M=R$ 이면 $K\_\bullet(x;R)=K\_\bullet(x)$ 이고, 직관 절의 $R=k\lbrack x,y\rbrack$ 와 $x=(x,y)$ 에서 $H_0=R/(x,y)=k$ 다.
 
 ## 정칙열
 
-$x_1,\dots,x_n$ 이 $M$ 위의 **정칙열**이라는 것은 각 $i$ 에서 $x_i$ 가 $M/(x_1,\dots,x_{i-1})M$ 의 영인자가 아니고 $M/(x_1,\dots,x_n)M\neq0$ 이라는 뜻이다.
+$x_1,\dots,x_n$ 이 $M$ 위의 **정칙열(regular sequence)** 이라는 것은 각 $i$ 에서 $x_i$ 가 $M/(x_1,\dots,x_{i-1})M$ 의 영인자가 아니고 $M/(x_1,\dots,x_n)M\neq0$ 이라는 뜻이다.
+
+$R=k\lbrack x,y\rbrack$ 에서 $x,y$ 는 $R$ 위의 정칙열이다. $x$ 는 정역 $R$ 의 영인자가 아니고, $y$ 는 $R/(x)\cong k\lbrack y\rbrack$ 의 영인자가 아니다. $x,x$ 는 정칙열이 아니다. $R/(x)$ 에서 $x\cdot1=0$ 이므로 둘째 $x$ 가 영인자다.
 
 # 성질
+
+## 미분의 제곱과 영차 호몰로지
+
+$d\circ d=0$ 이다. $e_{i_j}$ 와 $e_{i_k}$ 를 지우는 두 순서가 부호 $(-1)^{j-1}(-1)^{k-2}$ 와 $(-1)^{k-1}(-1)^{j-1}$ 으로 같은 항을 주고 서로 상쇄된다. 또 $K_1\to K_0$ 의 상이 $(x_1,\dots,x_n)$ 이므로 $H_0(x;M)=M/(x_1,\dots,x_n)M$ 이다.
 
 ## 정칙열 판정
 
 **정리.** $x$ 가 $M$ 위의 정칙열이면 $p\ge1$ 에서 $H_p(x;M)=0$ 이다. $R$ 이 Noether 국소환이고 $M$ 이 유한생성이며 $x_i$ 가 극대 아이디얼에 있으면 역도 성립한다.
 
-증명은 $n$ 에 대한 귀납이다. $K\_\bullet(x_1,\dots,x_n)$ 은 $K\_\bullet(x_1,\dots,x_{n-1})$ 에 $K\_\bullet(x_n)$ 을 텐서한 것이고, 뒤쪽이 두 항뿐이므로 앞쪽 복합체에 $x_n$ 을 곱하는 사상의 사상뿔이 된다. 그 긴 완전열이
+증명은 $n$ 에 대한 귀납이다. $K\_\bullet(x_1,\dots,x_n)$ 은 $K\_\bullet(x_1,\dots,x_{n-1})$ 에 $K\_\bullet(x_n)$ 을 텐서한 것이고, 뒤쪽이 두 항뿐이므로 앞쪽 복합체에 $x_n$ 을 곱하는 사상의 사상뿔(mapping cone)이 된다. 그 긴 완전열이
 
 $$
 0\longrightarrow H_p(x';M)/x_nH_p(x';M)\longrightarrow H_p(x;M)\longrightarrow \lbrace m\in H_{p-1}(x';M):x_nm=0\rbrace\longrightarrow0
