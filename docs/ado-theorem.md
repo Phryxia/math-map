@@ -22,9 +22,13 @@ $XY-YX=Z$ 이고 $Z$ 는 $X$, $Y$ 와 교환하므로 괄호가 같다. 세 행�
 
 Lie 대수 $\mathfrak g$ 의 표현 $\varphi:\mathfrak g\to\mathfrak{gl}(V)$ 가 단사이면 **충실한 표현(faithful representation)** 이라 한다.
 
-**정리(Ado).** 표수 $0$ 인 체 $k$ 위의 유한차원 Lie 대수 $\mathfrak g$ 에는 유한차원 충실한 표현이 있다. 그 표현에서 $\mathfrak g$ 의 멱영 근기(nilradical), 곧 극대 멱영 아이디얼의 원소들이 멱영 행렬로 작용하게 잡을 수 있다.[^1]
+직관 절의 $3\times3$ 행렬로 주는 표현은 Heisenberg 대수의 충실한 표현이다. 딸림표현은 $\mathrm{ad}\_Z=0$ 이므로 $Z\ne 0$ 을 $0$ 으로 보내 충실하지 않다.
 
 # 성질
+
+## 정리의 진술
+
+**정리(Ado).** 표수 $0$ 인 체 $k$ 위의 유한차원 Lie 대수 $\mathfrak g$ 에는 유한차원 충실한 표현이 있다. 그 표현에서 $\mathfrak g$ 의 멱영 근기(nilradical), 곧 극대 멱영 아이디얼의 원소들이 멱영 행렬로 작용하게 잡을 수 있다.[^1]
 
 ## 증명의 요지
 
