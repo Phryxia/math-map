@@ -6,15 +6,7 @@
 
 # 직관
 
-Cauchy–Schwarz 부등식은 [내적 공간](inner-product-spaces.md)의 두 벡터 $u,v$ 에 대해 내적의 절댓값이 노름의 곱을 넘지 않는다는 정리다.
-
-$$
-\lvert\langle u,v\rangle\rvert\le\lVert u\rVert\thinspace\lVert v\rVert
-$$
-
-등호는 $u$ 와 $v$ 가 선형종속일 때만 성립한다.
-
-평면에서 두 벡터의 점곱은 $\lVert u\rVert\lVert v\rVert\cos\theta$ 이므로 점곱을 노름의 곱으로 나누면 $-1$ 과 $1$ 사이의 값이 나온다. 내적 공간에는 각도가 따로 정의되어 있지 않으므로, 각도를 이 비로 정의하려면 비가 그 범위에 들어간다는 것을 내적의 공리만으로 확인해야 한다.
+평면에서 두 벡터의 점곱은 $\lVert u\rVert\lVert v\rVert\cos\theta$ 이므로 점곱을 노름의 곱으로 나누면 $-1$ 과 $1$ 사이의 값이 나온다. 개요의 $(1,2)$, $(3,4)$ 에서 이 값은 $11/(5\sqrt5)\approx 0.98$ 이고 끼인각의 코사인이다. [내적 공간](inner-product-spaces.md)에는 각도가 따로 정의되어 있지 않으므로, 각도를 이 비로 정의하려면 비가 그 범위에 들어간다는 것을 내적의 공리만으로 확인해야 한다.
 
 확인에 쓰는 것은 양의 정부호성 하나다. [실수](real-numbers.md) $t$ 마다 $\lVert u-tv\rVert^2\ge 0$ 이고, 좌변을 내적의 선형성으로 펼치면 $t$ 의 이차식 $\lVert v\rVert^2t^2-2\langle u,v\rangle t+\lVert u\rVert^2$ 이 된다. 이차식이 모든 실수에서 음이 아니므로 판별식이 $0$ 이하이고, 그것을 정리하면 $\langle u,v\rangle^2\le\lVert u\rVert^2\lVert v\rVert^2$ 이다. $t$ 는 $v$ 방향으로 $u$ 를 얼마나 덜어낼지를 정하는 값이고, 가장 많이 덜어낸 자리에서 남는 길이가 부등식의 여유다.
 
@@ -27,6 +19,8 @@ $$
 $$
 
 $v\ne 0$ 일 때 등호가 성립하는 것은 $u=\lambda v$ 인 스칼라 $\lambda$ 가 존재하는 것과 동치다.
+
+$u=(1,2)$, $v=(3,4)$ 에서 좌변은 $11$, 우변은 $\sqrt5\cdot5$ 이고 $11^2=121\le125=(5\sqrt5)^2$ 이다. $u=(1,2)$, $v=(2,4)=2u$ 에서는 좌변이 $10$, 우변이 $\sqrt5\cdot\sqrt{20}=10$ 으로 등호가 성립한다. $\mathbb R^n$ 의 점곱에 적용하면 $\left(\sum_i a_ib_i\right)^2\le\left(\sum_i a_i^2\right)\left(\sum_i b_i^2\right)$ 이다.
 
 # 성질
 
