@@ -6,25 +6,21 @@
 
 # 직관
 
-일반적으로 가환환 $R$ 과 곱셈에 닫힌 부분집합 $S$ 가 주어지면, $S$ 의 원소를 전부 가역원으로 만드는 가장 경제적인 환 $S^{-1}R$ 과 표준 환준동형 $R \to S^{-1}R$ 이 존재한다.
-
-[소 아이디얼](prime-ideals.md) $p$ 에서의 국소화 $R_p$ 는 유일한 극대 아이디얼을 갖는 국소환이어서, 환을 한 점 근방에서만 보게 한다. 국소화는 완전열을 보존하고 소 아이디얼을 부분집합으로 잘라내므로, "국소적으로 참이면 대역적으로 참" 꼴의 정리들이 아이디얼과 [가군](modules.md)에 대해 성립한다. 이 국소-대역 원리는 가환대수와 대수기하의 기본 작업 방식이다.
-
-아래에서 환은 모두 가환환이고 곱셈 항등원 $1$ 을 갖는다. 준동형은 $1$ 을 $1$ 로 보낸다.
-
 유리수를 만드는 절차에서 정수 쌍 $(a, s)$ 를 분수 $a/s$ 로 읽고, $a/s$ 와 $b/t$ 를 $at = bs$ 일 때 같다고 선언한 뒤 덧셈과 곱셈을 평소의 분수 규칙으로 정의한다. 국소화는 이 절차에서 분모로 쓸 수 있는 집합을 $S$ 로 한정한 것이다. $R$ 에 영인자가 있으면 $at = bs$ 라는 관계가 추이적이지 않으므로, [동치관계](equivalence-relations.md)를 어떤 $u$ 가 $S$ 에 있어 $u(at - bs) = 0$ 이 되는 것으로 느슨하게 잡는다. $S$ 의 선택이 만들어 낼 환을 결정하고, 전형적인 선택이 셋이다.
 
 - $S$ 가 $R$ 의 모든 비영인자 — 전분수환(total quotient ring). 정역이면 분수체가 된다.
 - $S=\lbrace 1,f,f^2,\dots\rbrace$ — 한 원소 $f$ 를 가역으로 만든 환. 기하적으로는 $f$ 가 0이 되지 않는 열린 영역만 남긴다.
-- $S=R\setminus p$ ($p$ 는 소 아이디얼) — 이것이 $R_p$ 다. 소 아이디얼의 정의가 곧 이 여집합이 곱닫힘이라는 말이다.
+- $S=R\setminus p$ ($p$ 는 [소 아이디얼](prime-ideals.md)) — 이것이 $R_p$ 다. 소 아이디얼의 정의가 곧 이 여집합이 곱닫힘이라는 말이다.
 
-세 번째가 "국소화" 라는 이름의 유래다. $R_p$ 에서 가역이 아닌 원소는 정확히 분자가 $p$ 에 들어 있는 분수들이고, 이들이 아이디얼을 이루므로 극대 아이디얼이 하나뿐이다. 비가역원 전체가 아이디얼을 이루는 환을 국소환(local ring)이라 한다. $R$ 을 어떤 공간 위의 함수들의 환으로 보면 $R_p$ 는 점 $p$ 근방에서 함수의 싹(germ)들의 환이고, 점에서 값이 0이 아닌 함수는 근방에서 나눌 수 있으니 가역이 된다.
+세 번째가 "국소화" 라는 이름의 유래다. $R_p$ 에서 가역이 아닌 원소는 정확히 분자가 $p$ 에 들어 있는 분수들이고, 이들이 아이디얼을 이루므로 극대 아이디얼이 하나뿐이다. $R$ 을 어떤 공간 위의 함수들의 환으로 보면 $R_p$ 는 점 $p$ 근방에서 함수의 싹(germ)들의 환이고, 점에서 값이 0이 아닌 함수는 근방에서 나눌 수 있으니 가역이 된다.
 
 # 정의
 
+아래에서 환은 모두 가환환이고 곱셈 항등원 $1$ 을 갖는다. 준동형은 $1$ 을 $1$ 로 보낸다.
+
 ## 곱닫힌 집합과 분수환
 
-**정의.** $R$ 의 부분집합 $S$ 가 **곱닫힌 집합**(multiplicatively closed set)이라는 것은 $1$ 이 $S$ 에 속하고, $s, t$ 가 $S$ 에 속하면 $st$ 도 $S$ 에 속한다는 뜻이다.
+$R$ 의 부분집합 $S$ 가 **곱닫힌 집합(multiplicatively closed set)** 이라는 것은 $1$ 이 $S$ 에 속하고, $s, t$ 가 $S$ 에 속하면 $st$ 도 $S$ 에 속한다는 뜻이다. $\mathbb Z$ 에서 $\lbrace 1,2,4,8,\dots\rbrace$ 는 곱닫힌 집합이고, $\lbrace 1,2,3\rbrace$ 은 $2\cdot3=6$ 을 포함하지 않아 곱닫힌 집합이 아니다.
 
 집합 $R\times S$ 위에 관계를 다음과 같이 준다.
 
@@ -32,55 +28,59 @@ $$
 (a, s) \sim (b, t) \iff \exists u \in S,\ u(at - bs) = 0 .
 $$
 
-반사성과 대칭성은 자명하고, 추이성은 $u(at-bs)=0$ 과 $v(bw-ct)=0$ 에서 $uvt(aw-cs)=0$ 를 얻어 나온다. 동치류를 $a/s$ 로 적고 전체 집합을 $S^{-1}R$ 로 쓴다. 연산은
+반사성은 $u=1$ 로, 대칭성은 $at-bs$ 의 부호를 바꾸어 나오고, 추이성은 $u(at-bs)=0$ 과 $v(bw-ct)=0$ 에서 $uvt(aw-cs)=0$ 를 얻어 나온다. 동치류를 $a/s$ 로 적고 전체 집합을 $S^{-1}R$ 로 쓴다. 연산은
 
 $$
 \frac{a}{s} + \frac{b}{t} = \frac{at + bs}{st}, \qquad \frac{a}{s}\cdot\frac{b}{t} = \frac{ab}{st}
 $$
 
-로 정의한다. 대표원 선택에 무관함을 확인하면 $S^{-1}R$ 은 영원 $0/1$ 과 항등원 $1/1$ 을 갖는 가환환이 된다. 이것이 $S$ 에 대한 **환의 국소화(localization of a ring)** 다.
+로 정의한다. 연산이 대표원의 선택에 무관하고, $S^{-1}R$ 은 영원 $0/1$ 과 항등원 $1/1$ 을 갖는 가환환이 된다. 이것이 $S$ 에 대한 **환의 국소화(localization of a ring)** 다. **표준 사상(canonical map)** 은 $\iota(a) = a/1$ 로 주어지는 $\iota : R \to S^{-1}R$ 이다.
 
-**표준 사상**은
+$\mathbb Z$ 와 $S=\lbrace 1,2,4,\dots\rbrace$ 에서 $S^{-1}\mathbb Z$ 는 분모가 $2$ 의 거듭제곱인 유리수의 환 $\mathbb Z\lbrack 1/2\rbrack$ 이고, $3/4=6/8$ 이다. $u$ 가 필요한 예는 $R=\mathbb Z/6\mathbb Z$ 와 $S=\lbrace 1,2,4\rbrace$ 다. $2\cdot(3\cdot1-0\cdot1)=6=0$ 이므로 $3/1=0/1$ 이고, $\iota(3)=0$ 이다.
 
-$$
-\iota : R \longrightarrow S^{-1}R, \qquad \iota(a) = \frac{a}{1}
-$$
+## 국소환
 
-이며 환준동형이다. 핵은 $\lbrace a : ua = 0 \text{ 인 } u \text{ 가 } S \text{ 에 존재}\rbrace$ 이다. 따라서 $S$ 가 비영인자들로만 이루어지면 $\iota$ 는 단사이고, $0$ 이 $S$ 에 속하면 $S^{-1}R$ 은 영환이다.
+극대 아이디얼을 정확히 하나 갖는 환을 **국소환(local ring)** 이라 하고, 그 극대 아이디얼을 $m$ 으로, 몫체 $R/m$ 를 **잉여체(residue field)** 라 한다.
+
+$p$ 가 소 아이디얼이면 $S=R\setminus p$ 는 곱닫힘이고, 이때의 국소화를 $R_p$ 로 쓰며 **$p$ 에서의 국소화(localization at p)** 라 한다. $pR_p = \left\lbrace a/s : a \in p,\ s \notin p \right\rbrace$ 로 둔다.
+
+$p=(3)\subseteq\mathbb Z$ 이면 $\mathbb Z\_{(3)}$ 은 분모가 $3$ 의 배수가 아닌 유리수의 환이다. $2/5$ 는 역원 $5/2$ 를 갖고, $3/5$ 는 역원 $5/3$ 의 분모가 $3$ 의 배수라 가역이 아니다. 가역이 아닌 원소 전체가 $3\mathbb Z\_{(3)}$ 이고, 이것이 유일한 극대 아이디얼이며 잉여체는 $\mathbb Z/3\mathbb Z$ 다.
+
+## 가군의 국소화
+
+[가군](modules.md) $M$ 에 대해서도 같은 구성을 한다. $M \times S$ 를 $(m,s) \sim (n,t) \iff \exists u \in S,\ u(tm - sn) = 0$ 으로 나눈 것을 $S^{-1}M$ 이라 하며 $S^{-1}R$ 가군이 된다.
+
+$S=\lbrace 1,2,4,\dots\rbrace$ 이면 $S^{-1}(\mathbb Z/3\mathbb Z)=\mathbb Z/3\mathbb Z$ 다. $2$ 가 $\mathbb Z/3\mathbb Z$ 에서 이미 가역이기 때문이다. $S^{-1}(\mathbb Z/2\mathbb Z)=0$ 이다. 모든 $m$ 에 대해 $u=2$ 가 $2m=0$ 을 주어 $m/1=0$ 이 된다.
+
+# 성질
+
+## 표준 사상의 핵
+
+표준 사상 $\iota$ 는 환준동형이고, 핵은 $\lbrace a : ua = 0 \text{ 인 } u \text{ 가 } S \text{ 에 존재}\rbrace$ 이다. 따라서 $S$ 가 비영인자들로만 이루어지면 $\iota$ 는 단사이고, $0$ 이 $S$ 에 속하면 $S^{-1}R$ 은 영환이다.
 
 ## 보편성질
 
-**정리 (보편성질).** $f : R \to A$ 가 환준동형이고 $f(S)$ 가 전부 $A$ 의 가역원이면, $g \circ \iota = f$ 를 만족하는 환준동형 $g : S^{-1}R \to A$ 가 유일하게 존재한다.
+**정리 (보편성질, universal property).** $f : R \to A$ 가 환준동형이고 $f(S)$ 가 전부 $A$ 의 가역원이면, $g \circ \iota = f$ 를 만족하는 환준동형 $g : S^{-1}R \to A$ 가 유일하게 존재한다.
 
 $$
 g\negthinspace\left(\frac{a}{s}\right) = f(a)\thinspace f(s)^{-1}.
 $$
 
-well-definedness 는 동치관계의 정의에서 나오고, 유일성은 $g(a/s)$ 가 $g(a/1)g(1/s)$ 로 강제되기 때문이다. 이 성질이 $S^{-1}R$ 를 동형을 제외하고 결정한다. [범주](category.md)에서는 $S^{-1}R$ 이 $S$ 를 가역으로 만드는 $R$ 대수들 가운데 시작대상이다.
+$g$ 가 대표원의 선택에 무관한 것은 동치관계의 정의에서 나오고, 유일성은 $g(a/s)=g(a/1)g(1/s)$ 에서 나온다. 이 성질이 $S^{-1}R$ 를 동형을 제외하고 결정한다. [범주](category.md)에서는 $S^{-1}R$ 이 $S$ 를 가역으로 만드는 $R$ 대수들 가운데 시작대상이다.
 
-## 국소환
+## 소 아이디얼에서의 국소화의 극대 아이디얼
 
-**정의.** 극대 아이디얼을 정확히 하나 갖는 환을 **국소환**이라 하고, 그 극대 아이디얼을 $m$ 으로, 몫체 $R/m$ 를 잉여체(residue field)라 한다.
+$R_p$ 의 원소 $a/s$ 는 $a$ 가 $p$ 에 속할 때 정확히 비가역이고, $pR_p$ 는 아이디얼이다. 비가역원 전체가 아이디얼이므로 $R_p$ 는 국소환이고 극대 아이디얼은 $pR_p$ 다. 잉여체는 $R_p/pR_p \cong \mathrm{Frac}(R/p)$ 로, $p$ 에서의 함수체다.
 
-$p$ 가 소 아이디얼이면 $S=R\setminus p$ 는 곱닫힘이고, 이때의 국소화를 $R_p$ 로 쓴다. $R_p$ 의 원소 $a/s$ 는 $a$ 가 $p$ 에 속할 때 정확히 비가역이며, 그런 원소들의 집합
+## 텐서곱과의 동형
 
-$$
-pR_p = \left\lbrace \frac{a}{s} : a \in p,\ s \notin p \right\rbrace
-$$
-
-은 아이디얼이다. 비가역원 전체가 아이디얼이므로 $R_p$ 는 국소환이고 극대 아이디얼은 $pR_p$ 다. 잉여체는 $R_p/pR_p \cong \mathrm{Frac}(R/p)$ 로, $p$ 에서의 함수체다.
-
-## 가군의 국소화
-
-$R$ 가군 $M$ 에 대해서도 같은 구성을 한다. $M \times S$ 를 $(m,s) \sim (n,t) \iff \exists u \in S,\ u(tm - sn) = 0$ 으로 나눈 것을 $S^{-1}M$ 이라 하며 $S^{-1}R$ 가군이 된다. 자연스러운 동형
+자연스러운 동형
 
 $$
 S^{-1}M \thickspace\cong\thickspace S^{-1}R \otimes_R M
 $$
 
-이 성립한다([텐서곱](tensor-products.md)). 국소화는 $S^{-1}R$ 과의 텐서곱 [함자](functors.md)이고 완전(exact)하다.
-
-# 성질
+이 성립한다([텐서곱](tensor-products.md)). 따라서 국소화는 $S^{-1}R$ 과의 텐서곱 [함자](functors.md)다.
 
 ## 아이디얼의 확대와 축소
 
@@ -131,7 +131,7 @@ $S=R\setminus p$ 를 넣으면 $R_p$ 의 소 아이디얼은 $p$ 에 포함된 $
 - $S = \lbrace 1, f, f^2, \dots\rbrace$ 이면 $S^{-1}R \cong R[x]/(fx - 1)$ 이다. 보편성질로 양쪽이 같은 대상임을 보인다.
 - $R$ 이 Noetherian 이면 $S^{-1}R$ 도 Noetherian 이다. 모든 아이디얼이 확대 아이디얼이고 생성원이 따라 올라가기 때문이다.
 - $R$ 이 정역이면 $0 \notin S$ 인 한 $S^{-1}R$ 도 정역이고, 모두 분수체 $\mathrm{Frac}(R)$ 의 부분환으로 볼 수 있다. 이때 모든 극대 아이디얼에 걸친 교집합으로 $R = \bigcap_m R_m$ 이 성립한다.
-- 유일분해정역(unique factorization domain, UFD)의 국소화는 UFD 다.
+- [유일분해정역](unique-factorization-domains.md)(unique factorization domain, UFD)의 국소화는 UFD 다.
 - 국소화는 몫과 교환한다. 즉 $S^{-1}(R/I) \cong (S^{-1}R)/(S^{-1}I)$ 이며, 여기서 왼쪽의 곱닫힌 집합은 $S$ 의 상이다([몫환](ideals-quotient-rings.md)).
 
 # 활용
@@ -144,7 +144,7 @@ $$
 \mathbb{Z}\_{(p)} = \left\lbrace \frac{a}{b} \in \mathbb{Q} : p \nmid b \right\rbrace
 $$
 
-이고, 극대 아이디얼은 $p\mathbb Z_{(p)}$ 이고 잉여체는 $\mathbb Z/p\mathbb Z$ 라는 [유한체](finite-fields.md)다. 이 환의 모든 0이 아닌 아이디얼은 $p^n\mathbb Z_{(p)}$ 꼴이므로 이산 부치환(discrete valuation ring)이 되고, 이는 정수의 $p$ 진 자릿수 전개와 $p$ 진 부치 $v_p$ 의 대수적 기반이다([소수](primes.md)).
+이고, 극대 아이디얼은 $p\mathbb Z_{(p)}$ 이고 잉여체는 $\mathbb Z/p\mathbb Z$ 라는 [유한체](finite-fields.md)다. 이 환의 모든 0이 아닌 아이디얼은 $p^n\mathbb Z_{(p)}$ 꼴이므로 [이산부값환](discrete-valuation-rings.md)(discrete valuation ring)이 되고, 이는 정수의 $p$ 진 자릿수 전개와 $p$ 진 부치 $v_p$ 의 대수적 기반이다([소수](primes.md)).
 
 반대 극단으로 $S=\mathbb Z\setminus\lbrace 0\rbrace$ 을 취하면 유리수체 $\mathbb Q$ 가 나오고, $S=\lbrace 1,2,4,\dots\rbrace$ 를 취하면 이진 유리수의 환이 나온다. 서로 다른 $p$ 에 대한 $\mathbb Z_{(p)}$ 들의 교집합이 $\mathbb Z$ 인 것이 위 국소-대역 원리의 가장 익숙한 실례다. [합동식](modular-arithmetic.md)과 [중국인의 나머지 정리](chinese-remainder-theorem.md)가 소수별 정보를 모으는 것과 같은 구도다.
 
