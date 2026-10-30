@@ -8,10 +8,6 @@
 
 $\mathbb Z$ 에서 성립하는 소인수분해의 유일성은 정수를 조금만 넓혀도 깨진다. $\mathbb Z[\sqrt{-5}]$ 가 [유일분해정역](unique-factorization-domains.md)이 아니라는 것이 그 예다.
 
-Dedekind 의 복구 방법은 분해의 대상을 원소에서 아이디얼로 바꾸는 것이다. Dedekind 정역에서는 0 이 아닌 아이디얼이 소 아이디얼의 곱으로 유일하게 분해된다.
-
-세 조건의 의미는 [국소화](localization-rings.md)에서 드러난다. 각 소 아이디얼에서 국소화하면 [이산부값환](discrete-valuation-rings.md)(discrete valuation ring, DVR)이 나오고 거기서는 모든 아이디얼이 한 원소의 거듭제곱으로 생성된다. 전역적 유일분해는 국소적으로 자명한 사실들을 붙인 결과이며, 대수적 정수론과 대수기하가 공유하는 구조다.
-
 유일분해가 깨지는 자리는 기약원이 소원이 아닌 자리다. $\mathbb Z[\sqrt{-5}]$ 에서 $6=2\cdot3=(1+\sqrt{-5})(1-\sqrt{-5})$ 로 두 가지 분해가 나오고, $2$ 는 기약이면서 $(1+\sqrt{-5})(1-\sqrt{-5})$ 를 나누되 두 인수 어느 쪽도 나누지 않는다. $2$ 의 절반에 해당하는 원소가 환 안에 없다.
 
 없는 원소를 아이디얼이 대신한다. $\mathfrak p=(2,1+\sqrt{-5})$ 를 잡으면 $\mathfrak p^2=(2)$ 이고 $(1+\sqrt{-5})=\mathfrak p\mathfrak q$ , $(1-\sqrt{-5})=\mathfrak p\bar{\mathfrak q}$ 로 쪼개지므로, 두 분해가 같은 소 아이디얼들의 곱 $\mathfrak p^2\mathfrak q\bar{\mathfrak q}$ 로 합쳐진다. Dedekind 가 이런 아이디얼을 이상적인 수라 부른 데서 아이디얼이라는 이름이 나왔다.
@@ -20,7 +16,7 @@ Dedekind 의 복구 방법은 분해의 대상을 원소에서 아이디얼로 �
 
 ## Dedekind 정역
 
-정역 $R$ 이 다음 셋을 만족하면 **Dedekind 정역**이다.
+정역 $R$ 이 다음 셋을 만족하면 **Dedekind 정역(Dedekind domain)** 이다.
 
 - Noether: 모든 아이디얼이 유한생성이다.
 - 정수적으로 닫힘: 분수체 $K$ 의 원소가 $R$ 계수 일계수 다항식의 근이면 그 원소가 $R$ 에 있다.
@@ -28,25 +24,30 @@ Dedekind 의 복구 방법은 분해의 대상을 원소에서 아이디얼로 �
 
 체는 정의상 제외하거나 자명한 경우로 포함한다(문헌마다 다르다).
 
-세 조건은 각각 다른 실패를 막는다. Noether 성이 없으면 무한히 쪼개지는 아이디얼이 생겨 분해가 끝나지 않는다. 정수적으로 닫혀 있지 않으면 환이 원소를 빠뜨려 아이디얼이 소 아이디얼의 곱으로 쓰이지 않는다. 차원이 $1$ 이 아니면 소 아이디얼 사이의 포함관계가 층을 이뤄 소인수의 층위가 정해지지 않고, $k[x,y]$ 의 $(x)\subset(x,y)$ 가 그 예다.
+$\mathbb Z$ 와 직관 절의 $\mathbb Z\lbrack\sqrt{-5}\rbrack$ 는 Dedekind 정역이다. $\mathbb Z\lbrack\sqrt{-3}\rbrack$ 은 분수체의 원소 $(1+\sqrt{-3})/2$ 가 일계수 다항식 $x^2-x+1$ 의 근인데 환에 없으므로 정수적으로 닫혀 있지 않다.
+
 
 ## 이산부값환
 
-극대 아이디얼이 하나뿐인 Dedekind 정역이 DVR 이다. 분수체에 전사인 부치 $v:K^\times\to\mathbb Z$ 가 있어 $R=\lbrace x:v(x)\ge0\rbrace\cup\lbrace 0\rbrace$ 이고, 극대 아이디얼의 생성원 $\pi$ 를 균등화원이라 한다.
+극대 아이디얼이 하나뿐인 Dedekind 정역이 [이산부값환](discrete-valuation-rings.md)(discrete valuation ring, DVR)이다. 분수체에 전사인 부치 $v:K^\times\to\mathbb Z$ 가 있어 $R=\lbrace x:v(x)\ge0\rbrace\cup\lbrace 0\rbrace$ 이고, 극대 아이디얼의 생성원 $\pi$ 를 **균등화원(uniformizer)** 이라 한다.
 
 $\mathbb Z_{(p)}$ , $p$ 진 정수환 $\mathbb Z_p$ , 형식적 [멱급수](power-series.md)환 $k\lbrack\lbrack t\rbrack\rbrack$ 가 표준 예다.
 
 ## 분수 아이디얼
 
-$K$ 의 $R$ 부분가군 $I$ 중 $dI\subseteq R$ 인 $d\in R\setminus\lbrace 0\rbrace$ 가 존재하는 것이 **분수 아이디얼**이다. 곱은 원소들의 곱이 생성하는 가군이다.
+$K$ 의 $R$ 부분가군 $I$ 중 $dI\subseteq R$ 인 $d\in R\setminus\lbrace 0\rbrace$ 가 존재하는 것이 **분수 아이디얼(fractional ideal)** 이다. 곱은 원소들의 곱이 생성하는 가군이다. $\tfrac12\mathbb Z\subset\mathbb Q$ 는 $d=2$ 로 $\mathbb Z$ 의 분수 아이디얼이다.
 
-$I$ 가 가역이라는 것은 $IJ=R$ 인 $J$ 가 있다는 뜻이고, 그때 $J=\lbrace x\in K:xI\subseteq R\rbrace$ 로 유일하다.
+$I$ 가 **가역(invertible)** 이라는 것은 $IJ=R$ 인 $J$ 가 있다는 뜻이고, 그때 $J=\lbrace x\in K:xI\subseteq R\rbrace$ 로 유일하다. 직관 절의 $\mathfrak p=(2,1+\sqrt{-5})$ 는 $\mathfrak p^2=(2)$ 이므로 $J=\tfrac12\mathfrak p$ 로 가역이다.
 
 ## 부치와 지수
 
-Dedekind 정역의 각 소 아이디얼 $\mathfrak p$ 에 대해 국소화 $R_{\mathfrak p}$ 가 DVR 이고 그 부치를 $v_{\mathfrak p}$ 로 쓴다. 0 이 아닌 분수 아이디얼 $I$ 에 대해 $v_{\mathfrak p}(I)$ 는 $IR_{\mathfrak p}=\mathfrak p^{k}R_{\mathfrak p}$ 인 $k$ 다.
+Dedekind 정역의 각 소 아이디얼 $\mathfrak p$ 에 대해 [국소화](localization-rings.md) $R_{\mathfrak p}$ 가 DVR 이고 그 부치를 $v_{\mathfrak p}$ 로 쓴다. 0 이 아닌 분수 아이디얼 $I$ 에 대해 $v_{\mathfrak p}(I)$ 는 $IR_{\mathfrak p}=\mathfrak p^{k}R_{\mathfrak p}$ 인 $k$ 다. 직관 절의 $\mathfrak p$ 에서 $v_{\mathfrak p}((2))=2$ 이다.
 
 # 성질
+
+## 세 조건의 역할
+
+세 조건은 각각 다른 실패를 막는다. Noether 성이 없으면 무한히 쪼개지는 아이디얼이 생겨 분해가 끝나지 않는다. 정수적으로 닫혀 있지 않으면 환이 원소를 빠뜨려 아이디얼이 소 아이디얼의 곱으로 쓰이지 않는다. 차원이 $1$ 이 아니면 소 아이디얼 사이의 포함관계가 층을 이뤄 소인수의 층위가 정해지지 않고, $k[x,y]$ 의 $(x)\subset(x,y)$ 가 그 예다.
 
 ## 동치인 특징들
 
