@@ -6,31 +6,31 @@
 
 # 직관
 
-외대수는 벡터 공간의 [텐서곱](tensor-products.md)에서 같은 벡터를 두 번 곱한 것을 0 으로 만든 대수다. 곱은 반대칭이 되고, $k$ 개의 벡터를 곱한 것들이 만드는 부분공간의 차원이 $\binom{n}{k}$ 다.
+평면의 두 벡터 $u=(2,0)$, $v=(1,3)$ 이 만드는 평행사변형은 밑변 $2$, 높이 $3$ 으로 넓이가 $6$ 이다. 이 넓이를 벡터의 곱 $u\wedge v$ 로 적되, 같은 벡터를 두 번 곱하면 $0$ 이고 두 벡터를 바꾸면 부호가 바뀌는 규칙만 둔다. 표준기저 $e_1=(1,0)$, $e_2=(0,1)$ 로 쓰면 $u=2e_1$, $v=e_1+3e_2$ 다.
 
-가장 높은 차수의 부분공간은 1 차원이고, [선형사상](linear-maps.md)이 그 위에 주는 스칼라가 행렬식이다. 행렬식을 좌표 없이 정의하는 자리가 여기다.
+곱을 분배법칙으로 펼치면 $u\wedge v=2e_1\wedge e_1+6\thinspace e_1\wedge e_2$ 이고, $e_1\wedge e_1=0$ 이므로 $u\wedge v=6\thinspace e_1\wedge e_2$ 다. 계수 $6$ 이 넓이이고, 단위 정사각형 $e_1\wedge e_2$ 의 몇 배인지로 넓이가 적힌다.
 
-두 벡터의 쐐기곱은 그 둘이 만드는 평행사변형의 방향 붙은 면적에 대응한다. 같은 벡터를 두 번 쓰면 면적이 0 이므로 $v\wedge v=0$ 이고, 두 벡터를 바꾸면 방향이 뒤집혀 부호가 바뀐다.
-
-$k$ 차 부분은 $k$ 차원 평행다면체의 부피를 담는다. 차원 $n$ 을 넘는 개수의 벡터는 항상 일차종속이므로 $\Lambda^k V=0$ 이 $k\gt n$ 에서 성립한다.
+공간의 세 벡터를 곱하면 같은 계산으로 $e_1\wedge e_2\wedge e_3$ 의 몇 배인지가 나오고, 그 계수가 평행육면체의 부호 있는 부피다. 평면에서 세 벡터를 곱하면 펼친 각 항에 $e_1$ 이나 $e_2$ 가 두 번 들어가므로 모두 $0$ 이다.
 
 # 정의
 
 ## 텐서 대수
 
-체 $F$ 위의 벡터 공간 $V$ 에 대해 텐서 대수는 모든 차수의 텐서 거듭제곱의 직합이다.
+체 $F$ 위의 벡터 공간 $V$ 의 **텐서 대수(tensor algebra)** 는 모든 차수의 [텐서곱](tensor-products.md) 거듭제곱의 직합이다.
 
 $$T(V)=\bigoplus_{k\ge 0}V^{\otimes k},\qquad V^{\otimes 0}=F$$
 
-곱은 텐서곱이고 결합적이다.
+곱은 텐서곱이고 결합적이다. $V=\mathbb R^2$ 에서 $e_1\otimes e_2$ 와 $e_2\otimes e_1$ 은 $V^{\otimes 2}$ 의 서로 다른 원소이고, $e_1\otimes e_1$ 은 $0$ 이 아니다.
 
 ## 외대수
 
-$v\otimes v$ 꼴의 원소들이 생성하는 양쪽 아이디얼을 $I$ 라 하면 **외대수**는 그 몫이다.
+$v\otimes v$ 꼴의 원소들이 생성하는 양쪽 아이디얼을 $I$ 라 하면 **외대수(exterior algebra)** 는 그 몫이다.
 
 $$\Lambda(V)=T(V)/I$$
 
-몫에서 유도된 곱을 **쐐기곱**이라 하고 $\wedge$ 로 쓴다. $k$ 차 성분을 $\Lambda^k V$ 라 하고 그 원소를 $k$ 벡터라 한다.
+몫에서 유도된 곱을 **쐐기곱(wedge product)** 이라 하고 $\wedge$ 로 쓴다. $k$ 차 성분을 $\Lambda^k V$ 라 하고 그 원소를 $k$ 벡터($k$-vector)라 한다. $V=\mathbb R^2$ 에서 $e_1\otimes e_1$ 은 $I$ 에 속하므로 $e_1\wedge e_1=0$ 이고, 직관 절의 $u\wedge v=6\thinspace e_1\wedge e_2$ 는 $\Lambda^2\mathbb R^2$ 의 원소다.
+
+# 성질
 
 ## 반대칭성
 
@@ -42,13 +42,11 @@ $$v\wedge w=-w\wedge v$$
 
 ## 기저와 차원
 
-$\dim V=n$ 이고 $e_1,\dots,e_n$ 이 [기저](vector-spaces.md)이면 다음이 $\Lambda^k V$ 의 기저다.
+$\dim V=n$ 이고 $e_1,\dots,e_n$ 이 기저이면 다음이 $\Lambda^k V$ 의 기저다.
 
 $$\lbrace e\_{i_1}\wedge\cdots\wedge e\_{i_k} : 1\le i_1\lt \cdots\lt i_k\le n\rbrace$$
 
 따라서 $\dim\Lambda^k V=\binom{n}{k}$ 이고 $\dim\Lambda(V)=2^n$ 이다.
-
-# 성질
 
 ## 일차독립 판정
 
@@ -74,7 +72,7 @@ $k$ 개의 변수를 가진 교대 다중선형사상 $\varphi\colon V^k\to W$ �
 
 ## 행렬식
 
-선형사상 $f\colon V\to V$ 는 각 차수에 $\Lambda^k f(v_1\wedge\cdots\wedge v_k)=f(v_1)\wedge\cdots\wedge f(v_k)$ 로 사상을 유도한다. $\Lambda^n V$ 가 1 차원이므로 $\Lambda^n f$ 는 스칼라 곱이고, 그 스칼라가 $\det f$ 다.
+[선형사상](linear-maps.md) $f\colon V\to V$ 는 각 차수에 $\Lambda^k f(v_1\wedge\cdots\wedge v_k)=f(v_1)\wedge\cdots\wedge f(v_k)$ 로 사상을 유도한다. $\Lambda^n V$ 가 1 차원이므로 $\Lambda^n f$ 는 스칼라 곱이고, 그 스칼라가 $\det f$ 다.
 
 $$\Lambda^n f=\det(f)\cdot \mathrm{id}\_{\Lambda^n V}$$
 
