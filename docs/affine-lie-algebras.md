@@ -6,16 +6,6 @@
 
 # 직관
 
-아핀 Lie 대수는 아핀형 Cartan 행렬에 대응하는 무한차원 Lie 대수다. 유한차원 반단순 Lie 대수는 [근계](root-systems.md)로 분류되고, 근계는 Cartan 행렬로 결정된다. Cartan 행렬의 조건 가운데 양정부호성만 빼면 분류가 유한형, 아핀형, 부정형 셋으로 갈라진다.
-
-아핀 Lie 대수는 유한차원 대수 $\mathfrak g$ 의 루프대수에 중심원소와 미분작용소를 더한 것으로 실현된다.
-
-$$
-\hat{\mathfrak g}=\bigl(\mathfrak g\otimes\mathbb C\lbrack t,t^{-1}\rbrack\bigr)\oplus\mathbb CK\oplus\mathbb Cd
-$$
-
-유한차원 이론의 도구가 거의 그대로 옮겨온다. 근계, Weyl 군, 지배적 무게, 지표 공식이 모두 있다. 달라지는 것은 근의 길이가 $0$ 인 것이 생긴다는 점이고, 그 허근이 아핀 이론의 현상을 만든다.
-
 $\mathfrak{sl}\_2$ 의 표현론은 Cartan 부분대수 하나와 근 $\pm\alpha$ 로 끝난다. 이제 $\mathfrak{sl}\_2$ 값 함수를 원 $S^1$ 위에서 생각한다. [Fourier 급수](fourier-series.md)로 펼치면 기저가 $x\otimes t^n$ 이고, 괄호는 다음으로 정해진다.
 
 $$
@@ -34,43 +24,45 @@ $$
 
 이제 $x\otimes t^m$ 으로 올리고 $y\otimes t^{-m}$ 으로 내리면 $K$ 가 나오고, $K$ 가 스칼라 $k$ 로 작용하는 표현에서 올림과 내림이 $k$ 에 비례하는 값을 남긴다. $k\ne 0$ 이면 이 작용이 무한차원 최고무게 표현을 만든다.
 
-Cartan 부분대수는 $\hat{\mathfrak h}=\mathfrak h\oplus\mathbb CK\oplus\mathbb Cd$ 이고, 근은 $\alpha+n\delta$ 꼴이다. 여기서 $\delta$ 는 $d$ 의 고윳값 $n$ 을 읽는 선형형식이다. $\delta$ 자체도 근인데, $\mathfrak h\otimes t^n$ 이 근공간이어서 중복도가 $\mathrm{rank}\thinspace\mathfrak g$ 다. $\delta$ 의 길이는 $0$ 이다.
-
 # 정의
 
 ## 일반화 Cartan 행렬
 
-정수행렬 $A=(a_{ij})\_{i,j=0}^{n}$ 이 다음을 만족하면 **일반화 Cartan 행렬**(generalized Cartan matrix, GCM)이다.
+정수행렬 $A=(a_{ij})\_{i,j=0}^{n}$ 이 다음을 만족하면 **일반화 Cartan 행렬(generalized Cartan matrix, GCM)** 이다.
 
 - $a_{ii}=2$
 - $i\ne j$ 이면 $a_{ij}\le 0$
 - $a_{ij}=0$ 이면 $a_{ji}=0$
 
-유한차원 반단순 Lie 대수의 Cartan 행렬은 여기에 양정부호 조건을 더한 것이다. 기약 GCM 은 다음 셋 가운데 하나다[^1].
+유한차원 반단순 Lie 대수의 Cartan 행렬은 여기에 양정부호 조건을 더한 것이다. 기약 GCM 은 $A$ 가 양정부호이면 **유한형(finite type)**, 반정부호이고 핵이 1 차원이면 **아핀형(affine type)**, 그 밖이면 **부정형(indefinite type)** 이다.
 
-| 형 | 조건 | 해의 존재 |
-| --- | --- | --- |
-| 유한형 | $A$ 가 양정부호 | $Av\gt 0$ 인 $v\gt 0$ 이 있다 |
-| 아핀형 | $A$ 가 반정부호, 핵이 1 차원 | $Av=0$ 인 $v\gt 0$ 이 있다 |
-| 부정형 | 그 밖 | $Av\lt 0$ 인 $v\gt 0$ 이 있다 |
+아핀형에서 핵을 펼치는 벡터 가운데 성분이 서로소인 양의 정수인 것을 $v=(a_0,\dots,a_n)$ 이라 할 때, 그 성분이 **표시(mark)** 이고 $\sum a_i$ 가 **Coxeter 수(Coxeter number)** 다.
 
-여기서 $v\gt 0$ 은 성분이 모두 양수라는 뜻이다. 아핀형에서 $Av=0$ 의 해 $v=(a_0,\dots,a_n)$ 의 성분이 **표시**(mark)이고, $\sum a_i$ 를 더한 값이 **Coxeter 수**다.
+$1\times1$ 행렬 $(2)$ 는 양정부호이므로 유한형이고, $\mathfrak{sl}\_2$ 의 Cartan 행렬이다. $2\times2$ 행렬
+
+$$
+A=\begin{pmatrix}2&-2\cr -2&2\end{pmatrix}
+$$
+
+는 고윳값이 $0$ 과 $4$ 이고 핵이 $(1,1)$ 로 펼쳐지므로 아핀형이다. 표시는 $a_0=a_1=1$ 이고 Coxeter 수는 $2$ 다. 이 행렬을 $A_1^{(1)}$ 로 적는다.
 
 ## Kac–Moody 대수
 
-GCM $A$ 에 대해 **Kac–Moody 대수** $\mathfrak g(A)$ 는 생성원 $e_i,f_i,h_i$ 와 다음 관계로 정의되는 Lie 대수다.
+GCM $A$ 에 대해 **Kac–Moody 대수(Kac–Moody algebra)** $\mathfrak g(A)$ 는 생성원 $e_i,f_i,h_i$ 와 다음 관계로 정의되는 Lie 대수다.
 
 $$
 \lbrack h_i,h_j\rbrack=0,\qquad \lbrack h_i,e_j\rbrack=a_{ij}e_j,\qquad \lbrack h_i,f_j\rbrack=-a_{ij}f_j,\qquad \lbrack e_i,f_j\rbrack=\delta_{ij}h_i
 $$
 
-여기에 Serre 관계를 더한다.
+여기에 Serre 관계(Serre relations)를 더한다.
 
 $$
 (\mathrm{ad}\thinspace e_i)^{1-a_{ij}}e_j=0,\qquad (\mathrm{ad}\thinspace f_i)^{1-a_{ij}}f_j=0\quad(i\ne j)
 $$
 
-$A$ 가 유한형이면 $\mathfrak g(A)$ 가 유한차원 반단순 대수이고, 아핀형이면 **아핀 Lie 대수**다.
+$A$ 가 아핀형이면 $\mathfrak g(A)$ 를 **아핀 Lie 대수** 라 한다.
+
+$A=(2)$ 이면 생성원이 $e,f,h$ 셋이고 관계가 $\lbrack h,e\rbrack=2e$, $\lbrack h,f\rbrack=-2f$, $\lbrack e,f\rbrack=h$ 이므로 $\mathfrak g(A)=\mathfrak{sl}\_2$ 다. $A=A_1^{(1)}$ 이면 $a_{01}=-2$ 이므로 Serre 관계는 $(\mathrm{ad}\thinspace e_0)^3e_1=0$ 이다.
 
 ## 루프 실현
 
@@ -90,24 +82,26 @@ $$
 \lbrack d,\thinspace x\otimes t^n\rbrack=n\thinspace x\otimes t^n,\qquad \lbrack K,\thinspace\hat{\mathfrak g}\rbrack=0
 $$
 
-$K$ 가 중심이고, $\mathbb CK$ 로 나눈 몫이 루프대수 $\mathfrak g\otimes\mathbb C\lbrack t,t^{-1}\rbrack$ 에 $d$ 를 붙인 것이다. 표현에서 $K$ 가 스칼라 $k$ 로 작용하면 그 표현의 **레벨**이 $k$ 다.
+$K$ 가 중심이고, $\mathbb CK$ 로 나눈 몫이 루프대수(loop algebra) $\mathfrak g\otimes\mathbb C\lbrack t,t^{-1}\rbrack$ 에 $d$ 를 붙인 것이다. 표현에서 $K$ 가 스칼라 $k$ 로 작용하면 그 표현의 **레벨(level)** 이 $k$ 다.
 
-이 실현이 비틀리지 않은(untwisted) 아핀 대수를 모두 준다. $\mathfrak g$ 의 Dynkin 도표 자기동형 $\sigma$ 로 루프의 주기조건을 비틀면 **비틀린** 아핀 대수가 나오고, 둘을 합친 목록이 아핀형 GCM 의 분류와 일치한다.
+$\mathfrak g=\mathfrak{sl}\_2$ 이면 $\lbrack e\otimes t,\thinspace f\otimes t^{-1}\rbrack=h\otimes 1+(e,f)K$ 이다. 레벨 $k$ 표현에서 마지막 항은 스칼라 $k(e,f)$ 로 작용한다. 직관 절에서 올림과 내림이 남기는 값이 이것이다.
 
 ## 아핀 근계
 
-$\hat{\mathfrak h}=\mathfrak h\oplus\mathbb CK\oplus\mathbb Cd$ 를 Cartan 부분대수로 잡는다. $\delta\in\hat{\mathfrak h}^\ast$ 를 $\delta(d)=1$ , $\delta(\mathfrak h)=\delta(K)=0$ 으로 정하면 근계는 다음이다.
+$\hat{\mathfrak h}=\mathfrak h\oplus\mathbb CK\oplus\mathbb Cd$ 를 Cartan 부분대수로 잡는다. $\delta\in\hat{\mathfrak h}^\ast$ 를 $\delta(d)=1$ , $\delta(\mathfrak h)=\delta(K)=0$ 으로 정한다. $\mathfrak g$ 의 [근계](root-systems.md)를 $\Phi$ 라 할 때 $\hat{\mathfrak g}$ 의 근계는 다음이다.
 
 $$
 \hat\Phi=\lbrace\alpha+n\delta:\alpha\in\Phi,\thinspace n\in\mathbb Z\rbrace\cup\lbrace n\delta:n\in\mathbb Z\setminus\lbrace 0\rbrace\rbrace
 $$
 
-$\hat{\mathfrak h}^\ast$ 위의 쌍선형형식은 $\mathfrak h^\ast$ 에서는 원래 형식이고 $(\delta,\delta)=0$ , $(\delta,\mathfrak h^\ast)=0$ 이다. 그래서 근이 둘로 갈린다.
+$\hat{\mathfrak h}^\ast$ 위의 쌍선형형식은 $\mathfrak h^\ast$ 에서는 원래 형식이고 $(\delta,\delta)=0$ , $(\delta,\mathfrak h^\ast)=0$ 이다. 이 형식으로 근을 둘로 나눈다.
 
-- **실근** $\alpha+n\delta$ ($\alpha\in\Phi$). 길이가 $(\alpha,\alpha)\gt 0$ 이고 근공간의 차원이 $1$ 이다.
-- **허근** $n\delta$ ($n\ne 0$). 길이가 $0$ 이고 근공간의 차원이 $\mathrm{rank}\thinspace\mathfrak g$ 다.
+- **실근(real root)** $\alpha+n\delta$ ($\alpha\in\Phi$). 길이가 $(\alpha,\alpha)\gt 0$ 이다.
+- **허근(imaginary root)** $n\delta$ ($n\ne 0$). 길이가 $0$ 이다.
 
-단순근은 $\alpha_1,\dots,\alpha_n$ (원래 단순근)에 $\alpha_0=\delta-\theta$ 를 더한 $n+1$ 개다. $\theta$ 는 $\Phi$ 의 최고근이다. 이 $n+1$ 개의 단순근으로 그린 도표가 **확장 Dynkin 도표**다.
+단순근은 $\alpha_1,\dots,\alpha_n$ (원래 단순근)에 $\alpha_0=\delta-\theta$ 를 더한 $n+1$ 개다. $\theta$ 는 $\Phi$ 의 최고근이다. 이 $n+1$ 개의 단순근으로 그린 도표가 **확장 Dynkin 도표(extended Dynkin diagram)** 다.
+
+$\mathfrak g=\mathfrak{sl}\_2$ 이면 $\Phi=\lbrace\pm\alpha\rbrace$ 이고 $\theta=\alpha$ 다. 실근은 $\pm\alpha+n\delta$, 허근은 $n\delta$ 이고, 단순근은 $\alpha_1=\alpha$ 와 $\alpha_0=\delta-\alpha$ 다.
 
 ```mermaid
 graph LR
@@ -125,33 +119,47 @@ graph LR
   end
 ```
 
-유한형 도표에 꼭짓점 하나를 더한 모양이고, 더하는 자리가 최고근이 정한다. 비틀리지 않은 아핀 대수 $X_n^{(1)}$ 의 도표가 이것이다.
+유한형 도표에 꼭짓점 하나를 더한 모양이고, 더하는 자리를 최고근이 정한다. 비틀리지 않은 아핀 대수 $X_n^{(1)}$ 의 도표가 이것이다.
 
 ## 아핀 Weyl 군
 
-실근 $\alpha+n\delta$ 마다 반사 $s_{\alpha+n\delta}$ 가 있고, 이들이 생성하는 군이 **아핀 Weyl 군** $\hat W$ 다. $\mathfrak h^\ast$ 에 제한하면 반사 $s_{\alpha+n\delta}$ 가 초평면 $\lbrace\lambda:(\lambda,\alpha)=n\rbrace$ 에 대한 반사로 작용하므로, $\hat W$ 는 평행한 초평면들의 족에 대한 반사로 생성된다.
+실근 $\alpha+n\delta$ 마다 반사 $s_{\alpha+n\delta}$ 가 있고, 이들이 생성하는 군이 **아핀 Weyl 군(affine Weyl group)** $\hat W$ 다. $\mathfrak h^\ast$ 에 제한하면 반사 $s_{\alpha+n\delta}$ 는 초평면 $\lbrace\lambda:(\lambda,\alpha)=n\rbrace$ 에 대한 반사로 작용한다. 이 초평면들이 $\mathfrak h^\ast\_{\mathbb R}$ 를 나눈 조각 하나가 **기본 알코브(fundamental alcove)** 다.
 
-$$
-\hat W\cong W\ltimes t_{Q^\vee}
-$$
-
-$W$ 는 유한 Weyl 군이고 $t_{Q^\vee}$ 는 쌍대 근격자 $Q^\vee$ 만큼의 평행이동군이다. 기본영역은 유한 Weyl 군의 추(cone)가 아니라 유계인 단체이고, 그것이 **기본 알코브**다.
+$\mathfrak g=\mathfrak{sl}\_2$ 이면 $\mathfrak h^\ast\_{\mathbb R}$ 가 직선이고 초평면은 등간격으로 놓인 점들이다. $\hat W$ 는 이 점들에 대한 반사로 생성되고, 기본 알코브는 이웃한 두 점 사이의 구간이다.
 
 ## 적분가능 최고무게 표현
 
-$\hat\Lambda\in\hat{\mathfrak h}^\ast$ 가 모든 $i$ 에 대해 $\hat\Lambda(h_i)\in\mathbb Z\_{\ge 0}$ 이면 **지배적 적분**이고, 그 최고무게 표현 $L(\hat\Lambda)$ 를 **적분가능**이라 한다. 레벨은 $k=\hat\Lambda(K)$ 다.
+$\hat\Lambda\in\hat{\mathfrak h}^\ast$ 가 모든 $i$ 에 대해 $\hat\Lambda(h_i)\in\mathbb Z\_{\ge 0}$ 이면 **지배적 적분(dominant integral)** 이고, 그 최고무게 표현 $L(\hat\Lambda)$ 를 **적분가능(integrable)** 이라 한다. 레벨은 $k=\hat\Lambda(K)$ 다.
 
-$\alpha_0=\delta-\theta$ 이므로 $\hat\Lambda(h_0)\ge 0$ 이 $\langle\lambda,\theta^\vee\rangle\le k$ 로 번역된다. 레벨을 $k$ 로 고정하면 이 부등식을 만족하는 $\lambda$ 가 유한개뿐이다.
+$\alpha_0=\delta-\theta$ 이므로 $\hat\Lambda(h_0)\ge 0$ 은 $\langle\lambda,\theta^\vee\rangle\le k$ 와 같다. $\lambda$ 는 $\hat\Lambda$ 를 $\mathfrak h$ 로 제한한 것이다. $\mathfrak g=\mathfrak{sl}\_2$ 이고 $m=\lambda(h)$ 이면 조건은 $0\le m\le k$ 이다. 레벨 $1$ 에서는 $m=0$ 과 $m=1$ 두 가지다.
 
 # 성질
 
 ## 세 형의 분류
 
-> **정리.** 기약 일반화 Cartan 행렬은 유한형, 아핀형, 부정형 가운데 정확히 하나다.
+> **정리.** 기약 일반화 Cartan 행렬 $A$ 에 대해 다음 셋 가운데 정확히 하나가 성립한다[^1]. 성분이 모두 양수인 $v$ 가 존재해 $Av\gt 0$ 이면 유한형, $Av=0$ 이면 아핀형, $Av\lt 0$ 이면 부정형이다.
 
 증명의 요지는 [Perron–Frobenius 정리](perron-frobenius.md)다. $A$ 의 비대각성분이 음이 아닌 꼴로 $2I-A$ 를 보면 비음행렬이고 기약이므로 성분이 모두 양수인 고유벡터 $v$ 가 최대 고윳값에 붙는다. 그 고윳값이 $2$ 보다 작으면 $Av\gt 0$ , 같으면 $Av=0$ , 크면 $Av\lt 0$ 이고, 세 경우가 각각 유한형, 아핀형, 부정형이다. 최대 고윳값이 유일하므로 세 경우가 배타적이다.
 
 아핀형에서 핵이 1 차원이라는 것은 최대 고윳값의 고유공간이 1 차원이라는 Perron–Frobenius 의 결론이다. 그 유일한 핵벡터가 표시 $(a_0,\dots,a_n)$ 이고, $\delta=\sum_i a_i\alpha_i$ 가 성립한다.
+
+$A$ 가 유한형이면 $\mathfrak g(A)$ 는 유한차원 반단순 Lie 대수다.
+
+## 비틀린 아핀 대수
+
+루프 실현은 비틀리지 않은(untwisted) 아핀 대수를 모두 준다. $\mathfrak g$ 의 Dynkin 도표 자기동형 $\sigma$ 로 루프의 주기조건을 비틀면 비틀린(twisted) 아핀 대수가 나오고, 둘을 합친 목록이 아핀형 GCM 의 분류와 일치한다[^1].
+
+## 아핀 Weyl 군의 구조
+
+$$
+\hat W\cong W\ltimes t_{Q^\vee}
+$$
+
+$W$ 는 유한 Weyl 군이고 $t_{Q^\vee}$ 는 쌍대 근격자 $Q^\vee$ 만큼의 평행이동군이다. 기본 알코브는 $\hat W$ 의 기본영역이고, 유한 Weyl 군의 추(cone)와 달리 유계인 단체다.
+
+## 레벨별 적분가능 표현의 개수
+
+레벨 $k$ 를 고정하면 $\langle\lambda,\theta^\vee\rangle\le k$ 를 만족하는 지배적 $\lambda$ 가 유한개이므로, 레벨 $k$ 적분가능 표현은 유한개다. $\mathfrak{sl}\_2$ 에서는 $k+1$ 개다.
 
 ## 허근의 중복도
 
