@@ -33,7 +33,11 @@ $$
 
 $d\circ d=0$ 이고, 이 [사슬 복합체](chain-complexes.md)의 코호몰로지가 **Lie 대수 코호몰로지** $H^n(\mathfrak g,V)$ 다. 이 복합체를 **Chevalley–Eilenberg 복합체(Chevalley–Eilenberg complex)** 라 한다.
 
-## Ext 로 쓴 정의
+$V=k$ 에 $\mathfrak g$ 가 $0$ 으로 작용하면 $n=1$ 에서 $(df)(X_0,X_1)=-f([X_0,X_1])$ 이다. 그래서 $1$ 차 코사이클은 $\lbrack\mathfrak g,\mathfrak g\rbrack$ 에서 $0$ 인 선형범함수이고 $H^1(\mathfrak g,k)$ 는 $\mathfrak g/\lbrack\mathfrak g,\mathfrak g\rbrack$ 의 쌍대공간이다. $\mathfrak{sl}\_2$ 에서는 $\lbrack\mathfrak g,\mathfrak g\rbrack=\mathfrak g$ 이므로 $H^1=0$ 이다. 직관 절의 괄호가 $0$ 인 $\mathfrak g=k^2$ 에서는 $d$ 의 두 합이 모두 $0$ 이므로 $H^0=k$, $H^1=k^2$, $H^2=k$ 이고, $H^2=k$ 가 없앨 수 없는 $\omega(X_1,X_2)=c$ 다.
+
+# 성질
+
+## Ext 로 쓴 꼴
 
 $\mathfrak g$ 의 표현은 [보편포락대수](universal-enveloping-algebra.md) $U(\mathfrak g)$ 의 가군이다. $k$ 에 $\mathfrak g$ 가 $0$ 으로 작용하게 하면 다음이 성립한다.
 
@@ -42,8 +46,6 @@ H^n(\mathfrak g,V)\cong\mathrm{Ext}^n\_{U(\mathfrak g)}(k,V)
 $$
 
 Chevalley–Eilenberg 복합체는 $U(\mathfrak g)\otimes\Lambda^n\mathfrak g$ 로 된 $k$ 의 자유분해에 $\mathrm{Hom}\_{U(\mathfrak g)}(-,V)$ 를 적용한 것이다. [유도 함자](derived-functors.md)의 일반론이 긴 완전열과 분해에 대한 무관성을 준다.
-
-# 성질
 
 ## 낮은 차수
 
