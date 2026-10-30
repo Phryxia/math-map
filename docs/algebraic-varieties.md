@@ -6,31 +6,37 @@
 
 # 직관
 
-대수다양체는 다항식 방정식 몇 개의 공통 해집합이다. 원, 원뿔곡선, 타원곡선이 모두 이 꼴이다.
-
-해집합과 [다항식환](polynomial-rings.md)의 [아이디얼](ideals-quotient-rings.md) 사이에는 서로의 역이 되는 대응이 있다. Hilbert 의 영점정리가 그 대응이 어느 아이디얼에서 일대일인지를 정한다.
-
 평면의 원 $C=\lbrace(x,y):x^2+y^2=1\rbrace$ 위에서만 값을 보는 다항식을 생각한다. $x^2+y^2-1$ 은 $C$ 의 모든 점에서 $0$ 이고, 이 다항식의 배수도 전부 $0$ 이다. $C$ 위에서 서로 다른 값을 주는 다항식만 남기려면 $\mathbb R\lbrack x,y\rbrack$ 를 그 배수들로 나누면 된다.
 
 거꾸로 아이디얼에서 해집합으로 가는 길도 있다. $\lbrace x\rbrace$ 가 생성한 아이디얼과 $\lbrace x^2\rbrace$ 가 생성한 아이디얼은 다르지만 해집합은 둘 다 $y$ 축이다. 두 대응이 서로의 역이 되지 못하는 자리가 거듭제곱이고, 어떤 거듭제곱이 아이디얼에 들어가는 원소를 전부 모아 아이디얼을 키우면 두 길이 맞물린다.
 
 # 정의
 
-$k$ 를 체, $k\lbrack x_1,\dots,x_n\rbrack$ 을 $n$ 변수 다항식환, $\mathbb A^n=k^n$ 을 아핀 공간이라 한다.
+$k$ 를 체, $k\lbrack x_1,\dots,x_n\rbrack$ 을 $n$ 변수 [다항식환](polynomial-rings.md), $\mathbb A^n=k^n$ 을 아핀 공간이라 한다.
 
-$S\subseteq k\lbrack x_1,\dots,x_n\rbrack$ 에 대해
+$S\subseteq k\lbrack x_1,\dots,x_n\rbrack$ 에 대해 다음 집합을 $S$ 의 **아핀 대수적 집합(affine algebraic set)** 이라 한다.
 
 $$
 V(S)=\lbrace a\in\mathbb A^n:f(a)=0\thinspace\text{ 모든 } f\in S \text{ 에 대해}\rbrace
 $$
 
-를 $S$ 의 **아핀 대수적 집합**이라 한다. 거꾸로 $X\subseteq\mathbb A^n$ 에 대해 $I(X)$ 를 $X$ 에서 항상 $0$ 인 다항식 전체라 한다. $I(X)$ 는 아이디얼이다.
+거꾸로 $X\subseteq\mathbb A^n$ 에 대해 $I(X)$ 를 $X$ 에서 항상 $0$ 인 다항식 전체라 한다.
 
-대수적 집합 $X$ 가 **기약**이라는 것은 $X=X_1\cup X_2$ 로 쓸 때 두 대수적 집합 가운데 하나가 $X$ 자신이라는 뜻이다. 기약인 아핀 대수적 집합을 **아핀 대수다양체**라 한다.
+$V(x^2+y^2-1)$ 은 직관 절의 원이고, $V(x)=V(x^2)$ 은 $y$ 축이다. $y$ 축에서 항상 $0$ 인 다항식은 $x$ 의 배수뿐이므로 $I(V(x^2))$ 는 $x$ 가 생성하는 [아이디얼](ideals-quotient-rings.md)이고 $x^2$ 이 생성하는 아이디얼보다 크다.
 
-$X$ 의 **좌표환**은 $k\lbrack X\rbrack=k\lbrack x_1,\dots,x_n\rbrack/I(X)$ 다. 좌표환의 원소는 $X$ 위의 다항식 함수다.
+대수적 집합 $X$ 가 **기약(irreducible)** 이라는 것은 $X=X_1\cup X_2$ 로 쓸 때 두 대수적 집합 가운데 하나가 $X$ 자신이라는 뜻이다. 기약인 아핀 대수적 집합을 **아핀 대수다양체(affine variety)** 라 한다.
+
+$V(xy)$ 는 두 좌표축의 합집합 $V(x)\cup V(y)$ 이므로 기약이 아니다. 직선 $V(x)$ 는 기약이고 아핀 대수다양체다.
+
+$X$ 의 **좌표환(coordinate ring)** 은 $k\lbrack X\rbrack=k\lbrack x_1,\dots,x_n\rbrack/I(X)$ 다. 좌표환의 원소는 $X$ 위의 다항식 함수다.
+
+$y$ 축의 좌표환은 $k\lbrack x,y\rbrack/(x)\cong k\lbrack y\rbrack$ 이고, 원의 좌표환은 직관 절에서 나눈 몫 $\mathbb R\lbrack x,y\rbrack/(x^2+y^2-1)$ 이다.
 
 # 성질
+
+## 아이디얼과 대수적 집합의 대응
+
+$I(X)$ 는 아이디얼이다. $X$ 에서 $0$ 인 두 다항식의 합과, 그런 다항식에 아무 다항식을 곱한 것이 다시 $X$ 에서 $0$ 이다.
 
 ## 영점정리
 
