@@ -6,10 +6,6 @@
 
 # 직관
 
-Artin–Schreier 이론은 표수 $p$ 인 체의 차수 $p$ 순환확대를 분류하는 이론이다. 표수 $p$ 인 체 $K$ 의 차수 $p$ 순환확대는 모두 $y^p-y=a$ 의 근을 붙여 얻는다. 어떤 $a$ 가 같은 확대를 주는지는 덧셈군의 몫 $K/\wp(K)$ 가 정하고, 여기서 $\wp(x)=x^p-x$ 다.
-
-[Kummer 이론](kummer-theory.md)은 바닥 체가 $1$ 의 원시 $n$ 제곱근을 포함하고 표수가 $n$ 을 나누지 않을 때 지수 $n$ 아벨 확대를 분류한다. 표수 $p$ 에서 $n=p$ 인 경우가 그 조건 밖에 있고, Artin–Schreier 이론이 그 경우를 분류한다. 곱셈군 $K^{\times}$ 와 $n$ 제곱 사상을 덧셈군 $K$ 와 $\wp$ 로 바꾼 같은 꼴의 대응이다.
-
 $\mathbb F\_p(t)$ 의 차수 $p$ Galois 확대를 만들려 한다. 표수가 $p$ 가 아닐 때는 $n$ 제곱근을 붙여 차수 $n$ 순환확대를 얻었으므로, $n=p$ 에서 같은 것을 해 본다.
 
 $x^p-t$ 의 근 하나를 $\theta$ 라 한다. 표수 $p$ 에서 $p$ 제곱 사상이 덧셈을 보존하므로 $(x-\theta)^p=x^p-\theta^p=x^p-t$ 이고, $x^p-t$ 의 근은 $\theta$ 하나뿐이다. $\theta$ 를 다른 근으로 보낼 수 없으니 $\mathbb F\_p(t)(\theta)$ 의 자기동형은 항등 하나이고, 차수는 $p$ 인데 Galois 확대가 아니다.
@@ -20,21 +16,23 @@ $x^p-t$ 의 근 하나를 $\theta$ 라 한다. 표수 $p$ 에서 $p$ 제곱 사�
 
 # 정의
 
-$K$ 를 표수 $p$ 인 체라 한다. **Artin–Schreier 사상**은 다음이다.
+$K$ 를 표수 $p$ 인 체라 한다. **Artin–Schreier 사상(Artin–Schreier map)** 은 다음이다.
 
 $$
 \wp:K\to K,\qquad \wp(x)=x^p-x
 $$
 
-표수 $p$ 에서 $(x+y)^p=x^p+y^p$ 이므로 $\wp$ 는 덧셈군의 준동형이다. 핵은 $x^p=x$ 를 만족하는 원소 전체, 곧 소체 $\mathbb F\_p$ 다.
+$K=\mathbb F\_2$ 이면 $\wp(0)=\wp(1)=0$ 이므로 $\wp(K)=\lbrace 0\rbrace$ 다. $K=\mathbb F\_p(t)$ 이면 $\wp(t)=t^p-t$ 다.
 
 ## Artin–Schreier 확대
 
-$a\in K\setminus\wp(K)$ 에 대해 $y^p-y-a$ 의 근 하나를 붙인 확대 $L=K(y)$ 를 $a$ 의 **Artin–Schreier 확대**라 한다. $\lbrack L:K\rbrack=p$ 이고 $\mathrm{Gal}(L/K)\cong\mathbb Z/p$ 다.
+$a\in K\setminus\wp(K)$ 에 대해 $y^p-y-a$ 의 근 하나를 붙인 확대 $L=K(y)$ 를 $a$ 의 **Artin–Schreier 확대(Artin–Schreier extension)** 라 한다.
+
+$K=\mathbb F\_2$ 와 $a=1\notin\wp(K)$ 에서 $y^2-y-1=y^2+y+1$ 은 $\mathbb F\_2$ 에 근이 없고, 그 근을 붙인 $L$ 은 원소가 $4$ 개인 체 $\mathbb F\_4$ 다. 직관 절의 $\mathbb F\_p(t)(y)$ 는 $a=t$ 의 Artin–Schreier 확대다.
 
 ## Artin–Schreier 쌍
 
-$\Delta$ 를 $\wp(K)\subseteq\Delta\subseteq K$ 인 덧셈 부분군이라 하고, $L=K(\wp^{-1}\Delta)$ 를 $\Delta$ 의 원소 $a$ 마다 $\wp(y)=a$ 의 근을 붙인 체라 한다. 다음이 **Artin–Schreier 쌍**이다.
+$\Delta$ 를 $\wp(K)\subseteq\Delta\subseteq K$ 인 덧셈 부분군이라 하고, $L=K(\wp^{-1}\Delta)$ 를 $\Delta$ 의 원소 $a$ 마다 $\wp(y)=a$ 의 근을 붙인 체라 한다. 다음이 **Artin–Schreier 쌍(Artin–Schreier pairing)** 이다.
 
 $$
 \mathrm{Gal}(L/K)\times\Delta/\wp(K)\longrightarrow\mathbb F\_p,
@@ -42,9 +40,13 @@ $$
 (\sigma,a)\longmapsto\sigma(y)-y
 $$
 
-값은 $\wp(y)=a$ 인 근 $y$ 의 선택에 의존하지 않고 양쪽 변수에 대해 준동형이다.
+$K=\mathbb F\_2$ , $\Delta=\mathbb F\_2$ 이면 $L=\mathbb F\_4$ 이고, $\sigma(z)=z^2$ 와 $a=1$ 의 값은 $\sigma(y)-y=y^2+y=1$ 이다.
 
 # 성질
+
+## 사상과 쌍의 기본 성질
+
+표수 $p$ 에서 $(x+y)^p=x^p+y^p$ 이므로 $\wp$ 는 덧셈군의 준동형이다. 핵은 $x^p=x$ 를 만족하는 원소 전체, 곧 소체 $\mathbb F\_p$ 다. Artin–Schreier 확대는 $\lbrack L:K\rbrack=p$ 이고 $\mathrm{Gal}(L/K)\cong\mathbb Z/p$ 이며, 직관 절의 계산이 그 증명이다. Artin–Schreier 쌍의 값은 $\wp(y)=a$ 인 근 $y$ 의 선택에 의존하지 않고 양쪽 변수에 대해 준동형이다.
 
 ## 차수 p 순환확대의 생성
 
@@ -73,6 +75,8 @@ $$
 증명의 요지. $\mathrm{Tr}(c^{p})=\sum\_{i=0}^{n-1}c^{p^{i+1}}=\mathrm{Tr}(c)$ 이므로 $\mathrm{Tr}(\wp(c))=0$ 이고 $\wp(\mathbb F\_q)\subseteq\ker\mathrm{Tr}$ 다. $\wp$ 의 핵이 $\mathbb F\_p$ 이므로 상의 크기는 $q/p$ 이고, 대각합이 전사이므로 그 핵의 크기도 $q/p$ 다. 크기가 같은 포함이므로 $\wp(\mathbb F\_q)=\ker\mathrm{Tr}$ 이고, 앞의 기약성 판정에 넣으면 된다.
 
 ## Kummer 이론과의 대응
+
+[Kummer 이론](kummer-theory.md)은 바닥 체가 $1$ 의 원시 $n$ 제곱근을 포함하고 표수가 $n$ 을 나누지 않을 때 지수 $n$ 아벨 확대를 분류한다. 표수 $p$ 에서 $n=p$ 인 경우가 그 조건 밖에 있고, Artin–Schreier 이론이 곱셈군 $K^{\times}$ 와 $n$ 제곱 사상을 덧셈군 $K$ 와 $\wp$ 로 바꾸어 그 경우를 분류한다.
 
 | | Kummer 이론 | Artin–Schreier 이론 |
 | --- | --- | --- |
