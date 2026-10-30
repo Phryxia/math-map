@@ -6,31 +6,33 @@
 
 # 직관
 
-Noether 환은 아이디얼의 오름사슬이 반드시 멈추는 환이다. 동치로 모든 아이디얼이 유한생성이다. 이 조건은 무한한 생성 과정이 끝난다는 보장이므로, 귀납으로 진행하는 증명과 유한한 자료로 대상을 기술하는 논증이 모두 이 조건 위에서 돌아간다.
+$\mathbb Z$ 의 아이디얼에 원소를 하나씩 더해 키워 본다. $(12)\subsetneq(12,8)=(4)\subsetneq(4,6)=(2)\subsetneq(2,3)=(1)$ 에서 매 단계의 생성원은 앞 단계 생성원의 진약수다. $12$ 의 약수는 유한 개이므로 이 절차는 유한 번에 멈춘다.
 
-Hilbert 기저정리가 이 부류를 넓게 만든다. $R$ 가 Noether 이면 $R[x]$ 도 Noether 이므로, $\mathbb Z$ 와 체에서 출발해 [다항식환](polynomial-rings.md)을 유한 번 쌓아 얻는 환이 전부 Noether 다. [대수적 수체](algebraic-number-fields.md)의 정수환과 [Dedekind 정역](dedekind-domains.md)도 정의에 이 조건을 포함한다.
-
-원소를 하나씩 더해 아이디얼을 키우는 절차를 생각한다. Noether 조건은 이 절차가 유한 번에 끝난다는 뜻이다. [유일분해정역](unique-factorization-domains.md)에서 분해가 유한 번에 끝나는 근거가 이것이고, 다항식으로 정의되는 도형이 유한 개의 방정식으로 잘린다는 사실의 근거도 이것이다.
-
-조건이 깨지는 예는 변수가 무한한 다항식환 $k[x_1,x_2,\dots]$ 다. 아이디얼의 사슬이 멈추지 않는다.
+변수가 무한한 [다항식환](polynomial-rings.md) $k[x_1,x_2,\dots]$ 에서는 같은 절차가 멈추지 않는다.
 
 $$
 (x_1)\subsetneq(x_1,x_2)\subsetneq(x_1,x_2,x_3)\subsetneq\cdots
 $$
 
+키우는 절차가 언제나 멈추는 환이 Noether 환이다. 다항식으로 정의되는 도형이 유한 개의 방정식으로 잘린다는 사실의 근거가 이 성질이다.
+
 # 정의
 
-가환환 $R$ 가 **Noether 환**이라는 것은 다음 세 조건 가운데 하나를 만족한다는 뜻이며, 셋은 서로 동치다.
+가환환 $R$ 가 **Noether 환(Noetherian ring)** 이라는 것은 다음 **오름사슬 조건(ascending chain condition)** 을 만족한다는 뜻이다. 아이디얼의 증가열 $I_1\subseteq I_2\subseteq\cdots$ 은 어떤 $n$ 부터 $I_n=I_{n+1}=\cdots$ 이다.
 
-- **오름사슬 조건.** 아이디얼의 증가열 $I_1\subset I_2\subset\cdots$ 은 어떤 $n$ 부터 $I_n=I_{n+1}=\cdots$ 이다.
-- **유한생성.** $R$ 의 모든 아이디얼이 유한 개의 원소로 생성된다.
-- **극대원 조건.** 공집합이 아닌 아이디얼족은 포함관계에 대한 극대원을 갖는다.
+$\mathbb Z$ 는 모든 아이디얼이 $(m)$ 꼴이고 $(m)\subsetneq(m')$ 이면 $m'$ 이 $m$ 의 진약수이므로 Noether 환이다. 체는 아이디얼이 $0$ 과 자신뿐이라 Noether 환이다. 직관 절의 $k[x_1,x_2,\dots]$ 는 Noether 환이 아니다.
 
-$R$ 가군 $M$ 에 대해서도 부분가군의 오름사슬 조건으로 같은 정의를 하고, 그런 $M$ 을 **Noether 가군**이라 한다.
+$R$ 가군 $M$ 에 대해서도 부분가군의 오름사슬 조건으로 같은 정의를 하고, 그런 $M$ 을 **Noether 가군(Noetherian module)** 이라 한다. $\mathbb Z$ 는 Noether $\mathbb Z$ 가군이고, $\mathbb Q$ 는 $\mathbb Z\subsetneq\tfrac12\mathbb Z\subsetneq\tfrac14\mathbb Z\subsetneq\cdots$ 가 멈추지 않아 Noether $\mathbb Z$ 가군이 아니다.
 
 # 성질
 
 ## 세 조건의 동치
+
+**정리.** 가환환 $R$ 에 대해 다음 셋은 동치다.
+
+- 오름사슬 조건.
+- **유한생성.** $R$ 의 모든 아이디얼이 유한 개의 원소로 생성된다.
+- **극대원 조건(maximal condition).** 공집합이 아닌 아이디얼족은 포함관계에 대한 극대원을 갖는다.
 
 오름사슬 조건에서 유한생성으로. $I$ 가 유한생성이 아니면 원소를 하나씩 골라 $(a_1)\subsetneq(a_1,a_2)\subsetneq\cdots$ 를 만들 수 있어 사슬이 멈추지 않는다.
 
@@ -40,7 +42,7 @@ $R$ 가군 $M$ 에 대해서도 부분가군의 오름사슬 조건으로 같은
 
 ## Hilbert 기저정리
 
-$R$ 가 Noether 이면 $R[x]$ 도 Noether 다[^1].
+Hilbert 기저정리(Hilbert's basis theorem)에 따라 $R$ 가 Noether 이면 $R[x]$ 도 Noether 다[^1].
 
 증명의 요지. $J \subset R[x]$ 를 아이디얼이라 하고, $J$ 에 속하는 차수 $d$ 다항식들의 최고차 계수가 이루는 $R$ 의 아이디얼을 $L_d$ 라 하자. $L_0\subset L_1\subset\cdots$ 는 증가열이므로 어떤 $N$ 에서 멈춘다. 각 $d\le N$ 에 대해 $L_d$ 의 유한 생성원을 실현하는 $J$ 의 다항식을 유한 개 모으면, 최고차 계수를 소거하며 차수를 내리는 귀납으로 그것들이 $J$ 를 생성한다.
 
@@ -65,11 +67,11 @@ $M$ 이 Noether 가군인 것과 $M$ 의 모든 부분가군이 유한생성인 
 
 ## 분해의 유한성
 
-유일분해정역에서 기약원 분해가 유한 번에 끝난다는 존재 부분의 증명이 오름사슬 조건을 쓴다. 주아이디얼정역은 Noether 이므로 이 논증이 곧바로 적용된다.
+[유일분해정역](unique-factorization-domains.md)에서 기약원 분해가 유한 번에 끝난다는 존재 부분의 증명이 오름사슬 조건을 쓴다. 주아이디얼정역(principal ideal domain)은 Noether 이므로 이 논증이 곧바로 적용된다.
 
 ## 대수적 정수론
 
-Dedekind 정역의 세 조건 가운데 첫째가 Noether 다. 수체의 정수환이 유한생성 $\mathbb Z$ 가군이라는 사실에서 이 조건이 따라오고, 아이디얼의 [소 아이디얼](prime-ideals.md) 분해가 유한 곱으로 끝나는 근거가 된다.
+[Dedekind 정역](dedekind-domains.md)의 세 조건 가운데 첫째가 Noether 다. [대수적 수체](algebraic-number-fields.md)의 정수환이 유한생성 $\mathbb Z$ 가군이라는 사실에서 이 조건이 따라오고, 아이디얼의 [소 아이디얼](prime-ideals.md) 분해가 유한 곱으로 끝나는 근거가 된다.
 
 ## 대수기하
 
@@ -89,4 +91,4 @@ $k[x_1,\dots,x_n]$ 이 Noether 이므로 임의의 다항식족이 정의하는 
 - [Krull 차원](krull-dimension.md)
 - [Iwasawa 대수](iwasawa-algebra.md)
 
-#ring_theory #algebra
+#ring_theory #algebra #number_theory
