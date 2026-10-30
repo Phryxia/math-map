@@ -2,7 +2,7 @@
 
 # 개요
 
-**Krull 차원(Krull dimension)** 은 환의 [소 아이디얼](prime-ideals.md) 사슬의 최대 길이다. 벡터 공간의 차원은 기저의 개수다. 다항식환에는 기저가 없고, $k[x,y]$ 는 $k$ 위에서 무한 차원이지만 이 환이 좌표환인 평면은 $2$ 차원이다.
+**Krull 차원(Krull dimension)** 은 환의 [소 아이디얼](prime-ideals.md) 사슬의 최대 길이다. 벡터 공간의 차원은 기저의 개수다. 다항식환 $k[x,y]$ 는 $k$ 위 벡터 공간으로 무한 차원이지만 이 환이 좌표환인 평면은 $2$ 차원이다.
 
 [Noether 환](noetherian-rings.md)에서는 이 값이 극대 아이디얼을 정의하는 원소의 최소 개수와 같고, 방정식 하나가 차원을 얼마나 떨어뜨리는지도 정해진다.
 
@@ -28,43 +28,51 @@ $$
 
 의 길이는 $n$ 이다. 사슬 길이의 상한이 $R$ 의 **Krull 차원** $\dim R$ 이다.
 
-체는 $0$ 이고, $\mathbb Z$ 와 $k[x]$ 는 $1$ 이다. 영환의 차원은 $-1$ 로 둔다.
+체는 소 아이디얼이 $(0)$ 뿐이라 $0$ 이다. $\mathbb Z$ 의 소 아이디얼은 $(0)$ 과 소수 $p$ 의 $(p)$ 이고 가장 긴 사슬이 $(0)\subsetneq(p)$ 라 $1$ 이며, $k[x]$ 도 같은 이유로 $1$ 이다. 영환의 차원은 $-1$ 로 둔다.
 
 ## 높이
 
-소 아이디얼 $\mathfrak p$ 로 끝나는 사슬 길이의 상한이 $\mathfrak p$ 의 **높이** $\mathrm{ht}(\mathfrak p)$ 다. 국소화로 옮기면
+소 아이디얼 $\mathfrak p$ 로 끝나는 사슬 길이의 상한이 $\mathfrak p$ 의 **높이(height)** $\mathrm{ht}(\mathfrak p)$ 다.
 
-$$
-\mathrm{ht}(\mathfrak p)=\dim R_\mathfrak p
-$$
-
-이고, $\dim R$ 은 극대 아이디얼들의 높이의 상한이다.
+직관 절의 사슬에서 $(f)$ 로 끝나는 사슬 $(0)\subsetneq(f)$ 는 길이가 $1$ 이고, 성질 절의 Krull 높이 정리로 더 긴 사슬이 없으므로 $\mathrm{ht}((f))=1$ 이다. 같은 사슬이 $(x-a,\thinspace y-b)$ 까지 가므로 그 높이는 $2$ 이상이고, $\dim k[x,y]=2$ 이므로 $2$ 다.
 
 ## 정의 계열
 
-Noether 국소환 $(R,\mathfrak m)$ 에서 원소 $x_1,\dots,x_d$ 가 생성하는 아이디얼의 근기가 $\mathfrak m$ 이면 이 원소들을 **정의 계열**이라 한다. $\mathfrak m$ 자신이 유한 생성이므로 정의 계열은 늘 있다.
+Noether 국소환 $(R,\mathfrak m)$ 에서 원소 $x_1,\dots,x_d$ 가 생성하는 아이디얼의 근기가 $\mathfrak m$ 이면 이 원소들을 **정의 계열(system of parameters)** 이라 한다.
+
+$k[x,y]$ 를 $(x,y)$ 에서 국소화한 환에서 $x,y$ 는 정의 계열이고, $\sqrt{(x^2,y^3)}=(x,y)$ 이므로 $x^2,y^3$ 도 정의 계열이다. $x$ 하나는 근기가 $(x)\neq\mathfrak m$ 이라 정의 계열이 아니다.
 
 # 성질
 
 ## 차원 정리
 
-**정리.** Noether 국소환 $(R,\mathfrak m)$ 에서 다음 세 값이 같다.[^1]
+**정리(차원 정리, dimension theorem).** Noether 국소환 $(R,\mathfrak m)$ 에서 다음 세 값이 같다.[^1]
 
 - Krull 차원 $\dim R$
 - 정의 계열의 최소 길이
 - $\ell(R/\mathfrak m^{n+1})$ 이 큰 $n$ 에서 일치하는 다항식의 차수
 
-$\ell$ 은 [가군](modules.md)의 길이다. 셋을 순환 부등식으로 잇는다. 정의 계열의 길이가 $d$ 이면 Hilbert 다항식의 차수가 $d$ 이하이고, 그 차수가 $e$ 이면 $\dim R\le e$ 이며, $\dim R=d'$ 이면 길이 $d'$ 인 정의 계열을 소 아이디얼을 피해 가며 원소를 하나씩 고르는 방법으로 만든다. ∎
+$\ell$ 은 [가군](modules.md)의 길이다. 셋을 순환 부등식으로 잇는다. 정의 계열의 길이가 $d$ 이면 Hilbert 다항식(Hilbert polynomial)의 차수가 $d$ 이하이고, 그 차수가 $e$ 이면 $\dim R\le e$ 이며, $\dim R=d'$ 이면 길이 $d'$ 인 정의 계열을 소 아이디얼을 피해 가며 원소를 하나씩 고르는 방법으로 만든다. ∎
 
-이 정리로 차원이 유한임이 따라 나온다. Noether 국소환의 차원은 $\mathfrak m$ 의 생성원 개수를 넘지 않는다.
+$\mathfrak m$ 자신이 유한 생성이므로 그 생성원이 정의 계열이 되고, 이 정리로 차원이 유한임이 따라 나온다. Noether 국소환의 차원은 $\mathfrak m$ 의 생성원 개수를 넘지 않는다.
 
 ## Krull 높이 정리
 
-**정리.** $R$ 이 Noether 이고 $\mathfrak p$ 가 $(f)$ 의 극소 소인자이면 $\mathrm{ht}(\mathfrak p)\le1$ 이다. 원소 $n$ 개가 생성하는 아이디얼의 극소 소인자이면 높이가 $n$ 이하다.[^1]
+**정리(Krull 높이 정리, Krull's height theorem).** $R$ 이 Noether 이고 $\mathfrak p$ 가 $(f)$ 의 극소 소인자(minimal prime)이면 $\mathrm{ht}(\mathfrak p)\le1$ 이다. 원소 $n$ 개가 생성하는 아이디얼의 극소 소인자이면 높이가 $n$ 이하다.[^1]
 
 $R\_\mathfrak p$ 로 옮기면 $f$ 하나가 정의 계열이므로 차원 정리가 곧바로 상한을 준다. ∎
 
 방정식 하나를 더할 때 차원이 $1$ 보다 많이 떨어지지 않는다는 것은 이 정리의 역 부등식이고, 극소 소인자를 잡아 같은 논법을 적용해 얻는다.
+
+## 높이와 국소화
+
+$\mathfrak p$ 에 포함된 소 아이디얼은 $R_\mathfrak p$ 의 소 아이디얼과 포함 순서를 지키며 일대일로 대응하므로
+
+$$
+\mathrm{ht}(\mathfrak p)=\dim R_\mathfrak p
+$$
+
+이다. 모든 사슬은 어떤 극대 아이디얼로 끝나게 늘릴 수 있으므로 $\dim R$ 은 극대 아이디얼들의 높이의 상한이다.
 
 ## 유한생성 대수
 
