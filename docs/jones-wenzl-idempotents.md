@@ -6,14 +6,6 @@
 
 # 직관
 
-정의하는 조건은 다음과 같다.
-
-$$
-f_n^2=f_n,\qquad e_if_n=f_ne_i=0\quad (1\le i\le n-1)
-$$
-
-$\delta=q+q^{-1}$ 로 두면 $f_n$ 은 양자 정수 $\lbrack m\rbrack\_q$ 를 계수로 하는 점화식으로 만들어지고, $\lbrack n+1\rbrack\_q=0$ 인 매개변수에서 정의가 끊긴다.
-
 $TL_2(\delta)$ 에서 모든 $e_i$ 를 죽이는 멱등원을 직접 찾는다. 기저는 $1$ 과 $e_1$ 이므로 원소를 $a+be_1$ 로 적고 $e_1(a+be_1)=0$ 을 푼다. $e_1^2=\delta e_1$ 이므로 좌변이 $(a+b\delta)e_1$ 이고 조건은 $a+b\delta=0$ 이다.
 
 $a=1$ 로 잡으면 $b=-1/\delta$ 이고 원소는 $f_2=1-\delta^{-1}e_1$ 이다. 제곱하면 $f_2^2=1-2\delta^{-1}e_1+\delta^{-2}\delta e_1=1-\delta^{-1}e_1=f_2$ 로 멱등이다.
@@ -24,6 +16,16 @@ $n$ 을 하나 올릴 때 새 생성원 $e_n$ 만 더 죽이면 되므로, $f_n$
 
 # 정의
 
+## 정의 조건
+
+$TL_n(\delta)$ 의 원소 $f_n$ 이 다음을 만족하면 **Jones–Wenzl 멱등원** 이라 한다.
+
+$$
+f_n^2=f_n,\qquad e_if_n=f_ne_i=0\quad (1\le i\le n-1)
+$$
+
+$n=1$ 이면 생성원이 없으므로 $f_1=1$ 이다. $n=2$ 이면 직관 절의 $f_2=1-\delta^{-1}e_1$ 이 두 조건을 만족한다.
+
 ## 양자 정수
 
 $\delta=q+q^{-1}$ 에 대해
@@ -32,7 +34,9 @@ $$
 \lbrack m\rbrack\_q=\frac{q^m-q^{-m}}{q-q^{-1}}=q^{m-1}+q^{m-3}+\dots+q^{1-m}
 $$
 
-을 양자 정수라 한다. $q\to 1$ 에서 $\lbrack m\rbrack\_q\to m$ 이고 $\lbrack 2\rbrack\_q=\delta$ 다.
+을 **양자 정수(quantum integer)** 라 한다.
+
+$\lbrack 1\rbrack\_q=1$, $\lbrack 2\rbrack\_q=q+q^{-1}=\delta$, $\lbrack 3\rbrack\_q=q^2+1+q^{-2}=\delta^2-1$ 이다. $q=1$ 이면 $\lbrack m\rbrack\_q=m$ 이다.
 
 ## 점화식
 
@@ -43,6 +47,8 @@ f\_{n+1}=f_n-\frac{\lbrack n\rbrack\_q}{\lbrack n+1\rbrack\_q}\thinspace f_ne_nf
 $$
 
 으로 정의한다[^1]. 오른쪽의 $f_n$ 은 $TL_n(\delta)\subset TL\_{n+1}(\delta)$ 의 포함으로 본 것이다. $\lbrack m+1\rbrack\_q\ne 0$ 이 $m\le n$ 에서 성립하는 동안 $f\_{n+1}$ 이 정의된다.
+
+$n=1$ 이면 $f_2=1-\frac{\lbrack 1\rbrack\_q}{\lbrack 2\rbrack\_q}e_1=1-\delta^{-1}e_1$ 이고, 정의 조건의 예와 같다. $\delta=0$ 이면 $\lbrack 2\rbrack\_q=0$ 이므로 $f_2$ 가 정의되지 않는다.
 
 # 성질
 
