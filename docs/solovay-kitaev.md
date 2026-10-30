@@ -6,10 +6,6 @@
 
 # 직관
 
-Solovay–Kitaev 정리는 유니터리 군의 조밀한 부분군을 생성하는 유한 집합이 주어지면, 군의 임의 원소를 정확도 $\varepsilon$ 으로 근사하는 데 그 집합의 원소 $O(\log^c(1/\varepsilon))$ 개의 곱이면 된다는 정리다. 지수 $c$ 는 군에 따라 정해지는 상수다.
-
-조밀성은 근사가 가능하다는 것만 주고 근사식의 길이는 말하지 않는다. 이 정리는 길이를 정확도의 로그의 다항으로 묶는다.
-
 [Lie 군](lie-groups.md) $\mathrm{SU}(2)$ 의 원소 두 개 $S=\lbrace A,A^{-1},B,B^{-1}\rbrace$ 를 골라 곱을 만든다. 길이 $\ell$ 이하의 곱은 많아도 $4^\ell$ 개다. $\mathrm{SU}(2)$ 는 3차원이므로 반지름 $\varepsilon$ 인 공으로 전체를 덮으려면 공이 $\varepsilon^{-3}$ 개쯤 필요하다. 길이 $\ell$ 의 곱들이 $\varepsilon$ 그물을 이루려면 $4^\ell\ge \varepsilon^{-3}$, 곧 $\ell\ge 3\log(1/\varepsilon)/\log 4$ 여야 한다. 길이는 적어도 $\log(1/\varepsilon)$ 만큼 자란다.
 
 위쪽은 이 셈으로 잡히지 않는다. $S$ 가 생성하는 부분군이 조밀하다는 사실은 각 원소마다 근사식이 있다고만 말하고, 그 길이가 $\varepsilon$ 에 따라 어떻게 자라는지는 말하지 않는다. 길이 $\ell$ 의 곱을 전부 나열해 가장 가까운 것을 찾는 방법은 $4^\ell$ 번을 세므로 $\varepsilon$ 을 열 배 줄일 때마다 비용이 상수배가 아니라 거듭제곱으로 뛴다.
@@ -20,25 +16,37 @@ Solovay–Kitaev 정리는 유니터리 군의 조밀한 부분군을 생성하�
 
 # 정의
 
-$\mathrm{SU}(d)$ 에 작용소 노름(operator norm) 거리를 준다.
+## 작용소 노름 거리
+
+$\mathrm{SU}(d)$ 의 두 원소 사이의 **작용소 노름(operator norm) 거리** 는 다음 값이다.
 
 $$
 d(U,V)=\Vert U-V\Vert=\sup\_{\Vert x\Vert=1}\Vert (U-V)x\Vert
 $$
 
-$S\subseteq \mathrm{SU}(d)$ 가 역원에 닫힌 유한 집합이고 $\langle S\rangle$ 이 $\mathrm{SU}(d)$ 에서 조밀하면 $S$ 를 **보편 게이트 집합(universal gate set)** 이라 한다. $S\_\ell$ 은 $S$ 의 원소를 $\ell$ 개 이하 곱해 얻는 원소 전체다.
+$d(I,-I)=2$ 이다. $\mathrm{SU}(2)$ 의 $R=\mathrm{diag}(e^{i\theta/2},e^{-i\theta/2})$ 이면 $R-I$ 가 대각행렬이므로 $d(R,I)=\vert e^{i\theta/2}-1\vert=2\sin(\theta/4)$ 이고, $\theta$ 가 작으면 약 $\theta/2$ 다.
 
-두 원소의 **군 교환자(group commutator)** 는 다음과 같다.
+## 보편 게이트 집합
+
+**보편 게이트 집합(universal gate set)** 은 역원에 닫혀 있고 생성하는 부분군 $\langle S\rangle$ 이 $\mathrm{SU}(d)$ 에서 조밀한 유한 집합 $S\subseteq \mathrm{SU}(d)$ 다. $S\_\ell$ 은 $S$ 의 원소를 $\ell$ 개 이하 곱해 얻는 원소 전체다.
+
+$\theta/\pi$ 가 무리수일 때 $z$ 축 회전 $A=\mathrm{diag}(e^{-i\theta/2},e^{i\theta/2})$ 와 $x$ 축 회전 $B=\begin{pmatrix}\cos(\theta/2)&-i\sin(\theta/2)\cr -i\sin(\theta/2)&\cos(\theta/2)\end{pmatrix}$ 로 만든 $S=\lbrace A,A^{-1},B,B^{-1}\rbrace$ 는 $\mathrm{SU}(2)$ 의 보편 게이트 집합이다. $A$ 의 거듭제곱은 $z$ 축 회전 전체에서 조밀하고, $B$ 의 거듭제곱은 $x$ 축 회전 전체에서 조밀하며, $\mathrm{SU}(2)$ 의 모든 원소는 $z$ 축, $x$ 축, $z$ 축 회전의 곱이다. 반면 $\sigma\_x=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $\sigma\_y=\begin{pmatrix}0&-i\cr i&0\end{pmatrix}$, $\sigma\_z=\mathrm{diag}(1,-1)$ 에 대해 $\pm I$, $\pm i\sigma\_x$, $\pm i\sigma\_y$, $\pm i\sigma\_z$ 여덟 원소로 된 집합은 곱에 닫힌 유한군이므로 조밀한 부분군을 생성하지 않는다.
+
+## 군 교환자
+
+두 원소의 **군 교환자(group commutator)** 는 다음 원소다.
 
 $$
 \lbrack U,V\rbrack=UVU^{-1}V^{-1}
 $$
 
-## 정리
-
-$S$ 가 $\mathrm{SU}(d)$ 의 보편 게이트 집합이면 상수 $c$ 와 $K$ 가 있어, 모든 $U\in \mathrm{SU}(d)$ 와 모든 $\varepsilon\gt 0$ 에 대해 $\Vert U-W\Vert\lt \varepsilon$ 인 $W\in S\_\ell$ 이 $\ell\le K\log^c(1/\varepsilon)$ 로 존재한다[^1]. 근사식을 찾는 절차도 같은 한계 안에서 끝난다.
+$U,V$ 가 둘 다 대각행렬이면 $UV=VU$ 이므로 $\lbrack U,V\rbrack=I$ 다. $U=i\sigma\_x$, $V=i\sigma\_z$ 로 두면 $UV=-VU$ 이므로 $\lbrack U,V\rbrack=-I$ 다.
 
 # 성질
+
+## 근사 길이의 상한
+
+**정리 (Solovay–Kitaev).** $S$ 가 $\mathrm{SU}(d)$ 의 보편 게이트 집합이면 상수 $c$ 와 $K$ 가 있어, 모든 $U\in \mathrm{SU}(d)$ 와 모든 $\varepsilon\gt 0$ 에 대해 $\Vert U-W\Vert\lt \varepsilon$ 인 $W\in S\_\ell$ 이 $\ell\le K\log^c(1/\varepsilon)$ 로 존재한다[^1]. 근사식을 찾는 절차도 같은 한계 안에서 끝난다.
 
 ## 교환자 축소
 
