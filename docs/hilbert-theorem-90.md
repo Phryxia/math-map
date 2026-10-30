@@ -6,10 +6,6 @@
 
 # 직관
 
-Hilbert 정리 90은 순환 Galois 확대 $L/K$ 에서 노름이 $1$ 인 $L$ 의 원소가 어떤 원소와 그 켤레의 비로 쓰인다는 정리다. 생성원 $\sigma$ 에 대해 $N_{L/K}(a)=1$ 인 것과 $a=b/\sigma(b)$ 인 $b\in L^{\times}$ 가 있는 것이 동치다.
-
-코호몰로지로 적으면 $H^1(G,L^{\times})=1$ 이고, 이 소멸이 [Kummer 이론](kummer-theory.md)과 Galois 강하의 증명에 쓰인다.
-
 $x^2+y^2=z^2$ 의 양의 정수해는 $(3,4,5)$, $(5,12,13)$, $(8,15,17)$ 로 이어진다. 전부 $m\gt n\gt0$ 에서 $(m^2-n^2,\thinspace 2mn,\thinspace m^2+n^2)$ 로 나온다. 이 공식이 왜 이 꼴인지 묻는다.
 
 $z$ 로 나누면 $(x/z)^2+(y/z)^2=1$ 이므로 단위원 위의 유리점을 찾는 문제다. $\alpha=x/z+(y/z)i$ 로 두면 $\alpha\bar\alpha=1$ 이고, 켤레를 취하는 것은 $\mathbb Q(i)/\mathbb Q$ 의 Galois 군이 하는 작용이다. 곧 노름이 $1$ 인 $\mathbb Q(i)$ 의 원소를 전부 찾는 문제다.
@@ -30,11 +26,13 @@ $L/K$ 를 유한 Galois 확대, $G=\mathrm{Gal}(L/K)$ 라 한다.
 
 ## 노름
 
+$a\in L$ 의 **노름(norm)** 은 다음이다.
+
 $$
 N_{L/K}(a)=\prod_{\sigma\in G}\sigma(a)
 $$
 
-노름은 $L^{\times}$ 에서 $K^{\times}$ 로 가는 군 준동형이다.
+직관 절의 $\mathbb Q(i)/\mathbb Q$ 에서는 $G$ 가 항등과 켤레뿐이라 $N(m+ni)=(m+ni)(m-ni)=m^2+n^2$ 이다.
 
 ## 1 코사이클
 
@@ -44,9 +42,15 @@ $$
 a_{\sigma\tau}=a_{\sigma}\cdot\sigma(a_{\tau})
 $$
 
-를 만족하면 **1 코사이클**이라 한다. $b\in L^{\times}$ 에서 $a_{\sigma}=\sigma(b)/b$ 로 얻는 것이 **1 코바운더리**이고, 코사이클 군을 코바운더리 군으로 나눈 것이 [군 코호몰로지](group-cohomology.md) $H^1(G,L^{\times})$ 다.
+를 만족하면 **1 코사이클(1-cocycle)** 이라 한다. $b\in L^{\times}$ 에서 $a_{\sigma}=\sigma(b)/b$ 로 얻는 것이 **1 코바운더리(1-coboundary)** 이고, 코사이클 군을 코바운더리 군으로 나눈 것이 [군 코호몰로지](group-cohomology.md) $H^1(G,L^{\times})$ 다.
+
+$\mathbb Q(i)/\mathbb Q$ 에서 켤레를 $c$ 라 하면 1 코사이클은 $a_c=\alpha$ 하나로 정해지고, 조건 $1=a_{c^2}=a_c\thinspace c(a_c)=\alpha\bar\alpha$ 가 $N(\alpha)=1$ 이다. 1 코바운더리는 $\alpha=\bar b/b$ 꼴이고, 직관 절의 $\beta/\bar\beta$ 가 $b=\bar\beta$ 인 경우다.
 
 # 성질
+
+## 노름의 준동형성
+
+노름은 $L^{\times}$ 에서 $K^{\times}$ 로 가는 군 준동형이다.
 
 ## 순환 판본
 
@@ -78,7 +82,7 @@ $n=1$ 이 위의 정리다. 이 소멸은 $L$ 위의 벡터 공간에 내려오�
 
 # 활용
 
-- **Kummer 이론.** $K$ 가 $1$ 의 원시 $n$ 제곱근 $\zeta$ 를 포함하면, 차수 $n$ 의 순환 확대는 모두 $L=K(a^{1/n})$ 꼴이다. 증명은 $N_{L/K}(\zeta^{-1})=1$ 에서 정리 90 으로 $\zeta^{-1}=\sigma(b)/b$ 인 $b$ 를 얻고, 그 $b$ 가 $b^{n}\in K$ 를 만족함을 확인하는 것이다.
+- **[Kummer 이론](kummer-theory.md).** $K$ 가 $1$ 의 원시 $n$ 제곱근 $\zeta$ 를 포함하면, 차수 $n$ 의 순환 확대는 모두 $L=K(a^{1/n})$ 꼴이다. 증명은 $N_{L/K}(\zeta^{-1})=1$ 에서 정리 90 으로 $\zeta^{-1}=\sigma(b)/b$ 인 $b$ 를 얻고, 그 $b$ 가 $b^{n}\in K$ 를 만족함을 확인하는 것이다.
 - **Brauer 군.** $H^1$ 이 소멸하므로 확대열의 연결 준동형이 $H^2(G,L^{\times})$ 를 [Brauer 군](brauer-groups.md)의 부분군으로 심고, 순환 확대에서는 그 군이 $K^{\times}/N_{L/K}L^{\times}$ 와 같다.
 - **곡선 위의 유리점.** 단위원과 Pell 원뿔곡선의 유리점 매개화가 노름 $1$ 인 원소의 결정과 같은 문제다. 피타고라스 삼조의 공식이 그 특수한 경우다.
 - **형태의 분류.** $K$ 위의 대상이 $L$ 위에서 동형이 되는 방식들, 곧 $K$ 형태의 집합이 $H^1(G,\mathrm{Aut})$ 로 분류된다. 자기동형군이 $\mathrm{GL}\_n$ 일 때 이 집합이 한 점이라는 것이 Speiser 의 판본이다.
