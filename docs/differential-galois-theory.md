@@ -16,28 +16,34 @@ $y'=y$ 로 같은 계산을 하면 해는 $e^x$ 다. $\sigma(e^x)/e^x$ 의 도�
 
 ## Picard–Vessiot 확대
 
-$K$ 를 표수 $0$ 인 미분체, $C$ 를 그 상수체라 하고 $C$ 가 대수적으로 닫혀 있다고 하자. 계수가 $K$ 에 있는 선형 미분방정식
+$K$ 를 표수 $0$ 인 미분체(differential field), $C$ 를 그 상수체(field of constants)라 하고 $C$ 가 대수적으로 닫혀 있다고 하자. 계수가 $K$ 에 있는 선형 미분방정식
 
 $$
 L(y)=y^{(n)}+a_{n-1}y^{(n-1)}+\dots+a_0y=0
 $$
 
-에 대해 미분체 확대 $M/K$ 가 **Picard–Vessiot 확대**라는 것은 두 조건을 만족한다는 뜻이다.
+에 대해 미분체 확대 $M/K$ 가 **Picard–Vessiot 확대(Picard–Vessiot extension)** 라는 것은 두 조건을 만족한다는 뜻이다.
 
 1. $L(y)=0$ 의 해 $y_1,\dots,y_n$ 이 $C$ 위에서 선형독립이고 $M=K\langle y_1,\dots,y_n\rangle$ 이다.
 2. $M$ 의 상수체가 $C$ 와 같다.
 
-둘째 조건이 새 상수가 들어오는 것을 막는다. 상수가 늘면 자기동형이 고정해야 할 것이 줄어 군이 커지고 대응이 깨진다.
+직관 절의 $y'=y$ 에서 $K=\mathbb C(x)$ , $L(y)=y'-y$ 이고, $M=\mathbb C(x)(e^x)$ 는 해 $e^x$ 하나로 생성되며 상수체가 $\mathbb C$ 이므로 Picard–Vessiot 확대다. $y'=1/x$ 는 선형 동차가 아니지만, 그 해의 도함수가 만족하는 $y''+y'/x=0$ 의 해 $1,\log x$ 로 $M=\mathbb C(x)(\log x)$ 가 Picard–Vessiot 확대가 된다.
 
 ## 미분 Galois 군
 
-$K$ 를 고정하고 미분과 가환하는 $M$ 의 체 자기동형 전체를 $\mathrm{Gal}\_\delta(M/K)$ 라 쓰고 **미분 Galois 군**이라 한다.
+$K$ 를 고정하고 미분과 가환하는 $M$ 의 체 자기동형 전체를 $\mathrm{Gal}\_\delta(M/K)$ 라 쓰고 **미분 Galois 군(differential Galois group)** 이라 한다.
 
 $$
 \mathrm{Gal}\_\delta(M/K)=\lbrace \sigma\in\mathrm{Aut}(M/K):\sigma\circ\delta=\delta\circ\sigma\rbrace
 $$
 
+직관 절의 계산에서 $\mathrm{Gal}\_\delta(\mathbb C(x)(e^x)/\mathbb C(x))\cong\mathbb C^\times$ 이고 $\mathrm{Gal}\_\delta(\mathbb C(x)(\log x)/\mathbb C(x))\cong\mathbb C$ 다.
+
 # 성질
+
+## 상수체 조건
+
+Picard–Vessiot 확대의 둘째 조건은 새 상수가 들어오는 것을 막는다. 상수가 늘면 자기동형이 고정해야 할 것이 줄어 군이 커지고, 아래 Galois 대응이 성립하지 않는다.
 
 ## 선형 대수군
 
