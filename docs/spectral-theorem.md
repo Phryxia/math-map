@@ -6,7 +6,9 @@
 
 # 직관
 
-스펙트럼 정리는 유한차원 [내적 공간](inner-product-spaces.md)에서 자기수반 연산자가 실고윳값을 가지며 고유벡터로 된 정규직교기저를 갖는다는 정리다[^1]. [행렬](matrices.md)로 쓰면 실대칭행렬이 직교행렬로 대각화되고, 역으로 직교 대각화가 가능한 실행렬은 대칭이다[^2]. [고윳값](eigenvalues.md) 일반론에서는 중복도 조건이 깨져 대각화가 실패할 수 있지만 대칭성이 그 실패를 막는다. 이차형식의 주축 분해, 양의 정부호 판정, [공분산](covariance.md) 분석, [특이값 분해](singular-value-decomposition.md)가 이 정리의 귀결이다.
+개요의 곡선은 $x^{\mathsf T}Ax=1$ 로 적힌다. 여기서 $x=(x,y)$ 이고 $A=\begin{pmatrix}5&2\cr 2&2\end{pmatrix}$ 는 [행렬](matrices.md)의 $(1,2)$ 성분과 $(2,1)$ 성분이 같은 대칭행렬이다. $A$ 의 특성다항식은 $\lambda^2-7\lambda+6=(\lambda-6)(\lambda-1)$ 이고, [고유벡터](eigenvalues.md)는 고윳값 $6$ 에 $(2,1)$, 고윳값 $1$ 에 $(1,-2)$ 다.
+
+두 고유벡터의 내적은 $2\cdot1+1\cdot(-2)=0$ 이므로 서로 수직이다. 길이를 $1$ 로 맞춘 $\tfrac{1}{\sqrt5}(2,1)$, $\tfrac{1}{\sqrt5}(1,-2)$ 방향의 좌표를 $u,v$ 라 하면 $A$ 는 $u$ 방향을 $6$ 배, $v$ 방향을 $1$ 배 하므로 식이 $6u^2+v^2=1$ 이 된다.
 
 실대칭행렬 $A$ 는 원점 중심의 이차형식을 정한다. 스펙트럼 정리는 그 도형의 주축이 서로 수직이고, 그 축을 좌표계로 잡으면 이차형식에 교차항이 없어진다는 것이다. 고윳값은 각 축에서의 늘어남 정도이고 부호가 도형의 종류를 정한다.
 
@@ -19,13 +21,13 @@ $Av=\lambda v$ , $Aw=\mu w$ 이고 $\lambda\neq\mu$ 이면 대칭성에서 $\lam
 
 # 정의
 
-$V$ 를 [실수](real-numbers.md)체 또는 [복소수체](complex-numbers.md) 위의 유한차원 내적 공간, $T$ 를 $V$ 의 선형연산자라 하자. $T$ 의 수반연산자 $T^{\ast}$ 는 다음 항등식으로 유일하게 정해진다.
+$V$ 를 [실수](real-numbers.md)체 또는 [복소수체](complex-numbers.md) 위의 유한차원 [내적 공간](inner-product-spaces.md), $T$ 를 $V$ 의 선형연산자라 하자. $T$ 의 **수반연산자(adjoint)** $T^{\ast}$ 는 다음 항등식을 만족하는 연산자다.
 
 $$
 \langle Tv,w\rangle=\langle v,T^{\ast}w\rangle\quad\text{모든 }v,w\in V
 $$
 
-정규직교기저에서 $T^{\ast}$ 의 행렬은 켤레전치다. $T^{\ast}=T$ 이면 자기수반(실수에서는 대칭, 복소수에서는 Hermitian)이라 하고, $T^{\ast}T=TT^{\ast}$ 이면 normal 이라 한다.
+$T^{\ast}=T$ 이면 **자기수반(self-adjoint)** 이라 하고, 실수에서는 대칭, 복소수에서는 Hermitian 이라 한다. $T^{\ast}T=TT^{\ast}$ 이면 **정규(normal)** 라 한다. 직관 절의 $A$ 는 대칭이다. 직각 회전 $R=\begin{pmatrix}0&-1\cr 1&0\end{pmatrix}$ 은 $R^{\mathsf T}R=I=RR^{\mathsf T}$ 이므로 정규이지만 대칭이 아니다.
 
 $$
 A^{\ast}=\overline{A}^{\mathsf T},\qquad
@@ -33,19 +35,25 @@ A^{\ast}=\overline{A}^{\mathsf T},\qquad
 \text{Hermitian: }A^{\ast}=A
 $$
 
-$Q$ 의 열이 정규직교기저이면 $Q$ 는 직교행렬(복소수에서는 unitary)이고 역행렬이 전치다.
+열이 정규직교기저인 실행렬 $Q$ 를 **직교행렬(orthogonal matrix)** 이라 하고, 복소수에서는 unitary 행렬이라 한다. 직교행렬의 역행렬은 전치다.
 
 $$
 Q^{\mathsf T}Q=I
 $$
 
-$A$ 가 실대칭이면 직교행렬 $Q$ 와 실대각행렬 $\Lambda$ 가 존재해 다음이 성립하고, 역도 성립한다[^2].
+스펙트럼 정리의 행렬판은 다음이다. $A$ 가 실대칭이면 직교행렬 $Q$ 와 실대각행렬 $\Lambda$ 가 존재해 다음이 성립하고, 역도 성립한다[^2]. 연산자판은 자기수반 연산자가 실고윳값을 가지며 고유벡터로 된 정규직교기저를 갖는다는 것이다[^1].
 
 $$
 A=Q\Lambda Q^{\mathsf T},\qquad \Lambda=\mathrm{diag}(\lambda_1,\dots,\lambda_n)
 $$
 
+직관 절의 $A$ 는 $Q=\tfrac{1}{\sqrt5}\begin{pmatrix}2&1\cr 1&-2\end{pmatrix}$, $\Lambda=\mathrm{diag}(6,1)$ 로 분해된다.
+
 # 성질
+
+## 수반연산자의 행렬
+
+수반연산자는 존재하고 유일하다. 정규직교기저에서 $T^{\ast}$ 의 행렬은 켤레전치다.
 
 ## 고윳값의 실수성
 
@@ -118,7 +126,7 @@ $$
 
 ## 데이터와 통계
 
-공분산행렬은 대칭이고 양의 준정부호이므로 직교 고유기저를 갖고, 그 기저가 주성분이다. 분산이 큰 방향을 고르는 문제가 Rayleigh 몫 최대화이며, 실제 계산은 데이터행렬의 특이값 분해로 한다. [확률변수](random-variables.md)의 공분산을 내적으로 보면 주성분은 정사영의 최적 방향이다.
+[공분산](covariance.md)행렬은 대칭이고 양의 준정부호이므로 직교 고유기저를 갖고, 그 기저가 주성분이다. 분산이 큰 방향을 고르는 문제가 Rayleigh 몫 최대화이며, 실제 계산은 데이터행렬의 [특이값 분해](singular-value-decomposition.md)로 한다. [확률변수](random-variables.md)의 공분산을 내적으로 보면 주성분은 정사영의 최적 방향이다.
 
 ## 그래프와 신호
 
