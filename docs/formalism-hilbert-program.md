@@ -6,53 +6,53 @@
 
 # 직관
 
-형식주의는 수학을 기호 체계와 그 위의 규칙 조작으로 보는 입장이다. Hilbert 프로그램은 그 입장을 연구 계획으로 만든 것이다. 계획의 핵심은 무한을 다루는 고전 수학 전체를 유한한 형식체계로 공리화하고, 그 체계의 무모순성을 유한주의적(finitary) 방법만으로 증명하는 것이었다. 성공하면 무한에 관한 추론이 유한한 사실을 얻는 안전한 도구로 정당화된다.
-
-Gödel 의 불완전성 정리는 이 목표의 강한 형태가 불가능함을 보였다[^1]. 이후 증명론은 어떤 무한적 방법이 어떤 유한적 · 구성적 방법으로 환원되는지를 측정한다. 남은 유산은 서수 분석, relativized Hilbert program, reverse mathematics 다.
-
 Hilbert 는 무한 집합을 물리학의 "무한히 먼 점" 과 같은 지위로 두었다. 실재하는 대상이 아니라 계산을 매끄럽게 하는 이상적 원소다. 계획은 유한하게 확인 가능한 명제(real statement)와 그것을 다루기 편하게 하는 명제(ideal statement)를 나누고, 이상적 부분을 통과한 증명이 유한적 결론을 망치지 않음을 보이는 것이다.
 
 무모순성 증명은 규칙을 아무리 길게 적용해도 $0=1$ 이라는 문자열이 나오지 않는다는, 기호열에 관한 유한한 주장이다. Hilbert 는 이런 주장이라면 철학적 전제 없이 검사할 수 있다고 보았다.
 
 # 정의
 
-형식체계는 기호 집합, 논리식의 형성 규칙(formation rules), 공리 집합, 추론 규칙으로 이루어진다. 증명은 유한한 기호열의 나열이다. 이 층위에서 의미는 쓰지 않는다. [1차 논리](first-order-logic.md)가 그 표준 틀이다.
+**형식체계(formal system)** 는 기호 집합, 논리식의 형성 규칙(formation rules), 공리 집합, 추론 규칙으로 이루어진다. 증명은 유한한 기호열의 나열이다. 이 층위에서 의미는 쓰지 않는다. [1차 논리](first-order-logic.md)가 그 표준 틀이다.
 
-체계 $T$ 의 무모순성은 다음으로 정의한다.
-
-$$
-\mathrm{Con}(T)\ :\equiv\ \neg\thinspace\exists p\ \big(\mathrm{Proof}\_T(p,\ \ulcorner 0=1\urcorner)\big)
-$$
-
-Hilbert 가 요구한 유한주의적 관점은 구체적으로 주어진 기호 구성물만 다룬다. 완결된 무한 전체에 대한 양화를 쓰지 않고, 결정 가능한 술어와 원시재귀적 구성만 허용한다. 현대적 대응물로는 원시재귀 산술(primitive recursive arithmetic, PRA)을 쓴다[^1].
-
-명제를 두 부류로 나눈다.
+체계 $T$ 의 **무모순성(consistency)** 은 다음으로 정의한다.
 
 $$
-\text{real: } \forall x\thinspace R(x)\ (R \text{ 결정 가능})\ \text{의 각 예시},\qquad
+\mathrm{Con}(T)\thinspace:\equiv\thinspace\neg\thinspace\exists p\thinspace\big(\mathrm{Proof}\_T(p,\thinspace\ulcorner 0=1\urcorner)\big)
+$$
+
+$\mathrm{Proof}\_T(p,q)$ 는 "$p$ 가 $q$ 의 $T$ 증명의 번호다" 를 나타내는 술어이고, $\ulcorner 0=1\urcorner$ 는 문자열 $0=1$ 의 번호다. $T$ 가 Peano 산술(Peano arithmetic)이면 $\mathrm{Con}(T)$ 는 Peano 산술의 공리와 규칙으로 $0=1$ 을 끝내 적지 못한다는 산술 문장이다.
+
+Hilbert 가 요구한 **유한주의(finitism)** 관점은 구체적으로 주어진 기호 구성물만 다룬다. 완결된 무한 전체에 대한 양화를 쓰지 않고, 결정 가능한 술어와 원시재귀적 구성만 허용한다. 현대적 대응물로는 원시재귀 산술(primitive recursive arithmetic, PRA)을 쓴다[^1].
+
+명제를 두 부류로 나눈다. **실재 명제(real statement)** 는 유한하게 확인 가능한 명제이고, **이상 명제(ideal statement)** 는 완결된 무한을 양화하는 명제다.
+
+$$
+\text{real: } \forall x\thinspace R(x)\thinspace(R \text{ 결정 가능})\thinspace\text{의 각 예시},\qquad
 \text{ideal: } \text{완결된 무한을 양화하는 명제}
 $$
 
-프로그램의 두 목표는 다음과 같이 적을 수 있다. $S$ 는 유한주의 체계, $T$ 는 고전 수학의 형식화라 하자.
+"$17$ 은 소수다" 와 "모든 $x\lt 100$ 에 대해 $x+0=x$" 는 실재 명제이고, "모든 실수에 상한이 있다" 는 이상 명제다. 프로그램의 두 목표는 다음과 같이 적을 수 있다. $S$ 는 유한주의 체계, $T$ 는 고전 수학의 형식화라 하자.
 
 $$
 \textbf{(무모순성)}\quad S \vdash \mathrm{Con}(T)
 $$
 
 $$
-\textbf{(보존성)}\quad T \vdash \varphi \ \Longrightarrow\ S \vdash \varphi \qquad (\varphi\ \text{는 real 명제})
+\textbf{(보존성)}\quad T \vdash \varphi \thinspace\Longrightarrow\thinspace S \vdash \varphi \qquad (\varphi\thinspace\text{는 real 명제})
 $$
-
-보존성은 무모순성에서 따라온다. $T$ 가 무모순임을 $S$ 에서 증명할 수 있으면, $T$ 가 증명한 유한적 명제가 $S$ 에서도 확인된다는 논증을 $S$ 안에서 수행할 수 있다.
 
 # 성질
 
+## 무모순성과 보존성
+
+보존성(conservativity)은 무모순성에서 따라온다. $T$ 가 무모순임을 $S$ 에서 증명할 수 있으면, $T$ 가 증명한 유한적 명제가 $S$ 에서도 확인된다는 논증을 $S$ 안에서 수행할 수 있다.
+
 ## 불완전성 정리의 타격
 
-Gödel 제1정리로 재귀적으로 공리화되고 충분히 강하며 무모순인 $T$ 는 결정할 수 없는 명제를 가진다. "모든 수학적 문제를 결정하는 완전한 체계"라는 목표가 이것으로 무너진다. 제2정리는 무모순성 증명 자체를 막는다[^1].
+[Gödel 불완전성 정리](godel-incompleteness.md)의 제1정리로 재귀적으로 공리화되고 충분히 강하며 무모순인 $T$ 는 결정할 수 없는 명제를 가진다. "모든 수학적 문제를 결정하는 완전한 체계"라는 목표가 이것으로 무너진다. 제2정리는 무모순성 증명 자체를 막는다[^1].
 
 $$
-T \nvdash \mathrm{Con}(T)\qquad (T \supseteq \mathrm{PA},\ T\ \text{무모순},\ T\ \text{재귀적 공리화})
+T \nvdash \mathrm{Con}(T)\qquad (T \supseteq \mathrm{PA},\thinspace T\thinspace\text{무모순},\thinspace T\thinspace\text{재귀적 공리화})
 $$
 
 PRA 는 Peano 산술(Peano arithmetic, PA)에 포함된다. 유한주의적 방법이 $T$ 안에서 형식화된다면 $S$ 에서의 $\mathrm{Con}(T)$ 증명은 $T$ 에서의 $\mathrm{Con}(T)$ 증명을 낳으므로 $T$ 는 모순이다. 자세한 진술과 증명 개요는 [Gödel 불완전성 정리](godel-incompleteness.md)에 있다.
@@ -64,7 +64,7 @@ PRA 는 Peano 산술(Peano arithmetic, PA)에 포함된다. 유한주의적 방�
 Gentzen 은 1936 년에 PA 의 무모순성을 증명했다[^2]. 사용한 추가 원리는 서수 $\varepsilon\_0$ 까지의 초한귀납법이다.
 
 $$
-\varepsilon_0=\sup\lbrace\omega,\ \omega^{\omega},\ \omega^{\omega^{\omega}},\dots\rbrace
+\varepsilon_0=\sup\lbrace\omega,\thinspace \omega^{\omega},\thinspace \omega^{\omega^{\omega}},\dots\rbrace
 = \min\lbrace\alpha:\omega^{\alpha}=\alpha\rbrace
 $$
 
