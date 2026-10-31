@@ -6,13 +6,9 @@
 
 # 직관
 
-BCH 부호는 $\mathbb F_q$ 위의 길이 $n$ 순환 부호 가운데, 확대체 $\mathbb F\_{q^m}$ 의 $1$ 의 원시 $n$ 제곱근 $\beta$ 에 대해 연속한 거듭제곱 $\beta^b,\beta^{b+1},\dots,\beta^{b+\delta-2}$ 를 모두 근으로 갖는 다항식들로 이루어진 부호다. $\delta$ 를 설계 거리(designed distance)라 하고, 최소거리는 $\delta$ 이상이다.[^1][^2]
+$\mathbb F\_{16}$ 위의 길이 $15$ [Reed–Solomon 부호](reed-solomon-codes.md)에서 $c(\alpha)=c(\alpha^2)=c(\alpha^3)=c(\alpha^4)=0$ 인 부호어는 오류 $2$ 개를 고친다. 여기서 $\alpha$ 는 $\mathbb F\_{16}^\times$ 의 생성원이다. 이진 비트로 보내려면 성분이 $0$ 과 $1$ 뿐인 부호어만 쓴다.
 
-[Reed–Solomon 부호](reed-solomon-codes.md)는 기호가 $\mathbb F\_{q^m}$ 의 원소이고, BCH 부호는 그 가운데 성분이 모두 $\mathbb F_q$ 에 있는 부호어만 모은 것이다. 이진 BCH 부호는 길이 $2^m-1$ 에서 오류 $t$ 개를 패리티 비트 $mt$ 개 이하로 고친다.
-
-$\mathbb F\_{16}$ 위의 길이 $15$ Reed–Solomon 부호에서 $c(\alpha)=c(\alpha^2)=c(\alpha^3)=c(\alpha^4)=0$ 인 부호어는 오류 $2$ 개를 고친다. 여기서 $\alpha$ 는 $\mathbb F\_{16}^\times$ 의 생성원이다. 이진 비트로 보내려면 성분이 $0$ 과 $1$ 뿐인 부호어만 쓴다.
-
-성분이 $\mathbb F_2$ 에 있으면 $c(x)^2=c(x^2)$ 이다. 계수가 $a^2=a$ 를 만족하고, 표수 $2$ 에서 $(u+v)^2=u^2+v^2$ 이기 때문이다. 그래서 $c(\alpha)=0$ 이면 $c(\alpha^2)=c(\alpha)^2=0$ 이고 $c(\alpha^4)=0$ 도 따라온다. 네 조건 가운데 실제로 요구할 것은 $c(\alpha)=0$ 과 $c(\alpha^3)=0$ 둘뿐이다.
+계수가 $a^2=a$ 를 만족하고 표수 $2$ 에서 $(u+v)^2=u^2+v^2$ 이므로, 성분이 $\mathbb F_2$ 에 있으면 $c(x)^2=c(x^2)$ 이다. 그래서 $c(\alpha)=0$ 이면 $c(\alpha^2)=c(\alpha)^2=0$ 이고 $c(\alpha^4)=0$ 도 따라온다. 네 조건 가운데 실제로 요구할 것은 $c(\alpha)=0$ 과 $c(\alpha^3)=0$ 둘뿐이다.
 
 $\alpha$ 의 $\mathbb F_2$ 위 최소다항식 $x^4+x+1$ 과 $\alpha^3$ 의 최소다항식 $x^4+x^3+x^2+x+1$ 의 곱 $g(x)$ 는 차수가 $8$ 이다. $g$ 의 배수인 차수 $14$ 이하의 이진 다항식 전체가 부호이고, 매개변수는 $[15,7,5]$ 다. 근 넷 가운데 둘만 조건으로 남아 패리티 비트가 $16$ 이 아니라 $8$ 개다.
 
@@ -26,15 +22,17 @@ $$
 g(x)=\mathrm{lcm}\bigl(M\_b(x),M\_{b+1}(x),\dots,M\_{b+\delta-2}(x)\bigr)
 $$
 
-의 배수 전체다. 곧 $c(\beta^j)=0$ ($j=b,\dots,b+\delta-2$) 인 $c\in\mathbb F_q\lbrack x\rbrack/(x^n-1)$ 전체다. $b=1$ 이면 좁은 의미(narrow-sense) BCH 부호, $n=q^m-1$ 이면 원시(primitive) BCH 부호라 한다.
-
-$M\_j$ 의 근은 [유한체](finite-fields.md)의 Frobenius 사상이 만드는 켤레 $\beta^j,\beta^{jq},\beta^{jq^2},\dots$ 이다. 그러므로 $g$ 는 집합 $\lbrace b,\dots,b+\delta-2\rbrace$ 를 $q$ 배 곱셈으로 닫은 지수 집합 $Z$ 위의 $\prod_{j\in Z}(x-\beta^j)$ 와 같다.
+의 배수 전체이고, $\delta$ 를 **설계 거리(designed distance)** 라 한다[^1][^2]. 곧 $c(\beta^j)=0$ ($j=b,\dots,b+\delta-2$) 인 $c\in\mathbb F_q\lbrack x\rbrack/(x^n-1)$ 전체다. $b=1$ 이면 좁은 의미(narrow-sense) BCH 부호, $n=q^m-1$ 이면 원시(primitive) BCH 부호라 한다. 직관 절의 $\lbrack 15,7,5\rbrack$ 부호는 $q=2$, $n=15$, $b=1$, $\delta=5$ 인 좁은 의미 원시 BCH 부호이고, $g=M_1M_3$ 이다.
 
 # 성질
 
+## 생성 다항식의 근
+
+$M\_j$ 의 근은 [유한체](finite-fields.md)의 Frobenius 사상(Frobenius map)이 만드는 켤레 $\beta^j,\beta^{jq},\beta^{jq^2},\dots$ 이다. 그러므로 $g$ 는 집합 $\lbrace b,\dots,b+\delta-2\rbrace$ 를 $q$ 배 곱셈으로 닫은 지수 집합 $Z$ 위의 $\prod_{j\in Z}(x-\beta^j)$ 와 같다.
+
 ## BCH 한계
 
-**정리.** 설계 거리 $\delta$ 의 BCH 부호의 최소거리는 $\delta$ 이상이다.
+설계 거리 $\delta$ 의 BCH 부호의 최소거리는 $\delta$ 이상이다.
 
 증명의 요지. 무게 $w\le\delta-1$ 인 부호어 $c$ 가 자리 $i\_1,\dots,i\_w$ 에서만 $0$ 이 아니라고 하자. $c(\beta^j)=0$ 을 $j=b,\dots,b+w-1$ 에서 쓰면 미지수 $c\_{i\_1},\dots,c\_{i\_w}$ 에 대한 $w$ 개의 식이 나오고, 계수 [행렬](matrices.md)은 $\beta^{bi\_\ell}$ 로 열을 나누면 서로 다른 $\beta^{i\_\ell}$ 의 Vandermonde 행렬이다. 행렬식이 $0$ 이 아니므로 $c=0$ 이다.
 
