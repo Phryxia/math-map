@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "savedAt": "2026-10-31T13:06:10.828Z",
-  "nextSeq": 2602,
+  "savedAt": "2026-10-31T17:08:02.342Z",
+  "nextSeq": 2604,
   "items": [
     {
       "id": "9bab7237",
@@ -172,12 +172,12 @@
       "seq": 2587
     },
     {
-      "id": "3fdf1fb4",
+      "id": "8e414d60",
       "title": "규칙 #7 적용: 정의 절에 성질(준동형 동치, 전단사 등)을 늘어놓거나 예 없이 식만 둔 문서 점검",
       "priority": 100,
-      "note": "이슈 #7 로 4절 설명의 순서에 더한 규칙. grep 으로 셀 수 없다. #group_theory, #algebra, #ring_theory, #field_theory 주 분야 문서는 모두 처리함(#field_theory 는 2026-10-30 회차들에 끝남). #linear_algebra 주 분야 문서는 모두 처리함(2026-10-30). #category_theory 주 분야 문서는 모두 처리함(2026-10-31, adjunctions 부터 anyons 까지 11 개). #order_theory 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31). #information_theory 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31). #machine_learning 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31, actor-critic 부터 vc-dimension 까지 15 개). #philosophy_of_math 와 #foundations 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31, logicism 포함). #data_structures 주 분야 문서는 모두 처리함(2026-10-31, b-trees 부터 y-fast-tries 까지 19 개). #cryptography 주 분야 문서는 authenticated-encryption, blind-signatures, block-cipher-modes, commitment-schemes, cryptographic-hash-functions, digital-signatures, fiat-shamir, garbled-circuits, homomorphic-encryption, merkle-trees, message-authentication-codes, oblivious-transfer, one-way-functions, pseudorandom-generators, pseudorandom-permutations, secret-sharing, secure-multiparty-computation, semantic-security, zero-knowledge-proofs 를 처리함(2026-10-31). #cryptography 의 남은 넷 discrete-logarithm, pairing-based-cryptography, post-quantum-cryptography, rsa-cryptosystem 도 처리해 #cryptography 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31). #set_theory 주 분야 문서는 axiom-of-choice 부터 martins-axiom 까지 id 순으로 처리함(2026-10-31, 22 개). 다음은 #set_theory 의 남은 아홉 ordinals, projective-hierarchy, proper-forcing, random-real-forcing, sets, surreal-numbers, suslin-problem, weak-choice-principles, zfc-axioms. 그다음은 tags 로 남은 태그를 고른다. 정의 절을 읽어 성질은 성질 절로 옮기고 정의마다 직관 절의 예로 확인하는 예를 붙이고, 직관 첫머리의 성질 미리보기 문단은 뺀다. 미리보기 문단을 지울 때 그 문단에만 있던 본문 링크와 각주 참조를 본문 다른 자리로 옮기고, 지운 뒤 직관이 정의되지 않은 대상을 가리키며 시작하지 않는지 본다. 예를 붙일 때 계산을 다시 해 본다. Node 스크립트로 문단을 옮길 때 String.replace 의 치환 문자열에 $$ 가 있으면 $ 로 줄어든다(witt-vectors 에서 재발, 큐 b699c20d). 치환은 split/join 이나 함수 인자로 하고, 커밋 전에 grep -c '\\$\\$' 로 원본과 수를 견준다. 전역 문자열 치환으로 용어를 바꿀 때 방금 넣은 원어 괄호까지 바뀌는 사고가 polynomial-rings 에서 났다. 치환 뒤 그 줄을 눈으로 본다.",
-      "createdAt": "2026-10-31T13:05:57.940Z",
-      "seq": 2601
+      "note": "이슈 #7 로 4절 설명의 순서에 더한 규칙. grep 으로 셀 수 없다. #group_theory, #algebra, #ring_theory, #field_theory 주 분야 문서는 모두 처리함(#field_theory 는 2026-10-30 회차들에 끝남). #linear_algebra 주 분야 문서는 모두 처리함(2026-10-30). #category_theory 주 분야 문서는 모두 처리함(2026-10-31, adjunctions 부터 anyons 까지 11 개). #order_theory 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31). #information_theory 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31). #machine_learning 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31, actor-critic 부터 vc-dimension 까지 15 개). #philosophy_of_math 와 #foundations 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31, logicism 포함). #data_structures 주 분야 문서는 모두 처리함(2026-10-31, b-trees 부터 y-fast-tries 까지 19 개). #cryptography 주 분야 문서는 authenticated-encryption, blind-signatures, block-cipher-modes, commitment-schemes, cryptographic-hash-functions, digital-signatures, fiat-shamir, garbled-circuits, homomorphic-encryption, merkle-trees, message-authentication-codes, oblivious-transfer, one-way-functions, pseudorandom-generators, pseudorandom-permutations, secret-sharing, secure-multiparty-computation, semantic-security, zero-knowledge-proofs 를 처리함(2026-10-31). #cryptography 의 남은 넷 discrete-logarithm, pairing-based-cryptography, post-quantum-cryptography, rsa-cryptosystem 도 처리해 #cryptography 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31). #set_theory 주 분야 문서는 axiom-of-choice 부터 martins-axiom 까지 id 순으로 처리함(2026-10-31, 22 개). #set_theory 의 남은 아홉도 처리해 #set_theory 주 분야 문서는 모두 처리함(2026-10-31, ordinals 부터 zfc-axioms 까지). #logic 주 분야 문서는 ax-grothendieck 부터 kripke-semantics 까지 id 순으로 17 개 처리함(2026-10-31). 다음은 #logic 의 남은 열아홉 lowenheim-skolem, mathematical-induction, model-theory, morley-categoricity, o-minimality, paris-harrington, peano-axioms, pila-wilkie-theorem, prenex-normal-form, proofs, resolution, reverse-mathematics, second-order-arithmetic, stable-theories, strongly-minimal-groups, ultraproducts, weak-konig-lemma, zilber-indecomposability, zilber-trichotomy. 그다음은 첫 태그별 문서 수를 세어 남은 태그를 고른다. 이번 회차에 사실 오류 여럿을 함께 고쳤다(weak-choice-principles 의 Bolzano–Weierstrass 가 ZF 정리인 점, goodstein-theorem 의 ACA0 증명 주장, differentially-closed-fields 의 한정사 소거 부정, random-real-forcing 의 기저 실수 측도·범주 주장). 정의 절을 고칠 때 기존 주장도 하나씩 검증한다. 정의 절을 읽어 성질은 성질 절로 옮기고 정의마다 직관 절의 예로 확인하는 예를 붙이고, 직관 첫머리의 성질 미리보기 문단은 뺀다. 미리보기 문단을 지울 때 그 문단에만 있던 본문 링크와 각주 참조를 본문 다른 자리로 옮기고, 지운 뒤 직관이 정의되지 않은 대상을 가리키며 시작하지 않는지 본다. 예를 붙일 때 계산을 다시 해 본다. Node 스크립트로 문단을 옮길 때 String.replace 의 치환 문자열에 $$ 가 있으면 $ 로 줄어든다(witt-vectors 에서 재발, 큐 b699c20d). 치환은 split/join 이나 함수 인자로 하고, 커밋 전에 grep -c '\\$\\$' 로 원본과 수를 견준다. 전역 문자열 치환으로 용어를 바꿀 때 방금 넣은 원어 괄호까지 바뀌는 사고가 polynomial-rings 에서 났다. 치환 뒤 그 줄을 눈으로 본다.",
+      "createdAt": "2026-10-31T17:07:52.249Z",
+      "seq": 2603
     },
     {
       "id": "c4f40bdb",
