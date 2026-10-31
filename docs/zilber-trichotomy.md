@@ -6,11 +6,7 @@
 
 # 직관
 
-Zilber 삼분법은 강최소 집합(strongly minimal set)의 기하가 상등만 갖춘 집합, 벡터공간, 대수적으로 닫힌 체의 세 모양 가운데 하나라는 진술이다. [Morley 범주성 정리](morley-categoricity.md)로 비가산 범주적 이론의 모형은 강최소 집합 위의 차원 하나로 정해진다. 그 차원을 만드는 폐포 연산은 이론마다 다르고, 고전적인 예에서는 세 모양이 나온다. 상등만 갖춘 집합, 나눗셈환 위의 벡터공간, 대수적으로 닫힌 체다.
-
-Zilber 가 이 진술을 추측으로 내놓았고 Hrushovski 가 반례를 구성했다. 기하에 위상 조건을 더한 Zariski 기하에서는 삼분법이 정리로 성립한다.
-
-강최소 집합 $D$ 의 차원은 대수적 폐포 $\mathrm{acl}$ 이 만든다. 상등만 갖춘 무한집합에서는 유한집합을 정의하는 논리식의 해가 매개변수로 쓴 원소뿐이므로 $\mathrm{acl}(A)=A$ 이고, 체 $F$ 위의 무한차원 벡터공간에서는 $A$ 가 생성하는 부분공간이며, 대수적으로 닫힌 체 $K$ 에서는 $\mathbb Q(A)$ 의 대수적 폐포다. 차원은 차례로 원소 개수, 선형 차원, [초월차수](transcendence-degree.md)다. 벡터공간에서 유한차원 부분공간 $U$ 와 $V$ 는 $\dim(U+V)+\dim(U\cap V)=\dim U+\dim V$ 를 만족한다.
+[Morley 범주성 정리](morley-categoricity.md)에서 비가산 범주적 이론의 모형은 강최소 집합(strongly minimal set) $D$ 위의 차원 하나로 정해지고, 그 차원은 대수적 폐포(algebraic closure) $\mathrm{acl}$ 이 만든다. 상등만 갖춘 무한집합에서는 유한집합을 정의하는 논리식의 해가 매개변수로 쓴 원소뿐이므로 $\mathrm{acl}(A)=A$ 이고, 체 $F$ 위의 무한차원 벡터공간에서는 $A$ 가 생성하는 부분공간이며, 대수적으로 닫힌 체 $K$ 에서는 $\mathbb Q(A)$ 의 대수적 폐포다. 차원은 차례로 원소 개수, 선형 차원, [초월차수](transcendence-degree.md)다. 벡터공간에서 유한차원 부분공간 $U$ 와 $V$ 는 $\dim(U+V)+\dim(U\cap V)=\dim U+\dim V$ 를 만족한다.
 
 같은 식을 체에서 확인한다. $a,b,t$ 를 대수적으로 독립인 원소로 잡고 $s=at+b$ 라 두면 $X=\mathrm{acl}(a,b)$ 와 $Y=\mathrm{acl}(t,s)$ 는 차원이 각각 $2$ 인데, 두 집합을 합쳐 폐포를 취하면 $\mathrm{acl}(a,b,t)$ 라 차원이 $3$ 이고 교집합 $\mathrm{acl}(\emptyset)$ 은 차원이 $0$ 이므로 좌변이 $3$ 이고 우변이 $4$ 다. $X$ 는 직선 $y=ax+b$ 를, $Y$ 는 그 직선 위의 점 $(t,s)$ 를 정하므로 점 하나가 직선의 매개변수 두 개와 얽혀 합집합의 차원을 하나 깎는다. 상등만 갖춘 집합과 벡터공간에는 점과 곡선이 이렇게 얽히는 족이 없고, 위 등식이 성립하는 기하를 모듈러라 하면 삼분법은 모듈러가 아닌 기하가 체에서만 나온다는 진술이다.
 
@@ -18,44 +14,44 @@ Zilber 가 이 진술을 추측으로 내놓았고 Hrushovski 가 반례를 구�
 
 ## 프리기하
 
-집합 $D$ 와 연산 $\mathrm{cl}:\mathcal P(D)\to\mathcal P(D)$ 가 다음 넷을 만족하면 $(D,\mathrm{cl})$ 을 **프리기하**라 한다.
+집합 $D$ 와 연산 $\mathrm{cl}:\mathcal P(D)\to\mathcal P(D)$ 가 다음 넷을 만족하면 $(D,\mathrm{cl})$ 을 **프리기하(pregeometry)** 라 한다.
 
 - $A\subseteq\mathrm{cl}(A)$ 이고 $\mathrm{cl}(\mathrm{cl}(A))=\mathrm{cl}(A)$ 이다.
 - $A\subseteq B$ 이면 $\mathrm{cl}(A)\subseteq\mathrm{cl}(B)$ 이다.
 - $b\in\mathrm{cl}(A)$ 이면 유한한 $A_0\subseteq A$ 가 있어 $b\in\mathrm{cl}(A_0)$ 이다.
 - $b\in\mathrm{cl}(A\cup\lbrace c\rbrace)\setminus\mathrm{cl}(A)$ 이면 $c\in\mathrm{cl}(A\cup\lbrace b\rbrace)$ 이다.
 
-넷째가 교환법칙이고, 이것으로 극대 독립집합의 크기가 하나로 정해진다. 그 크기가 **차원** $\dim$ 이다. 강최소 집합에서는 $\mathrm{cl}=\mathrm{acl}$ 이 프리기하를 이룬다.
+넷째가 교환법칙이고, 이것으로 극대 독립집합의 크기가 하나로 정해진다. 그 크기가 **차원(dimension)** $\dim$ 이다. 강최소 집합에서는 $\mathrm{cl}=\mathrm{acl}$ 이 프리기하를 이룬다. 직관 절의 세 예에서 $\mathrm{cl}$ 은 차례로 $A\mapsto A$, 생성 부분공간, 대수적 폐포이고, 차원은 원소 개수, 선형 차원, 초월차수다.
 
-$\mathrm{cl}(\emptyset)=\emptyset$ 이고 모든 $a$ 에서 $\mathrm{cl}(\lbrace a\rbrace)=\lbrace a\rbrace$ 이면 **기하**라 한다. 프리기하는 $\mathrm{cl}(\emptyset)$ 을 버리고 폐포가 같은 점들을 한 점으로 묶어 기하로 바꾼다.
+$\mathrm{cl}(\emptyset)=\emptyset$ 이고 모든 $a$ 에서 $\mathrm{cl}(\lbrace a\rbrace)=\lbrace a\rbrace$ 이면 **기하(geometry)** 라 한다. 프리기하는 $\mathrm{cl}(\emptyset)$ 을 버리고 폐포가 같은 점들을 한 점으로 묶어 기하로 바꾼다. 벡터공간에서는 영벡터를 버리고 같은 직선 위의 벡터를 묶으므로 사영공간이 나온다.
 
 ## 자명, 모듈러, 국소 모듈러
 
 프리기하 $(D,\mathrm{cl})$ 에 세 조건을 둔다.
 
-- 모든 $A$ 에서 $\mathrm{cl}(A)=\bigcup_{a\in A}\mathrm{cl}(\lbrace a\rbrace)$ 이면 **자명**하다.
-- 유한차원 닫힌집합 $X,Y$ 마다 $\dim\mathrm{cl}(X\cup Y)+\dim(X\cap Y)=\dim X+\dim Y$ 이면 **모듈러**다.
-- 어떤 $a\in D$ 에 대해 $\mathrm{cl}\_a(A)=\mathrm{cl}(A\cup\lbrace a\rbrace)$ 가 모듈러이면 **국소 모듈러**다.
+- 모든 $A$ 에서 $\mathrm{cl}(A)=\bigcup_{a\in A}\mathrm{cl}(\lbrace a\rbrace)$ 이면 **자명(trivial)** 하다.
+- 유한차원 닫힌집합 $X,Y$ 마다 $\dim\mathrm{cl}(X\cup Y)+\dim(X\cap Y)=\dim X+\dim Y$ 이면 **모듈러(modular)** 다.
+- 어떤 $a\in D$ 에 대해 $\mathrm{cl}\_a(A)=\mathrm{cl}(A\cup\lbrace a\rbrace)$ 가 모듈러이면 **국소 모듈러(locally modular)** 다.
 
-자명한 기하는 모듈러이고, 모듈러 기하는 국소 모듈러다.
+자명한 기하는 모듈러이고, 모듈러 기하는 국소 모듈러다. 상등만 갖춘 집합은 자명하고, 벡터공간은 직관 절의 차원 등식대로 모듈러이며 자명하지 않다. 대수적으로 닫힌 체는 직관 절의 $X$, $Y$ 에서 등식이 깨지므로 모듈러가 아니고, 한 점을 고정해도 같은 계산이 되풀이되어 국소 모듈러도 아니다.
 
 ## 삼분법의 진술
 
-강최소 집합 $D$ 의 기하에 대한 다음 진술이 **Zilber 삼분법**이다. $D$ 의 기하는 자명하거나, 어떤 나눗셈환 위 벡터공간의 부분공간 기하와 같거나, 대수적으로 닫힌 체 $K$ 위에서 $K$ 의 대수적 폐포가 주는 기하와 같다. 세 갈래는 차례로 국소 모듈러의 두 경우와 그 여집합에 해당한다.
+강최소 집합 $D$ 의 기하에 대한 다음 진술이 Zilber 삼분법이다. $D$ 의 기하는 자명하거나, 어떤 나눗셈환 위 벡터공간의 부분공간 기하와 같거나, 대수적으로 닫힌 체 $K$ 위에서 $K$ 의 대수적 폐포가 주는 기하와 같다. 세 갈래는 차례로 국소 모듈러의 두 경우와 그 여집합에 해당한다.
 
 # 성질
 
 ## 국소 모듈러 기하의 분류
 
-**정리.** 강최소 집합의 기하가 국소 모듈러이면 자명하거나, 어떤 나눗셈환 $F$ 위 벡터공간에서 유도된 사영공간의 기하와 같다.[^1]
+강최소 집합의 기하가 국소 모듈러이면 자명하거나, 어떤 나눗셈환 $F$ 위 벡터공간에서 유도된 사영공간의 기하와 같다.[^1]
 
-증명의 요지. 비자명한 국소 모듈러 기하에서는 차원 $2$ 인 닫힌집합 안에 차원 $1$ 짜리 부분들이 $1$ 차원 족을 이루고 놓인다. 이 족에 [군 배치 정리](group-configuration.md)를 적용해 정의 가능한 강최소 아벨군 $G$ 를 얻는다. $G$ 위의 정의 가능 자기준동형이 이루는 환 $F$ 는 나눗셈환이고, $G$ 를 $F$ 위 벡터공간으로 보면 원래 기하가 그 부분공간 기하와 같다. ∎
+증명의 요지. 비자명한 국소 모듈러 기하에서는 차원 $2$ 인 닫힌집합 안에 차원 $1$ 짜리 부분들이 $1$ 차원 족을 이루고 놓인다. 이 족에 [군 배치 정리](group-configuration.md)를 적용해 정의 가능한 강최소 아벨군 $G$ 를 얻는다. $G$ 위의 정의 가능 자기준동형이 이루는 환 $F$ 는 나눗셈환이고, $G$ 를 $F$ 위 벡터공간으로 보면 원래 기하가 그 부분공간 기하와 같다.
 
 ## Hrushovski 의 반례
 
-**정리.** 자명하지도 국소 모듈러도 아니면서 무한 체를 해석하지 않는 강최소 집합이 있다.[^2]
+자명하지도 국소 모듈러도 아니면서 무한 체를 해석하지 않는 강최소 집합이 있다.[^2]
 
-구성의 요지. 언어를 삼항 관계 $R$ 하나로 두고 유한 구조 $A$ 에 사전차원
+구성의 요지. 언어를 삼항 관계 $R$ 하나로 두고 유한 구조 $A$ 에 사전차원(predimension)
 
 $$
 \delta(A)=\vert A\vert-\vert R^A\vert
@@ -73,7 +69,7 @@ $$
 
 ## Zariski 기하 정리
 
-**정리.** 강최소 집합이 Zariski 기하이면 삼분법이 성립한다. 국소 모듈러가 아니면 대수적으로 닫힌 체 $K$ 가 해석되고 그 기하는 $K$ 위 대수곡선의 기하와 같다.[^3]
+강최소 집합이 Zariski 기하(Zariski geometry)이면 삼분법이 성립한다. 국소 모듈러가 아니면 대수적으로 닫힌 체 $K$ 가 해석되고 그 기하는 $K$ 위 대수곡선의 기하와 같다.[^3]
 
 Zariski 기하는 각 거듭제곱 $D^n$ 에 Noether 위상이 주어지고 다음 셋을 만족하는 강최소 집합이다. 좌표 사영과 대각집합이 닫혀 있다. 기약 닫힌집합의 사영은 닫힌집합에서 차원이 더 낮은 닫힌집합을 뺀 것을 포함한다. 기약 닫힌집합 $X,Y\subseteq D^n$ 의 성분마다 $\dim(X\cap Y)\ge\dim X+\dim Y-n$ 이 성립한다.
 
@@ -81,10 +77,10 @@ Zariski 기하는 각 거듭제곱 $D^n$ 에 Noether 위상이 주어지고 다�
 
 # 활용
 
-- **[Mordell–Lang 추측](mordell-lang.md)의 함수체 경우.** 분리적으로 닫힌 체와 [미분적으로 닫힌 체](differentially-closed-fields.md)에서 삼분법 유형의 분류를 적용해 준아벨 다양체의 부분다양체와 유한생성 부분군의 교차를 결정한다.[^4]
-- **Manin–Mumford 추측.** 차분체의 모형론에서 같은 방법이 아벨 다양체의 꼬임점과 곡선의 교차가 유한임을 준다.[^5]
-- **미분적으로 닫힌 체.** 표수 $0$ 인 미분적으로 닫힌 체의 이론에서 강최소 집합의 삼분법이 성립한다. 자명한 갈래에 상수체 밖의 일반해가, 체의 갈래에 상수체가 놓인다.
-- **o-최소 구조의 분류.** [o-최소성](o-minimality.md)을 만족하는 구조에서 대응하는 삼분법이 성립한다. 한 점 주변의 정의 가능 구조가 순서만 있는 경우, 순서 가군인 경우, [실폐체](real-closed-fields.md)가 해석되는 경우로 갈린다.[^6]
+- [Mordell–Lang 추측](mordell-lang.md)의 함수체 경우. 분리적으로 닫힌 체(separably closed field)와 [미분적으로 닫힌 체](differentially-closed-fields.md)에서 삼분법 유형의 분류를 적용해 준아벨 다양체(semiabelian variety)의 부분다양체와 유한생성 부분군의 교차를 결정한다.[^4]
+- Manin–Mumford 추측(Manin–Mumford conjecture). 차분체(difference field)의 모형론에서 같은 방법이 아벨 다양체(abelian variety)의 꼬임점(torsion point)과 곡선의 교차가 유한임을 준다.[^5]
+- 미분적으로 닫힌 체. 표수 $0$ 인 미분적으로 닫힌 체의 이론에서 강최소 집합의 삼분법이 성립한다. 자명한 갈래에 상수체 밖의 일반해가, 체의 갈래에 상수체가 놓인다.
+- o-최소 구조의 분류. [o-최소성](o-minimality.md)을 만족하는 구조에서 대응하는 삼분법이 성립한다. 한 점 주변의 정의 가능 구조가 순서만 있는 경우, 순서 벡터공간(ordered vector space)인 경우, [실폐체](real-closed-fields.md)가 해석되는 경우로 갈린다.[^6]
 
 [^1]: E. Hrushovski, "Locally modular regular types", *Classification Theory* (Chicago 1985), Lecture Notes in Math. **1292**, Springer (1987). 교재 서술은 A. Pillay, *Geometric Stability Theory*, Oxford (1996), 2장과 5장.
 [^2]: E. Hrushovski, "A new strongly minimal set", *Ann. Pure Appl. Logic* **62** (1993), 147–166.
