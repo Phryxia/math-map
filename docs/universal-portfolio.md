@@ -6,19 +6,19 @@
 
 # 직관
 
-T. M. Cover 가 1991 년에 제안했다.[^1]
-
-[Kelly 기준](kelly-criterion.md)은 수익률의 분포를 알 때 로그 성장률을 최대로 한다. 보편 포트폴리오는 분포를 모르는 채로, 사후에 본 최선의 고정 비율 포트폴리오와 같은 지수 성장률을 얻는다.
-
 현금과 주식 하나가 있다. 주식 가격은 매 기간 번갈아 $2$ 배가 되고 절반이 된다. 주식만 가지고 있거나 현금만 가지고 있으면 두 기간이 지날 때마다 돈이 처음과 같다.
 
 매 기간 초에 돈의 절반을 주식에, 절반을 현금에 두도록 다시 맞춘다. 주식이 $2$ 배가 되는 기간에는 돈이 $\frac12\cdot 2+\frac12\cdot 1=1.5$ 배, 절반이 되는 기간에는 $\frac12\cdot\frac12+\frac12\cdot 1=0.75$ 배가 된다. 두 기간마다 $1.5\cdot 0.75=1.125$ 배이므로 돈이 지수적으로 불어난다. 주식 비율 $b$ 로 맞추면 두 기간의 배율은 $(1+b)(1-b/2)$ 이고, 이것을 최대로 하는 $b$ 가 $1/2$ 이다.
 
-그런데 가격이 어떻게 움직일지 미리 알아야 $b=1/2$ 를 고를 수 있다. 그래서 돈을 잘게 나누어 가능한 모든 $b$ 에 하나씩 맡기고, 각각을 비율 $b$ 로 따로 굴린다. 전체 돈은 모든 $b$ 의 결과를 평균한 것이다. 최선의 $b$ 근처에 맡긴 몫이 지수적으로 불어나므로 평균도 같은 지수 속도로 불어난다.
+가격 변화의 분포를 알면 [Kelly 기준](kelly-criterion.md)으로 $b$ 를 고르지만, 가격이 어떻게 움직일지 모르면 $b=1/2$ 를 미리 고를 수 없다. 그래서 돈을 잘게 나누어 가능한 모든 $b$ 에 하나씩 맡기고, 각각을 비율 $b$ 로 따로 굴린다. 전체 돈은 모든 $b$ 의 결과를 평균한 것이다. 최선의 $b$ 근처에 맡긴 몫이 지수적으로 불어나므로 평균도 같은 지수 속도로 불어난다.
 
 # 정의
 
-자산이 $m$ 개이고 기간 $k$ 의 가격 상대값을 $x_k\in\mathbb R_{\gt 0}^m$ 이라 한다. $x_{k,j}$ 는 자산 $j$ 의 기간 말 가격을 기간 초 가격으로 나눈 값이다. 포트폴리오는 단체 $\Delta_m=\lbrace b\in\mathbb R_{\ge 0}^m:\sum_jb_j=1\rbrace$ 의 점이다.
+## 가격 상대값과 포트폴리오
+
+자산이 $m$ 개일 때 기간 $k$ 의 **가격 상대값(price relative)** 은 $x_k\in\mathbb R_{\gt 0}^m$ 이고, $x_{k,j}$ 는 자산 $j$ 의 기간 말 가격을 기간 초 가격으로 나눈 값이다. **포트폴리오(portfolio)** 는 단체(simplex) $\Delta_m=\lbrace b\in\mathbb R_{\ge 0}^m:\sum_jb_j=1\rbrace$ 의 점이고, 기간 $k$ 에 돈은 $b\cdot x_k$ 배가 된다. 직관 절에서 자산은 주식과 현금이고 $x_k$ 는 $(2,1)$ 과 $(1/2,1)$ 이 번갈아 온다. $b=(1/2,1/2)$ 이면 $b\cdot x_1=1.5$, $b\cdot x_2=0.75$ 다.
+
+## 고정 비율 포트폴리오
 
 매 기간 같은 $b$ 로 다시 맞추는 전략을 **고정 비율 포트폴리오(constant rebalanced portfolio)** 라 한다. $n$ 기간 뒤의 돈은
 
@@ -26,7 +26,9 @@ $$
 S_n(b)=\prod_{k=1}^n b\cdot x_k
 $$
 
-이고, 사후에 본 최선의 값을 $S_n^\ast=\max_{b\in\Delta_m}S_n(b)$ 로 쓴다.
+이고, 사후에 본 최선의 값을 $S_n^\ast=\max_{b\in\Delta_m}S_n(b)$ 로 쓴다. 직관 절의 가격열에서 $S_2(b)=(1+b\_1)(1-b\_1/2)$ 이고 $S_2^\ast=S_2((1/2,1/2))=9/8$ 이다.
+
+## 보편 포트폴리오
 
 **보편 포트폴리오** 는 기간 $k+1$ 에 비율
 
@@ -34,19 +36,27 @@ $$
 \hat b_{k+1}=\frac{\int_{\Delta_m}b\thinspace S_k(b)\thinspace db}{\int_{\Delta_m}S_k(b)\thinspace db}
 $$
 
-을 쓰는 전략이다. 적분은 $\Delta_m$ 위의 [균등분포](uniform-distribution.md)에 대한 것이고, $\hat b_1$ 은 균등 비율이다.
+을 쓰는 전략이다. 적분은 $\Delta_m$ 위의 [균등분포](uniform-distribution.md)에 대한 것이고, $\hat b_1$ 은 균등 비율이다. T. M. Cover 가 1991 년에 제안했다.[^1]
+
+직관 절의 예에서 주식 비율을 $\beta=b\_1$ 로 쓰면 $\beta$ 는 $\lbrack 0,1\rbrack$ 에서 균등하고 $\hat b_1=(1/2,1/2)$ 이다. 첫 기간에 주식이 $2$ 배가 되면 $S_1(b)=1+\beta$ 이므로, 둘째 기간의 주식 비율은 다음과 같다.
+
+$$
+\frac{\int_0^1\beta(1+\beta)\thinspace d\beta}{\int_0^1(1+\beta)\thinspace d\beta}=\frac{5/6}{3/2}=\frac59
+$$
 
 # 성질
 
 ## 평균의 항등식
 
-**명제.** 보편 포트폴리오의 돈은 $\hat S_n=\int_{\Delta_m}S_n(b)\thinspace db$ 이다. 적분은 균등분포에 대한 평균이다.
+보편 포트폴리오의 돈은 $\hat S_n=\int_{\Delta_m}S_n(b)\thinspace db$ 이다. 적분은 균등분포에 대한 평균이다.
 
 $k$ 에 대한 귀납법이다. $\hat b_{k+1}\cdot x_{k+1}=\int S_k(b)\thinspace(b\cdot x_{k+1})\thinspace db/\int S_k(b)\thinspace db=\int S_{k+1}(b)\thinspace db/\int S_k(b)\thinspace db$ 이므로 곱이 망원곱으로 줄어든다. $\square$
 
+직관 절의 예에서 첫 기간 뒤의 돈은 $\hat b_1\cdot x_1=1.5$ 이고 $\int_0^1(1+\beta)\thinspace d\beta=3/2$ 와 같다.
+
 ## 후회의 상한
 
-**정리 (Cover).** 모든 가격열 $x_1,\dots,x_n$ 에 대해
+Cover 의 정리. 모든 가격열 $x_1,\dots,x_n$ 에 대해
 
 $$
 \frac{\hat S_n}{S_n^\ast}\ge\frac{1}{e\thinspace(n+1)^{m-1}}
