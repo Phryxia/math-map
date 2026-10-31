@@ -6,19 +6,11 @@
 
 # 직관
 
-호모토피 타입 이론은 타입을 공간으로, 등식의 증명을 경로로 읽는 타입 이론이다. [Curry–Howard 대응](curry-howard.md)이 명제를 타입으로 보았다면, 여기서는 타입 $A$ 의 두 항 $a,b$ 에 대한 등식 타입 $a=\_A b$ 의 항을 $a$ 에서 $b$ 로 가는 경로로 본다.
-
-$$
-\text{타입}=\text{공간},\qquad \text{항}=\text{점},\qquad a=\_A b\ \text{의 항}=\text{경로}
-$$
-
-일가성 공리는 두 타입 사이의 동치를 그 둘의 등식과 같은 것으로 삼는다. 이 공리 아래 동형인 구조는 모든 성질을 공유하므로, 구조를 동형까지만 지정하는 수학의 관행이 형식 체계 안의 정리가 된다.
-
-$2+2=4$ 를 증명하는 항은 계산 하나다. 이 등식의 항을 둘 만들어도 둘이 서로 같음을 다시 증명할 수 있다. 등식의 증명이 하나뿐인 타입을 집합이라 한다.
+[Curry–Howard 대응](curry-howard.md)으로 명제를 타입으로, 증명을 그 타입의 항으로 본다. $2+2=4$ 를 증명하는 항은 계산 하나다. 이 등식의 항을 둘 만들어도 둘이 서로 같음을 다시 증명할 수 있다. 등식의 증명이 하나뿐인 타입을 집합이라 한다.
 
 모든 타입이 집합은 아니다. 타입 $A$ 와 $B$ 사이에 서로 역인 함수 $f\colon A\to B$ 와 $g\colon B\to A$ 가 있을 때 $A=B$ 를 증명하려고 한다. 등식도 타입이므로 그 항을 만들어야 한다. 타입 이론의 규칙은 $A$ 와 $B$ 가 같은 꼴로 지어진 경우에만 항을 주고, $f$ 와 $g$ 에서 $A=B$ 의 항을 짓는 규칙은 없다.
 
-그래서 그 항을 공리로 넣는다. 이것이 일가성 공리이고, $A\simeq B$ 의 항마다 $A=B$ 의 항이 하나 대응한다.
+그래서 그 항을 공리로 넣는다. 이것이 일가성 공리(univalence axiom)이고, $A\simeq B$ 의 항마다 $A=B$ 의 항이 하나 대응한다.
 
 공리를 넣으면 등식 타입의 항이 여럿이 된다. 두 원소 타입 $\mathbf 2$ 에서 $\mathbf 2\simeq\mathbf 2$ 의 항은 항등사상과 두 원소를 맞바꾸는 사상 둘이므로, $\mathbf 2=\mathbf 2$ 의 항도 둘이다. 등식의 증명이 하나뿐이라는 성질은 더 이상 쓸 수 없다.
 
@@ -28,21 +20,23 @@ $2+2=4$ 를 증명하는 항은 계산 하나다. 이 등식의 항을 둘 만�
 
 ## 등식 타입
 
-타입 $A$ 와 그 항 $a,b$ 에 대해 등식 타입 $a=\_A b$ 를 둔다. 항을 짓는 규칙은 반사성 하나다.
+타입 $A$ 와 그 항 $a,b$ 에 대해 **등식 타입(identity type)** $a=\_A b$ 를 둔다. 항을 짓는 규칙은 반사성(reflexivity) 하나다.
 
 $$
 \mathrm{refl}\_a\colon a=\_A a
 $$
 
-등식 타입을 쓰는 규칙은 경로 유도(J 규칙)다. $a$ 를 고정하고 $x\colon A$ 와 $p\colon a=\_A x$ 에 의존하는 타입족 $C(x,p)$ 에 대해, $C(a,\mathrm{refl}\_a)$ 의 항 하나를 주면 모든 $x,p$ 에서 $C(x,p)$ 의 항이 나온다.
+$2+2$ 와 $4$ 는 계산으로 같은 항이 되므로 $\mathrm{refl}\_4\colon 2+2=\_{\mathbb N}4$ 다. 등식 타입을 쓰는 규칙은 **경로 유도(path induction)** 이고 J 규칙이라고도 한다. $a$ 를 고정하고 $x\colon A$ 와 $p\colon a=\_A x$ 에 의존하는 타입족 $C(x,p)$ 에 대해, $C(a,\mathrm{refl}\_a)$ 의 항 하나를 주면 모든 $x,p$ 에서 $C(x,p)$ 의 항이 나온다.
 
 $$
 \frac{c\colon C(a,\mathrm{refl}\_a)}{\mathrm{J}(c)\colon \prod\_{x\colon A}\prod\_{p\colon a=\_A x}C(x,p)}
 $$
 
+$C(x,p)$ 를 $x=\_A a$ 로 두고 $c=\mathrm{refl}\_a$ 를 주면, 경로 $p\colon a=x$ 마다 거꾸로 가는 경로 $x=a$ 가 나온다.
+
 ## 동치
 
-함수 $f\colon A\to B$ 가 동치라는 것은 모든 $b\colon B$ 에서 섬유 $\sum\_{a\colon A}(f(a)=\_B b)$ 가 수축 가능하다는 뜻이다. 수축 가능은 항 하나와 모든 항이 그것과 같다는 증명을 함께 갖춘 것을 말한다.
+함수 $f\colon A\to B$ 가 **동치(equivalence)** 라는 것은 모든 $b\colon B$ 에서 섬유 $\sum\_{a\colon A}(f(a)=\_B b)$ 가 수축 가능하다는 뜻이다. 타입이 **수축 가능(contractible)** 하다는 것은 항 하나와 모든 항이 그것과 같다는 증명을 함께 갖춘 것을 말한다. 두 원소 타입 $\mathbf 2$ 에서 두 원소를 맞바꾸는 사상은 각 원소의 섬유가 원소 하나뿐이라 동치다.
 
 $$
 \mathrm{isequiv}(f)\equiv\prod\_{b\colon B}\mathrm{isContr}\Bigl(\sum\_{a\colon A}f(a)=\_B b\Bigr),
@@ -52,15 +46,17 @@ $$
 
 ## 일가성 공리
 
-$\mathrm{refl}$ 에 경로 유도를 적용하면 사상 $\mathrm{idtoeqv}\colon (A=\_{\mathcal U}B)\to(A\simeq B)$ 를 얻는다. 여기서 $\mathcal U$ 는 타입들의 우주다. 일가성 공리는 이 사상이 동치라는 것이다.
+$\mathrm{refl}$ 에 경로 유도를 적용하면 사상 $\mathrm{idtoeqv}\colon (A=\_{\mathcal U}B)\to(A\simeq B)$ 를 얻는다. 여기서 $\mathcal U$ 는 타입들의 우주(universe)다. **일가성 공리** 는 이 사상이 동치라는 것이다.
 
 $$
 (A=\_{\mathcal U}B)\simeq(A\simeq B)
 $$
 
+이 공리 아래 $\mathbf 2$ 의 맞바꿈 동치에서 $\mathbf 2=\_{\mathcal U}\mathbf 2$ 의 항이 하나 나오고, 이 항은 $\mathrm{refl}\_{\mathbf 2}$ 와 다르다.
+
 ## 타입의 층위
 
-등식 타입이 수축 가능한 타입을 명제라 하고, 모든 등식 타입이 명제인 타입을 집합이라 한다. 이 정의를 반복하면 $n$ -타입의 층위가 나온다.
+등식 타입이 수축 가능한 타입을 **명제(proposition)** 라 하고, 모든 등식 타입이 명제인 타입을 **집합(set)** 이라 한다. 이 정의를 반복하면 $n$ -타입($n$-type)의 층위가 나온다. 원소 하나인 타입 $\mathbf 1$ 은 명제이고, 자연수 타입은 집합이다.
 
 $$
 \mathrm{isProp}(A)\equiv\prod\_{a,b\colon A}\mathrm{isContr}(a=\_A b),
