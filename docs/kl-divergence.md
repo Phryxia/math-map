@@ -2,63 +2,61 @@
 
 # 개요
 
-**KL divergence**(Kullback–Leibler divergence)는 두 확률분포가 얼마나 다른지를 재는 양이다. 앞면이 확률 $0.9$ 로 나오는 동전을 공정한 동전이라 믿고 결과를 비트로 적으면, 앞면과 뒷면에 똑같이 $1$ 비트씩 써서 한 번에 평균 $1$ 비트를 쓴다. 참 분포에 맞춰 적으면 한 번에 평균 약 $0.47$ 비트로 충분하다. KL divergence 는 틀린 분포를 믿어서 더 쓰는 평균 비트 수, 이 예에서는 약 $0.53$ 비트로 두 분포의 차이를 잰다.
+**KL divergence(Kullback–Leibler divergence)** 는 두 확률분포가 얼마나 다른지를 재는 양이다. 앞면이 확률 $0.9$ 로 나오는 동전을 공정한 동전이라 믿고 결과를 비트로 적으면, 앞면과 뒷면에 똑같이 $1$ 비트씩 써서 한 번에 평균 $1$ 비트를 쓴다. 참 분포에 맞춰 적으면 한 번에 평균 약 $0.47$ 비트로 충분하다. KL divergence 는 틀린 분포를 믿어서 더 쓰는 평균 비트 수, 이 예에서는 약 $0.53$ 비트로 두 분포의 차이를 잰다.
 
 # 직관
 
-참 분포가 $P$ 인데 $Q$ 라고 믿고 부호화할 때 낭비되는 평균 비트 수이고, [Shannon 엔트로피](entropy.md)와 단위가 같다. 대칭성과 삼각부등식이 성립하지 않으므로 거리가 아니다.
+앞면 $0.9$, 뒷면 $0.1$ 의 확률로 나오는 동전을 여러 번 던진 결과를 비트로 적는다. 결과를 묶어서 적으면 확률 $p(x)$ 인 결과에 평균 $-\log_2 p(x)$ 비트를 쓰는 부호가 가능하다. 앞면에 $0.152$ 비트, 뒷면에 $3.32$ 비트를 쓰므로 평균 길이는 $0.9\cdot0.152+0.1\cdot3.32\approx 0.47$ 비트이고, 이 값이 [Shannon 엔트로피](entropy.md)다.
 
-상호정보량은 결합분포와 주변분포의 곱 사이의 KL divergence 다. 두 [확률변수](random-variables.md)가 서로에 대해 알려 주는 정보의 양이고, 값이 $0$ 인 것과 두 변수가 독립인 것이 동치다. 상관계수가 $0$ 이어도 의존이 남는 경우가 있는 것과 다르다.
-
-참 분포 $P$ 에 최적화된 부호는 결과 $x$ 에 $-\log p(x)$ 비트를 배정하고 평균 길이가 엔트로피다. 분포를 $Q$ 로 잘못 알면 $-\log q(x)$ 비트를 쓰게 되고 평균 길이가 교차 엔트로피다. KL divergence 는 그 차이, 곧 낭비분이다.
+공정한 동전이라고 잘못 믿으면 두 결과에 $-\log_2 0.5=1$ 비트씩 쓰고 평균 $1$ 비트를 쓴다. 믿은 분포 $Q$ 로 짠 부호를 참 분포 $P$ 의 결과에 쓸 때의 평균 길이가 교차 엔트로피(cross entropy)다. 더 쓴 양은 결과마다의 차이 $\log_2\bigl(p(x)/q(x)\bigr)$ 를 $P$ 로 평균한 것이다.
 
 $$
-D(P\thinspace\Vert\thinspace Q) = \underbrace{\mathbb{E}\_{P}[-\log q]}\_{\text{교차 엔트로피}} - \underbrace{\mathbb{E}\_{P}[-\log p]}\_{\text{엔트로피}} .
+D(P\thinspace\Vert\thinspace Q) = \underbrace{\mathbb{E}\_{P}\lbrack -\log q\rbrack}\_{\text{교차 엔트로피}} - \underbrace{\mathbb{E}\_{P}\lbrack -\log p\rbrack}\_{\text{엔트로피}} .
 $$
 
-낭비는 음수일 수 없으므로 비음성이고, 기댓값을 $P$ 로만 잡으므로 $P$ 와 $Q$ 의 역할이 대칭이 아니다. $D(P\Vert Q)$ 는 $P$ 가 질량을 두는 곳에서 $Q$ 가 0 에 가까우면 폭발하므로, 이 방향을 최소화하면 $Q$ 가 $P$ 의 지지집합 전체를 덮는다. 반대 방향 $D(Q\Vert P)$ 를 최소화하면 $Q$ 가 $P$ 의 한 봉우리에 몰려도 손해가 없다.
+이 예에서는 $1-0.47=0.53$ 비트이고, 이 양이 KL divergence 다.
 
 # 정의
 
 ## KL divergence
 
-같은 표본공간 위의 두 분포 $P$ , $Q$ 에 대해, 이산인 경우
+같은 표본공간 위의 두 분포 $P$, $Q$ 의 KL divergence 는 이산인 경우 다음 값이다.
 
 $$
 D(P\thinspace\Vert\thinspace Q) = \sum_{x} p(x)\thinspace\log\frac{p(x)}{q(x)}
 $$
 
-로 정의한다. 관례로 $0\log(0/q)=0$ 이고, $p(x)\gt 0$ 인데 $q(x)=0$ 인 $x$ 가 있으면 값은 무한대다. 연속인 경우, 그리고 일반적인 [측도](measure.md) 공간에서는 [Radon–Nikodym 정리](radon-nikodym.md)가 주는 밀도로 쓴다.
+관례로 $0\log(0/q)=0$ 이고, $p(x)\gt 0$ 인데 $q(x)=0$ 인 $x$ 가 있으면 값은 무한대다. 로그의 밑이 2면 단위는 비트, 자연로그면 nat 이다.[^1] 직관 절의 동전은 $P=(0.9,0.1)$, $Q=(0.5,0.5)$ 이고 $D(P\Vert Q)=0.9\log_2 1.8+0.1\log_2 0.2\approx 0.763-0.232=0.531$ 비트다. **상대엔트로피(relative entropy)** 가 같은 양의 다른 이름이다.
+
+연속인 경우, 그리고 일반적인 [측도](measure.md) 공간에서는 [Radon–Nikodym 정리](radon-nikodym.md)가 주는 밀도로 쓴다.
 
 $$
 D(P\thinspace\Vert\thinspace Q) = \int \log\negthinspace\left(\frac{dP}{dQ}\right) dP ,
 $$
 
-단 $P$ 가 $Q$ 에 대해 절대연속일 때만 유한할 수 있다. 로그의 밑이 2면 단위는 비트, 자연로그면 nat 이다.[^1] **상대엔트로피**가 같은 양의 다른 이름이다.
+단 $P$ 가 $Q$ 에 대해 절대연속일 때만 유한할 수 있다.
 
-## 조건부 divergence 와 연쇄법칙
+## 조건부 divergence
 
-결합분포에 대해서는 다음 연쇄법칙이 성립한다.
+결합분포 $P\_{XY}$, $Q\_{XY}$ 의 **조건부 divergence(conditional divergence)** 는 $X=x$ 일 때의 조건부 분포끼리의 KL divergence 를 $P\_X$ 로 평균한 값이다.
 
 $$
-D(P_{XY}\thinspace\Vert\thinspace Q_{XY}) = D(P_X\thinspace\Vert\thinspace Q_X) + \mathbb{E}\_{x \sim P_X}\big[ D(P_{Y|X=x}\thinspace\Vert\thinspace Q_{Y|X=x}) \big].
+D(P\_{Y\mid X}\thinspace\Vert\thinspace Q\_{Y\mid X}\mid P\_X) = \mathbb{E}\_{x \sim P\_X}\big\lbrack D(P\_{Y\mid X=x}\thinspace\Vert\thinspace Q\_{Y\mid X=x}) \big\rbrack
 $$
+
+$X$ 가 공정한 동전이고, $X=0$ 일 때 $Y$ 가 $P$ 에서는 앞면 확률 $0.9$, $Q$ 에서는 $0.5$ 인 동전이며, $X=1$ 일 때는 두 분포가 같으면 조건부 divergence 는 $	frac12cdot0.531+	frac12cdot0approx 0.266$ 비트다.
 
 ## 상호정보량
 
-두 확률변수의 결합분포와 주변분포의 곱 사이의 divergence 로 정의한다.
+두 [확률변수](random-variables.md) $X$, $Y$ 의 **상호정보량(mutual information)** 은 결합분포와 주변분포의 곱 사이의 KL divergence 다.
 
 $$
-I(X;Y) = D\big(P_{XY}\thinspace\Vert\thinspace P_X \otimes P_Y\big) = \sum_{x,y} p(x,y) \log\frac{p(x,y)}{p(x)p(y)} .
+I(X;Y) = D\big(P\_{XY}\thinspace\Vert\thinspace P\_X \otimes P\_Y\big) = \sum_{x,y} p(x,y) \log\frac{p(x,y)}{p(x)p(y)} .
 $$
 
-엔트로피로 쓰면 다음 항등식들이 모두 같은 양을 가리킨다.
+공정한 동전 $X$ 에 대해 $Y=X$ 이면 $p(x,y)$ 가 $(0,0)$ 과 $(1,1)$ 에서 $1/2$ 이고 $p(x)p(y)=1/4$ 이므로 $I(X;Y)=\log_2 2=1$ 비트다. $Y$ 가 $X$ 와 독립인 공정한 동전이면 $p(x,y)=p(x)p(y)$ 라 $I(X;Y)=0$ 이다.
 
-$$
-I(X;Y) = H(X) - H(X\mid Y) = H(Y) - H(Y\mid X) = H(X) + H(Y) - H(X,Y).
-$$
-
-조건부 상호정보량은 다음과 같다.
+$Z$ 가 주어졌을 때의 **조건부 상호정보량(conditional mutual information)** 은 다음과 같다.
 
 $$
 I(X;Y\mid Z) = H(X\mid Z) - H(X\mid Y, Z).
@@ -66,11 +64,27 @@ $$
 
 # 성질
 
+## 연쇄법칙
+
+결합분포의 divergence 는 주변분포의 divergence 와 조건부 divergence 의 합이다.
+
+$$
+D(P\_{XY}\thinspace\Vert\thinspace Q\_{XY}) = D(P\_X\thinspace\Vert\thinspace Q\_X) + \mathbb{E}\_{x \sim P\_X}\big\lbrack D(P\_{Y\mid X=x}\thinspace\Vert\thinspace Q\_{Y\mid X=x}) \big\rbrack.
+$$
+
+## 상호정보량과 엔트로피
+
+상호정보량은 엔트로피로 다음과 같이 쓰인다.
+
+$$
+I(X;Y) = H(X) - H(X\mid Y) = H(Y) - H(Y\mid X) = H(X) + H(Y) - H(X,Y).
+$$
+
 ## Gibbs 부등식
 
-**정리.** $D(P\Vert Q) \ge 0$ 이고 등호는 $P = Q$ 일 때에만 성립한다.
+$D(P\Vert Q) \ge 0$ 이고 등호는 $P = Q$ 일 때에만 성립한다.
 
-*증명.* 로그가 오목함수이므로 [Jensen 부등식](jensen-inequality.md)을 쓴다([볼록성](convexity.md)). $P$ 의 지지집합 위에서
+증명. 로그가 오목함수이므로 [Jensen 부등식](jensen-inequality.md)을 쓴다([볼록성](convexity.md)). $P$ 의 지지집합 위에서
 
 $$
 -D(P\thinspace\Vert\thinspace Q) = \mathbb{E}\_{P}\negthinspace\left[\log \frac{q(X)}{p(X)}\right] \le \log \mathbb{E}\_{P}\negthinspace\left[\frac{q(X)}{p(X)}\right] = \log \sum_{x:\thinspace p(x)\gt 0} q(x) \le \log 1 = 0 .
@@ -78,7 +92,7 @@ $$
 
 첫 부등식의 등호는 로그의 순강한 오목성 때문에 비율 $q/p$ 가 $P$ 에 대해 거의 확실히 상수일 때에만, 둘째 등호는 $Q$ 가 $P$ 의 지지집합 밖에 질량을 두지 않을 때에만 성립한다. 두 조건을 합치면 $P=Q$ 다. ∎
 
-**따름정리.** 상호정보량은 0 이상이고, 0 인 것과 두 변수가 독립인 것이 동치다. 조건을 붙이면 엔트로피가 줄어든다.
+따름정리로 상호정보량은 0 이상이고, 0 인 것과 두 변수가 독립인 것이 동치다. 조건을 붙이면 엔트로피가 줄어든다.
 
 $$
 H(X \mid Y) \le H(X).
@@ -100,10 +114,12 @@ $$
 D(P\thinspace\Vert\thinspace R) \approx 1.758 \thickspace\gt\thickspace D(P\thinspace\Vert\thinspace Q) + D(Q\thinspace\Vert\thinspace R) \approx 0.879
 $$
 
-이므로 삼각부등식도 성립하지 않는다. KL divergence 는 metric 이 아니므로 거리라 부르지 않는다. 남는 구조는 다음 셋이다.
+이므로 삼각부등식도 성립하지 않는다. KL divergence 는 metric 이 아니므로 거리라 부르지 않는다. 기댓값을 $P$ 로만 잡으므로 $P$ 와 $Q$ 의 역할이 대칭이 아니다. $D(P\Vert Q)$ 는 $P$ 가 질량을 두는 곳에서 $Q$ 가 0 에 가까우면 무한대로 커지므로, 이 방향을 $Q$ 에 대해 최소화하면 $Q$ 가 $P$ 의 지지집합 전체를 덮는다. 반대 방향 $D(Q\Vert P)$ 를 최소화하면 $Q$ 가 $P$ 의 한 봉우리에 몰려도 손해가 없다.
+
+거리 대신 다음이 성립한다.
 
 - 대칭화한 Jensen–Shannon divergence 의 제곱근은 실제로 metric 이다.
-- Pinsker 부등식이 총변동거리를 위에서 눌러 준다.[^2]
+- Pinsker 부등식(Pinsker's inequality)으로 총변동거리(total variation distance)가 위에서 눌린다.[^2]
 
 $$
 \Vert P - Q\Vert_{TV} \le \sqrt{\tfrac{1}{2} D(P\thinspace\Vert\thinspace Q)} .
@@ -127,7 +143,7 @@ $$
 I(X; Y_1, \ldots, Y_n) = \sum_{i=1}^{n} I(X; Y_i \mid Y_1,\ldots,Y_{i-1}).
 $$
 
-- 데이터 처리 부등식. $X\to Y\to Z$ 가 Markov 연쇄이면([Markov 연쇄](markov-chains.md))
+- 데이터 처리 부등식(data processing inequality). $X\to Y\to Z$ 가 [Markov 연쇄](markov-chains.md)이면
 
 $$
 I(X;Z) \le I(X;Y).
@@ -159,11 +175,11 @@ $$
 
 ## 가설검정에서의 지수
 
-단순 가설검정에서 오류 확률은 표본 크기에 대해 지수적으로 감소하고 그 지수가 KL divergence 다(Stein 보조정리). 경험분포가 어떤 집합에 들어갈 확률의 지수 감쇠율을 주는 Sanov 정리도 같은 양을 쓴다. [가설검정](hypothesis-testing.md)과 대편차 이론이 이 양을 단위로 삼는다.
+단순 가설검정에서 오류 확률은 표본 크기에 대해 지수적으로 감소하고 그 지수가 KL divergence 다. 이것이 Stein 보조정리(Stein's lemma)다. 경험분포가 어떤 집합에 들어갈 확률의 지수 감쇠율을 주는 Sanov 정리(Sanov's theorem)도 같은 양을 쓴다. [가설검정](hypothesis-testing.md)과 [대편차 원리](large-deviations.md)가 이 양을 단위로 쓴다.
 
 ## 특징 선택과 표현 학습
 
-상호정보량은 비선형 의존까지 잡으므로 특징 선택의 기준으로 쓰인다. 결정트리의 정보 이득이 분할 변수와 라벨 사이의 상호정보량이다. 표현 학습에서는 표현과 라벨 사이의 상호정보량을 키우고 표현과 입력의 잉여 정보를 줄이는 정보 병목 관점을 쓴다. 고차원 연속 변수에서는 표본 추정이 어렵고 추정량의 분산이 크다.
+상호정보량은 비선형 의존까지 잡으므로 특징 선택의 기준으로 쓰인다. 결정트리의 정보 이득이 분할 변수와 라벨 사이의 상호정보량이다. 표현 학습에서는 표현과 라벨 사이의 상호정보량을 키우고 표현과 입력의 잉여 정보를 줄이는 [정보 병목](information-bottleneck.md)을 쓴다. 고차원 연속 변수에서는 표본 추정이 어렵고 추정량의 분산이 크다.
 
 [^1]: Wikipedia, "Kullback–Leibler divergence", https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence
 [^2]: Wikipedia, "Pinsker's inequality", https://en.wikipedia.org/wiki/Pinsker%27s_inequality
