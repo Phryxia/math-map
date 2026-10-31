@@ -6,10 +6,6 @@
 
 # 직관
 
-트라이는 문자열 집합을 뿌리 있는 트리에 저장하되, 각 간선에 글자 하나를 붙이고 뿌리에서 마디까지의 경로가 읽는 글자들이 그 마디가 나타내는 접두사가 되게 한 자료구조다. 길이 $\ell$ 인 문자열을 찾고 넣는 데 집합의 크기와 관계없이 마디 $\ell$ 개를 지난다. de la Briandais 가 1959 년에 제안했고, 이름은 Fredkin 이 retrieval 에서 땄다[^1].
-
-트라이는 [그래프](graphs.md)의 트리이고, 같은 접두사를 가진 문자열들이 한 경로를 함께 쓴다.
-
 단어 $\mathtt{to}, \mathtt{tea}, \mathtt{ten}, \mathtt{in}$ 을 사전에 넣는다. 정렬된 배열에 두고 이진 탐색을 하면 비교마다 두 단어를 앞 글자부터 대조하므로, 단어 수가 늘수록 비교 횟수가 늘고 비교마다 같은 앞 글자 $\mathtt{te}$ 를 되풀이해 읽는다.
 
 $\mathtt{tea}$ 와 $\mathtt{ten}$ 은 $\mathtt{te}$ 까지 같으므로 그 부분을 한 번만 적고 셋째 글자에서 갈라지게 한다. 뿌리에서 $\mathtt t$ 와 $\mathtt i$ 로 가는 간선을 두고, $\mathtt t$ 아래에 $\mathtt o$ 와 $\mathtt e$, $\mathtt e$ 아래에 $\mathtt a$ 와 $\mathtt n$ 을 둔다. $\mathtt{ten}$ 을 찾으려면 뿌리에서 $\mathtt t, \mathtt e, \mathtt n$ 간선을 차례로 따라가면 되고, 다른 단어와 비교하지 않는다.
@@ -18,13 +14,17 @@ $\mathtt{tea}$ 와 $\mathtt{ten}$ 은 $\mathtt{te}$ 까지 같으므로 그 부�
 
 ## 트라이
 
-알파벳 $\Sigma$ 위의 유한 문자열 집합 $S$ 의 트라이는 다음을 만족하는 뿌리 있는 트리다.
+알파벳 $\Sigma$ 위의 유한 문자열 집합 $S$ 의 트라이는 다음을 만족하는 [그래프](graphs.md)의 뿌리 있는 트리다. de la Briandais 가 1959 년에 제안했고, 이름은 Fredkin 이 retrieval 에서 땄다[^1].
 
 - 각 마디에서 자식으로 가는 간선마다 서로 다른 글자 $a\in\Sigma$ 가 붙어 있다.
 - 마디 $v$ 에 대해 뿌리에서 $v$ 까지의 경로가 읽는 문자열 $w(v)$ 는 $S$ 의 어떤 원소의 접두사이고, $S$ 의 원소의 모든 접두사가 이렇게 마디 하나씩으로 나타난다.
 - $w(v)\in S$ 인 마디 $v$ 에 끝 표시를 둔다.
 
+예. 직관 절의 $S=\lbrace\mathtt{to},\mathtt{tea},\mathtt{ten},\mathtt{in}\rbrace$ 의 트라이는 마디가 뿌리와 $\mathtt t,\mathtt{to},\mathtt{te},\mathtt{tea},\mathtt{ten},\mathtt i,\mathtt{in}$ 여덟 개이고, 끝 표시는 $\mathtt{to},\mathtt{tea},\mathtt{ten},\mathtt{in}$ 네 마디에 있다. $\mathtt{te}$ 는 마디가 있지만 끝 표시가 없다.
+
 찾기는 뿌리에서 글자마다 그 글자의 간선을 따라가고, 간선이 없거나 끝난 마디에 끝 표시가 없으면 실패한다. 넣기는 같은 경로를 따라가다 간선이 없는 자리부터 새 마디를 만든다.
+
+예. 앞 절의 트라이에서 $\mathtt{te}$ 를 찾으면 마디에 도착하지만 끝 표시가 없어 실패하고, $\mathtt{tex}$ 는 $\mathtt{te}$ 에서 $\mathtt x$ 간선이 없어 실패한다. $\mathtt{tent}$ 를 넣으면 $\mathtt{ten}$ 까지 기존 간선을 따라간 뒤 $\mathtt t$ 간선과 마디 하나를 새로 만든다.
 
 ```typescript
 class TrieNode {
