@@ -6,11 +6,9 @@
 
 # 직관
 
-복호 알고리즘은 공유한 키로 만들지 않은 암호문을 거절한다. [의미론적 안전성](semantic-security.md)은 암호문으로 평문을 알아내지 못한다는 조건일 뿐이고, 암호문을 고쳐 다른 평문으로 복호되게 하는 공격은 막지 않는다. 암호화 방식에 [메시지 인증 코드](message-authentication-codes.md)를 결합하면 두 성질을 함께 얻고, 그 결과는 선택 암호문 공격에 대해서도 안전하다[^1].
+앨리스와 밥이 키 $k$ 를 공유하고, 앨리스는 무작위 $r$ 을 골라 $(r,\thinspace F\_k(r)\oplus m)$ 을 보낸다. $F\_k$ 는 키로 정해지는 함수이고 키를 모르면 무작위 함수와 구별되지 않으므로, 이 방식은 [의미론적 안전성](semantic-security.md)을 가진다. 그러나 중간의 사람이 둘째 성분에 $\Delta$ 를 배타적 논리합해 넘기면 밥은 $m\oplus\Delta$ 를 받고, 평문을 모르는 사람이 평문을 원하는 만큼 고쳤다.
 
-앨리스와 밥이 키 $k$ 를 공유하고, 앨리스는 무작위 $r$ 을 골라 $(r,\thinspace F\_k(r)\oplus m)$ 을 보낸다. $F\_k$ 는 키로 정해지는 함수이고 키를 모르면 무작위 함수와 구별되지 않으므로, 이 방식은 의미론적으로 안전하다. 그러나 중간의 사람이 둘째 성분에 $\Delta$ 를 배타적 논리합해 넘기면 밥은 $m\oplus\Delta$ 를 받고, 평문을 모르는 사람이 평문을 원하는 만큼 고쳤다.
-
-그래서 앨리스는 다른 키 $k'$ 으로 MAC(message authentication code) 꼬리표를 붙인다. 평문의 꼬리표 $\mathrm{Mac}\_{k'}(m)$ 을 암호문 옆에 붙이면, 결정적인 꼬리표는 같은 평문에 언제나 같은 값이라 도청자가 두 메시지의 평문이 같은지 알아낸다. 평문에 꼬리표를 붙인 뒤 통째로 암호화하면 밥은 먼저 복호해야 꼬리표를 확인할 수 있어서, 복호 과정의 오류가 정보를 흘린다.
+그래서 앨리스는 다른 키 $k'$ 으로 [메시지 인증 코드](message-authentication-codes.md)(message authentication code, MAC) 꼬리표를 붙인다. 평문의 꼬리표 $\mathrm{Mac}\_{k'}(m)$ 을 암호문 옆에 붙이면, 결정적인 꼬리표는 같은 평문에 언제나 같은 값이라 도청자가 두 메시지의 평문이 같은지 알아낸다. 평문에 꼬리표를 붙인 뒤 통째로 암호화하면 밥은 먼저 복호해야 꼬리표를 확인할 수 있어서, 복호 과정의 오류가 정보를 흘린다.
 
 암호문 $c$ 의 꼬리표 $\mathrm{Mac}\_{k'}(c)$ 를 붙이면 밥은 복호하기 전에 바뀐 암호문을 거절하고, 이 순서가 앞의 두 문제를 모두 피한다.
 
@@ -20,7 +18,9 @@
 
 비밀키 암호화 방식은 확률적 다항시간 알고리즘 셋 $(\mathrm{Gen},\mathrm{Enc},\mathrm{Dec})$ 이다. $\mathrm{Gen}(1^n)$ 이 키 $k$ 를 내고, $\mathrm{Enc}(k,m)$ 은 난수를 써서 암호문을 내며, $\mathrm{Dec}(k,c)$ 는 평문이나 거절 기호 $\bot$ 을 낸다. 모든 $m$ 에 대해 $\mathrm{Dec}(k,\mathrm{Enc}(k,m))=m$ 이다.
 
-IND-CPA(indistinguishability under chosen-plaintext attack)와 IND-CCA2(indistinguishability under adaptive chosen-ciphertext attack)는 의미론적 안전성 문서의 게임에서 공개키를 주는 대신 공격자에게 $\mathrm{Enc}(k,\cdot)$ 오라클을 주어 정의한다.
+예. 직관 절의 방식은 $\mathrm{Enc}(k,m)=(r,\thinspace F\_k(r)\oplus m)$, $\mathrm{Dec}(k,(r,c))=F\_k(r)\oplus c$ 이고, $F\_k(r)\oplus F\_k(r)\oplus m=m$ 이므로 위 조건을 만족한다. 이 $\mathrm{Dec}$ 는 $\bot$ 을 내지 않는다.
+
+IND-CPA(indistinguishability under chosen-plaintext attack)와 IND-CCA2(indistinguishability under adaptive chosen-ciphertext attack)는 의미론적 안전성의 게임에서 공개키를 주는 대신 공격자에게 $\mathrm{Enc}(k,\cdot)$ 오라클을 주어 정의한다.
 
 ## 암호문 무결성
 
@@ -28,9 +28,11 @@ IND-CPA(indistinguishability under chosen-plaintext attack)와 IND-CCA2(indistin
 
 IND-CPA 이면서 INT-CTXT 인 방식이 인증 암호화다.
 
+예. 직관 절의 방식에서 $A$ 가 평문 하나를 맡겨 $(r,c)$ 를 받고 $c^\ast=(r,\thinspace c\oplus 1)$ 을 내면, $c^\ast$ 은 받은 적 없는 암호문이고 $\mathrm{Dec}(k,c^\ast)=m\oplus 1\ne\bot$ 이다. $A$ 가 확률 $1$ 로 이기므로 이 방식은 IND-CPA 이지만 인증 암호화가 아니다. 꼬리표 $\mathrm{Mac}\_{k'}(c)$ 를 붙이면 $c\oplus 1$ 의 꼬리표를 만들어야 이기므로 승리 확률이 MAC 의 위조 확률로 줄어든다.
+
 ## 연관 데이터가 있는 인증 암호화
 
-**연관 데이터가 있는 인증 암호화(authenticated encryption with associated data, AEAD)** 는 $\mathrm{Enc}(k,N,A,m)$ 과 $\mathrm{Dec}(k,N,A,c)$ 가 넌스(nonce) $N$ 과 연관 데이터 $A$ 를 함께 받는 방식이다[^2]. $A$ 는 감추지 않고 무결성만 보호하는 부분이고, 패킷 머리의 주소와 순번이 여기에 든다. 안전성 정의는 같은 $N$ 을 두 번 쓰지 않는 공격자에 대해서만 요구한다.
+**연관 데이터가 있는 인증 암호화(authenticated encryption with associated data, AEAD)** 는 $\mathrm{Enc}(k,N,A,m)$ 과 $\mathrm{Dec}(k,N,A,c)$ 가 넌스(nonce) $N$ 과 연관 데이터 $A$ 를 함께 받는 방식이다[^2]. $A$ 는 감추지 않고 무결성만 보호하는 부분이고, 패킷 머리의 주소와 순번이 여기에 든다. 예를 들어 패킷마다 순번을 $N$ 으로, 받는 주소를 $A$ 로 두면, 중간의 사람이 주소만 바꿔 다른 사람에게 보낸 패킷은 복호에서 $\bot$ 이 나온다. 안전성 정의는 같은 $N$ 을 두 번 쓰지 않는 공격자에 대해서만 요구한다.
 
 # 성질
 
