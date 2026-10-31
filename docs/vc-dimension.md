@@ -6,10 +6,6 @@
 
 # 직관
 
-VC 차원은 가설족이 표본 위에서 만들 수 있는 값 패턴이 모든 패턴에 닿는 가장 큰 표본 크기다. 이 수가 유한한 $d$ 이면 표본 크기 $n$ 의 패턴 개수가 $n^d$ 꼴로 묶이고, 무한하면 모든 $n$ 에서 $2^n$ 개가 나온다.
-
-패턴 개수가 다항식인지 지수인지가 일반화 경계의 수렴을 가른다. VC 차원은 그 갈림을 수 하나로 재고, 표본과 분포에 의존하지 않는다.
-
 가설족이 무한히 많은 함수를 담고 있어도 표본 위의 값 패턴만 세면 일반화 경계가 나온다. [Rademacher 복잡도](rademacher-complexity.md)에서 문턱 분류기족의 패턴이 $n+1$ 개였고 경계에 $\sqrt{\log(n+1)/n}$ 이 들어갔다. 가설족마다 이 개수를 세야 하는가.
 
 두 극단을 센다. 문턱족은 $n+1$ 개다. 표본점의 부분집합마다 가설을 하나 두는 족은 각 점에서 $0$ 과 $1$ 을 따로 정할 수 있어 $2^n$ 개다. 경계의 $\sqrt{\log(\text{패턴 개수})/n}$ 은 첫 경우 $0$ 으로 가고 둘째 경우 $\sqrt{\log 2}$ 에 머문다. 둘째 족에서는 훈련 자료에서 오차가 $0$ 인 가설을 늘 찾을 수 있고 새 자료에 대해 아무 말도 하지 못한다.
@@ -26,19 +22,19 @@ $\mathcal H$ 가 집합 $\mathcal X$ 에서 $\lbrace 0,1\rbrace$ 로 가는 함�
 
 $$\mathcal H\_C = \lbrace (h(x_1),\dots,h(x_m)) : h\in\mathcal H\rbrace$$
 
-이라 한다. $\mathcal H\_C$ 의 크기가 $2^m$ 이면 $\mathcal H$ 가 $C$ 를 **부순다**고 한다. 크기 $n$ 인 집합에서 나오는 패턴 개수의 최대값
+이라 한다. $\mathcal H\_C$ 의 크기가 $2^m$ 이면 $\mathcal H$ 가 $C$ 를 **부순다(shatter)** 고 한다. 크기 $n$ 인 집합에서 나오는 패턴 개수의 최대값
 
 $$\Pi\_{\mathcal H}(n) = \max\_{\vert C\vert = n}\vert\mathcal H\_C\vert$$
 
-이 **성장함수**다.
+이 **성장함수(growth function)** 다. 직관 절의 문턱족에서 점 하나의 집합은 패턴 $(0)$, $(1)$ 이 다 나와 부서진다. 점 두 개 $x_1\lt x_2$ 에서는 $\mathcal H\_C=\lbrace(0,0),(0,1),(1,1)\rbrace$ 라 부서지지 않고, $\Pi\_{\mathcal H}(2)=3$ 이다.
 
 ## VC 차원
 
-$\mathcal H$ 의 **VC 차원** $\mathrm{VCdim}(\mathcal H)$ 는 $\mathcal H$ 가 부수는 집합의 크기의 최대값이다.
+$\mathcal H$ 의 **VC 차원** $\mathrm{VCdim}(\mathcal H)$ 은 $\mathcal H$ 가 부수는 집합의 크기의 최대값이다.
 
 $$\mathrm{VCdim}(\mathcal H) = \max\lbrace n : \Pi\_{\mathcal H}(n) = 2^n\rbrace$$
 
-모든 $n$ 에서 $\Pi\_{\mathcal H}(n)=2^n$ 이면 VC 차원은 무한이다. 정의는 크기 $d$ 인 집합 하나가 부서지는 것만 요구하고, 크기 $d$ 인 모든 집합이 부서지는 것은 요구하지 않는다.
+모든 $n$ 에서 $\Pi\_{\mathcal H}(n)=2^n$ 이면 VC 차원은 무한이다. 정의는 크기 $d$ 인 집합 하나가 부서지는 것만 요구하고, 크기 $d$ 인 모든 집합이 부서지는 것은 요구하지 않는다. 문턱족은 $\Pi\_{\mathcal H}(1)=2$, $\Pi\_{\mathcal H}(2)=3$ 이므로 VC 차원이 $1$ 이다.
 
 ## 예
 
