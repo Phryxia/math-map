@@ -6,10 +6,6 @@
 
 # 직관
 
-두 부류를 가르는 초평면에서 가장 가까운 자료까지의 거리를 마진이라 하고, 마진 최대화는 선형 제약 아래 2차함수를 최소화하는 볼록 문제가 된다.
-
-[Lagrange 쌍대성](lagrange-duality.md)을 적용하면 해가 자료의 내적만으로 적히고, 마진 위에 놓인 자료점들의 선형결합으로 표현된다. 그 점들이 서포트 벡터다. 마진이 클 때 일반화 오차가 작다는 보장은 [Rademacher 복잡도](rademacher-complexity.md)에서 나온다.
-
 평면의 점들이 두 부류로 나뉘고 이들을 가르는 직선이 하나보다 많다. 어느 직선을 고르나.
 
 직선을 $\langle w,x\rangle+b=0$ 이라 쓰면 점 $x_i$ 에서 직선까지의 거리는 $\vert\langle w,x_i\rangle+b\vert/\Vert w\Vert$ 다. 자료를 모두 맞히는 직선마다 가장 가까운 자료까지의 거리를 재고, 그 값이 가장 큰 직선을 고른다. 재야 하는 값은
@@ -28,25 +24,29 @@ $w$ 와 $b$ 를 같은 양수로 곱하면 직선은 그대로이고 분자만 �
 
 표지가 $y_i\in\lbrace -1,+1\rbrace$ 인 자료 $(x_1,y_1),\dots,(x_n,y_n)$ 에 대해
 
-$$\min\_{w,b}\frac12\Vert w\Vert\_2^2 \quad \text{subject to}\quad y_i(\langle w,x_i\rangle+b)\ge 1\ \ (i=1,\dots,n)$$
+$$\min\_{w,b}\frac12\Vert w\Vert\_2^2 \quad \text{subject to}\quad y_i(\langle w,x_i\rangle+b)\ge 1\quad (i=1,\dots,n)$$
 
-이 **경성 마진** 문제다. 목적함수가 강볼록이고 제약이 선형이므로 실행가능영역이 비어 있지 않으면 해가 유일하다. 마진은 $1/\Vert w\Vert\_2$ 다.
+이 **경성 마진(hard margin)** 문제다. 해 $w$ 에 대해 $1/\Vert w\Vert\_2$ 를 **마진(margin)** 이라 한다. 점 $(1,0)$ 의 표지가 $+1$, 점 $(-1,0)$ 의 표지가 $-1$ 이면 해는 $w=(1,0)$, $b=0$ 이고 마진은 $1$ 이다. 두 점 모두 $y_i(\langle w,x_i\rangle+b)=1$ 로 제약의 등호를 만족한다.
 
 ## 연성 마진 문제
 
 자료를 모두 맞히는 초평면이 없을 때는 제약을 느슨하게 한다. 여유변수 $\xi_i\ge 0$ 와 상수 $C\gt 0$ 를 두고
 
-$$\min\_{w,b,\xi}\frac12\Vert w\Vert\_2^2 + C\sum_{i=1}^n\xi_i \quad \text{subject to}\quad y_i(\langle w,x_i\rangle+b)\ge 1-\xi_i,\ \ \xi_i\ge 0$$
+$$\min\_{w,b,\xi}\frac12\Vert w\Vert\_2^2 + C\sum_{i=1}^n\xi_i \quad \text{subject to}\quad y_i(\langle w,x_i\rangle+b)\ge 1-\xi_i,\quad \xi_i\ge 0$$
 
-을 **연성 마진** 문제라 한다. $C$ 가 크면 틀린 자료에 주는 벌점이 커지고, 작으면 마진을 넓게 잡는다.
+을 **연성 마진(soft margin)** 문제라 한다. 여유변수(slack variable) $\xi_i$ 는 자료점 $i$ 가 제약을 어긴 정도다. 위의 두 점에 표지 $+1$ 인 점 $(-0.5,0)$ 을 더하면 $w=(1,0)$, $b=0$ 에서 그 점은 $\xi=1.5$ 가 있어야 제약을 만족한다. $C$ 가 크면 틀린 자료에 주는 벌점이 커지고, 작으면 마진을 넓게 잡는다.
 
 ## 쌍대문제
 
-$$\max\_{\alpha}\ \sum_{i=1}^n\alpha_i-\frac12\sum_{i=1}^n\sum_{j=1}^n\alpha_i\alpha_j y_i y_j\langle x_i,x_j\rangle \quad \text{subject to}\quad 0\le\alpha_i\le C,\ \ \sum_{i=1}^n\alpha_i y_i=0$$
+$$\max\_{\alpha}\thinspace\sum_{i=1}^n\alpha_i-\frac12\sum_{i=1}^n\sum_{j=1}^n\alpha_i\alpha_j y_i y_j\langle x_i,x_j\rangle \quad \text{subject to}\quad 0\le\alpha_i\le C,\quad \sum_{i=1}^n\alpha_i y_i=0$$
 
-가 연성 마진 문제의 쌍대문제다. $\alpha_i\gt 0$ 인 자료점을 **서포트 벡터**라 한다.
+가 [Lagrange 쌍대성](lagrange-duality.md)으로 얻는 연성 마진 문제의 쌍대문제다. $\alpha_i\gt 0$ 인 자료점을 **서포트 벡터(support vector)** 라 한다. 경성 마진의 두 점 예에서 제약 $\alpha_1=\alpha_2=a$ 를 넣으면 목적함수가 $2a-2a^2$ 이고 $a=1/2$ 에서 최대다. 두 점이 모두 서포트 벡터이고 $w=\sum_i\alpha_iy_ix_i=(1,0)$ 이 원문제의 해와 같다.
 
 # 성질
+
+## 해의 유일성
+
+경성 마진 문제는 목적함수가 강볼록이고 제약이 선형이므로, 실행가능영역이 비어 있지 않으면 해가 유일하다.
 
 ## 쌍대문제의 유도
 
@@ -78,7 +78,7 @@ $$\min\_{w,b}\ \frac12\Vert w\Vert\_2^2+C\sum_{i=1}^n\max(0,1-y_i(\langle w,x_i\
 
 ## 일반화 경계
 
-노름이 $B$ 이하인 선형류의 Rademacher 복잡도가 $BR/\sqrt n$ 이고 마진 손실의 Lipschitz 상수가 $1/\rho$ 이므로, 마진 $\rho$ 로 자료를 가르는 분류기의 오분류율은 확률 $1-\delta$ 로
+노름이 $B$ 이하인 선형류의 [Rademacher 복잡도](rademacher-complexity.md)가 $BR/\sqrt n$ 이고 마진 손실의 Lipschitz 상수가 $1/\rho$ 이므로, 마진 $\rho$ 로 자료를 가르는 분류기의 오분류율은 확률 $1-\delta$ 로
 
 $$\frac{2BR}{\rho\sqrt n}+3\sqrt{\frac{\log(2/\delta)}{2n}}$$
 
