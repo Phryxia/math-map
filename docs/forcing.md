@@ -6,11 +6,7 @@
 
 # 직관
 
-강제법은 집합론의 한 모형에 새 집합을 더해 더 큰 모형을 만드는 방법이다. Cohen 이 연속체 가설의 독립성을 보이려고 1963년에 고안했다.
-
-더한 결과가 다시 ZFC(Zermelo–Fraenkel with choice)의 모형이 되고, 새 모형에서 무엇이 참인지를 더하기 전의 모형 안에서 판정할 수 있다. 이 두 성질이 강제법을 독립성 증명의 표준 도구로 만든다.
-
-[ZFC 공리계](zfc-axioms.md)의 추이 모형 $M$ 안에서 연속체 가설이 참이라 하자. 가설을 깨려면 [실수](real-numbers.md)를 더 넣어야 하는데, 넣으려는 실수는 $M$ 안에 없으므로 $M$ 의 언어로 지목할 수 없다. 실수 하나를 $0$ 과 $1$ 의 무한 비트열로 보면 $M$ 안에서 적을 수 있는 것은 유한 비트열이고, 유한 비트열 $p$ 뒤에 비트를 더 붙인 $q$ 는 $p$ 가 정한 자리를 모두 같게 두고 몇 자리를 더 정한다. 이렇게 늘려 가는 유한 비트열의 사슬 하나가 무한 비트열 하나를 완성한다.
+[ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)의 추이 모형(transitive model) $M$ 안에서 연속체 가설이 참이라 하자. 가설을 깨려면 [실수](real-numbers.md)를 더 넣어야 하는데, 넣으려는 실수는 $M$ 안에 없으므로 $M$ 의 언어로 지목할 수 없다. 실수 하나를 $0$ 과 $1$ 의 무한 비트열로 보면 $M$ 안에서 적을 수 있는 것은 유한 비트열이고, 유한 비트열 $p$ 뒤에 비트를 더 붙인 $q$ 는 $p$ 가 정한 자리를 모두 같게 두고 몇 자리를 더 정한다. 이렇게 늘려 가는 유한 비트열의 사슬 하나가 무한 비트열 하나를 완성한다.
 
 아무 사슬이나 늘리면 뒤를 전부 $0$ 으로 채운 것처럼 $M$ 에 이미 있는 비트열이 나온다. $M$ 안의 실수 $x$ 와 갈리려면 값이 다른 자리를 한 번은 지나야 하고 어떤 유한 비트열에서 출발하든 한 자리만 더 붙여 갈리게 할 수 있으므로, 어디서 출발해도 늘려서 도달할 수 있는 $M$ 안의 비트열 모임을 조밀하다고 한다. $M$ 을 가산으로 잡으면 조밀한 모임도 가산 개이므로 하나씩 차례로 지나게 해 사슬을 완성할 수 있고, 얻은 비트열은 $M$ 의 어느 실수와도 다르다. 사슬이 $M$ 안의 유한 비트열들로만 만들어졌으므로 각 유한 비트열이 사슬에 들어갈 때 새 우주에서 무엇이 성립하는지를 $M$ 안에서 계산할 수 있고, 이 조밀한 모임이 조밀집합, 사슬이 일반 필터, 계산되는 관계가 강제 관계다.
 
@@ -18,38 +14,46 @@
 
 ## 강제 순서
 
-**강제 순서**는 최대원 $1$ 을 가진 [부분순서](partial-orders.md) $(P, \le)$ 다. 원소를 **조건**이라 하고, $q \le p$ 를 $q$ 가 $p$ 보다 **강하다**고 읽는다. 강한 조건은 약한 조건이 정한 것을 모두 정하고 더 정한다.
+**강제 순서(forcing poset)** 는 최대원 $1$ 을 가진 [부분순서](partial-orders.md) $(P, \le)$ 다. Cohen 이 1963년에 연속체 가설의 독립성을 보이려고 이 방법을 고안했다. 원소를 **조건(condition)** 이라 하고, $q \le p$ 를 $q$ 가 $p$ 보다 **강하다(stronger)** 고 읽는다. 강한 조건은 약한 조건이 정한 것을 모두 정하고 더 정한다.
 
-두 조건 $p, q$ 는 $r \le p$ 이고 $r \le q$ 인 $r$ 이 있으면 **양립한다**고 한다. 서로 양립하지 않는 조건들의 집합이 **반사슬**이다.
+직관 절의 순서는 자연수의 유한 집합에서 $\lbrace 0,1\rbrace$ 로 가는 함수들을 포함의 역으로 순서 지은 것이고, 최대원은 빈 함수다. $p=\lbrace (0,1)\rbrace$ 는 $0$ 번 비트를 $1$ 로 정하고, $q=\lbrace (0,1),(3,0)\rbrace$ 는 $p$ 보다 강하다.
+
+두 조건 $p, q$ 는 $r \le p$ 이고 $r \le q$ 인 $r$ 이 있으면 **양립한다(compatible)** 고 한다. 서로 양립하지 않는 조건들의 집합이 **반사슬(antichain)** 이다.
+
+$p=\lbrace (0,1)\rbrace$ 와 $\lbrace (3,0)\rbrace$ 는 $q$ 가 둘보다 강하므로 양립한다. $\lbrace (0,0)\rbrace$ 와 $\lbrace (0,1)\rbrace$ 는 $0$ 번 비트를 다르게 정해 양립하지 않고, 이 둘의 집합은 반사슬이다.
 
 ## 조밀집합과 일반 필터
 
-$D \subseteq P$ 가 **조밀**하다는 것은 모든 $p \in P$ 에 대해 $q \le p$ 인 $q \in D$ 가 있다는 뜻이다.
+$D \subseteq P$ 가 **조밀(dense)** 하다는 것은 모든 $p \in P$ 에 대해 $q \le p$ 인 $q \in D$ 가 있다는 뜻이다. 위 예에서 $n$ 번 비트를 정하는 조건 전체 $D_n$ 은 조밀하다. 어떤 조건이든 $n$ 번 비트를 정하지 않았으면 그 비트를 더 정하면 된다.
 
-$G \subseteq P$ 가 **필터**라는 것은 다음 둘이 성립한다는 뜻이다.
+$G \subseteq P$ 가 **필터(filter)** 라는 것은 다음 둘이 성립한다는 뜻이다.
 
 - $p \in G$ 이고 $p \le q$ 이면 $q \in G$ 다.
 - $p, q \in G$ 이면 $r \le p$ 이고 $r \le q$ 인 $r \in G$ 가 있다.
 
-필터 $G$ 가 $M$ 에 속하는 모든 조밀집합 $D$ 에 대해 $G \cap D \neq \varnothing$ 을 만족하면 $M$ 위의 **일반 필터**라 한다.
+필터 $G$ 가 $M$ 에 속하는 모든 조밀집합 $D$ 에 대해 $G \cap D \neq \varnothing$ 을 만족하면 $M$ 위의 **일반 필터(generic filter)** 라 한다.
+
+무한 비트열 $x$ 의 유한 조각 전체 $\lbrace x\restriction n:n\in\omega\rbrace$ 는 필터다. 일반 필터 $G$ 는 모든 $D_n$ 과 만나므로 $G$ 의 원소들의 합집합 $g=\bigcup G$ 는 모든 자연수에서 정의된 비트열이고, $M$ 의 실수 $x$ 마다 $x$ 와 갈리는 조건 전체도 조밀하므로 $g$ 는 $M$ 에 없다.
 
 ## 이름과 확대 모형
 
-$P$ 에 대한 **이름**을 초한 재귀로 정의한다. $\tau$ 가 이름이라는 것은 $\tau$ 가 순서쌍 $(\sigma, p)$ 들의 집합이고 각 $\sigma$ 가 이름이며 각 $p$ 가 $P$ 의 조건이라는 뜻이다. 일반 필터 $G$ 가 주어지면 이름의 **값**을 다시 초한 재귀로 정한다.
+$P$ 에 대한 **이름(name)** 을 초한 재귀로 정의한다. $\tau$ 가 이름이라는 것은 $\tau$ 가 순서쌍 $(\sigma, p)$ 들의 집합이고 각 $\sigma$ 가 이름이며 각 $p$ 가 $P$ 의 조건이라는 뜻이다. 일반 필터 $G$ 가 주어지면 이름의 **값(interpretation)** 을 다시 초한 재귀로 정한다.
 
 $$
 \tau^G = \lbrace \sigma^G : (\sigma, p) \in \tau \thinspace\text{ 이고 }\thinspace p \in G \rbrace
 $$
 
-$M$ 에 속하는 이름 전체를 $M^P$ 라 쓰고, 그 값들의 모임이 **확대 모형**이다.
+$M$ 에 속하는 이름 전체를 $M^P$ 라 쓰고, 그 값들의 모임이 **확대 모형(generic extension)** 이다.
 
 $$
 M\lbrack G\rbrack = \lbrace \tau^G : \tau \in M^P \rbrace
 $$
 
+빈 집합 $\varnothing$ 은 이름이고 그 값은 $\varnothing$ 이다. $\tau=\lbrace (\varnothing,p)\rbrace$ 는 $p\in G$ 이면 값이 $\lbrace\varnothing\rbrace$ 이고, $p\notin G$ 이면 값이 $\varnothing$ 이다.
+
 ## 강제 관계
 
-조건 $p$ 와 이름들로 쓴 논리식 $\varphi$ 에 대해, $p$ 를 원소로 갖는 모든 일반 필터 $G$ 가 $M\lbrack G\rbrack \models \varphi$ 를 만족할 때 $p \Vdash \varphi$ 로 쓰고 $p$ 가 $\varphi$ 를 **강제한다**고 한다.
+조건 $p$ 와 이름들로 쓴 논리식 $\varphi$ 에 대해, $p$ 를 원소로 갖는 모든 일반 필터 $G$ 가 $M\lbrack G\rbrack \models \varphi$ 를 만족할 때 $p \Vdash \varphi$ 로 쓰고 $p$ 가 $\varphi$ 를 **강제한다(force)** 고 한다. 위 예에서 $p=\lbrace (0,1)\rbrace$ 는 "$g$ 의 $0$ 번 비트가 $1$ 이다" 를 강제하고, $\tau=\lbrace (\varnothing,p)\rbrace$ 에 대해 "$\tau$ 가 공집합이 아니다" 를 강제한다.
 
 ## Cohen 순서
 
@@ -59,21 +63,21 @@ $$
 \mathrm{Add}(\omega, \kappa) = \lbrace p : p \thinspace\text{ 는 } \kappa \times \omega \thinspace\text{ 의 유한 부분집합에서 } \lbrace 0, 1 \rbrace \thinspace\text{ 로 가는 함수} \rbrace
 $$
 
-순서는 포함의 역이다. $q \le p$ 는 $q \supseteq p$ 를 뜻한다.
+순서는 포함의 역이다. $q \le p$ 는 $q \supseteq p$ 를 뜻한다. $\kappa=1$ 이면 직관 절과 위 예의 순서이고, $\kappa$ 가 크면 비트열 $\kappa$ 개를 함께 만든다.
 
 # 성질
 
 ## 일반 모형 정리
 
-**정리.** $M$ 이 ZFC 의 가산 추이 모형이고 $G$ 가 $M$ 위의 일반 필터이면 $M\lbrack G\rbrack$ 은 ZFC 의 추이 모형이고, $M \subseteq M\lbrack G\rbrack$ 이며 $G \in M\lbrack G\rbrack$ 이고, 두 모형의 서수는 같다.
+일반 모형 정리(generic model theorem)는 다음이다. $M$ 이 ZFC 의 가산 추이 모형이고 $G$ 가 $M$ 위의 일반 필터이면 $M\lbrack G\rbrack$ 은 ZFC 의 추이 모형이고, $M \subseteq M\lbrack G\rbrack$ 이며 $G \in M\lbrack G\rbrack$ 이고, 두 모형의 서수는 같다.
 
 증명의 요지는 공리마다 필요한 이름을 $M$ 안에서 구성하는 것이다. 분리 공리와 치환 공리는 강제 관계가 $M$ 안에서 정의 가능하다는 아래 정리를 써서, 원하는 집합의 이름을 $M$ 안의 논리식으로 잘라 낸다. [선택공리](axiom-of-choice.md)는 $M$ 의 정렬을 이름 쪽으로 옮겨 얻는다. 서수가 늘지 않는 것은 이름의 값이 이름의 계수보다 높은 계수를 갖지 않기 때문이다.
 
 ## 정의 가능성과 진리
 
-**정리(정의 가능성).** 관계 $p \Vdash \varphi$ 는 $M$ 안에서 정의 가능하다.
+정의 가능성 정리(definability lemma)에 따르면 관계 $p \Vdash \varphi$ 는 $M$ 안에서 정의 가능하다.
 
-**정리(진리 보조정리).** $M\lbrack G\rbrack \models \varphi$ 인 것과 어떤 $p \in G$ 가 $p \Vdash \varphi$ 인 것이 동치다.[^1]
+진리 보조정리(truth lemma)에 따르면 $M\lbrack G\rbrack \models \varphi$ 인 것과 어떤 $p \in G$ 가 $p \Vdash \varphi$ 인 것이 동치다[^1].
 
 두 정리를 합치면 확대 모형에서 무엇이 참인지를 $M$ 안에서 판정할 수 있다. $M\lbrack G\rbrack$ 은 $M$ 밖에 있지만 그것에 대한 질문은 $M$ 안의 질문으로 번역된다. 강제법이 독립성 증명에 쓰이는 근거가 이 번역이다.
 
@@ -81,15 +85,13 @@ $$
 
 ## 일반 필터의 존재
 
-**정리(Rasiowa–Sikorski).** $M$ 이 가산이면 임의의 조건 $p$ 에 대해 $p \in G$ 인 $M$ 위의 일반 필터 $G$ 가 있다.
+Rasiowa–Sikorski 보조정리(Rasiowa–Sikorski lemma)는 다음이다. $M$ 이 가산이면 임의의 조건 $p$ 에 대해 $p \in G$ 인 $M$ 위의 일반 필터 $G$ 가 있다.
 
-$M$ 이 가산이므로 $M$ 안의 조밀집합을 $D_0, D_1, D_2, \dots$ 로 줄 세운다. $p_0 = p$ 에서 시작해 $p_{n+1}$ 을 $D_n$ 에 속하면서 $p_n$ 보다 강한 조건으로 잡는다. 조밀성이 매 단계의 선택을 보장한다. 이 사슬이 생성하는 필터가 일반 필터다. 가산 추이 모형의 존재는 [Löwenheim–Skolem 정리](lowenheim-skolem.md)와 추이 붕괴에서 나온다.
+$M$ 이 가산이므로 $M$ 안의 조밀집합을 $D_0, D_1, D_2, \dots$ 로 줄 세운다. $p_0 = p$ 에서 시작해 $p_{n+1}$ 을 $D_n$ 에 속하면서 $p_n$ 보다 강한 조건으로 잡는다. 조밀성이 매 단계의 선택을 보장한다. 이 사슬이 생성하는 필터가 일반 필터다. 가산 추이 모형의 존재는 [Löwenheim–Skolem 정리](lowenheim-skolem.md)와 추이 붕괴(transitive collapse)에서 나온다.
 
 ## 기수 보존
 
-$P$ 의 반사슬이 모두 가산이면 $P$ 가 **가산 반사슬 조건**(countable chain condition, ccc)을 만족한다고 한다.
-
-**정리.** $P$ 가 ccc 를 만족하면 $M$ 의 기수와 공종도가 $M\lbrack G\rbrack$ 에서도 그대로다.
+$P$ 의 반사슬이 모두 가산이면 $P$ 가 가산 반사슬 조건(countable chain condition, ccc)을 만족한다고 한다. $P$ 가 ccc 를 만족하면 $M$ 의 기수와 공종도가 $M\lbrack G\rbrack$ 에서도 그대로다.
 
 $\dot f$ 가 $M\lbrack G\rbrack$ 의 함수 $\alpha \to \beta$ 의 이름이라 하자. 각 $\xi \lt \alpha$ 에 대해 값의 후보를 모은다.
 
