@@ -6,36 +6,38 @@
 
 # 직관
 
-Δ 체계는 어느 두 집합의 교집합도 같은 하나의 집합인 집합족이고, 유한 판본이 [해바라기 보조정리](sunflower-lemma.md)의 해바라기다.
-
-해바라기 보조정리는 집합의 크기 $k$ 에 따라 족의 크기를 묶어야 하지만, 비가산 족에서는 크기가 같은 집합이 비가산 개 있으므로 그 묶음이 필요 없다. [강제법](forcing.md)에서 유한 조건으로 된 부분순서가 가산 반사슬 조건(countable chain condition)을 만족함을 증명하는 데 쓰인다.
-
 자연수의 유한 부분집합은 가산 개뿐이므로, 비가산 개의 유한집합은 $\omega_1$ 같은 더 큰 집합의 원소로 이루어진다. [기수](cardinality.md)의 성질로 비가산 족을 원소 개수에 따라 가산 개의 묶음으로 나누면 어느 한 묶음이 비가산이다. 그래서 모든 집합의 원소가 $n$ 개라고 두어도 된다.
 
 $n=2$ 이면 집합은 간선이다. 어떤 원소 $x$ 가 비가산 개의 간선에 들어 있으면 그 간선들이 $x$ 에서 뻗은 별이고 교집합이 모두 $\lbrace x\rbrace$ 다. 그런 원소가 없으면 모든 원소가 가산 개의 간선에만 들어 있다. 이때는 앞서 고른 가산 개의 간선과 겹치지 않는 간선을 하나씩 더 고르는 일을 $\omega_1$ 번 되풀이할 수 있다. 앞서 고른 간선의 원소는 가산 개이고 그것들을 지나는 간선도 가산 개이므로, 비가산 족에는 겹치지 않는 간선이 언제나 남는다.
 
 # 정의
 
-집합족 $\mathcal B$ 가 **Δ 체계(Δ-system)** 라는 것은 집합 $r$ 이 있어서 $\mathcal B$ 의 서로 다른 두 집합 $A,B$ 가 모두 $A\cap B=r$ 을 만족하는 것이다. $r$ 을 Δ 체계의 **뿌리(root)** 라 한다. 뿌리 밖의 부분 $A\setminus r$ 은 서로 겹치지 않는다.
+집합족 $\mathcal B$ 가 **Δ 체계(Δ-system)** 라는 것은 집합 $r$ 이 있어서 $\mathcal B$ 의 서로 다른 두 집합 $A,B$ 가 모두 $A\cap B=r$ 을 만족하는 것이다. $r$ 을 Δ 체계의 **뿌리(root)** 라 한다. 유한 족의 Δ 체계는 [해바라기 보조정리](sunflower-lemma.md)의 해바라기(sunflower)다.
+
+$\lbrace 1,2\rbrace,\lbrace 1,3\rbrace,\lbrace 1,4\rbrace$ 는 뿌리 $\lbrace 1\rbrace$ 의 Δ 체계다. 개요의 $\lbrace 0,r\rbrace$ ($0\lt r\lt 1$) 들은 뿌리 $\lbrace 0\rbrace$ 의 Δ 체계다. $\lbrace 1,2\rbrace,\lbrace 2,3\rbrace,\lbrace 3,4\rbrace$ 는 두 집합씩의 교집합이 $\lbrace 2\rbrace$, $\lbrace 3\rbrace$, $\varnothing$ 으로 달라 Δ 체계가 아니다.
 
 # 성질
 
+## 뿌리 밖의 부분
+
+Δ 체계에서 뿌리 밖의 부분 $A\setminus r$ 은 서로 겹치지 않는다. 위 예에서 $\lbrace 2\rbrace,\lbrace 3\rbrace,\lbrace 4\rbrace$ 가 그렇다.
+
 ## Δ 체계 보조정리
 
-정리. $\mathcal A$ 가 유한집합들로 된 비가산 족이면 $\mathcal A$ 의 비가산 부분족 가운데 Δ 체계인 것이 있다[^1].
+Δ 체계 보조정리는 다음이다. $\mathcal A$ 가 유한집합들로 된 비가산 족이면 $\mathcal A$ 의 비가산 부분족 가운데 Δ 체계인 것이 있다[^1].
 
-증명의 요지. $\lvert\mathcal A\rvert=\aleph_1$ 로 줄이고, 비가산 개의 집합이 같은 개수 $n$ 의 원소를 가지므로 모든 집합의 원소가 $n$ 개라고 둔다. $n$ 에 대한 귀납법이다. $n=1$ 이면 서로 다른 한 원소 집합들이 뿌리 $\varnothing$ 의 Δ 체계다. $n\gt 1$ 이고 어떤 $x$ 가 비가산 개의 집합에 들어 있으면, 그 집합들에서 $x$ 를 뺀 족에 귀납 가정을 적용하고 뿌리에 $x$ 를 더한다. 그런 $x$ 가 없으면 $\alpha\lt\omega_1$ 에 대한 초한 귀납으로, 앞서 고른 가산 개의 집합과 겹치지 않는 $A_\alpha\in\mathcal A$ 를 고른다. 앞서 고른 집합의 원소들을 포함하는 집합은 가산 개뿐이므로 $A_\alpha$ 가 존재하고, 고른 집합들이 뿌리 $\varnothing$ 의 Δ 체계다.
+증명의 요지는 다음과 같다. $\lvert\mathcal A\rvert=\aleph_1$ 로 줄이고, 비가산 개의 집합이 같은 개수 $n$ 의 원소를 가지므로 모든 집합의 원소가 $n$ 개라고 둔다. $n$ 에 대한 귀납법이다. $n=1$ 이면 서로 다른 한 원소 집합들이 뿌리 $\varnothing$ 의 Δ 체계다. $n\gt 1$ 이고 어떤 $x$ 가 비가산 개의 집합에 들어 있으면, 그 집합들에서 $x$ 를 뺀 족에 귀납 가정을 적용하고 뿌리에 $x$ 를 더한다. 그런 $x$ 가 없으면 $\alpha\lt\omega_1$ 에 대한 초한 귀납으로, 앞서 고른 가산 개의 집합과 겹치지 않는 $A_\alpha\in\mathcal A$ 를 고른다. 앞서 고른 집합의 원소들을 포함하는 집합은 가산 개뿐이므로 $A_\alpha$ 가 존재하고, 고른 집합들이 뿌리 $\varnothing$ 의 Δ 체계다.
 
 ## 일반 판본
 
-정리. $\kappa$ 가 정칙 비가산 기수이고 $\lambda\lt\kappa$ 이며 모든 $\mu\lt\kappa$ 에 대해 $\mu^{\lt\lambda}\lt\kappa$ 이면, 원소가 $\lambda$ 개 미만인 집합 $\kappa$ 개로 된 족은 크기 $\kappa$ 의 Δ 체계를 포함한다[^1].
+$\kappa$ 가 정칙 비가산 기수이고 $\lambda\lt\kappa$ 이며 모든 $\mu\lt\kappa$ 에 대해 $\mu^{\lt\lambda}\lt\kappa$ 이면, 원소가 $\lambda$ 개 미만인 집합 $\kappa$ 개로 된 족은 크기 $\kappa$ 의 Δ 체계를 포함한다[^1].
 
 $\lambda=\aleph_0$ 이면 조건 $\mu^{\lt\aleph_0}=\mu\lt\kappa$ 가 자동으로 성립하므로, 정칙 비가산 기수 $\kappa$ 개의 유한집합은 크기 $\kappa$ 의 Δ 체계를 포함한다.
 
 # 활용
 
-- [강제법](forcing.md)의 Cohen 강제. $\mathrm{Add}(\omega,\kappa)$ 의 조건은 정의역이 유한인 부분함수 $p:\kappa\times\omega\to 2$ 다. 조건 $\aleph_1$ 개가 주어지면 정의역들이 뿌리 $r$ 의 Δ 체계를 이루는 $\aleph_1$ 개를 뽑는다. $r$ 위의 함수 $r\to 2$ 는 유한 개뿐이므로 그 가운데 두 조건이 $r$ 위에서 같고, 두 조건의 합집합이 함수가 되어 양립한다. 따라서 반사슬은 가산이다.
-- [반복 강제법](iterated-forcing.md)의 유한지지 반복. 조건들의 지지에 Δ 체계 보조정리를 적용해, 뿌리 위에서는 각 단계의 가산 반사슬 조건으로 양립을 찾고 뿌리 밖에서는 조건을 이어 붙인다.
+- [강제법](forcing.md)의 Cohen 강제(Cohen forcing). $\mathrm{Add}(\omega,\kappa)$ 의 조건은 정의역이 유한인 부분함수 $p:\kappa\times\omega\to 2$ 다. 조건 $\aleph_1$ 개가 주어지면 정의역들이 뿌리 $r$ 의 Δ 체계를 이루는 $\aleph_1$ 개를 뽑는다. $r$ 위의 함수 $r\to 2$ 는 유한 개뿐이므로 그 가운데 두 조건이 $r$ 위에서 같고, 두 조건의 합집합이 함수가 되어 양립한다. 따라서 반사슬은 가산이고, 이 부분순서는 가산 반사슬 조건(countable chain condition)을 만족한다.
+- [반복 강제법](iterated-forcing.md)의 유한지지 반복(finite support iteration). 조건들의 지지에 Δ 체계 보조정리를 적용해, 뿌리 위에서는 각 단계의 가산 반사슬 조건으로 양립을 찾고 뿌리 밖에서는 조건을 이어 붙인다.
 
 [^1]: K. Kunen, *Set Theory: An Introduction to Independence Proofs*, North-Holland (1980), II 장 1 절.
 
