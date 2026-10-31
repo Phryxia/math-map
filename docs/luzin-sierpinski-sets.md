@@ -6,49 +6,47 @@
 
 # 직관
 
-Luzin 집합은 실직선의 비가산 부분집합 가운데 모든 제1범주 집합과 가산으로만 만나는 것이고, Sierpiński 집합은 모든 영집합과 가산으로만 만나는 것이다. [연속체 가설](continuum-hypothesis.md) 아래에서 둘 다 존재한다.
+실직선의 부분집합 가운데 어디에도 빽빽하지 않은(nowhere dense) 것을 셀 수 있는 개수만큼 모으면 제1범주 집합(set of first category)이 되고, [Baire 범주 정리](baire-category.md)는 이런 집합이 실직선 전체가 되지 못한다고 한다. 그러면 제1범주 집합을 하나 잡을 때마다 그 밖에 점이 남는다. 남는 점을 계속 집어 모으면 무엇이 되는지 본다.
 
-Luzin 집합은 [측도](measure.md)가 $0$ 이면서 제1범주가 아니고, Sierpiński 집합은 제1범주이면서 측도가 양이다. 두 집합은 [Erdős–Sierpiński 쌍대성](erdos-sierpinski-duality.md)의 쌍대 사상으로 서로 옮겨진다.
-
-실직선의 부분집합 가운데 어디에도 빽빽하지 않은 것을 셀 수 있는 개수만큼 모으면 제1범주 집합이 되고, [Baire 범주 정리](baire-category.md)는 이런 집합이 실직선 전체가 되지 못한다고 한다. 그러면 제1범주 집합을 하나 잡을 때마다 그 밖에 점이 남는다. 남는 점을 계속 집어 모으면 무엇이 되는지 본다.
-
-제1범주 집합 $M\_0$ 밖에서 점 $x\_0$ 을 집고, $M\_1$ 을 잡아도 $M\_0\cup M\_1$ 이 제1범주라 그 밖에서 $x\_1$ 을 집는다. 셀 수 있는 개수의 제1범주 집합을 합쳐도 제1범주이므로 이 절차는 막히지 않는다. 제1범주 집합은 실수 개만큼 있고 연속체 가설은 실수의 개수가 $\aleph\_1$ 이라고 하므로, 제1범주 집합을 $M\_\alpha$ $(\alpha\lt \omega\_1)$ 로 줄 세우고 단계 $\alpha$ 에서 $\bigcup\_{\beta\le\alpha}M\_\beta$ 밖에서 $x\_\alpha$ 를 집는다. 이렇게 모은 $L=\lbrace x\_\alpha : \alpha\lt \omega\_1\rbrace$ 가 크기 $\aleph\_1$ 의 비가산 집합이다.
+제1범주 집합 $M\_0$ 밖에서 점 $x\_0$ 을 집고, $M\_1$ 을 잡아도 $M\_0\cup M\_1$ 이 제1범주라 그 밖에서 $x\_1$ 을 집는다. 셀 수 있는 개수의 제1범주 집합을 합쳐도 제1범주이므로 이 절차는 막히지 않는다. 제1범주 집합은 실수 개만큼 있고 [연속체 가설](continuum-hypothesis.md)은 실수의 개수가 $\aleph\_1$ 이라고 하므로, 제1범주 집합을 $M\_\alpha$ $(\alpha\lt \omega\_1)$ 로 줄 세우고 단계 $\alpha$ 에서 $\bigcup\_{\beta\le\alpha}M\_\beta$ 밖에서 $x\_\alpha$ 를 집는다. 이렇게 모은 $L=\lbrace x\_\alpha : \alpha\lt \omega\_1\rbrace$ 가 크기 $\aleph\_1$ 의 비가산 집합이다.
 
 # 정의
 
-$L\subseteq\mathbb R$ 이 **Luzin 집합**이라 함은 $L$ 이 비가산이고 모든 제1범주 집합 $M$ 에 대해 $L\cap M$ 이 가산인 것이다.
+$L\subseteq\mathbb R$ 이 Luzin 집합이라 함은 $L$ 이 비가산이고 모든 제1범주 집합 $M$ 에 대해 $L\cap M$ 이 가산인 것이다.
 
-$S\subseteq\mathbb R$ 이 **Sierpiński 집합**이라 함은 $S$ 가 비가산이고 모든 Lebesgue 영집합 $N$ 에 대해 $S\cap N$ 이 가산인 것이다.
+$S\subseteq\mathbb R$ 이 Sierpiński 집합이라 함은 $S$ 가 비가산이고 모든 Lebesgue 영집합 $N$ 에 대해 $S\cap N$ 이 가산인 것이다.
 
 제1범주 집합의 족을 $\mathcal M$, 영집합의 족을 $\mathcal N$ 이라 쓴다. 두 정의는 $\mathcal M$ 과 $\mathcal N$ 을 맞바꾼 꼴이다.
+
+Cantor 집합은 비가산이고 제1범주이므로 $M$ 으로 Cantor 집합 자신을 잡으면 교집합이 비가산이다. 그래서 Cantor 집합을 포함하는 집합은 Luzin 집합이 아니고, Cantor 집합은 영집합이기도 하므로 Sierpiński 집합도 아니다. 실직선 전체도 Cantor 집합을 포함하므로 둘 다 아니다.
 
 # 성질
 
 ## 존재 정리
 
-**정리**(Luzin, Sierpiński)**.** 연속체 가설 아래에서 Luzin 집합과 Sierpiński 집합이 존재한다.[^1]
+Luzin 과 Sierpiński 의 정리로, 연속체 가설 아래에서 Luzin 집합과 Sierpiński 집합이 존재한다[^1].
 
-증명의 요지는 직관 절의 초한귀납이다. $\mathcal M$ 은 $\sigma$ 아이디얼이고 $\mathbb R\notin\mathcal M$ 이므로 각 단계에서 집을 점이 남고, 연속체 가설이 $\lvert\mathcal M\rvert=\aleph\_1$ 을 주어 열거가 길이 $\omega\_1$ 로 끝난다. 제1범주 집합 $M$ 에는 $M=M\_\gamma$ 인 $\gamma$ 가 있고 $\alpha\gt \gamma$ 인 $x\_\alpha$ 를 $M\_\gamma$ 밖에서 집었으므로, $L\cap M$ 에 남는 것은 $\gamma$ 이하 단계의 점뿐이라 가산이다. $\mathcal N$ 도 $\sigma$ 아이디얼이고 $\mathbb R\notin\mathcal N$ 이므로 같은 귀납이 Sierpiński 집합을 준다. ∎
+증명의 요지는 직관 절의 초한귀납이다. $\mathcal M$ 은 $\sigma$ 아이디얼이고 $\mathbb R\notin\mathcal M$ 이므로 각 단계에서 집을 점이 남고, 연속체 가설이 $\lvert\mathcal M\rvert=\aleph\_1$ 을 주어 열거가 길이 $\omega\_1$ 로 끝난다. 제1범주 집합 $M$ 에는 $M=M\_\gamma$ 인 $\gamma$ 가 있고 $\alpha\gt \gamma$ 인 $x\_\alpha$ 를 $M\_\gamma$ 밖에서 집었으므로, $L\cap M$ 에 남는 것은 $\gamma$ 이하 단계의 점뿐이라 가산이다. $\mathcal N$ 도 $\sigma$ 아이디얼이고 $\mathbb R\notin\mathcal N$ 이므로 같은 귀납이 Sierpiński 집합을 준다.
 
 ## 측도와 범주
 
-**정리.** Luzin 집합은 영집합이면서 제1범주가 아니고, Sierpiński 집합은 제1범주이면서 측도가 양이다.
+Luzin 집합은 영집합이면서 제1범주가 아니고, Sierpiński 집합은 제1범주이면서 측도가 양이다.
 
-$L$ 이 제1범주이면 정의를 $M=L$ 에 적용해 $L=L\cap L$ 이 가산이 되어 모순이다. 측도 쪽은 Erdős–Sierpiński 쌍대성의 분해 $\mathbb R=A\sqcup B$ 를 쓴다. $A$ 가 영집합이고 $B$ 가 제1범주이므로 $L\cap B$ 는 가산이고 $L\subseteq A\cup(L\cap B)$ 이라 $L$ 은 영집합이다. $S$ 에 대해서는 같은 분해에서 $S\cap A$ 가 가산이고 $S\subseteq B\cup(S\cap A)$ 이라 $S$ 가 제1범주이며, $S=S\cap S$ 가 가산이 아니므로 $S$ 는 영집합이 아니다. ∎
+$L$ 이 제1범주이면 정의를 $M=L$ 에 적용해 $L=L\cap L$ 이 가산이 되어 모순이다. [측도](measure.md) 쪽은 [Erdős–Sierpiński 쌍대성](erdos-sierpinski-duality.md)의 분해 $\mathbb R=A\sqcup B$ 를 쓴다. $A$ 가 영집합이고 $B$ 가 제1범주이므로 $L\cap B$ 는 가산이고 $L\subseteq A\cup(L\cap B)$ 이라 $L$ 은 영집합이다. $S$ 에 대해서는 같은 분해에서 $S\cap A$ 가 가산이고 $S\subseteq B\cup(S\cap A)$ 이라 $S$ 가 제1범주이며, $S=S\cap S$ 가 가산이 아니므로 $S$ 는 영집합이 아니다.
 
 ## 강 측도 영집합
 
 [강 측도 영집합](strong-measure-zero.md)은 양수열 $(\varepsilon\_n)$ 이 무엇이든 길이 $\varepsilon\_n$ 인 구간 $I\_n$ 을 잡아 $X\subseteq\bigcup\_n I\_n$ 으로 덮을 수 있는 집합 $X$ 다.
 
-**정리.** Luzin 집합은 강 측도 영집합이다.
+Luzin 집합은 강 측도 영집합이다.
 
-$(\varepsilon\_n)$ 이 주어지면 유리수 열거 $(q\_n)$ 을 잡고 홀수 번째 첨자로 $q\_n$ 을 중심에 둔 길이 $\varepsilon\_{2n+1}$ 인 구간을 만든다. 그 합집합 $G$ 는 빽빽한 열린집합이라 $\mathbb R\setminus G$ 가 제1범주이므로 $L\setminus G$ 는 가산이고, 그 가산 집합의 점마다 짝수 번째 첨자의 구간을 하나씩 준다. ∎
+$(\varepsilon\_n)$ 이 주어지면 유리수 열거 $(q\_n)$ 을 잡고 홀수 번째 첨자로 $q\_n$ 을 중심에 둔 길이 $\varepsilon\_{2n+1}$ 인 구간을 만든다. 그 합집합 $G$ 는 빽빽한 열린집합이라 $\mathbb R\setminus G$ 가 제1범주이므로 $L\setminus G$ 는 가산이고, 그 가산 집합의 점마다 짝수 번째 첨자의 구간을 하나씩 준다.
 
 ## 쌍대 사상 아래의 상
 
-**정리.** $f$ 가 $f=f^{-1}$ 인 쌍대 사상이고 $L$ 이 Luzin 집합이면 $f(L)$ 은 Sierpiński 집합이다.
+$f$ 가 $f=f^{-1}$ 인 쌍대 사상이고 $L$ 이 Luzin 집합이면 $f(L)$ 은 Sierpiński 집합이다.
 
-영집합 $N$ 을 잡으면 $f(N)$ 은 제1범주이고 $f(L)\cap N=f(L\cap f(N))$ 이다. $L\cap f(N)$ 이 가산이므로 그 상도 가산이다. 반대 방향도 같은 계산으로 나온다. ∎
+영집합 $N$ 을 잡으면 $f(N)$ 은 제1범주이고 $f(L)\cap N=f(L\cap f(N))$ 이다. $L\cap f(N)$ 이 가산이므로 그 상도 가산이다. 반대 방향도 같은 계산으로 나온다.
 
 ## Martin 의 공리 아래의 부재
 
