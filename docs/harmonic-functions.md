@@ -6,9 +6,9 @@
 
 # 직관
 
-조화함수는 국소적으로 평균을 유지하는 함수다. 어느 점에서도 주변보다 높거나 낮지 않으므로 내부에 봉우리나 골짜기가 생길 수 없고, 값은 경계에서만 극단을 취한다. 정상 상태의 온도 분포가 이 그림이다.
+단위원판의 가장자리 온도가 각 $\theta$ 인 점에서 $\cos\theta$ 라 하자. 판 안의 온도로 $u(x,y)=x$ 를 시험하면 가장자리에서 $x=\cos\theta$ 이고 $u_{xx}+u_{yy}=0$ 이다. 중심의 온도 $u(0,0)=0$ 은 가장자리 온도 $\cos\theta$ 를 원 둘레에서 평균 낸 값 $0$ 과 같다.
 
-평면에서 이 성질은 정칙성의 [실수](real-numbers.md)판이다. 정칙함수 $f=u+iv$ 의 Cauchy 적분 공식이 경계값으로 내부 값을 결정하듯, 조화함수의 Poisson 공식이 경계값으로 내부 값을 결정한다.
+$x^2+y^2$ 은 $u_{xx}+u_{yy}=4$ 이고, 중심 값 $0$ 이 원 위의 평균 $1$ 보다 작아 중심에 골짜기가 생긴다. 이차 미분의 합이 $0$ 인 함수는 어느 점에서도 둘레 평균보다 높거나 낮지 않으므로 내부에 봉우리나 골짜기가 없고, 값은 경계에서만 가장 크거나 가장 작다.
 
 # 정의
 
@@ -18,15 +18,15 @@
 
 $$\Delta u=\sum_{k=1}^n\frac{\partial^2u}{\partial x_k^2}=0$$
 
-를 만족하면 $u$ 를 $\Omega$ 에서 **조화함수**라 한다. $\Delta$ 는 [Laplace 연산자](laplace-operator.md)다. $\Delta u\ge0$ 인 함수는 **열조화함수**, $\Delta u\le0$ 인 함수는 **상조화함수**다.
+를 만족하면 $u$ 를 $\Omega$ 에서 **조화함수** 라 한다. $\Delta$ 는 [Laplace 연산자](laplace-operator.md)다. $\Delta u\ge0$ 인 함수는 **열조화함수(subharmonic function)**, $\Delta u\le0$ 인 함수는 **상조화함수(superharmonic function)** 다. 평면에서 $x$, $x^2-y^2$, $\log(x^2+y^2)$ 은 조화함수이고($\log$ 는 원점 밖에서), $x^2+y^2$ 은 열조화함수다.
 
 ## 조화 켤레
 
-평면 영역 $\Omega\subset\mathbb C$ 에서 조화함수 $u$ 에 대해 $f=u+iv$ 가 정칙이 되게 하는 조화함수 $v$ 를 $u$ 의 **조화 켤레**라 한다. $u$ 와 $v$ 는 Cauchy–Riemann 방정식
+평면 영역 $\Omega\subset\mathbb C$ 에서 조화함수 $u$ 에 대해 $f=u+iv$ 가 [정칙함수](holomorphic-functions.md)가 되게 하는 조화함수 $v$ 를 $u$ 의 **조화 켤레(harmonic conjugate)** 라 한다. $u$ 와 $v$ 는 Cauchy–Riemann 방정식
 
 $$u_x=v_y,\qquad u_y=-v_x$$
 
-로 묶인다. $v$ 는 상수를 더하는 자유도만큼만 다르다.
+로 묶인다. $v$ 는 상수를 더하는 자유도만큼만 다르다. $u=x^2-y^2$ 의 조화 켤레는 $v=2xy$ 이고 $u+iv=z^2$ 이다. $u_x=2x=v_y$, $u_y=-2y=-v_x$ 로 확인된다.
 
 # 성질
 
@@ -70,7 +70,7 @@ $$\frac{R-r}{R+r}\thinspace u(0)\le u(z)\le\frac{R+r}{R-r}\thinspace u(0)$$
 
 # 활용
 
-- [정칙함수](holomorphic-functions.md): 최대 절댓값 원리는 $\vert f\vert$ 가 열조화라는 사실에서 나오고, Cauchy 적분 공식의 실부가 Poisson 공식이다.
+- 정칙함수: 최대 절댓값 원리는 $\vert f\vert$ 가 열조화라는 사실에서 나오고, Cauchy 적분 공식의 실부가 Poisson 공식이다.
 - [해석적 연속](analytic-continuation.md): Schwarz 반사 원리의 조화판은 실축에서 $0$ 인 조화함수를 홀함수로 확장한다.
 - [Brown 운동](brownian-motion.md): 영역 $\Omega$ 에서 출발한 Brown 운동을 경계에 닿을 때까지 흘려 경계값의 기댓값을 취하면 Dirichlet 문제의 해가 된다. 평균값 성질이 확률 쪽에서는 정지된 과정이 martingale 이라는 진술이 된다.
 - [무작위 걷기](random-walks.md): 이산 Laplace 연산자의 영공간이 조화함수의 이산판이고, 전위가 그 원소다.
