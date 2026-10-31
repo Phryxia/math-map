@@ -6,10 +6,6 @@
 
 # 직관
 
-접미사 배열은 본문의 모든 접미사를 사전순으로 정렬해 그 시작 위치를 나열한 배열이다. 길이 $n$ 인 본문에서 정수 $n+1$ 개만 저장하고, 이진 탐색으로 길이 $m$ 인 패턴을 $O(m\log n)$ 시간에 찾는다. Manber 와 Myers 가 1990 년에 제안했다[^1].
-
-[트라이](tries.md)의 접미사 트리를 사전순 깊이 우선으로 돌 때 잎이 나오는 순서가 접미사 배열이다. 만드는 방법은 접미사들의 [비교 정렬](comparison-sorting.md)에서 출발해, 이미 정렬한 짧은 접두사의 순위를 다시 써서 비교를 줄인다.
-
 본문 $\mathtt{banana}$ 에서 $\mathtt{ana}$ 가 나타나는 자리를 모두 찾는다. $\mathtt{ana}$ 가 위치 $i$ 에서 나타나는 것은 위치 $i$ 에서 시작하는 접미사가 $\mathtt{ana}$ 로 시작하는 것과 같다. 그래서 접미사 $\mathtt{banana}, \mathtt{anana}, \mathtt{nana}, \mathtt{ana}, \mathtt{na}, \mathtt a$ 를 사전순으로 늘어놓는다.
 
 $$
@@ -22,9 +18,9 @@ $\mathtt{ana}$ 로 시작하는 접미사들은 이 목록에서 붙어 있는 �
 
 ## 접미사 배열
 
-본문 $T=t_0t_1\cdots t_{n-1}$ 의 끝에 다른 어느 글자보다 작은 글자 $\char36{}$ 를 붙인다. 위치 $i$ 에서 시작하는 접미사를 $T_i=t_i\cdots t_{n-1}\char36{}$ 라 한다. 접미사 배열 $\mathrm{SA}$ 는 $T_{\mathrm{SA}\lbrack 0\rbrack}\lt T_{\mathrm{SA}\lbrack 1\rbrack}\lt\cdots\lt T_{\mathrm{SA}\lbrack n\rbrack}$ 이 되는 $0,\dots,n$ 의 순열이다. 부등호는 사전순이다. 역순열 $\mathrm{rank}$ 는 $\mathrm{rank}\lbrack\mathrm{SA}\lbrack r\rbrack\rbrack=r$ 로 정의한다.
+본문 $T=t_0t_1\cdots t_{n-1}$ 의 끝에 다른 어느 글자보다 작은 글자 $\char36{}$ 를 붙인다. 위치 $i$ 에서 시작하는 접미사를 $T_i=t_i\cdots t_{n-1}\char36{}$ 라 한다. **접미사 배열** $\mathrm{SA}$ 는 $T_{\mathrm{SA}\lbrack 0\rbrack}\lt T_{\mathrm{SA}\lbrack 1\rbrack}\lt\cdots\lt T_{\mathrm{SA}\lbrack n\rbrack}$ 이 되는 $0,\dots,n$ 의 순열이다. 부등호는 사전순이다. 역순열 $\mathrm{rank}$ 는 $\mathrm{rank}\lbrack\mathrm{SA}\lbrack r\rbrack\rbrack=r$ 로 정의한다. Manber 와 Myers 가 1990 년에 제안했다[^1].
 
-$T=\mathtt{banana}$ 이면 $\mathrm{SA}=(6,5,3,1,0,4,2)$ 이다.
+예. $T=\mathtt{banana}$ 이면 직관 절의 목록 맨 앞에 $T\_6=\char36{}$ 가 오고 $\mathrm{SA}=(6,5,3,1,0,4,2)$ 다. $\mathtt{ana}\char36{}$ 로 시작하는 $T\_3$ 이 셋째이므로 $\mathrm{rank}\lbrack 3\rbrack=2$ 이고, 전체로는 $\mathrm{rank}=(4,3,6,2,5,1,0)$ 이다.
 
 ## 최장 공통 접두사 배열
 
@@ -33,6 +29,8 @@ $T=\mathtt{banana}$ 이면 $\mathrm{SA}=(6,5,3,1,0,4,2)$ 이다.
 # 성질
 
 ## 접두사 배가로 만들기
+
+접미사들을 [비교 정렬](comparison-sorting.md)로 정렬하면 비교 한 번에 글자를 $n$ 개까지 읽는다. 이미 정렬한 짧은 접두사의 순위를 다시 써서 비교를 줄인다.
 
 정리. 접미사 배열은 $O(n\log n)$ 시간에 만들어진다[^1].
 
@@ -52,7 +50,7 @@ $P$ 로 시작하는 문자열들은 사전순에서 붙어 있으므로, $T_{\m
 
 ## 접미사 트리와의 대응
 
-접미사 트리의 마디마다 자식들을 간선의 첫 글자 순서로 놓고 깊이 우선으로 돌면, 잎이 나오는 순서가 접미사 배열이다. $\mathrm{LCP}\lbrack r\rbrack$ 는 $r-1$ 번째와 $r$ 번째 잎의 가장 낮은 공통 조상이 나타내는 문자열의 길이다. 그래서 접미사 배열과 LCP 배열로부터 접미사 트리가 $O(n)$ 시간에 만들어지고, 그 반대도 같다.
+접미사 트리(suffix tree)는 본문의 모든 접미사를 담은 [트라이](tries.md)에서 자식이 하나인 마디를 이어 붙인 것이다. 접미사 트리의 마디마다 자식들을 간선의 첫 글자 순서로 놓고 깊이 우선으로 돌면, 잎이 나오는 순서가 접미사 배열이다. $\mathrm{LCP}\lbrack r\rbrack$ 는 $r-1$ 번째와 $r$ 번째 잎의 가장 낮은 공통 조상이 나타내는 문자열의 길이다. 그래서 접미사 배열과 LCP 배열로부터 접미사 트리가 $O(n)$ 시간에 만들어지고, 그 반대도 같다.
 
 # 활용
 
