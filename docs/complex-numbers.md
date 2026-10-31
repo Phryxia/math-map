@@ -20,13 +20,13 @@ $x^3=15x+4$ 는 $x=4$ 에서 $64=60+4$ 로 성립한다. 그런데 $p=15$, $q=4$
 
 ## 복소수체
 
-순서쌍 $(a,b)\in\mathbb R^2$ 전체에 덧셈과 곱셈을 다음처럼 준 것을 **복소수체** $\mathbb C$ 라 한다.
+순서쌍 $(a,b)\in\mathbb R^2$ 전체에 덧셈과 곱셈을 다음처럼 준 것을 **복소수체(field of complex numbers)** $\mathbb C$ 라 한다.
 
 $$
-(a,b)+(c,d)=(a+c,\ b+d),\qquad (a,b)(c,d)=(ac-bd,\ ad+bc)
+(a,b)+(c,d)=(a+c,\thinspace b+d),\qquad (a,b)(c,d)=(ac-bd,\thinspace ad+bc)
 $$
 
-$(a,0)$ 을 실수 $a$ 와 같게 보고 $i=(0,1)$ 로 두면 $(a,b)=a+bi$ 이고 $i^2=(-1,0)=-1$ 이다. 곱셈 규칙은 $(a+bi)(c+di)$ 를 전개하고 $i^2=-1$ 을 쓴 결과와 같다. 이 연산으로 $\mathbb C$ 는 [체](fields.md)가 된다.
+$(a,0)$ 을 실수 $a$ 와 같게 보고 $i=(0,1)$ 로 두면 $(a,b)=a+bi$ 이고 $i^2=(-1,0)=-1$ 이다. 곱셈 규칙은 $(a+bi)(c+di)$ 를 전개하고 $i^2=-1$ 을 쓴 결과와 같다. 이 연산으로 $\mathbb C$ 는 [체](fields.md)가 된다. 직관 절의 $(2+i)^2$ 은 $(2,1)(2,1)=(4-1,\thinspace 2+2)=(3,4)$, 곧 $3+4i$ 다.
 
 ## 실수부, 허수부, 켤레, 절댓값
 
@@ -35,6 +35,8 @@ $z=a+bi$ 에 대해 $a$ 를 **실수부(real part)** $\mathrm{Re}\thinspace z$, 
 $$
 \frac1z=\frac{\bar z}{\vert z\vert^2}=\frac{a-bi}{a^2+b^2}
 $$
+
+$z=2+i$ 이면 $\mathrm{Re}\thinspace z=2$, $\mathrm{Im}\thinspace z=1$, $\bar z=2-i$, $\vert z\vert=\sqrt5$ 이고 $1/z=(2-i)/5$ 다. 실제로 $(2+i)(2-i)=5$ 다.
 
 $(a,b)$ 를 평면의 점으로 그린 것을 **복소평면(complex plane)** 이라 한다. $\vert z-w\vert$ 는 두 점 사이의 Euclid 거리다.
 
@@ -48,7 +50,7 @@ $\overline{z+w}=\bar z+\bar w$, $\overline{zw}=\bar z\bar w$ 이다. 여기서 $
 
 $z\ne0$ 은 $r=\vert z\vert$ 와 양의 실수축에서 잰 각 $\theta$ 로 $z=r(\cos\theta+i\sin\theta)$ 로 쓸 수 있다. $\theta$ 를 **편각(argument)** 이라 하고 $2\pi$ 의 정수배만큼의 차이를 같게 본다.
 
-**정리.** $z=r(\cos\theta+i\sin\theta)$, $w=s(\cos\varphi+i\sin\varphi)$ 이면 $zw=rs(\cos(\theta+\varphi)+i\sin(\theta+\varphi))$ 다.
+$z=r(\cos\theta+i\sin\theta)$, $w=s(\cos\varphi+i\sin\varphi)$ 이면 $zw=rs(\cos(\theta+\varphi)+i\sin(\theta+\varphi))$ 다.
 
 증명의 요지. 곱을 전개하면 실수부가 $\cos\theta\cos\varphi-\sin\theta\sin\varphi$, 허수부가 $\sin\theta\cos\varphi+\cos\theta\sin\varphi$ 이고, [삼각함수](trigonometric-functions.md)의 덧셈정리로 각각 $\cos(\theta+\varphi)$, $\sin(\theta+\varphi)$ 다.
 
