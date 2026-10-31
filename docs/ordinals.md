@@ -41,7 +41,7 @@ $2=\lbrace\varnothing,\lbrace\varnothing\rbrace\rbrace$ 는 추이적이다. 원
 추이적이고 원소 관계 $\in$ 로 정렬된 집합을 **서수** 라 한다[^1]. 이 정의는 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel 집합론에 [선택공리](axiom-of-choice.md)를 더한 것) 안의 집합으로 서수를 준다.
 
 $$
-\mathrm{Ord}(\alpha)\ :\iff\ \alpha \text{ 는 추이적}\ \wedge\ (\alpha,\in) \text{ 는 정렬순서}
+\mathrm{Ord}(\alpha)\quad :\iff\quad \alpha \text{ 는 추이적}\quad \wedge\quad (\alpha,\in) \text{ 는 정렬순서}
 $$
 
 서수 사이의 순서는 $\alpha\lt\beta :\iff \alpha\in\beta$ 로 정한다. 직관 절의 $0,1,2$ 와 $\omega=\lbrace 0,1,2,\dots\rbrace$ 가 서수이고, $1\lt 2$ 는 $1\in 2$ 다.
@@ -83,7 +83,7 @@ $\omega\cdot 2=\omega\cdot 1+\omega=\omega+\omega$ 다. 극한 규칙으로 $1+\
 서수의 성질 $P$ 에 대해 다음이 성립한다[^2].
 
 $$
-\forall\alpha\thinspace\bigl(\forall\beta\lt\alpha\thinspace P(\beta)\ \to\ P(\alpha)\bigr)\ \Longrightarrow\ \forall\alpha\thinspace P(\alpha)
+\forall\alpha\thinspace\bigl(\forall\beta\lt\alpha\thinspace P(\beta)\quad \to\quad P(\alpha)\bigr)\quad \Longrightarrow\quad \forall\alpha\thinspace P(\alpha)
 $$
 
 증명: $P$ 가 거짓인 서수 $\gamma$ 가 있다고 하자. $\gamma+1$ 의 원소 가운데 $P$ 가 거짓인 것들의 집합은 공집합이 아니므로 최소 원소 $\alpha$ 를 갖는다. $\alpha$ 미만에서는 $P$ 가 성립하므로 가정에서 $\alpha$ 에서도 성립하고, 모순이다.
