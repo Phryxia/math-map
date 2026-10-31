@@ -6,14 +6,6 @@
 
 # 직관
 
-De Morgan 법칙은 여집합이 합집합과 교집합을 서로 바꾼다는 두 등식이다.
-
-$$
-(A\cup B)^c=A^c\cap B^c,\qquad (A\cap B)^c=A^c\cup B^c
-$$
-
-집합의 연산에서도 명제의 결합에서도 같은 꼴이고, 두 등식을 공리로 가진 구조가 [Boole 대수](boolean-algebras.md)다. 부정이 약한 [Heyting 대수](heyting-algebras.md)에서는 첫째 등식만 성립한다.
-
 전체집합을 $1$ 부터 $10$ 까지의 정수로 두고 $A$ 를 2의 배수, $B$ 를 3의 배수라 한다. $A=\lbrace 2,4,6,8,10\rbrace$ 이고 $B=\lbrace 3,6,9\rbrace$ 이므로 $A\cup B=\lbrace 2,3,4,6,8,9,10\rbrace$ 이고 그 여집합은 $\lbrace 1,5,7\rbrace$ 이다.
 
 같은 집합을 다른 길로 구한다. 2의 배수가 아닌 수는 $\lbrace 1,3,5,7,9\rbrace$ 이고 3의 배수가 아닌 수는 $\lbrace 1,2,4,5,7,8,10\rbrace$ 이다. 두 집합의 교집합도 $\lbrace 1,5,7\rbrace$ 이다.
@@ -24,27 +16,31 @@ $$
 
 ## 집합
 
-전체집합 $U$ 의 부분집합 $A,B$ 와 여집합 $A^c=U\setminus A$ 에 대해 다음 두 등식이 성립한다.
+집합의 De Morgan 법칙은 전체집합 $U$ 의 부분집합 $A,B$ 와 여집합 $A^c=U\setminus A$ 에 대한 다음 두 등식이다.
 
 $$
 (A\cup B)^c=A^c\cap B^c,\qquad (A\cap B)^c=A^c\cup B^c
 $$
 
-인덱스족 $\lbrace A_i\rbrace\_{i\in I}$ 에 대해서도 같은 등식이 성립한다.
+직관 절의 $A=\lbrace 2,4,6,8,10\rbrace$, $B=\lbrace 3,6,9\rbrace$ 에서 첫 등식의 양변은 $\lbrace 1,5,7\rbrace$ 이다. 둘째 등식의 왼쪽은 $A\cap B=\lbrace 6\rbrace$ 의 여집합이고, 오른쪽은 $\lbrace 1,3,5,7,9\rbrace\cup\lbrace 1,2,4,5,7,8,10\rbrace$ 이다. 둘 다 $6$ 을 뺀 아홉 수다.
+
+인덱스족 $\lbrace A_i\rbrace\_{i\in I}$ 에 대한 판본은 다음 두 등식이다.
 
 $$
 \Big(\bigcup_{i\in I}A_i\Big)^c=\bigcap_{i\in I}A_i^c,\qquad \Big(\bigcap_{i\in I}A_i\Big)^c=\bigcup_{i\in I}A_i^c
 $$
 
-$I$ 는 무한집합이어도 된다.
+$I$ 는 무한집합이어도 된다. $U=\mathbb N$ 에서 $A_n=\lbrace m:m\ge n\rbrace$ 이면 모든 $A_n$ 의 교집합은 공집합이라 그 여집합은 $\mathbb N$ 이고, $A_n^c=\lbrace 0,\dots,n-1\rbrace$ 의 합집합도 $\mathbb N$ 이다.
 
 ## 명제
 
-명제 $P,Q$ 에 대해 다음 두 동치가 성립한다.
+명제의 De Morgan 법칙은 명제 $P,Q$ 에 대한 다음 두 동치다.
 
 $$
 \lnot(P\lor Q)\iff\lnot P\land\lnot Q,\qquad \lnot(P\land Q)\iff\lnot P\lor\lnot Q
 $$
+
+$P$ 를 "비가 온다", $Q$ 를 "바람이 분다" 로 두면 둘째 동치가 개요의 예다.
 
 [1차 논리](first-order-logic.md)의 논리식 $\varphi(x)$ 에서는 한정사(quantifier)가 같은 꼴로 바뀐다.
 
@@ -52,15 +48,19 @@ $$
 \lnot\forall x\thinspace\varphi(x)\iff\exists x\thinspace\lnot\varphi(x),\qquad \lnot\exists x\thinspace\varphi(x)\iff\forall x\thinspace\lnot\varphi(x)
 $$
 
+실수에서 "모든 $x$ 에 대해 $x^2\gt 0$" 의 부정은 "$x^2\gt 0$ 이 아닌 $x$ 가 있다" 이고, $x=0$ 이 그런 수다.
+
 ## 격자
 
-보원(complement)을 가진 유계 [격자](order-lattices.md)에서 원소 $a,b$ 와 보원 $\lnot a$ 에 대한 등식으로 쓴다.
+격자의 De Morgan 법칙은 보원(complement)을 가진 유계 [격자](order-lattices.md)에서 원소 $a,b$ 와 보원 $\lnot a$ 에 대한 다음 두 등식이다.
 
 $$
 \lnot(a\lor b)=\lnot a\land\lnot b,\qquad \lnot(a\land b)=\lnot a\lor\lnot b
 $$
 
 여기서 $\lor$ 와 $\land$ 는 이음(join)과 만남(meet)이다. 집합 판본은 멱집합을 이 구조로 본 것이고, 명제 판본은 명제의 동치류를 이 구조로 본 것이다.
+
+$30$ 의 약수를 최소공배수와 최대공약수로 이음과 만남을 주고 $\lnot a=30/a$ 로 두면 보원을 가진 유계 격자다. $\lnot(2\lor 3)=\lnot 6=5$ 이고 $\lnot 2\land\lnot 3=\gcd(15,10)=5$ 다.
 
 # 성질
 
@@ -72,7 +72,7 @@ $x\in(A\cup B)^c$ 는 $x\notin A\cup B$ 와 같고, 이것은 $x\in A$ 와 $x\in
 
 둘째 등식은 첫째 등식에서 나온다. 첫 등식의 $A,B$ 자리에 $A^c,B^c$ 를 넣으면 $(A^c\cup B^c)^c=A\cap B$ 이고, 양변의 여집합을 취하면 $A^c\cup B^c=(A\cap B)^c$ 다. 여집합이 대합(involution)이어서 $(A^c)^c=A$ 가 성립하므로 이 대입이 가능하다.
 
-그래서 합집합과 교집합을 서로 바꾸고 포함관계를 뒤집은 진술은 원래 진술과 동시에 성립한다. Boole 대수의 쌍대성 원리가 이 교환을 공리 수준에서 적은 것이다.
+그래서 합집합과 교집합을 서로 바꾸고 포함관계를 뒤집은 진술은 원래 진술과 동시에 성립한다. [Boole 대수](boolean-algebras.md)의 쌍대성 원리(duality principle)가 이 교환을 공리 수준에서 적은 것이다.
 
 ## Boole 대수에서의 유도
 
@@ -90,7 +90,7 @@ $$
 
 ## Heyting 대수에서의 실패
 
-Heyting 대수의 부정은 $\lnot a=a\to 0$ 이고 보원이 아니다. 첫 등식 $\lnot(a\lor b)=\lnot a\land\lnot b$ 는 그대로 성립한다. 둘째 등식에서는 $\lnot a\lor\lnot b\le\lnot(a\land b)$ 만 성립하고 역의 포함은 성립하지 않는다.
+[Heyting 대수](heyting-algebras.md)의 부정은 $\lnot a=a\to 0$ 이고 보원이 아니다. 첫 등식 $\lnot(a\lor b)=\lnot a\land\lnot b$ 는 그대로 성립한다. 둘째 등식에서는 $\lnot a\lor\lnot b\le\lnot(a\land b)$ 만 성립하고 역의 포함은 성립하지 않는다.
 
 반례는 [직관주의 논리의 Kripke 의미론](kripke-semantics.md)에서 얻는다. 뿌리 $w_0$ 위에 서로 비교할 수 없는 두 세계 $w_1,w_2$ 를 둔 프레임을 잡고, $p$ 를 $w_1$ 에서만 참, $q$ 를 $w_2$ 에서만 참으로 둔다. 어느 세계에서도 $p\land q$ 가 참이 아니므로 $\lnot(p\land q)$ 는 $w_0$ 에서 참이다. 한편 $w_1$ 에서 $p$ 가 참이므로 $\lnot p$ 는 $w_0$ 에서 참이 아니고, $w_2$ 에서 $q$ 가 참이므로 $\lnot q$ 도 $w_0$ 에서 참이 아니다. 따라서 $\lnot p\lor\lnot q$ 는 $w_0$ 에서 참이 아니다.
 
