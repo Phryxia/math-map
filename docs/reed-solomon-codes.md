@@ -6,13 +6,9 @@
 
 # 직관
 
-Reed–Solomon 부호는 유한체 $\mathbb F_q$ 위에서 차수가 $k$ 보다 작은 다항식을 서로 다른 점 $n$ 개에서 평가한 값의 열을 부호어로 삼는 선형부호다. 매개변수는 $[n,k,n-k+1]\_q$ 이고 Singleton 한계를 등호로 달성한다.[^1]
+원소가 $7$ 개인 유한체 $\mathbb F_7$ 위에서 수 두 개로 된 메시지를 보내고, 도중에 값 하나가 바뀌어도 메시지를 되찾으려 한다. 메시지 $(3,2)$ 를 일차식 $f(x)=3+2x$ 로 보고 $x=1,\dots,6$ 에서 평가하면 부호어 $(5,0,2,4,6,1)$ 이 나온다. 세 번째 자리가 $2$ 에서 $5$ 로 바뀌어 $(5,0,5,4,6,1)$ 을 받았다고 하자.
 
-복호는 오류가 난 자리에서 $0$ 이 되는 오류 위치 다항식을 찾는 문제로 바뀐다. 신드롬이 그 다항식을 연결 다항식으로 하는 선형 점화식을 만족하므로 [Berlekamp–Massey 알고리즘](berlekamp-massey.md)이 $\lfloor(n-k)/2\rfloor$ 개까지의 오류를 $O(n^2)$ 에 고친다.
-
-$\mathbb F_7$ 에서 $k=2$, $n=6$ 으로 둔다. 메시지 $(3,2)$ 를 일차식 $f(x)=3+2x$ 로 보고 $x=1,\dots,6$ 에서 평가하면 부호어 $(5,0,2,4,6,1)$ 이 나온다. 세 번째 자리가 $2$ 에서 $5$ 로 바뀌어 $(5,0,5,4,6,1)$ 을 받았다고 하자.
-
-오류의 자리를 알면 그 자리를 버리고 남은 다섯 점 가운데 두 점으로 직선을 정하면 된다. 자리를 모르므로, 오류 자리에서 $0$ 이 되는 일차식 $E(x)=x+e\_0$ 을 미지수로 둔다. 모든 $i$ 에서 $y\_iE(i)=f(i)E(i)$ 가 성립한다. 오류 자리에서는 양변이 $0$ 이고, 나머지 자리에서는 $y\_i=f(i)$ 이기 때문이다.
+오류의 자리를 알면 그 자리를 버리고 남은 다섯 점 가운데 두 점으로 직선을 정하면 된다. 자리를 모르므로, 오류 자리에서 $0$ 이 되는 일차식 $E(x)=x+e\_0$ 을 미지수로 둔다. 오류 자리에서는 $E(i)=0$ 이라 양변이 $0$ 이고 나머지 자리에서는 $y\_i=f(i)$ 이므로, 모든 $i$ 에서 $y\_iE(i)=f(i)E(i)$ 가 성립한다.
 
 $Q=fE$ 는 차수 $2$ 이하의 다항식 $q\_0+q\_1x+q\_2x^2$ 이다. 미지수 $e\_0,q\_0,q\_1,q\_2$ 넷에 대해 식 $y\_i(i+e\_0)=Q(i)$ 가 여섯 개 있고, 모두 일차식이다. 풀면 $E(x)=x+4=x-3$, $Q(x)=2x^2+4x+5$ 가 나오고, $Q/E=3+2x$ 로 메시지가 복원된다. $E$ 의 근 $3$ 이 오류의 자리다.
 
@@ -26,21 +22,11 @@ $$
 \mathrm{RS}\_k=\bigl\lbrace(f(\alpha\_1),\dots,f(\alpha\_n)) : f\in\mathbb F_q\lbrack x\rbrack,\thinspace\deg f\lt k\bigr\rbrace
 $$
 
-다. 평가는 선형사상이고, $0$ 이 아닌 $f$ 는 근이 $k-1$ 개 이하이므로 부호어의 무게가 $n-k+1$ 이상이다. 그러므로 [오류정정부호](error-correcting-codes.md)의 정정 능력은 $t=\lfloor(n-k)/2\rfloor$ 다.
-
-## 순환 부호로서의 표현
-
-$\alpha$ 를 $\mathbb F_q^\times$ 의 생성원, $n=q-1$, $\alpha\_i=\alpha^{i-1}$ 로 잡는다. 부호어 $c=(c\_0,\dots,c\_{n-1})$ 을 다항식 $c(x)=\sum c\_ix^i$ 로 쓰면
-
-$$
-c(\alpha^j)=\sum_{i=0}^{n-1}f(\alpha^i)\alpha^{ij}=\sum_{m\lt k}f\_m\sum_{i=0}^{n-1}\alpha^{i(m+j)}
-$$
-
-이다. 안쪽 합은 $m+j\equiv 0\pmod n$ 일 때만 $0$ 이 아니고, $1\le j\le n-k$ 이면 그런 $m$ 은 $k$ 이상이다. 그러므로 $j=1,\dots,n-k$ 에서 $c(\alpha^j)=0$ 이고, 부호는 $g(x)=\prod_{j=1}^{n-k}(x-\alpha^j)$ 의 배수 전체다.
+다. 평가는 선형사상이므로 [오류정정부호](error-correcting-codes.md) 가운데 선형부호다. 직관 절의 부호는 $q=7$, $k=2$, $n=6$, $\alpha\_i=i$ 인 경우이고, $f(x)=3+2x$ 의 부호어 $(5,0,2,4,6,1)$ 이 $\mathrm{RS}\_2$ 에 속한다.
 
 ## 신드롬과 오류 위치 다항식
 
-받은 단어를 $r=c+e$ 로 쓰고 오류가 자리 $i\_1,\dots,i\_\nu$ 에 있다고 하자. $X\_\ell=\alpha^{i\_\ell}$ 을 오류 위치, $Y\_\ell=e\_{i\_\ell}$ 을 오류 값이라 한다. **신드롬(syndrome)** 은
+이 절부터는 $\alpha$ 를 $\mathbb F_q^\times$ 의 생성원으로 두고 $n=q-1$, $\alpha\_i=\alpha^{i-1}$ 로 잡는다. 길이 $n$ 의 단어 $(r\_0,\dots,r\_{n-1})$ 은 다항식 $r(x)=\sum r\_ix^i$ 로 쓴다. 받은 단어를 $r=c+e$ 로 쓰고 오류가 자리 $i\_1,\dots,i\_\nu$ 에 있다고 하자. $X\_\ell=\alpha^{i\_\ell}$ 을 오류 위치, $Y\_\ell=e\_{i\_\ell}$ 을 오류 값이라 한다. **신드롬(syndrome)** 은
 
 $$
 S\_j=r(\alpha^j)=e(\alpha^j)=\sum_{\ell=1}^{\nu}Y\_\ell X\_\ell^j\qquad(j=1,\dots,2t)
@@ -48,10 +34,12 @@ $$
 
 다. **오류 위치 다항식(error locator polynomial)** 은 $\Lambda(x)=\prod_{\ell=1}^{\nu}(1-X\_\ell x)=1+\Lambda\_1x+\dots+\Lambda\_\nu x^\nu$ 다.
 
+직관 절의 예를 $\mathbb F_7$ 의 생성원 $\alpha=3$ 의 거듭제곱 순서로 다시 적는다. 점 $\alpha^0,\dots,\alpha^5$ 는 $1,3,2,6,4,5$ 이고 부호어는 $c=(5,2,0,1,4,6)$ 이다. 점 $3=\alpha^1$ 의 값이 $2$ 에서 $5$ 로 바뀌었으므로 $\nu=1$, $X\_1=3$, $Y\_1=3$ 이다. 신드롬은 $S\_j=3\cdot3^j$ 로 $S\_1,\dots,S\_4=2,6,4,5$ 이고, $\Lambda(x)=1-3x=1+4x$ 다.
+
 ## 복호
 
 1. 신드롬 $S\_1,\dots,S\_{2t}$ 를 계산한다. 모두 $0$ 이면 $r$ 이 부호어다.
-2. Berlekamp–Massey 알고리즘으로 $S\_1,\dots,S\_{2t}$ 의 연결 다항식을 구한다. 이것이 $\Lambda$ 다.
+2. [Berlekamp–Massey 알고리즘](berlekamp-massey.md)으로 $S\_1,\dots,S\_{2t}$ 의 연결 다항식을 구한다. 이것이 $\Lambda$ 다.
 3. $i=0,\dots,n-1$ 에서 $\Lambda(\alpha^{-i})=0$ 인지 보아 오류 자리를 찾는다. 이 전수 검사를 Chien 탐색(Chien search)이라 한다.
 4. $\Omega(x)\equiv S(x)\Lambda(x)\pmod{x^{2t}}$, $S(x)=\sum_{j=1}^{2t}S\_jx^{j-1}$ 로 두고 Forney 공식(Forney's formula) $Y\_\ell=-\Omega(X\_\ell^{-1})/\Lambda'(X\_\ell^{-1})$ 로 오류 값을 구한다.
 
@@ -74,13 +62,27 @@ function decodeRS(r, n, k, field) {
 
 # 성질
 
+## 최소거리
+
+$0$ 이 아닌 $f$ 는 근이 $k-1$ 개 이하이므로 부호어의 무게가 $n-k+1$ 이상이고, 매개변수는 $[n,k,n-k+1]\_q$ 다. 그러므로 정정 능력은 $t=\lfloor(n-k)/2\rfloor$ 이다. 직관 절의 부호는 $[6,2,5]\_7$ 이고 $t=2$ 다. 최소거리 $n-k+1$ 은 Singleton 한계(Singleton bound) $d\le n-k+1$ 의 등호다.[^1]
+
+## 순환 부호로서의 표현
+
+$\alpha$ 를 $\mathbb F_q^\times$ 의 생성원, $n=q-1$, $\alpha\_i=\alpha^{i-1}$ 로 잡는다. 부호어 $c=(c\_0,\dots,c\_{n-1})$ 을 다항식 $c(x)=\sum c\_ix^i$ 로 쓰면
+
+$$
+c(\alpha^j)=\sum_{i=0}^{n-1}f(\alpha^i)\alpha^{ij}=\sum_{m\lt k}f\_m\sum_{i=0}^{n-1}\alpha^{i(m+j)}
+$$
+
+이다. 안쪽 합은 $m+j\equiv 0\pmod n$ 일 때만 $0$ 이 아니고, $1\le j\le n-k$ 이면 그런 $m$ 은 $k$ 이상이다. 그러므로 $j=1,\dots,n-k$ 에서 $c(\alpha^j)=0$ 이고, 부호는 $g(x)=\prod_{j=1}^{n-k}(x-\alpha^j)$ 의 배수 전체다.
+
 ## 신드롬의 점화식
 
-**명제.** $\nu\lt j\le 2t$ 이면 $S\_j+\Lambda\_1S\_{j-1}+\dots+\Lambda\_\nu S\_{j-\nu}=0$ 이다.
+$\nu\lt j\le 2t$ 이면 $S\_j+\Lambda\_1S\_{j-1}+\dots+\Lambda\_\nu S\_{j-\nu}=0$ 이다.
 
 증명의 요지. $\Lambda(X\_\ell^{-1})=0$ 이므로 $\sum_{i=0}^{\nu}\Lambda\_iX\_\ell^{-i}=0$ 이다. 양변에 $Y\_\ell X\_\ell^j$ 를 곱해 $\ell$ 에 대해 더하면 $\sum_i\Lambda\_iS\_{j-i}=0$ 이다.
 
-$\nu\le t$ 이면 신드롬 $2t$ 개의 선형 복잡도는 $\nu$ 이고, Berlekamp–Massey 알고리즘의 처음 $2L$ 항 유일성으로 2 단계가 내놓는 연결 다항식이 $\Lambda$ 와 같다.
+정의 절의 예에서 $S\_2+4S\_1=6+8\equiv 0$ 이다. $\nu\le t$ 이면 신드롬 $2t$ 개의 선형 복잡도는 $\nu$ 이고, Berlekamp–Massey 알고리즘의 처음 $2L$ 항 유일성으로 2 단계가 내놓는 연결 다항식이 $\Lambda$ 와 같다.
 
 ## 핵심 방정식
 
@@ -94,13 +96,13 @@ $$
 
 ## Berlekamp–Welch 복호
 
-직관 절의 방법을 일반화한 것이다. $e\le t$ 개의 오류가 있을 때, 일계수 $\deg E=e$ 와 $\deg Q\lt k+e$ 인 다항식으로 $y\_iE(\alpha\_i)=Q(\alpha\_i)$ ($i=1,\dots,n$) 을 푸는 일차연립방정식은 해가 있고, 어느 해에서나 $Q/E=f$ 다.[^2]
+직관 절의 방법을 일반화한 것이 Berlekamp–Welch 알고리즘(Berlekamp–Welch algorithm)이다. $e\le t$ 개의 오류가 있을 때, 일계수 $\deg E=e$ 와 $\deg Q\lt k+e$ 인 다항식으로 $y\_iE(\alpha\_i)=Q(\alpha\_i)$ ($i=1,\dots,n$) 을 푸는 일차연립방정식은 해가 있고, 어느 해에서나 $Q/E=f$ 다.[^2]
 
 증명의 요지. 오류 자리에서 $0$ 이 되는 $E$ 와 $Q=fE$ 가 해다. 두 해 $(E\_1,Q\_1)$, $(E\_2,Q\_2)$ 에서 $Q\_1E\_2-Q\_2E\_1$ 은 차수가 $k+2e-1\le n-1$ 이하이고 $n$ 개의 점 모두에서 $0$ 이므로 영다항식이다.
 
 ## 오류와 소실
 
-위치를 아는 소실 $s$ 개와 위치를 모르는 오류 $e$ 개는 $2e+s\le n-k$ 이면 함께 고쳐진다. 소실 자리를 빼고 남은 $n-s$ 자리는 매개변수 $[n-s,k,n-s-k+1]$ 의 Reed–Solomon 부호를 이루기 때문이다. 소실만 있으면 남은 $k$ 자리에서 [다항식 보간](polynomial-interpolation.md)으로 $f$ 를 얻는다.
+위치를 아는 소실(erasure) $s$ 개와 위치를 모르는 오류 $e$ 개는 $2e+s\le n-k$ 이면 함께 고쳐진다. 소실 자리를 빼고 남은 $n-s$ 자리가 매개변수 $[n-s,k,n-s-k+1]$ 의 Reed–Solomon 부호를 이루므로 그 부호로 오류 $e$ 개를 고친다. 소실만 있으면 남은 $k$ 자리에서 [다항식 보간](polynomial-interpolation.md)으로 $f$ 를 얻는다.
 
 ## 목록 복호
 
