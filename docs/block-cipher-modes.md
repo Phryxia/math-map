@@ -6,10 +6,6 @@
 
 # 직관
 
-블록 암호 운용 모드는 길이 $n$ 비트의 블록 하나를 암호화하는 블록 암호 $F_k$ 로 여러 블록의 메시지를 암호화하는 방법이다. 블록마다 따로 암호화하는 ECB(electronic codebook), 앞 암호문 블록을 다음 평문 블록에 섞는 CBC(cipher block chaining), 카운터를 암호화해 평문에 더하는 CTR(counter) 모드가 기본이다.
-
-$F_k$ 가 [유사난수 순열](pseudorandom-permutations.md)이면 무작위 시작값을 쓰는 CBC 모드와 CTR 모드는 선택 평문 공격에 대해 [의미론적 안전성](semantic-security.md)을 갖고, ECB 모드는 갖지 않는다.
-
 블록 암호 $F_k$ 는 $128$ 비트 블록을 $128$ 비트 블록으로 보내는 키 $k$ 의 순열이다. 메시지가 블록 $m_1,m_2,m_3$ 이면 가장 단순한 방법은 $F_k(m_1),F_k(m_2),F_k(m_3)$ 을 보내는 것이다. 그러면 $m_1=m_3$ 일 때 첫 암호문 블록과 셋째 암호문 블록이 같아, 키를 모르는 사람도 평문의 첫 블록과 셋째 블록이 같다는 것을 안다. 같은 메시지를 두 번 보내면 같은 암호문이 나가므로 "같은 메시지를 다시 보냈다" 는 것도 드러난다.
 
 같은 평문이 같은 암호문이 되지 않으려면 암호화할 때마다 무작위로 고른 값이 들어가야 한다. 무작위 $r$ 을 고르고 $F_k(r+1),F_k(r+2),F_k(r+3)$ 을 만들어 평문 블록에 비트별로 더한다. 키를 모르면 이 세 블록은 무작위 비트와 구별되지 않으므로, 평문에 일회용 패드(one-time pad)를 더한 것과 같다. $r$ 은 암호문 앞에 붙여 보낸다.
@@ -18,23 +14,27 @@ $F_k$ 가 [유사난수 순열](pseudorandom-permutations.md)이면 무작위 �
 
 ## 블록 암호
 
-**블록 암호(block cipher)** 는 키 $k\in\lbrace 0,1\rbrace^\kappa$ 마다 순열 $F_k\colon\lbrace 0,1\rbrace^n\to\lbrace 0,1\rbrace^n$ 을 정하고 $F_k$ 와 $F_k^{-1}$ 을 효율적으로 계산하는 알고리즘이다. AES(advanced encryption standard)는 $n=128$ 이다. 안전성 목표는 $\lbrace F_k\rbrace$ 가 유사난수 순열인 것이다.
+**블록 암호(block cipher)** 는 키 $k\in\lbrace 0,1\rbrace^\kappa$ 마다 순열 $F_k\colon\lbrace 0,1\rbrace^n\to\lbrace 0,1\rbrace^n$ 을 정하고 $F_k$ 와 $F_k^{-1}$ 을 효율적으로 계산하는 알고리즘이다. AES(advanced encryption standard)는 $n=128$ 이다. 안전성 목표는 $\lbrace F_k\rbrace$ 가 [유사난수 순열](pseudorandom-permutations.md)인 것이다.
+
+예. $n=2$ 에서 $F_k(00)=10$, $F_k(01)=00$, $F_k(10)=11$, $F_k(11)=01$ 은 네 블록의 순열이므로 한 키의 블록 암호가 된다. 아래 절의 예는 이 $F_k$ 를 쓴다.
 
 ## 세 모드
 
 메시지를 $n$ 비트 블록 $m_1,\dots,m_\ell$ 로 나눈다. $\oplus$ 는 비트별 배타적 논리합이다.
 
-- ECB 모드. $c_i=F_k(m_i)$.
-- CBC 모드. 초기화 벡터(initialization vector, IV) $c_0\in\lbrace 0,1\rbrace^n$ 을 균등하게 고르고 $c_i=F_k(m_i\oplus c_{i-1})$ 로 둔다. 복호는 $m_i=F_k^{-1}(c_i)\oplus c_{i-1}$ 이다.
-- CTR 모드. $r\in\lbrace 0,1\rbrace^n$ 을 균등하게 고르고 $c_0=r$, $c_i=m_i\oplus F_k(r+i\bmod 2^n)$ 으로 둔다. 복호도 같은 식이다.
+- ECB(electronic codebook) 모드. $c_i=F_k(m_i)$.
+- CBC(cipher block chaining) 모드. 초기화 벡터(initialization vector, IV) $c_0\in\lbrace 0,1\rbrace^n$ 을 균등하게 고르고 $c_i=F_k(m_i\oplus c_{i-1})$ 로 둔다. 복호는 $m_i=F_k^{-1}(c_i)\oplus c_{i-1}$ 이다.
+- CTR(counter) 모드. $r\in\lbrace 0,1\rbrace^n$ 을 균등하게 고르고 $c_0=r$, $c_i=m_i\oplus F_k(r+i\bmod 2^n)$ 으로 둔다. 복호도 같은 식이다.
 
 CBC 모드는 마지막 블록을 채우는 덧붙이기(padding)가 필요하고, 암호화가 앞 블록을 기다리므로 차례로만 계산한다. CTR 모드는 $F_k^{-1}$ 을 쓰지 않고, 블록마다 따로 계산하므로 병렬로 계산하며, 마지막 블록은 필요한 만큼만 잘라 쓴다.
+
+예. 앞 절의 $F_k$ 로 $m_1=m_2=01$ 을 암호화한다. ECB 모드는 $00,00$ 을 내어 두 평문 블록이 같다는 것이 드러난다. CBC 모드는 $c_0=10$ 이면 $c_1=F_k(11)=01$, $c_2=F_k(01\oplus 01)=F_k(00)=10$ 이다. CTR 모드는 $r=00$ 이면 $c_1=01\oplus F_k(01)=01$, $c_2=01\oplus F_k(10)=10$ 이다. 두 모드 모두 같은 평문 블록이 다른 암호문 블록이 된다.
 
 ## 선택 평문 공격에 대한 안전성
 
 비밀키 암호화 방식 $\mathrm{Enc}$ 가 **IND-CPA(indistinguishability under chosen-plaintext attack)** 라는 것은 다음 게임에서 모든 확률적 다항시간 공격자의 이득이 무시할 만하다는 것이다. 공격자는 아무 메시지 $m$ 에 대해 $\mathrm{Enc}\_k(m)$ 을 받을 수 있다. 길이가 같은 두 메시지 $m_0,m_1$ 을 고르면 균등한 $b\in\lbrace 0,1\rbrace$ 에 대해 $\mathrm{Enc}\_k(m_b)$ 를 받고, 다시 암호화를 요청할 수 있으며, 마지막에 $b'$ 을 낸다. 이득은 $\vert\Pr\lbrack b'=b\rbrack-1/2\vert$ 다.
 
-공개키 암호의 IND-CPA 게임에서 공개키 대신 암호화 질의를 주면 이 게임이 된다.
+[의미론적 안전성](semantic-security.md)의 공개키 암호 IND-CPA 게임에서 공개키 대신 암호화 질의를 주면 이 게임이 된다.
 
 # 성질
 
