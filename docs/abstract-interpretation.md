@@ -8,57 +8,31 @@
 
 비자명한 의미론적 성질은 [Rice 정리](rice-theorem.md)에 따라 결정 불가능하므로, 분석기는 답을 한쪽으로만 틀리게 만든다. "이 배열 접근은 안전하다" 는 판정은 반드시 맞고, 위험하다는 판정은 틀릴 수 있다.
 
-Cousot 부부가 1977 년에 이 구도를 형식화했다.[^1] 구체 의미론의 영역 $C$ 와 추상 영역 $A$ 를 [Galois 연결](galois-connections.md)
-
-$$
-\alpha\colon C\rightleftarrows A\colon\gamma,\qquad \alpha(c)\sqsubseteq_A a\iff c\sqsubseteq_C\gamma(a)
-$$
-
-로 잇고, 구체 전이함수 $F$ 를 추상 전이함수 $F^\sharp\sqsupseteq\alpha\circ F\circ\gamma$ 로 올린다. Knaster–Tarski 정리가 양쪽에서 최소 고정점을 주고
-
-$$
-\gamma\bigl(\mathrm{lfp}\thinspace F^\sharp\bigr)\thickspace\sqsupseteq\thickspace\mathrm{lfp}\thinspace F
-$$
-
-가 따라온다. 이것이 **건전성**이다. 분석기가 계산한 추상값을 구체화하면 실제 도달 가능한 상태를 모두 포함한다.
-
 정확한 분석은 불가능하므로 무엇을 잃을지 먼저 정한다. 변수 $x$ 의 값 집합 $\lbrace 2,5,7\rbrace$ 대신 구간 $[2,7]$ 만 기억하면 집합의 [격자](order-lattices.md)에서 구간의 격자로 내려온 것이다. $\alpha(\lbrace 2,5,7\rbrace)=[2,7]$ 이고 $\gamma([2,7])=\lbrace 2,3,4,5,6,7\rbrace$ 이라 원래보다 커지며, 커지는 방향이 항상 같다. 과대근사만 하고 과소근사는 하지 않는다.
 
-건전성이 이 비대칭에서 나온다. 분석기가 $x\in[2,7]$ 을 내놓으면 실제 값이 그 안에 있으므로 $x\ne0$ 이라는 결론을 믿을 수 있고, $x\in[-1,7]$ 이 나오면 $0$ 인지 아닌지 가려지지 않는다. 거짓 경보는 나오지만 놓친 오류는 없다.
+건전성이 이 비대칭에서 나온다. 분석기가 $x\in[2,7]$ 을 내놓으면 실제 값이 그 안에 있으므로 $x\ne0$ 이라는 결론을 믿을 수 있고, $x\in[-1,7]$ 이 나오면 $0$ 인지 아닌지 가려지지 않는다. 거짓 경보는 나오지만 놓친 오류는 없다. Cousot 부부가 1977 년에 이 구도를 [Galois 연결](galois-connections.md)로 형식화했다.[^1]
 
 # 정의
 
 ## 추상 영역과 Galois 연결
 
-완비 격자 $(C,\sqsubseteq)$ 를 구체 영역, $(A,\sqsubseteq^\sharp)$ 를 추상 영역이라 하고 단조사상 쌍 $\alpha,\gamma$ 가 Galois 연결을 이룬다고 하자. $\alpha\circ\gamma=\mathrm{id}\_A$ 이면 **Galois 삽입**이며, 이때 추상 영역에 같은 것을 두 번 표현하는 잉여가 없다.
+완비 격자 $(C,\sqsubseteq)$ 를 구체 영역, $(A,\sqsubseteq^\sharp)$ 를 추상 영역이라 하고 단조사상 쌍 $\alpha,\gamma$ 가 Galois 연결을 이룬다고 하자. $\alpha\circ\gamma=\mathrm{id}\_A$ 이면 **Galois 삽입(Galois insertion)** 이라 하고, 이때 추상 영역에 같은 것을 두 번 표현하는 잉여가 없다.
 
-Galois 연결의 판정 조건이 설계에 쓰인다. $\gamma$ 를 먼저 정하고 그것이 하한을 보존하는지만 확인하면 $\alpha$ 는 자동으로 존재하고 유일하다.
+직관 절에서 $C$ 는 정수 집합의 멱집합, $A$ 는 정수 구간과 $\bot$ 의 격자이고, $\alpha$ 는 집합을 그것을 담는 가장 작은 구간으로, $\gamma$ 는 구간을 그 안의 정수 집합으로 보낸다. 구간 $\lbrack 2,7\rbrack$ 은 $\alpha(\gamma(\lbrack 2,7\rbrack))=\lbrack 2,7\rbrack$ 이므로 이 연결은 Galois 삽입이다.
 
 ## 건전한 추상 전이함수
 
-구체 전이함수 $F\colon C\to C$ 에 대해 $F^\sharp\colon A\to A$ 가 **건전**하다는 것은
+구체 전이함수 $F\colon C\to C$ 에 대해 $F^\sharp\colon A\to A$ 가 **건전(sound)** 하다는 것은
 
 $$
 \alpha\circ F\circ\gamma\thickspace\sqsubseteq^\sharp\thickspace F^\sharp
 $$
 
-곧 각 추상값에서 한 걸음 나아간 결과를 $F^\sharp$ 가 과대근사한다는 뜻이다. 등호가 성립하는 $F^\sharp=\alpha\circ F\circ\gamma$ 가 **최적 추상 전이함수**이며, 존재하지만 계산 가능하지 않을 수 있어 실무에서는 더 거친 것을 쓴다.
-
-## 고정점 전달 정리
-
-$F^\sharp$ 가 건전하면
-
-$$
-\mathrm{lfp}\thinspace F\thickspace\sqsubseteq\thickspace\gamma\bigl(\mathrm{lfp}\thinspace F^\sharp\bigr)
-$$
-
-가 성립한다.
-
-*증명.* $\mathrm{lfp}\thinspace F^\sharp$ 의 구체화가 $F$ 의 후고정점임을 확인하고 Knaster–Tarski 의 최소성을 쓴다. 분석기의 건전성 증명이 이 한 줄로 환원된다.
+곧 각 추상값에서 한 걸음 나아간 결과를 $F^\sharp$ 가 과대근사한다는 뜻이다. 등호가 성립하는 $F^\sharp=\alpha\circ F\circ\gamma$ 를 **최적 추상 전이함수(best abstract transformer)** 라 한다. 구체 전이함수 $F(S)=\lbrace x+1:x\in S\rbrace$ 에 대해 $F^\sharp(\lbrack l,u\rbrack)=\lbrack l+1,u+1\rbrack$ 은 최적 추상 전이함수다. $\lbrack 2,7\rbrack$ 에서 $F$ 를 거친 집합 $\lbrace 3,\dots,8\rbrace$ 을 담는 가장 작은 구간이 $\lbrack 3,8\rbrack$ 이다.
 
 ## 위드닝과 내로잉
 
-연산자 $\nabla\colon A\times A\to A$ 가 **위드닝**이라 함은 다음을 만족하는 것이다.
+연산자 $\nabla\colon A\times A\to A$ 가 **위드닝(widening)** 이라 함은 다음을 만족하는 것이다.
 
 1. $a\sqsubseteq a\nabla b$ 이고 $b\sqsubseteq a\nabla b$
 2. 임의의 수열 $(b_n)$ 에 대해 $a_0=b_0$ , $a_{n+1}=a_n\nabla b_{n+1}$ 로 정의한 수열이 유한 단계에 안정화
@@ -94,9 +68,27 @@ const narrowed = iterate(F, widened);
 
 순진한 반복은 $[0,0],[0,1],[0,2],\dots$ 로 한 칸씩 올라가 $102$ 단계가 걸리고, 상한이 $10^9$ 였다면 사실상 끝나지 않는다. 위드닝은 상한이 늘어나는 것을 보고 곧바로 $+\infty$ 로 점프해 $3$ 단계에 멈춘다. 그 결과 $[0,+\infty]$ 는 너무 거칠고, 여기서 다시 $F$ 를 반복하는 내로잉이 $[0,100]$ 을 회복한다. 위드닝은 임의로 크게 뛰어 답이 부정확해질 수 있지만 위로만 뛰므로 건전성은 깨지지 않는다.
 
-조건 2 가 종료를 강제한다. 대칭적으로 $\Delta$ 가 **내로잉**이라 함은 $b\sqsubseteq a$ 일 때 $b\sqsubseteq a\Delta b\sqsubseteq a$ 이고 하강 사슬이 안정화하는 것이다.
+조건 2 가 종료를 강제한다. 대칭적으로 $\Delta$ 가 **내로잉(narrowing)** 이라 함은 $b\sqsubseteq a$ 일 때 $b\sqsubseteq a\Delta b\sqsubseteq a$ 이고 하강 사슬이 안정화하는 것이다.
 
 # 성질
+
+## 고정점 전달 정리
+
+$F^\sharp$ 가 건전하면 다음이 성립한다. 이 정리를 고정점 전달 정리(fixpoint transfer theorem)라 한다.
+
+$$
+\mathrm{lfp}\thinspace F\thickspace\sqsubseteq\thickspace\gamma\bigl(\mathrm{lfp}\thinspace F^\sharp\bigr)
+$$
+
+*증명.* $\mathrm{lfp}\thinspace F^\sharp$ 의 구체화가 $F$ 의 후고정점임을 확인하고 Knaster–Tarski 의 최소성을 쓴다. 분석기의 건전성 증명이 이 한 줄로 환원된다.
+
+## 추상화 사상의 존재
+
+Galois 연결의 판정 조건이 설계에 쓰인다. $\gamma$ 를 먼저 정하고 그것이 하한을 보존하는지만 확인하면 $\alpha$ 는 자동으로 존재하고 유일하다.
+
+## 최적 추상 전이함수의 계산 가능성
+
+최적 추상 전이함수는 항상 존재하지만 계산 가능하지 않을 수 있어, 실무에서는 더 거친 건전한 전이함수를 쓴다.
 
 ## 정밀도와 비용의 교환
 
