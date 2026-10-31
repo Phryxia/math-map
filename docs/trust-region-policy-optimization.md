@@ -6,14 +6,6 @@
 
 # 직관
 
-신뢰영역 정책 최적화는 정책의 갱신 보폭을 파라미터 거리가 아니라 정책 분포 사이의 KL divergence 로 재는 제약 최적화다.
-
-$$\max_{\theta'}\thinspace L_\theta(\theta')\quad \text{subject to}\quad \bar D_{\mathrm{KL}}(\theta,\theta')\le\delta$$
-
-$L_\theta$ 는 옛 정책의 표본으로 적은 대리 목적함수이고 $\delta$ 는 신뢰영역의 반지름이다. 제약 안에서는 대리 목적의 개선량이 실제 성능의 개선량을 하한으로 보장한다.
-
-제약 문제를 그대로 풀려면 [Fisher 정보](fisher-information.md)[행렬](matrices.md)의 역행렬이 필요하다. 근접 정책 최적화(proximal policy optimization, PPO)는 그 제약을 중요도비의 잘라내기로 바꿔 제약 없는 1차 최적화로 만든 것이다.
-
 [정책 경사](policy-gradient.md)법은 기울기 추정량 $g$ 로 $\theta\leftarrow\theta+\eta\thinspace g$ 를 반복하고 보폭 $\eta$ 를 골라야 한다. 행동이 둘뿐인 정책 $\pi_\theta(a=1)=\sigma(\theta)$ 에서 같은 $\eta$ 가 정책을 얼마나 바꾸는지 본다.
 
 $\theta=0$ 에 $0.1$ 을 더하면 행동 $1$ 의 확률이 $0.500$ 에서 $0.525$ 로 간다. $\theta=4$ 에 같은 $0.1$ 을 더하면 $0.982$ 에서 $0.9837$ 로 간다. 앞에서는 확률이 $0.025$ 움직이고 뒤에서는 $0.0017$ 움직인다. 파라미터를 얼마나 움직였는지로는 정책이 얼마나 달라졌는지 알 수 없다.
@@ -26,23 +18,23 @@ $\theta=0$ 에 $0.1$ 을 더하면 행동 $1$ 의 확률이 $0.500$ 에서 $0.52
 
 ## 할인 방문분포와 대리 목적
 
-[Markov 결정 과정](markov-decision-process.md)과 정책족 $\pi_\theta$ 에 대해 할인 방문분포를 $d^{\theta}(s)=(1-\gamma)\sum_{t\ge 0}\gamma^t P(S_t=s)$ 로 둔다. 정책 $\pi_\theta$ 의 이점 함수를 $A^\theta$ 라 할 때 **대리 목적함수**는 다음이다.
+[Markov 결정 과정](markov-decision-process.md)과 정책족 $\pi_\theta$ 에 대해 **할인 방문분포(discounted state visitation distribution)** 를 $d^{\theta}(s)=(1-\gamma)\sum_{t\ge 0}\gamma^t P(S_t=s)$ 로 둔다. 정책 $\pi_\theta$ 의 이점 함수를 $A^\theta$ 라 할 때 **대리 목적함수(surrogate objective)** 는 다음이다.
 
 $$L_\theta(\theta')\thinspace=\thinspace\frac{1}{1-\gamma}\thinspace\mathbb E\_{s\sim d^\theta,\thinspace a\sim\pi_\theta}\left\lbrack \frac{\pi_{\theta'}(a\mid s)}{\pi_\theta(a\mid s)}\thinspace A^\theta(s,a)\right\rbrack$$
 
-방문분포와 행동분포가 모두 옛 정책 $\pi_\theta$ 의 것이므로 옛 표본으로 계산된다.
+방문분포와 행동분포가 모두 옛 정책 $\pi_\theta$ 의 것이므로 옛 표본으로 계산된다. 직관 절의 정책에서 상태가 하나이고 이점이 행동 $1$ 에서 $+1$, 행동 $0$ 에서 $-1$ 이면, $\theta=0$, $\theta'=0.1$ 의 기댓값 부분은 $0.5\cdot\frac{0.525}{0.5}\cdot1+0.5\cdot\frac{0.475}{0.5}\cdot(-1)=0.05$ 다.
 
 ## 신뢰영역 문제
 
-평균 KL divergence 를 $\bar D_{\mathrm{KL}}(\theta,\theta')=\mathbb E\_{s\sim d^\theta}\lbrack D_{\mathrm{KL}}(\pi_\theta(\cdot\mid s)\thinspace\Vert\thinspace\pi_{\theta'}(\cdot\mid s))\rbrack$ 로 둔다. **TRPO** 는 $\bar D_{\mathrm{KL}}(\theta,\theta')\le\delta$ 아래에서 $L_\theta(\theta')$ 를 최대화하는 $\theta'$ 를 한 번의 갱신으로 삼는다.
+평균 KL divergence 를 $\bar D_{\mathrm{KL}}(\theta,\theta')=\mathbb E\_{s\sim d^\theta}\lbrack D_{\mathrm{KL}}(\pi_\theta(\cdot\mid s)\thinspace\Vert\thinspace\pi_{\theta'}(\cdot\mid s))\rbrack$ 로 둔다. **TRPO** 는 $\bar D_{\mathrm{KL}}(\theta,\theta')\le\delta$ 아래에서 $L_\theta(\theta')$ 를 최대화하는 $\theta'$ 를 한 번의 갱신으로 삼는다. $\delta$ 를 신뢰영역의 반지름이라 한다. 위의 갱신 $\theta=0\to0.1$ 에서 KL divergence 는 $0.5\log\frac{0.5}{0.525}+0.5\log\frac{0.5}{0.475}\approx 0.00125$ 이므로 $\delta=0.01$ 이면 제약 안에 있다.
 
 ## 잘라낸 대리 목적
 
-확률비를 $r(\theta')=\pi_{\theta'}(a\mid s)/\pi_\theta(a\mid s)$ 라 하고 $\epsilon\gt 0$ 을 고정한다. **PPO** 는 제약 없이 다음을 최대화한다.
+확률비를 $r(\theta')=\pi_{\theta'}(a\mid s)/\pi_\theta(a\mid s)$ 라 하고 $\epsilon\gt 0$ 을 고정한다. **근접 정책 최적화(proximal policy optimization, PPO)** 는 제약 없이 다음을 최대화한다.
 
 $$L^{\mathrm{CLIP}}(\theta')\thinspace=\thinspace\mathbb E\lbrack\thinspace\min\lbrace r(\theta')A^\theta,\thinspace \mathrm{clip}(r(\theta'),1-\epsilon,1+\epsilon)\thinspace A^\theta\rbrace\thinspace\rbrack$$
 
-$\mathrm{clip}$ 은 첫 인자를 구간 $\lbrack 1-\epsilon,1+\epsilon\rbrack$ 으로 자르는 함수다.
+$\mathrm{clip}$ 은 첫 인자를 구간 $\lbrack 1-\epsilon,1+\epsilon\rbrack$ 으로 자르는 함수다. $\epsilon=0.2$ 이고 $A^\theta\gt 0$ 인 표본에서 $r=1.3$ 이면 항은 $\min(1.3A^\theta,1.2A^\theta)=1.2A^\theta$ 로, 확률비를 $1.2$ 넘게 키워도 목적이 더 늘지 않는다.
 
 # 성질
 
@@ -66,7 +58,7 @@ $\theta'=\theta$ 에서 우변의 뒤 두 항이 $0$ 이므로 하한과 $J$ 가
 
 ## 자연 경사 방향
 
-$\theta'=\theta+u$ 로 두고 목적을 1차, 제약을 2차까지 전개한다. $L_\theta$ 의 기울기는 정책 경사 $g$ 와 같고, $\bar D_{\mathrm{KL}}$ 의 [Hessian](hessian.md) 은 Fisher 정보행렬 $F$ 다.
+$\theta'=\theta+u$ 로 두고 목적을 1차, 제약을 2차까지 전개한다. $L_\theta$ 의 기울기는 정책 경사 $g$ 와 같고, $\bar D_{\mathrm{KL}}$ 의 [Hessian](hessian.md) 은 [Fisher 정보](fisher-information.md) 행렬 $F$ 다.
 
 $$u\thinspace=\thinspace\sqrt{\frac{2\delta}{g^\top F^{-1}g}}\thinspace F^{-1}g$$
 
