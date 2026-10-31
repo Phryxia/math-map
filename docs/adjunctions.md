@@ -2,17 +2,17 @@
 
 # 개요
 
-**수반(adjunction)** 은 두 [범주](category.md) 사이를 반대 방향으로 오가는 두 [함자](functors.md)에서, 한쪽으로 보낸 뒤의 사상과 다른 쪽으로 보낸 뒤의 사상이 일대일로 대응하는 관계다. 집합 $S$ 에서 군 $G$ 로 가는 함수와 $S$ 로 만든 자유군에서 $G$ 로 가는 준동형은 일대일로 대응하는데, 준동형은 생성원의 행선지만 정하면 정해지기 때문이다. 수반은 이런 대응이 성립하는 함자 쌍을 정의해, 한쪽 범주의 사상 문제를 다른 쪽 범주의 사상 문제로 바꿔 푼다.
+**수반(adjunction)** 은 두 [범주](category.md) 사이를 반대 방향으로 오가는 두 [함자](functors.md)에서, 한쪽으로 보낸 뒤의 사상과 다른 쪽으로 보낸 뒤의 사상이 일대일로 대응하는 관계다. 준동형은 생성원의 행선지만 정하면 정해지므로, 집합 $S$ 에서 [군](groups.md) $G$ 로 가는 함수와 $S$ 로 만든 자유군에서 $G$ 로 가는 준동형은 일대일로 대응한다. 수반은 이런 대응이 성립하는 함자 쌍을 정의해, 한쪽 범주의 사상 문제를 다른 쪽 범주의 사상 문제로 바꿔 푼다.
 
 # 직관
 
-수반은 두 함자 사이의 관계다. 두 범주 사이를 오가는 함자 $F$ , $G$ 가 있을 때, $F$ 로 보낸 뒤 잰 사상의 집합과 $G$ 로 보낸 뒤 잰 사상의 집합이 두 대상을 따라 호환되게 같으면 $F$ 는 $G$ 의 왼쪽 수반이다.
+집합 $S=\lbrace a,b\rbrace$ 의 글자와 그 역 $a^{-1}$, $b^{-1}$ 을 늘어놓은 낱말에서 $aa^{-1}$ 같은 이웃 쌍을 지운 것들은 이어 붙이기로 군을 이룬다. 이 군을 $S$ 로 만든 자유군(free group) $F(S)$ 라 한다. $F(S)$ 에서 정수의 덧셈군 $\mathbb Z$ 로 가는 준동형 $h$ 를 정하려면 $a$, $ab^{-1}a$, $b^3a^{-2}$ 처럼 끝없이 많은 낱말에 값을 주어야 한다.
 
-자유군 구성, 텐서곱, 지수 대상, 스칼라 확장, 논리의 한정기호가 모두 수반으로 기술된다. 수반은 [극한과 쌍대극한](limits-colimits.md)의 보존 여부도 결정한다. 왼쪽 수반이 쌍대극한을 보존하고 오른쪽 수반이 극한을 보존한다.
+준동형은 이어 붙이기를 덧셈으로 보내므로 $h(ab^{-1}a)=h(a)-h(b)+h(a)$ 다. $h(a)=2$, $h(b)=5$ 로 정하면 $h(ab^{-1}a)=2-5+2=-1$ 이고, 다른 낱말의 값도 같은 식으로 나온다. 두 값만 정하면 준동형 하나가 정해지고, 두 값을 다르게 정하면 다른 준동형이 나온다.
 
-$S=\lbrace a,b\rbrace$ 에서 군 $H$ 로 가는 집합 사상 하나를 고르면, $a$ 와 $b$ 로 적은 낱말 $ab^{-1}a$ 같은 것들에 그 상을 대입해 군 준동형이 하나 정해진다. 거꾸로 자유군 $F(S)$ 에서 $H$ 로 가는 준동형은 $a$ 와 $b$ 의 상만으로 결정된다. 그래서 집합 사상 $S\to U(H)$ 와 준동형 $F(S)\to H$ 가 일대일 대응하고, 이 대응이 자유군을 관계식 없는 생성으로 특징짓는다.
+두 값 $a\mapsto 2$, $b\mapsto 5$ 는 $S$ 에서 정수의 집합으로 가는 함수다. 군 $H$ 에 그 원소의 집합 $U(H)$ 를 대응시키는 함자를 $U$ 라 쓰면, 함수 $S\to U(\mathbb Z)$ 와 준동형 $F(S)\to\mathbb Z$ 가 일대일로 대응한다. 준동형에서 함수로 가는 쪽은 준동형을 길이 1 인 낱말 $a$, $b$ 에 제한하는 것이다. 함수 $S\to T$ 는 낱말의 글자를 바꿔 써서 준동형 $F(S)\to F(T)$ 를 주므로 $F$ 도 함자다.
 
-대응은 $S$ 와 $H$ 를 바꿔도 같은 모양이고 두 함자 $F$ 와 $U$ 만으로 적힌다. hom 집합의 크기만 같은 전단사로는 부족하고, 전단사가 사상과 호환된다는 조건이 있어야 unit 과 counit 을 뽑을 수 있다. 이 관계를 가진 함자 쌍에서 $F$ 를 왼쪽 수반, $U$ 를 오른쪽 수반이라 한다.
+이 대응은 뒤에 준동형을 합성해도 어긋나지 않는다. 3 으로 나눈 나머지를 주는 준동형 $v:\mathbb Z\to\mathbb Z/3\mathbb Z$ 를 $h$ 뒤에 합성한 $v\circ h$ 는 함수 $a\mapsto 2$, $b\mapsto 2$ 에 대응하고, 이것은 $h$ 에 대응하던 함수 $a\mapsto 2$, $b\mapsto 5$ 뒤에 $v$ 를 합성한 것과 같다. 대응이 이렇게 양쪽의 합성과 맞물리는 함자 쌍에서 $F$ 를 $U$ 의 왼쪽 수반, $U$ 를 $F$ 의 오른쪽 수반이라 한다.
 
 # 정의
 
@@ -24,47 +24,37 @@ $$
 F : \mathcal{C} \to \mathcal{D}, \qquad G : \mathcal{D} \to \mathcal{C}
 $$
 
-가 주어졌다고 하자. $F$ 가 $G$ 의 왼쪽 수반이라는 것은 전단사족
+가 주어졌다고 하자. $\mathrm{Hom}\_{\mathcal D}(Fc,d)$ 는 $Fc$ 에서 $d$ 로 가는 사상의 집합, 곧 hom 집합(hom-set)이다. $F$ 가 $G$ 의 **왼쪽 수반(left adjoint)** 이고 $G$ 가 $F$ 의 **오른쪽 수반(right adjoint)** 이라는 것은 전단사족
 
 $$
-\varphi_{c,d} : \mathrm{Hom}\_{\mathcal{D}}(Fc, d) \thickspace\xrightarrow{\ \sim\ }\thickspace \mathrm{Hom}\_{\mathcal{C}}(c, Gd)
+\varphi_{c,d} : \mathrm{Hom}\_{\mathcal{D}}(Fc, d) \thickspace\xrightarrow{\thickspace\sim\thickspace}\thickspace \mathrm{Hom}\_{\mathcal{C}}(c, Gd)
 $$
 
-이 존재하고, 이것이 $c$ 와 $d$ 양쪽에 대해 자연스럽다는 뜻이다. 자연성은 임의의 $u:c'\to c$ 와 $v:d\to d'$ 에 대해
+이 존재하고, 임의의 $u:c'\to c$ 와 $v:d\to d'$ 에 대해
 
 $$
 \varphi_{c',d'}(v \circ f \circ Fu) = Gv \circ \varphi_{c,d}(f) \circ u
 $$
 
-가 성립하는 것이다. 이 관계를 다음과 같이 적는다.
+가 성립한다는 뜻이다. 이 등식을 $c$ 와 $d$ 에 대한 **자연성(naturality)** 이라 하고, 이 관계를 다음과 같이 적는다.
 
 $$
 F \dashv G
 $$
 
-범주론에서는 두 함자
-
-$$
-\mathrm{Hom}\_{\mathcal{D}}(F-, -), \quad \mathrm{Hom}\_{\mathcal{C}}(-, G-) \thickspace : \thickspace \mathcal{C}^{\mathrm{op}} \times \mathcal{D} \to \mathbf{Set}
-$$
-
-사이의 자연동형을 주는 것이 수반이다.
-
-hom 집합 사이의 전단사가 존재하는 것만으로는 부족하다. 유한집합처럼 크기만 같아도 전단사는 생기므로, 자연성이 붙어야 [자연변환](natural-transformations.md)으로서의 동형이 되고 unit 과 counit 을 뽑아낼 수 있다.
+직관 절의 자유군에서 $\mathcal C$ 는 집합의 범주, $\mathcal D$ 는 군의 범주, $G=U$ 이고, $\varphi_{S,\mathbb Z}$ 는 준동형 $h$ 를 함수 $a\mapsto h(a)$, $b\mapsto h(b)$ 로 보낸다. $u=\mathrm{id}\_S$ 이고 $v$ 가 3 으로 나눈 나머지를 주는 준동형이면 자연성의 양변은 둘 다 함수 $a\mapsto 2$, $b\mapsto 2$ 다.
 
 ## unit 과 counit
 
-$F\dashv G$ 이면 두 자연변환
+$F\dashv G$ 이면 두 [자연변환](natural-transformations.md)
 
 $$
 \eta : \mathrm{id}\_{\mathcal{C}} \Rightarrow GF, \qquad \varepsilon : FG \Rightarrow \mathrm{id}\_{\mathcal{D}}
 $$
 
-이 정해진다. $\eta_c = \varphi(\mathrm{id}\_{Fc})$ 와 $\varepsilon_d = \varphi^{-1}(\mathrm{id}\_{Gd})$ 로 두면 된다. 이들은 삼각항등식을 만족한다.
+이 $\eta_c = \varphi_{c,Fc}(\mathrm{id}\_{Fc})$ 와 $\varepsilon_d = \varphi^{-1}\_{Gd,d}(\mathrm{id}\_{Gd})$ 로 정의된다. $\eta$ 를 수반의 **unit**, $\varepsilon$ 을 **counit** 이라 한다.
 
-$$
-(\varepsilon F) \circ (F \eta) = \mathrm{id}\_F, \qquad (G \varepsilon) \circ (\eta G) = \mathrm{id}\_G
-$$
+자유군 수반에서 $\eta_S:S\to U(F(S))$ 는 글자 $a$ 를 길이 1 인 낱말 $a$ 로 보낸다. $\varepsilon_{\mathbb Z}:F(U(\mathbb Z))\to\mathbb Z$ 는 정수를 글자로 쓴 낱말을 그 합으로 보낸다. 정수 $n$ 을 글자로 쓴 것을 $\lbrack n\rbrack$ 으로 적으면 낱말 $\lbrack 2\rbrack\lbrack 5\rbrack^{-1}\lbrack 2\rbrack$ 의 상은 $2-5+2=-1$ 이다.
 
 ```mermaid
 graph LR
@@ -80,14 +70,36 @@ graph LR
   d -. "G" .-> Gd
 ```
 
-그림의 아래쪽 경로가 전단사 $\varphi$ 다. $f : Fc \to d$ 를 $G$ 로 옮긴 뒤 unit 과 합성하면 $g : c \to Gd$ 가 되고, 반대로 $g$ 에서 $f = \varepsilon_d \circ Fg$ 를 복원한다.
+그림의 아래쪽 경로가 전단사 $\varphi$ 다. $f : Fc \to d$ 를 $G$ 로 옮긴 뒤 unit 과 합성하면 $g : c \to Gd$ 가 된다.
+
+# 성질
+
+## hom 함자의 자연동형
+
+$F\dashv G$ 는 두 함자
+
+$$
+\mathrm{Hom}\_{\mathcal{D}}(F-, -), \quad \mathrm{Hom}\_{\mathcal{C}}(-, G-) \thickspace : \thickspace \mathcal{C}^{\mathrm{op}} \times \mathcal{D} \to \mathbf{Set}
+$$
+
+사이의 자연동형과 같다. hom 집합 사이에 전단사가 존재하는 것만으로는 수반이 아니다. 유한집합은 크기만 같아도 전단사를 가지므로, 자연성이 있어야 자연변환으로서의 동형이 되고 unit 과 counit 이 정의된다.
+
+## 삼각항등식
+
+unit 과 counit 은 **삼각항등식(triangle identities)** 을 만족한다.
+
+$$
+(\varepsilon F) \circ (F \eta) = \mathrm{id}\_F, \qquad (G \varepsilon) \circ (\eta G) = \mathrm{id}\_G
+$$
+
+자유군 수반에서 $(U\varepsilon)\circ(\eta U)$ 는 정수 $n$ 을 길이 1 인 낱말 $\lbrack n\rbrack$ 으로 보낸 뒤 그 합 $n$ 으로 보내므로 항등이다. $g : c \to Gd$ 에서 $f$ 는 $f = \varepsilon_d \circ Fg$ 로 복원된다.
 
 ## 두 정의의 동치
 
-**정리.** 함자 $F$ , $G$ 에 대해 다음은 동치다.
+함자 $F$ , $G$ 에 대해 다음은 동치다.
 
 1. 삼각항등식을 만족하는 자연변환 쌍 $(\eta, \varepsilon)$ 이 존재한다.
-2. $c$ 와 $d$ 에 대해 자연스러운 전단사 $\mathrm{Hom}(Fc, d) \cong \mathrm{Hom}(c, Gd)$ 가 존재한다.
+2. $c$ 와 $d$ 에 대해 자연성을 만족하는 전단사 $\mathrm{Hom}(Fc, d) \cong \mathrm{Hom}(c, Gd)$ 가 존재한다.
 
 *증명의 요지.* (1) → (2): $f : Fc \to d$ 에 $Gf \circ \eta_c$ 를 대응시키고, $g : c \to Gd$ 에 $\varepsilon_d \circ Fg$ 를 대응시킨다. 한쪽 합성을 계산하면
 
@@ -95,9 +107,9 @@ $$
 \varepsilon_d \circ F(Gf \circ \eta_c) = \varepsilon_d \circ FGf \circ F\eta_c = f \circ \varepsilon_{Fc} \circ F\eta_c = f
 $$
 
-이고 여기서 두 번째 등호는 $\varepsilon$ 의 자연성이며 세 번째는 삼각항등식이다. 반대 방향도 대칭이다. 자연성은 $F$ 와 $G$ 가 함자이고 $\eta$ 와 $\varepsilon$ 이 자연변환이라는 데서 곧바로 나온다.
+이고 여기서 두 번째 등호는 $\varepsilon$ 의 자연성이며 세 번째는 삼각항등식이다. 반대 방향도 대칭이다. 자연성은 $F$ 와 $G$ 가 함자이고 $\eta$ 와 $\varepsilon$ 이 자연변환이라는 데서 나온다.
 
-(2) → (1): 위에서처럼 항등사상의 상으로 $\eta$ 와 $\varepsilon$ 을 정의하면 전단사의 자연성이 곧 삼각항등식이 된다. ∎
+(2) → (1): 정의 절에서처럼 항등사상의 상으로 $\eta$ 와 $\varepsilon$ 을 정의하면 전단사의 자연성으로부터 삼각항등식이 유도된다. ∎
 
 ## unit 의 보편성질
 
@@ -107,9 +119,7 @@ $$
 g = G\tilde{g} \circ \eta_c
 $$
 
-를 만족하는 $\tilde g:Fc\to d$ 가 유일하게 존재한다. 이것이 자유 구성의 보편성질이다. 역으로 각 $c$ 마다 이런 보편 사상이 존재하면 $F$ 를 함자로 확장할 수 있고 $F\dashv G$ 가 된다. 수반의 존재는 대상마다의 보편성질을 모은 것과 같다.
-
-# 성질
+를 만족하는 $\tilde g:Fc\to d$ 가 유일하게 존재한다. 이것이 자유 구성의 보편성질(universal property)이다. 자유군에서 $\tilde g$ 는 함수 $g:S\to U(H)$ 로 정해지는 준동형 $F(S)\to H$ 다. 역으로 각 $c$ 마다 이런 보편 사상이 존재하면 $F$ 를 함자로 확장할 수 있고 $F\dashv G$ 가 된다. 수반의 존재는 대상마다의 보편성질을 모은 것과 같다.
 
 ## 유일성
 
@@ -119,18 +129,18 @@ $$
 \mathrm{Hom}\_{\mathcal{C}}(c, Gd) \cong \mathrm{Hom}\_{\mathcal{D}}(Fc, d) \cong \mathrm{Hom}\_{\mathcal{C}}(c, G'd)
 $$
 
-가 $c$ 에 대해 자연스러우므로 [Yoneda lemma](yoneda-lemma.md)의 따름정리(Yoneda 매장의 충실충만성)으로 $Gd \cong G'd$ 이고, 이 동형은 $d$ 에 대해 자연스럽다. 왼쪽 수반도 같은 이유로 유일하다.
+가 $c$ 에 대해 자연성을 만족하므로 [Yoneda lemma](yoneda-lemma.md)의 따름정리(Yoneda 매장의 충실충만성)로 $Gd \cong G'd$ 이고, 이 동형은 $d$ 에 대해 자연성을 만족한다. 왼쪽 수반도 같은 이유로 유일하다.
 
 ## Yoneda lemma 와의 관계
 
-수반은 표현가능성으로 다시 쓸 수 있다.
+수반은 표현 가능성(representability)으로 다시 쓸 수 있다.
 
-- $G:\mathcal D\to\mathcal C$ 의 왼쪽 수반이 존재할 필요충분조건은, 각 대상 $c$ 에 대해 함자 $\mathrm{Hom}\_{\mathcal C}(c,G-):\mathcal D\to\mathbf{Set}$ 가 표현가능한 것이다. 그때 표현 대상이 $Fc$ 다.
+- $G:\mathcal D\to\mathcal C$ 의 왼쪽 수반이 존재할 필요충분조건은, 각 대상 $c$ 에 대해 함자 $\mathrm{Hom}\_{\mathcal C}(c,G-):\mathcal D\to\mathbf{Set}$ 가 [표현 가능 함자](representable-functors.md)인 것이다. 그때 표현 대상이 $Fc$ 다.
 - Yoneda lemma 는 이 표현 대상이 유일하며 $c$ 에 대한 함자성이 자동으로 따라옴을 보장한다. 수반의 자연성 조건은 Yoneda 매장이 충실충만하다는 사실의 응용이다.
 
 ## 극한과 쌍대극한의 보존
 
-**정리 (RAPL).** 오른쪽 수반은 모든 극한을 보존하고, 왼쪽 수반은 모든 쌍대극한을 보존한다. 이름은 **RAPL**(right adjoints preserve limits)에서 왔다.
+오른쪽 수반은 모든 [극한](limits-colimits.md)을 보존하고, 왼쪽 수반은 모든 쌍대극한을 보존한다. 이 정리를 RAPL(right adjoints preserve limits)이라 부른다.
 
 *증명의 요지.* $\mathcal D$ 안의 도형 $d_i$ 가 극한 $\lim d_i$ 를 가진다고 하자. 임의의 $c$ 에 대해
 
@@ -138,7 +148,7 @@ $$
 \mathrm{Hom}\_{\mathcal{C}}(c, G(\lim_i d_i)) \cong \mathrm{Hom}\_{\mathcal{D}}(Fc, \lim_i d_i) \cong \lim_i \mathrm{Hom}\_{\mathcal{D}}(Fc, d_i) \cong \lim_i \mathrm{Hom}\_{\mathcal{C}}(c, G d_i)
 $$
 
-이다. 가운데 등호는 hom 함자가 두 번째 변수에서 극한을 보존한다는 사실이고, 나머지는 수반이다. 오른쪽 끝은 $\mathrm{Hom}(c, \lim G d_i)$ 와 같으므로 Yoneda 보조정리로 $G(\lim d_i) \cong \lim G d_i$ 다. 쌍대극한 쪽은 반대 범주에서 같은 논증을 한다. ∎
+이다. 가운데 등호는 hom 함자가 두 번째 변수에서 극한을 보존한다는 사실이고, 나머지는 수반이다. 오른쪽 끝은 $\mathrm{Hom}(c, \lim G d_i)$ 와 같으므로 Yoneda lemma 로 $G(\lim d_i) \cong \lim G d_i$ 다. 쌍대극한 쪽은 반대 범주에서 같은 논증을 한다. ∎
 
 대우를 쓰면 부정 판정이 된다. 어떤 구성이 쌍대극한(몫, 직합)을 깨뜨리면 그 구성은 왼쪽 수반이 아니고, 극한(곱, 핵)을 깨뜨리면 오른쪽 수반이 아니다. [가군](modules.md)에서 텐서곱은 직합을 보존하므로 왼쪽 수반 후보이고, 실제로 Hom 의 왼쪽 수반이다.
 
@@ -146,9 +156,9 @@ $$
 
 역방향 질문, 즉 극한을 보존하는 함자가 수반을 가지는지는 크기 조건을 하나 더 요구한다.
 
-**Freyd adjoint functor theorem (진술).** $\mathcal D$ 가 locally small, complete 이고 $G:\mathcal D\to\mathcal C$ 가 모든 작은 극한을 보존하며 solution set condition 을 만족하면 $G$ 는 왼쪽 수반을 가진다.[^1]
+Freyd 수반 함자 정리(Freyd adjoint functor theorem). $\mathcal D$ 가 국소적으로 작고(locally small) 완비(complete)이며 $G:\mathcal D\to\mathcal C$ 가 모든 작은 극한을 보존하고 해집합 조건(solution set condition)을 만족하면 $G$ 는 왼쪽 수반을 가진다.[^1]
 
-solution set condition 은 각 $c$ 마다 $c\to Gd$ 꼴 사상을 대표하는 작은 집합이 있다는 조건이다. 이 조건은 크기 문제 하나 때문에 수반이 없는 경우를 배제한다.
+해집합 조건은 각 $c$ 마다 $c\to Gd$ 꼴 사상을 대표하는 작은 집합이 있다는 조건이다. 이 조건은 크기 문제 하나 때문에 수반이 없는 경우를 배제한다.
 
 ## 합성과 동치
 
@@ -176,7 +186,7 @@ $$
 f(x) \le y \iff x \le g(y)
 $$
 
-가 성립하는 상황이다. $f(x)$ 는 $x$ 를 담는 가장 작은 원소, $g(y)$ 는 $y$ 안에 들어가는 가장 큰 원소라는 최적화 문제의 해로 읽힌다. 일반 범주의 수반은 이 부등식을 사상의 집합 사이 전단사로 승격시킨 것이다.
+가 성립하는 상황이다. $f(x)$ 는 $x\le g(y)$ 를 만족하는 $y$ 가운데 가장 작은 것이고, $g(y)$ 는 $f(x)\le y$ 를 만족하는 $x$ 가운데 가장 큰 것이다. 일반 범주의 수반에서는 이 부등식 자리에 hom 집합 사이의 전단사가 온다.
 
 # 활용
 
@@ -186,7 +196,7 @@ $$
 
 | 왼쪽 수반 | 오른쪽 수반 | unit 이 주는 것 |
 | --- | --- | --- |
-| 자유 [군](groups.md) | 바탕집합 | 생성원 포함 |
+| 자유군 | 바탕집합 | 생성원 포함 |
 | 자유 가군 | 바탕집합 | 기저 포함 |
 | 자유 [벡터 공간](vector-spaces.md) | 바탕집합 | 기저 포함 |
 | [다항식환](polynomial-rings.md) | 바탕 [환](rings.md) | 부정원 지정 |
@@ -217,13 +227,13 @@ $$
 \mathrm{Hom}\_{S}(S \otimes_R M, N) \cong \mathrm{Hom}\_{R}(M, f^{\ast}N)
 $$
 
-이 성립하여 $S \otimes_R - \dashv f^\ast$ 다. 여기서 나오는 일반형이 tensor-hom 수반
+이 성립하여 $S \otimes_R - \dashv f^\ast$ 다. 이 식의 일반형이 tensor-hom 수반(tensor-hom adjunction)
 
 $$
 \mathrm{Hom}\_{S}(M \otimes_R N, P) \cong \mathrm{Hom}\_{R}(M, \mathrm{Hom}\_{S}(N, P))
 $$
 
-이고, 자세한 구성은 [텐서곱](tensor-products.md)에서 다룬다. 이 수반에서 텐서곱이 쌍대극한을 보존하므로 우완전이라는 결론이 나온다. Hom 은 극한을 보존하므로 좌완전이다. 환의 [국소화](localization-rings.md) 역시 같은 틀에서 왼쪽 수반으로 나타난다.
+이고, 자세한 구성은 [텐서곱](tensor-products.md) 문서에 있다. 이 수반에서 텐서곱이 쌍대극한을 보존하므로 우완전(right exact)이다. Hom 은 극한을 보존하므로 좌완전(left exact)이다. 환의 [국소화](localization-rings.md) 역시 같은 틀에서 왼쪽 수반으로 나타난다.
 
 ## 논리와 기하
 
