@@ -6,11 +6,7 @@
 
 # 직관
 
-범용 해시족은 키 집합에서 $m$ 개의 칸으로 가는 함수들의 모임으로서, 그 가운데 하나를 무작위로 고르면 서로 다른 두 키가 같은 칸으로 갈 확률이 $1/m$ 이하인 것이다. Carter 와 Wegman 이 1979 년에 정의했다[^1].
-
-키 집합이 칸 수보다 크면 함수 하나를 고정했을 때 [비둘기집 원리](pigeonhole-principle.md)로 한 칸에 몰리는 키 집합이 반드시 있다. 함수를 족에서 무작위로 고르면 어떤 키 집합이 들어와도 충돌 수의 기댓값이 작다. [유한 확률 공간](probability.md)의 확률을 함수의 선택에 두고, 족은 [정수의 합동](modular-arithmetic.md)의 일차식으로 만든다.
-
-[해시 테이블](hash-tables.md)은 키 $x$ 를 칸 $h(x)\in\lbrace 0,\dots,m-1\rbrace$ 에 넣고 같은 칸에 든 키들을 목록으로 잇는다. 키를 찾는 시간은 그 칸의 목록 길이다. $m=100$ 이고 $h(x)=x \bmod 100$ 이면, 키가 $0,100,200,\dots$ 처럼 100 의 배수로만 들어올 때 모든 키가 칸 $0$ 에 모이고 찾는 시간이 키 개수에 비례한다. 키 집합이 칸보다 크므로 어떤 $h$ 를 고정해도 이렇게 한 칸에 모이는 키들이 있다.
+[해시 테이블](hash-tables.md)은 키 $x$ 를 칸 $h(x)\in\lbrace 0,\dots,m-1\rbrace$ 에 넣고 같은 칸에 든 키들을 목록으로 잇는다. 키를 찾는 시간은 그 칸의 목록 길이다. $m=100$ 이고 $h(x)=x \bmod 100$ 이면, 키가 $0,100,200,\dots$ 처럼 100 의 배수로만 들어올 때 모든 키가 칸 $0$ 에 모이고 찾는 시간이 키 개수에 비례한다. 키 집합이 칸보다 크므로 어떤 $h$ 를 고정해도 [비둘기집 원리](pigeonhole-principle.md)로 이렇게 한 칸에 모이는 키들이 있다.
 
 이 키들은 $h$ 를 보고 고른 것이어서 한 칸에 모였다. 그래서 키가 정해진 뒤 $h$ 를 무작위로 고른다. 키보다 큰 소수 $p$ 를 잡고 $a\in\lbrace 1,\dots,p-1\rbrace$ 과 $b\in\lbrace 0,\dots,p-1\rbrace$ 을 무작위로 골라 $h(x)=((ax+b)\bmod p)\bmod m$ 으로 둔다. 그러면 키 $0$ 과 $100$ 이 같은 칸에 갈 확률은 $1/m$ 이하이고, 다른 어떤 두 키를 넣어도 같은 한계가 나온다. 이런 함수들의 모임이 범용 해시족이다.
 
@@ -18,19 +14,23 @@
 
 ## 범용성
 
-$U$ 는 키 집합이고 $\mathcal H$ 는 $U\to\lbrace 0,\dots,m-1\rbrace$ 함수의 유한한 모임이다. $h$ 를 $\mathcal H$ 에서 균등하게 고를 때, 서로 다른 모든 $x,y\in U$ 에 대해 다음이 성립하면 $\mathcal H$ 를 **범용(universal)** 이라 한다.
+$U$ 는 키 집합이고 $\mathcal H$ 는 $U\to\lbrace 0,\dots,m-1\rbrace$ 함수의 유한한 모임이다. $h$ 를 $\mathcal H$ 에서 균등하게 고르는 [유한 확률 공간](probability.md)에서, 서로 다른 모든 $x,y\in U$ 에 대해 다음이 성립하면 $\mathcal H$ 를 **범용(universal)** 이라 한다. Carter 와 Wegman 이 1979 년에 정의했다[^1].
 
 $$
 \Pr\_{h}\lbrack h(x)=h(y)\rbrack\le\frac{1}{m}
 $$
+
+예. $U=\lbrace 0,1,2\rbrace$, $m=2$ 에서 $f=(0,0,1)$, $g=(0,1,0)$ 으로 $f(0),f(1),f(2)$ 와 $g(0),g(1),g(2)$ 를 정하면 $\mathcal H=\lbrace f,g\rbrace$ 는 범용이다. $0$ 과 $1$ 은 $f$ 에서만, $0$ 과 $2$ 는 $g$ 에서만 충돌해 확률이 $1/2$ 이고, $1$ 과 $2$ 는 충돌하지 않는다. 직관 절의 $h(x)=x\bmod 100$ 하나만 든 족은 $0$ 과 $100$ 이 확률 $1$ 로 충돌하므로 범용이 아니다.
 
 ## 쌍마다 독립
 
 서로 다른 모든 $x,y\in U$ 와 모든 칸 $s,t$ 에 대해 다음이 성립하면 $\mathcal H$ 를 **쌍마다 독립(pairwise independent)** 이라 한다. Wegman 과 Carter 는 이것을 **강한 범용(strongly universal)** 이라 불렀다[^2].
 
 $$
-\Pr\_{h}\lbrack h(x)=s,\ h(y)=t\rbrack=\frac{1}{m^2}
+\Pr\_{h}\lbrack h(x)=s,\thinspace h(y)=t\rbrack=\frac{1}{m^2}
 $$
+
+예. $U=\lbrace 0,1\rbrace$, $m=2$ 에서 $a,b\in\lbrace 0,1\rbrace$ 로 $h\_{a,b}(x)=(ax+b)\bmod 2$ 네 개를 두면 $(h\_{a,b}(0),h\_{a,b}(1))=(b,a+b\bmod 2)$ 가 $(0,0),(0,1),(1,0),(1,1)$ 을 한 번씩 지나므로 각 쌍의 확률이 $1/4$ 이고 쌍마다 독립이다. 앞의 $\lbrace f,g\rbrace$ 는 $(f(1),f(2))=(0,1)$, $(g(1),g(2))=(1,0)$ 이라 $(0,0)$ 이 나오지 않으므로 쌍마다 독립이 아니다.
 
 $s$ 와 $t$ 가 같은 경우를 더하면 충돌 확률이 정확히 $1/m$ 이므로 쌍마다 독립인 족은 범용이다.
 
@@ -38,10 +38,10 @@ $s$ 와 $t$ 가 같은 경우를 더하면 충돌 확률이 정확히 $1/m$ 이�
 
 ## Carter–Wegman 족
 
-정리. $p$ 가 소수이고 $U\subseteq\lbrace 0,\dots,p-1\rbrace$ 이면 다음 족은 범용이다[^1].
+정리. $p$ 가 소수이고 $U\subseteq\lbrace 0,\dots,p-1\rbrace$ 이면 [정수의 합동](modular-arithmetic.md)의 일차식으로 만든 다음 족은 범용이다[^1].
 
 $$
-h\_{a,b}(x)=((ax+b)\bmod p)\bmod m,\qquad a\in\lbrace 1,\dots,p-1\rbrace,\ b\in\lbrace 0,\dots,p-1\rbrace
+h\_{a,b}(x)=((ax+b)\bmod p)\bmod m,\qquad a\in\lbrace 1,\dots,p-1\rbrace,\thinspace b\in\lbrace 0,\dots,p-1\rbrace
 $$
 
 증명의 요지. $x\ne y$ 를 고정하고 $r=ax+b \bmod p$, $s=ay+b \bmod p$ 로 둔다. $r-s\equiv a(x-y)\pmod p$ 이고 $p$ 가 소수이므로 $r\ne s$ 다. $a=(r-s)(x-y)^{-1}$, $b=r-ax$ 로 거꾸로 풀리므로 $(a,b)$ 에서 $(r,s)$ 로 가는 사상은 $p(p-1)$ 개의 쌍과 $r\ne s$ 인 쌍 $p(p-1)$ 개 사이의 전단사다. 그래서 $(r,s)$ 는 서로 다른 쌍 위에서 균등하다. $r$ 을 고정하면 $s\ne r$ 이고 $s\equiv r\pmod m$ 인 $s$ 는 $(p-1)/m$ 개 이하이므로 충돌 확률은 $1/m$ 이하다.
