@@ -6,33 +6,37 @@
 
 # 직관
 
-[멱급수](power-series.md)는 수렴원 밖을 모른다. 그러나 수렴원 안의 다른 점에서 Taylor 전개를 다시 하면 새 수렴원이 원래 원 바깥으로 삐져나올 수 있고, 이 재전개를 이어 붙이면 정의역이 넓어진다. 넓힌 함수가 여럿일 걱정은 없다. 두 확장이 원래 영역에서 일치하면 항등정리가 둘을 같게 만든다.
+[멱급수](power-series.md) $1+z+z^2+\cdots$ 는 $\vert z\vert\lt 1$ 에서만 수렴하고, 그 밖의 점 $z=-3/2$ 에서는 값을 주지 않는다. 수렴원 안의 점 $-1/2$ 에서 같은 함수를 다시 전개하면 다음 급수가 나온다.
 
-이어 붙이는 길이 여럿이면 도착한 값이 달라질 수 있다. $\log z$ 를 원점 둘레로 한 바퀴 돌려 연속하면 $2\pi i$ 만큼 어긋난다. 길에 무관한 조건은 영역의 단순연결성이다.
+$$
+\frac{1}{1-z}=\sum_{n\ge 0}\frac{(z+1/2)^n}{(3/2)^{n+1}}
+$$
 
-[감마 함수](gamma-function.md)와 [Riemann zeta 함수](riemann-zeta.md)가 복소평면 전체의 유리형함수로 확장되는 것이 그 예다.
+새 급수는 $\vert z+1/2\vert\lt 3/2$ 에서 수렴하므로 $z=-3/2$ 를 포함하고, 그 점의 값 $2/5$ 를 준다. 원 안의 다른 점에서 다시 전개하기를 이어 가면 정의역이 넓어진다.
+
+이어 붙이는 길이 여럿이면 도착한 값이 달라질 수 있다. $\log z$ 를 $z=1$ 에서 원점 둘레로 한 바퀴 돌며 이어 붙이면 출발할 때의 값 $0$ 이 아니라 $2\pi i$ 에 도착한다.
 
 # 정의
 
 ## 해석적 연속
 
-영역 $D\subset\mathbb C$ 위의 정칙함수 $f$ 와 영역 $D'\supset D$ 위의 정칙함수 $F$ 가
+영역 $D\subset\mathbb C$ 위의 [정칙함수](holomorphic-functions.md) $f$ 와 영역 $D'\supset D$ 위의 정칙함수 $F$ 가
 
 $$F\vert_D=f$$
 
-를 만족하면 $F$ 를 $f$ 의 $D'$ 로의 **해석적 연속**이라 한다. 여기서 영역은 연결된 열린집합이고, $F\vert_D$ 는 $F$ 를 $D$ 로 제한한 함수다.
+를 만족하면 $F$ 를 $f$ 의 $D'$ 로의 **해석적 연속** 이라 한다. 여기서 영역은 연결된 열린집합이고, $F\vert_D$ 는 $F$ 를 $D$ 로 제한한 함수다. 단위원판 위의 $f(z)=\sum_{n\ge0}z^n$ 에 대해 $\mathbb C\setminus\lbrace 1\rbrace$ 위의 $F(z)=1/(1-z)$ 가 해석적 연속이다.
 
 ## 함수 요소와 경로를 따른 연속
 
-**함수 요소**는 열린 원판 $D$ 와 그 위의 정칙함수 $f$ 의 쌍 $(f,D)$ 다. 두 함수 요소 $(f_1,D_1)$ , $(f_2,D_2)$ 가 $D_1\cap D_2\neq\varnothing$ 이고 그 교집합의 어느 연결성분에서 $f_1=f_2$ 이면 서로 **직접 해석적 연속**이라 한다.
+**함수 요소(function element)** 는 열린 원판 $D$ 와 그 위의 정칙함수 $f$ 의 쌍 $(f,D)$ 다. 두 함수 요소 $(f_1,D_1)$ , $(f_2,D_2)$ 가 $D_1\cap D_2\neq\varnothing$ 이고 그 교집합의 어느 연결성분에서 $f_1=f_2$ 이면 서로 **직접 해석적 연속(direct analytic continuation)** 이라 한다. 직관 절의 두 급수와 그 수렴원판이 이루는 두 함수 요소는 교집합에서 둘 다 $1/(1-z)$ 이므로 서로 직접 해석적 연속이다.
 
-곡선 $\gamma:[0,1]\to\mathbb C$ 를 따른 연속은 각 $t$ 에 $\gamma(t)$ 를 중심으로 하는 함수 요소 $(f_t,D_t)$ 를 대응시키되, $s$ 가 $t$ 에 충분히 가까우면 $(f_s,D_s)$ 와 $(f_t,D_t)$ 가 직접 해석적 연속이 되도록 하는 것이다. 이런 대응이 있으면 $f_0$ 이 $\gamma$ 를 따라 $f_1$ 로 연속된다고 한다.
+곡선 $\gamma:[0,1]\to\mathbb C$ 를 따른 연속은 각 $t$ 에 $\gamma(t)$ 를 중심으로 하는 함수 요소 $(f_t,D_t)$ 를 대응시키되, $s$ 가 $t$ 에 충분히 가까우면 $(f_s,D_s)$ 와 $(f_t,D_t)$ 가 직접 해석적 연속이 되도록 하는 것이다. 이런 대응이 있으면 $f_0$ 이 $\gamma$ 를 따라 $f_1$ 로 연속된다고 한다. $\gamma(t)=e^{2\pi it}$ 를 따라 $f_0$ 을 $1$ 근방의 주치 로그로 두고 연속하면 $f_1=f_0+2\pi i$ 다.
 
 # 성질
 
 ## 항등정리
 
-영역 $D$ 에서 정칙인 $f,g$ 가 $D$ 안에 집적점을 갖는 부분집합에서 일치하면 $D$ 전체에서 $f=g$ 다.
+항등정리(identity theorem). 영역 $D$ 에서 정칙인 $f,g$ 가 $D$ 안에 집적점을 갖는 부분집합에서 일치하면 $D$ 전체에서 $f=g$ 다.
 
 증명의 요지는 영점 집합의 열림과 닫힘이다. $h=f-g$ 라 두고 $h$ 의 영점이 집적하는 점 $a$ 를 잡으면, $a$ 에서의 Taylor 계수가 귀납적으로 전부 $0$ 이 되어 $a$ 의 근방에서 $h\equiv0$ 이다. 따라서 "근방에서 항등적으로 $0$ 인 점들의 집합" 은 열린 동시에 닫혀 있고, $D$ 가 연결이므로 $D$ 전체다.
 
@@ -40,13 +44,13 @@ $$F\vert_D=f$$
 
 ## 단일가치 정리
 
-$D$ 가 단순연결이고 $f$ 가 $D$ 안의 모든 경로를 따라 연속 가능하면, 그 연속은 경로의 호모토피류에만 의존하므로 $D$ 위의 단일가치 정칙함수를 준다.
+단일가치 정리(monodromy theorem). $D$ 가 단순연결이고 $f$ 가 $D$ 안의 모든 경로를 따라 연속 가능하면, 그 연속은 경로의 호모토피류에만 의존하므로 $D$ 위의 단일가치 정칙함수를 준다.
 
 단순연결이 아니면 결론이 깨진다. $\mathbb C\setminus\lbrace 0\rbrace$ 에서 $\log z$ 와 $\sqrt z$ 는 원점을 도는 경로를 따라 연속하면 원래 값으로 돌아오지 않는다. 이 어긋남이 [Riemann 곡면](riemann-surfaces.md)을 만드는 동기다.
 
 ## 자연 경계
 
-수렴원 위의 모든 점이 특이점이면 그 원 밖으로의 연속이 존재하지 않는다. 이때 수렴원을 **자연 경계**라 한다. 간극급수
+수렴원 위의 모든 점이 특이점이면 그 원 밖으로의 연속이 존재하지 않는다. 이때 수렴원을 **자연 경계(natural boundary)** 라 한다. 간극급수(lacunary series)
 
 $$f(z)=\sum_{n\ge0}z^{2^n}$$
 
@@ -54,7 +58,7 @@ $$f(z)=\sum_{n\ge0}z^{2^n}$$
 
 ## Schwarz 반사 원리
 
-상반평면의 영역 $D^+$ 에서 정칙이고 실축의 구간 $I$ 까지 연속으로 확장되어 $I$ 위에서 [실수](real-numbers.md)값을 갖는 $f$ 는
+Schwarz 반사 원리(Schwarz reflection principle). 상반평면의 영역 $D^+$ 에서 정칙이고 실축의 구간 $I$ 까지 연속으로 확장되어 $I$ 위에서 [실수](real-numbers.md)값을 갖는 $f$ 는
 
 $$F(z)=\begin{cases}f(z)&z\in D^+\cup I\cr \overline{f(\bar z)}&\bar z\in D^+\end{cases}$$
 
@@ -62,8 +66,8 @@ $$F(z)=\begin{cases}f(z)&z\in D^+\cup I\cr \overline{f(\bar z)}&\bar z\in D^+\en
 
 # 활용
 
-- [감마 함수](gamma-function.md): 적분 $\Gamma(s)=\int_0^\infty t^{s-1}e^{-t}\thinspace dt$ 는 $\mathrm{Re}\thinspace s\gt 0$ 에서만 수렴한다. 함수방정식 $\Gamma(s+1)=s\Gamma(s)$ 를 $\Gamma(s)=\Gamma(s+1)/s$ 로 거꾸로 읽어 왼쪽으로 한 칸씩 연속하면 $s=0,-1,-2,\dots$ 에 단순극을 갖는 유리형함수가 된다.
-- [Riemann zeta 함수](riemann-zeta.md): $\zeta(s)=\sum_{n\ge1}n^{-s}$ 는 $\mathrm{Re}\thinspace s\gt 1$ 에서 수렴한다. 완비 zeta 함수의 함수방정식 $\xi(s)=\xi(1-s)$ 가 $s=1$ 의 단순극을 제외한 복소평면 전체로의 연속을 준다. [소수 정리](prime-number-theorem.md)의 증명은 연속된 $\zeta$ 가 직선 $\mathrm{Re}\thinspace s=1$ 위에서 영점을 갖지 않는다는 데 기댄다.
+- [감마 함수](gamma-function.md): 적분 $\Gamma(s)=\int_0^\infty t^{s-1}e^{-t}\thinspace dt$ 는 $\mathrm{Re}\thinspace s\gt 0$ 에서만 수렴한다. 함수방정식 $\Gamma(s+1)=s\Gamma(s)$ 를 $\Gamma(s)=\Gamma(s+1)/s$ 로 거꾸로 써서 왼쪽으로 한 칸씩 연속하면 $s=0,-1,-2,\dots$ 에 단순극을 갖는 유리형함수가 된다.
+- [Riemann zeta 함수](riemann-zeta.md): $\zeta(s)=\sum_{n\ge1}n^{-s}$ 는 $\mathrm{Re}\thinspace s\gt 1$ 에서 수렴한다. 완비 zeta 함수(completed zeta function)의 함수방정식 $\xi(s)=\xi(1-s)$ 가 $s=1$ 의 단순극을 제외한 복소평면 전체로의 연속을 준다. [소수 정리](prime-number-theorem.md)의 증명은 연속된 $\zeta$ 가 직선 $\mathrm{Re}\thinspace s=1$ 위에서 영점을 갖지 않는다는 데 기댄다.
 - [Dirichlet L 함수](dirichlet-l-functions.md): $L(s,\chi)$ 도 같은 방식으로 연속되고, 비자명한 $\chi$ 에 대해서는 극이 없는 전해석함수가 된다. $L(1,\chi)\neq0$ 이 등차수열의 소수 정리를 준다.
 - Riemann 곡면: 한 함수 요소에서 출발해 도달할 수 있는 모든 함수 요소를 모으면 곡면이 되고, 그 위에서 다가함수가 단일가치가 된다.
 
