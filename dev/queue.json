@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "savedAt": "2026-10-31T05:10:32.198Z",
+  "savedAt": "2026-10-31T09:06:53.285Z",
   "nextSeq": 2601,
   "items": [
     {
@@ -175,7 +175,7 @@
       "id": "b0b0913b",
       "title": "규칙 #7 적용: 정의 절에 성질(준동형 동치, 전단사 등)을 늘어놓거나 예 없이 식만 둔 문서 점검",
       "priority": 100,
-      "note": "이슈 #7 로 4절 설명의 순서에 더한 규칙. grep 으로 셀 수 없다. #group_theory, #algebra, #ring_theory, #field_theory 주 분야 문서는 모두 처리함(#field_theory 는 2026-10-30 회차들에 끝남). #linear_algebra 주 분야 문서는 모두 처리함(2026-10-30). #category_theory 주 분야 문서는 모두 처리함(2026-10-31, adjunctions 부터 anyons 까지 11 개). #order_theory 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31). #information_theory 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31). #machine_learning 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31, actor-critic 부터 vc-dimension 까지 15 개). #philosophy_of_math 와 #foundations 주 분야 문서는 logicism 과 개관을 빼고 모두 처리함(2026-10-31). 다음은 logicism. 그다음은 tags 로 남은 태그를 고른다. 정의 절을 읽어 성질은 성질 절로 옮기고 정의마다 직관 절의 예로 확인하는 예를 붙이고, 직관 첫머리의 성질 미리보기 문단은 뺀다. 미리보기 문단을 지울 때 그 문단에만 있던 본문 링크와 각주 참조를 본문 다른 자리로 옮기고, 지운 뒤 직관이 정의되지 않은 대상을 가리키며 시작하지 않는지 본다. 예를 붙일 때 계산을 다시 해 본다. Node 스크립트로 문단을 옮길 때 String.replace 의 치환 문자열에 $$ 가 있으면 $ 로 줄어든다(witt-vectors 에서 재발, 큐 b699c20d). 치환은 split/join 이나 함수 인자로 하고, 커밋 전에 grep -c '\\$\\$' 로 원본과 수를 견준다. 전역 문자열 치환으로 용어를 바꿀 때 방금 넣은 원어 괄호까지 바뀌는 사고가 polynomial-rings 에서 났다. 치환 뒤 그 줄을 눈으로 본다.",
+      "note": "이슈 #7 로 4절 설명의 순서에 더한 규칙. grep 으로 셀 수 없다. #group_theory, #algebra, #ring_theory, #field_theory 주 분야 문서는 모두 처리함(#field_theory 는 2026-10-30 회차들에 끝남). #linear_algebra 주 분야 문서는 모두 처리함(2026-10-30). #category_theory 주 분야 문서는 모두 처리함(2026-10-31, adjunctions 부터 anyons 까지 11 개). #order_theory 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31). #information_theory 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31). #machine_learning 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31, actor-critic 부터 vc-dimension 까지 15 개). #philosophy_of_math 와 #foundations 주 분야 문서는 개관을 빼고 모두 처리함(2026-10-31, logicism 포함). #data_structures 주 분야 문서는 모두 처리함(2026-10-31, b-trees 부터 y-fast-tries 까지 19 개). #cryptography 주 분야 문서는 authenticated-encryption, blind-signatures, block-cipher-modes, commitment-schemes, cryptographic-hash-functions, digital-signatures, fiat-shamir, garbled-circuits, homomorphic-encryption, merkle-trees, message-authentication-codes, oblivious-transfer, one-way-functions, pseudorandom-generators, pseudorandom-permutations, secret-sharing, secure-multiparty-computation, semantic-security, zero-knowledge-proofs 를 처리함(2026-10-31). 다음은 #cryptography 의 남은 넷 discrete-logarithm, pairing-based-cryptography, post-quantum-cryptography, rsa-cryptosystem(구형 구조라 신형 전환을 겸한다). 그다음은 tags 로 남은 태그를 고른다. 정의 절을 읽어 성질은 성질 절로 옮기고 정의마다 직관 절의 예로 확인하는 예를 붙이고, 직관 첫머리의 성질 미리보기 문단은 뺀다. 미리보기 문단을 지울 때 그 문단에만 있던 본문 링크와 각주 참조를 본문 다른 자리로 옮기고, 지운 뒤 직관이 정의되지 않은 대상을 가리키며 시작하지 않는지 본다. 예를 붙일 때 계산을 다시 해 본다. Node 스크립트로 문단을 옮길 때 String.replace 의 치환 문자열에 $$ 가 있으면 $ 로 줄어든다(witt-vectors 에서 재발, 큐 b699c20d). 치환은 split/join 이나 함수 인자로 하고, 커밋 전에 grep -c '\\$\\$' 로 원본과 수를 견준다. 전역 문자열 치환으로 용어를 바꿀 때 방금 넣은 원어 괄호까지 바뀌는 사고가 polynomial-rings 에서 났다. 치환 뒤 그 줄을 눈으로 본다.",
       "createdAt": "2026-10-31T05:10:23.494Z",
       "seq": 2600
     },
