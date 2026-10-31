@@ -6,9 +6,7 @@
 
 # 직관
 
-상태들은 [부분순서](partial-orders.md)로 배열되고, 순서가 커질수록 정보가 늘어난다. 이 의미론은 직관주의 논리에 대해 건전하고 완전하다. 모든 Kripke 모형에서 참인 식이 정확히 증명 가능한 식이므로, 증명 불가능성을 보이는 주된 방법이 된다.
-
-상태 $w \le v$ 는 $v$ 가 $w$ 보다 더 많은 것을 아는 미래다. 한 번 확립된 사실은 취소되지 않고, 아직 참인지 모르는 명제는 지금 성립하지 않을 뿐 나중에 성립할 수 있다. 고전 논리에서 $A \to B$ 는 현재의 진리값만 보지만, 여기서는 지금 이후의 모든 상태에서 $A$ 가 성립할 때마다 $B$ 도 성립해야 한다. 부정 $A \to \bot$ 은 어떤 미래에도 $A$ 가 확립되지 않는다는 뜻이고, 지금 $A$ 를 모른다는 것보다 강한 주장이다.
+상태들은 [부분순서](partial-orders.md)로 배열되고, 순서가 커질수록 정보가 늘어난다. 상태 $w \le v$ 는 $v$ 가 $w$ 보다 더 많은 것을 아는 미래다. 한 번 확립된 사실은 취소되지 않고, 아직 참인지 모르는 명제는 지금 성립하지 않을 뿐 나중에 성립할 수 있다. 고전 논리에서 $A \to B$ 는 현재의 진리값만 보지만, 여기서는 지금 이후의 모든 상태에서 $A$ 가 성립할 때마다 $B$ 도 성립해야 한다. 부정 $A \to \bot$ 은 어떤 미래에도 $A$ 가 확립되지 않는다는 뜻이고, 지금 $A$ 를 모른다는 것보다 강한 주장이다.
 
 상태가 둘인 모형이 배중률의 반례다. $w_0$ 는 아무것도 확립하지 않고 $w_1$ 은 $p$ 를 확립하며 $w_0 \le w_1$ 이다. $w_0$ 에서 $p$ 가 성립하지 않고, 미래 $w_1$ 이 $p$ 를 확립하므로 $\neg p$ 도 성립하지 않는다. 따라서 $p \vee \neg p$ 가 $w_0$ 에서 성립하지 않는다.
 
@@ -16,18 +14,20 @@
 
 ## Kripke frame 과 모형
 
-**Kripke frame** 은 상태들의 부분순서집합 $W$ 다. $w \le v$ 는 $v$ 가 $w$ 보다 더 많은 정보를 가진 미래 상태라는 뜻이다. 각 원자명제 $p$ 가 성립하는 상태들은 위로 닫혀야 한다.
+**Kripke 틀(Kripke frame)** 은 상태들의 부분순서집합 $W$ 다. $w \le v$ 는 $v$ 가 $w$ 보다 더 많은 정보를 가진 미래 상태라는 뜻이다. Kripke 틀에 원자명제마다 그것이 성립하는 상태들의 집합을 정한 것을 Kripke 모형(Kripke model)이라 한다. 각 원자명제 $p$ 가 성립하는 상태들은 위로 닫혀야 한다.
 
 $$
-w\Vdash p\ \text{이고}\ w\le v\quad\Longrightarrow\quad v\Vdash p
+w\Vdash p\quad \text{이고}\quad w\le v\quad\Longrightarrow\quad v\Vdash p
 $$
 
-## Forcing
+## 강제 관계
+
+상태 $w$ 에서 식 $A$ 가 성립한다는 강제 관계(forcing relation) $w\Vdash A$ 를 다음 재귀로 정의한다.
 
 $$
 \begin{aligned}
-w\Vdash A\wedge B&\iff w\Vdash A\ \text{이고}\ w\Vdash B\cr
-w\Vdash A\vee B&\iff w\Vdash A\ \text{또는}\ w\Vdash B\cr
+w\Vdash A\wedge B&\iff w\Vdash A\quad \text{이고}\quad w\Vdash B\cr
+w\Vdash A\vee B&\iff w\Vdash A\quad \text{또는}\quad w\Vdash B\cr
 w\Vdash A\to B&\iff \forall v\ge w\thinspace(v\Vdash A\Rightarrow v\Vdash B)\cr
 w&\nVdash\bot
 \end{aligned}
@@ -35,7 +35,9 @@ $$
 
 부정은 $\neg A := A \to \bot$ 로 정의하므로 $w \Vdash \neg A$ 는 "$w$ 이후의 어떤 상태도 $A$ 를 성립시키지 않는다" 를 뜻한다.
 
-모든 Kripke 모형의 모든 상태에서 성립하는 식을 **타당**하다고 한다.
+직관 절의 두 상태 모형에서 $w_1\Vdash p$ 이므로 $w_0\nVdash\neg p$ 이고 $w_1\nVdash\neg p$ 다. 어느 상태도 $\neg p$ 를 강제하지 않으므로 $w_0\Vdash\neg\neg p$ 다. 그런데 $w_0\nVdash p$ 이므로 $w_0$ 에서 $\neg\neg p\to p$ 가 성립하지 않는다.
+
+모든 Kripke 모형의 모든 상태에서 성립하는 식을 **타당(valid)** 하다고 한다. $p\to p$ 는 타당하고, 직관 절의 모형에서 $p\vee\neg p$ 가 깨지므로 $p\vee\neg p$ 는 타당하지 않다.
 
 # 성질
 
@@ -61,7 +63,7 @@ $w_0$ 에서 배중률과 이중부정 제거가 모두 실패하고 배중률�
 
 직관주의 명제논리의 정리와 모든 Kripke 모형에서 타당한 식이 일치한다. 건전성은 각 추론 규칙이 forcing 을 보존함을 확인하는 귀납이고, 완전성은 무모순인 이론들을 상태로 삼는 정준 모형을 구성해 얻는다.
 
-증명 불가능성은 반모형 하나로 보인다. 유한 모형 성질이 성립하므로 반례를 유한한 그림에서 찾을 수 있고 정리 판정이 결정 가능하다. 다만 **PSPACE**(polynomial space)-완전이라 고전 명제논리의 coNP-완전보다 어렵다.
+증명 불가능성은 반모형 하나로 보인다. 유한 모형 성질이 성립하므로 반례를 유한한 그림에서 찾을 수 있고 정리 판정이 결정 가능하다. 다만 PSPACE(polynomial space) 완전이라 고전 명제논리의 coNP-완전보다 어렵다.
 
 ## 다른 의미론과의 관계
 
