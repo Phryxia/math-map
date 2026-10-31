@@ -6,17 +6,9 @@
 
 # 직관
 
-양자화는 연속 값의 집합을 유한 개의 대표값으로 보내는 사상이다.
-
-$$
-Q:\mathbb R^k\to\lbrace y_1,\dots,y_N\rbrace,\qquad D=\mathbb E\lbrack\Vert X-Q(X)\Vert^2\rbrack
-$$
-
-$y_i$ 가 대표값이고 $D$ 가 왜곡이다. 대표값의 개수와 위치를 고르는 문제이며, 주어진 개수에서 왜곡을 가장 작게 하는 조건이 대표값과 영역 사이의 두 관계로 적힌다. 율왜곡 이론이 어떤 양자화기로도 넘을 수 없는 하한을 주고, 양자화기는 그 하한과의 간격으로 평가한다.
-
 표본 하나를 $1$ 비트로 보낸다. 쓸 수 있는 대표값이 둘이고, 받는 쪽은 둘 중 하나를 원래 값 대신 쓴다. 두 값을 어디에 놓아야 오차가 작은가.
 
-표본이 $N(0,1)$ 을 따른다고 하자. 분포가 $0$ 에 대해 대칭이므로 대표값을 $-a$ 와 $a$ 에 놓고 표본의 부호로 가른다. 제곱오차의 평균은
+표본이 표준 [정규분포](normal-distribution.md) $N(0,1)$ 을 따른다고 하자. 분포가 $0$ 에 대해 대칭이므로 대표값을 $-a$ 와 $a$ 에 놓고 표본의 부호로 가른다. 제곱오차의 평균은
 
 $$
 \mathbb E\lbrack(X-a\thinspace\mathrm{sgn}\thinspace X)^2\rbrack=1-2a\thinspace\mathbb E\lvert X\rvert+a^2=1-2a\sqrt{2/\pi}+a^2
@@ -30,17 +22,25 @@ $$
 
 ## 양자화기와 영역
 
-양자화기는 대표값의 집합 $\lbrace y_1,\dots,y_N\rbrace$ 와 분할 $\lbrace R_1,\dots,R_N\rbrace$ 으로 정해진다. $R_i=Q^{-1}(y_i)$ 가 $y_i$ 를 받는 영역이다. 입력이 스칼라면 스칼라 양자화, $k$ 차원 벡터면 벡터 양자화라 한다.
+**양자화기(quantizer)** 는 연속 값의 집합을 유한 개의 대표값으로 보내는 사상이고, 입력 $X$ 에 대한 **왜곡(distortion)** $D$ 는 제곱오차의 기댓값이다.
+
+$$
+Q:\mathbb R^k\to\lbrace y_1,\dots,y_N\rbrace,\qquad D=\mathbb E\lbrack\Vert X-Q(X)\Vert^2\rbrack
+$$
+
+$y_i$ 가 대표값이고, $R_i=Q^{-1}(y_i)$ 가 $y_i$ 를 받는 영역이다. 양자화기는 대표값의 집합과 분할 $\lbrace R_1,\dots,R_N\rbrace$ 으로 정해진다. 입력이 스칼라면 스칼라 양자화(scalar quantization), $k$ 차원 벡터면 벡터 양자화(vector quantization)라 한다.
+
+직관 절의 1 비트 양자화기는 $k=1$, $N=2$, 대표값 $-0.798$ 과 $0.798$, 영역 $R_1=(-\infty,0)$ 과 $R_2=\lbrack 0,\infty)$ 이고, $N(0,1)$ 입력에서 왜곡은 $0.363$ 이다.
 
 ## 부호율
 
-대표값 번호를 고정 길이로 보내면 부호율이 $\log_2 N$ 비트다. 번호의 빈도가 고르지 않을 때 무손실 부호화를 덧붙이면 부호율이 엔트로피 $H(Q(X))$ 로 내려간다. 앞의 것을 고정율 양자화, 뒤의 것을 엔트로피 제약 양자화라 한다.
+대표값 번호를 고정 길이로 보내면 부호율이 $\log_2 N$ 비트다. 번호의 빈도가 고르지 않을 때 [무손실 부호화](source-coding.md)를 덧붙이면 부호율이 [엔트로피](entropy.md) $H(Q(X))$ 로 내려간다. 앞의 것을 **고정율 양자화(fixed-rate quantization)**, 뒤의 것을 **엔트로피 제약 양자화(entropy-constrained quantization)** 라 한다. 직관 절의 양자화기는 $\log_2 2=1$ 비트이고, 두 영역의 확률이 $1/2$ 씩이라 $H(Q(X))$ 도 $1$ 비트다.
 
 # 성질
 
 ## 최적 조건
 
-> **정리.** 왜곡 $D$ 를 최소화하는 양자화기는 다음 둘을 만족한다.
+왜곡 $D$ 를 최소화하는 양자화기는 다음 둘을 만족한다.
 
 $$
 R_i=\lbrace x:\Vert x-y_i\Vert\le\Vert x-y_j\Vert\rbrace,\qquad y_i=\mathbb E\lbrack X\mid X\in R_i\rbrack
@@ -50,7 +50,7 @@ $$
 
 ## Lloyd 반복
 
-두 조건을 번갈아 적용하는 반복이 Lloyd 알고리즘이다. 각 단계가 왜곡을 늘리지 않으므로 왜곡이 단조 감소하고 수렴한다. 수렴점은 초기 배치에 따라 달라진다.
+두 조건을 번갈아 적용하는 반복이 Lloyd 알고리즘(Lloyd's algorithm)이다. 각 단계가 왜곡을 늘리지 않으므로 왜곡이 단조 감소하고 수렴한다. 수렴점은 초기 배치에 따라 달라진다.
 
 ```javascript
 function lloyd(samples, y, iters) {
@@ -71,7 +71,7 @@ function lloyd(samples, y, iters) {
 }
 ```
 
-표본 대신 밀도 $f$ 를 쓰면 적분으로 같은 반복을 돌린다. 제곱 왜곡과 유한 표본에서 이 반복은 $k$ 평균 군집화와 같은 절차다.
+표본 대신 밀도 $f$ 를 쓰면 적분으로 같은 반복을 돌린다. 제곱 왜곡과 유한 표본에서 이 반복은 [k 평균 군집화](k-means.md)와 같은 절차다.
 
 ## 고해상도 근사
 
@@ -81,7 +81,7 @@ $$
 D\approx\frac{1}{12N^2}\left(\int f(x)^{1/3}\thinspace dx\right)^3
 $$
 
-대표값의 밀도를 $f^{1/3}$ 에 비례하게 두는 것이 최적이고, 이 배치는 비선형 변환으로 값을 펴서 균등 양자화한 뒤 되돌리는 것과 같다.[^1] 분산 $\sigma^2$ 의 Gauss 정보원에서 이 식은 $D\approx\frac{\sqrt3\pi}{2}\sigma^2 2^{-2R}$ 을 준다.
+대표값의 밀도를 $f^{1/3}$ 에 비례하게 두는 것이 최적이고, 이 배치는 비선형 변환으로 값을 펴서 균등 양자화한 뒤 역변환하는 것과 같다.[^1] 분산 $\sigma^2$ 의 Gauss 정보원에서 이 식은 $D\approx\frac{\sqrt3\pi}{2}\sigma^2 2^{-2R}$ 을 준다.
 
 ## 율왜곡 하한과의 간격
 
