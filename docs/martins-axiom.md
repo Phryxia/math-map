@@ -6,23 +6,19 @@
 
 # 직관
 
-[강제법](forcing.md)은 가산 개의 조밀집합을 만나는 필터를 가산 추이 모형 위에서 만든다. Martin 의 공리는 그 개수를 연속체 미만까지 올리고, 모형을 바꾸지 않고 지금의 우주 안에서 필터를 준다.
+[강제법](forcing.md)은 가산 추이 모형(countable transitive model) $M$ 바깥에 새 모형 $M\lbrack G\rbrack$ 을 만들고, 새 모형에서 성립하는 것을 지금 있는 우주에서 쓰려면 일반 필터 $G$ 가 우주 안에 있어야 한다. 유한 비트열 전체의 순서 $P$ 에서 $q \le p$ 를 $q$ 가 $p$ 뒤에 비트를 더 붙인 것으로 두고, 실수 $x$ 마다 $x$ 와 값이 갈리는 자리를 이미 정한 유한 비트열 전체를 $D_x$ 라 한다. 아무 유한 비트열에서 출발해도 다음 자리를 $x$ 와 다른 값으로 붙이면 $D_x$ 에 들어가므로 $D_x$ 는 조밀하다. 필터 $G$ 가 모든 실수 $x$ 에 대해 $D_x$ 를 만나면 $G$ 의 조건을 이어 붙인 무한 비트열이 모든 $x$ 와 어느 자리에서 갈리는데, 그 비트열도 실수이므로 그런 $G$ 는 없다.
 
-[연속체 가설](continuum-hypothesis.md)이 참이면 이 주장은 Rasiowa–Sikorski 보조정리와 같아진다. 연속체 가설이 거짓인 모형에서는 새 주장이 되고, 그 경우도 ZFC 와 무모순이다.
-
-위상 쪽에서 보면 이 주장은 [Baire 범주 정리](baire-category.md)의 가산 조건을 비가산 개로 올린 것이다.
-
-강제법은 가산 추이 모형 $M$ 바깥에 새 모형 $M\lbrack G\rbrack$ 을 만들고, 새 모형에서 성립하는 것을 지금 있는 우주에서 쓰려면 일반 필터 $G$ 가 우주 안에 있어야 한다. 유한 비트열 전체의 순서 $P$ 에서 $q \le p$ 를 $q$ 가 $p$ 뒤에 비트를 더 붙인 것으로 두고, 실수 $x$ 마다 $x$ 와 값이 갈리는 자리를 이미 정한 유한 비트열 전체를 $D_x$ 라 한다. 아무 유한 비트열에서 출발해도 다음 자리를 $x$ 와 다른 값으로 붙이면 $D_x$ 에 들어가므로 $D_x$ 는 조밀하다. 필터 $G$ 가 모든 실수 $x$ 에 대해 $D_x$ 를 만나면 $G$ 의 조건을 이어 붙인 무한 비트열이 모든 $x$ 와 어느 자리에서 갈리는데, 그 비트열도 실수이므로 그런 $G$ 는 없다.
-
-가산 개의 조밀집합은 Rasiowa–Sikorski 보조정리로 언제나 만날 수 있고, 가산보다 많고 연속체보다 적은 개수에서 그런 필터가 존재한다고 주장하는 것이 Martin 의 공리다. 순서에는 제한이 필요하다. $\omega$ 에서 $\omega_1$ 로 가는 유한 부분함수들의 순서에서 $\xi \lt \omega_1$ 마다 $\xi$ 를 치역에 넣는 조건들의 모임은 조밀하고, $\aleph_1$ 개를 전부 만나는 필터는 $\omega$ 에서 $\omega_1$ 위로 가는 함수를 만들어 $\omega_1$ 을 가산으로 만든다. 이 순서에는 서로 양립하지 않는 조건이 $\aleph_1$ 개 있으므로, 가산 반사슬 조건(countable chain condition, ccc)을 요구하면 이 예가 걸러진다.
+가산 개의 조밀집합은 Rasiowa–Sikorski 보조정리(Rasiowa–Sikorski lemma)로 언제나 만날 수 있고, 가산보다 많고 연속체보다 적은 개수에서 그런 필터가 존재한다고 주장하는 것이 Martin 의 공리다. 순서에는 제한이 필요하다. $\omega$ 에서 $\omega_1$ 로 가는 유한 부분함수들의 순서에서 $\xi \lt \omega_1$ 마다 $\xi$ 를 치역에 넣는 조건들의 모임은 조밀하고, $\aleph_1$ 개를 전부 만나는 필터는 $\omega$ 에서 $\omega_1$ 위로 가는 함수를 만들어 $\omega_1$ 을 가산으로 만든다. 이 순서에는 서로 양립하지 않는 조건이 $\aleph_1$ 개 있으므로, 가산 반사슬 조건(countable chain condition, ccc)을 요구하면 이 예가 걸러진다.
 
 # 정의
 
 ## 조건과 필터
 
-부분순서 $(P, \le)$ 의 원소를 **조건**이라 한다. $p, q$ 는 $r \le p$ 이고 $r \le q$ 인 $r$ 이 있으면 **양립한다**고 하고, 서로 양립하지 않는 조건들의 집합을 **반사슬**이라 한다. $P$ 의 반사슬이 모두 가산이면 $P$ 가 **ccc** 를 만족한다고 한다.
+부분순서 $(P, \le)$ 의 원소를 **조건(condition)** 이라 한다. $p, q$ 는 $r \le p$ 이고 $r \le q$ 인 $r$ 이 있으면 **양립한다(compatible)** 고 하고, 서로 양립하지 않는 조건들의 집합을 **반사슬(antichain)** 이라 한다. $P$ 의 반사슬이 모두 가산이면 $P$ 가 **ccc** 를 만족한다고 한다.
 
-$D \subseteq P$ 가 **조밀**하다는 것은 모든 $p \in P$ 에 대해 $q \le p$ 인 $q \in D$ 가 있다는 뜻이고, $G \subseteq P$ 가 **필터**라는 것은 $G$ 가 위로 닫혀 있고 $G$ 의 두 원소가 $G$ 안에서 양립한다는 뜻이다.
+직관 절의 유한 비트열 순서에서 $\langle 0\rangle$ 과 $\langle 1\rangle$ 은 양립하지 않는다. 유한 비트열은 가산 개뿐이므로 이 순서의 반사슬은 모두 가산이고 순서는 ccc 를 만족한다. $\omega$ 에서 $\omega_1$ 로 가는 유한 부분함수의 순서에서는 $\lbrace (0,\xi)\rbrace$ ($\xi\lt\omega_1$) 들이 크기 $\aleph_1$ 의 반사슬이므로 ccc 를 만족하지 않는다.
+
+$D \subseteq P$ 가 **조밀(dense)** 하다는 것은 모든 $p \in P$ 에 대해 $q \le p$ 인 $q \in D$ 가 있다는 뜻이고, $G \subseteq P$ 가 **필터(filter)** 라는 것은 $G$ 가 위로 닫혀 있고 $G$ 의 두 원소가 $G$ 안에서 양립한다는 뜻이다.
 
 ## Martin 의 공리
 
@@ -30,13 +26,13 @@ Martin 의 공리를 조밀집합의 개수마다 나누어 쓴다. [기수](car
 
 > $P$ 가 ccc 를 만족하는 부분순서이고 $\mathcal D$ 가 $P$ 의 조밀집합들의 모임으로 $\vert \mathcal D\vert \le \kappa$ 이면, 모든 $D \in \mathcal D$ 에 대해 $G \cap D \neq \varnothing$ 인 필터 $G \subseteq P$ 가 있다.
 
-**Martin 의 공리**는 $\kappa \lt 2^{\aleph_0}$ 인 모든 $\kappa$ 에 대해 $\mathrm{MA}(\kappa)$ 가 성립한다는 주장이다.
+Martin 의 공리(Martin's axiom, MA)는 $\kappa \lt 2^{\aleph_0}$ 인 모든 $\kappa$ 에 대해 $\mathrm{MA}(\kappa)$ 가 성립한다는 주장이다.
 
 ## 강제 공리
 
-$\mathrm{MA}(\kappa)$ 에서 ccc 자리에 순서 종류 $\Gamma$ 를 넣은 주장을 $\Gamma$ 에 대한 **강제 공리**라 한다. 조밀집합의 개수는 $\aleph_1$ 로 고정한다.
+$\mathrm{MA}(\kappa)$ 에서 ccc 자리에 순서 종류 $\Gamma$ 를 넣은 주장을 $\Gamma$ 에 대한 **강제 공리(forcing axiom)** 라 한다. 조밀집합의 개수는 $\aleph_1$ 로 고정한다.
 
-[**PFA**(proper forcing axiom)](proper-forcing.md)는 $\Gamma$ 를 proper 순서 전체로 둔 것이다. ccc 순서가 모두 proper 이므로 PFA 가 $\mathrm{MA}(\aleph_1)$ 을 함의한다. **Martin 의 최대**(Martin's maximum, MM)는 $\Gamma$ 를 $\omega_1$ 의 정상집합을 보존하는 순서 전체로 둔 것이고, proper 순서가 정상집합을 보존하므로 MM 이 PFA 를 함의한다.
+**PFA(proper forcing axiom)** 는 $\Gamma$ 를 [proper 강제법](proper-forcing.md)의 순서 전체로 둔 것이다. ccc 순서가 모두 proper 이므로 PFA 가 $\mathrm{MA}(\aleph_1)$ 을 함의한다. **Martin 의 최대(Martin's maximum, MM)** 는 $\Gamma$ 를 $\omega_1$ 의 정상집합을 보존하는 순서 전체로 둔 것이고, proper 순서가 정상집합을 보존하므로 MM 이 PFA 를 함의한다.
 
 $\Gamma$ 를 더 넓힐 수 없다. $\omega_1$ 의 정상집합을 깨는 순서 $\mathbb P$ 가 있으면 그 순서에 대한 강제 공리가 거짓이다.[^4] 그러므로 MM 이 이 꼴의 강제 공리 가운데 가장 강하다.
 
@@ -58,7 +54,7 @@ $\Gamma$ 를 더 넓힐 수 없다. $\omega_1$ 의 정상집합을 깨는 순서
 
 $\kappa$ 개의 실수 $\lbrace x_\alpha : \alpha \lt \kappa\rbrace$ 를 잡고 $D_{x_\alpha}$ 를 전부 만나는 필터를 얻으면 이 $\kappa$ 개 어느 것과도 다른 실수가 나오므로, 실수 전체를 $\kappa$ 개로 줄 세울 수 없다.
 
-따라서 연속체 가설이 참이면 Martin 의 공리는 $\mathrm{MA}(\aleph_0)$ 뿐이고 자동으로 성립한다. Martin 의 공리가 내용을 갖는 것은 $2^{\aleph_0} \gt \aleph_1$ 인 모형에서다.
+따라서 [연속체 가설](continuum-hypothesis.md)이 참이면 Martin 의 공리는 $\mathrm{MA}(\aleph_0)$ 뿐이고 자동으로 성립한다. Martin 의 공리가 내용을 갖는 것은 $2^{\aleph_0} \gt \aleph_1$ 인 모형에서다.
 
 ## 무모순성
 
@@ -72,7 +68,7 @@ $\kappa$ 개의 실수 $\lbrace x_\alpha : \alpha \lt \kappa\rbrace$ 를 잡고 
 
 **정리.** $\mathrm{MA}(\kappa)$ 이면 $\kappa$ 개 이하의 Lebesgue 영집합의 합집합은 영집합이고, $\kappa$ 개 이하의 조밀한 열린집합의 교집합은 조밀하다.
 
-뒤 진술은 Baire 범주 정리를 가산 개에서 $\kappa$ 개로 올린 것이다. 증명은 순서를 알맞게 고르는 것이다. 범주 쪽은 유리수 구간들의 순서를, 측도 쪽은 측도가 작은 열린집합들의 순서를 쓰고, 두 순서 모두 ccc 를 만족한다. Martin 의 공리 아래에서는 실수를 $\aleph_1$ 개의 영집합으로 덮을 수 없고, $\aleph_1$ 개 미만의 실수 집합은 항상 [측도](measure.md) $0$ 이다.
+뒤 진술은 [Baire 범주 정리](baire-category.md)를 가산 개에서 $\kappa$ 개로 올린 것이다. 증명은 순서를 알맞게 고르는 것이다. 범주 쪽은 유리수 구간들의 순서를, 측도 쪽은 측도가 작은 열린집합들의 순서를 쓰고, 두 순서 모두 ccc 를 만족한다. Martin 의 공리 아래에서는 실수를 $\aleph_1$ 개의 영집합으로 덮을 수 없고, $\aleph_1$ 개 미만의 실수 집합은 항상 [측도](measure.md) $0$ 이다.
 
 ## Suslin 가설
 
