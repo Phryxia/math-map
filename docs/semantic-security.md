@@ -6,10 +6,6 @@
 
 # 직관
 
-의미론적 안전성은 암호문을 본 다항시간 공격자가 평문에 대해 알아낼 수 있는 것이, 암호문을 보지 않고 알아낼 수 있는 것과 무시할 만한 차이밖에 없다는 공개키 암호화의 안전성 정의다. Goldwasser 와 Micali 가 1984 년에 정의했고, 두 평문 가운데 어느 것의 암호문인지 맞히지 못한다는 구별 불가능성과 동치다[^1].
-
-이 정의를 만족하려면 암호화가 무작위여야 하므로 RSA 암호의 $m\mapsto m^e \bmod n$ 은 의미론적으로 안전하지 않다. [이산로그](discrete-logarithm.md)의 판정적 Diffie–Hellman 가정 위의 ElGamal 암호는 의미론적으로 안전하다.
-
 투표 결과 $m\in\lbrace\text{yes},\text{no}\rbrace$ 를 RSA 공개키 $(n,e)$ 로 암호화해 $c=m^e \bmod n$ 을 보낸다. 도청자도 공개키를 가지고 있으므로 $\text{yes}^e$ 와 $\text{no}^e$ 를 직접 계산해 $c$ 와 비교하면 $m$ 이 나온다. $e$ 제곱의 역산이 어렵다는 가정은 이 공격과 무관하다. 도청자는 역산하지 않고 후보를 하나씩 암호화했다.
 
 같은 평문이 언제나 같은 암호문이 되어서 이 공격이 성공한다. 그래서 암호화 때 난수 $r$ 을 함께 써서 같은 평문도 매번 다른 암호문이 되게 하고, 요구 조건을 "평문 후보가 둘뿐이고 도청자가 둘을 직접 골랐어도 암호문이 어느 쪽인지 맞히는 확률이 $1/2$ 과 거의 같다" 로 정한다.
@@ -20,6 +16,8 @@
 
 공개키 암호화 방식은 확률적 다항시간 알고리즘 셋 $(\mathrm{Gen},\mathrm{Enc},\mathrm{Dec})$ 이다. $\mathrm{Gen}(1^n)$ 이 공개키 $\mathit{pk}$ 와 비밀키 $\mathit{sk}$ 를 내고, $\mathrm{Enc}(\mathit{pk},m)$ 은 난수를 써서 암호문을 내며, 모든 $m$ 에 대해 $\mathrm{Dec}(\mathit{sk},\mathrm{Enc}(\mathit{pk},m))=m$ 이다.
 
+예. 직관 절의 RSA 는 $\mathit{pk}=(n,e)$, $\mathit{sk}=d$, $\mathrm{Enc}(\mathit{pk},m)=m^e \bmod n$, $\mathrm{Dec}(\mathit{sk},c)=c^d \bmod n$ 인 공개키 암호화 방식이다. 이 $\mathrm{Enc}$ 는 난수를 쓰지 않는다.
+
 ## 의미론적 안전성
 
 평문 분포 $M\_n$, 평문에 대한 부분 정보 $h(m)$, 알아내려는 함수 $f(m)$ 이 주어졌다고 하자. 방식이 의미론적으로 안전하다는 것은 모든 확률적 다항시간 알고리즘 $A$ 에 대해 다음을 만족하는 확률적 다항시간 알고리즘 $S$ 가 존재한다는 뜻이다.
@@ -28,7 +26,9 @@ $$
 \Pr\lbrack A(\mathit{pk},\mathrm{Enc}(\mathit{pk},m),h(m))=f(m)\rbrack-\Pr\lbrack S(1^n,h(m))=f(m)\rbrack\le\varepsilon(n)
 $$
 
-$m$ 은 $M\_n$ 에서 뽑고 $\varepsilon$ 은 무시할 만한 함수다. $S$ 는 암호문 없이 $A$ 와 같은 일을 한다.
+$m$ 은 $M\_n$ 에서 뽑고 $\varepsilon$ 은 무시할 만한 함수다. $S$ 는 암호문 없이 $A$ 와 같은 일을 한다. Goldwasser 와 Micali 가 1984 년에 정의했다[^1].
+
+예. $M\_n$ 이 $\text{yes}$ 와 $\text{no}$ 위의 균등분포이고 $h$ 가 아무 정보도 주지 않으며 $f(m)=m$ 이면, RSA 에서 직관 절의 $A$ 는 확률 $1$ 로 맞히고 어떤 $S$ 도 $1/2$ 보다 잘 맞히지 못한다. 차가 $1/2$ 이므로 RSA 는 의미론적으로 안전하지 않다.
 
 ## 구별 불가능성
 
@@ -40,6 +40,8 @@ $m$ 은 $M\_n$ 에서 뽑고 $\varepsilon$ 은 무시할 만한 함수다. $S$ �
 4. $A$ 가 $b'$ 을 낸다.
 
 모든 확률적 다항시간 $A$ 에 대해 $\lvert\Pr\lbrack b'=b\rbrack-1/2\rvert$ 이 무시할 만하면 방식이 **선택 평문 공격에 대해 구별 불가능(indistinguishable under chosen-plaintext attack, IND-CPA)** 하다고 한다. 공개키가 있으면 공격자가 원하는 평문을 직접 암호화할 수 있으므로 "선택 평문" 이 붙는다.
+
+예. RSA 에서 $A$ 가 $m\_0=\text{yes}$, $m\_1=\text{no}$ 를 고르고 $\text{yes}^e \bmod n$ 을 계산해 $c$ 와 같으면 $b'=0$ 을 내면 $\Pr\lbrack b'=b\rbrack=1$ 이므로 RSA 는 IND-CPA 가 아니다.
 
 4 단계 전에 $A$ 가 $c$ 가 아닌 암호문의 복호를 요청할 수 있게 한 것이 **선택 암호문 공격에 대한 구별 불가능성(indistinguishability under adaptive chosen-ciphertext attack, IND-CCA2)** 이다[^2].
 
@@ -57,13 +59,13 @@ $m$ 은 $M\_n$ 에서 뽑고 $\varepsilon$ 은 무시할 만한 함수다. $S$ �
 
 ## ElGamal 암호
 
-위수가 소수 $q$ 인 순환군 $G=\langle g\rangle$ 에서 비밀키는 $x\in\mathbb Z/q\mathbb Z$, 공개키는 $h=g^x$ 이다. 평문 $m\in G$ 의 암호문은 무작위 $r$ 에 대해 다음이다[^4].
+[이산로그](discrete-logarithm.md) 계산이 어려운, 위수가 소수 $q$ 인 순환군 $G=\langle g\rangle$ 에서 비밀키는 $x\in\mathbb Z/q\mathbb Z$, 공개키는 $h=g^x$ 이다. 평문 $m\in G$ 의 암호문은 무작위 $r$ 에 대해 다음이다[^4].
 
 $$
 \mathrm{Enc}(h,m)=(g^r,\thinspace m\thinspace h^r),\qquad \mathrm{Dec}(x,(u,v))=v\thinspace u^{-x}
 $$
 
-$G$ 에서 판정적 Diffie–Hellman 가정이 성립하면 ElGamal 암호는 IND-CPA 다[^5].
+$G$ 에서 판정적 Diffie–Hellman 가정(decisional Diffie–Hellman assumption)이 성립하면 ElGamal 암호는 IND-CPA 다[^5].
 
 증명의 요지. 공격자가 보는 것은 $(g,g^x,g^r,m\_bg^{xr})$ 이다. 가정에 따라 $g^{xr}$ 을 무작위 원소 $g^z$ 로 바꿔도 공격자의 성공 확률은 무시할 만큼만 변한다. 바꾼 뒤에는 $m\_bg^z$ 가 $b$ 와 무관하게 균등하게 분포하므로 성공 확률이 정확히 $1/2$ 이다.
 
