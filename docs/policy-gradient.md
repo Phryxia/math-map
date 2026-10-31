@@ -24,29 +24,35 @@ $$
 
 $$J(\theta)=\mathbb E\_{\tau\sim p_\theta}\lbrack R(\tau)\rbrack,\qquad R(\tau)=\sum_{t\ge 0}\gamma^t\thinspace r(S_t,A_t)$$
 
-**정책 경사법**은 $\nabla_\theta J$ 의 불편추정량 $g$ 를 표본에서 만들어 $\theta\leftarrow\theta+\eta\thinspace g$ 로 올리는 [확률근사](stochastic-approximation.md)다.
+**정책 경사법(policy gradient method)** 은 $\nabla_\theta J$ 의 불편추정량 $g$ 를 표본에서 만들어 $\theta\leftarrow\theta+\eta\thinspace g$ 로 올리는 [확률근사](stochastic-approximation.md)다.
 
 ## 점수함수 추정량
+
+$\nabla_\theta\log\pi_\theta(a\mid s)$ 를 **점수함수(score function)** 라 하고, 경로 하나로 만든 $R(\tau)\thinspace\nabla_\theta\log p_\theta(\tau)$ 를 **점수함수 추정량(score function estimator)** 이라 한다.
+
+상태가 하나이고 행동이 왼쪽과 오른쪽 둘이며, 오른쪽을 고를 때만 보상 $1$ 을 받고 한 번에 끝나는 경우를 본다. $\pi_\theta(\text{오른쪽})=\sigma(\theta)=1/(1+e^{-\theta})$ 로 두면 $J(\theta)=\sigma(\theta)$ 다. 점수함수는 오른쪽에서 $1-\sigma(\theta)$, 왼쪽에서 $-\sigma(\theta)$ 이고, 추정량은 오른쪽이 나오면 $1-\sigma(\theta)$, 왼쪽이 나오면 $0$ 이다. $\theta=0$ 에서 $J=0.5$ 이고 추정량은 반반의 확률로 $0.5$ 와 $0$ 이다.
+
+# 성질
+
+## 점수함수 추정량의 불편성
 
 $\nabla_\theta p_\theta=p_\theta\thinspace\nabla_\theta\log p_\theta$ 를 쓰면 기울기가 기댓값으로 적힌다.
 
 $$\nabla_\theta J(\theta)=\mathbb E\_{\tau\sim p_\theta}\lbrack R(\tau)\thinspace\nabla_\theta\log p_\theta(\tau)\rbrack$$
 
-$\nabla_\theta\log\pi_\theta$ 를 **점수함수**(score function)라 한다.
-
-# 성질
+정의 절의 예에서 추정량의 기댓값은 $\sigma(\theta)(1-\sigma(\theta))$ 이고 이것이 $J'(\theta)=\sigma'(\theta)$ 와 같다. $\theta=0$ 에서는 $0.25$ 다.
 
 ## 정책 경사 정리
 
 $$\nabla_\theta J(\theta)=\mathbb E\_{\pi_\theta}\lbrack\thinspace\nabla_\theta\log\pi_\theta(A\mid S)\thinspace Q^{\pi_\theta}(S,A)\thinspace\rbrack$$
 
-이 등식이 정책 경사 정리다[^2].
+이 등식이 정책 경사 정리(policy gradient theorem)다[^2].
 
 증명의 요지. 점수함수 추정량을 시각별로 풀면 $\nabla_\theta\log\pi_\theta(a_t\mid s_t)$ 마다 경로 전체의 보상 $R(\tau)$ 가 곱해진다. 시각 $t$ 보다 앞선 보상은 $s_t$ 가 주어졌을 때 $a_t$ 와 독립이고, 점수함수의 조건부 기댓값이 $0$ 이므로 그 항들이 사라진다. 남은 것은 $t$ 이후의 할인 보상이고, 그 조건부 기댓값이 $Q^{\pi_\theta}(s_t,a_t)$ 다.
 
 ## 기준선
 
-상태만의 함수 $b(S)$ 에 대해 다음이 성립한다.
+기준선(baseline)은 추정량에서 빼는 상태만의 함수 $b(S)$ 다. 상태만의 함수 $b(S)$ 에 대해 다음이 성립한다.
 
 $$\mathbb E\_{\pi_\theta}\lbrack\thinspace\nabla_\theta\log\pi_\theta(A\mid S)\thinspace b(S)\thinspace\rbrack=0$$
 
