@@ -6,13 +6,9 @@
 
 # 직관
 
-Rademacher 복잡도는 함수족이 표본 위에서 무작위 부호열과 맞출 수 있는 상관의 크기다. 표본점마다 $\pm 1$ 을 동전으로 붙이고, 그 부호열과 상관이 가장 큰 함수를 족에서 골라 상관값을 재고 동전에 대해 평균한다.
-
-이 양이 경험 오차와 실제 오차의 최대 차이를 위에서 막는다. 유한 가설류에서는 가설 개수의 로그가 그 역할을 하고, 무한 가설류에서는 개수를 셀 수 없으므로 표본 위에서 함수족이 실제로 만드는 값만 재는 양이 필요하다.
-
 분류기 하나를 훈련 자료 $n$ 개에서 골랐고 그 자료에서 틀린 비율이 $0$ 이다. 이 분류기가 새 자료에서 틀릴 확률은 얼마인가.
 
-가설이 유한 개면 답이 나온다. 가설 하나를 고정하면 각 자료점에서 틀렸는지가 값 $0$ 또는 $1$ 인 독립 확률변수이고, [집중부등식](concentration-inequalities.md)의 Hoeffding 부등식이 틀린 비율과 틀릴 확률의 차이가 $\varepsilon$ 을 넘을 확률을 $2e^{-2n\varepsilon^2}$ 으로 막는다. 가설 $\vert H\vert$ 개 전부에 합집합 경계를 쓰면 확률 $1-\delta$ 로 그 차이의 최대값이 $\sqrt{\log(2\vert H\vert/\delta)/(2n)}$ 이하다. 그런데 [실수](real-numbers.md) $t$ 마다 $h_t(x)=1\lbrack x\ge t\rbrack$ 를 두는 문턱 분류기족은 가설이 무한히 많아 $\log\vert H\vert$ 가 무한이고, 이 식은 수를 내놓지 않는다.
+가설이 유한 개면 답이 나온다. 가설 하나를 고정하면 각 자료점에서 틀렸는지가 값 $0$ 또는 $1$ 인 독립 확률변수이고, [집중부등식](concentration-inequalities.md)의 Hoeffding 부등식(Hoeffding's inequality)이 틀린 비율과 틀릴 확률의 차이가 $\varepsilon$ 을 넘을 확률을 $2e^{-2n\varepsilon^2}$ 으로 막는다. 가설 $\vert H\vert$ 개 전부에 합집합 경계(union bound)를 쓰면 확률 $1-\delta$ 로 그 차이의 최대값이 $\sqrt{\log(2\vert H\vert/\delta)/(2n)}$ 이하다. 그런데 [실수](real-numbers.md) $t$ 마다 $h_t(x)=1\lbrack x\ge t\rbrack$ 를 두는 문턱 분류기족은 가설이 무한히 많아 $\log\vert H\vert$ 가 무한이고, 이 식은 수를 내놓지 않는다.
 
 합집합 경계는 가설마다 사건을 하나씩 세는데, 표본의 모든 점에서 같은 값을 주는 가설은 틀린 비율도 같다. 표본점이 $x_1\lt x_2\lt \dots\lt x_n$ 일 때 문턱이 $x_3$ 과 $x_4$ 사이 어디에 있든 모든 표본점에서 같은 값이 나오므로, 그 가설들이 세는 사건은 하나다. 서로 다른 값 패턴은 문턱이 어느 두 점 사이에 오는지로 정해져 $n+1$ 개다.
 
@@ -20,27 +16,31 @@ $\vert H\vert$ 자리에 $n+1$ 을 넣으면 차이의 최대값이 $\sqrt{\log(
 
 # 정의
 
-Rademacher 복잡도는 함수족과 무작위 부호열의 상관의 기댓값이다. $\sigma_1,\dots,\sigma_n$ 이 독립이고 각각 $+1$ 과 $-1$ 을 확률 $1/2$ 로 갖는 Rademacher 변수, $S=(x_1,\dots,x_n)$ 이 고정된 표본, $\mathcal F$ 가 집합 $\mathcal X$ 에서 실수로 가는 함수족일 때
+Rademacher 복잡도는 함수족과 무작위 부호열의 상관의 기댓값이다. $\sigma_1,\dots,\sigma_n$ 이 독립이고 각각 $+1$ 과 $-1$ 을 확률 $1/2$ 로 갖는 Rademacher 변수(Rademacher variable), $S=(x_1,\dots,x_n)$ 이 고정된 표본, $\mathcal F$ 가 집합 $\mathcal X$ 에서 실수로 가는 함수족일 때
 
 $$\hat{\mathfrak R}\_S(\mathcal F) = E\_\sigma\lbrack\sup\_{f\in\mathcal F}\frac{1}{n}\sum\_{i=1}^{n}\sigma\_i f(x\_i)\rbrack$$
 
-를 $S$ 에서의 **경험적 Rademacher 복잡도**라 한다. 표본을 분포 $P$ 에서 독립으로 뽑고 기댓값을 취한
+를 $S$ 에서의 **경험적 Rademacher 복잡도(empirical Rademacher complexity)** 라 한다. 표본을 분포 $P$ 에서 독립으로 뽑고 기댓값을 취한
 
 $$\mathfrak R\_n(\mathcal F) = E\_S\lbrack\hat{\mathfrak R}\_S(\mathcal F)\rbrack$$
 
-이 **Rademacher 복잡도**다. 첫 번째 양은 표본이 주어지면 계산되고 두 번째 양은 분포에 딸린 수다.
+이 **Rademacher 복잡도** 다. 첫 번째 양은 표본이 주어지면 계산되고 두 번째 양은 분포에 딸린 수다.
 
-함수족에 상수를 더해도 두 양은 변하지 않는다. $f+c$ 의 상관은 $\frac1n\sum_i\sigma_i f(x_i)$ 에 $\frac{c}{n}\sum_i\sigma_i$ 를 더한 것이고, 둘째 항은 $f$ 에 무관해 상한 밖으로 나오며 기댓값이 $0$ 이다.
+직관 절의 문턱 분류기족을 점 두 개 $x_1\lt x_2$ 에서 보면 값 패턴은 $(0,0)$, $(0,1)$, $(1,1)$ 셋이다. 부호열 $(+,+)$ 에서 상관의 최댓값은 $(1,1)$ 이 주는 $1$, $(+,-)$ 에서 $0$, $(-,+)$ 에서 $(0,1)$ 이 주는 $1/2$, $(-,-)$ 에서 $0$ 이므로 $\hat{\mathfrak R}\_S=(1+0+1/2+0)/4=3/8$ 이다.
 
 ## 손실류
 
-학습에서 재는 족은 가설족이 아니라 손실족이다. 가설족 $\mathcal H$ 와 손실 $\ell$ 에 대해
+학습에서 재는 족은 가설족이 아니라 손실족이다. 가설족 $\mathcal H$ 와 손실 $\ell$ 에 대해 다음 함수족을 **손실류(loss class)** 라 한다.
 
 $$\mathcal L = \lbrace (x,y)\mapsto\ell(h(x),y) : h\in\mathcal H\rbrace$$
 
-의 복잡도가 일반화 경계에 들어간다. 값이 $\pm 1$ 인 분류에서 $0$-$1$ 손실은 $\ell(h(x),y)=\frac{1-yh(x)}{2}$ 이고, $y_i\sigma_i$ 가 $\sigma_i$ 와 같은 분포이므로 $\hat{\mathfrak R}\_S(\mathcal L)=\frac12\hat{\mathfrak R}\_S(\mathcal H)$ 다.
+일반화 경계에 들어가는 것은 이 족의 복잡도다. 값이 $\pm 1$ 인 분류에서 $0$-$1$ 손실은 $\ell(h(x),y)=\frac{1-yh(x)}{2}$ 이고, 자료점에서 틀리면 $1$, 맞으면 $0$ 이다.
 
 # 성질
+
+## 상수 이동과 분류 손실
+
+함수족에 상수를 더해도 두 양은 변하지 않는다. $f+c$ 의 상관은 $\frac1n\sum_i\sigma_i f(x_i)$ 에 $\frac{c}{n}\sum_i\sigma_i$ 를 더한 것이고, 둘째 항은 $f$ 에 무관해 상한 밖으로 나오며 기댓값이 $0$ 이다. $0$-$1$ 손실류에서는 $y_i\sigma_i$ 가 $\sigma_i$ 와 같은 분포이므로 $\hat{\mathfrak R}\_S(\mathcal L)=\frac12\hat{\mathfrak R}\_S(\mathcal H)$ 다.
 
 ## 대칭화
 
