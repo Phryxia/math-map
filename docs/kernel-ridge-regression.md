@@ -6,10 +6,6 @@
 
 # 직관
 
-핵 능형회귀는 재생핵 Hilbert 공간에서 제곱오차와 노름 벌점의 합을 최소화하는 회귀다. 표현자 정리가 해를 자료점의 핵 함수들의 선형결합으로 묶으므로, 무한차원 공간에서의 최소화가 $n$ 차 선형계 하나로 끝난다.
-
-해는 핵 행렬 $K$ 와 벌점 상수 $\lambda$ 로 $\alpha=(K+\lambda I)^{-1}y$ 다. 특징 좌표를 만들지 않고 핵의 값만으로 예측값을 계산한다.
-
 선형회귀의 능형 판본은 $\Vert y-Xw\Vert^2+\lambda\Vert w\Vert^2$ 을 최소화하고 해가 $w=(X^\top X+\lambda I)^{-1}X^\top y$ 다. 역행렬을 취하는 행렬의 크기는 좌표의 개수 $d$ 다. 좌표를 늘려 비선형 모형을 만들면 이 크기가 함께 커진다.
 
 자료 $n$ 개가 $d$ 보다 훨씬 적을 때도 $d\times d$ 행렬을 다루어야 하는가. 정규방정식을 다시 보면
@@ -24,25 +20,37 @@ $XX^\top$ 의 $(i,j)$ 성분은 $\langle x_i,x_j\rangle$ 이고 예측값 $\lang
 
 ## 최소화 문제
 
-양의 준정부호 핵 $K$ 의 재생핵 Hilbert 공간 $\mathcal H$ 와 자료 $(x_i,y_i)\_{i=1}^n$, 상수 $\lambda\gt 0$ 에 대해
+양의 준정부호 핵 $K$ 의 재생핵 Hilbert 공간 $\mathcal H$ 와 자료 $(x_i,y_i)\_{i=1}^n$, 상수 $\lambda\gt 0$ 에 대해 다음 문제의 해를 구하는 것이 **핵 능형회귀** 다.
 
-$$\min\_{f\in\mathcal H}\ \sum_{i=1}^n(y_i-f(x_i))^2+\lambda\Vert f\Vert\_{\mathcal H}^2$$
+$$
+\min\_{f\in\mathcal H}\thinspace\sum_{i=1}^n(y_i-f(x_i))^2+\lambda\Vert f\Vert\_{\mathcal H}^2
+$$
 
-의 해를 구하는 것이 **핵 능형회귀**다.
+선형 핵 $K(x,x')=xx'$ 의 재생핵 Hilbert 공간은 함수 $f(x)=wx$ 들이고 $\Vert f\Vert^2=w^2$ 이므로, 이때 문제는 직관 절의 능형 판본과 같다.
 
-## 해의 꼴
+## 핵 행렬
 
-핵 행렬을 $K\_{ij}=K(x_i,x_j)$ 라 하면 해는
+**핵 행렬(kernel matrix)** 은 $K\_{ij}=K(x_i,x_j)$ 인 $n\times n$ 행렬이다. 선형 핵과 자료 $(1,1)$, $(2,2)$ 에서는 다음과 같다.
 
-$$\hat f(x)=\sum_{i=1}^n\alpha_iK(x_i,x),\qquad \alpha=(K+\lambda I)^{-1}y$$
-
-다. $K$ 가 양의 준정부호이고 $\lambda\gt 0$ 이므로 $K+\lambda I$ 는 가역이다.
+$$
+K=\begin{pmatrix}1&2\cr 2&4\end{pmatrix}
+$$
 
 # 성질
 
+## 해의 꼴
+
+해는 다음과 같다.
+
+$$
+\hat f(x)=\sum_{i=1}^n\alpha_iK(x_i,x),\qquad \alpha=(K+\lambda I)^{-1}y
+$$
+
+$K$ 가 양의 준정부호이고 $\lambda\gt 0$ 이므로 $K+\lambda I$ 는 가역이다. 위의 예에서 $\lambda=1$ 이면 $\alpha=(1/6,1/3)$ 이고 $\hat f(x)=(1/6+2/3)x=\tfrac56x$ 다. 능형 판본의 해 $w=(1+4+1)^{-1}(1+4)=5/6$ 과 같다.
+
 ## 해의 유도
 
-표현자 정리에서 최소해가 $f=\sum_i\alpha_iK\_{x_i}$ 꼴이다. 재생 성질로 $f(x_j)=\sum_i\alpha_iK(x_i,x_j)=(K\alpha)\_j$ 이고 $\Vert f\Vert^2=\alpha^\top K\alpha$ 이므로 목적함수가
+표현자 정리(representer theorem)에서 최소해가 $f=\sum_i\alpha_iK\_{x_i}$ 꼴이다. 재생 성질로 $f(x_j)=\sum_i\alpha_iK(x_i,x_j)=(K\alpha)\_j$ 이고 $\Vert f\Vert^2=\alpha^\top K\alpha$ 이므로 목적함수가
 
 $$\Vert y-K\alpha\Vert^2+\lambda\alpha^\top K\alpha$$
 
