@@ -6,13 +6,11 @@
 
 # 직관
 
-변분 추론은 사후분포를 계산할 수 있는 분포족 안에서 근사하는 방법이다. 근사의 품질을 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 재면 사후분포의 정규화상수를 모르고도 최소화 문제를 세울 수 있고, 그 문제는 ELBO(evidence lower bound)의 최대화로 적힌다. 분포족을 좌표별 곱으로 잡으면 좌표마다 차례로 푸는 갱신식이 나오고, 완전 조건부가 [지수족](exponential-families.md)이면 그 갱신이 자연모수의 기댓값으로 닫힌 형태가 된다.
-
 숨은 변수 $z_1,\dots,z_n$ 이 각각 $0$ 과 $1$ 을 갖고, 관측 $x$ 와의 결합분포 $p(x,z)$ 를 식으로 안다. 관측을 보고 숨은 변수의 분포를 알려면 $p(z\mid x)=p(x,z)/p(x)$ 가 필요하고, 분모는 $p(x)=\sum_z p(x,z)$ 다. 이 합은 $z$ 가 갖는 값마다 항이 하나씩 붙어 $2^n$ 개다. $n=100$ 이면 항이 $2^{100}$ 개다.
 
-모형의 그래프가 나무이면 믿음 전파가 분배법칙으로 이 합을 변수 개수에 선형인 비용으로 줄인다. 그래프에 순환이 있으면 메시지가 수렴해도 그 값이 주변분포가 아니다. 합을 그대로 줄이는 길이 막힌다.
+모형의 그래프가 나무이면 믿음 전파(belief propagation)가 분배법칙으로 이 합을 변수 개수에 선형인 비용으로 줄인다. 그래프에 순환이 있으면 메시지가 수렴해도 그 값이 주변분포가 아니다. 합을 그대로 줄이는 길이 막힌다.
 
-정확한 $p(z\mid x)$ 를 포기하고, 좌표마다 따로 적히는 분포 $q$ 가운데 $p(z\mid x)$ 에 가장 가까운 것을 고른다. 가까움은 KL divergence 로 재서 $\mathrm{KL}\bigl(q(z)\thinspace\Vert\thinspace p(z\mid x)\bigr)$ 를 작게 한다. 그런데 이 양의 식에 $\log p(z\mid x)$ 가 들어 있고 그 안에 $p(x)$ 가 있다.
+정확한 $p(z\mid x)$ 를 포기하고, 좌표마다 따로 적히는 분포 $q$ 가운데 $p(z\mid x)$ 에 가장 가까운 것을 고른다. 가까움은 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 재서 $\mathrm{KL}\bigl(q(z)\thinspace\Vert\thinspace p(z\mid x)\bigr)$ 를 작게 한다. 그런데 이 양의 식에 $\log p(z\mid x)$ 가 들어 있고 그 안에 $p(x)$ 가 있다.
 
 $\log p(z\mid x)=\log p(x,z)-\log p(x)$ 로 쪼개면 $\log p(x)$ 는 $z$ 에 무관한 수라 기댓값 밖으로 나온다.
 
@@ -28,25 +26,27 @@ $q$ 를 좌표별 곱 $q_1(z_1)\cdots q_n(z_n)$ 으로 두면 $q_j$ 하나만 �
 
 ## 변분족과 ELBO
 
-변분 추론은 사후분포 $p(z\mid x)$ 를 분포족 $\mathcal Q$ 의 원소로 바꾸는 방법이다. $\mathcal Q$ 를 **변분족**이라 하고, $\mathrm{KL}\bigl(q\thinspace\Vert\thinspace p(\cdot\mid x)\bigr)$ 를 $q\in\mathcal Q$ 에서 최소화한 $q^\star$ 를 근사로 쓴다.
+변분 추론은 사후분포 $p(z\mid x)$ 를 분포족 $\mathcal Q$ 의 원소로 바꾸는 방법이다. $\mathcal Q$ 를 **변분족(variational family)** 이라 하고, $\mathrm{KL}\bigl(q\thinspace\Vert\thinspace p(\cdot\mid x)\bigr)$ 를 $q\in\mathcal Q$ 에서 최소화한 $q^\star$ 를 근사로 쓴다.
 
-**ELBO**(evidence lower bound)는 다음 양이다.
+숨은 변수가 둘이고 사후분포가 $p(0,0\mid x)=p(1,1\mid x)=0.4$, $p(0,1\mid x)=p(1,0\mid x)=0.1$ 인 경우를 예로 든다. 변분족을 두 좌표가 독립인 Bernoulli 곱으로 잡으면, 그 가운데 균등분포 $q$ 의 KL divergence 는 $0.5\log\frac{0.25}{0.4}+0.5\log\frac{0.25}{0.1}\approx 0.223$ 이다.
+
+**ELBO(evidence lower bound)** 는 다음 양이다.
 
 $$
 \mathcal L(q)=\mathbb E_q\lbrack\log p(x,z)\rbrack-\mathbb E_q\lbrack\log q(z)\rbrack
 $$
 
-$\mathbb E_q$ 는 $z\sim q$ 에 대한 기댓값이다. 이름의 증거는 $p(x)$ 를 가리킨다.
+$\mathbb E_q$ 는 $z\sim q$ 에 대한 기댓값이다. 이름의 증거는 $p(x)$ 를 가리킨다. 직관 절의 분해로 $\mathcal L(q)=\log p(x)-\mathrm{KL}(q\Vert p(\cdot\mid x))$ 이므로, 위의 균등분포 $q$ 에서 $\mathcal L(q)=\log p(x)-0.223$ 이다.
 
 ## 평균장 근사
 
-$z$ 를 블록 $z_1,\dots,z_m$ 으로 나누고 변분족을 블록별 곱으로 잡은 것을 **평균장 근사**라 한다.
+$z$ 를 블록 $z_1,\dots,z_m$ 으로 나누고 변분족을 블록별 곱으로 잡은 것을 **평균장 근사(mean-field approximation)** 라 한다.
 
 $$
 q(z)=\prod_{j=1}^m q_j(z_j)
 $$
 
-각 $q_j$ 에는 분포라는 것 말고 제약을 두지 않는다. $z_{-j}$ 는 $j$ 번째 블록을 뺀 나머지를 가리키고, $p(z_j\mid z_{-j},x)$ 를 $j$ 번째 블록의 **완전 조건부**라 한다.
+각 $q_j$ 에는 분포라는 것 말고 제약을 두지 않는다. $z_{-j}$ 는 $j$ 번째 블록을 뺀 나머지를 가리키고, $p(z_j\mid z_{-j},x)$ 를 $j$ 번째 블록의 **완전 조건부(complete conditional)** 라 한다. 위의 예는 블록이 둘인 평균장 근사이고, $z_1$ 의 완전 조건부는 $p(z_1=0\mid z_2=0,x)=0.4/(0.4+0.1)=0.8$ 이다. 곱 꼴의 $q$ 는 두 좌표가 같은 값을 갖는 경향을 담지 못한다.
 
 # 성질
 
@@ -99,7 +99,7 @@ function cavi(logJoint, blocks, q, tol) {
 
 ## 지수족에서의 갱신식
 
-**정리.** 완전 조건부가 지수족
+완전 조건부가 [지수족](exponential-families.md)
 
 $$
 p(z_j\mid z_{-j},x)=h(z_j)\exp\bigl(\eta_j(z_{-j},x)^\top t(z_j)-a(\eta_j)\bigr)
