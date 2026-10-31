@@ -10,18 +10,14 @@
 
 $z\mapsto x$ 를 신경망으로 바꾸면 표현력이 늘지만 주변가능도 $p(x)=\int p(x\mid z)p(z)\thinspace dz$ 의 적분이 닫히지 않고 사후분포도 계산할 수 없다. 최대가능도 학습의 두 축이 동시에 막힌다.
 
-VAE 의 해법은 둘이다. 사후분포를 다루기 쉬운 분포족으로 근사하고 그 품질을 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)로 재면 $\log p(x)$ 의 하계인 **ELBO**(evidence lower bound)가 나오고, 최대가능도가 하계 최대화로 바뀐다. 그 하계를 [경사하강법](gradient-descent.md)으로 올릴 때 기댓값 안에 최적화 대상이 있어 생기는 기울기 추정 문제는 재매개화라는 변수변환이 해결한다.
-
-인코더와 디코더 두 신경망을 함께 학습한다. 확률적 PCA 의 선형 사영과 복원을 각각 신경망으로 바꾼다.
-
-$\log p(x)$ 를 직접 계산할 수 없으니 임의의 분포 $q(z)$ 를 끼워 넣고 $\log$ 의 오목성에 [Jensen 부등식](jensen-inequality.md)을 쓴다. 이렇게 얻은 하계가 ELBO 이고, 기댓값 안에 로그가 들어가 있으므로 표본으로 추정할 수 있다.
+$\log p(x)$ 를 직접 계산할 수 없으니 임의의 분포 $q(z)$ 를 끼워 넣고 $\log$ 의 오목성에 [Jensen 부등식](jensen-inequality.md)을 쓴다. 이렇게 얻은 하계가 ELBO(evidence lower bound)이고, 기댓값 안에 로그가 들어가 있으므로 표본으로 추정할 수 있다.
 
 $$
 \log p(x)=\log\int p(x,z)\thinspace dz=\log\mathbb E_{q}\Big[\frac{p(x,z)}{q(z)}\Big]
 \thinspace\ge\thinspace \mathbb E_{q}\Big[\log\frac{p(x,z)}{q(z)}\Big]
 $$
 
-하계와 $\log p(x)$ 의 차이는 $q$ 와 참 사후분포 사이의 KL 발산이므로, $q$ 가 사후분포와 같을 때만 등호가 성립한다. ELBO 를 $q$ 에 대해 최대화하면 사후분포 근사가 되고 $\theta$ 에 대해 최대화하면 가능도가 올라가므로, 목적함수 하나가 추론과 학습을 함께 수행한다.
+하계와 $\log p(x)$ 의 차이는 $q$ 와 참 사후분포 사이의 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence)이므로, $q$ 가 사후분포와 같을 때만 등호가 성립한다. ELBO 를 $q$ 에 대해 최대화하면 사후분포 근사가 되고 $\theta$ 에 대해 최대화하면 가능도가 올라가므로, 목적함수 하나가 추론과 학습을 함께 수행한다.
 
 $$
 \log p(x)-\mathrm{ELBO}(q)=\mathrm{KL}\big(q(z)\thinspace\Vert\thinspace p(z\mid x)\big)
@@ -35,19 +31,19 @@ $$
 p_\theta(x,z)=p(z)\thinspace p_\theta(x\mid z),\qquad p(z)=\mathcal N(0,I)
 $$
 
-$p_\theta(x\mid z)$ 의 모수를 신경망(디코더)이 $z$ 에서 계산한다. 연속 데이터면 $\mathcal N(\mu_\theta(z),\sigma^2I)$ 이고, 이진 데이터면 Bernoulli 다.
-
-표현력 있는 디코더가 표준 Gauss 를 어떤 분포로도 밀어낼 수 있으므로 사전분포의 고정은 제약이 아니다. 확률적 PCA 에서 $z\sim\mathcal N(0,I)$ 로 두는 것과 같다.
+VAE 의 **생성모형(generative model)** 은 위의 결합분포이고, $p_\theta(x\mid z)$ 의 모수를 $z$ 에서 계산하는 신경망을 **디코더(decoder)** 라 한다. 연속 데이터면 $\mathcal N(\mu_\theta(z),\sigma^2I)$ 이고, 이진 데이터면 Bernoulli 다. $z$ 와 $x$ 가 1 차원이고 디코더가 $\mu_\theta(z)=2z$ 이면 $x$ 의 주변분포는 $\mathcal N(0,4+\sigma^2)$ 이고, 이것이 확률적 PCA 의 경우다.
 
 ## 변분 사후분포
 
+**변분 사후분포(variational posterior)** 는 다음 분포족이다.
+
 $$
-q_\phi(z\mid x)=\mathcal N\big(\mu_\phi(x),\ \mathrm{diag}\thinspace\sigma^2_\phi(x)\big)
+q_\phi(z\mid x)=\mathcal N\big(\mu_\phi(x),\thinspace\mathrm{diag}\thinspace\sigma^2_\phi(x)\big)
 $$
 
-인코더 신경망이 $\mu_\phi$ 와 $\log\sigma^2_\phi$ 를 출력한다. [공분산](covariance.md)을 대각으로 두는 것이 표준 선택이고, 이 제한이 근사의 주된 한계이기도 하다.
+$\mu_\phi$ 와 $\log\sigma^2_\phi$ 를 출력하는 신경망을 **인코더(encoder)** 라 한다. 인코더가 그림 $x$ 에 대해 $\mu=0.5$, $\log\sigma^2=0$ 을 내면 $q_\phi(z\mid x)=\mathcal N(0.5,1)$ 이다. [공분산](covariance.md)을 대각으로 두는 것이 표준 선택이고, 이 제한이 근사의 주된 한계이기도 하다.
 
-데이터가 $N$ 개면 근사할 사후분포도 $N$ 개다. 모수 $\phi$ 를 데이터마다 두지 않고 $x$ 를 받아 $q(z\mid x)$ 의 모수를 내놓는 함수 하나로 공유한다. 이것이 **상각 추론**이다. 데이터마다 따로 최적화하는 것보다 정확도가 떨어지는 상각 틈이 생기지만, 새 데이터의 추론이 순전파 한 번으로 끝난다.
+데이터가 $N$ 개면 근사할 사후분포도 $N$ 개다. 모수 $\phi$ 를 데이터마다 두지 않고 $x$ 를 받아 $q(z\mid x)$ 의 모수를 내놓는 함수 하나로 공유한다. 이것이 **상각 추론(amortized inference)** 이다. 데이터마다 따로 최적화하는 것보다 정확도가 떨어지는 상각 틈(amortization gap)이 생기지만, 새 데이터의 추론이 순전파 한 번으로 끝난다.
 
 ## ELBO
 
@@ -55,7 +51,7 @@ $$
 \mathcal L(\theta,\phi;x)=\mathbb E_{q_\phi(z\mid x)}\big[\log p_\theta(x\mid z)\big]-\mathrm{KL}\big(q_\phi(z\mid x)\thinspace\Vert\thinspace p(z)\big)
 $$
 
-첫 항이 복원항, 둘째가 정칙화항이다. 위의 $\mathbb E_q[\log p(x,z)-\log q(z)]$ 를 정리한 것과 같다.
+이 값을 데이터 $x$ 의 ELBO 라 한다. 첫 항이 복원항(reconstruction term), 둘째가 정칙화항(regularization term)이다. 위의 $\mathbb E_q[\log p(x,z)-\log q(z)]$ 를 정리한 것과 같다.
 
 $q$ 와 $p(z)$ 가 모두 Gauss 이므로 KL 항은 닫힌 형태다.
 
@@ -63,20 +59,24 @@ $$
 \mathrm{KL}=\frac12\sum_{j=1}^d\big(\mu_j^2+\sigma_j^2-1-\log\sigma_j^2\big)
 $$
 
-복원항만 표본으로 추정하면 되고, 실무에서는 표본 하나로도 충분하다.
+복원항만 표본으로 추정하면 되고, 실무에서는 표본 하나로도 충분하다. 위의 $q=\mathcal N(0.5,1)$ 이면 KL 항은 $\tfrac12(0.25+1-1-0)=0.125$ 다.
 
 ## 재매개화 추정량
 
-$\nabla_\phi\mathbb E_{q_\phi}[\cdot]$ 에서는 기댓값을 취하는 분포 자체가 $\phi$ 에 의존하므로 미분과 기댓값의 순서를 바꿀 수 없다. $z\sim\mathcal N(\mu,\sigma^2)$ 를 $\epsilon\sim\mathcal N(0,1)$ 에 대해 $z=\mu+\sigma\epsilon$ 으로 쓰면 무작위성이 $\phi$ 와 무관한 $\epsilon$ 으로 옮겨 가고 $z$ 가 $\phi$ 의 결정적 함수가 된다.
+$\nabla_\phi\mathbb E_{q_\phi}[\cdot]$ 에서는 기댓값을 취하는 분포 자체가 $\phi$ 에 의존하므로 미분과 기댓값의 순서를 바꿀 수 없다. [경사하강법](gradient-descent.md)으로 ELBO 를 올리려면 이 기울기가 있어야 한다. $z\sim\mathcal N(\mu,\sigma^2)$ 를 $\epsilon\sim\mathcal N(0,1)$ 에 대해 $z=\mu+\sigma\epsilon$ 으로 쓰는 변수변환을 **재매개화(reparameterization)** 라 한다. 이렇게 쓰면 무작위성이 $\phi$ 와 무관한 $\epsilon$ 으로 옮겨 가고 $z$ 가 $\phi$ 의 결정적 함수가 된다.
 
 $$
 \nabla_\phi\mathcal L=\nabla_\phi\thinspace\mathbb E_{\epsilon\sim\mathcal N(0,I)}
 \big[\log p_\theta(x\mid \mu_\phi+\sigma_\phi\odot\epsilon)\big]-\nabla_\phi\mathrm{KL}
 $$
 
-기댓값이 $\phi$ 와 무관한 분포에 대한 것이므로 미분이 안으로 들어간다.
+기댓값이 $\phi$ 와 무관한 분포에 대한 것이므로 미분이 안으로 들어간다. $\mu=0.5$, $\sigma=1$ 에서 $\epsilon=-0.3$ 을 뽑으면 $z=0.2$ 이고, $\partial z/\partial\mu=1$, $\partial z/\partial\sigma=-0.3$ 이다.
 
 # 성질
+
+## 사전분포의 고정
+
+표현력 있는 디코더가 표준 Gauss 를 어떤 분포로도 밀어낼 수 있으므로 사전분포의 고정은 제약이 아니다. 확률적 PCA 에서 $z\sim\mathcal N(0,I)$ 로 두는 것과 같다.
 
 ## 두 항의 해석
 
