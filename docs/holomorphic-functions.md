@@ -6,11 +6,9 @@
 
 # 직관
 
-정칙함수는 열린집합의 모든 점에서 복소 미분가능한 함수다. 복소 미분가능성은 실함수의 미분가능성과 겉모습이 같지만 훨씬 강한 조건이다. 극한을 취하는 방향이 평면 전체로 늘어나므로, 열린집합에서 한 번 복소 미분가능한 함수는 자동으로 무한 번 미분가능하고 멱급수로 전개된다. 정칙함수의 닫힌 경로 적분이 사라진다는 Cauchy 적분 정리 하나에서 Cauchy 적분 공식, 해석성, Liouville 정리, 최대 절댓값 원리, 대수학의 기본정리가 차례로 따라온다. 실적분 계산을 경로 적분으로 바꾸는 [유수 정리](residue-theorem.md)도 Cauchy 적분 정리에서 유도된다.
+$f(z)=z^2$ 의 차분몫은 $\bigl((z+h)^2-z^2\bigr)/h=2z+h$ 이다. $h$ 가 실수축으로 다가오든 허수축으로 다가오든 $0$ 으로 가면 $2z$ 로 간다. 켤레 $f(z)=\bar z$ 의 차분몫은 $\bar h/h$ 이고, $h$ 가 실수이면 $1$, 순허수이면 $-1$ 이라 극한이 없다. 실수 두 변수 함수로는 $\bar z=(x,-y)$ 가 $z^2$ 보다 단순한데, 복소수 $h$ 로 나누는 극한은 $\bar z$ 에서 존재하지 않는다.
 
-복소 미분가능성은 국소적으로 회전과 등방 확대만 허용하는 조건이다. 실이차원 사상으로 보면 Jacobian 이 임의의 $2\times2$ [행렬](matrices.md)이 될 수 있지만, 복소수 한 개의 곱으로 표현되려면 회전과 등방 확대의 합성에 해당하는 행렬로 제한된다. 이 제약이 Cauchy–Riemann 방정식이고, 그 결과 도함수가 $0$ 이 아닌 점에서 정칙함수는 각을 보존하는 등각사상이 된다.
-
-Cauchy 적분 공식은 원 위의 값만으로 내부 값을 전부 결정한다. 정칙함수는 경계 데이터에 구속되고, 같은 구속이 [실수](real-numbers.md) 쪽에서는 [조화함수](harmonic-functions.md)의 평균값 성질로 나타난다.
+복소 미분가능성은 국소적으로 회전과 등방 확대만 허용하는 조건이다. 실이차원 사상으로 보면 Jacobian 이 임의의 $2\times2$ [행렬](matrices.md)이 될 수 있지만, 복소수 한 개의 곱으로 표현되려면 회전과 등방 확대의 합성에 해당하는 행렬로 제한된다. $\bar z$ 의 Jacobian 은 $y$ 방향을 뒤집는 대각행렬 $\mathrm{diag}(1,-1)$ 이라 이 제한에서 벗어난다.
 
 # 정의
 
@@ -26,19 +24,25 @@ $$
 \frac{\partial u}{\partial x}=\frac{\partial v}{\partial y},\qquad \frac{\partial u}{\partial y}=-\frac{\partial v}{\partial x}
 $$
 
+$z^2$ 은 $u=x^2-y^2$, $v=2xy$ 이고 $u_x=2x=v_y$, $u_y=-2y=-v_x$ 이므로 $\mathbb C$ 전체에서 정칙이다. 이때 $u$ 와 $v$ 는 [조화함수](harmonic-functions.md)다. $\bar z$ 는 $u=x$, $v=-y$ 라 $u_x=1\ne -1=v_y$ 이므로 어느 점에서도 정칙이 아니다.
+
 곡선 $\gamma$ 가 구간 $[a,b]$ 에서 $U$ 로 가는 조각적 매끄러운 경로일 때 경로 적분은 실 [Riemann 적분](riemann-integral.md)으로 정의된다.
 
 $$
 \int_{\gamma}f(z)\thinspace dz=\int_a^b f\bigl(\gamma(t)\bigr)\gamma'(t)\thinspace dt
 $$
 
-$U$ 가 단순연결(simply connected)이라는 것은 $U$ 안의 모든 닫힌 곡선을 $U$ 안에서 한 점으로 연속적으로 줄일 수 있다는 뜻이다.
+단위원 $\gamma(t)=e^{it}$, $0\le t\le 2\pi$ 를 따라 $f(z)=1/z$ 를 적분하면 $\int_0^{2\pi}e^{-it}\cdot ie^{it}\thinspace dt=2\pi i$ 다.
+
+$U$ 가 단순연결(simply connected)이라는 것은 $U$ 안의 모든 닫힌 곡선을 $U$ 안에서 한 점으로 연속적으로 줄일 수 있다는 뜻이다. 원판은 단순연결이고, $\mathbb C\setminus\lbrace 0\rbrace$ 은 단위원을 원점을 지나지 않고 한 점으로 줄일 수 없어 단순연결이 아니다.
 
 고립 특이점 $z_0$ 에서 Laurent 급수의 $-1$ 차 계수를 유수(residue)라 하며, 충분히 작은 반지름의 원 적분으로 표현된다.
 
 $$
 \mathrm{Res}\_{z=z_0}f=\frac{1}{2\pi i}\oint_{\lvert z-z_0\rvert=\rho}f(z)\thinspace dz
 $$
+
+앞의 계산으로 $1/z$ 의 $0$ 에서의 유수는 $1$ 이다. [유수 정리](residue-theorem.md)는 닫힌 경로 적분을 안쪽 유수들의 합으로 계산한다.
 
 # 성질
 
