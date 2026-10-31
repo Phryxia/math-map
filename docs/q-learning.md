@@ -10,17 +10,13 @@
 
 평균을 나중에 한꺼번에 내는 대신 볼 때마다 조금씩 옮긴다. 현재 추정을 $Q$ 라 하고 새 표본이 가리키는 값을 $y$ 라 하면 $Q\leftarrow(1-\alpha)Q+\alpha y$ 로 고친다. $\alpha$ 를 시간이 갈수록 줄이면 이 갱신이 평균 내기와 같은 일을 한다.
 
-Q 학습은 한 번의 전이 $(s,a,r,s')$ 를 관측할 때마다 그 자리의 추정값을 Bellman 방정식이 요구하는 값 쪽으로 옮기며, 모형을 세우지 않고 갱신식만으로 최적 정책에 이른다.
-
 # 정의
 
 ## 행동 가치함수
 
-Markov 결정 과정 $(S,A,P,r,\gamma)$ 에서 상태 $s$ 에서 행동 $a$ 를 하고 그 뒤로 최적으로 움직일 때의 기대 할인 보상을 $Q^\ast(s,a)$ 라 한다.
+Markov 결정 과정 $(S,A,P,r,\gamma)$ 에서 **최적 행동 가치함수(optimal action-value function)** $Q^\ast(s,a)$ 는 상태 $s$ 에서 행동 $a$ 를 하고 그 뒤로 최적으로 움직일 때의 기대 할인 보상이다.
 
-$$Q^\ast(s,a)=r(s,a)+\gamma\sum_{s'\in S}P(s'\mid s,a)\max_{a'\in A}Q^\ast(s',a')$$
-
-최적 가치함수와는 $V^\ast(s)=\max_a Q^\ast(s,a)$ 로 이어지고, 최적 정책은 $\pi^\ast(s)\in\mathop{\mathrm{argmax}}\_a Q^\ast(s,a)$ 다. $Q$ 를 알면 모형 없이 정책을 읽을 수 있다.
+칸 $A$ 에서 오른쪽으로 가면 칸 $B$, $B$ 에서 오른쪽으로 가면 출구이고, 출구에 닿을 때만 보상 $1$ 을 받는 미로를 예로 든다. $\gamma=0.9$ 이면 $Q^\ast(B,\text{오른쪽})=1$ 이고, $A$ 에서 오른쪽으로 가면 한 걸음 늦게 보상을 받으므로 $Q^\ast(A,\text{오른쪽})=0.9$ 다.
 
 ## 갱신식
 
@@ -28,7 +24,9 @@ $$Q^\ast(s,a)=r(s,a)+\gamma\sum_{s'\in S}P(s'\mid s,a)\max_{a'\in A}Q^\ast(s',a'
 
 $$Q(s,a)\leftarrow Q(s,a)+\alpha_t\left\lbrack r+\gamma\max_{a'}Q(s',a')-Q(s,a)\right\rbrack$$
 
-대괄호 안을 **시간차 오차**라 한다. 갱신식이 $Q$ 자신의 다음 상태 값을 목표에 쓰므로, 정답을 밖에서 받지 않고 현재 추정을 목표로 삼아 나아간다.
+대괄호 안을 **시간차 오차(temporal difference error)** 라 한다. 갱신식이 $Q$ 자신의 다음 상태 값을 목표에 쓰므로, 정답을 밖에서 받지 않고 현재 추정을 목표로 삼아 나아간다.
+
+위의 미로에서 $Q(A,\text{오른쪽})=0$, $\max_{a'}Q(B,a')=1$ 이고 $\alpha=0.5$ 일 때 $A$ 에서 오른쪽으로 가는 전이를 관측하면, 시간차 오차는 $0+0.9\cdot1-0=0.9$ 이고 $Q(A,\text{오른쪽})$ 은 $0.45$ 가 된다.
 
 ```javascript
 function qLearning(env, A, gamma, episodes) {
@@ -49,6 +47,14 @@ function qLearning(env, A, gamma, episodes) {
 ```
 
 # 성질
+
+## Bellman 최적 방정식
+
+$Q^\ast$ 는 Bellman 최적 방정식(Bellman optimality equation)을 만족한다.
+
+$$Q^\ast(s,a)=r(s,a)+\gamma\sum_{s'\in S}P(s'\mid s,a)\max_{a'\in A}Q^\ast(s',a')$$
+
+최적 가치함수와는 $V^\ast(s)=\max_a Q^\ast(s,a)$ 로 이어지고, 최적 정책은 $\pi^\ast(s)\in\mathop{\mathrm{argmax}}\_a Q^\ast(s,a)$ 다. $Q$ 를 알면 모형 없이 정책을 읽을 수 있다. 정의 절의 미로에서 $Q^\ast(A,\text{오른쪽})=0+0.9\cdot Q^\ast(B,\text{오른쪽})=0.9$ 가 이 방정식이다.
 
 ## 수렴
 
