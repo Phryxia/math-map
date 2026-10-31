@@ -6,8 +6,6 @@
 
 # 직관
 
-MAC 은 [전자서명](digital-signatures.md)과 같은 위조 불가능성을 요구하지만 확인하는 데에도 비밀키가 필요하다. [유사난수 생성기](pseudorandom-generators.md) 문서의 유사난수 함수가 그대로 MAC 이 되고, 실제로 널리 쓰는 HMAC(hash-based message authentication code)은 [암호 해시 함수](cryptographic-hash-functions.md)로 만든다.
-
 앨리스가 밥에게 "철수에게 100 원을 보내라" 는 메시지 $m$ 을 보내고, 중간에 있는 사람이 메시지를 바꿀 수 있다. 두 사람이 비밀 비트열 $r$ 을 공유해 $c=m\oplus r$ 을 보내면 중간의 사람은 $m$ 을 읽지 못한다. 그러나 그 사람이 $c$ 에 아무 $\Delta$ 를 배타적 논리합해 넘기면 밥은 $m\oplus\Delta$ 로 복호한다. 금액이 적힌 비트 자리를 알면 $\Delta$ 를 골라 100 을 900 으로 바꿀 수 있고, 밥은 바뀐 것을 알지 못한다.
 
 그래서 앨리스는 밥이 확인할 값 $t$ 를 메시지와 함께 보낸다. 두 사람이 메시지마다 $n$ 비트 값을 무작위로 적은 표 $f$ 를 공유하고 $t=f(m)$ 을 보낸다. 중간의 사람이 $(m,f(m))$ 쌍을 여럿 보아도 다른 메시지 $m'$ 의 칸 $f(m')$ 은 따로 뽑은 값이므로 그것을 맞힐 확률은 $2^{-n}$ 이다. 밥은 받은 $t$ 가 $f(m)$ 과 같은지 계산해 바뀐 메시지를 걸러 낸다.
@@ -26,9 +24,13 @@ MAC 은 [전자서명](digital-signatures.md)과 같은 위조 불가능성을 �
 
 모든 $m$ 에 대해 $\mathrm{Vrfy}(k,m,\mathrm{Mac}(k,m))$ 이 받아들여야 한다. $\mathrm{Mac}$ 이 결정적이면 $\mathrm{Vrfy}$ 는 $\mathrm{Mac}(k,m)$ 을 다시 계산해 $t$ 와 비교한다.
 
+예. 직관 절의 표를 두 비트 메시지와 한 비트 꼬리표로 줄이면, $\mathrm{Gen}$ 은 $f(00),f(01),f(10),f(11)$ 을 무작위로 적은 표를 키로 내고 $\mathrm{Mac}(f,m)=f(m)$ 이다. 키가 $(1,0,0,1)$ 이면 $\mathrm{Mac}(f,10)=0$ 이고, $\mathrm{Vrfy}(f,10,1)$ 은 거절한다.
+
 ## 선택 메시지 공격에 대한 위조 불가능성
 
-공격자 $A$ 는 키를 받지 않고, 고른 메시지 $m\_1,\dots,m\_q$ 의 꼬리표를 차례로 요청해 받는다. 마지막에 $A$ 가 $(m^\ast,t^\ast)$ 을 내고, $m^\ast$ 이 요청한 메시지가 아니며 $\mathrm{Vrfy}(k,m^\ast,t^\ast)$ 가 받아들이면 $A$ 가 이긴다. 모든 확률적 다항시간 $A$ 의 승리 확률이 $n$ 에 대해 무시할 만한 MAC 방식을 **선택 메시지 공격에 대해 존재적으로 위조 불가능(existentially unforgeable under chosen-message attack, EUF-CMA)** 하다고 한다.
+공격자 $A$ 는 키를 받지 않고, 고른 메시지 $m\_1,\dots,m\_q$ 의 꼬리표를 차례로 요청해 받는다. 마지막에 $A$ 가 $(m^\ast,t^\ast)$ 을 내고, $m^\ast$ 이 요청한 메시지가 아니며 $\mathrm{Vrfy}(k,m^\ast,t^\ast)$ 가 받아들이면 $A$ 가 이긴다. 모든 확률적 다항시간 $A$ 의 승리 확률이 $n$ 에 대해 무시할 만한 MAC 방식을 **선택 메시지 공격에 대해 존재적으로 위조 불가능(existentially unforgeable under chosen-message attack, EUF-CMA)** 하다고 한다. [전자서명](digital-signatures.md)의 EUF-CMA 와 같은 게임이지만, MAC 은 확인하는 데에도 비밀키가 필요하다.
+
+예. 앞 절의 표 방식에서 $A$ 가 $00$ 과 $01$ 의 꼬리표를 받아도 $f(10)$ 은 따로 뽑은 값이므로, $10$ 의 꼬리표를 맞힐 확률은 $1/2=2^{-n}$ 이다. $n$ 비트 메시지에 $\mathrm{Mac}(k,m)=m\oplus k$ 를 쓰면 $A$ 는 꼬리표 하나 $t\_1=m\_1\oplus k$ 에서 $k=m\_1\oplus t\_1$ 을 얻어 아무 메시지의 꼬리표를 만들므로, 이 방식은 EUF-CMA 가 아니다.
 
 조건을 "$(m^\ast,t^\ast)$ 이 받은 쌍이 아니다" 로 바꾸면 **강한 위조 불가능성(strong unforgeability)** 이다. 결정적인 $\mathrm{Mac}$ 에서는 메시지마다 맞는 꼬리표가 하나뿐이므로 두 정의가 같다.
 
@@ -40,7 +42,7 @@ MAC 은 [전자서명](digital-signatures.md)과 같은 위조 불가능성을 �
 
 증명의 요지. 위조자 $A$ 로 구별자 $D$ 를 만든다. $D$ 는 오라클 $O$ 를 받아 $A$ 의 요청 $m\_i$ 에 $O(m\_i)$ 로 답하고, $A$ 가 낸 $(m^\ast,t^\ast)$ 에 대해 $O(m^\ast)=t^\ast$ 인지 출력한다. $O=F\_k$ 이면 $D$ 의 출력 확률은 $A$ 의 승리 확률이다. $O$ 가 균등한 무작위 함수이면 $O(m^\ast)$ 은 $A$ 가 본 적 없는 값이므로 그 확률은 $2^{-n}$ 이다. 두 확률의 차는 무시할 만하므로 $A$ 의 승리 확률은 $2^{-n}$ 에 무시할 만한 양을 더한 것 이하다.
 
-[일방향 함수](one-way-functions.md)가 존재하면 유사난수 생성기가 존재하고, 그로부터 Goldreich–Goldwasser–Micali 구성으로 유사난수 함수가 존재한다. 그래서 일방향 함수가 존재하면 EUF-CMA 인 MAC 방식이 존재한다.
+[일방향 함수](one-way-functions.md)가 존재하면 [유사난수 생성기](pseudorandom-generators.md)가 존재하고, 그로부터 Goldreich–Goldwasser–Micali 구성으로 유사난수 함수가 존재한다. 그래서 일방향 함수가 존재하면 EUF-CMA 인 MAC 방식이 존재한다.
 
 ## CBC-MAC
 
@@ -62,7 +64,7 @@ $$
 
 ## HMAC
 
-키가 없는 해시 함수 $H$ 에서 $H(k\Vert m)$ 을 꼬리표로 쓰면, Merkle–Damgård 구성의 해시값이 마지막 사슬 값 그대로이므로 $H(k\Vert m)$ 만으로 $m$ 뒤에 블록을 이어 붙인 메시지의 꼬리표가 계산된다. **HMAC** 은 해시를 두 번 겹쳐 이 공격을 막는다.
+HMAC(hash-based message authentication code)은 [암호 해시 함수](cryptographic-hash-functions.md)로 만드는 MAC 이다. 키가 없는 해시 함수 $H$ 에서 $H(k\Vert m)$ 을 꼬리표로 쓰면, Merkle–Damgård 구성의 해시값이 마지막 사슬 값 그대로이므로 $H(k\Vert m)$ 만으로 $m$ 뒤에 블록을 이어 붙인 메시지의 꼬리표가 계산된다. **HMAC** 은 해시를 두 번 겹쳐 이 공격을 막는다.
 
 $$
 \mathrm{HMAC}(k,m)=H\bigl((k\oplus\mathit{opad})\Vert H((k\oplus\mathit{ipad})\Vert m)\bigr)
