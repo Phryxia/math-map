@@ -6,33 +6,29 @@
 
 # 직관
 
-종수 $g$ 인 콤팩트 [Riemann 곡면](riemann-surfaces.md) $X$ 의 Jacobi 다양체는 정칙 $1$ 형식의 쌍대공간을 주기 격자로 나눈 $g$ 차원 복소 토러스다. Abel–Jacobi 사상이 차수 $0$ 인 divisor 를 이 토러스의 점으로 보낸다.
-
-Abel 정리로 그 점이 $0$ 인 것과 divisor 가 주 divisor 인 것이 동치다. 따라서 Jacobi 다양체는 [Picard 군](picard-group.md)의 항등원 성분 $\mathrm{Pic}^0(X)$ 와 같다.
-
 원환면 $\mathbb C/\Lambda$ 에서 점 $p$ 에만 1차 영점을 갖고 점 $q$ 에만 1차 극점을 갖는 유리형 함수는 없다. 어떤 영점과 극점의 배치가 함수에서 오는지 판정하는 조건을 찾는다. 유리형 함수 $f$ 를 잡고 기본 평행사변형의 경계 $\partial P$ 에서 $z\thinspace df/f$ 를 적분하면 [유수 정리](residue-theorem.md)로 다음이 나온다.
 
 $$
 \frac{1}{2\pi i}\oint\_{\partial P} z\thinspace \frac{df}{f} = \sum\_i n\_i p\_i
 $$
 
-오른쪽은 영점과 극점의 위치에 차수를 곱해 더한 것이다. 왼쪽에서 마주 보는 두 변의 기여를 맞대면 $f$ 가 [주기함수](elliptic-functions.md)이므로 $df/f$ 가 같고 $z$ 만 주기 $\omega$ 만큼 어긋나, 남는 값은 격자 $\Lambda$ 의 원소다. 그러므로 배치 $\sum n\_i p\_i$ 를 $\mathbb C/\Lambda$ 의 한 점으로 읽으면 그 점이 $0$ 이어야 하고, $p-q$ 는 $p=q$ 일 때만 이 조건을 만족한다. 종수가 $g$ 이면 적분할 미분형식이 $g$ 개이고, 격자는 그 형식들을 곡면의 순환마다 적분한 주기가 만들어 배치의 값이 사는 자리가 $g$ 차원 토러스다.
+오른쪽은 영점과 극점의 위치에 차수를 곱해 더한 것이다. 왼쪽에서 마주 보는 두 변의 기여를 맞대면 $f$ 가 [주기함수](elliptic-functions.md)이므로 $df/f$ 가 같고 $z$ 만 주기 $\omega$ 만큼 어긋나, 남는 값은 격자 $\Lambda$ 의 원소다. 그러므로 배치 $\sum n\_i p\_i$ 를 $\mathbb C/\Lambda$ 의 한 점으로 보면 그 점이 $0$ 이어야 하고, $p-q$ 는 $p=q$ 일 때만 이 조건을 만족한다. 종수가 $g$ 이면 적분할 미분형식이 $g$ 개이고, 격자는 그 형식들을 곡면의 순환마다 적분한 주기가 만들어 배치의 값이 사는 자리가 $g$ 차원 토러스다.
 
 # 정의
 
 ## 주기 격자
 
-$X$ 위의 정칙 $1$ 형식이 이루는 공간 $H^0(X,\Omega^1\_X)$ 는 차원이 $g$ 다. 그 쌍대공간을 $V$ 라 하면 적분
+종수 $g$ 인 콤팩트 [Riemann 곡면](riemann-surfaces.md) $X$ 위의 정칙 $1$ 형식이 이루는 공간 $H^0(X,\Omega^1\_X)$ 는 차원이 $g$ 다. 그 쌍대공간을 $V$ 라 하면 적분
 
 $$
 H\_1(X,\mathbb Z) \to V, \qquad \gamma \mapsto \left(\omega \mapsto \oint\_\gamma \omega\right)
 $$
 
-가 단사이고 상 $\Lambda$ 는 계수 $2g$ 인 격자다. 이 격자의 생성원을 형식의 기저로 적은 $g \times 2g$ [행렬](matrices.md)을 **주기 행렬**이라 한다.
+가 단사이고 상 $\Lambda$ 는 계수 $2g$ 인 격자다. 이 격자의 생성원을 형식의 기저로 적은 $g \times 2g$ [행렬](matrices.md)을 **주기 행렬(period matrix)** 이라 한다. $X=\mathbb C/\Lambda$ 이면 $g=1$ 이고 정칙 $1$ 형식은 $dz$ 의 상수배다. $dz$ 를 두 생성 순환 위에서 적분하면 $\Lambda$ 의 생성원 $\omega_1,\omega_2$ 가 나오므로 주기 행렬은 $(\omega_1\thinspace\thinspace \omega_2)$ 이고 주기 격자는 $\Lambda$ 자신이다.
 
 ## Jacobi 다양체
 
-**Jacobi 다양체**는 몫 $J(X) = V/\Lambda$ 다.[^1] $g$ 차원 복소 토러스이고 덧셈으로 아벨군이다.
+**Jacobi 다양체(Jacobian variety)** 는 몫 $J(X) = V/\Lambda$ 다.[^1] $g$ 차원 복소 토러스이고 덧셈으로 아벨군이다. $X=\mathbb C/\Lambda$ 이면 $J(X)=\mathbb C/\Lambda$ 다.
 
 ## Abel–Jacobi 사상
 
@@ -42,17 +38,17 @@ $$
 \mathrm{AJ}(x) = \left(\omega \mapsto \int\_{x\_0}^{x}\omega\right) \bmod \Lambda
 $$
 
-로 둔다. 경로를 바꾸면 값이 $\Lambda$ 의 원소만큼 달라지므로 $J(X)$ 에서는 정해진다. divisor 로는 $\mathrm{AJ}(\sum n\_i p\_i) = \sum n\_i \mathrm{AJ}(p\_i)$ 로 넓히고, 차수가 $0$ 이면 이 값이 $x\_0$ 의 선택과 무관하다.
+로 둔다. 경로를 바꾸면 값이 $\Lambda$ 의 원소만큼 달라지므로 $J(X)$ 에서는 정해진다. divisor 로는 $\mathrm{AJ}(\sum n\_i p\_i) = \sum n\_i \mathrm{AJ}(p\_i)$ 로 넓히고, 차수가 $0$ 이면 이 값이 $x\_0$ 의 선택과 무관하다. 이 사상을 Abel–Jacobi 사상(Abel–Jacobi map)이라 한다. $X=\mathbb C/\Lambda$ 이면 $\mathrm{AJ}(x)=x-x\_0$ 이고, 직관 절의 배치 $p-q$ 는 점 $p-q\in\mathbb C/\Lambda$ 로 간다.
 
 # 성질
 
 ## Abel 정리
 
-**정리.** 차수 $0$ 인 divisor $D$ 가 주 divisor 일 필요충분조건은 $\mathrm{AJ}(D)=0$ 이다.
+Abel 정리(Abel's theorem). 차수 $0$ 인 divisor $D$ 가 주 divisor 일 필요충분조건은 $\mathrm{AJ}(D)=0$ 이다.
 
 한 방향은 직관 절의 계산을 종수 $g$ 로 옮긴 것이다. $D = \mathrm{div}(f)$ 이면 $f$ 를 $\mathbb P^1$ 로 가는 사상으로 보고 $0$ 과 $\infty$ 를 잇는 경로를 당겨 올려 적분값이 주기가 됨을 본다. 반대 방향은 $\mathrm{AJ}(D)=0$ 에서 나오는 자료로 유리형 함수를 구성하는 것이고 Riemann theta 함수를 쓴다. ∎
 
-**따름정리.** $\mathrm{AJ}$ 가 군 동형 $\mathrm{Pic}^0(X) \cong J(X)$ 를 준다.
+따라서 $\mathrm{AJ}$ 가 [Picard 군](picard-group.md)의 항등원 성분과의 군 동형 $\mathrm{Pic}^0(X) \cong J(X)$ 를 준다.
 
 ## Jacobi 역 정리
 
