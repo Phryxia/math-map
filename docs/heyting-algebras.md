@@ -6,19 +6,13 @@
 
 # 직관
 
-함의는 만남 연산의 오른쪽 수반으로 유일하게 결정되고, 이 조건 하나가 직관주의 명제논리의 정리를 대수적으로 재현한다.
-
-[Boole 대수](boolean-algebras.md)가 고전 명제논리의 대수적 대응물이듯 Heyting 대수는 [직관주의 논리](intuitionism.md)의 대수적 대응물이다. 차이는 배중률에 해당하는 항등식이 성립하지 않아도 된다는 것뿐이고, 분배법칙과 [De Morgan 법칙](de-morgan-laws.md)의 절반과 이중부정 도입은 남는다.
-
-주요 예는 위상공간의 열린집합 격자와 [Kripke 프레임](kripke-semantics.md)의 상향닫힌 집합 격자다. 두 예 모두 여집합이 구조를 벗어나기 때문에 배중률을 잃는다.
-
-고전논리에서 함의는 부정으로 환원된다.
+고전 명제논리의 [Boole 대수](boolean-algebras.md)에서 함의는 부정으로 환원된다.
 
 $$
 a \to b \thickspace=\thickspace \neg a \vee b
 $$
 
-부정을 가정할 수 없으면 함의를 따로 특징지어야 한다. $a \to b$ 는 $a$ 와 만나도 $b$ 를 넘지 않는 원소들 중 최대 원소이고, 부정은 $\neg a=a\to 0$ 곧 $a$ 와 만나면 바닥이 되는 최대 원소다. 실직선의 열린집합에서 $A$ 를 0 을 뺀 실직선이라 하면 여집합이 한 점이고 그 안의 가장 큰 열린집합은 공집합이므로 $\neg A=\varnothing$ 이고 $A\vee\neg A$ 가 전체가 아니다. 여집합을 취하면 열린집합 밖으로 나가므로 안쪽으로 잘라 들여야 하고, 그 과정에서 경계가 버려진다.
+부정을 가정할 수 없으면 함의를 따로 특징지어야 한다. $a \to b$ 는 $a$ 와 만나도 $b$ 를 넘지 않는 원소들 중 최대 원소이고, 부정은 $\neg a=a\to 0$ 곧 $a$ 와 만나면 바닥이 되는 최대 원소다. 실직선의 열린집합에서 $A$ 를 0 을 뺀 실직선이라 하면 여집합이 한 점이고 그 안의 가장 큰 열린집합은 공집합이므로 $\neg A=\varnothing$ 이고 $A\vee\neg A$ 가 전체가 아니다. 여집합을 취하면 열린집합 밖으로 나가므로 안쪽으로 잘라 들여야 하고, 그 과정에서 경계가 버려진다. 이렇게 배중률이 성립하지 않는 논리가 [직관주의 논리](intuitionism.md)이고, Heyting 대수는 그 논리의 명제들이 이루는 구조다.
 
 # 정의
 
@@ -30,29 +24,59 @@ $$
 \forall x \in H:\quad x \wedge a \le b \iff x \le c
 $$
 
-를 만족하는 $c$ 를 $b$ 에 대한 $a$ 의 **상대 의사보수**라 하고 $a \to b$ 로 쓴다. 두 원소가 같은 조건을 만족하면 서로를 넘지 않으므로 $c$ 는 유일하다. 동치로 $a \to b$ 는 집합
-
-$$
-\lbrace\thinspace x \in H : x \wedge a \le b \thinspace\rbrace
-$$
-
-의 최대원이다.
+를 만족하는 $c$ 를 $b$ 에 대한 $a$ 의 **상대 의사보수(relative pseudo-complement)** 라 하고 $a \to b$ 로 쓴다. 실직선의 열린집합에서 $U=(0,2)$, $V=(1,3)$ 이면 $U\to V$ 는 $U$ 와 겹친 부분이 $V$ 안에 드는 가장 큰 열린집합 $(-\infty,0)\cup(1,\infty)$ 다.
 
 ## Heyting 대수
 
-**정의.** **Heyting 대수** 는 모든 $a,b$ 에 대해 상대 의사보수 $a \to b$ 가 존재하는 유계 격자 $H$ 다. 부정은
+**Heyting 대수** 는 모든 $a,b$ 에 대해 상대 의사보수 $a \to b$ 가 존재하는 유계 격자 $H$ 다. 부정은
 
 $$
 \neg a \thickspace:=\thickspace a \to 0
 $$
 
-으로 정의한다.
+으로 정의한다. 직관 절의 실직선의 열린집합 격자는 Heyting 대수이고, $A=\mathbb R\setminus\lbrace 0\rbrace$ 에서 $\neg A=\varnothing$ 이다.
+
+## 완비 Heyting 대수
+
+임의의 부분집합이 상한을 가지는 Heyting 대수를 **완비 Heyting 대수(complete Heyting algebra)** 또는 프레임(frame)이라 한다. 실직선의 열린집합 격자는 합집합이 상한이므로 완비 Heyting 대수다. 완비 격자에서 Heyting 구조가 존재할 필요충분조건은 무한 분배법칙(infinite distributive law)
+
+$$
+a \wedge \bigvee_{i \in I} b_i \thickspace=\thickspace \bigvee_{i \in I} (a \wedge b_i)
+$$
+
+이며, 성립하면 $a \to b$ 를 $\lbrace x : x \wedge a \le b\rbrace$ 의 상한으로 정의한다.
+
+## 표준 예
+
+열린집합 격자. [위상공간](topology.md) $X$ 의 열린집합 전체 $O(X)$ 는 포함관계로 완비 Heyting 대수다. $\mathrm{int}$ 를 내부라 하면 연산은 다음과 같다.
+
+$$
+U \to V = \mathrm{int}\big((X \setminus U) \cup V\big), \qquad \neg U = \mathrm{int}(X \setminus U)
+$$
+
+상향닫힌 집합 격자. 부분순서 집합 $(W, \le)$ 의 상향닫힌 집합 전체 $\mathrm{Up}(W)$ 는 교집합과 합집합으로 완비 Heyting 대수이고 함의는
+
+$$
+U \to V = \lbrace\thinspace w \in W : \forall v \ge w,\thickspace v \in U \Rightarrow v \in V \thinspace\rbrace
+$$
+
+다. [Kripke 의미론](kripke-semantics.md)의 강제 조건을 대수화한 것이다.
+
+Lindenbaum–Tarski 대수(Lindenbaum–Tarski algebra). 직관주의 명제논리의 논리식을 상호 도출 가능성으로 나눈 몫은 Heyting 대수이고 $[\varphi] \le [\psi]$ 는 $\varphi \vdash \psi$ 를 뜻한다. [동치관계](equivalence-relations.md)로 나누는 전형적인 구성이다.
+
+# 성질
+
+## 상대 의사보수의 유일성
+
+두 원소가 상대 의사보수의 조건을 만족하면 서로를 넘지 않으므로 $a\to b$ 는 유일하다. 동치로 $a \to b$ 는 집합 $\lbrace\thinspace x \in H : x \wedge a \le b \thinspace\rbrace$ 의 최대원이다.
+
+## 수반으로서의 함의
 
 [수반](adjunctions.md) 조건은 [부분순서](partial-orders.md)에서 [Galois 연결](galois-connections.md)이다. 각 $a$ 마다 $(-) \wedge a$ 가 왼쪽 수반이고 $a \to (-)$ 가 오른쪽 수반이다. [범주](category.md)의 관점에서는 $H$ 를 얇은 범주로 볼 때 $(-) \wedge a$ 가 왼쪽 수반 [함자](functors.md) 라는 진술과 같다.
 
-## 동치인 공리적 정의
+## 방정식에 의한 정의
 
-수반 조건 대신 다음 항등식으로 정의해도 같다. 방정식으로만 쓰이므로 Heyting 대수들의 모임은 variety 다.
+수반 조건 대신 다음 항등식으로 정의해도 같다. 방정식으로만 쓰이므로 Heyting 대수들의 모임은 대수 다양체(variety)다.
 
 $$
 a \to a = 1, \qquad a \wedge (a \to b) = a \wedge b
@@ -62,39 +86,10 @@ $$
 b \wedge (a \to b) = b, \qquad a \to (b \wedge c) = (a \to b) \wedge (a \to c)
 $$
 
-## 완비 Heyting 대수
-
-임의의 부분집합이 상한을 가지는 Heyting 대수가 **완비 Heyting 대수**(complete Heyting algebra) 또는 frame 이다. 완비 격자에서 Heyting 구조가 존재할 필요충분조건은 무한 분배법칙
-
-$$
-a \wedge \bigvee_{i \in I} b_i \thickspace=\thickspace \bigvee_{i \in I} (a \wedge b_i)
-$$
-
-이며, 성립하면 $a \to b$ 를 위 집합의 상한으로 정의한다.
-
-## 표준 예
-
-**열린집합 격자.** [위상공간](topology.md) $X$ 의 열린집합 전체 $O(X)$ 는 포함관계로 완비 Heyting 대수 다. $\mathrm{int}$ 를 내부라 하면 연산은 다음과 같다.
-
-$$
-U \to V = \mathrm{int}\big((X \setminus U) \cup V\big), \qquad \neg U = \mathrm{int}(X \setminus U)
-$$
-
-**상향닫힌 집합 격자.** 부분순서 집합 $(W, \le)$ 의 상향닫힌 집합 전체 $\mathrm{Up}(W)$ 는 교집합과 합집합으로 완비 Heyting 대수 이고 함의는
-
-$$
-U \to V = \lbrace\thinspace w \in W : \forall v \ge w,\thickspace v \in U \Rightarrow v \in V \thinspace\rbrace
-$$
-
-다. Kripke 의미론의 강제 조건을 대수화한 것이다.
-
-**Lindenbaum–Tarski 대수.** 직관주의 명제논리의 논리식을 상호 도출 가능성으로 나눈 몫은 Heyting 대수이고 $[\varphi] \le [\psi]$ 는 $\varphi \vdash \psi$ 를 뜻한다. [동치관계](equivalence-relations.md)로 나누는 전형적인 구성이다.
-
-# 성질
 
 ## 분배법칙
 
-**정리.** 모든 Heyting 대수는 분배격자다.
+모든 Heyting 대수는 분배격자다.
 
 *증명의 요지.* $(-) \wedge a$ 가 왼쪽 수반이므로 존재하는 모든 상한을 보존하고, 특히 이항 상한을 보존하므로 $a \wedge (b \vee c) = (a \wedge b) \vee (a \wedge c)$ 다. ∎
 
@@ -110,23 +105,23 @@ $\neg\neg a \le a$ 와 $\neg(a \wedge b) = \neg a \vee \neg b$ 와 배중률 $a 
 
 ## Boolean 이 되는 조건
 
-**정리.** Heyting 대수 $H$ 에 대해 다음은 동치다.
+Heyting 대수 $H$ 에 대해 다음은 동치다.
 
 1. 모든 $a$ 에 대해 $a \vee \neg a = 1$ 이다.
 2. 모든 $a$ 에 대해 $\neg\neg a = a$ 다.
 3. $H$ 는 Boole 대수이며 $a \to b = \neg a \vee b$ 다.
 
-*증명의 요지.* 1에서 2는 $a \vee \neg a = 1$ 의 양변에 $\neg\neg a$ 를 만나게 하고 $\neg a \wedge \neg\neg a = 0$ 을 쓴다. 2에서 3은 $\neg$ 가 대합이 되어 De Morgan 법칙이 양방향 모두 회복되고 의사보수가 보수가 된다. 3에서 1은 자명하다. ∎
+*증명의 요지.* 1에서 2는 $a \vee \neg a = 1$ 의 양변에 $\neg\neg a$ 를 만나게 하고 $\neg a \wedge \neg\neg a = 0$ 을 쓴다. 2에서 3은 $\neg$ 가 대합이 되어 [De Morgan 법칙](de-morgan-laws.md)이 양방향 모두 회복되고 의사보수가 보수가 된다. 3에서 1은 자명하다. ∎
 
 ## 정칙 원소와 Glivenko 정리
 
-$\neg\neg a = a$ 인 원소를 **정칙**이라 한다. 정칙 원소 전체는 $H$ 의 부분격자가 아니지만, 만남과 $\neg$ 를 그대로 쓰고 이음을 $a \sqcup b := \neg(\neg a \wedge \neg b)$ 로 정의하면 Boolean algebra 가 된다. 사상 $a \mapsto \neg\neg a$ 는 그 Boolean algebra 로 가는 전사 준동형이다.
+$\neg\neg a = a$ 인 원소를 **정칙(regular)** 이라 한다. 정칙 원소 전체는 $H$ 의 부분격자가 아니지만, 만남과 $\neg$ 를 그대로 쓰고 이음을 $a \sqcup b := \neg(\neg a \wedge \neg b)$ 로 정의하면 Boole 대수가 된다. 사상 $a \mapsto \neg\neg a$ 는 그 Boole 대수로 가는 전사 준동형이다.
 
 논리 쪽 대응물이 Glivenko 정리다. 명제논리식 $\varphi$ 가 고전논리에서 증명 가능한 것과 $\neg\neg\varphi$ 가 직관주의논리에서 증명 가능한 것은 동치이므로, 고전논리는 이중부정을 통해 직관주의논리 안에 들어앉는다.
 
 ## 건전성과 완전성
 
-**정리.** 직관주의 명제논리(intuitionistic propositional calculus, IPC)에 대해
+직관주의 명제논리(intuitionistic propositional calculus, IPC)에 대해
 
 $$
 \mathrm{IPC} \vdash \varphi \iff v(\varphi) = 1 \ \text{for every Heyting algebra } H \text{ and valuation } v
@@ -140,11 +135,11 @@ $$
 
 ## 유한 Heyting 대수와 Kripke 프레임
 
-**정리(Birkhoff 표현).** 유한 분배격자는 그 join-기약 원소들의 부분순서 집합의 하향닫힌 집합 격자와 동형이다.
+Birkhoff 표현 정리(Birkhoff's representation theorem). 유한 분배격자는 그 join-기약 원소들의 부분순서 집합의 하향닫힌 집합 격자와 동형이다.
 
 유한 격자에서는 무한 분배법칙이 유한 분배법칙과 같으므로 다음이 나온다.
 
-**따름정리.** 유한 Heyting 대수와 유한 분배격자는 같은 것이다. Heyting 구조는 존재하면 유일하므로 유한 분배격자에 함의를 붙이는 방법은 정확히 하나다.
+따름정리로, 유한 Heyting 대수와 유한 분배격자는 같은 것이다. Heyting 구조는 존재하면 유일하므로 유한 분배격자에 함의를 붙이는 방법은 정확히 하나다.
 
 유한 Kripke 프레임과 유한 Heyting 대수는 서로 번역된다. 프레임의 상향닫힌 집합 격자를 취하면 대수가 되고, 대수의 소 필터들을 포함관계로 세우면 프레임이 된다. 무한 경우에는 Esakia 쌍대성이 여기에 위상을 더해 대응을 만든다.
 
