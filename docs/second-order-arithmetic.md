@@ -6,8 +6,6 @@
 
 # 직관
 
-어떤 논리식에 대해 집합의 존재를 인정하는지가 체계를 가르고, 그 순서로 정리의 세기를 비교하는 것이 [역수학](reverse-mathematics.md)이다.
-
 [Peano 공리](peano-axioms.md)의 1차 언어로는 유계 증가 수열의 수렴을 말할 수 없다. 수열은 자연수에서 유리수로 가는 함수이고 그 수렴은 실수 하나의 존재를 주장하는데, 자연수만 가리키는 변수로는 실수를 가리킬 방법이 없다. 실수를 자연수 집합으로 바꿔 쓴다. 유리수를 $q_0,q_1,q_2,\dots$ 로 줄 세우고 실수 $x$ 를 $x$ 로 수렴하는 유리수열의 지표 집합으로, 연속함수를 유리수 구간의 쌍이 이루는 집합으로 나타내면 "유계 증가 수열이 수렴한다" 가 "어떤 자연수 집합이 존재한다" 가 된다.
 
 집합의 존재를 어디까지 인정하는지가 남는다. 논리식 $\varphi(n)$ 마다 $\lbrace n:\varphi(n)\rbrace$ 이 있다고 하면 강한 체계가 되고, $\varphi$ 를 계산 가능한 것으로 제한하면 약한 체계가 된다. 같은 정리가 어떤 제한 아래에서 증명되는지가 그 정리의 세기다.
@@ -18,7 +16,9 @@
 
 $L_2$ 는 수 변수 $m,n,\dots$ 와 집합 변수 $X,Y,\dots$ 를 가지며, 기호는 $0$ , $1$ , $+$ , $\cdot$ , $\lt$ , $\in$ 이다. 항은 수 항뿐이고 집합 변수는 항을 만들지 않는다. 원자 논리식은 $s=t$ , $s\lt t$ , $s\in X$ 다.
 
-논리식에서 집합 변수에 붙는 양화사의 개수로 계층을 매긴다. 집합 양화사가 없는 논리식이 **산술적 논리식**이고, 집합 양화사가 $k$ 번 교대하면 $\Sigma^1_k$ 또는 $\Pi^1_k$ 다. 이 계층이 [해석적 계층](analytical-hierarchy.md)과 같다.
+논리식에서 집합 변수에 붙는 한정사(quantifier)의 개수로 계층을 매긴다. 집합 변수의 한정사가 없는 논리식이 **산술적 논리식(arithmetical formula)** 이고, 집합 변수의 한정사가 $k$ 번 교대하면 $\Sigma^1_k$ 또는 $\Pi^1_k$ 다. 이 계층이 [해석적 계층](analytical-hierarchy.md)과 같다. "$n$ 은 짝수다" 를 적은 $\exists m\thinspace(n=m+m)$ 은 산술적이고, $\exists X\thinspace\forall k\thinspace(k\in X\leftrightarrow k\lt n)$ 은 $\Sigma^1_1$ 이다.
+
+산술적 논리식 가운데 유계 한정사만 있는 논리식 앞에 수 변수의 존재 한정사 하나를 붙인 꼴이 $\Sigma^0_1$, 전칭 한정사 하나를 붙인 꼴이 $\Pi^0_1$ 이고, 두 꼴로 모두 쓸 수 있는 것이 $\Delta^0_1$ 이다. $\Delta^0_1$ 논리식이 정의하는 집합은 계산 가능한 집합이다.
 
 ## 내포 공리꼴
 
@@ -28,9 +28,9 @@ $$
 \exists X\thickspace\forall n\thinspace(n\in X\leftrightarrow\varphi(n))
 $$
 
-을 $\varphi$ 의 **내포 공리**라 한다. $\varphi$ 에 $X$ 가 자유롭게 나타나지 않아야 한다. 논리식 부류 $\Gamma$ 의 모든 논리식에 대한 내포 공리를 $\Gamma$ 내포라 한다.
+을 $\varphi$ 의 **내포 공리(comprehension axiom)** 라 한다. $\varphi$ 에 $X$ 가 자유롭게 나타나지 않아야 한다. 논리식 부류 $\Gamma$ 의 모든 논리식에 대한 내포 공리를 $\Gamma$ 내포라 한다. $\varphi(n)$ 이 $\exists m\thinspace(n=m+m)$ 이면 내포 공리는 짝수 집합의 존재를 주장하고, 이 $\varphi$ 는 $\Delta^0_1$ 이므로 $\Delta^0_1$ 내포의 사례다.
 
-**완전 2차 산술** $Z_2$ 는 Peano 공리에 모든 $L_2$ 논리식의 내포와 집합에 대한 귀납법을 더한 체계다.
+**완전 2차 산술(full second-order arithmetic)** $Z_2$ 는 Peano 공리에 모든 $L_2$ 논리식의 내포와 집합에 대한 귀납법을 더한 체계다.
 
 ## 부분체계
 
@@ -50,7 +50,7 @@ $$
 
 ## ω 모형
 
-$L_2$ 의 모형은 수 부분과 집합 부분의 쌍이다. 수 부분이 표준 자연수 $\mathbb N$ 인 모형을 $\omega$ 모형이라 하고, 이때 모형은 집합족 $\mathcal S\subseteq\mathcal P(\mathbb N)$ 하나로 정해진다.
+$L_2$ 의 모형은 수 부분과 집합 부분의 쌍이다. 수 부분이 표준 자연수 $\mathbb N$ 인 모형을 $\omega$ 모형($\omega$-model)이라 하고, 이때 모형은 집합족 $\mathcal S\subseteq\mathcal P(\mathbb N)$ 하나로 정해진다.
 
 계산 가능한 집합 전체는 $\mathrm{RCA}\_0$ 의 $\omega$ 모형이고, 산술적 집합 전체는 $\mathrm{ACA}\_0$ 의 $\omega$ 모형이며, [초산술적 계층](hyperarithmetical-hierarchy.md)의 집합 전체는 $\mathrm{ATR}\_0$ 보다 약한 체계의 모형을 준다. 어떤 정리가 $\mathrm{RCA}\_0$ 에서 증명되지 않음을 보이는 표준 수법은 그 정리가 거짓인 $\omega$ 모형을 만드는 것이다.
 
@@ -64,7 +64,7 @@ $\Sigma^0_k$ 논리식의 내포는 [산술적 계층](arithmetical-hierarchy.md
 
 # 활용
 
-- 역수학은 정리를 $L_2$ 문장으로 옮기고 위 다섯 체계 가운데 어느 것과 $\mathrm{RCA}\_0$ 위에서 동치인지 찾는다. 유계 증가 수열의 수렴과 [Bolzano–Weierstrass 정리](bolzano-weierstrass.md)는 $\mathrm{ACA}\_0$ 와 동치이고, [Heine–Borel 정리](heine-borel.md)와 [Brouwer 고정점 정리](brouwer-fixed-point.md)는 $\mathrm{WKL}\_0$ 과 동치다.
+- [역수학](reverse-mathematics.md)은 정리를 $L_2$ 문장으로 옮기고 위 다섯 체계 가운데 어느 것과 $\mathrm{RCA}\_0$ 위에서 동치인지 찾는다. 유계 증가 수열의 수렴과 [Bolzano–Weierstrass 정리](bolzano-weierstrass.md)는 $\mathrm{ACA}\_0$ 와 동치이고, [Heine–Borel 정리](heine-borel.md)와 [Brouwer 고정점 정리](brouwer-fixed-point.md)는 $\mathrm{WKL}\_0$ 과 동치다.
 - 약한 König 보조정리의 자리가 $\mathrm{WKL}\_0$ 이고, 그 체계가 콤팩트성을 쓰는 정리들을 모은다.
 - 해석적 계층의 $\Pi^1_1$ 단계가 $\Pi^1_1\text{-}\mathrm{CA}\_0$ 의 내포를 정하고, 그 위에서 정렬순서의 비교와 귀납적 정의가 형식화된다.
 
