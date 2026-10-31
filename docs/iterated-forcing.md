@@ -6,10 +6,6 @@
 
 # 직관
 
-반복 강제법은 강제 확대를 차례로 쌓는 구성이다. 한 번의 확대로는 모든 반례를 없앨 수 없는 명제를 긴 반복으로 처리한다.
-
-두 단계는 이름을 써서 하나의 강제 순서로 묶고, 길이가 극한인 단계에서는 몇 개의 좌표에서 조건이 자명하지 않은 값을 가져도 되는지를 정해야 한다. 그 선택이 어떤 성질이 보존되는지를 가른다.
-
 [Martin 의 공리](martins-axiom.md)는 모든 ccc(countable chain condition) 부분순서에 대해 조밀집합 $\aleph_1$ 개를 만나는 필터가 있다는 명제다. 한 번의 강제법은 미리 고른 순서 $\mathbb Q$ 하나에 대해 그런 필터를 준다.
 
 $V\lbrack G_0\rbrack$ 에는 $V$ 에 없던 ccc 부분순서가 새로 생긴다. 그것들에 대한 필터는 아직 없으므로 $V\lbrack G_0\rbrack$ 에서 다시 강제한다. 그러면 $V\lbrack G_0\rbrack\lbrack G_1\rbrack$ 에 또 새 ccc 부분순서가 생긴다. 한 번으로 끝나지 않는다.
@@ -22,7 +18,7 @@ $V\lbrack G_0\rbrack$ 에는 $V$ 에 없던 ccc 부분순서가 새로 생긴다
 
 ## 두 단계 반복
 
-$\mathbb P$ 가 강제 순서이고 $\dot{\mathbb Q}$ 가 강제 순서임을 $\mathbb P$ 가 강제하는 이름이면, 두 단계 반복은
+$\mathbb P$ 가 강제 순서이고 $\dot{\mathbb Q}$ 가 강제 순서임을 $\mathbb P$ 가 강제하는 이름이면, **두 단계 반복(two-step iteration)** 은
 
 $$
 \mathbb P\ast\dot{\mathbb Q}=\lbrace(p,\dot q)\thinspace\colon\thinspace p\in\mathbb P,\ p\Vdash\dot q\in\dot{\mathbb Q}\rbrace
@@ -30,13 +26,17 @@ $$
 
 이고 순서는 $(p',\dot q')\le(p,\dot q)$ 를 $p'\le p$ 와 $p'\Vdash\dot q'\le\dot q$ 로 정의한다.
 
+$\mathbb P$ 와 $\mathbb Q$ 가 둘 다 유한 비트열 조건의 Cohen 순서이면, 조건 $(\lbrace (0,1)\rbrace,\check q)$ 는 첫째 새 실수의 $0$ 번 비트를 $1$ 로, 둘째 새 실수의 비트를 $q$ 대로 정한다. 여기서 $\check q$ 는 바탕 모형의 조건 $q$ 를 가리키는 표준 이름이다.
+
 ## 길이 α 의 반복
 
-$\mathbb P\_0$ 을 자명한 순서로 두고, 각 단계에서 $\mathbb P\_\beta$ 이름 $\dot{\mathbb Q}\_\beta$ 를 하나 고른다. 후계 단계는 $\mathbb P\_{\beta+1}=\mathbb P\_\beta\ast\dot{\mathbb Q}\_\beta$ 다. 극한 단계 $\gamma$ 에서 $\mathbb P\_\gamma$ 의 조건은 정의역이 $\gamma$ 인 함수 $p$ 이고, 각 $\beta$ 에서 $p(\beta)$ 는 $\dot{\mathbb Q}\_\beta$ 의 원소를 가리키는 이름이다.
+**길이 $\alpha$ 의 반복(iteration of length $\alpha$)** 은 다음 재귀로 정한 강제 순서 $\mathbb P\_\alpha$ 다. $\mathbb P\_0$ 을 자명한 순서로 두고, 각 단계에서 $\mathbb P\_\beta$ 이름 $\dot{\mathbb Q}\_\beta$ 를 하나 고른다. 후계 단계는 $\mathbb P\_{\beta+1}=\mathbb P\_\beta\ast\dot{\mathbb Q}\_\beta$ 다. 극한 단계 $\gamma$ 에서 $\mathbb P\_\gamma$ 의 조건은 정의역이 $\gamma$ 인 함수 $p$ 이고, 각 $\beta$ 에서 $p(\beta)$ 는 $\dot{\mathbb Q}\_\beta$ 의 원소를 가리키는 이름이다.
 
 ## 지지 집합
 
-조건 $p$ 의 **지지**는 $\mathrm{supp}(p)=\lbrace\beta\thinspace\colon\thinspace p(\beta)\ne\mathbb 1\rbrace$ 다. 극한 단계의 조건을 지지가 유한인 것으로 제한한 반복이 **유한지지 반복**이고, 가산인 것으로 제한한 반복이 **가산지지 반복**이다.
+조건 $p$ 의 **지지(support)** 는 $\mathrm{supp}(p)=\lbrace\beta\thinspace\colon\thinspace p(\beta)\ne\mathbb 1\rbrace$ 다. 극한 단계의 조건을 지지가 유한인 것으로 제한한 반복이 **유한지지 반복(finite support iteration)** 이고, 가산인 것으로 제한한 반복이 **가산지지 반복(countable support iteration)** 이다.
+
+단계마다 Cohen 순서를 쓰는 길이 $\omega$ 의 반복에서 $p(0)$ 이 $\lbrace (0,1)\rbrace$, $p(5)$ 가 $\lbrace (2,0)\rbrace$ 를 가리키고 나머지 좌표가 $\mathbb 1$ 인 조건의 지지는 $\lbrace 0,5\rbrace$ 이고, 이 조건은 유한지지 반복의 조건이다.
 
 # 성질
 
@@ -54,7 +54,7 @@ $$
 
 각 단계가 ccc 임을 앞 단계가 강제하면 유한지지 반복 전체가 ccc 다.
 
-증명의 요지. 극한 단계에서 조건 $\aleph_1$ 개를 받는다. 지지가 유한이므로 [Δ 체계 보조정리](delta-system-lemma.md)로 지지들이 공통의 뿌리를 갖고 그 밖에서 서로 겹치지 않는 부분족 $\aleph_1$ 개를 뽑는다. 뿌리는 유한 집합이므로 그 위에서 두 조건이 양립하는 경우를 각 단계의 ccc 로 찾고, 뿌리 밖에서는 지지가 겹치지 않아 조건을 그대로 이어 붙인다.
+증명의 요지는 다음과 같다. 극한 단계에서 조건 $\aleph_1$ 개를 받는다. 지지가 유한이므로 [Δ 체계 보조정리](delta-system-lemma.md)로 지지들이 공통의 뿌리를 갖고 그 밖에서 서로 겹치지 않는 부분족 $\aleph_1$ 개를 뽑는다. 뿌리는 유한 집합이므로 그 위에서 두 조건이 양립하는 경우를 각 단계의 ccc 로 찾고, 뿌리 밖에서는 지지가 겹치지 않아 조건을 그대로 이어 붙인다.
 
 ## 가산지지 반복과 properness
 
