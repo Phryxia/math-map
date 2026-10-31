@@ -6,13 +6,9 @@
 
 # 직관
 
-Count-Min 스케치는 항목이 하나씩 지나가는 스트림에서 항목마다의 등장 횟수를, 서로 다른 항목의 수와 무관한 크기의 계수기 표로 추정하는 자료구조다. Cormode 와 Muthukrishnan 이 2005 년에 제안했다[^1].
-
-추정값은 참값 이상이고, 참값보다 $\varepsilon N$ 넘게 클 확률이 $\delta$ 이하다. $N$ 은 스트림의 길이다. 표의 행마다 [범용 해시족](universal-hashing.md)에서 고른 함수 하나가 항목의 계수기를 정한다.
-
 웹 서버가 요청을 보낸 IP 주소마다 요청 횟수를 세려고 한다. 주소는 $2^{32}$ 가지이고, 주소를 키로 하는 사전으로 세면 메모리가 서로 다른 주소의 수에 비례한다. 그래서 계수기 $w$ 개짜리 배열 $C$ 와 해시 함수 $h$ 를 두고, 요청이 올 때마다 $C\lbrack h(x)\rbrack$ 에 $1$ 을 더한다.
 
-주소 $a$ 의 횟수를 $C\lbrack h(a)\rbrack$ 로 읽으면, 같은 칸에 들어간 다른 주소들의 횟수가 더해져 있다. 그래서 읽은 값은 참값 이상이다. $h$ 를 범용 해시족에서 고르면 다른 주소가 같은 칸에 들 확률이 $1/w$ 이하이므로 더해진 양의 기댓값은 $N/w$ 이하다.
+주소 $a$ 의 횟수를 $C\lbrack h(a)\rbrack$ 로 읽으면, 같은 칸에 들어간 다른 주소들의 횟수가 더해져 있다. 그래서 읽은 값은 참값 이상이다. $h$ 를 [범용 해시족](universal-hashing.md)에서 고르면 다른 주소가 같은 칸에 들 확률이 $1/w$ 이하이므로 더해진 양의 기댓값은 $N/w$ 이하다. $N$ 은 요청의 총수다.
 
 기댓값이 작아도 한 배열에서는 더해진 양이 기댓값의 몇 배가 될 확률이 작지 않다. 그래서 독립으로 고른 함수 $d$ 개로 배열 $d$ 개를 두고 $d$ 개의 값 가운데 가장 작은 것을 읽는다. 가장 작은 값이 크게 틀리려면 모든 배열이 동시에 크게 틀려야 하고, 그 확률은 $d$ 에 대해 지수적으로 줄어든다. 이 $d\times w$ 표와 최솟값 읽기가 Count-Min 스케치다.
 
@@ -22,9 +18,11 @@ Count-Min 스케치는 항목이 하나씩 지나가는 스트림에서 항목�
 
 스트림 $x\_1,\dots,x\_N$ 의 항목은 집합 $U$ 에 속한다. 항목 $a\in U$ 의 **빈도(frequency)** 는 $f(a)=\lvert\lbrace i: x\_i=a\rbrace\rvert$ 이다.
 
+예. 스트림이 $a,b,a,c,a$ 이면 $N=5$ 이고 $f(a)=3$, $f(b)=1$, $f(c)=1$ 이다.
+
 ## 스케치
 
-정확도 $\varepsilon$ 과 실패 확률 $\delta$ 에 대해 $w=\lceil e/\varepsilon\rceil$, $d=\lceil\ln(1/\delta)\rceil$ 로 둔다. $U\to\lbrace 0,\dots,w-1\rbrace$ 의 범용 해시족에서 함수 $h\_1,\dots,h\_d$ 를 독립으로 고르고, $d\times w$ 표 $C$ 를 $0$ 으로 채운다.
+정확도 $\varepsilon$ 과 실패 확률 $\delta$ 에 대해 $w=\lceil e/\varepsilon\rceil$, $d=\lceil\ln(1/\delta)\rceil$ 로 둔다. $U\to\lbrace 0,\dots,w-1\rbrace$ 의 범용 해시족에서 함수 $h\_1,\dots,h\_d$ 를 독립으로 고르고, $d\times w$ 표 $C$ 를 $0$ 으로 채운다. 이 표와 아래 두 연산이 Count-Min 스케치이고, Cormode 와 Muthukrishnan 이 2005 년에 제안했다[^1].
 
 - 갱신. 항목 $x$ 가 오면 모든 $j$ 에 대해 $C\lbrack j,h\_j(x)\rbrack$ 에 $1$ 을 더한다.
 - 질의. $a$ 의 추정값은 다음이다.
@@ -32,6 +30,8 @@ Count-Min 스케치는 항목이 하나씩 지나가는 스트림에서 항목�
 $$
 \hat f(a)=\min\_{1\le j\le d}C\lbrack j,h\_j(a)\rbrack
 $$
+
+예. $d=w=2$ 로 두고 $h\_1(a)=0$, $h\_1(b)=1$, $h\_1(c)=0$, $h\_2(a)=1$, $h\_2(b)=1$, $h\_2(c)=0$ 이라 하자. 스트림 $a,b,a,c,a$ 를 넣으면 첫 행은 $C\lbrack 1,0\rbrack=3+1=4$, $C\lbrack 1,1\rbrack=1$ 이고 둘째 행은 $C\lbrack 2,0\rbrack=1$, $C\lbrack 2,1\rbrack=3+1=4$ 다. 추정값은 $\hat f(a)=\min(4,4)=4$, $\hat f(b)=\min(1,4)=1$, $\hat f(c)=\min(4,1)=1$ 이다. $a$ 는 두 행 모두에서 다른 항목과 칸을 나눠 $1$ 만큼 크게 나오고, $b$ 와 $c$ 는 충돌하지 않은 행이 하나씩 있어 참값이 나온다.
 
 ```typescript
 function update(C: number[][], h: Array<(x: string) => number>, x: string, c = 1): void {
