@@ -6,11 +6,7 @@
 
 # 직관
 
-Erdős–Sierpiński 쌍대성은 연속체 가설 아래에서 실직선의 영집합과 제1범주 집합을 서로 맞바꾸는 전단사가 있다는 정리다. 그 전단사는 자기 자신의 역함수로 잡을 수 있다.
-
-따라서 영집합과 제1범주 집합만으로 쓴 진술은 두 낱말을 맞바꿔도 성립한다. 이 원리가 [기수 불변량](cardinal-characteristics.md)의 두 아이디얼이 같은 모양으로 놓이는 이유를 설명한다.
-
-실직선의 부분집합 가운데 크기가 없다고 할 만한 것이 두 갈래다. 길이의 합을 얼마든지 작게 하여 덮을 수 있는 영집합이 하나이고, 어디에도 빽빽하지 않은 집합을 셀 수 있는 개수만큼 모은 제1범주 집합이 다른 하나다. 두 갈래를 두고 물을 수 있는 것이 같은 모양이므로 답도 같은지 본다.
+실직선의 부분집합 가운데 크기가 없다고 할 만한 것이 두 갈래다. 길이의 합을 얼마든지 작게 하여 덮을 수 있는 영집합이 하나이고, 어디에도 빽빽하지 않은 집합을 셀 수 있는 개수만큼 모은 제1범주 집합(set of first category)이 다른 하나다. 두 갈래를 두고 물을 수 있는 것이 같은 모양이므로 답도 같은지 본다.
 
 [측도-범주 분해](measure-category-decomposition.md)가 실직선을 영집합 하나와 제1범주 집합 하나로 가른다. 어느 족도 다른 족을 포함하지 않으므로 둘을 맞바꾸는 사상을 물을 수 있다.
 
@@ -18,33 +14,37 @@ Erdős–Sierpiński 쌍대성은 연속체 가설 아래에서 실직선의 영
 
 ## 두 아이디얼
 
-Lebesgue 측도가 $0$ 인 집합의 족을 $\mathcal N$, 어디에서도 빽빽하지 않은 집합을 셀 수 있는 개수만큼 합친 집합, 곧 제1범주 집합의 족을 $\mathcal M$ 이라 한다. 둘 다 $\sigma$ 아이디얼이고 실직선 자신을 담지 않는다.[^1]
+Lebesgue 측도가 $0$ 인 집합의 족을 $\mathcal N$, 어디에서도 빽빽하지 않은(nowhere dense) 집합을 셀 수 있는 개수만큼 합친 집합, 곧 제1범주 집합의 족을 $\mathcal M$ 이라 한다. 둘 다 $\sigma$ 아이디얼이고 실직선 자신을 담지 않는다[^1].
+
+유리수 전체와 [Cantor 집합](cantor-set.md)은 $\mathcal N$ 과 $\mathcal M$ 에 모두 든다. $\lbrack 0,1\rbrack$ 에서 가운데 구간을 차례로 빼되 뺀 길이의 합이 $1/2$ 이 되게 만든 집합은 어디에서도 빽빽하지 않으므로 $\mathcal M$ 에 들지만, 길이가 $1/2$ 이므로 $\mathcal N$ 에 들지 않는다.
 
 ## 쌍대 사상
 
-전단사 $f:\mathbb R\to\mathbb R$ 이 **쌍대 사상**이라 함은 모든 $A\subseteq\mathbb R$ 에 대해 $A\in\mathcal N$ 과 $f(A)\in\mathcal M$ 이 동치이고 $A\in\mathcal M$ 과 $f(A)\in\mathcal N$ 이 동치인 것이다.
+전단사 $f:\mathbb R\to\mathbb R$ 이 **쌍대 사상(duality map)** 이라 함은 모든 $A\subseteq\mathbb R$ 에 대해 $A\in\mathcal N$ 과 $f(A)\in\mathcal M$ 이 동치이고 $A\in\mathcal M$ 과 $f(A)\in\mathcal N$ 이 동치인 것이다.
+
+측도-범주 분해 $\mathbb R=A\sqcup B$ 에서 $A\in\mathcal N$, $B\in\mathcal M$ 이다. 쌍대 사상 $f$ 가 있으면 $f(A)$ 는 제1범주 집합이고 $f(B)$ 는 영집합이므로, $f$ 는 이 분해를 두 조각의 역할이 바뀐 분해 $\mathbb R=f(A)\sqcup f(B)$ 로 보낸다.
 
 # 성질
 
 ## 쌍대성 정리
 
-**정리**(Erdős–Sierpiński)**.** 연속체 가설 아래에서 $f=f^{-1}$ 인 쌍대 사상 $f$ 가 존재한다.
+Erdős 와 Sierpiński 의 정리는 다음이다. 연속체 가설 아래에서 $f=f^{-1}$ 인 쌍대 사상 $f$ 가 존재한다.
 
-증명의 요지는 두 아이디얼의 구조가 연속체 가설 아래에서 같다는 것이다. 측도-범주 분해 $\mathbb R=A\sqcup B$ 를 초한귀납으로 되풀이하면 $\mathcal N$ 의 기저와 $\mathcal M$ 의 기저를 각각 길이 $\omega\_1$ 인 증가열로 줄 세울 수 있고, 두 열의 연속한 항의 차를 크기 $\aleph\_1$ 인 조각으로 맞춰 대응시킨다. 조각마다 전단사를 잡고 대칭이 되도록 합치면 대합이 나온다. ∎
+증명의 요지는 두 아이디얼의 구조가 연속체 가설 아래에서 같다는 것이다. 측도-범주 분해 $\mathbb R=A\sqcup B$ 를 초한귀납으로 되풀이하면 $\mathcal N$ 의 기저와 $\mathcal M$ 의 기저를 각각 길이 $\omega\_1$ 인 증가열로 줄 세울 수 있고, 두 열의 연속한 항의 차를 크기 $\aleph\_1$ 인 조각으로 맞춰 대응시킨다. 조각마다 전단사를 잡고 대칭이 되도록 합치면 대합(involution)이 나온다.
 
 ## 쌍대성 원리
 
-**따름정리.** $\mathcal N$ 과 $\mathcal M$ 만으로 쓴 진술 $P$ 가 연속체 가설 아래에서 참이면, 두 족을 맞바꾼 진술도 연속체 가설 아래에서 참이다.
+쌍대성 원리(duality principle)는 다음 따름정리다. $\mathcal N$ 과 $\mathcal M$ 만으로 쓴 진술 $P$ 가 연속체 가설 아래에서 참이면, 두 족을 맞바꾼 진술도 연속체 가설 아래에서 참이다.
 
 $f$ 로 옮기면 $P$ 의 증인이 맞바꾼 진술의 증인이 된다.
 
 ## 쌍대가 아닌 두 부등식
 
-Cichoń 도표의 부등식 $\mathrm{add}(\mathcal N)\le\mathrm{add}(\mathcal M)$ 와 $\mathrm{cof}(\mathcal M)\le\mathrm{cof}(\mathcal N)$ 은 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)에서 증명되고 맞바꾼 진술은 ZFC 에서 증명되지 않는다. 쌍대성 원리가 연속체 가설을 가정하므로 충돌은 없다. 연속체 가설 아래에서는 여덟 불변량이 모두 $\aleph\_1$ 이고 부등식이 등식이 된다.
+[기수 불변량](cardinal-characteristics.md)의 Cichoń 도표(Cichoń's diagram)의 부등식 $\mathrm{add}(\mathcal N)\le\mathrm{add}(\mathcal M)$ 와 $\mathrm{cof}(\mathcal M)\le\mathrm{cof}(\mathcal N)$ 은 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)에서 증명되고 맞바꾼 진술은 ZFC 에서 증명되지 않는다. 쌍대성 원리가 연속체 가설을 가정하므로 충돌은 없다. 연속체 가설 아래에서는 여덟 불변량이 모두 $\aleph\_1$ 이고 부등식이 등식이 된다.
 
 ## Luzin 집합과 Sierpiński 집합
 
-크기가 비가산이고 모든 제1범주 집합과의 교집합이 가산인 집합이 [Luzin 집합](luzin-sierpinski-sets.md)이고, 모든 영집합과의 교집합이 가산인 집합이 Sierpiński 집합이다. 연속체 가설 아래에서 둘 다 존재하고 쌍대 사상이 한쪽을 다른 쪽으로 보낸다.
+크기가 비가산이고 모든 제1범주 집합과의 교집합이 가산인 집합이 [Luzin 집합](luzin-sierpinski-sets.md)이고, 모든 영집합과의 교집합이 가산인 집합이 Sierpiński 집합(Sierpiński set)이다. 연속체 가설 아래에서 둘 다 존재하고 쌍대 사상이 한쪽을 다른 쪽으로 보낸다.
 
 # 활용
 
