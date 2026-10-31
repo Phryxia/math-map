@@ -16,23 +16,23 @@
 
 ## 문제
 
-$K$ 개의 팔이 있고 팔 $i$ 를 고르면 평균 $\mu_i$ 인 분포에서 보상이 나온다. 회차 $t=1,\dots,T$ 마다 지금까지의 관측만 보고 팔 $A_t$ 를 골라 보상 $X_t$ 를 받는다. $\mu^\ast=\max_i\mu_i$ 라 할 때 **후회**는
+$K$ 개의 팔(arm)이 있고 팔 $i$ 를 고르면 평균 $\mu_i$ 인 분포에서 보상이 나온다. 회차 $t=1,\dots,T$ 마다 지금까지의 관측만 보고 팔 $A_t$ 를 골라 보상 $X_t$ 를 받는다. $\mu^\ast=\max_i\mu_i$ 라 할 때 **후회(regret)** 는 다음 값이다.
 
 $$
-R_T=T\mu^\ast-\mathbb E\Bigl[\sum_{t=1}^T X_t\Bigr]=\sum_{i}\Delta_i\thinspace\mathbb E\lbrack N_i(T)\rbrack
+R_T=T\mu^\ast-\mathbb E\Bigl\lbrack\sum_{t=1}^T X_t\Bigr\rbrack
 $$
 
-이다. $\Delta_i=\mu^\ast-\mu_i$ 는 팔 $i$ 의 손해폭이고 $N_i(T)$ 는 $T$ 회차 동안 팔 $i$ 를 고른 횟수다. 후회를 줄이는 것은 손해폭이 큰 팔을 적게 고르는 것과 같다.
+$\Delta_i=\mu^\ast-\mu_i$ 를 팔 $i$ 의 손해폭, $N_i(T)$ 를 $T$ 회차 동안 팔 $i$ 를 고른 횟수라 한다. 직관 절의 동전은 $K=2$, $\mu=(0.6,0.5)$, $T=1000$ 이고 둘째 동전의 손해폭은 $0.1$ 이다. 둘째 동전을 늘 $100$ 번 고르는 전략의 후회는 $0.1\cdot100=10$ 이다.
 
 ## 상한 신뢰구간 규칙
 
-팔 $i$ 의 표본평균을 $\hat\mu\_i(t)$, 고른 횟수를 $N_i(t)$ 라 할 때 **UCB**(upper confidence bound) 규칙은
+팔 $i$ 의 표본평균을 $\hat\mu\_i(t)$, 고른 횟수를 $N_i(t)$ 라 할 때 **UCB(upper confidence bound) 규칙** 은
 
 $$
 A_t=\arg\max_i\Bigl(\hat\mu\_i(t-1)+\sqrt{\frac{2\log t}{N_i(t-1)}}\Bigr)
 $$
 
-이다. 각 팔을 한 번씩 고른 뒤부터 이 규칙을 쓴다.
+이다. 각 팔을 한 번씩 고른 뒤부터 이 규칙을 쓴다. $t=101$ 에 첫 동전을 $80$ 번 던져 평균 $0.6$, 둘째를 $20$ 번 던져 평균 $0.5$ 를 얻었으면 두 값은 $0.6+0.34=0.94$ 와 $0.5+0.68=1.18$ 이므로 덜 던진 둘째 동전을 고른다.
 
 ```javascript
 function ucb(K, T, pull) {
@@ -59,9 +59,19 @@ function ucb(K, T, pull) {
 
 ## Thompson 표집
 
-팔마다 $\mu_i$ 의 사후분포를 두고, 회차마다 각 사후분포에서 값을 하나씩 뽑아 가장 큰 값을 준 팔을 고른다. 보상이 Bernoulli 이면 사후분포가 [Beta 분포](beta-distribution.md)이고 갱신이 성공과 실패의 횟수를 더하는 것으로 끝난다.
+**Thompson 표집(Thompson sampling)** 은 팔마다 $\mu_i$ 의 사후분포를 두고, 회차마다 각 사후분포에서 값을 하나씩 뽑아 가장 큰 값을 준 팔을 고르는 규칙이다. 보상이 Bernoulli 이고 사전분포가 균등분포이면 사후분포가 [Beta 분포](beta-distribution.md)이고, 갱신은 성공과 실패의 횟수를 더하는 것으로 끝난다. 동전을 네 번 던져 앞면 셋, 뒷면 하나가 나오면 그 동전의 사후분포는 $\mathrm{Beta}(4,2)$ 다.
 
 # 성질
+
+## 후회의 분해
+
+후회는 팔마다 손해폭과 고른 횟수의 기댓값을 곱해 더한 것이다.
+
+$$
+R_T=\sum_{i}\Delta_i\thinspace\mathbb E\lbrack N_i(T)\rbrack
+$$
+
+그래서 후회를 줄이는 것은 손해폭이 큰 팔을 적게 고르는 것과 같다.
 
 ## UCB 의 후회 한계
 
@@ -73,7 +83,7 @@ function ucb(K, T, pull) {
 
 ## 하한
 
-> **정리 (Lai–Robbins).** 보상 분포족이 적당한 조건을 만족하면, 모든 문제에서 후회가 $o(T^a)$ ($a\gt 0$) 인 규칙은 $\liminf\_{T\to\infty}R_T/\log T\ge\sum_{i:\Delta_i\gt 0}\Delta_i/\mathrm{KL}(\nu_i\Vert\nu^\ast)$ 를 만족한다.[^2]
+Lai–Robbins 정리(Lai–Robbins theorem). 보상 분포족이 적당한 조건을 만족하면, 모든 문제에서 후회가 $o(T^a)$ ($a\gt 0$) 인 규칙은 $\liminf\_{T\to\infty}R_T/\log T\ge\sum_{i:\Delta_i\gt 0}\Delta_i/\mathrm{KL}(\nu_i\Vert\nu^\ast)$ 를 만족한다.[^2]
 
 두 분포를 가르려면 표본이 KL(Kullback–Leibler) 발산의 역수 규모만큼 필요하다는 것이 근거다. UCB 의 상한이 이 하한과 $\log T$ 차수에서 일치하므로 차수로는 더 줄일 수 없다.
 
