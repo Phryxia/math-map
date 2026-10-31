@@ -6,10 +6,6 @@
 
 # 직관
 
-Burrows–Wheeler 변환은 본문의 순환 이동들을 사전순으로 정렬하고 각 순환 이동의 마지막 글자를 차례로 모은 문자열로 본문을 바꾸는 가역 변환이다. 비슷한 문맥 앞의 글자들이 모이므로 같은 글자가 이어진 덩어리가 생겨 압축이 쉬워지고, 변환된 문자열만으로 본문의 패턴 검색도 한다. Burrows 와 Wheeler 가 1994 년에 발표했다[^1].
-
-순환 이동의 사전순은 [접미사 배열](suffix-arrays.md)의 순서와 같아서, 변환은 접미사 배열에서 바로 읽힌다.
-
 본문 $\mathtt{banana}$ 에 끝 글자 $\char36{}$ 를 붙여 $\mathtt{banana}\char36{}$ 를 만들고, 맨 앞 글자를 맨 뒤로 옮기는 순환 이동 $7$ 개를 사전순으로 늘어놓는다. $\char36{}$ 는 어느 글자보다 작다고 둔다.
 
 $$
@@ -22,11 +18,13 @@ $$
 
 ## 변환
 
-본문 $T=t_0\cdots t_{n-1}$ 에 가장 작은 글자 $\char36{}$ 를 붙인 $T\char36{}$ 의 순환 이동 $n+1$ 개를 사전순으로 정렬해 $(n+1)\times(n+1)$ 글자 표로 놓는다. 이 표의 첫 열을 $F$, 마지막 열을 $L$ 이라 하고, $L$ 을 $T$ 의 Burrows–Wheeler 변환이라 한다. $\char36{}$ 가 한 번만 나오므로 순환 이동의 순서는 접미사의 순서와 같고, 접미사 배열 $\mathrm{SA}$ 로 다음과 같이 쓴다.
+본문 $T=t_0\cdots t_{n-1}$ 에 가장 작은 글자 $\char36{}$ 를 붙인 $T\char36{}$ 의 순환 이동 $n+1$ 개를 사전순으로 정렬해 $(n+1)\times(n+1)$ 글자 표로 놓는다. 이 표의 첫 열을 $F$, 마지막 열을 $L$ 이라 하고, $L$ 을 $T$ 의 Burrows–Wheeler 변환이라 한다. Burrows 와 Wheeler 가 1994 년에 발표했다[^1]. $\char36{}$ 가 한 번만 나오므로 순환 이동의 순서는 접미사의 순서와 같고, [접미사 배열](suffix-arrays.md) $\mathrm{SA}$ 로 다음과 같이 쓴다.
 
 $$
 L\lbrack r\rbrack=\begin{cases}t_{\mathrm{SA}\lbrack r\rbrack-1} & \mathrm{SA}\lbrack r\rbrack\ge 1\cr \char36{} & \mathrm{SA}\lbrack r\rbrack=0\end{cases}
 $$
+
+예. 직관 절의 표에서 $F=\char36{}\mathtt{aaabnn}$, $L=\mathtt{annb}\char36{}\mathtt{aa}$ 다. $\mathtt{banana}\char36{}$ 의 접미사를 사전순으로 놓으면 시작 위치가 $\mathrm{SA}=(6,5,3,1,0,4,2)$ 이고, 줄 $3$ 은 $\mathrm{SA}\lbrack 3\rbrack=1$ 이므로 $L\lbrack 3\rbrack=t_0=\mathtt b$, 줄 $4$ 는 $\mathrm{SA}\lbrack 4\rbrack=0$ 이므로 $L\lbrack 4\rbrack=\char36{}$ 다.
 
 ## LF 사상
 
@@ -35,6 +33,8 @@ $$
 $$
 \mathrm{LF}(r)=C\lbrack L\lbrack r\rbrack\rbrack+\mathrm{occ}(L\lbrack r\rbrack,r)
 $$
+
+예. $\mathtt{banana}\char36{}$ 에서 $C\lbrack\char36{}\rbrack=0$, $C\lbrack\mathtt a\rbrack=1$, $C\lbrack\mathtt b\rbrack=4$, $C\lbrack\mathtt n\rbrack=5$ 다. $L\lbrack 0\rbrack=\mathtt a$ 이고 그 앞에 $\mathtt a$ 가 없으므로 $\mathrm{LF}(0)=1+0=1$ 이다. 줄 $0$ 의 $\char36{}\mathtt{banana}$ 에서 마지막 글자를 맨 앞으로 옮기면 줄 $1$ 의 $\mathtt a\char36{}\mathtt{banan}$ 이 된다.
 
 # 성질
 
