@@ -6,8 +6,6 @@
 
 # 직관
 
-위상 양자장론은 $n-1$ 차원 닫힌 [다양체](manifolds.md)에 벡터공간을, 그 사이의 $n$ 차원 [코보디즘](cobordism.md)에 선형사상을 대응시키는 규칙이다. 이 규칙은 코보디즘을 이어 붙이는 것을 사상의 합성으로, 분리합을 [텐서곱](tensor-products.md)으로 보낸다. 닫힌 $n$ 차원 다양체는 빈 다양체에서 빈 다양체로 가는 코보디즘이므로 수 하나를 받고, 그 수는 미분동형 불변량이다. 2 차원 TQFT 는 가환 Frobenius 대수와 일대일로 대응한다.
-
 방향을 준 닫힌 곡면마다 수 하나를 정하고 싶다. 곡면은 원을 따라 자르면 바지 모양 조각, 원판, 원기둥으로 나뉜다. 조각마다 계산을 정해 두고 이어 붙인 결과로 전체의 수를 얻으려 한다.
 
 원에 벡터공간 $A$ 를 하나 둔다. 원 두 개가 들어와 하나로 나가는 바지 조각에는 선형사상 $m\colon A\otimes A\to A$ 를, 원 하나가 나가는 원판에는 $A$ 의 원소 $1$ 을, 원 하나가 들어오는 원판에는 선형사상 $\varepsilon\colon A\to k$ 를 둔다. 원 하나가 들어와 둘로 나가는 거꾸로 된 바지 조각에는 $\Delta\colon A\to A\otimes A$ 를 둔다. 조각을 이어 붙이는 것은 사상을 합성하는 것이다.
@@ -20,7 +18,10 @@ $A=\mathbb C\lbrack x\rbrack/(x^2)$ 에 $\varepsilon(1)=0$, $\varepsilon(x)=1$, 
 
 ## 코보디즘 범주
 
-$\mathrm{Bord}\_n$ 은 다음 범주다. 대상은 방향을 준 닫힌 $n-1$ 차원 다양체이고, $M$ 에서 $N$ 으로 가는 사상은 경계가 $\bar M\sqcup N$ 인 방향을 준 콤팩트 $n$ 차원 다양체를 경계를 고정한 미분동형으로 묶은 류다. 합성은 공통 경계를 따라 이어 붙이는 것이고, 항등사상은 원기둥 $M\times\lbrack 0,1\rbrack$ 이다. 분리합 $\sqcup$ 과 빈 다양체가 이 범주를 대칭 [모노이드 범주](monoidal-categories.md)(symmetric monoidal category)로 만든다.
+$\mathrm{Bord}\_n$ 은 다음 범주다. 대상은 방향을 준 닫힌 $n-1$ 차원 다양체이고, $M$ 에서 $N$ 으로 가는 사상은 경계가 $\bar M\sqcup N$ 인 방향을 준 콤팩트 $n$ 차원 다양체를 경계를 고정한 미분동형으로 묶은 류다. 합성은 공통 경계를 따라 이어 붙이는 것이고, 항등사상은 원기둥 $M\times\lbrack 0,1\rbrack$ 이다. 분리합 $\sqcup$ 과 빈 다양체가 이 범주를 대칭 [모노이드 범주](monoidal-categories.md)(symmetric monoidal category)로 만든다. 이런 사상을 [코보디즘](cobordism.md)이라 한다.
+
+- $\mathrm{Bord}\_2$ 에서 직관의 바지 조각은 $S^1\sqcup S^1$ 에서 $S^1$ 로 가는 사상이고, 원판은 $\varnothing$ 에서 $S^1$ 로 가는 사상이다.
+- 원환면은 $\varnothing$ 에서 $\varnothing$ 으로 가는 사상이고, 직관의 원판, 거꾸로 된 바지, 바지, 원판의 합성이다.
 
 ## TQFT
 
@@ -30,11 +31,17 @@ $$
 Z\colon\mathrm{Bord}\_n\longrightarrow\mathrm{Vect}\_k
 $$
 
-다. 곧 $Z(M\sqcup N)\cong Z(M)\otimes Z(N)$ 이고 $Z(\varnothing)=k$ 이다. 닫힌 $n$ 차원 다양체 $W$ 는 $\varnothing$ 에서 $\varnothing$ 으로 가는 사상이므로 $Z(W)\colon k\to k$ 는 수 $Z(W)(1)$ 하나다. 이 공리계는 Atiyah 공리(Atiyah axioms)라 불린다[^1].
+다. 곧 $Z(M\sqcup N)\cong Z(M)\otimes Z(N)$ 이고 $Z(\varnothing)=k$ 이다. 닫힌 $n$ 차원 다양체 $W$ 는 $\varnothing$ 에서 $\varnothing$ 으로 가는 사상이므로 $Z(W)\colon k\to k$ 는 수 $Z(W)(1)$ 하나다. 이 공리계는 Atiyah 공리(Atiyah axioms)라 불린다[^1]. 분리합을 [텐서곱](tensor-products.md)으로 보내는 조건이 직관의 "조각마다 계산을 정해 두고 이어 붙인다" 이다.
+
+- 직관의 $A=\mathbb C\lbrack x\rbrack/(x^2)$ 과 $m,1,\varepsilon,\Delta$ 는 $Z(S^1)=A$ 인 2 차원 TQFT 를 정하고, $Z(T^2)=2$ 다.
+- 모든 닫힌 다양체에 $1$ 을, 모든 대상에 $k$ 를 주는 자명한 TQFT 가 있다.
 
 ## Frobenius 대수
 
 체 $k$ 위의 유한차원 결합대수 $A$ 와 선형사상 $\varepsilon\colon A\to k$ 가 있어 쌍선형형식 $(a,b)\mapsto\varepsilon(ab)$ 가 비퇴화이면 $(A,\varepsilon)$ 을 **Frobenius 대수(Frobenius algebra)** 라 한다. $\varepsilon$ 을 Frobenius 범함수(Frobenius form)라 한다. 비퇴화 형식으로 $A\cong A^\ast$ 이고, $m$ 의 쌍대로 여곱 $\Delta\colon A\to A\otimes A$ 가 정의된다.
+
+- 직관의 $A=\mathbb C\lbrack x\rbrack/(x^2)$ 에서 기저 $1,x$ 에 대한 $\varepsilon(ab)$ 의 행렬은 $\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$ 이라 비퇴화이고, $(A,\varepsilon)$ 은 가환 Frobenius 대수다.
+- 행렬대수 $M\_n(k)$ 와 대각합 $\varepsilon=\mathrm{tr}$ 은 비가환 Frobenius 대수다.
 
 # 성질
 
