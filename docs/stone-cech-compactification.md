@@ -14,17 +14,23 @@ $g$ 가 유계이므로 그 값은 닫힌 구간 $I_g$ 에 들어가고, 모음�
 
 이 공간에서 $g$ 의 확장은 $g$ 좌표의 사영이므로 유계 연속함수가 전부 확장된다. 막혔던 $\sin(1/x)$ 도 확장되고, 그 대가로 $(0,1\rbrack$ 에 붙는 점이 하나가 아니라 여러 개가 된다.
 
-콤팩트화(compactification)는 공간을 콤팩트 공간의 조밀한 부분으로 심는 것이고, 확장 성질이 $\beta X$ 를 유일하게 정한다.
+이렇게 만든 콤팩트 공간이 Stone–Čech 콤팩트화 $\beta X$ 다.
 
 # 정의
 
 ## 완전정칙 공간
 
-$X$ 가 **완전정칙**이라는 것은 $T_1$ 이고, 닫힌집합 $A$ 와 점 $x\notin A$ 마다 연속함수 $h\colon X\to\lbrack 0,1\rbrack$ 으로 $h(x)=0$ 이고 $A$ 의 모든 점에서 값이 $1$ 인 것이 있다는 뜻이다. [분리공리](separation-axioms.md) 계열에서 $T_3$ 과 $T_4$ 사이에 놓이고 $T_{3.5}$ 로 쓴다. 정규 공간은 Urysohn 보조정리로 이 조건을 만족한다.
+$X$ 가 $T_1$ 이고, 닫힌집합 $A$ 와 점 $x\notin A$ 마다 연속함수 $h\colon X\to\lbrack 0,1\rbrack$ 으로 $h(x)=0$ 이고 $A$ 의 모든 점에서 값이 $1$ 인 것이 있으면 $X$ 를 **완전정칙(completely regular)** 이라 한다. [분리공리](separation-axioms.md) 계열에서 $T_3$ 과 $T_4$ 사이에 놓이고 $T_{3.5}$ 로 쓴다. 정규 공간은 Urysohn 보조정리로 이 조건을 만족한다.
+
+- 거리공간은 완전정칙이다. $h(y)=\min(1,d(y,x)/d(x,A))$ 가 조건의 함수다.
+- 직관의 $(0,1\rbrack$ 은 거리공간이므로 완전정칙이다.
 
 ## 콤팩트화
 
-$X$ 의 **콤팩트화**는 콤팩트 Hausdorff 공간 $K$ 와 매장 $e\colon X\to K$ 로 $e(X)$ 가 $K$ 에서 조밀한 것의 쌍이다.
+콤팩트 Hausdorff 공간 $K$ 와 매장 $e\colon X\to K$ 로 $e(X)$ 가 $K$ 에서 조밀한 쌍을 $X$ 의 **콤팩트화(compactification)** 라 한다.
+
+- 포함사상 $(0,1\rbrack\to\lbrack 0,1\rbrack$ 은 콤팩트화다. 직관에서 보았듯 $\sin(1/x)$ 는 이 콤팩트화로 확장되지 않는다.
+- $\mathbb R$ 에 점 $\infty$ 하나를 붙여 원 $S^1$ 로 만드는 것은 콤팩트화다.
 
 ## 구성
 
@@ -34,37 +40,39 @@ $$
 e\colon X\to\prod_{g\in C_b(X)}I_g,\qquad e(x)=(g(x))\_{g\in C_b(X)}
 $$
 
-의 상의 닫힘을 **Stone–Čech 콤팩트화** $\beta X=\overline{e(X)}$ 로 정의한다.
+의 상의 닫힘 $\beta X=\overline{e(X)}$ 를 **Stone–Čech 콤팩트화(Stone–Čech compactification)** 라 한다.
 
-$X$ 가 완전정칙이면 $e$ 가 매장이다. 두 점을 가르는 함수가 $C_b(X)$ 에 있으므로 단사이고, 완전정칙 조건이 주는 함수들이 $X$ 의 열린집합을 곱위상의 열린집합으로 되끌어 오므로 상 위의 위상이 원래 위상과 같다. 곱은 Tychonoff 정리로 콤팩트 Hausdorff 이고 $\beta X$ 는 그 닫힌 부분집합이므로 콤팩트 Hausdorff 다.
+$X$ 가 완전정칙이면 $e$ 가 매장이다. 두 점을 가르는 함수가 $C_b(X)$ 에 있으므로 단사이고, 완전정칙 조건이 주는 함수들로 $X$ 의 각 열린집합이 곱위상의 어떤 열린집합과 $e(X)$ 의 교집합으로 나타나므로 상 위의 위상이 원래 위상과 같다. 곱은 Tychonoff 정리로 콤팩트 Hausdorff 이고 $\beta X$ 는 그 닫힌 부분집합이므로 콤팩트 Hausdorff 다.
 
-## 보편성질
-
-$K$ 가 콤팩트 Hausdorff 이고 $f\colon X\to K$ 가 연속이면, 연속함수 $\beta f\colon\beta X\to K$ 로 $\beta f\circ e=f$ 인 것이 유일하게 있다.
+- 직관의 두 점열 $x_n$, $y_n$ 은 콤팩트 공간 $\beta(0,1\rbrack$ 에서 집적점을 갖고, 두 집적점은 $\sin(1/x)$ 좌표가 각각 $1$ 과 $0$ 이므로 서로 다른 점이다.
 
 # 성질
 
+## 보편성질
+
+$K$ 가 콤팩트 Hausdorff 이고 $f\colon X\to K$ 가 연속이면, 연속함수 $\beta f\colon\beta X\to K$ 로 $\beta f\circ e=f$ 인 것이 유일하게 있다. $K=\lbrack a,b\rbrack$ 이면 직관의 $g$ 좌표 사영이 $\beta g$ 이고, 일반 $K$ 는 $K$ 를 구간들의 곱에 매장해 이 경우로 옮긴다.
+
 ## 보편성질에 의한 결정
 
-**정리.** 완전정칙 공간 $X$ 의 콤팩트화 $(K,i)$ 가 보편성질을 만족하면 $K$ 는 $\beta X$ 와 위상동형이다.
+완전정칙 공간 $X$ 의 콤팩트화 $(K,i)$ 가 보편성질을 만족하면 $K$ 는 $\beta X$ 와 위상동형이다.
 
 증명의 요지. $\beta X$ 와 $K$ 의 보편성질을 서로에게 적용해 $u\colon\beta X\to K$ 와 $v\colon K\to\beta X$ 를 얻는다. $v\circ u$ 는 $e(X)$ 를 점마다 고정하고 $e(X)$ 가 조밀하므로, 콤팩트 Hausdorff 공간으로 가는 두 연속사상이 조밀한 집합에서 같으면 같다는 사실로 항등사상이다. $u\circ v$ 도 같다.
 
 ## 유계 연속함수의 대수
 
-**정리.** 제한 사상 $C(\beta X)\to C_b(X)$, $F\mapsto F\circ e$ 는 전단사이고 상한 노름을 보존한다.
+제한 사상 $C(\beta X)\to C_b(X)$, $F\mapsto F\circ e$ 는 전단사이고 상한 노름을 보존한다.
 
-전사는 구성에서 나온다. $g\in C_b(X)$ 는 $g$ 좌표의 사영을 $\beta X$ 로 제한한 것의 되끌기다. 단사와 노름 보존은 $e(X)$ 가 조밀하다는 것과 $F$ 가 연속이라는 것에서 나오며, $\Vert F\Vert\_\infty$ 는 조밀한 집합에서의 상한과 같다.
+전사는 구성에서 나온다. $g\in C_b(X)$ 는 $g$ 좌표의 사영을 $\beta X$ 로 제한한 함수와 $e$ 의 합성이다. 단사와 노름 보존은 $e(X)$ 가 조밀하다는 것과 $F$ 가 연속이라는 것에서 나오며, $\Vert F\Vert\_\infty$ 는 조밀한 집합에서의 상한과 같다.
 
 ## 최대 콤팩트화
 
-**정리.** $X$ 의 임의의 콤팩트화 $(K,i)$ 에 대해 전사 연속사상 $\pi\colon\beta X\to K$ 로 $\pi\circ e=i$ 인 것이 있다.
+$X$ 의 임의의 콤팩트화 $(K,i)$ 에 대해 전사 연속사상 $\pi\colon\beta X\to K$ 로 $\pi\circ e=i$ 인 것이 있다.
 
 보편성질을 $i$ 에 적용하면 $\pi=\beta i$ 다. $\pi$ 의 상은 콤팩트이므로 닫혀 있고 $i(X)$ 를 담으므로 $K$ 전체다. 콤팩트화들을 이런 사상의 존재로 순서 지으면 $\beta X$ 가 가장 크다. $X$ 가 국소콤팩트 Hausdorff 일 때 한 점을 붙이는 Alexandroff 콤팩트화가 가장 작다.
 
 ## 초필터와의 대응
 
-**정리.** $\beta\mathbb N$ 의 점은 $\mathbb N$ 위의 초필터와 일대일 대응한다.
+$\beta\mathbb N$ 의 점은 $\mathbb N$ 위의 초필터와 일대일 대응한다.
 
 $\mathbb N$ 은 이산공간이므로 $C_b(\mathbb N)$ 은 유계 수열 전체다. 점 $p\in\beta\mathbb N$ 에
 
@@ -76,7 +84,7 @@ $$
 
 ## 거리화 불가능성
 
-**정리.** $\beta\mathbb N$ 은 거리화 가능하지 않다.
+$\beta\mathbb N$ 은 거리화 가능하지 않다.
 
 증명의 요지. $\mathbb N$ 의 서로 다른 점으로 된 점열이 $\beta\mathbb N$ 에서 수렴하는 부분열을 갖는다고 하자. 그 부분열을 $n_1,n_2,\dots$ 라 하고 홀수 번째 항에서 $0$, 짝수 번째 항에서 $1$ 인 유계 수열을 잡으면, 그 확장은 극한점에서 $0$ 과 $1$ 을 동시에 가져야 한다. 따라서 수렴하는 부분열이 없다. 거리화 가능한 콤팩트 공간은 점열 콤팩트이므로 $\beta\mathbb N$ 은 거리화 불가능이다.
 
@@ -86,10 +94,10 @@ $X$ 가 콤팩트 Hausdorff 이면 $\beta X$ 는 $X$ 와 위상동형이다. $e(
 
 # 활용
 
-- **함수 대수.** 유계 연속함수의 대수 $C_b(X)$ 가 콤팩트 공간 위의 함수 대수 $C(\beta X)$ 와 등거리 동형이다. 가환 $C^\ast$ 대수의 Gelfand 스펙트럼을 공간으로 되돌리는 대응에서 $C_b(X)$ 가 주는 공간이 $X$ 가 아니라 $\beta X$ 이고, [Banach 공간](banach-spaces.md)의 쌍대를 다루는 논법이 이 동형으로 유계 함수를 콤팩트 공간 위로 옮긴다.
-- **[Hindman 정리](hindman-theorem.md).** $\beta\mathbb N$ 에 $\mathbb N$ 의 덧셈을 확장하면 결합적이고 한쪽 변수에서 연속인 연산이 된다. 콤팩트 오른쪽 위상 반군에 멱등원이 있다는 정리를 쓰면 멱등 초필터가 나오고, 거기 드는 집합에서 유한합이 모두 그 집합에 드는 무한 부분집합을 뽑는다. 이 논법이 [Ramsey 이론](ramsey-theory.md)의 분할 정리를 초필터로 증명하는 방법의 하나다.
-- **비표준 해석학.** $\beta\mathbb N\setminus\mathbb N$ 의 점이 자유 초필터이고, 그 초필터로 [실수](real-numbers.md)열을 거르면 [초곱](ultraproducts.md)의 구성이 된다.
-- **점열 논법의 반례.** 거리공간에서 쓰는 점열 수렴 논법이 일반 콤팩트 공간에서 깨지는 표준 예가 $\beta\mathbb N$ 이다. 수렴하지 않는 점열을 담은 콤팩트 공간이므로 점열 콤팩트성과 콤팩트성의 차이를 보인다.
+- 유계 연속함수의 대수 $C_b(X)$ 가 콤팩트 공간 위의 함수 대수 $C(\beta X)$ 와 등거리 동형이다. 가환 $C^\ast$ 대수에 Gelfand 스펙트럼을 대응시키면 $C_b(X)$ 의 스펙트럼은 $X$ 가 아니라 $\beta X$ 이고, [Banach 공간](banach-spaces.md)의 쌍대를 다루는 논법이 이 동형으로 유계 함수를 콤팩트 공간 위로 옮긴다.
+- [Hindman 정리](hindman-theorem.md): $\beta\mathbb N$ 에 $\mathbb N$ 의 덧셈을 확장하면 결합적이고 한쪽 변수에서 연속인 연산이 된다. 콤팩트 오른쪽 위상 반군에 멱등원이 있다는 Ellis–Numakura 보조정리(Ellis–Numakura lemma)를 쓰면 멱등 초필터가 나오고, 거기 드는 집합에서 유한합이 모두 그 집합에 드는 무한 부분집합을 뽑는다. 이 논법이 [Ramsey 이론](ramsey-theory.md)의 분할 정리를 초필터로 증명하는 방법의 하나다.
+- 비표준 해석학: $\beta\mathbb N\setminus\mathbb N$ 의 점이 자유 초필터이고, 그 초필터로 [실수](real-numbers.md)열을 나누면 초곱이 된다.
+- 거리공간에서 쓰는 점열 수렴 논법이 일반 콤팩트 공간에서 깨지는 표준 예가 $\beta\mathbb N$ 이다. 수렴하지 않는 점열을 담은 콤팩트 공간이므로 점열 콤팩트성과 콤팩트성의 차이를 보인다.
 
 # 연관 문서
 
