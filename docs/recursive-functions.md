@@ -97,7 +97,7 @@ $e$ 는 $f$ 를 계산하는 프로그램의 번호이고, $T(e, x, y)$ 는 "$y$
 
 - [Gödel 불완전성 정리](godel-incompleteness.md): "$n$ 은 $m$ 을 결론으로 하는 증명의 부호다" 라는 관계가 원시 재귀이고, 원시 재귀 함수는 산술 논리식으로 표현된다. 이 두 사실로 증명 가능성 술어를 산술 안에서 정의한다.
 - [형식주의와 Hilbert 프로그램](formalism-hilbert-program.md): Hilbert 의 유한주의적 관점은 원시 재귀 산술(primitive recursive arithmetic, PRA)로 형식화된다. PRA 는 원시 재귀 함수의 정의식과 한정사 없는 귀납만 쓰는 체계다.
-- [역수학](reverse-mathematics.md): 약한 König 보조정리(weak König's lemma)를 공리로 갖는 체계 $\mathrm{WKL}\_0$ 에서 증명되는 $\Pi^0_2$ 문장은 PRA 에서도 증명된다.
+- [역수학](reverse-mathematics.md): [약한 König 보조정리](weak-konig-lemma.md)를 공리로 갖는 체계 $\mathrm{WKL}\_0$ 에서 증명되는 $\Pi^0_2$ 문장은 PRA 에서도 증명된다.
 - [산술적 계층](arithmetical-hierarchy.md): Kleene 정규형 정리의 $T$ 술어로 정지 집합이 $\Sigma^0_1$ 임이 나온다.
 
 [^1]: S. C. Kleene, General recursive functions of natural numbers, Mathematische Annalen 112, 1936, 727–742, https://doi.org/10.1007/BF01565439
