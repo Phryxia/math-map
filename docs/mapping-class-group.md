@@ -12,21 +12,25 @@
 
 종수 $2$ 이상에서는 기본군이 아벨이 아니므로 기저의 상을 행렬로 적을 수 없고, 자기동형군 자체를 봐야 한다. 이때 내부 자기동형은 기점을 옮기는 것에서 나와 미분동형의 동위류를 바꾸지 않으므로 몫을 취한다. 남는 군이 외부 자기동형군이고, 토러스에서 $\mathrm{SL}\_2(\mathbb Z)$ 가 나온 계산이 이 군의 특수한 경우다.
 
-그 비트는 사상을 Dehn 비틀림이라 한다. 사상류군은 Teichmüller 공간에 고유 불연속으로 작용하며 그 몫이 곡선의 모듈라이 공간이다.
-
 # 정의
 
-$S$ 를 방향을 준 닫힌 곡면이라 하자. **사상류군**은 방향 보존 미분동형군의 동위류 집합이다.
+$S$ 를 방향을 준 닫힌 곡면이라 하자. 방향 보존 미분동형들을 isotopy 로 묶은 류들의 군을 사상류군이라 한다.
 
 $$\mathrm{Mod}(S)=\pi_0(\mathrm{Diff}^+(S))=\mathrm{Diff}^+(S)/\mathrm{Diff}\_0(S)$$
 
 $\mathrm{Diff}\_0(S)$ 는 항등사상과 동위인 미분동형들이고 정규부분군이다. 합성이 군 연산이다. 종수 $g$ 의 닫힌 곡면을 $S_g$ 로 적는다.
 
+- 직관의 계산으로 $\mathrm{Mod}(T)\cong\mathrm{SL}\_2(\mathbb Z)$ 다.
+- $\mathrm{Mod}(S^2)$ 는 자명군이다. 구면의 방향 보존 미분동형은 모두 항등사상과 isotopy 로 이어진다(Smale).
+
 ## Dehn 비틀림
 
-$c$ 를 $S$ 의 단순 닫힌 곡선이라 하자. $c$ 의 고리모양 근방을 $S^1\times\lbrack 0,1\rbrack$ 로 보고 그 위에서 $(\theta,t)\mapsto(\theta+2\pi t,t)$ 로 보내고 근방 밖에서 항등인 미분동형이 $c$ 를 따른 **Dehn 비틀림** $T_c$ 다. 근방 밖이 항등이므로 $T_c$ 는 $c$ 와 만나지 않는 곡선을 움직이지 않는다.
+$c$ 를 $S$ 의 단순 닫힌 곡선이라 하자. $c$ 의 원환 영역(annulus) 근방을 $S^1\times\lbrack 0,1\rbrack$ 로 보고 그 위에서 $(\theta,t)\mapsto(\theta+2\pi t,t)$ 로 보내고 근방 밖에서 항등인 미분동형을 $c$ 를 따른 **Dehn 비틀림(Dehn twist)** $T_c$ 라 한다. 근방 밖이 항등이므로 $T_c$ 는 $c$ 와 만나지 않는 곡선을 움직이지 않는다.
 
-$T_c$ 의 동위류는 $c$ 의 동위류로만 정해진다. $c$ 가 한 점으로 줄어들면 $T_c$ 가 항등류다.
+$T_c$ 의 류는 $c$ 의 isotopy 류로만 정해진다.
+
+- 토러스 $T$ 에서 $(1,0)$ 방향의 원 $c$ 를 따른 $T_c$ 는 $(0,1)$ 방향의 원을 $(1,1)$ 방향으로 보내고, 행렬 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 에 대응한다.
+- $c$ 가 원판의 경계이면 $T_c$ 는 그 원판 안에서 항등사상과 isotopy 로 이어지므로 항등류다.
 
 # 성질
 
@@ -40,15 +44,15 @@ $$\mathrm{Mod}(S_g)\cong\mathrm{Out}^+(\pi_1(S_g))$$
 
 ## 생성원
 
-$g\ge 2$ 에서 $\mathrm{Mod}(S_g)$ 는 Dehn 비틀림 $3g-1$ 개로 생성된다.[^2] 생성원으로 잡는 곡선은 종수마다 손잡이를 지나는 곡선과 손잡이를 묶는 곡선이다. 사상류군은 유한 생성이지만 $g\ge 2$ 에서 무한군이다.
+$g\ge 2$ 에서 $\mathrm{Mod}(S_g)$ 는 Dehn 비틀림 $3g-1$ 개로 생성되고(Lickorish), $2g+1$ 개로도 생성된다(Humphries).[^2] 생성원으로 잡는 곡선은 종수마다 손잡이를 지나는 곡선과 손잡이를 묶는 곡선이다. 사상류군은 유한 생성이지만 $g\ge 2$ 에서 무한군이다.
 
 ## Nielsen–Thurston 분류
 
 $\mathrm{Mod}(S_g)$ 의 각 원소는 다음 셋 중 하나다.[^3]
 
-- **주기적.** 어떤 멱이 항등류다.
-- **환원 가능.** 서로 만나지 않는 단순 닫힌 곡선들의 모임을 보존한다.
-- **의사 Anosov.** 두 횡단 측도엽층을 보존하고 한쪽을 $\lambda\gt 1$ 배, 다른 쪽을 $1/\lambda$ 배 늘인다.
+- 주기적(periodic): 어떤 멱이 항등류다.
+- 환원 가능(reducible): 서로 만나지 않는 단순 닫힌 곡선들의 모임을 보존한다.
+- 의사 Anosov(pseudo-Anosov): 두 횡단 측도엽층(measured foliation)을 보존하고 한쪽을 $\lambda\gt 1$ 배, 다른 쪽을 $1/\lambda$ 배 늘인다.
 
 $\lambda$ 는 대수적 정수이고 그 원소의 늘임률이다. 토러스에서 이 세 경우가 $\mathrm{SL}\_2(\mathbb Z)$ 원소의 대각합이 절댓값 $2$ 보다 작은 경우, 같은 경우, 큰 경우에 각각 대응한다.
 
@@ -58,13 +62,13 @@ $\mathrm{Mod}(S_g)$ 는 [Teichmüller 공간](teichmuller-space.md) $\mathcal T_
 
 # 활용
 
-- **모듈라이 공간.** $\mathcal T_g$ 를 이 작용으로 나눈 몫이 [곡선의 모듈라이 공간](moduli-of-curves.md)이고, 고정점을 갖는 유한 위수 원소가 몫의 오비폴드 특이점을 준다.
-- **곡면다발.** 원 위의 곡면다발은 $\mathrm{Mod}(S_g)$ 의 원소 하나로 분류되고, 그 원소가 의사 Anosov 일 때 다발의 전체공간이 쌍곡 $3$ 차원 다양체다.
-- **곡선 복합체.** 단순 닫힌 곡선을 정점으로 하고 만나지 않는 것을 변으로 하는 복합체에 $\mathrm{Mod}(S_g)$ 가 작용하며, 이 작용으로 군의 유한 표시와 코호몰로지 차원을 얻는다.
+- $\mathcal T_g$ 를 이 작용으로 나눈 몫이 [곡선의 모듈라이 공간](moduli-of-curves.md)이고, 고정점을 갖는 유한 위수 원소가 몫의 오비폴드 특이점을 준다.
+- 원 위의 곡면다발은 $\mathrm{Mod}(S_g)$ 의 원소 하나로 분류되고, 그 원소가 의사 Anosov 일 때 다발의 전체공간이 쌍곡 $3$ 차원 다양체다(Thurston).
+- 단순 닫힌 곡선의 isotopy 류를 정점으로 하고 만나지 않는 것을 변으로 하는 곡선 복합체(curve complex)에 $\mathrm{Mod}(S_g)$ 가 작용한다. Harer 는 이 작용으로 사상류군의 가상 코호몰로지 차원을 계산했다.
 
 [^1]: M. Dehn, "Die Gruppe der Abbildungsklassen", Acta Mathematica **69** (1938), 135–206. Nielsen 의 증명은 J. Nielsen, "Untersuchungen zur Topologie der geschlossenen zweiseitigen Flächen", Acta Mathematica **50** (1927), 189–358.
 
-[^2]: W. B. R. Lickorish, "A Finite Set of Generators for the Homeotopy Group of a 2-Manifold", Proceedings of the Cambridge Philosophical Society **60** (1964), 769–778. 생성원 수를 $3g-1$ 로 줄인 것은 S. Humphries, "Generators for the Mapping Class Group", in Topology of Low-Dimensional Manifolds, Lecture Notes in Mathematics **722** (1979), 44–47.
+[^2]: W. B. R. Lickorish, "A Finite Set of Generators for the Homeotopy Group of a 2-Manifold", Proceedings of the Cambridge Philosophical Society **60** (1964), 769–778. Lickorish 는 Dehn 비틀림 $3g-1$ 개로 생성됨을 보였고, 생성원 수를 $2g+1$ 로 줄인 것은 S. Humphries, "Generators for the Mapping Class Group", in Topology of Low-Dimensional Manifolds, Lecture Notes in Mathematics **722** (1979), 44–47.
 
 [^3]: W. P. Thurston, "On the Geometry and Dynamics of Diffeomorphisms of Surfaces", Bulletin of the American Mathematical Society **19** (1988), 417–431.
 
