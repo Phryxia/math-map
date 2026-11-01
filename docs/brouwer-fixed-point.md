@@ -6,8 +6,6 @@
 
 # 직관
 
-사상에 연속성 밖의 조건을 붙이지 않고 정의역의 모양만으로 고정점의 존재가 나온다.
-
 구간 $\lbrack 0,1\rbrack$ 에서 자기 자신으로 가는 연속함수 $f$ 를 잡고 $f(x)=x$ 인 점을 찾는다. $g(x)=f(x)-x$ 로 두면 $f$ 의 값이 $\lbrack 0,1\rbrack$ 안에 있으므로 $g(0)=f(0)\ge 0$ 이고 $g(1)=f(1)-1\le 0$ 이다. $g$ 가 연속이므로 [중간값 정리](intermediate-value-theorem.md)로 $g(c)=0$ 인 $c$ 가 있고, 그 점이 $f(c)=c$ 를 만족한다.
 
 원판 $D^2$ 에서 같은 계산을 한다. $g(x)=f(x)-x$ 는 이제 평면의 벡터이고 양수도 음수도 아니다. 경계에서 $g$ 가 원판 안쪽을 향한다는 것은 $f$ 의 값이 원판 안에 있다는 데서 나오지만, 부호를 비교할 것이 없으니 중간값 정리를 적용할 자리가 없다. 이 방법으로는 고정점이 나오지 않는다.
@@ -16,11 +14,11 @@
 
 ## 고정점
 
-$f\colon X\to X$ 에 대해 $f(x)=x$ 인 $x\in X$ 를 **고정점**이라 한다. 위상공간 $X$ 가 **고정점 성질**을 갖는다는 것은 $X$ 에서 $X$ 로 가는 모든 연속사상이 고정점을 갖는다는 뜻이다.
+$f\colon X\to X$ 에 대해 $f(x)=x$ 인 $x\in X$ 를 **고정점(fixed point)** 이라 한다. 위상공간 $X$ 가 **고정점 성질(fixed point property)** 을 갖는다는 것은 $X$ 에서 $X$ 로 가는 모든 연속사상이 고정점을 갖는다는 뜻이다. $\lbrack 0,1\rbrack$ 위의 $f(x)=x^2$ 은 고정점 $0$, $1$ 을 갖고, 직관의 계산으로 $\lbrack 0,1\rbrack$ 은 고정점 성질을 갖는다. $\mathbb R$ 은 $x\mapsto x+1$ 이 고정점을 갖지 않으므로 고정점 성질을 갖지 않는다.
 
 ## 수축
 
-$A\subset X$ 에 대해 연속사상 $r\colon X\to A$ 가 모든 $a\in A$ 에서 $r(a)=a$ 이면 $r$ 를 $A$ 로의 **수축**(retraction)이라 하고 $A$ 를 $X$ 의 수축핵이라 한다. 포함사상을 $i\colon A\hookrightarrow X$ 라 하면 수축의 조건은 $r\circ i=\mathrm{id}\_A$ 다.
+$A\subset X$ 에 대해 연속사상 $r\colon X\to A$ 가 모든 $a\in A$ 에서 $r(a)=a$ 이면 $r$ 를 $A$ 로의 **수축(retraction)** 이라 하고 $A$ 를 $X$ 의 수축핵(retract)이라 한다. 원판 $D^2$ 의 모든 점을 원점으로 보내는 사상은 한 점 $\lbrace 0\rbrace$ 으로의 수축이고, $\lbrack 0,1\rbrack$ 을 $\lbrace 0,1\rbrace$ 로 보내는 연속인 수축은 연결성 때문에 없다. 포함사상을 $i\colon A\hookrightarrow X$ 라 하면 수축의 조건은 $r\circ i=\mathrm{id}\_A$ 다.
 
 ## 정리의 진술
 
