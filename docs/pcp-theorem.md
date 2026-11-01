@@ -6,23 +6,7 @@
 
 # 직관
 
-[근사 알고리즘](approximation-algorithms.md)은 NP-어려운 문제에 대해 보장된 비율의 답을 낸다. 어떤 문제는 임의로 좋은 근사가 가능하고(FPTAS, fully polynomial-time approximation scheme) 어떤 문제는 어느 비율에서 멈춘다. 알고리즘 설계만으로는 그 경계를 알 수 없다.
-
-1992 년에 완성된 PCP 정리가 경계를 준다.
-
-$$
-\mathrm{NP}=\mathrm{PCP}(\log n,\ O(1))
-$$
-
-NP 문제의 증명은 무작위 $O(\log n)$ 비트를 써서 상수 개 비트만 읽고 검증할 수 있는 형태로 다시 쓸 수 있다. 옳은 주장에는 검증자가 반드시 통과시키는 증명이 있고, 틀린 주장에는 어떤 증명을 내밀어도 검증자가 최소 절반의 확률로 잡아낸다.
-
-검증자를 제약충족 문제로 번역하면 옳은 입력에서는 모든 제약을 만족할 수 있고 틀린 입력에서는 어떤 할당도 절반 이상을 만족시키지 못한다. 두 경우 사이의 **간극**을 좁히는 근사 알고리즘이 있으면 원래 NP 문제가 정확히 풀린다. 따라서 $\mathrm{P}=\mathrm{NP}$ 가 아니면 그런 근사 알고리즘은 없다.
-
-$$
-\text{검증자의 무작위성}\ \longrightarrow\ \text{간극 있는 제약충족}\ \longrightarrow\ \text{근사 하한}
-$$
-
-사슬의 끝에서 MAX-3SAT 의 $7/8$ 이 최적임이 나온다. 상한은 무작위 할당에서, 하한은 PCP 정리의 가장 정교한 판본에서 나온다.
+절 $m$ 개로 된 3CNF 논리식에 변수 값을 동전 던지기로 주면, 한 절은 세 리터럴이 모두 거짓일 때만 거짓이므로 확률 $7/8$ 로 참이다. 그래서 평균 $\frac78 m$ 개의 절이 참이 된다. 이보다 나은 비율을 보장하는 다항시간 [근사 알고리즘](approximation-algorithms.md)이 있는지는 알고리즘을 설계해 보는 것만으로 알 수 없다. 없음을 보이려면 $\frac78$ 보다 나은 근사가 어떤 NP 문제를 정확히 푼다는 것을 보여야 한다.
 
 보통의 NP 증명은 한 글자만 틀려도 무효이고, 그 한 글자를 찾으려면 전체를 읽어야 한다. 증명을 오류정정부호로 다시 쓰면 달라진다. 두 부호어는 대부분의 자리에서 다르므로 증명이 조금이라도 틀리면 부호화된 증명은 아주 많은 자리에서 틀리고, 무작위로 몇 자리만 찍어도 드러난다.
 
@@ -32,54 +16,57 @@ $$
 
 ## 확률 검증 가능 증명
 
-검증자 $V$ 는 입력 $x$ 와 무작위 문자열 $r$ 과 증명 $\pi$ 에 대한 신탁 접근을 갖는 다항시간 알고리즘이다. $V$ 가 언어 $L$ 에 대해 $\mathrm{PCP}(R(n),Q(n))$ 검증자라는 것은 다음을 뜻한다.
+검증자 $V$ 는 입력 $x$ 와 무작위 문자열 $r$ 과 증명 $\pi$ 에 대한 신탁 접근을 갖는 다항시간 알고리즘이다. $V$ 가 언어 $L$ 에 대해 $\mathrm{PCP}(R(n),Q(n))$ 검증자라는 것은 다음 세 조건을 만족하는 것이다.
 
-- **자원**: $|r|=O(R(n))$ 이고 $V$ 는 $\pi$ 의 비트를 많아야 $O(Q(n))$ 개 읽는다.
-- **완전성**: $x\in L$ 이면 어떤 $\pi$ 가 있어 $\Pr_r[V^{\pi}(x,r)=1]=1$ 이다.
-- **건전성**: $x\notin L$ 이면 모든 $\pi$ 에 대해 $\Pr_r[V^{\pi}(x,r)=1]\le\frac12$ 이다.
+- $\lvert r\rvert=O(R(n))$ 이고 $V$ 는 $\pi$ 의 비트를 많아야 $O(Q(n))$ 개 읽는다.
+- **완전성(completeness)**. $x\in L$ 이면 어떤 $\pi$ 가 있어 $\Pr_r\lbrack V^{\pi}(x,r)=1\rbrack=1$ 이다.
+- **건전성(soundness)**. $x\notin L$ 이면 모든 $\pi$ 에 대해 $\Pr_r\lbrack V^{\pi}(x,r)=1\rbrack\le\frac12$ 이다.
 
-읽는 위치는 이전에 읽은 값에 의존해도 되고, 비적응적으로 바꿔도 질의 수가 상수배만 늘어난다.
+$\mathrm{PCP}(R(n),Q(n))$ 은 이런 검증자가 있는 언어의 부류다. 읽는 위치는 이전에 읽은 값에 의존해도 되고, 비적응적으로 바꿔도 질의 수가 상수배만 늘어난다.
 
-## PCP 정리
-
-$$
-\mathrm{NP}=\mathrm{PCP}(\log n,\ 1)
-$$
-
-포함 $\supseteq$ 는 쉽다. 무작위 문자열이 $O(\log n)$ 비트뿐이라 가능한 $r$ 이 다항식 개이고 전부 돌리면 결정적 다항시간 검증이 된다. 정리의 내용은 반대 방향 $\subseteq$ 다.
-
-원래 증명(Arora–Safra, Arora–Lund–Motwani–Sudan–Szegedy)[^1]은 대수적이다. 산술화로 3SAT 을 다항식 항등식 검사로 바꾸고, 저차 검사와 합 검사를 조합한 뒤 질의 수를 줄이는 합성 정리를 반복한다. 2007 년 Dinur 의 조합적 증명은 제약 그래프의 간극을 한 번에 두 배씩 키우는 연산을 $O(\log n)$ 번 반복해 상수 간극에 도달한다.
+3SAT 에서 증명 $\pi$ 를 변수 값으로 두고, 검증자가 $O(\log m)$ 개의 무작위 비트로 절 하나를 골라 그 절의 세 변수 값을 읽는다고 하자. 충족 가능한 식에서는 늘 통과하므로 완전성을 만족한다. 그러나 절 하나만 거짓으로 만드는 할당에서는 통과 확률이 $1-1/m$ 이어서 건전성 $\frac12$ 를 만족하지 못한다. 증명을 부호화해 이 확률을 $\frac12$ 아래로 내리는 것이 PCP 정리의 내용이다.
 
 ## 간극 문제
 
-$\mathrm{Gap}\text{-}\mathrm{CSP}[c,s]$ 는 다음 약속 문제다. 주어진 제약충족 인스턴스에 대해
+제약충족 문제(constraint satisfaction problem, CSP)의 간극 판본 $\mathrm{Gap}\text{-}\mathrm{CSP}\lbrack c,s\rbrack$ 는 다음 약속 문제(promise problem)다. 주어진 제약충족 인스턴스에 대해
 
 - 만족 가능 비율이 $\ge c$ 인 경우와
 - 만족 가능 비율이 $\le s$ 인 경우를
 
-구별하라. 그 사이 값은 입력으로 주어지지 않는다고 약속한다. PCP 정리는 $\mathrm{Gap}\text{-}\mathrm{CSP}[1,\frac12]$ 가 NP-어렵다는 진술과 동치다.
+구별하라. 그 사이 값은 입력으로 주어지지 않는다고 약속한다. 비율 $s/c$ 보다 좋은 근사 알고리즘이 있으면 두 경우를 구별할 수 있으므로, 간극 문제의 NP-어려움이 근사 비율 $s/c$ 의 하한이 된다. 직관의 3SAT 에서 $c=1$, $s=\frac78+\varepsilon$ 인 간극 문제가 NP-어려우면 $\frac78+\varepsilon$ 근사가 NP-어렵다.
 
-비율 $s/c$ 보다 좋은 근사 알고리즘이 있으면 두 경우를 구별할 수 있으므로, 간극 문제의 NP-어려움이 근사 비율 $s/c$ 의 하한이 된다.
+# 성질
+
+## PCP 정리
+
+정리(Arora–Safra, Arora–Lund–Motwani–Sudan–Szegedy). 다음이 성립한다. 1992 년에 증명되었다[^1].
+
+$$
+\mathrm{NP}=\mathrm{PCP}(\log n,\thinspace 1)
+$$
+
+포함 $\supseteq$ 는 쉽다. 무작위 문자열이 $O(\log n)$ 비트뿐이라 가능한 $r$ 이 다항식 개이고 전부 돌리면 결정적 다항시간 검증이 된다. 정리의 내용은 반대 방향 $\subseteq$ 다. 이 정리는 $\mathrm{Gap}\text{-}\mathrm{CSP}\lbrack 1,\frac12\rbrack$ 가 NP-어렵다는 진술과 동치다.
+
+원래 증명은 대수적이다. 산술화로 3SAT 을 다항식 항등식 검사로 바꾸고, 저차 검사와 합 검사를 조합한 뒤 질의 수를 줄이는 합성 정리를 되풀이한다. 2007 년 I. Dinur 의 조합적 증명은 제약 그래프의 간극을 한 번에 두 배씩 키우는 연산을 $O(\log n)$ 번 되풀이해 상수 간극에 도달한다[^2].
 
 ## Håstad 의 3 비트 검증자
 
-Håstad 는 완전성을 $1$ 에서 $1-\varepsilon$ 로 조금 양보하는 대신 건전성을 $\frac12+\varepsilon$ 까지 밀어 내리는 3 질의 검증자를 만들었다[^3]. 검사 형태는 배타적 논리합이다.
+J. Håstad 는 완전성을 $1$ 에서 $1-\varepsilon$ 로 조금 양보하는 대신 건전성을 $\frac12+\varepsilon$ 까지 밀어 내리는 3 질의 검증자를 만들었다[^3]. 검사 형태는 배타적 논리합이다.
 
 $$
-\pi[i]\oplus\pi[j]\oplus\pi[k]=b
+\pi\lbrack i\rbrack\oplus\pi\lbrack j\rbrack\oplus\pi\lbrack k\rbrack=b
 $$
 
 MAX-3LIN(법 $2$ 선형방정식 최대 만족)에서 $\frac12+\varepsilon$ 근사가 NP-어렵고 무작위 할당이 $\frac12$ 를 주므로 이 비율이 최적이다. MAX-3SAT 로 환원하면 $\frac78+\varepsilon$ 의 어려움이 나온다.
 
 ## 유일게임 추측
 
-PCP 정리만으로 최적 상수가 나오지 않는 문제가 많다. MAX-CUT 은 [반정부호 계획법](semidefinite-programming.md)의 Goemans–Williamson 알고리즘이 $\alpha_{GW}\approx0.878$ 을 주는데, PCP 만으로는 $16/17\approx0.941$ 아래로 하한을 내리지 못한다.
+PCP 정리만으로 최적 상수가 나오지 않는 문제가 있다. 최대 절단 문제(MAX-CUT)는 [반정부호 계획법](semidefinite-programming.md)의 Goemans–Williamson 알고리즘이 $\alpha_{GW}\approx0.878$ 을 주는데, PCP 만으로는 $16/17\approx0.941$ 아래로 하한을 내리지 못한다.
 
-Khot 의 **[유일게임 추측](unique-games.md)** 은 한 변수의 값이 다른 변수의 값을 유일하게 정하는 2 변수 제약으로 된 간극 문제가 임의의 $\varepsilon,\delta$ 에 대해 $\mathrm{Gap}[1-\varepsilon,\delta]$ 수준에서 NP-어렵다고 주장한다. 이 추측 아래에서 Goemans–Williamson 의 $0.878$ 이 최적이 되고, 넓은 종류의 제약충족 문제에서 기본 SDP(semidefinite programming) 완화가 최적 근사 알고리즘이 된다.
+S. Khot 의 [유일게임 추측](unique-games.md)(unique games conjecture)은 한 변수의 값이 다른 변수의 값을 유일하게 정하는 2 변수 제약으로 된 간극 문제가 임의의 $\varepsilon,\delta$ 에 대해 $\mathrm{Gap}[1-\varepsilon,\delta]$ 수준에서 NP-어렵다고 주장한다. 이 추측 아래에서 Goemans–Williamson 의 $0.878$ 이 최적이 되고, 넓은 종류의 제약충족 문제에서 기본 SDP(semidefinite programming) 완화가 최적 근사 알고리즘이 된다.
 
-이 추측의 절반에 해당하는 **2-to-2 게임 정리**는 Khot, Minzer, Safra 가 증명했다[^4].
+한 변수의 값이 다른 변수의 값을 두 가지로 제한하는 2 변수 제약의 간극 문제가 완전성을 $1$ 보다 작게 두면 NP-어렵다는 2-to-2 게임 정리(2-to-2 games theorem)는 S. Khot, D. Minzer, M. Safra 가 증명했다[^4].
 
-# 성질
 
 ## 근사 가능성의 계층
 
@@ -87,7 +74,7 @@ PCP 정리 이후 NP-어려운 최적화 문제들이 근사 가능성에 따라
 
 | 부류 | 뜻 | 예 |
 |---|---|---|
-| FPTAS | 임의의 $1+\varepsilon$ 에 대해 시간이 $1/\varepsilon$ 에 다항 | 배낭 문제 |
+| FPTAS(fully polynomial-time approximation scheme) | 임의의 $1+\varepsilon$ 에 대해 시간이 $1/\varepsilon$ 에 다항 | 배낭 문제 |
 | PTAS(polynomial-time approximation scheme) | 임의의 $1+\varepsilon$ 에 대해 시간이 $1/\varepsilon$ 에 지수여도 됨 | 유클리드 TSP(traveling salesman problem) |
 | APX(approximable) | 어떤 상수 비율은 되지만 PTAS 는 없음 | MAX-3SAT, 정점 덮개 |
 | 상수 불가 | 상수 비율 근사조차 NP-어려움 | 일반 TSP, 최대 클릭 |
@@ -104,7 +91,7 @@ PCP 정리 이후 NP-어려운 최적화 문제들이 근사 가능성에 따라
 
 ## 간극 증폭과 expander
 
-Dinur 증명[^2]의 핵심 연산은 제약 그래프 $G$ 를 $t$ 거듭제곱해 길이 $t$ 경로를 제약 하나로 묶는 것이다. 그래프의 연결성이 나쁘면 간극이 증폭되지 않으므로 먼저 그래프를 **expander** 로 만들어 [무작위 걷기](random-walks.md)가 빠르게 섞이게 한 뒤 거듭제곱한다. 알파벳이 커지므로 합성으로 다시 줄인다. 세 연산을 한 라운드로 묶어 $O(\log n)$ 번 돌리면 간극이 상수가 된다.
+Dinur 증명[^2]의 주된 연산은 제약 그래프 $G$ 를 $t$ 거듭제곱해 길이 $t$ 경로를 제약 하나로 묶는 것이다. 그래프의 연결성이 나쁘면 간극이 증폭되지 않으므로 먼저 그래프를 [Expander 그래프](expander-graphs.md)(expander graph)로 만들어 [무작위 걷기](random-walks.md)가 빠르게 섞이게 한 뒤 거듭제곱한다. 알파벳이 커지므로 합성으로 다시 줄인다. 세 연산을 한 라운드로 묶어 $O(\log n)$ 번 돌리면 간극이 상수가 된다.
 
 이 증명에는 다항식이 등장하지 않고 expander 의 스펙트럼 간극이 그 자리를 대신한다.
 
@@ -116,10 +103,10 @@ MAX-3SAT 의 각 절은 리터럴 세 개의 논리합이다. 변수에 값을 �
 
 ## 근사 하한, 부호 이론, 위임 계산
 
-- **근사 하한**: 새 최적화 문제의 근사 한계는 알려진 간극 문제에서 간극을 보존하는 환원으로 증명한다.
-- **최적 비율의 결정**: 상한과 하한이 만나면 근사 가능성이 완전히 결정된다. MAX-3SAT 의 $7/8$ , 집합 덮개의 $\ln n$ , MAX-3LIN 의 $1/2$ 가 그런 예다.
-- **부호 이론**: 국소 검사 가능 부호(locally testable code, LTC)와 국소 복호 가능 부호(locally decodable code, LDC)가 PCP 구성에서 나왔고 상수 비율 LTC 구성으로 이어졌다.
-- **위임 계산**: 짧은 증명을 조금만 읽고 검증하는 구조가 SNARK(succinct non-interactive argument of knowledge) 류 증명 시스템의 기본 구조다.
+- 근사 하한. 새 최적화 문제의 근사 한계는 알려진 간극 문제에서 간극을 보존하는 환원으로 증명한다.
+- 최적 비율의 결정. 상한과 하한이 만나면 근사 가능성이 완전히 결정된다. MAX-3SAT 의 $7/8$, 집합 덮개의 $\ln n$, MAX-3LIN 의 $1/2$ 가 그런 예다.
+- 부호 이론. 국소 검사 가능 부호(locally testable code, LTC)와 국소 복호 가능 부호(locally decodable code, LDC)가 PCP 구성에서 나왔고 상수 비율 LTC 구성으로 이어졌다.
+- 위임 계산. 짧은 증명을 조금만 읽고 검증하는 구조가 SNARK(succinct non-interactive argument of knowledge) 류 증명 시스템의 기본 구조다.
 
 [^1]: S. Arora, S. Safra, *Probabilistic checking of proofs*, JACM 45 (1998), 그리고 S. Arora, C. Lund, R. Motwani, M. Sudan, M. Szegedy, *Proof verification and the hardness of approximation problems*, JACM 45 (1998). 원 증명.
 [^2]: I. Dinur, *The PCP theorem by gap amplification*, JACM 54 (2007). 간극 증폭에 의한 조합적 증명.
