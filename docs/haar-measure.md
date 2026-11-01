@@ -6,7 +6,7 @@
 
 # 직관
 
-유한군 $G$ 에서 함수의 평균은 $\frac1{\vert G\vert}\sum_{g\in G}f(g)$ 이고 이 값은 $f$ 를 $f(h\thinspace\cdot)$ 로 바꿔도 변하지 않는다. 국소콤팩트 위상군에서는 합을 적분으로 바꿨을 때 이 불변성을 주는 측도가 상수배까지 하나뿐이다.
+유한군 $G$ 에서 함수의 평균은 $\frac1{\vert G\vert}\sum_{g\in G}f(g)$ 이고 이 값은 $f$ 를 $f(h\thinspace\cdot)$ 로 바꿔도 변하지 않는다. 원소 $h$ 를 곱해 함수를 옮기면 합에 들어가는 값들의 순서만 바뀐다.
 
 양의 실수 전체를 곱셈으로 묶은 군 $(\mathbb R_{\gt 0},\times)$ 에서 함수의 평균을 내려 한다. 유한군에서 하던 대로 하면 $a$ 를 곱해 옮긴 함수의 평균이 원래 평균과 같아야 한다. 이미 아는 적분은 [Lebesgue 적분](lebesgue-integral.md)이므로 그것으로 계산해 본다.
 
@@ -24,12 +24,14 @@ $y=ax$ 로 바꾸면 $dy/y=a\thinspace dx/(ax)=dx/x$ 이므로 두 적분이 같
 
 # 정의
 
-**위상군**은 곱 $(g,h)\mapsto gh$ 와 역원 $g\mapsto g^{-1}$ 이 연속인 위상공간 $G$ 다. $G$ 가 국소콤팩트 Hausdorff 일 때, Borel 집합 위의 측도 $\mu$ 가 다음을 만족하면 **좌 Haar 측도**라 한다.
+[위상군](topological-groups.md)은 곱 $(g,h)\mapsto gh$ 와 역원 $g\mapsto g^{-1}$ 이 연속인 위상공간 $G$ 다. $G$ 가 국소콤팩트(locally compact) Hausdorff 공간일 때, Borel 집합(Borel set) 위의 측도 $\mu$ 가 다음을 만족하면 **좌 Haar 측도(left Haar measure)** 라 한다.
 
 - 콤팩트 집합의 측도가 유한하고 공집합이 아닌 열린집합의 측도가 양이다.
 - 모든 $g\in G$ 와 Borel 집합 $A$ 에 대해 $\mu(gA)=\mu(A)$ 다.
 
-$\mu(Ag)=\mu(A)$ 를 만족하는 것은 **우 Haar 측도**다. 좌불변이면서 우불변인 군을 **유니모듈러**라 한다.
+직관 절의 $(\mathbb R_{\gt 0},\times)$ 에서 $\mu(A)=\int_A dx/x$ 는 구간 $\lbrack 1,2\rbrack$ 와 그것을 $3$ 배 옮긴 $\lbrack 3,6\rbrack$ 에 같은 값 $\log 2$ 를 준다. Lebesgue 측도는 두 구간에 $1$ 과 $3$ 을 주므로 좌 Haar 측도가 아니다.
+
+둘째 조건 대신 $\mu(Ag)=\mu(A)$ 를 만족하는 것은 **우 Haar 측도(right Haar measure)** 다. 좌 Haar 측도가 우 Haar 측도이기도 한 군을 **유니모듈러(unimodular)** 군이라 한다. $(\mathbb R_{\gt 0},\times)$ 는 곱셈이 교환되므로 $\mu(aA)=\mu(Aa)$ 이고 유니모듈러다.
 
 ## 예
 
@@ -38,7 +40,7 @@ $\mu(Ag)=\mu(A)$ 를 만족하는 것은 **우 Haar 측도**다. 좌불변이면
 | $(\mathbb R,+)$ | Lebesgue 측도 $dx$ |
 | $(\mathbb R_{\gt 0},\times)$ | $dx/x$ |
 | 원 $\mathbb T=\lbrace z\in\mathbb C:\vert z\vert=1\rbrace$ | $d\theta/2\pi$ |
-| 유한군 $G$ | 계량측도의 $1/\vert G\vert$ 배 |
+| 유한군 $G$ | 계수 측도(counting measure)의 $1/\vert G\vert$ 배 |
 | $\mathrm{GL}\_n(\mathbb R)$ | $\vert\det X\vert^{-n}\thinspace dX$ |
 | $p$ 진체 $\mathbb Q\_p$ | $\mathbb Z\_p$ 의 측도가 $1$ 인 측도 |
 
@@ -48,7 +50,7 @@ $\mu(Ag)=\mu(A)$ 를 만족하는 것은 **우 Haar 측도**다. 좌불변이면
 
 ## 존재와 유일성
 
-**정리**(Haar, Weil)**.** 국소콤팩트 Hausdorff 위상군에는 좌 Haar 측도가 존재하고, 두 좌 Haar 측도는 양의 상수배로 서로 옮겨진다.
+Haar 와 Weil 이 증명한 정리에 따르면 국소콤팩트 Hausdorff 위상군에는 좌 Haar 측도가 존재하고, 두 좌 Haar 측도는 양의 상수배로 서로 옮겨진다.
 
 존재의 요지는 콤팩트 집합을 작은 열린집합의 평행이동으로 덮는 개수를 재는 것이다. 콤팩트 $K$ 와 공집합이 아닌 열린 $U$ 에 대해 $K$ 를 덮는 데 필요한 $U$ 의 좌평행이동의 최소 개수를 $(K:U)$ 라 하면, 기준 콤팩트 집합 $K\_0$ 을 하나 고정한 비 $(K:U)/(K\_0:U)$ 가 $U$ 를 항등원 쪽으로 줄일 때 갖는 극한값이 $\mu(K)$ 다. 각 $U$ 마다 이 비는 $(K:U)/(K\_0:U)\le(K:K\_0)$ 로 유계이고 좌평행이동에 불변이므로, 유계 구간의 곱공간에서 [Tychonoff 정리](tychonoff-theorem.md)로 극한을 하나 잡는다.
 
@@ -62,7 +64,7 @@ $$
 \mu(Ag)=\Delta(g)\thinspace\mu(A)
 $$
 
-가 성립한다. $\Delta:G\to\mathbb R_{\gt 0}$ 은 연속 준동형이고 **모듈러 함수**라 한다. 유니모듈러인 것은 $\Delta\equiv1$ 인 것과 같다. 콤팩트군, 아벨군, 이산군, 반단순 [Lie 군](lie-groups.md)이 유니모듈러다. 콤팩트군에서는 $\Delta$ 의 상이 $\mathbb R_{\gt 0}$ 의 콤팩트 부분군이어서 $\lbrace 1\rbrace$ 뿐이다.
+가 성립한다. $\Delta:G\to\mathbb R_{\gt 0}$ 은 연속 준동형이고 모듈러 함수(modular function)라 한다. 유니모듈러인 것은 $\Delta\equiv1$ 인 것과 같다. 콤팩트군, 아벨군, 이산군, 반단순(semisimple) [Lie 군](lie-groups.md)이 유니모듈러다. 콤팩트군에서는 $\Delta$ 의 상이 $\mathbb R_{\gt 0}$ 의 콤팩트 부분군이어서 $\lbrace 1\rbrace$ 뿐이다.
 
 ## 정규화
 
@@ -74,11 +76,11 @@ $$
 
 # 활용
 
-- [Peter–Weyl 정리](peter-weyl.md)는 콤팩트군 $G$ 의 정규화된 Haar 측도로 $L^2(G)$ 를 만들고, 그 공간이 기약표현의 [행렬](matrices.md)성분으로 분해된다는 진술이다. 유한군 표현론의 평균 논법을 콤팩트군으로 옮기는 자리가 이 측도다.
-- [Weyl 지표 공식](weyl-character-formula.md)의 해석적 증명은 콤팩트 연결 Lie 군의 Haar 측도를 극대원환면으로 밀어낸다. 그 [상측도](pushforward-measure.md)가 Weyl 적분 공식의 야코비안 $\frac1{\vert W\vert}\vert\Delta\vert^2$ 를 준다.
-- [Sato–Tate 분포](sato-tate.md)는 정규화된 Frobenius 각이 $\mathrm{SU}(2)$ 의 켤레류에서 Haar 측도로 등분포한다는 진술이다. 그 측도를 각으로 읽은 것이 반원 분포다.
-- [아델](adeles.md)의 제한직적은 국소콤팩트라서 Haar 측도를 갖는다. [질량 공식](mass-formula.md)은 이중잉여류의 부피를 이 측도로 재어 격자류의 개수 대신 부피를 센다.
-- [Satake 동형](satake-isomorphism.md)은 $\mathrm{vol}(K)=1$ 로 정규화한 Haar 측도의 [합성곱](convolution.md)으로 비분기 Hecke 대수를 정의한다.
+- [Peter–Weyl 정리](peter-weyl.md)는 콤팩트군 $G$ 의 정규화된 Haar 측도로 $L^2(G)$ 를 만들고, 그 공간이 기약표현의 [행렬](matrices.md)성분으로 분해된다는 진술이다. 유한군 표현론에서 원소에 대한 평균을 내던 자리에 이 측도에 대한 적분을 쓴다.
+- [Weyl 지표 공식](weyl-character-formula.md)의 해석적 증명은 콤팩트 연결 Lie 군의 Haar 측도를 극대원환면(maximal torus)으로 밀어낸다. 그 [상측도](pushforward-measure.md)가 Weyl 적분 공식(Weyl integration formula)의 Jacobian 인자 $\frac1{\vert W\vert}\vert\Delta\vert^2$ 를 준다.
+- [Sato–Tate 분포](sato-tate.md)는 정규화된 Frobenius 각이 $\mathrm{SU}(2)$ 의 켤레류에서 Haar 측도로 등분포한다는 진술이다. 그 측도를 각 $\theta\in\lbrack 0,\pi\rbrack$ 의 분포로 옮기면 $\frac2\pi\sin^2\theta\thinspace d\theta$ 이고, 대각합 $2\cos\theta$ 의 분포로 옮기면 반원 분포(semicircle distribution)다.
+- [아델](adeles.md)의 제한직적(restricted direct product)은 국소콤팩트라서 Haar 측도를 갖는다. [질량 공식](mass-formula.md)은 이중잉여류(double coset)의 부피를 이 측도로 재어 격자류의 개수 대신 부피를 센다.
+- [Satake 동형](satake-isomorphism.md)은 $\mathrm{vol}(K)=1$ 로 정규화한 Haar 측도의 [합성곱](convolution.md)으로 비분기 Hecke 대수(unramified Hecke algebra)를 정의한다.
 
 # 연관 문서
 
