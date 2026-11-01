@@ -6,37 +6,39 @@
 
 # 직관
 
-Tychonoff 정리는 콤팩트 공간들의 임의의 곱이 곱위상에서 콤팩트하다는 정리다. 좌표의 개수에 제한이 없어 비가산 개의 좌표를 가진 함수공간에도 적용된다.
-
-ZF(선택공리를 뺀 Zermelo–Fraenkel) 안에서 이 정리는 [선택공리](axiom-of-choice.md)와 동치다. 콤팩트 Hausdorff 공간의 곱으로 제한한 판본은 그보다 약한 초필터 보조정리와 동치다.
-
 $\lbrack 0,1\rbrack^{\mathbb N}$ 의 점은 $\lbrack 0,1\rbrack$ 의 수열이다. 이 공간의 점열 $x^{(1)},x^{(2)},\dots$ 에서 수렴하는 부분열을 뽑는다. 첫 좌표만 모으면 $\lbrack 0,1\rbrack$ 의 유계 수열이므로 [Bolzano–Weierstrass 정리](bolzano-weierstrass.md)로 수렴하는 부분열이 있다([수열의 극한](limits.md)). 그 부분열에서 둘째 좌표를 모아 다시 부분열을 뽑고, 그 안에서 셋째 좌표를 뽑는다. $k$ 번째 부분열의 $k$ 번째 항을 모으면 모든 좌표에서 수렴하는 부분열이 된다. 좌표를 $1,2,3,\dots$ 으로 줄 세울 수 있어서 이 뽑기가 끝났다.
 
-좌표 집합을 $\mathbb N$ 대신 $\lbrack 0,1\rbrack$ 로 바꾸면 좌표를 줄 세울 수 없어 좌표마다 차례로 뽑는 과정이 끝나지 않는다. 이 공간에는 수렴하는 부분열이 없는 점열도 있다. 그래서 부분열 대신 열린 덮개로 콤팩트성을 보인다. 덮개를 쓰면 좌표를 차례로 밟는 과정이 없어지고 좌표마다 점을 하나씩 고르는 일만 남는데, 그 고르기가 선택공리다.
+좌표 집합을 $\mathbb N$ 대신 $\lbrack 0,1\rbrack$ 로 바꾸면 좌표를 줄 세울 수 없어 좌표마다 차례로 뽑는 과정이 끝나지 않는다. 이 공간에는 수렴하는 부분열이 없는 점열도 있다. 그래서 부분열 대신 열린 덮개로 콤팩트성을 보인다. 덮개를 쓰면 좌표를 차례로 밟는 과정이 없어지고 좌표마다 점을 하나씩 고르는 일만 남는데, 그 고르기가 [선택공리](axiom-of-choice.md)다.
 
 # 정의
 
 ## 곱위상
 
-$\lbrace X_i\rbrace\_{i\in I}$ 를 위상 공간들의 족이라 하고 $X=\prod\_{i\in I}X_i$ 를 곱집합, $\pi_i:X\to X_i$ 를 $i$ 번째 좌표를 주는 사영이라 한다. **곱위상**은 모든 $\pi_i$ 를 연속으로 만드는 가장 거친 위상이고
+$\lbrace X_i\rbrace\_{i\in I}$ 를 위상 공간들의 족이라 하고 $X=\prod\_{i\in I}X_i$ 를 곱집합, $\pi_i:X\to X_i$ 를 $i$ 번째 좌표를 주는 사영이라 한다. 모든 $\pi_i$ 를 연속으로 만드는 가장 거친 위상을 **곱위상(product topology)** 이라 한다. 곱위상은
 
 $$
 \mathcal S=\lbrace \pi_i^{-1}(U)\thinspace :\thinspace i\in I,\thinspace U \text{ 는 } X_i \text{ 의 열린집합}\rbrace
 $$
 
-를 부분기저로 갖는다. 곱위상의 열린집합은 $\mathcal S$ 의 원소를 유한 개 교집합한 것들의 합집합이다. 유한 개 좌표만 제약하는 집합이 기저가 되는 점이 상자위상과 다르고, Tychonoff 정리는 곱위상에서만 성립한다.
+를 부분기저로 갖는다. 곱위상의 열린집합은 $\mathcal S$ 의 원소를 유한 개 교집합한 것들의 합집합이다. 좌표마다 열린집합 $U_i$ 를 골라 $\prod_iU_i$ 를 모두 열린집합으로 삼는 위상을 상자위상(box topology)이라 한다. 곱위상에서는 유한 개 좌표만 제약하는 집합이 기저다.
 
-## 정리
-
-$$
-\text{각 } X_i \text{ 가 콤팩트이면 } \prod\_{i\in I}X_i \text{ 도 콤팩트다.}
-$$
+- $\lbrack 0,1\rbrack^2$ 의 곱위상은 평면의 보통 위상과 같다. 유한 곱에서는 곱위상과 상자위상이 같다.
+- 직관의 $\lbrack 0,1\rbrack^{\mathbb N}$ 에서 점열이 곱위상으로 수렴하는 것과 좌표마다 수렴하는 것은 동치다. 직관에서 뽑은 대각 부분열이 곱위상으로 수렴한다.
+- $\lbrack 0,1\rbrack^{\mathbb N}$ 의 상자위상에서는 $\prod_n\lbrack 0,1/n)$ 이 $0$ 의 근방이므로, 모든 좌표가 $1/k$ 인 점열 $x^{(k)}$ 는 $0$ 으로 수렴하지 않는다. 곱위상에서는 $0$ 으로 수렴한다.
 
 # 성질
 
+## 정리의 진술
+
+$$
+\text{각 } X_i \text{ 가 콤팩트이면 } \prod\_{i\in I}X_i \text{ 도 곱위상에서 콤팩트다.}
+$$
+
+상자위상에서는 성립하지 않는다. $\lbrace 0,1\rbrace^{\mathbb N}$ 에 상자위상을 주면 모든 한 점 집합이 열려 무한 이산공간이 된다.
+
 ## 부분기저를 쓴 증명
 
-**Alexander 부분기저 보조정리.** 부분기저 $\mathcal S$ 의 원소들로 된 모든 덮개가 유한 부분덮개를 가지면 그 공간은 콤팩트다.
+Alexander 부분기저 보조정리(Alexander subbase lemma)에 따르면, 부분기저 $\mathcal S$ 의 원소들로 된 모든 덮개가 유한 부분덮개를 가지면 그 공간은 콤팩트다.
 
 증명의 요지. 곱공간의 부분기저 원소는 $\pi_i^{-1}(U)$ 꼴이다. 이런 집합들의 덮개 $\mathcal U$ 가 유한 부분덮개를 갖지 않는다고 하고, 각 $i$ 에 대해
 
@@ -64,7 +66,7 @@ $$
 \bigcap\_{i\in I}\pi_i^{-1}(A_i)=\prod\_{i\in I}A_i\neq\varnothing
 $$
 
-이고, 이 곱의 원소가 선택함수다. 반대 방향은 앞의 증명이 선택공리를 썼으므로 두 진술이 ZF 안에서 동치다.
+이고, 이 곱의 원소가 선택함수다. 반대 방향은 앞의 증명이 선택공리를 썼으므로 두 진술이 ZF(선택공리를 뺀 Zermelo–Fraenkel 집합론) 안에서 동치다.
 
 ## Hausdorff 판본의 강도
 
@@ -76,11 +78,11 @@ $\lbrace 0,1\rbrace^{\lbrack 0,1\rbrack}$ 은 Tychonoff 정리로 콤팩트하�
 
 # 활용
 
-- **[Banach–Alaoglu 정리](banach-alaoglu.md).** [Banach 공간](banach-spaces.md) $X$ 의 쌍대공간 단위구가 약 $\ast$ 위상에서 콤팩트하다는 정리다. 그 단위구를 $\prod\_{x\in X}\lbrace c\in\mathbb C\thinspace :\thinspace \vert c\vert\le\Vert x\Vert\rbrace$ 의 닫힌 부분집합으로 보고 Tychonoff 정리를 쓴다.
-- **[Stone–Čech 콤팩트화](stone-cech-compactification.md).** 완전정칙 공간을 $\lbrack 0,1\rbrack$ 값 연속함수들의 곱에 심고 닫힘을 취하는 구성이다([분리공리](separation-axioms.md)). 그 곱의 콤팩트성이 Tychonoff 정리다.
-- **1차 논리의 콤팩트성 정리.** [1차 논리](first-order-logic.md)의 문장들에 진리값을 주는 배정 전체가 $\lbrace 0,1\rbrace$ 의 곱이고, 각 문장이 정하는 닫힌집합족의 유한 교집합 성질에서 유한 만족 가능성이 전체 만족 가능성으로 올라간다.
-- **유한에서 무한으로의 색칠 확장.** 모든 유한 부분그래프가 $k$ 색칠 가능한 그래프는 전체가 $k$ 색칠 가능하다([de Bruijn–Erdős 정리](de-bruijn-erdos-theorem.md)). $\lbrace 1,\dots,k\rbrace^V$ 의 콤팩트성에서 나온다([그래프 색칠](graph-coloring.md)).
-- **Haar 측도의 존재.** 콤팩트 집합을 작은 열린집합의 평행이동으로 덮는 개수의 비가 유계 구간들의 곱에 들어가고, 그 곱의 콤팩트성으로 극한을 하나 잡는다([Haar 측도](haar-measure.md)).
+- [Banach–Alaoglu 정리](banach-alaoglu.md): [Banach 공간](banach-spaces.md) $X$ 의 쌍대공간 단위구가 약 $\ast$ 위상에서 콤팩트하다는 정리다. 그 단위구를 $\prod\_{x\in X}\lbrace c\in\mathbb C\thinspace :\thinspace \vert c\vert\le\Vert x\Vert\rbrace$ 의 닫힌 부분집합으로 보고 Tychonoff 정리를 쓴다.
+- [Stone–Čech 콤팩트화](stone-cech-compactification.md): 완전정칙 공간을 $\lbrack 0,1\rbrack$ 값 연속함수들의 곱에 심고 닫힘을 취하는 구성이다([분리공리](separation-axioms.md)). 그 곱의 콤팩트성이 Tychonoff 정리다.
+- 1차 논리의 콤팩트성 정리: [1차 논리](first-order-logic.md)의 문장들에 진리값을 주는 배정 전체가 $\lbrace 0,1\rbrace$ 의 곱이고, 각 문장이 정하는 닫힌집합족의 유한 교집합 성질에서 유한 만족 가능성이 전체 만족 가능성으로 올라간다.
+- 유한에서 무한으로의 색칠 확장: 모든 유한 부분그래프가 $k$ 색칠 가능한 그래프는 전체가 $k$ 색칠 가능하다([de Bruijn–Erdős 정리](de-bruijn-erdos-theorem.md)). $\lbrace 1,\dots,k\rbrace^V$ 의 콤팩트성에서 나온다([그래프 색칠](graph-coloring.md)).
+- Haar 측도의 존재: 콤팩트 집합을 작은 열린집합의 평행이동으로 덮는 개수의 비가 유계 구간들의 곱에 들어가고, 그 곱의 콤팩트성으로 극한을 하나 잡는다([Haar 측도](haar-measure.md)).
 
 [^1]: Tychonoff's theorem, Wikipedia. Kelley 의 1950 년 논증으로 Tychonoff 정리에서 선택공리를 끌어낸다. https://en.wikipedia.org/wiki/Tychonoff%27s_theorem
 [^2]: Paul Howard, Jean E. Rubin, *Consequences of the Axiom of Choice*, American Mathematical Society, 1998. 형태 14 (초필터 보조정리)와 형태 1 (선택공리)의 비교, 콤팩트 Hausdorff 곱 판본의 동치, Halpern–Lévy 모형에서 초필터 보조정리가 선택공리를 함의하지 않음.
