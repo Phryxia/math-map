@@ -12,33 +12,31 @@ $$
 \mu^\ast(E)=\inf\Big\lbrace \sum\_{n=1}^\infty \lvert I\_n\rvert : E\subseteq\bigcup\_{n=1}^\infty I\_n\Big\rbrace
 $$
 
-이 값은 모든 부분집합에 있다. 측도가 되려면 겹치지 않는 두 집합 $A$ 와 $B$ 에서 $\mu^\ast(A\cup B)=\mu^\ast(A)+\mu^\ast(B)$ 여야 한다. 한쪽 부등호는 나온다. $A$ 의 덮개와 $B$ 의 덮개를 합치면 $A\cup B$ 의 덮개이므로 $\mu^\ast(A\cup B)\le\mu^\ast(A)+\mu^\ast(B)$ 다. 반대쪽을 얻으려면 $A\cup B$ 를 덮는 구간들에서 $A$ 의 덮개와 $B$ 의 덮개를 뽑아내야 한다. 덮개의 구간 하나가 $A$ 와 $B$ 에 걸쳐 있으면 그 길이를 두 쪽에 나눠 줄 방법이 없어 계산이 멈춘다.
+이 값은 모든 부분집합에 있다. [측도](measure.md)가 되려면 겹치지 않는 두 집합 $A$ 와 $B$ 에서 $\mu^\ast(A\cup B)=\mu^\ast(A)+\mu^\ast(B)$ 여야 한다. 한쪽 부등호는 나온다. $A$ 의 덮개와 $B$ 의 덮개를 합치면 $A\cup B$ 의 덮개이므로 $\mu^\ast(A\cup B)\le\mu^\ast(A)+\mu^\ast(B)$ 다. 반대쪽을 얻으려면 $A\cup B$ 를 덮는 구간들에서 $A$ 의 덮개와 $B$ 의 덮개를 뽑아내야 한다. 덮개의 구간 하나가 $A$ 와 $B$ 에 걸쳐 있으면 그 길이를 두 쪽에 나눠 줄 방법이 없어 계산이 멈춘다.
 
 걸쳐 있는 구간이 막았으니, 걸침 없이 자르는 집합만 남긴다. 집합 $A$ 가 임의의 집합 $S$ 를 잘랐을 때 $\mu^\ast(S\cap A)+\mu^\ast(S\setminus A)=\mu^\ast(S)$ 이면 $A$ 로 자르는 동안 값이 새지 않는다. 이 조건을 만족하는 $A$ 들만 모으면 그 위에서 가법성이 성립하고, 그런 $A$ 를 Carathéodory 가측집합이라 한다.
 
-Lebesgue 측도, Hausdorff 측도, 곱측도가 이 절차로 나온다.
-
 # 정의
 
-$X$ 의 멱집합에서 $\lbrack 0,\infty\rbrack$ 로 가는 함수 $\mu^\ast$ 가 다음 셋을 만족하면 **외측도**다.
+$X$ 의 멱집합에서 $\lbrack 0,\infty\rbrack$ 로 가는 함수 $\mu^\ast$ 가 다음 셋을 만족하면 **외측도(outer measure)** 다.
 
 - $\mu^\ast(\varnothing)=0$
 - $A\subseteq B$ 이면 $\mu^\ast(A)\le\mu^\ast(B)$
 - $\mu^\ast\big(\bigcup\_{n=1}^\infty A\_n\big)\le\sum\_{n=1}^\infty\mu^\ast(A\_n)$
 
-셋째 조건이 가산 열가법성이다. 등호가 아닌 부등호여서 모든 부분집합에 값을 줄 수 있다.
+셋째 조건이 가산 열가법성(countable subadditivity)이다. 등호가 아닌 부등호여서 모든 부분집합에 값을 줄 수 있다. 직관 절의 $\mu^\ast$ 는 외측도이고, 한 점 $\lbrace 0\rbrace$ 은 길이 $\varepsilon$ 인 구간 하나로 덮이므로 $\mu^\ast(\lbrace 0\rbrace)=0$ 이다. $X=\lbrace 1,2\rbrace$ 에서 $\mu^\ast(\varnothing)=0$ 이고 공집합이 아닌 집합에 모두 $1$ 을 주는 함수도 외측도다.
 
-집합 $A\subseteq X$ 가 모든 $S\subseteq X$ 에 대해 다음을 만족하면 $\mu^\ast$ 에 대해 **Carathéodory 가측**이다.
+집합 $A\subseteq X$ 가 모든 $S\subseteq X$ 에 대해 다음을 만족하면 $\mu^\ast$ 에 대해 **Carathéodory 가측(Carathéodory measurable)** 이다.
 
 $$
 \mu^\ast(S)=\mu^\ast(S\cap A)+\mu^\ast(S\setminus A)
 $$
 
-열가법성에서 $\le$ 는 늘 성립하므로 확인할 것은 $\ge$ 뿐이다. 가측집합 전체를 $\mathcal M(\mu^\ast)$ 로 쓴다.
+열가법성에서 $\le$ 는 늘 성립하므로 확인할 것은 $\ge$ 뿐이다. 가측집합 전체를 $\mathcal M(\mu^\ast)$ 로 쓴다. 앞의 $X=\lbrace 1,2\rbrace$ 에서 $A=\lbrace 1\rbrace$ 은 $S=X$ 로 자르면 $\mu^\ast(\lbrace 1\rbrace)+\mu^\ast(\lbrace 2\rbrace)=2\ne 1=\mu^\ast(X)$ 이므로 가측이 아니고, $\mathcal M(\mu^\ast)=\lbrace\varnothing,X\rbrace$ 이다.
 
 ## 전측도
 
-$X$ 의 부분집합들의 모임 $\mathcal A$ 가 $\varnothing$ 을 담고 유한 합집합과 차집합에 닫혀 있으면 **대수**다. 대수 $\mathcal A$ 위의 함수 $\mu\_0:\mathcal A\to\lbrack 0,\infty\rbrack$ 가 $\mu\_0(\varnothing)=0$ 이고, 서로소인 $A\_1,A\_2,\dots\in\mathcal A$ 의 합집합이 다시 $\mathcal A$ 에 들면 $\mu\_0(\bigcup A\_n)=\sum\mu\_0(A\_n)$ 일 때 **전측도**다.
+$X$ 의 부분집합들의 모임 $\mathcal A$ 가 $\varnothing$ 을 담고 유한 합집합과 차집합에 닫혀 있으면 **대수(algebra)** 다. 대수 $\mathcal A$ 위의 함수 $\mu\_0:\mathcal A\to\lbrack 0,\infty\rbrack$ 가 $\mu\_0(\varnothing)=0$ 이고, 서로소인 $A\_1,A\_2,\dots\in\mathcal A$ 의 합집합이 다시 $\mathcal A$ 에 들면 $\mu\_0(\bigcup A\_n)=\sum\mu\_0(A\_n)$ 일 때 **전측도(premeasure)** 다. 반열린 구간 $(a,b\rbrack$ 의 유한 합집합 전체는 대수이고, 서로소인 구간들의 합집합에 길이의 합을 주는 함수가 그 위의 전측도다.
 
 전측도는 $\mathcal A$ 의 덮개로 외측도를 유도한다.
 
@@ -50,7 +48,7 @@ $$
 
 ## Carathéodory 정리
 
-**정리.** 외측도 $\mu^\ast$ 에 대해 $\mathcal M(\mu^\ast)$ 는 $\sigma$ 대수이고, $\mu^\ast$ 를 $\mathcal M(\mu^\ast)$ 로 제한한 것은 완비 측도다.[^1]
+외측도 $\mu^\ast$ 에 대해 $\mathcal M(\mu^\ast)$ 는 $\sigma$ 대수이고, $\mu^\ast$ 를 $\mathcal M(\mu^\ast)$ 로 제한한 것은 완비 측도다.[^1]
 
 증명의 요지. 정의가 $A$ 와 $X\setminus A$ 에 대칭이므로 여집합에 닫힌다. 유한 합집합은 조건을 두 번 적용해 얻는다. $A,B$ 가 가측이면 시험집합 $S$ 를 $A$ 로 자르고 각 조각을 다시 $B$ 로 잘라 네 조각으로 만든 뒤 열가법성으로 모으면 $A\cup B$ 가 조건을 만족한다.
 
@@ -60,17 +58,17 @@ $$
 
 ## 전측도의 확장
 
-**정리(Hahn–Kolmogorov).** 대수 $\mathcal A$ 위의 전측도 $\mu\_0$ 가 유도한 외측도 $\mu^\ast$ 에 대해 $\mathcal A\subseteq\mathcal M(\mu^\ast)$ 이고 $\mu^\ast$ 는 $\mathcal A$ 에서 $\mu\_0$ 와 일치한다. 따라서 $\mu\_0$ 는 $\sigma(\mathcal A)$ 위의 측도로 확장된다.[^1]
+Hahn–Kolmogorov 정리(Hahn–Kolmogorov theorem)에 따르면 대수 $\mathcal A$ 위의 전측도 $\mu\_0$ 가 유도한 외측도 $\mu^\ast$ 에 대해 $\mathcal A\subseteq\mathcal M(\mu^\ast)$ 이고 $\mu^\ast$ 는 $\mathcal A$ 에서 $\mu\_0$ 와 일치한다. 따라서 $\mu\_0$ 는 $\sigma(\mathcal A)$ 위의 측도로 확장된다.[^1]
 
 증명의 요지. $A\in\mathcal A$ 를 덮개 하나로 쓰면 $\mu^\ast(A)\le\mu\_0(A)$ 다. 반대 방향은 $A$ 를 덮는 $\lbrace A\_n\rbrace$ 에 대해 $A\cap A\_n$ 을 서로소화하고 $\mathcal A$ 위의 가산 가법성을 써서 $\mu\_0(A)\le\sum\mu\_0(A\_n)$ 을 얻는다. 가측성도 덮개를 $A$ 의 안과 밖으로 쪼개어 확인한다.
 
 ## 유일성
 
-**정리.** $\mu\_0$ 가 $\sigma$ 유한이면 $\sigma(\mathcal A)$ 위의 확장은 유일하다.
+$\mu\_0$ 가 $\sigma$ 유한이면 $\sigma(\mathcal A)$ 위의 확장은 유일하다.
 
 증명의 요지. 두 확장이 일치하는 집합들의 모임은 $\lambda$ 계이고 $\mathcal A$ 를 담는다. $\mathcal A$ 가 $\pi$ 계이므로 [Dynkin 의 π-λ 정리](dynkin-system.md)로 그 모임이 $\sigma(\mathcal A)$ 를 담는다. $\sigma$ 유한성은 전체 공간을 유한 측도 조각으로 끊어 각 조각에서 이 논법을 쓰는 데 필요하다.
 
-$\sigma$ 유한성이 없으면 유일성이 깨진다. $\mathbb R$ 의 유한 구간들의 대수 위에서 공집합이 아닌 구간마다 $\infty$ 를 주는 전측도는 Borel 집합 위에서 셈측도의 $c$ 배로 여러 가지로 확장된다.
+$\sigma$ 유한성이 없으면 유일성이 성립하지 않는다. $\mathbb R$ 의 유한 구간들의 대수 위에서 공집합이 아닌 구간마다 $\infty$ 를 주는 전측도는 Borel 집합 위에서 셈측도의 $c$ 배로 여러 가지로 확장된다.
 
 ## 완비화와 Borel 집합
 
@@ -80,7 +78,7 @@ $\mathcal M(\mu^\ast)$ 는 $\sigma(\mathcal A)$ 보다 크다. 확장이 $\sigma
 
 ## Lebesgue 측도
 
-$\mathbb R$ 의 유한 구간들의 유한 합집합이 대수이고 구간의 길이가 그 위의 전측도다. 이 전측도에 정리를 적용하면 Lebesgue 가측집합의 $\sigma$ 대수와 Lebesgue 측도가 나온다. [측도](measure.md)의 구성 절이 줄여 적은 절차가 이것이다. 구간의 길이에서 출발하므로 평행이동 불변성이 외측도로 전해지고, [Vitali 집합](vitali-set.md)이 $\mathcal M(\mu^\ast)$ 밖에 있다.
+$\mathbb R$ 의 유한 구간들의 유한 합집합이 대수이고 구간의 길이가 그 위의 전측도다. 이 전측도에 정리를 적용하면 Lebesgue 가측집합의 $\sigma$ 대수와 Lebesgue 측도가 나온다. 구간의 길이에서 출발하므로 평행이동 불변성이 외측도로 전해지고, [Vitali 집합](vitali-set.md)이 $\mathcal M(\mu^\ast)$ 밖에 있다.
 
 ## 분포함수와 Stieltjes 측도
 
@@ -96,7 +94,7 @@ $\mathbb R$ 의 유한 구간들의 유한 합집합이 대수이고 구간의 �
 
 ## 측도의 존재를 다른 길로 얻는 구성
 
-[Loeb 측도](loeb-measure.md)는 내부 대상 위의 유한가법측도에서 포화성으로 $\sigma$ 가법성을 끌어내고, 그 뒤에 이 정리로 완비 측도를 만든다. [단조 수렴 정리](monotone-convergence.md)의 활용 절이 드는 단조 근사 구성도 여기에 든다.
+[Loeb 측도](loeb-measure.md)는 내부 대상 위의 유한가법측도에서 포화성으로 $\sigma$ 가법성을 끌어내고, 그 뒤에 이 정리로 완비 측도를 만든다.
 
 [^1]: Gerald B. Folland, *Real Analysis: Modern Techniques and Their Applications*, 2nd ed., 1.4절 (외측도, Carathéodory 정리, 전측도의 확장과 유일성).
 
