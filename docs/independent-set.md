@@ -6,8 +6,6 @@
 
 # 직관
 
-독립집합은 그래프에서 어느 두 정점도 서로 이웃하지 않는 정점 집합이다. 가장 큰 독립집합의 크기를 **독립수(independence number)** $\alpha(G)$ 라 하고, $\alpha(G)$ 를 구하거나 크기 $k$ 의 독립집합이 있는지 판정하는 문제를 **독립집합 문제(independent set problem)** 라 한다. 독립집합은 보그래프의 클릭이고 정점 덮개의 여집합이므로, 판정 판본은 [클릭 문제](clique-problem.md)와 [정점 덮개 문제](vertex-cover.md)처럼 NP(nondeterministic polynomial time)-완전이다. 근사의 어려움은 클릭 문제의 $n^{1-\varepsilon}$ 하한을 그대로 따르고, 정점 덮개의 2-근사는 옮겨지지 않는다.
-
 시험 시간표를 짠다. 과목을 정점으로 두고, 두 과목을 함께 듣는 학생이 있으면 두 정점을 간선으로 잇는다. 한 시간대에 함께 시험을 치를 수 있는 과목들은 서로 이웃하지 않는 정점들이다. 한 시간대에 과목을 가장 많이 넣으려면 서로 이웃하지 않는 정점을 가장 많이 골라야 한다.
 
 정점을 하나 고르면 그 이웃은 더 고를 수 없으니 지운다. 별 모양 그래프에서 가운데 정점을 먼저 고르면 나머지가 전부 지워져 정점 하나에서 끝난다. 가장자리 정점을 먼저 고르면 가운데 정점만 지워지고 가장자리 $n-1$ 개를 모두 고른다. 그래서 매번 이웃이 가장 적은 정점을 고른다.
@@ -16,11 +14,13 @@
 
 # 정의
 
-그래프 $G=(V,E)$ 에서 $S\subseteq V$ 의 어느 두 정점 $u,v$ 에 대해서도 $uv\notin E$ 이면 $S$ 를 독립집합이라 한다. 안정집합(stable set)이라고도 한다. 더 큰 독립집합에 포함되지 않는 독립집합을 **극대 독립집합(maximal independent set)** 이라 하고, 크기가 $\alpha(G)$ 인 독립집합을 **최대 독립집합(maximum independent set)** 이라 한다.
+그래프 $G=(V,E)$ 에서 $S\subseteq V$ 의 어느 두 정점 $u,v$ 에 대해서도 $uv\notin E$ 이면 $S$ 를 독립집합이라 한다. 안정집합(stable set)이라고도 한다. 더 큰 독립집합에 포함되지 않는 독립집합을 **극대 독립집합(maximal independent set)** 이라 한다. 가장 큰 독립집합의 크기를 **독립수(independence number)** $\alpha(G)$ 라 하고, 크기가 $\alpha(G)$ 인 독립집합을 **최대 독립집합(maximum independent set)** 이라 한다. $\alpha(G)$ 를 구하거나 크기 $k$ 의 독립집합이 있는지 판정하는 문제를 **독립집합 문제(independent set problem)** 라 한다.
+
+직관의 별 모양 그래프에서 가운데 정점 하나로 된 집합은 극대 독립집합이다. 다른 정점은 모두 가운데와 이웃하므로 더 넣을 수 없다. 가장자리 $n-1$ 개의 집합은 최대 독립집합이고 $\alpha=n-1$ 이다.
 
 - 정점마다 가중치 $w_v\ge 0$ 이 있으면 가중치의 합을 최대화하는 가중 판본이 된다.
-- 보그래프(complement graph) $\overline G$ 에서 $S$ 는 클릭이므로 $\alpha(G)=\omega(\overline G)$ 다.
-- $V\setminus S$ 는 정점 덮개이므로 $\alpha(G)=\lvert V\rvert-\tau(G)$ 다.
+- 보그래프(complement graph) $\overline G$ 에서 $S$ 는 클릭이므로 $\alpha(G)=\omega(\overline G)$ 다. $\omega$ 는 가장 큰 클릭의 크기다. 별 모양 그래프의 보그래프에서 가장자리 $n-1$ 개는 서로 모두 이어져 있다.
+- $V\setminus S$ 는 [정점 덮개 문제](vertex-cover.md)의 정점 덮개이므로 $\alpha(G)=\lvert V\rvert-\tau(G)$ 다. $\tau$ 는 가장 작은 정점 덮개의 크기다. 별 모양 그래프에서는 가운데 정점 하나가 모든 간선을 덮어 $\tau=1$ 이고 $\alpha=n-1$ 이다.
 
 정수계획으로 쓰면 다음과 같다.
 
@@ -45,6 +45,10 @@ $$
 직관 절의 탐욕 방법도 이 합 이상을 고른다. 차수가 가장 작은 정점 $v$ 와 그 이웃은 차수가 모두 $d(v)$ 이상이므로 지워지는 정점들의 항의 합이 $1$ 이하이고, 남은 정점의 차수는 줄기만 하므로 남은 항은 커진다. 귀납법으로 결론이 나온다.
 
 $1/(x+1)$ 이 볼록 함수이므로 [Jensen 부등식](jensen-inequality.md)으로 평균 차수 $\bar d$ 에 대해 $\alpha(G)\ge n/(\bar d+1)$ 을 얻는다. 이 부등식을 보그래프로 옮기면 [Turán 정리](turan-theorem.md)의 간선 수 상한과 동치다.
+
+## 계산 복잡도
+
+독립집합은 보그래프의 클릭이고 정점 덮개의 여집합이므로, 판정 판본은 [클릭 문제](clique-problem.md)와 정점 덮개 문제처럼 NP(nondeterministic polynomial time)-완전이다.
 
 ## 근사의 한계
 
