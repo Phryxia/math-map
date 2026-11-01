@@ -2,23 +2,21 @@
 
 # 개요
 
-**Σ¹₁ 경계 정리(Σ¹₁ bounding theorem)** 는 무한히 내려가는 가지가 없는 나무들을 $\Sigma^1_1$ 로 정의되는 모임으로 모으면, 그 나무들의 높이에 Church–Kleene 서수 $\omega_1^{\mathrm{CK}}$ 보다 작은 공통 상한이 있다는 정리다. 계산가능한 나무 가운데 무한히 내려가는 가지가 없는 것을 전부 모으면 나무마다 높이는 $\omega_1^{\mathrm{CK}}$ 보다 작지만 높이의 상한은 $\omega_1^{\mathrm{CK}}$ 에 닿는다. 이 정리는 모임이 $\Sigma^1_1$ 이면 이런 일이 생기지 않음을 보이므로, 그런 나무 전체의 모임이 $\Sigma^1_1$ 이 아니라는 것이 높이의 상한으로 증명된다.
+**Σ¹₁ 경계 정리(Σ¹₁ bounding theorem)** 는 무한히 내려가는 가지가 없는 나무들을 $\Sigma^1_1$ 로 정의되는 모임으로 모으면, 그 나무들의 높이에 Church–Kleene 서수(Church–Kleene ordinal) $\omega_1^{\mathrm{CK}}$ 보다 작은 공통 상한이 있다는 정리다. 계산가능한 나무 가운데 무한히 내려가는 가지가 없는 것을 전부 모으면 나무마다 높이는 $\omega_1^{\mathrm{CK}}$ 보다 작지만 높이의 상한은 $\omega_1^{\mathrm{CK}}$ 에 닿는다. 이 정리는 모임이 $\Sigma^1_1$ 이면 이런 일이 생기지 않음을 보이므로, 그런 나무 전체의 모임이 $\Sigma^1_1$ 이 아니라는 것이 높이의 상한으로 증명된다.
 
 # 직관
 
-Σ¹₁ 경계 정리는 정렬근거 나무들의 $\Sigma^1_1$ 집합에 속한 나무의 순위가 Church–Kleene 서수 $\omega_1^{\mathrm{CK}}$ 미만의 한 서수에서 유계라는 정리다. 개별 나무의 순위가 모두 $\omega_1^{\mathrm{CK}}$ 미만이라는 것에서 공통 상한이 따라 나오지는 않고, 집합이 $\Sigma^1_1$ 이라는 조건이 그 상한을 준다.
+$\omega_1^{\mathrm{CK}}$ 는 계산가능한 정렬순서의 순서형 전체의 상한으로 정의된다. 계산가능한 나무 가운데 무한히 내려가는 가지가 없는 것을 하나 받아 노드를 Kleene–Brouwer 순서(Kleene–Brouwer order)로 줄 세우면, 순서형이 나무의 높이 이상인 계산가능한 정렬순서가 나온다. 그래서 그 높이는 $\omega_1^{\mathrm{CK}}$ 보다 작다.
 
-정렬근거 조건은 $\Pi^1_1$ 이므로 이 정리가 $\Sigma^1_1$ 과 $\Pi^1_1$ 의 비대칭을 서수의 말로 바꾼다. [초산술적 계층](hyperarithmetical-hierarchy.md)에서 $\Delta^1_1$ 이 초산술적 집합과 같다는 Kleene 정리의 증명이 이 정리를 쓴다.
-
-계산가능한 정렬순서의 순서형을 전부 모으면 그 상한이 $\omega_1^{\mathrm{CK}}$ 다. 정의가 그렇다. 그러므로 "원소마다 순위가 $\omega_1^{\mathrm{CK}}$ 미만" 이라는 조건만으로는 상한이 $\omega_1^{\mathrm{CK}}$ 보다 작아지지 않는다. 실제로 $\mathcal O$ 전체는 원소마다 표기하는 서수가 $\omega_1^{\mathrm{CK}}$ 미만이면서 상한은 $\omega_1^{\mathrm{CK}}$ 에 닿는다.
-
-그러면 어떤 집합에서 상한이 떨어지는지 묻게 된다. $\Sigma^1_1$ 집합 $A$ 가 정렬근거 나무만 담고 상한이 $\omega_1^{\mathrm{CK}}$ 에 닿는다고 하자. 그러면 "나무 $T$ 의 순위가 $A$ 의 어떤 원소의 순위 이하다" 라는 조건이 $\Sigma^1_1$ 로 쓰이고, 상한이 $\omega_1^{\mathrm{CK}}$ 이므로 이 조건은 $T$ 가 정렬근거라는 것과 같아진다. 정렬근거 나무 전체가 $\Sigma^1_1$ 이 되어 버리는데, 그 집합은 $\Pi^1_1$ 완전이므로 $\Sigma^1_1$ 이 아니다. 따라서 상한이 $\omega_1^{\mathrm{CK}}$ 에 닿을 수 없다.
+계산가능한 정렬순서마다 그 순서를 따라 내려가는 유한열 전체가 같은 높이의 계산가능한 나무를 이룬다. 그래서 그런 나무를 전부 모으면 높이의 상한은 $\omega_1^{\mathrm{CK}}$ 에 닿는다. 나무마다 높이가 $\omega_1^{\mathrm{CK}}$ 보다 작다는 것만으로는 공통 상한이 작아지지 않는다. 그러면 어떤 모임에서 높이의 상한이 $\omega_1^{\mathrm{CK}}$ 보다 작아지는지가 물음으로 남는다.
 
 # 정의
 
 ## 나무와 정렬근거
 
-자연수의 유한열 집합 $T$ 가 시작 구간에 대해 닫혀 있으면 **나무**라 한다. $T$ 가 무한 분지를 갖지 않으면, 곧 모든 $n$ 에서 $f\restriction n\in T$ 인 함수 $f:\mathbb N\to\mathbb N$ 이 없으면 **정렬근거**라 한다.
+자연수의 유한열 집합 $T$ 가 시작 구간에 대해 닫혀 있으면 **나무(tree)** 라 한다. $T$ 가 무한 분지를 갖지 않으면, 곧 모든 $n$ 에서 $f\restriction n\in T$ 인 함수 $f:\mathbb N\to\mathbb N$ 이 없으면 **정렬근거(well-founded)** 라 한다.
+
+$T_1=\lbrace\langle\thinspace\rangle,\langle 0\rangle,\langle 1\rangle,\langle 1,0\rangle\rbrace$ 은 정렬근거 나무다. $0$ 만으로 된 유한열 전체는 나무이지만 $f(n)=0$ 이 무한 분지이므로 정렬근거가 아니다. 순감소하는 유한열 $\langle a_0,\dots,a_k\rangle$, $a_0\gt a_1\gt\cdots\gt a_k$ 전체의 나무 $D$ 는 자연수의 무한 감소열이 없으므로 정렬근거다.
 
 정렬근거 나무 전체의 집합을 $\mathrm{WF}$ 로 적는다. 정렬근거 조건은 함수에 대한 전칭이므로 $\mathrm{WF}$ 는 $\Pi^1_1$ 이다.
 
@@ -30,35 +28,35 @@ $$
 \mathrm{rk}\_T(\sigma)=\sup\lbrace \mathrm{rk}\_T(\sigma n)+1: \sigma n\in T\rbrace
 $$
 
-말단 노드에서 값이 $0$ 이고, 나무의 **순위**는 $\mathrm{rk}(T)=\mathrm{rk}\_T(\langle\thinspace\rangle)$ 다. 정렬근거가 아니면 이 귀납이 끝나지 않으므로 순위는 정렬근거 나무에서만 정의된다.
+말단 노드에서 값이 $0$ 이고, 나무의 **순위(rank)** 는 $\mathrm{rk}(T)=\mathrm{rk}\_T(\langle\thinspace\rangle)$ 다. 정렬근거가 아니면 이 귀납이 끝나지 않으므로 순위는 정렬근거 나무에서만 정의된다.
 
-$T$ 가 계산가능하고 정렬근거이면 $\mathrm{rk}(T)\lt \omega_1^{\mathrm{CK}}$ 다. 나무의 노드를 순위로 정렬하면 계산가능한 정렬순서가 되기 때문이다.
+$T_1$ 에서 말단 $\langle 0\rangle$, $\langle 1,0\rangle$ 의 순위는 $0$, $\langle 1\rangle$ 은 $1$ 이고 $\mathrm{rk}(T_1)=\max(0+1,1+1)=2$ 다. $D$ 에서 $\langle n\rangle$ 의 순위는 $n$ 이므로 $\mathrm{rk}(D)=\sup\lbrace n+1\rbrace=\omega$ 다. 직관 절의 높이가 이 순위다.
 
 # 성질
 
 ## 경계 정리
 
-> **정리.** $A\subseteq\mathrm{WF}$ 가 $\Sigma^1_1$ 이면 $\sup\lbrace \mathrm{rk}(T):T\in A\rbrace\lt \omega_1^{\mathrm{CK}}$ 다.[^1]
+$A\subseteq\mathrm{WF}$ 가 $\Sigma^1_1$ 이면 $\sup\lbrace \mathrm{rk}(T):T\in A\rbrace\lt \omega_1^{\mathrm{CK}}$ 다.[^1]
 
-증명은 $\mathrm{WF}$ 가 $\Sigma^1_1$ 이 아니라는 사실로 돌린다. 상한이 $\omega_1^{\mathrm{CK}}$ 라고 하자. 나무 $T$ 에 대해 다음 조건을 세운다.
+증명에는 $\mathrm{WF}$ 가 $\Sigma^1_1$ 이 아니라는 사실을 쓴다. 상한이 $\omega_1^{\mathrm{CK}}$ 라고 하자. 나무 $T$ 에 대해 다음 조건을 세운다.
 
 $$
 \exists S\thinspace\bigl(S\in A\thinspace\wedge\thinspace T\le\_{\mathrm{rk}} S\bigr)
 $$
 
-여기서 $T\le\_{\mathrm{rk}} S$ 는 $T$ 에서 $S$ 로 가는 순서보존 사상의 존재이고, $S$ 가 정렬근거일 때 $\mathrm{rk}(T)\le\mathrm{rk}(S)$ 와 동치다. 이 사상의 존재는 함수에 대한 존재 한정기호 하나이므로 조건 전체가 $\Sigma^1_1$ 이다.
+여기서 $T\le\_{\mathrm{rk}} S$ 는 $T$ 에서 $S$ 로 가는 순서보존 사상의 존재이고, $S$ 가 정렬근거일 때 $\mathrm{rk}(T)\le\mathrm{rk}(S)$ 와 동치다. 이 사상의 존재는 함수에 대한 존재 한정사(existential quantifier) 하나이므로 조건 전체가 $\Sigma^1_1$ 이다.
 
 조건을 만족하는 $T$ 는 정렬근거 나무에 순서보존으로 들어가므로 정렬근거다. 역으로 $T$ 가 정렬근거이면 $\mathrm{rk}(T)\lt \omega_1^{\mathrm{CK}}$ 이고 상한 가정에서 $\mathrm{rk}(T)\le\mathrm{rk}(S)$ 인 $S\in A$ 가 있다. 따라서 조건은 $\mathrm{WF}$ 를 정의하고 $\mathrm{WF}$ 가 $\Sigma^1_1$ 이 된다. 이것이 모순이다.
 
 ## 정렬근거 나무의 Π¹₁ 완전성
 
-> **정리.** $\mathrm{WF}$ 는 $\Pi^1_1$ 완전이고 $\Sigma^1_1$ 이 아니다.
+$\mathrm{WF}$ 는 $\Pi^1_1$ 완전($\Pi^1_1$-complete)이고 $\Sigma^1_1$ 이 아니다.
 
-완전성은 임의의 $\Pi^1_1$ 집합을 나무의 족으로 정규화해 얻는다. $\Pi^1_1$ 조건 $\forall f\thinspace\theta(x,f)$ 에서 $\theta$ 의 반례가 되는 유한 근사들을 모아 나무 $T_x$ 를 만들면, $x$ 가 조건을 만족하는 것과 $T_x$ 가 정렬근거인 것이 같다. $\mathrm{WF}$ 가 $\Sigma^1_1$ 이면 $\Pi^1_1\subseteq\Sigma^1_1$ 이 되어 두 층이 무너지므로 $\Sigma^1_1$ 이 아니다.
+완전성은 임의의 $\Pi^1_1$ 집합을 나무의 족으로 정규화해 얻는다. $\Pi^1_1$ 조건 $\forall f\thinspace\theta(x,f)$ 에서 $\theta$ 의 반례가 되는 유한 근사들을 모아 나무 $T_x$ 를 만들면, $x$ 가 조건을 만족하는 것과 $T_x$ 가 정렬근거인 것이 같다. $\mathrm{WF}$ 가 $\Sigma^1_1$ 이면 모든 $\Pi^1_1$ 집합이 $\Sigma^1_1$ 이 된다. 보편 $\Pi^1_1$ 집합에 대각선 논법을 쓰면 $\Sigma^1_1$ 이 아닌 $\Pi^1_1$ 집합이 존재하므로, $\mathrm{WF}$ 는 $\Sigma^1_1$ 이 아니다.
 
 ## Kunen–Martin 정리
 
-> **정리.** 정렬근거인 $\Sigma^1_1$ 관계의 순위는 $\omega_1$ 미만이다.
+Kunen–Martin 정리(Kunen–Martin theorem)에 따르면 정렬근거인 $\Sigma^1_1$ 관계의 순위는 $\omega_1$ 미만이다.
 
 경계 정리를 관계로 옮긴 판이다. 관계 $\prec$ 의 감소열의 유한 근사를 노드로 하는 나무를 세우면 $\prec$ 의 정렬근거성이 그 나무의 정렬근거성과 같고, $\Sigma^1_1$ 조건에서 나무들의 순위가 유계가 된다. 효과적 판본에서 상한은 $\omega_1^{\mathrm{CK}}$ 이고, 매개변수를 허용한 상대화 판본에서 $\omega_1$ 이다.
 
@@ -66,15 +64,15 @@ $$
 
 ## Kleene 정리의 한쪽 포함
 
-$\Delta^1_1$ 집합이 초산술적이라는 포함에서 이 정리를 쓴다. $A$ 와 여집합이 모두 $\Sigma^1_1$ 이면 각각 계산가능한 나무의 족으로 정규형을 갖고, $x\notin A$ 를 증언하는 나무들이 전부 정렬근거이므로 그 족이 $\Sigma^1_1$ 부분집합을 이룬다. 경계 정리가 순위들을 $\omega_1^{\mathrm{CK}}$ 미만의 한 서수로 묶고, 그 서수의 표기 $a$ 에서 $A\le_T H_a$ 가 나온다.
+[초산술적 계층](hyperarithmetical-hierarchy.md)에서 $\Delta^1_1$ 집합이 초산술적 집합과 같다는 Kleene 정리(Kleene's theorem)의 한쪽 포함, 곧 $\Delta^1_1$ 집합이 초산술적이라는 포함에서 이 정리를 쓴다. $A$ 와 여집합이 모두 $\Sigma^1_1$ 이면 각각 계산가능한 나무의 족으로 정규형을 갖고, $x\notin A$ 를 증언하는 나무들이 전부 정렬근거이므로 그 족이 $\Sigma^1_1$ 부분집합을 이룬다. 경계 정리에 따라 순위들이 $\omega_1^{\mathrm{CK}}$ 미만의 한 서수 아래에 있고, 그 서수의 표기 $a$ 에서 $A\le_T H_a$ 가 나온다.
 
 ## 순위 분석
 
-$\Pi^1_1$ 집합을 순위에 따라 $\omega_1^{\mathrm{CK}}$ 개의 조각으로 쪼개는 데 쓴다. $\mathrm{WF}$ 를 순위 $\alpha$ 미만인 나무들로 자른 $\mathrm{WF}\_\alpha$ 는 각 $\alpha\lt \omega_1^{\mathrm{CK}}$ 에서 초산술적이고, 경계 정리가 $\Sigma^1_1$ 부분집합이 어느 조각 안에 갇힌다고 말한다. [해석적 계층](analytical-hierarchy.md)의 $\Pi^1_1$ 집합에 대한 구조 정리들이 이 분해 위에 선다.
+$\Pi^1_1$ 집합을 순위에 따라 $\omega_1^{\mathrm{CK}}$ 개의 조각으로 쪼개는 데 쓴다. $\mathrm{WF}$ 를 순위 $\alpha$ 미만인 나무들로 자른 $\mathrm{WF}\_\alpha$ 는 각 $\alpha\lt \omega_1^{\mathrm{CK}}$ 에서 초산술적이고, 경계 정리에 따라 $\mathrm{WF}$ 의 $\Sigma^1_1$ 부분집합은 어느 한 $\mathrm{WF}\_\alpha$ 에 포함된다. [해석적 계층](analytical-hierarchy.md)의 $\Pi^1_1$ 집합에 대한 구조 정리들이 이 분해를 쓴다.
 
 ## 역수학에서의 대응
 
-$\Sigma^1_1$ 경계 정리는 초한 재귀를 산술적 논리식에 허용하는 체계 $\mathrm{ATR}\_0$(arithmetical transfinite recursion)에서 증명되고 더 약한 체계에서는 증명되지 않는다.[^2] [역수학](reverse-mathematics.md)의 큰 다섯 체계 가운데 $\mathrm{ATR}\_0$ 을 특징짓는 진술이고, 가산 정렬순서 둘의 비교가능성과 같은 자리에 선다.
+$\Sigma^1_1$ 경계 정리는 초한 재귀를 산술적 논리식에 허용하는 체계 $\mathrm{ATR}\_0$(arithmetical transfinite recursion)에서 증명되고 더 약한 체계에서는 증명되지 않는다.[^2] [역수학](reverse-mathematics.md)의 큰 다섯 체계 가운데 $\mathrm{ATR}\_0$ 을 특징짓는 진술이고, 가산 정렬순서 둘의 비교가능성과 함께 $\mathrm{ATR}\_0$ 과 동치인 진술이다.
 
 [^1]: G. E. Sacks, *Higher Recursion Theory* (1990), II.5 — 경계 정리와 그 상대화. Kleene 정리는 II.2.
 
