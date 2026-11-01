@@ -6,14 +6,6 @@
 
 # 직관
 
-Novikov 추측은 닫힌 방향 다양체 $M$ 과 연속사상 $f\colon M\to BG$ 에 대해, 고차 부호수
-
-$$
-\mathrm{sign}\_x(M,f)=\langle L(M)\cup f^\ast x,\lbrack M\rbrack\rangle\qquad(x\in H^\ast(BG;\mathbb Q))
-$$
-
-가 방향을 보존하는 호모토피 동치에서 바뀌지 않는다는 추측이다. $L(M)$ 은 Hirzebruch 부호수 정리의 $L$ 류이고, $BG$ 는 이산군 $G$ 의 [분류공간](classifying-spaces.md)이다. Novikov 가 1970 년에 제시했다[^1].
-
 Hirzebruch 부호수 정리는 $\mathrm{sign}(M)=\langle L(M),\lbrack M\rbrack\rangle$ 이다. 좌변은 코호몰로지의 컵곱만으로 정해지므로 호모토피 동치에서 바뀌지 않는다. 우변의 [Pontryagin 류](pontryagin-classes.md)는 하나하나가 호모토피 불변이 아니지만 $L$ 류를 기본류에 짝지은 이 수 하나는 불변이다. $L(M)$ 에 다른 코호몰로지류를 곱해 짝지은 수도 불변인지 묻는다.
 
 $f\colon M\to S^1$ 이 매끄럽고 한 점 $p$ 가 정칙값이면 $N=f^{-1}(p)$ 는 법다발이 자명한 여차원 $1$ 의 닫힌 부분다양체다. $x$ 를 $H^1(S^1;\mathbb Q)$ 의 생성원으로 두면 $f^\ast x$ 는 $N$ 의 [Poincaré 쌍대](poincare-duality.md)이고
@@ -22,13 +14,22 @@ $$
 \langle L(M)\cup f^\ast x,\lbrack M\rbrack\rangle=\langle L(M)\vert\_N,\lbrack N\rbrack\rangle=\mathrm{sign}(N)
 $$
 
-이다. 이 수는 $M$ 을 원 위로 보낸 사상의 올 $N$ 의 부호수다. $M$ 을 호모토피 동치인 다른 다양체로 바꾸면 올이 바뀌는데도 이 부호수가 같다는 것을 Novikov 가 증명했다. $S^1=B\mathbb Z$ 이므로 이것이 $G=\mathbb Z$ 인 경우의 Novikov 추측이다.
+이다. 이 수는 $M$ 을 원 위로 보낸 사상의 올 $N$ 의 부호수다. $M$ 을 호모토피 동치인 다른 다양체로 바꾸면 올이 바뀌는데도 이 부호수가 같다는 것을 Novikov 가 증명했다. 원 대신 다른 공간으로 가는 사상과 다른 코호몰로지류로 같은 물음을 던진 것이 Novikov 추측이다.
 
 # 정의
 
 ## 고차 부호수
 
-$G$ 를 이산군, $M$ 을 닫힌 방향 매끄러운 다양체, $f\colon M\to BG$ 를 연속사상이라 하자. 유리 코호몰로지류 $x\in H^\ast(BG;\mathbb Q)$ 마다 위의 $\mathrm{sign}\_x(M,f)$ 를 $x$ 에 대한 **고차 부호수(higher signature)** 라 한다. $x=1$ 이면 보통의 부호수다.
+$G$ 를 이산군, $BG$ 를 그 [분류공간](classifying-spaces.md), $M$ 을 닫힌 방향 매끄러운 다양체, $f\colon M\to BG$ 를 연속사상이라 하자. 유리 코호몰로지류 $x\in H^\ast(BG;\mathbb Q)$ 마다
+
+$$
+\mathrm{sign}\_x(M,f)=\langle L(M)\cup f^\ast x,\lbrack M\rbrack\rangle
+$$
+
+를 $x$ 에 대한 **고차 부호수(higher signature)** 라 한다. $L(M)$ 은 Hirzebruch 부호수 정리의 $L$ 류다.
+
+- $x=1$ 이면 Hirzebruch 부호수 정리에 따라 보통의 부호수 $\mathrm{sign}(M)$ 이다.
+- $G=\mathbb Z$ 이면 $B\mathbb Z=S^1$ 이고, $x$ 가 $H^1(S^1;\mathbb Q)$ 의 생성원이면 직관의 계산으로 $\mathrm{sign}\_x(M,f)=\mathrm{sign}(N)$ 이다.
 
 ## 추측의 진술
 
@@ -38,7 +39,10 @@ $$
 \mathrm{sign}\_x(M',f\circ h)=\mathrm{sign}\_x(M,f)
 $$
 
-이다.
+이다. Novikov 가 1970 년에 제시했다[^1].
+
+- 자명군 $G=1$ 은 $H^\ast(BG;\mathbb Q)$ 가 $x=1$ 뿐이므로 Novikov 추측을 만족한다. 부호수는 컵곱만으로 정해져 호모토피 불변이다.
+- 직관의 Novikov 정리는 $G=\mathbb Z$ 가 Novikov 추측을 만족한다는 진술이다.
 
 # 성질
 
@@ -51,7 +55,7 @@ $$
 - 자유 아벨군에서 Lusztig 이 증명했다[^3].
 - 연결 [Lie 군](lie-groups.md)의 이산 부분군에서 Kasparov 가 증명했다[^2].
 - [쌍곡군](hyperbolic-groups.md)에서 Connes–Moscovici 가 증명했다[^4].
-- [Hilbert 공간](hilbert-spaces.md)에 거친 매장(coarse embedding)을 갖는 유한생성 군에서 Yu 가 증명했다[^5]. [Haagerup 성질](haagerup-property.md)을 갖는 군과 순종군이 이 범위에 든다.
+- [Hilbert 공간](hilbert-spaces.md)에 거친 매장(coarse embedding)을 갖는 유한생성 군에서 Yu 가 증명했다[^5]. [Haagerup 성질](haagerup-property.md)을 갖는 군과 순종군(amenable group)이 이 범위에 든다.
 
 # 활용
 
