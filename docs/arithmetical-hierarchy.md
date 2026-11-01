@@ -6,9 +6,7 @@
 
 # 직관
 
-산술적 계층은 자연수 집합을 정의하는 식의 한정사 교대 횟수로 집합에 등급을 매기는 계층이다. 결정 불가능한 문제라도 난이도가 같지 않다. [정지 문제](halting-problem.md)는 답이 "예" 일 때 증거를 제시할 수 있지만, 기계가 모든 입력에서 멈추는지 묻는 문제는 답이 "예" 여도 제시할 증거가 없다. $n$ 번째 층은 [Turing 도약](turing-degrees.md)을 $n$ 번 반복한 차수에 대응한다.
-
-정지 문제는 결정할 수 없지만, 기계 $e$ 가 입력 $0$ 에서 멈추는 경우라면 기계를 돌려 멈춘 단계 수를 제시하면 누구나 검산한다. 기계가 모든 입력에서 멈추는지 묻는 문제는 답이 "예" 여도 제시할 것이 없다. 입력 $0,1,2$ 를 차례로 확인해 나갈 수는 있지만, 입력마다 멈춘 단계 수를 따로 찾아야 하고 입력이 무한히 많아 이 확인은 끝나지 않는다.
+[정지 문제](halting-problem.md)는 결정할 수 없지만, 기계 $e$ 가 입력 $0$ 에서 멈추는 경우라면 기계를 돌려 멈춘 단계 수를 제시하면 누구나 검산한다. 기계가 모든 입력에서 멈추는지 묻는 문제는 답이 "예" 여도 제시할 것이 없다. 입력 $0,1,2$ 를 차례로 확인해 나갈 수는 있지만, 입력마다 멈춘 단계 수를 따로 찾아야 하고 입력이 무한히 많아 이 확인은 끝나지 않는다.
 
 두 물음을 문장으로 풀어 쓰면 앞의 것은 "어떤 $s$ 가 있어서 기계 $e$ 가 $s$ 단계 안에 멈춘다" 다. 뒤의 것은 "모든 $n$ 에 대해 어떤 $s$ 가 있어서 기계 $e$ 가 입력 $n$ 에서 $s$ 단계 안에 멈춘다" 다. 따옴표 안쪽의 "$s$ 단계 안에 멈춘다" 는 둘 다 유한 번 계산으로 판정되고, 다른 것은 그 앞에 붙은 "어떤" 과 "모든" 의 배열뿐이다. "어떤" 과 "모든" 이 몇 번 번갈아 나오는지를 세면 층이 매겨진다.
 
@@ -16,7 +14,7 @@
 
 ## 논리식의 층
 
-한정기호가 $\forall i\lt t$, $\exists i\lt t$ 꼴로만 나오는 [산술 논리식](peano-axioms.md)을 $\Delta^0_0$ 논리식이라 한다. 이런 논리식의 진릿값은 유한 번 계산으로 판정된다.
+한정기호가 $\forall i\lt t$, $\exists i\lt t$ 꼴로만 나오는 [산술 논리식](peano-axioms.md)을 $\Delta^0_0$ 논리식 또는 유계 논리식(bounded formula)이라 한다. 이런 논리식의 진릿값은 유한 번 계산으로 판정된다.
 
 나머지 층은 $\Delta^0_0$ 위에 한정기호를 번갈아 붙여 정한다.
 
@@ -24,13 +22,15 @@ $$
 \Sigma^0_{n+1}=\lbrace \exists m\thinspace \varphi:\varphi\in\Pi^0_n\rbrace,\qquad \Pi^0_{n+1}=\lbrace \forall m\thinspace \varphi:\varphi\in\Sigma^0_n\rbrace
 $$
 
-같은 종류의 한정기호가 이어지면 쌍함수 $\langle\cdot,\cdot\rangle$ 로 하나로 합치므로 층은 교대 횟수만으로 정해진다.
+같은 종류의 한정기호가 이어지면 쌍함수(pairing function) $\langle\cdot,\cdot\rangle$ 로 하나로 합치므로 층은 교대 횟수만으로 정해진다.
 
 집합 $A\subseteq\mathbb N$ 이 $\Sigma^0_n$ 이라는 것은 $A=\lbrace x:\varphi(x)\rbrace$ 인 $\Sigma^0_n$ 논리식 $\varphi$ 가 있다는 뜻이다. $\Pi^0_n$ 도 같다. 두 쪽에 모두 속하면 $\Delta^0_n$ 이라 하고, 어떤 $n$ 에 대해 $\Sigma^0_n$ 인 집합을 **산술적 집합(arithmetical set)** 이라 한다.
 
+직관 절의 첫 물음 "어떤 $s$ 가 있어서 기계 $e$ 가 입력 $0$ 에서 $s$ 단계 안에 멈춘다" 는 $\Delta^0_0$ 핵 앞에 $\exists$ 하나가 붙으므로 $\Sigma^0_1$ 이다. 둘째 물음 "모든 $n$ 에 대해 어떤 $s$ 가 있어서 기계 $e$ 가 입력 $n$ 에서 $s$ 단계 안에 멈춘다" 는 $\forall\exists$ 가 붙으므로 $\Pi^0_2$ 이다.
+
 ## 낮은 층의 이름
 
-$\Delta^0_1$ 은 계산 가능한 집합이고 $\Sigma^0_1$ 은 재귀적 열거 가능한(recursively enumerable) 집합이다. 정지 문제 $K=\lbrace e:\Phi_e(e)\thinspace\text{가 멈춘다}\rbrace$ 가 $\Sigma^0_1$ 이고 그 여집합이 $\Pi^0_1$ 이다. [재귀함수](recursive-functions.md)의 Kleene 정규형 정리로 $e\in K$ 는 $\exists y\thinspace T(e,e,y)$ 로 적히고, 원시 재귀 술어 $T$ 는 $\Delta^0_1$ 이므로 $K$ 는 $\Sigma^0_1$ 이다.
+$\Delta^0_1$ 은 계산 가능한 집합이고 $\Sigma^0_1$ 은 재귀적 열거 가능한(recursively enumerable) 집합이다. 정지 문제 $K=\lbrace e:\Phi_e(e)\thinspace\text{가 멈춘다}\rbrace$ 가 $\Sigma^0_1$ 이고 그 여집합이 $\Pi^0_1$ 이다. [재귀함수](recursive-functions.md)의 Kleene 정규형 정리(Kleene normal form theorem)로 $e\in K$ 는 $\exists y\thinspace T(e,e,y)$ 로 적히고, 원시 재귀 술어 $T$ 는 $\Delta^0_1$ 이므로 $K$ 는 $\Sigma^0_1$ 이다.
 
 ## 상대화
 
@@ -41,28 +41,28 @@ $\Delta^0_1$ 은 계산 가능한 집합이고 $\Sigma^0_1$ 은 재귀적 열거
 ## 포함 관계
 
 $$
-\Sigma^0_n\cup\Pi^0_n\ \subseteq\ \Delta^0_{n+1}\ \subseteq\ \Sigma^0_{n+1}\cap\Pi^0_{n+1}
+\Sigma^0_n\cup\Pi^0_n\thinspace\subseteq\thinspace\Delta^0_{n+1}\thinspace\subseteq\thinspace\Sigma^0_{n+1}\cap\Pi^0_{n+1}
 $$
 
 논리식 앞에 쓰이지 않는 한정기호를 덧붙이면 층이 하나 올라가므로 왼쪽 포함이 성립한다. 오른쪽은 $\Delta$ 의 정의다.
 
 ## 계층의 엄격성
 
-**정리(Kleene).** 모든 $n\ge 1$ 에서 $\Sigma^0_n\ne\Pi^0_n$ 이고, 따라서 위 포함은 모두 진부분집합이다.[^1]
+모든 $n\ge 1$ 에서 $\Sigma^0_n\ne\Pi^0_n$ 이고, 따라서 위 포함은 모두 진부분집합이다. 이것이 Kleene 의 계층 정리(hierarchy theorem)다.[^1]
 
-증명은 대각선 논법이다. 각 $n$ 에 보편 집합 $U_n\in\Sigma^0_n$ 이 있어 모든 $\Sigma^0_n$ 집합 $A$ 에 대해 $A=\lbrace x:\langle e,x\rangle\in U_n\rbrace$ 인 $e$ 가 존재한다. $D=\lbrace e:\langle e,e\rangle\in U_n\rbrace$ 로 두면 $D\in\Sigma^0_n$ 이다. $D$ 의 여집합이 $\Sigma^0_n$ 이라면 그것을 주는 지표 $d$ 가 있고, $d\in D$ 와 $d\notin D$ 가 동치가 되어 모순이다. ∎
+증명은 대각선 논법이다. 각 $n$ 에 보편 집합 $U_n\in\Sigma^0_n$ 이 있어 모든 $\Sigma^0_n$ 집합 $A$ 에 대해 $A=\lbrace x:\langle e,x\rangle\in U_n\rbrace$ 인 $e$ 가 존재한다. $D=\lbrace e:\langle e,e\rangle\in U_n\rbrace$ 로 두면 $D\in\Sigma^0_n$ 이다. $D$ 의 여집합이 $\Sigma^0_n$ 이라면 그것을 주는 지표 $d$ 가 있고, $d\in D$ 와 $d\notin D$ 가 동치가 되어 모순이다.
 
 ## Post 정리
 
-**정리(Post).** $A\in\Sigma^0_{n+1}$ 인 것과 $A$ 가 $\emptyset^{(n)}$ 에 대해 재귀적 열거 가능한 것이 동치다. 또 $A\in\Delta^0_{n+1}$ 인 것과 $A\le_T\emptyset^{(n)}$ 인 것이 동치다.[^2]
+Post 정리(Post's theorem)는 다음이다. $\emptyset^{(n)}$ 을 공집합에 [Turing 도약](turing-degrees.md)을 $n$ 번 한 집합이라 하면, $A\in\Sigma^0_{n+1}$ 인 것과 $A$ 가 $\emptyset^{(n)}$ 에 대해 재귀적 열거 가능한 것이 동치다. 또 $A\in\Delta^0_{n+1}$ 인 것과 $A\le_T\emptyset^{(n)}$ 인 것이 동치다.[^2]
 
-$n=0$ 은 $\Sigma^0_1$ 집합이 재귀적 열거 가능하다는 정의다. 귀납 단계는 신탁 $X$ 를 쓰는 계산이 멈추는지가 $X$ 에 대해 $\Sigma^0_1$ 이라는 사실과, $\Pi^0_n$ 집합을 신탁으로 쓰는 것이 $\Sigma^0_n$ 집합을 신탁으로 쓰는 것과 같다는 사실을 쓴다. ∎
+$n=0$ 은 $\Sigma^0_1$ 집합이 재귀적 열거 가능하다는 정의다. 귀납 단계는 신탁 $X$ 를 쓰는 계산이 멈추는지가 $X$ 에 대해 $\Sigma^0_1$ 이라는 사실과, $\Pi^0_n$ 집합을 신탁으로 쓰는 것이 $\Sigma^0_n$ 집합을 신탁으로 쓰는 것과 같다는 사실을 쓴다.
 
-이 정리가 논리식의 교대 횟수와 도약 횟수를 맞바꾼다. $\Sigma^0_n$ 완전 집합의 Turing 차수가 $\mathbf 0^{(n)}$ 이다.
+이 정리에 따라 논리식의 교대 횟수가 도약 횟수와 같다. $\Sigma^0_n$ 완전 집합의 Turing 차수가 $\mathbf 0^{(n)}$ 이다.
 
 ## 완전 집합
 
-계산 가능한 함수 $f$ 가 모든 $x$ 에 대해 $x\in B\iff f(x)\in A$ 를 만족하면 $B$ 가 $A$ 로 **다대일 환원**된다고 한다. $A$ 가 $\Sigma^0_n$ 이고 모든 $\Sigma^0_n$ 집합이 $A$ 로 다대일 환원되면 $A$ 를 $\Sigma^0_n$ **완전**이라 한다. $W_e$ 를 $e$ 번째 기계의 정의역이라 할 때 다음이 각 층의 완전 집합이다.[^3]
+계산 가능한 함수 $f$ 가 모든 $x$ 에 대해 $x\in B\iff f(x)\in A$ 를 만족하면 $B$ 가 $A$ 로 **다대일 환원(many-one reducible)** 된다고 한다. $A$ 가 $\Sigma^0_n$ 이고 모든 $\Sigma^0_n$ 집합이 $A$ 로 다대일 환원되면 $A$ 를 $\Sigma^0_n$ **완전(complete)** 이라 한다. $W_e$ 를 $e$ 번째 기계의 정의역이라 할 때 다음이 각 층의 완전 집합이다.[^3]
 
 | 집합 | 뜻 | 층 |
 | --- | --- | --- |
@@ -75,9 +75,9 @@ $n=0$ 은 $\Sigma^0_1$ 집합이 재귀적 열거 가능하다는 정의다. 귀
 
 # 활용
 
-- **결정 불가능성의 등급.** 낱말 문제와 Diophantus 방정식은 Turing 차수 $\mathbf 0'$ 에 속한다. Post 정리로 이 분류가 논리식의 모양만 보고도 정해진다. "모든 입력에서 멈춘다" 는 $\Pi^0_2$ 이므로 정지 문제보다 엄격히 어렵다.
-- **산술적 내포.** [역수학](reverse-mathematics.md)의 체계 $\mathrm{ACA}\_0$ 은 매개변수를 허용한 산술 논리식이 정의하는 집합의 존재를 공리로 둔다. 이 체계의 $\omega$ 모형은 도약에 닫힌 집합족이고, 그 최소 모형이 산술적 집합 전체다.
-- **정의 불가능성.** 참인 산술 문장의 집합은 어느 층에도 속하지 않는다. 속한다면 그 층의 엄격성이 깨진다. [Gödel 불완전성 정리](godel-incompleteness.md)의 증명이 만드는 문장은 $\Pi^0_1$ 이므로 계층의 가장 낮은 자리에 있다.
+- 결정 불가능성의 등급. [Hilbert 의 10번 문제](hilberts-tenth-problem.md)의 물음, 곧 정수 계수 다항방정식이 정수해를 갖는지는 $\Sigma^0_1$ 완전이다. $\Sigma^0_1$ 완전인 낱말 문제(word problem)를 갖는 유한 표시 군도 있다. Post 정리로 이런 문제의 Turing 차수가 논리식의 모양에서 정해진다. "모든 입력에서 멈춘다" 는 $\Pi^0_2$ 이므로 정지 문제보다 엄격히 어렵다.
+- 산술적 내포. [역수학](reverse-mathematics.md)의 체계 $\mathrm{ACA}\_0$ 은 매개변수를 허용한 산술 논리식이 정의하는 집합의 존재를 공리로 둔다. 이 체계의 $\omega$ 모형은 도약에 닫힌 집합족이고, 그 최소 모형이 산술적 집합 전체다.
+- 정의 불가능성. 참인 산술 문장의 집합은 어느 층에도 속하지 않는다. 속한다면 그 층의 엄격성이 깨진다. [Gödel 불완전성 정리](godel-incompleteness.md)의 증명이 만드는 문장은 $\Pi^0_1$ 이므로 계층의 가장 낮은 자리에 있다.
 
 [^1]: S. C. Kleene, *Recursive predicates and quantifiers*, Trans. Amer. Math. Soc. 53 (1943), 41–73. 계층의 정의와 보편 집합에 의한 엄격성 증명.
 [^2]: Emil L. Post, *Recursively enumerable sets of positive integers and their decision problems*, Bull. Amer. Math. Soc. 50 (1944), 284–316.
