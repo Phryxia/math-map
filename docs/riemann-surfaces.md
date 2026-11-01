@@ -6,15 +6,11 @@
 
 # 직관
 
-$\sqrt z$ 나 $\log z$ 는 [정칙함수](holomorphic-functions.md)로서 복소평면 위에서 한 값으로 정의되지 않는다. 원점을 한 바퀴 돌면 다른 가지로 넘어가기 때문이다. 여러 장의 평면을 가지가 바뀌는 곳에서 이어 붙이면 그 위에서 함수가 한 값이 된다. 그렇게 얻은 대상이 Riemann 곡면이다.
-
-Riemann 곡면은 복소구조를 가진 1 차원 복소다양체다. 위상적으로는 [곡면](classification-of-surfaces.md)이고 그 위에 복소좌표가 정칙 전이함수로 붙어 있다. 위상은 종수 하나로 분류되지만 복소구조는 같은 곡면 위에서 연속적인 족을 이룬다. 이 자유도에서 [Teichmüller 공간](teichmuller-space.md)과 모듈라이 문제가 나온다.
-
-**균일화 정리**로 단순연결 Riemann 곡면은 동형을 빼고 구, 평면, 원판 셋뿐이다. 임의의 Riemann 곡면은 이 셋 가운데 하나를 [보편덮개](covering-spaces.md)로 가지므로 덮개변환군으로 몫을 취한 꼴로 기술된다. 복소해석적 분류가 세 모형으로 환원되고, 남는 자유도가 덮개변환군의 선택이다.
+$\sqrt z$ 나 $\log z$ 는 원점을 한 바퀴 돌면 다른 가지로 넘어가므로, [정칙함수](holomorphic-functions.md)로서 복소평면 위에서 한 값으로 정의되지 않는다. 여러 장의 평면을 가지가 바뀌는 곳에서 이어 붙이면 그 위에서 함수가 한 값이 된다.
 
 $w^2=z$ 에서는 $z\ne0$ 마다 $w$ 가 둘이다. 평면 두 장을 음의 실축을 따라 잘라 놓고 첫 장의 위쪽 가장자리를 둘째 장의 아래쪽 가장자리에 붙이면, 원점을 한 바퀴 돌 때 다른 장으로 넘어가고 두 바퀴를 돌아야 제자리가 된다. 이 공간 위에서 $w$ 는 단일값 정칙함수다.
 
-이 공간은 다시 구와 같고, $w$ 를 좌표로 쓰면 $z=w^2$ 이다. 정의역을 이렇게 늘린 것이 Riemann 곡면이고, 원래의 다가성은 곡면에서 평면으로 내려가는 사상의 겹수가 된다.
+이 공간은 $w$ 평면과 같고, $w$ 를 좌표로 쓰면 $z=w^2$ 이다. 정의역을 이렇게 늘린 것이 Riemann 곡면이고, 원래의 다가성은 곡면에서 평면으로 내려가는 사상의 겹수가 된다.
 
 # 정의
 
@@ -26,30 +22,34 @@ $$
 \varphi_j\circ\varphi_i^{-1}:\varphi_i(U_i\cap U_j)\to\varphi_j(U_i\cap U_j)
 $$
 
-가 모두 정칙이면 $X$ 를 **Riemann 곡면**이라 한다. 실차원이 2 이므로 곡면이고, 복소차원은 1 이다.
+가 모두 정칙이면 $X$ 를 **Riemann 곡면** 이라 한다. $\varphi_i$ 를 좌표(chart), 이 함수를 전이함수(transition function)라 한다. 실차원이 2 이므로 [곡면](classification-of-surfaces.md)이고, 복소차원은 1 이다.
 
-사상 $f:X\to Y$ 가 **정칙**이라는 것은 양쪽 좌표로 표현했을 때 정칙이라는 뜻이다. 상수가 아닌 정칙사상은 열린 사상이고 적당한 좌표에서 국소적으로 $z\mapsto z^n$ 꼴이다. 이 $n$ 이 그 점의 **분기지수**다.
+직관 절의 곡면 $X=\lbrace(z,w):w^2=z\rbrace$ 에서는 $(z,w)\mapsto w$ 하나가 $X$ 전체를 $\mathbb C$ 로 옮기는 좌표이고, 전이함수를 확인할 겹침이 없다. $w$ 는 이 좌표에서 항등함수이므로 정칙이다.
+
+사상 $f:X\to Y$ 가 **정칙(holomorphic)** 이라는 것은 양쪽 좌표로 표현했을 때 정칙이라는 뜻이다. 상수가 아닌 정칙사상은 적당한 좌표에서 국소적으로 $z\mapsto z^n$ 꼴이다. 이 $n$ 이 그 점의 **분기지수(ramification index)** 다. 직관 절의 사상 $X\to\mathbb C$, $(z,w)\mapsto z$ 는 좌표 $w$ 에서 $w\mapsto w^2$ 이므로 $w=0$ 에서 분기지수가 $2$ 이고 나머지 점에서 $1$ 이다.
 
 ## 기본 예
 
 - $\mathbb C$ 와 그 열린부분집합.
-- **Riemann 구** $\widehat{\mathbb C}=\mathbb C\cup\lbrace\infty\rbrace$ 다. 좌표는 $z$ 와 $1/z$ 두 장이고 전이함수가 $z\mapsto1/z$ 다. 콤팩트 Riemann 곡면 가운데 종수 0 인 유일한 것이다.
-- **복소 토러스** $\mathbb C/\Lambda$ 다. 여기서 $\Lambda=\mathbb Z+\tau\mathbb Z$ 는 [격자](lattices.md)이고 $\tau\in\mathbb H$ 다. 종수 1 이며, [타원곡선](elliptic-curves.md)의 복소해석적 모습이다.
+- **Riemann 구(Riemann sphere)** $\widehat{\mathbb C}=\mathbb C\cup\lbrace\infty\rbrace$ 다. 좌표는 $z$ 와 $1/z$ 두 장이고 전이함수가 $z\mapsto1/z$ 다. 콤팩트 Riemann 곡면 가운데 종수 0 인 유일한 것이다.
+- **복소 토러스(complex torus)** $\mathbb C/\Lambda$ 다. 여기서 $\Lambda=\mathbb Z+\tau\mathbb Z$ 는 [격자](lattices.md)이고 $\tau\in\mathbb H$ 다. 종수 1 이며, [타원곡선](elliptic-curves.md)의 복소해석적 모습이다.
 - 평면곡선 $\lbrace(z,w):P(z,w)=0\rbrace$ 의 비특이점 집합. 콤팩트 Riemann 곡면은 전부 이런 대수곡선으로 실현된다.
+
+# 성질
 
 ## 균일화 정리
 
-> **정리(Koebe, Poincaré, 1907).** 단순연결 Riemann 곡면은 $\widehat{\mathbb C}$ 와 $\mathbb C$ 와 $\mathbb D=\lbrace|z|\lt 1\rbrace$ 가운데 정확히 하나와 정칙동형이다.
+**균일화 정리(uniformization theorem)** 는 다음이다(Koebe, Poincaré, 1907). 단순연결 Riemann 곡면은 $\widehat{\mathbb C}$ 와 $\mathbb C$ 와 $\mathbb D=\lbrace|z|\lt 1\rbrace$ 가운데 정확히 하나와 정칙동형이다.
 
-세 모형은 서로 동형이 아니다. $\widehat{\mathbb C}$ 만 콤팩트이고, $\mathbb C$ 와 $\mathbb D$ 는 Liouville 정리로 갈린다. $\mathbb D\to\mathbb C$ 인 정칙사상은 많지만 $\mathbb C\to\mathbb D$ 는 유계 정함수라 상수뿐이다.
+세 모형은 서로 동형이 아니다. $\widehat{\mathbb C}$ 만 콤팩트이고, $\mathbb C$ 와 $\mathbb D$ 는 Liouville 정리(Liouville's theorem)로 갈린다. $\mathbb D\to\mathbb C$ 인 정칙사상은 많지만 $\mathbb C\to\mathbb D$ 는 유계 정함수라 상수뿐이다.
 
-일반 곡면에는 보편덮개를 거쳐 적용한다. $X$ 의 보편덮개 $\widetilde X$ 는 단순연결 Riemann 곡면이므로 셋 중 하나이고, 덮개변환군 $\Gamma\cong\pi_1(X)$ 는 그 모형의 자기동형군 안에서 자유롭고 진성불연속으로 작용한다. 따라서
+일반 곡면에는 [보편덮개](covering-spaces.md)(universal cover)를 거쳐 적용한다. $X$ 의 보편덮개 $\widetilde X$ 는 단순연결 Riemann 곡면이므로 셋 중 하나이고, 덮개변환군(deck transformation group) $\Gamma\cong\pi_1(X)$ 는 그 모형의 자기동형군 안에서 자유롭고 고유 불연속(properly discontinuous)으로 작용한다. 따라서
 
 $$
 X\cong\widetilde X/\Gamma .
 $$
 
-$\widetilde X$ 가 무엇이냐에 따라 $X$ 를 **타원형**, **포물형**, **쌍곡형**이라 부른다.
+$\widetilde X$ 가 무엇이냐에 따라 $X$ 를 타원형(elliptic), 포물형(parabolic), 쌍곡형(hyperbolic)이라 부른다.
 
 ## 세 유형의 목록
 
@@ -61,23 +61,22 @@ $\widetilde X$ 가 무엇이냐에 따라 $X$ 를 **타원형**, **포물형**, 
 
 $\widehat{\mathbb C}$ 의 자기동형은 모두 고정점을 가지므로 자유 작용이 자명한 것뿐이고, 타원형 곡면이 하나뿐이다. $\mathbb C$ 의 자유 작용 군은 평행이동으로 이루어진 이산군, 곧 계수 0, 1, 2 의 격자뿐이므로 포물형 목록도 짧다.
 
-# 성질
 
 ## 곡률과 종수
 
-복소구조는 등각구조이고 등각구조는 [곡률](curvature.md)을 하나로 정규화한다. 세 모형의 곡률이 각각 $+1$ , $0$ , $-1$ 이고 자기동형군은 $\mathrm{PSL}\_2(\mathbb C)$ , $z\mapsto az+b$ 꼴의 아핀 변환, $\mathrm{PSL}\_2(\mathbb R)$ 이다.
+균일화 정리에 따라 각 Riemann 곡면에는 그 복소구조와 등각인, [곡률](curvature.md)이 상수인 계량이 있다. 세 모형의 곡률이 각각 $+1$ , $0$ , $-1$ 이고 자기동형군은 $\mathrm{PSL}\_2(\mathbb C)$ , $z\mapsto az+b$ 꼴의 아핀 변환, $\mathrm{PSL}\_2(\mathbb R)$ 이다.
 
-종수 $g$ 의 [콤팩트](compactness.md) 곡면에서 [Euler 지표](euler-characteristic.md)는 $2-2g$ 다. Gauss–Bonnet 이 곡률 적분을 이 값에 묶으므로 $g=0$ 이면 구, $g=1$ 이면 평면, $g\ge2$ 이면 원판이 보편덮개다. 종수가 모형을 정하고, 모형 안에서 덮개변환군을 어떻게 잡느냐가 복소구조를 정한다.
+종수 $g$ 의 [콤팩트](compactness.md) 곡면에서 [Euler 지표](euler-characteristic.md)는 $2-2g$ 다. [Gauss–Bonnet 정리](gauss-bonnet.md)에 따라 곡률의 적분이 $2\pi(2-2g)$ 이므로 곡률의 부호가 $2-2g$ 의 부호와 같고, $g=0$ 이면 구, $g=1$ 이면 평면, $g\ge2$ 이면 원판이 보편덮개다. 종수가 모형을 정하고, 모형 안에서 덮개변환군을 어떻게 잡느냐가 복소구조를 정한다.
 
 ## 콤팩트 곡면과 대수곡선
 
-콤팩트 Riemann 곡면 위에는 유리형함수가 충분히 많아 곡면을 사영공간에 매장할 수 있고, 그 상이 대수곡선이다. 거꾸로 비특이 사영곡선은 Riemann 곡면이다. 함수체를 통해 보면 다음 세 [범주](category.md)가 같다.
+콤팩트 Riemann 곡면 위에는 유리형함수(meromorphic function)가 충분히 많아 곡면을 사영공간에 매장할 수 있고, 그 상이 대수곡선이다. 거꾸로 비특이 사영곡선은 Riemann 곡면이다. 함수체를 통해 보면 다음 세 [범주](category.md)가 같다.
 
 $$
-\lbrace\text{콤팩트 Riemann 곡면}\rbrace\ \leftrightarrow\ \lbrace\mathbb C\text{ 위 비특이 사영곡선}\rbrace\ \leftrightarrow\ \lbrace\mathbb C\text{ 의 초월차수 }1\text{ 확대체}\rbrace
+\lbrace\text{콤팩트 Riemann 곡면}\rbrace\thinspace\leftrightarrow\thinspace\lbrace\mathbb C\text{ 위 비특이 사영곡선}\rbrace\thinspace\leftrightarrow\thinspace\lbrace\mathbb C\text{ 의 초월차수 }1\text{ 확대체}\rbrace
 $$
 
-유리형함수의 존재는 $\bar\partial$ 방정식의 해결이나 [Hodge 이론](hodge-theory.md)으로 증명되고, 그 결과가 [Riemann–Roch](riemann-roch.md) 정리다.
+유리형함수의 존재는 $\bar\partial$ 방정식의 해결이나 [Hodge 이론](hodge-theory.md)으로 증명되고, 주어진 극을 갖는 유리형함수의 공간의 차원을 세는 것이 [Riemann–Roch 정리](riemann-roch.md)다.
 
 ## Riemann–Hurwitz 공식
 
@@ -91,22 +90,22 @@ $$
 
 ## 자기동형군의 유한성
 
-$g\ge2$ 인 콤팩트 곡면의 자기동형군은 유한하고 크기가 $84(g-1)$ 을 넘지 않는다(Hurwitz 한계). 자기동형은 쌍곡 등거리사상이고 곡면의 쌍곡 면적이 Gauss–Bonnet 으로 $4\pi(g-1)$ 에 고정되므로, 몫의 면적이 최소일 때 군이 최대다. 최소 면적을 주는 것이 각이 $\pi/2,\pi/3,\pi/7$ 인 삼각형이고 거기서 $84(g-1)$ 이 나온다.
+$g\ge2$ 인 콤팩트 곡면의 자기동형군은 유한하고 크기가 $84(g-1)$ 을 넘지 않는다. 이것이 Hurwitz 자기동형 정리(Hurwitz's automorphisms theorem)다. 자기동형은 쌍곡 등거리사상이고 곡면의 쌍곡 면적이 Gauss–Bonnet 으로 $4\pi(g-1)$ 에 고정되므로, 몫의 면적이 최소일 때 군이 최대다. 최소 면적의 몫은 각이 $\pi/2,\pi/3,\pi/7$ 인 쌍곡 삼각형 둘로 되어 면적이 $2\pi(1-\tfrac12-\tfrac13-\tfrac17)=\pi/21$ 이고, $4\pi(g-1)/(\pi/21)=84(g-1)$ 이 나온다.
 
-$g=0,1$ 에서는 자기동형군이 무한하다. 구는 $\mathrm{PSL}\_2(\mathbb C)$ 전체이고 토러스는 평행이동만으로도 무한하다. 유한성은 쌍곡성에서 온다.
+$g=0,1$ 에서는 자기동형군이 무한하다. 구는 $\mathrm{PSL}\_2(\mathbb C)$ 전체이고 토러스는 평행이동만으로도 무한하다.
 
 ## 모듈라이
 
 종수 1 곡면은 전부 $\mathbb C/(\mathbb Z+\tau\mathbb Z)$ 꼴이고, 두 격자가 같은 곡면을 주는 것은 $\tau$ 가 $\mathrm{SL}\_2(\mathbb Z)$ 작용으로 옮겨질 때다. 종수 1 복소구조의 모듈라이는 $\mathbb H/\mathrm{SL}\_2(\mathbb Z)$ 이고 이것이 [모듈러 곡선](modular-curves.md)이다. 위상적으로 하나인 토러스가 복소구조로는 1 차원 족을 이룬다.
 
-$g\ge2$ 에서는 이 족이 복소차원 $3g-3$ 이다. 그 공간을 다루는 것이 Teichmüller 이론이다.
+$g\ge2$ 에서는 이 족이 복소차원 $3g-3$ 이다.
 
 # 활용
 
-- **모듈라이와 변형.** 종수 $g\ge2$ 곡면의 복소구조가 이루는 공간이 Teichmüller 공간이고, 사상류군으로 몫을 취하면 모듈라이 공간이 된다. 준등각 사상과 Beltrami 방정식이 그 공간에 좌표를 준다.
-- **정수론.** 종수 1 의 모듈라이가 모듈러 곡선이고, 거기서 [모듈러 형식](modular-forms.md)과 [Galois 표현](galois-representations.md)이 나온다. 콤팩트 Riemann 곡면이 대수곡선이라는 사실을 여기에 쓴다.
-- **3 차원으로.** 쌍곡 곡면의 등거리군이 $\mathrm{PSL}\_2(\mathbb R)$ 의 이산부분군이듯 쌍곡 3 다양체는 $\mathrm{PSL}\_2(\mathbb C)$ 의 이산부분군으로 기술된다. [쌍곡 3 다양체](hyperbolic-3-manifolds.md)에서는 Mostow 강직성으로 구조가 굳고, 곡면에서는 모듈라이가 움직인다.
-- **해석적 도구.** 균일화의 증명은 [Dirichlet 문제](dirichlet-problem.md)의 Perron 방법이나 [Dirichlet 원리](dirichlet-principle.md), 곧 타원형 편미분방정식의 해결이다. 같은 기법이 Hodge 이론과 [지표 정리](index-theorem.md)에 쓰인다.
+- 모듈라이와 변형. 종수 $g\ge2$ 곡면의 표시된 복소구조가 이루는 공간이 [Teichmüller 공간](teichmuller-space.md)이고, 사상류군으로 몫을 취하면 모듈라이 공간이 된다. [준등각 사상](quasiconformal-maps.md)과 Beltrami 방정식이 그 공간에 좌표를 준다.
+- 정수론. 종수 1 의 모듈라이가 모듈러 곡선이고, 거기서 [모듈러 형식](modular-forms.md)과 [Galois 표현](galois-representations.md)이 나온다. 콤팩트 Riemann 곡면이 대수곡선이라는 사실을 여기에 쓴다.
+- 쌍곡 3 다양체. 쌍곡 곡면의 등거리군이 $\mathrm{PSL}\_2(\mathbb R)$ 의 이산부분군이듯 쌍곡 3 다양체는 $\mathrm{PSL}\_2(\mathbb C)$ 의 이산부분군으로 기술된다. [쌍곡 3 다양체](hyperbolic-3-manifolds.md)에서는 Mostow 강직성(Mostow rigidity)에 따라 유한 부피 쌍곡 구조가 기본군으로 정해지지만, 곡면에서는 같은 기본군에 $3g-3$ 차원의 복소구조가 있다.
+- 해석적 도구. 균일화의 증명은 [Dirichlet 문제](dirichlet-problem.md)의 Perron 방법(Perron method)이나 [Dirichlet 원리](dirichlet-principle.md), 곧 타원형 편미분방정식의 해결이다. 같은 기법이 Hodge 이론과 [지표 정리](index-theorem.md)에 쓰인다.
 
 # 연관 문서
 
