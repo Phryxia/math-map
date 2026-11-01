@@ -2,13 +2,9 @@
 
 # 개요
 
-**교대 Turing 기계(alternating Turing machine)** 는 계산 도중 "어떤 선택이 성공하는가" 와 "모든 선택이 성공하는가" 를 번갈아 물을 수 있는 계산 모형이다. 한정 불 논리식 $\exists x_1\thinspace\forall x_2\thinspace\exists x_3\thinspace\varphi(x_1,x_2,x_3)$ 이 참인지 판정할 때, 비결정적 기계는 $x_1$ 의 값을 추측할 수 있지만 "모든 $x_2$ 에 대해" 는 한 번의 추측으로 처리할 수 없다. 교대 기계는 상태를 존재 상태와 전칭 상태로 나눠 전칭 상태에서는 모든 갈래가 받아들여야 받아들이게 하고, 이렇게 한정사를 번갈아 계산으로 옮겨 [다항 계층](polynomial-hierarchy.md)과 다항 공간을 기계의 부류로 적는다.
+**교대 Turing 기계(alternating Turing machine)** 는 계산 도중 "어떤 선택이 성공하는가" 와 "모든 선택이 성공하는가" 를 번갈아 물을 수 있는 계산 모형이다. 한정 불 논리식(quantified Boolean formula) $\exists x_1\thinspace\forall x_2\thinspace\exists x_3\thinspace\varphi(x_1,x_2,x_3)$ 이 참인지 판정할 때, 비결정적 기계는 $x_1$ 의 값을 추측할 수 있지만 "모든 $x_2$ 에 대해" 는 한 번의 추측으로 처리할 수 없다. 교대 기계는 상태를 존재 상태와 전칭 상태로 나눠 전칭 상태에서는 모든 갈래가 받아들여야 받아들이게 하고, 이렇게 한정사를 번갈아 계산으로 옮겨 [다항 계층](polynomial-hierarchy.md)과 다항 공간을 기계의 부류로 적는다.
 
 # 직관
-
-교대 Turing 기계는 상태를 존재 상태와 전칭 상태로 나누어, 존재 상태에서는 다음 계산 갈래 가운데 하나가 받아들이면 받아들이고 전칭 상태에서는 모든 갈래가 받아들여야 받아들이는 비결정적 Turing 기계다. A. K. Chandra, D. C. Kozen, L. J. Stockmeyer 가 1981 년에 도입했다[^1].
-
-비결정적 기계는 존재 한정사 하나를 계산으로 옮긴 것이고, 교대 기계는 존재 한정사와 전칭 한정사를 번갈아 옮긴다. 다항 계층은 교대 횟수를 고정한 다항시간 교대 기계의 부류이고, 횟수를 묶지 않은 다항시간 교대 기계의 부류는 [공간 복잡도](space-complexity.md)의 PSPACE(polynomial space)와 같다.
 
 한정 불 논리식 $\exists x_1\thinspace\forall x_2\thinspace\exists x_3\ \varphi(x_1,x_2,x_3)$ 이 참인지 판정한다. 비결정적 기계는 $x_1$ 의 값을 추측할 수 있다. 추측한 갈래 하나가 받아들이면 기계 전체가 받아들이므로 존재 한정사가 계산 한 걸음이 된다. 그러나 $\forall x_2$ 는 $x_2=0$ 과 $x_2=1$ 두 갈래가 모두 받아들여야 참이고, 비결정적 기계에는 "모든 갈래" 를 요구하는 걸음이 없다.
 
@@ -20,13 +16,13 @@
 
 ## 받아들임
 
-교대 기계의 상태는 존재 상태, 전칭 상태, 받아들임 상태, 거부 상태로 나뉜다. 구성은 [공간 복잡도](space-complexity.md)에서처럼 상태, 헤드 위치, 테이프 내용을 묶은 것이다. **받아들이는 구성(accepting configuration)** 의 집합은 다음 조건으로 닫힌 가장 작은 집합이다.
+교대 기계의 상태는 존재 상태(existential state), 전칭 상태(universal state), 받아들임 상태, 거부 상태로 나뉜다. 구성은 [공간 복잡도](space-complexity.md)에서처럼 상태, 헤드 위치, 테이프 내용을 묶은 것이다. **받아들이는 구성(accepting configuration)** 의 집합은 다음 조건으로 닫힌 가장 작은 집합이다.
 
 - 상태가 받아들임 상태인 구성은 받아들인다.
 - 존재 상태의 구성은 다음 구성 가운데 받아들이는 것이 있으면 받아들인다.
 - 전칭 상태의 구성은 다음 구성이 모두 받아들이면 받아들인다.
 
-기계가 입력 $x$ 를 받아들인다는 것은 $x$ 의 시작 구성이 받아들이는 것이다.
+기계가 입력 $x$ 를 받아들인다는 것은 $x$ 의 시작 구성이 받아들이는 것이다. 직관의 기계로 $\exists x_1\thinspace\forall x_2\thinspace(x_1\lor x_2)$ 를 판정하면, $x_1=1$ 인 존재 갈래 아래의 전칭 갈래 $x_2=0$ 과 $x_2=1$ 이 모두 받아들이므로 시작 구성이 받아들인다. $x_1=0$ 인 갈래는 $x_2=0$ 에서 거부하지만 존재 갈림이라 상관없다.
 
 ## 교대 부류
 
@@ -38,32 +34,32 @@ $\mathrm{ATIME}(t(n))$ 은 모든 갈래가 $O(t(n))$ 걸음 안에 멈추는 �
 | AP(alternating polynomial time) | $\bigcup_{k\ge 1}\mathrm{ATIME}(n^k)$ |
 | APSPACE(alternating polynomial space) | $\bigcup_{k\ge 1}\mathrm{ASPACE}(n^k)$ |
 
-계산 갈래 위에서 존재 상태와 전칭 상태가 바뀌는 횟수를 교대 횟수라 한다. 시작 상태가 존재 상태이고 모든 갈래의 교대 횟수가 $k-1$ 이하인 다항시간 교대 기계로 판정되는 부류를 $\Sigma_k$ 기계의 부류라 한다.
+계산 갈래 위에서 존재 상태와 전칭 상태가 바뀌는 횟수를 교대 횟수(number of alternations)라 한다. 시작 상태가 존재 상태이고 모든 갈래의 교대 횟수가 $k-1$ 이하인 다항시간 교대 기계로 판정되는 부류를 $\Sigma_k$ 기계의 부류라 한다. 위의 $\exists x_1\thinspace\forall x_2$ 판정 기계는 교대 횟수가 $1$ 이라 $\Sigma_2$ 기계다.
 
 # 성질
 
 ## Chandra–Kozen–Stockmeyer 정리
 
-정리. $t(n)\ge n$ 이고 $s(n)\ge\log n$ 이면
+$t(n)\ge n$ 이고 $s(n)\ge\log n$ 이면
 
 $$
 \mathrm{ATIME}(t)\subseteq\mathrm{SPACE}(t)\subseteq\mathrm{ATIME}(t^2),\qquad \mathrm{ASPACE}(s)=\mathrm{TIME}(2^{O(s)})
 $$
 
-이다[^1]. 따라서 $\mathrm{AL}=\mathrm P$, $\mathrm{AP}=\mathrm{PSPACE}$, $\mathrm{APSPACE}=\mathrm{EXPTIME}$ 이다.
+이다. A. K. Chandra, D. C. Kozen, L. J. Stockmeyer 가 1981 년에 교대 기계를 도입하며 증명했다[^1]. 따라서 $\mathrm{AL}=\mathrm P$, $\mathrm{AP}=\mathrm{PSPACE}$, $\mathrm{APSPACE}=\mathrm{EXPTIME}$ 이다. PSPACE 는 polynomial space, EXPTIME 은 exponential time 의 약어다.
 
-증명의 요지. 네 포함을 따로 보인다.
+네 포함을 따로 보인다.
 
 - $\mathrm{ATIME}(t)\subseteq\mathrm{SPACE}(t)$. 직관 절의 깊이 우선 훑기다. 깊이가 $t$ 이고 각 깊이에서 어느 자식을 보는지만 기억하며, 구성은 시작 구성에서 경로를 따라 다시 계산한다.
-- $\mathrm{SPACE}(t)\subseteq\mathrm{ATIME}(t^2)$. Savitch 정리의 재귀를 교대로 쓴다. 구성 $c_1$ 에서 $c_2$ 로 $2^k$ 걸음 이내에 가는지 물을 때, 중간 구성 $m$ 을 존재 상태에서 추측하고 두 절반 가운데 하나를 전칭 상태에서 고른다. 재귀 깊이가 $O(t)$ 이고 깊이마다 구성 하나를 쓰는 데 $O(t)$ 걸음이 든다.
+- $\mathrm{SPACE}(t)\subseteq\mathrm{ATIME}(t^2)$. Savitch 정리(Savitch's theorem)의 재귀를 교대로 쓴다. 구성 $c_1$ 에서 $c_2$ 로 $2^k$ 걸음 이내에 가는지 물을 때, 중간 구성 $m$ 을 존재 상태에서 추측하고 두 절반 가운데 하나를 전칭 상태에서 고른다. 재귀 깊이가 $O(t)$ 이고 깊이마다 구성 하나를 쓰는 데 $O(t)$ 걸음이 든다.
 - $\mathrm{ASPACE}(s)\subseteq\mathrm{TIME}(2^{O(s)})$. 구성이 $2^{O(s)}$ 개이므로, 받아들임 상태의 구성에서 시작해 받아들임 조건을 만족하는 구성을 더 이상 늘지 않을 때까지 더하면 $2^{O(s)}$ 시간에 받아들이는 구성의 집합이 나온다.
 - $\mathrm{TIME}(2^{O(s)})\subseteq\mathrm{ASPACE}(s)$. 결정적 기계의 시간-공간 표에서 마지막 칸이 받아들임 상태라는 것을 거꾸로 검증한다. 칸 $(i,j)$ 의 내용을 존재 상태에서 추측하고, 그 내용을 정하는 윗줄의 세 칸 가운데 하나를 전칭 상태에서 골라 같은 검증을 이어 간다. 기억할 것은 칸의 좌표 $(i,j)$ 뿐이고 좌표는 $O(s)$ 비트다.
 
 ## 다항 계층
 
-정리. $\Sigma_k^{\mathrm p}$ 는 $\Sigma_k$ 기계의 부류와 같다[^1].
+$\Sigma_k^{\mathrm p}$ 는 $\Sigma_k$ 기계의 부류와 같다[^1].
 
-증명의 요지. 다항 계층의 한정사 정의 $\exists y_1\thinspace\forall y_2\cdots Q_ky_k\ V(x,y_1,\dots,y_k)$ 에서 $y_i$ 를 차례로 한 비트씩 존재 상태나 전칭 상태로 고르고 마지막에 $V$ 를 계산하면 $\Sigma_k$ 기계가 된다. 거꾸로 $\Sigma_k$ 기계의 계산 갈래를 교대가 바뀌는 자리마다 끊으면, 각 구간의 선택이 한정사 하나의 증거가 된다.
+다항 계층의 한정사 정의 $\exists y_1\thinspace\forall y_2\cdots Q_ky_k\ V(x,y_1,\dots,y_k)$ 에서 $y_i$ 를 차례로 한 비트씩 존재 상태나 전칭 상태로 고르고 마지막에 $V$ 를 계산하면 $\Sigma_k$ 기계가 된다. 거꾸로 $\Sigma_k$ 기계의 계산 갈래를 교대가 바뀌는 자리마다 끊으면, 각 구간의 선택이 한정사 하나의 증거가 된다.
 
 교대 횟수를 고정하면 다항 계층의 층이 되고, 묶지 않으면 PSPACE 가 된다.
 
