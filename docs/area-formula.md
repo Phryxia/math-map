@@ -6,10 +6,6 @@
 
 # 직관
 
-면적공식은 Lipschitz 사상이 집합을 보낸 상의 크기를 Jacobi 행렬식의 적분으로 재는 등식이다. 정의역의 차원이 공역의 차원보다 작아 상이 Lebesgue 영집합일 때도 성립하고, 상의 크기를 [Hausdorff 차원](hausdorff-dimension.md) 쪽 $n$ 차원 Hausdorff 측도로 잰다.
-
-사상의 미분가능성은 가정하지 않는다. 거의 모든 점에서 미분가능하다는 [Rademacher 정리](rademacher-theorem.md)가 Jacobi 행렬식을 거의 어디서나 정의해 준다.
-
 치환적분 $\int\_a^b g(\varphi(x))\varphi'(x)\thinspace dx=\int\_{\varphi(a)}^{\varphi(b)}g(y)\thinspace dy$ 에서 $g=1$ 로 두면 왼쪽이 상의 길이가 된다. $\varphi(x)=x^2$ 를 $A=\lbrack -1,1\rbrack$ 에서 보고 왼쪽을 계산한다. 도함수의 절댓값을 적분하면
 
 $$
@@ -24,33 +20,41 @@ $$
 \int\_A\vert\varphi'(x)\vert\thinspace dx=\int\_{\mathbb{R}}\char35{}\bigl(A\cap\varphi^{-1}(y)\bigr)\thinspace dy
 $$
 
-오른쪽은 $(0,1)$ 에서 피적분함수가 $2$ 이고 밖에서 $0$ 이므로 $2$ 다. 사상이 단사이면 개수가 $1$ 이라 오른쪽이 상의 길이로 돌아온다.
+오른쪽은 $(0,1)$ 에서 피적분함수가 $2$ 이고 밖에서 $0$ 이므로 $2$ 다. 사상이 단사이면 개수가 $1$ 이라 오른쪽이 상의 길이가 된다.
 
-정의역이 $\mathbb{R}^n$ 이고 공역이 $\mathbb{R}^m$ 이면서 $n\lt m$ 이면 상이 Lebesgue 영집합이므로 오른쪽을 $dy$ 로 잴 수 없다. 길이나 면적에 해당하는 $n$ 차원 크기로 바꿔 재야 하고, 그 자리에 $n$ 차원 Hausdorff 측도가 들어간다. 왼쪽의 $\vert\varphi'\vert$ 자리에는 접공간이 늘어나는 비율을 재는 Jacobi 행렬식이 들어간다.
+정의역이 $\mathbb{R}^n$ 이고 공역이 $\mathbb{R}^m$ 이면서 $n\lt m$ 이면 상이 Lebesgue 영집합이므로 오른쪽을 $dy$ 로 잴 수 없다. 길이나 면적에 해당하는 $n$ 차원 크기로 바꿔 재야 하고, 그 자리에 [Hausdorff 차원](hausdorff-dimension.md)을 정의하는 $n$ 차원 Hausdorff 측도가 들어간다. 왼쪽의 $\vert\varphi'\vert$ 자리에는 접공간이 늘어나는 비율을 재는 Jacobi 행렬식이 들어간다.
 
 # 정의
 
 ## Jacobi 행렬식
 
-$f:\mathbb{R}^n\to\mathbb{R}^m$ 이 $x$ 에서 미분가능하고 $n\le m$ 일 때, $Df(x)$ 는 $m\times n$ [행렬](matrices.md)이다. $f$ 의 **Jacobi 행렬식**은
+$f:\mathbb{R}^n\to\mathbb{R}^m$ 이 $x$ 에서 미분가능하고 $n\le m$ 일 때, $Df(x)$ 는 $m\times n$ [행렬](matrices.md)이다. $f$ 의 **Jacobi 행렬식(Jacobian)** 은
 
 $$
 Jf(x)=\sqrt{\det\bigl(Df(x)^{\mathsf{T}}Df(x)\bigr)}
 $$
 
-이다. $Df(x)^{\mathsf{T}}Df(x)$ 는 $n\times n$ 양반정치 행렬이므로 행렬식이 음수가 아니다. $n=m$ 이면 $Jf(x)=\vert\det Df(x)\vert$ 이고, $Df(x)$ 가 보내는 단위입방체의 상의 $n$ 차원 크기가 $Jf(x)$ 다.
+이다. $Df(x)^{\mathsf{T}}Df(x)$ 는 $n\times n$ 양반정치(positive semidefinite) 행렬이므로 행렬식이 음수가 아니다. $n=m$ 이면 $Jf(x)=\vert\det Df(x)\vert$ 이고, $Df(x)$ 가 보내는 단위입방체의 상의 $n$ 차원 크기가 $Jf(x)$ 다.
+
+직관 절의 $\varphi(x)=x^2$ 에서는 $J\varphi(x)=\vert 2x\vert$ 다. $f(t)=(\cos t,\sin t)$ 이면 $Df(t)=(-\sin t,\cos t)^{\mathsf T}$ 이고 $Df^{\mathsf T}Df=\sin^2t+\cos^2t=1$ 이므로 $Jf=1$ 이다.
+
+Lipschitz 사상 $f$ 는 [Rademacher 정리](rademacher-theorem.md)에 따라 거의 모든 점에서 미분가능하므로 $Jf$ 는 거의 어디서나 정의된다.
+
+## 겹침수
+
+$A\subseteq\mathbb R^n$ 과 $y\in\mathbb R^m$ 에 대해 $\char35{}\bigl(A\cap f^{-1}(y)\bigr)$ 를 $f$ 의 $A$ 위의 **겹침수(multiplicity)** 라 한다. $\char35{}$ 는 원소의 개수이고 값이 $+\infty$ 일 수 있다. 직관 절의 $\varphi(x)=x^2$, $A=\lbrack -1,1\rbrack$ 에서 겹침수는 $y\in(0,1\rbrack$ 에서 $2$, $y=0$ 에서 $1$, 그 밖에서 $0$ 이다.
+
+# 성질
 
 ## 면적공식
 
-정리. $f:\mathbb{R}^n\to\mathbb{R}^m$ 이 Lipschitz 이고 $n\le m$ 이면, Lebesgue 가측집합 $A\subseteq\mathbb{R}^n$ 에서 다음이 성립한다[^1].
+$f:\mathbb{R}^n\to\mathbb{R}^m$ 이 Lipschitz 이고 $n\le m$ 이면, Lebesgue 가측집합 $A\subseteq\mathbb{R}^n$ 에서 다음이 성립한다[^1].
 
 $$
 \int\_A Jf(x)\thinspace dx=\int\_{\mathbb{R}^m}\char35{}\bigl(A\cap f^{-1}(y)\bigr)\thinspace d\mathcal{H}^n(y)
 $$
 
-$\mathcal{H}^n$ 은 $n$ 차원 Hausdorff 측도이고 $\char35{}$ 는 원소의 개수다. 오른쪽의 피적분함수는 $\mathcal{H}^n$ 가측이고 값이 $+\infty$ 일 수 있다.
-
-# 성질
+$\mathcal{H}^n$ 은 $n$ 차원 Hausdorff 측도이고, 오른쪽의 피적분함수는 $\mathcal{H}^n$ 가측이다. 정의 절의 $f(t)=(\cos t,\sin t)$ 를 $A=\lbrack 0,2\pi)$ 에서 보면 왼쪽이 $2\pi$ 이고 겹침수는 원 위에서 $1$ 이므로 원의 길이 $\mathcal H^1$ 이 $2\pi$ 다.
 
 ## 단사인 경우
 
@@ -78,13 +82,13 @@ $g$ 를 $A$ 의 지시함수로 두면 면적공식이 된다. 증명은 지시�
 
 ## 여면적공식
 
-정리. $f:\mathbb{R}^n\to\mathbb{R}^m$ 이 Lipschitz 이고 $n\ge m$ 이면, Lebesgue 가측집합 $A$ 에서 다음이 성립한다[^2].
+$f:\mathbb{R}^n\to\mathbb{R}^m$ 이 Lipschitz 이고 $n\ge m$ 이면, Lebesgue 가측집합 $A$ 에서 다음이 성립한다[^2].
 
 $$
 \int\_A J^\ast f(x)\thinspace dx=\int\_{\mathbb{R}^m}\mathcal{H}^{n-m}\bigl(A\cap f^{-1}(y)\bigr)\thinspace dy
 $$
 
-여기서 $J^\ast f(x)=\sqrt{\det\bigl(Df(x)Df(x)^{\mathsf{T}}\bigr)}$ 다. 차원이 내려가는 사상이라 원상이 점이 아니라 $n-m$ 차원 집합이고, 개수를 세는 자리에 그 집합의 Hausdorff 측도가 들어간다. $f$ 가 좌표사영이면 $J^\ast f=1$ 이고 이 식이 [Fubini 정리](fubini-tonelli.md)다.
+여기서 $J^\ast f(x)=\sqrt{\det\bigl(Df(x)Df(x)^{\mathsf{T}}\bigr)}$ 다. 차원이 내려가는 사상이라 원상이 점이 아니라 $n-m$ 차원 집합이고, 개수를 세는 자리에 그 집합의 Hausdorff 측도가 들어간다. $f$ 가 좌표사영이면 $J^\ast f=1$ 이고 이 식이 [Fubini 정리](fubini-tonelli.md)다. 이 등식을 여면적공식(coarea formula)이라 한다.
 
 # 활용
 
