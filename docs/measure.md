@@ -24,13 +24,15 @@ $\varepsilon$ 은 얼마든지 작게 잡을 수 있으니 유리수 집합의 �
 
 ## σ 대수
 
-집합 $X$ 의 부분집합들의 모임 $\Sigma$ 가 다음 셋을 만족하면 $\sigma$ 대수다.
+집합 $X$ 의 부분집합들의 모임 $\Sigma$ 가 다음 셋을 만족하면 **σ 대수(σ-algebra)** 다.
 
 - $\varnothing \in \Sigma$
 - $A \in \Sigma$ 이면 $X \setminus A \in \Sigma$
 - $A_1, A_2, \dots \in \Sigma$ 이면 $\bigcup_n A_n \in \Sigma$
 
-셀 수 있는 무한을 가산이라 한다. $\Sigma$ 의 원소를 가측집합, 쌍 $(X, \Sigma)$ 를 가측공간이라 한다. 여집합과 가산 합집합에 닫혀 있으므로 [De Morgan 법칙](de-morgan-laws.md)에 따라 가산 교집합에도 닫혀 있다.
+셀 수 있는 무한을 가산(countable)이라 한다. $\Sigma$ 의 원소를 **가측집합(measurable set)**, 쌍 $(X, \Sigma)$ 를 **가측공간(measurable space)** 이라 한다. 여집합과 가산 합집합에 닫혀 있으므로 [De Morgan 법칙](de-morgan-laws.md)에 따라 가산 교집합에도 닫혀 있다.
+
+$X$ 의 부분집합 전체와 $\lbrace\varnothing,X\rbrace$ 는 σ 대수다. $X=\lbrack 0,1\rbrack$ 에서 구간을 모두 포함하는 σ 대수는 한 점 $\lbrack q,q\rbrack$ 들의 가산 합집합인 유리수 집합 $\mathbb Q\cap\lbrack 0,1\rbrack$ 과 그 여집합인 무리수 집합을 포함한다. 직관 절에서 길이를 준 두 집합이 이것이다.
 
 ## 측도
 
@@ -46,44 +48,46 @@ $$
 \mu\Big(\bigcup_{n=1}^{\infty}A_n\Big)=\sum_{n=1}^{\infty}\mu(A_n)
 $$
 
-뒤의 조건이 가산 가법성이다. $(X, \Sigma, \mu)$ 를 측도 공간이라 하고, $\mu(X) = 1$ 이면 확률 공간이라 한다.
+뒤의 조건이 가산 가법성(countable additivity)이다. $(X, \Sigma, \mu)$ 를 측도 공간(measure space)이라 하고, $\mu(X) = 1$ 이면 확률 공간(probability space)이라 한다.
+
+직관 절의 계산은 가산 가법성을 쓴 것이다. 유리수 집합은 한 점 $\lbrace q\_n\rbrace$ 들의 서로소 합집합이고 한 점의 길이가 $0$ 이므로 $\mu(\mathbb Q\cap\lbrack 0,1\rbrack)=\sum\_n 0=0$ 이다.
 
 ## 표준적인 예
 
-| 측도 | 배정 |
+| 측도 | 값 |
 |---|---|
-| Lebesgue 측도 | 구간에 그 길이 |
-| 세는 측도 | 집합의 원소 개수 |
-| Dirac 측도 $\delta_a$ | $a$ 를 포함하면 $1$ , 아니면 $0$ |
-| 확률측도 | 전체에 $1$ |
+| Lebesgue 측도(Lebesgue measure) | 구간에 그 길이 |
+| 세는 측도(counting measure) | 집합의 원소 개수 |
+| Dirac 측도(Dirac measure) $\delta_a$ | $a$ 를 포함하면 $1$ , 아니면 $0$ |
+| 확률측도(probability measure) | 전체에 $1$ |
 
 ## Borel σ 대수
 
-위상공간에서 열린집합을 모두 포함하는 가장 작은 $\sigma$ 대수가 Borel $\sigma$ 대수다. 열린집합, 닫힌집합, 그것들의 셀 수 있는 합집합과 교집합이 전부 들어간다. [실수](real-numbers.md) 직선의 Lebesgue 측도는 이 $\sigma$ 대수 위에서 정의한다.
+위상공간에서 열린집합을 모두 포함하는 가장 작은 $\sigma$ 대수가 **Borel σ 대수(Borel σ-algebra)** 다. 열린집합, 닫힌집합, 그것들의 셀 수 있는 합집합과 교집합이 전부 들어간다. [실수](real-numbers.md) 직선의 Lebesgue 측도는 이 $\sigma$ 대수 위에서 정의한다.
 
 # 성질
 
 ## 기본 성질
 
-- **단조성.** $A \subseteq B$ 이면 $\mu(A) \le \mu(B)$ 다. $B$ 를 $A$ 와 $B \setminus A$ 로 나누고 가산 가법성을 쓴다.
-- **가산 열등가법성.** 서로소가 아니어도 $\mu(\bigcup A_n) \le \sum \mu(A_n)$ 이다. 겹치는 부분을 잘라 내 서로소로 만든 뒤 단조성을 쓴다. 확률론의 합집합 한계가 이 부등식이다.
-- **연속성.** 증가하는 열 $A_1 \subseteq A_2 \subseteq \cdots$ 에 대해 $\mu(\bigcup A_n) = \lim \mu(A_n)$ 이다. 감소하는 열에서는 어느 하나의 측도가 유한할 때만 같은 결론이 난다. $A_n = [n, \infty)$ 는 각 측도가 무한인데 교집합이 공집합이다.
+- 단조성(monotonicity). $A \subseteq B$ 이면 $\mu(A) \le \mu(B)$ 다. $B$ 를 $A$ 와 $B \setminus A$ 로 나누고 가산 가법성을 쓴다.
+- 가산 열등가법성(countable subadditivity). 서로소가 아니어도 $\mu(\bigcup A_n) \le \sum \mu(A_n)$ 이다. 겹치는 부분을 잘라 내 서로소로 만든 뒤 단조성을 쓴다. 확률론의 합집합 한계가 이 부등식이다.
+- 연속성(continuity of measure). 증가하는 열 $A_1 \subseteq A_2 \subseteq \cdots$ 에 대해 $\mu(\bigcup A_n) = \lim \mu(A_n)$ 이다. 감소하는 열에서는 어느 하나의 측도가 유한할 때만 같은 결론이 난다. $A_n = [n, \infty)$ 는 각 측도가 무한인데 교집합이 공집합이다.
 
 ## 영집합
 
-측도가 $0$ 인 집합이 영집합이다. 한 점의 Lebesgue 측도는 $0$ 이고, 셀 수 있는 만큼의 점을 모아도 가산 가법성에 따라 $0$ 이다. 구간도 점들의 합집합이지만 점이 셀 수 없이 많아 가산 가법성을 쓸 수 없다.
+측도가 $0$ 인 집합이 영집합(null set)이다. 한 점의 Lebesgue 측도는 $0$ 이고, 셀 수 있는 만큼의 점을 모아도 가산 가법성에 따라 $0$ 이다. 구간도 점들의 합집합이지만 점이 셀 수 없이 많아 가산 가법성을 쓸 수 없다.
 
 "거의 모든 점에서 성립한다"는 예외 집합이 영집합이라는 뜻이다. 영집합에 셀 수 없이 많은 점이 있을 수도 있다. [Cantor 집합](cantor-set.md)은 실수와 기수가 같으면서 측도는 $0$ 이다.
 
 ## 잴 수 없는 집합
 
-실수 직선의 모든 부분집합에 평행이동 불변인 측도를 줄 수는 없다. $[0,1)$ 의 두 수를 차가 유리수이면 같은 묶음에 넣고, 묶음마다 대표를 하나씩 골라([선택공리](axiom-of-choice.md)) 모은 집합을 $V$ 라 한다. $V$ 를 $[0,1)$ 의 유리수 $q$ 만큼 옮기고 $1$ 을 넘는 부분을 앞으로 되감은 집합 $V_q$ 들은 서로소이고 합치면 $[0,1)$ 이다.
+실수 직선의 모든 부분집합에 평행이동 불변인 측도를 줄 수는 없다. $\lbrack 0,1)$ 의 두 수를 차가 유리수이면 같은 묶음에 넣고, 묶음마다 대표를 하나씩 골라([선택공리](axiom-of-choice.md)) 모은 집합을 $V$ 라 한다. $V$ 를 $\lbrack 0,1)$ 의 유리수 $q$ 만큼 옮기고 $1$ 을 넘는 부분을 앞으로 되감은 집합 $V_q$ 들은 서로소이고 합치면 $\lbrack 0,1)$ 이다.
 
-유리수는 셀 수 있으므로 가산 가법성에 따라 $1=\sum_q \mu(V_q)$ 다. 평행이동 불변이면 $\mu(V_q)$ 는 모두 $\mu(V)$ 와 같아서, 이 합은 $\mu(V)=0$ 이면 $0$ 이고 $\mu(V)\gt 0$ 이면 $\infty$ 다. 어느 쪽도 $1$ 이 아니므로 $V$ 에는 길이를 줄 수 없다. 그래서 Lebesgue 측도는 모든 부분집합이 아니라 $\sigma$ 대수 위에서 정의한다.
+유리수는 셀 수 있으므로 가산 가법성에 따라 $1=\sum_q \mu(V_q)$ 다. 평행이동 불변이면 $\mu(V_q)$ 는 모두 $\mu(V)$ 와 같아서, 이 합은 $\mu(V)=0$ 이면 $0$ 이고 $\mu(V)\gt 0$ 이면 $\infty$ 다. 어느 쪽도 $1$ 이 아니므로 $V$ 에는 길이를 줄 수 없다. 이 $V$ 가 [Vitali 집합](vitali-set.md)이다. 그래서 Lebesgue 측도는 모든 부분집합이 아니라 $\sigma$ 대수 위에서 정의한다.
 
 ## 구성과 유일성
 
-측도를 정의할 때 모든 가측집합에 값을 직접 주지는 않는다. 구간처럼 다루기 쉬운 집합에만 값을 정하고, 직관 절의 계산처럼 셀 수 있는 구간으로 덮은 길이의 하한(외측도)을 거쳐 [Carathéodory 조건](caratheodory-extension.md)을 만족하는 집합으로 넓힌다. 이렇게 얻은 측도는 $\sigma$ -유한이면 유일하다. [Dynkin 의 π-λ 정리](dynkin-system.md)에 따르면 생성하는 모임에서 일치하는 두 측도는 전체에서 일치한다. 확률론에서 분포함수만으로 분포를 지정할 수 있는 것도 이 정리로 증명한다.
+측도를 정의할 때 모든 가측집합에 값을 직접 주지는 않는다. 구간처럼 다루기 쉬운 집합에만 값을 정하고, 직관 절의 계산처럼 셀 수 있는 구간으로 덮은 길이의 하한인 외측도(outer measure)를 거쳐 [Carathéodory 조건](caratheodory-extension.md)을 만족하는 집합으로 넓힌다. 이렇게 얻은 측도는 $\sigma$ -유한($\sigma$-finite)이면 유일하다. [Dynkin 의 π-λ 정리](dynkin-system.md)에 따르면 생성하는 모임에서 일치하는 두 측도는 전체에서 일치한다. 확률론에서 분포함수만으로 분포를 지정할 수 있는 것도 이 정리로 증명한다.
 
 # 활용
 
@@ -97,7 +101,7 @@ $$
 
 ## 다른 측도
 
-[Hausdorff 측도](hausdorff-dimension.md)는 프랙탈의 차원을 재고, [Haar 측도](haar-measure.md)는 군 위에서 평행이동 불변인 측도를 준다. 상측도는 확률변수가 유도하는 분포를 만든다([상측도](pushforward-measure.md)). 두 측도의 관계를 밀도로 표현하는 것이 [Radon–Nikodym 정리](radon-nikodym.md)다.[^1]
+[Hausdorff 측도](hausdorff-dimension.md)는 프랙탈의 차원을 재고, [Haar 측도](haar-measure.md)는 군 위에서 평행이동 불변인 측도를 준다. [상측도](pushforward-measure.md)는 확률변수가 유도하는 분포를 만든다. 두 측도의 관계를 밀도로 표현하는 것이 [Radon–Nikodym 정리](radon-nikodym.md)다.[^1]
 
 [^1]: Terence Tao, *A quick review of measure and integration theory* (245B Notes 0). 가측공간·측도·확률측도와 기본 예시. https://terrytao.wordpress.com/2009/01/01/245b-notes-0-a-quick-review-of-measure-and-integration-theory/
 
