@@ -6,15 +6,13 @@
 
 # 직관
 
-Schönhage–Strassen 알고리즘은 $N$ 비트 정수 두 개의 곱을 $O(N\log N\log\log N)$ 번의 비트 연산으로 구하는 알고리즘이다. 수를 조각으로 나눠 다항식의 계수로 보고, 그 합성곱을 환 $\mathbb Z/(2^K+1)\mathbb Z$ 위의 고속 Fourier 변환으로 계산하며, 조각끼리의 곱은 같은 알고리즘을 재귀로 쓴다. A. Schönhage 와 V. Strassen 이 1971 년에 발표했다[^1].
-
-[Karatsuba 곱셈](karatsuba-multiplication.md)은 곱을 세 값으로 정하고 보간해 지수를 $\log_2 3$ 으로 낮췄다. 이 알고리즘은 값의 수를 조각 수에 비례하게 늘리고, 값을 구하는 계산과 보간을 고속 Fourier 변환으로 해서 지수를 $1$ 로 낮춘다.
-
 $N$ 비트 정수 $x$ 를 $M$ 비트 조각 $D$ 개로 나누면 $x=\sum_i a_i2^{Mi}$ 이고, 다항식 $A(t)=\sum_i a_it^i$ 에 대해 $x=A(2^M)$ 이다. $y$ 도 같이 $B(t)$ 로 쓰면 $xy=C(2^M)$ 이고 $C=AB$ 다. $C$ 의 계수는 합성곱 $c_j=\sum_{i}a_ib_{j-i}$ 이므로 고속 Fourier 변환으로 $O(D\log D)$ 번의 연산에 구한다. 마지막에 $C(2^M)$ 을 계산하는 것은 자리 올림을 하며 더하는 일이다.
+
+$x=13=1101_2$, $y=6=0110_2$ 를 $M=2$ 비트 조각으로 나누면 $A(t)=1+3t$, $B(t)=2+t$ 이고 $C(t)=2+7t+3t^2$ 이며, $C(4)=2+28+48=78=13\cdot 6$ 이다.
 
 [복소수](complex-numbers.md)로 변환하면 반올림 오차가 생겨 정수 계수를 정확히 되찾는다는 보장이 어렵다. 그래서 정수의 나머지 환에서 변환한다. $\mathbb Z/(2^K+1)\mathbb Z$ 에서는 $2^K\equiv -1$ 이므로 $2^{2K}\equiv 1$ 이고, $2$ 가 $2K$ 제곱근이 되는 단위근이다. 이 단위근을 곱하는 것은 비트를 옮기고 한 번 빼는 일이라 $O(K)$ 비트 연산이다.
 
-변환 뒤에 남는 것은 $\mathbb Z/(2^K+1)\mathbb Z$ 의 원소끼리의 곱 $D$ 번이다. $D$ 와 $K$ 를 모두 $\sqrt N$ 정도로 잡으면 이 곱은 처음 문제보다 훨씬 작은 같은 문제이므로 재귀로 푼다.
+변환 뒤에 남는 것은 $\mathbb Z/(2^K+1)\mathbb Z$ 의 원소끼리의 곱 $D$ 번이다. $D$ 와 $K$ 를 모두 $\sqrt N$ 정도로 잡으면 이 곱은 처음 문제보다 훨씬 작은 같은 문제이므로 재귀로 푼다. [Karatsuba 곱셈](karatsuba-multiplication.md)이 곱을 세 값으로 정하고 보간해 지수를 $\log_2 3$ 으로 낮춘 것과 달리, 이 알고리즘은 값의 수를 조각 수에 비례하게 늘리고, 값을 구하는 계산과 보간을 고속 Fourier 변환으로 해서 지수를 $1$ 로 낮춘다.
 
 # 정의
 
@@ -22,7 +20,7 @@ $N$ 비트 정수 $x$ 를 $M$ 비트 조각 $D$ 개로 나누면 $x=\sum_i a_i2^
 
 환 $R$ 의 원소 $\omega$ 가 $\omega^L=1$ 이고 $0\lt k\lt L$ 에서 $\sum_{j=0}^{L-1}\omega^{jk}=0$ 이면 $\omega$ 를 **주 $L$ 제곱근(principal L-th root of unity)** 이라 한다. $L$ 이 $R$ 에서 가역이면 길이 $L$ 의 [이산 Fourier 변환](fourier.md)과 그 역변환이 복소수에서와 같은 식으로 정의되고, 합성곱 정리가 성립한다.
 
-$R=\mathbb Z/(2^K+1)\mathbb Z$ 이고 $L$ 이 $2K$ 를 나누는 $2$ 의 거듭제곱이고 $\omega=2^{2K/L}$ 이면 $\omega^{L/2}=2^K=-1$ 이므로 $\omega$ 는 주 $L$ 제곱근이다. $L$ 은 $2$ 의 거듭제곱이고 $2$ 는 $R$ 에서 가역이므로 $L$ 도 가역이다.
+$R=\mathbb Z/(2^K+1)\mathbb Z$ 이고 $L$ 이 $2K$ 를 나누는 $2$ 의 거듭제곱이고 $\omega=2^{2K/L}$ 이면 $\omega^{L/2}=2^K=-1$ 이므로 $\omega$ 는 주 $L$ 제곱근이다. $L$ 은 $2$ 의 거듭제곱이고 $2$ 는 $R$ 에서 가역이므로 $L$ 도 가역이다. $K=4$ 이면 $R=\mathbb Z/17\mathbb Z$ 이고 $2^4=16\equiv -1$ 이므로 $\omega=2$ 가 주 $8$ 제곱근이다.
 
 ## 알고리즘
 
@@ -38,9 +36,9 @@ $R=\mathbb Z/(2^K+1)\mathbb Z$ 이고 $L$ 이 $2K$ 를 나누는 $2$ 의 거듭�
 
 ## 실행 시간
 
-정리. Schönhage–Strassen 알고리즘은 $N$ 비트 정수 두 개를 $O(N\log N\log\log N)$ 번의 비트 연산으로 곱한다[^1][^2].
+Schönhage–Strassen 알고리즘은 $N$ 비트 정수 두 개를 $O(N\log N\log\log N)$ 번의 비트 연산으로 곱한다[^1][^2]. A. Schönhage 와 V. Strassen 이 1971 년에 발표했다[^1].
 
-증명의 요지. 3 단계와 5 단계의 변환은 $\mathbb Z/(2^K+1)\mathbb Z$ 의 덧셈과 단위근 곱셈 $O(D\log D)$ 번이고, 각각이 비트 이동과 덧셈이라 $O(K)$ 다. $DK=O(N)$ 이므로 변환 전체가 $O(N\log N)$ 이다. 4 단계는 크기 $K\approx 2\sqrt N$ 인 곱 $D\approx\sqrt N$ 번이다.
+3 단계와 5 단계의 변환은 $\mathbb Z/(2^K+1)\mathbb Z$ 의 덧셈과 단위근 곱셈 $O(D\log D)$ 번이고, 각각이 비트 이동과 덧셈이라 $O(K)$ 다. $DK=O(N)$ 이므로 변환 전체가 $O(N\log N)$ 이다. 4 단계는 크기 $K\approx 2\sqrt N$ 인 곱 $D\approx\sqrt N$ 번이다.
 
 $$
 T(N)\le\sqrt N\thinspace T(2\sqrt N)+O(N\log N)
