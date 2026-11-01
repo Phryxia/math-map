@@ -6,11 +6,7 @@
 
 # 직관
 
-Razborov–Smolensky 정리는 $p$ 와 $q$ 가 서로 다른 소수일 때, AND, OR, NOT 게이트에 법 $p$ 게이트를 더한 상수 깊이 다항 크기 회로가 법 $q$ 함수를 계산하지 못한다는 정리다. A. A. Razborov 가 1987 년에 $p=2$ 의 다수결 함수에 대해 증명했고[^1], 같은 해 R. Smolensky 가 일반 꼴로 증명했다[^2].
-
-[불 회로](boolean-circuits.md)의 상수 깊이 하한은 [Håstad 스위칭 보조정리](switching-lemma.md)로 홀짝 함수에 대해 증명된다. 홀짝 게이트를 회로에 넣으면 그 논증이 통하지 않으므로, 이 정리는 회로를 [유한체](finite-fields.md) 위의 낮은 차수 다항식으로 근사하는 다른 논증을 쓴다.
-
-홀짝 게이트를 쓸 수 있는 회로에서는 변수를 무작위로 고정해도 홀짝 게이트가 남은 변수의 홀짝으로 남을 뿐 상수가 되지 않는다. 그래서 변수 고정 대신 회로를 $\mathbb F_3$ 위의 다항식으로 쓴다. $k$ 비트의 OR 를 정확히 쓰면 $1-(1-x_1)\cdots(1-x_k)$ 이고 차수가 $k$ 다. 깊이를 거듭하면 차수가 곱으로 늘어 금방 $n$ 에 닿는다.
+[불 회로](boolean-circuits.md)의 상수 깊이 하한은 [Håstad 스위칭 보조정리](switching-lemma.md)로 변수를 무작위로 고정해 증명된다. 홀짝 게이트를 쓸 수 있는 회로에서는 변수를 무작위로 고정해도 홀짝 게이트가 남은 변수의 홀짝으로 남을 뿐 상수가 되지 않는다. 그래서 변수 고정 대신 회로를 [유한체](finite-fields.md) $\mathbb F_3$ 위의 다항식으로 쓴다. $k$ 비트의 OR 를 정확히 쓰면 $1-(1-x_1)\cdots(1-x_k)$ 이고 차수가 $k$ 다. 깊이를 거듭하면 차수가 곱으로 늘어 금방 $n$ 에 닿는다.
 
 차수를 줄이려고 계수 $c_1,\dots,c_k$ 를 $\mathbb F_3$ 에서 무작위로 골라 $g=(c_1x_1+\cdots+c_kx_k)^2$ 을 쓴다. 모든 $x_i$ 가 $0$ 이면 $g=0$ 이다. 어떤 $x_j$ 가 $1$ 이면 $c_j$ 가 고르게 뽑히므로 합이 $\mathbb F_3$ 에 고르게 퍼지고, 확률 $2/3$ 로 $g=1$ 이다. 이것을 $\ell$ 번 독립으로 만들어 $1-(1-g_1)\cdots(1-g_\ell)$ 로 묶으면 차수가 $2\ell$ 이고 틀릴 확률이 $3^{-\ell}$ 이하다. 차수가 $k$ 와 무관하므로 깊이 $d$ 회로 전체도 차수 $(2\ell)^d$ 의 다항식으로 거의 모든 입력에서 맞게 쓰인다.
 
@@ -26,21 +22,21 @@ $$
 \mathrm{MOD}\_m(x_1,\dots,x_k)=\begin{cases}0 & x_1+\cdots+x_k\equiv 0 \pmod m\cr 1 & \text{그 밖}\end{cases}
 $$
 
-$\mathrm{MOD}\_2$ 는 홀짝 함수다. 법 $m$ 게이트는 들어오는 변의 수에 제한이 없고 이 함수를 계산하는 게이트다.
+$\mathrm{MOD}\_2$ 는 홀짝 함수다. $\mathrm{MOD}\_3(1,1,0)=1$ 이고 $\mathrm{MOD}\_3(1,1,1)=0$ 이다. 법 $m$ 게이트는 들어오는 변의 수에 제한이 없고 이 함수를 계산하는 게이트다.
 
 ## AC0[p]
 
-소수 $p$ 에 대해 $\mathrm{AC}^0\lbrack p\rbrack$ 는 AND, OR, NOT, 법 $p$ 게이트로 된 상수 깊이, 다항 크기 회로 족이 계산하는 함수의 부류다. AND 와 OR 와 법 $p$ 게이트의 들어오는 변의 수에는 제한이 없다. 법 게이트가 없는 부류가 $\mathrm{AC}^0$(alternating circuit)이다.
+소수 $p$ 에 대해 $\mathrm{AC}^0\lbrack p\rbrack$ 는 AND, OR, NOT, 법 $p$ 게이트로 된 상수 깊이, 다항 크기 회로 족이 계산하는 함수의 부류다. AND 와 OR 와 법 $p$ 게이트의 들어오는 변의 수에는 제한이 없다. 법 게이트가 없는 부류가 $\mathrm{AC}^0$(alternating circuit)이다. $n$ 비트의 $\mathrm{MOD}\_3$ 은 법 $3$ 게이트 하나로 계산되므로 $\mathrm{AC}^0\lbrack 3\rbrack$ 에 든다.
 
 ## 근사 다항식
 
-$\mathbb F_p$ 위의 다항식 $P(x_1,\dots,x_n)$ 이 불 함수 $f$ 를 **$\varepsilon$-근사(ε-approximation)** 한다는 것은 $\lbrace 0,1\rbrace^n$ 의 점 가운데 $P(x)\ne f(x)$ 인 것의 비율이 $\varepsilon$ 이하라는 것이다.
+$\mathbb F_p$ 위의 다항식 $P(x_1,\dots,x_n)$ 이 불 함수 $f$ 를 **$\varepsilon$-근사(ε-approximation)** 한다는 것은 $\lbrace 0,1\rbrace^n$ 의 점 가운데 $P(x)\ne f(x)$ 인 것의 비율이 $\varepsilon$ 이하라는 것이다. $\mathbb F_3$ 위의 $P=x_1+x_2$ 는 두 비트의 OR 와 $00,01,10$ 에서 같고 $11$ 에서만 $2\ne 1$ 이므로 OR 를 $1/4$-근사한다.
 
 # 성질
 
 ## Razborov–Smolensky 정리
 
-정리. $p$ 가 소수이고 $q$ 가 $p$ 의 거듭제곱이 아니면, 깊이 $d$ 의 $\mathrm{AC}^0\lbrack p\rbrack$ 회로가 $\mathrm{MOD}\_q$ 를 계산하려면 크기가 $2^{\Omega(n^{1/(2d)})}$ 이상이어야 한다[^2]. 다수결 함수도 같은 하한을 만족한다[^1].
+정리(Razborov–Smolensky). $p$ 가 소수이고 $q$ 가 $p$ 의 거듭제곱이 아니면, 깊이 $d$ 의 $\mathrm{AC}^0\lbrack p\rbrack$ 회로가 $\mathrm{MOD}\_q$ 를 계산하려면 크기가 $2^{\Omega(n^{1/(2d)})}$ 이상이어야 한다[^2]. 다수결 함수도 같은 하한을 만족한다. A. A. Razborov 가 1987 년에 $p=2$ 의 다수결 함수에 대해 증명했고[^1], 같은 해 R. Smolensky 가 일반 꼴로 증명했다[^2].
 
 아래의 증명의 요지는 $p=3$, $q=2$ 의 경우다. 일반 경우는 $\mathbb F_p$ 를 1 의 원시 $q$ 제곱근을 포함하는 확대체로 바꾸어 같은 꼴로 간다.
 
