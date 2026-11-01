@@ -6,13 +6,9 @@
 
 # 직관
 
-시간 계층 정리는 Turing 기계에 시간을 충분히 더 주면 판정할 수 있는 언어가 실제로 늘어난다는 정리다. J. Hartmanis 와 R. E. Stearns 가 1965 년에 증명했다[^1]. [P 대 NP 문제](p-np.md)에 나오는 부류 사이의 진포함 $\mathrm P\subsetneq\mathrm{EXPTIME}$ 이 이 정리에서 나온다.
+시간 $n^3$ 을 주면 판정되지만 시간 $n^2$ 으로는 판정되지 않는 언어가 있는지 묻는다. 그런 언어를 보이려면 시간 $n^2$ 안에 도는 모든 기계가 어딘가에서 틀리는 언어를 하나 만들어야 한다.
 
-증명은 [정지 문제](halting-problem.md)의 대각선 논법을 시간 제한 안에서 다시 하는 것이다. 다른 기계를 흉내 내고 답을 뒤집기만 하므로 신탁(oracle)을 붙여도 그대로 성립한다. 그래서 대각선 논법만으로는 $\mathrm P$ 와 $\mathrm{NP}$ 를 가를 수 없다(Baker–Gill–Solovay 정리).
-
-$\mathrm P\subseteq\mathrm{NP}\subseteq\mathrm{PSPACE}\subseteq\mathrm{EXPTIME}$ 의 포함이 진포함인지 보이려면, 한쪽 부류의 기계로는 판정되지 않는 언어를 하나 만들어야 한다. 시간 $n^2$ 안에 판정되지 않고 시간 $n^3$ 안에는 판정되는 언어를 만들어 본다.
-
-입력 $w$ 를 기계의 부호 $\langle M\rangle$ 뒤에 $0$ 을 몇 개 붙인 것으로 읽는다. 언어 $D$ 는 $M$ 을 입력 $w$ 에서 $\lvert w\rvert^3$ 단계 동안 돌려서 그 안에 받아들이지 않으면 $w$ 를 넣고, 받아들이면 넣지 않는 것으로 정한다. $D$ 를 판정하려면 $M$ 을 $\lvert w\rvert^3$ 단계 동안 흉내 내면 된다.
+입력 $w$ 를 기계의 부호 $\langle M\rangle$ 뒤에 $0$ 을 몇 개 붙인 것으로 읽는다. [정지 문제](halting-problem.md)의 대각선 논법처럼 각 기계의 답을 뒤집는다. 언어 $D$ 는 $M$ 을 입력 $w$ 에서 $\lvert w\rvert^3$ 단계 동안 돌려서 그 안에 받아들이지 않으면 $w$ 를 넣고, 받아들이면 넣지 않는 것으로 정한다. $D$ 를 판정하려면 $M$ 을 $\lvert w\rvert^3$ 단계 동안 흉내 내면 된다.
 
 시간 $c\thinspace n^2$ 에 도는 기계 $M$ 이 $D$ 를 판정한다고 하자. $0$ 을 충분히 많이 붙인 $w=\langle M\rangle 0^j$ 에서는 $c\lvert w\rvert^2\lt\lvert w\rvert^3$ 이므로 $M$ 은 흉내가 끝나기 전에 답을 낸다. $M$ 이 $w$ 를 받아들이면 $D$ 의 정의로 $w\notin D$ 이고, 거부하면 $w\in D$ 다. 어느 쪽이든 $M$ 의 답이 틀리므로 $D$ 는 시간 $O(n^2)$ 에 판정되지 않는다.
 
@@ -22,7 +18,7 @@ $\mathrm P\subseteq\mathrm{NP}\subseteq\mathrm{PSPACE}\subseteq\mathrm{EXPTIME}$
 
 ## 시간 제한 부류
 
-$\mathrm{TIME}(f(n))$ 은 길이 $n$ 인 입력에서 $O(f(n))$ 단계 안에 멈추는 결정적 다중 테이프 Turing 기계로 판정되는 언어의 부류다. 비결정적 기계로 바꾼 것이 $\mathrm{NTIME}(f(n))$ 이다. [계산 가능성](computability.md)의 Turing 기계와 계산 능력은 같고, 테이프 수는 시간을 다항식 배만큼 바꾼다.
+$\mathrm{TIME}(f(n))$ 은 길이 $n$ 인 입력에서 $O(f(n))$ 단계 안에 멈추는 결정적 다중 테이프 Turing 기계로 판정되는 언어의 부류다. 비결정적 기계로 바꾼 것이 $\mathrm{NTIME}(f(n))$ 이다. 회문(palindrome)의 언어는 입력을 둘째 테이프에 복사한 뒤 두 헤드를 반대 방향으로 움직여 견주면 되므로 $\mathrm{TIME}(n)$ 에 든다. [계산 가능성](computability.md)의 Turing 기계와 계산 능력은 같고, 테이프 수는 시간을 다항식 배만큼 바꾼다.
 
 ## 시간 구성 가능
 
@@ -30,23 +26,23 @@ $\mathrm{TIME}(f(n))$ 은 길이 $n$ 인 입력에서 $O(f(n))$ 단계 안에 �
 
 ## 신탁 기계
 
-언어 $A$ 를 **신탁** 으로 쓰는 기계는 계산 도중 "$q\in A$ 인가" 를 물어 한 단계에 답을 받는다. 신탁 $A$ 를 쓰는 다항시간 기계로 판정되는 부류를 $\mathrm P^A$, 비결정적 기계로 바꾼 것을 $\mathrm{NP}^A$ 로 쓴다.
+언어 $A$ 를 **신탁** 으로 쓰는 기계는 계산 도중 "$q\in A$ 인가" 를 물어 한 단계에 답을 받는다. 신탁 $A$ 를 쓰는 다항시간 기계로 판정되는 부류를 $\mathrm P^A$, 비결정적 기계로 바꾼 것을 $\mathrm{NP}^A$ 로 쓴다. 신탁이 없으면 각각 $\mathrm P$ 와 비결정적 다항시간(nondeterministic polynomial time) 부류 $\mathrm{NP}$ 다. $A$ 가 충족가능한 논리식의 집합이면, 논리식이 충족 불가능한지는 신탁에 한 번 묻고 답을 뒤집어 판정되므로 $\mathrm P^A$ 에 든다.
 
 # 성질
 
 ## 결정적 시간 계층 정리
 
-정리. $f$ 가 시간 구성 가능하고 $g(n)\log g(n)=o(f(n))$ 이면
+정리(Hartmanis–Stearns). $f$ 가 시간 구성 가능하고 $g(n)\log g(n)=o(f(n))$ 이면
 
 $$
 \mathrm{TIME}(g(n))\subsetneq\mathrm{TIME}(f(n))
 $$
 
-이다[^1].
+이다. J. Hartmanis 와 R. E. Stearns 가 1965 년에 증명했다[^1].
 
 증명의 요지. 직관 절의 $D$ 에서 $n^3$ 을 $f(n)/\log f(n)$ 으로, $n^2$ 을 $g$ 로 바꾼다. 대각선 기계는 먼저 $f(\lvert w\rvert)$ 를 재고, 그 한도 안에서 $M$ 을 흉내 내며 받아들임을 뒤집는다. $t$ 단계를 $O(t\log t)$ 에 흉내 내는 F. C. Hennie 와 R. E. Stearns 의 두 테이프 흉내가 $\log$ 인자의 출처다[^2].
 
-따름정리. 모든 $k\ge 1$ 에 대해 $\mathrm{TIME}(n^k)\subsetneq\mathrm{TIME}(n^{k+1})$ 이다. $\mathrm P\subseteq\mathrm{TIME}(2^n)\subsetneq\mathrm{TIME}(2^{2n})\subseteq\mathrm{EXPTIME}$ 이므로 $\mathrm P\subsetneq\mathrm{EXPTIME}$ 이다.
+따름정리. 모든 $k\ge 1$ 에 대해 $\mathrm{TIME}(n^k)\subsetneq\mathrm{TIME}(n^{k+1})$ 이다. [P 대 NP 문제](p-np.md)의 부류 $\mathrm P$ 와 지수 시간(exponential time) 부류 EXPTIME 에 대해 $\mathrm P\subseteq\mathrm{TIME}(2^n)\subsetneq\mathrm{TIME}(2^{2n})\subseteq\mathrm{EXPTIME}$ 이므로 $\mathrm P\subsetneq\mathrm{EXPTIME}$ 이다.
 
 ## 비결정적 시간 계층 정리
 
@@ -68,11 +64,11 @@ $$
 
 증명의 요지. $A$ 는 [공간 복잡도](space-complexity.md)의 PSPACE(polynomial space)-완전 언어로 잡는다. 그러면 $\mathrm{NP}^A\subseteq\mathrm{PSPACE}\subseteq\mathrm P^A$ 다. $B$ 는 길이마다 원소를 많아야 하나 두도록 단계적으로 만들고, $L_B=\lbrace 1^n : B\ \text{에 길이}\ n\ \text{인 원소가 있다}\rbrace$ 로 둔다. $L_B\in\mathrm{NP}^B$ 이다. $i$ 번째 단계에서는 $i$ 번째 다항시간 신탁 기계가 묻지 않은 길이 $n$ 의 문자열로 $B$ 를 정해 그 기계가 $1^n$ 에서 틀리게 만든다. 질문은 $2^n$ 개보다 적으므로 묻지 않은 문자열이 남는다.
 
-상대화되는 증명은 $\mathrm P^A=\mathrm{NP}^A$ 인 세계와 $\mathrm P^B\ne\mathrm{NP}^B$ 인 세계에서 모두 성립해야 하므로, $\mathrm P$ 와 $\mathrm{NP}$ 의 관계를 어느 쪽으로도 결정하지 못한다.
+상대화되는 증명은 $\mathrm P^A=\mathrm{NP}^A$ 인 신탁 $A$ 를 붙인 경우와 $\mathrm P^B\ne\mathrm{NP}^B$ 인 신탁 $B$ 를 붙인 경우에 모두 성립해야 하므로, $\mathrm P$ 와 $\mathrm{NP}$ 의 관계를 어느 쪽으로도 결정하지 못한다.
 
 # 활용
 
-- [P 대 NP 문제](p-np.md)의 포함 사슬 $\mathrm P\subseteq\mathrm{NP}\subseteq\mathrm{PSPACE}\subseteq\mathrm{EXPTIME}$ 에서 적어도 한 포함이 진포함이라는 것은 결정적 시간 계층 정리의 $\mathrm P\subsetneq\mathrm{EXPTIME}$ 에서 나온다.
+- P 대 NP 문제의 포함 사슬 $\mathrm P\subseteq\mathrm{NP}\subseteq\mathrm{PSPACE}\subseteq\mathrm{EXPTIME}$ 에서 적어도 한 포함이 진포함이라는 것은 결정적 시간 계층 정리의 $\mathrm P\subsetneq\mathrm{EXPTIME}$ 에서 나온다.
 - [공간 복잡도](space-complexity.md)의 공간 계층 정리는 같은 대각선 논법을 공간 한도에서 한 것이다. 공간은 흉내의 추가 비용이 상수 배여서 $\log$ 인자 없이 $s'=o(s)$ 만으로 성립한다.
 - [대화형 증명](interactive-proofs.md)의 $\mathrm{IP}=\mathrm{PSPACE}$ 를 증명하는 산술화는 상대화되지 않는 기법이다. 신탁 $C$ 가 있어서 $\mathrm{IP}^C\ne\mathrm{PSPACE}^C$ 이므로[^7], 이 증명은 Baker–Gill–Solovay 정리가 정한 한계 밖에 있다.
 
