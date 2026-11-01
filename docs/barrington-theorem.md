@@ -6,8 +6,6 @@
 
 # 직관
 
-정리의 진술은 $\mathrm{NC}^1$ 이 폭 $5$ 이고 길이가 다항식인 분지 프로그램으로 판정되는 언어의 부류와 같다는 것이다. D. A. M. Barrington 이 1986 년에 증명했다[^1]. 증명은 $5$ 원소의 치환군 $S_5$ 가 [가해군](solvable-groups.md)이 아님을 사용한다.
-
 입력 비트를 차례로 읽으며 상태 $5$ 개 가운데 하나에 머무는 기계를 생각한다. 각 단계는 입력 비트 하나 $x_i$ 를 보고, $x_i=0$ 이면 치환 $\alpha$ 를, $x_i=1$ 이면 치환 $\beta$ 를 상태에 적용한다. 단계를 모두 거친 뒤의 상태로 답을 정한다.
 
 $x_1$ 을 계산하는 것은 쉽다. $x_1=1$ 일 때 $5$ 순환 $\sigma=(1\thinspace 2\thinspace 3\thinspace 4\thinspace 5)$ 를, $x_1=0$ 일 때 항등 치환 $e$ 를 적용하면 결과가 $\sigma$ 인지 $e$ 인지로 $x_1$ 이 드러난다. 같은 방법으로 $x_2$ 에서 다른 $5$ 순환 $\tau$ 를 만든다.
@@ -24,25 +22,25 @@ $$
 P(x)=\gamma_1\gamma_2\cdots\gamma_\ell,\qquad \gamma_k=\begin{cases}\alpha_k & x_{i_k}=0\cr \beta_k & x_{i_k}=1\end{cases}
 $$
 
-인 치환이고, $\ell$ 을 길이라 한다. 곱은 왼쪽의 치환부터 적용한다. 받아들이는 치환의 집합 $F\subseteq S_w$ 를 정해 $P(x)\in F$ 이면 $x$ 를 받아들인다.
+인 치환이고, $\ell$ 을 길이라 한다. 곱은 왼쪽의 치환부터 적용한다. 받아들이는 치환의 집합 $F\subseteq S_w$ 를 정해 $P(x)\in F$ 이면 $x$ 를 받아들인다. 직관에서 $x_1$ 을 읽는 프로그램은 $w=5$, $\ell=1$ 이고 명령 $(1,e,\sigma)$ 하나로 되어 $P(x)$ 가 $x_1=1$ 이면 $\sigma$, $x_1=0$ 이면 $e$ 다.
 
 ## 치환으로 계산하기
 
-$\sigma\in S_5$ 가 $5$ 순환일 때, 모든 $x$ 에서 $f(x)=1$ 이면 $P(x)=\sigma$ 이고 $f(x)=0$ 이면 $P(x)=e$ 인 프로그램 $P$ 를 $f$ 를 **$\sigma$-계산한다** 고 한다.
+$\sigma\in S_5$ 가 $5$ 순환일 때, 모든 $x$ 에서 $f(x)=1$ 이면 $P(x)=\sigma$ 이고 $f(x)=0$ 이면 $P(x)=e$ 인 프로그램 $P$ 를 $f$ 를 **$\sigma$-계산한다($\sigma$-computes)** 고 한다. 위의 명령 $(1,e,\sigma)$ 는 $f(x)=x_1$ 을 $\sigma$-계산한다.
 
 # 성질
 
 ## 교환자 보조정리
 
-보조정리. $S_5$ 에는 교환자 $\sigma\tau\sigma^{-1}\tau^{-1}$ 이 $5$ 순환인 $5$ 순환 $\sigma$, $\tau$ 가 있다. 예를 들어 $\sigma=(1\thinspace 2\thinspace 3\thinspace 4\thinspace 5)$, $\tau=(1\thinspace 3\thinspace 5\thinspace 4\thinspace 2)$ 이면 교환자는 $(1\thinspace 3\thinspace 2\thinspace 5\thinspace 4)$ 이다[^1].
+교환자 보조정리(commutator lemma)에 따르면 $S_5$ 에는 교환자 $\sigma\tau\sigma^{-1}\tau^{-1}$ 이 $5$ 순환인 $5$ 순환 $\sigma$, $\tau$ 가 있다. 예를 들어 $\sigma=(1\thinspace 2\thinspace 3\thinspace 4\thinspace 5)$, $\tau=(1\thinspace 3\thinspace 5\thinspace 4\thinspace 2)$ 이면 교환자는 $(1\thinspace 3\thinspace 2\thinspace 5\thinspace 4)$ 이다[^1].
 
 $5$ 순환끼리는 모두 켤레이다. 프로그램이 $f$ 를 $\sigma$-계산하면 첫 명령의 두 치환 앞에 $\theta$ 를, 마지막 명령의 두 치환 뒤에 $\theta^{-1}$ 을 곱해 $f$ 를 $\theta\sigma\theta^{-1}$-계산하게 바꿀 수 있다. 그래서 목표 순환은 길이를 늘리지 않고 다른 $5$ 순환으로 바꿀 수 있다.
 
 ## Barrington 정리
 
-정리. 언어가 $\mathrm{NC}^1$ 에 드는 것은 폭 $5$ 이고 길이가 다항식인 치환 분지 프로그램 족으로 판정되는 것과 동치다[^1].
+언어가 $\mathrm{NC}^1$ 에 드는 것은 폭 $5$ 이고 길이가 다항식인 치환 분지 프로그램 족으로 판정되는 것과 동치다. D. A. M. Barrington 이 1986 년에 증명했다[^1].
 
-증명의 요지. 회로에서 프로그램으로 가는 방향은 깊이 $d$ 에 대한 귀납법이다. 각 게이트의 함수를 어떤 $5$ 순환으로 계산하는 길이 $4^d$ 이하의 프로그램을 만든다.
+회로에서 프로그램으로 가는 방향은 깊이 $d$ 에 대한 귀납법이다. 각 게이트의 함수를 어떤 $5$ 순환으로 계산하는 길이 $4^d$ 이하의 프로그램을 만든다.
 
 - 입력 $x_i$ 는 명령 $(i,e,\sigma)$ 하나다.
 - 부정 $\neg f$ 는 $f$ 를 $\sigma^{-1}$-계산하는 프로그램의 마지막 명령에 $\sigma$ 를 곱해 $\sigma$-계산으로 바꾼다.
@@ -53,7 +51,7 @@ $5$ 순환끼리는 모두 켤레이다. 프로그램이 $f$ 를 $\sigma$-계산
 
 ## 가해군의 한계
 
-같은 꼴의 프로그램을 유한군 $G$ 의 원소로 만들 수 있다. $G$ 가 가해군이면 유도열 $G\supseteq\lbrack G,G\rbrack\supseteq\cdots$ 가 자명군에 닿으므로, 교환자를 거듭 취하면 결국 $e$ 가 되어 논리곱을 거듭 계산하는 위 구성이 깊이 상수에서 멈춘다. D. A. M. Barrington 과 D. Thérien 은 길이가 다항식인 프로그램이 가해 모노이드 위에서 판정하는 언어가 정확히 $\mathrm{ACC}^0$ 임을 보였다[^2]. $\mathrm{ACC}^0$ 은 $\mathrm{AC}^0$ 에 법 $m$ 의 합을 세는 게이트를 더한 상수 깊이 회로의 부류다.
+같은 꼴의 프로그램을 유한군 $G$ 의 원소로 만들 수 있다. $G$ 가 [가해군](solvable-groups.md)이면 유도열(derived series) $G\supseteq\lbrack G,G\rbrack\supseteq\cdots$ 가 자명군에 닿으므로, 교환자를 거듭 취하면 결국 $e$ 가 되어 논리곱을 거듭 계산하는 위 구성이 깊이 상수에서 멈춘다. D. A. M. Barrington 과 D. Thérien 은 길이가 다항식인 프로그램이 가해 모노이드 위에서 판정하는 언어가 정확히 $\mathrm{ACC}^0$ 임을 보였다[^2]. $\mathrm{ACC}^0$ 은 $\mathrm{AC}^0$ 에 법 $m$ 의 합을 세는 게이트를 더한 상수 깊이 회로의 부류다.
 
 폭이 $5$ 보다 작은 치환 분지 프로그램에서 $S_w$ 는 $w\le 4$ 일 때 가해군이므로, 폭 $5$ 는 이 방법으로 $\mathrm{NC}^1$ 전체를 얻는 가장 작은 폭이다.
 
