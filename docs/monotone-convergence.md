@@ -6,11 +6,11 @@
 
 # 직관
 
-단조 수렴 정리는 음이 아닌 [가측함수](measurable-functions.md)열 $f_n$ 이 점마다 증가해 $f$ 로 가면 $\int f_n\to\int f$ 라는 정리다. [균등수렴](uniform-convergence.md)도 지배함수도 요구하지 않는다.
+$[0,1]$ 위의 $f(x)=1/\sqrt x$ 를 적분하려 한다. $f$ 는 $0$ 근처에서 한없이 커지므로 높이 $n$ 에서 잘라 낸 $f\_n=\min(n,1/\sqrt x)$ 부터 적분한다. $f\_n$ 은 $x\le 1/n^2$ 에서 $n$ 이고 그 밖에서 $1/\sqrt x$ 이므로 $\int f\_n=n\cdot\frac1{n^2}+(2-\frac2n)=2-\frac1n$ 이다.
 
-Lebesgue 적분은 아래에 놓인 단순함수들의 상한으로 정의해서 선형성조차 정의에서 바로 나오지 않는다. 선형성, 급수와 적분의 교환, Fatou 보조정리, [지배수렴 정리](dominated-convergence.md)를 이 정리로 증명한다.
+$f\_n$ 은 점마다 커지며 $f$ 로 간다. 그러나 $0$ 근처에서 $f\_n$ 과 $f$ 의 차이가 한없이 커서 [균등수렴](uniform-convergence.md)하지 않으므로, 균등수렴을 요구하는 극한 교환은 쓸 수 없다. 단조 수렴 정리에 따르면 점마다 증가한다는 것만으로 $\int f\_n$ 의 극한 $2$ 가 $\int f$ 와 같다.
 
-$f_n=\min(f,n)$ 은 $f$ 를 높이 $n$ 에서 잘라 낸 함수다. 점마다 증가해 $f$ 로 가고, 각 $\int f_n$ 은 $\int f$ 이하다. 정리에 따르면 $\int f_n$ 은 $\int f$ 까지 올라간다. $f$ 아래의 단순함수 $s$ 는 유한한 값만 가지므로 어느 $n$ 부터는 $f_n$ 아래에 있고, 그래서 $\int f_n$ 의 극한은 어떤 $\int s$ 보다도 작지 않다.
+일반적인 $f\ge 0$ 에서도 $f_n=\min(f,n)$ 은 $f$ 를 높이 $n$ 에서 잘라 낸 함수다. 점마다 증가해 $f$ 로 가고, 각 $\int f_n$ 은 $\int f$ 이하다. 정리에 따르면 $\int f_n$ 은 $\int f$ 까지 올라간다. $f$ 아래의 단순함수 $s$ 는 유한한 값만 가지므로 어느 $n$ 부터는 $f_n$ 아래에 있고, 그래서 $\int f_n$ 의 극한은 어떤 $\int s$ 보다도 작지 않다.
 
 증가한다는 가정을 빼면 결론이 깨진다. $(0,1]$ 에서 $f_n = n \cdot \mathbf 1_{(0,1/n)}$ 은 모든 점에서 $0$ 으로 가지만 각 적분이 $1$ 이다. 각 점에서 값이 $n$ 까지 올랐다가 $0$ 으로 떨어지므로 증가하는 열이 아니고, $\int f_n$ 은 $1$ 에 머물러 $\int 0=0$ 으로 가지 않는다.
 
@@ -18,7 +18,7 @@ $f_n=\min(f,n)$ 은 $f$ 를 높이 $n$ 에서 잘라 낸 함수다. 점마다 �
 
 ## 진술
 
-[측도](measure.md) 공간 $(X, \Sigma, \mu)$ 에서 각 $n$ 에 대해 $f_n : X \to [0,\infty]$ 가 가측이고 모든 $x$ 에서 다음이 성립한다고 하자.
+[측도](measure.md) 공간 $(X, \Sigma, \mu)$ 에서 각 $n$ 에 대해 $f_n : X \to \lbrack 0,\infty\rbrack$ 가 [가측함수](measurable-functions.md)이고 모든 $x$ 에서 다음이 성립한다고 하자.
 
 $$
 0\le f_1(x)\le f_2(x)\le\cdots
@@ -31,6 +31,8 @@ $$
 $$
 
 $f$ 는 가측함수의 점별 극한이므로 가측이고, 적분값의 수열은 증가하므로 극한이 항상 존재한다.
+
+직관 절의 $f\_n=\min(n,1/\sqrt x)$ 는 가정을 만족하고 결론이 $\lim(2-1/n)=2=\int\_0^1 x^{-1/2}\thinspace dx$ 다. $f\_n=n\cdot\mathbf 1\_{(0,1/n)}$ 은 $f\_1(0.7)=1\gt 0=f\_2(0.7)$ 이므로 가정을 만족하지 않는다.
 
 # 성질
 
@@ -50,7 +52,7 @@ $$
 \int_X f_n\thinspace d\mu\ge\int_{E_n}f_n\thinspace d\mu\ge c\int_{E_n}s\thinspace d\mu
 $$
 
-$s$ 가 단순함수이므로 오른쪽은 유한 개 집합의 측도의 합이고 측도의 아래로부터 연속성을 쓸 수 있다. $n \to \infty$ 를 취하면 다음을 얻는다.
+$s$ 가 단순함수이므로 오른쪽은 유한 개 집합의 측도의 합이고 측도의 아래로부터 연속성(continuity from below)을 쓸 수 있다. $n \to \infty$ 를 취하면 다음을 얻는다.
 
 $$
 \lim_{n\to\infty}\int_X f_n\thinspace d\mu\ge c\int_X s\thinspace d\mu
@@ -76,7 +78,7 @@ $$
 \int_X\liminf_n f_n\thinspace d\mu\le\liminf_n\int_X f_n\thinspace d\mu
 $$
 
-이것이 Fatou 보조정리이고 음이 아니라는 가정만으로 성립한다. 지배함수를 더해 $g - f_n$ 과 $g + f_n$ 양쪽에 적용하면 지배수렴 정리가 나온다.
+이것이 Fatou 보조정리(Fatou's lemma)이고 음이 아니라는 가정만으로 성립한다. 지배함수를 더해 $g - f_n$ 과 $g + f_n$ 양쪽에 적용하면 [지배 수렴 정리](dominated-convergence.md)가 나온다.
 
 ## 적분의 선형성
 
@@ -100,7 +102,7 @@ $$
 
 ## 확률에서의 쓰임
 
-증가하는 사건열의 확률이 합집합의 확률로 수렴한다는 사실, 음이 아닌 [확률변수](random-variables.md)를 유계 확률변수로 잘라 근사해도 기댓값이 보존된다는 사실, 꼬리합 공식
+증가하는 사건열의 확률이 합집합의 확률로 수렴한다는 사실, 음이 아닌 [확률변수](random-variables.md)를 유계 확률변수로 잘라 근사해도 기댓값이 보존된다는 사실, 꼬리합 공식(tail sum formula)
 
 $$
 \mathbb{E}[X]=\int_0^\infty P(X\gt t)\thinspace dt\qquad(X\ge0)
