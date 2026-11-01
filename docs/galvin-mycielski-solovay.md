@@ -6,34 +6,34 @@
 
 # 직관
 
-Galvin–Mycielski–Solovay 정리는 강 측도 영집합을 덧셈과 [Baire 범주](baire-category.md)로 특징짓는다. $X\subseteq\mathbb R$ 이 강 측도 영집합인 것은 모든 제1범주 집합 $M$ 에 대해 $X+M$ 이 직선 전체가 되지 않는 것과 같다.
-
-강 측도 영집합의 정의는 구간의 길이를 쓰고 이 특징은 쓰지 않는다. 그래서 거리가 없는 위상군에서도 오른쪽 조건은 그대로 뜻을 가진다.
-
-강 측도 영집합인지 보려면 양수열마다 그 길이에 맞는 덮개를 만들어야 한다. 가산 집합 $X=\lbrace x\_1,x\_2,\dots\rbrace$ 는 점마다 구간 하나를 주면 되고, 같은 결론이 길이를 쓰지 않고도 나온다. 제1범주 집합 $M$ 을 아무거나 잡으면
+[강 측도 영집합](strong-measure-zero.md)인지 보려면 양수열 $(\varepsilon\_n)$ 마다 길이 $\varepsilon\_n$ 인 구간 $I\_n$ 들로 집합을 덮어야 한다. 셀 수 있는 집합 $X=\lbrace x\_1,x\_2,\dots\rbrace$ 는 점 $x\_n$ 에 길이 $\varepsilon\_n$ 인 구간 하나를 주면 덮인다. 같은 집합을 길이 없이 보려고, 열린구간을 하나도 포함하지 않는 닫힌 집합을 셀 수 있게 모은 집합 $M$ 을 잡고 $X$ 의 점마다 평행이동(translation)해 합친다.
 
 $$
 X+M=\bigcup\_{n\ge1}(x\_n+M)
 $$
 
-이고 평행이동이 제1범주를 보존하므로 오른쪽은 제1범주 집합의 가산 합집합이다. Baire 범주 정리로 $\mathbb R$ 는 제1범주가 아니므로 $X+M\neq\mathbb R$ 이다.
+평행이동한 $x\_n+M$ 도 같은 꼴이므로 오른쪽은 여전히 열린구간을 포함하지 않는 닫힌 집합을 셀 수 있게 모은 것이다. [Baire 범주 정리](baire-category.md)에 따르면 이런 집합은 직선 전체가 되지 못하므로 $X+M\neq\mathbb R$ 이다.
 
-[Cantor 집합](cantor-set.md) $C$ 에서는 같은 덧셈이 직선을 채운다. $M=C+\mathbb Z$ 는 조밀하지 않은 닫힌 집합을 가산 개 합친 것이라 제1범주다. $x\in\lbrack 0,2\rbrack$ 에 대해 $x/2$ 의 삼진 전개에서 자리값 $0,1,2$ 를 각각 $(0,0),(0,2),(2,2)$ 로 가르면 $u,v\in C$ 와 $u+v=x$ 를 얻으므로 $C+C=\lbrack 0,2\rbrack$ 이고, 따라서 $C+M=\lbrack 0,2\rbrack+\mathbb Z=\mathbb R$ 이다. Cantor 집합이 강 측도 영집합이 아니라는 것이 길이 대신 덧셈으로 판정된다.
+[Cantor 집합](cantor-set.md) $C$ 에서는 같은 덧셈이 직선을 채운다. $M=C+\mathbb Z$ 는 $C$ 를 정수만큼 옮긴 닫힌 집합을 셀 수 있는 개수만큼 합친 것이고, 각 조각은 열린구간을 포함하지 않는다. $x\in\lbrack 0,2\rbrack$ 에 대해 $x/2$ 의 삼진 전개에서 자리값 $0,1,2$ 를 각각 $(0,0),(0,2),(2,2)$ 로 가르면 $u,v\in C$ 와 $u+v=x$ 를 얻으므로 $C+C=\lbrack 0,2\rbrack$ 이다. 따라서 $C+M=\lbrack 0,2\rbrack+\mathbb Z=\mathbb R$ 이다. 셀 수 있는 집합과 Cantor 집합이 이 덧셈에서 갈리는 것이 강 측도 영집합인지 아닌지와 일치하는가가 이 정리의 물음이다.
 
 # 정의
 
-두 집합 $A,B\subseteq\mathbb R$ 의 **합집합**은
+두 집합 $A,B\subseteq\mathbb R$ 의 **Minkowski 합(Minkowski sum)** 은
 
 $$
 A+B=\lbrace a+b : a\in A,\thinspace b\in B\rbrace
 $$
 
-이다. $M\subseteq\mathbb R$ 이 **제1범주 집합**이라 함은 조밀하지 않은 닫힌 집합 가산 개의 합집합에 포함되는 것이다.
+이다. 한 점 $x$ 와의 합 $x+B$ 가 $B$ 를 $x$ 만큼 평행이동한 것이다. 직관 절의 Cantor 집합은 $C+C=\lbrack 0,2\rbrack$ 를 만족한다.
 
-**Galvin–Mycielski–Solovay 정리.** $X\subseteq\mathbb R$ 에 대해 다음 둘이 동치다.[^1]
+닫힌 집합 $F\subseteq\mathbb R$ 가 **조밀하지 않은 집합(nowhere dense set)** 이라 함은 열린구간을 하나도 포함하지 않는 것이다. $M\subseteq\mathbb R$ 이 **제1범주 집합(meager set, set of first category)** 이라 함은 조밀하지 않은 닫힌 집합 가산 개의 합집합에 포함되는 것이다. 정수 집합 $\mathbb Z$, Cantor 집합 $C$, 그리고 $C+\mathbb Z=\bigcup\_{j\in\mathbb Z}(C+j)$ 가 제1범주 집합이다.
+
+Galvin–Mycielski–Solovay 정리는 $X\subseteq\mathbb R$ 에 대해 다음 둘이 동치라는 정리다.[^1]
 
 - $X$ 가 강 측도 영집합이다.
 - 모든 제1범주 집합 $M$ 에 대해 $X+M\neq\mathbb R$ 이다.
+
+직관 절의 셀 수 있는 집합은 두 조건을 모두 만족한다. Cantor 집합 $C$ 는 $M=C+\mathbb Z$ 에서 둘째 조건이 거짓이므로, 정리에 따라 강 측도 영집합이 아니다.
 
 # 성질
 
@@ -59,12 +59,12 @@ $X\subseteq\lbrack 0,L\rbrack$ 이라 하고 양수열 $(\varepsilon\_n)$ 이 �
 
 ## 측도 영집합과의 차이
 
-측도가 $0$ 인 집합에는 같은 특징이 없다. $\lbrack 0,1\rbrack$ 안의 Cantor 집합은 측도가 $0$ 이면서 위에서 본 제1범주 집합 $C+\mathbb Z$ 와의 합이 직선 전체다. 덧셈으로 적은 조건은 측도 영집합의 아이디얼보다 작은 아이디얼을 가른다.
+측도가 $0$ 인 집합에는 같은 특징이 없다. $\lbrack 0,1\rbrack$ 안의 Cantor 집합은 측도가 $0$ 이면서 위에서 본 제1범주 집합 $C+\mathbb Z$ 와의 합이 직선 전체다. 덧셈으로 적은 조건은 측도 영집합의 아이디얼(ideal)보다 작은 아이디얼을 가른다.
 
 # 활용
 
 - [Borel 추측](borel-conjecture.md)을 덧셈으로 적는다. 모든 강 측도 영집합이 가산이라는 명제가 모든 제1범주 집합 $M$ 에 대해 $X+M\neq\mathbb R$ 인 $X$ 는 가산이라는 명제와 같아진다.
-- 국소콤팩트 [위상군](topological-groups.md)에서 강 측도 영집합을 정의한다. 둘째 조건은 길이를 쓰지 않고 군 연산과 위상만으로 적힌다.
+- 국소콤팩트(locally compact) [위상군](topological-groups.md)에서 강 측도 영집합을 정의한다. 둘째 조건은 길이를 쓰지 않고 군 연산과 위상만으로 적힌다.
 - 강 측도 영집합들이 이루는 $\sigma$ 아이디얼의 [기수 불변량](cardinal-characteristics.md)을 제1범주 아이디얼 쪽 양으로 바꾸어 계산한다.
 
 [^1]: F. Galvin, J. Mycielski, R. Solovay, "Strong measure zero sets", *Notices of the American Mathematical Society* 26 (1979), A-280. 정리의 진술과 증명이 실린 발표 요지다.
