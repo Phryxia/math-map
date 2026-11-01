@@ -6,19 +6,15 @@
 
 # 직관
 
-편집 거리는 문자열 $s$ 를 문자열 $t$ 로 바꾸는 데 필요한 글자 하나의 삽입, 삭제, 교체의 최소 횟수다. Levenshtein 이 1965 년에 정의해 Levenshtein 거리(Levenshtein distance)라고도 한다[^1]. 길이 $m$ 과 $n$ 인 두 문자열의 편집 거리는 [동적 계획법](dynamic-programming.md)으로 $O(mn)$ 시간에 계산된다.
-
-편집 거리는 문자열 집합 위의 [거리 공간](metric-spaces.md)의 거리 함수다.
-
 $\mathtt{kitten}$ 을 $\mathtt{sitting}$ 으로 바꾼다. 첫 글자 $\mathtt k$ 를 $\mathtt s$ 로, 다섯째 글자 $\mathtt e$ 를 $\mathtt i$ 로 바꾸고 끝에 $\mathtt g$ 를 넣으면 세 번이다. 두 번으로는 안 된다는 것을 보이려면 모든 편집 순서를 따져야 하는데, 그 수는 길이에 대해 지수적으로 많다.
 
-마지막 글자만 보면 경우가 셋으로 줄어든다. 최적의 편집에서 $s$ 의 마지막 글자는 지워지거나, $t$ 의 마지막 글자가 새로 넣어지거나, 두 마지막 글자가 서로 대응한다(같으면 그대로, 다르면 교체). 어느 경우든 남는 것은 두 문자열의 앞부분끼리의 같은 문제다. 그래서 앞부분 쌍 $(s_1\cdots s_i,\thinspace t_1\cdots t_j)$ 마다 답을 표에 적어 두고, 표를 작은 쪽부터 채운다.
+마지막 글자만 보면 경우가 셋으로 줄어든다. 최적의 편집에서 $s$ 의 마지막 글자는 지워지거나, $t$ 의 마지막 글자가 새로 넣어지거나, 두 마지막 글자가 서로 대응한다(같으면 그대로, 다르면 교체). 어느 경우든 남는 것은 두 문자열의 앞부분끼리의 같은 문제다. 그래서 앞부분 쌍 $(s_1\cdots s_i,\thinspace t_1\cdots t_j)$ 마다 답을 표에 적어 두고, [동적 계획법](dynamic-programming.md)으로 표를 작은 쪽부터 채운다.
 
 # 정의
 
 ## 편집 연산과 거리
 
-알파벳 $\Sigma$ 위의 문자열에서 글자 하나를 넣는 것, 지우는 것, 다른 글자로 바꾸는 것을 편집 연산이라 한다. $s$ 에 편집 연산을 $k$ 번 해 $t$ 가 되는 최소의 $k$ 를 $d(s,t)$ 로 쓴다.
+알파벳 $\Sigma$ 위의 문자열에서 글자 하나를 넣는 것, 지우는 것, 다른 글자로 바꾸는 것을 편집 연산(edit operation)이라 한다. $s$ 에 편집 연산을 $k$ 번 해 $t$ 가 되는 최소의 $k$ 를 $d(s,t)$ 로 쓰고 $s$ 와 $t$ 의 **편집 거리** 라 한다. Levenshtein 이 1965 년에 정의해 Levenshtein 거리(Levenshtein distance)라고도 한다[^1]. 직관 절에서 $d(\mathtt{kitten},\mathtt{sitting})=3$ 이고, $d(\mathtt{recieve},\mathtt{receive})=2$ 다. $\mathtt{ie}$ 를 $\mathtt{ei}$ 로 바꾸는 데 교체 두 번이 든다.
 
 ## 점화식
 
@@ -28,7 +24,7 @@ $$
 D(i,j)=\min\bigl(D(i-1,j)+1,\quad D(i,j-1)+1,\quad D(i-1,j-1)+\lbrack s_i\ne t_j\rbrack\bigr)
 $$
 
-$\lbrack s_i\ne t_j\rbrack$ 는 두 글자가 다르면 $1$, 같으면 $0$ 이다. $d(s,t)=D(m,n)$ 이다.
+$\lbrack s_i\ne t_j\rbrack$ 는 두 글자가 다르면 $1$, 같으면 $0$ 이다. $d(s,t)=D(m,n)$ 이다. $s=\mathtt{ab}$, $t=\mathtt{b}$ 이면 $D(1,1)=1$, $D(2,1)=\min(D(1,1)+1,\thinspace D(2,0)+1,\thinspace D(1,0)+0)=1$ 이다.
 
 ```typescript
 function editDistance(s: string, t: string): number {
@@ -50,13 +46,13 @@ function editDistance(s: string, t: string): number {
 
 ## 점화식의 정당성
 
-정리. 위 점화식의 $D(m,n)$ 은 편집 거리와 같다[^2].
+위 점화식의 $D(m,n)$ 은 편집 거리와 같다[^2].
 
 증명의 요지. 최소 편집 순서는 두 문자열의 정렬(alignment), 곧 $s$ 의 글자와 $t$ 의 글자를 순서를 지키며 짝짓고 짝이 없는 글자를 남긴 것으로 바꿀 수 있다. 짝이 없는 $s$ 의 글자는 삭제, 짝이 없는 $t$ 의 글자는 삽입, 다른 글자끼리의 짝은 교체이고, 비용은 이 셋의 개수다. 정렬에서 $s_m$ 과 $t_n$ 의 처지는 $s_m$ 에 짝이 없음, $t_n$ 에 짝이 없음, $s_m$ 과 $t_n$ 이 짝을 이룸의 셋 가운데 하나이고, 각각 점화식의 세 항이다.
 
 ## 거리 공리
 
-정리. $d$ 는 문자열 집합 위의 거리 함수다.
+$d$ 는 문자열 집합을 [거리 공간](metric-spaces.md)으로 만드는 거리 함수다.
 
 증명의 요지. $d(s,t)=0$ 은 $s=t$ 와 동치다. 삽입과 삭제는 서로의 역연산이고 교체의 역연산은 교체이므로 $d(s,t)=d(t,s)$ 다. $s$ 를 $u$ 로 바꾸는 최소 순서 뒤에 $u$ 를 $t$ 로 바꾸는 최소 순서를 이으면 $s$ 를 $t$ 로 바꾸므로 $d(s,t)\le d(s,u)+d(u,t)$ 다.
 
