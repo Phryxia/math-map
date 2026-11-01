@@ -6,24 +6,22 @@
 
 # 직관
 
-매개변수 복잡도는 입력의 크기 $n$ 과 함께 매개변수 $k$ 를 보고, 실행 시간을 $f(k)\cdot n^{O(1)}$ 꼴로 막을 수 있는지에 따라 문제를 가르는 복잡도 이론이다. $f$ 는 아무 계산 가능한 함수여도 되므로 $k$ 가 작으면 [NP-완전성](np-completeness.md)(nondeterministic polynomial time)이 증명된 문제도 빠르게 풀린다. 크기 $k$ 의 정점 덮개는 $O(2^kn)$ 시간에 찾지만, 크기 $k$ 의 [클릭](clique-problem.md)은 $n^{o(k)}$ 시간 알고리즘이 없으리라 여겨진다. 이 차이를 가르는 것이 고정 매개변수 다루기 쉬움과 W 계층이다.
-
-그래프에서 모든 간선의 한 끝점 이상을 담는 정점 $k$ 개를 찾는다. 이런 정점 집합을 [정점 덮개](vertex-cover.md)라 한다. 정점 $k$ 개를 모두 시도하면 $\binom nk\approx n^k$ 가지라서 $k=20$, $n=1000$ 이면 끝나지 않는다.
+그래프에서 모든 간선의 한 끝점 이상을 담는 정점 $k$ 개를 찾는다. 이런 정점 집합을 [정점 덮개](vertex-cover.md)라 하고, 크기 $k$ 의 정점 덮개가 있는지 판정하는 문제는 [NP-완전](np-completeness.md)(nondeterministic polynomial time)이다. 정점 $k$ 개를 모두 시도하면 $\binom nk\approx n^k$ 가지라서 $k=20$, $n=1000$ 이면 끝나지 않는다.
 
 간선 하나 $uv$ 를 아무렇게나 고른다. 덮개는 $u$ 나 $v$ 를 반드시 담으므로 두 경우로 나눈다. $u$ 를 넣으면 $u$ 에 붙은 간선을 지우고 정점 $k-1$ 개로 나머지를 덮는 문제가 되고, $v$ 도 같다. 경우가 나뉠 때마다 $k$ 가 $1$ 씩 줄어 깊이 $k$ 의 이진 나무가 되므로 잎이 $2^k$ 개이고, 잎마다 $O(n)$ 시간이 든다. $k=20$ 이면 $2^{20}\approx 10^6$ 이라 $n$ 이 커도 풀린다.
 
-크기 $k$ 의 클릭, 곧 서로 모두 이어진 정점 $k$ 개를 찾을 때는 이렇게 나눌 간선이 없다. 클릭에 들어가지 않는 정점이 대부분이라 한 정점을 고르는 갈래가 $n$ 가지이고, 시간이 $n^k$ 꼴로 남는다. 지수에서 $n$ 과 $k$ 가 섞이는지가 두 문제를 가른다.
+크기 $k$ 의 [클릭](clique-problem.md), 곧 서로 모두 이어진 정점 $k$ 개를 찾을 때는 이렇게 나눌 간선이 없다. 클릭에 들어가지 않는 정점이 대부분이라 한 정점을 고르는 갈래가 $n$ 가지이고, 시간이 $n^k$ 꼴로 남는다. 지수에서 $n$ 과 $k$ 가 섞이는지가 두 문제를 가른다.
 
 # 정의
 
 **매개변수 문제(parameterized problem)** 는 쌍 $(x,k)$ 의 집합 $L\subseteq\Sigma^\ast\times\mathbb N$ 이다. $k$ 를 매개변수라 하고 $n=\lvert x\rvert$ 로 쓴다.
 
-- **고정 매개변수 다루기 쉬움(fixed-parameter tractable, FPT).** 계산 가능한 함수 $f$ 와 상수 $c$ 가 있어 $(x,k)\in L$ 을 $f(k)n^c$ 시간에 판정한다.
-- **XP**(slice-wise polynomial)**.** 계산 가능한 함수 $f$ 가 있어 $n^{f(k)}$ 시간에 판정한다. 클릭의 $n^k$ 알고리즘이 이 부류에 든다.
-- **커널(kernel).** $(x,k)$ 를 다항시간에 같은 답의 $(x',k')$ 로 바꾸되 $\lvert x'\rvert,k'\le g(k)$ 인 변환이다. $g$ 가 다항식이면 다항 커널이라 한다.
-- **매개변수 환원(parameterized reduction).** $(x,k)$ 를 $f(k)n^c$ 시간에 같은 답의 $(x',k')$ 로 바꾸되 $k'\le g(k)$ 인 변환이다. FPT 는 이 환원에 대해 닫혀 있다.
+- **고정 매개변수 다루기 쉬움(fixed-parameter tractable, FPT)** 은 계산 가능한 함수 $f$ 와 상수 $c$ 가 있어 $(x,k)\in L$ 을 $f(k)n^c$ 시간에 판정할 수 있다는 것이다. 직관의 정점 덮개는 $f(k)=2^k$, $c=1$ 로 FPT 다.
+- **XP**(slice-wise polynomial)는 계산 가능한 함수 $f$ 가 있어 $n^{f(k)}$ 시간에 판정되는 매개변수 문제의 부류다. 직관의 클릭은 정점 $k$ 개를 모두 시도하는 $n^k$ 알고리즘으로 XP 에 든다.
+- **커널(kernel)** 은 $(x,k)$ 를 다항시간에 같은 답의 $(x',k')$ 로 바꾸되 $\lvert x'\rvert,k'\le g(k)$ 인 변환이다. $g$ 가 다항식이면 다항 커널이라 한다. 아래 성질 절의 Buss 커널은 정점 덮개의 입력을 간선 $O(k^2)$ 개로 줄인다.
+- **매개변수 환원(parameterized reduction)** 은 $(x,k)$ 를 $f(k)n^c$ 시간에 같은 답의 $(x',k')$ 로 바꾸되 $k'\le g(k)$ 인 변환이다. FPT 는 이 환원에 대해 닫혀 있다. 그래프 $G$ 와 $k$ 를 보그래프 $\overline G$ 와 같은 $k$ 로 보내면 크기 $k$ 의 클릭이 크기 $k$ 의 독립집합으로 바뀌므로, 클릭에서 독립집합으로 가는 매개변수 환원이다. 정점 덮개에서 독립집합으로 가는 $(G,k)\mapsto(G,n-k)$ 는 매개변수가 $n$ 에 의존해 매개변수 환원이 아니다.
 
-**W 계층(W hierarchy)** $\mathrm{FPT}\subseteq\mathrm W\lbrack 1\rbrack\subseteq\mathrm W\lbrack 2\rbrack\subseteq\cdots\subseteq\mathrm{XP}$ 은 불 회로에서 참인 입력이 정확히 $k$ 개인 할당을 찾는 문제로 정의된다. $\mathrm W\lbrack t\rbrack$ 는 입력에서 출력까지의 경로에 팬인이 큰 게이트가 $t$ 개 이하인 회로에 대한 이 문제와 매개변수 환원으로 동치인 문제들이다[^1].
+**W 계층(W hierarchy)** $\mathrm{FPT}\subseteq\mathrm W\lbrack 1\rbrack\subseteq\mathrm W\lbrack 2\rbrack\subseteq\cdots\subseteq\mathrm{XP}$ 은 불 회로에서 참인 입력이 정확히 $k$ 개인 할당을 찾는 문제로 정의된다. $\mathrm W\lbrack t\rbrack$ 는 입력에서 출력까지의 경로에 팬인(fan-in)이 큰 게이트가 $t$ 개 이하인 회로에 대한 이 문제와 매개변수 환원으로 동치인 문제들이다[^1]. 클릭은 정점마다 입력 변수를 두고, 이어지지 않은 정점 쌍 $uv$ 마다 작은 게이트 $\neg x_u\vee\neg x_v$ 를 두어 그것들을 큰 AND 게이트 하나로 묶은 회로로 적힌다. 참인 입력이 정확히 $k$ 개인 할당이 크기 $k$ 의 클릭이므로 클릭은 $\mathrm W\lbrack 1\rbrack$ 에 든다.
 
 # 성질
 
