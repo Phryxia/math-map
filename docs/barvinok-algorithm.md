@@ -26,35 +26,39 @@ $$
 
 그래서 이런 뿔을 생성벡터가 기저인 뿔들의 부호 있는 합으로 바꾼다. 뿔 둘을 더하고 하나를 빼는 식의 조합으로 원래 뿔의 격자점을 정확히 한 번씩 세게 만들 수 있고, 조합에 쓰이는 뿔의 개수가 $k$ 가 아니라 $\log k$ 규모로 묶인다.
 
-그 유리함수들은 단일모듈 뿔의 생성함수이고, 격자점을 하나씩 열거하지 않으므로 개수가 지수적으로 커도 시간이 늘지 않는다.
-
 # 정의
 
-$P\subset\mathbb R^n$ 을 유리 다면체라 할 때 그 **격자점 생성함수**는
+$P\subset\mathbb R^n$ 을 유리 다면체(rational polyhedron)라 할 때 그 **격자점 생성함수(lattice point generating function)** 는
 
 $$
 f(P;z) = \sum\_{m\in P\cap\mathbb Z^n} z^m, \qquad z^m=z_1^{m_1}\cdots z_n^{m_n}
 $$
 
-이다. $P$ 가 유계이면 Laurent 다항식이고, 뿔이면 어떤 영역에서 수렴하는 유리함수로 연장된다.
+이다. $P$ 가 유계이면 Laurent 다항식(Laurent polynomial)이고, 뿔이면 어떤 영역에서 수렴하는 유리함수로 연장된다. 직관 절의 구간에서는 $f(\lbrack 0,N\rbrack;z)=1+z+\dots+z^N$ 이다.
 
-뿔 $C=\lbrace \lambda_1u_1+\dots+\lambda_nu_n:\lambda_i\ge 0\rbrace$ 이 **단일모듈**이라는 것은 생성벡터 $u_1,\dots,u_n\in\mathbb Z^n$ 이 $\mathbb Z^n$ 의 기저인 것이다. 이때
+뿔 $C=\lbrace \lambda_1u_1+\dots+\lambda_nu_n:\lambda_i\ge 0\rbrace$ 이 **단일모듈(unimodular)** 이라는 것은 생성벡터 $u_1,\dots,u_n\in\mathbb Z^n$ 이 $\mathbb Z^n$ 의 기저인 것이다. 이때
 
 $$
 f(C;z) = \frac{1}{\prod\_{i=1}^n (1-z^{u_i})}
 $$
 
-이다.
+이다. 직관 절의 $(1,0)$, $(0,1)$ 이 생성하는 뿔은 단일모듈이고, $(1,0)$, $(1,2)$ 가 생성하는 뿔은 두 벡터의 행렬식이 $2$ 여서 $\mathbb Z^2$ 의 기저가 아니므로 단일모듈이 아니다. 이 뿔의 격자점 $(1,1)$ 은 두 생성벡터의 정수결합이 아니다.
 
 ## Brion 항등식
 
-**정리**(Brion). $P$ 가 유리 다면체이고 $V$ 가 그 꼭짓점 집합이면
+Brion 항등식(Brion's identity)에 따르면 $P$ 가 유리 다면체이고 $V$ 가 그 꼭짓점 집합일 때
 
 $$
 f(P;z) = \sum\_{v\in V} f(K_v;z)
 $$
 
-이다. $K_v=v+\mathrm{cone}(P-v)$ 는 $v$ 에서 $P$ 를 본 접뿔이다.[^1]
+이다. $K_v=v+\mathrm{cone}(P-v)$ 는 $v$ 에서 $P$ 를 본 접뿔(tangent cone)이다.[^1] 구간 $\lbrack 0,N\rbrack$ 에서는 $K\_0=\lbrack 0,\infty)$ 와 $K\_N=(-\infty,N\rbrack$ 이고
+
+$$
+\frac{1}{1-z}+\frac{z^N}{1-z^{-1}}=\frac{1}{1-z}-\frac{z^{N+1}}{1-z}=\frac{1-z^{N+1}}{1-z}
+$$
+
+이 직관 절의 식과 같다.
 
 유계인 좌변과 유계가 아닌 뿔들의 합이 같다는 것은 유리함수로 연장한 뒤의 등식이다. 각 뿔의 생성함수는 서로 다른 영역에서 수렴하고, 유리함수로서 더하면 수렴영역 밖의 항들이 상쇄된다.
 
@@ -71,9 +75,9 @@ $$
 
 ## 뿔 분해의 깊이
 
-**정리**(Barvinok). 차원 $n$ 이 고정되면 유리 뿔 $C$ 를 단일모듈 뿔들의 부호 있는 합으로 분해하는 알고리즘이 있고, 생성되는 뿔의 개수가 $C$ 의 생성벡터를 적는 비트 수의 다항식으로 묶인다.[^2]
+Barvinok 의 정리에 따르면 차원 $n$ 이 고정될 때 유리 뿔 $C$ 를 단일모듈 뿔들의 부호 있는 합으로 분해하는 알고리즘이 있고, 생성되는 뿔의 개수가 $C$ 의 생성벡터를 적는 비트 수의 다항식 이하다.[^2]
 
-증명의 요지는 행렬식의 크기를 줄이는 재귀다. 생성벡터 [행렬](matrices.md)의 행렬식 절댓값이 $D$ 인 뿔에서, [연분수](continued-fractions.md)로 짧은 격자벡터 $w$ 를 하나 찾아 그것을 생성벡터 하나와 바꾼 뿔 $n$ 개를 만들면 각 행렬식이 $D^{1-1/n}$ 규모로 떨어진다. 재귀의 깊이가 $\log\log D$ 규모이고 각 단계가 $n$ 갈래이므로 뿔의 총 개수가 $D$ 의 다항시간 범위에 든다. 짧은 벡터를 찾는 데 LLL(Lenstra–Lenstra–Lovász) 축소를 쓰며, 고정 차원에서는 [최단벡터 문제](shortest-vector-problem.md)를 정확히 푸는 것도 다항시간이다.
+증명의 요지는 행렬식의 크기를 줄이는 재귀다. 생성벡터 [행렬](matrices.md)의 행렬식 절댓값이 $D$ 인 뿔에서, [연분수](continued-fractions.md)로 짧은 격자벡터 $w$ 를 하나 찾아 그것을 생성벡터 하나와 바꾼 뿔 $n$ 개를 만들면 각 행렬식이 $D^{1-1/n}$ 규모로 떨어진다. 재귀의 깊이가 $\log\log D$ 규모이고 각 단계가 $n$ 갈래이므로 뿔의 총 개수는 $n^{O(\log\log D)}=(\log D)^{O(\log n)}$ 이고, $n$ 이 고정되면 $\log D$ 의 다항식이다. 짧은 벡터를 찾는 데 LLL(Lenstra–Lenstra–Lovász) 축소를 쓰며, 고정 차원에서는 [최단벡터 문제](shortest-vector-problem.md)를 정확히 푸는 것도 다항시간이다.
 
 ## 시간 복잡도
 
@@ -87,10 +91,10 @@ $P$ 가 격자 다면체이면 $tP$ 에 알고리즘을 $n+1$ 개의 $t$ 값에�
 
 # 활용
 
-- **정수계획법의 해의 개수.** 연립 선형 부등식의 정수해 개수를 세는 문제가 그대로 격자점 세기다. 변수의 개수가 고정된 경우의 계수 문제가 이 알고리즘으로 다항시간이 된다.
-- **매개변수 다면체.** 우변 $b$ 를 매개변수로 둔 $\lbrace x:Ax\le b\rbrace$ 의 격자점 개수가 $b$ 의 준다항식이고, 분해를 매개변수 상태로 수행해 그 준다항식을 얻는다. 컴파일러의 반복문 변환에서 반복 횟수를 세는 데 쓰인다.
-- **분할수의 계산.** 고정된 동전 종류로 금액 $t$ 를 만드는 방법의 수가 매개변수 다면체의 격자점 개수이고, 그 준다항식 표현을 직접 계산한다.
-- **토릭 다양체의 불변량.** 격자 다면체의 생성함수가 대응하는 [토릭 다양체](toric-varieties.md)의 Hilbert 급수이므로, 분해의 각 항이 아핀 조각의 기여에 대응한다. Todd 류를 쓰는 [Euler–Maclaurin 공식](euler-maclaurin.md)의 계산이 같은 분해를 쓴다.
+- 정수계획법의 해의 개수. 연립 선형 부등식의 정수해 개수를 세는 문제가 그대로 격자점 세기다. 변수의 개수가 고정된 경우의 계수 문제가 이 알고리즘으로 다항시간이 된다.
+- 매개변수 다면체. 우변 $b$ 를 매개변수로 둔 $\lbrace x:Ax\le b\rbrace$ 의 격자점 개수가 $b$ 의 준다항식(quasi-polynomial)이고, 분해를 매개변수 상태로 수행해 그 준다항식을 얻는다. 컴파일러의 반복문 변환에서 반복 횟수를 세는 데 쓰인다.
+- 분할수의 계산. 고정된 동전 종류로 금액 $t$ 를 만드는 방법의 수가 매개변수 다면체의 격자점 개수이고, 그 준다항식 표현을 직접 계산한다.
+- 토릭 다양체의 불변량. 격자 다면체의 생성함수가 대응하는 [토릭 다양체](toric-varieties.md)의 Hilbert 급수(Hilbert series)이므로, 분해의 각 항이 아핀 조각의 기여에 대응한다. Todd 류(Todd class)를 쓰는 [Euler–Maclaurin 공식](euler-maclaurin.md)의 계산이 같은 분해를 쓴다.
 
 [^1]: Matthias Beck and Sinai Robins, *Computing the Continuous Discretely*, 2nd ed., Springer, 2015, ch. 11.
 [^2]: Alexander I. Barvinok, "A polynomial time algorithm for counting integral points in polyhedra when the dimension is fixed", *Mathematics of Operations Research* 19 (1994), 769–779.
