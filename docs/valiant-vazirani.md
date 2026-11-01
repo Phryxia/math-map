@@ -6,11 +6,7 @@
 
 # 직관
 
-Valiant–Vazirani 정리는 명제논리식 $\varphi$ 를 받아 새 논리식 $\psi$ 를 내는 무작위 다항시간 환원이 있어서, $\varphi$ 가 충족 불가능하면 $\psi$ 도 충족 불가능하고 $\varphi$ 가 충족 가능하면 $\psi$ 의 충족 할당이 정확히 하나일 확률이 $1/(8n)$ 이상이라는 정리다. $n$ 은 $\varphi$ 의 변수 수다. L. G. Valiant 와 V. V. Vazirani 가 1986 년에 증명했다[^1].
-
-해가 하나뿐임이 약속된 입력에서도 충족가능성 문제(satisfiability, SAT)가 무작위 환원 아래에서 어렵다는 것을 보인다. [NP-완전성과 Cook–Levin 정리](np-completeness.md)의 SAT 에 범용 해시족의 무작위 제약을 더하는 것이 증명의 수단이다.
-
-충족 할당이 많은 논리식에서 할당 하나만 남기고 나머지를 지우려 한다. 변수 $n$ 개의 할당 $2^n$ 개를 무작위로 칸 $2^k$ 개에 나누어 넣고 $0$ 번 칸에 든 할당만 남기면, 충족 할당이 $s$ 개일 때 평균 $s/2^k$ 개가 남는다. $2^k$ 가 $s$ 의 두 배에서 네 배 사이이면 평균이 $1/4$ 에서 $1/2$ 사이라서, 정확히 하나가 남을 확률이 상수 이상이다.
+[NP-완전성과 Cook–Levin 정리](np-completeness.md)의 충족가능성 문제(satisfiability, SAT)에서, 충족 할당이 많은 논리식의 할당 하나만 남기고 나머지를 지우려 한다. 변수 $n$ 개의 할당 $2^n$ 개를 무작위로 칸 $2^k$ 개에 나누어 넣고 $0$ 번 칸에 든 할당만 남기면, 충족 할당이 $s$ 개일 때 평균 $s/2^k$ 개가 남는다. $2^k$ 가 $s$ 의 두 배에서 네 배 사이이면 평균이 $1/4$ 에서 $1/2$ 사이라서, 정확히 하나가 남을 확률이 상수 이상이다.
 
 $s$ 는 모르므로 $k$ 를 $2$ 부터 $n+1$ 까지에서 무작위로 고른다. 그중 하나는 $s$ 에 맞는 값이고 그 값을 고를 확률이 $1/n$ 이다. 칸에 나누는 규칙은 비트 단위 일차식으로 고르면 "$0$ 번 칸에 든다" 는 조건이 논리식으로 쓰인다.
 
@@ -18,9 +14,9 @@ $s$ 는 모르므로 $k$ 를 $2$ 부터 $n+1$ 까지에서 무작위로 고른�
 
 ## 유일 충족가능성 문제
 
-**유일 충족가능성 문제(unique satisfiability, USAT)** 는 충족 할당이 정확히 하나인 논리식을 예, 충족 불가능한 논리식을 아니오로 하는 약속 문제(promise problem)다. 충족 할당이 둘 이상인 입력에서는 어떤 답도 허용한다.
+**유일 충족가능성 문제(unique satisfiability, USAT)** 는 충족 할당이 정확히 하나인 논리식을 예, 충족 불가능한 논리식을 아니오로 하는 약속 문제(promise problem)다. 충족 할당이 둘 이상인 입력에서는 어떤 답도 허용한다. $x_1\wedge x_2$ 는 충족 할당이 $11$ 하나뿐이어서 예이고, $x_1\wedge\neg x_1$ 은 아니오이며, 충족 할당이 셋인 $x_1\vee x_2$ 는 약속 밖이다.
 
-## 진술
+## Valiant–Vazirani 환원
 
 변수 $x\in\lbrace 0,1\rbrace^n$ 위의 CNF(conjunctive normal form) 논리식 $\varphi$ 에서 다음 $\psi$ 를 만든다.
 
@@ -28,19 +24,21 @@ $s$ 는 모르므로 $k$ 를 $2$ 부터 $n+1$ 까지에서 무작위로 고른�
 2. $A\in\mathbb F_2^{k\times n}$ 과 $b\in\mathbb F_2^k$ 를 균등하게 고른다.
 3. $\psi(x)=\varphi(x)\wedge(Ax+b=0)$ 으로 둔다. 일차식 조건은 보조 변수를 써서 CNF 로 바꾼다.
 
-정리. $\varphi$ 가 충족 불가능하면 $\psi$ 도 충족 불가능하다. $\varphi$ 가 충족 가능하면
-
-$$
-\Pr\big\lbrack\ \psi\text{ 의 충족 할당이 정확히 하나다}\ \big\rbrack\ge\frac{1}{8n}
-$$
-
-이다.
+$\varphi=x_1\vee x_2$ 에서 $k=2$, $A$ 가 단위행렬, $b=(1,0)$ 이 뽑히면 조건 $Ax+b=0$ 은 $x=(1,0)$ 이고, $\varphi(1,0)=1$ 이므로 $\psi$ 의 충족 할당은 $10$ 하나다. $b=(0,0)$ 이 뽑히면 $x=(0,0)$ 이 $\varphi$ 를 거짓으로 만들어 $\psi$ 는 충족 불가능하다.
 
 # 성질
 
-## 증명의 요지
+## Valiant–Vazirani 정리
 
-$h(x)=Ax+b$ 는 $\lbrace 0,1\rbrace^n$ 에서 $\lbrace 0,1\rbrace^k$ 로 가는 쌍마다 독립인 해시족이다. $\varphi$ 의 충족 할당 집합을 $S$, $\lvert S\rvert=s$ 라 하고 $p=2^{-k}$ 로 둔다. $x\in S$ 가 유일하게 남을 확률은 $h(x)=0$ 일 확률에서 다른 $y\in S$ 와 함께 $0$ 이 될 확률들을 뺀 것 이상이다. 쌍마다 독립이므로
+정리(Valiant–Vazirani). $\varphi$ 가 충족 불가능하면 $\psi$ 도 충족 불가능하다. $\varphi$ 가 충족 가능하면
+
+$$
+\Pr\big\lbrack\thinspace\psi\text{ 의 충족 할당이 정확히 하나다}\thinspace\big\rbrack\ge\frac{1}{8n}
+$$
+
+이다. L. G. Valiant 와 V. V. Vazirani 가 1986 년에 증명했다[^1]. 곧 해가 하나뿐임이 약속된 입력에서도 SAT 가 무작위 환원 아래에서 어렵다.
+
+증명의 요지. $h(x)=Ax+b$ 는 $\lbrace 0,1\rbrace^n$ 에서 $\lbrace 0,1\rbrace^k$ 로 가는 쌍마다 독립인 해시족이다. $\varphi$ 의 충족 할당 집합을 $S$, $\lvert S\rvert=s$ 라 하고 $p=2^{-k}$ 로 둔다. $x\in S$ 가 유일하게 남을 확률은 $h(x)=0$ 일 확률에서 다른 $y\in S$ 와 함께 $0$ 이 될 확률들을 뺀 것 이상이다. 쌍마다 독립이므로
 
 $$
 \Pr\lbrack\text{정확히 하나가 남는다}\rbrack\ge\sum_{x\in S}\Big(p-\sum_{y\in S,\ y\ne x}p^2\Big)\ge sp(1-sp)
@@ -57,7 +55,7 @@ $$
 
 # 활용
 
-- [Toda 정리](toda-theorem.md). [다항 계층](polynomial-hierarchy.md) 전체가 해의 수를 세는 신탁 하나로 다항시간에 풀린다는 정리 $\mathrm{PH}\subseteq\mathrm P^{\char35{}\mathrm P}$ 의 첫 단계가 이 환원을 계층의 각 층에 적용한 것이다[^2]. $\mathrm{PH}$ 는 다항 계층(polynomial hierarchy)이다.
+- [Toda 정리](toda-theorem.md). [다항 계층](polynomial-hierarchy.md)(polynomial hierarchy, PH) 전체가 해의 수를 세는 신탁 하나로 다항시간에 풀린다는 정리 $\mathrm{PH}\subseteq\mathrm P^{\char35{}\mathrm P}$ 의 첫 단계가 이 환원을 계층의 각 층에 적용한 것이다[^2]. $\mathrm{PH}$ 는 다항 계층(polynomial hierarchy)이다.
 - [고립 보조정리](isolation-lemma.md). 무작위 무게로 최소 해를 하나만 남기는 같은 목표를 해시 대신 무게 합으로 이룬다. 두 방법 모두 해가 여럿인 문제에서 해 하나를 골라내는 데 쓰인다.
 - 근사 세기. 칸 수 $2^k$ 를 바꿔 가며 $0$ 번 칸에 할당이 남는지를 보면 충족 할당의 수를 상수배 안에서 추정한다. L. Stockmeyer 의 근사 세기와 SAT 풀이기를 쓰는 해시 기반 모형 세기가 이 방식이다.
 
