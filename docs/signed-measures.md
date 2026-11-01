@@ -6,10 +6,6 @@
 
 # 직관
 
-부호 측도는 음수 값도 가질 수 있는 측도다. 겹치지 않는 조각의 값을 더하면 전체의 값이라는 가산 가법성은 그대로 두고, 값이 $0$ 이상이라는 조건만 뺀다. 부호가 바뀌는 함수 $f$ 를 집합 위에서 적분한 값 $E\mapsto\int_E f\thinspace d\mu$ 와 두 유한 측도의 차 $\mu_1-\mu_2$ 가 대표적인 예다.
-
-Hahn 분해 정리(Hahn decomposition theorem)에 따르면 공간을 값이 양수인 쪽과 음수인 쪽으로 가를 수 있다. 그 결과로 모든 부호 측도는 서로 겹치지 않는 곳에 실린 두 측도의 차로 쓰이고, 이것이 Jordan 분해(Jordan decomposition)다.
-
 구간 $[-1,1]$ 의 부분집합 $E$ 에 $\nu(E)=\int_E x\thinspace dx$ 를 준다. 겹치지 않는 조각으로 나누면 조각의 적분을 더한 것이 전체의 적분이므로 $\nu$ 는 측도처럼 더해진다. 그러나 $\nu([-1,0])=-\frac12$ 이어서 측도가 아니다.
 
 $\nu$ 의 값이 가장 큰 집합은 $x\ge 0$ 인 점을 전부 모은 $P=[0,1]$ 이고 값은 $\frac12$ 다. 가장 작은 집합은 나머지 $N=[-1,0)$ 이고 값은 $-\frac12$ 다. $P$ 의 부분집합에서 $\nu$ 는 항상 $0$ 이상이고 $N$ 의 부분집합에서는 항상 $0$ 이하다. 그래서 $\nu^+(E)=\nu(E\cap P)$ 와 $\nu^-(E)=-\nu(E\cap N)$ 은 둘 다 측도이고 $\nu=\nu^+-\nu^-$ 다.
@@ -22,13 +18,13 @@ $\nu$ 의 값이 가장 큰 집합은 $x\ge 0$ 인 점을 전부 모은 $P=[0,1]
 
 ## 부호 측도
 
-$(X,\mathcal M)$ 이 가측 공간일 때 함수 $\nu:\mathcal M\to\lbrack -\infty,\infty\rbrack$ 가 다음을 만족하면 **부호 측도** 라 한다.
+$(X,\mathcal M)$ 이 가측 공간(measurable space)일 때 함수 $\nu:\mathcal M\to\lbrack -\infty,\infty\rbrack$ 가 다음을 만족하면 **부호 측도** 라 한다.
 
 1. $\nu(\varnothing)=0$ 이다.
 2. $\nu$ 는 $+\infty$ 와 $-\infty$ 가운데 많아야 하나만 값으로 갖는다.
 3. 서로소인 가측집합 $E_1,E_2,\dots$ 에 대해 $\nu\bigl(\bigcup_n E_n\bigr)=\sum_n\nu(E_n)$ 이다. 좌변이 유한하면 우변의 급수는 절대수렴한다.
 
-둘째 조건은 $\infty-\infty$ 가 나오지 않게 한다. 값이 모두 유한하면 **유한 부호 측도** 라 한다.
+둘째 조건은 $\infty-\infty$ 가 나오지 않게 한다. 값이 모두 유한하면 **유한 부호 측도(finite signed measure)** 라 한다. 직관 절의 $\nu(E)=\int\_E x\thinspace dx$ 는 값이 $\lbrack -\frac12,\frac12\rbrack$ 안에 있는 유한 부호 측도다. 두 유한 측도의 차 $\mu\_1-\mu\_2$ 와, 측도 $\mu$ 에 대해 적분가능한 $f$ 로 만든 $E\mapsto\int\_E f\thinspace d\mu$ 도 유한 부호 측도다.
 
 ## 양집합과 음집합
 
@@ -38,7 +34,7 @@ $\nu(E)=0$ 인 것만으로는 영집합이 아니다. 직관 절의 $\nu$ 에�
 
 ## 상호 특이
 
-두 측도 $\mu$ 와 $\lambda$ 에 대해 $X=A\cup B$ 인 서로소 가측집합 $A,B$ 가 존재해 $\mu(B)=0$ 이고 $\lambda(A)=0$ 이면 $\mu$ 와 $\lambda$ 가 **상호 특이(mutually singular)** 하다고 하고 $\mu\perp\lambda$ 로 쓴다. 두 측도가 겹치지 않는 곳에 실려 있다는 뜻이다.
+두 측도 $\mu$ 와 $\lambda$ 에 대해 $X=A\cup B$ 인 서로소 가측집합 $A,B$ 가 존재해 $\mu(B)=0$ 이고 $\lambda(A)=0$ 이면 $\mu$ 와 $\lambda$ 가 **상호 특이(mutually singular)** 하다고 하고 $\mu\perp\lambda$ 로 쓴다. 두 측도가 겹치지 않는 곳에 실려 있다는 뜻이다. 직관 절의 $\nu^+$ 와 $\nu^-$ 는 $A=\lbrack 0,1\rbrack$, $B=\lbrack -1,0)$ 으로 상호 특이하다.
 
 ## 전변동
 
@@ -48,13 +44,13 @@ $$
 \lvert\nu\rvert(E)=\sup\Bigl\lbrace\sum_{i=1}^k\lvert\nu(E_i)\rvert : E=E_1\cup\dots\cup E_k,\thickspace E_i\thickspace\text{서로소 가측}\Bigr\rbrace
 $$
 
-로 정의한 $\lvert\nu\rvert$ 를 $\nu$ 의 **전변동(total variation)** 이라 한다. 유한 부호 측도에서 $\Vert\nu\Vert=\lvert\nu\rvert(X)$ 를 전변동 노름이라 한다. 정의에서 $\lvert\nu(E)\rvert\le\lvert\nu\rvert(E)$ 가 바로 나온다.
+로 정의한 $\lvert\nu\rvert$ 를 $\nu$ 의 **전변동(total variation)** 이라 한다. 유한 부호 측도에서 $\Vert\nu\Vert=\lvert\nu\rvert(X)$ 를 전변동 노름이라 한다. 정의에서 $\lvert\nu(E)\rvert\le\lvert\nu\rvert(E)$ 가 바로 나온다. 직관 절의 $\nu$ 에서 $\lbrack -1,1\rbrack$ 을 $\lbrack -1,0)$ 과 $\lbrack 0,1\rbrack$ 로 나누면 합이 $1$ 이고 더 잘게 나눠도 $1$ 을 넘지 않으므로 $\lvert\nu\rvert(\lbrack -1,1\rbrack)=1$ 이다.
 
 # 성질
 
 ## Hahn 분해 정리
 
-부호 측도 $\nu$ 에 대해 양집합 $P$ 와 음집합 $N$ 이 존재해 $X=P\cup N$ 이고 $P\cap N=\varnothing$ 이다. 다른 분해 $X=P'\cup N'$ 이 있으면 대칭차 $P\mathbin{\triangle}P'$ 은 $\nu$ 의 영집합이다.
+Hahn 분해 정리(Hahn decomposition theorem)에 따르면 부호 측도 $\nu$ 에 대해 양집합 $P$ 와 음집합 $N$ 이 존재해 $X=P\cup N$ 이고 $P\cap N=\varnothing$ 이다. 다른 분해 $X=P'\cup N'$ 이 있으면 대칭차 $P\mathbin{\triangle}P'$ 은 $\nu$ 의 영집합이다.
 
 증명의 요지. $\nu$ 가 $+\infty$ 를 갖지 않는다고 둔다. 양집합의 값의 상한 $s$ 를 잡고 $\nu(P_n)\to s$ 인 양집합 $P_n$ 을 고른다. 양집합의 가산 합집합은 양집합이므로 $P=\bigcup_n P_n$ 은 양집합이고 $\nu(P)=s$ 다. $N=X\setminus P$ 가 음집합이 아니라면 $\nu(E)\gt 0$ 인 $E\subseteq N$ 이 있고, 아래 보조정리로 $E$ 안에 $\nu(A)\gt 0$ 인 양집합 $A$ 가 있다. 그러면 $P\cup A$ 가 값이 $s$ 보다 큰 양집합이 되어 모순이다.
 
@@ -62,7 +58,7 @@ $$
 
 ## Jordan 분해 정리
 
-부호 측도 $\nu$ 는 상호 특이한 두 측도의 차로 유일하게 쓰인다.
+Jordan 분해 정리(Jordan decomposition theorem)에 따르면 부호 측도 $\nu$ 는 상호 특이한 두 측도의 차로 유일하게 쓰인다.
 
 $$
 \nu=\nu^+-\nu^-,\qquad \nu^+\perp\nu^-
@@ -70,7 +66,7 @@ $$
 
 Hahn 분해 $X=P\cup N$ 을 잡고 $\nu^+(E)=\nu(E\cap P)$, $\nu^-(E)=-\nu(E\cap N)$ 으로 두면 이 꼴이 나온다. 유일성은 상호 특이한 다른 쌍 $\mu_1-\mu_2$ 가 주는 집합 $A,B$ 가 또 하나의 Hahn 분해라는 데서 유도된다.
 
-$\nu^+$ 를 **양변동(positive variation)**, $\nu^-$ 를 **음변동(negative variation)** 이라 한다. 이 분해는 가장 작은 분해다. $\nu=\mu_1-\mu_2$ 인 측도 $\mu_1,\mu_2$ 가 있으면 모든 $E$ 에서 $\nu^+(E)\le\mu_1(E)$ 이고 $\nu^-(E)\le\mu_2(E)$ 다. $\nu^+(E)=\mu_1(E\cap P)-\mu_2(E\cap P)\le\mu_1(E)$ 이기 때문이다.
+$\nu^+$ 를 **양변동(positive variation)**, $\nu^-$ 를 **음변동(negative variation)** 이라 한다. 이 분해는 가장 작은 분해다. $\nu=\mu_1-\mu_2$ 인 측도 $\mu_1,\mu_2$ 가 있으면 모든 $E$ 에서 $\nu^+(E)=\mu_1(E\cap P)-\mu_2(E\cap P)\le\mu_1(E)$ 이고, 같은 방법으로 $\nu^-(E)\le\mu_2(E)$ 다.
 
 ## 전변동과 Jordan 분해
 
