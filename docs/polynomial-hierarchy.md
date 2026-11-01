@@ -6,13 +6,9 @@
 
 # 직관
 
-다항 계층은 다항 길이의 증거에 대한 존재 한정사와 전칭 한정사를 정해진 횟수만큼 번갈아 쓴 다항시간 술어로 정의되는 언어 부류들의 층이다. 첫 층의 $\Sigma_1^{\mathrm p}$ 는 NP, $\Pi_1^{\mathrm p}$ 는 coNP 이고, 층을 모두 합친 것이 PH 다. A. R. Meyer 와 L. J. Stockmeyer 가 1972 년에 도입했다[^1].
+논리식 $\varphi$ 와 수 $s$ 가 주어졌을 때, $\varphi$ 와 모든 할당에서 값이 같고 길이가 $s$ 이하인 논리식 $\psi$ 가 있는지 묻는다. $\psi$ 를 받아도 검증자는 $\psi$ 와 $\varphi$ 가 모든 할당에서 같은지 확인해야 하고, 할당이 $2^n$ 개라 하나씩 확인할 수 없다. 이 확인은 "같지 않은 할당이 있다" 의 부정이므로, 여집합이 NP 에 드는 언어의 부류 coNP 의 일이다.
 
-[NP-완전성과 Cook–Levin 정리](np-completeness.md)의 충족가능성 문제(satisfiability, SAT)가 한정사 하나짜리 문제라면, 한정사를 $k$ 번 번갈아 쓴 논리식의 참 판정이 $k$ 번째 층의 완전 문제다. 계산 가능성 이론의 [산술적 계층](arithmetical-hierarchy.md)에서 결정 가능한 술어를 다항시간 술어로, 무한한 한정사를 다항 길이의 한정사로 바꾼 꼴이다.
-
-논리식 $\varphi$ 와 수 $s$ 가 주어졌을 때, $\varphi$ 와 모든 할당에서 값이 같고 길이가 $s$ 이하인 논리식 $\psi$ 가 있는지 묻는다. $\psi$ 를 받아도 검증자는 $\psi$ 와 $\varphi$ 가 모든 할당에서 같은지 확인해야 하고, 할당이 $2^n$ 개라 하나씩 확인할 수 없다. 이 확인은 "같지 않은 할당이 있다" 의 부정이므로 coNP 의 일이다.
-
-그래서 이 문제는 "길이 $s$ 이하인 $\psi$ 가 있어서, 모든 할당 $x$ 에 대해 $\psi(x)=\varphi(x)$ 다" 로 쓰인다. 짧은 대상에 대한 존재 한정사 다음에 전칭 한정사가 오고, 마지막의 $\psi(x)=\varphi(x)$ 는 다항시간에 계산된다. NP 는 존재 한정사 하나로 쓰이는 문제의 부류이고, 이렇게 한정사를 두 번 번갈아 쓰는 문제의 부류가 $\Sigma_2^{\mathrm p}$ 다.
+그래서 이 문제는 "길이 $s$ 이하인 $\psi$ 가 있어서, 모든 할당 $x$ 에 대해 $\psi(x)=\varphi(x)$ 다" 로 쓰인다. 짧은 대상에 대한 존재 한정사(existential quantifier) 다음에 전칭 한정사(universal quantifier)가 오고, 마지막의 $\psi(x)=\varphi(x)$ 는 다항시간에 계산된다. NP 는 존재 한정사 하나로 쓰이는 문제의 부류이고, 이렇게 한정사를 두 번 번갈아 쓰는 문제의 부류가 $\Sigma_2^{\mathrm p}$ 다.
 
 # 정의
 
@@ -21,7 +17,7 @@
 $k\ge 0$ 이라 한다. 언어 $L$ 이 $\Sigma_k^{\mathrm p}$ 에 든다는 것은 다항식 $q$ 와 다항시간 술어 $V$ 가 있어서
 
 $$
-x\in L\iff\exists y_1\thinspace\forall y_2\thinspace\exists y_3\cdots Q_ky_k\ \ V(x,y_1,\dots,y_k)=1
+x\in L\iff\exists y_1\thinspace\forall y_2\thinspace\exists y_3\cdots Q_ky_k\thinspace V(x,y_1,\dots,y_k)=1
 $$
 
 인 것이다. 각 $y_i$ 는 길이가 $q(\lvert x\rvert)$ 이하인 비트열이고, $Q_k$ 는 $k$ 가 홀수이면 $\exists$, 짝수이면 $\forall$ 다. 첫 한정사를 $\forall$ 로 바꾼 것이 $\Pi_k^{\mathrm p}$ 다. $\Sigma_0^{\mathrm p}=\Pi_0^{\mathrm p}=\mathrm P$ 이고
@@ -30,11 +26,11 @@ $$
 \mathrm{PH}=\bigcup_{k\ge 0}\Sigma_k^{\mathrm p}
 $$
 
-이다.
+이다. A. R. Meyer 와 L. J. Stockmeyer 가 1972 년에 도입했다[^1]. $k=1$ 이면 $\Sigma_1^{\mathrm p}$ 는 증거 하나로 확인되는 NP 이고 $\Pi_1^{\mathrm p}$ 는 coNP 다. 직관의 최소 논리식 문제는 $y_1=\psi$, $y_2=x$ 로 두고 $V$ 가 "$\psi$ 의 길이가 $s$ 이하이고 $\psi(x)=\varphi(x)$" 를 확인하게 하면 $\Sigma_2^{\mathrm p}$ 에 든다. 계산 가능성 이론의 [산술적 계층](arithmetical-hierarchy.md)에서 결정 가능한 술어를 다항시간 술어로, 제한 없는 한정사를 다항 길이의 한정사로 바꾼 꼴이다.
 
 ## 신탁 정의
 
-신탁 부류 $\mathcal C$ 에 대해 $\mathrm{NP}^{\mathcal C}$ 를 $\mathcal C$ 의 언어 하나를 신탁(oracle)으로 쓰는 비결정적 다항시간 기계가 판정하는 언어의 부류라 한다. 그러면 $\Sigma_{k+1}^{\mathrm p}=\mathrm{NP}^{\Sigma_k^{\mathrm p}}$, $\Pi_{k+1}^{\mathrm p}=\mathrm{coNP}^{\Sigma_k^{\mathrm p}}$ 이고, $\Delta_{k+1}^{\mathrm p}=\mathrm P^{\Sigma_k^{\mathrm p}}$ 로 둔다. 두 정의가 같은 부류를 준다는 것은 L. J. Stockmeyer 와 C. Wrathall 이 증명했다[^2].
+신탁 부류 $\mathcal C$ 에 대해 $\mathrm{NP}^{\mathcal C}$ 를 $\mathcal C$ 의 언어 하나를 신탁(oracle)으로 쓰는 비결정적 다항시간 기계가 판정하는 언어의 부류라 한다. 그러면 $\Sigma_{k+1}^{\mathrm p}=\mathrm{NP}^{\Sigma_k^{\mathrm p}}$, $\Pi_{k+1}^{\mathrm p}=\mathrm{coNP}^{\Sigma_k^{\mathrm p}}$ 이고, $\Delta_{k+1}^{\mathrm p}=\mathrm P^{\Sigma_k^{\mathrm p}}$ 로 둔다. 두 정의가 같은 부류를 준다는 것은 L. J. Stockmeyer 와 C. Wrathall 이 증명했다[^2]. 최소 논리식 문제는 $\mathrm{NP}^{\mathrm{NP}}$ 의 기계로도 풀린다. $\psi$ 를 비결정적으로 고른 뒤, "$\psi\ne\varphi$ 인 할당이 있는가" 를 NP 신탁에 묻고 답이 아니오이면 받아들인다.
 
 # 성질
 
@@ -46,7 +42,7 @@ $$
 
 ## 완전 문제
 
-정리. 한정 불 논리식 $\exists x_1\forall x_2\cdots Q_kx_k\ \varphi(x_1,\dots,x_k)$ 의 참 판정 문제 $\Sigma_k\mathrm{SAT}$ 은 $\Sigma_k^{\mathrm p}$-완전이다. $x_i$ 는 변수의 묶음이다[^2].
+정리. 한정 불 논리식(quantified Boolean formula) $\exists x_1\forall x_2\cdots Q_kx_k\thinspace\varphi(x_1,\dots,x_k)$ 의 참 판정 문제 $\Sigma_k\mathrm{SAT}$ 은 $\Sigma_k^{\mathrm p}$-완전이다. $x_i$ 는 변수의 묶음이다[^2]. $k=1$ 이면 이 문제는 [NP-완전성과 Cook–Levin 정리](np-completeness.md)의 충족가능성 문제(satisfiability, SAT)다.
 
 증명의 요지. 한정사 정의의 $V$ 에 Cook–Levin 정리의 부호화를 적용하면 $V(x,y_1,\dots,y_k)=1$ 이 $y_i$ 와 보조 변수에 대한 논리식이 된다. 보조 변수는 마지막 한정사가 $\exists$ 이면 그 묶음에 넣고, $\forall$ 이면 $V$ 의 부정에 같은 부호화를 적용해 넣는다.
 
@@ -58,7 +54,7 @@ $$
 
 ## Karp–Lipton 정리
 
-정리. NP 의 모든 언어가 다항 크기 [불 회로](boolean-circuits.md)의 족으로 판정되면 $\mathrm{PH}=\Sigma_2^{\mathrm p}$ 다. R. M. Karp 와 R. J. Lipton 이 증명했다[^3].
+정리(Karp–Lipton). NP 의 모든 언어가 다항 크기 [불 회로](boolean-circuits.md)의 족으로 판정되면 $\mathrm{PH}=\Sigma_2^{\mathrm p}$ 다. R. M. Karp 와 R. J. Lipton 이 증명했다[^3].
 
 대우로, PH 가 둘째 층에서 붕괴하지 않으면 다항 크기 회로로 판정되지 않는 NP 의 언어가 있다.
 
