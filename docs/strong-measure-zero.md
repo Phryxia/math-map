@@ -6,23 +6,19 @@
 
 # 직관
 
-강 측도 영집합은 구간의 길이를 미리 정해 주어도 그 길이대로 덮을 수 있는 실수 집합이다. Lebesgue [측도](measure.md)가 $0$ 인 집합은 길이의 합만 작으면 되므로 조건이 더 약하다.
-
-가산 집합은 강 측도 영집합이고, Cantor 집합은 측도가 $0$ 이지만 강 측도 영집합이 아니다.
-
 $\lbrack 0,1\rbrack$ 안의 유리수를 덮을 때 $n$ 번째 유리수에 길이 $\varepsilon/2^n$ 인 구간을 주면 길이의 합이 $\varepsilon$ 이고, 이 덮개는 구간의 길이를 덮는 쪽에서 골라 만들었다. 길이가 미리 주어진 경우로 조건을 바꾼다. 양수열 $\varepsilon\_1,\varepsilon\_2,\dots$ 이 먼저 주어져도, 유리수를 $q\_1,q\_2,\dots$ 로 줄 세우고 $q\_n$ 에 길이 $\varepsilon\_n$ 인 구간을 주면 모든 유리수가 덮인다. 유리수 하나에 구간 하나씩 돌아가므로 길이가 무엇이든 덮는 데 문제가 없다.
 
-Cantor 집합에서는 같은 방법이 막힌다. 비가산이라 점마다 구간을 하나씩 줄 수 없고 구간 하나가 여러 점을 한꺼번에 덮어야 한다. $\varepsilon\_n=3^{-n}/n$ 처럼 빨리 줄어드는 열을 주면 $n$ 번째 구간이 Cantor 집합의 $n$ 단계 조각 하나보다 짧아, 구간 $n$ 개로는 $n$ 단계 조각 $2^n$ 개를 감당할 수 없다. Cantor 집합은 길이의 합을 얼마든지 작게 하여 덮을 수 있어 측도가 $0$ 이지만, 이 열에는 맞추지 못한다.
+Cantor 집합에서는 같은 방법이 막힌다. 점이 셀 수 없이 많아 점마다 구간을 하나씩 줄 수 없고, 구간 하나가 여러 점을 한꺼번에 덮어야 한다. $\varepsilon\_n=3^{-n}/2$ 를 주면 $n$ 번째 구간은 $n$ 단계 조각 사이의 틈 $3^{-n}$ 보다 짧아서, 같은 $n-1$ 단계 조각 안의 두 $n$ 단계 조각 가운데 하나만 만난다. 단계마다 그 구간이 만나지 않는 쪽 조각을 골라 내려가면 어느 구간에도 덮이지 않는 Cantor 집합의 점이 남는다. Cantor 집합은 길이의 합을 얼마든지 작게 하여 덮을 수 있어 [측도](measure.md)가 $0$ 이지만, 이 열에는 맞추지 못한다.
 
 # 정의
 
-$X\subseteq\mathbb R$ 이 **강 측도 영집합**이라 함은 모든 양수열 $(\varepsilon\_n)\_{n\ge1}$ 에 대해 구간열 $(I\_n)$ 이 있어
+$X\subseteq\mathbb R$ 이 **강 측도 영집합** 이라 함은 모든 양수열 $(\varepsilon\_n)\_{n\ge1}$ 에 대해 구간열 $(I\_n)$ 이 있어
 
 $$
 X\subseteq\bigcup\_{n\ge1}I\_n, \qquad \lvert I\_n\rvert\le\varepsilon\_n
 $$
 
-을 만족하는 것이다. 여기서 $\lvert I\rvert$ 는 구간 $I$ 의 길이다.
+을 만족하는 것이다. 여기서 $\lvert I\rvert$ 는 구간 $I$ 의 길이다. 직관 절의 유리수 집합은 $I\_n$ 을 $q\_n$ 을 가운데 둔 길이 $\varepsilon\_n$ 인 구간으로 잡으면 되므로 강 측도 영집합이다. Cantor 집합은 $\varepsilon\_n=3^{-n}/2$ 에 맞는 덮개가 없으므로 강 측도 영집합이 아니다.
 
 Lebesgue 측도가 $0$ 이라는 조건은 각 $\varepsilon\gt 0$ 에 대해 길이의 합이 $\varepsilon$ 이하인 덮개가 있다는 것이고, 개별 구간의 길이를 지정하지 않는다.
 
@@ -30,29 +26,29 @@ Lebesgue 측도가 $0$ 이라는 조건은 각 $\varepsilon\gt 0$ 에 대해 길
 
 ## 측도 영집합과의 관계
 
-**정리.** 강 측도 영집합은 측도가 $0$ 이고, 그 역은 성립하지 않는다.
+강 측도 영집합은 측도가 $0$ 이고, 그 역은 성립하지 않는다.
 
-$\varepsilon\_n=\varepsilon/2^n$ 을 주면 얻는 덮개의 길이 합이 $\varepsilon$ 이하이므로 측도가 $0$ 이다. 역의 반례가 Cantor 집합이다. Cantor 집합은 측도가 $0$ 이지만, 빨리 줄어드는 열을 주면 $n$ 번째 구간이 $n$ 단계 조각보다 짧아 덮지 못한다.[^1] ∎
+$\varepsilon\_n=\varepsilon/2^n$ 을 주면 얻는 덮개의 길이 합이 $\varepsilon$ 이하이므로 측도가 $0$ 이다. 역의 반례가 Cantor 집합이다. Cantor 집합은 측도가 $0$ 이지만, 직관 절의 열 $\varepsilon\_n=3^{-n}/2$ 에 맞는 덮개가 없다.[^1] ∎
 
 ## 가산 합집합과 부분집합
 
-강 측도 영집합의 부분집합은 강 측도 영집합이고, 강 측도 영집합을 가산 개 합쳐도 강 측도 영집합이다. 합집합 쪽은 주어진 열 $(\varepsilon\_n)$ 을 가산 개의 부분열로 쪼개 각 집합에 하나씩 배정해 얻는다. 가산 집합은 점마다 구간 하나를 주면 되므로 강 측도 영집합이다.
+강 측도 영집합의 부분집합은 강 측도 영집합이고, 강 측도 영집합을 가산 개 합쳐도 강 측도 영집합이다. 합집합 쪽은 주어진 열 $(\varepsilon\_n)$ 을 가산 개의 부분열로 쪼개 각 집합에 하나씩 주어 얻는다. 가산 집합은 점마다 구간 하나를 주면 되므로 강 측도 영집합이다.
 
 ## Galvin–Mycielski–Solovay 정리
 
-**정리.** $X\subseteq\mathbb R$ 이 강 측도 영집합일 필요충분조건은 모든 제1범주 집합 $M$ 에 대해 $X+M\neq\mathbb R$ 인 것이다.[^2]
+$X\subseteq\mathbb R$ 이 강 측도 영집합일 필요충분조건은 모든 제1범주 집합(meager set) $M$ 에 대해 $X+M\neq\mathbb R$ 인 것이다.[^2]
 
 덧셈과 [Baire 범주](baire-category.md)만으로 같은 조건을 적는다. 이 형태는 위상군에서 그대로 정의가 되므로 강 측도 영집합을 국소콤팩트 위상군에서도 정의한다. 두 방향의 증명은 [Galvin–Mycielski–Solovay 정리](galvin-mycielski-solovay.md)에서 다룬다.
 
 ## Borel 추측
 
-모든 강 측도 영집합이 가산이라는 명제가 Borel 추측이다. [Luzin 집합](luzin-sierpinski-sets.md)이 비가산이면서 강 측도 영집합이므로 연속체 가설 아래에서는 거짓이다. Laver 는 가산지지 반복 강제법으로 Borel 추측이 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)와 무모순임을 보였다.[^3]
+모든 강 측도 영집합이 가산이라는 명제가 Borel 추측이다. [Luzin 집합](luzin-sierpinski-sets.md)이 비가산이면서 강 측도 영집합이므로 [연속체 가설](continuum-hypothesis.md) 아래에서는 거짓이다. Laver 는 가산지지 반복 강제법(countable support iterated forcing)으로 Borel 추측이 [ZFC 공리계](zfc-axioms.md)(Zermelo–Fraenkel with choice)와 무모순임을 보였다.[^3]
 
 # 활용
 
 - 측도가 $0$ 인 집합을 더 잘게 가르는 데 쓴다. Cantor 집합과 가산 집합은 둘 다 측도가 $0$ 이지만 강 측도 영집합인지에서 갈린다.
 - Luzin 집합과 Sierpiński 집합의 성질을 진술한다. Luzin 집합이 강 측도 영집합이라는 정리가 Borel 추측을 연속체 가설 아래에서 반증한다.
-- 덮개의 크기를 미리 지정하는 이 형태가 $\sigma$ 아이디얼의 [기수 불변량](cardinal-characteristics.md)에서 별도의 아이디얼을 이룬다.
+- 강 측도 영집합 전체는 $\sigma$ 아이디얼($\sigma$-ideal)을 이루고, 그 [기수 불변량](cardinal-characteristics.md)을 측도 영집합 아이디얼의 것과 견준다.
 
 [^1]: John C. Oxtoby, *Measure and Category*, Springer Graduate Texts in Mathematics 2 (1980), 3장. 강 측도 영집합의 정의와 Cantor 집합이 그 예가 아님을 다룬다.
 
