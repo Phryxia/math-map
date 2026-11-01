@@ -12,21 +12,19 @@
 
 벡터 쌍 하나에 갱신이 $O(n)$ 번, 질의가 한 번이다. 쌍이 $n$ 개이면 갱신이 $O(n^2)$ 번, 질의가 $n$ 번이다. 갱신 시간이 $n^{1-\varepsilon}$, 질의 시간이 $n^{2-\varepsilon}$ 이면 전체가 $n^{3-\varepsilon}$ 이 되어, 쌍이 하나씩 들어오는 $u^{\mathsf T}Mv$ 계산을 $n^3$ 보다 빨리 하게 된다. OMv 가설은 이것이 불가능하다고 가정한다.
 
-이 가설은 M. Henzinger, S. Krinninger, D. Nanongkai, T. Saranurak 가 2015 년에 내놓았다[^1]. [세분 복잡도](fine-grained-complexity.md)의 다른 가설과 달리 질의가 하나씩 들어오는 상황을 겨냥한다.
-
 # 정의
 
 ## OMv 문제
 
-**OMv 문제(online matrix-vector multiplication problem)** 의 입력은 $n\times n$ 부울 행렬 $M$ 과 차례로 도착하는 부울 벡터 $v_1,\dots,v_n\in\lbrace 0,1\rbrace^n$ 이다. 알고리즘은 $v_i$ 를 받은 뒤 $v_{i+1}$ 을 받기 전에 부울 곱 $Mv_i$ 를 내놓아야 한다. 부울 곱의 성분은 $(Mv)\_j=\bigvee_kM_{jk}\wedge v_k$ 다.
+**OMv 문제(online matrix-vector multiplication problem)** 의 입력은 $n\times n$ 부울 행렬 $M$ 과 차례로 도착하는 부울 벡터 $v_1,\dots,v_n\in\lbrace 0,1\rbrace^n$ 이다. 알고리즘은 $v_i$ 를 받은 뒤 $v_{i+1}$ 을 받기 전에 부울 곱 $Mv_i$ 를 내놓아야 한다. 부울 곱의 성분은 $(Mv)\_j=\bigvee_kM_{jk}\wedge v_k$ 다. $n=2$ 이고 $M=\begin{pmatrix}1&0\cr 1&1\end{pmatrix}$ 이면, $v_1=(0,1)$ 이 도착했을 때 $Mv_1=(0,1)$ 을 내놓고 나서야 $v_2$ 를 받는다.
 
 ## 가설
 
-OMv 가설. 임의의 $\varepsilon\gt 0$ 에 대해, $M$ 의 다항시간 전처리를 허용해도 OMv 문제를 전체 $O(n^{3-\varepsilon})$ 시간에 푸는 무작위 알고리즘이 없다.
+OMv 가설은 임의의 $\varepsilon\gt 0$ 에 대해, $M$ 의 다항시간 전처리를 허용해도 OMv 문제를 전체 $O(n^{3-\varepsilon})$ 시간에 푸는 무작위 알고리즘이 없다는 가설이다. M. Henzinger, S. Krinninger, D. Nanongkai, T. Saranurak 가 2015 년에 내놓았다[^1]. [세분 복잡도](fine-grained-complexity.md)의 다른 가설과 달리 입력이 하나씩 들어오는 상황을 다룬다.
 
 ## OuMv 문제
 
-**OuMv 문제(online vector-matrix-vector multiplication problem)** 는 $M$ 을 미리 받고 벡터 쌍 $(u_1,v_1),\dots,(u_n,v_n)$ 이 하나씩 도착할 때 다음 쌍을 받기 전에 비트 $u_i^{\mathsf T}Mv_i$ 를 내놓는 문제다. 답이 한 비트이므로 동적 자료구조의 질의 하나로 옮기기 쉽다.
+**OuMv 문제(online vector-matrix-vector multiplication problem)** 는 $M$ 을 미리 받고 벡터 쌍 $(u_1,v_1),\dots,(u_n,v_n)$ 이 하나씩 도착할 때 다음 쌍을 받기 전에 비트 $u_i^{\mathsf T}Mv_i$ 를 내놓는 문제다. 답이 한 비트이므로 동적 자료구조의 질의 하나로 옮기기 쉽다. 위의 $M$ 과 $u=(1,0)$, $v=(0,1)$ 이면 $u^{\mathsf T}Mv=M_{12}=0$ 이다. 직관의 그래프에서는 $s$ 가 왼쪽 정점 $1$ 에, $t$ 가 오른쪽 정점 $2$ 에 이어지고 그 사이에 간선이 없어 거리가 $3$ 이 아니다.
 
 # 성질
 
@@ -46,7 +44,7 @@ OMv 가설. 임의의 $\varepsilon\gt 0$ 에 대해, $M$ 의 다항시간 전처
 
 ## 동적 문제의 하한
 
-정리. OMv 가설이 참이면, 간선 삽입과 삭제를 받고 두 고정 정점 $s,t$ 의 거리를 답하는 자료구조는 다항시간 전처리를 허용해도 갱신 시간 $O(n^{1-\varepsilon})$ 과 질의 시간 $O(n^{2-\varepsilon})$ 을 함께 달성하지 못한다[^1].
+정리(Henzinger–Krinninger–Nanongkai–Saranurak). OMv 가설이 참이면, 간선 삽입과 삭제를 받고 두 고정 정점 $s,t$ 의 거리를 답하는 자료구조는 다항시간 전처리를 허용해도 갱신 시간 $O(n^{1-\varepsilon})$ 과 질의 시간 $O(n^{2-\varepsilon})$ 을 함께 달성하지 못한다[^1].
 
 직관 절의 환원이 증명이다. 같은 방식으로 Henzinger 등은 켜고 끌 수 있는 정점들 사이의 연결 질의(subgraph connectivity)와 동적 $s$-$t$ [최단경로](shortest-paths.md) 같은 문제에 하한을 얻었고, 여러 문제에서 그 하한이 알려진 알고리즘의 시간과 일치한다[^1].
 
