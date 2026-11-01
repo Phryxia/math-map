@@ -2,13 +2,11 @@
 
 # 개요
 
-**상측도(pushforward measure)** 는 함수로 옮긴 뒤의 측도다. 주사위 두 개의 눈 $(i,j)$ 에는 각각 확률 $1/36$ 이 있다. 합 $i+j$ 가 $7$ 일 확률은 합이 $7$ 인 순서쌍 여섯 개의 확률을 더한 $6/36$ 이다. 합의 값마다 이렇게 얻은 확률을 배정한 것이 합의 분포이고, 이 분포가 상측도다.
-
-[확률변수](random-variables.md)의 분포, 통계량의 분포, 좌표를 바꾼 뒤의 분포가 모두 상측도다. 분포만 있으면 원래 표본공간 없이 계산할 수 있다. 값 쪽 집합을 원래 공간으로 되돌린 집합이 잴 수 있으려면 함수가 [가측함수](measurable-functions.md)여야 한다.
+**상측도(pushforward measure)** 는 함수로 옮긴 뒤의 측도다. 주사위 두 개의 눈 $(i,j)$ 에는 각각 확률 $1/36$ 이 있다. 합 $i+j$ 가 $7$ 일 확률은 합이 $7$ 인 순서쌍 여섯 개의 확률을 더한 $6/36$ 이다. 합의 값마다 이렇게 얻은 확률을 준 것이 합의 분포이고, 이 분포가 상측도다.
 
 # 직관
 
-합이 $7$ 일 확률을 구할 때 한 일은, 값 $7$ 에서 출발해 합이 $7$ 이 되는 순서쌍의 집합 $\lbrace(1,6),(2,5),\dots,(6,1)\rbrace$ 으로 돌아가 그 확률을 잰 것이다. 값 쪽 집합 $B$ 마다 원래 공간의 집합 $\varphi^{-1}(B)$ 의 측도를 배정하면 값 쪽에 측도가 생긴다. 합이 $7$ 인 순서쌍과 합이 $8$ 인 순서쌍은 겹치지 않고, 합이 $7$ 이거나 $8$ 인 순서쌍은 그 둘을 합친 것이다. 서로소인 $B_n$ 의 역상이 서로소이므로 값 쪽에서 $\lbrace 7\rbrace$ 과 $\lbrace 8\rbrace$ 의 확률을 더하면 $\lbrace 7,8\rbrace$ 의 확률이 된다.
+합이 $7$ 일 확률을 구할 때 한 일은, 값 $7$ 에서 출발해 합이 $7$ 이 되는 순서쌍의 집합 $\lbrace(1,6),(2,5),\dots,(6,1)\rbrace$ 으로 돌아가 그 확률을 잰 것이다. 순서쌍에 합을 주는 함수를 $\varphi$ 라 하면, 값 쪽 집합 $B$ 마다 원래 공간의 집합 $\varphi^{-1}(B)$ 의 측도를 주면 값 쪽에 측도가 생긴다. 합이 $7$ 인 순서쌍과 합이 $8$ 인 순서쌍은 겹치지 않고, 합이 $7$ 이거나 $8$ 인 순서쌍은 그 둘을 합친 것이다. 서로소인 $B_n$ 의 역상이 서로소이므로 값 쪽에서 $\lbrace 7\rbrace$ 과 $\lbrace 8\rbrace$ 의 확률을 더하면 $\lbrace 7,8\rbrace$ 의 확률이 된다.
 
 집합을 $\varphi$ 방향으로 옮기면 이 규칙이 깨진다. 두 눈이 모두 짝수인 순서쌍의 집합과 첫 눈이 $1$ 인 순서쌍의 집합은 겹치지 않지만, 전자가 담은 $(2,2)$ 와 후자가 담은 $(1,3)$ 의 상이 둘 다 $4$ 다. 그래서 정의에 $\varphi(A)$ 가 아니라 $\varphi^{-1}(B)$ 가 들어간다. 여러 순서쌍이 같은 값으로 가면 확률이 그 값에 모여, 합이 $7$ 인 순서쌍 여섯 개의 확률이 값 $7$ 하나에 $6/36$ 으로 모인다.
 
@@ -16,20 +14,22 @@
 
 ## 상측도
 
-[측도](measure.md) 공간 $(X, \Sigma, \mu)$ 와 가측 공간 $(Y, T)$ , 가측함수 $\varphi : X \to Y$ 에 대해
+[측도](measure.md) 공간 $(X, \Sigma, \mu)$ 와 가측 공간(measurable space) $(Y, \mathcal T)$ , [가측함수](measurable-functions.md) $\varphi : X \to Y$ 에 대해
 
 $$
-(\phi_\ast\mu)(B)=\mu\negthinspace\left(\phi^{-1}(B)\right),\qquad B\in\mathcal T
+(\varphi_\ast\mu)(B)=\mu\negthinspace\left(\varphi^{-1}(B)\right),\qquad B\in\mathcal T
 $$
 
-를 상측도라 한다. $\mu$ 가 확률측도이면 $\varphi_\ast\mu$ 도 확률측도이고, 이것을 확률변수 $\varphi$ 의 분포 또는 법칙이라 한다.
+를 **상측도** 라 한다. $\mu$ 가 확률측도이면 $\varphi_\ast\mu$ 도 확률측도이고, 이것을 [확률변수](random-variables.md) $\varphi$ 의 분포(distribution) 또는 법칙(law)이라 한다.
+
+개요의 주사위에서는 $X=\lbrace 1,\dots,6\rbrace^2$, $\mu$ 가 각 순서쌍에 $1/36$ 을 주는 측도, $\varphi(i,j)=i+j$ 다. $\varphi^{-1}(\lbrace 7\rbrace)$ 이 순서쌍 여섯 개이므로 $(\varphi_\ast\mu)(\lbrace 7\rbrace)=6/36$ 이고, $\varphi^{-1}(\lbrace 2\rbrace)=\lbrace(1,1)\rbrace$ 이므로 $(\varphi_\ast\mu)(\lbrace 2\rbrace)=1/36$ 이다.
 
 ## 가산 가법성
 
 서로소인 $B_1, B_2, \ldots$ 의 역상은 서로소이고 역상이 가산 합집합을 보존하므로
 
 $$
-(\phi_\ast\mu)\Bigl(\bigsqcup_n B_n\Bigr)=\mu\Bigl(\bigsqcup_n\phi^{-1}(B_n)\Bigr)=\sum_n\mu(\phi^{-1}(B_n))
+(\varphi_\ast\mu)\Bigl(\bigsqcup_n B_n\Bigr)=\mu\Bigl(\bigsqcup_n\varphi^{-1}(B_n)\Bigr)=\sum_n\mu(\varphi^{-1}(B_n))
 $$
 
 이다. $\varphi_\ast\mu(\emptyset) = \mu(\emptyset) = 0$ 이므로 $\varphi_\ast\mu$ 는 측도다.
@@ -38,15 +38,15 @@ $$
 
 ## 변수변환 공식
 
-음이 아닌 가측함수 $g : Y \to [0,\infty]$ 에 대해
+음이 아닌 가측함수 $g : Y \to \lbrack 0,\infty\rbrack$ 에 대해
 
 $$
-\int_Y g(y)\thinspace d(\phi_\ast\mu)(y)=\int_X g(\phi(x))\thinspace d\mu(x)
+\int_Y g(y)\thinspace d(\varphi_\ast\mu)(y)=\int_X g(\varphi(x))\thinspace d\mu(x)
 $$
 
 가 성립한다. 지시함수에서는 정의 그대로이고, 단순함수에서는 선형성으로, 일반적인 음이 아닌 함수에는 [단조수렴 정리](monotone-convergence.md)를 적용한다. 적분 가능한 [실수](real-numbers.md)값 함수에는 양의 부분과 음의 부분에 각각 쓴다.
 
-확률로 옮기면 무의식적 통계학자의 법칙이다.
+확률로 옮기면 무의식적 통계학자의 법칙(law of the unconscious statistician)이다.
 
 $$
 \mathbb{E}[g(X)]=\int_{\mathbb{R}}g\thinspace dP_X
@@ -59,30 +59,30 @@ $g(X)$ 의 기댓값을 구하는 데 $g(X)$ 의 분포가 아니라 $X$ 의 분
 또 다른 가측함수 $\psi : Y \to Z$ 에 대해
 
 $$
-(\psi\circ\phi)\_\ast\mu=\psi_\ast(\phi_\ast\mu)
+(\psi\circ\varphi)\_\ast\mu=\psi_\ast(\varphi_\ast\mu)
 $$
 
-가 성립한다. $(\psi\circ\phi)^{-1}=\phi^{-1}\circ\psi^{-1}$ 에서 나온다. 그래서 $X$ 의 분포에 $g$ 를 적용하면 표본공간으로 돌아가지 않고 $g(X)$ 의 분포가 나온다.
+가 성립한다. $(\psi\circ\varphi)^{-1}=\varphi^{-1}\circ\psi^{-1}$ 에서 나온다. 그래서 $X$ 의 분포에 $g$ 를 적용하면 표본공간으로 돌아가지 않고 $g(X)$ 의 분포가 나온다.
 
 ## 표본공간의 비유일성
 
 같은 분포를 주는 서로 다른 표본공간이 얼마든지 있다. 동전 던지기를 $\lbrace\text{앞},\text{뒤}\rbrace$ 위에서 모형화하든 $[0,1]$ 위의 [균등분포](uniform-distribution.md)와 $\mathbf 1_{[0,1/2]}$ 로 모형화하든 결과의 분포는 같다.
 
-확률론의 명제는 대개 분포만 쓰므로 표본공간은 편한 것을 고른다. 임의의 분포는 $[0,1]$ 위의 균등분포를 밀어서 만들 수 있고, 누적분포함수의 역함수를 쓰는 이 구성이 역변환 표본추출법이다.
+확률론의 명제는 대개 분포만 쓰므로 표본공간은 편한 것을 고른다. 임의의 분포는 $[0,1]$ 위의 균등분포를 밀어서 만들 수 있고, 누적분포함수의 역함수를 쓰는 이 구성이 역변환 표본추출법(inverse transform sampling)이다.
 
 ## 밀도와 Jacobi 행렬식
 
-$Y = \mathbb{R}^n$ 이고 $\varphi$ 가 미분동형이면 상측도의 밀도가 Jacobi 행렬식으로 주어진다.
+$Y = \mathbb{R}^n$ 이고 $\varphi$ 가 미분동형(diffeomorphism)이면 상측도의 밀도가 Jacobi 행렬식(Jacobian determinant)으로 주어진다.
 
 $$
 p_Y(y)=p_X(\varphi^{-1}(y))\thinspace\bigl\vert\det D\varphi^{-1}(y)\bigr\vert
 $$
 
-다변수 치환적분이 이 공식의 특수한 경우다. $\varphi$ 가 단사가 아니면 각 역상 가지의 기여를 더하고, 차원을 줄이면 밀도가 존재하지 않을 수 있다. 정규화 흐름 같은 생성 모형은 이 공식을 쓰려고 가역 변환만 쓴다.
+다변수 치환적분이 이 공식의 특수한 경우다. $\varphi$ 가 단사가 아니면 각 역상 가지의 기여를 더하고, 차원을 줄이면 밀도가 존재하지 않을 수 있다. 정규화 흐름(normalizing flow) 같은 생성 모형은 이 공식을 쓰려고 가역 변환만 쓴다.
 
 ## 밀도의 부재
 
-상측도는 항상 정의되지만 밀도를 가진다는 보장은 없다. 연속분포를 이산 함수로 밀면 이산분포가 되고, Cantor 함수로 밀면 이산도 연속도 아닌 특이분포가 나온다. 어떤 측도가 다른 측도에 대해 밀도를 갖는 조건이 절대연속성이고 [Radon–Nikodym 정리](radon-nikodym.md)가 이를 다룬다.
+상측도는 항상 정의되지만 밀도를 가진다는 보장은 없다. 연속분포를 이산 함수로 밀면 이산분포가 되고, Cantor 함수(Cantor function)로 밀면 이산도 연속도 아닌 특이분포(singular distribution)가 나온다. 어떤 측도가 다른 측도에 대해 밀도를 갖는 조건이 절대연속성(absolute continuity)이고 [Radon–Nikodym 정리](radon-nikodym.md)가 이를 다룬다.
 
 # 활용
 
@@ -92,11 +92,11 @@ $$
 
 ## 좌표변환과 시뮬레이션
 
-적분을 편한 좌표계로 옮기는 것, 극좌표로 Gauss 적분을 구하는 것, 난수 생성기로 원하는 분포를 만드는 것이 측도를 미는 작업이다. Box–Muller 변환은 균등분포 두 개를 밀어 [정규분포](normal-distribution.md) 두 개를 만든다.
+적분을 편한 좌표계로 옮기는 것, 극좌표로 Gauss 적분을 구하는 것, 난수 생성기로 원하는 분포를 만드는 것이 측도를 미는 작업이다. Box–Muller 변환(Box–Muller transform)은 균등분포 두 개를 밀어 [정규분포](normal-distribution.md) 두 개를 만든다.
 
 ## 측도를 바꾸는 다른 방법
 
-상측도는 공간을 바꾸고 측도를 따라 옮긴다. 공간을 그대로 두고 측도에 밀도를 곱하는 것은 [측도변환](change-of-measure.md)이다. 앞의 것은 다른 것을 관측하는 조작이고 뒤의 것은 같은 것을 다른 확률로 보는 조작이다. 중요도 표본추출, 위험중립 가격결정, 우도비 검정이 뒤의 것을 쓴다.[^1]
+상측도는 공간을 바꾸고 측도를 따라 옮긴다. 공간을 그대로 두고 측도에 밀도를 곱하는 것은 [측도변환](change-of-measure.md)이다. 앞의 것은 다른 것을 관측하는 조작이고 뒤의 것은 같은 것을 다른 확률로 보는 조작이다. 중요도 표본추출(importance sampling), 위험중립 가격결정(risk-neutral pricing), 우도비 검정(likelihood ratio test)이 뒤의 것을 쓴다.[^1]
 
 [^1]: Terence Tao, *245A Notes 3: Integration on abstract measure spaces and the convergence theorems*, Exercise 36. 상측도의 정의와 적분 변환 공식. https://terrytao.wordpress.com/2010/09/25/245a-notes-3-integration-on-abstract-measure-spaces-and-the-convergence-theorems/
 
