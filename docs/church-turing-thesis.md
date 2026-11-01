@@ -14,9 +14,9 @@ Hilbert 의 결정문제(Entscheidungsproblem)는 [1차 논리](first-order-logi
 
 ## 논제
 
-$f : \mathbb N^k \rightharpoonup \mathbb N$ 가 **효과적으로 계산 가능하다(effectively calculable)** 는 것은, 유한한 지시문으로 적힌 절차가 있어 입력마다 유한 단계 안에 $f$ 의 값을 내놓고 값이 없는 입력에서는 끝나지 않는다는 뜻이다. 지시문은 판단이나 통찰 없이 기계적으로 따를 수 있어야 한다. 이 정의는 형식적이지 않다.
+$f : \mathbb N^k \rightharpoonup \mathbb N$ 가 **효과적으로 계산 가능하다(effectively calculable)** 는 것은, 유한한 지시문으로 적힌 절차가 있어 입력마다 유한 단계 안에 $f$ 의 값을 내놓고 값이 없는 입력에서는 끝나지 않는다는 뜻이다. 지시문은 판단이나 통찰 없이 기계적으로 따를 수 있어야 한다. 이 정의는 형식적이지 않다. 두 수의 최대공약수를 구하는 Euclid 알고리즘은 "큰 수를 작은 수로 나눈 나머지로 바꾸고, 나머지가 $0$ 이면 남은 수를 낸다" 는 지시문으로 적히고, $(12,8)\to(8,4)\to(4,0)$ 처럼 유한 단계 안에 값 $4$ 를 내놓으므로 효과적으로 계산 가능하다.
 
-**Church–Turing 논제.** 효과적으로 계산 가능한 함수는 Turing 기계로 계산되는 함수와 같다.
+Church–Turing 논제는 다음이다. 효과적으로 계산 가능한 함수는 Turing 기계로 계산되는 함수와 같다.
 
 같은 주장을 $\lambda$ 정의가능성으로 적은 것을 Church 논제(Church's thesis), Turing 기계로 적은 것을 Turing 논제(Turing's thesis)라 부르기도 한다. 아래 동치 정리 때문에 셋은 같은 주장이다.
 
@@ -29,19 +29,19 @@ Turing 은 종이와 연필로 계산하는 사람이 따르는 제약을 다음
 - 계산하는 사람의 마음 상태의 수는 유한하다.
 - 한 단계에서 바꾸는 것은 지금 보는 칸의 기호와 마음 상태이고, 다음에 볼 칸은 지금 칸에서 정해진 거리 안에 있다.
 
-이 제약을 만족하는 계산은 칸 하나를 읽고 쓰는 머리와 유한 상태표를 가진 기계로 흉내 낼 수 있다. 이 기계가 [계산 가능성](computability.md)의 Turing 기계다.
+두 수를 종이에 세로로 적어 오른쪽 자리부터 더하고 받아올림을 적는 계산은 기호 $0,\dots,9$, 한 번에 보는 두 자리, "받아올림이 있다/없다" 의 두 마음 상태로 이 제약을 만족한다. 이 제약을 만족하는 계산은 칸 하나를 읽고 쓰는 머리와 유한 상태표를 가진 기계로 흉내 낼 수 있다. 이 기계가 [계산 가능성](computability.md)의 Turing 기계다.
 
 # 성질
 
 ## 세 정의의 동치
 
-**정리 (Kleene 1936, Turing 1937).** 자연수 위의 부분함수에 대해 다음 셋은 동치다.
+자연수 위의 부분함수에 대해 다음 셋은 동치다(Kleene 1936, Turing 1937).
 
 1. 부분 재귀 함수다.
 2. $\lambda$ 정의가능하다.
 3. Turing 기계로 계산된다.
 
-$1 \Rightarrow 2$ 는 기본 함수, 합성, 원시 재귀, 최소화를 $\lambda$ 항으로 구성해 보인다. 최소화에는 고정점 combinator 를 쓴다. $2 \Rightarrow 3$ 은 $\lambda$ 항의 정규 순서 축약을 Turing 기계로 흉내 낸다. $3 \Rightarrow 1$ 은 기계의 상태와 테이프를 수 하나로 부호화해 한 단계 전이를 원시 재귀 함수로 적고, 정지할 때까지의 단계 수를 최소화로 찾는다. 레지스터 기계, Post 의 생성 체계(Post canonical system), Markov 알고리즘(Markov algorithm)도 같은 함수족을 준다.
+$1 \Rightarrow 2$ 는 기본 함수, 합성, 원시 재귀, 최소화를 $\lambda$ 항으로 구성해 보인다. 최소화에는 고정점 combinator(fixed-point combinator)를 쓴다. $2 \Rightarrow 3$ 은 $\lambda$ 항의 정규 순서 축약(normal order reduction)을 Turing 기계로 흉내 낸다. $3 \Rightarrow 1$ 은 기계의 상태와 테이프를 수 하나로 부호화해 한 단계 전이를 원시 재귀 함수로 적고, 정지할 때까지의 단계 수를 최소화로 찾는다. 레지스터 기계, Post 의 생성 체계(Post canonical system), Markov 알고리즘(Markov algorithm)도 같은 함수족을 준다.
 
 ## 논제의 지위
 
