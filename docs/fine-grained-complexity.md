@@ -6,8 +6,6 @@
 
 # 직관
 
-세분 복잡도는 다항시간에 풀리는 문제의 시간 지수를, 몇 가지 기본 가설과 지수를 보존하는 환원으로 정하는 복잡도 이론이다. 쓰이는 가설은 셋이다. 강한 [지수 시간 가설](exponential-time-hypothesis.md)(strong exponential time hypothesis, SETH)에서 나오는 직교 벡터 가설, 3SUM 가설, 모든 쌍 [최단경로](shortest-paths.md) 가설이다. 각 가설은 $n^2$ 이나 $n^3$ 의 알고리즘이 지수에서 더 줄지 않는다고 말하고, 환원으로 같은 하한이 여러 문제에 옮겨진다.
-
 정수 $n$ 개 가운데 합이 $0$ 인 셋이 있는지 묻는 문제를 3SUM 이라 한다. 수를 정렬한 뒤 첫째 수를 고정하고 나머지 둘을 양 끝에서 좁혀 오면 $O(n^2)$ 시간에 풀린다. 이보다 지수가 작은 알고리즘은 알려지지 않았다.
 
 평면의 점 $n$ 개 가운데 한 직선 위의 세 점이 있는지 묻는 문제도 같은 $O(n^2)$ 에 머문다. 두 문제는 이어져 있다. 정수 $a$ 를 점 $(a,a^3)$ 으로 옮기면, 서로 다른 $a,b,c$ 에서 세 점의 기울기가 같다는 식은
@@ -16,15 +14,15 @@ $$
 \frac{b^3-a^3}{b-a}=\frac{c^3-a^3}{c-a}\iff (b-c)(a+b+c)=0
 $$
 
-이 되어 $a+b+c=0$ 과 동치다. 그래서 세 점 판정이 $n^{2-\varepsilon}$ 시간에 풀리면 3SUM 도 그렇다. 이런 환원을 쌓아 "3SUM 이 $n^{2-\varepsilon}$ 에 풀리지 않으면 세 점 판정도 풀리지 않는다" 꼴의 하한을 모은 것이 이 이론이다.
+이 되어 $a+b+c=0$ 과 동치다. 그래서 세 점 판정이 $n^{2-\varepsilon}$ 시간에 풀리면 3SUM 도 그렇다. 거꾸로 3SUM 이 $n^{2-\varepsilon}$ 시간에 풀리지 않는다고 가정하면 세 점 판정도 풀리지 않는다. 다항시간 문제의 지수 하한을 이런 가정과 환원으로 얻는다.
 
 # 정의
 
-문제 $A$ 와 $B$ 의 알려진 시간이 각각 $a(n)$, $b(n)$ 일 때, 모든 $\varepsilon\gt 0$ 에 대해 $\delta\gt 0$ 이 있어 $B$ 의 $b(n)^{1-\varepsilon}$ 시간 알고리즘에서 $A$ 의 $a(n)^{1-\delta}$ 시간 알고리즘이 나오면 $(A,a)$ 에서 $(B,b)$ 로의 **세분 환원(fine-grained reduction)** 이 있다고 한다. 정수 하나가 $O(\log n)$ 비트인 word RAM(random access machine) 모형을 쓴다.
+문제 $A$ 와 $B$ 의 알려진 시간이 각각 $a(n)$, $b(n)$ 일 때, 모든 $\varepsilon\gt 0$ 에 대해 $\delta\gt 0$ 이 있어 $B$ 의 $b(n)^{1-\varepsilon}$ 시간 알고리즘에서 $A$ 의 $a(n)^{1-\delta}$ 시간 알고리즘이 나오면 $(A,a)$ 에서 $(B,b)$ 로의 **세분 환원(fine-grained reduction)** 이 있다고 한다. 정수 하나가 $O(\log n)$ 비트인 word RAM(random access machine) 모형을 쓴다. 직관에서 정수 $a$ 를 점 $(a,a^3)$ 으로 옮기는 일은 $O(n)$ 시간이므로, 시간 $n^2$ 의 3SUM 에서 시간 $n^2$ 의 세 점 공선 판정으로 가는 세분 환원이 $\delta=\varepsilon$ 으로 있다.
 
-- **3SUM 가설(3SUM hypothesis).** 크기가 $n^{O(1)}$ 이하인 정수 $n$ 개의 3SUM 을 $n^{2-\varepsilon}$ 시간에 푸는 알고리즘이 없다.
-- **모든 쌍 최단경로 가설(APSP hypothesis, all-pairs shortest paths).** 간선 가중치가 $n^{O(1)}$ 이하인 정수인 정점 $n$ 개 그래프의 모든 쌍 최단경로를 $n^{3-\varepsilon}$ 시간에 구하는 알고리즘이 없다.
-- **직교 벡터 가설(orthogonal vectors hypothesis).** $\lbrace 0,1\rbrace^{c\log n}$ 의 벡터 $n$ 개 두 묶음에서 내적이 $0$ 인 쌍을 찾는 문제를 모든 $c$ 에 대해 $n^{2-\varepsilon}$ 시간에 풀 수 없다. SETH 가 이 가설을 함의한다.
+- **3SUM 가설(3SUM hypothesis)** 은 크기가 $n^{O(1)}$ 이하인 정수 $n$ 개의 3SUM 을 $n^{2-\varepsilon}$ 시간에 푸는 알고리즘이 없다는 가설이다. 직관의 정렬과 양 끝 좁히기가 지수에서 최선이라는 진술이다.
+- **모든 쌍 최단경로 가설(all-pairs shortest paths hypothesis, APSP hypothesis)** 은 간선 가중치가 $n^{O(1)}$ 이하인 정수인 정점 $n$ 개 그래프의 모든 쌍 [최단경로](shortest-paths.md)를 $n^{3-\varepsilon}$ 시간에 구하는 알고리즘이 없다는 가설이다. Floyd–Warshall 알고리즘(Floyd–Warshall algorithm)이 정점 $k$ 를 거치는 경로를 $n^2$ 쌍마다 보는 $n^3$ 시간이 지수에서 최선이라는 진술이다.
+- **직교 벡터 가설(orthogonal vectors hypothesis)** 은 $\lbrace 0,1\rbrace^{c\log n}$ 의 벡터 $n$ 개 두 묶음에서 내적이 $0$ 인 쌍을 찾는 문제를 모든 $c$ 에 대해 $n^{2-\varepsilon}$ 시간에 풀 수 없다는 가설이다. 두 묶음의 쌍 $n^2$ 개를 모두 보는 방법이 지수에서 최선이라는 진술이다. 강한 [지수 시간 가설](exponential-time-hypothesis.md)(strong exponential time hypothesis, SETH)이 이 가설을 함의한다.
 
 로그 인자를 줄이는 개선은 가설과 어긋나지 않는다. 3SUM 은 $n^2/(\log n/\log\log n)^{2/3}$ 시간에(Grønlund–Pettie)[^1], 모든 쌍 최단경로는 $n^3/2^{\Omega(\sqrt{\log n})}$ 시간에 풀린다(Williams)[^2].
 
@@ -58,8 +56,8 @@ M. Pătraşcu 는 3SUM 에서 그래프의 삼각형 나열로 가는 환원을 
 # 활용
 
 - 알고리즘 설계의 한계 판정. [동적 계획법](dynamic-programming.md)으로 $O(n^2)$ 에 푸는 문자열 문제와 기하 문제들이 지수에서 개선되지 않는다는 근거가 이 하한들이다.
-- 동적 자료구조. 간선이 더해지고 지워지는 그래프에서 도달 가능성과 최단경로를 유지하는 비용의 하한이 3SUM 과 행렬곱 가설에서 나온다.
-- 근사와의 교환. 하한이 막는 정확한 계산 대신 $1+\varepsilon$ 근사를 거의 선형 시간에 하는 알고리즘이 편집 거리와 지름에서 연구된다.
+- 동적 자료구조. 간선이 더해지고 지워지는 그래프에서 도달 가능성과 최단경로를 유지하는 비용의 하한이 3SUM 가설과 [OMv 가설](omv-hypothesis.md)에서 유도된다.
+- [근사 알고리즘](approximation-algorithms.md). 하한이 막는 정확한 계산 대신 근사값을 빠르게 구한다. 편집 거리는 상수 배 근사가 거의 선형 시간에 계산되고(Andoni–Nosatzki, 2020), 희소 그래프의 지름은 $3/2$ 근사가 $\tilde O(m\sqrt n)$ 시간에 계산된다(Roditty–Vassilevska Williams, 2013).
 
 [^1]: A. Grønlund, S. Pettie, "Threesomes, degenerates, and love triangles", Journal of the ACM 65 (2018), Article 22.
 [^2]: R. Williams, "Faster all-pairs shortest paths via circuit complexity", SIAM Journal on Computing 47 (2018), 1965–1985.
