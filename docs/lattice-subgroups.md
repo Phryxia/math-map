@@ -26,23 +26,28 @@ $y$ 가 커지는 쪽에서 $\int dy/y^2$ 가 수렴하므로 뻗은 부분의 �
 
 ## 격자
 
-국소콤팩트 Hausdorff [위상군](topological-groups.md) $G$ 의 부분군 $\Gamma$ 가 **격자**(lattice)라는 것은 $\Gamma$ 가 이산이고 몫 $G/\Gamma$ 가 유한한 $G$ 불변 Borel 측도를 갖는 것이다.
+국소콤팩트 Hausdorff [위상군](topological-groups.md) $G$ 의 부분군 $\Gamma$ 가 이산이고 몫 $G/\Gamma$ 가 유한한 $G$ 불변 Borel 측도를 가지면 $\Gamma$ 를 **격자(lattice)** 라 한다.
 
-이산 부분군은 닫혀 있으므로 $G/\Gamma$ 는 Hausdorff 다. 이산군은 유니모듈러이므로, Haar 측도의 몫 조건에 따라 $G$ 의 모듈러 함수 $\Delta_G$ 가 $\Gamma$ 위에서 $1$ 이면 좌 Haar 측도 $\mu_G$ 가 $G/\Gamma$ 의 불변 측도로 내려온다.
+- $\mathbb Z$ 는 $\mathbb R$ 의 격자다. $\mathbb R/\mathbb Z$ 는 길이 $1$ 인 원이다.
+- $\mathbb Z\times\lbrace 0\rbrace$ 은 $\mathbb R^2$ 의 이산 부분군이지만 격자가 아니다. $\mathbb R^2/(\mathbb Z\times\lbrace 0\rbrace)$ 은 넓이가 무한한 원기둥이다.
+- 직관의 $\mathrm{SL}\_2(\mathbb Z)$ 는 $\mathrm{SL}\_2(\mathbb R)$ 의 격자다.
 
 ## 기본 영역
 
-Borel 집합 $F\subseteq G$ 가 다음을 만족하면 $\Gamma$ 의 **기본 영역**이라 한다.
+Borel 집합 $F\subseteq G$ 가 다음을 만족하면 $F$ 를 $\Gamma$ 의 **기본 영역(fundamental domain)** 이라 한다.
 
 $$
 G=\bigsqcup_{\gamma\in\Gamma}F\gamma
 $$
 
-$\mu_G(F)$ 는 $F$ 를 어떻게 잡아도 같고, 그 값을 $\Gamma$ 의 **공부피**라 한다.
+$\mu_G(F)$ 를 $\Gamma$ 의 **공부피(covolume)** 라 한다. 아래 성질 절에서 이 값이 $F$ 의 선택에 의존하지 않음을 보인다.
+
+- $\lbrack 0,1)^n$ 은 $\mathbb Z^n\subset\mathbb R^n$ 의 기본 영역이고 공부피는 $1$ 이다.
+- 직관의 $F$ 는 상반평면 $\mathbb H$ 위에서 $\mathrm{SL}\_2(\mathbb Z)$ 의 기본 영역 역할을 하고, 그 쌍곡 면적이 $\pi/3$ 이다.
 
 ## 균질과 비균질
 
-$G/\Gamma$ 가 콤팩트한 격자를 **균질 격자**, 콤팩트하지 않은 격자를 **비균질 격자**라 한다.
+$G/\Gamma$ 가 콤팩트한 격자를 **균질 격자(uniform lattice)**, 콤팩트하지 않은 격자를 **비균질 격자(non-uniform lattice)** 라 한다. 아래 표에 예를 든다.
 
 | G | Γ | 공부피 | 균질 |
 | --- | --- | --- | --- |
@@ -54,9 +59,13 @@ $G/\Gamma$ 가 콤팩트한 격자를 **균질 격자**, 콤팩트하지 않은 
 
 # 성질
 
+## 몫측도
+
+이산 부분군은 닫혀 있으므로 $G/\Gamma$ 는 Hausdorff 다. 이산군은 유니모듈러(unimodular)이므로, $G$ 의 모듈러 함수 $\Delta_G$ 가 $\Gamma$ 위에서 $1$ 이면 좌 Haar 측도 $\mu_G$ 가 $G/\Gamma$ 의 불변 측도로 내려온다.
+
 ## 유니모듈러성
 
-**정리.** $G$ 가 격자를 가지면 $G$ 는 유니모듈러다.
+$G$ 가 격자를 가지면 $G$ 는 유니모듈러다.
 
 증명의 요지. 모듈러 함수 $\Delta_G$ 는 $\Gamma$ 위에서 $1$ 이므로 $G/\Gamma$ 위의 연속함수 $\delta$ 로 내려온다. $c\gt 0$ 에 대해 $E_c=\lbrace x\in G/\Gamma:\delta(x)\le c\rbrace$ 라 하면 $\delta(gx)=\Delta_G(g)\delta(x)$ 에서 $gE_c=E_{c\Delta_G(g)}$ 다. 유한 불변 측도 $\nu$ 가 있으므로 $\nu(E_c)=\nu(E_{c\Delta_G(g)})$ 가 모든 $g$ 와 $c$ 에서 성립한다.
 
@@ -64,37 +73,37 @@ $\Delta_G$ 가 자명하지 않으면 그 상은 $\mathbb R\_{\gt 0}$ 에서 위
 
 ## 공부피의 유일성
 
-**정리.** 두 기본 영역 $F$ , $F'$ 에 대해 $\mu_G(F)=\mu_G(F')$ 다.
+두 기본 영역 $F$ , $F'$ 에 대해 $\mu_G(F)=\mu_G(F')$ 다.
 
 증명의 요지. $F=\bigsqcup_{\gamma}(F\cap F'\gamma)$ 이고 $F'=\bigsqcup_{\gamma}(F'\cap F\gamma)$ 다. 위 정리로 $G$ 가 유니모듈러이므로 $\mu_G(F\cap F'\gamma)=\mu_G(F\gamma^{-1}\cap F')$ 이고, $\gamma$ 에 대해 더하면 두 값이 같다.
 
 ## 콤팩트 몫
 
-**정리.** $G$ 가 유니모듈러이고 $\Gamma$ 가 이산 부분군이며 $G/\Gamma$ 가 콤팩트하면 $\Gamma$ 는 격자다.
+$G$ 가 유니모듈러이고 $\Gamma$ 가 이산 부분군이며 $G/\Gamma$ 가 콤팩트하면 $\Gamma$ 는 격자다.
 
 증명의 요지. $G$ 와 $\Gamma$ 가 모두 유니모듈러이므로 $G/\Gamma$ 에 불변 Radon 측도가 있다. 콤팩트 Hausdorff 공간의 Radon 측도는 전체 측도가 유한하다.
 
-역은 성립하지 않는다. $\mathrm{SL}\_2(\mathbb Z)$ 는 격자이지만 몫이 콤팩트하지 않다. 반단순 [Lie 군](lie-groups.md)에서 균질성을 판정하는 것이 Godement 판정이고, 격자가 항등원 아닌 멱단 원소를 갖지 않는 것과 몫의 콤팩트성이 동치라는 진술이다[^1]. $\mathrm{SL}\_2(\mathbb Z)$ 는 멱단 원소 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 를 가지므로 비균질이다.
+역은 성립하지 않는다. $\mathrm{SL}\_2(\mathbb Z)$ 는 격자이지만 몫이 콤팩트하지 않다. 반단순 [Lie 군](lie-groups.md)의 격자에서는 항등원 아닌 멱단(unipotent) 원소를 갖지 않는 것과 몫의 콤팩트성이 동치다. 산술 부분군에 대한 이 판정을 Godement 콤팩트성 판정(Godement compactness criterion)이라 한다[^1]. $\mathrm{SL}\_2(\mathbb Z)$ 는 멱단 원소 $\begin{pmatrix}1&1\cr 0&1\end{pmatrix}$ 를 가지므로 비균질이다.
 
 ## 유한 지표 부분군
 
-**정리.** $\Gamma$ 가 격자이고 $\Gamma'\le\Gamma$ 가 유한 지표이면 $\Gamma'$ 도 격자이고 공부피는 $\lbrack\Gamma:\Gamma'\rbrack$ 배다.
+$\Gamma$ 가 격자이고 $\Gamma'\le\Gamma$ 가 유한 지표이면 $\Gamma'$ 도 격자이고 공부피는 $\lbrack\Gamma:\Gamma'\rbrack$ 배다.
 
 증명의 요지. $\Gamma=\bigsqcup_{i=1}^{n}\Gamma'\gamma_i$ 로 분해하면 $\Gamma$ 의 기본 영역 $F$ 에 대해 $\bigsqcup_{i}F\gamma_i$ 가 $\Gamma'$ 의 기본 영역이다. 조각마다 측도가 같으므로 공부피가 $n$ 배다.
 
 ## SL₂(Z)
 
-**정리.** $\mathrm{SL}\_2(\mathbb Z)$ 는 $\mathrm{SL}\_2(\mathbb R)$ 의 비균질 격자다.
+$\mathrm{SL}\_2(\mathbb Z)$ 는 $\mathrm{SL}\_2(\mathbb R)$ 의 비균질 격자다.
 
 증명의 요지. $\mathrm{SL}\_2(\mathbb R)/\mathrm{SO}(2)\cong\mathbb H$ 이고 $\mathrm{SO}(2)$ 는 콤팩트하므로, $\mathrm{SL}\_2(\mathbb Z)$ 의 공부피는 상반평면 쪽 기본 영역의 쌍곡 면적에 $\mathrm{SO}(2)$ 의 부피를 곱한 것이다. 직관 절의 계산으로 그 면적이 $\pi/3$ 이다. 이산성은 정수 성분이라는 조건에서 나온다.
 
 # 활용
 
-- [아델](adeles.md)의 이산성과 콤팩트성 절은 수체 $K$ 가 $\mathbb A_K$ 의 이산 부분군이고 $\mathbb A_K/K$ 가 콤팩트하다는 정리다. $\mathbb A_K$ 가 가환이라 유니모듈러이므로 콤팩트 몫 정리에 따라 $K$ 는 균질 격자이고, 같은 문서의 Poisson 합공식이 이 구조를 쓴다.
-- [모듈러 곡선](modular-curves.md)은 합동 부분군 $\Gamma_0(N)$ 으로 상반평면을 나눈 몫이다. $\Gamma_0(N)$ 이 $\mathrm{SL}\_2(\mathbb Z)$ 의 유한 지표 부분군이므로 격자이고, 그 문서가 쓰는 지표 $\lbrack\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)\rbrack$ 가 공부피의 배수다.
+- 수체 $K$ 는 [아델](adeles.md) 환 $\mathbb A_K$ 의 이산 부분군이고 $\mathbb A_K/K$ 는 콤팩트하다. $\mathbb A_K$ 가 가환이라 유니모듈러이므로 콤팩트 몫 정리에 따라 $K$ 는 균질 격자이고, 아델 위의 Poisson 합공식이 이 구조를 쓴다.
+- [모듈러 곡선](modular-curves.md)은 합동 부분군 $\Gamma_0(N)$ 으로 상반평면을 나눈 몫이다. $\Gamma_0(N)$ 이 $\mathrm{SL}\_2(\mathbb Z)$ 의 유한 지표 부분군이므로 격자이고, 그 공부피는 $\mathrm{SL}\_2(\mathbb Z)$ 의 공부피의 $\lbrack\mathrm{SL}\_2(\mathbb Z):\Gamma_0(N)\rbrack$ 배다.
 - [Selberg 대각합 공식](selberg-trace-formula.md)은 $L^2(\Gamma\backslash\mathbb H)$ 의 스펙트럼을 켤레류의 합으로 쓴다. 그 $L^2$ 공간을 세우는 측도가 격자의 유한 불변 측도다.
 - [격자](lattices.md)의 공부피는 기저 행렬의 행렬식의 절댓값이고, 이것이 $\mathbb R^n$ 에서 위 정의의 공부피와 같다. Minkowski 정리의 부피 비교가 그 값과 대칭 볼록체의 부피를 견주는 것이다.
-- [Haar 측도](haar-measure.md)의 불변 측도의 몫 절이 주는 조건이 격자의 정의에서 몫측도의 존재를 보장한다.
+- 몫측도 절의 조건은 [Haar 측도](haar-measure.md)의 몫에 관한 일반 정리의 경우다.
 
 [^1]: Raghunathan, *Discrete Subgroups of Lie Groups*, Springer, 1972, Theorem 11.6 과 Corollary 11.8.
 
