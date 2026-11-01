@@ -8,10 +8,10 @@
 
 점별 극한이 0 인데 [Lebesgue 적분](lebesgue-integral.md)값이 남는 방식은 둘이다.
 
-- **높이 방향.** 함숫값이 큰 영역에 질량이 몰린다. $[0,1]$ 위에서 $f_n=n$ 을 $[0,1/n]$ 에 올린 함수열은 각 적분이 1 이고 점별로는 0 으로 간다.
-- **넓이 방향.** 무한 측도 공간에서 질량이 멀리 밀려난다. 실직선 위의 $f_n=1/n$ 을 $[0,n]$ 에 올린 함수열이 그렇다.
+- 높이 방향. 함숫값이 큰 영역에 질량이 몰린다. $[0,1]$ 위에서 $f_n=n$ 을 $[0,1/n]$ 에 올린 함수열은 각 적분이 1 이고 점별로는 0 으로 간다.
+- 넓이 방향. 무한 측도 공간에서 질량이 멀리 밀려난다. 실직선 위의 $f_n=1/n$ 을 $[0,n]$ 에 올린 함수열이 그렇다.
 
-[단조 수렴 정리](monotone-convergence.md)는 단조성으로, [지배 수렴 정리](dominated-convergence.md)는 적분가능한 지배함수 하나로 첫째 방향을 막는다. 균등적분가능성은 첫째를 막는 조건으로, 함숫값이 큰 곳의 적분 기여가 족 전체에 대해 균등하게 작다는 뜻이다. 유한 측도 공간에서는 둘째 방향이 없으므로 UI 로 충분하고, 무한 측도 공간에서는 꼬리를 통제하는 tightness 가 더 필요하다.
+[단조 수렴 정리](monotone-convergence.md)는 단조성으로, [지배 수렴 정리](dominated-convergence.md)는 적분가능한 지배함수 하나로 첫째 방향을 막는다. 균등적분가능성은 첫째를 막는 조건으로, 함숫값이 큰 곳의 적분 기여가 족 전체에 대해 균등하게 작다는 뜻이다. 유한 측도 공간에서는 둘째 방향이 없으므로 UI 로 충분하고, 무한 측도 공간에서는 꼬리를 통제하는 조임(tightness)이 더 필요하다.
 
 # 정의
 
@@ -19,7 +19,7 @@
 
 ## 균등적분가능성
 
-함수족 $H$ 가 **균등적분가능**하다는 것은 다음을 뜻한다.
+함수족 $H$ 가 **균등적분가능(uniformly integrable)** 하다는 것은 다음을 뜻한다.
 
 $$
 \lim_{M \to \infty} \ \sup_{f \in H} \ \int_{\lbrace|f| \gt M\rbrace} |f| \thinspace d\mu = 0 .
@@ -35,17 +35,19 @@ $$
 
 적분가능한 함수 하나에 대해 지배 수렴 정리가 위 극한을 주므로 유한족은 항상 UI 다. 무한족에서만 조건이 문제가 된다.
 
+직관 절의 $f\_n=n\cdot\mathbf 1\_{\lbrack 0,1/n\rbrack}$ 은 $n\gt M$ 이면 $\int\_{\lbrace f\_n\gt M\rbrace}f\_n=1$ 이므로 상한이 $M$ 에 상관없이 $1$ 이고 UI 가 아니다. 높이를 낮춘 $g\_n=\sqrt n\cdot\mathbf 1\_{\lbrack 0,1/n\rbrack}$ 은 $\sqrt n\gt M$ 일 때만 절단 적분이 $1/\sqrt n\lt 1/M$ 이므로 상한이 $1/M$ 이하이고 UI 다.
+
 ## 유한 측도에서의 동치 조건
 
 $\mu(X)$ 가 유한할 때, $H$ 가 UI 인 것은 다음 두 조건이 동시에 성립하는 것과 동치다.
 
-1. **$L^1$ 유계**:
+1. $L^1$ 유계(L¹-bounded):
 
 $$
 \sup_{f \in H} \int_X |f| \thinspace d\mu \lt\infty .
 $$
 
-2. **균등절대연속**: 임의의 양수 $\varepsilon$ 에 대해 어떤 양수 $\delta$ 가 존재하여, 가측집합 $A$ 가 $\mu(A)\lt\delta$ 를 만족하면 모든 $f$ 가 $H$ 에 속할 때
+2. 균등절대연속(uniform absolute continuity): 임의의 양수 $\varepsilon$ 에 대해 어떤 양수 $\delta$ 가 존재하여, 가측집합 $A$ 가 $\mu(A)\lt\delta$ 를 만족하면 모든 $f$ 가 $H$ 에 속할 때
 
 $$
 \int_A |f| \thinspace d\mu \lt\varepsilon .
@@ -55,7 +57,7 @@ $$
 
 ## de la Vallée-Poussin 판정
 
-$H$ 가 $L^1$ 유계일 때, $H$ 가 UI 인 것과 다음 조건은 동치다. 어떤 함수 $G$ 가 존재하여
+de la Vallée-Poussin 판정(de la Vallée-Poussin criterion)에 따르면 $H$ 가 $L^1$ 유계일 때, $H$ 가 UI 인 것과 다음 조건은 동치다. 어떤 함수 $G$ 가 존재하여
 
 $$
 G : [0,\infty) \to [0,\infty), \qquad \lim_{t \to \infty} \frac{G(t)}{t} = \infty, \qquad \sup_{f \in H} \int_X G(|f|) \thinspace d\mu \lt\infty .
@@ -79,8 +81,8 @@ $$
 
 다음은 모두 UI 를 함의한다. 증명은 모두 [Markov 부등식](concentration-inequalities.md)과 절단 기댓값의 직접 평가다.
 
-- **지배함수**: $|f|\le g$ 가 모든 $f$ 에 대해 성립하고 $g$ 가 적분가능하면, 절단 적분이 $g$ 의 꼬리 적분으로 눌린다. 따라서 지배 수렴 정리의 가정은 UI 를 준다.
-- **$L^p$ 유계 ($p\gt 1$ )**: [Hölder 부등식](holder-inequality.md)으로
+- 지배함수. $|f|\le g$ 가 모든 $f$ 에 대해 성립하고 $g$ 가 적분가능하면, 절단 적분이 $g$ 의 꼬리 적분 이하다. 따라서 지배 수렴 정리의 가정은 UI 를 준다.
+- $L^p$ 유계 ($p\gt 1$ ). [Hölder 부등식](holder-inequality.md)으로
 
 $$
 \int_{\lbrace|f| \gt M\rbrace} |f| \thinspace d\mu \ \le \ \Big( \int |f|^p d\mu \Big)^{1/p} \mu(|f| \gt M)^{1 - 1/p}
@@ -88,22 +90,22 @@ $$
 
 이고, Markov 부등식이 $\mu(|f|\gt M)\le C/M$ 을 주므로 $M$ 을 키우면 균등하게 0 으로 간다. 단, $p=1$ 유계만으로는 UI 가 아니다(위의 높이 도피 예가 $L^1$ 유계이면서 UI 가 아니다).
 
-- **[조건부 기댓값](conditional-expectation.md)족**: 적분가능한 $Z$ 에 대해 부분 $\sigma$ 대수 전체를 훑는 족
+- [조건부 기댓값](conditional-expectation.md)족. 적분가능한 $Z$ 에 대해 부분 $\sigma$ 대수 전체를 훑는 족
 
 $$
 \lbrace \mathbb{E}[Z \mid \mathcal{G}] : \mathcal{G} \subseteq \mathcal{F}\thinspace\text{ 인 부분 }\sigma\text{ 대수} \rbrace
 $$
 
-는 UI 다. [Jensen 부등식](jensen-inequality.md)으로 절단 기댓값을 $Z$ 의 절단 기댓값으로 눌러 얻으며, 조건부 기댓값이 정의하는 martingale 이론의 기본 사실이다.
+는 UI 다. [Jensen 부등식](jensen-inequality.md)으로 절단 기댓값을 $Z$ 의 절단 기댓값으로 위에서 누르면 얻어지며, 조건부 기댓값이 정의하는 martingale 이론의 기본 사실이다.
 
-- **유한합과 볼록결합**: UI 족 두 개의 합, UI 족의 볼록포(convex hull), UI 족의 $L^1$ 폐포는 모두 UI 다.
+- 유한합과 볼록결합. UI 족 두 개의 합, UI 족의 볼록포(convex hull), UI 족의 $L^1$ 폐포는 모두 UI 다.
 
 ## Vitali 수렴 정리
 
-유한 측도공간에서 다음이 동치다.
+Vitali 수렴 정리(Vitali convergence theorem)에 따르면 유한 측도공간에서 다음이 동치다.
 
 1. $f_n$ 이 $L^1$ 에서 $f$ 로 수렴한다. 즉 $\int|f_n-f|\thinspace d\mu\to0$ .
-2. $f_n$ 이 $f$ 로 측도 수렴하고, 족 $\lbrace f_n\rbrace$ 이 균등적분가능하다.
+2. $f_n$ 이 $f$ 로 측도 수렴(convergence in measure)하고, 족 $\lbrace f_n\rbrace$ 이 균등적분가능하다.
 
 증명의 요지 ($2\Rightarrow1$ ). 절단 함수 $T_M(x)=\max(-M,\min(M,x))$ 를 쓴다. 삼각부등식으로
 
@@ -111,7 +113,7 @@ $$
 \int |f_n - f| \le \int |f_n - T_M(f_n)| + \int |T_M(f_n) - T_M(f)| + \int |T_M(f) - f| .
 $$
 
-첫째와 셋째 항은 UI 로 $M$ 을 크게 잡으면 $n$ 과 무관하게 작다(극한 $f$ 의 적분가능성은 Fatou 보조정리로 얻는다). 가운데 항은 피적분함수가 $2M$ 으로 유계이고 측도 수렴하므로, 유한 측도에서 유계 수렴 정리로 0 으로 간다.
+첫째와 셋째 항은 UI 로 $M$ 을 크게 잡으면 $n$ 과 무관하게 작다(극한 $f$ 의 적분가능성은 Fatou 보조정리(Fatou's lemma)로 얻는다). 가운데 항은 피적분함수가 $2M$ 으로 유계이고 측도 수렴하므로, 유한 측도에서 유계 수렴 정리(bounded convergence theorem)로 0 으로 간다.
 
 증명의 요지 ($1\Rightarrow2$ ). $L^1$ 수렴은 측도 수렴을 준다(Markov). UI 는 $f_n$ 을 $f$ 와 $f_n-f$ 로 쪼개어, $f$ 하나의 적분가능성에서 오는 UI 와 $L^1$ 로 작아지는 잔차를 합치면 된다.
 
@@ -121,11 +123,11 @@ $$
 
 지배 수렴 정리는 Vitali 정리의 따름정리다. 지배함수가 있으면 UI 이고, 유한 측도에서 거의 어디서나 수렴이 측도 수렴을 함의하므로 Vitali 가 $L^1$ 수렴을 준다. 역은 성립하지 않아 UI 이면서 적분가능한 지배함수를 갖지 않는 함수열이 있다.
 
-$[0,1]$ 위에서 $f_n$ 을 길이 $1/n$ 인 구간 위의 값 $n^{1/2}$ 로 두면 절단 적분이 $n^{-1/2}$ 규모로 균등하게 작아 UI 이고 점별로 0 으로 가므로 $L^1$ 수렴한다. 모든 $f_n$ 을 덮는 최소 지배함수는 각 구간 위에서 $n^{1/2}$ 이상이라 적분이 발산한다.
+$[0,1]$ 위에서 $n\ge 2$ 마다 $h\_n=\frac{n}{\log n}\mathbf 1\_{\lbrack 0,1/n\rbrack}$ 로 두면, $n/\log n\gt M$ 일 때 절단 적분이 $1/\log n$ 이고 $M\to\infty$ 에서 균등하게 $0$ 으로 가므로 UI 이고 $L^1$ 수렴한다. 모든 $h\_n$ 이상인 가장 작은 함수 $\sup\_n h\_n$ 은 $0$ 근처에서 $1/(x\log(1/x))$ 규모이고 그 적분이 발산하므로, 적분가능한 지배함수가 없다. 직관 절의 $g\_n=\sqrt n\cdot\mathbf 1\_{\lbrack 0,1/n\rbrack}$ 은 $\sup\_n g\_n$ 이 $1/\sqrt x$ 규모라 적분가능하므로 지배함수를 갖는다.
 
 ## Dunford–Pettis 정리
 
-$L^1$ 부분집합이 약위상에서 상대적으로 콤팩트인 것과 그 집합이 UI 이고 무한 측도에서는 tight 인 것이 동치다. UI 가 $L^1$ 에서 [콤팩트성](compactness.md)을 대신하며, 확률측도열의 tightness 와 Prokhorov 정리가 [상측도](pushforward-measure.md) 수준에서 하는 역할을 밀도 수준에서 한다.
+Dunford–Pettis 정리(Dunford–Pettis theorem)에 따르면 $L^1$ 부분집합이 약위상에서 상대적으로 콤팩트인 것과 그 집합이 UI 이고 무한 측도에서는 조여 있는 것이 동치다. UI 가 $L^1$ 에서 [콤팩트성](compactness.md)을 대신하며, 확률측도열의 조임과 Prokhorov 정리(Prokhorov's theorem)가 [상측도](pushforward-measure.md) 수준에서 하는 역할을 밀도 수준에서 한다.
 
 ## L¹ 유계와 UI 의 분리
 
@@ -147,7 +149,7 @@ $$
 M_n = \mathbb{E}[M_\infty \mid \mathcal{F}\_n]
 $$
 
-를 가지므로, UI martingale 은 적분가능한 확률변수 하나를 조건부 기댓값으로 펼친 것이다. optional stopping 정리의 성립 여부도 정지시각까지의 족이 UI 인지로 판정된다.
+를 가지므로, UI martingale 은 적분가능한 확률변수 하나를 조건부 기댓값으로 펼친 것이다. 선택 정지 정리(optional stopping theorem)의 성립 여부도 정지시각까지의 족이 UI 인지로 판정된다.
 
 ## 통계와 극한정리
 
