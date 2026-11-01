@@ -6,7 +6,9 @@
 
 # 직관
 
-Reshetikhin–Turaev 구성은 모듈러 텐서범주 하나를 입력으로 받아 3 차원 위상 불변량을 내놓는다. 출력은 둘이다. 닫힌 유향 3 차원 다양체 $M$ 에 붙는 수 $\tau(M)\in\mathbb C$ 와, $M$ 안에 놓인 라벨 붙은 링크에 붙는 수다. MTC(modular tensor category)와 3 차원 [TQFT](topological-quantum-field-theory.md)(topological quantum field theory)의 대응 가운데 대수에서 위상으로 가는 방향이 이 구성이다.
+3 차원 다양체를 평면에 그릴 수 있는 자료로 바꿔야 한다. Lickorish–Wallace 정리(Lickorish–Wallace theorem)에 따르면 모든 닫힌 유향 3 차원 다양체는 $S^3$ 안의 프레임 링크(framed link)를 따라 수술해서 얻어진다. 수술은 링크의 각 성분을 둘러싼 고체원환을 도려내고 프레이밍이 지정한 방식으로 다시 붙이는 조작이고, 프레이밍은 각 성분에 붙는 정수 하나다. 3 차원 다양체가 정수가 적힌 링크 도식 하나로 바뀐다.
+
+같은 다양체를 주는 링크는 여럿이므로 도식에서 계산한 값이 곧바로 다양체의 불변량이 되지는 않는다. Kirby 정리가 그 모호성을 안정화와 손잡이 미끄러짐 두 이동으로 정리하고, 두 이동에 값이 변하지 않게 맞추는 것이 남는 일이다. 매듭 도식에서 Reidemeister 이동을 다룰 때와 같은 상황이다.
 
 구성의 요지는 [매듭 불변량](knot-invariants.md)에서 Jones 다항식을 Kauffman 괄호로 만드는 절차와 같고, 차원이 하나 높다.
 
@@ -17,7 +19,7 @@ Reshetikhin–Turaev 구성은 모듈러 텐서범주 하나를 입력으로 받
 | 표현의 모호성 | Reidemeister 이동 | Kirby 이동 |
 | 불변임을 보이는 방법 | 상태합이 이동에 안 변함 | 색칠 합이 이동에 안 변함 |
 
-MTC 는 각 교차점과 각 고리에 무엇을 대응시킬지 정하고, 매듭 도식과 Reidemeister 이동의 논리는 그 대응이 따르는 틀을 정한다.
+모듈러 텐서범주(modular tensor category, MTC)는 각 교차점과 각 고리에 무엇을 대응시킬지 정하고, 매듭 도식과 Reidemeister 이동의 논리는 그 대응이 따르는 틀을 정한다.
 
 모든 단순대상을 자기 양자차원만큼의 무게로 섞은 형식합
 
@@ -26,10 +28,6 @@ $$
 $$
 
 으로 수술 링크를 색칠하면 그 값이 [Kirby 계산법](kirby-calculus.md)의 Kirby 이동에 불변이 된다. 이 불변성은 $S$ [행렬](matrices.md)의 가역성, 곧 모듈러 조건과 동치다.
-
-3 차원 다양체를 평면에 그릴 수 있는 자료로 바꿔야 한다. Lickorish–Wallace 정리가 모든 닫힌 유향 3 차원 다양체를 $S^3$ 안의 프레임 링크를 따라 수술해서 얻는다고 말한다. 수술은 링크의 각 성분을 둘러싼 고체원환을 도려내고 프레이밍이 지정한 방식으로 다시 붙이는 조작이고, 프레이밍은 각 성분에 붙는 정수 하나다. 3 차원 다양체가 정수가 적힌 링크 도식 하나로 바뀐다.
-
-같은 다양체를 주는 링크는 여럿이므로 도식에서 계산한 값이 곧바로 다양체의 불변량이 되지는 않는다. Kirby 정리가 그 모호성을 안정화와 손잡이 미끄러짐 두 이동으로 정리하고, 두 이동에 값이 변하지 않게 맞추는 것이 남는 일이다. 매듭 도식에서 Reidemeister 이동을 다룰 때와 같은 상황이다.
 
 # 정의
 
@@ -54,20 +52,20 @@ $$
 
 로 두고, 이음수 행렬의 부호수를 $\sigma(L)$ 이라 하자. 수술로 얻은 다양체를 $M_L$ 이라 하면 다음이 불변량이다.
 
-> **정의 (Reshetikhin–Turaev 불변량).**
-> $$
-> \tau(M_L)=F(L_\omega)\cdot\mathcal D^{-m-1}\cdot\Big(\frac{\Delta_+}{\mathcal D}\Big)^{-\sigma(L)}
-> $$
+$$
+\tau(M_L)=F(L_\omega)\cdot\mathcal D^{-m-1}\cdot\Big(\frac{\Delta_+}{\mathcal D}\Big)^{-\sigma(L)}
+$$
+
+$\tau(M_L)$ 을 **Reshetikhin–Turaev 불변량(Reshetikhin–Turaev invariant)** 이라 한다. $\Delta_\pm=\sum_id_i^2\theta_i^{\pm1}$ 이다.
 
 $\mathcal D=\sqrt{\sum_id_i^2}$ 는 MTC 의 전체 차원이다. 빈 링크 곧 $M=S^3$ 을 넣으면 $\tau(S^3)=\mathcal D^{-1}=S_{00}$ 이 나온다. $\tau(S^3)$ 이 1 이 아닌 것이 이 규약의 특징이고, 뒤의 곱셈 공식이 보정 인자 없이 성립하게 하는 대가다.
 
-> **정리 (Reshetikhin–Turaev 1991).** $\tau(M_L)$ 은 $M_L$ 의 수술 표현에 의존하지 않는다. 곧 닫힌 유향 3 차원 다양체의 불변량이다.
-
-증명은 Kirby I, II 에 대한 불변성 확인이고, 그 재료가 $\omega$ 고리의 소멸 성질과 $\Delta_\pm$ 의 상쇄다.
+- 프레이밍 $0$ 인 풀린 고리는 $S^1\times S^2$ 를 준다. $F=\sum_id_i^2=\mathcal D^2$, $m=1$, $\sigma=0$ 이므로 $\tau(S^1\times S^2)=\mathcal D^2\cdot\mathcal D^{-2}=1$ 이다.
+- 프레이밍 $+1$ 인 풀린 고리는 $S^3$ 을 준다. $F=\Delta_+$, $\sigma=1$ 이므로 $\tau=\Delta_+\mathcal D^{-2}\cdot\mathcal D/\Delta_+=\mathcal D^{-1}$ 이고, 빈 링크의 값과 같다.
 
 ## TQFT 확장
 
-경계가 있는 다양체까지 확장하면 곡면 $\Sigma$ 마다 벡터공간 $Z(\Sigma)$ 가 생기고 다음 공리를 만족한다.
+경계가 있는 다양체까지 확장하면 곡면 $\Sigma$ 마다 벡터공간 $Z(\Sigma)$ 가 생기고 다음 공리를 만족한다. 이것이 3 차원 [TQFT](topological-quantum-field-theory.md)(topological quantum field theory)다.
 
 $$
 Z(\Sigma_1\sqcup\Sigma_2)=Z(\Sigma_1)\otimes Z(\Sigma_2),\qquad
@@ -80,10 +78,10 @@ $$
 
 ## Kirby 이동에 대한 불변성
 
-Kirby 정리의 두 이동은 다음이다.
+$\tau(M_L)$ 은 $M_L$ 의 수술 표현에 의존하지 않으므로 닫힌 유향 3 차원 다양체의 불변량이다(Reshetikhin–Turaev, 1991). 증명은 Kirby 계산법의 두 이동에 대한 불변성 확인이다.
 
-- **Kirby I (안정화).** 다른 성분과 떨어진 $\pm1$ 프레임 풀린 고리 하나를 더하거나 뺀다.
-- **Kirby II (손잡이 미끄러짐).** 한 성분을 다른 성분을 따라 미끄러뜨린다.
+- Kirby I (안정화): 다른 성분과 떨어진 $\pm1$ 프레임 풀린 고리 하나를 더하거나 뺀다.
+- Kirby II (손잡이 미끄러짐): 한 성분을 다른 성분을 따라 미끄러뜨린다.
 
 *Kirby II.* $\omega=\sum_id_iX_i$ 로 색칠한 고리에 라벨 $j$ 고리를 한 번 걸면(Hopf 고리) 그 값은
 
@@ -125,7 +123,7 @@ $$
 S^4=\mathrm{id},\qquad (ST)^3=\frac{\Delta_+}{\mathcal D}\thinspace S^2
 $$
 
-$\mathrm{SL}\_2(\mathbb Z)$ 의 표시가 $(ST)^3=S^2$ 와 $S^4=1$ 이므로 위 식은 $S,T$ 가 **사영표현**을 준다는 뜻이고, 그 사영 인자가 정확히 프레이밍 변칙과 같은 수다. 곧 사상류군 표현이 진짜 표현이 되지 못하는 이유와 $\tau$ 가 프레이밍에 의존하는 이유가 같은 하나다.
+$\mathrm{SL}\_2(\mathbb Z)$ 의 표시가 $(ST)^3=S^2$ 와 $S^4=1$ 이므로 위 식은 $S,T$ 가 사영표현(projective representation)을 준다는 뜻이고, 그 사영 인자가 정확히 프레이밍 변칙과 같은 수다. 곧 사상류군 표현이 진짜 표현이 되지 못하는 이유와 $\tau$ 가 프레이밍에 의존하는 이유가 같은 하나다.
 
 ## 예: 렌즈 공간
 
@@ -141,7 +139,7 @@ $$
 
 $\tau$ 는 완전 불변량이 아니다. 한 레벨의 $\mathrm{SU}(2)\_k$ 만으로는 구별하지 못하는 다양체 쌍이 있고, 값이 0 이 되어 아무 정보도 주지 않는 경우도 있다. 모든 $k$ 를 한꺼번에 보면 $k\to\infty$ 에서의 점근 거동과, $q$ 를 형식 변수로 보는 Ohtsuki 급수가 고전적 불변량과 이어진다.
 
-> **[Witten 점근 추측](witten-asymptotics.md).** $k\to\infty$ 에서 $\tau_k(M)$ 의 점근전개의 선행항이 $M$ 위의 평탄 $\mathrm{SU}(2)$ 접속들의 기여 합으로 주어지고, 각 기여의 위상이 Chern–Simons 작용값, 진폭이 [Reidemeister 비틀림](reidemeister-torsion.md)으로 나온다.
+[Witten 점근 추측](witten-asymptotics.md)은 다음 진술이다. $k\to\infty$ 에서 $\tau_k(M)$ 의 점근전개의 선행항이 $M$ 위의 평탄 $\mathrm{SU}(2)$ 접속들의 기여 합으로 주어지고, 각 기여의 위상이 Chern–Simons 작용값, 진폭이 [Reidemeister 비틀림](reidemeister-torsion.md)으로 나온다.
 
 이 추측은 여러 다양체족에서 증명되었고, 1 차 보정항에서 Casson 불변량이 나온다.
 
@@ -155,9 +153,9 @@ $$
 q=e^{2\pi i/(k+2)},\qquad A=q^{-1/4}
 $$
 
-이고, 그 결과 $S^3$ 안의 매듭 $K$ 에 대한 라벨 1 불변량이 Jones 다항식 $V_K(t)$ 를 $t=q$ 에서 평가한 값이 된다. 상태합으로 구하는 삼엽매듭의 $V(t)=-t^{-4}+t^{-3}+t^{-1}$ 을 이 1 의 거듭제곱근에서 평가한 수가 곧 $\mathrm{SU}(2)\_k$ 의 불변량이다.
+이고, 그 결과 $S^3$ 안의 매듭 $K$ 에 대한 라벨 1 불변량이 Jones 다항식 $V_K(t)$ 를 $t=q$ 에서 평가한 값이 된다. 상태합으로 구하는 왼손 삼엽매듭의 $V(t)=-t^{-4}+t^{-3}+t^{-1}$ 을 이 1 의 거듭제곱근에서 평가한 수가 곧 $\mathrm{SU}(2)\_k$ 의 불변량이다.
 
-라벨을 $n$ 으로 올리면 색 Jones 다항식이 나오고, $\mathfrak{sl}\_N$ 을 쓰면 HOMFLY(Hoste–Ocneanu–Millett–Freyd–Lickorish–Yetter), 직교·심플렉틱 계열에서는 Kauffman 다항식이 나온다. Jones 다항식은 $\mathrm{SU}(2)\_1$ 에서 뽑은 하나의 열이고, 3 차원 다양체 불변량은 같은 구성을 수술까지 밀어 올린 결과다.
+라벨을 $n$ 으로 올리면 색 Jones 다항식이 나오고, $\mathfrak{sl}\_N$ 을 쓰면 HOMFLY(Hoste–Ocneanu–Millett–Freyd–Lickorish–Yetter), 직교·심플렉틱 계열에서는 Kauffman 다항식이 나온다. Jones 다항식은 모든 $k$ 에서의 라벨 1 값을 다항식 하나로 묶은 것이고, 3 차원 다양체 불변량은 같은 구성을 수술로 확장한 것이다.
 
 ## 계산 복잡도
 
@@ -167,9 +165,9 @@ $\tau$ 를 정확히 계산하는 것은 어렵다. $\mathrm{SU}(2)\_k$ 에서 $
 
 ## 다른 불변량과의 관계
 
-- **Ohtsuki 급수**: $q=e^{h}$ 로 두고 $h$ 에 대해 전개하면 유한형 불변량(Vassiliev 이론의 3 차원판)의 [생성함수](generating-functions.md)가 나온다. 1 차항이 [Casson 불변량](casson-invariant.md)이다.
-- **범주화**: [Khovanov 호몰로지](khovanov-homology.md)는 Jones 다항식을 사슬복합체의 [Euler 지표](euler-characteristic.md)로 올려놓는다.
-- **기하학적 대응**: 점근에서 나타나는 평탄 접속의 모듈라이가 [기하학적 Langlands](geometric-langlands.md) 쪽과 같은 재료를 쓴다.
+- Ohtsuki 급수: $q=e^{h}$ 로 두고 $h$ 에 대해 전개하면 유한형 불변량(Vassiliev 이론의 3 차원판)의 [생성함수](generating-functions.md)가 나온다. 1 차항이 [Casson 불변량](casson-invariant.md)이다.
+- 범주화: [Khovanov 호몰로지](khovanov-homology.md)는 Jones 다항식을 사슬복합체의 [Euler 지표](euler-characteristic.md)로 올려놓는다.
+- 점근에서 나타나는 평탄 접속의 모듈라이가 [기하학적 Langlands](geometric-langlands.md) 쪽과 같은 재료를 쓴다.
 
 # 연관 문서
 
