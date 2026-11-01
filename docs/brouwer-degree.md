@@ -14,11 +14,9 @@
 
 이 두 바퀴가 원판 안의 해를 준다. 원판 안에 $f(x)=0$ 인 점이 없다면 $f(x)/\Vert f(x)\Vert$ 가 원판 전체에서 정의되고, 원판은 한 점으로 줄어들므로 테두리의 바퀴 수가 $0$ 이어야 한다. 두 바퀴는 $0$ 이 아니므로 해가 있고, 실제로 $f(x,y)=0$ 은 원점에서 성립한다. 이 바퀴 수가 차수다.
 
-구면의 자기사상에서는 차수가 호모토피류를 완전히 가른다.
-
 # 정의
 
-Brouwer 차수는 유계 열린집합에서 정의된 연속사상에 붙는 정수 $\deg(f,\Omega,y)$ 다. $\Omega\subset\mathbb R^n$ 이 유계 열린집합이고 $f:\overline\Omega\to\mathbb R^n$ 이 연속이며 $y\notin f(\partial\Omega)$ 일 때 정의된다.
+**Brouwer 차수(Brouwer degree)** 는 유계 열린집합에서 정의된 연속사상에 붙는 정수 $\deg(f,\Omega,y)$ 다. $\Omega\subset\mathbb R^n$ 이 유계 열린집합이고 $f:\overline\Omega\to\mathbb R^n$ 이 연속이며 $y\notin f(\partial\Omega)$ 일 때 정의된다.
 
 ## 정칙값에서의 정의
 
@@ -28,9 +26,11 @@ $$\deg(f,\Omega,y)=\sum\_{x\in f^{-1}(y)}\mathrm{sign}\thinspace\det Df(x).$$
 
 $Df(x)$ 는 $x$ 에서의 Jacobi [행렬](matrices.md)이다. $y$ 가 정칙값이므로 $f^{-1}(y)$ 의 점마다 $\det Df(x)\neq 0$ 이고, [역함수 정리](inverse-function-theorem.md)로 그 점들은 고립되어 있다. $f^{-1}(y)$ 는 $\overline\Omega$ 의 닫힌부분집합이면서 경계와 만나지 않으므로 콤팩트이고, 고립점으로 된 콤팩트 집합이라 유한집합이다. 따라서 합이 유한하다.
 
+직관의 $f(x,y)=(x^2-y^2,2xy)$ 와 원판 $\Omega=D$, $y=(1/4,0)$ 에서 $f^{-1}(y)=\lbrace(1/2,0),(-1/2,0)\rbrace$ 이다. $\det Df(x,y)=4(x^2+y^2)$ 이 두 점에서 $1$ 로 양수이므로 $\deg(f,D,y)=2$ 이고, 테두리의 바퀴 수 $2$ 와 같다.
+
 ## 연속사상으로의 확장
 
-정칙값이 아닌 $y$ 와 매끄럽지 않은 $f$ 는 근사로 처리한다. [Sard 정리](sard-theorem.md)에 따라 임계값의 집합은 측도 $0$ 이므로 $y$ 에 얼마든지 가까운 정칙값 $y'$ 이 있고, $\Vert y'-y\Vert$ 가 $y$ 와 $f(\partial\Omega)$ 의 거리보다 작으면 $\deg(f,\Omega,y')$ 이 $y'$ 의 선택과 무관하다. 연속인 $f$ 는 Weierstrass 근사로 매끄러운 $g$ 로 균등근사하고, $\Vert g-f\Vert$ 가 같은 거리보다 작으면 $\deg(g,\Omega,y)$ 가 $g$ 의 선택과 무관하다. 두 값을 차례로 쓴 것이 $\deg(f,\Omega,y)$ 다.
+정칙값이 아닌 $y$ 와 매끄럽지 않은 $f$ 는 근사로 처리한다. [Sard 정리](sard-theorem.md)에 따라 임계값의 집합은 측도 $0$ 이므로 $y$ 에 얼마든지 가까운 정칙값 $y'$ 이 있고, $\Vert y'-y\Vert$ 가 $y$ 와 $f(\partial\Omega)$ 의 거리보다 작으면 $\deg(f,\Omega,y')$ 이 $y'$ 의 선택과 무관하다. 연속인 $f$ 는 Weierstrass 근사 정리(Weierstrass approximation theorem)로 매끄러운 $g$ 로 균등근사하고, $\Vert g-f\Vert$ 가 같은 거리보다 작으면 $\deg(g,\Omega,y)$ 가 $g$ 의 선택과 무관하다. 두 값을 차례로 쓴 것이 $\deg(f,\Omega,y)$ 다.
 
 ## 구면 사이의 사상
 
