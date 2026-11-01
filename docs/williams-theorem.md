@@ -6,19 +6,15 @@
 
 # 직관
 
-Williams 정리는 비결정적 지수 시간(nondeterministic exponential time, NEXP)에 판정되는 언어 가운데, 법 $m$ 게이트를 쓰는 상수 깊이 다항 크기 회로(alternating circuit with counters, ACC)로 계산되지 않는 것이 있다는 정리다. 곧 $\mathrm{NEXP}\not\subseteq\mathrm{ACC}^0$ 이다. R. Williams 가 2011 년에 증명했다[^1].
-
-Razborov–Smolensky 정리는 법이 소수 하나일 때의 하한이고, 법이 $6$ 처럼 합성수이면 그 다항식 근사가 통하지 않는다. Williams 정리는 회로의 하한을 회로 충족 가능성 판정 알고리즘에서 얻는다. 판정을 전수 조사보다 조금이라도 빨리 하면, 시간 계층 정리의 비결정적 판본과 모순이 생긴다.
-
-입력이 $n$ 개인 회로 $C$ 가 $1$ 을 내는 입력이 있는지 확인하려면 $2^n$ 개의 입력에 모두 넣어 보면 된다. 어떤 회로 부류 $\mathcal C$ 에 대해 이 일을 $2^n/n^{10}$ 시간에 하는 알고리즘이 있다고 둔다. 동시에 NEXP 의 모든 언어가 $\mathcal C$ 의 작은 회로로 계산된다고 둔다.
+입력이 $n$ 개인 회로 $C$ 가 $1$ 을 내는 입력이 있는지 확인하려면 $2^n$ 개의 입력에 모두 넣어 보면 된다. 어떤 회로 부류 $\mathcal C$ 에 대해 이 일을 $2^n/n^{10}$ 시간에 하는 알고리즘이 있다고 둔다. 동시에 비결정적 지수 시간(nondeterministic exponential time, NEXP)의 모든 언어가 $\mathcal C$ 의 작은 회로로 계산된다고 둔다.
 
 시간 $2^n$ 의 비결정적 기계가 받아들이는지는, 길이 $2^n$ 정도의 증거가 있는지로 정해진다. 둘째 가정을 쓰면 그 증거가 $\mathcal C$ 의 작은 회로의 진리표로 쓰인다. 그러면 증거 전체를 추측하는 대신 작은 회로를 추측하고, 그 회로가 증거로서 틀린 자리가 있는지를 $\mathcal C$ 회로의 충족 가능성 문제로 바꾸어 첫째 가정의 알고리즘으로 확인한다. 이렇게 시간 $2^n$ 의 비결정적 계산이 시간 $2^n/n^{10}$ 정도의 비결정적 계산으로 줄어드는데, 비결정적 시간 계층 정리가 이것을 막는다. 그래서 두 가정이 함께 성립할 수 없다.
 
 # 정의
 
-- **NEXP** 는 비결정적 Turing 기계가 시간 $2^{n^{O(1)}}$ 에 판정하는 언어의 부류다(nondeterministic exponential time).
-- 정수 $m\ge 2$ 에 대해 $\mathrm{ACC}^0\lbrack m\rbrack$ 은 AND, OR, NOT 게이트와 법 $m$ 게이트로 된 상수 깊이, 다항 크기 회로 족이 계산하는 함수의 부류다. 법 $m$ 게이트는 입력의 $1$ 의 개수가 $m$ 의 배수가 아니면 $1$ 을 낸다. $\mathrm{ACC}^0$(alternating circuit with counters)은 모든 $m$ 에 대한 $\mathrm{ACC}^0\lbrack m\rbrack$ 의 합집합이다.
-- 회로 부류 $\mathcal C$ 의 **충족 가능성 문제(satisfiability problem)** $\mathcal C$-SAT 은 $\mathcal C$ 의 회로를 받아 출력이 $1$ 인 입력이 있는지 판정하는 문제다.
+- **NEXP**(nondeterministic exponential time)는 비결정적 Turing 기계가 시간 $2^{n^{O(1)}}$ 에 판정하는 언어의 부류다. 다항 길이의 증거로 확인되는 NP(nondeterministic polynomial time)의 언어는 모두 NEXP 에 든다.
+- 정수 $m\ge 2$ 에 대해 $\mathrm{ACC}^0\lbrack m\rbrack$ 은 AND, OR, NOT 게이트와 법 $m$ 게이트로 된 상수 깊이, 다항 크기 회로 족이 계산하는 함수의 부류다. 법 $m$ 게이트는 입력의 $1$ 의 개수가 $m$ 의 배수가 아니면 $1$ 을 낸다. $\mathrm{ACC}^0$(alternating circuit with counters)은 모든 $m$ 에 대한 $\mathrm{ACC}^0\lbrack m\rbrack$ 의 합집합이다. 입력의 $1$ 의 개수가 $6$ 의 배수인지는 법 $6$ 게이트 하나와 NOT 게이트 하나로 계산되므로 $\mathrm{ACC}^0\lbrack 6\rbrack$ 에 든다.
+- 회로 부류 $\mathcal C$ 의 **충족 가능성 문제(satisfiability problem)** $\mathcal C$-SAT 은 $\mathcal C$ 의 회로를 받아 출력이 $1$ 인 입력이 있는지 판정하는 문제다. 회로 $x_1\wedge x_2$ 는 입력 $11$ 에서 $1$ 을 내므로 예이고, $x_1\wedge\neg x_1$ 은 아니오다.
 
 # 성질
 
@@ -38,7 +34,7 @@ Razborov–Smolensky 정리는 법이 소수 하나일 때의 하한이고, 법�
 - A. C.-C. Yao 와 R. Beigel, J. Tarui 의 구조 정리로 크기 $s$ 의 $\mathrm{ACC}^0$ 회로는 들어오는 변이 $(\log s)^{O(1)}$ 개인 AND 게이트 $2^{(\log s)^{O(1)}}$ 개의 값을 더한 수에 대칭 함수 하나를 적용한 꼴로 바뀐다[^4]. $\varepsilon$ 이 작으면 그 AND 게이트의 수가 $2^{0.1(n-\ell)}$ 보다 작다.
 - AND 게이트들의 합은 다중선형 다항식이다. 항이 $2^{0.1(n-\ell)}$ 개 이하인 다중선형 다항식의 값은 $\lbrace 0,1\rbrace^{n-\ell}$ 의 모든 점에서 동적 계획법으로 시간 $2^{n-\ell}\cdot n^{O(1)}$ 에 함께 계산된다. 각 점에서 대칭 함수를 적용해 $1$ 이 나오는 점이 있는지 본다.
 
-두 정리를 합치면 $\mathrm{NEXP}\not\subseteq\mathrm{ACC}^0$ 이 증명된다.
+두 정리를 합치면 $\mathrm{NEXP}\not\subseteq\mathrm{ACC}^0$ 이 증명된다. 이것이 Williams 정리이고, R. Williams 가 2011 년에 증명했다[^1]. 법이 소수 하나일 때의 Razborov–Smolensky 정리의 다항식 근사는 법이 $6$ 처럼 합성수이면 통하지 않는다.
 
 ## 강화
 
