@@ -8,29 +8,30 @@
 
 매듭은 연결합 $\mathbin{\char35}$ 으로 더할 수 있다. 두 매듭에서 작은 호를 하나씩 잘라 내고 끝을 이어 붙이는 연산이다. 풀린 매듭이 항등원이지만 역원은 없다. 매듭이 경계가 되는 $S^3$ 안의 곡면의 최소 종수(genus)가 연결합에서 더해지므로, 종수가 양수인 매듭에 무엇을 더해도 풀린 매듭이 되지 않는다.
 
-역원을 얻으려고 네 번째 차원을 쓴다. $K$ 의 거울상의 방향을 뒤집은 매듭을 $-K$ 라 하자. $K\mathbin{\char35}(-K)$ 는 $S^3$ 안에서는 풀리지 않지만, $B^4$ 안에서는 원판의 경계가 된다. $K$ 를 공 $B^3$ 안의 매듭진 호로 보고 이 호를 $B^3$ 의 경계를 축으로 반 바퀴 돌리면 $B^4$ 안의 원판이 생기고, 그 경계가 $K\mathbin{\char35}(-K)$ 이기 때문이다.
+역원을 얻으려고 네 번째 차원을 쓴다. $K$ 의 거울상의 방향을 뒤집은 매듭을 $-K$ 라 하자. $K\mathbin{\char35}(-K)$ 는 $S^3$ 안에서는 풀리지 않지만, $B^4$ 안에서는 원판의 경계가 된다. $K$ 를 공 $B^3$ 안의 매듭진 호로 보고 이 호를 $B^3$ 의 경계를 축으로 반 바퀴 돌리면, 호가 쓸고 지나간 자리가 $B^4$ 안의 원판이 되고 그 경계가 $K\mathbin{\char35}(-K)$ 다.
 
 그래서 "$B^4$ 안의 원판의 경계가 된다" 를 0 으로 보면 $-K$ 가 $K$ 의 역원이 된다. 이 생각을 두 매듭 사이의 관계로 쓴 것이 콩코던스다.
 
-이 군을 콩코던스 군(concordance group) $\mathcal C$ 라 한다. $\mathcal C$ 의 항등원은 4 차원 공 $B^4$ 안에 매장된 원판의 경계가 되는 매듭, 곧 슬라이스 매듭이다.
-
 # 정의
 
-$S^3$ 의 방향을 준 두 매듭 $K_0$, $K_1$ 에 대해 매끄럽게 매장된 고리면 $A\cong S^1\times\lbrack 0,1\rbrack$ 이 있어 $A\subset S^3\times\lbrack 0,1\rbrack$ 이고 $\partial A=K_0\times\lbrace 0\rbrace\sqcup(-K_1)\times\lbrace 1\rbrace$ 이면 $K_0$ 과 $K_1$ 이 **콩코던트(concordant)** 하다고 한다.
+$S^3$ 의 방향을 준 두 매듭 $K_0$, $K_1$ 에 대해 매끄럽게 매장된 고리면 $A\cong S^1\times\lbrack 0,1\rbrack$ 이 있어 $A\subset S^3\times\lbrack 0,1\rbrack$ 이고 $\partial A=K_0\times\lbrace 0\rbrace\sqcup(-K_1)\times\lbrace 1\rbrace$ 이면 $K_0$ 과 $K_1$ 이 **콩코던트(concordant)** 하다고 한다. 콩코던트는 동치관계이고, 그 동치류를 콩코던스류라 한다.
 
-$K$ 가 $B^4$ 안에 매끄럽게 매장된 원판 $D$ 의 경계 $\partial D=K\subset S^3=\partial B^4$ 이면 $K$ 를 **슬라이스 매듭(slice knot)** 이라 한다. $K$ 가 풀린 매듭과 콩코던트한 것과 슬라이스인 것은 동치다.
+- 모든 매듭 $K$ 는 자기 자신과 콩코던트하다. $A=K\times\lbrack 0,1\rbrack$ 을 쓴다.
+- 직관의 $B^4$ 안의 원판에서 작은 원판 하나를 떼면 고리면이 남고, 이것이 $K\mathbin{\char35}(-K)$ 와 풀린 매듭 사이의 콩코던스다.
 
-$K$ 가 경계가 되는 $B^4$ 안의 매끄러운 곡면의 최소 종수를 **4 차원 종수(slice genus)** $g_4(K)$ 라 한다. 슬라이스는 $g_4(K)=0$ 이다.
+$K$ 가 $B^4$ 안에 매끄럽게 매장된 원판 $D$ 의 경계 $\partial D=K\subset S^3=\partial B^4$ 이면 $K$ 를 **슬라이스 매듭(slice knot)** 이라 한다. $K$ 가 풀린 매듭과 콩코던트한 것과 슬라이스인 것은 동치다. 풀린 매듭과 직관의 $K\mathbin{\char35}(-K)$ 는 슬라이스 매듭이다.
+
+$K$ 가 경계가 되는 $B^4$ 안의 매끄러운 곡면의 최소 종수를 **4 차원 종수(slice genus)** $g_4(K)$ 라 한다. 슬라이스는 $g_4(K)=0$ 이다. 삼엽매듭은 $S^3$ 안에서 종수 $1$ 인 곡면의 경계이고 아래 부호수로 슬라이스가 아니므로 $g_4=1$ 이다.
 
 # 성질
 
 ## 군 구조
 
-콩코던스류의 집합 $\mathcal C$ 는 연결합 $\lbrack K\rbrack+\lbrack J\rbrack=\lbrack K\mathbin{\char35}J\rbrack$ 으로 아벨군이고, 항등원은 슬라이스 매듭의 류, $\lbrack K\rbrack$ 의 역원은 $\lbrack -K\rbrack$ 이다. 역원은 직관 절의 원판이 준다.
+콩코던스류의 집합 $\mathcal C$ 는 연결합 $\lbrack K\rbrack+\lbrack J\rbrack=\lbrack K\mathbin{\char35}J\rbrack$ 으로 아벨군이고, 항등원은 슬라이스 매듭의 류, $\lbrack K\rbrack$ 의 역원은 $\lbrack -K\rbrack$ 이다. 역원은 직관 절의 원판이 준다. 이 군을 콩코던스 군(concordance group)이라 한다.
 
 ## Seifert 행렬과 부호수
 
-$K$ 가 경계인 $S^3$ 안의 방향을 준 곡면 $F$ 를 Seifert 곡면(Seifert surface)이라 한다. $H_1(F)$ 의 기저 $a_1,\dots,a_{2g}$ 와 $a_j$ 를 $F$ 의 양의 법선 방향으로 조금 민 $a_j^+$ 에 대해 $V_{ij}=\mathrm{lk}(a_i,a_j^+)$ 로 둔 정수 [행렬](matrices.md) $V$ 를 Seifert 행렬(Seifert matrix)이라 한다. 여기서 $\mathrm{lk}$ 는 두 닫힌 곡선의 꼬임수다.
+$K$ 가 경계인 $S^3$ 안의 방향을 준 곡면 $F$ 를 Seifert 곡면(Seifert surface)이라 한다. $H_1(F)$ 의 기저 $a_1,\dots,a_{2g}$ 와 $a_j$ 를 $F$ 의 양의 법선 방향으로 조금 민 $a_j^+$ 에 대해 $V_{ij}=\mathrm{lk}(a_i,a_j^+)$ 로 둔 정수 [행렬](matrices.md) $V$ 를 Seifert 행렬(Seifert matrix)이라 한다. 여기서 $\mathrm{lk}$ 는 두 닫힌 곡선의 고리수(linking number)다.
 
 $$
 \sigma(K)=\mathrm{sign}(V+V^{T}),\qquad\Delta_K(t)=\det(V-tV^{T})
