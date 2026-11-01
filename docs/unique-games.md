@@ -6,27 +6,7 @@
 
 # 직관
 
-[PCP 정리](pcp-theorem.md)(probabilistically checkable proof)는 어떤 문제를 특정 비율보다 잘 근사하는 것이 $\mathrm{NP}$ 난해임을 보인다. 그 한계선과 [반정부호 계획법](semidefinite-programming.md)이 주는 알고리즘의 성능 사이에는 대체로 간극이 남고, 최대 절단이 대표적이다.
-
-| 방향 | 값 |
-|---|---|
-| Goemans–Williamson 알고리즘이 보장하는 근사비 | $\alpha_{\mathrm{GW}}\approx0.87856$ |
-| PCP 로 증명된 난해성 한계 | $16/17\approx0.94118$ |
-
-Khot 은 2002 년에 하나의 문제를 난해하다고 가정하면 이 간극이 닫힌다고 제안했다.[^1] 그 문제가 **유일게임**(unique games)이다.
-
-$$
-\textbf{UGC:}\quad \text{임의의 }\varepsilon\gt 0\text{ 에 대해 }k\text{ 가 있어, 라벨 }k\text{ 개인 유일게임에서}
-$$
-$$
-\text{"}1-\varepsilon\text{ 이상 만족 가능" 과 "}\varepsilon\text{ 이하만 만족 가능" 을 구별하는 것이 }\mathrm{NP}\text{-난해}
-$$
-
-유일게임 추측(unique games conjecture, UGC)이 참이면 최대 절단의 최적 근사비가 $\alpha_{\mathrm{GW}}$ 이고, 모든 제약 충족 문제에 대해 기본 SDP(semidefinite programming) 완화가 최적 알고리즘이다. 하나의 알고리즘 틀이 넓은 문제군에서 더 개선될 수 없다는 통일 정리가 된다.
-
-2018 년에 Khot–Minzer–Safra 등이 **2-to-2 게임 정리**를 증명해 추측의 절반에 해당하는 형태를 확립했다[^1]. 완전한 UGC 는 증명되지 않았다[^1].
-
-변수 집합 위의 2 항 제약 충족 문제인데 제약이 특별하다. 변수 $u,v$ 를 잇는 각 간선에 순열 $\pi_{uv}\colon[k]\to[k]$ 가 붙고 제약은
+개요의 삼각형 라벨 붙이기를 일반화한다. 변수 $u,v$ 를 잇는 각 간선에 순열 $\pi_{uv}\colon[k]\to[k]$ 가 붙고 제약은
 
 $$
 x_v=\pi_{uv}(x_u)
@@ -42,19 +22,30 @@ $$
 
 사례는 $(G=(V,E),[k],\lbrace\pi_e\rbrace\_{e\in E})$ 로 주어진다. $\pi_{uv}$ 는 $[k]$ 의 순열이고, 배정 $x\colon V\to[k]$ 의 값은 $x_v=\pi_{uv}(x_u)$ 를 만족하는 간선의 비율이다. 최댓값을 $\mathrm{opt}(I)$ 라 한다.
 
+개요의 삼각형에서 $k=3$ 이고 간선 $12$, $23$, $31$ 의 제약이 모두 $x_v=x_u+1\bmod 3$ 이면, 한 바퀴 돌 때 라벨이 $3\equiv 0$ 만큼 바뀌므로 $x=(0,1,2)$ 가 모든 제약을 만족해 $\mathrm{opt}=1$ 이다. 간선 $31$ 의 제약만 $x_1=x_3+2\bmod 3$ 으로 바꾸면 한 바퀴에 $1+1+2\equiv 1$ 만큼 바뀌어 세 제약을 함께 만족할 수 없고, 둘은 만족되므로 $\mathrm{opt}=2/3$ 이다.
+
 ## 추측의 진술
 
-**유일게임 추측.** 모든 $\varepsilon\gt 0$ 에 대해 $k=k(\varepsilon)$ 이 존재해, 라벨 크기 $k$ 의 유일게임 사례에서 $\mathrm{opt}\ge1-\varepsilon$ 인 경우와 $\mathrm{opt}\le\varepsilon$ 인 경우를 구별하는 문제가 $\mathrm{NP}$ 난해다.
-
-완전성 $1-\varepsilon$ 이 $1$ 에 가깝다는 점이 결정적이다. PCP 정리의 표준 형태는 완전성 $1$ 에서 출발하지만 유일게임에서 완전성 $1$ 인 경우는 다항시간에 풀리므로, $1-\varepsilon$ 이라는 위치가 필요하다.
+유일게임 추측(unique games conjecture, UGC)은 모든 $\varepsilon\gt 0$ 에 대해 $k=k(\varepsilon)$ 이 존재해, 라벨 크기 $k$ 의 유일게임 사례에서 $\mathrm{opt}\ge1-\varepsilon$ 인 경우와 $\mathrm{opt}\le\varepsilon$ 인 경우를 구별하는 문제가 NP(nondeterministic polynomial time) 난해라는 추측이다. 완전성을 $1$ 이 아니라 $1-\varepsilon$ 으로 둔다. 완전성 $1$ 인 경우는 전파로 다항시간에 풀린다.
 
 ## 2-to-2 게임
 
-제약이 순열이 아니라 각 값이 정확히 두 값에 대응하는 2-to-2 사상인 게임이다. **2-to-2 정리**(Khot–Minzer–Safra, Dinur–Khot–Kindler–Minzer–Safra)는 완전성 $1/2-\varepsilon$ 판본의 난해성을 증명한다. 완전성이 $1$ 에 가깝지 않으므로 UGC 를 직접 주지는 않지만, 무조건적인 새 난해성 결과들을 낳았다. 정점 덮개를 $\sqrt2-\varepsilon$ 보다 잘 근사하는 것이 $\mathrm{NP}$ 난해라는 결과가 대표적이다.
+제약이 순열이 아니라 각 값이 정확히 두 값에 대응하는 2-to-2 사상인 게임이다. 2-to-2 정리(2-to-2 theorem)는 2-to-2 게임에서 값이 $1-\varepsilon$ 이상인 경우와 $\varepsilon$ 이하인 경우를 가르는 것이 NP 난해라는 정리다. S. Khot, D. Minzer, M. Safra 와 I. Dinur, G. Kindler 등이 2018 년에 증명했다. 이로부터 유일게임에서 값이 $1/2-\varepsilon$ 이상인 경우와 $\varepsilon$ 이하인 경우를 가르는 것이 NP 난해하다. 완전성이 $1$ 에 가깝지 않으므로 UGC 를 주지는 않지만, 조건 없는 새 난해성 결과들이 나왔다. 정점 덮개를 $\sqrt2-\varepsilon$ 보다 잘 근사하는 것이 $\mathrm{NP}$ 난해라는 결과가 대표적이다.
 
-증명의 핵심은 Grassmann 그래프의 확장성 분석이다. 작은 집합에서 확장성이 깨지는 방식을 완전히 분류하는 조합 정리(Grassmann 그래프 추측)가 필요했고, 그것이 2018 년에 해결되면서 정리가 완성되었다.
+증명은 Grassmann 그래프의 확장성 분석을 쓴다. 작은 집합에서 확장성이 깨지는 방식을 완전히 분류하는 조합 정리(Grassmann 그래프 추측)가 필요했고, 그것이 2018 년에 해결되면서 정리가 완성되었다.
 
 # 성질
+
+## 최대 절단의 간극
+
+[PCP 정리](pcp-theorem.md)(probabilistically checkable proof)는 어떤 문제를 특정 비율보다 잘 근사하는 것이 $\mathrm{NP}$ 난해임을 보인다. 그 한계선과 [반정부호 계획법](semidefinite-programming.md)이 주는 알고리즘의 성능 사이에는 대체로 간극이 남고, 최대 절단(maximum cut) 문제가 대표적이다.
+
+| 방향 | 값 |
+|---|---|
+| Goemans–Williamson 알고리즘이 보장하는 근사비 | $\alpha_{\mathrm{GW}}\approx0.87856$ |
+| PCP 로 증명된 난해성 한계 | $16/17\approx0.94118$ |
+
+S. Khot 은 2002 년에 유일게임이 난해하다고 가정하면 이 간극이 닫힌다고 제안했다[^1].
 
 ## 2 항 제약에서의 위치
 
