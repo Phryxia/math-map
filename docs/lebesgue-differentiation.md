@@ -2,11 +2,9 @@
 
 # 개요
 
-**Lebesgue 미분정리(Lebesgue differentiation theorem)** 는 국소 가적분 함수의 작은 공 위 평균이 거의 모든 점에서 그 점의 함숫값으로 수렴한다는 정리다. $f$ 가 연속이면 $\int\_a^x f$ 를 미분해 $f(x)$ 를 다시 얻지만, $f$ 가 연속이 아니면 미적분학의 기본정리를 쓸 수 없어 평균이 함숫값으로 가는지 알 수 없다. 이 정리는 측도 $0$ 인 예외를 허용하면 연속성 없이도 평균이 함숫값으로 수렴함을 보인다.
+**Lebesgue 미분정리(Lebesgue differentiation theorem)** 는 국소 가적분 함수의 작은 공 위 평균이 거의 모든 점에서 그 점의 함숫값으로 수렴한다는 정리다. $f$ 가 연속이면 $\int\_a^x f$ 를 미분해 $f(x)$ 를 다시 얻지만, $f$ 가 연속이 아니면 [미적분학의 기본 정리](fundamental-calculus.md)를 쓸 수 없어 평균이 함숫값으로 가는지 알 수 없다. 이 정리는 측도 $0$ 인 예외를 허용하면 연속성 없이도 평균이 함숫값으로 수렴함을 보인다.
 
 # 직관
-
-증명의 도구는 Vitali 덮개 보조정리와 극대함수의 약한 추정이다.
 
 $f$ 가 연속이면 $F(x)=\int\_a^x f$ 의 도함수가 $f(x)$ 다. $f$ 가 연속이 아니면 어떻게 되는지 두 예로 본다.
 
@@ -24,13 +22,15 @@ $$
 
 # 정의
 
-$f\in L^1\_{\mathrm{loc}}(\mathbb R^n)$ 이라 하자. $B\_r(x)$ 를 중심 $x$ , 반지름 $r$ 인 공, $\vert B\_r(x)\vert$ 를 그 Lebesgue 측도라 한다.
+$f\in L^1\_{\mathrm{loc}}(\mathbb R^n)$, 곧 $f$ 가 모든 유계 가측집합 위에서 적분가능한 국소 가적분(locally integrable) 함수라 하자. $B\_r(x)$ 를 중심 $x$ , 반지름 $r$ 인 공, $\vert B\_r(x)\vert$ 를 그 Lebesgue 측도라 한다.
 
-점 $x$ 가 $f$ 의 **Lebesgue 점**이라는 것은 다음이 성립하는 것이다.
+점 $x$ 가 $f$ 의 **Lebesgue 점(Lebesgue point)** 이라는 것은 다음이 성립하는 것이다.
 
 $$
 \lim\_{r\to 0}\frac{1}{\vert B\_r(x)\vert}\int\_{B\_r(x)}\vert f(y)-f(x)\vert\thinspace dy=0
 $$
+
+직관 절의 계단함수에서 $x=0$ 은 Lebesgue 점이 아니다. 구간 $(-r,r)$ 위에서 $\vert f(y)-f(0)\vert$ 는 왼쪽 절반에서 $1$, 오른쪽 절반에서 $0$ 이므로 평균이 $r$ 에 상관없이 $1/2$ 이다. $x\ne 0$ 은 $r\lt\vert x\vert$ 이면 평균이 $0$ 이므로 Lebesgue 점이다. 유리수에서 $1$ 인 함수에서는 유리수 $q$ 마다 평균이 $1$ 이고 무리수마다 평균이 $0$ 이므로, Lebesgue 점의 집합이 무리수 전체다.
 
 $f$ 의 [Hardy–Littlewood 극대함수](hardy-littlewood-maximal-function.md)는 다음이다.
 
@@ -38,11 +38,13 @@ $$
 Mf(x)=\sup\_{r\gt 0}\frac{1}{\vert B\_r(x)\vert}\int\_{B\_r(x)}\vert f\vert\thinspace dy
 $$
 
+계단함수에서는 $x\ge 0$ 이면 작은 공의 평균이 $1$ 이므로 $Mf(x)=1$ 이다. $x\lt 0$ 이면 공이 $0$ 의 오른쪽으로 $r-\vert x\vert$ 만큼 들어가 평균이 $(r-\vert x\vert)/(2r)$ 이고, 그 상한은 $r\to\infty$ 에서의 $1/2$ 이다.
+
 # 성질
 
 ## Vitali 덮개 보조정리
 
-유한 개의 공 $B\_1,\dots,B\_N$ 에 대해, 서로 겹치지 않는 부분족 $B\_{i\_1},\dots,B\_{i\_k}$ 가 있어 다음이 성립한다[^1].
+Vitali 덮개 보조정리(Vitali covering lemma)에 따르면 유한 개의 공 $B\_1,\dots,B\_N$ 에 대해 서로 겹치지 않는 부분족 $B\_{i\_1},\dots,B\_{i\_k}$ 가 있어 다음이 성립한다[^1].
 
 $$
 \Bigl\vert\bigcup\_{j=1}^N B\_j\Bigr\vert\le 3^n\sum\_{l=1}^k\vert B\_{i\_l}\vert
@@ -52,19 +54,19 @@ $$
 
 ## 극대함수의 약한 추정
 
-*정리.* $f\in L^1(\mathbb R^n)$ 과 $\lambda\gt 0$ 에 대해 다음이 성립한다[^1].
+극대함수의 약한 추정(weak-type estimate)은 $f\in L^1(\mathbb R^n)$ 과 $\lambda\gt 0$ 에 대해 다음이 성립한다[^1].
 
 $$
 \vert\lbrace x:Mf(x)\gt\lambda\rbrace\vert\le\frac{3^n}{\lambda}\Vert f\Vert\_1
 $$
 
-*증명의 요지.* $Mf(x)\gt\lambda$ 인 점마다 평균이 $\lambda$ 를 넘는 공을 하나 고르면 그 공의 측도가 $\lambda^{-1}\int\_B\vert f\vert$ 이하다. 덮개 보조정리로 겹치지 않는 부분족을 뽑아 더하면 적분들이 겹치지 않으므로 합이 $\Vert f\Vert\_1$ 이하다.
+증명의 요지. $Mf(x)\gt\lambda$ 인 점마다 평균이 $\lambda$ 를 넘는 공을 하나 고르면 그 공의 측도가 $\lambda^{-1}\int\_B\vert f\vert$ 이하다. 덮개 보조정리로 겹치지 않는 부분족을 뽑아 더하면 적분들이 겹치지 않으므로 합이 $\Vert f\Vert\_1$ 이하다.
 
-## 정리
+## Lebesgue 미분정리
 
-*정리.* $f\in L^1\_{\mathrm{loc}}(\mathbb R^n)$ 이면 거의 모든 점이 $f$ 의 Lebesgue 점이다[^1].
+Lebesgue 미분정리에 따르면 $f\in L^1\_{\mathrm{loc}}(\mathbb R^n)$ 이면 거의 모든 점이 $f$ 의 Lebesgue 점이다[^1].
 
-*증명의 요지.* 연속함수가 $L^1$ 에서 조밀하므로 $\Vert f-g\Vert\_1$ 이 작은 연속함수 $g$ 를 잡는다. $g$ 에서는 결론이 모든 점에서 성립한다. 차 $f-g$ 의 평균은 $M(f-g)$ 로 억제되고 그 집합의 측도가 약한 추정으로 $\Vert f-g\Vert\_1/\lambda$ 의 상수배 이하다. 두 항을 함께 작게 만들면 결론이 깨지는 점들의 측도가 $0$ 으로 간다.
+증명의 요지. 콤팩트 지지 연속함수가 $L^1$ 에서 조밀하므로 $\Vert f-g\Vert\_1$ 이 작은 연속함수 $g$ 를 잡는다. $g$ 에서는 결론이 모든 점에서 성립한다. 차 $f-g$ 의 평균은 $M(f-g)$ 로 억제되고 그 집합의 측도가 약한 추정으로 $\Vert f-g\Vert\_1/\lambda$ 의 상수배 이하다. 두 항을 함께 작게 만들면 결론이 깨지는 점들의 측도가 $0$ 으로 간다.
 
 ## 따름정리
 
@@ -72,20 +74,20 @@ $$
 | --- | --- |
 | 미적분학의 기본정리 | $F(x)=\int\_a^x f$ 이면 거의 모든 $x$ 에서 $F'(x)=f(x)$ |
 | 단조함수의 미분가능성 | 증가함수는 거의 모든 점에서 미분가능하고 도함수가 가적분이다 |
-| 밀도점 | 가측집합 $E$ 의 거의 모든 점에서 $\vert E\cap B\_r\vert/\vert B\_r\vert\to 1$ |
+| 밀도점(point of density) | 가측집합 $E$ 의 거의 모든 점에서 $\vert E\cap B\_r\vert/\vert B\_r\vert\to 1$ |
 
-밀도점 진술은 $f=\mathbf 1\_E$ 를 넣은 경우다. 단조함수판은 [유계변동 함수](bounded-variation.md)의 Jordan 분해와 함께 쓰면 유계변동 함수가 거의 어디서나 미분가능하다는 결론을 준다.
+밀도점 진술은 $f=\mathbf 1\_E$ 를 넣은 경우다. 단조함수판은 [유계변동 함수](bounded-variation.md)의 Jordan 분해(Jordan decomposition)와 함께 쓰면 유계변동 함수가 거의 어디서나 미분가능하다는 결론을 준다.
 
 ## 복원에 필요한 절대연속성
 
-$F'=f$ 가 거의 어디서나 성립해도 $F(x)-F(a)=\int\_a^x F'$ 는 따라오지 않는다. Cantor 함수는 연속이고 증가하며 거의 모든 점에서 도함수가 $0$ 이지만 $F(1)-F(0)=1$ 이다. 적분으로 복원하려면 절대연속성이 필요하고, 그 조건이 [Radon–Nikodym 정리](radon-nikodym.md)가 다루는 측도의 절대연속성과 같은 조건이다.
+$F'=f$ 가 거의 어디서나 성립해도 $F(x)-F(a)=\int\_a^x F'$ 는 따라오지 않는다. Cantor 함수(Cantor function)는 연속이고 증가하며 거의 모든 점에서 도함수가 $0$ 이지만 $F(1)-F(0)=1$ 이다. 적분으로 복원하려면 절대연속성(absolute continuity)이 필요하고, 그 조건이 [Radon–Nikodym 정리](radon-nikodym.md)가 다루는 측도의 절대연속성과 같은 조건이다.
 
 # 활용
 
 - 유계변동 함수의 도함수. Jordan 분해로 증가함수 둘의 차로 쓴 뒤 각 항에 이 정리를 적용해 거의 어디서나 미분가능성을 얻는다.
 - [Rademacher 정리](rademacher-theorem.md). Lipschitz 함수가 거의 어디서나 미분가능하다는 정리의 증명이 방향별 도함수의 존재를 이 정리로 얻은 뒤 선형성을 확인한다.
 - Radon–Nikodym 정리의 밀도 해석. 측도의 밀도가 작은 공 위 질량비의 극한으로 주어지고, 그 극한의 존재가 거의 모든 점에서 보장된다.
-- 근사 항등원의 수렴. 핵을 좁혀 가며 [합성곱](convolution.md)한 $f\ast\varphi\_\varepsilon$ 이 거의 모든 점에서 $f$ 로 수렴한다는 진술이 평균의 수렴을 가중평균으로 넓힌 것이다.
+- 근사 항등원(approximate identity)의 수렴. 핵을 좁혀 가며 [합성곱](convolution.md)한 $f\ast\varphi\_\varepsilon$ 이 거의 모든 점에서 $f$ 로 수렴한다는 진술이 평균의 수렴을 가중평균으로 넓힌 것이다.
 
 [^1]: E. M. Stein and R. Shakarchi, *Real Analysis*, Princeton University Press, 2005, 3 장. 덮개 보조정리, 극대함수의 약한 추정, 미분정리와 밀도점을 차례로 다룬다.
 
