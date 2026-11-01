@@ -6,17 +6,9 @@
 
 # 직관
 
-격자는 점집합이 같아도 기저가 무수히 많고, 짧고 거의 직교하는 기저와 길고 거의 평행한 기저가 같은 격자를 나타낸다. 나쁜 기저만 주어졌을 때 짧은 벡터를 찾는 계산 비용이 이 문제의 내용이다.
+$\mathbb Z^2$ 를 기저 $(1,0),(0,1)$ 로 주면 최단 벡터가 눈에 보인다. 같은 격자를 $(1000,1),(1001,1)$ 로 주면 두 기저 벡터가 거의 평행하고 길다. 짧은 벡터 $(1,0)$ 은 두 기저 벡터의 차로 얻어진다. 그러나 차원이 커지면 어느 정수 결합이 짧은 벡터를 주는지가 드러나지 않는다.
 
-Minkowski 정리는 짧은 벡터의 존재를 보장하지만 찾는 절차를 주지 않는다. 존재와 계산 사이의 이 간극에 격자 기반 암호가 놓인다.
-
-같은 자리에 목표점에 가장 가까운 격자점을 찾는 최근접벡터 문제(closest vector problem, CVP)와, 정확한 답 대신 $\gamma$ 배 이내를 요구하는 근사판이 있다. 어려움의 정도가 $\gamma$ 에 따라 달라지고, 암호가 쓰는 영역과 난해성이 증명된 영역이 서로 다른 구간이다.
-
-## 좋은 기저와 나쁜 기저의 비대칭
-
-$\mathbb Z^2$ 를 기저 $(1,0),(0,1)$ 로 주면 최단 벡터가 눈에 보인다. 같은 격자를 $(1000,1),(1001,1)$ 로 주면 두 기저 벡터가 거의 평행하고 길다. 짧은 벡터 $(1,0)$ 은 두 기저 벡터의 차로 얻어지지만, 차원이 커지면 어느 정수 결합이 짧은 벡터를 주는지가 드러나지 않는다.
-
-기저의 정수 결합으로 만들 수 있는 벡터는 무한히 많고, 짧은 것을 찾는 탐색 공간이 차원에 대해 지수적으로 커진다. [실수](real-numbers.md) 계수를 허용하면 Gram–Schmidt 직교화로 즉시 풀리므로, 어려움은 계수가 정수라는 제약에서 온다.
+기저의 정수 결합으로 만들 수 있는 벡터는 무한히 많고, 짧은 것을 찾는 탐색 공간이 차원에 대해 지수적으로 커진다. [실수](real-numbers.md) 계수를 허용하면 Gram–Schmidt 직교화(Gram–Schmidt orthogonalization)로 즉시 풀리므로, 어려움은 계수가 정수라는 제약에서 온다.
 
 # 정의
 
@@ -25,22 +17,24 @@ $\mathbb Z^2$ 를 기저 $(1,0),(0,1)$ 로 주면 최단 벡터가 눈에 보인
 격자 $L$ 의 최단벡터 문제는 $\lambda_1(L)=\Vert v\Vert$ 를 이루는 $v\in L\setminus\lbrace 0\rbrace$ 을 찾는 문제다.
 
 $$
-\lambda_1(L)=\min\lbrace \Vert v\Vert : v\in L,\ v\neq 0\rbrace
+\lambda_1(L)=\min\lbrace \Vert v\Vert : v\in L,\thinspace v\neq 0\rbrace
 $$
 
-입력은 $L$ 의 기저이고 노름은 보통 유클리드 노름이다. 최근접벡터 문제는 목표점 $t\in\mathbb R^n$ 에 대해 $\Vert t-v\Vert$ 를 최소로 하는 $v\in L$ 을 찾는 문제다.
+입력은 $L$ 의 기저이고 노름은 보통 유클리드 노름이다. 직관 절의 기저 $(1000,1),(1001,1)$ 이 입력이면 $\lambda_1(\mathbb Z^2)=1$ 이고 답은 $(1,0)$ 이나 $(0,1)$ 과 그 부호를 바꾼 것이다.
+
+**최근접벡터 문제(closest vector problem, CVP)** 는 목표점 $t\in\mathbb R^n$ 에 대해 $\Vert t-v\Vert$ 를 최소로 하는 $v\in L$ 을 찾는 문제다. $\mathbb Z^2$ 에서 $t=(2.4,\thinspace 0.7)$ 이면 답은 $(2,1)$ 이다.
 
 ## 근사판과 판정판
 
-$\gamma\ge1$ 에 대한 근사판 $\mathrm{SVP}\_\gamma$ 는 $\Vert v\Vert\le\gamma\thinspace\lambda_1(L)$ 인 $v\in L\setminus\lbrace 0\rbrace$ 을 찾는 문제다. $\mathrm{CVP}\_\gamma$ 도 같은 방식으로 최적 거리의 $\gamma$ 배 이내를 요구한다.
+$\gamma\ge1$ 에 대한 근사판 $\mathrm{SVP}\_\gamma$ 는 $\Vert v\Vert\le\gamma\thinspace\lambda_1(L)$ 인 $v\in L\setminus\lbrace 0\rbrace$ 을 찾는 문제다. $\mathrm{CVP}\_\gamma$ 도 같은 방식으로 최적 거리의 $\gamma$ 배 이내를 요구한다. $\mathbb Z^2$ 에서 $\mathrm{SVP}\_2$ 는 $(1,0)$ 뿐 아니라 길이 $\sqrt 2$ 인 $(1,1)$ 도 답으로 받는다.
 
-판정판 $\mathrm{GapSVP}\_\gamma$ 는 입력이 $\lambda_1(L)\le1$ 인 경우와 $\lambda_1(L)\gt\gamma$ 인 경우 중 하나임이 보장될 때 어느 쪽인지 판정하는 문제다. 두 경우 사이의 격자는 입력으로 들어오지 않는다.
+판정판 $\mathrm{GapSVP}\_\gamma$ 는 입력이 $\lambda_1(L)\le1$ 인 경우와 $\lambda_1(L)\gt\gamma$ 인 경우 중 하나임이 보장될 때 어느 쪽인지 판정하는 문제다. 두 경우 사이의 격자는 입력으로 들어오지 않는다. $\gamma=2$ 이면 $\mathbb Z^2$ 는 앞의 경우, $3\mathbb Z^2$ 는 뒤의 경우이고, $\lambda_1=1.5$ 인 $1.5\thinspace\mathbb Z^2$ 는 입력이 아니다.
 
 ## 변형
 
 - 최단독립벡터 문제(shortest independent vectors problem, SIVP): $\mathrm{SIVP}\_\gamma$ 는 연속 최소 $\lambda_n(L)$ 의 $\gamma$ 배 이내 길이인 일차독립 벡터 $n$ 개를 찾는다.
 - 유계거리 복호(bounded distance decoding, BDD): 목표점이 격자에서 $\lambda_1(L)/2$ 보다 가까움이 보장된 CVP 다. 답이 유일하다.
-- 무한노름판: $\Vert\cdot\Vert\_\infty$ 로 잰 SVP 다. 정확판이 결정적 환산 아래 $\mathrm{NP}$ 난해다.
+- 무한노름판: $\Vert\cdot\Vert\_\infty$ 로 잰 SVP 다. 정확판이 결정적 환산 아래 $\mathrm{NP}$ 난해(NP-hard)다. NP 는 [P 대 NP 문제](p-np.md)의 부류(nondeterministic polynomial time)다.
 
 # 성질
 
@@ -50,7 +44,7 @@ SVP 는 무작위 환산 아래 $\mathrm{NP}$ 난해하고, $\gamma$ 가 상수�
 
 ## 난해성의 상한
 
-$\gamma\ge\sqrt{n/\log n}$ 이면 $\mathrm{GapSVP}\_\gamma$ 가 $\mathrm{NP}\cap\mathrm{coNP}$ 에 든다.[^2] 이 종류에 드는 문제가 $\mathrm{NP}$ 난해하면 다항 계층이 붕괴하므로, 이 구간의 근사에서는 난해성 증명을 기대하지 않는다.
+$\gamma\ge\sqrt n$ 이면 $\mathrm{GapSVP}\_\gamma$ 가 $\mathrm{NP}\cap\mathrm{coNP}$ 에 들고, $\gamma\ge\sqrt{n/\log n}$ 이면 $\mathrm{NP}\cap\mathrm{coAM}$ 에 든다.[^2] 두 부류의 문제가 $\mathrm{NP}$ 난해하면 [다항 계층](polynomial-hierarchy.md)이 유한한 단계로 붕괴(collapse)한다.
 
 난해성이 증명된 인자와 이 상한 사이에 암호가 쓰는 구간이 있다. 암호는 $\gamma$ 가 $n$ 의 다항식인 영역에 파라미터를 놓는다.
 
@@ -63,7 +57,7 @@ $\gamma\ge\sqrt{n/\log n}$ 이면 $\mathrm{GapSVP}\_\gamma$ 가 $\mathrm{NP}\cap
 | Kannan 열거 | $1$ | $n^{\Theta(n)}$ |
 | AKS(Ajtai–Kumar–Sivakumar) 체 | $1$ | $2^{\Theta(n)}$ |
 
-LLL 축소는 다항시간에 지수적 근사율을 주고, 블록 크기를 키우는 BKZ 가 근사율과 시간을 잇는 절충을 준다. 정확한 답을 내는 알고리즘은 시간이 차원에 대해 지수적이며, 양자 알고리즘도 지수를 상수배 줄이는 데 그친다. 소인수분해와 [이산로그](discrete-logarithm.md)를 다항시간에 푸는 [Shor 알고리즘](shor-algorithm.md)은 아벨 숨은 부분군 구조를 쓰는데 격자 문제에는 그 구조가 없다.
+LLL 축소는 다항시간에 지수적 근사율을 주고, 블록 크기를 키우는 BKZ 가 근사율과 시간을 잇는 절충을 준다. 알려진 정확한 알고리즘은 시간이 차원에 대해 지수적이고, 알려진 양자 알고리즘은 지수의 상수만 줄인다. 소인수분해와 [이산로그](discrete-logarithm.md)를 다항시간에 푸는 [Shor 알고리즘](shor-algorithm.md)은 아벨 숨은 부분군 구조를 쓰는데 격자 문제에는 그 구조가 없다.
 
 ## 최악 경우 환산
 
