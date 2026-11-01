@@ -6,21 +6,19 @@
 
 # 직관
 
-일반화 지리 게임은 유향 그래프의 시작 정점에 놓인 말을 두 사람이 번갈아 아직 지나지 않은 이웃 정점으로 옮기고, 옮길 수 없는 사람이 지는 게임이다. 먼저 두는 사람이 이기는 전략이 있는지 판정하는 문제는 PSPACE(polynomial space)-완전이다. T. J. Schaefer 가 1978 년에 증명했다[^1].
-
-[교대 Turing 기계](alternating-turing-machines.md)로 보면 다항 걸음 안에 끝나는 두 사람 게임의 승패 판정은 $\mathrm{AP}=\mathrm{PSPACE}$ 에 든다. 일반화 지리 게임은 그 판정이 PSPACE 에서 가장 어려운 문제가 되는 게임이고, 바둑 같은 게임의 난해성 증명이 이 게임에서 환원을 시작한다.
-
 끝말잇기에서 앞 사람이 말한 낱말의 끝 글자로 시작하는 낱말을 말하고, 이미 나온 낱말은 다시 쓰지 못한다. 낱말을 정점으로, "$u$ 의 끝 글자가 $v$ 의 첫 글자" 를 간선 $u\to v$ 로 두면, 말을 이미 지난 정점으로 옮길 수 없는 그래프 위의 게임이 된다. 일반화 지리 게임은 이 그래프를 아무 유향 그래프로 바꾼 것이다.
 
-먼저 두는 사람이 이기는지 판정하려면 "내 수 $v_1$ 이 있어서, 상대의 모든 수 $v_2$ 에 대해, 내 수 $v_3$ 이 있어서, …" 를 따져야 한다. 정점을 한 번씩만 지나므로 게임은 정점 수만큼의 걸음 안에 끝나고, 이 따짐은 한정사가 정점 수만큼 번갈아 나오는 [공간 복잡도](space-complexity.md)의 한정 불 논리식과 같은 꼴이다. 거꾸로 한정 불 논리식 하나를 그래프로 옮겨, 논리식이 참인 것과 먼저 두는 사람이 이기는 것을 같게 만들 수 있다.
+먼저 두는 사람이 이기는지 판정하려면 "내 수 $v_1$ 이 있어서, 상대의 모든 수 $v_2$ 에 대해, 내 수 $v_3$ 이 있어서, …" 를 따져야 한다. 정점을 한 번씩만 지나므로 게임은 정점 수만큼의 걸음 안에 끝나고, 이 따짐은 한정사(quantifier)가 정점 수만큼 번갈아 나오는 [공간 복잡도](space-complexity.md)의 한정 불 논리식(quantified Boolean formula)과 같은 꼴이다. 거꾸로 한정 불 논리식 하나를 그래프로 옮겨, 논리식이 참인 것과 먼저 두는 사람이 이기는 것을 같게 만들 수 있다.
 
 # 정의
 
 유향 그래프 $G=(V,E)$ 와 시작 정점 $s\in V$ 가 주어진다. 처음에 말은 $s$ 에 있고 $s$ 는 지난 정점이다. 두 사람이 번갈아, 말이 있는 정점 $v$ 에서 간선 $v\to w$ 를 따라 아직 지나지 않은 $w$ 로 말을 옮기고 $w$ 를 지난 정점에 더한다. 옮길 수 없는 사람이 진다. 먼저 두는 사람을 1 번, 다른 사람을 2 번이라 한다.
 
 $$
-\mathrm{GG}=\lbrace (G,s) : 1\ \text{번이 이기는 전략이 있다}\rbrace
+\mathrm{GG}=\lbrace (G,s) : 1\thinspace\text{번이 이기는 전략이 있다}\rbrace
 $$
+
+간선이 $s\to a$, $s\to b$, $a\to c$ 셋인 그래프에서 1 번이 $a$ 로 옮기면 2 번이 $c$ 로 옮기고, $c$ 에서 나가는 간선이 없어 1 번이 진다. 1 번이 $b$ 로 옮기면 $b$ 에서 나가는 간선이 없어 2 번이 진다. 따라서 "처음에 $b$ 로 옮긴다" 가 1 번의 이기는 전략이고 $(G,s)\in\mathrm{GG}$ 다. 간선 $s\to b$ 를 지우면 1 번은 $a$ 로만 옮길 수 있어 지므로 $(G,s)\notin\mathrm{GG}$ 다.
 
 간선을 한 번씩만 쓰게 한 판본을 간선 지리 게임(edge geography)이라 하고, 무향 그래프 위의 판본을 무향 지리 게임이라 한다.
 
@@ -28,13 +26,13 @@ $$
 
 ## PSPACE 소속
 
-게임은 $\lvert V\rvert-1$ 걸음 안에 끝난다. 1 번의 수를 존재 상태로, 2 번의 수를 전칭 상태로 고르는 교대 기계는 다항시간에 승패를 판정하므로 $\mathrm{GG}\in\mathrm{AP}=\mathrm{PSPACE}$ 다. 게임 나무를 깊이 우선으로 훑어도 깊이마다 정점 하나만 기억하면 되므로 같은 결론이 나온다.
+게임은 $\lvert V\rvert-1$ 걸음 안에 끝난다. 1 번의 수를 존재 상태로, 2 번의 수를 전칭 상태로 고르는 [교대 Turing 기계](alternating-turing-machines.md)는 다항시간에 승패를 판정하므로, 교대 다항시간(alternating polynomial time, AP)과 다항 공간(polynomial space, PSPACE)이 같다는 정리로 $\mathrm{GG}\in\mathrm{AP}=\mathrm{PSPACE}$ 다. 게임 나무를 깊이 우선으로 훑어도 깊이마다 정점 하나만 기억하면 되므로 같은 결론이 나온다.
 
 ## PSPACE-완전성
 
-정리(Schaefer). $\mathrm{GG}$ 는 PSPACE-완전이다[^1].
+정리(Schaefer). $\mathrm{GG}$ 는 PSPACE-완전이다. T. J. Schaefer 가 1978 년에 증명했다[^1].
 
-증명의 요지. TQBF(true quantified Boolean formula)에서 환원한다. 논리식은 $\exists x_1\forall x_2\exists x_3\cdots\exists x_n\ \varphi$ 꼴이고 $\varphi$ 는 절 $C_1,\dots,C_m$ 의 논리곱이라 해도 된다($n$ 은 홀수).
+증명의 요지. TQBF(true quantified Boolean formula)에서 환원한다. 논리식은 $\exists x_1\forall x_2\exists x_3\cdots\exists x_n\thinspace\varphi$ 꼴이고 $\varphi$ 는 절 $C_1,\dots,C_m$ 의 논리곱이라 해도 된다($n$ 은 홀수).
 
 - 변수 $x_i$ 마다 정점 넷 $t_i,\ell_i,r_i,b_i$ 와 간선 $t_i\to\ell_i$, $t_i\to r_i$, $\ell_i\to b_i$, $r_i\to b_i$, $b_i\to t_{i+1}$ 을 둔다. 말이 $\ell_i$ 를 지나면 $x_i$ 를 참으로, $r_i$ 를 지나면 거짓으로 정한 것이다.
 - $s=t_1$ 로 둔다. 한 변수에 세 걸음이 들고 $t_i$ 에서 고르는 사람이 번갈아 바뀌므로, 홀수 번째 변수는 1 번이, 짝수 번째 변수는 2 번이 정한다.
@@ -57,7 +55,7 @@ $$
 - 바둑은 $n\times n$ 판의 주어진 국면에서 승패를 판정하는 문제가 PSPACE-난해하다. D. Lichtenstein 과 M. Sipser 가 평면 그래프 위의 일반화 지리 게임에서 환원했다[^4]. 패를 일본 규칙으로 두면 판정이 EXPTIME(exponential time)-완전이다[^5].
 - $n\times n$ 판의 체스는 EXPTIME-완전이다[^6].
 
-일반화 지리 게임과 Hex 는 걸음 수가 판의 크기로 묶여 PSPACE 에 들고, 바둑과 체스는 같은 국면이 되풀이되며 걸음 수가 지수까지 갈 수 있어 교대 기계의 $\mathrm{APSPACE}=\mathrm{EXPTIME}$ 에 든다.
+일반화 지리 게임과 Hex 는 걸음 수가 판의 크기로 묶여 PSPACE 에 들고, 바둑과 체스는 같은 국면이 되풀이되며 걸음 수가 지수까지 갈 수 있어 교대 다항 공간(alternating polynomial space)의 부류 $\mathrm{APSPACE}=\mathrm{EXPTIME}$ 에 든다.
 
 # 활용
 
