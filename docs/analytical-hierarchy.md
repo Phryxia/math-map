@@ -6,10 +6,6 @@
 
 # 직관
 
-해석적 계층은 함수 변수에 붙은 한정기호의 교대 횟수로 자연수 집합을 분류하는 계층이다. 산술적 계층 전체가 이 계층의 가장 낮은 칸 하나에 들어간다.
-
-산술적 계층은 자연수를 훑는 한정기호만 센다. 자연수 하나로는 가리킬 수 없는 대상, 곧 함수나 무한집합을 훑어야 하는 문장은 그 계층 어디에도 들어가지 않는다.
-
 이진 나무 $T$ 의 원소는 $0$ 과 $1$ 로 된 유한 수열이고 수열이 $T$ 에 있는지는 유한 번 계산으로 판정되는데, 이 나무에 무한히 긴 가지가 있는지 묻는다. 산술적 계층의 방식대로 풀어 쓰면 "길이 $n$ 인 수열이 $T$ 에 있다" 는 판정되는 조건이므로 "모든 $n$ 에 대해 길이 $n$ 인 원소가 $T$ 에 있다" 는 $\Pi^0_1$ 이다. 그런데 층마다 원소가 있어도 그것들이 서로 이어지지 않으면 가지가 되지 않으므로, 이 문장은 무한 가지의 존재와 같지 않다. 이어진다는 조건을 넣으려면 가지 자체를 가리켜야 하는데, 가지는 $f(0),f(1),f(2),\dots$ 를 차례로 내놓는 함수 $f$ 이고 자연수 하나로는 이 함수를 가리킬 수 없다.
 
 무한 가지의 존재는 아래 문장이고, 맨 앞의 $\exists f$ 는 자연수가 아니라 함수를 훑는다. 함수를 훑는 한정기호의 배열을 세면 새 층이 매겨진다.
@@ -22,7 +18,7 @@ $$
 
 ## 논리식의 층
 
-[2차 산술](second-order-arithmetic.md)의 논리식에서 함수 변수에 붙은 한정기호가 하나도 없는 것을 **산술 논리식**이라 한다. 자연수 변수의 한정기호는 몇 개든 좋다. 산술 논리식 전체를 $\Sigma^1_0=\Pi^1_0$ 이라 둔다.
+[2차 산술](second-order-arithmetic.md)의 논리식에서 함수 변수에 붙은 한정기호가 하나도 없는 것을 **산술 논리식(arithmetical formula)** 이라 한다. 자연수 변수의 한정기호는 몇 개든 좋다. 산술 논리식 전체를 $\Sigma^1_0=\Pi^1_0$ 이라 둔다.
 
 나머지 층은 함수 한정기호를 번갈아 붙여 정한다.
 
@@ -30,21 +26,23 @@ $$
 \Sigma^1_{n+1}=\lbrace \exists f\thinspace \varphi:\varphi\in\Pi^1_n\rbrace,\qquad \Pi^1_{n+1}=\lbrace \forall f\thinspace \varphi:\varphi\in\Sigma^1_n\rbrace
 $$
 
-같은 종류의 한정기호가 이어지면 짝짓기 함수로 하나로 합칠 수 있으므로, 층은 교대 횟수만으로 정해진다.
+같은 종류의 한정기호가 이어지면 짝짓기 함수(pairing function)로 하나로 합칠 수 있으므로, 층은 교대 횟수만으로 정해진다. $\exists f\thinspace\exists g\thinspace\psi(f,g)$ 는 $h(2n)=f(n)$, $h(2n+1)=g(n)$ 인 $h$ 하나로 $\exists h\thinspace\psi(h\_0,h\_1)$ 이 된다.
+
+직관 절의 문장은 $\exists f$ 뒤에 산술 논리식이 오므로 $\Sigma^1_1$ 이다. "나무 $T$ 에 무한 가지가 없다" 는 그 부정 $\forall f\thinspace\exists n\thinspace(\langle f(0),\dots,f(n-1)\rangle\notin T)$ 이므로 $\Pi^1_1$ 이다.
 
 ## 집합의 층
 
 자연수 집합 $A$ 가 $\Sigma^1_n$ 논리식으로 정의되면 $A\in\Sigma^1_n$ 이라 쓴다. $\Pi^1_n$ 도 같다. 두 쪽에 모두 들어가는 것이 $\Delta^1_n=\Sigma^1_n\cap\Pi^1_n$ 이다.
 
-$\Sigma^1_1$ 집합을 **해석적**, $\Pi^1_1$ 집합을 **공해석적**이라 부른다.
+$\Sigma^1_1$ 집합을 **해석적(analytic)**, $\Pi^1_1$ 집합을 **공해석적(coanalytic)** 이라 부른다. 계산가능한 나무의 목록 $T\_0,T\_1,\dots$ 에 대해 $\lbrace e:T\_e\text{ 에 무한 가지가 있다}\rbrace$ 는 해석적이고, 그 여집합은 공해석적이다. 정지 집합 $K=\lbrace e:\exists s\thinspace(\varphi\_e(e)\text{ 가 }s\text{ 단계에 멈춘다})\rbrace$ 는 산술 논리식으로 정의되므로 $\Delta^1_1$ 이다.
 
 # 성질
 
 ## 산술적 계층과의 관계
 
-모든 산술적 집합은 $\Delta^1_1$ 에 들어간다. 정의가 함수 한정기호를 쓰지 않으므로 $\Sigma^1_0$ 이고, $\Sigma^1_0\subseteq\Delta^1_1$ 이다.
+모든 산술적 집합은 $\Delta^1_1$ 에 들어간다. 정의가 함수 한정기호를 쓰지 않으므로 $\Sigma^1_0$ 이고, 쓰지 않는 함수 변수에 한정기호를 붙이면 $\Sigma^1_0\subseteq\Delta^1_1$ 이다.
 
-포함은 진부분이다. $\Pi^1_1$ 완전 집합인 정렬순서의 집합
+포함은 진부분이다. $\Pi^1_1$ 완전(complete) 집합인 정렬순서의 집합
 
 $$
 \mathrm{WO}=\lbrace e:\varphi_e \text{ 가 } \mathbb N \text{ 위의 정렬순서를 정의한다}\rbrace
@@ -54,19 +52,19 @@ $$
 
 ## 엄격성
 
-각 $n$ 에서 $\Sigma^1_n\ne\Pi^1_n$ 이다. 증명은 산술적 계층과 같은 대각선 논법이다. 층마다 보편 $\Sigma^1_n$ 집합 $U$ 가 있고, $D=\lbrace e:(e,e)\in U\rbrace$ 를 잡으면 $D\in\Sigma^1_n$ 이면서 $D$ 의 여집합은 $\Sigma^1_n$ 이 아니다. 따라서 계층은 무너지지 않고 $\Delta^1_n\subsetneq\Sigma^1_n\subsetneq\Delta^1_{n+1}$ 이 이어진다.
+각 $n$ 에서 $\Sigma^1_n\ne\Pi^1_n$ 이다. 증명은 산술적 계층과 같은 대각선 논법(diagonal argument)이다. 층마다 보편(universal) $\Sigma^1_n$ 집합 $U$ 가 있고, $D=\lbrace e:(e,e)\in U\rbrace$ 를 잡으면 $D\in\Sigma^1_n$ 이면서 $D$ 의 여집합은 $\Sigma^1_n$ 이 아니다. 따라서 계층은 무너지지 않고 $\Delta^1_n\subsetneq\Sigma^1_n\subsetneq\Delta^1_{n+1}$ 이 이어진다.
 
 ## Kleene 정리
 
-$\Delta^1_1$ 은 초산술적 집합 전체와 같다.[^1] 초산술적 집합은 [Turing 도약](turing-degrees.md)을 계산가능한 서수 표기를 따라 초한 번 반복해 얻는 집합이다. 산술적 계층이 유한 번 도약에서 멈추는 자리를, 이 정리가 계산가능한 서수까지 밀어 올린 자리로 옮긴다.
+$\Delta^1_1$ 은 초산술적(hyperarithmetical) 집합 전체와 같다.[^1] 이것이 Kleene 정리(Kleene's theorem)다. 초산술적 집합은 [Turing 도약](turing-degrees.md)을 계산가능한 서수 표기를 따라 초한 번 반복해 얻는 집합에 Turing 환원되는 집합이다.
 
-$\Sigma^1_1$ 쪽에는 대응하는 정규형이 있다. $A\in\Sigma^1_1$ 인 것과 계산가능한 나무의 족 $T_e$ 가 있어 $e\in A$ 가 $T_e$ 에 무한 가지가 있는 것과 동치인 것이 같다. 직관 절의 문장이 $\Sigma^1_1$ 의 표준 꼴이다.
+$\Sigma^1_1$ 쪽에는 대응하는 정규형(normal form)이 있다. $A\in\Sigma^1_1$ 인 것과 계산가능한 나무의 족 $T_e$ 가 있어 $e\in A$ 가 $T_e$ 에 무한 가지가 있는 것과 동치인 것이 같다. 직관 절의 문장이 $\Sigma^1_1$ 의 표준 꼴이다.
 
 # 활용
 
-- **기술집합론의 사영 계층.** Baire 공간 $\mathbb N^{\mathbb N}$ 의 부분집합에 같은 정의를 매개변수를 허용해 적용하면 사영 계층이 된다. Suslin 정리로 $\Delta^1_1$ 집합과 Borel 집합이 같고, $\Sigma^1_1$ 집합은 Borel 집합의 연속상이다.
-- **역수학의 상단.** [역수학](reverse-mathematics.md)의 다섯 체계 가운데 가장 센 $\Pi^1_1\text{-}\mathrm{CA}\_0$ 가 $\Pi^1_1$ 논리식에 대한 내포 공리를 쓴다. 완전순서 두 개의 비교 가능성과 가산 아벨군의 분해 정리가 이 체계와 동치다.
-- **정의 가능성의 상한.** 2차 산술에서 정의되는 자연수 집합 전체가 이 계층의 합집합이다. 어떤 집합이 이 합집합 밖에 있음을 보이려면 2차 산술보다 강한 언어를 써야 한다.
+- 기술집합론의 사영 계층. Baire 공간(Baire space) $\mathbb N^{\mathbb N}$ 의 부분집합에 같은 정의를 매개변수를 허용해 적용하면 사영 계층(projective hierarchy)이 된다. Suslin 정리(Suslin's theorem)로 매개변수를 허용한 $\Delta^1_1$ 집합과 Borel 집합이 같고, $\Sigma^1_1$ 집합은 Borel 집합의 연속상이다.
+- 역수학의 가장 센 체계. [역수학](reverse-mathematics.md)의 다섯 체계 가운데 가장 센 $\Pi^1_1\text{-}\mathrm{CA}\_0$ 가 $\Pi^1_1$ 논리식에 대한 내포 공리(comprehension axiom)를 쓴다. 닫힌 집합이 완전집합과 가산집합의 합이라는 Cantor–Bendixson 정리(Cantor–Bendixson theorem)와 가산 아벨군이 나눗셈 가능한 부분과 축약된 부분의 직합이라는 정리가 이 체계와 동치다.
+- 정의 가능성의 상한. 2차 산술에서 정의되는 자연수 집합 전체가 이 계층의 합집합이다. 2차 산술의 참인 문장의 Gödel 수 전체는 Tarski 정의불가능성 정리(Tarski's undefinability theorem)에 따라 이 합집합 밖에 있다.
 
 [^1]: S. G. Simpson, *Subsystems of Second Order Arithmetic*, 2판 (2009), VIII.3. Kleene 정리와 초산술적 집합의 특성화. 사영 계층과 Suslin 정리는 A. Kechris, *Classical Descriptive Set Theory* (1995), 25절과 14절.
 
