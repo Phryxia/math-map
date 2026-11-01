@@ -6,11 +6,7 @@
 
 # 직관
 
-지배 수렴 정리는 [가측함수](measurable-functions.md)열 $f_n$ 이 점마다 $f$ 로 가고 적분 가능한 $g$ 하나가 모든 $n$ 에서 $\lvert f_n\rvert\le g$ 를 만족하면 $\int f_n\to\int f$ 라는 정리다. [단조 수렴 정리](monotone-convergence.md)와 달리 부호가 섞이고 오르내리는 열에 쓴다.
-
-[Riemann 적분](riemann-integral.md)에서 같은 결론을 얻으려면 [균등수렴](uniform-convergence.md)이 필요했다. 여기서는 점별 수렴과 지배함수 $g$ 로 충분하다.
-
-$(0,1]$ 에서 $f_n=n\thinspace\mathbf 1_{(0,1/n)}$ 을 보자. 각 점 $x$ 에서 $n$ 이 $1/x$ 를 넘으면 $f_n(x)=0$ 이므로 점마다 $0$ 으로 간다. 그런데 적분은 모든 $n$ 에서 $n\cdot(1/n)=1$ 이라 극한 함수의 적분 $0$ 과 다르다.
+$(0,1]$ 에서 $f_n=n\thinspace\mathbf 1_{(0,1/n)}$ 을 보자. 각 점 $x$ 에서 $n$ 이 $1/x$ 를 넘으면 $f_n(x)=0$ 이므로 점마다 $0$ 으로 간다. 그런데 적분은 모든 $n$ 에서 $n\cdot(1/n)=1$ 이라 극한 함수의 적분 $0$ 과 다르다. 이 열은 증가하지 않으므로 [단조 수렴 정리](monotone-convergence.md)도 쓸 수 없다.
 
 모든 $f_n$ 을 한꺼번에 덮는 함수는 $\sup_n f_n$ 이상이어야 한다. $\sup_n f_n(x)$ 는 $x\lt 1/n$ 을 만족하는 가장 큰 $n$ 의 값이라 $1/x-1$ 이상이고, 이 함수의 $(0,1]$ 적분은 무한대다. 같은 열을 높이 $1$ 에서 자른 $\min(f_n,1)=\mathbf 1_{(0,1/n)}$ 은 상수함수 $1$ 이 덮고, 적분 $1/n$ 이 극한 함수의 적분 $0$ 으로 간다. 적분 가능한 함수 하나가 열 전체를 덮으면 교환이 성립한다.
 
@@ -18,7 +14,7 @@ $(0,1]$ 에서 $f_n=n\thinspace\mathbf 1_{(0,1/n)}$ 을 보자. 각 점 $x$ 에�
 
 ## 진술
 
-[측도](measure.md) 공간 $(X, \Sigma, \mu)$ 에서 가측함수열 $f_1, f_2, \dots$ 가 거의 모든 점에서 $f$ 로 수렴한다고 하자. 적분 가능한 음이 아닌 함수 $G$ 가 있어 모든 $n$ 에 대해 거의 모든 점에서
+[측도](measure.md) 공간 $(X, \Sigma, \mu)$ 에서 [가측함수](measurable-functions.md)열 $f_1, f_2, \dots$ 가 거의 모든 점에서 $f$ 로 수렴한다고 하자. 적분 가능한 음이 아닌 함수 $G$ 가 있어 모든 $n$ 에 대해 거의 모든 점에서
 
 $$
 \lvert f_n(x)\rvert\le G(x)
@@ -30,13 +26,13 @@ $$
 \lim_{n\to\infty}\int_X f_n\thinspace d\mu=\int_X f\thinspace d\mu
 $$
 
-가 성립한다. [복소수](complex-numbers.md)값 함수에는 실수부와 허수부에 나누어 적용한다.
+가 성립한다. 이때 $G$ 를 **지배함수(dominating function)** 라 한다. 직관 절의 $\min(f_n,1)=\mathbf 1_{(0,1/n)}$ 은 지배함수 $G=1$ 을 갖고 적분 $1/n$ 이 $0$ 으로 간다. $f_n=n\thinspace\mathbf 1_{(0,1/n)}$ 은 $G\ge\sup_nf_n$ 인 $G$ 의 적분이 무한이므로 지배함수를 갖지 않는다. [복소수](complex-numbers.md)값 함수에는 실수부와 허수부에 나누어 적용한다.
 
 # 성질
 
 ## 증명
 
-거의 모든 점에서 $\lvert f \rvert \le G$ 이므로 $f$ 도 적분 가능하다. $G + f_n \ge 0$ 과 $G - f_n \ge 0$ 에 Fatou 보조정리를 적용한다.
+거의 모든 점에서 $\lvert f \rvert \le G$ 이므로 $f$ 도 적분 가능하다. $G + f_n \ge 0$ 과 $G - f_n \ge 0$ 에 Fatou 보조정리(Fatou's lemma)를 적용한다.
 
 $$
 \int (G+f)\le\liminf\int(G+f_n),\qquad
@@ -65,13 +61,13 @@ $$
 
 점별 수렴과 각 함수의 적분 가능성만으로는 부족하다. $(0,1]$ 의 $f_n=n\thinspace\mathbf{1}\_{(0,1/n)}$ 은 모든 점에서 $0$ 으로 수렴하지만 적분이 항상 $1$ 이고 적분 가능한 지배함수가 없다. 반대로 지배함수 없이 교환이 성립하는 경우도 있으므로 정리의 조건은 충분조건이다. 그때 쓰는 조건이 [균등적분가능성](uniform-integrability.md)이고, 지배함수가 있으면 균등적분가능하므로 조건이 더 약하다.
 
-$\lvert \sin(nx)/(1+nx^2) \rvert \le 1$ 은 지배되어 적분이 $0$ 으로 가고, 좁아지며 높아지는 봉우리는 적분이 $1$ 에 머문다.
+$\lbrack 0,1\rbrack$ 에서 $\lvert \sin(nx)/(1+nx^2) \rvert \le 1$ 은 지배되어 적분이 $0$ 으로 가고, 좁아지며 높아지는 봉우리는 적분이 $1$ 에 머문다.
 
 ## 따름정리
 
-- **유계 수렴 정리.** $\mu(X) \lt\infty$ 이고 $\lvert f_n \rvert \le M$ 이면 상수함수 $M$ 이 지배함수다. 확률공간의 유계 [확률변수](random-variables.md)열에 바로 쓴다.
-- **급수의 교환.** $\sum_n \int \lvert g_n \rvert \lt\infty$ 이면 $\int \sum_n g_n = \sum_n \int g_n$ 이다. 부분합이 $\sum_n \lvert g_n \rvert$ 에 지배되기 때문이며, 부호가 섞인 급수에서 쓰인다.
-- **적분 기호 아래 미분.** $\lvert \partial f/\partial t\thinspace(x,t) \rvert \le G(x)$ 이면
+- 유계 수렴 정리(bounded convergence theorem). $\mu(X) \lt\infty$ 이고 $\lvert f_n \rvert \le M$ 이면 상수함수 $M$ 이 지배함수다. 확률공간의 유계 [확률변수](random-variables.md)열에 바로 쓴다.
+- 급수의 교환. $\sum_n \int \lvert g_n \rvert \lt\infty$ 이면 $\int \sum_n g_n = \sum_n \int g_n$ 이다. 부분합이 적분 가능한 $\sum_n \lvert g_n \rvert$ 에 지배되므로 정리가 적용되고, 부호가 섞인 급수에서 쓰인다.
+- 적분 기호 아래 미분. $\lvert \partial f/\partial t\thinspace(x,t) \rvert \le G(x)$ 이면
 
 $$
 \frac{d}{dt}\int_X f(x,t)\thinspace d\mu=\int_X\frac{\partial f}{\partial t}(x,t)\thinspace d\mu
