@@ -6,10 +6,6 @@
 
 # 직관
 
-공간 복잡도는 Turing 기계가 문제를 판정하는 동안 쓰는 작업 테이프 칸의 수를 입력 길이의 함수로 잰 비용이다. [P 대 NP 문제](p-np.md)는 계산 단계의 수, 곧 시간을 재고, 공간 복잡도는 같은 계산이 동시에 기억해야 하는 양을 잰다. 로그 공간(logarithmic space)의 L 과 NL(nondeterministic logarithmic space), 다항 공간의 PSPACE(polynomial space)가 주된 부류다.
-
-시간과 달리 공간은 다시 쓸 수 있다. 그래서 비결정적 공간 $s$ 의 계산을 결정적 공간 $s^2$ 으로 흉내 낼 수 있다(Savitch 정리). [NP-완전성](np-completeness.md)의 환원과 완전성을 공간 부류에 옮기면 한정 불 논리식의 참 판정이 PSPACE 의 완전 문제가 된다.
-
 정점이 $n$ 개인 방향 [그래프](graphs.md)와 두 정점 $s$, $t$ 가 주어졌을 때 $s$ 에서 $t$ 로 가는 길이 있는지 묻는다. [그래프 탐색](graph-search.md)은 방문한 정점에 표시를 해 두고 표시가 없는 이웃으로 나아간다. 표시는 정점마다 한 비트이므로 메모리가 $n$ 비트 든다.
 
 표시를 하지 않으면 같은 정점을 거듭 방문해 끝나지 않을 수 있다. 그래서 질문을 바꾼다. "$s$ 에서 $t$ 로 $2^k$ 걸음 이내에 갈 수 있는가" 는 "어떤 정점 $m$ 이 있어서 $s$ 에서 $m$ 으로, $m$ 에서 $t$ 로 각각 $2^{k-1}$ 걸음 이내에 갈 수 있는가" 와 같다. $m$ 을 $n$ 개 모두 차례로 넣어 보고, 두 물음은 같은 방법으로 반씩 줄여 푼다.
@@ -25,19 +21,19 @@
 기계는 읽기만 하는 입력 테이프와 읽고 쓰는 작업 테이프를 갖는 [계산 가능성](computability.md)의 Turing 기계다. 입력 테이프를 세지 않으므로 입력보다 작은 공간도 뜻을 갖는다. 기계 $M$ 이 길이 $n$ 인 모든 입력에서 멈추고 작업 테이프 칸을 많아야 $s(n)$ 개 방문하면 $M$ 은 공간 $s(n)$ 에서 돈다고 한다. 비결정적 기계는 모든 계산 갈래가 이 제한을 지켜야 한다.
 
 $$
-\mathrm{SPACE}(s(n))=\lbrace L : L\ \text{을 공간}\ O(s(n))\ \text{에서 판정하는 결정적 기계가 있다}\rbrace
+\mathrm{SPACE}(s(n))=\lbrace L : L\thinspace\text{을 공간}\thinspace O(s(n))\thinspace\text{에서 판정하는 결정적 기계가 있다}\rbrace
 $$
 
-이고, 비결정적 기계로 바꾼 것이 $\mathrm{NSPACE}(s(n))$ 다.
+이고, 비결정적 기계로 바꾼 것이 $\mathrm{NSPACE}(s(n))$ 다. $0^k1^k$ 꼴의 문자열로 된 언어는 $0$ 과 $1$ 의 개수를 $O(\log n)$ 비트 계수기 둘에 세어 견주면 되므로 $\mathrm{SPACE}(\log n)$ 에 든다. 직관의 도달 가능성은 지금 정점 하나만 기억하고 다음 정점을 비결정적으로 고르며 $n$ 걸음까지 세면 되므로 $\mathrm{NSPACE}(\log n)$ 에 든다.
 
 ## 주된 부류
 
 | 부류 | 정의 |
 |---|---|
-| L | $\mathrm{SPACE}(\log n)$ |
-| NL | $\mathrm{NSPACE}(\log n)$ |
-| PSPACE | $\bigcup_{k\ge 1}\mathrm{SPACE}(n^k)$ |
-| NPSPACE | $\bigcup_{k\ge 1}\mathrm{NSPACE}(n^k)$ |
+| L(logarithmic space) | $\mathrm{SPACE}(\log n)$ |
+| NL(nondeterministic logarithmic space) | $\mathrm{NSPACE}(\log n)$ |
+| PSPACE(polynomial space) | $\bigcup_{k\ge 1}\mathrm{SPACE}(n^k)$ |
+| NPSPACE(nondeterministic polynomial space) | $\bigcup_{k\ge 1}\mathrm{NSPACE}(n^k)$ |
 
 ## 구성
 
@@ -45,7 +41,7 @@ $$
 
 ## 로그 공간 환원과 완전성
 
-언어 $A$ 의 입력을 로그 공간에서 계산되는 함수 $f$ 로 바꾸어 $w\in A\iff f(w)\in B$ 이면 $A\le_{\log}B$ 로 쓴다. 부류 $\mathcal C$ 의 모든 언어가 $B$ 로 환원되고 $B\in\mathcal C$ 이면 $B$ 는 $\mathcal C$-완전이다. 로그 공간에서 도는 기계는 구성이 다항식 개이므로 멈추려면 다항시간에 멈추고, 따라서 로그 공간 환원은 다항시간 환원이기도 하다.
+언어 $A$ 의 입력을 로그 공간에서 계산되는 함수 $f$ 로 바꾸어 $w\in A\iff f(w)\in B$ 이면 $A\le_{\log}B$ 로 쓴다. 부류 $\mathcal C$ 의 모든 언어가 $B$ 로 환원되고 $B\in\mathcal C$ 이면 $B$ 는 $\mathcal C$-완전이다. [NP-완전성](np-completeness.md)의 다항시간 환원을 로그 공간 환원으로 바꾼 것이다. 로그 공간에서 도는 기계는 구성이 다항식 개이므로 멈추려면 다항시간에 멈추고, 따라서 로그 공간 환원은 다항시간 환원이기도 하다.
 
 # 성질
 
@@ -57,11 +53,11 @@ $$
 \mathrm L\subseteq\mathrm{NL}\subseteq\mathrm P\subseteq\mathrm{NP}\subseteq\mathrm{PSPACE}\subseteq\mathrm{EXPTIME}
 $$
 
-이다. NP 의 언어는 증명서 후보를 하나씩 같은 공간에 써 가며 검증기를 돌려 PSPACE 에서 판정된다.
+이다. 여기서 $\mathrm P$ 와 $\mathrm{NP}$ 는 [P 대 NP 문제](p-np.md)의 부류이고, NP(nondeterministic polynomial time)의 언어는 증명서 후보를 하나씩 같은 공간에 써 가며 검증기를 돌려 PSPACE 에서 판정된다.
 
 ## Savitch 정리
 
-정리(Savitch's theorem). $s(n)\ge\log n$ 이면 $\mathrm{NSPACE}(s)\subseteq\mathrm{SPACE}(s^2)$ 이다[^1]. 특히 $\mathrm{PSPACE}=\mathrm{NPSPACE}$ 이고 $\mathrm{NL}\subseteq\mathrm{SPACE}(\log^2 n)$ 이다.
+정리(Savitch). 시간과 달리 공간은 다시 쓸 수 있으므로 비결정적 공간을 제곱의 결정적 공간으로 흉내 낼 수 있다. $s(n)\ge\log n$ 이면 $\mathrm{NSPACE}(s)\subseteq\mathrm{SPACE}(s^2)$ 이다[^1]. 특히 $\mathrm{PSPACE}=\mathrm{NPSPACE}$ 이고 $\mathrm{NL}\subseteq\mathrm{SPACE}(\log^2 n)$ 이다.
 
 증명의 요지. 직관 절의 반 나누기를 구성 그래프에 적용한다. 구성 하나는 $O(s)$ 비트이고, 구성이 $2^{O(s)}$ 개이므로 재귀 깊이는 $O(s)$ 다. 깊이마다 구성 셋을 기억하므로 공간이 $O(s^2)$ 이다.
 
@@ -96,12 +92,12 @@ function reach(c1, c2, k) {
 
 ## 한정 불 논리식의 PSPACE-완전성
 
-정리. 모든 변수가 한정된 **한정 불 논리식(quantified Boolean formula)** $Q_1x_1\cdots Q_nx_n\ \varphi$ 의 참 판정 문제 TQBF(true quantified Boolean formula)는 PSPACE-완전이다. L. J. Stockmeyer 와 A. R. Meyer 가 증명했다[^5].
+정리. 모든 변수가 한정된 **한정 불 논리식(quantified Boolean formula)** $Q_1x_1\cdots Q_nx_n\thinspace\varphi$ 의 참 판정 문제 TQBF(true quantified Boolean formula)는 PSPACE-완전이다. L. J. Stockmeyer 와 A. R. Meyer 가 증명했다[^5].
 
 증명의 요지. 바깥 한정사부터 $x_1=0$ 과 $x_1=1$ 을 차례로 넣고 같은 공간에서 나머지를 재귀로 판정하면, 깊이마다 비트 몇 개만 기억하므로 PSPACE 에 든다. 완전성은 Savitch 정리의 재귀를 논리식으로 쓴다. 구성 $a$, $b$ 를 변수 묶음으로 두고
 
 $$
-\varphi_k(a,b)=\exists m\thinspace\forall(c,d)\in\lbrace(a,m),(m,b)\rbrace\ \ \varphi_{k-1}(c,d)
+\varphi_k(a,b)=\exists m\thinspace\forall(c,d)\in\lbrace(a,m),(m,b)\rbrace\thinspace\varphi_{k-1}(c,d)
 $$
 
 로 정의한다. 전칭 한정사가 두 물음을 하나의 $\varphi_{k-1}$ 로 묶으므로 길이가 단계마다 $O(s)$ 씩만 늘고, $\varphi_{O(s)}$ 의 길이는 $O(s^2)$ 이다. $\varphi_0$ 은 Cook–Levin 정리의 부호화로 한 걸음 전이를 쓴 논리식이다. 한정사의 교대 횟수를 $k$ 로 고정한 것이 [다항 계층](polynomial-hierarchy.md)의 $\Sigma_k\mathrm{SAT}$ 이므로 $\mathrm{PH}\subseteq\mathrm{PSPACE}$ 다.
