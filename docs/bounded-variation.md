@@ -6,49 +6,43 @@
 
 # 직관
 
-유계변동 함수는 구간 위에서 위아래로 움직인 총량을 모든 분할에 대해 재었을 때 그 상한이 유한한 함수다. 단조함수는 총 움직임이 양 끝값의 차이라서 유계변동이고, 유계변동 함수는 증가함수 두 개의 차로 적을 수 있고, 그렇게 적히는 함수는 유계변동뿐이다.
-
-[미분](derivative.md)과 적분의 관계가 이 부류에서 갈린다. 유계변동 함수는 거의 어디서나 미분가능하지만 도함수의 적분이 원래 함수를 복원하지 못할 수 있고, 복원하는 부류가 절대연속 함수다.
-
-## 총 움직임
-
 $\lbrack a,b\rbrack$ 를 잘게 나누고 이웃한 두 점에서의 함숫값 차를 절댓값으로 더한다. 분할을 더 잘게 하면 이 합은 줄지 않으므로 상한이 총 움직임이다. 단조함수에서는 어떤 분할에서도 합이 $\lvert f(b)-f(a)\rvert$ 로 같다.
 
-$f(x)=x\sin(1/x)$ 는 원점에서 [연속](continuity.md)이지만 진동의 진폭이 $1/n$ 규모로 줄면서 진동 횟수가 그보다 빨리 늘어 총 움직임이 발산한다. 연속성은 유계변동을 주지 않는다.
+$f(x)=x\sin(1/x)$, $f(0)=0$ 은 원점에서 [연속](continuity.md)이다. $x_k=1/((k+\tfrac12)\pi)$ 에서 $f(x_k)=(-1)^kx_k$ 이므로 이웃한 두 점의 차는 $x_k+x_{k+1}\gt 1/((k+1)\pi)$ 이다. 이 값을 $k$ 에 대해 더하면 조화급수처럼 발산하므로 총 움직임이 무한하다.
 
 # 정의
 
 ## 변동
 
-분할 $P:a=x_0\lt x_1\lt \dots\lt x_n=b$ 에 대한 변동의 상한이 $f$ 의 **총변동**이다.
+분할 $P:a=x_0\lt x_1\lt \dots\lt x_n=b$ 에 대한 변동의 상한이 $f$ 의 **총변동(total variation)** 이다.
 
 $$
 V_a^b(f)=\sup_P\sum_{i=1}^{n}\lvert f(x_i)-f(x_{i-1})\rvert
 $$
 
-$V_a^b(f)\lt \infty$ 이면 $f$ 가 $\lbrack a,b\rbrack$ 에서 유계변동이라 하고 $f\in BV\lbrack a,b\rbrack$ 로 쓴다.
+$V_a^b(f)\lt \infty$ 이면 $f$ 가 $\lbrack a,b\rbrack$ 에서 유계변동이라 하고 $f\in BV\lbrack a,b\rbrack$ 로 쓴다(bounded variation). $f(x)=x^2$ 는 $\lbrack -1,0\rbrack$ 에서 감소하고 $\lbrack 0,1\rbrack$ 에서 증가하므로 $V_{-1}^1(f)=1+1=2$ 다. 직관 절의 $x\sin(1/x)$ 는 $\lbrack 0,1\rbrack$ 에서 유계변동이 아니다.
 
 ## 절대연속
 
-$f$ 가 **절대연속**이라 함은 임의의 $\varepsilon\gt 0$ 에 대해 $\delta\gt 0$ 이 있어, 서로 겹치지 않는 구간들 $(a_i,b_i)$ 의 길이 합이 $\delta$ 보다 작을 때마다 다음이 성립하는 것이다.
+$f$ 가 **절대연속(absolutely continuous)** 이라 함은 임의의 $\varepsilon\gt 0$ 에 대해 $\delta\gt 0$ 이 있어, 서로 겹치지 않는 구간들 $(a_i,b_i)$ 의 길이 합이 $\delta$ 보다 작을 때마다 다음이 성립하는 것이다.
 
 $$
 \sum_i\lvert f(b_i)-f(a_i)\rvert\lt \varepsilon
 $$
 
-구간을 하나만 쓰면 [균등연속](uniform-continuity.md)의 정의이고, 유한 개를 한꺼번에 재는 점이 다르다.
+구간을 하나만 쓰면 [균등연속](uniform-continuity.md)의 정의이고, 유한 개를 한꺼번에 재는 점이 다르다. $\lvert f(x)-f(y)\rvert\le L\lvert x-y\rvert$ 인 함수는 $\delta=\varepsilon/L$ 로 잡으면 절대연속이다.
 
 # 성질
 
 ## Jordan 분해
 
-$f\in BV\lbrack a,b\rbrack$ 일 필요충분조건은 $f=g-h$ 인 증가함수 $g,h$ 가 존재하는 것이다.
+Jordan 분해(Jordan decomposition)는 다음 동치다. $f\in BV\lbrack a,b\rbrack$ 일 필요충분조건은 $f=g-h$ 인 증가함수 $g,h$ 가 존재하는 것이다.
 
-*증명의 요지.* $g(x)=V_a^x(f)$ 로 두면 $g$ 가 증가한다. $x\lt y$ 에서 $f(y)-f(x)\le V_x^y(f)=g(y)-g(x)$ 이므로 $h=g-f$ 도 증가한다. 역방향은 증가함수가 유계변동이고 유계변동이 차에 대해 닫혀 있다는 사실이다.
+증명의 요지. $g(x)=V_a^x(f)$ 로 두면 $g$ 가 증가한다. $x\lt y$ 에서 $f(y)-f(x)\le V_x^y(f)=g(y)-g(x)$ 이므로 $h=g-f$ 도 증가한다. 역방향은 증가함수가 유계변동이고 유계변동이 차에 대해 닫혀 있다는 사실이다.
 
 ## 거의 어디서나 미분가능
 
-증가함수는 Lebesgue 측도로 거의 모든 점에서 미분가능하다([Lebesgue 미분정리](lebesgue-differentiation.md)). Jordan 분해로 유계변동 함수도 거의 어디서나 미분가능하고 $f'$ 이 가적분이다.
+증가함수는 Lebesgue 측도로 거의 모든 점에서 [미분](derivative.md)가능하다([Lebesgue 미분정리](lebesgue-differentiation.md)). Jordan 분해로 유계변동 함수도 거의 어디서나 미분가능하고 $f'$ 이 [Lebesgue 적분](lebesgue-integral.md)에 대해 가적분이다.
 
 증가함수에 대해 다음이 성립하고, 등호가 성립하지 않는 함수가 있다.
 
@@ -82,17 +76,17 @@ $$
 
 절대연속이라는 말은 함수에 대해서도 측도에 대해서도 쓴다. 증가하는 오른쪽 연속 함수에서 두 뜻이 같은 조건이 된다.
 
-**정리.** $F$ 가 $\lbrack a,b\rbrack$ 에서 증가하고 오른쪽 연속이라 하고, $\mu_F$ 를 $\mu_F((c,d\rbrack)=F(d)-F(c)$ 로 정한 [Lebesgue–Stieltjes 측도](caratheodory-extension.md)라 한다. $F$ 가 절대연속 함수인 것과 $\mu_F\ll\lambda$ 인 것이 동치이고, 그때 Radon–Nikodym 도함수가 $F'$ 과 거의 어디서나 같다.
+$F$ 가 $\lbrack a,b\rbrack$ 에서 증가하고 오른쪽 연속이라 하고, $\mu_F$ 를 $\mu_F((c,d\rbrack)=F(d)-F(c)$ 로 정한 [Lebesgue–Stieltjes 측도](caratheodory-extension.md)라 한다. $F$ 가 절대연속 함수인 것과 $\mu_F\ll\lambda$ 인 것이 동치이고, 그때 Radon–Nikodym 도함수가 $F'$ 과 거의 어디서나 같다.
 
-증명의 요지. $\mu_F\ll\lambda$ 의 $\varepsilon$ -$\delta$ 형태는 $\lambda(E)\lt\delta$ 이면 $\mu_F(E)\lt\varepsilon$ 이다. $E$ 를 겹치지 않는 구간 $(a_i,b_i\rbrack$ 의 합집합으로 잡으면 $\lambda(E)=\sum(b_i-a_i)$ 이고 $\mu_F(E)=\sum(F(b_i)-F(a_i))$ 이므로 위의 절대연속 정의와 같은 식이다. 구간의 유한 합집합이 Borel 집합을 생성하므로 두 조건이 동치다. 도함수의 일치는 미적분의 기본정리 절의 표현 $F(x)=F(a)+\int_a^x F'$ 을 $\mu_F$ 의 적분으로 읽은 것이다.
+증명의 요지. $\mu_F\ll\lambda$ 의 $\varepsilon$ -$\delta$ 형태는 $\lambda(E)\lt\delta$ 이면 $\mu_F(E)\lt\varepsilon$ 이다. $E$ 를 겹치지 않는 구간 $(a_i,b_i\rbrack$ 의 합집합으로 잡으면 $\lambda(E)=\sum(b_i-a_i)$ 이고 $\mu_F(E)=\sum(F(b_i)-F(a_i))$ 이므로 위의 절대연속 정의와 같은 식이다. 구간의 유한 합집합이 Borel 집합을 생성하므로 두 조건이 동치다. 도함수의 일치는 미적분의 기본정리 절의 표현 $F(x)=F(a)+\int_a^x F'$ 을 $\mu_F$ 의 적분으로 쓴 것이다.
 
-Cantor 함수에서는 $\mu_F$ 가 Cantor 집합에 실려 있고 그 집합의 Lebesgue 측도가 $0$ 이므로 $\mu_F\ll\lambda$ 가 깨진다. 함수 쪽에서 절대연속이 아닌 것과 측도 쪽에서 특이인 것이 같은 사실이다.
+Cantor 함수에서는 $\mu_F$ 가 Cantor 집합에 실려 있고 그 집합의 Lebesgue 측도가 $0$ 이므로 $\mu_F\ll\lambda$ 가 성립하지 않는다. 함수 쪽에서 절대연속이 아닌 것과 측도 쪽에서 특이인 것이 같은 사실이다.
 
 # 활용
 
 ## Riemann–Stieltjes 적분
 
-적분자 $g$ 가 유계변동이면 연속함수 $f$ 에 대해 [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md) $\int_a^b f\thinspace dg$ 가 존재한다. 유계변동은 이 적분이 정의되는 적분자의 부류이고, 대응하는 [부호 측도](signed-measures.md)의 전변동이 $V_a^b(g)$ 다. 연속함수 공간의 쌍대공간을 유계변동 함수로 기술하는 것이 Riesz 표현정리다.
+적분자 $g$ 가 유계변동이면 연속함수 $f$ 에 대해 [Riemann–Stieltjes 적분](riemann-stieltjes-integral.md) $\int_a^b f\thinspace dg$ 가 존재한다. 유계변동은 이 적분이 정의되는 적분자의 부류이고, 대응하는 [부호 측도](signed-measures.md)의 전변동이 $V_a^b(g)$ 다. $C\lbrack a,b\rbrack$ 의 쌍대공간은 유계변동 함수로 기술되고([Riesz–Markov–Kakutani 표현 정리](riesz-markov-kakutani.md)의 구간 판본), 연속 범함수는 $f\mapsto\int_a^b f\thinspace dg$ 꼴이다.
 
 ## 곡선의 길이
 
