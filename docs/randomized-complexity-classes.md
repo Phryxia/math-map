@@ -6,13 +6,9 @@
 
 # 직관
 
-무작위 복잡도 부류는 무작위 비트를 읽는 다항시간 알고리즘이 정해진 오류 확률 아래에서 판정하는 언어들의 부류다. 한쪽 답에서만 틀릴 수 있는 RP(randomized polynomial time)와 coRP, 틀리지 않고 기대 시간만 다항인 ZPP(zero-error probabilistic polynomial time), 양쪽 답에서 $1/3$ 이하의 확률로 틀릴 수 있는 BPP(bounded-error probabilistic polynomial time)가 기본이다.
-
-포함 관계는 $\mathrm P\subseteq\mathrm{ZPP}=\mathrm{RP}\cap\mathrm{coRP}$, $\mathrm{RP}\subseteq\mathrm{NP}\cap\mathrm{BPP}$ 다. [P 대 NP 문제](p-np.md)의 결정적 부류에 무작위성을 더한 것이고, 오류 확률을 반복으로 줄이는 데 [집중부등식](concentration-inequalities.md)을 쓴다.
-
 $n\times n$ 정수 행렬 $A,B,C$ 가 주어졌을 때 $AB=C$ 인지 확인하려 한다. $AB$ 를 계산하면 곱셈이 $n^3$ 번 든다. 대신 성분이 $0$ 또는 $1$ 인 벡터 $x$ 를 무작위로 골라 $A(Bx)$ 와 $Cx$ 를 비교하면, 행렬과 벡터의 곱 세 번이라 곱셈이 $3n^2$ 번이다.
 
-$AB=C$ 이면 두 값은 항상 같다. $AB\ne C$ 이면 $D=AB-C$ 에 $0$ 이 아닌 성분 $d_{ij}$ 가 있다. $Dx$ 의 $i$ 번째 성분은 $d_{ij}x_j$ 와 나머지 항의 합이고, 나머지 항을 고정하면 $x_j=0$ 과 $x_j=1$ 가운데 많아야 하나가 합을 $0$ 으로 만든다. 그래서 틀린 $C$ 를 놓칠 확률이 $1/2$ 이하이고, 독립으로 $20$ 번 되풀이하면 $2^{-20}$ 이하다. 이 알고리즘은 "같지 않다" 고 답할 때는 틀리지 않고, 이렇게 한쪽에서만 틀리는 알고리즘이 판정하는 언어의 부류가 RP 다.
+$AB=C$ 이면 두 값은 항상 같다. $AB\ne C$ 이면 $D=AB-C$ 에 $0$ 이 아닌 성분 $d_{ij}$ 가 있다. $Dx$ 의 $i$ 번째 성분은 $d_{ij}x_j$ 와 나머지 항의 합이고, 나머지 항을 고정하면 $x_j=0$ 과 $x_j=1$ 가운데 많아야 하나가 합을 $0$ 으로 만든다. 그래서 틀린 $C$ 를 놓칠 확률이 $1/2$ 이하이고, 독립으로 $20$ 번 되풀이하면 $2^{-20}$ 이하다. 이 알고리즘은 "같지 않다" 고 답할 때는 틀리지 않고, 이렇게 한쪽에서만 틀리는 알고리즘을 아래 정의 절에서 부류로 묶는다.
 
 # 정의
 
@@ -30,9 +26,9 @@ $AB=C$ 이면 두 값은 항상 같다. $AB\ne C$ 이면 $D=AB-C$ 에 $0$ 이 �
 | coRP | $1$ | $1/2$ 이하 |
 | BPP | $2/3$ 이상 | $1/3$ 이하 |
 
-- **RP** 는 위 표의 첫 행을 만족하는 다항시간 무작위 알고리즘이 있는 언어의 부류다. **coRP** 는 여집합이 RP 에 드는 언어의 부류다.
-- **BPP** 는 셋째 행을 만족하는 알고리즘이 있는 언어의 부류다.
-- **ZPP** 는 항상 옳은 답을 내고 기대 실행 시간이 입력 길이의 다항식인 무작위 알고리즘이 있는 언어의 부류다.
+- **RP**(randomized polynomial time)는 위 표의 첫 행을 만족하는 다항시간 무작위 알고리즘이 있는 언어의 부류다. **coRP** 는 여집합이 RP 에 드는 언어의 부류다. 직관의 검사로 언어 $\lbrace(A,B,C):AB\ne C\rbrace$ 는 RP 에 들고, 그 여집합 $\lbrace(A,B,C):AB=C\rbrace$ 는 coRP 에 든다.
+- **BPP**(bounded-error probabilistic polynomial time)는 셋째 행을 만족하는 알고리즘이 있는 언어의 부류다. 직관의 검사를 두 번 되풀이하면 놓칠 확률이 $1/4$ 이하가 되어 $\lbrace(A,B,C):AB\ne C\rbrace$ 가 BPP 에도 든다.
+- **ZPP**(zero-error probabilistic polynomial time)는 항상 옳은 답을 내고 기대 실행 시간이 입력 길이의 다항식인 무작위 알고리즘이 있는 언어의 부류다.
 
 틀리지 않고 시간만 무작위인 알고리즘을 Las Vegas 알고리즘(Las Vegas algorithm), 시간이 정해져 있고 틀릴 수 있는 알고리즘을 Monte Carlo 알고리즘(Monte Carlo algorithm)이라 한다.
 
@@ -42,7 +38,7 @@ $AB=C$ 이면 두 값은 항상 같다. $AB\ne C$ 이면 $D=AB-C$ 에 $0$ 이 �
 
 정리. 정의의 $1/2$ 과 $2/3$ 은 $1/2+1/q(n)$ 꼴의 어느 값으로 바꾸어도, 또는 $1-2^{-q(n)}$ 으로 바꾸어도 같은 부류를 준다. $q$ 는 다항식이다.
 
-증명의 요지. RP 는 $k$ 번 독립으로 돌려 한 번이라도 받아들이면 받아들인다. $x\in L$ 에서 놓칠 확률이 $2^{-k}$ 이하이고 $x\notin L$ 에서는 여전히 $0$ 이다. BPP 는 $k$ 번 돌려 다수결을 따른다. 각 시행이 맞을 확률이 $2/3$ 이상이면 Hoeffding 부등식(Hoeffding's inequality)에 따라 다수결이 틀릴 확률은 $e^{-k/18}$ 이하다.
+증명의 요지. RP 는 $k$ 번 독립으로 돌려 한 번이라도 받아들이면 받아들인다. $x\in L$ 에서 놓칠 확률이 $2^{-k}$ 이하이고 $x\notin L$ 에서는 여전히 $0$ 이다. BPP 는 $k$ 번 돌려 다수결을 따른다. 각 시행이 맞을 확률이 $2/3$ 이상이면 [집중부등식](concentration-inequalities.md)의 Hoeffding 부등식(Hoeffding's inequality)에 따라 다수결이 틀릴 확률은 $e^{-k/18}$ 이하다.
 
 ## ZPP 와 한쪽 오류
 
@@ -52,14 +48,16 @@ $AB=C$ 이면 두 값은 항상 같다. $AB\ne C$ 이면 $D=AB-C$ 에 $0$ 이 �
 
 ## 포함 관계
 
-- $\mathrm{RP}\subseteq\mathrm{NP}$. 받아들이게 하는 무작위 비트열 $r$ 이 증거다.
+[P 대 NP 문제](p-np.md)의 결정적 부류와 견주면 $\mathrm P\subseteq\mathrm{ZPP}$ 이고 다음이 성립한다.
+
+- $\mathrm{RP}\subseteq\mathrm{NP}$. NP(nondeterministic polynomial time)에서 받아들이게 하는 무작위 비트열 $r$ 이 증거다.
 - $\mathrm{RP}\subseteq\mathrm{BPP}$. RP 알고리즘을 두 번 돌리면 $x\in L$ 에서 받아들일 확률이 $3/4$ 이상이다.
 - BPP 는 여집합에 대해 닫혀 있다. 받아들임과 거부를 바꾸면 표의 두 열이 바뀐다.
 - $\mathrm{BPP}\subseteq\mathrm{PSPACE}$. PSPACE 는 다항 공간(polynomial space)으로 판정되는 언어의 부류다([공간 복잡도](space-complexity.md)). 무작위 비트열을 전부 하나씩 돌려 받아들이는 비율을 센다.
 
 ## Adleman 정리
 
-정리. BPP 의 언어는 다항 크기 [불 회로](boolean-circuits.md)의 족으로 판정된다[^1].
+정리(Adleman). BPP 의 언어는 다항 크기 [불 회로](boolean-circuits.md)의 족으로 판정된다[^1].
 
 증명의 요지. 오류 확률을 $2^{-(n+1)}$ 이하로 줄인다. 길이 $n$ 인 입력 $2^n$ 개 가운데 어느 하나에서라도 틀리게 하는 $r$ 의 비율은 합집합 한계로 $1/2$ 이하이므로, 모든 길이 $n$ 입력에서 옳은 $r_n$ 이 존재한다. $r_n$ 을 회로에 상수로 박아 넣는다.
 
