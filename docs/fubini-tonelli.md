@@ -20,25 +20,25 @@ $$f(x,y)=\frac{x^2-y^2}{(x^2+y^2)^2}$$
 
 ## 곱측도
 
-$(X,\mathcal A,\mu)$ 와 $(Y,\mathcal B,\nu)$ 를 $\sigma$ 유한 측도공간이라 한다. **곱 $\sigma$ 대수** $\mathcal A\otimes\mathcal B$ 는 $A\in\mathcal A$, $B\in\mathcal B$ 인 직사각형 $A\times B$ 들이 생성하는 $\sigma$ 대수다. **곱측도** $\mu\times\nu$ 는 $\mathcal A\otimes\mathcal B$ 위의 측도로
+$(X,\mathcal A,\mu)$ 와 $(Y,\mathcal B,\nu)$ 를 $\sigma$ 유한 측도공간이라 한다. **곱 $\sigma$ 대수(product σ-algebra)** $\mathcal A\otimes\mathcal B$ 는 $A\in\mathcal A$, $B\in\mathcal B$ 인 직사각형 $A\times B$ 들이 생성하는 $\sigma$ 대수다. **곱측도(product measure)** $\mu\times\nu$ 는 $\mathcal A\otimes\mathcal B$ 위의 측도로
 
 $$(\mu\times\nu)(A\times B)=\mu(A)\nu(B)$$
 
-를 만족하며, $\sigma$ 유한성 아래에서 이런 측도는 하나뿐이다. 존재의 구성과 완비화에서 생기는 차이는 [곱측도](product-measure.md)에 있다.
+를 만족하며, $\sigma$ 유한성 아래에서 이런 측도는 하나뿐이다. 존재의 구성과 완비화는 [곱측도](product-measure.md)에서 정의된다. $\lbrack 0,1\rbrack$ 의 Lebesgue 측도 둘의 곱측도는 직사각형 $\lbrack 0,\tfrac12\rbrack\times\lbrack 0,\tfrac13\rbrack$ 에 $\tfrac16$ 을 준다.
 
 ## 단면과 반복적분
 
-$f:X\times Y\to\lbrack 0,\infty\rbrack$ 가 $\mathcal A\otimes\mathcal B$ 가측이면 각 $x\in X$ 에서 **단면** $y\mapsto f(x,y)$ 가 $\mathcal B$ 가측이고, 함수 $x\mapsto\int_Yf(x,y)\thinspace d\nu(y)$ 가 $\mathcal A$ 가측이다. 두 단계를 이어 붙인
+$f:X\times Y\to\lbrack 0,\infty\rbrack$ 가 $\mathcal A\otimes\mathcal B$ 가측이면 각 $x\in X$ 에서 **단면(section)** $y\mapsto f(x,y)$ 가 $\mathcal B$ 가측이고, 단면의 [Lebesgue 적분](lebesgue-integral.md) $x\mapsto\int_Yf(x,y)\thinspace d\nu(y)$ 가 $\mathcal A$ 가측이다. 두 단계를 이어 붙인
 
 $$\int_X\left(\int_Yf(x,y)\thinspace d\nu(y)\right)d\mu(x)$$
 
-이 **반복적분**이고, $X$ 와 $Y$ 를 맞바꾼 반복적분이 또 하나 있다.
+이 **반복적분(iterated integral)** 이고, $X$ 와 $Y$ 를 맞바꾼 반복적분이 또 하나 있다. $\lbrack 0,1\rbrack^2$ 의 $f(x,y)=xy$ 에서 단면의 적분은 $\int_0^1xy\thinspace dy=x/2$ 이고 반복적분은 $\int_0^1 x/2\thinspace dx=\tfrac14$ 이며, 순서를 바꿔도 $\tfrac14$ 이다.
 
 # 성질
 
 ## Tonelli 정리
 
-**정리.** $\mu,\nu$ 가 $\sigma$ 유한이고 $f:X\times Y\to\lbrack 0,\infty\rbrack$ 가 곱가측이면 다음 세 값이 같다. 값이 $+\infty$ 인 경우도 포함한다.[^1]
+$\mu,\nu$ 가 $\sigma$ 유한이고 $f:X\times Y\to\lbrack 0,\infty\rbrack$ 가 곱가측이면 다음 세 값이 같다. 값이 $+\infty$ 인 경우도 포함한다.[^1]
 
 $$\int_{X\times Y}f\thinspace d(\mu\times\nu)=\int_X\int_Yf\thinspace d\nu\thinspace d\mu=\int_Y\int_Xf\thinspace d\mu\thinspace d\nu$$
 
@@ -46,13 +46,13 @@ $$\int_{X\times Y}f\thinspace d(\mu\times\nu)=\int_X\int_Yf\thinspace d\nu\thins
 
 ## Fubini 정리
 
-**정리.** $f$ 가 곱가측이고 $\int_{X\times Y}\vert f\vert\thinspace d(\mu\times\nu)\lt\infty$ 이면 거의 모든 $x$ 에서 단면 $f(x,\cdot)$ 이 적분가능하고, Tonelli 정리의 세 값이 같은 유한한 값이다.
+$f$ 가 곱가측이고 $\int_{X\times Y}\vert f\vert\thinspace d(\mu\times\nu)\lt\infty$ 이면 거의 모든 $x$ 에서 단면 $f(x,\cdot)$ 이 적분가능하고, Tonelli 정리의 세 값이 같은 유한한 값이다.
 
 증명의 요지. $f=f^+-f^-$ 로 가르면 두 함수가 음이 아니고 각각의 적분이 $\int\vert f\vert$ 로 눌리므로 유한하다. Tonelli 정리를 $f^+$ 와 $f^-$ 에 적용하고 빼면 된다. 적분가능성 가정이 하는 일은 $\infty-\infty$ 를 막는 것이다.
 
 ## 두 가정의 필요성
 
-$\sigma$ 유한성을 빼면 결론이 깨진다. $X=Y=\lbrack 0,1\rbrack$ 에 $\mu$ 는 Lebesgue 측도, $\nu$ 는 셈측도를 주고 $E$ 를 대각선 $\lbrace (x,x)\rbrace$ 로 잡는다. $E$ 는 곱가측이고 단면이 각각 한 점과 한 점이므로
+$\sigma$ 유한성을 빼면 결론이 성립하지 않는다. $X=Y=\lbrack 0,1\rbrack$ 에 $\mu$ 는 Lebesgue 측도, $\nu$ 는 셈측도를 주고 $E$ 를 대각선 $\lbrace (x,x)\rbrace$ 로 잡는다. $E$ 는 곱가측이고 단면이 각각 한 점과 한 점이므로
 
 $$\int_X\nu(E_x)\thinspace d\mu=\int_X1\thinspace d\mu=1,\qquad\int_Y\mu(E^y)\thinspace d\nu=\int_Y0\thinspace d\nu=0$$
 
@@ -60,14 +60,14 @@ $$\int_X\nu(E_x)\thinspace d\mu=\int_X1\thinspace d\mu=1,\qquad\int_Y\mu(E^y)\th
 
 ## 완비화에서의 단면
 
-Lebesgue 측도를 완비화하면 $\mathcal L(\mathbb R)\otimes\mathcal L(\mathbb R)$ 이 $\mathcal L(\mathbb R^2)$ 보다 작다. 완비 곱측도에 대해 가측인 함수의 단면은 모든 $x$ 에서 가측이라고 할 수 없고, 영집합 밖의 $x$ 에서만 가측이다. Fubini 정리의 진술에 "거의 모든 $x$" 가 붙는 이유가 이것이다.
+Lebesgue 측도를 완비화하면 $\mathcal L(\mathbb R)\otimes\mathcal L(\mathbb R)$ 이 $\mathcal L(\mathbb R^2)$ 보다 작다. 완비 곱측도에 대해 가측인 함수의 단면은 모든 $x$ 에서 가측이라고 할 수 없고, 영집합 밖의 $x$ 에서만 가측이다. 그래서 Fubini 정리의 진술에 "거의 모든 $x$" 가 붙는다.
 
 # 활용
 
-- **Fourier 변환의 성질.** [Fourier 변환](fourier-transform.md)의 [합성곱](convolution.md) 정리는 $\int\int f(x-y)g(y)e^{-2\pi i\xi x}\thinspace dy\thinspace dx$ 의 순서를 바꿔 얻고, 반전 공식과 Plancherel 정리의 증명도 같은 교환을 쓴다. 교환의 근거가 피적분함수의 절댓값이 $L^1$ 에 든다는 Fubini 정리의 가정이다.
-- **층 분해.** $f\ge 0$ 에 대한 $\int_Xf\thinspace d\mu=\int_0^\infty\mu(\lbrace f\gt t\rbrace)\thinspace dt$ 는 $\mathbf 1_{\lbrace f(x)\gt t\rbrace}$ 를 $X\times(0,\infty)$ 에서 적분하고 Tonelli 정리로 순서를 바꾼 것이다. 적분을 측도의 값으로 바꾸는 계산에 쓰인다.
-- **독립 확률변수의 합.** [확률변수](random-variables.md) $X,Y$ 가 독립이면 결합분포가 곱측도이므로, $\mathbb E\lbrack g(X)h(Y)\rbrack=\mathbb E g(X)\thinspace\mathbb E h(Y)$ 가 Fubini 정리의 결론이고, 합의 분포가 합성곱으로 나오는 것도 같다.
-- **$L^p$ 의 부등식.** [Lᵖ 공간](lp-spaces.md)에서 Minkowski 적분 부등식은 반복적분의 순서를 바꿔 증명한다.
+- Fourier 변환의 성질. [Fourier 변환](fourier-transform.md)의 [합성곱](convolution.md) 정리는 $\int\int f(x-y)g(y)e^{-2\pi i\xi x}\thinspace dy\thinspace dx$ 의 순서를 바꿔 얻고, 반전 공식과 Plancherel 정리의 증명도 같은 교환을 쓴다. 교환의 근거가 피적분함수의 절댓값이 $L^1$ 에 든다는 Fubini 정리의 가정이다.
+- 층 분해. $f\ge 0$ 에 대한 $\int_Xf\thinspace d\mu=\int_0^\infty\mu(\lbrace f\gt t\rbrace)\thinspace dt$ 는 $\mathbf 1_{\lbrace f(x)\gt t\rbrace}$ 를 $X\times(0,\infty)$ 에서 적분하고 Tonelli 정리로 순서를 바꾼 것이다. 적분을 측도의 값으로 바꾸는 계산에 쓰인다.
+- 독립 확률변수의 합. [확률변수](random-variables.md) $X,Y$ 가 독립이면 결합분포가 곱측도이므로, $\mathbb E\lbrack g(X)h(Y)\rbrack=\mathbb E g(X)\thinspace\mathbb E h(Y)$ 가 Fubini 정리의 결론이고, 합의 분포가 합성곱으로 나오는 것도 같다.
+- $L^p$ 의 부등식. [Lᵖ 공간](lp-spaces.md)에서 Minkowski 적분 부등식은 반복적분의 순서를 바꿔 증명한다.
 
 [^1]: Walter Rudin, *Real and Complex Analysis*, 3판, McGraw–Hill, 1987, 8 장. 곱측도의 구성과 두 정리의 증명이 여기 있다. 완비화에서 단면의 가측성이 약해지는 점도 같은 장에 있다.
 
