@@ -6,11 +6,7 @@
 
 # 직관
 
-Turing 차수는 Turing 환원(Turing reduction) $\le_T$ 으로 서로 환원되는 자연수 집합들을 묶은 동치류다. 정지 문제를 답해 주는 신탁을 기계에 붙여도 그 기계의 정지 문제는 여전히 결정 불가능하다. 이 조작을 반복하면 결정 불가능성의 층이 끝없이 올라간다.
-
-Turing 환원은 두 집합의 난이도를 비교하는 관계다. 차수들의 모임은 상반격자를 이루며 그 구조 자체가 연구 대상이다.
-
-정지 문제 $K$ 를 푸는 기계는 없다. $K$ 의 답을 즉시 주는 장치를 기계에 붙인다. 그 장치를 쓰는 기계는 $K$ 를 풀 수 있지만, 같은 대각선 논법을 이 새 기계들의 모임에 적용하면 그들의 정지 문제 $K'$ 가 나오고 $K'$ 는 다시 풀리지 않는다.
+정지 문제 $K$ 를 푸는 기계는 없다. $K$ 의 답을 즉시 주는 장치, 곧 신탁(oracle)을 기계에 붙인다. 그 장치를 쓰는 기계는 $K$ 를 풀 수 있지만, 같은 대각선 논법을 이 새 기계들의 모임에 적용하면 그들의 정지 문제 $K'$ 가 나오고 $K'$ 는 다시 풀리지 않는다.
 
 $K$ 에서 $K'$ 로 가는 조작에 끝이 없으므로 결정 불가능한 문제들이 한 덩어리가 아니다. 어떤 문제는 $K$ 만 있으면 풀리고 어떤 문제는 $K'$ 가 있어야 풀린다. 이 차이를 재는 것이 차수다.
 
@@ -18,31 +14,31 @@ $K$ 에서 $K'$ 로 가는 조작에 끝이 없으므로 결정 불가능한 문
 
 ## Turing 환원
 
-집합 $A\subseteq\mathbb N$ 을 신탁으로 쓰는 기계가 $B$ 의 특성함수를 계산하면 $B$ 가 $A$ 로 **Turing 환원**된다고 하고 $B\le_T A$ 로 쓴다. 신탁 기계는 계산 도중 "$n\in A$ 인가" 를 물어 답을 즉시 받는다.
+집합 $A\subseteq\mathbb N$ 을 신탁으로 쓰는 기계가 $B$ 의 특성함수를 계산하면 $B$ 가 $A$ 로 **Turing 환원(Turing reduction)** 된다고 하고 $B\le_T A$ 로 쓴다. 신탁 기계는 계산 도중 "$n\in A$ 인가" 를 물어 답을 즉시 받는다. 정지 문제의 여집합 $\overline K$ 는 $K$ 에 $n\in K$ 인지 묻고 답을 뒤집어 계산하므로 $\overline K\le_T K$ 다. 계산 가능한 집합 $B$ 는 신탁에 묻지 않고 계산되므로 모든 $A$ 에 대해 $B\le_T A$ 다.
 
-$B\le_T A$ 이고 $A\le_T B$ 이면 $A\equiv_T B$ 로 쓴다. 이것이 [동치관계](equivalence-relations.md)이고 그 동치류가 **Turing 차수**다. 차수들의 집합을 $\mathcal D$ 라 하고 $\le_T$ 가 유도하는 [부분순서](partial-orders.md)를 그대로 쓴다.
+$B\le_T A$ 이고 $A\le_T B$ 이면 $A\equiv_T B$ 로 쓴다. 이것이 [동치관계](equivalence-relations.md)이고 그 동치류가 **Turing 차수**다. 차수들의 집합을 $\mathcal D$ 라 하고 $\le_T$ 가 유도하는 [부분순서](partial-orders.md)를 그대로 쓴다. 앞의 예에서 $K\le_T\overline K$ 도 성립하므로 $K\equiv_T\overline K$ 이고, 두 집합은 같은 차수에 든다.
 
-계산 가능한 집합 전체가 하나의 차수를 이루고 이를 $\mathbf 0$ 으로 쓴다. 최소 원소다.
+계산 가능한 집합 전체가 하나의 차수를 이루고 이를 $\mathbf 0$ 으로 쓴다. 짝수 전체의 집합과 공집합이 $\mathbf 0$ 에 들고, $\mathbf 0$ 은 최소 원소다.
 
 ## 도약
 
-$A$ 를 신탁으로 하는 기계들의 정지 문제를 $A'$ 로 쓰고 $A$ 의 **도약**이라 한다.
+$A$ 를 신탁으로 하는 기계들의 정지 문제를 $A'$ 로 쓰고 $A$ 의 **도약(jump)** 이라 한다.
 
 $$
-A'=\lbrace e: \Phi_e^A(e)\ \text{가 멈춘다}\rbrace
+A'=\lbrace e: \Phi_e^A(e)\thinspace\text{가 멈춘다}\rbrace
 $$
 
-여기서 $\Phi_e^A$ 는 신탁 $A$ 를 쓰는 $e$ 번째 기계다. 도약은 차수 위의 연산으로 잘 정의되고, 정지 문제의 차수가 $\mathbf 0'$ 다.
+여기서 $\Phi_e^A$ 는 신탁 $A$ 를 쓰는 $e$ 번째 기계다. 도약은 차수 위의 연산으로 잘 정의된다. $A=\varnothing$ 이면 신탁이 아무 정보도 주지 않으므로 $\varnothing'\equiv_T K$ 이고, 정지 문제의 차수가 $\mathbf 0'$ 다. 직관 절의 $K'$ 는 $\varnothing''$ 의 차수 $\mathbf 0''$ 에 든다.
 
 ## 상한
 
-두 집합 $A,B$ 의 결합을 $A\oplus B=\lbrace 2n: n\in A\rbrace\cup\lbrace 2n+1: n\in B\rbrace$ 로 둔다. 짝수 자리와 홀수 자리를 따로 읽으면 두 신탁을 모두 얻으므로 $A\oplus B$ 의 차수가 두 차수의 최소상한이다.
+두 집합 $A,B$ 의 **결합(join)** 을 $A\oplus B=\lbrace 2n: n\in A\rbrace\cup\lbrace 2n+1: n\in B\rbrace$ 로 둔다. 짝수 자리와 홀수 자리를 따로 읽으면 두 신탁을 모두 얻으므로 $A\oplus B$ 의 차수가 두 차수의 최소상한이다. $A$ 가 계산 가능하면 $A\oplus K\equiv_T K$ 다.
 
 # 성질
 
 ## 상반격자 구조
 
-**정리.** $(\mathcal D,\le_T,\oplus)$ 는 최소 원소 $\mathbf 0$ 을 갖는 상반격자이고, 각 차수의 상위 차수는 가산 개가 아니다.
+$(\mathcal D,\le_T,\oplus)$ 는 최소 원소 $\mathbf 0$ 을 갖는 상반격자(upper semilattice)이고, 원소가 $2^{\aleph_0}$ 개다.
 
 최소상한의 존재는 $\oplus$ 가 준다. 하한은 일반적으로 없다. 최소하한이 존재하지 않는 차수 쌍이 있으므로 $\mathcal D$ 는 격자가 아니다.[^1]
 
@@ -50,31 +46,29 @@ $$
 
 ## 도약의 엄격한 증가
 
-**정리(Turing).** 모든 $A$ 에 대해 $A\lt_T A'$ 다.
+모든 $A$ 에 대해 $A\lt_T A'$ 다(Turing).
 
-$A\le_T A'$ 는 $A'$ 신탁으로 $A$ 의 물음을 흉내 내면 된다. 역방향이 성립하지 않는 것은 대각선 논법이다. $A'\le_T A$ 라면 $A$ 신탁으로 $\Phi_e^A(e)$ 의 정지 여부를 판정하는 기계가 있고, 그것을 뒤집은 기계 $\Phi_d^A$ 에 대해 $\Phi_d^A(d)$ 가 멈추는 것과 멈추지 않는 것이 동치가 되어 모순이다. ∎
+$A\le_T A'$ 는 $A'$ 신탁으로 $A$ 의 물음을 흉내 내면 된다. 역방향이 성립하지 않는 것은 대각선 논법이다. $A'\le_T A$ 라면 $A$ 신탁으로 $\Phi_e^A(e)$ 의 정지 여부를 판정하는 기계가 있고, 그것을 뒤집은 기계 $\Phi_d^A$ 에 대해 $\Phi_d^A(d)$ 가 멈추는 것과 멈추지 않는 것이 동치가 되어 모순이다.
 
 반복 도약 $\mathbf 0,\mathbf 0',\mathbf 0'',\dots$ 이 무한 증가열을 준다. 이 열의 $n$ 번째 항이 [산술적 계층](arithmetical-hierarchy.md)의 $n$ 층에 대응하고, 열을 [서수](ordinals.md)로 색인해 초한으로 이으면 초산술적 계층이 나온다.
 
 ## Post 문제
 
-**정리(Friedberg, Muchnik).** $\mathbf 0\lt_T\mathbf a\lt_T\mathbf 0'$ 인 재귀적 열거 가능 차수 $\mathbf a$ 가 있다.[^2]
+$\mathbf 0\lt_T\mathbf a\lt_T\mathbf 0'$ 인 재귀적 열거 가능(recursively enumerable) 차수 $\mathbf a$ 가 있다.[^2]
 
-Post 가 1944 년에 던진 물음이고 1956 년에 우선순위 방법으로 풀렸다. 두 집합 $A,B$ 를 단계마다 조금씩 만들면서 $B\not\le_T A$ 와 $A\not\le_T B$ 를 각각 무한히 많은 요구사항으로 쪼갠다. 요구사항에 우선순위를 매기고, 높은 것이 낮은 것의 결정을 뒤집을 수 있게 하되 각 요구사항이 유한 번만 뒤집히도록 배치한다.
+Post 가 1944 년에 던진 물음이고 1956 년과 1957 년에 Muchnik 과 Friedberg 가 우선순위 방법(priority method)으로 풀었다. 두 집합 $A,B$ 를 단계마다 조금씩 만들면서 $B\not\le_T A$ 와 $A\not\le_T B$ 를 각각 무한히 많은 요구사항으로 쪼갠다. 요구사항에 우선순위를 매기고, 높은 것이 낮은 것의 결정을 뒤집을 수 있게 하되 각 요구사항이 유한 번만 뒤집히도록 배치한다.
 
 ## 저차 기저 정리
 
-$\Pi^0_1$ **부류**는 계산 가능한 이진 나무의 무한 경로 전체가 이루는 $2^{\mathbb N}$ 의 부분집합이다.
+[Π⁰₁ 부류](pi01-classes.md)는 계산 가능한 이진 나무의 무한 경로 전체가 이루는 $2^{\mathbb N}$ 의 부분집합이다. Jockusch 와 Soare 의 저차 기저 정리(low basis theorem)에 따르면 비어 있지 않은 $\Pi^0_1$ 부류는 $A'\equiv_T\mathbf 0'$ 인 원소 $A$ 를 갖는다.
 
-**정리(Jockusch, Soare).** 비어 있지 않은 $\Pi^0_1$ 부류는 $A'\equiv_T\mathbf 0'$ 인 원소 $A$ 를 갖는다.
-
-$A'$ 가 $\mathbf 0'$ 를 넘지 않는 집합을 **저차**라 한다. 저차 집합은 계산 가능하지 않을 수 있지만 도약의 수준에서는 계산 가능한 것과 구별되지 않는다. [역수학](reverse-mathematics.md)에서 [약한 König 보조정리](weak-konig-lemma.md)의 체계 $\mathrm{WKL}\_0$ 과 산술적 내포의 체계 $\mathrm{ACA}\_0$ 을 가르는 모형 구성이 이 정리를 쓴다.
+$A'\equiv_T\mathbf 0'$ 인 집합 $A$ 를 저차(low)라 한다. 저차 집합은 계산 가능하지 않을 수 있지만 도약의 수준에서는 계산 가능한 것과 구별되지 않는다. [역수학](reverse-mathematics.md)에서 [약한 König 보조정리](weak-konig-lemma.md)의 체계 $\mathrm{WKL}\_0$ 과 산술적 내포(arithmetical comprehension)의 체계 $\mathrm{ACA}\_0$ 을 가르는 모형 구성이 이 정리를 쓴다.
 
 # 활용
 
-- **체계의 분리.** 역수학의 $\mathrm{WKL}\_0$ 은 계산 가능한 집합만으로는 모형을 얻지 못하고 저차 기저 정리로 모형을 얻는다. 그 모형이 $\mathrm{ACA}\_0$ 의 모형이 아니므로 두 체계가 다르다.
-- **결정 불가능성의 등급.** 군의 낱말 문제는 차수가 $\mathbf 0'$ 에 이르는 유한 표시 군이 있고, Diophantus 방정식의 해 존재 판정도 $\mathbf 0'$ 다. 어떤 문제가 $\mathbf 0'$ 보다 위인지 아래인지가 그 문제의 난이도다.
-- **산술적 계층과의 대응.** $\Sigma^0_n$ 완전 집합의 차수가 $\mathbf 0^{(n)}$ 이므로, 논리식의 한정기호 교대 횟수가 도약 횟수로 번역된다.
+- 체계의 분리. 역수학의 $\mathrm{WKL}\_0$ 은 계산 가능한 집합만으로는 모형을 얻지 못하고 저차 기저 정리로 모형을 얻는다. 그 모형이 $\mathrm{ACA}\_0$ 의 모형이 아니므로 두 체계가 다르다.
+- 결정 불가능성의 등급. 낱말 문제(word problem)의 차수가 $\mathbf 0'$ 인 유한 표시 군이 있고, Diophantus 방정식의 해 존재 판정도 차수가 $\mathbf 0'$ 다.
+- 산술적 계층과의 대응. $\Sigma^0_n$ 완전 집합의 차수가 $\mathbf 0^{(n)}$ 이므로, 논리식의 한정사(quantifier) 교대 횟수가 도약 횟수로 번역된다.
 
 [^1]: Robert I. Soare, *Recursively Enumerable Sets and Degrees*, Springer, 1987. 차수 상반격자의 기본 성질과 최소하한이 없는 쌍의 구성.
 [^2]: R. M. Friedberg, *Two recursively enumerable sets of incomparable degrees of unsolvability*, Proc. Nat. Acad. Sci. 43 (1957), 236–238. A. A. Muchnik 이 같은 결과를 독립적으로 얻었다.
