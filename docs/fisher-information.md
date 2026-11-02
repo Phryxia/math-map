@@ -6,9 +6,7 @@
 
 # 직관
 
-Fisher 정보는 관측 하나가 모수에 대해 담은 정보의 양을 재는 [행렬](matrices.md)이다. 로그가능도의 모수에 대한 도함수인 점수함수의 [공분산](covariance.md)으로 정의하고, 정칙 조건 아래에서 로그가능도의 [Hessian](hessian.md) 의 기댓값의 음수와 같다. 불편추정량의 분산 하한, 최대가능도 추정량의 점근분산, 분포족 위의 [Riemann 계량](riemannian-metrics.md)이 모두 이 행렬로 적힌다.
-
-동전의 앞면 확률 $p$ 를 $n=100$ 번 던져 추정한다. 표본비율 $\hat p=k/n$ 의 분산은 $p(1-p)/n$ 이므로 $p=0.5$ 에서 $0.0025$ , $p=0.99$ 에서 $0.0001$ 이다. 같은 횟수를 던졌는데 참값에 따라 정확도가 $25$ 배 차이가 난다. 차이가 어디서 오는지 로그가능도를 보면 나온다. 앞면이 $k$ 번 나왔을 때 로그가능도와 그 도함수는 다음이다.
+동전의 앞면 확률 $p$ 를 $n=100$ 번 던져 추정한다. 표본비율 $\hat p=k/n$ 의 분산은 $p(1-p)/n$ 이므로 $p=0.5$ 에서 $0.0025$ , $p=0.99$ 에서 $0.0001$ 이다. 같은 횟수를 던졌는데 참값에 따라 분산이 약 $25$ 배 차이가 난다. 이 차이는 로그가능도에서 나온다. 앞면이 $k$ 번 나왔을 때 로그가능도와 그 도함수는 다음이다.
 
 $$
 \ell(p)=k\log p+(n-k)\log(1-p),\qquad \ell'(p)=\frac{k}{p}-\frac{n-k}{1-p}
@@ -20,17 +18,21 @@ $$
 \mathrm{Var}\big(\ell'(p)\big)=\frac{np(1-p)}{\big(p(1-p)\big)^2}=\frac{n}{p(1-p)}
 $$
 
-$p=0.5$ 에서 $4n$ , $p=0.99$ 에서 약 $101n$ 이다. 이 값이 클수록 $k$ 가 조금 달라져도 도함수가 크게 달라지므로 $\ell$ 의 최대점 위치가 좁게 정해진다. 그리고 이 값의 역수 $p(1-p)/n$ 이 처음에 구한 $\hat p$ 의 분산과 정확히 같다. 점수함수의 분산이 Fisher 정보다.
+$p=0.5$ 에서 $4n$ , $p=0.99$ 에서 약 $101n$ 이다. 이 값이 클수록 $k$ 가 조금 달라져도 도함수가 크게 달라지므로 $\ell$ 의 최대점 위치가 좁게 정해진다. 이 값의 역수 $p(1-p)/n$ 은 처음에 구한 $\hat p$ 의 분산과 같다. 로그가능도 도함수의 분산을 Fisher 정보라 부른다.
 
 # 정의
 
-Fisher 정보는 점수함수의 공분산행렬이다. 모수 $\theta\in\Theta\subseteq\mathbb R^d$ 의 모형 $f(x;\theta)$ 에 대해 **점수함수**와 **Fisher 정보**를 다음으로 정의한다.
+## 점수함수와 Fisher 정보
+
+모수 $\theta\in\Theta\subseteq\mathbb R^d$ 의 모형 $f(x;\theta)$ 에 대해 **점수함수(score function)** $s$ 와 **Fisher 정보** $I$ 를 다음으로 정의한다.
 
 $$
 s(\theta;x)=\nabla\_\theta\log f(x;\theta),\qquad I(\theta)=\mathbb E\_\theta\big\lbrack s(\theta;X)\thinspace s(\theta;X)^{\mathsf T}\big\rbrack
 $$
 
-$I(\theta)$ 는 $d\times d$ 대칭 준양정부호 행렬이다. $\mathbb E\_\theta\lbrack s\rbrack=0$ 이므로 공분산과 2차 적률이 같다.
+$s$ 는 로그가능도의 기울기이고, $I(\theta)$ 는 $d\times d$ 대칭 준양정부호 [행렬](matrices.md)이다. 아래 정칙 조건에서 $\mathbb E\_\theta\lbrack s\rbrack=0$ 이므로 $I(\theta)$ 는 $s$ 의 [공분산](covariance.md)행렬과 같다.
+
+동전 한 번 던지기 $f(x;p)=p^x(1-p)^{1-x}$, $x\in\lbrace 0,1\rbrace$ 에서 $s(p;x)=x/p-(1-x)/(1-p)$ 이다. $x=1$ 일 확률이 $p$ 이므로 $I(p)=p\cdot p^{-2}+(1-p)(1-p)^{-2}=1/(p(1-p))$ 이고, $p=0.5$ 에서 $4$, $p=0.99$ 에서 약 $101$ 이다. 직관 절의 $n/(p(1-p))$ 는 이 값의 $n$ 배다.
 
 ## 정칙 조건
 
@@ -38,7 +40,9 @@ $I(\theta)$ 는 $d\times d$ 대칭 준양정부호 행렬이다. $\mathbb E\_\th
 
 ## 관측 정보와의 구별
 
-$\mathbb E\_\theta$ 를 취하지 않은 $-\nabla^2\_\theta\ell(\theta)$ 를 관측 정보라 하고, 자료로 계산한 추정값 $-\nabla^2\ell(\hat\theta)$ 를 관측 Fisher 정보라 한다. Fisher 정보는 기댓값을 취한 양이므로 자료에 의존하지 않고 $\theta$ 만의 함수다.
+$\mathbb E\_\theta$ 를 취하지 않은 $-\nabla^2\_\theta\ell(\theta)$ 를 **관측 정보(observed information)** 라 하고, 최대가능도 추정값에서 계산한 $-\nabla^2\ell(\hat\theta)$ 를 **관측 Fisher 정보(observed Fisher information)** 라 한다. Fisher 정보는 기댓값을 취한 양이므로 자료에 의존하지 않는 $\theta$ 만의 함수다.
+
+동전을 $100$ 번 던져 앞면이 $50$ 번 나오면 $-\ell''(p)=50/p^2+50/(1-p)^2$ 이고, $\hat p=0.5$ 에서 관측 Fisher 정보는 $200+200=400$ 이다. 이 값은 $p=0.5$ 의 Fisher 정보 $100\cdot 4$ 와 같다.
 
 # 성질
 
@@ -70,7 +74,7 @@ $$
 
 증명의 요지. 불편성 $\mathbb E\_\theta\lbrack\hat\theta\rbrack=\theta$ 를 $\theta$ 로 미분하면 $\mathrm{Cov}(\hat\theta,s)=\mathrm I\_d$ 가 나온다. 임의의 벡터 $a,b$ 에 [Cauchy–Schwarz 부등식](cauchy-schwarz.md)을 적용하면 $(a^{\mathsf T}b)^2\le(a^{\mathsf T}\mathrm{Cov}(\hat\theta)a)(b^{\mathsf T}I\_nb)$ 이고, $b=I\_n^{-1}a$ 로 두면 결론이 된다.
 
-등호는 점수함수가 $\hat\theta-\theta$ 의 상수배일 때, 곧 모형이 [지수족](exponential-families.md)이고 $\hat\theta$ 가 충분통계량의 함수일 때 성립한다.[^1]
+등호는 점수함수가 $\hat\theta-\theta$ 의 상수배일 때, 곧 모형이 [지수족](exponential-families.md)이고 $\theta$ 가 충분통계량의 평균이며 $\hat\theta$ 가 충분통계량의 표본평균일 때 성립한다.[^1] 동전의 $\hat p=k/n$ 은 분산이 $p(1-p)/n=I\_n(p)^{-1}$ 이어서 하한에 닿는다.
 
 ## 재모수화
 
@@ -80,7 +84,9 @@ $$
 I\_\eta(\eta)=J^{\mathsf T}I\_\theta\big(h(\eta)\big)\thinspace J
 $$
 
-연쇄법칙으로 점수함수가 $J^{\mathsf T}s$ 로 바뀌고 공분산을 취하면 나온다. 따라서 Fisher 정보는 좌표에 의존하는 양이고, 모수 선택과 무관한 것은 $\det I(\theta)$ 의 제곱근을 밀도로 읽은 측도다. 이것이 Jeffreys 사전분포가 재모수화에 불변인 근거다([Bayes 추론](bayesian-inference.md)의 무정보 사전분포 절).
+연쇄법칙으로 점수함수가 $J^{\mathsf T}s$ 로 바뀌고 공분산을 취하면 나온다. 동전에서 $p=e^{\eta}/(1+e^{\eta})$ 로 바꾸면 $J=p(1-p)$ 이므로 $I\_\eta=p^2(1-p)^2/(p(1-p))=p(1-p)$ 다.
+
+그러므로 Fisher 정보는 좌표에 의존한다. 반면 $\sqrt{\det I(\theta)}\thinspace d\theta$ 로 정의되는 측도는 모수를 바꿔도 같고, 이것을 사전분포로 쓴 것이 Jeffreys 사전분포(Jeffreys prior)다([Bayes 추론](bayesian-inference.md)). 동전에서는 $\sqrt{I(p)}\propto p^{-1/2}(1-p)^{-1/2}$ 이므로 $\mathrm{Beta}(1/2,1/2)$ 다.
 
 ## KL divergence 의 2차 근사
 
@@ -90,15 +96,15 @@ $$
 
 증명의 요지. $\delta$ 에 대해 좌변을 Taylor 전개한다. 상수항은 $0$ 이고, 1차항은 $-\mathbb E\lbrack s\rbrack=0$ 이며, 2차항의 계수가 정보 등식으로 $I(\theta)$ 가 된다.
 
-[KL divergence](kl-divergence.md)(Kullback–Leibler divergence)가 대칭이 아닌데도 2차항이 대칭행렬로 나오므로, 모수 공간에 Riemann 계량을 준 것으로 읽는다. 이 계량이 Fisher–Rao 계량이고 재모수화 변환 규칙이 계량의 변환 규칙과 같다.[^2]
+[KL divergence](kl-divergence.md)(Kullback–Leibler divergence)는 대칭이 아니지만 2차항은 대칭행렬 $I(\theta)$ 로 나온다. 각 점 $\theta$ 에 내적 $\langle u,v\rangle=u^{\mathsf T}I(\theta)v$ 를 주면 모수 공간 위의 [Riemann 계량](riemannian-metrics.md)이 되고, 이것을 Fisher–Rao 계량(Fisher–Rao metric)이라 한다. 재모수화 공식은 계량의 좌표 변환 규칙과 같다.[^2]
 
 # 활용
 
-- **[최대가능도 추정](maximum-likelihood.md)의 점근분산.** 정칙 조건 아래 $\sqrt n(\hat\theta-\theta)$ 가 평균 $0$ 이고 공분산 $I(\theta)^{-1}$ 인 [정규분포](normal-distribution.md)로 수렴한다. 하한과 일치하므로 최대가능도 추정량이 점근적으로 효율적이다.
-- **[신뢰구간](confidence-intervals.md).** 위의 점근분포에서 $\hat\theta\pm z\_{\alpha/2}\sqrt{(nI(\hat\theta))^{-1}}$ 꼴의 Wald 구간이 나온다. 분모에 관측 Fisher 정보를 넣는 변형도 쓴다.
-- **Fisher scoring.** [Newton 방법](newton-method.md)에서 Hessian 을 $I(\theta)$ 로 바꾼 반복이고, 일반화선형모형의 표준 적합 절차 IRLS(iteratively reweighted least squares)가 그 구체형이다. 지수족의 자연매개화에서는 Hessian 이 이미 공분산이라 두 방법이 일치한다.
-- **자연 경사법.** 확률분포족 위의 최적화에서 걸음을 $I(\theta)^{-1}\nabla$ 로 잡는다. 유클리드 거리 대신 Fisher–Rao 계량으로 보폭을 재는 것이고, [신뢰영역 정책 최적화](trust-region-policy-optimization.md)의 KL 제약이 이 형태로 풀린다.
-- **실험계획.** 설계 $\xi$ 가 주는 정보행렬 $I(\theta;\xi)$ 의 행렬식을 최대화하는 것이 D 최적 설계이고, 특정 방향의 분산을 줄이려면 $a^{\mathsf T}I^{-1}a$ 를 최소화한다.
+- [최대가능도 추정](maximum-likelihood.md)의 점근분산. 정칙 조건 아래 $\sqrt n(\hat\theta-\theta)$ 가 평균 $0$ 이고 공분산 $I(\theta)^{-1}$ 인 [정규분포](normal-distribution.md)로 수렴한다. 하한과 일치하므로 최대가능도 추정량이 점근적으로 효율적이다.
+- [신뢰구간](confidence-intervals.md). 위의 점근분포에서 $\hat\theta\pm z\_{\alpha/2}\sqrt{(nI(\hat\theta))^{-1}}$ 꼴의 Wald 구간(Wald interval)이 나온다. 분모에 관측 Fisher 정보를 넣는 변형도 쓴다.
+- Fisher scoring. [Newton 법](newton-method.md)에서 로그가능도의 [Hessian](hessian.md) 을 $-I(\theta)$ 로 바꾼 반복이고, [일반화선형모형](generalized-linear-models.md)을 적합하는 반복가중최소제곱(iteratively reweighted least squares, IRLS)이 그 예다. 지수족의 자연모수에서는 Hessian 이 자료에 의존하지 않아 두 반복이 같다.
+- 자연 경사법(natural gradient). 확률분포족 위의 최적화에서 걸음 방향을 $I(\theta)^{-1}\nabla$ 로 잡는다. 유클리드 거리 대신 Fisher–Rao 계량으로 보폭을 재는 방법이고, [신뢰영역 정책 최적화](trust-region-policy-optimization.md)의 KL 제약이 이 형태로 풀린다.
+- 실험계획. 설계 $\xi$ 가 주는 정보행렬 $I(\theta;\xi)$ 의 행렬식을 최대화하는 것이 D 최적 설계(D-optimal design)이고, 특정 방향의 분산을 줄이려면 $a^{\mathsf T}I^{-1}a$ 를 최소화한다.
 
 [^1]: Erich Lehmann and George Casella, *Theory of Point Estimation*, 2nd ed., Springer, 1998, Chapter 2. 정보 등식과 Cramér–Rao 하한, 등호 조건.
 [^2]: Shun-ichi Amari and Hiroshi Nagaoka, *Methods of Information Geometry*, American Mathematical Society, 2000, Chapter 2. Fisher–Rao 계량과 재모수화 불변성.
