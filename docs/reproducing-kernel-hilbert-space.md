@@ -6,11 +6,7 @@
 
 # 직관
 
-재생핵 Hilbert 공간은 함수들로 이루어진 [Hilbert 공간](hilbert-spaces.md)이면서 점에서의 평가가 내적으로 적히는 공간이다. 어떤 점 $x$ 마다 공간의 원소 $K_x$ 가 있어 모든 $f$ 에 대해 $f(x)=\langle f,K_x\rangle$ 가 성립한다.
-
-두 변수 함수 $K(x,z)=\langle K_x,K_z\rangle$ 가 이 공간을 결정한다. 양의 준정부호인 $K$ 마다 그것을 재생핵으로 갖는 공간이 유일하게 있고, 고차원 좌표를 만들지 않고 $K$ 의 값만으로 그 공간에서의 계산을 수행한다.
-
-평면의 자료가 두 부류로 나뉘는데 원점에서 가까운 것과 먼 것이어서 직선으로 갈라지지 않는다. 좌표를 늘려 본다. $(x_1,x_2)$ 를 $(x_1^2,\sqrt2\thinspace x_1x_2,x_2^2)$ 로 보내면 원점 중심의 원 안팎이 3차원에서 평면으로 갈라진다.
+평면의 자료가 두 부류로 나뉘는데 원점에서 가까운 것과 먼 것이어서 직선으로 갈라지지 않는다. 좌표를 늘린다. $(x_1,x_2)$ 를 $\varphi(x)=(x_1^2,\sqrt2\thinspace x_1x_2,x_2^2)$ 로 보내면 원 $x_1^2+x_2^2=r^2$ 의 안팎이 3차원에서 평면 $u_1+u_3=r^2$ 의 양쪽으로 갈라진다.
 
 차수를 올리면 좌표의 개수가 폭발한다. $d$ 개 좌표의 $p$ 차 단항식은 $\binom{d+p-1}{p}$ 개이고 $d=100$, $p=5$ 에서 이미 억 단위다. 좌표를 모두 만들어 저장하는 방식으로는 계산이 멈춘다.
 
@@ -20,7 +16,7 @@ $$\langle\varphi(x),\varphi(z)\rangle = x_1^2z_1^2+2x_1x_2z_1z_2+x_2^2z_2^2 = (x
 
 이다. 좌표 세 개를 만들지 않고 원래 좌표 두 개로 내적이 계산된다.
 
-남는 질문은 어떤 두 변수 함수가 어떤 사상의 내적으로 적히는가다. 함수가 대칭이고 유한 개의 점에서 만든 [행렬](matrices.md)이 모두 양의 준정부호이면 그런 사상이 있다. 사상이 도착하는 공간을 함수들의 공간으로 잡으면, 그 공간은 함수 $K$ 하나가 정한다.
+남는 질문은 어떤 두 변수 함수가 어떤 사상의 내적으로 적히는가다. 함수가 대칭이고 유한 개의 점에서 만든 [행렬](matrices.md)이 모두 양의 준정부호이면 그런 사상이 있다. 사상이 도착하는 공간을 함수들로 된 [Hilbert 공간](hilbert-spaces.md)으로 잡으면, 그 공간은 함수 $K$ 하나가 정하고 점 $x$ 에서의 함숫값이 $K(x,\cdot)$ 와의 내적으로 계산된다.
 
 # 정의
 
@@ -30,7 +26,9 @@ $$\langle\varphi(x),\varphi(z)\rangle = x_1^2z_1^2+2x_1x_2z_1z_2+x_2^2z_2^2 = (x
 
 $$\sum_{i=1}^n\sum_{j=1}^n c_ic_jK(x_i,x_j)\ge 0$$
 
-이면 $K$ 를 **양의 준정부호 핵**이라 한다. 조건은 행렬 $\lbrack K(x_i,x_j)\rbrack\_{i,j}$ 가 양의 준정부호라는 것과 같다.
+이면 $K$ 를 **양의 준정부호 핵(positive semidefinite kernel)** 이라 한다.
+
+직관 절의 $K(x,z)=\langle x,z\rangle^2$ 에서는 이중합이 $\Vert\sum_i c_i\varphi(x_i)\Vert^2$ 과 같으므로 음이 아니고, 이 $K$ 는 양의 준정부호 핵이다. 점 $x_1=(1,0)$, $x_2=(1,1)$ 에서 값을 늘어놓으면 $\begin{pmatrix}1&1\cr 1&4\end{pmatrix}$ 이다. 반면 $K(x,z)=\Vert x-z\Vert$ 는 대칭이지만 같은 두 점에서 $c=(1,-1)$ 로 이중합이 $0-1-1+0=-2$ 이므로 양의 준정부호 핵이 아니다.
 
 ## 재생핵 Hilbert 공간
 
@@ -39,19 +37,25 @@ $\mathcal X$ 에서 실수로 가는 함수들로 된 Hilbert 공간 $\mathcal H
 - 모든 $x$ 에 대해 $K_x=K(x,\cdot)$ 이 $\mathcal H$ 에 속한다
 - 모든 $f\in\mathcal H$ 와 모든 $x$ 에 대해 $f(x)=\langle f,K_x\rangle\_{\mathcal H}$ 다
 
-둘째 조건이 **재생 성질**이다. $f=K_z$ 를 넣으면 $K(z,x)=\langle K_z,K_x\rangle$ 이므로 $K$ 의 값이 두 원소의 내적이다.
+둘째 조건이 **재생 성질(reproducing property)** 이다.
+
+$K(x,z)=\langle x,z\rangle^2$ 의 재생핵 Hilbert 공간은 $w\in\mathbb R^3$ 마다 $f_w(x)=\langle w,\varphi(x)\rangle=w_1x_1^2+\sqrt2\thinspace w_2x_1x_2+w_3x_2^2$ 인 이차형식들의 공간이고, 내적은 $\langle f_w,f_v\rangle=\langle w,v\rangle$ 다. $K_x=f\_{\varphi(x)}$ 이므로 $\langle f_w,K_x\rangle=\langle w,\varphi(x)\rangle=f_w(x)$ 가 재생 성질이다. 원을 가르는 함수 $f(x)=x_1^2+x_2^2$ 는 $w=(1,0,1)$ 에 해당하고, 점 $(1,1)$ 에서 $\langle (1,0,1),(1,\sqrt2,1)\rangle=2=f(1,1)$ 이다.
 
 # 성질
 
+## Gram 행렬
+
+$K$ 가 양의 준정부호 핵인 것은 모든 유한 점 $x_1,\dots,x_n$ 에서 Gram 행렬(Gram matrix) $\lbrack K(x_i,x_j)\rbrack\_{i,j}$ 가 양의 준정부호 행렬인 것과 동치다. 정의의 이중합이 이 행렬의 이차형식이다.
+
 ## Moore–Aronszajn 정리
 
-**정리.** 양의 준정부호 핵 $K$ 마다 $K$ 를 재생핵으로 갖는 Hilbert 공간이 유일하게 존재한다.
+Moore–Aronszajn 정리(Moore–Aronszajn theorem). 양의 준정부호 핵 $K$ 마다 $K$ 를 재생핵으로 갖는 Hilbert 공간이 유일하게 존재한다.
 
 구성은 $K_x$ 들의 유한 선형결합이 이루는 공간에서 시작한다. 거기에
 
 $$\Big\langle\sum_i a_iK\_{x_i},\ \sum_j b_jK\_{z_j}\Big\rangle=\sum_i\sum_j a_ib_jK(x_i,z_j)$$
 
-로 내적을 주면 양의 준정부호 조건이 이 값이 음이 아님을 보장한다. 이 공간을 완비화한다. 유일성은 두 공간이 같은 조밀 부분공간을 갖고 노름이 일치하는 것에서 나온다.
+로 내적을 주면 양의 준정부호 조건이 이 값이 음이 아님을 보장한다. 이 공간을 완비화(completion)한다. 유일성은 두 공간이 같은 조밀 부분공간을 갖고 노름이 일치하는 것에서 나온다.
 
 ## 점 평가의 연속성
 
@@ -59,11 +63,11 @@ $$\Big\langle\sum_i a_iK\_{x_i},\ \sum_j b_jK\_{z_j}\Big\rangle=\sum_i\sum_j a_i
 
 ## 특징 사상
 
-$\varphi(x)=K_x$ 로 두면 $\langle\varphi(x),\varphi(z)\rangle=K(x,z)$ 다. 핵의 값만 계산하면 이 사상이 가는 공간의 차원과 무관하게 내적을 얻는다. 같은 핵을 주는 특징 사상은 여럿이고, 그중 하나가 $\varphi(x)=K_x$ 다.
+재생 성질에 $f=K_z$ 를 넣으면 $K(z,x)=\langle K_z,K_x\rangle$ 이다. 그래서 특징 사상(feature map) $\varphi(x)=K_x$ 로 두면 $\langle\varphi(x),\varphi(z)\rangle=K(x,z)$ 다. 핵의 값만 계산하면 이 사상이 가는 공간의 차원과 무관하게 내적을 얻는다. 같은 핵을 주는 특징 사상은 여럿이고, 그중 하나가 $\varphi(x)=K_x$ 다.
 
 ## 표현자 정리
 
-**정리.** 손실이 자료점에서의 함숫값 $f(x_1),\dots,f(x_n)$ 에만 의존하고 벌점이 $\Vert f\Vert\_{\mathcal H}$ 의 증가함수이면, 최소해는
+표현자 정리(representer theorem). 손실이 자료점에서의 함숫값 $f(x_1),\dots,f(x_n)$ 에만 의존하고 벌점이 $\Vert f\Vert\_{\mathcal H}$ 의 증가함수이면, 최소해는
 
 $$f=\sum_{i=1}^n\alpha_iK\_{x_i}$$
 
@@ -75,7 +79,7 @@ $$f=\sum_{i=1}^n\alpha_iK\_{x_i}$$
 
 ## Mercer 전개
 
-콤팩트 거리공간 위의 연속 핵은 적분작용소의 고유함수 $e_j$ 와 고윳값 $\lambda_j\ge 0$ 으로
+Mercer 정리(Mercer's theorem). 콤팩트 거리공간 위의 연속 핵은 지지집합이 전체인 유한 측도에 대한 적분작용소(integral operator)의 고유함수 $e_j$ 와 고윳값 $\lambda_j\ge 0$ 으로
 
 $$K(x,z)=\sum_{j=1}^{\infty}\lambda_je_j(x)e_j(z)$$
 
@@ -96,7 +100,7 @@ $$K(x,z)=\sum_{j=1}^{\infty}\lambda_je_j(x)e_j(z)$$
 
 ## 커널 치환
 
-서포트 벡터 머신의 쌍대문제와 판별함수에 자료가 내적으로만 들어가므로, 내적을 $K$ 로 바꾸면 특징 공간에서의 선형 분류가 된다. 표현자 정리가 그 해가 자료점의 핵 함수들의 결합임을 보장한다. 커널 PCA 가 [공분산](covariance.md)의 고유벡터에 같은 치환을 쓴다.
+서포트 벡터 머신의 쌍대문제와 판별함수에 자료가 내적으로만 들어가므로, 내적을 $K$ 로 바꾸는 커널 치환(kernel trick)으로 특징 공간에서의 선형 분류를 한다. 표현자 정리가 그 해가 자료점의 핵 함수들의 결합임을 보장한다. 커널 PCA 가 [공분산](covariance.md)의 고유벡터에 같은 치환을 쓴다.
 
 ## Gauss 과정의 공분산함수
 
@@ -104,7 +108,7 @@ $$K(x,z)=\sum_{j=1}^{\infty}\lambda_je_j(x)e_j(z)$$
 
 ## 분포의 매장
 
-확률분포 $P$ 를 $\mu_P=E\_{X\sim P}\lbrack K_X\rbrack$ 로 보내면 분포가 공간의 한 점이 된다. $K$ 가 적절한 조건을 만족하면 이 대응이 단사이고, 두 분포의 거리를 $\Vert\mu_P-\mu_Q\Vert$ 로 재는 양이 두 표본 검정의 통계량이 된다.
+확률분포 $P$ 를 평균 매장(kernel mean embedding) $\mu_P=E\_{X\sim P}\lbrack K_X\rbrack$ 로 보내면 분포가 공간의 한 점이 된다. Gauss 핵처럼 이 대응이 단사인 핵을 특성 핵(characteristic kernel)이라 한다. 두 분포의 거리 $\Vert\mu_P-\mu_Q\Vert$ 는 최대 평균 불일치(maximum mean discrepancy, MMD)이고, 두 표본 검정(two-sample test)의 통계량으로 쓴다.
 
 # 연관 문서
 
