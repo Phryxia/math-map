@@ -6,9 +6,7 @@
 
 # 직관
 
-Rademacher type 은 Banach 공간에서 무작위 부호를 붙인 벡터 합의 노름이 각 벡터 노름의 $\ell^p$ 합으로 위에서 묶이는 성질이다. 아래에서 묶이는 쌍대 성질이 **cotype** 이다. [실수](real-numbers.md) 계수에서는 [Khintchine 부등식](khintchine-inequality.md)이 무작위 부호 합을 계수의 $\ell^2$ 노름과 동등하게 묶지만, 벡터 계수에서는 공간의 기하에 따라 증가 속도가 달라진다. type 과 cotype 은 그 속도로 Banach 공간을 분류하고, 둘 다 $2$ 인 공간은 [Hilbert 공간](hilbert-spaces.md)과 동형인 공간뿐이다.
-
-Hilbert 공간에서는 평행사변형 법칙으로 $E\Vert\sum_j\varepsilon_jx_j\Vert^2=\sum_j\Vert x_j\Vert^2$ 이다. 부호가 독립이고 평균이 $0$ 이므로 전개하면 교차항이 사라지고, 무작위 부호 합의 크기는 단위벡터 $n$ 개에서 $\sqrt n$ 이다.
+[Hilbert 공간](hilbert-spaces.md)에서는 평행사변형 법칙으로 $E\Vert\sum_j\varepsilon_jx_j\Vert^2=\sum_j\Vert x_j\Vert^2$ 이다. 부호가 독립이고 평균이 $0$ 이므로 전개하면 교차항이 사라지고, 무작위 부호 합의 크기는 단위벡터 $n$ 개에서 $\sqrt n$ 이다.
 
 $\ell^1$ 에서 표준 단위벡터 $e_1,\dots,e_n$ 을 쓰면 부호가 어떻든 $\Vert\sum_j\varepsilon_je_j\Vert_1=n$ 이다. 합이 $\sqrt n$ 이 아니라 $n$ 으로 자라므로 상쇄가 전혀 일어나지 않는다. $\ell^\infty$ 에서는 반대로 $\Vert\sum_j\varepsilon_je_j\Vert_\infty=1$ 이어서 합이 전혀 자라지 않는다.
 
@@ -16,7 +14,7 @@ $\ell^1$ 에서 표준 단위벡터 $e_1,\dots,e_n$ 을 쓰면 부호가 어떻�
 
 # 정의
 
-$X$ 를 Banach 공간, $\varepsilon_1,\varepsilon_2,\dots$ 를 Rademacher 열이라 한다.
+$X$ 를 Banach 공간이라 하고, 서로 독립이고 각각 확률 $1/2$ 로 $\pm1$ 인 확률변수 $\varepsilon_1,\varepsilon_2,\dots$ 를 Rademacher 열(Rademacher sequence)이라 한다.
 
 $1\le p\le 2$ 일 때 상수 $T$ 가 있어 모든 유한 개의 $x_1,\dots,x_n\in X$ 에서
 
@@ -24,19 +22,27 @@ $$
 \Bigl(E\Bigl\Vert\sum_{j=1}^n\varepsilon_jx_j\Bigr\Vert^2\Bigr)^{1/2}\le T\Bigl(\sum_{j=1}^n\Vert x_j\Vert^p\Bigr)^{1/p}
 $$
 
-가 성립하면 $X$ 가 **type $p$** 라 한다. $2\le q\lt\infty$ 일 때 상수 $C$ 가 있어
+가 성립하면 $X$ 가 **type $p$(type p)** 라 한다. $2\le q\lt\infty$ 일 때 상수 $C$ 가 있어
 
 $$
 \Bigl(\sum_{j=1}^n\Vert x_j\Vert^q\Bigr)^{1/q}\le C\Bigl(E\Bigl\Vert\sum_{j=1}^n\varepsilon_jx_j\Bigr\Vert^2\Bigr)^{1/2}
 $$
 
-가 성립하면 $X$ 가 **cotype $q$** 라 한다. 삼각부등식으로 모든 Banach 공간은 type $1$ 이다. 같은 벡터 $x\ne 0$ 을 $n$ 번 쓰면 좌변과 우변이 $\sqrt n$ 과 $n^{1/p}$ 의 비로 자라므로 $p\gt 2$ 인 type 과 $q\lt 2$ 인 cotype 은 성립하지 않는다.
+가 성립하면 $X$ 가 **cotype $q$(cotype q)** 라 한다.
+
+- 직관 절의 등식으로 Hilbert 공간은 $T=1$ 로 type $2$ 이고 $C=1$ 로 cotype $2$ 다.
+- $\ell^1$ 에서 $x_j=e_j$ 로 두면 좌변이 $n$, type $p$ 의 우변이 $Tn^{1/p}$ 이므로 $p\gt 1$ 에서는 type $p$ 가 아니다.
+- $\ell^\infty$ 에서 $x_j=e_j$ 로 두면 cotype $q$ 의 좌변이 $n^{1/q}$, 우변이 $C$ 이므로 어떤 $q\lt\infty$ 에서도 cotype $q$ 가 아니다.
 
 # 성질
 
+## 가능한 지수의 범위
+
+삼각부등식으로 모든 Banach 공간은 type $1$ 이다. 같은 벡터 $x\ne 0$ 을 $n$ 번 쓰면 [Khintchine 부등식](khintchine-inequality.md)으로 무작위 부호 합이 $\sqrt n\Vert x\Vert$ 정도로 자라므로 $p\gt 2$ 인 type 과 $q\lt 2$ 인 cotype 은 성립하지 않는다.
+
 ## Kahane 부등식
 
-**Kahane 부등식(Kahane's inequality)**. $0\lt p,q\lt\infty$ 마다 상수 $K_{p,q}$ 가 있어 모든 Banach 공간 $X$ 와 $x_j\in X$ 에서
+Kahane 부등식(Kahane's inequality)에 따르면 $0\lt p,q\lt\infty$ 마다 상수 $K_{p,q}$ 가 있어 모든 Banach 공간 $X$ 와 $x_j\in X$ 에서
 
 $$
 \Bigl(E\Bigl\Vert\sum_j\varepsilon_jx_j\Bigr\Vert^p\Bigr)^{1/p}\le K_{p,q}\Bigl(E\Bigl\Vert\sum_j\varepsilon_jx_j\Bigr\Vert^q\Bigr)^{1/q}
@@ -76,7 +82,7 @@ Banach 공간 $X$ 가 $1$ 보다 큰 type 을 갖지 않는 것은 $X$ 가 $\ell
 # 활용
 
 - Banach 공간 값 확률변수의 극한정리. $X$ 가 type $2$ 인 것과, 평균 $0$ 이고 $E\Vert Y\Vert^2\lt\infty$ 인 모든 $X$ 값 확률변수 $Y$ 의 독립 사본에서 [중심극한정리](central-limit-theorem.md)가 성립하는 것이 동치다(Hoffmann-Jørgensen–Pisier)[^4].
-- 연산자의 분해. $X$ 가 type $2$ 이고 $Y$ 가 cotype $2$ 이면 유계 연산자 $X\to Y$ 는 Hilbert 공간을 거쳐 분해된다(Kwapień–Maurey 분해 정리). $X=Y$ 인 항등사상에 쓰면 Kwapień 정리가 된다.
+- 작용소의 분해. $X$ 가 type $2$ 이고 $Y$ 가 cotype $2$ 이면 유계 작용소 $X\to Y$ 는 Hilbert 공간을 거쳐 분해된다(Kwapień–Maurey 분해 정리). $X=Y$ 인 항등사상에 쓰면 Kwapień 정리가 된다.
 
 [^1]: J.-P. Kahane, *Some Random Series of Functions*, Heath, 1968; 2nd ed., Cambridge University Press, 1985, Chapter 2.
 [^2]: S. Kwapień, Isomorphic characterizations of inner product spaces by orthogonal series with vector valued coefficients, *Studia Mathematica* 44 (1972), 583–595.
