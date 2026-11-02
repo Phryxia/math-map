@@ -22,19 +22,27 @@ $K_n$ 을 정점 $n$ 개의 완전그래프라 하고, $\mathrm{cr}(K_n)$ 을 �
 
 ## Guy 의 수
 
-다음 수 $Z(n)$ 을 **Guy 의 수** 라 한다.
+다음 수 $Z(n)$ 을 **Guy 의 수(Guy number)** 라 한다.
 
 $$
 Z(n)=\frac14\Big\lfloor\frac n2\Big\rfloor\Big\lfloor\frac{n-1}2\Big\rfloor\Big\lfloor\frac{n-2}2\Big\rfloor\Big\lfloor\frac{n-3}2\Big\rfloor
 $$
 
-$n$ 개의 정점을 두 묶음으로 나누어 원기둥의 두 밑면 위에 놓고 변을 측면으로 돌려 그리는 Guy 의 그림이 정확히 $Z(n)$ 개의 교차를 가지므로 $\mathrm{cr}(K_n)\le Z(n)$ 이다.[^1]
+$Z(5)=\tfrac14\cdot2\cdot2\cdot1\cdot1=1$ 이고 $Z(6)=\tfrac14\cdot3\cdot2\cdot2\cdot1=3$ 이어서 직관 절의 $\mathrm{cr}(K_5)$, $\mathrm{cr}(K_6)$ 과 같다.
 
 ## 직선 교차수
 
-변을 선분으로만 그린 그림에서 교차 개수의 최솟값을 $\overline{\mathrm{cr}}(G)$ 라 쓰고 **직선 교차수**라 한다. 곡선 그림이 더 많으므로 $\mathrm{cr}(G)\le\overline{\mathrm{cr}}(G)$ 이고, $K_8$ 에서 $\mathrm{cr}(K_8)=18$ 과 $\overline{\mathrm{cr}}(K_8)=19$ 로 두 값이 갈린다.[^2] $\overline{\mathrm{cr}}(K_n)$ 의 점근 상수는 [Sylvester 네 점 문제](sylvester-four-point.md)의 확률의 하한과 같다.
+변을 선분으로만 그린 그림에서 교차 개수의 최솟값을 $\overline{\mathrm{cr}}(G)$ 라 쓰고 **직선 교차수(rectilinear crossing number)** 라 한다. 직관 절의 그림은 변이 모두 선분이 되게 그릴 수 있으므로 $\overline{\mathrm{cr}}(K_4)=0$, $\overline{\mathrm{cr}}(K_5)=1$ 이다.
 
 # 성질
+
+## Guy 의 그림
+
+$n$ 개의 정점을 두 묶음으로 나누어 원기둥의 두 밑면 위에 놓고 변을 측면으로 돌려 그리는 Guy 의 그림이 정확히 $Z(n)$ 개의 교차를 가지므로 $\mathrm{cr}(K_n)\le Z(n)$ 이다.[^1]
+
+## 직선 교차수와의 비교
+
+곡선 그림이 선분 그림을 포함하므로 $\mathrm{cr}(G)\le\overline{\mathrm{cr}}(G)$ 이고, $K_8$ 에서 $\mathrm{cr}(K_8)=18$ 과 $\overline{\mathrm{cr}}(K_8)=19$ 로 두 값이 갈린다.[^2] $\overline{\mathrm{cr}}(K_n)/\binom n4$ 의 극한은 [Sylvester 네 점 문제](sylvester-four-point.md)에서 네 점이 볼록 위치에 놓일 확률의 하한과 같다.
 
 ## 확정된 값
 
@@ -46,7 +54,7 @@ $n$ 개의 정점을 두 묶음으로 나누어 원기둥의 두 밑면 위에 �
 
 ## 두 번 세기 하한
 
-**정리.** $n\ge5$ 에 대해 다음이 성립한다.
+$n\ge5$ 에 대해 다음이 성립한다.
 
 $$
 \mathrm{cr}(K_n)\ \ge\ \frac{n}{n-4}\thinspace\mathrm{cr}(K_{n-1})
@@ -72,14 +80,14 @@ $$
 
 ## 알려진 열린 문제
 
-**Guy 추측.** 모든 $n$ 에 대해 $\mathrm{cr}(K_n)=Z(n)$ 이다. $n\ge13$ 에서 이 등식은 증명되지 않았다.[^1]
+Guy 추측(Guy's conjecture)은 모든 $n$ 에 대해 $\mathrm{cr}(K_n)=Z(n)$ 이라는 추측이다. $n\ge13$ 에서 이 등식은 증명되지 않았다.[^1]
 
-**Zarankiewicz 추측.** 모든 $m,n$ 에 대해 $\mathrm{cr}(K_{m,n})=Z(m,n)$ 이다. $\min(m,n)\ge7$ 에서 이 등식은 증명되지 않았다.[^3]
+Zarankiewicz 추측(Zarankiewicz's conjecture)은 모든 $m,n$ 에 대해 $\mathrm{cr}(K_{m,n})=Z(m,n)$ 이라는 추측이다. $\min(m,n)\ge7$ 에서 이 등식은 증명되지 않았다.[^3]
 
 # 활용
 
-- [교차수 부등식](crossing-number-inequality.md)의 최적성. 그 부등식은 변이 $e$ 개, 정점이 $v$ 개일 때 $\mathrm{cr}(G)$ 가 $e^3/v^2$ 의 상수배 이상이라고 말한다. $K_n$ 에서 $e$ 는 $n^2$ 규모이고 $Z(n)$ 은 $n^4$ 규모이므로 $e^3/v^2$ 와 차수가 같고, 지수를 더 올릴 수 없음이 이 예에서 나온다.
-- [평면 그래프](planar-graphs.md) 판정의 양적 판본. $\mathrm{cr}(G)=0$ 이 평면성이고, $K_5$ 에서 값이 $1$ 인 것이 Kuratowski 정리가 금지하는 부분그래프의 교차수를 재는 자리다.
+- [교차수 부등식](crossing-number-inequality.md)의 최적성. 그 부등식에 따르면 변이 $e$ 개, 정점이 $v$ 개일 때 $\mathrm{cr}(G)$ 가 $e^3/v^2$ 의 상수배 이상이다. $K_n$ 에서 $e$ 는 $n^2$ 규모이고 $Z(n)$ 은 $n^4$ 규모이므로 $e^3/v^2$ 와 차수가 같고, 지수를 더 올릴 수 없음이 이 예에서 나온다.
+- [평면 그래프](planar-graphs.md) 판정의 양적 판본. $\mathrm{cr}(G)=0$ 이 평면성이고, Kuratowski 정리(Kuratowski's theorem)가 금지하는 두 그래프 $K_5$ 와 $K\_{3,3}$ 의 교차수는 모두 $1$ 이다.
 
 [^1]: Schaefer, *The Graph Crossing Number and its Variants: A Survey*, Electronic Journal of Combinatorics, Dynamic Survey DS21, §2 — Guy 의 그림, $n\le12$ 의 확정값, Guy 추측이 $n\ge13$ 에서 열려 있다는 서술. https://www.combinatorics.org/ojs/index.php/eljc/article/view/DS21
 [^2]: Schaefer, 같은 survey §5 "Rectilinear crossing number" — 직선 교차수와 교차수가 갈리는 가장 작은 예.
