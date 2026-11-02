@@ -8,17 +8,7 @@
 
 이산 Kantorovich 최적 수송 문제는 선형계획이다. $n$ 개 점에 대해 $\tilde O(n^3)$ 이 든다. 최적해가 심플렉스의 꼭짓점이라 입력을 조금 흔들면 해가 다른 꼭짓점으로 건너뛰고, 비용을 입력의 함수로 보면 미분가능하지 않다.
 
-엔트로피 항을 더하면 목적함수가 [강볼록](convexity.md)해진다. 해가 유일해지고 최적해가 닫힌 꼴로 나온다.
-
-$$
-P^\star=\mathrm{diag}(u)\thinspace K\thinspace\mathrm{diag}(v),\qquad K=e^{-C/\varepsilon}
-$$
-
-남은 일은 $u,v$ 를 주변분포에 맞추는 것이고, 두 조건을 번갈아 강제하는 것이 **Sinkhorn 반복**이다. 행렬-벡터 곱만 쓰므로 GPU(graphics processing unit) 에서 빠르다.
-
-$u,v$ 를 로그로 옮겨 계산하면 작은 $\varepsilon$ 에서의 언더플로를 피하고, $\varepsilon\gt 0$ 이 남기는 편향은 Sinkhorn 발산으로 뺀다.
-
-주변분포 제약은 행 합과 열 합, 곧 $n+m$ 개의 선형 등식이고 미지수 $P_{ij}$ 는 $nm$ 개다. 비용 $\langle C,P\rangle$ 가 $P$ 에 선형이면 최적 계획은 볼록집합의 꼭짓점에 놓이므로 $nm$ 개 성분 가운데 어느 것이 $0$ 인지를 골라야 한다. 엔트로피 $H(P)=-\sum_{ij}P_{ij}(\log P_{ij}-1)$ 을 목적함수에서 $\varepsilon$ 배로 빼면 성분마다의 미분이 $\log P_{ij}$ 를 내고, 승수 $f_i,g_j$ 를 붙인 일계 조건을 $P_{ij}$ 에 대해 풀면
+주변분포 제약은 행 합과 열 합, 곧 $n+m$ 개의 선형 등식이고 미지수 $P_{ij}$ 는 $nm$ 개다. 비용 $\langle C,P\rangle$ 가 $P$ 에 선형이면 최적 계획은 볼록집합의 꼭짓점에 놓이므로 $nm$ 개 성분 가운데 어느 것이 $0$ 인지를 골라야 한다. 엔트로피 $H(P)=-\sum_{ij}P_{ij}(\log P_{ij}-1)$ 을 목적함수에서 $\varepsilon$ 배로 빼면 목적함수가 [강볼록](convexity.md)해지고, 성분마다의 미분이 $\log P_{ij}$ 를 내고, 승수 $f_i,g_j$ 를 붙인 일계 조건을 $P_{ij}$ 에 대해 풀면
 
 $$
 P_{ij}=e^{f_i/\varepsilon}\thinspace e^{-C_{ij}/\varepsilon}\thinspace e^{g_j/\varepsilon}
@@ -32,10 +22,10 @@ $\varepsilon$ 이 비용과 엔트로피의 가중치를 정한다. $\varepsilon
 
 ## 엔트로피 정규화 최적 수송
 
-$a\in\Delta_n$ 과 $b\in\Delta_m$ 을 확률벡터, $C\in\mathbb R^{n\times m}\_{\ge0}$ 을 비용행렬이라 하고 $\Pi(a,b)=\lbrace P\ge0:P\mathbf1=a,\ P^\top\mathbf1=b\rbrace$ 라 하자.
+$a\in\Delta_n$ 과 $b\in\Delta_m$ 을 확률벡터, $C\in\mathbb R^{n\times m}\_{\ge0}$ 을 비용행렬이라 하고 $\Pi(a,b)=\lbrace P\ge0:P\mathbf1=a,\thinspace P^\top\mathbf1=b\rbrace$ 라 하자.
 
 $$
-\mathrm{OT}\_\varepsilon(a,b)=\min_{P\in\Pi(a,b)}\ \langle C,P\rangle+\varepsilon\thinspace\mathrm{KL}\big(P\thinspace\Vert\thinspace a\otimes b\big)
+\mathrm{OT}\_\varepsilon(a,b)=\min_{P\in\Pi(a,b)}\thinspace \langle C,P\rangle+\varepsilon\thinspace\mathrm{KL}\big(P\thinspace\Vert\thinspace a\otimes b\big)
 $$
 
 기준측도를 $K=e^{-C/\varepsilon}$ 로 잡느냐 곱측도 $a\otimes b$ 로 잡느냐는 상수 차이이고 최적해 $P^\star$ 는 같다. 아래에서는 곱측도 규약을 쓴다. 목적함수가 강볼록하고 $\Pi(a,b)$ 가 콤팩트 볼록집합이므로 최소점이 유일하다.
@@ -45,7 +35,7 @@ $$
 제약에 승수 $f\in\mathbb R^n$ 과 $g\in\mathbb R^m$ 을 붙이고 $P$ 에 대해 최소화하면 제약 없는 매끄러운 문제가 나온다.
 
 $$
-\max_{f,g}\ \langle f,a\rangle+\langle g,b\rangle-\varepsilon\sum_{i,j}a_ib_j\thinspace e^{(f_i+g_j-C_{ij})/\varepsilon}
+\max_{f,g}\thinspace \langle f,a\rangle+\langle g,b\rangle-\varepsilon\sum_{i,j}a_ib_j\thinspace e^{(f_i+g_j-C_{ij})/\varepsilon}
 $$
 
 최적해는
@@ -61,7 +51,9 @@ f_i=-\varepsilon\log\sum_jb_j\thinspace e^{(g_j-C_{ij})/\varepsilon},\qquad
 g_j=-\varepsilon\log\sum_ia_i\thinspace e^{(f_i-C_{ij})/\varepsilon}
 $$
 
-가 되므로, Sinkhorn 반복은 쌍대 문제의 블록 좌표 상승법이다. 곱 형태 $u\leftarrow a/(Kv)$ 와 $v\leftarrow b/(K^\top u)$ 를 로그로 옮긴 것이다.
+가 된다. **Sinkhorn 반복(Sinkhorn iteration)** 은 이 두 식을 번갈아 적용하는 반복이고, 쌍대 문제의 블록 좌표 상승법(block coordinate ascent)이다. 곱 형태로는 $u\leftarrow a/(Kv)$ 와 $v\leftarrow b/(K^\top u)$ 이고 $P=\mathrm{diag}(u)\thinspace K\thinspace\mathrm{diag}(v)$ 다.
+
+$a=b=(1/2,1/2)$, $C=\begin{pmatrix}0&1\cr 1&0\end{pmatrix}$, $\varepsilon=1$ 이면 $K=\begin{pmatrix}1&e^{-1}\cr e^{-1}&1\end{pmatrix}$ 이다. $v=(1,1)$ 에서 시작하면 $u=a/(Kv)\approx(0.366,0.366)$ 이고, 다음 $v=b/(K^\top u)=(1,1)$ 로 돌아오므로 반복이 멈춘다. 결과는 대각 성분 $0.366$, 비대각 성분 $0.134$ 인 계획이다. 엔트로피 항이 없는 최적 계획은 대각에만 $1/2$ 씩 놓여 비용이 $0$ 이고, 이 계획의 비용은 $\langle C,P\rangle\approx 0.269$ 다.
 
 ## 로그 영역 반복
 
@@ -75,7 +67,7 @@ $$
 
 ## Sinkhorn 발산
 
-$\varepsilon\gt 0$ 이면 $\mathrm{OT}\_\varepsilon(a,a)\gt 0$ 이라 자기 자신과의 거리가 $0$ 이 아니다. 이 상수를 빼낸 것이 **Sinkhorn 발산**이다[^1].
+$\varepsilon\gt 0$ 이면 $\mathrm{OT}\_\varepsilon(a,a)\gt 0$ 이라 자기 자신과의 거리가 $0$ 이 아니다. 이 상수를 빼낸 것이 **Sinkhorn 발산(Sinkhorn divergence)** 이다[^1].
 
 $$
 S_\varepsilon(a,b)=\mathrm{OT}\_\varepsilon(a,b)-\tfrac12\mathrm{OT}\_\varepsilon(a,a)-\tfrac12\mathrm{OT}\_\varepsilon(b,b)
