@@ -10,27 +10,35 @@
 
 ![저항 1 인 간선 둘로 된 경로와, 그런 경로 둘을 병렬로 이은 그래프](figures/effective-resistance-series-parallel.svg)
 
-왼쪽은 저항 1 인 간선 둘이 직렬이라 $R=2$ 이고 오른쪽은 저항 2 짜리 경로 둘이 병렬이라 $R=1$ 인데, 두 그래프 모두 최단 경로 길이는 2 다. 우회로가 없는 다리 간선에서는 모든 전류가 그 간선을 지나므로 유효저항이 그 간선의 저항과 같고, 이것이 최댓값이다. 각 정점에서 흘러 나가는 전류의 합은 외부에서 주입한 양과 같고, 간선 $(i,j)$ 의 전류가 Ohm 법칙으로 $w_{ij}(\varphi_i - \varphi_j)$ 이므로 정점 $i$ 의 순유출이 아래와 같다. Kirchhoff 의 전류 법칙이 $L\varphi = b$ 가 된다.
+그림의 양 끝 정점을 $u,v$ 라 하고 $u$ 에 전류 $1$ 을 넣어 $v$ 에서 뺀다. 왼쪽 경로 $u,x,v$ 에서는 전류 $1$ 이 두 간선을 차례로 지나고, 간선마다 전위가 $1$ 씩 떨어지므로 $u$ 와 $v$ 의 전위차가 $2$ 다. 오른쪽에서는 전류가 두 경로 $u,x,v$ 와 $u,y,v$ 로 $1/2$ 씩 나뉘고, 간선마다 전위가 $1/2$ 씩 떨어져 전위차가 $1$ 이다. 두 그래프 모두 $u$ 와 $v$ 사이 최단 경로의 길이는 $2$ 지만, 길이 여럿인 오른쪽의 전위차가 작다.
 
-$$
-\sum_{j\sim i} w_{ij}(\varphi_i-\varphi_j)=(L\varphi)\_i
-$$
+이 전위차가 유효저항이다. 우회로가 없는 간선에서는 모든 전류가 그 간선을 지나므로 유효저항이 그 간선의 저항과 같다.
 
 # 정의
 
 ## 전위 방정식
 
-연결된 유한 무향 그래프의 간선 가중치 $w_{ij}\gt 0$ 을 전도도로 보면 간선의 저항은 $1/w_{ij}$ 다. $L$ 을 그래프 Laplacian, $u \ne v$ 를 두 정점, $b = e_u - e_v$ 라 하자. 전위 $\varphi$ 는
+연결된 유한 무향 그래프의 간선 가중치 $w_{ij}\gt 0$ 을 전도도로 보면 간선의 저항은 $1/w_{ij}$ 다. 간선 $(i,j)$ 의 전류는 Ohm 법칙(Ohm's law)으로 $w_{ij}(\varphi_i-\varphi_j)$ 이므로 정점 $i$ 에서 흘러 나가는 전류는
+
+$$
+\sum_{j\sim i} w_{ij}(\varphi_i-\varphi_j)=(L\varphi)\_i
+$$
+
+이고 $L$ 은 그래프 Laplacian 이다. $u \ne v$ 를 두 정점, $b = e_u - e_v$ 라 하자. 전위 $\varphi$ 는
 
 $$
 L\varphi=b
 $$
 
-를 만족한다. $u$ 에서 전류 1 을 넣고 $v$ 에서 1 을 빼며 나머지 정점의 순유입이 0 이라는 조건이다. **유효저항**은 그때의 전위차다.
+를 만족한다. $u$ 에서 전류 1 을 넣고 $v$ 에서 1 을 빼며 나머지 정점의 순유입이 0 이라는 조건이고, Kirchhoff 의 전류 법칙(Kirchhoff's current law)이다. 유효저항은 그때의 전위차다.
 
 $$
 R(u,v)=\varphi_u-\varphi_v
 $$
+
+직관 절의 왼쪽 경로에서 $\varphi=(\varphi_u,\varphi_x,\varphi_v)=(2,1,0)$ 은 $(L\varphi)\_u=2-1=1$, $(L\varphi)\_x=(1-2)+(1-0)=0$, $(L\varphi)\_v=0-1=-1$ 을 만족하므로 $R(u,v)=2$ 다. 오른쪽 그래프에서는 $\varphi_u=1$, $\varphi_x=\varphi_y=1/2$, $\varphi_v=0$ 이 방정식을 만족하고 $R(u,v)=1$ 이다.
+
+# 성질
 
 ## 유일성
 
@@ -38,7 +46,7 @@ $L$ 이 특이행렬이므로 $\varphi$ 는 유일하지 않다. 그래프가 �
 
 ## 유사역행렬 표현
 
-$L^+$ 를 Moore–Penrose 유사역행렬이라 하면 $\varphi = L^+ b$ 를 택할 수 있고
+$L^+$ 를 Moore–Penrose 유사역행렬(Moore–Penrose pseudoinverse)이라 하면 $\varphi = L^+ b$ 를 택할 수 있고
 
 $$
 R(u,v)=b^{\mathsf T}L^{+}b=L^{+}\_{uu}-2L^{+}\_{uv}+L^{+}\_{vv}
@@ -50,9 +58,7 @@ $$
 R(u,v)=\sum_{k:\lambda_k\gt 0}\frac{\left(q_k(u)-q_k(v)\right)^2}{\lambda_k}
 $$
 
-이고, 작은 고윳값의 고유벡터가 두 정점을 크게 갈라놓을수록 저항이 커진다. 병목이 저항으로 나타난다.
-
-# 성질
+이고, 작은 고윳값의 고유벡터가 두 정점에서 크게 다른 값을 가질수록 저항이 커진다.
 
 ## 에너지 해석
 
@@ -64,7 +70,7 @@ $$
 
 가 나온다. 왼쪽은 회로가 소비하는 에너지 $\sum_{(i,j)} w_{ij}(\varphi_i-\varphi_j)^2$ 이므로 단위 전류를 흘릴 때의 소비 에너지가 유효저항이다.
 
-Thomson 원리에 따르면 유효저항은 $u$ 에서 $v$ 로 단위 전류를 보내는 모든 흐름 가운데 최소 에너지이고, [Dirichlet 원리](dirichlet-principle.md)에 따르면 그 역수가 전위 함수에 대한 최소화로 얻어진다.
+Thomson 원리(Thomson's principle)에 따르면 유효저항은 $u$ 에서 $v$ 로 단위 전류를 보내는 모든 흐름 가운데 최소 에너지이고, [Dirichlet 원리](dirichlet-principle.md)에 따르면 그 역수가 전위 함수에 대한 최소화로 얻어진다.
 
 $$
 R(u,v)^{-1}=\min\Big\lbrace\varphi^{\mathsf T}L\varphi\ :\ \varphi_u-\varphi_v=1\Big\rbrace
@@ -72,7 +78,7 @@ $$
 
 ## Rayleigh 단조성
 
-간선을 추가하거나 전도도를 높이면 유효저항은 증가하지 않는다. 기존 최적 흐름이 새 회로에서도 가능한 흐름이고 최솟값을 취하는 집합이 넓어졌기 때문이다. 간선을 끊으면 저항이 줄지 않는다. 이 단조성이 유효저항을 연결성의 척도로 쓰는 근거다.
+Rayleigh 단조성(Rayleigh monotonicity)은 다음이다. 간선을 추가하거나 전도도를 높이면 유효저항은 증가하지 않는다. 직관 절의 왼쪽 경로에 경로 $u,y,v$ 를 더하면 $2$ 가 $1$ 로 줄어든다. 기존 최적 흐름이 새 회로에서도 가능한 흐름이고 최솟값을 취하는 집합이 넓어졌기 때문이다. 간선을 끊으면 저항이 줄지 않는다. 이 단조성이 유효저항을 연결성의 척도로 쓰는 근거다.
 
 ## 거리 성질
 
@@ -94,7 +100,7 @@ $$
 
 가 성립한다. $T$ 는 가중치에 비례하는 확률로 뽑은 무작위 신장트리이고, 전도도 곱하기 유효저항이 그 간선이 신장트리에 포함될 확률이다.
 
-신장트리의 간선 수가 $n-1$ 이므로 모든 간선에 대해 더하면 Foster 정리가 나온다.
+신장트리의 간선 수가 $n-1$ 이므로 모든 간선에 대해 더하면 Foster 정리(Foster's theorem)가 나온다.
 
 $$
 \sum_{e=(u,v)\in E}w_e\thinspace R(u,v)=n-1
@@ -110,13 +116,13 @@ $$
 C(u,v)=2\thinspace m\thinspace R(u,v)\qquad(m=\textstyle\sum_e w_e)
 $$
 
-확률적 대상과 전기적 대상이 같은 방정식을 만족하기 때문이며, 두 대상 사이의 대응은 [무작위 걷기](random-walks.md)에서 다룬다.
+왕복시간과 전위가 같은 조화함수 방정식을 만족하므로 이 등식이 나온다. 두 대상 사이의 대응은 [무작위 걷기](random-walks.md)에서 다룬다.
 
 # 활용
 
 - $w_eR(u,v)$ 가 간선의 중요도다. 값이 1 에 가까울수록 대체 불가능하고 0 에 가까울수록 잉여다. 이것이 [스펙트럼 희소화](spectral-sparsification.md)의 샘플링 확률이 되어, 유효저항에 비례해 간선을 뽑으면 $O(n \log n / \epsilon^2)$ 개의 간선으로 Laplacian 이차형식을 근사한다[^1].
-- 전염, 정보 확산, 혼잡처럼 흐름이 여러 경로로 분산되는 문제에서는 유효저항 거리가 최단 경로보다 적절하다. 모든 쌍의 저항 합 $\sum_{u\lt v} R(u,v)$ 을 Kirchhoff 지표라 하며 네트워크의 견고함을 재는 값으로 쓴다.
-- 정확한 계산은 $L^+$ 를 요구해 큰 그래프에서 비싸다. Johnson–Lindenstrauss 사영과 Laplacian 방정식의 빠른 해법을 결합해 모든 간선의 저항을 근사하고 그 값으로 샘플링한다.
+- 전염, 정보 확산, 혼잡처럼 흐름이 여러 경로로 분산되는 문제에서는 유효저항 거리가 최단 경로보다 적절하다. 모든 쌍의 저항 합 $\sum_{u\lt v} R(u,v)$ 을 Kirchhoff 지표(Kirchhoff index)라 하며 네트워크의 견고함을 재는 값으로 쓴다.
+- 정확한 계산은 $L^+$ 를 요구해 큰 그래프에서 비싸다. Johnson–Lindenstrauss 사영(Johnson–Lindenstrauss projection)과 Laplacian 방정식의 빠른 해법을 결합해 모든 간선의 저항을 근사하고 그 값으로 샘플링한다.
 
 [^1]: Spielman, Srivastava, *Graph Sparsification by Effective Resistances* (2008), https://arxiv.org/abs/0803.0929. 전기적 해석과 저항 기반 샘플링의 연결, Foster 정리의 역할. 전위 방정식과 [Schur 보수](schur-complement.md)의 관계는 Spielman 의 강의 노트 https://www.cs.yale.edu/homes/spielman/561/lect08-15.pdf 를 참고했다.
 
