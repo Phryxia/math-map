@@ -18,20 +18,20 @@ $D^n$ 은 $n$ 차원 닫힌 원판이고 그 경계 $\partial D^n$ 은 $S^{n-1}$
 
 $$Y\cup_\varphi D^n=\bigl(Y\sqcup D^n\bigr)\big/\bigl(x\sim\varphi(x)\thinspace\text{ for }x\in S^{n-1}\bigr)$$
 
-$\varphi$ 를 **붙임사상**이라 한다.
+$\varphi$ 를 **붙임사상(attaching map)** 이라 한다. 점 하나 $Y$ 에 상수사상 $\varphi\colon S^1\to Y$ 로 원판 $D^2$ 를 붙이면 직관 절의 구면 $S^2$ 다.
 
 ## CW 복합체
 
-CW 복합체는 세포를 차원 순으로 붙여 만든 위상공간이다. 골격 $X^{(n)}$ 을 귀납으로 정의한다.
+**CW 복합체(CW complex)** 는 세포를 차원 순으로 붙여 만든 위상공간이다. **골격(skeleton)** $X^{(n)}$ 을 귀납으로 정의한다.
 
-- $X^{(0)}$ 은 이산공간이고 그 점 하나하나가 **0-세포**다.
+- $X^{(0)}$ 은 이산공간이고 그 점 하나하나가 **0-세포(0-cell)** 다.
 - $X^{(n)}$ 은 $X^{(n-1)}$ 에 원판 $D^n\_\alpha$ 들을 붙임사상 $\varphi\_\alpha\colon S^{n-1}\to X^{(n-1)}$ 로 붙인 것이다.
 
 $$X^{(n)}=\Bigl(X^{(n-1)}\sqcup\coprod_\alpha D^n\_\alpha\Bigr)\Big/\bigl(x\sim\varphi\_\alpha(x)\bigr)$$
 
 - $X=\bigcup_n X^{(n)}$ 이고, $A\subseteq X$ 가 닫힌집합인 것은 모든 $n$ 에서 $A\cap X^{(n)}$ 이 $X^{(n)}$ 의 닫힌집합인 것과 같다.
 
-$D^n\_\alpha$ 의 내부가 $X$ 로 가는 상을 **$n$-세포**라 하고 $e^n\_\alpha$ 로 쓴다. 몫사상이 유도하는 $\Phi\_\alpha\colon D^n\_\alpha\to X$ 를 **특성사상**이라 한다. 세포의 개수가 유한하면 **유한 CW 복합체**라 한다.
+$D^n\_\alpha$ 의 내부가 $X$ 로 가는 상을 **$n$-세포(n-cell)** 라 하고 $e^n\_\alpha$ 로 쓴다. 몫사상이 유도하는 $\Phi\_\alpha\colon D^n\_\alpha\to X$ 를 **특성사상(characteristic map)** 이라 한다. 세포의 개수가 유한하면 **유한 CW 복합체(finite CW complex)** 라 한다.
 
 이름은 두 조건에서 왔다. 세포마다 그 닫힘이 유한 개의 세포만 만나고(closure-finite), $X$ 의 위상이 골격들이 주는 약위상(weak topology)이다. 세포가 유한 개이면 두 조건이 자동으로 성립한다.
 
