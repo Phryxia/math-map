@@ -2,15 +2,11 @@
 
 # 개요
 
-**Banach–Alaoglu 정리(Banach–Alaoglu theorem)** 는 노름 공간 $X$ 의 쌍대 $X^\ast$ 의 닫힌 단위구가 약 $\ast$ 위상에서 콤팩트하다는 정리다. $\ell^2$ 의 표준기저 $e_1,e_2,\dots$ 는 길이가 모두 $1$ 이지만 서로의 거리가 $\sqrt2$ 라서 노름으로 수렴하는 부분열이 없고, 무한차원에서는 유계 수열의 극한을 잡을 수 없다. 이 정리는 수렴의 뜻을 좌표마다의 수렴처럼 약하게 바꾸면 단위구에서 극한을 다시 잡을 수 있음을 보인다.
+**Banach–Alaoglu 정리(Banach–Alaoglu theorem)** 는 노름 공간 $X$ 의 쌍대 $X^\ast$ 의 닫힌 단위구가 약별 위상에서 콤팩트하다는 정리다. $\ell^2$ 의 표준기저 $e_1,e_2,\dots$ 는 길이가 모두 $1$ 이지만 서로의 거리가 $\sqrt2$ 라서 노름으로 수렴하는 부분열이 없고, 무한차원에서는 유계 수열의 극한을 잡을 수 없다. 이 정리는 수렴의 뜻을 좌표마다의 수렴처럼 약하게 바꾸면 단위구에서 극한을 다시 잡을 수 있음을 보인다.
 
 # 직관
 
-무한차원에서 노름 위상의 단위구는 콤팩트하지 않으므로, Banach–Alaoglu 정리는 위상을 약하게 바꿔 콤팩트성을 얻는다.
-
-증명은 단위구를 콤팩트 원판들의 곱 안에 넣고 [Tychonoff 정리](tychonoff-theorem.md)를 쓴다. $X$ 가 분리가능이면 단위구의 약 $\ast$ 위상이 거리화 가능해져 콤팩트성이 수열 형태로 쓰인다.
-
-최소화 문제에서 유계인 수열의 극한을 잡으려 한다. 유한차원에서는 [Bolzano–Weierstrass 정리](bolzano-weierstrass.md)가 그 극한을 준다([수열의 극한](limits.md)). 무한차원에서 같은 일을 $\ell^2$ 의 표준기저 $e_1,e_2,\dots$ 로 해 본다. $\Vert e_n\Vert=1$ 이므로 이 수열은 유계이지만 $n\neq m$ 에서
+최소화 문제에서 유계인 수열의 극한을 잡으려 한다. 유한차원에서는 [Bolzano–Weierstrass 정리](bolzano-weierstrass.md)로 유계 수열이 [수렴](limits.md)하는 부분열을 갖는다. 무한차원에서 같은 일을 $\ell^2$ 의 표준기저 $e_1,e_2,\dots$ 로 해 본다. $\Vert e_n\Vert=1$ 이므로 이 수열은 유계이지만 $n\neq m$ 에서
 
 $$
 \Vert e_n-e_m\Vert=\sqrt 2
@@ -18,13 +14,13 @@ $$
 
 이므로 어느 부분열도 Cauchy 수열이 아니고, 노름으로 재는 한 수렴하는 부분열이 없다. 단위구가 노름 위상에서 콤팩트하지 않다는 뜻이다.
 
-노름 수렴은 모든 좌표에서 한꺼번에 가까워질 것을 요구해서 막혔다. 요구를 줄여 좌표를 하나씩 본다. $x\in\ell^2$ 를 고정하면 $\langle e_n,x\rangle=x_n$ 이고 $\sum\_n\vert x_n\vert^2$ 가 유한하므로 $x_n\to 0$ 이다. 그러므로 $x$ 를 무엇으로 잡아도 $\langle e_n,x\rangle$ 가 $0$ 으로 간다. 함숫값마다 수렴을 요구하는 위상에서는 $e_n$ 이 $0$ 으로 가고, 단위구가 그 위상에서 콤팩트해진다.
+노름 수렴은 모든 좌표에서 한꺼번에 가까워질 것을 요구해서 막혔다. 요구를 줄여 좌표를 하나씩 본다. $x\in\ell^2$ 를 고정하면 $\langle x,e_n\rangle=x_n$ 이고 $\sum\_n\vert x_n\vert^2$ 가 유한하므로 $x_n\to 0$ 이다. $e_n$ 을 $x\mapsto\langle x,e_n\rangle$ 이라는 함수로 보면, 어느 $x$ 에서든 함숫값이 $0$ 으로 간다. 함숫값마다의 수렴으로 가까움을 정하면 $e_n$ 은 $0$ 으로 가고, 이 가까움으로는 단위구가 콤팩트하다.
 
 # 정의
 
-## 약* 위상
+## 약별 위상
 
-$X$ 를 노름 공간, $X^\ast$ 를 유계 선형범함수 전체가 이루는 [쌍대 공간](dual-space.md)이라 한다. **약 $\ast$ 위상**은 각 $x\in X$ 마다 정해지는 평가 사상
+$X$ 를 노름 공간, $X^\ast$ 를 유계 선형범함수 전체가 이루는 [쌍대 공간](dual-space.md)이라 한다. **약별 위상(weak-star topology)** 은 각 $x\in X$ 마다 정해지는 평가 사상
 
 $$
 E_x:X^\ast\to\mathbb K,\qquad E_x(f)=f(x)
@@ -36,15 +32,22 @@ $$
 V=\lbrace f\in X^\ast\thinspace :\thinspace \vert f(x_j)-f_0(x_j)\vert\lt \varepsilon,\thinspace j=1,\dots,n\rbrace
 $$
 
-유한 개 점에서만 값을 비교하므로 노름 위상보다 거칠다.
+그물 $f_\alpha$ 가 $f$ 로 약별 수렴하는 것은 모든 $x\in X$ 에서 $f_\alpha(x)\to f(x)$ 인 것과 같다.
+
+- $X=\ell^2$ 이면 $X^\ast$ 는 $f_y(x)=\langle x,y\rangle$ 꼴의 범함수들로 $\ell^2$ 와 같다. 직관 절의 계산으로 $f_{e_n}(x)=x_n\to 0$ 이므로 $f_{e_n}$ 은 $0$ 으로 약별 수렴한다. 노름으로는 $\Vert f_{e_n}\Vert=1$ 이어서 $0$ 으로 가지 않는다.
+- $f_0=0$, 점 $e_1$ 하나와 $\varepsilon=1/2$ 로 정한 근방 $V$ 는 첫 좌표의 절댓값이 $1/2$ 보다 작은 $y$ 들의 $f_y$ 전체다. 이 근방에는 노름이 얼마든지 큰 $f_{100e_2}$ 도 들어 있다.
+
+# 성질
 
 ## 정리
 
+$X$ 의 쌍대의 닫힌 단위구
+
 $$
-B^\ast=\lbrace f\in X^\ast\thinspace :\thinspace \Vert f\Vert\le 1\rbrace \text{ 는 약 } \ast \text{ 위상에서 콤팩트하다.}
+B^\ast=\lbrace f\in X^\ast\thinspace :\thinspace \Vert f\Vert\le 1\rbrace
 $$
 
-# 성질
+는 약별 위상에서 콤팩트하다.
 
 ## 증명의 요지
 
@@ -54,7 +57,7 @@ $$
 P=\prod\_{x\in X}D_x
 $$
 
-는 Tychonoff 정리로 콤팩트하다. $\Phi(f)=(f(x))\_{x\in X}$ 는 $\Vert f\Vert\le 1$ 에서 $\vert f(x)\vert\le\Vert x\Vert$ 이므로 $B^\ast$ 를 $P$ 안으로 보내고, 값이 전부 같으면 같은 범함수이므로 단사다. 약 $\ast$ 위상의 기저 근방이 유한 개 좌표만 제약하므로 $\Phi$ 는 곱위상의 제한과 같은 위상을 준다.
+는 [Tychonoff 정리](tychonoff-theorem.md)로 콤팩트하다. $\Phi(f)=(f(x))\_{x\in X}$ 는 $\Vert f\Vert\le 1$ 에서 $\vert f(x)\vert\le\Vert x\Vert$ 이므로 $B^\ast$ 를 $P$ 안으로 보내고, 값이 전부 같으면 같은 범함수이므로 단사다. 약별 위상의 기저 근방이 유한 개 좌표만 제약하므로 $\Phi$ 는 곱위상의 제한과 같은 위상을 준다.
 
 남는 것은 상 $\Phi(B^\ast)$ 가 $P$ 의 닫힌집합이라는 것이다. $P$ 의 점 $(c_x)$ 가 상에 드는 것은 모든 $x,y$ 와 스칼라 $\lambda$ 에서
 
@@ -72,7 +75,7 @@ $$
 d(f,g)=\sum\_{n=1}^\infty 2^{-n}\min\lbrace 1,\thinspace \vert f(x_n)-g(x_n)\vert\rbrace
 $$
 
-이 $B^\ast$ 위에서 약 $\ast$ 위상과 같은 위상을 준다. 콤팩트 거리 공간에서는 콤팩트와 점열 콤팩트가 같으므로, $X^\ast$ 의 유계 수열은 약 $\ast$ 수렴하는 부분열을 갖는다[^1]. $X=\ell^1$ 과 $X^\ast=\ell^\infty$ 가 그 경우다.
+이 $B^\ast$ 위에서 약별 위상과 같은 위상을 준다. 콤팩트 거리 공간에서는 콤팩트와 점열 콤팩트가 같으므로, $X^\ast$ 의 유계 수열은 약별 수렴하는 부분열을 갖는다[^1]. $X=\ell^1$ 과 $X^\ast=\ell^\infty$ 가 그 경우다.
 
 $X$ 가 분리가능이 아니면 점열 형태는 보장되지 않는다. 덮개로 서술한 콤팩트성은 그대로 성립한다.
 
@@ -80,7 +83,7 @@ $X$ 가 분리가능이 아니면 점열 형태는 보장되지 않는다. 덮�
 
 $X$ 자신의 단위구에 대해서는 자연 매장 $J:X\to X^{\ast\ast}$ 가 전사인 것, 곧 $X$ 가 [반사적](reflexive-spaces.md)인 것이 기준이다.
 
-**정리 (Kakutani).** $X$ 의 닫힌 단위구가 약한 위상에서 콤팩트한 것과 $X$ 가 반사적인 것은 동치다[^2].
+Kakutani 정리(Kakutani's theorem)에 따르면 $X$ 의 닫힌 단위구가 약한 위상에서 콤팩트한 것과 $X$ 가 반사적인 것은 동치다[^2].
 
 반사적이면 $J$ 가 단위구를 단위구로 보내므로 $X^{\ast\ast}$ 쪽에 Banach–Alaoglu 정리를 적용한다. $L^1$ 과 $C\lbrack 0,1\rbrack$ 은 반사적이 아니므로 그 단위구는 약한 위상에서도 콤팩트하지 않다.
 
@@ -90,12 +93,12 @@ $X$ 자신의 단위구에 대해서는 자연 매장 $J:X\to X^{\ast\ast}$ 가 
 
 # 활용
 
-- **[변분법의 직접법](direct-method.md).** 최소화열이 유계이면 약 $\ast$ 수렴하는 부분열을 뽑고, 목적함수가 약 $\ast$ 하반연속이면 그 극한이 최소점이다. 반사적 [Banach 공간](banach-spaces.md)에서 이 논증이 미분방정식의 약해 존재 증명으로 쓰인다.
-- **측도의 콤팩트성.** 콤팩트 공간 $K$ 에서 $C(K)^\ast$ 가 Radon 측도들의 공간이므로([Riesz–Markov–Kakutani 표현 정리](riesz-markov-kakutani.md)), 전변동이 $1$ 이하인 측도 전체가 약 $\ast$ 콤팩트하다. 확률측도들의 집합도 닫혀 있어 콤팩트하다([측도](measure.md)).
-- **극점 표현.** [Krein–Milman 정리](krein-milman.md)로 콤팩트 볼록집합은 극점들의 닫힌 볼록껍질이다. Banach–Alaoglu 정리가 그 콤팩트성을 공급하므로 $B^\ast$ 가 극점들로 재구성된다([볼록성](convexity.md)).
-- **불변 평균의 존재.** 군 $G$ 가 평균가능이라는 것은 $\ell^\infty(G)^\ast$ 안에 좌평행이동 불변인 평균이 있다는 뜻이다. 유한 부분집합마다 근사 불변 평균을 만들고 약 $\ast$ 콤팩트성으로 극한을 잡는다([평균가능군](amenable-groups.md)).
+- [변분법의 직접법](direct-method.md)에서 최소화열이 유계이면 약별 수렴하는 부분열을 뽑고, 목적함수가 약별 하반연속이면 그 극한이 최소점이다. 반사적 [Banach 공간](banach-spaces.md)에서 이 논증이 미분방정식의 약해 존재 증명으로 쓰인다.
+- 콤팩트 공간 $K$ 에서 $C(K)^\ast$ 가 Radon 측도들의 공간이므로([Riesz–Markov–Kakutani 표현 정리](riesz-markov-kakutani.md)), 전변동이 $1$ 이하인 측도 전체가 약별 콤팩트하다. 확률측도들의 집합도 닫혀 있어 콤팩트하다([측도](measure.md)).
+- [Krein–Milman 정리](krein-milman.md)로 콤팩트 볼록집합은 극점들의 닫힌 볼록껍질이다. Banach–Alaoglu 정리가 그 콤팩트성을 공급하므로 $B^\ast$ 가 극점들로 재구성된다([볼록성](convexity.md)).
+- 군 $G$ 가 평균가능(amenable)이라는 것은 $\ell^\infty(G)^\ast$ 안에 좌평행이동 불변인 평균이 있다는 뜻이다. 유한 부분집합마다 근사 불변 평균을 만들고 약별 콤팩트성으로 극한을 잡는다([평균가능군](amenable-groups.md)).
 
-[^1]: Haim Brezis, *Functional Analysis, Sobolev Spaces and Partial Differential Equations*, Springer, 2011, 3.3 절. 약 $\ast$ 위상의 거리화와 분리가능 공간에서의 수열 형태.
+[^1]: Haim Brezis, *Functional Analysis, Sobolev Spaces and Partial Differential Equations*, Springer, 2011, 3.3 절. 약별 위상의 거리화와 분리가능 공간에서의 수열 형태.
 [^2]: Walter Rudin, *Functional Analysis*, 2nd ed., McGraw-Hill, 1991, 정리 3.15 와 4.2 절. Banach–Alaoglu 정리의 증명과 반사성의 특징.
 
 # 연관 문서
