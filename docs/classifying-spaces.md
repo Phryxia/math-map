@@ -6,10 +6,6 @@
 
 # 직관
 
-분류공간은 다발을 세는 문제를 사상의 호모토피류를 세는 문제로 바꾸는 공간이다. 위상군 $G$ 마다 공간 $BG$ 와 그 위의 주다발 $EG \to BG$ 가 있어, 파라콤팩트 공간 $X$ 위의 주 $G$ 다발이 연속사상 $X \to BG$ 의 호모토피류와 일대일로 대응한다.
-
-[특성류](characteristic-classes.md)는 이 대응에서 $BG$ 의 [코호몰로지](cohomology.md) 원소를 당긴 것이다. $H^\ast(BU(n))$ 이 Chern 류로 생성되는 [다항식환](polynomial-rings.md)이라는 계산이 Chern 류의 항등식을 전부 담는다.
-
 공간 $X$ 위의 랭크 $r$ 인 [벡터다발](vector-bundles.md)을 동형을 빼고 전부 세려 한다. 자료는 덮개 $\lbrace U\_\alpha\rbrace$ 와 전이함수 $g\_{\alpha\beta} : U\_\alpha \cap U\_\beta \to \mathrm{GL}\_r$ 의 모임인데, 덮개를 더 잘게 나누면 다른 자료가 같은 다발을 주므로 이 목록을 직접 셀 수 없다. $X = S^n$ 에서는 위아래 반구가 수축가능해 다발이 자명하므로 남는 자료가 적도에서 두 자명화를 붙이는 사상 $S^{n-1} \to \mathrm{GL}\_r$ 하나이고, 그 사상을 연속으로 움직여도 다발이 동형인 채로 있으므로 [호모토피군](homotopy-groups.md) $\pi\_{n-1}(\mathrm{GL}\_r)$ 의 원소가 다발을 센다. 덮개가 두 조각이어서 이 계산이 끝났고, 일반 $X$ 에서는 덮개가 몇 조각이 될지 모른다.
 
 덮개 대신 다발 자체를 한 공간으로 보낸다. 랭크 $r$ 다발을 큰 공간 $\mathbb R^N$ 안에 넣으면 점 $x$ 를 그 위의 $r$ 차원 부분공간으로 보내는 사상 $X \to \mathrm{Gr}\_r(\mathbb R^N)$ 이 생기고, [Grassmann 다양체](grassmannian.md) 위의 정준 다발을 이 사상으로 당긴 것이 원래 다발이다. $X$ 가 콤팩트하면 유한한 $N$ 으로 충분하지만 $N$ 이 $X$ 에 따라 달라지므로 $N$ 을 무한으로 키운 $\mathrm{Gr}\_r(\mathbb R^\infty)$ 를 쓴다. 호모토픽한 두 사상이 당긴 다발은 동형이므로, 다발을 세는 문제가 $\lbrack X, \mathrm{Gr}\_r(\mathbb R^\infty)\rbrack$ 를 세는 문제가 된다.
@@ -18,13 +14,15 @@
 
 ## 주다발
 
-위상군 $G$ 가 오른쪽에서 자유롭게 작용하는 공간 $P$ 와 사영 $p : P \to X$ 가 **주 $G$ 다발**이라는 것은, $X$ 의 각 점에 근방 $U$ 가 있어 $p^{-1}(U)$ 가 $G$ 동변 위상동형으로 $U \times G$ 와 같다는 뜻이다. 랭크 $r$ 벡터다발의 기저 전체를 모은 틀다발이 주 $\mathrm{GL}\_r$ 다발이고, 이 대응으로 벡터다발과 주 $\mathrm{GL}\_r$ 다발이 같은 것을 센다.
+위상군 $G$ 가 오른쪽에서 자유롭게 작용하는 공간 $P$ 와 사영 $p : P \to X$ 가 **주 $G$ 다발(principal G-bundle)** 이라는 것은, $X$ 의 각 점에 근방 $U$ 가 있어 $p^{-1}(U)$ 가 $G$ 동변 위상동형으로 $U \times G$ 와 같다는 뜻이다. 랭크 $r$ 벡터다발의 기저 전체를 모은 틀다발이 주 $\mathrm{GL}\_r$ 다발이고, 이 대응으로 벡터다발과 주 $\mathrm{GL}\_r$ 다발이 같은 것을 센다. 원을 두 번 감는 사상 $S^1\to S^1$, $z\mapsto z^2$ 은 $\mathbb Z/2=\lbrace\pm1\rbrace$ 가 $z\mapsto -z$ 로 작용하는 주 $\mathbb Z/2$ 다발이고, 개요의 Möbius 띠에 대응한다.
 
 ## 보편 다발과 분류공간
 
-$EG$ 가 수축가능하고 $G$ 가 자유롭게 작용하는 공간일 때, 주다발 $EG \to EG/G$ 를 **보편 다발**, 밑공간 $BG = EG/G$ 를 $G$ 의 **분류공간**이라 한다.
+$EG$ 가 수축가능하고 $G$ 가 자유롭게 작용하는 공간일 때, 주다발 $EG \to EG/G$ 를 **보편 다발(universal bundle)**, 밑공간 $BG = EG/G$ 를 $G$ 의 **분류공간** 이라 한다.
 
-**정리(Milnor)**[^1]**.** 모든 위상군 $G$ 에 대해 $EG$ 가 존재한다.
+$\mathbb Z$ 가 $\mathbb R$ 에 평행이동으로 작용하면 $\mathbb R$ 이 수축가능하므로 $E\mathbb Z=\mathbb R$ 이고 $B\mathbb Z=\mathbb R/\mathbb Z=S^1$ 이다. $\mathbb Z/2$ 가 무한차원 구면 $S^\infty$ 에 대척사상으로 작용하면 $S^\infty$ 가 수축가능하므로 $B(\mathbb Z/2)=\mathbb{RP}^\infty$ 다.
+
+Milnor 는 모든 위상군 $G$ 에 대해 $EG$ 가 존재함을 증명했다[^1].
 
 $G$ 의 사본을 무한히 많이 결합한 $G \ast G \ast \dots$ 가 수축가능하고 대각 작용이 자유롭다. ∎
 
@@ -34,7 +32,7 @@ $EG$ 는 호모토피 동치를 빼고 유일하므로 $BG$ 도 그렇다.
 
 ## 분류 정리
 
-**정리**[^2]**.** $X$ 가 파라콤팩트이면 $\lbrack X, BG\rbrack \to \mathrm{Prin}\_G(X)$, $f \mapsto f^\ast EG$ 가 전단사다.
+분류 정리(classification theorem)는 $X$ 가 파라콤팩트이면 $\lbrack X, BG\rbrack \to \mathrm{Prin}\_G(X)$, $f \mapsto f^\ast EG$ 가 전단사라는 정리다[^2]. 여기서 $\mathrm{Prin}\_G(X)$ 는 $X$ 위의 주 $G$ 다발의 동형류 집합이다. 원 위의 주 $\mathbb Z/2$ 다발은 $\lbrack S^1,\mathbb{RP}^\infty\rbrack\cong H^1(S^1;\mathbb Z/2)\cong\mathbb Z/2$ 로 두 가지이고, 자명한 이중 덮개와 위의 $z\mapsto z^2$ 이다.
 
 전사성은 $X$ 위의 주다발 $P$ 에서 $G$ 동변 사상 $P \to EG$ 를 만들어 얻고, 단사성은 $X \times \lbrack 0,1\rbrack$ 위의 다발이 두 끝에서 같은 제한을 가지면 전체가 당김임을 쓴다. 두 단계 모두 $EG$ 의 수축가능성에서 나온다. ∎
 
@@ -52,11 +50,11 @@ $EG$ 는 호모토피 동치를 빼고 유일하므로 $BG$ 도 그렇다.
 
 ## 특성류의 보편성
 
-**정리**[^3]**.** $H^\ast(BU(n);\mathbb Z) = \mathbb Z\lbrack c\_1,\dots,c\_n\rbrack$ 이고 $H^\ast(BO(n);\mathbb F\_2) = \mathbb F\_2\lbrack w\_1,\dots,w\_n\rbrack$ 이다. 여기서 $\deg c\_i = 2i$, $\deg w\_i = i$ 다.
+분류공간의 [코호몰로지](cohomology.md)는 [다항식환](polynomial-rings.md)이다[^3]. $H^\ast(BU(n);\mathbb Z) = \mathbb Z\lbrack c\_1,\dots,c\_n\rbrack$ 이고 $H^\ast(BO(n);\mathbb F\_2) = \mathbb F\_2\lbrack w\_1,\dots,w\_n\rbrack$ 이다. 여기서 $\deg c\_i = 2i$, $\deg w\_i = i$ 다.
 
-$\mathrm{Gr}\_n$ 의 Schubert 세포 분할로 코호몰로지를 계산하고, 분할 원리로 생성원이 기본 대칭식임을 확인한다. ∎
+$\mathrm{Gr}\_n$ 의 Schubert 세포 분할(Schubert cell decomposition)로 코호몰로지를 계산하고, 분할 원리(splitting principle)로 생성원이 기본 대칭식임을 확인한다. ∎
 
-랭크 $n$ 복소다발의 특성류, 곧 동형에 불변이고 당김과 교환하는 코호몰로지류의 배정은 전부 $H^\ast(BU(n))$ 의 원소를 당긴 것이다. 분류 정리가 다발을 사상으로 바꾸므로 그 배정이 $BU(n)$ 위에서 무엇을 주는지만 정하면 된다.
+랭크 $n$ 복소다발의 [특성류](characteristic-classes.md)(characteristic class), 곧 동형에 불변이고 당김과 교환하는 코호몰로지류의 배정은 전부 $H^\ast(BU(n))$ 의 원소를 당긴 것이다. 분류 정리가 다발을 사상으로 바꾸므로 그 배정이 $BU(n)$ 위에서 무엇을 주는지만 정하면 된다.
 
 ## 군 코호몰로지와의 일치
 
