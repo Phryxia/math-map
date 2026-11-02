@@ -8,17 +8,15 @@
 
 미지수가 둘이고 측정이 하나인 계 $x\_1+2x\_2=2$ 를 본다. 해는 직선 전체이므로 하나를 고르는 기준이 필요하다. 길이가 가장 짧은 해를 고르면 원점에서 직선에 내린 수선의 발 $(2/5,4/5)$ 이고 두 성분이 모두 $0$ 이 아니다.
 
-복원하려는 $x$ 가 성분 하나만 $0$ 이 아닌 벡터라는 것을 알고 있다면 이 답은 틀렸다. 직선 위에서 성분 하나가 $0$ 인 점은 $(2,0)$ 과 $(0,1)$ 둘인데 길이를 재는 기준은 둘 중 어느 것도 고르지 않는다. 길이가 같은 점을 모은 원이 매끄러워서 직선과 처음 닿는 자리가 좌표축을 비껴가기 때문이다.
+복원하려는 $x$ 가 성분 하나만 $0$ 이 아닌 벡터라는 것을 알고 있다면 이 답은 틀렸다. 직선 위에서 성분 하나가 $0$ 인 점은 $(2,0)$ 과 $(0,1)$ 둘인데 길이를 재는 기준은 둘 중 어느 것도 고르지 않는다. 길이가 같은 점을 모은 원은 매끄러워서, 원을 키울 때 직선과 처음 닿는 자리가 좌표축 위에 있지 않다.
 
 처음 닿는 자리를 좌표축으로 끌어오려면 닿는 집합의 모서리를 좌표축에 놓아야 한다. $\vert x\_1\vert+\vert x\_2\vert$ 가 일정한 점을 모으면 꼭짓점이 좌표축에 있는 정사각형이고, 이것을 원점에서 키우면 꼭짓점이 직선에 먼저 닿는다. 직선 위에서 이 값을 재면 $(2,0)$ 에서 $2$, $(0,1)$ 에서 $1$ 이므로 최소는 $(0,1)$ 이고 성분 하나가 $0$ 인 해가 나온다.
 
-차원이 커져도 같은 일이 일어난다. 성분의 절댓값을 더한 값이 일정한 집합은 꼭짓점이 좌표축 위에 있고 그 꼭짓점이 성분 하나만 $0$ 이 아닌 벡터다. 그러면 남는 물음은 이 최소화의 답이 복원하려는 희소 벡터와 언제 같은지다.
-
-해가 무한히 많은 계에서 $0$ 이 아닌 성분의 개수를 최소화하는 문제는 계산이 어렵고, 그 자리에 $\ell\_1$ 노름 최소화를 놓으면 볼록 문제가 된다. 측정 [행렬](matrices.md)이 제한 등거리 성질을 만족하면 두 문제의 해가 일치한다.
+차원이 커져도 같은 일이 일어난다. 성분의 절댓값을 더한 값이 일정한 집합은 꼭짓점이 좌표축 위에 있고 그 꼭짓점이 성분 하나만 $0$ 이 아닌 벡터다. 남는 물음은 이 최소화의 답이 복원하려는 희소 벡터와 언제 같은지다.
 
 # 정의
 
-압축 센싱은 $m\lt n$ 인 측정 $b=Ax$ 에서 희소한 $x$ 를 복원하는 문제다. $A$ 는 $m\times n$ 측정 행렬이고, $x\in\mathbb R^n$ 의 $0$ 이 아닌 성분이 $k$ 개 이하일 때 $x$ 를 $k$-희소라 한다.
+**압축 센싱** 은 $m\lt n$ 인 측정 $b=Ax$ 에서 희소한 $x$ 를 복원하는 문제다. $A$ 는 $m\times n$ 측정 [행렬](matrices.md)이고, $x\in\mathbb R^n$ 의 $0$ 이 아닌 성분이 $k$ 개 이하일 때 $x$ 를 **$k$-희소($k$-sparse)** 라 한다. 직관 절은 $m=1$, $n=2$, $A=(1\thickspace 2)$, $b=2$ 인 경우이고, $(0,1)$ 과 $(2,0)$ 이 $1$-희소 해다.
 
 ## 두 최소화 문제
 
@@ -28,21 +26,21 @@ $$\min\_{x}\thinspace\Vert x\Vert\_0\quad\text{subject to}\quad Ax=b,$$
 
 $$\min\_{x}\thinspace\Vert x\Vert\_1\quad\text{subject to}\quad Ax=b$$
 
-다. $\Vert x\Vert\_0$ 은 $0$ 이 아닌 성분의 개수이고 $\Vert x\Vert\_1=\sum\_{i}\vert x\_i\vert$ 다. 앞의 문제는 [NP](np-completeness.md)(nondeterministic polynomial time)-난해이고,[^1] 뒤의 문제는 $\ell\_1$ 노름이 [볼록](convexity.md)이므로 볼록 문제이며 기저 추구라 부른다.
+다. $\Vert x\Vert\_0$ 은 $0$ 이 아닌 성분의 개수이고 $\Vert x\Vert\_1=\sum\_{i}\vert x\_i\vert$ 다. 앞의 문제는 [NP](np-completeness.md)(nondeterministic polynomial time)-난해이고,[^1] 뒤의 문제는 $\ell\_1$ 노름이 [볼록](convexity.md)이므로 볼록 문제이고, **기저 추구(basis pursuit)** 라 부른다. 직관 절에서 기저 추구의 해는 $\ell\_1$ 노름이 $1$ 인 $(0,1)$ 이고, $\ell\_0$ 최소화의 해는 $(0,1)$ 과 $(2,0)$ 둘이다.
 
 측정에 잡음이 섞이면 등식 제약을 벌점으로 바꾼다. $\lambda\gt 0$ 에서
 
 $$\min\_{x}\thinspace\tfrac12\Vert Ax-b\Vert\_2^2+\lambda\Vert x\Vert\_1$$
 
-의 해를 **LASSO**(least absolute shrinkage and selection operator) 추정량이라 한다. 이것은 [선형회귀](linear-regression.md)의 제곱오차에 $\ell\_1$ 벌점을 더한 것이다.
+의 해를 **LASSO(least absolute shrinkage and selection operator) 추정량** 이라 한다. 이것은 [선형회귀](linear-regression.md)의 제곱오차에 $\ell\_1$ 벌점을 더한 것이다.
 
 ## 제한 등거리 성질
 
-$A$ 가 차수 $k$ 에서 상수 $\delta\_k$ 의 **제한 등거리 성질**(restricted isometry property, RIP)을 만족한다는 것은 모든 $k$-희소 $x$ 에서
+$A$ 가 차수 $k$ 에서 상수 $\delta\_k$ 의 **제한 등거리 성질(restricted isometry property, RIP)** 을 만족한다는 것은 모든 $k$-희소 $x$ 에서
 
 $$(1-\delta\_k)\Vert x\Vert\_2^2\le\Vert Ax\Vert\_2^2\le(1+\delta\_k)\Vert x\Vert\_2^2$$
 
-이 성립한다는 것이다. 희소 벡터로 제한하면 $A$ 가 길이를 거의 보존한다는 뜻이다.
+이 성립한다는 것이다. 희소 벡터로 제한하면 $A$ 가 길이를 거의 보존한다는 뜻이다. $A=(1\thickspace 2)$ 는 $1$-희소 벡터 $e\_1$, $e\_2$ 의 길이 제곱을 $1$ 배와 $4$ 배로 바꾸므로 $\delta\_1=3$ 이 가장 작은 상수다.
 
 # 성질
 
@@ -54,13 +52,13 @@ $A$ 의 열 가운데 임의의 $2k$ 개가 선형독립이면 $k$-희소해는 
 
 $\delta\_{2k}\lt\sqrt 2-1$ 이면 $k$-희소해가 있을 때 기저 추구의 해가 그것과 같다.[^2]
 
-증명의 요지. 기저 추구의 해를 $x+h$ 라 하면 $Ah=0$ 이고 $\Vert x+h\Vert\_1\le\Vert x\Vert\_1$ 이다. $x$ 의 지지집합 $T$ 와 그 밖에서 $\ell\_1$ 노름을 나누면 $\Vert h\_{T^c}\Vert\_1\le\Vert h\_T\Vert\_1$ 이 나온다. 한편 $h\_{T^c}$ 를 크기 $k$ 의 조각으로 잘라 제한 등거리 성질을 쓰면 $\Vert h\_T\Vert\_2$ 가 $\Vert h\_{T^c}\Vert\_1$ 의 상수배 이하로 묶이고, 두 부등식을 합치면 $\delta\_{2k}$ 가 위 문턱보다 작을 때 $h=0$ 이 된다.
+증명의 요지는 다음과 같다. 기저 추구의 해를 $x+h$ 라 하면 $Ah=0$ 이고 $\Vert x+h\Vert\_1\le\Vert x\Vert\_1$ 이다. $x$ 의 지지집합 $T$ 와 그 밖에서 $\ell\_1$ 노름을 나누면 $\Vert h\_{T^c}\Vert\_1\le\Vert h\_T\Vert\_1$ 이 나온다. 한편 $h\_{T^c}$ 를 크기 $k$ 의 조각으로 잘라 제한 등거리 성질을 쓰면 $\Vert h\_T\Vert\_2$ 가 $\Vert h\_{T^c}\Vert\_1$ 의 상수배 이하로 묶이고, 두 부등식을 합치면 $\delta\_{2k}$ 가 위 문턱보다 작을 때 $h=0$ 이 된다.
 
 ## 영공간 성질
 
 $A$ 가 차수 $k$ 의 **영공간 성질(null space property)** 을 만족한다는 것은 $Ah=0$ 인 모든 $h\neq 0$ 과 크기 $k$ 이하인 모든 첨자 집합 $T$ 에서 $\Vert h\_T\Vert\_1\lt\Vert h\_{T^c}\Vert\_1$ 이 성립한다는 것이다. 이것은 모든 $k$-희소 $x$ 가 $b=Ax$ 에서 기저 추구의 유일한 해로 복원되는 것과 동치다.[^4]
 
-증명의 요지. 영공간 성질을 가정하고 $x$ 의 지지집합을 $T$ 라 하면, 다른 해 $x+h$ 에서 $\Vert x+h\Vert\_1\ge\Vert x\Vert\_1-\Vert h\_T\Vert\_1+\Vert h\_{T^c}\Vert\_1\gt\Vert x\Vert\_1$ 이다. 거꾸로 $Ah=0$ 이면 $Ah\_T=A(-h\_{T^c})$ 이므로 $-h\_{T^c}$ 는 $k$-희소 벡터 $h\_T$ 의 측정에 대한 다른 해이고, $h\_T$ 가 유일한 최소해이므로 $\Vert h\_T\Vert\_1\lt\Vert h\_{T^c}\Vert\_1$ 이다.
+증명의 요지는 다음과 같다. 영공간 성질을 가정하고 $x$ 의 지지집합을 $T$ 라 하면, 다른 해 $x+h$ 에서 $\Vert x+h\Vert\_1\ge\Vert x\Vert\_1-\Vert h\_T\Vert\_1+\Vert h\_{T^c}\Vert\_1\gt\Vert x\Vert\_1$ 이다. 거꾸로 $Ah=0$ 이면 $Ah\_T=A(-h\_{T^c})$ 이므로 $-h\_{T^c}$ 는 $k$-희소 벡터 $h\_T$ 의 측정에 대한 다른 해이고, $h\_T$ 가 유일한 최소해이므로 $\Vert h\_T\Vert\_1\lt\Vert h\_{T^c}\Vert\_1$ 이다.
 
 앞 절의 증명은 $\delta\_{2k}\lt\sqrt 2-1$ 에서 영공간 성질이 성립함을 보인 것이다. 역은 성립하지 않는다. 가역행렬 $G$ 를 곱한 $GA$ 는 $A$ 와 영공간이 같아 영공간 성질을 그대로 갖지만, $G$ 가 길이를 크게 바꾸면 제한 등거리 성질은 깨진다.
 
@@ -74,7 +72,7 @@ $$m\ge C\thinspace\delta^{-2}k\log(n/k)$$
 
 ## 연성 문턱
 
-벌점 $\lambda\Vert x\Vert\_1$ 의 근접 연산자는 성분마다 적용되는 연성 문턱
+벌점 $\lambda\Vert x\Vert\_1$ 의 근접 연산자(proximal operator)는 성분마다 적용되는 연성 문턱(soft thresholding)
 
 $$S\_\lambda(u)=\mathrm{sign}(u)\max(\vert u\vert-\lambda,0)$$
 
@@ -85,7 +83,7 @@ $$S\_\lambda(u)=\mathrm{sign}(u)\max(\vert u\vert-\lambda,0)$$
 - LASSO 회귀: 설명변수가 표본보다 많은 자료에서 계수를 추정하면서 $0$ 이 아닌 계수의 집합을 함께 고른다. 벌점 $\lambda$ 가 고르는 변수의 개수를 조절한다.
 - [근접 경사법](proximal-gradient-method.md): 연성 문턱을 근접 단계로 쓰는 반복이 기저 추구와 LASSO 의 표준 알고리즘이다.
 - 자기공명영상(magnetic resonance imaging, MRI): 영상이 웨이블릿 기저에서 희소하다는 것을 써서 측정 횟수를 줄인다.
-- [행렬 완성](matrix-completion.md): 벡터의 희소성 자리에 특잇값의 희소성을 놓고 $\ell\_1$ 노름 자리에 핵노름을 놓으면 같은 구조의 볼록 문제가 된다.
+- [행렬 완성](matrix-completion.md): 벡터의 희소성 자리에 특잇값의 희소성을 놓고 $\ell\_1$ 노름 자리에 핵노름(nuclear norm)을 놓으면 같은 구조의 볼록 문제가 된다.
 
 [^1]: Natarajan, *Sparse approximate solutions to linear systems*, SIAM Journal on Computing 24 (1995), 227–234.
 [^2]: Candès, *The restricted isometry property and its implications for compressed sensing*, Comptes Rendus Mathematique 346 (2008), 589–592.
