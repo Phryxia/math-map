@@ -10,8 +10,6 @@ $\varphi(t)=t^2$ 의 그래프에서 $t=1$ 의 접선은 $1+2(t-1)$ 이다. $t=3
 
 $\varphi(t)=t\log t$ 로 같은 계산을 한다. $t=1$ 의 접선은 $t-1$ 이고, $t=3$ 에서 함숫값 $3\log 3\approx 3.296$ 과 접선의 값 $2$ 의 차이는 약 $1.296$ 이다. 거꾸로 $t=3$ 에서 접선을 긋고 $t=1$ 에서 재면 약 $0.901$ 이다. 그래프가 휘는 정도가 곳마다 다르므로 어느 점에서 접선을 긋는지에 따라 값이 달라진다.
 
-$\varphi(x)=\Vert x\Vert^2$ 이면 제곱 Euclid 거리다. L. M. Bregman 이 1967 년에 볼록집합의 공통점을 찾는 반복에서 이 양을 도입했다[^1]. 대칭이 아니고 삼각부등식을 만족하지 않는다.
-
 # 정의
 
 $\Omega\subseteq\mathbb R^n$ 이 볼록 열린집합이고 $\varphi:\Omega\to\mathbb R$ 가 미분가능한 순볼록 함수일 때
@@ -20,7 +18,9 @@ $$
 D_\varphi(x,y)=\varphi(x)-\varphi(y)-\langle\nabla\varphi(y),\thinspace x-y\rangle
 $$
 
-를 $\varphi$ 의 Bregman divergence 라 한다. $\varphi$ 를 생성함수라 한다.
+를 $\varphi$ 의 **Bregman divergence** 라 하고, $\varphi$ 를 **생성함수(generating function)** 라 한다. L. M. Bregman 이 1967 년에 볼록집합의 공통점을 찾는 반복에서 이 양을 도입했다.[^1]
+
+직관 절의 두 계산은 $n=1$ 에서 $D_{t^2}(3,1)=4$, $D_{t\log t}(3,1)\approx 1.296$, $D_{t\log t}(1,3)\approx 0.901$ 이다.
 
 | 생성함수 | Bregman divergence |
 | --- | --- |
@@ -28,7 +28,7 @@ $$
 | $\sum_ix_i\log x_i$ | $\sum_ix_i\log(x_i/y_i)-\sum_ix_i+\sum_iy_i$ |
 | $-\sum_i\log x_i$ | $\sum_i\bigl(x_i/y_i-\log(x_i/y_i)-1\bigr)$ |
 
-둘째 줄은 확률 벡터에서 KL divergence 이고, 셋째 줄은 Itakura–Saito 거리(Itakura–Saito distance)다.
+첫째 줄은 제곱 Euclid 거리다. 둘째 줄은 $x$, $y$ 가 확률 벡터이면 뒤의 두 합이 상쇄되어 KL divergence 가 되고, $n=1$, $x=3$, $y=1$ 이면 $3\log 3-3+1\approx 1.296$ 이다. 셋째 줄은 Itakura–Saito 거리(Itakura–Saito distance)이고, $x=2$, $y=1$ 이면 $2-\log 2-1\approx 0.307$ 이다.
 
 # 성질
 
@@ -40,27 +40,27 @@ $$
 
 ## 세 점 항등식
 
-정리. 세 점 $x,y,z$ 에 대해 다음이 성립한다.
+세 점 $x,y,z$ 에 대해 다음 세 점 항등식(three-point identity)이 성립한다.
 
 $$
 D_\varphi(x,z)=D_\varphi(x,y)+D_\varphi(y,z)+\langle\nabla\varphi(z)-\nabla\varphi(y),\thinspace y-x\rangle
 $$
 
-정의를 대입해 전개하면 나온다. $\varphi(x)=\Vert x\Vert^2$ 이면 마지막 항이 $2\langle y-z,x-y\rangle$ 가 되어 코사인 법칙이다.
+정의를 대입해 전개하면 나온다. $\varphi(x)=\Vert x\Vert^2$ 이면 마지막 항이 $2\langle y-z,x-y\rangle$ 가 되어 코사인 법칙(law of cosines)이다.
 
 ## 사영과 Pythagoras 부등식
 
-닫힌 볼록집합 $C$ 에 대해 $\Pi_C(y)=\mathop{\mathrm{arg\thinspace min}}\_{x\in C}D_\varphi(x,y)$ 를 Bregman 사영이라 한다.
+닫힌 볼록집합 $C$ 에 대해 $\Pi_C(y)=\mathop{\mathrm{arg\thinspace min}}\_{x\in C}D_\varphi(x,y)$ 를 Bregman 사영(Bregman projection)이라 한다.
 
-정리(Bregman). 모든 $x\in C$ 에 대해 $D_\varphi(x,y)\ge D_\varphi(x,\Pi_C(y))+D_\varphi(\Pi_C(y),y)$ 이다. $C$ 가 아핀집합이면 등호가 성립한다[^1].
+Bregman 은 다음을 증명했다. 모든 $x\in C$ 에 대해 $D_\varphi(x,y)\ge D_\varphi(x,\Pi_C(y))+D_\varphi(\Pi_C(y),y)$ 이다. $C$ 가 아핀집합이면 등호가 성립한다.[^1]
 
-증명의 요지. 최소점 $p=\Pi_C(y)$ 의 최적성 조건은 모든 $x\in C$ 에서 $\langle\nabla\varphi(p)-\nabla\varphi(y),x-p\rangle\ge 0$ 이다. 세 점 항등식에 $z=y$, 가운데 점 $p$ 를 넣으면 남는 항이 이 내적이다.
+증명의 요지는 다음과 같다. 최소점 $p=\Pi_C(y)$ 의 최적성 조건은 모든 $x\in C$ 에서 $\langle\nabla\varphi(p)-\nabla\varphi(y),x-p\rangle\ge 0$ 이다. 세 점 항등식에 $z=y$, 가운데 점 $p$ 를 넣으면 남는 항이 이 내적이다.
 
 ## 평균의 최소성
 
-정리(Banerjee–Guo–Wang). 확률변수 $X$ 가 $\Omega$ 에 값을 갖고 $EX\in\Omega$ 이면 $y\mapsto E\thinspace D_\varphi(X,y)$ 의 유일한 최소점은 $y=EX$ 다. 거꾸로 모든 분포에서 평균이 최소점인 차이 함수는 이 꼴뿐이다[^2].
+Banerjee, Guo, Wang 은 다음을 증명했다. 확률변수 $X$ 가 $\Omega$ 에 값을 갖고 $EX\in\Omega$ 이면 $y\mapsto E\thinspace D_\varphi(X,y)$ 의 유일한 최소점은 $y=EX$ 다. 거꾸로 모든 분포에서 평균이 최소점인 차이 함수는 이 꼴뿐이다.[^2]
 
-증명의 요지. 정의를 대입하면 $E\thinspace D_\varphi(X,y)-E\thinspace D_\varphi(X,EX)=D_\varphi(EX,y)$ 이고, 이것은 $y=EX$ 에서만 $0$ 이다.
+앞부분의 증명은 다음과 같다. 정의를 대입하면 $E\thinspace D_\varphi(X,y)-E\thinspace D_\varphi(X,EX)=D_\varphi(EX,y)$ 이고, 이것은 $y=EX$ 에서만 $0$ 이다.
 
 ## 쌍대
 
@@ -68,8 +68,8 @@ $\varphi$ 의 [볼록 공액](convex-conjugate.md) $\varphi^\ast$ 와 $x^\ast=\n
 
 # 활용
 
-- 거울 하강법(mirror descent). 경사하강의 제곱 거리 벌점을 Bregman divergence 로 바꾼 반복이다. 확률 단체 위에서 음의 엔트로피를 쓰면 [곱셈 가중치 절차](multiplicative-weights.md)의 갱신이 된다[^3].
-- 군집. 평균의 최소성으로 [k 평균 군집화](k-means.md)의 Lloyd 반복이 모든 Bregman divergence 에서 그대로 성립한다[^4].
+- 거울 하강법(mirror descent). 경사하강의 제곱 거리 벌점을 Bregman divergence 로 바꾼 반복이다. 확률 단체 위에서 음의 엔트로피를 쓰면 [곱셈 가중치 절차](multiplicative-weights.md)의 갱신이 된다.[^3]
+- 군집. 평균의 최소성으로 [k 평균 군집화](k-means.md)의 Lloyd 반복이 모든 Bregman divergence 에서 그대로 성립한다.[^4]
 - [행렬](matrices.md) 맞추기. [Sinkhorn 알고리즘](sinkhorn.md)의 각 단계는 아핀집합으로의 KL 사영이고, 등호가 성립하는 Pythagoras 정리로 수렴을 증명한다.
 - 확률 예측의 평가. [적정 점수 규칙](proper-scoring-rules.md)의 기대 초과 손실이 볼록 함수의 Bregman divergence 다.
 - [정보기하](information-geometry.md). 쌍대 평탄 다양체의 표준 divergence 가 Bregman divergence 이다.
