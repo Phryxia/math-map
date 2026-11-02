@@ -2,25 +2,26 @@
 
 # 개요
 
-**분기 이론(bifurcation theory)** 은 방정식의 매개변수를 바꿀 때 해가 어느 값에서 갈라져 나오는지 다루는 이론이다. 방정식 $x^3-\lambda x=0$ 은 $\lambda\le 0$ 이면 해가 $x=0$ 하나이고 $\lambda\gt 0$ 이면 $0,\pm\sqrt\lambda$ 세 개라서, $\lambda=0$ 에서 해 둘이 새로 갈라져 나온다. 해를 $\lambda$ 의 함수로 이어 주는 음함수 정리가 실패하는 자리를 먼저 찾고, 그 가운데 실제로 해가 갈라지는 곳을 판정한다.
+**분기 이론(bifurcation theory)** 은 방정식의 매개변수를 바꿀 때 해가 어느 값에서 갈라져 나오는지 다루는 이론이다. 방정식 $x^3-\lambda x=0$ 은 $\lambda\le 0$ 이면 해가 $x=0$ 하나이고 $\lambda\gt 0$ 이면 $0,\pm\sqrt\lambda$ 세 개라서, $\lambda=0$ 에서 해 둘이 새로 갈라져 나온다. 해를 $\lambda$ 의 함수로 이어 주는 음함수 정리(implicit function theorem)가 실패하는 자리를 먼저 찾고, 그 가운데 실제로 해가 갈라지는 곳을 판정한다.
 
 # 직관
 
-분기 이론은 매개변수 $\lambda$ 를 가진 방정식 $F(\lambda,x)=0$ 의 해가 어느 매개변수 값에서 갈라져 나오는지를 다루는 이론이다. [역함수 정리](inverse-function-theorem.md)의 음함수 정리가 성립하는 자리에서는 해가 갈라지지 않으므로 분기는 그 정리가 실패하는 자리에서만 일어난다. 실패하는 자리 가운데 실제로 해가 갈라지는 곳은 [Leray–Schauder 차수](leray-schauder-degree.md)의 변화로 판정한다.
-
 [실수](real-numbers.md) 방정식 $x^3-\lambda x=0$ 을 본다. $\lambda\le 0$ 이면 해는 $x=0$ 하나이고, $\lambda\gt 0$ 이면 $x=0,\pm\sqrt\lambda$ 세 개다. $\lambda$ 가 $0$ 을 지나는 순간 해 $x=0$ 에서 두 해가 새로 갈라져 나온다.
 
-$x$ 에 대한 도함수는 $3x^2-\lambda$ 이고 $(\lambda,x)=(0,0)$ 에서 $0$ 이다. 도함수가 $0$ 이 아닌 곳에서는 음함수 정리로 해가 $\lambda$ 의 함수 하나로만 이어지므로, 갈라짐이 일어날 수 있는 곳은 도함수가 $0$ 인 곳뿐이다.
+$x$ 에 대한 도함수는 $3x^2-\lambda$ 이고 $(\lambda,x)=(0,0)$ 에서 $0$ 이다. 도함수가 $0$ 이 아닌 곳에서는 [역함수 정리](inverse-function-theorem.md)에서 유도되는 음함수 정리로 해가 $\lambda$ 의 함수 하나로만 이어지므로, 갈라짐이 일어날 수 있는 곳은 도함수가 $0$ 인 곳뿐이다.
 
 도함수가 $0$ 이라고 해가 갈라지는 것은 아니다. $x^3+\lambda^2x=0$ 은 $(0,0)$ 에서 도함수가 $0$ 이지만 모든 $\lambda$ 에서 해가 $x=0$ 하나다. 두 경우를 가르는 것은 해 $x=0$ 에서 함수가 증가하는지 감소하는지다. $x^3-\lambda x$ 는 $\lambda\lt 0$ 이면 $0$ 에서 증가하고 $\lambda\gt 0$ 이면 감소하지만, $x^3+\lambda^2x$ 는 언제나 증가한다.
 
-구간 $\lbrack -1,1\rbrack$ 위의 차수는 영점마다 증가하면 $+1$, 감소하면 $-1$ 을 더한 값이고 $\lambda$ 를 조금 움직여도 바뀌지 않는다. $x^3-\lambda x$ 에서 $x=0$ 의 몫은 $\lambda$ 가 $0$ 을 지날 때 $+1$ 에서 $-1$ 로 바뀐다. 전체가 $+1$ 로 남으려면 $+1$ 을 더하는 영점 두 개가 새로 생겨야 하고, 그것이 $\pm\sqrt\lambda$ 다.
+구간 $\lbrack -1,1\rbrack$ 위의 차수, 곧 [Leray–Schauder 차수](leray-schauder-degree.md)의 1 차원 판은 영점마다 증가하면 $+1$, 감소하면 $-1$ 을 더한 값이고 $\lambda$ 를 조금 움직여도 바뀌지 않는다. $x^3-\lambda x$ 에서 $x=0$ 의 몫은 $\lambda$ 가 $0$ 을 지날 때 $+1$ 에서 $-1$ 로 바뀐다. 전체가 $+1$ 로 남으려면 $+1$ 을 더하는 영점 두 개가 새로 생겨야 하고, 그것이 $\pm\sqrt\lambda$ 다.
 
 # 정의
 
-$X$ 를 [Banach 공간](banach-spaces.md), $F\colon\mathbb R\times X\to X$ 를 연속사상이라 하고 모든 $\lambda$ 에서 $F(\lambda,0)=0$ 이라 하자. $\lbrace(\lambda,0)\rbrace$ 를 자명한 해의 가지(trivial branch)라 한다.
+$X$ 를 [Banach 공간](banach-spaces.md), $F\colon\mathbb R\times X\to X$ 를 연속사상이라 하고 모든 $\lambda$ 에서 $F(\lambda,0)=0$ 이라 하자. $\lbrace(\lambda,0)\rbrace$ 를 **자명한 해의 가지(trivial branch)** 라 한다.
 
 $(\lambda_0,0)$ 의 모든 근방에 $x\ne 0$ 이고 $F(\lambda,x)=0$ 인 $(\lambda,x)$ 가 있으면 $(\lambda_0,0)$ 을 **분기점(bifurcation point)** 이라 한다.
+
+- $X=\mathbb R$, $F(\lambda,x)=x^3-\lambda x$ 이면 자명한 해의 가지는 $x=0$ 이다. $(0,0)$ 의 근방에는 $\lambda\gt 0$ 일 때 해 $(\lambda,\pm\sqrt\lambda)$ 가 있으므로 $(0,0)$ 은 분기점이다. $\lambda_0\ne 0$ 인 $(\lambda_0,0)$ 은 근처의 $0$ 이 아닌 해가 $\vert x\vert$ 가 $\sqrt{\vert\lambda_0\vert}$ 근처인 것뿐이어서 분기점이 아니다.
+- $F(\lambda,x)=x^3+\lambda^2x$ 는 $0$ 이 아닌 해가 없으므로 분기점이 없다.
 
 ## 특성값
 
@@ -32,6 +33,8 @@ $$
 
 $L\colon X\to X$ 는 콤팩트 선형작용소이고, $N$ 은 콤팩트 사상이며 $\Vert x\Vert\to 0$ 일 때 $\lambda$ 에 대해 균등하게 $N(\lambda,x)=o(\Vert x\Vert)$ 이다. $x=\lambda Lx$ 가 $0$ 이 아닌 해를 가지는 $\lambda$ 를 $L$ 의 **특성값(characteristic value)** 이라 한다. 특성값은 $L$ 의 $0$ 이 아닌 고윳값의 역수다.
 
+- $X=\mathbb R^2$, $L=\mathrm{diag}(1,1/2)$ 이면 $x=\lambda Lx$ 는 $\lambda=1$ 에서 $x=(1,0)$, $\lambda=2$ 에서 $x=(0,1)$ 을 해로 가지므로 특성값은 $1$ 과 $2$ 다. 두 특성값의 대수적 중복도(algebraic multiplicity), 곧 $I-\lambda L$ 의 일반화된 핵의 차원은 모두 $1$ 이다.
+
 # 성질
 
 ## 분기의 필요조건
@@ -40,7 +43,7 @@ $D_xF(\lambda_0,0)$ 이 가역이면 $(\lambda_0,0)$ 은 분기점이 아니다.
 
 ## Krasnosel'skii 정리
 
-$\lambda_0$ 이 홀수 대수적 중복도(algebraic multiplicity)를 가진 특성값이면 $(\lambda_0,0)$ 은 분기점이다[^1].
+Krasnosel'skii 정리(Krasnosel'skii's theorem)에 따르면, $\lambda_0$ 이 홀수 대수적 중복도를 가진 특성값이면 $(\lambda_0,0)$ 은 분기점이다[^1].
 
 증명의 요지는 직관 절의 계산과 같다. $\lambda$ 가 특성값이 아니면 작은 공 위에서 $I-\lambda L$ 의 Leray–Schauder 차수는 $(-1)^{\beta(\lambda)}$ 이고, $\beta(\lambda)$ 는 $0$ 과 $\lambda$ 사이에 있는 특성값의 대수적 중복도의 합이다. $N$ 이 높은 차수의 항이므로 작은 공 위에서 $F(\lambda,\cdot)$ 의 차수도 같다. $\lambda$ 가 $\lambda_0$ 을 지나면 $\beta$ 가 홀수만큼 바뀌어 차수의 부호가 바뀐다. 분기가 없다면 작은 공의 경계에 해가 없어 호모토피 불변성으로 차수가 일정해야 하므로 모순이다.
 
@@ -48,7 +51,7 @@ $\lambda_0$ 이 홀수 대수적 중복도(algebraic multiplicity)를 가진 특
 
 ## Rabinowitz 전역 분기 정리
 
-같은 가정에서 $0$ 이 아닌 해 전체의 폐포 가운데 $(\lambda_0,0)$ 을 포함하는 연결성분 $\mathcal C$ 는 다음 둘 가운데 하나를 만족한다[^2].
+Rabinowitz 전역 분기 정리(Rabinowitz global bifurcation theorem)에 따르면, 같은 가정에서 $0$ 이 아닌 해 전체의 폐포 가운데 $(\lambda_0,0)$ 을 포함하는 연결성분 $\mathcal C$ 는 다음 둘 가운데 하나를 만족한다[^2].
 
 - $\mathcal C$ 는 $\mathbb R\times X$ 에서 유계가 아니다.
 - $\mathcal C$ 는 $\lambda_0$ 과 다른 특성값 $\hat\lambda$ 에 대해 $(\hat\lambda,0)$ 을 포함한다.
@@ -57,7 +60,7 @@ Krasnosel'skii 정리가 분기점 근처의 해만 말하는 데 비해, 이 �
 
 ## Crandall–Rabinowitz 정리
 
-$F$ 가 $C^2$ 이고 $D_xF(\lambda_0,0)$ 의 핵이 $v_0$ 이 생성하는 1 차원 공간, 치역이 여차원 $1$ 이라 하자. 횡단 조건(transversality condition) $D_\lambda D_xF(\lambda_0,0)v_0\notin\mathrm{ran}\thinspace D_xF(\lambda_0,0)$ 이 성립하면, $(\lambda_0,0)$ 근방의 $0$ 이 아닌 해는 한 연속 곡선
+Crandall–Rabinowitz 정리(Crandall–Rabinowitz theorem)는 다음과 같다. $F$ 가 $C^2$ 이고 $D_xF(\lambda_0,0)$ 의 핵이 $v_0$ 이 생성하는 1 차원 공간, 치역이 여차원 $1$ 이라 하자. 횡단 조건(transversality condition) $D_\lambda D_xF(\lambda_0,0)v_0\notin\mathrm{ran}\thinspace D_xF(\lambda_0,0)$ 이 성립하면, $(\lambda_0,0)$ 근방의 $0$ 이 아닌 해는 한 연속 곡선
 
 $$
 s\mapsto(\lambda(s),\thinspace sv_0+o(s)),\qquad\lambda(0)=\lambda_0
