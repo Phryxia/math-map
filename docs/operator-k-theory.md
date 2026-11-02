@@ -58,7 +58,7 @@ $U_\infty(A)\_0$ 은 단위원을 포함하는 경로연결 성분이다. 곱은
 | $C(S^1)$ | $\mathbb Z$ | $\mathbb Z$ |
 | $C(S^2)$ | $\mathbb Z^2$ | $0$ |
 
-$M_n(\mathbb C)$ 과 $\mathcal K(H)$ 에서 사영의 류는 계수로 정해진다. 무한차원 $\mathcal B(H)$ 에서는 $I\sim I\oplus I$ 이므로 $\lbrack I\rbrack=2\lbrack I\rbrack$ 이고 모든 류가 $0$ 이 된다. $C(S^1)$ 의 $K_1$ 은 원에서 $\mathbb C^\times$ 로 가는 함수의 감음수(winding number)가 분류한다.
+$M_n(\mathbb C)$ 과 $\mathcal K(H)$ 에서 사영의 류는 계수로 정해진다. 무한차원 $\mathcal B(H)$ 에서는 $I\sim I\oplus I$ 이므로 $\lbrack I\rbrack=2\lbrack I\rbrack$ 이고 모든 류가 $0$ 이 된다. $C(S^1)$ 의 $K_1$ 은 원에서 $\mathbb C^\times$ 로 가는 함수의 감김수(winding number)가 분류한다.
 
 # 성질
 

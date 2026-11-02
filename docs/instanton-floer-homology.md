@@ -33,7 +33,7 @@ $$
 | Morse 지표 | 스펙트럼 흐름 (mod 8) |
 | $\chi=$ Euler 지표 | $\chi=2\lambda(\Sigma)$ |
 
-Chern–Simons 범함수는 게이지 변환으로 값이 정수만큼 옮겨가므로 $\mathcal A/\mathcal G$ 위에서 잘 정의되는 것은 $\mathbb R/\mathbb Z$ 값 함수뿐이고, 절대적인 높이가 없으니 두 임계점 사이의 상대 지표만 남는다. 감음수 1 짜리 게이지 변환을 걸면 관련된 미분작용소의 지표가 8 만큼 바뀌므로 상대 등급이 $\mathbb Z/8$ 값이고, Floer 군은 $HF_0,\dots,HF_7$ 여덟 개로 끝난다. 이 8 은 Chern–Simons 레벨의 정수성과 같은 $\pi_3(\mathrm{SU}(2))=\mathbb Z$ 에서 온다.
+Chern–Simons 범함수는 게이지 변환으로 값이 정수만큼 옮겨가므로 $\mathcal A/\mathcal G$ 위에서 잘 정의되는 것은 $\mathbb R/\mathbb Z$ 값 함수뿐이고, 절대적인 높이가 없으니 두 임계점 사이의 상대 지표만 남는다. 감김수 1 짜리 게이지 변환을 걸면 관련된 미분작용소의 지표가 8 만큼 바뀌므로 상대 등급이 $\mathbb Z/8$ 값이고, Floer 군은 $HF_0,\dots,HF_7$ 여덟 개로 끝난다. 이 8 은 Chern–Simons 레벨의 정수성과 같은 $\pi_3(\mathrm{SU}(2))=\mathbb Z$ 에서 온다.
 
 # 정의
 
@@ -49,7 +49,7 @@ $$
 \mathrm{CS}(g\cdot A)=\mathrm{CS}(A)+\deg g,\qquad \deg g\in\mathbb Z
 $$
 
-게이지 변환이 값을 정수만큼 옮기므로 $\mathcal A/\mathcal G$ 위에서는 $\mathbb R/\mathbb Z$ 값 함수로만 정의된다. $\mathrm{SU}(2)$ 수반 다발에 대한 반자기쌍대 연산자의 지표는 순간자 수 $k$ 에 대해 $8k-3(1+b^+)$ 꼴이고, 감음수 1 의 게이지 변환이 이 지표를 8 만큼 바꾼다.
+게이지 변환이 값을 정수만큼 옮기므로 $\mathcal A/\mathcal G$ 위에서는 $\mathbb R/\mathbb Z$ 값 함수로만 정의된다. $\mathrm{SU}(2)$ 수반 다발에 대한 반자기쌍대 연산자의 지표는 순간자 수 $k$ 에 대해 $8k-3(1+b^+)$ 꼴이고, 감김수 1 의 게이지 변환이 이 지표를 8 만큼 바꾼다.
 
 ## 사슬복체
 
