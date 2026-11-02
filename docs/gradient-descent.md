@@ -2,13 +2,9 @@
 
 # 개요
 
-**경사하강법(gradient descent)** 은 함수가 가장 빨리 줄어드는 방향으로 조금씩 움직이기를 되풀이해 최솟점을 찾는 방법이다. 안개 낀 산에서 골짜기로 내려가려는 사람은 지도 없이 발밑의 기울기만 느낄 수 있다. 가장 가파르게 내려가는 쪽으로 한 걸음 옮기고 그 자리에서 다시 기울기를 재면, 함수의 식을 풀지 않고도 낮은 곳에 다가간다. 경사하강법은 이 걸음을 기울기 벡터로 계산하고, 걸음의 크기와 함수의 굽은 정도로 몇 걸음 만에 얼마나 가까워지는지를 정한다.
+**경사하강법(gradient descent)** 은 함수가 가장 빨리 줄어드는 방향으로 조금씩 움직이기를 되풀이해 최솟점을 찾는 방법이다. 함수 $f(x)=x^2+\log(1+e^{x})$ 의 최솟점은 도함수가 $0$ 인 점이지만, 그 방정식은 $x$ 에 대해 식으로 풀리지 않는다. 경사하강법은 한 점에서 출발해 기울기의 반대쪽으로 조금 옮기고 그 자리에서 다시 기울기를 재기를 되풀이해, 방정식을 풀지 않고 최솟점에 다가간다.
 
 # 직관
-
-경사하강법은 미분가능한 목적함수를 기울기의 반대 방향으로 이동하며 최소화하는 1 차 반복법이다. 한 단계가 기울기 한 번 계산과 벡터 덧셈이므로 차원이 큰 문제에서도 쓴다.
-
-수렴 속도는 목적함수의 곡률 조건이 정한다. 기울기가 $L$ -Lipschitz 인 볼록 함수에서는 함숫값 오차가 반복 횟수의 역수로 줄고, 강볼록성을 더하면 기하급수적으로 줄어든다. 확률적 변형인 SGD(stochastic gradient descent)가 기계학습 학습 알고리즘의 기본 형태다.
 
 미분가능한 $f$ 의 최솟값을 찾는 방법은 $\nabla f(x)=0$ 을 푸는 것이다. $f(x)=x^2-3x$ 이면 $2x-3=0$ 이라 $x=3/2$ 가 나온다. 그런데 $f(x)=x^2+\log(1+e^{x})$ 에서는 방정식이 다음과 같다.
 
@@ -20,27 +16,31 @@ $x$ 를 한쪽으로 모으면 다른 쪽에 $e^{x}$ 가 남아 일차항과 지
 
 # 정의
 
-$f$ 를 $\mathbb{R}^n$ 에서 정의된 미분가능 함수라 한다. 고정 학습률 $\eta\gt 0$ 에 대한 경사하강법은 다음 점화식이다.
+고정 **학습률(learning rate)** $\eta\gt 0$ 에 대한 경사하강법은 $\mathbb{R}^n$ 에서 정의된 미분가능 함수 $f$ 와 출발점 $x_0$ 에 대한 다음 점화식이다.
 
 $$
 x_{k+1}=x_k-\eta\thinspace\nabla f(x_k),\qquad k=0,1,2,\dots
 $$
 
-정지 조건은 $\Vert\nabla f(x_k)\Vert$ 가 허용오차 아래로 내려가는 것이고, 그때 $x_k$ 는 근사 정류점이다.
+**정류점(stationary point)** 은 $\nabla f(x)=0$ 인 점이다. 정지 조건은 $\Vert\nabla f(x_k)\Vert$ 가 허용오차 아래로 내려가는 것이고, 그때 $x_k$ 는 근사 정류점이다.
 
-$f$ 의 기울기가 $L$ -Lipschitz 인 것, 곧 $f$ 가 $L$ -smooth 인 것은 다음을 뜻한다.
+직관 절의 $f(x)=x^2+\log(1+e^{x})$ 에서 $f'(x)=2x+e^{x}/(1+e^{x})$ 이다. $x_0=0$, $\eta=0.4$ 이면 $f'(0)=0.5$ 이므로 $x_1=-0.2$ 이고, $f'(-0.2)\approx 0.0502$ 이므로 $x_2\approx-0.2201$ 이다. 기울기가 걸음마다 약 $1/10$ 로 줄고, 반복점은 정류점 $x^\star\approx-0.2223$ 에 다가간다.
+
+$f$ 가 **L-smooth** 라는 것은 기울기가 $L$ -Lipschitz 라는 것, 곧 다음이 성립한다는 것이다.
 
 $$
 \left\lVert \nabla f(x)-\nabla f(y)\right\rVert\le L\left\lVert x-y\right\rVert\quad(\forall x,y)
 $$
 
-$f$ 가 $\mu$ 강볼록($\mu\gt 0$ )이라는 것은 $f(x)-\frac{\mu}{2}\Vert x\Vert^2$ 이 볼록하다는 뜻이다. 다음 부등식과 동치다.
+$f$ 가 $\mu$ **강볼록(strongly convex)** ($\mu\gt 0$ )이라는 것은 $f(x)-\frac{\mu}{2}\Vert x\Vert^2$ 이 볼록하다는 뜻이다. 미분가능한 $f$ 에서는 다음 부등식과 동치다.
 
 $$
 f(y)\thinspace \ge\thinspace f(x)+\nabla f(x)^\top (y-x)+\frac{\mu}{2}\left\lVert y-x\right\rVert^2\quad(\forall x,y)
 $$
 
-두 번 미분가능하면 두 조건은 [Hessian](hessian.md) 의 스펙트럼 조건 $\mu I\preceq\nabla^2f(x)\preceq LI$ 와 같다. 조건수를 $\kappa=L/\mu$ 로 정의하고 최솟값을 $f^\star$ , 최소점을 $x^\star$ 로 쓴다.
+두 번 미분가능하면 두 조건은 [Hessian](hessian.md) 의 스펙트럼 조건 $\mu I\preceq\nabla^2f(x)\preceq LI$ 와 같다. **조건수(condition number)** 는 $\kappa=L/\mu$ 이고, 최솟값을 $f^\star$ , 최소점을 $x^\star$ 로 쓴다.
+
+직관 절의 $f$ 에서 $s(x)=e^{x}/(1+e^{x})$ 로 두면 $f''(x)=2+s(x)(1-s(x))$ 이고 $0\lt s(1-s)\le 1/4$ 이다. 그래서 $f$ 는 $L=9/4$ 로 L-smooth 이고 $\mu=2$ 로 강볼록이며, $\kappa=9/8$ 이다. 위 예의 $\eta=0.4$ 는 $1/L=4/9$ 보다 조금 작다.
 
 # 성질
 
@@ -76,17 +76,17 @@ $$
 
 ## 엄격 안장점 성질
 
-정류점 가운데 어느 것에 머무는지를 Hessian 으로 가른다. $\nabla f(x)=0$ 인 점 $x$ 마다 $\nabla^2f(x)$ 가 양정부호이거나 $\lambda\_{\min}(\nabla^2f(x))\lt 0$ 일 때 $f$ 가 **엄격 안장점 성질**(strict saddle property)을 갖는다고 한다. 반양정부호이면서 특이한 정류점이 없다는 조건이다.
+정류점 가운데 어느 것에 머무는지를 Hessian 으로 가른다. $\nabla f(x)=0$ 인 점 $x$ 마다 $\nabla^2f(x)$ 가 양정부호이거나 $\lambda\_{\min}(\nabla^2f(x))\lt 0$ 일 때 $f$ 가 **엄격 안장점 성질(strict saddle property)** 을 갖는다고 한다. 반양정부호이면서 특이한 정류점이 없다는 조건이다.
 
-**정리.** $f$ 가 $L$ -smooth 이고 엄격 안장점 성질을 가지며 $\eta\lt 1/L$ 이면, 무작위로 고른 초기점에서 시작한 경사하강법이 엄격 안장점으로 수렴할 확률이 $0$ 이다.[^3]
+정리. $f$ 가 $L$ -smooth 이고 엄격 안장점 성질을 가지며 $\eta\lt 1/L$ 이면, 무작위로 고른 초기점에서 시작한 경사하강법이 엄격 안장점으로 수렴할 확률이 $0$ 이다[^3].
 
-증명의 요지. 걸음 사상 $x\mapsto x-\eta\nabla f(x)$ 는 $\eta\lt 1/L$ 에서 미분동형이다. 엄격 안장점 $x^\ast$ 로 수렴하는 초기점 전체는 $x^\ast$ 에서 음의 고윳값 방향을 뺀 안정 다양체에 들어가고 그 차원이 정의역보다 낮아 Lebesgue 측도가 $0$ 이다. 미분동형의 역상이 측도 $0$ 을 보존하므로 유한 번 거꾸로 올라간 집합도 측도 $0$ 이다. $\square$
+증명의 요지. 걸음 사상 $x\mapsto x-\eta\nabla f(x)$ 는 $\eta\lt 1/L$ 에서 미분동형이다. 엄격 안장점 $x^\ast$ 로 수렴하는 초기점 전체는 $x^\ast$ 에서 음의 고윳값 방향을 뺀 안정 다양체에 들어가고 그 차원이 정의역보다 낮아 Lebesgue 측도가 $0$ 이다. 미분동형의 역상이 측도 $0$ 을 보존하므로 유한 번 거꾸로 올라간 집합도 측도 $0$ 이다.
 
 확률 $0$ 은 수렴 속도를 말하지 않는다. 안장점 근방에서 기울기가 작아 걸음이 느려지고, 탈출에 걸리는 반복 횟수가 차원에 지수적으로 커지는 함수를 만들 수 있다. 기울기에 작은 무작위 섭동을 더하면 이 지연이 사라진다.
 
-**정리.** $f$ 가 $L$ -smooth 이고 Hessian 이 $\rho$ -Lipschitz 이면, 섭동을 더한 경사하강법이 $\Vert\nabla f(x)\Vert\le\varepsilon$ 과 $\lambda\_{\min}(\nabla^2f(x))\ge-\sqrt{\rho\varepsilon}$ 을 만족하는 점에 $\varepsilon^{-2}$ 의 로그 배수 번 반복으로 도달한다.[^4]
+정리. $f$ 가 $L$ -smooth 이고 Hessian 이 $\rho$ -Lipschitz 이면, 섭동을 더한 경사하강법이 $\Vert\nabla f(x)\Vert\le\varepsilon$ 과 $\lambda\_{\min}(\nabla^2f(x))\ge-\sqrt{\rho\varepsilon}$ 을 만족하는 점에 $\varepsilon^{-2}$ 의 로그 배수 번 반복으로 도달한다[^4].
 
-두 조건을 만족하는 점을 $\varepsilon$ **2차 정류점**이라 한다. 위 비볼록 수렴 정리가 주는 것은 첫 조건뿐이고, 둘째 조건이 안장점을 배제한다. [행렬 완성](matrix-completion.md)과 텐서 분해의 목적함수가 엄격 안장점 성질을 만족하므로 이 두 정리가 그 문제의 1차 방법 분석에 쓰인다.[^5]
+두 조건을 만족하는 점을 $\varepsilon$ **2차 정류점(second-order stationary point)** 이라 한다. 위 비볼록 수렴 정리가 주는 것은 첫 조건뿐이고, 둘째 조건이 안장점을 배제한다. [행렬 완성](matrix-completion.md)과 텐서 분해의 목적함수가 엄격 안장점 성질을 만족하므로 이 두 정리가 그 문제의 1차 방법 분석에 쓰인다.[^5]
 
 ## 볼록 함수의 O(1/k) 수렴
 
@@ -106,7 +106,7 @@ $k=0$ 부터 $K-1$ 까지 더하면 $f(x_k)-f^\star$ 들의 합이 초기 거리
 
 ## 강볼록 함수의 선형 수렴
 
-$f$ 가 $\mu$ 강볼록이고 $L$ -smooth 이면 강볼록성에서 Polyak–Łojasiewicz 부등식이 따른다.
+$f$ 가 $\mu$ 강볼록이고 $L$ -smooth 이면 강볼록성에서 Polyak–Łojasiewicz 부등식(Polyak–Łojasiewicz inequality)이 따른다.
 
 $$
 \left\lVert \nabla f(x)\right\rVert^2\thinspace \ge\thinspace 2\mu\bigl(f(x)-f^\star\bigr)
