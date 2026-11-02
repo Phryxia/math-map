@@ -6,7 +6,7 @@
 
 # 직관
 
-양쪽에 정점이 셋씩 있고 왼쪽의 모든 정점이 오른쪽의 모든 정점과 이웃한 그래프 $K_{3,3}$ 은 왼쪽을 색 $1$, 오른쪽을 색 $2$ 로 칠하면 되므로 채색수가 $2$ 다. 이제 왼쪽 세 정점에 목록 $\lbrace 1,2\rbrace$, $\lbrace 1,3\rbrace$, $\lbrace 2,3\rbrace$ 을, 오른쪽 세 정점에도 같은 세 목록을 준다.
+양쪽에 정점이 셋씩 있고 왼쪽의 모든 정점이 오른쪽의 모든 정점과 이웃한 그래프 $K_{3,3}$ 은 왼쪽을 색 $1$, 오른쪽을 색 $2$ 로 칠하면 되므로 채색수(chromatic number)가 $2$ 다. 이제 왼쪽 세 정점에 목록 $\lbrace 1,2\rbrace$, $\lbrace 1,3\rbrace$, $\lbrace 2,3\rbrace$ 을, 오른쪽 세 정점에도 같은 세 목록을 준다.
 
 ![양쪽 세 정점이 모두 이어진 그래프의 정점마다 색 두 개짜리 목록을 적은 그림](figures/list-coloring-k33-lists.svg)
 
@@ -14,17 +14,23 @@
 
 # 정의
 
-$G=(V,E)$ 를 그래프라 한다. 정점마다 유한집합 $L(v)$ 를 주는 함수 $L$ 을 목록 배정이라 하고, $c(v)\in L(v)$ 이며 $uv\in E$ 이면 $c(u)\ne c(v)$ 인 함수 $c$ 를 $L$ 색칠이라 한다.
+$G=(V,E)$ 를 그래프라 한다. 정점마다 유한집합 $L(v)$ 를 주는 함수 $L$ 을 **목록 배정(list assignment)** 이라 하고, $c(v)\in L(v)$ 이며 $uv\in E$ 이면 $c(u)\ne c(v)$ 인 함수 $c$ 를 **$L$ 색칠(L-coloring)** 이라 한다.
 
-함수 $f:V\to\mathbb N$ 에 대해 $\lvert L(v)\rvert\ge f(v)$ 인 모든 $L$ 에 $L$ 색칠이 존재하면 $G$ 는 $f$ 선택 가능(f-choosable)하다고 한다. $f$ 가 상수 $k$ 이면 $k$ 선택 가능이라 하고, $k$ 선택 가능한 가장 작은 $k$ 가 **선택수(choice number)** $\mathrm{ch}(G)$ 다. 목록 채색수(list chromatic number)라고도 한다. 모든 목록이 같으면 보통의 [그래프 색칠](graph-coloring.md)이므로 선택수는 채색수 이상이다. P. Erdős, A. L. Rubin, H. Taylor 와 V. G. Vizing 이 따로 도입했다[^1].
+$K_{3,3}$ 의 여섯 정점에 모두 목록 $\lbrace 1,2\rbrace$ 를 주면 왼쪽에 $1$, 오른쪽에 $2$ 를 주는 함수가 $L$ 색칠이다. 직관 절의 그림의 목록 배정에는 $L$ 색칠이 없다.
+
+함수 $f:V\to\mathbb N$ 에 대해 $\lvert L(v)\rvert\ge f(v)$ 인 모든 $L$ 에 $L$ 색칠이 존재하면 $G$ 는 **$f$ 선택 가능(f-choosable)** 하다고 한다. $f$ 가 상수 $k$ 이면 $k$ 선택 가능이라 하고, $k$ 선택 가능한 가장 작은 $k$ 가 **선택수(choice number)** $\mathrm{ch}(G)$ 다. 목록 채색수(list chromatic number)라고도 한다. P. Erdős, A. L. Rubin, H. Taylor 와 V. G. Vizing 이 따로 도입했다[^1].
+
+직관 절의 목록 배정은 크기가 모두 $2$ 인데 $L$ 색칠이 없으므로 $K_{3,3}$ 은 $2$ 선택 가능이 아니고, $\mathrm{ch}(K_{3,3})\ge 3$ 이다.
+
+# 성질
+
+## 채색수와 최대 차수
 
 $$
 \chi(G)\le\mathrm{ch}(G)\le\Delta(G)+1
 $$
 
-여기서 $\Delta(G)$ 는 최대 차수다. 오른쪽 부등식은 정점을 아무 순서로 칠할 때 이미 칠한 이웃이 많아야 $\Delta(G)$ 개라는 데서 나온다.
-
-# 성질
+여기서 $\chi(G)$ 는 채색수, $\Delta(G)$ 는 최대 차수(maximum degree)다. 모든 목록이 같으면 보통의 [그래프 색칠](graph-coloring.md)이므로 왼쪽 부등식이 나온다. 오른쪽 부등식은 정점을 아무 순서로 칠할 때 이미 칠한 이웃이 많아야 $\Delta(G)$ 개라는 데서 나온다. $K_{3,3}$ 은 $\chi=2$ 이고 $\mathrm{ch}\ge 3$ 이어서 왼쪽 부등식이 등호가 아니다.
 
 ## 이분그래프의 선택수
 
@@ -54,7 +60,7 @@ M. Voigt 는 $4$ 선택 가능이 아닌 평면 그래프를 구성했다[^4]. �
 
 # 활용
 
-- 주파수 배정. 송신기마다 쓸 수 있는 주파수가 다를 때 이웃한 송신기가 다른 주파수를 받는 배정이 목록 색칠이다.
+- 주파수 배정(frequency assignment). 송신기마다 쓸 수 있는 주파수가 다를 때 이웃한 송신기가 다른 주파수를 받는 배정이 목록 색칠이다.
 - [Latin 방진](latin-squares.md)의 완성. Galvin 정리는 칸마다 허용된 수가 다른 Latin 방진이 존재할 조건을 준다.
 
 [^1]: P. Erdős, A. L. Rubin, H. Taylor, "Choosability in graphs", Proceedings of the West Coast Conference on Combinatorics, Graph Theory and Computing, Congressus Numerantium 26 (1979), 125–157.
