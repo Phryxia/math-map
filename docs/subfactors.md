@@ -12,9 +12,7 @@
 
 $M$ 에 내적 $\langle x,y\rangle=\tau(y^\ast x)$ 를 주고 완비화하면 [Hilbert 공간](hilbert-spaces.md) $L^2(M)$ 이 나온다. $N$ 은 이 공간에 왼쪽 곱으로 작용한다. 행렬의 예에서 $M_k(\mathbb C)$ 를 $\mathbb C$ 위의 공간으로 보면 차원이 $k^2$ 이었듯, $L^2(M)$ 을 $N$ 위의 공간으로 보고 $N$ 의 추적으로 그 "차원" 을 재면 비가 하나의 수로 나온다.
 
-$N$ 을 $M=M_k(N)$ 에 대각으로 넣으면 $L^2(M)$ 은 $L^2(N)$ 을 $k^2$ 개 붙인 것이고 그 수는 $k^2$ 이다. 이 수가 Jones 지표이고, 정수가 아닌 값도 나온다.
-
-이 실수 $\lbrack M:N\rbrack$ 을 Jones 지표(Jones index)라 한다. Jones 지표 정리는 이 값이 $\lbrace 4\cos^2(\pi/n)\mid n\ge 3\rbrace\cup\lbrack 4,\infty\rbrack$ 에만 있다고 진술한다.
+$N$ 을 $M=M_k(N)$ 에 대각으로 넣으면 $L^2(M)$ 은 $L^2(N)$ 을 $k^2$ 개 붙인 것이고 그 수는 행렬의 예와 같은 $k^2$ 이다. $L^2(N)$ 의 일부만 떼어 낸 공간은 $N$ 의 추적으로 재면 $1$ 보다 작은 값을 가지므로, 이 수는 정수가 아닐 수도 있다.
 
 # 정의
 
@@ -28,7 +26,9 @@ $$
 \dim_NH=(\mathrm{Tr}\otimes\tau)(p)\in\lbrack 0,\infty\rbrack
 $$
 
-를 Murray–von Neumann 결합 상수(coupling constant)라 한다. $\mathrm{Tr}$ 은 $B(\ell^2)$ 의 표준 대각합이고 값은 $p$ 의 선택에 의존하지 않는다.
+를 **Murray–von Neumann 결합 상수(coupling constant)** 라 한다. $\mathrm{Tr}$ 은 $B(\ell^2)$ 의 표준 대각합이다.
+
+$H=L^2(N)$ 이면 $p$ 를 $\ell^2$ 의 한 좌표 사영과 $1$ 의 텐서곱으로 잡아 $\dim_NL^2(N)=1$ 이고, $L^2(N)$ 을 $k$ 개 붙인 공간은 $k$ 다. $q\in N$ 이 $\tau(q)=\frac12$ 인 사영이면 $L^2(N)q$ 는 $\dim_N=\frac12$ 인 $N$ 가군이다.
 
 ## Jones 지표
 
@@ -38,11 +38,19 @@ $$
 \lbrack M:N\rbrack=\dim_NL^2(M)
 $$
 
-를 **Jones 지표(Jones index)** 라 한다. $N=M$ 이면 $1$ 이다. 항등원이 아닌 원소의 켤레류가 모두 무한인 군 $G$ 와 같은 조건을 만족하는 지표 유한 부분군 $H$ 에서 군 von Neumann 대수의 쌍 $L(H)\subseteq L(G)$ 는 부분인자이고 지표는 $\lbrack G:H\rbrack$ 이다.
+를 **Jones 지표(Jones index)** 라 한다.
+
+$N=M$ 이면 $1$ 이고, 직관 절의 $N\subseteq M_k(N)$ 은 $k^2$ 이다. 항등원이 아닌 원소의 켤레류가 모두 무한인 군 $G$ 와 같은 조건을 만족하는 지표 유한 부분군 $H$ 에서 군 von Neumann 대수(group von Neumann algebra)의 쌍 $L(H)\subseteq L(G)$ 는 부분인자이고, $\ell^2(G)$ 가 잉여류마다 $\ell^2(H)$ 하나씩으로 쪼개지므로 지표는 $\lbrack G:H\rbrack$ 이다.
 
 ## 기본 구성
 
 $L^2(N)\subseteq L^2(M)$ 위로의 직교사영을 $e_N$ 이라 한다. $e_N$ 을 $M$ 에 제한하면 추적을 보존하는 [조건부 기댓값](conditional-expectation.md)(conditional expectation) $E_N\colon M\to N$ 이다. $M$ 과 $e_N$ 이 $L^2(M)$ 위에서 생성하는 von Neumann 대수를 $M_1$ 이라 하고, $N\subseteq M$ 에서 $M\subseteq M_1$ 을 만드는 이 과정을 **기본 구성(basic construction)** 이라 한다.
+
+$L(H)\subseteq L(G)$ 에서 $e_N$ 은 $\ell^2(H)\subseteq\ell^2(G)$ 위로의 사영이고, $E_N$ 은 $\sum_g a_gu_g$ 에서 $g\in H$ 인 항만 남긴다.
+
+# 성질
+
+## 기본 구성의 성질
 
 $\lbrack M:N\rbrack\lt\infty$ 이면 $M_1$ 도 $\mathrm{II}\_1$ 형 인자이고 다음이 성립한다[^1].
 
@@ -50,7 +58,7 @@ $$
 \lbrack M_1:M\rbrack=\lbrack M:N\rbrack,\qquad e_Nxe_N=E_N(x)e_N\quad (x\in M),\qquad \tau(e_N)=\lbrack M:N\rbrack^{-1}
 $$
 
-# 성질
+$L(H)\subseteq L(G)$ 에서는 $\tau(e_N)=1/\lbrack G:H\rbrack$ 다. 결합 상수의 값은 $p$ 의 선택에 의존하지 않는다.
 
 ## Jones 사영의 열
 
@@ -76,13 +84,13 @@ $$
 
 ## 주 그래프
 
-상대 교환자(relative commutant) $N'\cap M_k$ 들은 유한차원 대수이고 그 포함 관계를 이분 그래프로 적은 것을 주 그래프(principal graph)라 한다. 지표가 유한하고 주 그래프가 유한이면 그 인접행렬의 노름의 제곱이 $\lbrack M:N\rbrack$ 이다[^3]. 지표가 $4$ 미만이면 주 그래프는 노름이 $2$ 미만인 그래프, 곧 단순 끈(simply laced) Dynkin 도형(Dynkin diagram)이다.
+상대 교환자(relative commutant) $N'\cap M_k$ 들은 유한차원 대수이고 그 포함 관계를 이분 그래프로 적은 것을 주 그래프(principal graph)라 한다. 지표가 유한하고 주 그래프가 유한이면 그 인접행렬의 노름의 제곱이 $\lbrack M:N\rbrack$ 이다[^3]. 지표가 $4$ 미만이면 주 그래프는 노름이 $2$ 미만인 그래프, 곧 $A_n$, $D_n$, $E_6$, $E_7$, $E_8$ 꼴의 Dynkin 도형(Dynkin diagram) 가운데 하나다.
 
 # 활용
 
-- [매듭 불변량](knot-invariants.md). [땋임군](braid-groups.md) $B_n$ 을 생성원 $\sigma_i$ 를 $1$ 과 $e_i$ 의 일차결합으로 보내 Jones 사영의 대수로 옮기고 Markov 성질을 가진 추적을 합성하면 닫힌 땋임의 불변량이 나온다. 이것이 Jones 다항식이다.
+- [매듭 불변량](knot-invariants.md). [땋임군](braid-groups.md) $B_n$ 을 생성원 $\sigma_i$ 를 $1$ 과 $e_i$ 의 일차결합으로 보내 Jones 사영의 대수로 옮기고 Markov 성질을 가진 추적을 합성하면 닫힌 땋임의 불변량이 나온다. 이것이 Jones 다항식(Jones polynomial)이다.
 - 군의 부분군. $L(H)\subseteq L(G)$ 의 지표가 $\lbrack G:H\rbrack$ 이므로 부분인자는 부분군의 지표를 정수가 아닌 값으로 넓힌다.
-- 범주론적 불변량. 부분인자에서 $N$-$N$, $N$-$M$ 쌍가군들이 이루는 텐서 범주를 얻고, 지표가 $4$ 미만인 경우의 분류가 Dynkin 도형의 분류와 대응한다.
+- 부분인자에서 $N$-$N$, $N$-$M$ 쌍가군(bimodule)들이 이루는 텐서 범주(tensor category)를 얻는다. 초유한 $\mathrm{II}\_1$ 형 인자의 지표 $4$ 미만 부분인자는 주 그래프가 $A_n$, $D\_{2n}$, $E_6$, $E_8$ 인 것으로 분류된다.
 
 [^1]: V. Jones, V. S. Sunder, *Introduction to Subfactors*, Cambridge University Press (1997), 3장. 결합 상수, 기본 구성, Jones 사영의 관계.
 [^2]: V. Jones, Index for subfactors, *Invent. Math.* **72** (1983), 1–25.
