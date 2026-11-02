@@ -6,10 +6,6 @@
 
 # 직관
 
-다색 Carathéodory 정리는 $\mathbb R^d$ 의 유한집합 $C_1,\dots,C_{d+1}$ 이 모두 원점을 볼록 껍질에 포함하면, 집합마다 점을 하나씩 골라 그 $d+1$ 개의 볼록 껍질이 원점을 포함하게 할 수 있다는 정리다. Bárány 가 1982 년에 증명했다.[^1]
-
-$C_1=\cdots=C_{d+1}$ 인 경우가 Carathéodory 정리(Carathéodory's theorem)이고, [Helly 정리](helly-theorem.md)에도 같은 꼴의 다색 판본이 있다.
-
 평면에서 빨간 점, 파란 점, 초록 점을 각각 몇 개씩 찍되, 색마다 그 색의 점들이 이루는 다각형이 원점을 둘러싸게 한다. 색마다 하나씩 골라 삼각형을 만들고 그 삼각형이 원점을 둘러싸게 하려 한다.
 
 아무 삼각형이나 하나 잡는다. 원점이 삼각형 밖에 있으면 삼각형에서 원점에 가장 가까운 점 $z$ 는 어느 변 위에 있다. 그 변에 쓰이지 않은 꼭짓점의 색을 빨강이라 한다. 빨간 점들은 원점을 둘러싸므로, $z$ 에서 보아 원점 쪽 너머에 있는 빨간 점이 하나는 있다. 빨간 꼭짓점을 그 점으로 바꾸면 새 삼각형이 원점에 더 가까워진다.
@@ -20,11 +16,13 @@ $C_1=\cdots=C_{d+1}$ 인 경우가 Carathéodory 정리(Carathéodory's theorem)
 
 ## 무지개 단체
 
-$\mathbb R^d$ 의 집합 $C_1,\dots,C_{d+1}$ 에서 $c_i\in C_i$ 를 하나씩 골라 만든 볼록 껍질 $\mathrm{conv}\lbrace c_1,\dots,c_{d+1}\rbrace$ 을 **무지개 단체(rainbow simplex, colorful simplex)** 라 한다. 점들이 아핀 종속이면 차원이 $d$ 보다 낮을 수 있다.
+$\mathbb R^d$ 의 집합 $C_1,\dots,C_{d+1}$ 에서 $c_i\in C_i$ 를 하나씩 골라 만든 볼록 껍질 $\mathrm{conv}\lbrace c_1,\dots,c_{d+1}\rbrace$ 을 **무지개 단체(rainbow simplex, colorful simplex)** 라 한다. 점들이 아핀 종속이면 차원이 $d$ 보다 낮을 수 있다. 수직선($d=1$)에서 $C_1=\lbrace -1,2\rbrace$, $C_2=\lbrace -3,1\rbrace$ 이면 무지개 단체는 네 선분 $\lbrack -3,-1\rbrack$, $\lbrack -1,1\rbrack$, $\lbrack -3,2\rbrack$, $\lbrack 1,2\rbrack$ 이고, 이 가운데 $\lbrack -1,1\rbrack$ 과 $\lbrack -3,2\rbrack$ 가 원점을 포함한다.
 
 ## 다색 Carathéodory 정리
 
-**정리(Bárány).** $C_1,\dots,C_{d+1}\subseteq\mathbb R^d$ 가 유한집합이고 모든 $i$ 에서 $0\in\mathrm{conv}(C_i)$ 이면, 원점을 포함하는 무지개 단체가 존재한다.
+**다색 Carathéodory 정리** 는 다음 진술이다. $C_1,\dots,C_{d+1}\subseteq\mathbb R^d$ 가 유한집합이고 모든 $i$ 에서 $0\in\mathrm{conv}(C_i)$ 이면, 원점을 포함하는 무지개 단체가 존재한다. Bárány 가 1982 년에 증명했다.[^1]
+
+$C_1=\cdots=C_{d+1}=C$ 이면 무지개 단체는 $C$ 의 점 $d+1$ 개 이하의 볼록 껍질이므로, 이 경우가 Carathéodory 정리(Carathéodory's theorem), 곧 "$0\in\mathrm{conv}(C)$ 이면 $C$ 의 점 $d+1$ 개 이하의 볼록 껍질이 원점을 포함한다" 는 진술이다.
 
 # 성질
 
@@ -44,13 +42,13 @@ $$
 
 ## 다색 Helly 정리
 
-**정리(Lovász).** $\mathbb R^d$ 의 볼록집합 유한 모임 $\mathcal F_1,\dots,\mathcal F_{d+1}$ 에서, $K_i\in\mathcal F_i$ 를 어떻게 골라도 $K_1\cap\cdots\cap K_{d+1}\ne\varnothing$ 이면, 어느 한 $\mathcal F_i$ 는 모든 원소의 교집합이 공집합이 아니다.[^1]
+Lovász 의 다색 Helly 정리(colorful Helly theorem)는 다음이다. $\mathbb R^d$ 의 볼록집합 유한 모임 $\mathcal F_1,\dots,\mathcal F_{d+1}$ 에서, $K_i\in\mathcal F_i$ 를 어떻게 골라도 $K_1\cap\cdots\cap K_{d+1}\ne\varnothing$ 이면, 어느 한 $\mathcal F_i$ 는 모든 원소의 교집합이 공집합이 아니다.[^1]
 
-$\mathcal F_1=\cdots=\mathcal F_{d+1}$ 이면 Helly 정리다. Bárány 의 논문이 이 정리를 Lovász 의 것으로 소개하고 증명한다.
+$\mathcal F_1=\cdots=\mathcal F_{d+1}$ 이면 [Helly 정리](helly-theorem.md)다. Bárány 의 논문이 이 정리를 Lovász 의 것으로 소개하고 증명한다.
 
 ## 첫째 선택 보조정리
 
-**정리(Bárány).** $d$ 에만 의존하는 상수 $c_d\gt 0$ 이 존재해, $\mathbb R^d$ 의 일반 위치(general position)의 점 $n$ 개가 만드는 단체 $\binom{n}{d+1}$ 개 가운데 $c_d\binom{n}{d+1}$ 개 이상에 공통으로 들어가는 점이 존재한다.[^1]
+Bárány 는 다음도 증명했다. $d$ 에만 의존하는 상수 $c_d\gt 0$ 이 존재해, $\mathbb R^d$ 의 일반 위치(general position)의 점 $n$ 개가 만드는 단체 $\binom{n}{d+1}$ 개 가운데 $c_d\binom{n}{d+1}$ 개 이상에 공통으로 들어가는 점이 존재한다.[^1]
 
 이 정리를 **첫째 선택 보조정리(first selection lemma)** 라 한다. Bárány 의 증명은 [Tverberg 정리](tverberg-theorem.md)로 점을 여러 부분으로 나누고, 부분들에서 다색 Carathéodory 정리로 Tverberg 점을 포함하는 무지개 단체를 고르는 방식이다.[^2]
 
