@@ -6,36 +6,39 @@
 
 # 직관
 
-한쪽 줄이 지원자, 다른 줄이 자리이고 간선이 적합 관계인 이분 그래프에서, 모든 지원자에게 자리를 주는 매칭이 지원자 쪽을 포화하는 매칭이다.
+한쪽 줄이 지원자, 다른 줄이 자리이고 간선이 맡을 수 있는 관계인 이분 그래프(bipartite graph)를 그린다. 모든 지원자에게 서로 다른 자리를 하나씩 주려면 간선을 지원자마다 하나씩, 자리가 겹치지 않게 골라야 한다.
 
-지원자 집합 $S$ 가 통틀어 $\vert S\vert$ 개보다 적은 자리만 바라보면 포화 매칭이 없다. 세 지원자가 같은 두 자리만 지원한 경우가 그런 예다. 아래 그림에서 $x_1,x_2,x_3$ 은 모두 $y_1,y_2$ 만 맡을 수 있다. 굵은 두 선이 매칭이고, $x_3$ 에게 줄 자리가 남지 않는다.
+지원자 집합 $S$ 가 통틀어 $\lvert S\rvert$ 개보다 적은 자리만 바라보면 그렇게 고를 수 없다. 아래 그림에서 $x_1,x_2,x_3$ 은 모두 $y_1,y_2$ 만 맡을 수 있다. 굵은 두 선처럼 두 사람에게 자리를 주면 $x_3$ 에게 줄 자리가 남지 않는다.
 
 ![지원자 세 명이 같은 두 자리에만 이어진 이분 그래프와 크기 2 인 매칭](figures/matchings-hall-violation.svg)
 
-어느 지원자 집합에서도 이 일이 생기지 않으면 언제나 포화 매칭이 있다는 것이 Hall 정리다.
+어느 지원자 집합에서도 이 일이 생기지 않으면 모든 지원자에게 자리를 줄 수 있다. 이것이 Hall 결혼 정리(Hall's marriage theorem)이고 성질 절에서 증명한다.
 
 # 정의
 
 ## 매칭
 
-그래프 $G = (V, E)$ 의 부분집합 $M \subseteq E$ 가 어떤 두 간선도 공통 끝점을 갖지 않으면 $M$ 을 **매칭**이라 한다. 정점 $v$ 가 $M$ 의 어떤 간선의 끝점이면 $v$ 는 $M$ 에 대해 **덮였다**(saturated)고 한다.
+그래프 $G = (V, E)$ 의 부분집합 $M \subseteq E$ 가 어떤 두 간선도 공통 끝점을 갖지 않으면 $M$ 을 **매칭** 이라 한다. 정점 $v$ 가 $M$ 의 어떤 간선의 끝점이면 $v$ 는 $M$ 에 **덮였다(saturated)** 고 한다.
 
-- $M$ 이 다른 어떤 매칭보다 작지 않으면 **최대 매칭**(maximum matching)이고, 그 크기를 $\nu(G)$ 로 쓴다.
-- $M$ 에 간선을 더 넣을 수 없으면 **극대 매칭**(maximal matching)이다. 극대라고 최대인 것은 아니다.
-- 모든 정점이 덮이면 **완전 매칭**(perfect matching)이다. 이 경우 $\lvert M \rvert = \lvert V \rvert / 2$ 다.
+- 크기가 가장 큰 매칭이 **최대 매칭(maximum matching)** 이고, 그 크기를 $\nu(G)$ 로 쓴다.
+- 간선을 더 넣을 수 없는 매칭이 **극대 매칭(maximal matching)** 이다.
+- 모든 정점을 덮는 매칭이 **완전 매칭(perfect matching)** 이다.
 
-이분 그래프 $G = (X \cup Y, E)$ 에서 $X$ 의 모든 정점이 덮이는 매칭을 $X$ 포화 매칭이라 한다.
+이분 그래프 $G = (X \cup Y, E)$ 에서 $X$ 의 모든 정점을 덮는 매칭을 **$X$ 포화 매칭(X-saturating matching)** 이라 한다.
+
+직관 절의 그림에서 $M=\lbrace x_1y_1,x_2y_2\rbrace$ 는 매칭이고 $y_1,y_2$ 를 모두 덮으므로 $Y$ 포화 매칭이다. 어느 매칭도 $y_1,y_2$ 가운데 하나를 끝점으로 쓰므로 크기가 $2$ 이하이고, $\nu=2$ 다. $X$ 포화 매칭은 없다. 정점이 $v_1,v_2,v_3,v_4$ 이고 간선이 $v_1v_2,v_2v_3,v_3v_4$ 인 경로 $P_4$ 에서 $\lbrace v_2v_3\rbrace$ 는 다른 간선이 모두 $v_2$ 나 $v_3$ 을 쓰므로 극대 매칭이지만, $\lbrace v_1v_2,v_3v_4\rbrace$ 가 더 크므로 최대 매칭이 아니다. $\lbrace v_1v_2,v_3v_4\rbrace$ 는 완전 매칭이다.
 
 ## 교대 경로와 증가 경로
 
-매칭 $M$ 이 주어졌을 때, 간선이 $M$ 에 속하는 것과 속하지 않는 것으로 번갈아 나타나는 경로를 **교대 경로**(alternating path)라 한다. 양 끝점이 모두 $M$ 에 덮이지 않은 교대 경로를 **$M$ 증가 경로**라 한다.
+매칭 $M$ 이 주어졌을 때, $M$ 의 간선과 $M$ 밖의 간선이 번갈아 나오는 경로를 **교대 경로(alternating path)** 라 한다. 양 끝점이 모두 $M$ 에 덮이지 않은 교대 경로를 **$M$ 증가 경로(M-augmenting path)** 라 한다.
 
-증가 경로 $P$ 의 간선 수는 홀수이고, 대칭차 $M \triangle E(P)$ 는 다시 매칭이며 크기가 $\lvert M \rvert + 1$ 이다.
+$P_4$ 에서 $M=\lbrace v_2v_3\rbrace$ 이면 $v_1,v_2,v_3,v_4$ 는 간선이 $M$ 밖, $M$, $M$ 밖 순으로 나오고 $v_1,v_4$ 가 덮이지 않았으므로 $M$ 증가 경로다.
 
-## 덮개와 독립집합
+## 정점 덮개와 독립집합
 
-- **정점 덮개**(vertex cover): 모든 간선이 적어도 한 끝점을 갖는 정점 집합. 최소 크기를 $\tau(G)$ 라 쓴다.
-- **독립집합**: 서로 인접하지 않은 정점 집합. 최대 크기를 $\alpha(G)$ 라 쓴다. 정의상 $\tau(G) + \alpha(G) = \lvert V \rvert$ 다([그래프 색칠](graph-coloring.md)의 독립집합과 같은 개념).
+모든 간선의 적어도 한 끝점을 포함하는 정점 집합을 **정점 덮개(vertex cover)** 라 하고, 최소 크기를 $\tau(G)$ 로 쓴다. 서로 인접하지 않은 정점들의 집합을 **독립집합(independent set)** 이라 하고, 최대 크기를 $\alpha(G)$ 로 쓴다.
+
+직관 절의 그림에서 $\lbrace y_1,y_2\rbrace$ 는 모든 간선의 끝점을 포함하므로 정점 덮개이고, $\lbrace x_1,x_2,x_3\rbrace$ 는 독립집합이다.
 
 ## 이웃 집합
 
@@ -45,106 +48,103 @@ $$
 N(S) = \lbrace\thinspace v \in V : \exists u \in S,\ uv \in E \thinspace\rbrace
 $$
 
-를 $S$ 의 이웃 집합이라 한다.
+를 $S$ 의 **이웃 집합(neighbourhood)** 이라 한다. 직관 절의 그림에서 $N(\lbrace x_1,x_2,x_3\rbrace)=\lbrace y_1,y_2\rbrace$ 다.
 
 # 성질
 
+## 증가 경로와 대칭차
+
+$P$ 가 $M$ 증가 경로이면 $P$ 의 간선 수는 홀수이고, 대칭차 $M \triangle E(P)$ 는 크기가 $\lvert M \rvert + 1$ 인 매칭이다. $P$ 위의 간선 가운데 $M$ 밖의 것이 $M$ 의 것보다 하나 많고, 양 끝점이 덮이지 않았으므로 바꿔 넣어도 끝점이 겹치지 않는다. $P_4$ 의 예에서 $\lbrace v_2v_3\rbrace\triangle\lbrace v_1v_2,v_2v_3,v_3v_4\rbrace=\lbrace v_1v_2,v_3v_4\rbrace$ 다.
+
+완전 매칭의 크기는 $\lvert V \rvert / 2$ 다. 극대 매칭은 최대 매칭의 크기의 절반 이상이다. 최대 매칭의 각 간선은 극대 매칭의 간선과 끝점을 공유하고, 극대 매칭의 간선 하나는 끝점이 둘이므로 최대 매칭의 간선을 많아야 두 개 막는다.
+
+## 덮개와 독립집합의 관계
+
+$C$ 가 정점 덮개인 것과 $V\setminus C$ 가 독립집합인 것은 동치다. 따라서 $\tau(G)+\alpha(G)=\lvert V\rvert$ 다. 직관 절의 그림에서 $\tau=2$, $\alpha=3$ 이고 합이 $5$ 다. 매칭의 각 간선은 덮개의 서로 다른 정점을 필요로 하므로 $\nu(G)\le\tau(G)$ 다.
+
 ## Berge 정리
 
-**정리 (Berge, 1957).** 매칭 $M$ 이 최대 매칭인 것과 $M$ 증가 경로가 존재하지 않는 것은 동치다.
+Berge 정리(Berge's theorem, 1957)는 매칭 $M$ 이 최대 매칭인 것과 $M$ 증가 경로가 존재하지 않는 것이 동치라는 정리다.
 
-**증명.** 증가 경로가 있으면 대칭차로 더 큰 매칭을 얻으므로 최대가 아니다. 역방향은 대우로 보인다. $M$ 이 최대가 아니면 $|M'|\gt |M|$ 인 매칭 $M'$ 이 있다. 대칭차 $H=M\thinspace\triangle\thinspace M'$ 를 그래프로 보면, 각 정점은 $M$ 에서 최대 1개, $M'$ 에서 최대 1개의 간선을 받으므로 $H$ 의 차수는 2 이하다. 따라서 $H$ 의 연결 성분은 경로 아니면 짝수 길이 사이클이고, 각 성분에서 두 매칭의 간선이 번갈아 나온다. 사이클은 두 매칭의 간선을 같은 수만큼 쓴다. $|M'|\gt |M|$ 이므로 $M'$ 의 간선이 더 많은 성분이 존재하고, 그것은 양 끝이 $M'$ 간선인 경로, 즉 $M$ 증가 경로다. ∎
+증가 경로가 있으면 대칭차로 더 큰 매칭을 얻으므로 최대가 아니다. 역방향은 대우로 보인다. $M$ 이 최대가 아니면 $\lvert M'\rvert\gt \lvert M\rvert$ 인 매칭 $M'$ 이 있다. 대칭차 $H=M\thinspace\triangle\thinspace M'$ 에서 각 정점은 $M$ 의 간선을 많아야 하나, $M'$ 의 간선을 많아야 하나 받으므로 $H$ 의 차수는 $2$ 이하다. 그래서 $H$ 의 연결 성분은 두 매칭의 간선이 번갈아 나오는 경로나 짝수 길이 순환이고, 순환은 두 매칭의 간선을 같은 수만큼 쓴다. $\lvert M'\rvert\gt \lvert M\rvert$ 이므로 $M'$ 의 간선이 더 많은 성분이 있고, 그것은 양 끝 간선이 $M'$ 에 속하는 경로, 곧 $M$ 증가 경로다. ∎
 
-이 정리가 "증가 경로를 찾을 수 있는 동안 반복한다"는 알고리즘 전체를 정당화한다. 정확히 같은 논리가 [네트워크 흐름](network-flow.md)의 잔여 그래프 증가 경로에서 반복된다. 실제로 이분 매칭은 최대유량 문제의 특수한 경우다.
+증가 경로를 찾을 수 있는 동안 대칭차로 매칭을 키우는 알고리즘이 이 정리로 최대 매칭에서 멈춘다. [네트워크 흐름](network-flow.md)의 잔여 그래프 증가 경로가 같은 논법을 쓰고, 이분 매칭은 최대 흐름 문제의 특수한 경우다.
 
 ## Hall 결혼 정리
 
-**정리 (Hall, 1935[^1]).** 이분 그래프 $G = (X \cup Y, E)$ 가 $X$ 포화 매칭을 가질 필요충분조건은
+Hall 결혼 정리[^1]는 이분 그래프 $G = (X \cup Y, E)$ 가 $X$ 포화 매칭을 가질 필요충분조건이
 
 $$
-\forall S \subseteq X : \ |N(S)| \ge |S|
+\forall S \subseteq X : \ \lvert N(S)\rvert \ge \lvert S\rvert
 $$
 
-이다.
+라는 정리다. 직관 절의 그림은 $S=\lbrace x_1,x_2,x_3\rbrace$ 에서 $\lvert N(S)\rvert=2\lt 3$ 이어서 조건이 깨진다.
 
-**증명 (필요성).** $X$ 포화 매칭 $M$ 이 있으면 $S$ 의 각 원소는 $M$ 을 통해 서로 다른 $Y$ 의 정점으로 가므로 $\lvert N(S) \rvert \ge \lvert S \rvert$ 다.
+필요성. $X$ 포화 매칭 $M$ 이 있으면 $S$ 의 각 원소는 $M$ 을 통해 서로 다른 $Y$ 의 정점으로 가므로 $\lvert N(S) \rvert \ge \lvert S \rvert$ 다.
 
-**증명 (충분성, $|X|$ 에 대한 귀납).** $|X|=1$ 이면 자명하다. 두 경우로 나눈다.
+충분성은 $\lvert X\rvert$ 에 대한 귀납법이다. $\lvert X\rvert=1$ 이면 조건에서 $x$ 의 이웃이 있고 그 간선 하나가 매칭이다. 두 경우로 나눈다.
 
-*경우 1: 모든 공집합 아닌 진부분집합 $S \subsetneq X$ 에 대해 $\lvert N(S) \rvert \ge \lvert S \rvert + 1$ (여유가 있음).* 임의의 간선 $xy$ 를 고르고 $G' = G - x - y$ 를 본다. $S \subseteq X \setminus \lbrace x\rbrace$ 에 대해 $y$ 하나만 잃으므로 $\lvert N_{G'}(S) \rvert \ge \lvert N_G(S) \rvert - 1 \ge \lvert S \rvert$ 다. 귀납 가정으로 $G'$ 에 포화 매칭이 있고 거기에 $xy$ 를 더한다.
+- 공집합이 아닌 모든 진부분집합 $S \subsetneq X$ 에서 $\lvert N(S) \rvert \ge \lvert S \rvert + 1$ 인 경우. 아무 간선 $xy$ 를 고르고 $G' = G - x - y$ 를 본다. $S \subseteq X \setminus \lbrace x\rbrace$ 는 이웃을 $y$ 하나만 잃으므로 $\lvert N_{G'}(S) \rvert \ge \lvert N_G(S) \rvert - 1 \ge \lvert S \rvert$ 다. 귀납 가정으로 $G'$ 에 $X\setminus\lbrace x\rbrace$ 포화 매칭이 있고 거기에 $xy$ 를 더한다.
+- 공집합이 아닌 어떤 $S \subsetneq X$ 에서 $\lvert N(S) \rvert = \lvert S \rvert$ 인 경우. $S$ 와 $N(S)$ 가 이루는 부분그래프는 Hall 조건을 만족하므로 귀납 가정으로 $S$ 포화 매칭 $M_1$ 이 있다. $T \subseteq X \setminus S$ 에 대해 $\lvert N(S \cup T) \rvert \ge \lvert S \rvert + \lvert T \rvert$ 이고 $N(S \cup T) = N(S) \cup N(T)$ 이므로 $Y \setminus N(S)$ 안에서 $T$ 의 이웃은 $\lvert T \rvert$ 개 이상이다. 귀납 가정으로 $X\setminus S$ 와 $Y\setminus N(S)$ 사이의 매칭 $M_2$ 를 얻고, $M_1 \cup M_2$ 가 $X$ 포화 매칭이다. ∎
 
-*경우 2: 어떤 공집합 아닌 $S \subsetneq X$ 가 $\lvert N(S) \rvert = \lvert S \rvert$ 를 만족(빡빡함).* $S$ 와 $N(S)$ 가 이루는 부분그래프는 Hall 조건을 물려받으므로 귀납 가정으로 $S$ 포화 매칭 $M_1$ 을 가진다. 남은 부분은 $X \setminus S$ 와 $Y \setminus N(S)$ 가 이루는 부분그래프다. $T \subseteq X \setminus S$ 에 대해 $\lvert N(S \cup T) \rvert \ge \lvert S \cup T \rvert = \lvert S \rvert + \lvert T \rvert$ 이고 $N(S \cup T) = N(S) \cup N(T)$ 이므로 $Y \setminus N(S)$ 안에서 $T$ 의 이웃은 최소 $\lvert T \rvert$ 개다. 귀납 가정으로 매칭 $M_2$ 를 얻고, $M_1 \cup M_2$ 가 $X$ 포화 매칭이다. ∎
-
-**따름정리.** 이분 그래프에서 $|X|=|Y|$ 이고 모든 정점의 차수가 같은 $k$ 정규 그래프라면 완전 매칭이 존재한다. (간선 세기로 Hall 조건을 확인한다. 이로부터 정규 이분 그래프의 간선 집합이 $k$ 개의 완전 매칭으로 분해되고, König 의 간선 색칠 정리가 따라온다.)
+따름정리로 $\lvert X\rvert=\lvert Y\rvert$ 이고 모든 정점의 차수가 $k\ge 1$ 인 이분 그래프에는 완전 매칭이 있다. $S$ 에서 나가는 간선 $k\lvert S\rvert$ 개가 모두 $N(S)$ 로 들어가고 $N(S)$ 로 들어오는 간선은 $k\lvert N(S)\rvert$ 개 이하이므로 Hall 조건이 성립한다. 완전 매칭을 하나씩 빼면 간선 집합이 완전 매칭 $k$ 개로 나뉜다.
 
 ## König 정리
 
-**정리 (König, 1931; Egerváry).** 이분 그래프에서
+König 정리(Kőnig's theorem, 1931)는 이분 그래프에서
 
 $$
 \nu(G) = \tau(G)
 $$
 
-즉 최대 매칭의 크기와 최소 정점 덮개의 크기가 같다.
+라는 정리다. Egerváry 가 가중치 판본을 같은 해에 증명했다. 직관 절의 그림에서 $\nu=\tau=2$ 다.
 
-증명의 요지. $\nu \le \tau$ 는 자명하다. 매칭의 각 간선은 덮개의 서로 다른 정점을 필요로 한다. 반대 방향은 최대 매칭 $M$ 에서 덮개를 구성한다. $U \subseteq X$ 를 $M$ 에 덮이지 않은 $X$ 의 정점들이라 하고, $Z$ 를 $U$ 에서 출발하는 $M$ 교대 경로로 도달 가능한 정점 전체라 하자. Berge 정리로 증가 경로가 없으므로 $Z \cap Y$ 의 모든 정점은 $M$ 에 덮여 있다. 이제
+$\nu \le \tau$ 는 덮개와 독립집합의 관계에서 나왔다. 반대 방향은 최대 매칭 $M$ 에서 덮개를 만든다. $U \subseteq X$ 를 $M$ 에 덮이지 않은 $X$ 의 정점들이라 하고, $Z$ 를 $U$ 에서 출발하는 $M$ 교대 경로로 도달 가능한 정점 전체라 하자. Berge 정리로 증가 경로가 없으므로 $Z \cap Y$ 의 모든 정점은 $M$ 에 덮여 있다.
 
 $$
 C = (X \setminus Z) \cup (Y \cap Z)
 $$
 
-가 정점 덮개이고 $\lvert C \rvert = \lvert M \rvert$ 임을 확인하면 된다. 덮개임은 $X \cap Z$ 에서 $Y \setminus Z$ 로 가는 간선이 없다는 사실(있으면 $Z$ 가 더 커진다)에서 나오고, 크기는 $C$ 의 각 정점이 $M$ 의 서로 다른 간선에 대응함을 보이면 된다. ∎
+로 두면 $X \cap Z$ 에서 $Y \setminus Z$ 로 가는 간선은 $Z$ 의 정의에 어긋나므로 $C$ 는 정점 덮개다. $C$ 의 각 정점은 $M$ 의 서로 다른 간선의 끝점이므로 $\lvert C \rvert = \lvert M \rvert$ 다. ∎
 
-König 정리는 Hall 정리와 동치이며, 두 정리 모두 [선형계획법](linear-programming.md) 쌍대성을 조합론에서 구체화한 것이다. 이분 그래프의 간선-정점 접합 [행렬](matrices.md)은 완전 유니모듈러이므로 매칭 **LP**(linear programming)의 최적해가 정수해가 되고, 그 쌍대가 정점 덮개 LP 다. 네트워크 흐름의 최대유량 최소절단 정리에서도 같은 구조가 나온다.
+이분 그래프의 간선과 정점의 접합 [행렬](matrices.md)은 완전 단모듈러(totally unimodular)이므로, 매칭의 [선형계획법](linear-programming.md)(linear programming, LP) 완화의 최적해가 정수해이고, 그 쌍대 LP 가 정점 덮개의 완화다. König 정리는 이 두 LP 의 쌍대성 등식이다. 덮개와 독립집합의 관계와 합치면 이분 그래프의 최대 독립집합 크기는 $\lvert V \rvert - \nu(G)$ 다.
 
-보완적으로 König–Egerváry 로부터 이분 그래프의 최대 독립집합 크기는 $\lvert V \rvert - \nu(G)$ 다.
+## Tutte 정리
 
-## Tutte 정리 (일반 그래프)
+삼각형은 Hall 조건과 같은 꼴의 이웃 조건을 만족하지만 정점이 세 개라 완전 매칭이 없다. 일반 그래프에서는 홀수 성분을 센다.
 
-이분성이 없으면 Hall 조건은 통하지 않는다(삼각형에는 완전 매칭이 없다). 올바른 일반화는 홀수 성분을 세는 것이다.
-
-**정리 (Tutte, 1947).** 그래프 $G$ 가 완전 매칭을 가질 필요충분조건은
+Tutte 정리(Tutte's theorem, 1947)는 그래프 $G$ 가 완전 매칭을 가질 필요충분조건이
 
 $$
-\forall S \subseteq V : \ o(G - S) \le |S|
+\forall S \subseteq V : \ o(G - S) \le \lvert S\rvert
 $$
 
-이다. 여기서 $o(H)$ 는 $H$ 의 홀수 크기 연결 성분의 개수다.
+라는 정리다. 여기서 $o(H)$ 는 $H$ 의 홀수 크기 연결 성분의 개수다. 삼각형에서 $S=\varnothing$ 이면 $o(G)=1\gt 0$ 이다.
 
-필요성은 쉽다. 완전 매칭에서 $G-S$ 의 각 홀수 성분은 최소 한 정점을 $S$ 쪽으로 매칭시켜야 하고 그 대응은 단사다. 충분성은 극대 반례를 잡고 구조를 분석하는 논증이다.
+필요성. 완전 매칭에서 $G-S$ 의 각 홀수 성분은 적어도 한 정점을 $S$ 의 정점과 짝지어야 하고, 그 대응은 단사다. 충분성은 간선을 더해도 완전 매칭이 생기지 않는 극대 반례의 구조를 분석해 증명한다.
 
-**Tutte–Berge 공식.** 일반 그래프에서
+일반 그래프에서는 Tutte–Berge 공식(Tutte–Berge formula)
 
 $$
-\nu(G) = \frac{1}{2}\left( |V| - \max_{S \subseteq V} \big( o(G - S) - |S| \big) \right)
+\nu(G) = \frac{1}{2}\left( \lvert V\rvert - \max_{S \subseteq V} \big( o(G - S) - \lvert S\rvert \big) \right)
 $$
 
-이 성립한다. Tutte 정리는 최댓값이 0인 경우다. 따름정리로 **Petersen 정리**(모든 다리 없는 3-정규 그래프는 완전 매칭을 가진다)를 얻는다.
-
-일반 그래프에서의 증가 경로 탐색은 홀수 사이클(blossom) 때문에 단순 탐색이 실패한다. Edmonds 의 blossom 알고리즘이 홀수 사이클을 한 점으로 축약해가며 이를 해결하고, 다항 시간 최대 매칭을 준다. 이 알고리즘은 "다항 시간 = 효율적"이라는 관점을 대중화한 역사적 사례다.
+이 성립하고, Tutte 정리는 최댓값이 $0$ 인 경우다. 따름정리로 다리가 없는 3-정규 그래프에는 완전 매칭이 있다는 Petersen 정리(Petersen's theorem)를 얻는다. 이 공식의 최댓값을 주는 집합의 구조는 [Gallai–Edmonds 분해](gallai-edmonds-decomposition.md)가 정한다.
 
 ## 알고리즘과 복잡도
 
-- **단순 증가 경로 반복**: 매칭 크기마다 한 번의 탐색이 필요하므로 이분 그래프에서 $O(V \cdot E)$ 가 든다.
-- **Hopcroft–Karp** [^2] — 한 라운드에 최단 증가 경로들의 극대 집합을 동시에 증가시킨다. 라운드 수가 $O(\sqrt{V})$ 로 제한되어 전체가 $O(E\sqrt{V})$ 다. 라운드 수의 상한은 최단 증가 경로의 길이가 라운드마다 엄밀히 증가한다는 보조정리에서 나온다.
-- **Hungarian 방법**(Kuhn, 1955): 간선에 가중치가 있을 때 최소 비용 완전 매칭을 푸는 [원시-쌍대](primal-dual-method.md) 알고리즘. 정점마다 쌍대 변수(potential)를 유지하고, 빡빡한(tight) 간선만으로 이루어진 부분그래프에서 증가 경로를 찾는다. 증가에 실패하면 쌍대 변수를 조정해 새 빡빡한 간선을 만든다. 구현에 따라 $O(V^3)$ . 이름은 König 과 Egerváry 의 기여를 기린 것이다.
-- **일반 그래프**: blossom 알고리즘은 $O(V^3)$ 이고 개선판은 $O(E\sqrt{V})$ 다.
+- 증가 경로를 한 번에 하나씩 찾으면 매칭 크기마다 한 번의 [그래프 탐색](graph-search.md)이 필요하므로 이분 그래프에서 $O(\lvert V\rvert\lvert E\rvert)$ 시간이 든다.
+- Hopcroft–Karp 알고리즘(Hopcroft–Karp algorithm)[^2]은 한 단계에서 최단 증가 경로들의 극대 모임을 한꺼번에 반영한다. 최단 증가 경로의 길이가 단계마다 늘어나므로 단계 수가 $O(\sqrt{\lvert V\rvert})$ 이고 전체가 $O(\lvert E\rvert\sqrt{\lvert V\rvert})$ 다.
+- 헝가리안 방법(Hungarian method, Kuhn 1955)은 간선에 가중치가 있을 때 최소 비용 완전 매칭을 푸는 [원시-쌍대](primal-dual-method.md) 알고리즘이다. 정점마다 쌍대 변수를 두고, 쌍대 제약이 등호로 성립하는 간선만으로 된 부분그래프에서 증가 경로를 찾는다. 찾지 못하면 쌍대 변수를 바꿔 그런 간선을 새로 만든다. 구현에 따라 $O(\lvert V\rvert^3)$ 시간이다. 이름은 König 과 Egerváry 의 결과에서 왔다.
+- 일반 그래프에서는 홀수 순환 때문에 이분 그래프의 탐색이 증가 경로를 놓친다. Edmonds 의 꽃 알고리즘(blossom algorithm)은 홀수 순환을 한 정점으로 축약하며 탐색해 $O(\lvert V\rvert^3)$ 시간에 최대 매칭을 찾고, 개선판은 $O(\lvert E\rvert\sqrt{\lvert V\rvert})$ 다.
 
 # 활용
 
-## 흐름, 다면체, matroid
-
-- **흐름과 절단**: 이분 매칭은 소스에서 $X$ 로, $Y$ 에서 싱크로 용량 1의 간선을 붙이면 최대유량 문제가 된다. König 정리는 그 경우의 최대유량 최소절단 정리다.
-- **선형계획과 다면체**: 이분 매칭 다면체는 $x_e \ge 0$ 과 정점별 차수 제약만으로 기술되며 꼭짓점이 모두 정수점이다(Birkhoff–von Neumann 정리: 이중확률행렬은 순열행렬의 볼록결합). 일반 그래프에서는 홀수 집합 제약이 추가로 필요하고, 이것이 Edmonds 의 매칭 다면체 정리다([볼록성](convexity.md), 선형계획법).
-- **Matroid 교차**: 이분 매칭은 두 분할 matroid 의 교차 문제이며, [matroid](matroids.md) 교차 정리의 min-max 공식이 König 정리를 일반화한다.
-- **극값 조합론**: Hall 정리는 서로 다른 대표계(system of distinct representatives, SDR)의 존재 정리다. [셈의 기본 원리](counting-principles.md)와 [비둘기집 원리](pigeonhole-principle.md)로 필요조건을 세우고 귀납으로 충분성을 얻는다. Latin square 의 확장, 이분 그래프의 간선 색칠(그래프 색칠)이 모두 이 따름정리다.
-- **경제학과 알고리즘 설계**: 가중 매칭은 배정 문제이고, [안정 매칭](stable-matching.md)(Gale–Shapley)은 선호 순서를 다루는 다른 방향의 확장이다. 안정 매칭은 항상 존재하지만 최대 매칭과는 다른 개념임에 주의한다.
-
-## 알고리즘의 선택
-
-- 이분 그래프의 최대 매칭은 Hopcroft–Karp 로 $O(E\sqrt{V})$ 다. 일반 그래프에서는 blossom 알고리즘을 쓴다.
-- 가중 매칭은 Hungarian 알고리즘이나 최소비용 최대유량으로 푼다.
-- 완전 매칭이 없다는 답에는 증명서가 따른다. 이분 그래프에서는 Hall 조건을 위반하는 집합이고, 최대 매칭의 크기에 대해서는 König 덮개다.
+- 흐름과 절단. 원천(source)에서 $X$ 의 각 정점으로, $Y$ 의 각 정점에서 싱크(sink)로 용량 $1$ 인 간선을 붙이면 이분 매칭이 최대 흐름 문제가 되고, König 정리는 이 경우의 최대 흐름 최소 절단 정리다.
+- 다면체. 이분 매칭 다면체는 $x_e \ge 0$ 과 정점별 차수 제약만으로 기술되고 꼭짓점이 모두 정수점이다. 일반 그래프에서는 홀수 집합 제약이 더 필요하다. 두 경우 모두 [매칭 다면체](matching-polytope.md)에서 다룬다.
+- [Matroid](matroids.md) 교집합. 이분 매칭은 두 분할 matroid 의 교집합 문제이고, [Matroid 교집합 정리](matroid-intersection.md)의 최소-최대 공식이 König 정리를 일반화한다.
+- 서로 다른 대표계. Hall 정리는 집합족에서 원소를 하나씩 서로 다르게 고르는 서로 다른 대표계(system of distinct representatives, SDR)의 존재 정리다. [Latin 방진](latin-squares.md)의 완성과 이분 그래프의 간선 색칠에 정규 이분 그래프의 따름정리를 쓴다.
+- 배정 문제. 가중 매칭은 사람과 일의 배정 문제이고, [안정 매칭](stable-matching.md)은 양쪽의 선호 순서를 더한 문제다. 안정 매칭은 늘 존재하지만 최대 매칭과는 다른 개념이다.
 
 [^1]: P. Hall, "On Representatives of Subsets", Journal of the London Mathematical Society s1-10 (1935), https://doi.org/10.1112/jlms/s1-10.37.26
 [^2]: J. E. Hopcroft, R. M. Karp, "An $n^{5/2}$ Algorithm for Maximum Matchings in Bipartite Graphs", SIAM Journal on Computing 2 (1973), https://doi.org/10.1137/0202019
