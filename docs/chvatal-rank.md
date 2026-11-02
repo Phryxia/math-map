@@ -6,11 +6,7 @@
 
 # 직관
 
-다면체 $P$ 의 Chvátal 계수는 Chvátal–Gomory 절단을 더하는 연산을 되풀이해 정수 껍질 $P_I$ 에 닿는 최소 횟수다.[^1] 절단을 한 번 더해 얻는 다면체를 $P'$ 라 하면, 유계 유리 다면체에서는 이 연산을 반복해 유한 번에 $P_I$ 에 닿는다.
-
-계수는 절단평면 방법이 완화를 얼마나 깊이 조여야 하는지를 재는 값이다. 계수가 $0$ 인 것은 $P$ 가 이미 정수 다면체인 것과 같다.
-
-[정수계획법](integer-programming.md)의 삼각형 예에서는 절단이 한 번으로 끝났다. 변마다 $x_i+x_j\le1$ 을 둔 완화에 세 부등식을 $u=(1/2,1/2,1/2)$ 로 묶어 내림하면 $x_1+x_2+x_3\le1$ 이 나오고, 이 부등식과 $x\ge0$ 이 정수 껍질을 기술한다.
+삼각형의 세 정점에 $0$ 또는 $1$ 을 주되 변으로 이어진 두 정점에 동시에 $1$ 을 주지 않는 문제를 [정수계획법](integer-programming.md)으로 적는다. 정수 조건을 뺀 완화는 $x\ge0$ 과 변마다 $x_i+x_j\le1$ 이고, $(1/2,1/2,1/2)$ 도 이 완화를 만족한다. 세 변 부등식을 $1/2$ 씩 곱해 더하면 $x_1+x_2+x_3\le 3/2$ 이고, 정수점에서는 왼쪽이 정수이므로 오른쪽을 내림한 $x_1+x_2+x_3\le1$ 이 성립한다. 이 부등식과 $x\ge0$ 이 정수점의 볼록 껍질을 기술하므로 내림 한 번으로 끝난다.
 
 정점이 $n$ 개인 완전그래프에서 같은 것을 해 본다. 완화는 $x\ge0$ 과 모든 쌍에 대한 $x_i+x_j\le1$ 이고, 정수점은 한 좌표만 $1$ 인 점과 원점이므로 정수 껍질은 $\sum_i x_i\le1$ 로 기술된다. 변 부등식 $\binom n2$ 개에 각각 $u=1/(n-1)$ 을 주면 정점 하나가 변 $n-1$ 개에 속하므로 왼쪽 계수가 모두 $1$ 이 되고, 오른쪽은 $\binom n2/(n-1)=n/2$ 다. 내림하면 다음을 얻는다.
 
@@ -20,45 +16,47 @@ $$
 
 $n\ge4$ 이면 이 부등식은 $\sum_i x_i\le1$ 이 아니다. 한 번의 절단으로는 정수 껍질에 닿지 않는다.
 
-절단으로 얻은 부등식을 완화에 넣고 같은 연산을 다시 적용하면 오른쪽 값이 더 내려간다. 이 반복을 몇 번 해야 정수 껍질이 되는지가 다면체마다 정해지고, 그 횟수가 Chvátal 계수다.
+절단으로 얻은 부등식을 완화에 넣고 같은 연산을 다시 적용하면 오른쪽 값이 더 내려간다. 이 반복을 몇 번 해야 정수점의 볼록 껍질이 되는지가 다면체마다 정해지고, 그 횟수를 Chvátal 계수라 부른다.
 
 # 정의
 
-$P=\lbrace x\in\mathbb R^n:Ax\le b\rbrace$ 를 유리 다면체라 한다.
+$P=\lbrace x\in\mathbb R^n:Ax\le b\rbrace$ 를 유리 다면체라 하고, $P\cap\mathbb Z^n$ 의 볼록 껍질 $P_I$ 를 $P$ 의 **정수 껍질(integer hull)** 이라 한다.
 
 ## 기본 닫힘
 
-$u\ge0$ 이고 $u^{T}A$ 가 정수 벡터일 때 $u^{T}Ax\le\lfloor u^{T}b\rfloor$ 는 $P\cap\mathbb Z^n$ 에서 성립한다. 이런 부등식을 모두 더해 얻는 다면체
+$u\ge0$ 이고 $u^{T}A$ 가 정수 벡터일 때 $u^{T}Ax\le\lfloor u^{T}b\rfloor$ 는 $P\cap\mathbb Z^n$ 에서 성립한다. 이 부등식을 **Chvátal–Gomory 절단(Chvátal–Gomory cut)** 이라 한다. 이런 부등식을 모두 더해 얻는 다면체
 
 $$
-P'=\lbrace x\in P:u^{T}Ax\le\lfloor u^{T}b\rfloor\ \text{for all}\ u\ge0\ \text{with}\ u^{T}A\in\mathbb Z^n\rbrace
+P'=\lbrace x\in P:u^{T}Ax\le\lfloor u^{T}b\rfloor\thickspace\text{for all}\thickspace u\ge0\thickspace\text{with}\thickspace u^{T}A\in\mathbb Z^n\rbrace
 $$
 
-를 $P$ 의 **기본 닫힘**이라 한다. $P_I\subseteq P'\subseteq P$ 다.
+를 $P$ 의 **기본 닫힘(elementary closure)** 이라 한다. $P_I\subseteq P'\subseteq P$ 다.
+
+개요의 $P=\lbrace x:2x\le1,\thinspace -x\le0\rbrace=\lbrack 0,1/2\rbrack$ 에서 $u=(1/2,0)$ 이면 $x\le\lfloor 1/2\rfloor=0$ 이므로 $P'=\lbrace 0\rbrace=P_I$ 다.
 
 ## 계수
 
-$P^{(0)}=P$, $P^{(k+1)}=(P^{(k)})'$ 로 둔다. **Chvátal 계수**는 다음이다.
+$P^{(0)}=P$, $P^{(k+1)}=(P^{(k)})'$ 로 둔다. **Chvátal 계수** 는 다음이다.
 
 $$
 \mathrm{rank}(P)=\min\lbrace k\ge0:P^{(k)}=P_I\rbrace
 $$
 
-유효 부등식 $\alpha^{T}x\le\beta$ 에 대해서는 $P^{(k)}$ 에서 그 부등식이 성립하는 최소 $k$ 를 그 부등식의 계수라 한다.
+유효 부등식 $\alpha^{T}x\le\beta$ 에 대해서는 $P^{(k)}$ 에서 그 부등식이 성립하는 최소 $k$ 를 그 부등식의 계수라 한다. 개요의 구간과 직관 절의 삼각형은 계수가 $1$ 이고, 직관 절의 완전그래프 완화는 $n\ge4$ 이면 한 번의 닫힘 뒤에도 $\sum_ix_i\le1$ 이 성립하지 않으므로 계수가 $2$ 이상이다.
 
 # 성질
 
 ## 유한 종료
 
-**정리.** $P$ 가 유계인 유리 다면체이면 $\mathrm{rank}(P)$ 가 유한하다.[^1]
+$P$ 가 유계인 유리 다면체이면 $\mathrm{rank}(P)$ 가 유한하다.[^1]
 
-증명의 요지. $P$ 의 각 유효 부등식의 계수가 유한함을 보이면 된다. $P\cap\mathbb Z^n=\emptyset$ 인 경우로 먼저 줄인다. 그 경우 격자 방향 하나를 잡아 $P$ 를 그 방향의 정수 초평면들로 자르면 각 조각이 차원이 낮아지므로 차원에 대한 귀납이 돌아가고, 유한 번의 닫힘 뒤 $P^{(k)}=\emptyset$ 이 된다. 일반적인 경우는 유효 부등식 $\alpha^{T}x\le\beta$ 에 대해 $P\cap\lbrace\alpha^{T}x\ge\beta+1\rbrace$ 에 정수점이 없다는 데에 앞의 결과를 쓴다.
+증명의 요지는 다음과 같다. $P$ 의 각 유효 부등식의 계수가 유한함을 보이면 된다. $P\cap\mathbb Z^n=\emptyset$ 인 경우로 먼저 줄인다. 그 경우 격자 방향 하나를 잡아 $P$ 를 그 방향의 정수 초평면들로 자르면 각 조각이 차원이 낮아지므로 차원에 대한 귀납이 돌아가고, 유한 번의 닫힘 뒤 $P^{(k)}=\emptyset$ 이 된다. 일반적인 경우는 유효 부등식 $\alpha^{T}x\le\beta$ 에 대해 $P\cap\lbrace\alpha^{T}x\ge\beta+1\rbrace$ 에 정수점이 없다는 데에 앞의 결과를 쓴다.
 
 유계 조건은 뺄 수 없다. 무리 기울기를 갖는 무계 다면체는 닫힘을 아무리 반복해도 정수 껍질에 닿지 않는 예가 있다.[^2]
 
 ## 단위 입방체 안의 다면체
 
-$P\subseteq\lbrack 0,1\rbrack^n$ 일 때 계수의 크기는 차원으로 묶인다. $\mathrm{rank}(P)$ 는 $O(n^3\log n)$ 이고, 계수가 $n$ 을 넘는 $P$ 가 있다.[^3]
+$P\subseteq\lbrack 0,1\rbrack^n$ 일 때 계수의 크기는 차원으로 묶인다. Eisenbrand 와 Schulz 는 $\mathrm{rank}(P)$ 가 $O(n^2\log n)$ 이고, 계수가 $n$ 을 넘는 $P$ 가 있음을 보였다.[^3]
 
 ## 계수 0 과 정수 다면체
 
@@ -66,7 +64,7 @@ $\mathrm{rank}(P)=0$ 인 것과 $P=P_I$ 인 것이 같다. [완전 단일모듈 
 
 ## 홀수 사이클 부등식
 
-그래프 $G$ 의 [안정집합 다면체](stable-set-polytope.md)의 변 완화 $\lbrace x\ge0:x_i+x_j\le1\ (ij\in E)\rbrace$ 에서, 길이 $2k+1$ 인 사이클 $C$ 의 변 부등식에 $u=1/2$ 씩 주고 내림하면 다음을 얻는다.
+그래프 $G$ 의 [안정집합 다면체](stable-set-polytope.md)의 변 완화 $\lbrace x\ge0:x_i+x_j\le1\thickspace(ij\in E)\rbrace$ 에서, 길이 $2k+1$ 인 사이클 $C$ 의 변 부등식에 $u=1/2$ 씩 주고 내림하면 다음을 얻는다.
 
 $$
 \sum_{i\in C}x_i\le k
@@ -76,13 +74,13 @@ $$
 
 # 활용
 
-- 정수계획법의 절단평면 종료. 그 문서는 절단평면 방법이 유한 번에 끝난다고 서술하고 횟수를 다루지 않는다. 그 횟수가 Chvátal 계수다.
-- 완전 단일모듈 [행렬](matrices.md)의 정수성. 그 문서가 주는 다면체는 계수가 $0$ 이고, 계수는 그 정수성이 깨진 완화가 정수 껍질에서 얼마나 떨어져 있는지를 재는 값이 된다.
+- 절단평면 방법(cutting-plane method). Chvátal–Gomory 절단만 더하는 절단평면 방법이 정수 껍질에 닿는 데 필요한 닫힘의 횟수가 Chvátal 계수다.
+- 완전 단일모듈 [행렬](matrices.md)의 정수성. 그런 행렬로 적힌 다면체는 계수가 $0$ 이고, 계수는 정수성이 없는 완화가 정수 껍질에서 얼마나 떨어져 있는지를 잰다.
 - 완화의 질 비교. 같은 조합 문제의 두 선형 완화를 계수로 견준다. 위 홀수 사이클 부등식은 계수 $1$ 이므로 그것을 미리 넣은 완화는 계수가 하나 작다.
 
 [^1]: Schrijver, *Theory of Linear and Integer Programming*, §23.1–23.4 — 기본 닫힘의 정의, 유계 유리 다면체에서 계수의 유한성, 차원 귀납 증명.
 [^2]: Schrijver, 같은 책 §23.4 — 유계 조건을 뺀 반례.
-[^3]: Eisenbrand and Schulz, *Bounds on the Chvátal Rank of Polytopes in the 0/1-Cube*, Combinatorica 23 (2003), 245–261.
+[^3]: Eisenbrand and Schulz, *Bounds on the Chvátal Rank of Polytopes in the 0/1-Cube*, Combinatorica 23 (2003), 245–261. 상한 O(n² log n) 과 (1+ε)n 하한.
 
 # 연관 문서
 
