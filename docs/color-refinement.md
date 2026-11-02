@@ -24,13 +24,13 @@ $$
 
 $\mathrm{ID}$ 는 서로 다른 입력 쌍에 서로 다른 새 색을 배정하는 단사 함수이고, $\lbrace\negthinspace\lbrace\cdot\rbrace\negthinspace\rbrace$ 는 원소의 중복도를 보존하는 중복집합이다.
 
-두 그래프를 비교할 때는 같은 `ID` 규칙을 써야 하며, 두 그래프의 분리 합집합 위에서 색을 함께 갱신하면 보장된다.
+두 그래프를 비교할 때는 같은 $\mathrm{ID}$ 규칙을 써야 하며, 두 그래프의 분리 합집합 위에서 색을 함께 갱신하면 보장된다.
 
-정점 $k$ 개짜리 튜플에 색을 붙이는 $k\text{-WL}$ 로 일반화되며 $k$ 가 커질수록 구별력이 강해진다.
+경로 $a$-$b$-$c$ 에 모두 색 $0$ 을 주면 $c_1(a)=c_1(c)=\mathrm{ID}(0,\lbrace\negthinspace\lbrace 0\rbrace\negthinspace\rbrace)$ 이고 $c_1(b)=\mathrm{ID}(0,\lbrace\negthinspace\lbrace 0,0\rbrace\negthinspace\rbrace)$ 이어서 양 끝과 가운데가 다른 색이 된다. 직관 절의 육각형에서는 모든 정점의 입력이 $(0,\lbrace\negthinspace\lbrace 0,0\rbrace\negthinspace\rbrace)$ 로 같아 색이 하나로 남는다.
 
 ## 안정 분할
 
-색은 $V$ 의 분할을 정한다. $c_{t+1}$ 이 정하는 분할이 $c_t$ 의 것과 같아지면 그 이후로는 아무것도 바뀌지 않고, 이때의 분할이 **안정 분할**이다.
+색은 $V$ 의 분할을 정한다. $c_{t+1}$ 이 정하는 분할이 $c_t$ 의 것과 같아지면 그 이후로는 아무것도 바뀌지 않고, 이때의 분할을 **안정 분할(stable partition)** 이라 한다. 경로 $a$-$b$-$c$ 의 안정 분할은 $\lbrace\lbrace a,c\rbrace,\lbrace b\rbrace\rbrace$ 이고 $t=1$ 에서 도달한다. 다음 단계에서 $a$ 와 $c$ 는 둘 다 가운데 색의 이웃 하나를 가지므로 다시 나뉘지 않는다. 육각형의 안정 분할은 정점 전체 하나다.
 
 # 성질
 
@@ -44,13 +44,17 @@ $\mathrm{ID}$ 는 서로 다른 입력 쌍에 서로 다른 새 색을 배정하
 
 $\varphi: G \to H$ 가 동형사상이면 모든 $t$ 와 모든 $v$ 에 대해 $c_t(v) = c_t(\varphi(v))$ 다.
 
-*증명.* $t$ 에 대한 귀납으로 보인다. $t=0$ 은 초기 라벨이 대응한다는 가정이다. $t$ 에서 성립하면 $\varphi$ 가 $N(v)$ 를 $N(\varphi(v))$ 로 전단사로 옮기므로 이웃 색의 중복집합이 같고, 같은 $\mathrm{ID}$ 를 쓰므로 $c_{t+1}$ 도 같다.
+증명은 $t$ 에 대한 귀납이다. $t=0$ 은 초기 라벨이 대응한다는 가정이다. $t$ 에서 성립하면 $\varphi$ 가 $N(v)$ 를 $N(\varphi(v))$ 로 전단사로 옮기므로 이웃 색의 중복집합이 같고, 같은 $\mathrm{ID}$ 를 쓰므로 $c_{t+1}$ 도 같다.
 
 대우가 이 절차를 쓰는 근거다.
 
 $$
 \exists t:\ \lbrace\negthinspace\lbrace c_t(v):v\in V(G)\rbrace\negthinspace\rbrace\ \ne\ \lbrace\negthinspace\lbrace c_t(v):v\in V(H)\rbrace\negthinspace\rbrace\quad\Longrightarrow\quad G\not\cong H
 $$
+
+## k-WL
+
+정점 $k$ 개짜리 튜플에 색을 붙이는 $k\text{-WL}$ 로 일반화되며 $k$ 가 커질수록 구별력이 강해진다.
 
 ## 역의 실패
 
@@ -74,15 +78,15 @@ $C_6$ 와 $2K_3$ 는 모든 정점이 초기 색이 같고 차수가 2 다. 귀�
 
 ## 동형 판정의 전처리
 
-실용적인 동형 판정기는 먼저 color refinement 로 정점을 색 부류로 나눈다. 색 분포가 다르면 즉시 비동형으로 판정하고, 같으면 대응 후보를 같은 색끼리로 제한한 뒤 역추적으로 실제 대응을 찾는다. 무작위 그래프에서는 대부분 색 부류가 한 정점씩으로 쪼개져 후보가 거의 남지 않는다.
+실용적인 동형 판정기는 먼저 color refinement 로 정점을 색 부류로 나눈다. 색 분포가 다르면 즉시 비동형으로 판정하고, 같으면 대응 후보를 같은 색끼리로 제한한 뒤 역추적(backtracking)으로 실제 대응을 찾는다. 무작위 그래프에서는 대부분 색 부류가 한 정점씩으로 쪼개져 후보가 거의 남지 않는다.
 
 ## 정준 형식
 
-안정 분할이 정점을 부류로 나누면 부류를 정해진 순서로 나열해 그래프의 정준 라벨링을 만든다. 정준 형식을 비교하면 그래프를 해시 가능한 값으로 다룰 수 있다.
+안정 분할의 부류가 모두 한 정점씩이면 색의 순서로 정점에 번호를 매긴 것이 정준 라벨링(canonical labeling)이다. 그렇지 않으면 부류 하나에서 정점 하나에 새 색을 주고 다시 세분화하는 개별화(individualization)를 되풀이한다. 정준 형식(canonical form)을 비교하면 그래프를 해시 가능한 값으로 다룰 수 있다.
 
 ## 구조적 특징
 
-색 분포 자체가 그래프의 특징 벡터다. 반복 횟수 $t$ 를 고정하고 색 히스토그램을 만들면 Weisfeiler–Leman 커널이 되어 그래프 분류에 쓰인다.
+색 분포 자체가 그래프의 특징 벡터다. 반복 횟수 $t$ 를 고정하고 색 히스토그램을 만들면 Weisfeiler–Leman 커널(Weisfeiler–Leman kernel)이 되어 그래프 분류에 쓰인다.
 
 ## 표현력의 상한
 
