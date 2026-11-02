@@ -14,15 +14,17 @@
 
 ## 쌍대 사슬 복합체
 
-$(C_\bullet,\partial)$ 을 공간 $X$ 의 사슬 복합체, $R$ 를 가환환이라 하자. $C^n=\mathrm{Hom}(C_n,R)$ 로 두고 **코경계 연산자**를 $\partial$ 의 쌍대로 정의한다.
+$(C_\bullet,\partial)$ 을 공간 $X$ 의 사슬 복합체, $R$ 를 가환환이라 하자. $C^n=\mathrm{Hom}(C_n,R)$ 의 원소를 $n$ 차 **쌍대사슬(cochain)** 이라 하고, **코경계 연산자(coboundary operator)** $\delta$ 를 $\partial$ 의 쌍대로 정의한다.
 
 $$(\delta\varphi)(c)=\varphi(\partial c),\qquad \varphi\in C^n,\ c\in C_{n+1}$$
 
-$\partial\partial=0$ 에서 $\delta\delta=0$ 이 따라오므로 $(C^\bullet,\delta)$ 는 복합체이고, 화살표 방향만 반대다. **코호몰로지군**은 그 상동군이다.
+$\partial\partial=0$ 에서 $\delta\delta=0$ 이 따라오므로 $(C^\bullet,\delta)$ 는 복합체이고, 화살표 방향만 반대다. **코호몰로지군(cohomology group)** 은 그 상동군이다.
 
 $$H^n(X;R)=\ker\delta^n/\mathrm{im}\thinspace\delta^{n-1}$$
 
-$\ker\delta^n$ 의 원소를 코사이클, $\mathrm{im}\thinspace\delta^{n-1}$ 의 원소를 코경계라 한다.
+$\ker\delta^n$ 의 원소를 **코사이클(cocycle)**, $\mathrm{im}\thinspace\delta^{n-1}$ 의 원소를 **코경계(coboundary)** 라 한다.
+
+원 $S^1$ 을 꼭짓점 $v$ 하나와 변 $e$ 하나로 만들면 $\partial e=v-v=0$ 이다. 그래서 $C^0$ 에서 $\delta\varphi(e)=\varphi(\partial e)=0$ 이고 $\delta=0$ 이다. $H^0(S^1;\mathbb Z)\cong\mathbb Z$ 는 $v$ 에 정수를 주는 함수들이고, $H^1(S^1;\mathbb Z)\cong\mathbb Z$ 는 $\varphi(e)=1$ 인 코사이클 $\varphi$ 가 생성한다.
 
 ## 함자성
 
@@ -30,11 +32,11 @@ $\ker\delta^n$ 의 원소를 코사이클, $\mathrm{im}\thinspace\delta^{n-1}$ �
 
 ## 컵곱
 
-특이 사슬에서 $n+m$ 차 단체 $\sigma$ 의 앞 $n$ 개 꼭짓점이 펼치는 면을 $\sigma\vert\_{\lbrack 0..n\rbrack}$ , 뒤 $m$ 개가 펼치는 면을 $\sigma\vert\_{\lbrack n..n+m\rbrack}$ 라 쓴다.
+**컵곱(cup product)** 은 다음 곱이다. 특이 사슬에서 $n+m$ 차 단체 $\sigma$ 의 앞 $n+1$ 개 꼭짓점 $0,\dots,n$ 이 펼치는 면을 $\sigma\vert\_{\lbrack 0..n\rbrack}$ , 뒤 $m+1$ 개 꼭짓점 $n,\dots,n+m$ 이 펼치는 면을 $\sigma\vert\_{\lbrack n..n+m\rbrack}$ 라 쓴다.
 
 $$(\varphi\cup\psi)(\sigma)=\varphi(\sigma\vert\_{\lbrack 0..n\rbrack})\thinspace\psi(\sigma\vert\_{\lbrack n..n+m\rbrack})$$
 
-이 곱은 $\delta(\varphi\cup\psi)=\delta\varphi\cup\psi+(-1)^n\varphi\cup\delta\psi$ 를 만족하므로 코호몰로지로 내려가고, $H^\ast(X;R)=\bigoplus_n H^n(X;R)$ 은 등급환이 된다. 이것이 **코호몰로지환**이다.[^1]
+이 곱은 $\delta(\varphi\cup\psi)=\delta\varphi\cup\psi+(-1)^n\varphi\cup\delta\psi$ 를 만족하므로 코호몰로지로 내려가고, $H^\ast(X;R)=\bigoplus_n H^n(X;R)$ 은 등급환이 된다. 이것이 **코호몰로지환(cohomology ring)** 이다.[^1] 위의 $S^1$ 에서 $\varphi\cup\varphi$ 는 $2$ 차 쌍대사슬인데 $2$ 차 단체가 없으므로 $0$ 이다. 직관 절의 $\mathbb{CP}^2$ 에서는 $x\cup x$ 가 4 차 생성원이다.
 
 # 성질
 
@@ -60,10 +62,10 @@ $M$ 이 닫힌 유향 $n$ [다양체](manifolds.md)이면 기본류 $\lbrack M\r
 
 # 활용
 
-- **장애류.** [장애 이론](obstruction-theory.md)에서 사상을 한 차원 더 늘리려 할 때 생기는 장애가 코호몰로지류 하나다. [Postnikov 탑](postnikov-tower.md)의 k-불변량도 같은 형태다.
-- **특성류.** [특성류](characteristic-classes.md)는 [벡터다발](vector-bundles.md)에 코호몰로지류를 대응시키고, 다발의 곱에 대한 규칙이 컵곱으로 적힌다.
-- **미분형식.** [de Rham 코호몰로지](de-rham-cohomology.md)는 매끄러운 다양체에서 실계수 특이 코호몰로지와 같고, 쐐기곱이 컵곱에 대응한다.
-- **군 코호몰로지.** 군 $G$ 에 대해 $H^\ast(K(G,1);A)$ 를 $G$ 의 코호몰로지라 하고, $H^2$ 가 [군 확대](group-extensions.md)를 분류한다.
+- 장애류(obstruction class). [장애 이론](obstruction-theory.md)에서 사상을 한 차원 더 늘리려 할 때 생기는 장애가 코호몰로지류 하나다. [Postnikov 탑](postnikov-tower.md)의 k-불변량도 같은 형태다.
+- [특성류](characteristic-classes.md)는 [벡터다발](vector-bundles.md)에 코호몰로지류를 대응시키고, 다발의 곱에 대한 규칙이 컵곱으로 적힌다.
+- 미분형식. [de Rham 코호몰로지](de-rham-cohomology.md)는 매끄러운 다양체에서 실계수 특이 코호몰로지와 같고, 쐐기곱이 컵곱에 대응한다.
+- 군 코호몰로지(group cohomology). 군 $G$ 에 대해 $H^\ast(K(G,1);A)$ 를 $G$ 의 코호몰로지라 하고, $H^2$ 가 [군 확대](group-extensions.md)를 분류한다.
 
 [^1]: A. Hatcher, *Algebraic Topology*, Cambridge University Press, 2002. 3장이 보편계수 정리, 컵곱, Poincaré 쌍대성을 다루고 3.1절 끝의 예가 $\mathbb{CP}^2$ 와 $S^2\vee S^4$ 의 구별이다.
 
