@@ -22,23 +22,29 @@ $$
 \lambda(s,t)=\min\lbrace w(\delta(S)) : s\in S,\ t\notin S\rbrace
 $$
 
-를 최소 $s$–$t$ 절단의 크기라 한다. [Menger 정리](menger-theorem.md)의 흐름 판본에서 $\lambda(s,t)$ 는 최대 $s$–$t$ 흐름의 값이다.
+를 **최소 s–t 절단(minimum s–t cut)** 의 크기라 한다. 직관 절의 순환에서 $\lambda(a,b)=4$, $\lambda(c,d)=3$ 이고 나머지 네 쌍은 $2$ 다.
 
-$V$ 위의 나무 $T$ 와 간선 무게 $f$ 가 다음을 만족하면 Gomory–Hu 나무라 한다. $T$ 의 간선 $e=uv$ 를 지워 생기는 두 성분 가운데 $u$ 쪽을 $S_e$ 라 할 때, 모든 간선 $e$ 에서 $f(e)=w(\delta(S_e))=\lambda(u,v)$ 이다.
+$V$ 위의 나무 $T$ 와 간선 무게 $f$ 가 다음을 만족하면 **Gomory–Hu 나무(Gomory–Hu tree)** 라 한다. $T$ 의 간선 $e=uv$ 를 지워 생기는 두 성분 가운데 $u$ 쪽을 $S_e$ 라 할 때, 모든 간선 $e$ 에서 $f(e)=w(\delta(S_e))=\lambda(u,v)$ 이다.
+
+직관 절의 나무 $a$–$b$–$c$–$d$ 에서 간선 $ab$ 는 $S=\lbrace a\rbrace$ 로 $w(\delta(S))=4=\lambda(a,b)$, 간선 $bc$ 는 $S=\lbrace a,b\rbrace$ 로 $2=\lambda(b,c)$, 간선 $cd$ 는 $S=\lbrace a,b,c\rbrace$ 로 $2+1=3=\lambda(c,d)$ 여서 Gomory–Hu 나무다.
 
 # 성질
 
+## 최대 흐름과의 관계
+
+[Menger 정리](menger-theorem.md)의 흐름 판본, 곧 최대흐름 최소절단 정리(max-flow min-cut theorem)에 따라 $\lambda(s,t)$ 는 최대 $s$–$t$ 흐름의 값이다.
+
 ## 경로의 최솟값
 
-정리. Gomory–Hu 나무에서 $s$ 와 $t$ 를 잇는 경로의 간선들 가운데 무게가 가장 작은 $e$ 에 대해 $\lambda(s,t)=f(e)$ 이고, $S_e$ 가 최소 $s$–$t$ 절단이다.
+Gomory–Hu 나무에서 $s$ 와 $t$ 를 잇는 경로의 간선들 가운데 무게가 가장 작은 $e$ 에 대해 $\lambda(s,t)=f(e)$ 이고, $S_e$ 가 최소 $s$–$t$ 절단이다.
 
 증명의 요지. 세 정점 $s,u,t$ 에서 $\lambda(s,t)\ge\min(\lambda(s,u),\lambda(u,t))$ 이다. 직관 절의 논법과 같다. 경로 $s=v_0,v_1,\dots,v_k=t$ 에 이것을 되풀이 쓰면 $\lambda(s,t)$ 는 $\lambda(v_{i-1},v_i)=f(v_{i-1}v_i)$ 의 최솟값 이상이다. 거꾸로 경로의 간선 $e$ 를 지우면 $s$ 와 $t$ 가 다른 쪽에 놓이므로 $S_e$ 는 $s$ 와 $t$ 를 가르는 절단이고 크기가 $f(e)$ 다.
 
 ## 존재와 구성
 
-정리(Gomory–Hu). 모든 무향 그래프에 Gomory–Hu 나무가 존재하고, 최대 흐름 계산 $n-1$ 번으로 구성된다. R. E. Gomory 와 T. C. Hu 가 1961 년에 증명했다[^1].
+모든 무향 그래프에 Gomory–Hu 나무가 존재하고, 최대 흐름 계산 $n-1$ 번으로 구성된다. R. E. Gomory 와 T. C. Hu 가 1961 년에 증명했다[^1].
 
-Gomory–Hu 의 구성은 정점 집합을 나눈 덩어리들의 나무를 유지한다. 두 정점 이상이 든 덩어리에서 정점 $s,t$ 를 고르고, 나무에서 그 덩어리를 떼었을 때 생기는 다른 쪽 부분마다 정점 하나로 합친 그래프에서 최소 $s$–$t$ 절단을 구한다. 그 절단으로 덩어리를 둘로 나누고 무게 $\lambda(s,t)$ 의 간선으로 잇는다. 합친 그래프에서 구한 절단이 원래 그래프의 최소 절단이라는 것이 증명의 요지이고, 최소 절단 $S$ 와 $S'$ 에 대해 $w(\delta(S\cap S'))+w(\delta(S\cup S'))\le w(\delta(S))+w(\delta(S'))$ 인 부분모듈성을 쓴다.
+Gomory–Hu 의 구성은 정점 집합을 나눈 덩어리들의 나무를 유지한다. 두 정점 이상이 든 덩어리에서 정점 $s,t$ 를 고르고, 나무에서 그 덩어리를 떼었을 때 생기는 다른 쪽 부분마다 정점 하나로 합친 그래프에서 최소 $s$–$t$ 절단을 구한다. 그 절단으로 덩어리를 둘로 나누고 무게 $\lambda(s,t)$ 의 간선으로 잇는다. 합친 그래프에서 구한 절단이 원래 그래프의 최소 절단이라는 것이 증명의 요지이고, 최소 절단 $S$ 와 $S'$ 에 대해 $w(\delta(S\cap S'))+w(\delta(S\cup S'))\le w(\delta(S))+w(\delta(S'))$ 인 부분모듈성(submodularity)을 쓴다.
 
 D. Gusfield 는 정점을 합치지 않고 원래 그래프에서 최대 흐름 $n-1$ 번만 계산하는 구성을 주었다[^2]. 정점마다 부모 $p(v)$ 를 두고 $v$ 와 $p(v)$ 의 최소 절단을 구한 뒤, 그 절단의 $v$ 쪽에 있는 정점들의 부모를 $v$ 로 고친다. 아래 판본이 만드는 나무는 경로의 최솟값이 모든 쌍에서 $\lambda(s,t)$ 와 같은 등가 흐름 나무(equivalent flow tree)이고, 부모를 한 번 더 맞바꾸는 단계를 더하면 절단까지 맞는 Gomory–Hu 나무가 된다.
 
