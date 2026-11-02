@@ -6,15 +6,13 @@
 
 # 직관
 
-근접 경사법은 [미분](derivative.md)가능한 볼록 함수와 미분 불가능한 볼록 함수의 합을 최소화하는 1 차 방법이다. 미분가능한 항에는 경사하강법의 걸음을 밟고, 나머지 항은 근접 연산자로 한 걸음에 정확히 처리한다. 근접 연산자를 닫힌 식으로 계산할 수 있는 항에서는 걸음 비용이 경사하강법과 같고 수렴률도 같은 $O(1/k)$ 다.
-
-$\frac{1}{2}\Vert Ax-b\Vert^2+\lambda\Vert x\Vert\_1$ 을 최소화한다. 뒤 항의 한 좌표 $\vert x_j\vert$ 는 $x_j\gt 0$ 에서 미분이 $1$ , $x_j\lt 0$ 에서 $-1$ 이고 $x_j=0$ 에서는 없다. 이 문제를 푸는 목적이 여러 좌표가 정확히 $0$ 인 해를 얻는 것이므로, 기울기가 없는 자리가 바로 찾으려는 자리다. 그래서 앞 항 $f$ 는 현재 점에서 접평면과 이차항으로 바꿔 쓰고, 뒤 항 $g$ 는 건드리지 않은 채 그 합을 최소화한다.
+$\frac{1}{2}\Vert Ax-b\Vert^2+\lambda\Vert x\Vert\_1$ 을 최소화한다. 뒤 항의 한 좌표 $\vert x_j\vert$ 는 $x_j\gt 0$ 에서 [미분](derivative.md)이 $1$ , $x_j\lt 0$ 에서 $-1$ 이고 $x_j=0$ 에서는 없다. 이 문제를 푸는 목적이 여러 좌표가 정확히 $0$ 인 해를 얻는 것이므로, 기울기가 없는 자리가 바로 찾으려는 자리다. 그래서 앞 항 $f$ 는 현재 점에서 접평면과 이차항으로 바꿔 쓰고, 뒤 항 $g$ 는 건드리지 않은 채 그 합을 최소화한다.
 
 $$
 x_{k+1}=\mathop{\mathrm{arg\thinspace min}}\_{x}\Bigl(f(x_k)+\nabla f(x_k)^\top(x-x_k)+\frac{1}{2\eta}\Vert x-x_k\Vert^2+g(x)\Bigr)
 $$
 
-$x$ 에 의존하지 않는 항을 버리고 제곱을 묶으면 괄호 안이 $\frac{1}{2\eta}\Vert x-z_k\Vert^2+g(x)$ 이고 $z_k=x_k-\eta\nabla f(x_k)$ 다. 경사 걸음을 먼저 밟아 $z_k$ 로 간 다음, 그 점에서 멀어지는 값을 물면서 $g$ 를 줄이는 것이 한 걸음이다. $g(x)=\lambda\Vert x\Vert\_1$ 이면 이 최소화가 좌표마다 갈라져 한 좌표의 문제는 $\frac{1}{2\eta}(x-z)^2+\lambda\vert x\vert$ 이고, $z\gt\eta\lambda$ 이면 최소점이 $z-\eta\lambda$ , $z\lt-\eta\lambda$ 이면 $z+\eta\lambda$ , 그 사이이면 $0$ 이다. 미분이 없는 점 $x=0$ 이 최소점으로 나오는 구간이 생기고, 그 좌표가 정확히 $0$ 이 된다.
+$x$ 에 의존하지 않는 항을 버리고 제곱을 묶으면 괄호 안이 $\frac{1}{2\eta}\Vert x-z_k\Vert^2+g(x)$ 이고 $z_k=x_k-\eta\nabla f(x_k)$ 다. 경사 걸음을 먼저 밟아 $z_k$ 로 간 다음, 그 점에서 멀어진 거리의 제곱을 더한 채 $g$ 를 줄이는 것이 한 걸음이다. $g(x)=\lambda\Vert x\Vert\_1$ 이면 이 최소화가 좌표마다 갈라져 한 좌표의 문제는 $\frac{1}{2\eta}(x-z)^2+\lambda\vert x\vert$ 이고, $z\gt\eta\lambda$ 이면 최소점이 $z-\eta\lambda$ , $z\lt-\eta\lambda$ 이면 $z+\eta\lambda$ , 그 사이이면 $0$ 이다. 미분이 없는 점 $x=0$ 이 최소점으로 나오는 구간이 생기고, 그 좌표가 정확히 $0$ 이 된다.
 
 # 정의
 
@@ -30,7 +28,7 @@ $$
 \mathrm{prox}\_{\eta g}(z)=\mathop{\mathrm{arg\thinspace min}}\_{x}\Bigl(g(x)+\frac{1}{2\eta}\Vert x-z\Vert^2\Bigr)
 $$
 
-이 사상을 $g$ 의 **근접 연산자**(proximal operator) 라 한다. 괄호 안이 $1/\eta$ 강볼록이므로 최소점이 하나뿐이고 연산자가 잘 정의된다. $g$ 가 $C$ 안에서 $0$ 이고 밖에서 $+\infty$ 인 함수, 곧 볼록집합 $C$ 의 지시함수이면 $\mathrm{prox}\_{\eta g}$ 는 $C$ 로의 사영이다.
+이 사상을 $g$ 의 **근접 연산자(proximal operator)** 라 한다. 괄호 안이 $1/\eta$ 강볼록이므로 최소점이 하나뿐이고 연산자가 잘 정의된다. $g$ 가 $C$ 안에서 $0$ 이고 밖에서 $+\infty$ 인 함수, 곧 볼록집합 $C$ 의 지시함수이면 $\mathrm{prox}\_{\eta g}$ 는 $C$ 로의 사영이다. 한 변수에서 $g(x)=\vert x\vert$, $\eta=1$ 이면 직관 절의 계산으로 $\mathrm{prox}\_{g}(3)=2$, $\mathrm{prox}\_{g}(0.5)=0$, $\mathrm{prox}\_{g}(-2)=-1$ 이다.
 
 ## 근접 경사 반복
 
@@ -38,7 +36,7 @@ $$
 x_{k+1}=\mathrm{prox}\_{\eta g}\bigl(x_k-\eta\thinspace\nabla f(x_k)\bigr),\qquad 0\lt \eta\le 1/L
 $$
 
-이 반복을 **근접 경사법**이라 한다. $g=0$ 이면 근접 연산자가 항등사상이라 경사하강법이 된다.
+이 반복이 근접 경사법이다. $g=0$ 이면 근접 연산자가 항등사상이라 경사하강법이 된다. 한 변수에서 $f(x)=\frac12(x-3)^2$, $g(x)=\vert x\vert$ 이면 $L=1$ 이고, $\eta=1$ 로 두면 어느 $x_0$ 에서든 경사 걸음이 $3$ 으로 가고 근접 걸음이 $x_1=2$ 를 준다. $F(x)=\frac12(x-3)^2+\vert x\vert$ 의 최소점이 $2$ 이므로 한 걸음에 끝난다.
 
 ## 연성 문턱
 
@@ -48,7 +46,7 @@ $$
 \bigl(\mathrm{prox}\_{\eta g}(z)\bigr)\_j=\mathrm{sign}(z_j)\thinspace\max\bigl(\vert z_j\vert-\eta\lambda,\thinspace 0\bigr)
 $$
 
-이 사상을 **연성 문턱**(soft thresholding) 이라 하고, 이 $g$ 에 대한 근접 경사법을 ISTA(iterative shrinkage-thresholding algorithm) 라 한다.
+이 사상을 **연성 문턱(soft thresholding)** 이라 하고, 이 $g$ 에 대한 근접 경사법을 ISTA(iterative shrinkage-thresholding algorithm) 라 한다.
 
 # 성질
 
@@ -102,11 +100,11 @@ $f(x)=\frac{1}{2}\Vert Ax-b\Vert^2$ , $g(x)=\lambda\Vert x\Vert\_1$ 로 두면 �
 
 ## 제약이 있는 매끄러운 최소화
 
-$g$ 를 볼록집합 $C$ 의 지시함수로 두면 근접 걸음이 $C$ 로의 사영이고 반복이 사영 경사법이 된다. 이때 위 $O(1/k)$ 정리가 그대로 적용된다.
+$g$ 를 볼록집합 $C$ 의 지시함수로 두면 근접 걸음이 $C$ 로의 사영이고 반복이 사영 경사법(projected gradient method)이 된다. 이때 위 $O(1/k)$ 정리가 그대로 적용된다.
 
 ## 핵 노름 최소화
 
-행렬의 특이값 합을 $g$ 로 두면 근접 연산자가 [특이값 분해](singular-value-decomposition.md) 뒤 특이값마다 연성 문턱을 적용한 것이다. 관측된 성분만 맞추는 $f$ 와 함께 쓰면 낮은 계수 행렬을 복원하는 반복이 된다.
+행렬의 특이값 합인 핵 노름(nuclear norm)을 $g$ 로 두면 근접 연산자가 [특이값 분해](singular-value-decomposition.md) 뒤 특이값마다 연성 문턱을 적용한 것이다. 관측된 성분만 맞추는 $f$ 와 함께 쓰면 낮은 계수 행렬을 복원하는 [행렬 완성](matrix-completion.md)의 반복이 된다.
 
 [^1]: N. Parikh and S. Boyd, *Proximal Algorithms*, Foundations and Trends in Optimization 1(3), 2014, 2.3 절.
 [^2]: A. Beck and M. Teboulle, *A Fast Iterative Shrinkage-Thresholding Algorithm for Linear Inverse Problems*, SIAM Journal on Imaging Sciences 2(1), 2009, Theorem 3.1 과 Theorem 4.4.
