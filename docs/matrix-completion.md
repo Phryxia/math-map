@@ -6,8 +6,6 @@
 
 # 직관
 
-행렬 완성은 일부 성분만 관측된 행렬에서 계수가 낮다는 가정으로 관측되지 않은 성분을 복원하는 문제다. 계수는 볼록함수가 아니므로 계수 최소화는 볼록 최적화로 풀 수 없다. [압축 센싱](compressed-sensing.md)이 $0$ 이 아닌 성분의 개수를 $\ell\_1$ 노름으로 바꾸듯, 행렬 완성은 계수를 [특이값 분해](singular-value-decomposition.md)의 특이값의 합인 핵노름으로 바꾼다. 행렬이 특정 성분에 몰려 있지 않고 무작위로 고른 관측이 충분하면 핵노름 최소화의 해가 원래 행렬과 일치한다.
-
 $2\times 2$ 행렬에서 세 성분이 $1,2,3$ 이고 오른쪽 아래가 비어 있다.
 
 $$
@@ -18,17 +16,17 @@ $$
 
 관측 위치가 나쁘면 정해지지 않는다. 왼쪽 위 성분만 $1$ 이고 나머지가 $0$ 인 행렬도 계수가 $1$ 인데, 왼쪽 위를 관측하지 못하면 영행렬과 구별할 수 없다. 정보가 성분 몇 개에 몰린 행렬은 관측에서 빠지기 쉬우므로, 복원이 되려면 행렬의 정보가 모든 행과 열에 퍼져 있어야 한다.
 
-정해진다 해도 계산이 남는다. 계수는 $0$ 이 아닌 특이값의 개수이므로 압축 센싱의 $0$ 이 아닌 성분의 개수와 같은 꼴이다. 압축 센싱에서 개수를 절댓값의 합으로 바꿨듯 여기서는 특이값의 합을 최소화한다.
+정해진다 해도 계산이 남는다. 계수는 $0$ 이 아닌 특이값의 개수이므로 [압축 센싱](compressed-sensing.md)의 $0$ 이 아닌 성분의 개수와 같은 꼴이고, 계수는 볼록함수가 아니다. 압축 센싱에서 개수를 절댓값의 합으로 바꿨듯 여기서는 특이값의 합을 최소화한다.
 
 # 정의
 
 ## 관측 사상
 
-$M\in\mathbb R^{n_1\times n_2}$ 의 성분 가운데 위치 집합 $\Omega\subset\lbrace 1,\dots,n_1\rbrace\times\lbrace 1,\dots,n_2\rbrace$ 의 것만 관측한다. 관측 사상 $P_\Omega$ 는 $(i,j)\in\Omega$ 이면 $(P_\Omega X)\_{ij}=X_{ij}$, 아니면 $0$ 으로 두는 사상이다.
+$M\in\mathbb R^{n_1\times n_2}$ 의 성분 가운데 위치 집합 $\Omega\subset\lbrace 1,\dots,n_1\rbrace\times\lbrace 1,\dots,n_2\rbrace$ 의 것만 관측한다. **관측 사상(sampling operator)** $P_\Omega$ 는 $(i,j)\in\Omega$ 이면 $(P_\Omega X)\_{ij}=X_{ij}$, 아니면 $0$ 으로 두는 사상이다. 직관 절의 $2\times 2$ 행렬은 $\Omega=\lbrace(1,1),(1,2),(2,1)\rbrace$ 이고, $P_\Omega$ 는 오른쪽 아래 성분을 $0$ 으로 바꾼다.
 
 ## 핵노름 최소화
 
-$X$ 의 특이값을 $\sigma_1(X)\ge\sigma_2(X)\ge\cdots$ 이라 할 때 **핵노름(nuclear norm)** 은
+$X$ 의 [특이값 분해](singular-value-decomposition.md)의 특이값을 $\sigma_1(X)\ge\sigma_2(X)\ge\cdots$ 이라 할 때 **핵노름(nuclear norm)** 은
 
 $$
 \Vert X\Vert_\ast=\sum_i\sigma_i(X)
@@ -37,8 +35,10 @@ $$
 이다. 계수 최소화 문제와 그 볼록 완화는 다음과 같다.
 
 $$
-\min_X\ \mathrm{rank}\thinspace X\quad\text{s.t.}\quad P_\Omega(X)=P_\Omega(M),\qquad\qquad \min_X\ \Vert X\Vert_\ast\quad\text{s.t.}\quad P_\Omega(X)=P_\Omega(M)
+\min_X\thinspace \mathrm{rank}\thinspace X\quad\text{s.t.}\quad P_\Omega(X)=P_\Omega(M),\qquad\qquad \min_X\thinspace \Vert X\Vert_\ast\quad\text{s.t.}\quad P_\Omega(X)=P_\Omega(M)
 $$
+
+$2\times 2$ 행렬에서는 $\Vert X\Vert_\ast^2=\sigma_1^2+\sigma_2^2+2\sigma_1\sigma_2=\sum X_{ij}^2+2\lvert\det X\rvert$ 다. 직관 절의 빈칸에 $t$ 를 넣으면 $\Vert X\Vert_\ast^2=14+t^2+2\lvert t-6\rvert$ 이다. 계수 최소화의 해는 $t=6$ 이고 핵노름은 $\sqrt{50}\approx 7.07$ 이다. 핵노름 최소화의 해는 $t=1$ 이고 핵노름은 $5$ 이므로, 이 예에서 두 문제의 해가 다르다. 관측이 세 개뿐이고 아래 비간섭 조건과 관측 수 조건을 만족하지 않는 경우다.
 
 ## 비간섭 조건
 
