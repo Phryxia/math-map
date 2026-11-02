@@ -20,8 +20,6 @@ $$
 
 $y_{13}=y_{23}=0$ 을 넣으면 $x_1+x_2+x_3\le 1$ 이다. 변 부등식에 변수 하나씩을 곱하고 곱을 새 변수로 바꾼 선형계획만으로 클릭 부등식이 나왔고, $(1/2,1/2,1/2)$ 은 잘려 나간다. 곱하는 인자의 개수를 늘리며 이 절차를 반복한 것이 Sherali–Adams 계층이다.
 
-단계 $r$ 의 완화는 크기가 $n^{O(r)}$ 인 선형계획이고, 단계가 올라갈수록 완화가 좁아져 단계 $n$ 에서 정수 껍질에 닿는다. [Chvátal 계수](chvatal-rank.md)가 내림으로 얻는 절단을 반복하는 횟수를 재는 것과 달리, 이 계층은 곱셈으로 절단을 만든다.
-
 # 정의
 
 $P=\lbrace x\in\lbrack 0,1\rbrack^n:Ax\le b\rbrace$ 이고 정수 껍질을 $P_I=\mathrm{conv}(P\cap\lbrace 0,1\rbrace^n)$ 으로 쓴다. $P$ 를 정의하는 부등식에 $x_k\ge 0$ 과 $1-x_k\ge 0$ 이 모두 들어 있다고 둔다.
@@ -37,9 +35,9 @@ $$
 1. 각 단항식에서 $x_i^2$ 을 $x_i$ 로 바꿔 다중선형 다항식으로 만든다.
 2. 단항식 $\prod_{i\in S}x_i$ 를 새 변수 $y_S$ 로 바꾼다. $y_\emptyset=1$, $y_{\lbrace i\rbrace}=x_i$ 다.
 
-이렇게 얻은 변수 $(y_S)\_{\lvert S\rvert\le r+1}$ 의 선형 부등식계를 만족하는 $y$ 의 $x$ 좌표 전체를 $\mathrm{SA}\_r(P)$ 라 한다. 이것이 $P$ 의 단계 $r$ **Sherali–Adams 완화(Sherali–Adams relaxation)** 다.[^1]
+이렇게 얻은 변수 $(y_S)\_{\lvert S\rvert\le r+1}$ 의 선형 부등식계를 만족하는 $y$ 의 $x$ 좌표 전체를 $\mathrm{SA}\_r(P)$ 라 한다. 이것이 $P$ 의 단계 $r$ **Sherali–Adams 완화(Sherali–Adams relaxation)** 다[^1]. 직관 절의 삼각형에서 $P$ 는 변 부등식 셋과 $0\le x_k\le 1$ 로 정의되고, 직관 절의 계산은 단계 $1$ 의 곱셈이다. 그래서 $\mathrm{SA}\_1(P)$ 의 점은 $x_1+x_2+x_3\le 1$ 을 만족하고, $\mathrm{SA}\_1(P)=P_I$ 다.
 
-같은 곱셈을 인자 하나씩만 하고 사영한 뒤 반복하는 것이 **Lovász–Schrijver 연산(Lovász–Schrijver operator)** 이다. $P$ 의 부등식에 $x_j$ 또는 $1-x_j$ 를 곱해 선형화하고 $x$ 좌표로 사영한 집합을 $N(P)$ 라 하고, $N^r(P)$ 는 이것을 $r$ 번 반복한 것이다.[^2]
+같은 곱셈을 인자 하나씩만 하고 사영한 뒤 반복하는 것이 **Lovász–Schrijver 연산(Lovász–Schrijver operator)** 이다. $P$ 의 부등식에 $x_j$ 또는 $1-x_j$ 를 곱해 선형화하고 $x$ 좌표로 사영한 집합을 $N(P)$ 라 하고, $N^r(P)$ 는 이것을 $r$ 번 반복한 것이다[^2]. 직관 절의 계산은 한 부등식에 $x_1$ 과 $1-x_3$ 을 각각 곱한 것이므로 삼각형에서는 $N(P)$ 도 $x_1+x_2+x_3\le 1$ 을 만족한다.
 
 # 성질
 
@@ -55,11 +53,11 @@ $\mathrm{SA}\_n(P)=P_I$ 의 증명의 요지. $\lbrack n\rbrack$ 을 $I$ 와 $J=
 
 ## 계산 비용
 
-단계 $r$ 의 선형계획은 변수가 $\sum_{k\le r+1}\binom nk$ 개, 부등식이 $P$ 의 부등식 수의 $O((2n)^r)$ 배이므로 $r$ 이 고정되면 크기가 $n$ 의 다항식이다. [선형계획법](linear-programming.md)의 다항시간 해법으로 $\mathrm{SA}\_r(P)$ 위의 최적화가 $n^{O(r)}$ 시간에 풀린다. 반면 Chvátal 계수의 기본 닫힘 $P'$ 에 점이 속하는지 판정하는 문제는 coNP 완전이다.[^3]
+단계 $r$ 의 선형계획은 변수가 $\sum_{k\le r+1}\binom nk$ 개, 부등식이 $P$ 의 부등식 수의 $O((2n)^r)$ 배이므로 $r$ 이 고정되면 크기가 $n$ 의 다항식이다. [선형계획법](linear-programming.md)의 다항시간 해법으로 $\mathrm{SA}\_r(P)$ 위의 최적화가 $n^{O(r)}$ 시간에 풀린다. 반면 [Chvátal 계수](chvatal-rank.md)를 정의하는 기본 닫힘 $P'$ 에 점이 속하는지 판정하는 문제는 coNP 완전이다.[^3]
 
 ## 국소 분포
 
-$x\_k\ge 0$, $1-x\_k\ge 0$ 에 곱한 부등식만 보면, $y$ 가 이 부등식들을 만족하는 것은 크기가 $r+1$ 이하인 집합 $T\subseteq\lbrack n\rbrack$ 마다 $\lbrace 0,1\rbrace^T$ 위의 확률분포가 존재하고, 두 집합의 분포가 공통 부분에서 같은 주변분포를 갖고, $y_S$ 가 $S$ 의 변수가 모두 $1$ 일 확률인 것과 동치다. 확률분포의 값은 $\delta_{I,J}$ 를 선형화한 값이다. 그래서 단계 $r$ 의 점은 $r+1$ 개 이하의 변수만 보면 정수점들의 혼합처럼 보이는 점이고, 정수 간격의 하한을 보이려면 이런 국소 분포를 구성하면 된다.
+$x\_k\ge 0$, $1-x\_k\ge 0$ 에 곱한 부등식만 보면, $y$ 가 이 부등식들을 만족하는 것은 크기가 $r+1$ 이하인 집합 $T\subseteq\lbrack n\rbrack$ 마다 $\lbrace 0,1\rbrace^T$ 위의 확률분포가 존재하고, 두 집합의 분포가 공통 부분에서 같은 주변분포를 갖고, $y_S$ 가 $S$ 의 변수가 모두 $1$ 일 확률인 것과 동치다. 확률분포의 값은 $\delta_{I,J}$ 를 선형화한 값이다. 그래서 단계 $r$ 의 점은 $r+1$ 개 이하의 변수만 보면 정수점들의 혼합처럼 보이는 점이고, 정수 간극(integrality gap)의 하한을 보이려면 이런 국소 분포를 구성하면 된다.
 
 ## Lovász–Schrijver 연산과의 비교
 
@@ -77,9 +75,9 @@ $\lbrack 0,1\rbrack^n$ 안의 다면체에서 Sherali–Adams 계층은 언제�
 
 # 활용
 
-- **정수 간격의 하한.** [근사 알고리즘](approximation-algorithms.md)의 한계를 보이는 방법으로, 어떤 문제의 Sherali–Adams 완화가 많은 단계에서도 정수 최적값과 멀리 떨어진 값을 갖는다는 것을 국소 분포를 구성해 증명한다. 꼭짓점 덮개(vertex cover)는 상수 $\delta\gt 0$ 에 대해 $n^\delta$ 단계에서도 정수 간격이 $2-\varepsilon$ 이다.[^4]
-- **반정부호 계층의 비교 기준.** [반정부호 계획법](semidefinite-programming.md)의 [Lasserre 계층](lasserre-hierarchy.md)은 Sherali–Adams 의 곱셈에 모멘트 [행렬](matrices.md)이 반정부호라는 조건을 더한 것이고, 같은 단계에서 Sherali–Adams 완화보다 좁다. Lovász–Schrijver 연산에 반정부호 조건을 더한 판을 변 완화에 한 번 적용한 집합은 [Lovász 세타 함수](lovasz-theta.md)의 세타 몸체에 포함된다.[^2]
-- **분기 절단법의 절단 생성.** 단계 $1$ 의 곱셈을 변수 하나에만 적용해 얻는 lift-and-project 절단을 정수계획 풀이의 절단평면으로 쓴다.
+- 정수 간극의 하한. [근사 알고리즘](approximation-algorithms.md)의 한계를 보이는 방법으로, 어떤 문제의 Sherali–Adams 완화가 많은 단계에서도 정수 최적값과 멀리 떨어진 값을 갖는다는 것을 국소 분포를 구성해 증명한다. 꼭짓점 덮개(vertex cover)는 상수 $\delta\gt 0$ 에 대해 $n^\delta$ 단계에서도 정수 간극이 $2-\varepsilon$ 이다.[^4]
+- 반정부호 계층의 비교 기준. [반정부호 계획법](semidefinite-programming.md)의 [Lasserre 계층](lasserre-hierarchy.md)은 Sherali–Adams 의 곱셈에 모멘트 [행렬](matrices.md)이 반정부호라는 조건을 더한 것이고, 같은 단계에서 Sherali–Adams 완화보다 좁다. Lovász–Schrijver 연산에 반정부호 조건을 더한 판을 변 완화에 한 번 적용한 집합은 [Lovász 세타 함수](lovasz-theta.md)의 세타 몸체에 포함된다.[^2]
+- 분기 절단법(branch and cut)의 절단 생성. 단계 $1$ 의 곱셈을 변수 하나에만 적용해 얻는 lift-and-project 절단을 정수계획 풀이의 절단평면으로 쓴다.
 
 [^1]: H. D. Sherali and W. P. Adams, *A hierarchy of relaxations between the continuous and convex hull representations for zero-one programming problems*, SIAM Journal on Discrete Mathematics **3** (1990), 411–430. M. Laurent, *A comparison of the Sherali–Adams, Lovász–Schrijver, and Lasserre relaxations for 0–1 programming*, Mathematics of Operations Research **28** (2003), 470–496.
 [^2]: L. Lovász and A. Schrijver, *Cones of matrices and set-functions and 0–1 optimization*, SIAM Journal on Optimization **1** (1991), 166–190.
