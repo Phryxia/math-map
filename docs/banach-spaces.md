@@ -6,19 +6,17 @@
 
 # 직관
 
-해를 직접 쓸 수 없을 때 근사열의 극한으로 해를 얻으려면 극한이 공간 안에 있어야 한다. 같은 함수 집합도 노름에 따라 완비성이 달라져서, [연속함수](continuity.md)열이 [균등수렴](uniform-convergence.md)하면 극한이 연속이므로 $C\lbrack 0,1\rbrack$ 은 상한 노름에서 완비다. 같은 집합을 적분 노름으로 재면 극한이 연속이 아닐 수 있어 완비가 아니다.
+해를 직접 쓸 수 없을 때 근사해를 차례로 만들어 극한을 해로 삼으려면, 근사열의 극한이 같은 함수 공간 안에 있어야 한다. $\lbrack 0,1\rbrack$ 위의 [연속함수](continuity.md) 전체 $C\lbrack 0,1\rbrack$ 에서 이것이 되는지는 함수의 크기를 어떻게 재느냐에 달려 있다.
 
-무한차원에는 좌표가 없을 수 있어 0 이 아닌 연속 선형범함수의 존재가 자명하지 않은데, [Hahn–Banach 정리](hahn-banach-theorem.md)는 부분공간에서 정의된 범함수를 노름을 키우지 않고 전체로 확장한다. 쌍대공간이 아래 식만큼 크면 볼록집합의 분리와 약한 위상의 이론이 가능하다.
+$f_n$ 을 $x\le 1/2$ 에서 $0$, $x\ge 1/2+1/n$ 에서 $1$ 이고 그 사이에서 직선으로 올라가는 연속함수라 한다. 두 함수 사이의 거리를 $\int_0^1\vert f-g\vert\thinspace dx$ 로 재면 $m\gt n$ 일 때 $f_n$ 과 $f_m$ 은 길이 $1/n$ 인 구간에서만 다르고 차이가 $1$ 이하이므로 거리가 $1/n$ 이하다. 열은 점점 서로 가까워지지만, 다가가는 함수는 $1/2$ 에서 $0$ 에서 $1$ 로 뛰는 계단함수이고 연속이 아니다. 이 재는 방법으로는 극한이 $C\lbrack 0,1\rbrack$ 밖에 있다.
 
-$$
-x\ne0\thinspace\Longrightarrow\thinspace\exists f\in X^\ast:\thinspace\lVert f\rVert=1,\thinspace f(x)=\lVert x\rVert
-$$
+거리를 $\sup_x\vert f(x)-g(x)\vert$ 로 재면 같은 $f_n$ 들은 서로 가까워지지 않는다. $f_n$ 과 $f_{2n}$ 은 $x=1/2+1/(2n)$ 에서 차이가 $1/2$ 이다. 이 재는 방법에서 서로 가까워지는 연속함수열은 [균등수렴](uniform-convergence.md)하고, 균등수렴의 극한은 연속이므로 극한이 $C\lbrack 0,1\rbrack$ 안에 있다. 크기를 재는 방법과 그 방법으로 극한이 늘 공간 안에 있다는 성질을 함께 갖춘 공간이 Banach 공간이다.
 
 # 정의
 
 ## 노름공간과 Banach 공간
 
-벡터공간 $X$ 위의 **노름**은 다음을 만족하는 $\lVert\cdot\rVert:X\to[0,\infty)$ 다.
+벡터 공간 $X$ 위의 **노름(norm)** 은 다음을 만족하는 함수 $\lVert\cdot\rVert:X\to\lbrack 0,\infty)$ 다.
 
 $$
 \lVert x\rVert=0\iff x=0,\qquad
@@ -26,36 +24,42 @@ $$
 \lVert x+y\rVert\le\lVert x\rVert+\lVert y\rVert
 $$
 
-$d(x,y)=\lVert x-y\rVert$ 가 거리를 주고, 이 거리에 대해 [완비](completeness.md)이면 **Banach 공간**이다.
+노름을 준 벡터 공간을 **노름공간(normed space)** 이라 한다. $d(x,y)=\lVert x-y\rVert$ 가 거리를 주고, 이 거리에 대해 [완비](completeness.md)인 노름공간을 **Banach 공간**이라 한다.
+
+- 직관 절의 $\lVert f\rVert_\infty=\sup\vert f\vert$ 와 $\lVert f\rVert_1=\int_0^1\vert f\vert$ 는 둘 다 $C\lbrack 0,1\rbrack$ 의 노름이다. $(C\lbrack 0,1\rbrack,\lVert\cdot\rVert_\infty)$ 는 Banach 공간이고, $(C\lbrack 0,1\rbrack,\lVert\cdot\rVert_1)$ 은 직관 절의 $f_n$ 이 Cauchy 열이면서 극한이 없으므로 Banach 공간이 아니다.
 
 | 공간 | 노름 | 완비인가 |
 |---|---|---|
 | $\mathbb R^n$ | 임의의 노름 | 예 |
-| $C[0,1]$ | $\sup\vert f\vert$ | 예 |
-| $C[0,1]$ | $\int\vert f\vert$ | 아니오 |
-| $1\le p\le\infty$ 의 $\ell^p$ 와 $L^p$ | $(\sum\vert x_n\vert^p)^{1/p}$ | 예 |
-| $c_0$ | $\sup\vert x_n\vert$ | 예 |
-| 다항식 전체 | $\sup_{[0,1]}\vert f\vert$ | 아니오 |
+| $C\lbrack 0,1\rbrack$ | $\sup\vert f\vert$ | 예 |
+| $C\lbrack 0,1\rbrack$ | $\int\vert f\vert$ | 아니오 |
+| $1\le p\lt\infty$ 의 $\ell^p$ | $(\sum\vert x_n\vert^p)^{1/p}$ | 예 |
+| $\ell^\infty$, $c_0$ | $\sup\vert x_n\vert$ | 예 |
+| $\lbrack 0,1\rbrack$ 위의 다항식 전체 | $\sup\vert f\vert$ | 아니오 |
 
-$p=2$ 인 경우에만 노름이 내적에서 나오고, 그때가 [Hilbert 공간](hilbert-spaces.md)이다. 판정 기준은 평행사변형 법칙이다.
+$L^p$ 공간은 [Lᵖ 공간](lp-spaces.md)에서 다룬다. 노름이 내적에서 나오는 완비 공간이 [Hilbert 공간](hilbert-spaces.md)이다.
 
 ## 쌍대공간
 
-$X^\ast$ 는 $X$ 위의 유계 선형범함수 전체이며 작용소 노름을 준다.
+$X$ 위의 유계 선형범함수 전체 $X^\ast$ 에 작용소 노름(operator norm)
 
 $$
 \lVert f\rVert=\sup_{\lVert x\rVert\le1}\vert f(x)\vert
 $$
 
-$\mathbb R$ 이 완비이므로 $X$ 가 완비가 아니어도 $X^\ast$ 는 Banach 공간이다.
+을 준 것을 $X$ 의 [쌍대 공간](dual-space.md)이라 한다.
 
-$1\lt p\lt\infty$ 에서 $1/p+1/q=1$ 이면 $(\ell^p)^\ast\cong\ell^q$ 이고 $(\ell^1)^\ast\cong\ell^\infty$ 다. $(\ell^\infty)^\ast$ 는 $\ell^1$ 보다 크다.
+- $X=C\lbrack 0,1\rbrack$ 에 $\sup$ 노름을 주면 $f(g)=g(0)$ 은 $\vert f(g)\vert\le\lVert g\rVert_\infty$ 이고 $g=1$ 에서 등호이므로 $\lVert f\rVert=1$ 이다.
 
 # 성질
 
+## 쌍대공간의 완비성
+
+$\mathbb R$ 이 완비이므로 $X$ 가 완비가 아니어도 $X^\ast$ 는 Banach 공간이다. $1\lt p\lt\infty$ 에서 $1/p+1/q=1$ 이면 $(\ell^p)^\ast\cong\ell^q$ 이고 $(\ell^1)^\ast\cong\ell^\infty$ 다. $(\ell^\infty)^\ast$ 는 $\ell^1$ 보다 크다.
+
 ## Hahn–Banach 정리
 
-Hahn–Banach 정리는 열등선형 범함수 $p$ 와 부분공간 $M$ 위에서 $f\le p$ 를 만족하는 선형범함수 $f$ 에 대해, $f\le p$ 를 유지하는 확장을 $X$ 전체에 준다. 증명은 한 차원씩 정의역을 늘리고 Zorn 보조정리로 극대 확장을 잡는다.
+[Hahn–Banach 정리](hahn-banach-theorem.md)는 열등선형(sublinear) 범함수 $p$ 와 부분공간 $M$ 위에서 $f\le p$ 를 만족하는 선형범함수 $f$ 에 대해, $f\le p$ 를 유지하는 확장을 $X$ 전체에 준다. 증명은 한 차원씩 정의역을 늘리고 Zorn 보조정리(Zorn's lemma)로 극대 확장을 잡는다.
 
 노름공간에서 $p(x)=\lVert f\rVert_M\lVert x\rVert$ 로 두면 노름을 키우지 않는 확장이 나온다. 따름정리로 쌍대공간이 점을 분리하고, 볼록집합을 초평면으로 분리할 수 있으며, $\lVert x\rVert=\sup_{\lVert f\rVert\le1}\vert f(x)\vert$ 가 성립한다.
 
@@ -67,37 +71,37 @@ $X$ 가 Banach, $\lbrace T_\alpha\rbrace\subset\mathcal B(X,Y)$ 가 모든 $x$ �
 
 $T\in\mathcal B(X,Y)$ 가 전사이면 $T$ 는 열린 사상이고, 특히 전단사이면 $T^{-1}$ 도 유계다.
 
-*증명.* $Y=\bigcup_n T(nB_X)$ 에 [Baire 범주 정리](baire-category.md)를 적용해 $\overline{T(B_X)}$ 가 내부를 가짐을 얻고, 완비성으로 폐포를 벗겨 낸다. 둘째 단계가 절대수렴 급수의 수렴을 쓰므로 $X$ 의 완비성이 필요하다. 자세한 증명은 [열린 사상 정리](open-mapping-theorem.md)에 있다.
+증명의 요지는 다음과 같다. $Y=\bigcup_n T(nB_X)$ 에 [Baire 범주 정리](baire-category.md)를 적용해 $\overline{T(B_X)}$ 가 내부를 가짐을 얻고, 완비성으로 폐포를 벗겨 낸다. 둘째 단계가 절대수렴 급수의 수렴을 쓰므로 $X$ 의 완비성이 필요하다. 자세한 증명은 [열린 사상 정리](open-mapping-theorem.md)에 있다.
 
-따름정리가 둘이다. 역사상 정리로 전단사 유계작용소의 역은 유계다. 닫힌 그래프 정리로 $T:X\to Y$ 가 선형이고 그래프가 닫혀 있으면 $T$ 가 유계다. 뒤의 것은 유계성을 직접 보이는 대신 $x_n\to x$ 이고 $Tx_n\to y$ 일 때 $y=Tx$ 임만 확인하게 해 준다.
+역사상 정리(inverse mapping theorem)로 전단사 유계작용소의 역은 유계다. 닫힌 그래프 정리(closed graph theorem)로 $T:X\to Y$ 가 선형이고 그래프가 닫혀 있으면 $T$ 가 유계다. 뒤의 것은 유계성을 직접 보이는 대신 $x_n\to x$ 이고 $Tx_n\to y$ 일 때 $y=Tx$ 임만 확인하게 해 준다.
 
 ## 유한차원과의 차이
 
 - 모든 노름이 동치인 것은 유한차원에서만 참이다.
-- 닫힌 유계집합이 콤팩트한 것도 유한차원에서만 참이며, Riesz 보조정리가 단위구의 콤팩트성과 유한차원성의 동치를 준다.
+- 닫힌 유계집합이 콤팩트한 것도 유한차원에서만 참이며, Riesz 보조정리(Riesz's lemma)가 단위구의 콤팩트성과 유한차원성의 동치를 준다.
 - 모든 [선형사상](linear-maps.md)이 연속인 것도 거짓이다. 미분 작용소가 반례다.
-- 모든 부분공간이 닫혀 있지 않다. 다항식들은 $C[0,1]$ 에서 조밀하지만 닫히지 않았다.
-- 무한차원 Banach 공간의 Hamel 기저는 비가산이며, 그 사실이 Baire 범주 정리로 증명된다.
+- 모든 부분공간이 닫혀 있지 않다. 다항식들은 $C\lbrack 0,1\rbrack$ 에서 조밀하지만 닫히지 않았다.
+- 무한차원 Banach 공간의 Hamel 기저(Hamel basis)는 비가산이며, 그 사실이 Baire 범주 정리로 증명된다.
 
 ## 반사성과 약한 위상
 
-자연스러운 매장 $J:X\to X^{\ast\ast}$ 가 전사이면 $X$ 를 [반사적](reflexive-spaces.md)이라 한다. $1\lt p\lt\infty$ 의 $L^p$ 는 반사적이고 $L^1$ 과 $L^\infty$ 와 $C[0,1]$ 은 아니다.
+표준 매장(canonical embedding) $J:X\to X^{\ast\ast}$ 가 전사이면 $X$ 를 [반사적](reflexive-spaces.md)이라 한다. $1\lt p\lt\infty$ 의 $L^p$ 는 반사적이고 $L^1$ 과 $L^\infty$ 와 $C\lbrack 0,1\rbrack$ 은 아니다.
 
-노름 위상에서 단위구는 콤팩트하지 않지만, 반사적이면 약한 위상에서 콤팩트하다. 최소화 문제에서 유계인 수열이 약수렴하는 부분열을 가지므로 변분법의 직접법이 작동한다.
+노름 위상에서 단위구는 콤팩트하지 않지만, 반사적이면 약한 위상(weak topology)에서 콤팩트하다. 최소화 문제에서 유계인 수열이 약수렴하는 부분열을 가지므로 [변분법의 직접법](direct-method.md)이 작동한다.
 
-[Banach–Alaoglu 정리](banach-alaoglu.md)로 $X^\ast$ 의 단위구는 약 $\ast$ 위상에서 항상 콤팩트하다. 증명이 [콤팩트성](compactness.md)의 [Tychonoff 정리](tychonoff-theorem.md)를 거치므로 이 정리도 [선택공리](axiom-of-choice.md)에 의존한다.
+[Banach–Alaoglu 정리](banach-alaoglu.md)로 $X^\ast$ 의 단위구는 약별 위상에서 항상 콤팩트하다. 증명이 [콤팩트성](compactness.md)의 [Tychonoff 정리](tychonoff-theorem.md)를 거치므로 이 정리도 [선택공리](axiom-of-choice.md)에 의존한다.
 
 # 활용
 
 ## 미분방정식의 해의 존재
 
-해를 적분방정식으로 바꾸어 Banach 공간 위의 작용소 방정식으로 쓴 뒤 고정점이나 열린 사상 정리를 적용한다. [축약사상 고정점 정리](banach-fixed-point.md)가 완비성만으로 작동하는 예이며 Picard–Lindelöf 정리가 그 결과다.
+해를 적분방정식으로 바꾸어 Banach 공간 위의 작용소 방정식으로 쓴 뒤 고정점이나 열린 사상 정리를 적용한다. [축약사상 고정점 정리](banach-fixed-point.md)가 완비성만으로 작동하는 예이며 Picard–Lindelöf 정리(Picard–Lindelöf theorem)가 그 결과다.
 
-선형 편미분방정식에서는 닫힌 그래프 정리와 열린 사상 정리가 선험적 부등식을 존재 정리로 바꾼다. 해의 크기를 자료의 크기로 제어하는 부등식이 있으면 해의 존재가 따라온다.
+선형 편미분방정식에서는 닫힌 그래프 정리와 열린 사상 정리가 선험적 부등식(a priori estimate)을 존재 정리로 바꾼다. 해의 크기를 자료의 크기로 제어하는 부등식이 있으면 해의 존재가 따라온다.
 
 ## 수치해석의 안정성
 
-균등유계성 원리는 근사 방법의 수렴을 판정한다. 수치 적분 공식들이 모든 연속함수에 대해 수렴하려면 가중치 합이 균등 유계여야 한다는 Polya 의 정리가 그 예다. 노름이 발산하는 방법은 어떤 함수에서 반드시 실패한다.
+균등유계성 원리는 근사 방법의 수렴을 판정한다. 수치 적분 공식들이 모든 연속함수에 대해 수렴하려면 가중치 합이 균등 유계여야 한다는 Pólya 정리(Pólya's theorem)가 그 예다. 노름이 발산하는 방법은 어떤 함수에서 반드시 실패한다.
 
 ## 최적화와 변분법
 
