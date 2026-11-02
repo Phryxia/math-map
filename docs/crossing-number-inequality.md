@@ -16,29 +16,35 @@ $$
 \vert E\vert-c\le3\vert V\vert-6,\qquad c\ge\vert E\vert-3\vert V\vert+6
 $$
 
-이 하한은 변의 개수에 대해 선형이어서 $\vert E\vert=4\vert V\vert$ 일 때 교차가 $\vert V\vert$ 개쯤이라고만 말한다. 그래프 전체에 부등식을 한 번만 썼으므로, 각 정점을 확률 $p$ 로 독립으로 남겨 만든 부분그래프마다 같은 부등식을 쓰고 기댓값을 비교한다. 남은 정점은 기댓값 $p\vert V\vert$ 개, 변은 두 끝점이 모두 남아야 하므로 $p^2\vert E\vert$ 개, 원래 그림에서 물려받은 교차는 네 끝점이 모두 남아야 하므로 $p^4c$ 개다. $p=4\vert V\vert/\vert E\vert$ 로 잡으면 하한이 세제곱으로 커진다.
+이 하한은 변의 개수에 대해 선형이어서 $\vert E\vert=4\vert V\vert$ 일 때 교차가 $\vert V\vert$ 개 이상이라는 것만 나온다. 그래프 전체에 부등식을 한 번만 썼으므로, 각 정점을 확률 $p$ 로 독립으로 남겨 만든 부분그래프마다 같은 부등식을 쓰고 기댓값을 비교한다. 남은 정점은 기댓값 $p\vert V\vert$ 개, 변은 두 끝점이 모두 남아야 하므로 $p^2\vert E\vert$ 개, 원래 그림에서 물려받은 교차는 네 끝점이 모두 남아야 하므로 $p^4c$ 개다. 부분그래프에서는 $+6$ 을 버린 $c\ge\vert E\vert-3\vert V\vert$ 를 쓰고, $p=4\vert V\vert/\vert E\vert$ 로 잡으면 하한이 세제곱으로 커진다.
 
 $$
 p^4c\ge p^2\vert E\vert-3p\vert V\vert,
 \qquad
-p=\frac{4\vert V\vert}{\vert E\vert}\ \Rightarrow\ c\ge\frac{\vert E\vert^3}{32\vert V\vert^2}
+p=\frac{4\vert V\vert}{\vert E\vert}\ \Rightarrow\ c\ge\frac{\vert E\vert}{p^2}-\frac{3\vert V\vert}{p^3}=\frac{\vert E\vert^3}{16\vert V\vert^2}-\frac{3\vert E\vert^3}{64\vert V\vert^2}=\frac{\vert E\vert^3}{64\vert V\vert^2}
 $$
 
 # 정의
 
-그래프 $G$ 의 **그림**은 정점을 평면의 서로 다른 점에 놓고 각 변을 두 끝점을 잇는 곡선으로 그린 것이다. 곡선은 다른 정점을 지나지 않고, 두 곡선은 유한 개의 점에서만 만난다.
+그래프 $G$ 의 **그림(drawing)** 은 정점을 평면의 서로 다른 점에 놓고 각 변을 두 끝점을 잇는 곡선으로 그린 것이다. 곡선은 다른 정점을 지나지 않고, 두 곡선은 유한 개의 점에서만 만난다.
 
-그림의 **교차**는 두 변의 내부가 만나는 점이다. $G$ 의 **교차수** $\mathrm{cr}(G)$ 는 $G$ 의 모든 그림에서 교차 개수의 최솟값이다.
-
-$\mathrm{cr}(G)=0$ 인 것과 $G$ 가 평면 그래프인 것이 같다.
+그림의 **교차(crossing)** 는 두 변의 내부가 만나는 점이다. $G$ 의 **교차수(crossing number)** $\mathrm{cr}(G)$ 는 $G$ 의 모든 그림에서 교차 개수의 최솟값이다. 직관 절의 왼쪽 그림은 $K_5$ 의 교차가 하나인 그림이고, $K_5$ 는 평면 그래프가 아니므로 $\mathrm{cr}(K_5)=1$ 이다.
 
 # 성질
 
-## 부등식
+## 평면성
 
-> **교차수 부등식(crossing number inequality).** $\vert E\vert\ge4\vert V\vert$ 이면 $\mathrm{cr}(G)\ge\dfrac{\vert E\vert^3}{64\thinspace\vert V\vert^2}$ 이다.[^1]
+$\mathrm{cr}(G)=0$ 인 것과 $G$ 가 평면 그래프인 것이 동치다.
 
-증명은 직관 절의 계산이다. 상수를 $1/64$ 로 두면 $p$ 를 잡을 때 생기는 오차를 흡수한다. 같은 논증을 다듬어 상수를 $1/29$ 까지 올릴 수 있다.[^2]
+## 교차수 부등식
+
+교차수 부등식(crossing number inequality)은 다음이다. $\vert E\vert\ge4\vert V\vert$ 이면
+
+$$
+\mathrm{cr}(G)\ge\frac{\vert E\vert^3}{64\thinspace\vert V\vert^2}
+$$
+
+이다.[^1] 증명은 직관 절의 계산이다. $\vert E\vert\ge7\vert V\vert$ 이면 상수를 $1/29$ 까지 올릴 수 있다.[^2]
 
 가정 $\vert E\vert\ge4\vert V\vert$ 는 $p\le1$ 이 되도록 하는 조건이다. 변이 이보다 적으면 부등식의 우변이 선형 하한보다 작아 얻는 것이 없다.
 
@@ -46,15 +52,15 @@ $\mathrm{cr}(G)=0$ 인 것과 $G$ 가 평면 그래프인 것이 같다.
 
 $\vert V\vert$ 개의 정점과 $\vert E\vert$ 개의 변을 갖고 교차수가 $\vert E\vert^3/\vert V\vert^2$ 규모인 그래프가 있다.[^1] 정점을 격자에 놓고 이웃 범위를 넓혀 변의 개수를 조절하면 그런 예가 나온다. 그러므로 지수 $3$ 과 $-2$ 는 내려가거나 올라가지 않는다.
 
-## 확률적 논증의 자리
+## 확률론적 방법
 
 증명은 [확률론적 방법](probabilistic-method.md)의 전형이다. 약한 부등식을 무작위 부분구조에 반복 적용해 강한 부등식을 얻고, 어느 단계에서도 좋은 그림을 명시적으로 만들지 않는다. 결론은 모든 그림에 대한 하한이므로 존재 증명이 아니라 보편 진술이다.
 
 # 활용
 
-- **점과 직선의 접촉수.** [Szemerédi–Trotter 정리](szemeredi-trotter.md)의 증명이 접촉 구조를 그래프로 옮긴 뒤 이 부등식을 쓴다. 교차수가 직선 쌍의 개수로 유계라는 관찰과 맞물려 접촉수의 상한이 나온다.
-- **격자 위 그래프의 그림.** 변의 개수가 정점의 개수에 비례하는 상수를 넘으면 교차를 피할 수 없고, 그 개수의 하한이 그림의 면적이나 배선 길이의 하한으로 옮겨진다.
-- **이분 금지 문제의 기하적 제약.** 조합적으로 허용되는 간선 수가 평면에 그려지는 배치에서는 줄어든다. 이 감소량을 정량으로 재는 도구가 이 부등식이다.
+- 점과 직선의 접촉수. [Szemerédi–Trotter 정리](szemeredi-trotter.md)의 증명이 접촉 구조를 그래프로 옮긴 뒤 이 부등식을 쓴다. 교차수가 직선 쌍의 개수로 유계라는 관찰과 맞물려 접촉수의 상한이 나온다.
+- 격자 위 그래프의 그림. 변의 개수가 정점의 개수에 비례하는 상수를 넘으면 교차를 피할 수 없고, 그 개수의 하한이 그림의 면적이나 배선 길이의 하한으로 옮겨진다.
+- 이분 금지 문제의 기하적 제약. 조합적으로 허용되는 간선 수가 평면에 그려지는 배치에서는 줄어든다. 이 감소량을 정량으로 재는 도구가 이 부등식이다.
 
 [^1]: F. T. Leighton, *Complexity Issues in VLSI* (1983), 3장과 M. Ajtai, V. Chvátal, M. Newborn, E. Szemerédi, *Crossing-free subgraphs*, Annals of Discrete Mathematics **12** (1982), 9–12. 두 곳에서 독립으로 얻었다. 지수의 최적성 예는 J. Matoušek, *Lectures on Discrete Geometry* (2002), 4.3 절.
 
