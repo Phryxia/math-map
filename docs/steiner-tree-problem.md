@@ -12,13 +12,13 @@
 
 그림의 사각형이 단말, 굵은 선이 비용 $3$ 인 Steiner 나무, 점선이 단말끼리 직접 잇는 비용 $2$ 짜리 간선이다.
 
-쓸 정점을 고르지 않고도 비용을 막을 수 있다. 위 예에서 단말끼리의 [최단경로](shortest-paths.md) 거리는 모두 $2$ 이다. 이 거리로 단말 셋의 완전그래프를 만들고 최소 신장트리를 구하면 비용이 $4$ 이고, 최적의 $3$ 의 두 배를 넘지 않는다. 최적 나무를 한 바퀴 도는 길은 각 간선을 두 번 지나므로 길이가 최적 비용의 두 배이고, 그 길이 단말을 차례로 이으므로 단말 사이의 신장트리 하나보다 길다. 이 논증이 일반 그래프의 2-근사를 증명한다.
+쓸 정점을 고르지 않고도 비용을 막을 수 있다. 위 예에서 단말끼리의 [최단경로](shortest-paths.md) 거리는 모두 $2$ 이다. 이 거리로 단말 셋의 완전그래프를 만들고 최소 신장트리를 구하면 비용이 $4$ 이고, 최적의 $3$ 의 두 배를 넘지 않는다.
 
 # 정의
 
-그래프 $G=(V,E)$, 간선 비용 $c:E\to\mathbb R\_{\ge 0}$, 단말 집합 $K\subseteq V$ 가 주어진다. **Steiner 나무(Steiner tree)** 는 $K$ 를 정점으로 포함하는 $G$ 의 부분나무 $T$ 이고, 그 비용은 $c(T)=\sum_{e\in T}c(e)$ 다. $T$ 에 들어간 단말 밖의 정점을 **Steiner 점(Steiner point)** 이라 한다.
+그래프 $G=(V,E)$, 간선 비용 $c:E\to\mathbb R\_{\ge 0}$, 단말 집합 $K\subseteq V$ 가 주어진다. **Steiner 나무(Steiner tree)** 는 $K$ 를 정점으로 포함하는 $G$ 의 부분나무 $T$ 이고, 그 비용은 $c(T)=\sum_{e\in T}c(e)$ 다. $T$ 에 들어간 단말 밖의 정점을 **Steiner 점(Steiner point)** 이라 한다. 직관 절의 그래프에서 $\lbrace ca,cb,cd\rbrace$ 는 비용 $3$ 인 Steiner 나무이고 $c$ 가 Steiner 점이다. 단말끼리의 간선 둘로 된 나무도 비용 $4$ 인 Steiner 나무이고 Steiner 점이 없다.
 
-$K$ 위의 **거리 폐포(metric closure)** 는 $K$ 의 두 정점 $u,v$ 사이에 비용 $d_G(u,v)$ 의 간선을 둔 완전그래프다. 여기서 $d_G$ 는 $G$ 의 최단경로 거리다.
+$K$ 위의 **거리 폐포(metric closure)** 는 $K$ 의 두 정점 $u,v$ 사이에 비용 $d_G(u,v)$ 의 간선을 둔 완전그래프다. 여기서 $d_G$ 는 $G$ 의 최단경로 거리다. 직관 절의 그래프에서 단말 $a,b,d$ 위의 거리 폐포는 세 간선의 비용이 모두 $2$ 인 삼각형이다.
 
 평면의 점 집합 $K$ 를 선분으로 이어 길이의 합을 최소화하는 문제를 **Euclid Steiner 나무 문제(Euclidean Steiner tree problem)** 라 하고, 이때는 평면의 어느 점이나 Steiner 점이 될 수 있다.
 
@@ -26,7 +26,7 @@ $K$ 위의 **거리 폐포(metric closure)** 는 $K$ 의 두 정점 $u,v$ 사이
 
 ## 거리 폐포 근사
 
-정리. 거리 폐포의 최소 신장트리를 구한 뒤 각 간선을 $G$ 의 최단경로로 바꾸면 비용이 $2(1-1/\lvert K\rvert)\cdot\mathrm{OPT}$ 이하인 Steiner 나무가 나온다.
+거리 폐포의 최소 신장트리를 구한 뒤 각 간선을 $G$ 의 최단경로로 바꾸면 비용이 $2(1-1/\lvert K\rvert)\cdot\mathrm{OPT}$ 이하인 Steiner 나무가 나온다. 여기서 $\mathrm{OPT}$ 는 최소 Steiner 나무의 비용이다. 직관 절의 그래프에서는 $2(1-1/3)\cdot 3=4$ 이고 거리 폐포의 최소 신장트리 비용도 $4$ 여서 등호가 성립한다.
 
 증명의 요지. 최적 나무 $T^\ast$ 를 깊이 우선으로 한 바퀴 돌면 길이 $2c(T^\ast)$ 인 닫힌 길이 되고, 단말을 처음 만나는 순서로 이으면 거리 폐포의 순환이 된다. 이 순환에서 가장 긴 간선 하나를 빼면 신장 경로이고 길이가 $2(1-1/\lvert K\rvert)c(T^\ast)$ 이하다. 최소 신장트리는 이보다 짧고, 최단경로로 바꾼 간선들의 합집합에서 순환을 지워도 비용이 늘지 않는다.
 
@@ -44,8 +44,8 @@ Steiner 점에서는 세 선분이 120° 로 만난다. 세 점 문제의 Steine
 
 # 활용
 
-- 회로 설계. 칩 위의 핀을 잇는 배선은 직선 거리(rectilinear distance) 판본의 Steiner 나무 문제다.
-- 망 설계. 여러 쌍을 각각 잇는 Steiner 숲 문제는 [원시-쌍대 방법](primal-dual-method.md)의 동시 증가와 역삭제로 2-근사가 된다.
+- 회로 설계. 칩 위의 핀을 가로와 세로 선분으로 잇는 배선은 직교 거리(rectilinear distance) 판본의 Steiner 나무 문제다.
+- 망 설계. 여러 쌍을 각각 잇는 Steiner 숲 문제(Steiner forest problem)는 [원시-쌍대 방법](primal-dual-method.md)의 동시 증가와 역삭제로 2-근사가 된다.
 - 계통 발생. 생물 종의 서열을 단말로 두고 조상 서열을 Steiner 점으로 두면, 변이 수를 최소화하는 계통수(maximum parsimony)가 Hamming 거리에 대한 Steiner 나무 문제다.
 
 [^1]: S. E. Dreyfus, R. A. Wagner, "The Steiner problem in graphs", Networks 1 (1971), 195–207.
