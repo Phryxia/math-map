@@ -20,13 +20,15 @@ $$
 
 이면 $u$ 를 **약조화함수(weakly harmonic function)** 라 한다.
 
-**정리(Weyl 보조정리).** 약조화함수 $u$ 에 대해, $\Omega$ 에서 조화인 매끄러운 함수 $h$ 가 존재해 거의 모든 점에서 $u=h$ 다.[^1]
+매끄러운 조화함수는 부분적분 두 번으로 $\int u\Delta\varphi=\int\Delta u\thinspace\varphi=0$ 이므로 약조화함수다. $\mathbb R^n$ 에서 $u=x_1$ 의 값을 유리수 좌표의 점들에서만 $5$ 로 바꾼 함수는 어느 점에서도 연속이 아니지만, 바꾼 집합의 측도가 $0$ 이라 적분이 같으므로 약조화함수다. $\mathbb R$ 에서 $x\gt 0$ 일 때 $1$, $x\lt 0$ 일 때 $0$ 인 함수는 $\int_0^\infty\varphi''\thinspace dx=-\varphi'(0)$ 이 $0$ 이 아닐 수 있으므로 약조화함수가 아니다.
 
 # 성질
 
-## 증명의 요지
+## Weyl 보조정리
 
-$\eta$ 를 원점 중심 공 $B(0,1)$ 에 지지를 갖고 회전대칭이며 적분이 $1$ 인 매끄러운 함수라 하고 $\eta\_\varepsilon(x)=\varepsilon^{-n}\eta(x/\varepsilon)$ 로 둔다. $u\_\varepsilon=u\ast\eta\_\varepsilon$ 은 경계에서 $\varepsilon$ 보다 먼 점에서 매끄럽고, $\Delta u\_\varepsilon(x)=\int u(y)\Delta\_x\eta\_\varepsilon(x-y)\thinspace dy=0$ 이므로 조화다. 조화함수의 평균값 성질과 $\eta\_\delta$ 의 회전대칭으로 $u\_\varepsilon\ast\eta\_\delta=u\_\varepsilon$ 이다. [합성곱](convolution.md)의 교환법칙으로
+약조화함수 $u$ 에 대해, $\Omega$ 에서 조화인 매끄러운 함수 $h$ 가 존재해 거의 모든 점에서 $u=h$ 다.[^1] 정의 절의 바꾼 $x_1$ 에서는 $h=x_1$ 이다.
+
+증명의 요지. $\eta$ 를 원점 중심 공 $B(0,1)$ 에 지지를 갖고 회전대칭이며 적분이 $1$ 인 매끄러운 함수(완화자, mollifier)라 하고 $\eta\_\varepsilon(x)=\varepsilon^{-n}\eta(x/\varepsilon)$ 로 둔다. $u\_\varepsilon=u\ast\eta\_\varepsilon$ 은 경계에서 $\varepsilon$ 보다 먼 점에서 매끄럽고, $\Delta u\_\varepsilon(x)=\int u(y)\Delta\_x\eta\_\varepsilon(x-y)\thinspace dy=0$ 이므로 조화다. 조화함수의 평균값 성질과 $\eta\_\delta$ 의 회전대칭으로 $u\_\varepsilon\ast\eta\_\delta=u\_\varepsilon$ 이다. [합성곱](convolution.md)의 교환법칙으로
 
 $$
 u\_\varepsilon=u\_\varepsilon\ast\eta\_\delta=u\ast\eta\_\varepsilon\ast\eta\_\delta=u\_\delta\ast\eta\_\varepsilon=u\_\delta
@@ -36,7 +38,7 @@ $$
 
 ## 분포로 쓴 꼴
 
-$u$ 가 $\Omega$ 위의 분포이고 분포의 의미에서 $\Delta u=0$ 이면 $u$ 는 매끄러운 조화함수다. 국소 적분가능성이 없어도 분포를 완화자와 합성하면 매끄러운 함수가 되므로 같은 증명이 성립한다.
+$u$ 가 $\Omega$ 위의 분포이고 분포의 의미에서 $\Delta u=0$ 이면 $u$ 는 매끄러운 조화함수다. 국소 적분가능성이 없어도 분포를 $\eta\_\varepsilon$ 과 합성하면 매끄러운 함수가 되므로 같은 증명이 성립한다.
 
 ## 저타원성
 
@@ -44,7 +46,7 @@ $u$ 가 $\Omega$ 위의 분포이고 분포의 의미에서 $\Delta u=0$ 이면 
 
 # 활용
 
-- [Dirichlet 원리](dirichlet-principle.md): [Sobolev 공간](sobolev-spaces.md)에서 직접법으로 얻은 에너지 최소점은 약조화함수이고, 이 정리로 매끄러운 조화함수다.
+- [Dirichlet 원리](dirichlet-principle.md): [Sobolev 공간](sobolev-spaces.md)에서 [변분법의 직접법](direct-method.md)으로 얻은 에너지 최소점은 약조화함수이고, 이 정리로 매끄러운 조화함수다.
 - [타원형 정칙성](elliptic-regularity.md): 계수가 매끄러운 타원형 방정식 $Lu=f$ 의 약한 해는 $f$ 보다 두 단계 매끄럽고, $f=0$ 이면 매끄럽다. $L=\Delta$ 이고 $f=0$ 인 경우가 이 정리다.
 
 [^1]: H. Weyl, *The method of orthogonal projection in potential theory*, Duke Mathematical Journal **7** (1940), 411–444. 증명은 L. C. Evans, *Partial Differential Equations*, 2nd ed., American Mathematical Society, 2010, 2 장 2 절과 부록 C.
