@@ -6,10 +6,6 @@
 
 # 직관
 
-부분미분은 미분할 수 없는 볼록 함수에서 기울기를 대신하는 집합이다. 한 점에서 그래프를 아래로 받치는 아핀 함수의 기울기를 전부 모은 것이고, [볼록성](convexity.md)의 접선 부등식을 미분가능성 없이 쓴 것이다.
-
-집합이 $0$ 을 포함하는 것이 그 점에서 최솟값을 갖는 조건이다. 꺾인 자리에서 최소점을 찾는 방법이 이 조건에서 나오고, 절댓값 벌점을 붙인 문제의 해가 정확히 $0$ 이 되는 까닭도 같다.
-
 $f(x)=\frac{1}{2}(x-1)^2+\vert x\vert$ 를 최소화한다. 도함수가 $0$ 인 점을 찾는 방법을 쓰려면 절댓값을 두 조각으로 나눠야 한다.
 
 $x\gt 0$ 에서 $f(x)=\frac{1}{2}(x-1)^2+x$ 이므로 $f'(x)=x$ 이고, $f'(x)=0$ 인 점은 $x=0$ 이다. 이 점은 $x\gt 0$ 에 들어가지 않는다. $x\lt 0$ 에서 $f(x)=\frac{1}{2}(x-1)^2-x$ 이므로 $f'(x)=x-2$ 이고, $f'(x)=0$ 인 점은 $x=2$ 다. 이 점도 $x\lt 0$ 에 들어가지 않는다. 두 조각 어디에도 도함수가 $0$ 인 점이 없다.
@@ -24,19 +20,19 @@ $x=0$ 에서 도함수 하나를 구하는 대신, 그 점에서 그래프에 �
 
 ## 부분미분
 
-$f:\mathbb{R}^n\to\mathbb{R}\cup\lbrace+\infty\rbrace$ 가 볼록이고 $f(x)$ 가 유한할 때, $x$ 에서의 **부분미분** $\partial f(x)$ 는 다음을 만족하는 $p$ 전부의 집합이다.
+$f:\mathbb{R}^n\to\mathbb{R}\cup\lbrace+\infty\rbrace$ 가 [볼록](convexity.md)이고 $f(x)$ 가 유한할 때, $x$ 에서의 **부분미분** $\partial f(x)$ 는 다음을 만족하는 $p$ 전부의 집합이다.
 
 $$
 \partial f(x)=\lbrace p\in\mathbb{R}^n:f(z)\ge f(x)+\langle p,\thinspace z-x\rangle\rbrace
 $$
 
-부등식은 모든 $z\in\mathbb{R}^n$ 에서 요구한다. 원소 $p$ 를 $x$ 에서의 **부분기울기**(subgradient)라 한다.
+부등식은 모든 $z\in\mathbb{R}^n$ 에서 요구한다. 원소 $p$ 를 $x$ 에서의 **부분기울기(subgradient)** 라 한다.
 
-$f(x)=\vert x\vert$ 는 $\partial f(0)=\lbrack -1,1\rbrack$ 이고 $x\ne 0$ 에서 $\partial f(x)=\lbrace\mathrm{sign}(x)\rbrace$ 다. $f(x)=\Vert x\Vert\_1$ 은 좌표마다 이 집합의 곱이다.
+$f(x)=\vert x\vert$ 는 $\partial f(0)=\lbrack -1,1\rbrack$ 이고 $x\ne 0$ 에서 $\partial f(x)=\lbrace\mathrm{sign}(x)\rbrace$ 다. $f(x)=\Vert x\Vert\_1$ 은 좌표마다 이 집합의 곱이다. 직관 절의 $\frac12(x-1)^2+\vert x\vert$ 는 $\partial f(0)=\lbrack -2,0\rbrack$ 이다.
 
 ## 유효 영역
 
-$f$ 가 $+\infty$ 를 값으로 가질 수 있게 둔 것은 제약을 함수에 넣기 위한 것이다. 볼록집합 $C$ 의 **지시함수**는 $C$ 안에서 $0$ , 밖에서 $+\infty$ 인 함수이고, 이 함수의 최소화가 $C$ 위의 제약 문제다. $f$ 의 **유효 영역**은
+$f$ 가 $+\infty$ 를 값으로 가질 수 있게 둔 것은 제약을 함수에 넣기 위한 것이다. 볼록집합 $C$ 의 **지시함수(indicator function)** 는 $C$ 안에서 $0$ , 밖에서 $+\infty$ 인 함수이고, 이 함수의 최소화가 $C$ 위의 제약 문제다. $C=\lbrack 0,1\rbrack$ 의 지시함수는 $x=1/2$ 에서 부분미분이 $\lbrace 0\rbrace$ 이고, $x=0$ 에서 $(-\infty,0\rbrack$ 이다. $f$ 의 **유효 영역(effective domain)** 은
 
 $$
 \mathrm{dom}\thinspace f=\lbrace x\in\mathbb{R}^n:f(x)\lt+\infty\rbrace
@@ -46,13 +42,13 @@ $$
 
 ## 방향도함수
 
-$d\in\mathbb{R}^n$ 방향의 **방향도함수**는 다음 극한이다.
+$d\in\mathbb{R}^n$ 방향의 **방향도함수(directional derivative)** 는 다음 극한이다.
 
 $$
 f'(x;d)=\lim_{t\to 0^+}\frac{f(x+td)-f(x)}{t}
 $$
 
-볼록 함수에서 차분몫 $(f(x+td)-f(x))/t$ 는 $t$ 에 대해 증가하므로 극한이 항상 존재한다. $x\in\mathrm{dom}\thinspace f$ 의 내부에서는 유한하다.
+볼록 함수에서 차분몫 $(f(x+td)-f(x))/t$ 는 $t$ 에 대해 증가하므로 극한이 항상 존재한다. $x\in\mathrm{dom}\thinspace f$ 의 내부에서는 유한하다. $f(x)=\vert x\vert$ 는 $f'(0;d)=\vert d\vert$ 이고, 이 값은 $\max\lbrace pd:p\in\lbrack -1,1\rbrack\rbrace$ 와 같다.
 
 # 성질
 
