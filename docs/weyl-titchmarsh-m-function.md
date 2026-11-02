@@ -6,11 +6,7 @@
 
 # 직관
 
-Weyl–Titchmarsh m 함수는 극한점인 끝점을 가진 Sturm–Liouville 작용소에 붙는 해석함수다. 극한점 끝점에서 제곱적분가능한 해가 상수배까지 하나이므로, 그 해를 반대쪽 끝점에서 정규화하면 미분계수 하나가 복소 매개변수의 함수로 남는다.
-
-이 함수는 상반평면을 상반평면으로 보내고, 실축 위 경계값의 허수부가 작용소의 스펙트럼 측도를 준다. 고윳값이 이산이 아닌 문제에서 고유함수 급수를 대신하는 적분 전개가 이 측도로 적힌다.
-
-정규 Sturm–Liouville 문제에서는 고윳값이 이산 열을 이루고 고유함수가 $L^2$ 의 기저였다. 반직선에서는 그 기저가 없다.
+정규 Sturm–Liouville 문제(regular Sturm–Liouville problem)에서는 고윳값이 이산 열을 이루고 고유함수가 $L^2$ 의 기저였다. 반직선에서는 그 기저가 없다.
 
 $$
 -u''=\lambda u,\qquad u(0)=0,\qquad 0\le x\lt \infty
@@ -46,17 +42,23 @@ $$
 
 을 만족하는 복소수 $m(z)$ 가 유일하게 있다. 이 $m$ 을 **Weyl–Titchmarsh m 함수**라 한다. $\psi(0,z)=1$ 과 $\psi'(0,z)=m(z)$ 이므로 $m(z)$ 는 제곱적분가능한 해의 원점에서의 로그 미분이다.
 
-유일성은 극한점 가정에서 따라온다. 제곱적분가능한 해의 공간이 1 차원이고 $\phi$ 가 그 공간에 들지 않으므로, 그 공간의 해를 $\theta$ 성분의 계수가 $1$ 이 되도록 정규화하는 방법이 하나다.
+직관 절의 $q=0$ 에서는 $\theta=\cos(\sqrt z\thinspace x)$, $\phi=\sin(\sqrt z\thinspace x)/\sqrt z$ 이고, 제곱적분가능한 해 $e^{i\sqrt z\thinspace x}=\theta+i\sqrt z\thinspace\phi$ 에서 $m(z)=i\sqrt z$ 다.
 
 ## Herglotz 함수
 
-상반평면에서 [정칙](holomorphic-functions.md)이고 값의 허수부가 양수인 함수를 **Herglotz 함수**라 한다.
+상반평면에서 [정칙](holomorphic-functions.md)이고 값의 허수부가 양수인 함수를 **Herglotz 함수(Herglotz function)** 라 한다.
+
+$i\sqrt z$ 는 Herglotz 함수다. $-1/z$ 도 $\mathrm{Im}(-1/z)=\mathrm{Im}\thinspace z/\vert z\vert^2\gt 0$ 이므로 Herglotz 함수다. $z^2$ 은 $z=-1+i$ 에서 값 $-2i$ 의 허수부가 음수이므로 Herglotz 함수가 아니다.
 
 # 성질
 
+## 정의의 유일성
+
+$m(z)$ 의 유일성은 극한점 가정에서 따라온다. 제곱적분가능한 해의 공간이 1 차원이고 $\phi$ 가 그 공간에 들지 않으므로, 그 공간의 해를 $\theta$ 성분의 계수가 $1$ 이 되도록 정규화하는 방법이 하나다.
+
 ## Herglotz 성질
 
-**정리.** $m$ 은 상반평면에서 정칙이고 다음을 만족한다.
+$m$ 은 상반평면에서 정칙이고 다음을 만족한다.
 
 $$
 \mathrm{Im}\thinspace m(z)=\mathrm{Im}\thinspace z\int_0^\infty\lvert\psi(x,z)\rvert^2\thinspace dx
@@ -76,25 +78,25 @@ $$
 
 ## 스펙트럼 측도
 
-**정리(Herglotz 표현).** Herglotz 함수 $m$ 은 실수 $c$ 와 $\mathbb R$ 위의 증가함수 $\rho$ 로
+Herglotz 표현(Herglotz representation). Herglotz 함수 $m$ 은 실수 $c$, $b\ge 0$ 과 $\int d\rho/(1+\lambda^2)\lt\infty$ 인 $\mathbb R$ 위의 증가함수 $\rho$ 로
 
 $$
-m(z)=c+\int_{\mathbb R}\Bigl(\frac{1}{\lambda-z}-\frac{\lambda}{1+\lambda^2}\Bigr)\thinspace d\rho(\lambda)
+m(z)=c+bz+\int_{\mathbb R}\Bigl(\frac{1}{\lambda-z}-\frac{\lambda}{1+\lambda^2}\Bigr)\thinspace d\rho(\lambda)
 $$
 
-꼴로 적히고, $\rho$ 는 상수를 더하는 것까지 유일하다.[^1] $\rho$ 는 Stieltjes 역변환
+꼴로 적히고, $\rho$ 는 상수를 더하는 것까지 유일하다.[^1] Weyl–Titchmarsh m 함수에서는 $m(iy)/(iy)\to 0$ 이므로 $b=0$ 이다. $-1/z$ 는 $c=b=0$ 이고 $\rho$ 가 $0$ 에서 크기 $1$ 의 점프를 갖는 경우다. $\rho$ 는 Stieltjes 역변환
 
 $$
 d\rho=\frac1\pi\lim_{\varepsilon\to 0^+}\mathrm{Im}\thinspace m(\lambda+i\varepsilon)\thinspace d\lambda
 $$
 
-로 복원된다.
+로 복원된다. 극한은 측도의 약수렴으로 잡는다.
 
-이 $\rho$ 가 경계조건 $u(0)=0$ 으로 정해진 자기수반 작용소의 **스펙트럼 측도**다.
+이 $\rho$ 가 경계조건 $u(0)=0$ 으로 정해진 자기수반 작용소의 스펙트럼 측도(spectral measure)다.
 
 ## 고유함수 전개
 
-**정리.** 다음 두 사상이 $L^2(0,\infty)$ 와 $L^2(\mathbb R,d\rho)$ 사이의 유니터리 변환이다.[^2]
+다음 두 사상이 $L^2(0,\infty)$ 와 $L^2(\mathbb R,d\rho)$ 사이의 유니터리 변환이다.[^2]
 
 $$
 \hat f(\lambda)=\int_0^\infty f(x)\thinspace\phi(x,\lambda)\thinspace dx,\qquad f(x)=\int_{\mathbb R}\hat f(\lambda)\thinspace\phi(x,\lambda)\thinspace d\rho(\lambda)
@@ -104,10 +106,10 @@ $$
 
 # 활용
 
-- **자유 반직선.** $q=0$ 이고 $u(0)=0$ 이면 $m(z)=i\sqrt z$ 이고 $d\rho=\pi^{-1}\sqrt\lambda\thinspace d\lambda$ 가 $\lambda\gt 0$ 에 실려 있다. 이 전개가 Fourier 사인 변환이다.
-- **스펙트럼의 분류.** $\mathrm{Im}\thinspace m(\lambda+i0)$ 이 양수인 점들이 절대연속 스펙트럼을 이루고, $m$ 이 극을 갖는 점이 고윳값이다. 경계값이 존재하지 않는 점들의 집합이 특이연속 스펙트럼을 담는다.
-- **역스펙트럼 문제.** Borg–Marchenko 정리가 $m$ 함수 하나로 $q$ 가 결정된다고 말한다.[^3] 두 퍼텐셜의 $m$ 함수가 상반평면의 한 방향에서 같은 점근을 가지면 두 퍼텐셜이 같다.
-- **산란 이론.** $q$ 가 무한원점에서 빨리 감쇠하면 $m$ 의 실축 위 경계값이 반사계수로 적히고, [역산란 변환](inverse-scattering-transform.md)의 산란 자료가 이 함수에서 읽힌다.
+- $q=0$ 이고 $u(0)=0$ 이면 $m(z)=i\sqrt z$ 이고 $d\rho=\pi^{-1}\sqrt\lambda\thinspace d\lambda$ 가 $\lambda\gt 0$ 에 실려 있다. 이 전개가 Fourier 사인 변환이다.
+- $\rho$ 의 절대연속 부분은 $\mathrm{Im}\thinspace m(\lambda+i0)$ 이 유한한 양수인 점들에 실려 있다. $\rho$ 의 특이 부분은 $\mathrm{Im}\thinspace m(\lambda+i0)=\infty$ 인 점들에 실려 있고, 점 $\lambda$ 의 점프 $\rho(\lbrace\lambda\rbrace)=\lim\_{\varepsilon\to 0^+}\varepsilon\thinspace\mathrm{Im}\thinspace m(\lambda+i\varepsilon)$ 이 양수이면 $\lambda$ 가 고윳값이다.
+- Borg–Marchenko 정리(Borg–Marchenko theorem)에 따르면 $m$ 함수 하나로 $q$ 가 결정된다.[^3] 두 퍼텐셜의 $m$ 함수가 상반평면의 한 방향에서 같은 점근을 가지면 두 퍼텐셜이 같다.
+- $q$ 가 무한원점에서 빨리 감쇠하면 $m$ 의 실축 위 경계값이 반사계수로 적히고, [역산란 변환](inverse-scattering-transform.md)의 산란 자료가 이 함수에서 읽힌다.
 
 [^1]: H. Weyl, *Über gewöhnliche Differentialgleichungen mit Singularitäten und die zugehörigen Entwicklungen willkürlicher Funktionen*, Math. Ann. **68** (1910), 220–269.
 
