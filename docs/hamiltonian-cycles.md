@@ -22,19 +22,25 @@ $$
 
 ## Hamilton 경로와 Hamilton 순환
 
-그래프 $G=(V,E)$ 에서 모든 정점을 정확히 한 번씩 지나는 경로를 **Hamilton 경로**라 하고, 모든 정점을 정확히 한 번씩 지나 출발점으로 돌아오는 순환을 **Hamilton 순환**이라 한다. Hamilton 순환을 갖는 그래프를 **Hamilton 그래프**라 한다.
+그래프 $G=(V,E)$ 에서 모든 정점을 정확히 한 번씩 지나는 경로를 **Hamilton 경로(Hamiltonian path)** 라 하고, 모든 정점을 정확히 한 번씩 지나 출발점으로 돌아오는 순환을 **Hamilton 순환** 이라 한다. Hamilton 순환을 갖는 그래프를 **Hamilton 그래프(Hamiltonian graph)** 라 한다.
 
-$\vert V\vert=n$ 일 때 Hamilton 순환은 간선 $n$ 개를 쓰고, 그 간선만 남긴 부분그래프는 모든 정점의 차수가 $2$ 인 연결 그래프다.
+직관 절의 그림에서 간선은 경로 $v_1v_2,\dots,v_5v_6$ 의 다섯 개와 $v_1v_4$, $v_3v_6$ 이다. $v_1,v_2,\dots,v_6$ 은 Hamilton 경로이고, $v_1,v_2,v_3,v_6,v_5,v_4,v_1$ 은 Hamilton 순환이므로 이 그래프는 Hamilton 그래프다.
 
 ## 닫힘
 
-$n\ge 3$ 인 그래프 $G$ 에서 인접하지 않은 두 정점 $u,v$ 가 $d(u)+d(v)\ge n$ 을 만족하면 간선 $uv$ 를 더한다. 더 더할 간선이 없을 때까지 반복해 얻은 그래프를 $G$ 의 **닫힘**이라 하고 $\mathrm{cl}(G)$ 로 쓴다. 간선을 더하는 순서를 바꿔도 결과가 같다.
+$n\ge 3$ 인 그래프 $G$ 에서 인접하지 않은 두 정점 $u,v$ 가 $d(u)+d(v)\ge n$ 을 만족하면 간선 $uv$ 를 더한다. 더 더할 간선이 없을 때까지 반복해 얻은 그래프를 $G$ 의 **닫힘(closure)** 이라 하고 $\mathrm{cl}(G)$ 로 쓴다.
+
+크기가 $2$ 와 $3$ 인 두 쪽을 갖는 완전이분그래프(complete bipartite graph) $K_{2,3}$ 은 $n=5$ 이고 작은 쪽 정점의 차수가 $3$, 큰 쪽 정점의 차수가 $2$ 다. 작은 쪽 두 정점은 차수 합이 $6\ge 5$ 이므로 둘을 잇는다. 그러면 큰 쪽 두 정점의 차수 합은 $4\lt 5$ 이고 더할 간선이 없으므로 $\mathrm{cl}(K_{2,3})$ 은 $K_{2,3}$ 에 간선 하나를 더한 그래프다. 직관 절의 그림의 그래프는 차수가 $2,2,3,3,2,2$ 이고 차수 합이 $6$ 이상인 비인접 쌍이 없어 닫힘이 자기 자신이다.
 
 # 성질
 
+## 순환의 간선과 닫힘의 유일성
+
+$\vert V\vert=n$ 일 때 Hamilton 순환은 간선 $n$ 개를 쓰고, 그 간선만 남긴 부분그래프는 모든 정점의 차수가 $2$ 인 연결 그래프다. 닫힘은 간선을 더하는 순서를 바꿔도 같다. 한 순서에서 $i$ 번째로 더한 간선 $uv$ 를 보자. 그 앞의 간선이 모두 다른 순서의 결과 $H$ 에 있으면 $H$ 에서도 $u,v$ 의 차수 합이 $n$ 이상이고, $H$ 에는 더할 간선이 남지 않았으므로 $uv$ 가 $H$ 에 있다. 귀납법으로 한 순서의 결과가 $H$ 에 포함되고, 두 순서를 바꿔 같은 논법을 쓰면 둘은 같다.
+
 ## Ore 정리
 
-**정리(Ore).** $n\ge 3$ 이고 인접하지 않은 임의의 두 정점 $u,v$ 에 대해 $d(u)+d(v)\ge n$ 이면 $G$ 는 Hamilton 그래프다.[^2]
+Ore 정리(Ore's theorem)는 다음 정리다. $n\ge 3$ 이고 인접하지 않은 임의의 두 정점 $u,v$ 에 대해 $d(u)+d(v)\ge n$ 이면 $G$ 는 Hamilton 그래프다.[^2]
 
 Hamilton 순환이 없는 반례 가운데 간선이 가장 많은 것을 $G$ 라 하자. $G$ 는 완전그래프가 아니므로 인접하지 않은 $u,v$ 가 있고, 간선 $uv$ 를 더하면 최대성으로 Hamilton 순환이 생긴다. 그 순환에서 $uv$ 를 빼면 $u=v_1,\dots,v_n=v$ 인 Hamilton 경로가 남는다.
 
@@ -52,7 +58,7 @@ $$
 
 ## Dirac 정리
 
-**따름정리(Dirac).** $n\ge 3$ 이고 모든 정점의 차수가 $n/2$ 이상이면 $G$ 는 Hamilton 그래프다.[^3]
+Dirac 정리(Dirac's theorem)는 Ore 정리의 따름정리다. $n\ge 3$ 이고 모든 정점의 차수가 $n/2$ 이상이면 $G$ 는 Hamilton 그래프다.[^3]
 
 인접하지 않은 두 정점의 차수 합이 $n$ 이상이므로 Ore 정리를 적용한다. ∎
 
@@ -60,21 +66,21 @@ $$
 
 ## Bondy–Chvátal 정리
 
-**정리.** $G$ 가 Hamilton 그래프인 것과 $\mathrm{cl}(G)$ 가 Hamilton 그래프인 것은 동치다.[^4]
+Bondy–Chvátal 정리(Bondy–Chvátal theorem)는 $G$ 가 Hamilton 그래프인 것과 $\mathrm{cl}(G)$ 가 Hamilton 그래프인 것은 동치다.[^4]
 
 한 방향은 $G\subseteq\mathrm{cl}(G)$ 에서 자동으로 따라온다. 반대 방향은 간선을 하나 더하는 단계마다 보이면 된다. $d(u)+d(v)\ge n$ 인 비인접 쌍 $u,v$ 에 대해 $G+uv$ 가 Hamilton 이고 $G$ 가 아니라면 그 순환이 $uv$ 를 쓰므로 $u$ 에서 $v$ 로 가는 Hamilton 경로가 $G$ 에 있고, Ore 정리 증명의 세기 논법을 그대로 적용하면 $G$ 에 순환이 있다. ∎
 
-$\mathrm{cl}(G)$ 가 완전그래프이면 $G$ 는 Hamilton 그래프다. Ore 조건과 Dirac 조건은 닫힘이 한 번에 완전그래프가 되는 경우다.
+$\mathrm{cl}(G)$ 가 완전그래프(complete graph)이면 $G$ 는 Hamilton 그래프다. 위의 $K_{2,3}$ 은 닫힘이 완전그래프가 아니고, 쪽의 크기가 달라 Hamilton 순환도 없다. Ore 조건과 Dirac 조건은 닫힘이 한 번에 완전그래프가 되는 경우다.
 
 ## 판정 문제의 복잡도
 
-그래프가 Hamilton 순환을 갖는지 판정하는 문제는 [NP-완전](np-completeness.md)(nondeterministic polynomial time)이다.[^5] 3-SAT(satisfiability)에서의 환원이 표준이고, 유향 판본과 Hamilton 경로 판본도 같다. 따라서 위의 충분조건들처럼 차수나 다른 구조를 가정하지 않으면 다항 시간 판정 절차를 기대할 수 없다. 환원의 틀은 [NP-완전성](np-completeness.md)에 있다.
+그래프가 Hamilton 순환을 갖는지 판정하는 문제는 [NP-완전](np-completeness.md)(nondeterministic polynomial time)이다.[^5] 3-SAT(satisfiability)에서의 환원이 표준이고, 유향 판본과 Hamilton 경로 판본도 같다. 그래서 다항 시간 판정은 위의 충분조건들처럼 차수나 다른 구조를 가정한 그래프에서만 얻어진다.
 
 # 활용
 
-- **[외판원 문제](traveling-salesman-problem.md).** 간선에 가중치가 있는 완전그래프에서 가중치 합이 최소인 Hamilton 순환을 찾는 문제다. 가중치가 삼각부등식을 만족하면 [근사 알고리즘](approximation-algorithms.md)의 Christofides 절차가 최적의 $3/2$ 배 안에 드는 순환을 준다.
-- **Gray 코드.** 길이 $n$ 인 이진 문자열을 정점으로 하고 한 자리만 다른 두 문자열을 간선으로 이으면 $n$ 차원 하이퍼큐브가 된다. 이 그래프의 Hamilton 순환이 연속한 두 문자열이 한 자리만 다른 나열이고, 반사 이진 코드가 그 예다.
-- **기사 여행.** 체스판의 칸을 정점으로 하고 기사의 한 수로 오갈 수 있는 두 칸을 간선으로 이은 그래프에서 Hamilton 경로를 찾는 문제다. $8\times 8$ 판에서는 순환도 존재한다.
+- [외판원 문제](traveling-salesman-problem.md)는 간선에 가중치가 있는 완전그래프에서 가중치 합이 최소인 Hamilton 순환을 찾는 문제다. 가중치가 삼각부등식을 만족하면 [근사 알고리즘](approximation-algorithms.md)의 Christofides 알고리즘(Christofides algorithm)이 최적의 $3/2$ 배 안에 드는 순환을 준다.
+- Gray 코드(Gray code)는 다음 Hamilton 순환이다. 길이 $n$ 인 이진 문자열을 정점으로 하고 한 자리만 다른 두 문자열을 간선으로 이으면 $n$ 차원 하이퍼큐브(hypercube)가 된다. 이 그래프의 Hamilton 순환이 연속한 두 문자열이 한 자리만 다른 나열이고, 반사 이진 코드(reflected binary code)가 그 예다.
+- 기사 여행(knight's tour)은 체스판의 칸을 정점으로 하고 기사의 한 수로 오갈 수 있는 두 칸을 간선으로 이은 그래프에서 Hamilton 경로를 찾는 문제다. $8\times 8$ 판에서는 순환도 존재한다.
 
 [^1]: Petersen 그래프가 Hamilton 그래프가 아니라는 증명은 J. A. Bondy, U. S. R. Murty, *Graph Theory* (Springer Graduate Texts in Mathematics 244, 2008) 1 장 연습문제에 있다.
 
