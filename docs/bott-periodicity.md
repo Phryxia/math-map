@@ -6,14 +6,6 @@
 
 # 직관
 
-Bott 주기성은 안정 유니터리군 $U$ 의 호모토피군이 주기 $2$ 로, 안정 직교군 $O$ 의 호모토피군이 주기 $8$ 로 되풀이된다는 정리다.
-
-$$
-\pi\_k(U)\cong\pi\_{k+2}(U),\qquad \pi\_k(O)\cong\pi\_{k+8}(O)
-$$
-
-[분류공간](classifying-spaces.md)으로 옮기면 $\Omega^2BU\simeq\mathbb Z\times BU$ 와 $\Omega^8BO\simeq\mathbb Z\times BO$ 이고, 위상 K 이론이 주기 $2$ 와 $8$ 의 일반화 코호몰로지 이론이 된다. Bott 가 1959 년에 Morse 이론으로 증명했다.
-
 [Lie 군](lie-groups.md) $U(n)$ 은 $\mathbb C^n$ 의 단위벡터 하나를 고정하는 부분군이 $U(n-1)$ 이고, 단위벡터 전체가 구면 $S^{2n-1}$ 이므로 올화 $U(n-1)\to U(n)\to S^{2n-1}$ 이 있다. 구면의 낮은 차수 호모토피군이 $0$ 이어서 $\pi\_k(U(n))$ 은 $n$ 이 $k$ 에 비해 크면 $n$ 에 의존하지 않는다. 그 값을 $\pi\_k(U)$ 라 쓴다.
 
 작은 차수를 직접 구한다. $U(n)$ 은 연결이므로 $\pi\_0(U)=0$ 이다. 행렬식 $U(n)\to S^1$ 이 $\pi\_1(U)\cong\mathbb Z$ 를 준다. $\pi\_2$ 는 모든 Lie 군에서 $0$ 이다. $SU(2)$ 가 구면 $S^3$ 이므로 $\pi\_3(U)\cong\mathbb Z$ 다. 값이 $0,\mathbb Z,0,\mathbb Z$ 로 번갈아 나오고, Bott 주기성은 이 번갈음이 모든 차수에서 이어진다는 것이다.
@@ -22,19 +14,21 @@ $$
 
 # 정의
 
-$U(n)\subset U(n+1)$ 을 왼쪽 위 블록으로 넣어 합집합 $U=\bigcup\_nU(n)$ 을 **안정 유니터리군(stable unitary group)** 이라 하고, 같은 방식으로 **안정 직교군** $O=\bigcup\_nO(n)$ 을 정의한다. $BU$ 와 $BO$ 는 각각의 분류공간이고, $\Omega$ 는 고리공간을 취하는 조작이다. 분류공간에 대해 $\Omega BG\simeq G$ 이다.
+$U(n)\subset U(n+1)$ 을 왼쪽 위 블록으로 넣어 합집합 $U=\bigcup\_nU(n)$ 을 **안정 유니터리군(stable unitary group)** 이라 하고, 같은 방식으로 **안정 직교군(stable orthogonal group)** $O=\bigcup\_nO(n)$ 을 정의한다. $U(1)=S^1$ 은 $U(2)$ 안에 $\mathrm{diag}(z,1)$ 로 들어가고, 직관 절의 $\pi\_k(U)$ 는 이 합집합의 호모토피군이다.
+
+점 붙은 공간 $X$ 의 **고리공간(loop space)** $\Omega X$ 는 밑점에서 시작해 밑점으로 돌아오는 고리 전체의 공간이고, $\pi\_k(\Omega X)\cong\pi\_{k+1}(X)$ 다. 원 $S^1$ 의 고리공간은 감는 수마다 성분 하나가 있고 각 성분이 축약 가능해 $\Omega S^1\simeq\mathbb Z$ 다. $BU$ 와 $BO$ 는 각각 $U$ 와 $O$ 의 [분류공간](classifying-spaces.md)이고 $\Omega BG\simeq G$ 를 만족한다.
 
 # 성질
 
-## 정리
+## 주기성 정리
 
-**정리(Bott, 1959).** 호모토피 동치
+Bott 는 1959 년에 다음 호모토피 동치
 
 $$
 \Omega U\simeq\mathbb Z\times BU,\qquad \Omega^7O\simeq\mathbb Z\times BO
 $$
 
-이 존재한다[^1]. 따라서 호모토피군은 다음 주기표를 따른다.
+가 존재함을 증명했다[^1]. $k\ge 2$ 에서 $\pi\_k(U)\cong\pi\_{k-1}(\Omega U)\cong\pi\_{k-1}(BU)\cong\pi\_{k-2}(U)$ 이므로 유니터리군의 주기는 $2$ 이고, 같은 계산으로 $\Omega^8BO\simeq\mathbb Z\times BO$ 에서 직교군의 주기 $8$ 이 나온다. 호모토피군은 다음 주기표를 따른다.
 
 | k mod 8 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -59,9 +53,9 @@ $$
 
 # 활용
 
-- **구면 위의 다발.** 계수가 큰 복소 벡터다발이 $S^k$ 위에 몇 가지인지는 $\pi\_{k-1}(U)$ 이므로 $k$ 가 짝수이면 $\mathbb Z$, 홀수이면 하나다.
-- **Hopf 불변량 $1$ 문제.** Adams 와 Atiyah 는 K 이론의 [Adams 연산](adams-operations.md)으로 [Hopf 불변량](hopf-invariant.md)이 $1$ 인 사상이 $S^1$, $S^3$, $S^7$ 에서 오는 것뿐임을 보였다. 이 계산이 Bott 주기성으로 정한 $\widetilde K(S^{2n})$ 의 생성원을 쓴다.
-- **지표 정리.** [지표 정리](index-theorem.md)의 위상적 지표는 K 이론의 Thom 동형과 Bott 주기성으로 정의된다. [작용소 K 이론](operator-k-theory.md)에서 같은 주기성이 $C^\ast$ 대수의 $K\_0$ 과 $K\_1$ 을 잇는다.
+- 구면 위의 다발. 계수가 큰 복소 벡터다발이 $S^k$ 위에 몇 가지인지는 $\pi\_{k-1}(U)$ 이므로 $k$ 가 짝수이면 $\mathbb Z$, 홀수이면 하나다.
+- Hopf 불변량 $1$ 문제. Adams 와 Atiyah 는 K 이론의 [Adams 연산](adams-operations.md)으로 [Hopf 불변량](hopf-invariant.md)이 $1$ 인 사상이 $S^3\to S^2$, $S^7\to S^4$, $S^{15}\to S^8$ 의 세 차원에만 있음을 보였다. 이 계산이 Bott 주기성으로 정한 $\widetilde K(S^{2n})$ 의 생성원을 쓴다.
+- [지표 정리](index-theorem.md)의 위상적 지표는 K 이론의 Thom 동형과 Bott 주기성으로 정의된다. [작용소 K 이론](operator-k-theory.md)에서 같은 주기성이 $C^\ast$ 대수의 $K\_0$ 과 $K\_1$ 을 잇는다.
 
 [^1]: R. Bott, "The stable homotopy of the classical groups", *Annals of Mathematics* 70 (1959), 313–337.
 [^2]: M. F. Atiyah, R. Bott, "On the periodicity theorem for complex vector bundles", *Acta Mathematica* 112 (1964), 229–247.
