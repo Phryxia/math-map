@@ -6,19 +6,15 @@
 
 # 직관
 
-e-값은 귀무가설 아래에서 기댓값이 $1$ 이하인 음이 아닌 통계량의 값이다. [Markov 부등식](concentration-inequalities.md)으로 $E\ge 1/\alpha$ 일 때 귀무가설을 기각하는 검정의 1 종 오류율이 $\alpha$ 이하다.
-
-[가설검정](hypothesis-testing.md)의 p-값과 달리 e-값은 곱하고 평균해도 e-값이다. 독립인 실험의 결과를 곱해 합치고, 자료를 보면서 실험을 이어 가도 오류율이 유지된다. e-값을 시간에 따라 곱해 만든 과정이 [신뢰열](confidence-sequences.md)의 Ville 부등식이 다루는 음이 아닌 supermartingale 이다.
-
 동전이 공정하다는 가설을 내기로 시험한다. 가진 돈 $1$ 로 시작하고, 매번 던지기 전에 앞면에 걸 비율 $q$ 를 정한다. 앞면이 나오면 돈이 $2q$ 배, 뒷면이 나오면 $2(1-q)$ 배가 된다. 동전이 공정하면 한 번 던진 뒤 돈의 기댓값은 $\frac12\cdot 2q+\frac12\cdot 2(1-q)=1$ 배이므로, 공정한 동전으로는 평균적으로 돈을 불릴 수 없다.
 
-$q=0.6$ 으로 미리 정하고 $100$ 번 던져 앞면이 $60$ 번 나왔다. 돈은 $1.2^{60}\cdot 0.8^{40}\approx 7.5$ 가 되었다. 동전이 공정할 때 돈이 언젠가 $20$ 이상이 될 확률은 $1/20$ 이하이므로, 돈이 $20$ 에 닿으면 유의수준 $0.05$ 로 공정성을 기각한다. 이번에는 $7.5$ 이므로 기각하지 않는다. 같은 자료에서 정규근사로 구한 양측 p-값은 약 $0.046$ 이어서 기각한다.
+$q=0.6$ 으로 미리 정하고 $100$ 번 던져 앞면이 $60$ 번 나왔다. 돈은 $1.2^{60}\cdot 0.8^{40}\approx 7.5$ 가 되었다. 동전이 공정할 때 돈이 언젠가 $20$ 이상이 될 확률은 $1/20$ 이하이므로, 돈이 $20$ 에 닿으면 유의수준 $0.05$ 로 공정성을 기각한다. 이번에는 $7.5$ 이므로 기각하지 않는다. 같은 자료에서 정규근사로 구한 [가설검정](hypothesis-testing.md)의 양측 p-값은 약 $0.046$ 이어서 기각한다.
 
 기각하지 않았으면 동전을 더 던져 내기를 이어 가면 된다. 공정한 동전 아래에서 돈의 기댓값은 몇 번을 던지든 $1$ 이므로, 언제 그만둘지를 돈을 보고 정해도 $20$ 에 닿을 확률은 $1/20$ 이하로 남는다. 이 돈의 값이 e-값이다.
 
 # 정의
 
-귀무가설 $H_0$ 은 확률분포의 모임이다. 음이 아닌 확률변수 $E$ 가
+귀무가설(null hypothesis) $H_0$ 은 확률분포의 모임이다. 음이 아닌 확률변수 $E$ 가
 
 $$
 E_P\lbrack E\rbrack\le 1\qquad(\text{모든 }P\in H_0)
@@ -26,23 +22,25 @@ $$
 
 을 만족하면 $E$ 를 **e-변수(e-variable)** 라 하고, 그 실현값을 **e-값** 이라 한다.
 
-여과 $(\mathcal F_n)$ 에 적응된 음이 아닌 과정 $(M_n)$ 이 $M_0=1$ 이고 모든 $P\in H_0$ 에서 $P$-supermartingale 이면 $(M_n)$ 을 **검정 supermartingale(test supermartingale)** 이라 한다. 앞면 비율을 걸어 불린 돈이 그 예이고, 그때는 martingale 이므로 **검정 martingale(test martingale)** 이라 한다.
+직관 절의 내기에서 $q=0.6$ 으로 한 번 던진 뒤의 돈은 앞면이면 $1.2$, 뒷면이면 $0.8$ 이고 공정한 동전 아래 기댓값이 $1$ 이므로 e-변수다. $100$ 번 던진 뒤의 돈 $1.2^{H}0.8^{100-H}$ ($H$ 는 앞면 수)도 e-변수이고 그 실현값 $7.5$ 가 e-값이다. 앞면이면 $1.5$, 뒷면이면 $1$ 을 주는 변수는 기댓값이 $1.25$ 라 e-변수가 아니다.
+
+여과(filtration) $(\mathcal F_n)$ 에 적응된(adapted) 음이 아닌 과정 $(M_n)$ 이 $M_0=1$ 이고 모든 $P\in H_0$ 에서 $P$-supermartingale 이면 $(M_n)$ 을 **검정 supermartingale(test supermartingale)** 이라 한다. 앞면 비율을 걸어 불린 돈이 그 예이고, 그때는 martingale 이므로 **검정 martingale(test martingale)** 이라 한다.
 
 # 성질
 
 ## 타당성
 
-$E$ 가 e-변수이면 $P(E\ge 1/\alpha)\le\alpha E_P\lbrack E\rbrack\le\alpha$ 다. $(M_n)$ 이 검정 supermartingale 이면 Ville 부등식으로
+$E$ 가 e-변수이면 [Markov 부등식](concentration-inequalities.md)으로 $P(E\ge 1/\alpha)\le\alpha E_P\lbrack E\rbrack\le\alpha$ 다. 그래서 $E\ge 1/\alpha$ 일 때 귀무가설을 기각하는 검정의 1종 오류(type I error) 확률이 $\alpha$ 이하다. $(M_n)$ 이 검정 supermartingale 이면 [신뢰열](confidence-sequences.md) 문서의 Ville 부등식(Ville's inequality)으로
 
 $$
 P\bigl(M_n\ge 1/\alpha\text{ 인 }n\text{ 이 존재}\bigr)\le\alpha
 $$
 
-이고, 임의의 정지시간 $\tau$ 에서 $M_\tau$ 가 e-변수다.
+이고, 임의의 정지시간(stopping time) $\tau$ 에서 $M_\tau$ 가 e-변수다.
 
 ## 곱과 평균
 
-**명제.** $E_1$ 이 e-변수이고 $E_2$ 가 $E_1$ 을 알 때의 조건부 기댓값이 $1$ 이하인 음이 아닌 확률변수이면 $E_1E_2$ 는 e-변수다. 의존 구조와 상관없이 e-변수들의 볼록결합도 e-변수다.
+$E_1$ 이 e-변수이고 $E_2$ 가 $E_1$ 을 알 때의 조건부 기댓값이 $1$ 이하인 음이 아닌 확률변수이면 $E_1E_2$ 는 e-변수다. 의존 구조와 상관없이 e-변수들의 볼록결합도 e-변수다.
 
 탑 성질로 $E\lbrack E_1E_2\rbrack=E\lbrack E_1E\lbrack E_2\mid E_1\rbrack\rbrack\le E\lbrack E_1\rbrack\le 1$ 이다. 평균은 기댓값의 선형성에서 바로 나온다. $\square$
 
@@ -56,7 +54,7 @@ $E$ 가 e-변수이면 $\min(1,1/E)$ 는 p-변수다. 위의 타당성 부등식
 
 ## 가능도비와 성장률
 
-$H_0=\lbrace P_0\rbrace$ 가 하나의 분포이면 밀도 $q$ 를 무엇으로 잡든 $q(X)/p_0(X)$ 가 e-변수다. $E_{P_0}\lbrack q/p_0\rbrack=\int q=1$ 이기 때문이다. [순차확률비 검정](sequential-probability-ratio-test.md)의 누적 우도비가 이것을 곱한 검정 martingale 이다.
+$H_0=\lbrace P_0\rbrace$ 가 하나의 분포이면 밀도 $q$ 를 무엇으로 잡든 $E_{P_0}\lbrack q/p_0\rbrack=\int q=1$ 이므로 $q(X)/p_0(X)$ 가 e-변수다. 직관 절의 한 번 내기는 $q$ 를 앞면 확률 $0.6$ 인 동전의 확률로 잡은 $q/p_0=0.6/0.5=1.2$, $0.4/0.5=0.8$ 이다. [순차확률비 검정](sequential-probability-ratio-test.md)의 누적 우도비가 이것을 곱한 검정 martingale 이다.
 
 자료가 실제로 $Q$ 를 따를 때 한 번의 관측에서 $E_Q\lbrack\log E\rbrack$ 를 가장 크게 하는 e-변수, 곧 [Kelly 기준](kelly-criterion.md)으로 건 돈은 $q=dQ/d\mu$ 로 잡은 가능도비이고, 그 값은 [KL divergence](kl-divergence.md)(Kullback–Leibler divergence) $D(Q\Vert P_0)$ 다. 검정 martingale 은 대략 $\exp(nD(Q\Vert P_0))$ 의 속도로 자라고, 기각에 필요한 관측 수가 $\log(1/\alpha)/D(Q\Vert P_0)$ 규모다.
 
@@ -72,9 +70,9 @@ $$
 
 # 활용
 
-- **연구 결과의 누적.** 한 연구의 e-값을 보고 다음 연구를 할지 정해도, 연구들의 e-값을 곱한 값이 e-값이다.
-- **신뢰열.** 모수 $\theta$ 마다 귀무가설 $\lbrace\theta\rbrace$ 의 검정 martingale $M_n(\theta)$ 를 두면 $\lbrace\theta:M_n(\theta)\lt 1/\alpha\rbrace$ 이 수준 $1-\alpha$ 의 신뢰열이다. 정규분포 평균에 대한 혼합법 신뢰열이 이 구성이다.
-- **다중검정.** 가설 $m$ 개의 e-값을 크기순으로 $e_{(1)}\ge\cdots\ge e_{(m)}$ 이라 하고 $e_{(k)}\ge m/(\alpha k)$ 인 가장 큰 $k$ 까지 기각하면, 가설들 사이의 의존 구조와 상관없이 [거짓 발견률](false-discovery-rate.md)(false discovery rate, FDR)이 $\alpha$ 이하다. 이 절차를 e-BH(e-Benjamini–Hochberg) 라 하고, Benjamini–Hochberg 절차(Benjamini–Hochberg procedure)를 e-값으로 옮긴 것이다.[^3]
+- 한 연구의 e-값을 보고 다음 연구를 할지 정해도, 연구들의 e-값을 곱한 값이 e-값이다.
+- 모수 $\theta$ 마다 귀무가설 $\lbrace\theta\rbrace$ 의 검정 martingale $M_n(\theta)$ 를 두면 $\lbrace\theta:M_n(\theta)\lt 1/\alpha\rbrace$ 이 수준 $1-\alpha$ 의 신뢰열이다. 정규분포 평균에 대한 혼합법 신뢰열이 이 구성이다.
+- 가설 $m$ 개의 e-값을 크기순으로 $e_{(1)}\ge\cdots\ge e_{(m)}$ 이라 하고 $e_{(k)}\ge m/(\alpha k)$ 인 가장 큰 $k$ 까지 기각하면, 가설들 사이의 의존 구조와 상관없이 [거짓 발견률](false-discovery-rate.md)(false discovery rate, FDR)이 $\alpha$ 이하다. 이 절차를 e-BH(e-Benjamini–Hochberg) 라 하고, Benjamini–Hochberg 절차(Benjamini–Hochberg procedure)를 e-값으로 옮긴 것이다.[^3]
 
 [^1]: Vladimir Vovk, Ruodu Wang, "E-values: Calibration, combination and applications", *Annals of Statistics* 49 (2021), 1736–1754.
 [^2]: Larry Wasserman, Aaditya Ramdas, Sivaraman Balakrishnan, "Universal inference", *Proceedings of the National Academy of Sciences* 117 (2020), 16880–16890.
