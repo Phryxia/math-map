@@ -8,59 +8,55 @@
 
 유한군에서 임의의 내적 $\langle\cdot,\cdot\rangle_0$ 을 군 평균 $\frac1{\lvert G\rvert}\sum_{g\in G}\langle gu,gv\rangle_0$ 으로 대칭화하면 불변 내적이 나온다. 그러면 표현이 유니터리가 되고 부분표현의 직교보공간이 다시 부분표현이므로 완전가약성이 따라온다. 콤팩트 군에서는 이 합을 Haar 적분 $\int_G\langle gu,gv\rangle_0\thinspace dg$ 로 바꾸며, [콤팩트성](compactness.md)은 측도의 전체 질량이 유한해야 평균이 정의되는 자리에 쓰인다. $G=\mathbb R$ 에서는 전체 질량이 무한이어서 이 논법이 무너지고, 유니터리 표현이 직합이 아니라 직적분으로 분해되어 [연속 스펙트럼](bounded-operators.md)이 나온다.
 
-유한군에서 이 평균으로 얻는 결론이 정칙표현의 분해다.
+콤팩트 Lie 군에서 이 적분에 쓰는 불변 [측도](measure.md)가 [Haar 측도](haar-measure.md)이고, 함수들은 [Hilbert 공간](hilbert-spaces.md) $L^2(G)$ 의 원소로 다룬다.
 
-$$
-\mathbb C[G]\cong\bigoplus_i V_i^{\oplus\dim V_i}
-$$
-
-콤팩트 Lie 군에는 전체 부피가 $1$ 인 불변 [측도](measure.md)인 [Haar 측도](haar-measure.md)가 있어 평균의 합을 적분으로 바꿀 수 있고, 같은 분해가 [Hilbert 공간](hilbert-spaces.md)의 직교분해로 옮겨진다.
-
-$$
-L^2(G)\cong\widehat{\bigoplus_{i}}\ V_i\otimes V_i^\ast
-$$
-
-오른쪽 합은 가산개이고 각 항은 유한차원이다.
-
-표현 $\rho:G\to\mathrm{GL}(V)$ 와 기저를 고정하면 함수 $\rho_{ij}(g)$ 가 나오고 이것이 행렬계수다. $G=S^1$ 이고 $\rho_n(\theta)=e^{in\theta}$ 이면 행렬계수가 $e^{in\theta}$ 자신이므로, Fourier 급수는 모든 $L^2$ 함수가 행렬계수의 급수라는 진술이다. Peter–Weyl 정리는 이것을 일반화해 모든 기약표현의 행렬계수를 모으면 $L^2(G)$ 에서 조밀하고 정규화하면 정규직교기저가 된다고 말한다. $\dim V_i$ 차원 표현이 $(\dim V_i)^2$ 개의 함수를 기여하므로 유한군의 $\lvert G\rvert=\sum(\dim V_i)^2$ 가 무한 차원으로 옮겨진다.
+표현 $\rho:G\to\mathrm{GL}(V)$ 와 기저를 고정하면 함수 $\rho_{ij}(g)$ 가 나오고 이것이 행렬계수다. $G=S^1$ 이고 $\rho_n(\theta)=e^{in\theta}$ 이면 행렬계수가 $e^{in\theta}$ 자신이므로, Fourier 급수는 모든 $L^2$ 함수가 행렬계수의 급수라는 진술이다. $S^1$ 의 기약표현은 $\rho_n$ 들뿐이고 모두 1 차원이다. 회전군에서는 차원이 $2l+1$ 인 기약표현마다 행렬계수가 $(2l+1)^2$ 개 나오고, 이것들이 같은 자리를 채운다. 유한군에서도 기약표현마다 $(\dim V_i)^2$ 개의 행렬계수가 나오고, 그 개수를 더하면 $\lvert G\rvert=\sum(\dim V_i)^2$ 이다.
 
 # 정의
 
 ## Haar 측도
 
-국소 콤팩트 위상군 $G$ 위에 왼쪽 평행이동 불변인 Radon 측도가 상수배를 빼고 유일하게 존재한다.
+국소 콤팩트 위상군 $G$ 위의 Radon 측도 가운데 왼쪽 평행이동에 대해 불변인 것
 
 $$
 \int_Gf(hg)\thinspace dg=\int_Gf(g)\thinspace dg\qquad(\forall h\in G)
 $$
 
-$G$ 가 콤팩트이면 이 측도가 유한이고 오른쪽 불변이기도 하며(유니모듈러), $\int_G1\thinspace dg=1$ 로 정규화한다. 유한군에서는 $dg$ 가 각 점에 $1/|G|$ 를 주는 계량 측도다.
+을 **Haar 측도(Haar measure)** 라 한다. $G$ 가 콤팩트이면 $\int_G1\thinspace dg=1$ 로 정규화한다.
+
+- 유한군에서는 각 점에 $1/\lvert G\rvert$ 를 주는 측도다.
+- $S^1$ 에서는 $d\theta/2\pi$ 다.
 
 ## 행렬계수와 지표
 
-유한차원 표현 $(\rho,V)$ 와 기저를 고정해 얻는 함수 $\rho_{ij}(g)=\big(\rho(g)\big)\_{ij}$ 가 **행렬계수**이고, **지표**는 $\chi_\rho(g)=\mathrm{tr}\rho(g)$ 다. 지표는 켤레불변이라 **류함수**이고, 콤팩트 군에서도 유한군과 같은 직교관계를 만족한다.
+유한차원 표현 $(\rho,V)$ 와 기저를 고정해 얻는 함수 $\rho_{ij}(g)=\big(\rho(g)\big)\_{ij}$ 를 **행렬계수(matrix coefficient)** 라 하고, $\chi_\rho(g)=\mathrm{tr}\rho(g)$ 를 **지표(character)** 라 한다. 켤레불변인 함수를 **류함수(class function)** 라 한다.
+
+- $S^1$ 의 $\rho_n(\theta)=e^{in\theta}$ 는 행렬계수와 지표가 모두 $e^{in\theta}$ 다.
+- $\mathrm{SU}(2)$ 의 표준 2 차원 표현에서 $g=\mathrm{diag}(e^{i\theta},e^{-i\theta})$ 의 지표는 $2\cos\theta$ 이고, 지표는 켤레불변이므로 류함수다.
+
+# 성질
+
+## Haar 측도의 존재와 직교관계
+
+국소 콤팩트 위상군에는 Haar 측도가 상수배를 빼고 유일하게 존재한다. $G$ 가 콤팩트이면 Haar 측도는 유한이고 오른쪽 불변이기도 하다(유니모듈러, unimodular). 기약표현의 지표는 콤팩트 군에서도 유한군과 같은 직교관계를 만족한다.
 
 $$
 \int_G\chi_i(g)\overline{\chi_j(g)}\thinspace dg=\delta_{ij}
 $$
 
-정규화한 행렬계수 $\lbrace\sqrt{\dim V_i}\thinspace\rho^{(i)}\_{jk}\rbrace$ 가 $L^2(G)$ 의 정규직교기저다.
-
-# 성질
-
 ## 정리의 세 형태
 
 콤팩트 군 $G$ 에 대해 다음이 성립한다.
 
-- **(대수적)** 모든 기약 유니터리 표현은 유한차원이고, 동형류가 가산개다. 모든 유니터리 표현은 기약표현의 Hilbert 직합이다.
-- **(해석적)** 행렬계수들이 $C(G)$ 에서 균등노름으로 조밀하고, $L^2(G)$ 의 정규직교기저를 이룬다. 곧
+- 대수적 형태. 모든 기약 유니터리 표현은 유한차원이고, 동형류가 가산개다. 모든 유니터리 표현은 기약표현의 Hilbert 직합이다.
+- 해석적 형태. 행렬계수들이 $C(G)$ 에서 균등노름으로 조밀하고, $L^2(G)$ 의 정규직교기저를 이룬다. 곧
 
 $$
-L^2(G)=\widehat{\bigoplus_{i\in\hat G}}\ \mathrm{End}(V_i),\qquad
+L^2(G)=\widehat{\bigoplus_{i\in\hat G}}\thinspace\mathrm{End}(V_i),\qquad
 \dim\mathrm{End}(V_i)=(\dim V_i)^2
 $$
 
-- **(구조적)** $G$ 가 콤팩트 Lie 군이면 충실한 유한차원 표현이 존재한다. 곧 모든 콤팩트 Lie 군은 어떤 $\mathrm U(n)$ 의 닫힌 부분군이다.
+- 구조적 형태. $G$ 가 콤팩트 Lie 군이면 충실한 유한차원 표현이 존재한다. 곧 모든 콤팩트 Lie 군은 어떤 $\mathrm U(n)$ 의 닫힌 부분군이다.
 
 세 번째 항목에 따라 추상적으로 주어진 콤팩트 Lie 군을 언제나 행렬군으로 다룰 수 있다.
 
@@ -85,7 +81,7 @@ $\mathrm{SO}(3)$ 의 경우 $L^2(S^2)=L^2(\mathrm{SO}(3)/\mathrm{SO}(2))$ 이므
 - 반단순 실 Lie 군: 기약 유니터리 표현이 무한차원이고, Plancherel 측도로 직적분 분해가 주어진다. Harish-Chandra 의 이론이 이것을 다룬다.
 - 산술 몫 $\Gamma\backslash G$ 에서는 이산 스펙트럼과 연속 스펙트럼으로 나뉘고, 이산 부분이 자기동형 형식이다. [Langlands 강령](langlands-program.md)이 여기서 시작한다.
 
-콤팩트 군에서 스펙트럼이 전부 이산인 것은 $L^2(G)$ 에 작용하는 [합성곱](convolution.md) 작용소가 [콤팩트 작용소](compact-operators.md)여서 [스펙트럼 정리](spectral-theorem.md)가 적용되기 때문이다.
+콤팩트 군에서는 $L^2(G)$ 에 작용하는 [합성곱](convolution.md) 작용소가 [콤팩트 작용소](compact-operators.md)이고, [스펙트럼 정리](spectral-theorem.md)가 적용되어 스펙트럼이 전부 이산이다.
 
 # 활용
 
