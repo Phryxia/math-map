@@ -16,7 +16,7 @@
 
 # 정의
 
-집단 $k$ 개에서 집단 $i$ 의 관측 $Y_{ij}$ ($j=1,\dots,n_i$) 를 얻고 $n=n_1+\cdots+n_k$ 이다. 모형은 $Y_{ij}=\mu_i+\varepsilon_{ij}$ 이고 $\varepsilon_{ij}$ 는 서로 독립이며 $N(0,\sigma^2)$ 를 따른다. 귀무가설은 $H_0:\mu_1=\cdots=\mu_k$ 이다.
+집단 $k$ 개에서 집단 $i$ 의 관측 $Y_{ij}$ ($j=1,\dots,n_i$) 를 얻고 $n=n_1+\cdots+n_k$ 이다. 모형은 $Y_{ij}=\mu_i+\varepsilon_{ij}$ 이고 $\varepsilon_{ij}$ 는 서로 독립이며 $N(0,\sigma^2)$ 를 따른다. 귀무가설(null hypothesis)은 $H_0:\mu_1=\cdots=\mu_k$ 이다.
 
 집단 평균을 $\bar Y_i$, 전체 평균을 $\bar Y$ 라 하고 세 제곱합을 정한다.
 
@@ -30,11 +30,13 @@ $$
 F=\frac{\mathrm{SSB}/(k-1)}{\mathrm{SSW}/(n-k)}
 $$
 
+직관 절의 비료 자료는 $k=3$, $n_i=3$, $n=9$ 이고 $\bar Y_i=5,7,9$, $\bar Y=7$ 이다. $\mathrm{SST}=30$, $\mathrm{SSB}=24$, $\mathrm{SSW}=6$ 이고 $F=(24/2)/(6/6)=12$ 다. $F(2,6)$ 의 상위 $0.05$ 분위수는 $5.14$ 이므로 $H_0$ 을 기각한다.
+
 # 성질
 
 ## 제곱합의 분해
 
-**정리.** $\mathrm{SST}=\mathrm{SSB}+\mathrm{SSW}$ 이다.
+$\mathrm{SST}=\mathrm{SSB}+\mathrm{SSW}$ 이다.
 
 증명의 요지. $Y_{ij}-\bar Y=(Y_{ij}-\bar Y_i)+(\bar Y_i-\bar Y)$ 를 제곱해 더하면 교차항이 $2\sum_i(\bar Y_i-\bar Y)\sum_j(Y_{ij}-\bar Y_i)$ 이고, 안쪽 합이 $0$ 이다.
 
@@ -42,7 +44,7 @@ $$
 
 ## 귀무가설 아래의 분포
 
-**정리.** $H_0$ 아래 $\mathrm{SSB}/\sigma^2\sim\chi^2_{k-1}$ 과 $\mathrm{SSW}/\sigma^2\sim\chi^2_{n-k}$ 는 독립이고, 따라서 $F\sim F(k-1,n-k)$ 이다.[^1]
+$H_0$ 아래 $\mathrm{SSB}/\sigma^2\sim\chi^2_{k-1}$ 과 $\mathrm{SSW}/\sigma^2\sim\chi^2_{n-k}$ 는 독립이고, 따라서 $F\sim F(k-1,n-k)$ 이다.[^1]
 
 증명의 요지. 오차 벡터 $\varepsilon/\sigma$ 는 독립 표준정규 좌표를 갖고, 직교 사영으로 나눈 성분들은 독립인 표준정규 좌표를 사영의 차원만큼 갖는다. $H_0$ 아래 $\mathrm{SSB}$ 는 차원 $k-1$ 인 부분공간, $\mathrm{SSW}$ 는 차원 $n-k$ 인 부분공간의 성분이다. 이것은 [카이제곱 분포](chi-squared-distribution.md)의 표본분산 정리와 같은 회전 논증이다.
 
@@ -58,7 +60,7 @@ $k=2$ 이면 $F$ 는 두 표본 t 통계량의 제곱이고, $F(1,n-2)$ 는 자�
 
 - 실험계획법에서 요인이 둘이면 이원 분산분석(two-way ANOVA)으로 제곱합을 두 요인의 주효과, 교호작용, 오차로 나누고 각 효과를 F 비로 검정한다.
 - 귀무가설을 기각한 뒤 어느 집단끼리 다른지 알려면 집단 쌍마다 검정을 하므로 [거짓 발견률](false-discovery-rate.md)이나 검정 횟수로 나눈 유의수준으로 여러 번 검정한 오류를 조절한다.
-- 정규성이 의심되면 순위로 바꾼 자료에 같은 분해를 하는 Kruskal–Wallis 검정을 쓴다. 이 검정은 [Wilcoxon 순위합 검정](wilcoxon-rank-sum-test.md)을 집단 $k$ 개로 늘린 것이다.
+- 정규성이 의심되면 순위로 바꾼 자료에 같은 분해를 하는 Kruskal–Wallis 검정(Kruskal–Wallis test)을 쓴다. 이 검정은 [Wilcoxon 순위합 검정](wilcoxon-rank-sum-test.md)을 집단 $k$ 개로 늘린 것이다.
 
 [^1]: G. Casella, R. L. Berger, *Statistical Inference*, 2nd ed., Duxbury (2002), §11.2. 일원 분산분석, 제곱합의 분해와 F 검정.
 
