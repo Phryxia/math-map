@@ -6,7 +6,7 @@
 
 # 직관
 
-특징이 [실수](real-numbers.md) 하나인 경우, 중복집합(multiset) $\lbrace\lbrace 1, 3\rbrace\rbrace$ 과 $\lbrace\lbrace 2, 2\rbrace\rbrace$ 는 합이 둘 다 4 이고 평균이 둘 다 2 다. 1-WL(Weisfeiler–Leman) 은 이 두 이웃을 다른 색으로 나누지만, 원시 특징에 그대로 합이나 평균을 취하는 집계는 두 정점에 같은 값을 준다. 집계가 뭉갠 만큼 신경망이 나누는 그래프가 줄어들므로 그래프 신경망은 1-WL 보다 강해질 수 없고, 집계가 단사일 때 상한에 닿는다.
+특징이 [실수](real-numbers.md) 하나인 경우, 중복집합(multiset) $\lbrace\lbrace 1, 3\rbrace\rbrace$ 과 $\lbrace\lbrace 2, 2\rbrace\rbrace$ 는 합이 둘 다 4 이고 평균이 둘 다 2 다. 이웃 색의 중복집합으로 정점을 나누는 [Color refinement](color-refinement.md), 곧 1-WL(Weisfeiler–Leman) 은 이 두 이웃을 다른 색으로 나누지만, 원시 특징에 그대로 합이나 평균을 취하는 집계는 두 정점에 같은 값을 준다. 집계가 뭉갠 만큼 신경망이 나누는 그래프가 줄어든다.
 
 합은 특징을 먼저 변환해 $\sum_{u} f(h_u)$ 꼴로 쓰면 $f$ 의 선택으로 단사가 되고, 그 $f$ 를 신경망으로 근사한다. 평균과 최댓값에는 이런 변환이 없다. 평균은 중복도를 지워 $\lbrace\lbrace 1,1,2\rbrace\rbrace$ 와 $\lbrace\lbrace 1,2\rbrace\rbrace$ 를 구별하지 못하고, 최댓값은 중복집합을 그 지지집합으로 축소한다.
 
@@ -20,25 +20,33 @@
 
 ## message-passing 그래프 신경망
 
-각 정점이 이웃 특징의 순서 무관 집계값과 자기 특징으로 새 특징을 계산하는 모형을 대상으로 한다. 정점 $v$ 의 $t$ 번째 특징은 고정 차원 [벡터](vector-spaces.md) $h_t(v)$ 이고, 이웃 집합을 $N(v)$ 로, 집계 함수를 $A_t$ 로, 결합 함수를 $U_t$ 라 한다.
+**message-passing 그래프 신경망(message-passing graph neural network)** 은 각 정점이 이웃 특징의 순서 무관 집계값과 자기 특징으로 새 특징을 계산하는 모형이다. 정점 $v$ 의 $t$ 번째 특징은 고정 차원 [벡터](vector-spaces.md) $h_t(v)$ 이고, 이웃 집합을 $N(v)$ 로, 집계 함수를 $A_t$ 로, 결합 함수를 $U_t$ 라 한다.
 
 $$
 h_{t+1}(v)=U_t\Big(h_t(v),\thinspace A_t\big(\lbrace\negthinspace\lbrace h_t(u):u\in N(v)\rbrace\negthinspace\rbrace\big)\Big)
 $$
 
+경로 $a$-$b$-$c$ 에서 모든 특징을 $1$ 로 두고 $A_t$ 를 합, $U_t(x,y)=x+y$ 로 잡으면 $h_1(a)=h_1(c)=2$, $h_1(b)=3$ 이다.
+
 그래프 전체의 출력은 정점 특징에 순열 불변 readout 을 적용해 만든다. **그래프 신경망의 표현력(expressivity)** 은 두 입력 그래프에 서로 다른 출력을 주는 능력이다.
 
 ## Graph Isomorphism Network
 
-Xu, Hu, Leskovec, Jegelka 의 논문[^1]이 제시한 구성은 합 집계에 학습 가능한 스칼라 $\epsilon$ 과 다층 퍼셉트론을 붙인다.
+**Graph Isomorphism Network(GIN)** 는 Xu, Hu, Leskovec, Jegelka 의 논문[^1]이 제시한 구성으로, 합 집계에 학습 가능한 스칼라 $\epsilon$ 과 다층 퍼셉트론(multilayer perceptron, MLP)을 붙인다.
 
 $$
 h_{t+1}(v)=\mathrm{MLP}\_t\Big((1+\epsilon_t)\thinspace h_t(v)+\sum_{u\in N(v)}h_t(u)\Big)
 $$
 
-$(1+\epsilon_t)$ 계수가 자기 특징과 이웃 합을 구별한다. 그래프 수준 readout 은 각 층의 정점 특징 합을 이어 붙여 얕은 층의 정보가 깊은 층에서 뭉개지는 것을 막는다.
+그래프 수준 readout 은 각 층의 정점 특징 합을 이어 붙여 얕은 층의 정보가 깊은 층에서 뭉개지는 것을 막는다.
+
+직관 절의 이웃 $\lbrace\lbrace 1,3\rbrace\rbrace$ 와 $\lbrace\lbrace 2,2\rbrace\rbrace$ 는 합이 같아 첫 층의 입력이 같아진다. 특징 $1,2,3$ 을 표준 기저 $e_1,e_2,e_3$ 으로 부호화하면 이웃 합이 $e_1+e_3$ 과 $2e_2$ 로 달라진다.
 
 # 성질
+
+## 자기 특징의 계수
+
+$(1+\epsilon_t)$ 계수가 자기 특징과 이웃 합을 구별한다.
 
 ## 1-WL 상한
 
@@ -50,15 +58,15 @@ $(1+\epsilon_t)$ 계수가 자기 특징과 이웃 합을 구별한다. 그래�
 
 ## 단사 집계의 하한
 
-반복 횟수가 충분하고 $A_t$ , $U_t$ , readout 이 모두 단사이면 1-WL 이 구별하는 두 그래프에 서로 다른 출력을 준다. 단사 조건에서 갱신 과정이 1-WL 의 $ID$ 함수처럼 색을 가르므로 신경망의 특징이 1-WL 색을 재현한다.
+반복 횟수가 충분하고 $A_t$ , $U_t$ , readout 이 모두 단사이면 1-WL 이 구별하는 두 그래프에 서로 다른 출력을 준다. 단사 조건에서 갱신 과정이 1-WL 의 $\mathrm{ID}$ 함수처럼 색을 가르므로 신경망의 특징이 1-WL 색을 재현한다.
 
-단사성의 실현은 별도의 보조정리다. 특징 공간이 가산이고 중복집합의 크기가 유계이면, 어떤 $f$ 가 존재해 $\sum_{x \in X} f(x)$ 가 중복집합 $X$ 에 대해 단사다. 보편 근사 정리로 $f$ 와 바깥 함수를 다층 퍼셉트론으로 근사할 수 있으므로 위 구성이 정당화된다.
+단사성의 실현은 별도의 보조정리다. 특징 공간이 셀 수 있고(countable) 중복집합의 크기가 유계이면, 어떤 $f$ 가 존재해 $\sum_{x \in X} f(x)$ 가 중복집합 $X$ 에 대해 단사다. 보편 근사 정리(universal approximation theorem)로 $f$ 와 바깥 함수를 다층 퍼셉트론으로 근사할 수 있으므로 위 구성이 정당화된다.
 
-가산성과 유계 조건은 논문의 구성이 쓰는 가정이고, 실수 특징 전체를 다루는 진술이 아니다.
+셀 수 있음과 유계 조건은 논문의 구성이 쓰는 가정이고, 실수 특징 전체를 다루는 진술이 아니다.
 
 ## 상한이 걸리는 사례
 
-정칙 그래프는 모든 정점의 색이 처음부터 끝까지 같아 구별되지 않는다. 육각형과 삼각형 두 개, 같은 차수의 서로 다른 정칙 그래프 쌍이 여기 해당한다.
+정칙 그래프는 모든 정점의 색이 처음부터 끝까지 같아 구별되지 않는다. 육각형과 삼각형 두 개, 정점 수와 차수가 같은 서로 다른 정칙 그래프 쌍이 여기 해당한다.
 
 ![정점 여섯 개의 육각형과, 삼각형 두 개로 된 그래프](figures/gnn-expressivity-c6-two-triangles.svg)
 
