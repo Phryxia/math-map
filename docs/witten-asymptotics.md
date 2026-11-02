@@ -2,95 +2,102 @@
 
 # 개요
 
-**Witten 점근 추측(Witten's asymptotic expansion conjecture)** 은 3 차원 다양체의 [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)이 매개변수 $k$ 를 키울 때 어떤 꼴로 변하는지를 정한 추측이다. Witten 의 규격화에서 구면 $S^3$ 의 불변량은 $\sqrt{2/(k+2)}\thinspace\sin\big(\pi/(k+2)\big)$ 이고, $k$ 가 크면 $\sqrt2\thinspace\pi\thinspace(k+2)^{-3/2}$ 에 가깝다. 지수 $-3/2$ 와 계수 $\sqrt2\thinspace\pi$ 가 구면의 무엇에서 오는지는 불변량을 정의하는 유한합에 나타나지 않는다. Witten 은 $k\to\infty$ 에서 불변량이 다양체 위의 평탄 $\mathrm{SU}(2)$ 접속마다 하나씩 붙는 항들의 합이 되고, 각 항의 진동과 크기가 그 접속의 Chern–Simons 작용값과 Reidemeister 비틀림으로 정해진다고 추측했다.
+**Witten 점근 추측(Witten's asymptotic expansion conjecture)** 은 3 차원 다양체의 [Reshetikhin–Turaev 불변량](reshetikhin-turaev.md)이 매개변수 $k$ 를 키울 때 어떤 꼴로 변하는지를 정한 추측이다. Witten 의 규격화에서 구면 $S^3$ 의 불변량은 $\sqrt{2/(k+2)}\thinspace\sin\big(\pi/(k+2)\big)$ 이고, $k$ 가 크면 $\sqrt2\thinspace\pi\thinspace(k+2)^{-3/2}$ 에 가깝다. 지수 $-3/2$ 와 계수 $\sqrt2\thinspace\pi$ 가 구면의 무엇에서 오는지는 불변량을 정의하는 유한합에 나타나지 않는다. Witten 은 $k\to\infty$ 에서 불변량이 다양체 위의 평탄 $\mathrm{SU}(2)$ 접속마다 하나씩 붙는 항들의 합이 되고, 각 항의 진동과 크기가 그 접속의 Chern–Simons 작용값과 [Reidemeister 비틀림](reidemeister-torsion.md)으로 정해진다고 추측했다.
 
 # 직관
 
-Reshetikhin–Turaev 불변량 $\tau_k(M)$ 의 정의는 대수적이다. [모듈러 텐서범주](modular-tensor-categories.md)의 $S$ [행렬](matrices.md)과 비틀림을 수술 링크 위에서 유한합으로 묶으면 수 하나가 나오지만, 그 수가 $M$ 의 어떤 기하를 담는지는 정의에 나타나지 않는다.
+[Reshetikhin–Turaev 불변량](reshetikhin-turaev.md) $\tau_k(M)$ 은 [모듈러 텐서범주](modular-tensor-categories.md)의 $S$ [행렬](matrices.md)과 비틀림을 수술 링크 위에서 묶은 유한합이다. 구면이면 $\tau_k(S^3)=\sqrt{2/(k+2)}\thinspace\sin\big(\pi/(k+2)\big)$ 이고, $k$ 가 크면 $\sqrt2\thinspace\pi\thinspace(k+2)^{-3/2}$ 에 가깝다. 이 유한합만 보아서는 지수 $-3/2$ 가 구면의 어떤 양에서 오는지 알 수 없다.
 
-Witten 의 답은 $k\to\infty$ 에 있다. 그 극한에서 $\tau_k(M)$ 은 $M$ 위의 평탄 $\mathrm{SU}(2)$ 접속마다 붙는 항들의 합으로 분해되고, 각 항의 위상은 그 접속의 Chern–Simons 작용값, 진폭은 Reidemeister 비틀림이다.
+Witten 은 $\tau_k(M)$ 을 [Chern–Simons 이론](chern-simons.md)의 경로적분 $\int\mathcal DA\thickspace e^{2\pi ik\thinspace\mathrm{CS}(A)}$ 로 보았다. 이 적분은 [측도](measure.md)가 정의되지 않아 증명에 쓸 수 없지만, 진동적분으로 보면 [정상위상법](stationary-phase.md)이 큰 $k$ 의 꼴을 예측한다. $k$ 가 크면 적분값은 위상 $\mathrm{CS}$ 의 임계점 근처에서 정해진다. $\mathrm{CS}$ 의 변분이 곡률 $F_A$ 에 비례하므로 임계점은 $F_A=0$ 인 평탄 접속이다.
 
-증명 대상은 RT(Reshetikhin–Turaev) 불변량이고, 답을 적는 데 쓰는 것은 [Chern–Simons 이론](chern-simons.md)의 평탄 접속과 작용값이며, 답의 모양을 예언하는 어림은 [정상위상법](stationary-phase.md)이다.
-
-증명이 되는 경우에 실제로 쓰이는 도구는 [이차 Gauss 합](gauss-sums.md)의 상호법칙이다. 상호법칙은 $O(k)$ 개 항의 합을 $O(p)$ 개 항의 합으로 바꾸며, 왼쪽은 정의이고 오른쪽은 평탄 접속들이다. 렌즈 공간에서 점근 추측이 참인 근거가 [이차 상호법칙](quadratic-reciprocity.md) 배후의 항등식이다.
-
-Witten 의 출발점은 형식적 경로적분 $Z_k(M)=\int\mathcal DA\thickspace e^{2\pi ik\thinspace\mathrm{CS}(A)}$ 이다. [측도](measure.md)가 정의되지 않아 증명의 재료는 아니지만 큰 $k$ 에서의 형태를 지정한다. 진동적분의 큰 $k$ 거동은 위상의 임계점이 지배하고, Chern–Simons 범함수의 변분이 $\int\mathrm{tr}(\delta A\wedge F_A)$ 에 비례하므로 임계점은 $F_A=0$ 인 평탄 접속이다.
-
-평탄 접속의 게이지류는 $\pi_1(M)\to\mathrm{SU}(2)$ 준동형의 켤레류와 같으므로, 무한차원 적분의 답이 $\pi_1$ 의 표현이라는 유한한 자료로 내려온다. 정상위상법의 표준형을 따르면 각 임계점의 위상이 $e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}$ 이고 진폭이 2 차 변분의 [행렬식](determinants.md)의 $-1/2$ 승이다. 그 행렬식을 정규화하면 [Reidemeister 비틀림](reidemeister-torsion.md)이 되고 부호에서 스펙트럼 흐름이 따라 나온다.
+평탄 $\mathrm{SU}(2)$ 접속의 게이지류는 준동형 $\pi_1(M)\to\mathrm{SU}(2)$ 의 켤레류와 같다. 구면은 $\pi_1(S^3)$ 이 자명하므로 평탄 접속이 자명한 접속 하나뿐이다. 정상위상법에서 평탄 접속 하나의 기여는 $k$ 의 거듭제곱에 비례하고, 그 지수는 접속이 평탄한 채로 움직일 수 있는 방향의 수에서 접속을 바꾸지 않는 게이지 대칭의 차원을 빼고 $2$ 로 나눈 값이다. 자명한 접속은 움직일 방향이 없고 $\mathrm{SU}(2)$ 전체가 그 접속을 바꾸지 않으므로, 지수가 $(0-3)/2=-3/2$ 다.
 
 # 정의
 
+## 평탄 접속의 자료
+
+$M$ 을 닫힌 유향 3 차원 [다양체](manifolds.md), $\tau_k(M)$ 을 $\mathrm{SU}(2)$ 준위 $k$ 의 RT(Reshetikhin–Turaev) 불변량이라 한다. 평탄 $\mathrm{SU}(2)$ 접속 $\alpha$ 마다 다음 양을 둔다.
+
+- $\mathrm{CS}(\alpha)\in\mathbb R/\mathbb Z$ 는 $\alpha$ 의 Chern–Simons 불변량이다.
+- $h^i_\alpha=\dim H^i(M;\mathrm{ad}\thinspace\alpha)$ 는 $\alpha$ 로 비꼰 코호몰로지의 차원이다. $h^0_\alpha$ 는 $\alpha$ 의 안정자의 차원이다.
+- $T_\alpha$ 는 $\alpha$ 로 비꼰 Reidemeister 비틀림이다.
+- $I_\alpha$ 는 스펙트럼 흐름(spectral flow)에서 오는 정수다.
+
+$S^3$ 의 자명한 접속 $\theta$ 에서는 $\mathrm{CS}(\theta)=0$, $h^0_\theta=3$, $h^1_\theta=0$ 이다. 렌즈 공간 $L(p,1)$ 에서는 $\pi_1=\mathbb Z/p$ 의 생성원을 $\mathrm{diag}(e^{2\pi ib/p},e^{-2\pi ib/p})$ 로 보내는 표현 $\rho_b$ 가 평탄 접속이고, $\mathrm{CS}(\rho_b)=-b^2/p$ 다.
+
 ## 점근 추측
 
-$M$ 을 닫힌 유향 3 차원 [다양체](manifolds.md), $\tau_k(M)$ 을 $\mathrm{SU}(2)\_k$ 의 RT 불변량이라 한다. $M$ 위의 평탄 $\mathrm{SU}(2)$ 접속의 게이지 동치류 모듈라이를 $\mathcal M(M)$ 이라 하고 그 점들이 고립되고 비퇴화라고 가정한다.
-
-**Witten 점근 추측(Witten's asymptotic expansion conjecture, 1989).** $k\to\infty$ 에서 다음이 성립한다.
+**Witten 점근 추측(Witten's asymptotic expansion conjecture)** 은 평탄 접속의 모듈라이 공간 $\mathcal M(M)$ 의 점들이 고립되고 비퇴화일 때, $k\to\infty$ 에서
 
 $$
 \tau_k(M)\thickspace\sim\thickspace\sum_{\alpha\in\mathcal M(M)}e^{2\pi ik\thinspace\mathrm{CS}(\alpha)}\thickspace k^{(h^1_\alpha-h^0_\alpha)/2}\thickspace\sqrt{T_\alpha}\thickspace e^{i\pi I_\alpha/4}\cdot\big(c_\alpha+O(k^{-1})\big)
 $$
 
-$\mathrm{CS}(\alpha)\in\mathbb R/\mathbb Z$ 는 Chern–Simons 불변량, $T_\alpha$ 는 $\alpha$ 로 비꼰 Reidemeister 비틀림, $I_\alpha$ 는 스펙트럼 흐름에서 오는 정수, $h^i_\alpha$ 는 비꼰 코호몰로지의 차원이다. 세 자료가 모두 고전 위상수학의 양이고 $\mathrm{CS}$ 는 게이지 이론, $T$ 는 조합적 위상수학, $I$ 는 지표 이론에서 온다.
+가 성립한다는 추측이다. Witten 이 1989 년에 경로적분으로 예측했다.
 
-모듈라이가 고립되지 않으면 $\alpha$ 에 대한 합이 [연결성분](connectedness.md) 위의 적분이 되고 멱 $k^{(h^1-h^0)/2}$ 가 그 성분의 차원을 읽는다. 자명한 접속은 $h^0\neq0$ 이라 따로 다루며 그 기여의 전개가 Ohtsuki 급수다.
+- $S^3$ 에서는 합이 $\theta$ 한 항이고 $k$ 의 지수가 $(0-3)/2=-3/2$ 다. 직관 절의 $\sqrt2\thinspace\pi\thinspace(k+2)^{-3/2}$ 와 맞는다.
+
+모듈라이가 고립되지 않으면 $\alpha$ 에 대한 합이 [연결성분](connectedness.md) 위의 적분으로 바뀐다.
 
 ## Ohtsuki 급수
 
-**정리 (Ohtsuki 1996).** $M$ 이 유리 호몰로지 3 구면이면 $\lambda_n(M)\in\mathbb Q$ 들이 존재해 형식급수 $\sum_n\lambda_n(M)(q-1)^n$ 이 정의되고, 각 $\lambda_n$ 은 차수 $3n$ 의 유한형 불변량이다. 정규화를 맞추면 $\lambda_1=6\lambda_{\mathrm{Casson}}$ 이다.
-
-계수가 유한형이라는 것은 매듭 수술의 유한 차수 차분에서 소멸한다는 뜻이고, 매듭 쪽 Vassiliev 불변량이 교차점 바꾸기의 차분으로 정의되는 구조가 한 차원 위에서 반복된다. 이 급수는 Le–Murakami–Ohtsuki 의 **LMO 불변량**으로 통합되었고, LMO 는 모든 유한형 불변량을 담는 보편적 대상이다.
-
-$q=e^h$ 로 두고 $h\to0$ 에서 형식적 [멱급수](power-series.md)로 전개하면 유리 [호몰로지](homology.md) 구면 $M$ 에 대해 다음을 얻는다.
+$M$ 이 유리 [호몰로지](homology.md) 3 구면일 때, 자명한 접속 주위의 섭동전개를 $q=e^{2\pi i/(k+2)}$ 에 대한 형식적 [멱급수](power-series.md)
 
 $$
-\tau^{\mathrm{Ohtsuki}}(M)=\sum_{n\ge0}\lambda_n(M)\thinspace h^n
+\tau^{\mathrm{O}}(M)=\sum_{n\ge0}\lambda_n(M)\thinspace(q-1)^n,\qquad \lambda_n(M)\in\mathbb Q
 $$
 
-이 급수가 **Ohtsuki 급수(Ohtsuki series)** 다. 점근 추측이 여러 임계점의 기여를 모두 보는 데 비해 Ohtsuki 급수는 자명한 접속 하나 주위의 섭동전개를 본다. 첫 계수 $\lambda_1$ 이 [Casson 불변량](casson-invariant.md)의 상수배다.
+로 적은 것을 **Ohtsuki 급수(Ohtsuki series)** 라 한다. Ohtsuki 가 1996 년 $\tau_k(M)$ 의 정수론적 성질에서 계수 $\lambda_n$ 을 정의했다.
+
+- $S^3$ 에서는 $\lambda_0=1$ 이고 $n\ge1$ 에서 $\lambda_n=0$ 이다.
 
 # 성질
 
-## 증명된 범위
+## Ohtsuki 급수의 계수
 
-| 다양체족 | 상태 | 방법 |
-|---|---|---|
-| 렌즈 공간 $L(p,q)$ | 증명됨 (정확한 등식) | Gauss 합 상호법칙 |
-| Seifert 올다양체 | 증명됨 | 상호법칙 + Poisson 합 |
-| 원환면 사상 원기둥 | 증명됨 | $\mathrm{SL}\_2(\mathbb Z)$ 표현의 명시적 대각화 |
-| 쌍곡 다양체 | 수치 확인 | 점근 전개의 수치 계산 |
+각 $\lambda_n$ 은 차수 $3n$ 의 유한형 불변량(finite type invariant)이다. 유한형이라는 것은 매듭을 따른 수술의 유한 차수 차분에서 소멸한다는 뜻이고, 매듭의 Vassiliev 불변량이 교차점 바꾸기의 차분으로 정의되는 것과 같은 꼴이다. 정규화를 맞추면 $\lambda_1=6\lambda_{\mathrm{C}}$ 이고, $\lambda_{\mathrm{C}}$ 는 [Casson 불변량](casson-invariant.md)이다.
 
-Jeffrey 가 렌즈 공간과 원환면 사상 원기둥에서 $\tau_k$ 의 닫힌 형태를 얻고 그것이 평탄 접속의 합과 일치함을 보였고, Rozansky, Lawrence–Rozansky, Hikami 가 Seifert 쪽을 처리했다. 공통 조건은 $\pi_1$ 이 충분히 작아 평탄 접속을 셀 수 있고 합이 Gauss 합으로 닫힌다는 것이다. 쌍곡 다양체에서는 모듈라이가 복잡하고 합이 닫힌 형태를 갖지 않는다.
+Ohtsuki 급수는 Le–Murakami–Ohtsuki 의 LMO 불변량(Le–Murakami–Ohtsuki invariant)에서 유도된다. LMO 불변량은 정수 호몰로지 구면의 유한형 불변량을 모두 결정한다.
 
 ## Gauss 합 상호법칙
 
-$\tau_k$ 의 정의는 $k+1$ 개 라벨에 대한 합이고 $q=e^{2\pi i/(k+2)}$ 가 1 의 거듭제곱근이므로 그 합이 **이차 Gauss 합**이다. Gauss 합에는 상호법칙이 있다.
+$q=e^{2\pi i/(k+2)}$ 가 1 의 거듭제곱근이므로 렌즈 공간의 $\tau_k$ 를 정의하는 $k+1$ 개 라벨의 합은 [이차 Gauss 합](gauss-sums.md)이다. 정수 $A,B,C$ 가 $AC\neq0$ 이고 $AC+B$ 가 짝수이면 다음 상호법칙이 성립한다.
 
 $$
-\sum_{a=0}^{|C|-1}e^{\pi i(Aa^2+Ba)/C}
-=\Big|\frac CA\Big|^{1/2}e^{\pi i\left(\mathrm{sgn}(AC)-B^2/(AC)\right)/4}\sum_{b=0}^{|A|-1}e^{-\pi i(Cb^2+Bb)/A}
+\sum_{a=0}^{\vert C\vert-1}e^{\pi i(Aa^2+Ba)/C}
+=\Big\vert\frac CA\Big\vert^{1/2}e^{\pi i\left(\mathrm{sgn}(AC)-B^2/(AC)\right)/4}\sum_{b=0}^{\vert A\vert-1}e^{-\pi i(Cb^2+Bb)/A}
 $$
 
-왼쪽 항의 개수는 $|C|$ 이고 오른쪽은 $|A|$ 다. 렌즈 공간 $L(p,1)$ 에서는 $C\sim2k$ 이고 $A=p$ 이므로 $k$ 에 비례하는 개수의 항이 $p$ 개의 항으로 바뀌고, $\pi_1(L(p,1))=\mathbb Z/p$ 의 $\mathrm{SU}(2)$ 표현도 그만큼 있다.
+$L(p,1)$ 에서는 $C$ 가 $2(k+2)$ 이고 $A=p$ 이다. 왼쪽의 $k$ 에 비례하는 개수의 항이 오른쪽의 $p$ 개 항으로 바뀌고, 오른쪽 항 $b$ 의 위상 $e^{-2\pi i(k+2)b^2/p}$ 에서 $k$ 의 계수 $-b^2/p$ 가 평탄 접속 $\rho_b$ 의 $\mathrm{CS}$ 값이다. 앞의 인수 $\vert C/A\vert^{1/2}$ 가 $\sqrt k$ 를 준다. 상호법칙이 등식이므로 렌즈 공간에서는 점근식이 오차 없이 성립한다.
 
-안장점 근사는 어림이지만 상호법칙은 등식이므로 렌즈 공간에서 점근 추측이 정확한 등식으로 성립한다. 오른쪽 합의 각 항에서 $k$ 는 위상 $e^{-2\pi i(k+2)b^2/p}$ 안에만 들어 있고 그 위상의 $k$ 에 대한 기울기 $-b^2/p$ 가 평탄 접속 $\rho_b$ 의 Chern–Simons 값이다. 앞의 $\left|C/A\right|^{1/2}$ 가 $\sqrt k$ 스케일을 주고 계수의 $4\sin^2(2\pi b/p)$ 가 비틀림이다.
+## 증명된 범위
 
+| 다양체족 | 증명 | 방법 |
+|---|---|---|
+| 렌즈 공간 $L(p,q)$ | Jeffrey | Gauss 합 상호법칙, 오차 없는 등식 |
+| 원환면 다발 | Jeffrey | $\mathrm{SL}\_2(\mathbb Z)$ 표현의 명시적 대각화 |
+| Seifert 올다양체 | Rozansky, Lawrence–Rozansky, Hikami | 상호법칙과 Poisson 합 |
 
-## 볼륨 추측과의 관계
+세 경우 모두 $\pi_1(M)$ 의 $\mathrm{SU}(2)$ 표현을 명시적으로 셀 수 있고 $\tau_k$ 가 Gauss 합의 닫힌 꼴로 적힌다.[^1]
 
-- **Witten 점근 추측**: 대상은 3 차원 다양체, 극한은 $k\to\infty$ 이며 $q=e^{2\pi i/(k+2)}\to1$ 이다. 답은 평탄 접속의 CS(Chern–Simons) 값이다.
-- [**볼륨 추측**](volume-conjecture.md): 대상은 $S^3$ 안의 매듭, 극한은 색 $N\to\infty$ 이고 $q$ 는 $N$ 제곱근에 고정된다. 답은 여집합의 쌍곡 부피다.
+## 정상위상법의 정확성
 
-전자는 [실수](real-numbers.md) 위상을, 후자는 지수적 증가율을 본다. 전자에서 $|\tau_k|$ 는 다항식적으로 거동하고 후자에서는 지수적으로 폭발한다. 쌍곡 다양체에서 Witten 추측이 어려운 이유 가운데 하나는 그 영역에서 두 현상이 섞여 복소 안장점(비실수 CS 값)이 기여한다는 데 있다. 재정리(resurgence) 접근이 이 복소 안장점을 다룬다.
+렌즈 공간에서는 점근전개가 유한 항에서 끝나고 오차가 $0$ 이다. Seifert 다양체 위의 Chern–Simons 이론에서는 $S^1$ 작용에 대한 국소화(localization)가 성립하고(Beasley–Witten), 이것은 Duistermaat–Heckman 정리(Duistermaat–Heckman theorem)의 무한차원 판본이다.
 
-## 점근전개의 정확성
+## 볼륨 추측과의 비교
 
-렌즈 공간에서는 점근전개가 유한 항에서 끝나고 오차가 0 이다. 정상위상법이 정확해지는 상황은 국소화 정리가 성립할 때이고, Seifert 다양체 위의 Chern–Simons 이론에서는 $S^1$ 작용에 대한 국소화가 일어난다. Duistermaat–Heckman 정확성의 무한차원 판본이다.
+- Witten 점근 추측의 대상은 닫힌 3 다양체이고, 준위 $k\to\infty$ 에서 $q=e^{2\pi i/(k+2)}\to 1$ 이다. 지수에 나오는 것은 실수 $\mathrm{CS}$ 값이고, $\vert\tau_k\vert$ 는 $k$ 의 거듭제곱으로 거동한다.
+- [볼륨 추측](volume-conjecture.md)의 대상은 $S^3$ 안의 매듭이고, 색 $N$ 과 $q=e^{2\pi i/N}$ 을 함께 움직인다. 복소 $\mathrm{SL}\_2(\mathbb C)$ 평탄 접속이 기여해 $\vert J_N\vert$ 가 $N$ 에 대해 지수적으로 자라고, 증가율이 여집합의 쌍곡 부피다.
+
+복소 임계점의 기여를 다루는 틀이 [Resurgence 이론](resurgence.md)이다.
 
 # 활용
 
-- **고전 불변량의 계산.** $\tau_k$ 는 유한합이라 컴퓨터로 계산되고, 점근을 읽으면 Casson 불변량이나 CS 값처럼 직접 계산이 어려운 양을 얻는 경로가 생긴다.
-- **다양체의 구별.** 한 레벨의 $\tau_k$ 가 두 다양체를 구별하지 못해도 점근이 다르면 구별된다. 모든 $k$ 를 함께 보아야 한다는 RT 문서의 진술이 이 방향으로 구체화된다.
-- **물리와의 사전.** 점근의 각 항이 Chern–Simons 이론의 고전해 하나에 대응한다. [정점작용소대수](vertex-operator-algebras.md) 쪽 자료가 3 차원 기하로 번역되는 사전의 한 항목이다.
+- 렌즈 공간과 Seifert 올다양체에서 $\tau_k$ 의 닫힌 꼴로부터 평탄 접속의 $\mathrm{CS}$ 값과 Reidemeister 비틀림을 읽는다. $L(p,1)$ 의 $\mathrm{CS}(\rho_b)=-b^2/p$ 가 그 예다.
+- 유리 호몰로지 구면에서 Ohtsuki 급수의 첫 계수로 Casson 불변량을 얻는다.
+- 점근식의 각 항은 Chern–Simons 이론의 고전해 하나에 대응하므로, RT 불변량의 대수적 정의와 경로적분의 예측이 같은 값을 주는지 확인하는 기준이 된다.
+
+[^1]: L. Jeffrey, *Chern–Simons–Witten invariants of lens spaces and torus bundles, and the semiclassical approximation*, Comm. Math. Phys. **147** (1992), 563–604. T. Ohtsuki, *A polynomial invariant of rational homology 3-spheres*, Invent. Math. **123** (1996), 241–257.
 
 # 연관 문서
 
