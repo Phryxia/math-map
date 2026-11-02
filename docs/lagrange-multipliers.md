@@ -16,7 +16,7 @@
 
 ## 정칙점
 
-열린집합 $U\subseteq\mathbb R^n$ 위의 연속미분가능한 함수 $g_1,\dots,g_k$ 로 제약집합 $M=\lbrace x\in U\mid g_1(x)=\cdots=g_k(x)=0\rbrace$ 을 둔다. $a\in M$ 에서 기울기 $\nabla g_1(a),\dots,\nabla g_k(a)$ 가 일차독립이면 $a$ 를 $M$ 의 **정칙점(regular point)** 이라 한다. Jacobi [행렬](matrices.md) $Dg(a)$ 의 계수가 $k$ 라는 조건과 같다.
+열린집합 $U\subseteq\mathbb R^n$ 위의 연속미분가능한 함수 $g_1,\dots,g_k$ 로 제약집합 $M=\lbrace x\in U\mid g_1(x)=\cdots=g_k(x)=0\rbrace$ 을 둔다. $a\in M$ 에서 기울기 $\nabla g_1(a),\dots,\nabla g_k(a)$ 가 일차독립이면 $a$ 를 $M$ 의 **정칙점(regular point)** 이라 한다. Jacobi [행렬](matrices.md)(Jacobian matrix) $Dg(a)$ 의 계수가 $k$ 라는 조건과 같다. 직관 절의 단위원은 $g_1(x,y)=x^2+y^2-1$ 로 $M$ 이 되고, $\nabla g_1=(2x,2y)$ 는 원 위에서 $0$ 이 아니므로 원의 모든 점이 정칙점이다. 곡선 $y^2=x^3$ 을 $g_1=y^2-x^3$ 으로 두면 원점에서 $\nabla g_1=(0,0)$ 이므로 원점은 정칙점이 아니다.
 
 ## Lagrangian
 
@@ -28,11 +28,13 @@ $$
 
 $\lambda_i$ 를 **Lagrange 승수(Lagrange multiplier)** 라 한다. $\nabla_xL=0$ 은 $\nabla f=\sum\lambda_i\nabla g_i$ 이고 $\nabla_\lambda L=0$ 은 제약 $g=0$ 이다. Lagrange 승수법은 $n+k$ 개 미지수의 방정식 $\nabla L(x,\lambda)=0$ 을 풀어 극값 후보를 구하는 방법이다.
 
+직관 절의 예에서 $L(x,y,\lambda)=x+y-\lambda(x^2+y^2-1)$ 이고, $\nabla L=0$ 은 미지수 셋의 방정식 $1=2\lambda x$, $1=2\lambda y$, $x^2+y^2=1$ 이다. 해는 $(x,y,\lambda)=(1/\sqrt2,1/\sqrt2,1/\sqrt2)$ 와 $(-1/\sqrt2,-1/\sqrt2,-1/\sqrt2)$ 둘이다.
+
 # 성질
 
 ## Lagrange 승수 정리
 
-**정리.** $f$, $g_1,\dots,g_k$ 가 연속미분가능하고 $a$ 가 $M$ 의 정칙점이며 $f$ 를 $M$ 으로 제한한 함수가 $a$ 에서 극값을 가지면, 다음을 만족하는 $\lambda\in\mathbb R^k$ 가 유일하게 존재한다.
+정리. $f$, $g_1,\dots,g_k$ 가 연속미분가능하고 $a$ 가 $M$ 의 정칙점이며 $f$ 를 $M$ 으로 제한한 함수가 $a$ 에서 극값을 가지면, 다음을 만족하는 $\lambda\in\mathbb R^k$ 가 유일하게 존재한다.
 
 $$
 \nabla f(a)=\sum_{i=1}^{k}\lambda_i\nabla g_i(a)
@@ -42,7 +44,7 @@ $$
 
 ## 정칙 조건이 없는 경우
 
-곡선 $y^2=x^3$ 위에서 $f(x,y)=x$ 의 최솟값은 원점에서 나온다. 곡선 위에서 $x=y^{2/3}\ge0$ 이기 때문이다. $g=y^2-x^3$ 의 기울기는 원점에서 $(0,0)$ 이므로 원점은 정칙점이 아니고, $\nabla f=(1,0)$ 은 $(0,0)$ 의 상수배가 아니다. 그래서 $\nabla L=0$ 의 해만 보면 이 최솟값을 놓친다. 정칙점이 아닌 점은 승수 방정식과 별도로 후보에 넣는다.
+곡선 $y^2=x^3$ 위에서는 $x=\lvert y\rvert^{2/3}\ge0$ 이므로 $f(x,y)=x$ 의 최솟값은 원점에서 나온다. $g=y^2-x^3$ 의 기울기는 원점에서 $(0,0)$ 이므로 원점은 정칙점이 아니고, $\nabla f=(1,0)$ 은 $(0,0)$ 의 상수배가 아니다. 그래서 $\nabla L=0$ 의 해만 보면 이 최솟값을 놓친다. 정칙점이 아닌 점은 승수 방정식과 별도로 후보에 넣는다.
 
 ## 이계 조건
 
