@@ -38,7 +38,7 @@ $$
 
 $F\sim F(d_1,d_2)$ 이면 $\dfrac{d_1F}{d_1F+d_2}$ 는 $\mathrm{Beta}(d_1/2,\thinspace d_2/2)$ 를 따른다.
 
-증명의 요지. $\dfrac{d_1F}{d_1F+d_2}=\dfrac{U}{U+V}$ 이고, 자유도 $d$ 인 카이제곱 분포는 형태 $d/2$, 비율 $\frac12$ 인 [감마분포](gamma-distribution.md)다. 비율이 같은 독립 감마 확률변수 $U$, $V$ 에 대해 $U/(U+V)$ 는 [Beta 분포](beta-distribution.md)를 따른다.
+증명의 요지. $\dfrac{d_1F}{d_1F+d_2}=\dfrac{U}{U+V}$ 이고, 자유도 $d$ 인 카이제곱 분포는 형태 $d/2$, 비율 $\frac12$ 인 [감마분포](gamma-distribution.md)다. 비율이 같은 독립 감마 확률변수 $U$, $V$ 에 대해 $U/(U+V)$ 는 [베타분포](beta-distribution.md)를 따른다.
 
 F 분포의 분포함수는 이 관계로 정규화된 불완전 베타 함수로 계산한다. 밀도 식도 이 변수변환에서 나온다.
 

@@ -36,7 +36,7 @@ $$
 \mathbb E\lbrack P(A)\rbrack=H(A),\qquad\mathrm{Var}\bigl(P(A)\bigr)=\frac{H(A)\bigl(1-H(A)\bigr)}{\alpha+1}
 $$
 
-증명의 요지. 분할 $(A,A^c)$ 에서 $P(A)\sim\mathrm{Beta}\bigl(\alpha H(A),\thinspace\alpha(1-H(A))\bigr)$ 이고, [Beta 분포](beta-distribution.md)의 평균과 분산이다.
+증명의 요지. 분할 $(A,A^c)$ 에서 $P(A)\sim\mathrm{Beta}\bigl(\alpha H(A),\thinspace\alpha(1-H(A))\bigr)$ 이고, [베타분포](beta-distribution.md)의 평균과 분산이다.
 
 $H$ 는 $P$ 의 평균이고, $\alpha$ 가 클수록 $P$ 가 $H$ 근처에 모인다. 정의 절의 $\alpha=2$ 에서 $P((-\infty,0))$ 의 분산은 $(1/4)/3=1/12$ 로 균등분포의 분산과 같다.
 
