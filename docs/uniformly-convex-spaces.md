@@ -6,10 +6,6 @@
 
 # 직관
 
-균일 볼록 공간은 단위구 위의 두 점이 서로 떨어져 있으면 그 중점이 구의 안쪽으로 일정한 만큼 들어가는 [Banach 공간](banach-spaces.md)이다. 떨어진 거리마다 들어가는 깊이의 하한이 정해져 있다는 점이 균일이라는 말의 내용이다.
-
-Milman–Pettis 정리로 균일 볼록 공간은 [반사적](reflexive-spaces.md)이다. 닫힌 볼록집합의 최근접점이 유일하게 존재하는 것도 이 조건에서 나온다.
-
 $\mathbb R^2$ 에 최대 노름 $\Vert(x,y)\Vert=\max(\vert x\vert,\vert y\vert)$ 를 주고, 직선 $C=\lbrace(x,1):x\in\mathbb R\rbrace$ 에서 원점에 가장 가까운 점을 찾는다. $\Vert(x,1)\Vert=\max(\vert x\vert,1)$ 이므로 $\vert x\vert\le1$ 인 모든 점에서 거리가 $1$ 이고, 최근접점이 선분 하나를 가득 채운다. 가장 가까운 점을 하나로 정할 수 없다.
 
 [Hilbert 공간](hilbert-spaces.md)에서 같은 문제를 풀면 최근접점이 하나다. 닫힌 볼록집합 $C$ 와 거리 $d=\inf\_{u\in C}\Vert u\Vert$ 에 대해 $\Vert u\Vert=\Vert v\Vert=d$ 인 두 점을 잡으면, 평행사변형 법칙이 $\Vert(u+v)/2\Vert^2=\frac12\Vert u\Vert^2+\frac12\Vert v\Vert^2-\frac14\Vert u-v\Vert^2$ 를 준다. 중점은 $C$ 에 있으므로 노름이 $d$ 이상인데, 오른쪽은 $u\ne v$ 이면 $d^2$ 보다 작다. 그래서 $u=v$ 다.
@@ -20,7 +16,7 @@ $\mathbb R^2$ 에 최대 노름 $\Vert(x,y)\Vert=\max(\vert x\vert,\vert y\vert)
 
 ## 균일 볼록
 
-Banach 공간 $X$ 가 **균일 볼록**이라는 것은 모든 $\varepsilon\in(0,2\rbrack$ 에 대해 $\delta\gt 0$ 이 있어 다음이 성립하는 것이다.
+[Banach 공간](banach-spaces.md) $X$ 가 **균일 볼록(uniformly convex)** 이라는 것은 모든 $\varepsilon\in(0,2\rbrack$ 에 대해 $\delta\gt 0$ 이 있어 다음이 성립하는 것이다.
 
 $$
 \Vert x\Vert\le1,\thinspace\Vert y\Vert\le1,\thinspace\Vert x-y\Vert\ge\varepsilon\thinspace\Longrightarrow\thinspace\left\Vert\frac{x+y}2\right\Vert\le1-\delta
@@ -28,7 +24,7 @@ $$
 
 ## 볼록성 계수
 
-$\varepsilon$ 마다 가능한 $\delta$ 의 상한을 **볼록성 계수**라 한다.
+$\varepsilon$ 마다 가능한 $\delta$ 의 상한을 **볼록성 계수(modulus of convexity)** 라 한다.
 
 $$
 \delta\_X(\varepsilon)=\inf\lbrace 1-\Vert(x+y)/2\Vert:\Vert x\Vert\le1,\thinspace\Vert y\Vert\le1,\thinspace\Vert x-y\Vert\ge\varepsilon\rbrace
@@ -36,15 +32,21 @@ $$
 
 $X$ 가 균일 볼록인 것은 $\varepsilon\gt 0$ 마다 $\delta\_X(\varepsilon)\gt 0$ 인 것이다.
 
+$\mathbb R^2$ 의 보통 노름에서는 직관 절의 평행사변형 법칙으로 $\Vert(x+y)/2\Vert^2\le 1-\varepsilon^2/4$ 이므로 $\delta(\varepsilon)=1-\sqrt{1-\varepsilon^2/4}$ 이고 균일 볼록이다. 최대 노름에서는 $(1,1)$ 과 $(-1,1)$ 이 거리 $2$ 이고 중점의 노름이 $1$ 이므로 모든 $\varepsilon$ 에서 $\delta(\varepsilon)=0$ 이고 균일 볼록이 아니다.
+
 ## 엄격 볼록
 
-$\Vert x\Vert=\Vert y\Vert=1$ 이고 $x\ne y$ 이면 $\Vert(x+y)/2\Vert\lt 1$ 인 공간을 **엄격 볼록**이라 한다. 균일 볼록이면 엄격 볼록이고, 역은 거짓이다.
+$\Vert x\Vert=\Vert y\Vert=1$ 이고 $x\ne y$ 이면 $\Vert(x+y)/2\Vert\lt 1$ 인 공간을 **엄격 볼록(strictly convex)** 이라 한다. 보통 노름의 $\mathbb R^2$ 는 엄격 볼록이고, 최대 노름의 $\mathbb R^2$ 는 $(1,1)$ 과 $(-1,1)$ 때문에 엄격 볼록이 아니다.
 
 # 성질
 
+## 엄격 볼록과의 관계
+
+균일 볼록이면 엄격 볼록이다. 역은 거짓이다. $\ell^1$ 에 노름 $\Vert x\Vert\_1+\Vert x\Vert\_2$ 를 주면 둘째 항 때문에 엄격 볼록이지만, 이 공간은 $\ell^1$ 과 동형이라 반사적이지 않으므로 아래 Milman–Pettis 정리로 균일 볼록이 아니다. 유한차원에서는 콤팩트성으로 두 조건이 같다.
+
 ## Clarkson 부등식
 
-$1\lt p\lt\infty$ 에서 [Lᵖ 공간](lp-spaces.md)은 균일 볼록이다. $2\le p\lt\infty$ 에서는 다음 부등식이 그 근거다.[^1]
+$1\lt p\lt\infty$ 에서 [Lᵖ 공간](lp-spaces.md)은 균일 볼록이다. $2\le p\lt\infty$ 에서는 다음 Clarkson 부등식(Clarkson's inequality)이 그 근거다.[^1]
 
 $$
 \left\Vert\frac{f+g}2\right\Vert\_p^p+\left\Vert\frac{f-g}2\right\Vert\_p^p\le\frac12\Vert f\Vert\_p^p+\frac12\Vert g\Vert\_p^p
@@ -54,9 +56,9 @@ $\Vert f\Vert\_p,\Vert g\Vert\_p\le1$ 과 $\Vert f-g\Vert\_p\ge\varepsilon$ 을 
 
 ## Milman–Pettis 정리
 
-균일 볼록 Banach 공간은 반사적이다.[^2]
+Milman–Pettis 정리(Milman–Pettis theorem). 균일 볼록 Banach 공간은 [반사 공간](reflexive-spaces.md)이다.[^2]
 
-증명의 요지. $J$ 를 표준 매장, $\varphi\in X^{\ast\ast}$ 를 $\Vert\varphi\Vert=1$ 인 원소로 잡는다. [Banach–Alaoglu 정리](banach-alaoglu.md)로 $J$ 가 보낸 단위구는 $X^{\ast\ast}$ 의 단위구에서 약 $\ast$ 조밀하다. $\varphi$ 의 약 $\ast$ 근방에 든 $J(x)$ 두 개를 잡으면 균일 볼록성이 $\Vert x-y\Vert$ 를 작게 묶으므로, 근방을 좁혀 가며 얻은 점들이 Cauchy 열을 이루고 그 극한 $x\_0$ 이 $J(x\_0)=\varphi$ 를 만족한다.
+증명의 요지. $J$ 를 표준 매장(canonical embedding), $\varphi\in X^{\ast\ast}$ 를 $\Vert\varphi\Vert=1$ 인 원소로 잡는다. Goldstine 정리(Goldstine's theorem)로 $J$ 가 보낸 단위구는 $X^{\ast\ast}$ 의 단위구에서 약 $\ast$ 위상(weak-∗ topology)으로 조밀하다. 이 위상의 성질은 [Banach–Alaoglu 정리](banach-alaoglu.md)가 다룬다. $\varphi$ 의 약 $\ast$ 근방에 든 $J(x)$ 두 개를 잡으면 균일 볼록성이 $\Vert x-y\Vert$ 를 작게 묶으므로, 근방을 좁혀 가며 얻은 점들이 Cauchy 열을 이루고 그 극한 $x\_0$ 이 $J(x\_0)=\varphi$ 를 만족한다.
 
 ## 최근접점의 유일성
 
@@ -69,7 +71,7 @@ $C\lbrack 0,1\rbrack$ 과 $\ell^\infty$ 와 $L^1\lbrack 0,1\rbrack$ 은 균일 �
 # 활용
 
 - 반사성 판정에 쓴다. $1\lt p\lt\infty$ 의 $L^p$ 와 [Sobolev 공간](sobolev-spaces.md) $W^{k,p}$ 의 반사성을 Clarkson 부등식과 Milman–Pettis 정리로 얻는다.
-- [변분법의 직접법](direct-method.md)에서 최소화열의 수렴을 노름까지 올릴 때 쓴다. 약수렴하는 열의 노름이 극한의 노름으로 수렴하면 균일 볼록성이 강수렴을 준다.
+- [변분법의 직접법](direct-method.md)에서 최소화열의 수렴을 노름까지 올릴 때 쓴다. 약수렴하는 열의 노름이 극한의 노름으로 수렴하면 균일 볼록성이 강수렴을 준다. 이 성질을 Radon–Riesz 성질(Radon–Riesz property)이라 한다.
 - $L^p$ 근사에서 최적 근사원소가 유일하다는 결론이 최근접점의 유일성이다. $p=1$ 과 $p=\infty$ 에서 최적 근사가 여럿일 수 있는 것이 직관 절의 계산과 같은 이유다.
 
 [^1]: J. A. Clarkson, "Uniformly convex spaces", *Transactions of the American Mathematical Society* 40 (1936), 396–414.
