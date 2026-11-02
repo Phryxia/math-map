@@ -22,17 +22,17 @@ $$
 
 ## 랭크 함수
 
-그래프 $G=(V,E)$ 와 부분집합 $S\subseteq E$ 에 대해 $c(S)$ 를 간선 $S$ 만 남긴 신장 부분그래프의 연결 성분 수라 하고 **랭크**를 다음으로 정의한다.
+그래프 $G=(V,E)$ 와 부분집합 $S\subseteq E$ 에 대해 $c(S)$ 를 간선 $S$ 만 남긴 신장 부분그래프의 연결 성분 수라 하고 **랭크(rank)** 를 다음으로 정의한다.
 
 $$
 r(S)=\lvert V\rvert-c(S)
 $$
 
-$r(S)$ 는 $S$ 안의 신장 숲이 쓰는 간선 수이고, $\lvert S\rvert-r(S)$ 는 $S$ 가 만드는 독립 순환의 개수다.
+$r(S)$ 는 $S$ 안의 신장 숲이 쓰는 간선 수이고, $\lvert S\rvert-r(S)$ 는 $S$ 가 만드는 독립 순환의 개수다. 삼각형 $K_3$ 에서 $r(\varnothing)=0$, 간선 하나나 둘이면 $r=1$ 이나 $2$, $r(E)=2$ 이고, $E$ 는 순환 하나를 만들어 $\lvert E\rvert-r(E)=1$ 이다.
 
 ## Tutte 다항식
 
-**Tutte 다항식**은 다음 합이다.[^1]
+Tutte 다항식은 다음 합이다.[^1]
 
 $$
 T(G;x,y)=\sum_{S\subseteq E}(x-1)^{r(E)-r(S)}(y-1)^{\lvert S\rvert-r(S)}
@@ -40,15 +40,23 @@ $$
 
 지수 $r(E)-r(S)$ 는 $S$ 에 모자란 간선 수, $\lvert S\rvert-r(S)$ 는 $S$ 에 남는 간선 수다. 정의에 쓴 것이 랭크 함수뿐이므로 같은 식이 [matroid](matroids.md) 의 Tutte 다항식을 정의한다.
 
+$K_3$ 에서는 $S=\varnothing$ 이 $(x-1)^2$, 간선 하나인 $S$ 셋이 $(x-1)$ 씩, 간선 둘인 $S$ 셋이 $1$ 씩, $S=E$ 가 $(y-1)$ 을 주므로
+
+$$
+T(K_3;x,y)=(x-1)^2+3(x-1)+3+(y-1)=x^2+x+y
+$$
+
+이다.
+
 ## 고리와 다리
 
-간선 $e$ 가 **고리**라는 것은 양 끝점이 같다는 뜻이고, **다리**라는 것은 $e$ 를 지우면 연결 성분이 늘어난다는 뜻이다. 두 경우에는 삭제와 축약이 같은 그래프를 주지 않으므로 점화식이 따로 필요하다.
+간선 $e$ 의 양 끝점이 같으면 $e$ 를 **고리(loop)** 라 하고, $e$ 를 지우면 연결 성분이 늘어나면 $e$ 를 **다리(bridge)** 라 한다. 직관 절의 그림에서 가운데 경로의 두 간선은 다리이고, 오른쪽 그래프의 두 간선은 어느 쪽도 아니다. 오른쪽 그래프에서 한 간선을 축약하면 남은 간선은 고리가 된다.
 
 # 성질
 
 ## 삭제-축약 점화식
 
-**정리.** 간선이 없으면 $T=1$ 이고, 간선 $e$ 에 대해 다음이 성립한다.
+간선이 없으면 $T=1$ 이고, 간선 $e$ 에 대해 다음이 성립한다.
 
 $$
 T(G;x,y)=\begin{cases}
@@ -60,13 +68,13 @@ $$
 
 증명의 요지. $e$ 가 고리도 다리도 아니면 $S\subseteq E$ 를 $e\notin S$ 인 것과 $e\in S$ 인 것으로 가른다. 앞쪽 합은 $G-e$ 의 정의식 그대로이고, 뒤쪽은 $r_G(S)=r_{G/e}(S\setminus\lbrace e\rbrace)+1$ 과 $r_G(E)=r_{G/e}(E\setminus\lbrace e\rbrace)+1$ 이 두 지수를 그대로 보존하므로 $G/e$ 의 정의식이 된다.
 
-이 점화식은 간선을 지우는 순서에 의존하지 않는다. 정의식이 순서를 언급하지 않기 때문이다.
+직관 절의 그림에 적용하면 $T(K_3)=T(P_3)+T(G/e)$ 이다. 다리 둘인 경로는 $T(P_3)=x^2$ 이고, 오른쪽 그래프는 한 간선을 지우면 다리 하나, 축약하면 고리 하나가 남아 $x+y$ 이므로 합이 $x^2+x+y$ 다. 이 점화식의 결과는 간선을 고르는 순서에 따라 달라지지 않는다. 정의식이 순서를 쓰지 않기 때문이다.
 
 간선 삭제 $G-e$ 와 간선 축약 $G/e$ 는 [그래프 마이너](graph-minors.md)를 정하는 세 연산 가운데 둘이므로, 점화식이 부르는 그래프는 모두 $G$ 의 마이너다.
 
 ## 보편성
 
-**정리 (Tutte).** 그래프 불변량 $f$ 가 간선 없는 그래프에서 $1$ 이고, 어떤 상수 $a,b,\sigma,\tau$ 에 대해 다리에서 $f(G)=a\thinspace f(G/e)$ , 고리에서 $f(G)=b\thinspace f(G-e)$ , 그 밖에서 $f(G)=\sigma f(G-e)+\tau f(G/e)$ 를 만족하면
+Tutte 의 보편성 정리(universality theorem)는 다음 정리다. 그래프 불변량 $f$ 가 간선 없는 그래프에서 $1$ 이고, 어떤 상수 $a,b,\sigma,\tau$ 에 대해 다리에서 $f(G)=a\thinspace f(G/e)$ , 고리에서 $f(G)=b\thinspace f(G-e)$ , 그 밖에서 $f(G)=\sigma f(G-e)+\tau f(G/e)$ 를 만족하면
 
 $$
 f(G)=\sigma^{\lvert E\rvert-r(E)}\tau^{r(E)}\thinspace T\Bigl(G;\frac a\tau,\frac b\sigma\Bigr)
@@ -85,30 +93,30 @@ $$
 | $(-1)^{r(E)}k^{c(E)}T(G;1-k,0)$ | 채색 다항식 $P(G,k)$ |
 | $(-1)^{\lvert E\rvert-r(E)}T(G;0,1-k)$ | 흐름 다항식 |
 
-연결 그래프에서 $T(G;1,1)=\tau(G)$ 는 [행렬식](determinants.md)으로 계산하는 Kirchhoff 의 matrix-tree 정리와 같은 수를 준다.
+연결 그래프에서 $T(G;1,1)=\tau(G)$ 는 [행렬식](determinants.md)으로 계산하는 Kirchhoff 의 행렬-나무 정리(matrix-tree theorem)와 같은 수를 준다. $K_3$ 에서는 $T(K_3;1,1)=3$, $T(K_3;2,2)=8=2^3$ 이고, $k=3$ 을 넣은 $(-1)^2\cdot 3\cdot T(K_3;-2,0)=3\cdot 2=6$ 이 세 색 칠하기의 수 $3\cdot2\cdot1$ 과 같다.
 
 ## 평면 쌍대
 
-**정리.** $G$ 가 [평면 그래프](planar-graphs.md)이고 $G^\ast$ 가 그 쌍대이면 다음이 성립한다.
+$G$ 가 [평면 그래프](planar-graphs.md)이고 $G^\ast$ 가 그 쌍대이면 다음이 성립한다.
 
 $$
 T(G^\ast;x,y)=T(G;y,x)
 $$
 
-쌍대에서 랭크와 나율리티가 뒤바뀌므로 정의식의 두 지수가 맞바뀐다. 채색 다항식과 흐름 다항식이 평면 그래프에서 서로 바뀌는 것이 이 항등식의 특수화다.
+쌍대에서 랭크와 영차수(nullity) $\lvert S\rvert-r(S)$ 가 뒤바뀌므로 정의식의 두 지수가 맞바뀐다. 채색 다항식(chromatic polynomial)과 흐름 다항식(flow polynomial)이 평면 그래프에서 서로 바뀌는 것이 이 항등식의 특수화다. $K_3$ 의 쌍대는 두 정점 사이의 간선 셋이고 Tutte 다항식이 $y^2+y+x$ 다.
 
 ## 계산 복잡도
 
-**정리 (Jaeger–Vertigan–Welsh, 1990).** 고정된 점 $(x,y)$ 에서 $T(G;x,y)$ 를 계산하는 문제는 쌍곡선 $(x-1)(y-1)=1$ 과 특수한 점 아홉 개를 뺀 모든 점에서 $\char35$ P-난해다.[^2]
+Jaeger, Vertigan, Welsh 는 1990 년에 고정된 점 $(x,y)$ 에서 $T(G;x,y)$ 를 계산하는 문제는 쌍곡선 $(x-1)(y-1)=1$ 과 특수한 점 아홉 개를 뺀 모든 점에서 $\char35$ P-난해임을 증명했다.[^2]
 
-예외 점에서는 다항 시간에 풀린다. $(1,1)$ 은 matrix-tree 정리가 처리하고, $(-1,-1)$ 은 이분 그래프 여부로 정해지는 부호 $\pm2^{\dim}$ 을 준다. 삭제-축약을 그대로 돌리면 간선 수에 지수인 시간이 걸린다.
+예외 점에서는 다항 시간에 풀린다. $(1,1)$ 은 matrix-tree 정리가 처리하고, $(-1,-1)$ 에서는 값이 $\pm 2^{d}$ 이고 $d$ 는 순환 공간과 절단 공간의 교집합의 차원이어서 선형대수로 계산된다. 삭제-축약을 그대로 돌리면 간선 수에 지수인 시간이 걸린다.
 
 # 활용
 
-- **통계물리.** $q$ 상태 [Potts 모형](potts-model.md)의 분배함수가 $T$ 의 값매김이다. 온도와 상태 수가 $(x,y)$ 평면의 한 곡선을 따라 움직이고, 강자성 영역이 $y\gt 1$ 에 대응한다.
-- **매듭 불변량.** 교대 매듭의 [Jones 다항식](knot-invariants.md)은 매듭 도형에서 만든 그래프의 Tutte 다항식을 한 변수로 특수화한 것이다.
-- **신뢰도.** 각 간선이 독립적으로 확률 $p$ 로 남을 때 그래프가 연결로 남을 확률이 $T$ 의 값매김이다.
-- **Matroid 불변량.** 정의가 랭크 함수만 쓰므로 벡터 matroid 와 횡단 matroid 에도 같은 다항식이 있고, 삭제-축약과 쌍대 항등식이 그대로 성립한다.
+- 통계물리. $q$ 상태 [Potts 모형](potts-model.md)의 분배함수가 $T$ 의 값매김이다. 온도와 상태 수가 $(x,y)$ 평면의 한 곡선을 따라 움직이고, 강자성(ferromagnetic) 영역이 $y\gt 1$ 에 대응한다.
+- [매듭 불변량](knot-invariants.md). 교대 매듭의 Jones 다항식(Jones polynomial)은 매듭 도형에서 만든 그래프의 Tutte 다항식을 한 변수로 특수화한 것이다.
+- 신뢰도 다항식(reliability polynomial). 각 간선이 독립적으로 확률 $p$ 로 남을 때 그래프가 연결로 남을 확률이 $T$ 의 값매김이다.
+- Matroid 불변량. 정의가 랭크 함수만 쓰므로 벡터 matroid 와 횡단 matroid 에도 같은 다항식이 있고, 삭제-축약과 쌍대 항등식이 그대로 성립한다.
 
 [^1]: W. T. Tutte, "A contribution to the theory of chromatic polynomials", Canadian Journal of Mathematics 6 (1954), https://doi.org/10.4153/CJM-1954-010-9
 [^2]: F. Jaeger, D. L. Vertigan, D. J. A. Welsh, "On the computational complexity of the Jones and Tutte polynomials", Mathematical Proceedings of the Cambridge Philosophical Society 108 (1990), https://doi.org/10.1017/S0305004100068936
