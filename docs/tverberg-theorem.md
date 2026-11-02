@@ -6,15 +6,13 @@
 
 # 직관
 
-Tverberg 정리는 $\mathbb R^d$ 의 점 $(r-1)(d+1)+1$ 개를 $r$ 개의 부분으로 나누어 그 볼록 껍질들이 공통점을 갖게 할 수 있다는 정리다. Tverberg 가 1966 년에 증명했다.[^1]
+수직선 위의 점 $1,2,3,4,5$ 를 세 무리로 나누어, 무리마다 점들을 잇는 가장 짧은 구간을 그렸을 때 세 구간이 한 점에서 겹치게 하려 한다. 가운데 점 $3$ 을 혼자 한 무리로 두고 나머지를 $\lbrace 1,5\rbrace$, $\lbrace 2,4\rbrace$ 로 짝지으면 구간 $\lbrack 1,5\rbrack$ 와 $\lbrack 2,4\rbrack$ 가 모두 점 $3$ 을 포함한다. 점 $1,\dots,2r-1$ 을 $r$ 무리로 나누는 것도 같다. 가운데 점 $r$ 을 혼자 두고 $\lbrace 1,2r-1\rbrace,\lbrace 2,2r-2\rbrace,\dots,\lbrace r-1,r+1\rbrace$ 로 짝지으면 모든 구간이 점 $r$ 을 포함한다.
 
-$r=2$ 이면 점 $d+2$ 개를 둘로 나누는 Radon 정리(Radon's theorem)이고, Radon 정리는 [Helly 정리](helly-theorem.md)의 증명에 쓰인다. 점의 개수 $(r-1)(d+1)+1$ 은 더 줄일 수 없다.
+점이 $2r-2$ 개이면 이렇게 나눌 수 없다. 공통점을 $c$ 라 하면, $c$ 를 점으로 갖지 않는 무리는 $c$ 왼쪽의 점과 오른쪽의 점을 하나씩은 가져야 한다. 점 하나짜리 무리는 $\lbrace c\rbrace$ 뿐이므로 많아야 하나이고, 나머지 $r-1$ 개 무리가 점을 둘 이상 쓴다. 그러면 점이 $1+2(r-1)=2r-1$ 개 이상 있어야 한다.
 
-수직선 위의 점 $1,2,\dots,2r-1$ 을 $r$ 개의 부분으로 나눈다. 가운데 점 $r$ 을 혼자 한 부분으로 두고, 나머지는 $\lbrace 1,2r-1\rbrace,\lbrace 2,2r-2\rbrace,\dots,\lbrace r-1,r+1\rbrace$ 로 짝짓는다. 짝마다 볼록 껍질은 구간이고 모든 구간이 점 $r$ 을 포함한다. 점 $2r-1$ 개로 $r$ 부분이 된다.
+평면에서 두 무리로 나누면 점 네 개로 된다. 정사각형의 네 꼭짓점은 두 대각선으로 나누면 두 선분이 중심에서 만난다. 삼각형의 세 꼭짓점과 그 안의 점 하나는, 안의 점을 혼자 두면 삼각형이 그 점을 포함한다. 한 직선 위에 있지 않은 점 세 개는 어떻게 둘로 나누어도 점 하나와 그 맞은편 선분이 만나지 않는다.
 
-점이 $2r-2$ 개이면 이렇게 나눌 수 없다. 공통점을 $c$ 라 하면, $c$ 를 점으로 갖지 않는 부분은 $c$ 왼쪽의 점과 오른쪽의 점을 하나씩은 가져야 한다. 점 하나짜리 부분은 $\lbrace c\rbrace$ 뿐이므로 많아야 하나이고, 나머지 $r-1$ 개 부분이 점을 둘 이상 쓴다. 그러면 점이 $1+2(r-1)=2r-1$ 개 이상 있어야 한다.
-
-$d=1$ 에서는 $(r-1)(d+1)+1=2r-1$ 이므로, 위의 두 계산으로 이 경우의 정리와 개수의 최선성이 증명된다.
+$d$ 차원 공간에서 $r$ 무리로 나누는 데 필요한 점의 수는 $(r-1)(d+1)+1$ 이다. $d=1$ 이면 $2r-1$ 이고 $d=2$, $r=2$ 이면 $4$ 여서 위의 계산과 맞는다.
 
 # 정의
 
@@ -26,19 +24,25 @@ $$
 \bigcap_{j=1}^r\mathrm{conv}\lbrace x_i : i\in P_j\rbrace\ne\varnothing
 $$
 
-을 만족하면 이를 **Tverberg 분할(Tverberg partition)** 이라 하고, 교집합의 점을 **Tverberg 점(Tverberg point)** 이라 한다.
+을 만족하면 이를 **Tverberg 분할(Tverberg partition)** 이라 하고, 교집합의 점을 **Tverberg 점(Tverberg point)** 이라 한다. 여기서 $\mathrm{conv}$ 는 볼록 껍질(convex hull)이다.
 
-## 다색 Carathéodory 정리
-
-[다색 Carathéodory 정리](colorful-caratheodory.md)는 $\mathbb R^D$ 의 유한집합 $C_1,\dots,C_{D+1}$ 이 모두 원점을 볼록 껍질에 포함하면, $c_i\in C_i$ 를 하나씩 골라 원점이 $\mathrm{conv}\lbrace c_1,\dots,c_{D+1}\rbrace$ 에 들게 할 수 있다는 정리다. Bárány 가 1982 년에 증명했다.[^2] $C_1=\cdots=C_{D+1}$ 인 경우가 Carathéodory 정리(Carathéodory's theorem)다.
+직관 절의 점 $1,\dots,5$ 에서 $\lbrace 3\rbrace,\lbrace 1,5\rbrace,\lbrace 2,4\rbrace$ 는 $r=3$ 인 Tverberg 분할이고 Tverberg 점은 $3$ 하나다. 정사각형의 두 대각선은 $r=2$ 인 Tverberg 분할이고 Tverberg 점은 중심이다.
 
 # 성질
 
 ## Tverberg 정리
 
-**정리.** $N=(r-1)(d+1)+1$ 이면 $\mathbb R^d$ 의 점 $x_1,\dots,x_N$ 은 Tverberg 분할 $P_1,\dots,P_r$ 을 갖는다.
+$N=(r-1)(d+1)+1$ 이면 $\mathbb R^d$ 의 점 $x_1,\dots,x_N$ 은 Tverberg 분할 $P_1,\dots,P_r$ 을 갖는다. Tverberg 가 1966 년에 증명했다.[^1]
 
-증명(Sarkaria).[^3] $\mathbb R^{r-1}$ 의 벡터 $v_1,\dots,v_r$ 을 $\sum_jv_j=0$ 이고 그 가운데 어느 $r-1$ 개도 일차독립이 되게 잡는다. 정삼각형이나 정단체의 꼭짓점을 무게중심에서 본 벡터가 그런 예다. 이때 $w_j\in\mathbb R^{d+1}$ 에 대해
+$r=2$ 인 경우, 곧 점 $d+2$ 개를 둘로 나누는 진술은 Radon 정리(Radon's theorem)이고, Radon 정리는 [Helly 정리](helly-theorem.md)의 증명에 쓰인다.
+
+## 다색 Carathéodory 정리
+
+[다색 Carathéodory 정리](colorful-caratheodory.md)는 $\mathbb R^D$ 의 유한집합 $C_1,\dots,C_{D+1}$ 이 모두 원점을 볼록 껍질에 포함하면, $c_i\in C_i$ 를 하나씩 골라 원점이 $\mathrm{conv}\lbrace c_1,\dots,c_{D+1}\rbrace$ 에 들게 할 수 있다는 정리다. Bárány 가 1982 년에 증명했다.[^2] $C_1=\cdots=C_{D+1}$ 인 경우가 Carathéodory 정리(Carathéodory's theorem)다. 아래 증명이 이 정리를 쓴다.
+
+## Sarkaria 의 증명
+
+Sarkaria 의 증명은 다음과 같다.[^3] $\mathbb R^{r-1}$ 의 벡터 $v_1,\dots,v_r$ 을 $\sum_jv_j=0$ 이고 그 가운데 어느 $r-1$ 개도 일차독립이 되게 잡는다. 정삼각형이나 정단체의 꼭짓점을 무게중심에서 본 벡터가 그런 예다. 이때 $w_j\in\mathbb R^{d+1}$ 에 대해
 
 $$
 \sum_{j=1}^r w_j\otimes v_j=0 \iff w_1=w_2=\cdots=w_r
@@ -54,7 +58,7 @@ $\mathbb R^d$ 의 점 $(r-1)(d+1)$ 개를 일반 위치(general position)에 두
 
 ## 중심점
 
-$r=\lceil n/(d+1)\rceil$ 로 두면 점 $n$ 개의 Tverberg 점은 Tukey 깊이가 $r$ 이상이다. 그 점을 포함하는 닫힌 반공간이 어느 부분의 점도 포함하지 않으면 그 부분의 볼록 껍질이 열린 여집합에 들어 모순이므로, 반공간은 부분마다 점을 하나 이상 포함한다. 이것으로 [중심점 정리](centerpoint-theorem.md)가 다시 증명된다.
+$r=\lceil n/(d+1)\rceil$ 로 두면 점 $n$ 개의 Tverberg 점은 Tukey 깊이(Tukey depth)가 $r$ 이상이다. 그 점을 포함하는 닫힌 반공간이 어느 부분의 점도 포함하지 않으면 그 부분의 볼록 껍질이 열린 여집합에 들어 모순이므로, 반공간은 부분마다 점을 하나 이상 포함한다. 이것으로 [중심점 정리](centerpoint-theorem.md)가 다시 증명된다.
 
 ## 위상적 Tverberg 정리
 
@@ -62,7 +66,7 @@ $N=(r-1)(d+1)$ 차원 단체 $\Delta^N$ 에서 $\mathbb R^d$ 로 가는 연속�
 
 - $r$ 이 소수이면 Bárány, Shlosman, Szűcs 가 증명했다.[^4] 증명은 $\mathbb Z/r$ 이 자유롭게 작용하는 공간에 대한 [Borsuk–Ulam 정리](borsuk-ulam.md) 꼴의 정리를 쓴다.
 - $r$ 이 소수의 거듭제곱이면 Özaydin 이 같은 방법을 $(\mathbb Z/p)^k$ 의 작용으로 바꾸어 증명했다.[^6]
-- $r$ 이 소수의 거듭제곱이 아니면 진술이 거짓이다. Mabillard 와 Wagner 의 사상 구성을 Frick 이 적용해 $d\ge 3r+1$ 에서 반례를 만들었다.[^5]
+- $r$ 이 소수의 거듭제곱이 아니면 $d\ge 3r+1$ 에서 진술이 거짓이다. Mabillard 와 Wagner 의 사상 구성을 Frick 이 적용해 반례를 만들었다.[^5]
 
 # 활용
 
