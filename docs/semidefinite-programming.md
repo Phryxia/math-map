@@ -69,7 +69,7 @@ $$
 
 ## 최적성
 
-Håstad 는 $16/17\approx0.941$ 보다 좋은 근사가 $\mathrm P=\mathrm{NP}$ 를 함의함을 보였다. NP 는 nondeterministic polynomial time 의 약어다. 이것이 무조건적 하한이다.
+Håstad 는 $16/17\approx0.941$ 보다 좋은 근사가 $\mathrm P=\mathrm{NP}$ 를 함의함을 보였다. 이것이 무조건적 하한이다.
 
 Khot, Kindler, Mossel, O'Donnell 은 [유일게임 추측](unique-games.md)(unique games conjecture) 아래에서 $\alpha+\epsilon$ 근사가 불가능함을 보였다. 추측이 참이면 Goemans–Williamson 이 최적이다.
 
@@ -88,7 +88,7 @@ Khot, Kindler, Mossel, O'Donnell 은 [유일게임 추측](unique-games.md)(uniq
 | 색칠 (3-채색 가능 그래프) | $\tilde O(n^{1/4})$ 색 | Karger–Motwani–Sudan |
 | [Lovász 세타 함수](lovasz-theta.md) | 독립수와 색수 사이 | 완벽그래프에서 정확 |
 
-Lovász 세타 함수는 $\alpha(G)\le\vartheta(G)\le\chi(\bar G)$ 라는 샌드위치를 준다. 두 NP-어려운 양 사이에 다항시간에 계산되는 값이 끼어 있고, 완벽그래프(perfect graph)에서는 부등식이 등식이 되어 최대 독립집합이 다항시간에 풀린다.
+Lovász 세타 함수는 $\alpha(G)\le\vartheta(G)\le\chi(\bar G)$ 라는 샌드위치를 준다. 두 NP(nondeterministic polynomial time)-어려운 양 사이에 다항시간에 계산되는 값이 끼어 있고, 완벽그래프(perfect graph)에서는 부등식이 등식이 되어 최대 독립집합이 다항시간에 풀린다.
 
 ## 계층 확장
 
