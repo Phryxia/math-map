@@ -6,10 +6,6 @@
 
 # 직관
 
-부분모듈 함수는 유한 집합 $E$ 의 부분집합에 [실수](real-numbers.md)를 주는 함수 $f$ 가운데 모든 $S,T\subseteq E$ 에서 $f(S)+f(T)\ge f(S\cup T)+f(S\cap T)$ 를 만족하는 것이다. 원소 하나를 더할 때 늘어나는 값이 이미 가진 집합이 클수록 작다는 조건과 동치다.
-
-[Matroid](matroids.md)의 계수 함수, 그래프의 절단 함수, 집합족이 덮는 원소의 수가 모두 부분모듈 함수다. 부분모듈 함수의 최소화는 다항시간에 풀리고, 최대화는 NP(nondeterministic polynomial time)-난해이지만 단조이면 탐욕법이 $1-1/e$ 배 이상의 값을 준다.
-
 감지기 셋이 지키는 구역이 $A_1=\lbrace 1,2,3,4\rbrace$, $A_2=\lbrace 1,2,5\rbrace$, $A_3=\lbrace 3,4,6\rbrace$ 이다. 감지기 두 개를 골라 지키는 구역의 수를 가장 크게 하려 한다. 고른 감지기 집합 $S$ 에 대해 $f(S)$ 를 $S$ 의 감지기들이 지키는 구역의 수로 둔다.
 
 $A_2$ 를 혼자 고르면 구역이 $3$ 개 는다. $A_1$ 이 구역 $1,2$ 를 이미 지키므로, $A_1$ 을 고른 뒤에 $A_2$ 를 더하면 구역 $5$ 하나만 는다. 가진 감지기가 많을수록 새 감지기가 늘리는 구역이 적거나 같고, 이 성질이 부분모듈성이다.
@@ -18,7 +14,7 @@ $A_2$ 를 혼자 고르면 구역이 $3$ 개 는다. $A_1$ 이 구역 $1,2$ 를 
 
 # 정의
 
-$E$ 는 유한 집합이고 $f:2^E\to\mathbb R$ 이다. $S\subseteq E$ 와 $e\notin S$ 에 대해 $f(e\mid S)=f(S\cup\lbrace e\rbrace)-f(S)$ 를 한계 이득(marginal gain)이라 한다.
+$E$ 는 유한 집합이고 $f:2^E\to\mathbb R$ 는 $E$ 의 부분집합마다 [실수](real-numbers.md)를 주는 함수다. $S\subseteq E$ 와 $e\notin S$ 에 대해 $f(e\mid S)=f(S\cup\lbrace e\rbrace)-f(S)$ 를 한계 이득(marginal gain)이라 한다.
 
 $f$ 가 다음 두 조건 가운데 하나를 만족하면 부분모듈 함수다. 두 조건은 동치다.
 
@@ -27,15 +23,17 @@ f(S)+f(T)\ge f(S\cup T)+f(S\cap T)\qquad(S,T\subseteq E)
 $$
 
 $$
-f(e\mid S)\ge f(e\mid T)\qquad(S\subseteq T,\ e\notin T)
+f(e\mid S)\ge f(e\mid T)\qquad(S\subseteq T,\thinspace e\notin T)
 $$
 
 $S\subseteq T$ 에서 $f(S)\le f(T)$ 이면 단조(monotone)라 한다. 부등호가 반대인 함수를 초모듈 함수(supermodular function)라 하고, 등호이면 모듈 함수(modular function)라 한다. 모듈 함수는 원소마다 정한 무게의 합에 상수를 더한 꼴이다.
 
+직관 절의 감지기 함수에서 $S=\lbrace 1\rbrace$, $T=\lbrace 2\rbrace$ 이면 $f(S)+f(T)=4+3=7$ 이고 $f(S\cup T)+f(S\cap T)=5+0=5$ 이므로 첫 조건이 성립한다. 한계 이득으로는 $f(2\mid\varnothing)=3\ge f(2\mid\lbrace 1\rbrace)=1$ 이다.
+
 ## 예
 
 - 덮기 함수. 집합 $A_1,\dots,A_m$ 이 주어지면 $f(S)=\lvert\bigcup_{i\in S}A_i\rvert$ 는 단조 부분모듈 함수다.
-- matroid 의 계수 함수 $r$ 은 단조 부분모듈 함수다.
+- [Matroid](matroids.md) 의 계수 함수 $r$ 은 단조 부분모듈 함수다.
 - 절단 함수. 그래프 $G=(V,E)$ 에서 $f(S)$ 를 $S$ 와 $V\setminus S$ 를 잇는 간선의 수로 두면 부분모듈 함수이고 단조가 아니다.
 - [엔트로피](entropy.md). 확률변수 $X_1,\dots,X_n$ 에서 $f(S)=H(X_i : i\in S)$ 는 단조 부분모듈 함수다. 부분모듈성은 조건부 상호정보 $I(X_A;X_B\mid X_C)\ge 0$ 과 같다.
 
@@ -73,7 +71,7 @@ U. Feige 는 덮기 함수의 최대화에서 $1-1/e$ 보다 큰 비율을 다�
 
 ## 일반 최대화
 
-단조가 아닌 부분모듈 함수의 최대화는 그래프의 최대 절단을 특수한 경우로 포함하므로 NP-난해다. 제약 없이 최대화할 때 원소를 하나씩 넣거나 빼는 무작위 이중 탐욕법이 기댓값 $1/2$ 배를 보장한다.
+단조가 아닌 부분모듈 함수의 최대화는 그래프의 최대 절단을 특수한 경우로 포함하므로 NP(nondeterministic polynomial time)-난해다. 제약 없이 최대화할 때 원소를 하나씩 넣거나 빼는 무작위 이중 탐욕법이 기댓값 $1/2$ 배를 보장한다.
 
 # 활용
 
